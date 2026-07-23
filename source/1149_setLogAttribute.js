@@ -1,9 +1,11 @@
 // Module ID: 1149
-// Function ID: 13083
+// Function ID: 13084
 // Name: setLogAttribute
-// Dependencies: []
+// Dependencies: [794, 977]
 
 // Module 1149 (setLogAttribute)
+const require = arg1;
+const dependencyMap = arg6;
 function setLogAttribute(arg0, arg1, arg2) {
   const tmp = arguments.length > 3 && undefined !== arguments[3];
   let tmp2 = !tmp;
@@ -26,101 +28,108 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    arg1 = arg0;
-    const arg6 = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     let closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;
   };
 }
-let closure_3;
+let c3;
 arg5.logEnricherIntegration = function logEnricherIntegration() {
   return {
     name: "LogEnricher",
     setup(on) {
+      let closure_0 = on;
       on.on("afterInit", () => {
-        function cacheLogContext() {
-          return callback(this, undefined, undefined, function*() {
-            const NATIVE = contexts(device[1]).NATIVE;
+        (function cacheLogContext() {
+          return outer3_2(this, undefined, undefined, function*() {
+            const NATIVE = outer5_0(outer5_1[1]).NATIVE;
             const tmp = yield NATIVE.fetchNativeLogAttributes();
             let contexts;
             if (null != tmp) {
               contexts = tmp2.contexts;
             }
+            const outer1_0 = contexts;
             let device;
             if (null !== contexts) {
-              if (undefined !== contexts) {
-                device = contexts.device;
+              if (undefined !== outer1_0) {
+                device = outer1_0.device;
               }
             }
             let tmp8 = device;
             if (device) {
               let obj = {};
               device = tmp2.contexts.device;
+              const outer1_1 = device;
               let brand;
               if (null !== device) {
-                if (undefined !== device) {
-                  brand = device.brand;
+                if (undefined !== outer1_1) {
+                  brand = outer1_1.brand;
                 }
               }
               obj.brand = brand;
               const device2 = tmp2.contexts.device;
+              const outer1_2 = device2;
               let model;
               if (null !== device2) {
-                if (undefined !== device2) {
-                  model = device2.model;
+                if (undefined !== outer1_2) {
+                  model = outer1_2.model;
                 }
               }
               obj.model = model;
               const device3 = tmp2.contexts.device;
-              let family = device3;
-              family = undefined;
+              const outer1_3 = device3;
+              let family;
               if (null !== device3) {
-                if (undefined !== family) {
-                  family = family.family;
+                if (undefined !== outer1_3) {
+                  family = outer1_3.family;
                 }
               }
               obj.family = family;
@@ -131,10 +140,11 @@ arg5.logEnricherIntegration = function logEnricherIntegration() {
             if (null != tmp) {
               contexts1 = tmp2.contexts;
             }
+            const outer1_4 = contexts1;
             let os;
             if (null !== contexts1) {
-              if (undefined !== contexts1) {
-                os = contexts1.os;
+              if (undefined !== outer1_4) {
+                os = outer1_4.os;
               }
             }
             let tmp27 = os;
@@ -147,10 +157,11 @@ arg5.logEnricherIntegration = function logEnricherIntegration() {
             if (null != tmp) {
               contexts2 = tmp2.contexts;
             }
+            const outer1_5 = contexts2;
             let release;
             if (null !== contexts2) {
-              if (undefined !== contexts2) {
-                release = contexts2.release;
+              if (undefined !== outer1_5) {
+                release = outer1_5.release;
               }
             }
             let tmp35 = release;
@@ -158,34 +169,34 @@ arg5.logEnricherIntegration = function logEnricherIntegration() {
               obj = { release: tmp.contexts.release };
               tmp35 = obj;
             }
-            family = Object.assign(merged1, tmp35);
+            const outer5_3 = Object.assign(merged1, tmp35);
             return Promise.resolve();
           });
-        }().then(() => {
-          lib.on("beforeCaptureLog", (attributes) => {
-            if (undefined !== closure_3) {
+        })().then(() => {
+          outer1_0.on("beforeCaptureLog", (attributes) => {
+            if (undefined !== outer4_3) {
               attributes = attributes.attributes;
               if (null === attributes) {
                 attributes = {};
               }
-              callback(attributes, "device.brand", closure_3.brand);
-              callback(attributes, "device.model", closure_3.model);
-              callback(attributes, "device.family", closure_3.family);
-              callback(attributes, "os.name", closure_3.os);
-              callback(attributes, "os.version", closure_3.version);
-              callback(attributes, "sentry.release", closure_3.release);
-              const integrationByName = closure_0.getIntegrationByName("MobileReplay");
+              outer4_4(attributes, "device.brand", outer4_3.brand);
+              outer4_4(attributes, "device.model", outer4_3.model);
+              outer4_4(attributes, "device.family", outer4_3.family);
+              outer4_4(attributes, "os.name", outer4_3.os);
+              outer4_4(attributes, "os.version", outer4_3.version);
+              outer4_4(attributes, "sentry.release", outer4_3.release);
+              const integrationByName = outer2_0.getIntegrationByName("MobileReplay");
               let replayId;
               if (null != integrationByName) {
                 replayId = integrationByName.getReplayId();
               }
-              callback(attributes, "sentry.replay_id", replayId);
+              outer4_4(attributes, "sentry.replay_id", replayId);
               attributes.attributes = attributes;
-              const tmp = callback;
+              const tmp = outer4_4;
             }
           });
         }, (arg0) => {
-          const debug = lib(closure_1[0]).debug;
+          const debug = outer3_0(outer3_1[0]).debug;
           debug.log(arg0);
         });
       });

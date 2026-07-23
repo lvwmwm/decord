@@ -1,20 +1,22 @@
-// Module ID: 12451
-// Function ID: 95070
+// Module ID: 12565
+// Function ID: 97226
 // Name: JSONEncoding
-// Dependencies: []
+// Dependencies: [6, 7, 12566, 4677, 2]
 
-// Module 12451 (JSONEncoding)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const erlpackEncoding = arg1(dependencyMap[2]).getErlpackEncoding();
-const tmp3 = () => {
+// Module 12565 (JSONEncoding)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import getErlpackEncoding from "getErlpackEncoding";
+import { ProcessArgs } from "ProcessArgs";
+
+getErlpackEncoding = getErlpackEncoding.getErlpackEncoding();
+const tmp3 = (() => {
   class JSONEncoding {
     constructor() {
       tmp = JSONEncoding(this, JSONEncoding);
       return;
     }
   }
-  let closure_0 = JSONEncoding;
   let obj = {
     key: "pack",
     value(arg0) {
@@ -56,16 +58,14 @@ const tmp3 = () => {
     }
   };
   return callback(JSONEncoding, items);
-}();
+})();
 let tmp4 = tmp3;
-if (undefined !== erlpackEncoding) {
-  tmp4 = erlpackEncoding;
+if (undefined !== getErlpackEncoding) {
+  tmp4 = getErlpackEncoding;
 }
-const ProcessArgs = arg1(dependencyMap[3]).ProcessArgs;
 if (ProcessArgs.isDiscordGatewayPlaintextSet()) {
   tmp4 = tmp3;
 }
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/gateway/GatewayEncoding.tsx");
+const result = require("getErlpackEncoding").fileFinishedImporting("modules/gateway/GatewayEncoding.tsx");
 
 export default tmp4;

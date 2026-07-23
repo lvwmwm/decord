@@ -1,93 +1,95 @@
-// Module ID: 13974
-// Function ID: 106196
+// Module ID: 14088
+// Function ID: 108352
 // Name: QUEST_DOCK_EXPANDED_PADDING_BOTTOM
-// Dependencies: []
+// Dependencies: [5, 31, 27, 6942, 13992, 4976, 13994, 33, 4130, 689, 14076, 624, 13990, 10464, 1557, 9465, 9466, 13998, 9444, 6969, 4979, 14020, 10926, 14059, 14056, 10922, 14060, 4126, 1212, 1273, 10919, 2]
 
-// Module 13974 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ QuestDockMode: closure_8, QuestsExperimentLocations: closure_9 } = arg1(dependencyMap[5]));
-const tmp3 = arg1(dependencyMap[6]);
-const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = tmp3.QUEST_DOCK_EXPANDED_PADDING_BOTTOM;
-const tmp2 = arg1(dependencyMap[5]);
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let obj1 = arg1(dependencyMap[8]);
-let obj = { wrapper: obj };
-obj = { hasHandledScroll: 1, isAtBottom: true, isNearBottom: "/assets/design/components/Icon/native/redesign/generated/images", paddingHorizontal: tmp3.QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM };
-obj1 = { -9223372036854775808: "Text", 9223372036854775807: "r", -9223372036854775808: "tag", 9223372036854775807: "r", borderRadius: importDefault(dependencyMap[9]).modules.mobile.QUEST_DOCK_BORDER_RADIUS };
-obj.rewardContentWrapper = obj1;
-obj.rewardContent = {};
-obj.rewardContentCopy = {};
+// Module 14088 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
+import closure_3 from "QuestsExperimentLocations";
+import importAllResult from "set";
+import { View } from "Text";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import QuestsExperimentLocations from "QuestsExperimentLocations";
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ QuestDockMode: closure_8, QuestsExperimentLocations: closure_9 } = QuestsExperimentLocations);
+const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = QUEST_DOCK_COLLAPSED_HEIGHT.QUEST_DOCK_EXPANDED_PADDING_BOTTOM;
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+obj = { wrapper: obj };
+obj = { flexGrow: 1, flexShrink: 0, justifyContent: "flex-end", paddingHorizontal: QUEST_DOCK_COLLAPSED_HEIGHT.QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.QUEST_DOCK_BORDER_RADIUS, overflow: "hidden", padding: 8, paddingRight: 16 };
+obj.rewardContentWrapper = _createForOfIteratorHelperLoose;
+obj.rewardContent = { alignItems: "center", flexDirection: "row", gap: 16 };
+obj.rewardContentCopy = { flexGrow: 1, flexShrink: 1, gap: 4 };
 obj.premiumRewardPerkPill = { alignSelf: "flex-start" };
-const obj2 = { -816084447: 24, 1949176163: 24, -1309881245: null, 1694899793: "d415e9ae6db962a437b5c21e64fa1fc3", gap: importDefault(dependencyMap[9]).space.PX_8 };
+let obj2 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, flexWrap: "wrap" };
 obj.titleRow = obj2;
-const tmp4 = arg1(dependencyMap[7]);
-obj.questDockRewardTile = { borderRadius: importDefault(dependencyMap[9]).radii.lg };
-obj.questDockCtaWrapper = { borderRadius: true, enabled: "/assets/design/components/Icon/native/redesign/generated/images", type: 24, body: 24 };
-const obj3 = { borderRadius: importDefault(dependencyMap[9]).radii.lg };
-obj.questDockCta = { borderRadius: importDefault(dependencyMap[9]).radii.round };
+obj.questDockRewardTile = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+obj.questDockCtaWrapper = { marginTop: 12, paddingHorizontal: 4, paddingTop: 16, position: "relative" };
+let obj3 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+obj.questDockCta = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
 obj.questDockCtaRow = { alignSelf: "stretch" };
-const obj4 = { borderRadius: importDefault(dependencyMap[9]).radii.round };
-obj.questDockCtaSaparator = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
-let closure_13 = obj1.createStyles(obj);
-const obj5 = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
+let obj5 = { position: "absolute", left: -12, right: -12, top: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, height: 1, opacity: 1 };
+obj.questDockCtaSaparator = obj5;
+let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj4 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
 const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
   let isRendered;
   let quest;
-  const context = importAllResult.useContext(importDefault(dependencyMap[10]));
+  const context = setRestingQuestDockMode.useContext(hasWatchVideoOnMobileTasks(isMobileActivityQuest[10]));
   ({ isRendered, quest } = context);
-  const arg1 = quest;
-  const tmp2 = callback4();
-  let obj = arg1(dependencyMap[11]);
+  const tmp2 = callback3();
+  let obj = quest(isMobileActivityQuest[11]);
   const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => obj.prevRestingQuestDockMode === constants.EXPANDED);
-  let obj1 = arg1(dependencyMap[11]);
-  const items1 = [closure_6];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => enrolling.isEnrolling(quest.id));
-  let obj2 = arg1(dependencyMap[12]);
-  const hasWatchVideoOnMobileTasks = obj2.useHasWatchVideoOnMobileTasks(quest.config);
-  const importDefault = hasWatchVideoOnMobileTasks;
-  let obj3 = arg1(dependencyMap[13]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.prevRestingQuestDockMode === outer1_8.EXPANDED);
+  let obj1 = quest(isMobileActivityQuest[11]);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_6.isEnrolling(quest.id));
+  let obj2 = quest(isMobileActivityQuest[12]);
+  hasWatchVideoOnMobileTasks = obj2.useHasWatchVideoOnMobileTasks(quest.config);
+  let obj3 = quest(isMobileActivityQuest[13]);
   const questTaskDetails = obj3.useQuestTaskDetails(quest);
-  let obj4 = arg1(dependencyMap[12]);
+  let obj4 = quest(isMobileActivityQuest[12]);
   const mobileActivityQuest = obj4.useMobileActivityQuest(quest);
-  const isMobileActivityQuest = mobileActivityQuest.isMobileActivityQuest;
-  const dependencyMap = isMobileActivityQuest;
+  isMobileActivityQuest = mobileActivityQuest.isMobileActivityQuest;
   const launchMobileActivity = mobileActivityQuest.launchMobileActivity;
-  let callback = launchMobileActivity;
-  let obj5 = arg1(dependencyMap[15]);
+  let obj5 = quest(isMobileActivityQuest[15]);
   const questOrbMultiplierEligibility = obj5.useQuestOrbMultiplierEligibility();
-  let obj6 = arg1(dependencyMap[13]);
+  let obj6 = quest(isMobileActivityQuest[13]);
   let shouldShowBonusOrbsUX = obj6.useShouldShowBonusOrbsUX(quest, questOrbMultiplierEligibility);
   let tmp10 = shouldShowBonusOrbsUX;
   if (shouldShowBonusOrbsUX) {
-    tmp10 = questOrbMultiplierEligibility === arg1(dependencyMap[16]).QuestOrbMultiplierEligibilityType.NITRO;
+    tmp10 = questOrbMultiplierEligibility === quest(isMobileActivityQuest[16]).QuestOrbMultiplierEligibilityType.NITRO;
   }
-  const context1 = importAllResult.useContext(arg1(dependencyMap[17]).QuestDockExternalCoordinationContext);
-  const setRestingQuestDockMode = context1.setRestingQuestDockMode;
+  const context1 = setRestingQuestDockMode.useContext(quest(isMobileActivityQuest[17]).QuestDockExternalCoordinationContext);
+  setRestingQuestDockMode = context1.setRestingQuestDockMode;
   // CreateGeneratorClosureLongIndex (0x67)
   const items2 = [quest.id, hasWatchVideoOnMobileTasks, setRestingQuestDockMode, isMobileActivityQuest, launchMobileActivity];
-  callback = importAllResult.useCallback(callback(context1), items2);
-  let obj7 = arg1(dependencyMap[22]);
+  const callback = setRestingQuestDockMode.useCallback(launchMobileActivity(context1), items2);
+  let obj7 = quest(isMobileActivityQuest[22]);
   const primaryCtaCopy = obj7.usePrimaryCtaCopy({ quest, application: mobileActivityQuest.questApplication, shortText: true });
-  let obj8 = arg1(dependencyMap[22]);
-  obj = { quest, location: constants.QUESTS_BAR_MOBILE, taskDetails: questTaskDetails, sourceQuestContent: arg1(dependencyMap[20]).QuestContent.QUEST_BAR_MOBILE };
+  let obj8 = quest(isMobileActivityQuest[22]);
+  obj = { quest, location: constants.QUESTS_BAR_MOBILE, taskDetails: questTaskDetails, sourceQuestContent: quest(isMobileActivityQuest[20]).QuestContent.QUEST_BAR_MOBILE };
   const questsInstructionsToWinReward = obj8.useQuestsInstructionsToWinReward(obj);
   obj = { visible: tmp10, glow: true };
   const items3 = [tmp2.wrapper, ];
-  obj1 = { paddingBottom: Math.max(importDefault(dependencyMap[14])().bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) };
+  obj1 = { paddingBottom: Math.max(hasWatchVideoOnMobileTasks(isMobileActivityQuest[14])().bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) };
   items3[1] = obj1;
   obj.style = items3;
   obj2 = { style: tmp2.rewardContentWrapper };
-  const items4 = [callback2(importDefault(dependencyMap[24]), {}), ];
+  const items4 = [callback(hasWatchVideoOnMobileTasks(isMobileActivityQuest[24]), {}), ];
   obj3 = { style: tmp2.rewardContent };
-  obj4 = {};
+  obj4 = { paused: null, height: 80, width: 80 };
   let tmp22 = !stateFromStores;
-  const tmp18 = importDefault(dependencyMap[23]);
-  const tmp20 = callback2;
+  const tmp18 = hasWatchVideoOnMobileTasks(isMobileActivityQuest[23]);
+  const tmp20 = callback;
   if (!tmp22) {
     tmp22 = !isRendered;
   }
@@ -99,42 +101,42 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
     tmp23 = isRendered;
   }
   obj4.withAnimation = tmp23;
-  const items5 = [tmp20(importDefault(dependencyMap[25]), obj4), ];
+  const items5 = [tmp20(hasWatchVideoOnMobileTasks(isMobileActivityQuest[25]), obj4), ];
   obj5 = { style: tmp2.rewardContentCopy };
   if (shouldShowBonusOrbsUX) {
     obj6 = { style: tmp2.premiumRewardPerkPill };
     obj7 = { questId: quest.config.id, orbMultiplierEligibility: questOrbMultiplierEligibility };
-    obj6.children = callback2(arg1(dependencyMap[26]).QuestOrbMultiplierPerkPill, obj7);
-    shouldShowBonusOrbsUX = callback2(View, obj6);
+    obj6.children = callback(quest(isMobileActivityQuest[26]).QuestOrbMultiplierPerkPill, obj7);
+    shouldShowBonusOrbsUX = callback(View, obj6);
   }
   const items6 = [shouldShowBonusOrbsUX, , ];
   obj8 = { style: tmp2.titleRow };
-  const obj9 = {};
-  const intl = arg1(dependencyMap[28]).intl;
-  obj9.children = intl.format(arg1(dependencyMap[28]).t.EQa7os, { questName: quest.config.messages.questName });
-  obj8.children = callback2(arg1(dependencyMap[27]).Text, obj9);
-  items6[1] = callback2(View, obj8);
-  const obj11 = { "Null": false, "Null": false, children: questsInstructionsToWinReward };
-  items6[2] = callback2(arg1(dependencyMap[27]).Text, obj11);
+  const obj9 = { variant: "heading-md/medium", color: "mobile-text-heading-primary" };
+  const intl = quest(isMobileActivityQuest[28]).intl;
+  obj9.children = intl.format(quest(isMobileActivityQuest[28]).t.EQa7os, { questName: quest.config.messages.questName });
+  obj8.children = callback(quest(isMobileActivityQuest[27]).Text, obj9);
+  items6[1] = callback(View, obj8);
+  const obj11 = { color: "text-default", variant: "text-sm/normal", children: questsInstructionsToWinReward };
+  items6[2] = callback(quest(isMobileActivityQuest[27]).Text, obj11);
   obj5.children = items6;
-  items5[1] = callback3(View, obj5);
+  items5[1] = callback2(View, obj5);
   obj3.children = items5;
-  items4[1] = callback3(View, obj3);
+  items4[1] = callback2(View, obj3);
   obj2.children = items4;
-  const items7 = [callback3(View, obj2), ];
+  const items7 = [callback2(View, obj2), ];
   const obj12 = { style: tmp2.questDockCtaWrapper };
-  const items8 = [callback2(View, { style: tmp2.questDockCtaSaparator }), ];
+  const items8 = [callback(View, { style: tmp2.questDockCtaSaparator }), ];
   const obj10 = { questName: quest.config.messages.questName };
   const obj13 = { style: tmp2.questDockCtaSaparator };
-  const tmp21 = importDefault(dependencyMap[25]);
-  const tmp24 = callback3;
+  const tmp21 = hasWatchVideoOnMobileTasks(isMobileActivityQuest[25]);
+  const tmp24 = callback2;
   const tmp25 = View;
-  items8[1] = callback2(View, { style: tmp2.questDockCtaRow, children: callback2(arg1(dependencyMap[29]).ShinyButton, obj15) });
+  items8[1] = callback(View, { style: tmp2.questDockCtaRow, children: callback(quest(isMobileActivityQuest[29]).ShinyButton, obj15) });
   obj12.children = items8;
-  items7[1] = callback3(View, obj12);
+  items7[1] = callback2(View, obj12);
   obj.children = items7;
-  return callback3(tmp18, obj);
+  return callback2(tmp18, obj);
 });
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/quests/native/QuestDock/QuestDockUnenrolledBody.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockUnenrolledBody.tsx");
 
 export default memoResult;

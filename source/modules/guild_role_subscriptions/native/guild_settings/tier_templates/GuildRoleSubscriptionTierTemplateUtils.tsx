@@ -1,27 +1,26 @@
-// Module ID: 16365
-// Function ID: 126239
+// Module ID: 16482
+// Function ID: 128413
 // Name: getPrivateChannelIconComponent
-// Dependencies: []
+// Dependencies: [669, 4636, 4655, 4653, 4643, 4642, 4650, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 16365 (getPrivateChannelIconComponent)
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx");
+// Module 16482 (getPrivateChannelIconComponent)
+const result = require("VoiceLockIcon").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx");
 
 export const getPrivateChannelIconComponent = function getPrivateChannelIconComponent(type) {
-  if (require(dependencyMap[0]).ChannelTypes.GUILD_TEXT === type) {
-    return require(dependencyMap[1]).TextLockIcon;
-  } else if (require(dependencyMap[0]).ChannelTypes.GUILD_VOICE === type) {
-    return require(dependencyMap[2]).VoiceLockIcon;
-  } else if (require(dependencyMap[0]).ChannelTypes.GUILD_STAGE_VOICE === type) {
-    return require(dependencyMap[3]).StageLockIcon;
-  } else if (require(dependencyMap[0]).ChannelTypes.GUILD_FORUM === type) {
-    return require(dependencyMap[4]).ForumLockIcon;
-  } else if (require(dependencyMap[0]).ChannelTypes.GUILD_MEDIA === type) {
-    return require(dependencyMap[5]).ImageLockIcon;
-  } else if (require(dependencyMap[0]).ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return require(dependencyMap[6]).AnnouncementsLockIcon;
+  if (require(669) /* set */.ChannelTypes.GUILD_TEXT === type) {
+    return require(4636) /* TextLockIcon */.TextLockIcon;
+  } else if (require(669) /* set */.ChannelTypes.GUILD_VOICE === type) {
+    return require(4655) /* VoiceLockIcon */.VoiceLockIcon;
+  } else if (require(669) /* set */.ChannelTypes.GUILD_STAGE_VOICE === type) {
+    return require(4653) /* StageLockIcon */.StageLockIcon;
+  } else if (require(669) /* set */.ChannelTypes.GUILD_FORUM === type) {
+    return require(4643) /* ForumLockIcon */.ForumLockIcon;
+  } else if (require(669) /* set */.ChannelTypes.GUILD_MEDIA === type) {
+    return require(4642) /* ImageLockIcon */.ImageLockIcon;
+  } else if (require(669) /* set */.ChannelTypes.GUILD_ANNOUNCEMENT === type) {
+    return require(4650) /* AnnouncementsLockIcon */.AnnouncementsLockIcon;
   } else {
-    return require(dependencyMap[1]).TextLockIcon;
+    return require(4636) /* TextLockIcon */.TextLockIcon;
   }
 };

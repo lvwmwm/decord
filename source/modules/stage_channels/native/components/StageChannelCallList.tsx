@@ -1,71 +1,71 @@
-// Module ID: 10762
-// Function ID: 83641
+// Module ID: 10772
+// Function ID: 83690
 // Name: getSpeakerRowHeight
-// Dependencies: []
+// Dependencies: [57, 31, 10773, 4947, 33, 1273, 10774, 4957, 4559, 4963, 44, 10781, 1212, 9994, 10782, 10794, 7588, 10798, 1450, 4663, 2]
 // Exports: default
 
-// Module 10762 (getSpeakerRowHeight)
+// Module 10772 (getSpeakerRowHeight)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH";
+import jsxProd from "jsxProd";
+import useActiveSpeakerPillScrollHandler from "useActiveSpeakerPillScrollHandler";
+
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getSpeakerRowHeight(arg0, arg1) {
   if (arg0 > 0) {
-    return arg1(dependencyMap[6]).SPEAKER_TILE_HEIGHTS.THIRD + 8;
+    return require(10774) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
   } else if (1 === arg1) {
-    return arg1(dependencyMap[6]).SPEAKER_TILE_HEIGHTS.FULL + 8;
+    return require(10774) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.FULL + 8;
   } else if (2 === arg1) {
-    return arg1(dependencyMap[6]).SPEAKER_TILE_HEIGHTS.HALF + 8;
+    return require(10774) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.HALF + 8;
   } else {
-    return arg1(dependencyMap[6]).SPEAKER_TILE_HEIGHTS.THIRD + 8;
+    return require(10774) /* getSizeStyle */.SPEAKER_TILE_HEIGHTS.THIRD + 8;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ useActiveSpeakerPillScrollHandler: closure_5, useActiveSpeakerPillState: closure_6 } = arg1(dependencyMap[2]));
-const MAX_AUDIENCE_ROW_LIMIT = arg1(dependencyMap[3]).MAX_AUDIENCE_ROW_LIMIT;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
-const obj = { broadcastStatus: "ao", broadcastType: "r", damping: "isArray", direction: arg1(dependencyMap[5]).CutoutDirection.RIGHT };
+({ useActiveSpeakerPillScrollHandler: closure_5, useActiveSpeakerPillState: closure_6 } = require("useActiveSpeakerPillScrollHandler"));
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let obj = { direction: require("Button").CutoutDirection.RIGHT, radius: 13, inset: -6 };
 let closure_11 = { STREAM: 0, [0]: "STREAM", SPEAKER: 1, [1]: "SPEAKER", AUDIENCE: 2, [2]: "AUDIENCE" };
 let closure_12 = importAllResult.memo((channel) => {
   channel = channel.channel;
-  const arg1 = channel;
   const listSections = channel.listSections;
-  const importDefault = listSections;
   const rowsBySection = channel.rowsBySection;
-  const dependencyMap = rowsBySection;
-  const tmp = callback(importAllResult.useState(false), 2);
-  const first = tmp[0];
-  let callback = first;
-  const tmp4 = callback(tmp[1].useState(false), 2);
+  let tmp = first(importAllResult.useState(false), 2);
+  first = tmp[0];
+  let tmp4 = first(tmp[1].useState(false), 2);
   const first1 = tmp4[0];
-  const tmp6 = tmp4[1];
-  const tmp7 = callback(tmp6(), 2);
+  let callback2 = tmp6;
+  const tmp7 = first(callback2(), 2);
   const first2 = tmp7[0];
-  const MAX_AUDIENCE_ROW_LIMIT = first2;
-  const tmp9 = tmp7[1];
-  importDefault(dependencyMap[8])(() => () => {
-    callback(false);
+  const callback3 = tmp9;
+  listSections(rowsBySection[8])(() => () => {
+    outer1_8(false);
   });
-  const items = [listSections];
+  let items = [listSections];
   const sections = importAllResult.useMemo(() => {
     let num = 1;
-    if (null != listSections[closure_11.STREAM]) {
+    if (null != listSections[stageParticipantsCount.STREAM]) {
       num = tmp;
     }
     const items = [Math.max(num, 1), , ];
     let num2 = 1;
-    if (null != listSections[closure_11.SPEAKER]) {
+    if (null != listSections[stageParticipantsCount.SPEAKER]) {
       num2 = tmp2;
     }
     items[1] = Math.max(num2, 1);
-    items[2] = listSections[closure_11.AUDIENCE];
+    items[2] = listSections[stageParticipantsCount.AUDIENCE];
     return items;
   }, items);
-  let obj = arg1(dependencyMap[9]);
-  const actualStageSpeakerCount = obj.useActualStageSpeakerCount(channel.id);
-  obj = actualStageSpeakerCount;
-  const stageParticipantsCount = arg1(dependencyMap[9]).useStageParticipantsCount(channel.id, arg1(dependencyMap[7]).StageChannelParticipantNamedIndex.AUDIENCE);
-  let closure_11 = stageParticipantsCount;
-  const items1 = [actualStageSpeakerCount, stageParticipantsCount];
-  callback = importAllResult.useCallback((arg0) => {
+  const actualStageSpeakerCount = channel(rowsBySection[9]).useActualStageSpeakerCount(channel.id);
+  let obj = channel(rowsBySection[9]);
+  const stageParticipantsCount = channel(rowsBySection[9]).useStageParticipantsCount(channel.id, channel(rowsBySection[7]).StageChannelParticipantNamedIndex.AUDIENCE);
+  let items1 = [actualStageSpeakerCount, stageParticipantsCount];
+  const callback = importAllResult.useCallback((arg0) => {
     if (stageParticipantsCount.STREAM === arg0) {
       return 0;
     } else if (stageParticipantsCount.SPEAKER === arg0) {
@@ -85,7 +85,6 @@ let closure_12 = importAllResult.memo((channel) => {
       return 0;
     }
   }, items1);
-  let closure_12 = callback;
   const items2 = [callback, rowsBySection, first, first1];
   const itemSize = importAllResult.useCallback((arg0, arg1) => {
     if (null == arg1) {
@@ -123,13 +122,12 @@ let closure_12 = importAllResult.memo((channel) => {
       }
     }
   }, items2);
-  const getSpeakerRowHeight = itemSize;
-  const obj2 = arg1(dependencyMap[9]);
-  const stageParticipants = arg1(dependencyMap[9]).useStageParticipants(channel.id, arg1(dependencyMap[7]).StageChannelParticipantNamedIndex.SPEAKER);
+  let obj2 = channel(rowsBySection[9]);
+  const stageParticipants = channel(rowsBySection[9]).useStageParticipants(channel.id, channel(rowsBySection[7]).StageChannelParticipantNamedIndex.SPEAKER);
   const found = stageParticipants.filter((type) => type.type === channel(rowsBySection[7]).StageChannelParticipantTypes.VOICE);
   const mapped = found.map((user) => user.user);
-  const items3 = [tmp[1], first, first1, tmp6, actualStageSpeakerCount, stageParticipantsCount, mapped];
-  const callback2 = importAllResult.useCallback((arg0) => {
+  const items3 = [tmp[1], first, first1, tmp4[1], actualStageSpeakerCount, stageParticipantsCount, mapped];
+  callback2 = importAllResult.useCallback((arg0) => {
     if (stageParticipantsCount.STREAM === arg0) {
       return null;
     } else if (stageParticipantsCount.AUDIENCE === arg0) {
@@ -137,10 +135,10 @@ let closure_12 = importAllResult.memo((channel) => {
       if (0 !== stageParticipantsCount) {
         let obj = {};
         const intl = channel(rowsBySection[12]).intl;
-        obj.label = intl.string(channel(rowsBySection[12]).t.3foUu5);
+        obj.label = intl.string(channel(rowsBySection[12]).t["3foUu5"]);
         obj.count = stageParticipantsCount;
         obj.onToggleCollapse = function onToggleCollapse() {
-          return callback(!closure_3);
+          return outer1_4(!outer1_3);
         };
         obj.collapsed = first;
         tmp16 = tmp9(listSections(rowsBySection[11]), obj);
@@ -155,7 +153,7 @@ let closure_12 = importAllResult.memo((channel) => {
         obj.label = intl2.string(channel(rowsBySection[12]).t.CduOkx);
         obj.count = actualStageSpeakerCount;
         obj.onToggleCollapse = function onToggleCollapse() {
-          return callback2(!closure_5);
+          return outer1_6(!outer1_5);
         };
         obj.collapsed = first1;
         let tmp14;
@@ -224,7 +222,7 @@ let closure_12 = importAllResult.memo((channel) => {
     } else if (stageParticipantsCount.AUDIENCE === arg0) {
       obj = {};
       const items1 = [tmp, ];
-      let tmp9 = !first;
+      tmp9 = !first;
       if (tmp9) {
         const obj3 = { channel, participants: rowsBySection[arg0][row] };
         tmp9 = tmp9(listSections(rowsBySection[15]), obj3);
@@ -240,7 +238,7 @@ let closure_12 = importAllResult.memo((channel) => {
   }, items4);
   const memo1 = importAllResult.useMemo(() => {
     let num = 0;
-    if (sections[closure_11.STREAM] > 0) {
+    if (sections[stageParticipantsCount.STREAM] > 0) {
       num = itemSize(stageParticipantsCount.STREAM, 0);
     }
     return num;
@@ -251,20 +249,20 @@ let closure_12 = importAllResult.memo((channel) => {
     let num = 0;
     let num2 = 0;
     let num3 = 0;
-    if (0 < sections[closure_11.SPEAKER]) {
+    if (0 < sections[stageParticipantsCount.SPEAKER]) {
       do {
-        let tmp = closure_13;
-        let tmp2 = closure_11;
-        num2 = num2 + closure_13(closure_11.SPEAKER, num3);
+        let tmp = itemSize;
+        let tmp2 = stageParticipantsCount;
+        num2 = num2 + itemSize(stageParticipantsCount.SPEAKER, num3);
         num3 = num3 + 1;
-        let tmp3 = closure_9;
+        let tmp3 = sections;
         num = num2;
-        tmp4 = closure_9[closure_11.SPEAKER];
+        tmp4 = sections[stageParticipantsCount.SPEAKER];
       } while (num3 < tmp4);
     }
     return num;
   }, items6);
-  const items7 = [tmp9, first2, memo2, memo1];
+  const items7 = [tmp7[1], first2, memo2, memo1];
   const onScroll = importAllResult.useCallback((nativeEvent) => {
     const y = nativeEvent.nativeEvent.contentOffset.y;
     const diff = memo2 + memo1 - 60;
@@ -281,19 +279,16 @@ let closure_12 = importAllResult.memo((channel) => {
       tmp9(false);
     }
   }, items7);
-  return tmp9(importDefault(dependencyMap[16]), { ref: callback(first1(), 1)[0], sections, renderItem, itemSize, renderSectionFooter, sectionFooterSize, onScroll });
+  return callback3(listSections(rowsBySection[16]), { ref: first(first1(), 1)[0], sections, renderItem, itemSize, renderSectionFooter, sectionFooterSize, onScroll });
 });
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallList.tsx");
+const result = require("useActiveSpeakerPillScrollHandler").fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallList.tsx");
 
 export default function StageChannelCallList(channel) {
   channel = channel.channel;
-  let obj = arg1(dependencyMap[17]);
+  let obj = width(10798);
   const throttleDurationForChannel = obj.useThrottleDurationForChannel(channel.id);
-  const width = importDefault(dependencyMap[18])().width;
-  const arg1 = width;
-  const isScreenLandscape = arg1(dependencyMap[19]).useIsScreenLandscape();
-  const importDefault = isScreenLandscape;
+  width = isScreenLandscape(1450)().width;
+  isScreenLandscape = width(4663).useIsScreenLandscape();
   const items = [width, isScreenLandscape];
   const memo = importAllResult.useMemo(() => {
     const obj = {};
@@ -301,14 +296,14 @@ export default function StageChannelCallList(channel) {
     if (isScreenLandscape) {
       const _Math = Math;
       const _Math2 = Math;
-      num = Math.max(3, Math.floor(width / width(closure_2[6]).LANDSCAPE_MAX_TILE_WIDTH));
+      num = Math.max(3, Math.floor(width / width(outer1_2[6]).LANDSCAPE_MAX_TILE_WIDTH));
     }
-    obj[width(closure_2[7]).StageChannelParticipantNamedIndex.SPEAKER] = num;
-    obj[width(closure_2[7]).StageChannelParticipantNamedIndex.AUDIENCE] = closure_7;
+    obj[width(outer1_2[7]).StageChannelParticipantNamedIndex.SPEAKER] = num;
+    obj[width(outer1_2[7]).StageChannelParticipantNamedIndex.AUDIENCE] = outer1_7;
     return obj;
   }, items);
-  const obj2 = arg1(dependencyMap[19]);
-  const tmp4 = callback(arg1(dependencyMap[17]).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
+  const obj2 = width(4663);
+  const tmp4 = callback(width(10798).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
   obj = { channel, listSections: tmp4[0], rowsBySection: tmp4[1] };
-  return callback2(closure_12, obj);
+  return callback3(closure_12, obj);
 };

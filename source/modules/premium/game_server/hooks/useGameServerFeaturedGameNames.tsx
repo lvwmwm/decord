@@ -1,19 +1,21 @@
-// Module ID: 11600
-// Function ID: 90155
+// Module ID: 11610
+// Function ID: 90204
 // Name: useGameServerFeaturedGameNames
-// Dependencies: []
+// Dependencies: [4019, 6865, 2]
 // Exports: default
 
-// Module 11600 (useGameServerFeaturedGameNames)
-const _module = require(dependencyMap[0]);
-({ MINECRAFT_GAME_ID: closure_2, HYTALE_GAME_ID: closure_3 } = _module);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/premium/game_server/hooks/useGameServerFeaturedGameNames.tsx");
+// Module 11610 (useGameServerFeaturedGameNames)
+import NewGamesCoachmarkContent from "NewGamesCoachmarkContent";
+
+let closure_2;
+let closure_3;
+({ MINECRAFT_GAME_ID: closure_2, HYTALE_GAME_ID: closure_3 } = NewGamesCoachmarkContent);
+const result = require("set").fileFinishedImporting("modules/premium/game_server/hooks/useGameServerFeaturedGameNames.tsx");
 
 export default function useGameServerFeaturedGameNames() {
-  let obj = require(dependencyMap[1]);
+  let obj = require(6865) /* importDefaultResult1 */;
   const data = obj.useGame(closure_2).data;
-  const data2 = require(dependencyMap[1]).useGame(closure_3).data;
+  const data2 = require(6865) /* importDefaultResult1 */.useGame(closure_3).data;
   obj = {};
   let name;
   if (null != data) {

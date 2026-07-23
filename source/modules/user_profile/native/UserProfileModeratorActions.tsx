@@ -1,10 +1,27 @@
-// Module ID: 11959
-// Function ID: 92442
+// Module ID: 11971
+// Function ID: 92495
 // Name: ModeratorActionRow
-// Dependencies: []
+// Dependencies: [31, 4954, 1348, 1907, 1917, 1838, 3758, 4146, 653, 3746, 33, 4130, 1324, 5165, 5511, 4126, 8266, 4098, 9066, 566, 5650, 10980, 1356, 8174, 4320, 4314, 4312, 3763, 1212, 10659, 7482, 10661, 7495, 4658, 10375, 1934, 5048, 5791, 4337, 10981, 1360, 9959, 3747, 10998, 10984, 8874, 10735, 8870, 11563, 9134, 4072, 11000, 9027, 11002, 11972, 11653, 7007, 5503, 2]
 // Exports: default
 
-// Module 11959 (ModeratorActionRow)
+// Module 11971 (ModeratorActionRow)
+import "MicrophoneArrowRightIcon";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { GuildMemberFlags } from "GuildMemberFlags";
+import { jsx } from "VoiceNormalIcon";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+const require = arg1;
 function ModeratorActionRow(arg0) {
   let disabled;
   let hint;
@@ -14,14 +31,14 @@ function ModeratorActionRow(arg0) {
   let onPress;
   let sublabel;
   ({ label, sublabel, icon, hint, disabled, isDestructive, onPress } = arg0);
-  if (importDefault(dependencyMap[12])("UserProfileModeratorActions")) {
+  if (importDefault(1324)("UserProfileModeratorActions")) {
     let str = "default";
     if (isDestructive) {
       str = "danger";
     }
     let obj = { label, subLabel: sublabel };
     obj = { IconComponent: icon, variant: str };
-    obj.icon = jsx(arg1(dependencyMap[13]).TableRow.Icon, obj);
+    obj.icon = jsx(require(5165) /* TableRowInner */.TableRow.Icon, { IconComponent: icon, variant: str });
     obj.arrow = null != hint;
     obj.variant = str;
     obj.disabled = disabled;
@@ -33,13 +50,13 @@ function ModeratorActionRow(arg0) {
     }
     obj.accessibilityLabel = combined;
     obj.accessibilityRole = "button";
-    return jsx(arg1(dependencyMap[13]).TableRow, obj);
+    return jsx(require(5165) /* TableRowInner */.TableRow, { IconComponent: icon, variant: str });
   } else {
     obj = { label };
     let tmp5;
     if (null != sublabel) {
-      const obj1 = { cachedAt: true, edpbxy: "/assets/design/components/Icon/native/redesign/generated/images", children: sublabel };
-      tmp5 = jsx(arg1(dependencyMap[15]).Text, obj1);
+      const obj1 = { variant: "text-xs/normal", color: "text-subtle", children: sublabel };
+      tmp5 = jsx(require(4126) /* Text */.Text, { variant: "text-xs/normal", color: "text-subtle", children: sublabel });
     }
     obj.sublabel = tmp5;
     obj.icon = icon;
@@ -47,25 +64,12 @@ function ModeratorActionRow(arg0) {
     obj.disabled = disabled;
     obj.isDestructive = isDestructive;
     obj.onPress = onPress;
-    return jsx(arg1(dependencyMap[14]).UserProfileFormRow, obj);
+    return jsx(require(5511) /* Divider */.UserProfileFormRow, { label });
   }
 }
-importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const GUILD_VOCAL_CHANNELS_KEY = arg1(dependencyMap[3]).GUILD_VOCAL_CHANNELS_KEY;
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-({ GuildFeatures: closure_12, Permissions: closure_13 } = arg1(dependencyMap[8]));
-const GuildMemberFlags = arg1(dependencyMap[9]).GuildMemberFlags;
-const jsx = arg1(dependencyMap[10]).jsx;
-const tmp3 = arg1(dependencyMap[8]);
-let closure_16 = arg1(dependencyMap[11]).createStyles({ cardContainer: { paddingBottom: 0 }, cardTitle: { marginBottom: 0 } });
-const obj = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[58]).fileFinishedImporting("modules/user_profile/native/UserProfileModeratorActions.tsx");
+({ GuildFeatures: closure_12, Permissions: closure_13 } = ME);
+let closure_16 = _createForOfIteratorHelperLoose.createStyles({ cardContainer: { paddingBottom: 0 }, cardTitle: { marginBottom: 0 } });
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileModeratorActions.tsx");
 
 export default function UserProfileModeratorActions(user) {
   let canBanUser;
@@ -81,35 +85,28 @@ export default function UserProfileModeratorActions(user) {
   let currentUser;
   let guildId;
   user = user.user;
-  const arg1 = user;
   ({ currentUser, guildId } = user);
-  const importDefault = guildId;
   let channelId = user.channelId;
-  const importAll = channelId;
-  const dependencyMap = user.showUserProfile;
+  const showUserProfile = user.showUserProfile;
   let closure_13;
   let GuildMemberFlags;
   let arr5 = callback();
-  const tmp2 = importDefault(dependencyMap[12])("UserProfileModeratorActions");
-  let obj = arg1(dependencyMap[16]);
-  let closure_4 = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  const hideActionSheet = importDefault(dependencyMap[17]).hideActionSheet;
+  const tmp2 = guildId(showUserProfile[12])("UserProfileModeratorActions");
+  let obj = user(showUserProfile[16]);
+  const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
+  const hideActionSheet = guildId(showUserProfile[17]).hideActionSheet;
   obj = { userId: user.id, guildId };
-  const tmp3 = importDefault(dependencyMap[18])(obj);
+  const tmp3 = guildId(showUserProfile[18])(obj);
   const voiceState = tmp3.voiceState;
-  let closure_6 = voiceState;
   const voiceChannel = tmp3.voiceChannel;
-  const GUILD_VOCAL_CHANNELS_KEY = voiceChannel;
-  let obj2 = arg1(dependencyMap[19]);
-  const items = [closure_9];
+  let obj2 = user(showUserProfile[19]);
+  const items = [stateFromStores1];
   const stateFromStores = obj2.useStateFromStores(items, () => stateFromStores1.getGuild(guildId));
-  let closure_8 = stateFromStores;
-  let obj3 = arg1(dependencyMap[19]);
-  const items1 = [closure_8];
-  const stateFromStores1 = obj3.useStateFromStores(items1, () => stateFromStores.getMember(guildId, user.id));
-  closure_9 = stateFromStores1;
+  let obj3 = user(showUserProfile[19]);
+  const items1 = [stateFromStores];
+  stateFromStores1 = obj3.useStateFromStores(items1, () => stateFromStores.getMember(guildId, user.id));
   let closure_10 = tmp6;
-  let obj4 = arg1(dependencyMap[19]);
+  let obj4 = user(showUserProfile[19]);
   const items2 = [hideActionSheet];
   const stateFromStores2 = obj4.useStateFromStores(items2, () => {
     const channel = hideActionSheet.getChannel(channelId);
@@ -119,7 +116,7 @@ export default function UserProfileModeratorActions(user) {
     }
     return null != isThreadResult && isThreadResult;
   });
-  let obj5 = arg1(dependencyMap[19]);
+  let obj5 = user(showUserProfile[19]);
   const items3 = [hideActionSheet];
   const stateFromStores3 = obj5.useStateFromStores(items3, () => {
     const channel = hideActionSheet.getChannel(channelId);
@@ -129,10 +126,9 @@ export default function UserProfileModeratorActions(user) {
     }
     return null != isForumPostResult && isForumPostResult;
   });
-  let closure_11 = stateFromStores3;
-  let obj6 = arg1(dependencyMap[20]);
+  let obj6 = user(showUserProfile[20]);
   const canRemoveThreadMember = obj6.useCanRemoveThreadMember(channelId);
-  let obj7 = arg1(dependencyMap[19]);
+  let obj7 = user(showUserProfile[19]);
   const items4 = [closure_10];
   const stateFromStoresObject = obj7.useStateFromStoresObject(items4, () => {
     const obj = { canKickUser: user(showUserProfile[21]).canKickMember(user, stateFromStores) };
@@ -184,13 +180,13 @@ export default function UserProfileModeratorActions(user) {
   if (!canModerateMembers) {
     canModerateMembers = canManageUserRoles;
   }
-  const tmp12 = importDefault(dependencyMap[24])(voiceChannel);
+  const tmp12 = guildId(showUserProfile[24])(voiceChannel);
   let id;
-  const tmp11 = importDefault(dependencyMap[23])(guildId, user.id);
+  const tmp11 = guildId(showUserProfile[23])(guildId, user.id);
   if (null != voiceChannel) {
     id = voiceChannel.id;
   }
-  const tmp13Result = importDefault(dependencyMap[25])(user.id, id);
+  const tmp13Result = guildId(showUserProfile[25])(user.id, id);
   let tmp16 = null != voiceChannel;
   if (tmp16) {
     channelId = undefined;
@@ -204,12 +200,12 @@ export default function UserProfileModeratorActions(user) {
   if (tmp19) {
     let tmp20 = !tmp18;
     if (!tmp20) {
-      tmp20 = tmp13Result === arg1(dependencyMap[25]).RequestToSpeakStates.ON_STAGE;
+      tmp20 = tmp13Result === user(showUserProfile[25]).RequestToSpeakStates.ON_STAGE;
     }
     tmp19 = tmp20;
   }
-  let obj8 = arg1(dependencyMap[19]);
-  const items5 = [closure_4];
+  let obj8 = user(showUserProfile[19]);
+  const items5 = [trackUserProfileAction];
   const stateFromStores4 = obj8.useStateFromStores(items5, () => {
     let id;
     if (null != voiceChannel) {
@@ -217,24 +213,24 @@ export default function UserProfileModeratorActions(user) {
     }
     return trackUserProfileAction.getPermissionsForUser(user.id, id).speaker;
   });
-  let obj9 = arg1(dependencyMap[19]);
-  const items6 = [closure_6, closure_11, closure_9, closure_10];
+  let obj9 = user(showUserProfile[19]);
+  const items6 = [voiceState, stateFromStores3, stateFromStores1, closure_10];
   closure_13 = obj9.useStateFromStoresArray(items6, () => {
     if (canMoveMembers) {
       if (null != voiceChannel) {
-        const found = voiceState.getChannels(guildId)[closure_7].filter((channel) => {
+        const found = voiceState.getChannels(guildId)[voiceChannel].filter((channel) => {
           channel = channel.channel;
-          if (channel.id === id.id) {
+          if (channel.id === outer1_7.id) {
             return tmp;
           } else {
             let can = closure_10.can;
             let canResult = constants;
-            if (closure_10) {
+            if (outer1_10) {
               canResult = can(canResult.CONNECT, channel);
               if (canResult) {
-                can = closure_11;
-                canResult = !callback(closure_3[26]).isChannelFull(channel, closure_11, closure_9);
-                const obj4 = callback(closure_3[26]);
+                can = stateFromStores3;
+                canResult = !user(showUserProfile[26]).isChannelFull(channel, stateFromStores3, stateFromStores1);
+                const obj4 = user(showUserProfile[26]);
               }
               let canResult1 = canResult;
             } else {
@@ -242,21 +238,21 @@ export default function UserProfileModeratorActions(user) {
               if (canResult1) {
                 let canResult2 = closure_10.can(constants.CONNECT, channel);
                 if (!canResult2) {
-                  let obj = callback2(closure_3[27]);
-                  obj = { permission: constants.CONNECT, user: callback, context: channel };
+                  let obj = channelId(showUserProfile[27]);
+                  obj = { permission: constants.CONNECT, user: outer1_0, context: channel };
                   canResult2 = obj.can(obj);
                 }
                 canResult1 = canResult2;
               }
               if (canResult1) {
-                canResult1 = !callback(closure_3[26]).isChannelFull(channel, closure_11, closure_9);
-                const obj3 = callback(closure_3[26]);
+                canResult1 = !user(showUserProfile[26]).isChannelFull(channel, stateFromStores3, stateFromStores1);
+                const obj3 = user(showUserProfile[26]);
               }
             }
           }
         });
         const mapped = found.map((channel) => channel.channel);
-        const arr = voiceState.getChannels(guildId)[closure_7];
+        const arr = voiceState.getChannels(guildId)[voiceChannel];
       }
       return [];
     }
@@ -276,33 +272,33 @@ export default function UserProfileModeratorActions(user) {
       if (tmp18) {
         if (canModerateStage) {
           if (!stateFromStores4) {
-            const tmp37 = tmp13Result === arg1(dependencyMap[25]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-            const intl3 = arg1(dependencyMap[28]).intl;
+            const tmp37 = tmp13Result === user(showUserProfile[25]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+            const intl3 = user(showUserProfile[28]).intl;
             let string = intl3.string;
-            const t = arg1(dependencyMap[28]).t;
+            const t = user(showUserProfile[28]).t;
             if (tmp37) {
               let stringResult = string(t.tHj7Tb);
             } else {
               stringResult = string(t.VUCWcO);
             }
-            obj = { icon: arg1(dependencyMap[31]).MicrophoneArrowRightIcon };
+            obj = { icon: user(showUserProfile[31]).MicrophoneArrowRightIcon };
             if (tmp6) {
-              const intl4 = arg1(dependencyMap[28]).intl;
-              stringResult = intl4.string(arg1(dependencyMap[28]).t.8Joh+p);
+              const intl4 = user(showUserProfile[28]).intl;
+              stringResult = intl4.string(user(showUserProfile[28]).t["8Joh+p"]);
             }
             obj.label = stringResult;
             obj.disabled = tmp37;
             obj.onPress = function onPress() {
               trackUserProfileAction({ action: "PRESS_INVITE_TO_SPEAK" });
               const obj = user(showUserProfile[30]);
-              if (tmp6) {
+              if (closure_10) {
                 const result = obj.audienceAckRequestToSpeak(voiceChannel, false);
               } else {
                 obj.inviteUserToStage(voiceChannel, user.id);
               }
               guildId(showUserProfile[17]).hideActionSheet();
             };
-            items7.push(<ModeratorActionRow key="invite-to-speak" {...obj} />);
+            items7.push(<ModeratorActionRow key="invite-to-speak" icon={user(showUserProfile[31]).MicrophoneArrowRightIcon} />);
             const tmp41 = jsx;
             const tmp42 = ModeratorActionRow;
           }
@@ -314,15 +310,15 @@ export default function UserProfileModeratorActions(user) {
       }
       if (tmp48) {
         const obj1 = {};
-        const intl5 = arg1(dependencyMap[28]).intl;
-        obj1.label = intl5.string(arg1(dependencyMap[28]).t.FAplms);
-        obj1.hint = arg1(dependencyMap[32]).FormArrow;
+        const intl5 = user(showUserProfile[28]).intl;
+        obj1.label = intl5.string(user(showUserProfile[28]).t.FAplms);
+        obj1.hint = user(showUserProfile[32]).FormArrow;
         let tmp53;
         if (null != tmp12) {
           tmp53 = tmp12;
         }
         obj1.sublabel = tmp53;
-        obj1.icon = arg1(dependencyMap[33]).VoiceNormalIcon;
+        obj1.icon = user(showUserProfile[33]).VoiceNormalIcon;
         obj1.onPress = function onPress() {
           trackUserProfileAction({ action: "PRESS_MOVE_TO_CHANNEL" });
           let obj = guildId(showUserProfile[17]);
@@ -333,12 +329,12 @@ export default function UserProfileModeratorActions(user) {
           obj.header = obj;
           obj.channels = closure_13;
           obj.onSelect = function onSelect(id) {
-            return callback(closure_3[36]).setChannel(id2.id, id.id, id.id);
+            return guildId(showUserProfile[36]).setChannel(outer1_8.id, outer1_0.id, id.id);
           };
           obj.selectedChannel = null;
           obj.openLazy(user(showUserProfile[35])(showUserProfile[34], showUserProfile.paths), "ChannelPicker", obj, "stack");
         };
-        items7.push(<ModeratorActionRow key="move-to-channel" {...obj1} />);
+        items7.push(<ModeratorActionRow key="move-to-channel" />);
         const tmp49 = jsx;
         const tmp50 = ModeratorActionRow;
       }
@@ -361,9 +357,9 @@ export default function UserProfileModeratorActions(user) {
       }
       if (tmp57) {
         obj2 = {};
-        const intl6 = arg1(dependencyMap[28]).intl;
-        obj2.label = intl6.string(arg1(dependencyMap[28]).t.HxrBOZ);
-        obj2.icon = arg1(dependencyMap[37]).SettingsIcon;
+        const intl6 = user(showUserProfile[28]).intl;
+        obj2.label = intl6.string(user(showUserProfile[28]).t.HxrBOZ);
+        obj2.icon = user(showUserProfile[37]).SettingsIcon;
         obj2.onPress = function onPress() {
           trackUserProfileAction({ action: "PRESS_MANAGE_USER" });
           hideActionSheet();
@@ -372,18 +368,18 @@ export default function UserProfileModeratorActions(user) {
             userId: user.id,
             guildId: stateFromStores.id,
             onClose() {
-              let arr = callback(callback2[38]);
+              let arr = guildId(showUserProfile[38]);
               arr = arr.pop();
-              callback2();
+              outer1_3();
             },
             onRemove() {
-              let arr = callback(closure_3[38]);
+              let arr = guildId(showUserProfile[38]);
               arr = arr.pop();
             }
           };
           obj.pushLazy(user(showUserProfile[35])(showUserProfile[39], showUserProfile.paths), obj);
         };
-        items7.push(<ModeratorActionRow key="manage" {...obj2} />);
+        items7.push(<ModeratorActionRow key="manage" />);
       }
       const features = stateFromStores.features;
       const hasItem = features.has(canMoveMembers.COMMUNITY);
@@ -391,8 +387,8 @@ export default function UserProfileModeratorActions(user) {
       const hasItem1 = features2.has(canMoveMembers.GUILD_ONBOARDING_EVER_ENABLED);
       let hasFlagResult = null != stateFromStores1;
       if (hasFlagResult) {
-        let obj14 = arg1(dependencyMap[40]);
-        const flags = stateFromStores1.flags;
+        let obj14 = user(showUserProfile[40]);
+        let flags = stateFromStores1.flags;
         let num12 = 0;
         if (null != flags) {
           num12 = flags;
@@ -401,9 +397,9 @@ export default function UserProfileModeratorActions(user) {
       }
       if (tmp71) {
         obj3 = {};
-        const intl7 = arg1(dependencyMap[28]).intl;
-        obj3.label = intl7.string(arg1(dependencyMap[28]).t.NbhSI7);
-        obj3.icon = arg1(dependencyMap[41]).StampIcon;
+        const intl7 = user(showUserProfile[28]).intl;
+        obj3.label = intl7.string(user(showUserProfile[28]).t.NbhSI7);
+        obj3.icon = user(showUserProfile[41]).StampIcon;
         obj3.onPress = function onPress() {
           trackUserProfileAction({ action: "PRESS_UNVERIFY_USER" });
           const obj = guildId(showUserProfile[36]);
@@ -412,15 +408,15 @@ export default function UserProfileModeratorActions(user) {
           if (null != flags) {
             num = flags;
           }
-          obj.setMemberFlags(stateFromStores.id, user.id, user(showUserProfile[40]).setFlag(num, result.BYPASSES_VERIFICATION, false));
+          obj.setMemberFlags(stateFromStores.id, user.id, user(showUserProfile[40]).setFlag(num, _undefined.BYPASSES_VERIFICATION, false));
         };
-        items7.push(<ModeratorActionRow key="unverify" {...obj3} />);
+        items7.push(<ModeratorActionRow key="unverify" />);
       }
       if (tmp77) {
         obj4 = {};
-        const intl8 = arg1(dependencyMap[28]).intl;
-        obj4.label = intl8.string(arg1(dependencyMap[28]).t.6QlTeK);
-        obj4.icon = arg1(dependencyMap[41]).StampIcon;
+        const intl8 = user(showUserProfile[28]).intl;
+        obj4.label = intl8.string(user(showUserProfile[28]).t["6QlTeK"]);
+        obj4.icon = user(showUserProfile[41]).StampIcon;
         obj4.onPress = function onPress() {
           trackUserProfileAction({ action: "PRESS_VERIFY_USER" });
           const obj = guildId(showUserProfile[36]);
@@ -429,38 +425,38 @@ export default function UserProfileModeratorActions(user) {
           if (null != flags) {
             num = flags;
           }
-          obj.setMemberFlags(stateFromStores.id, user.id, user(showUserProfile[40]).setFlag(num, result.BYPASSES_VERIFICATION, true));
+          obj.setMemberFlags(stateFromStores.id, user.id, user(showUserProfile[40]).setFlag(num, _undefined.BYPASSES_VERIFICATION, true));
         };
-        items7.push(<ModeratorActionRow key="verify" {...obj4} />);
+        items7.push(<ModeratorActionRow key="verify" />);
       }
       if (null != stateFromStores1) {
         if (tmp11) {
-          const result = arg1(dependencyMap[42]).isMemberCommunicationDisabled(stateFromStores1);
+          let result = user(showUserProfile[42]).isMemberCommunicationDisabled(stateFromStores1);
           GuildMemberFlags = result;
           obj5 = {};
-          const intl9 = arg1(dependencyMap[28]).intl;
+          const intl9 = user(showUserProfile[28]).intl;
           let string2 = intl9.string;
-          let t2 = arg1(dependencyMap[28]).t;
+          let t2 = user(showUserProfile[28]).t;
           if (result) {
             let string2Result = string2(t2.qXtNtS);
           } else {
             string2Result = string2(t2.xpsADY);
           }
           obj5.label = string2Result;
-          t2 = arg1;
-          string2 = dependencyMap;
-          obj5.icon = arg1(dependencyMap[43]).ClockWarningIcon;
+          t2 = user;
+          string2 = showUserProfile;
+          obj5.icon = user(showUserProfile[43]).ClockWarningIcon;
           obj5.onPress = function onPress() {
             let obj = {};
             let str = "PRESS_TIME_OUT_USER";
-            if (result) {
+            if (c14) {
               str = "PRESS_REMOVE_TIME_OUT";
             }
             obj.action = str;
             trackUserProfileAction(obj);
             hideActionSheet();
             const obj2 = user(showUserProfile[44]);
-            if (result) {
+            if (c14) {
               obj = {};
               ({ guildId: obj4.guildId, userId: obj4.userId } = stateFromStores1);
               obj.cancelButtonCallback = showUserProfile;
@@ -472,8 +468,8 @@ export default function UserProfileModeratorActions(user) {
               const result1 = obj2.openDisableCommunication(obj);
             }
           };
-          items7.push(<ModeratorActionRow key="time-out" {...obj5} />);
-          const obj18 = arg1(dependencyMap[42]);
+          items7.push(<ModeratorActionRow key="time-out" />);
+          const obj18 = user(showUserProfile[42]);
           const tmp86 = jsx;
           const tmp87 = ModeratorActionRow;
         }
@@ -503,46 +499,46 @@ export default function UserProfileModeratorActions(user) {
               arr5 = jsx;
               arr5 = ModeratorActionRow;
               obj6 = {};
-              arr5 = arg1;
-              arr5 = dependencyMap;
-              const intl14 = arg1(dependencyMap[28]).intl;
-              obj6.label = intl14.string(arg1(dependencyMap[28]).t.3glT6Z);
-              obj6.icon = arg1(dependencyMap[50]).UserMinusIcon;
+              arr5 = user;
+              arr5 = showUserProfile;
+              const intl14 = user(showUserProfile[28]).intl;
+              obj6.label = intl14.string(user(showUserProfile[28]).t["3glT6Z"]);
+              obj6.icon = user(showUserProfile[50]).UserMinusIcon;
               obj6.isDestructive = true;
               obj6.onPress = function onPress() {
                 trackUserProfileAction({ action: "PRESS_KICK_USER" });
                 hideActionSheet();
                 guildId(showUserProfile[51])({ guildId: stateFromStores.id, userId: user.id, cancelButtonCallback: showUserProfile });
               };
-              arr5 = items7.push(<ModeratorActionRow key="kick" {...obj6} />);
+              arr5 = items7.push(<ModeratorActionRow key="kick" />);
             }
             if (canBanUser) {
               arr5 = jsx;
               arr5 = ModeratorActionRow;
               obj7 = {};
-              arr5 = arg1;
-              arr5 = dependencyMap;
-              const intl15 = arg1(dependencyMap[28]).intl;
-              obj7.label = intl15.string(arg1(dependencyMap[28]).t.5MBJ5M);
-              obj7.icon = arg1(dependencyMap[52]).HammerIcon;
+              arr5 = user;
+              arr5 = showUserProfile;
+              const intl15 = user(showUserProfile[28]).intl;
+              obj7.label = intl15.string(user(showUserProfile[28]).t["5MBJ5M"]);
+              obj7.icon = user(showUserProfile[52]).HammerIcon;
               obj7.isDestructive = true;
               obj7.onPress = function onPress() {
                 trackUserProfileAction({ action: "PRESS_BAN_USER" });
                 guildId(showUserProfile[53])({ guildId: stateFromStores.id, userId: user.id, cancelButtonCallback: showUserProfile });
               };
-              arr5 = items7.push(<ModeratorActionRow key="ban" {...obj7} />);
+              arr5 = items7.push(<ModeratorActionRow key="ban" />);
             }
             if (stateFromStores2) {
               if (canRemoveThreadMember) {
                 if (!tmp6) {
                   if (null != channelId) {
-                    arr5 = arg1;
-                    arr5 = dependencyMap;
-                    let intl16 = arg1(dependencyMap[28]).intl;
+                    arr5 = user;
+                    arr5 = showUserProfile;
+                    let intl16 = user(showUserProfile[28]).intl;
                     string = intl16.string;
-                    let push = arg1(dependencyMap[28]).t;
+                    let push = user(showUserProfile[28]).t;
                     if (stateFromStores3) {
-                      arr5 = string(push.6+b8ae);
+                      arr5 = string(push["6+b8ae"]);
                     } else {
                       arr5 = string(push.at1yY3);
                     }
@@ -550,23 +546,23 @@ export default function UserProfileModeratorActions(user) {
                     arr5 = jsx;
                     intl16 = ModeratorActionRow;
                     string = { isDestructive: true, label: arr5 };
-                    arr5 = arg1;
-                    arr5 = dependencyMap;
-                    string.icon = arg1(dependencyMap[54]).ThreadMinusIcon;
+                    arr5 = user;
+                    arr5 = showUserProfile;
+                    string.icon = user(showUserProfile[54]).ThreadMinusIcon;
                     string.onPress = function onPress() {
                       let obj = user(showUserProfile[55]);
                       obj = {
                         isForumPost: stateFromStores3,
                         user,
                         onConfirm() {
-                          callback2({ action: "PRESS_REMOVE_FROM_THREAD" });
-                          callback(closure_3[56]).removeMember(closure_2, id.id, "Context Menu");
-                          callback3();
+                          outer1_4({ action: "PRESS_REMOVE_FROM_THREAD" });
+                          guildId(showUserProfile[56]).removeMember(outer1_2, outer1_0.id, "Context Menu");
+                          outer1_5();
                         }
                       };
                       obj.confirmThreadRemove(obj);
                     };
-                    arr5 = push(<ModeratorActionRow key="remove-from-thread" {...string} />);
+                    arr5 = push(<ModeratorActionRow key="remove-from-thread" isDestructive label={arr5} />);
                   }
                 }
               }
@@ -575,29 +571,29 @@ export default function UserProfileModeratorActions(user) {
             if (0 === items7.length) {
               return null;
             } else {
-              arr5 = importDefault;
-              arr5 = dependencyMap;
+              arr5 = guildId;
+              arr5 = showUserProfile;
               arr5 = jsx;
               obj8 = {};
               arr5 = undefined;
-              arr5 = importDefault(dependencyMap[14]);
+              arr5 = guildId(showUserProfile[14]);
               if (!tmp2) {
-                arr5 = arg1;
-                arr5 = dependencyMap;
-                const intl17 = arg1(dependencyMap[28]).intl;
-                arr5 = intl17.string(arg1(dependencyMap[28]).t.EApw/R);
+                arr5 = user;
+                arr5 = showUserProfile;
+                const intl17 = user(showUserProfile[28]).intl;
+                arr5 = intl17.string(user(showUserProfile[28]).t["EApw/R"]);
               }
               obj8.title = arr5;
               const items8 = [user.style, arr5.cardContainer];
               obj8.style = items8;
               obj8.titleStyle = arr5.cardTitle;
               arr5 = jsx;
-              arr5 = arg1;
-              arr5 = dependencyMap;
+              arr5 = user;
+              arr5 = showUserProfile;
               if (tmp2) {
                 obj9 = { hasIcons: true };
                 const intl18 = arr5(arr5[28]).intl;
-                obj9.title = intl18.string(arr5(arr5[28]).t.EApw/R);
+                obj9.title = intl18.string(arr5(arr5[28]).t["EApw/R"]);
                 obj9.children = items7;
                 arr5 = arr5(arr5(arr5[57]).TableRowGroup, obj9);
               } else {
@@ -612,20 +608,20 @@ export default function UserProfileModeratorActions(user) {
             arr5 = jsx;
             arr5 = ModeratorActionRow;
             if (user.id === currentUser.id) {
-              arr5 = arg1;
-              arr5 = dependencyMap;
-              const intl13 = arg1(dependencyMap[28]).intl;
-              arr5 = intl13.string(arg1(dependencyMap[28]).t.6vrfgt);
+              arr5 = user;
+              arr5 = showUserProfile;
+              const intl13 = user(showUserProfile[28]).intl;
+              arr5 = intl13.string(user(showUserProfile[28]).t["6vrfgt"]);
             } else {
-              arr5 = arg1;
-              arr5 = dependencyMap;
-              const intl12 = arg1(dependencyMap[28]).intl;
-              arr5 = intl12.string(arg1(dependencyMap[28]).t./jERiG);
+              arr5 = user;
+              arr5 = showUserProfile;
+              const intl12 = user(showUserProfile[28]).intl;
+              arr5 = intl12.string(user(showUserProfile[28]).t["/jERiG"]);
             }
             obj11.label = arr5;
-            arr5 = arg1;
-            arr5 = dependencyMap;
-            obj11.icon = arg1(dependencyMap[49]).PhoneHangUpIcon;
+            arr5 = user;
+            arr5 = showUserProfile;
+            obj11.icon = user(showUserProfile[49]).PhoneHangUpIcon;
             obj11.isDestructive = true;
             obj11.onPress = function onPress() {
               trackUserProfileAction({ action: "DISCONNECT" });
@@ -635,21 +631,21 @@ export default function UserProfileModeratorActions(user) {
           }
         } else {
           const obj12 = {};
-          arr5 = arg1;
-          arr5 = dependencyMap;
+          arr5 = user;
+          arr5 = showUserProfile;
           arr5 = jsx;
           arr5 = ModeratorActionRow;
-          const intl11 = arg1(dependencyMap[28]).intl;
+          const intl11 = user(showUserProfile[28]).intl;
           const string4 = intl11.string;
-          const t4 = arg1(dependencyMap[28]).t;
+          const t4 = user(showUserProfile[28]).t;
           if (voiceState.deaf) {
             arr5 = string4(t4.Gbw4Z9);
           } else {
             arr5 = string4(t4.hMA2GE);
           }
           obj12.label = arr5;
-          arr5 = arg1;
-          arr5 = dependencyMap;
+          arr5 = user;
+          arr5 = showUserProfile;
           if (voiceState.deaf) {
             let HeadphonesIcon = arr5(arr5[47]).HeadphonesSlashIcon;
           } else {
@@ -664,9 +660,9 @@ export default function UserProfileModeratorActions(user) {
         }
       } else {
         const obj13 = {};
-        const intl10 = arg1(dependencyMap[28]).intl;
+        const intl10 = user(showUserProfile[28]).intl;
         const string3 = intl10.string;
-        const t3 = arg1(dependencyMap[28]).t;
+        const t3 = user(showUserProfile[28]).t;
         if (voiceState.mute) {
           let string3Result = string3(t3.wG9K2n);
         } else {
@@ -683,30 +679,30 @@ export default function UserProfileModeratorActions(user) {
           trackUserProfileAction({ action: "SERVER_MUTE" });
           guildId(showUserProfile[36]).setServerMute(stateFromStores.id, user.id, !voiceState.mute);
         };
-        arr5 = items7.push(<ModeratorActionRow key="server-mute" {...obj13} />);
+        arr5 = items7.push(<ModeratorActionRow key="server-mute" />);
         const tmp93 = jsx;
         const tmp94 = ModeratorActionRow;
       }
-      const tmp71 = null != stateFromStores1 && !tmp6 && canModerateMembers && hasItem && hasItem1 && hasFlagResult;
-      const tmp77 = null != stateFromStores1 && !tmp6 && canModerateMembers && hasItem && hasItem1 && !hasFlagResult;
+      tmp71 = null != stateFromStores1 && !tmp6 && canModerateMembers && hasItem && hasItem1 && hasFlagResult;
+      tmp77 = null != stateFromStores1 && !tmp6 && canModerateMembers && hasItem && hasItem1 && !hasFlagResult;
     } else {
       obj14 = {};
       if (user.id === currentUser.id) {
-        const intl2 = arg1(dependencyMap[28]).intl;
-        let stringResult1 = intl2.string(arg1(dependencyMap[28]).t.6C6PJx);
+        const intl2 = user(showUserProfile[28]).intl;
+        let stringResult1 = intl2.string(user(showUserProfile[28]).t["6C6PJx"]);
       } else {
-        const intl = arg1(dependencyMap[28]).intl;
-        stringResult1 = intl.string(arg1(dependencyMap[28]).t.r23NoB);
+        let intl = user(showUserProfile[28]).intl;
+        stringResult1 = intl.string(user(showUserProfile[28]).t.r23NoB);
       }
       obj14.label = stringResult1;
-      obj14.icon = arg1(dependencyMap[29]).GroupArrowDownIcon;
+      obj14.icon = user(showUserProfile[29]).GroupArrowDownIcon;
       obj14.onPress = function onPress() {
         trackUserProfileAction({ action: "PRESS_REMOVE_FROM_STAGE" });
         user(showUserProfile[30]).moveUserToAudience(user, voiceChannel);
         const obj = user(showUserProfile[30]);
         guildId(showUserProfile[17]).hideActionSheet();
       };
-      items7.push(<ModeratorActionRow key="remove-from-stage" {...obj14} />);
+      items7.push(<ModeratorActionRow key="remove-from-stage" />);
       const tmp25 = jsx;
       const tmp26 = ModeratorActionRow;
     }

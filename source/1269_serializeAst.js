@@ -1,9 +1,13 @@
 // Module ID: 1269
-// Function ID: 14328
+// Function ID: 14329
 // Name: serializeAst
-// Dependencies: []
+// Dependencies: [57, 6, 7, 1255]
 
 // Module 1269 (serializeAst)
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 function serializeAst(arg0, value) {
   const iter = arg0[Symbol.iterator]();
   const nextResult = iter.next();
@@ -14,14 +18,14 @@ function serializeAst(arg0, value) {
       let first = tmp52[0];
       let tmp6 = require;
       let tmp7 = dependencyMap;
-      if (require(dependencyMap[3]).FormatJsNodeType.Argument === first) {
+      if (require(1255) /* hydrateArray */.FormatJsNodeType.Argument === first) {
         let tmp50 = value;
         let tmp51 = nextResult;
         value.value = `${value.value}{${tmp52[1]}}`;
       } else {
         let tmp53 = require;
         let tmp54 = dependencyMap;
-        if (require(dependencyMap[3]).FormatJsNodeType.Date === first) {
+        if (require(1255) /* hydrateArray */.FormatJsNodeType.Date === first) {
           let tmp45 = value;
           let tmp46 = nextResult;
           value.value = `${value.value}{${tmp52[1]}, date`;
@@ -35,7 +39,7 @@ function serializeAst(arg0, value) {
         } else {
           let tmp55 = require;
           let tmp56 = dependencyMap;
-          if (require(dependencyMap[3]).FormatJsNodeType.Time === first) {
+          if (require(1255) /* hydrateArray */.FormatJsNodeType.Time === first) {
             let tmp40 = value;
             let tmp41 = nextResult;
             value.value = `${value.value}{${tmp52[1]}, time`;
@@ -49,7 +53,7 @@ function serializeAst(arg0, value) {
           } else {
             let tmp57 = require;
             let tmp58 = dependencyMap;
-            if (require(dependencyMap[3]).FormatJsNodeType.Number === first) {
+            if (require(1255) /* hydrateArray */.FormatJsNodeType.Number === first) {
               let tmp35 = value;
               let tmp36 = nextResult;
               value.value = `${value.value}{${tmp52[1]}, number`;
@@ -63,7 +67,7 @@ function serializeAst(arg0, value) {
             } else {
               let tmp59 = require;
               let tmp60 = dependencyMap;
-              if (require(dependencyMap[3]).FormatJsNodeType.Plural === first) {
+              if (require(1255) /* hydrateArray */.FormatJsNodeType.Plural === first) {
                 let tmp21 = nextResult;
                 let str = "plural";
                 if ("ordinal" == tmp52[4]) {
@@ -82,26 +86,27 @@ function serializeAst(arg0, value) {
                 let entries = Object.entries(tmp52[2]);
                 let tmp28 = entries;
                 for (const item10110 of entries) {
-                  let tmp29 = closure_2;
-                  let tmp30 = closure_2(item10110, 2);
+                  let tmp29 = _slicedToArray;
+                  let tmp30 = _slicedToArray(item10110, 2);
                   let tmp31 = arg1;
                   arg1.value = arg1.value + (" " + tmp30[0] + " {");
-                  let tmp32 = closure_5;
-                  let tmp33 = closure_5(tmp30[1], arg1);
+                  let tmp32 = serializeAst;
+                  let tmp33 = serializeAst(tmp30[1], arg1);
                   arg1.value = arg1.value + "}";
+                  continue;
                 }
                 let tmp34 = value;
                 value.value = `${value.value}}`;
               } else {
                 let tmp61 = require;
                 let tmp62 = dependencyMap;
-                if (require(dependencyMap[3]).FormatJsNodeType.Pound === first) {
+                if (require(1255) /* hydrateArray */.FormatJsNodeType.Pound === first) {
                   let tmp20 = value;
                   value.value = `${value.value}#`;
                 } else {
                   let tmp63 = require;
                   let tmp64 = dependencyMap;
-                  if (require(dependencyMap[3]).FormatJsNodeType.Select === first) {
+                  if (require(1255) /* hydrateArray */.FormatJsNodeType.Select === first) {
                     let tmp10 = value;
                     let tmp11 = nextResult;
                     value.value = `${value.value}{${tmp52[1]}, select,`;
@@ -109,20 +114,21 @@ function serializeAst(arg0, value) {
                     let entries1 = Object.entries(tmp52[2]);
                     let tmp13 = entries1;
                     for (const item10061 of entries1) {
-                      let tmp14 = closure_2;
-                      let tmp15 = closure_2(item10061, 2);
+                      let tmp14 = _slicedToArray;
+                      let tmp15 = _slicedToArray(item10061, 2);
                       let tmp16 = arg1;
                       arg1.value = arg1.value + (" " + tmp15[0] + " {");
-                      let tmp17 = closure_5;
-                      let tmp18 = closure_5(tmp15[1], arg1);
+                      let tmp17 = serializeAst;
+                      let tmp18 = serializeAst(tmp15[1], arg1);
                       arg1.value = arg1.value + "}";
+                      continue;
                     }
                     let tmp19 = value;
                     value.value = `${value.value}}`;
                   } else {
                     let tmp8 = require;
                     let tmp9 = dependencyMap;
-                    if (require(dependencyMap[3]).FormatJsNodeType.Tag === first) {
+                    if (require(1255) /* hydrateArray */.FormatJsNodeType.Tag === first) {
                       let tmp65 = serializeAstTag;
                       let tmp66 = nextResult;
                       let tmp67 = value;
@@ -140,7 +146,7 @@ function serializeAst(arg0, value) {
       let tmp3 = nextResult;
       value.value = value.value + tmp52;
     }
-    // continue
+    continue;
   }
 }
 function serializeAstTag(arg0, value) {
@@ -153,9 +159,9 @@ function serializeAstTag(arg0, value) {
     serializeAst(arg0[2], value);
     value.value = `${value.value}*`;
   } else if ("$code" === tmp) {
-    value.value = `${value.value}``;
+    value.value = `${value.value}\``;
     serializeAst(arg0[2], value);
-    value.value = `${value.value}``;
+    value.value = `${value.value}\``;
   } else if ("$p" === tmp) {
     serializeAst(arg0[2], value);
     value.value = `${value.value}
@@ -175,26 +181,22 @@ function serializeAstTag(arg0, value) {
     value.value = `${value.value}](${arg0[1]})`;
   }
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
 
-export const InternalIntlMessage = () => {
+export const InternalIntlMessage = (() => {
   class InternalIntlMessage {
     constructor(arg0, arg1) {
-      tmp = closure_3(this, InternalIntlMessage);
+      tmp = outer1_3(this, InternalIntlMessage);
       this.locale = arg1;
       result = arg0;
-      if (!InternalIntlMessage(closure_1[3]).isCompressedAst(arg0)) {
+      if (!InternalIntlMessage(outer1_1[3]).isCompressedAst(arg0)) {
         tmp3 = InternalIntlMessage;
-        tmp4 = closure_1;
-        result = InternalIntlMessage(closure_1[3]).compressFormatJsToAst(arg0);
+        tmp4 = outer1_1;
+        result = InternalIntlMessage(outer1_1[3]).compressFormatJsToAst(arg0);
       }
       this.ast = result;
       return;
     }
   }
-  const require = InternalIntlMessage;
   const items = [
     {
       key: "reserialize",
@@ -204,11 +206,11 @@ export const InternalIntlMessage = () => {
           return self.ast;
         } else {
           const obj = { value: "" };
-          callback2(self.ast, obj);
+          outer1_5(self.ast, obj);
           return obj.value;
         }
       }
     }
   ];
-  return callback(InternalIntlMessage, items);
-}();
+  return _defineProperties(InternalIntlMessage, items);
+})();

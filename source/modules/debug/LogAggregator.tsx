@@ -1,52 +1,55 @@
 // Module ID: 12
 // Function ID: 154
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [13, 2]
 // Exports: clear, getAllForDebugPanel, report, stringify
 
 // Module 12 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import importDefaultResult from "arrayCopy";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -56,14 +59,17 @@ function _createForOfIteratorHelperLoose(@@iterator) {
         throw typeError;
       }
     }
-    let closure_1 = 0;
+    if (tmp) {
+      closure_0 = tmp;
+    }
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -80,9 +86,8 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let importDefaultResult = importDefault(dependencyMap[0]);
 importDefaultResult = new importDefaultResult(5000);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/debug/LogAggregator.tsx");
+const result = require("set").fileFinishedImporting("modules/debug/LogAggregator.tsx");
 
 export const report = function report(category) {
   let length;
@@ -135,9 +140,9 @@ export const report = function report(category) {
   }
   if (importDefaultResult.length > 5000) {
     do {
-      let tmp8 = closure_0;
-      let arr1 = closure_0.shift();
-      length = closure_0.length;
+      let tmp8 = importDefaultResult;
+      let arr1 = importDefaultResult.shift();
+      length = importDefaultResult.length;
     } while (length > 5000);
   }
 };
@@ -146,9 +151,9 @@ export const clear = function clear() {
 };
 export const stringify = function stringify(arg0) {
   const found = arg0.toArray().filter((category) => {
-    let hasItem = null == category;
+    let hasItem = null == closure_0;
     if (!hasItem) {
-      hasItem = category.includes(category.category);
+      hasItem = closure_0.includes(category.category);
     }
     return hasItem;
   });

@@ -1,18 +1,21 @@
-// Module ID: 9936
-// Function ID: 76882
+// Module ID: 9944
+// Function ID: 76922
 // Name: shouldShowEmojiRow
-// Dependencies: []
+// Dependencies: [653, 1360, 2]
 // Exports: shouldShowEmojiRow
 
-// Module 9936 (shouldShowEmojiRow)
-const _module = require(dependencyMap[0]);
-({ MessageFlags: closure_2, MessageStates: closure_3, MessageTypes: closure_4 } = _module);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/action_sheet/native/components/EmojiRowUtils.tsx");
+// Module 9944 (shouldShowEmojiRow)
+import ME from "ME";
 
-export const shouldShowEmojiRow = function shouldShowEmojiRow(arg0, message, isActiveChannelOrUnarchivableThread) {
-  let tmp = arg0;
-  if (arg0) {
+let closure_2;
+let closure_3;
+let closure_4;
+({ MessageFlags: closure_2, MessageStates: closure_3, MessageTypes: closure_4 } = ME);
+const result = require("set").fileFinishedImporting("modules/action_sheet/native/components/EmojiRowUtils.tsx");
+
+export const shouldShowEmojiRow = function shouldShowEmojiRow(closure_8, message, isActiveChannelOrUnarchivableThread) {
+  let tmp = closure_8;
+  if (closure_8) {
     tmp = isActiveChannelOrUnarchivableThread;
   }
   if (tmp) {
@@ -25,8 +28,8 @@ export const shouldShowEmojiRow = function shouldShowEmojiRow(arg0, message, isA
     tmp = message.type !== constants3.THREAD_STARTER_MESSAGE;
   }
   if (tmp) {
-    tmp = !require(dependencyMap[1]).hasFlag(message.flags, constants.EPHEMERAL);
-    const obj = require(dependencyMap[1]);
+    tmp = !require(1360) /* hasFlag */.hasFlag(message.flags, constants.EPHEMERAL);
+    const obj = require(1360) /* hasFlag */;
   }
   return tmp;
 };

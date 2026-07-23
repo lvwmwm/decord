@@ -1,9 +1,9 @@
-// Module ID: 7854
-// Function ID: 62616
-// Name: __exportStarResult1
-// Dependencies: [0, 0]
+// Module ID: 7860
+// Function ID: 62653
+// Name: set
+// Dependencies: [2, 7861]
 
-// Module 7854 (__exportStarResult1)
-const result = require("__exportStarResult1").fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.tsx");
+// Module 7860 (set)
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.tsx");
 
-export { default } from "__exportStarResult1";
+export { default } from "useMaybeFetchCollectiblesCategories";

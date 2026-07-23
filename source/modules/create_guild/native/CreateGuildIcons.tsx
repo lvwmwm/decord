@@ -1,13 +1,12 @@
-// Module ID: 11730
-// Function ID: 91121
+// Module ID: 11740
+// Function ID: 91170
 // Name: GUILD_TEMPLATE_ICONS
-// Dependencies: []
+// Dependencies: [10056, 10060, 10058, 10059, 10061, 10062, 10057, 5807, 2]
 
-// Module 11730 (GUILD_TEMPLATE_ICONS)
-let obj = { CREATE: importDefault(dependencyMap[0]), GAMING: importDefault(dependencyMap[1]), FRIENDS: importDefault(dependencyMap[2]), STUDY: importDefault(dependencyMap[3]), CLUBS: importDefault(dependencyMap[4]), CREATORS: importDefault(dependencyMap[5]), LOCAL_COMMUNITY: importDefault(dependencyMap[6]), SCHOOL_CLUB: importDefault(dependencyMap[4]) };
-obj = { CREATE: require(dependencyMap[7]).PencilIllocon, GAMING: require(dependencyMap[7]).ControllerIllocon, FRIENDS: require(dependencyMap[7]).HeartIllocon, STUDY: require(dependencyMap[7]).AppleIllocon, CLUBS: require(dependencyMap[7]).BookIllocon, CREATORS: require(dependencyMap[7]).PaintIllocon, LOCAL_COMMUNITY: require(dependencyMap[7]).LeafIllocon, SCHOOL_CLUB: require(dependencyMap[7]).BookIllocon };
-const _module = require(dependencyMap[8]);
-const result = _module.fileFinishedImporting("modules/create_guild/native/CreateGuildIcons.tsx");
+// Module 11740 (GUILD_TEMPLATE_ICONS)
+let obj = { CREATE: require("registerAsset"), GAMING: require("registerAsset"), FRIENDS: require("registerAsset"), STUDY: require("registerAsset"), CLUBS: require("registerAsset"), CREATORS: require("registerAsset"), LOCAL_COMMUNITY: require("registerAsset"), SCHOOL_CLUB: require("registerAsset") };
+obj = { CREATE: require("AccountAgeTier10LargeBadge").PencilIllocon, GAMING: require("AccountAgeTier10LargeBadge").ControllerIllocon, FRIENDS: require("AccountAgeTier10LargeBadge").HeartIllocon, STUDY: require("AccountAgeTier10LargeBadge").AppleIllocon, CLUBS: require("AccountAgeTier10LargeBadge").BookIllocon, CREATORS: require("AccountAgeTier10LargeBadge").PaintIllocon, LOCAL_COMMUNITY: require("AccountAgeTier10LargeBadge").LeafIllocon, SCHOOL_CLUB: require("AccountAgeTier10LargeBadge").BookIllocon };
+const result = require("registerAsset").fileFinishedImporting("modules/create_guild/native/CreateGuildIcons.tsx");
 
 export const GUILD_TEMPLATE_ICONS = obj;
 export const GUILD_TEMPLATE_ICON_COMPONENTS = obj;

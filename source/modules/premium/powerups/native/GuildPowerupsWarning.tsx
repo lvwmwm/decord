@@ -1,52 +1,56 @@
-// Module ID: 11583
-// Function ID: 90037
+// Module ID: 11593
+// Function ID: 90086
 // Name: GuildPowerupsWarning
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 11594, 7507, 4126, 2]
 // Exports: default
 
-// Module 11583 (GuildPowerupsWarning)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { padding: importDefault(dependencyMap[4]).space.PX_24, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[4]).radii.lg, gap: importDefault(dependencyMap[4]).space.PX_8, overflow: "hidden" };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.contentContainer = { gap: importDefault(dependencyMap[4]).space.PX_4 };
-const obj1 = { gap: importDefault(dependencyMap[4]).space.PX_4 };
-obj.warningText = { marginTop: importDefault(dependencyMap[4]).space.PX_4 };
-obj.text = { textAlign: "center" };
-let closure_6 = obj.createStyles(obj);
-const obj2 = { marginTop: importDefault(dependencyMap[4]).space.PX_4 };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsWarning.tsx");
+// Module 11593 (GuildPowerupsWarning)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "flex-start", padding: require("_createForOfIteratorHelperLoose").space.PX_24, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, gap: require("_createForOfIteratorHelperLoose").space.PX_8, overflow: "hidden" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4, alignItems: "center" };
+_createForOfIteratorHelperLoose.contentContainer = obj1;
+_createForOfIteratorHelperLoose.warningText = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.text = { textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsWarning.tsx");
 
 export default function GuildPowerupsWarning(warnings) {
   let guildId;
   let powerupNames;
   warnings = warnings.warnings;
   ({ guildId, powerupNames } = warnings);
-  const tmp = callback2();
-  const arg1 = tmp;
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
   let tmp6Result = null;
   if (tmp2.shouldShow) {
     let obj = { style: tmp.container };
     obj = { style: tmp.contentContainer };
-    obj = { color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    const items = [callback(arg1(dependencyMap[6]).CircleErrorIcon, obj), , , ];
-    const obj1 = { cachedAt: false, edpbxy: false, style: tmp.text, children: tmp3 };
-    items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
+    obj = { color: importDefault(689).colors.TEXT_FEEDBACK_WARNING, size: "md" };
+    let items = [callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, obj), , , ];
+    const obj1 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp.text, children: tmp3 };
+    items[1] = callback(require(4126) /* Text */.Text, obj1);
     const obj2 = { variant: "text-sm/medium", style: tmp.text, children: tmp4 };
-    items[2] = callback(arg1(dependencyMap[7]).Text, obj2);
+    items[2] = callback(require(4126) /* Text */.Text, obj2);
     let mapped;
     if (null != warnings) {
       mapped = warnings.map((children) => {
-        const obj = { cachedAt: -5, edpbxy: 16 };
+        const obj = { variant: "text-sm/medium", color: "text-feedback-warning" };
         const items = [, ];
         ({ warningText: arr[0], text: arr[1] } = tmp);
         obj.style = items;
         obj.children = children;
-        return callback(tmp(closure_2[7]).Text, obj, "warning-" + arg1);
+        return outer1_4(tmp(outer1_2[7]).Text, obj, "warning-" + arg1);
       });
     }
     items[3] = mapped;

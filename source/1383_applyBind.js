@@ -1,11 +1,11 @@
 // Module ID: 1383
-// Function ID: 16535
+// Function ID: 16536
 // Name: applyBind
-// Dependencies: []
+// Dependencies: [529, 531, 534]
 
 // Module 1383 (applyBind)
 
 export default function applyBind() {
-  const tmp = require(dependencyMap[0]);
-  return tmp(require(dependencyMap[1]), require(dependencyMap[2]), arguments);
+  const tmp = require(529);
+  return tmp(require(531) /* bind */, require(534), arguments);
 };

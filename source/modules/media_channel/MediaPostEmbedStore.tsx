@@ -1,39 +1,40 @@
-// Module ID: 10431
-// Function ID: 80439
+// Module ID: 10441
+// Function ID: 80489
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 10431 (_isNativeReflectConstruct)
+// Module 10441 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", FAILED: 3, [3]: "FAILED" };
 let closure_6 = {};
 let closure_7 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class MediaPostEmbedStore {
     constructor() {
       self = this;
       tmp = MediaPostEmbedStore(this, MediaPostEmbedStore);
-      obj = closure_3(MediaPostEmbedStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(MediaPostEmbedStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,13 +43,12 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = MediaPostEmbedStore;
   callback2(MediaPostEmbedStore, Store);
   let obj = {
     key: "getMediaPostEmbed",
     value(arg0) {
       if (null != arg0) {
-        return closure_6[arg0];
+        return outer1_6[arg0];
       }
     }
   };
@@ -56,9 +56,9 @@ let tmp2 = (Store) => {
   obj = {
     key: "getEmbedFetchState",
     value(arg0) {
-      let NOT_FETCHED = closure_7[arg0];
+      let NOT_FETCHED = outer1_7[arg0];
       if (null == NOT_FETCHED) {
-        NOT_FETCHED = constants.NOT_FETCHED;
+        NOT_FETCHED = outer1_5.NOT_FETCHED;
       }
       return NOT_FETCHED;
     }
@@ -67,12 +67,12 @@ let tmp2 = (Store) => {
   obj = {
     key: "getMediaPostEmbeds",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[2] = obj;
   return callback(MediaPostEmbedStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "MediaPostEmbedStore";
 obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
@@ -85,9 +85,8 @@ obj = {
   MEDIA_POST_EMBED_FETCH_SUCCESS: function handleFetchMediaPostEmbedSuccess(threadId) {
     threadId = threadId.threadId;
     const obj = {};
-    const merged = Object.assign(closure_6);
+    const merged = Object.assign(obj);
     obj[threadId] = threadId.mediaPostEmbed;
-    closure_6 = obj;
     closure_7[threadId] = obj.FETCHED;
   },
   MEDIA_POST_EMBED_FETCH_FAILURE: function handleFetchMediaPostFailure(threadId) {
@@ -100,8 +99,8 @@ obj = {
     }
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[6]), obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/media_channel/MediaPostEmbedStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/media_channel/MediaPostEmbedStore.tsx");
 
 export default tmp2;
 export const FetchState = obj;

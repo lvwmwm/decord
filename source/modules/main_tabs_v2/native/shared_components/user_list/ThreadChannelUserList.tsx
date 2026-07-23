@@ -1,69 +1,65 @@
-// Module ID: 15264
-// Function ID: 115212
-// Dependencies: []
+// Module ID: 15381
+// Function ID: 117386
+// Dependencies: [31, 1348, 1917, 1838, 1849, 653, 33, 5464, 566, 15382, 8832, 572, 5688, 3969, 8492, 8825, 2]
 
-// Module 15264
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const RelationshipTypes = arg1(dependencyMap[5]).RelationshipTypes;
-const jsx = arg1(dependencyMap[6]).jsx;
+// Module 15381
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import { RelationshipTypes } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo(function ThreadChannelUserList(channelId) {
   let disableBottomSafeZone;
   let disableStickySections;
   let insetEnd;
   let listStyleOverride;
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const guildId = channelId.guildId;
-  const importDefault = guildId;
   const onUserPress = channelId.onUserPress;
-  const dependencyMap = onUserPress;
   ({ disableStickySections, listStyleOverride, disableBottomSafeZone, insetEnd } = channelId);
-  const analyticsLocations = importDefault(dependencyMap[7])().analyticsLocations;
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_6];
+  const analyticsLocations = guildId(onUserPress[7])().analyticsLocations;
+  let obj = channelId(onUserPress[8]);
+  const items = [_createForOfIteratorHelperLoose];
   const stateFromStores = obj.useStateFromStores(items, () => tmp3.getGuild(guildId));
-  const threadMemberListSections = arg1(dependencyMap[9]).useThreadMemberListSections(channelId, stateFromStores);
-  let closure_4 = threadMemberListSections;
-  const obj2 = arg1(dependencyMap[9]);
-  const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items1, () => threadMemberListSections.getChannel(channelId));
-  let closure_5 = stateFromStores1;
-  const tmp3 = importDefault(dependencyMap[10])();
-  closure_6 = tmp3;
-  let closure_7 = importAllResult.useRef(0);
-  let closure_8 = importAllResult.useRef(0);
+  const threadMemberListSections = channelId(onUserPress[9]).useThreadMemberListSections(channelId, stateFromStores);
+  const obj2 = channelId(onUserPress[9]);
+  const items1 = [threadMemberListSections];
+  const stateFromStores1 = channelId(onUserPress[8]).useStateFromStores(items1, () => threadMemberListSections.getChannel(channelId));
+  const tmp3 = guildId(onUserPress[10])();
+  _createForOfIteratorHelperLoose = tmp3;
+  let closure_7 = analyticsLocations.useRef(0);
+  let closure_8 = analyticsLocations.useRef(0);
   const items2 = [channelId, guildId, tmp3];
-  const memo = importAllResult.useMemo(() => guildId(onUserPress[11])(() => {
-    if (null != channel.getChannel(callback)) {
-      let obj = callback(closure_2[12]);
-      obj = { guildId: closure_1, channelId: callback, y: ref2.current, height: ref.current, rowHeight: closure_6 };
+  const memo = analyticsLocations.useMemo(() => guildId(onUserPress[11])(() => {
+    if (null != threadMemberListSections.getChannel(outer1_0)) {
+      let obj = channelId(onUserPress[12]);
+      obj = { guildId: outer1_1, channelId: outer1_0, y: outer1_8.current, height: outer1_7.current, rowHeight: outer1_6 };
       const result = obj.subscribeChannelDimensions(obj);
     }
   }, 50), items2);
-  const jsx = memo;
   const items3 = [memo];
   const items4 = [memo];
-  const callback = importAllResult.useCallback((nativeEvent) => {
+  const callback = analyticsLocations.useCallback((nativeEvent) => {
     closure_7.current = nativeEvent.nativeEvent.layout.height;
     memo();
   }, items3);
   const items5 = [stateFromStores1, memo];
-  const callback1 = importAllResult.useCallback((nativeEvent) => {
+  const callback1 = analyticsLocations.useCallback((nativeEvent) => {
     closure_8.current = nativeEvent.nativeEvent.contentOffset.y;
     memo();
   }, items4);
-  const effect = importAllResult.useEffect(() => {
+  const effect = analyticsLocations.useEffect(() => {
     if (null != stateFromStores1) {
       memo();
     }
   }, items5);
   const items6 = [threadMemberListSections];
   const items7 = [threadMemberListSections, guildId, onUserPress, analyticsLocations, channelId];
-  const callback2 = importAllResult.useCallback((arg0) => {
+  const callback2 = analyticsLocations.useCallback((arg0) => {
     if (null != threadMemberListSections[arg0]) {
       const label = tmp.label;
       if (null != label) {
@@ -78,9 +74,9 @@ const memoResult = importAllResult.memo(function ThreadChannelUserList(channelId
       }
     }
   }, items6);
-  const callback3 = importAllResult.useCallback((arg0, arg1) => {
+  const callback3 = analyticsLocations.useCallback((arg0, arg1) => {
     const userIds = threadMemberListSections[arg0].userIds;
-    const user = user.getUser(userIds[arg1]);
+    user = user.getUser(userIds[arg1]);
     if (null != user) {
       const member = stateFromStores1.getMember(guildId, user.id);
     }
@@ -109,10 +105,10 @@ const memoResult = importAllResult.memo(function ThreadChannelUserList(channelId
       obj.isNameplatedRow = true;
       obj.canShowDisplayNameStylesFont = true;
       obj.onPress = function onPress(id) {
-        if (null != callback2) {
-          callback2();
+        if (null != outer1_2) {
+          outer1_2();
         }
-        callback(callback2[14])({ userId: id.id, sourceAnalyticsLocations: closure_3, channelId: closure_0 });
+        guildId(onUserPress[14])({ userId: id.id, sourceAnalyticsLocations: outer1_3, channelId: outer1_0 });
       };
       obj.start = tmp5;
       obj.end = tmp6;
@@ -125,8 +121,8 @@ const memoResult = importAllResult.memo(function ThreadChannelUserList(channelId
     return obj;
   }, items7);
   obj = { sections: threadMemberListSections.map((userIds) => userIds.userIds.length), getItemProps: callback3, getSectionProps: callback2, onLayout: callback, onScroll: callback1, disableStickySections, disableBackgroundOverlay: true, listStyleOverride, disableBottomSafeZone, insetEnd };
-  return jsx(arg1(dependencyMap[15]).UsersFastList, obj);
+  return memo(channelId(onUserPress[15]).UsersFastList, obj);
 });
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/ThreadChannelUserList.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/ThreadChannelUserList.tsx");
 
 export default memoResult;

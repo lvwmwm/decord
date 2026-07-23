@@ -1,62 +1,66 @@
-// Module ID: 12169
-// Function ID: 93609
+// Module ID: 12283
+// Function ID: 95760
 // Name: createInviteEmbed
-// Dependencies: []
+// Dependencies: [4115, 1849, 653, 6979, 12284, 6978, 12286, 12287, 12288, 12290, 12292, 9476, 9477, 2]
 // Exports: createInviteEmbed
 
-// Module 12169 (createInviteEmbed)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ InviteStates: closure_4, AbortCodes: closure_5 } = arg1(dependencyMap[2]));
-const InviteTypes = arg1(dependencyMap[3]).InviteTypes;
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/InviteEmbed.tsx");
+// Module 12283 (createInviteEmbed)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { InviteTypes } from "InviteSendStates";
 
-export const createInviteEmbed = function createInviteEmbed(author, code, theme) {
+let closure_4;
+let closure_5;
+const require = arg1;
+({ InviteStates: closure_4, AbortCodes: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/InviteEmbed.tsx");
+
+export const createInviteEmbed = function createInviteEmbed(closure_0, code, _isNativeReflectConstruct) {
   const invite = store.getInvite(code);
   if (null == invite) {
     return null;
   } else {
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let id;
     if (null != currentUser) {
       id = currentUser.id;
     }
     if (invite.state === constants.RESOLVING) {
-      return code(dependencyMap[4]).createResolvingGuildInvite(theme);
+      return require(12284) /* createResolvingGuildInvite */.createResolvingGuildInvite(_isNativeReflectConstruct);
     } else {
       if (invite.state !== constants.EXPIRED) {
         if (invite.state !== constants.BANNED) {
           if (invite.state === constants.ERROR) {
             const inviteError = store.getInviteError(code);
             if (null == inviteError) {
-              let erroredGuildInvite = code(dependencyMap[4]).createErroredGuildInvite(code, tmp3, theme);
-              const obj14 = code(dependencyMap[4]);
+              let erroredGuildInvite = require(12284) /* createResolvingGuildInvite */.createErroredGuildInvite(code, tmp3, _isNativeReflectConstruct);
+              const obj14 = require(12284) /* createResolvingGuildInvite */;
             } else if (inviteError.code === constants2.INVITES_DISABLED) {
-              erroredGuildInvite = code(dependencyMap[4]).createDisabledGuildInvite(invite, theme);
-              const obj13 = code(dependencyMap[4]);
+              erroredGuildInvite = require(12284) /* createResolvingGuildInvite */.createDisabledGuildInvite(invite, _isNativeReflectConstruct);
+              const obj13 = require(12284) /* createResolvingGuildInvite */;
             } else {
-              erroredGuildInvite = code(dependencyMap[4]).createErroredGuildInvite(code, tmp3, theme);
-              const obj12 = code(dependencyMap[4]);
+              erroredGuildInvite = require(12284) /* createResolvingGuildInvite */.createErroredGuildInvite(code, tmp3, _isNativeReflectConstruct);
+              const obj12 = require(12284) /* createResolvingGuildInvite */;
             }
             return erroredGuildInvite;
           } else {
-            const inviteType = code(dependencyMap[5]).getInviteType(invite);
+            const inviteType = require(6978) /* isGroupDMInvite */.getInviteType(invite);
             if (InviteTypes.GROUP_DM === inviteType) {
-              return code(dependencyMap[6]).createGroupDMInvite(invite, tmp3, theme);
+              return require(12286) /* createGroupDMInvite */.createGroupDMInvite(invite, tmp3, _isNativeReflectConstruct);
             } else if (InviteTypes.FRIEND === inviteType) {
-              const obj10 = code(dependencyMap[7]);
-              return obj10.createFriendInvite(invite, tmp3, id, theme);
+              const obj10 = require(12287) /* createFriendInvite */;
+              return obj10.createFriendInvite(invite, tmp3, id, _isNativeReflectConstruct);
             } else {
-              const guildInviteExtendedType = code(dependencyMap[5]).getGuildInviteExtendedType(invite);
-              if (code(dependencyMap[5]).GuildInviteExtendedType.EVENT === guildInviteExtendedType) {
-                return code(dependencyMap[8]).createGuildScheduledEventInviteEmbed(invite, theme);
-              } else if (code(dependencyMap[5]).GuildInviteExtendedType.APPLICATION === guildInviteExtendedType) {
-                let obj = { inviteCode: invite.code, theme };
-                return code(dependencyMap[9]).createEmbeddedActivityInviteEmbed(obj);
-              } else if (code(dependencyMap[5]).GuildInviteExtendedType.PROFILE === guildInviteExtendedType) {
-                return code(dependencyMap[10]).createGuildProfileInvite(invite, theme);
-              } else if (code(dependencyMap[5]).GuildInviteExtendedType.VOICE_CHANNEL === guildInviteExtendedType) {
+              const guildInviteExtendedType = require(6978) /* isGroupDMInvite */.getGuildInviteExtendedType(invite);
+              if (require(6978) /* isGroupDMInvite */.GuildInviteExtendedType.EVENT === guildInviteExtendedType) {
+                return require(12288) /* createGuildScheduledEventEmbed */.createGuildScheduledEventInviteEmbed(invite, _isNativeReflectConstruct);
+              } else if (require(6978) /* isGroupDMInvite */.GuildInviteExtendedType.APPLICATION === guildInviteExtendedType) {
+                let obj = { inviteCode: invite.code, theme: _isNativeReflectConstruct };
+                return require(12290) /* createEmbeddedActivityInviteEmbed */.createEmbeddedActivityInviteEmbed(obj);
+              } else if (require(6978) /* isGroupDMInvite */.GuildInviteExtendedType.PROFILE === guildInviteExtendedType) {
+                return require(12292) /* createGuildProfileInvite */.createGuildProfileInvite(invite, _isNativeReflectConstruct);
+              } else if (require(6978) /* isGroupDMInvite */.GuildInviteExtendedType.VOICE_CHANNEL === guildInviteExtendedType) {
                 const guild = invite.guild;
                 let id1;
                 if (null != guild) {
@@ -65,26 +69,26 @@ export const createInviteEmbed = function createInviteEmbed(author, code, theme)
                 if (null != id1) {
                   obj = { guildId: id1, location: "mobile_invite_embed" };
                   if (obj2.getVoiceChannelListInviteExperiment(obj).enabled) {
-                    const voiceChannelListInviteEmbed = code(dependencyMap[12]).createVoiceChannelListInviteEmbed(invite, theme);
+                    const voiceChannelListInviteEmbed = require(9477) /* resolveVoiceChannelListInviteEmbedData */.createVoiceChannelListInviteEmbed(invite, _isNativeReflectConstruct);
                     if (null != voiceChannelListInviteEmbed) {
                       return voiceChannelListInviteEmbed;
                     }
-                    const obj4 = code(dependencyMap[12]);
+                    const obj4 = require(9477) /* resolveVoiceChannelListInviteEmbedData */;
                   }
-                  const obj2 = code(dependencyMap[11]);
+                  obj2 = require(9476) /* items */;
                 }
-                return code(dependencyMap[4]).createGuildInvite(invite, tmp3, theme);
+                return require(12284) /* createResolvingGuildInvite */.createGuildInvite(invite, tmp3, _isNativeReflectConstruct);
               } else {
-                obj = code(dependencyMap[4]);
-                return obj.createGuildInvite(invite, tmp3, theme);
+                obj = require(12284) /* createResolvingGuildInvite */;
+                return obj.createGuildInvite(invite, tmp3, _isNativeReflectConstruct);
               }
-              const obj18 = code(dependencyMap[5]);
+              const obj18 = require(6978) /* isGroupDMInvite */;
             }
-            const obj17 = code(dependencyMap[5]);
+            const obj17 = require(6978) /* isGroupDMInvite */;
           }
         }
       }
-      return code(dependencyMap[4]).createExpiredGuildInvite(author, tmp3, theme);
+      return require(12284) /* createResolvingGuildInvite */.createExpiredGuildInvite(closure_0, tmp3, _isNativeReflectConstruct);
     }
   }
 };

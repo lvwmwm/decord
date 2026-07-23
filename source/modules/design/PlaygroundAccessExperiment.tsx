@@ -1,27 +1,30 @@
-// Module ID: 9880
-// Function ID: 76525
+// Module ID: 9887
+// Function ID: 76566
 // Name: usePlaygroundAccessExperiment
-// Dependencies: []
+// Dependencies: [1849, 1428, 566, 2]
 // Exports: getHasPlaygroundAccess, useHasPlaygroundAccess
 
-// Module 9880 (usePlaygroundAccessExperiment)
+// Module 9887 (usePlaygroundAccessExperiment)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ApexExperiment from "ApexExperiment";
+
+const require = arg1;
 function usePlaygroundAccessExperiment(design_systems_settings) {
-  return apexExperiment.useConfig({ location: design_systems_settings }).enabled;
+  return ApexExperiment.useConfig({ location: design_systems_settings }).enabled;
 }
 function getPlaygroundAccessExperiment(location) {
-  return apexExperiment.getConfig({ location }).enabled;
+  return ApexExperiment.getConfig({ location }).enabled;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const apexExperiment = arg1(dependencyMap[1]).createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const obj = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/design/PlaygroundAccessExperiment.tsx");
+ApexExperiment = { name: "2026-02-mana-playground-access", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+const result = require("initialize").fileFinishedImporting("modules/design/PlaygroundAccessExperiment.tsx");
 
-export default apexExperiment;
+export default ApexExperiment;
 export { usePlaygroundAccessExperiment };
 export { getPlaygroundAccessExperiment };
 export const useHasPlaygroundAccess = function useHasPlaygroundAccess(design_systems_settings) {
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getCurrentUser());
   let isStaffResult;
   if (null != stateFromStores) {
     isStaffResult = stateFromStores.isStaff();
@@ -40,7 +43,7 @@ export const useHasPlaygroundAccess = function useHasPlaygroundAccess(design_sys
   return tmp2;
 };
 export const getHasPlaygroundAccess = function getHasPlaygroundAccess(quickswitcher_action) {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   let isStaffResult;
   if (null != currentUser) {
     isStaffResult = currentUser.isStaff();

@@ -1,9 +1,12 @@
 // Module ID: 902
-// Function ID: 9920
+// Function ID: 9921
 // Name: flattenIssue
-// Dependencies: []
+// Dependencies: [65, 804, 809, 863]
 
 // Module 902 (flattenIssue)
+import _toConsumableArray from "_toConsumableArray";
+import setupIntegration from "setupIntegration";
+
 function flattenIssue(path) {
   const obj = {};
   let joined;
@@ -49,7 +52,7 @@ function formatIssueMessage(issues) {
       let tmp7 = arr;
       let addResult = obj.add(tmp5);
     }
-    // continue
+    continue;
   }
   arr = Array.from(set);
   if (0 === arr.length) {
@@ -72,10 +75,10 @@ function formatIssueMessage(issues) {
     return "Failed to validate " + str4;
   } else {
     const _HermesInternal = HermesInternal;
-    return "Failed to validate keys: " + require(dependencyMap[2]).truncate(arr.join(", "), 100);
+    return "Failed to validate keys: " + require(809) /* isMatchingPattern */.truncate(arr.join(", "), 100);
   }
-  const obj = set;
-  const tmp2 = issues.issues[Symbol.iterator]();
+  obj = set;
+  tmp2 = issues.issues[Symbol.iterator]();
 }
 function applyZodErrorsToEvent(arg0) {
   const tmp = arguments.length > 1 && undefined !== arguments[1] && arguments[1];
@@ -92,7 +95,7 @@ function applyZodErrorsToEvent(arg0) {
     if (exception.values) {
       if (tmp5.originalException) {
         const originalException = tmp5.originalException;
-        let obj = require(dependencyMap[1]);
+        let obj = require(804) /* isBuiltin */;
         let isErrorResult = obj.isError(originalException);
         if (isErrorResult) {
           isErrorResult = "ZodError" === originalException.name;
@@ -130,10 +133,10 @@ function applyZodErrorsToEvent(arg0) {
             const obj3 = { value: formatIssueMessage(tmp4.originalException) };
             const items = [Object.assign({}, tmp3.exception.values[0], obj3)];
             const values = tmp3.exception.values;
-            obj2.values = items.concat(callback(values.slice(1)));
+            obj2.values = items.concat(_toConsumableArray(values.slice(1)));
             obj1.exception = Object.assign({}, tmp3.exception, obj2);
             const _Object4 = Object;
-            const obj4 = { zoderror.issues: mapped.slice(0, arg0) };
+            const obj4 = { "zoderror.issues": mapped.slice(0, arg0) };
             obj1.extra = Object.assign({}, tmp3.extra, obj4);
             return Object.assign({}, tmp3, obj1);
           }
@@ -143,30 +146,26 @@ function applyZodErrorsToEvent(arg0) {
   }
   return tmp2;
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[3]);
 
 export { applyZodErrorsToEvent };
 export { flattenIssue };
 export { flattenIssuePath };
 export { formatIssueMessage };
-export const zodErrorsIntegration = _module.defineIntegration(function _zodErrorsIntegration() {
+export const zodErrorsIntegration = setupIntegration.defineIntegration(function _zodErrorsIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       let first = arguments[0];
     }
-    const require = first;
     const limit = first.limit;
     let num = 10;
     if (null != limit) {
       num = limit;
     }
-    const dependencyMap = num;
     const obj = {
       name: "ZodErrors",
       processEvent(arg0, arg1) {
-          return callback(num, first.saveZodIssuesAsAttachment, arg0, arg1);
+          return outer1_6(num, first.saveZodIssuesAsAttachment, arg0, arg1);
         }
     };
     return obj;

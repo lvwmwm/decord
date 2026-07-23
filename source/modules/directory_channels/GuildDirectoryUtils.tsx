@@ -1,21 +1,21 @@
-// Module ID: 10026
-// Function ID: 77476
+// Module ID: 10034
+// Function ID: 77516
 // Name: orderByTotalMemberCount
-// Dependencies: []
+// Dependencies: [10035, 44, 22, 2]
 // Exports: guildDirectoryEntryFromServer, rankByDateAdded, rankGuildEntries
 
-// Module 10026 (orderByTotalMemberCount)
+// Module 10034 (orderByTotalMemberCount)
+import { DirectoryEntryTypes } from "DirectoryEntryTypes";
+
 function orderByTotalMemberCount(found) {
   const items = [(approximateMemberCount) => approximateMemberCount.approximateMemberCount];
-  return importDefault(dependencyMap[2]).orderBy(found, items, [-1751711741]);
+  return importDefault(22).orderBy(found, items, ["desc"]);
 }
 function orderByDateAdded(items) {
   items = [(createdAt) => createdAt.createdAt];
-  return importDefault(dependencyMap[2]).orderBy(items, items, [-1751711741]);
+  return importDefault(22).orderBy(items, items, ["desc"]);
 }
-const DirectoryEntryTypes = require(dependencyMap[0]).DirectoryEntryTypes;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");
+const result = require("apply").fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");
 
 export const guildDirectoryEntryFromServer = function guildDirectoryEntryFromServer(entry) {
   let guild;
@@ -69,7 +69,7 @@ export const guildDirectoryEntryFromServer = function guildDirectoryEntryFromSer
     return obj;
   } else {
     const type = entry.type;
-    importDefault(dependencyMap[1])(false, "Directory entries must be connected to a guild!");
+    importDefault(44)(false, "Directory entries must be connected to a guild!");
   }
 };
 export const MAX_CATEGORY_SERVERS = 5;

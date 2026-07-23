@@ -1,9 +1,17 @@
-// Module ID: 7138
-// Function ID: 57528
+// Module ID: 7143
+// Function ID: 57562
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1284, 2]
 
-// Module 7138 (_isNativeReflectConstruct)
+// Module 7143 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import module_1284 from "module_1284";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,36 +21,29 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let tmp2 = (MessageType) => {
+let tmp2 = ((MessageType) => {
   class Gradient$Type {
     constructor() {
       self = this;
-      tmp = closure_3(this, Gradient$Type);
+      tmp = outer1_3(this, Gradient$Type);
       items = [, ];
-      items[0] = {};
-      items[1] = {};
-      items1 = ["getAnchorIdFromIndex"];
+      items[0] = { no: 1, name: "colors", kind: "scalar", repeat: 2, T: 9 };
+      items[1] = { no: 2, name: "angle", kind: "scalar", T: 2 };
+      items1 = ["discord_protos.premium_marketing.v1.Gradient"];
       items1[1] = items;
-      obj = closure_6(Gradient$Type);
-      tmp2 = closure_5;
-      if (closure_8()) {
+      obj = outer1_6(Gradient$Type);
+      tmp2 = outer1_5;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = Gradient$Type;
   callback2(Gradient$Type, MessageType);
   let obj = {
     key: "create",
@@ -50,15 +51,15 @@ let tmp2 = (MessageType) => {
       let obj = { colors: [], angle: 0 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, Gradient$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, Gradient$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = Gradient$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = Gradient$Type(closure_1[6]);
+        const result = Gradient$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = Gradient$Type(outer1_1[6]);
       }
       return obj;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "internalBinaryRead",
     value(pos, arg1, readUnknownField) {
@@ -71,8 +72,8 @@ let tmp2 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           let colors = obj.colors;
@@ -109,8 +110,8 @@ let tmp2 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = Gradient$Type;
-                let tmp13 = closure_1;
-                onRead = Gradient$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = Gradient$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -122,8 +123,8 @@ let tmp2 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -136,22 +137,22 @@ let tmp2 = (MessageType) => {
       let num = 0;
       if (0 < colors.colors.length) {
         do {
-          let tmp = closure_0;
-          let tmp2 = closure_1;
-          let tagResult = tag.tag(1, closure_0(closure_1[6]).WireType.LengthDelimited);
+          let tmp = Gradient$Type;
+          let tmp2 = outer1_1;
+          let tagResult = tag.tag(1, Gradient$Type(outer1_1[6]).WireType.LengthDelimited);
           let stringResult = tagResult.string(colors.colors[num]);
           num = num + 1;
           length = colors.colors.length;
         } while (num < length);
       }
       if (0 !== colors.angle) {
-        tag.tag(2, Gradient$Type(closure_1[6]).WireType.Bit32).float(colors.angle);
-        const tagResult1 = tag.tag(2, Gradient$Type(closure_1[6]).WireType.Bit32);
+        tag.tag(2, Gradient$Type(outer1_1[6]).WireType.Bit32).float(colors.angle);
+        const tagResult1 = tag.tag(2, Gradient$Type(outer1_1[6]).WireType.Bit32);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = Gradient$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = Gradient$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, colors, tag);
@@ -161,8 +162,8 @@ let tmp2 = (MessageType) => {
   };
   items[2] = obj;
   return callback(Gradient$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/gradient.tsx");
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/gradient.tsx");
 
 export const Gradient = tmp2;

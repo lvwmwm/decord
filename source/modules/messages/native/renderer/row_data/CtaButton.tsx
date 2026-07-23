@@ -1,55 +1,57 @@
-// Module ID: 12208
-// Function ID: 93779
+// Module ID: 12322
+// Function ID: 95930
 // Name: createCtaButton
-// Dependencies: []
+// Dependencies: [5671, 11056, 4347, 1212, 2]
 // Exports: createCtaButton
 
-// Module 12208 (createCtaButton)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/messages/native/renderer/row_data/CtaButton.tsx");
+// Module 12322 (createCtaButton)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("isReactiveCheckEnabled").fileFinishedImporting("modules/messages/native/renderer/row_data/CtaButton.tsx");
 
 export const createCtaButton = function createCtaButton(id, channel_id, arg2) {
-  let obj = channel_id(dependencyMap[1]);
+  let obj = require(11056) /* CtaButtonType */;
   const ctaButtonType = obj.getCtaButtonType(id, channel_id);
-  let obj1 = channel_id(dependencyMap[2]);
+  let obj1 = require(4347) /* isReactiveCheckEnabled */;
   const isAgeVerifiedResult = obj1.isAgeVerified();
-  const result = channel_id(dependencyMap[2]).shouldShowTiggerPawtect();
-  if (channel_id(dependencyMap[1]).CtaButtonType.MARK_AS_FALSE_POSITIVE === ctaButtonType) {
+  const result = require(4347) /* isReactiveCheckEnabled */.shouldShowTiggerPawtect();
+  if (require(11056) /* CtaButtonType */.CtaButtonType.MARK_AS_FALSE_POSITIVE === ctaButtonType) {
     obj = {};
-    const intl3 = channel_id(dependencyMap[3]).intl;
-    obj.text = intl3.string(channel_id(dependencyMap[3]).t.4q1Elf);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    obj.text = intl3.string(require(1212) /* getSystemLocale */.t["4q1Elf"]);
     ({ reportFpTextColor: obj6.textColor, reportFpBackgroundColor: obj6.backgroundColor } = arg2);
     let prop;
-    if (closure_2.canSubmitFpReport(id)) {
-      prop = channel_id(dependencyMap[1]).CtaButtonType.MARK_AS_FALSE_POSITIVE;
+    if (_isNativeReflectConstruct.canSubmitFpReport(id)) {
+      prop = require(11056) /* CtaButtonType */.CtaButtonType.MARK_AS_FALSE_POSITIVE;
     }
     obj.callback = prop;
     return obj;
-  } else if (channel_id(dependencyMap[1]).CtaButtonType.AGE_VERIFICATION_RETRY === ctaButtonType) {
+  } else if (require(11056) /* CtaButtonType */.CtaButtonType.AGE_VERIFICATION_RETRY === ctaButtonType) {
     obj = {};
-    const intl2 = channel_id(dependencyMap[3]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const string = intl2.string;
-    const t = channel_id(dependencyMap[3]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (isAgeVerifiedResult) {
-      let stringResult = string(t.9KiIz6);
+      let stringResult = string(t["9KiIz6"]);
     } else {
-      stringResult = string(t./nicWo);
+      stringResult = string(t["/nicWo"]);
     }
     obj.text = stringResult;
     ({ retryTextColor: obj5.textColor, retryBackgroundColor: obj5.backgroundColor } = arg2);
     let prop1;
     if (result) {
-      prop1 = channel_id(dependencyMap[1]).CtaButtonType.AGE_VERIFICATION_RETRY;
+      prop1 = require(11056) /* CtaButtonType */.CtaButtonType.AGE_VERIFICATION_RETRY;
     }
     obj.callback = prop1;
     return obj;
-  } else if (channel_id(dependencyMap[1]).CtaButtonType.CONNECT_TO_TEEN === ctaButtonType) {
+  } else if (require(11056) /* CtaButtonType */.CtaButtonType.CONNECT_TO_TEEN === ctaButtonType) {
     obj1 = {};
-    const intl = channel_id(dependencyMap[3]).intl;
-    obj1.text = intl.string(channel_id(dependencyMap[3]).t.n8a49k);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj1.text = intl.string(require(1212) /* getSystemLocale */.t.n8a49k);
     ({ retryTextColor: obj4.textColor, retryBackgroundColor: obj4.backgroundColor } = arg2);
-    obj1.callback = channel_id(dependencyMap[1]).CtaButtonType.CONNECT_TO_TEEN;
+    obj1.callback = require(11056) /* CtaButtonType */.CtaButtonType.CONNECT_TO_TEEN;
     return obj1;
   }
-  const obj3 = channel_id(dependencyMap[2]);
+  const obj3 = require(4347) /* isReactiveCheckEnabled */;
 };

@@ -1,10 +1,12 @@
 // Module ID: 841
-// Function ID: 9349
+// Function ID: 9350
 // Name: normalize
-// Dependencies: []
+// Dependencies: [57, 799, 804, 810]
 // Exports: normalizeUrlToBase
 
 // Module 841 (normalize)
+import _slicedToArray from "_slicedToArray";
+
 function normalize(arg0) {
   let num = 100;
   if (arguments.length > 1) {
@@ -41,14 +43,14 @@ function visit(arg0, __sentry_skip_normalization__) {
     if (undefined !== arguments[4]) {
       let tmp2 = arguments[4];
     }
-    callback(tmp2, 2);
+    _slicedToArray(tmp2, 2);
     if (null != __sentry_skip_normalization__) {
-      const items = [];
+      let items = ["boolean", "string"];
       if (!items.includes(typeof __sentry_skip_normalization__)) {
         if ("number" === tmp34) {
-          const _Number = Number;
+          let _Number = Number;
         }
-        const str2 = function stringifyValue(arg0, _events) {
+        const str2 = (function stringifyValue(arg0, _events) {
           if ("domain" === arg0) {
             if (_events) {
               if ("object" === typeof _events) {
@@ -61,8 +63,8 @@ function visit(arg0, __sentry_skip_normalization__) {
           if ("domainEmitter" === arg0) {
             return "[DomainEmitter]";
           } else {
-            if (undefined !== closure_0) {
-              if (_events === closure_0) {
+            if (undefined !== outer1_0) {
+              if (_events === outer1_0) {
                 return "[Global]";
               }
             }
@@ -97,7 +99,7 @@ function visit(arg0, __sentry_skip_normalization__) {
                 }
                 if ("function" === typeof _events) {
                   const _HermesInternal5 = HermesInternal;
-                  return "[Function: " + callback(closure_2[3]).getFunctionName(_events) + "]";
+                  return "[Function: " + outer1_1(outer1_2[3]).getFunctionName(_events) + "]";
                 } else if ("symbol" === typeof _events) {
                   const _String2 = String;
                   const _HermesInternal4 = HermesInternal;
@@ -126,9 +128,9 @@ function visit(arg0, __sentry_skip_normalization__) {
                 }
               }
             }
-            const obj = callback(closure_2[2]);
+            obj = outer1_1(outer1_2[2]);
           }
-        }(arg0, __sentry_skip_normalization__);
+        })(arg0, __sentry_skip_normalization__);
         if (str2.startsWith("[object ")) {
           if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
             return __sentry_skip_normalization__;
@@ -152,7 +154,7 @@ function visit(arg0, __sentry_skip_normalization__) {
                 let tmp19 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
                 let tmp20 = require;
                 let tmp21 = dependencyMap;
-                let obj2 = require(dependencyMap[1]);
+                let obj2 = require(799) /* addNonEnumerableProperty */;
                 let convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
                 let tmp23 = convertToPlainObjectResult;
                 let num5 = 0;
@@ -170,7 +172,7 @@ function visit(arg0, __sentry_skip_normalization__) {
                       if (tmp25 >= tmp) {
                         let str6 = "[MaxProperties ~]";
                         tmp19[tmp26] = "[MaxProperties ~]";
-                        // break
+                        break;
                       } else {
                         let tmp28 = visit;
                         let tmp29 = num;
@@ -179,7 +181,7 @@ function visit(arg0, __sentry_skip_normalization__) {
                         let tmp32 = tmp26;
                         tmp19[tmp26] = visit(tmp35, convertToPlainObjectResult[tmp26], tmp11 - 1, tmp, tmp3);
                         num5 = tmp25 + 1;
-                        // continue
+                        continue;
                       }
                       break;
                     }
@@ -198,7 +200,7 @@ function visit(arg0, __sentry_skip_normalization__) {
     }
     return __sentry_skip_normalization__;
   }
-  tmp2 = function memoBuilder() {
+  tmp2 = (function memoBuilder() {
     const weakSet = new WeakSet();
     const items = [
       function memoize(arg0) {
@@ -215,9 +217,8 @@ function visit(arg0, __sentry_skip_normalization__) {
       }
     ];
     return items;
-  }();
+  })();
 }
-let closure_3 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 function normalizeToSize(arg0) {
   let num = 3;
@@ -235,9 +236,9 @@ function normalizeToSize(arg0) {
     }
   }
   let tmp = normalize(arg0, num);
-  if (function jsonSize(arg0) {
+  if ((function jsonSize(arg0) {
     return ~-encodeURI(JSON.stringify(arg0)).split(/%..|./).length;
-  }(tmp) > num2) {
+  })(tmp) > num2) {
     tmp = normalizeToSize(arg0, num - 1, num2);
   }
   return tmp;

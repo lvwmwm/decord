@@ -1,15 +1,17 @@
-// Module ID: 7223
-// Function ID: 58200
+// Module ID: 7228
+// Function ID: 58234
 // Name: BlockedPaymentsCountryActionSheet
-// Dependencies: []
+// Dependencies: [31, 33, 5187, 7187, 2]
 // Exports: default
 
-// Module 7223 (BlockedPaymentsCountryActionSheet)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryActionSheet.tsx");
+// Module 7228 (BlockedPaymentsCountryActionSheet)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("Background").fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryActionSheet.tsx");
 
 export default function BlockedPaymentsCountryActionSheet() {
-  const obj = { children: jsx(importDefault(dependencyMap[3]), {}) };
-  return jsx(arg1(dependencyMap[2]).BottomSheet, obj);
+  const obj = { children: jsx(importDefault(7187), {}) };
+  return jsx(require(5187) /* Background */.BottomSheet, { children: jsx(importDefault(7187), {}) });
 };

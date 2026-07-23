@@ -1,22 +1,25 @@
-// Module ID: 13280
-// Function ID: 100858
-// Dependencies: [5, 1347, 1348, 4031, 653, 482, 13289, 8304, 10487, 10809, 13292, 669, 10476]
+// Module ID: 13394
+// Function ID: 103014
+// Dependencies: [4167, 4033, 653, 10499, 10501, 13395, 7371, 10496, 10508, 675, 507, 7369, 2]
 
-// Module 13280
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 13394
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
+import ME from "ME";
 
 let RPCCommands;
-({ ApplicationFlags: closure_4, Endpoints: closure_5, RPCCommands, RPCErrors: closure_6 } = _isNativeReflectConstruct);
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ ApplicationFlags: closure_4, Endpoints: closure_5, RPCCommands, RPCErrors: closure_6 } = ME);
 let obj = {
   validation(string) {
-    let obj = importDefault(dependencyMap[3])(string);
+    let obj = importDefault(10499)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.event_name = string.string().required();
     const stringResult = string.string();
-    obj.event_properties = importDefault(dependencyMap[3])(string).required();
+    obj.event_properties = importDefault(10499)(string).required();
     return requiredResult.keys(obj);
   },
   handler(arg0) {
@@ -24,18 +27,18 @@ let obj = {
     let socket;
     ({ socket, args } = arg0);
     const event_properties = args.event_properties;
-    let obj = arg1(dependencyMap[4]);
+    let obj = require(10501) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    let obj1 = arg1(dependencyMap[4]);
+    let obj1 = require(10501) /* recurseReplaceContentTree */;
     obj1.validateApplication(socket.application);
     const id = socket.application.id;
-    const obj3 = importDefault(dependencyMap[5])();
+    const obj3 = importDefault(13395)();
     if (null != obj3) {
       const guildId = obj3.getGuildId();
     }
-    const application = application.getApplication(id);
+    application = application.getApplication(id);
     if (obj4.hasApplicationFlag(application, constants.EMBEDDED_FIRST_PARTY)) {
-      const activeAnalyticsSessionIDs = arg1(dependencyMap[8]).getActiveAnalyticsSessionIDs(id);
+      const activeAnalyticsSessionIDs = require(10508) /* _createForOfIteratorHelperLoose */.getActiveAnalyticsSessionIDs(id);
       obj = { activity_application_id: id };
       let type;
       if (null != obj3) {
@@ -48,41 +51,41 @@ let obj = {
         prop = activeAnalyticsSessionIDs.activityUserSessionId;
       }
       obj.activity_user_session_id = prop;
-      const obj6 = arg1(dependencyMap[8]);
+      const obj6 = require(10508) /* _createForOfIteratorHelperLoose */;
       obj = {};
       const merged = Object.assign(obj);
       const merged1 = Object.assign(event_properties);
-      importDefault(dependencyMap[9]).track(args.event_name, obj);
+      importDefault(675).track(args.event_name, obj);
     } else {
-      let tmp7 = importDefault(dependencyMap[7]);
+      let tmp7 = importDefault(10496);
       obj1 = { errorCode: constants2.INVALID_COMMAND };
       const prototype = tmp7.prototype;
       tmp7 = new tmp7(obj1, "This application cannot access this API");
       throw tmp7;
     }
-    const obj4 = arg1(dependencyMap[6]);
+    obj4 = require(7371) /* getApplicationFlags */;
   }
 };
 obj = {
-  scope: require("_createForOfIteratorHelperLoose").RPC_LOCAL_SCOPE,
+  scope: require("RPC_SCOPE_CONFIG").RPC_LOCAL_SCOPE,
   handler(socket) {
     const id = socket.socket.application.id;
     if (null == id) {
-      let tmp3 = importDefault(dependencyMap[7]);
+      let tmp3 = importDefault(10496);
       let obj = { errorCode: constants2.INVALID_COMMAND };
       const prototype = tmp3.prototype;
       tmp3 = new tmp3(obj, "No application.");
       throw tmp3;
     } else {
-      const HTTP = arg1(dependencyMap[10]).HTTP;
-      obj = { url: closure_5.APPLICATION_TICKET(id) };
-      obj = { test_mode: arg1(dependencyMap[11]).isTestModeForApplication(id) };
+      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+      obj = { url: closure_5.APPLICATION_TICKET(id), body: null, retries: 3, oldFormErrors: true, rejectWithError: false };
+      obj = { test_mode: require(7369) /* isTestModeForApplication */.isTestModeForApplication(id) };
       obj.body = obj;
-      const obj4 = arg1(dependencyMap[11]);
+      const obj4 = require(7369) /* isTestModeForApplication */;
       return HTTP.post(obj).then((body) => body.body);
     }
   }
 };
-const result = _runPrimaryAppCommandOrJoinEmbeddedActivity.fileFinishedImporting("modules/rpc/server/commands/application.tsx");
+let result = require("ME").fileFinishedImporting("modules/rpc/server/commands/application.tsx");
 
 export default { [RPCCommands.SEND_ANALYTICS_EVENT]: obj, [RPCCommands.GET_APPLICATION_TICKET]: obj };

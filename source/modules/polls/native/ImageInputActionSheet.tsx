@@ -1,32 +1,38 @@
-// Module ID: 11323
-// Function ID: 88113
+// Module ID: 11333
+// Function ID: 88163
 // Name: ImageInputAnswerActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 7071, 33, 4130, 689, 11332, 3989, 4098, 5500, 4126, 1273, 5502, 1212, 11334, 2]
 // Exports: default
 
-// Module 11323 (ImageInputAnswerActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = arg1(dependencyMap[2]).POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { emojiContainer: { backgroundColor: 3187, alignItems: 3072, paddingHorizontal: 512 } };
-obj = { marginRight: 12, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.emojiIcon = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/polls/native/ImageInputActionSheet.tsx");
+// Module 11333 (ImageInputAnswerActionSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY as closure_5 } from "POLL_ATTACHMENT_FOLDER";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { emojiContainer: { flexDirection: "row", alignItems: "center", marginHorizontal: 24 } };
+_createForOfIteratorHelperLoose = { marginRight: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.emojiIcon = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("POLL_ATTACHMENT_FOLDER").fileFinishedImporting("modules/polls/native/ImageInputActionSheet.tsx");
 
 export default function ImageInputAnswerActionSheet(channelId) {
+  let View;
   let answer;
+  let result;
+  let closure_5;
+  let importDefault;
   channelId = channelId.channelId;
-  const arg1 = channelId;
-  ({ index: closure_1, answer } = channelId);
-  const dependencyMap = answer;
-  ({ onSaveAltText: closure_3, onRemoveAnswerImage: closure_4, openExpressionPicker: closure_5 } = channelId);
+  ({ index: importDefault, answer } = channelId);
+  ({ onSaveAltText: result, onRemoveAnswerImage: View, openExpressionPicker: closure_5 } = channelId);
   let callback;
-  const tmp = callback2();
-  const tmp2 = importDefault(dependencyMap[6])(channelId, answer.localCreationAnswerId, answer.image, 40, 40);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = importDefault(answer[6])(channelId, answer.localCreationAnswerId, answer.image, 40, 40);
   const upload = tmp2.upload;
   let tmp3 = null != upload;
   if (!tmp3) {
@@ -40,7 +46,7 @@ export default function ImageInputAnswerActionSheet(channelId) {
   callback = React.useCallback(() => {
     channelId(answer[7]).dismissKeyboard();
     const obj = channelId(answer[7]);
-    callback(answer[8]).hideActionSheet(closure_5);
+    outer1_1(answer[8]).hideActionSheet(outer1_5);
   }, []);
   let obj = { startExpanded: true };
   let tmp7Result = tmp3;
@@ -48,7 +54,7 @@ export default function ImageInputAnswerActionSheet(channelId) {
     obj = { style: tmp.emojiContainer };
     obj = { style: tmp.emojiIcon, children: tmp2.renderImage };
     const items = [callback(View, obj), ];
-    const obj1 = { cachedAt: 1231704321, edpbxy: 32296513 };
+    const obj1 = { variant: "text-md/bold", color: "mobile-text-heading-primary" };
     const image2 = answer.image;
     let name;
     if (null != image2) {
@@ -59,19 +65,19 @@ export default function ImageInputAnswerActionSheet(channelId) {
     }
     const _HermesInternal = HermesInternal;
     obj1.children = ":" + name + ":";
-    items[1] = callback(arg1(dependencyMap[10]).Text, obj1);
+    items[1] = callback(channelId(answer[10]).Text, obj1);
     obj.children = items;
     tmp7Result = closure_7(View, obj);
     const tmp7 = closure_7;
     const tmp8 = View;
     const tmp9 = callback;
   }
-  const items1 = [tmp7Result, callback(arg1(dependencyMap[11]).Spacer, { size: 21 }), ];
+  const items1 = [tmp7Result, callback(channelId(answer[11]).Spacer, { size: 21 }), ];
   const obj2 = { hasIcons: false };
   const obj3 = {};
-  const intl = arg1(dependencyMap[13]).intl;
+  const intl = channelId(answer[13]).intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[13]).t;
+  const t = channelId(answer[13]).t;
   if (tmp3) {
     let stringResult = string(t.CZeRhU);
   } else {
@@ -79,38 +85,38 @@ export default function ImageInputAnswerActionSheet(channelId) {
   }
   obj3.label = stringResult;
   obj3.onPress = function onPress() {
-    callback4();
     callback3();
+    callback2();
   };
-  const items2 = [callback(arg1(dependencyMap[12]).ActionSheetRow, obj3), , ];
+  const items2 = [callback(channelId(answer[12]).ActionSheetRow, obj3), , ];
   let tmp17 = null;
   if (null != upload) {
     const obj4 = {};
-    const intl2 = arg1(dependencyMap[13]).intl;
-    obj4.label = intl2.string(arg1(dependencyMap[13]).t.w7x2t4);
+    const intl2 = channelId(answer[13]).intl;
+    obj4.label = intl2.string(channelId(answer[13]).t.w7x2t4);
     obj4.onPress = function onPress() {
-      callback4();
+      callback3();
       let obj = channelId(answer[14]);
-      obj = { channelId, answer, index: closure_1, onSave: closure_3, imageSize: 40 };
+      obj = { channelId, answer, index: closure_1, onSave: result, imageSize: 40 };
       const result = obj.openEditPollCreationImageAltTextModal(obj);
     };
-    tmp17 = callback(arg1(dependencyMap[12]).ActionSheetRow, obj4);
+    tmp17 = callback(channelId(answer[12]).ActionSheetRow, obj4);
   }
   items2[1] = tmp17;
   let tmp21 = null;
   if (tmp3) {
     const obj5 = {};
-    const intl3 = arg1(dependencyMap[13]).intl;
-    obj5.label = intl3.string(arg1(dependencyMap[13]).t.IhMxgu);
+    const intl3 = channelId(answer[13]).intl;
+    obj5.label = intl3.string(channelId(answer[13]).t.IhMxgu);
     obj5.onPress = function onPress() {
-      callback2(closure_1);
-      callback4();
+      callback(closure_1);
+      callback3();
     };
-    tmp21 = callback(arg1(dependencyMap[12]).ActionSheetRow, obj5);
+    tmp21 = callback(channelId(answer[12]).ActionSheetRow, obj5);
   }
   items2[2] = tmp21;
   obj2.children = items2;
-  items1[2] = closure_7(arg1(dependencyMap[12]).ActionSheetRow.Group, obj2);
+  items1[2] = closure_7(channelId(answer[12]).ActionSheetRow.Group, obj2);
   obj.children = items1;
-  return closure_7(arg1(dependencyMap[9]).ActionSheet, obj);
+  return closure_7(channelId(answer[9]).ActionSheet, obj);
 };

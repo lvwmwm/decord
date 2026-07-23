@@ -1,24 +1,30 @@
-// Module ID: 15438
-// Function ID: 117808
+// Module ID: 15555
+// Function ID: 119982
 // Name: Modal
-// Dependencies: []
+// Dependencies: [29, 31, 27, 653, 33, 4130, 689, 4337, 8559, 480, 6707, 1557, 15556, 477, 15444, 2]
 // Exports: default
 
-// Module 15438 (Modal)
-let closure_3 = [21644204566566740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 8594063488.00214];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-({ View: closure_6, StyleSheet: closure_7 } = arg1(dependencyMap[2]));
-const NOOP = arg1(dependencyMap[3]).NOOP;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
-obj.containerWithPadding = obj;
-let closure_11 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalScreen.tsx");
+// Module 15555 (Modal)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { NOOP } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_9;
+const require = arg1;
+let closure_3 = ["impressionName", "impressionProperties"];
+({ View: closure_6, StyleSheet: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.containerWithPadding = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalScreen.tsx");
 
 export default function Modal(route) {
   let impressionName;
@@ -26,25 +32,24 @@ export default function Modal(route) {
   let left;
   let right;
   const modal = route.route.params.modal;
-  const arg1 = modal;
   let importDefault;
   let props = modal.props;
   if (null == props) {
     props = {};
   }
   ({ impressionName, impressionProperties } = props);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const callback = React.useCallback(() => {
-    let arr = callback(closure_2[7]);
+    let arr = callback(outer1_2[7]);
     arr = arr.pop();
   }, []);
   let obj = {};
   const tmp2 = callback(props, closure_3);
-  obj.type = arg1(dependencyMap[9]).ImpressionTypes.MODAL;
+  obj.type = modal(480).ImpressionTypes.MODAL;
   obj.name = impressionName;
   obj.properties = impressionProperties;
-  importDefault(dependencyMap[8])(obj);
-  const callbacks = modal.callbacks;
+  importDefault(8559)(obj);
+  let callbacks = modal.callbacks;
   let onExited;
   if (null != callbacks) {
     onExited = callbacks.onExited;
@@ -60,15 +65,15 @@ export default function Modal(route) {
   });
   const effect1 = React.useEffect(() => () => {
     let currentResult;
-    if (null != ref.current) {
-      currentResult = ref.current();
+    if (null != outer1_1.current) {
+      currentResult = outer1_1.current();
     }
     return currentResult;
   }, []);
-  const layoutEffect = React.useLayoutEffect(() => modal(closure_2[10]).trackAppUIViewed("ModalScreen"), []);
-  const tmp5 = importDefault(dependencyMap[8]);
-  ({ left, right } = importDefault(dependencyMap[11])());
-  let obj2 = arg1(dependencyMap[12]);
+  const layoutEffect = React.useLayoutEffect(() => modal(outer1_2[10]).trackAppUIViewed("ModalScreen"), []);
+  const tmp5 = importDefault(8559);
+  ({ left, right } = importDefault(1557)());
+  let obj2 = modal(15556);
   obj = {};
   const items = [absoluteFillObject.absoluteFillObject, ];
   let tmp14;
@@ -81,7 +86,7 @@ export default function Modal(route) {
   items[1] = tmp14;
   obj.style = items;
   if (modal.closable) {
-    let pop = importDefault(dependencyMap[7]).pop;
+    let pop = importDefault(4337).pop;
   } else {
     pop = NOOP;
   }
@@ -91,14 +96,14 @@ export default function Modal(route) {
   obj2["style"] = undefined;
   obj2["transitionState"] = null;
   obj2["onClose"] = callback;
-  const items2 = [<modal.modal {......obj2} />, ];
-  const tmp11 = importDefault(dependencyMap[11])();
+  const items2 = [<modal.modal />, ];
+  const tmp11 = importDefault(1557)();
   const tmp12 = closure_10;
   const tmp13 = closure_6;
-  let isIOSResult = arg1(dependencyMap[13]).isIOS();
+  let isIOSResult = modal(477).isIOS();
   if (isIOSResult) {
     const obj3 = { portal: false };
-    isIOSResult = callback2(arg1(dependencyMap[14]).PortalKeyboardRenderer, obj3);
+    isIOSResult = callback2(modal(15444).PortalKeyboardRenderer, obj3);
   }
   items2[1] = isIOSResult;
   obj.children = items2;

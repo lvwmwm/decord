@@ -1,13 +1,13 @@
-// Module ID: 6507
-// Function ID: 50693
+// Module ID: 6512
+// Function ID: 50722
 // Name: SkullIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6513, 2]
 // Exports: SkullIllocon
 
-// Module 6507 (SkullIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SkullIllocon.native.tsx");
+// Module 6512 (SkullIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SkullIllocon.native.tsx");
 
 export const SkullIllocon = function SkullIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const SkullIllocon = function SkullIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6513) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const SkullIllocon = function SkullIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

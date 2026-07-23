@@ -1,37 +1,39 @@
-// Module ID: 11477
-// Function ID: 89391
-// Dependencies: []
+// Module ID: 11487
+// Function ID: 89441
+// Dependencies: [31, 27, 33, 4130, 689, 11481, 1392, 1212, 9996, 2]
 
-// Module 11477
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 11487
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.md };
+obj = { height: 40, width: 40, resizeMode: "contain", borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
 obj.icon = obj;
-let closure_5 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function ChatInputGuardReturnToGameProfile(pendingGameProfileReturn) {
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function ChatInputGuardReturnToGameProfile(pendingGameProfileReturn) {
   let obj = { type: "simple-action" };
   let tmp4;
   const tmp = callback();
   const tmp2 = jsx;
   if (null != pendingGameProfileReturn.pendingGameProfileReturn.gameIconUrl) {
-    obj = { style: tmp.icon, source: arg1(dependencyMap[6]).makeSource(pendingGameProfileReturn.gameIconUrl) };
-    tmp4 = <Image {...obj} />;
-    const obj3 = arg1(dependencyMap[6]);
+    obj = { style: tmp.icon, source: require(1392) /* getAvatarURL */.makeSource(pendingGameProfileReturn.gameIconUrl) };
+    tmp4 = <Image style={tmp.icon} source={require(1392) /* getAvatarURL */.makeSource(pendingGameProfileReturn.gameIconUrl)} />;
+    const obj3 = require(1392) /* getAvatarURL */;
   }
   obj.icon = tmp4;
-  const intl = arg1(dependencyMap[7]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { gameName: pendingGameProfileReturn.gameName };
-  obj.message = intl.format(arg1(dependencyMap[7]).t.HRHaSF, obj);
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj.actionLabel = intl2.string(arg1(dependencyMap[7]).t.DjifDP);
-  const obj1 = { color: importDefault(dependencyMap[4]).colors.WHITE };
-  obj.actionIcon = jsx(arg1(dependencyMap[8]).ArrowSmallLeftIcon, obj1);
+  obj.message = intl.format(require(1212) /* getSystemLocale */.t.HRHaSF, obj);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.actionLabel = intl2.string(require(1212) /* getSystemLocale */.t.DjifDP);
+  const obj1 = { color: importDefault(689).colors.WHITE };
+  obj.actionIcon = jsx(require(9996) /* ArrowSmallLeftIcon */.ArrowSmallLeftIcon, { color: importDefault(689).colors.WHITE });
   obj.actionOnPress = pendingGameProfileReturn.pendingGameProfileReturn.onReturnToGameProfile;
-  return tmp2(importDefault(dependencyMap[5]), obj);
+  return tmp2(importDefault(11481), obj);
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardReturnToGameProfile.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardReturnToGameProfile.tsx");
 
 export default memoResult;

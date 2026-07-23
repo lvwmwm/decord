@@ -1,13 +1,13 @@
-// Module ID: 6077
-// Function ID: 50048
+// Module ID: 6082
+// Function ID: 50077
 // Name: GameDepthTier2LargeBadge
-// Dependencies: []
+// Dependencies: [33, 5085, 6083, 2]
 // Exports: GameDepthTier2LargeBadge
 
-// Module 6077 (GameDepthTier2LargeBadge)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GameDepthTier2LargeBadge.native.tsx");
+// Module 6082 (GameDepthTier2LargeBadge)
+import { jsx } from "jsxProd";
+
+const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GameDepthTier2LargeBadge.native.tsx");
 
 export const GameDepthTier2LargeBadge = function GameDepthTier2LargeBadge(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const GameDepthTier2LargeBadge = function GameDepthTier2LargeBadge(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6083) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const GameDepthTier2LargeBadge = function GameDepthTier2LargeBadge(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

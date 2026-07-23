@@ -1,17 +1,19 @@
-// Module ID: 11829
-// Function ID: 91722
+// Module ID: 11839
+// Function ID: 91771
 // Name: useHandleClaim
-// Dependencies: []
+// Dependencies: [5, 31, 6773, 4098, 9772, 3831, 1212, 2]
 // Exports: useHandleClaim
 
-// Module 11829 (useHandleClaim)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/collectibles/native/useHandleClaim.tsx");
+// Module 11839 (useHandleClaim)
+import dispatcher from "dispatcher";
+import result from "result";
+
+let require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/native/useHandleClaim.tsx");
 
 export const useHandleClaim = function useHandleClaim(product) {
   product = product.product;
-  const arg1 = product;
+  const require = product;
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [product];
   return { handleClaim: React.useCallback(callback(tmp), items) };

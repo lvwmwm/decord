@@ -1,42 +1,43 @@
-// Module ID: 9976
-// Function ID: 77177
+// Module ID: 9984
+// Function ID: 77217
 // Name: useRequestApplication
-// Dependencies: []
+// Dependencies: [6, 7, 31, 4167, 4015, 22, 5465, 566, 2]
 // Exports: useGetOrFetchApplicationBatched
 
-// Module 9976 (useRequestApplication)
+// Module 9984 (useRequestApplication)
+import fetchApplication from "fetchApplication";
+import initialize from "initialize";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function useRequestApplication(applicationId) {
-  const arg1 = applicationId;
+  let closure_0 = applicationId;
   const items = [applicationId];
   const effect = React.useEffect(() => {
-    let tmp = null != arg0;
+    let tmp = null != closure_0;
     if (tmp) {
-      tmp = "" !== arg0;
+      tmp = "" !== closure_0;
     }
     if (tmp) {
-      closure_7.request(arg0);
+      outer1_7.request(closure_0);
     }
   }, items);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let tmp2 = () => {
+let tmp2 = (() => {
   class ApplicationFetchManager {
     constructor() {
-      ApplicationFetchManager = this;
-      tmp = closure_3(this, ApplicationFetchManager);
+      self = this;
+      tmp = outer1_3(this, self);
       map = new Map();
       this._lastFetchedAttempted = map;
       set = new Set();
       this._pending = set;
-      delayedCall = new ApplicationFetchManager(closure_2[4]).DelayedCall(32, () => self._flush());
+      delayedCall = new ApplicationFetchManager(outer1_2[4]).DelayedCall(32, () => self._flush());
       this._flushHandler = delayedCall;
       return;
     }
   }
-  const arg1 = ApplicationFetchManager;
   let obj = {
     key: "request",
     value(arg0) {
@@ -59,11 +60,11 @@ let tmp2 = () => {
       }
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "_flush",
     value() {
-      const ApplicationFetchManager = this;
+      const self = this;
       const items = [];
       let _pending = this._pending;
       const item = _pending.forEach((arg0) => {
@@ -76,46 +77,47 @@ let tmp2 = () => {
       const items1 = [];
       const items2 = [];
       const item1 = items.forEach((arg0) => {
-        if (closure_6.didFetchingApplicationFail(arg0)) {
+        if (outer2_6.didFetchingApplicationFail(arg0)) {
           items2.push(arg0);
         } else {
           items1.push(arg0);
         }
       });
       if (items1.length > 0) {
-        const obj = items(items1[5]);
-        const item2 = items(items1[5]).chunk(items1, 20).forEach((arg0) => {
-          const applications = items(items1[6]).fetchApplications(arg0, false);
+        const obj = outer1_1(outer1_2[5]);
+        const item2 = outer1_1(outer1_2[5]).chunk(items1, 20).forEach((arg0) => {
+          const applications = outer2_1(outer2_2[6]).fetchApplications(arg0, false);
         });
-        const chunkResult = items(items1[5]).chunk(items1, 20);
+        const chunkResult = outer1_1(outer1_2[5]).chunk(items1, 20);
       }
       if (items2.length > 0) {
-        const obj2 = items(items1[5]);
-        const item3 = items(items1[5]).chunk(items2, 20).forEach((arg0) => {
-          const applications = items(items1[6]).fetchApplications(arg0, true);
+        const obj2 = outer1_1(outer1_2[5]);
+        const item3 = outer1_1(outer1_2[5]).chunk(items2, 20).forEach((arg0) => {
+          const applications = outer2_1(outer2_2[6]).fetchApplications(arg0, true);
         });
-        const chunkResult1 = items(items1[5]).chunk(items2, 20);
+        const chunkResult1 = outer1_1(outer1_2[5]).chunk(items2, 20);
       }
     }
   };
   items[1] = obj;
   return callback(ApplicationFetchManager, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/applications/useGetOrFetchApplicationBatched.tsx");
+let closure_7 = tmp2;
+let result = require("result").fileFinishedImporting("modules/applications/useGetOrFetchApplicationBatched.tsx");
 
 export { useRequestApplication };
 export const useGetOrFetchApplicationBatched = function useGetOrFetchApplicationBatched(applicationId) {
-  const arg1 = applicationId;
+  const _require = applicationId;
   useRequestApplication(applicationId);
-  const items = [closure_6];
+  const items = [_isNativeReflectConstruct];
   const items1 = [applicationId];
-  return arg1(dependencyMap[7]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     let application = null;
-    if (null != arg0) {
+    if (null != closure_0) {
       application = null;
-      if ("" !== arg0) {
-        application = application.getApplication(arg0);
+      if ("" !== closure_0) {
+        application = outer1_6.getApplication(closure_0);
       }
     }
     return application;

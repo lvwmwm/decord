@@ -1,18 +1,19 @@
-// Module ID: 13309
-// Function ID: 101104
+// Module ID: 13423
+// Function ID: 103260
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 653, 13289, 13277, 10491, 7366, 10486, 13281, 10476, 2, 6937]
+// Dependencies: [6, 7, 15, 17, 18, 1921, 13424, 1327, 566, 686, 2]
 
-// Module 13309 (_isNativeReflectConstruct)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import ME from "ME";
-import createRPCCommand from "createRPCCommand";
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants";
-import recurseReplaceContentTree from "recurseReplaceContentTree";
-import getApplicationFlags from "getApplicationFlags";
-import module_10486 from "module_10486";
+// Module 13423 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,49 +23,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -75,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -105,22 +106,22 @@ function addRegularStoreListing(storeListing) {
   let deleteResult = storeListing;
   const id = storeListing.id;
   let id2 = storeListing.sku.id;
-  const fromServer = module_10486.createFromServer(storeListing);
+  const fromServer = closure_8.createFromServer(storeListing);
   let tmp2 = null;
   if (!tmp3) {
     if (false === deleteResult.published) {
-      if (tmp2 == closure_12[id2]) {
-        tmp2 = closure_12;
+      if (tmp2 == dependencyMap[id2]) {
+        tmp2 = dependencyMap;
         const _Set = Set;
         const set = new Set();
-        closure_12[id2] = set;
+        dependencyMap[id2] = set;
       }
-      id2 = closure_12[id2];
+      id2 = dependencyMap[id2];
       id2.add(id);
     } else {
       closure_13[id2] = id;
     }
-    closure_10[id] = fromServer;
+    table[id] = fromServer;
     deleteResult = set.delete(deleteResult.sku.id);
   }
 }
@@ -135,31 +136,31 @@ function handleClearData() {
   const set = new Set();
 }
 function handleUserSettingsStoreUpdate() {
-  if (locale === getApplicationFlags.locale) {
+  if (locale === closure_7.locale) {
     return false;
   } else {
     handleClearData();
-    const locale = getApplicationFlags.locale;
+    locale = closure_7.locale;
   }
 }
 let closure_10 = {};
 let closure_11 = {};
 let closure_12 = {};
 let closure_13 = {};
-const set = new Set();
-let tmp3 = (Store) => {
+let set = new Set();
+let tmp3 = ((Store) => {
   class StoreListingStore {
     constructor() {
       self = this;
-      tmp = asyncGeneratorStep(this, StoreListingStore);
-      obj = activityInstanceConnectedParticipants(StoreListingStore);
-      tmp2 = createRPCCommand;
-      if (closure_15()) {
+      tmp = outer1_2(this, StoreListingStore);
+      obj = outer1_5(StoreListingStore);
+      tmp2 = outer1_4;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = activityInstanceConnectedParticipants;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, activityInstanceConnectedParticipants(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -168,22 +169,21 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = StoreListingStore;
   callback2(StoreListingStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(locale);
-      const items = [locale];
-      this.syncWith(items, closure_21);
-      const locale = locale.locale;
+      this.waitFor(outer1_7);
+      const items = [outer1_7];
+      this.syncWith(items, outer1_21);
+      const outer1_9 = outer1_7.locale;
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "get",
     value(arg0) {
-      return closure_10[arg0];
+      return outer1_10[arg0];
     }
   };
   items[1] = obj;
@@ -191,11 +191,11 @@ let tmp3 = (Store) => {
     key: "getForSKU",
     value(arg0, arg1) {
       if (null != arg1) {
-        let tmp2 = closure_11[closure_19(undefined, arg1, arg0)];
+        let tmp2 = outer1_11[outer1_19(undefined, arg1, arg0)];
       } else {
         tmp2 = null;
         if (null != tmp) {
-          tmp2 = closure_10[tmp];
+          tmp2 = outer1_10[tmp];
         }
       }
       return tmp2;
@@ -205,12 +205,12 @@ let tmp3 = (Store) => {
   items[3] = {
     key: "getUnpublishedForSKU",
     value(arg0) {
-      if (null == closure_12[arg0]) {
+      if (null == outer1_12[arg0]) {
         let items = [];
       } else {
         const _Array = Array;
-        const mapped = Array.from(tmp).map((arg0) => closure_10[arg0]);
-        items = mapped.filter(StoreListingStore(closure_1[7]).isNotNullish);
+        const mapped = Array.from(tmp).map((arg0) => outer2_10[arg0]);
+        items = mapped.filter(StoreListingStore(outer1_1[7]).isNotNullish);
         const arr = Array.from(tmp);
       }
       return items;
@@ -219,13 +219,13 @@ let tmp3 = (Store) => {
   items[4] = {
     key: "getForChannel",
     value(arg0, arg1) {
-      return closure_11[closure_19(undefined, arg0, arg1)];
+      return outer1_11[outer1_19(undefined, arg0, arg1)];
     }
   };
   items[5] = {
     key: "isFetchingForSKU",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_14.has(arg0);
     }
   };
   items[6] = {
@@ -266,9 +266,9 @@ let tmp3 = (Store) => {
     }
   };
   return callback(StoreListingStore, items);
-}(require("_runPrimaryAppCommandOrJoinEmbeddedActivity").Store);
+})(require("initialize").Store);
 tmp3.displayName = "StoreListingStore";
-tmp3 = new tmp3(require("result2"), {
+tmp3 = new tmp3(require("dispatcher"), {
   STORE_LISTINGS_FETCH_START: function handleStoreListingsFetchStart(skuId) {
     set.add(skuId.skuId);
   },
@@ -281,8 +281,8 @@ tmp3 = new tmp3(require("result2"), {
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_18;
-        let tmp3 = closure_18(iter.value);
+        let tmp2 = addRegularStoreListing;
+        let tmp3 = addRegularStoreListing(iter.value);
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -294,7 +294,7 @@ tmp3 = new tmp3(require("result2"), {
     let storeListing;
     ({ storeListing, channelId } = arg0);
     if (null != channelId) {
-      const fromServer = module_10486.createFromServer(storeListing);
+      const fromServer = closure_8.createFromServer(storeListing);
       closure_11[getChannelSkuComboId(channelId, fromServer.skuId)] = fromServer;
       closure_13[fromServer.skuId] = fromServer.id;
     } else {
@@ -312,6 +312,6 @@ tmp3 = new tmp3(require("result2"), {
     }
   }
 });
-const result = _isNativeReflectConstruct.fileFinishedImporting("stores/game_store/StoreListingStore.tsx");
+let result = set.fileFinishedImporting("stores/game_store/StoreListingStore.tsx");
 
 export default tmp3;

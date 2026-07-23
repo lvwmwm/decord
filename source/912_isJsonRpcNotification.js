@@ -1,9 +1,11 @@
 // Module ID: 912
-// Function ID: 9998
+// Function ID: 9999
 // Name: isJsonRpcNotification
-// Dependencies: []
+// Dependencies: [800, 801]
 
 // Module 912 (isJsonRpcNotification)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.isJsonRpcNotification = function isJsonRpcNotification(first) {
   let tmp = "object" === typeof first;
@@ -92,8 +94,8 @@ arg5.validateMcpServerInstance = function validateMcpServerInstance(arg0) {
   }
   if (!flag) {
     flag = false;
-    if (arg1(arg6[0]).DEBUG_BUILD) {
-      const debug = arg1(arg6[1]).debug;
+    if (require(800).DEBUG_BUILD) {
+      const debug = require(801) /* consoleSandbox */.debug;
       debug.warn("Did not patch MCP server. Interface is incompatible.");
       flag = false;
     }

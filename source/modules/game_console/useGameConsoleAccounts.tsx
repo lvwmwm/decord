@@ -1,18 +1,20 @@
-// Module ID: 8926
-// Function ID: 70406
+// Module ID: 8933
+// Function ID: 70447
 // Name: useGameConsoleAccounts
-// Dependencies: []
+// Dependencies: [4812, 653, 566, 1327, 2]
 // Exports: default
 
-// Module 8926 (useGameConsoleAccounts)
-let closure_2 = importDefault(dependencyMap[0]);
-const PlatformTypes = arg1(dependencyMap[1]).PlatformTypes;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");
+// Module 8933 (useGameConsoleAccounts)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PlatformTypes } from "ME";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");
 
 export default function useGameConsoleAccounts() {
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStoresArray(items, () => {
-    const items = [store.getAccount(null, constants.XBOX), store.getAccount(null, constants.PLAYSTATION), store.getAccount(null, constants.PLAYSTATION_STAGING)];
-    return items.filter(callback(closure_1[3]).isNotNullish);
+  let items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
+    const items = [outer1_2.getAccount(null, outer1_3.XBOX), outer1_2.getAccount(null, outer1_3.PLAYSTATION), outer1_2.getAccount(null, outer1_3.PLAYSTATION_STAGING)];
+    return items.filter(outer1_0(outer1_1[3]).isNotNullish);
   });
 };

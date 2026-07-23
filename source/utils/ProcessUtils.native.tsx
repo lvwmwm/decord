@@ -1,15 +1,22 @@
-// Module ID: 6912
-// Function ID: 55046
+// Module ID: 6917
+// Function ID: 55080
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 27, 6918, 2]
 
-// Module 6912 (_isNativeReflectConstruct)
+// Module 6917 (_isNativeReflectConstruct)
+import ProcessUtils from "ProcessUtils";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { NativeModules } from "get ActivityIndicator";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let ProcessUtils = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return ProcessUtils;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -52,40 +59,34 @@ function getHermesInstrumentedStatsSummary() {
     }
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const NativeModules = arg1(dependencyMap[5]).NativeModules;
-let tmp2 = (ProcessUtils) => {
+let tmp2 = ((ProcessUtils) => {
   class ProcessUtilsIOS {
     constructor() {
       self = this;
-      tmp = ProcessUtilsIOS(this, ProcessUtilsIOS);
-      obj = closure_3(ProcessUtilsIOS);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      tmp = ProcessUtilsIOS(this, apply);
+      obj = outer1_3(apply);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, [], closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, [], outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      ProcessUtilsIOS = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.shouldCollectHermesInstrumentedStats = false;
       prop = undefined;
-      if (null != closure_5) {
-        tmp8 = closure_5;
-        prop = closure_5.SystemResourceManager;
+      if (null != outer1_5) {
+        tmp8 = outer1_5;
+        prop = outer1_5.SystemResourceManager;
       }
       SystemResourceManager = prop;
       tmp9 = null == prop || null == prop.getCpuCoreCount;
       if (!tmp9) {
         cpuCoreCount = prop.getCpuCoreCount((cpuCoreCount) => {
-          tmp2Result.cpuCoreCount = cpuCoreCount;
+          ProcessUtils.cpuCoreCount = cpuCoreCount;
         });
       }
       timerId = setInterval(() => {
@@ -99,7 +100,7 @@ let tmp2 = (ProcessUtils) => {
             if (arg0 >= 0) {
               tmp2 = arg0;
             }
-            closure_0.cpuPercentage = tmp2;
+            outer1_0.cpuPercentage = tmp2;
           });
         }
         let tmp5 = null == prop;
@@ -112,7 +113,7 @@ let tmp2 = (ProcessUtils) => {
               const obj = { usage };
               const _performance = performance;
               obj.sampleTime = performance.now();
-              closure_0.cumulativeCpuUsage = obj;
+              outer1_0.cumulativeCpuUsage = obj;
             }
           });
         }
@@ -126,19 +127,18 @@ let tmp2 = (ProcessUtils) => {
             if (arg0 >= 0) {
               tmp2 = arg0;
             }
-            closure_0.memory = tmp2;
+            outer1_0.memory = tmp2;
           });
         }
         let tmp14;
         if (tmp2Result.shouldCollectHermesInstrumentedStats) {
-          tmp14 = callback();
+          tmp14 = outer2_7();
         }
         tmp2Result.hermesInstrumentedStatsSummary = tmp14;
       }, 1000);
       return tmp2Result;
     }
   }
-  let closure_0 = ProcessUtilsIOS;
   callback2(ProcessUtilsIOS, ProcessUtils);
   let obj = {
     key: "getProcessUptime",
@@ -173,7 +173,7 @@ let tmp2 = (ProcessUtils) => {
       this.shouldCollectHermesInstrumentedStats = shouldCollectHermesInstrumentedStats;
       let tmp;
       if (shouldCollectHermesInstrumentedStats) {
-        tmp = callback3();
+        tmp = outer1_7();
       }
       this.hermesInstrumentedStatsSummary = tmp;
     }
@@ -317,8 +317,8 @@ let tmp2 = (ProcessUtils) => {
     }
   };
   return callback(ProcessUtilsIOS, items);
-}(arg1(dependencyMap[6]).ProcessUtils);
+})(require("ProcessUtils").ProcessUtils);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("utils/ProcessUtils.native.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("utils/ProcessUtils.native.tsx");
 
 export default tmp2;

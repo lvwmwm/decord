@@ -1,22 +1,24 @@
-// Module ID: 15311
-// Function ID: 116449
+// Module ID: 15428
+// Function ID: 118623
 // Name: useSendMessageChannelCount
-// Dependencies: [1005846528, 1006043136, 1006108672, 260505600, 102039552, 251658240]
+// Dependencies: [1907, 3758, 653, 566, 483, 2]
 // Exports: default
 
-// Module 15311 (useSendMessageChannelCount)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[0]).GUILD_SELECTABLE_CHANNELS_KEY;
-let closure_5 = importDefault(dependencyMap[1]);
-const Permissions = arg1(dependencyMap[2]).Permissions;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild/usePostableChannelCount.tsx");
+// Module 15428 (useSendMessageChannelCount)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_4 } from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/guild/usePostableChannelCount.tsx");
 
 export default function useSendMessageChannelCount(arg0) {
-  const arg1 = arg0;
-  const items = [closure_3];
+  const _require = arg0;
+  let items = [_isNativeReflectConstruct];
   const items1 = [arg0];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    let items = channels.getChannels(arg0)[closure_4];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
+    let items = outer1_3.getChannels(closure_0)[outer1_4];
     if (null == items) {
       items = [];
     }
@@ -24,7 +26,7 @@ export default function useSendMessageChannelCount(arg0) {
   }, items1);
   let num = 0;
   if (0 !== stateFromStores.length) {
-    num = stateFromStores.filter((channel) => closure_5.can(callback(closure_2[4]).combine(constants.SEND_MESSAGES, constants.VIEW_CHANNEL), channel.channel)).length;
+    num = stateFromStores.filter((channel) => outer1_5.can(outer1_1(outer1_2[4]).combine(outer1_6.SEND_MESSAGES, outer1_6.VIEW_CHANNEL), channel.channel)).length;
   }
   return num;
 };

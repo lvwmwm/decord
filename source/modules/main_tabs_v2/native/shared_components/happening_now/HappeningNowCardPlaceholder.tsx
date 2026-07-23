@@ -1,64 +1,68 @@
-// Module ID: 14816
-// Function ID: 111675
+// Module ID: 14932
+// Function ID: 113843
 // Name: HappeningNowCardPlaceholder
-// Dependencies: []
+// Dependencies: [31, 27, 14183, 33, 4130, 689, 3991, 4131, 14184, 2]
 // Exports: HappeningNowCardPlaceholder
 
-// Module 14816 (HappeningNowCardPlaceholder)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const HAPPENING_NOW_CONTENT_HEIGHT = arg1(dependencyMap[2]).HAPPENING_NOW_CONTENT_HEIGHT;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { placeholderContainer: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
-obj = { height: HAPPENING_NOW_CONTENT_HEIGHT, width: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: importDefault(dependencyMap[5]).radii.sm, marginRight: 12, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.placeholderIcon = obj;
-obj.placeholderContent = { flex: 1 };
-const tmp2 = arg1(dependencyMap[3]);
-obj.placeholderText = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.placeholderTextTop = { width: "75%" };
-obj.placeholderTextBottom = { "Null": false, "Null": false };
-let closure_7 = obj.createStyles(obj);
+// Module 14932 (HappeningNowCardPlaceholder)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { HAPPENING_NOW_CONTENT_HEIGHT } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { placeholderContainer: { flexDirection: "row", alignItems: "center" } };
+_createForOfIteratorHelperLoose = { height: HAPPENING_NOW_CONTENT_HEIGHT, width: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginRight: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.placeholderIcon = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.placeholderContent = { flex: 1 };
+let obj1 = { height: 12, borderRadius: 5, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.placeholderText = obj1;
+_createForOfIteratorHelperLoose.placeholderTextTop = { width: "75%" };
+_createForOfIteratorHelperLoose.placeholderTextBottom = { width: "50%", marginTop: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_8 = { code: "function HappeningNowCardPlaceholderTsx1(){const{opacity,withRepeat,withTiming,endOpacity,duration,Easing}=this.__closure;opacity.set(withRepeat(withTiming(endOpacity,{duration:duration,easing:Easing.ease}),-1,true));}" };
 let closure_9 = { code: "function HappeningNowCardPlaceholderTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardPlaceholder.tsx");
+let result = require("HAPPENING_NOW_PANELS_CONTAINER_PADDING").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardPlaceholder.tsx");
 
 export const HappeningNowCardPlaceholder = function HappeningNowCardPlaceholder(panelVariant) {
   let flag = panelVariant.panelVariant;
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   let str = "medium";
-  const tmp2 = function useBlinkStyle(duration) {
+  const tmp2 = (function useBlinkStyle(duration) {
     duration = duration.duration;
     const endOpacity = duration.endOpacity;
-    const sharedValue = duration(sharedValue[6]).useSharedValue(duration.startOpacity);
+    const sharedValue = outer1_0(outer1_2[6]).useSharedValue(duration.startOpacity);
     const items = [sharedValue, duration, endOpacity];
-    const effect = React.useEffect(() => {
-      let obj = duration(sharedValue[6]);
+    const effect = outer1_3.useEffect(() => {
+      let obj = outer2_0(outer2_2[6]);
       const fn = function t() {
-        let obj = callback(closure_2[6]);
-        obj = { duration: callback, easing: callback(closure_2[6]).Easing.ease };
-        const result = closure_2.set(obj.withRepeat(callback(closure_2[7]).withTiming(closure_1, obj), -1, true));
+        let obj = outer3_0(outer3_2[6]);
+        obj = { duration: outer1_0, easing: outer3_0(outer3_2[6]).Easing.ease };
+        const result = outer1_2.set(obj.withRepeat(outer3_0(outer3_2[7]).withTiming(outer1_1, obj), -1, true));
       };
-      obj = { opacity: sharedValue, withRepeat: duration(sharedValue[6]).withRepeat, withTiming: duration(sharedValue[7]).withTiming, endOpacity, duration, Easing: duration(sharedValue[6]).Easing };
+      obj = { opacity: sharedValue, withRepeat: outer2_0(outer2_2[6]).withRepeat, withTiming: outer2_0(outer2_2[7]).withTiming, endOpacity, duration, Easing: outer2_0(outer2_2[6]).Easing };
       fn.__closure = obj;
       fn.__workletHash = 14338250108016;
-      fn.__initData = closure_8;
+      fn.__initData = outer2_8;
       obj.runOnUI(fn)();
     }, items);
-    const obj = duration(sharedValue[6]);
-    const fn = function c() {
+    let obj = outer1_0(outer1_2[6]);
+    let fn = function c() {
       return { opacity: sharedValue.get() };
     };
     fn.__closure = { opacity: sharedValue };
     fn.__workletHash = 17547739379389;
-    fn.__initData = closure_9;
-    return duration(sharedValue[6]).useAnimatedStyle(fn);
-  }({ paddingTop: "<string:1929528555>", paddingBottom: "r", justifyContent: "type" });
+    fn.__initData = outer1_9;
+    return outer1_0(outer1_2[6]).useAnimatedStyle(fn);
+  })({ duration: 1000, startOpacity: 0.3, endOpacity: 0.6 });
   const tmp3 = callback;
   if (panelVariant.fullWidth) {
     str = "full";
@@ -66,7 +70,7 @@ export const HappeningNowCardPlaceholder = function HappeningNowCardPlaceholder(
   obj.width = str;
   obj.panelVariant = flag;
   obj = { style: items };
-  const items = [tmp2, tmp.placeholderContainer];
+  items = [tmp2, tmp.placeholderContainer];
   obj = { style: tmp.placeholderIcon };
   const items1 = [callback(View, obj), ];
   const obj1 = { style: tmp.placeholderContent };
@@ -79,6 +83,6 @@ export const HappeningNowCardPlaceholder = function HappeningNowCardPlaceholder(
   obj1.children = items3;
   items1[1] = callback2(View, obj1);
   obj.children = items1;
-  obj.children = callback2(importDefault(dependencyMap[6]).View, obj);
-  return tmp3(importDefault(dependencyMap[8]), obj);
+  obj.children = callback2(importDefault(3991).View, obj);
+  return tmp3(importDefault(14184), obj);
 };

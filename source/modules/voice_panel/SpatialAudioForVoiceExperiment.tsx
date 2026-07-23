@@ -1,12 +1,13 @@
-// Module ID: 12642
-// Function ID: 97290
+// Module ID: 12756
+// Function ID: 99446
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 12642 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/voice_panel/SpatialAudioForVoiceExperiment.tsx");
+// Module 12756 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-05-spatial-audio-for-voice", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/voice_panel/SpatialAudioForVoiceExperiment.tsx");
 
 export default apexExperiment;

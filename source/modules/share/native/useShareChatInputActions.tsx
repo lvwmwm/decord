@@ -1,44 +1,46 @@
-// Module ID: 9887
-// Function ID: 76556
+// Module ID: 9894
+// Function ID: 76597
 // Name: useShareChatInputActions
-// Dependencies: []
+// Dependencies: [57, 31, 1852, 9326, 2]
 // Exports: useShareChatInputActions
 
-// Module 9887 (useShareChatInputActions)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const EmojiIntention = arg1(dependencyMap[2]).EmojiIntention;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/share/native/useShareChatInputActions.tsx");
+// Module 9894 (useShareChatInputActions)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { EmojiIntention } from "set";
+
+const require = arg1;
+let result = require("set").fileFinishedImporting("modules/share/native/useShareChatInputActions.tsx");
 
 export const useShareChatInputActions = function useShareChatInputActions(setText, selectedDestinationChannel, appEntryKey) {
+  let closure_5;
   let tmp3;
-  selectedDestinationChannel = setText;
-  const dependencyMap = selectedDestinationChannel;
+  let closure_0 = setText;
+  let closure_1 = selectedDestinationChannel;
   let callback = appEntryKey;
-  const ref = React.useRef(null);
-  const React = ref;
-  let closure_4 = React.useRef({ 400888199: "%FunctionPrototype%", 2091392542: "paddingStart" });
-  [tmp3, closure_5] = callback(React.useState(false), 2);
-  callback = React.useCallback((nativeEvent) => {
+  ref = ref.useRef(null);
+  let closure_4 = ref.useRef({ start: 0, end: 0 });
+  [tmp3, closure_5] = callback(ref.useState(false), 2);
+  callback = ref.useCallback((nativeEvent) => {
     const merged = Object.assign(nativeEvent.nativeEvent.selection);
     closure_4.current = {};
   }, []);
-  const callback1 = React.useCallback(() => {
+  const callback1 = ref.useCallback(() => {
     callback(true);
   }, []);
   const items = [setText];
-  const callback2 = React.useCallback(() => {
+  const callback2 = ref.useCallback(() => {
     callback(false);
   }, []);
-  const callback3 = React.useCallback((id) => {
+  const callback3 = ref.useCallback((id) => {
     let setText = "";
     if (null == id.id) {
       if (null != id.surrogates) {
         setText = id.surrogates;
       }
       setText((arr) => {
-        const sum = arr.slice(0, ref.current.start) + closure_0;
-        return sum + arr.slice(ref.current.end);
+        const sum = arr.slice(0, outer1_4.current.start) + closure_0;
+        return sum + arr.slice(outer1_4.current.end);
       });
       const current = ref.current;
       if (null != current) {
@@ -54,30 +56,30 @@ export const useShareChatInputActions = function useShareChatInputActions(setTex
     }
     name = id.name;
   }, items);
-  const callback4 = React.useCallback(() => {
+  const callback4 = ref.useCallback(() => {
     const current = ref.current;
     if (null != current) {
       current.focus();
     }
   }, []);
   const items1 = [callback4, callback3, selectedDestinationChannel, appEntryKey];
-  const tmp2 = callback(React.useState(false), 2);
+  const tmp2 = callback(ref.useState(false), 2);
   return {
     textInputRef: ref,
     isInputFocused: tmp3,
     handleSelectionChange: callback,
     handleMessageFocus: callback1,
     handleMessageBlur: callback2,
-    handlePressEmoji: React.useCallback(() => {
+    handlePressEmoji: ref.useCallback(() => {
       const current = ref.current;
       if (null != current) {
         current.blur();
       }
-      let obj = arg0(arg1[3]);
-      obj = { onPressEmoji: callback3, onClose: callback4, pickerIntention: constants.CHAT, autoFocus: false, startExpanded: false, channel: arg1, appEntryKey: arg2 };
+      let obj = setText(selectedDestinationChannel[3]);
+      obj = { onPressEmoji: callback3, onClose: callback4, pickerIntention: constants.CHAT, autoFocus: false, startExpanded: false, channel: selectedDestinationChannel, appEntryKey: _slicedToArray };
       let guildId;
-      if (null != arg1) {
-        guildId = arg1.getGuildId();
+      if (null != selectedDestinationChannel) {
+        guildId = selectedDestinationChannel.getGuildId();
       }
       let tmp4;
       if (null != guildId) {

@@ -1,10 +1,12 @@
 // Module ID: 855
-// Function ID: 9602
+// Function ID: 9603
 // Name: parseRetryAfterHeader
-// Dependencies: []
+// Dependencies: [57, 808]
 // Exports: isRateLimited, updateRateLimits
 
 // Module 855 (parseRetryAfterHeader)
+import _slicedToArray from "_slicedToArray";
+
 function parseRetryAfterHeader(arg0) {
   if (arguments.length > 1) {
     if (undefined !== arguments[1]) {
@@ -28,12 +30,11 @@ function parseRetryAfterHeader(arg0) {
       return 1000 * parsed;
     }
   }
-  safeDateNowResult = require(dependencyMap[1]).safeDateNow();
+  safeDateNowResult = require(808) /* withRandomSafeContext */.safeDateNow();
 }
 function disabledUntil(all) {
   return all[arg1] || all.all || 0;
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const DEFAULT_RETRY_AFTER = 60000;
@@ -45,7 +46,7 @@ export const isRateLimited = function isRateLimited(arg0, arg1) {
     }
     return disabledUntil(arg0, arg1) > safeDateNowResult;
   }
-  safeDateNowResult = require(dependencyMap[1]).safeDateNow();
+  safeDateNowResult = require(808) /* withRandomSafeContext */.safeDateNow();
 };
 export { parseRetryAfterHeader };
 export const updateRateLimits = function updateRateLimits(arg0, headers) {
@@ -58,18 +59,18 @@ export const updateRateLimits = function updateRateLimits(arg0, headers) {
     const merged = Object.assign({}, arg0);
     let prop;
     if (null != headers) {
-      prop = headers.x-sentry-rate-limits;
+      prop = headers["x-sentry-rate-limits"];
     }
     if (null != headers) {
-      retry-after = headers.retry-after;
+      retry_after = headers["retry-after"];
     }
     if (prop) {
       const parts = prop.trim().split(",");
       const iter = parts[Symbol.iterator]();
       const str = prop.trim();
       while (iter !== undefined) {
-        let tmp34 = callback;
-        let tmp35 = callback(str7.split(":", 5), 5);
+        let tmp34 = _slicedToArray;
+        let tmp35 = _slicedToArray(str7.split(":", 5), 5);
         let str8 = tmp35[1];
         let str9 = tmp35[4];
         let _parseInt = parseInt;
@@ -106,6 +107,7 @@ export const updateRateLimits = function updateRateLimits(arg0, headers) {
               let tmp31 = result;
               merged[tmp23] = tmp3 + result;
             }
+            continue;
           }
         } else {
           let tmp17 = merged;
@@ -113,9 +115,9 @@ export const updateRateLimits = function updateRateLimits(arg0, headers) {
           let tmp19 = result;
           merged.all = tmp3 + result;
         }
-        // continue
+        continue;
       }
-      const str7 = iter.next();
+      str7 = iter.next();
     } else if (retry_after) {
       merged.all = tmp3 + parseRetryAfterHeader(retry_after, tmp3);
     } else if (429 === tmp) {
@@ -123,5 +125,5 @@ export const updateRateLimits = function updateRateLimits(arg0, headers) {
     }
     return merged;
   }
-  safeDateNowResult = require(dependencyMap[1]).safeDateNow();
+  safeDateNowResult = require(808) /* withRandomSafeContext */.safeDateNow();
 };

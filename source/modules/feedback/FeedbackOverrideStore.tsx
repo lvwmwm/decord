@@ -1,9 +1,16 @@
-// Module ID: 15921
-// Function ID: 121961
+// Module ID: 16038
+// Function ID: 124134
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 16037, 566, 686, 2]
 
-// Module 15921 (_isNativeReflectConstruct)
+// Module 16038 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +20,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class HotspotStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, HotspotStore);
-      obj = closure_5(HotspotStore);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      tmp = outer1_2(this, HotspotStore);
+      obj = outer1_5(HotspotStore);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,7 +42,6 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = HotspotStore;
   callback2(HotspotStore, Store);
   let obj = {
     key: "initialize",
@@ -52,30 +53,30 @@ let tmp2 = (Store) => {
   obj = {
     key: "getFeedbackConfig",
     value(arg0) {
-      return closure_7[arg0];
+      return outer1_7[arg0];
     }
   };
   items[1] = obj;
   return callback(HotspotStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "FeedbackOverrideStore";
 tmp2.persistKey = "feedbackOverrides";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   FEEDBACK_OVERRIDE_SET: function handleSetFeedbackOverride(feedbackType) {
     let chance;
     let cooldown;
     feedbackType = feedbackType.feedbackType;
     const obj = {};
     ({ cooldown, chance } = feedbackType);
-    const merged = Object.assign(arg1(dependencyMap[5]).FeedbackConfig[feedbackType]);
+    const merged = Object.assign(require(16037) /* _isNativeReflectConstruct */.FeedbackConfig[feedbackType]);
     obj["cooldown"] = cooldown;
     obj["chance"] = chance;
     closure_7[feedbackType] = obj;
   },
   FEEDBACK_OVERRIDE_CLEAR: function handleClearFeedbackOverride(arg0) {
-    delete r0[r1];
+    delete tmp[tmp2];
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/feedback/FeedbackOverrideStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/feedback/FeedbackOverrideStore.tsx");
 
 export default tmp2;

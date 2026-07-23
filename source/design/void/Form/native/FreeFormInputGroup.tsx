@@ -1,14 +1,18 @@
-// Module ID: 8993
-// Function ID: 70832
-// Dependencies: []
+// Module ID: 9000
+// Function ID: 70873
+// Dependencies: [31, 27, 33, 4130, 477, 5164, 7512, 1273, 9001, 9002, 9004, 4126, 2]
 
-// Module 8993
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ label: { marginBottom: 8 }, input: { mode: "<string:2126337>", icon: "<string:2097152>" }, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
-const obj2 = arg1(dependencyMap[3]);
+// Module 9000
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ label: { marginBottom: 8 }, input: { flexGrow: 1, marginBottom: 8 }, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
 const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
   let clearButtonVisibility;
   let enableAndroidSanitizedInputWorkaround;
@@ -26,14 +30,14 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
     enableAndroidSanitizedInputWorkaround = false;
   }
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
-  let obj = {};
+  let obj = { style: 0, label: 0, error: 0, value: 0, hint: 0, textStyle: 0, enableAndroidSanitizedInputWorkaround: 0, secureTextEntry: 0, keyboardType: 0, accessibilityLabel: 0 };
   ({ secureTextEntry, keyboardType } = accessibilityLabel);
   Object.setPrototypeOf(null);
   const merged = Object.assign(accessibilityLabel, obj);
   const tmp3 = callback2();
   let isAndroidResult = enableAndroidSanitizedInputWorkaround;
   if (enableAndroidSanitizedInputWorkaround) {
-    let obj1 = arg1(dependencyMap[4]);
+    let obj1 = require(477) /* set */;
     isAndroidResult = obj1.isAndroid();
   }
   if (!isAndroidResult) {
@@ -42,21 +46,21 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
   if (!enableAndroidSanitizedInputWorkaround) {
     let str = keyboardType;
   } else {
-    let obj2 = arg1(dependencyMap[4]);
+    let obj2 = require(477) /* set */;
     str = "visible-password";
   }
-  const context = importAllResult.useContext(arg1(dependencyMap[5]).RedesignCompatContext);
+  const context = importAllResult.useContext(require(5164) /* context */.RedesignCompatContext);
   const id = importAllResult.useId();
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
-    obj = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, isClearable: clearButtonVisibility !== arg1(dependencyMap[7]).ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
-    return callback(arg1(dependencyMap[6]).TextInput, obj);
+    obj = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, isClearable: clearButtonVisibility !== require(1273) /* Button */.ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
+    return callback(require(7512) /* TextInput */.TextInput, obj);
   } else {
     obj = { style };
     let tmp13 = null;
     if (null != label) {
       obj1 = { style: tmp3.label, nativeID: id, children: label };
-      tmp13 = callback(importDefault(dependencyMap[8]), obj1);
+      tmp13 = callback(importDefault(9001), obj1);
     }
     const items = [tmp13, , , ];
     obj2 = {};
@@ -65,7 +69,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
       if (null == label) {
         const tmp26 = label;
       } else {
-        const obj7 = arg1(dependencyMap[4]);
+        const obj7 = require(477) /* set */;
       }
       accessibilityLabel = tmp26;
     }
@@ -78,23 +82,23 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel) => {
     obj2["keyboardType"] = str;
     const items1 = [tmp3.input, accessibilityLabel.textStyle];
     obj2["style"] = items1;
-    items[1] = callback(importDefault(dependencyMap[9]), obj2);
+    items[1] = callback(importDefault(9002), obj2);
     let tmp28 = null;
     if (null != error) {
       const obj3 = { style: tmp3.error, children: error };
-      tmp28 = callback(importDefault(dependencyMap[10]), obj3);
+      tmp28 = callback(importDefault(9004), obj3);
     }
     items[2] = tmp28;
     let tmp32 = null;
     if (null != hint) {
-      const obj4 = { style: tmp3.hint, children: hint };
-      tmp32 = callback(arg1(dependencyMap[11]).Text, obj4);
+      const obj4 = { style: tmp3.hint, variant: "text-xs/medium", color: "text-muted", children: hint };
+      tmp32 = callback(require(4126) /* Text */.Text, obj4);
     }
     items[3] = tmp32;
     obj.children = items;
     return closure_6(View, obj);
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("design/void/Form/native/FreeFormInputGroup.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FreeFormInputGroup.tsx");
 
 export default forwardRefResult;

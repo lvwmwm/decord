@@ -1,42 +1,42 @@
-// Module ID: 16346
-// Function ID: 126111
+// Module ID: 16463
+// Function ID: 128285
 // Name: FormRoleColorPicker
-// Dependencies: []
+// Dependencies: [31, 653, 33, 4130, 4098, 14820, 1934, 12903, 13569, 665, 2]
 // Exports: default
 
-// Module 16346 (FormRoleColorPicker)
-let closure_3 = importAll(dependencyMap[0]);
-const DEFAULT_ROLE_COLOR = arg1(dependencyMap[1]).DEFAULT_ROLE_COLOR;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = arg1(dependencyMap[3]).createStyles({ rowColorBlock: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormRoleColorPicker.tsx");
+// Module 16463 (FormRoleColorPicker)
+import result from "result";
+import { DEFAULT_ROLE_COLOR } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ rowColorBlock: { marginHorizontal: 0, marginVertical: 0, marginRight: 8, minWidth: 24, height: 24, borderRadius: 3 } });
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormRoleColorPicker.tsx");
 
 export default function FormRoleColorPicker(color) {
   color = color.color;
   if (color === undefined) {
     color = DEFAULT_ROLE_COLOR;
   }
-  const arg1 = color;
   let flag = color.disabled;
   if (flag === undefined) {
     flag = false;
   }
   const onChange = color.onChange;
-  const importDefault = onChange;
   const items = [color, onChange];
   const callback = React.useCallback(() => {
-    let obj = onChange(paths[4]);
+    let obj = onChange(outer1_2[4]);
     obj = { color, onSelect: onChange };
-    obj.openLazy(color(paths[6])(paths[5], paths.paths), "RoleColorPicker", obj);
+    obj.openLazy(color(outer1_2[6])(outer1_2[5], outer1_2.paths), "RoleColorPicker", obj);
   }, items);
   let obj = {};
   const tmp = callback();
   obj = { color, style: tmp.rowColorBlock, onSelect: callback };
-  obj.leading = jsx(importDefault(dependencyMap[8]), obj);
-  const tmp3 = importDefault(dependencyMap[7]);
-  obj.label = arg1(dependencyMap[9]).int2hex(color);
+  obj.leading = jsx(onChange(13569), { color, style: tmp.rowColorBlock, onSelect: callback });
+  const tmp3 = onChange(12903);
+  obj.label = color(665).int2hex(color);
   obj.disabled = flag;
   obj.onPress = callback;
-  return <tmp3 {...obj} />;
+  return <tmp3 color={color} style={tmp.rowColorBlock} onSelect={callback} />;
 };

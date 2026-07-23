@@ -1,33 +1,35 @@
-// Module ID: 6640
-// Function ID: 51000
+// Module ID: 6645
+// Function ID: 51029
 // Name: goToBillingStandalonePageWithHandoff
-// Dependencies: []
+// Dependencies: [653, 1443, 491, 507, 2]
 // Exports: goToStandalonePremiumCheckoutWeb
 
-// Module 6640 (goToBillingStandalonePageWithHandoff)
+// Module 6645 (goToBillingStandalonePageWithHandoff)
+import ME from "ME";
+
+let closure_3;
+let closure_4;
 function goToBillingStandalonePageWithHandoff(Routes, arg1, arg2) {
-  const require = Routes;
+  const _require = Routes;
   const importDefault = arg1;
   const dependencyMap = arg2;
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(1443);
   const uRL = new URL(obj.makeUrl(closure_4.BILLING_LOGIN_HANDOFF, false));
-  const v4Result = require(dependencyMap[2]).v4();
+  const v4Result = _require(491).v4();
   const searchParams = uRL.searchParams;
   searchParams.append("handoff_key", v4Result);
   const searchParams2 = uRL.searchParams;
   searchParams2.append("redirect_to", Routes);
-  const HTTP = require(dependencyMap[3]).HTTP;
+  const HTTP = _require(507).HTTP;
   obj = { url: uRL.HANDOFF, body: { key: v4Result }, oldFormErrors: true, rejectWithError: false };
-  const obj2 = require(dependencyMap[2]);
-  return HTTP.post(obj).then((arg0) => arg1(arg0, uRL), (arg0) => arg2(arg0, arg0));
+  const obj2 = _require(491);
+  return HTTP.post(obj).then((arg0) => callback(arg0, uRL), (arg0) => callback2(arg0, closure_0));
 }
 function goToStandalonePremiumCheckout(planId, arg1, arg2) {
   return goToBillingStandalonePageWithHandoff(closure_4.BILLING_STANDALONE_CHECKOUT_PAGE(planId.planId, planId.isGift, planId.loadId, planId.paymentMethodType, planId.deepLinkType, planId.usePresetOffer, planId.flowType), arg1, arg2);
 }
-const _module = require(dependencyMap[0]);
-({ Endpoints: closure_3, Routes: closure_4 } = _module);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/payments/utils/BillingStandaloneUtils.tsx");
+({ Endpoints: closure_3, Routes: closure_4 } = ME);
+const result = require("v1").fileFinishedImporting("modules/payments/utils/BillingStandaloneUtils.tsx");
 
 export { goToBillingStandalonePageWithHandoff };
 export { goToStandalonePremiumCheckout };

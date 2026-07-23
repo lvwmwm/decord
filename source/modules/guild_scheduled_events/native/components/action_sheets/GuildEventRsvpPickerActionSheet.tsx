@@ -1,81 +1,85 @@
-// Module ID: 8474
-// Function ID: 67602
+// Module ID: 8480
+// Function ID: 67639
 // Name: GuildEventRsvpPickerActionSheet
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1354, 33, 4130, 689, 8350, 1212, 5187, 5186, 5121, 7519, 7518, 4543, 8365, 4098, 2]
 // Exports: default
 
-// Module 8474 (GuildEventRsvpPickerActionSheet)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = arg1(dependencyMap[3]).GuildScheduledEventUserResponses;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.buttonWrapper = { marginTop: importDefault(dependencyMap[6]).space.PX_24 };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { marginTop: importDefault(dependencyMap[6]).space.PX_24 };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_scheduled_events/native/components/action_sheets/GuildEventRsvpPickerActionSheet.tsx");
+// Module 8480 (GuildEventRsvpPickerActionSheet)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { GuildScheduledEventUserResponses as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.buttonWrapper = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_scheduled_events/native/components/action_sheets/GuildEventRsvpPickerActionSheet.tsx");
 
 export default function GuildEventRsvpPickerActionSheet(event) {
+  let _slicedToArray;
+  let dependencyMap;
+  let importDefault;
   event = event.event;
-  const arg1 = event;
-  ({ recurrenceId: closure_1, guildId: closure_2, onRsvp: closure_3 } = event);
-  let View;
-  const tmp = callback4();
-  const tmp2 = callback(React.useState(arg1(dependencyMap[7]).ResponseOptions.SERIES), 2);
-  const first = tmp2[0];
-  const React = first;
-  let obj = arg1(dependencyMap[7]);
+  ({ recurrenceId: importDefault, guildId: dependencyMap, onRsvp: _slicedToArray } = event);
+  let INTERESTED;
+  let tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = callback(first.useState(event(8350).ResponseOptions.SERIES), 2);
+  first = tmp2[0];
+  let obj = event(8350);
   const existingRsvp = obj.getExistingRsvp(event.id, null);
   let response;
   if (null != existingRsvp) {
     response = existingRsvp.response;
   }
   if (response === constants.INTERESTED) {
-    let INTERESTED = constants.UNINTERESTED;
+    INTERESTED = constants.UNINTERESTED;
   } else {
     INTERESTED = constants.INTERESTED;
   }
-  View = INTERESTED;
   if (INTERESTED === constants.INTERESTED) {
-    const intl2 = arg1(dependencyMap[8]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[8]).t.WtORed);
+    const intl2 = event(1212).intl;
+    let stringResult = intl2.string(event(1212).t.WtORed);
   } else {
-    const intl = arg1(dependencyMap[8]).intl;
-    stringResult = intl.string(arg1(dependencyMap[8]).t.8MPCVr);
+    const intl = event(1212).intl;
+    stringResult = intl.string(event(1212).t["8MPCVr"]);
   }
   obj = {};
   obj = { title: stringResult };
-  obj.header = callback2(arg1(dependencyMap[10]).BottomSheetTitleHeader, obj);
+  obj.header = callback2(event(5186).BottomSheetTitleHeader, obj);
   const obj1 = { bottom: true, style: tmp.container };
   const obj2 = { defaultValue: first, onChange: tmp2[1], hasIcons: false };
-  const responseOptions = arg1(dependencyMap[7]).getResponseOptions();
-  obj2.children = responseOptions.map((value) => callback3(event(closure_2[13]).TableRadioRow, { value: value.value, label: value.name }, value.value));
-  const items = [callback2(arg1(dependencyMap[12]).TableRadioGroup, obj2), ];
+  const responseOptions = event(8350).getResponseOptions();
+  obj2.children = responseOptions.map((value) => outer1_7(event(outer1_2[13]).TableRadioRow, { value: value.value, label: value.name }, value.value));
+  const items = [callback2(event(7519).TableRadioGroup, obj2), ];
   const obj3 = { style: tmp.buttonWrapper };
   const obj4 = {
     onPress() {
       let tmp = null;
-      if (first !== event(closure_2[7]).ResponseOptions.SERIES) {
-        tmp = callback;
+      if (first !== event(outer1_2[7]).ResponseOptions.SERIES) {
+        tmp = closure_1;
       }
-      event(closure_2[15]).updateRsvp(event.id, tmp, closure_2, INTERESTED);
-      if (null != callback2) {
-        callback2();
+      event(outer1_2[15]).updateRsvp(event.id, tmp, closure_2, INTERESTED);
+      if (null != callback) {
+        callback();
       }
-      const obj = event(closure_2[15]);
-      callback(closure_2[16]).hideActionSheet();
+      const obj = event(outer1_2[15]);
+      outer1_1(outer1_2[16]).hideActionSheet();
     }
   };
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj4.text = intl3.string(arg1(dependencyMap[8]).t.TyCVIq);
-  obj3.children = callback2(arg1(dependencyMap[14]).Button, obj4);
-  items[1] = callback2(View, obj3);
+  const intl3 = event(1212).intl;
+  obj4.text = intl3.string(event(1212).t.TyCVIq);
+  obj3.children = callback2(event(4543).Button, obj4);
+  items[1] = callback2(INTERESTED, obj3);
   obj1.children = items;
-  obj.children = callback3(arg1(dependencyMap[11]).SafeAreaPaddingView, obj1);
-  return callback2(arg1(dependencyMap[9]).BottomSheet, obj);
+  obj.children = callback3(event(5121).SafeAreaPaddingView, obj1);
+  return callback2(event(5187).BottomSheet, obj);
 };

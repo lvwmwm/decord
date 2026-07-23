@@ -1,19 +1,19 @@
-// Module ID: 15660
-// Function ID: 119632
+// Module ID: 15777
+// Function ID: 121805
 // Name: useControlsLock
-// Dependencies: []
+// Dependencies: [31, 10014, 2]
 // Exports: default
 
-// Module 15660 (useControlsLock)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/voice_panel/native/controls/useControlsLock.tsx");
+// Module 15777 (useControlsLock)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/useControlsLock.tsx");
 
 export default function useControlsLock(arg0) {
   const importDefault = arg0;
-  const dependencyMap = React.useContext(importDefault(dependencyMap[1])).generateStateLocker;
-  const first = React.useState(() => generateStateLocker(arg0))[0];
-  const React = first;
+  generateStateLocker = first.useContext(importDefault(generateStateLocker[1])).generateStateLocker;
+  first = first.useState(() => generateStateLocker(closure_0))[0];
   const items = [first];
-  const layoutEffect = React.useLayoutEffect(() => () => closure_2.unlock(), items);
+  const layoutEffect = first.useLayoutEffect(() => () => outer1_2.unlock(), items);
   return first;
 };

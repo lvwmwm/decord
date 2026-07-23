@@ -1,29 +1,31 @@
-// Module ID: 13830
-// Function ID: 104573
+// Module ID: 13944
+// Function ID: 106729
 // Name: BountiesScrollPromptFooter
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 4126, 1212, 2]
 // Exports: default
 
-// Module 13830 (BountiesScrollPromptFooter)
-const View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_3, jsxs: closure_4 } = _module);
-const _module1 = require(dependencyMap[2]);
-let closure_5 = _module1.createStyles(() => ({ root: {}, titleText: { textAlign: "center" }, swipeText: {} }));
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollPromptNuxFooter.tsx");
+// Module 13944 (BountiesScrollPromptFooter)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(() => ({ root: { alignItems: "center", gap: 2 }, titleText: { textAlign: "center" }, swipeText: { textAlign: "center", textTransform: "uppercase" } }));
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollPromptNuxFooter.tsx");
 
 export default function BountiesScrollPromptFooter() {
   const tmp = callback3();
   let obj = { style: tmp.root };
-  obj = { cachedAt: null, edpbxy: "Array", style: tmp.titleText };
-  const intl = require(dependencyMap[4]).intl;
-  obj.children = intl.string(require(dependencyMap[4]).t.H57f41);
-  const items = [callback(require(dependencyMap[3]).Text, obj), ];
-  obj = { cachedAt: false, edpbxy: false, style: tmp.swipeText };
-  const intl2 = require(dependencyMap[4]).intl;
-  obj.children = intl2.string(require(dependencyMap[4]).t.tG0zsk);
-  items[1] = callback(require(dependencyMap[3]).Text, obj);
+  obj = { variant: "text-md/semibold", color: "text-default", style: tmp.titleText };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.H57f41);
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  obj = { variant: "text-xxs/semibold", color: "text-muted", style: tmp.swipeText };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.tG0zsk);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 };

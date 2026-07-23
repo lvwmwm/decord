@@ -1,30 +1,31 @@
 // Module ID: 411
 // Function ID: 5824
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [31, 89, 38, 110, 42, 117]
 
 // Module 411 (__INTERNAL_VIEW_CONFIG)
-importAll(dependencyMap[0]);
-let obj = { uiViewClassName: "AndroidSwipeRefreshLayout", directEventTypes: { topRefresh: { registrationName: "onRefresh" } } };
-obj = {};
-obj = {};
-const tmp3 = arg1(dependencyMap[1]);
-let _default = tmp3;
-if ("default" in tmp3) {
-  _default = tmp3.default;
-}
-obj.process = _default;
-obj.colors = obj;
-obj.progressBackgroundColor = { process: arg1(dependencyMap[2]).default };
-const obj1 = { process: arg1(dependencyMap[2]).default };
-obj.validAttributes = Object.assign(obj, arg1(dependencyMap[3]).ConditionallyIgnoredEventHandlers({ onRefresh: true }));
-const obj5 = arg1(dependencyMap[3]);
+import "result";
+import processColorElement from "processColorElement";
+import weakSet from "weakSet";
+import get from "get";
 
-export default arg1(dependencyMap[4]).get("AndroidSwipeRefreshLayout", () => obj);
+const require = arg1;
+let obj = { uiViewClassName: "AndroidSwipeRefreshLayout", directEventTypes: { topRefresh: { registrationName: "onRefresh" } } };
+obj = { enabled: true, colors: null, progressBackgroundColor: null, size: true, progressViewOffset: true, refreshing: true };
+obj = {};
+if ("default" in processColorElement) {
+  processColorElement = processColorElement.default;
+}
+obj.process = processColorElement;
+obj.colors = obj;
+obj.progressBackgroundColor = { process: require("processColor").default };
+obj.validAttributes = Object.assign(obj, weakSet.ConditionallyIgnoredEventHandlers({ onRefresh: true }));
+
+export default get.get("AndroidSwipeRefreshLayout", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;
 export const Commands = {
   setNativeRefreshing(_nativeRef, refreshing) {
     const items = [refreshing];
-    refreshing(dependencyMap[5]).dispatchCommand(_nativeRef, "setNativeRefreshing", items);
+    require(117) /* renderElement */.dispatchCommand(_nativeRef, "setNativeRefreshing", items);
   }
 };

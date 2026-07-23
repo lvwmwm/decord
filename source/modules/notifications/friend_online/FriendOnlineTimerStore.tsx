@@ -1,38 +1,39 @@
-// Module ID: 16386
-// Function ID: 126521
+// Module ID: 16503
+// Function ID: 128695
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 664, 566, 686, 2]
 
-// Module 16386 (_isNativeReflectConstruct)
+// Module 16503 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const HOUR = importDefault(dependencyMap[5]).Millis.HOUR;
+const HOUR = require("set").Millis.HOUR;
 let obj = { lastReportedAtMs: null };
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class FriendOnlineTimerStore {
     constructor() {
       self = this;
       tmp = FriendOnlineTimerStore(this, FriendOnlineTimerStore);
-      obj = closure_3(FriendOnlineTimerStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(FriendOnlineTimerStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,28 +42,28 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = FriendOnlineTimerStore;
   callback2(FriendOnlineTimerStore, PersistedStore);
   let obj = {
     key: "initialize",
     value() {
       let tmp = arg0;
       if (arg0 === undefined) {
-        tmp = closure_6;
+        tmp = outer1_6;
       }
       if (null == tmp) {
-        tmp = closure_6;
+        tmp = outer1_6;
       }
+      const outer1_7 = tmp;
     }
   };
   const items = [obj, , ];
   obj = {
     key: "isCooldownElapsed",
     value() {
-      let tmp = null == closure_7.lastReportedAtMs;
+      let tmp = null == outer1_7.lastReportedAtMs;
       if (!tmp) {
         const _Date = Date;
-        tmp = Date.now() - closure_7.lastReportedAtMs >= closure_5;
+        tmp = Date.now() - outer1_7.lastReportedAtMs >= outer1_5;
       }
       return tmp;
     }
@@ -71,12 +72,12 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[2] = obj;
   return callback(FriendOnlineTimerStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "FriendOnlineTimerStore";
 tmp2.persistKey = "FriendOnlineTimerStore";
 obj = {
@@ -85,7 +86,7 @@ obj = {
     return true;
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[7]), obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/notifications/friend_online/FriendOnlineTimerStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/notifications/friend_online/FriendOnlineTimerStore.tsx");
 
 export default tmp2;

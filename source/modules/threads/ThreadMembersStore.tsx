@@ -1,9 +1,17 @@
-// Module ID: 7007
-// Function ID: 56198
+// Module ID: 7012
+// Function ID: 56232
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1352, 1348, 22, 566, 686, 2]
 
-// Module 7007 (_isNativeReflectConstruct)
+// Module 7012 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import apply from "apply";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { ALL_CHANNEL_TYPES } from "_callSuper";
+import closure_8 from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +21,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +74,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -101,7 +109,7 @@ function updateFromGuild(threads) {
 function updateFromThread(type) {
   let memberCount;
   if (ALL_CHANNEL_TYPES.has(type.type)) {
-    if (!(type.id in closure_9)) {
+    if (!(type.id in dependencyMap)) {
       const obj = {};
       ({ guild_id: obj.guildId, parent_id: obj.parentId, memberCount } = type);
       let num = 0;
@@ -114,8 +122,8 @@ function updateFromThread(type) {
         memberIdsPreview = [];
       }
       obj.memberIdsPreview = memberIdsPreview;
-      closure_9[type.id] = obj;
-      const tmp2 = closure_9;
+      dependencyMap[type.id] = obj;
+      const tmp2 = dependencyMap;
     }
     if (null != type.memberCount) {
       tmp5.memberCount = type.memberCount;
@@ -136,26 +144,26 @@ function handleLoadArchivedThreadsSuccess(threads) {
 }
 function handleSearchMessagesSuccess(data) {
   data = data.data;
-  let closure_0 = false;
-  const item = data.forEach((arg0) => {
+  let c0 = false;
+  let item = data.forEach((arg0) => {
     let messages;
     let threads;
     ({ threads, messages } = arg0);
-    const item = messages.forEach((arr) => {
+    let item = messages.forEach((arr) => {
       const item = arr.forEach((thread) => {
-        const tmp = callback(thread.thread) || tmp;
+        outer2_0 = outer3_15(thread.thread) || outer2_0;
       });
     });
     const item1 = threads.forEach((arg0) => {
-      const tmp = callback(arg0) || tmp;
+      outer1_0 = outer2_15(arg0) || outer1_0;
     });
   });
-  return closure_0;
+  return c0;
 }
 function updateFromServerThread(id) {
   if (null != id) {
     if (!(id.id in closure_9)) {
-      const channel = channel.getChannel(id.id);
+      channel = channel.getChannel(id.id);
       if (null != channel) {
         updateFromThread(channel);
         return true;
@@ -164,27 +172,20 @@ function updateFromServerThread(id) {
   }
   return false;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const ALL_CHANNEL_TYPES = arg1(dependencyMap[5]).ALL_CHANNEL_TYPES;
-let closure_8 = importDefault(dependencyMap[6]);
 let closure_9 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class ThreadMembersStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ThreadMembersStore);
-      obj = closure_5(ThreadMembersStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, ThreadMembersStore);
+      obj = outer1_5(ThreadMembersStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -193,12 +194,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = ThreadMembersStore;
   callback2(ThreadMembersStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8);
+      this.waitFor(outer1_8);
     }
   };
   const items = [obj, , , ];
@@ -206,7 +206,7 @@ let tmp2 = (Store) => {
     key: "getMemberCount",
     value(arg0) {
       let memberCount;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         memberCount = tmp.memberCount;
       }
       let tmp3 = null;
@@ -221,7 +221,7 @@ let tmp2 = (Store) => {
     key: "getMemberIdsPreview",
     value(arg0) {
       let memberIdsPreview;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         memberIdsPreview = tmp.memberIdsPreview;
       }
       let tmp3 = null;
@@ -235,34 +235,36 @@ let tmp2 = (Store) => {
   items[3] = {
     key: "getInitialOverlayState",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   return callback(ThreadMembersStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "ThreadMembersStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     let closure_9 = {};
     guilds = guilds.guilds;
     const item = guilds.forEach(updateFromGuild);
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(threadMembers) {
+    const obj = {};
     const merged = Object.assign(threadMembers.threadMembers);
-    let closure_9 = {};
   },
   GUILD_CREATE: function handleGuildCreate(guild) {
     updateFromGuild(guild.guild);
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
-    function deleteForGuild(id) {
-      closure_9 = id(closure_1[7]).omitBy(closure_9, (guildId) => guildId.guildId === guildId);
-    }(guild.guild.id);
+    (function deleteForGuild(id) {
+      let closure_0 = id;
+      outer1_9 = outer1_0(outer1_1[7]).omitBy(outer1_9, (guildId) => guildId.guildId === closure_0);
+    })(guild.guild.id);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
-    function deleteForChannel(id) {
-      closure_9 = id(closure_1[7]).omitBy(closure_9, (parentId) => parentId.parentId === parentId);
-    }(channel.channel.id);
+    (function deleteForChannel(id) {
+      let closure_0 = id;
+      outer1_9 = outer1_0(outer1_1[7]).omitBy(outer1_9, (parentId) => parentId.parentId === closure_0);
+    })(channel.channel.id);
   },
   THREAD_CREATE: handleThreadCreateOrUpdate,
   THREAD_UPDATE: handleThreadCreateOrUpdate,
@@ -271,7 +273,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     const item = threads.forEach(updateFromThread);
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(memberIdsPreview) {
-    if (null == closure_9[memberIdsPreview.id]) {
+    if (null == dependencyMap[memberIdsPreview.id]) {
       return false;
     } else {
       if (null != memberIdsPreview.memberIdsPreview) {
@@ -285,7 +287,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
   LOAD_THREADS_SUCCESS: handleLoadArchivedThreadsSuccess,
   LOAD_ARCHIVED_THREADS_SUCCESS: handleLoadArchivedThreadsSuccess,
   THREAD_DELETE: function handleThreadDelete(arg0) {
-    delete r1[r0];
+    delete tmp2[tmp];
   },
   LOAD_MESSAGES_SUCCESS: function handleLoadMessagesSuccess(messages) {
     let iter3;
@@ -296,8 +298,8 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     let flag2 = false;
     if (!iter.done) {
       do {
-        let tmp2 = closure_15;
-        let tmp3 = closure_15(iter2.value.thread) || flag;
+        let tmp2 = updateFromServerThread;
+        let tmp3 = updateFromServerThread(iter2.value.thread) || flag;
         iter3 = tmp();
         flag = tmp3;
         iter2 = iter3;
@@ -307,6 +309,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     return flag2;
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/threads/ThreadMembersStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/threads/ThreadMembersStore.tsx");
 
 export default tmp2;

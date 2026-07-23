@@ -1,31 +1,33 @@
-// Module ID: 14180
-// Function ID: 107359
+// Module ID: 14294
+// Function ID: 109515
 // Name: onImageDescriptionSettingValueChange
-// Dependencies: []
+// Dependencies: [1280, 7662, 3803, 14295, 10095, 1212, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 14180 (onImageDescriptionSettingValueChange)
+// Module 14294 (onImageDescriptionSettingValueChange)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
-  let obj = arg1(dependencyMap[3]);
-  obj = { videoUploadQuality: closure_2.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: closure_2.lowQualityImageMode, dataSavingMode: closure_2.dataSavingMode };
+  let obj = require(14295) /* trackSettingsUpdated */;
+  obj = { videoUploadQuality: _isNativeReflectConstruct.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: _isNativeReflectConstruct.lowQualityImageMode, dataSavingMode: _isNativeReflectConstruct.dataSavingMode };
   obj.setImageDescriptions(obj);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.w8j+yW);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["w8j+yW"]);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.CHAT,
+  parent: require("MobileSetting").MobileSetting.CHAT,
   useValue: function useImageDescriptionSettingValue() {
-    const ViewImageDescriptions = arg1(dependencyMap[2]).ViewImageDescriptions;
+    const ViewImageDescriptions = require(3803) /* explicitContentFromProto */.ViewImageDescriptions;
     return ViewImageDescriptions.useSetting();
   },
   onValueChange: onImageDescriptionSettingValueChange
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/ImageDescriptionsSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/ImageDescriptionsSetting.tsx");
 
-export default toggle;
+export default createToggle;
 export { onImageDescriptionSettingValueChange };

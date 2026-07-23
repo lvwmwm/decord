@@ -1,45 +1,49 @@
-// Module ID: 9055
-// Function ID: 71113
+// Module ID: 9062
+// Function ID: 71154
 // Name: AcceptRequestConfirmationModal
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4561, 1212, 4470, 4126, 2]
 // Exports: default
 
-// Module 9055 (AcceptRequestConfirmationModal)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Null": null, "Null": null, gap: importDefault(dependencyMap[4]).space.PX_8 };
-obj.bodyText = obj;
-obj.text = { textAlign: "center" };
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/people/strangers/native/AcceptRequestConfirmationModal.tsx");
+// Module 9062 (AcceptRequestConfirmationModal)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { textAlign: "center", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.bodyText = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.text = { textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/people/strangers/native/AcceptRequestConfirmationModal.tsx");
 
 export default function AcceptRequestConfirmationModal(onConfirm) {
-  const arg1 = onConfirm.onConfirm;
-  const tmp = callback3();
+  onConfirm = onConfirm.onConfirm;
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.confirmText = intl.string(arg1(dependencyMap[6]).t.MMlhsr);
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj.cancelText = intl2.string(arg1(dependencyMap[6]).t.ETE/oC);
+  const intl = onConfirm(1212).intl;
+  obj.confirmText = intl.string(onConfirm(1212).t.MMlhsr);
+  const intl2 = onConfirm(1212).intl;
+  obj.cancelText = intl2.string(onConfirm(1212).t["ETE/oC"]);
   obj.onConfirm = function onConfirm() {
     onConfirm();
-    callback(closure_2[7]).close();
+    outer1_1(outer1_2[7]).close();
   };
   obj.onCancel = onConfirm.onCancel;
   obj = { style: tmp.bodyText };
-  obj = { style: tmp.text };
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj.children = intl3.string(arg1(dependencyMap[6]).t.eJzSDT);
-  const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
-  const obj1 = { cachedAt: 3, edpbxy: null, style: tmp.text };
-  const intl4 = arg1(dependencyMap[6]).intl;
-  obj1.children = intl4.string(arg1(dependencyMap[6]).t.GB4jUw);
-  items[1] = callback(arg1(dependencyMap[8]).Text, obj1);
+  obj = { variant: "heading-lg/bold", color: "text-strong", style: tmp.text };
+  const intl3 = onConfirm(1212).intl;
+  obj.children = intl3.string(onConfirm(1212).t.eJzSDT);
+  const items = [callback(onConfirm(4126).Text, obj), ];
+  const obj1 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text };
+  const intl4 = onConfirm(1212).intl;
+  obj1.children = intl4.string(onConfirm(1212).t.GB4jUw);
+  items[1] = callback(onConfirm(4126).Text, obj1);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(importDefault(dependencyMap[5]), obj);
+  return callback(importDefault(4561), obj);
 };

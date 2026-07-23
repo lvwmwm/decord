@@ -1,13 +1,13 @@
-// Module ID: 6277
-// Function ID: 50348
+// Module ID: 6282
+// Function ID: 50377
 // Name: LightningIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6283, 2]
 // Exports: LightningIllocon
 
-// Module 6277 (LightningIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/LightningIllocon.native.tsx");
+// Module 6282 (LightningIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/LightningIllocon.native.tsx");
 
 export const LightningIllocon = function LightningIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const LightningIllocon = function LightningIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6283) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const LightningIllocon = function LightningIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

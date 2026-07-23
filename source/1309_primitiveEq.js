@@ -1,13 +1,15 @@
 // Module ID: 1309
-// Function ID: 15246
+// Function ID: 15247
 // Name: primitiveEq
-// Dependencies: []
+// Dependencies: [1297]
 
 // Module 1309 (primitiveEq)
+const require = arg1;
+const dependencyMap = arg6;
 function primitiveEq(arg0, arg1, arg2) {
   if (arg1 === arg2) {
     return true;
-  } else if (arg0 !== arg1(arg6[0]).ScalarType.BYTES) {
+  } else if (arg0 !== require(1297) /* RepeatType */.ScalarType.BYTES) {
     return false;
   } else if (arg1.length !== arg2.length) {
     return false;
@@ -104,9 +106,9 @@ arg5.reflectionEquals = function reflectionEquals(fields, arg1, arg2) {
                   let tmp31 = nextResult;
                   let tmp30 = repeatedPrimitiveEq;
                   if ("enum" == obj.V.kind) {
-                    let tmp33 = arg1;
-                    let tmp34 = arg6;
-                    let T = arg1(arg6[0]).ScalarType.INT32;
+                    let tmp33 = require;
+                    let tmp34 = dependencyMap;
+                    let T = require(1297) /* RepeatType */.ScalarType.INT32;
                   } else {
                     let tmp32 = nextResult;
                     T = obj.V.T;
@@ -145,13 +147,13 @@ arg5.reflectionEquals = function reflectionEquals(fields, arg1, arg2) {
                 }
               }
             }
-            // continue
+            continue;
           }
           let tmp49 = nextResult;
           if ("enum" == obj.kind) {
-            let tmp51 = arg1;
-            let tmp52 = arg6;
-            let T2 = arg1(arg6[0]).ScalarType.INT32;
+            let tmp51 = require;
+            let tmp52 = dependencyMap;
+            let T2 = require(1297) /* RepeatType */.ScalarType.INT32;
           } else {
             let tmp50 = nextResult;
             T2 = obj.T;

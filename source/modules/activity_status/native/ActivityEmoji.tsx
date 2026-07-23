@@ -1,22 +1,23 @@
-// Module ID: 9080
-// Function ID: 71182
+// Module ID: 9087
+// Function ID: 71223
 // Name: ActivityEmoji
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 3803, 1392, 8007, 5151, 2]
 // Exports: default
 
-// Module 9080 (ActivityEmoji)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_5 = arg1(dependencyMap[2]).createStyles({ emoji: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, text: {} });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/activity_status/native/ActivityEmoji.tsx");
+// Module 9087 (ActivityEmoji)
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ emoji: { flexShrink: 0, width: "100%", height: "100%" }, text: { textAlign: "center", fontFamily: "System" } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/activity_status/native/ActivityEmoji.tsx");
 
 export default function ActivityEmoji(emoji) {
   let size;
   let style;
   let withPlaceholder;
   emoji = emoji.emoji;
-  const arg1 = emoji;
   ({ size, style, withPlaceholder } = emoji);
   if (withPlaceholder === undefined) {
     withPlaceholder = false;
@@ -27,7 +28,7 @@ export default function ActivityEmoji(emoji) {
   }
   let importDefault;
   const tmp = callback();
-  const AnimateEmoji = arg1(dependencyMap[3]).AnimateEmoji;
+  const AnimateEmoji = emoji(3803).AnimateEmoji;
   let animated;
   const setting = AnimateEmoji.useSetting();
   if (null != emoji) {
@@ -52,8 +53,8 @@ export default function ActivityEmoji(emoji) {
       id = emoji.id;
     }
     if (null != id) {
-      let obj = BooleanResult(closure_2[4]);
-      obj = { id: emoji.id, size: 48, animated: BooleanResult };
+      let obj = _undefined(outer1_2[4]);
+      obj = { id: emoji.id, size: 48, animated: _undefined };
       return obj.getEmojiURL(obj);
     }
   }, items);
@@ -66,7 +67,7 @@ export default function ActivityEmoji(emoji) {
     let obj = { style };
     style = "sm";
     obj.size = "sm";
-    jsx(arg1(dependencyMap[5]).ReactionIcon, obj);
+    jsx(emoji(8007).ReactionIcon, { style });
   } else {
     obj = { src: memo, name: emoji.name };
     const items1 = [style, ];
@@ -80,6 +81,6 @@ export default function ActivityEmoji(emoji) {
     obj.textEmojiStyle = items2;
     obj.fastImageStyle = tmp.emoji;
     obj.adjustsFontSizeToFit = true;
-    jsx(importDefault(dependencyMap[6]), obj);
+    jsx(importDefault(5151), { width: size, height: size });
   }
 };

@@ -1,29 +1,33 @@
-// Module ID: 12550
-// Function ID: 96437
+// Module ID: 12664
+// Function ID: 98593
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: []
+// Dependencies: [6651, 12659, 12662, 668, 4098, 12665, 1934, 480, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 12550 (showVoiceChannelBlockedUserWarning)
-let closure_3 = importDefault(dependencyMap[0]);
-({ queueBlockWarning: closure_4, dequeueBlockWarning: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = arg1(dependencyMap[2]).VoiceChannelWarningSurfaces;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/shared_space_warnings/show_voice_channel_warning/showVoiceChannelBlockedUserWarning.native.tsx");
+// Module 12664 (showVoiceChannelBlockedUserWarning)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import useSharedSpacesWarningStore from "useSharedSpacesWarningStore";
+import { VoiceChannelWarningSurfaces as closure_6 } from "GdmWarningMedium";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ queueBlockWarning: closure_4, dequeueBlockWarning: closure_5 } = useSharedSpacesWarningStore);
+const result = require("GdmWarningMedium").fileFinishedImporting("modules/shared_space_warnings/show_voice_channel_warning/showVoiceChannelBlockedUserWarning.native.tsx");
 
 export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlockedUserWarning(channelId, blockedUserId) {
-  const state = state.getState();
-  if (state === blockedUserId(dependencyMap[3]).AppStates.ACTIVE) {
+  state = state.getState();
+  if (state === require(668) /* keys */.AppStates.ACTIVE) {
     callback2();
-    let obj = importDefault(dependencyMap[4]);
-    obj = { channelId, blockedUserId, impressionName: blockedUserId(dependencyMap[7]).ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING };
+    let obj = importDefault(4098);
+    obj = { channelId, blockedUserId, impressionName: require(480) /* isThrottled */.ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING };
     obj = { channel_id: channelId };
     const items = [blockedUserId];
     obj.blocked_user_ids = items;
     obj.warning_surface = constants.POST_JOIN_SHEET;
     obj.impressionProperties = obj;
-    obj.openLazy(blockedUserId(dependencyMap[6])(dependencyMap[5], dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
-    const tmp9 = blockedUserId(dependencyMap[6])(dependencyMap[5], dependencyMap.paths);
+    obj.openLazy(require(1934) /* maybeLoadBundle */(12665, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
+    const tmp9 = require(1934) /* maybeLoadBundle */(12665, dependencyMap.paths);
   } else {
     callback();
   }

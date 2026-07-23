@@ -1,41 +1,44 @@
-// Module ID: 15277
-// Function ID: 115307
-// Dependencies: []
+// Module ID: 15394
+// Function ID: 117481
+// Dependencies: [31, 9103, 33, 15380, 15385, 15393, 15337, 15386, 15387, 11398, 15391, 15343, 2]
 
-// Module 15277
-const importAllResult = importAll(dependencyMap[0]);
-({ SearchListItemTypes: closure_4, CARD_ESTIMATED_ITEM_SIZE: closure_5, FILES_OR_LINKS_NUM_COLUMNS: closure_6, FILES_OR_LINKS_GAP_WIDTH: closure_7 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const tmp2 = arg1(dependencyMap[1]);
+// Module 15394
+import importAllResult from "result";
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import { jsx } from "jsxProd";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ SearchListItemTypes: closure_4, CARD_ESTIMATED_ITEM_SIZE: closure_5, FILES_OR_LINKS_NUM_COLUMNS: closure_6, FILES_OR_LINKS_GAP_WIDTH: closure_7 } = SearchAutocompleteSelectAnalyticsActions);
 const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
   let isFirstPageLoading;
   let isFocused;
   let isNextPageLoading;
   let width;
   searchContext = searchContext.searchContext;
-  const arg1 = searchContext;
   const tab = searchContext.tab;
   ({ isFocused, width } = searchContext);
-  let obj = arg1(dependencyMap[3]);
+  let obj = searchContext(fileOrLinkImageDimensions[3]);
   const contentContainerStyles = obj.useContentContainerStyles();
-  const searchMessages = arg1(dependencyMap[4]).useSearchMessages(searchContext, tab);
-  const importDefault = searchMessages;
-  const obj2 = arg1(dependencyMap[4]);
-  const fileOrLinkImageDimensions = arg1(dependencyMap[5]).useFileOrLinkImageDimensions(width);
-  const dependencyMap = fileOrLinkImageDimensions;
-  const obj3 = arg1(dependencyMap[5]);
-  const onPressMessageItem = arg1(dependencyMap[6]).useOnPressMessageItem({ searchContext });
-  const obj4 = arg1(dependencyMap[6]);
-  const onPressSearchLink = arg1(dependencyMap[6]).useOnPressSearchLink(searchContext);
-  const obj5 = arg1(dependencyMap[6]);
-  const onPressGuildVoiceChannel = arg1(dependencyMap[6]).useOnPressGuildVoiceChannel({ searchContext });
-  const obj6 = arg1(dependencyMap[6]);
+  let searchMessages = searchContext(fileOrLinkImageDimensions[4]).useSearchMessages(searchContext, tab);
+  const obj2 = searchContext(fileOrLinkImageDimensions[4]);
+  fileOrLinkImageDimensions = searchContext(fileOrLinkImageDimensions[5]).useFileOrLinkImageDimensions(width);
+  let obj3 = searchContext(fileOrLinkImageDimensions[5]);
+  const onPressMessageItem = searchContext(fileOrLinkImageDimensions[6]).useOnPressMessageItem({ searchContext });
+  const obj4 = searchContext(fileOrLinkImageDimensions[6]);
+  const onPressSearchLink = searchContext(fileOrLinkImageDimensions[6]).useOnPressSearchLink(searchContext);
+  let obj5 = searchContext(fileOrLinkImageDimensions[6]);
+  const onPressGuildVoiceChannel = searchContext(fileOrLinkImageDimensions[6]).useOnPressGuildVoiceChannel({ searchContext });
+  const obj6 = searchContext(fileOrLinkImageDimensions[6]);
   obj = { searchContext, tab, placeholderHeight: onPressGuildVoiceChannel, numColumns: placeholderCount };
-  const searchMessagesLoadingState = arg1(dependencyMap[7]).useSearchMessagesLoadingState(obj);
-  const placeholderCount = searchMessagesLoadingState.placeholderCount;
-  const items = [onPressMessageItem, searchContext];
+  const searchMessagesLoadingState = searchContext(fileOrLinkImageDimensions[7]).useSearchMessagesLoadingState(obj);
+  placeholderCount = searchMessagesLoadingState.placeholderCount;
+  let items = [onPressMessageItem, searchContext];
   ({ isFirstPageLoading, isNextPageLoading } = searchMessagesLoadingState);
-  const callback = importAllResult.useCallback((arg0, index) => {
+  const callback = onPressMessageItem.useCallback((arg0, index) => {
     let channelId;
     let messageId;
     ({ channelId, messageId } = arg0);
@@ -45,7 +48,7 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
     onPressMessageItem(channelId, messageId);
   }, items);
   const items1 = [onPressSearchLink, searchContext];
-  const callback1 = importAllResult.useCallback((arg0, index) => {
+  const callback1 = onPressMessageItem.useCallback((arg0, index) => {
     let channelId;
     let messageId;
     let trusted;
@@ -56,9 +59,8 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
     const result = obj.trackMessageItemPress(obj);
     onPressSearchLink(url, trusted);
   }, items1);
-  const jsx = callback1;
   const items2 = [onPressGuildVoiceChannel, searchContext];
-  const callback2 = importAllResult.useCallback((arg0, index) => {
+  const callback2 = onPressMessageItem.useCallback((arg0, index) => {
     let channelId;
     let mentionedChannelId;
     let messageId;
@@ -69,33 +71,33 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
     onPressGuildVoiceChannel(mentionedChannelId);
   }, items2);
   const items3 = [callback2, callback1, callback, fileOrLinkImageDimensions, searchMessages, placeholderCount, searchContext];
-  const memo = importAllResult.useMemo(() => {
+  const memo = onPressMessageItem.useMemo(() => {
     const items = [];
-    const searchContext = items;
     const searchMessages = 0;
     if (null != searchMessages) {
-      const item = searchMessages.forEach((getContentMessage) => {
-        const links = items(closure_2[9]).getLinks(items, getContentMessage);
+      let item = searchMessages.forEach((getContentMessage) => {
+        const links = searchContext(fileOrLinkImageDimensions[9]).getLinks(items, getContentMessage);
         const item = links.forEach((data) => {
           const sum = closure_1 + arg1;
-          let obj = { type: constants.LINK };
+          let closure_0 = sum;
+          let obj = { type: onPressSearchLink.LINK };
           obj = {
             data,
             onPress(arg0) {
-              return callback(arg0, sum);
+              return outer3_7(arg0, closure_0);
             },
             onPressSearchLink(url, trusted) {
-              return callback2(url, sum);
+              return outer3_8(url, closure_0);
             },
             onPressGuildVoiceChannelMention(arg0) {
-              return callback3(arg0, sum);
+              return outer3_9(arg0, closure_0);
             },
-            imageStyle: closure_2
+            imageStyle: outer2_2
           };
-          obj = { itemIndex: sum, spacing: closure_7, numColumns: closure_6 };
-          obj.containerStyle = sum(closure_2[9]).getGridItemSpacingStyles(obj);
+          obj = { itemIndex: sum, spacing: callback, numColumns: placeholderCount };
+          obj.containerStyle = searchContext(fileOrLinkImageDimensions[9]).getGridItemSpacingStyles(obj);
           obj.props = obj;
-          sum.push(obj);
+          outer1_0.push(obj);
         });
         closure_1 = closure_1 + links.length;
       });
@@ -129,13 +131,13 @@ const memoResult = importAllResult.memo(function LinksScreen(searchContext) {
     return items;
   }, items3);
   obj = { data: memo, searchContext, tab, isFocused, contentContainerStyle: contentContainerStyles.filesOrLinksContentContainer };
-  const obj7 = arg1(dependencyMap[7]);
-  obj.ItemSeparatorComponent = arg1(dependencyMap[11]).CardVerticalSeparator;
+  const obj7 = searchContext(fileOrLinkImageDimensions[7]);
+  obj.ItemSeparatorComponent = searchContext(fileOrLinkImageDimensions[11]).CardVerticalSeparator;
   obj.numColumns = placeholderCount;
   obj.isFirstPageLoading = isFirstPageLoading;
   obj.isNextPageLoading = isNextPageLoading;
-  return jsx(importDefault(dependencyMap[8]), obj);
+  return callback1(searchMessages(fileOrLinkImageDimensions[8]), obj);
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/search/native/components/tabs/pages/messages/LinksScreen.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/LinksScreen.tsx");
 
 export default memoResult;

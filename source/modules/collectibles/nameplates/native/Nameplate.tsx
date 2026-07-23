@@ -1,10 +1,18 @@
-// Module ID: 8223
-// Function ID: 64976
+// Module ID: 8229
+// Function ID: 65013
 // Name: NameplateInner
-// Dependencies: []
+// Dependencies: [31, 4122, 33, 4130, 566, 4066, 3991, 4131, 1873, 8230, 4554, 477, 7956, 5085, 2]
 // Exports: default
 
-// Module 8223 (NameplateInner)
+// Module 8229 (NameplateInner)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function NameplateInner(isFocused) {
   let animatedImageUrl;
   let isPressed;
@@ -38,34 +46,32 @@ function NameplateInner(isFocused) {
   if (flag6 === undefined) {
     flag6 = false;
   }
-  const arg1 = flag6;
   let flag7 = isFocused.animate;
   if (flag7 === undefined) {
     flag7 = false;
   }
-  let importDefault;
-  let obj = arg1(dependencyMap[4]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let sharedValue;
+  let obj = flag6(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
   const tmp2 = callback2(flag3, isPressed, flag, flag2, flag5);
-  let obj1 = arg1(dependencyMap[6]);
+  let obj1 = flag6(3991);
   let num = 1;
   if (flag6) {
     num = 0;
   }
-  const sharedValue = obj1.useSharedValue(num);
-  importDefault = sharedValue;
+  sharedValue = obj1.useSharedValue(num);
   const items1 = [sharedValue, flag6];
   const effect = React.useEffect(() => {
     if (flag6) {
-      let obj = flag6(closure_2[7]);
+      let obj = flag6(outer1_2[7]);
       obj = { duration: 100 };
-      const Easing = flag6(closure_2[6]).Easing;
-      obj.easing = Easing.in(flag6(closure_2[6]).Easing.ease);
+      const Easing = flag6(outer1_2[6]).Easing;
+      obj.easing = Easing.in(flag6(outer1_2[6]).Easing.ease);
       const result = sharedValue.set(obj.withTiming(1, obj));
     }
   }, items1);
-  let obj2 = arg1(dependencyMap[6]);
+  let obj2 = flag6(3991);
   const fn = function j() {
     return { opacity: sharedValue.get() };
   };
@@ -73,9 +79,9 @@ function NameplateInner(isFocused) {
   fn.__workletHash = 15588901070870;
   fn.__initData = closure_8;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  let obj3 = arg1(dependencyMap[8]);
-  const backgroundGradientColors = obj3.getBackgroundGradientColors(nameplate.palette, importDefault(dependencyMap[5])());
-  let obj4 = arg1(dependencyMap[9]);
+  let obj3 = flag6(1873);
+  const backgroundGradientColors = obj3.getBackgroundGradientColors(nameplate.palette, sharedValue(4066)());
+  let obj4 = flag6(8230);
   const nameplateAssets = obj4.getNameplateAssets(nameplate);
   ({ staticImageUrl, animatedImageUrl } = nameplateAssets);
   if (flag7) {
@@ -89,7 +95,7 @@ function NameplateInner(isFocused) {
     str = staticImageUrl;
   }
   obj = { style: items2 };
-  const items2 = [tmp2.container, isFocused.style, animatedStyle];
+  items2 = [tmp2.container, isFocused.style, animatedStyle];
   let tmp11Result = null;
   if (null != backgroundGradientColors) {
     obj = { style: tmp2.gradient };
@@ -101,37 +107,34 @@ function NameplateInner(isFocused) {
     obj1.x = num4;
     obj1.y = 0;
     obj.start = obj1;
-    obj.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
+    obj.end = { x: 1, y: 0 };
     const items3 = [, ];
     ({ left: arr4[0], right: arr4[1] } = backgroundGradientColors);
     obj.colors = items3;
-    tmp11Result = callback(importDefault(dependencyMap[10]), obj);
+    tmp11Result = callback(sharedValue(4554), obj);
     const tmp11 = callback;
-    const tmp14 = importDefault(dependencyMap[10]);
+    const tmp14 = sharedValue(4554);
   }
   const items4 = [tmp11Result, ];
-  const tmp3 = importDefault(dependencyMap[5])();
+  const tmp3 = sharedValue(4066)();
   const tmp9 = closure_6;
   if (obj9.isAndroid()) {
     if (flag7) {
       obj2 = { url: str, style: tmp2.img, autoplay: true };
-      let tmp15 = callback(arg1(dependencyMap[12]).APNGPlayer, obj2);
+      let tmp15 = callback(flag6(7956).APNGPlayer, obj2);
     }
     items4[1] = tmp15;
     obj.children = items4;
-    return tmp9(importDefault(dependencyMap[6]).View, obj);
+    return tmp9(sharedValue(3991).View, obj);
   }
   obj3 = { source: obj4, style: tmp2.img, accessibilityRole: "image" };
   obj4 = { uri: str };
-  tmp15 = callback(importDefault(dependencyMap[13]), obj3);
+  tmp15 = callback(sharedValue(5085), obj3);
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3, arg4) => {
-  let obj = { container: { Array: "ring", construct: "EXPRESSION_PICKER_EXPRESSION_FOCUS", body: "isXMLFile", paddingHorizontal: "r", add: "SPAN_ORIGIN_MANUAL_UI_TIME_TO_DISPLAY", body: "r" } };
-  obj = { "Null": null, "Null": null, "Null": null };
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2, arg3, arg4) => {
+  let obj = { container: { position: "absolute", overflow: "hidden", top: 0, bottom: 0, left: 0, right: 0 } };
+  obj = { position: "absolute", width: "100%", height: "100%" };
   let num = 1;
   let num2 = 1;
   if (!arg0) {
@@ -155,7 +158,7 @@ let closure_7 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3, arg
   }
   obj.opacity = num2;
   obj.gradient = obj;
-  obj = { <string:296017763>: "Text", <string:3995624531>: "Array", <string:1661649625>: 0.3, <string:1372357099>: "SlideOutLeft" };
+  obj = { position: "absolute", height: "100%", right: 0, aspectRatio: 5.333333333333333 };
   if (!arg0) {
     if (arg3) {
       if (!arg2) {
@@ -180,8 +183,7 @@ let closure_7 = arg1(dependencyMap[3]).createStyles((arg0, arg1, arg2, arg3, arg
   return obj;
 });
 let closure_8 = { code: "function NameplateTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/collectibles/nameplates/native/Nameplate.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/collectibles/nameplates/native/Nameplate.tsx");
 
 export default function Nameplate(nameplate) {
   nameplate = nameplate.nameplate;

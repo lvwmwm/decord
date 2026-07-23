@@ -1,20 +1,33 @@
 // Module ID: 1185
-// Function ID: 13505
+// Function ID: 13506
 // Name: _maybeBackfillMissingBreadcrumbsFromTelemetryRing
-// Dependencies: []
+// Dependencies: [5, 27, 653, 482, 787, 3, 1186, 1198, 675, 13124, 6837, 6842, 13125, 1184, 1554, 6838, 477, 4110, 1553, 6917, 650, 3994, 2]
 // Exports: initSentry
 
 // Module 1185 (_maybeBackfillMissingBreadcrumbsFromTelemetryRing)
+import timestamp from "timestamp";
+import { NativeModules } from "get ActivityIndicator";
+import ME from "ME";
+import { PRIMARY_DOMAIN } from "sum";
+import addBreadcrumb from "addBreadcrumb";
+import importDefaultResult from "sum";
+import IGNORE_ANALYTICS_BREADCRUMB_EVENTS from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS";
+
 let Endpoints;
-async function _maybeBackfillMissingBreadcrumbsFromTelemetryRing(breadcrumbs, arg1) {
-  breadcrumbs = breadcrumbs.breadcrumbs;
+let closure_6;
+const require = arg1;
+async function _maybeBackfillMissingBreadcrumbsFromTelemetryRing(arg0, arg1) {
+  const breadcrumbs = arg0.breadcrumbs;
   if (!Array.isArray(breadcrumbs)) {
-    const SentryTelemetry = callback(closure_3[6]).SentryTelemetry;
+    const SentryTelemetry = outer2_0(outer2_3[6]).SentryTelemetry;
     const items = [SentryTelemetry.snapshotForBreadcrumbs(), ];
-    const promise = new Promise((arg0, arg1) => setTimeout(() => {
-      const error = new Error("TelemetryRing breadcrumb timeout");
-      return arg1(error);
-    }, 200));
+    const promise = new Promise((arg0, arg1) => {
+      let closure_0 = arg1;
+      return setTimeout(() => {
+        const error = new Error("TelemetryRing breadcrumb timeout");
+        return callback(error);
+      }, 200);
+    });
     items[1] = promise;
     const tmp7 = yield Promise.race(items).catch(() => null);
     let isArray = null != tmp7;
@@ -27,7 +40,7 @@ async function _maybeBackfillMissingBreadcrumbsFromTelemetryRing(breadcrumbs, ar
     }
     if (isArray) {
       const entries = tmp7.entries;
-      breadcrumbs.breadcrumbs = entries.map((message) => {
+      arg0.breadcrumbs = entries.map((message) => {
         const obj = {};
         let key = message.message;
         if (null == key) {
@@ -44,8 +57,8 @@ async function _maybeBackfillMissingBreadcrumbsFromTelemetryRing(breadcrumbs, ar
   }
 }
 function filterError(event_id, originalException) {
-  originalException = event_id;
-  const importDefault = originalException;
+  let closure_0 = event_id;
+  let closure_1 = originalException;
   originalException = undefined;
   if (null != originalException) {
     originalException = originalException.originalException;
@@ -111,21 +124,21 @@ function filterError(event_id, originalException) {
       }
       event_id.tags.httpStatusCode = status1;
     }
-    let tmp10 = closure_12;
+    let tmp10 = c12;
     if ("error" === event_id.level) {
-      tmp10 = closure_13;
+      tmp10 = c13;
     }
-    if (!closure_14) {
+    if (!c14) {
       trackCrash(event_id, originalException, false);
     }
     return callback(async () => {
-      const ZoomedInTelemetry = callback(closure_3[6]).ZoomedInTelemetry;
+      const ZoomedInTelemetry = callback(outer2_3[6]).ZoomedInTelemetry;
       const items = [ZoomedInTelemetry.flushNow(), new Promise((arg0) => setTimeout(arg0, 200))];
       yield Promise.race(items);
-      yield function maybeBackfillMissingBreadcrumbsFromTelemetryRing(arg0) {
-        return callback(...arguments);
-      }(closure_0);
-      callback2(callback, closure_1);
+      yield (function maybeBackfillMissingBreadcrumbsFromTelemetryRing(outer1_0) {
+        return outer3_16(...arguments);
+      })(outer1_0);
+      outer2_20(outer1_0, outer1_1);
     })();
   }
   return null;
@@ -258,7 +271,7 @@ function trackCrash(event, extra, arg2) {
     const tags = event.tags;
     let prop;
     if (null != tags) {
-      prop = tags.event.origin;
+      prop = tags["event.origin"];
     }
     tmp4 = "javascript" !== prop;
   }
@@ -273,12 +286,12 @@ function trackCrash(event, extra, arg2) {
   if (!tmp5) {
     num = 0.01;
   }
-  if (!closure_14) {
+  if (!c14) {
     if (!sample(num)) {
       markCrashHandled(event.event_id);
     }
   }
-  let obj1 = extra(dependencyMap[7]);
+  let obj1 = require(1198) /* shouldNavigate */;
   let tmp9 = null;
   if (flag) {
     const event_id = event.event_id;
@@ -312,7 +325,7 @@ function trackCrash(event, extra, arg2) {
     const _Date3 = Date;
     result = Date.now();
   }
-  const track = importDefault(dependencyMap[8]).track;
+  const track = importDefault(675).track;
   if (tmp4) {
     extra = event.extra;
     if (null == extra) {
@@ -331,10 +344,10 @@ function trackCrash(event, extra, arg2) {
     track(tmp17.APP_CRASHED, obj);
   }
   markCrashHandled(event.event_id);
-  const AppCrashedReasons = extra(dependencyMap[9]).AppCrashedReasons;
-  const tmp16 = importDefault(dependencyMap[8]);
+  const AppCrashedReasons = require(13124) /* set */.AppCrashedReasons;
+  const tmp16 = importDefault(675);
   const tmp27 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
-  obj1 = { name: extra(dependencyMap[11]).MetricEvents.APP_CRASHED };
+  obj1 = { name: require(6842) /* set */.MetricEvents.APP_CRASHED };
   const items = ["reason:" + tmp27, ];
   let str7 = "unknown";
   if (null != level) {
@@ -342,7 +355,7 @@ function trackCrash(event, extra, arg2) {
   }
   items[1] = "level:" + str7;
   obj1.tags = items;
-  importDefault(dependencyMap[10]).increment(obj1, true);
+  importDefault(6837).increment(obj1, true);
 }
 function sample(arg0) {
   return Math.random() <= arg0;
@@ -353,8 +366,8 @@ function markCrashHandled(arg0) {
     tmp = 0 !== arg0.length;
   }
   if (tmp) {
-    importDefault(dependencyMap[13]).markCrashHandled(arg0);
-    const obj = importDefault(dependencyMap[13]);
+    importDefault(1184).markCrashHandled(arg0);
+    const obj = importDefault(1184);
   }
 }
 function getStringExtra(native_exit_description) {
@@ -367,137 +380,131 @@ function getStringExtra(native_exit_description) {
   }
   return tmp;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-({ AnalyticEvents: closure_6, Endpoints } = arg1(dependencyMap[2]));
-const PRIMARY_DOMAIN = arg1(dependencyMap[3]).PRIMARY_DOMAIN;
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).reactNavigationIntegration();
+({ AnalyticEvents: closure_6, Endpoints } = ME);
+addBreadcrumb = addBreadcrumb.reactNavigationIntegration();
 const regExp = new RegExp("/v" + window.GLOBAL_ENV.API_VERSION + Endpoints.METRICS, "g");
-const items = [regExp, , ];
+let items = [regExp, , ];
 const regExp1 = new RegExp("/v" + window.GLOBAL_ENV.API_VERSION + Endpoints.METRICS_V2, "g");
 items[1] = regExp1;
 const regExp2 = new RegExp("/v" + window.GLOBAL_ENV.API_VERSION + Endpoints.TRACK, "g");
 items[2] = regExp2;
-let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult("Sentry");
-let closure_11 = ["<string:25674240>", "<string:32797184>", "<string:39256064>", "<string:1430716416>", "<string:3271558348>"];
-let closure_12 = 0.05;
-let closure_13 = 0.005;
-let closure_14 = false;
-const obj = arg1(dependencyMap[4]);
-let closure_15 = arg1(dependencyMap[12]).filterThrottle({ "Bool(false)": "Uint16Array", "Bool(false)": "hideBackground" });
-const obj2 = arg1(dependencyMap[12]);
-const result1 = arg1(dependencyMap[22]).fileFinishedImporting("modules/errors/native/SentryInitUtils.tsx");
+let closure_11 = ["The operation couldn\u2019t be completed. (com.apple.CallKit.error.requesttransaction", "Request has been terminated", "couldn't execute statement: database is disabled", "couldn't delete database: database is currently open", "database is no longer open"];
+let c12 = 0.05;
+let c13 = 0.005;
+let c14 = false;
+let closure_15 = IGNORE_ANALYTICS_BREADCRUMB_EVENTS.filterThrottle({ maxBudgetMinute: 1, maxBudgetHour: 15 });
+const result1 = require("ME").fileFinishedImporting("modules/errors/native/SentryInitUtils.tsx");
 
-export const routingInstrumentation = result;
+export const routingInstrumentation = addBreadcrumb;
 export const initSentry = function initSentry() {
   const CrashReportingManager = NativeModules.CrashReportingManager;
   if (null != CrashReportingManager) {
     const isUserStaffForCrashReporting = CrashReportingManager.getIsUserStaffForCrashReporting((arg0) => {
-      let obj = callback2(closure_3[14]);
+      const outer1_14 = arg0;
+      let obj = outer1_2(outer1_3[14]);
       const constants = obj.getConstants();
       const ReleaseChannel = constants.ReleaseChannel;
       if (-1 === ReleaseChannel.indexOf("debug")) {
         if (-1 === ReleaseChannel.indexOf("developer")) {
-          const isStable = callback(closure_3[15]).isStable;
+          const isStable = outer1_0(outer1_3[15]).isStable;
           obj = { releaseChannel: ReleaseChannel, isProductionChannel: isStable };
-          closure_10.verbose("Initialize", obj);
+          outer1_10.verbose("Initialize", obj);
           if (obj17.isAndroid()) {
             if (isStable) {
-              let obj1 = callback(closure_3[17]);
+              let obj1 = outer1_0(outer1_3[17]);
               const device = obj1.getDevice();
             }
           }
-          let closure_12 = 0.05;
+          let outer1_12 = 0.05;
           const SentryDsn = constants.SentryDsn;
           if (isStable) {
             let SentryStaffDsn = SentryDsn;
             if (obj3.isMetaQuest()) {
-              closure_12 = 1;
-              let closure_13 = 1;
+              outer1_12 = 1;
+              const outer1_13 = 1;
               SentryStaffDsn = SentryDsn;
             }
-            const obj3 = callback(closure_3[18]);
+            obj3 = outer1_0(outer1_3[18]);
           } else {
-            closure_12 = 1;
+            outer1_12 = 1;
             SentryStaffDsn = constants.SentryAlphaBetaDsn;
           }
           if (arg0) {
             SentryStaffDsn = constants.SentryStaffDsn;
-            closure_12 = 1;
+            outer1_12 = 1;
           }
-          function replayPendingCrashReportIfNeeded() {
-            const lastCrashReport = callback(closure_3[13]).getLastCrashReport();
-            const obj = callback(closure_3[13]);
+          (function replayPendingCrashReportIfNeeded() {
+            const lastCrashReport = outer2_1(outer2_3[13]).getLastCrashReport();
+            let obj = outer2_1(outer2_3[13]);
             lastCrashReport.then((arg0) => {
               if (null != arg0) {
                 const obj = { crash_event_source: "startup_reconcile" };
-                callback(arg0, obj);
+                outer3_20(arg0, obj);
               }
             }).catch((arg0) => {
-              closure_10.warn("Failed to replay pending crash report", arg0);
+              outer3_10.warn("Failed to replay pending crash report", arg0);
             });
-          }();
-          const obj17 = callback(closure_3[16]);
+          })();
+          obj17 = outer1_0(outer1_3[16]);
           obj = {};
-          const obj4 = callback(closure_3[4]);
+          const obj4 = outer1_0(outer1_3[4]);
           let str2 = "ios";
           if (obj6.isAndroid()) {
             str2 = "android";
           }
           obj.tunnel = `/error-reporting-proxy/${str2}`;
           obj.autoInitializeNativeSdk = false;
-          obj.beforeSend = closure_17;
-          obj.dist = "6051";
+          obj.beforeSend = outer1_17;
+          obj.dist = "6057";
           obj.dsn = SentryStaffDsn;
           obj.environment = ReleaseChannel;
           obj.tracesSampleRate = 0;
           obj.sampleRate = 1;
-          obj.ignoreErrors = closure_11;
-          obj.release = "discord_android@340.3.0-2+340203";
-          const items = [closure_7];
+          obj.ignoreErrors = outer1_11;
+          obj.release = "discord_android@340.4.0-2+340204";
+          const items = [outer1_7];
           obj.tracePropagationTargets = items;
-          const items1 = [closure_8, , ];
-          const obj6 = callback(closure_3[16]);
-          items1[1] = callback(closure_3[4]).featureFlagsIntegration();
-          const obj7 = callback(closure_3[4]);
+          const items1 = [outer1_8, , ];
+          obj6 = outer1_0(outer1_3[16]);
+          items1[1] = outer1_0(outer1_3[4]).featureFlagsIntegration();
+          const obj7 = outer1_0(outer1_3[4]);
           obj1 = {
             shouldCreateSpanForRequest(arg0) {
-                  return !closure_9.some(arg0.match);
+                  return !outer2_9.some(arg0.match);
                 }
           };
-          items1[2] = callback(closure_3[4]).reactNativeTracingIntegration(obj1);
+          items1[2] = outer1_0(outer1_3[4]).reactNativeTracingIntegration(obj1);
           obj.integrations = items1;
           obj.beforeBreadcrumb = function beforeBreadcrumb(data) {
             if (null == data.data) {
               data.data = {};
             }
-            const currentMemoryUsageKB = callback(closure_3[19]).getCurrentMemoryUsageKB();
+            const currentMemoryUsageKB = outer2_1(outer2_3[19]).getCurrentMemoryUsageKB();
             if (null != currentMemoryUsageKB) {
               data.data.client_performance_memory = currentMemoryUsageKB;
             }
-            const obj = callback(closure_3[19]);
-            const currentCPUUsagePercent = callback(closure_3[19]).getCurrentCPUUsagePercent();
+            const obj = outer2_1(outer2_3[19]);
+            const currentCPUUsagePercent = outer2_1(outer2_3[19]).getCurrentCPUUsagePercent();
             if (null != currentCPUUsagePercent) {
               data.data.client_performance_cpu = currentCPUUsagePercent;
             }
             return data;
           };
           obj4.init(obj);
-          const obj8 = callback(closure_3[4]);
-          callback(closure_3[4]).setTag("buildNumber", "6051");
-          const obj10 = callback(closure_3[4]);
-          callback(closure_3[4]).setTag("appVersion", constants.Version);
-          const obj11 = callback(closure_3[4]);
+          const obj8 = outer1_0(outer1_3[4]);
+          outer1_0(outer1_3[4]).setTag("buildNumber", "6057");
+          const obj10 = outer1_0(outer1_3[4]);
+          outer1_0(outer1_3[4]).setTag("appVersion", constants.Version);
+          const obj11 = outer1_0(outer1_3[4]);
           const _HermesInternal = HermesInternal;
-          callback(closure_3[4]).setTag("design_id", "" + callback(closure_3[20]).DesignIds.DESIGN_TABS_IA);
-          const obj12 = callback(closure_3[4]);
-          const obj13 = callback(closure_3[4]);
-          obj13.setTag("newArchEnabled", callback(closure_3[21]).isFabric());
-          const obj14 = callback(closure_3[21]);
-          callback(closure_3[4]).setTag("isBridgeless", callback(closure_3[21]).isBridgeless);
-          const obj15 = callback(closure_3[4]);
+          outer1_0(outer1_3[4]).setTag("design_id", "" + outer1_0(outer1_3[20]).DesignIds.DESIGN_TABS_IA);
+          const obj12 = outer1_0(outer1_3[4]);
+          const obj13 = outer1_0(outer1_3[4]);
+          obj13.setTag("newArchEnabled", outer1_0(outer1_3[21]).isFabric());
+          const obj14 = outer1_0(outer1_3[21]);
+          outer1_0(outer1_3[4]).setTag("isBridgeless", outer1_0(outer1_3[21]).isBridgeless);
+          const obj15 = outer1_0(outer1_3[4]);
         }
       }
     });

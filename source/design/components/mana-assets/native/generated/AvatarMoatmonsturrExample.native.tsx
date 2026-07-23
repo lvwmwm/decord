@@ -1,13 +1,13 @@
-// Module ID: 5877
-// Function ID: 49748
+// Module ID: 5882
+// Function ID: 49777
 // Name: AvatarMoatmonsturrExample
-// Dependencies: []
+// Dependencies: [33, 5085, 5883, 2]
 // Exports: AvatarMoatmonsturrExample
 
-// Module 5877 (AvatarMoatmonsturrExample)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarMoatmonsturrExample.native.tsx");
+// Module 5882 (AvatarMoatmonsturrExample)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarMoatmonsturrExample.native.tsx");
 
 export const AvatarMoatmonsturrExample = function AvatarMoatmonsturrExample(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const AvatarMoatmonsturrExample = function AvatarMoatmonsturrExample(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5883) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const AvatarMoatmonsturrExample = function AvatarMoatmonsturrExample(widt
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

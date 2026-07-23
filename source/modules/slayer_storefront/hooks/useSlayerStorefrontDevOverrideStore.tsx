@@ -1,34 +1,43 @@
-// Module ID: 8685
-// Function ID: 68840
+// Module ID: 8692
+// Function ID: 68880
 // Name: useSlayerStorefrontDevOverrideStore
-// Dependencies: []
+// Dependencies: [621, 2]
 
-// Module 8685 (useSlayerStorefrontDevOverrideStore)
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/slayer_storefront/hooks/useSlayerStorefrontDevOverrideStore.tsx");
+// Module 8692 (useSlayerStorefrontDevOverrideStore)
+import keys from "keys";
 
-export const useSlayerStorefrontDevOverrideStore = _module.create()((arg0) => ({
-  setOverrideApplicationId(overrideApplicationId) {
-    return overrideApplicationId({ overrideApplicationId });
-  },
-  setShowSelfActivity(showSelfActivity) {
-    return showSelfActivity({ showSelfActivity });
-  },
-  setRecommendationApplicationIds(str) {
-    const obj = {};
-    let parts = null;
-    if (null != str) {
-      parts = str.split(",");
+const tmp2 = keys.create()((arg0) => {
+  let closure_0 = arg0;
+  let obj = {
+    overrideApplicationId: null,
+    setOverrideApplicationId(overrideApplicationId) {
+      return callback({ overrideApplicationId });
+    },
+    showSelfActivity: false,
+    setShowSelfActivity(showSelfActivity) {
+      return callback({ showSelfActivity });
+    },
+    recommendationApplicationIds: null,
+    setRecommendationApplicationIds(str) {
+      const obj = {};
+      let parts = null;
+      if (null != str) {
+        parts = str.split(",");
+      }
+      obj.recommendationApplicationIds = parts;
+      return closure_0(obj);
+    },
+    overrideNitroEligibilityForSocialLayerStorefront: false,
+    setOverrideNitroEligibilityForSocialLayerStorefront(overrideNitroEligibilityForSocialLayerStorefront) {
+      return callback({ overrideNitroEligibilityForSocialLayerStorefront });
+    },
+    isNitroEligibleForSocialLayerStorefront: false,
+    setIsNitroEligibleForSocialLayerStorefront(isNitroEligibleForSocialLayerStorefront) {
+      return callback({ isNitroEligibleForSocialLayerStorefront });
     }
-    obj.recommendationApplicationIds = parts;
-    return str(obj);
-  },
-  setOverrideNitroEligibilityForSocialLayerStorefront(overrideNitroEligibilityForSocialLayerStorefront) {
-    return overrideNitroEligibilityForSocialLayerStorefront({ overrideNitroEligibilityForSocialLayerStorefront });
-  },
-  isNitroEligibleForSocialLayerStorefront: false,
-  setIsNitroEligibleForSocialLayerStorefront(isNitroEligibleForSocialLayerStorefront) {
-    return isNitroEligibleForSocialLayerStorefront({ isNitroEligibleForSocialLayerStorefront });
-  }
-}));
+  };
+  return obj;
+});
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/hooks/useSlayerStorefrontDevOverrideStore.tsx");
+
+export const useSlayerStorefrontDevOverrideStore = tmp2;

@@ -1,12 +1,11 @@
 // Module ID: 1880
-// Function ID: 20961
+// Function ID: 20962
 // Name: isActivityParticipantValidGuildMember
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
 // Module 1880 (isActivityParticipantValidGuildMember)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/activities/isActivityParticipantValidGuildMember.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/isActivityParticipantValidGuildMember.tsx");
 
 export default function isActivityParticipantValidGuildMember(member) {
   let tmp = null != member.member && null != member.member.joined_at;

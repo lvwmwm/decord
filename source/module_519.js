@@ -1,11 +1,12 @@
 // Module ID: 519
 // Function ID: 6622
-// Dependencies: []
+// Dependencies: [520]
 
 // Module 519
-const _module = require(dependencyMap[0]);
-if (_module) {
-  tmp2([], "length");
+import module_520 from "module_520";
+
+if (module_520) {
+  module_520([], "length");
 }
 
-export default _module;
+export default module_520;

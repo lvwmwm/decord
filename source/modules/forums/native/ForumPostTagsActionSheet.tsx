@@ -1,37 +1,41 @@
-// Module ID: 9850
-// Function ID: 76263
+// Module ID: 9857
+// Function ID: 76304
 // Name: ForumPostTagsActionSheet
-// Dependencies: []
+// Dependencies: [57, 31, 27, 5685, 33, 4130, 1212, 5654, 5500, 5186, 9858, 4543, 9139, 4098, 2]
 // Exports: default
 
-// Module 9850 (ForumPostTagsActionSheet)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const MAX_FORUM_POST_TAGS = arg1(dependencyMap[3]).MAX_FORUM_POST_TAGS;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ tagsContainer: { position: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164, location: 0.000000007919535119815975, body: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000173019275103164 }, saveButton: {}, subtitle: { marginTop: 4 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/forums/native/ForumPostTagsActionSheet.tsx");
+// Module 9857 (ForumPostTagsActionSheet)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { MAX_FORUM_POST_TAGS } from "FORUM_GUIDELINES_ACTION_SHEET";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ tagsContainer: { display: "flex", flexDirection: "row", flexWrap: "wrap" }, saveButton: { marginTop: 8, marginHorizontal: 16, marginBottom: 16 }, subtitle: { marginTop: 4 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/forums/native/ForumPostTagsActionSheet.tsx");
 
 export default function ForumPostTagsActionSheet(thread) {
+  let _slicedToArray;
+  let dependencyMap;
   let tags;
   let title;
   thread = thread.thread;
-  const arg1 = thread;
   let flag = thread.canManageThread;
   if (flag === undefined) {
     flag = true;
   }
-  const importDefault = flag;
-  ({ onSave: closure_2, title } = thread);
+  ({ onSave: dependencyMap, title } = thread);
   if (title === undefined) {
-    const intl = arg1(dependencyMap[6]).intl;
-    title = intl.string(arg1(dependencyMap[6]).t.436ZFw);
+    const intl = thread(1212).intl;
+    title = intl.string(thread(1212).t["436ZFw"]);
   }
-  ({ tags, onClose: closure_3 } = thread);
-  let React;
+  ({ tags, onClose: _slicedToArray } = thread);
+  let first;
   let closure_5;
   let closure_6;
   function toggleTag(closure_5, arg1) {
@@ -47,17 +51,16 @@ export default function ForumPostTagsActionSheet(thread) {
     }
   }
   const tmp3 = callback3();
-  let obj = arg1(dependencyMap[7]);
+  let obj = thread(5654);
   let appliedTags = obj.useAppliedTags(thread);
   if (null != tags) {
     appliedTags = tags;
   }
-  const tmp7 = callback(React.useState(new Set(appliedTags)), 2);
-  const first = tmp7[0];
-  React = first;
+  const tmp7 = callback(first.useState(new Set(appliedTags)), 2);
+  first = tmp7[0];
   closure_5 = tmp7[1];
   closure_6 = first.size >= closure_6;
-  let obj1 = arg1(dependencyMap[7]);
+  let obj1 = thread(5654);
   const visibleForumTags = obj1.useVisibleForumTags(thread.parentChannel);
   obj = {
     onDismiss() {
@@ -69,10 +72,10 @@ export default function ForumPostTagsActionSheet(thread) {
     }
   };
   obj = { title };
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj.subtitle = intl2.string(arg1(dependencyMap[6]).t.+HS9+m);
+  const intl2 = thread(1212).intl;
+  obj.subtitle = intl2.string(thread(1212).t["+HS9+m"]);
   obj.subtitleStyle = tmp3.subtitle;
-  obj.header = toggleTag(arg1(dependencyMap[9]).BottomSheetTitleHeader, obj);
+  obj.header = toggleTag(thread(5186).BottomSheetTitleHeader, obj);
   obj1 = {
     style: tmp3.tagsContainer,
     children: visibleForumTags.map((id) => {
@@ -89,14 +92,14 @@ export default function ForumPostTagsActionSheet(thread) {
       obj.disabled = tmp4;
       obj.onPress = toggleTag;
       obj.selected = hasItem;
-      return toggleTag(flag(closure_2[10]), obj, id.id);
+      return toggleTag(flag(outer1_2[10]), obj, id.id);
     })
   };
-  const items = [toggleTag(closure_5, obj1), ];
+  let items = [toggleTag(closure_5, obj1), ];
   const obj2 = { style: tmp3.saveButton };
   const obj3 = {};
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj3.text = intl3.string(arg1(dependencyMap[6]).t.R3BPH+);
+  const intl3 = thread(1212).intl;
+  obj3.text = intl3.string(thread(1212).t["R3BPH+"]);
   obj3.onPress = function onPress() {
     Array.from(first);
     if (null != callback) {
@@ -104,13 +107,13 @@ export default function ForumPostTagsActionSheet(thread) {
       HermesBuiltin.arraySpread(first, 0);
       callback(items);
     } else if (null != thread) {
-      flag(callback[12]).updateForumPostTags(thread.id, tmp2);
-      const obj = flag(callback[12]);
+      flag(outer1_2[12]).updateForumPostTags(thread.id, tmp2);
+      const obj = flag(outer1_2[12]);
     }
-    flag(callback[13]).hideActionSheet();
+    flag(outer1_2[13]).hideActionSheet();
   };
-  obj2.children = toggleTag(arg1(dependencyMap[11]).Button, obj3);
+  obj2.children = toggleTag(thread(4543).Button, obj3);
   items[1] = toggleTag(closure_5, obj2);
   obj.children = items;
-  return callback2(arg1(dependencyMap[8]).ActionSheet, obj);
+  return callback2(thread(5500).ActionSheet, obj);
 };

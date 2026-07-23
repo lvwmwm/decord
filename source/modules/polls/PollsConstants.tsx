@@ -1,13 +1,15 @@
-// Module ID: 7066
-// Function ID: 56489
+// Module ID: 7071
+// Function ID: 56523
 // Name: POLL_ATTACHMENT_FOLDER
-// Dependencies: []
+// Dependencies: [1314, 2]
 
-// Module 7066 (POLL_ATTACHMENT_FOLDER)
+// Module 7071 (POLL_ATTACHMENT_FOLDER)
+import set from "set";
+
 const items = [, ];
-({ GIF: arr[0], EMOJI: arr[1] } = require(dependencyMap[0]).ExpressionPickerViewType);
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/polls/PollsConstants.tsx");
+({ GIF: arr[0], EMOJI: arr[1] } = require("ExpressionPickerViewType").ExpressionPickerViewType);
+let set = new Set(items);
+const result = set.fileFinishedImporting("modules/polls/PollsConstants.tsx");
 
 export const POLL_ATTACHMENT_FOLDER = "polls";
 export const POLL_CREATION_MODAL_KEY = "POLL_CREATION_MODAL_KEY";
@@ -20,4 +22,4 @@ export const MAX_POLL_ANSWER_LENGTH = 55;
 export const VOTES_TOOLTIP_MAX_USERS = 3;
 export const POLL_RESULT_MESSAGE_POLL_TITLE_MAX_VISIBLE_CHARS = 50;
 export const PollDurations = { ONE_HOUR: 1, [1]: "ONE_HOUR", FOUR_HOURS: 4, [4]: "FOUR_HOURS", EIGHT_HOURS: 8, [8]: "EIGHT_HOURS", ONE_DAY: 24, [24]: "ONE_DAY", THREE_DAYS: 72, [72]: "THREE_DAYS", SEVEN_DAYS: 168, [168]: "SEVEN_DAYS", FOURTEEN_DAYS: 336, [336]: "FOURTEEN_DAYS" };
-export const POLLS_SUPPORTED_EXPRESSION_PICKER_VIEW_TYPES = new Set(items);
+export const POLLS_SUPPORTED_EXPRESSION_PICKER_VIEW_TYPES = set;

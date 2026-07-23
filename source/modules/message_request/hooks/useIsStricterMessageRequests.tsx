@@ -1,14 +1,15 @@
-// Module ID: 11468
-// Function ID: 89352
+// Module ID: 11478
+// Function ID: 89402
 // Name: set
-// Dependencies: []
+// Dependencies: [11458, 2]
 // Exports: default
 
-// Module 11468 (set)
-const set = new Set([-9306108]);
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/message_request/hooks/useIsStricterMessageRequests.tsx");
+// Module 11478 (set)
+import set from "set";
+
+let set = new Set(["GB"]);
+const result = set.fileFinishedImporting("modules/message_request/hooks/useIsStricterMessageRequests.tsx");
 
 export default function useIsStricterMessageRequests() {
-  return require(dependencyMap[0]).useIsTeenInCountrySet(set);
+  return require(11458) /* useUserCountryCode */.useIsTeenInCountrySet(set);
 };

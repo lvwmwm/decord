@@ -1,8 +1,8 @@
 // Module ID: 430
 // Function ID: 5983
 // Name: AccessibilityInfo
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 430 (AccessibilityInfo)
 
-export default importAll(dependencyMap[0]).get("AccessibilityInfo");
+export default require("requireModule").get("AccessibilityInfo");

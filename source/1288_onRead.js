@@ -1,5 +1,5 @@
 // Module ID: 1288
-// Function ID: 15053
+// Function ID: 15054
 // Name: onRead
 // Dependencies: []
 
@@ -13,10 +13,11 @@ if (!UnknownFieldHandler) {
   UnknownFieldHandler.UnknownFieldHandler = obj;
   UnknownFieldHandler = obj;
 }
-(UnknownFieldHandler) => {
+((UnknownFieldHandler) => {
+  let closure_0 = UnknownFieldHandler;
   UnknownFieldHandler.symbol = Symbol.for("protobuf-ts/unknown");
   UnknownFieldHandler.onRead = (arg0, arg1, no, wireType, data) => {
-    const symbol = arg0.symbol;
+    const symbol = UnknownFieldHandler.symbol;
     if (is(arg1)) {
       let items = arg1[symbol];
     } else {
@@ -30,30 +31,30 @@ if (!UnknownFieldHandler) {
       let tmp2 = arg2;
       let tagResult = arg2.tag(item10008.no, item10008.wireType);
       let rawResult = tagResult.raw(item10008.data);
+      continue;
     }
   };
   UnknownFieldHandler.list = (arg0, arg1) => {
-    arg0 = arg1;
     if (is(arg0)) {
       let found = arr;
       if (arg1) {
-        found = arr.filter((no) => no.no == arg1);
+        found = arr.filter((no) => no.no == closure_0);
       }
       return found;
     } else {
       return [];
     }
   };
-  UnknownFieldHandler.last = (arg0, arg1) => arg0.list(arg0, arg1).slice(-1)[0];
+  UnknownFieldHandler.last = (arg0, arg1) => UnknownFieldHandler.list(arg0, arg1).slice(-1)[0];
   function is(arg0) {
     let isArray = arg0;
     if (arg0) {
       const _Array = Array;
-      isArray = Array.isArray(arg0[closure_0.symbol]);
+      isArray = Array.isArray(arg0[UnknownFieldHandler.symbol]);
     }
     return isArray;
   }
-}(UnknownFieldHandler);
+})(UnknownFieldHandler);
 UnknownFieldHandler.mergeBinaryOptions = function mergeBinaryOptions(arg0, arg1) {
   return Object.assign(Object.assign({}, arg0), arg1);
 };

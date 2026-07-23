@@ -1,13 +1,12 @@
 // Module ID: 620
 // Function ID: 7106
 // Name: shallowEqual
-// Dependencies: []
+// Dependencies: [2]
 // Exports: areArraysShallowEqual, default
 
 // Module 620 (shallowEqual)
 let closure_0 = {};
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/shallow-equal/shallowEqual.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/shallow-equal/shallowEqual.tsx");
 
 export default function shallowEqual(arg0, arg1, arr) {
   let logCallback;
@@ -59,5 +58,5 @@ export const areArraysShallowEqual = function areArraysShallowEqual(arr) {
     tmp = closure_0;
   }
   ({ logCallback, shouldWarnLargeObjects } = tmp);
-  return null != arg1 && arr.length === arg1.length && arr.every((arg0, arg1) => arg1[arg1] === arg0);
+  return null != arg1 && arr.length === arg1.length && arr.every((arg0, arg1) => table[arg1] === arg0);
 };

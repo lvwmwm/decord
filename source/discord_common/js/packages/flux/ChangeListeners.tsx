@@ -1,20 +1,17 @@
 // Module ID: 569
 // Function ID: 6904
 // Name: ChangeListeners
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
 // Module 569 (ChangeListeners)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("../discord_common/js/packages/flux/ChangeListeners.tsx");
-
-export const ChangeListeners = () => {
+const tmp2 = (() => {
   class ChangeListeners {
     constructor() {
-      ChangeListeners = this;
-      tmp = ChangeListeners(this, ChangeListeners);
+      self = this;
+      tmp = ChangeListeners(this, self);
       set = new Set();
       this.listeners = set;
       set1 = new Set();
@@ -31,26 +28,26 @@ export const ChangeListeners = () => {
       };
       this.addConditional = (arg0) => {
         let flag = arg1;
-        const self = arg0;
+        const _self = arg0;
         if (arg1 === undefined) {
           flag = true;
         }
         let conditionalCallback;
         if (!flag) {
           conditionalCallback = function conditionalCallback() {
-            if (false === arg0()) {
-              arg0.remove(conditionalCallback);
+            if (false === lib()) {
+              lib.remove(conditionalCallback);
             }
           };
-          self.add(conditionalCallback);
-          const conditionalListeners = self.conditionalListeners;
+          _self.add(conditionalCallback);
+          const conditionalListeners = _self.conditionalListeners;
           conditionalListeners.add(conditionalCallback);
         }
       };
       this.removeAllConditional = () => {
         let conditionalListeners = self.conditionalListeners;
         const item = conditionalListeners.forEach((arg0) => {
-          const listeners = listeners.listeners;
+          const listeners = outer1_0.listeners;
           return listeners.delete(arg0);
         });
         conditionalListeners = self.conditionalListeners;
@@ -59,7 +56,6 @@ export const ChangeListeners = () => {
       return;
     }
   }
-  let closure_0 = ChangeListeners;
   let obj = {
     key: "has",
     value(arg0) {
@@ -84,4 +80,7 @@ export const ChangeListeners = () => {
   };
   items[2] = obj;
   return callback(ChangeListeners, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/flux/ChangeListeners.tsx");
+
+export const ChangeListeners = tmp2;

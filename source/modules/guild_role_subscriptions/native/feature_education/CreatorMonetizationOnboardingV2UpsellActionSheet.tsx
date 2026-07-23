@@ -1,61 +1,67 @@
-// Module ID: 14955
-// Function ID: 112563
+// Module ID: 15071
+// Function ID: 114731
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 653, 1345, 33, 4130, 5187, 4126, 1212, 5085, 15072, 4543, 8438, 2]
 // Exports: default
 
-// Module 14955 (CreatorMonetizationOnboardingV2UpsellActionSheet)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const GuildSettingsSections = arg1(dependencyMap[2]).GuildSettingsSections;
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ container: {}, title: { marginBottom: 6 }, description: { marginBottom: 24 }, image: {}, dismissButton: { marginTop: 4 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/CreatorMonetizationOnboardingV2UpsellActionSheet.tsx");
+// Module 15071 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+import "result";
+import { View } from "get ActivityIndicator";
+import { GuildSettingsSections } from "ME";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingLeft: 24, paddingRight: 24, paddingTop: 24 }, title: { marginBottom: 6 }, description: { marginBottom: 24 }, image: { marginBottom: 24, width: "100%" }, dismissButton: { marginTop: 4 } });
+const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/CreatorMonetizationOnboardingV2UpsellActionSheet.tsx");
 
 export default function CreatorMonetizationOnboardingV2UpsellActionSheet(arg0) {
-  ({ guildId: closure_0, markAsDismissed: closure_1 } = arg0);
+  let importDefault;
+  let require;
+  ({ guildId: require, markAsDismissed: importDefault } = arg0);
   const tmp = callback3();
   let obj = {
     startExpanded: true,
     onDismiss() {
-      return callback(constants2.UNKNOWN);
+      return callback(outer1_5.UNKNOWN);
     }
   };
   obj = { style: tmp.container };
-  obj = { style: tmp.title };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.children = intl.string(arg1(dependencyMap[8]).t.v+Jm6X);
-  const items = [callback(arg1(dependencyMap[7]).Text, obj), , , , ];
-  const obj1 = { alignSelf: true, justifyContent: true, alignItems: true, backgroundColor: true, style: tmp.description };
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj1.children = intl2.string(arg1(dependencyMap[8]).t.kUUFbG);
-  items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
-  const obj2 = { style: tmp.image, resizeMode: "contain", source: importDefault(dependencyMap[10]) };
-  items[2] = callback(importDefault(dependencyMap[9]), obj2);
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["v+Jm6X"]);
+  const items = [callback(require(4126) /* Text */.Text, obj), , , , ];
+  const obj1 = { style: tmp.description, accessibilityRole: "text", variant: "text-sm/medium", color: "text-default" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.kUUFbG);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  const obj2 = { style: tmp.image, resizeMode: "contain", source: importDefault(15072) };
+  items[2] = callback(importDefault(5085), obj2);
   const obj3 = {
     onPress() {
-      callback(constants2.UNKNOWN);
-      callback(closure_2[12]).open(closure_0, constants.ROLE_SUBSCRIPTIONS);
+      callback(outer1_5.UNKNOWN);
+      outer1_1(outer1_2[12]).open(closure_0, outer1_4.ROLE_SUBSCRIPTIONS);
     }
   };
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj3.text = intl3.string(arg1(dependencyMap[8]).t.OgQQbG);
-  items[3] = callback(arg1(dependencyMap[11]).Button, obj3);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.OgQQbG);
+  items[3] = callback(require(4543) /* Button */.Button, obj3);
   const obj4 = { style: tmp.dismissButton };
   const obj5 = {
     onPress() {
-      return callback(constants2.UNKNOWN);
+      return callback(outer1_5.UNKNOWN);
     }
   };
-  const intl4 = arg1(dependencyMap[8]).intl;
-  obj5.text = intl4.string(arg1(dependencyMap[8]).t.WAI6xu);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj5.text = intl4.string(require(1212) /* getSystemLocale */.t.WAI6xu);
   obj5.variant = "secondary";
-  obj4.children = callback(arg1(dependencyMap[11]).Button, obj5);
+  obj4.children = callback(require(4543) /* Button */.Button, obj5);
   items[4] = callback(View, obj4);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(arg1(dependencyMap[6]).BottomSheet, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };

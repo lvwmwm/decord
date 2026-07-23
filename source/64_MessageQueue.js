@@ -1,17 +1,19 @@
 // Module ID: 64
 // Function ID: 1414
 // Name: MessageQueue
-// Dependencies: []
+// Dependencies: [65, 6, 7, 69, 70, 71, 44]
 
 // Module 64 (MessageQueue)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
+import _toConsumableArray from "_toConsumableArray";
+import invariant from "invariant";
+import _defineProperties from "_defineProperties";
 
-export default () => {
+const require = arg1;
+
+export default (() => {
   class MessageQueue {
     constructor() {
-      tmp = closure_4(this, MessageQueue);
+      tmp = outer1_4(this, MessageQueue);
       this._lazyCallableModules = {};
       items = [, , , ];
       items[0] = [];
@@ -36,26 +38,28 @@ export default () => {
       return;
     }
   }
-  const global = MessageQueue;
   let obj = {
     key: "callFunctionReturnFlushedQueue",
     value: function callFunctionReturnFlushedQueue(arg0, arg1, arg2) {
-      const MessageQueue = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let closure_2 = arg2;
       const self = this;
       this.__guard(() => {
-        self.__callFunction(arg0, arg1, arg2);
+        self.__callFunction(closure_0, closure_1, closure_2);
       });
       return this.flushedQueue();
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , ];
   obj = {
     key: "invokeCallbackAndReturnFlushedQueue",
     value: function invokeCallbackAndReturnFlushedQueue(arg0, arg1) {
-      const MessageQueue = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       const self = this;
       this.__guard(() => {
-        self.__invokeCallback(arg0, arg1);
+        self.__invokeCallback(closure_0, closure_1);
       });
       return this.flushedQueue();
     }
@@ -64,7 +68,7 @@ export default () => {
   obj = {
     key: "flushedQueue",
     value: function flushedQueue() {
-      const MessageQueue = this;
+      const self = this;
       this.__guard(() => {
         const result = self.__callReactNativeMicrotasks();
       });
@@ -87,18 +91,19 @@ export default () => {
   };
   items[4] = {
     key: "registerCallableModule",
-    value: function registerCallableModule(MobileVoiceOverlayManager, _module) {
-      const MessageQueue = _module;
-      this._lazyCallableModules[MobileVoiceOverlayManager] = () => arg1;
+    value: function registerCallableModule(MobileVoiceOverlayManager, _defineProperties) {
+      let closure_0 = _defineProperties;
+      this._lazyCallableModules[MobileVoiceOverlayManager] = () => closure_0;
     }
   };
   items[5] = {
     key: "registerLazyCallableModule",
-    value: function registerLazyCallableModule(MobileVoiceOverlayManager, _module) {
+    value: function registerLazyCallableModule(MobileVoiceOverlayManager, _defineProperties) {
+      let closure_1 = _defineProperties;
       this._lazyCallableModules[MobileVoiceOverlayManager] = () => {
-        if (_module) {
-          let closure_0 = _module();
-          const _module = null;
+        if (callback) {
+          let closure_0 = callback();
+          callback = null;
         }
         return closure_0;
       };
@@ -106,10 +111,9 @@ export default () => {
   };
   items[6] = {
     key: "getCallableModule",
-    value: function getCallableModule(module) {
-      const tmp = this._lazyCallableModules[module];
+    value: function getCallableModule(closure_0) {
       let tmpResult = null;
-      if (tmp) {
+      if (this._lazyCallableModules[closure_0]) {
         tmpResult = tmp();
       }
       return tmpResult;
@@ -117,9 +121,9 @@ export default () => {
   };
   items[7] = {
     key: "callNativeSyncHook",
-    value: function callNativeSyncHook(arg0, arg1, substr, arg3, arg4) {
-      this.processCallbacks(arg0, arg1, substr, arg3, arg4);
-      return MessageQueue.nativeCallSyncHook(arg0, arg1, substr);
+    value: function callNativeSyncHook(closure_0, closure_1, substr, arg3, arg4) {
+      this.processCallbacks(closure_0, closure_1, substr, arg3, arg4);
+      return MessageQueue.nativeCallSyncHook(closure_0, closure_1, substr);
     }
   };
   items[8] = {
@@ -147,14 +151,14 @@ export default () => {
   };
   items[9] = {
     key: "enqueueNativeCall",
-    value: function enqueueNativeCall(array, error, array2, arg3, arg4) {
+    value: function enqueueNativeCall(array, closure_1, closure_0, arg3, arg4) {
       const self = this;
-      this.processCallbacks(array, error, array2, arg3, arg4);
+      this.processCallbacks(array, closure_1, closure_0, arg3, arg4);
       const first = this._queue[0];
       first.push(array);
       let arr1 = this._queue[1];
-      arr1.push(error);
-      arr1 = this._queue[2].push(array2);
+      arr1.push(closure_1);
+      arr1 = this._queue[2].push(closure_0);
       const timestamp = Date.now();
       if (MessageQueue.nativeFlushQueueImmediate) {
         if (timestamp - self._lastFlush >= 5) {
@@ -164,10 +168,10 @@ export default () => {
           const result = MessageQueue.nativeFlushQueueImmediate(self._queue);
         }
       }
-      let obj = callback(closure_2[3]);
+      let obj = outer1_1(outer1_2[3]);
       obj.counterEvent("pending_js_to_native_queue", self._queue[0].length);
       if (self.__spy) {
-        obj = { type: 1, module: "" + array, method: error, args: array2 };
+        obj = { type: 1, module: "" + array, method: closure_1, args: closure_0 };
         self.__spy(obj);
       }
     }
@@ -208,34 +212,34 @@ export default () => {
     key: "__callReactNativeMicrotasks",
     value: function __callReactNativeMicrotasks() {
       const self = this;
-      callback(closure_2[3]).beginEvent("JSTimers.callReactNativeMicrotasks()");
+      outer1_1(outer1_2[3]).beginEvent("JSTimers.callReactNativeMicrotasks()");
       if (null != this._reactNativeMicrotasksCallback) {
         const result = self._reactNativeMicrotasksCallback();
       }
-      const obj = callback(closure_2[3]);
-      callback(closure_2[3]).endEvent();
+      const obj = outer1_1(outer1_2[3]);
+      outer1_1(outer1_2[3]).endEvent();
     }
   };
   items[15] = {
     key: "__callFunction",
-    value: function __callFunction(module, method, args) {
+    value: function __callFunction(closure_0, closure_1, closure_2) {
       const self = this;
       this._lastFlush = Date.now();
       this._eventLoopStartTime = this._lastFlush;
-      const beginEvent = callback(closure_2[3]).beginEvent;
+      const beginEvent = outer1_1(outer1_2[3]).beginEvent;
       if (this.__spy) {
         const _HermesInternal2 = HermesInternal;
-        beginEvent("" + tmp4 + "." + tmp5 + "(" + tmp(tmp2[5]).default(args) + ")");
+        beginEvent("" + tmp4 + "." + tmp5 + "(" + tmp(tmp2[5]).default(closure_2) + ")");
         const tmpResult = tmp(tmp2[5]);
       } else {
         const _HermesInternal = HermesInternal;
         beginEvent("" + tmp4 + "." + tmp5 + "(...)");
       }
       if (self.__spy) {
-        const obj = { type: 0, module, method, args };
+        const obj = { type: 0, module: closure_0, method: closure_1, args: closure_2 };
         self.__spy(obj);
       }
-      const callableModule = self.getCallableModule(module);
+      const callableModule = self.getCallableModule(closure_0);
       if (!callableModule) {
         const _Object = Object;
         const keys = Object.keys(self._lazyCallableModules);
@@ -245,29 +249,29 @@ export default () => {
           str9 = "true";
         }
         const _HermesInternal3 = HermesInternal;
-        callback(closure_2[6])(false, "Failed to call into JavaScript module method " + module + "." + method + "(). Module has not been registered as callable. Bridgeless Mode: " + str9 + ". Registered callable JavaScript modules (n = " + keys.length + "): " + joined + ".\n          A frequent cause of the error is that the application entry file path is incorrect. This can also happen when the JS bundle is corrupt or there is an early initialization error when loading React Native.");
-        const tmp23 = callback(closure_2[6]);
+        outer1_1(outer1_2[6])(false, "Failed to call into JavaScript module method " + closure_0 + "." + closure_1 + "(). Module has not been registered as callable. Bridgeless Mode: " + str9 + ". Registered callable JavaScript modules (n = " + keys.length + "): " + joined + ".\n          A frequent cause of the error is that the application entry file path is incorrect. This can also happen when the JS bundle is corrupt or there is an early initialization error when loading React Native.");
+        const tmp23 = outer1_1(outer1_2[6]);
       }
-      if (!callableModule[method]) {
+      if (!callableModule[closure_1]) {
         const _HermesInternal4 = HermesInternal;
-        callback(closure_2[6])(false, "Failed to call into JavaScript module method " + module + "." + method + "(). Module exists, but the method is undefined.");
-        const tmp32 = callback(closure_2[6]);
+        outer1_1(outer1_2[6])(false, "Failed to call into JavaScript module method " + closure_0 + "." + closure_1 + "(). Module exists, but the method is undefined.");
+        const tmp32 = outer1_1(outer1_2[6]);
       }
-      callableModule[method].apply(callableModule, args);
-      const obj3 = callableModule[method];
-      const tmp = callback;
-      const tmp2 = closure_2;
-      const tmp3 = callback(closure_2[3]);
-      callback(closure_2[3]).endEvent();
+      callableModule[closure_1].apply(callableModule, closure_2);
+      const obj3 = callableModule[closure_1];
+      tmp = outer1_1;
+      tmp2 = outer1_2;
+      const tmp3 = outer1_1(outer1_2[3]);
+      outer1_1(outer1_2[3]).endEvent();
     }
   };
   items[16] = {
     key: "__invokeCallback",
-    value: function __invokeCallback(arg0, arg1) {
+    value: function __invokeCallback(closure_0, closure_1) {
       const self = this;
       this._lastFlush = Date.now();
       this._eventLoopStartTime = this._lastFlush;
-      if (1 & arg0) {
+      if (1 & closure_0) {
         let value = self._successCallbacks.get(tmp);
         const _successCallbacks = self._successCallbacks;
       } else {
@@ -277,9 +281,9 @@ export default () => {
       if (value) {
         self._successCallbacks.delete(tmp);
         self._failureCallbacks.delete(tmp);
-        obj.apply(undefined, callback2(arg1));
+        obj.apply(undefined, outer1_3(closure_1));
       }
-      const obj = value;
+      obj = value;
     }
   };
   const items1 = [
@@ -310,4 +314,4 @@ export default () => {
     }
   ];
   return callback(MessageQueue, items, items1);
-}();
+})();

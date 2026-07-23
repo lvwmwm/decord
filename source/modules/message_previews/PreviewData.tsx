@@ -1,52 +1,58 @@
-// Module ID: 12528
-// Function ID: 96137
+// Module ID: 12642
+// Function ID: 98293
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 3768, 4142, 4351, 21, 2]
 
-// Module 12528 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12642 (_createForOfIteratorHelperLoose)
+import set from "set";
+import _defineProperties from "_defineProperties";
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,21 +89,16 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const tmp2 = () => {
+let tmp2 = (() => {
   class PreviewData {
     constructor() {
-      tmp = closure_3(this, PreviewData);
+      tmp = outer1_3(this, PreviewData);
       this.localNeeded = true;
       map = new Map();
       this.messages = map;
       return;
     }
   }
-  const arg1 = PreviewData;
   let obj = {
     key: "isLatest",
     value(arg0, arg1) {
@@ -155,11 +156,11 @@ const tmp2 = () => {
       const value = messages.get(arg0);
       let tmp2 = null == value || null == value.message;
       if (!tmp2) {
-        tmp2 = value.message instanceof closure_5;
+        tmp2 = value.message instanceof outer1_5;
       }
       if (!tmp2) {
-        value.message = PreviewData(closure_2[4]).createMessageRecord(value.message);
-        const obj = PreviewData(closure_2[4]);
+        value.message = PreviewData(outer1_2[4]).createMessageRecord(value.message);
+        const obj = PreviewData(outer1_2[4]);
       }
       let message;
       if (null != value) {
@@ -203,8 +204,8 @@ const tmp2 = () => {
         }
         let tmp4 = null == id;
         if (!tmp4) {
-          tmp4 = callback(closure_2[5]).compare(id.id, id) > 0;
-          const obj = callback(closure_2[5]);
+          tmp4 = outer1_1(outer1_2[5]).compare(id.id, id) > 0;
+          const obj = outer1_1(outer1_2[5]);
         }
         tmp2 = tmp4;
       }
@@ -218,7 +219,7 @@ const tmp2 = () => {
     value(arg0, arg1) {
       let done;
       const self = this;
-      const tmp = callback3(arg0);
+      const tmp = outer1_7(arg0);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -248,7 +249,7 @@ const tmp2 = () => {
             }
           }
           if (id === id.id) {
-            let obj = PreviewData(closure_2[4]);
+            let obj = PreviewData(outer1_2[4]);
             if (tmp3) {
               let updateMessageRecordResult = obj.updateMessageRecord(str.message, id);
             } else {
@@ -260,7 +261,7 @@ const tmp2 = () => {
             str = "message";
             obj["message"] = updateMessageRecordResult;
             self = messages.set(channel_id, obj);
-            const tmp3 = str.message instanceof closure_5;
+            tmp3 = str.message instanceof outer1_5;
           }
         }
       }
@@ -274,7 +275,7 @@ const tmp2 = () => {
     }
   };
   return callback(PreviewData, items);
-}();
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/message_previews/PreviewData.tsx");
+})();
+let result = require("_callSuper").fileFinishedImporting("modules/message_previews/PreviewData.tsx");
 
 export const PreviewData = tmp2;

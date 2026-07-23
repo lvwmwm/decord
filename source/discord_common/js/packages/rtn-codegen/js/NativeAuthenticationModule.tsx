@@ -1,12 +1,12 @@
-// Module ID: 14663
-// Function ID: 110571
+// Module ID: 14778
+// Function ID: 112735
 // Name: enforcing
-// Dependencies: []
+// Dependencies: [27, 2]
 
-// Module 14663 (enforcing)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+// Module 14778 (enforcing)
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAuthenticationModule");
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAuthenticationModule.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAuthenticationModule.tsx");
 
 export default enforcing;

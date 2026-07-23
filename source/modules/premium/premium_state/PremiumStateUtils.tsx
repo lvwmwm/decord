@@ -1,12 +1,11 @@
 // Module ID: 1864
-// Function ID: 20533
+// Function ID: 20534
 // Name: parseServerPremiumState
-// Dependencies: []
+// Dependencies: [2]
 // Exports: parseServerPremiumState
 
 // Module 1864 (parseServerPremiumState)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/premium/premium_state/PremiumStateUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/premium_state/PremiumStateUtils.tsx");
 
 export const parseServerPremiumState = function parseServerPremiumState(premium_state) {
   let tmp = null;

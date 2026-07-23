@@ -1,31 +1,33 @@
-// Module ID: 14129
-// Function ID: 107255
+// Module ID: 14243
+// Function ID: 109411
 // Name: useEnableSwitchIconsSettingValue
-// Dependencies: []
+// Dependencies: [4122, 7662, 566, 1324, 10095, 1212, 13370, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14129 (useEnableSwitchIconsSettingValue)
+// Module 14243 (useEnableSwitchIconsSettingValue)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
 function useEnableSwitchIconsSettingValue() {
-  const items = [closure_3];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => isSwitchIconsEnabled.isSwitchIconsEnabled);
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isSwitchIconsEnabled);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.S3z+pV);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["S3z+pV"]);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.ACCESSIBILITY,
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: useEnableSwitchIconsSettingValue,
-  onValueChange: arg1(dependencyMap[6]).setSwitchIconsEnabled,
+  onValueChange: require("setFontSize").setSwitchIconsEnabled,
   usePredicate: function useShowSwitchIconsSetting() {
-    return importDefault(dependencyMap[3])("SettingsAccessibilityScreen");
+    return importDefault(1324)("SettingsAccessibilityScreen");
   },
   hasIcon: true
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/EnableSwitchIconsSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/EnableSwitchIconsSetting.tsx");
 
-export default toggle;
+export default createToggle;
 export { useEnableSwitchIconsSettingValue };

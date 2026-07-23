@@ -1,46 +1,48 @@
-// Module ID: 14581
-// Function ID: 109894
-// Dependencies: []
+// Module ID: 14696
+// Function ID: 112058
+// Dependencies: [31, 27, 33, 4130, 689, 1456, 1557, 5503, 13506, 5165, 13503, 2]
 
-// Module 14581
-const ScrollView = arg1(dependencyMap[1]).ScrollView;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 14696
+import { ScrollView } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, padding: importDefault(dependencyMap[4]).space.PX_16 };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
 obj.container = obj;
-let closure_5 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScreen() {
-  let obj = callback(dependencyMap[5]);
-  const callback = obj.useNavigation();
-  obj = { style: callback2().container };
-  obj = { paddingBottom: importDefault(dependencyMap[6])().bottom + importDefault(dependencyMap[4]).space.PX_16 };
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function DevToolsPerformanceTestingScreen() {
+  let obj = _require(1456);
+  _require = obj.useNavigation();
+  obj = { style: callback().container };
+  obj = { paddingBottom: importDefault(1557)().bottom + importDefault(689).space.PX_16 };
   obj.contentContainerStyle = obj;
   const obj1 = { hasIcons: true };
-  const entries = Object.entries(callback(dependencyMap[8]).PerformanceTestingScreens);
+  const entries = Object.entries(_require(13506).PerformanceTestingScreens);
   obj1.children = entries.map((arg0) => {
     let tmp;
     [tmp, ] = arg0;
-    const obj = {
+    let obj = {
       label: tmp2,
-      icon: callback2(callback(closure_2[9]).TableRow.Icon, { IconComponent: tmp3 }),
+      icon: outer1_4(callback(outer1_2[9]).TableRow.Icon, { IconComponent: tmp3 }),
       arrow: true,
       onPress() {
-        if (null != arr.push) {
-          const arr = arr.push(arr);
+        if (null != outer1_0.push) {
+          outer1_0.push(callback);
         } else {
-          let obj = arr(closure_2[10]);
-          obj = { screenKey: arr };
+          let obj = callback(outer2_2[10]);
+          obj = { screenKey: callback };
           obj.navigateToDevTools(obj);
         }
       }
     };
-    return callback2(callback(closure_2[9]).TableRow, obj, tmp);
+    return outer1_4(callback(outer1_2[9]).TableRow, obj, tmp);
   });
-  obj.children = jsx(callback(dependencyMap[7]).TableRowGroup, obj1);
-  return <ScrollView {...obj} />;
+  obj.children = jsx(_require(5503).TableRowGroup, { hasIcons: true });
+  return <ScrollView paddingBottom={importDefault(1557)().bottom + importDefault(689).space.PX_16} />;
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");
 
 export default memoResult;

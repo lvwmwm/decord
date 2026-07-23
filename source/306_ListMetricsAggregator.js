@@ -1,27 +1,28 @@
 // Module ID: 306
 // Function ID: 4715
 // Name: ListMetricsAggregator
-// Dependencies: []
+// Dependencies: [6, 7, 44, 304]
 
 // Module 306 (ListMetricsAggregator)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export default () => {
+const require = arg1;
+
+export default (() => {
   class ListMetricsAggregator {
     constructor() {
-      tmp = closure_3(this, ListMetricsAggregator);
+      tmp = outer1_3(this, ListMetricsAggregator);
       this._averageCellLength = 0;
       map = new Map();
       this._cellMetrics = map;
       this._highestMeasuredCellIndex = 0;
       this._measuredCellsLength = 0;
       this._measuredCellsCount = 0;
-      this._orientation = { 0: true, 0: true };
+      this._orientation = { horizontal: false, rtl: false };
       return;
     }
   }
-  const arg1 = ListMetricsAggregator;
   let obj = {
     key: "notifyCellLayout",
     value: function notifyCellLayout(orientation) {
@@ -115,7 +116,7 @@ export default () => {
       if (tmp5) {
         tmp5 = first < getItemCount(data);
       }
-      callback(closure_2[2])(tmp5, `Tried to get frame for out of range index ${first}`);
+      outer1_1(outer1_2[2])(tmp5, `Tried to get frame for out of range index ${first}`);
       const obj = { length: self._averageCellLength, offset: sum, index: first, isMounted: false };
       return obj;
     }
@@ -133,10 +134,10 @@ export default () => {
       if (tmp2) {
         tmp2 = first < getItemCount(data);
       }
-      callback(closure_2[2])(tmp2, `Tried to get metrics for out of range cell index ${first}`);
+      outer1_1(outer1_2[2])(tmp2, `Tried to get metrics for out of range cell index ${first}`);
       keyExtractor = keyExtractor.keyExtractor;
       if (null == keyExtractor) {
-        keyExtractor = ListMetricsAggregator(closure_2[3]).keyExtractor;
+        keyExtractor = ListMetricsAggregator(outer1_2[3]).keyExtractor;
       }
       const _cellMetrics = this._cellMetrics;
       const value = _cellMetrics.get(keyExtractor(getItem(data, first), first));
@@ -154,7 +155,7 @@ export default () => {
       } else {
         return null;
       }
-      const tmp = callback(closure_2[2]);
+      const tmp = outer1_1(outer1_2[2]);
     }
   };
   items[7] = {
@@ -200,7 +201,7 @@ export default () => {
           if (null == _contentLength) {
             _contentLength = self._contentLength;
           }
-          callback(closure_2[2])(null != _contentLength, "ListMetricsAggregator must be notified of list content layout before resolving offsets");
+          outer1_1(outer1_2[2])(null != _contentLength, "ListMetricsAggregator must be notified of list content layout before resolving offsets");
           return _contentLength - (self._selectOffset(layout) + self._selectLength(layout));
         }
       }
@@ -215,7 +216,7 @@ export default () => {
       if (this._orientation.horizontal) {
         diff = arg0;
         if (tmp) {
-          callback(closure_2[2])(null != self._contentLength, "ListMetricsAggregator must be notified of list content layout before resolving offsets");
+          outer1_1(outer1_2[2])(null != self._contentLength, "ListMetricsAggregator must be notified of list content layout before resolving offsets");
           diff = self._contentLength - arg0;
         }
       }
@@ -260,4 +261,4 @@ export default () => {
     }
   };
   return callback(ListMetricsAggregator, items);
-}();
+})();

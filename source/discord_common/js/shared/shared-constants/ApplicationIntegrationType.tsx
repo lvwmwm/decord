@@ -1,10 +1,9 @@
-// Module ID: 8174
-// Function ID: 64528
+// Module ID: 8180
+// Function ID: 64565
 // Name: ApplicationIntegrationType
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8174 (ApplicationIntegrationType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationIntegrationType.tsx");
+// Module 8180 (ApplicationIntegrationType)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationIntegrationType.tsx");
 
 export const ApplicationIntegrationType = { GUILD_INSTALL: 0, [0]: "GUILD_INSTALL", USER_INSTALL: 1, [1]: "USER_INSTALL" };

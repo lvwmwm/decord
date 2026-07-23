@@ -1,39 +1,41 @@
-// Module ID: 10663
-// Function ID: 83175
+// Module ID: 10673
+// Function ID: 83225
 // Name: useLocalStorageState
-// Dependencies: []
+// Dependencies: [57, 31, 587, 4559, 2]
 // Exports: useLocalStorageState
 
-// Module 10663 (useLocalStorageState)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("hooks/useLocalStorageState.tsx");
+// Module 10673 (useLocalStorageState)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+let result = require("Storage").fileFinishedImporting("hooks/useLocalStorageState.tsx");
 
 export const useLocalStorageState = function useLocalStorageState(arg0, arg1) {
-  arg1 = arg0;
+  let closure_0 = arg0;
   const importDefault = arg1;
   const tmp = callback(React.useState(() => {
-    const Storage = arg0(closure_2[2]).Storage;
-    let value = Storage.get(arg0);
+    const Storage = callback(587).Storage;
+    let value = Storage.get(callback);
     if (null == value) {
-      value = arg1;
+      value = closure_1;
     }
     return value;
   }), 2);
-  let closure_2 = tmp[1];
-  importDefault(closure_2[3])(() => {
-    const Storage = arg0(closure_2[2]).Storage;
-    if (null == Storage.get(arg0)) {
-      const Storage2 = arg0(closure_2[2]).Storage;
-      const result = Storage2.set(arg0, arg1);
+  const dependencyMap = tmp[1];
+  importDefault(4559)(() => {
+    const Storage = callback(587).Storage;
+    if (null == Storage.get(callback)) {
+      const Storage2 = callback(587).Storage;
+      const result = Storage2.set(callback, closure_1);
     }
   });
   const items = [tmp[0], ];
   const items1 = [arg0];
   items[1] = React.useCallback((arg0) => {
-    callback(arg0);
-    const Storage = arg0(callback[2]).Storage;
-    const result = Storage.set(arg0, arg0);
+    dependencyMap(arg0);
+    const Storage = callback(587).Storage;
+    const result = Storage.set(callback, arg0);
   }, items1);
   return items;
 };

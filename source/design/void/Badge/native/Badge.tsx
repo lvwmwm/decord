@@ -1,18 +1,31 @@
-// Module ID: 12977
-// Function ID: 98696
+// Module ID: 13091
+// Function ID: 100852
 // Name: Badge
-// Dependencies: []
+// Dependencies: [31, 27, 1921, 653, 1275, 33, 4130, 689, 477, 566, 7533, 1827, 2]
 // Exports: MaskedBadge
 
-// Module 12977 (Badge)
+// Module 13091 (Badge)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import PX_16 from "PX_16";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import { space } from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "_isNativeReflectConstruct";
+
 let BADGE_PADDING;
 let BADGE_SIZE;
+let closure_6;
+let closure_7;
+let require = arg1;
 class Badge {
   constructor(arg0) {
     value = global.value;
-    arg1 = value;
+    closure_0 = value;
     style = global.style;
-    importDefault = style;
     flag = global.accessibilityElementsHidden;
     ({ dotStyle, textStyle, accessible, accessibilityLabel } = global);
     if (flag === undefined) {
@@ -34,23 +47,23 @@ class Badge {
     if (flag3 === undefined) {
       flag3 = false;
     }
-    closure_2 = flag3;
+    c2 = flag3;
     flag4 = global.eventsMentionBadge;
     if (flag4 === undefined) {
       flag4 = false;
     }
-    closure_3 = flag4;
+    c3 = flag4;
     flag5 = global.isMentionLowImportance;
     if (flag5 === undefined) {
       flag5 = false;
     }
-    closure_4 = flag5;
-    closure_5 = undefined;
-    items2 = closure_11();
-    closure_5 = items2;
-    obj = arg1(closure_2[9]);
+    c4 = flag5;
+    c5 = undefined;
+    items2 = c11();
+    c5 = items2;
+    obj = require("initialize");
     items = [];
-    items[0] = closure_5;
+    items[0] = c5;
     items1 = [, , , , , ];
     items1[0] = items2;
     items1[1] = style;
@@ -77,26 +90,26 @@ class Badge {
       }
       tmp7 = jsx;
       if (flag2) {
-        tmp14 = closure_4;
+        tmp14 = c4;
         obj1 = {};
         items2 = [, ];
         items2[0] = items2.noCount;
         items2[1] = dotStyle;
         obj1.style = items2;
-        tmp7Result = tmp7(closure_4, obj1);
+        tmp7Result = tmp7(c4, obj1);
       } else {
-        tmp8 = importDefault;
-        tmp9 = closure_2;
+        tmp8 = style;
+        tmp9 = c2;
         num2 = 10;
-        obj2 = {};
+        obj2 = { style: null, numberOfLines: 1, allowFontScaling: false };
         items3 = [, ];
         items3[0] = items2.badgeText;
         items3[1] = textStyle;
         obj2.style = items3;
-        tmp11 = arg1;
+        tmp11 = closure_0;
         num3 = 11;
-        tmp10 = importDefault(closure_2[10]);
-        obj4 = arg1(closure_2[11]);
+        tmp10 = require("module_7533");
+        obj4 = require("shortenAndLocalizeNumber");
         tmp12 = globalThis;
         _Math = Math;
         obj2.children = obj4.humanizeValue(Math.min(value, num), stateFromStores);
@@ -109,44 +122,34 @@ class Badge {
     return tmp4Result;
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[4]);
-({ BADGE_MASK_SIZE: closure_6, BADGE_MASK_UNREAD_SIZE: closure_7, BADGE_PADDING, BADGE_SIZE } = tmp2);
-const BADGE_SIZE_UNREAD = tmp2.BADGE_SIZE_UNREAD;
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj = arg1(dependencyMap[6]);
-obj = { badgeMask: obj };
-obj = { position: "absolute", bottom: -BADGE_PADDING, right: -BADGE_PADDING, padding: BADGE_PADDING, zIndex: 1 };
-const obj1 = { "Null": "<string:17134657>", "Null": "<string:1147228416>", "Null": "<string:17134657>", "Null": "<string:1218597120>", "Null": "<string:17134657>", "Null": "<string:1057575168>", paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: importDefault(dependencyMap[7]).space.PX_8 };
-obj.badge = obj1;
-const obj2 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: importDefault(dependencyMap[7]).colors.WHITE, fontSize: 12 };
-let obj5 = arg1(dependencyMap[8]);
-const space = importDefault(dependencyMap[7]).space;
-obj2.lineHeight = obj5.isAndroid() ? space.PX_12 : space.PX_16;
-obj2.fontFamily = arg1(dependencyMap[3]).Fonts.PRIMARY_BOLD;
+({ BADGE_MASK_SIZE: closure_6, BADGE_MASK_UNREAD_SIZE: closure_7, BADGE_PADDING, BADGE_SIZE } = PX_16);
+const BADGE_SIZE_UNREAD = PX_16.BADGE_SIZE_UNREAD;
+_createForOfIteratorHelperLoose = { badgeMask: _createForOfIteratorHelperLoose };
+_createForOfIteratorHelperLoose = { position: "absolute", bottom: -BADGE_PADDING, right: -BADGE_PADDING, padding: BADGE_PADDING, zIndex: 1 };
+let obj1 = { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: require("_createForOfIteratorHelperLoose").space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+_createForOfIteratorHelperLoose.badge = obj1;
+const obj2 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: require("_createForOfIteratorHelperLoose").colors.WHITE, fontSize: 12 };
+set = set.isAndroid();
+obj2.lineHeight = set ? space.PX_12 : space.PX_16;
+obj2.fontFamily = require("ME").Fonts.PRIMARY_BOLD;
 obj2.textAlign = "center";
-let obj6 = arg1(dependencyMap[8]);
 let str;
-if (obj6.isAndroid()) {
+if (set.isAndroid()) {
   str = "center";
 }
 obj2.textAlignVertical = str;
-obj.badgeText = obj2;
-const obj3 = { "Bool(false)": "__closure", "Bool(false)": "4", "Bool(false)": "gsw", backgroundColor: importDefault(dependencyMap[7]).colors.WHITE };
-obj.noCount = obj3;
-const isAndroidResult = obj5.isAndroid();
-obj.unread = { backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
-obj5 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_FEEDBACK_NOTIFICATION };
-obj.mention = obj5;
-obj6 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
-obj.lowImportanceMention = obj6;
-const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
-obj.eventsMentionBadge = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
-let closure_11 = obj.createStyles(obj);
-const obj7 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("design/void/Badge/native/Badge.tsx");
+_createForOfIteratorHelperLoose.badgeText = obj2;
+const obj3 = { width: 5, height: 5, borderRadius: 2.5, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.noCount = obj3;
+_createForOfIteratorHelperLoose.unread = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
+set = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+_createForOfIteratorHelperLoose.mention = set;
+set = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+_createForOfIteratorHelperLoose.lowImportanceMention = set;
+let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
+_createForOfIteratorHelperLoose.eventsMentionBadge = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = set.fileFinishedImporting("design/void/Badge/native/Badge.tsx");
 
 export default Badge;
 export const MaskedBadge = function MaskedBadge(maskStyle) {
@@ -160,7 +163,6 @@ export const MaskedBadge = function MaskedBadge(maskStyle) {
   let style;
   let textStyle;
   maskStyle = maskStyle.maskStyle;
-  const arg1 = maskStyle;
   const value = maskStyle.value;
   const importDefault = value;
   let flag = maskStyle.unreadIndicator;
@@ -168,16 +170,15 @@ export const MaskedBadge = function MaskedBadge(maskStyle) {
   if (flag === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
-  let closure_3;
-  const tmp = callback();
-  closure_3 = tmp;
-  const items = [tmp, maskStyle, flag, value];
+  let c3;
+  const tmp = _createForOfIteratorHelperLoose();
+  c3 = tmp;
+  let items = [tmp, maskStyle, flag, value];
   if (value > 0) {
     let obj = { pointerEvents: "none", style: tmp2, onLayout };
     obj = { style, textStyle, dotStyle, value, maxValue, hideCount, unreadIndicator: flag, accessibilityLabel, accessibilityElementsHidden, importantForAccessibility, isMentionLowImportance: maskStyle.isMentionLowImportance };
-    obj.children = <Badge {...obj} />;
-    let tmp3 = <View {...obj} />;
+    obj.children = <Badge style={style} textStyle={textStyle} dotStyle={dotStyle} value={value} maxValue={maxValue} hideCount={hideCount} unreadIndicator={flag} accessibilityLabel={accessibilityLabel} accessibilityElementsHidden={accessibilityElementsHidden} importantForAccessibility={importantForAccessibility} isMentionLowImportance={arg0.isMentionLowImportance} />;
+    let tmp3 = <View style={style} textStyle={textStyle} dotStyle={dotStyle} value={value} maxValue={maxValue} hideCount={hideCount} unreadIndicator={flag} accessibilityLabel={accessibilityLabel} accessibilityElementsHidden={accessibilityElementsHidden} importantForAccessibility={importantForAccessibility} isMentionLowImportance={arg0.isMentionLowImportance} />;
   } else {
     tmp3 = null;
   }

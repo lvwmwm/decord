@@ -1,7 +1,7 @@
 // Module ID: 29
 // Function ID: 1197
 // Name: _objectWithoutProperties
-// Dependencies: []
+// Dependencies: [30]
 
 // Module 29 (_objectWithoutProperties)
 
@@ -9,7 +9,7 @@ export default function _objectWithoutProperties(arg0, arr) {
   if (null == arg0) {
     return {};
   } else {
-    const tmp5 = require(dependencyMap[0])(arg0, arr);
+    const tmp5 = require(30) /* _objectWithoutPropertiesLoose */(arg0, arr);
     const _Object2 = Object;
     if (Object.getOwnPropertySymbols) {
       const _Object = Object;

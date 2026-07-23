@@ -1,49 +1,55 @@
-// Module ID: 14550
-// Function ID: 109597
+// Module ID: 14664
+// Function ID: 111757
 // Name: TestView
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1849, 33, 4130, 689, 624, 4541, 4126, 5167, 7512, 4543, 4098, 14665, 1934, 5160, 8769, 2]
 
-// Module 14550 (TestView)
+// Module 14664 (TestView)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { ScrollView } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function TestView() {
-  const tmp = callback3();
-  const tmp2 = callback(importAllResult.useState("1341506443580276736"), 2);
+  let tmp = callback2();
+  const tmp2 = first2(importAllResult.useState("1341506443580276736"), 2);
   const first = tmp2[0];
-  const arg1 = first;
   let closure_1 = tmp2[1];
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj = first(first1[7]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
   let id;
   if (null != stateFromStores) {
     id = stateFromStores.id;
   }
-  const tmp7 = callback(importAllResult.useState(id), 2);
-  const first1 = tmp7[0];
-  const dependencyMap = first1;
-  const tmp9 = callback(importAllResult.useState(undefined), 2);
-  const first2 = tmp9[0];
-  const callback = first2;
+  const tmp7 = first2(importAllResult.useState(id), 2);
+  first1 = tmp7[0];
+  const tmp9 = first2(importAllResult.useState(undefined), 2);
+  first2 = tmp9[0];
   obj = { spacing: 16, style: tmp.container };
-  const items1 = [callback2(arg1(dependencyMap[9]).Text, {}), ];
+  const items1 = [callback(first(first1[9]).Text, { variant: "text-lg/bold", children: "Android Payment Flow Test" }), ];
   obj = {};
-  const obj1 = { UNKNOWN_EMOJI: "Array", paddingVertical: "isArray", getChangeTitle: "r", style: tmp.title };
-  const items2 = [
-    callback2(arg1(dependencyMap[9]).Text, obj1),
-    callback2(arg1(dependencyMap[11]).TextInput, {
-      containerStyle: tmp.textInput,
-      value: first,
-      onChange(arg0) {
-        return callback(arg0);
-      }
-    }),
-  ,
-  ,
-
-  ];
-  const obj3 = { 102629979: "r", 1895638838: "maxMediaHeight", -111823007: "Array", 1823030446: "EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW", -183988864: "f", 1381196034: "newPrice", containerStyle: tmp.textInput, value: first1, onChange: tmp7[1] };
-  items2[2] = callback2(arg1(dependencyMap[11]).TextInput, obj3);
-  const obj4 = { 102629979: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM", 1895638838: "primary", -111823007: "lg", 1823030446: "popoutTargetElementRef", -183988864: "ctaTimerMilliSeconds", 1381196034: "DARK_MODE_THEME_PICKER", containerStyle: tmp.textInput, value: first2, onChange: tmp9[1] };
-  items2[3] = callback2(arg1(dependencyMap[11]).TextInput, obj4);
+  const obj1 = { style: tmp.title, variant: "text-md/bold", children: "Gift Purchase SKU" };
+  const items2 = [callback(first(first1[9]).Text, obj1), , , , ];
+  let obj2 = {
+    containerStyle: tmp.textInput,
+    label: "SKU ID",
+    value: first,
+    placeholder: "Default: 1341506443580276736 (Anime Shy)",
+    onChange(arg0) {
+      return callback(arg0);
+    },
+    isClearable: true
+  };
+  items2[1] = callback(first(first1[11]).TextInput, obj2);
+  let obj3 = { containerStyle: tmp.textInput, label: "Gift Recipient ID", value: first1, placeholder: "Recipient User ID", onChange: tmp7[1], isClearable: true };
+  items2[2] = callback(first(first1[11]).TextInput, obj3);
+  const obj4 = { containerStyle: tmp.textInput, label: "Gift Message (Optional)", value: first2, placeholder: "Here's a gift for you!", onChange: tmp9[1], isClearable: true };
+  items2[3] = callback(first(first1[11]).TextInput, obj4);
   const obj5 = {};
   let tmp14 = null === first;
   if (!tmp14) {
@@ -64,35 +70,29 @@ function TestView() {
       const obj3 = callback(first1[13]);
     }
   };
-  items2[4] = callback2(arg1(dependencyMap[12]).Button, obj5);
+  items2[4] = callback(first(first1[12]).Button, obj5);
   obj.children = items2;
-  items1[1] = closure_8(arg1(dependencyMap[10]).Card, obj);
+  items1[1] = closure_8(first(first1[10]).Card, obj);
   obj.children = items1;
-  return closure_8(arg1(dependencyMap[8]).Stack, obj);
+  return closure_8(first(first1[8]).Stack, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const ScrollView = arg1(dependencyMap[2]).ScrollView;
-let closure_6 = importDefault(dependencyMap[3]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj1 = arg1(dependencyMap[5]);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
 obj.wrap = obj;
-obj1 = { padding: importDefault(dependencyMap[6]).space.PX_16 };
-obj.container = obj1;
+_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+obj.container = _createForOfIteratorHelperLoose;
 obj.textInput = { marginBottom: 16 };
 obj.title = { marginBottom: 8 };
-let closure_9 = obj1.createStyles(obj);
-const tmp2 = arg1(dependencyMap[4]);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function PaymentFlowTest() {
-  const insets = importDefault(dependencyMap[16])({ includeKeyboardHeight: true }).insets;
+  const insets = importDefault(5160)({ includeKeyboardHeight: true }).insets;
   let obj = { skuIDs: [], activeSubscription: null };
-  obj = { style: callback3().wrap, contentContainerStyle: obj };
-  obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right, children: callback2(TestView, {}) };
-  obj.children = callback2(ScrollView, obj);
-  return callback2(arg1(dependencyMap[17]).NativePaymentContextProvider, obj);
+  obj = { style: callback2().wrap, contentContainerStyle: obj };
+  obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right, children: callback(TestView, {}) };
+  obj.children = callback(ScrollView, obj);
+  return callback(require(8769) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/user_settings/billing/native/PaymentFlowTest.android.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/billing/native/PaymentFlowTest.android.tsx");
 
 export default memoResult;

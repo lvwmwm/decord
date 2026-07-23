@@ -1,114 +1,112 @@
-// Module ID: 15159
-// Function ID: 114343
+// Module ID: 15274
+// Function ID: 116512
 // Name: emphasisHook
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 1906, 3752, 653, 1355, 33, 14116, 566, 8002, 4126, 4471, 1212, 9145, 3712, 1273, 15268, 4098, 15275, 1934, 15264, 4619, 4543, 9355, 2]
 // Exports: default
 
-// Module 15159 (emphasisHook)
+// Module 15274 (emphasisHook)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { AnalyticsLocations } from "ME";
+import { StaticChannelRoute } from "set";
+import jsxProd from "jsxProd";
+
+let closure_12;
+let closure_13;
+const require = arg1;
 function emphasisHook(children) {
-  return callback2(arg1(dependencyMap[12]).Text, { children });
+  const obj = { variant: "text-xs/semibold", color: "text-default", children };
+  return callback2(require(4126) /* Text */.Text, obj);
 }
 function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
-  const arg1 = activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
-  const importDefault = activeListingId;
-  const importAll = activeSubscription.changeToListingId;
-  let obj = importAll(dependencyMap[9]);
-  let obj1 = importDefault(dependencyMap[16])(activeSubscription.currentPeriodEnd);
+  const changeToListingId = activeSubscription.changeToListingId;
+  let obj = changeToListingId(14116);
+  let obj1 = activeListingId(3712)(activeSubscription.currentPeriodEnd);
   obj = {};
-  obj = {};
-  const intl = arg1(dependencyMap[14]).intl;
+  obj = { variant: "text-xs/normal", color: "text-muted" };
+  const intl = activeSubscription(1212).intl;
   obj1 = { activeListingName: callback(obj.useName(activeListingId), 1)[0], billingEndDate: obj1.format("MMMM Do"), emphasisHook };
-  obj.children = intl.format(arg1(dependencyMap[14]).t.lA7ztO, obj1);
-  const items = [callback2(arg1(dependencyMap[12]).Text, obj), callback2(arg1(dependencyMap[17]).Spacer, { size: 16 }), ];
+  obj.children = intl.format(activeSubscription(1212).t.lA7ztO, obj1);
+  const items = [callback2(activeSubscription(4126).Text, obj), callback2(activeSubscription(1273).Spacer, { size: 16 }), ];
   const obj2 = {};
-  const intl2 = arg1(dependencyMap[14]).intl;
-  obj2.text = intl2.string(arg1(dependencyMap[14]).t.SACegK);
+  const intl2 = activeSubscription(1212).intl;
+  obj2.text = intl2.string(activeSubscription(1212).t.SACegK);
   obj2.onPress = function onPress() {
-    let obj = activeListingId(paths[19]);
+    let obj = activeListingId(outer1_3[19]);
     obj = { activeSubscription, activeListingId, changeToListingId };
-    obj.openLazy(activeSubscription(paths[21])(paths[20], paths.paths), "ChangeSubscriptionCard:" + changeToListingId, obj);
+    obj.openLazy(activeSubscription(outer1_3[21])(outer1_3[20], outer1_3.paths), "ChangeSubscriptionCard:" + changeToListingId, obj);
   };
-  items[2] = callback2(arg1(dependencyMap[18]).ArrowButton, obj2);
+  items[2] = callback2(activeSubscription(15268).ArrowButton, obj2);
   obj.children = items;
   return callback3(View, obj);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const AnalyticsLocations = arg1(dependencyMap[6]).AnalyticsLocations;
-const StaticChannelRoute = arg1(dependencyMap[7]).StaticChannelRoute;
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/SubscribeButton.tsx");
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+const result = require("result").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/SubscribeButton.tsx");
 
 export default function SubscribeButton(listingId) {
   let activeSubscription;
   let activeSubscriptionListing;
   listingId = listingId.listingId;
-  const arg1 = listingId;
-  let importDefault;
-  let importAll;
-  let dependencyMap;
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_9];
-  const items1 = [listingId];
-  const stateFromStores = obj.useStateFromStores(items, () => subscriptionGroupListingForSubscriptionListing.getSubscriptionGroupListingForSubscriptionListing(listingId), items1);
+  let createSubscription;
+  let guild_id;
+  let showMemberVerificationGate;
+  let obj = listingId(showMemberVerificationGate[10]);
+  let items = [closure_9];
+  let items1 = [listingId];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getSubscriptionGroupListingForSubscriptionListing(listingId), items1);
   let id;
   if (null != stateFromStores) {
     id = stateFromStores.id;
   }
-  const tmp2 = importDefault(dependencyMap[22]);
-  ({ activeSubscriptionListing, activeSubscription } = importDefault(dependencyMap[22])(id));
+  const tmp2 = createSubscription(showMemberVerificationGate[22]);
+  ({ activeSubscriptionListing, activeSubscription } = createSubscription(showMemberVerificationGate[22])(id));
   let id1;
   if (null != activeSubscriptionListing) {
     id1 = activeSubscriptionListing.id;
   }
-  const tmp6 = function useCreateRoleSubscription(listingId) {
+  let tmp6 = (function useCreateRoleSubscription(listingId) {
     let obj = guild_id(showMemberVerificationGate[9]);
     const applicationId = guild_id(showMemberVerificationGate[9]).useApplicationId(listingId);
     const obj2 = guild_id(showMemberVerificationGate[9]);
-    const items = [closure_8];
-    if (obj3.useStateFromStores(items, () => currentlySelectedChannelId.getCurrentlySelectedChannelId()) === constants2.ROLE_SUBSCRIPTIONS) {
-      let ROLE_SUBSCRIPTIONS_TAB = constants.ROLE_SUBSCRIPTION_GATED_CHANNEL;
+    const items = [outer1_8];
+    if (obj3.useStateFromStores(items, () => outer2_8.getCurrentlySelectedChannelId()) === outer1_11.ROLE_SUBSCRIPTIONS) {
+      let ROLE_SUBSCRIPTIONS_TAB = outer1_10.ROLE_SUBSCRIPTION_GATED_CHANNEL;
     } else {
-      ROLE_SUBSCRIPTIONS_TAB = constants.ROLE_SUBSCRIPTIONS_TAB;
+      ROLE_SUBSCRIPTIONS_TAB = outer1_10.ROLE_SUBSCRIPTIONS_TAB;
     }
-    const obj3 = listingId(showMemberVerificationGate[10]);
-    obj = { planId: callback2(obj.useSubscriptionPlan(listingId), 1)[0].id, analyticsLocation: ROLE_SUBSCRIPTIONS_TAB, skuId: listingId, applicationId };
-    let createSubscription = createSubscription(showMemberVerificationGate[11]).useCreateSubscription(obj);
+    obj3 = listingId(showMemberVerificationGate[10]);
+    obj = { planId: outer1_5(obj.useSubscriptionPlan(listingId), 1)[0].id, analyticsLocation: ROLE_SUBSCRIPTIONS_TAB, skuId: listingId, applicationId };
+    createSubscription = createSubscription(showMemberVerificationGate[11]).useCreateSubscription(obj);
     createSubscription = createSubscription.createSubscription;
-    listingId = createSubscription;
-    const tmp6 = callback2(React.useState(false), 2);
-    createSubscription = tmp6[1];
-    obj = { createSubscription: React.useCallback(callback(tmp), items1), loading: tmp7 };
+    const tmp6 = outer1_5(outer1_6.useState(false), 2);
+    let closure_1 = tmp6[1];
+    obj = { createSubscription: outer1_6.useCallback(outer1_4(tmp), items1), loading: tmp7 };
     // CreateGeneratorClosureLongIndex (0x67)
-    const items1 = [createSubscription];
+    items1 = [createSubscription];
     return obj;
-  }(listingId);
-  const createSubscription = tmp6.createSubscription;
-  importDefault = createSubscription;
-  let guild_id;
+  })(listingId);
+  createSubscription = tmp6.createSubscription;
+  guild_id = undefined;
   if (null != stateFromStores) {
     guild_id = stateFromStores.guild_id;
   }
-  importAll = guild_id;
-  let obj1 = arg1(dependencyMap[23]);
-  const showMemberVerificationGate = obj1.useShowMemberVerificationGate(guild_id);
-  dependencyMap = showMemberVerificationGate;
+  let obj1 = listingId(showMemberVerificationGate[23]);
+  showMemberVerificationGate = obj1.useShowMemberVerificationGate(guild_id);
   const items2 = [createSubscription, guild_id, showMemberVerificationGate];
   if (id1 === listingId) {
-    obj = {};
-    const intl2 = arg1(dependencyMap[14]).intl;
-    obj.text = intl2.string(arg1(dependencyMap[14]).t.XvAuMo);
+    obj = { text: null, variant: "secondary", disabled: true };
+    let intl2 = listingId(showMemberVerificationGate[14]).intl;
+    obj.text = intl2.string(listingId(showMemberVerificationGate[14]).t.XvAuMo);
     obj.onPress = function onPress() {
 
     };
-    let tmp15 = callback2(arg1(dependencyMap[24]).Button, obj);
+    let tmp15 = callback2(listingId(showMemberVerificationGate[24]).Button, obj);
   } else {
     if (null != activeSubscriptionListing) {
       if (null != activeSubscription) {
@@ -117,12 +115,12 @@ export default function SubscribeButton(listingId) {
       }
     }
     obj1 = {};
-    const intl = arg1(dependencyMap[14]).intl;
-    obj1.text = intl.string(arg1(dependencyMap[14]).t.BEeXib);
+    let intl = listingId(showMemberVerificationGate[14]).intl;
+    obj1.text = intl.string(listingId(showMemberVerificationGate[14]).t.BEeXib);
     obj1.onPress = tmp9;
     obj1.loading = tmp6.loading;
-    tmp15 = callback2(importDefault(dependencyMap[25]), obj1);
-    const tmp13 = importDefault(dependencyMap[25]);
+    tmp15 = callback2(createSubscription(showMemberVerificationGate[25]), obj1);
+    const tmp13 = createSubscription(showMemberVerificationGate[25]);
   }
   return tmp15;
 };

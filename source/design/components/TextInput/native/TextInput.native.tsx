@@ -1,16 +1,14 @@
-// Module ID: 7507
-// Function ID: 60160
+// Module ID: 7512
+// Function ID: 60194
 // Name: TextInput
-// Dependencies: [1493172245, 33554461, 2030043136, 31, 33, 4126]
+// Dependencies: [31, 33, 7505, 5773, 477, 2]
 
-// Module 7507 (TextInput)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 7512 (TextInput)
+import importAllResult from "result";
+import { jsx } from "jsxProd";
 
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("design/components/TextInput/native/TextInput.native.tsx");
-
-export const TextInput = importAllResult.forwardRef((errorMessage, ref) => {
+const require = arg1;
+const forwardRefResult = importAllResult.forwardRef((errorMessage, ref) => {
   let accessibilityLabel;
   let label;
   let status;
@@ -49,6 +47,9 @@ export const TextInput = importAllResult.forwardRef((errorMessage, ref) => {
     tmp9 = id;
   }
   obj["accessibilityLabelledBy"] = tmp9;
-  obj["children"] = jsx(ref(dependencyMap[3]).TextField, obj);
-  return jsx(ref(dependencyMap[2]).Input, obj);
+  obj["children"] = jsx(require(5773) /* TextField */.TextField, { ref });
+  return jsx(require(7505) /* Input */.Input, { ref });
 });
+const result = require("Input").fileFinishedImporting("design/components/TextInput/native/TextInput.native.tsx");
+
+export const TextInput = forwardRefResult;

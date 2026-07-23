@@ -1,18 +1,20 @@
-// Module ID: 4468
-// Function ID: 39484
+// Module ID: 4472
+// Function ID: 39516
 // Name: useAlertStore
-// Dependencies: []
+// Dependencies: [57, 621, 682, 4473, 4474, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 4468 (useAlertStore)
-let closure_3 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[1]);
-obj = obj.create(() => ({ alerts: [] }));
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/AlertModal/native/useAlertStore.native.tsx");
+// Module 4472 (useAlertStore)
+import _slicedToArray from "_slicedToArray";
+import keys from "keys";
 
-export const useAlertStore = obj;
+const require = arg1;
+keys = keys.create(() => ({ alerts: [] }));
+const result = require("batchUpdates").fileFinishedImporting("design/components/AlertModal/native/useAlertStore.native.tsx");
+
+export const useAlertStore = keys;
 export const dismissAlerts = function dismissAlerts() {
-  const alerts = obj.getState().alerts;
+  const alerts = keys.getState().alerts;
   const items = [[], []];
   const tmp = callback(alerts.reduce((arg0, dismissable) => {
     let num = 0;
@@ -24,11 +26,9 @@ export const dismissAlerts = function dismissAlerts() {
     return arg0;
   }, items), 2);
   const first = tmp[0];
-  const arg1 = first;
-  const importDefault = arr4;
-  const obj = arg1(dependencyMap[2]);
-  obj.batchUpdates(() => {
-    state.setState({ alerts: arr4 });
+  const arr4 = tmp[1];
+  first(682).batchUpdates(() => {
+    outer1_4.setState({ alerts: arr4 });
     const item = first.forEach((onDismiss) => {
       let onDismissResult;
       if (null != onDismiss.onDismiss) {
@@ -38,14 +38,13 @@ export const dismissAlerts = function dismissAlerts() {
     });
   });
   if (tmp3) {
-    importDefault(dependencyMap[3])();
+    arr4(4473)();
   }
 };
-export const dismissAlert = function dismissAlert(closure_6) {
-  const arg1 = closure_6;
-  const alerts = obj.getState().alerts;
-  const found = alerts.find((key) => key.key === key);
-  const importDefault = found;
+export const dismissAlert = function dismissAlert(c6) {
+  const _require = c6;
+  let alerts = keys.getState().alerts;
+  const found = alerts.find((key) => key.key === closure_0);
   if (null != found) {
     let tmp2 = 1 === alerts.length;
     if (tmp2) {
@@ -54,40 +53,39 @@ export const dismissAlert = function dismissAlert(closure_6) {
       if (null != first) {
         key = first.key;
       }
-      tmp2 = key === closure_6;
+      tmp2 = key === c6;
     }
-    const obj = arg1(dependencyMap[2]);
-    obj.batchUpdates(() => {
-      state.setState((alerts) => {
+    _require(682).batchUpdates(() => {
+      outer1_4.setState((alerts) => {
         alerts = alerts.alerts;
-        return { alerts: alerts.filter((key) => key.key !== closure_0) };
+        return { alerts: alerts.filter((key) => key.key !== outer2_0) };
       });
       if (null != found.onDismiss) {
         found.onDismiss();
       }
     });
     if (tmp2) {
-      importDefault(dependencyMap[3])();
+      found(4473)();
     }
+    const obj = _require(682);
   }
 };
 export const openAlert = function openAlert(VOICE_PANEL_SPOILER_KEY, arg1, onCloseCallback, arg3) {
-  arg1 = VOICE_PANEL_SPOILER_KEY;
+  const _require = VOICE_PANEL_SPOILER_KEY;
   const importDefault = arg1;
   const dependencyMap = onCloseCallback;
-  let closure_3 = arg3;
-  if (0 === obj.getState().alerts.length) {
-    importDefault(dependencyMap[4])();
+  let _slicedToArray = arg3;
+  if (0 === keys.getState().alerts.length) {
+    importDefault(4474)();
   }
-  const obj = arg1(dependencyMap[2]);
-  obj.batchUpdates(() => {
-    state.setState((alerts) => {
+  _require(682).batchUpdates(() => {
+    outer1_4.setState((alerts) => {
       let obj = {};
       const items = [...alerts.alerts];
-      obj = { key: closure_0, node: closure_1, onDismiss: closure_2 };
+      obj = { key: outer1_0, node: outer1_1, onDismiss: outer1_2 };
       let dismissable;
-      if (null != dismissable) {
-        dismissable = dismissable.dismissable;
+      if (null != outer1_3) {
+        dismissable = outer1_3.dismissable;
       }
       obj.dismissable = dismissable;
       items[tmp] = obj;

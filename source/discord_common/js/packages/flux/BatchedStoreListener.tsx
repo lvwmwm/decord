@@ -1,18 +1,19 @@
 // Module ID: 625
 // Function ID: 7142
 // Name: BatchedStoreListener
-// Dependencies: []
+// Dependencies: [6, 7, 570, 2]
 
 // Module 625 (BatchedStoreListener)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const tmp2 = (() => {
   class BatchedStoreListener {
     constructor(arg0, arg1) {
-      BatchedStoreListener = this;
-      tmp = closure_2(this, BatchedStoreListener);
+      self = this;
+      tmp = outer1_2(this, self);
       this.handleStoreChange = () => {
-        const changeSentinel = self(closure_1[2]).getChangeSentinel();
+        const changeSentinel = BatchedStoreListener(outer2_1[2]).getChangeSentinel();
         if (self.storeVersionHandled !== changeSentinel) {
           self.changeCallback();
           self.storeVersionHandled = changeSentinel;
@@ -23,17 +24,17 @@ const tmp2 = () => {
       return;
     }
   }
-  const importDefault = BatchedStoreListener;
   let obj = {
     key: "attach",
     value(arg0) {
-      const BatchedStoreListener = this;
+      const self = this;
+      let closure_1 = arg0;
       const stores = this.stores;
       const item = stores.forEach((addReactChangeListener) => {
         if (null == addReactChangeListener) {
           const _Error = Error;
           const _HermesInternal = HermesInternal;
-          const error = new Error("" + addReactChangeListener + " tried to load a non-existent store. Either it isn't defined or there is a circular dependency. Loaded " + arg1 + " stores before error.");
+          const error = new Error("" + closure_1 + " tried to load a non-existent store. Either it isn't defined or there is a circular dependency. Loaded " + arg1 + " stores before error.");
           throw error;
         } else {
           const result = addReactChangeListener.addReactChangeListener(self.handleStoreChange);
@@ -45,14 +46,14 @@ const tmp2 = () => {
   obj = {
     key: "detach",
     value() {
-      const BatchedStoreListener = this;
+      const self = this;
       const stores = this.stores;
       const item = stores.forEach((removeReactChangeListener) => removeReactChangeListener.removeReactChangeListener(self.handleStoreChange));
     }
   };
   items[1] = obj;
   return callback(BatchedStoreListener, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/flux/BatchedStoreListener.tsx");
+})();
+let result = require("logger").fileFinishedImporting("../discord_common/js/packages/flux/BatchedStoreListener.tsx");
 
 export const BatchedStoreListener = tmp2;

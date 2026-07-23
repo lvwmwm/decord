@@ -1,9 +1,16 @@
 // Module ID: 367
 // Function ID: 5436
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 347, 44, 357]
 
 // Module 367 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import invariant from "invariant";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,65 +21,59 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  const importDefault = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_6(closure_5(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const dependencyMap = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = 1;
+let c8 = 1;
 
-export default (arg0) => {
+export default ((arg0) => {
   class AnimatedValueXY {
     constructor(arg0, arg1) {
       point = arg0;
       self = this;
-      tmp = closure_2(this, AnimatedValueXY);
+      tmp = outer1_2(this, AnimatedValueXY);
       items = [];
       items[0] = arg1;
-      obj = closure_5(AnimatedValueXY);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      obj = outer1_5(AnimatedValueXY);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
       if (!point) {
-        point = { 0: "%FunctionPrototype%", 0: "paddingStart" };
+        point = { x: 0, y: 0 };
       }
       if ("number" === typeof point.x) {
         if ("number" === typeof point.y) {
           tmp11 = AnimatedValueXY;
-          tmp12 = closure_1;
+          tmp12 = outer1_1;
           num = 6;
-          tmp13 = AnimatedValueXY(closure_1[6]);
+          tmp13 = AnimatedValueXY(outer1_1[6]);
           prototype = tmp13.prototype;
           tmp14 = new.target;
           tmp15 = new.target;
           tmp13 = new tmp13(point.x);
           tmp17 = tmp13;
           tmp2Result.x = tmp13;
-          tmp18 = AnimatedValueXY(closure_1[6]);
+          tmp18 = AnimatedValueXY(outer1_1[6]);
           prototype2 = tmp18.prototype;
           tmp19 = new.target;
           tmp20 = new.target;
@@ -90,19 +91,18 @@ export default (arg0) => {
         }
         return tmp2Result;
       }
-      tmp6 = AnimatedValueXY(closure_1[7]);
-      tmp7 = point.x instanceof AnimatedValueXY(closure_1[6]);
+      tmp6 = AnimatedValueXY(outer1_1[7]);
+      tmp7 = point.x instanceof AnimatedValueXY(outer1_1[6]);
       if (tmp7) {
         tmp8 = AnimatedValueXY;
-        tmp9 = closure_1;
-        tmp7 = point.y instanceof AnimatedValueXY(closure_1[6]);
+        tmp9 = outer1_1;
+        tmp7 = point.y instanceof AnimatedValueXY(outer1_1[6]);
       }
       tmp6Result = tmp6(tmp7, "AnimatedValueXY must be initialized with an object of numbers or AnimatedValues.");
       ({ x: obj2.x, y: obj2.y } = point);
       return;
     }
   }
-  const importDefault = AnimatedValueXY;
   callback2(AnimatedValueXY, arg0);
   let obj = {
     key: "setValue",
@@ -113,7 +113,7 @@ export default (arg0) => {
       y.setValue(arg0.y);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , ];
   obj = {
     key: "setOffset",
     value: function setOffset(arg0) {
@@ -184,12 +184,12 @@ export default (arg0) => {
       let _listeners;
       let x;
       let y;
-      const AnimatedValueXY = arg0;
+      let closure_0 = arg0;
       const self = this;
-      let closure_8 = tmp + 1;
-      const StringResult = String(+closure_8);
+      const outer1_8 = tmp + 1;
+      const StringResult = String(+outer1_8);
       function jointCallback(arg0) {
-        arg0(self.__getValue());
+        callback(self.__getValue());
       }
       ({ x, _listeners, y } = this);
       _listeners[StringResult] = { x: x.addListener(jointCallback), y: y.addListener(jointCallback) };
@@ -203,7 +203,7 @@ export default (arg0) => {
       x.removeListener(this._listeners[arg0].x);
       const y = this.y;
       y.removeListener(this._listeners[arg0].y);
-      delete r0[r1];
+      delete tmp[tmp2];
     }
   };
   items[9] = {
@@ -236,7 +236,7 @@ export default (arg0) => {
       x.__addChild(this);
       const y = this.y;
       y.__addChild(this);
-      callback4(AnimatedValueXY, "__attach", this, 3)([]);
+      outer1_10(AnimatedValueXY, "__attach", this, 3)([]);
     }
   };
   items[13] = {
@@ -246,7 +246,7 @@ export default (arg0) => {
       x.__removeChild(this);
       const y = this.y;
       y.__removeChild(this);
-      callback4(AnimatedValueXY, "__detach", this, 3)([]);
+      outer1_10(AnimatedValueXY, "__detach", this, 3)([]);
     }
   };
   items[14] = {
@@ -257,8 +257,8 @@ export default (arg0) => {
       const y = this.y;
       y.__makeNative(arg0);
       const items = [arg0];
-      callback4(AnimatedValueXY, "__makeNative", this, 3)(items);
+      outer1_10(AnimatedValueXY, "__makeNative", this, 3)(items);
     }
   };
   return callback(AnimatedValueXY, items);
-}(importDefault(dependencyMap[8]));
+})(require("_isNativeReflectConstruct"));

@@ -1,21 +1,23 @@
-// Module ID: 10956
-// Function ID: 85213
+// Module ID: 10966
+// Function ID: 85262
 // Name: StringSelectComponentActionSheet
-// Dependencies: []
+// Dependencies: [57, 31, 33, 4130, 689, 7801, 1881, 4098, 10967, 5151, 4126, 1212, 2]
 // Exports: default
 
-// Module 10956 (StringSelectComponentActionSheet)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = { selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionItemDescription: { marginTop: 2 } };
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.xs };
-obj.emojiWrapper = obj;
-obj.textEmoji = {};
-obj.fastImageEmoji = {};
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/interaction_components/native/components/StringSelectComponentActionSheet.tsx");
+// Module 10966 (StringSelectComponentActionSheet)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = { selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionItemDescription: { marginTop: 2 } };
+_createForOfIteratorHelperLoose = { flexShrink: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
+_createForOfIteratorHelperLoose.emojiWrapper = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.textEmoji = { fontSize: 16, color: "#000000" };
+_createForOfIteratorHelperLoose.fastImageEmoji = { width: 24, height: 24 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/interaction_components/native/components/StringSelectComponentActionSheet.tsx");
 
 export default function StringSelectComponentActionSheet(selectionActionComponent) {
   let allowEmpty;
@@ -23,27 +25,22 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   let containerId;
   let labelComponent;
   selectionActionComponent = selectionActionComponent.selectionActionComponent;
-  const arg1 = selectionActionComponent;
-  const onSubmit = selectionActionComponent.onSubmit;
-  const importDefault = onSubmit;
+  let onSubmit = selectionActionComponent.onSubmit;
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
-  const tmp = callback2();
+  let tmp = callback();
   const dependencyMap = tmp;
-  let obj = arg1(dependencyMap[5]);
-  const tmp3 = callback(React.useState(new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId))), 2);
-  const first = tmp3[0];
-  let callback = first;
-  const React = tmp3[1];
-  const items = [selectionActionComponent];
+  let obj = selectionActionComponent(7801);
+  const tmp3 = first(React.useState(new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId))), 2);
+  first = tmp3[0];
+  React = tmp3[1];
+  let items = [selectionActionComponent];
   const memo = React.useMemo(() => selectionActionComponent.maxValues > 1, items);
-  const jsx = memo;
-  const items1 = [onSubmit];
+  let items1 = [onSubmit];
   callback = React.useCallback((values) => {
-    const tmp = onSubmit({ type: selectionActionComponent(tmp[6]).ComponentType.STRING_SELECT, values });
+    tmp = onSubmit({ type: selectionActionComponent(tmp[6]).ComponentType.STRING_SELECT, values });
     const obj = { type: selectionActionComponent(tmp[6]).ComponentType.STRING_SELECT, values };
     onSubmit(tmp[7]).hideActionSheet();
   }, items1);
-  const callback2 = callback;
   const items2 = [first, memo, selectionActionComponent, callback];
   const items3 = [selectionActionComponent];
   const callback1 = React.useCallback((arg0, value) => {
@@ -57,11 +54,10 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
       if (!tmp) {
         callback((items) => {
           const set = new Set(items);
-          if (tmp) {
-            set.add(arg1.value);
+          if (closure_1) {
+            set.add(value.value);
           } else {
-            set.delete(arg1.value);
-            const tmp = arg1;
+            set.delete(value.value);
           }
           return set;
         });
@@ -103,7 +99,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
       if (null != description.description) {
         tmp = null;
         if ("" !== description.description) {
-          const obj = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.selectionOptionItemDescription, children: description.description };
+          const obj = { style: tmp.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description };
           tmp = memo(selectionActionComponent(tmp[10]).Text, obj);
         }
       }
@@ -113,8 +109,8 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     labelComponent,
     options: selectionActionComponent.options
   };
-  const set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
-  const tmp9 = jsx;
+  let set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
+  const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;
   }
@@ -125,7 +121,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     return first.has(value.value);
   };
   obj.submitSelection = function submitSelection() {
-    const items = [...closure_3];
+    const items = [...first];
     return callback(items);
   };
   obj.itemAccessibilityLabel = function itemAccessibilityLabel(emoji) {
@@ -142,5 +138,5 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   };
   obj.channelId = channelId;
   obj.allowEmpty = allowEmpty;
-  return tmp9(importDefault(dependencyMap[8]), obj);
+  return tmp9(onSubmit(10967), obj);
 };

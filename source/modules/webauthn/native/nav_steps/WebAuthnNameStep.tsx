@@ -1,73 +1,77 @@
-// Module ID: 13530
-// Function ID: 102631
+// Module ID: 13644
+// Function ID: 104787
 // Name: WebAuthnNameStep
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 13624, 33, 4130, 1456, 5594, 3831, 1212, 9670, 4091, 7495, 1273, 4543, 2]
 // Exports: default
 
-// Module 13530 (WebAuthnNameStep)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-const WebAuthnScreens = arg1(dependencyMap[4]).WebAuthnScreens;
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ margin: { margin: 16 } });
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnNameStep.tsx");
+// Module 13644 (WebAuthnNameStep)
+import closure_3 from "jsxProd";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { WebAuthnScreens } from "WebAuthnScreens";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ margin: { margin: 16 } });
+const result = require("result").fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnNameStep.tsx");
 
 export default function WebAuthnNameStep(arg0) {
+  let importDefault;
   let name;
-  ({ ticket: closure_0, credential: closure_1, name } = arg0);
-  let closure_2;
+  let require;
+  ({ ticket: require, credential: importDefault, name } = arg0);
+  let dependencyMap;
   let closure_3;
   let callback;
-  let React;
+  let first;
   function _onPress() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = callback(tmp);
-    const _onPress = obj;
     return obj(...arguments);
   }
   const tmp = callback4();
-  let obj = arg1(closure_2[7]);
-  closure_2 = obj.useNavigation();
-  const tmp3 = callback(React.useState(false), 2);
+  let obj = require(1456) /* useNavigation */;
+  dependencyMap = obj.useNavigation();
+  const tmp3 = callback(first.useState(false), 2);
   closure_3 = tmp3[1];
-  const tmp4 = callback(React.useState(null), 2);
+  const tmp4 = callback(first.useState(null), 2);
   callback = tmp4[1];
   let str = "";
   if (null != name) {
     str = name;
   }
-  const tmp5 = callback(React.useState(str), 2);
-  const first = tmp5[0];
-  React = first;
+  const tmp5 = callback(first.useState(str), 2);
+  first = tmp5[0];
   obj = {};
   obj = { showTopContainer: false, value: first, onChange: tmp5[1], style: tmp.margin, error: tmp4[0] };
-  const intl = arg1(closure_2[10]).intl;
-  obj.title = intl.string(arg1(closure_2[10]).t.Jzd+z/);
-  const intl2 = arg1(closure_2[10]).intl;
-  obj.placeholder = intl2.string(arg1(closure_2[10]).t.I/sJtJ);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["Jzd+z/"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.placeholder = intl2.string(require(1212) /* getSystemLocale */.t["I/sJtJ"]);
   obj.disabled = tmp3[0];
-  obj.clearButtonVisibility = arg1(closure_2[14]).ClearButtonVisibility.WITH_CONTENT;
+  obj.clearButtonVisibility = require(1273) /* Button */.ClearButtonVisibility.WITH_CONTENT;
   obj.autoFocus = true;
   obj.showBorder = true;
   obj.required = true;
   obj.large = true;
-  const items = [callback2(arg1(closure_2[13]).FormInput, obj), callback2(arg1(closure_2[13]).FormDivider, {}), ];
+  const items = [callback2(require(7495) /* Form */.FormInput, obj), callback2(require(7495) /* Form */.FormDivider, {}), ];
   const obj1 = { style: tmp.margin };
   const obj2 = {
     onPress() {
       return _onPress(...arguments);
     }
   };
-  const intl3 = arg1(closure_2[10]).intl;
-  obj2.text = intl3.string(arg1(closure_2[10]).t.5dyZ1S);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj2.text = intl3.string(require(1212) /* getSystemLocale */.t["5dyZ1S"]);
   obj2.disabled = "" === first;
   obj2.size = "lg";
-  obj1.children = callback2(arg1(closure_2[15]).Button, obj2);
+  obj1.children = callback2(require(4543) /* Button */.Button, obj2);
   items[2] = callback2(_onPress, obj1);
   obj.children = items;
-  return callback3(arg1(closure_2[13]).Form, obj);
+  return callback3(require(7495) /* Form */.Form, obj);
 };

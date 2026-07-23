@@ -1,29 +1,32 @@
-// Module ID: 5762
-// Function ID: 49386
+// Module ID: 5767
+// Function ID: 49413
 // Name: trackSoundPlayed
-// Dependencies: []
+// Dependencies: [4150, 1348, 4202, 1906, 4579, 653, 1851, 675, 2]
 // Exports: default
 
-// Module 5762 (trackSoundPlayed)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const DEFAULT_SOUND_GUILD_ID = arg1(dependencyMap[4]).DEFAULT_SOUND_GUILD_ID;
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-({ AnalyticsPremiumFeatureNames: closure_8, AnalyticsPremiumFeatureTiers: closure_9 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/soundboard/trackSoundPlayed.tsx");
+// Module 5767 (trackSoundPlayed)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
+import { AnalyticEvents } from "ME";
+import GuildFeatures from "GuildFeatures";
+
+let closure_8;
+let closure_9;
+({ AnalyticsPremiumFeatureNames: closure_8, AnalyticsPremiumFeatureTiers: closure_9 } = GuildFeatures);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/soundboard/trackSoundPlayed.tsx");
 
 export default function trackSoundPlayed(location_stack, in_overlay, guildId, sound_type) {
-  const channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
+  channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
   guildId = undefined;
   if (null != channel) {
     guildId = channel.getGuildId();
   }
   const mediaSessionId = store.getMediaSessionId();
   const rTCConnectionId = store.getRTCConnectionId();
-  const currentGameForAnalytics = currentGameForAnalytics.getCurrentGameForAnalytics();
+  currentGameForAnalytics = currentGameForAnalytics.getCurrentGameForAnalytics();
   let name;
   if (null != currentGameForAnalytics) {
     name = currentGameForAnalytics.name;
@@ -55,5 +58,5 @@ export default function trackSoundPlayed(location_stack, in_overlay, guildId, so
     sum = arg4 + 1;
   }
   obj.sequence_number = sum;
-  importDefault(dependencyMap[7]).track(AnalyticEvents.PREMIUM_FEATURE_USAGE, obj);
+  importDefault(675).track(AnalyticEvents.PREMIUM_FEATURE_USAGE, obj);
 };

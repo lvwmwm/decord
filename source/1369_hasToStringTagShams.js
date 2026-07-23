@@ -1,12 +1,12 @@
 // Module ID: 1369
-// Function ID: 16490
+// Function ID: 16491
 // Name: hasToStringTagShams
-// Dependencies: []
+// Dependencies: [522]
 
 // Module 1369 (hasToStringTagShams)
 
 export default function hasToStringTagShams() {
-  let toStringTag = require(dependencyMap[0])();
+  let toStringTag = require(522) /* hasSymbols */();
   if (toStringTag) {
     const _Symbol = Symbol;
     toStringTag = Symbol.toStringTag;

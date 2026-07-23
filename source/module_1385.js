@@ -1,5 +1,5 @@
 // Module ID: 1385
-// Function ID: 16539
+// Function ID: 16540
 // Dependencies: []
 
 // Module 1385
@@ -9,7 +9,7 @@ if ("function" === typeof Object.create) {
       value.super_ = super_;
       const _Object = Object;
       let obj = {};
-      obj = { 1837105156: 1, 894631940: "column", 65904547: 200, 1233076609: "", value };
+      obj = { value, enumerable: false, writable: true, configurable: true };
       obj.constructor = obj;
       value.prototype = Object.create(super_.prototype, obj);
     }

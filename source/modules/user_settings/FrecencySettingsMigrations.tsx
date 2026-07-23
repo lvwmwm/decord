@@ -1,52 +1,57 @@
-// Module ID: 13274
-// Function ID: 100755
+// Module ID: 13388
+// Function ID: 102911
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [662, 653, 566, 1317, 22, 1318, 587, 21, 2]
 
-// Module 13274 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 13388 (_createForOfIteratorHelperLoose)
+import MAX_FAVORITES from "MAX_FAVORITES";
+import { ID_REGEX } from "ME";
+
+let closure_3;
+let closure_4;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,9 +89,9 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function readFavoriteGIFs(arg0) {
-  let closure_0 = 1;
+  let c0 = 1;
   const importDefault = { IMAGE: "IMAGE", VIDEO: "VIDEO" };
-  const PersistedStore = importDefault(dependencyMap[2]).PersistedStore;
+  const PersistedStore = importDefault(state[2]).PersistedStore;
   const items = [
     (favorites) => {
       if (null == favorites) {
@@ -111,8 +116,7 @@ function readFavoriteGIFs(arg0) {
       return tmp;
     }
   ];
-  const state = PersistedStore.migrateAndReadStoreState("GIFFavoritesStore", items).state;
-  const dependencyMap = state;
+  state = PersistedStore.migrateAndReadStoreState("GIFFavoritesStore", items).state;
   if (null != state) {
     if (0 !== state.favorites.length) {
       const favorites = state.favorites;
@@ -138,9 +142,7 @@ function readFavoriteGIFs(arg0) {
     return [];
   }
 }
-const _module = require(dependencyMap[0]);
-({ MAX_FAVORITES: closure_3, MAX_FAVORITE_GIFS_SIZE: closure_4 } = _module);
-const ID_REGEX = require(dependencyMap[1]).ID_REGEX;
+({ MAX_FAVORITES: closure_3, MAX_FAVORITE_GIFS_SIZE: closure_4 } = MAX_FAVORITES);
 let obj = {
   version: 2,
   run(favoriteGifs) {
@@ -150,7 +152,7 @@ let obj = {
       return false;
     } else {
       if (null == favoriteGifs.favoriteGifs) {
-        const FavoriteGIFs = require(dependencyMap[3]).FavoriteGIFs;
+        const FavoriteGIFs = require(1317) /* _callSuper */.FavoriteGIFs;
         favoriteGifs.favoriteGifs = FavoriteGIFs.create();
       }
       favoriteGifs.favoriteGifs.gifs = {};
@@ -173,11 +175,11 @@ let obj = {
 
   }
 };
-const items = [obj, , , , , , , , ];
+let items = [obj, , , , , , , , ];
 obj = {
   version: 3,
   run(favoriteStickers) {
-    const PersistedStore = importDefault(dependencyMap[2]).PersistedStore;
+    const PersistedStore = importDefault(566).PersistedStore;
     const items = [
       (arg0) => {
         let tmp = arg0;
@@ -207,25 +209,25 @@ obj = {
     } else {
       let flag = false;
       if (state.favorites.length > 0) {
-        const FavoriteStickers = require(dependencyMap[3]).FavoriteStickers;
+        const FavoriteStickers = require(1317) /* _callSuper */.FavoriteStickers;
         favoriteStickers.favoriteStickers = FavoriteStickers.create();
-        const obj = importDefault(dependencyMap[4]);
-        favoriteStickers.favoriteStickers.stickerIds = importDefault(dependencyMap[4]).uniq(state.favorites).slice(0, closure_3);
+        let obj = importDefault(22);
+        favoriteStickers.favoriteStickers.stickerIds = importDefault(22).uniq(state.favorites).slice(0, closure_3);
         flag = true;
-        const uniqResult = importDefault(dependencyMap[4]).uniq(state.favorites);
+        const uniqResult = importDefault(22).uniq(state.favorites);
       }
       if (obj2.size(state.usageHistory) > 0) {
-        const StickerFrecency = require(dependencyMap[3]).StickerFrecency;
+        const StickerFrecency = require(1317) /* _callSuper */.StickerFrecency;
         favoriteStickers.stickerFrecency = StickerFrecency.create();
-        favoriteStickers.stickerFrecency.stickers = require(dependencyMap[5]).serializeUsageHistory(state.usageHistory, 100);
+        favoriteStickers.stickerFrecency.stickers = require(1318) /* _createForOfIteratorHelperLoose */.serializeUsageHistory(state.usageHistory, 100);
         flag = true;
-        const obj3 = require(dependencyMap[5]);
+        const obj3 = require(1318) /* _createForOfIteratorHelperLoose */;
       }
       return flag;
     }
   },
   cleanup() {
-    const Storage = require(dependencyMap[6]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     Storage.remove("StickersPersistedStore");
   }
 };
@@ -233,11 +235,11 @@ items[1] = obj;
 obj = {
   version: 4,
   run(favoriteEmojis) {
-    const PersistedStore = importDefault(dependencyMap[2]).PersistedStore;
+    const PersistedStore = importDefault(566).PersistedStore;
     const items = [
       () => {
         const obj = {};
-        const Storage = callback(closure_2[6]).Storage;
+        const Storage = outer1_0(outer1_2[6]).Storage;
         obj.usageHistory = Storage.get("EmojiUsageHistory") || {};
         return obj;
       }
@@ -252,29 +254,29 @@ obj = {
       }
       let flag = false;
       if (tmp) {
-        const FavoriteEmojis = require(dependencyMap[3]).FavoriteEmojis;
+        const FavoriteEmojis = require(1317) /* _callSuper */.FavoriteEmojis;
         favoriteEmojis.favoriteEmojis = FavoriteEmojis.create();
-        const obj = importDefault(dependencyMap[4]);
-        favoriteEmojis.favoriteEmojis.emojis = importDefault(dependencyMap[4]).uniq(state.favorites).slice(0, closure_3);
+        let obj = importDefault(22);
+        favoriteEmojis.favoriteEmojis.emojis = importDefault(22).uniq(state.favorites).slice(0, closure_3);
         flag = true;
-        const uniqResult = importDefault(dependencyMap[4]).uniq(state.favorites);
+        const uniqResult = importDefault(22).uniq(state.favorites);
       }
       if (obj2.size(state.usageHistory) > 0) {
-        const EmojiFrecency = require(dependencyMap[3]).EmojiFrecency;
+        const EmojiFrecency = require(1317) /* _callSuper */.EmojiFrecency;
         favoriteEmojis.emojiFrecency = EmojiFrecency.create();
-        favoriteEmojis.emojiFrecency.emojis = require(dependencyMap[5]).serializeUsageHistory(state.usageHistory, 100);
+        favoriteEmojis.emojiFrecency.emojis = require(1318) /* _createForOfIteratorHelperLoose */.serializeUsageHistory(state.usageHistory, 100);
         flag = true;
-        const obj3 = require(dependencyMap[5]);
+        const obj3 = require(1318) /* _createForOfIteratorHelperLoose */;
       }
       return flag;
     }
   },
   cleanup() {
-    const Storage = require(dependencyMap[6]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     Storage.remove("EmojiStore");
-    const Storage2 = require(dependencyMap[6]).Storage;
+    const Storage2 = require(587) /* Storage */.Storage;
     Storage2.remove("EmojiUsageHistory");
-    const Storage3 = require(dependencyMap[6]).Storage;
+    const Storage3 = require(587) /* Storage */.Storage;
     Storage3.remove("EmojiDiversitySurrogate");
   }
 };
@@ -287,28 +289,27 @@ items[3] = {
     let iter;
     let url;
     if (null == favoriteGifs.favoriteGifs) {
-      const FavoriteGIFs = require(dependencyMap[3]).FavoriteGIFs;
+      const FavoriteGIFs = arr(1317).FavoriteGIFs;
       favoriteGifs.favoriteGifs = FavoriteGIFs.create();
     }
     if (null == favoriteGifs.favoriteGifs.gifs) {
       favoriteGifs.favoriteGifs.gifs = {};
     }
-    const arr = readFavoriteGIFs(1);
-    const require = arr;
+    arr = readFavoriteGIFs(1);
     if (0 === arr.length) {
       return false;
     } else {
-      const values = importDefault(dependencyMap[4])(favoriteGifs.favoriteGifs.gifs).values();
-      const obj = importDefault(dependencyMap[4])(favoriteGifs.favoriteGifs.gifs);
+      const values = importDefault(22)(favoriteGifs.favoriteGifs.gifs).values();
+      const obj = importDefault(22)(favoriteGifs.favoriteGifs.gifs);
       const item = values.sortBy("order").forEach((arg0, arg1) => {
         const sum = arr.length + 1 + arg1;
         arg0.order = sum;
         return sum;
       });
-      const FavoriteGIFs4 = require(dependencyMap[3]).FavoriteGIFs;
+      const FavoriteGIFs4 = arr(1317).FavoriteGIFs;
       let length = FavoriteGIFs4.toBinary(favoriteGifs.favoriteGifs).length;
-      const tmp23 = _createForOfIteratorHelperLoose(arr);
-      const iter3 = tmp23();
+      const tmp25 = _createForOfIteratorHelperLoose(arr);
+      const iter3 = tmp25();
       let iter2 = iter3;
       let num2 = 0;
       if (!iter3.done) {
@@ -319,48 +320,48 @@ items[3] = {
           if (url in favoriteGifs.favoriteGifs.gifs) {
             favoriteGifs.favoriteGifs.gifs[url].order = favorite.order;
             let sum1 = length;
-            let tmp8 = tmp9;
+            let tmp10 = tmp11;
           } else {
-            let tmp3 = closure_0;
-            let tmp4 = closure_2;
-            let FavoriteGIF = closure_0(closure_2[3]).FavoriteGIF;
+            let tmp5 = arr;
+            let tmp6 = dependencyMap;
+            let FavoriteGIF = arr(1317).FavoriteGIF;
             let sum = FavoriteGIF.toBinary(favorite).length + url.length + 7;
-            let tmp6 = closure_4;
+            let tmp8 = closure_4;
             sum1 = length;
-            tmp8 = sum;
+            tmp10 = sum;
             if (length + sum <= closure_4) {
               sum1 = length + sum;
               favoriteGifs.favoriteGifs.gifs[url] = favorite;
-              tmp8 = sum;
+              tmp10 = sum;
             }
           }
-          iter = tmp23();
+          iter = tmp25();
           length = sum1;
-          let tmp9 = tmp8;
+          tmp11 = tmp10;
           iter2 = iter;
         } while (!iter.done);
       }
-      const FavoriteGIFs2 = require(dependencyMap[3]).FavoriteGIFs;
+      const FavoriteGIFs2 = arr(1317).FavoriteGIFs;
       if (FavoriteGIFs2.toBinary(favoriteGifs.favoriteGifs).length > closure_4) {
         do {
           let num4 = 0;
           let keys = Object.keys();
           if (keys !== undefined) {
-            let tmp14 = keys[7];
-            while (tmp14 !== undefined) {
-              let tmp24 = tmp14;
+            let tmp16 = keys[7];
+            while (tmp16 !== undefined) {
+              let tmp26 = tmp16;
               let gifs = favoriteGifs.favoriteGifs.gifs;
-              delete r12[r13];
+              delete tmp[tmp2];
               num4 = num4 + 1;
               if (num4 >= 10) {
                 break;
               }
             }
           }
-          let tmp15 = closure_0;
-          let tmp16 = closure_2;
-          FavoriteGIFs3 = closure_0(closure_2[3]).FavoriteGIFs;
-          let tmp17 = closure_4;
+          let tmp17 = arr;
+          let tmp18 = dependencyMap;
+          FavoriteGIFs3 = arr(1317).FavoriteGIFs;
+          let tmp19 = closure_4;
         } while (FavoriteGIFs3.toBinary(favoriteGifs.favoriteGifs).length > closure_4);
       }
       return true;
@@ -373,45 +374,44 @@ items[3] = {
 items[4] = {
   version: 7,
   run(applicationCommandFrecency) {
-    const PersistedStore = importDefault(dependencyMap[2]).PersistedStore;
+    const PersistedStore = importDefault(566).PersistedStore;
     const state = PersistedStore.migrateAndReadStoreState("ApplicationCommandFrecency", []).state;
     if (null == state) {
       return false;
     } else {
       let flag = false;
       if (obj2.size(state.usageHistory) > 0) {
-        const ApplicationCommandFrecency = require(dependencyMap[3]).ApplicationCommandFrecency;
+        const ApplicationCommandFrecency = require(1317) /* _callSuper */.ApplicationCommandFrecency;
         applicationCommandFrecency.applicationCommandFrecency = ApplicationCommandFrecency.create();
-        applicationCommandFrecency.applicationCommandFrecency.applicationCommands = require(dependencyMap[5]).serializeUsageHistory(state.usageHistory, 500);
+        applicationCommandFrecency.applicationCommandFrecency.applicationCommands = require(1318) /* _createForOfIteratorHelperLoose */.serializeUsageHistory(state.usageHistory, 500);
         flag = true;
-        const obj = require(dependencyMap[5]);
+        const obj = require(1318) /* _createForOfIteratorHelperLoose */;
       }
       return flag;
     }
   },
   cleanup() {
-    const Storage = require(dependencyMap[6]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     Storage.remove("ApplicationCommandFrecency");
   }
 };
 items[5] = {
   version: 8,
   run(arg0) {
-    const require = arg0;
-    const PersistedStore = importDefault(dependencyMap[2]).PersistedStore;
-    const state = PersistedStore.migrateAndReadStoreState("SoundboardFavoriteStore", []).state;
-    const importDefault = state;
+    const _require = arg0;
+    const PersistedStore = state(566).PersistedStore;
+    state = PersistedStore.migrateAndReadStoreState("SoundboardFavoriteStore", []).state;
     if (null == state) {
       return false;
     } else {
       let flag = false;
       if (obj2.size(state.favoriteSounds) > 0) {
-        const FavoriteSoundboardSounds = require(dependencyMap[3]).FavoriteSoundboardSounds;
+        const FavoriteSoundboardSounds = _require(1317).FavoriteSoundboardSounds;
         arg0.favoriteSoundboardSounds = FavoriteSoundboardSounds.create();
-        const keys = importDefault(dependencyMap[7]).keys(state.favoriteSounds);
-        const item = keys.forEach((arg0) => {
+        const keys = state(21).keys(state.favoriteSounds);
+        let item = keys.forEach((arg0) => {
           const item = new Set(state.favoriteSounds[arg0]).forEach((arg0) => {
-            const favoriteSoundboardSounds = obj.favoriteSoundboardSounds;
+            const favoriteSoundboardSounds = outer1_0.favoriteSoundboardSounds;
             if (null != favoriteSoundboardSounds) {
               const soundIds = favoriteSoundboardSounds.soundIds;
               soundIds.push(arg0);
@@ -419,43 +419,43 @@ items[5] = {
           });
         });
         flag = true;
-        const obj = importDefault(dependencyMap[7]);
+        const obj = state(21);
       }
       return flag;
     }
   },
   cleanup() {
-    const Storage = require(dependencyMap[6]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     Storage.remove("SoundboardFavoriteStore");
   }
 };
 items[6] = {
   version: 9,
   run(guildAndChannelFrecency) {
-    const Storage = require(dependencyMap[6]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     const value = Storage.get("selectedChannelGuildFrecency");
     if (null == value) {
       return false;
     } else {
       for (const key10012 in value) {
-        let tmp5 = key10012;
-        let tmp6 = closure_5;
-        if (closure_5.test(key10012)) {
+        let tmp7 = key10012;
+        let tmp8 = ID_REGEX;
+        if (ID_REGEX.test(key10012)) {
           continue;
         } else {
-          delete r4[r9];
-          // continue
+          delete tmp[tmp2];
+          continue;
         }
         continue;
       }
-      const GuildAndChannelFrecency = require(dependencyMap[3]).GuildAndChannelFrecency;
+      const GuildAndChannelFrecency = require(1317) /* _callSuper */.GuildAndChannelFrecency;
       guildAndChannelFrecency.guildAndChannelFrecency = GuildAndChannelFrecency.create();
-      guildAndChannelFrecency.guildAndChannelFrecency.guildAndChannels = require(dependencyMap[5]).serializeUsageHistory(value, 100);
+      guildAndChannelFrecency.guildAndChannelFrecency.guildAndChannels = require(1318) /* _createForOfIteratorHelperLoose */.serializeUsageHistory(value, 100);
       return true;
     }
   },
   cleanup() {
-    const Storage = require(dependencyMap[6]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     Storage.remove("selectedChannelGuildFrecency");
   }
 };
@@ -471,12 +471,12 @@ items[7] = {
       }
       let flag = false;
       if (obj2.size(emojis) > 0) {
-        const EmojiFrecency = require(dependencyMap[3]).EmojiFrecency;
+        const EmojiFrecency = require(1317) /* _callSuper */.EmojiFrecency;
         const obj = EmojiFrecency.create();
-        const EmojiFrecency2 = require(dependencyMap[3]).EmojiFrecency;
+        const EmojiFrecency2 = require(1317) /* _callSuper */.EmojiFrecency;
         EmojiFrecency2.mergePartial(obj, emojiFrecency.emojiFrecency);
         if (null != emojiFrecency.emojiReactionFrecency) {
-          const EmojiFrecency3 = require(dependencyMap[3]).EmojiFrecency;
+          const EmojiFrecency3 = require(1317) /* _callSuper */.EmojiFrecency;
           EmojiFrecency3.mergePartial(obj, emojiFrecency.emojiReactionFrecency);
         }
         emojiFrecency.emojiReactionFrecency = obj;
@@ -515,7 +515,7 @@ items[8] = {
               }
               let tmp3 = require;
               let tmp4 = dependencyMap;
-              let isMatch = tmp11.format !== require(dependencyMap[3]).GIFType.IMAGE;
+              let isMatch = tmp11.format !== require(1317) /* _callSuper */.GIFType.IMAGE;
               if (isMatch) {
                 let obj = /\.(webp|avif|gif)(\?|$)/i;
                 isMatch = obj.test(tmp11.src);
@@ -523,11 +523,11 @@ items[8] = {
               if (isMatch) {
                 let tmp6 = require;
                 let tmp7 = dependencyMap;
-                tmp11.format = require(dependencyMap[3]).GIFType.IMAGE;
+                tmp11.format = require(1317) /* _callSuper */.GIFType.IMAGE;
                 flag = true;
               }
               flag3 = flag;
-              // continue
+              continue;
             }
             continue;
           }
@@ -541,7 +541,6 @@ items[8] = {
 
   }
 };
-const _module1 = require(dependencyMap[8]);
-const result = _module1.fileFinishedImporting("modules/user_settings/FrecencySettingsMigrations.tsx");
+const result = require("initialize").fileFinishedImporting("modules/user_settings/FrecencySettingsMigrations.tsx");
 
 export default items;

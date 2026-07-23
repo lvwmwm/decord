@@ -1,15 +1,24 @@
-// Module ID: 5500
-// Function ID: 46896
+// Module ID: 5503
+// Function ID: 46919
 // Name: TableRowGroupTitle
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1324, 4126, 3834, 5125, 5166, 2]
 // Exports: TableRowGroup
 
-// Module 5500 (TableRowGroupTitle)
+// Module 5503 (TableRowGroupTitle)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 class TableRowGroupTitle {
   constructor(arg0) {
     ({ title, style, lineClamp } = global);
-    tmp = importDefault(dependencyMap[5])("TableRowGroup");
-    tmp2 = closure_8();
+    tmp = require("useIsMobileVisualRefreshExperimentEnabled")("TableRowGroup");
+    tmp2 = c8();
     tmp3 = jsx;
     obj = { accessibilityRole: "header" };
     str = "text-sm/semibold";
@@ -28,32 +37,29 @@ class TableRowGroupTitle {
     obj.style = items;
     obj.lineClamp = lineClamp;
     obj.children = title;
-    return tmp3(arg1(dependencyMap[6]).Text, obj);
+    return tmp3(require("Text").Text, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { flexShrink: 0 } };
-obj = { alignItems: "absolute", justifyContent: 5, position: "#000", height: 0.3, width: 0, borderRadius: importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
-obj.content = obj;
-obj.title = { marginBottom: 8 };
-obj.description = { marginBottom: 8 };
-const tmp2 = arg1(dependencyMap[2]);
-obj.hasTrailingText = { borderBottomLeftRadius: importDefault(dependencyMap[4]).radii.none, borderBottomRightRadius: importDefault(dependencyMap[4]).radii.none };
-obj.helperText = { marginTop: 8 };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { borderBottomLeftRadius: importDefault(dependencyMap[4]).radii.none, borderBottomRightRadius: importDefault(dependencyMap[4]).radii.none };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/components/TableRow/native/TableRowGroup.native.tsx");
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flexShrink: 0 } };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS, overflow: "hidden", flexGrow: 1, flexShrink: 0, padding: 0 };
+_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.title = { marginBottom: 8 };
+_createForOfIteratorHelperLoose.description = { marginBottom: 8 };
+_createForOfIteratorHelperLoose.hasTrailingText = { borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.none, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.none };
+_createForOfIteratorHelperLoose.helperText = { marginTop: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.none, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.none };
+const result = require("jsxProd").fileFinishedImporting("design/components/TableRow/native/TableRowGroup.native.tsx");
 
 export { TableRowGroupTitle };
 export const TableRowGroup = function TableRowGroup(accessibilityRole) {
   let description;
   let hasTrailingText;
   let helperText;
+  let require;
   let title;
-  ({ title, description, helperText, hasIcons: closure_0, hasTrailingText } = accessibilityRole);
+  ({ title, description, helperText, hasIcons: require, hasTrailingText } = accessibilityRole);
   if (hasTrailingText === undefined) {
     hasTrailingText = false;
   }
@@ -62,22 +68,22 @@ export const TableRowGroup = function TableRowGroup(accessibilityRole) {
     str = "none";
   }
   let importDefault;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[7]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(3834) /* map */;
   importDefault = false;
   const Children = React.Children;
-  const token = obj.useToken(importDefault(dependencyMap[4]).modules.mobile.TABLE_ROW_GROUP_HELPER_TEXT_STYLE);
+  const token = obj.useToken(importDefault(689).modules.mobile.TABLE_ROW_GROUP_HELPER_TEXT_STYLE);
   const mapped = Children.map(accessibilityRole.children, (arg0) => {
     if (null == arg0) {
       return null;
-    } else if (closure_1) {
+    } else if (c1) {
       let obj = {};
-      obj = { adjustSpacingForIcon: callback };
-      const items = [callback2(callback(closure_2[8]).TableRowDivider, obj), arg0];
+      obj = { adjustSpacingForIcon: closure_0 };
+      const items = [outer1_5(outer1_0(outer1_2[8]).TableRowDivider, obj), arg0];
       obj.children = items;
-      let tmp2 = callback3(closure_6, obj);
+      let tmp2 = outer1_7(outer1_6, obj);
     } else {
-      closure_1 = true;
+      c1 = true;
       tmp2 = arg0;
     }
   });
@@ -87,11 +93,11 @@ export const TableRowGroup = function TableRowGroup(accessibilityRole) {
     const obj1 = { title };
     tmp7 = callback(TableRowGroupTitle, obj1);
   }
-  const items = [tmp7, , , ];
+  let items = [tmp7, , , ];
   let tmp10 = null != description;
   if (tmp10) {
-    const obj2 = { style: tmp.description, children: description };
-    tmp10 = callback(arg1(dependencyMap[6]).Text, obj2);
+    const obj2 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.description, children: description };
+    tmp10 = callback(require(4126) /* Text */.Text, obj2);
   }
   items[1] = tmp10;
   const obj3 = {};
@@ -109,10 +115,10 @@ export const TableRowGroup = function TableRowGroup(accessibilityRole) {
   let tmp17 = null != helperText;
   if (tmp17) {
     const obj4 = { variant: token, color: "text-muted", style: tmp.helperText, children: helperText };
-    tmp17 = callback(arg1(dependencyMap[6]).Text, obj4);
+    tmp17 = callback(require(4126) /* Text */.Text, obj4);
   }
   items[3] = tmp17;
   obj.children = items;
   obj.children = closure_7(View, obj);
-  return callback(arg1(dependencyMap[9]).TableRowGroupContext.Provider, obj);
+  return callback(require(5166) /* context */.TableRowGroupContext.Provider, obj);
 };

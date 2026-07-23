@@ -1,16 +1,15 @@
-// Module ID: 3995
-// Function ID: 33140
+// Module ID: 3997
+// Function ID: 33145
 // Name: closePortalKeyboard
-// Dependencies: []
+// Dependencies: [3998, 4000, 491, 2]
 // Exports: closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer
 
-// Module 3995 (closePortalKeyboard)
+// Module 3997 (closePortalKeyboard)
 function closePortalKeyboard() {
-  zustandStore.setState({ state: require(dependencyMap[1]).PortalKeyboardState.CLOSED, keyboard: null });
+  zustandStore.setState({ state: require(4000) /* PortalKeyboardState */.PortalKeyboardState.CLOSED, keyboard: null });
 }
-const zustandStore = require(dependencyMap[0]).createZustandStore(() => ({ keyboard: null, state: require(dependencyMap[1]).PortalKeyboardState.EMPTY, renderers: [] }));
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/keyboard/native/PortalKeyboardUIStore.native.tsx");
+const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ keyboard: null, state: require(4000) /* PortalKeyboardState */.PortalKeyboardState.EMPTY, renderers: [] }));
+const result = require("v1").fileFinishedImporting("modules/keyboard/native/PortalKeyboardUIStore.native.tsx");
 
 export const PortalKeyboardUIStore = { getField: zustandStore.getField, useField: zustandStore.useField };
 export const isPortalKeyboardOpenForChannel = function isPortalKeyboardOpenForChannel(arg0) {
@@ -24,12 +23,12 @@ export const isPortalKeyboardOpenForChannel = function isPortalKeyboardOpenForCh
   }
   let tmp3 = channelId === arg0;
   if (tmp3) {
-    let tmp6 = state === require(dependencyMap[1]).PortalKeyboardState.REQUEST_OPEN;
+    let tmp6 = state === require(4000) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN;
     if (!tmp6) {
-      tmp6 = state === require(dependencyMap[1]).PortalKeyboardState.OPENING;
+      tmp6 = state === require(4000) /* PortalKeyboardState */.PortalKeyboardState.OPENING;
     }
     if (!tmp6) {
-      tmp6 = state === require(dependencyMap[1]).PortalKeyboardState.OPEN;
+      tmp6 = state === require(4000) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
     }
     tmp3 = tmp6;
   }
@@ -52,35 +51,35 @@ export const openPortalKeyboard = function openPortalKeyboard(type, closure_0, c
     }
     tmp3 = channelId === closure_0;
   }
-  let tmp5 = state === require(dependencyMap[1]).PortalKeyboardState.REQUEST_OPEN;
+  let tmp5 = state === require(4000) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN;
   if (!tmp5) {
-    tmp5 = state === require(dependencyMap[1]).PortalKeyboardState.OPENING;
+    tmp5 = state === require(4000) /* PortalKeyboardState */.PortalKeyboardState.OPENING;
   }
   if (!tmp5) {
-    tmp5 = state === require(dependencyMap[1]).PortalKeyboardState.OPEN;
+    tmp5 = state === require(4000) /* PortalKeyboardState */.PortalKeyboardState.OPEN;
   }
   if (tmp3) {
     tmp3 = tmp5;
   }
   if (!tmp3) {
     let obj = {};
-    obj = { id: require(dependencyMap[2]).v4(), type, channelId: closure_0, chatInputRef: closure_1 };
+    obj = { id: require(491) /* v1 */.v4(), type, channelId: closure_0, chatInputRef: closure_1 };
     obj.keyboard = obj;
-    obj.state = require(dependencyMap[1]).PortalKeyboardState.REQUEST_OPEN;
+    obj.state = require(4000) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_OPEN;
     zustandStore.setState(obj);
-    const obj3 = require(dependencyMap[2]);
+    const obj3 = require(491) /* v1 */;
   }
 };
 export const registerPortalKeyboardRenderer = function registerPortalKeyboardRenderer(id) {
-  const require = id;
+  let closure_0 = id;
   zustandStore.setState((renderers) => {
     renderers = renderers.renderers;
     let tmp = renderers;
-    if (!renderers.includes(renderers)) {
+    if (!renderers.includes(closure_0)) {
       const obj = {};
       const items = [];
       const arraySpreadResult = HermesBuiltin.arraySpread(renderers.renderers, 0);
-      items[arraySpreadResult] = renderers;
+      items[arraySpreadResult] = closure_0;
       const sum = arraySpreadResult + 1;
       obj.renderers = items;
       tmp = obj;
@@ -88,25 +87,25 @@ export const registerPortalKeyboardRenderer = function registerPortalKeyboardRen
     return tmp;
   });
   return () => {
-    state.setState((renderers) => {
+    outer1_2.setState((renderers) => {
       renderers = renderers.renderers;
-      return { renderers: renderers.filter((arg0) => arg0 !== closure_0) };
+      return { renderers: renderers.filter((arg0) => arg0 !== outer2_0) };
     });
   };
 };
-export const handlePortalKeyboardOpen = function handlePortalKeyboardOpen(closure_1) {
-  const require = closure_1;
+export const handlePortalKeyboardOpen = function handlePortalKeyboardOpen(outer1_1) {
+  let closure_0 = outer1_1;
   zustandStore.setState((keyboard) => {
     let tmp = keyboard;
     if (null != keyboard.keyboard) {
       tmp = keyboard;
-      if (keyboard.keyboard.handlerId !== keyboard) {
+      if (keyboard.keyboard.handlerId !== outer1_1) {
         let obj = {};
         obj = {};
         const merged = Object.assign(keyboard.keyboard);
-        obj["handlerId"] = keyboard;
+        obj["handlerId"] = outer1_1;
         obj.keyboard = obj;
-        obj.state = keyboard(closure_1[1]).PortalKeyboardState.OPEN;
+        obj.state = outer1_1(outer1_1[1]).PortalKeyboardState.OPEN;
         tmp = obj;
       }
     }
@@ -119,7 +118,7 @@ export const closePortalKeyboardIfUnhandled = function closePortalKeyboardIfUnha
   const keyboard = state.keyboard;
   let tmp3 = null == keyboard;
   if (tmp3) {
-    tmp3 = tmp2 === require(dependencyMap[1]).PortalKeyboardState.CLOSED;
+    tmp3 = tmp2 === require(4000) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
   }
   if (!tmp3) {
     let handlerId;
@@ -133,12 +132,12 @@ export const closePortalKeyboardIfUnhandled = function closePortalKeyboardIfUnha
 };
 export const closePortalKeyboardRequest = function closePortalKeyboardRequest() {
   const field = zustandStore.getField("state");
-  let tmp2 = field !== require(dependencyMap[1]).PortalKeyboardState.CLOSED;
+  let tmp2 = field !== require(4000) /* PortalKeyboardState */.PortalKeyboardState.CLOSED;
   if (tmp2) {
-    tmp2 = field !== require(dependencyMap[1]).PortalKeyboardState.REQUEST_CLOSE;
+    tmp2 = field !== require(4000) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_CLOSE;
   }
   if (tmp2) {
-    const obj = { state: require(dependencyMap[1]).PortalKeyboardState.REQUEST_CLOSE };
+    const obj = { state: require(4000) /* PortalKeyboardState */.PortalKeyboardState.REQUEST_CLOSE };
     zustandStore.setState(obj);
   }
 };

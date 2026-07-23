@@ -1,17 +1,18 @@
 // Module ID: 1303
-// Function ID: 15213
+// Function ID: 15214
 // Name: ReflectionJsonWriter
-// Dependencies: []
+// Dependencies: [57, 6, 7, 1293, 1297, 1291, 1286]
 
 // Module 1303 (ReflectionJsonWriter)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "parts";
+import _defineProperties from "_defineProperties";
 
-export const ReflectionJsonWriter = () => {
+
+export const ReflectionJsonWriter = (() => {
   class ReflectionJsonWriter {
     constructor(arg0) {
-      tmp = closure_3(this, ReflectionJsonWriter);
+      tmp = outer1_3(this, ReflectionJsonWriter);
       fields = arg0.fields;
       if (null === fields) {
         fields = [];
@@ -20,7 +21,6 @@ export const ReflectionJsonWriter = () => {
       return;
     }
   }
-  const require = ReflectionJsonWriter;
   let obj = {
     key: "write",
     value: function write(arg0, useProtoFieldName) {
@@ -46,8 +46,8 @@ export const ReflectionJsonWriter = () => {
               let fieldResult = self.field(tmp26, tmp11[tmp26.localName], merged);
               let tmp18 = fieldResult;
               let tmp19 = ReflectionJsonWriter;
-              let tmp20 = closure_1;
-              let obj3 = ReflectionJsonWriter(closure_1[3]);
+              let tmp20 = outer1_1;
+              let obj3 = ReflectionJsonWriter(outer1_1[3]);
               let assertResult = obj3.assert(undefined !== fieldResult);
               let tmp22 = obj;
               let tmp23 = useProtoFieldName;
@@ -75,12 +75,12 @@ export const ReflectionJsonWriter = () => {
             obj[useProtoFieldName.useProtoFieldName ? tmp26.name : tmp26.jsonName] = tmp6;
           }
         }
-        // continue
+        continue;
       }
       return obj;
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "field",
     value: function field(kind, arg1, enumAsInteger) {
@@ -95,7 +95,7 @@ export const ReflectionJsonWriter = () => {
         if (tmp51) {
           tmp51 = null !== arg1;
         }
-        ReflectionJsonWriter(closure_1[3]).assert(tmp51);
+        ReflectionJsonWriter(outer1_1[3]).assert(tmp51);
         obj = {};
         const kind3 = obj.V.kind;
         if ("scalar" === kind3) {
@@ -103,8 +103,8 @@ export const ReflectionJsonWriter = () => {
           const entries = Object.entries(arg1);
           const tmp82 = entries[Symbol.iterator]();
           while (tmp82 !== undefined) {
-            let tmp85 = callback;
-            let tmp86 = callback(tmp83, 2);
+            let tmp85 = outer1_2;
+            let tmp86 = outer1_2(tmp83, 2);
             let str8 = tmp86[0];
             let tmp87 = kind;
             let tmp88 = self;
@@ -112,12 +112,12 @@ export const ReflectionJsonWriter = () => {
             let flag6 = true;
             let scalarResult = self.scalar(obj.V.T, tmp86[1], obj.name, false, true);
             let tmp90 = ReflectionJsonWriter;
-            let tmp91 = closure_1;
-            let obj10 = ReflectionJsonWriter(closure_1[3]);
+            let tmp91 = outer1_1;
+            let obj10 = ReflectionJsonWriter(outer1_1[3]);
             let assertResult1 = obj10.assert(undefined !== scalarResult);
             let tmp93 = obj;
             obj[str8.toString()] = scalarResult;
-            // continue
+            continue;
           }
         } else if ("message" === kind3) {
           const V = obj.V;
@@ -126,8 +126,8 @@ export const ReflectionJsonWriter = () => {
           const entries1 = Object.entries(arg1);
           const tmp76 = entries1[Symbol.iterator]();
           while (tmp76 !== undefined) {
-            let messageResult = callback;
-            messageResult = callback(tmp77, 2);
+            let messageResult = outer1_2;
+            messageResult = outer1_2(tmp77, 2);
             let str15 = messageResult[0];
             messageResult = TResult;
             messageResult = kind;
@@ -135,12 +135,12 @@ export const ReflectionJsonWriter = () => {
             messageResult = self;
             messageResult = self.message(TResult, messageResult[1], obj.name, enumAsInteger);
             messageResult = ReflectionJsonWriter;
-            messageResult = closure_1;
-            let obj12 = ReflectionJsonWriter(closure_1[3]);
+            messageResult = outer1_1;
+            let obj12 = ReflectionJsonWriter(outer1_1[3]);
             messageResult = obj12.assert(undefined !== messageResult);
             messageResult = obj;
             obj[str15.toString()] = messageResult;
-            // continue
+            continue;
           }
         } else if ("enum" === kind3) {
           messageResult = kind;
@@ -151,12 +151,12 @@ export const ReflectionJsonWriter = () => {
           messageResult = Object.entries(arg1);
           messageResult = messageResult[Symbol.iterator]();
           while (messageResult !== undefined) {
-            messageResult = callback;
-            messageResult = callback(tmp55, 2);
+            messageResult = outer1_2;
+            messageResult = outer1_2(tmp55, 2);
             [str14, tmp] = messageResult;
             messageResult = ReflectionJsonWriter;
-            messageResult = closure_1;
-            let obj11 = ReflectionJsonWriter(closure_1[3]);
+            messageResult = outer1_1;
+            let obj11 = ReflectionJsonWriter(outer1_1[3]);
             messageResult = undefined === messageResult;
             let tmp58 = messageResult;
             if (!messageResult) {
@@ -173,13 +173,13 @@ export const ReflectionJsonWriter = () => {
             let flag4 = true;
             let enumResult = self.enum(messageResult, messageResult, obj.name, false, true, enumAsInteger.enumAsInteger);
             let tmp66 = ReflectionJsonWriter;
-            let tmp67 = closure_1;
-            let obj9 = ReflectionJsonWriter(closure_1[3]);
+            let tmp67 = outer1_1;
+            let obj9 = ReflectionJsonWriter(outer1_1[3]);
             let assertResult3 = obj9.assert(undefined !== enumResult);
             let tmp69 = obj;
             let tmp70 = str14;
             obj[str14.toString()] = enumResult;
-            // continue
+            continue;
           }
         }
         let emitDefaultValues2 = enumAsInteger.emitDefaultValues;
@@ -190,10 +190,10 @@ export const ReflectionJsonWriter = () => {
         if (emitDefaultValues2) {
           let scalarResult2 = obj;
         }
-        const obj7 = ReflectionJsonWriter(closure_1[3]);
+        const obj7 = ReflectionJsonWriter(outer1_1[3]);
       } else if (obj.repeat) {
         const _Array = Array;
-        ReflectionJsonWriter(closure_1[3]).assert(Array.isArray(arg1));
+        ReflectionJsonWriter(outer1_1[3]).assert(Array.isArray(arg1));
         const items = [];
         const kind2 = obj.kind;
         if ("scalar" === kind2) {
@@ -204,9 +204,9 @@ export const ReflectionJsonWriter = () => {
               let tmp41 = self;
               let flag2 = true;
               let scalarResult1 = self.scalar(obj.T, arg1[num4], obj.name, obj.opt, true);
-              let tmp43 = closure_0;
-              let tmp44 = closure_1;
-              let obj6 = closure_0(closure_1[3]);
+              let tmp43 = ReflectionJsonWriter;
+              let tmp44 = outer1_1;
+              let obj6 = ReflectionJsonWriter(outer1_1[3]);
               let assertResult5 = obj6.assert(undefined !== scalarResult1);
               let arr = items.push(scalarResult1);
               num4 = num4 + 1;
@@ -215,30 +215,26 @@ export const ReflectionJsonWriter = () => {
           }
         } else if ("enum" === kind2) {
           const TResult1 = obj.T();
-          let num3 = 0;
-          if (0 < arg1.length) {
-            do {
-              let tmp27 = closure_0;
-              let tmp28 = closure_1;
-              let obj4 = closure_0(closure_1[3]);
-              let tmp29 = undefined === arg1[num3];
-              if (!tmp29) {
-                tmp29 = "number" === typeof arg1[num3];
-              }
-              let assertResult6 = obj4.assert(tmp29);
-              let tmp31 = kind;
-              let tmp32 = enumAsInteger;
-              let tmp33 = self;
-              let tmp34 = TResult1;
-              let flag = true;
-              let enumResult1 = self.enum(TResult1, arg1[num3], obj.name, obj.opt, true, enumAsInteger.enumAsInteger);
-              let tmp36 = closure_0;
-              let tmp37 = closure_1;
-              let obj5 = closure_0(closure_1[3]);
-              let assertResult7 = obj5.assert(undefined !== enumResult1);
-              arr = items.push(enumResult1);
-              num3 = num3 + 1;
-            } while (num3 < arg1.length);
+          for (let num3 = 0; num3 < arg1.length; num3 = num3 + 1) {
+            let tmp27 = ReflectionJsonWriter;
+            let tmp28 = outer1_1;
+            let obj4 = ReflectionJsonWriter(outer1_1[3]);
+            let tmp29 = undefined === arg1[num3];
+            if (!tmp29) {
+              tmp29 = "number" === typeof arg1[num3];
+            }
+            let assertResult6 = obj4.assert(tmp29);
+            let tmp31 = kind;
+            let tmp32 = enumAsInteger;
+            let tmp33 = self;
+            let tmp34 = TResult1;
+            let flag = true;
+            let enumResult1 = self.enum(TResult1, arg1[num3], obj.name, obj.opt, true, enumAsInteger.enumAsInteger);
+            let tmp36 = ReflectionJsonWriter;
+            let tmp37 = outer1_1;
+            let obj5 = ReflectionJsonWriter(outer1_1[3]);
+            let assertResult7 = obj5.assert(undefined !== enumResult1);
+            arr = items.push(enumResult1);
           }
         } else if ("message" === kind2) {
           messageResult = kind;
@@ -251,9 +247,9 @@ export const ReflectionJsonWriter = () => {
               let tmp18 = self;
               let tmp19 = messageResult;
               let messageResult1 = self.message(messageResult, arg1[num2], obj.name, enumAsInteger);
-              let tmp21 = closure_0;
-              let tmp22 = closure_1;
-              let obj3 = closure_0(closure_1[3]);
+              let tmp21 = ReflectionJsonWriter;
+              let tmp22 = outer1_1;
+              let obj3 = ReflectionJsonWriter(outer1_1[3]);
               let assertResult8 = obj3.assert(undefined !== messageResult1);
               let arr1 = items.push(messageResult1);
               num2 = num2 + 1;
@@ -271,7 +267,7 @@ export const ReflectionJsonWriter = () => {
         if (emitDefaultValues) {
           scalarResult2 = items;
         }
-        const obj2 = ReflectionJsonWriter(closure_1[3]);
+        const obj2 = ReflectionJsonWriter(outer1_1[3]);
       } else {
         messageResult = kind;
         kind = obj.kind;
@@ -294,10 +290,10 @@ export const ReflectionJsonWriter = () => {
       if ("google.protobuf.NullValue" == arg0[0]) {
         return null;
       } else if (undefined !== arg1) {
-        ReflectionJsonWriter(closure_1[3]).assert("number" === typeof arg1);
-        const obj2 = ReflectionJsonWriter(closure_1[3]);
+        ReflectionJsonWriter(outer1_1[3]).assert("number" === typeof arg1);
+        const obj2 = ReflectionJsonWriter(outer1_1[3]);
         const _Number = Number;
-        ReflectionJsonWriter(closure_1[3]).assert(Number.isInteger(arg1));
+        ReflectionJsonWriter(outer1_1[3]).assert(Number.isInteger(arg1));
         let tmp11 = arg1;
         if (!arg5) {
           let num3 = 1;
@@ -312,12 +308,12 @@ export const ReflectionJsonWriter = () => {
               sum = arg0[num3][arg1];
             }
           }
-          const obj4 = arg0[1];
+          obj4 = arg0[1];
         }
         return tmp11;
       } else {
-        ReflectionJsonWriter(closure_1[3]).assert(arg3);
-        const obj = ReflectionJsonWriter(closure_1[3]);
+        ReflectionJsonWriter(outer1_1[3]).assert(arg3);
+        const obj = ReflectionJsonWriter(outer1_1[3]);
       }
     }
   };
@@ -346,16 +342,16 @@ export const ReflectionJsonWriter = () => {
         if (!tmp2) {
           tmp2 = arg3;
         }
-        if (ReflectionJsonWriter(closure_1[4]).ScalarType.INT32 !== arg0) {
-          if (ReflectionJsonWriter(closure_1[4]).ScalarType.SFIXED32 !== arg0) {
-            if (ReflectionJsonWriter(closure_1[4]).ScalarType.SINT32 !== arg0) {
-              if (ReflectionJsonWriter(closure_1[4]).ScalarType.FIXED32 !== arg0) {
-                if (ReflectionJsonWriter(closure_1[4]).ScalarType.UINT32 !== arg0) {
-                  if (ReflectionJsonWriter(closure_1[4]).ScalarType.FLOAT === arg0) {
-                    ReflectionJsonWriter(closure_1[3]).assertFloat32(tmp);
-                    const obj8 = ReflectionJsonWriter(closure_1[3]);
-                  } else if (ReflectionJsonWriter(closure_1[4]).ScalarType.DOUBLE !== arg0) {
-                    if (ReflectionJsonWriter(closure_1[4]).ScalarType.STRING === arg0) {
+        if (ReflectionJsonWriter(outer1_1[4]).ScalarType.INT32 !== arg0) {
+          if (ReflectionJsonWriter(outer1_1[4]).ScalarType.SFIXED32 !== arg0) {
+            if (ReflectionJsonWriter(outer1_1[4]).ScalarType.SINT32 !== arg0) {
+              if (ReflectionJsonWriter(outer1_1[4]).ScalarType.FIXED32 !== arg0) {
+                if (ReflectionJsonWriter(outer1_1[4]).ScalarType.UINT32 !== arg0) {
+                  if (ReflectionJsonWriter(outer1_1[4]).ScalarType.FLOAT === arg0) {
+                    ReflectionJsonWriter(outer1_1[3]).assertFloat32(tmp);
+                    const obj8 = ReflectionJsonWriter(outer1_1[3]);
+                  } else if (ReflectionJsonWriter(outer1_1[4]).ScalarType.DOUBLE !== arg0) {
+                    if (ReflectionJsonWriter(outer1_1[4]).ScalarType.STRING === arg0) {
                       if ("" === tmp) {
                         let str13;
                         if (tmp2) {
@@ -363,33 +359,33 @@ export const ReflectionJsonWriter = () => {
                         }
                         let tmp36 = str13;
                       } else {
-                        ReflectionJsonWriter(closure_1[3]).assert("string" === typeof tmp);
+                        ReflectionJsonWriter(outer1_1[3]).assert("string" === typeof tmp);
                         tmp36 = tmp;
-                        const obj7 = ReflectionJsonWriter(closure_1[3]);
+                        const obj7 = ReflectionJsonWriter(outer1_1[3]);
                       }
                       return tmp36;
-                    } else if (ReflectionJsonWriter(closure_1[4]).ScalarType.BOOL === arg0) {
+                    } else if (ReflectionJsonWriter(outer1_1[4]).ScalarType.BOOL === arg0) {
                       if (false === tmp) {
                         let tmp31 = !tmp2 && undefined;
                         const tmp32 = !tmp2 && undefined;
                       } else {
-                        ReflectionJsonWriter(closure_1[3]).assert("boolean" === typeof tmp);
+                        ReflectionJsonWriter(outer1_1[3]).assert("boolean" === typeof tmp);
                         tmp31 = tmp;
-                        const obj6 = ReflectionJsonWriter(closure_1[3]);
+                        const obj6 = ReflectionJsonWriter(outer1_1[3]);
                       }
                       return tmp31;
                     } else {
-                      if (ReflectionJsonWriter(closure_1[4]).ScalarType.UINT64 !== arg0) {
-                        if (ReflectionJsonWriter(closure_1[4]).ScalarType.FIXED64 !== arg0) {
-                          if (ReflectionJsonWriter(closure_1[4]).ScalarType.INT64 !== arg0) {
-                            if (ReflectionJsonWriter(closure_1[4]).ScalarType.SFIXED64 !== arg0) {
-                              if (ReflectionJsonWriter(closure_1[4]).ScalarType.SINT64 !== arg0) {
-                                if (ReflectionJsonWriter(closure_1[4]).ScalarType.BYTES === arg0) {
+                      if (ReflectionJsonWriter(outer1_1[4]).ScalarType.UINT64 !== arg0) {
+                        if (ReflectionJsonWriter(outer1_1[4]).ScalarType.FIXED64 !== arg0) {
+                          if (ReflectionJsonWriter(outer1_1[4]).ScalarType.INT64 !== arg0) {
+                            if (ReflectionJsonWriter(outer1_1[4]).ScalarType.SFIXED64 !== arg0) {
+                              if (ReflectionJsonWriter(outer1_1[4]).ScalarType.SINT64 !== arg0) {
+                                if (ReflectionJsonWriter(outer1_1[4]).ScalarType.BYTES === arg0) {
                                   const _Uint8Array = Uint8Array;
-                                  ReflectionJsonWriter(closure_1[3]).assert(tmp instanceof Uint8Array);
+                                  ReflectionJsonWriter(outer1_1[3]).assert(tmp instanceof Uint8Array);
                                   if (tmp.byteLength) {
-                                    let str = ReflectionJsonWriter(closure_1[6]).base64encode(tmp);
-                                    const obj3 = ReflectionJsonWriter(closure_1[6]);
+                                    let str = ReflectionJsonWriter(outer1_1[6]).base64encode(tmp);
+                                    const obj3 = ReflectionJsonWriter(outer1_1[6]);
                                   } else if (tmp2) {
                                     str = "";
                                   }
@@ -405,8 +401,8 @@ export const ReflectionJsonWriter = () => {
                           if (!tmp17) {
                             tmp17 = "bigint" === tmp16;
                           }
-                          ReflectionJsonWriter(closure_1[3]).assert(tmp17);
-                          const PbLong = ReflectionJsonWriter(closure_1[5]).PbLong;
+                          ReflectionJsonWriter(outer1_1[3]).assert(tmp17);
+                          const PbLong = ReflectionJsonWriter(outer1_1[5]).PbLong;
                           const str5 = PbLong.from(tmp);
                           return str5.toString();
                         }
@@ -418,8 +414,8 @@ export const ReflectionJsonWriter = () => {
                       if (!tmp24) {
                         tmp24 = "bigint" === tmp23;
                       }
-                      ReflectionJsonWriter(closure_1[3]).assert(tmp24);
-                      const PbULong = ReflectionJsonWriter(closure_1[5]).PbULong;
+                      ReflectionJsonWriter(outer1_1[3]).assert(tmp24);
+                      const PbULong = ReflectionJsonWriter(outer1_1[5]).PbULong;
                       const str9 = PbULong.from(tmp);
                       return str9.toString();
                     }
@@ -431,7 +427,7 @@ export const ReflectionJsonWriter = () => {
                     }
                     let str16 = num13;
                   } else {
-                    ReflectionJsonWriter(closure_1[3]).assert("number" === typeof tmp);
+                    ReflectionJsonWriter(outer1_1[3]).assert("number" === typeof tmp);
                     const _Number3 = Number;
                     str16 = "NaN";
                     if (!Number.isNaN(tmp)) {
@@ -447,7 +443,7 @@ export const ReflectionJsonWriter = () => {
                       }
                       str16 = str14;
                     }
-                    const obj11 = ReflectionJsonWriter(closure_1[3]);
+                    const obj11 = ReflectionJsonWriter(outer1_1[3]);
                   }
                   return str16;
                 }
@@ -459,9 +455,9 @@ export const ReflectionJsonWriter = () => {
                 }
                 let tmp43 = num16;
               } else {
-                ReflectionJsonWriter(closure_1[3]).assertUInt32(tmp);
+                ReflectionJsonWriter(outer1_1[3]).assertUInt32(tmp);
                 tmp43 = tmp;
-                const obj9 = ReflectionJsonWriter(closure_1[3]);
+                const obj9 = ReflectionJsonWriter(outer1_1[3]);
               }
               return tmp43;
             }
@@ -474,15 +470,15 @@ export const ReflectionJsonWriter = () => {
           }
           tmp = num19;
         } else {
-          ReflectionJsonWriter(closure_1[3]).assertInt32(tmp);
-          const obj10 = ReflectionJsonWriter(closure_1[3]);
+          ReflectionJsonWriter(outer1_1[3]).assertInt32(tmp);
+          const obj10 = ReflectionJsonWriter(outer1_1[3]);
         }
         return tmp;
       } else {
-        ReflectionJsonWriter(closure_1[3]).assert(arg3);
-        const obj = ReflectionJsonWriter(closure_1[3]);
+        ReflectionJsonWriter(outer1_1[3]).assert(arg3);
+        const obj = ReflectionJsonWriter(outer1_1[3]);
       }
     }
   };
-  return callback(ReflectionJsonWriter, items);
-}();
+  return _defineProperties(ReflectionJsonWriter, items);
+})();

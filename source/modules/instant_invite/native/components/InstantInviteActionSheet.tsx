@@ -1,20 +1,38 @@
-// Module ID: 8484
-// Function ID: 67749
+// Module ID: 8490
+// Function ID: 67786
 // Name: Loading
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1353, 8482, 1838, 3758, 6979, 653, 33, 4130, 689, 8491, 1557, 5464, 5484, 5470, 566, 4116, 7001, 8481, 4098, 8492, 5713, 1282, 12158, 5187, 5186, 1212, 1273, 12159, 12163, 12165, 5772, 10064, 11748, 12197, 2]
 // Exports: default
 
-// Module 8484 (Loading)
+// Module 8490 (Loading)
+import _slicedToArray from "_slicedToArray";
+import onCopy from "onCopy";
+import get_ActivityIndicator from "RedesignBottomSheetTitleHeaderBase";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import { InviteTargetTypes } from "InviteSendStates";
+import { Permissions } from "ME";
+import jsxProd from "SearchField";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_5;
+let closure_6;
+const require = arg1;
 function Loading() {
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   const items = [];
   let num = 0;
   do {
-    let tmp2 = closure_13;
-    let tmp3 = closure_1;
-    let tmp4 = closure_2;
+    let tmp2 = callback2;
+    let tmp3 = importDefault;
+    let tmp4 = dependencyMap;
     let obj = { row: num };
-    let arr = items.push(closure_13(closure_1(closure_2[12]), obj, num));
+    let arr = items.push(callback2(importDefault(8491), obj, num));
     num = num + 1;
   } while (num < 10);
   obj = {};
@@ -23,66 +41,52 @@ function Loading() {
   obj.children = items1;
   return callback3(closure_14, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const InviteTargetTypes = arg1(dependencyMap[7]).InviteTargetTypes;
-const Permissions = arg1(dependencyMap[8]).Permissions;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
-let obj = arg1(dependencyMap[10]);
-obj = {};
-obj = { 999576676: "redesign/message-preview/semibold", -2140384682: "primary", 1532099425: false, -1594137854: 600, borderRadius: importDefault(dependencyMap[11]).radii.sm, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
-obj.placeholderHeader = obj;
-const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.sm, marginEnd: "005", paddingHorizontal: "activate-device", backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED };
-obj.placeholderLabel = obj1;
-obj.errorEmptyState = { backgroundColor: "transparent" };
-const tmp3 = arg1(dependencyMap[9]);
-obj.searchAndShareContainer = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE, marginTop: importDefault(dependencyMap[11]).space.PX_8, paddingVertical: importDefault(dependencyMap[11]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_12, flexDirection: "column", gap: importDefault(dependencyMap[11]).space.PX_12 };
-const obj2 = { borderTopWidth: 1, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE, marginTop: importDefault(dependencyMap[11]).space.PX_8, paddingVertical: importDefault(dependencyMap[11]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_12, flexDirection: "column", gap: importDefault(dependencyMap[11]).space.PX_12 };
-obj.inviteAgeText = { paddingBottom: importDefault(dependencyMap[11]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_4 };
-obj.shareApps = { paddingVertical: 0 };
-let closure_16 = obj.createStyles(obj);
-const obj3 = { paddingBottom: importDefault(dependencyMap[11]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[11]).space.PX_4 };
-const result = arg1(dependencyMap[37]).fileFinishedImporting("modules/instant_invite/native/components/InstantInviteActionSheet.tsx");
+({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { height: 16, width: "80%", margin: 16, marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
+_createForOfIteratorHelperLoose.placeholderHeader = _createForOfIteratorHelperLoose;
+let obj1 = { height: 16, width: "40%", margin: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
+_createForOfIteratorHelperLoose.placeholderLabel = obj1;
+_createForOfIteratorHelperLoose.errorEmptyState = { backgroundColor: "transparent" };
+_createForOfIteratorHelperLoose.searchAndShareContainer = { borderTopWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+let obj2 = { borderTopWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.inviteAgeText = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.shareApps = { paddingVertical: 0 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteActionSheet.tsx");
 
 export default function InstantInviteActionSheet(channel) {
+  let _slicedToArray;
   let code;
   let isFetchingRows;
   let rows;
   let targetApplicationId;
   channel = channel.channel;
-  const arg1 = channel;
   const source = channel.source;
-  const importDefault = source;
   const vanityURLCode = channel.vanityURLCode;
-  const dependencyMap = vanityURLCode;
-  ({ guildScheduledEventId: closure_3, targetApplicationId, code } = channel);
-  const React = code;
+  ({ guildScheduledEventId: _slicedToArray, targetApplicationId, code } = channel);
   let stateFromStores;
-  let closure_7;
-  const tmp = callback4();
-  const analyticsLocations = importDefault(dependencyMap[14])(importDefault(dependencyMap[15]).INSTANT_INVITE_MODAL).analyticsLocations;
-  const tmp2 = importDefault(dependencyMap[14]);
+  let str;
+  const tmp = _createForOfIteratorHelperLoose();
+  const analyticsLocations = source(vanityURLCode[14])(source(vanityURLCode[15]).INSTANT_INVITE_MODAL).analyticsLocations;
+  const tmp2 = source(vanityURLCode[14]);
   if (null != targetApplicationId) {
     const items = [targetApplicationId];
     let items1 = items;
   } else {
     items1 = [];
   }
-  let name = callback(importDefault(dependencyMap[16])(items1), 1)[0];
-  let obj = arg1(dependencyMap[17]);
-  const items2 = [closure_10, closure_8, closure_7];
+  let name = callback(source(vanityURLCode[16])(items1), 1)[0];
+  let obj = channel(vanityURLCode[17]);
+  const items2 = [closure_10, closure_8, str];
   stateFromStores = obj.useStateFromStores(items2, () => {
     if (null != code) {
       return code;
     } else {
       if (channel.isGuildStageVoice()) {
-        if (!closure_10.can(constants.CREATE_INSTANT_INVITE, channel)) {
+        if (!outer1_10.can(outer1_12.CREATE_INSTANT_INVITE, channel)) {
           const stageInstanceByChannel = str.getStageInstanceByChannel(channel.id);
           let invite_code;
           if (null != stageInstanceByChannel) {
@@ -94,8 +98,8 @@ export default function InstantInviteActionSheet(channel) {
         }
       }
       if (null != vanityURLCode) {
-        if (null != closure_3) {
-          let obj = { baseCode: vanityURLCode, guildScheduledEventId: closure_3 };
+        if (null != _slicedToArray) {
+          let obj = { baseCode: vanityURLCode, guildScheduledEventId: _slicedToArray };
           let inviteKeyFromExtraData = channel(vanityURLCode[18]).generateInviteKeyFromExtraData(obj);
           const obj3 = channel(vanityURLCode[18]);
         } else {
@@ -103,14 +107,14 @@ export default function InstantInviteActionSheet(channel) {
         }
         return inviteKeyFromExtraData;
       } else {
-        let invite = store.getInvite();
+        let invite = outer1_8.getInvite();
         if (null != invite) {
-          if (null != closure_3) {
+          if (null != _slicedToArray) {
             obj = channel(vanityURLCode[18]);
             obj = { baseCode: invite.code };
-            invite = closure_3;
-            obj.guildScheduledEventId = closure_3;
-            let code = obj.generateInviteKeyFromExtraData(obj);
+            invite = _slicedToArray;
+            obj.guildScheduledEventId = _slicedToArray;
+            code = obj.generateInviteKeyFromExtraData(obj);
           } else {
             code = invite.code;
           }
@@ -118,33 +122,32 @@ export default function InstantInviteActionSheet(channel) {
       }
     }
   });
-  let obj1 = arg1(dependencyMap[17]);
+  let obj1 = channel(vanityURLCode[17]);
   const items3 = [closure_8];
-  const stateFromStores1 = obj1.useStateFromStores(items3, () => store.getError());
+  const stateFromStores1 = obj1.useStateFromStores(items3, () => outer1_8.getError());
   let tmp6 = null;
   if (null != stateFromStores) {
-    tmp6 = importDefault(dependencyMap[19])(stateFromStores);
+    tmp6 = source(vanityURLCode[19])(stateFromStores);
   }
-  let str = "";
+  str = "";
   if (null != tmp6) {
-    let obj2 = arg1(dependencyMap[20]);
+    let obj2 = channel(vanityURLCode[20]);
     str = obj2.getShareMessage(tmp6);
   }
-  closure_7 = str;
   let EMBEDDED_APPLICATION = null;
   if (null != targetApplicationId) {
     EMBEDDED_APPLICATION = InviteTargetTypes.EMBEDDED_APPLICATION;
   }
   const items4 = [channel, analyticsLocations];
   const items5 = [channel, stateFromStores, str, source];
-  const callback = React.useCallback((userId) => {
+  callback = code.useCallback((userId) => {
     let obj = source(vanityURLCode[21]);
     obj.hideActionSheet();
     obj = { userId, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
     source(vanityURLCode[22])(obj);
   }, items4);
   const items6 = [channel];
-  const callback1 = React.useCallback((arg0) => {
+  const callback1 = code.useCallback((arg0) => {
     if (null != stateFromStores) {
       const obj = { channel, code: stateFromStores, message: str, location: source };
       arg0(obj);
@@ -154,17 +157,17 @@ export default function InstantInviteActionSheet(channel) {
     }
   }, items5);
   const items7 = [stateFromStores, channel, source];
-  const callback2 = React.useCallback(() => {
+  const callback2 = code.useCallback(() => {
     const guildId = channel.getGuildId();
     const result = channel(vanityURLCode[23]).setHubProgressActionComplete(guildId, channel(vanityURLCode[24]).HubProgressStep.INVITE_USER);
   }, items6);
   const items8 = [stateFromStores, channel, str, source];
-  const callback3 = React.useCallback(() => channel(vanityURLCode[20]).handleCopy(stateFromStores, channel, source), items7);
+  const callback3 = code.useCallback(() => channel(vanityURLCode[20]).handleCopy(stateFromStores, channel, source), items7);
   const items9 = [channel];
-  const callback4 = React.useCallback(() => channel(vanityURLCode[20]).handleOpenShareSheet(stateFromStores, channel, str, source), items8);
-  const callback5 = React.useCallback(() => channel(vanityURLCode[20]).handlePressSettings(channel), items9);
-  const tmp3 = importDefault(dependencyMap[16]);
-  ({ rows, isFetchingRows } = importDefault(dependencyMap[25])(channel, source, EMBEDDED_APPLICATION, targetApplicationId));
+  const callback4 = code.useCallback(() => channel(vanityURLCode[20]).handleOpenShareSheet(stateFromStores, channel, str, source), items8);
+  const callback5 = code.useCallback(() => channel(vanityURLCode[20]).handlePressSettings(channel), items9);
+  const tmp3 = source(vanityURLCode[16]);
+  ({ rows, isFetchingRows } = source(vanityURLCode[25])(channel, source, EMBEDDED_APPLICATION, targetApplicationId));
   let tmp20 = null == stateFromStores;
   if (!tmp20) {
     tmp20 = 0 === rows.length && isFetchingRows;
@@ -177,9 +180,9 @@ export default function InstantInviteActionSheet(channel) {
   if (tmp23) {
     tmp23 = !isFetchingRows;
   }
-  const first = callback(React.useState(tmp23), 1)[0];
+  const first = callback(code.useState(tmp23), 1)[0];
   obj = { value: analyticsLocations };
-  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  obj = { showGradient: null, scrollable: true, startExpanded: true };
   let tmp27 = null != stateFromStores1;
   if (!tmp27) {
     tmp27 = !tmp20;
@@ -191,58 +194,58 @@ export default function InstantInviteActionSheet(channel) {
   obj1 = {};
   if (null != targetApplicationId) {
     if (null != name) {
-      const intl3 = arg1(dependencyMap[28]).intl;
+      const intl3 = channel(vanityURLCode[28]).intl;
       obj2 = {};
       name = name.name;
       obj2.applicationName = name;
-      let formatToPlainStringResult = intl3.formatToPlainString(arg1(dependencyMap[28]).t.ZdK3dW, obj2);
+      let formatToPlainStringResult = intl3.formatToPlainString(channel(vanityURLCode[28]).t.ZdK3dW, obj2);
     } else {
-      const intl2 = arg1(dependencyMap[28]).intl;
-      formatToPlainStringResult = intl2.string(arg1(dependencyMap[28]).t.OzOM/q);
+      const intl2 = channel(vanityURLCode[28]).intl;
+      formatToPlainStringResult = intl2.string(channel(vanityURLCode[28]).t["OzOM/q"]);
     }
   } else {
-    const intl = arg1(dependencyMap[28]).intl;
-    obj1.title = intl.string(arg1(dependencyMap[28]).t.f1+QIK);
+    const intl = channel(vanityURLCode[28]).intl;
+    obj1.title = intl.string(channel(vanityURLCode[28]).t["f1+QIK"]);
     obj.header = callback2(tmp29, obj1);
     if (null != stateFromStores1) {
-      const obj3 = { style: tmp.errorEmptyState, Illustration: arg1(dependencyMap[30]).AppCrash, title: stateFromStores1 };
-      let tmp38Result = callback2(arg1(dependencyMap[29]).EmptyState, obj3);
+      let obj3 = { style: tmp.errorEmptyState, Illustration: channel(vanityURLCode[30]).AppCrash, title: stateFromStores1 };
+      let tmp38Result = callback2(channel(vanityURLCode[29]).EmptyState, obj3);
     } else if (tmp20) {
       tmp38Result = callback2(Loading, {});
     } else if (first) {
       const obj4 = {};
-      const obj5 = { paddingBottom: importDefault(dependencyMap[13])().bottom + 16 };
+      const obj5 = { paddingBottom: source(vanityURLCode[13])().bottom + 16 };
       obj4.contentContainerStyle = obj5;
       const obj6 = { link: tmp6, onCopy: callback3, onShare: callback4, onPressSettings: callback5 };
-      obj4.children = callback2(importDefault(dependencyMap[31]), obj6);
+      obj4.children = callback2(source(vanityURLCode[31]), obj6);
       tmp38Result = callback2(stateFromStores, obj4);
     } else {
       const obj7 = {};
       const obj8 = {};
       const obj9 = { contentContainerStyle: tmp.shareApps, onItemPressed: callback1 };
-      const items10 = [callback2(importDefault(dependencyMap[32]), obj9), ];
+      const items10 = [callback2(source(vanityURLCode[32]), obj9), ];
       const obj10 = { style: tmp.searchAndShareContainer };
-      const obj11 = { "Null": false, "Null": false, onChange: arg1(dependencyMap[34]).searchInviteSuggestions };
+      const obj11 = { size: "md", isRound: true, onChange: channel(vanityURLCode[34]).searchInviteSuggestions };
       if (null != targetApplicationId) {
-        const intl5 = arg1(dependencyMap[28]).intl;
-        let stringResult = intl5.string(arg1(dependencyMap[28]).t.iI1gMg);
+        const intl5 = channel(vanityURLCode[28]).intl;
+        let stringResult = intl5.string(channel(vanityURLCode[28]).t.iI1gMg);
       } else {
-        const intl4 = arg1(dependencyMap[28]).intl;
+        const intl4 = channel(vanityURLCode[28]).intl;
         const obj12 = {};
-        const guild = guild.getGuild(channel.guild_id);
+        guild = guild.getGuild(channel.guild_id);
         name = undefined;
         if (null != guild) {
           name = guild.name;
         }
         obj12.groupname = name;
-        stringResult = intl4.formatToPlainString(arg1(dependencyMap[28]).t.1UgGdm, obj12);
+        stringResult = intl4.formatToPlainString(channel(vanityURLCode[28]).t["1UgGdm"], obj12);
       }
       obj11.placeholder = stringResult;
-      const items11 = [callback2(arg1(dependencyMap[33]).SearchField, obj11), ];
+      const items11 = [callback2(channel(vanityURLCode[33]).SearchField, obj11), ];
       let tmp57 = !tmp56;
       if (null == vanityURLCode) {
         const obj13 = { style: tmp.inviteAgeText, channel, canEditInvite: null == code };
-        tmp57 = callback2(importDefault(dependencyMap[35]), obj13);
+        tmp57 = callback2(source(vanityURLCode[35]), obj13);
       }
       items11[1] = tmp57;
       obj10.children = items11;
@@ -257,7 +260,7 @@ export default function InstantInviteActionSheet(channel) {
       obj14.source = tmp65;
       obj14.onPressAvatar = callback;
       obj14.onInviteSent = callback2;
-      items12[1] = callback2(importDefault(dependencyMap[36]), obj14);
+      items12[1] = callback2(source(vanityURLCode[36]), obj14);
       obj7.children = items12;
       tmp38Result = tmp38(closure_14, obj7);
       const tmp39 = closure_14;
@@ -266,10 +269,10 @@ export default function InstantInviteActionSheet(channel) {
       const tmp45 = analyticsLocations;
       const tmp46 = callback2;
       const tmp61 = callback2;
-      const tmp64 = importDefault(dependencyMap[36]);
+      const tmp64 = source(vanityURLCode[36]);
     }
     obj.children = tmp38Result;
-    obj.children = callback2(arg1(dependencyMap[26]).BottomSheet, obj);
-    return callback2(arg1(dependencyMap[14]).AnalyticsLocationProvider, obj);
+    obj.children = callback2(channel(vanityURLCode[26]).BottomSheet, obj);
+    return callback2(channel(vanityURLCode[14]).AnalyticsLocationProvider, obj);
   }
 };

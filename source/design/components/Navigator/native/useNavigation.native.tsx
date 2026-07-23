@@ -1,21 +1,20 @@
 // Module ID: 1456
-// Function ID: 16985
+// Function ID: 16986
 // Name: useNavigation
-// Dependencies: []
+// Dependencies: [1457, 2]
 // Exports: useNativeStackNavigation, useNavigation, useStackNavigation, useTabNavigation
 
 // Module 1456 (useNavigation)
 function useNavigation() {
-  return require(dependencyMap[0]).useNavigation();
+  return require(1457) /* Link */.useNavigation();
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("design/components/Navigator/native/useNavigation.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Navigator/native/useNavigation.native.tsx");
 
 export { useNavigation };
 export const useNativeStackNavigation = function useNativeStackNavigation() {
-  return require(dependencyMap[0]).useNavigation();
+  return require(1457) /* Link */.useNavigation();
 };
 export const useStackNavigation = useNavigation;
 export const useTabNavigation = function useTabNavigation() {
-  return require(dependencyMap[0]).useNavigation();
+  return require(1457) /* Link */.useNavigation();
 };

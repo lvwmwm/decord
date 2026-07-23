@@ -1,19 +1,18 @@
-// Module ID: 5132
-// Function ID: 44496
+// Module ID: 5135
+// Function ID: 44515
 // Name: getWindowId
-// Dependencies: []
+// Dependencies: [22, 2]
 // Exports: getMainWindowId, setupWindowId
 
-// Module 5132 (getWindowId)
-function getWindowId(closure_1) {
-  return closure_1.__DISCORD_WINDOW_ID;
+// Module 5135 (getWindowId)
+function getWindowId(defaultView) {
+  return defaultView.__DISCORD_WINDOW_ID;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/web/WindowIdUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/web/WindowIdUtils.tsx");
 
 export { getWindowId };
 export const setupWindowId = function setupWindowId(arg0) {
-  const uniqueIdResult = require(dependencyMap[0]).uniqueId("window-");
+  const uniqueIdResult = require(22) /* apply */.uniqueId("window-");
   arg0.__DISCORD_WINDOW_ID = uniqueIdResult;
   return uniqueIdResult;
 };

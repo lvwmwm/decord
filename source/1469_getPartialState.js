@@ -1,27 +1,29 @@
 // Module ID: 1469
-// Function ID: 17076
+// Function ID: 17077
 // Name: getPartialState
-// Dependencies: []
+// Dependencies: [57, 29, 31, 33, 1470, 1471, 1472, 1473, 1474, 1461, 1475, 1476, 1477, 1479, 1480, 1478, 1481, 1482, 1483, 1484]
 
 // Module 1469 (getPartialState)
-let closure_3 = [false, false];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
+import _slicedToArray from "_slicedToArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let closure_3 = ["key", "routeNames"];
 function getPartialState(routes) {
   let key;
   let routeNames;
   if (undefined !== routes) {
     ({ key, routeNames } = routes);
-    const _Object = Object;
-    const obj = { stale: true };
+    let _Object = Object;
+    let obj = { stale: true };
     routes = routes.routes;
     obj.routes = routes.map((state) => {
       let merged = state;
       if (undefined !== state.state) {
         const _Object = Object;
-        const obj = { state: callback(state.state) };
+        const obj = { state: outer1_8(state.state) };
         merged = Object.assign({}, state, obj);
       }
       return merged;
@@ -34,48 +36,48 @@ export default importAllResult.forwardRef(function BaseNavigationContainer(child
   let independent;
   let onStateChange;
   let onUnhandledAction;
-  ({ initialState: closure_0, onStateChange } = children);
-  const importDefault = onStateChange;
+  let require;
+  ({ initialState: require, onStateChange } = children);
   ({ onUnhandledAction, independent } = children);
-  if (!importAllResult.useContext(importDefault(dependencyMap[4])).isDefault) {
+  if (!importAllResult.useContext(onStateChange(first[4])).isDefault) {
     if (!independent) {
       const _Error = Error;
       const error = new Error("Looks like you have nested a 'NavigationContainer' inside another. Normally you need only one container at the root of the app, so this was probably an error. If this was intentional, pass 'independent={true}' explicitly. Note that this will make the child navigators disconnected from the parent and you won't be able to navigate between them.");
       throw error;
     }
   }
-  const tmp6 = callback(importDefault(dependencyMap[5])(() => {
+  const tmp6 = callback(onStateChange(first[5])(() => {
     let tmp2;
     if (null != closure_0) {
       tmp2 = closure_0;
     }
     return closure_8(tmp2);
   }), 5);
-  const first = tmp6[0];
-  const dependencyMap = first;
+  first = tmp6[0];
   let closure_3 = tmp8;
-  let callback = tmp9;
-  let closure_5 = tmp10;
+  callback = tmp9;
+  let _objectWithoutProperties = tmp10;
   const jsx = importAllResult.useRef(true);
   let closure_8 = importAllResult.useRef();
   callback = importAllResult.useCallback(() => ref2.current, []);
   const callback1 = importAllResult.useCallback((current) => {
     closure_8.current = current;
   }, []);
-  const tmp14 = importDefault(dependencyMap[6])();
+  const tmp14 = onStateChange(first[6])();
   const listeners = tmp14.listeners;
   const addListener = tmp14.addListener;
-  const tmp15 = importDefault(dependencyMap[7])();
+  const tmp15 = onStateChange(first[7])();
   const keyedListeners = tmp15.keyedListeners;
   const addKeyedListener = tmp15.addKeyedListener;
   const items = [listeners.focus];
   const callback2 = importAllResult.useCallback((arg0) => {
+    let closure_0 = arg0;
     if (null == listeners.focus[0]) {
       const _console = console;
-      console.error(arg0(first[8]).NOT_INITIALIZED_ERROR);
+      console.error(outer1_0(first[8]).NOT_INITIALIZED_ERROR);
     } else {
       const focus = listeners.focus;
-      focus[0]((dispatch) => dispatch.dispatch(dispatch));
+      focus[0]((dispatch) => dispatch.dispatch(closure_0));
     }
   }, items);
   const items1 = [listeners.focus];
@@ -94,6 +96,7 @@ export default importAllResult.forwardRef(function BaseNavigationContainer(child
   }, items1);
   const items2 = [keyedListeners.getState, listeners.focus];
   const callback4 = importAllResult.useCallback((key) => {
+    let closure_0 = key;
     key = undefined;
     if (null != key) {
       key = key.key;
@@ -106,15 +109,14 @@ export default importAllResult.forwardRef(function BaseNavigationContainer(child
       }
       key = key1;
     }
-    const onStateChange = key;
     if (null == key) {
       const _console = console;
-      console.error(key(first[8]).NOT_INITIALIZED_ERROR);
+      console.error(outer1_0(first[8]).NOT_INITIALIZED_ERROR);
     } else {
       const focus = listeners.focus;
       focus[0]((dispatch) => {
-        const CommonActions = dispatch(closure_2[9]).CommonActions;
-        return dispatch.dispatch(Object.assign({}, CommonActions.reset(dispatch), { target: key }));
+        const CommonActions = outer2_0(first[9]).CommonActions;
+        return dispatch.dispatch(Object.assign({}, CommonActions.reset(closure_0), { target: key }));
       });
     }
   }, items2);
@@ -134,15 +136,17 @@ export default importAllResult.forwardRef(function BaseNavigationContainer(child
       return onStateChange(first[10])(tmp);
     }
   }, items4);
-  const tmp21 = importDefault(dependencyMap[11])();
-  const tmp22 = importDefault(dependencyMap[12])({});
+  const tmp21 = onStateChange(first[11])();
+  let closure_20 = tmp21;
+  const tmp22 = onStateChange(first[12])({});
   const addOptionsGetter = tmp22.addOptionsGetter;
   const getCurrentOptions = tmp22.getCurrentOptions;
   const items5 = [callback3, callback2, tmp21, getCurrentOptions, callback6, callback5, listeners.focus, callback4];
   const memo = importAllResult.useMemo(() => {
-    const keys = Object.keys(callback(first[9]).CommonActions);
+    const keys = Object.keys(outer1_0(first[9]).CommonActions);
     const reduced = keys.reduce((arg0, arg1) => {
-      arg0[arg1] = () => callback(arg1(closure_2[9]).CommonActions[closure_0](...arguments));
+      let closure_0 = arg1;
+      arg0[arg1] = () => outer2_15(outer3_0(first[9]).CommonActions[closure_0](...arguments));
       return arg0;
     }, {});
     return Object.assign({}, reduced, tmp21.create("root"), {
@@ -156,13 +160,13 @@ export default importAllResult.forwardRef(function BaseNavigationContainer(child
 
       },
       getState() {
-        return ref.current;
+        return outer1_31.current;
       },
       getRootState: callback5,
       getCurrentRoute: callback6,
       getCurrentOptions,
       isReady() {
-        return null != focus.focus[0];
+        return null != outer1_11.focus[0];
       }
     });
   }, items5);
@@ -187,11 +191,11 @@ export default importAllResult.forwardRef(function BaseNavigationContainer(child
   const items9 = [addListener, addKeyedListener, callback7, callback8];
   const items10 = [tmp6[3], tmp6[4]];
   const memo1 = importAllResult.useMemo(() => ({ addListener, addKeyedListener, onDispatchAction: callback7, onOptionsChange: callback8, stackRef: closure_27 }), items9);
-  const memo2 = importAllResult.useMemo(() => ({ scheduleUpdate: tmp10, flushUpdates: tmp11 }), items10);
+  const memo2 = importAllResult.useMemo(() => ({ scheduleUpdate: _objectWithoutProperties, flushUpdates: closure_6 }), items10);
   let closure_28 = importAllResult.useRef(true);
   const callback9 = importAllResult.useCallback(() => ref5.current, []);
   const items11 = [first, tmp6[1], tmp6[2], callback, callback1, callback9, addOptionsGetter];
-  const memo3 = importAllResult.useMemo(() => ({ state: first, getState: tmp8, setState: tmp9, getKey: callback, setKey: callback1, getIsInitial: callback9, addOptionsGetter }), items11);
+  const memo3 = importAllResult.useMemo(() => ({ state: first, getState: closure_3, setState: _slicedToArray, getKey: callback, setKey: callback1, getIsInitial: callback9, addOptionsGetter }), items11);
   let closure_30 = importAllResult.useRef(onStateChange);
   let closure_31 = importAllResult.useRef(first);
   const effect = importAllResult.useEffect(() => {
@@ -223,18 +227,18 @@ export default importAllResult.forwardRef(function BaseNavigationContainer(child
     callback10 = onUnhandledAction;
   }
   obj2.value = callback10;
-  obj2.children = jsx(importDefault(dependencyMap[17]), { children: children.children });
-  obj1.children = jsx(importDefault(dependencyMap[16]).Provider, obj2);
-  obj.children = jsx(importDefault(dependencyMap[4]).Provider, obj1);
-  obj.children = jsx(importDefault(dependencyMap[15]).Provider, obj);
-  obj.children = jsx(arg1(dependencyMap[14]).ScheduleUpdateContext.Provider, obj);
-  const tmp34Result = jsx(importDefault(dependencyMap[13]).Provider, obj);
+  obj2.children = jsx(onStateChange(first[17]), { children: children.children });
+  obj1.children = jsx(onStateChange(first[16]).Provider, {});
+  obj.children = jsx(onStateChange(first[4]).Provider, { value: memo3 });
+  obj.children = jsx(onStateChange(first[15]).Provider, { value: memo1 });
+  obj.children = jsx(require(first[14]).ScheduleUpdateContext.Provider, { value: memo1 });
+  const tmp34Result = jsx(onStateChange(first[13]).Provider, { value: memo1 });
   let tmp36 = tmp34Result;
   if (independent) {
     const obj3 = { value: undefined };
     const obj4 = { value: undefined, children: tmp34Result };
-    obj3.children = jsx(importDefault(dependencyMap[19]).Provider, obj4);
-    tmp36 = jsx(importDefault(dependencyMap[18]).Provider, obj3);
+    obj3.children = jsx(onStateChange(first[19]).Provider, { value: undefined, children: tmp34Result });
+    tmp36 = jsx(onStateChange(first[18]).Provider, { value: undefined });
   }
   return tmp36;
 });

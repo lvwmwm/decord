@@ -1,16 +1,18 @@
-// Module ID: 13648
-// Function ID: 103404
+// Module ID: 13762
+// Function ID: 105560
 // Name: harvestDisabled
-// Dependencies: []
+// Dependencies: [57, 31, 1849, 12633, 13763, 566, 2]
 // Exports: harvestDisabled, useRequestHarvestStatus
 
-// Module 13648 (harvestDisabled)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const REQUEST_DATA_LIMIT_MS = arg1(dependencyMap[4]).REQUEST_DATA_LIMIT_MS;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/harvester/HarvesterUtils.tsx");
+// Module 13762 (harvestDisabled)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { REQUEST_DATA_LIMIT_MS } from "REQUEST_DATA_LIMIT_DAYS";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/harvester/HarvesterUtils.tsx");
 
 export const harvestDisabled = function harvestDisabled(created_at, stateFromStores) {
   let tmp = !stateFromStores.verified;
@@ -33,14 +35,14 @@ export const harvestDisabled = function harvestDisabled(created_at, stateFromSto
   return tmp;
 };
 export const useRequestHarvestStatus = function useRequestHarvestStatus() {
-  let obj = callback(dependencyMap[5]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getCurrentUser());
   const items1 = [closure_5];
-  const stateFromStores1 = callback(dependencyMap[5]).useStateFromStores(items1, () => harvestType.harvestType);
-  const tmp2 = callback2(React.useState(() => Date.now()), 2);
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_5.harvestType);
+  const tmp2 = callback(React.useState(() => Date.now()), 2);
   const first = tmp2[0];
-  const callback = tmp2[1];
+  _require = tmp2[1];
   let sum = first;
   if (null != stateFromStores1) {
     const _Date = Date;
@@ -48,27 +50,27 @@ export const useRequestHarvestStatus = function useRequestHarvestStatus() {
     sum = date.getTime() + REQUEST_DATA_LIMIT_MS;
   }
   const dependencyMap = sum;
-  const callback2 = React.useRef(null);
+  callback = React.useRef(null);
   const items2 = [sum];
   const effect = React.useEffect(() => {
-    const diff = sum - Date.now();
+    const diff = closure_1 - Date.now();
     if (diff > 0) {
       const _setTimeout = setTimeout;
       const _clearTimeout = clearTimeout;
-      const timerId = setTimeout(() => callback(Date.now()), diff);
+      const timerId = setTimeout(() => outer1_0(Date.now()), diff);
       clearTimeout(ref.current);
       ref.current = timerId;
     }
-    return () => clearTimeout(ref.current);
+    return () => clearTimeout(outer1_2.current);
   }, items2);
   if (null != stateFromStores) {
     if (stateFromStores.verified) {
       if (stateFromStores.isStaff()) {
-        obj = { GUILD_ROOM_BACKGROUND_CONFIG: true, hideTitle: true };
+        obj = { allowed: false, reason: "staff" };
       } else if (null == stateFromStores1) {
         obj = { allowed: true };
       } else if (sum > first) {
-        const obj1 = {};
+        const obj1 = { allowed: false, reason: "rate_limited" };
         const _Date2 = Date;
         const date1 = new Date(sum);
         obj1.nextAllowed = date1;
@@ -78,5 +80,5 @@ export const useRequestHarvestStatus = function useRequestHarvestStatus() {
       }
     }
   }
-  return {};
+  return { allowed: false, reason: "not_verified" };
 };

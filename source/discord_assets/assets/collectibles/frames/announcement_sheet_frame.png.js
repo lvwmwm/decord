@@ -1,11 +1,10 @@
-// Module ID: 15511
-// Function ID: 118373
+// Module ID: 15628
+// Function ID: 120546
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 15511 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/collectibles/frames/announcement_sheet_frame.png.js");
+// Module 15628 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/collectibles/frames/announcement_sheet_frame.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/daeb2e0f934e839881256366bcb116d3f793acbbbd9218b27e4b388073c8c2b1.png";
 export const metadata = { fileBytes: 157924 };

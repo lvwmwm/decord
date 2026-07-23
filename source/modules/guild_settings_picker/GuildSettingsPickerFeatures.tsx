@@ -1,42 +1,44 @@
-// Module ID: 12783
-// Function ID: 97933
+// Module ID: 12897
+// Function ID: 100089
 // Name: useGuildSettingsPickerFeature
-// Dependencies: []
+// Dependencies: [57, 31, 3758, 12898, 12899, 1212, 566, 2]
 // Exports: useGuildSettingsPickerFeature
 
-// Module 12783 (useGuildSettingsPickerFeature)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const obj = { server-subscriptions-onboarding: importDefault(dependencyMap[3]), server-subscriptions-create-tier-from-template: importDefault(dependencyMap[4]) };
+// Module 12897 (useGuildSettingsPickerFeature)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let obj = { "server-subscriptions-onboarding": require("module_12898"), "server-subscriptions-create-tier-from-template": require("module_12899") };
 let closure_6 = {
   title() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.V42OaH);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.V42OaH);
   },
   description() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.7dJ16X);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["7dJ16X"]);
   },
   selectGuildCta() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.LhlgY9);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.LhlgY9);
   },
   createGuildDescription() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.anOisx);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.anOisx);
   },
   createGuildCta() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.B44MTm);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.B44MTm);
   },
   canCreateGuild: true,
   useIsGuildSupported() {
-    const items = [closure_4];
-    return arg1(dependencyMap[6]).useStateFromStores(items, () => (arg0) => closure_4.canAccessGuildSettings(arg0), [], arg1(dependencyMap[6]).statesWillNeverBeEqual);
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => (arg0) => outer2_4.canAccessGuildSettings(arg0), [], require(566) /* initialize */.statesWillNeverBeEqual);
   }
 };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_settings_picker/GuildSettingsPickerFeatures.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings_picker/GuildSettingsPickerFeatures.tsx");
 
 export const useGuildSettingsPickerFeature = function useGuildSettingsPickerFeature(feature) {
   let tmp2;
@@ -51,8 +53,7 @@ export const useGuildSettingsPickerFeature = function useGuildSettingsPickerFeat
       isGuildSupported = first.useIsGuildSupported();
     }
   }
-  const dependencyMap = isGuildSupported;
-  let obj = {};
+  obj = {};
   const merged = Object.assign(closure_6);
   if (null == first) {
     first = {};

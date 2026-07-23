@@ -1,53 +1,53 @@
-// Module ID: 10948
-// Function ID: 85147
+// Module ID: 10958
+// Function ID: 85196
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4291, 2]
 // Exports: getBestMatches, getEntries, sortEntries
 
-// Module 10948 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10958 (_createForOfIteratorHelperLoose)
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +58,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,12 +92,12 @@ function getExperimentDateFromId(arg0) {
   }
   return tmp2;
 }
-function matchesDeep(value, str) {
+function matchesDeep(value, value2) {
   if (Array.isArray(value)) {
     const tmp5 = _createForOfIteratorHelperLoose(value);
     let iter = tmp5();
     if (!iter.done) {
-      while (!matchesDeep(iter.value, str)) {
+      while (!matchesDeep(iter.value, value2)) {
         let iter2 = tmp5();
         iter = iter2;
       }
@@ -110,7 +110,7 @@ function matchesDeep(value, str) {
         const values = Object.values(value);
         let num = 0;
         if (0 < values.length) {
-          while (!matchesDeep(values[num], str)) {
+          while (!matchesDeep(values[num], value2)) {
             num = num + 1;
           }
           return true;
@@ -119,16 +119,15 @@ function matchesDeep(value, str) {
     }
     if ("string" === typeof value) {
       const formatted = value.toLowerCase();
-      if (formatted.includes(str.toLowerCase())) {
+      if (formatted.includes(value2.toLowerCase())) {
         return true;
       }
     }
   }
   return false;
 }
-let closure_2 = /^(\d{4}-\d{1,2})/;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/user_settings/dev_tools/UserSettingsExperimentsUtils.tsx");
+const re2 = /^(\d{4}-\d{1,2})/;
+const result = require("set").fileFinishedImporting("modules/user_settings/dev_tools/UserSettingsExperimentsUtils.tsx");
 
 export { getExperimentDateFromId };
 export const getEntries = function getEntries(arg0) {
@@ -141,14 +140,14 @@ export const getEntries = function getEntries(arg0) {
 };
 export { matchesDeep };
 export const sortEntries = function sortEntries(entries, memo1) {
-  const importDefault = memo1;
+  let closure_0 = memo1;
   const substr = entries.slice();
   return substr.sort((id, id2) => {
     id = undefined;
     if (null != id) {
       id = id.id;
     }
-    if (null != id2[id]) {
+    if (null != closure_0[id]) {
       let id1;
       if (null != id2) {
         id1 = id2.id;
@@ -156,13 +155,13 @@ export const sortEntries = function sortEntries(entries, memo1) {
       if (null == tmp3[id1]) {
         return -1;
       }
-      const tmp3 = id2;
+      tmp3 = closure_0;
     }
     id2 = undefined;
     if (null != id) {
       id2 = id.id;
     }
-    if (null == id2[id2]) {
+    if (null == closure_0[id2]) {
       let id3;
       if (null != id2) {
         id3 = id2.id;
@@ -170,10 +169,10 @@ export const sortEntries = function sortEntries(entries, memo1) {
       if (null != tmp7[id3]) {
         return 1;
       }
-      const tmp7 = id2;
+      tmp7 = closure_0;
     }
-    const tmp9 = callback(id.id);
-    const obj = callback(id2.id);
+    const tmp9 = outer1_5(id.id);
+    const obj = outer1_5(id2.id);
     if (null != tmp9) {
       if (null != obj) {
         const localeCompareResult = obj.localeCompare(tmp9);
@@ -199,20 +198,20 @@ export const getBestMatches = function getBestMatches(arg0, str) {
     if (!iter5.done) {
       do {
         let value = iter5.value;
-        let tmp = closure_3;
-        let tmp2 = closure_3(found);
+        let tmp = _createForOfIteratorHelperLoose;
+        let tmp2 = _createForOfIteratorHelperLoose(found);
         let iter = tmp2();
         let iter2 = iter;
         let num = 0;
         let num2 = 0;
         if (!iter.done) {
           do {
-            let tmp3 = closure_6;
+            let tmp3 = matchesDeep;
             let sum = num;
-            if (closure_6(value, iter2.value)) {
+            if (matchesDeep(value, iter2.value)) {
               sum = num + 1;
             }
-            let iter3 = tmp2();
+            iter3 = tmp2();
             num = sum;
             iter2 = iter3;
             num2 = sum;
@@ -230,6 +229,6 @@ export const getBestMatches = function getBestMatches(arg0, str) {
       } while (!iter4.done);
     }
     const found1 = items.filter((arg0) => undefined !== arg0);
-    return importDefault(dependencyMap[0])(found1.reverse());
+    return importDefault(4291)(found1.reverse());
   }
 };

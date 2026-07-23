@@ -1,13 +1,17 @@
-// Module ID: 14695
-// Function ID: 110798
-// Dependencies: []
+// Module ID: 14810
+// Function ID: 112962
+// Dependencies: [31, 33, 4130, 477, 10233, 14811, 14821, 14890, 10856, 5217, 5517, 7588, 14891, 2]
 
-// Module 14695
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[2]).createStyles({ wrapper: { paddingVertical: null, alignItems: null, flexGrow: null } });
-const obj2 = arg1(dependencyMap[2]);
+// Module 14810
+import importAllResult from "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { position: "relative", overflow: "visible", flex: 1 } });
 const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
   let gesture;
   let listDataProps;
@@ -21,26 +25,26 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
   if (flag === undefined) {
     flag = false;
   }
-  let arg1;
-  const tmp2 = importDefault(dependencyMap[5])();
-  const fastListRef = tmp2.fastListRef;
-  arg1 = fastListRef;
+  let fastListRef;
+  const tmp2 = importDefault(14811)();
+  fastListRef = tmp2.fastListRef;
   ({ scrollPosition, gesture, scrollerRef, persistantKeys, onFastListScroll, onFastListScrollWorklet } = tmp2);
   const tmp = callback2();
-  ({ listProps, listDataProps } = importDefault(dependencyMap[6])(fastListRef));
-  const items = [fastListRef];
-  const effect = importAllResult.useEffect(() => {
-    const result = fastListRef(closure_2[7]).registerGuildVisibilityMethod(fastListRef);
+  ({ listProps, listDataProps } = importDefault(14821)(fastListRef));
+  let items = [fastListRef];
+  let effect = importAllResult.useEffect(() => {
+    const result = fastListRef(outer1_2[7]).registerGuildVisibilityMethod(fastListRef);
   }, items);
-  function usePipResizeFix(listProps, fastListRef) {
-    fastListRef = listProps;
-    let closure_2 = React.useRef(listProps);
-    const React = React.useRef(false);
-    const effect = React.useEffect(() => {
+  (function usePipResizeFix(listProps, fastListRef) {
+    let closure_0 = listProps;
+    let closure_1 = fastListRef;
+    let closure_2 = outer1_3.useRef(listProps);
+    let closure_3 = outer1_3.useRef(false);
+    const effect = outer1_3.useEffect(() => {
       if (obj.isAndroid()) {
-        const listProps = arg1(closure_2[4]).addOnPipModeChangedListener((arg0) => {
+        let closure_0 = outer2_1(outer2_2[4]).addOnPipModeChangedListener((arg0) => {
           if (arg0) {
-            closure_3.current = true;
+            outer1_3.current = true;
           }
         });
         return () => {
@@ -51,14 +55,14 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
           return removeResult;
         };
       }
-      const obj = listProps(closure_2[3]);
+      obj = fastListRef(outer2_2[3]);
     }, []);
     const items = [fastListRef, listProps];
-    const effect1 = React.useEffect((self) => {
-      const current = ref.current;
-      ref.current = self;
-      if (ref2.current) {
-        const chunkBase = self.chunkBase;
+    const effect1 = outer1_3.useEffect(() => {
+      const current = ref2.current;
+      ref2.current = listProps;
+      if (ref3.current) {
+        const chunkBase = listProps.chunkBase;
         let num = 0;
         if (null != chunkBase) {
           num = chunkBase;
@@ -69,13 +73,13 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
           num2 = chunkBase2;
         }
         if (num > num2) {
-          ref2.current = false;
-          let tmp5 = self.insetStart === current.insetStart;
+          ref3.current = false;
+          let tmp5 = listProps.insetStart === current.insetStart;
           if (tmp5) {
-            tmp5 = self.insetEnd === current.insetEnd;
+            tmp5 = listProps.insetEnd === current.insetEnd;
           }
           if (tmp5) {
-            const current2 = arg1.current;
+            const current2 = ref.current;
             if (null != current2) {
               const blocks = current2.computeBlocks();
             }
@@ -83,16 +87,16 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
         }
       }
     }, items);
-  }(listProps, fastListRef);
+  })(listProps, fastListRef);
   let obj = {};
-  const tmp3 = importDefault(dependencyMap[6])(fastListRef);
-  obj.profile = arg1(dependencyMap[8]).Profiles.Guilds;
+  const tmp3 = importDefault(14821)(fastListRef);
+  obj.profile = fastListRef(10856).Profiles.Guilds;
   obj = { gesture };
-  obj = { style: tmp.wrapper };
-  const tmp7 = importDefault(dependencyMap[8]);
+  obj = { style: tmp.wrapper, collapsable: false, nativeID: "guilds-bar-view" };
+  const tmp7 = importDefault(10856);
   const tmp8 = closure_5;
   const obj1 = {};
-  const tmp9 = importDefault(dependencyMap[10]);
+  const tmp9 = importDefault(5517);
   const merged = Object.assign(listProps);
   const merged1 = Object.assign(listDataProps);
   obj1["ref"] = fastListRef;
@@ -112,12 +116,12 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
   }
   obj1["style"] = tmp13;
   obj1["nativeID"] = "guilds-bar-fast-list";
-  const items1 = [callback(importDefault(dependencyMap[11]), obj1), callback(importDefault(dependencyMap[12]), {})];
+  const items1 = [callback(importDefault(7588), obj1), callback(importDefault(14891), {})];
   obj.children = items1;
   obj.children = tmp8(tmp9, obj);
-  obj.children = callback(arg1(dependencyMap[9]).GestureDetector, obj);
+  obj.children = callback(fastListRef(5217).GestureDetector, obj);
   return callback(tmp7, obj);
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guilds_bar/native/GuildsBar.tsx");
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guilds_bar/native/GuildsBar.tsx");
 
 export default memoResult;

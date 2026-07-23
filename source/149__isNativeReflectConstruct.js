@@ -1,9 +1,15 @@
 // Module ID: 149
 // Function ID: 2372
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 134, 148]
 
 // Module 149 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +19,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 
-export default (arg0) => {
+export default ((arg0) => {
   class ReadOnlyText {
     constructor() {
       self = this;
-      tmp = closure_2(this, ReadOnlyText);
-      obj = closure_5(ReadOnlyText);
-      tmp2 = closure_4;
-      if (closure_7()) {
+      tmp = outer1_2(this, ReadOnlyText);
+      obj = outer1_5(ReadOnlyText);
+      tmp2 = outer1_4;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,7 +41,6 @@ export default (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = ReadOnlyText;
   callback2(ReadOnlyText, arg0);
   let obj = {
     key: "nodeName",
@@ -52,9 +52,9 @@ export default (arg0) => {
   obj = {
     key: "nodeType",
     get() {
-      return ReadOnlyText(closure_1[5]).TEXT_NODE;
+      return ReadOnlyText(outer1_1[5]).TEXT_NODE;
     }
   };
   items[1] = obj;
   return callback(ReadOnlyText, items);
-}(importDefault(dependencyMap[6]));
+})(require("_isNativeReflectConstruct"));

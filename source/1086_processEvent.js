@@ -1,67 +1,71 @@
 // Module ID: 1086
-// Function ID: 12466
+// Function ID: 12467
 // Name: processEvent
-// Dependencies: []
+// Dependencies: [977]
 
 // Module 1086 (processEvent)
+const require = arg1;
+const dependencyMap = arg6;
 function processEvent(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const arg6 = arg2;
+  let closure_0 = arg0;
+  let closure_1 = arg2;
   return fn(this, undefined, undefined, function*() {
-    const options = options.getOptions();
-    const extra = lib.extra;
+    const options = outer1_1.getOptions();
+    const extra = outer1_0.extra;
+    const outer1_2 = extra;
     let __sentry_release;
     if (null !== extra) {
-      if (undefined !== extra) {
-        __sentry_release = extra.__sentry_release;
+      if (undefined !== outer1_2) {
+        __sentry_release = outer1_2.__sentry_release;
       }
     }
     if ("string" === typeof __sentry_release) {
       const _HermesInternal = HermesInternal;
-      lib.release = "" + lib.extra.__sentry_release;
+      outer1_0.release = "" + outer1_0.extra.__sentry_release;
     } else {
       let release;
       if (null != options) {
         release = options.release;
       }
       if ("string" === typeof release) {
-        lib.release = options.release;
+        outer1_0.release = options.release;
       }
     }
-    const extra2 = lib.extra;
+    const extra2 = outer1_0.extra;
+    const outer1_3 = extra2;
     let __sentry_dist;
     if (null !== extra2) {
-      if (undefined !== extra2) {
-        __sentry_dist = extra2.__sentry_dist;
+      if (undefined !== outer1_3) {
+        __sentry_dist = outer1_3.__sentry_dist;
       }
     }
     if ("string" === typeof __sentry_dist) {
       const _HermesInternal2 = HermesInternal;
-      lib.dist = "" + lib.extra.__sentry_dist;
+      outer1_0.dist = "" + outer1_0.extra.__sentry_dist;
     } else {
       let dist;
       if (null != options) {
         dist = options.dist;
       }
       if ("string" === typeof dist) {
-        lib.dist = options.dist;
+        outer1_0.dist = options.dist;
       }
     }
-    if (lib.release) {
-      if (lib.dist) {
-        return lib;
+    if (outer1_0.release) {
+      if (outer1_0.dist) {
+        return outer1_0;
       }
     }
-    const NATIVE = lib(options[0]).NATIVE;
+    const NATIVE = callback(table[0]).NATIVE;
     const tmp17 = yield NATIVE.fetchNativeRelease();
     if (tmp17) {
-      if (!lib.release) {
+      if (!outer1_0.release) {
         const _HermesInternal3 = HermesInternal;
-        lib.release = "" + tmp18.id + "@" + tmp18.version + "+" + tmp18.build;
+        outer1_0.release = "" + tmp18.id + "@" + tmp18.version + "+" + tmp18.build;
       }
-      if (!lib.dist) {
+      if (!outer1_0.dist) {
         const _HermesInternal4 = HermesInternal;
-        lib.dist = "" + tmp17.build;
+        outer1_0.dist = "" + tmp17.build;
       }
     }
   });
@@ -73,51 +77,54 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    arg1 = arg0;
-    const arg6 = arg1;
-    const processEvent = arg3;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;

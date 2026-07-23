@@ -1,18 +1,19 @@
-// Module ID: 5763
-// Function ID: 49388
+// Module ID: 5768
+// Function ID: 49415
 // Name: getCurrentVoiceChannel
-// Dependencies: []
+// Dependencies: [1194, 1348, 4146, 2]
 // Exports: default
 
-// Module 5763 (getCurrentVoiceChannel)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/rpc/helpers/getCurrentVoiceChannel.tsx");
+// Module 5768 (getCurrentVoiceChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/helpers/getCurrentVoiceChannel.tsx");
 
 export default function getCurrentVoiceChannel() {
   const id = store.getId();
-  const voiceStateForSession = voiceStateForSession.getVoiceStateForSession(id, store.getSessionId());
+  voiceStateForSession = voiceStateForSession.getVoiceStateForSession(id, store.getSessionId());
   let channelId;
   if (null != voiceStateForSession) {
     channelId = voiceStateForSession.channelId;

@@ -1,10 +1,22 @@
-// Module ID: 3766
-// Function ID: 28906
+// Module ID: 3768
+// Function ID: 28911
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1858, 653, 1360, 3769, 5679, 7006, 8180, 2]
 // Exports: isMessageComponentsV2
 
-// Module 3766 (_callSuper)
+// Module 3768 (_callSuper)
+import closure_3 from "ME";
+import importDefaultResult from "hasFlag";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importDefaultResult1 from "Record";
+import ME from "ME";
+
+let closure_10;
+let closure_8;
+let closure_9;
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -16,7 +28,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_5(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -27,22 +39,16 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importDefaultResult = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const importDefaultResult1 = importDefault(dependencyMap[5]);
-({ MessageFlags: closure_8, MessageStates: closure_9, MessageTypes: closure_10 } = arg1(dependencyMap[6]));
-const tmp5 = (importDefaultResult1) => {
+({ MessageFlags: closure_8, MessageStates: closure_9, MessageTypes: closure_10 } = ME);
+const tmp5 = ((importDefaultResult1) => {
   class MinimalMessageRecord {
     constructor(arg0) {
-      tmp = closure_3(this, MinimalMessageRecord);
-      tmp2 = closure_12(this, MinimalMessageRecord);
+      tmp = outer1_3(this, MinimalMessageRecord);
+      tmp2 = outer1_12(this, MinimalMessageRecord);
       DEFAULT = importDefaultResult1.type;
       if (null == DEFAULT) {
-        tmp3 = closure_10;
-        DEFAULT = closure_10.DEFAULT;
+        tmp3 = outer1_10;
+        DEFAULT = outer1_10.DEFAULT;
       }
       tmp2.type = DEFAULT;
       content = importDefaultResult1.content;
@@ -114,18 +120,18 @@ const tmp5 = (importDefaultResult1) => {
       return tmp2;
     }
   }
-  const arg1 = MinimalMessageRecord;
   callback3(MinimalMessageRecord, importDefaultResult1);
   const items = [
     {
       key: "hasFlag",
       value(arg0) {
-        return MinimalMessageRecord(closure_2[7]).hasFlag(this.flags, arg0);
+        return MinimalMessageRecord(outer1_2[7]).hasFlag(this.flags, arg0);
       }
     }
   ];
   return importDefaultResult(MinimalMessageRecord, items);
-}(importDefaultResult1);
+})(importDefaultResult1);
+let closure_11 = tmp5;
 class ModeratorReport {
   constructor(arg0) {
     tmp = closure_3(this, ModeratorReport);
@@ -133,14 +139,13 @@ class ModeratorReport {
     return;
   }
 }
-const tmp4 = arg1(dependencyMap[6]);
 const importDefaultResultResult = importDefaultResult(ModeratorReport);
-const tmp7 = (importDefaultResult1) => {
+let tmp7 = ((importDefaultResult1) => {
   class MessageSnapshotRecord {
     constructor(arg0) {
-      tmp = closure_3(this, MessageSnapshotRecord);
-      tmp2 = closure_12(this, MessageSnapshotRecord);
-      tmp3 = new closure_11(importDefaultResult1.message);
+      tmp = outer1_3(this, MessageSnapshotRecord);
+      tmp2 = outer1_12(this, MessageSnapshotRecord);
+      tmp3 = new outer1_11(importDefaultResult1.message);
       tmp2.message = tmp3;
       moderator_report = importDefaultResult1.moderator_report;
       tmp4 = null;
@@ -151,17 +156,16 @@ const tmp7 = (importDefaultResult1) => {
       return tmp2;
     }
   }
-  const arg1 = MessageSnapshotRecord;
   callback3(MessageSnapshotRecord, importDefaultResult1);
   return importDefaultResult(MessageSnapshotRecord);
-}(importDefaultResult1);
-const tmp8 = (arg0) => {
+})(importDefaultResult1);
+let tmp8 = ((arg0) => {
   class MessageRecord {
     constructor(arg0) {
-      tmp = closure_3(this, MessageRecord);
+      tmp = outer1_3(this, MessageRecord);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_12(this, MessageRecord, items);
+      tmp2 = outer1_12(this, MessageRecord, items);
       ({ id: tmp2.id, channel_id: tmp2.channel_id, author: tmp2.author, customRenderedContent: tmp2.customRenderedContent } = arg0);
       tmp2.mentions = arg0.mentions || [];
       tmp2.mentionRoles = arg0.mentionRoles || [];
@@ -191,8 +195,8 @@ const tmp8 = (arg0) => {
       tmp2.giftCodes = arg0.giftCodes || [];
       SENT = arg0.state;
       if (!SENT) {
-        tmp6 = closure_9;
-        SENT = closure_9.SENT;
+        tmp6 = outer1_9;
+        SENT = outer1_9.SENT;
       }
       tmp2.state = SENT;
       nonce = arg0.nonce;
@@ -263,7 +267,6 @@ const tmp8 = (arg0) => {
       return tmp2;
     }
   }
-  const arg1 = MessageRecord;
   callback3(MessageRecord, arg0);
   let obj = {
     key: "isEdited",
@@ -271,7 +274,7 @@ const tmp8 = (arg0) => {
       return null != this.editedTimestamp;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , ];
   obj = {
     key: "getChannelId",
     value() {
@@ -282,9 +285,9 @@ const tmp8 = (arg0) => {
   obj = {
     key: "getReaction",
     value(arg0) {
-      const MessageRecord = arg0;
+      let closure_0 = arg0;
       const reactions = this.reactions;
-      return reactions.find((emoji) => emoji(closure_2[8]).emojiEquals(emoji.emoji, emoji));
+      return reactions.find((emoji) => MessageRecord(outer2_2[8]).emojiEquals(emoji.emoji, closure_0));
     }
   };
   items[2] = obj;
@@ -292,7 +295,7 @@ const tmp8 = (arg0) => {
     key: "getContentMessage",
     value() {
       let self = this;
-      if (callback(closure_2[9])(this)) {
+      if (outer1_1(outer1_2[9])(this)) {
         self = this.messageSnapshots[0].message;
       }
       return self;
@@ -301,21 +304,22 @@ const tmp8 = (arg0) => {
   items[4] = {
     key: "userHasReactedWithEmoji",
     value(arg0, arg1) {
-      const MessageRecord = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       const reactions = this.reactions;
       return reactions.some((emoji) => {
-        if (obj.emojiEquals(emoji.emoji, emoji)) {
-          let me = arg1;
-          if (arg1) {
+        if (obj.emojiEquals(emoji.emoji, closure_0)) {
+          let me = closure_1;
+          if (closure_1) {
             me = emoji.me;
           }
           if (!me) {
-            me = !arg1 && emoji.me_burst;
-            const tmp2 = !arg1 && emoji.me_burst;
+            me = !closure_1 && emoji.me_burst;
+            const tmp2 = !closure_1 && emoji.me_burst;
           }
           return me;
         }
-        const obj = emoji(closure_2[8]);
+        obj = MessageRecord(outer2_2[8]);
       });
     }
   };
@@ -326,7 +330,7 @@ const tmp8 = (arg0) => {
       let items = arg2;
       let NORMAL = arg3;
       const self = this;
-      const MessageRecord = emoji;
+      let closure_0 = emoji;
       if (arg1 === undefined) {
         flag = false;
       }
@@ -334,16 +338,16 @@ const tmp8 = (arg0) => {
         items = [];
       }
       if (NORMAL === undefined) {
-        NORMAL = MessageRecord(items[10]).ReactionTypes.NORMAL;
+        NORMAL = MessageRecord(outer1_2[10]).ReactionTypes.NORMAL;
       }
-      let closure_4 = -1;
+      let c4 = -1;
       const reactions = self.reactions;
       const mapped = reactions.map((emoji) => {
-        let obj = emoji(items[8]);
+        let obj = MessageRecord(outer2_2[8]);
         let tmp = emoji;
-        if (obj.emojiEquals(emoji.emoji, emoji)) {
+        if (obj.emojiEquals(emoji.emoji, closure_0)) {
           let closure_4 = arg1;
-          if (NORMAL === emoji(items[10]).ReactionTypes.BURST) {
+          if (NORMAL === MessageRecord(outer2_2[10]).ReactionTypes.BURST) {
             if (flag) {
               if (emoji.me_burst) {
                 return emoji;
@@ -370,7 +374,7 @@ const tmp8 = (arg0) => {
               tmp = obj;
             }
             burst_colors = items;
-          } else if (NORMAL === emoji(items[10]).ReactionTypes.VOTE) {
+          } else if (NORMAL === MessageRecord(outer2_2[10]).ReactionTypes.VOTE) {
             const count_details = emoji.count_details;
             let vote;
             if (null != count_details) {
@@ -421,15 +425,15 @@ const tmp8 = (arg0) => {
         }
         return tmp;
       });
-      if (-1 === closure_4) {
-        if (NORMAL === MessageRecord(items[10]).ReactionTypes.BURST) {
-          let obj = { emoji, me_burst: flag, count_details: { -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, -9223372036854775808: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 }, burst_colors: items };
+      if (-1 === c4) {
+        if (NORMAL === MessageRecord(outer1_2[10]).ReactionTypes.BURST) {
+          let obj = { emoji, me: false, me_burst: flag, count: 0, count_details: { burst: 1, normal: 0 }, burst_count: 1, burst_colors: items };
           mapped.push(obj);
-        } else if (NORMAL === MessageRecord(items[10]).ReactionTypes.VOTE) {
-          obj = { isArray: "HTTP", marginTop: "Date", string: "HTTP", y: "jsxs", isArray: "rejectWithError", jsx: "Path", string: "status", emoji, me_vote: flag, count_details: {}, burst_colors: [] };
+        } else if (NORMAL === MessageRecord(outer1_2[10]).ReactionTypes.VOTE) {
+          obj = { emoji, me: false, me_burst: false, me_vote: flag, count: 0, count_details: { burst: 0, normal: 0, vote: 1 }, burst_count: 0, burst_colors: [] };
           mapped.push(obj);
         } else {
-          obj = { emoji, me: flag, count_details: {}, burst_colors: [] };
+          obj = { emoji, me: flag, me_burst: false, count: 1, count_details: { burst: 0, normal: 1 }, burst_count: 0, burst_colors: [] };
           mapped.push(obj);
         }
       }
@@ -439,11 +443,13 @@ const tmp8 = (arg0) => {
   items[6] = {
     key: "addReactionBatch",
     value(arr) {
-      const MessageRecord = arg1;
+      let closure_0 = arg1;
       return arr.reduce((arg0, arg1) => {
+        let closure_0;
+        let closure_1;
         let users;
         ({ users, emoji: closure_0, reactionType: closure_1 } = arg1);
-        return users.reduce((addReaction) => addReaction.addReaction(closure_0, arg1 === closure_0, [], closure_1), arg0);
+        return users.reduce((addReaction) => addReaction.addReaction(closure_0, arg1 === outer1_0, [], closure_1), arg0);
       }, this);
     }
   };
@@ -455,22 +461,22 @@ const tmp8 = (arg0) => {
       let flag = arg1;
       let NORMAL = arg2;
       const self = this;
-      const MessageRecord = arg0;
+      let closure_0 = arg0;
       if (arg1 === undefined) {
         flag = false;
       }
       if (NORMAL === undefined) {
-        NORMAL = MessageRecord(NORMAL[10]).ReactionTypes.NORMAL;
+        NORMAL = MessageRecord(outer1_2[10]).ReactionTypes.NORMAL;
       }
-      let closure_3 = -1;
+      let c3 = -1;
       const reactions = self.reactions;
       const mapped = reactions.map((emoji) => {
         let str = emoji;
-        let obj = emoji(NORMAL[8]);
-        if (!obj.emojiEquals(emoji.emoji, emoji)) {
+        let obj = MessageRecord(outer2_2[8]);
+        if (!obj.emojiEquals(emoji.emoji, closure_0)) {
           return str;
         } else {
-          if (NORMAL === emoji(NORMAL[10]).ReactionTypes.BURST) {
+          if (NORMAL === MessageRecord(outer2_2[10]).ReactionTypes.BURST) {
             if (flag) {
               if (!str.me_burst) {
                 let burst_count = str.burst_count;
@@ -489,7 +495,7 @@ const tmp8 = (arg0) => {
               const tmp28 = !flag && str.me_burst;
             }
             burst_count = str.burst_count - 1;
-          } else if (NORMAL !== emoji(NORMAL[10]).ReactionTypes.VOTE) {
+          } else if (NORMAL !== MessageRecord(outer2_2[10]).ReactionTypes.VOTE) {
             if (flag) {
               if (!str.me) {
                 let count = str.count;
@@ -531,11 +537,11 @@ const tmp8 = (arg0) => {
           const tmp22 = !flag && str.me_vote;
         }
       });
-      let obj = mapped[closure_3];
+      let obj = mapped[c3];
       if (null == obj) {
         obj = {};
       }
-      const count_details = obj.count_details;
+      let count_details = obj.count_details;
       let normal;
       ({ count, burst_count } = obj);
       if (null != count_details) {
@@ -562,7 +568,7 @@ const tmp8 = (arg0) => {
         num4 = vote;
       }
       if (tmp6) {
-        mapped.splice(closure_3, 1);
+        mapped.splice(c3, 1);
       }
       return self.set("reactions", mapped);
     }
@@ -572,9 +578,9 @@ const tmp8 = (arg0) => {
     value(arg0) {
       let reactions;
       let set;
-      const MessageRecord = arg0;
+      let closure_0 = arg0;
       ({ reactions, set } = this);
-      return set("reactions", reactions.filter((emoji) => !emoji(closure_2[8]).emojiEquals(emoji.emoji, emoji)));
+      return set("reactions", reactions.filter((emoji) => !MessageRecord(outer2_2[8]).emojiEquals(emoji.emoji, closure_0)));
     }
   };
   items[9] = {
@@ -587,9 +593,9 @@ const tmp8 = (arg0) => {
   items[10] = {
     key: "isCommandType",
     value() {
-      let tmp = this.type === constants2.CHAT_INPUT_COMMAND;
+      let tmp = this.type === outer1_10.CHAT_INPUT_COMMAND;
       if (!tmp) {
-        tmp = this.type === constants2.CONTEXT_MENU_COMMAND;
+        tmp = this.type === outer1_10.CONTEXT_MENU_COMMAND;
       }
       return tmp;
     }
@@ -637,7 +643,7 @@ const tmp8 = (arg0) => {
           tmp2 = 1 === Object.keys(prop).length;
         }
         if (tmp2) {
-          tmp2 = MessageRecord(closure_2[11]).ApplicationIntegrationType.USER_INSTALL in prop;
+          tmp2 = MessageRecord(outer1_2[11]).ApplicationIntegrationType.USER_INSTALL in prop;
         }
         return tmp2;
       }
@@ -664,13 +670,13 @@ const tmp8 = (arg0) => {
     }
   };
   return importDefaultResult(MessageRecord, items);
-}(tmp5);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("records/MessageRecord.tsx");
+})(tmp5);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("records/MessageRecord.tsx");
 
 export default tmp8;
 export const MinimalMessageRecord = tmp5;
 export const ModeratorReport = importDefaultResultResult;
 export const MessageSnapshotRecord = tmp7;
 export const isMessageComponentsV2 = function isMessageComponentsV2(contentMessage) {
-  return arg1(dependencyMap[7]).hasFlag(contentMessage.flags, IS_COMPONENTS_V2.IS_COMPONENTS_V2);
+  return require(1360) /* hasFlag */.hasFlag(contentMessage.flags, IS_COMPONENTS_V2.IS_COMPONENTS_V2);
 };

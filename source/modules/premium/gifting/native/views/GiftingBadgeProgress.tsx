@@ -1,12 +1,21 @@
-// Module ID: 9801
-// Function ID: 76116
+// Module ID: 9808
+// Function ID: 76157
 // Name: GiftingBadgeProgressBar
-// Dependencies: []
+// Dependencies: [31, 27, 8268, 33, 4130, 689, 9686, 4126, 1212, 2294, 2]
 // Exports: default
 
-// Module 9801 (GiftingBadgeProgressBar)
+// Module 9808 (GiftingBadgeProgressBar)
+import "result";
+import { View } from "get ActivityIndicator";
+import { getSingleRequirementThreshold as closure_4 } from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function GiftingBadgeProgressBar(percent) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.progressBarTrack };
   obj = {};
   const items = [tmp.progressBarFill, ];
@@ -16,25 +25,20 @@ function GiftingBadgeProgressBar(percent) {
   obj.children = callback2(View, obj);
   return callback2(View, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = arg1(dependencyMap[2]).getSingleRequirementThreshold;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", padding: importDefault(dependencyMap[5]).space.PX_16 };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.content = { flex: 1, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, gap: importDefault(dependencyMap[5]).space.PX_4 };
-const obj1 = { flex: 1, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, gap: importDefault(dependencyMap[5]).space.PX_4 };
-obj.progressBarTrack = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-const obj2 = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-obj.progressBarFill = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
-const obj4 = { "Null": true, "Null": true, "Null": true, minHeight: importDefault(dependencyMap[5]).space.PX_16 };
-obj.labels = obj4;
-let closure_7 = obj.createStyles(obj);
-const obj3 = { height: 6, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgress.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.content = { flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj1 = { flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.progressBarTrack = { height: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
+let obj2 = { height: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
+_createForOfIteratorHelperLoose.progressBarFill = { height: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+let obj4 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.labels = obj4;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { height: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgress.tsx");
 
 export default function GiftingBadgeProgress(title) {
   let currentTier;
@@ -46,7 +50,7 @@ export default function GiftingBadgeProgress(title) {
     iconSize = 24;
   }
   title = title.title;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = callback(nextTier);
   let tmp3 = null != nextTier;
   if (tmp3) {
@@ -66,14 +70,14 @@ export default function GiftingBadgeProgress(title) {
   let tmp8 = null != simple_icon_url;
   if (tmp8) {
     obj = { icon: currentTier.simple_icon_url, size: iconSize };
-    tmp8 = callback2(importDefault(dependencyMap[6]), obj);
+    tmp8 = callback2(importDefault(9686), obj);
   }
   const items = [tmp8, , ];
   obj = { style: tmp.content };
   let tmp14 = null != title;
   if (tmp14) {
     const obj1 = { variant: "text-md/semibold", children: title };
-    tmp14 = callback2(arg1(dependencyMap[7]).Text, obj1);
+    tmp14 = callback2(require(4126) /* Text */.Text, obj1);
   }
   const items1 = [tmp14, , ];
   const obj2 = { percent: num2 };
@@ -81,11 +85,11 @@ export default function GiftingBadgeProgress(title) {
   const obj3 = { style: tmp.labels };
   let tmp20 = null != nextTier;
   if (tmp20) {
-    const obj4 = {};
-    const intl = arg1(dependencyMap[8]).intl;
+    const obj4 = { variant: "text-xs/normal", color: "text-muted" };
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj5 = { count: progress, threshold: tmp2 };
-    obj4.children = intl.format(importDefault(dependencyMap[9]).iIpfQe, obj5);
-    tmp20 = callback2(arg1(dependencyMap[7]).Text, obj4);
+    obj4.children = intl.format(importDefault(2294).iIpfQe, obj5);
+    tmp20 = callback2(require(4126) /* Text */.Text, obj4);
   }
   obj3.children = tmp20;
   items1[2] = callback2(View, obj3);
@@ -98,7 +102,7 @@ export default function GiftingBadgeProgress(title) {
   let tmp26 = null != simple_icon_url1;
   if (tmp26) {
     const obj6 = { icon: nextTier.simple_icon_url, size: iconSize };
-    tmp26 = callback2(importDefault(dependencyMap[6]), obj6);
+    tmp26 = callback2(importDefault(9686), obj6);
   }
   items[2] = tmp26;
   obj.children = items;

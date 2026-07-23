@@ -1,15 +1,24 @@
-// Module ID: 12526
-// Function ID: 96090
+// Module ID: 12640
+// Function ID: 98246
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 3811, 566, 686, 2]
 
-// Module 12526 (_isNativeReflectConstruct)
+// Module 12640 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import getCountryCodeByCountryName from "getCountryCodeByCountryName";
+
+let closure_5;
+let closure_6;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -20,29 +29,24 @@ function handleSetLocationMetadata(countryCode) {
     if (null == tmp2) {
       tmp2 = callback3();
     }
-    let closure_7 = tmp2;
+    let c7 = tmp2;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-({ getDefaultCountryCode: closure_5, getCountryCodeByAlpha2: closure_6 } = arg1(dependencyMap[5]));
-let closure_7 = null;
-let tmp3 = (Store) => {
+({ getDefaultCountryCode: closure_5, getCountryCodeByAlpha2: closure_6 } = getCountryCodeByCountryName);
+let c7 = null;
+let tmp3 = ((Store) => {
   class LocationMetadataStore {
     constructor() {
       self = this;
       tmp = LocationMetadataStore(this, LocationMetadataStore);
-      obj = closure_3(LocationMetadataStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(LocationMetadataStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -51,22 +55,19 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = LocationMetadataStore;
   callback2(LocationMetadataStore, Store);
   const items = [
     {
       key: "getCountryCode",
       value() {
-        return closure_7;
+        return outer1_7;
       }
     }
   ];
   return callback(LocationMetadataStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "LocationMetadataStore";
-tmp3 = new tmp3(importDefault(dependencyMap[7]), { CONNECTION_OPEN: handleSetLocationMetadata, SET_LOCATION_METADATA: handleSetLocationMetadata });
-const obj = { CONNECTION_OPEN: handleSetLocationMetadata, SET_LOCATION_METADATA: handleSetLocationMetadata };
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/location_metadata/stores/LocationMetadataStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), { CONNECTION_OPEN: handleSetLocationMetadata, SET_LOCATION_METADATA: handleSetLocationMetadata });
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/location_metadata/stores/LocationMetadataStore.tsx");
 
 export default tmp3;

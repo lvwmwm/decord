@@ -1,86 +1,93 @@
-// Module ID: 12051
-// Function ID: 93063
-// Dependencies: []
+// Module ID: 12165
+// Function ID: 95214
+// Dependencies: [57, 31, 27, 12166, 33, 4130, 689, 4549, 5217, 12196, 7771, 12167, 2]
 
-// Module 12051
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ SHARE_ITEMS: closure_7, SHARE_ITEMS_DEFAULT: closure_8 } = arg1(dependencyMap[3]));
-const jsx = arg1(dependencyMap[4]).jsx;
-const tmp3 = arg1(dependencyMap[3]);
+// Module 12165
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import SHARE_APPS_KEY from "SHARE_APPS_KEY";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ SHARE_ITEMS: closure_7, SHARE_ITEMS_DEFAULT: closure_8 } = SHARE_APPS_KEY);
 let obj = {};
-obj = { padding: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_12, alignItems: "center" };
+obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "center" };
 obj.contentContainer = obj;
-let closure_10 = arg1(dependencyMap[5]).createStyles(obj);
-const obj2 = arg1(dependencyMap[5]);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPressed) {
-  const arg1 = onItemPressed.onItemPressed;
-  let obj = arg1(closure_2[7]);
+  onItemPressed = onItemPressed.onItemPressed;
+  let obj = onItemPressed(4549);
   let closure_1 = obj.useFontScale();
   const tmp2 = callback(importAllResult.useState(closure_8), 2);
   const first = tmp2[0];
-  closure_2 = tmp2[1];
+  const dependencyMap = tmp2[1];
   const gesture = importAllResult.useMemo(() => {
-    const Gesture = onItemPressed(closure_2[8]).Gesture;
+    const Gesture = onItemPressed(5217).Gesture;
     return Gesture.Native().disallowInterruption(true);
   }, []);
   const effect = importAllResult.useEffect(() => {
-    Promise.all(closure_7.map((isAvailable) => isAvailable.isAvailable)).then((arr) => {
+    Promise.all(outer1_7.map((isAvailable) => isAvailable.isAvailable)).then((arr) => {
       const items = [];
       const item = arr.forEach((arg0, arg1) => {
         if (arg0) {
-          items.push(closure_7[arg1]);
+          items.push(outer3_7[arg1]);
         }
       });
-      callback(items);
+      outer1_2(items);
     });
   }, []);
-  obj = { borderRadius: 60, y: 0, x: 0 };
-  const items = [callback2().contentContainer, onItemPressed.contentContainerStyle];
+  obj = { contentContainerStyle: null, showsHorizontalScrollIndicator: false, horizontal: true };
+  let items = [callback2().contentContainer, onItemPressed.contentContainerStyle];
   obj.contentContainerStyle = items;
   obj.children = first.map((type) => {
     let IconComponent;
     let fullIcon;
     let getLabel;
     let icon;
-    ({ fullIcon, getLabel, icon, IconComponent, onPress: closure_0 } = type);
-    let obj = { style: obj };
+    let onItemPressed;
+    ({ fullIcon, getLabel, icon, IconComponent, onPress: onItemPressed } = type);
+    obj = { style: obj };
     obj = { maxWidth: 76 * callback };
     if (null != fullIcon) {
       obj = {
         image: fullIcon,
         label: getLabel(),
         onPress() {
-            return callback(callback);
+            return outer1_0(closure_0);
           },
         maxFontSizeMultiplier: 2
       };
-      let tmp3Result = callback2(onItemPressed(closure_2[9]).ImageButton, obj);
+      let tmp3Result = outer1_9(onItemPressed(12196).ImageButton, obj);
     } else {
       const obj1 = { variant: "secondary" };
       if (null == IconComponent) {
         if (null == icon) {
-          icon = callback(closure_2[11]);
+          icon = callback(12167);
         }
         IconComponent = icon;
       }
       obj1.icon = IconComponent;
       obj1.label = getLabel();
       obj1.onPress = function onPress() {
-        return callback(callback);
+        return outer1_0(closure_0);
       };
       obj1.maxFontSizeMultiplier = 2;
-      tmp3Result = callback2(onItemPressed(closure_2[10]).IconButton, obj1);
-      const tmp3 = callback2;
+      tmp3Result = outer1_9(onItemPressed(7771).IconButton, obj1);
+      const tmp3 = outer1_9;
     }
     obj.children = tmp3Result;
-    return callback2(closure_5, obj, type.type);
+    return outer1_9(outer1_5, obj, type.type);
   });
-  const children = <closure_6 {...obj} />;
-  return jsx(arg1(closure_2[8]).GestureDetector, { gesture, children });
+  const children = <closure_6 contentContainerStyle={null} showsHorizontalScrollIndicator={false} horizontal />;
+  return jsx(onItemPressed(5217).GestureDetector, { gesture, children });
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 
 export default memoResult;

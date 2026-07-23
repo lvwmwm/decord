@@ -1,14 +1,14 @@
-// Module ID: 7714
-// Function ID: 61428
+// Module ID: 7720
+// Function ID: 61465
 // Name: getTagProperties
-// Dependencies: []
+// Dependencies: [27, 4123, 7721, 1212, 7723, 7725, 2]
 // Exports: default
 
-// Module 7714 (getTagProperties)
-const Image = require(dependencyMap[0]).Image;
-const MessageTagTypes = require(dependencyMap[1]).MessageTagTypes;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/getTagProperties.tsx");
+// Module 7720 (getTagProperties)
+import { Image } from "get ActivityIndicator";
+import { MessageTagTypes } from "MESSAGE_GROUP_SPACING";
+
+const result = require("isPublicSystemMessage").fileFinishedImporting("modules/messages/native/renderer/getTagProperties.tsx");
 
 export default function getTagProperties(arg0) {
   let channel;
@@ -22,26 +22,26 @@ export default function getTagProperties(arg0) {
   ({ channel, colors } = arg0);
   const author = message.author;
   const isVerifiedBotResult = author.isVerifiedBot();
-  let obj = require(dependencyMap[2]);
+  let obj = require(7721) /* isPublicSystemMessage */;
   if (!obj.isPublicSystemMessage(message)) {
     if (!isSystemDM) {
-      if (importDefault(dependencyMap[4])(message)) {
-        const intl2 = require(dependencyMap[3]).intl;
-        let stringResult = intl2.string(require(dependencyMap[3]).t.PuJGuM);
+      if (importDefault(7723)(message)) {
+        const intl2 = require(1212) /* getSystemLocale */.intl;
+        let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.PuJGuM);
         let SYSTEM_DM_TAG_SYSTEM_TYPE = MessageTagTypes.BOT_TAG_SERVER_TYPE;
         let flag = isVerifiedBotResult;
       } else {
         stringResult = null;
         flag = isVerifiedBotResult;
         if (message.author.bot) {
-          const intl = require(dependencyMap[3]).intl;
+          const intl = require(1212) /* getSystemLocale */.intl;
           let uri;
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(importDefault(dependencyMap[5])).uri;
+            uri = Image.resolveAssetSource(importDefault(7725)).uri;
           }
-          stringResult = intl.string(require(dependencyMap[3]).t.9RNkeF);
+          stringResult = intl.string(require(1212) /* getSystemLocale */.t["9RNkeF"]);
           flag = isVerifiedBotResult;
-          const stringResult1 = intl.string(require(dependencyMap[3]).t.9RNkeF);
+          const stringResult1 = intl.string(require(1212) /* getSystemLocale */.t["9RNkeF"]);
           const tmp5 = uri;
         }
       }
@@ -53,8 +53,8 @@ export default function getTagProperties(arg0) {
       }
       let stringResult2 = null;
       if (tmp30) {
-        const intl6 = require(dependencyMap[3]).intl;
-        stringResult2 = intl6.string(require(dependencyMap[3]).t.fyE8sH);
+        const intl6 = require(1212) /* getSystemLocale */.intl;
+        stringResult2 = intl6.string(require(1212) /* getSystemLocale */.t.fyE8sH);
       }
       obj = { tagText: stringResult, tagAccessibilityLabel: null, tagVerified: flag, tagTextColor: undefined, tagBackgroundColor: undefined, tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult2 };
       ({ opTagTextColor: obj3.opTagTextColor, opTagBackgroundColor: obj3.opTagBackgroundColor } = colors);
@@ -62,26 +62,26 @@ export default function getTagProperties(arg0) {
     } else {
       if (!obj2.isPublicSystemMessage(message)) {
         if (!isSystemDM) {
-          const intl4 = require(dependencyMap[3]).intl;
+          const intl4 = require(1212) /* getSystemLocale */.intl;
           const string = intl4.string;
-          const t = require(dependencyMap[3]).t;
+          const t = require(1212) /* getSystemLocale */.t;
           if (tmp22) {
-            let stringResult3 = string(t.39trQT);
+            let stringResult3 = string(t["39trQT"]);
           } else if (flag) {
             stringResult3 = string(t.g76OcH);
           } else {
             stringResult3 = string(t.qwJHjo);
           }
-          const tmp22 = importDefault(dependencyMap[4])(message);
+          tmp22 = importDefault(7723)(message);
         }
       }
-      const intl5 = require(dependencyMap[3]).intl;
-      stringResult3 = intl5.string(require(dependencyMap[3]).t.7s687k);
-      const obj2 = require(dependencyMap[2]);
+      const intl5 = require(1212) /* getSystemLocale */.intl;
+      stringResult3 = intl5.string(require(1212) /* getSystemLocale */.t["7s687k"]);
+      obj2 = require(7721) /* isPublicSystemMessage */;
     }
   }
-  const intl3 = require(dependencyMap[3]).intl;
-  stringResult = intl3.string(require(dependencyMap[3]).t.lKQ7Wt);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  stringResult = intl3.string(require(1212) /* getSystemLocale */.t.lKQ7Wt);
   SYSTEM_DM_TAG_SYSTEM_TYPE = MessageTagTypes.SYSTEM_DM_TAG_SYSTEM_TYPE;
   flag = true;
 };

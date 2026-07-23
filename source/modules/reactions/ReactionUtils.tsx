@@ -1,32 +1,36 @@
-// Module ID: 3767
-// Function ID: 28944
+// Module ID: 3769
+// Function ID: 28949
 // Name: getReactionEmojiName
-// Dependencies: []
+// Dependencies: [1194, 653, 3770, 3771, 1212, 3803, 675, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, isCustomReactionEmojiId, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 3767 (getReactionEmojiName)
+// Module 3769 (getReactionEmojiName)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function getReactionEmojiName(emoji) {
   if (null == emoji.id) {
-    let result = importDefault(dependencyMap[3]).convertSurrogateToName(emoji.name);
-    const obj = importDefault(dependencyMap[3]);
+    let result = importDefault(3771).convertSurrogateToName(emoji.name);
+    const obj = importDefault(3771);
   } else {
     const _HermesInternal = HermesInternal;
     result = ":" + emoji.name + ":";
   }
   return result;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ AnalyticsSections: closure_4, AnalyticEvents: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = arg1(dependencyMap[2]).NotificationSettingsUpdateType;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/reactions/ReactionUtils.tsx");
+({ AnalyticsSections: closure_4, AnalyticEvents: closure_5 } = ME);
+let result = require("AccountNotificationFlags").fileFinishedImporting("modules/reactions/ReactionUtils.tsx");
 
 export const MAX_REACTIONS = 20;
 export { getReactionEmojiName };
 export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayName(me, count, emoji, arg3) {
-  const t = count(dependencyMap[4]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if (!arg3) {
-    const intl = count(dependencyMap[4]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj = { reactions: count };
     const str = getReactionEmojiName(emoji);
     let trimmed;
@@ -78,8 +82,8 @@ export const isCustomReactionEmojiId = function isCustomReactionEmojiId(emojiId)
     tmp3 = "0" !== String(emojiId);
   }
 };
-export const emojiEquals = function emojiEquals(emoji, closure_1) {
-  if (null != closure_1.id) {
+export const emojiEquals = function emojiEquals(emoji, closure_0) {
+  if (null != closure_0.id) {
     if (null != emoji.id) {
       const _HermesInternal = HermesInternal;
       let id = "" + emoji.id;
@@ -87,9 +91,9 @@ export const emojiEquals = function emojiEquals(emoji, closure_1) {
       id = emoji.id;
     }
     const _HermesInternal2 = HermesInternal;
-    return "" + closure_1.id === id;
+    return "" + closure_0.id === id;
   } else {
-    return null == emoji.id && closure_1.name === emoji.name;
+    return null == emoji.id && closure_0.name === emoji.name;
   }
 };
 export const getBurstAnalyticsSection = function getBurstAnalyticsSection(isThread) {
@@ -110,9 +114,9 @@ export const shouldApplyReaction = function shouldApplyReaction(optimistic) {
   return !optimistic;
 };
 export const updateReactionNotificationsSetting = function updateReactionNotificationsSetting(NumberResult, setting) {
-  const ReactionNotifications = setting(dependencyMap[5]).ReactionNotifications;
+  const ReactionNotifications = require(3803) /* explicitContentFromProto */.ReactionNotifications;
   ReactionNotifications.updateSetting(NumberResult);
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(675);
   obj = { update_type: constants3.ACCOUNT, reaction_notifications: NumberResult, reaction_notifications_old: setting };
   obj.track(constants2.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

@@ -1,99 +1,101 @@
-// Module ID: 15137
-// Function ID: 114218
+// Module ID: 15252
+// Function ID: 116387
 // Name: NotificationNudgeBottomSheet
-// Dependencies: []
+// Dependencies: [31, 27, 11449, 653, 1345, 33, 4130, 689, 675, 4098, 11450, 5187, 5807, 4126, 4965, 4543, 1212, 2]
 // Exports: default
 
-// Module 15137 (NotificationNudgeBottomSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ EventActionType: closure_5, NotificationNudgeAnalyticsAction: closure_6 } = arg1(dependencyMap[2]));
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { marginHorizontal: importDefault(dependencyMap[7]).space.PX_24, alignItems: "center" };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[5]);
-obj.illustration = { marginVertical: importDefault(dependencyMap[7]).space.PX_24 };
-obj.title = { textAlign: "center" };
-const obj1 = { marginVertical: importDefault(dependencyMap[7]).space.PX_24 };
-obj.body = { textAlign: "center", marginTop: importDefault(dependencyMap[7]).space.PX_8 };
-const obj2 = { textAlign: "center", marginTop: importDefault(dependencyMap[7]).space.PX_8 };
-obj.buttonsContainer = { marginTop: importDefault(dependencyMap[7]).space.PX_8, width: "100%" };
-let closure_11 = obj.createStyles(obj);
-const obj3 = { marginTop: importDefault(dependencyMap[7]).space.PX_8, width: "100%" };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/nuf/native/components/notification/NotificationNudgeBottomSheet.tsx");
+// Module 15252 (NotificationNudgeBottomSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import EventActionType from "EventActionType";
+import { AnalyticEvents } from "ME";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_5;
+let closure_6;
+let closure_9;
+const require = arg1;
+({ EventActionType: closure_5, NotificationNudgeAnalyticsAction: closure_6 } = EventActionType);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24, alignItems: "center" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.illustration = { marginVertical: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.title = { textAlign: "center" };
+let obj1 = { marginVertical: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.body = { textAlign: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj2 = { textAlign: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.buttonsContainer = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, width: "100%" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, width: "100%" };
+const result = require("EventActionType").fileFinishedImporting("modules/nuf/native/components/notification/NotificationNudgeBottomSheet.tsx");
 
 export default function NotificationNudgeBottomSheet(actionLocation) {
   let body;
   let title;
   actionLocation = actionLocation.actionLocation;
-  const arg1 = actionLocation;
   const surface = actionLocation.surface;
-  const importDefault = surface;
   const markAsDismissed = actionLocation.markAsDismissed;
-  const dependencyMap = markAsDismissed;
   const onHide = actionLocation.onHide;
-  const React = onHide;
   ({ title, body } = actionLocation);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const items = [surface];
-  const effect = React.useEffect(() => {
+  const effect = onHide.useEffect(() => {
     let obj = surface(markAsDismissed[8]);
-    obj = { action: constants2.IMPRESSION, prompt_type: surface };
-    obj.track(constants3.CONTEXTUAL_REMINDER_ACTION, obj);
+    obj = { action: outer1_6.IMPRESSION, prompt_type: surface };
+    obj.track(outer1_7.CONTEXTUAL_REMINDER_ACTION, obj);
   }, items);
   const items1 = [onHide];
-  const callback = React.useCallback(() => {
+  const callback = onHide.useCallback(() => {
     surface(markAsDismissed[9]).hideActionSheet();
     if (null != onHide) {
       onHide();
     }
   }, items1);
-  const View = callback;
   const items2 = [surface, actionLocation, callback, markAsDismissed];
   const items3 = [surface, callback, markAsDismissed];
-  const callback1 = React.useCallback(() => {
+  const callback1 = onHide.useCallback(() => {
     let obj = surface(markAsDismissed[8]);
-    obj = { action: constants2.ACCEPT, prompt_type: surface };
-    obj.track(constants3.CONTEXTUAL_REMINDER_ACTION, obj);
-    markAsDismissed(constants4.USER_DISMISS);
-    const pushNotificationPermission = actionLocation(markAsDismissed[10]).requestPushNotificationPermission(constants.ALLOW_TO_REQUEST, actionLocation, callback);
+    obj = { action: outer1_6.ACCEPT, prompt_type: surface };
+    obj.track(outer1_7.CONTEXTUAL_REMINDER_ACTION, obj);
+    markAsDismissed(outer1_8.USER_DISMISS);
+    const pushNotificationPermission = actionLocation(markAsDismissed[10]).requestPushNotificationPermission(outer1_5.ALLOW_TO_REQUEST, actionLocation, callback);
   }, items2);
-  const callback2 = React.useCallback(() => {
+  const callback2 = onHide.useCallback(() => {
     let obj = surface(markAsDismissed[8]);
-    obj = { action: constants2.DISMISS, prompt_type: surface };
-    obj.track(constants3.CONTEXTUAL_REMINDER_ACTION, obj);
-    markAsDismissed(constants4.USER_DISMISS);
+    obj = { action: outer1_6.DISMISS, prompt_type: surface };
+    obj.track(outer1_7.CONTEXTUAL_REMINDER_ACTION, obj);
+    markAsDismissed(outer1_8.USER_DISMISS);
     callback();
   }, items3);
   let obj = {};
   obj = { style: tmp.container };
-  obj = { style: tmp.illustration, children: callback(arg1(dependencyMap[12]).BellSpotIllustration, { scale: 0.8 }) };
-  const items4 = [callback(View, obj), , , ];
-  const obj1 = { vy: "faint", numberActiveTouches: 16, _accountsForMovesUpTo: "none", style: tmp.title, children: title };
-  items4[1] = callback(arg1(dependencyMap[13]).Text, obj1);
-  items4[2] = callback(arg1(dependencyMap[13]).Text, { style: tmp.body, children: body });
+  obj = { style: tmp.illustration, children: callback(actionLocation(markAsDismissed[12]).BellSpotIllustration, { scale: 0.8 }) };
+  const items4 = [callback(callback, obj), , , ];
+  const obj1 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: title };
+  items4[1] = callback(actionLocation(markAsDismissed[13]).Text, obj1);
+  const obj2 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: body };
+  items4[2] = callback(actionLocation(markAsDismissed[13]).Text, obj2);
   const obj3 = { style: tmp.buttonsContainer };
   const obj4 = {};
   const obj5 = {};
-  const intl = arg1(dependencyMap[16]).intl;
-  obj5.text = intl.string(arg1(dependencyMap[16]).t.+7MDbQ);
+  const intl = actionLocation(markAsDismissed[16]).intl;
+  obj5.text = intl.string(actionLocation(markAsDismissed[16]).t["+7MDbQ"]);
   obj5.onPress = callback1;
-  const items5 = [callback(arg1(dependencyMap[15]).Button, obj5), ];
+  const items5 = [callback(actionLocation(markAsDismissed[15]).Button, obj5), ];
   const obj6 = {};
-  const intl2 = arg1(dependencyMap[16]).intl;
-  obj6.text = intl2.string(arg1(dependencyMap[16]).t.L5eIZ2);
+  const intl2 = actionLocation(markAsDismissed[16]).intl;
+  obj6.text = intl2.string(actionLocation(markAsDismissed[16]).t.L5eIZ2);
   obj6.onPress = callback2;
   obj6.variant = "secondary";
-  items5[1] = callback(arg1(dependencyMap[15]).Button, obj6);
+  items5[1] = callback(actionLocation(markAsDismissed[15]).Button, obj6);
   obj4.children = items5;
-  obj3.children = callback2(arg1(dependencyMap[14]).ButtonGroup, obj4);
-  items4[3] = callback(View, obj3);
+  obj3.children = callback2(actionLocation(markAsDismissed[14]).ButtonGroup, obj4);
+  items4[3] = callback(callback, obj3);
   obj.children = items4;
-  obj.children = callback2(View, obj);
-  return callback(arg1(dependencyMap[11]).BottomSheet, obj);
+  obj.children = callback2(callback, obj);
+  return callback(actionLocation(markAsDismissed[11]).BottomSheet, obj);
 };

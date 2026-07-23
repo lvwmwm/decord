@@ -1,18 +1,23 @@
-// Module ID: 11051
-// Function ID: 86048
+// Module ID: 11061
+// Function ID: 86098
 // Name: useFamilyCenterActions
-// Dependencies: []
+// Dependencies: [5, 57, 31, 6769, 6770, 6771, 4029, 2]
 // Exports: useFamilyCenterActions
 
-// Module 11051 (useFamilyCenterActions)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const UserLinkStatus = arg1(dependencyMap[4]).UserLinkStatus;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/parent_tools/hooks/useFamilyCenterActions.tsx");
+// Module 11061 (useFamilyCenterActions)
+import maybeFetchCollectiblesForInvoices from "maybeFetchCollectiblesForInvoices";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { UserLinkStatus } from "items";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/parent_tools/hooks/useFamilyCenterActions.tsx");
 
 export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
+  let maybeFetchCollectiblesForInvoices;
+  let _slicedToArray;
+  let result;
   let tmp5;
   let tmp7;
   let tmp9;
@@ -21,20 +26,17 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
     obj = {};
   }
   const onError = obj.onError;
-  const arg1 = onError;
   const onSuccess = obj.onSuccess;
-  const importDefault = onSuccess;
   const tmp2 = callback2(React.useState(false), 2);
   const first = tmp2[0];
   let closure_2 = tmp2[1];
-  [tmp5, closure_3] = callback2(React.useState(false), 2);
+  [tmp5, maybeFetchCollectiblesForInvoices] = callback2(React.useState(false), 2);
   const tmp4 = callback2(React.useState(false), 2);
-  [tmp7, closure_4] = callback2(React.useState(false), 2);
+  [tmp7, _slicedToArray] = callback2(React.useState(false), 2);
   const tmp6 = callback2(React.useState(false), 2);
-  [tmp9, closure_5] = callback2(React.useState(false), 2);
+  [tmp9, result] = callback2(React.useState(false), 2);
   const tmp10 = callback2(React.useState(false), 2);
   const first1 = tmp10[0];
-  let closure_6 = first1;
   let closure_7 = tmp10[1];
   const tmp12 = callback2(React.useState(false), 2);
   const first2 = tmp12[0];
@@ -61,57 +63,58 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
   if (!tmp18) {
     tmp18 = first4;
   }
+  let closure_14 = tmp18;
   const items = [tmp18, onError, onSuccess];
-  const callback = React.useCallback(() => {
+  const callback = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_3(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items);
+  })(), items);
   const items1 = [tmp18, onError, onSuccess];
-  const callback1 = React.useCallback(() => {
+  const callback1 = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_3(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items1);
+  })(), items1);
   const items2 = [tmp18, onError, onSuccess];
-  const callback2 = React.useCallback(() => {
+  callback2 = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_3(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items2);
+  })(), items2);
   const items3 = [tmp18, onError, onSuccess];
   // CreateGeneratorClosureLongIndex (0x67)
-  const callback3 = React.useCallback(() => {
+  const callback3 = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_3(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items3);
+  })(), items3);
   const items4 = [first1, onError, onSuccess];
   const callback4 = React.useCallback(callback(tmp), items4);
   const items5 = [first3, onError, onSuccess];
-  const callback5 = React.useCallback(() => {
+  const callback5 = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_3(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items5);
+  })(), items5);
   const items6 = [first2, onError, onSuccess];
-  const callback6 = React.useCallback(() => {
+  const callback6 = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_3(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items6);
+  })(), items6);
   const items7 = [first4, onError];
   obj = {
     acceptLinkRequest: callback,
@@ -121,13 +124,13 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
     selectTeenUser: callback5,
     getLinkCode: callback4,
     requestLink: callback6,
-    loadMore: React.useCallback(() => {
+    loadMore: React.useCallback((() => {
       // CreateGeneratorClosureLongIndex (0x67)
-      let closure_0 = callback(tmp);
+      let closure_0 = outer1_3(tmp);
       return function() {
         return callback(...arguments);
       };
-    }(), items7),
+    })(), items7),
     isAcceptLoading: first,
     isDeclineLoading: tmp5,
     isDisconnectLoading: tmp7,

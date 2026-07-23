@@ -1,9 +1,16 @@
 // Module ID: 365
 // Function ID: 5408
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 354, 357]
 
 // Module 365 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,43 +21,37 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  const importDefault = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_6(closure_5(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const dependencyMap = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
 
-export default (arg0) => {
+export default ((arg0) => {
   class AnimatedModulo {
     constructor(arg0, arg1, arg2) {
       self = this;
-      tmp = closure_2(this, AnimatedModulo);
+      tmp = outer1_2(this, AnimatedModulo);
       items = [];
       items[0] = arg2;
-      obj = closure_5(AnimatedModulo);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      obj = outer1_5(AnimatedModulo);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -60,7 +61,6 @@ export default (arg0) => {
       return tmp2Result;
     }
   }
-  const importDefault = AnimatedModulo;
   callback2(AnimatedModulo, arg0);
   let obj = {
     key: "__makeNative",
@@ -68,10 +68,10 @@ export default (arg0) => {
       const _a = this._a;
       _a.__makeNative(arg0);
       const items = [arg0];
-      callback4(AnimatedModulo, "__makeNative", this, 3)(items);
+      outer1_9(AnimatedModulo, "__makeNative", this, 3)(items);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "__getValue",
     value: function __getValue() {
@@ -83,7 +83,7 @@ export default (arg0) => {
   obj = {
     key: "interpolate",
     value: function interpolate(arg0) {
-      let tmp = AnimatedModulo(closure_1[6]);
+      let tmp = AnimatedModulo(outer1_1[6]);
       tmp = new tmp(this, arg0);
       return tmp;
     }
@@ -94,7 +94,7 @@ export default (arg0) => {
     value: function __attach() {
       const _a = this._a;
       _a.__addChild(this);
-      callback4(AnimatedModulo, "__attach", this, 3)([]);
+      outer1_9(AnimatedModulo, "__attach", this, 3)([]);
     }
   };
   items[4] = {
@@ -102,7 +102,7 @@ export default (arg0) => {
     value: function __detach() {
       const _a = this._a;
       _a.__removeChild(this);
-      callback4(AnimatedModulo, "__detach", this, 3)([]);
+      outer1_9(AnimatedModulo, "__detach", this, 3)([]);
     }
   };
   items[5] = {
@@ -113,4 +113,4 @@ export default (arg0) => {
     }
   };
   return callback(AnimatedModulo, items);
-}(importDefault(dependencyMap[7]));
+})(require("_isNativeReflectConstruct"));

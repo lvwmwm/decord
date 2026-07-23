@@ -1,16 +1,15 @@
-// Module ID: 11991
-// Function ID: 92671
+// Module ID: 12107
+// Function ID: 94848
 // Name: useProfileTabIndices
-// Dependencies: [31, 33, 4126, 5467]
+// Dependencies: [57, 31, 8264, 2]
 // Exports: useProfileSectionTabs, useProfileTabIndices
 
-// Module 11991 (useProfileTabIndices)
-import module_31 from "module_31";
-import module_33 from "module_33";
-import { UserProfileSections } from "_createForOfIteratorHelperLoose";
-import useGetOrFetchApplications from "useGetOrFetchApplications";
+// Module 12107 (useProfileTabIndices)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
 
-const result = useGetOrFetchApplications.fileFinishedImporting("modules/user_profile/hooks/native/useProfileSectionTabs.tsx");
+const result = require("USER_PROFILE_TOOLTIP_DELAY").fileFinishedImporting("modules/user_profile/hooks/native/useProfileSectionTabs.tsx");
 
 export const useProfileTabIndices = function useProfileTabIndices(arg0, arg1) {
   const obj = {};
@@ -31,15 +30,14 @@ export const useProfileTabIndices = function useProfileTabIndices(arg0, arg1) {
   return obj;
 };
 export const useProfileSectionTabs = function useProfileSectionTabs(boardTabIndex) {
+  let _slicedToArray;
   let wishlistTabIndex;
-  ({ initialUserProfileSection: module_31, wishlistTabIndex } = boardTabIndex);
-  const React = wishlistTabIndex;
+  ({ initialUserProfileSection: _slicedToArray, wishlistTabIndex } = boardTabIndex);
   boardTabIndex = boardTabIndex.boardTabIndex;
-  const UserProfileSections = boardTabIndex;
   const onTabChange = boardTabIndex.onTabChange;
   let num2;
-  const tmp = callback(React.useState(() => {
-    if (boardTabIndex.WISHLIST === module_31) {
+  const tmp = callback(wishlistTabIndex.useState(() => {
+    if (boardTabIndex.WISHLIST === _slicedToArray) {
       return boardTabIndex.WISHLIST;
     } else if (boardTabIndex.WIDGETS === tmp) {
       return boardTabIndex.WIDGETS;
@@ -48,16 +46,16 @@ export const useProfileSectionTabs = function useProfileSectionTabs(boardTabInde
     }
   }), 2);
   const first = tmp[0];
-  const tmp3 = tmp[1];
-  if (UserProfileSections.WISHLIST === first) {
+  let closure_4 = tmp3;
+  if (boardTabIndex.WISHLIST === first) {
     let num = wishlistTabIndex;
-  } else if (UserProfileSections.WIDGETS === first) {
+  } else if (boardTabIndex.WIDGETS === first) {
     num = boardTabIndex;
-  } else if (UserProfileSections.MAIN === first) {
+  } else if (boardTabIndex.MAIN === first) {
     num = 0;
   }
   if (num < 0) {
-    tmp3(UserProfileSections.MAIN);
+    tmp3(boardTabIndex.MAIN);
   }
   num2 = 0;
   if (num >= 0) {
@@ -65,7 +63,7 @@ export const useProfileSectionTabs = function useProfileSectionTabs(boardTabInde
   }
   const items = [wishlistTabIndex, boardTabIndex, onTabChange];
   const items1 = [num2];
-  const callback = React.useCallback((arg0) => {
+  callback = wishlistTabIndex.useCallback((arg0) => {
     if (wishlistTabIndex === arg0) {
       let MAIN = boardTabIndex.WISHLIST;
     } else if (boardTabIndex === arg0) {
@@ -81,9 +79,9 @@ export const useProfileSectionTabs = function useProfileSectionTabs(boardTabInde
   }, items);
   const obj = {
     activeProfileTabSection: first,
-    setActiveProfileTabSection: tmp3,
+    setActiveProfileTabSection: tmp[1],
     handleTabChange: callback,
-    restoreActiveIndex: React.useCallback((activeIndex) => {
+    restoreActiveIndex: wishlistTabIndex.useCallback((activeIndex) => {
       activeIndex = activeIndex.activeIndex;
       if (activeIndex.get() !== num2) {
         activeIndex.setActiveIndex(num2, false, true);

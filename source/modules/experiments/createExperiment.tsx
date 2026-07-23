@@ -1,10 +1,21 @@
-// Module ID: 4041
-// Function ID: 33643
+// Module ID: 4043
+// Function ID: 33652
 // Name: getExperimentDescriptor
-// Dependencies: []
+// Dependencies: [57, 31, 1194, 4044, 4045, 4052, 4053, 4054, 2]
 // Exports: default
 
-// Module 4041 (getExperimentDescriptor)
+// Module 4043 (getExperimentDescriptor)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import ExperimentBuckets from "ExperimentBuckets";
+
+let closure_4;
+let closure_5;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getExperimentDescriptor(arg0, arg1, guildId) {
   if ("guild" === arg0) {
     let guildExperimentDescriptor = authStore.getGuildExperimentDescriptor(arg1, guildId.guildId);
@@ -29,18 +40,13 @@ function getConfig(defaultConfig, arg1, get, aaMode) {
     defaultConfig = defaultConfig.defaultConfig;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ useState: closure_4, useEffect: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[1]);
-({ ExperimentBuckets: closure_8, ExposureTypes: closure_9 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/experiments/createExperiment.tsx");
+({ useState: closure_4, useEffect: closure_5 } = result);
+({ ExperimentBuckets: closure_8, ExposureTypes: closure_9 } = ExperimentBuckets);
+result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/createExperiment.tsx");
 
-export default function createExperiment(config) {
-  const arg1 = config;
-  function trackAutoExposure(self, trackExposureOptions, arg2, descriptor) {
+export default function createExperiment(createExperiment) {
+  const _require = createExperiment;
+  function trackAutoExposure(location, trackExposureOptions, arg2, descriptor) {
     let obj = trackExposureOptions;
     let tmp = descriptor;
     if (trackExposureOptions === undefined) {
@@ -49,29 +55,29 @@ export default function createExperiment(config) {
     if (tmp === undefined) {
       tmp = null;
     }
-    obj.exposureType = arg2 ? closure_9.AUTO_FALLBACK : closure_9.AUTO;
+    obj.exposureType = arg2 ? outer1_9.AUTO_FALLBACK : outer1_9.AUTO;
     obj.excluded = false;
     if (null != tmp) {
-      trackExposureWithDescriptor(self, obj, tmp);
+      trackExposureWithDescriptor(location, obj, tmp);
     } else {
-      trackExposure(self, obj);
+      trackExposure(location, obj);
     }
   }
-  function trackExposure(location, analyticsLocations) {
-    let tmp = analyticsLocations;
-    if (analyticsLocations === undefined) {
-      const obj = { excluded: false, exposureType: constants2.MANUAL };
+  function trackExposure(location, items) {
+    let tmp = items;
+    if (items === undefined) {
+      const obj = { excluded: false, exposureType: outer1_9.MANUAL };
       tmp = obj;
     }
-    const tmp3 = callback(location.kind, result3.id, location);
+    const tmp3 = outer1_10(createExperiment.kind, result3.id, location);
     if (null != tmp3) {
       trackExposureWithDescriptor(location, tmp, tmp3);
     }
   }
-  function trackExposureWithDescriptor(location, analyticsLocations, descriptor) {
+  function trackExposureWithDescriptor(location, items, descriptor) {
     if (null != descriptor) {
-      let MANUAL = constants2.MANUAL;
-      let obj = location(result3[5]);
+      let MANUAL = outer1_9.MANUAL;
+      let obj = createExperiment(result3[5]);
       obj = {};
       let _location;
       if (null != location) {
@@ -82,17 +88,17 @@ export default function createExperiment(config) {
         str = _location;
       }
       obj.location = str;
-      analyticsLocations = undefined;
-      if (null != analyticsLocations) {
-        analyticsLocations = analyticsLocations.analyticsLocations;
+      let analyticsLocations;
+      if (null != items) {
+        analyticsLocations = items.analyticsLocations;
       }
       if (null == analyticsLocations) {
         analyticsLocations = [];
       }
       obj.analyticsLocations = analyticsLocations;
       let fingerprint;
-      if (null != analyticsLocations) {
-        fingerprint = analyticsLocations.fingerprint;
+      if (null != items) {
+        fingerprint = items.fingerprint;
       }
       if (null == fingerprint) {
         fingerprint = subscribe.getFingerprint();
@@ -103,16 +109,16 @@ export default function createExperiment(config) {
       }
       obj.fingerprint = tmp4;
       let flag;
-      if (null != analyticsLocations) {
-        flag = analyticsLocations.excluded;
+      if (null != items) {
+        flag = items.excluded;
       }
       if (!flag) {
         flag = false;
       }
       obj.excluded = flag;
       let exposureType;
-      if (null != analyticsLocations) {
-        exposureType = analyticsLocations.exposureType;
+      if (null != items) {
+        exposureType = items.exposureType;
       }
       if (null != exposureType) {
         MANUAL = exposureType;
@@ -121,18 +127,20 @@ export default function createExperiment(config) {
       const result = obj.trackExposureToExperiment(result3.id, descriptor, obj);
     }
   }
-  function subscribe(self) {
+  function subscribe(arg0, arg1) {
     let obj = arg2;
+    const createExperiment = arg0;
+    let closure_1 = arg1;
     if (arg2 === undefined) {
       obj = {};
     }
-    let result3;
-    let trackAutoExposure;
-    let trackExposure;
-    function onStoreChange(self) {
-      const tmp = callback(self.kind, self.id, self);
+    let c2;
+    let NOT_ELIGIBLE;
+    let num;
+    function onStoreChange() {
+      const tmp = outer2_10(closure_0.kind, closure_0.id, closure_0);
       if (null != tmp) {
-        if (!tmp) {
+        if (!c2) {
           let NOT_ELIGIBLE = tmp.bucket;
         }
         let num = -1;
@@ -144,59 +152,53 @@ export default function createExperiment(config) {
           tmp4 = num === num;
         }
         if (!tmp4) {
-          arg1(callback2(self, NOT_ELIGIBLE, arg1, tmp), NOT_ELIGIBLE, num);
+          callback(outer2_11(closure_0, NOT_ELIGIBLE, callback, tmp), NOT_ELIGIBLE, num);
         }
       }
-      NOT_ELIGIBLE = constants.NOT_ELIGIBLE;
+      NOT_ELIGIBLE = outer2_8.NOT_ELIGIBLE;
     }
-    const trackExposureWithDescriptor = onStoreChange;
-    result3 = tmp;
-    const tmp2 = callback(self.kind, self.id, self);
+    c2 = tmp;
+    const tmp2 = outer1_10(createExperiment.kind, createExperiment.id, arg0);
     if (null != tmp2) {
       if (!tmp) {
-        let NOT_ELIGIBLE = tmp2.bucket;
+        NOT_ELIGIBLE = tmp2.bucket;
       }
-      trackAutoExposure = NOT_ELIGIBLE;
-      let num = -1;
+      num = -1;
       if (null != tmp2) {
         num = tmp2.revision;
       }
-      trackExposure = num;
-      arg1(callback2(self, trackAutoExposure, map, tmp2), trackAutoExposure, trackExposure);
-      const result = closure_7.addReactChangeListener(onStoreChange);
+      arg1(outer1_11(createExperiment, NOT_ELIGIBLE, closure_1, tmp2), NOT_ELIGIBLE, num);
+      let result = outer1_7.addReactChangeListener(onStoreChange);
       return () => {
-        const result = closure_7.removeReactChangeListener(onStoreChange);
+        const result = outer2_7.removeReactChangeListener(onStoreChange);
       };
     }
-    NOT_ELIGIBLE = constants.NOT_ELIGIBLE;
+    NOT_ELIGIBLE = outer1_8.NOT_ELIGIBLE;
   }
-  let closure_6 = subscribe;
-  let obj = arg1(dependencyMap[6]);
-  const result = obj.validateOneExperiment(config.id, config.label, config.commonTriggerPoint);
+  let obj = _require(result3[6]);
+  let result = obj.validateOneExperiment(createExperiment.id, createExperiment.label, createExperiment.commonTriggerPoint);
   const map = new Map();
-  const importDefault = map;
-  obj = { description: "Not Eligible", config: config.defaultConfig };
+  obj = { description: "Not Eligible", config: createExperiment.defaultConfig };
   const result1 = map.set(constants.NOT_ELIGIBLE, obj);
-  obj = { description: "Control Bucket", config: config.defaultConfig };
+  obj = { description: "Control Bucket", config: createExperiment.defaultConfig };
   const result2 = map.set(constants.CONTROL, obj);
-  const treatments = config.treatments;
+  const treatments = createExperiment.treatments;
   const item = treatments.forEach((config) => {
     const result = map.set(config.id, { description: "Treatment " + config.id + ": " + config.label, config: config.config });
   });
-  const obj1 = { id: config.id, title: config.label, commonTriggerPoint: config.commonTriggerPoint };
-  const items = [...map.values()];
+  const obj1 = { id: createExperiment.id, title: createExperiment.label, commonTriggerPoint: createExperiment.commonTriggerPoint };
+  let items = [...map.values()];
   obj1.description = items.map((description) => description.description);
   obj1.buckets = [...map.keys()];
-  if ("guild" === config.kind) {
-    let result3 = arg1(dependencyMap[5]).registerGuildExperiment(obj1);
-    const obj7 = arg1(dependencyMap[5]);
+  if ("guild" === createExperiment.kind) {
+    result3 = _require(result3[5]).registerGuildExperiment(obj1);
+    const obj7 = _require(result3[5]);
   } else {
-    result3 = arg1(dependencyMap[5]).registerUserExperiment(obj1);
-    const obj6 = arg1(dependencyMap[5]);
+    result3 = _require(result3[5]).registerUserExperiment(obj1);
+    const obj6 = _require(result3[5]);
   }
-  const dependencyMap = result3;
   return {
-    useExperiment(self) {
+    useExperiment(arg0) {
       let tmp13;
       let tmp14;
       let tmp15;
@@ -205,18 +207,18 @@ export default function createExperiment(config) {
         const obj = { autoTrackExposure: true };
         tmp = obj;
       }
-      self = undefined;
-      let map;
-      let result3;
-      let trackAutoExposure;
-      let trackExposure;
-      let trackExposureWithDescriptor;
-      let subscribe;
+      let createExperiment;
+      let c1;
+      let c2;
+      let c3;
+      let c4;
+      let closure_5;
+      let c6;
       const disable = tmp.disable;
-      self = tmp2;
-      map = tmp3;
-      const tmp4 = callback(self.kind, self.id, self);
-      result3 = tmp4;
+      createExperiment = tmp2;
+      c1 = tmp3;
+      const tmp4 = outer1_10(createExperiment.kind, createExperiment.id, arg0);
+      c2 = tmp4;
       let tmp8Result;
       if (null != tmp.trackExposureOptions) {
         let trackExposureOptions = tmp.trackExposureOptions;
@@ -226,85 +228,88 @@ export default function createExperiment(config) {
         tmp8Result = map(result3[7])(trackExposureOptions);
         const tmp8 = map(result3[7]);
       }
-      trackAutoExposure = tmp8Result;
+      c3 = tmp8Result;
       let prop;
       if (null != tmp4) {
         prop = tmp4.triggerDebuggingEnabled;
       }
-      trackExposure = tmp10;
+      c4 = tmp10;
       const tmp11 = trackAutoExposure(trackExposure(() => {
-        if (null != tmp4) {
-          if (!tmp2) {
-            let NOT_ELIGIBLE = tmp4.bucket;
+        if (null != _undefined2) {
+          if (!c0) {
+            let NOT_ELIGIBLE = _undefined2.bucket;
           }
-          const items = [callback(tmp2, NOT_ELIGIBLE, callback, tmp2), NOT_ELIGIBLE, ];
+          const items = [outer2_11(c0, NOT_ELIGIBLE, c1, _undefined2), NOT_ELIGIBLE, ];
           let num = -1;
-          if (null != tmp2) {
-            num = tmp4.revision;
+          if (null != _undefined2) {
+            num = _undefined2.revision;
           }
           items[2] = num;
           return items;
         }
-        NOT_ELIGIBLE = constants.NOT_ELIGIBLE;
+        NOT_ELIGIBLE = outer2_8.NOT_ELIGIBLE;
       }), 2);
-      trackExposureWithDescriptor = tmp11[1];
+      closure_5 = tmp11[1];
       [tmp13, tmp14, tmp15] = trackAutoExposure(tmp11[0], 3);
-      const tmp16 = map(result3[7])(self);
-      subscribe = tmp16;
-      const items = [null != disable && disable, false !== tmp.autoTrackExposure, tmp16, tmp8Result, tmp14, tmp15, null != prop && prop];
+      const tmp16 = map(result3[7])(arg0);
+      c6 = tmp16;
+      let items = [null != disable && disable, false !== tmp.autoTrackExposure, tmp16, tmp8Result, tmp14, tmp15, null != prop && prop];
       trackExposureWithDescriptor(() => {
-        let tmp = tmp2;
-        if (!tmp2) {
-          let tmp3 = !tmp3;
-          if (!tmp3) {
-            tmp3 = !tmp10;
+        let tmp = _undefined;
+        if (!_undefined) {
+          let tmp3 = !c1;
+          if (!c1) {
+            tmp3 = !c4;
           }
           tmp = tmp3;
         }
         if (!tmp) {
-          tmp = null != tmp2.commonTriggerPoint;
+          tmp = null != _undefined.commonTriggerPoint;
         }
         if (!tmp) {
-          tmp8Result(tmp16, tmp8Result, false === tmp3);
+          _undefined3(c6, _undefined3, false === c1);
         }
       }, items);
       const items1 = [null != disable && disable, tmp16];
-      trackExposureWithDescriptor(() => tmp16(tmp16, (arg0, arg1, arg2) => {
-        callback((arg0) => {
+      trackExposureWithDescriptor(() => _undefined4(_undefined4, (arg0, arg1, arg2) => {
+        let closure_0 = arg0;
+        let closure_1 = arg1;
+        let closure_2 = arg2;
+        outer1_5((arg0) => {
           let tmp = arg0;
-          if (arg0[0] === arg0) {
+          if (arg0[0] === closure_0) {
             return tmp;
           }
-          const items = [arg0, arg1, arg2];
+          const items = [closure_0, closure_1, closure_2];
           tmp = items;
         });
-      }, { disable: tmp2 }), items1);
+      }, { disable: c0 }), items1);
       return tmp13;
     },
     subscribe,
     trackExposure,
-    getCurrentConfig(self, arg1) {
+    getCurrentConfig(location, arg1) {
       let tmp = arg1;
       if (arg1 === undefined) {
         const obj = { autoTrackExposure: true };
         tmp = obj;
       }
-      const tmp2 = callback(self.kind, self.id, self);
+      const tmp2 = outer1_10(createExperiment.kind, createExperiment.id, location);
       if (null != tmp2) {
         if (!tmp.disable) {
           if (false !== tmp.autoTrackExposure) {
-            if (null == self.commonTriggerPoint) {
-              trackAutoExposure(self, tmp.trackExposureOptions, false === tmp.autoTrackExposure, tmp2);
+            if (null == createExperiment.commonTriggerPoint) {
+              trackAutoExposure(location, tmp.trackExposureOptions, false === tmp.autoTrackExposure, tmp2);
             }
           }
-          return callback2(self, tmp2.bucket, map, tmp2);
+          return outer1_11(createExperiment, tmp2.bucket, map, tmp2);
         }
       }
-      return callback2(self, constants.NOT_ELIGIBLE, map, tmp2);
+      return outer1_11(createExperiment, outer1_8.NOT_ELIGIBLE, map, tmp2);
     },
-    definition: config,
-    isAAMode(self) {
-      const tmp = callback(self.kind, self.id, self);
+    definition: createExperiment,
+    isAAMode(arg0) {
+      const tmp = outer1_10(createExperiment.kind, createExperiment.id, arg0);
       return !(null == tmp || !tmp.aaMode);
     }
   };

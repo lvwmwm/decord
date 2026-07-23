@@ -1,17 +1,17 @@
 // Module ID: 707
-// Function ID: 8718
+// Function ID: 8719
 // Name: memoizeCapped
-// Dependencies: []
+// Dependencies: [708]
 
 // Module 707 (memoizeCapped)
 
 export default function memoizeCapped(arg0) {
-  const tmp = require(dependencyMap[0])(arg0, (arg0) => {
+  const tmp = cache(708)(arg0, (arg0) => {
     if (500 === cache.size) {
       cache.clear();
     }
     return arg0;
   });
-  const require = tmp.cache;
+  cache = tmp.cache;
   return tmp;
 };

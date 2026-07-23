@@ -1,20 +1,20 @@
-// Module ID: 15885
-// Function ID: 121625
+// Module ID: 16002
+// Function ID: 123798
 // Name: getAppMajorVersion
-// Dependencies: []
+// Dependencies: [1554, 2]
 // Exports: getAppMajorVersion
 
-// Module 15885 (getAppMajorVersion)
-const _module = require(dependencyMap[0]);
-const constants = _module.getConstants();
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("utils/native/AppInfoUtils.tsx");
+// Module 16002 (getAppMajorVersion)
+import getConstants from "getConstants";
+
+getConstants = getConstants.getConstants();
+const result = require("set").fileFinishedImporting("utils/native/AppInfoUtils.tsx");
 
 export const getAppMajorVersion = function getAppMajorVersion() {
-  if (undefined === Version) {
+  if (undefined === getConstants) {
     return -1;
   } else {
-    const parts = Version.Version.split(".");
+    const parts = getConstants.Version.split(".");
     let num = -1;
     if (2 === parts.length) {
       const _Number = Number;

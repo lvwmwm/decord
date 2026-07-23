@@ -1,19 +1,20 @@
 // Module ID: 1045
-// Function ID: 11223
+// Function ID: 11224
 // Name: serializeFormData
-// Dependencies: []
+// Dependencies: [57, 794, 1011]
 // Exports: getBodyString, getFetchRequestArgBody, parseXhrResponseHeaders
 
 // Module 1045 (serializeFormData)
+import _slicedToArray from "_slicedToArray";
+
 function serializeFormData(fetchRequestArgBody) {
   return new URLSearchParams(fetchRequestArgBody).toString();
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const forResult = Symbol.for("sentry__originalRequestBody");
 
 export const ORIGINAL_REQ_BODY = forResult;
-export const getBodyString = function getBodyString(fetchRequestArgBody, closure_72) {
+export const getBodyString = function getBodyString(fetchRequestArgBody, outer3_72) {
   if (arguments.length > 1) {
     if (undefined !== arguments[1]) {
       let debug = arguments[1];
@@ -32,7 +33,7 @@ export const getBodyString = function getBodyString(fetchRequestArgBody, closure
           const items2 = [serializeFormData(fetchRequestArgBody)];
           return items2;
         } else if (fetchRequestArgBody) {
-          if (require(dependencyMap[2]).DEBUG_BUILD) {
+          if (require(1011).DEBUG_BUILD) {
             obj.log("Skipping network body because of body type", fetchRequestArgBody);
           }
           const items3 = [undefined, "UNPARSEABLE_BODY_TYPE"];
@@ -43,9 +44,9 @@ export const getBodyString = function getBodyString(fetchRequestArgBody, closure
         }
       }
     }
-    const obj = debug;
+    obj = debug;
   }
-  debug = require(dependencyMap[1]).debug;
+  debug = require(794) /* registerSpanErrorInstrumentation */.debug;
 };
 export const getFetchRequestArgBody = function getFetchRequestArgBody(input) {
   if (arguments.length > 0) {
@@ -79,7 +80,7 @@ export const parseXhrResponseHeaders = function parseXhrResponseHeaders(xhr) {
   if (str) {
     const parts = str.split("\r\n");
     let reduced = parts.reduce((arg0, str) => {
-      const tmp = callback(str.split(": "), 2);
+      const tmp = outer1_2(str.split(": "), 2);
       if (tmp[1]) {
         arg0[str.toLowerCase()] = tmp2;
       }

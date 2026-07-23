@@ -1,20 +1,22 @@
-// Module ID: 12974
-// Function ID: 98688
+// Module ID: 13088
+// Function ID: 100844
 // Name: ModalDisclaimer
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 4126, 2]
 // Exports: ModalDisclaimer
 
-// Module 12974 (ModalDisclaimer)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = arg1(dependencyMap[3]).createStyles({ container: { <string:3814666730>: 8, <string:1280564396>: 18 }, disclaimer: { marginBottom: 12 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Modal/native/ModalDisclaimer.native.tsx");
+// Module 13088 (ModalDisclaimer)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "column", alignItems: "center" }, disclaimer: { marginBottom: 12 } });
+const result = require("jsxProd").fileFinishedImporting("design/components/Modal/native/ModalDisclaimer.native.tsx");
 
 export const ModalDisclaimer = function ModalDisclaimer(children) {
   const tmp = callback();
-  let obj = { style: tmp.container, children: jsx(arg1(dependencyMap[4]).Text, obj) };
-  obj = { cachedAt: "center", edpbxy: "center", style: tmp.disclaimer, children: children.children };
-  return <View {...obj} />;
+  obj = { style: tmp.container, children: jsx(require(4126) /* Text */.Text, obj) };
+  obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.disclaimer, children: children.children };
+  return <View variant="text-xs/medium" color="text-muted" style={tmp.disclaimer}>{arg0.children}</View>;
 };

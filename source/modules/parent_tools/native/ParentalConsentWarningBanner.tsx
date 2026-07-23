@@ -1,62 +1,69 @@
-// Module ID: 15562
-// Function ID: 118731
+// Module ID: 15679
+// Function ID: 120904
 // Name: StyleSheet
-// Dependencies: [270270464, 79429632, 37093376, 83427328, 692387840, 251133952, 1020329984, 693043200, 1020395520, 669843456, 131072, 964231168, 520093696, 721420288, 2852126736, 1291845636, 1711276048, 805306384, 905969680, 33554434, 2063597568, 31]
+// Dependencies: [31, 27, 6770, 653, 33, 689, 4130, 1557, 13769, 13768, 15680, 10631, 3834, 6784, 675, 6771, 5796, 4126, 4554, 1212, 2198, 2]
 // Exports: default
 
-// Module 15562 (StyleSheet)
-import module_31 from "module_31";
+// Module 15679 (StyleSheet)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { FamilyCenterSubPages } from "items";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
 let StyleSheet;
-let closure_3 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-({ Pressable: closure_4, StyleSheet } = tmp2);
-const View = tmp2.View;
-const FamilyCenterSubPages = arg1(dependencyMap[2]).FamilyCenterSubPages;
-({ AnalyticEvents: closure_8, UserSettingsSections: closure_9, VerticalGradient: closure_10 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[4]));
-let closure_14 = 28 + importDefault(dependencyMap[5]).space.PX_16;
-let closure_15 = [null, null];
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { "Null": 131420590, "Null": -1717986767, "Null": -644245095, "Null": 94527, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-obj.strip = obj;
-const obj1 = {};
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_4;
+let closure_8;
+let closure_9;
+let require = arg1;
+({ Pressable: closure_4, StyleSheet } = get_ActivityIndicator);
+const View = get_ActivityIndicator.View;
+({ AnalyticEvents: closure_8, UserSettingsSections: closure_9, VerticalGradient: closure_10 } = ME);
+({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
+let closure_14 = 28 + require("_createForOfIteratorHelperLoose").space.PX_16;
+let closure_15 = [0.5875, 1];
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { position: "absolute", top: 0, left: 0, right: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.strip = _createForOfIteratorHelperLoose;
+let obj1 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj1["flexDirection"] = "row";
 obj1["alignItems"] = "center";
 obj1["justifyContent"] = "center";
-obj1["paddingHorizontal"] = importDefault(dependencyMap[5]).space.PX_12;
-obj1["paddingBottom"] = importDefault(dependencyMap[5]).space.PX_16;
-obj.pressable = obj1;
-const tmp4 = arg1(dependencyMap[4]);
-obj.label = { paddingRight: importDefault(dependencyMap[5]).space.PX_8 };
-obj.link = { textDecorationLine: "underline" };
-let closure_16 = obj.createStyles(obj);
-const result = module_31.fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningBanner.tsx");
+obj1["paddingHorizontal"] = require("_createForOfIteratorHelperLoose").space.PX_12;
+obj1["paddingBottom"] = require("_createForOfIteratorHelperLoose").space.PX_16;
+_createForOfIteratorHelperLoose.pressable = obj1;
+_createForOfIteratorHelperLoose.label = { paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.link = { textDecorationLine: "underline" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("items").fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningBanner.tsx");
 
 export default function ParentalConsentWarningBanner(children) {
   let dependencyMap;
-  const tmp = callback2();
-  const arg1 = tmp;
-  const tmp2 = importDefault(dependencyMap[7])();
-  let obj = arg1(dependencyMap[8]);
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  const tmp2 = token(1557)();
+  let obj = require(13769) /* useParentalConsentWarning */;
   const parentalConsentWarning = obj.useParentalConsentWarning();
-  let obj1 = arg1(dependencyMap[9]);
+  let obj1 = require(13768) /* useIsParentalConsentBannerActive */;
   const isParentalConsentBannerActive = obj1.useIsParentalConsentBannerActive();
-  let obj2 = arg1(dependencyMap[10]);
+  let obj2 = require(15680) /* getActiveRoute */;
   const isOnMainSurface = obj2.useIsOnMainSurface();
-  let obj3 = arg1(dependencyMap[11]);
-  let obj4 = arg1(dependencyMap[12]);
-  const token = obj4.useToken(importDefault(dependencyMap[5]).colors.BACKGROUND_FEEDBACK_WARNING);
-  const importDefault = token;
-  const items = [token];
+  let obj3 = require(10631) /* useGlobalStatusIndicatorState */;
+  let obj4 = require(3834) /* map */;
+  token = obj4.useToken(token(689).colors.BACKGROUND_FEEDBACK_WARNING);
+  let items = [token];
   let daysRemaining;
   const memo = React.useMemo(() => {
     const items = [token, ];
-    const obj = token(tmp9[13])(token);
-    items[1] = token(tmp9[13])(token).setAlpha(0).toRgbString();
+    const obj = token(_undefined[13])(token);
+    items[1] = token(_undefined[13])(token).setAlpha(0).toRgbString();
     return items;
   }, items);
   if (null != parentalConsentWarning) {
@@ -84,15 +91,18 @@ export default function ParentalConsentWarningBanner(children) {
   const sum = tmp2.top + closure_14;
   const items2 = [tmp.link];
   const callback = React.useCallback(() => {
-    let obj = token(tmp9[14]);
-    obj = { days_remaining: tmp9 };
-    obj.track(constants2.PARENTAL_CONSENT_WARNING_BANNER_TAPPED, obj);
-    const tab = token(tmp9[15]).selectTab(constants.REQUESTS);
-    const obj3 = token(tmp9[15]);
-    obj = { screen: constants3.FAMILY_CENTER };
-    tmp(tmp9[16]).openUserSettings(obj);
+    let obj = token(_undefined[14]);
+    obj = { days_remaining: _undefined };
+    obj.track(outer1_8.PARENTAL_CONSENT_WARNING_BANNER_TAPPED, obj);
+    const tab = token(_undefined[15]).selectTab(outer1_7.REQUESTS);
+    const obj3 = token(_undefined[15]);
+    obj = { screen: outer1_9.FAMILY_CENTER };
+    tmp(_undefined[16]).openUserSettings(obj);
   }, items1);
-  const callback1 = React.useCallback((children) => callback(tmp(tmp9[17]).Text, { style: tmp.link, children }, arg1), items2);
+  const callback1 = React.useCallback((children) => {
+    const obj = { variant: "text-sm/medium", color: "text-strong", style: tmp.link, children };
+    return outer1_11(tmp(_undefined[17]).Text, obj, arg1);
+  }, items2);
   obj = {};
   obj = {};
   const items3 = [StyleSheet.absoluteFill, ];
@@ -118,29 +128,29 @@ export default function ParentalConsentWarningBanner(children) {
       obj2.pointerEvents = "box-none";
       obj4 = { pointerEvents: "none", style: StyleSheet.absoluteFill, colors: memo, locations: closure_15 };
       ({ START: obj11.start, END: obj11.end } = closure_10);
-      const items6 = [callback(importDefault(dependencyMap[18]), obj4), ];
+      const items6 = [callback(token(4554), obj4), ];
       let obj5 = { accessibilityRole: "button" };
       let num4 = 19;
-      const intl = arg1(dependencyMap[19]).intl;
-      obj5.accessibilityHint = intl.string(importDefault(dependencyMap[20]).O2HKdA);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj5.accessibilityHint = intl.string(token(2198).O2HKdA);
       obj5.onPress = callback;
       const items7 = [tmp.pressable, ];
       const obj6 = { paddingTop: tmp2.top + 8 };
       items7[1] = obj6;
       obj5.style = items7;
-      let obj7 = { 803799044: "FAMILY_CENTER_CONNECTION_PREREQUISITES", 1269170180: "isArray", 711589892: "TOO_MANY_CONNECTIONS", style: tmp.label };
+      let obj7 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: tmp.label };
       if (0 === tmp9) {
-        const intl3 = arg1(dependencyMap[num4]).intl;
+        const intl3 = require(dependencyMap[num4]).intl;
         num4 = intl3.format;
         const obj8 = { connectHook: callback1 };
-        let num4Result = num4(importDefault(dependencyMap[20]).Gfqlpa, obj8);
+        let num4Result = num4(token(2198).Gfqlpa, obj8);
       } else {
-        const intl2 = arg1(dependencyMap[num4]).intl;
+        const intl2 = require(dependencyMap[num4]).intl;
         const obj9 = { count: tmp9, connectHook: callback1 };
-        num4Result = intl2.format(importDefault(dependencyMap[20]).ZBK5mM, obj9);
+        num4Result = intl2.format(token(2198).ZBK5mM, obj9);
       }
       obj7.children = num4Result;
-      obj7 = tmp21(arg1(dependencyMap[17]).Text, obj7);
+      obj7 = tmp21(require(4126) /* Text */.Text, obj7);
       obj5.children = obj7;
       obj5 = tmp21(closure_4, obj5);
       items6[1] = obj5;

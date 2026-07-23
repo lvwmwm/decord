@@ -1,12 +1,13 @@
-// Module ID: 14810
-// Function ID: 111640
+// Module ID: 14926
+// Function ID: 113808
 // Name: findActivityWithMostParticipants
-// Dependencies: []
+// Dependencies: [3767, 2]
 // Exports: default, findActivityWithMostNonBlockedOrIgnoredParticipants
 
-// Module 14810 (findActivityWithMostParticipants)
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/activities/utils/findActivityWithMostParticipants.tsx");
+// Module 14926 (findActivityWithMostParticipants)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/activities/utils/findActivityWithMostParticipants.tsx");
 
 export default function findActivityWithMostParticipants(arr) {
   if (0 === arr.length) {
@@ -24,20 +25,25 @@ export default function findActivityWithMostParticipants(arr) {
   }
 };
 export const findActivityWithMostNonBlockedOrIgnoredParticipants = function findActivityWithMostNonBlockedOrIgnoredParticipants(embeddedActivitiesForChannel) {
+  let _isNativeReflectConstruct;
+  let closure_1;
   if (0 === embeddedActivitiesForChannel.length) {
     return null;
   } else if (1 === length) {
     return embeddedActivitiesForChannel[0];
   } else {
-    const items = [embeddedActivitiesForChannel[0], ];
+    let items = [embeddedActivitiesForChannel[0], ];
     const items1 = [];
     HermesBuiltin.arraySpread(embeddedActivitiesForChannel[0].userIds, 0);
-    items[1] = items1.map((arg0) => !blockedOrIgnored.isBlockedOrIgnored(arg0)).length;
-    [closure_0, closure_1] = items;
+    items[1] = items1.map((arg0) => !outer1_0.isBlockedOrIgnored(arg0)).length;
+    [_isNativeReflectConstruct, closure_1] = items;
     const item = embeddedActivitiesForChannel.forEach((userIds) => {
       const items = [...userIds.userIds];
-      const length = items.filter((arg0) => !arg0.isBlockedOrIgnored(arg0)).length;
+      const length = items.filter((arg0) => !outer2_0.isBlockedOrIgnored(arg0)).length;
+      if (length > length) {
+        let _isNativeReflectConstruct = userIds;
+      }
     });
-    return closure_0;
+    return _isNativeReflectConstruct;
   }
 };

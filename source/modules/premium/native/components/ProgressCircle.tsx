@@ -1,9 +1,22 @@
-// Module ID: 11615
-// Function ID: 90209
+// Module ID: 11625
+// Function ID: 90258
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 4130, 8018, 3842, 689, 2]
 
-// Module 11615 (_isNativeReflectConstruct)
+// Module 11625 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import closure_4 from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,29 +26,21 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const View = arg1(dependencyMap[6]).View;
-const importAllResult = importAll(dependencyMap[5]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-let closure_11 = obj.createLegacyClassComponentStyles({ progressCircle: { <string:3596066964>: null, <string:3638417373>: null }, circle: { "Null": null, "Null": null, "Null": null }, circleOverlay: { useIsNewGamesCoachmarkEnabled: "<string:1156269291>", FeColorMatrix: "<string:44592193>", fetchViewHierarchy: "<string:1379557632>", addWindow: "<string:1156252101>" } });
-const tmp4 = (Component) => {
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles({ progressCircle: { alignItems: "center", justifyContent: "center" }, circle: { position: "absolute", width: "100%", height: "100%" }, circleOverlay: { position: "relative", display: "flex", justifyContent: "center", alignItems: "center" } });
+let tmp4 = ((Component) => {
   class ProgressCircle {
     constructor() {
       self = this;
-      tmp = closure_3(this, ProgressCircle);
-      obj = closure_6(ProgressCircle);
-      tmp2 = closure_5;
-      if (closure_12()) {
+      tmp = outer1_3(this, ProgressCircle);
+      obj = outer1_6(ProgressCircle);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -44,7 +49,6 @@ const tmp4 = (Component) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ProgressCircle;
   callback2(ProgressCircle, Component);
   let obj = {
     key: "renderCircle",
@@ -57,43 +61,42 @@ const tmp4 = (Component) => {
       const result1 = result * Math.PI * 2;
       const bound = Math.min(Math.max(props.percent, 0), 100);
       let obj = {};
-      const tmp = callback5(this.context);
+      const tmp = outer1_11(this.context);
       obj.viewBox = "0 0 " + size + " " + size;
       obj.style = tmp.circle;
       obj = { fill: "none", cx: size / 2, cy: size / 2, r: result, strokeWidth, strokeLinecap: "round", transform: "rotate(-90 " + size / 2 + " " + size / 2 + ")", stroke: props.color };
       obj = { strokeDasharray: result1, strokeDashoffset: (1 - bound / 100) * result1 };
       obj.style = obj;
-      obj.children = callback4(ProgressCircle(closure_2[9]).Circle, obj);
-      return callback4(callback(closure_2[9]), obj);
+      obj.children = outer1_9(ProgressCircle(outer1_2[9]).Circle, obj);
+      return outer1_9(outer1_1(outer1_2[9]), obj);
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "render",
     value() {
-      const tmp = callback5(this.context);
+      const tmp = outer1_11(this.context);
       const props = this.props;
       const children = props.children;
       let obj = { style: items };
-      const items = [tmp.progressCircle, props.style];
+      items = [tmp.progressCircle, props.style];
       const items1 = [this.renderCircle(), ];
       let tmp4 = null;
       if (null != children) {
         obj = { style: tmp.circleOverlay, children };
-        tmp4 = callback4(closure_8, obj);
+        tmp4 = outer1_9(outer1_8, obj);
       }
       items1[1] = tmp4;
       obj.children = items1;
-      return closure_10(closure_8, obj);
+      return outer1_10(outer1_8, obj);
     }
   };
   items[1] = obj;
   return callback(ProgressCircle, items);
-}(importAllResult.Component);
-tmp4.contextType = arg1(dependencyMap[10]).ThemeContext;
-obj = { "Bool(true)": true, "Bool(true)": "destructive", color: importDefault(dependencyMap[11]).unsafe_rawColors.GUILD_BOOSTING_PINK };
-tmp4.defaultProps = obj;
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/components/ProgressCircle.tsx");
+})(require("result").Component);
+tmp4.contextType = require("ManaContext").ThemeContext;
+_createForOfIteratorHelperLoose = { size: 20, strokeWidth: 0.9, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GUILD_BOOSTING_PINK };
+tmp4.defaultProps = _createForOfIteratorHelperLoose;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/native/components/ProgressCircle.tsx");
 
 export default tmp4;

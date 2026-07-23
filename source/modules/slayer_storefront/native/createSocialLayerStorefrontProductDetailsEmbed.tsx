@@ -1,53 +1,61 @@
-// Module ID: 10844
-// Function ID: 84221
+// Module ID: 10854
+// Function ID: 84270
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 4167, 4175, 653, 6979, 7633, 1212, 10855, 5615, 5611, 3104, 7791, 8002, 4119, 7459, 478, 566, 1327, 5470, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10844 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10854 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { PaymentGateways } from "ME";
+import { InviteTypes } from "InviteSendStates";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,13 +92,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const PaymentGateways = arg1(dependencyMap[4]).PaymentGateways;
-const InviteTypes = arg1(dependencyMap[5]).InviteTypes;
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
 
 export const createSocialLayerStorefrontProductDetailsEmbed = function createSocialLayerStorefrontProductDetailsEmbed(theme) {
   let baseColors;
@@ -98,30 +100,30 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   let guildOrApplication;
   let skuId;
   ({ skuId, guildOrApplication } = theme);
-  ({ colors, baseColors } = importDefault(dependencyMap[6])(theme.theme));
+  ({ colors, baseColors } = importDefault(7633)(theme.theme));
   const value = closure_6.get(skuId);
   let applicationId;
   if (null != value) {
     applicationId = value.applicationId;
   }
-  const application = closure_5.getApplication(applicationId);
+  const application = _isNativeReflectConstruct.getApplication(applicationId);
   const isFetchingResult = closure_6.isFetching(skuId);
   let result = null != applicationId;
-  const tmp = importDefault(dependencyMap[6])(theme.theme);
+  const tmp = importDefault(7633)(theme.theme);
   if (result) {
-    result = closure_5.isFetchingApplication(applicationId);
+    result = _isNativeReflectConstruct.isFetchingApplication(applicationId);
   }
   let result1 = null != applicationId;
   if (result1) {
-    result1 = closure_5.didFetchingApplicationFail(applicationId);
+    result1 = _isNativeReflectConstruct.didFetchingApplicationFail(applicationId);
   }
   let name;
   if (null != application) {
     name = application.name;
   }
   if (null == name) {
-    const intl = arg1(dependencyMap[7]).intl;
-    let str = intl.string(arg1(dependencyMap[7]).t.vyaWs7);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    let str = intl.string(require(1212) /* getSystemLocale */.t.vyaWs7);
     name = str.toUpperCase();
   }
   if (!isFetchingResult) {
@@ -129,11 +131,11 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (importDefault(dependencyMap[8])(application)) {
+        if (importDefault(10855)(application)) {
           if ("guild" !== guildOrApplication.type) {
-            const result2 = arg1(dependencyMap[9]).isSlayerSkuAvailableOnThisPlatform(value);
-            const obj2 = arg1(dependencyMap[9]);
-            const str4 = arg1(dependencyMap[10]).getCardImageURL(value);
+            const result2 = require(5615) /* transformStorefrontSKUPricesServer */.isSlayerSkuAvailableOnThisPlatform(value);
+            const obj2 = require(5615) /* transformStorefrontSKUPricesServer */;
+            const str4 = require(5611) /* _createForOfIteratorHelperLoose */.getCardImageURL(value);
             str = undefined;
             if (null != str4) {
               str = str4.toString();
@@ -151,17 +153,17 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
             obj["headerColor"] = colors.headerColor;
             obj["titleText"] = value.name;
             obj["titleColor"] = colors.titleColor;
-            const intl2 = arg1(dependencyMap[7]).intl;
-            obj["subtitle"] = intl2.string(arg1(dependencyMap[7]).t.V91tvy);
+            const intl2 = require(1212) /* getSystemLocale */.intl;
+            obj["subtitle"] = intl2.string(require(1212) /* getSystemLocale */.t.V91tvy);
             obj["subtitleColor"] = colors.subtitleColor;
             obj["thumbnailUrl"] = tmp17;
             obj["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;
-            const intl3 = arg1(dependencyMap[7]).intl;
+            const intl3 = require(1212) /* getSystemLocale */.intl;
             const string = intl3.string;
             if (result2) {
-              let stringResult = string(arg1(tmp24[7]).t.boqtTA);
+              let stringResult = string(require(1212) /* getSystemLocale */.t.boqtTA);
             } else {
-              stringResult = string(importDefault(tmp24[11]).BKf0MM);
+              stringResult = string(importDefault(3104).BKf0MM);
             }
             obj["acceptLabelText"] = stringResult;
             let prop;
@@ -189,43 +191,41 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   return obj;
 };
 export const useFetchSocialLayerStorefrontProductDetailsEmbedData = function useFetchSocialLayerStorefrontProductDetailsEmbedData(stateFromStores) {
-  const arg1 = stateFromStores;
-  const isEligibleForSocialLayerStorefrontMobilePurchasing = arg1(dependencyMap[12]).useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "use_fetch_social_layer_storefront_product_details_embed_data" });
-  const importDefault = isEligibleForSocialLayerStorefrontMobilePurchasing;
-  const obj = arg1(dependencyMap[12]);
-  const storeFront = importDefault(dependencyMap[13]).useNativeIAPPayments().storeFront;
-  let country;
+  const _require = stateFromStores;
+  const isEligibleForSocialLayerStorefrontMobilePurchasing = _require(country[12]).useIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "use_fetch_social_layer_storefront_product_details_embed_data" });
+  let obj = _require(country[12]);
+  const storeFront = isEligibleForSocialLayerStorefrontMobilePurchasing(country[13]).useNativeIAPPayments().storeFront;
+  country = undefined;
   if (null != storeFront) {
     country = storeFront.country;
   }
-  const dependencyMap = country;
-  const items = [isEligibleForSocialLayerStorefrontMobilePurchasing, stateFromStores];
-  const tmp3 = callback(React.useMemo(() => {
-    const items = [];
+  let items = [isEligibleForSocialLayerStorefrontMobilePurchasing, stateFromStores];
+  let tmp3 = first(React.useMemo(() => {
+    let items = [];
     const items1 = [, ];
     if (isEligibleForSocialLayerStorefrontMobilePurchasing) {
       items1[0] = items;
       items1[1] = [];
-      let reduced = arg0.reduce((arg0, codedLinks) => {
+      let reduced = stateFromStores.reduce((arg0, codedLinks) => {
         let arr;
         let arr2;
         let code;
         let iter2;
         let type;
         [arr, arr2] = arg0;
-        const tmp = callback(codedLinks.codedLinks);
+        const tmp = outer2_9(codedLinks.codedLinks);
         let iter = tmp();
         if (!iter.done) {
           do {
             ({ type, code } = iter.value);
-            let tmp2 = closure_0;
-            let tmp3 = closure_2;
-            if (type === closure_0(closure_2[14]).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+            let tmp2 = callback;
+            let tmp3 = country;
+            if (type === callback(country[14]).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
               arr = arr.push(code.split("-"));
             } else {
-              let tmp4 = closure_0;
-              let tmp5 = closure_2;
-              if (type === closure_0(closure_2[14]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+              let tmp4 = callback;
+              let tmp5 = country;
+              if (type === callback(country[14]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
                 arr = arr2.push(code.split("-"));
               }
             }
@@ -243,46 +243,44 @@ export const useFetchSocialLayerStorefrontProductDetailsEmbedData = function use
     }
     return reduced;
   }, items), 2);
-  const first = tmp3[0];
-  const callback = first;
-  const React = tmp5;
-  const items1 = [first, tmp3[1], country];
+  first = tmp3[0];
+  React = tmp5;
+  let items1 = [first, tmp3[1], country];
   const effect = React.useEffect(() => {
     let first;
     let iter2;
     let iter4;
-    let tmp5;
-    const tmp = callback(first);
+    const tmp = outer1_9(first);
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_3;
-        let tmp3 = closure_3(iter.value, 2);
+        let tmp2 = first;
+        let tmp3 = first(iter.value, 2);
         first = tmp3[0];
-        tmp5 = closure_6;
-        let isFetchingResult = null != closure_6.get(first);
+        let tmp5 = outer1_6;
+        let isFetchingResult = null != outer1_6.get(first);
         if (!isFetchingResult) {
-          let tmp7 = closure_6;
-          isFetchingResult = closure_6.isFetching(first);
+          let tmp7 = outer1_6;
+          isFetchingResult = outer1_6.isFetching(first);
         }
         if (!isFetchingResult) {
-          let tmp8 = closure_6;
-          isFetchingResult = closure_6.didFetchingSkuFail(first);
+          let tmp8 = outer1_6;
+          isFetchingResult = outer1_6.didFetchingSkuFail(first);
         }
         if (!isFetchingResult) {
-          let tmp9 = closure_0;
-          let tmp10 = closure_2;
-          let obj = closure_0(closure_2[15]);
+          let tmp9 = stateFromStores;
+          let tmp10 = country;
+          let obj = stateFromStores(country[15]);
           obj = {};
-          let obj3 = closure_0(closure_2[16]);
+          let obj3 = stateFromStores(country[16]);
           obj.withGoogleSkuIds = obj3.isAndroid();
-          let tmp11 = closure_2;
-          obj.countryCode = closure_2;
-          let obj4 = closure_0(closure_2[16]);
+          let tmp11 = country;
+          obj.countryCode = country;
+          let obj4 = stateFromStores(country[16]);
           let APPLE;
           if (obj4.isIOS()) {
-            let tmp13 = closure_7;
-            APPLE = closure_7.APPLE;
+            let tmp13 = outer1_7;
+            APPLE = outer1_7.APPLE;
           }
           obj.paymentGateway = APPLE;
           let socialLayerStorefrontSku = obj.fetchSocialLayerStorefrontSku(tmp3[1], first, obj);
@@ -291,37 +289,37 @@ export const useFetchSocialLayerStorefrontProductDetailsEmbedData = function use
         iter = iter2;
       } while (!iter2.done);
     }
-    const tmp15 = callback(tmp5);
+    const tmp15 = outer1_9(result);
     let iter3 = tmp15();
     if (!iter3.done) {
       do {
-        let tmp16 = closure_3;
-        let tmp17 = closure_3(iter3.value, 2);
+        let tmp16 = first;
+        let tmp17 = first(iter3.value, 2);
         let first1 = tmp17[0];
-        let tmp19 = closure_6;
-        let isFetchingResult1 = null != closure_6.get(first1);
+        let tmp19 = outer1_6;
+        let isFetchingResult1 = null != outer1_6.get(first1);
         if (!isFetchingResult1) {
-          let tmp21 = closure_6;
-          isFetchingResult1 = closure_6.isFetching(first1);
+          let tmp21 = outer1_6;
+          isFetchingResult1 = outer1_6.isFetching(first1);
         }
         if (!isFetchingResult1) {
-          let tmp22 = closure_6;
-          isFetchingResult1 = closure_6.didFetchingSkuFail(first1);
+          let tmp22 = outer1_6;
+          isFetchingResult1 = outer1_6.didFetchingSkuFail(first1);
         }
         if (!isFetchingResult1) {
-          let tmp23 = closure_0;
-          let tmp24 = closure_2;
-          let obj5 = closure_0(closure_2[15]);
+          let tmp23 = stateFromStores;
+          let tmp24 = country;
+          let obj5 = stateFromStores(country[15]);
           obj = {};
-          let obj7 = closure_0(closure_2[16]);
+          let obj7 = stateFromStores(country[16]);
           obj.withGoogleSkuIds = obj7.isAndroid();
-          let tmp25 = closure_2;
-          obj.countryCode = closure_2;
-          let obj8 = closure_0(closure_2[16]);
+          let tmp25 = country;
+          obj.countryCode = country;
+          let obj8 = stateFromStores(country[16]);
           let APPLE1;
           if (obj8.isIOS()) {
-            let tmp27 = closure_7;
-            APPLE1 = closure_7.APPLE;
+            let tmp27 = outer1_7;
+            APPLE1 = outer1_7.APPLE;
           }
           obj.paymentGateway = APPLE1;
           let socialLayerStorefrontSkuForApplication = obj5.fetchSocialLayerStorefrontSkuForApplication(tmp17[1], first1, obj);
@@ -331,25 +329,25 @@ export const useFetchSocialLayerStorefrontProductDetailsEmbedData = function use
       } while (!iter4.done);
     }
   }, items1);
-  const obj2 = importDefault(dependencyMap[13]);
+  const obj2 = isEligibleForSocialLayerStorefrontMobilePurchasing(country[13]);
   const items2 = [closure_6];
   const items3 = [tmp3[1], first];
-  const stateFromStoresArray = arg1(dependencyMap[17]).useStateFromStoresArray(items2, () => {
+  const stateFromStoresArray = _require(country[17]).useStateFromStoresArray(items2, () => {
     const items = [
-      ...closure_3.map((arg0) => {
+      ...first.map((arg0) => {
         let tmp;
         [tmp] = arg0;
-        return store.get(tmp);
+        return outer2_6.get(tmp);
       }),
-      ...closure_4.map((arg0) => {
+      ...result.map((arg0) => {
         let tmp;
         [tmp] = arg0;
-        return store.get(tmp);
+        return outer2_6.get(tmp);
       })
     ];
-    const found = items.filter(arg0(country[18]).isNotNullish);
+    const found = items.filter(stateFromStores(country[18]).isNotNullish);
     const items1 = [...new Set(found.map((applicationId) => applicationId.applicationId))];
     return items1;
   }, items3);
-  importDefault(dependencyMap[19])(stateFromStoresArray);
+  isEligibleForSocialLayerStorefrontMobilePurchasing(country[19])(stateFromStoresArray);
 };

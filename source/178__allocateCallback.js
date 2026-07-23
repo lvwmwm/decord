@@ -1,9 +1,10 @@
 // Module ID: 178
 // Function ID: 2584
 // Name: _allocateCallback
-// Dependencies: [1627390328, 1654, 1792]
+// Dependencies: [44, 179, 63]
 
 // Module 178 (_allocateCallback)
+let require = arg1;
 function _allocateCallback(loop, queueReactNativeMicrotask) {
   let closure_12 = tmp + 1;
   let length = arr.pop();
@@ -15,15 +16,15 @@ function _allocateCallback(loop, queueReactNativeMicrotask) {
   closure_6[length] = queueReactNativeMicrotask;
   return +closure_12;
 }
-function _callTimer(arg0, arg1, didTimeout) {
-  const global = arg1;
-  if (arg0 > closure_12) {
+function _callTimer(arg0, arg1) {
+  const _global = arg1;
+  if (arg0 > c12) {
     const _console = console;
     console.warn("Tried to call timer with ID %s but no such timer exists.", arg0);
   }
   const index = closure_7.indexOf(arg0);
   if (-1 !== index) {
-    if (closure_5[index]) {
+    if (table[index]) {
       if (tmp23) {
         if ("setInterval" !== tmp23) {
           _clearIndex(index);
@@ -32,15 +33,15 @@ function _callTimer(arg0, arg1, didTimeout) {
           if ("setInterval" !== tmp23) {
             if ("queueReactNativeMicrotask" !== tmp23) {
               if ("requestAnimationFrame" === tmp23) {
-                const _performance = global.performance;
+                let _performance = _global.performance;
                 tmp26(_performance.now());
               } else if ("requestIdleCallback" === tmp23) {
                 const obj = {
                   timeRemaining() {
-                                  const _performance = arg1.performance;
-                                  return Math.max(0, closure_4 - (_performance.now() - arg1));
+                                  _performance = _performance.performance;
+                                  return Math.max(0, outer1_4 - (_performance.now() - _performance));
                                 },
-                  didTimeout
+                  didTimeout: arg2
                 };
                 tmp26(obj);
               } else {
@@ -62,12 +63,12 @@ function _callReactNativeMicrotasksPass() {
   if (0 === arr2.length) {
     return false;
   } else {
-    const arr2 = [];
+    arr2 = [];
     let num = 0;
     if (0 < arr2.length) {
       do {
-        let tmp = closure_17;
-        let tmp2 = closure_17(arr[num], 0);
+        let tmp = _callTimer;
+        let tmp2 = _callTimer(arr[num], 0);
         num = num + 1;
         length = arr.length;
       } while (num < length);
@@ -90,25 +91,25 @@ function _freeCallback(_animationFrame) {
         tmp5 = "requestIdleCallback" !== tmp2;
       }
       if (tmp5) {
-        arg1(dependencyMap[0])(importDefault(dependencyMap[1]), "NativeTiming is available");
-        const tmp8 = arg1(dependencyMap[0]);
-        importDefault(dependencyMap[1]).deleteTimer(_animationFrame);
-        const obj = importDefault(dependencyMap[1]);
+        require(44) /* invariant */(importDefault(179), "NativeTiming is available");
+        const tmp8 = require(44) /* invariant */;
+        importDefault(179).deleteTimer(_animationFrame);
+        const obj = importDefault(179);
       }
     }
   }
 }
 function createTimer(arg0, arg1, arg2, arg3) {
-  arg1(dependencyMap[0])(importDefault(dependencyMap[1]), "NativeTiming is available");
-  const tmp = arg1(dependencyMap[0]);
-  const timer = importDefault(dependencyMap[1]).createTimer(arg0, arg1, arg2, arg3);
+  require(44) /* invariant */(importDefault(179), "NativeTiming is available");
+  const tmp = require(44) /* invariant */;
+  const timer = importDefault(179).createTimer(arg0, arg1, arg2, arg3);
 }
 function setSendIdleEvents(arg0) {
-  arg1(dependencyMap[0])(importDefault(dependencyMap[1]), "NativeTiming is available");
-  const tmp = arg1(dependencyMap[0]);
-  importDefault(dependencyMap[1]).setSendIdleEvents(arg0);
+  require(44) /* invariant */(importDefault(179), "NativeTiming is available");
+  const tmp = require(44) /* invariant */;
+  importDefault(179).setSendIdleEvents(arg0);
 }
-let closure_4 = 16.666666666666668;
+let c4 = 16.666666666666668;
 let closure_5 = [];
 let closure_6 = [];
 let closure_7 = [];
@@ -116,24 +117,23 @@ let closure_8 = [];
 let closure_9 = [];
 let closure_10 = [];
 let closure_11 = {};
-let closure_12 = 1;
+let c12 = 1;
 let closure_13 = [];
-let closure_14 = false;
+let c14 = false;
 let obj = {
   setTimeout(arg0, arg1) {
     let num = arg1;
-    const global = arg0;
+    let closure_0 = arg0;
     const length = arguments.length;
     let num2 = 0;
     if (length > 2) {
       num2 = length - 2;
     }
     const array = new Array(num2);
-    arg1 = array;
     for (let num3 = 2; num3 < length; num3 = num3 + 1) {
       array[num3 - 2] = arguments[num3];
     }
-    const tmp2 = _allocateCallback(() => arg0.apply(undefined, array), "setTimeout");
+    const tmp2 = _allocateCallback(() => callback.apply(undefined, array), "setTimeout");
     if (!num) {
       num = 0;
     }
@@ -142,18 +142,17 @@ let obj = {
   },
   setInterval(arg0, arg1) {
     let num = arg1;
-    const global = arg0;
+    let closure_0 = arg0;
     const length = arguments.length;
     let num2 = 0;
     if (length > 2) {
       num2 = length - 2;
     }
     const array = new Array(num2);
-    arg1 = array;
     for (let num3 = 2; num3 < length; num3 = num3 + 1) {
       array[num3 - 2] = arguments[num3];
     }
-    const tmp2 = _allocateCallback(() => arg0.apply(undefined, array), "setInterval");
+    const tmp2 = _allocateCallback(() => callback.apply(undefined, array), "setInterval");
     if (!num) {
       num = 0;
     }
@@ -161,18 +160,17 @@ let obj = {
     return tmp2;
   },
   queueReactNativeMicrotask(arg0) {
-    const global = arg0;
+    let closure_0 = arg0;
     const length = arguments.length;
     let num = 0;
     if (length > 1) {
       num = length - 1;
     }
     const array = new Array(num);
-    const arg1 = array;
     for (let num2 = 1; num2 < length; num2 = num2 + 1) {
       array[num2 - 1] = arguments[num2];
     }
-    const tmp2 = _allocateCallback(() => arg0.apply(undefined, array), "queueReactNativeMicrotask");
+    const tmp2 = _allocateCallback(() => callback.apply(undefined, array), "queueReactNativeMicrotask");
     arr2.push(tmp2);
     return tmp2;
   },
@@ -183,7 +181,7 @@ let obj = {
   },
   requestIdleCallback(runOnce, timeout) {
     let fn = runOnce;
-    const global = runOnce;
+    let closure_0 = runOnce;
     if (0 === arr3.length) {
       setSendIdleEvents(true);
     }
@@ -192,27 +190,27 @@ let obj = {
     }
     if (null != timeout) {
       fn = (arg0) => {
-        if (closure_11[closure_1]) {
-          closure_15.clearTimeout(tmp);
-          delete r2[r1];
+        if (outer1_11[closure_1]) {
+          outer1_15.clearTimeout(tmp3);
+          delete tmp2[tmp];
         }
-        return arg0(arg0);
+        return lib(arg0);
       };
     }
     const tmp3Result = _allocateCallback(fn, "requestIdleCallback");
-    timeout = tmp3Result;
+    const require = tmp3Result;
     arr3.push(tmp3Result);
     if (null != timeout) {
       closure_11[tmp3Result] = obj.setTimeout(() => {
-        const index = arr.indexOf(tmp3Result);
+        const index = outer1_10.indexOf(closure_1);
         if (index > -1) {
-          arr.splice(index, 1);
-          const _performance = arg0.performance;
-          callback(tmp3Result, _performance.now(), true);
+          outer1_10.splice(index, 1);
+          const _performance = lib.performance;
+          outer1_17(closure_1, _performance.now(), true);
         }
-        delete r2[r1];
-        if (0 === arr.length) {
-          callback2(false);
+        delete tmp2[tmp];
+        if (0 === outer1_10.length) {
+          outer1_22(false);
         }
       }, timeout);
     }
@@ -224,9 +222,9 @@ let obj = {
     if (-1 !== index) {
       arr3.splice(index, 1);
     }
-    if (closure_11[closure_5]) {
-      obj.clearTimeout(tmp5);
-      delete r2[r3];
+    if (table2[closure_5]) {
+      obj.clearTimeout(tmp7);
+      delete tmp[tmp2];
     }
     if (0 === arr3.length) {
       setSendIdleEvents(false);
@@ -250,13 +248,13 @@ let obj = {
   },
   callTimers(arg0) {
     let length;
-    arg1(dependencyMap[0])(0 !== arg0.length, "Cannot call `callTimers` with an empty list of IDs.");
+    require(44) /* invariant */(0 !== arg0.length, "Cannot call `callTimers` with an empty list of IDs.");
     closure_13.length = 0;
     let num = 0;
     if (0 < arg0.length) {
       do {
-        let tmp2 = closure_17;
-        let tmp3 = closure_17(arg0[num], 0);
+        let tmp2 = _callTimer;
+        let tmp3 = _callTimer(arg0[num], 0);
         num = num + 1;
         length = arg0.length;
       } while (num < length);
@@ -279,15 +277,15 @@ let obj = {
   },
   callIdleCallbacks(arg0) {
     let length;
-    if (closure_4 - (Date.now() - arg0) >= 1) {
+    if (c4 - (Date.now() - arg0) >= 1) {
       closure_13.length = 0;
       if (arr3.length > 0) {
-        const arr3 = [];
+        arr3 = [];
         let num = 0;
         if (0 < arr3.length) {
           do {
-            let tmp = closure_17;
-            let tmp2 = closure_17(arr[num], arg0);
+            let tmp = _callTimer;
+            let tmp2 = _callTimer(arr[num], arg0);
             num = num + 1;
             length = arr.length;
           } while (num < length);
@@ -296,9 +294,12 @@ let obj = {
       if (0 === arr3.length) {
         setSendIdleEvents(false);
       }
-      const item = closure_13.forEach((arg0) => timeout.setTimeout(() => {
-        throw arg0;
-      }, 0));
+      const item = closure_13.forEach((arg0) => {
+        let closure_0 = arg0;
+        return outer1_15.setTimeout(() => {
+          throw closure_0;
+        }, 0);
+      });
     }
   },
   callReactNativeMicrotasks() {
@@ -306,31 +307,34 @@ let obj = {
     closure_13.length = 0;
     if (_callReactNativeMicrotasksPass()) {
       do {
-        let tmp = closure_18;
-        tmp2 = closure_18();
+        let tmp = _callReactNativeMicrotasksPass;
+        tmp2 = _callReactNativeMicrotasksPass();
       } while (tmp2);
     }
-    const item = closure_13.forEach((arg0) => timeout.setTimeout(() => {
-      throw arg0;
-    }, 0));
+    const item = closure_13.forEach((arg0) => {
+      let closure_0 = arg0;
+      return outer1_15.setTimeout(() => {
+        throw closure_0;
+      }, 0);
+    });
   },
   emitTimeDriftWarning(arg0) {
-    if (!closure_14) {
-      closure_14 = true;
+    if (!c14) {
+      c14 = true;
       const _console = console;
       console.warn(arg0);
     }
   }
 };
 let tmp2 = obj;
-if (!require("withClamp")) {
-  const _console = console;
+if (!require("Timing")) {
+  let _console = console;
   console.warn("Timing native module is not available, can't set timers.");
   obj = {};
   ({ callReactNativeMicrotasks: obj2.callReactNativeMicrotasks, queueReactNativeMicrotask: obj2.queueReactNativeMicrotask } = obj);
   tmp2 = obj;
 }
-const result = require("forwardRef").default.setReactNativeMicrotasksCallback(obj.callReactNativeMicrotasks);
+const result = require("MessageQueue").default.setReactNativeMicrotasksCallback(obj.callReactNativeMicrotasks);
 global._flushReactNativeMicrotasks = () => obj.callReactNativeMicrotasks();
 
 export default tmp2;

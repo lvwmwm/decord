@@ -1,15 +1,21 @@
-// Module ID: 14027
-// Function ID: 106669
+// Module ID: 14141
+// Function ID: 108825
 // Name: getActiveApplicationStream
-// Dependencies: []
+// Dependencies: [4149, 1194, 4177, 7662, 566, 4227, 44, 8843, 10712, 10095, 1212, 2]
 
-// Module 14027 (getActiveApplicationStream)
+// Module 14141 (getActiveApplicationStream)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
 function getActiveApplicationStream() {
   let obj;
   let obj2;
   let tmp = arg0;
   if (arg0 === undefined) {
-    const items = [closure_3, closure_4];
+    const items = [_isNativeReflectConstruct, closure_4];
     tmp = items;
   }
   [obj, obj2] = tmp;
@@ -23,52 +29,48 @@ function getActiveApplicationStream() {
   }
   return tmp5;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let obj = arg1(dependencyMap[9]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[10]).intl;
-    return intl.string(arg1(dependencyMap[10]).t.pEAl4b);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.pEAl4b);
   },
-  parent: arg1(dependencyMap[3]).MobileSetting.VOICE,
+  parent: require("MobileSetting").MobileSetting.VOICE,
   maximum: 200,
   useValue: function useStreamVolumeSettingValue() {
-    const items = [closure_3, closure_4, closure_5];
-    return arg1(dependencyMap[4]).useStateFromStores(items, () => {
-      const items = [closure_3, closure_4];
-      const tmp = callback2(items);
+    let items = [_isNativeReflectConstruct, closure_4, closure_5];
+    return require(566) /* initialize */.useStateFromStores(items, () => {
+      const items = [outer1_3, outer1_4];
+      const tmp = outer1_6(items);
       let num = 0;
       if (null != tmp) {
-        num = localVolume.getLocalVolume(tmp.ownerId, callback(closure_2[5]).MediaEngineContextTypes.STREAM);
+        num = outer1_5.getLocalVolume(tmp.ownerId, outer1_0(outer1_2[5]).MediaEngineContextTypes.STREAM);
       }
       return num;
     });
   },
   onValueChange: function onStreamValueSettingValueChange(volume) {
     const tmp = getActiveApplicationStream();
-    importDefault(dependencyMap[6])(null != tmp, "Can not set stream volume without active stream");
-    importDefault(dependencyMap[7]).setLocalVolume(tmp.ownerId, volume, arg1(dependencyMap[5]).MediaEngineContextTypes.STREAM);
+    importDefault(44)(null != tmp, "Can not set stream volume without active stream");
+    importDefault(8843).setLocalVolume(tmp.ownerId, volume, require(4227) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM);
   },
   usePredicate: function useHasStreamVolumeSetting() {
-    const obj = importDefault(dependencyMap[8]);
-    const items = [closure_3, closure_4];
-    const obj2 = arg1(dependencyMap[4]);
-    return arg1(dependencyMap[4]).useStateFromStores(items, () => {
-      const items = [closure_3, closure_4];
-      return null != callback(items);
+    const obj = importDefault(10712);
+    let items = [_isNativeReflectConstruct, closure_4];
+    const obj2 = require(566) /* initialize */;
+    return require(566) /* initialize */.useStateFromStores(items, () => {
+      const items = [outer1_3, outer1_4];
+      return null != outer1_6(items);
     }) && obj.getConfig({ location: "StreamOutputVolumeSetting" }).audioOutputPresent;
   },
   useSearchTerms() {
-    const intl = arg1(dependencyMap[10]).intl;
-    const items = [intl.string(arg1(dependencyMap[10]).t.3182VD), ];
-    const intl2 = arg1(dependencyMap[10]).intl;
-    items[1] = intl2.string(arg1(dependencyMap[10]).t.DGq/PR);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1212) /* getSystemLocale */.t["3182VD"]), ];
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    items[1] = intl2.string(require(1212) /* getSystemLocale */.t["DGq/PR"]);
     return items;
   }
 };
-const volumeSlider = obj.createVolumeSlider(obj);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/defs/native/StreamOutputVolumeSetting.tsx");
+createToggle = createToggle.createVolumeSlider(createToggle);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/defs/native/StreamOutputVolumeSetting.tsx");
 
-export default volumeSlider;
+export default createToggle;

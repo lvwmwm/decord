@@ -1,32 +1,34 @@
-// Module ID: 15454
-// Function ID: 117892
+// Module ID: 15571
+// Function ID: 120066
 // Name: getPendingSource
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 15572, 15573, 15574, 3976, 2]
 // Exports: Pending
 
-// Module 15454 (getPendingSource)
+// Module 15571 (getPendingSource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getPendingSource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function usePendingSource() {
-  return getPendingSource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getPendingSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/Pending.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Pending.tsx");
 
 export { getPendingSource };
 export { usePendingSource };
@@ -34,5 +36,5 @@ export const Pending = function Pending(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = usePendingSource();
-  return <Image {...obj} />;
+  return <Image />;
 };

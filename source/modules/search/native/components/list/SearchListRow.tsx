@@ -1,26 +1,30 @@
-// Module ID: 15230
-// Function ID: 114989
+// Module ID: 15346
+// Function ID: 117159
 // Name: SearchListRow
-// Dependencies: []
+// Dependencies: [31, 27, 9103, 33, 4130, 689, 4660, 4126, 2]
 
-// Module 15230 (SearchListRow)
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = arg1(dependencyMap[2]).SEARCH_ROW_TAP_STATE_PADDING;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles((marginLeft) => {
-  let obj = { pressable: obj, body: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, labels: {} };
+// Module 15346 (SearchListRow)
+import { View } from "get ActivityIndicator";
+import { SEARCH_ROW_TAP_STATE_PADDING as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles((marginLeft) => {
+  obj = { pressable: obj, body: { flexDirection: "row", alignItems: "center" }, labels: { justifyContent: "center", flex: 1 } };
   obj = { paddingHorizontal: 16, paddingVertical: closure_4 };
-  obj = { backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
+  obj = { backgroundColor: importDefault(689).colors.INTERACTIVE_BACKGROUND_ACTIVE };
   obj.underlayColor = obj;
   obj.text = { flexShrink: 1 };
   obj.iconContainer = { marginRight: 12 };
   obj.extrasContainer = { marginLeft };
   return obj;
 });
-const obj2 = arg1(dependencyMap[4]);
-const memoResult = importAllResult.memo((accessibilityRole) => {
+const memoResult = require("result").memo((accessibilityRole) => {
   let accessibilityActions;
   let accessibilityHint;
   let accessibilityLabel;
@@ -60,14 +64,14 @@ const memoResult = importAllResult.memo((accessibilityRole) => {
   obj.underlayColor = tmpResult.underlayColor.backgroundColor;
   const items1 = [header, , ];
   obj = { style: items2 };
-  const items2 = [tmpResult.body, bodyStyle];
+  items2 = [tmpResult.body, bodyStyle];
   const items3 = [tmpResult.iconContainer, iconContainerStyle];
   const items4 = [callback(View, { style: items3, children: icon }), , ];
   obj = { style: tmpResult.labels };
   let tmp5 = label;
   if ("string" === typeof label) {
-    const obj1 = { style: tmpResult.text, children: label };
-    tmp5 = callback(arg1(dependencyMap[7]).Text, obj1);
+    const obj1 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmpResult.text, children: label };
+    tmp5 = callback(require(4126) /* Text */.Text, obj1);
   }
   const items5 = [tmp5, subLabel];
   obj.children = items5;
@@ -85,8 +89,8 @@ const memoResult = importAllResult.memo((accessibilityRole) => {
   }
   items1[2] = tmp9;
   obj.children = items1;
-  return closure_6(arg1(dependencyMap[6]).PressableHighlight, obj);
+  return closure_6(require(4660) /* PressableBase */.PressableHighlight, obj);
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/search/native/components/list/SearchListRow.tsx");
+const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/SearchListRow.tsx");
 
 export const SearchListRow = memoResult;

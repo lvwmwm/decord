@@ -1,15 +1,15 @@
-// Module ID: 11139
-// Function ID: 86653
+// Module ID: 11149
+// Function ID: 86703
 // Name: useNativeForumPostContent
-// Dependencies: []
+// Dependencies: [653, 4130, 1212, 5651, 4466, 2]
 // Exports: default
 
-// Module 11139 (useNativeForumPostContent)
-const MessageFlags = require(dependencyMap[0]).MessageFlags;
-const _module = require(dependencyMap[1]);
-let closure_4 = _module.createStyles({ italics: { fontStyle: "italic" } });
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/forums/native/posts/hooks/useNativeForumPostContent.tsx");
+// Module 11149 (useNativeForumPostContent)
+import { MessageFlags } from "ME";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ italics: { fontStyle: "italic" } });
+const result = require("getSystemLocale").fileFinishedImporting("modules/forums/native/posts/hooks/useNativeForumPostContent.tsx");
 
 export default function useNativeForumPostContent(arg0) {
   let isMessageDeleted;
@@ -22,14 +22,14 @@ export default function useNativeForumPostContent(arg0) {
   const tmp = callback();
   if (isMessageDeleted) {
     let obj = {};
-    const intl9 = require(dependencyMap[2]).intl;
-    obj.content = intl9.string(require(dependencyMap[2]).t.U8Rr2l);
+    const intl9 = require(1212) /* getSystemLocale */.intl;
+    obj.content = intl9.string(require(1212) /* getSystemLocale */.t.U8Rr2l);
     obj.style = tmp.italics;
     obj.variant = "text-sm/normal";
     return obj;
   } else {
     if (null != message) {
-      if (importDefault(dependencyMap[3])(message)) {
+      if (importDefault(5651)(message)) {
         obj = { content: messageContent, style: tmp.italics, variant: "text-sm/normal" };
         return obj;
       }
@@ -65,7 +65,7 @@ export default function useNativeForumPostContent(arg0) {
               tmp9 = isArray;
             }
             if (!messageLoaded) {
-              obj = { fill: null, d: null, opacity: null };
+              obj = { content: null, style: null, variant: "text-sm/medium" };
               let tmp31 = messageContent;
               if (tmp9) {
                 tmp31 = null;
@@ -73,35 +73,35 @@ export default function useNativeForumPostContent(arg0) {
               obj.content = tmp31;
               return obj;
             } else if (null == message) {
-              const intl6 = require(dependencyMap[2]).intl;
-              let stringResult = intl6.string(require(dependencyMap[2]).t.mE3KJN);
+              const intl6 = require(1212) /* getSystemLocale */.intl;
+              let stringResult = intl6.string(require(1212) /* getSystemLocale */.t.mE3KJN);
             } else {
               if (obj5.getMessageStickers(message).length > 0) {
-                const intl5 = require(dependencyMap[2]).intl;
-                stringResult = intl5.string(require(dependencyMap[2]).t.7K5Lma);
+                const intl5 = require(1212) /* getSystemLocale */.intl;
+                stringResult = intl5.string(require(1212) /* getSystemLocale */.t["7K5Lma"]);
               } else {
                 if (null != message.interaction) {
                   if ("" === message.content) {
-                    const intl4 = require(dependencyMap[2]).intl;
-                    stringResult = intl4.string(require(dependencyMap[2]).t.2v7kfl);
+                    const intl4 = require(1212) /* getSystemLocale */.intl;
+                    stringResult = intl4.string(require(1212) /* getSystemLocale */.t["2v7kfl"]);
                   }
                 }
                 if (message.hasFlag(MessageFlags.IS_VOICE_MESSAGE)) {
-                  const intl3 = require(dependencyMap[2]).intl;
-                  stringResult = intl3.string(require(dependencyMap[2]).t.6bhHrc);
+                  const intl3 = require(1212) /* getSystemLocale */.intl;
+                  stringResult = intl3.string(require(1212) /* getSystemLocale */.t["6bhHrc"]);
                 } else if (message.hasFlag(MessageFlags.IS_COMPONENTS_V2)) {
-                  const intl2 = require(dependencyMap[2]).intl;
-                  stringResult = intl2.string(require(dependencyMap[2]).t.Xxm5i3);
+                  const intl2 = require(1212) /* getSystemLocale */.intl;
+                  stringResult = intl2.string(require(1212) /* getSystemLocale */.t.Xxm5i3);
                 } else {
                   stringResult = null;
                   if (tmp16) {
-                    const intl = require(dependencyMap[2]).intl;
-                    stringResult = intl.string(require(dependencyMap[2]).t.JAKsM8);
+                    const intl = require(1212) /* getSystemLocale */.intl;
+                    stringResult = intl.string(require(1212) /* getSystemLocale */.t.JAKsM8);
                   }
-                  const tmp16 = message.embeds.length > 0 || message.attachments.length > 0;
+                  tmp16 = message.embeds.length > 0 || message.attachments.length > 0;
                 }
               }
-              const obj5 = require(dependencyMap[4]);
+              obj5 = require(4466) /* getStickerPackPreviewSticker */;
             }
           }
         }
@@ -110,16 +110,16 @@ export default function useNativeForumPostContent(arg0) {
     const obj1 = {};
     if (!(null != message && message.blocked)) {
       if (!tmp7) {
-        const intl7 = require(dependencyMap[2]).intl;
-        let stringResult1 = intl7.string(require(dependencyMap[2]).t.yWK7ZM);
+        const intl7 = require(1212) /* getSystemLocale */.intl;
+        let stringResult1 = intl7.string(require(1212) /* getSystemLocale */.t.yWK7ZM);
       }
       obj1.content = stringResult1;
       obj1.style = tmp.italics;
       obj1.variant = "text-sm/normal";
       return obj1;
     }
-    const intl8 = require(dependencyMap[2]).intl;
-    stringResult1 = intl8.string(require(dependencyMap[2]).t.Lkp2fB);
-    const tmp6 = null != message && message.ignored;
+    const intl8 = require(1212) /* getSystemLocale */.intl;
+    stringResult1 = intl8.string(require(1212) /* getSystemLocale */.t.Lkp2fB);
+    tmp6 = null != message && message.ignored;
   }
 };

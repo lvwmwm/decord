@@ -1,23 +1,27 @@
-// Module ID: 11914
-// Function ID: 92230
+// Module ID: 11926
+// Function ID: 92283
 // Name: TimestampBadge
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 11927, 6982, 9075, 9070, 9076, 8940, 11929, 11930, 689, 11931, 7815, 4646, 4126, 10893, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 11914 (TimestampBadge)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const ActivityTypes = arg1(dependencyMap[2]).ActivityTypes;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: { 9223372036854775807: "suppress_editor_mention", -9223372036854775808: "scalar", 0: 8, 9223372036854775807: 33 }, bold: { fontWeight: "bold" } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/user_profile/native/UserProfileActivityBadges.tsx");
+// Module 11926 (TimestampBadge)
+import "result";
+import { View } from "get ActivityIndicator";
+import { ActivityTypes } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, bold: { fontWeight: "bold" } });
+const result = require("ME").fileFinishedImporting("modules/user_profile/native/UserProfileActivityBadges.tsx");
 
 export const TimestampBadge = function TimestampBadge(activity) {
   activity = activity.activity;
   const tmp = callback3();
-  let obj = arg1(dependencyMap[11]);
+  let obj = require(11929) /* dropMilliseconds */;
   const timestamps = activity.timestamps;
   let start;
   if (null != timestamps) {
@@ -27,7 +31,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
     start = activity.created_at;
   }
   if (null != start) {
-    if (!importDefault(dependencyMap[12])(activity)) {
+    if (!importDefault(11930)(activity)) {
       const timestamps2 = activity.timestamps;
       let end;
       if (null != timestamps2) {
@@ -49,24 +53,24 @@ export const TimestampBadge = function TimestampBadge(activity) {
         flag = false;
       }
       if (flag) {
-        let GameControllerIcon = arg1(dependencyMap[5]).HourglassIcon;
-      } else if (importDefault(dependencyMap[6])(activity)) {
-        GameControllerIcon = arg1(dependencyMap[7]).AppsIcon;
+        let GameControllerIcon = require(11927) /* HourglassIcon */.HourglassIcon;
+      } else if (importDefault(6982)(activity)) {
+        GameControllerIcon = require(9075) /* AppsIcon */.AppsIcon;
       } else if (activity.type === ActivityTypes.WATCHING) {
-        GameControllerIcon = arg1(dependencyMap[8]).TvIcon;
+        GameControllerIcon = require(9070) /* TvIcon */.TvIcon;
       } else if (activity.type === ActivityTypes.LISTENING) {
-        GameControllerIcon = arg1(dependencyMap[9]).MusicIcon;
+        GameControllerIcon = require(9076) /* MusicIcon */.MusicIcon;
       } else {
-        GameControllerIcon = arg1(dependencyMap[10]).GameControllerIcon;
+        GameControllerIcon = require(8940) /* GameControllerIcon */.GameControllerIcon;
       }
       obj = { style: tmp.container };
-      obj = { size: "xxs", color: importDefault(dependencyMap[13]).colors.TEXT_FEEDBACK_POSITIVE };
+      obj = { size: "xxs", color: importDefault(689).colors.TEXT_FEEDBACK_POSITIVE };
       const items = [callback(GameControllerIcon, obj), ];
       const obj1 = {};
       const obj2 = { start, end, isCountDown: null != isCountDown && isCountDown };
       obj1.entry = obj2;
       obj1.style = tmp.bold;
-      items[1] = callback(arg1(dependencyMap[14]).ActiveTimestamp, obj1);
+      items[1] = callback(require(11931) /* ActiveTimestamp */.ActiveTimestamp, obj1);
       obj.children = items;
       return callback2(View, obj);
     }
@@ -75,16 +79,16 @@ export const TimestampBadge = function TimestampBadge(activity) {
 };
 export const PartyBadge = function PartyBadge(activity) {
   activity = activity.activity;
-  if (!importDefault(dependencyMap[6])(activity)) {
+  if (!importDefault(6982)(activity)) {
     if (null != activity.party) {
-      const richGameStateBadgeText = arg1(dependencyMap[15]).getRichGameStateBadgeText(activity.state, activity.party);
+      const richGameStateBadgeText = require(7815) /* calculateTimestampDurations */.getRichGameStateBadgeText(activity.state, activity.party);
       let tmp9 = null;
       if (null != richGameStateBadgeText) {
         let obj = { style: tmp.container };
-        obj = { size: "xxs", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
-        const items = [callback(arg1(dependencyMap[16]).GroupIcon, obj), ];
-        obj = { cachedAt: "y", edpbxy: "isArray", children: richGameStateBadgeText };
-        items[1] = callback(arg1(dependencyMap[17]).Text, obj);
+        obj = { size: "xxs", color: importDefault(689).colors.TEXT_MUTED };
+        const items = [callback(require(4646) /* GroupIcon */.GroupIcon, obj), ];
+        obj = { variant: "text-sm/medium", color: "text-muted", children: richGameStateBadgeText };
+        items[1] = callback(require(4126) /* Text */.Text, obj);
         obj.children = items;
         tmp9 = callback2(View, obj);
       }
@@ -94,7 +98,7 @@ export const PartyBadge = function PartyBadge(activity) {
   return null;
 };
 export const EpisodeBadge = function EpisodeBadge(activity) {
-  let obj = arg1(dependencyMap[15]);
+  let obj = require(7815) /* calculateTimestampDurations */;
   const assets = activity.activity.assets;
   let large_text;
   if (null != assets) {
@@ -104,10 +108,10 @@ export const EpisodeBadge = function EpisodeBadge(activity) {
   let tmp4 = null;
   if (null != episodeBadgeText) {
     obj = { style: tmp.container };
-    obj = { size: "xxs", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
-    const items = [callback(arg1(dependencyMap[18]).TopicsIcon, obj), ];
-    const obj1 = { cachedAt: "y", edpbxy: "isArray", children: episodeBadgeText };
-    items[1] = callback(arg1(dependencyMap[17]).Text, obj1);
+    obj = { size: "xxs", color: importDefault(689).colors.TEXT_MUTED };
+    const items = [callback(require(10893) /* TopicsIcon */.TopicsIcon, obj), ];
+    const obj1 = { variant: "text-sm/medium", color: "text-muted", children: episodeBadgeText };
+    items[1] = callback(require(4126) /* Text */.Text, obj1);
     obj.children = items;
     tmp4 = callback2(View, obj);
   }

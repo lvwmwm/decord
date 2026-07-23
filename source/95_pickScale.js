@@ -1,14 +1,16 @@
 // Module ID: 95
 // Function ID: 1546
 // Name: pickScale
-// Dependencies: []
+// Dependencies: [96]
 
 // Module 95 (pickScale)
+const module = arg2;
+const dependencyMap = arg6;
 arg5.pickScale = function pickScale(scales, _default) {
   let value = _default;
   if (null == _default) {
-    value = arg2(arg6[0]).get();
-    const obj = arg2(arg6[0]);
+    value = module(96).get();
+    const obj = module(96);
   }
   let num2 = 0;
   if (0 < scales.length) {
@@ -20,7 +22,7 @@ arg5.pickScale = function pickScale(scales, _default) {
   return scales[scales.length - 1] || 1;
 };
 arg5.setUrlCacheBreaker = function setUrlCacheBreaker(arg0) {
-
+  let closure_2 = arg0;
 };
 arg5.getUrlCacheBreaker = function getUrlCacheBreaker() {
   let str = "";

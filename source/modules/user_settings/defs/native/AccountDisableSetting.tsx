@@ -1,21 +1,31 @@
-// Module ID: 13601
-// Function ID: 103064
+// Module ID: 13715
+// Function ID: 105220
 // Name: pressable
-// Dependencies: []
+// Dependencies: [7662, 13714, 10095, 1212, 2]
 
-// Module 13601 (pressable)
-const _module = require(dependencyMap[2]);
-const pressable = _module.createPressable({
+// Module 13715 (pressable)
+import createToggle from "createToggle";
+
+const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.jf5GGb);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.jf5GGb);
   },
-  parent: require(dependencyMap[0]).MobileSetting.ACCOUNT,
+  parent: require("MobileSetting").MobileSetting.ACCOUNT,
   onPress: function onAccountDisablePress() {
-    importDefault(dependencyMap[1])(false);
+    importDefault(13714)(false);
   }
 });
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AccountDisableSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.jf5GGb);
+  },
+  parent: require("MobileSetting").MobileSetting.ACCOUNT,
+  onPress: function onAccountDisablePress() {
+    importDefault(13714)(false);
+  }
+};
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AccountDisableSetting.tsx");
 
 export default pressable;

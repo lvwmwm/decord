@@ -1,9 +1,18 @@
-// Module ID: 16434
-// Function ID: 126911
+// Module ID: 16551
+// Function ID: 129085
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1188, 1844, 1841, 620, 1428, 5078, 2]
 
-// Module 16434 (_isNativeReflectConstruct)
+// Module 16551 (_isNativeReflectConstruct)
+import isBlockedDomain from "isBlockedDomain";
+import _callSuper from "_callSuper";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import tmp2 from "AutomaticLifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -94,11 +103,11 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function experimentStoreUpdateHandler() {
   let done;
-  let obj = arg1(dependencyMap[6]);
+  let obj = require(1844) /* isBlockedDomain */;
   if (obj.isLibdiscoreInitialized()) {
     if (!obj2.isExperimentSyncDisabled()) {
       obj = {};
-      const tmp6 = _createForOfIteratorHelperLoose(arg1(dependencyMap[7]).ALL_LIBDISCORE_EXPERIMENTS);
+      const tmp6 = _createForOfIteratorHelperLoose(require(1841) /* _callSuper */.ALL_LIBDISCORE_EXPERIMENTS);
       let iter = tmp6();
       if (!iter.done) {
         do {
@@ -109,26 +118,25 @@ function experimentStoreUpdateHandler() {
           done = iter2.done;
         } while (!done);
       }
-      let tmp9 = null != closure_9;
+      let tmp9 = null != obj;
       if (tmp9) {
-        tmp9 = importDefault(dependencyMap[8])(closure_9, obj);
+        tmp9 = importDefault(620)(obj, obj);
       }
       if (!tmp9) {
-        const experimentCacher = arg1(dependencyMap[6]).getExperimentCacher();
+        const experimentCacher = require(1844) /* isBlockedDomain */.getExperimentCacher();
         const _JSON = JSON;
         experimentCacher.flushToCache(JSON.stringify(obj));
-        closure_9 = obj;
-        const obj4 = arg1(dependencyMap[6]);
+        const obj4 = require(1844) /* isBlockedDomain */;
       }
     }
-    const obj2 = arg1(dependencyMap[7]);
+    obj2 = require(1841) /* _callSuper */;
   }
 }
 function initializeAllExperiments() {
-  const prop = arg1(dependencyMap[7]).ALL_LIBDISCORE_EXPERIMENTS;
+  const prop = require(1841) /* _callSuper */.ALL_LIBDISCORE_EXPERIMENTS;
   const item = prop.forEach((setExperiment) => {
-    setExperiment.setExperiment(function createApexExperimentWrapper(id) {
-      let obj = callback(closure_2[9]);
+    setExperiment.setExperiment((function createApexExperimentWrapper(id) {
+      let obj = outer2_0(outer2_2[9]);
       obj = { kind: "user", name: id.id, defaultConfig: { treatmentId: -1 } };
       const treatments = id.getTreatments();
       obj.variations = Object.fromEntries(treatments.map((treatmentId) => {
@@ -137,59 +145,11 @@ function initializeAllExperiments() {
         return items;
       }));
       return obj.createApexExperiment(obj);
-    }(setExperiment));
+    })(setExperiment));
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = null;
-let tmp2 = (arg0) => {
-  class LibdiscoreExperimentManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, LibdiscoreExperimentManager);
-      items1 = [...items];
-      obj = closure_6(LibdiscoreExperimentManager);
-      tmp2 = closure_5;
-      if (closure_10()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.actions = {};
-      map = new Map();
-      tmp2Result.stores = map.set(closure_8, closure_13);
-      return tmp2Result;
-    }
-  }
-  const arg1 = LibdiscoreExperimentManager;
-  callback2(LibdiscoreExperimentManager, arg0);
-  let obj = {
-    key: "_initialize",
-    value() {
-      callback4();
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "_terminate",
-    value() {
-
-    }
-  };
-  items[1] = obj;
-  return callback(LibdiscoreExperimentManager, items);
-}(importDefault(dependencyMap[10]));
+let c9 = null;
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/libdiscore/LibdiscoreExperimentManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/libdiscore/LibdiscoreExperimentManager.tsx");
 
 export default tmp2;

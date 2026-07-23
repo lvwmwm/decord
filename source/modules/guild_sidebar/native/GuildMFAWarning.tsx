@@ -1,54 +1,57 @@
-// Module ID: 14912
-// Function ID: 112327
+// Module ID: 15028
+// Function ID: 114495
 // Name: handlePress
-// Dependencies: []
+// Dependencies: [5, 31, 27, 653, 33, 4130, 689, 9889, 1920, 1934, 3827, 4660, 15029, 4126, 1212, 1273, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 14912 (handlePress)
+// Module 15028 (handlePress)
+import closure_3 from "_createForOfIteratorHelperLoose";
+import "result";
+import { Image } from "get ActivityIndicator";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function handlePress() {
   return _handlePress(...arguments);
 }
 function _handlePress() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handlePress = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const Image = arg1(dependencyMap[2]).Image;
-const tmp3 = arg1(dependencyMap[3]);
-const HelpdeskArticles = tmp3.HelpdeskArticles;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { marginEnd: "isArray", top: "accessible", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-obj.MFAWarning = obj;
-obj.MFAWarningIcon = {};
-const tmp4 = arg1(dependencyMap[4]);
-obj.MFAWarningLink = { color: importDefault(dependencyMap[6]).unsafe_rawColors.BLUE_345, fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[6]).unsafe_rawColors.BLUE_345, fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_sidebar/native/GuildMFAWarning.tsx");
+const HelpdeskArticles = ME.HelpdeskArticles;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, padding: 10, alignItems: "center" };
+_createForOfIteratorHelperLoose.MFAWarning = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.MFAWarningIcon = { marginVertical: 10, width: 98, height: 53 };
+_createForOfIteratorHelperLoose.MFAWarningLink = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345, fontFamily: ME.Fonts.PRIMARY_SEMIBOLD };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345, fontFamily: ME.Fonts.PRIMARY_SEMIBOLD };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_sidebar/native/GuildMFAWarning.tsx");
 
 export default function GuildMFAWarning() {
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress };
-  obj = { style: tmp.MFAWarningIcon, source: importDefault(dependencyMap[12]) };
+  obj = { style: tmp.MFAWarningIcon, source: importDefault(15029) };
   const items = [callback2(Image, obj), ];
-  obj = { cachedAt: true, edpbxy: true };
-  const intl = arg1(dependencyMap[14]).intl;
-  const items1 = [intl.string(arg1(dependencyMap[14]).t.ZIf8Ag), ];
+  obj = { variant: "text-xs/medium", color: "text-default" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const items1 = [intl.string(require(1212) /* getSystemLocale */.t.ZIf8Ag), ];
   const obj1 = { style: tmp.MFAWarningLink };
-  const intl2 = arg1(dependencyMap[14]).intl;
-  const items2 = [false, intl2.string(arg1(dependencyMap[14]).t.hvVgAZ)];
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  const items2 = [" ", intl2.string(require(1212) /* getSystemLocale */.t.hvVgAZ)];
   obj1.children = items2;
-  items1[1] = callback3(arg1(dependencyMap[15]).LegacyText, obj1);
+  items1[1] = callback3(require(1273) /* Button */.LegacyText, obj1);
   obj.children = items1;
-  items[1] = callback3(arg1(dependencyMap[13]).Text, obj);
+  items[1] = callback3(require(4126) /* Text */.Text, obj);
   obj.children = items;
-  return callback3(arg1(dependencyMap[11]).PressableOpacity, obj);
+  return callback3(require(4660) /* PressableBase */.PressableOpacity, obj);
 };
 export const getScaledGuildMFAWarningHeight = function getScaledGuildMFAWarningHeight(fontScale) {
-  return 83 + 5 * arg1(dependencyMap[7]).scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
+  return 83 + 5 * require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
 };

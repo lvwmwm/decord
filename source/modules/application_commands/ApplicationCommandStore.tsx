@@ -1,9 +1,19 @@
-// Module ID: 7017
-// Function ID: 56316
+// Module ID: 7022
+// Function ID: 56350
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 5659, 1906, 6753, 566, 686, 2]
 
-// Module 7017 (_isNativeReflectConstruct)
+// Module 7022 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,11 +28,11 @@ function handleInit() {
   return true;
 }
 function getOrCreateChannelState(arg0) {
-  if (!(arg0 in closure_10)) {
-    const obj = { optionStates: {}, initialValues: {} };
-    closure_10[arg0] = obj;
+  if (!(arg0 in table)) {
+    const obj = { activeCommand: null, activeCommandSection: null, activeOptionName: null, preferredCommandId: null, optionStates: {}, initialValues: {}, commandOrigin: null };
+    table[arg0] = obj;
   }
-  return closure_10[arg0];
+  return table[arg0];
 }
 function handleSetActiveCommand(channelId) {
   let _location;
@@ -37,7 +47,7 @@ function handleSetActiveCommand(channelId) {
   let source;
   let triggerSection;
   ({ command, initialValues, source, commandOrigin } = channelId);
-  let arg1;
+  let obj;
   ({ section, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition } = channelId);
   const tmp = getOrCreateChannelState(channelId.channelId);
   let id;
@@ -66,8 +76,7 @@ function handleSetActiveCommand(channelId) {
     }
     tmp.commandOrigin = tmp4;
     tmp.source = source;
-    let obj = {};
-    arg1 = obj;
+    obj = {};
     let options;
     if (null != command) {
       options = command.options;
@@ -75,14 +84,14 @@ function handleSetActiveCommand(channelId) {
     if (null != options) {
       const options1 = command.options;
       const item = options1.forEach((name) => {
-        obj[name.name] = {};
+        obj[name.name] = { isActive: false, hasValue: false, lastValidationResult: null, optionValue: null };
       });
     }
     tmp.optionStates = obj;
     if (null != command) {
       obj = { command, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source };
-      arg1(dependencyMap[8]).trackCommandSelected(obj);
-      const obj2 = arg1(dependencyMap[8]);
+      obj(6753).trackCommandSelected(obj);
+      const obj2 = obj(6753);
     }
     return true;
   }
@@ -126,8 +135,8 @@ function handleUpdateOptionStates(channelId) {
   let num = 0;
   if (0 < entries.length) {
     do {
-      let tmp7 = closure_7;
-      let tmp8 = closure_7(entries[num], 2);
+      let tmp7 = callback3;
+      let tmp8 = callback3(entries[num], 2);
       [tmp9, arr2] = tmp8;
       let tmp10 = tmp3;
       let tmp11 = tmp4;
@@ -196,7 +205,7 @@ function handleUpdateOptionStates(channelId) {
             }
           }
         } else {
-          let obj1 = { location: undefined, length: undefined };
+          let obj1 = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: undefined, length: undefined };
           obj[tmp9] = obj1;
           tmp10 = tmp3;
           tmp11 = tmp4;
@@ -212,37 +221,29 @@ function handleUpdateOptionStates(channelId) {
         }
       }
       num = num + 1;
-      let tmp3 = tmp10;
-      let tmp4 = tmp11;
-      let tmp5 = tmp12;
-      let tmp6 = tmp13;
+      tmp3 = tmp10;
+      tmp4 = tmp11;
+      tmp5 = tmp12;
+      tmp6 = tmp13;
     } while (num < entries.length);
   }
   tmp.optionStates = obj;
   return true;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
 let closure_10 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class ApplicationCommandStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ApplicationCommandStore);
-      obj = closure_5(ApplicationCommandStore);
-      tmp2 = closure_4;
-      if (closure_11()) {
+      tmp = outer1_2(this, ApplicationCommandStore);
+      obj = outer1_5(ApplicationCommandStore);
+      tmp2 = outer1_4;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -251,30 +252,30 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ApplicationCommandStore;
   callback2(ApplicationCommandStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_9);
-      closure_8.addChangeListener(() => {
-        const channelId = channelId.getChannelId();
+      this.waitFor(outer1_8, outer1_9);
+      outer1_8.addChangeListener(() => {
+        const channelId = outer2_9.getChannelId();
         if (null == channelId) {
-          let obj = {};
+          let outer2_10 = {};
           return true;
         } else {
-          const currentSidebarChannelId = currentSidebarChannelId.getCurrentSidebarChannelId(channelId);
+          const currentSidebarChannelId = outer2_8.getCurrentSidebarChannelId(channelId);
           if (null != currentSidebarChannelId) {
-            if (currentSidebarChannelId in obj) {
+            if (currentSidebarChannelId in outer2_10) {
               return false;
             }
           }
-          if (channelId in obj) {
-            obj = {};
-            obj[channelId] = obj[channelId];
+          if (channelId in outer2_10) {
+            let obj = {};
+            obj[channelId] = outer2_10[channelId];
           } else {
             obj = {};
           }
+          outer2_10 = obj;
         }
       });
     }
@@ -283,27 +284,27 @@ let tmp2 = (Store) => {
   obj = {
     key: "getActiveCommand",
     value(arg0) {
-      return callback4(arg0).activeCommand;
+      return outer1_12(arg0).activeCommand;
     }
   };
   items[1] = obj;
   obj = {
     key: "getActiveCommandSection",
     value(arg0) {
-      return callback4(arg0).activeCommandSection;
+      return outer1_12(arg0).activeCommandSection;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getActiveOptionName",
     value(arg0) {
-      return callback4(arg0).activeOptionName;
+      return outer1_12(arg0).activeOptionName;
     }
   };
   items[4] = {
     key: "getActiveOption",
     value(arg0) {
-      const tmp = callback4(arg0);
+      const tmp = outer1_12(arg0);
       const ApplicationCommandStore = tmp;
       const activeCommand = tmp.activeCommand;
       let found;
@@ -323,43 +324,43 @@ let tmp2 = (Store) => {
   items[5] = {
     key: "getPreferredCommandId",
     value(arg0) {
-      return callback4(arg0).preferredCommandId;
+      return outer1_12(arg0).preferredCommandId;
     }
   };
   items[6] = {
     key: "getOptionStates",
     value(arg0) {
-      return callback4(arg0).optionStates;
+      return outer1_12(arg0).optionStates;
     }
   };
   items[7] = {
     key: "getOptionState",
     value(arg0, arg1) {
-      return callback4(arg0).optionStates[arg1];
+      return outer1_12(arg0).optionStates[arg1];
     }
   };
   items[8] = {
     key: "getCommandOrigin",
     value(arg0) {
-      return callback4(arg0).commandOrigin;
+      return outer1_12(arg0).commandOrigin;
     }
   };
   items[9] = {
     key: "getSource",
     value(arg0) {
-      return callback4(arg0).source;
+      return outer1_12(arg0).source;
     }
   };
   items[10] = {
     key: "getOption",
     value(arg0, arg1) {
-      const ApplicationCommandStore = arg1;
-      const activeCommand = callback4(arg0).activeCommand;
+      let closure_0 = arg1;
+      const activeCommand = outer1_12(arg0).activeCommand;
       let found;
       if (null != activeCommand) {
         const options = activeCommand.options;
         if (null != options) {
-          found = options.find((name) => name.name === arg1);
+          found = options.find((name) => name.name === closure_0);
         }
       }
       return found;
@@ -368,14 +369,14 @@ let tmp2 = (Store) => {
   items[11] = {
     key: "getState",
     value(arg0) {
-      const merged = Object.assign(callback4(arg0));
+      const merged = Object.assign(outer1_12(arg0));
       return {};
     }
   };
   return callback(ApplicationCommandStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "ApplicationCommandStore";
-tmp2 = new tmp2(importDefault(dependencyMap[10]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: handleInit,
   CHANNEL_SELECT: handleInit,
   LOGOUT: handleInit,
@@ -398,6 +399,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     return flag;
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/application_commands/ApplicationCommandStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/application_commands/ApplicationCommandStore.tsx");
 
 export default tmp2;

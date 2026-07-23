@@ -1,17 +1,18 @@
-// Module ID: 10265
-// Function ID: 79300
+// Module ID: 10278
+// Function ID: 79373
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: useInAppNotificationContext
 
-// Module 10265 (context)
-const importAllResult = importAll(dependencyMap[0]);
-const context = importAllResult.createContext(undefined);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContext.tsx");
+// Module 10278 (context)
+import importAllResult from "result";
+
+let context = importAllResult.createContext(undefined);
+const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContext.tsx");
 
 export const InAppNotificationContext = context;
 export const useInAppNotificationContext = function useInAppNotificationContext() {
-  const context = importAllResult.useContext(context);
+  context = importAllResult.useContext(context);
   if (null == context) {
     const _Error = Error;
     const error = new Error("useInAppNotificationContext must be used within provider of InAppNotificationContext");

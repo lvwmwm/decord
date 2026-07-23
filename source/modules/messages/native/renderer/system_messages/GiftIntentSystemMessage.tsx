@@ -1,30 +1,31 @@
-// Module ID: 7746
-// Function ID: 61530
+// Module ID: 7752
+// Function ID: 61567
 // Name: createGiftIntentSystemMessage
-// Dependencies: []
+// Dependencies: [4130, 689, 7753, 7652, 7761, 7635, 7638, 2]
 // Exports: createGiftIntentSystemMessage
 
-// Module 7746 (createGiftIntentSystemMessage)
-const _module = require(dependencyMap[0]);
-let closure_3 = _module.createNativeStyleProperties({ iconTintColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BRAND, iconDividerColor: importDefault(dependencyMap[1]).colors.ICON_STRONG });
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("modules/messages/native/renderer/system_messages/GiftIntentSystemMessage.tsx");
+// Module 7752 (createGiftIntentSystemMessage)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3 = _createForOfIteratorHelperLoose.createNativeStyleProperties({ iconTintColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, iconDividerColor: require("_createForOfIteratorHelperLoose").colors.ICON_STRONG });
+let obj = { iconTintColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, iconDividerColor: require("_createForOfIteratorHelperLoose").colors.ICON_STRONG };
+const result = require("createGiftIntentEmbed").fileFinishedImporting("modules/messages/native/renderer/system_messages/GiftIntentSystemMessage.tsx");
 
 export const createGiftIntentSystemMessage = function createGiftIntentSystemMessage(message) {
   let theme;
   ({ message, theme } = message);
-  let obj = require(dependencyMap[2]);
+  let obj = require(7753) /* createGiftIntentEmbed */;
   const giftIntentEmbed = obj.createGiftIntentEmbed(message, theme);
   if (null == giftIntentEmbed) {
     return null;
   } else {
     const tmp3 = callback(theme);
     obj = {};
-    const merged = Object.assign(importDefault(dependencyMap[3])(message));
+    const merged = Object.assign(importDefault(7652)(message));
     obj["giftIntentInfo"] = giftIntentEmbed;
-    obj["ephemeralIndication"] = require(dependencyMap[4]).createEphemeralIndication(message);
-    const obj3 = require(dependencyMap[4]);
-    obj["iconUrl"] = require(dependencyMap[5]).getAssetUriForEmbed(importDefault(dependencyMap[6]));
+    obj["ephemeralIndication"] = require(7761) /* createEphemeralIndication */.createEphemeralIndication(message);
+    const obj3 = require(7761) /* createEphemeralIndication */;
+    obj["iconUrl"] = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7638));
     obj["iconTintColor"] = tmp3.iconTintColor;
     obj["iconDividerColor"] = tmp3.iconDividerColor;
     return obj;

@@ -1,45 +1,47 @@
-// Module ID: 15261
-// Function ID: 115183
+// Module ID: 15378
+// Function ID: 117357
 // Name: useMessageSearchErrorScreen
-// Dependencies: []
+// Dependencies: [31, 5660, 10077, 9103, 566, 10078, 1212, 3831, 8479, 2]
 // Exports: useMessageSearchErrorScreen, useMessageTabCountsErrorText
 
-// Module 15261 (useMessageSearchErrorScreen)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).SEARCH_MESSAGE_TAB_SENTINEL;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");
+// Module 15378 (useMessageSearchErrorScreen)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { SEARCH_MESSAGE_TAB_SENTINEL as closure_6 } from "SearchAutocompleteSelectAnalyticsActions";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");
 
 export const useMessageSearchErrorScreen = function useMessageSearchErrorScreen(arg0) {
   let hasListItems;
-  ({ searchContext: closure_0, tab: closure_1, hasListItems } = arg0);
-  let React;
-  let closure_4;
-  let obj = arg1(dependencyMap[4]);
-  const items = [closure_5, closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const searchResultsQuery = searchResultsQuery.getSearchResultsQuery(callback);
-    return ref.getError(callback(stateFromStores[5]).getSearchTabFetchId(callback, closure_1, searchResultsQuery));
-  });
-  const dependencyMap = stateFromStores;
+  let importDefault;
+  let require;
+  ({ searchContext: require, tab: importDefault, hasListItems } = arg0);
   let anyErrorMessage;
+  let _isNativeReflectConstruct;
+  let obj = require(stateFromStores[4]);
+  const items = [closure_5, _isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => {
+    const searchResultsQuery = outer1_5.getSearchResultsQuery(closure_0);
+    return ref.getError(outer1_0(stateFromStores[5]).getSearchTabFetchId(closure_0, closure_1, searchResultsQuery));
+  });
+  anyErrorMessage = undefined;
   if (null != stateFromStores) {
     anyErrorMessage = stateFromStores.getAnyErrorMessage();
   }
   if (null == anyErrorMessage) {
-    const intl = arg1(dependencyMap[6]).intl;
-    anyErrorMessage = intl.string(arg1(dependencyMap[6]).t.uvDZBZ);
+    const intl = require(stateFromStores[6]).intl;
+    anyErrorMessage = intl.string(require(stateFromStores[6]).t.uvDZBZ);
   }
-  React = anyErrorMessage;
-  closure_4 = React.useRef(null);
+  _isNativeReflectConstruct = anyErrorMessage.useRef(null);
   const items1 = [stateFromStores, anyErrorMessage];
   obj = { hasError: null != stateFromStores, errorText: anyErrorMessage };
   let tmp5 = null != stateFromStores;
-  const callback = React.useCallback(() => {
+  const callback = anyErrorMessage.useCallback(() => {
     if (stateFromStores !== ref.current) {
-      let obj = callback2(stateFromStores[7]);
-      obj = { key: "SEARCH_ERROR_TOAST", icon: callback2(stateFromStores[8]), content: anyErrorMessage };
+      let obj = outer1_1(stateFromStores[7]);
+      obj = { key: "SEARCH_ERROR_TOAST", icon: outer1_1(stateFromStores[8]), content: anyErrorMessage };
       obj.open(obj);
       ref.current = stateFromStores;
     }
@@ -53,22 +55,22 @@ export const useMessageSearchErrorScreen = function useMessageSearchErrorScreen(
   return obj;
 };
 export const useMessageTabCountsErrorText = function useMessageTabCountsErrorText(searchContext) {
-  const arg1 = searchContext.searchContext;
-  const items = [closure_5, closure_4];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
-    const searchResultsQuery = searchResultsQuery.getSearchResultsQuery(searchContext);
-    const searchTabFetchId = searchContext(closure_2[5]).getSearchTabFetchId(searchContext, closure_6, searchResultsQuery);
-    if (store.getIsInitialFetchComplete(searchTabFetchId)) {
-      if (null != store.getTotalCount(searchTabFetchId)) {
+  searchContext = searchContext.searchContext;
+  const items = [closure_5, _isNativeReflectConstruct];
+  return searchContext(566).useStateFromStores(items, () => {
+    const searchResultsQuery = outer1_5.getSearchResultsQuery(searchContext);
+    const searchTabFetchId = searchContext(outer1_2[5]).getSearchTabFetchId(searchContext, outer1_6, searchResultsQuery);
+    if (outer1_4.getIsInitialFetchComplete(searchTabFetchId)) {
+      if (null != outer1_4.getTotalCount(searchTabFetchId)) {
         return null;
       } else {
-        const error = store.getError(searchTabFetchId);
+        const error = outer1_4.getError(searchTabFetchId);
         let tmp5 = null;
         if (null != error) {
           let anyErrorMessage = error.getAnyErrorMessage();
           if (null == anyErrorMessage) {
-            const intl = searchContext(closure_2[6]).intl;
-            anyErrorMessage = intl.string(searchContext(closure_2[6]).t.uvDZBZ);
+            const intl = searchContext(outer1_2[6]).intl;
+            anyErrorMessage = intl.string(searchContext(outer1_2[6]).t.uvDZBZ);
           }
           tmp5 = anyErrorMessage;
         }
@@ -77,6 +79,6 @@ export const useMessageTabCountsErrorText = function useMessageTabCountsErrorTex
     } else {
       return null;
     }
-    const obj = searchContext(closure_2[5]);
+    const obj = searchContext(outer1_2[5]);
   });
 };

@@ -1,22 +1,23 @@
-// Module ID: 13950
-// Function ID: 105996
+// Module ID: 14064
+// Function ID: 108152
 // Name: QuestHomeRoundtripTracker
-// Dependencies: []
+// Dependencies: [6, 7, 653, 675, 6837, 6842, 9456, 2]
 
-// Module 13950 (QuestHomeRoundtripTracker)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-let tmp2 = () => {
+// Module 14064 (QuestHomeRoundtripTracker)
+import canUIRequestGatewaySocket from "canUIRequestGatewaySocket";
+import set from "set";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+let tmp2 = (() => {
   class QuestHomeRoundtripTracker {
     constructor() {
-      tmp = closure_3(this, QuestHomeRoundtripTracker);
+      tmp = outer1_3(this, QuestHomeRoundtripTracker);
       this.startTime = null;
       this.timeoutTimer = null;
       return;
     }
   }
-  const arg1 = QuestHomeRoundtripTracker;
   let obj = {
     key: "clearTimeoutTimer",
     value() {
@@ -28,22 +29,22 @@ let tmp2 = () => {
       }
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "sendMetric",
     value(timeout, duration) {
-      let obj = callback(closure_2[3]);
+      let obj = outer1_1(outer1_2[3]);
       obj = { timeout, duration };
-      obj.track(constants.QUEST_HOME_ROUNDTRIP, obj);
+      obj.track(outer1_5.QUEST_HOME_ROUNDTRIP, obj);
       if (Math.random() <= 0.1) {
-        obj = { name: QuestHomeRoundtripTracker(closure_2[5]).MetricEvents.QUEST_HOME_ROUNDTRIP };
+        obj = { name: QuestHomeRoundtripTracker(outer1_2[5]).MetricEvents.QUEST_HOME_ROUNDTRIP };
         const _HermesInternal = HermesInternal;
         const items = ["includes_bounties:" + arg2, ];
         const _HermesInternal2 = HermesInternal;
         items[1] = "timeout:" + timeout;
         obj.tags = items;
-        callback(closure_2[4]).distribution(obj, duration);
-        const obj3 = callback(closure_2[4]);
+        outer1_1(outer1_2[4]).distribution(obj, duration);
+        const obj3 = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -52,8 +53,8 @@ let tmp2 = () => {
     key: "startTracking",
     value() {
       let obj = arg0;
-      const self = this;
-      const QuestHomeRoundtripTracker = this;
+      let self = this;
+      self = this;
       if (arg0 === undefined) {
         obj = {};
       }
@@ -97,7 +98,7 @@ let tmp2 = () => {
           self.sendMetric(flag2, Math.min(num2, 30000), flag);
         }
         self.clearTracking();
-        const obj2 = callback(closure_2[6]);
+        obj2 = outer1_1(outer1_2[6]);
       }
     }
   };
@@ -109,8 +110,8 @@ let tmp2 = () => {
     }
   };
   return callback(QuestHomeRoundtripTracker, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/quests/QuestHomeRoundtripTracker.tsx");
+const result = require("ME").fileFinishedImporting("modules/quests/QuestHomeRoundtripTracker.tsx");
 
 export default tmp2;

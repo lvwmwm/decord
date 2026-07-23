@@ -1,42 +1,41 @@
-// Module ID: 8204
-// Function ID: 64880
+// Module ID: 8210
+// Function ID: 64917
 // Name: items
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 3775, 5151, 2]
 // Exports: default
 
-// Module 8204 (items)
-let closure_2 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const jsx = arg1(dependencyMap[3]).jsx;
-const items = [null, null, -40];
+// Module 8210 (items)
+import _slicedToArray from "_slicedToArray";
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let items = [100, 0, -40];
 const items1 = [items, , , , , , , , , ];
-const items2 = [false, false, -10];
+const items2 = [120, 40, -10];
 items1[1] = items2;
-items1[2] = [-3341634139565031300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 995066562814060700000000000000000000000000000000000000000000000000000000000000000000000, -22193452728765087000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
-items1[3] = [0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006635504345710056, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024591496498546507, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007607830167379219];
-items1[4] = [];
-items1[5] = [];
-const items3 = ["Array", "isArray", -20];
+items1[2] = [100, 80, 10];
+items1[3] = [180, 20, 20];
+items1[4] = [140, 95, 15];
+items1[5] = [250, 0, 0];
+const items3 = [250, 80, -20];
 items1[6] = items3;
-items1[7] = [1202868971596958600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 8599452512.000832, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000631157940228499];
-const items4 = [null, null, -20];
+items1[7] = [400, 90, 10];
+const items4 = [400, 20, -20];
 items1[8] = items4;
-items1[9] = [null, null, null];
-let closure_6 = arg1(dependencyMap[4]).createStyles({ emojisContainer: {} });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/premium/native/GiftModalEmojis.tsx");
+items1[9] = [410, 0, 40];
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ emojisContainer: { alignItems: "center", justifyContent: "center", height: 250, width: "100%", position: "absolute", zIndex: 1, paddingBottom: 210 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/GiftModalEmojis.tsx");
 
 export default function _default(emojiName) {
   emojiName = emojiName.emojiName;
-  const importDefault = emojiName;
   let flag = emojiName.randomizeSizing;
   if (flag === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
   let uRL;
-  let obj = importDefault(dependencyMap[5]);
+  let obj = emojiName(flag[5]);
   uRL = obj.getURL(emojiName);
   obj = {
     style: callback().emojisContainer,
@@ -49,7 +48,7 @@ export default function _default(emojiName) {
       let obj = { src: callback, name: emojiName };
       obj = { position: "absolute" };
       const tmp = callback(arg0, 3);
-      const tmp5 = closure_4;
+      const tmp5 = outer1_4;
       obj.top = "" + tmp2 + "%";
       obj.left = "" + tmp3 + "%";
       obj = { rotate: "" + tmp4 + "deg" };
@@ -67,5 +66,30 @@ export default function _default(emojiName) {
       return tmp5(emojiName(flag[6]), obj, "" + arg1 + "-" + emojiName);
     })
   };
-  return <View {...obj} />;
+  return <View style={callback().emojisContainer}>{items1.map((arg0, arg1) => {
+    let tmp2;
+    let tmp3;
+    let tmp4;
+    let num = 1;
+    [tmp2, tmp3, tmp4] = callback(arg0, 3);
+    let obj = { src: callback, name: emojiName };
+    obj = { position: "absolute" };
+    const tmp = callback(arg0, 3);
+    const tmp5 = outer1_4;
+    obj.top = "" + tmp2 + "%";
+    obj.left = "" + tmp3 + "%";
+    obj = { rotate: "" + tmp4 + "deg" };
+    const items = [obj, ];
+    const obj1 = {};
+    if (flag) {
+      const _Math = Math;
+      num = 1.5 * Math.random() + 0.5;
+    }
+    obj1.scale = num;
+    items[1] = obj1;
+    obj.transform = items;
+    obj.style = obj;
+    obj.forceTextEmoji = true;
+    return tmp5(emojiName(flag[6]), obj, "" + arg1 + "-" + emojiName);
+  })}</View>;
 };

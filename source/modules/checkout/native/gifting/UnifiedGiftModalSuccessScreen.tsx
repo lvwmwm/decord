@@ -1,36 +1,37 @@
-// Module ID: 11808
-// Function ID: 91631
+// Module ID: 11818
+// Function ID: 91680
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 11819, 8776, 4337, 11830, 1934, 5796, 4561, 4126, 1212, 4544, 2]
 // Exports: default
 
-// Module 11808 (UnifiedGiftModalSuccessScreen)
-let closure_3 = importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const UserSettingsSections = arg1(dependencyMap[2]).UserSettingsSections;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_24, paddingBottom: importDefault(dependencyMap[5]).space.PX_24, alignItems: "center" };
-obj.alertContainer = obj;
-obj.image = { 10360: null, 10496: null };
-const tmp2 = arg1(dependencyMap[3]);
-obj.title = { marginTop: -importDefault(dependencyMap[5]).space.PX_24, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
-const obj1 = { marginTop: -importDefault(dependencyMap[5]).space.PX_24, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
-obj.description = { marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
-let closure_8 = obj.createStyles(obj);
-const obj2 = { marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalSuccessScreen.tsx");
+// Module 11818 (UnifiedGiftModalSuccessScreen)
+import result from "result";
+import { Image } from "get ActivityIndicator";
+import { UserSettingsSections } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_24, alignItems: "center" };
+_createForOfIteratorHelperLoose.alertContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.image = { position: "relative", top: -50 };
+_createForOfIteratorHelperLoose.title = { marginTop: -require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { marginTop: -require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.description = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+const result = require("ME").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalSuccessScreen.tsx");
 
 export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
   giftBadgeProgress = giftBadgeProgress.giftBadgeProgress;
-  const arg1 = giftBadgeProgress;
   const onClose = giftBadgeProgress.onClose;
-  const importDefault = onClose;
-  const tmp = callback2();
-  const GiftingBadgeExperiment = arg1(dependencyMap[7]).GiftingBadgeExperiment;
-  const enabled = GiftingBadgeExperiment.useConfig({ location: "UnifiedGiftModalSuccessScreen" }).enabled;
-  const dependencyMap = enabled;
+  const tmp = _createForOfIteratorHelperLoose();
+  const GiftingBadgeExperiment = giftBadgeProgress(enabled[7]).GiftingBadgeExperiment;
+  enabled = GiftingBadgeExperiment.useConfig({ location: "UnifiedGiftModalSuccessScreen" }).enabled;
   const items = [enabled, giftBadgeProgress, onClose];
   const callback = React.useCallback(() => {
     onClose();
@@ -48,31 +49,31 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
   const callback1 = React.useCallback(() => {
     onClose();
     let obj = giftBadgeProgress(enabled[11]);
-    obj = { screen: constants.PREMIUM_GIFTING, params: {} };
+    obj = { screen: outer1_5.PREMIUM_GIFTING, params: {} };
     obj.openUserSettings(obj);
   }, items1);
   let obj = { onClose: callback, noDefaultButtons: true, style: tmp.alertContainer };
-  obj = { source: arg1(dependencyMap[6]).GIFT_STYLE_IMG[giftBadgeProgress.giftStyle], style: tmp.image };
+  obj = { source: giftBadgeProgress(enabled[6]).GIFT_STYLE_IMG[giftBadgeProgress.giftStyle], style: tmp.image };
   const items2 = [callback(Image, obj), , , ];
   obj = { variant: "heading-lg/bold", style: tmp.title };
-  const intl = arg1(dependencyMap[14]).intl;
-  obj.children = intl.string(arg1(dependencyMap[14]).t.MqZXbv);
-  items2[1] = callback(arg1(dependencyMap[13]).Text, obj);
+  const intl = giftBadgeProgress(enabled[14]).intl;
+  obj.children = intl.string(giftBadgeProgress(enabled[14]).t.MqZXbv);
+  items2[1] = callback(giftBadgeProgress(enabled[13]).Text, obj);
   const obj1 = { variant: "text-md/medium", style: tmp.description };
-  const intl2 = arg1(dependencyMap[14]).intl;
-  obj1.children = intl2.format(arg1(dependencyMap[14]).t.YS2J4S, { onClick: callback1 });
-  items2[2] = callback(arg1(dependencyMap[13]).Text, obj1);
+  const intl2 = giftBadgeProgress(enabled[14]).intl;
+  obj1.children = intl2.format(giftBadgeProgress(enabled[14]).t.YS2J4S, { onClick: callback1 });
+  items2[2] = callback(giftBadgeProgress(enabled[13]).Text, obj1);
   const obj2 = { onPress: callback };
   if (enabled) {
     if (null != giftBadgeProgress) {
-      let cpT0Cq = arg1(dependencyMap[14]).t.PDTjLN;
+      let cpT0Cq = giftBadgeProgress(enabled[14]).t.PDTjLN;
     }
     obj2.text = tmp7(cpT0Cq);
     obj2.textVariant = "text-md/semibold";
     obj2.grow = true;
-    items2[3] = callback(arg1(dependencyMap[15]).BaseTextButton, obj2);
+    items2[3] = callback(giftBadgeProgress(enabled[15]).BaseTextButton, obj2);
     obj.children = items2;
     return closure_7(tmp5, obj);
   }
-  cpT0Cq = arg1(dependencyMap[14]).t.cpT0Cq;
+  cpT0Cq = giftBadgeProgress(enabled[14]).t.cpT0Cq;
 };

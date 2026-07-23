@@ -1,12 +1,17 @@
-// Module ID: 10767
-// Function ID: 83684
+// Module ID: 10777
+// Function ID: 83733
 // Name: _isGuestOrLurkerInGuild
-// Dependencies: []
+// Dependencies: [1917, 1838, 653, 566, 2]
 // Exports: default, isGuestOrLurkerInGuild
 
-// Module 10767 (_isGuestOrLurkerInGuild)
-function _isGuestOrLurkerInGuild(guild_id, id, closure_3, closure_2) {
-  const guild = closure_3.getGuild(guild_id);
+// Module 10777 (_isGuestOrLurkerInGuild)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { GuildFeatures } from "ME";
+
+const require = arg1;
+function _isGuestOrLurkerInGuild(guild_id, id, _createForOfIteratorHelperLoose, _isNativeReflectConstruct) {
+  const guild = _createForOfIteratorHelperLoose.getGuild(guild_id);
   let hasItem;
   if (null != guild) {
     const features = guild.features;
@@ -14,22 +19,19 @@ function _isGuestOrLurkerInGuild(guild_id, id, closure_3, closure_2) {
   }
   let isGuestOrLurkerResult = true !== hasItem;
   if (isGuestOrLurkerResult) {
-    isGuestOrLurkerResult = closure_2.isGuestOrLurker(guild_id, id);
+    isGuestOrLurkerResult = _isNativeReflectConstruct.isGuestOrLurker(guild_id, id);
   }
   return isGuestOrLurkerResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const GuildFeatures = arg1(dependencyMap[2]).GuildFeatures;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
+const result = require("ME").fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
 
 export default function useIsGuestOrLurker(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_3, closure_2];
+  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
   const items1 = [arg0, arg1];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => callback(arg0, arg1, closure_3, closure_2), items1);
+  return _require(566).useStateFromStores(items, () => outer1_5(closure_0, closure_1, outer1_3, outer1_2), items1);
 };
 export const isGuestOrLurkerInGuild = function isGuestOrLurkerInGuild(guild_id, id) {
-  return _isGuestOrLurkerInGuild(guild_id, id, closure_3, closure_2);
+  return _isGuestOrLurkerInGuild(guild_id, id, _createForOfIteratorHelperLoose, _isNativeReflectConstruct);
 };

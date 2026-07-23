@@ -1,14 +1,16 @@
-// Module ID: 15290
-// Function ID: 116250
+// Module ID: 15407
+// Function ID: 118424
 // Name: CachedSearchResultParser
-// Dependencies: []
+// Dependencies: [7, 6, 2]
 
-// Module 15290 (CachedSearchResultParser)
-let closure_0 = importDefault(dependencyMap[1]);
+// Module 15407 (CachedSearchResultParser)
+import _classCallCheck from "_classCallCheck";
+import importDefaultResult from "_defineProperties";
+
 class CachedSearchResultParser {
   constructor() {
-    closure_0 = this;
-    tmp = closure_0(this, CachedSearchResultParser);
+    self = this;
+    tmp = self(this, CachedSearchResultParser);
     map = new Map();
     this.resultsCache = map;
     this.parse = (id) => {
@@ -26,8 +28,7 @@ class CachedSearchResultParser {
     return;
   }
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const importDefaultResultResult = importDefault(dependencyMap[0])(CachedSearchResultParser);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/search/native/message_parsers/CachedSearchResultParser.tsx");
+const importDefaultResultResult = require("_defineProperties")(CachedSearchResultParser);
+let result = require("set").fileFinishedImporting("modules/search/native/message_parsers/CachedSearchResultParser.tsx");
 
 export const CachedSearchResultParser = importDefaultResultResult;

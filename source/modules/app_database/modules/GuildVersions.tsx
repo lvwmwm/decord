@@ -1,52 +1,60 @@
-// Module ID: 6891
-// Function ID: 54828
+// Module ID: 6896
+// Function ID: 54862
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [125632512, 246743040, 42795008, 120061952, 259981312, 131072, 108855296, 117440512, 251658240]
+// Dependencies: [57, 5, 6, 7, 1838, 3, 1882, 1327, 2]
 
-// Module 6891 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6896 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import timestamp from "timestamp";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "_defineProperties";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,18 +91,12 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult("GuildVersions");
-let tmp4 = () => {
+let tmp4 = (() => {
   class GuildVersions {
     constructor() {
-      f54847 = this;
-      tmp = closure_5(this, GuildVersions);
+      self = this;
+      tmp = outer1_5(this, GuildVersions);
       map = new Map();
       this.pending = map;
       map1 = new Map();
@@ -143,10 +145,9 @@ let tmp4 = () => {
       return;
     }
   }
-  const importDefault = GuildVersions;
   let obj = { key: "getCommittedVersions" };
   let closure_0 = callback(async () => {
-    const guildVersionsResult = callback(closure_2[6]).guildVersions();
+    const guildVersionsResult = GuildVersions(outer2_2[6]).guildVersions();
     if (null == guildVersionsResult) {
       return {};
     } else {
@@ -157,13 +158,13 @@ let tmp4 = () => {
       });
       return Object.fromEntries(null != mapped ? mapped : []);
     }
-    const obj = callback(closure_2[6]);
-    const obj2 = guildVersionsResult;
+    const obj = GuildVersions(outer2_2[6]);
+    obj2 = guildVersionsResult;
   });
   obj.value = function getCommittedVersions() {
     return callback(...arguments);
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "remove",
     value(arg0, arg1) {
@@ -177,7 +178,7 @@ let tmp4 = () => {
     value(guilds) {
       let iter2;
       const self = this;
-      const tmp = callback3(guilds.guilds);
+      const tmp = outer1_9(guilds.guilds);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -186,8 +187,8 @@ let tmp4 = () => {
             let items = [value];
             let updateWithResult = self.updateWith(value.id, items);
           }
-          let tmp3 = closure_7;
-          if (null == closure_7.getGuild(value.id)) {
+          let tmp3 = outer1_7;
+          if (null == outer1_7.getGuild(value.id)) {
             let removeResult = self.remove(value.id, arg1);
           }
           iter2 = tmp();
@@ -205,9 +206,9 @@ let tmp4 = () => {
       const self = this;
       this.reset();
       const items = [...unavailableGuilds.unavailableGuilds];
-      const result = GuildVersions(closure_2[6]).guildVersionsTransaction(arg1);
+      const result = GuildVersions(outer1_2[6]).guildVersionsTransaction(arg1);
       result.deleteAllExcept(items);
-      const tmp3 = callback3(unavailableGuilds.guilds);
+      const tmp3 = outer1_9(unavailableGuilds.guilds);
       let iter = tmp3();
       if (!iter.done) {
         do {
@@ -232,7 +233,7 @@ let tmp4 = () => {
         } else if ("update" === op) {
           return channels.writes;
         } else {
-          callback(closure_2[7]).assertNever(channels);
+          callback(outer2_2[7]).assertNever(channels);
         }
       }
       guild = guild.guild;
@@ -312,7 +313,7 @@ let tmp4 = () => {
     value(channels) {
       let iter2;
       const self = this;
-      const tmp = callback3(channels.channels);
+      const tmp = outer1_9(channels.channels);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -390,7 +391,7 @@ let tmp4 = () => {
     key: "computeLatestVersion",
     value(arg0, arg1) {
       let iter3;
-      const tmp = callback3(arg1);
+      const tmp = outer1_9(arg1);
       const iter = tmp();
       let iter2 = iter;
       let bound = arg0;
@@ -419,13 +420,13 @@ let tmp4 = () => {
       let tmp4;
       const self = this;
       if (this.pending.size > 0) {
-        const result = GuildVersions(closure_2[6]).guildVersionsTransaction(arg0);
-        const tmp14 = callback3(self.pending);
+        const result = GuildVersions(outer1_2[6]).guildVersionsTransaction(arg0);
+        const tmp14 = outer1_9(self.pending);
         let iter2 = tmp14();
         if (!iter2.done) {
           do {
-            let tmp = closure_3;
-            let tmp2 = closure_3(iter2.value, 2);
+            let tmp = outer1_3;
+            let tmp2 = outer1_3(iter2.value, 2);
             [tmp3, tmp4] = tmp2;
             if (null != tmp4) {
               let obj = { id: tmp3, version: tmp4 };
@@ -443,14 +444,14 @@ let tmp4 = () => {
         }
         const pending = self.pending;
         pending.clear();
-        const obj2 = GuildVersions(closure_2[6]);
+        const obj2 = GuildVersions(outer1_2[6]);
       }
     }
   };
   return callback2(GuildVersions, items);
-}();
+})();
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/app_database/modules/GuildVersions.tsx");
+let result = require("_classCallCheck").fileFinishedImporting("modules/app_database/modules/GuildVersions.tsx");
 
 export default tmp4;
 export const GuildVersions = tmp4;

@@ -1,17 +1,19 @@
 // Module ID: 38
 // Function ID: 1275
 // Name: processColor
-// Dependencies: []
+// Dependencies: [39, 40]
 
 // Module 38 (processColor)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.default = function processColor(defaultResult1) {
   if (null == defaultResult1) {
     return defaultResult1;
   } else {
-    const defaultResult = arg1(arg6[0]).default(defaultResult1);
+    const defaultResult = require(39) /* normalizeColor */.default(defaultResult1);
     if (null != defaultResult) {
       if ("object" === typeof defaultResult) {
-        const processColorObjectResult = arg1(arg6[1]).processColorObject(defaultResult);
+        const processColorObjectResult = require(40) /* PlatformColor */.processColorObject(defaultResult);
         if (null != processColorObjectResult) {
           return processColorObjectResult;
         }
@@ -22,6 +24,6 @@ arg5.default = function processColor(defaultResult1) {
       }
       return tmp5;
     }
-    const obj = arg1(arg6[0]);
+    const obj = require(39) /* normalizeColor */;
   }
 };

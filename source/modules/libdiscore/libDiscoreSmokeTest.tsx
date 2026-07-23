@@ -1,30 +1,33 @@
-// Module ID: 16496
-// Function ID: 127379
+// Module ID: 16613
+// Function ID: 129553
 // Name: libDiscoreSmokeTest
-// Dependencies: []
+// Dependencies: [5, 653, 3, 1847, 1844, 1841, 675, 2]
 // Exports: default, libDiscoreSmokeTest
 
-// Module 16496 (libDiscoreSmokeTest)
+// Module 16613 (libDiscoreSmokeTest)
+import _callSuper from "_callSuper";
+import { AnalyticEvents } from "ME";
+import importDefaultResult from "_initLibdiscore";
+
+const require = arg1;
 function libDiscoreSmokeTest() {
   return _libDiscoreSmokeTest(...arguments);
 }
 function _libDiscoreSmokeTest() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _libDiscoreSmokeTest = obj;
   return obj(...arguments);
 }
 function trackLibdiscoreSuccess() {
   const items = [];
-  const arg1 = items;
-  const prop = arg1(dependencyMap[5]).ALL_LIBDISCORE_EXPERIMENTS;
+  const prop = items(1841).ALL_LIBDISCORE_EXPERIMENTS;
   const item = prop.forEach((getEnabledFeatureName) => {
     const enabledFeatureName = getEnabledFeatureName.getEnabledFeatureName();
     if (null != enabledFeatureName) {
       items.push(enabledFeatureName);
     }
   });
-  importDefault(dependencyMap[6]).track(AnalyticEvents.LIBDISCORE_LOADED, { success: true, experimental_features: items });
+  importDefault(675).track(AnalyticEvents.LIBDISCORE_LOADED, { success: true, experimental_features: items });
 }
 function formatErrorMessage(arg0) {
   let message;
@@ -53,14 +56,11 @@ function formatErrorMessage(arg0) {
 function trackLibdiscoreFailure(arg0) {
   importDefaultResult.error("Failed to execute smoke test:", arg0);
   const tmp2 = formatErrorMessage(arg0);
-  importDefault(dependencyMap[6]).track(AnalyticEvents.LIBDISCORE_LOADED, { success: false, error: tmp2 });
+  importDefault(675).track(AnalyticEvents.LIBDISCORE_LOADED, { success: false, error: tmp2 });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-let importDefaultResult = importDefault(dependencyMap[2]);
 importDefaultResult = new importDefaultResult("libdiscore");
-let closure_6 = false;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/libdiscore/libDiscoreSmokeTest.tsx");
+let c6 = false;
+const result = require("timestamp").fileFinishedImporting("modules/libdiscore/libDiscoreSmokeTest.tsx");
 
 export default libDiscoreSmokeTest;
 export { libDiscoreSmokeTest };

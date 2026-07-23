@@ -1,52 +1,58 @@
-// Module ID: 5469
-// Function ID: 46737
+// Module ID: 5472
+// Function ID: 46756
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 5066, 653, 4015, 686, 507, 2]
 
-// Module 5469 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5472 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -112,61 +118,75 @@ function tokensToAppTokensMap(arg0, arr) {
 function fetchAuthorizedApps() {
   return _fetchAuthorizedApps(...arguments);
 }
-async function _fetchAuthorizedApps(applicationIds, arg1) {
-  let obj = callback(closure_2[4]);
-  obj = { type: "USER_AUTHORIZED_APPS_REQUEST" };
-  if (null == applicationIds) {
-    obj = { type: "full" };
-    let obj1 = obj;
-  } else {
-    obj1 = { type: "partial", applicationIds };
-  }
-  obj.request = obj1;
-  obj.dispatch(obj);
-  const HTTP = applicationIds(closure_2[5]).HTTP;
-  const obj2 = { y: null, isArray: null, accessible: null, url: OAUTH2_TOKENS.OAUTH2_TOKENS, query: { application_ids: applicationIds } };
-  const value = HTTP.get(obj2);
+async function _fetchAuthorizedApps(arg0, arg1) {
+  let closure_0 = arg0;
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  let obj = { url: outer2_6.OAUTH2_TOKENS, oldFormErrors: true, rejectWithError: true, query: { application_ids: arg0 } };
+  const value = HTTP.get(obj);
   yield value.then((body) => {
-    let obj = callback(closure_2[4]);
-    obj = { type: "USER_AUTHORIZED_APPS_UPDATE", isFullFetch: null == body, tokens: callback2(body.body, body) };
+    let obj = outer3_1(outer3_2[4]);
+    obj = { type: "USER_AUTHORIZED_APPS_UPDATE", isFullFetch: null == closure_0, tokens: outer3_10(body.body, closure_0) };
     return obj.dispatch(obj);
   }, () => {
-    let obj = callback(closure_2[4]);
+    let obj = outer3_1(outer3_2[4]);
     obj = { type: "USER_AUTHORIZED_APPS_REQUEST_FAILED" };
-    if (null == arg0) {
+    if (null == closure_0) {
       obj = { type: "full" };
       let obj1 = obj;
     } else {
-      obj1 = { type: "partial", applicationIds: arg0 };
+      obj1 = { type: "partial", applicationIds: closure_0 };
     }
     obj.request = obj1;
     return obj.dispatch(obj);
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const FetchState = arg1(dependencyMap[1]).FetchState;
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-const batchInvocationManager = new arg1(dependencyMap[3]).BatchInvocationManager(fetchAuthorizedApps, (arg0) => store.getFetchStateForApplication(arg0) !== FetchState.FETCHING);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/oauth2/AuthorizedAppsActionCreators.tsx");
-
-export default {
+let obj = {
+  predicate(arg0) {
+    return store.getFetchStateForApplication(arg0) !== FetchState.FETCHING;
+  },
+  onQueued(applicationIds) {
+    let request = importDefault(686);
+    request = { type: "partial", applicationIds };
+    return request.dispatch({ type: "USER_AUTHORIZED_APPS_REQUEST", request });
+  },
+  onCancelled(applicationIds) {
+    let obj = importDefault(686);
+    obj = { type: "USER_AUTHORIZED_APPS_REQUEST_CANCELLED", applicationIds };
+    return obj.dispatch(obj);
+  }
+};
+const batchInvocationManager = new require("_createForOfIteratorHelperLoose").BatchInvocationManager(fetchAuthorizedApps, obj);
+obj = {
   fetch(arg0) {
     if (store.getFetchState() !== FetchState.FETCHING) {
       if (null != arg0) {
-        batchInvocationManager.queue(arg0);
+        (function queueAuthorizedApps(arg0) {
+          outer1_7.queue(arg0).catch((arg0) => {
+            if (!(arg0 instanceof outer2_0(outer2_2[3]).BatchInvocationManagerResetError)) {
+              throw arg0;
+            }
+          });
+        })(arg0);
       } else {
         batchInvocationManager.reset();
+        let obj = importDefault(686);
+        obj = { type: "USER_AUTHORIZED_APPS_REQUEST" };
+        obj = { type: "full" };
+        obj.request = obj;
+        obj.dispatch(obj);
         fetchAuthorizedApps();
       }
     }
   },
   delete(arg0) {
-    const arg1 = this;
-    const HTTP = arg1(dependencyMap[5]).HTTP;
-    const obj = { y: null, isArray: null, accessible: null, url: Endpoints.OAUTH2_TOKEN(arg0) };
+    const self = this;
+    const HTTP = self(507).HTTP;
+    const obj = { url: Endpoints.OAUTH2_TOKEN(arg0), oldFormErrors: true, rejectWithError: true };
     HTTP.del(obj).then(() => {
       const response = self.fetch();
     });
   }
 };
+const result = require("ME").fileFinishedImporting("modules/oauth2/AuthorizedAppsActionCreators.tsx");
+
+export default obj;

@@ -1,13 +1,13 @@
-// Module ID: 6585
-// Function ID: 50810
+// Module ID: 6590
+// Function ID: 50839
 // Name: TeaKettleSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6591, 2]
 // Exports: TeaKettleSpotIllustration
 
-// Module 6585 (TeaKettleSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/TeaKettleSpotIllustration.native.tsx");
+// Module 6590 (TeaKettleSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TeaKettleSpotIllustration.native.tsx");
 
 export const TeaKettleSpotIllustration = function TeaKettleSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const TeaKettleSpotIllustration = function TeaKettleSpotIllustration(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6591) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const TeaKettleSpotIllustration = function TeaKettleSpotIllustration(widt
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

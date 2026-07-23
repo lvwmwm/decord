@@ -1,18 +1,22 @@
-// Module ID: 11137
-// Function ID: 86649
+// Module ID: 11147
+// Function ID: 86699
 // Name: ForumPostListBody
-// Dependencies: []
+// Dependencies: [31, 27, 5685, 33, 4130, 11139, 11129, 11138, 11140, 11148, 11133, 2]
 // Exports: default
 
-// Module 11137 (ForumPostListBody)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const ForumTimestampFormats = arg1(dependencyMap[2]).ForumTimestampFormats;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ body: {}, contentContainer: { flex: 1 }, thumbnailContainer: { marginLeft: 12 }, details: {}, newTagContainer: { marginEnd: 8 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/native/posts/list/ForumPostListBody.tsx");
+// Module 11147 (ForumPostListBody)
+import "result";
+import { View } from "get ActivityIndicator";
+import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ body: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, contentContainer: { flex: 1 }, thumbnailContainer: { marginLeft: 12 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 6 }, newTagContainer: { marginEnd: 8 } });
+const result = require("FORUM_GUIDELINES_ACTION_SHEET").fileFinishedImporting("modules/forums/native/posts/list/ForumPostListBody.tsx");
 
 export default function ForumPostListBody(arg0) {
   let containerStyle;
@@ -30,16 +34,19 @@ export default function ForumPostListBody(arg0) {
   ({ containerStyle, firstMessageLoaded, messageContent, isEmbed, isLocalDeviceMedia, senderModifier } = arg0);
   const tmp = callback2();
   let obj = { style: items };
-  const items = [tmp.body, containerStyle];
+  items = [tmp.body, containerStyle];
   obj = { style: tmp.contentContainer };
   obj = { style: tmp.details };
   if (isNew) {
     const obj1 = { containerStyle: tmp.newTagContainer };
-    isNew = callback(importDefault(dependencyMap[5]), obj1);
+    isNew = callback(importDefault(11139), obj1);
   }
-  const items1 = [isNew, callback(arg1(dependencyMap[6]).ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(dependencyMap[7]), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO })];
+  const items1 = [isNew, callback(require(11129) /* ForumPostUsername */.ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(11138), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO })];
   obj.children = items1;
-  const items2 = [closure_6(View, obj), callback(importDefault(dependencyMap[8]), { title: thread.name, hasUnreads }), callback(importDefault(dependencyMap[9]), { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier })];
+  const items2 = [closure_6(View, obj), , ];
+  const obj3 = { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads };
+  items2[1] = callback(importDefault(11140), obj3);
+  items2[2] = callback(importDefault(11148), { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier });
   obj.children = items2;
   const items3 = [closure_6(View, obj), ];
   if (null == firstMessage) {
@@ -52,7 +59,7 @@ export default function ForumPostListBody(arg0) {
       }
       obj4.firstMessageId = id;
       obj4.containerStyle = tmp.thumbnailContainer;
-      tmp8Result = callback(arg1(dependencyMap[10]).ForumPostMediaThumbnail, obj4);
+      tmp8Result = callback(require(11133) /* ForumPostMediaAndroid */.ForumPostMediaThumbnail, obj4);
       const tmp8 = callback;
     }
   } else {

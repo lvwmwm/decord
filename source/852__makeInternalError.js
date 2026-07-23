@@ -1,14 +1,20 @@
 // Module ID: 852
-// Function ID: 9496
+// Function ID: 9497
 // Name: _makeInternalError
-// Dependencies: []
+// Dependencies: [57, 5, 6, 7, 77, 853, 854, 814, 800, 801, 851, 856, 861, 807, 804, 822, 863, 839, 840, 834, 846, 825, 833, 864, 813, 808, 849, 865, 866, 835, 796, 823]
 
 // Module 852 (_makeInternalError)
+import _slicedToArray from "_slicedToArray";
+import asyncGeneratorStep from "makePromiseBuffer";
+import _classCallCheck from "createTransport";
+import _defineProperties from "dsnFromString";
+import _defineProperty from "_defineProperty";
+
 function _makeInternalError(message) {
-  return callback3({ message }, closure_7, true);
+  return _defineProperty({ message }, closure_7, true);
 }
 function _makeDoNotSendEventError(message) {
-  return callback3({ message }, closure_8, true);
+  return _defineProperty({ message }, closure_8, true);
 }
 function _isInternalError(arg0) {
   let tmp2 = !tmp;
@@ -31,31 +37,31 @@ function _isDoNotSendEventError(arg0) {
   return tmp2;
 }
 function setupWeightBasedFlushing(on) {
-  const require = on;
-  const dependencyMap = arg3;
+  let closure_0 = on;
+  let closure_1 = arg3;
   let closure_2 = arg4;
-  let closure_4 = 0;
-  let closure_5 = false;
+  let c4 = 0;
+  let c5 = false;
   on.on(arg2, () => {
-    let closure_4 = 0;
+    let c4 = 0;
     clearTimeout(closure_3);
-    let closure_5 = false;
+    let c5 = false;
   });
   on.on(arg1, (arg0) => {
-    const sum = closure_4 + arg3(arg0);
-    closure_4 = sum;
+    const sum = c4 + callback(arg0);
+    c4 = sum;
     if (sum >= 800000) {
-      arg4(arg0);
-    } else if (!closure_5) {
-      closure_5 = true;
+      callback2(closure_0);
+    } else if (!c5) {
+      c5 = true;
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        callback(closure_0);
+        outer1_2(outer1_0);
       }, 5000);
     }
   });
   on.on("flush", () => {
-    arg4(arg0);
+    callback2(closure_0);
   });
 }
 function getDataCategoryByType(arg0) {
@@ -91,22 +97,22 @@ function estimateLogSizeInBytes(message) {
 }
 function estimateAttributesSizeInBytes(attributes) {
   if (attributes) {
-    let closure_0 = 0;
+    let c0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
     const item = values.forEach((arg0) => {
       if (Array.isArray(arg0)) {
-        let v0 = v0 + arg0.length * callback(arg0[0]);
+        closure_0 = closure_0 + arg0.length * outer1_20(arg0[0]);
       } else {
         if (obj.isPrimitive(arg0)) {
-          v0 = tmp3 + callback(arg0);
+          closure_0 = tmp3 + outer1_20(arg0);
         } else {
-          v0 = tmp3 + 100;
+          closure_0 = tmp3 + 100;
         }
-        const obj = v0(closure_1[14]);
+        obj = v0(outer1_1[14]);
       }
     });
-    return closure_0;
+    return c0;
   } else {
     return 0;
   }
@@ -126,16 +132,11 @@ function estimatePrimitiveSizeInBytes(arg0) {
   }
   return num;
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
-let closure_6 = require(dependencyMap[4]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_7 = Symbol.for("SentryInternalError");
 let closure_8 = Symbol.for("SentryDoNotSendEventError");
 
-export const Client = () => {
+export const Client = (() => {
   class Client {
     constructor(arg0) {
       self = this;
@@ -146,21 +147,21 @@ export const Client = () => {
       this._outcomes = {};
       this._hooks = {};
       this._eventProcessors = [];
-      obj = f9556(f9551[5]);
+      obj = f9557(f9552[5]);
       transportOptions = arg0.transportOptions;
       bufferSize = undefined;
       if (null != transportOptions) {
         bufferSize = transportOptions.bufferSize;
       }
       if (null == bufferSize) {
-        tmp3 = f9556;
-        tmp4 = f9551;
+        tmp3 = f9557;
+        tmp4 = f9552;
         num = 6;
-        bufferSize = f9556(f9551[6]).DEFAULT_TRANSPORT_BUFFER_SIZE;
+        bufferSize = f9557(f9552[6]).DEFAULT_TRANSPORT_BUFFER_SIZE;
       }
       self._promiseBuffer = obj.makePromiseBuffer(bufferSize);
-      tmp5 = f9556;
-      tmp6 = f9551;
+      tmp5 = f9557;
+      tmp6 = f9552;
       if (arg0.dsn) {
         num4 = 7;
         tmp5Result = tmp5(tmp6[7]);
@@ -168,19 +169,19 @@ export const Client = () => {
       } else {
         num2 = 8;
         if (tmp5(tmp6[8]).DEBUG_BUILD) {
-          tmp7 = f9556;
-          tmp8 = f9551;
+          tmp7 = f9557;
+          tmp8 = f9552;
           num3 = 9;
-          debug = f9556(f9551[9]).debug;
+          debug = f9557(f9552[9]).debug;
           str = "No DSN provided, client will not send events.";
           warnResult = debug.warn("No DSN provided, client will not send events.");
         }
       }
       if (self._dsn) {
-        tmp10 = f9556;
-        tmp11 = f9551;
+        tmp10 = f9557;
+        tmp11 = f9552;
         num5 = 10;
-        obj3 = f9556(f9551[10]);
+        obj3 = f9557(f9552[10]);
         sdk = undefined;
         if (arg0._metadata) {
           sdk = arg0._metadata.sdk;
@@ -206,15 +207,15 @@ export const Client = () => {
       }
       self._options.enableLogs = enableLogs;
       if (self._options.enableLogs) {
-        tmp16 = closure_13;
-        tmp17 = closure_18;
-        tmp18 = f9556;
-        tmp19 = f9551;
+        tmp16 = outer1_13;
+        tmp17 = outer1_18;
+        tmp18 = f9557;
+        tmp19 = f9552;
         num6 = 11;
         str2 = "afterCaptureLog";
         str3 = "flushLogs";
         tmp20 = self;
-        tmp21 = closure_13(self, "afterCaptureLog", "flushLogs", closure_18, f9556(f9551[11])._INTERNAL_flushLogsBuffer);
+        tmp21 = outer1_13(self, "afterCaptureLog", "flushLogs", outer1_18, f9557(f9552[11])._INTERNAL_flushLogsBuffer);
       }
       enableMetrics = self._options.enableMetrics;
       if (null == enableMetrics) {
@@ -226,32 +227,31 @@ export const Client = () => {
       }
       tmp23 = null == enableMetrics || enableMetrics;
       if (tmp23) {
-        tmp24 = closure_13;
-        tmp25 = closure_17;
-        tmp26 = f9556;
-        tmp27 = f9551;
+        tmp24 = outer1_13;
+        tmp25 = outer1_17;
+        tmp26 = f9557;
+        tmp27 = f9552;
         num7 = 12;
         str4 = "afterCaptureMetric";
         str5 = "flushMetrics";
         tmp28 = self;
-        tmp29 = closure_13(self, "afterCaptureMetric", "flushMetrics", closure_17, f9556(f9551[12])._INTERNAL_flushMetricsBuffer);
+        tmp29 = outer1_13(self, "afterCaptureMetric", "flushMetrics", outer1_17, f9557(f9552[12])._INTERNAL_flushMetricsBuffer);
       }
       return;
     }
   }
-  let closure_4 = Client;
   let obj = {
     key: "captureException",
     value: function captureException(arg0, arg1, arg2) {
-      const self = this;
+      let self = this;
       const callback = arg0;
-      let closure_1 = arg2;
-      let closure_2 = this;
-      let obj = callback(closure_1[13]);
+      const dependencyMap = arg2;
+      self = this;
+      let obj = callback(807);
       const uuid4Result = obj.uuid4();
       if (obj2.checkOrSetAlreadyCaught(arg0)) {
-        if (callback(closure_1[8]).DEBUG_BUILD) {
-          const debug = callback(closure_1[9]).debug;
+        if (callback(800).DEBUG_BUILD) {
+          const debug = callback(801).debug;
           debug.log("Not capturing exception because it's already been captured.");
         }
         return uuid4Result;
@@ -259,34 +259,32 @@ export const Client = () => {
         const _Object = Object;
         obj = { event_id: uuid4Result };
         const merged = Object.assign(obj, arg1);
-        let closure_3 = merged;
         self._process(() => {
-          const eventFromExceptionResult = self.eventFromException(arg0, merged);
-          return self.eventFromException(arg0, merged).then((arg0) => closure_2._captureEvent(arg0, closure_3, closure_1)).then((arg0) => arg0);
+          const eventFromExceptionResult = self.eventFromException(closure_0, merged);
+          return self.eventFromException(closure_0, merged).then((arg0) => outer1_2._captureEvent(arg0, outer1_3, outer1_1)).then((arg0) => arg0);
         }, "error");
         return merged.event_id;
       }
-      const obj2 = callback(closure_1[13]);
+      obj2 = callback(807);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "captureMessage",
     value: function captureMessage(arg0, arg1, arg2, arg3) {
-      const self = this;
+      let self = this;
       const callback = arg3;
-      let closure_1 = this;
-      const obj = { event_id: callback(closure_1[13]).uuid4() };
+      self = this;
+      const obj = { event_id: callback(807).uuid4() };
       const merged = Object.assign(obj, arg2);
-      let closure_2 = merged;
-      const obj2 = callback(closure_1[13]);
+      const obj2 = callback(807);
       let StringResult = arg0;
       if (!obj3.isParameterizedString(arg0)) {
         const _String = String;
         StringResult = String(arg0);
       }
-      const obj3 = callback(closure_1[14]);
-      const isPrimitiveResult = callback(closure_1[14]).isPrimitive(arg0);
+      obj3 = callback(804);
+      const isPrimitiveResult = callback(804).isPrimitive(arg0);
       if (isPrimitiveResult) {
         let eventFromMessageResult = self.eventFromMessage(StringResult, arg1, merged);
       } else {
@@ -297,7 +295,7 @@ export const Client = () => {
       if (isPrimitiveResult) {
         str = "unknown";
       }
-      self._process(() => eventFromMessageResult.then((arg0) => closure_1._captureEvent(arg0, closure_2, closure_0)), str);
+      self._process(() => eventFromMessageResult.then((arg0) => outer1_1._captureEvent(arg0, outer1_2, outer1_0)), str);
       return merged.event_id;
     }
   };
@@ -305,33 +303,34 @@ export const Client = () => {
   obj = {
     key: "captureEvent",
     value: function captureEvent(sdkProcessingMetadata, originalException) {
-      const self = this;
+      let Client;
+      let closure_5;
+      let self = this;
       const callback = sdkProcessingMetadata;
-      let closure_1 = arg2;
-      let closure_2 = this;
-      const uuid4Result = callback(closure_1[13]).uuid4();
+      const dependencyMap = arg2;
+      self = this;
+      const uuid4Result = callback(807).uuid4();
       if (null != originalException) {
         if (originalException.originalException) {
           if (obj2.checkOrSetAlreadyCaught(originalException.originalException)) {
-            if (callback(closure_1[8]).DEBUG_BUILD) {
-              const debug = callback(closure_1[9]).debug;
+            if (callback(800).DEBUG_BUILD) {
+              const debug = callback(801).debug;
               debug.log("Not capturing exception because it's already been captured.");
             }
             return uuid4Result;
           }
-          const obj2 = callback(closure_1[13]);
+          obj2 = callback(807);
         }
       }
       const merged = Object.assign({ event_id: uuid4Result }, originalException);
-      let closure_3 = merged;
-      ({ capturedSpanScope: closure_4, capturedSpanIsolationScope: closure_5 } = sdkProcessingMetadata.sdkProcessingMetadata || {});
+      ({ capturedSpanScope: Client, capturedSpanIsolationScope: closure_5 } = sdkProcessingMetadata.sdkProcessingMetadata || {});
       self._process(() => {
         let tmp4 = closure_4;
         if (!closure_4) {
-          tmp4 = arg2;
+          tmp4 = closure_1;
         }
-        return self._captureEvent(arg0, merged, tmp4, closure_5);
-      }, callback7(sdkProcessingMetadata.type));
+        return self._captureEvent(closure_0, merged, tmp4, closure_5);
+      }, outer1_14(sdkProcessingMetadata.type));
       return merged.event_id;
     }
   };
@@ -340,7 +339,7 @@ export const Client = () => {
     key: "captureSession",
     value: function captureSession(arg0) {
       this.sendSession(arg0);
-      callback(closure_1[15]).updateSession(arg0, { init: false });
+      callback(822).updateSession(arg0, { init: false });
     }
   };
   items[4] = {
@@ -368,7 +367,7 @@ export const Client = () => {
     }
   };
   const obj6 = { key: "flush" };
-  const callback = callback(async function(arg0) {
+  asyncGeneratorStep = asyncGeneratorStep(async function(arg0) {
     const self = this;
     const _transport = self._transport;
     if (_transport) {
@@ -384,18 +383,18 @@ export const Client = () => {
     }
   });
   obj6.value = function flush(arg0) {
-    return callback4(...arguments);
+    return callback3(...arguments);
   };
   items[8] = obj6;
-  const obj7 = { key: "close" };
-  let closure_2 = callback(async function(arg0) {
+  let obj7 = { key: "close" };
+  let closure_2 = asyncGeneratorStep(async function(arg0) {
     const self = this;
     self.getOptions().enabled = false;
     self.emit("close");
     return yield self.flush(arg0);
   });
   obj7.value = function close(arg0) {
-    return callback3(...arguments);
+    return callback2(...arguments);
   };
   items[9] = obj7;
   items[10] = {
@@ -437,39 +436,39 @@ export const Client = () => {
   items[14] = {
     key: "addIntegration",
     value: function addIntegration(arg0) {
-      callback(closure_1[16]).setupIntegration(this, arg0, this._integrations);
+      callback(863).setupIntegration(this, arg0, this._integrations);
       if (!this._integrations[arg0.name]) {
         const items = [arg0];
-        const result = callback(closure_1[16]).afterSetupIntegrations(this, items);
-        const obj2 = callback(closure_1[16]);
+        const result = callback(863).afterSetupIntegrations(this, items);
+        const obj2 = callback(863);
       }
     }
   };
   items[15] = {
     key: "sendEvent",
     value: function sendEvent(arg0) {
-      const self = this;
+      let self = this;
       const callback = arg0;
-      let closure_1 = this;
+      self = this;
       if (arguments.length > 1) {
         if (undefined !== arguments[1]) {
           let obj = arguments[1];
         }
         self.emit("beforeSendEvent", arg0, obj);
-        const obj2 = callback(closure_1[17]);
+        const obj2 = callback(839);
         let eventEnvelope = obj2.createEventEnvelope(arg0, self._dsn, self._options._metadata, self._options.tunnel);
         const tmp7 = obj.attachments || [];
         const tmp9 = tmp7[Symbol.iterator]();
         while (tmp9 !== undefined) {
           let tmp12 = callback;
-          let tmp13 = closure_1;
-          let obj3 = callback(closure_1[18]);
+          let tmp13 = dependencyMap;
+          let obj3 = callback(840);
           let tmp14 = eventEnvelope;
-          let obj4 = callback(closure_1[18]);
+          let obj4 = callback(840);
           eventEnvelope = obj3.addItemToEnvelope(eventEnvelope, obj4.createAttachmentEnvelopeItem(tmp10));
-          // continue
+          continue;
         }
-        self.sendEnvelope(eventEnvelope).then((arg0) => self.emit("afterSendEvent", arg0, arg0));
+        self.sendEnvelope(eventEnvelope).then((arg0) => self.emit("afterSendEvent", closure_0, arg0));
       }
       obj = {};
     }
@@ -482,14 +481,14 @@ export const Client = () => {
       const self = this;
       ({ release, environment } = this._options);
       if (undefined === environment) {
-        environment = callback(closure_1[19]).DEFAULT_ENVIRONMENT;
+        environment = callback(834).DEFAULT_ENVIRONMENT;
       }
       if ("aggregates" in attrs) {
         const tmp8 = attrs.attrs || {};
         if (!tmp8.release) {
           if (!release) {
-            if (callback(closure_1[8]).DEBUG_BUILD) {
-              const debug2 = callback(closure_1[9]).debug;
+            if (callback(800).DEBUG_BUILD) {
+              const debug2 = callback(801).debug;
               debug2.warn("Discarded session because of missing or non-string release");
             }
           }
@@ -500,8 +499,8 @@ export const Client = () => {
       } else {
         if (!attrs.release) {
           if (!release) {
-            if (callback(closure_1[8]).DEBUG_BUILD) {
-              const debug = callback(closure_1[9]).debug;
+            if (callback(800).DEBUG_BUILD) {
+              const debug = callback(801).debug;
               debug.warn("Discarded session because of missing or non-string release");
             }
           }
@@ -510,7 +509,7 @@ export const Client = () => {
         attrs.environment = attrs.environment || environment;
       }
       self.emit("beforeSendSession", attrs);
-      self.sendEnvelope(callback(closure_1[17]).createSessionEnvelope(attrs, self._dsn, self._options._metadata, self._options.tunnel));
+      self.sendEnvelope(callback(839).createSessionEnvelope(attrs, self._dsn, self._options._metadata, self._options.tunnel));
     }
   };
   items[17] = {
@@ -527,8 +526,8 @@ export const Client = () => {
       if (self._options.sendClientReports) {
         const _HermesInternal = HermesInternal;
         const combined = "" + arg0 + ":" + arg1;
-        if (callback(closure_1[8]).DEBUG_BUILD) {
-          const debug = callback(closure_1[9]).debug;
+        if (callback(800).DEBUG_BUILD) {
+          const debug = callback(801).debug;
           let str3 = "";
           if (num > 1) {
             const _HermesInternal2 = HermesInternal;
@@ -555,11 +554,9 @@ export const Client = () => {
         set = new Set();
       }
       this._hooks[arg0] = set;
-      let closure_1 = set;
       function uniqueCallback() {
-        return arg1(...arguments);
+        return callback(...arguments);
       }
-      let closure_2 = uniqueCallback;
       set.add(uniqueCallback);
       return () => {
         set.delete(uniqueCallback);
@@ -575,18 +572,16 @@ export const Client = () => {
         num = length - 1;
       }
       const array = new Array(num);
-      let closure_0 = array;
       for (let num2 = 1; num2 < length; num2 = num2 + 1) {
         array[num2 - 1] = arguments[num2];
       }
-      const arr = this._hooks[arg0];
-      if (arr) {
+      if (this._hooks[arg0]) {
         const item = arr.forEach((apply) => apply.apply(undefined, array));
       }
     }
   };
   const obj18 = { key: "sendEnvelope" };
-  let closure_1 = callback(async function(arg0) {
+  let closure_1 = asyncGeneratorStep(async function(arg0) {
     const self = this;
     self.emit("beforeEnvelope", arg0);
     if (self._isEnabled()) {
@@ -595,23 +590,23 @@ export const Client = () => {
         return yield _transport.send(arg0);
       }
     }
-    if (callback(closure_1[8]).DEBUG_BUILD) {
-      const debug = callback(closure_1[9]).debug;
+    if (callback(800).DEBUG_BUILD) {
+      const debug = callback(801).debug;
       debug.error("Transport disabled");
     }
     return {};
   });
   obj18.value = function sendEnvelope(arg0) {
-    return callback2(...arguments);
+    return dependencyMap(...arguments);
   };
   items[20] = obj18;
   items[21] = {
     key: "_setupIntegrations",
     value: function _setupIntegrations() {
       const integrations = this._options.integrations;
-      this._integrations = callback(closure_1[16]).setupIntegrations(this, integrations);
-      const obj = callback(closure_1[16]);
-      const result = callback(closure_1[16]).afterSetupIntegrations(this, integrations);
+      this._integrations = callback(863).setupIntegrations(this, integrations);
+      const obj = callback(863);
+      const result = callback(863).afterSetupIntegrations(this, integrations);
     }
   };
   items[22] = {
@@ -640,9 +635,7 @@ export const Client = () => {
             flag = true;
             iter.return();
             flag2 = true;
-            // break
-          } else {
-            // continue
+            break;
           }
           break;
         }
@@ -659,7 +652,7 @@ export const Client = () => {
         tmp8 = tmp7;
       }
       if (tmp8) {
-        let obj = callback(closure_1[15]);
+        let obj = callback(822);
         let tmp12 = flag;
         if (flag) {
           obj = { status: "crashed" };
@@ -680,7 +673,7 @@ export const Client = () => {
     }
   };
   const obj21 = { key: "_isClientDoneProcessing" };
-  let closure_0 = callback(async (arg0) => {
+  let closure_0 = asyncGeneratorStep(async (arg0) => {
     let num = 0;
     if (!arg0) {
       yield new Promise((arg0) => setTimeout(arg0, 1));
@@ -720,10 +713,10 @@ export const Client = () => {
   items[25] = {
     key: "_prepareEvent",
     value: function _prepareEvent(type, integrations, arg2, setLastEventId) {
-      const self = this;
+      let self = this;
       const callback = integrations;
-      let closure_1 = arg2;
-      let closure_2 = this;
+      const dependencyMap = arg2;
+      self = this;
       const options = this.getOptions();
       const keys = Object.keys(this._integrations);
       let length = !integrations.integrations;
@@ -744,18 +737,18 @@ export const Client = () => {
         }
         setLastEventId.setLastEventId(event_id);
       }
-      const obj = callback(closure_1[20]);
-      return callback(closure_1[20]).prepareEvent(options, type, integrations, arg2, self, setLastEventId).then((contexts) => {
+      let obj = callback(846);
+      return callback(846).prepareEvent(options, type, integrations, arg2, self, setLastEventId).then((contexts) => {
         if (null === contexts) {
           return contexts;
         } else {
-          self.emit("postprocessEvent", contexts, arg1);
+          self.emit("postprocessEvent", contexts, integrations);
           const _Object = Object;
-          let obj = { trace: arg1(arg2[21]).getTraceContextFromScope(arg2) };
+          let obj = { trace: integrations(825).getTraceContextFromScope(dependencyMap) };
           contexts.contexts = Object.assign(obj, contexts.contexts);
-          const obj2 = arg1(arg2[21]);
+          const obj2 = integrations(825);
           const _Object2 = Object;
-          obj = { dynamicSamplingContext: arg1(arg2[22]).getDynamicSamplingContextFromScope(self, arg2) };
+          obj = { dynamicSamplingContext: integrations(833).getDynamicSamplingContextFromScope(self, dependencyMap) };
           contexts.sdkProcessingMetadata = Object.assign(obj, contexts.sdkProcessingMetadata);
           return contexts;
         }
@@ -778,40 +771,40 @@ export const Client = () => {
             if (undefined !== arguments[3]) {
               let isolationScope = arguments[3];
             }
-            let DEBUG_BUILD = callback(closure_1[8]).DEBUG_BUILD;
+            let DEBUG_BUILD = callback(800).DEBUG_BUILD;
             if (DEBUG_BUILD) {
-              DEBUG_BUILD = callback8(message);
+              DEBUG_BUILD = outer1_15(message);
             }
             if (DEBUG_BUILD) {
-              const debug = callback(closure_1[9]).debug;
-              const obj4 = callback(closure_1[23]);
+              let debug = callback(801).debug;
+              const obj4 = callback(864);
               const _HermesInternal = HermesInternal;
-              debug.log("Captured error event `" + callback(closure_1[23]).getPossibleEventMessages(message)[0] || "<unknown>" + "`");
-              const tmp12 = callback(closure_1[23]).getPossibleEventMessages(message)[0] || "<unknown>";
+              debug.log("Captured error event `" + callback(864).getPossibleEventMessages(message)[0] || "<unknown>" + "`");
+              const tmp12 = callback(864).getPossibleEventMessages(message)[0] || "<unknown>";
             }
             return self._processEvent(message, obj, currentScope, isolationScope).then((event_id) => event_id.event_id, (message) => {
-              if (callback(closure_1[8]).DEBUG_BUILD) {
-                if (callback3(message)) {
-                  const debug2 = callback(closure_1[9]).debug;
+              if (callback(800).DEBUG_BUILD) {
+                if (outer2_12(message)) {
+                  const debug2 = callback(801).debug;
                   debug2.log(message.message);
                 } else {
-                  const debug = callback(closure_1[9]).debug;
+                  const debug = callback(801).debug;
                   const warn = debug.warn;
                   if (tmp3) {
                     warn(message.message);
                   } else {
                     warn(message);
                   }
-                  const tmp3 = callback2(message);
+                  tmp3 = outer2_11(message);
                 }
               }
             });
           }
-          isolationScope = callback(closure_1[21]).getIsolationScope();
-          const obj3 = callback(closure_1[21]);
+          isolationScope = callback(825).getIsolationScope();
+          const obj3 = callback(825);
         }
-        currentScope = callback(closure_1[21]).getCurrentScope();
-        const obj2 = callback(closure_1[21]);
+        currentScope = callback(825).getCurrentScope();
+        const obj2 = callback(825);
       }
       obj = {};
     }
@@ -819,34 +812,35 @@ export const Client = () => {
   items[27] = {
     key: "_processEvent",
     value: function _processEvent(type) {
-      const self = this;
-      const callback = type;
-      let closure_1 = arg1;
+      let self = this;
+      let callback = type;
+      const dependencyMap = arg1;
       let closure_2 = arg2;
       let closure_3 = arg3;
-      const Client = this;
+      self = this;
       const options = this.getOptions();
       const sampleRate = options.sampleRate;
-      let closure_6 = callback9(type);
-      const tmp2 = callback8(type);
+      let closure_6 = outer1_16(type);
+      const tmp2 = outer1_15(type);
+      let closure_7 = tmp2;
       let closure_8 = "before send for type `" + type.type || "error" + "`";
       if (undefined !== sampleRate) {
-        const parseSampleRateResult = callback(closure_1[24]).parseSampleRate(sampleRate);
-        const obj = callback(closure_1[24]);
+        const parseSampleRateResult = callback(813).parseSampleRate(sampleRate);
+        let obj = callback(813);
       }
       if (tmp2) {
         if ("number" === typeof parseSampleRateResult) {
           if (obj2.safeMathRandom() > parseSampleRateResult) {
             self.recordDroppedEvent("sample_rate", "error");
-            const _HermesInternal = HermesInternal;
-            return callback(closure_1[26]).rejectedSyncPromise(callback5("Discarding event because it's not included in the random sample (sampling rate = " + sampleRate + ")"));
+            let _HermesInternal = HermesInternal;
+            return callback(849).rejectedSyncPromise(outer1_10("Discarding event because it's not included in the random sample (sampling rate = " + sampleRate + ")"));
           }
-          const obj2 = callback(closure_1[25]);
+          obj2 = callback(808);
         }
       }
-      let closure_9 = callback7(type.type);
+      let closure_9 = outer1_14(type.type);
       const _prepareEventResult = self._prepareEvent(type, arg1, arg2, arg3);
-      const tmp3 = type.type || "error";
+      let tmp3 = type.type || "error";
       const nextPromise = self._prepareEvent(type, arg1, arg2, arg3).then((sdkProcessingMetadata) => {
         let beforeSend;
         let beforeSendSpan;
@@ -854,51 +848,52 @@ export const Client = () => {
         let ignoreSpans;
         if (null === sdkProcessingMetadata) {
           self.recordDroppedEvent("event_processor", closure_9);
-          throw callback2("An event processor returned `null`, will not send event.");
+          throw outer2_10("An event processor returned `null`, will not send event.");
         } else {
-          if (arg1.data) {
-            if (true === arg1.data.__sentry__) {
+          if (closure_1.data) {
+            if (true === closure_1.data.__sentry__) {
               return sdkProcessingMetadata;
             }
           }
           let obj = self;
           ({ beforeSend, beforeSendTransaction, beforeSendSpan, ignoreSpans } = options);
-          if (callback5(sdkProcessingMetadata)) {
+          if (outer2_15(sdkProcessingMetadata)) {
             if (beforeSend) {
               let beforeSendResult = beforeSend(sdkProcessingMetadata, tmp3);
             }
-            return function _validateBeforeSendResult(beforeSendResult, closure_8) {
+            return (function _validateBeforeSendResult(beforeSendResult, closure_8) {
+              const callback = closure_8;
               const combined = "" + closure_8 + " must return `null` or a valid event.";
               if (obj.isThenable(beforeSendResult)) {
                 return beforeSendResult.then((arg0) => {
                   if (!obj.isPlainObject(arg0)) {
                     if (null !== arg0) {
-                      throw callback(combined);
+                      throw outer4_9(combined);
                     }
                   }
                   return arg0;
-                }, (arg0) => {
-                  throw callback("" + arg1 + " rejected with " + arg0);
+                }, (rejected) => {
+                  throw outer4_9("" + closure_0 + " rejected with " + rejected);
                 });
               } else {
                 if (!obj2.isPlainObject(beforeSendResult)) {
                   if (null !== beforeSendResult) {
-                    throw callback(combined);
+                    throw outer3_9(combined);
                   }
                 }
                 return beforeSendResult;
               }
-              const obj = closure_8(combined[14]);
-            }(beforeSendResult, closure_8);
+              obj = callback(804);
+            })(beforeSendResult, closure_8);
           }
           let tmp6 = sdkProcessingMetadata;
-          if (callback6(sdkProcessingMetadata)) {
+          if (outer2_16(sdkProcessingMetadata)) {
             if (beforeSendSpan) {
-              const result = sdkProcessingMetadata(arg1[28]).convertTransactionEventToSpanJson(sdkProcessingMetadata);
+              const result = type(closure_1[28]).convertTransactionEventToSpanJson(sdkProcessingMetadata);
               if (null != ignoreSpans) {
                 if (ignoreSpans.length) {
                   beforeSendResult = null;
-                  const obj3 = sdkProcessingMetadata(arg1[29]);
+                  const obj3 = type(closure_1[29]);
                 }
               }
               let mergeResult = sdkProcessingMetadata;
@@ -926,19 +921,19 @@ export const Client = () => {
                   if (null != ignoreSpans) {
                     let tmp30 = ignoreSpans;
                     if (ignoreSpans.length) {
-                      let tmp31 = sdkProcessingMetadata;
-                      let tmp32 = arg1;
-                      let obj7 = sdkProcessingMetadata(arg1[29]);
+                      let tmp31 = type;
+                      let tmp32 = closure_1;
+                      let obj7 = type(closure_1[29]);
                       let tmp33 = nextResult;
                       let tmp34 = ignoreSpans;
                       if (obj7.shouldIgnoreSpan(tmp67, ignoreSpans)) {
-                        let tmp52 = sdkProcessingMetadata;
-                        let tmp53 = arg1;
-                        let obj9 = sdkProcessingMetadata(arg1[29]);
+                        let tmp52 = type;
+                        let tmp53 = closure_1;
+                        let obj9 = type(closure_1[29]);
                         let tmp54 = spans;
                         let tmp55 = nextResult;
                         let reparentChildSpansResult = obj9.reparentChildSpans(tmp26, tmp67);
-                        // continue
+                        continue;
                       }
                     }
                   }
@@ -952,9 +947,9 @@ export const Client = () => {
                       let tmp50 = beforeSendSpanResult1;
                       let arr = items.push(tmp42);
                     } else {
-                      let tmp43 = sdkProcessingMetadata;
-                      let tmp44 = arg1;
-                      let obj8 = sdkProcessingMetadata(arg1[30]);
+                      let tmp43 = type;
+                      let tmp44 = closure_1;
+                      let obj8 = type(closure_1[30]);
                       let showSpanDropWarningResult1 = obj8.showSpanDropWarning();
                       let tmp46 = items;
                       let tmp47 = nextResult;
@@ -972,9 +967,9 @@ export const Client = () => {
                 }
                 mergeResult.spans = items;
                 tmp9 = mergeResult;
-                const tmp26 = spans;
+                tmp26 = spans;
               }
-              const obj2 = sdkProcessingMetadata(arg1[28]);
+              const obj2 = type(closure_1[28]);
             } else {
               tmp9 = sdkProcessingMetadata;
             }
@@ -998,51 +993,52 @@ export const Client = () => {
         let ignoreSpans;
         if (null === sdkProcessingMetadata) {
           self.recordDroppedEvent("event_processor", closure_9);
-          throw callback2("An event processor returned `null`, will not send event.");
+          throw outer2_10("An event processor returned `null`, will not send event.");
         } else {
-          if (arg1.data) {
-            if (true === arg1.data.__sentry__) {
+          if (closure_1.data) {
+            if (true === closure_1.data.__sentry__) {
               return sdkProcessingMetadata;
             }
           }
           let obj = self;
           ({ beforeSend, beforeSendTransaction, beforeSendSpan, ignoreSpans } = options);
-          if (callback5(sdkProcessingMetadata)) {
+          if (outer2_15(sdkProcessingMetadata)) {
             if (beforeSend) {
               let beforeSendResult = beforeSend(sdkProcessingMetadata, tmp3);
             }
-            return function _validateBeforeSendResult(beforeSendResult, closure_8) {
+            return (function _validateBeforeSendResult(beforeSendResult, closure_8) {
+              const callback = closure_8;
               const combined = "" + closure_8 + " must return `null` or a valid event.";
               if (obj.isThenable(beforeSendResult)) {
                 return beforeSendResult.then((arg0) => {
                   if (!obj.isPlainObject(arg0)) {
                     if (null !== arg0) {
-                      throw callback(combined);
+                      throw outer4_9(combined);
                     }
                   }
                   return arg0;
-                }, (arg0) => {
-                  throw callback("" + arg1 + " rejected with " + arg0);
+                }, (rejected) => {
+                  throw outer4_9("" + closure_0 + " rejected with " + rejected);
                 });
               } else {
                 if (!obj2.isPlainObject(beforeSendResult)) {
                   if (null !== beforeSendResult) {
-                    throw callback(combined);
+                    throw outer3_9(combined);
                   }
                 }
                 return beforeSendResult;
               }
-              const obj = closure_8(combined[14]);
-            }(beforeSendResult, closure_8);
+              obj = callback(804);
+            })(beforeSendResult, closure_8);
           }
           let tmp6 = sdkProcessingMetadata;
-          if (callback6(sdkProcessingMetadata)) {
+          if (outer2_16(sdkProcessingMetadata)) {
             if (beforeSendSpan) {
-              const result = sdkProcessingMetadata(arg1[28]).convertTransactionEventToSpanJson(sdkProcessingMetadata);
+              const result = type(closure_1[28]).convertTransactionEventToSpanJson(sdkProcessingMetadata);
               if (null != ignoreSpans) {
                 if (ignoreSpans.length) {
                   beforeSendResult = null;
-                  const obj3 = sdkProcessingMetadata(arg1[29]);
+                  const obj3 = type(closure_1[29]);
                 }
               }
               let mergeResult = sdkProcessingMetadata;
@@ -1070,19 +1066,19 @@ export const Client = () => {
                   if (null != ignoreSpans) {
                     let tmp30 = ignoreSpans;
                     if (ignoreSpans.length) {
-                      let tmp31 = sdkProcessingMetadata;
-                      let tmp32 = arg1;
-                      let obj7 = sdkProcessingMetadata(arg1[29]);
+                      let tmp31 = type;
+                      let tmp32 = closure_1;
+                      let obj7 = type(closure_1[29]);
                       let tmp33 = nextResult;
                       let tmp34 = ignoreSpans;
                       if (obj7.shouldIgnoreSpan(tmp67, ignoreSpans)) {
-                        let tmp52 = sdkProcessingMetadata;
-                        let tmp53 = arg1;
-                        let obj9 = sdkProcessingMetadata(arg1[29]);
+                        let tmp52 = type;
+                        let tmp53 = closure_1;
+                        let obj9 = type(closure_1[29]);
                         let tmp54 = spans;
                         let tmp55 = nextResult;
                         let reparentChildSpansResult = obj9.reparentChildSpans(tmp26, tmp67);
-                        // continue
+                        continue;
                       }
                     }
                   }
@@ -1096,9 +1092,9 @@ export const Client = () => {
                       let tmp50 = beforeSendSpanResult1;
                       let arr = items.push(tmp42);
                     } else {
-                      let tmp43 = sdkProcessingMetadata;
-                      let tmp44 = arg1;
-                      let obj8 = sdkProcessingMetadata(arg1[30]);
+                      let tmp43 = type;
+                      let tmp44 = closure_1;
+                      let obj8 = type(closure_1[30]);
                       let showSpanDropWarningResult1 = obj8.showSpanDropWarning();
                       let tmp46 = items;
                       let tmp47 = nextResult;
@@ -1116,9 +1112,9 @@ export const Client = () => {
                 }
                 mergeResult.spans = items;
                 tmp9 = mergeResult;
-                const tmp26 = spans;
+                tmp26 = spans;
               }
-              const obj2 = sdkProcessingMetadata(arg1[28]);
+              const obj2 = type(closure_1[28]);
             } else {
               tmp9 = sdkProcessingMetadata;
             }
@@ -1138,18 +1134,18 @@ export const Client = () => {
         if (null === sdkProcessingMetadata) {
           self.recordDroppedEvent("before_send", closure_9);
           if (closure_6) {
-            self.recordDroppedEvent("before_send", "span", 1 + sdkProcessingMetadata.spans || [].length);
-            const arr = sdkProcessingMetadata.spans || [];
+            self.recordDroppedEvent("before_send", "span", 1 + type.spans || [].length);
+            const arr = type.spans || [];
           }
           const _HermesInternal = HermesInternal;
-          throw callback2("" + closure_8 + " returned `null`, will not send event.");
+          throw outer2_10("" + closure_8 + " returned `null`, will not send event.");
         } else {
-          let session = arg2.getSession();
+          session = session.getSession();
           if (!session) {
-            session = arg3.getSession();
+            session = session2.getSession();
           }
-          let tmp3 = tmp2;
-          if (tmp2) {
+          let tmp3 = closure_7;
+          if (closure_7) {
             tmp3 = session;
           }
           if (tmp3) {
@@ -1176,26 +1172,26 @@ export const Client = () => {
           const transaction_info = sdkProcessingMetadata.transaction_info;
           if (closure_6) {
             if (transaction_info) {
-              if (sdkProcessingMetadata.transaction !== sdkProcessingMetadata.transaction) {
+              if (sdkProcessingMetadata.transaction !== type.transaction) {
                 const _Object = Object;
                 const obj = { source: "custom" };
                 sdkProcessingMetadata.transaction_info = Object.assign({}, transaction_info, obj);
               }
             }
           }
-          self.sendEvent(sdkProcessingMetadata, arg1);
+          self.sendEvent(sdkProcessingMetadata, closure_1);
           return sdkProcessingMetadata;
         }
       }).then(null, (originalException) => {
-        if (!callback4(originalException)) {
-          if (!callback3(originalException)) {
-            let obj = { mechanism: { priority: false, "Bool(false)": false } };
+        if (!outer2_12(originalException)) {
+          if (!outer2_11(originalException)) {
+            let obj = { mechanism: { handled: false, type: "internal" } };
             obj = { __sentry__: true };
             obj.data = obj;
             obj.originalException = originalException;
             self.captureException(originalException, obj);
             const _HermesInternal = HermesInternal;
-            throw callback("Event processing pipeline threw an error, original event will not be sent. Details have been sent as a new event.\nReason: " + originalException);
+            throw outer2_9("Event processing pipeline threw an error, original event will not be sent. Details have been sent as a new event.\nReason: " + originalException);
           }
         }
         throw originalException;
@@ -1206,7 +1202,7 @@ export const Client = () => {
     key: "_process",
     value: function _process(arg0, arg1) {
       let closure_0 = arg1;
-      let closure_1 = this;
+      const self = this;
       this._numProcessing = this._numProcessing + 1;
       const _promiseBuffer = this._promiseBuffer;
       _promiseBuffer.add(arg0).then((arg0) => {
@@ -1214,8 +1210,8 @@ export const Client = () => {
         return arg0;
       }, (arg0) => {
         self._numProcessing = self._numProcessing - 1;
-        if (arg0 === arg1(self[5]).SENTRY_BUFFER_FULL_ERROR) {
-          self.recordDroppedEvent("queue_overflow", arg1);
+        if (arg0 === callback(_self[5]).SENTRY_BUFFER_FULL_ERROR) {
+          self.recordDroppedEvent("queue_overflow", callback);
         }
         return arg0;
       });
@@ -1237,34 +1233,34 @@ export const Client = () => {
     key: "_flushOutcomes",
     value: function _flushOutcomes() {
       const self = this;
-      if (callback(closure_1[8]).DEBUG_BUILD) {
-        const debug = callback(closure_1[9]).debug;
+      if (callback(800).DEBUG_BUILD) {
+        const debug = callback(801).debug;
         debug.log("Flushing outcomes...");
       }
       const _clearOutcomesResult = self._clearOutcomes();
       if (0 !== _clearOutcomesResult.length) {
-        const DEBUG_BUILD = callback(closure_1[8]).DEBUG_BUILD;
+        const DEBUG_BUILD = callback(800).DEBUG_BUILD;
         if (self._dsn) {
           if (DEBUG_BUILD) {
-            const debug4 = callback(closure_1[9]).debug;
+            const debug4 = callback(801).debug;
             debug4.log("Sending outcomes:", _clearOutcomesResult);
           }
           let tunnel = self._options.tunnel;
           if (tunnel) {
-            tunnel = callback(closure_1[7]).dsnToString(self._dsn);
-            const obj2 = callback(closure_1[7]);
+            tunnel = callback(814).dsnToString(self._dsn);
+            const obj2 = callback(814);
           }
-          self.sendEnvelope(callback(closure_1[27]).createClientReportEnvelope(_clearOutcomesResult, tunnel));
-          const obj = callback(closure_1[27]);
+          self.sendEnvelope(callback(865).createClientReportEnvelope(_clearOutcomesResult, tunnel));
+          const obj = callback(865);
         } else if (DEBUG_BUILD) {
-          const debug3 = callback(closure_1[9]).debug;
+          const debug3 = callback(801).debug;
           debug3.log("No dsn provided, will not send outcomes");
         }
-      } else if (callback(closure_1[8]).DEBUG_BUILD) {
-        const debug2 = callback(closure_1[9]).debug;
+      } else if (callback(800).DEBUG_BUILD) {
+        const debug2 = callback(801).debug;
         debug2.log("No outcomes to send");
       }
     }
   };
-  return callback2(Client, items);
-}();
+  return _defineProperties(Client, items);
+})();

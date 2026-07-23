@@ -1,9 +1,17 @@
-// Module ID: 11071
-// Function ID: 86124
+// Module ID: 11081
+// Function ID: 86174
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 664, 566, 686, 2]
 
-// Module 11071 (_isNativeReflectConstruct)
+// Module 11081 (_isNativeReflectConstruct)
+import closure_0 from "set";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +21,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -68,14 +76,14 @@ function _createForOfIteratorHelperLoose(@@iterator) {
     if (tmp) {
       closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (initialize >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        initialize = tmp3 + 1;
+        obj.value = length[+initialize];
       }
       return obj;
     };
@@ -128,7 +136,7 @@ function updateImpressionCaches(flag2) {
       closure_7.itemImpressions = itemImpressions1.slice(-2048);
     }
     let num10 = 1000;
-    if (!closure_12) {
+    if (!c12) {
       num10 = closure_6;
     }
     const _Set = Set;
@@ -144,8 +152,8 @@ function updateImpressionCaches(flag2) {
     let tmp27 = null;
     if (!iter.done) {
       do {
-        let tmp28 = closure_5;
-        let tmp29 = closure_5(iter2.value, 2);
+        let tmp28 = callback3;
+        let tmp29 = callback3(iter2.value, 2);
         [tmp30, tmp31] = tmp29;
         if (tmp31 < diff) {
           let addResult = set.add(tmp30);
@@ -167,38 +175,31 @@ function updateImpressionCaches(flag2) {
     if (null != tmp27) {
       num11 = tmp27;
     }
-    let closure_10 = num11;
-    let closure_11 = true;
+    let c11 = true;
   } else {
     const _Date = Date;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = 3 * importDefault(dependencyMap[6]).Millis.DAY;
+let closure_6 = 3 * require("set").Millis.DAY;
 let closure_7 = { itemImpressions: [], hidden: false };
-const set = new Set();
-const set1 = new Set();
-let closure_10 = 0;
-let closure_11 = false;
-let closure_12 = false;
-let tmp4 = (PersistedStore) => {
+let set = new Set();
+let set1 = new Set();
+let c10 = 0;
+let c11 = false;
+let c12 = false;
+let tmp4 = ((PersistedStore) => {
   class ContentInventoryPersistedStore {
     constructor() {
       self = this;
       tmp = ContentInventoryPersistedStore(this, ContentInventoryPersistedStore);
-      obj = closure_3(ContentInventoryPersistedStore);
-      tmp2 = closure_2;
-      if (closure_13()) {
+      obj = outer1_3(ContentInventoryPersistedStore);
+      tmp2 = outer1_2;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -207,62 +208,62 @@ let tmp4 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ContentInventoryPersistedStore;
   callback2(ContentInventoryPersistedStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       let obj = arg0;
       obj = {};
-      const merged = Object.assign(obj);
+      const merged = Object.assign(outer1_7);
       if (null == arg0) {
         obj = {};
       }
       const merged1 = Object.assign(obj);
+      outer1_7 = obj;
     }
   };
   const items = [obj, , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[1] = obj;
   obj = {
     key: "getImpressionCappedItemIds",
     value() {
-      callback3();
-      return closure_8;
+      outer1_16();
+      return outer1_8;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getDebugFastImpressionCappingEnabled",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[4] = {
     key: "hidden",
     get() {
-      return hidden.hidden;
+      return outer1_7.hidden;
     }
   };
   items[5] = {
     key: "reset",
     value() {
-      let closure_7 = { itemImpressions: [], hidden: false };
+      const outer1_7 = { itemImpressions: [], hidden: false };
     }
   };
   return callback(ContentInventoryPersistedStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp4.displayName = "ContentInventoryPersistedStore";
 tmp4.persistKey = "ContentInventoryPersistedStore";
-tmp4 = new tmp4(importDefault(dependencyMap[8]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS: function handleImpressionsTracked(itemIds) {
     let iter3;
-    if (!closure_11) {
+    if (!c11) {
       updateImpressionCaches();
     }
     const timestamp = Date.now();
@@ -274,8 +275,8 @@ tmp4 = new tmp4(importDefault(dependencyMap[8]), {
     if (!iter.done) {
       do {
         let value = iter2.value;
-        let tmp5 = closure_9;
-        if (!closure_9.has(value)) {
+        let tmp5 = set1;
+        if (!set1.has(value)) {
           let tmp6 = closure_7;
           let itemImpressions = closure_7.itemImpressions;
           let items = [value, timestamp];
@@ -304,6 +305,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[8]), {
     closure_7.hidden = !closure_7.hidden;
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/content_inventory/ContentInventoryPersistedStore.tsx");
+let result = set.fileFinishedImporting("modules/content_inventory/ContentInventoryPersistedStore.tsx");
 
 export default tmp4;

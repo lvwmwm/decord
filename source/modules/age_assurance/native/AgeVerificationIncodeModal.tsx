@@ -1,38 +1,43 @@
-// Module ID: 7534
-// Function ID: 60289
+// Module ID: 7540
+// Function ID: 60326
 // Name: getScreens
-// Dependencies: [494206976, 365887488, 131072, 527892480, 553648128, 1996488704, 3154116625, 2617245700, 1996488714, 33554449, 2113929216]
+// Dependencies: [31, 33, 4130, 689, 4337, 1212, 5788, 7541, 7546, 5519, 2]
 // Exports: default
 
-// Module 7534 (getScreens)
+// Module 7540 (getScreens)
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function getScreens(headerStyle, headerTitle) {
-  headerTitle = arg2;
-  const importDefault = arg3;
+  const _require = arg2;
+  let closure_1 = arg3;
   const dependencyMap = arg4;
   function handleClose() {
-    arg4();
-    let arr = arg3(arg4[4]);
+    dependencyMap();
+    let arr = callback2(4337);
     arr = arr.pop();
   }
   const uRL = new URL(arg2);
   const origin = uRL.origin;
   let obj = {};
   obj = { headerStyle: headerStyle.headerStyle };
-  const intl = headerTitle(dependencyMap[5]).intl;
-  obj.headerTitle = intl.string(headerTitle(dependencyMap[5]).t.wJVyYR);
+  let intl = _require(1212).intl;
+  obj.headerTitle = intl.string(_require(1212).t.wJVyYR);
   obj.headerLeft = function headerLeft() {
     const obj = { onPress: handleClose };
-    const intl = arg2(arg4[5]).intl;
-    obj.text = intl.string(arg2(arg4[5]).t.cpT0Cq);
-    return handleClose(arg2(arg4[6]).HeaderActionButton, obj);
+    const intl = callback(1212).intl;
+    obj.text = intl.string(callback(1212).t.cpT0Cq);
+    return handleClose(callback(5788).HeaderActionButton, obj);
   };
   obj.render = function render(arg0, arg1) {
-    const arg2 = arg1;
-    return handleClose(arg3(arg4[7]), {
+    let closure_0 = arg1;
+    return handleClose(callback2(7541), {
       onClose: handleClose,
       trustedOrigin: origin,
       onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
-        return arg1.navigate(constants.VERIFY_AGE, { injectedJavaScriptBeforeContentLoaded });
+        return navigation.navigate(outer2_5.VERIFY_AGE, { injectedJavaScriptBeforeContentLoaded });
       }
     });
   };
@@ -42,43 +47,37 @@ function getScreens(headerStyle, headerTitle) {
     headerTitle,
     headerLeft() {
       const obj = { onPress: handleClose };
-      const intl = arg2(arg4[5]).intl;
-      obj.text = intl.string(arg2(arg4[5]).t.cpT0Cq);
-      return handleClose(arg2(arg4[6]).HeaderActionButton, obj);
+      const intl = callback(1212).intl;
+      obj.text = intl.string(callback(1212).t.cpT0Cq);
+      return handleClose(callback(5788).HeaderActionButton, obj);
     },
     render(injectedJavaScriptBeforeContentLoaded) {
-      return handleClose(arg3(arg4[8]), { webviewUrl: arg2, onComplete: arg3, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
+      return handleClose(callback2(7546), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
     }
   };
   obj[constants.VERIFY_AGE] = obj;
   return obj;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
 let closure_5 = { METHOD_SELECT: "METHOD_SELECT", VERIFY_AGE: "VERIFY_AGE" };
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWER };
-obj.headerStyle = obj;
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/age_assurance/native/AgeVerificationIncodeModal.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.headerStyle = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/age_assurance/native/AgeVerificationIncodeModal.tsx");
 
 export default function AgeVerificationIncodeModal(webviewUrl) {
   webviewUrl = webviewUrl.webviewUrl;
-  const arg1 = webviewUrl;
   const onComplete = webviewUrl.onComplete;
-  const importDefault = onComplete;
   const onClose = webviewUrl.onClose;
-  const dependencyMap = onClose;
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   const React = tmp;
-  const intl = arg1(dependencyMap[5]).intl;
-  const stringResult = intl.string(arg1(dependencyMap[5]).t.wJVyYR);
+  const intl = webviewUrl(onClose[5]).intl;
+  const stringResult = intl.string(webviewUrl(onClose[5]).t.wJVyYR);
   const jsx = stringResult;
   const items = [tmp, webviewUrl, onComplete, onClose, stringResult];
-  const memo = React.useMemo(() => callback(tmp, stringResult, webviewUrl, onComplete, onClose), items);
+  const memo = React.useMemo(() => outer1_7(result, closure_4, webviewUrl, onComplete, onClose), items);
   const obj = { screens: memo, initialRouteName: constants.METHOD_SELECT };
-  const intl2 = arg1(dependencyMap[5]).intl;
-  obj.headerBackTitle = intl2.string(arg1(dependencyMap[5]).t.13/7kX);
-  return jsx(arg1(dependencyMap[9]).Navigator, obj);
+  const intl2 = webviewUrl(onClose[5]).intl;
+  obj.headerBackTitle = intl2.string(webviewUrl(onClose[5]).t["13/7kX"]);
+  return jsx(webviewUrl(onClose[9]).Navigator, { screens: memo, initialRouteName: constants.METHOD_SELECT });
 };

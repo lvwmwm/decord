@@ -1,13 +1,13 @@
-// Module ID: 13266
-// Function ID: 100663
+// Module ID: 13380
+// Function ID: 102819
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 13266 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { EmbeddedActivitiesStore: true, lavenderblush: true }, variations: { [1]: { EmbeddedActivitiesStore: "<string:1040334421>", lavenderblush: "<string:1040334338>" }, [2]: { EmbeddedActivitiesStore: 1766088043, lavenderblush: 827788593 } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/notifications/native/NotifSettingsExperiments.tsx");
+// Module 13380 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-declarative-notif-settings", kind: "user", defaultConfig: { enabled: false, clearDeclarative: false }, variations: { [1]: { enabled: true, clearDeclarative: false }, [2]: { enabled: false, clearDeclarative: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/notifications/native/NotifSettingsExperiments.tsx");
 
 export const declarativeNotifSettingsExperiment = apexExperiment;

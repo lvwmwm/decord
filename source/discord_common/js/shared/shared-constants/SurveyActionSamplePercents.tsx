@@ -1,10 +1,9 @@
-// Module ID: 9275
-// Function ID: 72498
+// Module ID: 9282
+// Function ID: 72539
 // Name: SURVEY_ACTION_SAMPLE_PERCENTS
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 9275 (SURVEY_ACTION_SAMPLE_PERCENTS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/SurveyActionSamplePercents.tsx");
+// Module 9282 (SURVEY_ACTION_SAMPLE_PERCENTS)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/SurveyActionSamplePercents.tsx");
 
-export const SURVEY_ACTION_SAMPLE_PERCENTS = { 0: "ba11c4394297d005e32400d962515cfe", 0: "wumpus-luigi", -9223372036854775808: "png", 9223372036854775807: true, 9223372036854775807: "/assets/images/native/wumpus", 9223372036854775807: 84, 0: 66, 0: null, 0: "1f7ad1fdc74f906f486dc69b445bb809", 9223372036854775807: "wumpus-wump", 0: "png", 0: true };
+export const SURVEY_ACTION_SAMPLE_PERCENTS = { nitro_unsubbed: 100, checkpoint_completed: 10, quest_completed: 25, ad_impression_quest_bar_opt_in: 10, ad_impression_quest_bar_opt_out: 100, bounty_session_completed: 100, bounty_immediate_dismissal: 5, bounty_abandoned: 25, hangout_window_set: 100, populated_clip_gallery_closed: 100, topical_navigation_multiple_impressions: 100, guild_room_joined: 100 };

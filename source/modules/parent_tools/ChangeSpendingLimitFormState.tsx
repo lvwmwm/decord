@@ -1,27 +1,27 @@
-// Module ID: 13697
-// Function ID: 103666
+// Module ID: 13811
+// Function ID: 105822
 // Name: useChangeSpendingLimitFormState
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [5, 57, 31, 6769, 13728, 566, 5619, 13730, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 13697 (useChangeSpendingLimitFormState)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
+// Module 13811 (useChangeSpendingLimitFormState)
+import initialize from "initialize";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/parent_tools/ChangeSpendingLimitFormState.tsx");
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/parent_tools/ChangeSpendingLimitFormState.tsx");
 
 export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFormState(teenId) {
-  const arg1 = teenId;
-  const ParentalControlledSpendingLimit = arg1(dependencyMap[4]).ParentalControlledSpendingLimit;
-  const controlledSetting = ParentalControlledSpendingLimit.useControlledSetting(teenId);
-  const dependencyMap = controlledSetting;
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_5];
+  const _require = teenId;
+  const ParentalControlledSpendingLimit = _require(controlledSetting[4]).ParentalControlledSpendingLimit;
+  controlledSetting = ParentalControlledSpendingLimit.useControlledSetting(teenId);
+  let obj = _require(controlledSetting[5]);
+  const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => tmp14.getSpendingLimit());
-  const items1 = [closure_5];
-  const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items1, () => {
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = _require(controlledSetting[5]).useStateFromStores(items1, () => {
     const monthlyPurchases = tmp14.getMonthlyPurchases();
     let total_amount;
     if (null != monthlyPurchases) {
@@ -49,17 +49,15 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
     str = currency;
   }
   const formatted = str.toLowerCase();
-  let callback = formatted;
-  const tmp8 = arg1(dependencyMap[6]).CurrencyExponents[formatted];
+  const tmp8 = _require(controlledSetting[6]).CurrencyExponents[formatted];
   let num = 2;
   if (null != tmp8) {
     num = tmp8;
   }
-  const callback2 = num;
   const items2 = [formatted];
-  const memo = React.useMemo(() => arg0(controlledSetting[7]).getCurrencySymbol(formatted), items2);
-  const memo1 = React.useMemo(arg1(dependencyMap[7]).getNextRenewalDateLabel, []);
-  const tmp11 = callback2(React.useState(() => {
+  const memo = React.useMemo(() => teenId(controlledSetting[7]).getCurrencySymbol(formatted), items2);
+  const memo1 = React.useMemo(_require(controlledSetting[7]).getNextRenewalDateLabel, []);
+  const tmp11 = num(React.useState(() => {
     let str = "";
     if (null != controlledSetting) {
       const _String = String;
@@ -68,32 +66,33 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
     return str;
   }), 2);
   const first = tmp11[0];
-  const React = tmp11[1];
+  React = tmp11[1];
   const items3 = [num];
   let tmp14 = "" === first;
-  callback = React.useCallback((arg0) => callback(arg0(controlledSetting[7]).sanitizeAmountInput(arg0, num)), items3);
+  const callback = React.useCallback((arg0) => callback(teenId(controlledSetting[7]).sanitizeAmountInput(arg0, num)), items3);
   if (tmp14) {
     tmp14 = null != controlledSetting;
   }
-  closure_5 = tmp14;
+  _isNativeReflectConstruct = tmp14;
   const parsed = parseFloat(first);
   const tmp16 = !Number.isNaN(parsed) && parsed >= 0;
   let tmp17 = tmp14;
   if (!tmp14) {
     tmp17 = tmp16;
   }
+  let closure_6 = tmp17;
   let rounded = null;
   if (tmp16) {
     const _Math = Math;
     rounded = Math.round(parsed * 10 ** num);
   }
-  const tmp20 = callback2(React.useState(false), 2);
+  const tmp20 = num(React.useState(false), 2);
   let closure_8 = tmp20[1];
   // CreateGeneratorClosureLongIndex (0x67)
   const items4 = [tmp17, tmp14, rounded, teenId, formatted];
   obj = { amountInput: first, handleAmountChange: callback, currency: formatted, currencySymbol: memo, exponent: num, isClearingCap: tmp14 };
   let tmp22 = null != stateFromStores1;
-  const callback1 = React.useCallback(callback(tmp), items4);
+  const callback1 = React.useCallback(formatted(tmp), items4);
   if (tmp22) {
     tmp22 = stateFromStores1 > 0;
   }

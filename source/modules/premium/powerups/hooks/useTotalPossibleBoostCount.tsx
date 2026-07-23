@@ -1,54 +1,58 @@
-// Module ID: 14930
-// Function ID: 112417
+// Module ID: 15046
+// Function ID: 114585
 // Name: useTotalPossibleBoostCount
-// Dependencies: []
+// Dependencies: [31, 4018, 653, 2]
 // Exports: default
 
-// Module 14930 (useTotalPossibleBoostCount)
-const useMemo = require(dependencyMap[0]).useMemo;
-const _module = require(dependencyMap[1]);
-({ MULTIPLE_PURCHASEABLE_PREMIUM_FEATURES_BOOST_INFO: closure_1, PURCHASABLE_PREMIUM_FEATURES_BOOST_INFO: closure_2 } = _module);
-const _module1 = require(dependencyMap[2]);
-({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_3, BoostedGuildTiers: closure_4, GuildFeatures: closure_5 } = _module1);
-const _module2 = require(dependencyMap[3]);
-const result = _module2.fileFinishedImporting("modules/premium/powerups/hooks/useTotalPossibleBoostCount.tsx");
+// Module 15046 (useTotalPossibleBoostCount)
+import { useMemo } from "result";
+import BoostedGuildTiers from "BoostedGuildTiers";
+import ME from "ME";
+
+let closure_1;
+let closure_2;
+let closure_3;
+let closure_4;
+let closure_5;
+({ MULTIPLE_PURCHASEABLE_PREMIUM_FEATURES_BOOST_INFO: closure_1, PURCHASABLE_PREMIUM_FEATURES_BOOST_INFO: closure_2 } = BoostedGuildTiers);
+({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_3, BoostedGuildTiers: closure_4, GuildFeatures: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/premium/powerups/hooks/useTotalPossibleBoostCount.tsx");
 
 export default function useTotalPossibleBoostCount(arg0) {
   const useMemo = arg0;
   const items = [arg0];
   return useMemo(() => {
-    if (null == arg0) {
+    if (null == num) {
       return 0;
     } else {
       let hasItem;
-      if (null != arg0) {
-        const features = arg0.features;
-        hasItem = features.has(obj.PREMIUM_TIER_3_OVERRIDE);
+      if (null != num) {
+        const features = num.features;
+        hasItem = features.has(outer1_5.PREMIUM_TIER_3_OVERRIDE);
       }
-      let num = 0;
+      num = 0;
       if (true !== hasItem) {
-        num = closure_3[closure_4.TIER_3];
+        num = outer1_3[outer1_4.TIER_3];
       }
-      const arg0 = num;
       const _Object = Object;
-      const values = Object.values(closure_2);
+      const values = Object.values(outer1_2);
       const _Object2 = Object;
-      const combined = values.concat(Object.values(closure_1));
+      const combined = values.concat(Object.values(outer1_1));
       const item = combined.forEach((includedInLevel) => {
         let tmp = null != includedInLevel.includedInLevel;
         if (!tmp) {
           let isEnabledResult;
           if (null != includedInLevel.isEnabled) {
-            isEnabledResult = includedInLevel.isEnabled(id.id);
+            isEnabledResult = includedInLevel.isEnabled(num.id);
           }
           tmp = null != isEnabledResult && !isEnabledResult;
           const tmp4 = null != isEnabledResult && !isEnabledResult;
         }
         if (!tmp) {
-          const id = id + includedInLevel.boostPrice;
+          closure_0 = closure_0 + includedInLevel.boostPrice;
         }
       });
-      return arg0;
+      return num;
     }
   }, items);
 };

@@ -1,25 +1,24 @@
-// Module ID: 4522
-// Function ID: 39736
+// Module ID: 4526
+// Function ID: 39768
 // Name: useAccessibilityViewIsModalToggle
-// Dependencies: []
+// Dependencies: [31, 4527, 2]
 // Exports: default
 
-// Module 4522 (useAccessibilityViewIsModalToggle)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("design/components/AccessibilityView/useAccessibilityViewIsModalToggle.native.tsx");
+// Module 4526 (useAccessibilityViewIsModalToggle)
+import result from "result";
+
+let result = require("set").fileFinishedImporting("design/components/AccessibilityView/useAccessibilityViewIsModalToggle.native.tsx");
 
 export default function useAccessibilityViewIsModalToggle(accessibilityViewIsModal) {
   let flag = accessibilityViewIsModal.accessibilityViewIsModal;
   if (flag === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   const nativeID = accessibilityViewIsModal.nativeID;
-  const dependencyMap = nativeID;
   let React;
   let callback;
   React = React.useRef(undefined);
-  const items = [flag, nativeID];
+  let items = [flag, nativeID];
   callback = React.useCallback(() => {
     let tmp = arg0;
     if (arg0 === undefined) {
@@ -46,11 +45,11 @@ export default function useAccessibilityViewIsModalToggle(accessibilityViewIsMod
       }
     }
   }, items);
-  const items1 = [callback];
+  let items1 = [callback];
   const effect = React.useEffect(() => {
     callback();
     return () => {
-      callback(false);
+      outer1_3(false);
     };
   }, items1);
 };

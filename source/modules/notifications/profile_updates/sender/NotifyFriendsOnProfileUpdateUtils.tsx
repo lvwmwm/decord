@@ -1,19 +1,19 @@
-// Module ID: 14459
-// Function ID: 108947
+// Module ID: 14573
+// Function ID: 111100
 // Name: onNotifyFriendsOnProfileUpdateSettingsChanged
-// Dependencies: []
+// Dependencies: [3770, 653, 3803, 675, 2]
 // Exports: onNotifyFriendsOnProfileUpdateSettingsChanged
 
-// Module 14459 (onNotifyFriendsOnProfileUpdateSettingsChanged)
-let closure_3 = require(dependencyMap[0]).NotificationSettingsUpdateType;
-const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/notifications/profile_updates/sender/NotifyFriendsOnProfileUpdateUtils.tsx");
+// Module 14573 (onNotifyFriendsOnProfileUpdateSettingsChanged)
+import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
+import { AnalyticEvents } from "ME";
+
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/notifications/profile_updates/sender/NotifyFriendsOnProfileUpdateUtils.tsx");
 
 export const onNotifyFriendsOnProfileUpdateSettingsChanged = function onNotifyFriendsOnProfileUpdateSettingsChanged(notify_friends_on_profile_update) {
-  const NotifyFriendsOnProfileUpdate = require(dependencyMap[2]).NotifyFriendsOnProfileUpdate;
+  const NotifyFriendsOnProfileUpdate = require(3803) /* explicitContentFromProto */.NotifyFriendsOnProfileUpdate;
   NotifyFriendsOnProfileUpdate.updateSetting(notify_friends_on_profile_update);
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(675);
   obj = { update_type: constants.ACCOUNT, notify_friends_on_profile_update };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

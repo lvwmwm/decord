@@ -1,32 +1,32 @@
-// Module ID: 10632
-// Function ID: 83024
+// Module ID: 10642
+// Function ID: 83074
 // Name: useCanShowTooltip
-// Dependencies: []
+// Dependencies: [31, 10643, 566, 9585, 2]
 // Exports: useCanShowTooltip
 
-// Module 10632 (useCanShowTooltip)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/tooltip/useCanShowTooltip.tsx");
+// Module 10642 (useCanShowTooltip)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/tooltip/useCanShowTooltip.tsx");
 
 export const useCanShowTooltip = function useCanShowTooltip(SCREENSHARE_SWIPE_UP_CONTROLS, arg1) {
   let flag = arg1;
   let flag2 = arg2;
-  arg1 = SCREENSHARE_SWIPE_UP_CONTROLS;
+  const _require = SCREENSHARE_SWIPE_UP_CONTROLS;
   if (arg1 === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const dependencyMap = flag2;
-  const items = [closure_4];
+  const items = [_isNativeReflectConstruct];
   const items1 = [flag2, flag, SCREENSHARE_SWIPE_UP_CONTROLS];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => closure_4.canShowTooltip(arg0) && flag2);
+  const stateFromStores = _require(flag2[2]).useStateFromStores(items, () => outer1_4.canShowTooltip(closure_0) && flag2);
   const effect = React.useEffect(() => {
     if (flag2) {
-      flag(flag2[3]).attemptToShowTooltip(arg0, flag);
+      flag(flag2[3]).attemptToShowTooltip(closure_0, flag);
       const obj = flag(flag2[3]);
     }
   }, items1);

@@ -1,20 +1,24 @@
-// Module ID: 12032
-// Function ID: 92980
+// Module ID: 12146
+// Function ID: 95131
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 8238, 8266, 5464, 12147, 4319, 5470, 4126, 1212, 1273, 1392, 12148, 4543, 2]
 // Exports: default
 
-// Module 12032 (UserProfileIncomingFriendRequest)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { flexDirection: "readFileAsBase64", alignItems: "sync" }, buttons: {}, gameIcon: { paddingTop: 2 } };
-obj = { borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG };
-obj.friendRequestNote = obj;
-let closure_7 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_profile/native/UserProfileIncomingFriendRequest.tsx");
+// Module 12146 (UserProfileIncomingFriendRequest)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { rowGap: 16, flexDirection: "column" }, buttons: { flexDirection: "row", columnGap: 12 }, gameIcon: { paddingTop: 2 } };
+_createForOfIteratorHelperLoose = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
+_createForOfIteratorHelperLoose.friendRequestNote = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileIncomingFriendRequest.tsx");
 
 export default function UserProfileIncomingFriendRequest(style) {
   let applicationId;
@@ -28,29 +32,25 @@ export default function UserProfileIncomingFriendRequest(style) {
   if (isGameRelationship === undefined) {
     isGameRelationship = false;
   }
-  const arg1 = isGameRelationship;
   ({ applicationId, showUserProfile } = style);
   let importDefault;
-  let dependencyMap;
-  let React;
-  let View;
+  let trackUserProfileAction;
+  let acceptFriendRequest;
+  let cancelFriendRequest;
   let getOrFetchApplication;
-  let tmp = callback2();
+  let tmp = _createForOfIteratorHelperLoose();
   importDefault = tmp;
-  let obj = arg1(dependencyMap[6]);
-  const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  dependencyMap = trackUserProfileAction;
-  let obj1 = arg1(dependencyMap[8]);
-  obj = { userId: user.id, applicationId, isGameRelationship, location: importDefault(dependencyMap[7])().newestAnalyticsLocation, onConfirm: showUserProfile, onCancel: showUserProfile };
+  let obj = isGameRelationship(trackUserProfileAction[6]);
+  trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
+  let obj1 = isGameRelationship(trackUserProfileAction[8]);
+  obj = { userId: user.id, applicationId, isGameRelationship, location: importDefault(trackUserProfileAction[7])().newestAnalyticsLocation, onConfirm: showUserProfile, onCancel: showUserProfile };
   const friendRequestActions = obj1.useFriendRequestActions(obj);
-  const acceptFriendRequest = friendRequestActions.acceptFriendRequest;
-  React = acceptFriendRequest;
-  const cancelFriendRequest = friendRequestActions.cancelFriendRequest;
-  View = cancelFriendRequest;
-  let obj3 = importDefault(dependencyMap[9]);
+  acceptFriendRequest = friendRequestActions.acceptFriendRequest;
+  cancelFriendRequest = friendRequestActions.cancelFriendRequest;
+  let obj3 = importDefault(trackUserProfileAction[9]);
   let name = obj3.useName(guildId, channelId, user);
   const items = [acceptFriendRequest, isGameRelationship, trackUserProfileAction];
-  let string = React.useCallback(() => {
+  let string = acceptFriendRequest.useCallback(() => {
     acceptFriendRequest();
     const obj = {};
     let str = "ACCEPT_FRIEND_REQUEST";
@@ -62,7 +62,7 @@ export default function UserProfileIncomingFriendRequest(style) {
   }, items);
   const items1 = [cancelFriendRequest, isGameRelationship, trackUserProfileAction];
   let intl = null;
-  const callback = React.useCallback(() => {
+  const callback = acceptFriendRequest.useCallback(() => {
     cancelFriendRequest();
     const obj = {};
     let str = "IGNORE_FRIEND_REQUEST";
@@ -72,7 +72,7 @@ export default function UserProfileIncomingFriendRequest(style) {
     obj.action = str;
     trackUserProfileAction(obj);
   }, items1);
-  let obj4 = arg1(dependencyMap[10]);
+  let obj4 = isGameRelationship(trackUserProfileAction[10]);
   getOrFetchApplication = obj4.useGetOrFetchApplication(applicationId);
   if (null != applicationId) {
     if (intl == getOrFetchApplication) {
@@ -80,15 +80,15 @@ export default function UserProfileIncomingFriendRequest(style) {
     }
   }
   obj = { style: items2 };
-  const items2 = [tmp.container, importDefault(dependencyMap[5])().card, style.style];
+  items2 = [tmp.container, importDefault(trackUserProfileAction[5])().card, style.style];
   let tmp12 = getOrFetchApplication;
-  let Text = arg1(dependencyMap[11]).Text;
-  obj1 = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum" };
-  intl = arg1(dependencyMap[12]).intl;
+  let Text = isGameRelationship(trackUserProfileAction[11]).Text;
+  obj1 = { variant: "text-sm/semibold", color: "text-default" };
+  intl = isGameRelationship(trackUserProfileAction[12]).intl;
   let intl2 = intl.format;
   if (null != applicationId) {
-    const t = arg1(dependencyMap[12]).t;
-    const obj2 = { username: name };
+    const t = isGameRelationship(trackUserProfileAction[12]).t;
+    let obj2 = { username: name };
     name = intl == getOrFetchApplication;
     let name1;
     if (!name) {
@@ -100,11 +100,11 @@ export default function UserProfileIncomingFriendRequest(style) {
       if (null != getOrFetchApplication) {
         let obj = {};
         obj = { id: getOrFetchApplication.id, icon: getOrFetchApplication.icon };
-        obj.source = tmp(trackUserProfileAction[14]).getApplicationIconSource(obj);
+        obj.source = _undefined(trackUserProfileAction[14]).getApplicationIconSource(obj);
         obj.size = isGameRelationship(trackUserProfileAction[13]).AvatarSizes.XXSMALL;
-        obj.style = tmp.gameIcon;
+        obj.style = _undefined.gameIcon;
         tmp = getOrFetchApplication(isGameRelationship(trackUserProfileAction[13]).Avatar, obj, getOrFetchApplication.id);
-        const obj2 = tmp(trackUserProfileAction[14]);
+        const obj2 = _undefined(trackUserProfileAction[14]);
       }
       return tmp;
     };
@@ -113,33 +113,33 @@ export default function UserProfileIncomingFriendRequest(style) {
     const tmp18 = isGameRelationship ? t.syHjLL : t.V15uUI;
   } else {
     obj3 = { username: name };
-    obj1.children = intl2(arg1(dependencyMap[12]).t.uIomXw, obj3);
+    obj1.children = intl2(isGameRelationship(trackUserProfileAction[12]).t.uIomXw, obj3);
     tmp15 = obj1;
   }
   const items3 = [tmp12(Text, tmp15), , ];
   obj4 = { userId: user.id, styles: tmp.friendRequestNote, analyticsLocation: "User Profile" };
-  items3[1] = getOrFetchApplication(importDefault(dependencyMap[15]), obj4);
+  items3[1] = getOrFetchApplication(importDefault(trackUserProfileAction[15]), obj4);
   user = callback;
-  tmp12 = View;
+  tmp12 = cancelFriendRequest;
   const obj5 = { style: tmp.buttons };
-  intl = arg1;
-  const obj6 = { <string:1986169986>: true, <string:2487833047>: true };
-  intl = arg1(dependencyMap[12]).intl;
-  obj6.text = intl.string(arg1(dependencyMap[12]).t.Zcibdf);
+  intl = isGameRelationship;
+  const obj6 = { size: "sm", variant: "primary" };
+  intl = isGameRelationship(trackUserProfileAction[12]).intl;
+  obj6.text = intl.string(isGameRelationship(trackUserProfileAction[12]).t.Zcibdf);
   obj6.onPress = string;
-  const items4 = [getOrFetchApplication(arg1(dependencyMap[16]).Button, obj6), ];
-  obj1 = arg1(dependencyMap[16]).Button;
-  const obj7 = {};
-  intl2 = arg1(dependencyMap[12]).intl;
+  const items4 = [getOrFetchApplication(isGameRelationship(trackUserProfileAction[16]).Button, obj6), ];
+  obj1 = isGameRelationship(trackUserProfileAction[16]).Button;
+  const obj7 = { size: "sm", variant: "secondary" };
+  intl2 = isGameRelationship(trackUserProfileAction[12]).intl;
   string = intl2.string;
-  isGameRelationship = string(arg1(dependencyMap[12]).t.xuio0C);
+  isGameRelationship = string(isGameRelationship(trackUserProfileAction[12]).t.xuio0C);
   obj7.text = isGameRelationship;
   obj7.onPress = callback;
   tmp = getOrFetchApplication(obj1, obj7);
   items4[1] = tmp;
   obj5.children = items4;
-  Text = callback(View, obj5);
+  Text = callback(cancelFriendRequest, obj5);
   items3[2] = Text;
   obj.children = items3;
-  callback(View, obj);
+  callback(cancelFriendRequest, obj);
 };

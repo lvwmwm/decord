@@ -1,14 +1,13 @@
-// Module ID: 9559
-// Function ID: 74492
+// Module ID: 9566
+// Function ID: 74533
 // Name: EXPRESSION_PICKER_ACTION_SHEET_KEY
-// Dependencies: []
+// Dependencies: [4098, 9567, 1934, 2]
 // Exports: openExpressionPickerActionSheet
 
-// Module 9559 (EXPRESSION_PICKER_ACTION_SHEET_KEY)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/expression_picker/native/openExpressionPickerActionSheet.tsx");
+// Module 9566 (EXPRESSION_PICKER_ACTION_SHEET_KEY)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/expression_picker/native/openExpressionPickerActionSheet.tsx");
 
 export const EXPRESSION_PICKER_ACTION_SHEET_KEY = "ExpressionPickerActionSheet";
 export const openExpressionPickerActionSheet = function openExpressionPickerActionSheet(arg0) {
-  importDefault(dependencyMap[0]).openLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), "ExpressionPickerActionSheet", arg0);
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(9567, dependencyMap.paths), "ExpressionPickerActionSheet", arg0);
 };

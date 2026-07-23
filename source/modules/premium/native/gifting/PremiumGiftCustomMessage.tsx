@@ -1,19 +1,25 @@
-// Module ID: 8809
-// Function ID: 69443
+// Module ID: 8816
+// Function ID: 69484
 // Name: GiftCustomMessage
-// Dependencies: []
+// Dependencies: [31, 27, 1851, 33, 4130, 689, 1212, 7504, 8809, 2]
 
-// Module 8809 (GiftCustomMessage)
+// Module 8816 (GiftCustomMessage)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { CUSTOM_GIFT_MESSAGE_MAX_LENGTH as closure_4 } from "GuildFeatures";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 class GiftCustomMessage {
   constructor(arg0) {
-    ({ setMessagePosition: closure_0, setCustomGiftMessage } = global);
-    dependencyMap = setCustomGiftMessage;
+    ({ setMessagePosition, setCustomGiftMessage } = global);
     ({ onFocusMessage, customGiftMessage } = global);
-    tmp = closure_6();
-    intl = arg1(dependencyMap[6]).intl;
+    tmp = c6();
+    intl = require("getSystemLocale").intl;
     items = [];
     items[0] = setCustomGiftMessage;
-    stringResult = intl.string(arg1(dependencyMap[6]).t.ZkOo1U);
+    stringResult = intl.string(require("getSystemLocale").t.ZkOo1U);
     obj = {
       style: tmp.container,
       onLayout(nativeEvent) {
@@ -24,36 +30,31 @@ class GiftCustomMessage {
       setCustomGiftMessage(arg0);
     }, items);
     obj = {};
-    intl2 = arg1(dependencyMap[6]).intl;
-    obj.label = intl2.string(arg1(dependencyMap[6]).t.B3miE8);
+    intl2 = require("getSystemLocale").intl;
+    obj.label = intl2.string(require("getSystemLocale").t.B3miE8);
     obj.placeholder = stringResult;
     obj.value = customGiftMessage;
     obj.onChange = callback;
-    obj.maxLength = closure_4;
+    obj.maxLength = c4;
     obj.onFocus = onFocusMessage;
-    obj.children = jsx(arg1(dependencyMap[7]).TextArea, obj);
+    obj.children = jsx(require("TextArea").TextArea, obj);
     return jsx(View, obj);
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = arg1(dependencyMap[2]).CUSTOM_GIFT_MESSAGE_MAX_LENGTH;
-const jsx = arg1(dependencyMap[3]).jsx;
 let obj = {};
-obj = { marginTop: importDefault(dependencyMap[5]).space.PX_24, marginHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+obj = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
 obj.container = obj;
-let closure_6 = arg1(dependencyMap[4]).createStyles(obj);
-const obj2 = arg1(dependencyMap[4]);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
   let onFocusMessage;
   let setMessagePosition;
   ({ onFocusMessage, setMessagePosition } = arg0);
-  let obj = arg1(dependencyMap[8]);
+  let obj = require(8809) /* importDefaultResult1 */;
   const nativeGiftContext = obj.useNativeGiftContext();
   obj = { onFocusMessage, setMessagePosition, customGiftMessage: nativeGiftContext.customGiftMessage, setCustomGiftMessage: nativeGiftContext.setCustomGiftMessage };
-  return <GiftCustomMessage {...obj} />;
+  return <GiftCustomMessage onFocusMessage={onFocusMessage} setMessagePosition={setMessagePosition} customGiftMessage={nativeGiftContext.customGiftMessage} setCustomGiftMessage={nativeGiftContext.setCustomGiftMessage} />;
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftCustomMessage.tsx");
+const result = require("GuildFeatures").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftCustomMessage.tsx");
 
 export default memoResult;
 export { GiftCustomMessage };

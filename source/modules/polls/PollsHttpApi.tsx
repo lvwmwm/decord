@@ -1,25 +1,25 @@
-// Module ID: 9933
-// Function ID: 76861
+// Module ID: 9941
+// Function ID: 76901
 // Name: _submitPollVote
-// Dependencies: []
+// Dependencies: [5, 653, 507, 4029, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 9933 (_submitPollVote)
+// Module 9941 (_submitPollVote)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _submitPollVote() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _submitPollVote = obj;
   return obj(...arguments);
 }
 function _endPollEarly() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _endPollEarly = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/polls/PollsHttpApi.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/polls/PollsHttpApi.tsx");
 
 export const submitPollVote = function submitPollVote(arg0) {
   return _submitPollVote(...arguments);

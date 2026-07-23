@@ -1,13 +1,14 @@
-// Module ID: 7691
-// Function ID: 61374
+// Module ID: 7697
+// Function ID: 61411
 // Name: getApplicationCommand
-// Dependencies: []
+// Dependencies: [57, 2]
 // Exports: getApplicationCommand
 
-// Module 7691 (getApplicationCommand)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = /<\/([^\s]+):(\d+)>(?:\s?(.*))?/;
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/messages/ApplicationCommands.tsx");
+// Module 7697 (getApplicationCommand)
+import _slicedToArray from "_slicedToArray";
+
+const re1 = /<\/([^\s]+):(\d+)>(?:\s?(.*))?/;
+const result = require("set").fileFinishedImporting("modules/messages/ApplicationCommands.tsx");
 
 export const getApplicationCommand = function getApplicationCommand(content) {
   const match = regex.exec(content);

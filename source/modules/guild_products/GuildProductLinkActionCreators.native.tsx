@@ -1,19 +1,18 @@
-// Module ID: 12099
-// Function ID: 93300
+// Module ID: 12213
+// Function ID: 95451
 // Name: openGuildProductLink
-// Dependencies: []
+// Dependencies: [4471, 1212, 2]
 // Exports: openGuildProductLink
 
-// Module 12099 (openGuildProductLink)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/guild_products/GuildProductLinkActionCreators.native.tsx");
+// Module 12213 (openGuildProductLink)
+const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductLinkActionCreators.native.tsx");
 
 export const openGuildProductLink = function openGuildProductLink(closure_0, closure_1) {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(4471);
   obj = {};
-  const intl = require(dependencyMap[1]).intl;
-  obj.body = intl.string(require(dependencyMap[1]).t.mYlo/T);
-  const intl2 = require(dependencyMap[1]).intl;
-  obj.confirmText = intl2.string(require(dependencyMap[1]).t.BddRzS);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl.string(require(1212) /* getSystemLocale */.t["mYlo/T"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.confirmText = intl2.string(require(1212) /* getSystemLocale */.t.BddRzS);
   obj.show(obj);
 };

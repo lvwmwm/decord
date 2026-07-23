@@ -1,9 +1,39 @@
-// Module ID: 4988
-// Function ID: 42993
+// Module ID: 4991
+// Function ID: 43011
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 57, 5, 6, 7, 4044, 4992, 1921, 1316, 1917, 1350, 1910, 1838, 4970, 1849, 4993, 4994, 1852, 653, 4995, 662, 3771, 4996, 21, 22, 664, 1882, 1901, 20, 4997, 686, 4214, 44, 4118, 1327, 4998, 4999, 5031, 3749, 3712, 5033, 3775, 3774, 566, 2]
 
-// Module 4988 (_isNativeReflectConstruct)
+// Module 4991 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_16 from "_createForOfIteratorHelperLoose";
+import closure_17 from "_createForOfIteratorHelperLoose";
+import closure_18 from "_isNativeReflectConstruct";
+import closure_19 from "_isNativeReflectConstruct";
+import closure_20 from "_isNativeReflectConstruct";
+import closure_21 from "_isNativeReflectConstruct";
+import set from "set";
+import { NULL_STRING_GUILD_ID } from "ME";
+import { EmojiCategories } from "EmojiCategoryTypes";
+import { UserSettingsTypes } from "MAX_FAVORITES";
+import importDefaultResult from "_createForOfIteratorHelperLoose";
+import importDefaultResult2 from "DEFAULT_FRECENCY";
+import set from "_inherits";
+
+let closure_22;
+let closure_23;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +43,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +96,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -97,7 +127,7 @@ function getUsableEmoji(arg0) {
   let tmp2;
   if (null != tmp) {
     let usableEmoji;
-    if (null != closure_37[tmp]) {
+    if (null != dependencyMap[tmp]) {
       usableEmoji = obj.getUsableEmoji(arg0);
     }
     if (null != usableEmoji) {
@@ -112,10 +142,10 @@ function getEmojiToGroupId() {
     closure_38 = {};
     for (const key10008 in closure_37) {
       let tmp4 = key10008;
-      let tmp5 = closure_44;
-      let tmp6 = closure_37;
-      let obj = closure_37[key10008];
-      let tmp7 = closure_44(obj.emojiIds());
+      let tmp5 = _createForOfIteratorHelperLoose;
+      let tmp6 = dependencyMap;
+      let obj = dependencyMap[key10008];
+      let tmp7 = _createForOfIteratorHelperLoose(obj.emojiIds());
       let iter2 = tmp7();
       if (iter2.done) {
         continue;
@@ -134,41 +164,43 @@ function loadSavedEmojis() {
   return _loadSavedEmojis(...arguments);
 }
 async function _loadSavedEmojis() {
-  let databaseResult;
-  if (Loaded === closure_34.Unloaded) {
-    databaseResult = callback(closure_2[28]).database();
+  let c0;
+  if (outer2_35 === outer2_34.Unloaded) {
+    const databaseResult = outer2_1(outer2_2[28]).database();
+    c0 = databaseResult;
     if (null != databaseResult) {
-      let Loaded = closure_34.Loading;
-      const tmp12 = yield databaseResult(closure_2[29]).tryLoadOrResetCacheGatewayAsync("EmojiStore.loadSavedEmojis", () => callback(closure_2[30]).timeAsync("\u{1F4BE}", "loadSavedEmojis", () => callback(closure_2[31]).getAsync(closure_0)));
-      Loaded = closure_34.Loaded;
+      outer2_35 = outer2_34.Loading;
+      const tmp12 = yield outer2_0(outer2_2[29]).tryLoadOrResetCacheGatewayAsync("EmojiStore.loadSavedEmojis", () => outer3_1(outer3_2[30]).timeAsync("\u{1F4BE}", "loadSavedEmojis", () => outer4_1(outer4_2[31]).getAsync(outer1_0)));
+      outer2_35 = outer2_34.Loaded;
       if (null != tmp12) {
-        let obj = callback(closure_2[32]);
+        let obj = outer2_1(outer2_2[32]);
         obj = { type: "CACHED_EMOJIS_LOADED", emojis: tmp12 };
         obj.dispatch(obj);
       }
-      const obj4 = databaseResult(closure_2[29]);
+      const obj4 = outer2_0(outer2_2[29]);
     }
-    const obj3 = callback(closure_2[28]);
+    const obj3 = outer2_1(outer2_2[28]);
   }
 }
 function createBaseEmojiFrecencyOptions(resetFrequentlyUsed) {
-  const arg1 = resetFrequentlyUsed;
+  let closure_0 = resetFrequentlyUsed;
   return {
     computeBonus() {
       return 100;
     },
     lookupKey(emojiName) {
-      let byName = callback(closure_2[23]).getByName(emojiName);
+      let byName = outer1_1(outer1_2[23]).getByName(emojiName);
       if (null == byName) {
-        byName = callback2(emojiName);
+        byName = outer1_46(emojiName);
       }
       return byName;
     },
     afterCompute() {
-      arg0();
-      const items = [...closure_27];
-      if (!obj.some(closure_37, (usableEmojis) => usableEmojis.usableEmojis.length > 0)) {
-        items.splice(closure_27.indexOf(constants.CUSTOM), 1);
+      callback();
+      const items = [...outer1_27];
+      const outer1_36 = items;
+      if (!obj.some(outer1_37, (usableEmojis) => usableEmojis.usableEmojis.length > 0)) {
+        outer1_36.splice(outer1_27.indexOf(outer1_25.CUSTOM), 1);
       }
     },
     numFrequentlyItems: 42
@@ -182,12 +214,12 @@ function deleteEverything() {
   const Unloaded = obj.Unloaded;
 }
 function deleteGuildEmoji(id) {
-  if (null != closure_37[id]) {
-    delete r0[r1];
+  if (null != dependencyMap[id]) {
+    delete tmp[tmp2];
   }
 }
 function rebuildEmojis() {
-  let closure_38 = null;
+  let c38 = null;
   tmp8.reset();
   if (Unloaded === obj.Loaded) {
     importDefaultResult2.compute();
@@ -197,15 +229,15 @@ function rebuildEmojis() {
 function updateGuildEmoji(guildId) {
   deleteGuildEmoji(guildId);
   tmp8.clear(guildId);
-  const guildEmojis = guildEmojis.getGuildEmojis(guildId);
+  guildEmojis = guildEmojis.getGuildEmojis(guildId);
   if (null != guildEmojis) {
     const currentUser = authStore.getCurrentUser();
     if (null != currentUser) {
       const prototype = ctor.prototype;
-      const tmp14 = new ctor(guildId, currentUser.id, guildEmojis, arg1(dependencyMap[39]).canUseRoleSubscriptionIAP(guildId));
+      const tmp14 = new ctor(guildId, currentUser.id, guildEmojis, require(5031) /* compareVersions */.canUseRoleSubscriptionIAP(guildId));
       closure_37[guildId] = tmp14;
-      const obj = arg1(dependencyMap[39]);
-      const tmp8 = closure_37;
+      const obj = require(5031) /* compareVersions */;
+      tmp8 = closure_37;
     }
   }
 }
@@ -220,7 +252,7 @@ function handleUserSettingsProtoStoreChange() {
     }
   }
   if (null != value) {
-    const obj = importDefault(dependencyMap[23]);
+    let obj = importDefault(3771);
     const result = obj.setDefaultDiversitySurrogate(value);
   }
   tmp8.reset();
@@ -241,7 +273,7 @@ function handleUserSettingsProtoStoreChange() {
   if (null == emojis1) {
     emojis1 = {};
   }
-  importDefaultResult2.overwriteHistory(importDefault(dependencyMap[26]).mapValues(emojis, (recentUses) => {
+  importDefaultResult2.overwriteHistory(importDefault(22).mapValues(emojis, (recentUses) => {
     const obj = {};
     const merged = Object.assign(recentUses);
     recentUses = recentUses.recentUses;
@@ -249,8 +281,8 @@ function handleUserSettingsProtoStoreChange() {
     obj["recentUses"] = mapped.filter((arg0) => arg0 > 0);
     return obj;
   }), obj.pendingUsages);
-  const obj4 = importDefault(dependencyMap[26]);
-  closure_42.overwriteHistory(importDefault(dependencyMap[26]).mapValues(emojis1, (recentUses) => {
+  const obj4 = importDefault(22);
+  closure_42.overwriteHistory(importDefault(22).mapValues(emojis1, (recentUses) => {
     const obj = {};
     const merged = Object.assign(recentUses);
     recentUses = recentUses.recentUses;
@@ -258,30 +290,30 @@ function handleUserSettingsProtoStoreChange() {
     obj["recentUses"] = mapped.filter((arg0) => arg0 > 0);
     return obj;
   }), obj.emojiReactionPendingUsages);
-  const obj5 = importDefault(dependencyMap[26]);
+  const obj5 = importDefault(22);
   if (obj6.isEmpty(emojis)) {
     if (obj7.isEmpty(obj.pendingUsages)) {
       if (closure_13.hasLoaded(UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS)) {
-        const items = [false, false, false, false, false, false, false, false, false, false];
+        const items = ["thumbsup", "eyes", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"];
         let num2 = 0;
         if (0 < items.length) {
           do {
-            let tmp13 = closure_41;
-            let trackResult = closure_41.track(items[num2]);
+            let tmp13 = importDefaultResult2;
+            let trackResult = importDefaultResult2.track(items[num2]);
             num2 = num2 + 1;
             length = items.length;
           } while (num2 < length);
         }
       }
     }
-    const obj7 = importDefault(dependencyMap[26]);
-    const tmp8 = importDefault;
+    obj7 = importDefault(22);
+    tmp8 = importDefault;
   }
-  const obj6 = importDefault(dependencyMap[26]);
+  obj6 = importDefault(22);
   if (obj8.isEmpty(emojis1)) {
     if (obj9.isEmpty(obj.emojiReactionPendingUsages)) {
       if (closure_13.hasLoaded(UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS)) {
-        const items1 = [];
+        const items1 = ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"];
         let num3 = 0;
         if (0 < items1.length) {
           do {
@@ -293,7 +325,7 @@ function handleUserSettingsProtoStoreChange() {
         }
       }
     }
-    const obj9 = importDefault(dependencyMap[26]);
+    obj9 = importDefault(22);
   }
 }
 function trackUsage(emojiUsed) {
@@ -315,10 +347,10 @@ function trackUsage(emojiUsed) {
           name = value.name;
         }
         if (null != name) {
-          let tmp = closure_41;
-          let trackResult = closure_41.track(name);
-          let tmp3 = closure_28;
-          let pendingUsages = closure_28.pendingUsages;
+          let tmp = importDefaultResult2;
+          let trackResult = importDefaultResult2.track(name);
+          let tmp3 = obj;
+          let pendingUsages = obj.pendingUsages;
           obj = { key: name };
           let _Date = Date;
           obj.timestamp = Date.now();
@@ -340,50 +372,23 @@ function trackUsage(emojiUsed) {
 }
 function handleRoleUpdate(guildId) {
   guildId = guildId.guildId;
-  const role = role.getRole(guildId, guildId.role.id);
+  role = role.getRole(guildId, guildId.role.id);
   if (null != role) {
     if (obj.isSubscriptionRole(role)) {
       updateGuildEmoji(guildId);
       rebuildEmojis();
     }
-    const obj = arg1(dependencyMap[40]);
+    obj = require(3749) /* isSubscriptionRole */;
   }
   return false;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = importDefault(dependencyMap[12]);
-let closure_16 = importDefault(dependencyMap[13]);
-let closure_17 = importDefault(dependencyMap[14]);
-let closure_18 = importDefault(dependencyMap[15]);
-let closure_19 = importDefault(dependencyMap[16]);
-let closure_20 = importDefault(dependencyMap[17]);
-let closure_21 = importDefault(dependencyMap[18]);
-({ EmojiDisabledReasons: closure_22, EmojiIntention: closure_23 } = arg1(dependencyMap[19]));
-const NULL_STRING_GUILD_ID = arg1(dependencyMap[20]).NULL_STRING_GUILD_ID;
-const EmojiCategories = arg1(dependencyMap[21]).EmojiCategories;
-const UserSettingsTypes = arg1(dependencyMap[22]).UserSettingsTypes;
-const items = [EmojiCategories.TOP_GUILD_EMOJI.toString(), EmojiCategories.FAVORITES.toString(), EmojiCategories.RECENT.toString(), EmojiCategories.CUSTOM.toString()];
-const str = EmojiCategories.TOP_GUILD_EMOJI;
-const str2 = EmojiCategories.FAVORITES;
-const str3 = EmojiCategories.RECENT;
-const str4 = EmojiCategories.CUSTOM;
-const tmp2 = arg1(dependencyMap[19]);
-const combined = items.concat(importDefault(dependencyMap[23]).getCategories());
+({ EmojiDisabledReasons: closure_22, EmojiIntention: closure_23 } = set);
+let items = [EmojiCategories.TOP_GUILD_EMOJI.toString(), EmojiCategories.FAVORITES.toString(), EmojiCategories.RECENT.toString(), EmojiCategories.CUSTOM.toString()];
+let combined = items.concat(require("_createForOfIteratorHelperLoose").getCategories());
 let obj = { pendingUsages: [], emojiReactionPendingUsages: [] };
-const importDefaultResult = importDefault(dependencyMap[23]);
-obj.expandedSectionsByGuildIds = new Set();
-let closure_29 = () => {
+set = new Set();
+obj.expandedSectionsByGuildIds = set;
+let closure_29 = (() => {
   class GuildEmojis {
     constructor(arg0, arg1, arg2) {
       flag = arg3;
@@ -391,7 +396,7 @@ let closure_29 = () => {
       if (arg3 === undefined) {
         flag = false;
       }
-      tmp = closure_8(self, GuildEmojis);
+      tmp = outer1_8(self, GuildEmojis);
       self._emojis = null;
       self._emoticons = null;
       self._usableEmojis = null;
@@ -404,14 +409,13 @@ let closure_29 = () => {
       return;
     }
   }
-  const arg1 = GuildEmojis;
   let obj = {
     key: "getEmoji",
     value(arg0) {
       return this._emojiMap[arg0];
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "getUsableEmoji",
     value(arg0) {
@@ -431,31 +435,31 @@ let closure_29 = () => {
     key: "isUsable",
     value(roles) {
       const self = this;
-      const GuildEmojis = roles;
+      let closure_0 = roles;
       if (0 === roles.roles.length) {
         return true;
       } else {
-        const member = member.getMember(self.id, self._userId);
+        const member = outer1_14.getMember(self.id, self._userId);
         let tmp8 = null != member;
         if (tmp8) {
           roles = member.roles;
           const tmp = !roles.some((arg0) => {
-            const roles = arg0.roles;
+            roles = roles.roles;
             return roles.includes(arg0);
           });
           let tmp2 = !tmp;
           if (tmp) {
-            const tmp5 = !GuildEmojis(closure_2[24]).isPurchasableRoleSubscriptionEmoji(roles);
+            const tmp5 = !GuildEmojis(outer1_2[24]).isPurchasableRoleSubscriptionEmoji(roles);
             let tmp6 = !tmp5;
             if (!tmp5) {
               let _canSeeServerSubIAP = self._canSeeServerSubIAP;
               if (!_canSeeServerSubIAP) {
-                _canSeeServerSubIAP = userIsAdmin.getUserIsAdmin(roles.guildId);
+                _canSeeServerSubIAP = outer1_11.getUserIsAdmin(roles.guildId);
               }
               tmp6 = _canSeeServerSubIAP;
             }
             tmp2 = tmp6;
-            const obj = GuildEmojis(closure_2[24]);
+            const obj = GuildEmojis(outer1_2[24]);
           }
           tmp8 = tmp2;
         }
@@ -467,7 +471,7 @@ let closure_29 = () => {
   items[3] = {
     key: "emojiIds",
     value() {
-      return callback(closure_2[25]).keys(this._emojiMap);
+      return outer1_1(outer1_2[25]).keys(this._emojiMap);
     }
   };
   items[4] = {
@@ -501,7 +505,7 @@ let closure_29 = () => {
         const items = [];
         const _Set = Set;
         const set = new Set();
-        const tmp6 = callback3(self.emojis);
+        const tmp6 = outer1_44(self.emojis);
         let iter = tmp6();
         if (!iter.done) {
           do {
@@ -515,9 +519,9 @@ let closure_29 = () => {
             iter = iter2;
           } while (!iter2.done);
         }
-        self._usableEmojis = callback(closure_2[26]).sortBy(items, (name) => name.name);
+        self._usableEmojis = outer1_1(outer1_2[26]).sortBy(items, (name) => name.name);
         self._hiddenEmojiIds = set;
-        const obj2 = callback(closure_2[26]);
+        const obj2 = outer1_1(outer1_2[26]);
       }
     }
   };
@@ -535,38 +539,41 @@ let closure_29 = () => {
       return this._hiddenEmojiIds;
     }
   };
-  return callback3(GuildEmojis, items);
-}();
-const set = new Set();
+  return callback4(GuildEmojis, items);
+})();
+let str = EmojiCategories.TOP_GUILD_EMOJI;
+let str2 = EmojiCategories.FAVORITES;
+const str3 = EmojiCategories.RECENT;
+const str4 = EmojiCategories.CUSTOM;
 const timestamp = Date.now();
-let closure_30 = importDefault(dependencyMap[25]).fromTimestamp(timestamp - 60 * importDefault(dependencyMap[27]).Millis.DAY);
+let closure_30 = require("EmojiCategoryTypes").fromTimestamp(timestamp - 60 * require("set").Millis.DAY);
 let closure_31 = [];
 let closure_32 = [];
 const set1 = new Set();
 obj = { Unloaded: 0, [0]: "Unloaded", Loading: 1, [1]: "Loading", Loaded: 2, [2]: "Loaded" };
-const Unloaded = obj.Unloaded;
-const items1 = [...combined];
+let Unloaded = obj.Unloaded;
+let items1 = [...combined];
 let closure_37 = {};
 let closure_38 = {};
-const map = new Map();
-const tmp8 = () => {
+let map = new Map();
+let tmp8 = (() => {
   class EmojiDisambiguations {
     constructor(arg0) {
       self = this;
-      EmojiDisambiguations = this;
+      self = this;
       addGuildEmoji = function addGuildEmoji(guildId) {
         let tmp = guildId;
         if (null == guildId) {
-          tmp = closure_24;
+          tmp = outer2_24;
         }
-        if (null != closure_37[tmp]) {
-          map7(items[26]).each(tmp3.usableEmojis, disambiguateEmoji);
-          const obj = map7(items[26]);
-          map7(items[26]).each(tmp3.emoticons, disambiguateEmoticon);
-          const obj2 = map7(items[26]);
+        if (null != outer2_37[tmp]) {
+          outer2_1(outer2_2[26]).each(tmp3.usableEmojis, disambiguateEmoji);
+          const obj = outer2_1(outer2_2[26]);
+          outer2_1(outer2_2[26]).each(tmp3.emoticons, disambiguateEmoticon);
+          const obj2 = outer2_1(outer2_2[26]);
         }
       };
-      tmp = closure_8(this, EmojiDisambiguations);
+      tmp = outer1_8(this, self);
       this.favorites = null;
       this.favoriteNamesAndIds = null;
       this.topEmojis = null;
@@ -597,7 +604,7 @@ const tmp8 = () => {
           if (null != id.id) {
             return favoriteNamesAndIds.has(id.id);
           } else {
-            const result = map7(items[23]).convertSurrogateToBase(id.surrogates);
+            const result = outer2_1(outer2_2[23]).convertSurrogateToBase(id.surrogates);
             let tmp5 = id;
             if (null != result) {
               tmp5 = result;
@@ -646,7 +653,7 @@ const tmp8 = () => {
           const items = [tmp3];
           const result4 = customEmojisByGroup2.set(guildId, items);
         }
-        if (obj2.compare(name.id, closure_30) >= 0) {
+        if (obj2.compare(name.id, outer2_30) >= 0) {
           const newlyAddedEmoji = self.newlyAddedEmoji;
           const newlyAddedEmoji2 = self.newlyAddedEmoji;
           if (newlyAddedEmoji.has(guildId)) {
@@ -665,36 +672,36 @@ const tmp8 = () => {
       disambiguateEmoticon = function disambiguateEmoticon(name) {
         const emoticonsByName = self.emoticonsByName;
         if (!emoticonsByName.has(name.name)) {
-          items.push(map7(items[35]).escape(name.name));
+          items.push(outer2_1(outer2_2[35]).escape(name.name));
           const emoticonsByName2 = self.emoticonsByName;
           const result = emoticonsByName2.set(name.name, name);
-          const obj = map7(items[35]);
+          const obj = outer2_1(outer2_2[35]);
         }
       };
-      arr2 = Map(Map[23]);
+      arr2 = outer1_1(outer1_2[23]);
       item = arr2.forEach((names) => {
-        const self = names;
+        const _self = names;
         names = names.names;
         const substr = names.slice(1);
-        const item = substr.forEach((self) => {
-          const unicodeAliases = self.unicodeAliases;
-          return unicodeAliases.set(self, self.name);
+        const item = substr.forEach((arg0) => {
+          const unicodeAliases = names.unicodeAliases;
+          return unicodeAliases.set(arg0, names.name);
         });
         const value = map7.get(names.name);
         let num = 0;
         if (null != value) {
           num = value;
         }
-        map7(items[34])(0 === num, "Expected existing count to be 0");
+        outer2_1(outer2_2[34])(0 === num, "Expected existing count to be 0");
         const result = map7.set(names.name, num + 1);
-        const emojisByName = self.emojisByName;
+        const emojisByName = _self.emojisByName;
         const result1 = emojisByName.set(names.name, names);
-        const disambiguatedEmoji = self.disambiguatedEmoji;
+        const disambiguatedEmoji = _self.disambiguatedEmoji;
         disambiguatedEmoji.push(names);
       });
       addGuildEmojiResult = addGuildEmoji(this.guildId);
       newlyAddedEmoji = this.newlyAddedEmoji;
-      tmp12 = closure_44(newlyAddedEmoji.keys());
+      tmp12 = outer1_44(newlyAddedEmoji.keys());
       iter = tmp12();
       if (!iter.done) {
         do {
@@ -703,7 +710,7 @@ const tmp8 = () => {
           value = newlyAddedEmoji2.get(value);
           if (null != value) {
             newlyAddedEmoji4 = self.newlyAddedEmoji;
-            sorted = value.sort((id, id2) => map7(items[25]).compare(id2.id, id.id));
+            sorted = value.sort((id, id2) => outer2_1(outer2_2[25]).compare(id2.id, id.id));
             result = newlyAddedEmoji4.set(value, sorted.slice(0, 3));
           } else {
             newlyAddedEmoji3 = self.newlyAddedEmoji;
@@ -713,7 +720,7 @@ const tmp8 = () => {
           iter = iter2;
         } while (!iter2.done);
       }
-      flattenedGuildIds = closure_18.getFlattenedGuildIds();
+      flattenedGuildIds = outer1_18.getFlattenedGuildIds();
       item1 = flattenedGuildIds.forEach((guildId) => {
         if (guildId !== self.guildId) {
           addGuildEmoji(guildId);
@@ -723,14 +730,13 @@ const tmp8 = () => {
       return;
     }
   }
-  const arg1 = EmojiDisambiguations;
   let obj = {
     key: "getDisambiguatedEmoji",
     value() {
       return this.disambiguatedEmoji;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , ];
   obj = {
     key: "getCustomEmoji",
     value() {
@@ -799,24 +805,24 @@ const tmp8 = () => {
   items[7] = {
     key: "getFrequentlyUsedEmojisWithoutFetchingLatest",
     value() {
-      const self = this;
-      const EmojiDisambiguations = this;
+      let self = this;
+      self = this;
       if (null != this.frequentlyUsed) {
         return self.frequentlyUsed;
       } else {
-        const frequently = frequently.frequently;
+        const frequently = outer1_41.frequently;
         const mapped = frequently.map((id) => {
           if (null != id.id) {
             let byId = self.getById(id.id);
           } else {
-            byId = callback(closure_2[23]).getByName(id.name);
-            const obj = callback(closure_2[23]);
+            byId = outer2_1(outer2_2[23]).getByName(id.name);
+            const obj = outer2_1(outer2_2[23]);
           }
           return byId;
         });
-        const found = mapped.filter(EmojiDisambiguations(closure_2[36]).isNotNullish);
+        const found = mapped.filter(EmojiDisambiguations(outer1_2[36]).isNotNullish);
         const items = [];
-        HermesBuiltin.arraySpread(callback(closure_2[37])(found).values(), 0);
+        HermesBuiltin.arraySpread(outer1_1(outer1_2[37])(found).values(), 0);
         self.frequentlyUsed = items;
         return self.frequentlyUsed;
       }
@@ -825,8 +831,8 @@ const tmp8 = () => {
   items[8] = {
     key: "rebuildFrequentlyUsedReactionsEmojisWithoutFetchingLatest",
     value() {
-      const self = this;
-      const EmojiDisambiguations = this;
+      let self = this;
+      self = this;
       if (null != this.frequentlyUsedReactionEmojis) {
         if (null != self.frequentlyUsedReactionNamesAndIds) {
           let obj = {};
@@ -834,18 +840,18 @@ const tmp8 = () => {
           return obj;
         }
       }
-      const frequently = frequently2.frequently;
+      const frequently = outer1_42.frequently;
       const mapped = frequently.map((id) => {
         if (null != id.id) {
           let byId = self.getById(id.id);
         } else {
-          byId = callback(closure_2[23]).getByName(id.name);
-          const obj = callback(closure_2[23]);
+          byId = outer2_1(outer2_2[23]).getByName(id.name);
+          const obj = outer2_1(outer2_2[23]);
         }
         return byId;
       });
-      const found = mapped.filter(EmojiDisambiguations(closure_2[36]).isNotNullish);
-      obj = callback(closure_2[37])(found);
+      const found = mapped.filter(EmojiDisambiguations(outer1_2[36]).isNotNullish);
+      obj = outer1_1(outer1_2[37])(found);
       const items = [...obj.values()];
       self.frequentlyUsedReactionEmojis = items;
       self.frequentlyUsedReactionNamesAndIds = new Set(obj.keys());
@@ -866,7 +872,7 @@ const tmp8 = () => {
       if (null != id.id) {
         return frequentlyUsedReactionNamesAndIds.has(id.id);
       } else {
-        const result = callback(closure_2[23]).convertSurrogateToBase(id.surrogates);
+        const result = outer1_1(outer1_2[23]).convertSurrogateToBase(id.surrogates);
         let tmp4 = id;
         if (null != result) {
           tmp4 = result;
@@ -878,8 +884,8 @@ const tmp8 = () => {
   items[11] = {
     key: "rebuildFavoriteEmojisWithoutFetchingLatest",
     value() {
-      const self = this;
-      const EmojiDisambiguations = this;
+      let self = this;
+      self = this;
       if (null != this.favorites) {
         if (null != self.favoriteNamesAndIds) {
           let obj = {};
@@ -887,7 +893,7 @@ const tmp8 = () => {
           return obj;
         }
       }
-      const favoriteEmojis = obj.frecencyWithoutFetchingLatest.favoriteEmojis;
+      const favoriteEmojis = outer1_13.frecencyWithoutFetchingLatest.favoriteEmojis;
       let emojis;
       if (null != favoriteEmojis) {
         emojis = favoriteEmojis.emojis;
@@ -898,13 +904,13 @@ const tmp8 = () => {
       const mapped = emojis.map((emojiName) => {
         let byId = self.getById(emojiName);
         if (null == byId) {
-          byId = callback(closure_2[23]).getByName(emojiName);
-          const obj = callback(closure_2[23]);
+          byId = outer2_1(outer2_2[23]).getByName(emojiName);
+          const obj = outer2_1(outer2_2[23]);
         }
         return byId;
       });
-      const found = mapped.filter(EmojiDisambiguations(closure_2[36]).isNotNullish);
-      obj = callback(closure_2[37])(found);
+      const found = mapped.filter(EmojiDisambiguations(outer1_2[36]).isNotNullish);
+      obj = outer1_1(outer1_2[37])(found);
       const items = [...obj.values()];
       self.favorites = items;
       self.favoriteNamesAndIds = new Set(obj.keys());
@@ -922,7 +928,7 @@ const tmp8 = () => {
     key: "getEmojiInPriorityOrderWithoutFetchingLatest",
     value() {
       const frequentlyUsedReactionEmojisWithoutFetchingLatest = this.getFrequentlyUsedReactionEmojisWithoutFetchingLatest();
-      const EmojiDisambiguations = new Set();
+      const set = new Set();
       const favoriteEmojisWithoutFetchingLatest = this.favoriteEmojisWithoutFetchingLatest;
       const combined = favoriteEmojisWithoutFetchingLatest.concat(frequentlyUsedReactionEmojisWithoutFetchingLatest);
       return combined.filter((arg0) => {
@@ -938,14 +944,14 @@ const tmp8 = () => {
   items[14] = {
     key: "getTopEmojiWithoutFetchingLatest",
     value(arg0) {
-      const self = this;
-      const EmojiDisambiguations = this;
+      let self = this;
+      self = this;
       if (null == this.topEmojis) {
-        const value = closure_39.get(arg0);
-        let topEmojiIdsByGuildId = topEmojiIdsByGuildId.getTopEmojiIdsByGuildId(arg0);
+        const value = outer1_39.get(arg0);
+        let topEmojiIdsByGuildId = outer1_21.getTopEmojiIdsByGuildId(arg0);
         if (null == value) {
           if (null == topEmojiIdsByGuildId) {
-            return closure_31;
+            return outer1_31;
           }
         }
         let emojiIds;
@@ -958,9 +964,9 @@ const tmp8 = () => {
         const mapped = topEmojiIdsByGuildId.map((name) => {
           let byId = self.getById(name);
           if (null == byId) {
-            const obj = items(closure_2[23]);
-            byId = obj.getByName(items(closure_2[23]).convertSurrogateToName(name, false));
-            const obj2 = items(closure_2[23]);
+            const obj = outer2_1(outer2_2[23]);
+            byId = obj.getByName(outer2_1(outer2_2[23]).convertSurrogateToName(name, false));
+            const obj2 = outer2_1(outer2_2[23]);
           }
           return byId;
         });
@@ -981,12 +987,12 @@ const tmp8 = () => {
     key: "getNewlyAddedEmojiForGuild",
     value(arg0) {
       if (null == this.newlyAddedEmoji) {
-        return closure_31;
+        return outer1_31;
       } else {
         const newlyAddedEmoji = tmp.newlyAddedEmoji;
         let value = newlyAddedEmoji.get(arg0);
         if (null == value) {
-          value = closure_31;
+          value = outer1_31;
         }
         return value;
       }
@@ -1001,26 +1007,26 @@ const tmp8 = () => {
   items[17] = {
     key: "nameMatchesChain",
     value(arg0) {
-      const EmojiDisambiguations = arg0;
-      const tmp = callback(closure_2[26]);
-      return callback(closure_2[26])(this.getDisambiguatedEmoji()).filter((arg0) => {
+      let closure_0 = arg0;
+      const tmp = outer1_1(outer1_2[26]);
+      return outer1_1(outer1_2[26])(this.getDisambiguatedEmoji()).filter((arg0) => {
         let name;
         let names;
         ({ names, name } = arg0);
         let someResult = null != names;
         if (someResult) {
-          someResult = callback(closure_2[26]).some(names, arg0);
-          const obj = callback(closure_2[26]);
+          someResult = outer2_1(outer2_2[26]).some(names, callback);
+          const obj = outer2_1(outer2_2[26]);
         }
         let tmp5 = null != name;
         if (tmp5) {
-          tmp5 = arg0(name);
+          tmp5 = callback(name);
         }
         let someResult1 = null != name;
         if (someResult1) {
-          const obj2 = callback(closure_2[26]);
-          someResult1 = obj2.some(callback(closure_2[38]).getTermsForEmoji(name), arg0);
-          const obj3 = callback(closure_2[38]);
+          const obj2 = outer2_1(outer2_2[26]);
+          someResult1 = obj2.some(outer2_1(outer2_2[38]).getTermsForEmoji(name), callback);
+          const obj3 = outer2_1(outer2_2[38]);
         }
         if (!someResult) {
           someResult = tmp5;
@@ -1032,7 +1038,7 @@ const tmp8 = () => {
       });
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "get",
       value(guildId) {
@@ -1088,14 +1094,14 @@ const tmp8 = () => {
       }
     }
   ];
-  return callback3(EmojiDisambiguations, items, items1);
-}();
+  return callback4(EmojiDisambiguations, items, items1);
+})();
+let closure_40 = tmp8;
 tmp8._lastInstance = null;
-let importDefaultResult2 = importDefault(dependencyMap[33]);
-const merged = Object.assign(createBaseEmojiFrecencyOptions(tmp8.resetFrequentlyUsed));
+let merged = Object.assign(createBaseEmojiFrecencyOptions(tmp8.resetFrequentlyUsed));
 importDefaultResult2 = new importDefaultResult2({});
-let closure_42 = function createEmojiReactionFrecency(resetFrequentlyUsedReactionEmojis) {
-  let tmp = importDefault(dependencyMap[33]);
+let closure_42 = (function createEmojiReactionFrecency(resetFrequentlyUsedReactionEmojis) {
+  let tmp = importDefault(4214);
   const obj = {};
   const merged = Object.assign(createBaseEmojiFrecencyOptions(resetFrequentlyUsedReactionEmojis));
   obj["computeFrecency"] = function computeFrecency(arg0, score, maxTotalUse) {
@@ -1109,20 +1115,20 @@ let closure_42 = function createEmojiReactionFrecency(resetFrequentlyUsedReactio
   obj["calculateMaxTotalUse"] = true;
   tmp = new tmp(obj);
   return tmp;
-}(tmp8.resetFrequentlyUsedReactionEmojis);
-let tmp12 = (PersistedStore) => {
+})(tmp8.resetFrequentlyUsedReactionEmojis);
+let tmp12 = ((PersistedStore) => {
   class EmojiStore {
     constructor() {
       self = this;
-      tmp = closure_8(this, EmojiStore);
-      obj = closure_4(EmojiStore);
-      tmp2 = closure_3;
-      if (closure_43()) {
+      tmp = outer1_8(this, EmojiStore);
+      obj = outer1_4(EmojiStore);
+      tmp2 = outer1_3;
+      if (outer1_43()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_4;
+        tmp7 = outer1_4;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -1131,51 +1137,50 @@ let tmp12 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = EmojiStore;
   callback(EmojiStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(pendingUsages) {
       const self = this;
-      this.waitFor(closure_10, closure_14, closure_15, closure_16, closure_17, closure_12, closure_20, closure_18, closure_11, closure_21, closure_13, closure_19);
+      this.waitFor(outer1_10, outer1_14, outer1_15, outer1_16, outer1_17, outer1_12, outer1_20, outer1_18, outer1_11, outer1_21, outer1_13, outer1_19);
       if (null != pendingUsages) {
         if (null != pendingUsages.pendingUsages) {
-          closure_28.pendingUsages = pendingUsages.pendingUsages;
+          outer1_28.pendingUsages = pendingUsages.pendingUsages;
         }
         if (null != pendingUsages.emojiReactionPendingUsages) {
-          closure_28.emojiReactionPendingUsages = pendingUsages.emojiReactionPendingUsages;
+          outer1_28.emojiReactionPendingUsages = pendingUsages.emojiReactionPendingUsages;
         }
         if (null != pendingUsages.expandedSectionsByGuildIds) {
           const _Set = Set;
           const set = new Set(pendingUsages.expandedSectionsByGuildIds);
-          closure_28.expandedSectionsByGuildIds = set;
+          outer1_28.expandedSectionsByGuildIds = set;
         }
       }
-      const items = [closure_13];
-      self.syncWith(items, closure_55);
+      const items = [outer1_13];
+      self.syncWith(items, outer1_55);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_28;
+      return outer1_28;
     }
   };
   items[1] = obj;
   obj = {
     key: "loadState",
     get() {
-      return closure_35;
+      return outer1_35;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "hasPendingUsage",
     value() {
-      let tmp = closure_28.pendingUsages.length > 0;
+      let tmp = outer1_28.pendingUsages.length > 0;
       if (!tmp) {
-        tmp = closure_28.emojiReactionPendingUsages.length > 0;
+        tmp = outer1_28.emojiReactionPendingUsages.length > 0;
       }
       return tmp;
     }
@@ -1183,19 +1188,19 @@ let tmp12 = (PersistedStore) => {
   items[4] = {
     key: "expandedSectionsByGuildIds",
     get() {
-      return closure_28.expandedSectionsByGuildIds;
+      return outer1_28.expandedSectionsByGuildIds;
     }
   };
   items[5] = {
     key: "categories",
     get() {
-      return closure_36;
+      return outer1_36;
     }
   };
   items[6] = {
     key: "diversitySurrogate",
     get() {
-      const defaultDiversitySurrogate = callback(closure_2[23]).getDefaultDiversitySurrogate();
+      const defaultDiversitySurrogate = outer1_1(outer1_2[23]).getDefaultDiversitySurrogate();
       let str = "";
       if (null != defaultDiversitySurrogate) {
         str = defaultDiversitySurrogate;
@@ -1206,29 +1211,29 @@ let tmp12 = (PersistedStore) => {
   items[7] = {
     key: "emojiFrecencyWithoutFetchingLatest",
     get() {
-      return closure_41;
+      return outer1_41;
     }
   };
   items[8] = {
     key: "emojiReactionFrecencyWithoutFetchingLatest",
     get() {
-      return closure_42;
+      return outer1_42;
     }
   };
   items[9] = {
     key: "getGuildEmoji",
     value(arg0) {
-      callback7();
+      outer1_48();
       let tmp2;
       if (null != arg0) {
-        tmp2 = closure_37[arg0];
+        tmp2 = outer1_37[arg0];
       }
       let emojis;
       if (null != tmp2) {
         emojis = tmp2.emojis;
       }
       if (null == emojis) {
-        emojis = closure_32;
+        emojis = outer1_32;
       }
       return emojis;
     }
@@ -1236,17 +1241,17 @@ let tmp12 = (PersistedStore) => {
   items[10] = {
     key: "getHiddenEmojiIds",
     value(arg0) {
-      callback7();
+      outer1_48();
       let tmp2;
       if (null != arg0) {
-        tmp2 = closure_37[arg0];
+        tmp2 = outer1_37[arg0];
       }
       let hiddenEmojiIds;
       if (null != tmp2) {
         hiddenEmojiIds = tmp2.hiddenEmojiIds;
       }
       if (null == hiddenEmojiIds) {
-        hiddenEmojiIds = closure_33;
+        hiddenEmojiIds = outer1_33;
       }
       return hiddenEmojiIds;
     }
@@ -1255,12 +1260,12 @@ let tmp12 = (PersistedStore) => {
     key: "getUsableGuildEmoji",
     value(arg0) {
       let usableEmojis;
-      callback7();
-      if (null != closure_37[arg0]) {
+      outer1_48();
+      if (null != outer1_37[arg0]) {
         usableEmojis = tmp3.usableEmojis;
       }
       if (null == usableEmojis) {
-        usableEmojis = closure_32;
+        usableEmojis = outer1_32;
       }
       return usableEmojis;
     }
@@ -1268,20 +1273,24 @@ let tmp12 = (PersistedStore) => {
   items[12] = {
     key: "getGuilds",
     value() {
-      return closure_37;
+      return outer1_37;
     }
   };
   items[13] = {
     key: "getDisambiguatedEmojiContext",
     value(arg0) {
-      callback7();
-      return store.get(arg0);
+      outer1_48();
+      return outer1_40.get(arg0);
     }
   };
   items[14] = {
     key: "getSearchResultsOrder",
     value(items, str) {
-      const EmojiStore = arg3;
+      let _isNativeReflectConstruct;
+      let closure_4;
+      let closure_5;
+      let closure_0 = arg3;
+      let closure_1 = arg4;
       function score(uniqueName) {
         if (null != uniqueName.uniqueName) {
           let str2 = uniqueName.names[0];
@@ -1318,17 +1327,17 @@ let tmp12 = (PersistedStore) => {
               num6 = num7;
             }
             let num8 = 0;
-            if (closure_3) {
+            if (_isNativeReflectConstruct) {
               num8 = 0;
-              if (arg4.isFavoriteEmojiWithoutFetchingLatest(uniqueName)) {
+              if (favoriteEmojiWithoutFetchingLatest.isFavoriteEmojiWithoutFetchingLatest(uniqueName)) {
                 num8 = 0.5;
               }
             }
             const sum = 1 + num3 + num4 + num6 + num8;
-            if (arg3 === constants.REACTION) {
-              let score = score2.getScore(id);
+            if (closure_0 === outer2_23.REACTION) {
+              let score = outer2_42.getScore(id);
             } else {
-              score = score.getScore(id);
+              score = outer2_41.getScore(id);
             }
             let result = sum;
             if (null != score) {
@@ -1339,18 +1348,18 @@ let tmp12 = (PersistedStore) => {
         }
         return 0;
       }
-      const formatted = str.toLowerCase();
-      let obj = arg4(formatted[35]);
+      let formatted = str.toLowerCase();
+      let obj = outer1_1(outer1_2[35]);
       const escapeResult = obj.escape(formatted);
       const formatted1 = formatted.slice(0, 1).toUpperCase();
-      const sum = formatted1 + formatted.slice(1);
+      let sum = formatted1 + formatted.slice(1);
       str = formatted.slice(0, 1);
-      const escapeResult1 = arg4(formatted[35]).escape(sum);
+      const escapeResult1 = outer1_1(outer1_2[35]).escape(sum);
       let orderByResult = items;
       if (items.length > 0) {
         obj = { location: "getSearchResultsOrder" };
-        const config = arg4(formatted[42]).getConfig(obj);
-        ({ boostFavorites: closure_3, boostAtEnd: closure_4, boostsIgnoreDisambiguators: closure_5 } = config);
+        const config = outer1_1(outer1_2[42]).getConfig(obj);
+        ({ boostFavorites: _isNativeReflectConstruct, boostAtEnd: closure_4, boostsIgnoreDisambiguators: closure_5 } = config);
         const _RegExp = RegExp;
         const _HermesInternal = HermesInternal;
         const regExp = new RegExp("^" + escapeResult, "i");
@@ -1367,12 +1376,12 @@ let tmp12 = (PersistedStore) => {
           regExp2 = regExp3;
         }
         const test = regExp2.test;
-        let closure_6 = test.bind(regExp2);
+        let _slicedToArray = test.bind(regExp2);
         const test2 = regExp.test;
-        let closure_7 = test2.bind(regExp);
+        let _classCallCheck = test2.bind(regExp);
         const test3 = regExp1.test;
-        let closure_8 = test3.bind(regExp1);
-        const obj4 = arg4(formatted[42]);
+        let _defineProperties = test3.bind(regExp1);
+        const obj4 = outer1_1(outer1_2[42]);
         items = [
           (uniqueName) => score(uniqueName),
           (names) => {
@@ -1384,8 +1393,8 @@ let tmp12 = (PersistedStore) => {
               return name;
             }
         ];
-        orderByResult = arg4(formatted[26]).orderBy(items, items, [-1751711741, -1203437565]);
-        const obj3 = arg4(formatted[26]);
+        orderByResult = outer1_1(outer1_2[26]).orderBy(items, items, ["desc", "asc"]);
+        const obj3 = outer1_1(outer1_2[26]);
       }
       let substr = orderByResult;
       if (arg2 > 0) {
@@ -1397,12 +1406,12 @@ let tmp12 = (PersistedStore) => {
   items[15] = {
     key: "searchWithoutFetchingLatest",
     value(channel) {
+      let _isNativeReflectConstruct;
       let count;
       let matchComparator;
       let query;
       const self = this;
       channel = channel.channel;
-      const EmojiStore = channel;
       ({ query, count } = channel);
       if (count === undefined) {
         count = 0;
@@ -1412,12 +1421,12 @@ let tmp12 = (PersistedStore) => {
       if (flag === undefined) {
         flag = true;
       }
-      ({ matchComparator, showOnlyUnicode: closure_3 } = channel);
+      ({ matchComparator, showOnlyUnicode: _isNativeReflectConstruct } = channel);
       let regExp;
-      callback7();
+      outer1_48();
       const formatted = query.toLowerCase();
       const replaced = formatted.replaceAll(/[ _]/g, "");
-      intention(flag[35]);
+      outer1_1(outer1_2[35]);
       if (null == matchComparator) {
         const _RegExp = RegExp;
         const _HermesInternal = HermesInternal;
@@ -1430,13 +1439,13 @@ let tmp12 = (PersistedStore) => {
       if (null != channel) {
         guildId = channel.getGuildId();
       }
-      const value = store.get(guildId);
+      const value = outer1_40.get(guildId);
       const reduced = value.nameMatchesChain(matchComparator).reduce((locked, emoji) => {
-        let obj = intention(flag[43]);
+        let obj = outer2_1(outer2_2[43]);
         obj = { emoji, channel, intention, forceIncludeExternalGuilds: flag };
         const emojiUnavailableReason = obj.getEmojiUnavailableReason(obj);
-        if (emojiUnavailableReason === constants.PREMIUM_LOCKED) {
-          if (!closure_3) {
+        if (emojiUnavailableReason === outer2_22.PREMIUM_LOCKED) {
+          if (!_isNativeReflectConstruct) {
             locked = locked.locked;
             locked.push(emoji);
           }
@@ -1444,9 +1453,9 @@ let tmp12 = (PersistedStore) => {
         }
         let tmp4 = null != emojiUnavailableReason;
         if (!tmp4) {
-          let tmp5 = closure_3;
-          if (closure_3) {
-            tmp5 = emoji.type !== channel(flag[44]).EmojiTypes.UNICODE;
+          let tmp5 = _isNativeReflectConstruct;
+          if (_isNativeReflectConstruct) {
+            tmp5 = emoji.type !== EmojiStore(outer2_2[44]).EmojiTypes.UNICODE;
           }
           tmp4 = tmp5;
         }
@@ -1455,26 +1464,26 @@ let tmp12 = (PersistedStore) => {
           unlocked.push(emoji);
         }
       }, { unlocked: [], locked: [] });
-      const obj = { unlocked: self.getSearchResultsOrder(reduced.unlocked, query, count, intention, value), locked: self.getSearchResultsOrder(reduced.locked, query, 0, intention, value) };
+      let obj = { unlocked: self.getSearchResultsOrder(reduced.unlocked, query, count, intention, value), locked: self.getSearchResultsOrder(reduced.locked, query, 0, intention, value) };
       return obj;
     }
   };
   items[16] = {
     key: "getUsableCustomEmojiById",
     value(arg0) {
-      callback7();
-      return callback5(arg0);
+      outer1_48();
+      return outer1_46(arg0);
     }
   };
   items[17] = {
     key: "getCustomEmojiById",
     value(arg0) {
-      callback7();
-      const tmp2 = callback6()[arg0];
+      outer1_48();
+      const tmp2 = outer1_47()[arg0];
       let tmp3;
       if (null != tmp2) {
         let emoji;
-        if (null != closure_37[tmp2]) {
+        if (null != outer1_37[tmp2]) {
           emoji = obj.getEmoji(arg0);
         }
         if (null != emoji) {
@@ -1488,10 +1497,10 @@ let tmp12 = (PersistedStore) => {
     key: "getTopEmoji",
     value(arg0) {
       if (null == arg0) {
-        let topEmojiWithoutFetchingLatest = closure_31;
+        let topEmojiWithoutFetchingLatest = outer1_31;
       } else {
-        callback7();
-        const value = store.get(arg0);
+        outer1_48();
+        const value = outer1_40.get(arg0);
         topEmojiWithoutFetchingLatest = value.getTopEmojiWithoutFetchingLatest(arg0);
       }
       return topEmojiWithoutFetchingLatest;
@@ -1501,10 +1510,10 @@ let tmp12 = (PersistedStore) => {
     key: "getNewlyAddedEmoji",
     value(arg0) {
       if (null == arg0) {
-        let newlyAddedEmojiForGuild = closure_31;
+        let newlyAddedEmojiForGuild = outer1_31;
       } else {
-        callback7();
-        const value = store.get(arg0);
+        outer1_48();
+        const value = outer1_40.get(arg0);
         newlyAddedEmojiForGuild = value.getNewlyAddedEmojiForGuild(arg0);
       }
       return newlyAddedEmojiForGuild;
@@ -1513,21 +1522,21 @@ let tmp12 = (PersistedStore) => {
   items[20] = {
     key: "getTopEmojisMetadata",
     value(arg0) {
-      return closure_39.get(arg0);
+      return outer1_39.get(arg0);
     }
   };
   items[21] = {
     key: "hasUsableEmojiInAnyGuild",
     value() {
-      callback7();
-      const keys = callback(closure_2[25]).keys(closure_37);
-      return keys.some((arg0) => closure_37[arg0].usableEmojis.length > 0);
+      outer1_48();
+      const keys = outer1_1(outer1_2[25]).keys(outer1_37);
+      return keys.some((arg0) => outer2_37[arg0].usableEmojis.length > 0);
     }
   };
   items[22] = {
     key: "hasFavoriteEmojis",
     value(arg0) {
-      const value = store.get(arg0);
+      const value = outer1_40.get(arg0);
       let tmp2 = null != value;
       if (tmp2) {
         tmp2 = value.favoriteEmojisWithoutFetchingLatest.length > 0;
@@ -1535,8 +1544,8 @@ let tmp12 = (PersistedStore) => {
       return tmp2;
     }
   };
-  return callback3(EmojiStore, items);
-}(importDefault(dependencyMap[45]).PersistedStore);
+  return callback4(EmojiStore, items);
+})(require("initialize").PersistedStore);
 tmp12.displayName = "EmojiStore";
 tmp12.persistKey = "EmojiStoreV2";
 const items2 = [
@@ -1546,7 +1555,7 @@ const items2 = [
   }
 ];
 tmp12.migrations = items2;
-tmp12 = new tmp12(importDefault(dependencyMap[32]), {
+tmp12 = new tmp12(require("dispatcher"), {
   LOGOUT: function handleLogout() {
     obj.pendingUsages = [];
     obj.emojiReactionPendingUsages = [];
@@ -1561,8 +1570,8 @@ tmp12 = new tmp12(importDefault(dependencyMap[32]), {
     let iter = tmp2();
     if (!iter.done) {
       do {
-        let tmp3 = closure_54;
-        let tmp4 = closure_54(iter.value.id);
+        let tmp3 = updateGuildEmoji;
+        let tmp4 = updateGuildEmoji(iter.value.id);
         let iter2 = tmp2();
         iter = iter2;
         done = iter2.done;
@@ -1581,10 +1590,11 @@ tmp12 = new tmp12(importDefault(dependencyMap[32]), {
     deleteEverything();
     for (const key10006 in arg0.emojis) {
       let tmp3 = key10006;
-      let tmp4 = closure_54;
-      let tmp5 = closure_54(key10006);
+      let tmp4 = updateGuildEmoji;
+      let tmp5 = updateGuildEmoji(key10006);
+      continue;
     }
-    const Unloaded = obj.Loaded;
+    const Loaded = obj.Loaded;
     rebuildEmojis();
   },
   CACHED_EMOJIS_LOADED: function handleCachedEmojisLoaded(emojis) {
@@ -1593,12 +1603,12 @@ tmp12 = new tmp12(importDefault(dependencyMap[32]), {
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_6;
-        let first = closure_6(iter.value, 1)[0];
-        let tmp4 = closure_15;
-        if (closure_15.isMember(first)) {
-          let tmp5 = closure_54;
-          let tmp6 = closure_54(first);
+        let tmp2 = callback2;
+        let first = callback2(iter.value, 1)[0];
+        let tmp4 = member;
+        if (member.isMember(first)) {
+          let tmp5 = updateGuildEmoji;
+          let tmp6 = updateGuildEmoji(first);
         }
         iter2 = tmp();
         iter = iter2;
@@ -1662,9 +1672,9 @@ tmp12 = new tmp12(importDefault(dependencyMap[32]), {
                 if (null != name) {
                   let tmp4 = closure_42;
                   let trackResult = closure_42.track(name);
-                  let tmp6 = closure_28;
-                  let prop = closure_28.emojiReactionPendingUsages;
-                  let obj = { key: name };
+                  let tmp6 = obj;
+                  let prop = obj.emojiReactionPendingUsages;
+                  obj = { key: name };
                   let _Date = Date;
                   obj.timestamp = Date.now();
                   let arr = prop.push(obj);
@@ -1685,9 +1695,9 @@ tmp12 = new tmp12(importDefault(dependencyMap[32]), {
           trackUsage(items1);
         }
       }
-      obj = importDefault(dependencyMap[23]);
-      emoji = obj.getByName(importDefault(dependencyMap[23]).convertSurrogateToName(optimistic.emoji.name, false));
-      const obj2 = importDefault(dependencyMap[23]);
+      obj = importDefault(3771);
+      emoji = obj.getByName(importDefault(3771).convertSurrogateToName(optimistic.emoji.name, false));
+      const obj2 = importDefault(3771);
     } else {
       return false;
     }
@@ -1696,7 +1706,7 @@ tmp12 = new tmp12(importDefault(dependencyMap[32]), {
     trackUsage(emojiUsed.emojiUsed);
   },
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsProtoUpdate(settings) {
-    const obj = importDefault(dependencyMap[38]);
+    const obj = importDefault(4999);
     obj.setEmojiLocale(locale.locale);
     if (settings.settings.type === UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
       if (settings.wasSaved) {
@@ -1711,9 +1721,9 @@ tmp12 = new tmp12(importDefault(dependencyMap[32]), {
   TOP_EMOJIS_FETCH_SUCCESS: function handleTopEmojisLoaded(topEmojisMetadata) {
     topEmojisMetadata = topEmojisMetadata.topEmojisMetadata;
     const obj = { emojiIds: topEmojisMetadata.map((emojiId) => emojiId.emojiId) };
-    const tmp = importDefault(dependencyMap[41]);
-    const tmpResult = importDefault(dependencyMap[41])(importDefault(dependencyMap[41])());
-    obj.topEmojisTTL = importDefault(dependencyMap[41])(importDefault(dependencyMap[41])()).add(1, "days").valueOf();
+    const tmp = importDefault(3712);
+    const tmpResult = importDefault(3712)(importDefault(3712)());
+    obj.topEmojisTTL = importDefault(3712)(importDefault(3712)()).add(1, "days").valueOf();
     const result = map.set(topEmojisMetadata.guildId, obj);
   },
   TOGGLE_GUILD_EXPANDED_STATE: function toggleGuildExpandedState(guildId) {
@@ -1725,198 +1735,12 @@ tmp12 = new tmp12(importDefault(dependencyMap[32]), {
     } else {
       set.add(guildId);
     }
-    const obj = {};
+    obj = {};
     const merged = Object.assign(obj);
     obj["expandedSectionsByGuildIds"] = set;
   }
 });
-const importDefaultResult1 = importDefault(dependencyMap[25]);
-const obj1 = {};
-const obj2 = {
-  LOGOUT: function handleLogout() {
-    obj.pendingUsages = [];
-    obj.emojiReactionPendingUsages = [];
-  },
-  BACKGROUND_SYNC: function handleBackgroundSync() {
-    deleteEverything();
-  },
-  CONNECTION_OPEN: function handleConnectionOpen(guilds) {
-    let done;
-    deleteEverything();
-    const tmp2 = _createForOfIteratorHelperLoose(guilds.guilds);
-    let iter = tmp2();
-    if (!iter.done) {
-      do {
-        let tmp3 = closure_54;
-        let tmp4 = closure_54(iter.value.id);
-        let iter2 = tmp2();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
-    }
-    if (0 === guilds.unavailableGuilds.length) {
-      guilds = guilds.guilds;
-      if (guilds.every((emojis) => "full_sync" === emojis.emojis.op)) {
-        let Unloaded = obj.Loaded;
-      }
-      rebuildEmojis();
-    }
-    Unloaded = obj.Unloaded;
-  },
-  OVERLAY_INITIALIZE: function handleOverlayInitialize(emojis) {
-    deleteEverything();
-    for (const key10006 in arg0.emojis) {
-      let tmp3 = key10006;
-      let tmp4 = closure_54;
-      let tmp5 = closure_54(key10006);
-    }
-    const Unloaded = obj.Loaded;
-    rebuildEmojis();
-  },
-  CACHED_EMOJIS_LOADED: function handleCachedEmojisLoaded(emojis) {
-    let iter2;
-    const tmp = _createForOfIteratorHelperLoose(emojis.emojis);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let tmp2 = closure_6;
-        let first = closure_6(iter.value, 1)[0];
-        let tmp4 = closure_15;
-        if (closure_15.isMember(first)) {
-          let tmp5 = closure_54;
-          let tmp6 = closure_54(first);
-        }
-        iter2 = tmp();
-        iter = iter2;
-      } while (!iter2.done);
-    }
-    rebuildEmojis();
-  },
-  GUILD_MEMBER_UPDATE: function handleGuildMemberUpdate(user) {
-    const currentUser = authStore.getCurrentUser();
-    let id;
-    if (null != currentUser) {
-      id = currentUser.id;
-    }
-    if (user.user.id === id) {
-      updateGuildEmoji(user.guildId);
-      rebuildEmojis();
-    }
-  },
-  GUILD_CREATE: function handleGuildCreate(guild) {
-    updateGuildEmoji(guild.guild.id);
-    rebuildEmojis();
-  },
-  GUILD_UPDATE: function handleGuildUpdate(guild) {
-    updateGuildEmoji(guild.guild.id);
-    rebuildEmojis();
-  },
-  GUILD_EMOJIS_UPDATE: function handleGuildEmojiUpdated(guildId) {
-    updateGuildEmoji(guildId.guildId);
-    rebuildEmojis();
-  },
-  GUILD_DELETE: function handleGuildDelete(guild) {
-    guild = guild.guild;
-    deleteGuildEmoji(guild.id);
-    map.delete(guild.id);
-    rebuildEmojis();
-  },
-  MESSAGE_REACTION_ADD: function handleAddReaction(optimistic) {
-    let iter;
-    if (optimistic.optimistic) {
-      if (null != optimistic.emoji.id) {
-        if ("0" !== optimistic.emoji.id) {
-          let emoji = optimistic.emoji;
-        }
-        if (null == emoji) {
-          return false;
-        } else {
-          const items = [emoji];
-          if (null != items) {
-            const tmp16 = _createForOfIteratorHelperLoose(items);
-            let iter2 = tmp16();
-            if (!iter2.done) {
-              do {
-                let value = iter2.value;
-                let name = value.id;
-                if (null == name) {
-                  name = value.uniqueName;
-                }
-                if (null == name) {
-                  name = value.name;
-                }
-                if (null != name) {
-                  let tmp4 = closure_42;
-                  let trackResult = closure_42.track(name);
-                  let tmp6 = closure_28;
-                  let prop = closure_28.emojiReactionPendingUsages;
-                  let obj = { key: name };
-                  let _Date = Date;
-                  obj.timestamp = Date.now();
-                  let arr = prop.push(obj);
-                }
-                iter = tmp16();
-                iter2 = iter;
-              } while (!iter.done);
-            }
-            let tmp8 = items.length > 0;
-            if (tmp8) {
-              tmp8 = Unloaded === obj.Loaded;
-            }
-            if (tmp8) {
-              closure_42.compute();
-            }
-          }
-          const items1 = [emoji];
-          trackUsage(items1);
-        }
-      }
-      obj = importDefault(dependencyMap[23]);
-      emoji = obj.getByName(importDefault(dependencyMap[23]).convertSurrogateToName(optimistic.emoji.name, false));
-      const obj2 = importDefault(dependencyMap[23]);
-    } else {
-      return false;
-    }
-  },
-  EMOJI_TRACK_USAGE: function handleTrackUsage(emojiUsed) {
-    trackUsage(emojiUsed.emojiUsed);
-  },
-  USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsProtoUpdate(settings) {
-    const obj = importDefault(dependencyMap[38]);
-    obj.setEmojiLocale(locale.locale);
-    if (settings.settings.type === UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
-      if (settings.wasSaved) {
-        obj.pendingUsages = [];
-        obj.emojiReactionPendingUsages = [];
-      }
-    }
-    return false;
-  },
-  GUILD_ROLE_CREATE: handleRoleUpdate,
-  GUILD_ROLE_UPDATE: handleRoleUpdate,
-  TOP_EMOJIS_FETCH_SUCCESS: function handleTopEmojisLoaded(topEmojisMetadata) {
-    topEmojisMetadata = topEmojisMetadata.topEmojisMetadata;
-    const obj = { emojiIds: topEmojisMetadata.map((emojiId) => emojiId.emojiId) };
-    const tmp = importDefault(dependencyMap[41]);
-    const tmpResult = importDefault(dependencyMap[41])(importDefault(dependencyMap[41])());
-    obj.topEmojisTTL = importDefault(dependencyMap[41])(importDefault(dependencyMap[41])()).add(1, "days").valueOf();
-    const result = map.set(topEmojisMetadata.guildId, obj);
-  },
-  TOGGLE_GUILD_EXPANDED_STATE: function toggleGuildExpandedState(guildId) {
-    guildId = guildId.guildId;
-    const set = new Set(obj.expandedSectionsByGuildIds);
-    const expandedSectionsByGuildIds = obj.expandedSectionsByGuildIds;
-    if (expandedSectionsByGuildIds.has(guildId)) {
-      set.delete(guildId);
-    } else {
-      set.add(guildId);
-    }
-    const obj = {};
-    const merged = Object.assign(obj);
-    obj["expandedSectionsByGuildIds"] = set;
-  }
-};
-const result = arg1(dependencyMap[46]).fileFinishedImporting("modules/emojis/EmojiStore.tsx");
+let result = set.fileFinishedImporting("modules/emojis/EmojiStore.tsx");
 
 export default tmp12;
 export const LoadState = obj;

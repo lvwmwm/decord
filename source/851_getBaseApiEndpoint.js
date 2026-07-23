@@ -1,9 +1,11 @@
 // Module ID: 851
-// Function ID: 9492
+// Function ID: 9493
 // Name: getBaseApiEndpoint
-// Dependencies: []
+// Dependencies: [814]
 
 // Module 851 (getBaseApiEndpoint)
+const require = arg1;
+const dependencyMap = arg6;
 function getBaseApiEndpoint(protocol) {
   let str = "";
   if (protocol.protocol) {
@@ -44,12 +46,12 @@ arg5.getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpointWithUrl
   return combined1;
 };
 arg5.getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
-  const dsn = user(arg6[0]).makeDsn(arg0);
+  const dsn = require(814) /* dsnFromString */.makeDsn(arg0);
   if (dsn) {
     const _HermesInternal = HermesInternal;
     const combined = "" + getBaseApiEndpoint(dsn) + "embed/error-page/";
     const _HermesInternal2 = HermesInternal;
-    let combined1 = "dsn=" + user(arg6[0]).dsnToString(dsn);
+    let combined1 = "dsn=" + require(814) /* dsnFromString */.dsnToString(dsn);
     let tmp10 = combined1;
     const keys = Object.keys();
     if (keys !== undefined) {
@@ -85,7 +87,7 @@ arg5.getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
                   let _HermesInternal5 = HermesInternal;
                   combined1 = sum + "&email=" + encodeURIComponent(user.email);
                   let tmp18 = user;
-                  // continue
+                  continue;
                 }
                 continue;
               }
@@ -96,7 +98,7 @@ arg5.getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
               let encodeURIComponentResult = encodeURIComponent(tmp13);
               let _HermesInternal3 = HermesInternal;
               combined1 = tmp12 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp13]);
-              // continue
+              continue;
             }
             continue;
           }
@@ -110,5 +112,5 @@ arg5.getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
   } else {
     return "";
   }
-  const obj = user(arg6[0]);
+  const obj = require(814) /* dsnFromString */;
 };

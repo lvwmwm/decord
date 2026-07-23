@@ -1,20 +1,19 @@
-// Module ID: 4271
-// Function ID: 37389
+// Module ID: 4275
+// Function ID: 37421
 // Name: formatSinkWantStat
-// Dependencies: []
+// Dependencies: [2]
 // Exports: formatSinkWantAsInt, formatSinkWantStat
 
-// Module 4271 (formatSinkWantStat)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/utils/transformStatsUtils.tsx");
+// Module 4275 (formatSinkWantStat)
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/utils/transformStatsUtils.tsx");
 
-export const formatSinkWantStat = function formatSinkWantStat(any, ssrc, arg2) {
-  let str = any[ssrc];
+export const formatSinkWantStat = function formatSinkWantStat(id, ssrc, arg2) {
+  let str = id[ssrc];
   if (null == str) {
     let str2 = "100";
     if (arg2) {
       const _HermesInternal = HermesInternal;
-      str2 = "" + any.any + " (any)";
+      str2 = "" + id.any + " (any)";
     }
     str = str2;
   } else {
@@ -22,10 +21,10 @@ export const formatSinkWantStat = function formatSinkWantStat(any, ssrc, arg2) {
   }
   return str;
 };
-export const formatSinkWantAsInt = function formatSinkWantAsInt(any, ssrc) {
-  any = any[ssrc];
+export const formatSinkWantAsInt = function formatSinkWantAsInt(id, ssrc) {
+  let any = id[ssrc];
   if (null == any) {
-    any = any.any;
+    any = id.any;
   }
   return any;
 };

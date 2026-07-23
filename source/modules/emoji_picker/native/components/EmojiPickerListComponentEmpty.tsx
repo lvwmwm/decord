@@ -1,40 +1,40 @@
-// Module ID: 9363
-// Function ID: 73064
-// Dependencies: []
+// Module ID: 9370
+// Function ID: 73105
+// Dependencies: [31, 27, 33, 4130, 689, 9371, 5189, 1273, 1212, 2]
 
-// Module 9363
-const importAllResult = importAll(dependencyMap[0]);
-const ScrollView = arg1(dependencyMap[1]).ScrollView;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj1 = arg1(dependencyMap[3]);
-let obj = { emptyStateContainer: {} };
-obj = { color: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
+// Module 9370
+import importAllResult from "result";
+import { ScrollView } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let obj = { emptyStateContainer: { padding: 0, flex: 1 } };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
 obj.emptyStateBody = obj;
-obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_8, marginTop: 0 };
-obj.emptyStateImage = obj1;
-let closure_5 = obj1.createStyles(obj);
+_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: 0 };
+obj.emptyStateImage = _createForOfIteratorHelperLoose;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function EmojiPickerListComponentEmpty(insetTop) {
   insetTop = insetTop.insetTop;
-  const arg1 = insetTop;
   const insetBottom = insetTop.insetBottom;
-  const dependencyMap = insetBottom;
   const items = [insetBottom, insetTop];
   const memo = importAllResult.useMemo(() => ({ marginBottom: insetBottom, marginTop: insetTop, flex: 1 }), items);
-  let obj = arg1(dependencyMap[5]);
+  let obj = insetTop(insetBottom[5]);
   const searchEmptySource = obj.useSearchEmptySource();
   if (insetTop.inActionSheet) {
-    let BottomSheetScrollView = arg1(dependencyMap[6]).BottomSheetScrollView;
+    let BottomSheetScrollView = insetTop(insetBottom[6]).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
   obj = { contentContainerStyle: memo, keyboardShouldPersistTaps: "always" };
   obj = { source: searchEmptySource };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.body = intl.string(arg1(dependencyMap[8]).t.IxxiKF);
+  const intl = insetTop(insetBottom[8]).intl;
+  obj.body = intl.string(insetTop(insetBottom[8]).t.IxxiKF);
   ({ emptyStateBody: obj3.bodyStyle, emptyStateContainer: obj3.containerStyle, emptyStateImage: obj3.imageStyle } = callback());
-  obj.children = jsx(arg1(dependencyMap[7]).RefreshEmptyState, obj);
-  return <BottomSheetScrollView {...obj} />;
+  obj.children = jsx(insetTop(insetBottom[7]).RefreshEmptyState, { source: searchEmptySource });
+  return <BottomSheetScrollView source={searchEmptySource} />;
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponentEmpty.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/emoji_picker/native/components/EmojiPickerListComponentEmpty.tsx");
 
 export default memoResult;

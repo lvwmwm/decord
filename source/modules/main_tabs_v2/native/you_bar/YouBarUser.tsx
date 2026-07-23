@@ -1,45 +1,51 @@
-// Module ID: 14997
-// Function ID: 112933
-// Dependencies: []
+// Module ID: 15113
+// Function ID: 115101
+// Dependencies: [31, 27, 1849, 13997, 33, 4130, 689, 566, 3991, 4542, 3969, 15114, 15115, 15116, 2]
 
-// Module 14997
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-({ YOU_BAR_SPRING_CONFIG: closure_6, YOU_BAR_LARGE_AVATAR_NAME_MARGIN: closure_7, YOU_BAR_SMALL_AVATAR_NAME_MARGIN: closure_8 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-let obj1 = arg1(dependencyMap[5]);
+// Module 15113
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+let require = arg1;
+({ YOU_BAR_SPRING_CONFIG: closure_6, YOU_BAR_LARGE_AVATAR_NAME_MARGIN: closure_7, YOU_BAR_SMALL_AVATAR_NAME_MARGIN: closure_8 } = CONNECTION_BANNER_HEIGHT);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let obj = {};
-obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", borderRadius: importDefault(dependencyMap[6]).modules.mobile.YOU_BAR_BORDER_RADIUS };
+obj = { flexDirection: "row", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.YOU_BAR_BORDER_RADIUS };
 obj.youButton = obj;
-obj.userText = { 1314563787: "interactive-text-default", 1364474466: null, -1604160795: false, 102650204: "gr" };
-obj1 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[6]).radii.round, height: 16, width: 80 };
-obj.placeholder = obj1;
-let closure_11 = obj1.createStyles(obj);
+obj.userText = { flexDirection: "column", justifyContent: "center", height: "100%", gap: 1 };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, height: 16, width: 80 };
+obj.placeholder = _createForOfIteratorHelperLoose;
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_12 = { code: "function YouBarUserTsx1(){const{nameMargin}=this.__closure;return{marginLeft:nameMargin.get()};}" };
-const tmp3 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo(function YouBarUser(arg0) {
   let isQuestRendered;
   let onAvatarPress;
-  let importDefault;
+  let sharedValue;
   ({ isQuestRendered, onAvatarPress } = arg0);
   const tmp = callback2();
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const arg1 = tmp3;
-  let obj1 = arg1(dependencyMap[8]);
-  const sharedValue = obj1.useSharedValue(tmp3 ? closure_7 : closure_8);
-  importDefault = sharedValue;
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
+  require = tmp3;
+  let obj1 = require(3991);
+  sharedValue = obj1.useSharedValue(tmp3 ? closure_7 : closure_8);
   const items1 = [!isQuestRendered, sharedValue];
   const effect = importAllResult.useEffect(() => {
-    const result = sharedValue.set(tmp3(closure_2[9]).withSpring(tmp3 ? closure_7 : closure_8, closure_6));
+    const result = sharedValue.set(tmp3(outer1_2[9]).withSpring(tmp3 ? outer1_7 : outer1_8, outer1_6));
   }, items1);
-  let obj2 = arg1(dependencyMap[8]);
+  let obj2 = require(3991);
   class S {
     constructor() {
-      obj = { marginLeft: closure_1.get() };
+      obj = { marginLeft: c1.get() };
       return obj;
     }
   }
@@ -47,35 +53,35 @@ const memoResult = importAllResult.memo(function YouBarUser(arg0) {
   S.__workletHash = 12063452832866;
   S.__initData = closure_12;
   const animatedStyle = obj2.useAnimatedStyle(S);
-  let obj3 = importDefault(dependencyMap[10]);
+  let obj3 = sharedValue(3969);
   const name = obj3.useName(stateFromStores);
   if (null != stateFromStores) {
     if (null != name) {
       obj = { style: tmp.youButton };
       obj = { isLargeAvatar: tmp3, onPress: onAvatarPress };
-      const items2 = [callback(importDefault(dependencyMap[12]), obj), ];
+      const items2 = [callback(sharedValue(15115), obj), ];
       obj1 = {};
       const items3 = [tmp.userText, animatedStyle, ];
       obj2 = { flexShrink: 1 };
       items3[2] = obj2;
       obj1.style = items3;
       obj3 = { userId: stateFromStores.id, username: name };
-      obj1.children = callback(importDefault(dependencyMap[13]), obj3);
-      items2[1] = callback(importDefault(dependencyMap[8]).View, obj1);
+      obj1.children = callback(sharedValue(15116), obj3);
+      items2[1] = callback(sharedValue(3991).View, obj1);
       obj.children = items2;
     }
     return tmp8(tmp9, obj);
   }
   const obj4 = { style: items4 };
-  const items4 = [tmp.youButton];
-  const items5 = [callback(importDefault(dependencyMap[11]), { isLarge: !isQuestRendered }), ];
+  items4 = [tmp.youButton];
+  const items5 = [callback(sharedValue(15114), { isLarge: !isQuestRendered }), ];
   const obj5 = { style: items6 };
-  const items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
+  items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj5.children = callback(View, { style: tmp.placeholder });
-  items5[1] = callback(importDefault(dependencyMap[8]).View, obj5);
+  items5[1] = callback(sharedValue(3991).View, obj5);
   obj4.children = items5;
   obj = obj4;
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarUser.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarUser.tsx");
 
 export default memoResult;

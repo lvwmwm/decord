@@ -1,13 +1,13 @@
-// Module ID: 6629
-// Function ID: 50876
+// Module ID: 6634
+// Function ID: 50905
 // Name: WumpusMahjongSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6635, 2]
 // Exports: WumpusMahjongSpotIllustration
 
-// Module 6629 (WumpusMahjongSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WumpusMahjongSpotIllustration.native.tsx");
+// Module 6634 (WumpusMahjongSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WumpusMahjongSpotIllustration.native.tsx");
 
 export const WumpusMahjongSpotIllustration = function WumpusMahjongSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const WumpusMahjongSpotIllustration = function WumpusMahjongSpotIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6635) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const WumpusMahjongSpotIllustration = function WumpusMahjongSpotIllustrat
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

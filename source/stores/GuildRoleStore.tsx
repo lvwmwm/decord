@@ -1,52 +1,62 @@
 // Module ID: 1910
-// Function ID: 21527
+// Function ID: 21528
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1388, 1839, 1391, 1911, 483, 1912, 1914, 1841, 2]
 
 // Module 1910 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importAll = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import isGuildOwner from "isGuildOwner";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { constructInPlace } from "constructInPlace";
+import { getGuildEveryoneRoleId } from "isGuildOwner";
+import { GuildRoleRecordTypeTag } from "GuildRoleRecordTypeTag";
+import { LibdiscoreBatchStoreRefactorExperiment } from "_callSuper";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +67,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importAll = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -95,7 +105,7 @@ function _isNativeReflectConstruct() {
 function createGuildRoleRecordFromRust(permissions) {
   const obj = {};
   const merged = Object.assign(permissions);
-  obj["permissions"] = importAll(dependencyMap[9]).deserialize(permissions.permissions);
+  obj["permissions"] = importAll(483).deserialize(permissions.permissions);
   return constructInPlace(GuildRoleRecordTypeTag, obj);
 }
 function syncRoles(id, op, setPartition) {
@@ -107,47 +117,39 @@ function syncRoles(id, op, setPartition) {
     tmp = 0 === op.deletes.length;
   }
   if (!tmp) {
-    setPartition.setPartition(id, importAll(dependencyMap[11]).fromSyncOperation(id, op, setPartition.getPartition(id)));
-    const obj = importAll(dependencyMap[11]);
+    setPartition.setPartition(id, importAll(1914).fromSyncOperation(id, op, setPartition.getPartition(id)));
+    const obj = importAll(1914);
   }
 }
-function checkGuildRolesExist(guild_create, id, partitionLength) {
+function checkGuildRolesExist(cache_loaded, id, partitionLength) {
   if (0 === partitionLength.partitionLength(id)) {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("Guild data was missing from store for guild " + id + ": missing roles. (phase: " + guild_create + ")");
+    const error = new Error("Guild data was missing from store for guild " + id + ": missing roles. (phase: " + cache_loaded + ")");
     throw error;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const constructInPlace = arg1(dependencyMap[5]).constructInPlace;
-const getGuildEveryoneRoleId = arg1(dependencyMap[7]).getGuildEveryoneRoleId;
-const GuildRoleRecordTypeTag = arg1(dependencyMap[8]).GuildRoleRecordTypeTag;
-let tmp2 = (LibdiscoreStore) => {
+let tmp2 = ((LibdiscoreStore) => {
   class GuildRoleStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_2(this, GuildRoleStore);
+      tmp = outer1_2(this, GuildRoleStore);
       items1 = [...items];
-      obj = closure_5(GuildRoleStore);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      obj = outer1_5(GuildRoleStore);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items1, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.database = tmp2Result.addKKVDatabase("guild_roles", closure_13);
+      tmp2Result.database = tmp2Result.addKKVDatabase("guild_roles", outer1_13);
       database = tmp2Result.database;
-      tmp2Result.getSortedRoles = database.memoizedPartition((arg0, arg1) => callback(closure_1[10]).sortGuildRoleRecords(Object.values(arg1)));
+      tmp2Result.getSortedRoles = database.memoizedPartition((arg0, arg1) => GuildRoleStore(outer2_1[10]).sortGuildRoleRecords(Object.values(arg1)));
       database2 = tmp2Result.database;
       tmp2Result.getRolesSnapshot = database2.memoizedPartition((arg0, arg1) => {
         const merged = Object.assign(arg1);
@@ -156,7 +158,6 @@ let tmp2 = (LibdiscoreStore) => {
       return tmp2Result;
     }
   }
-  const importAll = GuildRoleStore;
   callback2(GuildRoleStore, LibdiscoreStore);
   let obj = {
     key: "stateWrapper",
@@ -164,12 +165,12 @@ let tmp2 = (LibdiscoreStore) => {
       return this.database;
     }
   };
-  const items = [obj, , , , , , , ];
+  let items = [obj, , , , , , , ];
   obj = {
     key: "serializeAllGuildRoles",
     value() {
       const database = this.database;
-      return database.mapPartitions(GuildRoleStore(closure_1[11]).toSerializedPartition);
+      return database.mapPartitions(GuildRoleStore(outer1_1[11]).toSerializedPartition);
     }
   };
   items[1] = obj;
@@ -206,7 +207,7 @@ let tmp2 = (LibdiscoreStore) => {
     key: "getEveryoneRole",
     value(id) {
       const database = this.database;
-      const record = database.getRecord(id.id, callback3(id));
+      const record = database.getRecord(id.id, outer1_8(id));
       if (null == record) {
         const _Error = Error;
         const error = new Error("Guild does not have an @everyone role");
@@ -224,9 +225,8 @@ let tmp2 = (LibdiscoreStore) => {
     }
   };
   return callback(GuildRoleStore, items);
-}(arg1(dependencyMap[6]).LibdiscoreStore);
+})(require("_isNativeReflectConstruct").LibdiscoreStore);
 tmp2.displayName = "GuildRoleStore";
-const LibdiscoreBatchStoreRefactorExperiment = arg1(dependencyMap[12]).LibdiscoreBatchStoreRefactorExperiment;
 tmp2 = new tmp2({
   BACKGROUND_SYNC(guilds, getNullablePartition) {
     let nullablePartition;
@@ -245,12 +245,12 @@ tmp2 = new tmp2({
         }
       }
       if ("partial" === partial_updates.data_mode) {
-        const obj2 = importAll(dependencyMap[10]);
+        const obj2 = importAll(1912);
         partial_updates = partial_updates.partial_updates;
         let filterRoleDeletesResult = obj2.filterRoleDeletes(partial_updates.id, nullablePartition, partial_updates.partial_updates.roles, partial_updates.deleted_role_ids);
       } else {
-        filterRoleDeletesResult = importAll(dependencyMap[11]).fromServerArray(partial_updates.id, partial_updates.roles);
-        const obj = importAll(dependencyMap[11]);
+        filterRoleDeletesResult = importAll(1914).fromServerArray(partial_updates.id, partial_updates.roles);
+        const obj = importAll(1914);
       }
       getNullablePartition.setPartition(partial_updates.id, filterRoleDeletesResult);
     }
@@ -264,9 +264,9 @@ tmp2 = new tmp2({
       do {
         let value = iter.value;
         let partitionKey = value.partitionKey;
-        let tmp3 = closure_0;
-        let tmp4 = closure_1;
-        let obj = closure_0(closure_1[11]);
+        let tmp3 = importAll;
+        let tmp4 = dependencyMap;
+        let obj = importAll(1914);
         let setPartitionResult = clear.setPartition(partitionKey, obj.fromSerializedPartition(partitionKey, value.values));
         let iter2 = tmp2();
         iter = iter2;
@@ -314,10 +314,10 @@ tmp2 = new tmp2({
       do {
         value = iter5.value;
         let id = value.id;
-        let tmp6 = closure_14;
-        let tmp7 = closure_14(id, value.roles, getPartitionKeys);
-        let tmp8 = closure_15;
-        let tmp9 = closure_15("connection_open", id, getPartitionKeys);
+        let tmp6 = syncRoles;
+        let tmp7 = syncRoles(id, value.roles, getPartitionKeys);
+        let tmp8 = checkGuildRolesExist;
+        let tmp9 = checkGuildRolesExist("connection_open", id, getPartitionKeys);
         let iter6 = tmp5();
         iter5 = iter6;
         done2 = iter6.done;
@@ -333,12 +333,12 @@ tmp2 = new tmp2({
       do {
         let value = iter.value;
         let id = value.id;
-        let tmp3 = closure_0;
-        let tmp4 = closure_1;
-        let obj = closure_0(closure_1[11]);
+        let tmp3 = importAll;
+        let tmp4 = dependencyMap;
+        let obj = importAll(1914);
         let setPartitionResult = clear.setPartition(id, obj.fromSerializedPartition(id, value.roles));
-        let tmp6 = closure_15;
-        let tmp7 = closure_15("cache_loaded", id, clear);
+        let tmp6 = checkGuildRolesExist;
+        let tmp7 = checkGuildRolesExist("cache_loaded", id, clear);
         let iter2 = tmp2();
         iter = iter2;
         done = iter2.done;
@@ -355,12 +355,12 @@ tmp2 = new tmp2({
         do {
           let value = iter2.value;
           let id = value.id;
-          let tmp = closure_0;
-          let tmp2 = closure_1;
-          let obj = closure_0(closure_1[11]);
+          let tmp = importAll;
+          let tmp2 = dependencyMap;
+          let obj = importAll(1914);
           let setPartitionResult = clear.setPartition(id, obj.fromSerializedPartition(id, value.roles));
-          let tmp4 = closure_15;
-          let tmp5 = closure_15("cache_loaded_lazy", id, clear);
+          let tmp4 = checkGuildRolesExist;
+          let tmp5 = checkGuildRolesExist("cache_loaded_lazy", id, clear);
           let iter = tmp8();
           iter2 = iter;
           done = iter.done;
@@ -377,7 +377,7 @@ tmp2 = new tmp2({
   GUILD_UPDATE(guild, setPartition) {
     guild = guild.guild;
     const id = guild.id;
-    setPartition.setPartition(id, importAll(dependencyMap[11]).fromServerArray(id, guild.roles));
+    setPartition.setPartition(id, importAll(1914).fromServerArray(id, guild.roles));
   },
   GUILD_DELETE(guild, removePartition) {
     if (!guild.guild.unavailable) {
@@ -385,15 +385,15 @@ tmp2 = new tmp2({
     }
   },
   GUILD_ROLE_CREATE(guildId, setRecord) {
-    setRecord.setRecord(guildId.guildId, guildId.role.id, importAll(dependencyMap[11]).fromServer(guildId.guildId, guildId.role));
+    setRecord.setRecord(guildId.guildId, guildId.role.id, importAll(1914).fromServer(guildId.guildId, guildId.role));
   },
   GUILD_ROLE_UPDATE(guildId, setRecord) {
-    setRecord.setRecord(guildId.guildId, guildId.role.id, importAll(dependencyMap[11]).fromServer(guildId.guildId, guildId.role));
+    setRecord.setRecord(guildId.guildId, guildId.role.id, importAll(1914).fromServer(guildId.guildId, guildId.role));
   },
   GUILD_ROLE_DELETE(guildId, removeRecord) {
     removeRecord.removeRecord(guildId.guildId, guildId.roleId);
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-const result = arg1(dependencyMap[13]).fileFinishedImporting("stores/GuildRoleStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GuildRoleStore.tsx");
 
 export default tmp2;

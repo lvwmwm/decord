@@ -1,13 +1,13 @@
-// Module ID: 6497
-// Function ID: 50678
+// Module ID: 6502
+// Function ID: 50707
 // Name: ShareNitroSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6503, 2]
 // Exports: ShareNitroSpotIllustration
 
-// Module 6497 (ShareNitroSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ShareNitroSpotIllustration.native.tsx");
+// Module 6502 (ShareNitroSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ShareNitroSpotIllustration.native.tsx");
 
 export const ShareNitroSpotIllustration = function ShareNitroSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ShareNitroSpotIllustration = function ShareNitroSpotIllustration(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6503) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ShareNitroSpotIllustration = function ShareNitroSpotIllustration(wi
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

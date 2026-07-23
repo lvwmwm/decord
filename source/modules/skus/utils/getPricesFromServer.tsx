@@ -1,13 +1,13 @@
-// Module ID: 4167
-// Function ID: 35365
+// Module ID: 4171
+// Function ID: 35397
 // Name: getPricesFromServer
-// Dependencies: []
+// Dependencies: [3777, 2]
 // Exports: default
 
-// Module 4167 (getPricesFromServer)
-const getPriceFromServer = require(dependencyMap[0]).getPriceFromServer;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/skus/utils/getPricesFromServer.tsx");
+// Module 4171 (getPricesFromServer)
+import { getPriceFromServer } from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/skus/utils/getPricesFromServer.tsx");
 
 export default function getPricesFromServer(arg0) {
   if (null == arg0) {
@@ -20,8 +20,8 @@ export default function getPricesFromServer(arg0) {
       let tmp2;
       [tmp, tmp2] = arg1;
       let obj = {};
-      obj = { countryCode: tmp2.country_prices.country_code, prices: prices.map((arg0) => callback(arg0, true)) };
-      const prices = tmp2.country_prices.prices;
+      obj = { countryCode: tmp2.country_prices.country_code, prices: prices.map((arg0) => outer2_0(arg0, true)) };
+      prices = tmp2.country_prices.prices;
       obj.countryPrices = obj;
       obj.paymentSourcePrices = {};
       arg0[tmp] = obj;

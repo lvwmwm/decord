@@ -1,16 +1,16 @@
-// Module ID: 11457
-// Function ID: 89270
+// Module ID: 11467
+// Function ID: 89320
 // Name: useRequiredLinkedLobbyApplicationAuthorization
-// Dependencies: []
+// Dependencies: [31, 4167, 5066, 566, 5472, 5465, 2]
 // Exports: default
 
-// Module 11457 (useRequiredLinkedLobbyApplicationAuthorization)
-const useEffect = require(dependencyMap[0]).useEffect;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const FetchState = require(dependencyMap[2]).FetchState;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/channel/hooks/useRequiredLinkedLobbyApplicationAuthorization.tsx");
+// Module 11467 (useRequiredLinkedLobbyApplicationAuthorization)
+import { useEffect } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel/hooks/useRequiredLinkedLobbyApplicationAuthorization.tsx");
 
 export default function useRequiredLinkedLobbyApplicationAuthorization(require_application_authorization) {
   let application_id = null;
@@ -20,31 +20,27 @@ export default function useRequiredLinkedLobbyApplicationAuthorization(require_a
       application_id = require_application_authorization.application_id;
     }
   }
-  const require = application_id;
-  let obj = require(dependencyMap[3]);
-  const items = [closure_5];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ authorizationsFetchState: authStore.getFetchState(), applicationOAuth2Token: authStore.getNewestTokenForApplication(application_id) }));
+  let obj = application_id(stateFromStores[3]);
+  let items = [closure_5];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ authorizationsFetchState: outer1_5.getFetchState(), applicationOAuth2Token: outer1_5.getNewestTokenForApplication(application_id) }));
   const authorizationsFetchState = stateFromStoresObject.authorizationsFetchState;
-  const importDefault = authorizationsFetchState;
   const applicationOAuth2Token = stateFromStoresObject.applicationOAuth2Token;
-  const items1 = [closure_4];
-  let stateFromStores = require(dependencyMap[3]).useStateFromStores(items1, () => store.getApplication(application_id));
-  const dependencyMap = stateFromStores;
-  const obj2 = require(dependencyMap[3]);
-  const items2 = [closure_4];
-  const stateFromStores1 = require(dependencyMap[3]).useStateFromStores(items2, () => {
+  const items1 = [_isNativeReflectConstruct];
+  stateFromStores = application_id(stateFromStores[3]).useStateFromStores(items1, () => outer1_4.getApplication(application_id));
+  const obj2 = application_id(stateFromStores[3]);
+  const items2 = [_isNativeReflectConstruct];
+  const stateFromStores1 = application_id(stateFromStores[3]).useStateFromStores(items2, () => {
     let parentId;
     if (null != stateFromStores) {
       parentId = stateFromStores.parentId;
     }
-    return store.getApplication(parentId);
+    return outer1_4.getApplication(parentId);
   });
-  const useEffect = stateFromStores1;
   const items3 = [authorizationsFetchState, application_id];
-  useEffect(() => {
+  stateFromStores1(() => {
     let tmp = null != application_id;
     if (tmp) {
-      tmp = authorizationsFetchState === constants.NOT_FETCHED;
+      tmp = authorizationsFetchState === outer1_6.NOT_FETCHED;
     }
     if (tmp) {
       const response = authorizationsFetchState(stateFromStores[4]).fetch();
@@ -52,13 +48,13 @@ export default function useRequiredLinkedLobbyApplicationAuthorization(require_a
     }
   }, items3);
   const items4 = [application_id, applicationOAuth2Token, authorizationsFetchState, stateFromStores];
-  useEffect(() => {
+  stateFromStores1(() => {
     let tmp = null != application_id;
     if (tmp) {
       tmp = null == stateFromStores;
     }
     if (tmp) {
-      tmp = authorizationsFetchState === constants.FETCHED;
+      tmp = authorizationsFetchState === outer1_6.FETCHED;
     }
     if (tmp) {
       const items = [application_id];
@@ -67,7 +63,7 @@ export default function useRequiredLinkedLobbyApplicationAuthorization(require_a
     }
   }, items4);
   const items5 = [stateFromStores, authorizationsFetchState, stateFromStores1];
-  useEffect(() => {
+  stateFromStores1(() => {
     let tmp = null != stateFromStores;
     if (tmp) {
       tmp = null != stateFromStores.parentId;
@@ -76,7 +72,7 @@ export default function useRequiredLinkedLobbyApplicationAuthorization(require_a
       tmp = null == stateFromStores1;
     }
     if (tmp) {
-      tmp = authorizationsFetchState === constants.FETCHED;
+      tmp = authorizationsFetchState === outer1_6.FETCHED;
     }
     if (tmp) {
       const items = [stateFromStores.parentId];

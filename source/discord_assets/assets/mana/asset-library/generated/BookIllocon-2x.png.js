@@ -1,11 +1,10 @@
-// Module ID: 5900
-// Function ID: 49783
+// Module ID: 5905
+// Function ID: 49812
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5900 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BookIllocon-2x.png.js");
+// Module 5905 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BookIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/4631aac6b25df592997172fd815a1231db7b2109255103c4a0396afe74dc45fe.png";
 export const metadata = { fileBytes: 636 };

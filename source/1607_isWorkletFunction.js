@@ -1,5 +1,5 @@
 // Module ID: 1607
-// Function ID: 17835
+// Function ID: 17836
 // Name: isWorkletFunction
 // Dependencies: []
 
@@ -7,7 +7,7 @@
 let closure_0 = { code: "function isWorkletFunction_Pnpm_commonTypesTs1(value){return(typeof value==='function'&&!!value.__workletHash);}" };
 arg5.LayoutAnimationType = { ENTERING: 1, [1]: "ENTERING", EXITING: 2, [2]: "EXITING", LAYOUT: 3, [3]: "LAYOUT", SHARED_ELEMENT_TRANSITION: 4, [4]: "SHARED_ELEMENT_TRANSITION", SHARED_ELEMENT_TRANSITION_PROGRESS: 5, [5]: "SHARED_ELEMENT_TRANSITION_PROGRESS" };
 arg5.SharedTransitionType = { ANIMATION: "animation", PROGRESS_ANIMATION: "progressAnimation" };
-arg5.isWorkletFunction = () => {
+arg5.isWorkletFunction = (() => {
   function isWorkletFunction(__workletHash) {
     return "function" === typeof __workletHash && __workletHash.__workletHash;
   }
@@ -15,7 +15,7 @@ arg5.isWorkletFunction = () => {
   isWorkletFunction.__workletHash = 327007448384;
   isWorkletFunction.__initData = closure_0;
   return isWorkletFunction;
-}();
+})();
 arg5.SensorType = { ACCELEROMETER: 1, [1]: "ACCELEROMETER", GYROSCOPE: 2, [2]: "GYROSCOPE", GRAVITY: 3, [3]: "GRAVITY", MAGNETIC_FIELD: 4, [4]: "MAGNETIC_FIELD", ROTATION: 5, [5]: "ROTATION" };
 arg5.IOSReferenceFrame = { XArbitraryZVertical: 0, [0]: "XArbitraryZVertical", XArbitraryCorrectedZVertical: 1, [1]: "XArbitraryCorrectedZVertical", XMagneticNorthZVertical: 2, [2]: "XMagneticNorthZVertical", XTrueNorthZVertical: 3, [3]: "XTrueNorthZVertical", Auto: 4, [4]: "Auto" };
 arg5.InterfaceOrientation = { ROTATION_0: 0, [0]: "ROTATION_0", ROTATION_90: 90, [90]: "ROTATION_90", ROTATION_180: 180, [180]: "ROTATION_180", ROTATION_270: 270, [270]: "ROTATION_270" };

@@ -1,25 +1,28 @@
-// Module ID: 11311
-// Function ID: 88006
+// Module ID: 11321
+// Function ID: 88056
 // Name: PollDurationRadioGroup
-// Dependencies: []
+// Dependencies: [31, 33, 11320, 3843, 4098, 7519, 1212, 7518, 5500, 2]
 // Exports: default
 
-// Module 11311 (PollDurationRadioGroup)
+// Module 11321 (PollDurationRadioGroup)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function PollDurationRadioGroup(onChange) {
   onChange = onChange.onChange;
-  const arg1 = onChange;
-  const tmp = importDefault(dependencyMap[2])();
-  const importDefault = tmp;
+  let tmp = importDefault(11320)();
+  importDefault = tmp;
   const items = [tmp, onChange];
   const callback = React.useCallback((arg0) => {
     const tmp = onChange(arg0);
-    const AccessibilityAnnouncer = onChange(closure_2[3]).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = onChange(outer1_2[3]).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(tmp[arg0]);
-    tmp(closure_2[4]).hideActionSheet();
+    tmp(outer1_2[4]).hideActionSheet();
   }, items);
-  const obj = {};
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.title = intl.string(arg1(dependencyMap[6]).t.0ZStp9);
+  let obj = {};
+  const intl = onChange(1212).intl;
+  obj.title = intl.string(onChange(1212).t["0ZStp9"]);
   obj.hasIcons = false;
   obj.onChange = callback;
   obj.defaultValue = onChange.selectedDuration;
@@ -29,18 +32,16 @@ function PollDurationRadioGroup(onChange) {
     let tmp2;
     [tmp, tmp2] = arg0;
     const obj = { value: parseInt(tmp), label: tmp2 };
-    return callback(onChange(closure_2[7]).TableRadioRow, obj, tmp);
+    return outer1_4(onChange(outer1_2[7]).TableRadioRow, obj, tmp);
   });
-  return jsx(arg1(dependencyMap[5]).TableRadioGroup, obj);
+  return jsx(onChange(7519).TableRadioGroup, {});
 }
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/polls/native/PollDurationActionSheet.tsx");
+const result = require("usePollDurationOptions").fileFinishedImporting("modules/polls/native/PollDurationActionSheet.tsx");
 
 export default function PollDurationActionSheet(arg0) {
   let onChange;
   let selectedDuration;
   ({ selectedDuration, onChange } = arg0);
   const obj = { children: <PollDurationRadioGroup selectedDuration={selectedDuration} onChange={onChange} /> };
-  return jsx(arg1(dependencyMap[8]).ActionSheet, obj);
+  return jsx(require(5500) /* ActionSheet */.ActionSheet, { children: <PollDurationRadioGroup selectedDuration={selectedDuration} onChange={onChange} /> });
 };

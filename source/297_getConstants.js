@@ -1,16 +1,16 @@
 // Module ID: 297
 // Function ID: 4539
 // Name: getConstants
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 297 (getConstants)
-const enforcing = importAll(dependencyMap[0]).getEnforcing("StatusBarManager");
-let closure_1 = null;
+const enforcing = require("requireModule").getEnforcing("StatusBarManager");
+let c1 = null;
 
 export default {
   getConstants() {
     if (null == constants) {
-      const constants = store.getConstants();
+      constants = store.getConstants();
     }
     return constants;
   },

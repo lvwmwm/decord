@@ -1,44 +1,48 @@
-// Module ID: 3818
-// Function ID: 31732
+// Module ID: 3820
+// Function ID: 31737
 // Name: makeIntlFormatter
-// Dependencies: []
+// Dependencies: [1921, 3817, 1212, 2]
 // Exports: makeFormatter
 
-// Module 3818 (makeIntlFormatter)
+// Module 3820 (makeIntlFormatter)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function makeIntlFormatter(locale, arg1) {
   return Intl.DateTimeFormat(locale, arg1).format;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/intlFormatDate.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("lib/intlFormatDate.tsx");
 
 export const makeFormatter = function makeFormatter(arg0) {
-  const locale = locale.locale;
-  let tmp = function tryMakeNativeFormatter(locale, arg1) {
-    if (null == locale(arg1[1]).makeFormatter) {
+  locale = locale.locale;
+  let tmp = (function tryMakeNativeFormatter(locale, arg1) {
+    let closure_0 = locale;
+    let closure_1 = arg1;
+    if (null == outer1_0(outer1_1[1]).makeFormatter) {
       return null;
     } else {
       let tmp7 = tmp15;
       if (null != str) {
         let first;
-        if (null != locale(arg1[2]).systemLocale) {
-          first = locale(arg1[2]).systemLocale.split("-")[0];
-          const str3 = locale(arg1[2]).systemLocale;
+        if (null != outer1_0(outer1_1[2]).systemLocale) {
+          first = outer1_0(outer1_1[2]).systemLocale.split("-")[0];
+          const str3 = outer1_0(outer1_1[2]).systemLocale;
         }
         tmp7 = str.split("-")[0] === first;
       }
-      if (str !== locale(arg1[2]).initialLocale) {
+      if (str !== outer1_0(outer1_1[2]).initialLocale) {
         const tmp12 = locale;
       }
-      const formatter = locale(arg1[1]).makeFormatter(tmp12, arg1);
+      const formatter = outer1_0(outer1_1[1]).makeFormatter(tmp12, arg1);
       if (null == formatter) {
         return null;
       } else {
-        let closure_3 = null;
+        let c3 = null;
         return (arg0) => formatter(arg0);
       }
-      const obj = locale(arg1[1]);
+      const obj = outer1_0(outer1_1[1]);
     }
-  }(locale, arg0);
+  })(locale, arg0);
   if (null == tmp) {
     tmp = makeIntlFormatter(locale, arg0);
   }

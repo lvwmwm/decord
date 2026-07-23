@@ -1,12 +1,13 @@
-// Module ID: 12654
-// Function ID: 97318
+// Module ID: 12768
+// Function ID: 99474
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 12654 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/DisableHookFramePacerExperiment.tsx");
+// Module 12768 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-disable-hook-frame-pacer", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/DisableHookFramePacerExperiment.tsx");
 
 export const DisableHookFramePacerExperiment = apexExperiment;

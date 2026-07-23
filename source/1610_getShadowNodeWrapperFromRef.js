@@ -1,9 +1,11 @@
 // Module ID: 1610
-// Function ID: 17881
+// Function ID: 17882
 // Name: getShadowNodeWrapperFromRef
-// Dependencies: []
+// Dependencies: [1611, 1593]
 
 // Module 1610 (getShadowNodeWrapperFromRef)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.getShadowNodeWrapperFromRef = function getShadowNodeWrapperFromRef(self, findHostInstanceResult) {
   let prop;
   if (null != findHostInstanceResult) {
@@ -31,15 +33,15 @@ arg5.getShadowNodeWrapperFromRef = function getShadowNodeWrapperFromRef(self, fi
   if (null == prop) {
     let __internalInstanceHandle = self._reactInternals;
     if (__internalInstanceHandle) {
-      __internalInstanceHandle = findHostInstanceResult(arg6[0]).findHostInstance(self).__internalInstanceHandle;
-      const obj = findHostInstanceResult(arg6[0]);
+      __internalInstanceHandle = require(1611) /* findHostInstance */.findHostInstance(self).__internalInstanceHandle;
+      const obj = require(1611) /* findHostInstance */;
     }
     prop = __internalInstanceHandle;
   }
   if (prop) {
     return prop.stateNode.node;
   } else {
-    const ReanimatedError = findHostInstanceResult(arg6[1]).ReanimatedError;
+    const ReanimatedError = require(1593) /* processStack */.ReanimatedError;
     const prototype = ReanimatedError.prototype;
     const reanimatedError = new ReanimatedError("Failed to find host instance for a ref.");
     throw reanimatedError;

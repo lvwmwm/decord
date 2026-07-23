@@ -1,18 +1,18 @@
-// Module ID: 7690
-// Function ID: 61372
+// Module ID: 7696
+// Function ID: 61409
 // Name: createApplicationCommandSourceSystemMessage
-// Dependencies: []
+// Dependencies: [653, 4567, 7697, 7649, 1212, 7651, 7652, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 7690 (createApplicationCommandSourceSystemMessage)
-const MessageTypes = require(dependencyMap[0]).MessageTypes;
-const COMMAND_SENTINEL = require(dependencyMap[1]).COMMAND_SENTINEL;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationCommandSourceSystemMessage.tsx");
+// Module 7696 (createApplicationCommandSourceSystemMessage)
+import { MessageTypes } from "ME";
+import { COMMAND_SENTINEL } from "MENTION_SENTINEL";
+
+const result = require("getApplicationCommand").fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationCommandSourceSystemMessage.tsx");
 
 export const createApplicationCommandSourceSystemMessage = function createApplicationCommandSourceSystemMessage(message) {
   message = message.message;
-  let obj = require(dependencyMap[2]);
+  let obj = require(7697) /* getApplicationCommand */;
   const applicationCommand = obj.getApplicationCommand(message.content);
   const application = message.application;
   if (null != application) {
@@ -20,13 +20,13 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
   }
   if (null != applicationCommand) {
     if (null != name) {
-      let obj1 = require(dependencyMap[3]);
+      let obj1 = require(7649) /* getMessageAuthorWithProcessedColor */;
       const messageAuthorWithProcessedColor = obj1.getMessageAuthorWithProcessedColor(message);
       obj = {};
-      const intl = require(dependencyMap[4]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       obj = { username: messageAuthorWithProcessedColor.nick };
       obj1 = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
-      obj.usernameOnClick = importDefault(dependencyMap[5])(obj1);
+      obj.usernameOnClick = importDefault(7651)(obj1);
       if (message.type === MessageTypes.CHAT_INPUT_COMMAND) {
         const _HermesInternal = HermesInternal;
         let name2 = "" + COMMAND_SENTINEL + applicationCommand.name;
@@ -35,8 +35,8 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
       }
       obj.commandName = name2;
       obj.applicationName = name;
-      obj.content = intl.formatToParts(require(dependencyMap[4]).t.1Zm+zw, obj);
-      const merged = Object.assign(importDefault(dependencyMap[6])(message));
+      obj.content = intl.formatToParts(require(1212) /* getSystemLocale */.t["1Zm+zw"], obj);
+      const merged = Object.assign(importDefault(7652)(message));
       return obj;
     }
   }

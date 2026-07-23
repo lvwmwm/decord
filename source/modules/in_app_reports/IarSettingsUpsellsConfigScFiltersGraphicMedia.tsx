@@ -1,41 +1,41 @@
-// Module ID: 7609
-// Function ID: 61004
+// Module ID: 7615
+// Function ID: 61041
 // Name: items
-// Dependencies: []
+// Dependencies: [5678, 1282, 1212, 7601, 2]
 
-// Module 7609 (items)
-const obj = {
+// Module 7615 (items)
+let obj = {
   getTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.RVX1zT);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.RVX1zT);
   },
   getDisabledTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.SYkEBi);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.SYkEBi);
   },
   getDescription() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.aqlmp8);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.aqlmp8);
   }
 };
-const items = [require(dependencyMap[3]).ReportSubType.SUB_GORE, require(dependencyMap[3]).ReportSubType.SUB_GLORIFYING_VIOLENCE];
+const items = [require("ReportNames").ReportSubType.SUB_GORE, require("ReportNames").ReportSubType.SUB_GLORIFYING_VIOLENCE];
 obj.eligibleReportSubtypes = items;
 obj.onApply = function onApply() {
   let goreContentFriendDm;
   let goreContentGuilds;
   let goreContentNonFriendDm;
-  let obj = require(dependencyMap[0]);
-  const goreContentSettingOrDefault = require(dependencyMap[0]).getGoreContentSettingOrDefault();
+  let obj = require(5678) /* resolveGoreSettingWithDefaults */;
+  const goreContentSettingOrDefault = require(5678) /* resolveGoreSettingWithDefaults */.getGoreContentSettingOrDefault();
   obj = {};
   ({ goreContentGuilds, goreContentFriendDm, goreContentNonFriendDm } = goreContentSettingOrDefault);
-  if (goreContentGuilds === require(dependencyMap[1]).ExplicitContentRedaction.SHOW) {
-    obj.goreContentGuilds = require(dependencyMap[1]).ExplicitContentRedaction.BLUR;
+  if (goreContentGuilds === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW) {
+    obj.goreContentGuilds = require(1282) /* _callSuper */.ExplicitContentRedaction.BLUR;
   }
-  if (goreContentFriendDm === require(dependencyMap[1]).ExplicitContentRedaction.SHOW) {
-    obj.goreContentFriendDm = require(dependencyMap[1]).ExplicitContentRedaction.BLUR;
+  if (goreContentFriendDm === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW) {
+    obj.goreContentFriendDm = require(1282) /* _callSuper */.ExplicitContentRedaction.BLUR;
   }
-  if (goreContentNonFriendDm === require(dependencyMap[1]).ExplicitContentRedaction.SHOW) {
-    obj.goreContentNonFriendDm = require(dependencyMap[1]).ExplicitContentRedaction.BLUR;
+  if (goreContentNonFriendDm === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW) {
+    obj.goreContentNonFriendDm = require(1282) /* _callSuper */.ExplicitContentRedaction.BLUR;
   }
   return obj.updateGoreContentSetting(obj);
 };
@@ -43,18 +43,17 @@ obj.predicate = function predicate() {
   let goreContentFriendDm;
   let goreContentGuilds;
   let goreContentNonFriendDm;
-  const goreContentSettingOrDefault = require(dependencyMap[0]).getGoreContentSettingOrDefault();
+  const goreContentSettingOrDefault = require(5678) /* resolveGoreSettingWithDefaults */.getGoreContentSettingOrDefault();
   ({ goreContentGuilds, goreContentFriendDm, goreContentNonFriendDm } = goreContentSettingOrDefault);
-  let tmp2 = goreContentGuilds === require(dependencyMap[1]).ExplicitContentRedaction.SHOW;
+  let tmp2 = goreContentGuilds === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW;
   if (!tmp2) {
-    tmp2 = goreContentFriendDm === require(dependencyMap[1]).ExplicitContentRedaction.SHOW;
+    tmp2 = goreContentFriendDm === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW;
   }
   if (!tmp2) {
-    tmp2 = goreContentNonFriendDm === require(dependencyMap[1]).ExplicitContentRedaction.SHOW;
+    tmp2 = goreContentNonFriendDm === require(1282) /* _callSuper */.ExplicitContentRedaction.SHOW;
   }
   return tmp2;
 };
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigScFiltersGraphicMedia.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigScFiltersGraphicMedia.tsx");
 
 export default obj;

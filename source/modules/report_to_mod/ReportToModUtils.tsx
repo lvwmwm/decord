@@ -1,10 +1,18 @@
-// Module ID: 5650
-// Function ID: 48348
+// Module ID: 5655
+// Function ID: 48375
 // Name: isModeratorReportOrPostChannelId
-// Dependencies: []
+// Dependencies: [5656, 1348, 1838, 4349, 1849, 5666, 5667, 5647, 5668, 5646, 483, 3763, 5669, 5670, 5673, 5680, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 5650 (isModeratorReportOrPostChannelId)
+// Module 5655 (isModeratorReportOrPostChannelId)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { ReportToModPermissions } from "ReportToModPermissions";
+
+const require = arg1;
 function isModeratorReportOrPostChannelId(channelId) {
   return isModeratorReportOrPostChannel(store.getChannel(channelId));
 }
@@ -35,13 +43,7 @@ function isModeratorReportOrPostChannel(channel) {
   }
   return tmp;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const ReportToModPermissions = arg1(dependencyMap[5]).ReportToModPermissions;
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/report_to_mod/ReportToModUtils.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/report_to_mod/ReportToModUtils.tsx");
 
 export const canReportMessageToMods = function canReportMessageToMods(message) {
   if (obj.canReportUser(message.author)) {
@@ -53,9 +55,9 @@ export const canReportMessageToMods = function canReportMessageToMods(message) {
       if (null == guild) {
         return false;
       } else {
-        let tmp8 = importDefault(dependencyMap[7])(guild);
+        let tmp8 = importDefault(5647)(guild);
         if (tmp8) {
-          tmp8 = null != importDefault(dependencyMap[8])(guild);
+          tmp8 = null != importDefault(5668)(guild);
         }
         return tmp8;
       }
@@ -63,15 +65,15 @@ export const canReportMessageToMods = function canReportMessageToMods(message) {
   } else {
     return false;
   }
-  const obj = arg1(dependencyMap[6]);
+  obj = require(5667) /* canReportUser */;
 };
 export const canAccessReportsChannel = function canAccessReportsChannel(guildId) {
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [closure_6, closure_8];
+    const items = [_createForOfIteratorHelperLoose, closure_8];
     tmp = items;
   }
-  let obj = arg1(dependencyMap[9]);
+  let obj = require(5646) /* getContextForPermission */;
   const contextForPermission = obj.getContextForPermission(guildId, tmp);
   if (null == contextForPermission) {
     return false;
@@ -79,17 +81,17 @@ export const canAccessReportsChannel = function canAccessReportsChannel(guildId)
     const guild = contextForPermission.guild;
     let tmp7 = null == guild;
     if (!tmp7) {
-      tmp7 = !importDefault(dependencyMap[7])(guild);
+      tmp7 = !importDefault(5647)(guild);
     }
     if (!tmp7) {
-      tmp7 = null == importDefault(dependencyMap[8])(guild);
+      tmp7 = null == importDefault(5668)(guild);
     }
     let hasAnyResult = !tmp7;
     if (!tmp7) {
-      const obj2 = importAll(dependencyMap[10]);
+      const obj2 = importAll(483);
       obj = { user: contextForPermission.user, context: guild, checkElevated: false };
-      hasAnyResult = obj2.hasAny(importAll(dependencyMap[11]).computePermissions(obj), ReportToModPermissions);
-      const obj3 = importAll(dependencyMap[11]);
+      hasAnyResult = obj2.hasAny(importAll(3763).computePermissions(obj), ReportToModPermissions);
+      const obj3 = importAll(3763);
     }
     return hasAnyResult;
   }
@@ -98,7 +100,7 @@ export const getReportToModChannelId = function getReportToModChannelId(guildId)
   const guild = store2.getGuild(guildId);
   let tmp2 = null;
   if (null != guild) {
-    tmp2 = importDefault(dependencyMap[8])(guild);
+    tmp2 = importDefault(5668)(guild);
   }
   return tmp2;
 };
@@ -118,12 +120,12 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
   } else {
     if (obj2.isCurrentUserTeen()) {
       if (isModeratorReportOrPostChannelId(channelId)) {
-        const message = message.getMessage(channelId);
+        message = message.getMessage(channelId);
         const firstMessage = message.firstMessage;
         let tmp4 = !message.loaded || null == firstMessage;
         if (!tmp4) {
-          tmp4 = !arg1(dependencyMap[13]).messageHasObscurableMediaForBitmask(firstMessage, arg1(dependencyMap[14]).ContentHarmTypeBitMask.EXPLICIT);
-          const obj = arg1(dependencyMap[13]);
+          tmp4 = !require(5670) /* _createForOfIteratorHelperLoose */.messageHasObscurableMediaForBitmask(firstMessage, require(5673) /* ContentHarmType */.ContentHarmTypeBitMask.EXPLICIT);
+          const obj = require(5670) /* _createForOfIteratorHelperLoose */;
         }
         return tmp4;
       } else {
@@ -132,7 +134,7 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
     } else {
       return true;
     }
-    const obj2 = arg1(dependencyMap[12]);
+    obj2 = require(5669) /* isCurrentUserTeen */;
   }
 };
 export const isModeratorReportThreadStarterMessage = function isModeratorReportThreadStarterMessage(isFirstMessageInForumPost, channel) {
@@ -146,9 +148,9 @@ export const isModeratorReportThreadStarterMessage = function isModeratorReportT
 export const sortedModeratorReportTags = function sortedModeratorReportTags(found) {
   return found.sort((id, id2) => {
     let num = -1;
-    if (id.id != callback(closure_3[15]).ReservedTagIds.MULTIPLE_REPORTS) {
+    if (id.id != outer1_0(outer1_3[15]).ReservedTagIds.MULTIPLE_REPORTS) {
       let num2 = 0;
-      if (id2.id == callback(closure_3[15]).ReservedTagIds.MULTIPLE_REPORTS) {
+      if (id2.id == outer1_0(outer1_3[15]).ReservedTagIds.MULTIPLE_REPORTS) {
         num2 = 1;
       }
       num = num2;
@@ -164,7 +166,7 @@ export const isUserAuthorOfReportedMessage = function isUserAuthorOfReportedMess
   const channel = store.getChannel(channelId);
   if (null != channel) {
     if (channel.isModeratorReportChannel()) {
-      const messages = messages.getMessages(channelId);
+      messages = messages.getMessages(channelId);
       const firstResult = messages.first();
       let reported_user_id;
       if (null != firstResult) {

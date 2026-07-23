@@ -1,19 +1,19 @@
-// Module ID: 11544
-// Function ID: 89899
+// Module ID: 11554
+// Function ID: 89948
 // Name: GuildPowerupsBoostGem
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 689, 11555, 2]
 // Exports: default
 
-// Module 11544 (GuildPowerupsBoostGem)
-const View = require(dependencyMap[0]).View;
-const jsx = require(dependencyMap[1]).jsx;
-const _module = require(dependencyMap[2]);
+// Module 11554 (GuildPowerupsBoostGem)
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let obj = {};
-obj = { borderRadius: importDefault(dependencyMap[3]).radii.round, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SECONDARY_ALT };
+obj = { width: 100, height: 100, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SECONDARY_ALT, alignItems: "center", justifyContent: "center", alignSelf: "center" };
 obj.boostGemContainer = obj;
-let closure_4 = _module.createStyles(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostGem.tsx");
+let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostGem.tsx");
 
 export default function GuildPowerupsBoostGem(arg0) {
   let gemHeight;
@@ -23,6 +23,6 @@ export default function GuildPowerupsBoostGem(arg0) {
   const obj = {};
   const items = [callback().boostGemContainer, style];
   obj.style = items;
-  obj.children = jsx(importDefault(dependencyMap[4]), { width: gemWidth, height: gemHeight });
-  return <View {...obj} />;
+  obj.children = jsx(importDefault(11555), { width: gemWidth, height: gemHeight });
+  return <View />;
 };

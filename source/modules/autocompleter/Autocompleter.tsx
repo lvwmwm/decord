@@ -1,52 +1,61 @@
-// Module ID: 7090
-// Function ID: 56843
+// Module ID: 7095
+// Function ID: 56877
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 7096, 7097, 1907, 3767, 1849, 5043, 4974, 22, 5046, 7098, 1331, 5047, 7100, 1832, 4114, 4119, 3829, 1443, 2]
 
-// Module 7090 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 7095 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import HeaderRecord from "HeaderRecord";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,42 +94,35 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getAutocompleterBoosterMap(USER, frecencyBoosters) {
   if (frecencyBoosters.frecencyBoosters) {
-    let boosterMap = frecencyBoosters(dependencyMap[8]).getBoosterMap(USER);
-    const obj2 = frecencyBoosters(dependencyMap[8]);
+    let boosterMap = require(4974) /* _createForOfIteratorHelperLoose */.getBoosterMap(USER);
+    const obj2 = require(4974) /* _createForOfIteratorHelperLoose */;
   } else {
     boosterMap = {};
   }
   return boosterMap;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const GUILD_VOCAL_CHANNELS_KEY = arg1(dependencyMap[4]).GUILD_VOCAL_CHANNELS_KEY;
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-arg1(dependencyMap[7]).AutocompleterResultTypes;
+require("HeaderRecord").AutocompleterResultTypes;
 let closure_11 = Object.freeze({});
-const tmp2 = () => {
+let tmp2 = (() => {
   class Autocompleter {
     constructor(arg0, arg1) {
       num = arg2;
       tmp = arg3;
       num2 = arg4;
       self = this;
-      Autocompleter = this;
+      self = this;
       if (arg2 === undefined) {
         num = 100;
       }
       if (tmp === undefined) {
-        tmp = closure_11;
+        tmp = outer1_11;
       }
       if (num2 === undefined) {
         num2 = 0;
       }
-      tmp2 = closure_3(self, Autocompleter);
+      tmp2 = outer1_3(self, self);
       self.query = "";
-      self.options = closure_11;
+      self.options = outer1_11;
       self.results = [];
       self._userResults = [];
       self._groupDMResults = [];
@@ -135,26 +137,26 @@ const tmp2 = () => {
       self._refetched = false;
       self.parseUserResults = (results) => {
         let iter2;
-        if (self._include(constants.USER)) {
+        if (self._include(outer2_10.USER)) {
           self._userResults = [];
-          const tmp3 = callback2(results.results);
+          const tmp3 = outer2_12(results.results);
           let iter = tmp3();
           if (!iter.done) {
             do {
               let value = iter.value;
               let comparator = value.comparator;
-              let tmp5 = closure_9;
-              let user = closure_9.getUser(value.id);
+              let tmp5 = outer2_9;
+              let user = outer2_9.getUser(value.id);
               if (null != user) {
-                let tmp7 = closure_0;
-                let _userResults = closure_0._userResults;
+                let tmp7 = self;
+                let _userResults = self._userResults;
                 let obj = {};
-                let tmp8 = closure_10;
-                obj.type = closure_10.USER;
+                let tmp8 = outer2_10;
+                obj.type = outer2_10.USER;
                 obj.record = user;
-                let tmp9 = closure_0;
-                let tmp10 = closure_2;
-                let obj2 = closure_0(closure_2[8]);
+                let tmp9 = Autocompleter;
+                let tmp10 = outer2_2;
+                let obj2 = Autocompleter(outer2_2[8]);
                 obj.score = obj2.calculateScore(value.score);
                 let tmp11;
                 if (null != comparator) {
@@ -185,10 +187,10 @@ const tmp2 = () => {
         clearTimeout(self._asyncTimeout);
         const items = [];
         HermesBuiltin.arraySpread(self._inAppNavigations, HermesBuiltin.arraySpread(self._linkResults, HermesBuiltin.arraySpread(self._gameProfileResults, HermesBuiltin.arraySpread(self._guildResults, HermesBuiltin.arraySpread(self._voiceChannelResults, HermesBuiltin.arraySpread(self._textChannelResults, HermesBuiltin.arraySpread(self._groupDMResults, HermesBuiltin.arraySpread(self._userResults, 0))))))));
-        const tmp2 = callback(closure_2[9]);
-        const tmp2Result = callback(closure_2[9])(items);
-        const uniqByResult = callback(closure_2[9])(items).uniqBy((type) => "" + type.type + "-" + type.record.id);
-        self.results = callback(closure_2[9])(items).uniqBy((type) => "" + type.type + "-" + type.record.id).sort(callback(closure_2[10])).value();
+        const tmp2 = outer2_1(outer2_2[9]);
+        const tmp2Result = outer2_1(outer2_2[9])(items);
+        const uniqByResult = outer2_1(outer2_2[9])(items).uniqBy((type) => "" + type.type + "-" + type.record.id);
+        self.results = outer2_1(outer2_2[9])(items).uniqBy((type) => "" + type.type + "-" + type.record.id).sort(outer2_1(outer2_2[10])).value();
         self.onResultsChange(self.results, self.query);
       };
       self.onResultsChange = arg0;
@@ -200,18 +202,17 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = Autocompleter;
   let obj = {
     key: "createSearchContext",
     value() {
       const self = this;
       if (null == this.userSearchContext) {
-        self.userSearchContext = callback(closure_2[11]).getUserSearchContext(self.parseUserResults, self._limit);
-        const obj = callback(closure_2[11]);
+        self.userSearchContext = outer1_1(outer1_2[11]).getUserSearchContext(self.parseUserResults, self._limit);
+        const obj = outer1_1(outer1_2[11]);
       }
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "setLimit",
     value(_limit) {
@@ -268,15 +269,15 @@ const tmp2 = () => {
         set = new Set(items);
       }
       self.resultTypes = set;
-      self._userResults = self._include(constants.USER) ? self._userResults : [];
-      self._groupDMResults = self._include(constants.GROUP_DM) ? self._groupDMResults : [];
-      self._textChannelResults = self._include(constants.TEXT_CHANNEL) ? self._textChannelResults : [];
-      self._voiceChannelResults = self._include(constants.VOICE_CHANNEL) ? self._voiceChannelResults : [];
-      self._guildResults = self._include(constants.GUILD) ? self._guildResults : [];
-      self._applicationResults = self._include(constants.APPLICATION) ? self._applicationResults : [];
-      self._gameProfileResults = self._include(constants.GAME_PROFILE) ? self._gameProfileResults : [];
-      self._linkResults = self._include(constants.LINK) ? self._linkResults : [];
-      self._inAppNavigations = self._include(constants.IN_APP_NAVIGATION) ? self._inAppNavigations : [];
+      self._userResults = self._include(outer1_10.USER) ? self._userResults : [];
+      self._groupDMResults = self._include(outer1_10.GROUP_DM) ? self._groupDMResults : [];
+      self._textChannelResults = self._include(outer1_10.TEXT_CHANNEL) ? self._textChannelResults : [];
+      self._voiceChannelResults = self._include(outer1_10.VOICE_CHANNEL) ? self._voiceChannelResults : [];
+      self._guildResults = self._include(outer1_10.GUILD) ? self._guildResults : [];
+      self._applicationResults = self._include(outer1_10.APPLICATION) ? self._applicationResults : [];
+      self._gameProfileResults = self._include(outer1_10.GAME_PROFILE) ? self._gameProfileResults : [];
+      self._linkResults = self._include(outer1_10.LINK) ? self._linkResults : [];
+      self._inAppNavigations = self._include(outer1_10.IN_APP_NAVIGATION) ? self._inAppNavigations : [];
     }
   };
   items[4] = {
@@ -293,7 +294,7 @@ const tmp2 = () => {
   items[5] = {
     key: "_isAsyncSearch",
     value() {
-      let _includeResult = this._include(constants.USER);
+      let _includeResult = this._include(outer1_10.USER);
       if (_includeResult) {
         const options = this.options;
         let thread;
@@ -393,8 +394,10 @@ const tmp2 = () => {
   items[9] = {
     key: "search",
     value(query) {
-      const self = this;
-      const Autocompleter = this;
+      let self = this;
+      self = this;
+      let closure_1 = query;
+      let closure_2 = arg1;
       this.query = query;
       this._refetched = false;
       if ("" === query.trim()) {
@@ -402,26 +405,26 @@ const tmp2 = () => {
         self.updateAllResults();
       } else {
         if (self.options.frecencyBoosters) {
-          const FrecencyUserSettingsActionCreators = Autocompleter(arg1[12]).FrecencyUserSettingsActionCreators;
+          const FrecencyUserSettingsActionCreators = Autocompleter(outer1_2[12]).FrecencyUserSettingsActionCreators;
           let ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
         } else {
           ifNecessary = Promise.resolve();
         }
         ifNecessary.finally(() => {
-          self.queryUsers(arg0, arg1, self._limit);
-          self._groupDMResults = self.queryGroupDMs(arg0, self._limit);
-          self._textChannelResults = self.queryTextChannels(arg0, self._limit);
-          self._voiceChannelResults = self.queryVoiceChannels(arg0, self._limit);
-          self._guildResults = self.queryGuilds(arg0, self._limit);
-          self._applicationResults = self.queryApplications(arg0, self._limit);
-          self._gameProfileResults = self.queryGameProfiles(arg0, self._limit);
-          self._inAppNavigations = self.queryInAppNavigations(arg0, self._limit);
+          self.queryUsers(closure_1, closure_2, self._limit);
+          self._groupDMResults = self.queryGroupDMs(closure_1, self._limit);
+          self._textChannelResults = self.queryTextChannels(closure_1, self._limit);
+          self._voiceChannelResults = self.queryVoiceChannels(closure_1, self._limit);
+          self._guildResults = self.queryGuilds(closure_1, self._limit);
+          self._applicationResults = self.queryApplications(closure_1, self._limit);
+          self._gameProfileResults = self.queryGameProfiles(closure_1, self._limit);
+          self._inAppNavigations = self.queryInAppNavigations(closure_1, self._limit);
           if (self._isAsyncSearch()) {
             const _clearTimeout = clearTimeout;
             clearTimeout(self._asyncTimeout);
             const _setTimeout = setTimeout;
             self._asyncTimeout = setTimeout(self.updateAllResults, 300);
-          } else if (!self._include(constants.USER)) {
+          } else if (!self._include(outer2_10.USER)) {
             self.updateAllResults();
           }
         });
@@ -489,16 +492,15 @@ const tmp2 = () => {
     key: "queryTextChannels",
     value(query, limit) {
       const self = this;
-      if (this._include(constants.TEXT_CHANNEL)) {
+      if (this._include(outer1_10.TEXT_CHANNEL)) {
         const options = self.options;
         const blacklist = options.blacklist;
-        const Autocompleter = blacklist;
         let fn;
         if (null != blacklist) {
           fn = (id) => !blacklist.has("channel:" + id.id);
         }
-        let obj = callback(closure_2[8]);
-        obj = { query, guildId: null, limit, fuzzy: true, allowSnowflake: options.allowSnowflake, filter: fn, boosters: callback4(constants.TEXT_CHANNEL, self.options) };
+        let obj = outer1_1(outer1_2[8]);
+        obj = { query, guildId: null, limit, fuzzy: true, allowSnowflake: options.allowSnowflake, filter: fn, boosters: outer1_14(outer1_10.TEXT_CHANNEL, self.options) };
         return obj.queryChannels(obj);
       } else {
         return [];
@@ -511,10 +513,10 @@ const tmp2 = () => {
       let allowSnowflake;
       let voiceChannelGuildFilter;
       const self = this;
-      if (this._include(constants.VOICE_CHANNEL)) {
+      if (this._include(outer1_10.VOICE_CHANNEL)) {
         ({ allowSnowflake, voiceChannelGuildFilter } = self.options);
-        let obj = callback(closure_2[8]);
-        obj = { query, guildId: voiceChannelGuildFilter, limit, fuzzy: true, type: closure_7, allowSnowflake, boosters: callback4(constants.VOICE_CHANNEL, self.options) };
+        let obj = outer1_1(outer1_2[8]);
+        obj = { query, guildId: voiceChannelGuildFilter, limit, fuzzy: true, type: outer1_7, allowSnowflake, boosters: outer1_14(outer1_10.VOICE_CHANNEL, self.options) };
         return obj.queryChannels(obj);
       } else {
         return [];
@@ -525,16 +527,15 @@ const tmp2 = () => {
     key: "queryGuilds",
     value(query, limit) {
       const self = this;
-      if (this._include(constants.GUILD)) {
+      if (this._include(outer1_10.GUILD)) {
         const options = self.options;
         const blacklist = options.blacklist;
-        const Autocompleter = blacklist;
         let fn;
         if (null != blacklist) {
           fn = (id) => !blacklist.has("guild:" + id.id);
         }
-        let obj = callback(closure_2[8]);
-        obj = { query, limit, fuzzy: true, filter: fn, boosters: callback4(constants.GUILD, self.options), allowSnowflake: options.allowSnowflake };
+        let obj = outer1_1(outer1_2[8]);
+        obj = { query, limit, fuzzy: true, filter: fn, boosters: outer1_14(outer1_10.GUILD, self.options), allowSnowflake: options.allowSnowflake };
         return obj.queryGuilds(obj);
       } else {
         return [];
@@ -547,32 +548,32 @@ const tmp2 = () => {
       const self = this;
       const userSearchContext = this.userSearchContext;
       if (null != userSearchContext) {
-        if (self._include(constants.USER)) {
+        if (self._include(outer1_10.USER)) {
           const options = self.options;
           const userFilters = options.userFilters;
-          const tmp4 = callback4(constants.USER, self.options);
+          const tmp4 = outer1_14(outer1_10.USER, self.options);
           let thread;
           if (null != userFilters) {
             thread = userFilters.thread;
           }
           if (null == thread) {
             if (undefined !== arg1) {
-              const members = callback(closure_2[13]).requestMembers(arg1, query, 100);
-              const obj4 = callback(closure_2[13]);
+              const members = outer1_1(outer1_2[13]).requestMembers(arg1, query, 100);
+              const obj4 = outer1_1(outer1_2[13]);
             }
             userSearchContext.setLimit(limit);
             let obj = { query, filters: userFilters, blacklist: self._userBlacklist, boosters: tmp4 };
             userSearchContext.setQuery(obj);
           } else {
-            const memberListSections = memberListSections.getMemberListSections(userFilters.thread);
+            const memberListSections = outer1_5.getMemberListSections(userFilters.thread);
             const items = [];
             const keys = Object.keys();
             if (keys !== undefined) {
               while (keys[tmp] !== undefined) {
                 let tmp37 = tmp9;
                 let tmp38 = memberListSections[tmp9];
-                let tmp39 = callback3;
-                let tmp40 = callback3(tmp38.userIds);
+                let tmp39 = outer1_12;
+                let tmp40 = outer1_12(tmp38.userIds);
                 let iter2 = tmp40();
                 let tmp19 = tmp21;
                 let tmp20 = tmp22;
@@ -580,12 +581,12 @@ const tmp2 = () => {
                 if (iter2.done) {
                   continue;
                 } else {
-                  while (true) {
+                  do {
                     let value = iter2.value;
                     let tmp10 = null != userFilters && userFilters.friends;
                     if (tmp10) {
-                      let tmp11 = friend;
-                      tmp10 = !friend.isFriend(value);
+                      let tmp11 = outer1_8;
+                      tmp10 = !outer1_8.isFriend(value);
                     }
                     let tmp12 = tmp18;
                     if (!tmp10) {
@@ -610,26 +611,21 @@ const tmp2 = () => {
                       tmp19 = hasItem;
                       tmp20 = _userBlacklist;
                     }
-                    let iter = tmp40();
-                    let tmp21 = tmp19;
-                    let tmp22 = tmp20;
-                    let tmp23 = tmp12;
+                    iter = tmp40();
+                    tmp21 = tmp19;
+                    tmp22 = tmp20;
+                    tmp23 = tmp12;
                     let tmp24 = value;
                     iter2 = iter;
                     tmp18 = tmp12;
-                    if (iter.done) {
-                      break;
-                    } else {
-                      // continue
-                    }
-                  }
+                  } while (!iter.done);
                 }
                 continue;
               }
             }
             obj = { query, users: items, limit, boosters: tmp4, allowSnowflake: options.allowSnowflake };
-            self._userResults = callback(closure_2[8]).queryUsers(obj);
-            const obj2 = callback(closure_2[8]);
+            self._userResults = outer1_1(outer1_2[8]).queryUsers(obj);
+            const obj2 = outer1_1(outer1_2[8]);
           }
         }
       }
@@ -639,15 +635,14 @@ const tmp2 = () => {
     key: "queryGroupDMs",
     value(query, limit) {
       const self = this;
-      if (this._include(constants.GROUP_DM)) {
+      if (this._include(outer1_10.GROUP_DM)) {
         const blacklist = self.options.blacklist;
-        const Autocompleter = blacklist;
         let fn;
         if (null != blacklist) {
           fn = (id) => !blacklist.has("channel:" + id.id);
         }
-        let obj = callback(closure_2[8]);
-        obj = { query, limit, fuzzy: true, filter: fn, boosters: callback4(constants.GROUP_DM, self.options) };
+        let obj = outer1_1(outer1_2[8]);
+        obj = { query, limit, fuzzy: true, filter: fn, boosters: outer1_14(outer1_10.GROUP_DM, self.options) };
         return obj.queryGroupDMs(obj);
       } else {
         return [];
@@ -657,8 +652,8 @@ const tmp2 = () => {
   items[20] = {
     key: "queryApplications",
     value(query, limit) {
-      if (this._include(constants.APPLICATION)) {
-        let obj = callback(closure_2[8]);
+      if (this._include(outer1_10.APPLICATION)) {
+        let obj = outer1_1(outer1_2[8]);
         obj = { query, limit, fuzzy: true };
         let queryApplicationsResult = obj.queryApplications(obj);
       } else {
@@ -670,17 +665,17 @@ const tmp2 = () => {
   items[21] = {
     key: "queryGameProfiles",
     value(toLocaleLowerCase) {
-      if (this._include(constants.GAME_PROFILE)) {
-        let result = Autocompleter(closure_2[14]).queryGamesAutocomplete(toLocaleLowerCase);
+      if (this._include(outer1_10.GAME_PROFILE)) {
+        let result = Autocompleter(outer1_2[14]).queryGamesAutocomplete(toLocaleLowerCase);
         if (null == result) {
           result = [];
         }
-        const Autocompleter = toLocaleLowerCase.toLocaleLowerCase();
+        let closure_0 = toLocaleLowerCase.toLocaleLowerCase();
         const substr = result.slice(0, arg1);
         return substr.map((name) => {
-          const obj = { type: constants.GAME_PROFILE, record: name };
-          const obj2 = callback(closure_2[8]);
-          obj.score = obj2.calculateScore(callback(closure_2[8]).getGameProfileMatchTier(name.name, callback, arg1));
+          const obj = { type: outer2_10.GAME_PROFILE, record: name };
+          const obj2 = Autocompleter(outer2_2[8]);
+          obj.score = obj2.calculateScore(Autocompleter(outer2_2[8]).getGameProfileMatchTier(name.name, closure_0, arg1));
           ({ name: obj.comparator, name } = name);
           obj.sortable = name.toLocaleLowerCase();
           return obj;
@@ -694,9 +689,9 @@ const tmp2 = () => {
     key: "refreshGameProfiles",
     value() {
       const self = this;
-      let _includeResult = !Autocompleter(closure_2[15]).isNullOrEmpty(this.query.trim());
+      let _includeResult = !Autocompleter(outer1_2[15]).isNullOrEmpty(this.query.trim());
       if (_includeResult) {
-        _includeResult = self._include(constants.GAME_PROFILE);
+        _includeResult = self._include(outer1_10.GAME_PROFILE);
       }
       if (_includeResult) {
         self._gameProfileResults = self.queryGameProfiles(self.query, self._limit);
@@ -709,19 +704,19 @@ const tmp2 = () => {
     value(target) {
       let hostname;
       let pathname;
-      if (this._include(constants.LINK)) {
-        let obj = Autocompleter(closure_2[16]);
+      if (this._include(outer1_10.LINK)) {
+        let obj = Autocompleter(outer1_2[16]);
         const findCodedLinkResult = obj.findCodedLink(target);
         let type;
         if (null != findCodedLinkResult) {
           type = findCodedLinkResult.type;
         }
-        if (type === Autocompleter(closure_2[17]).CodedLinkType.INVITE) {
-          obj = { type: constants.LINK, record: closure_6.fromInviteCode(findCodedLinkResult.code), score: Autocompleter(closure_2[8]).calculateScore(11) };
+        if (type === Autocompleter(outer1_2[17]).CodedLinkType.INVITE) {
+          obj = { type: outer1_10.LINK, record: outer1_6.fromInviteCode(findCodedLinkResult.code), score: Autocompleter(outer1_2[8]).calculateScore(11) };
           const items = [obj];
           return items;
         } else {
-          const sanitizeUrlResult = callback(closure_2[18]).sanitizeUrl(target);
+          const sanitizeUrlResult = outer1_1(outer1_2[18]).sanitizeUrl(target);
           const _URL = URL;
           const uRL = new URL(sanitizeUrlResult);
           ({ pathname, hostname } = uRL);
@@ -729,9 +724,9 @@ const tmp2 = () => {
           if (undefined !== hostname) {
             str = hostname;
           }
-          const obj8 = callback(closure_2[18]);
+          const obj8 = outer1_1(outer1_2[18]);
           const tmp34 = uRL;
-          const isDiscordHostnameResult = callback(closure_2[19]).isDiscordHostname(str);
+          const isDiscordHostnameResult = outer1_1(outer1_2[19]).isDiscordHostname(str);
           let tmp12 = isDiscordHostnameResult;
           if (!isDiscordHostnameResult) {
             const _window = window;
@@ -740,16 +735,16 @@ const tmp2 = () => {
           if (null !== pathname) {
             if (tmp12) {
               if (obj3.isAppRoute(pathname)) {
-                obj = { type: constants.LINK, record: closure_6.fromPath(pathname), score: Autocompleter(closure_2[8]).calculateScore(11) };
+                obj = { type: outer1_10.LINK, record: outer1_6.fromPath(pathname), score: Autocompleter(outer1_2[8]).calculateScore(11) };
                 const items1 = [obj];
                 let items2 = items1;
-                const obj5 = Autocompleter(closure_2[8]);
+                const obj5 = Autocompleter(outer1_2[8]);
               }
               return items2;
             }
           }
           items2 = [];
-          const obj2 = callback(closure_2[19]);
+          const obj2 = outer1_1(outer1_2[19]);
         }
       } else {
         return [];
@@ -759,8 +754,8 @@ const tmp2 = () => {
   items[24] = {
     key: "queryInAppNavigations",
     value(query, limit) {
-      if (this._include(constants.IN_APP_NAVIGATION)) {
-        let obj = callback(closure_2[8]);
+      if (this._include(outer1_10.IN_APP_NAVIGATION)) {
+        let obj = outer1_1(outer1_2[8]);
         obj = { query, limit, fuzzy: true };
         let result = obj.queryInAppNavigations(obj);
       } else {
@@ -770,7 +765,7 @@ const tmp2 = () => {
     }
   };
   return callback(Autocompleter, items);
-}();
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/autocompleter/Autocompleter.tsx");
+})();
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/autocompleter/Autocompleter.tsx");
 
 export default tmp2;

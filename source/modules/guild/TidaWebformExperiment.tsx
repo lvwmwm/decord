@@ -1,14 +1,16 @@
-// Module ID: 5488
-// Function ID: 46836
-// Name: experiment
-// Dependencies: []
+// Module ID: 5491
+// Function ID: 46859
+// Name: items
+// Dependencies: [4042, 2]
 
-// Module 5488 (experiment)
-const _module = require(dependencyMap[0]);
-const obj = { displayNameStylesEnabled: 203706476729884200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, submitButtonEnabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015890667570573938, config: { tidaWebformEnabled: true } };
+// Module 5491 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "user", id: "2025-11_tida_webform", label: "Tida Webform", defaultConfig: { tidaWebformEnabled: false } };
+obj = { id: 1, label: "Enabled", config: { tidaWebformEnabled: true } };
 const items = [obj];
-const experiment = _module.createExperiment({ defaultConfig: { tidaWebformEnabled: false }, treatments: items });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/guild/TidaWebformExperiment.tsx");
+obj.treatments = items;
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/guild/TidaWebformExperiment.tsx");
 
 export default experiment;

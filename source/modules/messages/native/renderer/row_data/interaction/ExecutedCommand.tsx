@@ -1,10 +1,16 @@
-// Module ID: 7910
-// Function ID: 62937
+// Module ID: 7916
+// Function ID: 62974
 // Name: getCommandUserAvatar
-// Dependencies: []
+// Dependencies: [27, 1857, 1348, 1849, 653, 1395, 1392, 4360, 7917, 689, 6753, 1881, 7650, 7918, 1212, 7919, 2]
 // Exports: createExecutedCommand
 
-// Module 7910 (getCommandUserAvatar)
+// Module 7916 (getCommandUserAvatar)
+import { processColor } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { MessageTypes } from "ME";
+
 function getCommandUserAvatar(interaction, getGuildId) {
   let guildId;
   let guildMemberAvatar;
@@ -24,33 +30,27 @@ function getCommandUserAvatar(interaction, getGuildId) {
     if (null == getGuildId) {
       channel = channel.getChannel(interaction.getChannelId());
     }
-    let obj = { user: user1, guildMemberAvatar: require(dependencyMap[7]).getUserAuthor(user1, channel).guildMemberAvatar };
+    let obj = { user: user1, guildMemberAvatar: require(4360) /* useNullableMessageAuthor */.getUserAuthor(user1, channel).guildMemberAvatar };
     guildId = undefined;
     if (null != getGuildId) {
       guildId = getGuildId.getGuildId();
     }
     obj.guildId = guildId;
     ({ user, guildMemberAvatar, guildId } = obj);
-    require(dependencyMap[5]);
+    require(1395) /* ensureAvatarSource */;
     if (null != guildMemberAvatar) {
       if (null != guildId) {
         obj = { userId: user.id, avatar: guildMemberAvatar, guildId };
-        let guildMemberAvatarSource = importDefault(dependencyMap[6]).getGuildMemberAvatarSource(obj, user);
-        const obj3 = importDefault(dependencyMap[6]);
+        let guildMemberAvatarSource = importDefault(1392).getGuildMemberAvatarSource(obj, user);
+        const obj3 = importDefault(1392);
       }
       return tmp13(guildMemberAvatarSource).uri;
     }
     guildMemberAvatarSource = user.getAvatarSource(undefined);
-    const obj2 = require(dependencyMap[7]);
+    const obj2 = require(4360) /* useNullableMessageAuthor */;
   }
 }
-const processColor = require(dependencyMap[0]).processColor;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const MessageTypes = require(dependencyMap[4]).MessageTypes;
-const _module = require(dependencyMap[16]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/interaction/ExecutedCommand.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/row_data/interaction/ExecutedCommand.tsx");
 
 export const createExecutedCommand = function createExecutedCommand(message, channel, roleStyle, forcedTheme, defaultUsernameColor) {
   let tmp = null != message.activityInstance;
@@ -62,29 +62,29 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     if (!tmp5) {
       tmp5 = message.type === MessageTypes.INTERACTION_PREMIUM_UPSELL;
     }
-    let obj = require(dependencyMap[8]);
+    let obj = require(7917) /* canViewInteractionInfo */;
     const result = obj.isPrimaryEntryPointCommandMessage(message);
-    let obj1 = require(dependencyMap[7]);
+    let obj1 = require(4360) /* useNullableMessageAuthor */;
     const userAuthor = obj1.getUserAuthor(message.interaction.user, channel);
     const colorString = userAuthor.colorString;
     const displayName = message.interaction.displayName;
-    const internal = importDefault(dependencyMap[9]).internal;
-    const semanticColor = internal.resolveSemanticColor(forcedTheme, importDefault(dependencyMap[9]).colors.MENTION_BACKGROUND);
-    let obj2 = require(dependencyMap[10]);
+    const internal = importDefault(689).internal;
+    const semanticColor = internal.resolveSemanticColor(forcedTheme, importDefault(689).colors.MENTION_BACKGROUND);
+    let obj2 = require(6753) /* _createForOfIteratorHelperLoose */;
     const initialInteractionMetadata = obj2.getInitialInteractionMetadata(message);
     let type;
     if (null != initialInteractionMetadata) {
       type = initialInteractionMetadata.type;
     }
     let tmp18 = null;
-    if (type === require(dependencyMap[11]).InteractionTypes.APPLICATION_COMMAND) {
+    if (type === require(1881) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND) {
       tmp18 = null;
       if (null != initialInteractionMetadata.target_user) {
         const prototype = ctor.prototype;
         tmp18 = new ctor(initialInteractionMetadata.target_user);
       }
     }
-    let obj3 = require(dependencyMap[7]);
+    let obj3 = require(4360) /* useNullableMessageAuthor */;
     const userAuthor1 = obj3.getUserAuthor(tmp18, channel);
     const colorString2 = userAuthor1.colorString;
     let tmp27 = defaultUsernameColor;
@@ -118,9 +118,9 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       guildId = channel.getGuildId();
     }
     let id = message.interaction.user.id;
-    let obj4 = require(dependencyMap[12]);
+    let obj4 = require(7650) /* processColorStringsInternal */;
     const result1 = obj4.isNativeMessageEligibleForEnhancedRoleColors(guildId, id);
-    let obj5 = require(dependencyMap[12]);
+    let obj5 = require(7650) /* processColorStringsInternal */;
     id = undefined;
     if (null != tmp18) {
       id = tmp18.id;
@@ -128,18 +128,18 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     let processColorStringsResult = null;
     const result2 = obj5.isNativeMessageEligibleForEnhancedRoleColors(guildId, id);
     if (result1) {
-      let obj6 = require(dependencyMap[12]);
+      let obj6 = require(7650) /* processColorStringsInternal */;
       processColorStringsResult = obj6.processColorStrings(userAuthor.colorStrings);
     }
     let processColorStringsResult1 = null;
     if (result2) {
-      let obj7 = require(dependencyMap[12]);
+      let obj7 = require(7650) /* processColorStringsInternal */;
       processColorStringsResult1 = obj7.processColorStrings(userAuthor1.colorStrings);
     }
     obj = {};
-    let obj9 = require(dependencyMap[7]);
+    let obj9 = require(4360) /* useNullableMessageAuthor */;
     obj.username = obj9.getUserAuthor(message.interaction.user, channel).nick;
-    obj = { <string:1553034850>: null, <string:3345519290>: "0e96bcd2b2f1118c31b249938bd6d191", userId: id, messageChannelId: message.channel_id, linkColor: tmp31 };
+    obj = { name: "usernameOnClick", action: "bindUserMenu", userId: id, messageChannelId: message.channel_id, linkColor: tmp31 };
     let tmp51;
     if (null != colorString) {
       tmp51 = colorString;
@@ -160,55 +160,55 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
     obj.usernameOnClick = obj;
     if (tmp) {
       if (!result) {
-        const result3 = require(dependencyMap[13]).isActivitiesInTextEnabled(channel);
-        const intl = require(dependencyMap[14]).intl;
+        const result3 = require(7918) /* isActivityInTextSupportedForChannel */.isActivitiesInTextEnabled(channel);
+        const intl = require(1212) /* getSystemLocale */.intl;
         const formatToParts = intl.formatToParts;
-        const t = require(dependencyMap[14]).t;
+        const t = require(1212) /* getSystemLocale */.t;
         if (result3) {
           obj1 = {};
           const merged = Object.assign(obj);
           obj2 = { action: "bindTapActivityText", applicationUserId: message.author.id, messageChannelId: message.channel_id };
           obj1["activityTextOnClick"] = obj2;
-          let formatToPartsResult = formatToParts(t.R/mrBi, obj1);
+          let formatToPartsResult = formatToParts(t["R/mrBi"], obj1);
         } else {
           obj3 = {};
           const merged1 = Object.assign(obj);
           formatToPartsResult = formatToParts(t.k964Wm, obj3);
         }
-        const obj12 = require(dependencyMap[13]);
+        const obj12 = require(7918) /* isActivityInTextSupportedForChannel */;
       }
       obj4 = { userId: message.interaction.user.id, username: obj.username, usernameColor: tmp31, avatarURL: tmp3, targetUsernameColor: tmp27, content: formatToPartsResult };
-      obj5 = { fillOpacity: false, fillRule: false, stroke: false, color: processColor(semanticColor) };
+      obj5 = { color: processColor(semanticColor), borderRadius: 4, spaceAround: true };
       obj4.commandNameBackgroundStyles = obj5;
       obj4.showAppsIcon = true;
       return obj4;
     }
     let result4 = displayName;
     if (result) {
-      result4 = require(dependencyMap[15]).formatPrimaryEntryPointCommandName(displayName);
-      const obj16 = require(dependencyMap[15]);
+      result4 = require(7919) /* _createForOfIteratorHelperLoose */.formatPrimaryEntryPointCommandName(displayName);
+      const obj16 = require(7919) /* _createForOfIteratorHelperLoose */;
     }
-    const intl2 = require(dependencyMap[14]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     obj6 = {};
     const merged2 = Object.assign(obj);
     obj6["commandName"] = result4;
     if (null == channel) {
       obj7 = {};
     } else {
-      const obj8 = { <string:1553034850>: null, <string:3345519290>: null, userId: message.interaction.user.id, messageId: message.id, applicationUserId: message.author.id };
+      const obj8 = { name: "commandNameOnClick", action: "bindTapCommandName", userId: message.interaction.user.id, messageId: message.id, applicationUserId: message.author.id };
       ({ type: obj19.messageType, channel_id: obj19.messageChannelId } = message);
       obj7 = obj8;
     }
     obj6["commandNameOnClick"] = obj7;
-    formatToPartsResult = intl2.formatToParts(require(dependencyMap[14]).t.SSrolr, obj6);
+    formatToPartsResult = intl2.formatToParts(require(1212) /* getSystemLocale */.t.SSrolr, obj6);
     if (null != tmp18) {
-      const intl3 = require(dependencyMap[14]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       obj9 = {};
       const merged3 = Object.assign(obj);
       obj9["commandName"] = result4;
       obj9["commandNameOnClick"] = {};
-      obj9["targetUsername"] = require(dependencyMap[7]).getUserAuthor(tmp18, channel).nick;
-      const obj10 = { <string:1553034850>: null, <string:3345519290>: null };
+      obj9["targetUsername"] = require(4360) /* useNullableMessageAuthor */.getUserAuthor(tmp18, channel).nick;
+      const obj10 = { name: "targetUsernameOnClick", action: "bindUserMenu" };
       let id1;
       if (null != tmp18) {
         id1 = tmp18.id;
@@ -232,11 +232,11 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       }
       obj10.shouldShowRoleDot = tmp54;
       obj9["targetUsernameOnClick"] = obj10;
-      formatToPartsResult = intl3.formatToParts(require(dependencyMap[14]).t.mqKdCM, obj9);
-      const obj23 = require(dependencyMap[7]);
+      formatToPartsResult = intl3.formatToParts(require(1212) /* getSystemLocale */.t.mqKdCM, obj9);
+      const obj23 = require(4360) /* useNullableMessageAuthor */;
       const tmp77 = processColor;
     }
-    const tmp3 = getCommandUserAvatar(message, channel);
+    tmp3 = getCommandUserAvatar(message, channel);
     const tmp50 = processColor;
   }
 };

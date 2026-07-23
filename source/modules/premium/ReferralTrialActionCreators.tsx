@@ -1,53 +1,63 @@
-// Module ID: 6685
-// Function ID: 51535
+// Module ID: 6690
+// Function ID: 51567
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 1857, 1906, 653, 507, 686, 1184, 6691, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 6685 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6690 (_createForOfIteratorHelperLoose)
+import closure_3 from "ME";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import dispatcher from "dispatcher";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,28 +94,28 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-async function _fetchReferralEligibleUsers(index, searchQuery, arg2, arg3) {
-  let obj = { index, searchQuery };
+async function _fetchReferralEligibleUsers(arg0, arg1, arg2, arg3) {
+  let obj = { index: arg0, searchQuery: arg1 };
   const json = JSON.stringify(obj);
-  if (store.has(json)) {
-    return store.get(json);
+  if (outer2_11.has(json)) {
+    return outer2_11.get(json);
   } else {
-    const HTTP = callback(closure_2[6]).HTTP;
-    obj = { url: constants.GET_REFERRAL_ELIGIBLE_USERS };
-    obj = { index };
+    const HTTP = outer2_0(outer2_2[6]).HTTP;
+    obj = { url: outer2_9.GET_REFERRAL_ELIGIBLE_USERS };
+    obj = { index: arg0 };
     let num2 = 10;
     if (null != arg2) {
       num2 = arg2;
     }
     obj.limit = num2;
-    obj.search_query = searchQuery;
+    obj.search_query = arg1;
     obj.body = obj;
     obj.oldFormErrors = true;
     obj.rejectWithError = false;
     const body = yield HTTP.post(obj).body;
     const users = body.users;
-    const obj1 = { users: users.map((arg0) => new closure_6(arg0)), nextIndex: body.next_index };
-    const result = store.set(json, obj1);
+    const obj1 = { users: users.map((arg0) => new outer3_6(arg0)), nextIndex: body.next_index };
+    const result = outer2_11.set(json, obj1);
     return obj1;
   }
 }
@@ -113,13 +123,13 @@ async function _createReferralTrials(arg0, arg1) {
   const items = [];
   const map = new Map();
   let obj = map;
-  const tmp2 = callback3(arg0);
+  const tmp2 = outer2_12(arg0);
   const iter = tmp2();
   let iter2 = iter;
   if (!iter.done) {
     const value = iter2.value;
-    const HTTP = callback(closure_2[6]).HTTP;
-    obj = { y: null, isArray: null, accessible: null, url: closure_9.CREATE_REFERRAL(value) };
+    const HTTP = outer2_0(outer2_2[6]).HTTP;
+    obj = { url: outer2_9.CREATE_REFERRAL(value), oldFormErrors: true, rejectWithError: true };
     while (true) {
       let body = yield tmp6(obj).body;
       let tmp9 = body;
@@ -134,8 +144,8 @@ async function _createReferralTrials(arg0, arg1) {
       }
       let tmp15 = map;
       let tmp16 = value;
-      let tmp17 = constants;
-      let result = obj.set(value, constants.SUCCESS);
+      let tmp17 = outer2_10;
+      let result = obj.set(value, outer2_10.SUCCESS);
       while (true) {
         let tmp19 = tmp2;
         let iter3 = tmp2();
@@ -148,53 +158,47 @@ async function _createReferralTrials(arg0, arg1) {
       }
     }
   }
-  callback2(closure_2[7]).dispatch({ type: "CREATE_REFERRALS_SUCCESS", userTrialOffers: items });
+  outer2_1(outer2_2[7]).dispatch({ type: "CREATE_REFERRALS_SUCCESS", userTrialOffers: items });
   return map;
 }
-async function _createReferralTrial(value, arg1) {
-  const HTTP = callback(closure_2[6]).HTTP;
-  let obj = { y: 1567300603, isArray: 221342020, accessible: 822948183, url: closure_9.CREATE_REFERRAL(value) };
+async function _createReferralTrial(arg0, arg1) {
+  const HTTP = outer2_0(outer2_2[6]).HTTP;
+  let obj = { url: outer2_9.CREATE_REFERRAL(arg0), oldFormErrors: true, rejectWithError: false };
   const body = yield HTTP.post(obj).body;
   let tmp = null;
   if (null != body) {
     tmp = body;
   }
   obj = { type: "BILLING_CREATE_REFERRAL_SUCCESS", userTrialOffer: tmp };
-  callback2(closure_2[7]).dispatch(obj);
+  outer2_1(outer2_2[7]).dispatch(obj);
   obj = { userTrialOffer: tmp };
   return obj;
 }
 async function _resolveReferralTrialOffer(arg0, arg1) {
-  const HTTP = callback(closure_2[6]).HTTP;
-  let obj = { y: 1567300603, isArray: 221342020, accessible: 822948183, url: closure_9.REFERRAL_OFFER_ID_RESOLVE(arg0) };
+  const HTTP = outer2_0(outer2_2[6]).HTTP;
+  let obj = { url: outer2_9.REFERRAL_OFFER_ID_RESOLVE(arg0), oldFormErrors: true, rejectWithError: false };
   const body = yield HTTP.get(obj).body;
   let tmp = null;
   if (null != body) {
     tmp = body;
   }
   obj = { type: "BILLING_REFERRAL_RESOLVE_SUCCESS", userTrialOffer: tmp };
-  callback2(closure_2[7]).dispatch(obj);
+  outer2_1(outer2_2[7]).dispatch(obj);
   obj = { userTrialOffer: tmp };
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ AbortCodes: closure_8, Endpoints: closure_9 } = arg1(dependencyMap[5]));
-const obj = { SUCCESS: 1, [1]: "SUCCESS", FAIL: 2, [2]: "FAIL" };
-let tmp3 = () => {
+({ AbortCodes: closure_8, Endpoints: closure_9 } = ME);
+let obj = { SUCCESS: 1, [1]: "SUCCESS", FAIL: 2, [2]: "FAIL" };
+let tmp3 = (() => {
   class EligibleUserCache {
     constructor() {
-      tmp = closure_4(this, EligibleUserCache);
+      tmp = outer1_4(this, EligibleUserCache);
       map = new Map();
       this.cache = map;
       this.expiration = Date.now() + 600000;
       return;
     }
   }
-  const arg1 = EligibleUserCache;
   let obj = {
     key: "set",
     value(arg0, arg1) {
@@ -231,21 +235,21 @@ let tmp3 = () => {
     }
   };
   return callback2(EligibleUserCache, items);
-}();
+})();
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/ReferralTrialActionCreators.tsx");
+let closure_11 = tmp3;
+let result = require("_defineProperties").fileFinishedImporting("modules/premium/ReferralTrialActionCreators.tsx");
 
 export const ReferralOfferStatus = { REDEEMED: 1, [1]: "REDEEMED", PENDING: 2, [2]: "PENDING", CONVERTED: 3, [3]: "CONVERTED" };
 export const CreateReferralStatus = obj;
-export const fetchReferralEligibleUsers = function fetchReferralEligibleUsers(arg0, arg1, arg2) {
+export const fetchReferralEligibleUsers = function fetchReferralEligibleUsers(arg0, outer2_0, arg2) {
   return _fetchReferralEligibleUsers(...arguments);
 };
 export const fetchReferralsRemaining = function fetchReferralsRemaining() {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(686);
   obj.dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_START" });
-  const HTTP = arg1(dependencyMap[6]).HTTP;
-  obj = { y: 1567300603, isArray: 221342020, accessible: 822948183, url: constants.GET_REFERRALS_REMAINING };
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  obj = { url: constants.GET_REFERRALS_REMAINING, oldFormErrors: true, rejectWithError: false };
   const value = HTTP.get(obj);
   return value.then((body) => {
     const map = new Map();
@@ -254,6 +258,7 @@ export const fetchReferralsRemaining = function fetchReferralsRemaining() {
         for (const key10015 in arg0.body.recipient_status) {
           let tmp7 = key10015;
           let result = map.set(key10015, arg0.body.recipient_status[key10015]);
+          continue;
         }
       }
     }
@@ -306,7 +311,7 @@ export const fetchReferralsRemaining = function fetchReferralsRemaining() {
       status = status.status;
     }
     if (404 !== status) {
-      let obj = callback(closure_2[7]);
+      let obj = outer1_1(outer1_2[7]);
       obj = { type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL" };
       obj.dispatch(obj);
     }

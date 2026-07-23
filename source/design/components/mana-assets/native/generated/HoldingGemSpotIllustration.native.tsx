@@ -1,13 +1,13 @@
-// Module ID: 6263
-// Function ID: 50327
+// Module ID: 6268
+// Function ID: 50356
 // Name: HoldingGemSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6269, 2]
 // Exports: HoldingGemSpotIllustration
 
-// Module 6263 (HoldingGemSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HoldingGemSpotIllustration.native.tsx");
+// Module 6268 (HoldingGemSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HoldingGemSpotIllustration.native.tsx");
 
 export const HoldingGemSpotIllustration = function HoldingGemSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const HoldingGemSpotIllustration = function HoldingGemSpotIllustration(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6269) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const HoldingGemSpotIllustration = function HoldingGemSpotIllustration(wi
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

@@ -1,24 +1,22 @@
-// Module ID: 10959
-// Function ID: 85251
+// Module ID: 10969
+// Function ID: 85300
 // Name: useSearchableSelectComponent
-// Dependencies: [4211081230, 4143972353, 33554471, 4026531840, 14609]
+// Dependencies: [57, 31, 7802, 4098, 2]
 // Exports: default
 
-// Module 10959 (useSearchableSelectComponent)
-import apexExperiment from "apexExperiment";
+// Module 10969 (useSearchableSelectComponent)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
 
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const result = apexExperiment.fileFinishedImporting("modules/interaction_components/native/components/useSearchableSelectComponent.tsx");
+const require = arg1;
+let result = require("getSnowflakeSelectDefaultValues").fileFinishedImporting("modules/interaction_components/native/components/useSearchableSelectComponent.tsx");
 
 export default function useSearchableSelectComponent(selectActionComponent) {
   let containerId;
   let guildId;
   selectActionComponent = selectActionComponent.selectActionComponent;
-  const arg1 = selectActionComponent;
   const queryOptions = selectActionComponent.queryOptions;
-  const importDefault = queryOptions;
-  const dependencyMap = selectActionComponent.onSubmit;
+  const onSubmit = selectActionComponent.onSubmit;
   function submitSelection(arr) {
     const obj = { type: selectActionComponent.type };
     const items = [...arr.values()];
@@ -27,21 +25,20 @@ export default function useSearchableSelectComponent(selectActionComponent) {
     queryOptions(onSubmit[3]).hideActionSheet();
   }
   ({ containerId, guildId } = selectActionComponent);
-  const tmp = callback(React.useState(""), 2);
-  const first = tmp[0];
-  const callback = first;
-  let obj = arg1(dependencyMap[2]);
-  const React = obj.getInitialSnowflakeSelectOptions(selectActionComponent, containerId, guildId);
-  const tmp3 = callback(React.useState(() => new Map(closure_4.map((value) => {
+  const tmp = first(React.useState(""), 2);
+  first = tmp[0];
+  let obj = selectActionComponent(onSubmit[2]);
+  React = obj.getInitialSnowflakeSelectOptions(selectActionComponent, containerId, guildId);
+  const tmp3 = first(React.useState(() => new Map(result.map((value) => {
     const items = [value.value, value];
     return items;
   }))), 2);
   const first1 = tmp3[0];
   let closure_6 = tmp3[1];
-  const items = [first, queryOptions];
+  let items = [first, queryOptions];
   let closure_7 = selectActionComponent.maxValues > 1;
   obj = { options: React.useMemo(() => queryOptions(first), items) };
-  const items1 = [...first1.values()];
+  let items1 = [...first1.values()];
   obj.selectedOptions = items1;
   obj.isSelected = function isSelected(value) {
     return first1.has(value.value);
@@ -49,7 +46,6 @@ export default function useSearchableSelectComponent(selectActionComponent) {
   obj.onPressOptionItem = function onPressOptionItem(arg0, value) {
     const selectActionComponent = value;
     const hasItem = first1.has(value.value);
-    const queryOptions = hasItem;
     if (closure_7) {
       let tmp11 = !hasItem;
       if (tmp11) {
@@ -59,9 +55,9 @@ export default function useSearchableSelectComponent(selectActionComponent) {
         callback((arg0) => {
           const map = new Map(arg0);
           if (hasItem) {
-            map.delete(arg1.value);
+            map.delete(value.value);
           } else {
-            const result = map.set(arg1.value, arg1);
+            const result = map.set(value.value, value);
           }
           return map;
         });

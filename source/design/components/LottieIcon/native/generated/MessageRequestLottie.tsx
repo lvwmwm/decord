@@ -1,18 +1,20 @@
-// Module ID: 12961
-// Function ID: 98623
+// Module ID: 13075
+// Function ID: 100779
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 33, 9791, 13076, 2]
 
-// Module 12961 (items)
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = ["BACKGROUND_SYNC"];
-const items = [{ DeeplinkSource: true, ModalFloatingActionProps: true, blacklist: true }];
-const importAllResult = importAll(dependencyMap[0]);
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
-  const obj = { dotLottie: ref(dependencyMap[3]), animation: "all", ref, layers: closure_3, markers: items };
+// Module 13075 (items)
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_3 = ["I"];
+const items = [{ name: "all", start: 0, duration: 77 }];
+const forwardRefResult = require("result").forwardRef((arg0, ref) => {
+  const obj = { dotLottie: require(13076) /* registerAsset */, animation: "all", ref, layers: closure_3, markers: items };
   const merged = Object.assign(arg0);
-  return jsx(ref(dependencyMap[2]).LottieIcon, obj);
+  return jsx(require(9791) /* LottieIcon */.LottieIcon, { dotLottie: require(13076) /* registerAsset */, animation: "all", ref, layers: closure_3, markers: items });
 });
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/LottieIcon/native/generated/MessageRequestLottie.tsx");
+const result = require("LottieIcon").fileFinishedImporting("design/components/LottieIcon/native/generated/MessageRequestLottie.tsx");
 
 export const MessageRequestLottie = forwardRefResult;

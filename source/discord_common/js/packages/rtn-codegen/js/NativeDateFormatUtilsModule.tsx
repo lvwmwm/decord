@@ -1,12 +1,12 @@
-// Module ID: 3816
-// Function ID: 31715
+// Module ID: 3818
+// Function ID: 31720
 // Name: enforcing
-// Dependencies: []
+// Dependencies: [27, 2]
 
-// Module 3816 (enforcing)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+// Module 3818 (enforcing)
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 const enforcing = TurboModuleRegistry.getEnforcing("NativeDateFormatUtilsModule");
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeDateFormatUtilsModule.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeDateFormatUtilsModule.tsx");
 
 export default enforcing;

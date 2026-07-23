@@ -1,9 +1,21 @@
-// Module ID: 10079
-// Function ID: 78043
+// Module ID: 10087
+// Function ID: 78083
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [15, 17, 18, 5, 6, 7, 1348, 653, 664, 3, 507, 1440, 2]
 
-// Module 10079 (_callSuper)
+// Module 10087 (_callSuper)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _defineProperties from "_defineProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "ME";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback(arg1);
@@ -15,7 +27,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_3(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -26,18 +38,11 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-({ SearchTypes: closure_10, Endpoints: closure_11 } = arg1(dependencyMap[7]));
-const tmp3 = () => {
+({ SearchTypes: closure_10, Endpoints: closure_11 } = ME);
+const tmp3 = (() => {
   class SearchFetcher {
     constructor(arg0, arg1, arg2) {
-      tmp = closure_7(this, SearchFetcher);
+      tmp = outer1_7(this, SearchFetcher);
       this.isCanceled = false;
       this.searchId = arg0;
       this.searchType = arg1;
@@ -45,7 +50,6 @@ const tmp3 = () => {
       return;
     }
   }
-  const importDefault = SearchFetcher;
   let obj = { key: "fetch" };
   // CreateGeneratorClosureLongIndex (0x67)
   let closure_0 = callback3(tmp);
@@ -66,57 +70,55 @@ const tmp3 = () => {
   items[1] = obj;
   obj = {
     key: "retryLater",
-    value(closure_101, queue, bindResult1) {
+    value(c101, queue, bindResult1) {
       const self = this;
       if (null != this.indexingPollId) {
         const _clearTimeout = clearTimeout;
         clearTimeout(self.indexingPollId);
       }
       const _fetch = self.fetch;
-      self.indexingPollId = setTimeout(_fetch.bind(self, closure_101, queue, bindResult1), self.retryDelay);
+      self.indexingPollId = setTimeout(_fetch.bind(self, c101, queue, bindResult1), self.retryDelay);
     }
   };
   items[2] = obj;
   return callback4(SearchFetcher, items);
-}();
-const tmp2 = arg1(dependencyMap[7]);
-const tmp4 = (arg0) => {
+})();
+const tmp4 = ((arg0) => {
   class SearchFetcherImpl {
     constructor() {
-      tmp = closure_7(this, SearchFetcherImpl);
-      return closure_12(this, SearchFetcherImpl, arguments);
+      tmp = outer1_7(this, SearchFetcherImpl);
+      return outer1_12(this, SearchFetcherImpl, arguments);
     }
   }
-  const arg1 = SearchFetcherImpl;
   callback2(SearchFetcherImpl, arg0);
   let obj = {
     key: "getEndpoint",
     value() {
       const self = this;
       const searchType = this.searchType;
-      if (constants.GUILD === searchType) {
+      if (outer1_10.GUILD === searchType) {
         if (null != self.searchId) {
           if ("" !== self.searchId) {
-            return closure_11.SEARCH_GUILD(self.searchId);
+            return outer1_11.SEARCH_GUILD(self.searchId);
           }
         }
-      } else if (constants.GUILD_CHANNEL === searchType) {
+      } else if (outer1_10.GUILD_CHANNEL === searchType) {
         if (null != self.searchId) {
           if ("" !== self.searchId) {
-            const channel = channel.getChannel(self.searchId);
+            const channel = outer1_9.getChannel(self.searchId);
             let guildId;
             if (null != channel) {
               guildId = channel.getGuildId();
             }
             if (null != guildId) {
-              return closure_11.SEARCH_GUILD(guildId);
+              return outer1_11.SEARCH_GUILD(guildId);
             }
           }
         }
-      } else if (constants.CHANNEL === searchType) {
+      } else if (outer1_10.CHANNEL === searchType) {
         if (null != self.searchId) {
           if ("" !== self.searchId) {
-            return closure_11.SEARCH_CHANNEL(self.searchId);
+            return outer1_11.SEARCH_CHANNEL(self.searchId);
           }
         }
       } else {
@@ -134,47 +136,46 @@ const tmp4 = (arg0) => {
       const endpoint = this.getEndpoint();
       let value = null;
       if (null != endpoint) {
-        const HTTP = SearchFetcherImpl(closure_2[10]).HTTP;
-        const obj = { url: endpoint, query: callback(closure_2[11]).stringify(this.query), oldFormErrors: true, rejectWithError: rejectWithError.rejectWithError };
+        const HTTP = SearchFetcherImpl(outer1_2[10]).HTTP;
+        const obj = { url: endpoint, query: outer1_1(outer1_2[11]).stringify(this.query), oldFormErrors: true, rejectWithError: rejectWithError.rejectWithError };
         value = HTTP.get(obj);
-        const obj2 = callback(closure_2[11]);
+        const obj2 = outer1_1(outer1_2[11]);
       }
       return value;
     }
   };
   items[1] = obj;
   return callback4(SearchFetcherImpl, items);
-}(tmp3);
-const tmp5 = (arg0) => {
+})(tmp3);
+const tmp5 = ((arg0) => {
   class SearchTabFetcherImpl {
     constructor(arg0, arg1, arg2, arg3) {
-      tmp = closure_7(this, SearchTabFetcherImpl);
+      tmp = outer1_7(this, SearchTabFetcherImpl);
       items = [, , ];
       items[0] = arg0;
       items[1] = arg1;
       items[2] = arg2;
-      tmp2 = closure_12(this, SearchTabFetcherImpl, items);
+      tmp2 = outer1_12(this, SearchTabFetcherImpl, items);
       tmp2.payload = arg3;
       return tmp2;
     }
   }
-  const arg1 = SearchTabFetcherImpl;
   callback2(SearchTabFetcherImpl, arg0);
   let obj = {
     key: "getEndpoint",
     value() {
       const self = this;
       const searchType = this.searchType;
-      if (constants.DMS === searchType) {
-        return closure_11.SEARCH_TABS_DMS;
+      if (outer1_10.DMS === searchType) {
+        return outer1_11.SEARCH_TABS_DMS;
       } else {
-        if (constants.GUILD_CHANNEL !== searchType) {
-          if (constants.GUILD !== searchType) {
-            if (constants.THREAD !== searchType) {
-              if (constants.CHANNEL === searchType) {
+        if (outer1_10.GUILD_CHANNEL !== searchType) {
+          if (outer1_10.GUILD !== searchType) {
+            if (outer1_10.THREAD !== searchType) {
+              if (outer1_10.CHANNEL === searchType) {
                 if (null != self.searchId) {
                   if ("" !== self.searchId) {
-                    return closure_11.SEARCH_TABS_CHANNEL(self.searchId);
+                    return outer1_11.SEARCH_TABS_CHANNEL(self.searchId);
                   }
                 }
               } else {
@@ -188,20 +189,20 @@ const tmp5 = (arg0) => {
         }
         if (null != self.searchId) {
           if ("" !== self.searchId) {
-            return closure_11.SEARCH_TABS_GUILD(self.searchId);
+            return outer1_11.SEARCH_TABS_GUILD(self.searchId);
           }
         }
       }
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "makeRequest",
     value(rejectWithError) {
       const endpoint = this.getEndpoint();
       let postResult = null;
       if (null != endpoint) {
-        const HTTP = SearchTabFetcherImpl(closure_2[10]).HTTP;
+        const HTTP = SearchTabFetcherImpl(outer1_2[10]).HTTP;
         const obj = { url: endpoint, body: this.payload, oldFormErrors: true, rejectWithError: rejectWithError.rejectWithError };
         postResult = HTTP.post(obj);
       }
@@ -210,8 +211,8 @@ const tmp5 = (arg0) => {
   };
   items[1] = obj;
   return callback4(SearchTabFetcherImpl, items);
-}(tmp3);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/search/SearchFetcher.tsx");
+})(tmp3);
+let result = require("_inherits").fileFinishedImporting("modules/search/SearchFetcher.tsx");
 
 export const SearchFetcher = tmp3;
 export const SearchFetcherImpl = tmp4;

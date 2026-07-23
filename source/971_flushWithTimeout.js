@@ -1,18 +1,20 @@
 // Module ID: 971
-// Function ID: 10465
+// Function ID: 10466
 // Name: flushWithTimeout
-// Dependencies: []
+// Dependencies: [5, 801, 845, 798, 970]
 // Exports: flushIfServerless
 
 // Module 971 (flushWithTimeout)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
 function flushWithTimeout(arg0) {
   return _flushWithTimeout(...arguments);
 }
 async function _flushWithTimeout(arg0, arg1) {
-  const debug = callback(closure_1[1]).debug;
+  const debug = outer2_0(outer2_1[1]).debug;
   debug.log("Flushing events...");
-  yield callback(closure_1[2]).flush(arg0);
-  const debug2 = callback(closure_1[1]).debug;
+  yield outer2_0(outer2_1[2]).flush(arg0);
+  const debug2 = outer2_0(outer2_1[1]).debug;
   debug2.log("Done flushing events");
 }
 async function _flushIfServerless() {
@@ -31,7 +33,7 @@ async function _flushIfServerless() {
         cloudflareWaitUntil = first.cloudflareWaitUntil;
       }
       if ("function" === typeof cloudflareWaitUntil) {
-        first.cloudflareWaitUntil(callback2(num));
+        first.cloudflareWaitUntil(outer2_3(num));
       }
     }
     if ("cloudflareCtx" in first) {
@@ -42,13 +44,13 @@ async function _flushIfServerless() {
       }
       if ("function" === typeof waitUntil) {
         const cloudflareCtx2 = first.cloudflareCtx;
-        cloudflareCtx2.waitUntil(callback2(num));
+        cloudflareCtx2.waitUntil(outer2_3(num));
       }
     }
     const _Symbol = Symbol;
-    if (callback(closure_1[3]).GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")]) {
-      callback(closure_1[4]).vercelWaitUntil(callback2(num));
-      const obj2 = callback(closure_1[4]);
+    if (outer2_0(outer2_1[3]).GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")]) {
+      outer2_0(outer2_1[4]).vercelWaitUntil(outer2_3(num));
+      const obj2 = outer2_0(outer2_1[4]);
     } else {
       const _process = process;
       let tmp8 = "undefined" !== typeof process;
@@ -78,13 +80,12 @@ async function _flushIfServerless() {
         tmp8 = NETLIFY;
       }
       if (tmp8) {
-        return yield closure_3(num);
+        return yield outer2_3(num);
       }
     }
   }
   first = {};
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const flushIfServerless = function flushIfServerless() {

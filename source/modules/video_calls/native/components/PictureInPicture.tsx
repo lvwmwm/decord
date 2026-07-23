@@ -1,19 +1,22 @@
-// Module ID: 10531
-// Function ID: 82300
+// Module ID: 10541
+// Function ID: 82350
 // Name: PictureInPicturePositions
-// Dependencies: [4101701633, 3089956865, 2611150849, 1985019908, 4139, 10521, 3979, 10518, 566, 2, 14714, 2610688, 2692864, 1021184, 1056512, 325888, 2410496, 1334784, 1161728]
+// Dependencies: [57, 31, 27, 10210, 653, 33, 4130, 1273, 10542, 1450, 5160, 10545, 3991, 4542, 10546, 10547, 5217, 477, 2]
 
-// Module 10531 (PictureInPicturePositions)
-import { PictureInPicturePositions } from "_isNativeReflectConstruct";
-import { jsx } from "isActivityFocused";
+// Module 10541 (PictureInPicturePositions)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { toggleFocus } from "resetFocusTimer";
+import { PictureInPicturePositions } from "ME";
+import { jsx } from "jsxProd";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import ChannelCallCameraPreview from "ChannelCallCameraPreview";
+import Button from "Button";
 
 let StyleSheet;
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ StyleSheet, View: closure_5 } = arg1(dependencyMap[2]));
-const toggleFocus = arg1(dependencyMap[3]).toggleFocus;
+let closure_5;
+const require = arg1;
+({ StyleSheet, View: closure_5 } = get_ActivityIndicator);
 let obj = {};
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -23,20 +26,20 @@ _createForOfIteratorHelperLoose = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 _createForOfIteratorHelperLoose["alignItems"] = "baseline";
 obj.pipInnerContainer = _createForOfIteratorHelperLoose;
-obj.elevationShadow = ChannelCallCameraPreview.generateBoxShadowStyle(require("ChannelCallCameraPreview").EIGHT_DP_ELEVATION_SHADOW_PARAMS);
+obj.elevationShadow = Button.generateBoxShadowStyle(require("Button").EIGHT_DP_ELEVATION_SHADOW_PARAMS);
 let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_10 = { code: "function getSpringAnimationConfig_PictureInPictureTsx1(velocity){return{mass:0.2,damping:7.5,stiffness:100,restDisplacementThreshold:0.1,restSpeedThreshold:0.1,overshootClamping:true,velocity:velocity};}" };
-let closure_11 = () => {
+let closure_11 = (() => {
   function getSpringAnimationConfig(velocity) {
-    return { velocity };
+    const obj = { mass: 0.2, damping: 7.5, stiffness: 100, restDisplacementThreshold: 0.1, restSpeedThreshold: 0.1, overshootClamping: true, velocity };
+    return obj;
   }
   getSpringAnimationConfig.__closure = {};
   getSpringAnimationConfig.__workletHash = 6627401186753;
   getSpringAnimationConfig.__initData = closure_10;
   return getSpringAnimationConfig;
-}();
+})();
 let closure_12 = { code: "function PictureInPictureTsx2(){const{insets,withSpring,getSpringAnimationConfig}=this.__closure;return{marginTop:insets.top,marginBottom:withSpring(insets.bottom,getSpringAnimationConfig())};}" };
-const tmp2 = arg1(dependencyMap[2]);
 const memoResult = importAllResult.memo((preferredPosition) => {
   let children;
   let draggableGridItemStyles;
@@ -49,34 +52,33 @@ const memoResult = importAllResult.memo((preferredPosition) => {
     const TOP_LEFT = PictureInPicturePositions.TOP_LEFT;
   }
   const channel = preferredPosition.channel;
-  let arg1;
+  let insets;
   let importDefault;
-  let dependencyMap;
+  let ref;
   const tmp2 = callback2();
-  let obj = arg1(dependencyMap[8]);
+  let obj = insets(ref[8]);
   const shouldForcePipOrientation = obj.useShouldForcePipOrientation({ channel });
-  ({ width, height } = importDefault(dependencyMap[9])());
-  const insets = importDefault(dependencyMap[10])({ includeKeyboardHeight: true }).insets;
-  arg1 = insets;
+  ({ width, height } = importDefault(ref[9])());
+  insets = importDefault(ref[10])({ includeKeyboardHeight: true }).insets;
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const size = importDefault(dependencyMap[11])(obj);
-  obj = { GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: "counter", qRaqel: "complete", expoVersion: "creator", DragIcon: "creative", shineStyle: "captions", GuildThemePreviewOwner: "content", width, height };
+  const size = importDefault(ref[11])(obj);
+  obj = { x: 0, y: 0, width, height, pageX: 0, pageY: 0 };
   const tmp5 = callback(importAllResult.useState(obj), 2);
   const size2 = tmp5[0];
   importDefault = tmp5[1];
-  let obj3 = arg1(dependencyMap[12]);
+  let obj3 = insets(ref[12]);
   const fn = function w() {
-    const obj = { marginTop: insets.top, marginBottom: insets(ref[13]).withSpring(insets.bottom, callback()) };
+    const obj = { marginTop: insets.top, marginBottom: insets(ref[13]).withSpring(insets.bottom, outer1_11()) };
     return obj;
   };
-  const tmp4 = importDefault(dependencyMap[9])();
-  fn.__closure = { insets, withSpring: arg1(dependencyMap[13]).withSpring, getSpringAnimationConfig: closure_11 };
+  const tmp4 = importDefault(ref[9])();
+  fn.__closure = { insets, withSpring: insets(ref[13]).withSpring, getSpringAnimationConfig: closure_11 };
   fn.__workletHash = 16677290574613;
   fn.__initData = closure_12;
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  let obj5 = arg1(dependencyMap[14]);
+  let obj5 = insets(ref[14]);
   const isViewingActivity = obj5.useIsViewingActivity({ channelId: channel.id });
-  let obj7 = arg1(dependencyMap[15]);
+  let obj7 = insets(ref[15]);
   obj3 = { width: size.width, height: size.height, containerWidth: size2.width, containerHeight: size2.height, snapToCorners: !isViewingActivity };
   let tmp8;
   if (isViewingActivity) {
@@ -85,10 +87,9 @@ const memoResult = importAllResult.memo((preferredPosition) => {
   obj3.onPress = tmp8;
   const draggablePip = obj7.useDraggablePip(obj3);
   ({ gesture, draggableGridItemStyles } = draggablePip);
-  const ref = importAllResult.useRef(null);
-  dependencyMap = ref;
+  ref = importAllResult.useRef(null);
   const obj4 = { style: items, pointerEvents: "box-none" };
-  const items = [tmp2.pipOuterContainer, animatedStyle, style];
+  items = [tmp2.pipOuterContainer, animatedStyle, style];
   obj5 = {
     ref,
     style: tmp2.pipInnerContainer,
@@ -97,7 +98,7 @@ const memoResult = importAllResult.memo((preferredPosition) => {
       if (null != ref.current) {
         const current = ref.current;
         current.measure((arg0, arg1, width, height, pageX, pageY) => {
-          callback({ x: arg0, y: arg1, width, height, pageX, pageY });
+          outer1_1({ x: arg0, y: arg1, width, height, pageX, pageY });
         });
       }
     }
@@ -105,7 +106,7 @@ const memoResult = importAllResult.memo((preferredPosition) => {
   const obj6 = { gesture };
   obj7 = {};
   const items1 = [draggableGridItemStyles, ];
-  const obj1 = { insets, withSpring: arg1(dependencyMap[13]).withSpring, getSpringAnimationConfig: closure_11 };
+  const obj1 = { insets, withSpring: insets(ref[13]).withSpring, getSpringAnimationConfig: closure_11 };
   const obj2 = { channelId: channel.id };
   const tmp12 = closure_5;
   let elevationShadow;
@@ -115,12 +116,19 @@ const memoResult = importAllResult.memo((preferredPosition) => {
   items1[1] = elevationShadow;
   obj7.style = items1;
   obj7.children = <closure_5>{children}</closure_5>;
-  obj6.children = jsx(importDefault(dependencyMap[12]).View, obj7);
-  obj5.children = jsx(arg1(dependencyMap[16]).GestureDetector, obj6);
-  obj4.children = <tmp12 {...obj5} />;
-  return jsx(importDefault(dependencyMap[12]).View, obj4);
+  obj6.children = jsx(importDefault(ref[12]).View, {});
+  obj5.children = jsx(insets(ref[16]).GestureDetector, { gesture });
+  obj4.children = <tmp12 ref={ref} style={tmp2.pipInnerContainer} pointerEvents="box-none" onLayout={function onLayout() {
+    if (null != ref.current) {
+      const current = ref.current;
+      current.measure((arg0, arg1, width, height, pageX, pageY) => {
+        outer1_1({ x: arg0, y: arg1, width, height, pageX, pageY });
+      });
+    }
+  }} />;
+  return jsx(importDefault(ref[12]).View, { style: items, pointerEvents: "box-none" });
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/video_calls/native/components/PictureInPicture.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/video_calls/native/components/PictureInPicture.tsx");
 
 export default memoResult;
 export const DEFAULT_PIP_POSITION = PictureInPicturePositions.TOP_LEFT;

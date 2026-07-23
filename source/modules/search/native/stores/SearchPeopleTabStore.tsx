@@ -1,9 +1,18 @@
-// Module ID: 11400
-// Function ID: 88674
+// Module ID: 11410
+// Function ID: 88724
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 1348, 5042, 22, 11411, 8820, 1212, 566, 686, 2]
 
-// Module 11400 (_isNativeReflectConstruct)
+// Module 11410 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import apply from "apply";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,32 +22,24 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
 let closure_10 = [];
-let closure_11 = () => {
+let closure_11 = (() => {
   class PeopleSearchManager {
     constructor() {
-      PeopleSearchManager = this;
-      tmp = closure_6(this, PeopleSearchManager);
+      self = this;
+      tmp = outer1_6(this, self);
       this.count = null;
       this.searchQueryString = "";
       this.groupDMs = [];
       this.userIndexes = {};
       this.results = [];
-      userSearch = new PeopleSearchManager(closure_2[9]).UserSearch(() => self.processResults());
+      userSearch = new PeopleSearchManager(outer1_2[9]).UserSearch(() => self.processResults());
       this.userSearch = userSearch;
       userSearch = this.userSearch;
       subscription = userSearch.subscribe(() => self.processResults(), true);
       return;
     }
   }
-  const arg1 = PeopleSearchManager;
   let obj = {
     key: "teardown",
     value() {
@@ -46,28 +47,28 @@ let closure_11 = () => {
       userSearch.unsubscribe();
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "search",
     value(str) {
       const self = this;
-      const trimmed = str.toLowerCase().trim();
+      let trimmed = str.toLowerCase().trim();
       this.searchQueryString = trimmed;
       if ("" !== trimmed) {
         let userSearch = self.userSearch;
         self.userIndexes = userSearch.filter(trimmed);
         userSearch = self.userSearch;
         const response = userSearch.fetch(trimmed, true);
-        self.groupDMs = function searchGroupDMs(trimmed) {
+        self.groupDMs = (function searchGroupDMs(trimmed) {
           trimmed = trimmed.toLocaleLowerCase().trim();
           if (0 === trimmed.length) {
             let items = [];
           } else {
-            const obj = callback(closure_2[7]);
-            const values = callback(closure_2[7]).chain(mutablePrivateChannels.getMutablePrivateChannels()).values();
-            const found = values.filter(trimmed(closure_2[8]).filterGroupDMs);
+            const obj = outer2_1(outer2_2[7]);
+            const values = outer2_1(outer2_2[7]).chain(outer2_8.getMutablePrivateChannels()).values();
+            const found = values.filter(PeopleSearchManager(outer2_2[8]).filterGroupDMs);
             const mapped = found.map((id) => {
-              const items = [id, trimmed(closure_2[8]).matchGroupDM(id, trimmed), scoreWithoutFetchingLatest.getScoreWithoutFetchingLatest(id.id)];
+              const items = [id, PeopleSearchManager(outer3_2[8]).matchGroupDM(id, trimmed), outer3_9.getScoreWithoutFetchingLatest(id.id)];
               return items;
             });
             const found1 = mapped.filter((arg0) => {
@@ -82,7 +83,7 @@ let closure_11 = () => {
               }
               return diff;
             });
-            const chainResult = callback(closure_2[7]).chain(mutablePrivateChannels.getMutablePrivateChannels());
+            const chainResult = outer2_1(outer2_2[7]).chain(outer2_8.getMutablePrivateChannels());
             items = sorted.map((arg0) => {
               let tmp;
               [tmp] = arg0;
@@ -95,7 +96,7 @@ let closure_11 = () => {
             });
           }
           return items;
-        }(trimmed);
+        })(trimmed);
       }
       self.processResults();
     }
@@ -107,20 +108,20 @@ let closure_11 = () => {
       const self = this;
       const userSearch = this.userSearch;
       this.userIndexes = userSearch.filter(this.searchQueryString);
-      let obj = PeopleSearchManager(closure_2[9]);
-      obj = { data: this.userIndexes };
+      let obj = PeopleSearchManager(outer1_2[9]);
+      obj = { data: this.userIndexes, withGuildMembers: true, withAffinitySuggestions: true, withFriends: true, withFriendSuggestions: false, withFriendRequests: false, withFriendRequestsIncoming: false, withFriendRequestsOutgoing: false, excludeCurrentUser: true };
       const result = obj.parseUserSearchResults(obj);
       let arr3 = result;
       if (this.groupDMs.length > 0) {
         arr3 = result;
         if ("" !== self.searchQueryString) {
           obj = {};
-          const intl = PeopleSearchManager(closure_2[10]).intl;
-          obj.title = intl.string(PeopleSearchManager(closure_2[10]).t.qGlQrW);
+          let intl = PeopleSearchManager(outer1_2[10]).intl;
+          obj.title = intl.string(PeopleSearchManager(outer1_2[10]).t.qGlQrW);
           obj.items = self.groupDMs;
           const findIndexResult = result.findIndex((title) => {
-            const intl = callback(closure_2[10]).intl;
-            return title.title === intl.string(callback(closure_2[10]).t.y29JXs);
+            const intl = PeopleSearchManager(outer2_2[10]).intl;
+            return title.title === intl.string(PeopleSearchManager(outer2_2[10]).t.y29JXs);
           });
           if (-1 === findIndexResult) {
             const items = [];
@@ -144,7 +145,7 @@ let closure_11 = () => {
         self.count = null;
       }
       self.results = arr3;
-      closure_13.emitChange();
+      outer1_13.emitChange();
     }
   };
   items[2] = obj;
@@ -161,21 +162,21 @@ let closure_11 = () => {
     }
   };
   return callback2(PeopleSearchManager, items);
-}();
+})();
 const map = new Map();
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class SearchPeopleTabStoreImpl {
     constructor() {
       self = this;
-      tmp = closure_6(this, SearchPeopleTabStoreImpl);
-      obj = closure_4(SearchPeopleTabStoreImpl);
-      tmp2 = closure_3;
-      if (closure_14()) {
+      tmp = outer1_6(this, SearchPeopleTabStoreImpl);
+      obj = outer1_4(SearchPeopleTabStoreImpl);
+      tmp2 = outer1_3;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_4;
+        tmp7 = outer1_4;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -184,25 +185,24 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SearchPeopleTabStoreImpl;
   callback(SearchPeopleTabStoreImpl, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_9);
+      this.waitFor(outer1_8, outer1_9);
     }
   };
   const items = [obj, , ];
   obj = {
     key: "getResults",
     value(arg0) {
-      const value = store.get(arg0);
+      const value = outer1_12.get(arg0);
       let results;
       if (null != value) {
         results = value.getResults();
       }
       if (null == results) {
-        results = closure_10;
+        results = outer1_10;
       }
       return results;
     }
@@ -211,7 +211,7 @@ let tmp3 = (Store) => {
   obj = {
     key: "getCount",
     value(arg0) {
-      const value = store.get(arg0);
+      const value = outer1_12.get(arg0);
       let count;
       if (null != value) {
         count = value.getCount();
@@ -225,9 +225,9 @@ let tmp3 = (Store) => {
   };
   items[2] = obj;
   return callback2(SearchPeopleTabStoreImpl, items);
-}(importDefault(dependencyMap[11]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "SearchPeopleTabStore";
-tmp3 = new tmp3(importDefault(dependencyMap[12]), {
+tmp3 = new tmp3(require("dispatcher"), {
   SEARCH_PEOPLE_TAB_SEARCH: function handleSearchPeopleTabSearch(id) {
     id = id.id;
     let value = map.get(id);
@@ -247,6 +247,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[12]), {
     map.delete(id);
   }
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/search/native/stores/SearchPeopleTabStore.tsx");
+let closure_13 = tmp3;
+let result = require("_inherits").fileFinishedImporting("modules/search/native/stores/SearchPeopleTabStore.tsx");
 
 export default tmp3;

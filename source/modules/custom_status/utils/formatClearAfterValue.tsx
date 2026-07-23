@@ -1,46 +1,46 @@
-// Module ID: 11900
-// Function ID: 92122
+// Module ID: 11912
+// Function ID: 92175
 // Name: formatDuration
-// Dependencies: []
+// Dependencies: [11901, 3800, 1212, 664, 1327, 2]
 // Exports: default
 
-// Module 11900 (formatDuration)
+// Module 11912 (formatDuration)
+import { ClearAfterValues } from "StatusTypes";
+
 function formatDuration(arg0) {
   const sum = Date.now() + arg0;
-  let obj = require(dependencyMap[1]);
+  let obj = require(3800) /* resetCache */;
   const date = new Date();
   const date1 = new Date(sum);
-  const intl = require(dependencyMap[2]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   if (isSameDayResult) {
     const data2 = intl.data;
     obj = { format: "short" };
     let formatTimeResult = data2.formatTime(sum, obj);
   } else {
     obj = {};
-    const data = tmp5(tmp6[2]).intl.data;
+    const data = tmp5(1212).intl.data;
     const obj1 = { format: "short" };
     obj.time = data.formatTime(sum, obj1);
-    formatTimeResult = intl.formatToPlainString(tmp5(tmp6[2]).t.bI7n9i, obj);
+    formatTimeResult = intl.formatToPlainString(tmp5(1212).t.bI7n9i, obj);
   }
   return formatTimeResult;
 }
-const ClearAfterValues = require(dependencyMap[0]).ClearAfterValues;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/custom_status/utils/formatClearAfterValue.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("modules/custom_status/utils/formatClearAfterValue.tsx");
 
 export default function formatClearAfterValue(arg0) {
   if (ClearAfterValues.TODAY === arg0) {
-    return formatDuration(importDefault(dependencyMap[3]).Millis.DAY);
+    return formatDuration(importDefault(664).Millis.DAY);
   } else if (ClearAfterValues.HOURS_4 === arg0) {
-    return formatDuration(4 * importDefault(dependencyMap[3]).Millis.HOUR);
+    return formatDuration(4 * importDefault(664).Millis.HOUR);
   } else if (ClearAfterValues.HOURS_1 === arg0) {
-    return formatDuration(importDefault(dependencyMap[3]).Millis.HOUR);
+    return formatDuration(importDefault(664).Millis.HOUR);
   } else if (ClearAfterValues.MINUTES_30 === arg0) {
-    return formatDuration(30 * importDefault(dependencyMap[3]).Millis.MINUTE);
+    return formatDuration(30 * importDefault(664).Millis.MINUTE);
   } else if (ClearAfterValues.DONT_CLEAR === arg0) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.bRn8cq);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.bRn8cq);
   } else {
-    require(dependencyMap[4]).assertNever(arg0);
+    require(1327) /* isDiscordFrontendDevelopment */.assertNever(arg0);
   }
 };

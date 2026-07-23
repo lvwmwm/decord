@@ -1,5 +1,5 @@
 // Module ID: 3702
-// Function ID: 28074
+// Function ID: 28077
 // Name: prop
 // Dependencies: []
 
@@ -10,14 +10,14 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { accessibilityHint: 1960116227, legacyCompat_selected: 1280376835, legacyCompat_onPress: 191316637, eventTarget: 191299585 }, narrow: {}, short: { accessibilityHint: 1960116227, legacyCompat_selected: 1280376835, legacyCompat_onPress: 191316637, eventTarget: 191299585 } };
+    obj = { long: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" } };
     obj.conjunction = obj;
-    const obj1 = { long: { accessibilityHint: 1960116227, legacyCompat_selected: 1960116227, legacyCompat_onPress: -1353646077, eventTarget: 572867126 }, narrow: { accessibilityHint: 1960116227, legacyCompat_selected: 1960116227, legacyCompat_onPress: -1353646077, eventTarget: 572867126 }, short: { accessibilityHint: 1960116227, legacyCompat_selected: 1960116227, legacyCompat_onPress: -1353646077, eventTarget: 572867126 } };
+    const obj1 = { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, short: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" } };
     obj.disjunction = obj1;
-    const obj2 = { long: {}, narrow: {}, short: {} };
+    const obj2 = { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
     obj.unit = obj2;
     obj.data = obj;
-    obj.locale = "tr";
+    obj.locale = "sv";
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { accessibilityHint: 1960116227, legacyCompat_selected: 1280376835, legacyCompat_onPress: 191316637, eventTarget: 191299585 }, narrow: {}, short: { accessibilityHint: 1960116227, legacyCompat_selected: 1280376835, legacyCompat_onPress: 191316637, eventTarget: 191299585 } }, disjunction: { long: { accessibilityHint: 1960116227, legacyCompat_selected: 1960116227, legacyCompat_onPress: -1353646077, eventTarget: 572867126 }, narrow: { accessibilityHint: 1960116227, legacyCompat_selected: 1960116227, legacyCompat_onPress: -1353646077, eventTarget: 572867126 }, short: { accessibilityHint: 1960116227, legacyCompat_selected: 1960116227, legacyCompat_onPress: -1353646077, eventTarget: 572867126 } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "tr" });
+prop.push({ data: { conjunction: { long: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} och {1}", middle: "{0}, {1}", pair: "{0} och {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, short: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "sv" });

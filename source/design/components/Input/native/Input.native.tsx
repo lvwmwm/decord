@@ -1,28 +1,32 @@
-// Module ID: 7500
-// Function ID: 60145
+// Module ID: 7505
+// Function ID: 60179
 // Name: Input
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1212, 4126, 7506, 2]
 // Exports: Input
 
-// Module 7500 (Input)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { flexDirection: "row", gap: importDefault(dependencyMap[4]).space.PX_8, marginTop: importDefault(dependencyMap[4]).space.PX_4, marginBottom: importDefault(dependencyMap[4]).space.PX_4 };
-obj.inputRow = obj;
-const obj1 = { 0: "<string:1912603085>", 0: true, 0: true, marginBottom: importDefault(dependencyMap[4]).space.PX_4 };
-obj.labelWrapper = obj1;
-const tmp3 = arg1(dependencyMap[2]);
-obj.label = { marginBottom: importDefault(dependencyMap[4]).space.PX_4 };
-const obj2 = { marginBottom: importDefault(dependencyMap[4]).space.PX_4 };
-obj.description = { marginTop: importDefault(dependencyMap[4]).space.PX_4 };
-const obj3 = { marginTop: importDefault(dependencyMap[4]).space.PX_4 };
-obj.error = { marginTop: importDefault(dependencyMap[4]).space.PX_4, width: "auto" };
-let closure_5 = obj.createStyles(obj);
-const obj4 = { marginTop: importDefault(dependencyMap[4]).space.PX_4, width: "auto" };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Input/native/Input.native.tsx");
+// Module 7505 (Input)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.inputRow = _createForOfIteratorHelperLoose;
+let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4, flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.labelWrapper = obj1;
+_createForOfIteratorHelperLoose.label = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.description = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.error = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, width: "auto" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, width: "auto" };
+const result = require("jsxProd").fileFinishedImporting("design/components/Input/native/Input.native.tsx");
 
 export const Input = function Input(arg0) {
   let children;
@@ -33,14 +37,14 @@ export const Input = function Input(arg0) {
   let labelId;
   let labelTrailing;
   let required;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   ({ label, labelTrailing, labelId, description, errorMessage, required } = arg0);
   ({ children, containerStyle } = arg0);
   if ("string" === typeof label) {
     if (true === required) {
-      const intl = arg1(dependencyMap[5]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       const _HermesInternal = HermesInternal;
-      const combined = "" + label + " (" + intl.string(arg1(dependencyMap[5]).t.EkokLy) + ")";
+      const combined = "" + label + " (" + intl.string(require(1212) /* getSystemLocale */.t.EkokLy) + ")";
     }
   }
   let obj = { style: containerStyle };
@@ -50,35 +54,35 @@ export const Input = function Input(arg0) {
     items[1] = callback(View, obj);
     let tmp22 = null;
     if (null != description) {
-      obj = { cachedAt: "center", edpbxy: "center", style: tmp.description, children: description };
-      tmp22 = callback(arg1(dependencyMap[6]).Text, obj);
+      obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.description, children: description };
+      tmp22 = callback(require(4126) /* Text */.Text, obj);
     }
     items[2] = tmp22;
     let tmp26 = null;
     if (null != errorMessage) {
       const obj1 = { style: tmp.error, children: errorMessage };
-      tmp26 = callback(arg1(dependencyMap[7]).ErrorText, obj1);
+      tmp26 = callback(require(7506) /* ErrorText */.ErrorText, obj1);
     }
     items[3] = tmp26;
     obj.children = items;
     return tmp7(tmp8, obj);
   } else if (null != labelTrailing) {
     const obj2 = { style: tmp.labelWrapper };
-    const obj3 = { cachedAt: true, edpbxy: true, nativeID: labelId, children: label };
-    const items1 = [callback(arg1(dependencyMap[6]).Text, obj3), labelTrailing];
+    const obj3 = { variant: "text-sm/semibold", color: "text-subtle", nativeID: labelId, children: label };
+    const items1 = [callback(require(4126) /* Text */.Text, obj3), labelTrailing];
     obj2.children = items1;
     let tmp30Result = callback2(View, obj2);
   } else {
-    const obj4 = { cachedAt: true, edpbxy: true, style: tmp.label, nativeID: labelId, accessibilityLabel: combined };
+    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, nativeID: labelId, accessibilityLabel: combined };
     const items2 = [label, ];
     let tmp12 = null;
     if (required) {
-      const obj5 = { cachedAt: "/assets/.cache/intl/ZGVzaWdu", edpbxy: null, cos: "5a487b732abaf0eeae777df0c577f380", children: [-10111734812216596000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009748035637130972] };
-      tmp12 = callback2(arg1(dependencyMap[6]).Text, obj5);
+      const obj5 = { variant: "text-sm/bold", color: "text-feedback-critical", "aria-hidden": true, children: [" ", "*"] };
+      tmp12 = callback2(require(4126) /* Text */.Text, obj5);
     }
     items2[1] = tmp12;
     obj4.children = items2;
-    tmp30Result = callback2(arg1(dependencyMap[6]).Text, obj4);
+    tmp30Result = callback2(require(4126) /* Text */.Text, obj4);
     const tmp30 = callback2;
   }
 };

@@ -1,36 +1,40 @@
-// Module ID: 15916
-// Function ID: 121926
+// Module ID: 16033
+// Function ID: 124099
 // Name: InAppReportsFeedbackActionSheet
-// Dependencies: []
+// Dependencies: [31, 653, 9500, 33, 16034, 16035, 9521, 1212, 675, 16036, 9503, 3830, 2]
 // Exports: default
 
-// Module 15916 (InAppReportsFeedbackActionSheet)
-importAll(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const FeedbackType = arg1(dependencyMap[2]).FeedbackType;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/in_app_reports/native/components/feedback/InAppReportsFeedbackActionSheet.tsx");
+// Module 16033 (InAppReportsFeedbackActionSheet)
+import "result";
+import { AnalyticEvents } from "ME";
+import { FeedbackType } from "FeedbackRating";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("FeedbackRating").fileFinishedImporting("modules/in_app_reports/native/components/feedback/InAppReportsFeedbackActionSheet.tsx");
 
 export default function InAppReportsFeedbackActionSheet(arg0) {
-  ({ reportId: closure_0, reportType: closure_1 } = arg0);
-  let obj = arg1(dependencyMap[5]);
+  let importDefault;
+  let require;
+  ({ reportId: require, reportType: importDefault } = arg0);
+  let obj = require(16035) /* newGetEnglishMessageText */;
   const result = obj.improperGetEnglishIntlMessageText("CALL_FEEDBACK_OPTION_OTHER");
-  obj = { aspectRatio: null, marginVertical: null, width: null };
-  const tmp = importDefault(dependencyMap[4])();
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.headerLabel = intl.string(arg1(dependencyMap[7]).t.MP5lDj);
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj.ratingsBodyLabel = intl2.string(arg1(dependencyMap[7]).t.7Ct0Dj);
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj.reasonsHeaderLabel = intl3.string(arg1(dependencyMap[7]).t.FJmoxF);
+  obj = { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true };
+  const tmp = importDefault(16034)();
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.headerLabel = intl.string(require(1212) /* getSystemLocale */.t.MP5lDj);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.ratingsBodyLabel = intl2.string(require(1212) /* getSystemLocale */.t["7Ct0Dj"]);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.reasonsHeaderLabel = intl3.string(require(1212) /* getSystemLocale */.t.FJmoxF);
   obj.reasons = tmp;
   const items = [result];
   obj.feedbackReasons = items;
   obj.otherKey = result;
   obj.trackOpen = function trackOpen() {
-    let obj = callback2(closure_2[8]);
-    obj = { report_id: closure_0, report_type: callback2 };
-    obj.track(constants.IAR_FEEDBACK_MODAL_VIEWED, obj);
+    let obj = outer1_1(outer1_2[8]);
+    obj = { report_id: closure_0, report_type: closure_1 };
+    obj.track(outer1_3.IAR_FEEDBACK_MODAL_VIEWED, obj);
   };
   obj.trackReport = function trackReport(arg0) {
     let dontShowAgain;
@@ -48,19 +52,19 @@ export default function InAppReportsFeedbackActionSheet(arg0) {
       str = feedback;
     }
     obj.feedback = str;
-    obj.reportId = callback;
-    obj.reportType = callback2;
+    obj.reportId = closure_0;
+    obj.reportType = closure_1;
     obj.dontShowAgain = null != dontShowAgain && dontShowAgain;
-    callback2(closure_2[9])(obj);
+    outer1_1(outer1_2[9])(obj);
     if (dontShowAgain) {
-      obj = { feedbackType: constants2.IN_APP_REPORTS, location: "InAppReportsFeedbackActionSheet" };
-      callback(closure_2[10]).processOptOut(obj);
-      const obj2 = callback(closure_2[10]);
+      obj = { feedbackType: outer1_4.IN_APP_REPORTS, location: "InAppReportsFeedbackActionSheet" };
+      outer1_0(outer1_2[10]).processOptOut(obj);
+      const obj2 = outer1_0(outer1_2[10]);
     }
     if (null != rating) {
-      callback(closure_2[11]).presentFeedbackSent();
-      const obj4 = callback(closure_2[11]);
+      outer1_0(outer1_2[11]).presentFeedbackSent();
+      const obj4 = outer1_0(outer1_2[11]);
     }
   };
-  return jsx(importDefault(dependencyMap[6]), obj);
+  return jsx(importDefault(9521), { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true });
 };

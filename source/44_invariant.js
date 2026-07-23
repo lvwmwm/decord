@@ -12,7 +12,7 @@ export default function invariant(arg0, str) {
       let error = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
     } else {
       const items = [arg2, arg3, arg4, arg5, arg6, arg7];
-      let closure_1 = 0;
+      let c1 = 0;
       const _Error2 = Error;
       const error1 = new Error(str.replace(/%s/g, () => {
         let closure_1 = tmp + 1;

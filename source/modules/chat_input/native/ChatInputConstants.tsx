@@ -1,14 +1,14 @@
-// Module ID: 11095
-// Function ID: 86330
+// Module ID: 11105
+// Function ID: 86380
 // Name: TextAreaCta
-// Dependencies: []
+// Dependencies: [1273, 2]
 
-// Module 11095 (TextAreaCta)
-let obj = { easing: require(dependencyMap[0]).STANDARD_EASING, duration: 250 };
-obj = { easing: require(dependencyMap[0]).STANDARD_EASING, duration: 50 };
-obj = { easing: require(dependencyMap[0]).STANDARD_EASING, duration: 100 };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/chat_input/native/ChatInputConstants.tsx");
+// Module 11105 (TextAreaCta)
+let obj = { easing: require("Button").STANDARD_EASING, duration: 250 };
+obj = { easing: require("Button").STANDARD_EASING, duration: 50 };
+obj = { easing: require("Button").STANDARD_EASING, duration: 100 };
+const obj1 = { easing: require("Button").STANDARD_EASING, duration: 200 };
+const result = require("set").fileFinishedImporting("modules/chat_input/native/ChatInputConstants.tsx");
 
 export const TextAreaCta = { CHANNEL_LIST: "channel_list", CHANNEL_LINK: "channel_link", BACK_TO_HOME: "back_to_home", VERIFY_PHONE: "verify_phone", VERIFY_EMAIL: "verify_email", JOIN_GUILD: "join_guild", FOLLOW_ANNOUNCEMENT: "follow_announcement", BACK_TO_DISCOVERY: "back_to_discovery", MEMBER_VERIFICATION: "member_verification", MEMBER_VERIFICATION_CONFIRMED: "member_verification_confirmed", MEMBER_VERIFICATION_REJECTED: "member_verification_rejected", UNBLOCK: "unblock" };
 export const ChatInputActionType = { PHOTOS: 0, [0]: "PHOTOS", APPS: 1, [1]: "APPS", THREAD: 2, [2]: "THREAD", NITRO_GIFT: 3, [3]: "NITRO_GIFT", ALL_PHOTOS: 4, [4]: "ALL_PHOTOS", CAMERA: 5, [5]: "CAMERA" };
@@ -26,6 +26,6 @@ export const CHAT_INPUT_TIMING_CONFIG = obj;
 export const CHAT_INPUT_FLOATING_COLLAPSED_SCALE = 0.5;
 export const CHAT_INPUT_FLOATING_EXIT_TIMING_CONFIG = obj;
 export const CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG = obj;
-export const CHAT_INPUT_FLOATING_ENTER_OPACITY_TIMING_CONFIG = { easing: require(dependencyMap[0]).STANDARD_EASING, duration: 200 };
-export const CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG = { 84079581: "y", -79768422: "isArray", -618226596: "LIGHT" };
+export const CHAT_INPUT_FLOATING_ENTER_OPACITY_TIMING_CONFIG = obj1;
+export const CHAT_INPUT_FLOATING_BOUNCE_SPRING_CONFIG = { mass: 0.5, damping: 13, stiffness: 400 };
 export const CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS = 50;

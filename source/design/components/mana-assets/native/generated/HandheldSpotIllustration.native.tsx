@@ -1,13 +1,13 @@
-// Module ID: 6241
-// Function ID: 50294
+// Module ID: 6246
+// Function ID: 50323
 // Name: HandheldSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6247, 2]
 // Exports: HandheldSpotIllustration
 
-// Module 6241 (HandheldSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HandheldSpotIllustration.native.tsx");
+// Module 6246 (HandheldSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HandheldSpotIllustration.native.tsx");
 
 export const HandheldSpotIllustration = function HandheldSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const HandheldSpotIllustration = function HandheldSpotIllustration(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6247) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const HandheldSpotIllustration = function HandheldSpotIllustration(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

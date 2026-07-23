@@ -1,10 +1,11 @@
 // Module ID: 1885
-// Function ID: 21012
+// Function ID: 21013
 // Name: __KvStorage
-// Dependencies: []
+// Dependencies: [27, 2]
 
 // Module 1885 (__KvStorage)
-const NativeModules = require(dependencyMap[0]).NativeModules;
+import { NativeModules } from "get ActivityIndicator";
+
 if (null != global.__KvStorage) {
   let __KvStorage = global.__KvStorage;
 } else if (null == NativeModules.KvStorage) {
@@ -34,7 +35,6 @@ if (null != global.__KvStorage) {
     throw error3;
   }
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/implementation/Classic.native.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/implementation/Classic.native.tsx");
 
 export const KV_RAW = __KvStorage;

@@ -1,19 +1,18 @@
-// Module ID: 14200
-// Function ID: 107466
+// Module ID: 14314
+// Function ID: 109622
 // Name: hasAndroidNotificationChannels
-// Dependencies: []
+// Dependencies: [477, 4110, 2]
 // Exports: hasAndroidNotificationChannels
 
-// Module 14200 (hasAndroidNotificationChannels)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationUtils.tsx");
+// Module 14314 (hasAndroidNotificationChannels)
+const result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationUtils.tsx");
 
 export const hasAndroidNotificationChannels = function hasAndroidNotificationChannels() {
-  let isAndroidResult = require(dependencyMap[0]).isAndroid();
+  let isAndroidResult = require(477) /* set */.isAndroid();
   if (isAndroidResult) {
     const _parseInt = parseInt;
-    isAndroidResult = parseInt(require(dependencyMap[1]).getSystemVersion(), 10) >= 26;
-    const obj2 = require(dependencyMap[1]);
+    isAndroidResult = parseInt(require(4110) /* getSystemVersion */.getSystemVersion(), 10) >= 26;
+    const obj2 = require(4110) /* getSystemVersion */;
   }
   return isAndroidResult;
 };

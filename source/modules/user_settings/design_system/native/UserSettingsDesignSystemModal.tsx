@@ -1,136 +1,150 @@
-// Module ID: 14345
-// Function ID: 108288
+// Module ID: 14459
+// Function ID: 110441
 // Name: useScreens
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 5519, 5087, 4337, 5788, 1212, 7512, 3827, 11073, 13086, 7572, 7573, 4126, 11071, 13088, 9905, 9904, 5503, 5504, 4543, 2]
 // Exports: default
 
-// Module 14345 (useScreens)
+// Module 14459 (useScreens)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function useScreens() {
-  return arg1(dependencyMap[6]).useNavigatorScreens(() => {
+  return require(5519) /* NavigationStack */.useNavigatorScreens(() => {
     let obj = {};
     obj = {};
-    let obj2 = callback(closure_2[7]);
-    obj.headerLeft = obj2.getHeaderCloseButton(callback2(closure_2[8]).pop);
+    let obj2 = outer1_0(outer1_2[7]);
+    obj.headerLeft = obj2.getHeaderCloseButton(outer1_1(outer1_2[8]).pop);
     obj.headerRight = function headerRight() {
       const obj = {};
-      const intl = callback(closure_2[10]).intl;
-      obj.text = intl.string(callback(closure_2[10]).t.5Wxrcd);
-      obj.onPress = callback2(closure_2[8]).pop;
-      return callback3(callback(closure_2[9]).HeaderActionButton, obj);
+      const intl = outer2_0(outer2_2[10]).intl;
+      obj.text = intl.string(outer2_0(outer2_2[10]).t["5Wxrcd"]);
+      obj.onPress = outer2_1(outer2_2[8]).pop;
+      return outer2_7(outer2_0(outer2_2[9]).HeaderActionButton, obj);
     };
     obj.headerTitle = function headerTitle() {
-      return callback3(callback(closure_2[7]).NavigatorHeader, { title: constants.START, subtitle: "I said come on fhqwhgads" });
+      return outer2_7(outer2_0(outer2_2[7]).NavigatorHeader, { title: outer2_10.START, subtitle: "I said come on fhqwhgads" });
     };
     obj.render = function render(arg0, arg1) {
+      let closure_0 = arg1;
       const obj = {
-        <string:1642972817>: 0.000000000000000000000000000000000000000002690494990015162,
-        <string:1875399615>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009781756198506656,
-        <string:108398005>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013561487012820162,
-        <string:2404452449>: 15183223580850670000000000000000000000000000000000000000000000000000000000000000000,
-        <string:814110078>: 960822361483930500000000000000,
-        <string:2302972493>: 0.0000000000000000000000000000000000000037212547712193413,
-        <string:1024645044>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019640532953923946,
+        title: "Come on fhqwhgads.",
+        emoji: "\u{1F60E}",
+        action: "Everybody to the limit",
         onAction() {
-          return arg1.push(constants.WHO_DAT);
+          return arr.push(outer3_10.WHO_DAT);
         },
-        onSecondaryAction: callback2(closure_2[8]).pop
+        secondaryAction: "Maybe later",
+        onSecondaryAction: outer2_1(outer2_2[8]).pop,
+        disclaimer: "I said come on fhqwhgads."
       };
-      return callback3(closure_14, obj);
+      return outer2_7(outer2_14, obj);
     };
-    obj[constants.START] = obj;
-    obj = { headerLeft: callback(closure_2[7]).getHeaderBackButton() };
-    const obj5 = callback(closure_2[7]);
-    obj.headerRight = callback(closure_2[7]).getHeaderCloseButton(callback2(closure_2[8]).pop);
+    obj[outer1_10.START] = obj;
+    obj = { headerLeft: outer1_0(outer1_2[7]).getHeaderBackButton() };
+    const obj5 = outer1_0(outer1_2[7]);
+    obj.headerRight = outer1_0(outer1_2[7]).getHeaderCloseButton(outer1_1(outer1_2[8]).pop);
     obj.headerTitle = function headerTitle() {
-      return callback3(callback(closure_2[7]).NavigatorHeader, { title: constants.WHO_DAT });
+      return outer2_7(outer2_0(outer2_2[7]).NavigatorHeader, { title: outer2_10.WHO_DAT });
     };
     obj.render = function render(arg0, arg1) {
-      return callback3(closure_14, {
+      let closure_0 = arg1;
+      const obj = {
+        title: "Who's that?",
+        emoji: "\u{1F4BF}",
+        action: "It's to the limit",
         onAction() {
-          return arg1.push(constants.EVERYBODY);
+          return arr.push(outer3_10.EVERYBODY);
         },
-        children: callback3(arg1(closure_2[11]).TextInput, { placeholder: "My friend Jake" })
-      });
+        children: outer2_7(outer2_0(outer2_2[11]).TextInput, { placeholder: "My friend Jake" })
+      };
+      return outer2_7(outer2_14, obj);
     };
-    obj[constants.WHO_DAT] = obj;
+    obj[outer1_10.WHO_DAT] = obj;
     const obj1 = {};
-    const obj6 = callback(closure_2[7]);
-    obj1.headerLeft = callback(closure_2[7]).getHeaderBackButton();
-    const obj8 = callback(closure_2[7]);
-    obj1.headerRight = callback(closure_2[7]).getHeaderCloseButton(callback2(closure_2[8]).pop);
+    const obj6 = outer1_0(outer1_2[7]);
+    obj1.headerLeft = outer1_0(outer1_2[7]).getHeaderBackButton();
+    const obj8 = outer1_0(outer1_2[7]);
+    obj1.headerRight = outer1_0(outer1_2[7]).getHeaderCloseButton(outer1_1(outer1_2[8]).pop);
     obj1.headerTitle = function headerTitle() {
-      return callback3(callback(closure_2[7]).NavigatorHeader, { title: constants.EVERYBODY });
+      return outer2_7(outer2_0(outer2_2[7]).NavigatorHeader, { title: outer2_10.EVERYBODY });
     };
     obj1.render = function render(arg0, arg1) {
-      return callback3(closure_15, {
+      let closure_0 = arg1;
+      return outer2_7(outer2_15, {
         onAction() {
-          return arg1.push(constants.JOCKIN);
+          return arr.push(outer3_10.JOCKIN);
         }
       });
     };
-    obj[constants.EVERYBODY] = obj1;
+    obj[outer1_10.EVERYBODY] = obj1;
     obj2 = {};
-    const obj9 = callback(closure_2[7]);
-    obj2.headerLeft = callback(closure_2[7]).getHeaderBackButton();
-    const obj11 = callback(closure_2[7]);
-    obj2.headerRight = callback(closure_2[7]).getHeaderCloseButton(callback2(closure_2[8]).pop);
+    const obj9 = outer1_0(outer1_2[7]);
+    obj2.headerLeft = outer1_0(outer1_2[7]).getHeaderBackButton();
+    const obj11 = outer1_0(outer1_2[7]);
+    obj2.headerRight = outer1_0(outer1_2[7]).getHeaderCloseButton(outer1_1(outer1_2[8]).pop);
     obj2.headerTitle = function headerTitle() {
-      return callback3(callback(closure_2[7]).NavigatorHeader, { title: constants.JOCKIN, subtitle: "Tryin' to play like, you know me" });
+      return outer2_7(outer2_0(outer2_2[7]).NavigatorHeader, { title: outer2_10.JOCKIN, subtitle: "Tryin' to play like, you know me" });
     };
     obj2.render = function render(arg0, arg1) {
+      let closure_0 = arg1;
       const obj = {
-        "Bool(true)": false,
-        "Bool(true)": false,
-        "Bool(true)": false,
-        "Bool(true)": false,
-        "Bool(true)": false,
+        title: "I see you jockin' me.",
+        emoji: "\u{1F525}",
+        action: "I'm like come on fhqwhgads",
         onAction() {
-          return arg1.push(constants.LIMIT);
-        }
+          return arr.push(outer3_10.LIMIT);
+        },
+        disclaimer: "Tryin' to play like, you know me."
       };
-      return callback3(closure_14, obj);
+      return outer2_7(outer2_14, obj);
     };
-    obj[constants.JOCKIN] = obj2;
+    obj[outer1_10.JOCKIN] = obj2;
     const obj3 = {};
-    const obj12 = callback(closure_2[7]);
-    obj3.headerLeft = callback(closure_2[7]).getHeaderBackButton();
+    const obj12 = outer1_0(outer1_2[7]);
+    obj3.headerLeft = outer1_0(outer1_2[7]).getHeaderBackButton();
     obj3.headerRight = function headerRight() {
-      return callback3(callback(closure_2[7]).HeaderSubmittingIndicator, {});
+      return outer2_7(outer2_0(outer2_2[7]).HeaderSubmittingIndicator, {});
     };
     obj3.headerTitle = function headerTitle() {
-      return callback3(callback(closure_2[7]).NavigatorHeader, { title: constants.LIMIT });
+      return outer2_7(outer2_0(outer2_2[7]).NavigatorHeader, { title: outer2_10.LIMIT });
     };
     obj3.render = function render() {
       const obj = {
-        <string:1642972817>: null,
-        <string:1875399615>: null,
-        <string:108398005>: null,
-        <string:2404452449>: null,
-        <string:814110078>: null,
-        <string:2302972493>: null,
-        <string:1024645044>: null,
-        onAction: callback2(closure_2[8]).pop,
+        title: "Everybody to the limit.",
+        emoji: "\u{1F44F}",
+        action: "Everybody come on fhqwhgads!",
+        onAction: outer2_1(outer2_2[8]).pop,
+        secondaryAction: "Push that fh-h-h-h-wqhgad",
         onSecondaryAction() {
-          return callback(closure_2[12]).openURL("https://www.youtube.com/watch?v=votBDwhTu1E");
-        }
+          return outer3_1(outer3_2[12]).openURL("https://www.youtube.com/watch?v=votBDwhTu1E");
+        },
+        disclaimer: "The cheat is to the limit."
       };
-      return callback3(closure_14, obj);
+      return outer2_7(outer2_14, obj);
     };
-    obj[constants.LIMIT] = obj3;
+    obj[outer1_10.LIMIT] = obj3;
     return obj;
   }, []);
 }
 function DemoModal() {
   const tmp = useScreens();
-  return callback2(arg1(dependencyMap[13]).Modal, { screens: useScreens(), initialRouteName: constants.START });
+  return callback2(require(11073) /* Modal */.Modal, { screens: useScreens(), initialRouteName: constants.START });
 }
 function DemoStepModal() {
   const memo = React.useMemo(() => {
-    const items = [constants.START, constants.WHO_DAT, constants.EVERYBODY, constants.JOCKIN, constants.LIMIT];
+    const items = [outer1_10.START, outer1_10.WHO_DAT, outer1_10.EVERYBODY, outer1_10.JOCKIN, outer1_10.LIMIT];
     return items;
   }, []);
   const tmp = useScreens();
-  return callback2(arg1(dependencyMap[14]).StepModal, { screens: useScreens(), steps: memo, initialRouteName: constants.START });
+  return callback2(require(13086) /* StepModal */.StepModal, { screens: useScreens(), steps: memo, initialRouteName: constants.START });
 }
 function DemoScreen(arg0) {
   let action;
@@ -144,71 +158,73 @@ function DemoScreen(arg0) {
   let title;
   ({ emoji, action, secondaryAction, disclaimer, footer } = arg0);
   ({ title, onAction, onSecondaryAction, children } = arg0);
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   obj = {};
   let tmp4 = null != emoji;
   if (tmp4) {
     obj = { style: tmp.emojiContainer };
-    const obj1 = { style: tmp.emoji, children: emoji };
-    obj.children = callback2(arg1(dependencyMap[17]).Text, obj1);
+    const obj1 = { maxFontSizeMultiplier: 1, variant: "heading-xxl/medium", style: tmp.emoji, children: emoji };
+    obj.children = callback2(require(4126) /* Text */.Text, obj1);
     tmp4 = callback2(closure_5, obj);
   }
-  const items = [tmp4, callback2(arg1(dependencyMap[17]).Text, { style: tmp.title, children: title }), children];
+  const items = [tmp4, , ];
+  const obj2 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: title };
+  items[1] = callback2(require(4126) /* Text */.Text, obj2);
+  items[2] = children;
   obj.children = items;
-  const items1 = [closure_8(arg1(dependencyMap[16]).ModalContent, obj), ];
+  const items1 = [closure_8(require(7573) /* ModalContent */.ModalContent, obj), ];
   if (null == footer) {
     const obj3 = {};
     let tmp13 = null != disclaimer;
     if (tmp13) {
       const obj4 = { children: disclaimer };
-      tmp13 = callback2(arg1(dependencyMap[19]).ModalDisclaimer, obj4);
+      tmp13 = callback2(require(13088) /* ModalDisclaimer */.ModalDisclaimer, obj4);
     }
     const items2 = [tmp13, , ];
     let tmp14 = null != action;
     if (tmp14) {
       const obj5 = { variant: "primary", text: action, onPress: onAction };
-      tmp14 = callback2(arg1(dependencyMap[20]).ModalActionButton, obj5);
+      tmp14 = callback2(require(9905) /* ModalActionButton */.ModalActionButton, obj5);
     }
     items2[1] = tmp14;
     let tmp18 = null != secondaryAction;
     if (tmp18) {
       const obj6 = { variant: "secondary", text: secondaryAction, onPress: onSecondaryAction };
-      tmp18 = callback2(arg1(dependencyMap[20]).ModalActionButton, obj6);
+      tmp18 = callback2(require(9905) /* ModalActionButton */.ModalActionButton, obj6);
     }
     items2[2] = tmp18;
     obj3.children = items2;
-    footer = closure_8(arg1(dependencyMap[18]).ModalFooter, obj3);
+    footer = closure_8(require(11071) /* ModalFooter */.ModalFooter, obj3);
     const tmp22 = closure_8;
   }
   items1[1] = footer;
   obj.children = items1;
-  return closure_8(arg1(dependencyMap[15]).ModalScreen, obj);
+  return closure_8(require(7572) /* ModalScreen */.ModalScreen, obj);
 }
 function SwitchesScreen(onAction) {
-  const tmp = callback4();
-  const parts = "I said ooh ah fhqwhgads, I said ooh ah fhqhgads!".split(" ");
-  const arg1 = parts;
+  let tmp = _createForOfIteratorHelperLoose();
+  let parts = "I said ooh ah fhqwhgads, I said ooh ah fhqhgads!".split(" ");
   const tmp2 = callback(React.useState(parts.map(() => false)), 2);
   const first = tmp2[0];
   let closure_1 = tmp2[1];
-  let obj = { height: "WEEKEND_ONLY", right: "useActionBarPrimaryButton" };
+  let obj = { title: "Everybody come on fhqwhgads.", emoji: "\u{1F44F}" };
   obj = { isVisible: first.some((arg0) => arg0), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction.onAction };
-  obj.footer = callback2(arg1(dependencyMap[21]).ModalFloatingAction, obj);
+  obj.footer = callback2(parts(9904).ModalFloatingAction, obj);
   obj = { style: tmp.tableRows };
   const obj1 = {
     hasIcons: false,
     children: first.map((value) => {
       const parts = arg1;
-      return callback(parts(closure_2[23]).TableSwitchRow, {
+      return outer1_7(parts(outer1_2[23]).TableSwitchRow, {
         label: parts[arg1],
         value,
         onValueChange(arg0) {
-          const arg1 = arg0;
-          callback((arr) => arr.map((arg0, arg1) => {
+          let closure_0 = arg0;
+          outer1_1((arr) => arr.map((arg0, arg1) => {
             let tmp = arg0;
             if (arg1 === closure_0) {
-              tmp = closure_0;
+              tmp = outer1_0;
             }
             return tmp;
           }));
@@ -216,43 +232,38 @@ function SwitchesScreen(onAction) {
       }, arg1);
     })
   };
-  obj.children = callback2(arg1(dependencyMap[22]).TableRowGroup, obj1);
-  const items = [callback2(closure_5, obj), callback2(arg1(dependencyMap[21]).ModalFloatingActionSpacer, {})];
+  obj.children = callback2(parts(5503).TableRowGroup, obj1);
+  const items = [callback2(closure_5, obj), callback2(parts(9904).ModalFloatingActionSpacer, {})];
   obj.children = items;
   return callback3(DemoScreen, obj);
 }
 function openDemoModal() {
-  let arr = importDefault(dependencyMap[8]);
+  let arr = importDefault(4337);
   arr = arr.push(DemoModal);
 }
 function openDemoStepModal() {
-  let arr = importDefault(dependencyMap[8]);
+  let arr = importDefault(4337);
   arr = arr.push(DemoStepModal);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: {} };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.screen = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.emojiContainer = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.emoji = {};
-obj.title = { marginBottom: 16 };
-obj.tableRows = { width: "100%" };
-let closure_9 = obj.createStyles(obj);
+({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flex: 1, alignItems: "center", padding: 16, gap: 16 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.screen = _createForOfIteratorHelperLoose;
+let obj1 = { alignItems: "center", justifyContent: "center", width: 80, height: 80, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginBottom: 16 };
+_createForOfIteratorHelperLoose.emojiContainer = obj1;
+_createForOfIteratorHelperLoose.emoji = { fontSize: 48, lineHeight: 80 };
+_createForOfIteratorHelperLoose.title = { marginBottom: 16 };
+_createForOfIteratorHelperLoose.tableRows = { width: "100%" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_10 = { START: "Come on fhqwhgads", WHO_DAT: "Who's that?", EVERYBODY: "Everybody come on fhqwhgads", JOCKIN: "I see you jockin' me", LIMIT: "Everybody to the limit" };
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemModal.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemModal.tsx");
 
 export default function UserSettingsDesignSystemModal() {
   let obj = {};
-  obj = { style: callback4().container };
+  obj = { style: _createForOfIteratorHelperLoose().container };
   obj = { onPress: openDemoModal, text: "Show Modal" };
-  const items = [callback2(arg1(dependencyMap[24]).Button, obj), callback2(arg1(dependencyMap[24]).Button, { onPress: openDemoStepModal, text: "Show Stepped Modal" })];
+  const items = [callback2(require(4543) /* Button */.Button, obj), callback2(require(4543) /* Button */.Button, { onPress: openDemoStepModal, text: "Show Stepped Modal" })];
   obj.children = items;
   obj.children = callback3(closure_5, obj);
   return callback2(closure_6, obj);

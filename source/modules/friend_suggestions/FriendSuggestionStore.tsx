@@ -1,9 +1,17 @@
-// Module ID: 6900
-// Function ID: 54992
+// Module ID: 6905
+// Function ID: 55026
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1857, 1849, 22, 6906, 6907, 566, 686, 2]
 
-// Module 6900 (_isNativeReflectConstruct)
+// Module 6905 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import apply from "apply";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -21,7 +29,7 @@ function transformSuggestion(suggestion) {
     }
     const obj = { key: suggestion.suggested_user.id };
     let name;
-    const firstResult = importDefault(dependencyMap[7]).first(suggestion.reasons);
+    const firstResult = importDefault(22).first(suggestion.reasons);
     if (null != firstResult) {
       name = firstResult.name;
     }
@@ -35,35 +43,28 @@ function transformSuggestion(suggestion) {
   }
 }
 function transformFriendSuggestions(suggestions) {
-  const obj = importDefault(dependencyMap[7]);
-  const mapped = importDefault(dependencyMap[7]).chain(suggestions).map((arg0) => callback(arg0));
-  const chainResult = importDefault(dependencyMap[7]).chain(suggestions);
+  const obj = importDefault(22);
+  const mapped = importDefault(22).chain(suggestions).map((arg0) => outer1_14(arg0));
+  const chainResult = importDefault(22).chain(suggestions);
   return mapped.keyBy((key) => key.key).value();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
 let closure_9 = {};
-let closure_10 = 0;
-let closure_11 = false;
-let closure_12 = false;
-let tmp2 = (Store) => {
+let c10 = 0;
+let c11 = false;
+let c12 = false;
+let tmp2 = ((Store) => {
   class FriendSuggestionStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, FriendSuggestionStore);
-      obj = closure_5(FriendSuggestionStore);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, FriendSuggestionStore);
+      obj = outer1_5(FriendSuggestionStore);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -72,26 +73,25 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = FriendSuggestionStore;
   callback2(FriendSuggestionStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8);
+      this.waitFor(outer1_8);
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getSuggestionCount",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[1] = obj;
   obj = {
     key: "getSuggestions",
     value() {
-      const entries = Object.entries(closure_9);
+      const entries = Object.entries(outer1_9);
       return entries.map((arg0) => {
         let tmp;
         [, tmp] = arg0;
@@ -103,62 +103,60 @@ let tmp2 = (Store) => {
   items[3] = {
     key: "getSuggestion",
     value(arg0) {
-      return closure_9[arg0];
+      return outer1_9[arg0];
     }
   };
   return callback(FriendSuggestionStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "FriendSuggestionStore";
-tmp2 = new tmp2(importDefault(dependencyMap[11]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(friendSuggestionCount) {
     let closure_9 = {};
     friendSuggestionCount = friendSuggestionCount.friendSuggestionCount;
-    let closure_10 = friendSuggestionCount;
     if (friendSuggestionCount > 0) {
-      let closure_12 = true;
-      let tmp5 = !closure_11;
-      if (!closure_11) {
-        tmp5 = closure_12;
+      let c12 = true;
+      let tmp5 = !c11;
+      if (!c11) {
+        tmp5 = c12;
       }
       if (tmp5) {
-        closure_11 = true;
-        closure_12 = false;
-        const response = importDefault(dependencyMap[8]).fetch();
-        const obj = importDefault(dependencyMap[8]);
+        c11 = true;
+        c12 = false;
+        const response = importDefault(6906).fetch();
+        const obj = importDefault(6906);
       }
     } else {
-      importDefault(dependencyMap[9])();
+      importDefault(6907)();
     }
   },
   FRIEND_SUGGESTION_CREATE: function handleFriendSuggestionCreate(suggestion) {
     const tmp = transformSuggestion(suggestion.suggestion);
-    if (null != closure_9[tmp.key]) {
+    if (null != obj[tmp.key]) {
       return false;
     } else {
       closure_10 = closure_10 + 1;
-      const obj = {};
-      const merged = Object.assign(closure_9);
+      obj = {};
+      const merged = Object.assign(obj);
       obj[tmp.key] = tmp;
-      closure_9 = obj;
     }
   },
   FRIEND_SUGGESTION_DELETE: function handleFriendSuggestionDelete(arg0) {
     const diff = closure_10 - 1;
     closure_10 = diff;
     closure_10 = Math.max(0, diff);
-    delete r1[r0];
+    delete tmp2[tmp];
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function handleLoadFriendSuggestionsSuccess(suggestions) {
-    let closure_11 = false;
+    let c11 = false;
     let closure_9 = transformFriendSuggestions(suggestions.suggestions);
-    let closure_10 = importDefault(dependencyMap[7]).keys(closure_9).length;
+    importDefault(22).keys(closure_9).length;
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function handleLoadFriendSuggestionsFailure() {
-    let closure_11 = false;
+    let c11 = false;
     let closure_9 = {};
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/friend_suggestions/FriendSuggestionStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/friend_suggestions/FriendSuggestionStore.tsx");
 
 export default tmp2;
 export { transformFriendSuggestions };

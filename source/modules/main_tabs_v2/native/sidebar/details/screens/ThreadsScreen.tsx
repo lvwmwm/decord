@@ -1,25 +1,36 @@
-// Module ID: 15278
-// Function ID: 115318
+// Module ID: 15395
+// Function ID: 117492
 // Name: ThreadsScreen
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 653, 1211, 33, 4130, 689, 5650, 5160, 9811, 4138, 15396, 15376, 624, 1457, 2]
 
-// Module 15278 (ThreadsScreen)
+// Module 15395 (ThreadsScreen)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { SearchTypes } from "ME";
+import { OpenThreadAnalyticsLocations as closure_7 } from "AbortCodes";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function ThreadsScreen(channel) {
+  let renderScrollComponent;
+  let style;
   channel = channel.channel;
-  const arg1 = channel;
-  let obj = arg1(dependencyMap[8]);
+  ({ style, renderScrollComponent } = channel);
+  let obj = channel(5650);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const callback = importAllResult.useCallback(() => {
-    const result = channel(closure_2[10]).navigateToThreadCreation(channel, "Thread Browser Empty State");
+    const result = channel(outer1_2[10]).navigateToThreadCreation(channel, "Thread Browser Empty State");
   }, items);
   obj = { style: items1 };
-  const items1 = [callback().container, channel.style];
+  items1 = [callback().container, style];
   const callback1 = importAllResult.useCallback((channelId) => {
-    const channel = channel.getChannel(channelId);
+    const channel = outer1_5.getChannel(channelId);
     if (null != channel) {
-      let obj = channel(closure_2[11]);
-      obj = { source: constants.BROWSER };
+      let obj = channel(outer1_2[11]);
+      obj = { source: outer1_7.BROWSER };
       obj.transitionToThread(channel, obj);
     }
   }, []);
@@ -34,54 +45,48 @@ function ThreadsScreen(channel) {
   }
   obj.onCreateThreadPress = tmp9;
   obj.onThreadPress = callback1;
-  const tmp8 = importDefault(dependencyMap[12]);
-  obj.contentContainerStyle = { paddingBottom: importDefault(dependencyMap[9])({ includeKeyboardHeight: true }).insets.bottom + importDefault(dependencyMap[7]).space.PX_16, paddingHorizontal: 16 };
+  const tmp8 = importDefault(15396);
+  obj.contentContainerStyle = { paddingBottom: importDefault(5160)({ includeKeyboardHeight: true }).insets.bottom + importDefault(689).space.PX_16, paddingHorizontal: 16 };
+  obj.renderScrollComponent = renderScrollComponent;
   obj.children = tmp7(tmp8, obj);
   return tmp5(tmp6, obj);
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const SearchTypes = arg1(dependencyMap[3]).SearchTypes;
-let closure_7 = arg1(dependencyMap[4]).OpenThreadAnalyticsLocations;
-const jsx = arg1(dependencyMap[5]).jsx;
 let obj = { container: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
 obj.screen = obj;
-let closure_9 = arg1(dependencyMap[6]).createStyles(obj);
-const obj2 = arg1(dependencyMap[6]);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((searchContext) => {
   searchContext = searchContext.searchContext;
-  let arg1;
+  let channelId;
+  let obj = channelId(15376);
+  const renderScrollComponent = obj.useRenderScrollComponent();
   if (searchContext.type === SearchTypes.CHANNEL) {
-    let channelId = searchContext.channelId;
+    channelId = searchContext.channelId;
   } else {
     channelId = null;
   }
-  arg1 = channelId;
-  let obj = arg1(dependencyMap[13]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId));
-  let tmp4 = null;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = channelId(624).useStateFromStores(items, () => outer1_5.getChannel(channelId));
+  let tmp5 = null;
   if (null != stateFromStores) {
-    obj = { channel: stateFromStores };
-    tmp4 = <ThreadsScreen {...obj} />;
+    obj = { channel: stateFromStores, renderScrollComponent };
+    tmp5 = <ThreadsScreen channel={stateFromStores} renderScrollComponent={renderScrollComponent} />;
   }
-  return tmp4;
+  return tmp5;
 });
 const memoResult1 = importAllResult.memo(() => {
-  let obj = arg1(dependencyMap[14]);
-  const arg1 = obj.useRoute().params.channelId;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[13]).useStateFromStores(items, () => channel.getChannel(channelId));
+  let obj = channelId(1457);
+  channelId = obj.useRoute().params.channelId;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = channelId(624).useStateFromStores(items, () => outer1_5.getChannel(channelId));
   let tmp3 = null;
   if (null != stateFromStores) {
     obj = { style: tmp2.screen, channel: stateFromStores };
-    tmp3 = <ThreadsScreen {...obj} />;
+    tmp3 = <ThreadsScreen style={tmp2.screen} channel={stateFromStores} />;
   }
   return tmp3;
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/ThreadsScreen.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/ThreadsScreen.tsx");
 
 export default memoResult1;
 export const SearchTabsThreadScreen = memoResult;

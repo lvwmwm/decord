@@ -1,53 +1,64 @@
-// Module ID: 9993
-// Function ID: 77291
+// Module ID: 10001
+// Function ID: 77331
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 27, 4940, 33, 4130, 689, 1212, 10002, 10003, 22, 1827, 4126, 1273, 4939, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 9993 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10001 (_createForOfIteratorHelperLoose)
+import "result";
+import { View } from "get ActivityIndicator";
+import OperatorTypes from "OperatorTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +69,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,11 +96,11 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function PaypalVanityTag(style) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const obj = { style: items };
-  const items = [tmp.paypalVerifiedTag, style.style];
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.label = intl.string(arg1(dependencyMap[6]).t.IhXLyx);
+  items = [tmp.paypalVerifiedTag, style.style];
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t.IhXLyx);
   obj.textStyle = tmp.paypalVerifiedTagText;
   return callback(VanityTag, obj, closure_4.PAYPAL_VERIFIED);
 }
@@ -99,7 +110,7 @@ function VanityMetric(label) {
   let style;
   label = label.label;
   ({ count, style, percent } = label);
-  let obj = arg1(dependencyMap[10]);
+  let obj = require(1827) /* shortenAndLocalizeNumber */;
   let str = "";
   const result = obj.shortenAndLocalizeNumber(count);
   if (percent) {
@@ -107,18 +118,19 @@ function VanityMetric(label) {
   }
   const sum = result + str;
   if ("string" === typeof label) {
-    const intl2 = arg1(dependencyMap[6]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     obj = { name: label, value: sum };
-    let formatResult = intl2.format(arg1(dependencyMap[6]).t.HLoinF, obj);
+    let formatResult = intl2.format(require(1212) /* getSystemLocale */.t.HLoinF, obj);
   } else {
-    const intl = arg1(dependencyMap[6]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { value: sum };
     formatResult = intl.format(label, obj);
   }
-  const obj1 = { style: items };
-  const items = [callback3().connectedAccountVanityMetadata, style];
+  const obj1 = { variant: "text-xs/normal", color: "text-muted" };
+  const items = [_createForOfIteratorHelperLoose().connectedAccountVanityMetadata, style];
+  obj1.style = items;
   obj1.children = formatResult;
-  return callback(arg1(dependencyMap[11]).Text, obj1);
+  return callback(require(4126) /* Text */.Text, obj1);
 }
 function VanityItem(style) {
   let imageAlt;
@@ -126,13 +138,15 @@ function VanityItem(style) {
   let label;
   style = style.style;
   ({ label, imageSrc, imageAlt } = style);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items };
-  const items = [, , ];
+  items = [, , ];
   ({ connectedAccountVanityMetadata: arr[0], connectedAccountVanityMetadataItem: arr[1] } = tmp);
   items[2] = style;
   obj = { source: imageSrc, accessibilityLabel: imageAlt, style: tmp.connectedAccountVanityMetadataItemIcon, disableColor: true };
-  const items1 = [callback(arg1(dependencyMap[12]).Icon, obj), callback(arg1(dependencyMap[11]).Text, { style, children: label })];
+  const items1 = [callback(require(1273) /* Button */.Icon, obj), ];
+  obj = { variant: "text-xs/normal", color: "text-muted", style, children: label };
+  items1[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items1;
   return callback2(View, obj);
 }
@@ -141,11 +155,12 @@ function VanityTag(arg0) {
   let style;
   let textStyle;
   ({ label, style, textStyle } = arg0);
-  const tmp = callback3();
-  const items = [, , ];
-  ({ connectedAccountVanityMetadata: arr[0], connectedAccountVanityMetadataTag: arr[1] } = tmp);
+  obj = { style: items, children: callback(require(4126) /* Text */.Text, obj) };
+  items = [, , ];
+  ({ connectedAccountVanityMetadata: arr[0], connectedAccountVanityMetadataTag: arr[1] } = _createForOfIteratorHelperLoose());
   items[2] = style;
-  return callback(View, { style: items, children: callback(arg1(dependencyMap[11]).Text, { style: textStyle, children: label }) });
+  obj = { variant: "text-xs/normal", color: "text-muted", style: textStyle, children: label };
+  return callback(View, obj);
 }
 function VanityDate(arg0) {
   let date;
@@ -153,32 +168,28 @@ function VanityDate(arg0) {
   let locale;
   let style;
   ({ date, label, locale, style } = arg0);
-  let obj = { style: items };
-  const items = [callback3().connectedAccountVanityMetadata, style];
-  const intl = arg1(dependencyMap[6]).intl;
+  let obj = { variant: "text-xs/normal", color: "text-muted" };
+  const items = [_createForOfIteratorHelperLoose().connectedAccountVanityMetadata, style];
+  obj.style = items;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = {};
-  const tmp = callback3();
-  obj.value = arg1(dependencyMap[13]).getCreatedAtDate(date, locale);
+  const tmp = _createForOfIteratorHelperLoose();
+  obj.value = require(4939) /* officialApplicationIds */.getCreatedAtDate(date, locale);
   obj.name = label;
-  obj.children = intl.format(arg1(dependencyMap[6]).t.HLoinF, obj);
-  return callback(arg1(dependencyMap[11]).Text, obj);
+  obj.children = intl.format(require(1212) /* getSystemLocale */.t.HLoinF, obj);
+  return callback(require(4126) /* Text */.Text, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ MetadataFields: closure_4, MetadataItemTypes: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { connectedAccountVanityMetadata: {}, connectedAccountVanityMetadataItem: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, connectedAccountVanityMetadataItemIcon: {} };
-obj = { unstable_UserBlockingPriority: 28, h5EvZM: 28, shareInviteFailed: null, 1314542178: "transparent", 140650294: "center", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.md };
-obj.connectedAccountVanityMetadataTag = obj;
-const tmp4 = arg1(dependencyMap[3]);
-obj.paypalVerifiedTag = { backgroundColor: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE_BACKGROUND };
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.STATUS_POSITIVE_BACKGROUND };
-obj.paypalVerifiedTagText = { color: importDefault(dependencyMap[5]).colors.WHITE };
-let closure_8 = obj.createStyles(obj);
-const obj2 = { color: importDefault(dependencyMap[5]).colors.WHITE };
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/connections/native/ConnectionMetadataVanityItems.tsx");
+({ MetadataFields: closure_4, MetadataItemTypes: closure_5 } = OperatorTypes);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { connectedAccountVanityMetadata: { marginTop: 4, paddingRight: 8 }, connectedAccountVanityMetadataItem: { flexDirection: "row", alignItems: "center" }, connectedAccountVanityMetadataItemIcon: { height: 18, width: 18, marginRight: 8 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingHorizontal: 8, paddingVertical: 1, marginRight: 8 };
+_createForOfIteratorHelperLoose.connectedAccountVanityMetadataTag = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.paypalVerifiedTag = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE_BACKGROUND };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE_BACKGROUND };
+_createForOfIteratorHelperLoose.paypalVerifiedTagText = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+let result = require("OperatorTypes").fileFinishedImporting("modules/connections/native/ConnectionMetadataVanityItems.tsx");
 
 export const generateRedditMetadataItems = function generateRedditMetadataItems(metadata, metadataItem) {
   const items = [];
@@ -188,19 +199,19 @@ export const generateRedditMetadataItems = function generateRedditMetadataItems(
   }
   const NumberResult = Number(num);
   if (NumberResult > -1) {
-    let obj = { style: tmp, count: NumberResult, label: metadataItem(dependencyMap[6]).t.SbCNox };
+    let obj = { style: tmp, count: NumberResult, label: require(1212) /* getSystemLocale */.t.SbCNox };
     items.push(callback(VanityMetric, obj, closure_4.REDDIT_TOTAL_KARMA));
   }
   if ("1" === metadata[closure_4.REDDIT_GOLD]) {
     obj = { style: tmp };
-    const intl = metadataItem(dependencyMap[6]).intl;
-    obj.label = intl.string(metadataItem(dependencyMap[6]).t.06rDHU);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.label = intl.string(require(1212) /* getSystemLocale */.t["06rDHU"]);
     items.push(callback(VanityTag, obj, closure_4.REDDIT_GOLD));
   }
   if ("1" === metadata[closure_4.REDDIT_MOD]) {
     obj = { style: tmp };
-    const intl2 = metadataItem(dependencyMap[6]).intl;
-    obj.label = intl2.string(metadataItem(dependencyMap[6]).t.oWM95M);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj.label = intl2.string(require(1212) /* getSystemLocale */.t.oWM95M);
     items.push(callback(VanityTag, obj, closure_4.REDDIT_MOD));
   }
   return items;
@@ -218,11 +229,11 @@ export const generateTwitterMetadataItems = function generateTwitterMetadataItem
   }
   const NumberResult1 = Number(num2);
   if (NumberResult > -1) {
-    let obj = { style: tmp, count: NumberResult, label: metadataItem(dependencyMap[6]).t.llwqqe };
+    let obj = { style: tmp, count: NumberResult, label: require(1212) /* getSystemLocale */.t.llwqqe };
     items.push(callback(VanityMetric, obj, closure_4.TWITTER_STATUSES_COUNT));
   }
   if (NumberResult1 > -1) {
-    obj = { style: tmp, count: NumberResult1, label: metadataItem(dependencyMap[6]).t.LMNOUQ };
+    obj = { style: tmp, count: NumberResult1, label: require(1212) /* getSystemLocale */.t.LMNOUQ };
     items.push(callback(VanityMetric, obj, closure_4.TWITTER_FOLLOWERS_COUNT));
   }
   return items;
@@ -240,11 +251,11 @@ export const generateBlueskyMetadataItems = function generateBlueskyMetadataItem
   }
   const NumberResult1 = Number(num2);
   if (NumberResult > -1) {
-    let obj = { style: tmp, count: NumberResult, label: arg1(dependencyMap[6]).t.thA2ir };
+    let obj = { style: tmp, count: NumberResult, label: require(1212) /* getSystemLocale */.t.thA2ir };
     items.push(callback(VanityMetric, obj, closure_4.BLUESKY_STATUSES_COUNT));
   }
   if (NumberResult1 > -1) {
-    obj = { style: tmp, count: NumberResult1, label: arg1(dependencyMap[6]).t.RQath2 };
+    obj = { style: tmp, count: NumberResult1, label: require(1212) /* getSystemLocale */.t.RQath2 };
     items.push(callback(VanityMetric, obj, closure_4.BLUESKY_FOLLOWERS_COUNT));
   }
   return items;
@@ -267,27 +278,27 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
   }
   const NumberResult2 = Number(num3);
   if (NumberResult > -1) {
-    let obj = { style: tmp, count: NumberResult, label: metadataItem(dependencyMap[6]).t.ppXMu/ };
+    let obj = { style: tmp, count: NumberResult, label: require(1212) /* getSystemLocale */.t["ppXMu/"] };
     items.push(callback(VanityMetric, obj, closure_4.STEAM_GAME_COUNT));
   }
   if (NumberResult1 > -1) {
     obj = { style: tmp };
-    const intl = metadataItem(dependencyMap[6]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { count: NumberResult1 };
-    obj.label = intl.format(metadataItem(dependencyMap[6]).t.Y88M5x, obj);
-    obj.imageSrc = importDefault(dependencyMap[7]);
-    const intl2 = metadataItem(dependencyMap[6]).intl;
-    obj.imageAlt = intl2.string(metadataItem(dependencyMap[6]).t.HKUEZo);
+    obj.label = intl.format(require(1212) /* getSystemLocale */.t.Y88M5x, obj);
+    obj.imageSrc = importDefault(10002);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj.imageAlt = intl2.string(require(1212) /* getSystemLocale */.t.HKUEZo);
     items.push(callback(VanityItem, obj, closure_4.STEAM_ITEM_COUNT_DOTA2));
   }
   if (NumberResult2 > -1) {
     const obj1 = { style: tmp };
-    const intl3 = metadataItem(dependencyMap[6]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj2 = { count: NumberResult2 };
-    obj1.label = intl3.format(metadataItem(dependencyMap[6]).t.Y88M5x, obj2);
-    obj1.imageSrc = importDefault(dependencyMap[8]);
-    const intl4 = metadataItem(dependencyMap[6]).intl;
-    obj1.imageAlt = intl4.string(metadataItem(dependencyMap[6]).t.C8p1Sh);
+    obj1.label = intl3.format(require(1212) /* getSystemLocale */.t.Y88M5x, obj2);
+    obj1.imageSrc = importDefault(10003);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    obj1.imageAlt = intl4.string(require(1212) /* getSystemLocale */.t.C8p1Sh);
     items.push(callback(VanityItem, obj1, closure_4.STEAM_ITEM_COUNT_TF2));
   }
   return items;
@@ -308,13 +319,13 @@ export const generateEbayMetadataItems = function generateEbayMetadataItems(meta
   }
   const NumberResult = Number(num);
   if (NumberResult > 0) {
-    let obj = { style: tmp, count: NumberResult, label: metadataItem(dependencyMap[6]).t.YmL22d, percent: true };
+    let obj = { style: tmp, count: NumberResult, label: require(1212) /* getSystemLocale */.t.YmL22d, percent: true };
     items.push(callback(VanityMetric, obj, closure_4.EBAY_POSITIVE_FEEDBACK_PERCENTAGE));
   }
   if ("1" === metadata[closure_4.EBAY_TOP_RATED_SELLER]) {
     obj = { style: tmp };
-    const intl = metadataItem(dependencyMap[6]).intl;
-    obj.label = intl.string(metadataItem(dependencyMap[6]).t.TEEYwa);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.label = intl.string(require(1212) /* getSystemLocale */.t.TEEYwa);
     items.push(callback(VanityTag, obj, closure_4.EBAY_TOP_RATED_SELLER));
   }
   return items;
@@ -337,35 +348,35 @@ export const generateTikTokMetadataItems = function generateTikTokMetadataItems(
   }
   const NumberResult2 = Number(num3);
   if (NumberResult > -1) {
-    let obj = { style: tmp, count: NumberResult, label: metadataItem(dependencyMap[6]).t.Mpm/Bc };
+    let obj = { style: tmp, count: NumberResult, label: require(1212) /* getSystemLocale */.t["Mpm/Bc"] };
     items.push(callback(VanityMetric, obj, closure_4.TIKTOK_FOLLOWER_COUNT));
   }
   if (NumberResult1 > -1) {
-    obj = { style: tmp, count: NumberResult1, label: metadataItem(dependencyMap[6]).t.ftf12v };
+    obj = { style: tmp, count: NumberResult1, label: require(1212) /* getSystemLocale */.t.ftf12v };
     items.push(callback(VanityMetric, obj, closure_4.TIKTOK_FOLLOWING_COUNT));
   }
   if (NumberResult2 > -1) {
-    obj = { style: tmp, count: NumberResult2, label: metadataItem(dependencyMap[6]).t.Qwhe5j };
+    obj = { style: tmp, count: NumberResult2, label: require(1212) /* getSystemLocale */.t.Qwhe5j };
     items.push(callback(VanityMetric, obj, closure_4.TIKTOK_LIKES_COUNT));
   }
   if ("1" === metadata[closure_4.TIKTOK_VERIFIED]) {
     const obj1 = { style: tmp };
-    const intl = metadataItem(dependencyMap[6]).intl;
-    obj1.label = intl.string(metadataItem(dependencyMap[6]).t.QHHwRR);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj1.label = intl.string(require(1212) /* getSystemLocale */.t.QHHwRR);
     items.push(callback(VanityTag, obj1, closure_4.TIKTOK_VERIFIED));
   }
   return items;
 };
 export const generateRoleConnectionMetadataItems = function generateRoleConnectionMetadataItems(applicationRoleConnection) {
-  const arg1 = applicationRoleConnection;
+  let closure_0 = applicationRoleConnection;
   const items = [];
   const keys = Object.keys(tmp3.metadata);
   if (null != applicationRoleConnection.application_metadata) {
     const _Object = Object;
     if (0 !== Object.keys(tmp3.application_metadata).length) {
       if (0 !== keys.length) {
-        const tmp50 = _createForOfIteratorHelperLoose(importDefault(dependencyMap[9]).sortBy(keys, (arg0) => {
-          const application_metadata = arg0.application_metadata;
+        const tmp50 = _createForOfIteratorHelperLoose(importDefault(22).sortBy(keys, (arg0) => {
+          const application_metadata = applicationRoleConnection.application_metadata;
           let name;
           if (null != application_metadata) {
             if (null != application_metadata[arg0]) {

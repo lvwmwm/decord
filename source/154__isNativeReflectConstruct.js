@@ -1,9 +1,19 @@
 // Module ID: 154
 // Function ID: 2400
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 99, 100, 155, 151, 156]
 
 // Module 154 (_isNativeReflectConstruct)
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import _classPrivateFieldKey from "_classPrivateFieldKey";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+import closure_10 from "_classPrivateFieldBase";
+import importDefaultResult from "_classPrivateFieldKey";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,52 +27,44 @@ function getCachedEventCounts() {
   if (map) {
     return map;
   } else {
-    if (importDefault(dependencyMap[9])) {
-      if (null != importDefault(dependencyMap[9])) {
-        if (importDefault(dependencyMap[9]).getEventCounts) {
+    if (importDefault(151)) {
+      if (null != importDefault(151)) {
+        if (importDefault(151).getEventCounts) {
           let _Map = Map;
           let eventCounts;
-          if (null != importDefault(dependencyMap[9]).getEventCounts) {
-            eventCounts = importDefault(dependencyMap[9]).getEventCounts();
-            const obj = importDefault(dependencyMap[9]);
+          if (null != importDefault(151).getEventCounts) {
+            eventCounts = importDefault(151).getEventCounts();
+            const obj = importDefault(151);
           }
           if (null == eventCounts) {
             eventCounts = [];
           }
           const prototype = _Map.prototype;
           _Map = new _Map(eventCounts);
-          let map = _Map;
+          map = _Map;
           global.queueMicrotask(() => {
-            let closure_11 = null;
+
           });
           return _Map;
         }
       }
     }
-    const result = arg1(dependencyMap[10]).warnNoNativePerformance();
+    const result = require(156) /* warnNoNativePerformance */.warnNoNativePerformance();
     const _Map2 = Map;
     map = new Map();
     return map;
   }
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const importDefaultResult = importDefault(dependencyMap[7]);
 let closure_12 = importDefaultResult("processingStart");
 let closure_13 = importDefaultResult("processingEnd");
 let closure_14 = importDefaultResult("interactionId");
 
-export const PerformanceEventTiming = (PerformanceEntry) => {
+export const PerformanceEventTiming = ((PerformanceEntry) => {
   class PerformanceEventTiming {
     constructor(arg0) {
       self = this;
       tmp = PerformanceEventTiming;
-      tmp2 = closure_4(this, PerformanceEventTiming);
+      tmp2 = outer1_4(this, PerformanceEventTiming);
       obj = { name: PerformanceEntry.name, entryType: "event" };
       startTime = PerformanceEntry.startTime;
       num = 0;
@@ -78,40 +80,40 @@ export const PerformanceEventTiming = (PerformanceEntry) => {
       obj.duration = num2;
       items = [];
       items[0] = obj;
-      obj2 = closure_7(tmp);
-      tmp3 = closure_6;
-      if (closure_15()) {
+      obj2 = outer1_7(tmp);
+      tmp3 = outer1_6;
+      if (outer1_15()) {
         tmp5 = globalThis;
         _Reflect = Reflect;
-        tmp6 = closure_7;
-        constructResult = Reflect.construct(obj2, items, closure_7(self).constructor);
+        tmp6 = outer1_7;
+        constructResult = Reflect.construct(obj2, items, outer1_7(self).constructor);
       } else {
         constructResult = obj2.apply(self, items);
       }
       tmp3Result = tmp3(self, constructResult);
-      tmp8 = closure_12;
-      definePropertyResult = Object.defineProperty(tmp3Result, closure_12, { writable: true, value: undefined });
-      definePropertyResult1 = Object.defineProperty(tmp3Result, closure_13, { writable: true, value: undefined });
-      definePropertyResult2 = Object.defineProperty(tmp3Result, closure_14, { writable: true, value: undefined });
+      tmp8 = outer1_12;
+      definePropertyResult = Object.defineProperty(tmp3Result, outer1_12, { writable: true, value: undefined });
+      definePropertyResult1 = Object.defineProperty(tmp3Result, outer1_13, { writable: true, value: undefined });
+      definePropertyResult2 = Object.defineProperty(tmp3Result, outer1_14, { writable: true, value: undefined });
       processingStart = PerformanceEntry.processingStart;
       num3 = 0;
-      tmp12 = closure_10(tmp3Result, closure_12);
+      tmp12 = outer1_10(tmp3Result, outer1_12);
       if (null != processingStart) {
         num3 = processingStart;
       }
       tmp12[tmp8] = num3;
-      tmp13 = closure_13;
+      tmp13 = outer1_13;
       processingEnd = PerformanceEntry.processingEnd;
       num4 = 0;
-      tmp14 = closure_10(tmp3Result, closure_13);
+      tmp14 = outer1_10(tmp3Result, outer1_13);
       if (null != processingEnd) {
         num4 = processingEnd;
       }
       tmp14[tmp13] = num4;
-      tmp15 = closure_14;
+      tmp15 = outer1_14;
       interactionId = PerformanceEntry.interactionId;
       num5 = 0;
-      tmp16 = closure_10(tmp3Result, closure_14);
+      tmp16 = outer1_10(tmp3Result, outer1_14);
       if (null != interactionId) {
         num5 = interactionId;
       }
@@ -119,104 +121,104 @@ export const PerformanceEventTiming = (PerformanceEntry) => {
       return tmp3Result;
     }
   }
-  const global = PerformanceEventTiming;
   callback2(PerformanceEventTiming, PerformanceEntry);
   let obj = {
     key: "processingStart",
     get() {
-      return callback3(this, closure_12)[closure_12];
+      return outer1_10(this, outer1_12)[outer1_12];
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "processingEnd",
     get() {
-      return callback3(this, closure_13)[closure_13];
+      return outer1_10(this, outer1_13)[outer1_13];
     }
   };
   items[1] = obj;
   obj = {
     key: "interactionId",
     get() {
-      return callback3(this, closure_14)[closure_14];
+      return outer1_10(this, outer1_14)[outer1_14];
     }
   };
   items[2] = obj;
   items[3] = {
     key: "toJSON",
     value: function toJSON() {
-      const obj = { processingStart: callback3(this, closure_12)[closure_12], processingEnd: callback3(this, closure_13)[closure_13], interactionId: callback3(this, closure_14)[closure_14] };
-      return Object.assign({}, function _superPropGet(PerformanceEventTiming, toJSON, arg2, arg3) {
+      const obj = { processingStart: outer1_10(this, outer1_12)[outer1_12], processingEnd: outer1_10(this, outer1_13)[outer1_13], interactionId: outer1_10(this, outer1_14)[outer1_14] };
+      return Object.assign({}, (function _superPropGet(PerformanceEventTiming, toJSON, arg2, arg3) {
+        let closure_0 = arg2;
         let prototype = PerformanceEventTiming;
         if (1) {
           prototype = PerformanceEventTiming.prototype;
         }
-        const tmpResult = closure_8(closure_7(prototype), "toJSON", arg2);
+        const tmpResult = outer2_8(outer2_7(prototype), "toJSON", arg2);
+        let closure_1 = tmpResult;
         let fn = tmpResult;
         if (2) {
           fn = tmpResult;
           if ("function" === typeof tmpResult) {
-            fn = (arg0) => tmpResult.apply(arg2, arg0);
+            fn = (arg0) => tmpResult.apply(closure_0, arg0);
           }
         }
         return fn;
-      }(PerformanceEventTiming, "toJSON", this, 3)([]), obj);
+      })(PerformanceEventTiming, "toJSON", this, 3)([]), obj);
     }
   };
   return callback(PerformanceEventTiming, items);
-}(arg1(dependencyMap[8]).PerformanceEntry);
-export const EventCounts = () => {
+})(require("PerformanceEntry").PerformanceEntry);
+export const EventCounts = (() => {
   class EventCounts {
     constructor() {
-      tmp = closure_4(this, EventCounts);
+      tmp = outer1_4(this, EventCounts);
       return;
     }
   }
-  const global = EventCounts;
   let obj = {
     key: "size",
     get() {
-      return callback2().size;
+      return outer1_16().size;
     }
   };
   const items = [obj, , , , , , ];
   obj = {
     key: "entries",
     value: function entries() {
-      return callback2().entries();
+      return outer1_16().entries();
     }
   };
   items[1] = obj;
   obj = {
     key: "forEach",
     value: function forEach(arg0) {
-      return callback2().forEach(arg0);
+      return outer1_16().forEach(arg0);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "get",
     value: function get(arg0) {
-      return callback2().get(arg0);
+      return outer1_16().get(arg0);
     }
   };
   items[4] = {
     key: "has",
     value: function has(arg0) {
-      return callback2().has(arg0);
+      return outer1_16().has(arg0);
     }
   };
   items[5] = {
     key: "keys",
     value: function keys() {
-      return callback2().keys();
+      return outer1_16().keys();
     }
   };
   items[6] = {
     key: "values",
     value: function values() {
-      return callback2().values();
+      return outer1_16().values();
     }
   };
   return callback(EventCounts, items);
-}();
+})();

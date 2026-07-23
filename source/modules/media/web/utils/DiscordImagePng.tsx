@@ -1,22 +1,23 @@
-// Module ID: 4739
-// Function ID: 41151
+// Module ID: 4742
+// Function ID: 41169
 // Name: DiscordImagePng
-// Dependencies: []
+// Dependencies: [5, 6, 7, 1879, 4743, 2]
 
-// Module 4739 (DiscordImagePng)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const tmp2 = () => {
+// Module 4742 (DiscordImagePng)
+import set from "set";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+let tmp2 = (() => {
   class DiscordImagePng {
     constructor(arg0, arg1) {
-      tmp = closure_4(this, DiscordImagePng);
+      tmp = outer1_4(this, DiscordImagePng);
       this.img = arg0;
       this.originalBuffer = arg1;
       return;
     }
   }
-  const importDefault = DiscordImagePng;
   let obj = {
     key: "hasTransparency",
     value() {
@@ -27,7 +28,7 @@ const tmp2 = () => {
         }
       }
       let num2 = 3;
-      const uint8Array = new Uint8Array(DiscordImagePng(closure_2[3]).toRGBA8(self.img)[0]);
+      const uint8Array = new Uint8Array(DiscordImagePng(outer1_2[3]).toRGBA8(self.img)[0]);
       if (3 < uint8Array.length) {
         while (uint8Array[num2] >= 255) {
           num2 = num2 + 4;
@@ -59,7 +60,7 @@ const tmp2 = () => {
   const obj1 = { key: "hasSrgbIccProfile" };
   let closure_0 = callback(async function() {
     let tmp2;
-    const tmp = yield callback(closure_2[4]).load(this.originalBuffer, {});
+    const tmp = yield callback(outer2_2[4]).load(this.originalBuffer, { async: true, expanded: true, includeUnknown: true });
     if (null == tmp.icc) {
       return true;
     } else {
@@ -91,7 +92,7 @@ const tmp2 = () => {
       }
       return false;
     }
-    const obj = callback(closure_2[4]);
+    const obj = callback(outer2_2[4]);
   });
   obj1.value = function hasSrgbIccProfile() {
     return callback(...arguments);
@@ -107,12 +108,12 @@ const tmp2 = () => {
     {
       key: "create",
       value(originalBuffer) {
-        new DiscordImagePng(DiscordImagePng(closure_2[3]).decode(originalBuffer), originalBuffer);
+        new DiscordImagePng(DiscordImagePng(outer1_2[3]).decode(originalBuffer), originalBuffer);
       }
     }
   ];
   return callback2(DiscordImagePng, items, items1);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/media/web/utils/DiscordImagePng.tsx");
+})();
+const result = require("_defineProperties").fileFinishedImporting("modules/media/web/utils/DiscordImagePng.tsx");
 
 export const DiscordImagePng = tmp2;

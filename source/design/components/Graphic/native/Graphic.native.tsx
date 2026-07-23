@@ -1,13 +1,19 @@
-// Module ID: 8566
-// Function ID: 68083
+// Module ID: 8573
+// Function ID: 68123
 // Name: ImageGraphic
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 5085, 3842, 3940, 2]
 // Exports: Graphic
 
-// Module 8566 (ImageGraphic)
+// Module 8573 (ImageGraphic)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function ImageGraphic(source) {
   const tmp = callback();
-  return jsx(importDefault(dependencyMap[4]), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
+  return jsx(importDefault(5085), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
 }
 function RiveGraphic(riveProps) {
   riveProps = riveProps.riveProps;
@@ -19,16 +25,12 @@ function RiveGraphic(riveProps) {
   obj = {};
   const merged = Object.assign(riveProps);
   obj["style"] = tmp.image;
-  obj.children = jsx(riveProps.rive, obj);
-  return <View {...obj} />;
+  obj.children = jsx(riveProps.rive, {});
+  return <View />;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = { width: false, height: false, backgroundColor: false, opacity: false, width: false };
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: {}, image: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/Graphic/native/Graphic.native.tsx");
+let closure_6 = { "21/9": 2.3333333333333335, "16/9": 1.7777777777777777, "6/4": 1.5, "2/1": 2, "1/1": 1 };
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { width: "100%", justifyContent: "center", alignItems: "center", overflow: "hidden" }, image: { width: "100%", height: "100%" } });
+const result = require("jsxProd").fileFinishedImporting("design/components/Graphic/native/Graphic.native.tsx");
 
 export const Graphic = function Graphic(aspectRatio) {
   let str = aspectRatio.aspectRatio;
@@ -38,32 +40,31 @@ export const Graphic = function Graphic(aspectRatio) {
   let obj = Object.create(null);
   obj.aspectRatio = 0;
   obj.style = 0;
-  const merged = Object.assign(aspectRatio, obj);
-  const arg1 = merged;
+  let merged = Object.assign(aspectRatio, obj);
   const items = [merged];
   obj = {
     style: items1,
     children: React.useMemo(() => {
-      let obj = merged(closure_2[5]);
+      let obj = merged(outer1_2[5]);
       if (obj.isImage(merged)) {
         obj = {};
-        const merged = Object.assign(merged);
-        let tmp4 = callback(closure_8, obj);
+        merged = Object.assign(merged);
+        let tmp4 = outer1_5(outer1_8, obj);
       } else {
         tmp4 = null;
         if (obj2.isRive(merged)) {
           obj = {};
           const merged1 = Object.assign(merged);
-          tmp4 = callback(closure_9, obj);
+          tmp4 = outer1_5(outer1_9, obj);
         }
-        const obj2 = merged(closure_2[6]);
+        obj2 = merged(outer1_2[6]);
       }
       return tmp4;
     }, items)
   };
-  const items1 = [callback().container, , ];
-  obj = { aspectRatio: closure_6[str] };
+  items1 = [callback().container, , ];
+  obj = { aspectRatio: table[str] };
   items1[1] = obj;
   items1[2] = aspectRatio.style;
-  return <View {...obj} />;
+  return <View aspectRatio={table[str]} />;
 };

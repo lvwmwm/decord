@@ -1,27 +1,31 @@
-// Module ID: 15775
-// Function ID: 120610
+// Module ID: 15892
+// Function ID: 122783
 // Name: ReportProblem
-// Dependencies: []
+// Dependencies: [31, 4217, 653, 33, 4130, 689, 4559, 6981, 675, 15893, 4098, 3830, 15894, 5502, 5500, 5186, 1212, 5189, 2]
 // Exports: default
 
-// Module 15775 (ReportProblem)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { padding: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.container = obj;
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("components_native/calls/stream/StreamReportProblemActionSheet.tsx");
+// Module 15892 (ReportProblem)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("components_native/calls/stream/StreamReportProblemActionSheet.tsx");
 
 export default function ReportProblem(arg0) {
-  ({ stream: closure_0, analyticsData: closure_1 } = arg0);
-  importDefault(dependencyMap[6])(() => {
-    let obj = lib(closure_2[7]);
-    const streamerApplication = obj.getStreamerApplication(lib, closure_3);
-    obj = { type: "Stream Issue Sheet", other_user_id: lib.ownerId };
+  let importDefault;
+  let require;
+  ({ stream: require, analyticsData: importDefault } = arg0);
+  importDefault(4559)(() => {
+    let obj = outer1_0(outer1_2[7]);
+    const streamerApplication = obj.getStreamerApplication(ownerId, outer1_3);
+    obj = { type: "Stream Issue Sheet", other_user_id: ownerId.ownerId };
     let id = null;
     if (null != streamerApplication) {
       id = streamerApplication.id;
@@ -37,34 +41,34 @@ export default function ReportProblem(arg0) {
       id1 = streamerApplication.id;
     }
     obj.game_id = id1;
-    callback(closure_2[8]).track(constants.OPEN_POPOUT, obj);
+    outer1_1(outer1_2[8]).track(outer1_4.OPEN_POPOUT, obj);
   });
-  const tmp = callback();
-  const mapped = importDefault(dependencyMap[12])({}).map((label) => {
+  let tmp = _createForOfIteratorHelperLoose();
+  const mapped = importDefault(15894)({ isStreamer: false, isEndStream: false }).map((label) => {
     const value = label.value;
-    return callback2(value(closure_2[13]).ActionSheetRow, {
+    return outer1_5(outer1_0(outer1_2[13]).ActionSheetRow, {
       label: label.label,
       arrow: true,
       onPress() {
-        const obj = { problem: value, stream: value, feedback: "" };
-        const tmp = callback(closure_2[9]);
-        obj.streamApplication = value(closure_2[7]).getStreamerApplication(value, closure_3);
-        obj.analyticsData = callback;
+        const obj = { problem: closure_0, stream: value, feedback: "" };
+        const tmp = outer2_1(outer2_2[9]);
+        obj.streamApplication = outer2_0(outer2_2[7]).getStreamerApplication(value, outer2_3);
+        obj.analyticsData = outer1_1;
         obj.location = "Stream";
         tmp(obj);
-        const obj2 = value(closure_2[7]);
-        callback(closure_2[10]).hideActionSheet();
-        const obj3 = callback(closure_2[10]);
-        value(closure_2[11]).presentFeedbackSent();
+        const obj2 = outer2_0(outer2_2[7]);
+        outer2_1(outer2_2[10]).hideActionSheet();
+        const obj3 = outer2_1(outer2_2[10]);
+        outer2_0(outer2_2[11]).presentFeedbackSent();
       }
     }, arg1);
   });
   let obj = { scrollable: true };
   obj = {};
-  const intl = arg1(dependencyMap[16]).intl;
-  obj.title = intl.string(arg1(dependencyMap[16]).t.XuqqwI);
-  obj.header = jsx(arg1(dependencyMap[15]).BottomSheetTitleHeader, obj);
-  obj = { style: tmp.container, children: jsx(arg1(dependencyMap[13]).ActionSheetRow.Group, { hasIcons: false, children: mapped }) };
-  obj.children = jsx(arg1(dependencyMap[17]).BottomSheetScrollView, obj);
-  return jsx(arg1(dependencyMap[14]).ActionSheet, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.XuqqwI);
+  obj.header = jsx(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, {});
+  obj = { style: tmp.container, children: jsx(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) };
+  obj.children = jsx(require(5189) /* BottomSheetModal */.BottomSheetScrollView, { style: tmp.container, children: jsx(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
+  return jsx(require(5500) /* ActionSheet */.ActionSheet, { style: tmp.container, children: jsx(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: false, children: mapped }) });
 };

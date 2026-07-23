@@ -1,14 +1,19 @@
-// Module ID: 9061
-// Function ID: 71144
+// Module ID: 9068
+// Function ID: 71185
 // Name: ApplicationStreamActivityStatus
-// Dependencies: []
+// Dependencies: [31, 33, 1212, 9069, 9070, 9072, 2]
 // Exports: default
 
-// Module 9061 (ApplicationStreamActivityStatus)
-importAll(dependencyMap[0]);
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activity_status/native/ApplicationStreamActivityStatus.tsx");
+// Module 9068 (ApplicationStreamActivityStatus)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_3;
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
+const result = require("getSystemLocale").fileFinishedImporting("modules/activity_status/native/ApplicationStreamActivityStatus.tsx");
 
 export default function ApplicationStreamActivityStatus(hideText) {
   let game;
@@ -43,25 +48,25 @@ export default function ApplicationStreamActivityStatus(hideText) {
     tmp2 = name1;
   }
   if (null != tmp2) {
-    const intl2 = arg1(dependencyMap[2]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     let obj = { name: tmp2 };
-    let formatResult = intl2.format(arg1(dependencyMap[2]).t.0wJXSh, obj);
+    let formatResult = intl2.format(require(1212) /* getSystemLocale */.t["0wJXSh"], obj);
   } else {
-    const intl = arg1(dependencyMap[2]).intl;
-    formatResult = intl.string(arg1(dependencyMap[2]).t.eXan7B);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    formatResult = intl.string(require(1212) /* getSystemLocale */.t.eXan7B);
   }
   obj = {};
   let tmp11 = !hideIcon;
   if (tmp11) {
-    obj = { icon: arg1(dependencyMap[4]).TvIcon, style: iconStyle };
-    tmp11 = callback(importDefault(dependencyMap[3]), obj);
-    const tmp15 = importDefault(dependencyMap[3]);
+    obj = { icon: require(9070) /* TvIcon */.TvIcon, style: iconStyle };
+    tmp11 = callback(importDefault(9069), obj);
+    const tmp15 = importDefault(9069);
   }
   const items = [tmp11, ];
   let tmp17 = !flag;
   if (tmp17) {
     const obj1 = { style: textStyle, maxFontSizeMultiplier, children: formatResult };
-    tmp17 = callback(importDefault(dependencyMap[5]), obj1);
+    tmp17 = callback(importDefault(9072), obj1);
   }
   items[1] = tmp17;
   obj.children = items;

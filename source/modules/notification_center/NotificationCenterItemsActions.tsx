@@ -1,22 +1,22 @@
-// Module ID: 15026
-// Function ID: 113168
+// Module ID: 15141
+// Function ID: 115337
 // Name: _fetchNotificationCenterItems
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [5, 6882, 653, 686, 4942, 480, 1361, 6884, 507, 3803, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15026 (_fetchNotificationCenterItems)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { Endpoints } from "__exportStarResult1";
+// Module 15141 (_fetchNotificationCenterItems)
+import isThrottled from "isThrottled";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
 
+const require = arg1;
 function _fetchNotificationCenterItems() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchNotificationCenterItems = obj;
   return obj(...arguments);
 }
 function markNotificationCenterLocalItemsAcked(items) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(686);
   obj = { type: "NOTIFICATION_CENTER_ITEMS_LOCAL_ACK", localIds: items };
   obj.dispatch(obj);
 }
@@ -26,39 +26,39 @@ function markNotificationCenterRemoteItemAcked(id) {
 function _markNotificationCenterRemoteItemAcked() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _markNotificationCenterRemoteItemAcked = obj;
   return obj(...arguments);
 }
 function markNotificationCenterMentionAcked(id) {
+  let obj = importDefault(686);
+  obj = { type: "NOTIFICATION_CENTER_ITEMS_ACK", optimistic: true };
   const items = [id];
-  importDefault(dependencyMap[3]).dispatch({ ids: items });
+  obj.ids = items;
+  obj.dispatch(obj);
 }
 function _bulkMarkNotificationCenterItemsAcked() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _bulkMarkNotificationCenterItemsAcked = obj;
   return obj(...arguments);
 }
 function _deleteNotificationCenterItem() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _deleteNotificationCenterItem = obj;
   return obj(...arguments);
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/notification_center/NotificationCenterItemsActions.tsx");
+const result = require("ME").fileFinishedImporting("modules/notification_center/NotificationCenterItemsActions.tsx");
 
 export const setNotificationCenterActive = function setNotificationCenterActive(active) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(686);
   obj = { type: "NOTIFICATION_CENTER_SET_ACTIVE", active };
   obj.dispatch(obj);
 };
 export const setNotificationCenterTabFocused = function setNotificationCenterTabFocused(isFocused) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(686);
   obj = { type: "NOTIFICATION_CENTER_TAB_FOCUSED", focused: isFocused };
   obj.dispatch(obj);
 };
 export const resetNotificationCenter = function resetNotificationCenter() {
-  importDefault(dependencyMap[3]).dispatch({ type: "RESET_NOTIFICATION_CENTER" });
+  importDefault(686).dispatch({ type: "RESET_NOTIFICATION_CENTER" });
 };
 export const fetchNotificationCenterItems = function fetchNotificationCenterItems(notificationCenterItems, arg1) {
   return _fetchNotificationCenterItems(...arguments);
@@ -73,7 +73,7 @@ export const markNotificationCenterItemAcked = function markNotificationCenterIt
     } else {
       markNotificationCenterRemoteItemAcked(local_id.id);
     }
-    const obj = arg1(dependencyMap[7]);
+    obj = require(6884) /* getRelativeTimestamp */;
   }
 };
 export { markNotificationCenterLocalItemsAcked };

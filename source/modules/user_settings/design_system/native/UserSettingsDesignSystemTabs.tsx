@@ -1,51 +1,56 @@
-// Module ID: 14327
-// Function ID: 108197
+// Module ID: 14441
+// Function ID: 110350
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 3834, 3974, 8360, 4541, 11649, 11794, 8758, 4543, 5504, 2]
 // Exports: default
 
-// Module 14327 (UserSettingsDesignSystemTabs)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsxs: closure_7, jsx: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: { -391257195: true, 1677985361: true, 1553225275: true } };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
-obj.item = obj;
-let closure_9 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTabs.tsx");
+// Module 14441 (UserSettingsDesignSystemTabs)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsxs: closure_7, jsx: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { margin: 16, flex: 1, alignItems: "center" } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 };
+_createForOfIteratorHelperLoose.item = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTabs.tsx");
 
 export default function UserSettingsDesignSystemTabs() {
   let tmp7;
   let tmp8;
-  const tmp = callback2(React.useState(0), 2);
-  let callback = tmp[1];
-  const tmp2 = callback2(React.useState(3), 2);
+  let tmp = callback(React.useState(0), 2);
+  const _require = tmp[1];
+  const tmp2 = callback(React.useState(3), 2);
   const first = tmp2[0];
-  const importDefault = first;
-  let closure_2 = tmp2[1];
-  const tmp4 = callback2(React.useState(true), 2);
+  const dependencyMap = tmp2[1];
+  let tmp4 = callback(React.useState(true), 2);
   const first1 = tmp4[0];
-  [tmp7, tmp8] = callback2(React.useState(false), 2);
-  const tmp9 = callback2(React.useState(false), 2);
+  [tmp7, tmp8] = callback(React.useState(false), 2);
+  const tmp9 = callback(React.useState(false), 2);
   const first2 = tmp9[0];
-  const tmp6 = callback2(React.useState(false), 2);
-  const tmp11 = callback5();
-  let obj = callback(closure_2[9]);
+  let tmp6 = callback(React.useState(false), 2);
+  const tmp11 = _createForOfIteratorHelperLoose();
+  let obj = _require(8360);
   const segmentedControlState = obj.useSegmentedControlState({
-    items: function useTabItems(first, arg1) {
+    items: (function useTabItems(first, arg1) {
       let closure_0 = first;
-      first = arg1;
-      const tmp = callback3();
+      let closure_1 = arg1;
+      let tmp = outer1_9();
       let closure_2 = tmp;
-      const items = [first, tmp.item, arg1];
-      return React.useMemo(() => {
+      let items = [first, tmp.item, arg1];
+      return outer1_4.useMemo(() => {
         const items = [];
         let num = 0;
-        if (0 < arg0) {
+        if (0 < callback) {
           do {
             let obj = {};
             let _HermesInternal = HermesInternal;
@@ -60,82 +65,83 @@ export default function UserSettingsDesignSystemTabs() {
             obj.count = rounded;
             let _HermesInternal2 = HermesInternal;
             obj.id = "item-" + num + 1;
-            let tmp3 = closure_8;
-            let tmp4 = closure_5;
+            let tmp3 = outer2_8;
+            let tmp4 = outer2_5;
             obj = {};
-            let tmp5 = closure_2;
-            obj.style = closure_2.item;
-            let tmp6 = closure_7;
-            let tmp7 = closure_0;
-            let tmp8 = closure_2;
+            let tmp5 = tmp;
+            obj.style = tmp.item;
+            let tmp6 = outer2_7;
+            let tmp7 = callback;
+            let tmp8 = tmp;
             obj = { variant: "heading-xxl/bold" };
-            let items1 = [true, num + 1];
+            let items1 = ["Item ", num + 1];
             obj.children = items1;
-            obj.children = closure_7(closure_0(closure_2[6]).Text, obj);
-            obj.page = closure_8(closure_5, obj);
+            obj.children = outer2_7(callback(tmp[6]).Text, obj);
+            obj.page = outer2_8(outer2_5, obj);
             let arr = items.push(obj);
             num = num + 1;
-            let tmp10 = closure_0;
-          } while (num < closure_0);
+            let tmp10 = callback;
+          } while (num < callback);
         }
         return items;
       }, items);
-    }(first, tmp7),
+    })(first, tmp7),
     pageWidth: tmp[0],
     defaultIndex: 1
   });
   callback = React.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj1 = callback(closure_2[7]);
-  const token = obj1.useToken(importDefault(closure_2[5]).colors.BACKGROUND_BASE_LOW);
-  const items = [token, ];
-  let obj2 = callback(closure_2[8]);
+  let obj1 = _require(3834);
+  const token = obj1.useToken(first(689).colors.BACKGROUND_BASE_LOW);
+  let items = [token, ];
+  let obj2 = _require(3974);
   items[1] = obj2.hexWithOpacity(token, 0);
   obj = {};
   obj = { style: tmp11.container, onLayout: callback };
   obj1 = { spacing: 24 };
   obj2 = {};
-  const items1 = [callback4(callback(closure_2[11]).Tabs, { state: segmentedControlState, grow: first1 }), ];
+  let items1 = [callback3(_require(11649).Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp20 = first2;
   if (first2) {
     const obj3 = { state: segmentedControlState, colors: items };
-    tmp20 = callback4(importDefault(closure_2[12]), obj3);
+    tmp20 = callback3(first(11794), obj3);
   }
   items1[1] = tmp20;
   obj2.children = items1;
-  const items2 = [callback3(closure_5, obj2), callback4(callback(closure_2[13]).SegmentedControlPages, { state: segmentedControlState }), , ];
-  const obj4 = { "Bool(false)": 1, "Bool(false)": null };
+  const items2 = [callback2(closure_5, obj2), callback3(_require(8758).SegmentedControlPages, { state: segmentedControlState }), , ];
+  const obj4 = { spacing: 8, direction: "horizontal" };
   const obj5 = {
-    EMOJI_PICKER_EMOJI_CLICKED: null,
-    overflow: null,
-    getOwnPropertyNames: null,
+    text: "Add Tab",
+    variant: "active",
+    size: "sm",
     disabled: first >= 10,
     onPress() {
       return callback2(first + 1);
     }
   };
-  const items3 = [callback4(callback(closure_2[14]).Button, obj5), ];
+  const items3 = [callback3(_require(4543).Button, obj5), ];
   const obj6 = {
-    EMOJI_PICKER_EMOJI_CLICKED: true,
-    overflow: true,
-    getOwnPropertyNames: true,
+    text: "Remove Tab",
+    variant: "destructive",
+    size: "sm",
     disabled: 2 === first,
     onPress() {
       return callback2(first - 1);
     }
   };
-  items3[1] = callback4(callback(closure_2[14]).Button, obj6);
+  items3[1] = callback3(_require(4543).Button, obj6);
   obj4.children = items3;
-  items2[2] = callback3(callback(closure_2[10]).Stack, obj4);
+  items2[2] = callback2(_require(4541).Stack, obj4);
   const obj7 = {};
-  const items4 = [callback4(callback(closure_2[15]).TableSwitchRow, { value: first1, onValueChange: tmp4[1] }), callback4(callback(closure_2[15]).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), ];
-  const obj8 = { "Bool(true)": null, "Bool(true)": "a252d183eacce43fd0ee5d8aedb6e162", value: first2, onValueChange: tmp9[1] };
-  items4[2] = callback4(callback(closure_2[15]).TableSwitchRow, obj8);
+  const obj8 = { start: true, label: "Enable Grow", value: first1, onValueChange: tmp4[1] };
+  const items4 = [callback3(_require(5504).TableSwitchRow, obj8), callback3(_require(5504).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), ];
+  const obj9 = { end: true, label: "Enable Overflow Gradient", value: first2, onValueChange: tmp9[1] };
+  items4[2] = callback3(_require(5504).TableSwitchRow, obj9);
   obj7.children = items4;
-  items2[3] = callback3(closure_5, obj7);
+  items2[3] = callback2(closure_5, obj7);
   obj1.children = items2;
-  obj.children = callback3(callback(closure_2[10]).Stack, obj1);
-  obj.children = callback4(closure_5, obj);
-  return callback4(closure_6, obj);
+  obj.children = callback2(_require(4541).Stack, obj1);
+  obj.children = callback3(closure_5, obj);
+  return callback3(closure_6, obj);
 };

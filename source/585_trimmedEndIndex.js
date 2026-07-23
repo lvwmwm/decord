@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 585 (trimmedEndIndex)
-let closure_0 = /\s/;
+const re0 = /\s/;
 
 export default function trimmedEndIndex(str) {
   const diff = tmp - 1;

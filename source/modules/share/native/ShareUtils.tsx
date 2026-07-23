@@ -1,24 +1,25 @@
-// Module ID: 12795
-// Function ID: 98025
+// Module ID: 12909
+// Function ID: 100181
 // Name: _sendShareMessage
-// Dependencies: []
+// Dependencies: [5, 4468, 4123, 3831, 9314, 7938, 7019, 4665, 4664, 6924, 7923, 6691, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 12795 (_sendShareMessage)
+// Module 12909 (_sendShareMessage)
+import dispatcher from "dispatcher";
+import { DraftType } from "_isNativeReflectConstruct";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+
+const require = arg1;
 function _sendShareMessage() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _sendShareMessage = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const DraftType = arg1(dependencyMap[1]).DraftType;
-const MessageSendLocation = arg1(dependencyMap[2]).MessageSendLocation;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/share/native/ShareUtils.tsx");
+const result = require("MESSAGE_GROUP_SPACING").fileFinishedImporting("modules/share/native/ShareUtils.tsx");
 
 export const showInformationToast = function showInformationToast(intl3) {
-  let obj = importDefault(dependencyMap[3]);
-  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: importDefault(dependencyMap[4]) };
+  let obj = importDefault(3831);
+  obj = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: importDefault(9314) };
   obj.open(obj);
 };
 export const sendShareMessage = function sendShareMessage(arg0) {

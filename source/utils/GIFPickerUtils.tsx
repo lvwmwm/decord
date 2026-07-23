@@ -1,19 +1,19 @@
-// Module ID: 9573
-// Function ID: 74600
+// Module ID: 9580
+// Function ID: 74641
 // Name: isKlipyProvider
-// Dependencies: []
+// Dependencies: [653, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite
 
-// Module 9573 (isKlipyProvider)
+// Module 9580 (isKlipyProvider)
+import { SearchTypes } from "ME";
+
 function isKlipyProvider(providerName) {
   return "Klipy" === providerName;
 }
 function shouldUseAnimatedWebPThumbnail(providerName) {
   return isKlipyProvider(providerName);
 }
-const SearchTypes = require(dependencyMap[0]).SearchTypes;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/GIFPickerUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/GIFPickerUtils.tsx");
 
 export { isKlipyProvider };
 export { shouldUseAnimatedWebPThumbnail };

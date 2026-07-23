@@ -1,54 +1,55 @@
-// Module ID: 10966
-// Function ID: 85300
+// Module ID: 10976
+// Function ID: 85349
 // Name: _setGuildRaidAlerts
-// Dependencies: []
+// Dependencies: [5, 1838, 7703, 653, 675, 4324, 8438, 3712, 507, 10243, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 10966 (_setGuildRaidAlerts)
+// Module 10976 (_setGuildRaidAlerts)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_createForOfIteratorHelperLoose";
+import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function _setGuildRaidAlerts() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _setGuildRaidAlerts = obj;
   return obj(...arguments);
 }
 function _setGuildIncidentActions() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _setGuildIncidentActions = obj;
   return obj(...arguments);
 }
 function _handleResolveRaid() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleResolveRaid = obj;
   return obj(...arguments);
 }
 function _handleReportRaid() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleReportRaid = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const DEFAULT_LOCKDOWN_DURATION = arg1(dependencyMap[2]).DEFAULT_LOCKDOWN_DURATION;
-({ AnalyticEvents: closure_6, Endpoints: closure_7, GuildFeatures: closure_8 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidActionCreators.tsx");
+({ AnalyticEvents: closure_6, Endpoints: closure_7, GuildFeatures: closure_8 } = ME);
+const result = require("GUILD_REPORT_RAID_MOBILE_KEY").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidActionCreators.tsx");
 
-export const trackReportRaidViewed = function trackReportRaidViewed(closure_1, closure_2) {
-  let items = closure_2;
-  if (closure_2 === undefined) {
+export const trackReportRaidViewed = function trackReportRaidViewed(outer1_1, outer1_2) {
+  let items = outer1_2;
+  if (outer1_2 === undefined) {
     items = [];
   }
   if (0 !== items.length) {
-    let obj = importDefault(dependencyMap[4]);
+    let obj = importDefault(675);
     obj = {};
-    const merged = Object.assign(closure_2(dependencyMap[5]).collectGuildAnalyticsMetadata(closure_1));
-    obj["guild_id"] = closure_1;
+    const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(outer1_1));
+    obj["guild_id"] = outer1_1;
     obj["raid_types"] = items;
     obj.track(constants.GUILD_RAID_REPORTED, obj);
-    const obj3 = closure_2(dependencyMap[5]);
+    const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
   }
 };
 export const setGuildRaidAlerts = function setGuildRaidAlerts() {
@@ -60,6 +61,6 @@ export const setGuildIncidentActions = function setGuildIncidentActions(id, paus
 export const handleResolveRaid = function handleResolveRaid(closure_0, closure_1, mostImportantRaidResolutionType) {
   return _handleResolveRaid(...arguments);
 };
-export const handleReportRaid = function handleReportRaid(closure_1) {
+export const handleReportRaid = function handleReportRaid(outer1_1) {
   return _handleReportRaid(...arguments);
 };

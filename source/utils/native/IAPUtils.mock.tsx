@@ -1,14 +1,14 @@
-// Module ID: 7220
-// Function ID: 58191
-// Dependencies: []
+// Module ID: 7225
+// Function ID: 58225
+// Name: items1
+// Dependencies: [7226, 2]
 
-// Module 7220
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/native/IAPUtils.mock.tsx");
+// Module 7225 (items1)
+const result = require("set").fileFinishedImporting("utils/native/IAPUtils.mock.tsx");
 
 export default {
   loadProducts() {
-    return Promise.resolve(require(dependencyMap[0]).copiedIAPProducts);
+    return Promise.resolve(require(7226) /* items1 */.copiedIAPProducts);
   },
   purchaseProduct() {
     const error = new Error("IAPUtils is mocked \u2014 purchases cannot be completed in this build.");
@@ -21,6 +21,6 @@ export default {
     return Promise.resolve([]);
   },
   fetchStoreFront() {
-    return Promise.resolve({});
+    return Promise.resolve({ country: "US", currency: "usd" });
   }
 };

@@ -1,22 +1,26 @@
-// Module ID: 10991
-// Function ID: 85545
+// Module ID: 11001
+// Function ID: 85595
 // Name: KickConfirmModal
-// Dependencies: []
+// Dependencies: [31, 33, 9110, 9112, 1212, 10994, 2]
 // Exports: default
 
-// Module 10991 (KickConfirmModal)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_moderation/native/KickConfirmModal.tsx");
+// Module 11001 (KickConfirmModal)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("useNavigatorBackHandler").fileFinishedImporting("modules/guild_moderation/native/KickConfirmModal.tsx");
 
 export default function KickConfirmModal(onBeforeGoBack) {
-  ({ guildId: closure_0, userId: closure_1 } = onBeforeGoBack);
-  const dependencyMap = importDefault(dependencyMap[2])({ onBeforeGoBack: onBeforeGoBack.cancelButtonCallback }).onGoBack;
+  let importDefault;
+  let require;
+  ({ guildId: require, userId: importDefault } = onBeforeGoBack);
+  onGoBack = importDefault(onGoBack[2])({ onBeforeGoBack: onBeforeGoBack.cancelButtonCallback }).onGoBack;
   const obj = { screenKey: "kick" };
-  const intl = arg1(dependencyMap[4]).intl;
-  obj.title = intl.string(arg1(dependencyMap[4]).t.R3QeLQ);
+  const intl = require(onGoBack[4]).intl;
+  obj.title = intl.string(require(onGoBack[4]).t.R3QeLQ);
   obj.render = function render() {
-    return callback2(callback(onGoBack[5]), { onKick: onGoBack, guildId: closure_0, userId: callback });
+    return outer1_3(outer1_1(onGoBack[5]), { onKick: onGoBack, guildId: closure_0, userId: closure_1 });
   };
-  return jsx(importDefault(dependencyMap[3]), obj);
+  return jsx(importDefault(onGoBack[3]), { screenKey: "kick" });
 };

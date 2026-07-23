@@ -1,14 +1,15 @@
-// Module ID: 10046
-// Function ID: 77653
+// Module ID: 10054
+// Function ID: 77693
 // Name: ListSelectionItem
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [31, 33, 5165, 2]
 // Exports: default
 
-// Module 10046 (ListSelectionItem)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 10054 (ListSelectionItem)
+import "result";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/create_guild/native/components/ListSelectionItem.tsx");
+const require = arg1;
+const result = require("TableRowInner").fileFinishedImporting("modules/create_guild/native/components/ListSelectionItem.tsx");
 
 export default function ListSelectionItem(arg0) {
   let Icon;
@@ -16,5 +17,5 @@ export default function ListSelectionItem(arg0) {
   let onPress;
   ({ Icon, message, onPress } = arg0);
   const obj = { onPress, label: message, icon: <Icon size={24} /> };
-  return jsx(arg1(dependencyMap[2]).TableRow, obj);
+  return jsx(require(5165) /* TableRowInner */.TableRow, { onPress, label: message, icon: <Icon size={24} /> });
 };

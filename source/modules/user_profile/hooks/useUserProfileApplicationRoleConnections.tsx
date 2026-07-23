@@ -1,21 +1,20 @@
-// Module ID: 12007
-// Function ID: 92793
+// Module ID: 12121
+// Function ID: 94944
 // Name: useUserProfileApplicationRoleConnections
-// Dependencies: []
+// Dependencies: [31, 6856, 566, 2]
 // Exports: default
 
-// Module 12007 (useUserProfileApplicationRoleConnections)
-const useMemo = require(dependencyMap[0]).useMemo;
-let closure_3 = importDefault(dependencyMap[1]);
+// Module 12121 (useUserProfileApplicationRoleConnections)
+import { useMemo } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 let closure_4 = [];
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/user_profile/hooks/useUserProfileApplicationRoleConnections.tsx");
+const result = require("initialize").fileFinishedImporting("modules/user_profile/hooks/useUserProfileApplicationRoleConnections.tsx");
 
 export default function useUserProfileApplicationRoleConnections(arg0) {
-  const require = arg0;
-  const items = [closure_3];
-  const stateFromStores = require(dependencyMap[2]).useStateFromStores(items, () => userProfile.getUserProfile(arg0));
-  const dependencyMap = stateFromStores;
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => outer1_3.getUserProfile(closure_0));
   let prop;
   if (null != stateFromStores) {
     prop = stateFromStores.applicationRoleConnections;
@@ -27,7 +26,7 @@ export default function useUserProfileApplicationRoleConnections(arg0) {
       prop = stateFromStores.applicationRoleConnections;
     }
     if (null == prop) {
-      let applicationRoleConnections = closure_4;
+      let applicationRoleConnections = outer1_4;
     } else {
       applicationRoleConnections = stateFromStores.applicationRoleConnections;
     }

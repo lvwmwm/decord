@@ -1,54 +1,108 @@
-// Module ID: 3774
-// Function ID: 29044
+// Module ID: 3776
+// Function ID: 29049
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 3777, 1849, 3778, 3779, 3781, 3782, 653, 1851, 3790, 482, 3, 3791, 3788, 1872, 44, 1212, 2780, 3712, 3800, 3821, 5618, 3789, 12386, 664, 566, 8203, 4025, 12987, 6788, 1865, 1867, 7996, 2]
 // Exports: calculateYearlyPlanMonthlyRateAmount, calculateYearlyPlanMonthsSaved, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, formatInterval, formatIntervalDuration, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getFormattedRateForPlan, getInterval, getIntervalForInvoice, getIntervalString, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBoostOnlySubscription, isNewUser, isNitroLockedState, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumSubscriptionPlan, isSwitchingPlansDisabled, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState
 
-// Module 3774 (_createForOfIteratorHelperLoose)
+// Module 3776 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import parseServerPerkConfigKind from "parseServerPerkConfigKind";
+import { isNoneSubscription } from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import ME from "ME";
+import GuildFeatures from "GuildFeatures";
+import { getPremiumGroupProductName as closure_47 } from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
+import sum from "sum";
+import importDefaultResult from "_isNativeReflectConstruct";
+import set from "_isNativeReflectConstruct";
+
 let SubscriptionPlans;
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_24;
+let closure_25;
+let closure_26;
+let closure_27;
+let closure_28;
+let closure_29;
+let closure_30;
+let closure_31;
+let closure_32;
+let closure_33;
+let closure_34;
+let closure_35;
+let closure_36;
+let closure_37;
+let closure_38;
+let closure_39;
+let closure_40;
+let closure_41;
+let closure_42;
+let closure_44;
+let closure_45;
+let closure_46;
+let closure_48;
+let closure_49;
+let closure_50;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -59,16 +113,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -87,9 +141,9 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getPremiumPlanItem(items) {
   items = items.items;
-  return items.find((planId) => set.has(planId.planId));
+  return items.find((planId) => outer1_32.has(planId.planId));
 }
-function getDefaultPrice(PREMIUM_MONTH_TIER_2, arg1, arg2, arg3, arg4) {
+function getDefaultPrice(PREMIUM_MONTH_TIER_2, arg1, arg2, currency, arg4) {
   let flag = arg1;
   let flag2 = arg2;
   let flag3 = arg4;
@@ -107,11 +161,11 @@ function getDefaultPrice(PREMIUM_MONTH_TIER_2, arg1, arg2, arg3, arg4) {
   if (null != defaultPaymentSourceId) {
     paymentSourceId = defaultPaymentSourceId;
   }
-  const premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
+  premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
   if (tmp4) {
     paymentSourceId = premiumTypeSubscription.paymentSourceId;
   }
-  const obj = { paymentSourceId, currency: arg3 };
+  const obj = { paymentSourceId, currency };
   return getPrice(PREMIUM_MONTH_TIER_2, flag, flag2, obj, flag3);
 }
 function withContextPlanPrices(arg0, arr) {
@@ -160,7 +214,7 @@ function getPrice(planId) {
         return obj;
       }
     }
-    const tmp2 = null != currency && null != contextPlanPrices[planId] && contextPlanPrices[planId].currency !== currency;
+    tmp2 = null != currency && null != contextPlanPrices[planId] && contextPlanPrices[planId].currency !== currency;
   }
   if (null != store.get(planId)) {
     let str3 = closure_13.DEFAULT;
@@ -185,8 +239,8 @@ function getPrice(planId) {
         }
         obj3.currency = str5;
         obj1.tags = obj3;
-        const result = arg1(dependencyMap[13]).captureBillingException(error, obj1);
-        const obj8 = arg1(dependencyMap[13]);
+        const result = require(3791) /* _createGatewayCheckoutContext */.captureBillingException(error, obj1);
+        const obj8 = require(3791) /* _createGatewayCheckoutContext */;
       }
       throw error;
     } else {
@@ -196,7 +250,7 @@ function getPrice(planId) {
     const _Error2 = Error;
     const error1 = new Error("Plan not found");
     if (flag3) {
-      obj2 = arg1(dependencyMap[13]);
+      obj2 = require(3791) /* _createGatewayCheckoutContext */;
       const obj4 = {};
       const obj5 = { planId };
       let str = "unknown";
@@ -219,7 +273,7 @@ function getPurchaseTypePrices(planId, DEFAULT) {
   if (null == value) {
     const _Error3 = Error;
     const error = new Error("Plan not found");
-    let obj = DEFAULT(dependencyMap[13]);
+    let obj = require(3791) /* _createGatewayCheckoutContext */;
     obj = {};
     obj = { planId, purchaseType: DEFAULT.toString() };
     obj.tags = obj;
@@ -263,7 +317,7 @@ function experimentalGetPrices(planId, arg1) {
       importDefaultResult.info("prices: " + arr);
       const _Error = Error;
       const error = new Error("Missing prices for payment source on subscription plan");
-      let obj1 = arg1(dependencyMap[13]);
+      let obj1 = require(3791) /* _createGatewayCheckoutContext */;
       obj = {};
       obj = { paymentSourceId };
       obj.extra = obj;
@@ -283,7 +337,7 @@ function experimentalGetPrices(planId, arg1) {
     const obj2 = {};
     const obj3 = { countryCode: tmp3.countryPrices.countryCode, planId };
     obj2.tags = obj3;
-    const result1 = arg1(dependencyMap[13]).captureBillingException(error1, obj2);
+    const result1 = require(3791) /* _createGatewayCheckoutContext */.captureBillingException(error1, obj2);
     throw error1;
   } else {
     return tmp3.countryPrices.prices;
@@ -299,7 +353,6 @@ function experimentalGetPrice(id, arg1) {
     tmp = obj;
   }
   ({ paymentSourceId, purchaseType, currency } = tmp);
-  arg1 = currency;
   const arr = experimentalGetPrices(id, { paymentSourceId, purchaseType });
   if (0 === arr.length) {
     const _HermesInternal = HermesInternal;
@@ -326,41 +379,41 @@ function getServerPriceFromClientPrice(amount) {
 }
 function getItemPlansTotalServerPrice(items, currency, id) {
   let iter2;
-  let obj = { currency };
-  const baseSubscriptionItemForSubscriptionItems = currency(dependencyMap[14]).getBaseSubscriptionItemForSubscriptionItems(items);
+  let obj = { currency, amount: 0, tax: 0, taxInclusive: false };
+  const baseSubscriptionItemForSubscriptionItems = require(3788) /* getNonePlanIdForIntervalType */.getBaseSubscriptionItemForSubscriptionItems(items);
   let premiumType;
   if (null != baseSubscriptionItemForSubscriptionItems) {
-    premiumType = closure_42[baseSubscriptionItemForSubscriptionItems.planId].premiumType;
+    premiumType = dependencyMap2[baseSubscriptionItemForSubscriptionItems.planId].premiumType;
   }
-  const obj2 = currency(dependencyMap[14]);
-  const obj3 = currency(dependencyMap[15]);
-  const isPremiumAtLeastResult = currency(dependencyMap[15]).isPremiumAtLeast(premiumType, closure_39.TIER_0);
-  const obj4 = currency(dependencyMap[15]);
+  const obj2 = require(3788) /* getNonePlanIdForIntervalType */;
+  const obj3 = require(1872) /* isPremiumAtLeast */;
+  const isPremiumAtLeastResult = require(1872) /* isPremiumAtLeast */.isPremiumAtLeast(premiumType, closure_39.TIER_0);
+  const obj4 = require(1872) /* isPremiumAtLeast */;
   const tmp6 = _createForOfIteratorHelperLoose(items);
   let iter = tmp6();
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp7 = closure_31;
+      let tmp7 = set;
       let tmp8 = isPremiumAtLeastResult1;
-      if (!closure_31.has(value.planId)) {
-        let tmp9 = closure_32;
-        let tmp10 = !closure_32.has(value.planId) && isPremiumAtLeastResult;
+      if (!set.has(value.planId)) {
+        let tmp9 = set2;
+        let tmp10 = !set2.has(value.planId) && isPremiumAtLeastResult;
         tmp8 = tmp10;
       }
       if (undefined === id) {
-        let tmp15 = closure_60;
+        let tmp15 = getDefaultPrice;
         let tmp16 = tmp8;
         let flag2 = false;
         let tmp17 = currency;
-        let tmp14 = closure_60(value.planId, tmp8, false, currency);
+        let tmp14 = getDefaultPrice(value.planId, tmp8, false, currency);
       } else {
-        let tmp11 = closure_62;
+        let tmp11 = getPrice;
         obj = { paymentSourceId: id, currency };
         let tmp12 = tmp8;
         let flag = false;
         let tmp13 = obj;
-        tmp14 = closure_62(value.planId, tmp8, false, obj);
+        tmp14 = getPrice(value.planId, tmp8, false, obj);
       }
       obj.amount = obj.amount + tmp14.amount * value.quantity;
       iter2 = tmp6();
@@ -370,14 +423,14 @@ function getItemPlansTotalServerPrice(items, currency, id) {
   return getServerPriceFromClientPrice(obj);
 }
 function getInterval(basePlanId) {
-  if (null != closure_42[basePlanId]) {
+  if (null != dependencyMap2[basePlanId]) {
     let obj = {};
     ({ interval: obj4.intervalType, intervalCount: obj4.intervalCount } = tmp);
     return obj;
   } else {
     const _Error = Error;
     const error = new Error("Unsupported plan");
-    obj = arg1(dependencyMap[13]);
+    obj = require(3791) /* _createGatewayCheckoutContext */;
     obj = {};
     const obj1 = { planId: basePlanId };
     obj.tags = obj1;
@@ -402,17 +455,17 @@ function getIntervalString(interval, arg1) {
     if (!arg2) {
       if (constants6.MONTH === interval) {
         if (1 !== num) {
-          const intl3 = arg1(dependencyMap[17]).intl;
+          const intl3 = require(1212) /* getSystemLocale */.intl;
           let obj = { intervalCount: num };
-          let formatToPlainStringResult = intl3.formatToPlainString(arg1(dependencyMap[17]).t.0UlZnH, obj);
+          let formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["0UlZnH"], obj);
         } else {
-          const intl2 = arg1(dependencyMap[17]).intl;
-          formatToPlainStringResult = intl2.string(arg1(dependencyMap[17]).t.DKzs96);
+          const intl2 = require(1212) /* getSystemLocale */.intl;
+          formatToPlainStringResult = intl2.string(require(1212) /* getSystemLocale */.t.DKzs96);
         }
         return formatToPlainStringResult;
       } else if (constants6.YEAR === interval) {
-        const intl = arg1(dependencyMap[17]).intl;
-        return intl.string(arg1(dependencyMap[17]).t./Q4HRN);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        return intl.string(require(1212) /* getSystemLocale */.t["/Q4HRN"]);
       } else {
         const _Error = Error;
         const error = new Error("Unexpected interval");
@@ -421,35 +474,35 @@ function getIntervalString(interval, arg1) {
     }
   }
   if (constants6.MONTH === interval) {
-    const intl7 = arg1(dependencyMap[17]).intl;
+    const intl7 = require(1212) /* getSystemLocale */.intl;
     if (TIER_2 === closure_39.TIER_0) {
-      let poEovT2 = arg1(dependencyMap[17]).t.NPKsLz;
+      let poEovT2 = require(1212) /* getSystemLocale */.t.NPKsLz;
     } else {
-      poEovT2 = arg1(dependencyMap[17]).t.poEovT;
+      poEovT2 = require(1212) /* getSystemLocale */.t.poEovT;
     }
     obj = {};
-    const intl8 = arg1(dependencyMap[17]).intl;
-    obj.timeInterval = intl8.string(arg1(dependencyMap[17]).t.FPybU7);
+    const intl8 = require(1212) /* getSystemLocale */.intl;
+    obj.timeInterval = intl8.string(require(1212) /* getSystemLocale */.t.FPybU7);
     let formatToPlainStringResult1 = intl7.formatToPlainString(poEovT2, obj);
     if (!flag) {
-      const intl9 = arg1(dependencyMap[17]).intl;
-      formatToPlainStringResult1 = intl9.string(arg1(dependencyMap[17]).t.Mh9bTt);
+      const intl9 = require(1212) /* getSystemLocale */.intl;
+      formatToPlainStringResult1 = intl9.string(require(1212) /* getSystemLocale */.t.Mh9bTt);
     }
     return formatToPlainStringResult1;
   } else if (constants6.YEAR === interval) {
-    const intl4 = arg1(dependencyMap[17]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
     if (TIER_2 === closure_39.TIER_0) {
-      let poEovT = arg1(dependencyMap[17]).t.NPKsLz;
+      let poEovT = require(1212) /* getSystemLocale */.t.NPKsLz;
     } else {
-      poEovT = arg1(dependencyMap[17]).t.poEovT;
+      poEovT = require(1212) /* getSystemLocale */.t.poEovT;
     }
     obj = {};
-    const intl5 = arg1(dependencyMap[17]).intl;
-    obj.timeInterval = intl5.string(arg1(dependencyMap[17]).t.tfqrhj);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    obj.timeInterval = intl5.string(require(1212) /* getSystemLocale */.t.tfqrhj);
     let formatToPlainStringResult2 = intl4.formatToPlainString(poEovT, obj);
     if (!flag) {
-      const intl6 = arg1(dependencyMap[17]).intl;
-      formatToPlainStringResult2 = intl6.string(arg1(dependencyMap[17]).t.DRgqMo);
+      const intl6 = require(1212) /* getSystemLocale */.intl;
+      formatToPlainStringResult2 = intl6.string(require(1212) /* getSystemLocale */.t.DRgqMo);
     }
     return formatToPlainStringResult2;
   } else {
@@ -460,11 +513,11 @@ function getIntervalString(interval, arg1) {
 }
 function getIntervalStringAsNoun(interval) {
   if (constants6.MONTH === interval) {
-    const intl2 = arg1(dependencyMap[17]).intl;
-    return intl2.string(arg1(dependencyMap[17]).t.FPybU7);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.FPybU7);
   } else if (constants6.YEAR === interval) {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.tfqrhj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.tfqrhj);
   } else {
     const _Error = Error;
     const error = new Error("Unexpected interval");
@@ -472,12 +525,12 @@ function getIntervalStringAsNoun(interval) {
   }
 }
 function getPremiumType(planId) {
-  if (null != closure_42[planId]) {
+  if (null != dependencyMap2[planId]) {
     return tmp.premiumType;
   } else {
     const _Error = Error;
     const error = new Error("Unsupported plan");
-    let obj = arg1(dependencyMap[13]);
+    let obj = require(3791) /* _createGatewayCheckoutContext */;
     obj = {};
     obj = { planId };
     obj.tags = obj;
@@ -495,28 +548,28 @@ function getDisplayName(planId, arg1, arg2, duration) {
     flag2 = false;
   }
   if (SubscriptionPlans.PREMIUM_MONTH_TIER_0 === planId) {
-    const intl15 = arg1(dependencyMap[17]).intl;
+    const intl15 = require(1212) /* getSystemLocale */.intl;
     if (flag) {
       let obj = { duration };
-      let formatResult = intl15.format(tmp47(tmp48[17]).t.TZXHNj, obj);
+      let formatResult = intl15.format(tmp47(1212).t.TZXHNj, obj);
     } else {
       const string8 = intl15.string;
-      const t8 = tmp47(tmp48[17]).t;
+      const t8 = tmp47(1212).t;
       if (flag2) {
-        formatResult = string8(t8.81iAgs);
+        formatResult = string8(t8["81iAgs"]);
       } else {
-        formatResult = string8(t8.0efVPy);
+        formatResult = string8(t8["0efVPy"]);
       }
     }
     return formatResult;
   } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_0 === planId) {
-    const intl14 = arg1(dependencyMap[17]).intl;
+    const intl14 = require(1212) /* getSystemLocale */.intl;
     if (flag) {
       obj = { duration };
-      let formatResult1 = intl14.format(tmp44(tmp45[17]).t.eqRhC7, obj);
+      let formatResult1 = intl14.format(tmp44(1212).t.eqRhC7, obj);
     } else {
       const string7 = intl14.string;
-      const t7 = tmp44(tmp45[17]).t;
+      const t7 = tmp44(1212).t;
       if (flag2) {
         formatResult1 = string7(t7.UvzqY1);
       } else {
@@ -525,19 +578,19 @@ function getDisplayName(planId, arg1, arg2, duration) {
     }
     return formatResult1;
   } else if (SubscriptionPlans.PREMIUM_MONTH_TIER_1 === planId) {
-    const intl13 = arg1(dependencyMap[17]).intl;
+    const intl13 = require(1212) /* getSystemLocale */.intl;
     const string6 = intl13.string;
-    const t6 = arg1(dependencyMap[17]).t;
+    const t6 = require(1212) /* getSystemLocale */.t;
     if (flag2) {
-      let string6Result = string6(t6.g/dH5g);
+      let string6Result = string6(t6["g/dH5g"]);
     } else {
-      string6Result = string6(t6.7O6qSq);
+      string6Result = string6(t6["7O6qSq"]);
     }
     return string6Result;
   } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_1 === planId) {
-    const intl12 = arg1(dependencyMap[17]).intl;
+    const intl12 = require(1212) /* getSystemLocale */.intl;
     const string5 = intl12.string;
-    const t5 = arg1(dependencyMap[17]).t;
+    const t5 = require(1212) /* getSystemLocale */.t;
     if (flag2) {
       let string5Result = string5(t5.pdZJaq);
     } else {
@@ -545,13 +598,13 @@ function getDisplayName(planId, arg1, arg2, duration) {
     }
     return string5Result;
   } else if (SubscriptionPlans.PREMIUM_MONTH_TIER_2 === planId) {
-    const intl11 = arg1(dependencyMap[17]).intl;
+    const intl11 = require(1212) /* getSystemLocale */.intl;
     if (flag) {
       const obj1 = { duration };
-      let formatResult2 = intl11.format(tmp35(tmp36[17]).t.aI6QXz, obj1);
+      let formatResult2 = intl11.format(tmp35(1212).t.aI6QXz, obj1);
     } else {
       const string4 = intl11.string;
-      const t4 = tmp35(tmp36[17]).t;
+      const t4 = tmp35(1212).t;
       if (flag2) {
         formatResult2 = string4(t4.SmVbHc);
       } else {
@@ -560,49 +613,49 @@ function getDisplayName(planId, arg1, arg2, duration) {
     }
     return formatResult2;
   } else if (SubscriptionPlans.PREMIUM_GROUP_MONTH === planId) {
-    const intl10 = arg1(dependencyMap[17]).intl;
+    const intl10 = require(1212) /* getSystemLocale */.intl;
     if (flag2) {
-      let stringResult = intl10.string(arg1(tmp31[17]).t.SmVbHc);
+      let stringResult = intl10.string(require(1212) /* getSystemLocale */.t.SmVbHc);
     } else {
       const obj2 = { premiumGroupProductName: callback() };
-      stringResult = intl10.formatToPlainString(importDefault(tmp31[18]).8bPDtb, obj2);
+      stringResult = intl10.formatToPlainString(importDefault(2780)["8bPDtb"], obj2);
     }
     return stringResult;
   } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_2 === planId) {
-    const intl9 = arg1(dependencyMap[17]).intl;
+    const intl9 = require(1212) /* getSystemLocale */.intl;
     if (flag) {
       const obj3 = { duration };
-      let formatResult3 = intl9.format(tmp27(tmp28[17]).t.1wBcPi, obj3);
+      let formatResult3 = intl9.format(tmp27(1212).t["1wBcPi"], obj3);
     } else {
       const string3 = intl9.string;
-      const t3 = tmp27(tmp28[17]).t;
+      const t3 = tmp27(1212).t;
       if (flag2) {
         formatResult3 = string3(t3.JIq4O1);
       } else {
-        formatResult3 = string3(t3.cfu/5d);
+        formatResult3 = string3(t3["cfu/5d"]);
       }
     }
     return formatResult3;
   } else if (SubscriptionPlans.PREMIUM_3_MONTH_TIER_2 === planId) {
-    const intl8 = arg1(dependencyMap[17]).intl;
-    return intl8.string(arg1(dependencyMap[17]).t.wCbINr);
+    const intl8 = require(1212) /* getSystemLocale */.intl;
+    return intl8.string(require(1212) /* getSystemLocale */.t.wCbINr);
   } else if (SubscriptionPlans.PREMIUM_6_MONTH_TIER_2 === planId) {
-    const intl7 = arg1(dependencyMap[17]).intl;
-    return intl7.string(arg1(dependencyMap[17]).t.e3/ArU);
+    const intl7 = require(1212) /* getSystemLocale */.intl;
+    return intl7.string(require(1212) /* getSystemLocale */.t["e3/ArU"]);
   } else if (SubscriptionPlans.PREMIUM_MONTH_GUILD === planId) {
-    const intl6 = arg1(dependencyMap[17]).intl;
+    const intl6 = require(1212) /* getSystemLocale */.intl;
     const string2 = intl6.string;
-    const t2 = arg1(dependencyMap[17]).t;
+    const t2 = require(1212) /* getSystemLocale */.t;
     if (flag2) {
-      let string2Result = string2(t2.6ZR3By);
+      let string2Result = string2(t2["6ZR3By"]);
     } else {
-      string2Result = string2(t2.h80cx/);
+      string2Result = string2(t2["h80cx/"]);
     }
     return string2Result;
   } else if (SubscriptionPlans.PREMIUM_YEAR_GUILD === planId) {
-    const intl5 = arg1(dependencyMap[17]).intl;
+    const intl5 = require(1212) /* getSystemLocale */.intl;
     const string = intl5.string;
-    const t = arg1(dependencyMap[17]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (flag2) {
       let stringResult1 = string(t.YDpAzZ);
     } else {
@@ -610,21 +663,21 @@ function getDisplayName(planId, arg1, arg2, duration) {
     }
     return stringResult1;
   } else if (SubscriptionPlans.PREMIUM_3_MONTH_GUILD === planId) {
-    const intl4 = arg1(dependencyMap[17]).intl;
-    return intl4.string(arg1(dependencyMap[17]).t.EZHHB6);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(require(1212) /* getSystemLocale */.t.EZHHB6);
   } else if (SubscriptionPlans.PREMIUM_6_MONTH_GUILD === planId) {
-    const intl3 = arg1(dependencyMap[17]).intl;
-    return intl3.string(arg1(dependencyMap[17]).t.X2KDO2);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.X2KDO2);
   } else if (SubscriptionPlans.PREMIUM_MONTH_LEGACY === planId) {
-    const intl2 = arg1(dependencyMap[17]).intl;
-    return intl2.string(arg1(dependencyMap[17]).t.PD6k79);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.PD6k79);
   } else if (SubscriptionPlans.PREMIUM_YEAR_LEGACY === planId) {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.LtJgTC);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.LtJgTC);
   } else {
     const _Error = Error;
     const error = new Error("Unsupported plan");
-    obj = arg1(dependencyMap[13]);
+    obj = require(3791) /* _createGatewayCheckoutContext */;
     const obj4 = {};
     const obj5 = { planId };
     obj4.tags = obj5;
@@ -634,20 +687,20 @@ function getDisplayName(planId, arg1, arg2, duration) {
 }
 function getTierDisplayNameByPlanId(PREMIUM_MONTH_TIER_0) {
   let premiumType;
-  if (null != closure_42[PREMIUM_MONTH_TIER_0]) {
+  if (null != dependencyMap2[PREMIUM_MONTH_TIER_0]) {
     premiumType = tmp.premiumType;
   }
   let tmp3 = null;
   if (null != premiumType) {
-    tmp3 = closure_37[premiumType];
+    tmp3 = table3[premiumType];
   }
   if (null != tmp3) {
-    const intl = arg1(dependencyMap[17]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     return intl.string(tmp3);
   } else {
     const _Error = Error;
     const error = new Error("Unsupported plan");
-    let obj = arg1(dependencyMap[13]);
+    let obj = require(3791) /* _createGatewayCheckoutContext */;
     obj = {};
     obj = { planId: PREMIUM_MONTH_TIER_0 };
     obj.tags = obj;
@@ -667,7 +720,7 @@ function getPlanDescription(arg0) {
   let renewalInvoiceWithoutEntitlementsPreview;
   let subscription;
   ({ subscription, planId, price, activeDiscountInfo, renewalInvoiceWithoutEntitlementsPreview, renewalInvoiceWithEntitlementsPreview, hasFractionalPremiumWithSub } = arg0);
-  let format7Result = closure_42[planId];
+  let format7Result = dependencyMap2[planId];
   ({ includePremiumGuilds, hasDiscountApplied, fractionalPremiumInfo } = arg0);
   let tmp2 = formatPriceString(getDefaultPrice(format7Result.id), format7Result.interval);
   let tmp3 = null != renewalInvoiceWithEntitlementsPreview;
@@ -720,23 +773,23 @@ function getPlanDescription(arg0) {
     num2 = getNumPremiumGuildSubscriptions(subscription.additionalPlans);
   }
   const sum = closure_28 + num2;
-  const intl = arg1(dependencyMap[17]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   if (null != price && null == subscription.paymentGateway) {
     const format = intl.format;
-    let t = tmp20(tmp21[17]).t;
+    let t = tmp20(1212).t;
     if (tmp16) {
       t = { price };
-      let formatResult = format(t.cd+hqB, t);
+      let formatResult = format(t["cd+hqB"], t);
     } else {
       let obj = { price };
       formatResult = format(t.NUkcpF, obj);
     }
   } else {
-    let stringResult = intl.string(tmp20(tmp21[17]).t.zYx3Y6);
-    const intl2 = arg1(dependencyMap[17]).intl;
+    let stringResult = intl.string(tmp20(1212).t.zYx3Y6);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     if (tmp8) {
       const format2 = intl2.format;
-      let t1 = tmp25(tmp26[17]).t;
+      let t1 = tmp25(1212).t;
       if (tmp16) {
         t1 = { price };
         let format2Result = format2(t1.VsKcFB, t1);
@@ -745,21 +798,21 @@ function getPlanDescription(arg0) {
         format2Result = format2(t1.hJ5xEX, obj);
       }
     } else {
-      let stringResult1 = intl2.string(tmp25(tmp26[17]).t.8rSipI);
-      const intl3 = arg1(dependencyMap[17]).intl;
+      let stringResult1 = intl2.string(tmp25(1212).t["8rSipI"]);
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       const format3 = intl3.format;
-      let t2 = arg1(dependencyMap[17]).t;
+      let t2 = require(1212) /* getSystemLocale */.t;
       if (tmp8) {
         if (tmp16) {
           t2 = { price, num: sum };
-          let format3Result = format3(t2.jRy6/J, t2);
+          let format3Result = format3(t2["jRy6/J"], t2);
         } else {
           const obj1 = { price, num: sum };
           format3Result = format3(t2.tTNE8M, obj1);
         }
       } else {
         const obj2 = { num: sum };
-        let format3Result1 = format3(t2.U+z/HJ, obj2);
+        let format3Result1 = format3(t2["U+z/HJ"], obj2);
         if (SubscriptionPlans.PREMIUM_MONTH_TIER_0 !== planId) {
           format7Result = SubscriptionPlans;
           if (SubscriptionPlans.PREMIUM_YEAR_TIER_0 !== planId) {
@@ -783,9 +836,9 @@ function getPlanDescription(arg0) {
                   }
                 }
                 if (constants3.CANCELED === status) {
-                  const intl12 = arg1(dependencyMap[17]).intl;
+                  const intl12 = require(1212) /* getSystemLocale */.intl;
                   const format5 = intl12.format;
-                  let t3 = arg1(dependencyMap[17]).t;
+                  let t3 = require(1212) /* getSystemLocale */.t;
                   if (tmp8) {
                     if (tmp16) {
                       t3 = { price, num: sum };
@@ -801,13 +854,13 @@ function getPlanDescription(arg0) {
                 } else {
                   format7Result = constants3;
                   if (constants3.ACCOUNT_HOLD === status) {
-                    const intl11 = arg1(dependencyMap[17]).intl;
+                    const intl11 = require(1212) /* getSystemLocale */.intl;
                     const format4 = intl11.format;
-                    let t4 = arg1(dependencyMap[17]).t;
+                    let t4 = require(1212) /* getSystemLocale */.t;
                     if (tmp8) {
                       if (tmp16) {
                         t4 = { price, num: sum };
-                        let format4Result = format4(t4.5C/0QG, t4);
+                        let format4Result = format4(t4["5C/0QG"], t4);
                       } else {
                         const obj5 = { price, num: sum };
                         format4Result = format4(t4.xfYkhu, obj5);
@@ -819,61 +872,61 @@ function getPlanDescription(arg0) {
                   } else {
                     format7Result = constants3;
                     if (constants3.UNPAID === status) {
-                      const intl10 = arg1(dependencyMap[17]).intl;
+                      const intl10 = require(1212) /* getSystemLocale */.intl;
                       const obj7 = { num: sum };
-                      return intl10.format(arg1(dependencyMap[17]).t.0HopYf, obj7);
+                      return intl10.format(require(1212) /* getSystemLocale */.t["0HopYf"], obj7);
                     } else {
                       format7Result = constants3;
                       if (constants3.PAUSE_PENDING === status) {
                         let diffResult = null;
                         if (null != subscription.pauseEndsAt) {
-                          let obj17 = importDefault(dependencyMap[19])(subscription.pauseEndsAt);
+                          let obj17 = importDefault(3712)(subscription.pauseEndsAt);
                           diffResult = obj17.diff(subscription.currentPeriodEnd, "days");
                         }
                         if (null != diffResult) {
-                          const intl9 = arg1(dependencyMap[17]).intl;
+                          const intl9 = require(1212) /* getSystemLocale */.intl;
                           const obj8 = { pauseDate: subscription.currentPeriodEnd, pauseDuration: diffResult };
-                          let formatResult1 = intl9.format(arg1(dependencyMap[17]).t.WUfOD5, obj8);
+                          let formatResult1 = intl9.format(require(1212) /* getSystemLocale */.t.WUfOD5, obj8);
                         } else {
-                          const intl8 = arg1(dependencyMap[17]).intl;
+                          const intl8 = require(1212) /* getSystemLocale */.intl;
                           const obj9 = { pauseDate: subscription.currentPeriodEnd };
-                          formatResult1 = intl8.format(arg1(dependencyMap[17]).t.VlWufv, obj9);
+                          formatResult1 = intl8.format(require(1212) /* getSystemLocale */.t.VlWufv, obj9);
                         }
                         return formatResult1;
                       } else {
                         format7Result = constants3;
                         if (constants3.PAUSED === status) {
                           if (!hasFractionalPremiumWithSub) {
-                            const intl7 = arg1(dependencyMap[17]).intl;
+                            const intl7 = require(1212) /* getSystemLocale */.intl;
                             const obj10 = { resumeDate: subscription.pauseEndsAt };
-                            format3Result1 = intl7.format(arg1(dependencyMap[17]).t.6RTdZA, obj10);
+                            format3Result1 = intl7.format(require(1212) /* getSystemLocale */.t["6RTdZA"], obj10);
                           }
                           return format3Result1;
                         } else {
                           format7Result = constants3;
                           if (constants3.BILLING_RETRY === status) {
-                            const intl6 = arg1(dependencyMap[17]).intl;
+                            const intl6 = require(1212) /* getSystemLocale */.intl;
                             const obj11 = {};
-                            let obj14 = importDefault(dependencyMap[19])(subscription.currentPeriodStart);
+                            let obj14 = importDefault(3712)(subscription.currentPeriodStart);
                             obj11.endDate = obj14.add(closure_29, "days").toDate();
-                            return intl6.format(arg1(dependencyMap[17]).t.IlJ/HV, obj11);
+                            return intl6.format(require(1212) /* getSystemLocale */.t["IlJ/HV"], obj11);
                           } else {
                             format7Result = constants3;
                             if (constants3.PAST_DUE === status) {
-                              const intl5 = arg1(dependencyMap[17]).intl;
+                              const intl5 = require(1212) /* getSystemLocale */.intl;
                               let obj12 = {};
-                              obj12 = arg1(dependencyMap[20]);
+                              obj12 = require(3800) /* resetCache */;
                               obj12.endDate = obj12.dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
                               obj12.onClick = function onClick() {
-                                callback(closure_2[21])("https://support.discord.com/hc/articles/23082866222871");
+                                outer1_1(outer1_2[21])("https://support.discord.com/hc/articles/23082866222871");
                               };
-                              return intl5.format(arg1(dependencyMap[17]).t.d+0vwo, obj12);
+                              return intl5.format(require(1212) /* getSystemLocale */.t["d+0vwo"], obj12);
                             } else {
                               format7Result = format3Result1;
                               if (!hasDiscountApplied) {
                                 return format3Result1;
                               } else if (planId === SubscriptionPlans.PREMIUM_YEAR_TIER_2) {
-                                const intl4 = arg1(dependencyMap[17]).intl;
+                                const intl4 = require(1212) /* getSystemLocale */.intl;
                                 const obj13 = {};
                                 let percentage;
                                 if (null != activeDiscountInfo) {
@@ -886,13 +939,13 @@ function getPlanDescription(arg0) {
                                 obj13.regularPrice = tmp2;
                                 tmp2 = getExpectedRenewalDate(subscription, fractionalPremiumInfo);
                                 obj13.renewalDate = tmp2;
-                                let formatResult2 = intl4.format(arg1(dependencyMap[17]).t.z2oQtA, obj13);
+                                let formatResult2 = intl4.format(require(1212) /* getSystemLocale */.t.z2oQtA, obj13);
                               } else {
-                                format7Result = arg1;
+                                format7Result = require;
                                 format7Result = dependencyMap;
-                                const intl27 = arg1(dependencyMap[17]).intl;
+                                const intl27 = require(1212) /* getSystemLocale */.intl;
                                 const formatToPlainString = intl27.formatToPlainString;
-                                t = arg1(dependencyMap[17]).t;
+                                t = require(1212) /* getSystemLocale */.t;
                                 if (tmp16) {
                                   obj14 = {};
                                   let percentage1;
@@ -912,7 +965,7 @@ function getPlanDescription(arg0) {
                                     duration = closure_20;
                                   }
                                   obj14.numMonths = duration;
-                                  formatResult2 = formatToPlainString(t.3ZiutU, obj14);
+                                  formatResult2 = formatToPlainString(t["3ZiutU"], obj14);
                                 } else {
                                   const obj15 = {};
                                   let percentage2;
@@ -932,7 +985,7 @@ function getPlanDescription(arg0) {
                                     duration1 = closure_20;
                                   }
                                   obj15.numMonths = duration1;
-                                  formatResult2 = formatToPlainString(t.G6+XOT, obj15);
+                                  formatResult2 = formatToPlainString(t["G6+XOT"], obj15);
                                 }
                               }
                             }
@@ -945,30 +998,30 @@ function getPlanDescription(arg0) {
               }
             }
             if (constants3.CANCELED === status) {
-              format7Result = arg1;
+              format7Result = require;
               format7Result = dependencyMap;
-              const intl19 = arg1(dependencyMap[17]).intl;
+              const intl19 = require(1212) /* getSystemLocale */.intl;
               if (tmp8) {
                 const format7 = intl19.format;
-                let t5 = format7Result(format7Result[17]).t;
+                let t5 = format7Result(1212).t;
                 if (tmp16) {
                   t5 = { price };
                   format7Result = format7(t5.cXy8Bp, t5);
                 } else {
                   const obj16 = { price };
-                  format7Result = format7(t5.C/XsHt, obj16);
+                  format7Result = format7(t5["C/XsHt"], obj16);
                 }
               } else {
-                return intl19.string(format7Result(format7Result[17]).t.K6tYFa);
+                return intl19.string(format7Result(1212).t.K6tYFa);
               }
             } else {
               format7Result = constants3;
               if (constants3.ACCOUNT_HOLD === status) {
-                format7Result = arg1;
+                format7Result = require;
                 format7Result = dependencyMap;
-                const intl18 = arg1(dependencyMap[17]).intl;
+                const intl18 = require(1212) /* getSystemLocale */.intl;
                 const format6 = intl18.format;
-                let t6 = arg1(dependencyMap[17]).t;
+                let t6 = require(1212) /* getSystemLocale */.t;
                 if (tmp8) {
                   if (tmp16) {
                     t6 = { price };
@@ -978,51 +1031,51 @@ function getPlanDescription(arg0) {
                     format7Result = format6(t6.ZsO1Sx, obj17);
                   }
                 } else {
-                  return format6(t6.0+/WH7, {});
+                  return format6(t6["0+/WH7"], {});
                 }
               } else {
                 format7Result = constants3;
                 if (constants3.UNPAID === status) {
-                  const intl17 = arg1(dependencyMap[17]).intl;
-                  return intl17.format(arg1(dependencyMap[17]).t.McIzwj, {});
+                  const intl17 = require(1212) /* getSystemLocale */.intl;
+                  return intl17.format(require(1212) /* getSystemLocale */.t.McIzwj, {});
                 } else {
                   format7Result = constants3;
                   if (constants3.PAUSE_PENDING === status) {
                     let diffResult1 = null;
                     if (null != subscription.pauseEndsAt) {
-                      diffResult1 = importDefault(dependencyMap[19])(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
-                      const obj31 = importDefault(dependencyMap[19])(subscription.pauseEndsAt);
+                      diffResult1 = importDefault(3712)(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
+                      const obj31 = importDefault(3712)(subscription.pauseEndsAt);
                     }
                     if (null != diffResult1) {
-                      const intl16 = arg1(dependencyMap[17]).intl;
+                      const intl16 = require(1212) /* getSystemLocale */.intl;
                       const obj18 = { pauseDate: subscription.currentPeriodEnd, pauseDuration: diffResult1 };
-                      let formatResult3 = intl16.format(arg1(dependencyMap[17]).t.WUfOD5, obj18);
+                      let formatResult3 = intl16.format(require(1212) /* getSystemLocale */.t.WUfOD5, obj18);
                     } else {
-                      const intl15 = arg1(dependencyMap[17]).intl;
+                      const intl15 = require(1212) /* getSystemLocale */.intl;
                       const obj19 = { pauseDate: subscription.currentPeriodEnd };
-                      formatResult3 = intl15.format(arg1(dependencyMap[17]).t.VlWufv, obj19);
+                      formatResult3 = intl15.format(require(1212) /* getSystemLocale */.t.VlWufv, obj19);
                     }
                     return formatResult3;
                   } else {
                     format7Result = constants3;
                     if (constants3.PAUSED === status) {
                       if (!hasFractionalPremiumWithSub) {
-                        const intl14 = arg1(dependencyMap[17]).intl;
+                        const intl14 = require(1212) /* getSystemLocale */.intl;
                         const obj20 = { resumeDate: subscription.pauseEndsAt };
-                        stringResult1 = intl14.format(arg1(dependencyMap[17]).t.6RTdZA, obj20);
+                        stringResult1 = intl14.format(require(1212) /* getSystemLocale */.t["6RTdZA"], obj20);
                       }
                       return stringResult1;
                     } else {
                       format7Result = constants3;
                       if (constants3.PAST_DUE === status) {
-                        const intl13 = arg1(dependencyMap[17]).intl;
+                        const intl13 = require(1212) /* getSystemLocale */.intl;
                         const obj21 = {
-                          endDate: arg1(dependencyMap[20]).dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL"),
+                          endDate: require(3800) /* resetCache */.dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL"),
                           onClick() {
-                                                  callback(closure_2[21])("https://support.discord.com/hc/articles/23082866222871");
+                                                  outer1_1(outer1_2[21])("https://support.discord.com/hc/articles/23082866222871");
                                                 }
                         };
-                        return intl13.format(arg1(dependencyMap[17]).t.d+0vwo, obj21);
+                        return intl13.format(require(1212) /* getSystemLocale */.t["d+0vwo"], obj21);
                       } else {
                         return stringResult1;
                       }
@@ -1035,34 +1088,34 @@ function getPlanDescription(arg0) {
         }
         format7Result = constants3;
         if (constants3.CANCELED === status) {
-          format7Result = arg1;
+          format7Result = require;
           format7Result = dependencyMap;
-          const intl26 = arg1(dependencyMap[17]).intl;
+          const intl26 = require(1212) /* getSystemLocale */.intl;
           if (tmp8) {
             const format9 = intl26.format;
-            let t7 = format7Result(format7Result[17]).t;
+            let t7 = format7Result(1212).t;
             if (tmp16) {
               t7 = { price };
-              format7Result = format9(t7.USi/nc, t7);
+              format7Result = format9(t7["USi/nc"], t7);
             } else {
               const obj22 = { price };
-              format7Result = format9(t7.FS//l2, obj22);
+              format7Result = format9(t7["FS//l2"], obj22);
             }
           } else {
-            return intl26.string(format7Result(format7Result[17]).t.JshLzq);
+            return intl26.string(format7Result(1212).t.JshLzq);
           }
         } else {
           format7Result = constants3;
           if (constants3.ACCOUNT_HOLD === status) {
-            format7Result = arg1;
+            format7Result = require;
             format7Result = dependencyMap;
-            const intl25 = arg1(dependencyMap[17]).intl;
+            const intl25 = require(1212) /* getSystemLocale */.intl;
             const format8 = intl25.format;
-            let t8 = arg1(dependencyMap[17]).t;
+            let t8 = require(1212) /* getSystemLocale */.t;
             if (tmp8) {
               if (tmp16) {
                 t8 = { price };
-                format7Result = format8(t8.5mv+2i, t8);
+                format7Result = format8(t8["5mv+2i"], t8);
               } else {
                 const obj23 = { price };
                 format7Result = format8(t8.nkAEfZ, obj23);
@@ -1073,10 +1126,10 @@ function getPlanDescription(arg0) {
           } else {
             format7Result = constants3;
             if (constants3.UNPAID === status) {
-              format7Result = arg1;
+              format7Result = require;
               format7Result = dependencyMap;
-              const intl24 = arg1(dependencyMap[17]).intl;
-              return intl24.format(arg1(dependencyMap[17]).t.cmkbFB, {});
+              const intl24 = require(1212) /* getSystemLocale */.intl;
+              return intl24.format(require(1212) /* getSystemLocale */.t.cmkbFB, {});
             } else {
               format7Result = constants3;
               if (constants3.PAUSE_PENDING === status) {
@@ -1084,47 +1137,47 @@ function getPlanDescription(arg0) {
                 if (null != subscription.pauseEndsAt) {
                   format7Result = importDefault;
                   format7Result = dependencyMap;
-                  format7Result = importDefault(dependencyMap[19])(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
-                  const obj41 = importDefault(dependencyMap[19])(subscription.pauseEndsAt);
+                  format7Result = importDefault(3712)(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
+                  const obj41 = importDefault(3712)(subscription.pauseEndsAt);
                 }
                 if (null != format7Result) {
-                  format7Result = arg1;
+                  format7Result = require;
                   format7Result = dependencyMap;
-                  const intl23 = arg1(dependencyMap[17]).intl;
+                  const intl23 = require(1212) /* getSystemLocale */.intl;
                   const obj24 = { pauseDate: subscription.currentPeriodEnd, pauseDuration: format7Result };
-                  format7Result = intl23.format(arg1(dependencyMap[17]).t.WUfOD5, obj24);
+                  format7Result = intl23.format(require(1212) /* getSystemLocale */.t.WUfOD5, obj24);
                 } else {
-                  format7Result = arg1;
+                  format7Result = require;
                   format7Result = dependencyMap;
-                  const intl22 = arg1(dependencyMap[17]).intl;
+                  const intl22 = require(1212) /* getSystemLocale */.intl;
                   const obj25 = { pauseDate: subscription.currentPeriodEnd };
-                  format7Result = intl22.format(arg1(dependencyMap[17]).t.VlWufv, obj25);
+                  format7Result = intl22.format(require(1212) /* getSystemLocale */.t.VlWufv, obj25);
                 }
                 return format7Result;
               } else {
                 format7Result = constants3;
                 if (constants3.PAUSED === status) {
                   if (!hasFractionalPremiumWithSub) {
-                    format7Result = arg1;
+                    format7Result = require;
                     format7Result = dependencyMap;
-                    const intl21 = arg1(dependencyMap[17]).intl;
+                    const intl21 = require(1212) /* getSystemLocale */.intl;
                     const obj26 = { resumeDate: subscription.pauseEndsAt };
-                    stringResult = intl21.format(arg1(dependencyMap[17]).t.6RTdZA, obj26);
+                    stringResult = intl21.format(require(1212) /* getSystemLocale */.t["6RTdZA"], obj26);
                   }
                   return stringResult;
                 } else {
                   format7Result = constants3;
                   if (constants3.PAST_DUE === status) {
-                    format7Result = arg1;
+                    format7Result = require;
                     format7Result = dependencyMap;
-                    const intl20 = arg1(dependencyMap[17]).intl;
+                    const intl20 = require(1212) /* getSystemLocale */.intl;
                     const obj27 = {};
                     format7Result = getBillingGracePeriodDaysAndExpiresDate;
-                    obj27.endDate = arg1(dependencyMap[20]).dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
+                    obj27.endDate = require(3800) /* resetCache */.dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
                     obj27.onClick = function onClick() {
-                      callback(closure_2[21])("https://support.discord.com/hc/articles/23082866222871");
+                      outer1_1(outer1_2[21])("https://support.discord.com/hc/articles/23082866222871");
                     };
-                    return intl20.format(arg1(dependencyMap[17]).t.d+0vwo, obj27);
+                    return intl20.format(require(1212) /* getSystemLocale */.t["d+0vwo"], obj27);
                   } else {
                     return stringResult;
                   }
@@ -1145,7 +1198,7 @@ function getPremiumPlanOptions(isPremium) {
     if (isPremium.isPremium) {
       let tmp;
       if (undefined !== defaultPlanId) {
-        if (skuId === closure_42[defaultPlanId].skuId) {
+        if (skuId === dependencyMap2[defaultPlanId].skuId) {
           tmp = defaultPlanId;
         }
       }
@@ -1175,10 +1228,10 @@ function getPremiumPlanOptions(isPremium) {
   return [];
 }
 function getSkuIdForPlan(planId) {
-  if (null == closure_42[planId]) {
+  if (null == dependencyMap2[planId]) {
     const _Error = Error;
     const error = new Error("Unsupported plan");
-    let obj = arg1(dependencyMap[13]);
+    let obj = require(3791) /* _createGatewayCheckoutContext */;
     obj = {};
     obj = { planId };
     obj.tags = obj;
@@ -1191,8 +1244,7 @@ function getSkuIdForPlan(planId) {
 function getNumPremiumGuildSubscriptions(additionalPlans) {
   const items = [closure_38.GUILD];
   const planIdsForSkus = store.getPlanIdsForSkus(items);
-  const arg1 = planIdsForSkus;
-  importDefault(dependencyMap[16])(null != planIdsForSkus, "Missing guildSubscriptionPlanIds");
+  importDefault(44)(null != planIdsForSkus, "Missing guildSubscriptionPlanIds");
   const found = additionalPlans.find((planId) => planIdsForSkus.includes(planId.planId));
   let num = 0;
   if (null != found) {
@@ -1217,10 +1269,10 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
       prop = metadata.apple_grace_period_expires_date;
     }
     if (null != prop) {
-      const obj11 = importDefault(dependencyMap[19])(subscription.metadata.apple_grace_period_expires_date);
+      const obj11 = importDefault(3712)(subscription.metadata.apple_grace_period_expires_date);
       let obj = {};
-      const obj13 = importDefault(dependencyMap[19]);
-      obj.days = importDefault(dependencyMap[19]).duration(obj11.diff(subscription.currentPeriodStart)).days();
+      const obj13 = importDefault(3712);
+      obj.days = importDefault(3712).duration(obj11.diff(subscription.currentPeriodStart)).days();
       obj.expiresDate = obj11;
       return obj;
     }
@@ -1238,11 +1290,11 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
         prop2 = metadata3.google_original_expires_date;
       }
       if (null != prop2) {
-        const obj7 = importDefault(dependencyMap[19])(subscription.metadata.google_grace_period_expires_date);
+        const obj7 = importDefault(3712)(subscription.metadata.google_grace_period_expires_date);
         obj = {};
-        const tmp22 = importDefault(dependencyMap[19])(subscription.metadata.google_original_expires_date);
-        const obj9 = importDefault(dependencyMap[19]);
-        obj.days = importDefault(dependencyMap[19]).duration(obj7.diff(tmp22)).days();
+        const tmp22 = importDefault(3712)(subscription.metadata.google_original_expires_date);
+        const obj9 = importDefault(3712);
+        obj.days = importDefault(3712).duration(obj7.diff(tmp22)).days();
         obj.expiresDate = obj7;
         return obj;
       }
@@ -1250,7 +1302,7 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
   }
   if (subscription.isPurchasedExternally) {
     const tmp17 = subscription.isPurchasedViaApple ? closure_17 : closure_18;
-    let obj1 = { days: tmp17, expiresDate: importDefault(dependencyMap[19])(subscription.currentPeriodStart).add(tmp17, "days") };
+    let obj1 = { days: tmp17, expiresDate: importDefault(3712)(subscription.currentPeriodStart).add(tmp17, "days") };
     return obj1;
   } else {
     const metadata4 = subscription.metadata;
@@ -1265,14 +1317,14 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
       if (null != metadata5) {
         prop4 = metadata5.grace_period_expires_date;
       }
-      const tmp13 = importDefault(dependencyMap[19]);
-      obj2.days = importDefault(dependencyMap[19])(prop4).diff(subscription.currentPeriodStart, "days");
-      obj2.expiresDate = importDefault(dependencyMap[19])(subscription.metadata.grace_period_expires_date);
+      const tmp13 = importDefault(3712);
+      obj2.days = importDefault(3712)(prop4).diff(subscription.currentPeriodStart, "days");
+      obj2.expiresDate = importDefault(3712)(subscription.metadata.grace_period_expires_date);
       return obj2;
     } else {
       const tmp8 = null == subscription.paymentSourceId ? closure_19 : closure_30;
       obj = { days: tmp8 };
-      obj1 = importDefault(dependencyMap[19])(subscription.currentPeriodStart);
+      obj1 = importDefault(3712)(subscription.currentPeriodStart);
       obj.expiresDate = obj1.add(tmp8, "days");
       return obj;
     }
@@ -1296,7 +1348,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
     flag = false;
   }
   if (tmp2 === undefined) {
-    let obj = { fractionalState: constants5.NONE, startsAt: importDefault(dependencyMap[19])(0), endsAt: importDefault(dependencyMap[19])(0), currentEntitlementId: "", currentEntitlementEndsAt: importDefault(dependencyMap[19])(0), unactivatedUnits: [] };
+    let obj = { isFractionalPremiumActive: false, fetched: true, fractionalState: constants5.NONE, startsAt: importDefault(3712)(0), endsAt: importDefault(3712)(0), currentEntitlementId: "", currentEntitlementEndsAt: importDefault(3712)(0), unactivatedUnits: [] };
     tmp2 = obj;
   }
   let tmp3 = subscriptionPeriodStart;
@@ -1306,10 +1358,10 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       tmp3 = tmp;
     }
   }
-  const formatPrice = subscriptionPeriodStart(dependencyMap[22]).formatPrice;
+  const formatPrice = require(5618) /* formatSingleCurrencyPrice */.formatPrice;
   if (flag) {
     const invoiceItems = tmp3.invoiceItems;
-    const found = invoiceItems.filter((subscriptionPlanId) => set.has(subscriptionPlanId.subscriptionPlanId));
+    const found = invoiceItems.filter((subscriptionPlanId) => outer1_34.has(subscriptionPlanId.subscriptionPlanId));
     const mapped = found.map((amount) => amount.amount);
     let formatPriceResult = formatPrice(mapped.reduce((arg0, arg1) => arg1 + arg0, 0), tmp3.currency);
   } else {
@@ -1324,30 +1376,30 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       } else {
         currentPeriodEnd = status.currentPeriodEnd;
       }
-      const intl16 = subscriptionPeriodStart(dependencyMap[17]).intl;
+      const intl16 = require(1212) /* getSystemLocale */.intl;
       obj = { trialEnd: currentPeriodEnd };
-      return intl16.format(subscriptionPeriodStart(dependencyMap[17]).t.7ZS2m1, obj);
+      return intl16.format(require(1212) /* getSystemLocale */.t["7ZS2m1"], obj);
     }
   }
   if (status.status === constants3.CANCELED) {
-    const intl15 = subscriptionPeriodStart(dependencyMap[17]).intl;
+    const intl15 = require(1212) /* getSystemLocale */.intl;
     const obj1 = { endDate: subscriptionPeriodStart.subscriptionPeriodStart };
-    return intl15.format(subscriptionPeriodStart(dependencyMap[17]).t.Whp/qk, obj1);
+    return intl15.format(require(1212) /* getSystemLocale */.t["Whp/qk"], obj1);
   } else if (status.status === constants3.PAUSE_PENDING) {
-    const intl14 = subscriptionPeriodStart(dependencyMap[17]).intl;
+    const intl14 = require(1212) /* getSystemLocale */.intl;
     ({ currentPeriodEnd: obj23.pauseDate, pauseEndsAt: obj23.resumeDate } = status);
-    return intl14.format(subscriptionPeriodStart(dependencyMap[17]).t.uBLUGU, {});
+    return intl14.format(require(1212) /* getSystemLocale */.t.uBLUGU, {});
   } else if (status.status === constants3.PAUSED) {
     if (tmp2.fractionalState !== constants5.NONE) {
-      const intl13 = subscriptionPeriodStart(dependencyMap[17]).intl;
+      const intl13 = require(1212) /* getSystemLocale */.intl;
       const obj3 = {};
       const endsAt = tmp2.endsAt;
       obj3.renewalDate = endsAt.toDate();
       obj3.price = formatPriceResult;
-      let formatResult = intl13.format(subscriptionPeriodStart(dependencyMap[17]).t.Q18lRK, obj3);
+      let formatResult = intl13.format(require(1212) /* getSystemLocale */.t.Q18lRK, obj3);
     } else if (null == status.pauseEndsAt) {
       let num16 = 17;
-      const intl11 = subscriptionPeriodStart(dependencyMap[17]).intl;
+      const intl11 = require(1212) /* getSystemLocale */.intl;
       if (flag) {
         const obj4 = {};
         const intl12 = tmp59(tmp60[num16]).intl;
@@ -1359,19 +1411,19 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
         formatResult1 = intl11.string(tmp59(tmp60[num16]).t.fMz6Lg);
       }
     } else {
-      const intl17 = subscriptionPeriodStart(dependencyMap[17]).intl;
+      const intl17 = require(1212) /* getSystemLocale */.intl;
       const format3 = intl17.format;
-      const t3 = subscriptionPeriodStart(dependencyMap[17]).t;
+      const t3 = require(1212) /* getSystemLocale */.t;
       if (flag) {
         const obj5 = {};
-        const intl10 = tmp80(tmp81[17]).intl;
-        obj5.planName = intl10.string(tmp80(tmp81[17]).t.Ipxkog);
+        const intl10 = tmp80(1212).intl;
+        obj5.planName = intl10.string(tmp80(1212).t.Ipxkog);
         obj5.resumeDate = status.pauseEndsAt;
         obj5.price = formatPriceResult;
         formatResult = format3(t3.zcgtzf, obj5);
       } else {
         let obj6 = { resumeDate: status.pauseEndsAt };
-        formatResult = format3(t3.V8+l6k, obj6);
+        formatResult = format3(t3["V8+l6k"], obj6);
       }
     }
     return formatResult;
@@ -1387,7 +1439,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       isPurchasedViaGoogle = null != prop;
     }
     if (isPurchasedViaGoogle) {
-      expiresDate = importDefault(dependencyMap[19])(status.metadata.google_grace_period_expires_date);
+      expiresDate = importDefault(3712)(status.metadata.google_grace_period_expires_date);
     }
     let isPurchasedViaApple = status.isPurchasedViaApple;
     if (isPurchasedViaApple) {
@@ -1399,13 +1451,13 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       isPurchasedViaApple = null != prop1;
     }
     if (isPurchasedViaApple) {
-      expiresDate = importDefault(dependencyMap[19])(status.metadata.apple_grace_period_expires_date);
+      expiresDate = importDefault(3712)(status.metadata.apple_grace_period_expires_date);
     }
-    const intl9 = subscriptionPeriodStart(dependencyMap[17]).intl;
+    const intl9 = require(1212) /* getSystemLocale */.intl;
     const format2 = intl9.format;
-    const t2 = subscriptionPeriodStart(dependencyMap[17]).t;
+    const t2 = require(1212) /* getSystemLocale */.t;
     if (status.isPurchasedExternally) {
-      const obj7 = { endDate: expiresDate.toDate(), paymentGatewayName: closure_49[status.paymentGateway], paymentSourceLink: getExternalSubscriptionMethodUrl(status.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT") };
+      const obj7 = { endDate: expiresDate.toDate(), paymentGatewayName: dependencyMap3[status.paymentGateway], paymentSourceLink: getExternalSubscriptionMethodUrl(status.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT") };
       let format2Result = format2(t2.U2hb3W, obj7);
     } else {
       let obj8 = { endDate: expiresDate.toDate(), price: formatPriceResult };
@@ -1413,46 +1465,46 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
     }
     return format2Result;
   } else if (status.status === constants3.BILLING_RETRY) {
-    const intl8 = subscriptionPeriodStart(dependencyMap[17]).intl;
+    const intl8 = require(1212) /* getSystemLocale */.intl;
     const obj9 = {};
-    let obj14 = importDefault(dependencyMap[19])(status.currentPeriodStart);
+    let obj14 = importDefault(3712)(status.currentPeriodStart);
     obj9.endDate = obj14.add(closure_29, "days").toDate();
     obj9.price = formatPriceResult;
-    return intl8.format(subscriptionPeriodStart(dependencyMap[17]).t.EMTLOT, obj9);
+    return intl8.format(require(1212) /* getSystemLocale */.t.EMTLOT, obj9);
   } else if (status.status === constants3.ACCOUNT_HOLD) {
     if (status.isPurchasedViaGoogle) {
-      obj6 = subscriptionPeriodStart(dependencyMap[23]);
+      obj6 = require(3789) /* isPremiumGiftingSupported */;
       if (!obj6.isGooglePlayBillingSupported()) {
-        const intl6 = subscriptionPeriodStart(dependencyMap[17]).intl;
+        const intl6 = require(1212) /* getSystemLocale */.intl;
         const obj10 = {};
-        obj8 = importDefault(dependencyMap[19])(status.currentPeriodStart);
+        obj8 = importDefault(3712)(status.currentPeriodStart);
         obj10.endDate = obj8.add(closure_26, "days").toDate();
-        obj10.paymentGatewayName = closure_49[status.paymentGateway];
+        obj10.paymentGatewayName = dependencyMap3[status.paymentGateway];
         obj10.paymentSourceLink = getExternalSubscriptionMethodUrl(status.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT");
-        let formatResult2 = intl6.format(subscriptionPeriodStart(dependencyMap[17]).t.dtcxw+, obj10);
+        let formatResult2 = intl6.format(require(1212) /* getSystemLocale */.t["dtcxw+"], obj10);
         const addResult1 = obj8.add(closure_26, "days");
       }
       return formatResult2;
     }
-    const intl7 = subscriptionPeriodStart(dependencyMap[17]).intl;
+    const intl7 = require(1212) /* getSystemLocale */.intl;
     let obj11 = {};
-    obj11 = importDefault(dependencyMap[19])(status.currentPeriodStart);
+    obj11 = importDefault(3712)(status.currentPeriodStart);
     obj11.endDate = obj11.add(closure_26, "days").toDate();
     obj11.price = formatPriceResult;
-    formatResult2 = intl7.format(subscriptionPeriodStart(dependencyMap[17]).t.EMTLOT, obj11);
+    formatResult2 = intl7.format(require(1212) /* getSystemLocale */.t.EMTLOT, obj11);
     const addResult2 = obj11.add(closure_26, "days");
   } else if (isSubscriptionPrepaidPaymentSource(status)) {
-    const intl5 = subscriptionPeriodStart(dependencyMap[17]).intl;
+    const intl5 = require(1212) /* getSystemLocale */.intl;
     const obj12 = { prepaidEndDate: status.currentPeriodEnd };
-    return intl5.format(subscriptionPeriodStart(dependencyMap[17]).t.awpB0C, obj12);
+    return intl5.format(require(1212) /* getSystemLocale */.t.awpB0C, obj12);
   } else if (status.status === constants3.UNPAID) {
-    const intl4 = subscriptionPeriodStart(dependencyMap[17]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
     const obj13 = { maxProcessingTimeInDays: closure_27 };
-    return intl4.format(subscriptionPeriodStart(dependencyMap[17]).t.CzTKom, obj13);
+    return intl4.format(require(1212) /* getSystemLocale */.t.CzTKom, obj13);
   } else if (status.isPurchasedExternally) {
-    const intl3 = subscriptionPeriodStart(dependencyMap[17]).intl;
-    obj14 = { renewalDate: subscriptionPeriodStart.subscriptionPeriodStart, paymentGatewayName: closure_49[status.paymentGateway], subscriptionManagementLink: getExternalSubscriptionMethodUrl(status.paymentGateway, "SUBSCRIPTION_MANAGEMENT") };
-    return intl3.format(subscriptionPeriodStart(dependencyMap[17]).t.ZlWXgR, obj14);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    obj14 = { renewalDate: subscriptionPeriodStart.subscriptionPeriodStart, paymentGatewayName: dependencyMap3[status.paymentGateway], subscriptionManagementLink: getExternalSubscriptionMethodUrl(status.paymentGateway, "SUBSCRIPTION_MANAGEMENT") };
+    return intl3.format(require(1212) /* getSystemLocale */.t.ZlWXgR, obj14);
   } else {
     const _Date = Date;
     const date = new Date(subscriptionPeriodStart.subscriptionPeriodStart);
@@ -1460,13 +1512,13 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
     if (!tmp13) {
       tmp14 = extendDateWithUnconsumedFractionalPremium(date, tmp2.unactivatedUnits);
     }
-    const intl = subscriptionPeriodStart(dependencyMap[17]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const format = intl.format;
-    const t = subscriptionPeriodStart(dependencyMap[17]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (flag) {
       const obj15 = {};
-      const intl2 = tmp16(tmp17[17]).intl;
-      obj15.planName = intl2.string(tmp16(tmp17[17]).t.Ipxkog);
+      const intl2 = tmp16(1212).intl;
+      obj15.planName = intl2.string(tmp16(1212).t.Ipxkog);
       obj15.renewalDate = tmp14;
       obj15.price = formatPriceResult;
       let formatResult3 = format(t.Vl3cED, obj15);
@@ -1482,7 +1534,7 @@ function extendDateWithUnconsumedFractionalPremium(date, unactivatedUnits, diff,
   if (!excludeReverseTrialFromCountdown) {
     tmp2 = date;
   }
-  const tmpResult = importDefault(dependencyMap[19])(tmp2);
+  const tmpResult = importDefault(3712)(tmp2);
   let addResult = tmpResult;
   if (unactivatedUnits.length > 0) {
     addResult = tmpResult.add(getFractionalPremiumUnitsHours(unactivatedUnits), "hours");
@@ -1491,7 +1543,7 @@ function extendDateWithUnconsumedFractionalPremium(date, unactivatedUnits, diff,
   if (!excludeReverseTrialFromCountdown) {
     addResult1 = addResult;
     if (undefined !== diff) {
-      const diffResult = diff.diff(importDefault(dependencyMap[19])(), "hours", true);
+      const diffResult = diff.diff(importDefault(3712)(), "hours", true);
       addResult1 = addResult;
       if (diffResult > 0) {
         addResult1 = addResult.add(diffResult, "hours");
@@ -1504,11 +1556,11 @@ function getUnactivatedFractionalPremiumDurationString(unactivatedUnits) {
   const tmp = getFractionalPremiumUnitsHours(unactivatedUnits.unactivatedUnits);
   if (tmp > 0) {
     if (unactivatedUnits.fractionalState === constants5.NONE) {
-      const obj = { days: arg1(dependencyMap[17]).t.fYmirx, hours: arg1(dependencyMap[17]).t.C3RO+g, minutes: arg1(dependencyMap[17]).t.r77oHc };
-      const obj2 = arg1(dependencyMap[24]);
-      const result = obj2.roundFPCountdownUnits(arg1(dependencyMap[20]).diffAsUnits(0, tmp * importDefault(dependencyMap[25]).Millis.HOUR));
-      const obj3 = arg1(dependencyMap[20]);
-      return arg1(dependencyMap[20]).unitsAsStrings(result, obj);
+      const obj = { days: require(1212) /* getSystemLocale */.t.fYmirx, hours: require(1212) /* getSystemLocale */.t["C3RO+g"], minutes: require(1212) /* getSystemLocale */.t.r77oHc };
+      const obj2 = require(12386) /* roundFPCountdownUnits */;
+      const result = obj2.roundFPCountdownUnits(require(3800) /* resetCache */.diffAsUnits(0, tmp * importDefault(664).Millis.HOUR));
+      const obj3 = require(3800) /* resetCache */;
+      return require(3800) /* resetCache */.unitsAsStrings(result, obj);
     }
   }
   return "";
@@ -1524,16 +1576,16 @@ function getSwitchingPlansDisabledMessage(renewalMutations) {
   let stringResult = null;
   if (null == renewalMutations.renewalMutations) {
     if (null != renewalMutations.trialEndsAt) {
-      const intl3 = arg1(dependencyMap[17]).intl;
-      stringResult = intl3.string(arg1(dependencyMap[17]).t.a9Mdb3);
+      const intl3 = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl3.string(require(1212) /* getSystemLocale */.t.a9Mdb3);
     }
     return stringResult;
   } else if (renewalMutations.renewalMutations.planId !== renewalMutations.planId) {
-    const intl2 = arg1(dependencyMap[17]).intl;
-    let stringResult1 = intl2.string(arg1(dependencyMap[17]).t.0rzJ4J);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    let stringResult1 = intl2.string(require(1212) /* getSystemLocale */.t["0rzJ4J"]);
   } else {
-    const intl = arg1(dependencyMap[17]).intl;
-    stringResult1 = intl.string(arg1(dependencyMap[17]).t.9dLQ0/);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    stringResult1 = intl.string(require(1212) /* getSystemLocale */.t["9dLQ0/"]);
   }
 }
 function isSubscriptionPrepaidPaymentSource(paymentSourceId) {
@@ -1547,7 +1599,7 @@ function isPrepaidPaymentSource(paymentSourceId) {
   if (null == paymentSourceId) {
     return false;
   } else {
-    const paymentSource = paymentSource.getPaymentSource(paymentSourceId);
+    paymentSource = paymentSource.getPaymentSource(paymentSourceId);
     let hasItem = null != paymentSource;
     if (hasItem) {
       hasItem = set3.has(paymentSource.type);
@@ -1591,10 +1643,10 @@ function getFormattedPriceForPlan(id, arg1, arg2) {
     tmp5 = getDefaultPrice(id.id, false, tmp);
   }
   while (true) {
-    let tmp10 = arg1;
+    let tmp10 = require;
     let tmp11 = dependencyMap;
     let num = 22;
-    let obj = arg1(dependencyMap[22]);
+    let obj = require(5618) /* formatSingleCurrencyPrice */;
     let formatPriceResult = obj.formatPrice(tmp5.amount, tmp5.currency);
     let tmp12 = constants7;
     let tmp13 = id.currency !== constants7.USD;
@@ -1604,7 +1656,7 @@ function getFormattedPriceForPlan(id, arg1, arg2) {
       let flag4 = true;
       let tmp14 = arg2;
       tmp13 = true === arg2;
-      // break
+      break;
     }
     let combined = formatPriceResult;
     if (tmp13) {
@@ -1617,9 +1669,9 @@ function getFormattedPriceForPlan(id, arg1, arg2) {
 function getPlanIdFromInvoice(subscription, first) {
   if (subscription.status !== constants3.CANCELED) {
     if (subscription.status !== constants3.PAUSE_PENDING) {
-      importDefault(dependencyMap[16])(null != first, "Expected invoicePreview");
+      importDefault(44)(null != first, "Expected invoicePreview");
       const invoiceItems = first.invoiceItems;
-      const found = invoiceItems.find((subscriptionPlanId) => callback(subscriptionPlanId.subscriptionPlanId));
+      const found = invoiceItems.find((subscriptionPlanId) => outer1_75(subscriptionPlanId.subscriptionPlanId));
       if (null != found) {
         if (!isNoneSubscription(found.subscriptionPlanId)) {
           let planId = found.subscriptionPlanId;
@@ -1635,9 +1687,9 @@ function getStatusFromInvoice(subscription, first) {
   const status = subscription.status;
   if (subscription.status !== constants3.CANCELED) {
     if (subscription.status !== constants3.PAUSE_PENDING) {
-      importDefault(dependencyMap[16])(null != first, "Expected invoicePreview");
+      importDefault(44)(null != first, "Expected invoicePreview");
       const invoiceItems = first.invoiceItems;
-      const found = invoiceItems.find((subscriptionPlanId) => callback(subscriptionPlanId.subscriptionPlanId));
+      const found = invoiceItems.find((subscriptionPlanId) => outer1_75(subscriptionPlanId.subscriptionPlanId));
       let tmp6 = null == found;
       if (!tmp6) {
         tmp6 = isNoneSubscription(found.subscriptionPlanId);
@@ -1685,8 +1737,8 @@ function getFormattedPlanPriceFromInvoice(renewalInvoicePreview, subscription, v
   } else {
     amount = result.amount;
   }
-  const obj2 = subscription(dependencyMap[22]);
-  return obj2.formatRate(subscription(dependencyMap[22]).formatPrice(amount, renewalInvoicePreview.currency), value.interval, value.intervalCount);
+  const obj2 = require(5618) /* formatSingleCurrencyPrice */;
+  return obj2.formatRate(require(5618) /* formatSingleCurrencyPrice */.formatPrice(amount, renewalInvoicePreview.currency), value.interval, value.intervalCount);
 }
 function getPremiumGuildIntervalPrice(planId, paymentSourceId, currency, user) {
   if (null != paymentSourceId) {
@@ -1703,14 +1755,14 @@ function getPremiumGuildIntervalPrice(planId, paymentSourceId, currency, user) {
     obj = {};
     const obj1 = { planId };
     obj.tags = obj1;
-    const result = paymentSourceId(dependencyMap[13]).captureBillingException(error, obj);
+    const result = require(3791) /* _createGatewayCheckoutContext */.captureBillingException(error, obj);
     throw error;
   } else {
     const forSkuAndInterval = store.getForSkuAndInterval(closure_38.GUILD, value.interval, value.intervalCount);
     if (null == forSkuAndInterval) {
       const _Error = Error;
       const error1 = new Error("Unsupported plan");
-      let obj3 = paymentSourceId(dependencyMap[13]);
+      let obj3 = require(3791) /* _createGatewayCheckoutContext */;
       let obj2 = {};
       obj3 = { planId };
       obj2.tags = obj3;
@@ -1718,7 +1770,7 @@ function getPremiumGuildIntervalPrice(planId, paymentSourceId, currency, user) {
       throw error1;
     } else {
       const id = forSkuAndInterval.id;
-      obj2 = paymentSourceId(dependencyMap[15]);
+      obj2 = require(1872) /* isPremiumAtLeast */;
       return getPrice(id, obj2.isPremium(user), false, obj);
     }
   }
@@ -1727,54 +1779,54 @@ function getBillingReviewSubheader(arg0, id) {
   id = id.id;
   if (null != arg0) {
     if (SubscriptionPlans.PREMIUM_MONTH_TIER_0 === id) {
-      const intl15 = id(dependencyMap[17]).intl;
-      return intl15.string(id(dependencyMap[17]).t.0ggVqN);
+      const intl15 = require(1212) /* getSystemLocale */.intl;
+      return intl15.string(require(1212) /* getSystemLocale */.t["0ggVqN"]);
     } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_0 === id) {
-      const intl14 = id(dependencyMap[17]).intl;
-      return intl14.string(id(dependencyMap[17]).t.jm+ZQw);
+      const intl14 = require(1212) /* getSystemLocale */.intl;
+      return intl14.string(require(1212) /* getSystemLocale */.t["jm+ZQw"]);
     } else if (SubscriptionPlans.PREMIUM_MONTH_TIER_1 === id) {
-      const intl13 = id(dependencyMap[17]).intl;
-      return intl13.string(id(dependencyMap[17]).t.uph4Jx);
+      const intl13 = require(1212) /* getSystemLocale */.intl;
+      return intl13.string(require(1212) /* getSystemLocale */.t.uph4Jx);
     } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_1 === id) {
-      const intl12 = id(dependencyMap[17]).intl;
-      return intl12.string(id(dependencyMap[17]).t.D/l7Yt);
+      const intl12 = require(1212) /* getSystemLocale */.intl;
+      return intl12.string(require(1212) /* getSystemLocale */.t["D/l7Yt"]);
     } else {
       if (SubscriptionPlans.PREMIUM_MONTH_TIER_2 !== id) {
         if (SubscriptionPlans.PREMIUM_GROUP_MONTH !== id) {
           if (SubscriptionPlans.PREMIUM_YEAR_TIER_2 === id) {
-            const intl10 = id(dependencyMap[17]).intl;
-            return intl10.string(id(dependencyMap[17]).t.G0mISV);
+            const intl10 = require(1212) /* getSystemLocale */.intl;
+            return intl10.string(require(1212) /* getSystemLocale */.t.G0mISV);
           }
         }
       }
-      const intl11 = id(dependencyMap[17]).intl;
-      return intl11.string(id(dependencyMap[17]).t.5l1MuV);
+      const intl11 = require(1212) /* getSystemLocale */.intl;
+      return intl11.string(require(1212) /* getSystemLocale */.t["5l1MuV"]);
     }
   }
   if (SubscriptionPlans.PREMIUM_MONTH_TIER_0 === id) {
-    const intl9 = id(dependencyMap[17]).intl;
+    const intl9 = require(1212) /* getSystemLocale */.intl;
     const string6 = intl9.string;
-    const t6 = id(dependencyMap[17]).t;
+    const t6 = require(1212) /* getSystemLocale */.t;
     if (arg2) {
       let string6Result = string6(t6.cRCCJ3);
     } else {
-      string6Result = string6(t6./G3aKw);
+      string6Result = string6(t6["/G3aKw"]);
     }
     return string6Result;
   } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_0 === id) {
-    const intl8 = id(dependencyMap[17]).intl;
+    const intl8 = require(1212) /* getSystemLocale */.intl;
     const string5 = intl8.string;
-    const t5 = id(dependencyMap[17]).t;
+    const t5 = require(1212) /* getSystemLocale */.t;
     if (arg2) {
       let string5Result = string5(t5.cRCCJ3);
     } else {
-      string5Result = string5(t5.2eQpsL);
+      string5Result = string5(t5["2eQpsL"]);
     }
     return string5Result;
   } else if (SubscriptionPlans.PREMIUM_MONTH_TIER_1 === id) {
-    const intl7 = id(dependencyMap[17]).intl;
+    const intl7 = require(1212) /* getSystemLocale */.intl;
     const string4 = intl7.string;
-    const t4 = id(dependencyMap[17]).t;
+    const t4 = require(1212) /* getSystemLocale */.t;
     if (arg2) {
       let string4Result = string4(t4.cRCCJ3);
     } else {
@@ -1782,19 +1834,19 @@ function getBillingReviewSubheader(arg0, id) {
     }
     return string4Result;
   } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_1 === id) {
-    const intl6 = id(dependencyMap[17]).intl;
+    const intl6 = require(1212) /* getSystemLocale */.intl;
     const string3 = intl6.string;
-    const t3 = id(dependencyMap[17]).t;
+    const t3 = require(1212) /* getSystemLocale */.t;
     if (arg2) {
       let string3Result = string3(t3.cRCCJ3);
     } else {
-      string3Result = string3(t3.MhH/vW);
+      string3Result = string3(t3["MhH/vW"]);
     }
     return string3Result;
   } else if (SubscriptionPlans.PREMIUM_MONTH_TIER_2 === id) {
-    const intl5 = id(dependencyMap[17]).intl;
+    const intl5 = require(1212) /* getSystemLocale */.intl;
     const string2 = intl5.string;
-    const t2 = id(dependencyMap[17]).t;
+    const t2 = require(1212) /* getSystemLocale */.t;
     if (arg2) {
       let string2Result = string2(t2.cRCCJ3);
     } else {
@@ -1802,17 +1854,17 @@ function getBillingReviewSubheader(arg0, id) {
     }
     return string2Result;
   } else if (SubscriptionPlans.PREMIUM_GROUP_MONTH === id) {
-    const intl4 = id(dependencyMap[17]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
     let obj = { premiumGroupProductName: callback() };
-    return intl4.formatToPlainString(importDefault(dependencyMap[18]).LwdrNi, obj);
+    return intl4.formatToPlainString(importDefault(2780).LwdrNi, obj);
   } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_2 === id) {
-    const intl3 = id(dependencyMap[17]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     const string = intl3.string;
-    const t = id(dependencyMap[17]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (arg2) {
       let stringResult = string(t.cRCCJ3);
     } else {
-      stringResult = string(t.0nfg1x);
+      stringResult = string(t["0nfg1x"]);
     }
     return stringResult;
   } else {
@@ -1828,7 +1880,7 @@ function getBillingReviewSubheader(arg0, id) {
                       if (SubscriptionPlans.PREMIUM_6_MONTH_GUILD !== id) {
                         const _Error = Error;
                         const error = new Error("User is purchasing an unsupported plan");
-                        obj = id(dependencyMap[13]);
+                        obj = require(3791) /* _createGatewayCheckoutContext */;
                         obj = {};
                         const obj1 = { planId: id };
                         obj.tags = obj1;
@@ -1842,18 +1894,18 @@ function getBillingReviewSubheader(arg0, id) {
             }
           }
         }
-        const intl = id(dependencyMap[17]).intl;
-        return intl.string(id(dependencyMap[17]).t.eUEeCt);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        return intl.string(require(1212) /* getSystemLocale */.t.eUEeCt);
       }
     }
-    const intl2 = id(dependencyMap[17]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj2 = { intervalCount: id.intervalCount };
-    return intl2.formatToPlainString(id(dependencyMap[17]).t.BCD4fT, obj2);
+    return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.BCD4fT, obj2);
   }
 }
 function getIntervalForInvoice(arg0) {
   const value = store.get(arg0.invoiceItems[0].subscriptionPlanId);
-  importDefault(dependencyMap[16])(null != value, "Missing subscriptionPlan");
+  importDefault(44)(null != value, "Missing subscriptionPlan");
   return { intervalType: value.interval, intervalCount: value.intervalCount };
 }
 function getDefaultCurrency() {
@@ -1868,28 +1920,28 @@ function formatTrialCtaIntervalDuration(intervalType) {
   if (num === undefined) {
     num = 1;
   }
-  let obj = arg1(dependencyMap[22]);
-  const formatPriceResult = obj.formatPrice(0, getDefaultCurrency(), { y: "%FunctionPrototype%", getSelectedMediaSource: "paddingStart" });
+  let obj = require(5618) /* formatSingleCurrencyPrice */;
+  const formatPriceResult = obj.formatPrice(0, getDefaultCurrency(), { maximumFractionDigits: 0, minimumFractionDigits: 0 });
   if (constants6.DAY === MONTH) {
     if (num >= 7) {
       if (num % 7 === 0) {
-        const intl4 = arg1(dependencyMap[17]).intl;
+        const intl4 = require(1212) /* getSystemLocale */.intl;
         obj = { weeks: num / 7, price: formatPriceResult };
-        let formatToPlainStringResult = intl4.formatToPlainString(arg1(dependencyMap[17]).t.C6i5Jt, obj);
+        let formatToPlainStringResult = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.C6i5Jt, obj);
       }
       return formatToPlainStringResult;
     }
-    const intl3 = arg1(dependencyMap[17]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     obj = { days: num, price: formatPriceResult };
-    formatToPlainStringResult = intl3.formatToPlainString(arg1(dependencyMap[17]).t.cR9ifw, obj);
+    formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.cR9ifw, obj);
   } else if (constants6.MONTH === MONTH) {
-    const intl2 = arg1(dependencyMap[17]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj1 = { months: num, price: formatPriceResult };
-    return intl2.formatToPlainString(arg1(dependencyMap[17]).t.8FZfNo, obj1);
+    return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["8FZfNo"], obj1);
   } else if (constants6.YEAR === MONTH) {
-    const intl = arg1(dependencyMap[17]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj2 = { years: num, price: formatPriceResult };
-    return intl.formatToPlainString(arg1(dependencyMap[17]).t.xzAcST, obj2);
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.xzAcST, obj2);
   } else {
     const _Error = Error;
     const error = new Error("Unsupported interval duration.");
@@ -1901,7 +1953,7 @@ function getExternalSubscriptionMethodUrl(paymentGateway, PAYMENT_SOURCE_MANAGEM
     if (constants2.APPLE_ADVANCED_COMMERCE !== paymentGateway) {
       if (constants2.APPLE !== paymentGateway) {
         if (constants2.GOOGLE === paymentGateway) {
-          return closure_52[PAYMENT_SOURCE_MANAGEMENT];
+          return table6[PAYMENT_SOURCE_MANAGEMENT];
         } else {
           const _Error = Error;
           const _HermesInternal = HermesInternal;
@@ -1911,10 +1963,10 @@ function getExternalSubscriptionMethodUrl(paymentGateway, PAYMENT_SOURCE_MANAGEM
       }
     }
   }
-  return closure_51[PAYMENT_SOURCE_MANAGEMENT];
+  return table5[PAYMENT_SOURCE_MANAGEMENT];
 }
 function getItemsFromNewAdditionalPlans(renewalMutations, items) {
-  items = renewalMutations;
+  let closure_0 = renewalMutations;
   items = [];
   renewalMutations = renewalMutations.renewalMutations;
   let items1;
@@ -1924,14 +1976,14 @@ function getItemsFromNewAdditionalPlans(renewalMutations, items) {
   if (null == items1) {
     items1 = renewalMutations.items;
   }
-  const found = items1.find((planId) => set.has(planId.planId));
+  const found = items1.find((planId) => outer1_32.has(planId.planId));
   if (null != found) {
     items.push(found);
   }
   const items2 = [...items];
   items.push.apply(items2);
   return items.map((planId) => {
-    const tmp = callback(planId.items);
+    const tmp = outer1_57(items.items);
     const iter = tmp();
     let iter2 = iter;
     if (!iter.done) {
@@ -1949,13 +2001,14 @@ function getItemsFromNewAdditionalPlans(renewalMutations, items) {
   });
 }
 function getItemsWithoutPremiumPlanItem(items) {
-  return items.filter((planId) => !set.has(planId.planId));
+  return items.filter((planId) => !outer1_32.has(planId.planId));
 }
 function getItemsWithUpsertedPlanIdForGroup(renewalMutations, planId, quantity, closure_31) {
-  const importDefault = quantity;
+  const _require = planId;
+  let closure_1 = quantity;
   const dependencyMap = closure_31;
   if (closure_31.has(planId)) {
-    let closure_3 = false;
+    let c3 = false;
     renewalMutations = renewalMutations.renewalMutations;
     let items;
     if (null != renewalMutations) {
@@ -1966,20 +2019,20 @@ function getItemsWithUpsertedPlanIdForGroup(renewalMutations, planId, quantity, 
     }
     const mapped = items.map((planId) => {
       let tmp = planId;
-      if (arg3.has(planId.planId)) {
-        let closure_3 = true;
+      if (set.has(planId.planId)) {
+        let c3 = true;
         const obj = {};
         const merged = Object.assign(planId);
-        obj["quantity"] = arg2;
-        obj["planId"] = arg1;
+        obj["quantity"] = closure_1;
+        obj["planId"] = closure_0;
         tmp = obj;
       }
       return tmp;
     });
-    if (!closure_3) {
+    if (!c3) {
       let obj = { planId, quantity };
       const items1 = renewalMutations.items;
-      const found = items1.find((planId) => planId.planId === arg1);
+      const found = items1.find((planId) => planId.planId === closure_0);
       if (null != found) {
         obj.id = found.id;
       }
@@ -1987,7 +2040,7 @@ function getItemsWithUpsertedPlanIdForGroup(renewalMutations, planId, quantity, 
     }
     return mapped.filter((quantity) => 0 !== quantity.quantity);
   } else {
-    const CheckoutError = planId(dependencyMap[27]).CheckoutError;
+    const CheckoutError = _require(8203).CheckoutError;
     obj = { message: "Expected planId in group" };
     obj = { newPlanId: planId, planGroup: closure_31 };
     obj.extraSentryInformation = obj;
@@ -2000,7 +2053,7 @@ function getGuildBoostPlanItem(items) {
   let found = null;
   if (null != items) {
     items = items.items;
-    found = items.find((planId) => set.has(planId.planId));
+    found = items.find((planId) => outer1_31.has(planId.planId));
   }
   return found;
 }
@@ -2044,14 +2097,14 @@ function isNewUser(createdAt) {
   return tmp;
 }
 function canUseQuestOrbMultiplier(perks) {
-  return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).QUEST_ORB_MULTIPLIER, perks);
+  return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.QUEST_ORB_MULTIPLIER, perks);
 }
 function canUseCollectibles(user) {
-  return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).COLLECTIBLES, user);
+  return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.COLLECTIBLES, user);
 }
 function formatPriceString(defaultPrice, interval) {
-  const obj = interval(dependencyMap[22]);
-  return "" + interval(dependencyMap[22]).formatPrice(defaultPrice.amount, defaultPrice.currency) + "/" + getIntervalStringAsNoun(interval);
+  const obj = require(5618) /* formatSingleCurrencyPrice */;
+  return "" + require(5618) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency) + "/" + getIntervalStringAsNoun(interval);
 }
 function castPremiumSubscriptionAsSkuId(skuIdForPlan) {
   return skuIdForPlan;
@@ -2072,11 +2125,11 @@ function isDiscountOffer(arg0) {
 }
 function formatInterval(interval) {
   if (interval === constants6.YEAR) {
-    const intl2 = arg1(dependencyMap[17]).intl;
-    return intl2.string(arg1(dependencyMap[17]).t.tfqrhj);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.tfqrhj);
   } else if (interval === constants6.MONTH) {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.FPybU7);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.FPybU7);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -2092,12 +2145,12 @@ function getFractionalPremiumUnitsHours(unactivatedUnits) {
 }
 function getFractionalPremiumUnitsHoursFromSkuIds(flatMapResult) {
   return flatMapResult.reduce((arg0, arg1) => {
-    const tmp = callback(closure_23[arg1], 2);
+    const tmp = outer1_3(outer1_23[arg1], 2);
     const first = tmp[0];
     let num = 1;
-    if (constants.HOUR !== first) {
+    if (outer1_24.HOUR !== first) {
       num = 1;
-      if (constants.DAY === first) {
+      if (outer1_24.DAY === first) {
         num = 24;
       }
     }
@@ -2114,7 +2167,7 @@ function getMonthlyPrice(isGift) {
     priceOptions = {};
   }
   let tmp2 = null;
-  if (null != closure_33[isGift.subscriptionPlan.skuId]) {
+  if (null != table2[isGift.subscriptionPlan.skuId]) {
     tmp2 = getPrice(tmp, false, flag, priceOptions);
   }
   return tmp2;
@@ -2262,45 +2315,33 @@ function getDaysSincePremium(arg0) {
     const date = new Date();
     const _Date2 = Date;
     const date1 = new Date(arg0);
-    num = Math.max(arg1(dependencyMap[20]).differenceInCalendarDays(date, date1), 0);
-    const obj = arg1(dependencyMap[20]);
+    num = Math.max(require(3800) /* resetCache */.differenceInCalendarDays(date, date1), 0);
+    const obj = require(3800) /* resetCache */;
   }
   return num;
 }
 function getDaysRemainingUntilSubscriptionCurrentPeriodEnds(currentPeriodEnd) {
-  const obj = arg1(dependencyMap[20]);
+  const obj = require(3800) /* resetCache */;
   const date = new Date(currentPeriodEnd.currentPeriodEnd);
   return Math.max(1, Math.ceil(obj.differenceInDays(date, new Date())));
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const isNoneSubscription = arg1(dependencyMap[2]).isNoneSubscription;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-({ InvoiceStatusTypes: closure_11, PaymentGateways: closure_12, PriceSetAssignmentPurchaseTypes: closure_13, SubscriptionStatusTypes: closure_14 } = arg1(dependencyMap[8]));
-const tmp3 = arg1(dependencyMap[9]);
-({ DISCOUNTS: closure_15, ANNUAL_DISCOUNT_PERCENTAGE_FALLBACK: closure_16, DEFAULT_APPLE_GRACE_PERIOD_DAYS: closure_17, DEFAULT_GOOGLE_GRACE_PERIOD_DAYS: closure_18, DEFAULT_MAX_GRACE_PERIOD_DAYS: closure_19, DISCOUNT_DURATION_FALLBACK: closure_20, DISCOUNT_PERCENTAGE_FALLBACK: closure_21, DiscountUserUsageLimitIntervalTypes: closure_22, FRACTIONAL_PREMIUM_SKU_INTERVAL_COUNTS: closure_23, FractionalPremiumIntervalTypes: closure_24, FractionalPremiumStates: closure_25, MAX_ACCOUNT_HOLD_DAYS: closure_26, MAX_PAYMENT_PROCESSING_TIME_DAYS: closure_27, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_28, PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS: closure_29, PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS: closure_30, PREMIUM_GUILD_SUBSCRIPTION_PLANS: closure_31, PREMIUM_PLANS: closure_32, PREMIUM_SKU_TO_MONTHLY_PLAN: closure_33, PREMIUM_TIER_2_PLANS: closure_34, PREMIUM_TIER_2_REVERSE_FOLLOWUP_TRIAL_ID: closure_35, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID: closure_36, PREMIUM_TYPE_DISPLAY_NAME: closure_37, PremiumSubscriptionSKUs: closure_38, PremiumTypes: closure_39, PremiumUserLimits: closure_40, SubscriptionIntervalTypes: closure_41, SubscriptionPlanInfo: closure_42, SubscriptionPlans } = tmp3);
-({ TRIAL_FOR_EVERYONE_OFFER_EXPIRES_APPROACHING_THRESHOLD: closure_44, USER_PREMIUM_OFFER_EXPIRES_APPROACHING_4_DAY_THRESHOLD: closure_45, USER_PREMIUM_OFFER_EXPIRES_APPROACHING_7_DAY_THRESHOLD: closure_46 } = tmp3);
-let closure_47 = arg1(dependencyMap[10]).getPremiumGroupProductName;
-const tmp2 = arg1(dependencyMap[8]);
-({ CurrencyCodes: closure_48, PaymentGatewayToFriendlyName: closure_49, PREPAID_PAYMENT_SOURCES: closure_50 } = arg1(dependencyMap[11]));
-let closure_51 = {};
-let closure_52 = {};
-let importDefaultResult = importDefault(dependencyMap[12]);
+({ InvoiceStatusTypes: closure_11, PaymentGateways: closure_12, PriceSetAssignmentPurchaseTypes: closure_13, SubscriptionStatusTypes: closure_14 } = ME);
+({ DISCOUNTS: closure_15, ANNUAL_DISCOUNT_PERCENTAGE_FALLBACK: closure_16, DEFAULT_APPLE_GRACE_PERIOD_DAYS: closure_17, DEFAULT_GOOGLE_GRACE_PERIOD_DAYS: closure_18, DEFAULT_MAX_GRACE_PERIOD_DAYS: closure_19, DISCOUNT_DURATION_FALLBACK: closure_20, DISCOUNT_PERCENTAGE_FALLBACK: closure_21, DiscountUserUsageLimitIntervalTypes: closure_22, FRACTIONAL_PREMIUM_SKU_INTERVAL_COUNTS: closure_23, FractionalPremiumIntervalTypes: closure_24, FractionalPremiumStates: closure_25, MAX_ACCOUNT_HOLD_DAYS: closure_26, MAX_PAYMENT_PROCESSING_TIME_DAYS: closure_27, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_28, PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS: closure_29, PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS: closure_30, PREMIUM_GUILD_SUBSCRIPTION_PLANS: closure_31, PREMIUM_PLANS: closure_32, PREMIUM_SKU_TO_MONTHLY_PLAN: closure_33, PREMIUM_TIER_2_PLANS: closure_34, PREMIUM_TIER_2_REVERSE_FOLLOWUP_TRIAL_ID: closure_35, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID: closure_36, PREMIUM_TYPE_DISPLAY_NAME: closure_37, PremiumSubscriptionSKUs: closure_38, PremiumTypes: closure_39, PremiumUserLimits: closure_40, SubscriptionIntervalTypes: closure_41, SubscriptionPlanInfo: closure_42, SubscriptionPlans } = GuildFeatures);
+({ TRIAL_FOR_EVERYONE_OFFER_EXPIRES_APPROACHING_THRESHOLD: closure_44, USER_PREMIUM_OFFER_EXPIRES_APPROACHING_4_DAY_THRESHOLD: closure_45, USER_PREMIUM_OFFER_EXPIRES_APPROACHING_7_DAY_THRESHOLD: closure_46 } = GuildFeatures);
+({ CurrencyCodes: closure_48, PaymentGatewayToFriendlyName: closure_49, PREPAID_PAYMENT_SOURCES: closure_50 } = sum);
+let closure_51 = { PAYMENT_SOURCE_MANAGEMENT: "https://support.apple.com/HT201266", BILLING_HISTORY: "https://support.apple.com/HT201266", SUBSCRIPTION_MANAGEMENT: "https://support.apple.com/HT202039" };
+let closure_52 = { SUBSCRIPTION_MANAGEMENT: "https://play.google.com/store/account/subscriptions", PAYMENT_SOURCE_MANAGEMENT: "https://play.google.com/store/paymentmethods", BILLING_HISTORY: "https://play.google.com/store/account/orderhistory" };
 importDefaultResult = new importDefaultResult("PremiumUtils.tsx");
 let obj = { BUNDLE: "bundle", TIER_0: "tier_0", TIER_1: "tier_1", TIER_2: "tier_2", PREMIUM_GUILD: "premium_guild" };
 obj = { MID: "mid", HIGH: "high" };
-const items = [, , , , , , , , , , , , ];
+let items = [, , , , , , , , , , , , ];
 ({ NONE_MONTH: arr[0], NONE_3_MONTH: arr[1], NONE_6_MONTH: arr[2], NONE_YEAR: arr[3], PREMIUM_MONTH_TIER_0: arr[4], PREMIUM_MONTH_TIER_1: arr[5], PREMIUM_MONTH_TIER_2: arr[6], PREMIUM_YEAR_TIER_0: arr[7], PREMIUM_YEAR_TIER_1: arr[8], PREMIUM_YEAR_TIER_2: arr[9], PREMIUM_3_MONTH_TIER_2: arr[10], PREMIUM_6_MONTH_TIER_2: arr[11], PREMIUM_GROUP_MONTH: arr[12] } = SubscriptionPlans);
-const set = new Set(items);
+let set = new Set(items);
 obj = {
   isNewUser,
-  isPremiumAtLeast: arg1(dependencyMap[15]).isPremiumAtLeast,
-  isPremium: arg1(dependencyMap[15]).isPremium,
-  isPremiumExactly: arg1(dependencyMap[15]).isPremiumExactly,
+  isPremiumAtLeast: require("isPremiumAtLeast").isPremiumAtLeast,
+  isPremium: require("isPremiumAtLeast").isPremium,
+  isPremiumExactly: require("isPremiumAtLeast").isPremiumExactly,
   isPremiumEligible,
   getPrice,
   getDefaultPrice,
@@ -2335,7 +2376,7 @@ obj = {
       throw error;
     }
   },
-  getUserMaxFileSize: arg1(dependencyMap[33]).getUserMaxFileSize,
+  getUserMaxFileSize: require("getUserMaxFileSize").getUserMaxFileSize,
   getSkuIdForPlan,
   getSkuIdForPremiumType(premiumType) {
     if (closure_39.TIER_0 === premiumType) {
@@ -2386,6 +2427,7 @@ obj = {
     return someResult;
   },
   hasUnconsumedGiftForSubscriptionPlan(size) {
+    let closure_0 = arg1;
     let someResult = null != size;
     if (someResult) {
       someResult = 0 !== size.size;
@@ -2405,7 +2447,7 @@ obj = {
           tmp = !subscriptionPlanId.consumed;
         }
         if (tmp) {
-          tmp = subscriptionPlanId === arg1;
+          tmp = subscriptionPlanId === closure_0;
         }
         return tmp;
       });
@@ -2429,102 +2471,102 @@ obj = {
   getDaysSincePremium,
   getDaysRemainingUntilSubscriptionCurrentPeriodEnds,
   canUseAnimatedEmojis(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).ANIMATED_EMOJIS, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.ANIMATED_EMOJIS, currentUser);
   },
   canUseEmojisEverywhere(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).EMOJIS_EVERYWHERE, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.EMOJIS_EVERYWHERE, currentUser);
   },
   canUseSoundboardEverywhere(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).SOUNDBOARD_EVERYWHERE, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.SOUNDBOARD_EVERYWHERE, currentUser);
   },
   canUseCustomCallSounds(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).CUSTOM_CALL_SOUNDS, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.CUSTOM_CALL_SOUNDS, currentUser);
   },
   canUploadLargeFiles(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).UPLOAD_LARGE_FILES, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.UPLOAD_LARGE_FILES, currentUser);
   },
   canUseBadges(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).PROFILE_BADGES, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.PROFILE_BADGES, currentUser);
   },
   canUseHighVideoUploadQuality(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.INCREASED_VIDEO_UPLOAD_QUALITY, currentUser);
   },
   canEditDiscriminator(stateFromStores) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).CUSTOM_DISCRIMINATOR, stateFromStores);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.CUSTOM_DISCRIMINATOR, stateFromStores);
   },
   hasBoostDiscount(stateFromStores) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).BOOST_DISCOUNT, stateFromStores);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.BOOST_DISCOUNT, stateFromStores);
   },
   canUseAnimatedAvatar(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).ANIMATED_AVATAR, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.ANIMATED_AVATAR, currentUser);
   },
   canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.INSTALL_PREMIUM_APPLICATIONS, isPremiumWithFractionalPremiumOnly);
   },
   canUseIncreasedMessageLength(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).INCREASED_MESSAGE_LENGTH, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.INCREASED_MESSAGE_LENGTH, currentUser);
   },
   canUseIncreasedGuildCap(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).INCREASED_GUILD_LIMIT, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.INCREASED_GUILD_LIMIT, currentUser);
   },
   canRedeemPremiumPerks(isPremiumWithFractionalPremiumOnly) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.REDEEM_PREMIUM_PERKS, isPremiumWithFractionalPremiumOnly);
   },
   canUsePremiumProfileCustomization(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).PROFILE_PREMIUM_FEATURES, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.PROFILE_PREMIUM_FEATURES, currentUser);
   },
   canUsePremiumAppIcons(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).APP_ICONS, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.APP_ICONS, currentUser);
   },
   canUsePremiumGuildMemberProfile(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
   },
   canUseClientThemes(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).CLIENT_THEMES, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.CLIENT_THEMES, currentUser);
   },
   canStreamQuality(HIGH, user) {
     if (HIGH === obj.HIGH) {
-      let canUserUseResult = user(dependencyMap[29]).canUserUse(user(dependencyMap[29]).STREAM_HIGH_QUALITY, user);
-      const obj2 = user(dependencyMap[29]);
+      let canUserUseResult = require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.STREAM_HIGH_QUALITY, user);
+      const obj2 = require(12987) /* _isNativeReflectConstruct */;
     } else {
-      const obj = user(dependencyMap[29]);
-      canUserUseResult = obj.canUserUse(user(dependencyMap[29]).STREAM_MID_QUALITY, user);
+      obj = require(12987) /* _isNativeReflectConstruct */;
+      canUserUseResult = obj.canUserUse(require(12987) /* _isNativeReflectConstruct */.STREAM_MID_QUALITY, user);
     }
     return canUserUseResult;
   },
   canUseQuestOrbMultiplier,
   hasFreeBoosts(stateFromStores) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).FREE_BOOSTS, stateFromStores);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.FREE_BOOSTS, stateFromStores);
   },
   canUseCustomStickersEverywhere(currentUser) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).STICKERS_EVERYWHERE, currentUser);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.STICKERS_EVERYWHERE, currentUser);
   },
   canUseCustomBackgrounds(id) {
-    return arg1(dependencyMap[29]).canUserUse(arg1(dependencyMap[29]).VIDEO_FILTER_ASSETS, id);
+    return require(12987) /* _isNativeReflectConstruct */.canUserUse(require(12987) /* _isNativeReflectConstruct */.VIDEO_FILTER_ASSETS, id);
   },
   canUseCollectibles,
   canUseMonthlyOrbs(perks) {
-    const tmp = !arg1(dependencyMap[30]).getIsCrepeEnabled("canUseMonthlyOrbs");
+    const tmp = !require(6788) /* apexExperiment */.getIsCrepeEnabled("canUseMonthlyOrbs");
     let hasPerkResult = !tmp;
     if (!tmp) {
       perks = undefined;
       if (null != perks) {
         perks = perks.perks;
       }
-      hasPerkResult = arg1(dependencyMap[31]).hasPerk(perks, arg1(dependencyMap[32]).Perk.MONTHLY_ORBS);
-      const obj2 = arg1(dependencyMap[31]);
+      hasPerkResult = require(1865) /* parseServerPerkConfigKind */.hasPerk(perks, require(1867) /* _callSuper */.Perk.MONTHLY_ORBS);
+      const obj2 = require(1865) /* parseServerPerkConfigKind */;
     }
     return hasPerkResult;
   },
   canUseShopDiscounts(currentUser) {
-    let isCrepeEnabled = arg1(dependencyMap[30]).getIsCrepeEnabled("canUseShopDiscounts");
+    let isCrepeEnabled = require(6788) /* apexExperiment */.getIsCrepeEnabled("canUseShopDiscounts");
     if (isCrepeEnabled) {
       let perks;
       if (null != currentUser) {
         perks = currentUser.perks;
       }
-      isCrepeEnabled = arg1(dependencyMap[31]).hasPerk(perks, arg1(dependencyMap[32]).Perk.SHOP_DISCOUNTS);
-      const obj2 = arg1(dependencyMap[31]);
+      isCrepeEnabled = require(1865) /* parseServerPerkConfigKind */.hasPerk(perks, require(1867) /* _callSuper */.Perk.SHOP_DISCOUNTS);
+      const obj2 = require(1865) /* parseServerPerkConfigKind */;
     }
     if (!isCrepeEnabled) {
       isCrepeEnabled = canUseCollectibles(currentUser);
@@ -2532,14 +2574,14 @@ obj = {
     return isCrepeEnabled;
   },
   canUseMoreQuestOrbs(perks) {
-    let isCrepeEnabled = arg1(dependencyMap[30]).getIsCrepeEnabled("canUseMoreQuestOrbs");
+    let isCrepeEnabled = require(6788) /* apexExperiment */.getIsCrepeEnabled("canUseMoreQuestOrbs");
     if (isCrepeEnabled) {
       perks = undefined;
       if (null != perks) {
         perks = perks.perks;
       }
-      isCrepeEnabled = arg1(dependencyMap[31]).hasPerk(perks, arg1(dependencyMap[32]).Perk.MORE_QUEST_ORBS);
-      const obj2 = arg1(dependencyMap[31]);
+      isCrepeEnabled = require(1865) /* parseServerPerkConfigKind */.hasPerk(perks, require(1867) /* _callSuper */.Perk.MORE_QUEST_ORBS);
+      const obj2 = require(1865) /* parseServerPerkConfigKind */;
     }
     if (!isCrepeEnabled) {
       isCrepeEnabled = canUseQuestOrbMultiplier(perks);
@@ -2550,8 +2592,7 @@ obj = {
   StreamQuality: obj
 };
 const frozen = Object.freeze(obj);
-const tmp4 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[34]).fileFinishedImporting("utils/PremiumUtils.tsx");
+let result = set.fileFinishedImporting("utils/PremiumUtils.tsx");
 
 export default frozen;
 export const Branding = obj;
@@ -2589,36 +2630,35 @@ export { getPremiumPlanItem };
 export { getDefaultPrice };
 export { withContextPlanPrices };
 export const usePlanSelectPriceState = function usePlanSelectPriceState(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
   const items = [arg1];
   const memo = React.useMemo(() => {
     let available_plans = null;
-    if (null != arg1) {
+    if (null != closure_1) {
       available_plans = null;
-      if (null != arg1.checkoutContext) {
+      if (null != closure_1.checkoutContext) {
         available_plans = null;
-        if (null != arg1.checkoutContext.available_plans) {
-          available_plans = arg1.checkoutContext.available_plans;
+        if (null != closure_1.checkoutContext.available_plans) {
+          available_plans = closure_1.checkoutContext.available_plans;
         }
       }
     }
     return available_plans;
   }, items);
-  let closure_3 = memo;
   const items1 = [arg0, arg1, memo, arg2];
   return React.useMemo(() => {
-    const obj = { priceOptions: callback(arg0, memo) };
-    let tmp = null != arg0.currency;
+    const obj = { priceOptions: outer1_61(closure_0, memo) };
+    let tmp = null != closure_0.currency;
     if (tmp) {
-      tmp = null != arg1;
+      tmp = null != closure_1;
     }
     if (tmp) {
-      tmp = arg1.currency !== arg0.currency;
+      tmp = closure_1.currency !== closure_0.currency;
     }
     if (tmp) {
-      tmp = null == arg2;
+      tmp = null == closure_2;
     }
     obj.planPricesLoading = tmp;
     return obj;
@@ -2637,7 +2677,7 @@ export { getServerPriceFromClientPrice };
 export { getItemPlansTotalServerPrice };
 export const getSubscriptionWithNewPlansTotalServerPrice = function getSubscriptionWithNewPlansTotalServerPrice(renewalMutations, items) {
   if (null === items) {
-    importDefault(dependencyMap[16])(null !== renewalMutations, "Subscription can't be null");
+    importDefault(44)(null !== renewalMutations, "Subscription can't be null");
     items = [];
   }
   if (null !== renewalMutations) {
@@ -2650,11 +2690,11 @@ export const getSubscriptionWithNewPlansTotalServerPrice = function getSubscript
 export { getInterval };
 export const getDiscountIntervalString = function getDiscountIntervalString(arg0) {
   if (constants4.MONTH === arg0) {
-    const intl2 = arg1(dependencyMap[17]).intl;
-    return intl2.string(arg1(dependencyMap[17]).t.FPybU7);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.FPybU7);
   } else if (constants4.YEAR === arg0) {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.tfqrhj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.tfqrhj);
   } else {
     if (constants4.DAY !== arg0) {
       const WEEK = constants4.WEEK;
@@ -2670,18 +2710,18 @@ export { getPremiumType };
 export { getDisplayName };
 export const getDisplayNameFromSku = function getDisplayNameFromSku(sku_id1) {
   if (closure_38.TIER_0 === sku_id1) {
-    const intl3 = arg1(dependencyMap[17]).intl;
-    return intl3.string(arg1(dependencyMap[17]).t.t9uG/o);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t["t9uG/o"]);
   } else if (closure_38.TIER_1 === sku_id1) {
-    const intl2 = arg1(dependencyMap[17]).intl;
-    return intl2.string(arg1(dependencyMap[17]).t.FSOz78);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.FSOz78);
   } else if (closure_38.TIER_2 === sku_id1) {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.lG6a5x);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.lG6a5x);
   } else {
     const _Error = Error;
     const error = new Error("Unsupported sku");
-    let obj = arg1(dependencyMap[13]);
+    let obj = require(3791) /* _createGatewayCheckoutContext */;
     obj = {};
     obj = { skuId: sku_id1 };
     obj.tags = obj;
@@ -2698,20 +2738,20 @@ export const getPremiumTypeDisplayName = function getPremiumTypeDisplayName(TIER
   if (closure_39.TIER_0 === TIER_0) {
     let str2 = "Basic";
     if (!flag) {
-      const intl3 = arg1(dependencyMap[17]).intl;
-      str2 = intl3.string(arg1(dependencyMap[17]).t.t9uG/o);
+      const intl3 = require(1212) /* getSystemLocale */.intl;
+      str2 = intl3.string(require(1212) /* getSystemLocale */.t["t9uG/o"]);
     }
     return str2;
   } else if (closure_39.TIER_1 === TIER_0) {
     let str = "Classic";
     if (!flag) {
-      const intl2 = arg1(dependencyMap[17]).intl;
-      str = intl2.string(arg1(dependencyMap[17]).t.FSOz78);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      str = intl2.string(require(1212) /* getSystemLocale */.t.FSOz78);
     }
     return str;
   } else if (closure_39.TIER_2 === TIER_0) {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.lG6a5x);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.lG6a5x);
   }
 };
 export const getPlanDescriptionFromInvoice = function getPlanDescriptionFromInvoice(hasDiscountApplied) {
@@ -2736,7 +2776,7 @@ export const getPlanDescriptionFromInvoice = function getPlanDescriptionFromInvo
     hasFractionalPremiumWithSub = false;
   }
   const value = store.get(planId);
-  importDefault(dependencyMap[16])(null != value, "Missing plan");
+  importDefault(44)(null != value, "Missing plan");
   const obj = { subscription, planId: value.id, price: getFormattedPlanPriceFromInvoice(renewalInvoicePreview, subscription, value), includePremiumGuilds, hasDiscountApplied: flag, activeDiscountInfo, renewalInvoiceWithoutEntitlementsPreview: renewalInvoicePreview, renewalInvoiceWithEntitlementsPreview, hasFractionalPremiumWithSub, fractionalPremiumInfo: hasDiscountApplied.fractionalPremiumInfo };
   return getPlanDescription(obj);
 };
@@ -2750,14 +2790,14 @@ export const getExternalPlanDisplayName = function getExternalPlanDisplayName(re
   }
   let found;
   if (null != additionalPlans) {
-    found = additionalPlans.find((planId) => set.has(planId.planId));
+    found = additionalPlans.find((planId) => outer1_31.has(planId.planId));
   }
   planId = undefined;
   if (null != found) {
     planId = found.planId;
   }
   if (planId === SubscriptionPlans.PREMIUM_MONTH_GUILD) {
-    let Pi5yMJ = arg1(dependencyMap[17]).t.Pi5yMJ;
+    let Pi5yMJ = require(1212) /* getSystemLocale */.t.Pi5yMJ;
   } else {
     let planId1;
     if (null != found) {
@@ -2766,7 +2806,7 @@ export const getExternalPlanDisplayName = function getExternalPlanDisplayName(re
     Pi5yMJ = null;
   }
   if (null != Pi5yMJ) {
-    const intl = arg1(dependencyMap[17]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     let obj = {};
     let quantity;
     if (null != found) {
@@ -2777,9 +2817,9 @@ export const getExternalPlanDisplayName = function getExternalPlanDisplayName(re
   }
   if (null != tmp) {
     if (null != formatToPlainStringResult) {
-      const intl2 = arg1(dependencyMap[17]).intl;
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       obj = { premiumDescription: tmp, premiumGuildDescription: formatToPlainStringResult };
-      return intl2.formatToPlainString(arg1(dependencyMap[17]).t.FN5T9r, obj);
+      return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.FN5T9r, obj);
     }
   }
   if (null != tmp) {
@@ -2829,7 +2869,7 @@ export const getPlanIdForPremiumType = function getPlanIdForPremiumType(first, f
     const error1 = new Error("Unsupported plan interval for premium type: " + first1);
     throw error1;
   }
-  const set = new Set(items);
+  set = new Set(items);
 };
 export { getNumPremiumGuildSubscriptions };
 export { subscriptionHasPremiumGuildPlan };
@@ -2869,7 +2909,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
   ({ user, price, renewalInvoicePreview, fractionalPremiumInfo } = subscription);
   const renewalMutations = subscription.renewalMutations;
   const value = store.get(subscription.planId);
-  importDefault(dependencyMap[16])(null != value, "Missing plan");
+  importDefault(44)(null != value, "Missing plan");
   const tmp4 = getNumPremiumGuildSubscriptions(subscription.additionalPlans);
   let additionalPlans;
   if (null != renewalMutations) {
@@ -2887,7 +2927,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
       let amount = null;
       if (null != renewalInvoicePreview) {
         const invoiceItems = renewalInvoicePreview.invoiceItems;
-        const found = invoiceItems.find((subscriptionPlanId) => set.has(subscriptionPlanId.subscriptionPlanId));
+        const found = invoiceItems.find((subscriptionPlanId) => outer1_31.has(subscriptionPlanId.subscriptionPlanId));
         if (null != found) {
           amount = found.amount;
         }
@@ -2905,14 +2945,14 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
         if (null == amount) {
           break;
         } else {
-          let tmp21 = arg1;
+          let tmp21 = require;
           let tmp22 = dependencyMap;
           let num = 22;
-          let obj = arg1(dependencyMap[22]);
+          let obj = require(5618) /* formatSingleCurrencyPrice */;
           let tmp23 = amount;
           let tmp24 = subscription;
           formatPriceResult = obj.formatPrice(amount, tmp.currency);
-          // break
+          break;
         }
         tmp10 = formatPriceResult;
       }
@@ -2920,7 +2960,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
   }
   let str = "";
   if (null != tmp10) {
-    let obj1 = arg1(dependencyMap[22]);
+    let obj1 = require(5618) /* formatSingleCurrencyPrice */;
     str = obj1.formatRate(tmp10, value.interval, value.intervalCount);
   }
   let taxInclusive;
@@ -2936,26 +2976,26 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
     taxInclusive = taxInclusive1;
   }
   if (isPremiumGuildSubscriptionCanceled(subscription)) {
-    const intl8 = arg1(dependencyMap[17]).intl;
+    const intl8 = require(1212) /* getSystemLocale */.intl;
     const format3 = intl8.format;
-    const t4 = arg1(dependencyMap[17]).t;
+    const t4 = require(1212) /* getSystemLocale */.t;
     if (tmp25) {
       obj = { quantity: tmp4 };
-      let format3Result = format3(t4.3/WTrI, obj);
+      let format3Result = format3(t4["3/WTrI"], obj);
     } else if (tmp31) {
       obj = { quantity: tmp4, rate: str };
-      format3Result = format3(t4.0ozBSB, obj);
+      format3Result = format3(t4["0ozBSB"], obj);
     } else {
       obj1 = { quantity: tmp4, rate: str };
-      format3Result = format3(t4.yjsv/s, obj1);
+      format3Result = format3(t4["yjsv/s"], obj1);
     }
     return format3Result;
   } else {
     const status = tmp.status;
     if (constants3.ACCOUNT_HOLD === status) {
-      const intl7 = arg1(dependencyMap[17]).intl;
+      const intl7 = require(1212) /* getSystemLocale */.intl;
       const format2 = intl7.format;
-      const t3 = arg1(dependencyMap[17]).t;
+      const t3 = require(1212) /* getSystemLocale */.t;
       if (tmp25) {
         const obj2 = { quantity: tmp4, boostQuantity: tmp4 };
         let format2Result = format2(t3.Nlf3nc, obj2);
@@ -2964,7 +3004,7 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
         format2Result = format2(t3.oiRy7v, obj3);
       } else {
         const obj4 = { quantity: tmp4, boostQuantity: tmp4, rate: str };
-        format2Result = format2(t3.0QxOAi, obj4);
+        format2Result = format2(t3["0QxOAi"], obj4);
       }
       return format2Result;
     } else {
@@ -2972,35 +3012,35 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
         if (constants3.PAUSED !== status) {
           if (constants3.PAST_DUE === status) {
             if (tmp.isBoostOnly) {
-              const intl4 = arg1(dependencyMap[17]).intl;
+              const intl4 = require(1212) /* getSystemLocale */.intl;
               const obj5 = {};
-              let obj8 = arg1(dependencyMap[20]);
+              let obj8 = require(3800) /* resetCache */;
               obj5.endDate = obj8.dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
               obj5.onClick = function onClick() {
-                callback(closure_2[21])("https://support.discord.com/hc/articles/23082866222871");
+                outer1_1(outer1_2[21])("https://support.discord.com/hc/articles/23082866222871");
               };
-              return intl4.format(arg1(dependencyMap[17]).t.d+0vwo, obj5);
+              return intl4.format(require(1212) /* getSystemLocale */.t["d+0vwo"], obj5);
             }
           }
-          const tmp37 = arg1(dependencyMap[17]);
+          const tmp37 = require(1212) /* getSystemLocale */;
           if (tmp9) {
             if (tmp25) {
               const intl3 = tmp37.intl;
               const obj6 = { activeQuantity: tmp6, pendingQuantity: bound };
-              return intl3.format(tmp35(tmp36[17]).t.krRy+d, obj6);
+              return intl3.format(tmp35(1212).t["krRy+d"], obj6);
             } else {
               const t2 = tmp37.t;
-              const intl2 = arg1(dependencyMap[17]).intl;
+              const intl2 = require(1212) /* getSystemLocale */.intl;
               const obj7 = { activeQuantity: tmp6, pendingQuantity: bound, rate: str };
-              return intl2.format(tmp31 ? t2.4nc7+E : t2.BmaudS, obj7);
+              return intl2.format(tmp31 ? t2["4nc7+E"] : t2.BmaudS, obj7);
             }
           } else {
             const intl = tmp37.intl;
             const format = intl.format;
-            const t = tmp35(tmp36[17]).t;
+            const t = tmp35(1212).t;
             if (tmp25) {
               obj8 = { quantity: tmp4 };
-              let formatResult = format(t.5iud9s, obj8);
+              let formatResult = format(t["5iud9s"], obj8);
             } else if (tmp31) {
               const obj9 = { quantity: tmp4, rate: str };
               formatResult = format(t.eDwrLA, obj9);
@@ -3014,21 +3054,21 @@ export const getPremiumGuildHeaderDescription = function getPremiumGuildHeaderDe
       }
       if (null != fractionalPremiumInfo) {
         if (!fractionalPremiumInfo.isFractionalPremiumActive) {
-          const intl5 = arg1(dependencyMap[17]).intl;
-          let stringResult = intl5.string(arg1(dependencyMap[17]).t.CduWAm);
+          const intl5 = require(1212) /* getSystemLocale */.intl;
+          let stringResult = intl5.string(require(1212) /* getSystemLocale */.t.CduWAm);
         }
         return stringResult;
       }
-      const intl6 = arg1(dependencyMap[17]).intl;
+      const intl6 = require(1212) /* getSystemLocale */.intl;
       const obj11 = { quantity: tmp4 };
-      stringResult = intl6.format(arg1(dependencyMap[17]).t.5iud9s, obj11);
+      stringResult = intl6.format(require(1212) /* getSystemLocale */.t["5iud9s"], obj11);
     }
   }
 };
 export { getFormattedPriceForPlan };
 export const getFormattedRateForPlan = function getFormattedRateForPlan(interval) {
   const tmp = getFormattedPriceForPlan(interval, arg1, arg2);
-  return arg1(dependencyMap[22]).formatRate(tmp, interval.interval, interval.intervalCount);
+  return require(5618) /* formatSingleCurrencyPrice */.formatRate(tmp, interval.interval, interval.intervalCount);
 };
 export { getPlanIdFromInvoice };
 export { getStatusFromInvoice };
@@ -3056,9 +3096,9 @@ export const formatTrialOfferIntervalDuration = function formatTrialOfferInterva
     let num4 = 7;
     if (num >= 7) {
       if (num % num4 === 0) {
-        const intl4 = arg1(dependencyMap[17]).intl;
+        const intl4 = require(1212) /* getSystemLocale */.intl;
         const formatToPlainString4 = intl4.formatToPlainString;
-        let t = arg1(dependencyMap[17]).t;
+        let t = require(1212) /* getSystemLocale */.t;
         if (flag) {
           t = {};
           num4 = num / num4;
@@ -3070,39 +3110,39 @@ export const formatTrialOfferIntervalDuration = function formatTrialOfferInterva
         }
       }
     }
-    const intl3 = arg1(dependencyMap[17]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString3 = intl3.formatToPlainString;
-    const t3 = arg1(dependencyMap[17]).t;
+    const t3 = require(1212) /* getSystemLocale */.t;
     if (flag) {
       obj = { days: num };
-      let formatToPlainString3Result = formatToPlainString3(t3.6Cdzoy, obj);
+      let formatToPlainString3Result = formatToPlainString3(t3["6Cdzoy"], obj);
     } else {
       const obj1 = { days: num };
-      formatToPlainString3Result = formatToPlainString3(t3.kbBj/h, obj1);
+      formatToPlainString3Result = formatToPlainString3(t3["kbBj/h"], obj1);
     }
     return formatToPlainString3Result;
   } else if (constants6.MONTH === MONTH) {
-    const intl2 = arg1(dependencyMap[17]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString2 = intl2.formatToPlainString;
-    const t2 = arg1(dependencyMap[17]).t;
+    const t2 = require(1212) /* getSystemLocale */.t;
     if (flag) {
       const obj2 = { months: num };
       let formatToPlainString2Result = formatToPlainString2(t2.x5MgxS, obj2);
     } else {
       const obj3 = { months: num };
-      formatToPlainString2Result = formatToPlainString2(t2.4SEnCZ, obj3);
+      formatToPlainString2Result = formatToPlainString2(t2["4SEnCZ"], obj3);
     }
     return formatToPlainString2Result;
   } else if (constants6.YEAR === MONTH) {
-    const intl = arg1(dependencyMap[17]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl.formatToPlainString;
-    t = arg1(dependencyMap[17]).t;
+    t = require(1212) /* getSystemLocale */.t;
     if (flag) {
       const obj4 = { years: num };
-      let formatToPlainStringResult = formatToPlainString(t.h+63yl, obj4);
+      let formatToPlainStringResult = formatToPlainString(t["h+63yl"], obj4);
     } else {
       obj = { years: num };
-      formatToPlainStringResult = formatToPlainString(t.9DFiHk, obj);
+      formatToPlainStringResult = formatToPlainString(t["9DFiHk"], obj);
     }
     return formatToPlainStringResult;
   } else {
@@ -3141,9 +3181,9 @@ export const formatIntervalDuration = function formatIntervalDuration(intervalTy
     let num4 = 7;
     if (num >= 7) {
       if (num % num4 === 0) {
-        const intl4 = arg1(dependencyMap[17]).intl;
+        const intl4 = require(1212) /* getSystemLocale */.intl;
         const formatToPlainString4 = intl4.formatToPlainString;
-        let t = arg1(dependencyMap[17]).t;
+        let t = require(1212) /* getSystemLocale */.t;
         if (flag) {
           t = {};
           num4 = num / num4;
@@ -3155,21 +3195,21 @@ export const formatIntervalDuration = function formatIntervalDuration(intervalTy
         }
       }
     }
-    const intl3 = arg1(dependencyMap[17]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString3 = intl3.formatToPlainString;
-    const t3 = arg1(dependencyMap[17]).t;
+    const t3 = require(1212) /* getSystemLocale */.t;
     if (flag) {
       obj = { days: num };
       let formatToPlainString3Result = formatToPlainString3(t3.jzH70Z, obj);
     } else {
       const obj1 = { days: num };
-      formatToPlainString3Result = formatToPlainString3(t3.k2UNz+, obj1);
+      formatToPlainString3Result = formatToPlainString3(t3["k2UNz+"], obj1);
     }
     return formatToPlainString3Result;
   } else if (constants6.MONTH === MONTH) {
-    const intl2 = arg1(dependencyMap[17]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString2 = intl2.formatToPlainString;
-    const t2 = arg1(dependencyMap[17]).t;
+    const t2 = require(1212) /* getSystemLocale */.t;
     if (flag) {
       const obj2 = { months: num };
       let formatToPlainString2Result = formatToPlainString2(t2.erUSmA, obj2);
@@ -3179,9 +3219,9 @@ export const formatIntervalDuration = function formatIntervalDuration(intervalTy
     }
     return formatToPlainString2Result;
   } else if (constants6.YEAR === MONTH) {
-    const intl = arg1(dependencyMap[17]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl.formatToPlainString;
-    t = arg1(dependencyMap[17]).t;
+    t = require(1212) /* getSystemLocale */.t;
     if (flag) {
       const obj4 = { years: num };
       let formatToPlainStringResult = formatToPlainString(t.IfYQVC, obj4);
@@ -3198,7 +3238,7 @@ export const formatIntervalDuration = function formatIntervalDuration(intervalTy
 };
 export { getExternalSubscriptionMethodUrl };
 export const hasPremiumSubscriptionToDisplay = function hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription) {
-  let isPremiumResult = premiumTypeSubscription(dependencyMap[15]).isPremium(currentUser);
+  let isPremiumResult = require(1872) /* isPremiumAtLeast */.isPremium(currentUser);
   if (!isPremiumResult) {
     let status;
     if (null != premiumTypeSubscription) {
@@ -3211,12 +3251,12 @@ export const hasPremiumSubscriptionToDisplay = function hasPremiumSubscriptionTo
 };
 export const useHasPremiumSubscriptionToDisplay = function useHasPremiumSubscriptionToDisplay() {
   const items = [closure_10];
-  const stateFromStores = arg1(dependencyMap[26]).useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
-  const obj = arg1(dependencyMap[26]);
-  const items1 = [closure_6];
-  const stateFromStores1 = arg1(dependencyMap[26]).useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const obj2 = arg1(dependencyMap[26]);
-  let isPremiumResult = arg1(dependencyMap[15]).isPremium(stateFromStores1);
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_10.getPremiumTypeSubscription());
+  const obj = require(566) /* initialize */;
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_6.getCurrentUser());
+  const obj2 = require(566) /* initialize */;
+  let isPremiumResult = require(1872) /* isPremiumAtLeast */.isPremium(stateFromStores1);
   if (!isPremiumResult) {
     let status;
     if (null != stateFromStores) {
@@ -3239,27 +3279,26 @@ export const getItemsWithUpsertedPremiumGuildPlan = function getItemsWithUpserte
 export const coerceExistingItemsToNewItemInterval = function coerceExistingItemsToNewItemInterval(items) {
   let found = items.find((arg0) => !("id" in arg0));
   if (null == found) {
-    found = items.find((planId) => set.has(planId.planId));
+    found = items.find((planId) => outer1_32.has(planId.planId));
   }
-  const arg1 = found;
   let mapped = items;
   if (null != found) {
-    const value = store.get(found.planId);
+    let value = store.get(found.planId);
     const importDefault = value;
-    importDefault(dependencyMap[16])(null != value, "Missing plan");
+    importDefault(44)(null != value, "Missing plan");
     mapped = items.map((planId) => {
       if (planId === found) {
         return planId;
       } else {
-        const value = store.get(planId.planId);
-        value(closure_2[16])(null != value, "Missing plan");
+        const value = outer1_9.get(planId.planId);
+        value(outer1_2[16])(null != value, "Missing plan");
         if (value.interval === value.interval) {
           if (value.intervalCount === value.intervalCount) {
             return planId;
           }
         }
-        const forSkuAndInterval = store.getForSkuAndInterval(value.skuId, value.interval, value.intervalCount);
-        value(closure_2[16])(null != forSkuAndInterval, "Missing planForInterval");
+        const forSkuAndInterval = outer1_9.getForSkuAndInterval(value.skuId, value.interval, value.intervalCount);
+        value(outer1_2[16])(null != forSkuAndInterval, "Missing planForInterval");
         const obj = {};
         const merged = Object.assign(planId);
         obj["planId"] = forSkuAndInterval.id;
@@ -3276,7 +3315,7 @@ export const getMaxFileSizeForPremiumType = function getMaxFileSizeForPremiumTyp
     tmp = obj;
   }
   obj = { useKibibytes: true, useSpace: tmp.useSpace };
-  return arg1(dependencyMap[28]).formatSize(closure_40[TIER_0].fileSize / 1024, obj);
+  return require(4025) /* formatSize */.formatSize(table4[TIER_0].fileSize / 1024, obj);
 };
 export { getGuildBoostPlanItem };
 export { isBoostOnlySubscription };
@@ -3313,15 +3352,15 @@ export const getPremiumTypeFromPlanId = function getPremiumTypeFromPlanId(arg0) 
 export const isNitroLockedState = function isNitroLockedState(arg0) {
   return "isNitroLocked" in arg0;
 };
-export const isPremiumAtLeast = arg1(dependencyMap[15]).isPremiumAtLeast;
-export const isPremiumAtMost = arg1(dependencyMap[15]).isPremiumAtMost;
-export const isPremium = arg1(dependencyMap[15]).isPremium;
-export const isPremiumExactly = arg1(dependencyMap[15]).isPremiumExactly;
+export const isPremiumAtLeast = require("isPremiumAtLeast").isPremiumAtLeast;
+export const isPremiumAtMost = require("isPremiumAtLeast").isPremiumAtMost;
+export const isPremium = require("isPremiumAtLeast").isPremium;
+export const isPremiumExactly = require("isPremiumAtLeast").isPremiumExactly;
 export const useHasTier2Premium = function useHasTier2Premium() {
-  const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[26]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = arg1(dependencyMap[26]);
-  return arg1(dependencyMap[15]).isPremiumExactly(stateFromStores, closure_39.TIER_2);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_6.getCurrentUser());
+  const obj = require(566) /* initialize */;
+  return require(1872) /* isPremiumAtLeast */.isPremiumExactly(stateFromStores, closure_39.TIER_2);
 };
 export const getOfferNoticeThreshold = function getOfferNoticeThreshold(trial_id) {
   if (isTrialOffer(trial_id)) {
@@ -3346,7 +3385,7 @@ export { getFractionalPremiumUnitsHoursFromSkuIds };
 export { getMonthlyPrice };
 export const getSavingsPercent = function getSavingsPercent(subscriptionPlan) {
   subscriptionPlan = subscriptionPlan.subscriptionPlan;
-  let tmp3 = closure_15[subscriptionPlan.planId];
+  let tmp3 = table[subscriptionPlan.planId];
   if (null != subscriptionPlan) {
     tmp3 = calculateDiscountPercentageForYearlyPlan(subscriptionPlan, tmp, tmp2);
   }

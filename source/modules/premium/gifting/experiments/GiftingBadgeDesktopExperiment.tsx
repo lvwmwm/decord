@@ -1,13 +1,14 @@
-// Module ID: 12391
-// Function ID: 94721
+// Module ID: 12505
+// Function ID: 96877
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 12391 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/premium/gifting/experiments/GiftingBadgeDesktopExperiment.tsx");
+// Module 12505 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-06-gifting-badge-desktop", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/premium/gifting/experiments/GiftingBadgeDesktopExperiment.tsx");
 
 export default apexExperiment;
 export const GiftingBadgeDesktopExperiment = apexExperiment;

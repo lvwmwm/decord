@@ -1,28 +1,30 @@
-// Module ID: 14034
-// Function ID: 106712
+// Module ID: 14148
+// Function ID: 108868
 // Name: toggle
-// Dependencies: []
+// Dependencies: [4177, 7662, 566, 1212, 10095, 10723, 2]
 
-// Module 14034 (toggle)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+// Module 14148 (toggle)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.cUMdH0);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.cUMdH0);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.VOICE,
+  parent: require("MobileSetting").MobileSetting.VOICE,
   useValue: function useAutomaticGainControlSettingValue() {
-    const items = [closure_2];
-    return arg1(dependencyMap[2]).useStateFromStores(items, () => automaticGainControl.getAutomaticGainControl());
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getAutomaticGainControl());
   },
-  onValueChange: arg1(dependencyMap[5]).handleAutomaticGainControlChange,
+  onValueChange: require("getSelectedNoiseSuppressionOption").handleAutomaticGainControlChange,
   useDescription: function useAutomaticGainControlSettingDescription() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.6EjbvA);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["6EjbvA"]);
   }
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/AutomaticGainControlSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/AutomaticGainControlSetting.tsx");
 
-export default toggle;
+export default createToggle;

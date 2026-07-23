@@ -1,10 +1,9 @@
-// Module ID: 7787
-// Function ID: 62148
+// Module ID: 7793
+// Function ID: 62185
 // Name: TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 7787 (TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/interaction_components/InteractionComponentConstants.tsx");
+// Module 7793 (TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS)
+const result = require("set").fileFinishedImporting("modules/interaction_components/InteractionComponentConstants.tsx");
 
-export const TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS = {};
+export const TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS = { allowList: true, allowHeading: true, allowLinks: true, allowGameMentions: true, previewLinkTarget: true };

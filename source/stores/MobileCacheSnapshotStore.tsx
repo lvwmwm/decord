@@ -1,9 +1,16 @@
 // Module ID: 1196
-// Function ID: 13739
+// Function ID: 13740
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 686, 44, 587, 566, 2]
 
 // Module 1196 (_isNativeReflectConstruct)
+import invariant from "invariant";
+import Storage from "Storage";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,21 +20,16 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const tmp2 = (Store) => {
+const tmp2 = ((Store) => {
   class MobileCacheSnapshotStore {
     constructor(arg0, arg1) {
       self = this;
-      tmp = MobileCacheSnapshotStore;
-      tmp2 = closure_3(this, MobileCacheSnapshotStore);
-      tmp3 = closure_1;
-      tmp4 = closure_2;
+      tmp = apply;
+      tmp2 = outer1_3(this, apply);
+      tmp3 = outer1_1;
+      tmp4 = outer1_2;
       items = [, , ];
-      items[0] = closure_1(closure_2[5]);
+      items[0] = outer1_1(outer1_2[5]);
       obj = {};
       merged = Object.assign(Store);
       obj["CLEAR_CACHES"] = function CLEAR_CACHES() {
@@ -40,18 +42,18 @@ const tmp2 = (Store) => {
       };
       items[1] = obj;
       items[2] = arg1;
-      obj2 = closure_6(MobileCacheSnapshotStore);
-      tmp6 = closure_5;
-      if (closure_8()) {
+      obj2 = outer1_6(apply);
+      tmp6 = outer1_5;
+      if (outer1_8()) {
         tmp8 = globalThis;
         _Reflect = Reflect;
-        tmp9 = closure_6;
-        constructResult = Reflect.construct(obj2, items, closure_6(self).constructor);
+        tmp9 = outer1_6;
+        constructResult = Reflect.construct(obj2, items, outer1_6(self).constructor);
       } else {
         constructResult = obj2.apply(self, items);
       }
       tmp6Result = tmp6(self, constructResult);
-      MobileCacheSnapshotStore = tmp6Result;
+      apply = tmp6Result;
       tmp3Result = tmp3(tmp4[6]);
       tmp10Result = tmp3Result(null != tmp6Result.getClass().displayName, "Snapshot stores need a display name");
       tmp12 = tmp3(tmp4[6])(!("CLEAR_CACHES" in Store), "MobileCacheSnapshotStores cannot use the 'CLEAR_CACHES' action");
@@ -61,7 +63,6 @@ const tmp2 = (Store) => {
       return tmp6Result;
     }
   }
-  const arg1 = MobileCacheSnapshotStore;
   callback2(MobileCacheSnapshotStore, Store);
   let obj = {
     key: "persistKey",
@@ -69,11 +70,11 @@ const tmp2 = (Store) => {
       return "" + this.getClass().displayName + "-snapshot";
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "clear",
     value() {
-      const Storage = MobileCacheSnapshotStore(closure_2[7]).Storage;
+      const Storage = MobileCacheSnapshotStore(outer1_2[7]).Storage;
       Storage.remove(this.persistKey);
     }
   };
@@ -81,7 +82,7 @@ const tmp2 = (Store) => {
   obj = {
     key: "save",
     value() {
-      const Storage = MobileCacheSnapshotStore(closure_2[7]).Storage;
+      const Storage = MobileCacheSnapshotStore(outer1_2[7]).Storage;
       const result = Storage.set(this.persistKey, this.takeSnapshot());
     }
   };
@@ -89,7 +90,7 @@ const tmp2 = (Store) => {
   items[3] = {
     key: "readSnapshot",
     value(arg0) {
-      const Storage = MobileCacheSnapshotStore(closure_2[7]).Storage;
+      const Storage = MobileCacheSnapshotStore(outer1_2[7]).Storage;
       const value = Storage.get(this.persistKey);
       let data = null;
       if (null != value) {
@@ -117,8 +118,8 @@ const tmp2 = (Store) => {
     }
   ];
   return callback(MobileCacheSnapshotStore, items, items1);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp2.allStores = [];
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/MobileCacheSnapshotStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/MobileCacheSnapshotStore.tsx");
 
 export default tmp2;

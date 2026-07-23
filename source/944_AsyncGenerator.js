@@ -1,37 +1,39 @@
 // Module ID: 944
-// Function ID: 10221
+// Function ID: 10222
 // Name: AsyncGenerator
-// Dependencies: []
+// Dependencies: [943]
 
 // Module 944 (AsyncGenerator)
 class AsyncGenerator {
   constructor(arg0) {
-    require = global;
+    closure_0 = global;
     resume = function resume(arg0, arg1) {
-      const iter = arg0[arg0](arg1);
-      const value = iter.value;
-      const tmp = value instanceof arg0(iter[0]);
+      const dependencyMap = arg0;
+      const iter = dependencyMap[arg0](arg1);
+      let value = iter.value;
+      let closure_2 = value;
+      const tmp = value instanceof dependencyMap(outer1_1[0]);
       const resume = tmp;
       const resolved = Promise.resolve(tmp ? value.v : value);
       resolved.then((done) => {
         let value = done;
         if (tmp) {
           let str = "next";
-          if ("return" === done) {
+          if ("return" === dependencyMap) {
             str = "return";
           }
           if (value.k) {
             if (!done.done) {
-              value = done[str](done).value;
+              value = dependencyMap[str](done).value;
             }
           }
-          done(str, done);
+          dependencyMap(str, done);
         }
         let str3 = "normal";
         if (iter.done) {
           str3 = "return";
         }
-        closure_4(str3, value);
+        outer1_4(str3, value);
       }, (arg0) => {
 
       });
@@ -46,22 +48,28 @@ class AsyncGenerator {
         obj = { value, done: false };
         next.resolve(obj);
       }
-      const next = next.next;
+      next = next.next;
       if (next) {
         resume(next.key, next.arg);
       } else {
-        let closure_2 = null;
+        let c2 = null;
       }
     };
-    this._invoke = (arg0, arg1) => new Promise((resolve, reject) => {
-      const obj = { key: resolve, arg: reject, resolve, reject, next: null };
-      if (obj) {
-        obj.next = obj;
-      } else {
-        reject = obj;
-        callback(resolve, reject);
-      }
-    });
+    this._invoke = (arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      return new Promise((resolve, reject) => {
+        const obj = { key: closure_0, arg: closure_1, resolve, reject, next: null };
+        if (outer1_2) {
+          outer1_2.next = obj;
+          outer1_2 = obj;
+        } else {
+          outer1_2 = obj;
+          closure_1 = obj;
+          outer1_3(closure_0, closure_1);
+        }
+      });
+    };
     if ("function" !== typeof global.return) {
       tmp.return = undefined;
     }
@@ -90,8 +98,8 @@ AsyncGenerator.prototype[str] = function() {
 };
 
 export default function _wrapAsyncGenerator(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   return function() {
-    return new closure_2(arg0(...arguments));
+    return new outer1_2(callback(...arguments));
   };
 };

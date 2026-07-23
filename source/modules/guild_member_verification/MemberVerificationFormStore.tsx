@@ -1,9 +1,16 @@
-// Module ID: 5079
-// Function ID: 44211
+// Module ID: 5082
+// Function ID: 44230
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 22, 3950, 566, 686, 2]
 
-// Module 5079 (_isNativeReflectConstruct)
+// Module 5082 (_isNativeReflectConstruct)
+import isTermsFormField from "isTermsFormField";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,26 +20,21 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let obj = { "Null": "Normal", "Null": true, formFields: [] };
+let obj = { version: "", description: "", formFields: [] };
 let closure_9 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class MemberVerificationFormStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, MemberVerificationFormStore);
-      obj = closure_6(MemberVerificationFormStore);
-      tmp2 = closure_5;
-      if (closure_10()) {
+      tmp = outer1_3(this, MemberVerificationFormStore);
+      obj = outer1_6(MemberVerificationFormStore);
+      tmp2 = outer1_5;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,13 +43,12 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = MemberVerificationFormStore;
   callback2(MemberVerificationFormStore, Store);
   let obj = {
     key: "get",
     value(arg0) {
       if (null != arg0) {
-        return closure_9[arg0];
+        return outer1_9[arg0];
       }
     }
   };
@@ -56,15 +57,15 @@ let tmp2 = (Store) => {
     key: "getRulesPrompt",
     value(arg0) {
       let formFields;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         formFields = tmp.formFields;
       }
-      return callback(closure_2[5]).find(formFields, MemberVerificationFormStore(closure_2[6]).isTermsFormField);
+      return outer1_1(outer1_2[5]).find(formFields, MemberVerificationFormStore(outer1_2[6]).isTermsFormField);
     }
   };
   items[1] = obj;
   return callback(MemberVerificationFormStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "MemberVerificationFormStore";
 obj = {
   INVITE_ACCEPT_SUCCESS: function handleInviteData(invite) {
@@ -94,36 +95,36 @@ obj = {
     let guildId;
     ({ form, guildId } = arg0);
     if (null == form) {
-      closure_9[guildId] = obj;
+      dependencyMap[guildId] = obj;
     } else {
-      let tmp2 = closure_9[guildId];
+      let tmp2 = dependencyMap[guildId];
       if (null == tmp2) {
         tmp2 = obj;
       }
-      const obj = {};
+      obj = {};
       const merged = Object.assign(tmp2);
       const merged1 = Object.assign(form);
-      closure_9[guildId] = obj;
+      dependencyMap[guildId] = obj;
     }
   },
   MEMBER_VERIFICATION_FORM_FETCH_FAIL: function handleVerificationFormFetchFail(guildId) {
     guildId = guildId.guildId;
-    let tmp2 = closure_9[guildId];
+    let tmp2 = dependencyMap[guildId];
     if (null == tmp2) {
       tmp2 = obj;
     }
-    closure_9[guildId] = tmp2;
+    dependencyMap[guildId] = tmp2;
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
     guild = guild.guild;
     if (null != guild) {
       const id = guild.id;
     }
-    delete r2[r1];
+    delete tmp2[tmp];
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[8]), obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_member_verification/MemberVerificationFormStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_member_verification/MemberVerificationFormStore.tsx");
 
 export default tmp2;
 export const NO_MEMBER_VERIFICATION_FORM = obj;

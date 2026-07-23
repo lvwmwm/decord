@@ -1,20 +1,22 @@
-// Module ID: 16372
-// Function ID: 126339
+// Module ID: 16489
+// Function ID: 128513
 // Name: getInvitableChannelForGuild
-// Dependencies: []
+// Dependencies: [1907, 3758, 653, 2]
 // Exports: getInvitableChannelForGuild
 
-// Module 16372 (getInvitableChannelForGuild)
-const _module = require(dependencyMap[0]);
-({ GUILD_SELECTABLE_CHANNELS_KEY: closure_0, GUILD_VOCAL_CHANNELS_KEY: closure_1 } = _module);
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const Permissions = require(dependencyMap[2]).Permissions;
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("utils/CreateInstantInviteUtils.tsx");
+// Module 16489 (getInvitableChannelForGuild)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+let closure_0;
+let closure_1;
+({ GUILD_SELECTABLE_CHANNELS_KEY: closure_0, GUILD_VOCAL_CHANNELS_KEY: closure_1 } = _isNativeReflectConstruct);
+const result = require("ME").fileFinishedImporting("utils/CreateInstantInviteUtils.tsx");
 
 export const getInvitableChannelForGuild = function getInvitableChannelForGuild(guildId) {
-  const channels = channels.getChannels(guildId);
+  channels = channels.getChannels(guildId);
   const items = [...channels[closure_1]];
-  return items.find((channel) => closure_3.can(constants.CREATE_INSTANT_INVITE, channel.channel));
+  return items.find((channel) => outer1_3.can(outer1_4.CREATE_INSTANT_INVITE, channel.channel));
 };

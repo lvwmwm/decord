@@ -1,50 +1,52 @@
-// Module ID: 15186
-// Function ID: 114527
+// Module ID: 15302
+// Function ID: 116697
 // Name: getPrunePreviewKey
-// Dependencies: []
+// Dependencies: [57, 621, 2]
 // Exports: clearAllPrunePreviews, getPrunePreview, setPrunePreview, usePrunePreview
 
-// Module 15186 (getPrunePreviewKey)
+// Module 15302 (getPrunePreviewKey)
+import _slicedToArray from "_slicedToArray";
+import keys from "keys";
+
 function getPrunePreviewKey(arg0, arg1, arg2) {
   const items = [...arg2];
   const sorted = items.sort();
   return "" + arg0 + ":" + arg1 + ":" + sorted.join(",");
 }
 function isEntryValid(cachedAt) {
-  return Date.now() - cachedAt.cachedAt < closure_1;
+  return Date.now() - cachedAt.cachedAt < c1;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = 3600000;
-let obj = arg1(dependencyMap[1]);
-obj = obj.create((arg0) => {
-  let closure_0 = arg0;
+let c1 = 3600000;
+keys = keys.create((arg0) => {
+  let _slicedToArray = arg0;
   return {
     entries: {},
     setPreview(arg0, arg1, arg2, arg3, arg4) {
-      arg0 = arg3;
-      let closure_2 = callback(arg0, arg1, arg2);
-      arg0((arg0) => {
+      const callback = arg3;
+      let closure_1 = arg4;
+      let closure_2 = outer1_3(arg0, arg1, arg2);
+      callback((arg0) => {
         let entries = {};
         const merged = Object.assign(arg0.entries);
         entries = {};
         const timestamp = Date.now();
         entries = Object.entries(entries);
         for (let num = 0; num < entries.length; num = num + 1) {
-          let tmp3 = arg3;
-          let tmp4 = arg3(entries[num], 2);
+          let tmp3 = callback;
+          let tmp4 = callback(entries[num], 2);
           let tmp5 = tmp4[1];
-          let tmp6 = arg4;
-          if (timestamp - tmp5.cachedAt < arg4) {
+          let tmp6 = outer2_1;
+          if (timestamp - tmp5.cachedAt < outer2_1) {
             entries[tmp4[0]] = tmp5;
           }
         }
         let tmp8 = null == tmp7;
         if (!tmp8) {
-          tmp8 = tmp7.count <= arg3 && !tmp7.isFinished;
-          const tmp10 = tmp7.count <= arg3 && !tmp7.isFinished;
+          tmp8 = tmp7.count <= callback && !tmp7.isFinished;
+          const tmp10 = tmp7.count <= callback && !tmp7.isFinished;
         }
         if (tmp8) {
-          const obj = { count: arg3, isFinished: arg4 };
+          const obj = { count: callback, isFinished: closure_1 };
           const _Date = Date;
           obj.cachedAt = Date.now();
           entries[closure_2] = obj;
@@ -53,38 +55,39 @@ obj = obj.create((arg0) => {
       });
     },
     clear() {
-      arg0({ entries: {} });
+      callback({ entries: {} });
     }
   };
 });
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/guild_mod_dash_member_safety/PrunePreviewStore.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/PrunePreviewStore.tsx");
 
 export const CACHE_TTL_MS = 3600000;
 export { getPrunePreviewKey };
-export const usePrunePreviewStore = obj;
+export const usePrunePreviewStore = keys;
 export const setPrunePreview = function setPrunePreview(arg0, arg1, arg2, arg3, arg4) {
-  const state = obj.getState();
+  const state = keys.getState();
   state.setPreview(arg0, arg1, arg2, arg3, arg4);
 };
 export const clearAllPrunePreviews = function clearAllPrunePreviews() {
-  const state = obj.getState();
+  const state = keys.getState();
   state.clear();
 };
 export const usePrunePreview = function usePrunePreview(arg0, arg1, arg2) {
-  let closure_0 = arg0;
+  let _slicedToArray = arg0;
   let closure_1 = arg1;
-  let obj = arg2;
-  const tmp = obj((arg0) => {
+  const keys = arg2;
+  let tmp = keys((arg0) => {
+    const tmp = arg0.entries[outer1_3(undefined, _slicedToArray, closure_1, closure_2)];
     let tmp2 = null;
-    if (null != arg0.entries[closure_3(undefined, closure_0, closure_1, closure_2)]) {
+    if (null != tmp) {
       tmp2 = null;
-      if (callback(tmp)) {
+      if (outer1_4(tmp)) {
         tmp2 = tmp;
       }
     }
     return tmp2;
   });
-  obj = {};
+  const obj = {};
   let count;
   if (null != tmp) {
     count = tmp.count;
@@ -98,9 +101,10 @@ export const usePrunePreview = function usePrunePreview(arg0, arg1, arg2) {
   return obj;
 };
 export const getPrunePreview = function getPrunePreview(arg0, arg1, arg2) {
-  const state = obj.getState();
+  const state = keys.getState();
+  const tmp2 = state.entries[getPrunePreviewKey(undefined, arg0, arg1, arg2)];
   let count = null;
-  if (null != state.entries[closure_3(undefined, arg0, arg1, arg2)]) {
+  if (null != tmp2) {
     count = null;
     if (isEntryValid(tmp2)) {
       count = tmp2.count;

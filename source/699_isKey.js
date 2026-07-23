@@ -1,14 +1,14 @@
 // Module ID: 699
-// Function ID: 8700
+// Function ID: 8701
 // Name: isKey
-// Dependencies: []
+// Dependencies: [591, 576]
 
 // Module 699 (isKey)
-let closure_2 = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/;
-let closure_3 = /^\w*$/;
+const re2 = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/;
+const re3 = /^\w*$/;
 
 export default function isKey(arg0, arg1) {
-  if (require(dependencyMap[0])(arg0)) {
+  if (require(591)(arg0)) {
     return false;
   } else {
     let tmp2 = "number" !== tmp;
@@ -22,7 +22,7 @@ export default function isKey(arg0, arg1) {
       tmp2 = null != arg0;
     }
     if (tmp2) {
-      tmp2 = !require(dependencyMap[1])(arg0);
+      tmp2 = !require(576) /* isSymbol */(arg0);
     }
     let tmp6 = !tmp2;
     if (tmp2) {

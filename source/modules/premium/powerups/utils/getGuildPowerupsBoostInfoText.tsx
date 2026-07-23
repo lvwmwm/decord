@@ -1,25 +1,25 @@
-// Module ID: 11577
-// Function ID: 90016
+// Module ID: 11587
+// Function ID: 90065
 // Name: getGuildPowerupsBoostInfoText
-// Dependencies: []
+// Dependencies: [4018, 1212, 2230, 2]
 // Exports: getGuildPowerupsBoostInfoText
 
-// Module 11577 (getGuildPowerupsBoostInfoText)
-const BoostInfoType = require(dependencyMap[0]).BoostInfoType;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/premium/powerups/utils/getGuildPowerupsBoostInfoText.tsx");
+// Module 11587 (getGuildPowerupsBoostInfoText)
+import { BoostInfoType } from "BoostedGuildTiers";
+
+const result = require("messagesProxy").fileFinishedImporting("modules/premium/powerups/utils/getGuildPowerupsBoostInfoText.tsx");
 
 export const getGuildPowerupsBoostInfoText = function getGuildPowerupsBoostInfoText(count, type) {
   if (BoostInfoType.AVAILABLE === type) {
-    const intl3 = require(dependencyMap[1]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     let obj = { boostCount: count };
-    return intl3.formatToPlainString(importDefault(dependencyMap[2]).BdRXZA, obj);
+    return intl3.formatToPlainString(importDefault(2230).BdRXZA, obj);
   } else if (BoostInfoType.SPENT === type) {
-    const intl2 = require(dependencyMap[1]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     obj = { boostCount: count };
-    return intl2.formatToPlainString(importDefault(dependencyMap[2]).xvgIVG, obj);
+    return intl2.formatToPlainString(importDefault(2230).xvgIVG, obj);
   } else if (BoostInfoType.TOTAL === type) {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(importDefault(dependencyMap[2])./F7Z2y);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2230)["/F7Z2y"]);
   }
 };

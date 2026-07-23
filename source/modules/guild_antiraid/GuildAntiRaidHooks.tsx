@@ -1,53 +1,65 @@
-// Module ID: 10227
-// Function ID: 79025
+// Module ID: 10239
+// Function ID: 79097
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1316, 1838, 3758, 3947, 1849, 10219, 7703, 653, 624, 21, 7702, 483, 3763, 10240, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 10227 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10239 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { IncidentAlertModeratorPermissions as closure_10 } from "GUILD_REPORT_RAID_MOBILE_KEY";
+import ME from "ME";
+
+let closure_11;
+let closure_12;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +70,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,11 +98,11 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getFirstGuildIncidentId(guildId) {
   let value;
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   const incidentsByGuild = store3.getIncidentsByGuild();
-  let obj = importDefault(dependencyMap[9]);
+  let obj = importDefault(21);
   const keys = obj.keys(incidentsByGuild);
-  const tmp3 = _createForOfIteratorHelperLoose(keys.map((guildId) => guild.getGuild(guildId)));
+  const tmp3 = _createForOfIteratorHelperLoose(keys.map((guildId) => outer1_5.getGuild(guildId)));
   const iter = tmp3();
   let iter2 = iter;
   if (!iter.done) {
@@ -100,18 +112,18 @@ function getFirstGuildIncidentId(guildId) {
         let tmp14 = incidentsByGuild[value.id];
         let tmp15 = tmp14;
         if (null != tmp14) {
-          let tmp16 = arg1;
+          let tmp16 = require;
           let tmp17 = dependencyMap;
-          let obj7 = arg1(dependencyMap[10]);
+          let obj7 = require(7702) /* hasDetectedRaid */;
           if (obj7.hasDetectedActivity(tmp14)) {
-            let tmp7 = arg1;
+            let tmp7 = require;
             let tmp8 = dependencyMap;
-            let obj3 = arg1(dependencyMap[10]);
+            let obj3 = require(7702) /* hasDetectedRaid */;
             if (!obj3.isUnderLockdown(tmp14)) {
               let tmp10 = importAll;
               let tmp11 = dependencyMap;
-              let obj4 = importAll(dependencyMap[11]);
-              let obj5 = importAll(dependencyMap[12]);
+              let obj4 = importAll(483);
+              let obj5 = importAll(3763);
               obj = { user: currentUser, context: value, checkElevated: false };
               let tmp12 = closure_10;
               let tmp13 = tmp14;
@@ -122,9 +134,9 @@ function getFirstGuildIncidentId(guildId) {
               let tmp9 = tmp14;
             }
           } else {
-            let tmp4 = arg1;
+            let tmp4 = require;
             let tmp5 = dependencyMap;
-            let obj2 = arg1(dependencyMap[10]);
+            let obj2 = require(7702) /* hasDetectedRaid */;
             let tmp6 = tmp14;
           }
         }
@@ -136,30 +148,21 @@ function getFirstGuildIncidentId(guildId) {
   }
   return null;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).IncidentAlertModeratorPermissions;
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_11, GuildFeatures: closure_12 } = arg1(dependencyMap[7]));
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
+({ EMPTY_STRING_SNOWFLAKE_ID: closure_11, GuildFeatures: closure_12 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidHooks.tsx");
 
 export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
   let value;
-  let obj = arg1(dependencyMap[8]);
+  let obj = stateFromStores1(624);
   const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getCurrentUser());
   const items1 = [closure_9];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items1, () => incidentsByGuild.getIncidentsByGuild());
-  const arg1 = stateFromStores1;
-  const obj2 = arg1(dependencyMap[8]);
-  const items2 = [closure_5];
-  const tmp3 = _createForOfIteratorHelperLoose(arg1(dependencyMap[8]).useStateFromStoresArray(items2, () => {
-    const keys = callback(closure_3[9]).keys(stateFromStores1);
-    return keys.map((guildId) => guild.getGuild(guildId));
+  stateFromStores1 = stateFromStores1(624).useStateFromStores(items1, () => outer1_9.getIncidentsByGuild());
+  const obj2 = stateFromStores1(624);
+  const items2 = [_createForOfIteratorHelperLoose];
+  const tmp3 = _createForOfIteratorHelperLoose(stateFromStores1(624).useStateFromStoresArray(items2, () => {
+    const keys = outer1_1(outer1_3[9]).keys(stateFromStores1);
+    return keys.map((guildId) => outer2_5.getGuild(guildId));
   }));
   const iter = tmp3();
   let iter2 = iter;
@@ -170,14 +173,14 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         let tmp11 = stateFromStores1[value.id];
         let tmp12 = tmp11;
         if (null != tmp11) {
-          let tmp13 = arg1;
+          let tmp13 = stateFromStores1;
           let tmp14 = dependencyMap;
-          let obj8 = arg1(dependencyMap[10]);
+          let obj8 = stateFromStores1(7702);
           if (obj8.hasDetectedActivity(tmp11)) {
             let tmp7 = importAll;
             let tmp8 = dependencyMap;
-            let obj5 = importAll(dependencyMap[11]);
-            let obj6 = importAll(dependencyMap[12]);
+            let obj5 = importAll(483);
+            let obj6 = importAll(3763);
             obj = { user: stateFromStores, context: value, checkElevated: false };
             let tmp9 = closure_10;
             let tmp10 = tmp11;
@@ -185,9 +188,9 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
               break;
             }
           } else {
-            let tmp4 = arg1;
+            let tmp4 = stateFromStores1;
             let tmp5 = dependencyMap;
-            let obj4 = arg1(dependencyMap[10]);
+            let obj4 = stateFromStores1(7702);
             let tmp6 = tmp11;
           }
         }
@@ -200,36 +203,36 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
   return null;
 };
 export const useGuildIncidentsState = function useGuildIncidentsState(id) {
-  const arg1 = id;
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_5, closure_6];
+  const _require = id;
+  let obj = _require(624);
+  const items = [_createForOfIteratorHelperLoose, closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+    const guild = outer1_5.getGuild(closure_0);
     if (null == guild) {
       return false;
     } else {
-      const guildPermissions = guildPermissions.getGuildPermissions(guild);
+      const guildPermissions = outer1_6.getGuildPermissions(guild);
       let hasAnyResult = null != guildPermissions;
       if (hasAnyResult) {
-        hasAnyResult = callback(closure_3[11]).hasAny(guildPermissions, closure_10);
-        const obj = callback(closure_3[11]);
+        hasAnyResult = outer1_2(outer1_3[11]).hasAny(guildPermissions, outer1_10);
+        const obj = outer1_2(outer1_3[11]);
       }
       return hasAnyResult;
     }
   });
   const items1 = [closure_9];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(624).useStateFromStores(items1, () => {
     let guildIncident = null;
-    if (null != arg0) {
-      guildIncident = guildIncident.getGuildIncident(arg0);
+    if (null != closure_0) {
+      guildIncident = outer1_9.getGuildIncident(closure_0);
     }
     return guildIncident;
   });
   obj = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1 };
   let isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = arg1(dependencyMap[10]).isUnderLockdown(stateFromStores1);
-    const obj4 = arg1(dependencyMap[10]);
+    isUnderLockdownResult = _require(7702).isUnderLockdown(stateFromStores1);
+    const obj4 = _require(7702);
   }
   obj.isUnderLockdown = isUnderLockdownResult;
   return obj;
@@ -263,15 +266,15 @@ export const shouldShowRaidInAppNotification = function shouldShowRaidInAppNotif
   }
   let isUnderLockdownResult = null != guildIncident;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = arg1(dependencyMap[10]).isUnderLockdown(guildIncident);
-    const obj2 = arg1(dependencyMap[10]);
+    isUnderLockdownResult = require(7702) /* hasDetectedRaid */.isUnderLockdown(guildIncident);
+    const obj2 = require(7702) /* hasDetectedRaid */;
   }
   const show = null != guildId && !isUnderLockdownResult && !(null != tmp2 && tmp2.disableRaidAlertNag);
   return { show, guildId };
 };
 export const getDisabledActions = function getDisabledActions(id) {
   if (null == id) {
-    return { accessible: true, right: true };
+    return { dmsDisabled: false, invitesDisabled: false };
   } else {
     const guildIncident = store3.getGuildIncident(id.id);
     const obj = {};
@@ -320,13 +323,12 @@ export const useDisabledActions = function useDisabledActions(id) {
   if (null == id) {
     id = closure_11;
   }
-  const arg1 = id;
-  let obj = arg1(dependencyMap[8]);
+  let obj = id(624);
   const items = [closure_9];
   const items1 = [id];
-  const stateFromStores = obj.useStateFromStores(items, () => guildIncident.getGuildIncident(id), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getGuildIncident(id), items1);
   if (null == id) {
-    obj = { accessible: true, right: true };
+    obj = { dmsDisabled: false, invitesDisabled: false };
   } else {
     obj = {};
     let hasItem;
@@ -367,10 +369,10 @@ export const useDisabledActions = function useDisabledActions(id) {
   return obj;
 };
 export const useShowAntiRaidInGuildNotifSettings = function useShowAntiRaidInGuildNotifSettings(arg0) {
-  const arg1 = arg0;
-  const items = [closure_6, closure_5];
-  return arg1(dependencyMap[8]).useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
-    return arg0(closure_3[13]).canReportRaid(guild, closure_6);
+  const _require = arg0;
+  const items = [closure_6, _createForOfIteratorHelperLoose];
+  return _require(624).useStateFromStores(items, () => {
+    const guild = outer1_5.getGuild(callback);
+    return callback(outer1_3[13]).canReportRaid(guild, outer1_6);
   });
 };

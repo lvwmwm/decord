@@ -1,17 +1,19 @@
-// Module ID: 6803
-// Function ID: 53694
+// Module ID: 6808
+// Function ID: 53726
 // Name: FeaturedCategorySubblockRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6809, 2]
 
-// Module 6803 (FeaturedCategorySubblockRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 6808 (FeaturedCategorySubblockRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class FeaturedCategorySubblockRecord {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, FeaturedCategorySubblockRecord);
-      this.type = FeaturedCategorySubblockRecord(closure_1[2]).FeaturedSubblockType.CATEGORY;
+      tmp = outer1_2(this, FeaturedCategorySubblockRecord);
+      this.type = FeaturedCategorySubblockRecord(outer1_1[2]).FeaturedSubblockType.CATEGORY;
       ({ category_store_listing_id: this.categoryStoreListingId, name: this.name } = arg0);
       date = null;
       if (null != arg0.unpublished_at) {
@@ -27,7 +29,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = FeaturedCategorySubblockRecord;
   const items = [
     {
       key: "fromServer",
@@ -37,7 +38,7 @@ const tmp2 = () => {
     }
   ];
   return callback(FeaturedCategorySubblockRecord, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/records/FeaturedCategorySubblockRecord.tsx");
+})();
+const result = require("FeaturedSubblockType").fileFinishedImporting("modules/collectibles/records/FeaturedCategorySubblockRecord.tsx");
 
 export const FeaturedCategorySubblockRecord = tmp2;

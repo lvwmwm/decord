@@ -1,13 +1,13 @@
-// Module ID: 5937
-// Function ID: 49838
+// Module ID: 5942
+// Function ID: 49867
 // Name: ChestAndGemSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 5943, 2]
 // Exports: ChestAndGemSpotIllustration
 
-// Module 5937 (ChestAndGemSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ChestAndGemSpotIllustration.native.tsx");
+// Module 5942 (ChestAndGemSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ChestAndGemSpotIllustration.native.tsx");
 
 export const ChestAndGemSpotIllustration = function ChestAndGemSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ChestAndGemSpotIllustration = function ChestAndGemSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5943) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ChestAndGemSpotIllustration = function ChestAndGemSpotIllustration(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

@@ -1,48 +1,52 @@
-// Module ID: 7486
-// Function ID: 60088
+// Module ID: 7491
+// Function ID: 60122
 // Name: StageSparkleInner
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 7492, 5085, 7493, 3842, 2]
 // Exports: default
 
-// Module 7486 (StageSparkleInner)
+// Module 7491 (StageSparkleInner)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function StageSparkleInner(style) {
   let IconComponent;
   let icon;
   ({ IconComponent, icon } = style);
   if (icon === undefined) {
-    icon = importDefault(dependencyMap[5]);
+    icon = importDefault(7492);
   }
-  const tmp3 = callback2();
+  const tmp3 = _createForOfIteratorHelperLoose();
   let obj = { style: items };
-  const items = [tmp3.container, style.style];
+  items = [tmp3.container, style.style];
   obj = { style: tmp3.iconContainer };
   if (null != IconComponent) {
-    obj = { size: "lg", color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
+    obj = { size: "lg", color: importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY };
     let tmp11 = callback(IconComponent, obj);
   } else {
     const obj1 = { source: icon, style: tmp3.iconStyle };
-    tmp11 = callback(importDefault(dependencyMap[6]), obj1);
+    tmp11 = callback(importDefault(5085), obj1);
   }
   obj.children = tmp11;
   const items1 = [callback(View, obj), ];
-  const obj2 = { style: tmp3.sparkles, source: importDefault(dependencyMap[7]) };
-  items1[1] = callback(importDefault(dependencyMap[6]), obj2);
+  const obj2 = { style: tmp3.sparkles, source: importDefault(7493) };
+  items1[1] = callback(importDefault(5085), obj2);
   obj.children = items1;
   return closure_5(View, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: {} };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-obj.iconContainer = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.iconStyle = { tintColor: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.sparkles = { 10360: 40, 10496: 40 };
-let closure_6 = obj.createStyles(obj);
-const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stage_channels/native/components/StageSparkle.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { width: 88, height: 88, alignItems: "center", justifyContent: "center" } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: 28, height: 56, width: 56, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.iconContainer = _createForOfIteratorHelperLoose;
+let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, height: 32, width: 32 };
+_createForOfIteratorHelperLoose.iconStyle = obj1;
+_createForOfIteratorHelperLoose.sparkles = { position: "absolute", top: 0 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/StageSparkle.tsx");
 
 export default function StageSparkle(theme) {
   theme = theme.theme;
@@ -54,7 +58,7 @@ export default function StageSparkle(theme) {
     const obj1 = {};
     const merged1 = Object.assign(merged);
     obj.children = callback(StageSparkleInner, obj1);
-    let tmp8 = callback(arg1(dependencyMap[8]).ThemeContextProvider, obj);
+    let tmp8 = callback(require(3842) /* ManaContext */.ThemeContextProvider, obj);
   } else {
     obj = {};
     const merged2 = Object.assign(merged);

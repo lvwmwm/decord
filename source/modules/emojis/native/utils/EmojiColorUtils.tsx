@@ -1,12 +1,13 @@
-// Module ID: 14825
-// Function ID: 111738
+// Module ID: 14941
+// Function ID: 113906
 // Name: _getEmojiCacheKey
-// Dependencies: [0, 4294967295, 0, 4294967295]
+// Dependencies: [5, 27, 1362, 2]
 // Exports: getEmojiDominantColors
 
-// Module 14825 (_getEmojiCacheKey)
-import __exportStarResult1 from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
+// Module 14941 (_getEmojiCacheKey)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { NativeModules } from "get ActivityIndicator";
+import importDefaultResult from "priv";
 
 function _getEmojiCacheKey(name) {
   return "" + name.name + "-" + name.id;
@@ -14,18 +15,15 @@ function _getEmojiCacheKey(name) {
 function _getFromCacheOrFallback2() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getFromCacheOrFallback2 = obj;
   return obj(...arguments);
 }
 function _getEmojiDominantColors() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getEmojiDominantColors = obj;
   return obj(...arguments);
 }
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
 importDefaultResult = new importDefaultResult(100);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/emojis/native/utils/EmojiColorUtils.tsx");
+const result = require("priv").fileFinishedImporting("modules/emojis/native/utils/EmojiColorUtils.tsx");
 
 export const getEmojiDominantColors = function getEmojiDominantColors(arg0) {
   return _getEmojiDominantColors(...arguments);

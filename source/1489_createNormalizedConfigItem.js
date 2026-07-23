@@ -1,11 +1,12 @@
 // Module ID: 1489
-// Function ID: 17194
+// Function ID: 17195
 // Name: createNormalizedConfigItem
-// Dependencies: []
+// Dependencies: [57]
 // Exports: default
 
 // Module 1489 (createNormalizedConfigItem)
-let closure_0 = importDefault(dependencyMap[0]);
+import _slicedToArray from "_slicedToArray";
+
 function createNormalizedConfigItem(initialRouteName) {
   if ("object" === typeof initialRouteName) {
     if (null != initialRouteName) {
@@ -22,8 +23,8 @@ function createNormalizedConfigItem(initialRouteName) {
 function createNormalizedConfigs(arg0) {
   const entries = Object.entries(arg0);
   return entries.reduce((arg0, arg1) => {
-    const tmp = callback(arg1, 2);
-    arg0[tmp[0]] = callback2(tmp[1]);
+    const tmp = outer1_0(arg1, 2);
+    arg0[tmp[0]] = outer1_1(tmp[1]);
     return arg0;
   }, {});
 }
@@ -117,7 +118,7 @@ export default function getActionFromState(stateFromPath, config) {
             }
             tmp5 = tmp16;
             tmp10 = params;
-            let tmp11 = tmp15;
+            tmp11 = tmp15;
           }
         }
         if (2 === substr1.length) {

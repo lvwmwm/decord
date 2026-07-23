@@ -1,28 +1,28 @@
-// Module ID: 13717
-// Function ID: 103765
+// Module ID: 13831
+// Function ID: 105921
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 1212, 2198, 13832, 2]
 
-// Module 13717 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 13831 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(importDefault(dependencyMap[4]).ahKIJO);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2198).ahKIJO);
   },
-  parent: require(dependencyMap[0]).MobileSetting.FAMILY_CENTER,
+  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER,
   unsearchable: true,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
+  route: require("ME").UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
   getComponent() {
-    return require(dependencyMap[5]).default;
+    return require(13832) /* FamilyCenterParentalControlsSettings */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSettingParentalControlsSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterSettingParentalControlsSetting.tsx");
 
 export default route;
 export const FamilyCenterParentalControlsSetting = route;

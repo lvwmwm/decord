@@ -1,15 +1,20 @@
-// Module ID: 8181
-// Function ID: 64612
+// Module ID: 8187
+// Function ID: 64649
 // Name: findChoiceStringValue
-// Dependencies: []
+// Dependencies: [7021, 4566, 2]
 // Exports: findAutocompleteChoiceNumberValue, findAutocompleteChoiceStringValue, toChoiceBooleanValue
 
-// Module 8181 (findChoiceStringValue)
+// Module 8187 (findChoiceStringValue)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
+
+let closure_1;
+let closure_2;
 function findChoiceStringValue(choices, surrogate) {
-  let closure_0 = surrogate;
+  let _isNativeReflectConstruct = surrogate;
   let value;
   if (null != choices) {
-    const iter = choices.find((displayName) => displayName.displayName === arg1);
+    const iter = choices.find((displayName) => displayName.displayName === _isNativeReflectConstruct);
     if (null != iter) {
       value = iter.value;
     }
@@ -17,20 +22,18 @@ function findChoiceStringValue(choices, surrogate) {
   return "string" === typeof value ? value : undefined;
 }
 function findChoiceNumberValue(choices, source) {
-  let closure_0 = source;
+  let _isNativeReflectConstruct = source;
   let value;
   if (null != choices) {
-    const iter = choices.find((displayName) => displayName.displayName === arg1);
+    const iter = choices.find((displayName) => displayName.displayName === _isNativeReflectConstruct);
     if (null != iter) {
       value = iter.value;
     }
   }
   return "number" === typeof value ? value : undefined;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-({ FALSE_OPTION_NAME: closure_1, TRUE_OPTION_NAME: closure_2 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/application_commands/ApplicationCommandChoiceUtils.tsx");
+({ FALSE_OPTION_NAME: closure_1, TRUE_OPTION_NAME: closure_2 } = TRUE_OPTION_NAME);
+const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandChoiceUtils.tsx");
 
 export const toChoiceBooleanValue = function toChoiceBooleanValue(trimmed) {
   const formatted = trimmed.toLowerCase();

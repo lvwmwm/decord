@@ -1,12 +1,13 @@
 // Module ID: 1372
-// Function ID: 16497
+// Function ID: 16498
 // Name: isRegex
-// Dependencies: []
+// Dependencies: [1369, 551, 519, 550]
 
 // Module 1372 (isRegex)
-const _module = require(dependencyMap[1]);
+import callBoundIntrinsic from "callBoundIntrinsic";
+
 if (tmp) {
-  let closure_2 = _module("RegExp.prototype.exec");
+  let closure_2 = callBoundIntrinsic("RegExp.prototype.exec");
   let closure_3 = {};
   function throwRegexMarker() {
     throw closure_3;
@@ -20,9 +21,9 @@ if (tmp) {
   function isRegex(arg0) {
     if (arg0) {
       if ("object" === typeof tmp) {
-        const tmp6 = require(dependencyMap[2])(tmp, "lastIndex");
+        const tmp6 = require(519)(tmp, "lastIndex");
         if (tmp6) {
-          if (require(dependencyMap[3])(tmp6, "value")) {
+          if (require(550) /* bind */(tmp6, "value")) {
             callback(tmp, obj);
           }
         }
@@ -32,7 +33,7 @@ if (tmp) {
     return false;
   }
 } else {
-  let closure_5 = _module("Object.prototype.toString");
+  let closure_5 = callBoundIntrinsic("Object.prototype.toString");
   isRegex = function isRegex(arg0) {
     let tmp = !arg0;
     if (!tmp) {

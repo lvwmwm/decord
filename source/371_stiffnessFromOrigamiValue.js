@@ -24,10 +24,10 @@ arg5.fromBouncinessAndSpeed = function fromBouncinessAndSpeed(arg0, arg1) {
   const obj = {};
   const projectNormalResult = projectNormal(normalize(arg0 / 1.7, 0, 20), 0, 0.8);
   obj.stiffness = stiffnessFromOrigamiValue(projectNormalResult1);
-  obj.damping = dampingFromOrigamiValue(function quadraticOutInterpolation(projectNormalResult, arg1, arg2) {
+  obj.damping = dampingFromOrigamiValue((function quadraticOutInterpolation(projectNormalResult, arg1, arg2) {
     const diff = 2 * projectNormalResult - projectNormalResult * projectNormalResult;
     return diff * 0.01 + (1 - diff) * arg1;
-  }(projectNormal(normalize(arg0 / 1.7, 0, 20), 0, 0.8), function b3Nobounce(projectNormalResult1) {
+  })(projectNormal(normalize(arg0 / 1.7, 0, 20), 0, 0.8), (function b3Nobounce(projectNormalResult1) {
     if (projectNormalResult1 <= 18) {
       const _Math5 = Math;
       const _Math6 = Math;
@@ -48,6 +48,6 @@ arg5.fromBouncinessAndSpeed = function fromBouncinessAndSpeed(arg0, arg1) {
       sum = result2 - 0.000332 * Math.pow(projectNormalResult1, 2) + 0.1078 * projectNormalResult1 + 5.84;
     }
     return sum;
-  }(projectNormalResult1), 0.01));
+  })(projectNormalResult1), 0.01));
   return obj;
 };

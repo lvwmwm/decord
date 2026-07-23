@@ -1,19 +1,23 @@
-// Module ID: 12539
-// Function ID: 96327
+// Module ID: 12653
+// Function ID: 98483
 // Name: isEligibleForProgramReward
-// Dependencies: []
+// Dependencies: [1849, 1851, 3553, 12650, 12654, 6788, 12655, 3776, 2]
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, isProgramRewardStale, useIsEligibleForProgramReward
 
-// Module 12539 (isEligibleForProgramReward)
+// Module 12653 (isEligibleForProgramReward)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PremiumTypes } from "GuildFeatures";
+
+const require = arg1;
 function isEligibleForProgramReward(NITRO, canUseMonthlyOrbs) {
   let str = canUseMonthlyOrbs;
   if (canUseMonthlyOrbs === undefined) {
     str = "ProgramRewardsUtils";
   }
-  if (canUseMonthlyOrbs(dependencyMap[3]).RewardProgram.NITRO === NITRO) {
-    return canUseMonthlyOrbs(dependencyMap[4]).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-  } else if (canUseMonthlyOrbs(dependencyMap[3]).RewardProgram.XBOX === NITRO) {
-    return canUseMonthlyOrbs(dependencyMap[5]).getIsCrepeEnabled(str);
+  if (require(12650) /* RewardProgram */.RewardProgram.NITRO === NITRO) {
+    return require(12654) /* PremiumRewardsOrbsTreatment */.getPremiumRewardsOrbsExperiment(str).isInTreatment;
+  } else if (require(12650) /* RewardProgram */.RewardProgram.XBOX === NITRO) {
+    return require(6788) /* apexExperiment */.getIsCrepeEnabled(str);
   } else {
     return false;
   }
@@ -23,7 +27,7 @@ function canFetchNitroProgramReward(canUseMonthlyOrbs) {
   if (canUseMonthlyOrbs === undefined) {
     str = "ProgramRewardsUtils";
   }
-  let tmp = isEligibleForProgramReward(arg1(dependencyMap[3]).RewardProgram.NITRO, str);
+  let tmp = isEligibleForProgramReward(require(12650) /* RewardProgram */.RewardProgram.NITRO, str);
   if (tmp) {
     tmp = hasNecessaryPremiumSubscriptionStatus();
   }
@@ -34,10 +38,10 @@ function canFetchXboxProgramReward(canUseMonthlyOrbs) {
   if (canUseMonthlyOrbs === undefined) {
     str = "ProgramRewardsUtils";
   }
-  let result = isEligibleForProgramReward(arg1(dependencyMap[3]).RewardProgram.XBOX, str);
+  let result = isEligibleForProgramReward(require(12650) /* RewardProgram */.RewardProgram.XBOX, str);
   if (result) {
-    result = arg1(dependencyMap[6]).hasCrepeMonthlyOrbsPerk(authStore.getCurrentUser());
-    const obj = arg1(dependencyMap[6]);
+    result = require(12655) /* hasCrepeMonthlyOrbsPerk */.hasCrepeMonthlyOrbsPerk(authStore.getCurrentUser());
+    const obj = require(12655) /* hasCrepeMonthlyOrbsPerk */;
   }
   return result;
 }
@@ -45,12 +49,10 @@ function hasNecessaryPremiumSubscriptionStatus(currentUser) {
   if (null == currentUser) {
     currentUser = authStore.getCurrentUser();
   }
-  return arg1(dependencyMap[7]).isPremiumExactly(currentUser, PremiumTypes.TIER_2);
+  return require(3776) /* _createForOfIteratorHelperLoose */.isPremiumExactly(currentUser, PremiumTypes.TIER_2);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
-let closure_5 = { [arg1(dependencyMap[3]).RewardProgram.NITRO]: canFetchNitroProgramReward, [arg1(dependencyMap[3]).RewardProgram.XBOX]: canFetchXboxProgramReward };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/rewards/ProgramRewardsUtils.tsx");
+let closure_5 = { [arg1(12650).RewardProgram.NITRO]: canFetchNitroProgramReward, [arg1(12650).RewardProgram.XBOX]: canFetchXboxProgramReward };
+let result = require("isPast").fileFinishedImporting("modules/rewards/ProgramRewardsUtils.tsx");
 
 export const isProgramRewardStale = function isProgramRewardStale(next_reward_date) {
   if (null == next_reward_date) {
@@ -64,8 +66,8 @@ export const isProgramRewardStale = function isProgramRewardStale(next_reward_da
     if (tmp) {
       const _Date = Date;
       const date = new Date(next_reward_date);
-      tmp = importDefault(dependencyMap[2])(date);
-      const tmp4 = importDefault(dependencyMap[2]);
+      tmp = importDefault(3553)(date);
+      const tmp4 = importDefault(3553);
     }
     return tmp;
   }
@@ -76,16 +78,16 @@ export const useIsEligibleForProgramReward = function useIsEligibleForProgramRew
   if (location === undefined) {
     str = "ProgramRewardsUtils";
   }
-  const obj = location(dependencyMap[4]);
-  const isCrepeEnabled = location(dependencyMap[5]).useIsCrepeEnabled(str);
-  if (location(dependencyMap[3]).RewardProgram.NITRO === arg0) {
+  const obj = require(12654) /* PremiumRewardsOrbsTreatment */;
+  const isCrepeEnabled = require(6788) /* apexExperiment */.useIsCrepeEnabled(str);
+  if (require(12650) /* RewardProgram */.RewardProgram.NITRO === arg0) {
     return obj.usePremiumRewardsOrbsExperiment(str).isInTreatment;
-  } else if (location(dependencyMap[3]).RewardProgram.XBOX === arg0) {
+  } else if (require(12650) /* RewardProgram */.RewardProgram.XBOX === arg0) {
     return isCrepeEnabled;
   } else {
     return false;
   }
-  const obj2 = location(dependencyMap[5]);
+  const obj2 = require(6788) /* apexExperiment */;
 };
 export { canFetchNitroProgramReward };
 export { canFetchXboxProgramReward };
@@ -94,14 +96,14 @@ export const canFetchAnyProgramReward = function canFetchAnyProgramReward(Progra
   if (ProgramRewardsStore === undefined) {
     str = "ProgramRewardsUtils";
   }
-  const values = Object.values(arg1(dependencyMap[3]).RewardProgram);
+  const values = Object.values(require(12650) /* RewardProgram */.RewardProgram);
   let num = 0;
   if (0 < values.length) {
     while (true) {
       let tmp = values[num];
       if ("number" === typeof tmp) {
-        let tmp2 = closure_5;
-        if (closure_5[tmp](str)) {
+        let tmp2 = dependencyMap;
+        if (dependencyMap[tmp](str)) {
           break;
         }
       }

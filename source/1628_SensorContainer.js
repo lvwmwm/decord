@@ -1,22 +1,22 @@
 // Module ID: 1628
-// Function ID: 18208
+// Function ID: 18209
 // Name: SensorContainer
-// Dependencies: []
+// Dependencies: [6, 7, 1629]
 
 // Module 1628 (SensorContainer)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export const SensorContainer = () => {
+
+export const SensorContainer = (() => {
   class SensorContainer {
     constructor() {
-      tmp = closure_2(this, SensorContainer);
+      tmp = outer1_2(this, SensorContainer);
       map = new Map();
       this.nativeSensors = map;
       return;
     }
   }
-  const importDefault = SensorContainer;
   let obj = {
     key: "getSensorId",
     value: function getSensorId(arg0, iosReferenceFrame) {
@@ -33,7 +33,7 @@ export const SensorContainer = () => {
       const sensorId = this.getSensorId(arg0, iosReferenceFrame);
       const nativeSensors = this.nativeSensors;
       if (!nativeSensors.has(sensorId)) {
-        let tmp4 = SensorContainer(closure_1[2]);
+        let tmp4 = SensorContainer(outer1_1[2]);
         const prototype = tmp4.prototype;
         tmp4 = new tmp4(arg0, iosReferenceFrame);
         const nativeSensors2 = self.nativeSensors;
@@ -93,4 +93,4 @@ export const SensorContainer = () => {
     }
   };
   return callback(SensorContainer, items);
-}();
+})();

@@ -1,25 +1,27 @@
-// Module ID: 10538
-// Function ID: 82360
+// Module ID: 10548
+// Function ID: 82410
 // Name: sum
-// Dependencies: []
+// Dependencies: [4177, 653, 5188, 10549, 10552, 10367, 566, 2]
 // Exports: default
 
-// Module 10538 (sum)
-let closure_3 = importDefault(dependencyMap[0]);
-const InputModes = arg1(dependencyMap[1]).InputModes;
-let closure_5 = arg1(dependencyMap[2]).ACTION_SHEET_HANDLE_SPACING;
-const sum = 2 * arg1(dependencyMap[3]).SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");
+// Module 10548 (sum)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { InputModes } from "ME";
+import { ACTION_SHEET_HANDLE_SPACING as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
+
+const require = arg1;
+let sum = 2 * require("ActionButton").SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
+const result = require("ACTION_SHEET_START_HEIGHT_RATIO").fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");
 
 export default function useActionBarHeight(id) {
-  const isFiveButtonLayout = arg1(dependencyMap[4]).useIsFiveButtonLayout(id);
-  const obj = arg1(dependencyMap[4]);
-  const tmp2 = importDefault(dependencyMap[5])(id);
-  const items = [closure_3];
+  const isFiveButtonLayout = require(10552) /* useIsFiveButtonLayout */.useIsFiveButtonLayout(id);
+  const obj = require(10552) /* useIsFiveButtonLayout */;
+  const tmp2 = importDefault(10367)(id);
+  const items = [_isNativeReflectConstruct];
   let num = 88;
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK);
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getMode() === outer1_4.PUSH_TO_TALK);
   if (isFiveButtonLayout) {
-    num = sum;
+    num = closure_6;
   }
   let num2 = 0;
   const sum = num + closure_5;

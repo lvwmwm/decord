@@ -1,29 +1,33 @@
-// Module ID: 7451
-// Function ID: 59763
+// Module ID: 7456
+// Function ID: 59797
 // Name: MarketingPageBannerTile
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5464, 7457, 8559, 480, 7453, 12362, 4126, 5459, 3827, 8560, 2]
 // Exports: default
 
-// Module 7451 (MarketingPageBannerTile)
-importAll(dependencyMap[0]);
-({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = importDefault(dependencyMap[2]);
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: { width: "100%" } };
-obj = { padding: importDefault(dependencyMap[5]).space.PX_16, borderRadius: importDefault(dependencyMap[5]).radii.lg, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SECONDARY_ALT, overflow: "hidden" };
-obj.card = obj;
-const obj1 = { blurTheme: "9RNkeF", pressed: "VOICE_CHANNEL_EFFECTS_COACH_MARK", width: "OKzaN3", borderRadius: importDefault(dependencyMap[5]).radii.md, marginBottom: importDefault(dependencyMap[5]).space.PX_16, padding: importDefault(dependencyMap[5]).space.PX_8, alignSelf: "center" };
-obj.image = obj1;
-const tmp4 = arg1(dependencyMap[3]);
-obj.bodyText = { marginTop: importDefault(dependencyMap[5]).space.PX_4 };
-const obj2 = { marginTop: importDefault(dependencyMap[5]).space.PX_4 };
-obj.ctaButton = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
-obj.nitroWheelIcon = { options: "100%", body: null, transform: null };
-let closure_8 = obj.createStyles(obj);
-const obj3 = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/premium/promotions/native/MarketingPageBannerTile.tsx");
+// Module 7456 (MarketingPageBannerTile)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { width: "100%" } };
+_createForOfIteratorHelperLoose = { display: "flex", width: "100%", flexDirection: "column", justifyContent: "flex-start", padding: require("_createForOfIteratorHelperLoose").space.PX_16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SECONDARY_ALT, overflow: "hidden" };
+_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
+const obj1 = { width: "100%", maxWidth: 317, height: 144, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, padding: require("_createForOfIteratorHelperLoose").space.PX_8, alignSelf: "center" };
+_createForOfIteratorHelperLoose.image = obj1;
+_createForOfIteratorHelperLoose.bodyText = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.ctaButton = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("jsxProd").fileFinishedImporting("modules/premium/promotions/native/MarketingPageBannerTile.tsx");
 
 export default function MarketingPageBannerTile(bannerFields) {
   let analyticsPage;
@@ -33,13 +37,10 @@ export default function MarketingPageBannerTile(bannerFields) {
   let onPaymentSuccess;
   let style;
   bannerFields = bannerFields.bannerFields;
-  let arg1;
+  let helpArticleLinkProps;
   ({ style, cardStyle, componentId, analyticsPage, onPaymentSuccess, onPaymentDismiss } = bannerFields);
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = arg1(dependencyMap[8]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = helpArticleLinkProps(7457);
   obj = {};
   const button = bannerFields.button;
   let buttonAction;
@@ -55,72 +56,64 @@ export default function MarketingPageBannerTile(bannerFields) {
     }
   }
   obj.applicationId = value;
-  obj.analyticsLocations = importDefault(dependencyMap[7])().analyticsLocations;
+  obj.analyticsLocations = importDefault(5464)().analyticsLocations;
   obj.analyticsPage = analyticsPage;
   obj.onPaymentSuccess = onPaymentSuccess;
   obj.onPaymentDismiss = onPaymentDismiss;
   obj = {};
-  const buttonActionHandler = obj1.getButtonActionHandler(obj);
-  obj.type = arg1(dependencyMap[10]).ImpressionTypes.VIEW;
-  obj.name = arg1(dependencyMap[10]).ImpressionNames.PREMIUM_MARKETING_COMPONENT;
-  obj1 = { component_type: arg1(dependencyMap[11]).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId };
-  obj.properties = obj1;
-  importDefault(dependencyMap[9])(obj);
-  let obj5 = arg1(dependencyMap[12]);
-  const formatStringWithCommonPremiumParams = obj5.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  let obj6 = arg1(dependencyMap[12]);
-  const helpArticleLinkProps = obj6.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
-  arg1 = helpArticleLinkProps;
-  const obj2 = { style: items1 };
-  const items1 = [tmp.container, style];
-  const obj3 = { style: items2 };
-  const items2 = [tmp.card, cardStyle];
-  let tmp13 = "" !== bannerFields.assetUrl;
-  if (tmp13) {
-    const obj4 = {};
+  const buttonActionHandler = obj.getButtonActionHandler(obj);
+  obj.type = helpArticleLinkProps(480).ImpressionTypes.VIEW;
+  obj.name = helpArticleLinkProps(480).ImpressionNames.PREMIUM_MARKETING_COMPONENT;
+  const tmp5 = importDefault(8559);
+  obj.properties = { component_type: helpArticleLinkProps(7453).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId };
+  tmp5(obj);
+  let obj4 = helpArticleLinkProps(12362);
+  const formatStringWithCommonPremiumParams = obj4.useFormatStringWithCommonPremiumParams(bannerFields.body);
+  let obj5 = helpArticleLinkProps(12362);
+  helpArticleLinkProps = obj5.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
+  const obj2 = { style: items };
+  items = [tmp.container, style];
+  const obj3 = { style: items1 };
+  items1 = [tmp.card, cardStyle];
+  let tmp12 = "" !== bannerFields.assetUrl;
+  if (tmp12) {
+    obj4 = {};
     obj5 = { uri: bannerFields.assetUrl };
     obj4.source = obj5;
     obj4.style = tmp.image;
     obj4.resizeMode = "contain";
-    tmp13 = callback(closure_3, obj4);
+    tmp12 = callback(closure_3, obj4);
   }
-  const items3 = [tmp13, , , ];
-  obj6 = { "Null": "row", "Null": 32, children: bannerFields.header };
-  items3[1] = callback(arg1(dependencyMap[13]).Text, obj6);
-  const obj7 = { style: tmp.bodyText };
-  const items4 = [formatStringWithCommonPremiumParams, " ", ];
-  let tmp17 = null != helpArticleLinkProps;
-  if (tmp17) {
+  const items2 = [tmp12, , , ];
+  const obj6 = { color: "mobile-text-heading-primary", variant: "text-lg/bold", children: bannerFields.header };
+  items2[1] = callback(helpArticleLinkProps(4126).Text, obj6);
+  const obj7 = { color: "mobile-text-heading-primary", variant: "text-sm/medium", style: tmp.bodyText };
+  const items3 = [formatStringWithCommonPremiumParams, " ", ];
+  let tmp16 = null != helpArticleLinkProps;
+  if (tmp16) {
     const obj8 = {
-      lastEffect: "key",
-      events: "Text",
-      stores: "label",
+      color: "text-link",
+      variant: "text-sm/medium",
+      accessibilityRole: "link",
       onPress() {
-          return callback(closure_2[15]).openURL(helpArticleLinkProps.url);
+          return outer1_1(outer1_2[13]).openURL(helpArticleLinkProps.url);
         },
       children: helpArticleLinkProps.linkText
     };
-    tmp17 = callback(arg1(dependencyMap[13]).Text, obj8);
+    tmp16 = callback(helpArticleLinkProps(4126).Text, obj8);
   }
-  items4[2] = tmp17;
-  obj7.children = items4;
-  items3[2] = closure_7(arg1(dependencyMap[14]).TextWithIOSLinkWorkaround, obj7);
-  let tmp21 = null != bannerFields.button;
-  if (tmp21) {
+  items3[2] = tmp16;
+  obj7.children = items3;
+  items2[2] = closure_6(helpArticleLinkProps(5459).TextWithIOSLinkWorkaround, obj7);
+  let tmp20 = null != bannerFields.button;
+  if (tmp20) {
     const obj9 = { style: tmp.ctaButton };
     const obj10 = { text: bannerFields.button.copy, onPress: buttonActionHandler };
-    const obj11 = {};
-    const items5 = [tmp.nitroWheelIcon];
-    obj11.style = items5;
-    obj11.color = importDefault(dependencyMap[5]).colors.WHITE;
-    obj11.size = "custom";
-    obj10.icon = callback(arg1(dependencyMap[17]).NitroWheelIcon, obj11);
-    obj10.shiny = !stateFromStores;
-    obj9.children = callback(arg1(dependencyMap[16]).Button, obj10);
-    tmp21 = callback(closure_4, obj9);
+    obj9.children = callback(importDefault(8560), obj10);
+    tmp20 = callback(closure_4, obj9);
   }
-  items3[3] = tmp21;
-  obj3.children = items3;
-  obj2.children = closure_7(closure_4, obj3);
+  items2[3] = tmp20;
+  obj3.children = items2;
+  obj2.children = closure_6(closure_4, obj3);
   return callback(closure_4, obj2);
 };

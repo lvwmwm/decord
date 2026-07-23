@@ -1,20 +1,20 @@
-// Module ID: 7181
-// Function ID: 57846
+// Module ID: 7186
+// Function ID: 57880
 // Name: useBottomSheetRef
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: useBottomSheetRef
 
-// Module 7181 (useBottomSheetRef)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("design/components/Sheet/native/useBottomSheetRef.tsx");
+// Module 7186 (useBottomSheetRef)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("design/components/Sheet/native/useBottomSheetRef.tsx");
 
 export const useBottomSheetRef = function useBottomSheetRef() {
-  const ref = React.useRef(null);
-  const React = ref;
+  ref = ref.useRef(null);
   const items = [ref];
   return {
     bottomSheetRef: ref,
-    bottomSheetClose: React.useCallback(() => {
+    bottomSheetClose: ref.useCallback(() => {
       const current = ref.current;
       if (null != current) {
         current.closeActionSheet();

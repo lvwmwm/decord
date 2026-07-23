@@ -1,5 +1,5 @@
 // Module ID: 1177
-// Function ID: 13393
+// Function ID: 13394
 // Dependencies: []
 
 // Module 1177
@@ -50,5 +50,5 @@ arg5.defaultConfiguration = {
   captureScreenshotButtonLabel: "Take a screenshot",
   genericError: "Unable to send feedback due to an unexpected error."
 };
-arg5.defaultButtonConfiguration = { 1370183266: "Text", 1481835099: "r" };
-arg5.defaultScreenshotButtonConfiguration = { 1370183266: "<string:1732330731>", 1481835099: "<string:1895825675>" };
+arg5.defaultButtonConfiguration = { triggerLabel: "Report a Bug", triggerAriaLabel: "" };
+arg5.defaultScreenshotButtonConfiguration = { triggerLabel: "Take Screenshot", triggerAriaLabel: "" };

@@ -1,20 +1,24 @@
-// Module ID: 6825
-// Function ID: 53810
+// Module ID: 6830
+// Function ID: 53842
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [15, 17, 18, 57, 6, 7, 6831, 1348, 4349, 653, 1362, 4351, 6835, 566, 686, 2]
 
-// Module 6825 (_isNativeReflectConstruct)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import closure_11 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 6830 (_isNativeReflectConstruct)
+import closure_3 from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import set from "_inherits";
 
+let closure_12;
+let closure_13;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -24,49 +28,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -77,16 +81,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -125,14 +129,14 @@ function processMessage(message) {
           let obj = {};
           obj.state = obj.LOADED;
           ({ channel_id, id } = referenced_message);
-          obj.message = arg1(dependencyMap[11]).createMessageRecord(referenced_message);
+          obj.message = require(4351) /* createMinimalMessageRecord */.createMessageRecord(referenced_message);
           const result = tmp4.set(channel_id, id, obj);
           flag2 = true;
           if (message.type === constants.THREAD_STARTER_MESSAGE) {
             processMessage(referenced_message);
             flag2 = true;
           }
-          const obj4 = arg1(dependencyMap[11]);
+          const obj4 = require(4351) /* createMinimalMessageRecord */;
         } else {
           obj = {};
           obj.state = obj.DELETED;
@@ -178,10 +182,10 @@ function anyChanged(messages, arg1) {
   return flag2;
 }
 function handleLoadMessages(messages) {
-  return anyChanged(messages.messages, (arg0) => callback(arg0));
+  return anyChanged(messages.messages, (arg0) => outer1_22(arg0));
 }
 function handleSearchMessagesSuccess(data) {
-  return anyChanged(data.data, (messages) => callback(messages.messages, (arg0) => callback(arg0, (arg0) => callback(arg0))));
+  return anyChanged(data.data, (messages) => outer1_23(messages.messages, (arg0) => outer2_23(arg0, (arg0) => outer3_22(arg0))));
 }
 function handleChannelDelete(channel) {
   return tmp4.deleteChannelCache(channel.channel.id);
@@ -202,22 +206,21 @@ function handleLoadThreadsSuccess(firstMessages) {
   firstMessages = firstMessages.firstMessages;
   let tmp = null != firstMessages;
   if (tmp) {
-    tmp = anyChanged(firstMessages, (arg0) => callback(arg0));
+    tmp = anyChanged(firstMessages, (arg0) => outer1_22(arg0));
   }
   return tmp;
 }
-let closure_5 = importDefault(dependencyMap[2]);
-({ MessageTypes: closure_12, MessageTypesWithLazyLoadedReferences: closure_13 } = __exportStarResult1);
+({ MessageTypes: closure_12, MessageTypesWithLazyLoadedReferences: closure_13 } = ME);
 let obj = { LOADED: 0, [0]: "LOADED", NOT_LOADED: 1, [1]: "NOT_LOADED", DELETED: 2, [2]: "DELETED" };
 obj = { state: obj.NOT_LOADED };
 let closure_15 = Object.freeze(obj);
-const set = new Set();
-let closure_17 = () => {
+let set = new Set();
+let closure_17 = (() => {
   class ChannelReferencedMessageCache {
     constructor() {
-      ChannelReferencedMessageCache = this;
-      tmp = closure_7(this, ChannelReferencedMessageCache);
-      tmp2 = closure_1(closure_2[10]);
+      self = this;
+      tmp = outer1_7(this, self);
+      tmp2 = outer1_1(outer1_2[10]);
       obj = {
         max: 100,
         dispose(arg0, arg1) {
@@ -231,7 +234,6 @@ let closure_17 = () => {
       return;
     }
   }
-  const arg1 = ChannelReferencedMessageCache;
   let obj = {
     key: "handleCacheDisposed",
     value(arg0) {
@@ -286,17 +288,16 @@ let closure_17 = () => {
     }
   };
   return callback2(ChannelReferencedMessageCache, items);
-}();
-let tmp4 = () => {
+})();
+let tmp4 = (() => {
   class ReferencedMessageCache {
     constructor() {
-      tmp = closure_7(this, ReferencedMessageCache);
+      tmp = outer1_7(this, ReferencedMessageCache);
       map = new Map();
       this._channelCaches = map;
       return;
     }
   }
-  const arg1 = ReferencedMessageCache;
   let obj = {
     key: "has",
     value(arg0, arg1) {
@@ -309,7 +310,7 @@ let tmp4 = () => {
       return null != hasItem && hasItem;
     }
   };
-  const items = [obj, , , , , , , ];
+  let items = [obj, , , , , , , ];
   obj = {
     key: "get",
     value(arg0, arg1) {
@@ -329,8 +330,8 @@ let tmp4 = () => {
       const _channelCaches = this._channelCaches;
       let value = _channelCaches.get(arg0);
       if (null == value) {
-        const prototype = ctor.prototype;
-        const tmp4 = new ctor();
+        const prototype = outer1_17.prototype;
+        const tmp4 = new outer1_17();
         const _channelCaches2 = this._channelCaches;
         const result = _channelCaches2.set(arg0, tmp4);
         value = tmp4;
@@ -349,10 +350,10 @@ let tmp4 = () => {
         const tmp2 = !value.has(channel_id.id);
         let flag = !tmp2;
         if (!tmp2) {
-          const obj = { state: constants.LOADED, message: ReferencedMessageCache(closure_2[11]).createMessageRecord(channel_id) };
+          const obj = { state: outer1_14.LOADED, message: ReferencedMessageCache(outer1_2[11]).createMessageRecord(channel_id) };
           const result = value.set(channel_id.id, obj);
           flag = true;
-          const obj3 = ReferencedMessageCache(closure_2[11]);
+          const obj3 = ReferencedMessageCache(outer1_2[11]);
         }
         tmp = flag;
       }
@@ -373,12 +374,12 @@ let tmp4 = () => {
       let length;
       const self = this;
       const items = [];
-      const tmp = callback2(this._channelCaches);
+      const tmp = outer1_20(this._channelCaches);
       let iter = tmp();
       if (!iter.done) {
         do {
-          let tmp2 = closure_6;
-          let first = closure_6(iter.value, 1)[0];
+          let tmp2 = outer1_6;
+          let first = outer1_6(iter.value, 1)[0];
           if (!arg0(first)) {
             let arr = items.push(first);
           }
@@ -417,21 +418,22 @@ let tmp4 = () => {
     }
   };
   return callback2(ReferencedMessageCache, items);
-}();
+})();
 tmp4 = new tmp4();
-let tmp6 = (Store) => {
+let closure_18 = tmp4;
+let tmp6 = ((Store) => {
   class ReferencedMessageStore {
     constructor() {
       self = this;
-      tmp = closure_7(this, ReferencedMessageStore);
-      obj = closure_4(ReferencedMessageStore);
-      tmp2 = closure_3;
-      if (closure_19()) {
+      tmp = outer1_7(this, ReferencedMessageStore);
+      obj = outer1_4(ReferencedMessageStore);
+      tmp2 = outer1_3;
+      if (outer1_19()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_4;
+        tmp7 = outer1_4;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -440,12 +442,11 @@ let tmp6 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ReferencedMessageStore;
   callback(ReferencedMessageStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_11, closure_10, closure_9);
+      this.waitFor(outer1_11, outer1_10, outer1_9);
     }
   };
   const items = [obj, , , ];
@@ -454,10 +455,10 @@ let tmp6 = (Store) => {
     value(channel_id) {
       let value;
       if (null != channel_id) {
-        value = store.get(channel_id.channel_id, channel_id.message_id);
+        value = outer1_18.get(channel_id.channel_id, channel_id.message_id);
       }
       if (null == value) {
-        value = closure_15;
+        value = outer1_15;
       }
       return value;
     }
@@ -466,9 +467,9 @@ let tmp6 = (Store) => {
   obj = {
     key: "getMessage",
     value(arg0, arg1) {
-      let value = store.get(arg0, arg1);
+      let value = outer1_18.get(arg0, arg1);
       if (null == value) {
-        value = closure_15;
+        value = outer1_15;
       }
       return value;
     }
@@ -479,20 +480,20 @@ let tmp6 = (Store) => {
     value(arg0) {
       let cachedMessageIdsForChannel;
       if (null != arg0) {
-        cachedMessageIdsForChannel = store.getCachedMessageIdsForChannel(arg0);
+        cachedMessageIdsForChannel = outer1_18.getCachedMessageIdsForChannel(arg0);
       }
       if (null == cachedMessageIdsForChannel) {
-        cachedMessageIdsForChannel = closure_16;
+        cachedMessageIdsForChannel = outer1_16;
       }
       return cachedMessageIdsForChannel;
     }
   };
   return callback2(ReferencedMessageStore, items);
-}(require("__exportStarResult1").Store);
+})(require("initialize").Store);
 tmp6.displayName = "ReferencedMessageStore";
 obj = {
   CACHE_LOADED: function handleCacheLoaded(messages) {
-    return anyChanged(Object.values(messages.messages), (arg0) => callback(Object.values(arg0), (arg0) => callback(arg0)));
+    return anyChanged(Object.values(messages.messages), (arg0) => outer1_23(Object.values(arg0), (arg0) => outer2_22(arg0)));
   },
   LOCAL_MESSAGES_LOADED: handleLoadMessages,
   LOAD_MESSAGES_SUCCESS: handleLoadMessages,
@@ -501,7 +502,7 @@ obj = {
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
   CONVERSATION_FETCH_SUCCESS: function handleConversationFetchSuccess(messages) {
     messages = messages.messages;
-    return anyChanged(messages.concat(messages.messageReferences), (arg0) => callback(arg0));
+    return anyChanged(messages.concat(messages.messageReferences), (arg0) => outer1_22(arg0));
   },
   CONVERSATIONS_FETCH_SUCCESS: function handleConversationsFetchSuccess(rawConversations) {
     return anyChanged(rawConversations.rawConversations, (messages) => {
@@ -509,7 +510,7 @@ obj = {
       if (null == messages) {
         messages = [];
       }
-      return closure_23(messages, (arg0) => callback(arg0));
+      return outer1_23(messages, (arg0) => outer2_22(arg0));
     });
   },
   LOAD_THREADS_SUCCESS: handleLoadThreadsSuccess,
@@ -522,9 +523,9 @@ obj = {
       const value = tmp4.get(channelId, messageId);
       if (null != value) {
         if (value.state === obj.LOADED) {
-          const obj = {};
+          obj = {};
           obj.state = obj.LOADED;
-          obj.message = arg1(dependencyMap[12]).handleExplicitMediaScanTimeoutForMessage(value.message);
+          obj.message = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(value.message);
           const result = tmp4.set(channelId, messageId, obj);
         }
       }
@@ -538,7 +539,7 @@ obj = {
       first_message = first_message.first_message;
       let tmp = null != first_message;
       if (tmp) {
-        tmp = callback(first_message);
+        tmp = outer1_22(first_message);
       }
       return tmp;
     });
@@ -561,9 +562,9 @@ obj = {
       const value = tmp4.get(channel_id, id);
       if (null != value) {
         if (value.state === obj.LOADED) {
-          const obj = {};
+          obj = {};
           obj.state = obj.LOADED;
-          obj.message = arg1(dependencyMap[11]).updateMessageRecord(value.message, message);
+          obj.message = require(4351) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
           const result = tmp4.set(channel_id, id, obj);
         }
       }
@@ -576,26 +577,26 @@ obj = {
     return unsetDeletedMessage(channelId.channelId, channelId.id);
   },
   MESSAGE_DELETE_BULK: function handleMessageDeleteBulk(channelId) {
-    const arg1 = channelId.channelId;
-    return anyChanged(channelId.ids, (arg0) => callback(channelId, arg0));
+    channelId = channelId.channelId;
+    return anyChanged(channelId.ids, (arg0) => outer1_24(channelId, arg0));
   },
   CREATE_PENDING_REPLY: function handleCreatePendingReply(message) {
     message = message.message;
-    const obj = { state: obj.LOADED, message };
+    obj = { state: obj.LOADED, message };
     const result = tmp4.set(message.channel_id, message.id, obj);
   },
   CHANNEL_DELETE: handleChannelDelete,
   THREAD_DELETE: handleChannelDelete,
   GUILD_DELETE: function handleGenericCleanup() {
-    if (0 === tmp4.retainWhere((channelId) => null != channel.getChannel(channelId))) {
+    if (0 === tmp4.retainWhere((channelId) => null != outer1_10.getChannel(channelId))) {
       return false;
     }
   },
   CONNECTION_OPEN: resetState,
   LOGOUT: resetState
 };
-tmp6 = new tmp6(require("__exportStarResult1"), obj);
-const result = __exportStarResult1.fileFinishedImporting("modules/replies/ReferencedMessageStore.tsx");
+tmp6 = new tmp6(require("dispatcher"), obj);
+let result = set.fileFinishedImporting("modules/replies/ReferencedMessageStore.tsx");
 
 export default tmp6;
 export const ReferencedMessageState = obj;

@@ -1,11 +1,13 @@
 // Module ID: 89
 // Function ID: 1517
 // Name: processColorElement
-// Dependencies: []
+// Dependencies: [38]
 
 // Module 89 (processColorElement)
+const module = arg2;
+const dependencyMap = arg6;
 function processColorElement(arg0) {
-  let num = arg2(arg6[0])(arg0);
+  let num = module(38)(arg0);
   if (null == num) {
     const _console = console;
     console.error("Invalid value in color array:", arg0);

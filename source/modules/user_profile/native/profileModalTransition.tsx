@@ -1,40 +1,40 @@
-// Module ID: 15355
-// Function ID: 116953
+// Module ID: 15472
+// Function ID: 119127
 // Name: setTransitioningModalCount
-// Dependencies: [0, 0, 0]
+// Dependencies: [31, 1456, 2]
 // Exports: useIsProfileModalTransitioning, useReportProfileModalTransition
 
-// Module 15355 (setTransitioningModalCount)
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15472 (setTransitioningModalCount)
+import result from "result";
+import set from "set";
 
+const require = arg1;
 function setTransitioningModalCount(arg0) {
   const bound = Math.max(0, arg0);
-  if (bound !== closure_3) {
-    closure_3 = bound;
+  if (bound !== bound) {
     const item = set.forEach((arg0) => arg0());
   }
 }
-let closure_3 = 0;
-const set = new Set();
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
+let c3 = 0;
+let set = new Set();
+const result = set.fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
 
 export const useReportProfileModalTransition = function useReportProfileModalTransition() {
-  const navigation = arg1(dependencyMap[1]).useNavigation();
-  const arg1 = navigation;
-  const items = [navigation];
+  navigation = navigation(1456).useNavigation();
+  let items = [navigation];
   const effect = React.useEffect(() => {
     function leave() {
-      if (closure_0) {
-        closure_0 = false;
-        callback(closure_3 - 1);
+      if (c0) {
+        c0 = false;
+        outer2_5(outer2_3 - 1);
       }
     }
     const navigation = false;
     const items = [
       navigation.addListener("transitionStart", function enter() {
-        if (!closure_0) {
-          closure_0 = true;
-          callback(closure_3 + 1);
+        if (!c0) {
+          c0 = true;
+          outer2_5(outer2_3 + 1);
         }
       }),
       navigation.addListener("transitionEnd", leave),
@@ -48,7 +48,8 @@ export const useReportProfileModalTransition = function useReportProfileModalTra
 };
 export const useIsProfileModalTransitioning = function useIsProfileModalTransitioning() {
   return React.useSyncExternalStore((arg0) => {
-    set.add(arg0);
-    return () => set.delete(arg0);
-  }, () => closure_3 > 0);
+    let closure_0 = arg0;
+    outer1_4.add(arg0);
+    return () => outer2_4.delete(closure_0);
+  }, () => outer1_3 > 0);
 };

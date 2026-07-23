@@ -1,12 +1,11 @@
-// Module ID: 8303
-// Function ID: 65749
+// Module ID: 8309
+// Function ID: 65786
 // Name: CRUNCHYROLL_LINK_DEST_ORIGIN
-// Dependencies: []
+// Dependencies: [8310, 2]
 
-// Module 8303 (CRUNCHYROLL_LINK_DEST_ORIGIN)
-const items = [require(dependencyMap[0]).OAuth2Scopes.ACTIVITIES_WRITE, require(dependencyMap[0]).OAuth2Scopes.EMAIL, require(dependencyMap[0]).OAuth2Scopes.IDENTIFY];
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/connections/CrunchyrollConnectionConstants.tsx");
+// Module 8309 (CRUNCHYROLL_LINK_DEST_ORIGIN)
+const items = [require("set").OAuth2Scopes.ACTIVITIES_WRITE, require("set").OAuth2Scopes.EMAIL, require("set").OAuth2Scopes.IDENTIFY];
+const result = require("set").fileFinishedImporting("modules/connections/CrunchyrollConnectionConstants.tsx");
 
 export const CRUNCHYROLL_LINK_DEST_ORIGIN = "https://crunchyroll.com";
 export const CRUNCHYROLL_CLIENT_ID = "981509069309354054";

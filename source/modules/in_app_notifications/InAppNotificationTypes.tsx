@@ -1,10 +1,9 @@
-// Module ID: 10303
-// Function ID: 79539
+// Module ID: 10316
+// Function ID: 79613
 // Name: InAppNotificationAccessoryTypes
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 10303 (InAppNotificationAccessoryTypes)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/in_app_notifications/InAppNotificationTypes.tsx");
+// Module 10316 (InAppNotificationAccessoryTypes)
+const result = require("set").fileFinishedImporting("modules/in_app_notifications/InAppNotificationTypes.tsx");
 
 export const InAppNotificationAccessoryTypes = { REPLY_TOGGLE: "REPLY_TOGGLE", SEND_MESSAGE_BUTTON: "SEND_MESSAGE_BUTTON", REACTION_BUTTON: "REACTION_BUTTON", REACTION_PICKER_BUTTON: "REACTION_PICKER_BUTTON" };

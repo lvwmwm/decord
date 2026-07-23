@@ -1,53 +1,57 @@
-// Module ID: 9760
-// Function ID: 75928
+// Module ID: 9767
+// Function ID: 75969
 // Name: PremiumGiftSuccess
-// Dependencies: []
+// Dependencies: [31, 27, 7130, 1345, 33, 4130, 689, 1557, 8809, 44, 9768, 9690, 7859, 566, 1336, 1334, 9769, 9770, 9771, 2]
 // Exports: default
 
-// Module 9760 (PremiumGiftSuccess)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[5]).createStyles((arg0) => {
+// Module 9767 (PremiumGiftSuccess)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+let closure_9;
+let require = arg1;
+({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { PIN_MESSAGES: false, %ArrayProto_entries%: false, IS_IOS: false, EXPLICIT_MEDIA_MIN_HEIGHT: false, burst: false, normal: false, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(689).space.PX_16, flex: 1, alignContent: "center", justifyContent: "center", flexGrow: 1 };
   obj.bodyContainer = obj;
-  obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(dependencyMap[6]).space.PX_16, paddingBottom: arg0 + importDefault(dependencyMap[6]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_8 };
-  const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_TOP_LOW);
+  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, paddingTop: importDefault(689).space.PX_16, paddingBottom: arg0 + importDefault(689).space.PX_16, paddingHorizontal: importDefault(689).space.PX_16, gap: importDefault(689).space.PX_8 };
+  const merged = Object.assign(importDefault(689).shadows.SHADOW_TOP_LOW);
   obj.actionContainer = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftSuccess.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftSuccess.tsx");
 
 export default function PremiumGiftSuccess() {
   let giftCodeRecord;
   let recipientUser;
-  const tmp = callback3(importDefault(dependencyMap[7])().bottom);
-  let obj = arg1(dependencyMap[8]);
+  let tmp = callback3(importDefault(stateFromStores[7])().bottom);
+  let obj = require(stateFromStores[8]);
   const nativeGiftContext = obj.useNativeGiftContext();
   ({ recipientUser, giftCodeRecord } = nativeGiftContext);
-  importDefault(dependencyMap[9])(null != giftCodeRecord, "Gift code record cannot be null on success screen");
-  const tmp4 = importDefault(dependencyMap[10])();
-  const arg1 = tmp4;
-  const tmp5 = importDefault(dependencyMap[11])();
-  const importDefault = tmp5;
-  let obj1 = arg1(dependencyMap[12]);
+  importDefault(stateFromStores[9])(null != giftCodeRecord, "Gift code record cannot be null on success screen");
+  const tmp4 = importDefault(stateFromStores[10])();
+  require = tmp4;
+  const tmp5 = importDefault(stateFromStores[11])();
+  importDefault = tmp5;
+  let obj1 = require(stateFromStores[12]);
   const getOrFetchPurchase = obj1.useGetOrFetchPurchase(nativeGiftContext.selectedGiftingPromotionReward, false);
-  let obj2 = arg1(dependencyMap[13]);
-  const items = [closure_5];
-  const stateFromStores = obj2.useStateFromStores(items, () => {
-    const giftPromotion = giftPromotion.getGiftPromotion();
+  let obj2 = require(stateFromStores[13]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj2.useStateFromStores(items, () => {
+    const giftPromotion = outer1_5.getGiftPromotion();
     let id;
     if (null != giftPromotion) {
       id = giftPromotion.id;
     }
     return id;
   });
-  const dependencyMap = stateFromStores;
   const items1 = [tmp5, tmp4, stateFromStores];
   const effect = React.useEffect(() => {
     let tmp = null != tmp4;
@@ -55,32 +59,31 @@ export default function PremiumGiftSuccess() {
       tmp = null != tmp4.reminderNotice;
     }
     if (tmp) {
-      tmp = tmp5;
+      tmp = closure_1;
     }
     if (tmp) {
       tmp = null != stateFromStores;
     }
     if (tmp) {
       let obj = tmp4(stateFromStores[14]);
-      obj = { dismissAction: constants.INDIRECT_ACTION };
+      obj = { dismissAction: outer1_6.INDIRECT_ACTION };
       const result = obj.markSnowflakeBoundDismissibleContentAsDismissed(tmp4(stateFromStores[15]).DismissibleContent.GIFTING_PROMOTION_REMINDER, stateFromStores, obj);
-      const tmp5 = stateFromStores;
     }
   }, items1);
   if (null == recipientUser) {
     obj = { giftCodeRecord };
-    let tmp12 = callback(importDefault(dependencyMap[16]), obj);
+    let tmp12 = callback(importDefault(stateFromStores[16]), obj);
   } else {
-    tmp12 = callback(importDefault(dependencyMap[17]), {});
+    tmp12 = callback(importDefault(stateFromStores[17]), {});
   }
   if (null != getOrFetchPurchase) {
     obj = { purchase: getOrFetchPurchase };
-    let tmp19 = callback(importDefault(dependencyMap[18]), obj);
+    let tmp19 = callback(importDefault(stateFromStores[18]), obj);
   } else if (null == recipientUser) {
     obj1 = { giftCodeRecord };
-    tmp19 = callback(arg1(dependencyMap[16]).PremiumGiftSuccessActions, obj1);
+    tmp19 = callback(require(stateFromStores[16]).PremiumGiftSuccessActions, obj1);
   } else {
-    tmp19 = callback(arg1(dependencyMap[17]).PremiumGiftDMSuccessActions, {});
+    tmp19 = callback(require(stateFromStores[17]).PremiumGiftDMSuccessActions, {});
   }
   obj2 = {};
   const obj3 = { style: tmp.bodyContainer, children: tmp12 };

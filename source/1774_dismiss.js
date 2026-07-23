@@ -1,27 +1,31 @@
 // Module ID: 1774
-// Function ID: 19749
+// Function ID: 19750
 // Name: dismiss
-// Dependencies: []
+// Dependencies: [5, 1572]
 
 // Module 1774 (dismiss)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = true;
-let obj = { timestamp: new Date().getTime() };
-const KeyboardEvents = arg1(dependencyMap[1]).KeyboardEvents;
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { KeyboardEvents } from "nativeEventEmitter";
+import { KeyboardEvents as KeyboardEvents2 } from "nativeEventEmitter";
+
+const require = arg1;
+let c3 = true;
+let obj = { height: 0, duration: 0, timestamp: new Date().getTime(), target: -1, type: "default", appearance: "light" };
 KeyboardEvents.addListener("keyboardDidHide", (arg0) => {
-  let closure_3 = true;
+  let c3 = true;
+  let closure_4 = arg0;
 });
-const KeyboardEvents2 = arg1(dependencyMap[1]).KeyboardEvents;
 KeyboardEvents2.addListener("keyboardWillShow", (arg0) => {
-  let closure_3 = false;
+  let c3 = false;
+  let closure_4 = arg0;
 });
 obj = {};
 const date = new Date();
-obj.setDefaultMode = arg1(dependencyMap[1]).KeyboardControllerNative.setDefaultMode;
-obj.setInputMode = arg1(dependencyMap[1]).KeyboardControllerNative.setInputMode;
-obj.setFocusTo = arg1(dependencyMap[1]).KeyboardControllerNative.setFocusTo;
-obj.preload = arg1(dependencyMap[1]).KeyboardControllerNative.preload;
-obj.dismiss = () => {
+obj.setDefaultMode = require("nativeEventEmitter").KeyboardControllerNative.setDefaultMode;
+obj.setInputMode = require("nativeEventEmitter").KeyboardControllerNative.setInputMode;
+obj.setFocusTo = require("nativeEventEmitter").KeyboardControllerNative.setFocusTo;
+obj.preload = require("nativeEventEmitter").KeyboardControllerNative.preload;
+obj.dismiss = (() => {
   let closure_0 = callback(async (arg0) => {
     if (obj) {
       return obj.resume();
@@ -40,15 +44,15 @@ obj.dismiss = () => {
       closure_1 = null == animated || animated;
       const promise = new Promise((arg0) => {
         const callback = arg0;
-        if (closure_3) {
+        if (outer3_3) {
           arg0();
         } else {
-          const KeyboardEvents = callback(closure_1[1]).KeyboardEvents;
-          closure_1 = KeyboardEvents.addListener("keyboardDidHide", () => {
-            arg0(undefined);
+          const KeyboardEvents = callback(outer3_1[1]).KeyboardEvents;
+          let closure_1 = KeyboardEvents.addListener("keyboardDidHide", () => {
+            callback(undefined);
             closure_1.remove();
           });
-          const KeyboardControllerNative = callback(closure_1[1]).KeyboardControllerNative;
+          const KeyboardControllerNative = callback(outer3_1[1]).KeyboardControllerNative;
           KeyboardControllerNative.dismiss(callback, closure_1);
         }
       });
@@ -58,11 +62,11 @@ obj.dismiss = () => {
   return function dismiss(arg0) {
     return callback(...arguments);
   };
-}();
+})();
 obj.isVisible = function isVisible() {
-  return !closure_3;
+  return !c3;
 };
-obj.state = function state(Icon, arg1, value) {
+obj.state = function state(Icon, items, value) {
   return obj;
 };
 

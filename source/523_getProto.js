@@ -1,26 +1,26 @@
 // Module ID: 523
 // Function ID: 6628
 // Name: getProto
-// Dependencies: []
+// Dependencies: [524, 525, 527]
 
 // Module 523 (getProto)
-if (require(dependencyMap[0])) {
+if (require("getPrototypeOf")) {
   function getProto(arg0) {
-    return require(dependencyMap[0])(arg0);
+    return require(524) /* getPrototypeOf */(arg0);
   }
-} else if (require(dependencyMap[1])) {
+} else if (require("module_525")) {
   getProto = function getProto(arg0) {
     if (arg0) {
-      return require(dependencyMap[1])(arg0);
+      return require(525)(arg0);
     }
     const typeError = new TypeError("getProto: not an object");
     throw typeError;
   };
 } else {
   getProto = null;
-  if (require(dependencyMap[2])) {
+  if (require("module_527")) {
     getProto = function getProto(arg0) {
-      return require(dependencyMap[2])(arg0);
+      return require(527)(arg0);
     };
   }
 }

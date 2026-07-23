@@ -1,90 +1,98 @@
-// Module ID: 8399
-// Function ID: 66860
+// Module ID: 8405
+// Function ID: 66897
 // Name: StageChannelUpsell
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1352, 8406, 8354, 653, 33, 4130, 689, 4660, 1273, 7607, 8407, 4126, 1212, 4543, 4337, 8408, 1934, 4098, 2]
 // Exports: default
 
-// Module 8399 (StageChannelUpsell)
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
-const createChannelRecord = arg1(dependencyMap[3]).createChannelRecord;
-let closure_7 = arg1(dependencyMap[4]).useStageChannelUpsellCardStore;
-let closure_8 = arg1(dependencyMap[5]).CREATE_GUILD_EVENT_MODAL_KEY;
-const ChannelTypes = arg1(dependencyMap[6]).ChannelTypes;
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { 0: "v", 0: "r", 0: "isArray", 9223372036854775807: "color", 0: "v", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-obj.container = obj;
-obj.image = { marginBottom: 16 };
-obj.closeContainer = { convertShortcutToName: false, hasUnreadMessages: false, CreatorMonetizationRestrictions: false };
-obj.header = { -1576657582: 17891332, 1387815174: 2161 };
-obj.description = { memo: "/assets/design/components/Illustration/native/redesign/generated/images", accessibilityRole: 160 };
-obj.button = { -2124314034: null, 529464659: null };
-let closure_12 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guild_scheduled_events/native/components/StageChannelUpsell.tsx");
+// Module 8405 (StageChannelUpsell)
+import _slicedToArray from "_slicedToArray";
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { createChannelRecord } from "_callSuper";
+import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore";
+import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY";
+import { ChannelTypes } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_4;
+let closure_5;
+const require = arg1;
+({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "column", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, padding: 16, margin: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.image = { marginBottom: 16 };
+_createForOfIteratorHelperLoose.closeContainer = { position: "absolute", top: 14, right: 14 };
+_createForOfIteratorHelperLoose.header = { lineHeight: 20, marginBottom: 4 };
+_createForOfIteratorHelperLoose.description = { textAlign: "center", marginBottom: 4 };
+_createForOfIteratorHelperLoose.button = { marginTop: 12, alignSelf: "stretch" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_scheduled_events/native/components/StageChannelUpsell.tsx");
 
 export default function StageChannelUpsell(arg0) {
-  ({ guildId: closure_0, onCreate: closure_1 } = arg0);
-  const tmp = callback5();
+  let importDefault;
+  let require;
+  ({ guildId: require, onCreate: importDefault } = arg0);
+  let tmp = _createForOfIteratorHelperLoose();
   const tmp2 = callback(callback2(), 2);
   const dependencyMap = tmp3;
   let tmp4 = null;
   if (!tmp2[0]) {
     let obj = { style: tmp.container };
     obj = { onPress: tmp3, accessibilityRole: "button", style: tmp.closeContainer };
-    obj = { source: importDefault(dependencyMap[12]) };
-    obj.children = callback3(arg1(dependencyMap[11]).Icon, obj);
-    const items = [callback3(arg1(dependencyMap[10]).PressableOpacity, obj), , , , , ];
-    const obj1 = { source: importDefault(dependencyMap[13]), style: tmp.image };
+    obj = { source: importDefault(7607) };
+    obj.children = callback3(require(1273) /* Button */.Icon, obj);
+    const items = [callback3(require(4660) /* PressableBase */.PressableOpacity, obj), , , , , ];
+    const obj1 = { source: importDefault(8407), style: tmp.image };
     items[1] = callback3(closure_4, obj1);
-    const obj2 = { "Null": "useStateFromStores", "Null": "track", alignItems: "Array", style: tmp.header };
-    const intl = arg1(dependencyMap[15]).intl;
-    obj2.children = intl.string(arg1(dependencyMap[15]).t.Sx8Ezi);
-    items[2] = callback3(arg1(dependencyMap[14]).Text, obj2);
-    const obj3 = { style: tmp.description };
-    const intl2 = arg1(dependencyMap[15]).intl;
-    obj3.children = intl2.string(arg1(dependencyMap[15]).t.JUzPhm);
-    items[3] = callback3(arg1(dependencyMap[14]).Text, obj3);
-    const obj4 = { style: tmp.description };
-    const intl3 = arg1(dependencyMap[15]).intl;
+    let obj2 = { style: tmp.header, variant: "text-md/bold", color: "mobile-text-heading-primary" };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj2.children = intl.string(require(1212) /* getSystemLocale */.t.Sx8Ezi);
+    items[2] = callback3(require(4126) /* Text */.Text, obj2);
+    const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.JUzPhm);
+    items[3] = callback3(require(4126) /* Text */.Text, obj3);
+    const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj5 = {
       suggestionsHook(children) {
-          const obj = { cachedAt: true, edpbxy: true, children };
-          return callback3(callback(tmp3[14]).Text, obj, arg1);
+          const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+          return outer1_10(outer1_0(tmp3[14]).Text, obj, arg1);
         }
     };
-    obj4.children = intl3.format(arg1(dependencyMap[15]).t.Vh7rP7, obj5);
-    items[4] = callback3(arg1(dependencyMap[14]).Text, obj4);
+    obj4.children = intl3.format(require(1212) /* getSystemLocale */.t.Vh7rP7, obj5);
+    items[4] = callback3(require(4126) /* Text */.Text, obj4);
     const obj6 = { style: tmp.button };
-    const obj7 = {};
-    const intl4 = arg1(dependencyMap[15]).intl;
-    obj7.text = intl4.string(arg1(dependencyMap[15]).t.X/3SyA);
+    const obj7 = { variant: "secondary", size: "md" };
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    obj7.text = intl4.string(require(1212) /* getSystemLocale */.t["X/3SyA"]);
     obj7.onPress = function onPress() {
-      let obj = callback2(tmp3[17]);
-      obj.popWithKey(closure_8);
+      let obj = outer1_1(tmp3[17]);
+      obj.popWithKey(outer1_8);
       obj = {
-        guildId: callback,
-        channelType: constants.GUILD_STAGE_VOICE,
+        guildId: closure_0,
+        channelType: outer1_9.GUILD_STAGE_VOICE,
         onChannelCreated(id) {
-          const tmp = callback2({ id, type: constants.GUILD_STAGE_VOICE });
+          const tmp = outer2_6({ id, type: outer2_9.GUILD_STAGE_VOICE });
           if (null != tmp) {
-            callback(tmp);
+            outer1_1(tmp);
           }
         },
         onClose() {
-          callback(closure_2[17]).popWithKey("CREATE_CHANNEL_MODAL_KEY");
+          outer2_1(table[17]).popWithKey("CREATE_CHANNEL_MODAL_KEY");
         }
       };
-      callback2(tmp3[17]).pushLazy(callback(tmp3[19])(tmp3[18], tmp3.paths), obj, "CREATE_CHANNEL_MODAL_KEY");
-      const tmp3 = tmp3();
-      const obj2 = callback2(tmp3[17]);
-      callback2(tmp3[20]).hideActionSheet();
+      outer1_1(tmp3[17]).pushLazy(outer1_0(tmp3[19])(tmp3[18], tmp3.paths), obj, "CREATE_CHANNEL_MODAL_KEY");
+      tmp3 = tmp3();
+      const obj2 = outer1_1(tmp3[17]);
+      outer1_1(tmp3[20]).hideActionSheet();
     };
-    obj6.children = callback3(arg1(dependencyMap[16]).Button, obj7);
+    obj6.children = callback3(require(4543) /* Button */.Button, obj7);
     items[5] = callback3(closure_5, obj6);
     obj.children = items;
     tmp4 = callback4(closure_5, obj);

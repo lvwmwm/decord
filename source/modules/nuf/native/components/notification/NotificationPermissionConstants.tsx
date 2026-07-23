@@ -1,11 +1,10 @@
-// Module ID: 11439
-// Function ID: 89048
+// Module ID: 11449
+// Function ID: 89098
 // Name: EventActionType
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 11439 (EventActionType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/nuf/native/components/notification/NotificationPermissionConstants.tsx");
+// Module 11449 (EventActionType)
+const result = require("set").fileFinishedImporting("modules/nuf/native/components/notification/NotificationPermissionConstants.tsx");
 
 export const EventActionType = { SKIP_STEP: "skip_step", ALLOW_TO_REQUEST: "allow_to_request", REQUEST: "request", TO_SETTINGS: "to_settings", REQUEST_PROVISIONAL: "request_provisional", DISMISS: "dismiss" };
 export const EventActionLocation = { ALERT: "alert", AUTO_PROMPT: "auto_prompt", NAV: "nav", FOOTER: "footer", CTA: "cta", DM_LIST: "dm_list", MESSAGE_SENT: "message_sent", USER_SETTING: "user_setting", NOTIFICATION_SETTING: "notification_setting", INVITE_ACCEPTED: "invite_accepted", FRIEND_REQUEST_SENT: "friend_request_sent", FRIEND_REQUEST_ACCEPTED: "friend_request_accepted", NOTIFICATION_CENTER: "notification_center", CHANNEL_BANNER: "channel_banner", POST_REACTION: "post_reaction", GUILD_OPEN: "guild_open", CALL_DISCONNECT: "call_disconnect" };

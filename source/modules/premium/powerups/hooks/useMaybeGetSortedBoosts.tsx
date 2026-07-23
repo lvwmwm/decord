@@ -1,46 +1,45 @@
-// Module ID: 11603
-// Function ID: 90163
+// Module ID: 11613
+// Function ID: 90212
 // Name: useMaybeGetSortedBoosts
-// Dependencies: []
+// Dependencies: [57, 31, 11595, 4958, 1917, 1838, 11614, 566, 11615, 4026, 21, 1212, 2]
 // Exports: default, useGetBoostUserConfig
 
-// Module 11603 (useMaybeGetSortedBoosts)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/powerups/hooks/useMaybeGetSortedBoosts.tsx");
+// Module 11613 (useMaybeGetSortedBoosts)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/hooks/useMaybeGetSortedBoosts.tsx");
 
 export default function useMaybeGetSortedBoosts(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const expiringBoostsEnabled = arg1(dependencyMap[6]).useExpiringBoostsEnabled("GuildPowerupsRecentActivity");
-  const dependencyMap = expiringBoostsEnabled;
-  const obj = arg1(dependencyMap[6]);
-  const items = [closure_5];
+  const _require = arg0;
+  let closure_1 = arg1;
+  expiringBoostsEnabled = _require(expiringBoostsEnabled[6]).useExpiringBoostsEnabled("GuildPowerupsRecentActivity");
+  let obj = _require(expiringBoostsEnabled[6]);
+  const items = [memo];
   const items1 = [arg0];
-  const stateFromStoresArray = arg1(dependencyMap[7]).useStateFromStoresArray(items, () => {
-    let appliedGuildBoostsForGuild = memo.getAppliedGuildBoostsForGuild(arg0);
+  const stateFromStoresArray = _require(expiringBoostsEnabled[7]).useStateFromStoresArray(items, () => {
+    let appliedGuildBoostsForGuild = memo.getAppliedGuildBoostsForGuild(closure_0);
     if (null == appliedGuildBoostsForGuild) {
       appliedGuildBoostsForGuild = [];
     }
     return appliedGuildBoostsForGuild;
   }, items1);
-  const callback = stateFromStoresArray;
-  const first = callback(React.useState(() => Date.now()), 1)[0];
-  const React = first;
+  first = stateFromStoresArray(first.useState(() => Date.now()), 1)[0];
   const items2 = [stateFromStoresArray, arg1, first, expiringBoostsEnabled];
-  const memo = React.useMemo(() => {
+  memo = first.useMemo(() => {
     const mapped = stateFromStoresArray.map((boost) => {
-      if (closure_2) {
-        let boostLifecycleInfo = callback(closure_2[8]).getBoostLifecycleInfo(boost, closure_4);
-        const obj2 = callback(closure_2[8]);
+      if (outer1_2) {
+        let boostLifecycleInfo = callback(expiringBoostsEnabled[8]).getBoostLifecycleInfo(boost, outer1_4);
+        const obj2 = callback(expiringBoostsEnabled[8]);
       } else {
         boostLifecycleInfo = { phase: "gave" };
       }
-      const boostLifecycleTimestamp = callback(closure_2[8]).getBoostLifecycleTimestamp(boost, boostLifecycleInfo);
+      const boostLifecycleTimestamp = callback(expiringBoostsEnabled[8]).getBoostLifecycleTimestamp(boost, boostLifecycleInfo);
       if ("expiring" === boostLifecycleInfo.phase) {
         let obj = { boost, phase: "expiring", sortKey: boostLifecycleTimestamp, endsAt: boostLifecycleInfo.endsAt };
       } else {
@@ -49,50 +48,45 @@ export default function useMaybeGetSortedBoosts(arg0, arg1) {
       return obj;
     });
     const sorted = mapped.sort((sortKey, sortKey2) => sortKey2.sortKey - sortKey.sortKey);
-    return sorted.slice(0, arg1);
+    return sorted.slice(0, closure_1);
   }, items2);
-  closure_5 = memo;
-  const obj2 = arg1(dependencyMap[7]);
-  const items3 = [closure_7];
+  let obj2 = _require(expiringBoostsEnabled[7]);
+  const items3 = [stateFromStores];
   const items4 = [arg0, memo];
-  const stateFromStoresArray1 = arg1(dependencyMap[7]).useStateFromStoresArray(items3, () => {
+  const stateFromStoresArray1 = _require(expiringBoostsEnabled[7]).useStateFromStoresArray(items3, () => {
     const set = new Set();
-    const arg0 = set;
     const item = memo.forEach((boost) => {
       boost = boost.boost;
-      if (null == member.getMember(set, boost.userId)) {
+      if (null == stateFromStores.getMember(set, boost.userId)) {
         set.add(boost.userId);
       }
     });
     return Array.from(set);
   }, items4);
-  let closure_6 = stateFromStoresArray1;
   const items5 = [arg0, stateFromStoresArray1];
-  const effect = React.useEffect(() => {
+  const effect = first.useEffect(() => {
     if (stateFromStoresArray1.length > 0) {
-      const item = stateFromStoresArray1.forEach((id) => closure_6.requestMember(closure_0, id));
+      const item = stateFromStoresArray1.forEach((id) => stateFromStoresArray1.requestMember(outer1_0, id));
     }
   }, items5);
-  const obj3 = arg1(dependencyMap[7]);
-  const items6 = [closure_8];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items6, () => {
-    const guild = memo1.getGuild(arg0);
+  const obj3 = _require(expiringBoostsEnabled[7]);
+  const items6 = [memo1];
+  stateFromStores = _require(expiringBoostsEnabled[7]).useStateFromStores(items6, () => {
+    const guild = memo1.getGuild(closure_0);
     let prop;
     if (null != guild) {
       prop = guild.premiumSubscriberCount;
     }
     return prop;
   });
-  closure_7 = stateFromStores;
   const items7 = [stateFromStoresArray];
-  const memo1 = React.useMemo(() => stateFromStoresArray.filter((ended) => !ended.ended).length, items7);
-  closure_8 = memo1;
-  const obj4 = arg1(dependencyMap[7]);
-  const items8 = [closure_5];
+  memo1 = first.useMemo(() => stateFromStoresArray.filter((ended) => !ended.ended).length, items7);
+  const obj4 = _require(expiringBoostsEnabled[7]);
+  const items8 = [memo];
   const items9 = [arg0];
-  const stateFromStores1 = arg1(dependencyMap[7]).useStateFromStores(items8, () => null != memo.getLastFetchedAtForGuild(arg0), items9);
+  const stateFromStores1 = _require(expiringBoostsEnabled[7]).useStateFromStores(items8, () => null != memo.getLastFetchedAtForGuild(closure_0), items9);
   const items10 = [arg0, stateFromStores, memo1, expiringBoostsEnabled, stateFromStores1];
-  const effect1 = React.useEffect(() => {
+  const effect1 = first.useEffect(() => {
     let tmp = stateFromStores !== memo1;
     if (!tmp) {
       let tmp2 = expiringBoostsEnabled;
@@ -102,25 +96,25 @@ export default function useMaybeGetSortedBoosts(arg0, arg1) {
       tmp = tmp2;
     }
     if (tmp) {
-      let obj = arg0(expiringBoostsEnabled[9]);
+      let obj = callback(expiringBoostsEnabled[9]);
       obj = { includeEnded: expiringBoostsEnabled };
-      const appliedGuildBoostsForGuild = obj.fetchAppliedGuildBoostsForGuild(arg0, obj);
+      const appliedGuildBoostsForGuild = obj.fetchAppliedGuildBoostsForGuild(callback, obj);
     }
   }, items10);
   return memo;
 };
 export const useGetBoostUserConfig = function useGetBoostUserConfig(boost) {
-  const arg1 = boost;
-  let obj = importDefault(dependencyMap[10]);
+  const _require = boost;
+  let obj = importDefault(21);
   const date = new Date(obj.extractTimestamp(boost.id));
   const items = [closure_7];
   const items1 = [boost];
-  const stateFromStoresObject = arg1(dependencyMap[7]).useStateFromStoresObject(items, (self) => {
-    const member = store.getMember(self.guildId, self.userId);
+  const stateFromStoresObject = _require(566).useStateFromStoresObject(items, () => {
+    const member = outer1_7.getMember(boost.guildId, boost.userId);
     const obj = {};
-    let nick = store.getNick(self.guildId, self.userId);
+    let nick = outer1_7.getNick(boost.guildId, boost.userId);
     if (null == nick) {
-      const user = self.user;
+      const user = boost.user;
       let username;
       if (null != user) {
         username = user.username;
@@ -128,8 +122,8 @@ export const useGetBoostUserConfig = function useGetBoostUserConfig(boost) {
       nick = username;
     }
     if (null == nick) {
-      const intl = self(closure_2[11]).intl;
-      nick = intl.string(self(closure_2[11]).t.30mdIx);
+      const intl = boost(outer1_2[11]).intl;
+      nick = intl.string(boost(outer1_2[11]).t["30mdIx"]);
     }
     obj.username = nick;
     let colorString;

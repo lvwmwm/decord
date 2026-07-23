@@ -1,9 +1,20 @@
-// Module ID: 6937
-// Function ID: 55355
+// Module ID: 6942
+// Function ID: 55389
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 6943, 6944, 4976, 664, 22, 4983, 6947, 1184, 6940, 4979, 6948, 6949, 6957, 6958, 561, 566, 686, 2]
 
-// Module 6937 (_isNativeReflectConstruct)
+// Module 6942 (_isNativeReflectConstruct)
+import useConsoleQuestUIStore from "useConsoleQuestUIStore";
+import _toPropertyKey from "_toPropertyKey";
+import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource";
+import questConfigFromServer from "questConfigFromServer";
+import apexExperiment from "apexExperiment";
+import _slicedToArray from "_slicedToArray";
+import closure_33 from "useConsoleQuestUIStore";
+import closure_34 from "_toPropertyKey";
+import { QuestsExperimentLocations } from "QuestsExperimentLocations";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +24,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,23 +104,23 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function initializeState() {
-  let closure_3 = false;
-  let closure_4 = false;
-  let map = new Map();
-  let closure_6 = false;
-  let closure_7 = false;
-  let map1 = new Map();
+  let c3 = false;
+  let c4 = false;
+  const map = new Map();
+  let c6 = false;
+  let c7 = false;
+  const map1 = new Map();
   const map2 = new Map();
   const map3 = new Map();
   const map4 = new Map();
-  let closure_12 = 0;
-  let closure_13 = 0;
+  let c12 = 0;
+  let c13 = 0;
   const set = new Set();
   const set1 = new Set();
   const set2 = new Set();
   const set3 = new Set();
   const set4 = new Set();
-  map = new Map();
+  const map5 = new Map();
   const map6 = new Map();
   const map7 = new Map();
   const map8 = new Map();
@@ -120,27 +131,26 @@ function initializeState() {
   const map12 = new Map();
   const map13 = new Map();
   _stopExpirationChecker();
-  let closure_37 = null;
+  let c37 = null;
   const map14 = new Map();
-  const map5 = new Map();
-  map1 = new Map();
+  const map15 = new Map();
   const map16 = new Map();
   const map17 = new Map();
   const map18 = new Map();
-  let closure_46 = null;
-  let closure_48 = null;
+  let c46 = null;
+  let c48 = null;
 }
-function updateQuestData(questId, userStatus) {
+function updateQuestData(questId, result2) {
   let tmp3;
   let tmp4;
-  const map = new Map(map);
+  map = new Map(map);
   let value = map.get(questId);
   if (null != value) {
     let obj = {};
     const merged = Object.assign(value);
-    const merged1 = Object.assign(userStatus);
-    if (null != userStatus.userStatus) {
-      userStatus = userStatus.userStatus;
+    const merged1 = Object.assign(result2);
+    if (null != result2.userStatus) {
+      const userStatus = result2.userStatus;
       let progress;
       if (null != userStatus) {
         progress = userStatus.progress;
@@ -153,15 +163,15 @@ function updateQuestData(questId, userStatus) {
       if (0 < values.length) {
         while (true) {
           tmp4 = values[num];
-          let tmp5 = userStatus;
+          let tmp5 = require;
           let tmp6 = dependencyMap;
-          let obj3 = userStatus(dependencyMap[10]);
+          let obj3 = require(22) /* apply */;
           let tmp7 = tmp2;
           let tmp8 = tmp3;
           if (!obj3.isNil(tmp4)) {
-            let tmp9 = userStatus;
+            let tmp9 = require;
             let tmp10 = dependencyMap;
-            let DESKTOP = userStatus(dependencyMap[11]).FirstPartyQuestTaskTypesSets.DESKTOP;
+            let DESKTOP = require(4983) /* set */.FirstPartyQuestTaskTypesSets.DESKTOP;
             let tmp11 = tmp3;
             if (DESKTOP.has(tmp4.eventName)) {
               break;
@@ -171,7 +181,7 @@ function updateQuestData(questId, userStatus) {
             }
           }
           num = num + 1;
-          let tmp2 = tmp7;
+          tmp2 = tmp7;
           tmp3 = tmp8;
         }
         const heartbeat = tmp4.heartbeat;
@@ -201,21 +211,21 @@ function updateQuestData(questId, userStatus) {
       value = map1.get(questId);
       if (null != value) {
         const _Map = Map;
-        const map1 = new Map(map1);
+        map1 = new Map(map1);
         obj = {};
         const merged2 = Object.assign(value);
-        const merged3 = Object.assign(userStatus);
+        const merged3 = Object.assign(result2);
         const result1 = map1.set(questId, obj);
       }
     }
   }
 }
 function _addRewardCode(questId, rewardCode) {
-  const map = new Map(map);
+  map = new Map(map);
   const result = map.set(questId, rewardCode);
 }
 function updateQuestRewardData(questId, entitlements) {
-  const map = new Map(map);
+  map = new Map(map);
   const result = map.set(questId, entitlements.items);
   const value = store.get(questId);
   let userStatus;
@@ -235,7 +245,7 @@ function updateQuestRewardData(questId, entitlements) {
         tag = reward.tag;
       }
       let rewardCode = null;
-      if (tag === entitlements(dependencyMap[12]).QuestRewardTypes.REWARD_CODE) {
+      if (tag === require(6947) /* QuestRewardTypes */.QuestRewardTypes.REWARD_CODE) {
         rewardCode = reward.rewardCode;
       }
       if (null != rewardCode) {
@@ -263,38 +273,39 @@ function updateQuestRewardData(questId, entitlements) {
 function maybeDeleteQuestHeartbeatFailure(streamKey) {
   if (null != map.get(streamKey)) {
     const _Map = Map;
-    const map = new Map(map);
+    map = new Map(map);
     map.delete(streamKey);
   }
 }
 function removeQuestIdFromIsEnrolling(questId) {
-  const set = new Set(set);
+  set = new Set(set);
   set.delete(questId);
 }
 function removeQuestIdFromIsDismissing(questId) {
-  const set = new Set(set);
+  set = new Set(set);
   set.delete(questId);
 }
 function _runExpirationCheck() {
-  function updateExpiredQuestsMap() {
-    let closure_0 = false;
-    const map = new Map(map);
-    const item = closure_9.forEach((value) => {
+  (function updateExpiredQuestsMap() {
+    let c0 = false;
+    const map = new Map(outer1_36);
+    const item = outer1_9.forEach((value) => {
       if (true !== map.get(arg1)) {
         if (obj.isQuestExpired(value)) {
           const result = obj2.set(arg1, true);
-          const callback = true;
+          let c0 = true;
         } else if (!obj2.has(arg1)) {
           const result1 = map.set(arg1, false);
         }
-        const obj = callback(closure_2[14]);
+        obj = outer2_0(outer2_2[14]);
       }
     });
-    if (closure_0) {
-      closure_50.emitChange();
+    if (c0) {
+      outer1_36 = map;
+      outer1_50.emitChange();
     }
-  }();
-  const result = arg1(dependencyMap[14]).findNextUpcomingExpirationEpochMs(Array.from(store.values()));
+  })();
+  let result = require(6940) /* _createForOfIteratorHelperLoose */.findNextUpcomingExpirationEpochMs(Array.from(store.values()));
   if (null != result) {
     const _Math = Math;
     const _Date = Date;
@@ -302,49 +313,40 @@ function _runExpirationCheck() {
     if (bound <= 864000000) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        callback();
+        outer1_61();
       }, bound);
     }
   }
 }
 function _stopExpirationChecker() {
-  if (null != closure_43) {
+  if (null != c43) {
     const _clearTimeout = clearTimeout;
-    clearTimeout(closure_43);
-    closure_43 = null;
+    clearTimeout(c43);
+    c43 = null;
   }
 }
-let closure_27 = importDefault(dependencyMap[0]);
-let closure_28 = importDefault(dependencyMap[1]);
-let closure_29 = importDefault(dependencyMap[2]);
-let closure_30 = importDefault(dependencyMap[3]);
-let closure_31 = importDefault(dependencyMap[4]);
-let closure_32 = importDefault(dependencyMap[5]);
-let closure_33 = importDefault(dependencyMap[6]);
-let closure_34 = importDefault(dependencyMap[7]);
-const QuestsExperimentLocations = arg1(dependencyMap[8]).QuestsExperimentLocations;
-const map = new Map();
-let closure_43 = null;
-let closure_44 = 30 * importDefault(dependencyMap[9]).Millis.SECOND;
-let closure_45 = 10 * importDefault(dependencyMap[9]).Millis.MINUTE;
-let closure_46 = null;
-let closure_47 = false;
-let closure_48 = null;
-const map1 = new Map();
+let map = new Map();
+let c43 = null;
+let closure_44 = 30 * require("set").Millis.SECOND;
+let closure_45 = 10 * require("set").Millis.MINUTE;
+let c46 = null;
+let c47 = false;
+let c48 = null;
+let map1 = new Map();
 initializeState();
-let tmp5 = (Store) => {
+let tmp5 = ((Store) => {
   class QuestStore {
     constructor() {
       self = this;
-      tmp = closure_27(this, QuestStore);
-      obj = closure_30(QuestStore);
-      tmp2 = closure_29;
-      if (closure_51()) {
+      tmp = outer1_27(this, QuestStore);
+      obj = outer1_30(QuestStore);
+      tmp2 = outer1_29;
+      if (outer1_51()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_30;
+        tmp7 = outer1_30;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_30(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_30(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -353,71 +355,70 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = QuestStore;
   callback2(QuestStore, Store);
   let obj = {
     key: "quests",
     get() {
-      return closure_9;
+      return outer1_9;
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "excludedQuests",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[1] = obj;
   obj = {
     key: "claimedQuests",
     get() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "isFetchingCurrentQuests",
     get() {
-      return closure_3;
+      return outer1_3;
     }
   };
   items[4] = {
     key: "isFetchingClaimedQuests",
     get() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[5] = {
     key: "isFetchingQuestPreview",
     value(arg0) {
-      return set5.has(arg0);
+      return outer1_18.has(arg0);
     }
   };
   items[6] = {
     key: "lastFetchedCurrentQuests",
     get() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[7] = {
     key: "lastFetchedQuestToDeliver",
     get() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[8] = {
     key: "isFetchingQuestToDeliver",
     get() {
-      return closure_4;
+      return outer1_4;
     }
   };
   items[9] = {
     key: "isFetchingQuestToDeliverByPlacement",
     value(arg0) {
       let value;
-      if (null != closure_5) {
-        value = closure_5.get(arg0);
+      if (null != outer1_5) {
+        value = outer1_5.get(arg0);
       }
       return null != value && value;
     }
@@ -426,8 +427,8 @@ let tmp5 = (Store) => {
     key: "canRefreshAd",
     value(arg0) {
       let value;
-      if (null != closure_40) {
-        value = closure_40.get(arg0);
+      if (null != outer1_40) {
+        value = outer1_40.get(arg0);
       }
       let tmp3 = null == value;
       if (!tmp3) {
@@ -440,10 +441,10 @@ let tmp5 = (Store) => {
   items[11] = {
     key: "getQuestPreviewOverride",
     value(arg0) {
-      let value = closure_23.get(arg0);
+      let value = outer1_23.get(arg0);
       value = undefined;
       if (null != value) {
-        value = store.get(value);
+        value = outer1_9.get(value);
       }
       return value;
     }
@@ -451,73 +452,73 @@ let tmp5 = (Store) => {
   items[12] = {
     key: "questToDeliverForPlacement",
     get() {
-      return closure_25;
+      return outer1_25;
     }
   };
   items[13] = {
     key: "questEnrollmentBlockedUntil",
     get() {
-      return closure_37;
+      return outer1_37;
     }
   };
   items[14] = {
     key: "questAdDecisionByPlacement",
     get() {
-      return closure_38;
+      return outer1_38;
     }
   };
   items[15] = {
     key: "getFetchQuestPreviewError",
     value(arg0) {
-      return closure_49.get(arg0);
+      return outer1_49.get(arg0);
     }
   };
   items[16] = {
     key: "isEnrolling",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_14.has(arg0);
     }
   };
   items[17] = {
     key: "isClaimingReward",
     value(arg0) {
-      return set2.has(arg0);
+      return outer1_15.has(arg0);
     }
   };
   items[18] = {
     key: "isFetchingRewardCode",
     value(arg0) {
-      return set3.has(arg0);
+      return outer1_16.has(arg0);
     }
   };
   items[19] = {
     key: "isDismissingContent",
     value(arg0) {
-      return set4.has(arg0);
+      return outer1_17.has(arg0);
     }
   };
   items[20] = {
     key: "getRewardCode",
     value(arg0) {
-      return closure_20.get(arg0);
+      return outer1_20.get(arg0);
     }
   };
   items[21] = {
     key: "getRewards",
     value(arg0) {
-      return closure_21.get(arg0);
+      return outer1_21.get(arg0);
     }
   };
   items[22] = {
     key: "getStreamHeartbeatFailure",
     value(arg0) {
-      return closure_22.get(arg0);
+      return outer1_22.get(arg0);
     }
   };
   items[23] = {
     key: "getQuest",
     value(arg0) {
-      return store.get(arg0);
+      return outer1_9.get(arg0);
     }
   };
   items[24] = {
@@ -534,13 +535,13 @@ let tmp5 = (Store) => {
   items[25] = {
     key: "isProgressingOnDesktop",
     value(arg0) {
-      return set6.has(arg0);
+      return outer1_19.has(arg0);
     }
   };
   items[26] = {
     key: "selectedTaskPlatform",
     value(arg0) {
-      const value = closure_24.get(arg0);
+      const value = outer1_24.get(arg0);
       let tmp2 = null;
       if (null != value) {
         tmp2 = value;
@@ -551,7 +552,7 @@ let tmp5 = (Store) => {
   items[27] = {
     key: "getOptimisticProgress",
     value(arg0, arg1) {
-      let value = closure_42.get(arg0);
+      let value = outer1_42.get(arg0);
       value = undefined;
       if (null != value) {
         value = value.get(arg1);
@@ -562,52 +563,52 @@ let tmp5 = (Store) => {
   items[28] = {
     key: "getExpiredQuestsMap",
     value() {
-      return closure_36;
+      return outer1_36;
     }
   };
   items[29] = {
     key: "isQuestExpired",
     value(arg0) {
-      const value = closure_36.get(arg0);
+      const value = outer1_36.get(arg0);
       return null != value && value;
     }
   };
   items[30] = {
     key: "getQuestLoadedViaPreview",
     value(arg0) {
-      return closure_41.get(arg0);
+      return outer1_41.get(arg0);
     }
   };
   items[31] = {
     key: "isFetchingQuestHomeHero",
     value() {
-      return closure_47;
+      return outer1_47;
     }
   };
   items[32] = {
     key: "getQuestHomeHero",
     value() {
-      return closure_48;
+      return outer1_48;
     }
   };
   items[33] = {
     key: "getLastFetchedQuestHomeHero",
     value() {
-      return closure_46;
+      return outer1_46;
     }
   };
   items[34] = {
     key: "isFetchingEarnedQuestToDeliver",
     get() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[35] = {
     key: "isFetchingEarnedQuestToDeliverByPlacement",
     value(arg0) {
       let value;
-      if (null != closure_8) {
-        value = closure_8.get(arg0);
+      if (null != outer1_8) {
+        value = outer1_8.get(arg0);
       }
       return null != value && value;
     }
@@ -615,13 +616,13 @@ let tmp5 = (Store) => {
   items[36] = {
     key: "earnedQuestForPlacement",
     get() {
-      return closure_26;
+      return outer1_26;
     }
   };
   return callback(QuestStore, items);
-}(importDefault(dependencyMap[21]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "QuestStore";
-tmp5 = new tmp5(importDefault(dependencyMap[22]), {
+tmp5 = new tmp5(require("dispatcher"), {
   LOGOUT: function handleLogout() {
     _stopExpirationChecker();
     initializeState();
@@ -631,7 +632,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     state1.reset();
   },
   QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function handleFetchCurrentQuestsBegin() {
-    let closure_3 = true;
+    let c3 = true;
   },
   QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: function handleFetchCurrentQuestsSuccess(excludedQuests) {
     let done;
@@ -640,12 +641,11 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     let questEnrollmentBlockedUntil;
     let quests;
     ({ quests, questEnrollmentBlockedUntil } = excludedQuests);
-    const items = [...closure_9.keys()];
+    const items = [...map.keys()];
     const mapped = quests.map((id) => id.id);
-    const arg1 = mapped;
     const found = items.filter((arg0) => !mapped.includes(arg0));
     if (found.length > 0) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(1184);
       obj = { category: "quests.store" };
       const _HermesInternal = HermesInternal;
       obj.message = "handleFetchCurrentQuestsSuccess: " + found.length + " quest(s) removed during rebuild";
@@ -654,28 +654,28 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
       obj.addBreadcrumb(obj);
     }
     let closure_12 = Date.now();
-    let closure_3 = false;
-    const map = new Map();
+    let c3 = false;
+    map = new Map();
     const map1 = new Map();
     const tmp7 = _createForOfIteratorHelperLoose(quests);
     let iter = tmp7();
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp8 = closure_9;
-        let result = closure_9.set(value.id, value);
-        let tmp10 = closure_0;
-        let tmp11 = closure_2;
-        let obj5 = closure_0(closure_2[14]);
+        let tmp8 = map;
+        let result = map.set(value.id, value);
+        let tmp10 = mapped;
+        let tmp11 = dependencyMap;
+        let obj5 = mapped(6940);
         let result1 = map1.set(value.id, obj5.isQuestExpired(value));
         let targetedContent = value.targetedContent;
-        if (targetedContent.includes(closure_0(closure_2[15]).QuestContent.QUEST_BAR)) {
-          let tmp13 = closure_0;
-          let tmp14 = closure_2;
-          let obj6 = closure_0(closure_2[16]);
+        if (targetedContent.includes(mapped(4979).QuestContent.QUEST_BAR)) {
+          let tmp13 = mapped;
+          let tmp14 = dependencyMap;
+          let obj6 = mapped(6948);
           let obj1 = {};
-          let tmp15 = closure_35;
-          obj1.location = closure_35.QUESTS_STORE;
+          let tmp15 = QuestsExperimentLocations;
+          obj1.location = QuestsExperimentLocations.QUESTS_STORE;
           let questLogger = obj6.getQuestLogger(obj1);
           let _HermesInternal2 = HermesInternal;
           let str4 = "Delivered ";
@@ -693,8 +693,8 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     if (!iter3.done) {
       do {
         value = iter3.value;
-        let tmp19 = closure_10;
-        let result2 = closure_10.set(value.id, value);
+        let tmp19 = map2;
+        let result2 = map2.set(value.id, value);
         let iter4 = tmp18();
         iter3 = iter4;
         done = iter4.done;
@@ -709,13 +709,13 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     if (!iter5.done) {
       do {
         value = iter5.value;
-        let tmp24 = closure_9;
-        if (!closure_9.has(value.id)) {
-          let tmp25 = closure_9;
-          let result3 = closure_9.set(value.id, value);
-          let tmp27 = closure_0;
-          let tmp28 = closure_2;
-          let obj10 = closure_0(closure_2[14]);
+        let tmp24 = map;
+        if (!map.has(value.id)) {
+          let tmp25 = map;
+          let result3 = map.set(value.id, value);
+          let tmp27 = mapped;
+          let tmp28 = dependencyMap;
+          let obj10 = mapped(6940);
           let result4 = map1.set(value.id, obj10.isQuestExpired(value));
         }
         iter6 = tmp21Result();
@@ -731,23 +731,23 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     }
   },
   QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function handleFetchCurrentQuestsFailure() {
-    let closure_12 = 0;
-    let closure_3 = false;
+    let c12 = 0;
+    let c3 = false;
   },
   QUESTS_FETCH_CLAIMED_QUESTS_BEGIN: function handleFetchClaimedQuestsBegin() {
-    let closure_6 = true;
+    let c6 = true;
   },
   QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: function handleFetchClaimedQuestsSuccess(quests) {
     let done;
-    let closure_6 = false;
+    let c6 = false;
     const map = new Map();
     const tmp2 = _createForOfIteratorHelperLoose(quests.quests);
     let iter = tmp2();
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp3 = closure_11;
-        let result = closure_11.set(value.id, value);
+        let tmp3 = map;
+        let result = map.set(value.id, value);
         let iter2 = tmp2();
         iter = iter2;
         done = iter2.done;
@@ -755,11 +755,11 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     }
   },
   QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: function handleFetchClaimedQuestsFailure() {
-    let closure_6 = false;
+    let c6 = false;
   },
   QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: function handleFetchQuestToDeliverBegin(placement) {
-    let closure_4 = true;
-    const map = new Map(map);
+    let c4 = true;
+    map = new Map(map);
     const result = map.set(placement.placement, true);
   },
   QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: function handleFetchQuestToDeliverSuccess(arg0) {
@@ -774,8 +774,8 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     ({ quest, placement, adDecisionData, adContext, metadataSealed, trafficMetadataSealed } = arg0);
     ({ responseTtlSeconds, fetchedAt } = arg0);
     let closure_13 = Date.now();
-    let closure_4 = false;
-    const map = new Map(map);
+    let c4 = false;
+    map = new Map(map);
     const result = map.set(placement, false);
     const value = store5.get(placement);
     if (null != value) {
@@ -803,15 +803,15 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
       }
       obj.adCreativeId = tmp11;
       obj.fetchedAt = fetchedAt;
-      obj.ttlMillis = arg1(dependencyMap[19]).resolveResponseTtl(responseTtlSeconds);
+      obj.ttlMillis = require(6958) /* resolveResponseTtl */.resolveResponseTtl(responseTtlSeconds);
       obj.adDecisionData = adDecisionData;
       obj.adContext = adContext;
       obj.metadataSealed = metadataSealed;
       obj.trafficMetadataSealed = trafficMetadataSealed;
       const _Map = Map;
-      const map1 = new Map(map1);
+      map1 = new Map(map1);
       const result1 = map1.set(placement, obj);
-      const obj6 = arg1(dependencyMap[19]);
+      const obj6 = require(6958) /* resolveResponseTtl */;
     } else if (null == quest) {
       map.delete(placement);
     } else {
@@ -823,12 +823,12 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     placement = placement.placement;
     map.delete(placement);
     let closure_13 = Date.now();
-    let closure_4 = false;
-    const map = new Map(map);
+    let c4 = false;
+    map = new Map(map);
     const result = map.set(placement, false);
     let value = store5.get(placement);
     if (null == value) {
-      let tmp5 = importDefault(dependencyMap[20]);
+      let tmp5 = importDefault(561);
       const prototype = tmp5.prototype;
       tmp5 = new tmp5(closure_44, closure_45);
       const result1 = store5.set(placement, tmp5);
@@ -842,23 +842,23 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     let responseTtlSeconds;
     placement = placement.placement;
     ({ responseTtlSeconds, fetchedAt } = placement);
-    let obj = importDefault(dependencyMap[18]);
+    let obj = importDefault(6957);
     if (obj.getConfig({ location: "handleClearExpiredQuestToDeliver" }).enableNewRequestBehavior) {
-      let closure_4 = false;
+      let c4 = false;
       const _Map = Map;
-      const map = new Map(map);
+      map = new Map(map);
       const result = map.set(placement, false);
-      obj = { fetchedAt, ttlMillis: arg1(dependencyMap[19]).resolveResponseTtl(responseTtlSeconds) };
+      obj = { questId: null, adCreativeId: null, fetchedAt, ttlMillis: require(6958) /* resolveResponseTtl */.resolveResponseTtl(responseTtlSeconds) };
       const _Map2 = Map;
-      const map1 = new Map(map1);
+      map1 = new Map(map1);
       const result1 = map1.set(placement, obj);
     } else {
       return false;
     }
   },
   QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN: function handleFetchEarnedQuestToDeliverBegin(content) {
-    let closure_7 = true;
-    const map = new Map(map);
+    let c7 = true;
+    map = new Map(map);
     const result = map.set(content.content, true);
   },
   QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_SUCCESS: function handleFetchEarnedQuestToDeliverSuccess(content) {
@@ -869,11 +869,11 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     let tmp8;
     let tmp9;
     content = content.content;
-    let closure_7 = false;
+    let c7 = false;
     ({ serverQuests, fetchedAt, responseTtlSeconds } = content);
-    const map = new Map(map);
+    map = new Map(map);
     const result = map.set(content, false);
-    const responseTtl = arg1(dependencyMap[19]).resolveResponseTtl(responseTtlSeconds);
+    const responseTtl = require(6958) /* resolveResponseTtl */.resolveResponseTtl(responseTtlSeconds);
     let value = store2.get(content);
     let prop;
     if (null != value) {
@@ -885,30 +885,30 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     let iter2 = iter;
     if (!iter.done) {
       do {
-        let tmp6 = closure_32;
-        let tmp7 = closure_32(iter2.value, 2);
+        let tmp6 = callback3;
+        let tmp7 = callback3(iter2.value, 2);
         [tmp8, tmp9] = tmp7;
         let obj = { fetchedAt, ttlMillis: responseTtl, shouldDeliver: null != tmp9 };
         let result1 = map1.set(tmp8, obj);
         if (null != tmp9) {
-          let tmp15 = closure_9;
-          let tmp17 = closure_0;
-          let tmp18 = closure_2;
-          value = closure_9.get(tmp8);
-          let obj5 = closure_0(closure_2[17]);
+          let tmp15 = store;
+          let tmp17 = require;
+          let tmp18 = dependencyMap;
+          value = store.get(tmp8);
+          let obj5 = require(6949) /* questConfigFromServer */;
           let result2 = obj5.questWithUserStatusFromServer(tmp9);
           if (null != value) {
-            let tmp11 = closure_55;
-            let tmp12 = closure_55(tmp8, result2);
+            let tmp11 = updateQuestData;
+            let tmp12 = updateQuestData(tmp8, result2);
             let tmp13 = result2;
           } else {
             let _Map = Map;
-            let tmp20 = closure_9;
+            let tmp20 = store;
             let tmp21 = new.target;
             let tmp22 = new.target;
-            let map2 = new Map(closure_9);
+            let map2 = new Map(store);
             let tmp23 = map2;
-            closure_9 = map2;
+            store = map2;
             let result3 = map2.set(tmp8, result2);
             let _Map2 = Map;
             let tmp25 = closure_36;
@@ -917,9 +917,9 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
             let map3 = new Map(closure_36);
             let tmp28 = map3;
             closure_36 = map3;
-            let tmp29 = closure_0;
-            let tmp30 = closure_2;
-            let obj8 = closure_0(closure_2[14]);
+            let tmp29 = require;
+            let tmp30 = dependencyMap;
+            let obj8 = require(6940) /* _createForOfIteratorHelperLoose */;
             let result4 = map3.set(tmp8, obj8.isQuestExpired(result2));
             let tmp32 = result2;
           }
@@ -931,36 +931,35 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     const result5 = store2.set(content, { earnedDecisionByQuestId: map1 });
   },
   QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_FAILURE: function handleFetchEarnedQuestToDeliverFailure(content) {
-    let closure_7 = false;
-    const map = new Map(map);
+    let c7 = false;
+    map = new Map(map);
     const result = map.set(content.content, false);
   },
   QUESTS_FETCH_PREVIEW_BEGIN: function handleFetchQuestPreviewBegin(questId) {
     questId = questId.questId;
-    const set = new Set(set);
+    set = new Set(set);
     set.add(questId);
-    const map = new Map(map);
+    map = new Map(map);
     map.delete(questId);
   },
   QUESTS_FETCH_PREVIEW_SUCCESS: function handleFetchQuestPreviewSuccess(arg0) {
     let quest;
     let questId;
     ({ questId, quest } = arg0);
-    const set = new Set(set);
+    set = new Set(set);
     set.delete(questId);
-    const map = new Map(map);
+    map = new Map(map);
     const result = map.set(questId, quest);
-    let map1 = new Map(map1);
+    map1 = new Map(map1);
     const result1 = map1.set(questId, quest);
-    const map2 = new Map(map1);
-    map1 = map2;
+    map2 = new Map(map2);
     map2.delete(questId);
   },
   QUESTS_FETCH_PREVIEW_FAILURE: function handleFetchQuestPreviewFailure(questId) {
     questId = questId.questId;
-    const set = new Set(set);
+    set = new Set(set);
     set.delete(questId);
-    const map = new Map(map);
+    map = new Map(map);
     const result = map.set(questId, questId.error);
   },
   QUESTS_SEND_HEARTBEAT_SUCCESS: function handleSendHeartbeatSuccess(userStatus) {
@@ -981,7 +980,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     }
     if (tmp) {
       const _Map = Map;
-      const map = new Map(map);
+      map = new Map(map);
       const obj = { questId: streamKey.questId, streamKey };
       const _Date = Date;
       obj.firstFailedAt = Date.now();
@@ -989,7 +988,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     }
   },
   QUESTS_ENROLL_BEGIN: function handleEnrollBegin(questId) {
-    const set = new Set(set);
+    set = new Set(set);
     set.add(questId.questId);
   },
   QUESTS_ENROLL_SUCCESS: function handleEnrollSuccess(enrolledQuestUserStatus) {
@@ -1001,14 +1000,14 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     removeQuestIdFromIsEnrolling(questId.questId);
   },
   QUESTS_FETCH_REWARD_CODE_BEGIN: function handleFetchRewardCodeBegin(questId) {
-    const set = new Set(set);
+    set = new Set(set);
     set.add(questId.questId);
   },
   QUESTS_FETCH_REWARD_CODE_SUCCESS: function handleFetchRewardCodeSuccess(arg0) {
     let questId;
     let rewardCode;
     ({ questId, rewardCode } = arg0);
-    const set = new Set(set);
+    set = new Set(set);
     set.delete(questId);
     _addRewardCode(questId, rewardCode);
     const value = store.get(questId);
@@ -1026,29 +1025,29 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     }
   },
   QUESTS_FETCH_REWARD_CODE_FAILURE: function handleFetchRewardCodeFailure(questId) {
-    const set = new Set(set);
+    set = new Set(set);
     set.delete(questId.questId);
   },
   QUESTS_CLAIM_REWARD_BEGIN: function handleClaimRewardBegin(questId) {
-    const set = new Set(set);
+    set = new Set(set);
     set.add(questId.questId);
   },
   QUESTS_CLAIM_REWARD_SUCCESS: function handleClaimRewardSuccess(questId) {
     questId = questId.questId;
-    const set = new Set(set);
+    set = new Set(set);
     set.delete(questId);
     updateQuestRewardData(questId, questId.entitlements);
   },
   QUESTS_CLAIM_REWARD_FAILURE: function handleClaimRewardFailure(questId) {
-    const set = new Set(set);
+    set = new Set(set);
     set.delete(questId.questId);
   },
   QUESTS_DISMISS_CONTENT_BEGIN: function handleDismissContentBegin(questId) {
     let iter3;
     questId = questId.questId;
-    const set = new Set(set);
+    set = new Set(set);
     set.add(questId);
-    const map = new Map(map);
+    map = new Map(map);
     const tmp2 = _createForOfIteratorHelperLoose(map);
     const iter = tmp2();
     let iter2 = iter;
@@ -1056,8 +1055,8 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     let flag2 = false;
     if (!iter.done) {
       do {
-        let tmp3 = closure_32;
-        let tmp4 = closure_32(iter2.value, 2);
+        let tmp3 = callback3;
+        let tmp4 = callback3(iter2.value, 2);
         if (tmp4[1] === questId) {
           let deleteResult = map.delete(tmp5);
           flag = true;
@@ -1078,21 +1077,21 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
   },
   QUESTS_USER_STATUS_UPDATE: function handleQuestUserStatusUpdate(user_status) {
     user_status = user_status.user_status;
-    let obj = arg1(dependencyMap[16]);
+    let obj = require(6948) /* getQuestLogger */;
     obj = { location: QuestsExperimentLocations.QUESTS_STORE };
     const questLogger = obj.getQuestLogger(obj);
     questLogger.log("Received user status update for " + user_status.quest_id, user_status);
-    const result = arg1(dependencyMap[17]).questUserStatusFromServer(user_status);
+    const result = require(6949) /* questConfigFromServer */.questUserStatusFromServer(user_status);
     updateQuestData(user_status.quest_id, { userStatus: result });
     const value = store.get(user_status.quest_id);
     if (null != value) {
-      const isQuestExpiredResult = arg1(dependencyMap[14]).isQuestExpired(value);
+      const isQuestExpiredResult = require(6940) /* _createForOfIteratorHelperLoose */.isQuestExpired(value);
       if (store4.get(user_status.quest_id) !== isQuestExpiredResult) {
         const _Map = Map;
         const map = new Map(store4);
-        const store4 = map.set(user_status.quest_id, isQuestExpiredResult);
+        store4 = map.set(user_status.quest_id, isQuestExpiredResult);
       }
-      const obj5 = arg1(dependencyMap[14]);
+      const obj5 = require(6940) /* _createForOfIteratorHelperLoose */;
     }
     let hasItem = 0 === Object.keys(result.progress).length;
     if (hasItem) {
@@ -1115,32 +1114,32 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     updateQuestData(previewQuestUserStatus.questId, { userStatus: previewQuestUserStatus });
     if (null == previewQuestUserStatus.claimedAt) {
       const _Map = Map;
-      const map = new Map(map);
+      map = new Map(map);
       map.delete(previewQuestUserStatus.questId);
     }
     if (null == previewQuestUserStatus.enrolledAt) {
       const _Map2 = Map;
-      const map1 = new Map(map1);
+      map1 = new Map(map1);
       map1.delete(previewQuestUserStatus.questId);
       const state = store3.getState();
       state.resetQuest(previewQuestUserStatus.questId);
     }
     const value = store.get(previewQuestUserStatus.questId);
     if (null != value) {
-      const isQuestExpiredResult = arg1(dependencyMap[14]).isQuestExpired(value);
+      const isQuestExpiredResult = require(6940) /* _createForOfIteratorHelperLoose */.isQuestExpired(value);
       if (store4.get(previewQuestUserStatus.questId) !== isQuestExpiredResult) {
         const _Map3 = Map;
         const map2 = new Map(store4);
-        const store4 = map2.set(previewQuestUserStatus.questId, isQuestExpiredResult);
+        store4 = map2.set(previewQuestUserStatus.questId, isQuestExpiredResult);
       }
-      const obj4 = arg1(dependencyMap[14]);
+      const obj4 = require(6940) /* _createForOfIteratorHelperLoose */;
     }
   },
   QUESTS_PREVIEW_OVERRIDE: function handlePreviewOverride(arg0) {
     let placement;
     let questId;
     ({ placement, questId } = arg0);
-    const map = new Map(map);
+    map = new Map(map);
     if (map.get(placement) === questId) {
       map.delete(placement);
     } else {
@@ -1151,7 +1150,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     let platform;
     let questId;
     ({ questId, platform } = arg0);
-    const map = new Map(map);
+    map = new Map(map);
     if (null == platform) {
       map.delete(questId);
     } else {
@@ -1163,7 +1162,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     let taskEventName;
     questId = questId.questId;
     ({ taskEventName, progress } = questId);
-    let map = map.get(questId);
+    map = map.get(questId);
     if (null == map) {
       const _Map = Map;
       map = new Map();
@@ -1188,18 +1187,18 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     }
   },
   QUESTS_FETCH_QUEST_HOME_HERO_BEGIN: function handleFetchQuestHomeHeroBegin(placement) {
-    let closure_47 = true;
-    const map = new Map(map);
+    let c47 = true;
+    map = new Map(map);
     const result = map.set(placement.placement, true);
   },
   QUESTS_FETCH_QUEST_HOME_HERO_SUCCESS: function handleFetchQuestHomeHeroSuccess(placement) {
-    let closure_47 = false;
+    let c47 = false;
     let closure_46 = Date.now();
-    const map = new Map(map);
+    map = new Map(map);
     const result = map.set(placement.placement, false);
-    const questHomeHero2 = placement.questHomeHero;
+    let questHomeHero = placement.questHomeHero;
     const obj = { questId: null };
-    const questHomeHero = placement.questHomeHero;
+    questHomeHero = placement.questHomeHero;
     let id;
     if (null != questHomeHero) {
       id = questHomeHero.id;
@@ -1210,17 +1209,18 @@ tmp5 = new tmp5(importDefault(dependencyMap[22]), {
     }
     obj.adCreativeId = tmp3;
     obj.fetchedAt = placement.fetchedAt;
-    obj.ttlMillis = arg1(dependencyMap[19]).resolveResponseTtl(placement.responseTtlSeconds);
+    obj.ttlMillis = require(6958) /* resolveResponseTtl */.resolveResponseTtl(placement.responseTtlSeconds);
     ({ adDecisionData: obj2.adDecisionData, adContext: obj2.adContext, metadataSealed: obj2.metadataSealed, trafficMetadataSealed: obj2.trafficMetadataSealed } = placement);
-    const map1 = new Map(map1);
+    map1 = new Map(map1);
     const result1 = map1.set(placement.placement, obj);
   },
   QUESTS_FETCH_QUEST_HOME_HERO_FAILURE: function handleFetchQuestHomeHeroFailure(placement) {
-    let closure_47 = false;
-    const map = new Map(map);
+    let c47 = false;
+    map = new Map(map);
     const result = map.set(placement.placement, false);
   }
 });
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/quests/QuestStore.tsx");
+let closure_50 = tmp5;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/quests/QuestStore.tsx");
 
 export default tmp5;

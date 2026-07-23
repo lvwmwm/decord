@@ -1,50 +1,51 @@
-// Module ID: 7005
-// Function ID: 56156
+// Module ID: 7010
+// Function ID: 56190
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1348, 566, 686, 2]
 
-// Module 7005 (_isNativeReflectConstruct)
+// Module 7010 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
 function isForumLikeChannel(channelId) {
-  const channel = channel.getChannel(channelId);
+  channel = channel.getChannel(channelId);
   return !(null == channel || !channel.isForumLikeChannel());
 }
 function getOrCreateSearchState(arg0) {
-  let obj = closure_6[arg0];
+  let obj = dependencyMap[arg0];
   if (null == obj) {
-    obj = { sr: null, ks: null, ao: null };
+    obj = { query: null, loading: false, results: null };
   }
-  closure_6[arg0] = obj;
+  dependencyMap[arg0] = obj;
   return obj;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
 let closure_6 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class ForumSearchStore {
     constructor() {
       self = this;
       tmp = ForumSearchStore(this, ForumSearchStore);
-      obj = closure_3(ForumSearchStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(ForumSearchStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -53,12 +54,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ForumSearchStore;
   callback2(ForumSearchStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_5);
+      this.waitFor(outer1_5);
     }
   };
   const items = [obj, , , , ];
@@ -66,7 +66,7 @@ let tmp2 = (Store) => {
     key: "getSearchQuery",
     value(arg0) {
       let query;
-      if (null != closure_6[arg0]) {
+      if (null != outer1_6[arg0]) {
         query = tmp.query;
       }
       return query;
@@ -77,7 +77,7 @@ let tmp2 = (Store) => {
     key: "getSearchLoading",
     value(arg0) {
       let loading;
-      if (null != closure_6[arg0]) {
+      if (null != outer1_6[arg0]) {
         loading = tmp.loading;
       }
       return null != loading && loading;
@@ -88,7 +88,7 @@ let tmp2 = (Store) => {
     key: "getSearchResults",
     value(arg0) {
       let results;
-      if (null != closure_6[arg0]) {
+      if (null != outer1_6[arg0]) {
         results = tmp.results;
       }
       return results;
@@ -98,7 +98,7 @@ let tmp2 = (Store) => {
     key: "getHasSearchResults",
     value(arg0) {
       let results;
-      if (null != closure_6[arg0]) {
+      if (null != outer1_6[arg0]) {
         results = tmp.results;
       }
       let tmp3 = null != results;
@@ -109,19 +109,18 @@ let tmp2 = (Store) => {
     }
   };
   return callback(ForumSearchStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "ForumSearchStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let closure_6 = {};
   },
   THREAD_DELETE: function handleThreadDelete(channel) {
     channel = channel.channel;
-    let closure_0 = channel;
     const parent_id = channel.parent_id;
     if (null == parent_id) {
       return false;
-    } else if (null == closure_6[parent_id]) {
+    } else if (null == dependencyMap[parent_id]) {
       return false;
     } else {
       const obj = {};
@@ -132,11 +131,11 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
         found = results.filter((arg0) => channel.id !== arg0);
       }
       obj["results"] = found;
-      closure_6[parent_id] = obj;
+      dependencyMap[parent_id] = obj;
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
-    delete r1[r0];
+    delete tmp2[tmp];
     return channel.channel.id;
   },
   FORUM_SEARCH_QUERY_UPDATED: function handleForumSearchQueryUpdated(channelId) {
@@ -186,13 +185,13 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     }
   },
   FORUM_SEARCH_CLEAR: function handleForumSearchClear(channelId) {
-    const tmp = isForumLikeChannel(channelId.channelId);
-    if (tmp) {
-      delete r1[r2];
+    const tmp3 = isForumLikeChannel(channelId.channelId);
+    if (tmp3) {
+      delete tmp[tmp2];
     }
-    return tmp;
+    return tmp3;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/forums/ForumSearchStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forums/ForumSearchStore.tsx");
 
 export default tmp2;

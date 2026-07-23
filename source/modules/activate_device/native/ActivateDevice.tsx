@@ -1,70 +1,72 @@
-// Module ID: 12768
-// Function ID: 97879
+// Module ID: 12882
+// Function ID: 100035
 // Name: ActivateDevice
-// Dependencies: [333053952, 91226112, 837353472, 270270464, 297467904, 131072, 528089088, 452984832, 553648128, 503316480, 318767120, 3909091363, 469762097, 3154116624, 3137339396, 33554449, 1946157056, 4096, 12782, 1934, 2]
+// Dependencies: [57, 31, 27, 33, 4130, 689, 12883, 12885, 10832, 8979, 12886, 8955, 12887, 5085, 12888, 12892, 12893, 1392, 12894, 5121, 2]
 // Exports: ActivateDevice
 
-// Module 12768 (ActivateDevice)
-import result2 from "result2";
+// Module 12882 (ActivateDevice)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, ImageBackground: closure_6, ActivityIndicator: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = { background: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_BRAND };
-obj.imageStyle = obj;
-obj.safeArea = {};
-const tmp2 = arg1(dependencyMap[2]);
-obj.content = { backgroundColor: importDefault(dependencyMap[5]).colors.PANEL_BG, borderRadius: importDefault(dependencyMap[5]).radii.lg, shadowColor: importDefault(dependencyMap[5]).colors.BLACK, shadowOffset: {}, shadowRadius: 4 };
-obj.scroller = {};
-obj.scrollerContent = { 9223372036854775807: "safety_state", 9223372036854775807: "message" };
-let closure_10 = obj.createStyles(obj);
-const result = result2.fileFinishedImporting("modules/activate_device/native/ActivateDevice.tsx");
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ View: closure_5, ImageBackground: closure_6, ActivityIndicator: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = { background: { flex: 1 } };
+_createForOfIteratorHelperLoose = { marginVertical: 0, resizeMode: "cover", backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
+_createForOfIteratorHelperLoose.imageStyle = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.safeArea = { flex: 1, justifyContent: "center", alignItems: "center" };
+let obj1 = { maxWidth: 480, backgroundColor: require("_createForOfIteratorHelperLoose").colors.PANEL_BG, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, padding: 24, marginHorizontal: 24, marginVertical: 36, shadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, shadowOpacity: 0.2, shadowOffset: { width: 0, height: 4 }, shadowRadius: 4 };
+_createForOfIteratorHelperLoose.content = obj1;
+_createForOfIteratorHelperLoose.scroller = { alignSelf: "stretch", flexGrow: 0 };
+_createForOfIteratorHelperLoose.scrollerContent = { flexDirection: "column", gap: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/activate_device/native/ActivateDevice.tsx");
 
 export const ActivateDevice = (onClose) => {
   onClose = onClose.onClose;
-  const tmp = callback2();
-  const tmp2 = callback(React.useState({ paddingBottom: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", mass: null }), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = callback(deviceCodeAuthorizeCallback.useState({ type: "user-code-input", usePrefilledCode: true }), 2);
   const first = tmp2[0];
-  const arg1 = first;
   const importDefault = tmp4;
-  const tmp5 = callback(React.useState(null), 2);
+  const tmp5 = callback(deviceCodeAuthorizeCallback.useState(null), 2);
   const first1 = tmp5[0];
-  const dependencyMap = first1;
-  let callback = tmp5[1];
-  let obj = arg1(dependencyMap[6]);
+  callback = tmp5[1];
+  let obj = first(first1[6]);
   const activateDeviceStepTracking = obj.useActivateDeviceStepTracking(first);
-  const items = [tmp2[1]];
-  callback = React.useCallback(() => {
+  let items = [tmp2[1]];
+  callback = deviceCodeAuthorizeCallback.useCallback(() => {
     tmp4({ type: "user-code-input" });
   }, items);
   const items1 = [tmp2[1]];
   const items2 = [tmp2[1]];
-  const callback1 = React.useCallback((userCodeData) => {
+  const callback1 = deviceCodeAuthorizeCallback.useCallback((userCodeData) => {
     tmp4({ type: "success", userCodeData });
   }, items1);
-  const callback2 = React.useCallback((userCodeData) => {
+  const callback2 = deviceCodeAuthorizeCallback.useCallback((userCodeData) => {
     tmp4({ type: "error", userCodeData });
   }, items2);
-  let obj1 = arg1(dependencyMap[7]);
-  const deviceCodeAuthorizeCallback = obj1.useDeviceCodeAuthorizeCallback(callback, callback2, callback1);
-  const React = deviceCodeAuthorizeCallback;
+  let obj1 = first(first1[7]);
+  deviceCodeAuthorizeCallback = obj1.useDeviceCodeAuthorizeCallback(callback, callback2, callback1);
   const items3 = [deviceCodeAuthorizeCallback];
   const items4 = [first];
-  const callback3 = React.useCallback((userCodeData) => {
-    const first = userCodeData;
+  const callback3 = deviceCodeAuthorizeCallback.useCallback((userCodeData) => {
+    let closure_0 = userCodeData;
     let obj = { type: "authorization", userCodeData };
     tmp4(obj);
-    obj = { "Bool(true)": "r", "Bool(true)": "isArray", "Bool(true)": "WireType", "Bool(true)": "op", "Bool(true)": "top", "Bool(true)": "r" };
+    obj = { clientId: null, scopes: null, responseType: "code", isTrustedName: true, isEmbeddedFlow: true, withBackPressHandler: false };
     ({ clientId: obj3.clientId, scopes: obj3.scopes } = userCodeData);
     obj.callbackWithoutPost = function callbackWithoutPost(arg0) {
-      return callback(arg0, arg0);
+      return outer1_4(closure_0, arg0);
     };
     first(first1[8]).openOAuth2Modal(obj);
   }, items3);
-  const effect = React.useEffect(() => {
+  const effect = deviceCodeAuthorizeCallback.useEffect(() => {
     if ("userCodeData" in first) {
       const userCodeData = first.userCodeData;
       const items = [first(first1[9]).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, first(first1[9]).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
@@ -72,14 +74,14 @@ export const ActivateDevice = (onClose) => {
         callback(tmp4(first1[10]));
       } else {
         const scopes = userCodeData.scopes;
-        if (scopes.some((arg0) => callback(closure_2[11]).isSocialLayerUmbrellaScope(arg0))) {
+        if (scopes.some((arg0) => first(first1[11]).isSocialLayerUmbrellaScope(arg0))) {
           callback(callback(first1[12]));
         }
       }
     }
   }, items4);
   const items5 = [first1];
-  const effect1 = React.useEffect(() => {
+  const effect1 = deviceCodeAuthorizeCallback.useEffect(() => {
     if (null != first1) {
       tmp4(first1[13]).preload(first1);
       const obj = tmp4(first1[13]);
@@ -95,32 +97,32 @@ export const ActivateDevice = (onClose) => {
     obj.prefilledUserCode = prefilledUserCode;
     obj.onUserCodeAccepted = callback3;
     obj.onClose = onClose;
-    let tmp21Result = jsx(arg1(dependencyMap[14]).UserCodeInput, obj);
+    let tmp21Result = jsx(first(first1[14]).UserCodeInput, {});
     const tmp21 = jsx;
   } else if ("authorization" === type) {
     obj = { animating: true };
-    tmp21Result = <closure_7 {...obj} />;
+    tmp21Result = <closure_7 animating />;
   } else if ("success" === type) {
     obj1 = { onComplete: onClose, data: first.userCodeData, successImage: first1 };
-    tmp21Result = jsx(arg1(dependencyMap[15]).ActivateDeviceSuccess, obj1);
+    tmp21Result = jsx(first(first1[15]).ActivateDeviceSuccess, { onComplete: onClose, data: first.userCodeData, successImage: first1 });
   } else {
     tmp21Result = null;
     if ("error" === type) {
       const obj2 = { onRetry: callback };
-      tmp21Result = jsx(arg1(dependencyMap[16]).ActivateDeviceError, obj2);
+      tmp21Result = jsx(first(first1[16]).ActivateDeviceError, { onRetry: callback });
     }
   }
   const obj3 = {};
-  let obj6 = arg1(dependencyMap[17]);
-  obj3.source = obj6.makeSource(importDefault(dependencyMap[18]));
+  let obj6 = first(first1[17]);
+  obj3.source = obj6.makeSource(importDefault(first1[18]));
   obj3.imageStyle = tmp.imageStyle;
   const items6 = [tmp.background];
   obj3.style = items6;
-  const obj4 = { "Bool(true)": null, "Bool(true)": null, style: tmp.safeArea };
+  const obj4 = { bottom: true, top: true, style: tmp.safeArea };
   const obj5 = { style: tmp.content };
   obj6 = { bounces: false, style: tmp.scroller, contentContainerStyle: tmp.scrollerContent, children: tmp21Result };
-  obj5.children = <closure_8 {...obj6} />;
-  obj4.children = <closure_5 {...obj5} />;
-  obj3.children = jsx(arg1(dependencyMap[19]).SafeAreaPaddingView, obj4);
-  return <closure_6 {...obj3} />;
+  obj5.children = <closure_8 bounces={false} style={tmp.scroller} contentContainerStyle={tmp.scrollerContent}>{tmp21Result}</closure_8>;
+  obj4.children = <closure_5 style={tmp.content} />;
+  obj3.children = jsx(first(first1[19]).SafeAreaPaddingView, { bottom: true, top: true, style: tmp.safeArea });
+  return <closure_6 />;
 };

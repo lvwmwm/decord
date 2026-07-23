@@ -1,37 +1,38 @@
-// Module ID: 13495
-// Function ID: 102404
+// Module ID: 13609
+// Function ID: 104560
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: []
+// Dependencies: [31, 33, 3803, 13589, 1212, 9230, 7844, 2]
 // Exports: default
 
-// Module 13495 (UserProfileLegacyUsernameSwitch)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_profile/native/UserProfileLegacyUsernameSwitch.tsx");
+// Module 13609 (UserProfileLegacyUsernameSwitch)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("explicitContentFromProto").fileFinishedImporting("modules/user_profile/native/UserProfileLegacyUsernameSwitch.tsx");
 
 export default function UserProfileLegacyUsernameSwitch(username) {
   const pendingLegacyUsernameDisabled = username.pendingLegacyUsernameDisabled;
-  const LegacyUsernameDisabled = arg1(dependencyMap[2]).LegacyUsernameDisabled;
-  const setting = LegacyUsernameDisabled.useSetting();
-  const arg1 = setting;
+  const LegacyUsernameDisabled = setting(3803).LegacyUsernameDisabled;
+  setting = LegacyUsernameDisabled.useSetting();
   let tmp2 = setting;
   if (undefined !== pendingLegacyUsernameDisabled) {
     tmp2 = pendingLegacyUsernameDisabled;
   }
-  const obj = { value: !tmp2 };
-  const intl = arg1(dependencyMap[4]).intl;
-  obj.label = intl.string(arg1(dependencyMap[4]).t.3cWDuO);
-  const intl2 = arg1(dependencyMap[4]).intl;
-  obj.subLabel = intl2.formatToPlainString(arg1(dependencyMap[4]).t.aYhclf, { username: username.legacyUsername });
+  let obj = { value: !tmp2 };
+  const intl = setting(1212).intl;
+  obj.label = intl.string(setting(1212).t["3cWDuO"]);
+  const intl2 = setting(1212).intl;
+  obj.subLabel = intl2.formatToPlainString(setting(1212).t.aYhclf, { username: username.legacyUsername });
   obj.onValueChange = function onValueChange(arg0) {
     if (!arg0 === setting) {
-      const result = setting(closure_1[5]).resetPendingLegacyUsernameDisabled();
-      const obj3 = setting(closure_1[5]);
+      const result = setting(outer1_1[5]).resetPendingLegacyUsernameDisabled();
+      const obj3 = setting(outer1_1[5]);
     } else {
-      let obj = setting(closure_1[6]);
+      let obj = setting(outer1_1[6]);
       obj = { legacyUsernameDisabled: !arg0 };
       obj.setPendingChanges(obj);
     }
   };
-  return jsx(arg1(dependencyMap[3]).UserProfileEditFormSwitch, obj);
+  return jsx(setting(13589).UserProfileEditFormSwitch, { value: !tmp2 });
 };

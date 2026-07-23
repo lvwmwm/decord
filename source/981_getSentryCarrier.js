@@ -1,14 +1,16 @@
 // Module ID: 981
-// Function ID: 10623
+// Function ID: 10624
 // Name: getSentryCarrier
-// Dependencies: []
+// Dependencies: [794]
 
 // Module 981 (getSentryCarrier)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.getSentryCarrier = function getSentryCarrier() {
-  const mainCarrier = arg1(arg6[0]).getMainCarrier();
+  const mainCarrier = require(794) /* registerSpanErrorInstrumentation */.getMainCarrier();
   const tmp2 = mainCarrier.__SENTRY__ || {};
   mainCarrier.__SENTRY__ = tmp2;
-  const tmp3 = tmp2[closure_0(undefined, closure_1[0]).SDK_VERSION] || {};
-  tmp2[arg1(arg6[0]).SDK_VERSION] = tmp3;
+  const tmp3 = tmp2[require(undefined, 794) /* registerSpanErrorInstrumentation */.SDK_VERSION] || {};
+  tmp2[require(794) /* registerSpanErrorInstrumentation */.SDK_VERSION] = tmp3;
   return tmp3;
 };

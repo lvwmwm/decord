@@ -1,18 +1,21 @@
-// Module ID: 8240
-// Function ID: 65068
+// Module ID: 8246
+// Function ID: 65105
 // Name: isValidAnchor
-// Dependencies: []
+// Dependencies: [830, 8247, 8248, 8249, 2]
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename
 
-// Module 8240 (isValidAnchor)
+// Module 8246 (isValidAnchor)
+import _toArray from "_toArray";
+import set from "ProfileFrameLayerType";
+
+const require = arg1;
 function isValidAnchor(first1) {
   return set1.has(first1);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = { foreground: arg1(dependencyMap[1]).ProfileFrameLayerOrder.FRONT, background: arg1(dependencyMap[1]).ProfileFrameLayerOrder.BACK };
-const items = [arg1(dependencyMap[2]).ProfileFrameLayerType.STAPLE, arg1(dependencyMap[2]).ProfileFrameLayerType.RAIL, arg1(dependencyMap[2]).ProfileFrameLayerType.BORDER];
-const set = new Set(items);
-const items1 = [arg1(dependencyMap[3]).ProfileFrameLayerAnchor.TOP, arg1(dependencyMap[3]).ProfileFrameLayerAnchor.BOTTOM, arg1(dependencyMap[3]).ProfileFrameLayerAnchor.CENTER];
+let obj = { foreground: require("ProfileFrameLayerOrder").ProfileFrameLayerOrder.FRONT, background: require("ProfileFrameLayerOrder").ProfileFrameLayerOrder.BACK };
+const items = [require("ProfileFrameLayerType").ProfileFrameLayerType.STAPLE, require("ProfileFrameLayerType").ProfileFrameLayerType.RAIL, require("ProfileFrameLayerType").ProfileFrameLayerType.BORDER];
+let set = new Set(items);
+const items1 = [require("ProfileFrameLayerAnchor").ProfileFrameLayerAnchor.TOP, require("ProfileFrameLayerAnchor").ProfileFrameLayerAnchor.BOTTOM, require("ProfileFrameLayerAnchor").ProfileFrameLayerAnchor.CENTER];
 const set1 = new Set(items1);
 obj = { WRONG_PART_COUNT: "wrong_part_count", INVALID_INDEX: "invalid_index", INVALID_TYPE: "invalid_type", INVALID_ANCHOR: "invalid_anchor", INVALID_RESPONSIVE: "invalid_responsive", BORDER_HAS_ANCHOR: "border_has_anchor" };
 obj = { [obj.WRONG_PART_COUNT]: "wrong filename format", [obj.INVALID_INDEX]: "invalid index" };
@@ -22,8 +25,8 @@ const items3 = [...set1];
 obj[obj.INVALID_ANCHOR] = "invalid anchor (expected: " + items3.join(", ") + ")";
 obj[obj.INVALID_RESPONSIVE] = "invalid suffix (expected '" + "responsive" + "')";
 obj[obj.BORDER_HAS_ANCHOR] = "border layers must omit the anchor";
-let closure_6 = { [arg1(dependencyMap[1]).ProfileFrameLayerOrder.FRONT]: 0, [arg1(dependencyMap[1]).ProfileFrameLayerOrder.BACK]: 1 };
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/profile_frames/tooling/ProfileFrameLayerParser.tsx");
+let closure_6 = { [arg1(8247).ProfileFrameLayerOrder.FRONT]: 0, [arg1(8247).ProfileFrameLayerOrder.BACK]: 1 };
+const result = set.fileFinishedImporting("modules/collectibles/profile_frames/tooling/ProfileFrameLayerParser.tsx");
 
 export const PREVIEW_FILENAME = "preview";
 export const RESPONSIVE_KEYWORD = "responsive";
@@ -39,7 +42,7 @@ export const parseLayerFilename = function parseLayerFilename(filename) {
       const substr = arr2.slice(2);
       if (obj14.test(first)) {
         if (set.has(tmp28)) {
-          if (tmp28 === arg1(dependencyMap[2]).ProfileFrameLayerType.BORDER) {
+          if (tmp28 === require(8248) /* ProfileFrameLayerType */.ProfileFrameLayerType.BORDER) {
             if (substr.length > 0) {
               if (isValidAnchor(substr[0])) {
                 let obj = { parsed: null };
@@ -63,7 +66,7 @@ export const parseLayerFilename = function parseLayerFilename(filename) {
               const _Number2 = Number;
               obj3.index = Number(first);
               obj3.type = tmp28;
-              obj3.anchor = arg1(dependencyMap[3]).ProfileFrameLayerAnchor.CENTER;
+              obj3.anchor = require(8249) /* ProfileFrameLayerAnchor */.ProfileFrameLayerAnchor.CENTER;
               obj3.responsive = 1 === substr.length;
               obj2.parsed = obj3;
               obj2.errorType = null;
@@ -85,7 +88,7 @@ export const parseLayerFilename = function parseLayerFilename(filename) {
                   }
                   let tmp8 = 2 === substr.length;
                   if (!tmp8) {
-                    tmp8 = tmp28 === arg1(dependencyMap[2]).ProfileFrameLayerType.RAIL;
+                    tmp8 = tmp28 === require(8248) /* ProfileFrameLayerType */.ProfileFrameLayerType.RAIL;
                   }
                   const obj6 = {};
                   const obj7 = {};
@@ -112,13 +115,13 @@ export const parseLayerFilename = function parseLayerFilename(filename) {
         obj.errorType = obj.INVALID_INDEX;
         return obj;
       }
-      const obj14 = /^\d+$/;
+      obj14 = /^\d+$/;
     }
   }
   return { parsed: null, errorType: obj.WRONG_PART_COUNT };
 };
 export const compareLayerFiles = function compareLayerFiles(index, index2) {
-  let diff = closure_6[index.order] - closure_6[index2.order];
+  let diff = dependencyMap[index.order] - dependencyMap[index2.order];
   if (0 === diff) {
     diff = index.index - index2.index;
   }

@@ -1,17 +1,22 @@
-// Module ID: 9898
-// Function ID: 76597
+// Module ID: 9905
+// Function ID: 76638
 // Name: ModalActionButton
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 4543, 2]
 // Exports: ModalActionButton
 
-// Module 9898 (ModalActionButton)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ spacer: { marginTop: 12 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Modal/native/ModalActionButton.native.tsx");
+// Module 9905 (ModalActionButton)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ spacer: { marginTop: 12 } });
+const result = require("jsxProd").fileFinishedImporting("design/components/Modal/native/ModalActionButton.native.tsx");
 
 export const ModalActionButton = function ModalActionButton(variant) {
   variant = variant.variant;
@@ -29,7 +34,7 @@ export const ModalActionButton = function ModalActionButton(variant) {
   const merged1 = Object.assign(merged);
   obj1["variant"] = variant;
   obj1["size"] = "lg";
-  items[1] = callback(arg1(dependencyMap[4]).Button, obj1);
+  items[1] = callback(require(4543) /* Button */.Button, obj1);
   obj.children = items;
   return closure_5(closure_4, obj);
 };

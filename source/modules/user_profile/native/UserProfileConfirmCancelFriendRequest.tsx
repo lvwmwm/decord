@@ -1,35 +1,39 @@
-// Module ID: 11644
-// Function ID: 90376
+// Module ID: 11654
+// Function ID: 90425
 // Name: UserProfileConfirmCancelFriendRequest
-// Dependencies: []
+// Dependencies: [31, 33, 4475, 1212, 4475, 2]
 // Exports: default
 
-// Module 11644 (UserProfileConfirmCancelFriendRequest)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_profile/native/UserProfileConfirmCancelFriendRequest.tsx");
+// Module 11654 (UserProfileConfirmCancelFriendRequest)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+const result = require("getAlertModalItemKey").fileFinishedImporting("modules/user_profile/native/UserProfileConfirmCancelFriendRequest.tsx");
 
 export default function UserProfileConfirmCancelFriendRequest(arg0) {
   let onConfirm;
   let userDisplayName;
   ({ userDisplayName, onConfirm } = arg0);
   let obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.title = intl.string(arg1(dependencyMap[3]).t.bTfA//);
-  const intl2 = arg1(dependencyMap[3]).intl;
-  obj.content = intl2.formatToPlainString(arg1(dependencyMap[3]).t.72FwjH, { name: userDisplayName });
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["bTfA//"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["72FwjH"], { name: userDisplayName });
   obj = {};
   obj = { variant: "destructive" };
-  const intl3 = arg1(dependencyMap[3]).intl;
-  obj.text = intl3.string(arg1(dependencyMap[3]).t.bTfA//);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl3.string(require(1212) /* getSystemLocale */.t["bTfA//"]);
   obj.onPress = onConfirm;
-  const items = [callback(arg1(dependencyMap[2]).AlertActionButton, obj, "cancel-friend-request"), ];
+  const items = [callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj, "cancel-friend-request"), ];
   const obj1 = { variant: "secondary" };
-  const intl4 = arg1(dependencyMap[3]).intl;
-  obj1.text = intl4.string(arg1(dependencyMap[3]).t.eN6+rI);
-  items[1] = callback(arg1(dependencyMap[2]).AlertActionButton, obj1, "nevermind");
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj1.text = intl4.string(require(1212) /* getSystemLocale */.t["eN6+rI"]);
+  items[1] = callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj1, "nevermind");
   obj.children = items;
-  obj.actions = callback2(arg1(dependencyMap[4]).AlertActions, obj);
-  return callback(arg1(dependencyMap[2]).AlertModal, obj);
+  obj.actions = callback2(require(4475) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4475) /* getAlertModalItemKey */.AlertModal, obj);
 };

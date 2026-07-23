@@ -1,20 +1,22 @@
-// Module ID: 9531
-// Function ID: 74241
+// Module ID: 9538
+// Function ID: 74282
 // Name: usePollMessageContextItemTypes
-// Dependencies: []
+// Dependencies: [1194, 566, 2]
 // Exports: default
 
-// Module 9531 (usePollMessageContextItemTypes)
-let closure_2 = importDefault(dependencyMap[0]);
-const obj = { END_EARLY: 0, [0]: "END_EARLY" };
+// Module 9538 (usePollMessageContextItemTypes)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let obj = { END_EARLY: 0, [0]: "END_EARLY" };
 let closure_4 = [];
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/polls/chat/usePollMessageContextItemTypes.tsx");
+const result = require("set").fileFinishedImporting("modules/polls/chat/usePollMessageContextItemTypes.tsx");
 
 export default function usePollMessageContextItemTypes(poll) {
-  const obj = arg1(dependencyMap[1]);
-  const items = [closure_2];
+  const obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
   poll = poll.poll;
-  const stateFromStores = obj.useStateFromStores(items, () => id.getId());
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_2.getId());
   if (poll.isPoll()) {
     if (null != poll) {
       const items1 = [];

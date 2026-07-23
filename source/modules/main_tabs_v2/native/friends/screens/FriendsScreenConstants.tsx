@@ -1,11 +1,10 @@
-// Module ID: 11718
-// Function ID: 90996
+// Module ID: 11728
+// Function ID: 91045
 // Name: SuggestedFriendSource
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 11718 (SuggestedFriendSource)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreenConstants.tsx");
+// Module 11728 (SuggestedFriendSource)
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreenConstants.tsx");
 
 export const SuggestedFriendSource = { USER_SUGGESTIONS: 1, [1]: "USER_SUGGESTIONS", FF_PEOPLE_YOU_MAY_KNOW: 2, [2]: "FF_PEOPLE_YOU_MAY_KNOW" };
 export const Sections = { SYNC_CONTACTS: 0, [0]: "SYNC_CONTACTS", FRIEND_SUGGESTIONS: 1, [1]: "FRIEND_SUGGESTIONS", PENDING: 2, [2]: "PENDING", ONLINE: 3, [3]: "ONLINE", OFFLINE: 4, [4]: "OFFLINE", SPAM: 5, [5]: "SPAM" };

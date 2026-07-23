@@ -1,35 +1,34 @@
-// Module ID: 11461
-// Function ID: 89297
-// Dependencies: []
+// Module ID: 11471
+// Function ID: 89347
+// Dependencies: [31, 1348, 1849, 3759, 653, 33, 566, 5713, 1282, 5700, 5715, 5048, 4543, 1212, 1392, 3969, 2]
 
-// Module 11461
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const JoinGuildSources = arg1(dependencyMap[4]).JoinGuildSources;
-const jsx = arg1(dependencyMap[5]).jsx;
+// Module 11471
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { JoinGuildSources } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo(function LurkerServerPreviewJoinButton(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const joinSource = guildId.joinSource;
-  const importDefault = joinSource;
   const onBeforeJoin = guildId.onBeforeJoin;
-  const dependencyMap = onBeforeJoin;
-  let obj = arg1(dependencyMap[6]);
+  let obj = guildId(onBeforeJoin[6]);
   const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
   const items1 = [guildId, joinSource, onBeforeJoin];
   const callback = stateFromStores.useCallback(() => {
-    const lurkingSourceForGuild = lurkingSourceForGuild.getLurkingSourceForGuild(guildId);
+    const lurkingSourceForGuild = outer1_6.getLurkingSourceForGuild(guildId);
     let type;
     if (null != lurkingSourceForGuild) {
       type = lurkingSourceForGuild.type;
     }
-    if (type === constants.DIRECTORY_ENTRY) {
-      const channel = channel.getChannel(lurkingSourceForGuild.directoryChannelId);
+    if (type === outer1_7.DIRECTORY_ENTRY) {
+      const channel = outer1_4.getChannel(lurkingSourceForGuild.directoryChannelId);
       if (null != channel) {
-        const guildId = channel.getGuildId();
+        guildId = channel.getGuildId();
         const result = guildId(onBeforeJoin[7]).setHubProgressActionComplete(guildId, guildId(onBeforeJoin[8]).HubProgressStep.JOIN_GUILD);
         const obj2 = guildId(onBeforeJoin[7]);
       }
@@ -43,28 +42,27 @@ const memoResult = importAllResult.memo(function LurkerServerPreviewJoinButton(g
     joinSource(onBeforeJoin[11]).joinGuild(guildId, { source: joinSource });
   }, items1);
   if (null == stateFromStores) {
-    obj = { "Null": 24379393, "Null": 33554432, "Null": 0 };
-    const intl = arg1(dependencyMap[13]).intl;
-    obj.text = intl.string(arg1(dependencyMap[13]).t.VJlc0S);
+    obj = { grow: true, variant: "primary", size: "md" };
+    const intl = guildId(onBeforeJoin[13]).intl;
+    obj.text = intl.string(guildId(onBeforeJoin[13]).t.VJlc0S);
     obj.onPress = callback;
-    return jsx(arg1(dependencyMap[12]).Button, obj);
+    return jsx(guildId(onBeforeJoin[12]).Button, { grow: true, variant: "primary", size: "md" });
   } else {
-    let obj2 = importDefault(dependencyMap[14]);
+    let obj2 = joinSource(onBeforeJoin[14]);
     const userAvatarSource = obj2.getUserAvatarSource(stateFromStores, false);
-    const intl2 = arg1(dependencyMap[13]).intl;
+    const intl2 = guildId(onBeforeJoin[13]).intl;
     obj = {
       usernameHook() {
           return joinSource(onBeforeJoin[15]).getFormattedName(stateFromStores);
         }
     };
-    const obj1 = { "Null": 24379393, "Null": 33554432, "Null": 0, text: intl2.formatToPlainString(arg1(dependencyMap[13]).t.5qtVhX, obj) };
+    const obj1 = { grow: true, variant: "primary", size: "md", text: intl2.formatToPlainString(guildId(onBeforeJoin[13]).t["5qtVhX"], obj) };
     obj2 = { source: userAvatarSource, variant: "entity" };
-    obj1.icon = jsx(arg1(dependencyMap[12]).Button.Icon, obj2);
+    obj1.icon = jsx(guildId(onBeforeJoin[12]).Button.Icon, { source: userAvatarSource, variant: "entity" });
     obj1.onPress = callback;
-    return jsx(arg1(dependencyMap[12]).Button, obj1);
+    return jsx(guildId(onBeforeJoin[12]).Button, { grow: true, variant: "primary", size: "md", text: intl2.formatToPlainString(guildId(onBeforeJoin[13]).t["5qtVhX"], obj) });
   }
-  const importAllResult = stateFromStores;
 });
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/lurker_mode/native/LurkerServerPreviewJoinButton.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/lurker_mode/native/LurkerServerPreviewJoinButton.tsx");
 
 export default memoResult;

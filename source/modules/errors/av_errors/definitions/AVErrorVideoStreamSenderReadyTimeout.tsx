@@ -1,12 +1,14 @@
-// Module ID: 16424
-// Function ID: 126828
+// Module ID: 16541
+// Function ID: 129002
 // Name: AVErrorVideoStreamSenderReadyTimeoutDefinition
-// Dependencies: []
+// Dependencies: [1194, 10533, 8857, 2]
 
-// Module 16424 (AVErrorVideoStreamSenderReadyTimeoutDefinition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamSenderReadyTimeout.tsx");
+// Module 16541 (AVErrorVideoStreamSenderReadyTimeoutDefinition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("validateUniqueErrorCodes").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamSenderReadyTimeout.tsx");
 
 export const AVErrorVideoStreamSenderReadyTimeoutDefinition = {
   getActiveErrors() {
@@ -15,7 +17,7 @@ export const AVErrorVideoStreamSenderReadyTimeoutDefinition = {
       let userId;
       let videoStreamId;
       ({ userId, videoStreamId } = arg0);
-      let tmp = id.getId() === userId;
+      let tmp = outer1_2.getId() === userId;
       if (tmp) {
         tmp = null != videoStreamId;
       }
@@ -23,7 +25,7 @@ export const AVErrorVideoStreamSenderReadyTimeoutDefinition = {
     });
     return found.map((arg0) => {
       const merged = Object.assign(arg0);
-      return { type: callback(closure_1[2]).AVError.VIDEO_STREAM_SENDER_READY_TIMEOUT };
+      return { type: outer1_0(outer1_1[2]).AVError.VIDEO_STREAM_SENDER_READY_TIMEOUT };
     });
   },
   makeErrorContextKey(mediaContext) {

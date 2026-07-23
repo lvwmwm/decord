@@ -1,10 +1,9 @@
-// Module ID: 6737
-// Function ID: 52491
+// Module ID: 6742
+// Function ID: 52523
 // Name: AutomodQuarantineUserActionMessageEmbedKeys
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6737 (AutomodQuarantineUserActionMessageEmbedKeys)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodQuarantineUserActionMessageEmbedKeys.tsx");
+// Module 6742 (AutomodQuarantineUserActionMessageEmbedKeys)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodQuarantineUserActionMessageEmbedKeys.tsx");
 
 export const AutomodQuarantineUserActionMessageEmbedKeys = { BLOCK_PROFILE_UPDATE: "block_profile_update", QUARANTINE_USER: "quarantine_user", BLOCK_GUEST_JOIN: "block_guest_join" };

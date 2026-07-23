@@ -1,31 +1,49 @@
-// Module ID: 13504
-// Function ID: 102463
+// Module ID: 13618
+// Function ID: 104619
 // Name: EditGuildProfileBanner
-// Dependencies: []
+// Dependencies: [29, 31, 27, 1917, 6856, 5512, 653, 1851, 33, 3776, 5464, 5484, 13564, 4098, 13565, 1934, 7846, 1212, 7844, 7941, 8238, 13575, 5784, 5160, 689, 9830, 13613, 566, 7887, 8239, 8254, 7854, 12968, 13619, 8236, 8240, 4126, 3842, 13620, 11909, 11898, 8512, 13584, 3969, 13585, 13590, 13592, 13593, 13597, 13601, 13611, 8139, 7999, 2]
 // Exports: default
 
-// Module 13504 (EditGuildProfileBanner)
+// Module 13618 (EditGuildProfileBanner)
+import _activityFromSetting from "_activityFromSetting";
+import getImageFormat from "getImageFormat";
+import get_ActivityIndicator from "initialize";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET";
+import ME from "ME";
+import { PremiumUpsellTypes } from "GuildFeatures";
+import jsxProd from "canResetThemeColors";
+
 let AnalyticsSections;
+let closure_11;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_18;
+let closure_19;
+let closure_6;
+let closure_7;
+const require = arg1;
 function EditGuildProfileBanner(user) {
+  let dependencyMap;
   let disabled;
   let displayProfile;
   let guildMember;
+  let importDefault;
   let pendingAvatarSrc;
   let pendingBanner;
   let pendingThemeColors;
   user = user.user;
-  const arg1 = user;
-  ({ guildId: closure_1, guildMemberProfile: closure_2, pendingBanner } = user);
-  let closure_3 = pendingBanner;
+  ({ guildId: importDefault, guildMemberProfile: dependencyMap, pendingBanner } = user);
   ({ displayProfile, guildMember, pendingAvatarSrc, pendingThemeColors, disabled } = user);
-  let obj = importDefault(dependencyMap[9]);
+  let obj = importDefault(3776);
   let result = obj.canUsePremiumGuildMemberProfile(user);
-  let closure_4 = result;
-  const analyticsLocations = importDefault(dependencyMap[10])(importDefault(dependencyMap[11]).EDIT_BANNER).analyticsLocations;
-  let closure_5 = analyticsLocations;
+  const analyticsLocations = importDefault(5464)(importDefault(5484).EDIT_BANNER).analyticsLocations;
   obj = { value: analyticsLocations };
   obj = { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, showProfilePreviewButton: false };
-  const tmp2 = importDefault(dependencyMap[10]);
+  const tmp2 = importDefault(5464);
   const tmp3 = closure_18;
   const tmp4 = closure_18;
   if (result) {
@@ -33,7 +51,7 @@ function EditGuildProfileBanner(user) {
   }
   obj.showEditButton = result;
   obj.onPressEdit = function onPressEdit() {
-    if (result) {
+    if (_activityFromSetting) {
       let tmpResult = tmp(tmp2[13]);
       let obj = { user, analyticsLocations };
       const tmp10 = user(tmp2[15])(tmp2[14], tmp2.paths);
@@ -42,11 +60,11 @@ function EditGuildProfileBanner(user) {
         banner = banner.banner;
       }
       obj.showRemoveBanner = user(tmp2[16]).showRemoveBanner(pendingBanner, banner);
-      const intl = user(banner[17]).intl;
-      obj.removeText = intl.string(user(banner[17]).t.jHlJNS);
+      const intl = user(outer1_2[17]).intl;
+      obj.removeText = intl.string(user(outer1_2[17]).t.jHlJNS);
       obj.onBannerChange = function onBannerChange(banner, bannerOriginalMd5) {
-        let obj = callback(closure_2[18]);
-        obj = { guildId: closure_1, banner, bannerOriginalMd5 };
+        let obj = user(outer2_2[18]);
+        obj = { guildId: outer1_1, banner, bannerOriginalMd5 };
         return obj.setPendingChanges(obj);
       };
       tmpResult.openLazy(tmp10, "Change Banner", obj);
@@ -54,37 +72,28 @@ function EditGuildProfileBanner(user) {
       const tmp13 = pendingBanner;
     } else {
       tmpResult = tmp(tmp2[19]);
-      obj = { initialUpsellKey: constants3.PREMIUM_GUILD_PROFILE };
-      const obj1 = { section: constants2.PREMIUM_GUILD_MEMBER_PROFILE, object: constants.EDIT_GUILD_PROFILE_BANNER };
+      obj = { initialUpsellKey: outer1_16.PREMIUM_GUILD_PROFILE };
+      const obj1 = { section: outer1_12.PREMIUM_GUILD_MEMBER_PROFILE, object: outer1_11.EDIT_GUILD_PROFILE_BANNER };
       obj.analyticsLocation = obj1;
       obj.analyticsLocations = analyticsLocations;
-      const obj2 = { type: constants4.PREMIUM_GUILD_IDENTITY_MODAL };
+      const obj2 = { type: outer1_17.PREMIUM_GUILD_IDENTITY_MODAL };
       obj.analyticsProperties = obj2;
       const result = tmpResult.handleShowUpsellAlert(obj);
     }
   };
-  const intl = arg1(dependencyMap[17]).intl;
-  obj.editButtonAccessibilityLabel = intl.string(arg1(dependencyMap[17]).t.95hPAe);
+  let intl = user(1212).intl;
+  obj.editButtonAccessibilityLabel = intl.string(user(1212).t["95hPAe"]);
   obj.editDisabled = disabled;
-  obj.children = tmp4(importDefault(dependencyMap[12]), obj);
-  return tmp3(arg1(dependencyMap[10]).AnalyticsLocationProvider, obj);
+  obj.children = tmp4(importDefault(13564), obj);
+  return tmp3(user(5464).AnalyticsLocationProvider, obj);
 }
-let closure_3 = [0.6583, 1, 97];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-({ ScrollView: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-const FLOATING_UPSELL_HEIGHT = arg1(dependencyMap[5]).FLOATING_UPSELL_HEIGHT;
-const tmp3 = arg1(dependencyMap[6]);
-({ AnalyticsObjects: closure_11, AnalyticsSections } = tmp3);
-({ BIO_MAX_LENGTH: closure_13, DISPLAY_NAME_MAX_LENGTH: closure_14, PRONOUNS_MAX_LENGTH: closure_15, UpsellTypes: closure_16 } = tmp3);
-const PremiumUpsellTypes = arg1(dependencyMap[7]).PremiumUpsellTypes;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_18, jsxs: closure_19 } = arg1(dependencyMap[8]));
-let closure_20 = { page: tmp3.AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
-const tmp4 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[53]).fileFinishedImporting("modules/user_profile/native/GuildProfileEditForm.tsx");
+let closure_3 = ["nick", "bio", "guild_tag"];
+({ ScrollView: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ AnalyticsObjects: closure_11, AnalyticsSections } = ME);
+({ BIO_MAX_LENGTH: closure_13, DISPLAY_NAME_MAX_LENGTH: closure_14, PRONOUNS_MAX_LENGTH: closure_15, UpsellTypes: closure_16 } = ME);
+({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
+let closure_20 = { page: ME.AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/GuildProfileEditForm.tsx");
 
 export default function GuildProfileEditForm(currentUser) {
   let avatarBackground;
@@ -111,42 +120,40 @@ export default function GuildProfileEditForm(currentUser) {
   let secondaryColor;
   let theme;
   currentUser = currentUser.currentUser;
-  const arg1 = currentUser;
-  let dependencyMap;
-  let tmp = importDefault(dependencyMap[20])();
-  const tmp2 = importDefault(dependencyMap[21])();
+  let analyticsLocations;
+  let tmp = guild(analyticsLocations[20])();
+  const tmp2 = guild(analyticsLocations[21])();
   const ref = React.useRef(null);
   const ref1 = React.useRef(null);
   const ref2 = React.useRef(null);
   const ref3 = React.useRef(null);
-  const insets = importDefault(dependencyMap[23])({ includeKeyboardHeight: true }).insets;
-  const PX_16 = importDefault(dependencyMap[24]).space.PX_16;
+  const insets = guild(analyticsLocations[23])({ includeKeyboardHeight: true }).insets;
+  const PX_16 = guild(analyticsLocations[24]).space.PX_16;
   let obj = { insets };
   const items = [{ ref: ref1, offset: { type: "toRef", ref: ref2, extraOffset: PX_16 } }, { ref: ref2, offset: { type: "toRef", ref: ref3, extraOffset: PX_16 } }, ];
   obj = { ref: ref3 };
   obj = { type: "toValue" };
-  const tmp3 = importDefault(dependencyMap[22])();
-  obj.value = importDefault(dependencyMap[24]).space.PX_64;
+  const tmp3 = guild(analyticsLocations[22])();
+  obj.value = guild(analyticsLocations[24]).space.PX_64;
   obj.offset = obj;
   items[2] = obj;
   obj.inputs = items;
   obj.scrollViewRef = ref;
-  const onFocus = importDefault(dependencyMap[25])(obj).onFocus;
-  const tmp9 = importDefault(dependencyMap[26])();
-  const guild = tmp9.guild;
-  const importDefault = guild;
+  const onFocus = guild(analyticsLocations[25])(obj).onFocus;
+  const tmp9 = guild(analyticsLocations[26])();
+  guild = tmp9.guild;
   ({ errors, isDisabled, pendingNickname, pendingThemeColors, pendingPronouns, pendingBio } = tmp9);
   ({ pendingAvatar, pendingBanner, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame, pendingNameplate, pendingDisplayNameStyles } = tmp9);
-  let obj3 = arg1(dependencyMap[27]);
-  const items1 = [closure_8];
+  let obj3 = currentUser(analyticsLocations[27]);
+  const items1 = [_isNativeReflectConstruct];
   const stateFromStores = obj3.useStateFromStores(items1, () => {
     let member = null;
     if (null != guild) {
-      member = member.getMember(guild.id, currentUser.id);
+      member = outer1_8.getMember(guild.id, currentUser.id);
     }
     return member;
   });
-  let obj4 = arg1(dependencyMap[27]);
+  let obj4 = currentUser(analyticsLocations[27]);
   const items2 = [closure_9];
   const stateFromStores1 = obj4.useStateFromStores(items2, () => {
     let guildMemberProfile = null;
@@ -155,32 +162,32 @@ export default function GuildProfileEditForm(currentUser) {
       if (null != guild) {
         id = guild.id;
       }
-      guildMemberProfile = guildMemberProfile.getGuildMemberProfile(currentUser.id, id);
+      guildMemberProfile = outer1_9.getGuildMemberProfile(currentUser.id, id);
     }
     return guildMemberProfile;
   });
   let id;
-  const tmp8 = importDefault(dependencyMap[25]);
+  const tmp8 = guild(analyticsLocations[25]);
   if (null != guild) {
     id = guild.id;
   }
-  const tmp12Result = importDefault(dependencyMap[28])(currentUser.id, id);
-  let obj5 = arg1(dependencyMap[29]);
+  const tmp12Result = guild(analyticsLocations[28])(currentUser.id, id);
+  let obj5 = currentUser(analyticsLocations[29]);
   const customStatusActivity = obj5.useCustomStatusActivity();
-  const tmp12 = importDefault(dependencyMap[28]);
-  let obj6 = arg1(dependencyMap[31]);
+  const tmp12 = guild(analyticsLocations[28]);
+  let obj6 = currentUser(analyticsLocations[31]);
   const pendingAvatarSrc = obj6.getPendingAvatarSrc({ userId: currentUser.id, image: pendingAvatar });
-  let obj8 = arg1(dependencyMap[32]);
-  let obj9 = importDefault(dependencyMap[9]);
+  let obj8 = currentUser(analyticsLocations[32]);
+  let obj9 = guild(analyticsLocations[9]);
   const result = obj9.canUsePremiumGuildMemberProfile(currentUser);
-  let obj10 = arg1(dependencyMap[33]);
+  let obj10 = currentUser(analyticsLocations[33]);
   let themeColors;
   if (null != stateFromStores1) {
     themeColors = stateFromStores1.themeColors;
   }
   let tmp21 = !result;
   const obj1 = { userId: currentUser.id, image: pendingAvatar };
-  const tmp16 = importDefault(dependencyMap[30])(tmp12Result);
+  const tmp16 = guild(analyticsLocations[30])(tmp12Result);
   if (tmp21) {
     tmp21 = !tmp3;
   }
@@ -228,11 +235,11 @@ export default function GuildProfileEditForm(currentUser) {
     str5 = bio1;
   }
   const canResetThemeColorsResult = obj10.canResetThemeColors(pendingThemeColors, themeColors);
-  const items3 = [importDefault(dependencyMap[11]).USER_SETTINGS];
-  dependencyMap = importDefault(dependencyMap[10])(items3).analyticsLocations;
-  const tmp27 = importDefault(dependencyMap[10]);
-  ({ theme, primaryColor, secondaryColor } = importDefault(dependencyMap[34])({ user: currentUser, displayProfile: tmp12Result, pendingThemeColors }));
-  let obj11 = arg1(dependencyMap[35]);
+  const items3 = [guild(analyticsLocations[11]).USER_SETTINGS];
+  analyticsLocations = guild(analyticsLocations[10])(items3).analyticsLocations;
+  const tmp27 = guild(analyticsLocations[10]);
+  ({ theme, primaryColor, secondaryColor } = guild(analyticsLocations[34])({ user: currentUser, displayProfile: tmp12Result, pendingThemeColors }));
+  let obj11 = currentUser(analyticsLocations[35]);
   const userProfileColors = obj11.useUserProfileColors({ theme, primaryColor, secondaryColor });
   ({ gradientSecondaryBackground, containerBackground } = userProfileColors);
   let num = 0;
@@ -243,8 +250,8 @@ export default function GuildProfileEditForm(currentUser) {
   const sum = insets.bottom + num;
   const obj2 = { backgroundColor: avatarBackground };
   ({ nick, bio, guild_tag } = errors);
-  const sum1 = sum + importDefault(dependencyMap[24]).space.PX_16;
-  const tmp28 = importDefault(dependencyMap[34])({ user: currentUser, displayProfile: tmp12Result, pendingThemeColors });
+  const sum1 = sum + guild(analyticsLocations[24]).space.PX_16;
+  const tmp28 = guild(analyticsLocations[34])({ user: currentUser, displayProfile: tmp12Result, pendingThemeColors });
   if (null != nick) {
     const first = nick[0];
   }
@@ -261,8 +268,8 @@ export default function GuildProfileEditForm(currentUser) {
   if (null == guild) {
     return null;
   } else {
-    tmp = arg1;
-    tmp = dependencyMap;
+    tmp = currentUser;
+    tmp = analyticsLocations;
     tmp = callback2;
     obj3 = { theme, primaryColor, secondaryColor };
     tmp = closure_19;
@@ -306,12 +313,12 @@ export default function GuildProfileEditForm(currentUser) {
       }
       obj13.guildId = id1;
       obj13.statusStyle = obj2;
-      obj12.children = callback2(importDefault(dependencyMap[38]), obj13);
+      obj12.children = callback2(guild(analyticsLocations[38]), obj13);
       tmp37Result = callback2(closure_7, obj12);
       const tmp37 = callback2;
       const tmp38 = closure_7;
       const tmp39 = callback2;
-      const tmp42 = importDefault(dependencyMap[38]);
+      const tmp42 = guild(analyticsLocations[38]);
     }
     const items8 = [tmp37Result, ];
     const obj14 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor };
@@ -323,11 +330,11 @@ export default function GuildProfileEditForm(currentUser) {
     const obj16 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor };
     ({ customStatusBubble: obj18.style, emojiOnlyCustomStatusBubble: obj18.emojiOnlyStyle } = tmp);
     obj16.editEnabled = true;
-    const items10 = [callback2(importDefault(dependencyMap[40]), obj16), , ];
+    const items10 = [callback2(guild(analyticsLocations[40]), obj16), , ];
     const obj17 = { user: currentUser };
     let tmp53 = str;
     const tmp46 = closure_19;
-    const tmp49 = importDefault(dependencyMap[39]);
+    const tmp49 = guild(analyticsLocations[39]);
     const tmp51 = callback2;
     if (null != pendingNickname) {
       tmp53 = pendingNickname;
@@ -343,7 +350,7 @@ export default function GuildProfileEditForm(currentUser) {
     obj17.displayNameAccessibilityRole = "header";
     obj17.guildId = guild.id;
     obj17.pendingDisplayNameStyles = pendingDisplayNameStyles;
-    items10[1] = tmp51(importDefault(dependencyMap[41]), obj17);
+    items10[1] = tmp51(guild(analyticsLocations[41]), obj17);
     let tmp56Result = null;
     if (null != guild) {
       const obj18 = {};
@@ -361,8 +368,8 @@ export default function GuildProfileEditForm(currentUser) {
             const _Object = Object;
             stringResult = null;
             if (Object.keys(tmp32).length > 0) {
-              const intl = arg1(dependencyMap[17]).intl;
-              stringResult = intl.string(arg1(dependencyMap[17]).t.s35OuK);
+              const intl = currentUser(analyticsLocations[17]).intl;
+              stringResult = intl.string(currentUser(analyticsLocations[17]).t.s35OuK);
             }
           }
           let tmp63 = null;
@@ -370,8 +377,8 @@ export default function GuildProfileEditForm(currentUser) {
             tmp63 = null;
             if ("" !== stringResult) {
               const obj20 = { style: tmp2.errorContainer };
-              const obj21 = { cachedAt: "/assets/.cache/intl/ZGVzaWdu", edpbxy: null, children: stringResult };
-              obj20.children = callback2(arg1(dependencyMap[36]).Text, obj21);
+              const obj21 = { variant: "text-sm/bold", color: "text-feedback-critical", children: stringResult };
+              obj20.children = callback2(currentUser(analyticsLocations[36]).Text, obj21);
               tmp63 = callback2(closure_7, obj20);
             }
           }
@@ -380,8 +387,8 @@ export default function GuildProfileEditForm(currentUser) {
       }
       const items12 = [tmp58, , , , , , , , , ];
       const obj22 = { inputRef: ref1 };
-      const intl2 = arg1(dependencyMap[17]).intl;
-      obj22.label = intl2.string(arg1(dependencyMap[17]).t.me1lRk);
+      const intl2 = currentUser(analyticsLocations[17]).intl;
+      obj22.label = intl2.string(currentUser(analyticsLocations[17]).t.me1lRk);
       obj22.errorMessage = first;
       if (null != pendingNickname) {
         str = pendingNickname;
@@ -393,27 +400,27 @@ export default function GuildProfileEditForm(currentUser) {
         obj = { guildId: guild.id, nickname };
         return obj.setPendingChanges(obj);
       };
-      let obj24 = importDefault(dependencyMap[43]);
+      let obj24 = guild(analyticsLocations[43]);
       obj22.placeholder = obj24.getName(currentUser);
       obj22.maxLength = closure_14;
       obj22.isDisabled = !obj8.useGuildActionSheetPermissions(guild).canEditNickname || isDisabled;
-      items12[1] = callback2(importDefault(dependencyMap[42]), obj22);
+      items12[1] = callback2(guild(analyticsLocations[42]), obj22);
       let tmp77 = result;
       if (result) {
         const obj23 = { user: currentUser, guildId: guild.id };
-        tmp77 = callback2(importDefault(dependencyMap[44]), obj23);
+        tmp77 = callback2(guild(analyticsLocations[44]), obj23);
       }
       items12[2] = tmp77;
       obj24 = { inputRef: ref2 };
       const tmp56 = closure_19;
       const tmp57 = closure_7;
       const tmp69 = callback2;
-      const tmp72 = importDefault(dependencyMap[42]);
-      const intl3 = arg1(dependencyMap[17]).intl;
-      obj24.label = intl3.string(arg1(dependencyMap[17]).t.+T3RI/);
+      const tmp72 = guild(analyticsLocations[42]);
+      const intl3 = currentUser(analyticsLocations[17]).intl;
+      obj24.label = intl3.string(currentUser(analyticsLocations[17]).t["+T3RI/"]);
       obj24.errorMessage = first1;
-      const intl4 = arg1(dependencyMap[17]).intl;
-      obj24.description = intl4.string(arg1(dependencyMap[17]).t.NZqtIp);
+      const intl4 = currentUser(analyticsLocations[17]).intl;
+      obj24.description = intl4.string(currentUser(analyticsLocations[17]).t.NZqtIp);
       obj24.value = str2;
       obj24.onFocus = onFocus;
       obj24.onChange = function onChange(pronouns) {
@@ -424,15 +431,15 @@ export default function GuildProfileEditForm(currentUser) {
       obj24.placeholder = str3;
       obj24.maxLength = closure_15;
       obj24.isDisabled = isDisabled;
-      items12[3] = callback2(importDefault(dependencyMap[42]), obj24);
+      items12[3] = callback2(guild(analyticsLocations[42]), obj24);
       let tmp88Result = null;
       if (result) {
         const obj25 = { inputRef: ref3 };
-        const intl5 = arg1(dependencyMap[17]).intl;
-        obj25.label = intl5.string(arg1(dependencyMap[17]).t.ZzAR2Y);
+        const intl5 = currentUser(analyticsLocations[17]).intl;
+        obj25.label = intl5.string(currentUser(analyticsLocations[17]).t.ZzAR2Y);
         obj25.errorMessage = first2;
-        const intl6 = arg1(dependencyMap[17]).intl;
-        obj25.description = intl6.string(arg1(dependencyMap[17]).t.S5O8U2);
+        const intl6 = currentUser(analyticsLocations[17]).intl;
+        obj25.description = intl6.string(currentUser(analyticsLocations[17]).t.S5O8U2);
         if (null != pendingBio) {
           str4 = pendingBio;
         }
@@ -447,9 +454,9 @@ export default function GuildProfileEditForm(currentUser) {
         obj25.maxLength = closure_13;
         obj25.numberOfLines = 5;
         obj25.isDisabled = isDisabled;
-        tmp88Result = callback2(importDefault(dependencyMap[42]), obj25);
+        tmp88Result = callback2(guild(analyticsLocations[42]), obj25);
         const tmp88 = callback2;
-        const tmp91 = importDefault(dependencyMap[42]);
+        const tmp91 = guild(analyticsLocations[42]);
       }
       items12[4] = tmp88Result;
       const obj26 = {
@@ -464,19 +471,19 @@ export default function GuildProfileEditForm(currentUser) {
             },
         showResetMenu: canResetThemeColorsResult
       };
-      items12[5] = callback2(importDefault(dependencyMap[45]), obj26);
+      items12[5] = callback2(guild(analyticsLocations[45]), obj26);
       const obj27 = { user: currentUser, guildId: guild.id, pendingAvatarDecoration };
-      items12[6] = callback2(importDefault(dependencyMap[46]), obj27);
+      items12[6] = callback2(guild(analyticsLocations[46]), obj27);
       const obj28 = { user: currentUser, guildId: guild.id, pendingProfileEffect, displayProfile: tmp12Result };
-      items12[7] = callback2(importDefault(dependencyMap[47]), obj28);
+      items12[7] = callback2(guild(analyticsLocations[47]), obj28);
       const obj29 = { user: currentUser, guildId: guild.id, pendingProfileFrame, displayProfile: tmp12Result };
-      items12[8] = callback2(importDefault(dependencyMap[48]), obj29);
+      items12[8] = callback2(guild(analyticsLocations[48]), obj29);
       tmp = callback2;
       const obj30 = { user: currentUser, pendingNameplate, guildId: guild.id };
-      items12[9] = callback2(importDefault(dependencyMap[49]), obj30);
+      items12[9] = callback2(guild(analyticsLocations[49]), obj30);
       obj18.children = items12;
       tmp56Result = tmp56(tmp57, obj18);
-      const tmp84 = importDefault(dependencyMap[42]);
+      const tmp84 = guild(analyticsLocations[42]);
     }
     items10[2] = tmp56Result;
     obj14.children = items10;
@@ -489,23 +496,23 @@ export default function GuildProfileEditForm(currentUser) {
     const items13 = [tmp(tmp, obj6), ];
     if (tmp21) {
       tmp = callback2;
-      tmp = importDefault;
-      tmp = dependencyMap;
+      tmp = guild;
+      tmp = analyticsLocations;
       const obj31 = {};
       const items14 = [tmp2.floatingUpsell, ];
       const obj32 = {};
-      tmp = importDefault(dependencyMap[50]);
-      obj32.bottom = importDefault(dependencyMap[24]).space.PX_16 + insets.bottom;
+      tmp = guild(analyticsLocations[50]);
+      obj32.bottom = guild(analyticsLocations[24]).space.PX_16 + insets.bottom;
       items14[1] = obj32;
       obj31.style = items14;
-      tmp = arg1;
-      const intl7 = arg1(dependencyMap[17]).intl;
-      obj31.ctaText = intl7.string(arg1(dependencyMap[17]).t.pj0XBN);
+      tmp = currentUser;
+      const intl7 = currentUser(analyticsLocations[17]).intl;
+      obj31.ctaText = intl7.string(currentUser(analyticsLocations[17]).t.pj0XBN);
       obj31.onPress = function onPress() {
         let obj = {};
         obj = {};
-        const merged = Object.assign(closure_20);
-        obj["object"] = constants.BUTTON_CTA;
+        const merged = Object.assign(outer1_20);
+        obj["object"] = outer1_11.BUTTON_CTA;
         obj.analyticsLocation = obj;
         obj.analyticsLocations = analyticsLocations;
         obj.premiumFeatureCardOrder = currentUser(analyticsLocations[52]).PremiumFeatureCardOrder.TIER_2_LEADING;
@@ -513,15 +520,15 @@ export default function GuildProfileEditForm(currentUser) {
       };
       tmp = callback2;
       const obj33 = { variant: "text-sm/normal" };
-      const intl8 = arg1(dependencyMap[17]).intl;
-      obj33.children = intl8.string(arg1(dependencyMap[17]).t.YIZS5B);
-      obj31.children = callback2(arg1(dependencyMap[36]).Text, obj33);
+      const intl8 = currentUser(analyticsLocations[17]).intl;
+      obj33.children = intl8.string(currentUser(analyticsLocations[17]).t.YIZS5B);
+      obj31.children = callback2(currentUser(analyticsLocations[36]).Text, obj33);
       tmp21 = callback2(tmp, obj31);
     }
     items13[1] = tmp21;
     obj4.children = items13;
     obj3.children = tmp(tmp, obj4);
-    return tmp(arg1(dependencyMap[37]).ThemeContextProvider, obj3);
+    return tmp(currentUser(analyticsLocations[37]).ThemeContextProvider, obj3);
   }
-  const tmp32 = callback(errors, closure_3);
+  tmp32 = callback(errors, closure_3);
 };

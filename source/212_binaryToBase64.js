@@ -1,9 +1,11 @@
 // Module ID: 212
 // Function ID: 2960
 // Name: binaryToBase64
-// Dependencies: []
+// Dependencies: [206]
 
 // Module 212 (binaryToBase64)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.default = function binaryToBase64(arg0) {
   let byteLength;
   let byteOffset;
@@ -13,7 +15,7 @@ arg5.default = function binaryToBase64(arg0) {
     uint8Array = new Uint8Array(arg0);
   }
   if (uint8Array instanceof Uint8Array) {
-    return arg1(arg6[0]).fromByteArray(uint8Array);
+    return require(206) /* getLens */.fromByteArray(uint8Array);
   } else {
     const _ArrayBuffer = ArrayBuffer;
     if (ArrayBuffer.isView(uint8Array)) {
@@ -21,7 +23,7 @@ arg5.default = function binaryToBase64(arg0) {
       ({ byteOffset, byteLength } = uint8Array);
       const _Uint8Array2 = Uint8Array;
       const uint8Array1 = new Uint8Array(buffer, byteOffset, byteLength);
-      return arg1(arg6[0]).fromByteArray(uint8Array1);
+      return require(206) /* getLens */.fromByteArray(uint8Array1);
     } else {
       const _Error = Error;
       const error = new Error("data must be ArrayBuffer or typed array");

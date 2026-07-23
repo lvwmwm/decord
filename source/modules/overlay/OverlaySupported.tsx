@@ -1,20 +1,20 @@
-// Module ID: 12730
-// Function ID: 97679
+// Module ID: 12844
+// Function ID: 99835
 // Name: IS_OVERLAY_DEV_ENV
-// Dependencies: []
+// Dependencies: [477, 2]
 
-// Module 12730 (IS_OVERLAY_DEV_ENV)
-let flag = require(dependencyMap[0]).isPlatformEmbedded;
+// Module 12844 (IS_OVERLAY_DEV_ENV)
+import { isPlatformEmbedded as flag } from "set";
+
 if (flag) {
-  const _module = require(dependencyMap[0]);
+  const _module = require("set");
   flag = _module.isWindows() || false;
   const tmp2 = _module.isWindows() || false;
 }
 if (flag) {
   flag = false;
 }
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/overlay/OverlaySupported.tsx");
+const result = require("set").fileFinishedImporting("modules/overlay/OverlaySupported.tsx");
 
 export const IS_OVERLAY_DEV_ENV = false;
 export const OVERLAY_SUPPORTED = flag;

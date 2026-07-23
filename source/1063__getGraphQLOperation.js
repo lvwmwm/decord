@@ -1,9 +1,11 @@
 // Module ID: 1063
-// Function ID: 11362
+// Function ID: 11363
 // Name: _getGraphQLOperation
-// Dependencies: []
+// Dependencies: [794, 1009]
 
 // Module 1063 (_getGraphQLOperation)
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+
 function _getGraphQLOperation(operationName) {
   if (isPersistedRequest(operationName)) {
     const _HermesInternal2 = HermesInternal;
@@ -28,17 +30,18 @@ function _getGraphQLOperation(operationName) {
 }
 function getRequestPayloadXhrOrFetch(input) {
   if ("xhr" in input) {
+    const tmp7 = input.xhr[require(undefined, 1009) /* addClsInstrumentationHandler */.SENTRY_XHR_DATA_KEY];
     let first = tmp7;
-    if (input.xhr[closure_0(undefined, closure_1[1]).SENTRY_XHR_DATA_KEY]) {
-      first = require(dependencyMap[1]).getBodyString(tmp7.body)[0];
-      const obj3 = require(dependencyMap[1]);
+    if (tmp7) {
+      first = require(1009) /* addClsInstrumentationHandler */.getBodyString(tmp7.body)[0];
+      const obj3 = require(1009) /* addClsInstrumentationHandler */;
     }
     let first1 = first;
   } else {
-    const fetchRequestArgBody = require(dependencyMap[1]).getFetchRequestArgBody(input.input);
-    const obj = require(dependencyMap[1]);
-    first1 = require(dependencyMap[1]).getBodyString(fetchRequestArgBody)[0];
-    const obj2 = require(dependencyMap[1]);
+    const fetchRequestArgBody = require(1009) /* addClsInstrumentationHandler */.getFetchRequestArgBody(input.input);
+    const obj = require(1009) /* addClsInstrumentationHandler */;
+    first1 = require(1009) /* addClsInstrumentationHandler */.getBodyString(fetchRequestArgBody)[0];
+    const obj2 = require(1009) /* addClsInstrumentationHandler */;
   }
   return first1;
 }
@@ -104,49 +107,50 @@ function getGraphQLRequestPayload(arg0) {
   return tmp4;
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
 
 export { _getGraphQLOperation };
 export { getGraphQLRequestPayload };
 export { getRequestPayloadXhrOrFetch };
-export const graphqlClientIntegration = _module.defineIntegration(function _graphqlClientIntegration(arg0) {
-  const require = arg0;
+export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineIntegration(function _graphqlClientIntegration(arg0) {
+  let closure_0 = arg0;
   return {
     name: "GraphQLClient",
     setup(on) {
-      function _updateSpanWithGraphQLData(on, arg1) {
+      (function _updateSpanWithGraphQLData(on, closure_0) {
         on.on("beforeOutgoingRequestSpan", (updateName) => {
-          const tmp = arg1(closure_1[0]).spanToJSON(updateName).data || {};
-          if ("http.client" === tmp[closure_0(undefined, closure_1[0]).SEMANTIC_ATTRIBUTE_SENTRY_OP]) {
-            if (obj2.isString(tmp[closure_0(undefined, closure_1[0]).SEMANTIC_ATTRIBUTE_URL_FULL] || tmp.http.url)) {
+          const tmp = lib(outer3_1[0]).spanToJSON(updateName).data || {};
+          if ("http.client" === tmp[lib(undefined, outer3_1[0]).SEMANTIC_ATTRIBUTE_SENTRY_OP]) {
+            const tmp2 = tmp[lib(undefined, outer3_1[0]).SEMANTIC_ATTRIBUTE_URL_FULL] || tmp["http.url"];
+            const tmp5 = tmp[lib(undefined, outer3_1[0]).SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD] || tmp["http.method"];
+            if (obj2.isString(tmp2)) {
               if (obj3.isString(tmp5)) {
-                const result = arg1(closure_1[0]).stringMatchesSomePattern(tmp2, arg1.endpoints);
-                const tmp16 = callback2(arg1);
+                const result = lib(outer3_1[0]).stringMatchesSomePattern(tmp2, lib.endpoints);
+                const tmp16 = outer3_3(arg1);
                 if (result) {
                   if (tmp16) {
-                    const tmp18 = callback5(tmp16);
+                    const tmp18 = outer3_8(tmp16);
                     if (tmp18) {
                       const _HermesInternal = HermesInternal;
-                      updateName.updateName("" + tmp5 + " " + tmp2 + " (" + callback(tmp18) + ")");
-                      if (callback3(tmp18)) {
+                      updateName.updateName("" + tmp5 + " " + tmp2 + " (" + outer3_2(tmp18) + ")");
+                      if (outer3_6(tmp18)) {
                         const attr = updateName.setAttribute("graphql.document", tmp18.query);
                       }
-                      if (callback4(tmp18)) {
+                      if (outer3_7(tmp18)) {
                         const attr1 = updateName.setAttribute("graphql.persisted_query.hash.sha256", tmp18.extensions.persistedQuery.sha256Hash);
                         const attr2 = updateName.setAttribute("graphql.persisted_query.version", tmp18.extensions.persistedQuery.version);
                       }
                     }
                   }
                 }
-                const obj4 = arg1(closure_1[0]);
+                const obj4 = lib(outer3_1[0]);
               }
-              const obj3 = arg1(closure_1[0]);
+              obj3 = lib(outer3_1[0]);
             }
-            const obj2 = arg1(closure_1[0]);
+            obj2 = lib(outer3_1[0]);
           }
         });
-      }(on, on);
-      function _updateBreadcrumbWithGraphQLData(on, arg1) {
+      })(on, closure_0);
+      (function _updateBreadcrumbWithGraphQLData(on, closure_0) {
         on.on("beforeOutgoingRequestBreadcrumb", (type) => {
           let category;
           let data;
@@ -157,32 +161,32 @@ export const graphqlClientIntegration = _module.defineIntegration(function _grap
               if (null != data) {
                 url = data.url;
               }
-              const result = arg1(closure_1[0]).stringMatchesSomePattern(url, arg1.endpoints);
-              const tmp9 = callback2(arg1);
+              const result = lib(outer3_1[0]).stringMatchesSomePattern(url, lib.endpoints);
+              const tmp9 = outer3_3(arg1);
               if (result) {
                 if (data) {
                   if (tmp9) {
-                    const tmp11 = callback5(tmp9);
+                    const tmp11 = outer3_8(tmp9);
                     if (!data.graphql) {
                       if (tmp11) {
-                        data.graphql.operation = callback(tmp11);
-                        if (callback3(tmp11)) {
-                          data.graphql.document = tmp11.query;
+                        data["graphql.operation"] = outer3_2(tmp11);
+                        if (outer3_6(tmp11)) {
+                          data["graphql.document"] = tmp11.query;
                         }
-                        if (callback4(tmp11)) {
-                          data.graphql.persisted_query.hash.sha256 = tmp11.extensions.persistedQuery.sha256Hash;
-                          data.graphql.persisted_query.version = tmp11.extensions.persistedQuery.version;
+                        if (outer3_7(tmp11)) {
+                          data["graphql.persisted_query.hash.sha256"] = tmp11.extensions.persistedQuery.sha256Hash;
+                          data["graphql.persisted_query.version"] = tmp11.extensions.persistedQuery.version;
                         }
                       }
                     }
                   }
                 }
               }
-              const obj = arg1(closure_1[0]);
+              const obj = lib(outer3_1[0]);
             }
           }
         });
-      }(on, on);
+      })(on, closure_0);
     }
   };
 });

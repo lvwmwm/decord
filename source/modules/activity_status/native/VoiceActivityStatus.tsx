@@ -1,16 +1,21 @@
-// Module ID: 9076
-// Function ID: 71174
+// Module ID: 9083
+// Function ID: 71215
 // Name: VoiceActivityStatus
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 9084, 9072, 1212, 2]
 // Exports: default
 
-// Module 9076 (VoiceActivityStatus)
-importAll(dependencyMap[0]);
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[2]).createStyles({ icon: { flexShrink: 0 } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activity_status/native/VoiceActivityStatus.tsx");
+// Module 9083 (VoiceActivityStatus)
+import "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ icon: { flexShrink: 0 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/activity_status/native/VoiceActivityStatus.tsx");
 
 export default function VoiceActivityStatus(hideText) {
   let channel;
@@ -29,10 +34,10 @@ export default function VoiceActivityStatus(hideText) {
     let obj = {};
     let tmp5 = !hideIcon;
     if (tmp5) {
-      obj = { marginVertical: "abb394aed71d149627aa4dc597482f89", padding: "stack-nav-back", paddingTop: "png", channel };
+      obj = { channel, size: "xxs", color: "status-positive" };
       const items = [tmp.icon, hideText.iconStyle];
       obj.style = items;
-      tmp5 = callback(importDefault(dependencyMap[3]), obj);
+      tmp5 = callback(importDefault(9084), obj);
     }
     const items1 = [tmp5, ];
     if (!!flag) {
@@ -42,11 +47,11 @@ export default function VoiceActivityStatus(hideText) {
     } else {
       if (!channel.isDM()) {
         if (!channel.isGroupDM()) {
-          const tmp14 = importDefault(dependencyMap[4]);
+          const tmp14 = importDefault(9072);
           obj = { style: textStyle, maxFontSizeMultiplier };
-          const intl = arg1(dependencyMap[5]).intl;
+          const intl = require(1212) /* getSystemLocale */.intl;
           const string = intl.string;
-          const t = arg1(dependencyMap[5]).t;
+          const t = require(1212) /* getSystemLocale */.t;
           if (isGuildStageVoiceResult) {
             obj.children = string(t.QygGCN);
             let tmp11Result = tmp11(tmp14, obj);
@@ -54,18 +59,18 @@ export default function VoiceActivityStatus(hideText) {
             obj.children = string(t.msxteM);
             tmp11Result = tmp11(tmp14, obj);
           }
-          const isGuildStageVoiceResult = channel.isGuildStageVoice();
+          isGuildStageVoiceResult = channel.isGuildStageVoice();
         }
       }
       const obj1 = { style: textStyle, maxFontSizeMultiplier };
-      textStyle = arg1(dependencyMap[5]).intl;
+      textStyle = require(1212) /* getSystemLocale */.intl;
       maxFontSizeMultiplier = textStyle.string;
-      obj1.children = maxFontSizeMultiplier(arg1(dependencyMap[5]).t.9FaEzi);
-      tmp11Result = callback(importDefault(dependencyMap[4]), obj1);
-      const tmp20 = importDefault(dependencyMap[4]);
+      obj1.children = maxFontSizeMultiplier(require(1212) /* getSystemLocale */.t["9FaEzi"]);
+      tmp11Result = callback(importDefault(9072), obj1);
+      const tmp20 = importDefault(9072);
     }
-    const tmp3 = closure_5;
-    const tmp4 = closure_4;
+    tmp3 = closure_5;
+    tmp4 = closure_4;
   } else {
     tmp3Result = null;
   }

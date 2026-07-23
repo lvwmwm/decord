@@ -1,25 +1,27 @@
-// Module ID: 14296
-// Function ID: 107980
-// Dependencies: []
+// Module ID: 14410
+// Function ID: 110133
+// Dependencies: [13327, 13745, 10095, 14389, 2]
 
-// Module 14296
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[2]);
-obj = {
+// Module 14410
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
     return "Internal Build Active";
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[3]).MobilePhoneSettingsIcon,
+  IconComponent: require("MobilePhoneSettingsIcon").MobilePhoneSettingsIcon,
   useDescription: function useInternalBuildActiveDescription() {
     return "Build installed from builds.discord.tools";
   },
   usePredicate: function useHasCheckNativeUpdateSetting() {
-    const obj = arg1(dependencyMap[1]);
-    return hasUpdatesConfigured.hasUpdatesConfigured && arg1(dependencyMap[1]).useStaffOrDeveloperSettingPredicate();
+    const obj = require(13745) /* useStaffOrDeveloperSettingPredicate */;
+    return hasUpdatesConfigured.hasUpdatesConfigured && require(13745) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
   }
 };
-const createStaticResult = obj.createStatic(obj);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/defs/native/InternalBuildActiveSetting.tsx");
+createToggle = createToggle.createStatic(createToggle);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/InternalBuildActiveSetting.tsx");
 
-export default createStaticResult;
+export default createToggle;

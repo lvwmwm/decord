@@ -1,41 +1,43 @@
-// Module ID: 12396
-// Function ID: 94753
+// Module ID: 12510
+// Function ID: 96909
 // Name: set
-// Dependencies: []
+// Dependencies: [31, 4017, 4018, 4021, 566, 11609, 2]
 // Exports: default
 
-// Module 12396 (set)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-const GuildPowerupType = tmp2.GuildPowerupType;
-const items = [...Array.from(tmp2.GUILD_TAG_BADGE_PACKS_WAVE_ONE_SKU_ID_SET), ...Array.from(tmp2.GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET), arg1(dependencyMap[3]).VANITY_URL_POWERUP_SKU_ID];
-const set = new Set(items);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/hooks/useMarketablePowerupPerks.tsx");
+// Module 12510 (set)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import BoostedGuildTiers from "BoostedGuildTiers";
+import set from "BoostedGuildTiers";
+
+const require = arg1;
+const GuildPowerupType = BoostedGuildTiers.GuildPowerupType;
+let items = [...Array.from(tmp2.GUILD_TAG_BADGE_PACKS_WAVE_ONE_SKU_ID_SET), ...Array.from(tmp2.GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET), require("VANITY_URL_POWERUP_SKU_ID").VANITY_URL_POWERUP_SKU_ID];
+let set = new Set(items);
+const result = set.fileFinishedImporting("modules/premium/powerups/hooks/useMarketablePowerupPerks.tsx");
 
 export default function useMarketablePowerupPerks(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => {
-    const stateForGuild = stateForGuild.getStateForGuild(arg0);
+  const _require = arg0;
+  let items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
+    const stateForGuild = outer1_4.getStateForGuild(closure_0);
     let tmp2;
     if (null != stateForGuild) {
       const powerupCatalog = stateForGuild.powerupCatalog;
       if (null != powerupCatalog) {
-        tmp2 = powerupCatalog[closure_5.PERK];
+        tmp2 = powerupCatalog[outer1_5.PERK];
       }
     }
     return tmp2;
   });
-  const importDefault = stateFromStores;
-  const tmp2 = importDefault(dependencyMap[5])(arg0);
+  let tmp2 = stateFromStores(11609)(arg0);
   const dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
   return React.useMemo(() => {
     const items = [...null != stateFromStores ? stateFromStores : []];
-    if (null != tmp2) {
-      items.push(tmp2);
+    if (null != closure_2) {
+      items.push(closure_2);
     }
-    return items.filter((skuId) => !set.has(skuId.skuId));
+    return items.filter((skuId) => !outer2_6.has(skuId.skuId));
   }, items1);
 };

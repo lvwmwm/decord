@@ -1,10 +1,26 @@
-// Module ID: 16429
-// Function ID: 126851
+// Module ID: 16546
+// Function ID: 129025
 // Name: getOutboundVideoStats
-// Dependencies: []
+// Dependencies: [57, 4215, 4199, 4220, 1348, 4177, 4202, 4223, 1906, 4216, 653, 4191, 8857, 4194, 4300, 22, 6984, 10579, 6917, 4124, 675, 2]
 // Exports: sendAVErrorAnalyticsEvent
 
-// Module 16429 (getOutboundVideoStats)
+// Module 16546 (getOutboundVideoStats)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import DesktopSources from "DesktopSources";
+
+let closure_14;
+let closure_15;
+const require = arg1;
 function getOutboundVideoStats(arg0) {
   const connectionStats = store.getConnectionStats(arg0);
   let tmp2 = null;
@@ -78,7 +94,7 @@ function getCurrentScreenshareCaptureMethod(arg0) {
   if (null != connectionStats) {
     if (null != lastConnectionStats) {
       const obj = {};
-      const items = [true, true, true, 822030335, 352268799, 385816063, 855578623, 889140223, 436156159];
+      const items = ["videohookFrames", "hybridDxgiFrames", "hybridGdiFrames", "hybridVideohookFrames", "hybridGraphicsCaptureFrames", "hybridGdiBitBltFrames", "hybridGdiPrintWindowFrames", "quartzFrames", "screenCaptureKitFrames"];
       for (let num3 = 0; num3 < items.length; num3 = num3 + 1) {
         let tmp3 = items[num3];
         let screenshare = lastConnectionStats.stats.screenshare;
@@ -110,8 +126,8 @@ function getCurrentScreenshareCaptureMethod(arg0) {
       let tmp8 = null;
       if (0 < entries.length) {
         do {
-          let tmp9 = closure_3;
-          let tmp10 = closure_3(entries[num7], 2);
+          let tmp9 = callback;
+          let tmp10 = callback(entries[num7], 2);
           let tmp12 = tmp10[1];
           if (tmp12 > num4) {
             num4 = tmp12;
@@ -131,26 +147,19 @@ function getCurrentScreenshareCaptureMethod(arg0) {
   }
   return null;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const getSystemAnalyticsInfo = arg1(dependencyMap[2]).getSystemAnalyticsInfo;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-const AnalyticEvents = arg1(dependencyMap[10]).AnalyticEvents;
-({ MediaEngineContextTypes: closure_14, SIMULCAST_HQ_QUALITY: closure_15 } = arg1(dependencyMap[11]));
-const tmp2 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/errors/av_errors/AVErrorAnalytics.tsx");
+({ MediaEngineContextTypes: closure_14, SIMULCAST_HQ_QUALITY: closure_15 } = DesktopSources);
+const result = require("getSystemAnalyticsInfo").fileFinishedImporting("modules/errors/av_errors/AVErrorAnalytics.tsx");
 
 export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(error, context) {
-  context = error;
-  const errorInfo = context(dependencyMap[12]).getErrorInfo(error);
-  const dependencyMap = errorInfo;
-  let voiceChannelId = voiceChannelId.getVoiceChannelId();
+  let closure_22;
+  let closure_23;
+  let closure_24;
+  let closure_25;
+  let getCurrentScreenshareCaptureMethod;
+  let getLatestInboundBitrateEstimate;
+  const _require = error;
+  errorInfo = _require(errorInfo[12]).getErrorInfo(error);
+  let voiceChannelId = videoEncoder.getVoiceChannelId();
   let channelId;
   if ("channelId" in context) {
     channelId = context.channelId;
@@ -163,8 +172,8 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
   if (fn != voiceChannelId) {
     tmp4 = voiceChannelId;
   }
-  let closure_3 = tmp4;
-  const channel2 = channel.getChannel(tmp4);
+  let _slicedToArray = tmp4;
+  const channel = errorMessage.getChannel(tmp4);
   let streamKey;
   if ("streamKey" in context) {
     streamKey = context.streamKey;
@@ -173,47 +182,38 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
   if ("mediaContext" in context) {
     mediaContext = context.mediaContext;
   }
-  const getSystemAnalyticsInfo = mediaContext;
   let underlyingError;
   if ("underlyingError" in context) {
     underlyingError = context.underlyingError;
   }
-  let state = underlyingError;
-  let errorMessage;
+  errorMessage = undefined;
   if ("errorMessage" in context) {
     errorMessage = context.errorMessage;
   }
-  const channel = errorMessage;
   let mediaSessionId;
   if ("mediaSessionId" in context) {
     mediaSessionId = context.mediaSessionId;
   }
-  let closure_8 = mediaSessionId;
   let rtcConnectionId;
   if ("rtcConnectionId" in context) {
     rtcConnectionId = context.rtcConnectionId;
   }
-  let rTCConnection = rtcConnectionId;
   let videoCodec;
   if ("videoCodec" in context) {
     videoCodec = context.videoCodec;
   }
-  let closure_10 = videoCodec;
-  let videoEncoder;
+  videoEncoder = undefined;
   if ("videoEncoder" in context) {
     videoEncoder = context.videoEncoder;
   }
-  voiceChannelId = videoEncoder;
   let videoDecoder;
   if ("videoDecoder" in context) {
     videoDecoder = context.videoDecoder;
   }
-  const rTCConnection2 = videoDecoder;
   let prop;
   if ("audioCaptureSampleRateMismatchPercent" in context) {
     prop = context.audioCaptureSampleRateMismatchPercent;
   }
-  const AnalyticEvents = prop;
   let audioInputDeviceName;
   if ("audioInputDeviceName" in context) {
     audioInputDeviceName = context.audioInputDeviceName;
@@ -226,42 +226,39 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
   if ("videoDeviceName" in context) {
     videoDeviceName = context.videoDeviceName;
   }
-  const getOutboundVideoStats = videoDeviceName;
   let userId;
   if ("userId" in context) {
     userId = context.userId;
   }
   let decodeStreamKeyResult = null;
   if (fn != streamKey) {
-    decodeStreamKeyResult = context(dependencyMap[13]).decodeStreamKey(streamKey);
-    const obj2 = context(dependencyMap[13]);
+    decodeStreamKeyResult = _require(errorInfo[13]).decodeStreamKey(streamKey);
+    const obj2 = _require(errorInfo[13]);
   }
   const getInboundVideoStats = decodeStreamKeyResult;
-  rTCConnection = null;
+  let rTCConnection = null;
   if (fn != streamKey) {
-    rTCConnection = rTCConnection2.getRTCConnection(streamKey);
+    rTCConnection = videoDecoder.getRTCConnection(streamKey);
   }
-  const getVideoStats = rTCConnection;
   let rTCConnection1 = rTCConnection;
   if (fn == streamKey) {
-    rTCConnection1 = rTCConnection.getRTCConnection();
+    rTCConnection1 = rtcConnectionId.getRTCConnection();
   }
-  const getLatestOutboundBitrateEstimate = rTCConnection1;
   let tmp25 = null;
   if (fn != streamKey) {
     let streamApplication;
     if (fn != rTCConnection) {
-      const analyticsContext = rTCConnection.analyticsContext;
+      let analyticsContext = rTCConnection.analyticsContext;
       if (fn != analyticsContext) {
         streamApplication = analyticsContext.streamApplication;
       }
     }
     tmp25 = streamApplication;
   }
-  state = state.getState();
-  ({ resolution: closure_20, fps: closure_21 } = state);
-  const obj = context(dependencyMap[12]);
-  const runningGameAnalytics = context(dependencyMap[14]).getRunningGameAnalytics(tmp25);
+  const state = underlyingError.getState();
+  ({ resolution: getLatestInboundBitrateEstimate, fps: getCurrentScreenshareCaptureMethod } = state);
+  let obj = _require(errorInfo[12]);
+  const runningGameAnalytics = _require(errorInfo[14]).getRunningGameAnalytics(tmp25);
   ({ gameName: closure_22, gameId: closure_23, exe: closure_24, distributor: closure_25 } = runningGameAnalytics);
   const isErrorOutbound = errorInfo.isErrorOutbound;
   if (fn == mediaContext) {
@@ -290,6 +287,7 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
   if (fn != mediaEngineConnectionId) {
     tmp32 = mediaEngineConnectionId;
   }
+  let closure_30 = tmp32;
   if (fn != streamKey) {
     if (fn != decodeStreamKeyResult) {
       let getOutboundStats = fn == rTCConnection1;
@@ -318,13 +316,13 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     if (fn == outboundStats) {
       outboundStats = [];
     }
-    const maxByResult = importDefault(dependencyMap[15]).maxBy(outboundStats, (num_frames) => num_frames.num_frames);
+    const maxByResult = importDefault(errorInfo[15]).maxBy(outboundStats, (num_frames) => num_frames.num_frames);
     let tmp38 = null;
     if (fn != maxByResult) {
       tmp38 = maxByResult;
     }
     let tmp33 = tmp38;
-    const obj4 = importDefault(dependencyMap[15]);
+    let obj4 = importDefault(errorInfo[15]);
   } else {
     tmp33 = null;
     if (fn != userId) {
@@ -335,10 +333,10 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
       tmp33 = inboundStats1;
     }
   }
-  const importDefault = tmp33;
-  const obj3 = context(dependencyMap[14]);
-  getSystemAnalyticsInfo().then((cpu_brand) => {
-    const obj = { error_name: cpu_brand.valueOf(), error_code: errorInfo.errorCode, error_severity: errorInfo.severity, error_category: errorInfo.category };
+  importDefault = tmp33;
+  const obj3 = _require(errorInfo[14]);
+  mediaContext().then((cpu_brand) => {
+    const obj = { error_name: error.valueOf(), error_code: errorInfo.errorCode, error_severity: errorInfo.severity, error_category: errorInfo.category };
     cpu_brand = null;
     if (null != underlyingError) {
       cpu_brand = underlyingError;
@@ -350,8 +348,8 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     }
     obj.error_message = tmp2;
     let guild_id;
-    if (null != closure_4) {
-      guild_id = closure_4.guild_id;
+    if (null != _isNativeReflectConstruct) {
+      guild_id = _isNativeReflectConstruct.guild_id;
     }
     let tmp5 = null;
     if (null != guild_id) {
@@ -359,13 +357,13 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     }
     obj.guild_id = tmp5;
     let tmp6 = null;
-    if (null != tmp4) {
-      tmp6 = tmp4;
+    if (null != _slicedToArray) {
+      tmp6 = _slicedToArray;
     }
     obj.channel_id = tmp6;
     let type;
-    if (null != closure_4) {
-      type = closure_4.type;
+    if (null != _isNativeReflectConstruct) {
+      type = _isNativeReflectConstruct.type;
     }
     let tmp9 = null;
     if (null != type) {
@@ -378,7 +376,7 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     }
     obj.rtc_connection_id = tmp10;
     if (null == mediaSessionId) {
-      const mediaSessionId = rtcConnectionId.getMediaSessionId();
+      mediaSessionId = rtcConnectionId.getMediaSessionId();
     }
     let tmp13 = null;
     if (null != mediaSessionId) {
@@ -399,7 +397,7 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
       tmp17 = mediaContext;
     }
     obj.context = tmp17;
-    const rTCConnection = rtcConnectionId.getRTCConnection();
+    rTCConnection = rtcConnectionId.getRTCConnection();
     let voiceVersion;
     if (null != rTCConnection) {
       voiceVersion = rTCConnection.getVoiceVersion();
@@ -472,7 +470,7 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
       num3 = num_bytes;
     }
     obj.num_bytes = num3;
-    const tmp33 = rTCConnection(isErrorOutbound, tmp32, userId);
+    tmp33 = rTCConnection(isErrorOutbound, closure_30, userId);
     let packetsLost;
     if (null != tmp33) {
       packetsLost = tmp33.packetsLost;
@@ -485,13 +483,13 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     if (null != videoCodec) {
       let parseCodecTypeResult = videoCodec;
     } else {
-      const tmp41 = rTCConnection(isErrorOutbound, tmp32, userId);
+      const tmp41 = rTCConnection(isErrorOutbound, closure_30, userId);
       let name;
       if (null != tmp41) {
         name = tmp41.codec.name;
       }
-      parseCodecTypeResult = cpu_brand(errorInfo[16]).parseCodecType(name);
-      const obj4 = cpu_brand(errorInfo[16]);
+      parseCodecTypeResult = error(errorInfo[16]).parseCodecType(name);
+      const obj4 = error(errorInfo[16]);
     }
     let tmp44 = null;
     if (null != parseCodecTypeResult) {
@@ -501,13 +499,13 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     if (null != videoEncoder) {
       let parseEncoderResult = videoEncoder;
     } else {
-      const tmp49 = videoDeviceName(tmp32);
+      const tmp49 = videoDeviceName(closure_30);
       let prop;
       if (null != tmp49) {
         prop = tmp49.encoderImplementationName;
       }
-      parseEncoderResult = cpu_brand(errorInfo[16]).parseEncoder(prop);
-      const obj5 = cpu_brand(errorInfo[16]);
+      parseEncoderResult = error(errorInfo[16]).parseEncoder(prop);
+      const obj5 = error(errorInfo[16]);
     }
     let tmp52 = null;
     if (null != parseEncoderResult) {
@@ -517,13 +515,13 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     if (null != videoDecoder) {
       let parseDecoderResult = videoDecoder;
     } else {
-      const tmp58 = decodeStreamKeyResult(tmp32, userId);
+      const tmp58 = decodeStreamKeyResult(closure_30, userId);
       let prop1;
       if (null != tmp58) {
         prop1 = tmp58.decoderImplementationName;
       }
-      parseDecoderResult = cpu_brand(errorInfo[16]).parseDecoder(prop1);
-      const obj6 = cpu_brand(errorInfo[16]);
+      parseDecoderResult = error(errorInfo[16]).parseDecoder(prop1);
+      const obj6 = error(errorInfo[16]);
     }
     let tmp61 = null;
     if (null != parseDecoderResult) {
@@ -535,9 +533,9 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
       tmp62 = prop;
     }
     obj.audio_capture_sample_rate_mismatch_percent = tmp62;
-    const WindowVisibilityVideoManager = cpu_brand(errorInfo[17]).WindowVisibilityVideoManager;
+    const WindowVisibilityVideoManager = error(errorInfo[17]).WindowVisibilityVideoManager;
     obj.incoming_video_stopped_for_occlusion = !WindowVisibilityVideoManager.isIncomingVideoEnabled();
-    const tmp63 = rTCConnection(isErrorOutbound, tmp32, userId);
+    const tmp63 = rTCConnection(isErrorOutbound, closure_30, userId);
     let bitrate;
     if (null != tmp63) {
       bitrate = tmp63.bitrate;
@@ -549,7 +547,7 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     obj.bitrate = tmp65;
     let tmp66 = null;
     if (isErrorOutbound) {
-      const tmp69 = videoDeviceName(tmp32);
+      const tmp69 = videoDeviceName(closure_30);
       let bitrateTarget;
       if (null != tmp69) {
         bitrateTarget = tmp69.bitrateTarget;
@@ -591,7 +589,7 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     if (mediaContext === audioInputDeviceName.STREAM) {
       tmp82 = null;
       if (isErrorOutbound) {
-        tmp82 = callback2;
+        tmp82 = closure_21;
       }
     }
     obj.target_fps = tmp82;
@@ -643,21 +641,21 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     let tmp97 = null;
     if (isErrorOutbound) {
       tmp97 = null;
-      if (null != callback) {
-        tmp97 = callback;
+      if (null != closure_20) {
+        tmp97 = closure_20;
       }
     }
     obj.video_input_resolution_height = tmp97;
     let tmp99 = null;
     if (isErrorOutbound) {
-      cpu_brand = callback2;
+      cpu_brand = closure_21;
       tmp99 = null;
-      if (null != callback2) {
-        tmp99 = callback2;
+      if (null != closure_21) {
+        tmp99 = closure_21;
       }
     }
     obj.video_input_frame_rate = tmp99;
-    obj.screenshare_capture_method = callback2(tmp32);
+    obj.screenshare_capture_method = outer1_21(closure_30);
     cpu_brand = null;
     if (null != closure_22) {
       cpu_brand = closure_22;
@@ -751,15 +749,15 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     cpu_brand = tmp33(errorInfo[18]).getCurrentMemoryUsageKB();
     cpu_brand = null;
     obj.memory_usage = cpu_brand;
-    obj.outbound_bitrate_estimate = rTCConnection1(tmp32);
-    obj.inbound_bitrate_estimate = callback(tmp32);
+    obj.outbound_bitrate_estimate = rTCConnection1(closure_30);
+    obj.inbound_bitrate_estimate = outer1_20(closure_30);
     obj.hardware_enabled = mediaSessionId.getHardwareEncoding();
     if (null != audioInputDeviceName) {
       name = audioInputDeviceName;
     } else {
       cpu_brand = mediaSessionId;
       cpu_brand = mediaSessionId.getInputDevices();
-      cpu_brand = cpu_brand[closure_8.getInputDeviceId(closure_8)];
+      cpu_brand = cpu_brand[mediaSessionId.getInputDeviceId(mediaSessionId)];
       if (null != cpu_brand) {
         name = cpu_brand.name;
       }
@@ -770,7 +768,7 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     } else {
       cpu_brand = mediaSessionId;
       cpu_brand = mediaSessionId.getOutputDevices();
-      cpu_brand = cpu_brand[closure_8.getOutputDeviceId(closure_8)];
+      cpu_brand = cpu_brand[mediaSessionId.getOutputDeviceId(mediaSessionId)];
       if (null != cpu_brand) {
         name2 = cpu_brand.name;
       }
@@ -781,7 +779,7 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     } else {
       cpu_brand = mediaSessionId;
       cpu_brand = mediaSessionId.getVideoDevices();
-      cpu_brand = cpu_brand[closure_8.getVideoDeviceId(closure_8)];
+      cpu_brand = cpu_brand[mediaSessionId.getVideoDeviceId(mediaSessionId)];
       if (null != cpu_brand) {
         name3 = cpu_brand.name;
       }

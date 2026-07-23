@@ -1,24 +1,24 @@
-// Module ID: 14691
-// Function ID: 110784
+// Module ID: 14806
+// Function ID: 112948
 // Name: useDrawerOpen
-// Dependencies: []
+// Dependencies: [57, 31, 1457, 3981, 2]
 // Exports: useDrawerOpen
 
-// Module 14691 (useDrawerOpen)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");
+// Module 14806 (useDrawerOpen)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+const result = require("Link").fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");
 
 export const useDrawerOpen = function useDrawerOpen(enableHome) {
   let flag = enableHome;
   if (enableHome === undefined) {
     flag = true;
   }
-  const arg1 = flag;
-  let dependencyMap;
+  let navigation;
   let callback;
-  const navigation = arg1(dependencyMap[2]).useNavigation();
-  dependencyMap = navigation;
+  navigation = flag(navigation[2]).useNavigation();
   const tmp2 = callback(React.useState(() => {
     if (flag) {
       const state = navigation.getState();
@@ -70,23 +70,22 @@ export const useDrawerOpen = function useDrawerOpen(enableHome) {
           tmp = routes[num];
         }
       }
-      const coerceGuildsRouteResult = handleStateChange(closure_1[3]).coerceGuildsRoute(tmp);
+      const coerceGuildsRouteResult = flag(navigation[3]).coerceGuildsRoute(tmp);
       if (null != coerceGuildsRouteResult) {
         const params = coerceGuildsRouteResult.params;
         let drawerOpen;
         if (null != params) {
           drawerOpen = params.drawerOpen;
         }
-        callback(true === drawerOpen);
+        outer1_2(true === drawerOpen);
       }
     }
-    if (flag) {
+    if (handleStateChange) {
       navigation.addListener("state", handleStateChange);
       return () => {
-        closure_1.removeListener("state", handleStateChange);
+        outer1_1.removeListener("state", handleStateChange);
       };
     }
-    const flag = handleStateChange;
   }, items);
   return tmp2[0];
 };

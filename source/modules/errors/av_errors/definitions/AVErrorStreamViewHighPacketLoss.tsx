@@ -1,39 +1,41 @@
-// Module ID: 16415
-// Function ID: 126792
+// Module ID: 16532
+// Function ID: 128966
 // Name: AVErrorStreamViewHighPacketLossDefinition
-// Dependencies: []
+// Dependencies: [4149, 1194, 4216, 16531, 4194, 8857, 16528, 2]
 
-// Module 16415 (AVErrorStreamViewHighPacketLossDefinition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamViewHighPacketLoss.tsx");
+// Module 16532 (AVErrorStreamViewHighPacketLossDefinition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamViewHighPacketLoss.tsx");
 
 export const AVErrorStreamViewHighPacketLossDefinition = {
   getActiveErrors() {
     let reduced = null;
     if (obj.getReportInboundErrors()) {
-      const allActiveStreams = allActiveStreams.getAllActiveStreams();
+      allActiveStreams = allActiveStreams.getAllActiveStreams();
       reduced = allActiveStreams.reduce((arr, ownerId) => {
-        let obj = callback(closure_1[4]);
-        const rTCConnection = rTCConnection.getRTCConnection(obj.encodeStreamKey(ownerId));
+        let obj = outer1_0(outer1_1[4]);
+        const rTCConnection = outer1_4.getRTCConnection(obj.encodeStreamKey(ownerId));
         let mediaEngineConnectionId;
         if (null != rTCConnection) {
           mediaEngineConnectionId = rTCConnection.getMediaEngineConnectionId();
         }
         if (null == mediaEngineConnectionId) {
           return arr;
-        } else if (ownerId.ownerId === id.getId()) {
+        } else if (ownerId.ownerId === outer1_3.getId()) {
           return arr;
         } else {
-          const accumulatedStatsWithMinDatapoints = callback(closure_1[3]).getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, ownerId.ownerId);
+          const accumulatedStatsWithMinDatapoints = outer1_0(outer1_1[3]).getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, ownerId.ownerId);
           if (null != accumulatedStatsWithMinDatapoints) {
             if (100 * accumulatedStatsWithMinDatapoints.short.packetLossRate > 10) {
-              obj = { type: callback(closure_1[5]).AVError.STREAM_VIEW_HIGH_PACKET_LOSS };
-              const obj4 = callback(closure_1[6]);
-              const merged = Object.assign(obj4.getStreamErrorContext(callback(closure_1[4]).encodeStreamKey(ownerId)));
+              obj = { type: outer1_0(outer1_1[5]).AVError.STREAM_VIEW_HIGH_PACKET_LOSS };
+              const obj4 = outer1_0(outer1_1[6]);
+              const merged = Object.assign(obj4.getStreamErrorContext(outer1_0(outer1_1[4]).encodeStreamKey(ownerId)));
               arr.push(obj);
-              const obj5 = callback(closure_1[4]);
+              const obj5 = outer1_0(outer1_1[4]);
             }
           }
           return arr;

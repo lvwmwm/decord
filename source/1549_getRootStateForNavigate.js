@@ -1,11 +1,13 @@
 // Module ID: 1549
-// Function ID: 17576
+// Function ID: 17577
 // Name: getRootStateForNavigate
-// Dependencies: []
+// Dependencies: [31, 1459, 1534]
 // Exports: default
 
 // Module 1549 (getRootStateForNavigate)
-let closure_3 = importAll(dependencyMap[0]);
+import result from "result";
+
+const require = arg1;
 function getRootStateForNavigate(parent, state) {
   parent = parent.getParent();
   if (parent) {
@@ -22,11 +24,9 @@ function getRootStateForNavigate(parent, state) {
 }
 
 export default function useLinkBuilder() {
-  const context = React.useContext(arg1(dependencyMap[1]).NavigationHelpersContext);
-  const arg1 = context;
-  const context1 = React.useContext(importDefault(dependencyMap[2]));
-  const importDefault = context1;
-  const items = [context1, context];
+  context = React.useContext(context(1459).NavigationHelpersContext);
+  context1 = React.useContext(context1(1534));
+  let items = [context1, context];
   return React.useCallback((name, params) => {
     const options = context1.options;
     let enabled;
@@ -40,7 +40,7 @@ export default function useLinkBuilder() {
         obj = { name, params };
         const items = [obj];
         obj.routes = items;
-        let tmp3 = callback(context, obj);
+        let tmp3 = outer1_4(context, obj);
       } else {
         obj.index = 0;
         obj = { name, params };
@@ -62,8 +62,8 @@ export default function useLinkBuilder() {
       if (null != options) {
         config1 = options.config;
       }
-      pathFromState = context(closure_2[1]).getPathFromState(tmp3, config1);
-      const obj4 = context(closure_2[1]);
+      pathFromState = context(outer1_2[1]).getPathFromState(tmp3, config1);
+      const obj4 = context(outer1_2[1]);
     }
   }, items);
 };

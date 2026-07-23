@@ -1,22 +1,23 @@
-// Module ID: 10785
-// Function ID: 83766
-// Dependencies: [31, 482, 33, 3840, 2, 1273]
+// Module ID: 10795
+// Function ID: 83815
+// Dependencies: [31, 27, 33, 1450, 10796, 2]
 
-// Module 10785
-import { View } from "sum";
-import { jsx } from "module_33";
-import importAllResult from "module_31";
-import Button from "Button";
+// Module 10795
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
 
-const result = Button.fileFinishedImporting("modules/stage_channels/native/components/BlankAudienceTile.tsx");
-
-export default require("module_31").memo(() => {
-  let obj = arg1(dependencyMap[4]);
+const require = arg1;
+const memoResult = require("result").memo(() => {
+  let obj = require(10796) /* RaisedHandIcon */;
   const audienceTileStyles = obj.useAudienceTileStyles();
   obj = {};
   const items = [audienceTileStyles.container, ];
-  obj = { width: arg1(dependencyMap[4]).getTileWidthStyle(importDefault(dependencyMap[3])().width) };
+  obj = { width: require(10796) /* RaisedHandIcon */.getTileWidthStyle(importDefault(1450)().width) };
   items[1] = obj;
   obj.style = items;
-  return <View {...obj} />;
+  return <View width={require(10796) /* RaisedHandIcon */.getTileWidthStyle(importDefault(1450)().width)} />;
 });
+const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/BlankAudienceTile.tsx");
+
+export default memoResult;

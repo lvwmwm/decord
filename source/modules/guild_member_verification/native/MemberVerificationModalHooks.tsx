@@ -1,52 +1,53 @@
-// Module ID: 9142
-// Function ID: 71676
+// Module ID: 9149
+// Function ID: 71717
 // Name: useUserVerificationState
-// Dependencies: []
+// Dependencies: [31, 1849, 9150, 566, 3950, 2]
 // Exports: useSetInitialVerificationEffect
 
-// Module 9142 (useUserVerificationState)
+// Module 9149 (useUserVerificationState)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { setInitialVerification } from "_isNativeReflectConstruct";
+
+const require = arg1;
 function useUserVerificationState() {
-  const items = [closure_3];
-  return arg1(dependencyMap[3]).useStateFromStoresObject(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStoresObject(items, () => {
+    const currentUser = outer1_3.getCurrentUser();
     const obj = {};
     let verified;
     if (null != currentUser) {
       verified = currentUser.verified;
     }
-    obj[callback(closure_1[4]).UserVerificationFieldPlatforms.EMAIL] = null != verified && verified;
+    obj[outer1_0(outer1_1[4]).UserVerificationFieldPlatforms.EMAIL] = null != verified && verified;
     let isPhoneVerifiedResult;
     if (null != currentUser) {
       isPhoneVerifiedResult = currentUser.isPhoneVerified();
     }
-    obj[callback(closure_1[4]).UserVerificationFieldPlatforms.PHONE] = null != isPhoneVerifiedResult && isPhoneVerifiedResult;
+    obj[outer1_0(outer1_1[4]).UserVerificationFieldPlatforms.PHONE] = null != isPhoneVerifiedResult && isPhoneVerifiedResult;
     return obj;
   });
 }
 function useInitialVerification(id) {
-  const arg1 = id;
+  const _require = id;
   const items = [closure_4];
   const items1 = [id];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => initialVerificationState.getInitialVerificationState(arg0), items1);
+  return _require(566).useStateFromStores(items, () => outer1_4.getInitialVerificationState(closure_0), items1);
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const setInitialVerification = arg1(dependencyMap[2]).setInitialVerification;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");
 
 export const useSetInitialVerificationEffect = function useSetInitialVerificationEffect(guildId) {
-  const arg1 = guildId;
+  let closure_0 = guildId;
   const obj = { initial: useInitialVerification(guildId), current: useUserVerificationState() };
-  const dependencyMap = obj;
-  const React = React.useRef(obj);
+  React = React.useRef(obj);
   const effect = React.useEffect(() => {
-    closure_2.current = obj;
+    result.current = obj;
   });
   const items = [guildId];
   const effect1 = React.useEffect(() => {
     if (null == ref.current.initial) {
-      callback(arg0, tmp);
+      outer1_5(closure_0, tmp);
     }
   }, items);
   return obj.initial;

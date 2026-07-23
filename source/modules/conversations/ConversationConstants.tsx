@@ -1,13 +1,12 @@
-// Module ID: 6828
-// Function ID: 53951
+// Module ID: 6833
+// Function ID: 53983
 // Name: CONVERSATION_COLORS
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6828 (CONVERSATION_COLORS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/conversations/ConversationConstants.tsx");
+// Module 6833 (CONVERSATION_COLORS)
+const result = require("set").fileFinishedImporting("modules/conversations/ConversationConstants.tsx");
 
-export const CONVERSATION_COLORS = [];
+export const CONVERSATION_COLORS = ["rgba(237, 66, 69, 0.12)", "rgba(230, 126, 34, 0.12)", "rgba(254, 231, 92, 0.12)", "rgba(87, 242, 135, 0.12)", "rgba(52, 152, 219, 0.12)", "rgba(88, 101, 242, 0.12)", "rgba(155, 89, 182, 0.12)"];
 export const FETCH_LIMIT = 25;
 export const MOBILE_FETCH_LIMIT = 10;
 export const MIN_CONVERSATION_FETCH_BUFFER = 10;

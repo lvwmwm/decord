@@ -1,10 +1,10 @@
-// Module ID: 3987
-// Function ID: 33091
+// Module ID: 3989
+// Function ID: 33096
 // Name: getHighestActiveScreenIndex
-// Dependencies: []
+// Dependencies: [3990, 1820, 3996, 1555, 1454, 3997, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef
 
-// Module 3987 (getHighestActiveScreenIndex)
+// Module 3989 (getHighestActiveScreenIndex)
 function getHighestActiveScreenIndex(map1) {
   let obj = map1;
   if (map1 === undefined) {
@@ -22,8 +22,8 @@ function getHighestActiveScreenIndex(map1) {
       const found = Array.from(obj.keys()).filter((arg0) => {
         let tmp = "number" === typeof arg0;
         if (tmp) {
-          tmp = !callback(closure_1[0]).isScreenIndexFrozen(arg0);
-          const obj = callback(closure_1[0]);
+          tmp = !outer1_0(outer1_1[0]).isScreenIndexFrozen(arg0);
+          const obj = outer1_0(outer1_1[0]);
         }
         return tmp;
       });
@@ -56,63 +56,61 @@ function getBestActiveInput() {
   }
   return tmp3;
 }
-const map = new Map();
+let map = new Map();
 const map1 = new Map();
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("utils/native/ChatInputUtils.tsx");
+let result = require("getKeyboardContextForType").fileFinishedImporting("utils/native/ChatInputUtils.tsx");
 
 export const createInputRefTracker = function createInputRefTracker(id, screenIndex) {
-  const require = screenIndex;
-  function addRef(closure_1, current, arg2) {
+  let closure_0 = screenIndex;
+  function addRef(c1, current, closure_0) {
     let map = obj.get(current);
     if (null == map) {
       const _Map = Map;
       map = new Map();
     }
-    const result = map.set(arg2, closure_1);
+    const result = map.set(closure_0, c1);
     const result1 = obj.set(current, map);
-    const result2 = addRef.set(arg2, closure_1);
+    const result2 = addRef.set(closure_0, c1);
     if ("development" === process.env.DEVELOPMENT) {
-      const hasItem = addRef.has(arg2);
+      const hasItem = addRef.has(closure_0);
     }
   }
-  function removeRef(arg0, current, arg2) {
+  function removeRef(arg0, current, closure_0) {
     const value = obj.get(current);
     if (null != value) {
-      value.delete(arg2);
+      value.delete(closure_0);
       if (0 === value.size) {
         obj.delete(current);
       }
-      addRef.delete(arg2);
+      addRef.delete(closure_0);
     }
   }
-  let closure_1 = null;
+  let c1 = null;
   let obj = { current: id };
   obj = {
     handleRef(current, current2) {
       obj.current = current2;
       if (null == current) {
-        if (null != closure_1) {
-          removeRef(undefined, current2, current2);
-          closure_1 = null;
+        if (null != obj) {
+          removeRef(undefined, current2, closure_0);
+          obj = null;
         }
-      } else if (null == closure_1) {
-        const obj = { current };
-        closure_1 = obj;
-        addRef(obj, current2, current2);
+      } else if (null == obj) {
+        obj = { current };
+        addRef(obj, current2, closure_0);
       } else {
-        closure_1.current = current;
+        obj.current = current;
       }
     },
     register() {
-      if (null != closure_1) {
-        removeRef(undefined, obj.current, arg1);
-        addRef(closure_1, obj.current, arg1);
+      if (null != c1) {
+        removeRef(undefined, obj.current, closure_0);
+        addRef(c1, obj.current, closure_0);
       }
     },
     unregister() {
-      if (null != closure_1) {
-        removeRef(undefined, obj.current, arg1);
+      if (null != c1) {
+        removeRef(undefined, obj.current, closure_0);
       }
     }
   };
@@ -155,18 +153,18 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
 };
 export { getBestActiveInput };
 export const dismissKeyboard = function dismissKeyboard() {
-  let obj = require(dependencyMap[1]);
+  let obj = require(1820) /* dismissGlobalKeyboard */;
   const result = obj.dismissGlobalKeyboard();
   const obj2 = getBestActiveInput();
   if (null != obj2) {
     obj2.closeCustomKeyboard();
   }
-  const keyboardType = require(dependencyMap[2]).getKeyboardType();
-  if (keyboardType !== require(dependencyMap[3]).KeyboardTypes.SYSTEM) {
-    obj = { type: require(dependencyMap[3]).KeyboardTypes.SYSTEM };
-    require(dependencyMap[4]).setKeyboardType(obj);
-    const obj4 = require(dependencyMap[4]);
+  const keyboardType = require(3996) /* getKeyboardContextForType */.getKeyboardType();
+  if (keyboardType !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
+    obj = { type: require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM };
+    require(1454) /* _createForOfIteratorHelperLoose */.setKeyboardType(obj);
+    const obj4 = require(1454) /* _createForOfIteratorHelperLoose */;
   }
-  const obj3 = require(dependencyMap[2]);
-  const result1 = require(dependencyMap[5]).closePortalKeyboardRequest();
+  const obj3 = require(3996) /* getKeyboardContextForType */;
+  const result1 = require(3997) /* closePortalKeyboard */.closePortalKeyboardRequest();
 };

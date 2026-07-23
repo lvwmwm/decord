@@ -1,11 +1,10 @@
-// Module ID: 5185
-// Function ID: 45042
+// Module ID: 5188
+// Function ID: 45061
 // Name: ACTION_SHEET_START_HEIGHT_RATIO
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5185 (ACTION_SHEET_START_HEIGHT_RATIO)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/action_sheet/native/ActionSheetConstants.tsx");
+// Module 5188 (ACTION_SHEET_START_HEIGHT_RATIO)
+const result = require("set").fileFinishedImporting("modules/action_sheet/native/ActionSheetConstants.tsx");
 
 export const ACTION_SHEET_START_HEIGHT_RATIO = 0.6;
 export const ACTION_SHEET_MAX_DYNAMIC_CONTENT_SIZE_RATIO = 0.85;
@@ -14,7 +13,7 @@ export const ACTION_SHEET_BORDER_RADIUS_REDESIGN = 24;
 export const ACTION_SHEET_INNER_BORDER_RADIUS_LEGACY = 6;
 export const ACTION_SHEET_INNER_BORDER_RADIUS_REDESIGN = 22;
 export const ACTION_SHEET_MAX_WIDTH = 500;
-export const ACTION_SHEET_SPRING_CONFIG = {};
+export const ACTION_SHEET_SPRING_CONFIG = { damping: 17, stiffness: 240, mass: 0.5, restDisplacementThreshold: 0.4 };
 export const ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION = { duration: 250 };
 export const ACTION_SHEET_BORDER_RADIUS = 24;
 export const ACTION_SHEET_INNER_BORDER_RADIUS = 22;

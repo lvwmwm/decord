@@ -1,14 +1,18 @@
-// Module ID: 11545
-// Function ID: 89901
+// Module ID: 11555
+// Function ID: 89950
 // Name: BoostGem
-// Dependencies: []
+// Dependencies: [31, 33, 8018, 2]
 // Exports: default
 
-// Module 11545 (BoostGem)
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/powerups/native/images/BoostGem.tsx");
+// Module 11555 (BoostGem)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+const result = require("inlineStyles").fileFinishedImporting("modules/premium/powerups/native/images/BoostGem.tsx");
 
 export default function BoostGem(width) {
   let num = width.width;
@@ -20,7 +24,7 @@ export default function BoostGem(width) {
     num2 = 66;
   }
   const obj = { width: num, height: num2, viewBox: "0 0 39 66", fill: "none", style: width.style };
-  const items = [callback(arg1(dependencyMap[2]).Path, {}), callback(arg1(dependencyMap[2]).Path, {}), callback(arg1(dependencyMap[2]).Path, { "Bool(true)": "Array", "Bool(true)": "isArray" }), callback(arg1(dependencyMap[2]).Path, { "Bool(true)": false, "Bool(true)": false }), callback(arg1(dependencyMap[2]).Path, { "Bool(true)": 1627390535, "Bool(true)": 306254327 }), callback(arg1(dependencyMap[2]).Path, { "Bool(true)": true, "Bool(true)": true })];
+  const items = [callback(require(8018) /* inlineStyles */.Path, { d: "M19.3146 0L0 19.4029V46.6865L19.3146 65.9999L38.6293 46.5969V19.388L19.3146 0ZM28.972 42.6566L19.3146 52.3432L9.65732 42.6566V23.388L19.3146 13.6865L28.972 23.388V42.6566Z", fill: "#FA6EF6" }), callback(require(8018) /* inlineStyles */.Path, { d: "M19.3145 0V13.6316L28.9718 23.2941L38.6291 19.3102L19.3145 0Z", fill: "#FFADFB" }), callback(require(8018) /* inlineStyles */.Path, { d: "M9.65732 42.7056L0 46.7269L19.3146 65.9996V52.3419L9.65732 42.7056Z", fill: "#E655D4" }), callback(require(8018) /* inlineStyles */.Path, { d: "M9.65723 23.3317V42.6835L19.3145 52.4118L28.9719 42.6835V23.3317L19.3145 13.5884L9.65723 23.3317Z", fill: "#FFCFF9" }), callback(require(8018) /* inlineStyles */.Path, { d: "M28.9719 23.1273L9.74637 42.7058H9.65723V37.3827L26.3273 20.3823L28.9719 23.1273Z", fill: "white" }), callback(require(8018) /* inlineStyles */.Path, { d: "M28.9717 31.0586V36.3917L16.1689 49.4997L13.52 46.6984L28.9717 31.0586Z", fill: "white" })];
   obj.children = items;
-  return callback2(importDefault(dependencyMap[2]), obj);
+  return callback2(importDefault(8018), obj);
 };

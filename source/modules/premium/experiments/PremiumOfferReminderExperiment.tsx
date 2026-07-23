@@ -1,15 +1,15 @@
-// Module ID: 7108
-// Function ID: 57148
+// Module ID: 7113
+// Function ID: 57182
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isPremiumOfferReminderExperimentEnabled
 
-// Module 7108 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: true, DateToSystemTimezoneSetter: true, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/premium/experiments/PremiumOfferReminderExperiment.tsx");
+// Module 7113 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-02-premium-offer-reminder-xp", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/premium/experiments/PremiumOfferReminderExperiment.tsx");
 
 export const PremiumOfferReminderExperiment = apexExperiment;
 export const isPremiumOfferReminderExperimentEnabled = function isPremiumOfferReminderExperimentEnabled(location) {

@@ -1,15 +1,17 @@
-// Module ID: 4962
-// Function ID: 42655
+// Module ID: 4965
+// Function ID: 42673
 // Name: ButtonGroup
-// Dependencies: [771751943, 2885681159, 3774873604, 956301328, 1761607687]
+// Dependencies: [31, 33, 4130, 4541, 2]
 // Exports: ButtonGroup
 
-// Module 4962 (ButtonGroup)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = arg1(dependencyMap[2]).createStyles({ container: { paddingVertical: 16 } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/ButtonGroup/native/ButtonGroup.native.tsx");
+// Module 4965 (ButtonGroup)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_3 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingVertical: 16 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/ButtonGroup/native/ButtonGroup.native.tsx");
 
 export const ButtonGroup = function ButtonGroup(size) {
   let children;
@@ -18,7 +20,7 @@ export const ButtonGroup = function ButtonGroup(size) {
   if (str === undefined) {
     str = "md";
   }
-  let obj = { "Bool(true)": "spring", "Bool(true)": 0.4, "Bool(true)": 1 };
+  let obj = { size: 0, children: 0, style: 0 };
   ({ children, style } = size);
   Object.setPrototypeOf(null);
   const merged = Object.assign(size, obj);
@@ -32,5 +34,5 @@ export const ButtonGroup = function ButtonGroup(size) {
   const items = [callback().container, style];
   obj["style"] = items;
   obj["children"] = children;
-  return jsx(arg1(dependencyMap[3]).Stack, obj);
+  return jsx(require(4541) /* Stack */.Stack, {});
 };

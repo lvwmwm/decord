@@ -1,55 +1,59 @@
-// Module ID: 10269
-// Function ID: 79362
+// Module ID: 10282
+// Function ID: 79435
 // Name: getMuteSettingLabel
-// Dependencies: []
+// Dependencies: [3760, 1348, 1838, 3767, 4325, 1849, 653, 662, 1212, 4320, 7007, 5079, 5073, 10283, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 10269 (getMuteSettingLabel)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-({ ChannelTypes: closure_10, UserNotificationSettings: closure_11 } = arg1(dependencyMap[6]));
-const MuteUntilSeconds = arg1(dependencyMap[7]).MuteUntilSeconds;
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsUtils.tsx");
+// Module 10282 (getMuteSettingLabel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { MuteUntilSeconds } from "MAX_FAVORITES";
+
+let closure_10;
+let closure_11;
+const require = arg1;
+({ ChannelTypes: closure_10, UserNotificationSettings: closure_11 } = ME);
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MuteSettingsUtils.tsx");
 
 export const getMuteSettingLabel = function getMuteSettingLabel(channel, guild) {
   if (null != channel) {
     if (channel.isPrivate()) {
-      const intl5 = guild(dependencyMap[8]).intl;
-      let stringResult = intl5.string(guild(dependencyMap[8]).t.Z/uD9+);
+      const intl5 = require(1212) /* getSystemLocale */.intl;
+      let stringResult = intl5.string(require(1212) /* getSystemLocale */.t["Z/uD9+"]);
     } else if (channel.type === constants.GUILD_CATEGORY) {
-      const intl4 = guild(dependencyMap[8]).intl;
-      stringResult = intl4.string(guild(dependencyMap[8]).t.Z33kYz);
+      const intl4 = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl4.string(require(1212) /* getSystemLocale */.t.Z33kYz);
     } else if (channel.isForumPost()) {
-      const intl3 = guild(dependencyMap[8]).intl;
-      stringResult = intl3.string(guild(dependencyMap[8]).t.lbN8mz);
+      const intl3 = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl3.string(require(1212) /* getSystemLocale */.t.lbN8mz);
     } else {
-      const intl2 = guild(dependencyMap[8]).intl;
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       const string = intl2.string;
-      const t = guild(dependencyMap[8]).t;
+      const t = require(1212) /* getSystemLocale */.t;
       if (isThreadResult) {
-        stringResult = string(t.wR+Fuo);
+        stringResult = string(t["wR+Fuo"]);
       } else {
         stringResult = string(t.OsNx14);
       }
-      const isThreadResult = channel.isThread();
+      isThreadResult = channel.isThread();
     }
   } else {
     let stringResult1;
     if (null != guild) {
-      const intl = guild(dependencyMap[8]).intl;
-      stringResult1 = intl.string(guild(dependencyMap[8]).t.mvxGko);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      stringResult1 = intl.string(require(1212) /* getSystemLocale */.t.mvxGko);
     }
     return stringResult1;
   }
 };
 export const getMuteSettingSublabel = function getMuteSettingSublabel(channel, guild) {
   if (null != channel) {
-    const obj = guild(dependencyMap[9]);
+    const obj = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
     let name = obj.computeChannelName(channel, closure_9, closure_7, true);
   } else if (null != guild) {
     name = guild.name;
@@ -60,12 +64,12 @@ export const handleUnmutePress = function handleUnmutePress(channelId, guildId) 
   const channel = store.getChannel(channelId);
   if (null != channel) {
     if (channel.isThread()) {
-      let tmp6Result = tmp6(tmp7[10]);
+      let tmp6Result = tmp6(7007);
       const obj = { muted: false };
       const result = tmp6Result.setNotificationSettings(channel, obj);
     } else {
-      tmp6Result = tmp6(tmp7[11]);
-      const result1 = tmp6Result.updateChannelOverrideSettings(guildId, channel.id, { <string:173114209>: "L", <string:1364287903>: "L" }, guildId(tmp7[12]).NotificationLabels.Unmuted);
+      tmp6Result = tmp6(5079);
+      const result1 = tmp6Result.updateChannelOverrideSettings(guildId, channel.id, { muted: false, mute_config: null }, require(5073) /* differ */.NotificationLabels.Unmuted);
     }
   }
 };
@@ -76,22 +80,22 @@ export const handleMuteSettingPress = function handleMuteSettingPress(arg0) {
   let onOptionPress;
   ({ guildId, onOptionPress } = arg0);
   ({ channelId, muteDurationSeconds } = arg0);
-  const muteSettings = importAll(dependencyMap[13]).getMuteSettings(muteDurationSeconds);
+  const muteSettings = importAll(10283).getMuteSettings(muteDurationSeconds);
   const channel = store.getChannel(channelId);
-  const guild = guild.getGuild(guildId);
+  guild = guild.getGuild(guildId);
   if (null != onOptionPress) {
     onOptionPress(muteSettings);
   } else if (null != channel) {
     if (channel.isThread()) {
-      let tmp3Result = tmp3(tmp4[10]);
+      let tmp3Result = tmp3(7007);
       const result = tmp3Result.setNotificationSettings(channel, muteSettings);
     } else {
-      tmp3Result = tmp3(tmp4[11]);
-      const result1 = tmp3Result.updateChannelOverrideSettings(guildId, channel.id, muteSettings, arg1(tmp4[12]).NotificationLabels.Muted);
+      tmp3Result = tmp3(5079);
+      const result1 = tmp3Result.updateChannelOverrideSettings(guildId, channel.id, muteSettings, require(5073) /* differ */.NotificationLabels.Muted);
     }
   } else if (null != guild) {
-    const result2 = importDefault(dependencyMap[11]).updateGuildNotificationSettings(guild.id, muteSettings, arg1(dependencyMap[12]).NotificationLabels.Muted);
-    const obj5 = importDefault(dependencyMap[11]);
+    const result2 = importDefault(5079).updateGuildNotificationSettings(guild.id, muteSettings, require(5073) /* differ */.NotificationLabels.Muted);
+    const obj5 = importDefault(5079);
   }
 };
 export const getMuteSettings = function getMuteSettings(channelId) {
@@ -102,8 +106,8 @@ export const getMuteSettings = function getMuteSettings(channelId) {
   } else {
     const guildId = getMessageNotifications.getGuildId();
     if (getMessageNotifications.isThread()) {
-      let muteConfig = closure_4.getMuteConfig(getMessageNotifications.id);
-      let isMutedResult = closure_4.isMuted(getMessageNotifications.id);
+      let muteConfig = _isNativeReflectConstruct.getMuteConfig(getMessageNotifications.id);
+      let isMutedResult = _isNativeReflectConstruct.isMuted(getMessageNotifications.id);
     } else {
       const channelMuteConfig = store2.getChannelMuteConfig(guildId, getMessageNotifications.id);
       muteConfig = channelMuteConfig;
@@ -117,47 +121,47 @@ export const getMuteSettings = function getMuteSettings(channelId) {
 };
 export const getMessageNotificationsText = function getMessageNotificationsText(messageNotifications) {
   if (constants2.ALL_MESSAGES === messageNotifications) {
-    const intl3 = arg1(dependencyMap[8]).intl;
-    return intl3.string(arg1(dependencyMap[8]).t.DZi15z);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.DZi15z);
   } else if (constants2.ONLY_MENTIONS === messageNotifications) {
-    const intl2 = arg1(dependencyMap[8]).intl;
-    return intl2.string(arg1(dependencyMap[8]).t.xGICju);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.xGICju);
   } else if (constants2.NO_MESSAGES === messageNotifications) {
-    const intl = arg1(dependencyMap[8]).intl;
-    return intl.string(arg1(dependencyMap[8]).t.CtVGyQ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.CtVGyQ);
   } else {
     return null;
   }
 };
 export const getMuteOptions = function getMuteOptions() {
   let obj = {};
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.label = intl.string(arg1(dependencyMap[8]).t.8ot6gv);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t["8ot6gv"]);
   obj.duration = MuteUntilSeconds.MINUTES_15;
   const items = [obj, , , , , ];
   obj = {};
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj.label = intl2.string(arg1(dependencyMap[8]).t.UMWBZr);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl2.string(require(1212) /* getSystemLocale */.t.UMWBZr);
   obj.duration = MuteUntilSeconds.HOURS_1;
   items[1] = obj;
   obj = {};
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj.label = intl3.string(arg1(dependencyMap[8]).t.QmYWtu);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl3.string(require(1212) /* getSystemLocale */.t.QmYWtu);
   obj.duration = MuteUntilSeconds.HOURS_3;
   items[2] = obj;
   const obj1 = {};
-  const intl4 = arg1(dependencyMap[8]).intl;
-  obj1.label = intl4.string(arg1(dependencyMap[8]).t.EpAXPC);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj1.label = intl4.string(require(1212) /* getSystemLocale */.t.EpAXPC);
   obj1.duration = MuteUntilSeconds.HOURS_8;
   items[3] = obj1;
   const obj2 = {};
-  const intl5 = arg1(dependencyMap[8]).intl;
-  obj2.label = intl5.string(arg1(dependencyMap[8]).t.755t4q);
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj2.label = intl5.string(require(1212) /* getSystemLocale */.t["755t4q"]);
   obj2.duration = MuteUntilSeconds.HOURS_24;
   items[4] = obj2;
   const obj3 = {};
-  const intl6 = arg1(dependencyMap[8]).intl;
-  obj3.label = intl6.string(arg1(dependencyMap[8]).t.r3LawO);
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj3.label = intl6.string(require(1212) /* getSystemLocale */.t.r3LawO);
   obj3.duration = MuteUntilSeconds.ALWAYS;
   items[5] = obj3;
   return items;

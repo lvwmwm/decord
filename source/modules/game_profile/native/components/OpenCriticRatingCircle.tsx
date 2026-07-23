@@ -1,13 +1,13 @@
-// Module ID: 8638
-// Function ID: 68403
+// Module ID: 8645
+// Function ID: 68443
 // Name: OpenCriticRatingCircle
-// Dependencies: [0, 0, 0]
+// Dependencies: [33, 8018, 2]
 // Exports: default
 
-// Module 8638 (OpenCriticRatingCircle)
-import { jsx } from "__exportStarResult1";
+// Module 8645 (OpenCriticRatingCircle)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/game_profile/native/components/OpenCriticRatingCircle.tsx");
+let result = require("set").fileFinishedImporting("modules/game_profile/native/components/OpenCriticRatingCircle.tsx");
 
 export default function OpenCriticRatingCircle(size) {
   size = size.size;
@@ -27,6 +27,6 @@ export default function OpenCriticRatingCircle(size) {
   obj.fill = "none";
   obj.strokeDasharray = result2;
   obj.strokeDashoffset = result2 * diff;
-  obj.children = jsx(require(dependencyMap[1]).Circle, obj);
-  return jsx(importDefault(dependencyMap[1]), obj);
+  obj.children = jsx(require(8018) /* inlineStyles */.Circle, {});
+  return jsx(importDefault(8018), {});
 };

@@ -1,33 +1,37 @@
-// Module ID: 13319
-// Function ID: 101173
-// Dependencies: []
+// Module ID: 13433
+// Function ID: 103329
+// Dependencies: [5, 653, 13403, 13391, 10501, 7371, 10496, 13395, 10486, 2]
 
-// Module 13319
+// Module 13433
+import getApplicationFlags from "getApplicationFlags";
+import ME from "ME";
+import createRPCCommand from "createRPCCommand";
+import createRPCCommand from "createRPCCommand";
+
 let RPCCommands;
-let closure_3 = importDefault(dependencyMap[0]);
-({ RPCCommands, RPCErrors: closure_4, ApplicationFlags: closure_5 } = arg1(dependencyMap[1]));
+let closure_4;
+let closure_5;
+const require = arg1;
+({ RPCCommands, RPCErrors: closure_4, ApplicationFlags: closure_5 } = ME);
 let obj = {};
-const tmp2 = arg1(dependencyMap[1]);
 obj = {
-  scope: arg1(dependencyMap[3]).activityInstanceConnectedParticipantsScope,
+  scope: require("activityInstanceConnectedParticipants").activityInstanceConnectedParticipantsScope,
   handler(socket) {
-    const result = arg1(dependencyMap[4]).validatePostMessageTransport(socket.socket.transport);
-    const obj = arg1(dependencyMap[4]);
-    return arg1(dependencyMap[3]).activityInstanceConnectedParticipants();
+    const result = require(10501) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.socket.transport);
+    const obj = require(10501) /* recurseReplaceContentTree */;
+    return require(13391) /* activityInstanceConnectedParticipants */.activityInstanceConnectedParticipants();
   }
 };
-obj[RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS] = arg1(dependencyMap[2]).createRPCCommand(RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, obj);
-const obj2 = arg1(dependencyMap[2]);
+obj[RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS] = createRPCCommand.createRPCCommand(RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, obj);
 obj = {
-  scope: arg1(dependencyMap[3]).activityInstanceConnectedParticipantsScope,
+  scope: require("activityInstanceConnectedParticipants").activityInstanceConnectedParticipantsScope,
   handler(socket) {
-    const arg1 = socket.socket;
+    socket = socket.socket;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   }
 };
-obj[RPCCommands.REQUEST_PROXY_TICKET_REFRESH] = arg1(dependencyMap[2]).createRPCCommand(RPCCommands.REQUEST_PROXY_TICKET_REFRESH, obj);
-const obj4 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/rpc/server/commands/activities.tsx");
+obj[RPCCommands.REQUEST_PROXY_TICKET_REFRESH] = createRPCCommand.createRPCCommand(RPCCommands.REQUEST_PROXY_TICKET_REFRESH, obj);
+let result = require("createRPCCommand").fileFinishedImporting("modules/rpc/server/commands/activities.tsx");
 
 export default obj;

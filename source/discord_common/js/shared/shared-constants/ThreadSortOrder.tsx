@@ -1,12 +1,15 @@
 // Module ID: 1357
-// Function ID: 16280
+// Function ID: 16281
 // Name: set
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 1357 (set)
-const obj = { ALL: new Set([77601039, 1612144654]) };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThreadSortOrder.tsx");
+import set from "set";
+
+const obj = {};
+let set = new Set([0, 1]);
+obj.ALL = set;
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThreadSortOrder.tsx");
 
 export const ThreadSortOrder = { LATEST_ACTIVITY: 0, [0]: "LATEST_ACTIVITY", CREATION_DATE: 1, [1]: "CREATION_DATE" };
 export const ThreadSortOrderSets = obj;

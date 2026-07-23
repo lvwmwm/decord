@@ -1,8 +1,10 @@
 // Module ID: 400
 // Function ID: 5788
-// Dependencies: []
+// Dependencies: [31, 380, 289]
 
 // Module 400
-importAll(dependencyMap[0]);
+import "result";
+import unstable_createAnimatedComponentWithAllowlist from "unstable_createAnimatedComponentWithAllowlist";
 
-export default importDefault(dependencyMap[1])(importDefault(dependencyMap[2]));
+
+export default unstable_createAnimatedComponentWithAllowlist(require("useTextPressability"));

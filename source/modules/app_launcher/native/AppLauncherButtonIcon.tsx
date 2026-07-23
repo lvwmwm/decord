@@ -1,14 +1,16 @@
-// Module ID: 11340
-// Function ID: 88184
+// Module ID: 11350
+// Function ID: 88234
 // Name: AppLauncherButtonIcon
-// Dependencies: []
+// Dependencies: [31, 27, 33, 3996, 1555, 10197, 9075, 2]
 // Exports: AppLauncherButtonIcon
 
-// Module 11340 (AppLauncherButtonIcon)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/AppLauncherButtonIcon.tsx");
+// Module 11350 (AppLauncherButtonIcon)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/AppLauncherButtonIcon.tsx");
 
 export const AppLauncherButtonIcon = function AppLauncherButtonIcon(style) {
   style = style.style;
@@ -16,7 +18,7 @@ export const AppLauncherButtonIcon = function AppLauncherButtonIcon(style) {
   obj.style = 0;
   const merged = Object.assign(style, obj);
   obj = { style: { overflow: "hidden" } };
-  if (tmp3 === arg1(dependencyMap[4]).KeyboardTypes.APP_LAUNCHER) {
+  if (tmp3 === require(1555) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER) {
     obj = {};
     const merged1 = Object.assign(merged);
     const items = [style, ];
@@ -26,12 +28,12 @@ export const AppLauncherButtonIcon = function AppLauncherButtonIcon(style) {
     obj1.transform = items1;
     items[1] = obj1;
     obj["style"] = items;
-    let tmp12 = jsx(arg1(dependencyMap[5]).PlusLargeIcon, obj);
+    let tmp12 = jsx(require(10197) /* PlusLargeIcon */.PlusLargeIcon, {});
   } else {
     const obj3 = { style };
     const merged2 = Object.assign(merged);
-    tmp12 = jsx(arg1(dependencyMap[6]).AppsIcon, obj3);
+    tmp12 = jsx(require(9075) /* AppsIcon */.AppsIcon, { style });
   }
   obj.children = tmp12;
-  return <View {...obj} />;
+  return <View style={{ overflow: "hidden" }} />;
 };

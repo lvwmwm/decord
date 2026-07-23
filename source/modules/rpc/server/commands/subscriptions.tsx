@@ -1,17 +1,23 @@
-// Module ID: 13312
-// Function ID: 101143
-// Dependencies: [4031, 653, 10489, 13322, 10486, 2, 1348]
+// Module ID: 13426
+// Function ID: 103299
+// Dependencies: [5, 653, 10496, 13427, 675, 13428, 2]
 
-// Module 13312
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
+// Module 13426
+import getInitialSubscriptionPayload from "getInitialSubscriptionPayload";
 import ME from "ME";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
 let RPCCommands;
+let closure_4;
+let closure_5;
+const require = arg1;
 ({ AnalyticEvents: closure_4, RPCCommands, RPCErrors: closure_5 } = ME);
 let obj = {
   handler(arg0) {
-    ({ server: closure_0, socket: closure_1, evt: closure_2, args: RPC_SCOPE_CONFIG } = arg0);
+    let getInitialSubscriptionPayload;
+    let dependencyMap;
+    let importDefault;
+    let require;
+    ({ server: require, socket: importDefault, evt: dependencyMap, args: getInitialSubscriptionPayload } = arg0);
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   }
@@ -22,7 +28,7 @@ obj = {
     let server;
     ({ server, evt } = arg0);
     if (null == server.events[evt]) {
-      let tmp6 = importDefault(dependencyMap[2]);
+      let tmp6 = importDefault(10496);
       let obj = { errorCode: constants.INVALID_EVENT };
       const _HermesInternal = HermesInternal;
       const prototype = tmp6.prototype;
@@ -35,6 +41,6 @@ obj = {
     }
   }
 };
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/rpc/server/commands/subscriptions.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/server/commands/subscriptions.tsx");
 
 export default { [RPCCommands.SUBSCRIBE]: obj, [RPCCommands.UNSUBSCRIBE]: obj };

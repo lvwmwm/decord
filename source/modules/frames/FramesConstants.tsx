@@ -1,10 +1,9 @@
-// Module ID: 10470
-// Function ID: 81087
+// Module ID: 10480
+// Function ID: 81137
 // Name: FrameLayoutModes
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 10470 (FrameLayoutModes)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/frames/FramesConstants.tsx");
+// Module 10480 (FrameLayoutModes)
+const result = require("set").fileFinishedImporting("modules/frames/FramesConstants.tsx");
 
 export const FrameLayoutModes = { FOCUSED: 0, [0]: "FOCUSED", PIP: 1, [1]: "PIP" };

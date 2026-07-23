@@ -1,34 +1,35 @@
-// Module ID: 8969
-// Function ID: 70741
+// Module ID: 8976
+// Function ID: 70782
 // Name: PlayStationLinkPreConnect
-// Dependencies: []
+// Dependencies: [31, 8973, 33, 4130, 1456, 8977, 8947, 1212, 2]
 // Exports: PlayStationLinkPreConnect
 
-// Module 8969 (PlayStationLinkPreConnect)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).PlayStationLinkModalScenes;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = arg1(dependencyMap[3]).createStyles({ image: { "Null": "surrogates", "Null": "isArray" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkPreConnect.tsx");
+// Module 8976 (PlayStationLinkPreConnect)
+import result from "result";
+import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 231, height: 160 } });
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkPreConnect.tsx");
 
 export const PlayStationLinkPreConnect = function PlayStationLinkPreConnect(platformType) {
-  let obj = arg1(dependencyMap[4]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
+  let obj = navigation(1456);
+  navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
   const callback = React.useCallback((arg0) => {
-    navigation.push(constants.DISCORD_CONSENT, arg0);
+    navigation.push(outer1_4.DISCORD_CONSENT, arg0);
   }, items);
   const callback1 = React.useCallback(() => {
-    navigation.push(constants.ERROR, {});
+    navigation.push(outer1_4.ERROR, {});
   }, items1);
-  const memo = React.useMemo(() => ({ uri: callback(closure_2[5]) }), []);
+  const memo = React.useMemo(() => ({ uri: outer1_1(outer1_2[5]) }), []);
   obj = { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.title = intl.string(arg1(dependencyMap[7]).t.6n+UPR);
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[7]).t.JaaqIf);
-  return jsx(arg1(dependencyMap[6]).TwoWayLinkPreConnect, obj);
+  const intl = navigation(1212).intl;
+  obj.title = intl.string(navigation(1212).t["6n+UPR"]);
+  const intl2 = navigation(1212).intl;
+  obj.body = intl2.string(navigation(1212).t.JaaqIf);
+  return jsx(navigation(8947).TwoWayLinkPreConnect, { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image });
 };

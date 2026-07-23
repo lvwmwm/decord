@@ -1,8 +1,7 @@
 // Module ID: 12588
-// Function ID: 96815
+// Function ID: 97481
 // Dependencies: []
 
 // Module 12588
-const _module = require(dependencyMap[0]);
 
-export default _module.registerAsset({ scales: [false] });
+export default { 2: "need dictionary", 1: "stream end", 0: "", "-1": "file error", "-2": "stream error", "-3": "data error", "-4": "insufficient memory", "-5": "buffer error", "-6": "incompatible version" };

@@ -1,15 +1,16 @@
-// Module ID: 10886
-// Function ID: 84609
-// Dependencies: []
+// Module ID: 10896
+// Function ID: 84658
+// Dependencies: [477, 10897, 10898, 2]
 
-// Module 10886
-const _module = require(dependencyMap[0]);
-if (_module.isIOS()) {
-  let importDefaultResult = importDefault(dependencyMap[1]);
+// Module 10896
+import set from "set";
+import set from "registerAsset";
+
+if (set.isIOS()) {
+  let importDefaultResult = require("registerAsset");
 } else {
-  importDefaultResult = importDefault(dependencyMap[2]);
+  importDefaultResult = require("registerAsset");
 }
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/icons/native/Share.tsx");
+const result = set.fileFinishedImporting("modules/icons/native/Share.tsx");
 
 export default importDefaultResult;

@@ -1,18 +1,18 @@
-// Module ID: 8980
-// Function ID: 70766
+// Module ID: 8987
+// Function ID: 70807
 // Name: _handleStateChange
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [31, 653, 675, 2]
 // Exports: useAccountLinkStepTracking
 
-// Module 8980 (_handleStateChange)
-import __exportStarResult1 from "__exportStarResult1";
-import { AnalyticEvents } from "__exportStarResult1";
+// Module 8987 (_handleStateChange)
+import result from "result";
+import { AnalyticEvents } from "ME";
 
 function _handleStateChange(index, current, platform_type, location_stack) {
   if (null != index) {
     index = index.index;
     let tmp;
-    let obj = importDefault(dependencyMap[2]);
+    let obj = importDefault(675);
     obj = { location_stack };
     if (null != current.current) {
       tmp = index.routeNames[current.current];
@@ -24,19 +24,19 @@ function _handleStateChange(index, current, platform_type, location_stack) {
     current.current = index;
   }
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
+const result = require("expandLocation").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
 
 export const useAccountLinkStepTracking = function useAccountLinkStepTracking(CRUNCHYROLL, locationStack) {
-  const importDefault = CRUNCHYROLL;
-  const dependencyMap = locationStack;
-  const React = React.useRef(null);
+  let closure_0 = CRUNCHYROLL;
+  let closure_1 = locationStack;
+  React = React.useRef(null);
   const items = [locationStack, CRUNCHYROLL];
   const items1 = [locationStack, CRUNCHYROLL];
   const callback = React.useCallback((arg0) => {
-    callback(arg0, __exportStarResult1, arg0, arg1);
+    outer1_4(arg0, result, closure_0, closure_1);
   }, items);
   const effect = React.useEffect(() => {
-    callback({ index: 0, routeNames: ["jsxs"] }, __exportStarResult1, arg0, arg1);
+    outer1_4({ index: 0, routeNames: ["landing"] }, result, closure_0, closure_1);
   }, items1);
   return callback;
 };

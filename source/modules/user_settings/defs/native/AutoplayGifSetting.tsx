@@ -1,20 +1,29 @@
-// Module ID: 14135
-// Function ID: 107284
+// Module ID: 14249
+// Function ID: 109440
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 3803, 2]
 
-// Module 14135 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14249 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.9ptHSs);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["9ptHSs"]);
   },
-  parent: require(dependencyMap[0]).MobileSetting.ACCESSIBILITY,
-  useValue: require(dependencyMap[3]).GifAutoPlay.useSetting,
-  onValueChange: require(dependencyMap[3]).GifAutoPlay.updateSetting
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
+  useValue: require("explicitContentFromProto").GifAutoPlay.useSetting,
+  onValueChange: require("explicitContentFromProto").GifAutoPlay.updateSetting
 });
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AutoplayGifSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["9ptHSs"]);
+  },
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
+  useValue: require("explicitContentFromProto").GifAutoPlay.useSetting,
+  onValueChange: require("explicitContentFromProto").GifAutoPlay.updateSetting
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/AutoplayGifSetting.tsx");
 
 export default toggle;

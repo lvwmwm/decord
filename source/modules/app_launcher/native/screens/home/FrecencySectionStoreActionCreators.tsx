@@ -1,15 +1,14 @@
-// Module ID: 11165
-// Function ID: 86841
+// Module ID: 11175
+// Function ID: 86891
 // Name: setFrecencySectionSelection
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: setFrecencySectionSelection
 
-// Module 11165 (setFrecencySectionSelection)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySectionStoreActionCreators.tsx");
+// Module 11175 (setFrecencySectionSelection)
+const result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySectionStoreActionCreators.tsx");
 
 export const setFrecencySectionSelection = function setFrecencySectionSelection(APPS) {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(686);
   obj = { type: "FRECENCY_SECTION_SET_SELECTION", selection: APPS };
   obj.dispatch(obj);
 };

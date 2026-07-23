@@ -1,19 +1,21 @@
-// Module ID: 9765
-// Function ID: 75950
+// Module ID: 9772
+// Function ID: 75991
 // Name: MODAL_KEY
-// Dependencies: []
+// Dependencies: [5, 4337, 9773, 1934, 2]
 
-// Module 9765 (MODAL_KEY)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessActionCreators.tsx");
+// Module 9772 (MODAL_KEY)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
+const require = arg1;
+const result = require("CancelButton").fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessActionCreators.tsx");
 
 export default {
-  open(closure_2) {
+  open(merged) {
     // CreateGeneratorClosureLongIndex (0x67)
-    importDefault(dependencyMap[1]).pushLazy(callback(tmp), closure_2, "ShopProductPurchaseSuccessModal");
+    importDefault(4337).pushLazy(callback(tmp), merged, "ShopProductPurchaseSuccessModal");
   },
   close() {
-    importDefault(dependencyMap[1]).popWithKey("ShopProductPurchaseSuccessModal");
+    importDefault(4337).popWithKey("ShopProductPurchaseSuccessModal");
   }
 };
 export const MODAL_KEY = "ShopProductPurchaseSuccessModal";

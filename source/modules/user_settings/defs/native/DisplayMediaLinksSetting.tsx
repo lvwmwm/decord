@@ -1,20 +1,29 @@
-// Module ID: 14178
-// Function ID: 107355
+// Module ID: 14292
+// Function ID: 109511
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 3803, 2]
 
-// Module 14178 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14292 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.U47N1p);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.U47N1p);
   },
-  parent: require(dependencyMap[0]).MobileSetting.CHAT,
-  useValue: require(dependencyMap[3]).InlineEmbedMedia.useSetting,
-  onValueChange: require(dependencyMap[3]).InlineEmbedMedia.updateSetting
+  parent: require("MobileSetting").MobileSetting.CHAT,
+  useValue: require("explicitContentFromProto").InlineEmbedMedia.useSetting,
+  onValueChange: require("explicitContentFromProto").InlineEmbedMedia.updateSetting
 });
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DisplayMediaLinksSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.U47N1p);
+  },
+  parent: require("MobileSetting").MobileSetting.CHAT,
+  useValue: require("explicitContentFromProto").InlineEmbedMedia.useSetting,
+  onValueChange: require("explicitContentFromProto").InlineEmbedMedia.updateSetting
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/DisplayMediaLinksSetting.tsx");
 
 export default toggle;

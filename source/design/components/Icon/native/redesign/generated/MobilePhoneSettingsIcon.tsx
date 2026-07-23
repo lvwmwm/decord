@@ -1,24 +1,26 @@
-// Module ID: 14275
-// Function ID: 107873
+// Module ID: 14389
+// Function ID: 110026
 // Name: MobilePhoneSettingsIcon
-// Dependencies: []
+// Dependencies: [31, 33, 689, 3833, 14390, 2]
 // Exports: MobilePhoneSettingsIcon
 
-// Module 14275 (MobilePhoneSettingsIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/MobilePhoneSettingsIcon.tsx");
+// Module 14389 (MobilePhoneSettingsIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/MobilePhoneSettingsIcon.tsx");
 
 export const MobilePhoneSettingsIcon = function MobilePhoneSettingsIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(14390) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14390) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

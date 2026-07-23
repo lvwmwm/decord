@@ -1,13 +1,13 @@
-// Module ID: 16397
-// Function ID: 126673
+// Module ID: 16514
+// Function ID: 128847
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 16397 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: 1375732291, DateToSystemTimezoneSetter: -302627313, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/VideoStutterMitigationExperiment.tsx");
+// Module 16514 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-03-video-stutter-mitigation", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/VideoStutterMitigationExperiment.tsx");
 
 export default apexExperiment;

@@ -1,44 +1,43 @@
-// Module ID: 11837
-// Function ID: 91754
+// Module ID: 11849
+// Function ID: 91807
 // Name: useGameProfileShopCollection
-// Dependencies: []
+// Dependencies: [31, 8596, 566, 8659, 2]
 // Exports: useGameProfileShopCollection
 
-// Module 11837 (useGameProfileShopCollection)
-const useEffect = require(dependencyMap[0]).useEffect;
-let closure_3 = importDefault(dependencyMap[1]);
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/game_profile/hooks/useGameProfileShopCollection.tsx");
+// Module 11849 (useGameProfileShopCollection)
+import { useEffect } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let result = require("initialize").fileFinishedImporting("modules/game_profile/hooks/useGameProfileShopCollection.tsx");
 
 export const useGameProfileShopCollection = function useGameProfileShopCollection(collectionId) {
-  const require = collectionId;
-  const items = [closure_3];
-  const stateFromStoresObject = require(dependencyMap[2]).useStateFromStoresObject(items, () => {
+  const _require = collectionId;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = _require(hasFetched[2]).useStateFromStoresObject(items, () => {
     const obj = {};
-    let result = null != arg0;
+    let result = null != closure_0;
     if (result) {
-      result = closure_3.hasShopCollectionBeenFetched(arg0);
+      result = outer1_3.hasShopCollectionBeenFetched(closure_0);
     }
     obj.hasFetched = result;
     let shopCollectionSkuIds;
-    if (null != arg0) {
-      shopCollectionSkuIds = closure_3.getShopCollectionSkuIds(arg0);
+    if (null != closure_0) {
+      shopCollectionSkuIds = outer1_3.getShopCollectionSkuIds(closure_0);
     }
     obj.skuIds = shopCollectionSkuIds;
     return obj;
   });
-  const hasFetched = stateFromStoresObject.hasFetched;
-  const dependencyMap = hasFetched;
+  hasFetched = stateFromStoresObject.hasFetched;
   let skuIds = stateFromStoresObject.skuIds;
   const items1 = [collectionId, hasFetched];
   useEffect(() => {
-    let result = null == arg0 || hasFetched;
+    let result = null == collectionId || hasFetched;
     if (!result) {
-      result = closure_3.isShopCollectionFetching(arg0);
+      result = outer1_3.isShopCollectionFetching(collectionId);
     }
     if (!result) {
-      const shopCollection = arg0(hasFetched[3]).getShopCollection(arg0);
-      const obj = arg0(hasFetched[3]);
+      const shopCollection = collectionId(hasFetched[3]).getShopCollection(collectionId);
+      const obj = collectionId(hasFetched[3]);
     }
   }, items1);
   if (null == skuIds) {

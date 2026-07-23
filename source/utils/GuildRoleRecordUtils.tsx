@@ -1,53 +1,58 @@
 // Module ID: 1914
-// Function ID: 21583
+// Function ID: 21584
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1388, 1911, 483, 665, 1913, 2]
 // Exports: fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
 
 // Module 1914 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import constructInPlace from "constructInPlace";
+import { GuildRoleRecordTypeTag } from "GuildRoleRecordTypeTag";
+
+let closure_3;
+let closure_4;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,8 +97,8 @@ function fromServerArray(id, roles) {
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp2 = closure_9;
-      obj[value.id] = closure_9(id, value);
+      let tmp2 = fromServer;
+      obj[value.id] = fromServer(id, value);
       let iter2 = tmp();
       iter = iter2;
       done = iter2.done;
@@ -104,12 +109,12 @@ function fromServerArray(id, roles) {
 function fromServer(guildId, id) {
   let flags;
   let managed;
-  const obj = { id: id.id, name: id.name, guildId, permissions: importAll(dependencyMap[2]).deserialize(id.permissions) };
+  const obj = { id: id.id, name: id.name, guildId, permissions: importAll(483).deserialize(id.permissions) };
   ({ mentionable: obj.mentionable, position: obj.position, color: obj.color } = id);
   let int2hexResult = null;
   if (0 !== id.color) {
-    int2hexResult = require(dependencyMap[3]).int2hex(id.color);
-    const obj3 = require(dependencyMap[3]);
+    int2hexResult = require(665) /* pad2 */.int2hex(id.color);
+    const obj3 = require(665) /* pad2 */;
   }
   obj.colorString = int2hexResult;
   const colors = id.colors;
@@ -120,8 +125,8 @@ function fromServer(guildId, id) {
   obj.colors = tmp5;
   let result = null;
   if (null != id.colors) {
-    result = require(dependencyMap[4]).extractColorStringsFromServerColors(id.colors);
-    const obj4 = require(dependencyMap[4]);
+    result = require(1913) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
+    const obj4 = require(1913) /* extractColorStringsFromServerColors */;
   }
   obj.colorStrings = result;
   ({ hoist: obj.hoist, managed } = id);
@@ -152,14 +157,14 @@ function constructGuildRoleInPlace(arg0) {
 function fromSerialized(guildId, id) {
   let flags;
   let managed;
-  const obj = { id: id.id, name: id.name, guildId, permissions: importAll(dependencyMap[2]).deserialize(id.permissions) };
+  const obj = { id: id.id, name: id.name, guildId, permissions: importAll(483).deserialize(id.permissions) };
   ({ mentionable: obj.mentionable, position: obj.position, color: obj.color } = id);
   let int2hexResult = null;
   if (null != id.color) {
     int2hexResult = null;
     if (0 !== id.color) {
-      int2hexResult = require(dependencyMap[3]).int2hex(id.color);
-      const obj3 = require(dependencyMap[3]);
+      int2hexResult = require(665) /* pad2 */.int2hex(id.color);
+      const obj3 = require(665) /* pad2 */;
     }
   }
   obj.colorString = int2hexResult;
@@ -171,8 +176,8 @@ function fromSerialized(guildId, id) {
   obj.colors = tmp5;
   let result = null;
   if (null != id.colors) {
-    result = require(dependencyMap[4]).extractColorStringsFromServerColors(id.colors);
-    const obj4 = require(dependencyMap[4]);
+    result = require(1913) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
+    const obj4 = require(1913) /* extractColorStringsFromServerColors */;
   }
   obj.colorStrings = result;
   ({ hoist: obj.hoist, managed } = id);
@@ -197,11 +202,8 @@ function fromSerialized(guildId, id) {
   obj.version = id.version;
   return constructGuildRoleInPlace(obj);
 }
-const _module = require(dependencyMap[0]);
-({ constructInPlace: closure_3, objectIsPlainRecordOfType: closure_4 } = _module);
-const GuildRoleRecordTypeTag = require(dependencyMap[1]).GuildRoleRecordTypeTag;
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("utils/GuildRoleRecordUtils.tsx");
+({ constructInPlace: closure_3, objectIsPlainRecordOfType: closure_4 } = constructInPlace);
+let result = require("fromHexReverseArray").fileFinishedImporting("utils/GuildRoleRecordUtils.tsx");
 
 export const isGuildRoleRecord = function isGuildRoleRecord(arg0) {
   return callback2(GuildRoleRecordTypeTag, arg0);
@@ -218,25 +220,25 @@ export const fromSyncOperation = function fromSyncOperation(id, roles, partition
   } else {
     const obj = {};
     const merged = Object.assign(partition);
-    const tmp9 = _createForOfIteratorHelperLoose(roles.deletes);
-    let iter2 = tmp9();
+    const tmp11 = _createForOfIteratorHelperLoose(roles.deletes);
+    let iter2 = tmp11();
     if (!iter2.done) {
       do {
         let value = iter2.value;
-        delete r1[r2];
-        let iter = tmp9();
+        delete tmp[tmp2];
+        let iter = tmp11();
         iter2 = iter;
         done = iter.done;
       } while (!done);
     }
-    const tmp2 = _createForOfIteratorHelperLoose(roles.writes);
-    let iter3 = tmp2();
+    const tmp4 = _createForOfIteratorHelperLoose(roles.writes);
+    let iter3 = tmp4();
     if (!iter3.done) {
       do {
         value = iter3.value;
-        let tmp3 = closure_9;
-        obj[value.id] = closure_9(id, value);
-        let iter4 = tmp2();
+        let tmp5 = fromServer;
+        obj[value.id] = fromServer(id, value);
+        let iter4 = tmp4();
         iter3 = iter4;
         done2 = iter4.done;
       } while (!done2);
@@ -248,8 +250,9 @@ export const fromSerializedPartition = function fromSerializedPartition(id, role
   const obj = {};
   for (const key10006 in arg1) {
     let tmp = key10006;
-    let tmp2 = closure_11;
-    obj[key10006] = closure_11(arg0, arg1[key10006]);
+    let tmp2 = fromSerialized;
+    obj[key10006] = fromSerialized(arg0, arg1[key10006]);
+    continue;
   }
   return obj;
 };
@@ -265,6 +268,7 @@ export const toSerializedPartition = function toSerializedPartition(unsafeMutabl
     let str = tmp2.permissions;
     obj["permissions"] = str.toString();
     obj[key10005] = obj;
+    continue;
   }
   return obj;
 };

@@ -1,25 +1,25 @@
-// Module ID: 14340
-// Function ID: 108270
+// Module ID: 14454
+// Function ID: 110423
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14455, 2]
 
-// Module 14340 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14454 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Stack";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_STACK,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_STACK,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14455) /* StackBlock */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemStackSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemStackSetting.tsx");
 
 export default route;

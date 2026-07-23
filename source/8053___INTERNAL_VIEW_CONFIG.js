@@ -1,11 +1,17 @@
 // Module ID: 8053
-// Function ID: 63922
+// Function ID: 63918
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [38, 110, 42]
 
 // Module 8053 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "RNSVGFeColorMatrix", validAttributes: {} };
-const _module = require(dependencyMap[0]);
+import weakSet from "weakSet";
+import get from "get";
 
-export default _module.get("RNSVGFeColorMatrix", () => obj);
+let obj = { uiViewClassName: "RNSVGEllipse", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } } };
+obj = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: null, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, cx: true, cy: true, rx: true, ry: true };
+obj = { process: require("processColor").default };
+obj.color = obj;
+obj.validAttributes = Object.assign(obj, weakSet.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
+
+export default get.get("RNSVGEllipse", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

@@ -1,29 +1,31 @@
-// Module ID: 12786
-// Function ID: 97956
+// Module ID: 12900
+// Function ID: 100112
 // Name: GuildFeatures
-// Dependencies: []
+// Dependencies: [1838, 653, 624, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates, useGuildEligibleForTierTemplates
 
-// Module 12786 (GuildFeatures)
-let closure_2 = importDefault(dependencyMap[0]);
-const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
-const items = [, , ];
+// Module 12900 (GuildFeatures)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { GuildFeatures } from "ME";
+
+const require = arg1;
+let items = [, , ];
 ({ ROLE_SUBSCRIPTIONS_ENABLED: arr[0], CREATOR_MONETIZABLE: arr[1], CREATOR_MONETIZABLE_PROVISIONAL: arr[2] } = GuildFeatures);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsExperimentUtils.tsx");
+const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsExperimentUtils.tsx");
 
 export const hasEnabledMonetization = function hasEnabledMonetization(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   let someResult = null != arg0;
   if (someResult) {
     someResult = items.some((arg0) => {
-      const features = arg0.features;
+      features = features.features;
       return features.has(arg0);
     });
   }
   return someResult;
 };
 export const isGuildEligibleForTierTemplates = function isGuildEligibleForTierTemplates(id) {
-  const guild = guild.getGuild(id);
+  guild = guild.getGuild(id);
   let hasItem;
   if (null != guild) {
     const features = guild.features;
@@ -32,14 +34,14 @@ export const isGuildEligibleForTierTemplates = function isGuildEligibleForTierTe
   return null != hasItem && hasItem;
 };
 export const useGuildEligibleForTierTemplates = function useGuildEligibleForTierTemplates(guildId) {
-  const arg1 = guildId;
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+  const _require = guildId;
+  const items = [_createForOfIteratorHelperLoose];
+  return _require(624).useStateFromStores(items, () => {
+    const guild = outer1_2.getGuild(closure_0);
     let hasItem;
     if (null != guild) {
       const features = guild.features;
-      hasItem = features.has(constants.ROLE_SUBSCRIPTIONS_ENABLED);
+      hasItem = features.has(outer1_3.ROLE_SUBSCRIPTIONS_ENABLED);
     }
     return null != hasItem && hasItem;
   });

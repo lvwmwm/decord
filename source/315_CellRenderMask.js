@@ -1,24 +1,25 @@
 // Module ID: 315
 // Function ID: 4805
 // Name: CellRenderMask
-// Dependencies: []
+// Dependencies: [65, 57, 6, 7, 44]
 
 // Module 315 (CellRenderMask)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
+import _toConsumableArray from "_toConsumableArray";
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export const CellRenderMask = () => {
+
+export const CellRenderMask = (() => {
   class CellRenderMask {
     constructor(arg0) {
-      tmp = closure_4(this, CellRenderMask);
-      tmp2 = CellRenderMask(closure_1[4])(arg0 >= 0, "CellRenderMask must contain a non-negative number os cells");
+      tmp = outer1_4(this, CellRenderMask);
+      tmp2 = CellRenderMask(outer1_1[4])(arg0 >= 0, "CellRenderMask must contain a non-negative number os cells");
       this._numCells = arg0;
       if (0 === arg0) {
         items = [];
       } else {
-        obj = { "Bool(false)": "httpServerLocation", "Bool(false)": "hash", "Bool(false)": "httpServerLocation" };
+        obj = { first: 0, last: null, isSpacer: true };
         num = 1;
         obj.last = arg0 - 1;
         items = [];
@@ -28,14 +29,13 @@ export const CellRenderMask = () => {
       return;
     }
   }
-  const importDefault = CellRenderMask;
   let obj = {
     key: "enumerateRegions",
     value: function enumerateRegions() {
       return this._regions;
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "addCells",
     value: function addCells(VirtualizedList) {
@@ -55,12 +55,12 @@ export const CellRenderMask = () => {
       if (tmp2) {
         tmp2 = VirtualizedList.last >= VirtualizedList.first - 1;
       }
-      CellRenderMask(closure_1[4])(tmp2, "CellRenderMask.addCells called with invalid cell range");
+      CellRenderMask(outer1_1[4])(tmp2, "CellRenderMask.addCells called with invalid cell range");
       if (VirtualizedList.last >= VirtualizedList.first) {
-        const tmp13 = callback2(self._findRegion(VirtualizedList.first), 2);
+        const tmp13 = outer1_3(self._findRegion(VirtualizedList.first), 2);
         const first = tmp13[0];
         let num3 = 1;
-        [tmp8, splice] = callback2(self._findRegion(VirtualizedList.last), 2);
+        [tmp8, splice] = outer1_3(self._findRegion(VirtualizedList.last), 2);
         const items = [];
         const items1 = [];
         const _Object = Object;
@@ -77,19 +77,19 @@ export const CellRenderMask = () => {
         if (combined.last <= merged.last) {
           const items2 = [];
           const items3 = [merged];
-          const combined = items2.concat(items, items3, items1);
+          combined = items2.concat(items, items3, items1);
           const sum = splice - tmp15 + num3;
           num3 = self._regions;
           splice = num3.splice;
           self = splice.apply;
           const items4 = [tmp15, sum];
-          self(num3, items4.concat(callback(combined)));
+          self(num3, items4.concat(outer1_2(combined)));
         } else if (!combined.isSpacer) {
           merged.last = combined.last;
         }
         obj = { first: merged.last + num3, last: combined.last, isSpacer: true };
         items1.push(obj);
-        const tmp16 = callback2(self._findRegion(VirtualizedList.last), 2);
+        const tmp16 = outer1_3(self._findRegion(VirtualizedList.last), 2);
       }
     }
   };
@@ -105,17 +105,17 @@ export const CellRenderMask = () => {
     key: "equals",
     value: function equals(_numCells) {
       const self = this;
-      const CellRenderMask = _numCells;
+      let closure_0 = _numCells;
       let everyResult = this._numCells === _numCells._numCells && self._regions.length === _numCells._regions.length;
       if (everyResult) {
         const _regions = self._regions;
         everyResult = _regions.every((first) => {
-          let tmp = first.first === first._regions[arg1].first;
+          let tmp = first.first === _numCells._regions[arg1].first;
           if (tmp) {
-            tmp = first.last === first._regions[arg1].last;
+            tmp = first.last === _numCells._regions[arg1].last;
           }
           if (tmp) {
-            tmp = first.isSpacer === first._regions[arg1].isSpacer;
+            tmp = first.isSpacer === _numCells._regions[arg1].isSpacer;
           }
           return tmp;
         });
@@ -157,8 +157,8 @@ export const CellRenderMask = () => {
         const items = [tmp4, rounded];
         return items;
       }
-      CellRenderMask(closure_1[4])(false, "A region was not found containing cellIdx " + first);
+      CellRenderMask(outer1_1[4])(false, "A region was not found containing cellIdx " + first);
     }
   };
   return callback(CellRenderMask, items);
-}();
+})();

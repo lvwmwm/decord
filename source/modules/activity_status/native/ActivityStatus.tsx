@@ -1,35 +1,38 @@
-// Module ID: 9056
-// Function ID: 71116
+// Module ID: 9063
+// Function ID: 71157
 // Name: ActivityStatus
-// Dependencies: []
+// Dependencies: [31, 27, 4217, 3767, 1849, 9064, 653, 33, 4130, 566, 9065, 9066, 9067, 9068, 9073, 9074, 9083, 9087, 9072, 2]
 // Exports: default
 
-// Module 9056 (ActivityStatus)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const DOT_UNICODE = arg1(dependencyMap[5]).DOT_UNICODE;
-const ActivityTypes = arg1(dependencyMap[6]).ActivityTypes;
-({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-const tmp2 = arg1(dependencyMap[7]);
-let closure_13 = arg1(dependencyMap[8]).createStyles({ container: { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null }, icon: { marginTop: 1 }, emoji: { marginRight: 0 } });
-const obj = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/activity_status/native/ActivityStatus.tsx");
+// Module 9063 (ActivityStatus)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { DOT_UNICODE } from "TOOLTIP_DELAY_MS";
+import { ActivityTypes } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+const require = arg1;
+({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
+let closure_13 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4 }, icon: { marginTop: 1 }, emoji: { marginRight: 0 } });
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activity_status/native/ActivityStatus.tsx");
 
 export default function ActivityStatus(guildId) {
+  let importDefault;
   let textStyle;
   const userId = guildId.userId;
-  const arg1 = userId;
-  ({ iconStyle: closure_1, textStyle } = guildId);
-  const dependencyMap = textStyle;
+  ({ iconStyle: importDefault, textStyle } = guildId);
   let num = guildId.emojiSize;
   if (num === undefined) {
     num = 14;
   }
   const maxFontSizeMultiplier = guildId.maxFontSizeMultiplier;
-  const React = maxFontSizeMultiplier;
   let flag = guildId.animate;
   if (flag === undefined) {
     flag = true;
@@ -38,25 +41,24 @@ export default function ActivityStatus(guildId) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let View;
-  let closure_5;
+  let c4;
+  let stateFromStores1;
   let closure_6;
   let voiceChannel;
   let closure_8;
   let closure_9;
-  const tmp = callback2();
-  View = tmp;
-  let obj = arg1(dependencyMap[9]);
-  const items = [voiceChannel];
+  let tmp = callback2();
+  c4 = tmp;
+  let obj = userId(textStyle[9]);
+  let items = [voiceChannel];
   const stateFromStores = obj.useStateFromStores(items, () => voiceChannel.getUser(userId));
-  let obj1 = arg1(dependencyMap[9]);
-  const items1 = [closure_5];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => stateFromStores1.getActivities(userId));
-  closure_5 = stateFromStores1;
-  closure_6 = importDefault(dependencyMap[10])(userId);
-  voiceChannel = importDefault(dependencyMap[11])({ userId, guildId: guildId.guildId }).voiceChannel;
-  const items2 = [stateFromStores1];
-  const memo = React.useMemo(() => {
+  let obj1 = userId(textStyle[9]);
+  let items1 = [stateFromStores1];
+  stateFromStores1 = obj1.useStateFromStores(items1, () => stateFromStores1.getActivities(userId));
+  closure_6 = importDefault(textStyle[10])(userId);
+  voiceChannel = importDefault(textStyle[11])({ userId, guildId: guildId.guildId }).voiceChannel;
+  let items2 = [stateFromStores1];
+  const memo = maxFontSizeMultiplier.useMemo(() => {
     let found;
     if (null != stateFromStores1) {
       found = stateFromStores1.find((type) => type.type === constants.CUSTOM_STATUS);
@@ -84,13 +86,13 @@ export default function ActivityStatus(guildId) {
       return tmp6;
     }
   }, items2);
-  let obj2 = arg1(dependencyMap[12]);
+  let obj2 = userId(textStyle[12]);
   let state;
   if (null != memo) {
     state = memo.state;
   }
   const gameMentionsAsPlainText = obj2.useGameMentionsAsPlainText(state);
-  let obj3 = arg1(dependencyMap[9]);
+  let obj3 = userId(textStyle[9]);
   const items3 = [closure_6];
   if (obj3.useStateFromStores(items3, () => blockedOrIgnored.isBlockedOrIgnored(userId))) {
     return null;
@@ -105,21 +107,21 @@ export default function ActivityStatus(guildId) {
       state1 = memo.state;
     }
     closure_9 = null != state1;
-    const tmp9 = () => {
+    const tmp9 = (() => {
       if (null != closure_6) {
         let obj = {};
         let found;
         if (null != stateFromStores1) {
-          found = stateFromStores1.find(callback(textStyle[14]));
+          found = stateFromStores1.find(outer1_1(textStyle[14]));
         }
         obj.game = found;
-        const items = [tmp.icon, callback];
+        const items = [_undefined.icon, closure_1];
         obj.iconStyle = items;
         obj.textStyle = textStyle;
         obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
         obj.hideIcon = closure_8;
         obj.hideText = closure_9;
-        return callback2(callback(textStyle[13]), obj);
+        return outer1_10(outer1_1(textStyle[13]), obj);
       } else {
         let found1;
         if (null != stateFromStores1) {
@@ -134,29 +136,29 @@ export default function ActivityStatus(guildId) {
         }
         if (null != found1) {
           obj = { activity: found1 };
-          const items1 = [tmp.icon, callback];
+          const items1 = [_undefined.icon, closure_1];
           obj.iconStyle = items1;
           obj.textStyle = textStyle;
           obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
           obj.hideIcon = closure_8;
           obj.hideText = closure_9;
-          let tmp13 = callback2(callback(textStyle[15]), obj);
+          let tmp13 = outer1_10(outer1_1(textStyle[15]), obj);
         } else {
           tmp13 = null;
           if (null != voiceChannel) {
             obj = { channel: voiceChannel };
-            const items2 = [tmp.icon, callback];
+            const items2 = [_undefined.icon, closure_1];
             obj.iconStyle = items2;
             obj.textStyle = textStyle;
             obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
             obj.hideIcon = closure_8;
             obj.hideText = closure_9;
-            tmp13 = callback2(callback(textStyle[16]), obj);
+            tmp13 = outer1_10(outer1_1(textStyle[16]), obj);
           }
         }
         return tmp13;
       }
-    }();
+    })();
     let tmp10 = null;
     if (null != memo) {
       let tmp12Result = null;
@@ -168,19 +170,19 @@ export default function ActivityStatus(guildId) {
         }
         if (tmp14) {
           obj = { emoji: memo.emoji, size: num, animate: flag, style: tmp.emoji };
-          tmp14 = callback(importDefault(dependencyMap[17]), obj);
+          tmp14 = callback(importDefault(textStyle[17]), obj);
         }
         const items4 = [tmp14, ];
         let tmp18 = null != memo.state;
         if (tmp18) {
           obj1 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, children: gameMentionsAsPlainText };
-          tmp18 = callback(importDefault(dependencyMap[18]), obj1);
+          tmp18 = callback(importDefault(textStyle[18]), obj1);
         }
         items4[1] = tmp18;
         obj.children = items4;
         tmp12Result = closure_12(closure_11, obj);
         const tmp12 = closure_12;
-        const tmp13 = closure_11;
+        let tmp13 = closure_11;
       }
       tmp10 = tmp12Result;
     }
@@ -191,12 +193,12 @@ export default function ActivityStatus(guildId) {
       tmp24 = null != tmp10;
     }
     if (tmp24) {
-      obj3 = { lavender: true, GameDepthTier9LargeBadge: true, GENERIC_REGEX: true, borderStyle: true, borderWidth: true, style: textStyle, maxFontSizeMultiplier, children: closure_8 };
-      tmp24 = callback(importDefault(dependencyMap[18]), obj3);
+      obj3 = { variant: "text-xs/normal", style: textStyle, maxFontSizeMultiplier, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8 };
+      tmp24 = callback(importDefault(textStyle[18]), obj3);
     }
     items5[1] = tmp24;
     items5[2] = tmp10;
     obj2.children = items5;
-    return closure_12(View, obj2);
+    return closure_12(c4, obj2);
   }
 };

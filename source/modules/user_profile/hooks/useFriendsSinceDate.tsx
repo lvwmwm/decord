@@ -1,29 +1,31 @@
-// Module ID: 11877
-// Function ID: 91956
+// Module ID: 11889
+// Function ID: 92009
 // Name: useFriendsSinceDate
-// Dependencies: []
+// Dependencies: [1921, 3767, 653, 624, 4939, 2]
 // Exports: useFriendsSinceDate
 
-// Module 11877 (useFriendsSinceDate)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const RelationshipTypes = arg1(dependencyMap[2]).RelationshipTypes;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_profile/hooks/useFriendsSinceDate.tsx");
+// Module 11889 (useFriendsSinceDate)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { RelationshipTypes } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/user_profile/hooks/useFriendsSinceDate.tsx");
 
 export const useFriendsSinceDate = function useFriendsSinceDate(userId) {
-  const arg1 = userId;
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => locale.locale);
-  const obj = arg1(dependencyMap[3]);
+  const _require = userId;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_2.locale);
+  const obj = _require(624);
   const items1 = [closure_3];
   const items2 = [userId];
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(624).useStateFromStores(items1, () => {
     let since = null;
-    if (store.getRelationshipType(arg0) === constants.FRIEND) {
-      since = store.getSince(arg0);
+    if (outer1_3.getRelationshipType(closure_0) === outer1_4.FRIEND) {
+      since = outer1_3.getSince(closure_0);
     }
     return since;
   }, items2);
-  const obj2 = arg1(dependencyMap[3]);
-  return arg1(dependencyMap[4]).getCreatedAtDate(stateFromStores1, stateFromStores);
+  const obj2 = _require(624);
+  return _require(4939).getCreatedAtDate(stateFromStores1, stateFromStores);
 };

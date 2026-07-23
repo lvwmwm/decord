@@ -1,12 +1,13 @@
-// Module ID: 12656
-// Function ID: 97320
+// Module ID: 12770
+// Function ID: 99476
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 12656 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { -68197478: "%FunctionPrototype%", -1606720608: "paddingStart" }, variations: { [1]: { -68197478: "isArray", -1606720608: "SET_AUDIO_DEVICE_BY_ID" } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/UpscaleSmallCapturedFramesExperiment.tsx");
+// Module 12770 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-06-upscale-small-captured-frames", kind: "user", defaultConfig: { minCaptureWidth: 0, minCaptureHeight: 0 }, variations: { [1]: { minCaptureWidth: 130, minCaptureHeight: 130 } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/UpscaleSmallCapturedFramesExperiment.tsx");
 
 export const UpscaleSmallCapturedFramesExperiment = apexExperiment;

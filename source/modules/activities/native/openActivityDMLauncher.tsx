@@ -1,19 +1,20 @@
-// Module ID: 12872
-// Function ID: 98355
+// Module ID: 12986
+// Function ID: 100511
 // Name: _openActivityDMLauncher
-// Dependencies: []
+// Dependencies: [5, 1455, 5465, 4140, 12209, 10827, 5484, 6755, 3989, 1555, 2]
 // Exports: default
 
-// Module 12872 (_openActivityDMLauncher)
+// Module 12986 (_openActivityDMLauncher)
+import _handleUsePrimaryEntryPointAppCommand from "_handleUsePrimaryEntryPointAppCommand";
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+
+const require = arg1;
 function _openActivityDMLauncher() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _openActivityDMLauncher = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const AppLauncherRouteName = arg1(dependencyMap[1]).AppLauncherRouteName;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/activities/native/openActivityDMLauncher.tsx");
+const result = require("fetchApplication").fileFinishedImporting("modules/activities/native/openActivityDMLauncher.tsx");
 
 export default function openActivityDMLauncher() {
   return _openActivityDMLauncher(...arguments);

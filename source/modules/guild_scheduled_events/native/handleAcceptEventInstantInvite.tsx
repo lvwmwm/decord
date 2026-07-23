@@ -1,15 +1,17 @@
-// Module ID: 9482
-// Function ID: 73910
+// Module ID: 9489
+// Function ID: 73951
 // Name: handleAcceptEventInstantInvite
-// Dependencies: []
+// Dependencies: [6758, 9348, 6978, 7460, 8365, 2]
 // Exports: default
 
-// Module 9482 (handleAcceptEventInstantInvite)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_scheduled_events/native/handleAcceptEventInstantInvite.tsx");
+// Module 9489 (handleAcceptEventInstantInvite)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("isGroupDMInvite").fileFinishedImporting("modules/guild_scheduled_events/native/handleAcceptEventInstantInvite.tsx");
 
 export default function handleAcceptEventInstantInvite(code) {
-  let obj = arg1(dependencyMap[1]);
+  let obj = guildScheduledEvent(9348);
   if (!obj.handleNSFWGuildInvite(code)) {
     if (obj2.isGuildScheduledEventInviteEmbed(code)) {
       if (null != code.code) {
@@ -18,20 +20,19 @@ export default function handleAcceptEventInstantInvite(code) {
         if (null != guild_scheduled_event) {
           id = guild_scheduled_event.id;
         }
-        const guildScheduledEvent = guildScheduledEvent.getGuildScheduledEvent(id);
-        const arg1 = guildScheduledEvent;
+        guildScheduledEvent = guildScheduledEvent.getGuildScheduledEvent(id);
         if (null != guildScheduledEvent) {
           obj = { inviteKey: code.code };
           obj = { location: "Guild Scheduled Event Invite Button Embed" };
           obj.context = obj;
           obj.callback = function callback() {
-            const result = guildScheduledEvent(closure_2[4]).transitionToEventDetailsFromInvite(guildScheduledEvent);
+            const result = guildScheduledEvent(outer1_2[4]).transitionToEventDetailsFromInvite(guildScheduledEvent);
           };
-          importDefault(dependencyMap[3]).acceptInvite(obj);
-          const obj3 = importDefault(dependencyMap[3]);
+          importDefault(7460).acceptInvite(obj);
+          const obj3 = importDefault(7460);
         }
       }
     }
-    const obj2 = arg1(dependencyMap[2]);
+    obj2 = guildScheduledEvent(6978);
   }
 };

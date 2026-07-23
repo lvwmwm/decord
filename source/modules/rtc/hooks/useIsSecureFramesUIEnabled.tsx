@@ -1,27 +1,27 @@
-// Module ID: 8909
-// Function ID: 70312
+// Module ID: 8916
+// Function ID: 70353
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [1348, 4202, 8899, 566, 2]
 // Exports: useIsSecureFramesUIEnabled
 
-// Module 8909 (useIsSecureFramesUIEnabled)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import { END_TO_END_ENCRYPTION_DISABLED as closure_4 } from "__exportStarResult1";
+// Module 8916 (useIsSecureFramesUIEnabled)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { END_TO_END_ENCRYPTION_DISABLED as closure_4 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesUIEnabled.tsx");
+const require = arg1;
+const result = require("SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesUIEnabled.tsx");
 
 export const useIsSecureFramesUIEnabled = function useIsSecureFramesUIEnabled(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
-  const items = [closure_3, __exportStarResult1];
-  const items1 = [channelId];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
+  let items = [closure_3, _isNativeReflectConstruct];
+  let items1 = [channelId];
+  return channelId(566).useStateFromStores(items, () => {
     let obj;
     let obj2;
-    let items = [closure_3, __exportStarResult1];
+    let items = [outer1_3, outer1_2];
     if (items === undefined) {
-      const items1 = [closure_3, __exportStarResult1];
+      const items1 = [outer1_3, outer1_2];
       items = items1;
     }
     [obj, obj2] = items;
@@ -41,7 +41,7 @@ export const useIsSecureFramesUIEnabled = function useIsSecureFramesUIEnabled(ch
             }
             let tmp6 = null != version;
             if (tmp6) {
-              tmp6 = version !== closure_4;
+              tmp6 = version !== outer1_4;
             }
             flag = tmp6;
           }

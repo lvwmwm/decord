@@ -1,53 +1,57 @@
-// Module ID: 12244
-// Function ID: 93918
+// Module ID: 12358
+// Function ID: 96069
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [29, 57, 646, 491, 12359, 2]
 // Exports: default, generateAttemptId, parseDynamicLink
 
-// Module 12244 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12358 (_createForOfIteratorHelperLoose)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,10 +88,8 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("../discord_common/js/packages/dynamic-links/generateDynamicLink.tsx");
+let closure_3 = ["utmSource", "androidFallbackLink", "iosFallbackLink"];
+let result = require("capitalize").fileFinishedImporting("../discord_common/js/packages/dynamic-links/generateDynamicLink.tsx");
 
 export default function generateDynamicLink(arg0, arg1) {
   let androidFallbackLink;
@@ -104,28 +106,28 @@ export default function generateDynamicLink(arg0, arg1) {
     } else {
       let searchParams = str.searchParams;
       let result = searchParams.set(key10019, tmp25);
-      // continue
+      continue;
     }
     continue;
   }
   const encodeURIComponentResult = encodeURIComponent(str.toString());
   const encodeURIComponentResult1 = encodeURIComponent("discord://app/open#" + str.toString());
-  const items = [0.015, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012528747644163019];
+  const items = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"];
   const regExp = new RegExp("(" + items.join("|") + ")", "ig");
   let match;
-  if (null != importDefault(dependencyMap[2])) {
-    const str2 = importDefault(dependencyMap[2]).ua;
+  if (null != importDefault(646)) {
+    const str2 = importDefault(646).ua;
     if (null != str2) {
       match = str2.match(regExp);
     }
   }
   let name;
-  if (null != importDefault(dependencyMap[2])) {
-    name = importDefault(dependencyMap[2]).name;
+  if (null != importDefault(646)) {
+    name = importDefault(646).name;
   }
   let family;
-  if (null != importDefault(dependencyMap[2])) {
-    const os = importDefault(dependencyMap[2]).os;
+  if (null != importDefault(646)) {
+    const os = importDefault(646).os;
     if (null != os) {
       family = os.family;
     }
@@ -144,7 +146,7 @@ export default function generateDynamicLink(arg0, arg1) {
     const _encodeURIComponent2 = encodeURIComponent;
     encodeURIComponentResult4 = encodeURIComponent(iosFallbackLink);
   }
-  const combined = "" + "https://discordapp.onelink.me" + "/Hs5r/?deep_link_value=" + encodeURIComponentResult + "&pid=" + utmSource + "&af_force_deeplink=" + str3 + "&af_og_description=" + encodeURIComponent(importDefault(dependencyMap[4])()) + "&af_dp=" + encodeURIComponentResult1;
+  const combined = "" + "https://discordapp.onelink.me" + "/Hs5r/?deep_link_value=" + encodeURIComponentResult + "&pid=" + utmSource + "&af_force_deeplink=" + str3 + "&af_og_description=" + encodeURIComponent(importDefault(12359)()) + "&af_dp=" + encodeURIComponentResult1;
   let sum = combined;
   if (null != encodeURIComponentResult3) {
     const _HermesInternal = HermesInternal;
@@ -158,7 +160,7 @@ export default function generateDynamicLink(arg0, arg1) {
   return sum1;
 };
 export const generateAttemptId = function generateAttemptId() {
-  return arg1(dependencyMap[3]).v4();
+  return require(491) /* v1 */.v4();
 };
 export const parseDynamicLink = function parseDynamicLink(str) {
   let done;
@@ -188,8 +190,8 @@ export const parseDynamicLink = function parseDynamicLink(str) {
       if (!iter.done) {
         do {
           let tmp18 = iter2;
-          let tmp19 = closure_5;
-          let tmp20 = closure_5(iter2.value, 2);
+          let tmp19 = callback2;
+          let tmp20 = callback2(iter2.value, 2);
           let tmp21 = obj;
           tmp13[tmp20[0]] = tmp20[1];
           let tmp22 = tmp16;
@@ -203,5 +205,5 @@ export const parseDynamicLink = function parseDynamicLink(str) {
   } else {
     return null;
   }
-  const tmp = str;
+  tmp = str;
 };

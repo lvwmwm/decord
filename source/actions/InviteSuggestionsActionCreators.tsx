@@ -1,19 +1,24 @@
-// Module ID: 10056
-// Function ID: 77670
+// Module ID: 10064
+// Function ID: 77710
 // Name: loadInviteSuggestions
-// Dependencies: []
+// Dependencies: [10065, 8821, 686, 2]
 // Exports: loadInviteSuggestions, searchInviteSuggestions
 
-// Module 10056 (loadInviteSuggestions)
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("actions/InviteSuggestionsActionCreators.tsx");
+// Module 10064 (loadInviteSuggestions)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("dispatcher").fileFinishedImporting("actions/InviteSuggestionsActionCreators.tsx");
 
 export const loadInviteSuggestions = function loadInviteSuggestions(arg0) {
-  ({ omitUserIds: closure_0, guild: closure_1, channel: closure_2, applicationId: closure_3, inviteTargetType: closure_4 } = arg0);
-  const userAffinitiesV2 = require(dependencyMap[1]).fetchUserAffinitiesV2();
+  let closure_3;
+  let closure_4;
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ omitUserIds: require, guild: importDefault, channel: dependencyMap, applicationId: closure_3, inviteTargetType: closure_4 } = arg0);
+  const userAffinitiesV2 = require(8821) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
   return userAffinitiesV2.then(() => {
-    let obj = callback(closure_2[2]);
+    let obj = outer1_1(outer1_2[2]);
     obj = { type: "LOAD_INVITE_SUGGESTIONS" };
     if (null != closure_0) {
       let set = closure_0;
@@ -22,7 +27,7 @@ export const loadInviteSuggestions = function loadInviteSuggestions(arg0) {
       set = new Set();
     }
     obj.omitUserIds = set;
-    obj.guild = callback;
+    obj.guild = closure_1;
     obj.channel = closure_2;
     obj.applicationId = closure_3;
     obj.inviteTargetType = closure_4;
@@ -30,7 +35,7 @@ export const loadInviteSuggestions = function loadInviteSuggestions(arg0) {
   });
 };
 export const searchInviteSuggestions = function searchInviteSuggestions(query) {
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(686);
   obj = { type: "INVITE_SUGGESTIONS_SEARCH", query };
   obj.dispatch(obj);
 };

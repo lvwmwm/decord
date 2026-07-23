@@ -1,33 +1,33 @@
-// Module ID: 12869
-// Function ID: 98340
+// Module ID: 12983
+// Function ID: 100496
 // Name: GuildProgressBar
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 11507, 689, 3991, 4131, 4134, 2]
 // Exports: default
 
-// Module 12869 (GuildProgressBar)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { position: "relative", backgroundColor: arg1(dependencyMap[4]).PROGRESS_BACKGROUND_COLOR, borderRadius: importDefault(dependencyMap[5]).radii.xs, height: 8 };
-obj.wrapper = obj;
-const obj1 = { flex: false, justifyContent: false, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.xs };
-obj.progress = obj1;
-let closure_6 = obj.createStyles(obj);
+// Module 12983 (GuildProgressBar)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { position: "relative", backgroundColor: require("useIOSCompletionStates").PROGRESS_BACKGROUND_COLOR, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, height: 8 };
+_createForOfIteratorHelperLoose.wrapper = _createForOfIteratorHelperLoose;
+const obj1 = { position: "absolute", height: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+_createForOfIteratorHelperLoose.progress = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_7 = { code: "function GuildProgressBarTsx1(){const{percentWidth}=this.__closure;return{width:percentWidth.get()+\"%\"};}" };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_progress/native/components/GuildProgressBar.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/guild_progress/native/components/GuildProgressBar.tsx");
 
 export default function GuildProgressBar(percent) {
   percent = percent.percent;
-  const arg1 = percent;
-  const tmp = callback();
-  let obj = arg1(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = percent(3991);
   const sharedValue = obj.useSharedValue(0);
-  const importDefault = sharedValue;
   const items = [percent, sharedValue];
   const effect = React.useEffect(() => {
-    const result = sharedValue.set(percent(closure_2[7]).withTiming(percent, percent(closure_2[8]).timingSlow));
+    const result = sharedValue.set(percent(outer1_2[7]).withTiming(percent, percent(outer1_2[8]).timingSlow));
   }, items);
   const fn = function h() {
     return { width: "" + sharedValue.get() + "%" };
@@ -36,9 +36,9 @@ export default function GuildProgressBar(percent) {
   fn.__workletHash = 14122394499539;
   fn.__initData = closure_7;
   obj = { style: items1 };
-  const items1 = [tmp.wrapper, percent.style];
-  const animatedStyle = arg1(dependencyMap[6]).useAnimatedStyle(fn);
+  items1 = [tmp.wrapper, percent.style];
+  const animatedStyle = percent(3991).useAnimatedStyle(fn);
   const items2 = [tmp.progress, animatedStyle];
-  obj.children = jsx(importDefault(dependencyMap[6]).View, { style: items2 });
-  return <View {...obj} />;
+  obj.children = jsx(sharedValue(3991).View, { style: items2 });
+  return <View style={items1} />;
 };

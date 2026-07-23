@@ -1,10 +1,10 @@
-// Module ID: 4182
-// Function ID: 36004
+// Module ID: 4186
+// Function ID: 36036
 // Name: pathBasename
-// Dependencies: []
+// Dependencies: [477, 2]
 // Exports: pathFilenameWithoutExt, pathJoin
 
-// Module 4182 (pathBasename)
+// Module 4186 (pathBasename)
 function pathBasename(str) {
   let arr = str;
   const parts = str.split(/[/\\]/);
@@ -17,10 +17,9 @@ function pathBasename(str) {
   }
   return substr;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/PathUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/PathUtils.tsx");
 
-export const pathJoin = function pathJoin(arg0, closure_18) {
+export const pathJoin = function pathJoin(arg0, outer2_18) {
   const items = [...arguments];
   let str = "/";
   if (obj.isWindows()) {

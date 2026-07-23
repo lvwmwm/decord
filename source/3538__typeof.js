@@ -1,12 +1,12 @@
 // Module ID: 3538
-// Function ID: 27421
+// Function ID: 27388
 // Name: _typeof
-// Dependencies: []
+// Dependencies: [3517, 3515]
 
 // Module 3538 (_typeof)
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
-    const _Symbol = Symbol;
+    let _Symbol = Symbol;
     if ("symbol" === typeof Symbol.iterator) {
       function _typeof(arg0) {
         return typeof arg0;
@@ -42,16 +42,16 @@ function _defineProperties(arg0, arg1) {
   }
 }
 function _setPrototypeOf(arg0, arg1) {
-  const tmp = Object.setPrototypeOf || function _setPrototypeOf(arg0, arg1) {
+  const tmp = Object.setPrototypeOf || (function _setPrototypeOf(arg0, arg1) {
     arg0.__proto__ = arg1;
     return arg0;
-  };
+  });
   const _setPrototypeOf = tmp;
   return tmp(arg0, arg1);
 }
 function _createSuper(arg0) {
-  const require = arg0;
-  let closure_1 = function _isNativeReflectConstruct() {
+  let closure_0 = arg0;
+  let closure_1 = (function _isNativeReflectConstruct() {
     if ("undefined" !== typeof Reflect) {
       const _Reflect3 = Reflect;
       if (Reflect.construct) {
@@ -75,22 +75,22 @@ function _createSuper(arg0) {
       }
     }
     return false;
-  }();
+  })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = callback3(arg0);
+    const obj = outer1_7(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, callback3(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      callback2(self);
+      outer1_6(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== callback(constructResult)) {
+      if ("object" !== outer1_2(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -108,7 +108,7 @@ function _assertThisInitialized(arg0) {
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
-    const _Object = Object;
+    let _Object = Object;
     let _getPrototypeOf = Object.getPrototypeOf;
   } else {
     _getPrototypeOf = function _getPrototypeOf(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { value, enumerable: true, configurable: true, writable: true };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const DayPeriodParser = (Parser) => {
-  class DayPeriodParser {
+export const AMPMParser = ((Parser) => {
+  class AMPMParser {
     constructor() {
-      if (this instanceof DayPeriodParser) {
+      if (this instanceof AMPMParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -148,21 +148,21 @@ export const DayPeriodParser = (Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = closure_8;
-        tmp12 = closure_6;
+        tmp11 = outer1_8;
+        tmp12 = outer1_6;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = closure_6(applyResult);
+        tmp16 = outer1_6(applyResult);
         str2 = "priority";
         num2 = 80;
-        tmp17 = closure_8(applyResult, "priority", 80);
-        tmp18 = closure_6(applyResult);
+        tmp17 = outer1_8(applyResult, "priority", 80);
+        tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["b", "B", "H", "k", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -176,11 +176,10 @@ export const DayPeriodParser = (Parser) => {
       }
     }
   }
-  const dependencyMap = DayPeriodParser;
   if ("function" !== typeof Parser) {
-    class DayPeriodParser {
+    class AMPMParser {
       constructor() {
-        if (this instanceof DayPeriodParser) {
+        if (this instanceof AMPMParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -192,21 +191,21 @@ export const DayPeriodParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
           num2 = 80;
-          tmp17 = closure_8(applyResult, "priority", 80);
-          tmp18 = closure_6(applyResult);
+          tmp17 = outer1_8(applyResult, "priority", 80);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["b", "B", "H", "k", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,12 +224,12 @@ export const DayPeriodParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { "": null, children: null, "": null, value: DayPeriodParser };
-  DayPeriodParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: AMPMParser, writable: true, configurable: true };
+  AMPMParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class DayPeriodParser {
+    class AMPMParser {
       constructor() {
-        if (this instanceof DayPeriodParser) {
+        if (this instanceof AMPMParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -242,21 +241,21 @@ export const DayPeriodParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
           num2 = 80;
-          tmp17 = closure_8(applyResult, "priority", 80);
-          tmp18 = closure_6(applyResult);
+          tmp17 = outer1_8(applyResult, "priority", 80);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", []);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["b", "B", "H", "k", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -270,35 +269,35 @@ export const DayPeriodParser = (Parser) => {
         }
       }
     }
-    _setPrototypeOf(DayPeriodParser, Parser);
+    _setPrototypeOf(AMPMParser, Parser);
   }
-  let closure_0 = _createSuper(DayPeriodParser);
+  let closure_0 = _createSuper(AMPMParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, dayPeriod) {
-      if ("B" !== arg1) {
-        if ("BB" !== arg1) {
-          if ("BBB" !== arg1) {
-            if ("BBBBB" === arg1) {
-              return dayPeriod.dayPeriod(arg0, {});
+      if ("a" !== arg1) {
+        if ("aa" !== arg1) {
+          if ("aaa" !== arg1) {
+            if ("aaaaa" === arg1) {
+              return dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
             } else {
-              return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {});
+              return dayPeriod.dayPeriod(arg0, { width: "wide", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
             }
           }
         }
       }
-      return dayPeriod.dayPeriod(arg0, {}) || dayPeriod.dayPeriod(arg0, {});
+      return dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "set",
     value: function set(setUTCHours) {
-      setUTCHours.setUTCHours(callback(DayPeriodParser[0]).dayPeriodEnumToHours(arg2), 0, 0, 0);
+      setUTCHours.setUTCHours(callback(AMPMParser[0]).dayPeriodEnumToHours(arg2), 0, 0, 0);
       return setUTCHours;
     }
   };
   items[1] = obj;
-  _defineProperties(DayPeriodParser.prototype, items);
-  return DayPeriodParser;
-}(require(dependencyMap[1]).Parser);
+  _defineProperties(AMPMParser.prototype, items);
+  return AMPMParser;
+})(require("_defineProperties").Parser);

@@ -1,13 +1,13 @@
-// Module ID: 6247
-// Function ID: 50303
+// Module ID: 6252
+// Function ID: 50332
 // Name: HeadphonesAndControllerSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6253, 2]
 // Exports: HeadphonesAndControllerSpotIllustration
 
-// Module 6247 (HeadphonesAndControllerSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HeadphonesAndControllerSpotIllustration.native.tsx");
+// Module 6252 (HeadphonesAndControllerSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HeadphonesAndControllerSpotIllustration.native.tsx");
 
 export const HeadphonesAndControllerSpotIllustration = function HeadphonesAndControllerSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const HeadphonesAndControllerSpotIllustration = function HeadphonesAndCon
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6253) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const HeadphonesAndControllerSpotIllustration = function HeadphonesAndCon
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

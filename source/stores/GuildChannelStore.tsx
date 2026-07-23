@@ -1,10 +1,35 @@
 // Module ID: 1907
-// Function ID: 21419
+// Function ID: 21420
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1908, 1351, 3757, 1352, 1194, 1348, 1917, 1838, 3758, 3767, 1849, 653, 22, 4320, 483, 3763, 566, 686, 2]
 
 // Module 1907 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createFavoritesChannelRecord from "createFavoritesChannelRecord";
+import closure_6 from "_isNativeReflectConstruct";
+import apply from "apply";
+import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { createFavoritesChannelRecord as closure_11 } from "createFavoritesChannelRecord";
+import _callSuper from "_callSuper";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import closure_17 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_19 from "_isNativeReflectConstruct";
+import closure_20 from "_isNativeReflectConstruct";
+import closure_21 from "_isNativeReflectConstruct";
+import ME from "ME";
+
 let ChannelTypes;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_22;
+let closure_24;
+let closure_25;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,49 +39,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -67,16 +92,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -94,9 +119,8 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function createGuildChannelList(NULL_STRING_GUILD_ID) {
-  const obj = { id: NULL_STRING_GUILD_ID, [closure_26]: [], [closure_27]: [], [closure_23.GUILD_CATEGORY]: items, ["count"]: 0 };
-  const items = [obj];
-  return obj;
+  const items = [_callSuper];
+  return { id: NULL_STRING_GUILD_ID, [closure_26]: [], [closure_27]: [], [closure_23.GUILD_CATEGORY]: items, ["count"]: 0 };
 }
 function comparator(comparator, comparator2) {
   return comparator.comparator - comparator2.comparator;
@@ -104,19 +128,19 @@ function comparator(comparator, comparator2) {
 function getChannelsForGuild(id) {
   if (id === closure_22) {
     let obj = {};
-    const favoriteChannels = favoriteChannels.getFavoriteChannels();
+    favoriteChannels = favoriteChannels.getFavoriteChannels();
     for (const key10017 in favoriteChannels) {
       let tmp11 = key10017;
-      let tmp12 = closure_16;
-      let channel = closure_16.getChannel(key10017);
+      let tmp12 = store;
+      let channel = store.getChannel(key10017);
       if (null == channel) {
         continue;
       } else {
-        let tmp8 = closure_11;
-        let tmp9 = closure_11(favoriteChannels, favoriteChannels[key10017], channel);
+        let tmp8 = callback3;
+        let tmp9 = callback3(favoriteChannels, favoriteChannels[key10017], channel);
         obj = { channel: tmp9, comparator: tmp9.position };
         obj[key10017] = obj;
-        // continue
+        continue;
       }
       continue;
     }
@@ -128,34 +152,34 @@ function getChannelsForGuild(id) {
       let tmp10 = key10008;
       let obj1 = { channel: mutableGuildChannelsForGuild[key10008], comparator: mutableGuildChannelsForGuild[key10008].position };
       obj[key10008] = obj1;
+      continue;
     }
     return obj;
   }
 }
 function rebuildChannels(id) {
-  const arg1 = id;
+  let closure_0 = id;
   id = id.id;
-  const importDefault = id;
   const tmp = getChannelsForGuild(id);
-  const item = importDefault(dependencyMap[17]).forEach(tmp, (channel) => {
+  const item = id(22).forEach(tmp, (channel) => {
     channel = channel.channel;
-    channel.count = channel.count + 1;
+    count.count = count.count + 1;
     let type = channel.type;
-    if (callback(type)) {
-      type = closure_26;
-    } else if (callback2(type)) {
-      type = closure_27;
+    if (outer1_12(type)) {
+      type = outer1_26;
+    } else if (outer1_14(type)) {
+      type = outer1_27;
     }
-    if (channel.type === constants.GUILD_DIRECTORY) {
-      if (null == closure_33[closure_1]) {
-        closure_33[id] = [];
+    if (channel.type === outer1_23.GUILD_DIRECTORY) {
+      if (null == outer1_33[id]) {
+        outer1_33[id] = [];
       }
-      let arr = closure_33[closure_1];
+      let arr = outer1_33[id];
       arr = arr.push(channel);
     }
-    if (null != channel[type]) {
-      arr = channel[type].push(channel);
-      const arr2 = channel[type];
+    if (null != count[type]) {
+      arr = count[type].push(channel);
+      const arr2 = count[type];
     }
   });
   return id;
@@ -165,8 +189,8 @@ function resetAllGuildChannels() {
   let closure_33 = {};
   let closure_30 = {};
   let closure_31 = {};
-  if (null != closure_28) {
-    rebuildGuildChannels(closure_28);
+  if (null != c28) {
+    rebuildGuildChannels(c28);
   }
 }
 function rebuildGuildChannels(guildId) {
@@ -174,51 +198,51 @@ function rebuildGuildChannels(guildId) {
   closure_29[guildId] = tmp;
   closure_33[guildId] = [];
   rebuildChannels(tmp);
-  const sorted = tmp[closure_26].sort(comparator);
-  const sorted1 = tmp[closure_27].sort(comparator);
-  const sorted2 = tmp[closure_23.GUILD_CATEGORY].sort(comparator);
-  function rebuildDisambiguations(id) {
-    const obj = {};
-    closure_30[id.id] = obj;
+  const sorted = tmp[SELECTABLE].sort(comparator);
+  const sorted1 = tmp[VOCAL].sort(comparator);
+  const sorted2 = tmp[ChannelTypes.GUILD_CATEGORY].sort(comparator);
+  (function rebuildDisambiguations(id) {
+    let obj = {};
+    outer1_30[id.id] = obj;
     let closure_1 = {};
-    const item = id[closure_26].forEach((channel) => {
+    const item = id[outer1_26].forEach((channel) => {
       channel = channel.channel;
-      let obj = obj(closure_3[18]);
-      const channelName = obj.computeChannelName(channel, closure_21, closure_20);
+      let obj = outer2_0(outer2_3[18]);
+      const channelName = obj.computeChannelName(channel, outer2_21, outer2_20);
       let tmp2 = null;
-      if (hasOwnProperty.call(closure_1, channelName)) {
-        tmp2 = closure_1[channelName];
+      if (hasOwnProperty.call(table, channelName)) {
+        tmp2 = table[channelName];
       }
       if (null == tmp2) {
-        closure_1[channelName] = 1;
+        table[channelName] = 1;
         let sum = channelName;
       } else {
-        closure_1[channelName] = tmp2 + 1;
+        table[channelName] = tmp2 + 1;
         const _HermesInternal = HermesInternal;
         sum = channelName + "~" + tmp2;
       }
       obj = { id: channel.id, name: sum };
       obj[channel.id] = obj;
     });
-  }(tmp);
-  function rebuildGuildElevatedPermissions(guildId) {
-    const currentUser = currentUser.getCurrentUser();
-    const guild = guild.getGuild(guildId);
+  })(tmp);
+  (function rebuildGuildElevatedPermissions(guildId) {
+    const currentUser = outer1_21.getCurrentUser();
+    const guild = outer1_18.getGuild(guildId);
     if (null == guild) {
-      let tmp5 = closure_29[guildId];
-      if (null == tmp5) {
-        tmp5 = callback2(guildId);
+      let tmp7 = outer1_29[guildId];
+      if (null == tmp7) {
+        tmp7 = outer1_45(guildId);
       }
-      const tmp10 = callback(tmp5[closure_26]);
-      let iter = tmp10();
+      const tmp12 = outer1_39(tmp7[outer1_26]);
+      let iter = tmp12();
       if (iter.done) {
-        const tmp13 = callback(tmp5[closure_27]);
-        let iter3 = tmp13();
+        const tmp15 = outer1_39(tmp7[outer1_27]);
+        let iter3 = tmp15();
         let flag = false;
         if (!iter3.done) {
           flag = true;
-          while (!callback3(currentUser, iter3.value.channel)) {
-            let iter4 = tmp13();
+          while (!outer1_46(currentUser, iter3.value.channel)) {
+            let iter4 = tmp15();
             iter3 = iter4;
             flag = false;
             if (iter4.done) {
@@ -228,8 +252,8 @@ function rebuildGuildChannels(guildId) {
         }
       } else {
         flag = true;
-        while (!callback3(currentUser, iter.value.channel)) {
-          let iter2 = tmp10();
+        while (!outer1_46(currentUser, iter.value.channel)) {
+          let iter2 = tmp12();
           iter = iter2;
           break;
         }
@@ -238,11 +262,11 @@ function rebuildGuildChannels(guildId) {
       flag = true;
     }
     if (flag) {
-      tmp15[guildId] = true;
+      tmp17[guildId] = true;
     } else {
-      delete r1[r2];
+      delete tmp[tmp2];
     }
-  }(guildId);
+  })(guildId);
   return tmp;
 }
 function handleGuildUpdates(guild) {
@@ -251,7 +275,7 @@ function handleGuildUpdates(guild) {
     return false;
   } else {
     closure_29[id] = undefined;
-    if (closure_28 === id) {
+    if (c28 === id) {
       rebuildGuildChannels(id);
     }
   }
@@ -262,7 +286,7 @@ function handleChannelUpdate(channel) {
     return false;
   } else {
     closure_29[guild_id] = undefined;
-    if (guild_id === closure_28) {
+    if (guild_id === c28) {
       rebuildGuildChannels(guild_id);
     }
   }
@@ -270,14 +294,14 @@ function handleChannelUpdate(channel) {
 function handleGuildRoleUpdate(guildId) {
   guildId = guildId.guildId;
   closure_29[guildId] = undefined;
-  if (guildId === closure_28) {
+  if (guildId === c28) {
     rebuildGuildChannels(guildId);
   }
 }
 function hasElevatedPermissions(id) {
-  let obj = importAll(dependencyMap[19]);
+  let obj = importAll(483);
   obj = { user: id, context: arg1, checkElevated: false };
-  return obj.hasAny(importAll(dependencyMap[20]).computePermissions(obj), closure_25);
+  return obj.hasAny(importAll(3763).computePermissions(obj), closure_25);
 }
 function updateSelectedVoiceChannel(getGuildId) {
   let closure_32 = arg1;
@@ -293,7 +317,7 @@ function updateSelectedVoiceChannel(getGuildId) {
   if (flag) {
     closure_29[tmp2] = undefined;
     flag = true;
-    if (tmp2 === closure_28) {
+    if (tmp2 === c28) {
       rebuildGuildChannels(tmp2);
       flag = true;
     }
@@ -303,52 +327,35 @@ function updateSelectedVoiceChannel(getGuildId) {
 function handleFavoritesUpdate() {
   rebuildGuildChannels(closure_22);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createFavoritesChannelRecord;
-let obj = arg1(dependencyMap[8]);
-({ isGuildSelectableChannelType: closure_12, GUILD_NON_CATEGORY_CHANNEL_TYPES: closure_13, isGuildVocalChannelType: closure_14 } = obj);
-let closure_15 = importDefault(dependencyMap[9]);
-let closure_16 = importDefault(dependencyMap[10]);
-let closure_17 = importDefault(dependencyMap[11]);
-let closure_18 = importDefault(dependencyMap[12]);
-let closure_19 = importDefault(dependencyMap[13]);
-let closure_20 = importDefault(dependencyMap[14]);
-let closure_21 = importDefault(dependencyMap[15]);
-const tmp2 = arg1(dependencyMap[16]);
-({ FAVORITES: closure_22, ChannelTypes } = tmp2);
-({ Permissions: closure_24, ElevatedPermissions: closure_25 } = tmp2);
-let closure_26 = "SELECTABLE";
-let closure_27 = "VOCAL";
-let closure_28 = null;
+({ isGuildSelectableChannelType: closure_12, GUILD_NON_CATEGORY_CHANNEL_TYPES: closure_13, isGuildVocalChannelType: closure_14 } = _callSuper);
+({ FAVORITES: closure_22, ChannelTypes } = ME);
+({ Permissions: closure_24, ElevatedPermissions: closure_25 } = ME);
+const SELECTABLE = "SELECTABLE";
+const VOCAL = "VOCAL";
+let c28 = null;
 let closure_29 = {};
 let closure_30 = {};
 let closure_31 = {};
-let closure_32 = null;
+let c32 = null;
 let closure_33 = {};
-obj = { comparator: -1, channel: obj.createChannelRecord(obj) };
-obj = { id: tmp2.NULL_STRING_CHANNEL_ID, type: ChannelTypes.GUILD_CATEGORY, name: "Uncategorized" };
-let closure_35 = createGuildChannelList(tmp2.NULL_STRING_GUILD_ID);
+_callSuper = { comparator: -1, channel: _callSuper.createChannelRecord(_callSuper) };
+_callSuper = { id: ME.NULL_STRING_CHANNEL_ID, type: ChannelTypes.GUILD_CATEGORY, name: "Uncategorized" };
+let closure_35 = createGuildChannelList(ME.NULL_STRING_GUILD_ID);
 let closure_36 = [];
 let closure_37 = {};
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class GuildChannelStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, GuildChannelStore);
-      obj = closure_7(GuildChannelStore);
-      tmp2 = closure_6;
-      if (closure_38()) {
+      tmp = outer1_4(this, GuildChannelStore);
+      obj = outer1_7(GuildChannelStore);
+      tmp2 = outer1_6;
+      if (outer1_38()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -357,21 +364,20 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildChannelStore;
   callback2(GuildChannelStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_15, closure_16, closure_10, closure_9, closure_17, closure_18, closure_19, closure_21);
-      const items = [closure_10];
-      this.syncWith(items, closure_48);
+      this.waitFor(outer1_15, outer1_16, outer1_10, outer1_9, outer1_17, outer1_18, outer1_19, outer1_21);
+      const items = [outer1_10];
+      this.syncWith(items, outer1_48);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , ];
   obj = {
     key: "getAllGuilds",
     value() {
-      return closure_29;
+      return outer1_29;
     }
   };
   items[1] = obj;
@@ -379,13 +385,13 @@ let tmp3 = (Store) => {
     key: "getChannels",
     value(arg0) {
       if (null != arg0) {
-        let tmp3 = closure_29[arg0];
+        let tmp3 = outer1_29[arg0];
         if (null == tmp3) {
-          tmp3 = callback4(arg0);
+          tmp3 = outer1_45(arg0);
         }
         let tmp = tmp3;
       } else {
-        tmp = closure_35;
+        tmp = outer1_35;
       }
       return tmp;
     }
@@ -410,11 +416,11 @@ let tmp3 = (Store) => {
       if (arg2 === undefined) {
         flag = false;
       }
-      let firstChannelOfType = self.getFirstChannelOfType(arg0, id, closure_26);
+      let firstChannelOfType = self.getFirstChannelOfType(arg0, id, outer1_26);
       if (null == firstChannelOfType) {
         let firstChannelOfType1 = null;
         if (flag) {
-          firstChannelOfType1 = self.getFirstChannelOfType(arg0, id, closure_27);
+          firstChannelOfType1 = self.getFirstChannelOfType(arg0, id, outer1_27);
         }
         firstChannelOfType = firstChannelOfType1;
       }
@@ -431,10 +437,9 @@ let tmp3 = (Store) => {
         flag = false;
       }
       if (VIEW_CHANNEL === undefined) {
-        VIEW_CHANNEL = constants.VIEW_CHANNEL;
+        VIEW_CHANNEL = outer1_24.VIEW_CHANNEL;
       }
-      const GuildChannelStore = VIEW_CHANNEL;
-      return self.getFirstChannel(arg0, (channel) => closure_19.can(VIEW_CHANNEL, channel.channel), flag);
+      return self.getFirstChannel(arg0, (channel) => outer2_19.can(VIEW_CHANNEL, channel.channel), flag);
     }
   };
   items[6] = {
@@ -447,39 +452,38 @@ let tmp3 = (Store) => {
         flag = false;
       }
       if (VIEW_CHANNEL === undefined) {
-        VIEW_CHANNEL = constants.VIEW_CHANNEL;
+        VIEW_CHANNEL = outer1_24.VIEW_CHANNEL;
       }
-      const GuildChannelStore = VIEW_CHANNEL;
-      return self.getFirstChannel(arg0, (channel) => closure_19.can(VIEW_CHANNEL, channel.channel) && !channel.channel.nsfw, flag);
+      return self.getFirstChannel(arg0, (channel) => outer2_19.can(VIEW_CHANNEL, channel.channel) && !channel.channel.nsfw, flag);
     }
   };
   items[7] = {
     key: "getSelectableChannelIds",
     value(arg0) {
-      return this.getChannels(arg0)[closure_26].map((channel) => channel.channel.id);
+      return this.getChannels(arg0)[outer1_26].map((channel) => channel.channel.id);
     }
   };
   items[8] = {
     key: "getSelectableChannels",
     value(arg0) {
-      return this.getChannels(arg0)[closure_26];
+      return this.getChannels(arg0)[outer1_26];
     }
   };
   items[9] = {
     key: "getVocalChannelIds",
     value(arg0) {
-      return this.getChannels(arg0)[closure_27].map((channel) => channel.channel.id);
+      return this.getChannels(arg0)[outer1_27].map((channel) => channel.channel.id);
     }
   };
   items[10] = {
     key: "getDirectoryChannelIds",
     value(arg0) {
       let mapped;
-      if (null != closure_33[arg0]) {
+      if (null != outer1_33[arg0]) {
         mapped = arr.map((channel) => channel.channel.id);
       }
       if (null == mapped) {
-        mapped = closure_36;
+        mapped = outer1_36;
       }
       return mapped;
     }
@@ -494,7 +498,7 @@ let tmp3 = (Store) => {
   items[12] = {
     key: "hasElevatedPermissions",
     value(arg0) {
-      return closure_31[arg0] || false;
+      return outer1_31[arg0] || false;
     }
   };
   items[13] = {
@@ -506,22 +510,22 @@ let tmp3 = (Store) => {
   items[14] = {
     key: "hasCategories",
     value(arg0) {
-      return this.getChannels(arg0)[closure_23.GUILD_CATEGORY].length > 1;
+      return this.getChannels(arg0)[outer1_23.GUILD_CATEGORY].length > 1;
     }
   };
   items[15] = {
     key: "getTextChannelNameDisambiguations",
     value(arg0) {
       if (null == arg0) {
-        const tmp2 = closure_37;
+        const tmp2 = outer1_37;
       }
       return tmp2;
     }
   };
   return callback(GuildChannelStore, items);
-}(importDefault(dependencyMap[21]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "GuildChannelStore";
-tmp3 = new tmp3(importDefault(dependencyMap[22]), {
+tmp3 = new tmp3(require("dispatcher"), {
   BACKGROUND_SYNC: resetAllGuildChannels,
   CHANNEL_SELECT: function handleChannelSelect(guildId) {
     guildId = guildId.guildId;
@@ -529,10 +533,10 @@ tmp3 = new tmp3(importDefault(dependencyMap[22]), {
     if (null != guildId) {
       tmp = guildId;
     }
-    let closure_28 = tmp;
+    let c28 = tmp;
     let tmp2 = null != guildId;
     if (tmp2) {
-      if (null == closure_29[guildId]) {
+      if (null == table[guildId]) {
         rebuildGuildChannels(guildId);
       }
       tmp2 = tmp4;
@@ -545,10 +549,10 @@ tmp3 = new tmp3(importDefault(dependencyMap[22]), {
   GUILD_CREATE: handleGuildUpdates,
   GUILD_UPDATE: handleGuildUpdates,
   GUILD_DELETE: function handleGuildDelete(arg0) {
-    delete r2[r1];
-    delete r2[r1];
-    delete r2[r1];
-    delete r0[r1];
+    delete tmp3[tmp2];
+    delete tmp3[tmp2];
+    delete tmp3[tmp2];
+    delete tmp[tmp2];
     return true;
   },
   GUILD_MEMBER_UPDATE: function handleGuildMemberUpdate(guildId) {
@@ -557,7 +561,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[22]), {
       return false;
     } else {
       closure_29[guildId] = undefined;
-      if (guildId === closure_28) {
+      if (guildId === c28) {
         rebuildGuildChannels(guildId);
       }
     }
@@ -577,11 +581,11 @@ tmp3 = new tmp3(importDefault(dependencyMap[22]), {
         if (null != guild_id) {
           let tmp2 = closure_29;
           closure_29[guild_id] = undefined;
-          let tmp3 = closure_28;
+          let tmp3 = c28;
           flag = true;
-          if (closure_28 === guild_id) {
-            let tmp4 = closure_45;
-            let tmp5 = closure_45(guild_id);
+          if (c28 === guild_id) {
+            let tmp4 = rebuildGuildChannels;
+            let tmp5 = rebuildGuildChannels(guild_id);
             flag = true;
           }
         }
@@ -600,8 +604,8 @@ tmp3 = new tmp3(importDefault(dependencyMap[22]), {
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(channelId) {
     channelId = channelId.channelId;
     if (null == channelId) {
-      if (null != closure_32) {
-        let tmp2 = updateSelectedVoiceChannel(store.getChannel(closure_32), null);
+      if (null != c32) {
+        let tmp2 = updateSelectedVoiceChannel(store.getChannel(c32), null);
       }
       return tmp2;
     }
@@ -618,15 +622,15 @@ tmp3 = new tmp3(importDefault(dependencyMap[22]), {
     return voiceStates.reduce((arg0, channelId) => {
       channelId = channelId.channelId;
       let tmp = arg0;
-      if (sessionId.getSessionId() === channelId.sessionId) {
-        tmp = callback(channel.getChannel(channelId), channelId) || arg0;
-        const tmp4 = callback(channel.getChannel(channelId), channelId) || arg0;
+      if (outer1_15.getSessionId() === channelId.sessionId) {
+        tmp = outer1_47(outer1_16.getChannel(channelId), channelId) || arg0;
+        const tmp4 = outer1_47(outer1_16.getChannel(channelId), channelId) || arg0;
       }
       return tmp;
     }, false);
   }
 });
-const result = arg1(dependencyMap[23]).fileFinishedImporting("stores/GuildChannelStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GuildChannelStore.tsx");
 
 export default tmp3;
 export const GUILD_SELECTABLE_CHANNELS_KEY = "SELECTABLE";

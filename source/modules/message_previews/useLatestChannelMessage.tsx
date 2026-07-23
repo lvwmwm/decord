@@ -1,44 +1,44 @@
-// Module ID: 14093
-// Function ID: 106969
+// Module ID: 14207
+// Function ID: 109125
 // Name: useLatestChannelMessage
-// Dependencies: []
+// Dependencies: [57, 31, 12641, 566, 14208, 2]
 // Exports: default
 
-// Module 14093 (useLatestChannelMessage)
-let closure_3 = importDefault(dependencyMap[0]);
-const useEffect = arg1(dependencyMap[1]).useEffect;
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
+// Module 14207 (useLatestChannelMessage)
+import _slicedToArray from "_slicedToArray";
+import { useEffect } from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
 
 export default function useLatestChannelMessage(arg0) {
+  let c1;
   let id;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  const arg1 = flag;
-  let closure_1;
-  let dependencyMap;
+  c1 = undefined;
+  id = undefined;
   let callback;
-  ({ guild_id: closure_1, id } = arg0);
-  dependencyMap = id;
-  const items = [closure_5];
-  const tmp = callback(arg1(dependencyMap[3]).useStateFromStoresArray(items, () => {
+  ({ guild_id: c1, id } = arg0);
+  let items = [_createForOfIteratorHelperLoose];
+  const tmp = callback(flag(id[3]).useStateFromStoresArray(items, () => {
     if (flag) {
-      const items = [true, true];
+      const items = [null, true];
       let items1 = items;
     } else {
-      items1 = [closure_5.message(closure_1, id), closure_5.isLatest(closure_1, id)];
+      items1 = [outer1_5.message(c1, id), outer1_5.isLatest(c1, id)];
     }
     return items1;
   }), 2);
   callback = tmp2;
-  const items1 = [id, tmp[1]];
+  let items1 = [id, tmp[1]];
   useEffect(() => {
     if (!tmp) {
       _undefined(id[4]).addWant(id);
       const obj = _undefined(id[4]);
-      const tmp2 = _undefined;
     }
   }, items1);
   return tmp[0];

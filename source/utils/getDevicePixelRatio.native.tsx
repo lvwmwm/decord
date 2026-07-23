@@ -1,13 +1,13 @@
 // Module ID: 1825
-// Function ID: 20013
+// Function ID: 20014
 // Name: getDevicePixelRatio
-// Dependencies: []
+// Dependencies: [27, 2]
 // Exports: default
 
 // Module 1825 (getDevicePixelRatio)
-const PixelRatio = require(dependencyMap[0]).PixelRatio;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/getDevicePixelRatio.native.tsx");
+import { PixelRatio } from "get ActivityIndicator";
+
+const result = require("set").fileFinishedImporting("utils/getDevicePixelRatio.native.tsx");
 
 export default function getDevicePixelRatio() {
   const value = PixelRatio.get();

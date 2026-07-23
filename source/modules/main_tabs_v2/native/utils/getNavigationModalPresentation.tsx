@@ -1,31 +1,32 @@
-// Module ID: 10153
-// Function ID: 78504
+// Module ID: 10161
+// Function ID: 78544
 // Name: getNavigationModalPresentation
-// Dependencies: []
+// Dependencies: [477, 8133, 4110, 8303, 2]
 // Exports: default
 
-// Module 10153 (getNavigationModalPresentation)
-const obj = {};
-const _module = require(dependencyMap[0]);
-if (_module.isAndroid()) {
-  const _module1 = require(dependencyMap[1]);
+// Module 10161 (getNavigationModalPresentation)
+import set from "set";
+import set from "set";
+import set from "getSystemVersion";
+
+let obj = {};
+if (set.isAndroid()) {
+  const _module1 = require("useIsWindowLarge");
   let str2 = "modal";
   if (_module1.getIsWindowLarge()) {
     str2 = "fullScreenModal";
   }
   let str = str2;
 } else {
-  const _module2 = require(dependencyMap[2]);
+  const _module2 = require("getSystemVersion");
   str = "modal";
   if (_module2.isIpadOS()) {
     str = "fullScreenModal";
   }
 }
 obj.presentation = str;
-const _module3 = require(dependencyMap[0]);
-obj.lockOrientation = !_module3.isAndroid();
-const _module4 = require(dependencyMap[4]);
-const result = _module4.fileFinishedImporting("modules/main_tabs_v2/native/utils/getNavigationModalPresentation.tsx");
+obj.lockOrientation = !set.isAndroid();
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/utils/getNavigationModalPresentation.tsx");
 
 export default function getNavigationModalPresentation() {
   let tmp = arg0;
@@ -44,16 +45,23 @@ export default function getNavigationModalPresentation() {
     }
     lockOrientation = lockOrientation2;
   }
-  const obj = { presentation };
+  obj = { presentation };
   let tmp4;
   if (lockOrientation) {
-    const orientation = require(dependencyMap[3]).getOrientation();
+    const orientationLock = require(8303) /* handleOrientationChange */.getOrientationLock();
     let str2 = "landscape";
-    if (orientation === require(dependencyMap[3]).OrientationType.PORTRAIT) {
-      str2 = "portrait";
+    let str4 = "landscape";
+    if ("LANDSCAPE" !== orientationLock) {
+      if (null != orientationLock) {
+        str2 = "portrait";
+      } else {
+        const orientation = require(8303) /* handleOrientationChange */.getOrientation();
+        const obj3 = require(8303) /* handleOrientationChange */;
+      }
+      str4 = str2;
     }
-    tmp4 = str2;
-    const obj2 = require(dependencyMap[3]);
+    tmp4 = str4;
+    const obj2 = require(8303) /* handleOrientationChange */;
   }
   obj.orientation = tmp4;
   return obj;

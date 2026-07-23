@@ -1,16 +1,19 @@
-// Module ID: 12210
-// Function ID: 93783
+// Module ID: 12324
+// Function ID: 95934
 // Name: generateSeparatorRowData
-// Dependencies: []
+// Dependencies: [7622, 4130, 689, 1324, 1327, 2]
 // Exports: generateSeparatorRowData
 
-// Module 12210 (generateSeparatorRowData)
-const _module = require(dependencyMap[0]);
-({ RowType: closure_2, SeparatorType: closure_3 } = _module);
-const _module1 = require(dependencyMap[1]);
-let closure_4 = _module1.createNativeStyleProperties({ dayColor: importDefault(dependencyMap[2]).colors.TEXT_MUTED, unreadTextColor: importDefault(dependencyMap[2]).colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: importDefault(dependencyMap[2]).colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: importDefault(dependencyMap[2]).colors.TEXT_BRAND });
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/messages/native/renderer/rows/Separator.tsx");
+// Module 12324 (generateSeparatorRowData)
+import Changeset from "Changeset";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2;
+let closure_3;
+({ RowType: closure_2, SeparatorType: closure_3 } = Changeset);
+let closure_4 = _createForOfIteratorHelperLoose.createNativeStyleProperties({ dayColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, unreadTextColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND });
+let obj = { dayColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, unreadTextColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/renderer/rows/Separator.tsx");
 
 export const generateSeparatorRowData = function generateSeparatorRowData(text, theme) {
   let changeType;
@@ -35,7 +38,7 @@ export const generateSeparatorRowData = function generateSeparatorRowData(text, 
     const obj1 = { type: constants.SEPARATOR, id: rowType, color: tmp.summaryColor, text: summary.topic, summary, isBeforeContent: text.isBeforeContent, changeType };
     return obj1;
   } else {
-    obj = require(dependencyMap[4]);
+    obj = require(1327) /* isDiscordFrontendDevelopment */;
     obj.assertNever(rowType);
   }
 };

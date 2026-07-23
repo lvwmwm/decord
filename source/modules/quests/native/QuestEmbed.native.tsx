@@ -1,10 +1,19 @@
-// Module ID: 12184
-// Function ID: 93661
+// Module ID: 12298
+// Function ID: 95812
 // Name: buildBaseEmbedProps
-// Dependencies: []
+// Dependencies: [27, 1278, 6942, 4976, 653, 6979, 477, 1212, 6965, 10926, 4979, 3976, 9458, 1553, 12299, 6940, 6959, 6963, 7633, 2]
 // Exports: createQuestsEmbed
 
-// Module 12184 (buildBaseEmbedProps)
+// Module 12298 (buildBaseEmbedProps)
+import { Image } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import QuestsExperimentLocations from "QuestsExperimentLocations";
+import { ThemeTypes } from "ME";
+import { InviteTypes } from "InviteSendStates";
+
+let closure_6;
+let closure_7;
 function buildBaseEmbedProps(arg0) {
   let bodyText;
   let themeColors;
@@ -25,7 +34,7 @@ function buildBaseEmbedProps(arg0) {
   obj["canBeAccepted"] = true;
   obj["type"] = InviteTypes.GUILD;
   obj = {};
-  const obj2 = require(dependencyMap[6]);
+  const obj2 = require(477) /* set */;
   const merged1 = Object.assign(obj);
   if (isAndroidResult) {
     obj["headerText"] = null;
@@ -41,25 +50,25 @@ function buildBaseEmbedProps(arg0) {
 function buildSupportedOnMobileEmbedBodyText(quest) {
   quest = quest.quest;
   if (quest.config.expiresAt < date.toISOString()) {
-    const intl = require(dependencyMap[7]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     let obj = { questName: quest.config.messages.questName };
-    return intl.formatToPlainString(require(dependencyMap[7]).t.ge+AJp, obj);
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["ge+AJp"], obj);
   } else {
     let tmp;
-    const questTaskDetails = require(dependencyMap[8]).getQuestTaskDetails(quest);
-    const obj3 = require(dependencyMap[8]);
-    const thirdPartyTaskDetails = require(dependencyMap[8]).getThirdPartyTaskDetails(quest);
-    const obj4 = require(dependencyMap[8]);
-    obj = { quest, taskDetails: questTaskDetails, location: constants.EMBED_MOBILE, sourceQuestContent: require(dependencyMap[10]).QuestContent.QUEST_EMBED_MOBILE };
+    const questTaskDetails = require(6965) /* _createForOfIteratorHelperLoose */.getQuestTaskDetails(quest);
+    const obj3 = require(6965) /* _createForOfIteratorHelperLoose */;
+    const thirdPartyTaskDetails = require(6965) /* _createForOfIteratorHelperLoose */.getThirdPartyTaskDetails(quest);
+    const obj4 = require(6965) /* _createForOfIteratorHelperLoose */;
+    obj = { quest, taskDetails: questTaskDetails, location: constants.EMBED_MOBILE, sourceQuestContent: require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_EMBED_MOBILE };
     if (null != thirdPartyTaskDetails) {
       tmp = thirdPartyTaskDetails;
     }
     obj.thirdPartyTaskDetails = tmp;
     obj.withoutMarkdown = true;
     obj.currentUser = quest.currentUser;
-    return require(dependencyMap[9]).getQuestsInstructionsToWinReward(obj);
+    return require(10926) /* formatWithOrWithoutMarkdown */.getQuestsInstructionsToWinReward(obj);
   }
-  const date = new Date();
+  date = new Date();
 }
 function buildQuestsEmbedProps(currentUser) {
   let quest;
@@ -67,24 +76,24 @@ function buildQuestsEmbedProps(currentUser) {
   let themeColors;
   let themeColors2;
   ({ questId, themeColors } = currentUser);
-  let obj = require(dependencyMap[13]);
+  let obj = require(1553) /* isMetaQuest */;
   if (obj.isMetaQuest()) {
     obj = {};
     obj = {};
-    const intl8 = require(dependencyMap[7]).intl;
-    obj.titleText = intl8.string(require(dependencyMap[7]).t.6LxbQM);
-    const intl9 = require(dependencyMap[7]).intl;
-    obj.bodyText = intl9.string(require(dependencyMap[7]).t.CXEb9p);
+    const intl8 = require(1212) /* getSystemLocale */.intl;
+    obj.titleText = intl8.string(require(1212) /* getSystemLocale */.t["6LxbQM"]);
+    const intl9 = require(1212) /* getSystemLocale */.intl;
+    obj.bodyText = intl9.string(require(1212) /* getSystemLocale */.t.CXEb9p);
     obj.themeColors = themeColors;
-    obj.thumbnailUrl = Image.resolveAssetSource(importDefault(dependencyMap[14])).uri;
+    obj.thumbnailUrl = Image.resolveAssetSource(importDefault(12299)).uri;
     const merged = Object.assign(buildBaseEmbedProps(obj));
-    const intl10 = require(dependencyMap[7]).intl;
-    obj["acceptLabelText"] = intl10.string(require(dependencyMap[7]).t.hvVgAZ);
+    const intl10 = require(1212) /* getSystemLocale */.intl;
+    obj["acceptLabelText"] = intl10.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
     obj["acceptLabelBackgroundColor"] = themeColors.colors.acceptBlurpleLabelBackgroundColor;
     obj["acceptLabelColor"] = themeColors.colors.acceptLabelGreenColor;
     return obj;
   } else {
-    let obj1 = require(dependencyMap[15]);
+    let obj1 = require(6940) /* _createForOfIteratorHelperLoose */;
     const result = obj1.findQuestOrReplacement(questId, closure_5.quests, closure_5.excludedQuests);
     const excludedQuests = closure_5.excludedQuests;
     const value = excludedQuests.get(questId);
@@ -97,28 +106,28 @@ function buildQuestsEmbedProps(currentUser) {
     }
     if (null == result) {
       if (null != value) {
-        const result1 = require(dependencyMap[16]).trackQuestEmbedFallbackViewed(questId, constants2.EXCLUDED_QUEST);
+        const result1 = require(6959) /* assignBillingSessionId */.trackQuestEmbedFallbackViewed(questId, constants2.EXCLUDED_QUEST);
         let obj2 = {};
-        const intl6 = require(dependencyMap[7]).intl;
-        obj2.titleText = intl6.string(require(dependencyMap[7]).t.Dd6Daw);
-        const intl7 = require(dependencyMap[7]).intl;
-        obj2.bodyText = intl7.string(require(dependencyMap[7]).t.ii4mJo);
+        const intl6 = require(1212) /* getSystemLocale */.intl;
+        obj2.titleText = intl6.string(require(1212) /* getSystemLocale */.t.Dd6Daw);
+        const intl7 = require(1212) /* getSystemLocale */.intl;
+        obj2.bodyText = intl7.string(require(1212) /* getSystemLocale */.t.ii4mJo);
         obj2.themeColors = themeColors;
         questId = Image.resolveAssetSource;
-        obj2.thumbnailUrl = questId(importDefault(dependencyMap[14])).uri;
+        obj2.thumbnailUrl = questId(importDefault(12299)).uri;
         let tmp53 = buildBaseEmbedProps(obj2);
-        const obj13 = require(dependencyMap[16]);
+        const obj13 = require(6959) /* assignBillingSessionId */;
       } else {
-        const result2 = require(dependencyMap[16]).trackQuestEmbedFallbackViewed(questId, constants2.UNKNOWN_QUEST);
+        const result2 = require(6959) /* assignBillingSessionId */.trackQuestEmbedFallbackViewed(questId, constants2.UNKNOWN_QUEST);
         const obj3 = {};
-        const intl11 = require(dependencyMap[7]).intl;
-        obj3.titleText = intl11.string(require(dependencyMap[7]).t.rxf+nx);
-        const intl12 = require(dependencyMap[7]).intl;
-        obj3.bodyText = intl12.string(require(dependencyMap[7]).t.Ow5AQI);
+        const intl11 = require(1212) /* getSystemLocale */.intl;
+        obj3.titleText = intl11.string(require(1212) /* getSystemLocale */.t["rxf+nx"]);
+        const intl12 = require(1212) /* getSystemLocale */.intl;
+        obj3.bodyText = intl12.string(require(1212) /* getSystemLocale */.t.Ow5AQI);
         obj3.themeColors = themeColors;
-        obj3.thumbnailUrl = Image.resolveAssetSource(importDefault(dependencyMap[14])).uri;
+        obj3.thumbnailUrl = Image.resolveAssetSource(importDefault(12299)).uri;
         tmp53 = buildBaseEmbedProps(obj3);
-        const obj19 = require(dependencyMap[16]);
+        const obj19 = require(6959) /* assignBillingSessionId */;
       }
     } else {
       if (obj18.isShareableQuest(result.config)) {
@@ -132,12 +141,12 @@ function buildQuestsEmbedProps(currentUser) {
         const _Date = Date;
         const date = new Date();
         const tmp24 = quest.config.expiresAt < date.toISOString();
-        let obj6 = require(dependencyMap[11]);
+        let obj6 = require(3976) /* AccessibilityAnnouncer */;
         const obj5 = {};
         obj6 = {};
-        const intl3 = require(dependencyMap[7]).intl;
+        const intl3 = require(1212) /* getSystemLocale */.intl;
         const obj7 = { questName: quest.config.messages.questName };
-        obj6.titleText = intl3.formatToPlainString(require(dependencyMap[7]).t.EAYZAr, obj7);
+        obj6.titleText = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.EAYZAr, obj7);
         obj6.subtitle = quest.config.messages.gamePublisher;
         const obj8 = { quest, currentUser: obj4.currentUser };
         obj6.bodyText = buildSupportedOnMobileEmbedBodyText(obj8);
@@ -145,15 +154,15 @@ function buildQuestsEmbedProps(currentUser) {
         const tmp19 = null != enrolledAt;
         const tmp29 = obj6.isThemeDark(state.getState().theme) ? ThemeTypes.DARK : ThemeTypes.LIGHT;
         const tmp31 = null != closure_5.questEnrollmentBlockedUntil;
-        obj6.thumbnailUrl = require(dependencyMap[12]).getQuestAsset(quest, require(dependencyMap[12]).QuestAssetType.GAME_TILE, tmp29).url;
+        obj6.thumbnailUrl = require(9458) /* resolveAsset */.getQuestAsset(quest, require(9458) /* resolveAsset */.QuestAssetType.GAME_TILE, tmp29).url;
         const merged1 = Object.assign(buildBaseEmbedProps(obj6));
         if (!tmp19) {
           if (!tmp24) {
-            const intl4 = require(dependencyMap[7]).intl;
+            const intl4 = require(1212) /* getSystemLocale */.intl;
             const string = intl4.string;
-            const t = require(dependencyMap[7]).t;
+            const t = require(1212) /* getSystemLocale */.t;
             if (tmp31) {
-              let stringResult = string(t.th2+0j);
+              let stringResult = string(t["th2+0j"]);
             } else {
               stringResult = string(t.kUQLMJ);
             }
@@ -163,45 +172,38 @@ function buildQuestsEmbedProps(currentUser) {
             obj5["thumbnailCornerRadius"] = 8;
           }
         }
-        const intl5 = require(dependencyMap[7]).intl;
+        const intl5 = require(1212) /* getSystemLocale */.intl;
         const string2 = intl5.string;
-        let hvVgAZ = require(dependencyMap[7]).t;
+        let hvVgAZ = require(1212) /* getSystemLocale */.t;
         if (tmp24) {
           hvVgAZ = hvVgAZ.hvVgAZ;
           let string2Result = string2(hvVgAZ);
         } else {
-          string2Result = string2(hvVgAZ.th2+0j);
+          string2Result = string2(hvVgAZ["th2+0j"]);
         }
-        const obj12 = require(dependencyMap[12]);
+        const obj12 = require(9458) /* resolveAsset */;
       } else {
-        obj2 = require(dependencyMap[16]);
+        obj2 = require(6959) /* assignBillingSessionId */;
         const result3 = obj2.trackQuestEmbedFallbackViewed(questId, constants2.NOT_SHAREABLE_QUEST);
         const obj9 = {};
-        const intl = require(dependencyMap[7]).intl;
-        obj9.titleText = intl.string(require(dependencyMap[7]).t.Dd6Daw);
-        const intl2 = require(dependencyMap[7]).intl;
-        obj9.bodyText = intl2.string(require(dependencyMap[7]).t.NXrP3N);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        obj9.titleText = intl.string(require(1212) /* getSystemLocale */.t.Dd6Daw);
+        const intl2 = require(1212) /* getSystemLocale */.intl;
+        obj9.bodyText = intl2.string(require(1212) /* getSystemLocale */.t.NXrP3N);
         obj9.themeColors = themeColors;
-        obj9.thumbnailUrl = Image.resolveAssetSource(importDefault(dependencyMap[14])).uri;
+        obj9.thumbnailUrl = Image.resolveAssetSource(importDefault(12299)).uri;
         tmp17 = buildBaseEmbedProps(obj9);
       }
-      const obj18 = require(dependencyMap[17]);
+      obj18 = require(6963) /* _createForOfIteratorHelperLoose */;
     }
   }
 }
-const Image = require(dependencyMap[0]).Image;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const _module = require(dependencyMap[3]);
-({ QuestsExperimentLocations: closure_6, QuestEmbedFallbackReason: closure_7 } = _module);
-const ThemeTypes = require(dependencyMap[4]).ThemeTypes;
-const InviteTypes = require(dependencyMap[5]).InviteTypes;
-const _module1 = require(dependencyMap[19]);
-const result = _module1.fileFinishedImporting("modules/quests/native/QuestEmbed.native.tsx");
+({ QuestsExperimentLocations: closure_6, QuestEmbedFallbackReason: closure_7 } = QuestsExperimentLocations);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/native/QuestEmbed.native.tsx");
 
 export const createQuestsEmbed = function createQuestsEmbed(questId) {
   let currentUser;
   let theme;
   ({ theme, currentUser } = questId);
-  return buildQuestsEmbedProps({ questId: questId.questId, themeColors: importDefault(dependencyMap[18])(theme), currentUser });
+  return buildQuestsEmbedProps({ questId: questId.questId, themeColors: importDefault(7633)(theme), currentUser });
 };

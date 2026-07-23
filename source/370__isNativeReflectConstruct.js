@@ -1,9 +1,17 @@
 // Module ID: 370
 // Function ID: 5498
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [153, 6, 7, 15, 17, 102, 18, 44, 371, 372]
 
 // Module 370 (_isNativeReflectConstruct)
+import "_readOnlyError";
+import _inherits from "_inherits";
+import invariant from "invariant";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import closure_9 from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,44 +22,37 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  const global = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_8(closure_7(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const importDefault = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
-importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
 
-export default (arg0) => {
+export default ((arg0) => {
   class SpringAnimation {
     constructor(arg0) {
       self = this;
-      tmp = closure_4(this, SpringAnimation);
+      tmp = outer1_4(this, SpringAnimation);
       items = [];
       items[0] = arg0;
-      obj = closure_7(SpringAnimation);
-      tmp2 = closure_6;
-      if (closure_10()) {
+      obj = outer1_7(SpringAnimation);
+      tmp2 = outer1_6;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items, closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, items, outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -94,10 +95,10 @@ export default (arg0) => {
           if (undefined === arg0.mass) {
             if (undefined === arg0.bounciness) {
               if (undefined === arg0.speed) {
-                tmp7 = closure_2;
-                tmp8 = closure_3;
+                tmp7 = outer1_2;
+                tmp8 = outer1_3;
                 num6 = 8;
-                obj2 = closure_2(closure_3[8]);
+                obj2 = outer1_2(outer1_3[8]);
                 tension = arg0.tension;
                 num7 = 40;
                 if (null != tension) {
@@ -114,11 +115,11 @@ export default (arg0) => {
                 tmp2Result._mass = 1;
               }
             }
-            tmp10 = closure_1;
-            tmp11 = closure_3;
+            tmp10 = outer1_1;
+            tmp11 = outer1_3;
             num10 = 7;
             tmp13 = undefined === arg0.tension;
-            tmp12 = closure_1(closure_3[7]);
+            tmp12 = outer1_1(outer1_3[7]);
             if (tmp13) {
               tmp13 = undefined === arg0.friction;
             }
@@ -133,10 +134,10 @@ export default (arg0) => {
             }
             str = "You can define one of bounciness/speed, tension/friction, or stiffness/damping/mass, but not more than one";
             tmp12Result = tmp12(tmp13, "You can define one of bounciness/speed, tension/friction, or stiffness/damping/mass, but not more than one");
-            tmp15 = closure_2;
-            tmp16 = closure_3;
+            tmp15 = outer1_2;
+            tmp16 = outer1_3;
             num11 = 8;
-            obj3 = closure_2(closure_3[8]);
+            obj3 = outer1_2(outer1_3[8]);
             bounciness = arg0.bounciness;
             if (null != bounciness) {
               num11 = bounciness;
@@ -151,20 +152,20 @@ export default (arg0) => {
             num13 = 1;
             tmp2Result._mass = 1;
           }
-          tmp21 = closure_1;
-          tmp22 = closure_3;
+          tmp21 = outer1_1;
+          tmp22 = outer1_3;
           num17 = 7;
           str2 = "Stiffness value must be greater than 0";
-          tmp23 = closure_1(closure_3[7])(tmp2Result._stiffness > 0, "Stiffness value must be greater than 0");
+          tmp23 = outer1_1(outer1_3[7])(tmp2Result._stiffness > 0, "Stiffness value must be greater than 0");
           str3 = "Damping value must be greater than 0";
-          tmp24 = closure_1(closure_3[7])(tmp2Result._damping > 0, "Damping value must be greater than 0");
+          tmp24 = outer1_1(outer1_3[7])(tmp2Result._damping > 0, "Damping value must be greater than 0");
           str4 = "Mass value must be greater than 0";
-          tmp25 = closure_1(closure_3[7])(tmp2Result._mass > 0, "Mass value must be greater than 0");
+          tmp25 = outer1_1(outer1_3[7])(tmp2Result._mass > 0, "Mass value must be greater than 0");
           return tmp2Result;
         }
       }
       tmp19 = undefined === arg0.bounciness;
-      tmp18 = closure_1(closure_3[7]);
+      tmp18 = outer1_1(outer1_3[7]);
       if (tmp19) {
         tmp19 = undefined === arg0.speed;
       }
@@ -196,7 +197,6 @@ export default (arg0) => {
       return;
     }
   }
-  const global = SpringAnimation;
   callback2(SpringAnimation, arg0);
   let obj = {
     key: "__getNativeAnimationConfig",
@@ -213,28 +213,28 @@ export default (arg0) => {
       return obj;
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "start",
     value: function start(_startPosition, _onUpdate, arg2, getInternalState) {
       let self = this;
-      const SpringAnimation = arg4;
+      let closure_0 = arg4;
       self = this;
       const items = [_startPosition, _onUpdate, arg2, getInternalState, arg4];
-      callback6(SpringAnimation, "start", this, 3)(items);
+      outer1_11(closure_0, "start", this, 3)(items);
       this._startPosition = _startPosition;
       this._lastPosition = this._startPosition;
       this._onUpdate = _onUpdate;
       this._lastTime = Date.now();
       this._frameTime = 0;
-      if (getInternalState instanceof SpringAnimation) {
+      if (getInternalState instanceof closure_0) {
         const internalState = getInternalState.getInternalState();
         ({ lastPosition: self._lastPosition, lastVelocity: self._lastVelocity } = internalState);
         self._initialVelocity = self._lastVelocity;
         self._lastTime = internalState.lastTime;
       }
       function start() {
-        if (!self.__startAnimationIfNative(arg4)) {
+        if (!self.__startAnimationIfNative(closure_0)) {
           self.onUpdate();
         }
       }
@@ -335,7 +335,7 @@ export default (arg0) => {
     key: "stop",
     value: function stop() {
       const self = this;
-      callback6(SpringAnimation, "stop", this, 3)([]);
+      outer1_11(SpringAnimation, "stop", this, 3)([]);
       clearTimeout(this._timeout);
       if (null != this._animationFrame) {
         SpringAnimation.cancelAnimationFrame(self._animationFrame);
@@ -344,4 +344,4 @@ export default (arg0) => {
     }
   };
   return callback(SpringAnimation, items);
-}(importDefault(dependencyMap[9]));
+})(require("Animation"));

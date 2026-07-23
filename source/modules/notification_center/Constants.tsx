@@ -1,11 +1,10 @@
-// Module ID: 15038
-// Function ID: 113291
+// Module ID: 15153
+// Function ID: 115460
 // Name: PROFILE_BACKGROUND
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 15038 (PROFILE_BACKGROUND)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/notification_center/Constants.tsx");
+// Module 15153 (PROFILE_BACKGROUND)
+const result = require("set").fileFinishedImporting("modules/notification_center/Constants.tsx");
 
 export const PROFILE_BACKGROUND = "#83DDC5";
 export const FRIEND_BACKGROUND = "#F47FFF";

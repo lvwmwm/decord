@@ -1,34 +1,35 @@
 // Module ID: 1057
-// Function ID: 11312
+// Function ID: 11313
 // Name: browserSessionIntegration
-// Dependencies: []
+// Dependencies: [794, 1004, 1048, 1009]
 
 // Module 1057 (browserSessionIntegration)
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
 
-export const browserSessionIntegration = _module.defineIntegration(() => ({
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const browserSessionIntegration = registerSpanErrorInstrumentation.defineIntegration(() => ({
   name: "BrowserSession",
   setupOnce() {
-    if (undefined !== callback(closure_1[1]).WINDOW.document) {
-      let obj = callback(closure_1[0]);
+    if (undefined !== outer1_0(outer1_1[1]).WINDOW.document) {
+      let obj = outer1_0(outer1_1[0]);
       obj = { ignoreDuration: true };
       obj.startSession(obj);
-      callback(closure_1[0]).captureSession();
-      const obj3 = callback(closure_1[0]);
-      const result = callback(closure_1[3]).addHistoryInstrumentationHandler((arg0) => {
+      outer1_0(outer1_1[0]).captureSession();
+      let obj3 = outer1_0(outer1_1[0]);
+      const result = outer1_0(outer1_1[3]).addHistoryInstrumentationHandler((arg0) => {
         const from = arg0.from;
         if (tmp) {
-          let obj = callback(closure_1[0]);
+          let obj = outer2_0(outer2_1[0]);
           obj = { ignoreDuration: true };
           obj.startSession(obj);
-          callback(closure_1[0]).captureSession();
-          const obj3 = callback(closure_1[0]);
+          outer2_0(outer2_1[0]).captureSession();
+          const obj3 = outer2_0(outer2_1[0]);
         }
       });
-      const obj4 = callback(closure_1[3]);
-    } else if (callback(closure_1[2]).DEBUG_BUILD) {
-      const debug = callback(closure_1[0]).debug;
+      const obj4 = outer1_0(outer1_1[3]);
+    } else if (outer1_0(outer1_1[2]).DEBUG_BUILD) {
+      const debug = outer1_0(outer1_1[0]).debug;
       debug.warn("Using the `browserSessionIntegration` in non-browser environments is not supported.");
     }
   }

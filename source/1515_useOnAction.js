@@ -1,35 +1,34 @@
 // Module ID: 1515
-// Function ID: 17410
+// Function ID: 17411
 // Name: useOnAction
-// Dependencies: []
+// Dependencies: [31, 1478, 1516]
 // Exports: default
 
 // Module 1515 (useOnAction)
-let closure_3 = importAll(dependencyMap[0]);
+import result from "result";
+
+const require = arg1;
 
 export default function useOnAction(router) {
   router = router.router;
-  const arg1 = router;
   const getState = router.getState;
-  const importDefault = getState;
   const setState = router.setState;
-  const dependencyMap = setState;
-  const React = key;
+  const key = router.key;
   const actionListeners = router.actionListeners;
   const beforeRemoveListeners = router.beforeRemoveListeners;
   const routerConfigOptions = router.routerConfigOptions;
   const emitter = router.emitter;
-  const context = React.useContext(importDefault(dependencyMap[1]));
+  const context = key.useContext(getState(setState[1]));
   const onAction = context.onAction;
   const onRouteFocus = context.onRouteFocus;
   const addListener = context.addListener;
   const onDispatchAction = context.onDispatchAction;
-  let closure_12 = React.useRef(routerConfigOptions);
-  const effect = React.useEffect(() => {
+  let closure_12 = key.useRef(routerConfigOptions);
+  const effect = key.useEffect(() => {
     closure_12.current = routerConfigOptions;
   });
-  const items = [actionListeners, beforeRemoveListeners, emitter, getState, router.key, onAction, onDispatchAction, onRouteFocus, router, setState];
-  const callback = React.useCallback((target) => {
+  const items = [actionListeners, beforeRemoveListeners, emitter, getState, key, onAction, onDispatchAction, onRouteFocus, router, setState];
+  const callback = key.useCallback((target) => {
     if (arguments.length > 1) {
       if (undefined !== arguments[1]) {
         let set = arguments[1];
@@ -87,9 +86,9 @@ export default function useOnAction(router) {
     }
     set = new Set();
   }, items);
-  importDefault(dependencyMap[2])({ getState, emitter, beforeRemoveListeners });
+  getState(setState[2])({ getState, emitter, beforeRemoveListeners });
   const items1 = [addListener, callback];
-  const effect1 = React.useEffect(() => {
+  const effect1 = key.useEffect(() => {
     let tmp;
     if (null != addListener) {
       tmp = addListener("action", callback);

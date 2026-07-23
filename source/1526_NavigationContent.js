@@ -1,24 +1,24 @@
 // Module ID: 1526
-// Function ID: 17485
+// Function ID: 17486
 // Name: NavigationContent
-// Dependencies: []
+// Dependencies: [31, 33]
 // Exports: default
 
 // Module 1526 (NavigationContent)
-let closure_0 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+import result from "result";
+import { jsx } from "jsxProd";
+
 function NavigationContent(render) {
   return render.render(render.children);
 }
 
 export default function useComponent(current) {
-  const ref = React.useRef(current);
-  const React = ref;
+  ref = ref.useRef(current);
   ref.current = current;
-  const effect = React.useEffect(() => {
+  const effect = ref.useEffect(() => {
     ref.current = null;
   });
-  return React.useRef((arg0) => {
+  return ref.useRef((arg0) => {
     const current = ref.current;
     if (null === current) {
       const _Error = Error;
@@ -26,7 +26,7 @@ export default function useComponent(current) {
       throw error;
     } else {
       const obj = { render: current, children: tmp };
-      return callback(closure_2, obj);
+      return outer1_1(outer1_2, obj);
     }
   }).current;
 };

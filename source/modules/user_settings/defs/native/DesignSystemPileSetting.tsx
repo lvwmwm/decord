@@ -1,25 +1,25 @@
-// Module ID: 14346
-// Function ID: 108322
+// Module ID: 14460
+// Function ID: 110475
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14461, 2]
 
-// Module 14346 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14460 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Pile";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_PILE,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_PILE,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14461) /* SampleCard */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemPileSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemPileSetting.tsx");
 
 export default route;

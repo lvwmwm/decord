@@ -1,53 +1,59 @@
-// Module ID: 4667
-// Function ID: 40528
+// Module ID: 4670
+// Function ID: 40546
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1838, 1849, 653, 1851, 22, 4671, 4057, 3776, 4025, 1212, 2]
 // Exports: anyFileTooLarge, classifyFile, fileUploadLimitRoadblockDescription, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 4667 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4670 (_createForOfIteratorHelperLoose)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import GuildFeatures from "GuildFeatures";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -90,22 +96,21 @@ function makeFile(arg0, arg1, type) {
   return file;
 }
 function classifyFileName(name, type) {
-  type = name;
+  let str = name;
   const importDefault = type;
   let formatted;
   if (null != name) {
     formatted = name.toLowerCase();
   }
-  let str = "";
+  str = "";
   if (null != formatted) {
     str = formatted;
   }
-  type = str;
-  const found = importDefault(dependencyMap[4]).find(items, (reType) => {
+  const found = importDefault(22).find(items, (reType) => {
     if (null != reType.reType) {
-      if (null != arg1) {
+      if (null != closure_1) {
         reType = reType.reType;
-        let isMatch = reType.test(arg1);
+        let isMatch = reType.test(closure_1);
       }
       return isMatch;
     }
@@ -126,21 +131,22 @@ function classifyFileName(name, type) {
 }
 function maxFileSize(guildId) {
   const currentUser = authStore.getCurrentUser();
-  const userMaxFileSize = importDefault(dependencyMap[7]).getUserMaxFileSize(currentUser);
+  const userMaxFileSize = importDefault(3776).getUserMaxFileSize(currentUser);
   if (null == guildId) {
     return userMaxFileSize;
   } else {
-    const guild = guild.getGuild(guildId);
+    guild = guild.getGuild(guildId);
     if (null != guild) {
-      let tmp5 = function getGuildMaxFileSize(guild) {
-        const FileUploadPowerupHoldoutExperiment = guild(closure_2[6]).FileUploadPowerupHoldoutExperiment;
+      let tmp5 = (function getGuildMaxFileSize(guild) {
+        let closure_0 = guild;
+        const FileUploadPowerupHoldoutExperiment = outer1_0(outer1_2[6]).FileUploadPowerupHoldoutExperiment;
         const enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
-        return closure_9.reduce((arg0, arg1) => {
+        return outer1_9.reduce((arg0, arg1) => {
           let tmp;
           let tmp2;
           [tmp, tmp2] = arg1;
           if (!enabled) {
-            const features = arg0.features;
+            const features = guild.features;
             let tmp6 = arg0;
             if (features.has(tmp)) {
               tmp6 = arg0;
@@ -153,15 +159,15 @@ function maxFileSize(guildId) {
             tmp4 = arg0;
           }
           return tmp4;
-        }, closure_6);
-      }(guild);
+        }, outer1_6);
+      })(guild);
     } else {
       tmp5 = MAX_ATTACHMENT_SIZE;
     }
     const _Math = Math;
     return Math.max(tmp5, userMaxFileSize);
   }
-  const obj = importDefault(dependencyMap[7]);
+  const obj = importDefault(3776);
 }
 function getUploadFileSizeSum(arg0) {
   let done;
@@ -188,15 +194,11 @@ function getMaxRequestSize() {
   }
   return 524288000;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-const GuildFeatures = tmp2.GuildFeatures;
-const MAX_ATTACHMENT_SIZE = tmp2.MAX_ATTACHMENT_SIZE;
-const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = tmp3.MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE;
+let GuildFeatures = ME.GuildFeatures;
+const MAX_ATTACHMENT_SIZE = ME.MAX_ATTACHMENT_SIZE;
+let closure_7 = GuildFeatures.MAX_PREMIUM_TIER_2_ATTACHMENT_SIZE;
 let obj = { reType: /^image\/vnd.adobe.photoshop/, klass: "photoshop" };
-const items = [obj, , , , , , , , , , , , , ];
+let items = [obj, , , , , , , , , , , , , ];
 obj = { reType: /^image\/svg\+xml/, klass: "webcode" };
 items[1] = obj;
 obj = { reType: /^image\//, klass: "image" };
@@ -212,13 +214,13 @@ items[10] = { reName: /\.(?:txt|rtf|doc|docx|md|pages|ppt|pptx|pptm|key|log)$/, 
 items[11] = { reName: /\.(?:xls|xlsx|numbers|csv)$/, klass: "spreadsheet" };
 items[12] = { reName: /\.(?:html|xhtml|htm|xml|xsd|css|styl)$/, klass: "webcode" };
 items[13] = { reName: /\.(?:mp3|ogg|opus|wav|aiff|flac)$/, klass: "audio" };
-const items1 = [GuildFeatures.MAX_FILE_SIZE_250_MB, tmp3.MAX_GUILD_FILE_SIZE_250_MB];
+const items1 = [GuildFeatures.MAX_FILE_SIZE_250_MB, GuildFeatures.MAX_GUILD_FILE_SIZE_250_MB];
 const items2 = [items1, , ];
-const items3 = [GuildFeatures.MAX_FILE_SIZE_100_MB, tmp3.MAX_GUILD_FILE_SIZE_100_MB];
+const items3 = [GuildFeatures.MAX_FILE_SIZE_100_MB, GuildFeatures.MAX_GUILD_FILE_SIZE_100_MB];
 items2[1] = items3;
-const items4 = [GuildFeatures.MAX_FILE_SIZE_50_MB, tmp3.MAX_GUILD_FILE_SIZE_50_MB];
+const items4 = [GuildFeatures.MAX_FILE_SIZE_50_MB, GuildFeatures.MAX_GUILD_FILE_SIZE_50_MB];
 items2[2] = items4;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("utils/FileUtils.tsx");
+const result = require("ME").fileFinishedImporting("utils/FileUtils.tsx");
 
 export const transformNativeFile = function transformNativeFile(data) {
   let tmp = data;
@@ -237,8 +239,8 @@ export const classifyFile = function classifyFile(file) {
   return classifyFileName(file.name, file.type);
 };
 export { classifyFileName };
-export const sizeString = function sizeString(currentSize) {
-  return importDefault(dependencyMap[5]).filesize(currentSize);
+export const sizeString = function sizeString(c2) {
+  return importDefault(4671).filesize(c2);
 };
 export { maxFileSize };
 export const anyFileTooLarge = function anyFileTooLarge(arg0, guildId) {
@@ -259,9 +261,9 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
   if (null == maxSize) {
     maxSize = maxFileSize(guildId);
   }
-  maxSize = arg1(dependencyMap[8]).formatSize(maxSize / 1024, { useKibibytes: true });
-  const obj = arg1(dependencyMap[8]);
-  const premiumMaxSize = arg1(dependencyMap[8]).formatSize(closure_7 / 1024, { useKibibytes: true });
-  const intl = arg1(dependencyMap[9]).intl;
-  return intl.format(arg1(dependencyMap[9]).t.tRuxk9, { maxSize, premiumMaxSize, onClick });
+  maxSize = require(4025) /* formatSize */.formatSize(maxSize / 1024, { useKibibytes: true });
+  const obj = require(4025) /* formatSize */;
+  const premiumMaxSize = require(4025) /* formatSize */.formatSize(closure_7 / 1024, { useKibibytes: true });
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.format(require(1212) /* getSystemLocale */.t.tRuxk9, { maxSize, premiumMaxSize, onClick });
 };

@@ -1,36 +1,37 @@
 // Module ID: 1887
-// Function ID: 21037
+// Function ID: 21038
 // Name: prefixCell
-// Dependencies: [6, 7, 15, 17, 18, 1352]
+// Dependencies: [5, 6, 7, 1888, 1889, 2]
 
 // Module 1887 (prefixCell)
+import set from "set";
 import _classCallCheck from "_classCallCheck";
 import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _callSuper from "_callSuper";
 
+const require = arg1;
 function prefixCell(key, prefix) {
   let tmp = key;
   if (0 !== prefix.length) {
-    const obj = { key: prefix(dependencyMap[3]).combineKey(prefix, key.key) };
+    const obj = { key: require(1888) /* combineKey */.combineKey(prefix, key.key) };
     ({ data: obj.data, generation: obj.generation } = key);
     tmp = obj;
-    const obj2 = prefix(dependencyMap[3]);
+    const obj2 = require(1888) /* combineKey */;
   }
   return tmp;
 }
 function prefixCells(arr) {
+  let closure_0 = arg1;
   let mapped = arr;
   if (0 !== arg1.length) {
-    mapped = arr.map((arg0) => callback(arg0, arg1));
+    mapped = arr.map((arg0) => outer1_6(arg0, closure_0));
   }
   return mapped;
 }
-const tmp3 = () => {
+const tmp3 = (() => {
   class TableTransaction {
     constructor(arg0, arg1, arg2) {
-      TableTransaction = this;
-      tmp = _defineProperties(this, TableTransaction);
+      self = this;
+      tmp = outer1_3(this, self);
       this.messages = {
         trimOrphans(prefix) {
               if (1 === self.prefix.length) {
@@ -43,27 +44,27 @@ const tmp3 = () => {
               const error = new Error("trimOrphans: only one prefix component is supported at this time");
               throw error;
             },
-        trimChannel(items, limit, closure_9) {
+        trimChannel(items, limit, outer1_9) {
               const transaction = self.transaction;
-              const obj = { type: "messages.trim_channel", table: self.tableId, key: self(closure_1[3]).combineKey(self.prefix, items), limit };
+              const obj = { type: "messages.trim_channel", table: self.tableId, key: TableTransaction(outer2_1[3]).combineKey(self.prefix, items), limit };
               transaction.add(obj);
             },
-        trimChannelsIn(prefix, closure_12) {
+        trimChannelsIn(prefix, outer5_12) {
               if (1 === self.prefix.length) {
                 if (1 === prefix.length) {
                   const transaction = self.transaction;
-                  const obj = { type: "messages.trim_channels_in", table: self.tableId, channelKey: prefix[0], messageKey: self.prefix[0], limit: closure_12 };
+                  const obj = { type: "messages.trim_channels_in", table: self.tableId, channelKey: prefix[0], messageKey: self.prefix[0], limit: outer5_12 };
                   transaction.add(obj);
                 }
               }
               const error = new Error("trimChannelsIn: only one prefix component is supported at this time");
               throw error;
             },
-        trimChannelsNotIn(prefix, closure_11) {
+        trimChannelsNotIn(prefix, outer5_11) {
               if (1 === self.prefix.length) {
                 if (1 === prefix.length) {
                   const transaction = self.transaction;
-                  const obj = { type: "messages.trim_channels_not_in", table: self.tableId, channelKey: prefix[0], messageKey: self.prefix[0], limit: closure_11 };
+                  const obj = { type: "messages.trim_channels_not_in", table: self.tableId, channelKey: prefix[0], messageKey: self.prefix[0], limit: outer5_11 };
                   transaction.add(obj);
                 }
               }
@@ -77,31 +78,30 @@ const tmp3 = () => {
       return;
     }
   }
-  const arg1 = TableTransaction;
   let obj = {
     key: "put",
     value(arg0) {
       let Replace = arg1;
       const self = this;
       if (arg1 === undefined) {
-        Replace = TableTransaction(closure_1[4]).ConflictOptions.Replace;
+        Replace = TableTransaction(outer1_1[4]).ConflictOptions.Replace;
       }
       const transaction = self.transaction;
-      const obj = { type: "kv.put_one", table: self.tableId, cell: callback2(arg0, self.prefix), overwrite: Replace === TableTransaction(closure_1[4]).ConflictOptions.Replace };
+      const obj = { type: "kv.put_one", table: self.tableId, cell: outer1_6(arg0, self.prefix), overwrite: Replace === TableTransaction(outer1_1[4]).ConflictOptions.Replace };
       transaction.add(obj);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "putAll",
     value(arg0) {
       let Replace = arg1;
       const self = this;
       if (arg1 === undefined) {
-        Replace = TableTransaction(closure_1[4]).ConflictOptions.Replace;
+        Replace = TableTransaction(outer1_1[4]).ConflictOptions.Replace;
       }
       const transaction = self.transaction;
-      const obj = { type: "kv.put_many", table: self.tableId, cells: callback3(arg0, self.prefix), overwrite: Replace === TableTransaction(closure_1[4]).ConflictOptions.Replace };
+      const obj = { type: "kv.put_many", table: self.tableId, cells: outer1_7(arg0, self.prefix), overwrite: Replace === TableTransaction(outer1_1[4]).ConflictOptions.Replace };
       transaction.add(obj);
     }
   };
@@ -114,7 +114,7 @@ const tmp3 = () => {
         items = [];
       }
       const transaction = self.transaction;
-      const obj = { type: "kv.delete_many", table: self.tableId, key: TableTransaction(closure_1[3]).combineKeyPrefix(self.prefix, items) };
+      const obj = { type: "kv.delete_many", table: self.tableId, key: TableTransaction(outer1_1[3]).combineKeyPrefix(self.prefix, items) };
       transaction.add(obj);
     }
   };
@@ -122,11 +122,11 @@ const tmp3 = () => {
   items[3] = {
     key: "deleteRange",
     value(items, items) {
-      let obj = TableTransaction(closure_1[3]);
+      let obj = TableTransaction(outer1_1[3]);
       const combineKeyResult = obj.combineKey(this.prefix, items);
       const transaction = this.transaction;
       obj = { type: "kv.delete_range", table: this.tableId };
-      items = [combineKeyResult, TableTransaction(closure_1[3]).combineKey(this.prefix, items)];
+      items = [combineKeyResult, TableTransaction(outer1_1[3]).combineKey(this.prefix, items)];
       obj.range = items;
       transaction.add(obj);
     }
@@ -139,7 +139,7 @@ const tmp3 = () => {
         items = [];
       }
       const transaction = self.transaction;
-      const obj = { type: "kv.delete_all_except", table: self.tableId, key: TableTransaction(closure_1[3]).combineKeyPrefix(self.prefix, items), retain };
+      const obj = { type: "kv.delete_all_except", table: self.tableId, key: TableTransaction(outer1_1[3]).combineKeyPrefix(self.prefix, items), retain };
       transaction.add(obj);
     }
   };
@@ -151,7 +151,7 @@ const tmp3 = () => {
         items = [];
       }
       const transaction = self.transaction;
-      const obj = { type: "kv.delete_generation", table: self.tableId, key: TableTransaction(closure_1[3]).combineKeyPrefix(self.prefix, items), generation, comparer };
+      const obj = { type: "kv.delete_generation", table: self.tableId, key: TableTransaction(outer1_1[3]).combineKeyPrefix(self.prefix, items), generation, comparer };
       transaction.add(obj);
     }
   };
@@ -164,14 +164,13 @@ const tmp3 = () => {
     }
   ];
   return callback2(TableTransaction, items, items1);
-}();
-const result = _callSuper.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Table.tsx");
-
-export const Table = () => {
+})();
+let closure_5 = tmp3;
+let tmp2 = (() => {
   class Table {
     constructor(arg0, arg1, arg2, arg3) {
-      f21045 = this;
-      tmp = _defineProperties(this, Table);
+      self = this;
+      tmp = outer1_3(this, Table);
       this.messages = {
         getLatest(guildId, channelId, arg2) {
               const database = self.database;
@@ -186,7 +185,6 @@ export const Table = () => {
       return;
     }
   }
-  const dependencyMap = Table;
   let obj = {
     key: "close",
     value() {
@@ -194,7 +192,7 @@ export const Table = () => {
       database.close();
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , ];
   obj = { key: "get" };
   let closure_0 = callback(async function(arg0) {
     const self = this;
@@ -311,7 +309,7 @@ export const Table = () => {
         Replace = callback(Table[4]).ConflictOptions.Replace;
       }
       const database = self.database;
-      const obj = { type: "kv.put_one", table: self.tableId, cell: callback3(arg0, self.prefix), overwrite: Replace === callback(Table[4]).ConflictOptions.Replace };
+      const obj = { type: "kv.put_one", table: self.tableId, cell: outer1_6(arg0, self.prefix), overwrite: Replace === callback(Table[4]).ConflictOptions.Replace };
       return database.execute(obj, self.defaultDebugTag);
     }
   };
@@ -324,7 +322,7 @@ export const Table = () => {
         Replace = callback(Table[4]).ConflictOptions.Replace;
       }
       const database = self.database;
-      const obj = { type: "kv.put_many", table: self.tableId, cells: callback4(arg0, self.prefix), overwrite: Replace === callback(Table[4]).ConflictOptions.Replace };
+      const obj = { type: "kv.put_many", table: self.tableId, cells: outer1_7(arg0, self.prefix), overwrite: Replace === callback(Table[4]).ConflictOptions.Replace };
       return database.execute(obj, self.defaultDebugTag);
     }
   };
@@ -334,7 +332,7 @@ export const Table = () => {
       let closure_0 = arg0;
       return this.transaction((arg0) => {
         arg0.delete();
-        arg0.putAll(arg0);
+        arg0.putAll(closure_0);
       }, this.defaultDebugTag);
     }
   };
@@ -377,16 +375,16 @@ export const Table = () => {
   items[14] = {
     key: "transaction",
     value(arg0, arg1) {
-      let closure_0 = this;
-      const Table = arg0;
+      const self = this;
+      let closure_1 = arg0;
       const database = this.database;
-      return database.transaction((arg0) => arg0(new closure_5(self.prefix, self.tableId, arg0)), arg1);
+      return database.transaction((arg0) => callback(new outer2_5(self.prefix, self.tableId, arg0)), arg1);
     }
   };
   items[15] = {
     key: "upgradeTransaction",
     value(arg0) {
-      return new closure_5(this.prefix, this.tableId, arg0);
+      return new outer1_5(this.prefix, this.tableId, arg0);
     }
   };
   items[16] = {
@@ -436,5 +434,8 @@ export const Table = () => {
     }
   };
   return callback2(Table, items);
-}();
+})();
+const result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Table.tsx");
+
+export const Table = tmp2;
 export const TableTransaction = tmp3;

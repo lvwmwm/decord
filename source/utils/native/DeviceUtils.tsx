@@ -1,31 +1,32 @@
-// Module ID: 4108
-// Function ID: 33988
+// Module ID: 4110
+// Function ID: 33997
 // Name: getSystemVersion
-// Dependencies: []
+// Dependencies: [27, 477, 648, 587, 2]
 // Exports: getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS
 
-// Module 4108 (getSystemVersion)
+// Module 4110 (getSystemVersion)
+import set from "set";
+import set from "enforcing";
+
 function getSystemVersion() {
   return DCDDeviceManager.systemVersion;
 }
 function getDevice() {
   return DCDDeviceManager.device;
 }
-const _module = require(dependencyMap[1]);
-if (_module.isAndroid()) {
+if (set.isAndroid()) {
   let constants;
-  if (null != importDefault(dependencyMap[2])) {
-    constants = importDefault(dependencyMap[2]).getConstants();
-    const importDefaultResult = importDefault(dependencyMap[2]);
+  if (null != require("enforcing")) {
+    constants = require("enforcing").getConstants();
+    const importDefaultResult = require("enforcing");
   }
   let DCDDeviceManager = constants;
 } else {
-  DCDDeviceManager = require(dependencyMap[0]).NativeModules.DCDDeviceManager;
+  DCDDeviceManager = require("get ActivityIndicator").NativeModules.DCDDeviceManager;
 }
-let closure_4 = null;
-let closure_5 = "mediaPerformanceClass";
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("utils/native/DeviceUtils.tsx");
+let c4 = null;
+const mediaPerformanceClass = "mediaPerformanceClass";
+let result = set.fileFinishedImporting("utils/native/DeviceUtils.tsx");
 
 export const isIpadOS = function isIpadOS() {
   return "iPad" === DCDDeviceManager.deviceModel;
@@ -68,10 +69,10 @@ export const getSystemVersionMinor = function getSystemVersionMinor() {
 };
 export { getDevice };
 export const getDeviceInfo = function getDeviceInfo() {
-  const obj = require(dependencyMap[1]);
+  const obj = require(477) /* set */;
   const tmp2 = getDevice();
   if (isAndroidResult) {
-    let text = `${tmp2 + " (" + closure_3.deviceModel})`;
+    let text = `${tmp2 + " (" + DCDDeviceManager.deviceModel})`;
   } else {
     text = tmp2;
   }
@@ -80,20 +81,20 @@ export const getDeviceInfo = function getDeviceInfo() {
 export const getDeviceMediaPerformanceClass = function getDeviceMediaPerformanceClass() {
   let tmp = null;
   if (obj.isAndroid()) {
-    let tmp3 = null == mediaPerformanceClass;
+    let tmp3 = null == mediaPerformanceClass2;
     if (tmp3) {
-      const Storage = require(dependencyMap[3]).Storage;
-      const value = Storage.get(closure_5);
-      let mediaPerformanceClass = value;
+      const Storage = require(587) /* Storage */.Storage;
+      const value = Storage.get(mediaPerformanceClass);
+      mediaPerformanceClass2 = value;
       tmp3 = null == value;
     }
     if (tmp3) {
-      mediaPerformanceClass = importDefault(dependencyMap[2]).getMediaPerformanceClass();
-      const Storage2 = require(dependencyMap[3]).Storage;
-      const result = Storage2.set(closure_5, mediaPerformanceClass);
-      const obj2 = importDefault(dependencyMap[2]);
+      mediaPerformanceClass2 = importDefault(648).getMediaPerformanceClass();
+      const Storage2 = require(587) /* Storage */.Storage;
+      const result = Storage2.set(mediaPerformanceClass, mediaPerformanceClass2);
+      const obj2 = importDefault(648);
     }
-    tmp = mediaPerformanceClass;
+    tmp = mediaPerformanceClass2;
   }
   return tmp;
 };

@@ -1,22 +1,25 @@
-// Module ID: 10445
-// Function ID: 80622
-// Dependencies: [44957696, 509739008, 93650944, 37093376, 131072, 1005584384, 5, 57, 31, 1921, 1348]
+// Module ID: 10455
+// Function ID: 80672
+// Dependencies: [5, 1348, 653, 4123, 686, 507, 6924, 6691, 4324, 4140, 2]
 
-// Module 10445
+// Module 10455
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
 
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ Endpoints: closure_5, ActivityTypes: closure_6, AnalyticEvents: closure_7, LoggingInviteTypes: closure_8 } = arg1(dependencyMap[2]));
-const MessageSendLocation = arg1(dependencyMap[3]).MessageSendLocation;
-const result = _isNativeReflectConstruct.fileFinishedImporting("actions/ActivitiesActionCreators.tsx");
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ Endpoints: closure_5, ActivityTypes: closure_6, AnalyticEvents: closure_7, LoggingInviteTypes: closure_8 } = ME);
+const result = require("ME").fileFinishedImporting("actions/ActivitiesActionCreators.tsx");
 
 export default {
   updateActivity(applicationId) {
     applicationId = applicationId.applicationId;
-    const arg1 = applicationId;
     const distributor = applicationId.distributor;
-    const importDefault = distributor;
     let token = applicationId.token;
     if (token === undefined) {
       token = null;
@@ -25,7 +28,6 @@ export default {
     if (num === undefined) {
       num = 0;
     }
-    const dependencyMap = num;
     let flag = applicationId.closed;
     if (flag === undefined) {
       flag = false;
@@ -46,14 +48,14 @@ export default {
     if (mediaSessionId === undefined) {
       mediaSessionId = null;
     }
-    let obj = importDefault(dependencyMap[4]);
+    let obj = distributor(num[4]);
     obj.wait(() => {
       let obj = distributor(num[4]);
       obj = { type: "ACTIVITY_UPDATE_START", applicationId, duration: num, distributor };
       return obj.dispatch(obj);
     });
-    const HTTP = arg1(dependencyMap[5]).HTTP;
-    obj = { textVariant: true, emojiOnlyEmojiSize: "/assets/images/native/wumpus", textMinWidth: 84, statusBubblePaddingHorizontal: 66, statusBubblePaddingVertical: null, url: constants.ACTIVITIES };
+    const HTTP = applicationId(num[5]).HTTP;
+    obj = { url: constants.ACTIVITIES, body: null, retries: 1, oldFormErrors: true, rejectWithError: true };
     obj = { application_id: applicationId, token, duration: num, share_activity: applicationId.shareActivity, distributor, closed: flag, exePath, voice_channel_id: voiceChannelId, session_id: sessionId, media_session_id: mediaSessionId };
     obj.body = obj;
     const postResult = HTTP.post(obj);
@@ -69,14 +71,13 @@ export default {
   },
   sendActivityInvite(activity) {
     let content;
+    let importDefault;
     let targetUserId;
     let type;
     activity = activity.activity;
-    const arg1 = activity;
-    ({ content, location: closure_1 } = activity);
+    ({ content, location: importDefault } = activity);
     ({ type, targetUserId } = activity);
-    const channel = channel.getChannel(activity.channelId);
-    const dependencyMap = channel;
+    channel = channel.getChannel(activity.channelId);
     if (null == channel) {
       return Promise.resolve(null);
     } else {
@@ -84,20 +85,20 @@ export default {
       if (null != content) {
         str = content;
       }
-      const parsed = importDefault(dependencyMap[6]).parse(channel, str);
-      let obj = importDefault(dependencyMap[7]);
+      const parsed = importDefault(channel[6]).parse(channel, str);
+      let obj = importDefault(channel[7]);
       obj = {};
       obj = { type, activity, targetUserId };
       obj.activityAction = obj;
       obj.location = MessageSendLocation.ACTIVITY_SHARE;
-      const obj4 = importDefault(dependencyMap[6]);
+      const obj4 = importDefault(channel[6]);
       return obj.sendMessage(channel.id, parsed, false, obj).then((body) => {
-        let obj = callback(channel[8]);
-        obj = { location: callback };
-        if (activity.type === constants.LISTENING) {
-          let APPLICATION = constants3.SPOTIFY;
+        let obj = outer1_1(channel[8]);
+        obj = { location: closure_1 };
+        if (activity.type === outer1_6.LISTENING) {
+          let APPLICATION = outer1_8.SPOTIFY;
         } else {
-          APPLICATION = constants3.APPLICATION;
+          APPLICATION = outer1_8.APPLICATION;
         }
         obj.invite_type = APPLICATION;
         obj.application_id = activity.application_id;
@@ -108,28 +109,32 @@ export default {
           id = body.body.id;
         }
         obj.message_id = id;
-        obj.trackWithMetadata(constants2.INVITE_SENT, obj);
+        obj.trackWithMetadata(outer1_7.INVITE_SENT, obj);
         return Promise.resolve(channel);
       }, (arg0) => Promise.reject(arg0));
     }
   },
   sendActivityInviteUser(userId) {
-    const arg1 = this;
-    ({ type: closure_1, activity: closure_2, content: closure_3, location: closure_4 } = userId);
-    const obj = importDefault(dependencyMap[9]);
-    return importDefault(dependencyMap[9]).ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: closure_3, location: closure_4 }));
+    let _isNativeReflectConstruct;
+    let closure_4;
+    let dependencyMap;
+    let importDefault;
+    const self = this;
+    ({ type: importDefault, activity: dependencyMap, content: _isNativeReflectConstruct, location: closure_4 } = userId);
+    const obj = importDefault(4140);
+    return importDefault(4140).ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: _isNativeReflectConstruct, location: closure_4 }));
   },
   getJoinSecret(arg0, arg1, arg2, arg3, arg4) {
-    arg1 = arg0;
-    const importDefault = arg1;
-    const dependencyMap = arg2;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
     const callback = arg3;
     let closure_4 = arg4;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
   subscribeActivities(items) {
-    const arg1 = items;
+    let closure_0 = items;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   }

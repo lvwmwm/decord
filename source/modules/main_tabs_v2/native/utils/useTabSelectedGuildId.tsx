@@ -1,20 +1,22 @@
-// Module ID: 13500
-// Function ID: 102436
+// Module ID: 13614
+// Function ID: 104592
 // Name: useTabSelectedGuildId
-// Dependencies: []
+// Dependencies: [3947, 4970, 624, 2]
 // Exports: default
 
-// Module 13500 (useTabSelectedGuildId)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/main_tabs_v2/native/utils/useTabSelectedGuildId.tsx");
+// Module 13614 (useTabSelectedGuildId)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/main_tabs_v2/native/utils/useTabSelectedGuildId.tsx");
 
 export default function useTabSelectedGuildId() {
-  const items = [closure_2, closure_3];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const guildId = store.getGuildId();
-    let lastSelectedGuildId = store.getLastSelectedGuildId();
-    let first = flattenedGuildIds.getFlattenedGuildIds()[0];
+  const items = [_isNativeReflectConstruct, closure_3];
+  return require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
+    const guildId = outer1_2.getGuildId();
+    let lastSelectedGuildId = outer1_2.getLastSelectedGuildId();
+    let first = outer1_3.getFlattenedGuildIds()[0];
     if (null != guildId) {
       lastSelectedGuildId = guildId;
     }

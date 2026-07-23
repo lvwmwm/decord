@@ -1,21 +1,24 @@
-// Module ID: 13300
-// Function ID: 100996
-// Dependencies: []
+// Module ID: 13414
+// Function ID: 103152
+// Dependencies: [4033, 653, 507, 675, 2]
 
-// Module 13300
+// Module 13414
+import { RPC_LOCAL_SCOPE } from "RPC_SCOPE_CONFIG";
+import ME from "ME";
+
 let RPCCommands;
-const RPC_LOCAL_SCOPE = require(dependencyMap[0]).RPC_LOCAL_SCOPE;
-const _module = require(dependencyMap[1]);
-({ Endpoints: closure_3, AnalyticEvents: closure_4, RPCCommands } = _module);
+let closure_3;
+let closure_4;
+({ Endpoints: closure_3, AnalyticEvents: closure_4, RPCCommands } = ME);
 let obj = {
   scope: RPC_LOCAL_SCOPE,
   handler() {
-    const HTTP = require(dependencyMap[2]).HTTP;
-    let obj = { 9223372036854775807: 0.35, -9223372036854775808: 1, 9223372036854775807: 0, url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    let obj = { url: location.protocol + window.GLOBAL_ENV.NETWORKING_ENDPOINT, retries: 3, rejectWithError: false };
     const value = HTTP.get(obj);
     const items = [value.then((body) => body.body.address), ];
-    const HTTP2 = require(dependencyMap[2]).HTTP;
-    obj = { "Bool(true)": "y", "Bool(true)": "isArray", "Bool(true)": "key", "Bool(true)": "Array", url: constants.NETWORKING_TOKEN };
+    const HTTP2 = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: constants.NETWORKING_TOKEN, retries: 3, oldFormErrors: true, rejectWithError: false };
     items[1] = HTTP2.post(obj).then((body) => body.body.token);
     const postResult = HTTP2.post(obj);
     return Promise.all(items).then((arg0) => {
@@ -31,7 +34,7 @@ obj = {
   handler(args) {
     args = args.args;
     args.application_id = args.socket.application.id;
-    importDefault(dependencyMap[3]).track(constants2.NETWORKING_SYSTEM_METRICS, args);
+    importDefault(675).track(constants2.NETWORKING_SYSTEM_METRICS, args);
   }
 };
 obj = {
@@ -39,11 +42,10 @@ obj = {
   handler(args) {
     args = args.args;
     args.application_id = args.socket.application.id;
-    importDefault(dependencyMap[3]).track(constants2.NETWORKING_PEER_METRICS, args);
+    importDefault(675).track(constants2.NETWORKING_PEER_METRICS, args);
   }
 };
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/rpc/server/commands/networking.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/server/commands/networking.tsx");
 
 export default {
   [RPCCommands.GET_NETWORKING_CONFIG]: obj,
@@ -52,8 +54,9 @@ export default {
   [RPCCommands.NETWORKING_CREATE_TOKEN]: {
     scope: RPC_LOCAL_SCOPE,
     handler() {
-      const HTTP = require(dependencyMap[2]).HTTP;
-      return HTTP.post({ url: constants.NETWORKING_TOKEN }).then((body) => body.body);
+      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+      const obj = { url: constants.NETWORKING_TOKEN, retries: 1, oldFormErrors: true, rejectWithError: false };
+      return HTTP.post(obj).then((body) => body.body);
     }
   }
 };

@@ -1,50 +1,51 @@
 // Module ID: 325
 // Function ID: 4896
 // Name: useMergeRefs
-// Dependencies: []
+// Dependencies: [31, 326]
 // Exports: default
 
 // Module 325 (useMergeRefs)
-importAll(dependencyMap[0]);
-arg1(dependencyMap[0]).useCallback;
+import "result";
+
+require("result").useCallback;
 
 export default function useMergeRefs() {
   const length = arguments.length;
-  const array = new Array(length);
-  const importDefault = array;
+  let array = new Array(length);
   for (let num = 0; num < length; num = num + 1) {
     array[num] = arguments[num];
   }
   const items = [];
-  return importDefault(dependencyMap[1])(useCallback((arg0) => {
+  return array(326)(useCallback((arg0) => {
     const array = arg0;
     let closure_1 = array.map((arg0) => {
+      let closure_0 = arg0;
       if (null != arg0) {
         if ("function" === typeof arg0) {
-          let fn = arg0(arg0);
+          let fn = arg0(closure_0);
           if ("function" !== typeof fn) {
             fn = () => {
-              arg0(null);
+              callback(null);
             };
           }
           return fn;
         } else {
-          arg0.current = arg0;
+          arg0.current = closure_0;
           return () => {
-            arg0.current = null;
+            closure_0.current = null;
           };
         }
       }
     });
     return () => {
-      const iter = closure_1[Symbol.iterator]();
+      const iter = dependencyMap[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         if (null != nextResult) {
           let tmp3 = nextResult;
           let tmp2Result = tmp2();
         }
-        // continue
+        continue;
       }
     };
   }, items.concat(array)));

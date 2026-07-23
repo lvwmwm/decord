@@ -1,9 +1,29 @@
-// Module ID: 4660
-// Function ID: 40373
+// Module ID: 4664
+// Function ID: 40405
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [57, 29, 5, 102, 6, 7, 15, 17, 18, 162, 4129, 1280, 4222, 653, 3, 507, 4665, 4672, 664, 561, 22, 1430, 4674, 4705, 4706, 4710, 4711, 1184, 4673, 4666, 675, 4712, 4713, 1934, 2]
 
-// Module 4660 (_callSuper)
+// Module 4664 (_callSuper)
+import _slicedToArray from "_slicedToArray";
+import items from "items";
+import _defineProperties from "_defineProperties";
+import _get from "_get";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import importDefaultResult from "_getPrototypeOf";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import DefaultHttpClient from "DefaultHttpClient";
+import closure_12 from "set";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import ME from "ME";
+import importDefaultResult2 from "_get";
+import importDefaultResult1 from "_wrapNativeSuper";
+import set from "asyncGeneratorStep";
+
+let closure_16;
+let closure_17;
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback3(arg1);
@@ -15,7 +35,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_10(arg0, constructResult);
+  return _isNativeReflectConstruct(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -26,25 +46,11 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const importDefaultResult = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = importDefault(dependencyMap[12]);
-const importDefaultResult1 = importDefault(dependencyMap[9]);
-({ AbortCodes: closure_16, AnalyticEvents: closure_17 } = arg1(dependencyMap[13]));
-let importDefaultResult2 = importDefault(dependencyMap[14]);
+let closure_3 = ["Content-Range"];
+({ AbortCodes: closure_16, AnalyticEvents: closure_17 } = ME);
 importDefaultResult2 = new importDefaultResult2("CloudUpload.tsx");
-const set = new Set([null]);
-const tmp8 = (arg0) => {
+let set = new Set([429]);
+let tmp8 = ((arg0) => {
   class ResumableUploadError {
     constructor(arg0) {
       obj = arg1;
@@ -53,7 +59,7 @@ const tmp8 = (arg0) => {
         obj = {};
       }
       tmp = ResumableUploadError;
-      tmp2 = closure_8(self, ResumableUploadError);
+      tmp2 = outer1_8(self, ResumableUploadError);
       ({ cause, response } = obj);
       _Error = cause;
       if (null == cause) {
@@ -84,14 +90,14 @@ const tmp8 = (arg0) => {
           str5 = ":";
           combined = "" + arg0 + ":" + errorKind;
         }
-        tmp12 = closure_23;
+        tmp12 = outer1_23;
         tmp13 = ResumableUploadError;
         items = [, ];
         items[0] = combined;
         obj = {};
         obj.cause = cause;
         items[1] = obj;
-        tmp14 = closure_23(self, ResumableUploadError, items);
+        tmp14 = outer1_23(self, ResumableUploadError, items);
         str6 = "ResumableUploadError";
         tmp14.name = "ResumableUploadError";
         tmp14.phase = arg0;
@@ -111,7 +117,6 @@ const tmp8 = (arg0) => {
       return;
     }
   }
-  const arg1 = ResumableUploadError;
   callback4(ResumableUploadError, arg0);
   let obj = {
     key: "canRetry",
@@ -127,7 +132,7 @@ const tmp8 = (arg0) => {
       return tmp;
     }
   };
-  const items = [obj];
+  let items = [obj];
   obj = {
     key: "getErrorKind",
     value(message, status) {
@@ -139,7 +144,7 @@ const tmp8 = (arg0) => {
       if (null != status) {
         num = status;
       }
-      const hasItem = set.has(num);
+      const hasItem = outer1_19.has(num);
       const formatted = message.message.toLowerCase();
       let hasItem1 = formatted.includes("network");
       if (!hasItem1) {
@@ -177,17 +182,17 @@ const tmp8 = (arg0) => {
   obj = {
     key: "rejectionHandler",
     value(arg0) {
-      const ResumableUploadError = arg0;
+      let closure_0 = arg0;
       return (response) => {
-        if (response instanceof response(closure_2[15]).HTTPResponseError) {
-          let tmp2 = response;
+        if (response instanceof ResumableUploadError(outer2_2[15]).HTTPResponseError) {
+          let tmp2 = ctor;
           let obj = { response };
-          const prototype4 = response.prototype;
-          const tmp25 = new response(response, obj);
+          const prototype4 = ctor.prototype;
+          const tmp25 = new ctor(ctor, obj);
           throw tmp25;
         } else {
           const _Error = Error;
-          tmp2 = response;
+          tmp2 = ctor;
           obj = {};
           if (response instanceof Error) {
             obj.cause = response;
@@ -209,11 +214,12 @@ const tmp8 = (arg0) => {
   };
   items1[1] = obj;
   return importDefaultResult(ResumableUploadError, items, items1);
-}(importDefaultResult1(Error));
-const obj = { NOT_STARTED: "NOT_STARTED", STARTED: "STARTED", UPLOADING: "UPLOADING", ERROR: "ERROR", COMPLETED: "COMPLETED", CANCELED: "CANCELED", REMOVED_FROM_MSG_DRAFT: "REMOVED_FROM_MSG_DRAFT" };
+})(require("_wrapNativeSuper")(Error));
+let closure_20 = tmp8;
+let obj = { NOT_STARTED: "NOT_STARTED", STARTED: "STARTED", UPLOADING: "UPLOADING", ERROR: "ERROR", COMPLETED: "COMPLETED", CANCELED: "CANCELED", REMOVED_FROM_MSG_DRAFT: "REMOVED_FROM_MSG_DRAFT" };
 class UploadAnalytics {
   constructor() {
-    tmp = closure_8(this, UploadAnalytics);
+    tmp = c8(this, UploadAnalytics);
     this.timing = {};
     this.uploadResumptionCount = 0;
     this.uploadResumptionPosition = 0;
@@ -221,26 +227,32 @@ class UploadAnalytics {
   }
 }
 let closure_22 = importDefaultResult(UploadAnalytics);
-const tmp4 = arg1(dependencyMap[13]);
-const tmp9 = (arg0) => {
+let result = set.fileFinishedImporting("lib/uploader/CloudUpload.tsx");
+
+export const ResumableUploadError = tmp8;
+export const CloudUploadStatus = obj;
+export const CloudUpload = ((arg0) => {
   class CloudUpload {
     constructor(arg0, arg1, arg2, arg3) {
-      tmp = f40401(this, CloudUpload);
+      tmp = f40433(this, CloudUpload);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_23(this, CloudUpload, items);
-      f40455 = tmp2;
-      tmp2.status = closure_21.NOT_STARTED;
+      tmp2 = outer1_23(this, CloudUpload, items);
+      f40487 = tmp2;
+      tmp2.status = outer1_21.NOT_STARTED;
       tmp2.loaded = 0;
       tmp2.reactNativeFilePrepped = false;
-      tmp3 = new closure_22();
+      tmp3 = new outer1_22();
       tmp2.uploadAnalytics = tmp3;
       tmp2.uploadAttempts = 0;
       tmp2._aborted = false;
-      tmp2.createResumeAwareProgressFn = (arg0) => (loaded) => {
-        const sum = loaded.loaded + loaded;
-        loaded.emit("progress", sum, loaded.total + loaded, sum - loaded.loaded);
-        loaded.loaded = sum;
+      tmp2.createResumeAwareProgressFn = (arg0) => {
+        let closure_0 = arg0;
+        return (loaded) => {
+          const sum = loaded.loaded + closure_0;
+          closure_0.emit("progress", sum, loaded.total + closure_0, sum - closure_0.loaded);
+          closure_0.loaded = sum;
+        };
       };
       tmp2.channelId = arg1;
       file = arg0.file;
@@ -267,17 +279,17 @@ const tmp9 = (arg0) => {
       if (null != arg3) {
         tmp2.allowOptimization = arg3;
       }
-      tmp6 = arg0.platform === f40455(f40441[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
+      tmp6 = arg0.platform === f40487(f40473[16]).UploadPlatform.WEB && null != arg0.compressionMetadata;
       if (tmp6) {
         tmp2.mimeType = arg0.compressionMetadata.originalContentType;
       }
       abortController = new AbortController();
       tmp2._abortController = abortController;
       if (null == tmp2.origin) {
-        tmp10 = f40455;
-        tmp11 = f40441;
+        tmp10 = f40487;
+        tmp11 = f40473;
         num3 = 17;
-        DefaultHttpClient = f40455(f40441[17]).DefaultHttpClient;
+        DefaultHttpClient = f40487(f40473[17]).DefaultHttpClient;
         prototype = DefaultHttpClient.prototype;
         tmp12 = new.target;
         tmp13 = new.target;
@@ -291,16 +303,15 @@ const tmp9 = (arg0) => {
         if ("string" === typeof tmp2.origin) {
           origin = tmp2.origin;
         } else {
-          tmp8 = f40455;
-          tmp9 = f40441;
-          origin = f40455(f40441[16]).UploadOrigin[tmp2.origin];
+          tmp8 = f40487;
+          tmp9 = f40473;
+          origin = f40487(f40473[16]).UploadOrigin[tmp2.origin];
         }
         tmp2.uploadAnalytics.origin = origin;
       }
       return;
     }
   }
-  let closure_11 = CloudUpload;
   callback4(CloudUpload, arg0);
   let obj = {
     key: "parseRangeHeader",
@@ -317,21 +328,21 @@ const tmp9 = (arg0) => {
       return tmp2;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "retryOpts",
     value() {
-      if (this.item.platform === callback(closure_2[16]).UploadPlatform.REACT_NATIVE) {
-        let obj = { timeout: callback2(closure_2[18]).Millis.HOUR };
-        let tmp10 = callback2(closure_2[19]);
-        const result = 0.5 * callback2(closure_2[18]).Millis.SECOND;
+      if (this.item.platform === callback(4665).UploadPlatform.REACT_NATIVE) {
+        let obj = { timeout: callback2(664).Millis.HOUR };
+        let tmp10 = callback2(561);
+        const result = 0.5 * callback2(664).Millis.SECOND;
         const prototype2 = tmp10.prototype;
-        tmp10 = new tmp10(result, 30 * callback2(closure_2[18]).Millis.MINUTE);
+        tmp10 = new tmp10(result, 30 * callback2(664).Millis.MINUTE);
         obj.backoff = tmp10;
         obj.retries = 12;
       } else {
-        obj = { timeout: callback2(closure_2[18]).Millis.HOUR, retries: 12 };
-        let tmp3 = callback2(closure_2[19]);
+        obj = { timeout: callback2(664).Millis.HOUR, retries: 12 };
+        let tmp3 = callback2(561);
         const prototype = tmp3.prototype;
         tmp3 = new tmp3();
         obj.backoff = tmp3;
@@ -344,14 +355,14 @@ const tmp9 = (arg0) => {
     key: "createAttachmentUrlRetryOpts",
     value() {
       const self = this;
-      if (this.item.platform === callback(closure_2[16]).UploadPlatform.REACT_NATIVE) {
+      if (this.item.platform === callback(4665).UploadPlatform.REACT_NATIVE) {
         let obj = {};
-        obj = { response: 30 * callback2(closure_2[18]).Millis.SECOND, deadline: 30 * callback2(closure_2[18]).Millis.MINUTE };
+        obj = { response: 30 * callback2(664).Millis.SECOND, deadline: 30 * callback2(664).Millis.MINUTE };
         obj.timeout = obj;
-        let tmp4 = callback2(closure_2[19]);
-        const result = 0.5 * callback2(closure_2[18]).Millis.SECOND;
+        let tmp4 = callback2(561);
+        const result = 0.5 * callback2(664).Millis.SECOND;
         const prototype = tmp4.prototype;
-        tmp4 = new tmp4(result, 60 * callback2(closure_2[18]).Millis.SECOND);
+        tmp4 = new tmp4(result, 60 * callback2(664).Millis.SECOND);
         obj.backoff = tmp4;
         obj.retries = 8;
         let retryOptsResult = obj;
@@ -367,13 +378,13 @@ const tmp9 = (arg0) => {
     value() {
       let _libdiscoreEnabled = this._libdiscoreEnabled;
       if (!_libdiscoreEnabled) {
-        _libdiscoreEnabled = this.item.platform !== callback(closure_2[16]).UploadPlatform.REACT_NATIVE;
+        _libdiscoreEnabled = this.item.platform !== callback(4665).UploadPlatform.REACT_NATIVE;
       }
       return _libdiscoreEnabled;
     }
   };
-  const obj2 = { key: "uploadFileToCloud" };
-  let closure_10 = callback(async function() {
+  let obj2 = { key: "uploadFileToCloud" };
+  let _isNativeReflectConstruct = callback(async function() {
     const self = this;
     if (null == self.responseUrl) {
       const _Error = Error;
@@ -382,15 +393,15 @@ const tmp9 = (arg0) => {
     } else {
       const _HermesInternal3 = HermesInternal;
       const combined = "Uploading " + self.id;
-      if (self.item.platform === callback(closure_2[16]).UploadPlatform.REACT_NATIVE) {
+      if (self.item.platform === callback(4665).UploadPlatform.REACT_NATIVE) {
         const _HermesInternal2 = HermesInternal;
         let combined1 = "filename=" + self.item.filename + ", uri=" + self.item.uri;
       } else {
         const _HermesInternal = HermesInternal;
         combined1 = "filename=" + self.item.file.name;
       }
-      closure_18.log(combined, combined1);
-      if (self.item.platform === callback(closure_2[16]).UploadPlatform.REACT_NATIVE) {
+      outer2_18.log(combined, combined1);
+      if (self.item.platform === callback(4665).UploadPlatform.REACT_NATIVE) {
         const obj = { type: self.item.mimeType, uri: self.item.uri, name: self.item.filename };
         let str6 = "application/octet-stream";
         if (null != obj.type) {
@@ -406,37 +417,37 @@ const tmp9 = (arg0) => {
         str4 = "application/octet-stream";
       }
       if (obj2.canUploadNatively(self.item)) {
-        const LibdiscoreHttpClient = callback(closure_2[17]).LibdiscoreHttpClient;
+        const LibdiscoreHttpClient = callback(4672).LibdiscoreHttpClient;
         const prototype = LibdiscoreHttpClient.prototype;
         const libdiscoreHttpClient = new LibdiscoreHttpClient();
         self._uploadHttpClient = libdiscoreHttpClient;
         self._libdiscoreEnabled = true;
-        closure_18.log("Using libdiscore client for file upload");
+        outer2_18.log("Using libdiscore client for file upload");
       }
       return yield self.uploadFileWithResumption(self.responseUrl, file, str4);
     }
   });
   obj2.value = function uploadFileToCloud() {
-    return callback11(...arguments);
+    return callback10(...arguments);
   };
   items[4] = obj2;
-  const obj3 = {
+  let obj3 = {
     key: "getResumePosition",
     value: function getResumePosition(responseUrl) {
-      return callback10(...arguments);
+      return callback9(...arguments);
     }
   };
   items[5] = obj3;
   const obj4 = { key: "startOrResumeUpload" };
-  let closure_8 = callback(async (arg0) => {
-    const fn = function*(headers) {
+  let _possibleConstructorReturn = callback(async (arg0) => {
+    const iter = (function*(headers) {
       let num = arg1;
       const self = this;
       if (num === undefined) {
         num = 0;
       }
       yield undefined;
-      closure_18.log("Attempting to upload attachment with resumeFrom: " + num + " and attempts: " + self.uploadAttempts);
+      outer2_18.log("Attempting to upload attachment with resumeFrom: " + num + " and attempts: " + self.uploadAttempts);
       if (num > 0) {
         const uploadAnalytics = self.uploadAnalytics;
         uploadAnalytics.uploadResumptionCount = uploadAnalytics.uploadResumptionCount + 1;
@@ -451,47 +462,44 @@ const tmp9 = (arg0) => {
         headers.headers = obj;
       } else if (null != headers.headers) {
         headers = headers.headers;
-        Content-Range = headers.Content-Range;
+        Content_Range = headers["Content-Range"];
         headers.headers = callback2(headers, closure_3);
       }
-      headers.onRequestProgress = callback(closure_2[20]).throttle(self.createResumeAwareProgressFn(num), 50);
+      headers.onRequestProgress = callback(table[20]).throttle(self.createResumeAwareProgressFn(num), 50);
       const _uploadHttpClient = self._uploadHttpClient;
       obj = { start: num };
-      const obj3 = callback(closure_2[20]);
-      const tmp9 = yield _uploadHttpClient.doUpload(headers, { fileByteRange: obj }).catch(closure_20.rejectionHandler("upload"));
+      const obj3 = callback(table[20]);
+      const tmp9 = yield _uploadHttpClient.doUpload(headers, { fileByteRange: obj }).catch(outer2_20.rejectionHandler("upload"));
       if (200 !== tmp9.status) {
         if (201 !== tmp9.status) {
           obj = { response: tmp9 };
-          const prototype = ctor.prototype;
-          const tmp14 = new ctor("upload", obj);
+          const prototype = outer2_20.prototype;
+          const tmp14 = new outer2_20("upload", obj);
           throw tmp14;
         }
       }
       return tmp9;
-    };
-    fn.next();
-    return fn;
+    })();
+    iter.next();
+    return iter;
   });
-  obj4.value = function startOrResumeUpload(arg0, arg1) {
-    return callback9(...arguments);
+  obj4.value = function startOrResumeUpload(outer1_2, outer1_3) {
+    return callback8(...arguments);
   };
   items[6] = obj4;
-  const obj5 = { key: "uploadFileWithResumption" };
-  let closure_7 = callback(async function(arg0, arg1, arg2) {
+  let obj5 = { key: "uploadFileWithResumption" };
+  let _get = callback(async function(arg0, arg1, arg2) {
+    let c1;
     let retries;
     const self = this;
-    let callback;
+    c1 = undefined;
     let obj;
-    let closure_3;
+    let c3;
     const retryOptsResult = self.retryOpts();
-    ({ backoff: closure_1, retries } = retryOptsResult);
+    ({ backoff: c1, retries } = retryOptsResult);
     obj = { url: arg0, body: arg1, headers: obj, signal: self._abortController.signal };
-    obj = { Content-Type: arg2 };
-    obj.onRequestProgress = callback(obj[20]).throttle(self.createResumeAwareProgressFn(0), 50);
-    obj.retries = 0;
-    obj.rejectWithError = true;
-    obj.timeout = retryOptsResult.timeout;
-    closure_3 = 0;
+    obj = { "Content-Type": arg2, onRequestProgress: callback(table[20]).throttle(self.createResumeAwareProgressFn(0), 50), retries: 0, rejectWithError: true, timeout: retryOptsResult.timeout };
+    c3 = 0;
     if (self.uploadAttempts <= retries) {
       if (!self._aborted) {
         const _Symbol = Symbol;
@@ -520,14 +528,14 @@ const tmp9 = (arg0) => {
     throw error;
   });
   obj5.value = function uploadFileWithResumption(responseUrl, file, arg2) {
-    return callback8(...arguments);
+    return callback7(...arguments);
   };
   items[7] = obj5;
   const obj6 = { key: "getSize" };
-  const callback = callback(async function() {
-    if (null != callback(closure_2[22]).getFileSize) {
-      const fileSize = callback(closure_2[22]).getFileSize(this.item.uri);
-      const obj = callback(closure_2[22]);
+  callback = callback(async function() {
+    if (null != callback(4674).getFileSize) {
+      const fileSize = callback(4674).getFileSize(this.item.uri);
+      const obj = callback(4674);
     }
     const tmp4 = yield fileSize;
     let num = 0;
@@ -537,26 +545,26 @@ const tmp9 = (arg0) => {
     return num;
   });
   obj6.value = function getSize() {
-    return callback7(...arguments);
+    return callback6(...arguments);
   };
   items[8] = obj6;
   const obj7 = { key: "trackTime" };
-  let closure_5 = callback(async function(arg0, arg1) {
+  let items = callback(async function(arg0, arg1) {
     const nowResult = performance.now();
     this.uploadAnalytics.timing[arg0] = performance.now() - nowResult;
     return yield arg1();
   });
   obj7.value = function trackTime(compressTimeMs, arg1) {
-    return callback6(...arguments);
+    return callback5(...arguments);
   };
   items[9] = obj7;
   const obj8 = { key: "upload" };
-  let closure_4 = callback(async function() {
+  let _slicedToArray = callback(async function() {
     const self = this;
-    let tmp7;
+    let c2;
     let uploadTarget;
-    if (self.status !== constants2.COMPLETED) {
-      self.setStatus(constants2.STARTED);
+    if (self.status !== outer2_21.COMPLETED) {
+      self.setStatus(outer2_21.STARTED);
       const _performance = performance;
       self.startTime = performance.now();
       self.trackUploadStart();
@@ -567,8 +575,8 @@ const tmp9 = (arg0) => {
         self.handleComplete(self.id);
       } else {
         if (self.allowOptimization) {
-          if (self.item.platform === self(tmp7[16]).UploadPlatform.WEB) {
-            const tmp41 = yield closure_11.tryConvertToWebP(self.item.file, () => self._aborted, self.id);
+          if (self.item.platform === callback(4665).UploadPlatform.WEB) {
+            const tmp41 = yield outer1_11.tryConvertToWebP(self.item.file, () => self._aborted, self.id);
             if (null != tmp41) {
               if (null != tmp41.convertedFile) {
                 self.item.file = tmp41.convertedFile;
@@ -587,26 +595,27 @@ const tmp9 = (arg0) => {
             }
           }
         }
-        tmp7 = yield self(tmp7[23]).default.getUploadPayload(self);
-        let obj = self(tmp7[24]);
+        const tmp7 = yield callback(4705).default.getUploadPayload(self);
+        c2 = tmp7;
+        let obj = callback(4706);
         uploadTarget = obj.getUploadTarget(self.item.target);
         if (null != tmp7.filename) {
           if ("" !== tmp7.filename) {
             const currentSize2 = self.currentSize;
             if (0 !== self.currentSize) {
               obj = { location: "CloudUpload.upload.postCompressionCheck" };
-              const kestrelConfig = self(tmp7[26]).getKestrelConfig(obj);
-              const obj3 = self(tmp7[26]);
+              const kestrelConfig = callback(4711).getKestrelConfig(obj);
+              const obj3 = callback(4711);
               const currentSize = self.currentSize;
               let num5 = 0;
-              const effectiveKestrelLimit = self(tmp7[26]).getEffectiveKestrelLimit(kestrelConfig, uploadTarget.getMaxFileSize(self.channelId));
+              const effectiveKestrelLimit = callback(4711).getEffectiveKestrelLimit(kestrelConfig, uploadTarget.getMaxFileSize(self.channelId));
               if (null != currentSize) {
                 num5 = currentSize;
               }
               if (num5 > effectiveKestrelLimit) {
-                self.handleError(constants.ENTITY_TOO_LARGE);
+                self.handleError(outer2_16.ENTITY_TOO_LARGE);
               } else {
-                if (closure_13.get("upload_fail_50")) {
+                if (outer2_13.get("upload_fail_50")) {
                   const _Math = Math;
                   if (Math.random() < 0.5) {
                     const _setTimeout = setTimeout;
@@ -616,58 +625,58 @@ const tmp9 = (arg0) => {
                   }
                 }
                 const _HermesInternal = HermesInternal;
-                closure_18.log("Requesting upload url for " + self.id);
-                const tmp20 = yield self.trackTime("getUploadUrlTimeMs", closure_6(async () => {
-                  const createAttachmentURL = createAttachmentURL.getCreateAttachmentURL(closure_1.channelId);
-                  const HTTP = callback(closure_2[15]).HTTP;
+                outer2_18.log("Requesting upload url for " + self.id);
+                const tmp20 = yield self.trackTime("getUploadUrlTimeMs", _defineProperties(async () => {
+                  const createAttachmentURL = outer1_3.getCreateAttachmentURL(outer1_1.channelId);
+                  const HTTP = callback(table[15]).HTTP;
                   const obj = { url: createAttachmentURL, body: { files: items } };
-                  const items = [closure_2];
-                  const merged = Object.assign(closure_1.createAttachmentUrlRetryOpts());
+                  items = [outer1_2];
+                  const merged = Object.assign(outer1_1.createAttachmentUrlRetryOpts());
                   obj["rejectWithError"] = false;
                   return yield HTTP.post(obj);
                 }));
                 self.setResponseUrl(tmp20.body.attachments[0].upload_url);
                 self.setUploadedFilename(tmp20.body.attachments[0].upload_filename);
-                yield self.trackTime("uploadTimeMs", closure_6(async () => yield closure_1.uploadFileToCloud()));
-                self.trackUploadFinished(constants2.COMPLETED);
+                yield self.trackTime("uploadTimeMs", _defineProperties(async () => yield outer1_1.uploadFileToCloud()));
+                self.trackUploadFinished(outer2_21.COMPLETED);
                 self.handleComplete(self.id);
               }
-              const obj5 = self(tmp7[26]);
+              const obj5 = callback(4711);
             } else {
-              self.handleError(constants.ENTITY_EMPTY);
+              self.handleError(outer2_16.ENTITY_EMPTY);
             }
           }
         }
         const _JSON = JSON;
-        closure_18.error("File does not have a filename.", JSON.stringify(tmp7));
-        self.handleError(constants.INVALID_FILE_ASSET);
+        outer2_18.error("File does not have a filename.", JSON.stringify(tmp7));
+        self.handleError(outer2_16.INVALID_FILE_ASSET);
       }
     }
   });
   obj8.value = function upload() {
-    return callback5(...arguments);
+    return callback4(...arguments);
   };
   items[10] = obj8;
   const obj9 = { key: "reactNativeCompressAndExtractData" };
   let closure_3 = callback(async function() {
     const self = this;
-    let obj = self(closure_2[24]);
+    let obj = callback(4706);
     if (obj.getUploadTarget(self.item.target).shouldReactNativeCompressUploads) {
       if (true === self.reactNativeFilePrepped) {
         self.uploadAnalytics.fileAlreadyPrepped = true;
         const _HermesInternal5 = HermesInternal;
-        closure_18.log("reactNativeCompressAndExtractData() file already prepped - " + self.id);
+        outer2_18.log("reactNativeCompressAndExtractData() file already prepped - " + self.id);
         return self;
       } else {
         const _HermesInternal6 = HermesInternal;
-        closure_18.log("Starting compression/conversion for " + self.id);
-        const tmp28 = yield self.trackTime("compressTimeMs", closure_6(async () => {
-          const reactNativeFileIndex = lib.reactNativeFileIndex;
+        outer2_18.log("Starting compression/conversion for " + self.id);
+        const tmp28 = yield self.trackTime("compressTimeMs", _defineProperties(async () => {
+          const reactNativeFileIndex = outer1_0.reactNativeFileIndex;
           let num = 0;
           if (null != reactNativeFileIndex) {
             num = reactNativeFileIndex;
           }
-          return yield lib(closure_2[28]).getAttachmentFile(lib, num);
+          return yield callback(table[28]).getAttachmentFile(outer1_0, num);
         }));
         if (null != tmp28) {
           if (null != tmp28.file) {
@@ -732,20 +741,20 @@ const tmp9 = (arg0) => {
                   self.uploadAnalytics.convertedMimeType = str5;
                   let size = tmp28.fileSize;
                   if (null == size) {
-                    let obj1 = self(closure_2[29]);
+                    let obj1 = callback(4666);
                     size = yield obj1.getFileData(uri).size;
                   }
                   self.postCompressionSize = size;
                   self.currentSize = size;
                   if (null == size) {
                     const _HermesInternal = HermesInternal;
-                    closure_18.error("Size missing from file data for " + self.id);
+                    outer2_18.error("Size missing from file data for " + self.id);
                     const _Error = Error;
                     const error = new Error("Size missing from file data");
                     throw error;
                   } else {
                     const _HermesInternal7 = HermesInternal;
-                    closure_18.log("Completed compression and conversion. Output size=" + size + " bytes; filename=" + str15 + "; uri=" + uri + "; originalMimeType=" + self.mimeType + "; mimeType=" + str5 + " for " + self.id);
+                    outer2_18.log("Completed compression and conversion. Output size=" + size + " bytes; filename=" + str15 + "; uri=" + uri + "; originalMimeType=" + self.mimeType + "; mimeType=" + str5 + " for " + self.id);
                     obj = { uri, filename: str15, mimeType: str5 };
                     obj = {};
                     const merged = Object.assign(self.item);
@@ -759,7 +768,7 @@ const tmp9 = (arg0) => {
             }
             obj1 = { filename: tmp28.file.name, uri, type: tmp28.file.type };
             const _HermesInternal2 = HermesInternal;
-            closure_18.error("Insufficient file data: " + obj1 + " for " + self.id);
+            outer2_18.error("Insufficient file data: " + obj1 + " for " + self.id);
             const _Error2 = Error;
             const obj2 = { filename: tmp28.file.name, uri, type: tmp28.file.type };
             const _HermesInternal3 = HermesInternal;
@@ -768,26 +777,26 @@ const tmp9 = (arg0) => {
           }
         }
         const _HermesInternal4 = HermesInternal;
-        closure_18.error("Failed to get compressed file for " + self.id);
+        outer2_18.error("Failed to get compressed file for " + self.id);
         return self;
       }
     } else {
       self.uploadAnalytics.compressAndExtractDisabled = true;
-      closure_18.log("reactNativeCompressAndExtractData() disabled by upload target");
+      outer2_18.log("reactNativeCompressAndExtractData() disabled by upload target");
       return self;
     }
   });
   obj9.value = function reactNativeCompressAndExtractData() {
-    return callback4(...arguments);
+    return callback3(...arguments);
   };
   items[11] = obj9;
   items[12] = {
     key: "handleError",
     value: function handleError(error) {
       const self = this;
-      this.setStatus(constants2.ERROR);
+      this.setStatus(outer1_21.ERROR);
       this.error = error;
-      this.trackUploadFinished(constants2.ERROR);
+      this.trackUploadFinished(outer1_21.ERROR);
       this.emit("error", error);
       self.removeAllListeners();
     }
@@ -795,8 +804,8 @@ const tmp9 = (arg0) => {
   items[13] = {
     key: "handleComplete",
     value: function handleComplete(arg0) {
-      this.setStatus(constants2.COMPLETED);
-      closure_18.log("Upload complete for " + this.id);
+      this.setStatus(outer1_21.COMPLETED);
+      outer1_18.log("Upload complete for " + this.id);
       this.emit("complete", arg0);
       this.removeAllListeners();
     }
@@ -805,12 +814,12 @@ const tmp9 = (arg0) => {
     key: "_cancel",
     value: function _cancel(COMPLETED) {
       const self = this;
-      closure_18.log(arg1);
+      outer1_18.log(arg1);
       this._aborted = true;
       const _abortController = this._abortController;
       _abortController.abort();
       this.trackUploadFinished(COMPLETED);
-      if (this.status === constants2.COMPLETED) {
+      if (this.status === outer1_21.COMPLETED) {
         self.delete();
       }
       self.setStatus(COMPLETED);
@@ -821,21 +830,21 @@ const tmp9 = (arg0) => {
   items[15] = {
     key: "cancel",
     value: function cancel() {
-      this._cancel(constants2.CANCELED, "Cancelled called for " + this.id);
+      this._cancel(outer1_21.CANCELED, "Cancelled called for " + this.id);
     }
   };
   items[16] = {
     key: "removeFromMsgDraft",
     value: function removeFromMsgDraft() {
-      this._cancel(constants2.REMOVED_FROM_MSG_DRAFT, "Removed from draft for " + this.id);
+      this._cancel(outer1_21.REMOVED_FROM_MSG_DRAFT, "Removed from draft for " + this.id);
     }
   };
   items[17] = {
     key: "isCancelled",
     value: function isCancelled() {
-      let tmp = this.status === constants2.CANCELED;
+      let tmp = this.status === outer1_21.CANCELED;
       if (!tmp) {
-        tmp = this.status === constants2.REMOVED_FROM_MSG_DRAFT;
+        tmp = this.status === outer1_21.REMOVED_FROM_MSG_DRAFT;
       }
       return tmp;
     }
@@ -843,47 +852,49 @@ const tmp9 = (arg0) => {
   items[18] = {
     key: "resetState",
     value: function resetState() {
-      this.status = constants2.NOT_STARTED;
+      this.status = outer1_21.NOT_STARTED;
       this.uploadedFilename = undefined;
       this.responseUrl = undefined;
       this.responseUrlSetAt = undefined;
       this.error = undefined;
       this.startTime = undefined;
-      this.uploadAnalytics = new closure_22();
+      this.uploadAnalytics = new outer1_22();
       this.uploadAttempts = 0;
       this._aborted = false;
       const abortController = new AbortController();
       this._abortController = abortController;
-      return function _superPropGet(CloudUpload, resetState, arg2, arg3) {
+      return (function _superPropGet(CloudUpload, resetState, arg2, arg3) {
+        let closure_0 = arg2;
         let prototype = CloudUpload;
         if (1) {
           prototype = CloudUpload.prototype;
         }
-        const tmpResult = closure_7(closure_11(prototype), "resetState", arg2);
+        const tmpResult = _get(CloudUpload(prototype), "resetState", arg2);
+        let closure_1 = tmpResult;
         let fn = tmpResult;
         if (2) {
           fn = tmpResult;
           if ("function" === typeof tmpResult) {
-            fn = (arg0) => tmpResult.apply(arg2, arg0);
+            fn = (arg0) => tmpResult.apply(closure_0, arg0);
           }
         }
         return fn;
-      }(CloudUpload, "resetState", this, 3)([]);
+      })(CloudUpload, "resetState", this, 3)([]);
     }
   };
   const obj17 = { key: "delete" };
   let closure_2 = callback(async function() {
     const self = this;
     if (null != self.uploadedFilename) {
-      const uploadTarget = callback(closure_2[24]).getUploadTarget(self.item.target);
+      const uploadTarget = callback(4706).getUploadTarget(self.item.target);
       const deleteUploadURL = uploadTarget.getDeleteUploadURL(self.uploadedFilename);
-      const HTTP = callback(closure_2[15]).HTTP;
+      const HTTP = callback(507).HTTP;
       yield HTTP.del(deleteUploadURL);
-      const obj = callback(closure_2[24]);
+      const obj = callback(4706);
     }
   });
   obj17.value = function _delete() {
-    return callback3(...arguments);
+    return dependencyMap(...arguments);
   };
   items[19] = obj17;
   items[20] = {
@@ -896,15 +907,15 @@ const tmp9 = (arg0) => {
   const obj19 = { key: "ensureFreshResponseUrl" };
   let closure_1 = callback(async function() {
     const self = this;
-    if (responseUrlStale.isResponseUrlStale(self.responseUrlSetAt)) {
-      const _default = callback(closure_2[23]).default;
-      let obj = callback(closure_2[24]);
+    if (outer1_11.isResponseUrlStale(self.responseUrlSetAt)) {
+      const _default = callback(4705).default;
+      let obj = callback(4706);
       const uploadTarget = obj.getUploadTarget(self.item.target);
       const createAttachmentURL = uploadTarget.getCreateAttachmentURL(self.channelId);
-      const HTTP = callback(closure_2[15]).HTTP;
+      const HTTP = callback(507).HTTP;
       obj = { url: createAttachmentURL };
       obj = {};
-      const items = [yield callback(closure_2[23]).default.getUploadPayload(self)];
+      const items = [yield callback(4705).default.getUploadPayload(self)];
       obj.files = items;
       obj.body = obj;
       const merged = Object.assign(self.createAttachmentUrlRetryOpts());
@@ -925,8 +936,8 @@ const tmp9 = (arg0) => {
         }
       }
       const obj1 = { response: tmp9 };
-      const prototype = ctor.prototype;
-      const tmp18 = new ctor("upload", obj1);
+      const prototype = outer2_20.prototype;
+      const tmp18 = new outer2_20("upload", obj1);
       throw tmp18;
     }
   });
@@ -955,7 +966,7 @@ const tmp9 = (arg0) => {
   items[25] = {
     key: "trackUploadStart",
     value: function trackUploadStart() {
-      let obj = callback2(closure_2[30]);
+      let obj = callback2(675);
       obj = { file_size: this.currentSize };
       const mimeType = this.mimeType;
       let str = "unknown";
@@ -963,12 +974,12 @@ const tmp9 = (arg0) => {
         str = mimeType;
       }
       obj.mime_type = str;
-      ({ videoUploadQuality: obj2.video_upload_quality, dataSavingMode: obj2.data_saving_mode, dataSavingMode: obj2.low_quality_image_mode } = closure_14);
+      ({ videoUploadQuality: obj2.video_upload_quality, dataSavingMode: obj2.data_saving_mode, dataSavingMode: obj2.low_quality_image_mode } = outer1_14);
       obj.channel_id = this.channelId;
-      obj.connection_type = store.getType();
-      obj.effective_connection_speed = store.getEffectiveConnectionSpeed();
-      obj.service_provider = store.getServiceProvider();
-      obj.track(constants.ATTACHMENT_UPLOAD_STARTED, obj);
+      obj.connection_type = outer1_15.getType();
+      obj.effective_connection_speed = outer1_15.getEffectiveConnectionSpeed();
+      obj.service_provider = outer1_15.getServiceProvider();
+      obj.track(outer1_17.ATTACHMENT_UPLOAD_STARTED, obj);
     }
   };
   items[26] = {
@@ -980,7 +991,7 @@ const tmp9 = (arg0) => {
         const _performance = performance;
         num = performance.now() - self.startTime;
       }
-      let obj = callback2(closure_2[30]);
+      let obj = callback2(675);
       obj = { duration_ms: num };
       ({ currentSize: obj2.file_size, preCompressionSize: obj2.pre_compression_file_size } = self);
       obj.final_state = COMPLETED;
@@ -998,7 +1009,7 @@ const tmp9 = (arg0) => {
       }
       obj.num_upload_attempts = num2;
       obj.error_code = self.error;
-      ({ videoUploadQuality: obj2.video_upload_quality, dataSavingMode: obj2.data_saving_mode, dataSavingMode: obj2.low_quality_image_mode } = closure_14);
+      ({ videoUploadQuality: obj2.video_upload_quality, dataSavingMode: obj2.data_saving_mode, dataSavingMode: obj2.low_quality_image_mode } = outer1_14);
       obj.compress_time_ms = self.uploadAnalytics.timing.compressTimeMs;
       obj.get_upload_url_time_ms = self.uploadAnalytics.timing.getUploadUrlTimeMs;
       obj.upload_time_ms = self.uploadAnalytics.timing.uploadTimeMs;
@@ -1062,28 +1073,28 @@ const tmp9 = (arg0) => {
         str3 = "libdiscore";
       }
       obj.upload_http_client = str3;
-      obj.connection_type = store.getType();
-      obj.effective_connection_speed = store.getEffectiveConnectionSpeed();
-      obj.service_provider = store.getServiceProvider();
-      obj.track(constants.ATTACHMENT_UPLOAD_FINISHED, obj);
+      obj.connection_type = outer1_15.getType();
+      obj.effective_connection_speed = outer1_15.getEffectiveConnectionSpeed();
+      obj.service_provider = outer1_15.getServiceProvider();
+      obj.track(outer1_17.ATTACHMENT_UPLOAD_FINISHED, obj);
     }
   };
   const items1 = [
     {
       key: "fromJson",
       value: function fromJson(item) {
-        const tmp = new CloudUpload(item.item, item.channelId, item.reactNativeFileIndex);
+        let tmp = new CloudUpload(item.item, item.channelId, item.reactNativeFileIndex);
         let closure_0 = tmp;
         const entries = Object.entries(item);
         item = entries.forEach((arg0) => {
           const tmp = callback(arg0, 2);
           const first = tmp[0];
           if (!first.startsWith("_")) {
-            tmp[first] = tmp[1];
+            closure_0[first] = tmp[1];
           }
         });
-        if (tmp.status !== constants2.COMPLETED) {
-          tmp.status = constants2.NOT_STARTED;
+        if (tmp.status !== outer1_21.COMPLETED) {
+          tmp.status = outer1_21.NOT_STARTED;
         }
         return tmp;
       }
@@ -1095,18 +1106,18 @@ const tmp9 = (arg0) => {
   let closure_0 = callback(async (arg0, arg1, arg2) => {
     let sizeAfter;
     let sizeBefore;
-    let obj = callback(closure_2[31]);
+    let obj = callback(paths[31]);
     const imageAttachmentMezzanineV2Config = obj.getImageAttachmentMezzanineV2Config({ location: "CloudUpload.maybeConvertToWebP" });
     if (imageAttachmentMezzanineV2Config.enabled) {
       if (null == arg0) {
         const _HermesInternal5 = HermesInternal;
-        closure_18.warn("webp conversion skipped for " + arg2 + ": no file");
+        outer2_18.warn("webp conversion skipped for " + arg2 + ": no file");
         return null;
       } else {
         if (null != imageAttachmentMezzanineV2Config.maxFileSizeBytes) {
           if (arg0.size > imageAttachmentMezzanineV2Config.maxFileSizeBytes) {
             const _HermesInternal4 = HermesInternal;
-            closure_18.warn("webp conversion skipped for " + arg2 + ": too big");
+            outer2_18.warn("webp conversion skipped for " + arg2 + ": too big");
             return null;
           }
         }
@@ -1126,7 +1137,7 @@ const tmp9 = (arg0) => {
                 const compressionRatio = tmp18.compressionRatio;
                 ({ sizeBefore, sizeAfter } = tmp18);
                 const _HermesInternal3 = HermesInternal;
-                closure_18.log("webp conversion worked for " + arg2 + ": " + sizeBefore + " -> " + sizeAfter + " bytes (" + compressionRatio.toFixed(2) + "x)");
+                outer2_18.log("webp conversion worked for " + arg2 + ": " + sizeBefore + " -> " + sizeAfter + " bytes (" + compressionRatio.toFixed(2) + "x)");
                 const _File = File;
                 const items = [tmp18.convertedBlob];
                 obj = { type: "image/webp", lastModified: arg0.lastModified };
@@ -1151,7 +1162,7 @@ const tmp9 = (arg0) => {
                   break;
                 } else {
                   compressTimeMs = tmp18.compressTimeMs;
-                  // break
+                  break;
                 }
                 let tmp47 = compressTimeMs;
                 if (null != compressTimeMs) {
@@ -1168,15 +1179,15 @@ const tmp9 = (arg0) => {
               UNKNOWN_ERROR = ConversionFailureReason.UNKNOWN_ERROR;
             }
             const _HermesInternal2 = HermesInternal;
-            closure_18.log("webp conversion skipped for " + arg2 + ": " + UNKNOWN_ERROR);
+            outer2_18.log("webp conversion skipped for " + arg2 + ": " + UNKNOWN_ERROR);
             tmp13.conversionFailureReason = UNKNOWN_ERROR;
           }
-          const nowResult = performance.now();
+          nowResult = performance.now();
         }
       }
     } else {
       const _HermesInternal = HermesInternal;
-      closure_18.warn("webp conversion skipped for " + arg2 + ": not enabled");
+      outer2_18.warn("webp conversion skipped for " + arg2 + ": not enabled");
       return null;
     }
   });
@@ -1191,15 +1202,15 @@ const tmp9 = (arg0) => {
         return true;
       } else {
         const _Date = Date;
-        const result = 12 * callback2(closure_2[18]).Millis.HOUR;
+        const result = 12 * callback2(664).Millis.HOUR;
         return Date.now() - responseUrlSetAt > result;
       }
     }
   };
   return callback(async function(arg0) {
     const self = this;
-    let obj = { url: arg0, headers: { Content-Range: "bytes */*" }, rejectWithError: true, retries: 0 };
-    obj = { deadline: 30 * callback(closure_2[18]).Millis.SECOND };
+    let obj = { url: arg0, headers: { "Content-Range": "bytes */*" }, rejectWithError: true, retries: 0 };
+    obj = { deadline: 30 * callback(table[18]).Millis.SECOND };
     obj.timeout = obj;
     obj.signal = self._abortController.signal;
     const _uploadHttpClient = self._uploadHttpClient;
@@ -1207,13 +1218,13 @@ const tmp9 = (arg0) => {
     return yield _uploadHttpClient.doUpload(obj).then((status) => {
       if (200 !== status.status) {
         if (201 !== status.status) {
-          let currentSize = closure_20.rejectionHandler("status_check")(status);
+          let currentSize = outer3_20.rejectionHandler("status_check")(status);
         }
         return currentSize;
       }
       currentSize = self.currentSize;
     }).catch((status) => {
-      if (status instanceof self(closure_2[15]).HTTPResponseError) {
+      if (status instanceof _self(table[15]).HTTPResponseError) {
         if (308 === status.status) {
           const range = status.headers.range;
           let str = "";
@@ -1228,12 +1239,7 @@ const tmp9 = (arg0) => {
           return num2;
         }
       }
-      return closure_20.rejectionHandler("status_check")(status);
+      return outer3_20.rejectionHandler("status_check")(status);
     });
   })(CloudUpload, items, items1);
-}(importDefault(dependencyMap[16]));
-const result = arg1(dependencyMap[34]).fileFinishedImporting("lib/uploader/CloudUpload.tsx");
-
-export const ResumableUploadError = tmp8;
-export const CloudUploadStatus = obj;
-export const CloudUpload = tmp9;
+})(require("_isNativeReflectConstruct"));

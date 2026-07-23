@@ -1,15 +1,15 @@
-// Module ID: 4983
-// Function ID: 42960
+// Module ID: 4986
+// Function ID: 42978
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getIsEligibleForUserSettingsRedesign4DExperiment, useIsEligibleForUserSettingsRedesign4DExperiment
 
-// Module 4983 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: -1790464492, DateToSystemTimezoneSetter: 2061582441, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/user_settings/UserSettingsRedesignExperiment.tsx");
+// Module 4986 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-05-user-settings-redesign-4d", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingsRedesignExperiment.tsx");
 
 export const UserSettingsRedesign4DExperiment = apexExperiment;
 export const useIsEligibleForUserSettingsRedesign4DExperiment = function useIsEligibleForUserSettingsRedesign4DExperiment(location) {

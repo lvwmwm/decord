@@ -1,54 +1,55 @@
-// Module ID: 14374
-// Function ID: 108509
+// Module ID: 14488
+// Function ID: 110662
 // Name: SkeletonGrid
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 8663, 14489, 13981, 14490, 2]
 // Exports: default
 
-// Module 14374 (SkeletonGrid)
+// Module 14488 (SkeletonGrid)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function SkeletonGrid(accessibilityLabel) {
+  let View;
+  let jsx;
   const loadingCardsNum = accessibilityLabel.loadingCardsNum;
-  const arg1 = loadingCardsNum;
-  const tmp = callback();
+  const tmp = items();
   const importDefault = tmp;
-  let obj = arg1(dependencyMap[5]);
+  let obj = loadingCardsNum(columns[5]);
   const cardLayout = obj.useCardLayout();
-  const columns = cardLayout.columns;
-  const dependencyMap = columns;
-  ({ cardWidth: closure_3, rowWidth: closure_4 } = cardLayout);
-  const items = [];
-  const callback = items;
+  columns = cardLayout.columns;
+  ({ cardWidth: View, rowWidth: jsx } = cardLayout);
+  items = [];
   for (let num = 0; num < loadingCardsNum; num = num + columns) {
-    let tmp3 = function _loop(arg0) {
-      const loadingCardsNum = arg0;
-      let obj = { length: Math.min(columns, loadingCardsNum - arg0) };
+    let tmp3 = (function _loop(arg0) {
+      let closure_0 = arg0;
+      let obj = { length: Math.min(columns, closure_0 - arg0) };
       let arr = Array.from(obj);
       obj = {
         style: items,
         children: arr.map((arg0, arg1) => {
-          let obj = { width: closure_3 };
-          obj = { marginBottom: arg0(closure_2[4]).COLLECTIBLES_SHOP_CARD_GAP };
+          let obj = { width: outer1_3 };
+          obj = { marginBottom: loadingCardsNum(columns[4]).COLLECTIBLES_SHOP_CARD_GAP };
           obj.style = obj;
-          return callback2(callback(closure_2[6]), obj, "" + arg0 + "-" + arg1);
+          return outer2_4(callback(columns[6]), obj, "" + closure_0 + "-" + arg1);
         })
       };
-      const items = [tmp.skeletonRow, ];
-      obj = { width: callback };
+      items = [tmp.skeletonRow, ];
+      obj = { width: closure_4 };
       items[1] = obj;
-      arr = items.push(callback(closure_3, obj, "row-" + arg0));
-    }(num);
+      arr = items.push(outer1_4(outer1_3, obj, "row-" + arg0));
+    })(num);
   }
   obj = { style: tmp.skeletonGrid, accessibilityRole: "list", accessibilityLabel: accessibilityLabel.accessibilityLabel, accessibilityState: { busy: true }, accessible: true, children: items };
-  return <View {...obj} />;
+  return <View style={tmp.skeletonGrid} accessibilityRole="list" accessibilityLabel={arg0.accessibilityLabel} accessibilityState={{ busy: true }} accessible>{items}</View>;
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = { skeletonGrid: { surrogates: "<string:3942646034>", accessibilityRole: "<string:3355444267>" } };
-obj = { flexDirection: "row", gap: arg1(dependencyMap[4]).COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: arg1(dependencyMap[4]).COLLECTIBLES_SHOP_CARD_GAP, paddingHorizontal: arg1(dependencyMap[4]).COLLECTIBLES_SHOP_CARD_GAP };
-obj.skeletonRow = obj;
-let closure_5 = obj.createStyles(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/collectibles/native/FeedProductList.tsx");
+_createForOfIteratorHelperLoose = { skeletonGrid: { flex: 1, alignItems: "center" } };
+_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP, paddingHorizontal: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP };
+_createForOfIteratorHelperLoose.skeletonRow = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/FeedProductList.tsx");
 
 export default function FeedProductList(arg0) {
   let accessibilityLabel;
@@ -56,10 +57,10 @@ export default function FeedProductList(arg0) {
   ({ products, accessibilityLabel } = arg0);
   if (0 === products.length) {
     let obj = { loadingCardsNum: tmp, accessibilityLabel };
-    let tmp7 = <SkeletonGrid {...obj} />;
+    let tmp7 = <SkeletonGrid loadingCardsNum={tmp} accessibilityLabel={accessibilityLabel} />;
   } else {
     obj = { products, preferVCPrice: tmp2, accessibilityLabel, disableBundleStaticBackground: tmp3 };
-    tmp7 = jsx(importDefault(dependencyMap[7]), obj);
+    tmp7 = jsx(importDefault(14490), { products, preferVCPrice: tmp2, accessibilityLabel, disableBundleStaticBackground: tmp3 });
   }
   return tmp7;
 };

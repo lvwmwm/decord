@@ -1,17 +1,18 @@
-// Module ID: 8659
-// Function ID: 68545
+// Module ID: 8666
+// Function ID: 68585
 // Name: useCollectiblesAnalyticsContext
-// Dependencies: []
+// Dependencies: [31, 33, 2]
 // Exports: CollectiblesAnalyticsProvider
 
-// Module 8659 (useCollectiblesAnalyticsContext)
+// Module 8666 (useCollectiblesAnalyticsContext)
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
 function useCollectiblesAnalyticsContext() {
   return importAllResult.useContext(context);
 }
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
 const context = importAllResult.createContext(null);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/collectibles/CollectiblesAnalyticsContext.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/CollectiblesAnalyticsContext.tsx");
 
 export const CollectiblesAnalyticsContext = context;
 export { useCollectiblesAnalyticsContext };
@@ -21,7 +22,7 @@ export const CollectiblesAnalyticsProvider = function CollectiblesAnalyticsProvi
   const jsx = tmp;
   const items = [tmp, newValue];
   return <context.Provider value={newValue.useMemo(() => {
-    const merged = Object.assign(tmp);
+    const merged = Object.assign(closure_1);
     const merged1 = Object.assign(newValue);
     return {};
   }, items)}>{arg0.children}</context.Provider>;

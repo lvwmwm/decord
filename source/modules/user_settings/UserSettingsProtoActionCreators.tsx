@@ -1,53 +1,66 @@
 // Module ID: 1331
-// Function ID: 15575
+// Function ID: 15576
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 1316, 662, 653, 686, 44, 1318, 507, 664, 3, 1332, 587, 1319, 1282, 1317, 1333, 675, 1334, 1335, 1336, 2]
 // Exports: addDismissedContent, checkAllDismissedContents, clearDismissedContents, clearGuildDismissedContents, clearGuildThemeSourcePreferenceOverride, markUserSettingsLoadOkayForDevelopment, removeDismissedContent, removeDismissedRecurringContent, setDefaultGuildThemePreference, updateGuildDismissedContent, updateUserChannelSettings
 
 // Module 1331 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import closure_3 from "ME";
+import dispatcher from "dispatcher";
+import invariant from "invariant";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import MAX_FAVORITES from "MAX_FAVORITES";
+import ME from "ME";
+import importDefaultResult from "dispatcher";
+import importDefaultResult1 from "dispatcher";
+
+let closure_10;
+let closure_11;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +71,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,51 +98,49 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function updateUserAllGuildSettings(arg0, INFREQUENT_USER_ACTION) {
-  INFREQUENT_USER_ACTION = arg0;
-  return tmp9.updateAsync("guilds", (arg0) => arg0(arg0), INFREQUENT_USER_ACTION);
+  let closure_0 = arg0;
+  return tmp9.updateAsync("guilds", (arg0) => callback(arg0), INFREQUENT_USER_ACTION);
 }
 function updateUserGuildSettings(arg0, arg1, INFREQUENT_USER_ACTION) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  return tmp9.updateAsync("guilds", (guilds) => guilds(closure_2[8]).mutateUserGuildSettingsInternal(guilds, guilds, arg1), INFREQUENT_USER_ACTION);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return tmp9.updateAsync("guilds", (guilds) => callback(outer1_2[8]).mutateUserGuildSettingsInternal(guilds, callback, closure_1), INFREQUENT_USER_ACTION);
 }
 function setGuildThemeSourcePreferenceOverride(id, UNSPECIFIED) {
+  let closure_0 = UNSPECIFIED;
   return updateUserGuildSettings(id, (arg0) => {
-    arg0.guildThemeSourcePreference = arg1;
+    arg0.guildThemeSourcePreference = closure_0;
   }, UserSettingsDelay.INFREQUENT_USER_ACTION);
 }
 function updateRecurringDismissibleContentState(GUILD_POWERUP_NOTIFICATION, arg1) {
   return _updateRecurringDismissibleContentState(...arguments);
 }
 async function _updateRecurringDismissibleContentState(arg0, arg1, arg2) {
-  return yield closure_12.updateAsync("userContent", (recurringDismissibleContentStates) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return yield outer2_12.updateAsync("userContent", (recurringDismissibleContentStates) => {
     const merged = Object.assign(recurringDismissibleContentStates.recurringDismissibleContentStates[closure_0]);
-    const merged1 = Object.assign(arg1);
-    recurringDismissibleContentStates.recurringDismissibleContentStates[recurringDismissibleContentStates] = {};
-  }, closure_8.INFREQUENT_USER_ACTION);
+    const merged1 = Object.assign(closure_1);
+    recurringDismissibleContentStates.recurringDismissibleContentStates[closure_0] = {};
+  }, outer2_8.INFREQUENT_USER_ACTION);
 }
 async function _updateGuildDismissedContent(arg0, arg1, arg2, arg3) {
-  return yield closure_16(arg1, (guildDismissibleContentStates) => {
+  let closure_0 = arg0;
+  let closure_1 = arg2;
+  return yield outer2_16(arg1, (guildDismissibleContentStates) => {
     const merged = Object.assign(guildDismissibleContentStates.guildDismissibleContentStates[closure_0]);
-    const merged1 = Object.assign(arg2);
-    guildDismissibleContentStates.guildDismissibleContentStates[guildDismissibleContentStates] = {};
-  }, closure_8.INFREQUENT_USER_ACTION);
+    const merged1 = Object.assign(closure_1);
+    guildDismissibleContentStates.guildDismissibleContentStates[closure_0] = {};
+  }, outer2_8.INFREQUENT_USER_ACTION);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[4]);
-const UserSettingsTypes = tmp2.UserSettingsTypes;
-const UserSettingsDelay = tmp2.UserSettingsDelay;
-({ AbortCodes: closure_9, Endpoints: closure_10, AnalyticEvents: closure_11 } = arg1(dependencyMap[5]));
-const timestamp = Date.now();
-const tmp3 = arg1(dependencyMap[5]);
-const subscription = importDefault(dependencyMap[6]).subscribe("CONNECTION_OPEN", () => {
+const UserSettingsTypes = MAX_FAVORITES.UserSettingsTypes;
+const UserSettingsDelay = MAX_FAVORITES.UserSettingsDelay;
+({ AbortCodes: closure_9, Endpoints: closure_10, AnalyticEvents: closure_11 } = ME);
+let timestamp = Date.now();
+const subscription = require("dispatcher").subscribe("CONNECTION_OPEN", () => {
   const timestamp = Date.now();
 });
-const importDefaultResult = importDefault(dependencyMap[6]);
-const subscription1 = importDefault(dependencyMap[6]).subscribe("CONNECTION_CLOSED", () => {
+const subscription1 = require("dispatcher").subscribe("CONNECTION_CLOSED", () => {
   const timestamp = Date.now();
 });
 if ("undefined" !== typeof document) {
@@ -142,73 +153,72 @@ if ("undefined" !== typeof document) {
 
   });
 }
-let tmp9 = () => {
+let tmp9 = (() => {
   class UserSettingsProtoActionCreators {
     constructor(arg0, arg1) {
-      f15615 = this;
-      tmp = closure_4(this, UserSettingsProtoActionCreators);
+      self = this;
+      tmp = outer1_4(this, UserSettingsProtoActionCreators);
       this.ProtoClass = arg0;
       this.type = arg1;
       this.beforeSendCallbacks = [];
       this.lastSendTime = 0;
-      this.persistChanges = closure_3(async () => {
+      this.persistChanges = outer1_3(async () => {
         let editInfo;
-        callback(closure_2[7])(true, "this cannot run in the overlay");
-        const logger = editInfo.logger;
+        callback2(UserSettingsProtoActionCreators[7])(true, "this cannot run in the overlay");
+        const logger = outer1_0.logger;
         logger.log("Persisting proto");
-        editInfo = editInfo.getEditInfo().editInfo;
+        editInfo = outer1_0.getEditInfo().editInfo;
         if (null != editInfo.protoToSave) {
-          const item = editInfo.beforeSendCallbacks.forEach((processProto) => processProto.processProto(editInfo.protoToSave));
-          let obj = editInfo(closure_2[8]);
-          const protoToB64Result = obj.protoToB64(editInfo.ProtoClass, tmp3.protoToSave);
+          const item = outer1_0.beforeSendCallbacks.forEach((processProto) => processProto.processProto(editInfo.protoToSave));
+          let obj = callback(UserSettingsProtoActionCreators[8]);
+          const protoToB64Result = obj.protoToB64(outer1_0.ProtoClass, tmp3.protoToSave);
           if (null != protoToB64Result) {
             if ("" !== tmp12) {
-              editInfo.saveLastSendTime();
-              const HTTP = editInfo(closure_2[9]).HTTP;
-              obj = { url: closure_10.USER_SETTINGS_PROTO(editInfo.type) };
+              outer1_0.saveLastSendTime();
+              const HTTP = callback(UserSettingsProtoActionCreators[9]).HTTP;
+              obj = { url: outer3_10.USER_SETTINGS_PROTO(outer1_0.type) };
               obj = { settings: protoToB64Result, required_data_version: editInfo.offlineEditDataVersion };
               obj.body = obj;
               obj.rejectWithError = false;
               const body = yield HTTP.patch(obj).body;
               if (body.out_of_date) {
-                const logger4 = editInfo.logger;
+                const logger4 = outer1_0.logger;
                 logger4.log("Proto was out of date, discarding changes");
               }
-              const cleanupFuncs = editInfo.getEditInfo().editInfo.cleanupFuncs;
+              const cleanupFuncs = outer1_0.getEditInfo().editInfo.cleanupFuncs;
               const item1 = cleanupFuncs.forEach((arg0) => arg0());
-              const b64ToProtoResult = editInfo(closure_2[8]).b64ToProto(editInfo.ProtoClass, body.settings);
+              const b64ToProtoResult = callback(UserSettingsProtoActionCreators[8]).b64ToProto(outer1_0.ProtoClass, body.settings);
               if (null != b64ToProtoResult) {
-                const obj1 = {};
-                const obj2 = { proto: b64ToProtoResult, type: editInfo.type };
+                const obj1 = { type: "USER_SETTINGS_PROTO_UPDATE", settings: null, resetEditInfo: true, wasSaved: true, local: false };
+                const obj2 = { proto: b64ToProtoResult, type: outer1_0.type };
                 obj1.settings = obj2;
-                callback(closure_2[6]).dispatch(obj1);
-                const obj5 = callback(closure_2[6]);
+                callback2(UserSettingsProtoActionCreators[6]).dispatch(obj1);
+                const obj5 = callback2(UserSettingsProtoActionCreators[6]);
               }
-              const obj4 = editInfo(closure_2[8]);
+              const obj4 = callback(UserSettingsProtoActionCreators[8]);
             }
           }
-          const logger3 = editInfo.logger;
+          const logger3 = outer1_0.logger;
           logger3.log("Not persisting proto because there is nothing to change");
-          const beforeSendCallbacks = editInfo.beforeSendCallbacks;
+          const beforeSendCallbacks = outer1_0.beforeSendCallbacks;
         } else {
-          const logger2 = editInfo.logger;
+          const logger2 = outer1_0.logger;
           logger2.log("Not persisting proto because the proto was null");
         }
       });
-      tmp2 = f15608(UserSettingsProtoActionCreators[11]);
+      tmp2 = f15609(UserSettingsProtoActionCreators[11]);
       tmp2 = new tmp2(this.ProtoClass.typeName);
       this.logger = tmp2;
       return;
     }
   }
-  const dependencyMap = UserSettingsProtoActionCreators;
   let obj = {
     key: "getEditInfo",
     value() {
-      return closure_6.getFullState()[this.type];
+      return outer1_6.getFullState()[this.type];
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "getCurrentValue",
     value() {
@@ -220,18 +230,18 @@ let tmp9 = () => {
   let closure_1 = callback(async function(arg0, arg1, arg2, arg3) {
     const self = this;
     yield self.loadIfNecessary();
-    let obj = callback(closure_2[12]);
+    let obj = callback(UserSettingsProtoActionCreators[12]);
     const protoFieldClass = obj.getProtoFieldClass(self.ProtoClass, arg0);
-    const modifiedProto = callback(closure_2[12]).createModifiedProto(self.getCurrentValue()[arg0], arg1, protoFieldClass, self.ProtoClass, arg0);
+    const modifiedProto = callback(UserSettingsProtoActionCreators[12]).createModifiedProto(self.getCurrentValue()[arg0], arg1, protoFieldClass, self.ProtoClass, arg0);
     if (null != modifiedProto) {
       const logger = self.logger;
       const _String = String;
       const _HermesInternal = HermesInternal;
       logger.log("Updating " + String(arg0) + " with delay " + arg2);
       obj = { delaySeconds: arg2 };
-      let tmp5 = arg2 === constants.AUTOMATED;
+      let tmp5 = arg2 === outer2_8.AUTOMATED;
       if (!tmp5) {
-        tmp5 = arg2 === constants.DAILY;
+        tmp5 = arg2 === outer2_8.DAILY;
       }
       obj.jitter = tmp5;
       obj.onError = arg3;
@@ -251,7 +261,7 @@ let tmp9 = () => {
       let obj = { timeout: editInfo.timeout };
       if (editInfo.loaded) {
         if (false !== dispatch.dispatch) {
-          obj = {};
+          obj = { type: "USER_SETTINGS_PROTO_UPDATE", settings: null, partial: true, local: true };
           obj = { type: self.type, proto };
           obj.settings = obj;
           callback2(UserSettingsProtoActionCreators[6]).dispatch(obj);
@@ -338,7 +348,7 @@ let tmp9 = () => {
     key: "loadIfUncached",
     value(FRECENCY_AND_FAVORITES_SETTINGS) {
       const self = this;
-      let hasLoadedResult = closure_6.hasLoaded(FRECENCY_AND_FAVORITES_SETTINGS);
+      let hasLoadedResult = outer1_6.hasLoaded(FRECENCY_AND_FAVORITES_SETTINGS);
       if (hasLoadedResult) {
         hasLoadedResult = true !== arg1;
       }
@@ -347,7 +357,7 @@ let tmp9 = () => {
       }
     }
   };
-  const obj5 = { key: "loadIfNecessary" };
+  let obj5 = { key: "loadIfNecessary" };
   let closure_0 = callback(async function(arg0) {
     let cleanupFuncs;
     let proto;
@@ -356,16 +366,16 @@ let tmp9 = () => {
     const logger = self.logger;
     logger.log("Loading proto");
     self.dispatchChanges({ loading: true });
-    const HTTP = callback(closure_2[9]).HTTP;
-    let obj = { url: closure_10.USER_SETTINGS_PROTO(self.type), rejectWithError: false };
-    const b64ToProtoResult = callback(closure_2[8]).b64ToProto(self.ProtoClass, yield HTTP.get(obj).body.settings);
+    const HTTP = callback(UserSettingsProtoActionCreators[9]).HTTP;
+    let obj = { url: outer2_10.USER_SETTINGS_PROTO(self.type), rejectWithError: false };
+    const b64ToProtoResult = callback(UserSettingsProtoActionCreators[8]).b64ToProto(self.ProtoClass, yield HTTP.get(obj).body.settings);
     if (null == b64ToProtoResult) {
-      self.dispatchChanges({ "Bool(false)": 1766088043, "Bool(false)": 827788593 });
+      self.dispatchChanges({ loading: false, loaded: true });
     } else {
-      const runMigrationsResult = callback(closure_2[8]).runMigrations(tmp4, callback2(closure_2[14])[self.type]);
+      const runMigrationsResult = callback(UserSettingsProtoActionCreators[8]).runMigrations(tmp4, callback2(UserSettingsProtoActionCreators[14])[self.type]);
       const isDirty = runMigrationsResult.isDirty;
       ({ proto, cleanupFuncs } = runMigrationsResult);
-      const obj3 = callback(closure_2[8]);
+      const obj3 = callback(UserSettingsProtoActionCreators[8]);
       obj = { type: "USER_SETTINGS_PROTO_UPDATE" };
       obj = { type: self.type, proto: tmp4 };
       obj.settings = obj;
@@ -375,13 +385,13 @@ let tmp9 = () => {
       }
       obj.resetEditInfo = tmp5;
       obj.local = false;
-      yield callback2(closure_2[6]).dispatch(obj);
+      yield callback2(UserSettingsProtoActionCreators[6]).dispatch(obj);
       if (isDirty) {
         const result = self.markDirtyFromMigration(proto, cleanupFuncs);
       }
       return b64ToProtoResult;
     }
-    const obj2 = callback(closure_2[8]);
+    const obj2 = callback(UserSettingsProtoActionCreators[8]);
   });
   obj5.value = function loadIfNecessary(arg0) {
     return callback(...arguments);
@@ -394,7 +404,7 @@ let tmp9 = () => {
       const logger = this.logger;
       logger.log("Marking dirty due to migrates");
       callback2(UserSettingsProtoActionCreators[7])(null == this.getEditInfo().editInfo.offlineEditDataVersion, "offline changes are not supported with migrations");
-      this.markDirty(arg0, { cleanup, dispatch: false, delaySeconds: constants.AUTOMATED, jitter: true });
+      this.markDirty(arg0, { cleanup, dispatch: false, delaySeconds: outer1_8.AUTOMATED, jitter: true });
     }
   };
   items[9] = {
@@ -405,7 +415,7 @@ let tmp9 = () => {
       const self = this;
       if (beforeSendCallbacks.some((hasChanges) => hasChanges.hasChanges())) {
         ({ ProtoClass, markDirty } = self);
-        const obj = { body: true, paddingHorizontal: true, cleanup };
+        const obj = { dispatch: false, delaySeconds: 0, cleanup };
         markDirty(ProtoClass.create(), obj);
       }
     }
@@ -425,13 +435,13 @@ let tmp9 = () => {
     }
   };
   return callback2(UserSettingsProtoActionCreators, items);
-}();
-tmp9 = new tmp9(arg1(dependencyMap[15]).PreloadedUserSettings, UserSettingsTypes.PRELOADED_USER_SETTINGS);
-tmp9 = new tmp9(arg1(dependencyMap[16]).FrecencyUserSettings, UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS);
-const importDefaultResult1 = importDefault(dependencyMap[6]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_settings/UserSettingsProtoActionCreators.tsx");
+})();
+tmp9 = new tmp9(require("_callSuper").PreloadedUserSettings, UserSettingsTypes.PRELOADED_USER_SETTINGS);
+let closure_12 = tmp9;
+tmp9 = new tmp9(require("_callSuper").FrecencyUserSettings, UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS);
+let result = require("_defineProperties").fileFinishedImporting("modules/user_settings/UserSettingsProtoActionCreators.tsx");
 
-export const UserSettingsDelay = arg1(dependencyMap[4]).UserSettingsDelay;
+export const UserSettingsDelay = require("MAX_FAVORITES").UserSettingsDelay;
 export function markUserSettingsLoadOkayForDevelopment() {
 
 }
@@ -442,54 +452,54 @@ export const UserSettingsActionCreatorsByType = { [UserSettingsTypes.PRELOADED_U
 export { updateUserAllGuildSettings };
 export { updateUserGuildSettings };
 export const setDefaultGuildThemePreference = function setDefaultGuildThemePreference(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return tmp9.updateAsync("appearance", (defaultGuildThemePreference) => {
     let UNSPECIFIED = defaultGuildThemePreference.defaultGuildThemePreference;
     if (null == UNSPECIFIED) {
-      UNSPECIFIED = defaultGuildThemePreference(closure_2[15]).GuildThemeSourcePreference.UNSPECIFIED;
+      UNSPECIFIED = callback(outer1_2[15]).GuildThemeSourcePreference.UNSPECIFIED;
     }
-    if (UNSPECIFIED === defaultGuildThemePreference) {
+    if (UNSPECIFIED === callback) {
       return false;
     } else {
-      defaultGuildThemePreference.defaultGuildThemePreference = defaultGuildThemePreference;
+      defaultGuildThemePreference.defaultGuildThemePreference = callback;
     }
   }, UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
 export { setGuildThemeSourcePreferenceOverride };
 export const clearGuildThemeSourcePreferenceOverride = function clearGuildThemeSourcePreferenceOverride(id) {
-  return setGuildThemeSourcePreferenceOverride(id, arg1(dependencyMap[15]).GuildThemeSourcePreference.UNSPECIFIED);
+  return setGuildThemeSourcePreferenceOverride(id, require(1282) /* _callSuper */.GuildThemeSourcePreference.UNSPECIFIED);
 };
 export const updateUserChannelSettings = function updateUserChannelSettings(arg0, arg1, arg2, arg3) {
-  const importDefault = arg2;
-  return updateUserGuildSettings(arg0, (channels) => arg1(closure_2[8]).mutateUserChannelSettingsInternal(channels, arg1, arg2), arg3);
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  return updateUserGuildSettings(arg0, (channels) => callback(outer1_2[8]).mutateUserChannelSettingsInternal(channels, callback, closure_1), arg3);
 };
-export const addDismissedContent = function addDismissedContent(CHANNEL_NOTICE_INVITE) {
-  const arg1 = CHANNEL_NOTICE_INVITE;
-  function trackDismissibleContentDismissedBeforeConnectionOpen(CHANNEL_NOTICE_INVITE) {
-    if (!closure_6.hasLoaded(constants.PRELOADED_USER_SETTINGS)) {
-      const userContent = closure_6.settings.userContent;
+export const addDismissedContent = function addDismissedContent(closure_0) {
+  (function trackDismissibleContentDismissedBeforeConnectionOpen(closure_0) {
+    if (!outer1_6.hasLoaded(outer1_7.PRELOADED_USER_SETTINGS)) {
+      const userContent = outer1_6.settings.userContent;
       let dismissedContents;
       if (null != userContent) {
         dismissedContents = userContent.dismissedContents;
       }
       let hasBitResult = null != dismissedContents;
       if (hasBitResult) {
-        let obj = CHANNEL_NOTICE_INVITE(closure_2[17]);
-        hasBitResult = obj.hasBit(dismissedContents, CHANNEL_NOTICE_INVITE);
+        let obj = callback(outer1_2[17]);
+        hasBitResult = obj.hasBit(dismissedContents, closure_0);
       }
       if (!hasBitResult) {
-        obj = { content_type: CHANNEL_NOTICE_INVITE(closure_2[19]).DismissibleContent[CHANNEL_NOTICE_INVITE] };
-        callback(closure_2[18]).track(constants2.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, obj);
+        obj = { content_type: callback(outer1_2[19]).DismissibleContent[closure_0] };
+        outer1_1(outer1_2[18]).track(outer1_11.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, obj);
       }
     }
-  }(CHANNEL_NOTICE_INVITE);
+  })(closure_0);
   return tmp9.updateAsync("userContent", (dismissedContents) => {
-    if (obj.hasBit(dismissedContents.dismissedContents, dismissedContents)) {
+    if (obj.hasBit(dismissedContents.dismissedContents, callback)) {
       return false;
     } else {
-      dismissedContents.dismissedContents = dismissedContents(closure_2[17]).addBit(dismissedContents.dismissedContents, dismissedContents);
+      dismissedContents.dismissedContents = callback(outer1_2[17]).addBit(dismissedContents.dismissedContents, callback);
     }
-    const obj = dismissedContents(closure_2[17]);
+    obj = callback(outer1_2[17]);
   }, UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
 export { updateRecurringDismissibleContentState };
@@ -497,18 +507,18 @@ export const updateGuildDismissedContent = function updateGuildDismissedContent(
   return _updateGuildDismissedContent(...arguments);
 };
 export const removeDismissedContent = function removeDismissedContent(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL) {
-  const arg1 = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL;
+  let closure_0 = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL;
   return tmp9.updateAsync("userContent", (dismissedContents) => {
-    if (obj.hasBit(dismissedContents.dismissedContents, dismissedContents)) {
-      dismissedContents.dismissedContents = dismissedContents(closure_2[17]).removeBit(dismissedContents.dismissedContents, dismissedContents);
+    if (obj.hasBit(dismissedContents.dismissedContents, DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL)) {
+      dismissedContents.dismissedContents = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL(outer1_2[17]).removeBit(dismissedContents.dismissedContents, DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
     } else {
       return false;
     }
-    const obj = dismissedContents(closure_2[17]);
+    obj = DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL(outer1_2[17]);
   }, UserSettingsDelay.INFREQUENT_USER_ACTION);
 };
 export const removeDismissedRecurringContent = function removeDismissedRecurringContent(GUILD_POWERUP_NOTIFICATION) {
-  return updateRecurringDismissibleContentState(GUILD_POWERUP_NOTIFICATION, {});
+  return updateRecurringDismissibleContentState(GUILD_POWERUP_NOTIFICATION, { lastDismissedVersion: 0, lastDismissedAtMs: "0", lastDismissedObjectId: "0", numTimesDismissed: 0 });
 };
 export const clearGuildDismissedContents = function clearGuildDismissedContents() {
   return updateUserAllGuildSettings((guilds) => {
@@ -541,7 +551,7 @@ export const checkAllDismissedContents = function checkAllDismissedContents() {
   return tmp9.updateAsync("userContent", (recurringDismissibleContentStates) => {
     let iter3;
     const uint8Array = new Uint8Array();
-    const tmp2 = callback2(callback(closure_2[20]).ALL_DISMISSIBLE_CONTENT);
+    const tmp2 = outer1_13(outer1_0(outer1_2[20]).ALL_DISMISSIBLE_CONTENT);
     const iter = tmp2();
     let iter2 = iter;
     let tmp3 = uint8Array;
@@ -549,18 +559,18 @@ export const checkAllDismissedContents = function checkAllDismissedContents() {
     if (!iter.done) {
       do {
         let value = iter2.value;
-        let tmp5 = closure_0;
-        let tmp6 = closure_2;
-        let obj = closure_0(closure_2[20]);
+        let tmp5 = outer1_0;
+        let tmp6 = outer1_2;
+        let obj = outer1_0(outer1_2[20]);
         if (obj.isSingleUseDismissibleContent(value)) {
-          let tmp10 = closure_0;
-          let tmp11 = closure_2;
-          let obj3 = closure_0(closure_2[17]);
+          let tmp10 = outer1_0;
+          let tmp11 = outer1_2;
+          let obj3 = outer1_0(outer1_2[17]);
           let addBitResult = obj3.addBit(tmp3, value);
         } else {
-          let tmp7 = closure_0;
-          let tmp8 = closure_2;
-          let obj2 = closure_0(closure_2[21]);
+          let tmp7 = outer1_0;
+          let tmp8 = outer1_2;
+          let obj2 = outer1_0(outer1_2[21]);
           recurringDismissibleContentStates.recurringDismissibleContentStates[value] = obj2.getDismissedRecurringDismissibleContentState(value);
           addBitResult = tmp3;
         }

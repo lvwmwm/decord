@@ -1,6 +1,7 @@
 // Module ID: 121
 // Function ID: 2094
-// Dependencies: []
+// Dependencies: [122]
 
 // Module 121
-const _module = require(dependencyMap[0]);
+import module_122 from "module_122";
+

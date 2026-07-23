@@ -1,65 +1,65 @@
 // Module ID: 1918
-// Function ID: 21704
+// Function ID: 21705
 // Name: DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY
-// Dependencies: []
+// Dependencies: [57, 1919, 587, 622, 682, 677, 3743, 2]
 // Exports: clearCommunicationDisabledNotice, useCommunicationDisabledNoticeStore
 
 // Module 1918 (DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY)
-let closure_2 = importDefault(dependencyMap[0]);
-const DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY = arg1(dependencyMap[1]).DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY;
-let closure_4 = arg1(dependencyMap[3]).createStore((arg0, arg1) => {
-  arg1 = arg0;
+import _slicedToArray from "_slicedToArray";
+import { DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY } from "getFriendlyDurationString";
+import keys from "keys";
+import { Storage } from "Storage";
+
+const require = arg1;
+let closure_4 = keys.createStore((arg0, arg1) => {
+  const _require = arg0;
   const dependencyMap = arg1;
-  const obj = {};
-  const Storage = arg1(dependencyMap[2]).Storage;
+  let obj = {};
+  let Storage = _require(587).Storage;
   let items = Storage.get(DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY);
   if (null == items) {
     items = [];
   }
   obj.notificationDismissedInGuilds = new Set(items);
   obj.dismissNotification = function dismissNotification(arg0) {
-    const notificationDismissedInGuilds = arg1().notificationDismissedInGuilds;
-    arg0 = notificationDismissedInGuilds;
+    const notificationDismissedInGuilds = dependencyMap().notificationDismissedInGuilds;
     notificationDismissedInGuilds.add(arg0);
-    const Storage = arg0(arg1[2]).Storage;
-    const result = Storage.set(closure_3, notificationDismissedInGuilds);
-    arg0(arg1[4]).batchUpdates(() => notificationDismissedInGuilds({ notificationDismissedInGuilds }));
+    const Storage = callback(587).Storage;
+    const result = Storage.set(outer1_3, notificationDismissedInGuilds);
+    callback(682).batchUpdates(() => notificationDismissedInGuilds({ notificationDismissedInGuilds }));
   };
   obj.resetNotification = function resetNotification(arg0) {
-    const notificationDismissedInGuilds = arg1().notificationDismissedInGuilds;
-    arg0 = notificationDismissedInGuilds;
+    const notificationDismissedInGuilds = dependencyMap().notificationDismissedInGuilds;
     if (notificationDismissedInGuilds.has(arg0)) {
       notificationDismissedInGuilds.delete(arg0);
-      const Storage = arg0(arg1[2]).Storage;
-      const result = Storage.set(closure_3, notificationDismissedInGuilds);
-      arg0(arg1[4]).batchUpdates(() => notificationDismissedInGuilds({ notificationDismissedInGuilds }));
-      const obj = arg0(arg1[4]);
+      const Storage = callback(587).Storage;
+      const result = Storage.set(outer1_3, notificationDismissedInGuilds);
+      callback(682).batchUpdates(() => notificationDismissedInGuilds({ notificationDismissedInGuilds }));
+      const obj = callback(682);
     }
   };
   return obj;
 });
-const Storage = arg1(dependencyMap[2]).Storage;
 Storage.asyncGet(DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY, (arg0) => {
-  const arg1 = arg0;
-  arg1(dependencyMap[4]).batchUpdates(() => {
-    const obj = { notificationDismissedInGuilds: new Set(arg0) };
-    return state.setState(obj);
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    const obj = { notificationDismissedInGuilds: new Set(closure_0) };
+    return outer1_4.setState(obj);
   });
 });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_communication_disabled/useCommunicationDisabledNoticeStore.tsx");
+let result = require("Storage").fileFinishedImporting("modules/guild_communication_disabled/useCommunicationDisabledNoticeStore.tsx");
 
 export const useCommunicationDisabledNoticeStore = function useCommunicationDisabledNoticeStore(arg0) {
-  const tmp = callback(arg1(dependencyMap[5]).useStoreWithEqualityFn(closure_4, (arg0) => {
+  const tmp = callback(require(677) /* useStoreWithEqualityFn */.useStoreWithEqualityFn(closure_4, (arg0) => {
     const items = [, ];
     ({ notificationDismissedInGuilds: arr[0], dismissNotification: arr[1] } = arg0);
     return items;
-  }, arg1(dependencyMap[6]).shallow), 2);
+  }, require(3743) /* isIterable */.shallow), 2);
   const first = tmp[0];
-  const items = [!first.has(arg0), tmp[1]];
+  let items = [!first.has(arg0), tmp[1]];
   return items;
 };
 export const clearCommunicationDisabledNotice = function clearCommunicationDisabledNotice(arg0) {
-  const state = state.getState();
+  state = state.getState();
   return state.resetNotification(arg0);
 };

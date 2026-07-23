@@ -1,26 +1,25 @@
-// Module ID: 14674
-// Function ID: 110641
+// Module ID: 14789
+// Function ID: 112805
 // Name: convertPortraitToLandscapeScreens
-// Dependencies: []
+// Dependencies: [3982, 3981, 1461, 491, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 14674 (convertPortraitToLandscapeScreens)
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
+// Module 14789 (convertPortraitToLandscapeScreens)
+const result = require("CommonActions").fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
 
 export const convertPortraitToLandscapeScreens = function convertPortraitToLandscapeScreens() {
-  let obj = require(dependencyMap[0]);
+  let obj = require(3982) /* getRootNavigationRef */;
   const store = obj.getRootNavigationRef();
   if (null != store) {
     let state = store.getState();
     if (null != state) {
-      const coerceMainRouteResult = require(dependencyMap[1]).coerceMainRoute(state.routes[0]);
+      const coerceMainRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceMainRoute(state.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 !== state2.index) {
             if (null != obj3.coerceChannelRoute(state2.routes[1])) {
-              const coerceTabsRouteResult = require(dependencyMap[1]).coerceTabsRoute(state2.routes[0]);
+              const coerceTabsRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceTabsRoute(state2.routes[0]);
               if (null != coerceTabsRouteResult) {
                 const state3 = coerceTabsRouteResult.state;
                 let tmp2;
@@ -44,41 +43,41 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
                   const items1 = [coerceMainRouteResult];
                   const routes1 = state.routes;
                   HermesBuiltin.arraySpread(routes1.slice(1), 1);
-                  const CommonActions = require(dependencyMap[2]).CommonActions;
+                  const CommonActions = require(1461) /* CommonActions */.CommonActions;
                   obj = {};
                   const merged1 = Object.assign(state);
                   obj["routes"] = items1;
                   obj["index"] = items1.length - 1;
                   store.dispatch(CommonActions.reset(obj));
                 }
-                const obj5 = require(dependencyMap[1]);
+                obj5 = require(3981) /* _createForOfIteratorHelperLoose */;
               }
-              const obj4 = require(dependencyMap[1]);
+              const obj4 = require(3981) /* _createForOfIteratorHelperLoose */;
             }
-            const obj3 = require(dependencyMap[1]);
+            obj3 = require(3981) /* _createForOfIteratorHelperLoose */;
           }
         }
       }
-      const obj2 = require(dependencyMap[1]);
+      const obj2 = require(3981) /* _createForOfIteratorHelperLoose */;
     }
   }
 };
 export const convertLandscapeToPortraitScreens = function convertLandscapeToPortraitScreens() {
-  let obj = require(dependencyMap[0]);
+  let obj = require(3982) /* getRootNavigationRef */;
   const store = obj.getRootNavigationRef();
   if (null != store) {
     let state = store.getState();
     if (null != state) {
-      const coerceMainRouteResult = require(dependencyMap[1]).coerceMainRoute(state.routes[0]);
+      const coerceMainRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceMainRoute(state.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 === state.index) {
             if (0 !== state2.index) {
-              const obj7 = require(dependencyMap[1]);
+              const obj7 = require(3981) /* _createForOfIteratorHelperLoose */;
             }
           }
-          let obj1 = require(dependencyMap[1]);
+          let obj1 = require(3981) /* _createForOfIteratorHelperLoose */;
           const coerceTabsRouteResult = obj1.coerceTabsRoute(state2.routes[0]);
           if (null != coerceTabsRouteResult) {
             const state3 = coerceTabsRouteResult.state;
@@ -91,7 +90,7 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               }
               tmp5 = state3.routes[index];
             }
-            const coerceGuildsRouteResult = require(dependencyMap[1]).coerceGuildsRoute(tmp5);
+            const coerceGuildsRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(tmp5);
             if (null != coerceGuildsRouteResult) {
               obj = {};
               const merged = Object.assign(state2);
@@ -104,7 +103,7 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
                 channelId = params3.channelId;
               }
               if (null == channelId) {
-                let obj2 = require(dependencyMap[3]);
+                let obj2 = require(491) /* v1 */;
                 const _HermesInternal = HermesInternal;
                 channelId = "channel-" + obj2.v4();
               }
@@ -131,18 +130,18 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               const items1 = [coerceMainRouteResult];
               const routes1 = state.routes;
               HermesBuiltin.arraySpread(routes1.slice(1), 1);
-              const CommonActions = require(dependencyMap[2]).CommonActions;
+              const CommonActions = require(1461) /* CommonActions */.CommonActions;
               obj2 = {};
               const merged1 = Object.assign(state);
               obj2["routes"] = items1;
               obj2["index"] = items1.length - 1;
               store.dispatch(CommonActions.reset(obj2));
             }
-            const obj8 = require(dependencyMap[1]);
+            const obj8 = require(3981) /* _createForOfIteratorHelperLoose */;
           }
         }
       }
-      const obj6 = require(dependencyMap[1]);
+      const obj6 = require(3981) /* _createForOfIteratorHelperLoose */;
     }
   }
 };

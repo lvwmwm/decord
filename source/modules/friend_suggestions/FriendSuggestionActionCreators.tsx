@@ -1,24 +1,26 @@
-// Module ID: 6901
-// Function ID: 55012
-// Dependencies: []
+// Module ID: 6906
+// Function ID: 55046
+// Dependencies: [5, 653, 507, 686, 2]
 
-// Module 6901
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/friend_suggestions/FriendSuggestionActionCreators.tsx");
+// Module 6906
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { Endpoints } from "ME";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/friend_suggestions/FriendSuggestionActionCreators.tsx");
 
 export default {
   fetch() {
     return callback(async () => {
-      const HTTP = callback(closure_2[2]).HTTP;
-      let obj = { url: constants.FRIEND_SUGGESTIONS, rejectWithError: true };
+      const HTTP = outer2_0(outer2_2[2]).HTTP;
+      let obj = { url: outer2_4.FRIEND_SUGGESTIONS, rejectWithError: true };
       const tmp = yield HTTP.get(obj);
       obj = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: tmp.body };
-      callback2(closure_2[3]).dispatch(obj);
+      outer2_1(outer2_2[3]).dispatch(obj);
     })();
   },
   ignore(id) {
-    const HTTP = arg1(dependencyMap[2]).HTTP;
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     HTTP.del({ url: Endpoints.FRIEND_SUGGESTION(id), rejectWithError: true });
   }
 };

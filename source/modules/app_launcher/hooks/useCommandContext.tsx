@@ -1,10 +1,13 @@
-// Module ID: 11142
-// Function ID: 86662
+// Module ID: 11152
+// Function ID: 86712
 // Name: getCommandContext
-// Dependencies: []
+// Dependencies: [31, 1838, 2]
 // Exports: useCommandContext
 
-// Module 11142 (getCommandContext)
+// Module 11152 (getCommandContext)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 function getCommandContext(type) {
   if ("contextless" === type.type) {
     let obj = { channel: undefined, guild: undefined };
@@ -13,13 +16,11 @@ function getCommandContext(type) {
   }
   return obj;
 }
-let closure_0 = importAll(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/app_launcher/hooks/useCommandContext.tsx");
+const result = require("set").fileFinishedImporting("modules/app_launcher/hooks/useCommandContext.tsx");
 
 export { getCommandContext };
 export const useCommandContext = function useCommandContext(context) {
   const React = context;
   const items = [context];
-  return React.useMemo(() => callback(arg0), items);
+  return React.useMemo(() => outer1_2(result), items);
 };

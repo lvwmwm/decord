@@ -1,13 +1,13 @@
-// Module ID: 6607
-// Function ID: 50843
+// Module ID: 6612
+// Function ID: 50872
 // Name: WasdSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6613, 2]
 // Exports: WasdSpotIllustration
 
-// Module 6607 (WasdSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WasdSpotIllustration.native.tsx");
+// Module 6612 (WasdSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WasdSpotIllustration.native.tsx");
 
 export const WasdSpotIllustration = function WasdSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const WasdSpotIllustration = function WasdSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6613) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const WasdSpotIllustration = function WasdSpotIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

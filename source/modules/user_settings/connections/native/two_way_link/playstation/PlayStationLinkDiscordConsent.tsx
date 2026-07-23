@@ -1,43 +1,44 @@
-// Module ID: 8971
-// Function ID: 70747
+// Module ID: 8978
+// Function ID: 70788
 // Name: PlayStationLinkDiscordConsent
-// Dependencies: []
+// Dependencies: [31, 8973, 653, 8950, 33, 1456, 8979, 8980, 8951, 2]
 // Exports: PlayStationLinkDiscordConsent
 
-// Module 8971 (PlayStationLinkDiscordConsent)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[1]).PlayStationLinkModalScenes;
-const PlatformTypes = arg1(dependencyMap[2]).PlatformTypes;
-const PLAYSTATION_CLIENT_SCOPES = arg1(dependencyMap[3]).PLAYSTATION_CLIENT_SCOPES;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkDiscordConsent.tsx");
+// Module 8978 (PlayStationLinkDiscordConsent)
+import result from "result";
+import { PlayStationLinkModalScenes as closure_3 } from "PlayStationLinkModalScenes";
+import { PlatformTypes } from "ME";
+import { PLAYSTATION_CLIENT_SCOPES } from "XBOX_URL_BASE";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkDiscordConsent.tsx");
 
 export const PlayStationLinkDiscordConsent = function PlayStationLinkDiscordConsent(platformType) {
   let callbackCode;
   let callbackState;
   platformType = platformType.platformType;
   ({ callbackCode, callbackState } = platformType);
-  let obj = arg1(dependencyMap[5]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
+  let obj = navigation(1456);
+  navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
   const callback = React.useCallback(() => {
-    navigation.push(constants.SUCCESS);
+    navigation.push(outer1_3.SUCCESS);
   }, items);
   const callback1 = React.useCallback((errorCode) => {
-    navigation.push(constants.ERROR, { errorCode });
+    navigation.push(outer1_3.ERROR, { errorCode });
   }, items1);
   if (platformType === PlatformTypes.PLAYSTATION_STAGING) {
-    let PLAYSTATION_APPLICATION_ID = arg1(dependencyMap[6]).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
+    let PLAYSTATION_APPLICATION_ID = navigation(8979).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
   } else {
-    PLAYSTATION_APPLICATION_ID = arg1(dependencyMap[6]).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
+    PLAYSTATION_APPLICATION_ID = navigation(8979).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
   }
   if (platformType === PlatformTypes.PLAYSTATION_STAGING) {
-    let PLAYSTATION = arg1(dependencyMap[7]).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
+    let PLAYSTATION = navigation(8980).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
   } else {
-    PLAYSTATION = arg1(dependencyMap[7]).ConsoleAuthorizationRedirectURIs.PLAYSTATION;
+    PLAYSTATION = navigation(8980).ConsoleAuthorizationRedirectURIs.PLAYSTATION;
   }
   obj = { platformType, callbackCode, callbackState, clientId: PLAYSTATION_APPLICATION_ID, scopes: PLAYSTATION_CLIENT_SCOPES, onNext: callback, onError: callback1, redirectUri: PLAYSTATION };
-  return jsx(arg1(dependencyMap[8]).TwoWayLinkDiscordConsent, obj);
+  return jsx(navigation(8951).TwoWayLinkDiscordConsent, { platformType, callbackCode, callbackState, clientId: PLAYSTATION_APPLICATION_ID, scopes: PLAYSTATION_CLIENT_SCOPES, onNext: callback, onError: callback1, redirectUri: PLAYSTATION });
 };

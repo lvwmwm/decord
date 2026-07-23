@@ -1,49 +1,50 @@
-// Module ID: 4034
-// Function ID: 33587
+// Module ID: 4036
+// Function ID: 33596
 // Name: UploadVoiceDebugLogsError
-// Dependencies: []
+// Dependencies: [6, 7, 1212, 2]
 
-// Module 4034 (UploadVoiceDebugLogsError)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+// Module 4036 (UploadVoiceDebugLogsError)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
 const obj = { GENERAL: 0, [0]: "GENERAL", NO_FILE: 1, [1]: "NO_FILE", PROGRESS: 2, [2]: "PROGRESS", UPLOAD: 3, [3]: "UPLOAD", READ: 4, [4]: "READ" };
-const tmp2 = () => {
+const tmp2 = (() => {
   class UploadVoiceDebugLogsError {
     constructor(arg0) {
-      tmp = closure_2(this, UploadVoiceDebugLogsError);
+      tmp = outer1_2(this, UploadVoiceDebugLogsError);
       this.code = arg0;
       return;
     }
   }
-  const arg1 = UploadVoiceDebugLogsError;
   const items = [
     {
       key: "displayMessage",
       get() {
         const code = this.code;
-        if (constants.NO_FILE === code) {
-          const intl5 = UploadVoiceDebugLogsError(closure_1[2]).intl;
-          return intl5.string(UploadVoiceDebugLogsError(closure_1[2]).t.dDMp2Z);
-        } else if (constants.PROGRESS === code) {
-          const intl4 = UploadVoiceDebugLogsError(closure_1[2]).intl;
-          return intl4.string(UploadVoiceDebugLogsError(closure_1[2]).t.XBxyvo);
-        } else if (constants.UPLOAD === code) {
-          const intl3 = UploadVoiceDebugLogsError(closure_1[2]).intl;
-          return intl3.string(UploadVoiceDebugLogsError(closure_1[2]).t.6b6rwk);
-        } else if (constants.READ === code) {
-          const intl2 = UploadVoiceDebugLogsError(closure_1[2]).intl;
-          return intl2.string(UploadVoiceDebugLogsError(closure_1[2]).t.VUc3ti);
+        if (outer1_4.NO_FILE === code) {
+          const intl5 = UploadVoiceDebugLogsError(outer1_1[2]).intl;
+          return intl5.string(UploadVoiceDebugLogsError(outer1_1[2]).t.dDMp2Z);
+        } else if (outer1_4.PROGRESS === code) {
+          const intl4 = UploadVoiceDebugLogsError(outer1_1[2]).intl;
+          return intl4.string(UploadVoiceDebugLogsError(outer1_1[2]).t.XBxyvo);
+        } else if (outer1_4.UPLOAD === code) {
+          const intl3 = UploadVoiceDebugLogsError(outer1_1[2]).intl;
+          return intl3.string(UploadVoiceDebugLogsError(outer1_1[2]).t["6b6rwk"]);
+        } else if (outer1_4.READ === code) {
+          const intl2 = UploadVoiceDebugLogsError(outer1_1[2]).intl;
+          return intl2.string(UploadVoiceDebugLogsError(outer1_1[2]).t.VUc3ti);
         } else {
-          const GENERAL = constants.GENERAL;
-          const intl = UploadVoiceDebugLogsError(closure_1[2]).intl;
-          return intl.string(UploadVoiceDebugLogsError(closure_1[2]).t.VzHcSm);
+          const GENERAL = outer1_4.GENERAL;
+          const intl = UploadVoiceDebugLogsError(outer1_1[2]).intl;
+          return intl.string(UploadVoiceDebugLogsError(outer1_1[2]).t.VzHcSm);
         }
       }
     }
   ];
   return callback(UploadVoiceDebugLogsError, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("errors/UploadVoiceDebugLogsError.tsx");
+})();
+const result = require("getSystemLocale").fileFinishedImporting("errors/UploadVoiceDebugLogsError.tsx");
 
 export default tmp2;
 export const UploadErrorCodes = obj;

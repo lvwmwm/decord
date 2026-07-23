@@ -1,62 +1,68 @@
-// Module ID: 7670
-// Function ID: 61291
+// Module ID: 7676
+// Function ID: 61328
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 162, 2]
 // Exports: astToString
 
-// Module 7670 (_isNativeReflectConstruct)
+// Module 7676 (_isNativeReflectConstruct)
+import set from "set";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return set;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let set = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -67,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      set = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (_defineProperties >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        _defineProperties = tmp3 + 1;
+        obj.value = length[+_defineProperties];
       }
       return obj;
     };
@@ -97,9 +103,8 @@ function collectAst(content, items) {
   if (items === undefined) {
     items = [];
   }
-  let closure_0 = items;
   if (Array.isArray(content)) {
-    const item = content.forEach((arg0) => callback(arg0, items));
+    const item = content.forEach((arg0) => outer1_9(arg0, items));
   } else if ("string" === typeof content.content) {
     items.push(content.content);
   } else if (null != content.content) {
@@ -112,18 +117,13 @@ function collapseArrays(items, arg1) {
     for (let num = 0; num < length; num = num + 1) {
       let arr = items.push(arg1[num]);
     }
-    const length = arg1.length;
+    length = arg1.length;
   } else {
     items.push(arg1);
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = {};
-const tmp2 = (arg0) => {
+let tmp2 = ((arg0) => {
   class MarkupParserNodeTypeError {
     constructor(arg0) {
       self = this;
@@ -189,12 +189,12 @@ const tmp2 = (arg0) => {
       arr1 = Array.from(set);
       items4 = [];
       items4[0] = obj.getMessage(arr1);
-      obj3 = closure_3(obj);
-      tmp26 = closure_2;
-      if (closure_6()) {
+      obj3 = outer1_3(obj);
+      tmp26 = outer1_2;
+      if (outer1_6()) {
         _Reflect = Reflect;
-        tmp28 = closure_3;
-        constructResult = Reflect.construct(obj3, items4, closure_3(self).constructor);
+        tmp28 = outer1_3;
+        constructResult = Reflect.construct(obj3, items4, outer1_3(self).constructor);
       } else {
         constructResult = obj3.apply(self, items4);
       }
@@ -203,9 +203,8 @@ const tmp2 = (arg0) => {
       return tmp26Result;
     }
   }
-  let closure_0 = MarkupParserNodeTypeError;
   callback2(MarkupParserNodeTypeError, arg0);
-  const items = [
+  let items = [
     {
       key: "getMessage",
       value(join) {
@@ -214,8 +213,8 @@ const tmp2 = (arg0) => {
     }
   ];
   return callback(MarkupParserNodeTypeError, null, items);
-}(importDefault(dependencyMap[5])(Error));
-const result = arg1(dependencyMap[6]).fileFinishedImporting("../discord_common/js/packages/markup/MarkupASTUtils.tsx");
+})(require("_wrapNativeSuper")(Error));
+let result = require("_possibleConstructorReturn").fileFinishedImporting("../discord_common/js/packages/markup/MarkupASTUtils.tsx");
 function walkAst(content, arg1) {
   let done;
   if (Array.isArray(content)) {
@@ -223,8 +222,8 @@ function walkAst(content, arg1) {
     let iter = tmp8();
     if (!iter.done) {
       do {
-        let tmp9 = closure_11;
-        let tmp10 = closure_11(iter.value, arg1);
+        let tmp9 = walkAst;
+        let tmp10 = walkAst(iter.value, arg1);
         let iter2 = tmp8();
         iter = iter2;
         done = iter2.done;
@@ -242,50 +241,50 @@ function walkAst(content, arg1) {
   }
 }
 function flattenAst(isSlate, content, content) {
-  let tmp = content;
-  let closure_0 = isSlate;
+  let tmp2 = content;
+  let set = isSlate;
   if (content === undefined) {
-    tmp = null;
+    tmp2 = null;
   }
   if (Array.isArray(content)) {
     const items = [];
     for (let num2 = 0; num2 < length; num2 = num2 + 1) {
-      let tmp4 = collapseArrays;
-      let tmp5 = flattenAst;
-      let tmp6 = collapseArrays(items, flattenAst(isSlate, content[num2], tmp));
+      let tmp5 = collapseArrays;
+      let tmp6 = flattenAst;
+      let tmp7 = collapseArrays(items, flattenAst(isSlate, content[num2], tmp2));
     }
     if (!isSlate.isSlate) {
-      let tmp8 = null;
+      let tmp9 = null;
       let num4 = 0;
       if (0 < items.length) {
         do {
-          let tmp9 = items[num4];
-          let tmp10 = tmp9;
+          let tmp10 = items[num4];
+          let tmp11 = tmp10;
           let diff = num4;
-          if (null != tmp8) {
-            tmp10 = tmp9;
+          if (null != tmp9) {
+            tmp11 = tmp10;
             diff = num4;
-            if ("text" === tmp8.type) {
-              tmp10 = tmp9;
+            if ("text" === tmp9.type) {
+              tmp11 = tmp10;
               diff = num4;
-              if (tmp8.type === tmp9.type) {
-                tmp10 = tmp9;
+              if (tmp9.type === tmp10.type) {
+                tmp11 = tmp10;
                 diff = num4;
-                if ("string" === typeof tmp8.content) {
-                  tmp10 = tmp9;
+                if ("string" === typeof tmp9.content) {
+                  tmp11 = tmp10;
                   diff = num4;
-                  if ("string" === typeof tmp9.content) {
-                    tmp8.content = tmp8.content + tmp9.content;
+                  if ("string" === typeof tmp10.content) {
+                    tmp9.content = tmp9.content + tmp10.content;
                     let spliceResult = items.splice(num4, 1);
                     diff = num4 - 1;
-                    tmp10 = tmp8;
+                    tmp11 = tmp9;
                   }
                 }
               }
             }
           }
           num4 = diff + 1;
-          tmp8 = tmp10;
+          tmp9 = tmp11;
         } while (num4 < items.length);
       }
     }
@@ -295,20 +294,20 @@ function flattenAst(isSlate, content, content) {
       content.content = flattenAst(isSlate, content.content, content);
     }
     if ("inlineCode" === content.type) {
-      delete r8.validationChildContent;
+      delete tmp.validationChildContent;
     }
     if ("list" === content.type) {
       const items1 = content.items;
       content.items = items1.map((arg0) => {
         let tmp = arg0;
         if (Array.isArray(arg0)) {
-          tmp = callback(arg0, arg0, null);
+          tmp = outer1_12(set, arg0, null);
         }
         return tmp;
       });
     }
-    if (null != tmp) {
-      if (content.type === tmp.type) {
+    if (null != tmp2) {
+      if (content.type === tmp2.type) {
         content = content.content;
       }
     }
@@ -318,9 +317,8 @@ function flattenAst(isSlate, content, content) {
 function constrainAst(content, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
-    obj = { "Null": "Text", "Null": "keys" };
+    obj = { limit: 200, hasBailedAst: false };
   }
-  let closure_0 = obj;
   if (Array.isArray(content)) {
     let num = 0;
     if (0 < content.length) {
@@ -345,7 +343,7 @@ function constrainAst(content, arg1) {
       }
       if ("list" === content.type) {
         const items = content.items;
-        content.items = items.map((arg0) => callback(arg0, obj).ast);
+        content.items = items.map((arg0) => outer1_13(arg0, obj).ast);
       }
     }
   }
@@ -354,15 +352,15 @@ function constrainAst(content, arg1) {
   return obj;
 }
 function getIndexedAST(arr) {
-  let closure_0 = arr;
-  let closure_1 = arg1;
-  let closure_2 = 0;
+  let set = arr;
+  let _defineProperties = arg1;
+  let c2 = 0;
   return arr.map((type) => {
     let num = 0;
-    if (0 !== closure_2) {
-      num = type[closure_2 - 1].endIndex;
+    if (0 !== _possibleConstructorReturn) {
+      num = arr[_possibleConstructorReturn - 1].endIndex;
     }
-    closure_2 = closure_2 + 1;
+    _possibleConstructorReturn = _possibleConstructorReturn + 1;
     type = type.type;
     if ("spoiler" !== type) {
       if ("u" !== type) {
@@ -373,12 +371,12 @@ function getIndexedAST(arr) {
                 if ("emoji" !== type) {
                   if ("inlineCode" !== type) {
                     if ("text" === type) {
-                      type.startIndex = arg1 + num;
+                      type.startIndex = _defineProperties + num;
                       type.endIndex = type.startIndex + type.content.length;
                       return type;
                     } else {
-                      type.startIndex = arg1 + num;
-                      const arr = callback(type.content, type.startIndex);
+                      type.startIndex = _defineProperties + num;
+                      arr = outer1_14(type.content, type.startIndex);
                       type.endIndex = arr[arr.length - 1].endIndex;
                       return type;
                     }
@@ -386,16 +384,16 @@ function getIndexedAST(arr) {
                 }
               }
             }
-            type.startIndex = arg1 + num;
-            const arr2 = callback(type.content, type.startIndex + 1);
+            type.startIndex = _defineProperties + num;
+            const arr2 = outer1_14(type.content, type.startIndex + 1);
             type.endIndex = arr2[arr2.length - 1].endIndex + 1;
             return type;
           }
         }
       }
     }
-    type.startIndex = arg1 + num;
-    const arr3 = callback(type.content, type.startIndex + 2);
+    type.startIndex = _defineProperties + num;
+    const arr3 = outer1_14(type.content, type.startIndex + 2);
     type.endIndex = arr3[arr3.length - 1].endIndex + 2;
     return type;
   });

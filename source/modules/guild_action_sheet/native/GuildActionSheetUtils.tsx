@@ -1,29 +1,31 @@
-// Module ID: 12854
-// Function ID: 98237
+// Module ID: 12968
+// Function ID: 100393
 // Name: useGuildActionSheetPermissions
-// Dependencies: [555417600, 488570880, 250937344, 131072]
+// Dependencies: [3758, 653, 566, 2]
 // Exports: useGuildActionSheetPermissions
 
-// Module 12854 (useGuildActionSheetPermissions)
-let closure_2 = importDefault(dependencyMap[0]);
-const Permissions = arg1(dependencyMap[1]).Permissions;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_action_sheet/native/GuildActionSheetUtils.tsx");
+// Module 12968 (useGuildActionSheetPermissions)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/guild_action_sheet/native/GuildActionSheetUtils.tsx");
 
 export const useGuildActionSheetPermissions = function useGuildActionSheetPermissions(guild) {
-  const arg1 = guild;
-  const items = [closure_2];
+  const _require = guild;
+  const items = [_isNativeReflectConstruct];
   const items1 = [guild];
-  return arg1(dependencyMap[2]).useStateFromStoresObject(items, () => {
-    if (null == arg0) {
-      let obj = { marginBottom: true, padding: false, justifyContent: false };
+  return _require(566).useStateFromStoresObject(items, () => {
+    if (null == closure_0) {
+      let obj = { canAccessSettings: false, canEditNickname: false, canManageChannels: false };
     } else {
-      obj = { canAccessSettings: closure_2.canAccessGuildSettings(arg0) };
-      let canResult = closure_2.can(constants.CHANGE_NICKNAME, arg0);
+      obj = { canAccessSettings: outer1_2.canAccessGuildSettings(closure_0) };
+      let canResult = outer1_2.can(outer1_3.CHANGE_NICKNAME, closure_0);
       if (!canResult) {
-        canResult = closure_2.can(constants.MANAGE_NICKNAMES, arg0);
+        canResult = outer1_2.can(outer1_3.MANAGE_NICKNAMES, closure_0);
       }
       obj.canEditNickname = canResult;
-      obj.canManageChannels = closure_2.can(constants.MANAGE_CHANNELS, arg0);
+      obj.canManageChannels = outer1_2.can(outer1_3.MANAGE_CHANNELS, closure_0);
     }
     return obj;
   }, items1);

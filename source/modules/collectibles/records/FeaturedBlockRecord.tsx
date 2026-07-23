@@ -1,21 +1,23 @@
-// Module ID: 6802
-// Function ID: 53689
+// Module ID: 6807
+// Function ID: 53721
 // Name: FeaturedBlockRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6808, 6806, 6809, 2]
 
-// Module 6802 (FeaturedBlockRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).FeaturedCategorySubblockRecord;
-const tmp2 = () => {
+// Module 6807 (FeaturedBlockRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import { FeaturedCategorySubblockRecord as closure_4 } from "FeaturedCategorySubblockRecord";
+
+const require = arg1;
+const tmp2 = (() => {
   class FeaturedBlockRecord {
     constructor(arg0) {
-      tmp = closure_2(this, FeaturedBlockRecord);
-      this.type = FeaturedBlockRecord(closure_1[3]).ShopBlockType.FEATURED;
+      tmp = outer1_2(this, FeaturedBlockRecord);
+      this.type = FeaturedBlockRecord(outer1_1[3]).ShopBlockType.FEATURED;
       subblocks = arg0.subblocks;
       this.subblocks = subblocks.map((type) => {
-        if (type.type === callback(closure_1[4]).FeaturedSubblockType.CATEGORY) {
-          let fromServerResult = closure_4.fromServer(type);
+        if (type.type === FeaturedBlockRecord(outer2_1[4]).FeaturedSubblockType.CATEGORY) {
+          let fromServerResult = outer2_4.fromServer(type);
         } else {
           type = type.type;
           fromServerResult = type;
@@ -25,7 +27,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = FeaturedBlockRecord;
   const items = [
     {
       key: "fromServer",
@@ -35,7 +36,7 @@ const tmp2 = () => {
     }
   ];
   return callback(FeaturedBlockRecord, null, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/records/FeaturedBlockRecord.tsx");
+})();
+const result = require("FeaturedCategorySubblockRecord").fileFinishedImporting("modules/collectibles/records/FeaturedBlockRecord.tsx");
 
 export const FeaturedBlockRecord = tmp2;

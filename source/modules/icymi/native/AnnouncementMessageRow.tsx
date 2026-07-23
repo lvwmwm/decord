@@ -1,27 +1,29 @@
-// Module ID: 15101
-// Function ID: 113817
+// Module ID: 15216
+// Function ID: 115986
 // Name: AnnouncementMessageRowWrapper
-// Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 27, 1348, 1838, 3767, 4325, 1849, 15217, 33, 15179, 689, 566, 5048, 8321, 9099, 9529, 15218, 8320, 15220, 1212, 21, 4660, 8450, 15222, 15226, 2]
 // Exports: default
 
-// Module 15101 (AnnouncementMessageRowWrapper)
-import importAllResult from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import { ITEM_PADDING } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15216 (AnnouncementMessageRowWrapper)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { ITEM_PADDING } from "ITEM_PADDING";
+import jsxProd from "jsxProd";
+import createICYMIStyles from "createICYMIStyles";
 
-let closure_8 = importDefault(dependencyMap[5]);
-({ jsx: closure_11, jsxs: closure_12 } = __exportStarResult1);
-let closure_13 = __exportStarResult1.createICYMIStyles((inset) => {
-  let obj = { pressable: obj };
+let closure_11;
+let closure_12;
+const require = arg1;
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+let closure_13 = createICYMIStyles.createICYMIStyles((inset) => {
+  obj = { pressable: obj };
   obj = { flex: 1, paddingLeft: inset.inset };
-  obj = { marginVertical: inset.margin, gap: importDefault(dependencyMap[10]).space.PX_8, paddingHorizontal: ITEM_PADDING, marginLeft: inset.inset };
+  obj = { marginVertical: inset.margin, gap: importDefault(689).space.PX_8, paddingHorizontal: ITEM_PADDING, marginLeft: inset.inset };
   obj.footer = obj;
   return obj;
 });
@@ -29,15 +31,12 @@ let closure_14 = importAllResult.memo((message) => {
   let unread;
   let visible;
   message = message.message;
-  const arg1 = message;
   const guild = message.guild;
-  const importDefault = guild;
   const channel = message.channel;
-  const dependencyMap = channel;
   ({ unread, visible } = message);
-  let obj = arg1(dependencyMap[11]);
-  const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => channelMuted.isChannelMuted(channel.getGuildId(), channel.id));
+  let obj = message(channel[11]);
+  let items = [closure_8];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.isChannelMuted(channel.getGuildId(), channel.id));
   const tmp2 = callback3();
   let id;
   if (null != guild) {
@@ -63,7 +62,7 @@ let closure_14 = importAllResult.memo((message) => {
   const callback = importAllResult.useCallback(() => {
     let obj = guild(channel[13]);
     obj.itemInteracted(message.id, "announcement", "long_press_channel");
-    obj = { itemId: message.id, itemType: "announcement", actionParameters: { "Bool(false)": "activity-panel-focused-view", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(false)": null } };
+    obj = { itemId: message.id, itemType: "announcement", actionParameters: { actionGestureType: "long_press", actionTargetElement: "item_header", actionIntentType: "open", actionDestinationType: "channel" } };
     guild(channel[13]).feedItemActioned(obj);
     const obj2 = guild(channel[13]);
     const result = message(channel[14]).openChannelLongPressActionSheet(channel.id);
@@ -72,9 +71,9 @@ let closure_14 = importAllResult.memo((message) => {
   const callback1 = importAllResult.useCallback(() => {
     let obj = guild(channel[13]);
     obj.itemInteracted(message.id, "announcement", "long_press_message");
-    obj = { itemId: message.id, itemType: "announcement", actionParameters: { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true } };
+    obj = { itemId: message.id, itemType: "announcement", actionParameters: { actionGestureType: "long_press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: "channel" } };
     guild(channel[13]).feedItemActioned(obj);
-    const user = user.getUser(message.author.id);
+    const user = outer1_9.getUser(message.author.id);
     const obj2 = guild(channel[13]);
     obj = { channel, message, user };
     const result = message(channel[15]).showLongPressMessageActionSheet(obj);
@@ -82,7 +81,7 @@ let closure_14 = importAllResult.memo((message) => {
   const callback2 = importAllResult.useCallback(() => {
     let obj = guild(channel[13]);
     obj.itemInteracted(message.id, "announcement", "press_message");
-    obj = { itemId: message.id, itemType: "announcement", actionParameters: { "Bool(false)": -5443257041172837000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 426842918043956900000000000000000000000000000000000000000000, "Bool(false)": -397126957808771400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": -8364224476726906000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
+    obj = { itemId: message.id, itemType: "announcement", actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "navigate", actionDestinationType: "channel" } };
     guild(channel[13]).feedItemActioned(obj);
     if (null != message) {
       obj = { id: message.id };
@@ -95,61 +94,58 @@ let closure_14 = importAllResult.memo((message) => {
       const obj6 = message(channel[16]);
     }
   }, items4);
-  let obj1 = arg1(dependencyMap[17]);
+  let obj1 = message(channel[17]);
   const gravityMessage = obj1.useGravityMessage(message);
   obj = {};
-  const intl = arg1(dependencyMap[19]).intl;
-  obj.actionLabel = intl.string(arg1(dependencyMap[19]).t.8P08G9);
+  const intl = message(channel[19]).intl;
+  obj.actionLabel = intl.string(message(channel[19]).t["8P08G9"]);
   obj.id = message.id;
   obj.interactionType = "announcement";
   obj.channelId = channel.id;
-  const tmp10 = importDefault(dependencyMap[18]);
-  obj.timestamp = importDefault(dependencyMap[20]).extractTimestamp(message.id);
+  const tmp10 = guild(channel[18]);
+  obj.timestamp = guild(channel[20]).extractTimestamp(message.id);
   obj.onHeaderPress = callback2;
   obj.onHeaderLongPress = callback;
   obj.message = gravityMessage;
   obj.shouldFeatureUser = true;
-  obj = { onPress: callback2, onLongPress: callback1, accessibilityRole: "button", accessibilityLabel: importDefault(dependencyMap[22])({ channel, unread }) };
-  const obj4 = importDefault(dependencyMap[20]);
-  obj.accessibilityHint = arg1(dependencyMap[22]).getChannelA11yHint({ channel, muted: stateFromStores });
+  obj = { onPress: callback2, onLongPress: callback1, accessibilityRole: "button", accessibilityLabel: guild(channel[22])({ channel, unread }) };
+  let obj4 = guild(channel[20]);
+  obj.accessibilityHint = message(channel[22]).getChannelA11yHint({ channel, muted: stateFromStores });
   obj.unstable_pressDelay = 130;
   obj.style = tmp2.pressable;
-  obj.children = callback(arg1(dependencyMap[23]).MessageRowContent, { message, channel, guild, lineClamp: 5, visible });
-  const items5 = [callback(arg1(dependencyMap[21]).PressableHighlight, obj), ];
-  obj1 = { style: tmp2.footer, children: callback(importDefault(dependencyMap[24]), obj2) };
+  obj.children = callback(message(channel[23]).MessageRowContent, { message, channel, guild, lineClamp: 5, visible });
+  const items5 = [callback(message(channel[21]).PressableHighlight, obj), ];
+  obj1 = { style: tmp2.footer, children: callback(guild(channel[24]), obj2) };
   items5[1] = callback(View, obj1);
   obj.children = items5;
   return callback2(tmp10, obj);
 });
-const result = __exportStarResult1.fileFinishedImporting("modules/icymi/native/AnnouncementMessageRow.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/AnnouncementMessageRow.tsx");
 
 export default function AnnouncementMessageRowWrapper(message) {
   let unread;
   let visible;
   message = message.message;
-  const arg1 = message;
-  let dependencyMap;
+  let author;
   ({ unread, visible } = message);
-  let obj = arg1(dependencyMap[11]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(message.getChannelId()));
-  const importDefault = stateFromStores;
-  const items1 = [closure_6];
-  const stateFromStores1 = arg1(dependencyMap[11]).useStateFromStores(items1, () => {
+  let obj = message(author[11]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(message.getChannelId()));
+  const items1 = [_createForOfIteratorHelperLoose];
+  const stateFromStores1 = message(author[11]).useStateFromStores(items1, () => {
     let guild_id;
     if (null != stateFromStores) {
       guild_id = stateFromStores.guild_id;
     }
-    return guild.getGuild(guild_id);
+    return outer1_6.getGuild(guild_id);
   });
-  const obj2 = arg1(dependencyMap[11]);
-  const gravityMessage = arg1(dependencyMap[17]).useGravityMessage(message);
-  let author;
+  const obj2 = message(author[11]);
+  const gravityMessage = message(author[17]).useGravityMessage(message);
+  author = undefined;
   if (null != gravityMessage) {
     author = gravityMessage.author;
   }
-  dependencyMap = author;
-  arg1(dependencyMap[11]);
+  message(author[11]);
   [][0] = closure_7;
   let tmp7 = null;
   if (null != stateFromStores) {

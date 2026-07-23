@@ -1,12 +1,15 @@
-// Module ID: 10874
-// Function ID: 84576
+// Module ID: 10884
+// Function ID: 84625
 // Name: useAppLauncherChatInputRefDummy
-// Dependencies: []
+// Dependencies: [31, 3991, 8182, 10885, 2]
 // Exports: useAppLauncherContext, useRequiredAppLauncherContext
 
-// Module 10874 (useAppLauncherChatInputRefDummy)
+// Module 10884 (useAppLauncherChatInputRefDummy)
+import importAllResult from "result";
+
+const require = arg1;
 function useAppLauncherChatInputRefDummy(noop) {
-  const arg1 = noop.noop;
+  noop = noop.noop;
   return importAllResult.useRef({
     getApplicationCommandManager() {
       if (!noop) {
@@ -31,17 +34,16 @@ function useAppLauncherChatInputRefDummy(noop) {
     }
   });
 }
-const importAllResult = importAll(dependencyMap[0]);
-const obj = { DISMISSED: 0, [0]: "DISMISSED", COMMAND: 1, [1]: "COMMAND", ACTIVITY: 2, [2]: "ACTIVITY", BACK: 3, [3]: "BACK", OAUTH_MODAL: 4, [4]: "OAUTH_MODAL" };
-const context = importAllResult.createContext(undefined);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/app_launcher/native/AppLauncherContext.tsx");
+let obj = { DISMISSED: 0, [0]: "DISMISSED", COMMAND: 1, [1]: "COMMAND", ACTIVITY: 2, [2]: "ACTIVITY", BACK: 3, [3]: "BACK", OAUTH_MODAL: 4, [4]: "OAUTH_MODAL" };
+let context = importAllResult.createContext(undefined);
+const result = require("AppLauncherEntrypoint").fileFinishedImporting("modules/app_launcher/native/AppLauncherContext.tsx");
 
 export const AppLauncherKeyboardCloseReason = obj;
 export const AppLauncherBottomSheetExpandReason = { GESTURE: 0, [0]: "GESTURE", KEYBOARD: 1, [1]: "KEYBOARD", APP_VIEW: 2, [2]: "APP_VIEW", COMMAND_VIEW: 3, [3]: "COMMAND_VIEW", OTHER: 4, [4]: "OTHER" };
 export const AppLauncherContext = context;
 export { useAppLauncherChatInputRefDummy };
 export const useRequiredAppLauncherContext = function useRequiredAppLauncherContext() {
-  const context = importAllResult.useContext(context);
+  context = importAllResult.useContext(context);
   if (null == context) {
     const _Error = Error;
     const error = new Error("AppLauncherContext not found, must be used within AppLauncherNavigator");
@@ -51,21 +53,19 @@ export const useRequiredAppLauncherContext = function useRequiredAppLauncherCont
   }
 };
 export const useAppLauncherContext = function useAppLauncherContext() {
-  const callback = importAllResult.useRef(obj.DISMISSED);
-  let closure_1 = importAllResult.useRef(undefined);
-  let obj = callback(closure_1[1]);
-  const sharedValue = obj.useSharedValue(-1);
-  const sharedValue1 = callback(closure_1[1]).useSharedValue(0);
-  obj = sharedValue1;
-  const TEXT = callback(closure_1[2]).AppLauncherEntrypoint.TEXT;
-  let context = TEXT;
-  const obj2 = callback(closure_1[1]);
-  const defaultAppLauncherWidth = callback(closure_1[3]).useDefaultAppLauncherWidth(TEXT);
-  const useAppLauncherChatInputRefDummy = defaultAppLauncherWidth;
-  const tmp4 = useAppLauncherChatInputRefDummy({ noop: false });
+  const _require = sharedValue.useRef(sharedValue1.DISMISSED);
+  const dependencyMap = sharedValue.useRef(undefined);
+  sharedValue = _require(3991).useSharedValue(-1);
+  const obj = _require(3991);
+  sharedValue1 = _require(3991).useSharedValue(0);
+  const TEXT = _require(8182).AppLauncherEntrypoint.TEXT;
+  const obj2 = _require(3991);
+  const defaultAppLauncherWidth = _require(10885).useDefaultAppLauncherWidth(TEXT);
+  const tmp4 = defaultAppLauncherWidth({ noop: false });
+  let closure_6 = tmp4;
   const items = [defaultAppLauncherWidth, TEXT, tmp4, sharedValue, sharedValue1];
-  let memo = importAllResult.useMemo(() => ({ keyboardCloseReasonRef: closure_0, bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: closure_1, chatInputRef: tmp4, width: defaultAppLauncherWidth, entrypoint: TEXT, onActivityItemSelected: undefined }), items);
-  context = importAllResult.useContext(context);
+  let memo = sharedValue.useMemo(() => ({ keyboardCloseReasonRef: closure_0, bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, bottomSheetExpandReasonRef: closure_1, chatInputRef: closure_6, width: defaultAppLauncherWidth, entrypoint: TEXT, onActivityItemSelected: undefined }), items);
+  const context = sharedValue.useContext(TEXT);
   if (null != context) {
     memo = context;
   }

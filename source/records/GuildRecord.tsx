@@ -1,15 +1,20 @@
 // Module ID: 1391
-// Function ID: 16581
+// Function ID: 16582
 // Name: isGuildOwner
-// Dependencies: []
+// Dependencies: [1388, 653, 1392, 1832, 21, 1836, 2]
 // Exports: getGuildAcronym, getGuildEveryoneRoleId, getGuildIconSource, getGuildIconURL, isGuildLurker, isGuildNSFW, isGuildOwnerWithRequiredMfaLevel, updateGameApplications, updateJoinedAt
 
 // Module 1391 (isGuildOwner)
+import constructInPlace from "constructInPlace";
+import ME from "ME";
+import set from "getAvatarURL";
+
 let BoostedGuildTiers;
 let GuildExplicitContentFilterTypes;
 let TypeTag;
 let UserNotificationSettings;
 let VerificationLevels;
+let closure_3;
 function isGuildOwner(guild, currentUser) {
   let tmp = currentUser;
   if ("string" !== typeof currentUser) {
@@ -21,19 +26,16 @@ function isGuildOwner(guild, currentUser) {
   }
   return guild.ownerId === tmp;
 }
-const _module = require(dependencyMap[0]);
-({ set: closure_3, TypeTag } = _module);
-const _module1 = require(dependencyMap[1]);
-const GuildNSFWContentLevel = _module1.GuildNSFWContentLevel;
-const MFALevels = _module1.MFALevels;
+({ set: closure_3, TypeTag } = constructInPlace);
+const GuildNSFWContentLevel = ME.GuildNSFWContentLevel;
+const MFALevels = ME.MFALevels;
 const items = [, ];
 ({ EXPLICIT: arr[0], AGE_RESTRICTED: arr[1] } = GuildNSFWContentLevel);
-({ BoostedGuildTiers, GuildExplicitContentFilterTypes, UserNotificationSettings, VerificationLevels } = _module1);
-const set = new Set(items);
-const obj = { "Bool(true)": true, "Bool(true)": null, "Bool(true)": null, mfaLevel: MFALevels.NONE, defaultMessageNotifications: UserNotificationSettings.ALL_MESSAGES, verificationLevel: VerificationLevels.NONE, explicitContentFilter: GuildExplicitContentFilterTypes.DISABLED, premiumProgressBarEnabled: false, premiumProgressBarEnabledUserUpdatedAt: null, systemChannelFlags: 0, maxStageVideoChannelUsers: -1, maxVideoChannelUsers: -1, maxMembers: -1, premiumTier: BoostedGuildTiers.NONE, nsfwLevel: GuildNSFWContentLevel.DEFAULT, premiumSubscriberCount: 0, features: new Set(), description: null, icon: null, ownerId: null, systemChannelId: null, joinedAt: null, discoverySplash: null, splash: null, banner: null, homeHeader: null, afkChannelId: null, application_id: null, vanityURLCode: null, rulesChannelId: null, safetyAlertsChannelId: null, publicUpdatesChannelId: null, ownerConfiguredContentLevel: null, hubType: null, latestOnboardingQuestionId: null, profile: null, guildTheme: null, premiumFeatures: null, moderatorReporting: null, verificationRoleId: null, gameApplicationIds: null, officialMessageColor: null };
+({ BoostedGuildTiers, GuildExplicitContentFilterTypes, UserNotificationSettings, VerificationLevels } = ME);
+let set = new Set(items);
+let obj = { mfaLevel: MFALevels.NONE, preferredLocale: "en-US", afkTimeout: 0, defaultMessageNotifications: UserNotificationSettings.ALL_MESSAGES, verificationLevel: VerificationLevels.NONE, explicitContentFilter: GuildExplicitContentFilterTypes.DISABLED, premiumProgressBarEnabled: false, premiumProgressBarEnabledUserUpdatedAt: null, systemChannelFlags: 0, maxStageVideoChannelUsers: -1, maxVideoChannelUsers: -1, maxMembers: -1, premiumTier: BoostedGuildTiers.NONE, nsfwLevel: GuildNSFWContentLevel.DEFAULT, premiumSubscriberCount: 0, features: new Set(), description: null, icon: null, ownerId: null, systemChannelId: null, joinedAt: null, discoverySplash: null, splash: null, banner: null, homeHeader: null, afkChannelId: null, application_id: null, vanityURLCode: null, rulesChannelId: null, safetyAlertsChannelId: null, publicUpdatesChannelId: null, ownerConfiguredContentLevel: null, hubType: null, latestOnboardingQuestionId: null, profile: null, guildTheme: null, premiumFeatures: null, moderatorReporting: null, verificationRoleId: null, gameApplicationIds: null, officialMessageColor: null };
 const frozen = Object.freeze(obj);
-const _module2 = require(dependencyMap[6]);
-const result = _module2.fileFinishedImporting("records/GuildRecord.tsx");
+const result = set.fileFinishedImporting("records/GuildRecord.tsx");
 
 export const GuildRecordTypeTag = "Guild";
 export const RESTRICTED_CONTENT_LEVELS = set;
@@ -47,24 +49,24 @@ export const getGuildIconURL = function getGuildIconURL(id, size) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(1392);
   obj = { id: id.id, size, icon: id.icon, canAnimate: flag, lossless: flag2 };
   return obj.getGuildIconURL(obj);
 };
 export const getGuildIconSource = function getGuildIconSource(arg0, arg1, flag) {
-  const require = arg0;
+  let closure_0 = arg0;
   const importDefault = arg1;
   if (flag === undefined) {
     flag = false;
   }
-  return importDefault(dependencyMap[2]).getAnimatableSourceWithFallback(flag, (canAnimate) => {
-    let obj = arg1(closure_2[2]);
-    obj = { id: canAnimate.id, size: arg1, icon: canAnimate.icon, canAnimate };
+  return importDefault(1392).getAnimatableSourceWithFallback(flag, (canAnimate) => {
+    let obj = callback(outer1_2[2]);
+    obj = { id: closure_0.id, size: callback, icon: closure_0.icon, canAnimate };
     return obj.getGuildIconSource(obj);
   });
 };
 export const getGuildAcronym = function getGuildAcronym(guild) {
-  return require(dependencyMap[3]).getAcronym(guild.name);
+  return require(1832) /* isNullOrEmpty */.getAcronym(guild.name);
 };
 export { isGuildOwner };
 export const isGuildOwnerWithRequiredMfaLevel = function isGuildOwnerWithRequiredMfaLevel(mfaLevel, mfaEnabled) {
@@ -82,7 +84,7 @@ export const isGuildLurker = function isGuildLurker(joinedAt) {
   return null == joinedAt.joinedAt;
 };
 export const getGuildEveryoneRoleId = function getGuildEveryoneRoleId(closure_29) {
-  return importDefault(dependencyMap[4]).castGuildIdAsEveryoneGuildRoleId(closure_29.id);
+  return importDefault(21).castGuildIdAsEveryoneGuildRoleId(closure_29.id);
 };
 export const updateJoinedAt = function updateJoinedAt(arg0, arg1) {
   let date = arg1;
@@ -111,6 +113,6 @@ export const isGuildNSFW = function isGuildNSFW(guild) {
       }
       hasItem = has(DEFAULT);
     }
-    const obj = require(dependencyMap[5]);
+    obj = require(1836) /* apexExperiment */;
   }
 };

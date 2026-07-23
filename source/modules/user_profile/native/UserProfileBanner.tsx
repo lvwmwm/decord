@@ -1,62 +1,66 @@
-// Module ID: 8254
-// Function ID: 65124
+// Module ID: 8260
+// Function ID: 65161
 // Name: UserProfileBanner
-// Dependencies: []
+// Dependencies: [57, 31, 27, 653, 33, 4130, 666, 689, 3803, 7883, 1392, 8261, 4660, 1212, 8262, 2]
 // Exports: default
 
-// Module 8254 (UserProfileBanner)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const BANNER_HEIGHT = arg1(dependencyMap[3]).BANNER_HEIGHT;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { bannerContainer: { position: "relative" } };
-obj = {};
-const tmp2 = arg1(dependencyMap[4]);
-const importDefaultResult = importDefault(dependencyMap[6]);
-const importDefaultResultResult = importDefault(dependencyMap[6])(importDefault(dependencyMap[7]).unsafe_rawColors.WHITE);
-obj.backgroundColor = importDefault(dependencyMap[6])(importDefault(dependencyMap[7]).unsafe_rawColors.WHITE).alpha(0.9).css();
-obj.gifTag = obj;
-const alphaResult = importDefault(dependencyMap[6])(importDefault(dependencyMap[7]).unsafe_rawColors.WHITE).alpha(0.9);
-obj.gifTagText = { color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_800, fontSize: 14 };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[7]).unsafe_rawColors.PRIMARY_800, fontSize: 14 };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/user_profile/native/UserProfileBanner.tsx");
+// Module 8260 (UserProfileBanner)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { BANNER_HEIGHT } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "t";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = { bannerContainer: { position: "relative" } };
+_createForOfIteratorHelperLoose = { position: "absolute", left: 12, top: 12, right: "auto", bottom: "auto" };
+const importDefaultResultResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE);
+_createForOfIteratorHelperLoose.backgroundColor = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE).alpha(0.9).css();
+_createForOfIteratorHelperLoose.gifTag = _createForOfIteratorHelperLoose;
+const alphaResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE).alpha(0.9);
+_createForOfIteratorHelperLoose.gifTagText = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_800, fontSize: 14 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_800, fontSize: 14 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileBanner.tsx");
 
 export default function UserProfileBanner(displayProfile) {
+  let View;
   let bannerSafeArea;
+  let result;
   let disableInteraction;
+  let importDefault;
   let pendingAvatarSrc;
   let pendingBanner;
   displayProfile = displayProfile.displayProfile;
-  const arg1 = displayProfile;
-  ({ style: closure_1, bannerSafeArea } = displayProfile);
+  ({ style: importDefault, bannerSafeArea } = displayProfile);
   if (bannerSafeArea === undefined) {
     bannerSafeArea = 0;
   }
-  const dependencyMap = bannerSafeArea;
   let bannerHeight = displayProfile.bannerHeight;
   if (bannerHeight === undefined) {
-    bannerHeight = BANNER_HEIGHT;
+    bannerHeight = first;
   }
-  const callback = bannerHeight;
-  ({ pendingBanner, pendingAccentColor: closure_4, pendingThemeColors: closure_5, disableInteraction, pendingAvatarSrc } = displayProfile);
+  ({ pendingBanner, pendingAccentColor: result, pendingThemeColors: View, disableInteraction, pendingAvatarSrc } = displayProfile);
   if (disableInteraction === undefined) {
     disableInteraction = false;
   }
-  let BANNER_HEIGHT;
-  let callback2;
+  first = undefined;
+  let callback;
   let closure_8;
-  let callback3;
+  let source;
   function renderBanner() {
-    const obj = { style: callback, bannerSource: source };
+    const obj = { style: closure_1, bannerSource: source };
     let first;
-    if (null != closure_5) {
-      first = closure_5[0];
+    if (null != table) {
+      first = table[0];
     }
     if (null == first) {
-      first = closure_4;
+      first = result;
     }
     if (null == first) {
       let primaryColor;
@@ -75,20 +79,19 @@ export default function UserProfileBanner(displayProfile) {
     if (null != displayProfile) {
       banner = displayProfile.banner;
     }
-    return closure_7(callback(bannerSafeArea[11]), obj, banner);
+    return closure_7(outer1_1(bannerSafeArea[11]), obj, banner);
   }
-  const tmp = callback3();
-  const GifAutoPlay = arg1(dependencyMap[8]).GifAutoPlay;
+  const tmp = source();
+  const GifAutoPlay = displayProfile(bannerSafeArea[8]).GifAutoPlay;
   const setting = GifAutoPlay.useSetting();
-  const tmp3 = callback(React.useState(false), 2);
-  const first = tmp3[0];
-  BANNER_HEIGHT = first;
-  callback2 = tmp3[1];
+  const tmp3 = bannerHeight(React.useState(false), 2);
+  first = tmp3[0];
+  callback = tmp3[1];
   let tmp5 = setting;
   if (!setting) {
     tmp5 = first;
   }
-  let obj = arg1(dependencyMap[9]);
+  let obj = displayProfile(bannerSafeArea[9]);
   obj = { user: displayProfile.user };
   let guildId;
   if (null != displayProfile) {
@@ -108,36 +111,35 @@ export default function UserProfileBanner(displayProfile) {
     obj = { canAnimate: tmp5, size: 600 };
     bannerURL = displayProfile.getBannerURL(obj);
   }
-  let source = null;
+  source = null;
   if (null != bannerURL) {
-    let obj3 = arg1(dependencyMap[10]);
+    let obj3 = displayProfile(bannerSafeArea[10]);
     source = obj3.makeSource(bannerURL);
   }
-  callback3 = source;
   const obj1 = { style: tmp.bannerContainer };
   if (obj5.isAnimatedImageURL(bannerURL)) {
     if (!setting) {
       if (!disableInteraction) {
         const obj2 = {
           onPress() {
-                  callback2(!first);
+                  callback(!first);
                 },
           accessibilityRole: "button"
         };
-        const intl = arg1(dependencyMap[13]).intl;
-        obj2.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.3fzj/l);
+        const intl = displayProfile(bannerSafeArea[13]).intl;
+        obj2.accessibilityLabel = intl.string(displayProfile(bannerSafeArea[13]).t["3fzj/l"]);
         const items = [renderBanner(), ];
         let tmp17 = !tmp5;
         if (tmp17) {
           obj3 = {};
-          const intl2 = arg1(dependencyMap[13]).intl;
-          obj3.label = intl2.string(arg1(dependencyMap[13]).t.I5gL2H);
+          const intl2 = displayProfile(bannerSafeArea[13]).intl;
+          obj3.label = intl2.string(displayProfile(bannerSafeArea[13]).t.I5gL2H);
           ({ gifTag: obj8.style, gifTagText: obj8.textStyle } = tmp);
-          tmp17 = callback2(arg1(dependencyMap[14]).Caption, obj3);
+          tmp17 = callback(displayProfile(bannerSafeArea[14]).Caption, obj3);
         }
         items[1] = tmp17;
         obj2.children = items;
-        let renderBannerResult = closure_8(arg1(dependencyMap[12]).PressableOpacity, obj2);
+        let renderBannerResult = closure_8(displayProfile(bannerSafeArea[12]).PressableOpacity, obj2);
         const tmp14 = closure_8;
       }
       obj1.children = renderBannerResult;

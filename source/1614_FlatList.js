@@ -1,15 +1,15 @@
 // Module ID: 1614
-// Function ID: 17917
+// Function ID: 17918
 // Name: FlatList
-// Dependencies: []
+// Dependencies: [1615, 1723, 1724, 1747, 1722, 1681, 1616]
 
 // Module 1614 (FlatList)
 
-export const FlatList = require(dependencyMap[0]).ReanimatedFlatList;
-export const Image = require(dependencyMap[1]).AnimatedImage;
-export const ScrollView = require(dependencyMap[2]).AnimatedScrollView;
-export const Text = require(dependencyMap[3]).AnimatedText;
-export const View = require(dependencyMap[4]).AnimatedView;
-export const addWhitelistedNativeProps = require(dependencyMap[5]).addWhitelistedNativeProps;
-export const addWhitelistedUIProps = require(dependencyMap[5]).addWhitelistedUIProps;
-export const createAnimatedComponent = require(dependencyMap[6]).createAnimatedComponent;
+export const FlatList = require("ReanimatedFlatList").ReanimatedFlatList;
+export const Image = require("AnimatedImage").AnimatedImage;
+export const ScrollView = require("AnimatedScrollView").AnimatedScrollView;
+export const Text = require("AnimatedText").AnimatedText;
+export const View = require("AnimatedView").AnimatedView;
+export const addWhitelistedNativeProps = require("configureProps").addWhitelistedNativeProps;
+export const addWhitelistedUIProps = require("configureProps").addWhitelistedUIProps;
+export const createAnimatedComponent = require("createAnimatedComponent").createAnimatedComponent;

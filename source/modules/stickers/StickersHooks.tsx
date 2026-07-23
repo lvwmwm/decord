@@ -1,53 +1,65 @@
-// Module ID: 9593
-// Function ID: 74706
+// Module ID: 9600
+// Function ID: 74747
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 57, 31, 1838, 3947, 4970, 1849, 5034, 5035, 653, 566, 9601, 3803, 4466, 8402, 4799, 4022, 1212, 3763, 9584, 5732, 2]
 // Exports: useFetchStickerPack, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid
 
-// Module 9593 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 9600 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +70,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,12 +98,12 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function useFetchStickerPacks() {
   const effect = React.useEffect(() => {
-    const stickerPacks = callback(closure_2[11]).fetchStickerPacks();
+    const stickerPacks = outer1_0(outer1_2[11]).fetchStickerPacks();
   }, []);
 }
 function useFavoriteStickerIds() {
   let stickerIds;
-  const favoriteStickers = arg1(dependencyMap[19]).useFrecencySettings().favoriteStickers;
+  const favoriteStickers = require(9584) /* useFrecencySettings */.useFrecencySettings().favoriteStickers;
   if (null != favoriteStickers) {
     stickerIds = favoriteStickers.stickerIds;
   }
@@ -101,29 +113,29 @@ function useFavoriteStickerIds() {
   return stickerIds;
 }
 function useFavoriteStickers() {
-  const tmp = useFavoriteStickerIds();
-  const arg1 = tmp;
+  let tmp = useFavoriteStickerIds();
+  const require = tmp;
   const items = [closure_11];
   const items1 = [tmp];
-  return arg1(dependencyMap[10]).useStateFromStoresArray(items, () => {
-    const mapped = tmp.map((arg0) => stickerById.getStickerById(arg0));
+  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
+    const mapped = tmp.map((arg0) => outer2_11.getStickerById(arg0));
     return mapped.filter((body) => {
       let tmp = null != body;
       if (tmp) {
-        let result = !callback(closure_2[13]).isGuildSticker(body);
+        let result = !callback(outer2_2[13]).isGuildSticker(body);
         if (!result) {
-          result = callback(closure_2[13]).isAvailableGuildSticker(body);
-          const obj2 = callback(closure_2[13]);
+          result = callback(outer2_2[13]).isAvailableGuildSticker(body);
+          const obj2 = callback(outer2_2[13]);
         }
         tmp = result;
-        const obj = callback(closure_2[13]);
+        const obj = callback(outer2_2[13]);
       }
       return tmp;
     });
   }, items1);
 }
 function useLatestFrecentStickerIds() {
-  const frecencySettings = arg1(dependencyMap[19]).useFrecencySettings();
+  const frecencySettings = require(9584) /* useFrecencySettings */.useFrecencySettings();
   let keys = closure_13;
   let stickers;
   if (null != frecencySettings) {
@@ -145,62 +157,53 @@ function useLatestFrecentStickerIds() {
   return keys;
 }
 function useStickerPackCategories(channel) {
-  const arg1 = channel;
-  const tmp = useFavoriteStickers();
+  const _require = channel;
+  let tmp = useFavoriteStickers();
   const importAll = tmp;
-  const items = [closure_11, closure_10];
-  const stateFromStoresObject = arg1(dependencyMap[10]).useStateFromStoresObject(items, () => {
-    const obj = { packs: premiumPacks.getPremiumPacks(), frequentlyUsedStickers: obj.stickerFrecencyWithoutFetchingLatest.frequently };
-    return obj;
-  }, []);
-  const packs = stateFromStoresObject.packs;
-  const dependencyMap = packs;
+  let items = [closure_11, closure_10];
+  const stateFromStoresObject = _require(packs[10]).useStateFromStoresObject(items, () => ({ packs: outer1_11.getPremiumPacks(), frequentlyUsedStickers: outer1_10.stickerFrecencyWithoutFetchingLatest.frequently }), []);
+  packs = stateFromStoresObject.packs;
   const frequentlyUsedStickers = stateFromStoresObject.frequentlyUsedStickers;
-  let closure_3 = frequentlyUsedStickers;
-  const obj = arg1(dependencyMap[10]);
-  const items1 = [closure_9];
-  const stateFromStores = arg1(dependencyMap[10]).useStateFromStores(items1, () => currentUser.getCurrentUser());
-  let closure_4 = stateFromStores;
-  const tmp4 = function useGuildStickerCategories(channel) {
-    const items = [closure_11];
-    const stateFromStores = channel(packs[10]).useStateFromStores(items, () => allGuildStickers.getAllGuildStickers());
-    const obj = channel(packs[10]);
-    const items1 = [closure_8, closure_6];
+  let obj = _require(packs[10]);
+  let items1 = [closure_9];
+  let stateFromStores = _require(packs[10]).useStateFromStores(items1, () => outer1_9.getCurrentUser());
+  let tmp4 = (function useGuildStickerCategories(channel) {
+    let items = [outer1_11];
+    const stateFromStores = channel(packs[10]).useStateFromStores(items, () => outer2_11.getAllGuildStickers());
+    let obj = channel(packs[10]);
+    const items1 = [outer1_8, outer1_6];
     const stateFromStoresArray = channel(packs[10]).useStateFromStoresArray(items1, () => {
-      const flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+      const flattenedGuildIds = outer2_8.getFlattenedGuildIds();
       const items = [];
-      const arg0 = items;
       const item = flattenedGuildIds.forEach((guildId) => {
-        const guild = guild.getGuild(guildId);
+        const guild = outer3_6.getGuild(guildId);
         if (null != guild) {
           items.push(guild);
         }
       });
       return items;
     }, []);
-    const packs = stateFromStoresArray;
     const obj2 = channel(packs[10]);
-    const items2 = [closure_9];
-    const stateFromStores1 = channel(packs[10]).useStateFromStores(items2, () => currentUser.getCurrentUser());
-    const frequentlyUsedStickers = stateFromStores1;
+    const items2 = [outer1_9];
+    const stateFromStores1 = channel(packs[10]).useStateFromStores(items2, () => outer2_9.getCurrentUser());
     const items3 = [stateFromStores, stateFromStoresArray, stateFromStores1, channel];
     return tmp4.useMemo(() => {
       let iter2;
       const items = [];
-      const tmp = callback(stateFromStoresArray);
+      const tmp = outer2_14(stateFromStoresArray);
       let iter = tmp();
       if (!iter.done) {
         do {
           let value = iter.value;
           let id = value.id;
-          let tmp2 = closure_1;
-          value = closure_1.get(id);
+          let tmp2 = stateFromStores;
+          value = stateFromStores.get(id);
           let tmp3 = null != value && 0 !== value.length;
           if (tmp3) {
             let obj = {};
-            let tmp4 = closure_0;
-            let tmp5 = closure_2;
-            obj.type = closure_0(closure_2[15]).StickerCategoryTypes.GUILD;
+            let tmp4 = store;
+            let tmp5 = packs;
+            obj.type = store(packs[15]).StickerCategoryTypes.GUILD;
             obj.id = id;
             obj.name = value.name;
             obj.stickers = value;
@@ -211,66 +214,67 @@ function useStickerPackCategories(channel) {
         } while (!iter2.done);
       }
       let guildId;
-      if (null != arg0) {
-        guildId = arg0.getGuildId();
+      if (null != store) {
+        guildId = store.getGuildId();
       }
       if (null != guildId) {
-        const guild = guild.getGuild(arg0.getGuildId());
-        const findIndexResult = items.findIndex((id) => id.id === guildId.getGuildId());
+        const guild = outer2_6.getGuild(store.getGuildId());
+        const findIndexResult = items.findIndex((id) => id.id === outer1_0.getGuildId());
         if (findIndexResult >= 1) {
           items.unshift(items.splice(findIndexResult, 1)[0]);
         } else {
           if (tmp9) {
-            obj = { type: arg0(stateFromStoresArray[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL };
+            obj = { type: store(packs[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL };
             ({ id: obj2.id, name: obj2.name } = guild);
             obj.stickers = [];
             items.unshift(obj);
           }
-          const tmp9 = -1 === findIndexResult && null != guild && obj5.getManageResourcePermissions(guild).canManageAllExpressions;
+          tmp9 = -1 === findIndexResult && null != guild && obj5.getManageResourcePermissions(guild).canManageAllExpressions;
         }
         if (null != stateFromStores1) {
-          obj = { permission: constants.USE_EXTERNAL_EMOJIS, user: stateFromStores1, context: arg0 };
-          stateFromStores(stateFromStoresArray[18]).can(obj);
-          const obj3 = stateFromStores(stateFromStoresArray[18]);
+          obj = { permission: outer2_12.USE_EXTERNAL_EMOJIS, user: stateFromStores1, context: store };
+          stateFromStores(packs[18]).can(obj);
+          const obj3 = stateFromStores(packs[18]);
         }
-        const obj5 = arg0(stateFromStoresArray[14]);
+        obj5 = store(packs[14]);
       }
       return items;
     }, items3);
-  }(channel);
+  })(channel);
   const React = tmp4;
-  const items2 = [packs, tmp, frequentlyUsedStickers, tmp4, stateFromStores, channel];
+  let items2 = [packs, tmp, frequentlyUsedStickers, tmp4, stateFromStores, channel];
   return React.useMemo(() => {
     let found;
-    const mapped = packs.map(arg0(packs[13]).createStickerPackCategory);
-    let obj = { type: arg0(packs[15]).StickerCategoryTypes.FAVORITE, id: arg0(packs[15]).StickerCategoryTypes.FAVORITE };
-    const intl = arg0(packs[17]).intl;
-    obj.name = intl.string(arg0(packs[17]).t.y3LQCG);
-    obj.stickers = tmp;
+    const mapped = packs.map(channel(packs[13]).createStickerPackCategory);
+    let obj = { type: channel(packs[15]).StickerCategoryTypes.FAVORITE, id: channel(packs[15]).StickerCategoryTypes.FAVORITE };
+    const intl = channel(packs[17]).intl;
+    obj.name = intl.string(channel(packs[17]).t.y3LQCG);
+    obj.stickers = closure_1;
     const items = [obj, ];
-    obj = { type: arg0(packs[15]).StickerCategoryTypes.RECENT, id: arg0(packs[15]).StickerCategoryTypes.RECENT };
-    const intl2 = arg0(packs[17]).intl;
-    obj.name = intl2.string(arg0(packs[17]).t.6hjpXW);
+    obj = { type: channel(packs[15]).StickerCategoryTypes.RECENT, id: channel(packs[15]).StickerCategoryTypes.RECENT };
+    const intl2 = channel(packs[17]).intl;
+    obj.name = intl2.string(channel(packs[17]).t["6hjpXW"]);
     if (null != frequentlyUsedStickers) {
       found = frequentlyUsedStickers.filter((guild_id) => {
+        const callback = guild_id;
         if (obj.isGuildSticker(guild_id)) {
-          const stickersByGuildId = stickersByGuildId.getStickersByGuildId(guild_id.guild_id);
+          const stickersByGuildId = outer2_11.getStickersByGuildId(guild_id.guild_id);
           let someResult;
           if (null != stickersByGuildId) {
-            someResult = stickersByGuildId.some((id) => id.id === id.id);
+            someResult = stickersByGuildId.some((id) => id.id === guild_id.id);
           }
           let tmp8 = null != someResult && someResult;
           if (tmp8) {
-            const stickerSendability = guild_id(closure_2[20]).getStickerSendability(guild_id, closure_4, guild_id);
-            tmp8 = stickerSendability !== guild_id(closure_2[20]).StickerSendability.NONSENDABLE;
-            const obj4 = guild_id(closure_2[20]);
+            const stickerSendability = callback(packs[20]).getStickerSendability(guild_id, outer1_4, outer1_0);
+            tmp8 = stickerSendability !== callback(packs[20]).StickerSendability.NONSENDABLE;
+            const obj4 = callback(packs[20]);
           }
           let someResult1 = tmp8;
         } else {
           if (obj2.isStandardSticker(guild_id)) {
-            someResult1 = closure_2.some((id) => id.id === id.pack_id);
+            someResult1 = outer1_2.some((id) => id.id === guild_id.pack_id);
           }
-          const obj2 = guild_id(closure_2[13]);
+          obj2 = callback(packs[13]);
         }
         return someResult1;
       });
@@ -280,91 +284,72 @@ function useStickerPackCategories(channel) {
     }
     obj.stickers = found;
     items[1] = obj;
-    HermesBuiltin.arraySpread(mapped, HermesBuiltin.arraySpread(tmp4, 2));
+    HermesBuiltin.arraySpread(mapped, HermesBuiltin.arraySpread(result, 2));
     return items;
   }, items2);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-const Permissions = arg1(dependencyMap[9]).Permissions;
 let closure_13 = [];
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/stickers/StickersHooks.tsx");
+let result = require("result").fileFinishedImporting("modules/stickers/StickersHooks.tsx");
 
 export const useFetchStickerPack = function useFetchStickerPack(pack_id) {
-  const arg1 = pack_id;
+  const _require = pack_id;
   useFetchStickerPacks();
   const items = [closure_11];
-  const stateFromStores = arg1(dependencyMap[10]).useStateFromStores(items, () => stickerPack.hasLoadedStickerPacks);
-  const importAll = stateFromStores;
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_11.hasLoadedStickerPacks);
   const items1 = [pack_id, stateFromStores];
   const effect = React.useEffect(() => {
     let tmp = stateFromStores;
     if (stateFromStores) {
-      tmp = null == stickerPack.getStickerPack(arg0);
+      tmp = null == outer1_11.getStickerPack(pack_id);
     }
     if (tmp) {
-      const stickerPack = arg0(closure_2[11]).fetchStickerPack(arg0);
-      const obj = arg0(closure_2[11]);
+      const stickerPack = pack_id(outer1_2[11]).fetchStickerPack(pack_id);
+      const obj = pack_id(outer1_2[11]);
     }
   }, items1);
 };
 export const useShouldAnimateSticker = function useShouldAnimateSticker(isFocused) {
-  const AnimateStickers = arg1(dependencyMap[12]).AnimateStickers;
+  const AnimateStickers = require(3803) /* explicitContentFromProto */.AnimateStickers;
   const setting = AnimateStickers.useSetting();
-  return arg1(dependencyMap[13]).shouldAnimateSticker(setting, isFocused);
+  return require(4466) /* getStickerPackPreviewSticker */.shouldAnimateSticker(setting, isFocused);
 };
 export const useStickersGrid = function useStickersGrid(collapsedStickersCategories) {
   collapsedStickersCategories = collapsedStickersCategories.collapsedStickersCategories;
-  const arg1 = collapsedStickersCategories;
   const filteredStickers = collapsedStickersCategories.filteredStickers;
-  const importAll = filteredStickers;
   let num = collapsedStickersCategories.listPaddingRight;
   if (num === undefined) {
     num = 0;
   }
-  const dependencyMap = num;
   let num2 = collapsedStickersCategories.listWidth;
   if (num2 === undefined) {
     num2 = 0;
   }
-  let closure_3 = num2;
   let num3 = collapsedStickersCategories.stickerNodeMargin;
   if (num3 === undefined) {
     num3 = 0;
   }
-  let closure_4 = num3;
   const stickerNodeWidth = collapsedStickersCategories.stickerNodeWidth;
-  const React = stickerNodeWidth;
   const stickersCategories = collapsedStickersCategories.stickersCategories;
-  let closure_6 = stickersCategories;
-  const items = [collapsedStickersCategories, filteredStickers, num, num2, num3, stickerNodeWidth, stickersCategories];
-  return React.useMemo(() => {
+  let items = [collapsedStickersCategories, filteredStickers, num, num2, num3, stickerNodeWidth, stickersCategories];
+  return stickerNodeWidth.useMemo(() => {
     let iter2;
     let stickers;
     let type;
     function addGridSection(sendable, SEARCH_RESULTS, arg2) {
-      let closure_6;
       let flag = arg2;
-      let rounded = SEARCH_RESULTS;
+      let closure_0 = SEARCH_RESULTS;
       if (arg2 === undefined) {
         flag = false;
       }
-      let obj = rounded(items1[13]);
+      let obj = collapsedStickersCategories(num[13]);
       let guild;
       if (obj.isGuildSticker(sendable[0])) {
-        guild = closure_6.getGuild(sendable[0].guild_id);
+        guild = stickersCategories.getGuild(sendable[0].guild_id);
       }
-      const guildId = guildId.getGuildId();
-      const obj2 = rounded(items1[14]);
+      const guildId = outer2_7.getGuildId();
+      const obj2 = collapsedStickersCategories(num[14]);
       let canCreateExpressions = null != guild;
-      const findIndexResult = closure_6.findIndex((type) => type.type === arg1(closure_2[15]).StickerCategoryTypes.FAVORITE);
+      const findIndexResult = c6.findIndex((type) => type.type === collapsedStickersCategories(num[15]).StickerCategoryTypes.FAVORITE);
       if (canCreateExpressions) {
         canCreateExpressions = guildId === guild.id;
       }
@@ -372,43 +357,43 @@ export const useStickersGrid = function useStickersGrid(collapsedStickersCategor
         canCreateExpressions = obj2.getManageResourcePermissions(guild).canCreateExpressions;
       }
       if (canCreateExpressions) {
-        canCreateExpressions = sendable.length < rounded(items1[16]).getTotalStickerCountForTier(guild.premiumTier);
-        const obj3 = rounded(items1[16]);
+        canCreateExpressions = sendable.length < collapsedStickersCategories(16[16]).getTotalStickerCountForTier(guild.premiumTier);
+        const obj3 = collapsedStickersCategories(16[16]);
       }
       let sum = length;
       if (canCreateExpressions) {
         sum = length + 1;
       }
-      rounded = Math.ceil(sum / rounded);
+      const rounded = Math.ceil(sum / closure_0);
       let num2 = 0;
       if (!flag) {
         num2 = rounded;
       }
-      items1[closure_5] = num2;
+      items1[result] = num2;
       for (let num3 = 0; num3 < rounded; num3 = num3 + 1) {
-        let tmp12 = rounded;
-        let result = num3 * rounded;
-        let tmp14 = rounded;
-        let substr = sendable.slice(result, result + rounded);
+        let tmp12 = closure_0;
+        let result = num3 * closure_0;
+        let tmp14 = closure_0;
+        let substr = sendable.slice(result, result + closure_0);
         let mapped = substr.map((pack_id, columnIndex) => {
-          const obj = { type: columnIndex(closure_2[15]).StickerGridItemTypes.STICKER, sticker: pack_id };
+          const obj = { type: collapsedStickersCategories(num[15]).StickerGridItemTypes.STICKER, sticker: pack_id };
           let str = "TODO - fix";
           if (obj2.isStandardSticker(pack_id)) {
             str = pack_id.pack_id;
           }
           obj.packId = str;
-          obj.gridSectionIndex = closure_5;
-          obj.rowIndex = closure_4;
+          obj.gridSectionIndex = result;
+          obj.rowIndex = _slicedToArray;
           obj.columnIndex = columnIndex;
-          obj.visibleRowIndex = closure_6;
-          obj.category = columnIndex;
+          obj.visibleRowIndex = _createForOfIteratorHelperLoose;
+          obj.category = closure_0;
           return obj;
         });
-        let tmp15 = closure_5;
-        let tmp16 = closure_5 > findIndexResult1;
+        let tmp15 = result;
+        let tmp16 = result > findIndexResult1;
         if (tmp16) {
-          let tmp17 = closure_5;
-          tmp16 = closure_5 > findIndexResult;
+          let tmp17 = result;
+          tmp16 = result > findIndexResult;
         }
         if (tmp16) {
           tmp16 = null != guild;
@@ -418,73 +403,68 @@ export const useStickersGrid = function useStickersGrid(collapsedStickersCategor
         }
         if (tmp16) {
           obj = {};
-          let tmp18 = rounded;
-          let tmp19 = items1;
-          obj.type = rounded(items1[15]).StickerGridItemTypes.CREATE_STICKER;
+          let tmp18 = collapsedStickersCategories;
+          let tmp19 = num;
+          obj.type = collapsedStickersCategories(num[15]).StickerGridItemTypes.CREATE_STICKER;
           obj.guild_id = guild.id;
-          let intl = rounded(items1[17]).intl;
-          obj.name = intl.string(rounded(items1[17]).t.UwF+Cw);
-          let tmp20 = closure_5;
-          obj.gridSectionIndex = closure_5;
-          let tmp21 = closure_4;
-          obj.rowIndex = closure_4;
+          let intl = collapsedStickersCategories(num[17]).intl;
+          obj.name = intl.string(collapsedStickersCategories(num[17]).t["UwF+Cw"]);
+          let tmp20 = result;
+          obj.gridSectionIndex = result;
+          let tmp21 = _slicedToArray;
+          obj.rowIndex = _slicedToArray;
           obj.columnIndex = mapped.length;
-          let tmp22 = closure_6;
-          obj.visibleRowIndex = closure_6;
+          let tmp22 = _createForOfIteratorHelperLoose;
+          obj.visibleRowIndex = _createForOfIteratorHelperLoose;
           let arr = mapped.push(obj);
         }
         if (!flag) {
-          let tmp24 = closure_6;
-          closure_6 = closure_6 + 1;
+          let tmp24 = _createForOfIteratorHelperLoose;
+          _createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose + 1;
           let tmp25 = items2;
           arr = items2.push(mapped);
           let tmp27 = items;
           let arr1 = items.push(mapped.length);
         }
-        let tmp29 = closure_4;
-        closure_4 = closure_4 + 1;
+        let tmp29 = _slicedToArray;
+        _slicedToArray = _slicedToArray + 1;
       }
-      closure_5 = closure_5 + 1;
+      result = result + 1;
     }
-    const rounded = Math.floor((num2 - num + closure_4) / (closure_5 + closure_4));
-    const collapsedStickersCategories = rounded;
+    let rounded = Math.floor((items2 - items1 + c4) / (c5 + c4));
     const items = [];
-    const filteredStickers = items;
-    const items1 = [];
-    let num = items1;
-    const items2 = [];
-    let num2 = items2;
-    closure_4 = 0;
-    closure_5 = 0;
-    let closure_6 = 0;
-    const rounded1 = Math.floor(Math.max(closure_4, (num2 - num - closure_5 * rounded) / (rounded - 1)));
-    if (0 !== num2) {
-      if (null == filteredStickers) {
-        const tmp10 = callback(closure_6);
+    items1 = [];
+    items2 = [];
+    c4 = 0;
+    c5 = 0;
+    let c6 = 0;
+    const rounded1 = Math.floor(Math.max(c4, (items2 - items1 - c5 * rounded) / (rounded - 1)));
+    if (0 !== items2) {
+      if (null == items) {
+        const tmp10 = outer1_14(c6);
         let iter = tmp10();
-        num2 = 15;
         if (!iter.done) {
           do {
             let value = iter.value;
             if (value.stickers.length > 0) {
-              let tmp15 = closure_4;
-              closure_4 = closure_4 + 1;
-              let tmp16 = closure_0;
+              let tmp15 = c4;
+              c4 = c4 + 1;
+              let tmp16 = rounded;
               let hasItem;
               ({ stickers, type } = value);
-              if (null != closure_0) {
-                let tmp18 = closure_0;
-                hasItem = closure_0.has(value.id);
+              if (null != rounded) {
+                let tmp18 = rounded;
+                hasItem = rounded.has(value.id);
               }
               let addGridSectionResult = addGridSection(stickers, type, true === hasItem);
             } else {
-              let tmp11 = closure_0;
-              let tmp12 = closure_2;
-              if (value.type === closure_0(closure_2[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL) {
-                let tmp13 = closure_5;
-                items1[closure_5] = 0;
-                let tmp14 = closure_5;
-                closure_5 = closure_5 + 1;
+              let tmp11 = collapsedStickersCategories;
+              let tmp12 = num;
+              if (value.type === collapsedStickersCategories(num[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL) {
+                let tmp13 = c5;
+                items1[c5] = 0;
+                let tmp14 = c5;
+                c5 = c5 + 1;
               }
             }
             iter2 = tmp10();
@@ -492,16 +472,15 @@ export const useStickersGrid = function useStickersGrid(collapsedStickersCategor
           } while (!iter2.done);
         }
       } else {
-        if (filteredStickers.sendable.length > 0) {
-          num = 15;
-          addGridSection(filteredStickers.sendable, collapsedStickersCategories(num[15]).StickerCategoryTypes.SEARCH_RESULTS);
+        if (items.sendable.length > 0) {
+          addGridSection(items.sendable, collapsedStickersCategories(15[15]).StickerCategoryTypes.SEARCH_RESULTS);
         }
-        if (filteredStickers.sendableWithPremium.length > 0) {
-          addGridSection(filteredStickers.sendableWithPremium, collapsedStickersCategories(num[15]).StickerCategoryTypes.SEARCH_RESULTS);
+        if (items.sendableWithPremium.length > 0) {
+          addGridSection(items.sendableWithPremium, collapsedStickersCategories(num[15]).StickerCategoryTypes.SEARCH_RESULTS);
         }
       }
     }
-    return { rowCount: closure_4, rowCountBySection: items1, stickersGrid: items2, gutterWidth: rounded1, columnCounts: items };
+    return { rowCount: c4, rowCountBySection: items1, stickersGrid: items2, gutterWidth: rounded1, columnCounts: items };
   }, items);
 };
 export function useHasSendableSticker() {
@@ -513,44 +492,43 @@ export { useFavoriteStickers };
 export { useLatestFrecentStickerIds };
 export const useLatestFrecentStickers = function useLatestFrecentStickers() {
   const tmp = useLatestFrecentStickerIds();
-  const arg1 = tmp;
+  const require = tmp;
   const items = [closure_11];
   const items1 = [tmp];
-  return arg1(dependencyMap[10]).useStateFromStoresArray(items, () => {
-    const mapped = tmp.map((arg0) => stickerById.getStickerById(arg0));
+  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
+    const mapped = tmp.map((arg0) => outer2_11.getStickerById(arg0));
     return mapped.filter((arg0) => undefined !== arg0);
   }, items1);
 };
 export { useStickerPackCategories };
 export const useStickerForRenderableSticker = function useStickerForRenderableSticker(renderableSticker, arg1) {
+  let c3;
   let tmp4;
   let flag = arg1;
-  arg1 = renderableSticker;
+  const _require = renderableSticker;
   if (arg1 === undefined) {
     flag = false;
   }
-  const importAll = flag;
-  let closure_2;
-  let closure_3;
-  let callback;
+  let dependencyMap;
+  c3 = undefined;
+  let obj;
   let React;
-  let obj = arg1(closure_2[10]);
+  obj = _require(566);
   const items = [closure_11];
-  const stateFromStores = obj.useStateFromStores(items, () => stickerById.getStickerById(arg0.id));
-  const tmp2 = callback(React.useState(true), 2);
-  closure_2 = tmp2[1];
-  [tmp4, closure_3] = callback(React.useState(false), 2);
-  const tmp3 = callback(React.useState(false), 2);
-  let isGuildStickerResult = arg1(closure_2[13]).isGuildSticker(renderableSticker);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_11.getStickerById(id.id));
+  const tmp2 = obj(React.useState(true), 2);
+  dependencyMap = tmp2[1];
+  [tmp4, c3] = obj(React.useState(false), 2);
+  const tmp3 = obj(React.useState(false), 2);
+  let isGuildStickerResult = _require(4466).isGuildSticker(renderableSticker);
   if (!isGuildStickerResult) {
-    isGuildStickerResult = arg1(closure_2[13]).isStandardSticker(renderableSticker);
-    const obj3 = arg1(closure_2[13]);
+    isGuildStickerResult = _require(4466).isStandardSticker(renderableSticker);
+    const obj3 = _require(4466);
   }
   obj = { hasFetched: tmp4, isReturnable: isGuildStickerResult, renderableSticker, shouldFetch: tmp2[0], stickersStoreDefinition: stateFromStores };
-  callback = obj;
   React = React.useRef(obj);
   const effect = React.useEffect(() => {
-    closure_5.current = obj;
+    result.current = obj;
   });
   const items1 = [flag];
   const effect1 = React.useEffect(() => {
@@ -570,11 +548,11 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
   return items3;
 };
 export const useFilteredStickerPackCategories = function useFilteredStickerPackCategories(channel) {
-  const tmp = useStickerPackCategories(channel);
-  const arg1 = tmp;
+  let tmp = useStickerPackCategories(channel);
+  const require = tmp;
   const items = [tmp];
   return React.useMemo(() => tmp.filter((type) => {
-    let tmp = type.type === callback(closure_2[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL;
+    let tmp = type.type === callback(outer2_2[15]).StickerCategoryTypes.EMPTY_GUILD_UPSELL;
     if (!tmp) {
       tmp = type.stickers.length > 0;
     }

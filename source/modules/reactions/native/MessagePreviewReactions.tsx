@@ -1,39 +1,43 @@
-// Module ID: 9429
-// Function ID: 73424
+// Module ID: 9436
+// Function ID: 73465
 // Name: MessagePreviewReactions
-// Dependencies: []
+// Dependencies: [31, 6831, 8331, 33, 566, 5464, 5484, 9428, 2]
 // Exports: default
 
-// Module 9429 (MessagePreviewReactions)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
+// Module 9436 (MessagePreviewReactions)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 let closure_6 = [];
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/reactions/native/MessagePreviewReactions.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/reactions/native/MessagePreviewReactions.tsx");
 
 export default function MessagePreviewReactions(emoji) {
   let channelId;
   let messageId;
   ({ channelId, messageId } = emoji);
-  const arr = function usePreviewMessageReactions(channelId, messageId) {
-    const items = [closure_4, closure_3];
+  const arr = (function usePreviewMessageReactions(channelId, messageId) {
+    let closure_0 = channelId;
+    let closure_1 = messageId;
+    const items = [outer1_4, outer1_3];
     const items1 = [channelId, messageId];
-    return channelId(closure_2[4]).useStateFromStores(items, () => {
-      let message = message2.getMessage(arg1);
+    return outer1_0(outer1_2[4]).useStateFromStores(items, () => {
+      let message = outer2_4.getMessage(closure_1);
       if (null == message) {
-        message = message.getMessage(arg0, arg1);
+        message = outer2_3.getMessage(closure_0, closure_1);
       }
-      return null != message ? message.reactions : closure_6;
+      return null != message ? message.reactions : outer2_6;
     }, items1);
-  }(channelId, messageId);
-  let obj = { value: importDefault(dependencyMap[5])(importDefault(dependencyMap[6]).MESSAGE_PREVIEW_REACTIONS).analyticsLocations };
+  })(channelId, messageId);
+  let obj = { value: importDefault(5464)(importDefault(5484).MESSAGE_PREVIEW_REACTIONS).analyticsLocations };
   if (arr.length > 0) {
     obj = { channelId, messageId, emoji: emoji.emoji, reactions: arr };
-    let tmp6 = jsx(arg1(dependencyMap[7]).MessageReactionsContent, obj);
+    let tmp6 = jsx(require(9428) /* useReactors */.MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: arr });
   } else {
-    tmp6 = jsx(arg1(dependencyMap[7]).MessageReactionsEmpty, {});
+    tmp6 = jsx(require(9428) /* useReactors */.MessageReactionsEmpty, {});
   }
   obj.children = tmp6;
-  return jsx(arg1(dependencyMap[5]).AnalyticsLocationProvider, obj);
+  return jsx(require(5464) /* mergeLocations */.AnalyticsLocationProvider, { value: importDefault(5464)(importDefault(5484).MESSAGE_PREVIEW_REACTIONS).analyticsLocations });
 };

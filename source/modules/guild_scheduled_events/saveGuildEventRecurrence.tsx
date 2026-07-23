@@ -1,28 +1,27 @@
-// Module ID: 8361
-// Function ID: 66668
+// Module ID: 8367
+// Function ID: 66705
 // Name: saveGuildEventRecurrence
-// Dependencies: []
+// Dependencies: [8346, 8344, 21, 2]
 // Exports: default
 
-// Module 8361 (saveGuildEventRecurrence)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
+// Module 8367 (saveGuildEventRecurrence)
+let result = require("DISCORD_EPOCH").fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
 
 export default function saveGuildEventRecurrence(guild_id, event_exception_id, startDate, event_exception_id) {
-  let obj = require(dependencyMap[0]);
+  let obj = require(8346) /* getNextBucketedTime */;
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(event_exception_id, guild_id);
   startDate = null;
   if (!obj2.areDatesIdentical(baseScheduleForRecurrence.startDate, startDate.startDate)) {
     startDate = startDate.startDate;
   }
-  const obj2 = require(dependencyMap[0]);
+  obj2 = require(8346) /* getNextBucketedTime */;
   let endDate = null;
   if (!obj3.areDatesIdentical(baseScheduleForRecurrence.endDate, startDate.endDate)) {
     endDate = startDate.endDate;
   }
   if (null != event_exception_id) {
-    const result = require(dependencyMap[0]).areSchedulesIdentical(startDate, baseScheduleForRecurrence);
-    const obj5 = importDefault(dependencyMap[1]);
+    const result = require(8346) /* getNextBucketedTime */.areSchedulesIdentical(startDate, baseScheduleForRecurrence);
+    const obj5 = importDefault(8344);
     if (result) {
       let result1 = obj5.deleteGuildEventException(guild_id.guild_id, guild_id.id, event_exception_id.event_exception_id);
     } else {
@@ -42,8 +41,8 @@ export default function saveGuildEventRecurrence(guild_id, event_exception_id, s
     }
     return result1;
   } else {
-    const extractTimestampResult = importDefault(dependencyMap[2]).extractTimestamp(event_exception_id);
-    const obj7 = importDefault(dependencyMap[2]);
+    const extractTimestampResult = importDefault(21).extractTimestamp(event_exception_id);
+    const obj7 = importDefault(21);
     obj = {};
     const _Date = Date;
     const date = new Date(extractTimestampResult);
@@ -59,7 +58,7 @@ export default function saveGuildEventRecurrence(guild_id, event_exception_id, s
     }
     obj.scheduled_end_time = toISOStringResult3;
     obj.is_canceled = false;
-    return importDefault(dependencyMap[1]).createGuildEventException(obj, guild_id.guild_id, guild_id.id);
+    return importDefault(8344).createGuildEventException(obj, guild_id.guild_id, guild_id.id);
   }
-  const obj3 = require(dependencyMap[0]);
+  obj3 = require(8346) /* getNextBucketedTime */;
 };

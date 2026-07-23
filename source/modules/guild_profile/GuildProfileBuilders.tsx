@@ -1,53 +1,55 @@
-// Module ID: 5126
-// Function ID: 44455
+// Module ID: 5129
+// Function ID: 44474
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4991, 3771, 5130, 1327, 5131, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 5126 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5129 (_createForOfIteratorHelperLoose)
+import { EmojiDisambiguations } from "_isNativeReflectConstruct";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -101,19 +103,19 @@ function getEmoji(guildId) {
       byId = value.getById(emojiId);
     }
     let byName = byId;
-    const tmp6 = byId != value;
+    tmp6 = byId != value;
   } else {
     byName = null;
     if (byId != emojiName) {
-      byName = importDefault(dependencyMap[1]).getByName(emojiName);
-      const obj2 = importDefault(dependencyMap[1]);
+      byName = importDefault(3771).getByName(emojiName);
+      const obj2 = importDefault(3771);
     }
   }
 }
 function buildGuildProfileTraitsFromServer(guildId) {
   let iter3;
   let position;
-  const array = new Array(require(dependencyMap[2]).MAX_TRAITS);
+  const array = new Array(require(5130) /* MAX_TRAITS */.MAX_TRAITS);
   const fillResult = array.fill(closure_4);
   const tmp2 = _createForOfIteratorHelperLoose(arg1);
   const iter = tmp2();
@@ -123,16 +125,16 @@ function buildGuildProfileTraitsFromServer(guildId) {
       let value = iter2.value;
       let tmp3 = value.position < 0;
       if (!tmp3) {
-        let tmp4 = closure_0;
-        let tmp5 = closure_2;
-        tmp3 = value.position >= closure_0(closure_2[2]).MAX_TRAITS;
+        let tmp4 = require;
+        let tmp5 = dependencyMap;
+        tmp3 = value.position >= require(5130) /* MAX_TRAITS */.MAX_TRAITS;
       }
       if (!tmp3) {
         let obj = { label: value.label };
-        let tmp6 = closure_7;
+        let tmp6 = getEmoji;
         obj = { guildId };
         ({ emoji_id: obj3.emojiId, emoji_name: obj3.emojiName, position } = value);
-        let tmp7 = closure_7(obj);
+        let tmp7 = getEmoji(obj);
         let tmp8;
         if (null != tmp7) {
           tmp8 = tmp7;
@@ -200,14 +202,12 @@ function buildGuildProfileFromServer(profile) {
   ({ tag: obj.tag, badge: obj.badge, badge_color_primary: obj.badgeColorPrimary, badge_color_secondary: obj.badgeColorSecondary, badge_hash: obj.badgeHash, premium_subscription_count: obj.premiumSubscriberCount, premium_tier: obj.premiumTier } = profile);
   return reduced;
 }
-const EmojiDisambiguations = require(dependencyMap[0]).EmojiDisambiguations;
 let closure_4 = { label: "" };
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/guild_profile/GuildProfileBuilders.tsx");
+const result = require("MAX_TRAITS").fileFinishedImporting("modules/guild_profile/GuildProfileBuilders.tsx");
 
 export { buildGuildProfileFromServer };
 export const buildGuildProfileUpdateForServer = function buildGuildProfileUpdateForServer(name) {
-  const obj = {};
+  let obj = {};
   if (null != name.name) {
     obj.name = name.name;
   }
@@ -261,7 +261,7 @@ export const buildGuildProfileUpdateForServer = function buildGuildProfileUpdate
       }
       return tmp2;
     });
-    obj.traits = mapped.filter(require(dependencyMap[3]).isNotNullish);
+    obj.traits = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
   }
   if (null != name.gameApplicationIds) {
     obj.game_application_ids = name.gameApplicationIds;
@@ -323,7 +323,7 @@ export const buildGuildProfileFromInvite = function buildGuildProfileFromInvite(
         num2 = approximate_member_count;
       }
       obj.memberCount = num2;
-      obj.visibility = require(dependencyMap[4]).GuildProfileVisibility.NOT_SPECIFIED;
+      obj.visibility = require(5131) /* GuildProfileVisibility */.GuildProfileVisibility.NOT_SPECIFIED;
       obj.traits = [];
       obj.gameApplicationIds = [];
       obj.gameActivity = {};

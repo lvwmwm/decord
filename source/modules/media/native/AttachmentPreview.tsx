@@ -1,28 +1,37 @@
-// Module ID: 9829
-// Function ID: 76234
+// Module ID: 9836
+// Function ID: 76275
 // Name: AttachmentIcon
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 9837, 9838, 9839, 9840, 9841, 9842, 9843, 9844, 9845, 9846, 9847, 9848, 9849, 9850, 4670, 4126, 477, 5085, 1273, 9851, 8302, 2]
 // Exports: default
 
-// Module 9829 (AttachmentIcon)
+// Module 9836 (AttachmentIcon)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 class AttachmentIcon {
   constructor(arg0) {
     fileName = global.fileName;
-    arg1 = fileName;
     items = [];
     items[0] = fileName;
-    tmp = closure_8();
+    tmp = c8();
     obj = {
       style: tmp.attachmentFileIcon,
       source: Object.useMemo(() => {
-            const obj = fileName(closure_2[19]);
+            const obj = fileName(outer1_2[19]);
             let str = "";
             if (null != fileName) {
               str = fileName;
             }
-            let tmp = closure_9[obj.classifyFileName(obj, str)];
+            let tmp = outer1_9[obj.classifyFileName(obj, str)];
             if (null == tmp) {
-              tmp = callback(closure_2[16]);
+              tmp = outer1_1(outer1_2[16]);
             }
             return tmp;
           }, items)
@@ -45,11 +54,11 @@ function FilenameText(fileName) {
     tmp5 = "" !== fileName;
   }
   if (tmp5) {
-    obj = { style: tmp.attachmentFileName, children: fileName };
-    tmp5 = callback(arg1(dependencyMap[20]).Text, obj);
+    obj = { style: tmp.attachmentFileName, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: fileName };
+    tmp5 = callback(require(4126) /* Text */.Text, obj);
   }
   const items = [tmp5, ];
-  const obj1 = { style: tmp.attachmentFileName };
+  const obj1 = { style: tmp.attachmentFileName, lineClamp: 1, variant: "text-xs/medium", color: "text-muted" };
   let str2 = "UNKNOWN";
   if (null != match) {
     str2 = "UNKNOWN";
@@ -59,7 +68,7 @@ function FilenameText(fileName) {
     }
   }
   obj1.children = str2;
-  items[1] = callback(arg1(dependencyMap[20]).Text, obj1);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items;
   return closure_7(closure_5, obj);
 }
@@ -75,19 +84,16 @@ function DefaultAttachmentPreview(fileName) {
   obj.children = items1;
   return callback2(closure_5, obj);
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let obj1 = arg1(dependencyMap[3]);
+({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 let obj = {};
-obj = { 9223372036854775807: "<string:4178771970>", 0: "<string:4132503553>", 0: "<string:1262555629>", 9223372036854775807: "<string:1912602980>", 0: "toString", 9223372036854775807: "resolve", 0: "<string:1236288001>", borderRadius: importDefault(dependencyMap[4]).radii.sm, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj = { flexDirection: "row", alignItems: "center", overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, height: 75, padding: 12, flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
 obj.fileInfoAttachmentPreviewFile = obj;
-obj.attachmentFileIcon = {};
-obj.attachmentFileName = {};
-obj.videoIcon = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
-let closure_8 = obj1.createStyles(obj);
-obj1 = { archive: importDefault(dependencyMap[5]), acrobat: importDefault(dependencyMap[6]), ae: importDefault(dependencyMap[7]), ai: importDefault(dependencyMap[8]), audio: importDefault(dependencyMap[9]), code: importDefault(dependencyMap[10]), document: importDefault(dependencyMap[11]), image: importDefault(dependencyMap[12]), photoshop: importDefault(dependencyMap[13]), sketch: importDefault(dependencyMap[14]), spreadsheet: importDefault(dependencyMap[15]), unknown: importDefault(dependencyMap[16]), video: importDefault(dependencyMap[17]), webcode: importDefault(dependencyMap[18]) };
+obj.attachmentFileIcon = { height: 32, width: 24 };
+obj.attachmentFileName = { paddingRight: 4, paddingLeft: 4, maxWidth: 136 };
+obj.videoIcon = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, alignItems: "center", justifyContent: "center" };
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
+_createForOfIteratorHelperLoose = { archive: require("registerAsset"), acrobat: require("registerAsset"), ae: require("registerAsset"), ai: require("registerAsset"), audio: require("registerAsset"), code: require("registerAsset"), document: require("registerAsset"), image: require("registerAsset"), photoshop: require("registerAsset"), sketch: require("registerAsset"), spreadsheet: require("registerAsset"), unknown: require("registerAsset"), video: require("registerAsset"), webcode: require("registerAsset") };
 let closure_10 = importAllResult.memo((borderRadius) => {
   let fileName;
   let height;
@@ -106,23 +112,23 @@ let closure_10 = importAllResult.memo((borderRadius) => {
     isMatch = obj2.test(fileName);
   }
   if (isMatch) {
-    let isIOSResult = arg1(dependencyMap[21]).isIOS();
+    let isIOSResult = require(477) /* set */.isIOS();
     if (isIOSResult) {
       isIOSResult = uri.startsWith("ph://");
     }
     if (!isIOSResult) {
-      let isAndroidResult = arg1(dependencyMap[21]).isAndroid();
+      let isAndroidResult = require(477) /* set */.isAndroid();
       if (isAndroidResult) {
         isAndroidResult = uri.startsWith("content://");
       }
       isIOSResult = isAndroidResult;
-      const obj5 = arg1(dependencyMap[21]);
+      const obj5 = require(477) /* set */;
     }
     isMatch = isIOSResult;
-    const obj4 = arg1(dependencyMap[21]);
+    const obj4 = require(477) /* set */;
   }
   obj = { style: items };
-  const items = [obj, style, { overflow: "hidden" }];
+  items = [obj, style, { overflow: "hidden" }];
   if (isMatch) {
     const obj1 = {};
     const items1 = [obj, style];
@@ -130,7 +136,7 @@ let closure_10 = importAllResult.memo((borderRadius) => {
     obj1.source = obj;
     obj1.resizeMode = "cover";
     obj1.enableAnimation = true;
-    obj.children = tmp10(importDefault(dependencyMap[22]), obj1);
+    obj.children = tmp10(importDefault(5085), obj1);
     let tmp13 = obj;
   } else {
     obj2 = {};
@@ -138,13 +144,12 @@ let closure_10 = importAllResult.memo((borderRadius) => {
     obj2.style = items2;
     obj2.source = obj;
     obj2.localImageSource = obj;
-    obj.children = tmp10(arg1(dependencyMap[23]).ThumbnailImage, obj2);
+    obj.children = tmp10(require(1273) /* Button */.ThumbnailImage, obj2);
     tmp13 = obj;
   }
   return closure_6(closure_5, tmp13);
 });
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/media/native/AttachmentPreview.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/media/native/AttachmentPreview.tsx");
 
 export default function AttachmentPreview(height) {
   let borderRadius;
@@ -163,7 +168,7 @@ export default function AttachmentPreview(height) {
   }
   ({ fileName, borderRadius, maxFileWidth } = height);
   if (borderRadius === undefined) {
-    borderRadius = importDefault(dependencyMap[4]).radii.sm;
+    borderRadius = importDefault(689).radii.sm;
   }
   let flag = height.showPlayOnVideoPreview;
   if (flag === undefined) {
@@ -181,31 +186,31 @@ export default function AttachmentPreview(height) {
     let tmp10 = callback(closure_10, obj);
   } else {
     if (!isVideo) {
-      let obj2 = arg1(dependencyMap[21]);
+      let obj2 = require(477) /* set */;
       tmp10 = defaultPreview;
       if (isVideo) {
-        let obj3 = arg1(dependencyMap[21]);
+        let obj3 = require(477) /* set */;
         tmp10 = defaultPreview;
         if (obj3.isIOS()) {
           obj = { style };
-          let obj1 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+          let obj1 = { style: null, source: null, muted: true, paused: true, resizeMode: "cover", preventsDisplaySleepDuringVideoPlayback: false };
           obj2 = { height: num, width };
           obj1.style = obj2;
           obj3 = { uri };
           obj1.source = obj3;
-          obj.children = callback(arg1(dependencyMap[25]).VideoComponent, obj1);
+          obj.children = callback(require(8302) /* _isNativeReflectConstruct */.VideoComponent, obj1);
           tmp10 = callback(closure_5, obj);
         }
       }
     } else {
-      obj1 = arg1(dependencyMap[21]);
+      obj1 = require(477) /* set */;
     }
     if (flag) {
       const obj4 = { style };
       const obj5 = { uri, width, height: num, borderRadius, style, fileName };
       const items = [callback(closure_10, obj5), ];
       const obj6 = { style: tmp5.videoIcon };
-      tmp5 = callback(arg1(dependencyMap[24]).CirclePlayIcon, {});
+      tmp5 = callback(require(9851) /* CirclePlayIcon */.CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
       obj6.children = tmp5;
       items[1] = callback(closure_5, obj6);
       obj4.children = items;

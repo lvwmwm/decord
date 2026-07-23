@@ -1,9 +1,16 @@
-// Module ID: 6839
-// Function ID: 54072
+// Module ID: 6844
+// Function ID: 54104
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4351, 6835, 566, 686, 2]
 
-// Module 6839 (_isNativeReflectConstruct)
+// Module 6844 (_isNativeReflectConstruct)
+import timeoutAttachmentsAndEmbedsForMessage from "timeoutAttachmentsAndEmbedsForMessage";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -19,12 +26,12 @@ function createCompositeKey(channel_id) {
 function handleSearchMessagesSuccess(data) {
   data = data.data;
   let closure_7 = {};
-  const item = data.forEach((messages) => {
+  let item = data.forEach((messages) => {
     messages = messages.messages;
-    const item = messages.forEach((arr) => {
+    let item = messages.forEach((arr) => {
       const item = arr.forEach((message) => {
-        const tmp = callback2(message);
-        closure_7[tmp] = callback(closure_1[5]).createMessageRecord(message);
+        const tmp = outer3_9(message);
+        closure_7[tmp] = outer3_0(outer3_1[5]).createMessageRecord(message);
       });
     });
   });
@@ -32,25 +39,20 @@ function handleSearchMessagesSuccess(data) {
 function reset() {
   let closure_7 = {};
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class ExplicitMediaSearchStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ExplicitMediaSearchStore);
-      obj = closure_5(ExplicitMediaSearchStore);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      tmp = outer1_2(this, ExplicitMediaSearchStore);
+      obj = outer1_5(ExplicitMediaSearchStore);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -59,20 +61,19 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ExplicitMediaSearchStore;
   callback2(ExplicitMediaSearchStore, Store);
   const items = [
     {
       key: "getMessage",
       value(id, channel_id) {
-        return closure_7[closure_9(undefined, { id, channel_id })];
+        return outer1_7[outer1_9(undefined, { id, channel_id })];
       }
     }
   ];
   return callback(ExplicitMediaSearchStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "SearchMessageStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
@@ -82,10 +83,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
         const tmp2 = createCompositeKey(message);
         let flag = null != tmp4;
         if (flag) {
-          let obj = arg1(dependencyMap[5]);
+          let obj = require(4351) /* createMinimalMessageRecord */;
           obj = {};
           ({ attachments: obj2.attachments, embeds: obj2.embeds } = message);
-          closure_7[tmp2] = obj.updateMessageRecord(tmp4, obj);
+          dependencyMap[tmp2] = obj.updateMessageRecord(tmp4, obj);
           flag = true;
         }
         return flag;
@@ -101,12 +102,12 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
   },
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function handleScanTimeout(id) {
     const tmp = createCompositeKey({ id: id.messageId, channel_id: id.channelId });
-    if (null != closure_7[tmp]) {
-      closure_7[tmp] = arg1(dependencyMap[6]).handleExplicitMediaScanTimeoutForMessage(tmp2);
-      const obj2 = arg1(dependencyMap[6]);
+    if (null != dependencyMap[tmp]) {
+      dependencyMap[tmp] = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.handleExplicitMediaScanTimeoutForMessage(tmp2);
+      const obj2 = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */;
     }
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaSearchStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaSearchStore.tsx");
 
 export default tmp2;

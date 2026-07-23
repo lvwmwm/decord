@@ -1,15 +1,15 @@
-// Module ID: 9329
-// Function ID: 72921
+// Module ID: 9336
+// Function ID: 72962
 // Name: getSoundmojiSendExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getSoundmojiSendExperiment, useSoundmojiEmojiPickerSectionExperiment, useSoundmojiSendExperiment
 
-// Module 9329 (getSoundmojiSendExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: "5f09a79d208de30c6568041c7b77048f", DateToSystemTimezoneSetter: "img_search_empty_dark", defaultConfig: { channelId: true, allowLinks: true }, variations: { [1]: { channelId: "<string:1040334421>", allowLinks: "<string:1040334338>" }, [2]: { channelId: null, allowLinks: null } } };
-let closure_0 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/premium/sounds/soundmoji/SoundmojiSendingExperiment.tsx");
+// Module 9336 (getSoundmojiSendExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-03-soundmoji-sending", kind: "user", defaultConfig: { enabled: false, showSoundmojiInEmojiPicker: false }, variations: { [1]: { enabled: true, showSoundmojiInEmojiPicker: false }, [2]: { enabled: true, showSoundmojiInEmojiPicker: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/premium/sounds/soundmoji/SoundmojiSendingExperiment.tsx");
 
 export const getSoundmojiSendExperiment = function getSoundmojiSendExperiment(location) {
   return closure_0.getConfig({ location: location.location }).enabled;

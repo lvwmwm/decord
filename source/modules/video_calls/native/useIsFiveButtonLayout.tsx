@@ -1,20 +1,22 @@
-// Module ID: 10542
-// Function ID: 82377
+// Module ID: 10552
+// Function ID: 82427
 // Name: useIsFiveButtonLayout
-// Dependencies: []
+// Dependencies: [1348, 1838, 566, 10214, 10553, 10554, 5652, 2]
 // Exports: useIsFiveButtonLayout
 
-// Module 10542 (useIsFiveButtonLayout)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/video_calls/native/useIsFiveButtonLayout.tsx");
+// Module 10552 (useIsFiveButtonLayout)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/video_calls/native/useIsFiveButtonLayout.tsx");
 
 export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
-  const arg1 = id;
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => channel.getChannel(arg0));
-  const obj = arg1(dependencyMap[2]);
-  let isConnectedToVoiceChannel = arg1(dependencyMap[3]).useIsConnectedToVoiceChannel(stateFromStores);
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_3.getChannel(closure_0));
+  const obj = _require(566);
+  let isConnectedToVoiceChannel = _require(10214).useIsConnectedToVoiceChannel(stateFromStores);
   let guild_id;
   if (null != stateFromStores) {
     guild_id = stateFromStores.guild_id;
@@ -25,7 +27,7 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   }
   const importDefault = tmp3;
   let guild_id1;
-  const obj3 = arg1(dependencyMap[3]);
+  const obj3 = _require(10214);
   if (null != stateFromStores) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -37,11 +39,11 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (null != stateFromStores) {
     id = stateFromStores.id;
   }
-  const tmp4 = importDefault(dependencyMap[4]);
-  const tmp4Result = importDefault(dependencyMap[4])(tmp6, id);
-  const items1 = [closure_4];
+  const tmp4 = importDefault(10553);
+  const tmp4Result = importDefault(10553)(tmp6, id);
+  const items1 = [_createForOfIteratorHelperLoose];
   const items2 = [tmp3];
-  const stateFromStores1 = arg1(dependencyMap[2]).useStateFromStores(items1, () => guild.getGuild(tmp3), items2);
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_4.getGuild(closure_1), items2);
   if (null != stateFromStores1) {
     const afkChannelId = stateFromStores1.afkChannelId;
   }
@@ -51,12 +53,12 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   }
   let tmp11 = null != isGuildVoiceResult && isGuildVoiceResult;
   let id1;
-  const obj4 = arg1(dependencyMap[2]);
+  const obj4 = _require(566);
   if (null != stateFromStores) {
     id1 = stateFromStores.id;
   }
-  const tmp12 = importDefault(dependencyMap[5]);
-  const tmp12Result = importDefault(dependencyMap[5])(id1);
+  const tmp12 = importDefault(10554);
+  const tmp12Result = importDefault(10554)(id1);
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp4Result;
   }

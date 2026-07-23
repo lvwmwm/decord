@@ -1,16 +1,15 @@
-// Module ID: 8269
-// Function ID: 65235
+// Module ID: 8275
+// Function ID: 65272
 // Name: zustandStore
-// Dependencies: []
+// Dependencies: [3998, 8276, 2]
 // Exports: removeSpoiler, setMediaViewerSources, toggleSpoiler
 
-// Module 8269 (zustandStore)
-const zustandStore = require(dependencyMap[0]).createZustandStore(() => {
+// Module 8275 (zustandStore)
+const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => {
   const obj = { sources: [], spoilerIndexes: new Set() };
   return obj;
 });
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/media_viewer/native/useMediaViewerSources.tsx");
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/useMediaViewerSources.tsx");
 
 export const MediaViewerSourcesStore = zustandStore;
 export const setMediaViewerSources = function setMediaViewerSources(arg0) {
@@ -20,12 +19,9 @@ export const setMediaViewerSources = function setMediaViewerSources(arg0) {
   if (initialIndex === undefined) {
     initialIndex = null;
   }
-  const require = initialIndex;
-  let zustandStore;
+  let set;
   const items = [];
-  const dependencyMap = items;
-  const set = new Set();
-  zustandStore = set;
+  set = new Set();
   const item = sources.forEach((closure_1) => {
     const flattenSourceResult = initialIndex(items[1]).flattenSource(closure_1);
     let tmp2 = null != flattenSourceResult;
@@ -41,7 +37,7 @@ export const setMediaViewerSources = function setMediaViewerSources(arg0) {
     }
     items.push(closure_1);
   });
-  zustandStore.setState({ sources: items, spoilerIndexes: set });
+  set.setState({ sources: items, spoilerIndexes: set });
 };
 export const removeSpoiler = function removeSpoiler(index) {
   const field = zustandStore.getField("spoilerIndexes");

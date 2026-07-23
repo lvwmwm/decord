@@ -1,53 +1,59 @@
-// Module ID: 10843
-// Function ID: 84197
+// Module ID: 10853
+// Function ID: 84246
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 5, 6, 7, 99, 100, 2]
 // Exports: cachedFunction, clearObject, isPlainObjectEmpty, promiseThrottle
 
-// Module 10843 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10853 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _classPrivateFieldKey from "_classPrivateFieldKey";
+import set from "set";
+import _defineProperties from "_defineProperties";
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let _slicedToArray = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _slicedToArray = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (_classPrivateFieldKey >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        _classPrivateFieldKey = tmp3 + 1;
+        obj.value = length[+_classPrivateFieldKey];
       }
       return obj;
     };
@@ -105,29 +111,25 @@ function areArraysShallowlyEqual(arg0, arg1) {
     return false;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5])("promises");
-const tmp2 = () => {
+let closure_5 = require("_classPrivateFieldKey")("promises");
+let tmp2 = (() => {
   class PromiseDeduper {
     constructor() {
-      tmp = closure_2(this, PromiseDeduper);
+      tmp = outer1_2(this, PromiseDeduper);
       obj = { writable: true };
       map = new Map();
       obj.value = map;
-      definePropertyResult = Object.defineProperty(this, closure_5, obj);
+      definePropertyResult = Object.defineProperty(this, outer1_5, obj);
       return;
     }
   }
-  let closure_0 = PromiseDeduper;
   let obj = {
     key: "one",
     value(arg0, arg1) {
       let obj = arg2;
-      const self = this;
+      let self = this;
+      self = this;
+      let _classPrivateFieldKey = arg0;
       if (arg2 === undefined) {
         obj = {};
       }
@@ -136,25 +138,25 @@ const tmp2 = () => {
         flag = false;
       }
       let cleanupPromise;
-      const value = callback2(self, closure_5)[closure_5].get(arg0);
+      const value = outer1_4(self, outer1_5)[outer1_5].get(arg0);
       if (!flag) {
         if (null != value) {
           return value;
         }
       }
-      const obj2 = callback2(self, closure_5)[closure_5];
+      let obj2 = outer1_4(self, outer1_5)[outer1_5];
       cleanupPromise = arg1().finally(() => {
-        if (obj.get(arg0) === cleanupPromise) {
-          callback(self, closure_5)[closure_5].delete(arg0);
-          const obj2 = callback(self, closure_5)[closure_5];
+        if (obj.get(_classPrivateFieldKey) === cleanupPromise) {
+          outer2_4(self, outer2_5)[outer2_5].delete(_classPrivateFieldKey);
+          const obj2 = outer2_4(self, outer2_5)[outer2_5];
         }
       });
       const promise = arg1();
-      const result = callback2(self, closure_5)[closure_5].set(arg0, cleanupPromise);
+      const result = outer1_4(self, outer1_5)[outer1_5].set(arg0, cleanupPromise);
       return cleanupPromise;
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "many",
     value(items) {
@@ -168,7 +170,7 @@ const tmp2 = () => {
         flag = false;
       }
       let map;
-      let closure_2;
+      let set;
       items = [...new Set(items)];
       const items1 = [];
       map = new Map();
@@ -176,9 +178,9 @@ const tmp2 = () => {
       if (0 < items.length) {
         while (true) {
           let tmp2 = items[num];
-          let tmp3 = callback2;
-          let tmp4 = closure_5;
-          let obj3 = callback2(self, closure_5)[closure_5];
+          let tmp3 = outer1_4;
+          let tmp4 = outer1_5;
+          let obj3 = outer1_4(self, outer1_5)[outer1_5];
           let value = obj3.get(tmp2);
           if (!flag) {
             if (null != value) {
@@ -194,43 +196,42 @@ const tmp2 = () => {
         }
       }
       if (items1.length > 0) {
-        closure_2 = arg1(items1);
+        set = arg1(items1);
         while (true) {
           function _loop(arg0) {
-            const self = arg0;
+            let _slicedToArray = arg0;
             const cleanupPromise = promise.then((has) => {
-              if (has.has(has)) {
-                return has.get(has);
+              if (has.has(_slicedToArray)) {
+                return has.get(_slicedToArray);
               } else {
                 const _Error = Error;
                 const _String = String;
                 const _HermesInternal = HermesInternal;
-                const error = new Error("Promise deduper result missing key: " + String(has));
+                const error = new Error("Promise deduper result missing key: " + String(_slicedToArray));
                 throw error;
               }
             }).finally(() => {
-              if (obj.get(arg0) === cleanupPromise) {
-                callback(arg0, closure_5)[closure_5].delete(arg0);
-                const obj2 = callback(arg0, closure_5)[closure_5];
+              if (obj.get(_slicedToArray) === cleanupPromise) {
+                outer3_4(_slicedToArray, outer3_5)[outer3_5].delete(_slicedToArray);
+                const obj2 = outer3_4(_slicedToArray, outer3_5)[outer3_5];
               }
             });
-            const map = cleanupPromise;
             const nextPromise = promise.then((has) => {
-              if (has.has(has)) {
-                return has.get(has);
+              if (has.has(_slicedToArray)) {
+                return has.get(_slicedToArray);
               } else {
                 const _Error = Error;
                 const _String = String;
                 const _HermesInternal = HermesInternal;
-                const error = new Error("Promise deduper result missing key: " + String(has));
+                const error = new Error("Promise deduper result missing key: " + String(_slicedToArray));
                 throw error;
               }
             });
-            const result = callback(self, closure_5)[closure_5].set(arg0, cleanupPromise);
-            const result1 = map.set(arg0, cleanupPromise);
+            const result = outer2_4(_slicedToArray, outer2_5)[outer2_5].set(arg0, cleanupPromise);
+            const result1 = cleanupPromise.set(arg0, cleanupPromise);
           }
-          let tmp11 = callback3;
-          let tmp12 = callback3(items1);
+          let tmp11 = outer1_6;
+          let tmp12 = outer1_6(items1);
           let tmp13 = tmp12;
           let iter = tmp12();
           let iter2 = iter;
@@ -244,28 +245,28 @@ const tmp2 = () => {
               let tmp17 = tmp12;
               let iter3 = tmp13();
               iter2 = iter3;
-              let done = iter3.done;
+              done = iter3.done;
             } while (!done);
           }
           break;
         }
       }
       const set = new Set(items);
-      return Promise.all(items.map(() => {
+      return Promise.all(items.map((() => {
         // CreateGeneratorClosureLongIndex (0x67)
-        let closure_0 = map(tmp);
+        let _slicedToArray = outer2_1(tmp);
         return function(arg0) {
           return callback(...arguments);
         };
-      }())).then((arg0) => {
+      })())).then((arg0) => {
         let done;
         const map = new Map();
-        const tmp = callback2(arg0);
+        const tmp = outer2_6(arg0);
         let iter = tmp();
         if (!iter.done) {
           do {
-            let tmp2 = closure_0;
-            let tmp3 = closure_0(iter.value, 2);
+            let tmp2 = PromiseDeduper;
+            let tmp3 = PromiseDeduper(iter.value, 2);
             let result = map.set(tmp3[0], tmp3[1]);
             let iter2 = tmp();
             iter = iter2;
@@ -278,57 +279,55 @@ const tmp2 = () => {
   };
   items[1] = obj;
   return callback(PromiseDeduper, items);
-}();
-const result = arg1(dependencyMap[6]).fileFinishedImporting("../discord_common/js/shared/utils/FunctionUtils.tsx");
+})();
+let result = require("_classCallCheck").fileFinishedImporting("../discord_common/js/shared/utils/FunctionUtils.tsx");
 
 export { areArraysShallowlyEqual };
 export function cachedFunction(arg0) {
-  let closure_0 = arg0;
-  let closure_1 = null;
-  let closure_2 = null;
+  let _slicedToArray = arg0;
+  let c1 = null;
+  let c2 = null;
   return (arg0) => {
     const items = [...arguments];
-    if (!callback(closure_1, items)) {
+    if (!outer1_8(items, items)) {
       const items1 = [];
       HermesBuiltin.arraySpread(items, 0);
-      let closure_2 = HermesBuiltin.apply(items1, undefined);
+      let set = HermesBuiltin.apply(items1, undefined);
     }
-    closure_1 = items;
-    return closure_2;
+    return set;
   };
 }
 export function promiseThrottle(arg0) {
   let num = arg1;
-  let closure_0 = arg0;
+  let _slicedToArray = arg0;
   if (arg1 === undefined) {
     num = 5000;
   }
-  let closure_1 = num;
-  let closure_2 = -1;
-  let closure_3 = null;
+  let c2 = -1;
+  let c3 = null;
   return () => {
-    let tmp = null == closure_3;
+    let tmp = null == _defineProperties;
     if (!tmp) {
       const _Date = Date;
-      tmp = Date.now() >= closure_2;
+      tmp = Date.now() >= set;
     }
     if (tmp) {
       const _Date2 = Date;
-      closure_2 = Date.now() + num;
-      closure_3 = arg0();
+      set = Date.now() + num;
+      _defineProperties = callback();
     }
-    return closure_3;
+    return _defineProperties;
   };
 }
 export const PromiseDeduper = tmp2;
 export const clearObject = function clearObject(obj) {
   for (const key10003 in arg0) {
-    let tmp = key10003;
+    let tmp3 = key10003;
     if (!arg0.hasOwnProperty(key10003)) {
       continue;
     } else {
-      delete r5[r6];
-      // continue
+      delete tmp[tmp2];
+      continue;
     }
     continue;
   }

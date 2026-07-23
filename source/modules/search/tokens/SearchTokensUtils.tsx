@@ -1,19 +1,18 @@
-// Module ID: 10074
-// Function ID: 77978
+// Module ID: 10082
+// Function ID: 78018
 // Name: ANSWER_IN_REGEX
-// Dependencies: []
+// Dependencies: [4118, 2]
 // Exports: makeRegexForOptionsWithNegation, validateForMapWithNegation
 
-// Module 10074 (ANSWER_IN_REGEX)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/search/tokens/SearchTokensUtils.tsx");
+// Module 10082 (ANSWER_IN_REGEX)
+const result = require("set").fileFinishedImporting("modules/search/tokens/SearchTokensUtils.tsx");
 
 export const ANSWER_IN_REGEX = /(?:\s*#?((?:"(\\\\|\\"|[^\\"])*")|(?:[^\s]+)))/i;
 export const GENERIC_REGEX = /(?:\s*([^\s]+))/;
 export const makeRegexForOptionsWithNegation = function makeRegexForOptionsWithNegation(items) {
   items = [...items];
   const sorted = items.sort((arg0, arg1) => arg1.length - arg0.length);
-  const mapped = sorted.map((arg0) => callback(closure_1[0]).escape(arg0));
+  const mapped = sorted.map((arg0) => outer1_0(outer1_1[0]).escape(arg0));
   const regExp = new RegExp("(?:\\s*(-?(?:" + mapped.join("|") + ")))", "i");
   return regExp;
 };

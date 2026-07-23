@@ -1,9 +1,16 @@
-// Module ID: 8874
-// Function ID: 69973
+// Module ID: 8881
+// Function ID: 70014
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 8882, 21, 566, 686, 2]
 
-// Module 8874 (_isNativeReflectConstruct)
+// Module 8881 (_isNativeReflectConstruct)
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +20,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
 let closure_8 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class VerifiedKeyStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, VerifiedKeyStore);
-      obj = closure_6(VerifiedKeyStore);
-      tmp2 = closure_5;
-      if (closure_9()) {
+      tmp = outer1_3(this, VerifiedKeyStore);
+      obj = outer1_6(VerifiedKeyStore);
+      tmp2 = outer1_5;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,7 +42,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = VerifiedKeyStore;
   callback2(VerifiedKeyStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -52,13 +53,14 @@ let tmp2 = (PersistedStore) => {
       if (null == users) {
         users = {};
       }
+      const outer1_8 = users;
     }
   };
   const items = [obj, , , , , ];
   obj = {
     key: "getState",
     value() {
-      return { users: closure_8 };
+      return { users: outer1_8 };
     }
   };
   items[1] = obj;
@@ -66,8 +68,8 @@ let tmp2 = (PersistedStore) => {
     key: "getKeyTrustedAt",
     value(arg0, uint8Array) {
       let tmp;
-      const obj = VerifiedKeyStore(closure_2[5]);
-      if (null != closure_8[arg0]) {
+      const obj = VerifiedKeyStore(outer1_2[5]);
+      if (null != outer1_8[arg0]) {
         tmp = tmp2[obj.serializeKey(obj, uint8Array)];
       }
       return tmp;
@@ -83,43 +85,43 @@ let tmp2 = (PersistedStore) => {
   items[4] = {
     key: "getUserIds",
     value() {
-      return callback(closure_2[6]).keys(closure_8);
+      return outer1_1(outer1_2[6]).keys(outer1_8);
     }
   };
   items[5] = {
     key: "getUserVerifiedKeys",
     value(arg0) {
-      return closure_8[arg0];
+      return outer1_8[arg0];
     }
   };
   return callback(VerifiedKeyStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "VerifiedKeyStore";
 tmp2.persistKey = "VerifiedKeyStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   SECURE_FRAMES_VERIFIED_KEY_CREATE: function handleSecureFramesVerifiedKeyCreate(arg0) {
     let key;
     let userId;
     ({ userId, key } = arg0);
-    let obj = closure_8[userId];
+    let obj = dependencyMap[userId];
     if (null == obj) {
       obj = {};
     }
-    closure_8[userId] = obj;
+    dependencyMap[userId] = obj;
     const uint8Array = new Uint8Array(key);
-    const obj2 = arg1(dependencyMap[5]);
-    obj[arg1(dependencyMap[5]).serializeKey(uint8Array)] = Date.now();
+    const obj2 = require(8882) /* set */;
+    obj[require(8882) /* set */.serializeKey(uint8Array)] = Date.now();
   },
   SECURE_FRAMES_VERIFIED_KEY_DELETE: function handleSecureFramesVerifiedKeyDelete(serializedKey) {
     serializedKey = serializedKey.serializedKey;
-    if (null == closure_8[serializedKey.userId]) {
+    if (null == dependencyMap[serializedKey.userId]) {
       return false;
     } else {
-      delete r5[r0];
+      delete tmp4[tmp];
       const _Object = Object;
       let flag = false;
-      if (0 === Object.keys(tmp).length) {
-        delete r2[r3];
+      if (0 === Object.keys(tmp5).length) {
+        delete tmp2[tmp3];
         flag = true;
       }
       if (!serializedKey) {
@@ -129,12 +131,12 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     }
   },
   SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: function handleSecureFramesUserVerifiedKeysDelete(arg0) {
-    if (null != closure_8[arg0.userId]) {
-      delete r1[r2];
+    if (null != dependencyMap[arg0.userId]) {
+      delete tmp[tmp2];
     }
-    return null != closure_8[arg0.userId];
+    return null != dependencyMap[arg0.userId];
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/rtc/VerifiedKeyStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/rtc/VerifiedKeyStore.tsx");
 
 export default tmp2;

@@ -1,10 +1,14 @@
-// Module ID: 9768
-// Function ID: 75975
+// Module ID: 9775
+// Function ID: 76016
 // Name: getMidpointColor
-// Dependencies: []
+// Dependencies: [57, 4122, 7893, 6784, 624, 2]
 // Exports: default
 
-// Module 9768 (getMidpointColor)
+// Module 9775 (getMidpointColor)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getMidpointColor(toRgb, toRgb2) {
   let tmp4;
   let tmp5;
@@ -15,9 +19,9 @@ function getMidpointColor(toRgb, toRgb2) {
   ({ r: arr[0], g: arr[1], b: arr[2] } = toRgbResult);
   const items1 = [, , ];
   ({ r: arr2[0], g: arr2[1], b: arr2[2] } = toRgbResult1);
-  const obj = toRgb2(dependencyMap[2]);
-  [tmp4, tmp5, tmp6] = callback(toRgb2(dependencyMap[2]).getValueInColorGradientByPercentage(items, items1, 50), 3);
-  return importDefault(dependencyMap[3])({ r, g, b });
+  const obj = require(7893) /* getProfileTheme */;
+  [tmp4, tmp5, tmp6] = callback(require(7893) /* getProfileTheme */.getValueInColorGradientByPercentage(items, items1, 50), 3);
+  return importDefault(6784)({ r, g, b });
 }
 function getBackgroundColors(dark) {
   if (0 !== arg1.length) {
@@ -61,23 +65,20 @@ function desaturate(toHsl) {
   let l;
   let s;
   ({ h, s, l } = toHsl.toHsl());
-  return importDefault(dependencyMap[3])({ h, s: s * arg1, l });
+  return importDefault(6784)({ h, s: s * arg1, l });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/createUseCollectiblesShopStyles.tsx");
+const result = require("getProfileTheme").fileFinishedImporting("modules/collectibles/createUseCollectiblesShopStyles.tsx");
 
 export default function createUseCollectiblesShopStyles(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return (backgroundColors) => {
-    let obj = backgroundColors(closure_2[4]);
-    const items = [closure_4];
-    const stateFromStores = obj.useStateFromStores(items, () => saturation.saturation);
-    backgroundColors = stateFromStores;
+    let obj = callback(outer1_2[4]);
+    const items = [outer1_4];
+    const stateFromStores = obj.useStateFromStores(items, () => outer2_4.saturation);
     if (null == backgroundColors) {
       return {};
     } else {
-      obj = { backgroundColors: callback(backgroundColors, backgroundColors.backgroundColors), buttonColors: callback2(backgroundColors, backgroundColors.buttonColors), confettiColors: backgroundColors.confettiColors };
+      obj = { backgroundColors: outer1_6(stateFromStores, backgroundColors.backgroundColors), buttonColors: outer1_7(stateFromStores, backgroundColors.buttonColors), confettiColors: backgroundColors.confettiColors };
       if (1 === stateFromStores) {
         obj = {};
         const merged = Object.assign(obj);
@@ -86,25 +87,25 @@ export default function createUseCollectiblesShopStyles(arg0) {
         obj1 = {};
         let tmp6;
         if (null != obj.backgroundColors) {
-          const obj2 = { primary: callback3(obj.backgroundColors.primary, stateFromStores), secondary: callback3(obj.backgroundColors.secondary, stateFromStores) };
+          const obj2 = { primary: outer1_8(obj.backgroundColors.primary, stateFromStores), secondary: outer1_8(obj.backgroundColors.secondary, stateFromStores) };
           let tmp3;
           if (null != obj.backgroundColors.tertiary) {
-            tmp3 = callback3(obj.backgroundColors.tertiary, stateFromStores);
+            tmp3 = outer1_8(obj.backgroundColors.tertiary, stateFromStores);
           }
           obj2.tertiary = tmp3;
-          obj2.border = callback3(obj.backgroundColors.border, stateFromStores);
-          obj2.label = callback3(obj.backgroundColors.label, stateFromStores);
+          obj2.border = outer1_8(obj.backgroundColors.border, stateFromStores);
+          obj2.label = outer1_8(obj.backgroundColors.label, stateFromStores);
           tmp6 = obj2;
         }
         obj1.backgroundColors = tmp6;
         let tmp7;
         if (null != obj.buttonColors) {
-          const obj3 = { primary: callback3(obj.buttonColors.primary, stateFromStores), secondary: callback3(obj.buttonColors.secondary, stateFromStores), text: callback3(obj.buttonColors.text, stateFromStores) };
+          const obj3 = { primary: outer1_8(obj.buttonColors.primary, stateFromStores), secondary: outer1_8(obj.buttonColors.secondary, stateFromStores), text: outer1_8(obj.buttonColors.text, stateFromStores) };
           tmp7 = obj3;
         }
         obj1.buttonColors = tmp7;
         const confettiColors = obj.confettiColors;
-        obj1.confettiColors = confettiColors.map((arg0) => callback(arg0, stateFromStores));
+        obj1.confettiColors = confettiColors.map((arg0) => outer2_8(arg0, stateFromStores));
       }
       return obj1;
     }

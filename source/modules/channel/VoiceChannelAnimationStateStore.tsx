@@ -1,61 +1,70 @@
-// Module ID: 12497
-// Function ID: 95755
+// Module ID: 12611
+// Function ID: 97911
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 3947, 4146, 566, 686, 2]
 
-// Module 12497 (_isNativeReflectConstruct)
+// Module 12611 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let _isNativeReflectConstruct = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _isNativeReflectConstruct = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,46 +102,46 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function clearAnimationTimer(arg0) {
-  if (null != closure_10[arg0]) {
+  if (null != dependencyMap[arg0]) {
     const _clearTimeout = clearTimeout;
-    clearTimeout(closure_10[arg0]);
-    delete r0[r1];
+    clearTimeout(dependencyMap[arg0]);
+    delete tmp[tmp2];
   }
 }
 function scheduleTransitionToGentleAmbient(arg0) {
-  let closure_0 = arg0;
+  let _isNativeReflectConstruct = arg0;
   clearAnimationTimer(arg0);
   closure_10[arg0] = setTimeout(() => {
-    if (null != closure_9[closure_0]) {
+    if (null != outer1_9[_isNativeReflectConstruct]) {
       const obj = {};
-      const merged = Object.assign(tmp);
-      obj["style"] = constants.GENTLE_AMBIENT;
-      closure_9[arg0] = obj;
-      closure_12.emitChange();
+      const merged = Object.assign(tmp3);
+      obj["style"] = outer1_8.GENTLE_AMBIENT;
+      outer1_9[_isNativeReflectConstruct] = obj;
+      outer1_12.emitChange();
     }
-    delete r1[r0];
+    delete tmp2[tmp];
   }, 2000);
 }
 function resetAllState() {
   let length;
-  const keys = Object.keys(closure_10);
+  const keys = Object.keys(dependencyMap);
   let num = 0;
   if (0 < keys.length) {
     do {
       let _clearTimeout = clearTimeout;
-      let tmp = closure_10;
-      let clearTimeoutResult = clearTimeout(closure_10[keys[num]]);
+      let tmp = dependencyMap;
+      let clearTimeoutResult = clearTimeout(dependencyMap[keys[num]]);
       num = num + 1;
       length = keys.length;
     } while (num < length);
   }
-  closure_10 = {};
+  dependencyMap = {};
   let closure_9 = {};
 }
 function updateChannelAnimationState(arg0, arg1) {
   let userCount;
-  if (null != closure_9[arg0]) {
-    userCount = tmp.userCount;
+  if (null != table[arg0]) {
+    userCount = tmp3.userCount;
   }
   let num = 0;
   if (null != userCount) {
@@ -144,7 +153,7 @@ function updateChannelAnimationState(arg0, arg1) {
       let obj = {};
       obj.style = obj.GENTLE_AMBIENT_WITH_INTRO;
       obj.userCount = bound;
-      closure_9[arg0] = obj;
+      table[arg0] = obj;
       scheduleTransitionToGentleAmbient(arg0);
       let flag = true;
     }
@@ -155,22 +164,22 @@ function updateChannelAnimationState(arg0, arg1) {
       obj = {};
       obj.style = obj.HIGH_CONTRAST;
       obj.userCount = bound;
-      closure_9[arg0] = obj;
+      table[arg0] = obj;
       scheduleTransitionToGentleAmbient(arg0);
       flag = true;
     }
   }
   if (0 === bound) {
     clearAnimationTimer(arg0);
-    delete r4[r3];
+    delete tmp2[tmp];
     flag = true;
   } else {
-    flag = null != tmp && bound !== num;
+    flag = null != tmp3 && bound !== num;
     if (flag) {
       obj = {};
-      const merged = Object.assign(tmp);
+      const merged = Object.assign(tmp3);
       obj["userCount"] = bound;
-      closure_9[arg0] = obj;
+      table[arg0] = obj;
       flag = true;
     }
   }
@@ -179,31 +188,23 @@ function handleConnectionOpenOrLogout() {
   resetAllState();
   return true;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
-let closure_7 = importDefault(dependencyMap[7]);
 let obj = { GENTLE_AMBIENT: "GENTLE_AMBIENT", GENTLE_AMBIENT_WITH_INTRO: "GENTLE_AMBIENT_WITH_INTRO", HIGH_CONTRAST: "HIGH_CONTRAST" };
 let closure_9 = {};
 let closure_10 = {};
-let closure_11 = null;
-let tmp2 = (Store) => {
+let c11 = null;
+let tmp2 = ((Store) => {
   class VoiceChannelAnimationStateStoreClass {
     constructor() {
       self = this;
       tmp = VoiceChannelAnimationStateStoreClass(this, VoiceChannelAnimationStateStoreClass);
-      obj = closure_3(VoiceChannelAnimationStateStoreClass);
-      tmp2 = closure_2;
-      if (closure_13()) {
+      obj = outer1_3(VoiceChannelAnimationStateStoreClass);
+      tmp2 = outer1_2;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -212,12 +213,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = VoiceChannelAnimationStateStoreClass;
   callback2(VoiceChannelAnimationStateStoreClass, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, closure_6);
+      this.waitFor(outer1_7, outer1_6);
     }
   };
   const items = [obj, , ];
@@ -225,11 +225,11 @@ let tmp2 = (Store) => {
     key: "getAnimationStyle",
     value(arg0) {
       let style;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         style = tmp.style;
       }
       if (null == style) {
-        style = constants.GENTLE_AMBIENT;
+        style = outer1_8.GENTLE_AMBIENT;
       }
       return style;
     }
@@ -239,7 +239,7 @@ let tmp2 = (Store) => {
     key: "getUserCount",
     value(arg0) {
       let userCount;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         userCount = tmp.userCount;
       }
       let num = 0;
@@ -251,18 +251,15 @@ let tmp2 = (Store) => {
   };
   items[2] = obj;
   return callback(VoiceChannelAnimationStateStoreClass, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "VoiceChannelAnimationStateStore";
 obj = {
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     let iter3;
-    const guildId = guildId.getGuildId();
-    let tmp2 = guildId !== closure_11;
+    guildId = guildId.getGuildId();
+    let tmp2 = guildId !== guildId;
     if (tmp2) {
       tmp2 = null != guildId;
-    }
-    if (tmp2) {
-      closure_11 = guildId;
     }
     const obj = {};
     const tmp4 = _createForOfIteratorHelperLoose(voiceStates.voiceStates);
@@ -281,7 +278,7 @@ obj = {
               num = tmp9;
             }
             obj[value.oldChannelId] = num - 1;
-            let tmp5 = tmp9;
+            tmp5 = tmp9;
           }
           tmp7 = tmp5;
           tmp8 = tmp6;
@@ -298,7 +295,7 @@ obj = {
         }
         iter3 = tmp4();
         tmp5 = tmp7;
-        let tmp6 = tmp8;
+        tmp6 = tmp8;
         iter2 = iter3;
       } while (!iter3.done);
     }
@@ -308,10 +305,10 @@ obj = {
     let flag2 = false;
     if (0 < entries.length) {
       do {
-        let tmp11 = closure_5;
-        let tmp12 = closure_5(entries[num3], 2);
-        let tmp13 = closure_19;
-        if (closure_19(tmp12[0], tmp12[1])) {
+        let tmp11 = callback3;
+        let tmp12 = callback3(entries[num3], 2);
+        let tmp13 = updateChannelAnimationState;
+        if (updateChannelAnimationState(tmp12[0], tmp12[1])) {
           flag = true;
         }
         num3 = num3 + 1;
@@ -322,12 +319,11 @@ obj = {
   },
   CHANNEL_SELECT: function handleChannelSelect(guildId) {
     guildId = guildId.guildId;
-    if (guildId === closure_11) {
+    if (guildId === guildId) {
       return false;
     } else if (null == guildId) {
       return false;
     } else {
-      closure_11 = guildId;
       resetAllState();
       let obj = {};
       const _Object2 = Object;
@@ -365,8 +361,9 @@ obj = {
   CONNECTION_OPEN: handleConnectionOpenOrLogout,
   LOGOUT: handleConnectionOpenOrLogout
 };
-tmp2 = new tmp2(importDefault(dependencyMap[9]), obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/channel/VoiceChannelAnimationStateStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let closure_12 = tmp2;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/channel/VoiceChannelAnimationStateStore.tsx");
 
 export default tmp2;
 export const AnimationStyle = obj;

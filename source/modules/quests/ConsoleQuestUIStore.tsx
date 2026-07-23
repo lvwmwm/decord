@@ -1,49 +1,54 @@
-// Module ID: 6938
-// Function ID: 55458
+// Module ID: 6943
+// Function ID: 55492
 // Name: useConsoleQuestUIStore
-// Dependencies: []
+// Dependencies: [621, 2]
 
-// Module 6938 (useConsoleQuestUIStore)
+// Module 6943 (useConsoleQuestUIStore)
+import keys from "keys";
+
 let closure_0 = [];
-const _module = require(dependencyMap[0]);
-const obj = _module.create((arg0, arg1) => {
+let obj = keys.create((arg0, arg1) => {
   let closure_0 = arg0;
-  const obj = {
+  let closure_1 = arg1;
+  let obj = {
     errorHintsByQuestId: new Map(),
     setErrorHints(questId, arg1) {
-      questId((errorHintsByQuestId) => {
-        if (0 === arg1.length) {
+      const callback = questId;
+      let closure_1 = arg1;
+      callback((errorHintsByQuestId) => {
+        if (0 === closure_1.length) {
           errorHintsByQuestId = errorHintsByQuestId.errorHintsByQuestId;
-          if (!errorHintsByQuestId.has(errorHintsByQuestId)) {
+          if (!errorHintsByQuestId.has(closure_0)) {
             return errorHintsByQuestId;
           }
         }
         errorHintsByQuestId = new Map(errorHintsByQuestId.errorHintsByQuestId);
-        if (0 === arg1.length) {
-          errorHintsByQuestId.delete(errorHintsByQuestId);
+        if (0 === closure_1.length) {
+          errorHintsByQuestId.delete(closure_0);
         } else {
           const items = [];
-          HermesBuiltin.arraySpread(arg1, 0);
-          const result = errorHintsByQuestId.set(errorHintsByQuestId, items);
+          HermesBuiltin.arraySpread(closure_1, 0);
+          const result = errorHintsByQuestId.set(closure_0, items);
         }
         return { errorHintsByQuestId };
       });
     },
     getErrorHints(arg0) {
-      const errorHintsByQuestId = arg1().errorHintsByQuestId;
+      const errorHintsByQuestId = callback2().errorHintsByQuestId;
       let value = errorHintsByQuestId.get(arg0);
       if (null == value) {
-        value = arg0;
+        value = closure_0;
       }
       return value;
     },
     clearErrorHints(arg0) {
-      arg0((errorHintsByQuestId) => {
+      const callback = arg0;
+      callback((errorHintsByQuestId) => {
         errorHintsByQuestId = errorHintsByQuestId.errorHintsByQuestId;
-        if (errorHintsByQuestId.has(errorHintsByQuestId)) {
+        if (errorHintsByQuestId.has(closure_0)) {
           const _Map = Map;
           const map = new Map(errorHintsByQuestId.errorHintsByQuestId);
-          map.delete(errorHintsByQuestId);
+          map.delete(closure_0);
           const obj = { errorHintsByQuestId: map };
           return obj;
         } else {
@@ -52,22 +57,24 @@ const obj = _module.create((arg0, arg1) => {
       });
     },
     clearErrorHintsByType(arg0, arg1) {
-      arg0((errorHintsByQuestId) => {
+      const callback = arg0;
+      let closure_1 = arg1;
+      callback((errorHintsByQuestId) => {
         errorHintsByQuestId = errorHintsByQuestId.errorHintsByQuestId;
-        const value = errorHintsByQuestId.get(errorHintsByQuestId);
+        const value = errorHintsByQuestId.get(closure_0);
         if (null == value) {
           return errorHintsByQuestId;
         } else {
-          const found = value.filter((type) => type.type !== closure_1);
+          const found = value.filter((type) => type.type !== outer1_1);
           if (found.length === value.length) {
             return errorHintsByQuestId;
           } else {
             const _Map = Map;
             const map = new Map(errorHintsByQuestId.errorHintsByQuestId);
             if (0 === found.length) {
-              map.delete(errorHintsByQuestId);
+              map.delete(closure_0);
             } else {
-              const result = map.set(errorHintsByQuestId, found);
+              const result = map.set(closure_0, found);
             }
             const obj = { errorHintsByQuestId: map };
             return obj;
@@ -77,13 +84,12 @@ const obj = _module.create((arg0, arg1) => {
     },
     reset() {
       const obj = { errorHintsByQuestId: new Map() };
-      arg0(obj);
+      callback(obj);
     }
   };
   return obj;
 });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/quests/ConsoleQuestUIStore.tsx");
+let result = require("set").fileFinishedImporting("modules/quests/ConsoleQuestUIStore.tsx");
 
 export default obj;
 export const useConsoleQuestUIStore = obj;

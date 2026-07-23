@@ -1,9 +1,16 @@
 // Module ID: 183
 // Function ID: 2626
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 162, 184, 187, 71]
 
 // Module 183 (_isNativeReflectConstruct)
+import ExceptionsManager from "ExceptionsManager";
+import parseErrorStack from "parseErrorStack";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,8 +25,8 @@ function reportException(jsEngine, isFatal) {
   if (null != jsEngine) {
     stack = jsEngine.stack;
   }
-  const sum = closure_12 + 1;
-  closure_12 = sum;
+  const sum = c12 + 1;
+  c12 = sum;
   let str = jsEngine.message;
   if (!str) {
     str = "";
@@ -42,7 +49,7 @@ function reportException(jsEngine, isFatal) {
     sum2 = str3 + sum1;
   }
   let obj = { jsEngine: jsEngine.jsEngine, rawStack: jsEngine.stack };
-  const merged = Object.assign({}, jsEngine[closure_11], obj);
+  const merged = Object.assign({}, jsEngine[RN$ErrorExtraDataKey], obj);
   let tmp8 = null != jsEngine.cause;
   if (tmp8) {
     tmp8 = "object" === typeof jsEngine.cause;
@@ -71,20 +78,20 @@ function reportException(jsEngine, isFatal) {
     componentStack = jsEngine.componentStack;
   }
   obj.componentStack = componentStack;
-  obj.stack = isFatal(dependencyMap[6]).default(stack);
+  obj.stack = require(184) /* parseErrorStack */.default(stack);
   obj.id = sum;
   obj.isFatal = isFatal;
   obj.extraData = merged;
   if (callback3) {
-    if (!closure_10) {
-      closure_10 = true;
-      closure_10 = false;
+    if (!c10) {
+      c10 = true;
+      c10 = false;
       if (arg2) {
         const _console = console;
         console.error(jsEngine);
       }
       if (isFatal) {
-        const _default = isFatal(dependencyMap[7]).default;
+        const _default = require(187) /* ExceptionsManager */.default;
         if (_default) {
           if (isFatal) {
             if (null != global.RN$notifyOfFatalException) {
@@ -96,7 +103,7 @@ function reportException(jsEngine, isFatal) {
       }
     }
   }
-  closure_10 = false;
+  c10 = false;
   throw __exception;
 }
 function reactConsoleErrorHandler() {
@@ -107,11 +114,11 @@ function reactConsoleErrorHandler() {
   }
   _errorOriginal.apply(console, arr);
   if (console.reportErrorsAsExceptions) {
-    if (!closure_13) {
+    if (!c13) {
       if (null == _global.RN$inExceptionHandler) {
         let error = arr[0];
         if (null == error) {
-          const _global = arg1(dependencyMap[8]).default;
+          _global = require(71) /* createStringifySafeWithLimits */.default;
           const mapped = arr.map((arg0) => {
             let tmp = arg0;
             if ("string" !== typeof arg0) {
@@ -134,16 +141,11 @@ function reactConsoleErrorHandler() {
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const tmp2 = (arg0) => {
+const tmp2 = ((arg0) => {
   class SyntheticError {
     constructor() {
       self = this;
-      tmp = closure_4(this, SyntheticError);
+      tmp = outer1_4(this, SyntheticError);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -151,14 +153,14 @@ const tmp2 = (arg0) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_6(SyntheticError);
-      tmp3 = closure_5;
-      if (closure_14()) {
+      obj = outer1_6(SyntheticError);
+      tmp3 = outer1_5;
+      if (outer1_14()) {
         if (!combined) {
           combined = [];
         }
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, combined, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, combined, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
@@ -167,14 +169,14 @@ const tmp2 = (arg0) => {
       return tmp3Result;
     }
   }
-  const global = SyntheticError;
   callback2(SyntheticError, arg0);
   return callback(SyntheticError);
-}(importDefault(dependencyMap[5])(Error));
-let closure_10 = false;
-let closure_11 = "RN$ErrorExtraDataKey";
-let closure_12 = 0;
-let closure_13 = false;
+})(require("_wrapNativeSuper")(Error));
+let closure_9 = tmp2;
+let c10 = false;
+const RN$ErrorExtraDataKey = "RN$ErrorExtraDataKey";
+let c12 = 0;
+let c13 = false;
 
 export default {
   decoratedExtraDataKey: "RN$ErrorExtraDataKey",
@@ -186,9 +188,9 @@ export default {
         const prototype = tmp2.prototype;
         tmp4 = new tmp2(arg0);
       }
-      let closure_13 = true;
+      let c13 = true;
       reportException(tmp4, arg1, true);
-      closure_13 = false;
+      c13 = false;
     }
   },
   installConsoleErrorReporter() {
@@ -208,7 +210,7 @@ export default {
   },
   SyntheticError: tmp2,
   unstable_setExceptionDecorator(arg0) {
-
+    let closure_8 = arg0;
   }
 };
 export const SyntheticError = tmp2;

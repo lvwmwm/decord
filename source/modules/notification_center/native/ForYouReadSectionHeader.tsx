@@ -1,29 +1,31 @@
-// Module ID: 15047
-// Function ID: 113300
+// Module ID: 15162
+// Function ID: 115469
 // Name: ForYouReadSectionHeader
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 2]
 // Exports: ForYouReadSectionHeader
 
-// Module 15047 (ForYouReadSectionHeader)
-importAll(dependencyMap[0]);
-const tmp3 = arg1(dependencyMap[1]);
-const View = tmp3.View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { borderTopWidth: tmp3.StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, marginVertical: 8, paddingHorizontal: 24 };
-obj.container = obj;
-obj.textHeader = { color: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE, marginTop: 20 };
-let closure_4 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE, marginTop: 20 };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/notification_center/native/ForYouReadSectionHeader.tsx");
+// Module 15162 (ForYouReadSectionHeader)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const View = get_ActivityIndicator.View;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderTopWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginVertical: 8, paddingHorizontal: 24 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.textHeader = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginTop: 20 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginTop: 20 };
+const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouReadSectionHeader.tsx");
 
 export const ForYouReadSectionHeader = function ForYouReadSectionHeader() {
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   obj = { style: tmp.textHeader, variant: "text-sm/semibold" };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.children = intl.string(arg1(dependencyMap[6]).t.hftC1K);
-  obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
-  return <View {...obj} />;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.hftC1K);
+  obj.children = jsx(require(4126) /* Text */.Text, { style: tmp.textHeader, variant: "text-sm/semibold" });
+  return <View style={tmp.textHeader} variant="text-sm/semibold" />;
 };

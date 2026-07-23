@@ -1,53 +1,59 @@
-// Module ID: 6663
-// Function ID: 51332
+// Module ID: 6668
+// Function ID: 51364
 // Name: getOrders
-// Dependencies: []
+// Dependencies: [5, 4113, 653, 3, 507, 3791, 686, 5627, 2]
 // Exports: discardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 6663 (getOrders)
+// Module 6668 (getOrders)
+import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
+import { OrderStatus } from "CustomCheckoutFlow";
+import { Endpoints } from "ME";
+import importDefaultResult from "timestamp";
+
+const require = arg1;
 function getOrders(arg0) {
   return _getOrders(...arguments);
 }
-async function _getOrders(status, arg1) {
+async function _getOrders(arg0, arg1) {
   let obj = {};
-  status = undefined;
-  if (null != status) {
-    status = status.status;
+  let status;
+  if (null != arg0) {
+    status = arg0.status;
   }
   if (null != status) {
-    const items = [status.status];
+    const items = [arg0.status];
     obj.statuses = items;
   }
   let skuId;
-  if (null != status) {
-    skuId = status.skuId;
+  if (null != arg0) {
+    skuId = arg0.skuId;
   }
   if (null != skuId) {
-    obj.sku_id = status.skuId;
+    obj.sku_id = arg0.skuId;
   }
   let createdAfter;
-  if (null != status) {
-    createdAfter = status.createdAfter;
+  if (null != arg0) {
+    createdAfter = arg0.createdAfter;
   }
   if (null != createdAfter) {
-    obj.created_after = status.createdAfter;
+    obj.created_after = arg0.createdAfter;
   }
   let isGift;
-  if (null != status) {
-    isGift = status.isGift;
+  if (null != arg0) {
+    isGift = arg0.isGift;
   }
   if (null != isGift) {
-    obj.is_gift = status.isGift;
+    obj.is_gift = arg0.isGift;
   }
   let paymentGateway;
-  if (null != status) {
-    paymentGateway = status.paymentGateway;
+  if (null != arg0) {
+    paymentGateway = arg0.paymentGateway;
   }
   if (null != paymentGateway) {
-    obj.payment_gateway = status.paymentGateway;
+    obj.payment_gateway = arg0.paymentGateway;
   }
-  const HTTP = callback(closure_2[4]).HTTP;
-  obj = { url: constants.ORDER_LIST, query: obj, rejectWithError: true };
+  const HTTP = outer2_0(outer2_2[4]).HTTP;
+  obj = { url: outer2_5.ORDER_LIST, query: obj, rejectWithError: true };
   const body = yield HTTP.get(obj).body;
   let items1 = body;
   if (!body) {
@@ -59,7 +65,7 @@ function createOrder(arg0) {
   return _createOrder(...arguments);
 }
 async function _createOrder(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let countryCode;
     let externalGatewayFacet;
     let giftInfo;
@@ -71,7 +77,7 @@ async function _createOrder(arg0, arg1) {
     ({ paymentGateway, isGift, giftInfo, externalGatewayFacet, countryCode } = arg0);
     ({ orderLineItems, recipientUserId, subscriptionFacet } = arg0);
     yield undefined;
-    let obj = callback2(closure_2[6]);
+    let obj = outer2_1(outer2_2[6]);
     obj.dispatch({ type: "ORDER_CREATE_START" });
     if (isGift) {
       obj = { recipient_id: recipientUserId };
@@ -130,17 +136,17 @@ async function _createOrder(arg0, arg1) {
     if (null != externalGatewayFacet) {
       tmp34.external_gateway_facet = externalGatewayFacet;
     }
-    const HTTP = callback(closure_2[4]).HTTP;
-    const body = yield HTTP.post({ url: constants.ORDER_CREATE, body: obj, rejectWithError: true, retries: 3 }).body;
-    closure_6.info("created order", { orderId: body.id, paymentGateway, body: obj });
-    yield callback2(closure_2[6]).dispatch({ type: "ORDER_CREATE_SUCCESS", orderId: body.id, order: body });
+    const HTTP = outer2_0(outer2_2[4]).HTTP;
+    const body = yield HTTP.post({ url: outer2_5.ORDER_CREATE, body: obj, rejectWithError: true, retries: 3 }).body;
+    outer2_6.info("created order", { orderId: body.id, paymentGateway, body: obj });
+    yield outer2_1(outer2_2[6]).dispatch({ type: "ORDER_CREATE_SUCCESS", orderId: body.id, order: body });
     return body;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _getOrCreateOrder(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let createdAfter;
     let externalGatewayFacet;
     let giftInfo;
@@ -152,12 +158,12 @@ async function _getOrCreateOrder(arg0, arg1) {
     let subscriptionPlanId;
     ({ skuId, isGift, paymentGateway, recipientUserId, purchaseType, giftInfo, createdAfter, subscriptionPlanId, externalGatewayFacet } = arg0);
     yield undefined;
-    let obj = { isGift, status: constants.DRAFT, skuId, createdAfter };
-    const arr = yield closure_8(obj);
+    let obj = { isGift, status: outer2_4.DRAFT, skuId, createdAfter };
+    const arr = yield outer2_8(obj);
     if (arr.length > 0) {
       const first = arr[0];
       obj = { orderId: first.id, skuId, isGift };
-      closure_6.info("reusing existing draft order", obj);
+      outer2_6.info("reusing existing draft order", obj);
       return first;
     } else {
       obj = { paymentGateway, recipientUserId, isGift, giftInfo };
@@ -165,41 +171,41 @@ async function _getOrCreateOrder(arg0, arg1) {
       const items = [obj1];
       obj.orderLineItems = items;
       obj.externalGatewayFacet = externalGatewayFacet;
-      return yield closure_10(obj);
+      return yield outer2_10(obj);
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _patchOrderLineItem(arg0, arg1) {
-  const fn = function*(expectedRevision) {
+  let iter = (function*(expectedRevision) {
     let orderId;
     let orderLineItemId;
     let subscriptionPlanId;
     ({ orderId, orderLineItemId, subscriptionPlanId } = expectedRevision);
     yield undefined;
-    let obj = callback2(closure_2[6]);
+    let obj = outer2_1(outer2_2[6]);
     obj.dispatch({ type: "ORDER_UPDATE_START" });
     obj = { expected_revision: expectedRevision.expectedRevision, subscription_plan_id: subscriptionPlanId };
-    const HTTP = callback(closure_2[4]).HTTP;
-    obj = { url: closure_5.ORDER_PATCH_LINE_ITEM(orderId, orderLineItemId), body: obj, rejectWithError: true };
-    closure_6.info("updated order line item", { orderId, orderLineItemId, body: obj });
+    const HTTP = outer2_0(outer2_2[4]).HTTP;
+    obj = { url: outer2_5.ORDER_PATCH_LINE_ITEM(orderId, orderLineItemId), body: obj, rejectWithError: true };
+    outer2_6.info("updated order line item", { orderId, orderLineItemId, body: obj });
     const tmp3 = yield HTTP.patch(obj);
-    yield callback2(closure_2[6]).dispatch({ type: "ORDER_UPDATE_SUCCESS", orderId });
+    yield outer2_1(outer2_2[6]).dispatch({ type: "ORDER_UPDATE_SUCCESS", orderId });
     return tmp3.body.revision;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _patchOrder(arg0, arg1) {
-  const fn = function*(expectedRevision) {
+  let iter = (function*(expectedRevision) {
     let externalGatewayFacet;
     let orderId;
     let orderLineItems;
     let subscriptionFacet;
     ({ orderId, orderLineItems, subscriptionFacet, externalGatewayFacet } = expectedRevision);
     yield undefined;
-    let obj = callback2(closure_2[6]);
+    let obj = outer2_1(outer2_2[6]);
     obj.dispatch({ type: "ORDER_UPDATE_START" });
     obj = { expected_revision: expectedRevision.expectedRevision };
     if (null != orderLineItems) {
@@ -211,22 +217,22 @@ async function _patchOrder(arg0, arg1) {
     if (null != externalGatewayFacet) {
       tmp3.external_gateway_facet = externalGatewayFacet;
     }
-    const HTTP = callback(closure_2[4]).HTTP;
-    obj = { url: closure_5.ORDER_UPDATE(orderId), body: tmp3, rejectWithError: true };
-    closure_6.info("patched order", { orderId, body: obj });
-    yield callback2(closure_2[6]).dispatch({ type: "ORDER_UPDATE_SUCCESS", orderId });
+    const HTTP = outer2_0(outer2_2[4]).HTTP;
+    obj = { url: outer2_5.ORDER_UPDATE(orderId), body: tmp3, rejectWithError: true };
+    outer2_6.info("patched order", { orderId, body: obj });
+    yield outer2_1(outer2_2[6]).dispatch({ type: "ORDER_UPDATE_SUCCESS", orderId });
     return yield HTTP.patch(obj).body;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _updateOrder(arg0, arg1) {
-  const fn = function*(expectedRevision) {
+  let iter = (function*(expectedRevision) {
     let giftInfo;
     let orderId;
     ({ orderId, giftInfo } = expectedRevision);
     yield undefined;
-    let obj = callback2(closure_2[6]);
+    let obj = outer2_1(outer2_2[6]);
     obj.dispatch({ type: "ORDER_UPDATE_START" });
     obj = { expected_revision: expectedRevision.expectedRevision };
     if (null != giftInfo) {
@@ -255,19 +261,19 @@ async function _updateOrder(arg0, arg1) {
       const obj1 = { is_gift: true, gift_customization: obj };
       tmp3.gifting_facet = obj1;
     }
-    const HTTP = callback(closure_2[4]).HTTP;
-    const obj2 = { url: closure_5.ORDER_UPDATE(orderId), body: obj, rejectWithError: true };
-    closure_6.info("updated order with gift customization", { orderId, body: obj });
-    const tmp25 = yield HTTP.patch({ url: closure_5.ORDER_UPDATE(orderId), body: obj, rejectWithError: true });
-    yield callback2(closure_2[6]).dispatch({ type: "ORDER_UPDATE_SUCCESS", orderId });
+    const HTTP = outer2_0(outer2_2[4]).HTTP;
+    const obj2 = { url: outer2_5.ORDER_UPDATE(orderId), body: obj, rejectWithError: true };
+    outer2_6.info("updated order with gift customization", { orderId, body: obj });
+    const tmp25 = yield HTTP.patch({ url: outer2_5.ORDER_UPDATE(orderId), body: obj, rejectWithError: true });
+    yield outer2_1(outer2_2[6]).dispatch({ type: "ORDER_UPDATE_SUCCESS", orderId });
     return tmp25.body.revision;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _discardOrder(arg0, arg1) {
-  const HTTP = callback(closure_2[4]).HTTP;
-  const tmp = yield HTTP.post({ url: closure_5.ORDER_DISCARD(arg0), rejectWithError: false });
+  const HTTP = outer2_0(outer2_2[4]).HTTP;
+  const tmp = yield HTTP.post({ url: outer2_5.ORDER_DISCARD(arg0), rejectWithError: false });
   if (null == tmp.body) {
     const _Error = Error;
     const error = new Error("Invalid discard order response");
@@ -275,49 +281,47 @@ async function _discardOrder(arg0, arg1) {
   } else {
     return tmp.body;
   }
-  const obj = { url: closure_5.ORDER_DISCARD(arg0), rejectWithError: false };
+  const obj = { url: outer2_5.ORDER_DISCARD(arg0), rejectWithError: false };
 }
-async function _markOrderAsSigningInProgress(orderId, arg1) {
-  if (null != tmp2) {
-    const obj = { orderId };
-    closure_6.info("signing already in progress, awaiting existing promise", obj);
-    yield closure_7;
+async function _markOrderAsSigningInProgress(arg0, arg1) {
+  let closure_0 = arg0;
+  if (null != outer2_7) {
+    let obj = { orderId: arg0 };
+    outer2_6.info("signing already in progress, awaiting existing promise", obj);
+    yield outer2_7;
   } else {
-    const tmp2 = callback(async () => {
-      let obj = callback2(closure_2[6]);
-      obj = { type: "ORDER_MARK_SIGNING_START", orderId: callback };
+    let tmp2 = outer2_3(async () => {
+      let obj = outer4_1(outer4_2[6]);
+      obj = { type: "ORDER_MARK_SIGNING_START", orderId: outer1_0 };
       obj.dispatch(obj);
-      let obj2 = callback(closure_2[7]);
-      const tmp2 = yield obj2.getOrder(closure_0);
+      let obj2 = outer4_0(outer4_2[7]);
+      const tmp2 = yield obj2.getOrder(outer1_0);
       if (null == tmp2) {
         const _Error = Error;
         const _HermesInternal = HermesInternal;
-        const error = new Error("Order " + callback + " not found");
+        const error = new Error("Order " + outer1_0 + " not found");
         throw error;
       } else {
-        const HTTP = callback(closure_2[4]).HTTP;
-        obj = { url: closure_5.ORDER_SIGN(callback) };
+        const HTTP = outer4_0(outer4_2[4]).HTTP;
+        obj = { url: outer4_5.ORDER_SIGN(outer1_0) };
         const obj1 = { expected_revision: tmp3.revision };
         obj.body = obj1;
         obj.rejectWithError = true;
         yield HTTP.post(obj);
-        obj2 = { orderId: callback, revision: tmp2.revision };
-        closure_6.info("marked order as signing in progress", obj2);
-        const obj3 = { type: "ORDER_MARK_SIGNING_SUCCESS", orderId: callback };
-        yield callback2(closure_2[6]).dispatch(obj3);
-        let closure_7 = null;
+        obj2 = { orderId: outer1_0, revision: tmp2.revision };
+        outer4_6.info("marked order as signing in progress", obj2);
+        const obj3 = { type: "ORDER_MARK_SIGNING_SUCCESS", orderId: outer1_0 };
+        yield outer4_1(outer4_2[6]).dispatch(obj3);
+        const outer4_7 = null;
       }
     })();
+    outer2_7 = tmp2;
     yield tmp2;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const OrderStatus = arg1(dependencyMap[1]).OrderStatus;
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-let importDefaultResult = importDefault(dependencyMap[3]);
 importDefaultResult = new importDefaultResult("OrderActionCreators");
-let closure_7 = null;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/payments/native/OrderActionCreators.tsx");
+let c7 = null;
+const result = require("ME").fileFinishedImporting("modules/payments/native/OrderActionCreators.tsx");
 
 export const logger = importDefaultResult;
 export const DRAFT_ORDER_LOOKBACK_DAYS = 3;

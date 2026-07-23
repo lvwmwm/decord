@@ -1,24 +1,26 @@
-// Module ID: 16413
-// Function ID: 126784
+// Module ID: 16530
+// Function ID: 128958
 // Name: AVErrorStreamViewLowFPSDefinition
-// Dependencies: []
+// Dependencies: [4143, 4149, 1194, 4216, 653, 16531, 4194, 8856, 8857, 16528, 2]
 
-// Module 16413 (AVErrorStreamViewLowFPSDefinition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const ApplicationStreamStates = arg1(dependencyMap[4]).ApplicationStreamStates;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamViewLowFPS.tsx");
+// Module 16530 (AVErrorStreamViewLowFPSDefinition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { ApplicationStreamStates } from "ME";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamViewLowFPS.tsx");
 
 export const AVErrorStreamViewLowFPSDefinition = {
   getActiveErrors() {
     let reduced = null;
     if (obj.getReportInboundErrors()) {
-      const allActiveStreams = allActiveStreams.getAllActiveStreams();
+      allActiveStreams = allActiveStreams.getAllActiveStreams();
       reduced = allActiveStreams.reduce((arr, ownerId) => {
-        let obj = callback(closure_1[6]);
-        const rTCConnection = rTCConnection.getRTCConnection(obj.encodeStreamKey(ownerId));
+        let obj = outer1_0(outer1_1[6]);
+        const rTCConnection = outer1_5.getRTCConnection(obj.encodeStreamKey(ownerId));
         let mediaEngineConnectionId;
         if (null != rTCConnection) {
           mediaEngineConnectionId = rTCConnection.getMediaEngineConnectionId();
@@ -26,34 +28,34 @@ export const AVErrorStreamViewLowFPSDefinition = {
         if (null == mediaEngineConnectionId) {
           return arr;
         } else {
-          if (ownerId.ownerId !== id.getId()) {
-            if (ownerId.state !== constants.PAUSED) {
-              const accumulatedStatsWithMinDatapoints = callback(closure_1[5]).getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, ownerId.ownerId);
+          if (ownerId.ownerId !== outer1_4.getId()) {
+            if (ownerId.state !== outer1_6.PAUSED) {
+              const accumulatedStatsWithMinDatapoints = outer1_0(outer1_1[5]).getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, ownerId.ownerId);
               if (null == accumulatedStatsWithMinDatapoints) {
                 return arr;
               } else {
-                const participant = participant.getParticipant(ownerId.channelId, callback(closure_1[6]).encodeStreamKey(ownerId));
+                const participant = outer1_2.getParticipant(ownerId.channelId, outer1_0(outer1_1[6]).encodeStreamKey(ownerId));
                 if (null == participant) {
                   return arr;
                 } else {
-                  const maxQuality = callback(closure_1[7]).getMaxQuality(participant);
+                  const maxQuality = outer1_0(outer1_1[7]).getMaxQuality(participant);
                   if (null != maxQuality) {
                     if (accumulatedStatsWithMinDatapoints.short.frameRate < obj10.getWarningFrameRate(maxQuality.maxFrameRate)) {
-                      obj = { type: callback(closure_1[8]).AVError.STREAM_VIEW_LOW_FPS };
-                      const obj5 = callback(closure_1[9]);
-                      const merged = Object.assign(obj5.getStreamErrorContext(callback(closure_1[6]).encodeStreamKey(ownerId)));
+                      obj = { type: outer1_0(outer1_1[8]).AVError.STREAM_VIEW_LOW_FPS };
+                      const obj5 = outer1_0(outer1_1[9]);
+                      const merged = Object.assign(obj5.getStreamErrorContext(outer1_0(outer1_1[6]).encodeStreamKey(ownerId)));
                       arr.push(obj);
-                      const obj6 = callback(closure_1[6]);
+                      const obj6 = outer1_0(outer1_1[6]);
                     } else {
-                      const obj3 = callback(closure_1[5]);
+                      const obj3 = outer1_0(outer1_1[5]);
                     }
-                    const obj10 = callback(closure_1[5]);
+                    obj10 = outer1_0(outer1_1[5]);
                   }
                   return arr;
                 }
-                const obj8 = callback(closure_1[6]);
+                const obj8 = outer1_0(outer1_1[6]);
               }
-              const obj7 = callback(closure_1[5]);
+              const obj7 = outer1_0(outer1_1[5]);
             }
           }
           return arr;

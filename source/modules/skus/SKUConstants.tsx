@@ -1,10 +1,12 @@
-// Module ID: 4166
-// Function ID: 35364
+// Module ID: 4170
+// Function ID: 35396
 // Name: set
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4166 (set)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/skus/SKUConstants.tsx");
+// Module 4170 (set)
+import set from "set";
 
-export const THE_GAME_AWARD_WINNER_SKUS = new Set([]);
+let set = new Set(["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"]);
+const result = set.fileFinishedImporting("modules/skus/SKUConstants.tsx");
+
+export const THE_GAME_AWARD_WINNER_SKUS = set;

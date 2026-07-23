@@ -1,12 +1,11 @@
-// Module ID: 15677
-// Function ID: 119777
+// Module ID: 15794
+// Function ID: 121950
 // Name: getChannelInfoSubtitle
-// Dependencies: []
+// Dependencies: [4319, 1212, 2]
 // Exports: default
 
-// Module 15677 (getChannelInfoSubtitle)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/voice_panel/native/utils/getChannelInfoSubtitle.tsx");
+// Module 15794 (getChannelInfoSubtitle)
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/getChannelInfoSubtitle.tsx");
 
 export default function getChannelInfoSubtitle(arg0, arg1, arg2) {
   let num = arg3;
@@ -16,19 +15,19 @@ export default function getChannelInfoSubtitle(arg0, arg1, arg2) {
   if (0 === arg2.length) {
     return null;
   } else if (1 === length) {
-    return importDefault(dependencyMap[0]).getName(arg0, arg1, arg2[0]);
+    return importDefault(4319).getName(arg0, arg1, arg2[0]);
   } else if (2 === length) {
-    const intl = require(dependencyMap[1]).intl;
-    let obj = { user1: importDefault(dependencyMap[0]).getName(arg0, arg1, arg2[0]) };
-    const obj2 = importDefault(dependencyMap[0]);
-    obj.user2 = importDefault(dependencyMap[0]).getName(arg0, arg1, arg2[1]);
-    return intl.formatToPlainString(require(dependencyMap[1]).t.lRD/ru, obj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    let obj = { user1: importDefault(4319).getName(arg0, arg1, arg2[0]) };
+    const obj2 = importDefault(4319);
+    obj.user2 = importDefault(4319).getName(arg0, arg1, arg2[1]);
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["lRD/ru"], obj);
   } else {
-    const intl2 = require(dependencyMap[1]).intl;
-    obj = { user1: importDefault(dependencyMap[0]).getName(arg0, arg1, arg2[0]) };
-    const obj6 = importDefault(dependencyMap[0]);
-    obj.user2 = importDefault(dependencyMap[0]).getName(arg0, arg1, arg2[1]);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj = { user1: importDefault(4319).getName(arg0, arg1, arg2[0]) };
+    const obj6 = importDefault(4319);
+    obj.user2 = importDefault(4319).getName(arg0, arg1, arg2[1]);
     obj.numPeople = arg2.length - 2 + num;
-    return intl2.formatToPlainString(require(dependencyMap[1]).t.RFCI3S, obj);
+    return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.RFCI3S, obj);
   }
 };

@@ -1,11 +1,10 @@
-// Module ID: 5962
-// Function ID: 49876
+// Module ID: 5967
+// Function ID: 49905
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5962 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CompassSpotIllustration-2x.png.js");
+// Module 5967 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CompassSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/4228001eb680cf1f1f797ba160b9b684ab9aaaca098bdee7e2127241e8811a5f.png";
 export const metadata = { fileBytes: 29675 };

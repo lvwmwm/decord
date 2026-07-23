@@ -1,25 +1,25 @@
-// Module ID: 14305
-// Function ID: 108025
+// Module ID: 14419
+// Function ID: 110178
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14420, 2]
 
-// Module 14305 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14419 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Button";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_BUTTON,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_BUTTON,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14420) /* ExampleButton */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsButtonSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsButtonSetting.tsx");
 
 export default route;

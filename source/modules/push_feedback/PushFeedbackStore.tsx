@@ -1,39 +1,40 @@
-// Module ID: 10432
-// Function ID: 80453
+// Module ID: 10442
+// Function ID: 80503
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5593, 566, 686, 2]
 
-// Module 10432 (_isNativeReflectConstruct)
+// Module 10442 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { NotificationTypes } from "str2";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const NotificationTypes = arg1(dependencyMap[5]).NotificationTypes;
-let closure_6 = null;
+let c6 = null;
 let closure_7 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class PushFeedbackStore {
     constructor() {
       self = this;
       tmp = PushFeedbackStore(this, PushFeedbackStore);
-      obj = closure_3(PushFeedbackStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(PushFeedbackStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,15 +43,14 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = PushFeedbackStore;
   callback2(PushFeedbackStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(pushFeedback) {
       if (null != pushFeedback) {
-        pushFeedback = pushFeedback.pushFeedback;
+        const outer1_6 = pushFeedback.pushFeedback;
         if (null != pushFeedback.pushFeedbackMap) {
-          const pushFeedbackMap = pushFeedback.pushFeedbackMap;
+          const outer1_7 = pushFeedback.pushFeedbackMap;
         }
       }
     }
@@ -59,14 +59,14 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return { pushFeedback: closure_6, pushFeedbackMap: closure_7 };
+      return { pushFeedback: outer1_6, pushFeedbackMap: outer1_7 };
     }
   };
   items[1] = obj;
   obj = {
     key: "isEligible",
     value() {
-      return null != closure_6;
+      return null != outer1_6;
     }
   };
   items[2] = obj;
@@ -74,8 +74,8 @@ let tmp2 = (PersistedStore) => {
     key: "isUserPushMessage",
     value(arg0) {
       let messageId;
-      if (null != closure_6) {
-        messageId = closure_6.messageId;
+      if (null != outer1_6) {
+        messageId = outer1_6.messageId;
       }
       return messageId === arg0;
     }
@@ -84,24 +84,24 @@ let tmp2 = (PersistedStore) => {
     key: "getPushFeedback",
     value(arg0, arg1) {
       let messageId;
-      if (null != closure_6) {
-        messageId = closure_6.messageId;
+      if (null != outer1_6) {
+        messageId = outer1_6.messageId;
       }
       let tmp2 = null;
       if (messageId === arg1) {
         tmp2 = null;
-        if (closure_6.channelId === arg0) {
-          tmp2 = closure_6;
+        if (outer1_6.channelId === arg0) {
+          tmp2 = outer1_6;
         }
       }
       return tmp2;
     }
   };
   return callback(PushFeedbackStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "PushFeedbackStore";
 tmp2.persistKey = "PushFeedbackPersistedStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   PUSH_FEEDBACK_RECEIVED_NOTIFICATION: function handleReceivedNotification(arg0) {
     let channelId;
     let eligibleAt;
@@ -115,14 +115,14 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       flag = false;
     }
     if (flag) {
-      let tmp3 = closure_7[notificationType];
+      let tmp3 = table[notificationType];
       if (null == tmp3) {
         let obj = { messageId, channelId, pushType: notificationType };
         tmp3 = obj;
       }
       let userViewInfo = tmp3.userViewInfo;
       if (null == userViewInfo) {
-        userViewInfo = { schema: "%FunctionPrototype%", multiple: "paddingStart" };
+        userViewInfo = { eligibleAt: 0, viewCount: 0 };
       }
       ({ eligibleAt, viewCount } = userViewInfo);
       const _Date = Date;
@@ -133,10 +133,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       } else if (viewCount >= 10) {
         if (null != null) {
           obj = { messageId, channelId, pushType: notificationType, userViewInfo: null };
-          let closure_6 = obj;
-          closure_7[notificationType] = obj;
+          let c6 = obj;
+          table[notificationType] = obj;
         } else {
-          closure_6 = null;
+          c6 = null;
         }
       } else {
         num2 = viewCount + 1;
@@ -145,20 +145,20 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     }
   },
   PUSH_FEEDBACK_CLEANUP: function handleCleanup() {
-    let closure_6 = null;
+    let c6 = null;
   },
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
     channelId = channelId.channelId;
     if (null != channelId) {
-      if (null != channelId) {
-        if (channelId !== channelId.channelId) {
-          channelId = null;
+      if (null != _null) {
+        if (channelId !== _null.channelId) {
+          _null = null;
         }
       }
     }
     return false;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/push_feedback/PushFeedbackStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/push_feedback/PushFeedbackStore.tsx");
 
 export default tmp2;

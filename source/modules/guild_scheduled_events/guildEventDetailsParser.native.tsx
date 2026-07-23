@@ -1,10 +1,9 @@
-// Module ID: 8445
-// Function ID: 67389
+// Module ID: 8451
+// Function ID: 67426
 // Name: guildEventDetailsParser
-// Dependencies: []
+// Dependencies: [2, 4120]
 
-// Module 8445 (guildEventDetailsParser)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild_scheduled_events/guildEventDetailsParser.native.tsx");
+// Module 8451 (guildEventDetailsParser)
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/guildEventDetailsParser.native.tsx");
 
-export const guildEventDetailsParser = importDefault(dependencyMap[1]).parseGuildEventDescription;
+export const guildEventDetailsParser = require("combineAndInjectMentionRule").parseGuildEventDescription;

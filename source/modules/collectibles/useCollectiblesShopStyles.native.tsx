@@ -1,17 +1,17 @@
-// Module ID: 9767
-// Function ID: 75974
+// Module ID: 9774
+// Function ID: 76015
 // Name: importDefaultResult1
-// Dependencies: []
+// Dependencies: [6784, 689, 9775, 2]
 
-// Module 9767 (importDefaultResult1)
-import saturateResult from "module_1";
-import saturateResult1 from "module_1";
+// Module 9774 (importDefaultResult1)
+import importDefaultResult from "tinycolor";
+import saturateResult from "_createForOfIteratorHelperLoose";
+import importDefaultResult1 from "tinycolor";
+import saturateResult1 from "_createForOfIteratorHelperLoose";
 
-const importDefaultResult = importDefault(dependencyMap[0]);
-const importDefaultResultResult = importDefault(dependencyMap[0])(importDefault(dependencyMap[1]).unsafe_rawColors.WHITE);
-const importDefaultResult1 = importDefault(dependencyMap[0]);
-const importDefaultResult1Result = importDefault(dependencyMap[0])(importDefault(dependencyMap[1]).unsafe_rawColors.BLACK);
-const tmp6 = importDefault(dependencyMap[2])({ dark: require("module_1"), light: saturateResult });
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/useCollectiblesShopStyles.native.tsx");
+const importDefaultResultResult = require("tinycolor")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE);
+const importDefaultResult1Result = require("tinycolor")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK);
+const tmp6 = require("getMidpointColor")({ dark: require("_createForOfIteratorHelperLoose"), light: saturateResult });
+const result = require("getMidpointColor").fileFinishedImporting("modules/collectibles/useCollectiblesShopStyles.native.tsx");
 
 export default tmp6;

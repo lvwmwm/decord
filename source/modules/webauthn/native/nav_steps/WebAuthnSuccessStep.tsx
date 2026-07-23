@@ -1,32 +1,31 @@
-// Module ID: 13531
-// Function ID: 102637
+// Module ID: 13645
+// Function ID: 104793
 // Name: WebAuthnSuccessStep
-// Dependencies: [31, 27, 11016, 7538, 653, 33, 1212, 4124]
+// Dependencies: [31, 33, 1456, 5087, 13630, 13646, 1212, 2]
 // Exports: default
 
-// Module 13531 (WebAuthnSuccessStep)
-import module_31 from "module_31";
-import { jsx } from "get ActivityIndicator";
-import Text from "Text";
+// Module 13645 (WebAuthnSuccessStep)
+import result from "result";
+import { jsx } from "jsxProd";
 
-const result = Text.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnSuccessStep.tsx");
+const require = arg1;
+let result = require("useNavigation").fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnSuccessStep.tsx");
 
 export default function WebAuthnSuccessStep() {
-  let obj = arg1(dependencyMap[2]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
+  let obj = navigation(1456);
+  navigation = obj.useNavigation();
   const items = [navigation];
   const layoutEffect = React.useLayoutEffect(() => {
     const obj = {
-      headerLeft: navigation(closure_2[3]).getHeaderCloseButton(() => {
-        closure_0.popToTop();
-        const result = callback(closure_2[4]).closePasskeyUpsellModal();
+      headerLeft: navigation(outer1_2[3]).getHeaderCloseButton(() => {
+        outer1_0.popToTop();
+        const result = outer2_1(outer2_2[4]).closePasskeyUpsellModal();
       })
     };
     navigation.setOptions(obj);
   }, items);
   obj = { onGenerate: null };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.headerLabel = intl.format(arg1(dependencyMap[6]).t.iVTs6i, {});
-  return jsx(importDefault(dependencyMap[5]), obj);
+  const intl = navigation(1212).intl;
+  obj.headerLabel = intl.format(navigation(1212).t.iVTs6i, {});
+  return jsx(importDefault(13646), { onGenerate: null });
 };

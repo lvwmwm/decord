@@ -30,7 +30,7 @@ const obj = {
         }
         const currentPageX2 = tmp.currentPageX;
       }
-      const tmp8 = tmp.touchActive && tmp.currentTimeStamp > arg1;
+      tmp8 = tmp.touchActive && tmp.currentTimeStamp > arg1;
     } else {
       num5 = 0;
       let num2 = 0;

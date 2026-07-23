@@ -1,33 +1,34 @@
-// Module ID: 13764
-// Function ID: 104054
+// Module ID: 13878
+// Function ID: 106210
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: []
+// Dependencies: [5, 7662, 3803, 686, 10095, 1212, 2]
 
-// Module 13764 (_updateClipsAllowVoiceRecording)
+// Module 13878 (_updateClipsAllowVoiceRecording)
+import getSystemLocale from "getSystemLocale";
+import createToggle from "createToggle";
+
+const require = arg1;
 function _updateClipsAllowVoiceRecording() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _updateClipsAllowVoiceRecording = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.AGDDkH);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.AGDDkH);
   },
   useDescription() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.wW9/zQ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["wW9/zQ"]);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.CLIPS,
-  useValue: arg1(dependencyMap[2]).ClipsAllowVoiceRecording.useSetting,
+  parent: require("MobileSetting").MobileSetting.CLIPS,
+  useValue: require("explicitContentFromProto").ClipsAllowVoiceRecording.useSetting,
   onValueChange: function updateClipsAllowVoiceRecording() {
     return _updateClipsAllowVoiceRecording(...arguments);
   }
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/ClipsOptOutOfVoiceRecordingSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/ClipsOptOutOfVoiceRecordingSetting.tsx");
 
-export default toggle;
+export default createToggle;

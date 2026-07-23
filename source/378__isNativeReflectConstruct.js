@@ -1,9 +1,18 @@
 // Module ID: 378
 // Function ID: 5639
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [153, 6, 7, 15, 17, 102, 18, 355, 372]
 
 // Module 378 (_isNativeReflectConstruct)
+import "_readOnlyError";
+import _inherits from "_inherits";
+import closure_5 from "A";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import closure_9 from "_inherits";
+
+let require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,59 +23,52 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  const global = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_8(closure_7(prototype), arg1, arg2);
-  arg1 = tmpResult;
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
+  const require = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
-importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
 
-export default (arg0) => {
+export default ((arg0) => {
   class TimingAnimation {
     constructor(arg0) {
       self = this;
-      tmp = closure_4(this, TimingAnimation);
+      tmp = outer1_4(this, TimingAnimation);
       items = [];
       items[0] = arg0;
-      obj = closure_7(TimingAnimation);
-      tmp2 = closure_6;
-      if (closure_10()) {
+      obj = outer1_7(TimingAnimation);
+      tmp2 = outer1_6;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items, closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, items, outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
       ({ toValue: tmp6._toValue, easing } = arg0);
       if (null == easing) {
-        tmp7 = ease;
-        if (!ease) {
-          tmp8 = closure_1;
-          tmp9 = closure_2;
+        tmp7 = outer1_3;
+        if (!outer1_3) {
+          tmp8 = outer1_1;
+          tmp9 = outer1_2;
           num = 7;
-          _default = closure_1(closure_2[7]).default;
-          ease = _default.inOut(_default.ease);
+          _default = outer1_1(outer1_2[7]).default;
+          outer1_3 = _default.inOut(_default.ease);
         }
-        easing = ease;
+        easing = outer1_3;
       }
       tmp2Result._easing = easing;
       duration = arg0.duration;
@@ -85,7 +87,6 @@ export default (arg0) => {
       return tmp2Result;
     }
   }
-  const global = TimingAnimation;
   callback2(TimingAnimation, arg0);
   let obj = {
     key: "__getNativeAnimationConfig",
@@ -100,27 +101,27 @@ export default (arg0) => {
       return { type: "frames", frames: items, toValue: self._toValue, iterations: self.__iterations, platformConfig: self._platformConfig, debugID: self.__getDebugID() };
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "start",
     value: function start(_fromValue, _onUpdate) {
       let self = this;
-      const TimingAnimation = arg4;
+      let closure_0 = arg4;
       self = this;
       const items = [_fromValue, _onUpdate, arg2, arg3, arg4];
-      callback5(TimingAnimation, "start", this, 3)(items);
+      outer1_11(closure_0, "start", this, 3)(items);
       this._fromValue = _fromValue;
       this._onUpdate = _onUpdate;
       function start() {
         self._startTime = Date.now();
-        if (!self.__startAnimationIfNative(arg4)) {
+        if (!self.__startAnimationIfNative(closure_0)) {
           if (0 === self._duration) {
             self._onUpdate(self._toValue);
             const obj = { finished: true };
             self.__notifyAnimationEnd(obj);
           } else {
             const _requestAnimationFrame = requestAnimationFrame;
-            self._animationFrame = requestAnimationFrame(() => closure_1.onUpdate());
+            self._animationFrame = requestAnimationFrame(() => outer1_1.onUpdate());
           }
         }
       }
@@ -167,7 +168,7 @@ export default (arg0) => {
     key: "stop",
     value: function stop() {
       const self = this;
-      callback5(TimingAnimation, "stop", this, 3)([]);
+      outer1_11(TimingAnimation, "stop", this, 3)([]);
       clearTimeout(this._timeout);
       if (null != this._animationFrame) {
         TimingAnimation.cancelAnimationFrame(self._animationFrame);
@@ -176,4 +177,4 @@ export default (arg0) => {
     }
   };
   return callback(TimingAnimation, items);
-}(importDefault(dependencyMap[8]));
+})(require("Animation"));

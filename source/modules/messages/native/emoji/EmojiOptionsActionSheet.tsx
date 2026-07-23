@@ -1,32 +1,33 @@
-// Module ID: 9392
-// Function ID: 73218
+// Module ID: 9399
+// Function ID: 73259
 // Name: EmojiOptionsActionSheet
-// Dependencies: []
+// Dependencies: [31, 33, 5492, 3830, 4098, 5500, 5503, 5165, 4074, 1212, 2]
 // Exports: default
 
-// Module 9392 (EmojiOptionsActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/messages/native/emoji/EmojiOptionsActionSheet.tsx");
+// Module 9399 (EmojiOptionsActionSheet)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("_copy").fileFinishedImporting("modules/messages/native/emoji/EmojiOptionsActionSheet.tsx");
 
 export default function EmojiOptionsActionSheet(emojiSrc) {
   emojiSrc = emojiSrc.emojiSrc;
-  const arg1 = emojiSrc;
   const items = [emojiSrc];
   const callback = React.useCallback(() => {
-    emojiSrc(closure_2[2]).copy(emojiSrc);
-    const obj = emojiSrc(closure_2[2]);
-    const result = emojiSrc(closure_2[3]).presentCopiedToClipboard();
-    const obj2 = emojiSrc(closure_2[3]);
-    callback(closure_2[4]).hideActionSheet();
+    emojiSrc(outer1_2[2]).copy(emojiSrc);
+    const obj = emojiSrc(outer1_2[2]);
+    const result = emojiSrc(outer1_2[3]).presentCopiedToClipboard();
+    const obj2 = emojiSrc(outer1_2[3]);
+    outer1_1(outer1_2[4]).hideActionSheet();
   }, items);
   let obj = {};
   obj = { hasIcons: true };
-  obj = { icon: jsx(arg1(dependencyMap[8]).LinkIcon, {}) };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.label = intl.string(arg1(dependencyMap[9]).t.cIoudn);
+  obj = { icon: jsx(emojiSrc(4074).LinkIcon, {}) };
+  const intl = emojiSrc(1212).intl;
+  obj.label = intl.string(emojiSrc(1212).t.cIoudn);
   obj.onPress = callback;
-  obj.children = jsx(arg1(dependencyMap[7]).TableRow, obj);
-  obj.children = jsx(arg1(dependencyMap[6]).TableRowGroup, obj);
-  return jsx(arg1(dependencyMap[5]).ActionSheet, obj);
+  obj.children = jsx(emojiSrc(5165).TableRow, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
+  obj.children = jsx(emojiSrc(5503).TableRowGroup, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
+  return jsx(emojiSrc(5500).ActionSheet, { icon: jsx(emojiSrc(4074).LinkIcon, {}) });
 };

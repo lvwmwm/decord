@@ -1,10 +1,9 @@
-// Module ID: 6650
-// Function ID: 51080
+// Module ID: 6655
+// Function ID: 51109
 // Name: AppleProductIds
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6650 (AppleProductIds)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AppleProductIds.tsx");
+// Module 6655 (AppleProductIds)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AppleProductIds.tsx");
 
 export const AppleProductIds = { GENERIC_SUBSCRIPTION: "api_generic_subscription", GENERIC_CONSUMABLE: "api_generic_consumable" };

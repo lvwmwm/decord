@@ -1,18 +1,26 @@
-// Module ID: 4202
-// Function ID: 36458
+// Module ID: 4206
+// Function ID: 36490
 // Name: sleep
-// Dependencies: []
+// Dependencies: [5, 153, 6, 7, 4207, 629, 4208, 2]
 // Exports: getTimeAndUnit
 
-// Module 4202 (sleep)
+// Module 4206 (sleep)
+import module_629 from "module_629";
+import "_readOnlyError";
+import findLastIndex from "findLastIndex";
+import set from "set";
+import wrap from "wrap";
+
+let require = arg1;
 function sleep(asMilliseconds) {
   let asMillisecondsResult = asMilliseconds;
   if ("number" !== typeof asMilliseconds) {
     asMillisecondsResult = asMilliseconds.asMilliseconds();
   }
-  const arg1 = asMillisecondsResult;
+  const require = asMillisecondsResult;
   return new Promise((arg0) => {
-    const timerId = setTimeout(() => arg0(), arg0);
+    let closure_0 = arg0;
+    const timerId = setTimeout(() => callback(), closure_0);
   });
 }
 function convertMinutesToGivenTimeUnit(rounded, unit) {
@@ -35,23 +43,23 @@ function convertMinutesToGivenTimeUnit(rounded, unit) {
   }
 }
 function getTimeUnit(rounded, arg1) {
-  arg1 = rounded;
+  let closure_0 = rounded;
   const importDefault = arg1;
-  const tmp2 = importDefault(dependencyMap[6])(items, (unit) => arg1(unit.unit), items.findIndex((max) => {
+  const tmp2 = importDefault(4208)(items, (unit) => callback(unit.unit), items.findIndex((max) => {
     max = max.max;
-    let tmp = max.unit === constants.NONE;
+    let tmp = max.unit === outer1_11.NONE;
     if (tmp) {
-      tmp = max === max;
+      tmp = closure_0 === max;
     }
     if (!tmp) {
-      tmp = max < max;
+      tmp = closure_0 < max;
     }
     return tmp;
   }));
   if (null != tmp2) {
     return tmp2.unit;
   } else {
-    const found = items.find((unit) => arg1(unit.unit));
+    const found = items.find((unit) => callback(unit.unit));
     let unit = null;
     if (null != found) {
       unit = found.unit;
@@ -60,45 +68,40 @@ function getTimeUnit(rounded, arg1) {
   }
   const findIndexResult = items.findIndex((max) => {
     max = max.max;
-    let tmp = max.unit === constants.NONE;
+    let tmp = max.unit === outer1_11.NONE;
     if (tmp) {
-      tmp = max === max;
+      tmp = closure_0 === max;
     }
     if (!tmp) {
-      tmp = max < max;
+      tmp = closure_0 < max;
     }
     return tmp;
   });
 }
-let closure_4 = importDefault(dependencyMap[0]);
-importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-arg1(dependencyMap[4]);
 function _now() {
-  const _performance = arg1(dependencyMap[5]).performance;
-  return Math.floor(arg1(dependencyMap[5]).timeOrigin + _performance.now());
+  const _performance = require(629).performance;
+  return Math.floor(require(629).timeOrigin + _performance.now());
 }
-let tmp5 = () => {
+let tmp5 = (() => {
   class TimeStampProducerImpl {
     constructor() {
-      tmp = closure_5(this, TimeStampProducerImpl);
+      tmp = outer1_5(this, TimeStampProducerImpl);
       return;
     }
   }
-  const arg1 = TimeStampProducerImpl;
   const items = [
     {
       key: "now",
       value() {
-        return callback2();
+        return outer1_7();
       }
     }
   ];
   return callback2(TimeStampProducerImpl, items);
-}();
+})();
 tmp5 = new tmp5();
-const tmp7 = () => {
+let closure_8 = tmp5;
+const tmp7 = (() => {
   class TimeSpan {
     constructor(arg0, arg1, arg2, arg3) {
       num = arg0;
@@ -106,8 +109,8 @@ const tmp7 = () => {
       num3 = arg2;
       num4 = arg3;
       self = this;
-      TimeSpan = this;
-      tmp = closure_5(this, TimeSpan);
+      self = this;
+      tmp = outer1_5(this, self);
       this.milliseconds = 0;
       this.asMilliseconds = () => self.milliseconds;
       this.asSeconds = () => self.milliseconds / 1000;
@@ -135,7 +138,6 @@ const tmp7 = () => {
       return;
     }
   }
-  const arg1 = TimeSpan;
   let obj = {
     key: "isGreaterThan",
     value(milliseconds) {
@@ -151,27 +153,28 @@ const tmp7 = () => {
   };
   items[1] = obj;
   return callback2(TimeSpan, items);
-}();
-tmp7.fromMilliseconds = (arg0) => new tmp7(0, 0, 0, arg0);
-tmp7.fromSeconds = (arg0) => new tmp7(0, 0, arg0);
-tmp7.fromMinutes = (arg0) => new tmp7(0, arg0);
-tmp7.fromHours = (arg0) => new tmp7(arg0);
-const tmp8 = () => {
+})();
+let closure_9 = tmp7;
+let closure_3 = tmp7;
+tmp7.fromMilliseconds = (arg0) => new closure_3(0, 0, 0, arg0);
+tmp7.fromSeconds = (arg0) => new closure_3(0, 0, arg0);
+tmp7.fromMinutes = (arg0) => new closure_3(0, arg0);
+tmp7.fromHours = (arg0) => new closure_3(arg0);
+const tmp8 = (() => {
   class StopWatch {
     constructor() {
       tmp = arg0;
       self = this;
       if (arg0 === undefined) {
-        tmp = closure_8;
+        tmp = outer1_8;
       }
-      tmp2 = closure_5(self, StopWatch);
+      tmp2 = outer1_5(self, StopWatch);
       self.timestampProducer = tmp;
       self.startTime = undefined;
       self.timePassed = 0;
       return;
     }
   }
-  const arg1 = StopWatch;
   let obj = {
     key: "lastElapsed",
     get() {
@@ -242,10 +245,10 @@ const tmp8 = () => {
     value: function elapsed() {
       const self = this;
       if (null == this.startTime) {
-        return closure_9.fromMilliseconds(self.timePassed);
+        return outer1_9.fromMilliseconds(self.timePassed);
       } else {
         const timestampProducer = self.timestampProducer;
-        return closure_9.fromMilliseconds(self.timePassed + (timestampProducer.now() - self.startTime));
+        return outer1_9.fromMilliseconds(self.timePassed + (timestampProducer.now() - self.startTime));
       }
     }
   };
@@ -266,16 +269,16 @@ const tmp8 = () => {
     }
   ];
   return callback2(StopWatch, items, items1);
-}();
-const tmp4 = () => {
+})();
+let closure_10 = tmp8;
+let tmp4 = (() => {
   class ControllableTimeStampProducer {
     constructor() {
-      tmp = closure_5(this, ControllableTimeStampProducer);
+      tmp = outer1_5(this, ControllableTimeStampProducer);
       this.time = 0;
       return;
     }
   }
-  const arg1 = ControllableTimeStampProducer;
   let obj = {
     key: "now",
     value() {
@@ -304,10 +307,10 @@ const tmp4 = () => {
     }
   };
   return callback2(ControllableTimeStampProducer, items);
-}();
+})();
 let obj = { NONE: "NONE", SECONDS: "SECONDS", MINUTES: "MINUTES", HOURS: "HOURS", DAYS: "DAYS", WEEKS: "WEEKS", MONTHS: "MONTHS", YEARS: "YEARS" };
 obj = { unit: obj.NONE, max: 0 };
-const items = [obj, { unit: obj.SECONDS, max: 1 }, , , , , , ];
+let items = [obj, { unit: obj.SECONDS, max: 1 }, , , , , , ];
 obj = { unit: obj.MINUTES, max: 60 };
 items[2] = obj;
 items[3] = { unit: obj.HOURS, max: 1440 };
@@ -315,21 +318,21 @@ items[4] = { unit: obj.DAYS, max: 44640 };
 items[5] = { unit: obj.WEEKS, max: 40320 };
 items[6] = { unit: obj.MONTHS, max: 525600 };
 items[7] = { unit: obj.YEARS, max: Infinity };
-const obj1 = { unit: obj.HOURS, max: 1440 };
+let obj1 = { unit: obj.HOURS, max: 1440 };
 const obj2 = { unit: obj.DAYS, max: 44640 };
 const obj3 = { unit: obj.WEEKS, max: 40320 };
 const obj4 = { unit: obj.MONTHS, max: 525600 };
 const obj5 = { unit: obj.YEARS, max: Infinity };
-const tmp9 = () => {
+const tmp9 = (() => {
   class DurationEnabled {
     constructor(arg0) {
       tmp = arg1;
       self = this;
       if (arg1 === undefined) {
-        tmp = closure_8;
+        tmp = outer1_8;
       }
-      tmp2 = closure_5(self, DurationEnabled);
-      tmp3 = new closure_10(tmp);
+      tmp2 = outer1_5(self, DurationEnabled);
+      tmp3 = new outer1_10(tmp);
       self.stopwatch = tmp3;
       self.state = arg0;
       stopwatch = self.stopwatch;
@@ -337,7 +340,6 @@ const tmp9 = () => {
       return;
     }
   }
-  const arg1 = DurationEnabled;
   let obj = {
     key: "value",
     get() {
@@ -376,18 +378,17 @@ const tmp9 = () => {
     }
   };
   return callback2(DurationEnabled, items);
-}();
-const tmp10 = () => {
+})();
+const tmp10 = (() => {
   class TimeOut {
     constructor(arg0) {
-      tmp = closure_5(this, TimeOut);
+      tmp = outer1_5(this, TimeOut);
       this.timeout = arg0;
-      tmp2 = new closure_10();
+      tmp2 = new outer1_10();
       this.watch = tmp2;
       return;
     }
   }
-  const importDefault = TimeOut;
   let obj = {
     key: "hasTimedOut",
     value() {
@@ -423,10 +424,10 @@ const tmp10 = () => {
   const items1 = [obj, ];
   const obj1 = { key: "waitFor" };
   let closure_0 = callback(async (arg0, arg1) => {
-    const fromMillisecondsResult = closure_9.fromMilliseconds(100);
+    const fromMillisecondsResult = outer2_9.fromMilliseconds(100);
     let tmp2 = arg0;
     let sleep = fromMillisecondsResult;
-    if (!(arg0 instanceof closure_9)) {
+    if (!(arg0 instanceof outer2_9)) {
       const timeout = arg0.timeout;
       tmp2 = timeout;
       sleep = fromMillisecondsResult;
@@ -436,11 +437,11 @@ const tmp10 = () => {
       }
     }
     while (true) {
-      if (true === yield arg1()) {
+      if (true === (yield arg1())) {
         break;
       } else {
-        let tmp4 = closure_13;
-        let tmp5 = yield closure_13(sleep);
+        let tmp4 = outer2_13;
+        let tmp5 = yield outer2_13(sleep);
         if (!startNewResult.hasTimedOut()) {
           continue;
         } else {
@@ -450,13 +451,13 @@ const tmp10 = () => {
       }
     }
   });
-  obj1.value = function waitFor(closure_8, closure_9, closure_11, closure_12, closure_112, closure_14, closure_17, closure_113, closure_19, closure_192, closure_13, closure_20, closure_22, closure_23, closure_132, closure_35, closure_36, closure_37, closure_38, closure_21, closure_39, closure_40) {
+  obj1.value = function waitFor(outer1_8, outer1_9, outer1_11, outer1_12, outer1_112, outer1_14, outer1_17, outer1_113, outer1_19, outer1_192, outer1_13, outer1_20, outer1_22, outer1_23, outer1_132, outer1_35, outer1_36, outer1_37, outer1_38, outer1_21, outer1_39, outer1_40) {
     return callback(...arguments);
   };
   items1[1] = obj1;
   return callback2(TimeOut, items, items1);
-}();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/time-utils/TimeUtils.tsx");
+})();
+const result = require("_classCallCheck").fileFinishedImporting("../discord_common/js/packages/time-utils/TimeUtils.tsx");
 
 export const MS_PER_SECOND = 1000;
 export const MS_PER_MINUTE = 60000;
@@ -476,13 +477,14 @@ export { convertMinutesToGivenTimeUnit };
 export const TimeUnitMax = items;
 export { getTimeUnit };
 export const getTimeAndUnit = function getTimeAndUnit(rounded, items) {
+  let closure_0 = items;
   if (null == rounded) {
     let obj = {};
     obj.unit = obj.NONE;
     obj.time = 0;
     return obj;
   } else {
-    const tmp2 = getTimeUnit(rounded, (arg0) => arg1.includes(arg0));
+    const tmp2 = getTimeUnit(rounded, (arg0) => items.includes(arg0));
     let tmp3 = null;
     if (null != tmp2) {
       tmp3 = convertMinutesToGivenTimeUnit(rounded, tmp2);

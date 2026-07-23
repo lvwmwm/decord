@@ -1,19 +1,20 @@
-// Module ID: 12247
-// Function ID: 93940
+// Module ID: 12361
+// Function ID: 96091
 // Name: _showMarketingMomentRewardScreen
-// Dependencies: []
+// Dependencies: [5, 6774, 6773, 9772, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 12247 (_showMarketingMomentRewardScreen)
+// Module 12361 (_showMarketingMomentRewardScreen)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _showMarketingMomentRewardScreen() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _showMarketingMomentRewardScreen = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/premium_marketing/native/showMarketingMomentRewardScreen.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/premium_marketing/native/showMarketingMomentRewardScreen.tsx");
 
 export const showMarketingMomentRewardScreen = function showMarketingMomentRewardScreen(arg0) {
   return _showMarketingMomentRewardScreen(...arguments);

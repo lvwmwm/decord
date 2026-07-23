@@ -1,10 +1,11 @@
 // Module ID: 1544
-// Function ID: 17567
+// Function ID: 17568
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 1537]
 
 // Module 1544 (context)
-const context = importAll(dependencyMap[0]).createContext(importDefault(dependencyMap[1]));
+import context from "module_1537";
+
 context.displayName = "ThemeContext";
 
 export default context;

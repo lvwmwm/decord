@@ -1,20 +1,22 @@
-// Module ID: 9681
-// Function ID: 75365
+// Module ID: 9688
+// Function ID: 75406
 // Name: useThemeAndReducedMotionAwareAssetUrl
-// Dependencies: []
+// Dependencies: [4122, 4066, 566, 3840, 2]
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 9681 (useThemeAndReducedMotionAwareAssetUrl)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/promotions/MarketingComponentHooks.tsx");
+// Module 9688 (useThemeAndReducedMotionAwareAssetUrl)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/premium/promotions/MarketingComponentHooks.tsx");
 
 export const useThemeAndReducedMotionAwareAssetUrl = function useThemeAndReducedMotionAwareAssetUrl(asset, arg1) {
-  const tmp = importDefault(dependencyMap[1])();
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const tmp = importDefault(4066)();
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.useReducedMotion);
   if (null == asset) {
     return null;
   } else {
-    const obj2 = arg1(dependencyMap[3]);
+    const obj2 = require(3840) /* isThemeLight */;
   }
 };

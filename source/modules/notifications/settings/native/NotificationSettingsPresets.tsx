@@ -1,79 +1,85 @@
-// Module ID: 10278
-// Function ID: 79410
+// Module ID: 10291
+// Function ID: 79483
 // Name: NotificationSettingsPresets
-// Dependencies: []
+// Dependencies: [31, 27, 33, 1212, 4328, 4091, 10292, 10202, 4130, 689, 8360, 4126, 4543, 8760, 10294, 10288, 2]
 // Exports: NotificationSettingsChannelPresets, NotificationSettingsGuildPresets
 
-// Module 10278 (NotificationSettingsPresets)
+// Module 10291 (NotificationSettingsPresets)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function NotificationSettingsPresets(preset) {
-  const arg1 = preset;
+  const _require = preset;
   let num = 0;
-  if (preset.preset !== arg1(dependencyMap[4]).Presets.ALL_MESSAGES) {
+  if (preset.preset !== _require(num[4]).Presets.ALL_MESSAGES) {
     let num2 = 1;
-    if (preset.preset !== arg1(dependencyMap[4]).Presets.MENTIONS) {
+    if (preset.preset !== _require(num[4]).Presets.MENTIONS) {
       let num3;
-      if (preset.preset === arg1(dependencyMap[4]).Presets.NOTHING) {
+      if (preset.preset === _require(num[4]).Presets.NOTHING) {
         num3 = 2;
       }
       num2 = num3;
     }
     num = num2;
   }
-  const dependencyMap = num;
-  let obj = arg1(dependencyMap[10]);
+  let obj = _require(num[10]);
   obj = {
     pageWidth: 0,
-    onSetActiveIndex(self) {
-      let tmp = 0 === self;
+    onSetActiveIndex(arg0) {
+      let tmp = 0 === arg0;
       if (tmp) {
-        tmp = self.preset !== self(num[4]).Presets.ALL_MESSAGES;
+        tmp = preset.preset !== preset(num[4]).Presets.ALL_MESSAGES;
       }
       if (tmp) {
-        self.updatePreset(self(num[4]).Presets.ALL_MESSAGES);
+        preset.updatePreset(preset(num[4]).Presets.ALL_MESSAGES);
       }
-      let tmp9 = 1 === self;
+      let tmp9 = 1 === arg0;
       if (tmp9) {
-        tmp9 = self.preset !== self(num[4]).Presets.MENTIONS;
+        tmp9 = preset.preset !== preset(num[4]).Presets.MENTIONS;
       }
       if (tmp9) {
-        self.updatePreset(self(num[4]).Presets.MENTIONS);
+        preset.updatePreset(preset(num[4]).Presets.MENTIONS);
       }
-      let tmp17 = 2 === self;
+      let tmp17 = 2 === arg0;
       if (tmp17) {
-        tmp17 = self.preset !== self(num[4]).Presets.NOTHING;
+        tmp17 = preset.preset !== preset(num[4]).Presets.NOTHING;
       }
       if (tmp17) {
-        self.updatePreset(self(num[4]).Presets.NOTHING);
+        preset.updatePreset(preset(num[4]).Presets.NOTHING);
       }
     }
   };
   obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.label = intl.string(arg1(dependencyMap[3]).t.hZrr6k);
-  obj.id = arg1(dependencyMap[4]).Presets.ALL_MESSAGES;
-  obj.icon = callback(arg1(dependencyMap[5]).CircleCheckIcon, {});
+  const intl = _require(num[3]).intl;
+  obj.label = intl.string(_require(num[3]).t.hZrr6k);
+  obj.id = _require(num[4]).Presets.ALL_MESSAGES;
+  obj.icon = callback(_require(num[5]).CircleCheckIcon, {});
   obj.page = null;
   const items = [obj, , ];
   const obj1 = {};
-  const intl2 = arg1(dependencyMap[3]).intl;
-  obj1.label = intl2.string(arg1(dependencyMap[3]).t.y59NJm);
-  obj1.id = arg1(dependencyMap[4]).Presets.MENTIONS;
-  obj1.icon = callback(arg1(dependencyMap[6]).MagicWandIcon, {});
+  const intl2 = _require(num[3]).intl;
+  obj1.label = intl2.string(_require(num[3]).t.y59NJm);
+  obj1.id = _require(num[4]).Presets.MENTIONS;
+  obj1.icon = callback(_require(num[6]).MagicWandIcon, {});
   obj1.page = null;
   items[1] = obj1;
   const obj2 = {};
-  const intl3 = arg1(dependencyMap[3]).intl;
-  obj2.label = intl3.string(arg1(dependencyMap[3]).t.pGn/bJ);
-  obj2.id = arg1(dependencyMap[4]).Presets.NOTHING;
-  obj2.icon = callback(arg1(dependencyMap[7]).BellSlashIcon, {});
+  const intl3 = _require(num[3]).intl;
+  obj2.label = intl3.string(_require(num[3]).t["pGn/bJ"]);
+  obj2.id = _require(num[4]).Presets.NOTHING;
+  obj2.icon = callback(_require(num[7]).BellSlashIcon, {});
   obj2.page = null;
   items[2] = obj2;
   obj.items = items;
   obj.defaultIndex = num;
   const segmentedControlState = obj.useSegmentedControlState(obj);
-  const React = segmentedControlState;
   const items1 = [num, segmentedControlState];
-  const effect = React.useEffect(() => {
+  const effect = segmentedControlState.useEffect(() => {
     let tmp = null == num;
     if (!tmp) {
       tmp = num >= 3;
@@ -82,61 +88,57 @@ function NotificationSettingsPresets(preset) {
       segmentedControlState.setActiveIndex(num);
     }
   }, items1);
-  if (preset.preset === arg1(dependencyMap[4]).Presets.CUSTOM) {
+  if (preset.preset === _require(num[4]).Presets.CUSTOM) {
     const obj3 = { style: tmp.customContainer };
-    const obj4 = { style: { WEBP_RE_IOS: "<string:2126337>", kkk: "<string:2097152>" } };
+    const obj4 = { style: { flex: 1, marginRight: 8 } };
     const obj5 = { variant: "text-sm/semibold" };
-    const intl4 = arg1(dependencyMap[3]).intl;
-    obj5.children = intl4.string(arg1(dependencyMap[3]).t.32yow9);
-    const items2 = [callback(arg1(dependencyMap[11]).Text, obj5), ];
+    const intl4 = _require(num[3]).intl;
+    obj5.children = intl4.string(_require(num[3]).t["32yow9"]);
+    const items2 = [callback(_require(num[11]).Text, obj5), ];
     const obj6 = { variant: "text-xs/medium" };
-    const intl5 = arg1(dependencyMap[3]).intl;
-    obj6.children = intl5.string(arg1(dependencyMap[3]).t.l3doVX);
-    items2[1] = callback(arg1(dependencyMap[11]).Text, obj6);
+    const intl5 = _require(num[3]).intl;
+    obj6.children = intl5.string(_require(num[3]).t.l3doVX);
+    items2[1] = callback(_require(num[11]).Text, obj6);
     obj4.children = items2;
     const items3 = [callback2(View, obj4), ];
     const obj7 = { variant: "secondary" };
-    const intl6 = arg1(dependencyMap[3]).intl;
-    obj7.text = intl6.string(arg1(dependencyMap[3]).t.ztO+l+);
+    const intl6 = _require(num[3]).intl;
+    obj7.text = intl6.string(_require(num[3]).t["ztO+l+"]);
     obj7.onPress = function onPress() {
-      arg0.updatePreset(arg0(num[4]).Presets.MENTIONS);
+      preset.updatePreset(preset(num[4]).Presets.MENTIONS);
     };
-    items3[1] = callback(arg1(dependencyMap[12]).Button, obj7);
+    items3[1] = callback(_require(num[12]).Button, obj7);
     obj3.children = items3;
     let tmp11 = callback2(View, obj3);
   } else {
     const obj8 = { variant: "experimental_Large", state: segmentedControlState };
-    tmp11 = callback(arg1(dependencyMap[13]).SegmentedControl, obj8);
+    tmp11 = callback(_require(num[13]).SegmentedControl, obj8);
   }
   return tmp11;
 }
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[9]).radii.lg + 8, backgroundColor: importDefault(dependencyMap[9]).colors.REDESIGN_INPUT_CONTROL_ACTIVE_BG };
-obj.customContainer = obj;
-let closure_6 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsPresets.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: 16, minHeight: 82, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg + 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_INPUT_CONTROL_ACTIVE_BG };
+_createForOfIteratorHelperLoose.customContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsPresets.tsx");
 
 export const NotificationSettingsGuildPresets = function NotificationSettingsGuildPresets(guildId) {
-  const arg1 = guildId;
+  const _require = guildId;
   const obj = {
-    preset: arg1(dependencyMap[14]).useGuildPresetSettings(guildId.guildId).preset,
+    preset: _require(10294).useGuildPresetSettings(guildId.guildId).preset,
     updatePreset(arg0) {
-      return arg0(closure_1[14]).updateGuildPreset(arg0.guildId, arg0);
+      return guildId(outer1_1[14]).updateGuildPreset(guildId.guildId, arg0);
     }
   };
   return callback(NotificationSettingsPresets, obj);
 };
 export const NotificationSettingsChannelPresets = function NotificationSettingsChannelPresets(channel) {
-  const arg1 = channel;
+  const _require = channel;
   const obj = {
-    preset: arg1(dependencyMap[15]).useChannelPresetSettings(channel.channel).preset,
+    preset: _require(10288).useChannelPresetSettings(channel.channel).preset,
     updatePreset(arg0) {
-      return arg0(closure_1[15]).updateChannelPreset(arg0.channel.guild_id, arg0.channel.id, arg0);
+      return channel(outer1_1[15]).updateChannelPreset(channel.channel.guild_id, channel.channel.id, arg0);
     }
   };
   return callback(NotificationSettingsPresets, obj);

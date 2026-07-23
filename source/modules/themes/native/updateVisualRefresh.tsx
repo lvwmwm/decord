@@ -1,21 +1,21 @@
-// Module ID: 15522
-// Function ID: 118431
+// Module ID: 15639
+// Function ID: 120604
 // Name: updateVisualRefresh
-// Dependencies: []
+// Dependencies: [27, 477, 13372, 2]
 // Exports: updateVisualRefresh
 
-// Module 15522 (updateVisualRefresh)
-const NativeModules = require(dependencyMap[0]).NativeModules;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/themes/native/updateVisualRefresh.tsx");
+// Module 15639 (updateVisualRefresh)
+import { NativeModules } from "get ActivityIndicator";
 
-export const updateVisualRefresh = function updateVisualRefresh(arg0) {
+let result = require("enforcing").fileFinishedImporting("modules/themes/native/updateVisualRefresh.tsx");
+
+export const updateVisualRefresh = function updateVisualRefresh(closure_0) {
   if (obj.isAndroid()) {
-    let result = importDefault(dependencyMap[2]).setVisualRefreshEnabled(arg0);
-    const obj2 = importDefault(dependencyMap[2]);
+    let result = importDefault(13372).setVisualRefreshEnabled(closure_0);
+    const obj2 = importDefault(13372);
   } else {
     const DCDTheme = NativeModules.DCDTheme;
-    result = DCDTheme.setVisualRefreshEnabled(arg0);
+    result = DCDTheme.setVisualRefreshEnabled(closure_0);
   }
   return result;
 };

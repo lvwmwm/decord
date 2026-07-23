@@ -1,14 +1,15 @@
-// Module ID: 15958
-// Function ID: 122390
+// Module ID: 16075
+// Function ID: 124563
 // Name: ActionRowLayoutComponent
-// Dependencies: []
+// Dependencies: [31, 27, 33, 2]
 // Exports: default
 
-// Module 15958 (ActionRowLayoutComponent)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/interaction_components/native/layouts/ActionRowLayoutComponent.tsx");
+// Module 16075 (ActionRowLayoutComponent)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const result = require("jsxProd").fileFinishedImporting("modules/interaction_components/native/layouts/ActionRowLayoutComponent.tsx");
 
 export default function ActionRowLayoutComponent(components) {
   components = components.components;
@@ -17,7 +18,7 @@ export default function ActionRowLayoutComponent(components) {
     tmp2 = null;
     if (0 !== components.length) {
       const obj = { children: tmp(components) };
-      tmp2 = <View {...obj} />;
+      tmp2 = <View>{tmp(components)}</View>;
     }
   }
   return tmp2;

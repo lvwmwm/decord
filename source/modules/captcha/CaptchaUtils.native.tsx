@@ -1,17 +1,20 @@
-// Module ID: 15844
-// Function ID: 121097
-// Dependencies: []
+// Module ID: 15961
+// Function ID: 123270
+// Dependencies: [3823, 9448, 566, 4098, 15962, 1934, 9446, 2]
 
-// Module 15844
-let closure_3 = importDefault(dependencyMap[0]);
-const CAPTCHA_MODAL_KEY = arg1(dependencyMap[1]).CAPTCHA_MODAL_KEY;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/captcha/CaptchaUtils.native.tsx");
+// Module 15961
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { CAPTCHA_MODAL_KEY } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/captcha/CaptchaUtils.native.tsx");
 
 export default {
   showCaptcha(options) {
     let captchaService;
     let sitekey;
     let obj = arg2;
+    const _require = arg1;
     if (arg2 === undefined) {
       obj = {};
     }
@@ -20,62 +23,65 @@ export default {
       sitekey,
       captchaService,
       onCaptchaVerify(captcha_key, captcha_rqtoken) {
-        return captcha_rqtoken({ captcha_key, captcha_rqtoken });
+        return callback({ captcha_key, captcha_rqtoken });
       },
       close() {
-        return callback(closure_2[3]).hideActionSheet(closure_4);
+        return outer1_1(outer1_2[3]).hideActionSheet(outer1_4);
       }
     };
-    const obj2 = importDefault(dependencyMap[3]);
+    const obj2 = importDefault(4098);
     const merged = Object.assign(obj);
     const merged1 = Object.assign(options.options);
-    obj2.openLazy(arg1(dependencyMap[5])(dependencyMap[4], dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
+    obj2.openLazy(_require(1934)(15962, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
   },
   showCaptchaAsync(nextResult1) {
+    let c1;
+    let c2;
+    let c3;
+    let c4;
     let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
-    const arg1 = obj;
-    let closure_1;
-    let closure_2;
-    let closure_3;
-    let closure_4;
-    ({ sitekey: closure_1, captchaService: closure_2, captchaSessionId: closure_3, options: closure_4 } = nextResult1);
+    c1 = undefined;
+    c2 = undefined;
+    c3 = undefined;
+    c4 = undefined;
+    ({ sitekey: c1, captchaService: c2, captchaSessionId: c3, options: c4 } = nextResult1);
     return new Promise((arg0, arg1) => {
-      let obj = arg0;
-      const _undefined = arg1;
-      obj = _undefined(paths[3]);
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let obj = _undefined(_undefined2[3]);
       obj = {
-        sitekey: _undefined,
-        captchaService: paths,
+        sitekey: closure_1,
+        captchaService: _undefined2,
         onCaptchaVerify(captcha_key, captcha_rqtoken) {
-          return captcha_key({ captcha_key, captcha_rqtoken, captcha_session_id: closure_3 });
+          return callback({ captcha_key, captcha_rqtoken, captcha_session_id: outer1_3 });
         },
         onReject(arg0) {
-          if (arg0 === arg0(closure_2[6]).CaptchaError.CANCEL) {
-            const CaptchaCancelError = arg0(closure_2[6]).CaptchaCancelError;
+          if (arg0 === obj(9446).CaptchaError.CANCEL) {
+            const CaptchaCancelError = obj(9446).CaptchaCancelError;
             const prototype2 = CaptchaCancelError.prototype;
             const captchaCancelError = new CaptchaCancelError();
-            arg1(captchaCancelError);
+            callback2(captchaCancelError);
           } else {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
-            const error = new Error("Failed to display captcha for service " + closure_2 + ".");
-            arg1(error);
+            const error = new Error("Failed to display captcha for service " + outer1_2 + ".");
+            callback2(error);
           }
         },
         close() {
-          return arg1(closure_2[3]).hideActionSheet(closure_4);
+          return callback2(4098).hideActionSheet(c4);
         }
       };
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(closure_4);
-      obj.openLazy(obj(paths[5])(paths[4], paths.paths), closure_4, obj, "stack");
+      const merged = Object.assign(closure_0);
+      const merged1 = Object.assign(c4);
+      obj.openLazy(obj(_undefined2[5])(_undefined2[4], _undefined2.paths), c4, obj, "stack");
     });
   },
   useIsCaptchaModalOpen() {
-    const items = [closure_3];
-    return arg1(dependencyMap[2]).useStateFromStores(items, () => key.getKey() === closure_4);
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getKey() === outer1_4);
   }
 };

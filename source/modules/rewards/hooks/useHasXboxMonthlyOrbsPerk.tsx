@@ -1,10 +1,14 @@
-// Module ID: 12541
-// Function ID: 96338
+// Module ID: 12655
+// Function ID: 98494
 // Name: hasCrepeMonthlyOrbsPerk
-// Dependencies: [704643093, 3137339412, 17, 83886096, 671088689, 33554448, 1946157056]
+// Dependencies: [1849, 1851, 3776, 1865, 1867, 566, 2]
 // Exports: useHasXboxMonthlyOrbsPerk
 
-// Module 12541 (hasCrepeMonthlyOrbsPerk)
+// Module 12655 (hasCrepeMonthlyOrbsPerk)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PremiumTypes } from "GuildFeatures";
+
+const require = arg1;
 function hasCrepeMonthlyOrbsPerk(currentUser) {
   if (obj.canUseMonthlyOrbs(currentUser)) {
     if (!obj2.isPremiumExactly(currentUser, PremiumTypes.TIER_2)) {
@@ -12,23 +16,21 @@ function hasCrepeMonthlyOrbsPerk(currentUser) {
       if (null != currentUser) {
         perks = currentUser.perks;
       }
-      const perkSource = arg1(dependencyMap[3]).getPerkSource(perks, arg1(dependencyMap[4]).Perk.MONTHLY_ORBS);
+      const perkSource = require(1865) /* parseServerPerkConfigKind */.getPerkSource(perks, require(1867) /* _callSuper */.Perk.MONTHLY_ORBS);
       let hasItem = null != perkSource;
       if (hasItem) {
-        hasItem = perkSource.includes(arg1(dependencyMap[4]).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+        hasItem = perkSource.includes(require(1867) /* _callSuper */.PerkSource.SOURCE_THIRDPARTY_CROISSANT);
       }
       return hasItem;
     }
-    const obj2 = arg1(dependencyMap[2]);
+    obj2 = require(3776) /* _createForOfIteratorHelperLoose */;
   }
   return false;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/rewards/hooks/useHasXboxMonthlyOrbsPerk.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/rewards/hooks/useHasXboxMonthlyOrbsPerk.tsx");
 
 export { hasCrepeMonthlyOrbsPerk };
 export const useHasXboxMonthlyOrbsPerk = function useHasXboxMonthlyOrbsPerk() {
-  const items = [closure_3];
-  return hasCrepeMonthlyOrbsPerk(arg1(dependencyMap[5]).useStateFromStores(items, () => currentUser.getCurrentUser()));
+  const items = [_isNativeReflectConstruct];
+  return hasCrepeMonthlyOrbsPerk(require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getCurrentUser()));
 };

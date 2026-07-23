@@ -1,53 +1,68 @@
-// Module ID: 11215
-// Function ID: 87335
+// Module ID: 11225
+// Function ID: 87385
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [7, 6, 31, 5039, 1352, 1907, 1917, 1910, 3767, 1849, 4567, 22, 1327, 4320, 4974, 1881, 6924, 2]
 // Exports: parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 11215 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11225 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import result from "result";
+import closure_5 from "_isNativeReflectConstruct";
+import { isGuildSelectableChannelType as closure_6 } from "_callSuper";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import MENTION_SENTINEL from "MENTION_SENTINEL";
+import importDefaultResult from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -87,61 +102,61 @@ function _arrayLikeToArray(arg0, arg1) {
 function getUsers(getGuildId) {
   const guildId = getGuildId.getGuildId();
   if (getGuildId.isPrivate()) {
-    let mapped = importDefault(dependencyMap[11])(getGuildId.recipients).map((userId) => ({ userId }));
-    const arr3 = importDefault(dependencyMap[11])(getGuildId.recipients);
+    let mapped = importDefault(22)(getGuildId.recipients).map((userId) => ({ userId }));
+    const arr3 = importDefault(22)(getGuildId.recipients);
   } else if (null != guildId) {
-    const tmp7 = importDefault(dependencyMap[11]);
-    mapped = importDefault(dependencyMap[11])(members.getMembers(guildId)).map((userId) => ({ userId: userId.userId }));
-    const tmp7Result = importDefault(dependencyMap[11])(members.getMembers(guildId));
+    const tmp7 = importDefault(22);
+    mapped = importDefault(22)(members.getMembers(guildId)).map((userId) => ({ userId: userId.userId }));
+    const tmp7Result = importDefault(22)(members.getMembers(guildId));
   } else {
-    mapped = importDefault(dependencyMap[11])([]);
+    mapped = importDefault(22)([]);
   }
-  const mapped1 = mapped.map((userId) => user.getUser(userId.userId));
-  const found = mapped1.filter(arg1(dependencyMap[12]).isNotNullish);
+  const mapped1 = mapped.map((userId) => outer1_11.getUser(userId.userId));
+  const found = mapped1.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
   return found.map((id) => ({ id: id.id, text: id.tag }));
 }
 function getRoles(guild_id) {
   guild_id = guild_id.guild_id;
   if (null != guild_id) {
-    let sortedRoles = sortedRoles.getSortedRoles(guild_id);
+    sortedRoles = sortedRoles.getSortedRoles(guild_id);
   } else {
     sortedRoles = [];
   }
-  return importDefault(dependencyMap[11])(sortedRoles).map((id) => ({ id: id.id, text: id.name }));
+  return importDefault(22)(sortedRoles).map((id) => ({ id: id.id, text: id.name }));
 }
 function getChannels(getGuildId, arr) {
+  const _require = arr;
   const guildId = getGuildId.getGuildId();
-  const importDefault = guildId;
   if (null == guildId) {
     const items = [];
     if (tmp2) {
       items.push(getGuildId);
     }
-    const tmp2 = null == arr || arr.includes(getGuildId.type);
-    return importDefault(textChannelNameDisambiguations2[11])(items).map((id) => {
-      const obj = { id: id.id, text: arg1(closure_2[13]).computeChannelName(id, closure_11, closure_10) };
+    tmp2 = null == arr || arr.includes(getGuildId.type);
+    return guildId(22)(items).map((id) => {
+      const obj = { id: id.id, text: arr(4320).computeChannelName(id, outer1_11, outer1_10) };
       return obj;
     });
   } else {
-    const textChannelNameDisambiguations2 = textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId);
-    const tmp9 = importDefault(textChannelNameDisambiguations2[11]);
-    const tmp9Result = importDefault(textChannelNameDisambiguations2[11])(arr(textChannelNameDisambiguations2[14]).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
-    const combined = importDefault(textChannelNameDisambiguations2[11])(arr(textChannelNameDisambiguations2[14]).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).flatMap((arg0) => channels.getChannels(guildId)[arg0].map((channel) => channel.channel)).concat(closure_5.computeAllActiveJoinedThreads(guildId));
+    const dependencyMap = textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId);
+    const tmp9 = guildId(22);
+    const tmp9Result = guildId(22)(_require(4974).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+    const combined = guildId(22)(_require(4974).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).flatMap((arg0) => outer1_7.getChannels(guildId)[arg0].map((channel) => channel.channel)).concat(closure_5.computeAllActiveJoinedThreads(guildId));
     const found = combined.filter((type) => {
-      let hasItem = null == arg1;
+      let hasItem = null == arr;
       if (!hasItem) {
-        hasItem = arg1.includes(type.type);
+        hasItem = arr.includes(type.type);
       }
       return hasItem;
     });
     return found.map((id) => {
       const obj = { id: id.id };
-      if (!callback(id.type)) {
-        let channelName = arg1(closure_2[13]).computeChannelName(id, closure_11, closure_10);
-        const obj2 = arg1(closure_2[13]);
+      if (!outer1_6(id.type)) {
+        let channelName = arr(4320).computeChannelName(id, outer1_11, outer1_10);
+        const obj2 = arr(4320);
       } else {
         channelName = undefined;
-        if (null != closure_2[id.id]) {
+        if (null != dependencyMap[id.id]) {
           channelName = tmp2.name;
         }
       }
@@ -150,20 +165,10 @@ function getChannels(getGuildId, arr) {
     });
   }
 }
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[4]).isGuildSelectableChannelType;
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-const importDefaultResult = importDefault(dependencyMap[0]);
-({ MENTION_SENTINEL: closure_12, CHANNEL_SENTINEL: closure_13 } = arg1(dependencyMap[10]));
-let closure_14 = /^@(([^@#:]+)#([0-9]{4}))$/i;
+({ MENTION_SENTINEL: closure_12, CHANNEL_SENTINEL: closure_13 } = MENTION_SENTINEL);
+const re14 = /^@(([^@#:]+)#([0-9]{4}))$/i;
 function matchPrefix(arg0, str, sortBy) {
-  str = arg0;
+  let closure_0 = arg0;
   if (str[0] !== arg0) {
     return null;
   } else {
@@ -172,27 +177,26 @@ function matchPrefix(arg0, str, sortBy) {
       const formatted = closure_1.toLowerCase();
       return formatted === text.text.toLowerCase();
     });
-    const mapped = found.map((id) => ({ text: id + id.text, id: id.id }));
+    const mapped = found.map((id) => ({ text: closure_0 + id.text, id: id.id }));
     return mapped.first();
   }
 }
 class ApplicationCommandOptionValueParser {
   constructor(arg0) {
-    arg1 = this;
-    tmp = closure_3(this, ApplicationCommandOptionValueParser);
+    self = this;
+    tmp = c3(this, ApplicationCommandOptionValueParser);
     this.parse = (text, type) => {
       const trimmed = text.trim();
-      const self = trimmed;
-      const arr = callback2(self.channel);
-      let closure_2 = callback3(self.channel);
-      let closure_3 = arr.map((text) => {
+      const arr = outer1_19(trimmed.channel);
+      let closure_2 = outer1_20(trimmed.channel);
+      let _isNativeReflectConstruct = arr.map((text) => {
         const obj = {};
         const merged = Object.assign(text);
         obj["text"] = text.text.split("#")[0];
         return obj;
       });
       function matchUser() {
-        let tmp = callback(closure_12, trimmed, arr);
+        let tmp = outer2_15(outer2_12, trimmed, arr);
         let id;
         if (null != tmp) {
           id = tmp.id;
@@ -201,7 +205,7 @@ class ApplicationCommandOptionValueParser {
           const obj = { type: "userMention", userId: tmp.id };
           const tmp9 = obj;
         } else {
-          const tmp7 = callback(closure_12, trimmed, closure_3);
+          const tmp7 = outer2_15(outer2_12, trimmed, _isNativeReflectConstruct);
           let id1;
           if (null != tmp7) {
             id1 = tmp7.id;
@@ -211,7 +215,7 @@ class ApplicationCommandOptionValueParser {
         return tmp9;
       }
       function matchRole() {
-        const tmp = callback(closure_12, trimmed, closure_2);
+        const tmp = outer2_15(outer2_12, trimmed, closure_2);
         let id;
         if (null != tmp) {
           id = tmp.id;
@@ -219,19 +223,19 @@ class ApplicationCommandOptionValueParser {
         if (null != id) {
           let obj = { type: "roleMention", roleId: tmp.id };
         } else if ("@everyone" === trimmed) {
-          obj = {};
+          obj = { type: "textMention", text: "@everyone" };
         }
         return obj;
       }
-      if (type.type === self(closure_2[15]).ApplicationCommandOptionType.USER) {
+      if (type.type === self(outer1_2[15]).ApplicationCommandOptionType.USER) {
         const matchUserResult = matchUser();
         if (null != matchUserResult) {
           return matchUserResult;
         } else {
-          regex.lastIndex = 0;
-          const match = regex.exec(trimmed);
+          outer1_14.lastIndex = 0;
+          const match = outer1_14.exec(trimmed);
           if (null != match) {
-            const findByTagResult = closure_11.findByTag(match[2], match[3]);
+            const findByTagResult = outer1_11.findByTag(match[2], match[3]);
             if (null != findByTagResult) {
               let obj = { type: "userMention", userId: findByTagResult.id };
               return obj;
@@ -239,14 +243,14 @@ class ApplicationCommandOptionValueParser {
           }
         }
       }
-      if (type.type === self(closure_2[15]).ApplicationCommandOptionType.ROLE) {
+      if (type.type === self(outer1_2[15]).ApplicationCommandOptionType.ROLE) {
         const matchRoleResult = matchRole();
         if (null != matchRoleResult) {
           return matchRoleResult;
         }
       }
-      if (type.type === self(closure_2[15]).ApplicationCommandOptionType.CHANNEL) {
-        const tmp12 = callback(closure_13, trimmed, callback4(self.channel, type.channelTypes));
+      if (type.type === self(outer1_2[15]).ApplicationCommandOptionType.CHANNEL) {
+        const tmp12 = outer1_15(outer1_13, trimmed, outer1_21(trimmed.channel, type.channelTypes));
         if (null != tmp12) {
           if (null != tmp12.id) {
             obj = { type: "channelMention", channelId: tmp12.id };
@@ -254,7 +258,7 @@ class ApplicationCommandOptionValueParser {
           }
         }
       }
-      if (type.type === self(closure_2[15]).ApplicationCommandOptionType.MENTIONABLE) {
+      if (type.type === self(outer1_2[15]).ApplicationCommandOptionType.MENTIONABLE) {
         const matchRoleResult1 = matchRole();
         if (null != matchRoleResult1) {
           return matchRoleResult1;
@@ -263,10 +267,10 @@ class ApplicationCommandOptionValueParser {
           if (null != matchUserResult1) {
             return matchUserResult1;
           } else {
-            regex.lastIndex = 0;
-            const match1 = regex.exec(trimmed);
+            outer1_14.lastIndex = 0;
+            const match1 = outer1_14.exec(trimmed);
             if (null != match1) {
-              const findByTagResult1 = closure_11.findByTag(match1[2], match1[3]);
+              const findByTagResult1 = outer1_11.findByTag(match1[2], match1[3]);
               if (null != findByTagResult1) {
                 const obj1 = { type: "userMention", userId: findByTagResult1.id };
                 return obj1;
@@ -282,9 +286,8 @@ class ApplicationCommandOptionValueParser {
     return;
   }
 }
-const importDefaultResultResult = importDefaultResult(ApplicationCommandOptionValueParser);
-const tmp3 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/chat_input/native/ApplicationCommandOptionValueParser.tsx");
+const importDefaultResultResult = require("_createForOfIteratorHelperLoose")(ApplicationCommandOptionValueParser);
+const result = require("result").fileFinishedImporting("modules/chat_input/native/ApplicationCommandOptionValueParser.tsx");
 
 export { getUsers };
 export { getRoles };
@@ -296,7 +299,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
     return {};
   } else {
     let obj = {};
-    const parserState = activeCommand(dependencyMap[16]).createParserState(channel);
+    const parserState = require(6924) /* _createForOfIteratorHelperLoose */.createParserState(channel);
     const tmp8 = _createForOfIteratorHelperLoose(activeCommand.options);
     let iter2 = tmp8();
     if (!iter2.done) {
@@ -305,15 +308,15 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
         let tmp = current[value.name];
         if (null != tmp) {
           if ("text" === tmp[0].type) {
-            let tmp9 = closure_0;
-            let tmp10 = closure_2;
-            if (value.type === closure_0(closure_2[15]).ApplicationCommandOptionType.STRING) {
+            let tmp9 = require;
+            let tmp10 = dependencyMap;
+            if (value.type === require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.STRING) {
               if (null == value.choices) {
                 if (!value.autocomplete) {
                   obj = { type: "text" };
-                  let tmp2 = closure_1;
-                  let tmp3 = closure_2;
-                  let obj2 = closure_1(closure_2[16]);
+                  let tmp2 = importDefault;
+                  let tmp3 = dependencyMap;
+                  let obj2 = importDefault(6924);
                   obj.text = obj2.parse(channel, tmp[0].text, parserState).content;
                   let items = [obj];
                   obj[value.name] = items;
@@ -332,7 +335,6 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
 };
 export const useApplicationCommandOptionValueParser = function useApplicationCommandOptionValueParser(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   const items = [channel];
-  return React.useMemo(() => new closure_16(channel), items);
+  return React.useMemo(() => new outer1_16(channel), items);
 };

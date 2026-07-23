@@ -1,81 +1,85 @@
-// Module ID: 13973
-// Function ID: 106193
-// Dependencies: []
+// Module ID: 14087
+// Function ID: 108349
+// Dependencies: [31, 27, 4976, 13994, 33, 4130, 14076, 13995, 3991, 4542, 7589, 14088, 14089, 2]
 
-// Module 13973
-const importAllResult = importAll(dependencyMap[0]);
-const QuestDockMode = arg1(dependencyMap[2]).QuestDockMode;
-({ QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5, QUEST_DOCK_EXPANDED_HEIGHT: closure_6 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
+// Module 14087
+import importAllResult from "result";
+import { QuestDockMode } from "QuestsExperimentLocations";
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5, QUEST_DOCK_EXPANDED_HEIGHT: closure_6 } = QUEST_DOCK_COLLAPSED_HEIGHT);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = {};
 obj = {};
-const merged = Object.assign(arg1(dependencyMap[1]).StyleSheet.absoluteFillObject);
+const merged = Object.assign(require("get ActivityIndicator").StyleSheet.absoluteFillObject);
 obj["bottom"] = undefined;
 obj["display"] = "flex";
 obj["zIndex"] = 1;
 obj.wrapper = obj;
-let closure_9 = arg1(dependencyMap[5]).createStyles(obj);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_10 = { code: "function QuestDockContentExpandedTsx1(){const{isEnrolled,QUEST_DOCK_EXPANDED_HEIGHT,windowDimensions,withSpring,activeQuestDockMode,QuestDockMode,QUEST_DOCK_MODE_CHANGE_PHYSICS,questDockWrapperSpecs}=this.__closure;return{height:isEnrolled?undefined:QUEST_DOCK_EXPANDED_HEIGHT,width:windowDimensions.get().width,opacity:withSpring(activeQuestDockMode.get()===QuestDockMode.EXPANDED?1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS),transform:[{translateX:withSpring((questDockWrapperSpecs.get().width-windowDimensions.get().width)/2,QUEST_DOCK_MODE_CHANGE_PHYSICS)}]};}" };
-const obj2 = arg1(dependencyMap[5]);
 const memoResult = importAllResult.memo(function QuestDockContentExpanded() {
-  const quest = importAllResult.useContext(importDefault(dependencyMap[6])).quest;
-  const context = importAllResult.useContext(arg1(dependencyMap[7]).QuestDockGestureContext);
-  const activeQuestDockMode = context.activeQuestDockMode;
-  const arg1 = activeQuestDockMode;
-  const importDefault = questDockWrapperSpecs;
-  const windowDimensions = context.windowDimensions;
-  const dependencyMap = windowDimensions;
+  const quest = importAllResult.useContext(questDockWrapperSpecs(windowDimensions[6])).quest;
+  const context = importAllResult.useContext(activeQuestDockMode(windowDimensions[7]).QuestDockGestureContext);
+  activeQuestDockMode = context.activeQuestDockMode;
+  questDockWrapperSpecs = context.questDockWrapperSpecs;
+  windowDimensions = context.windowDimensions;
   const userStatus = quest.userStatus;
   let enrolledAt;
   if (null != userStatus) {
     enrolledAt = userStatus.enrolledAt;
   }
   let tmp4 = null != enrolledAt;
-  let obj = arg1(dependencyMap[8]);
+  let obj = activeQuestDockMode(windowDimensions[8]);
   const fn = function n() {
     let obj = {};
     let tmp;
-    if (!tmp4) {
-      tmp = closure_6;
+    if (!closure_3) {
+      tmp = outer1_6;
     }
     obj.height = tmp;
     obj.width = windowDimensions.get().width;
     let num = 0;
-    if (activeQuestDockMode.get() === constants.EXPANDED) {
+    if (activeQuestDockMode.get() === outer1_4.EXPANDED) {
       num = 1;
     }
-    obj.opacity = activeQuestDockMode(windowDimensions[9]).withSpring(num, closure_5);
+    obj.opacity = activeQuestDockMode(windowDimensions[9]).withSpring(num, outer1_5);
     obj = {};
     const obj2 = activeQuestDockMode(windowDimensions[9]);
-    obj.translateX = activeQuestDockMode(windowDimensions[9]).withSpring((questDockWrapperSpecs.get().width - windowDimensions.get().width) / 2, closure_5);
+    obj.translateX = activeQuestDockMode(windowDimensions[9]).withSpring((questDockWrapperSpecs.get().width - windowDimensions.get().width) / 2, outer1_5);
     const items = [obj];
     obj.transform = items;
     return obj;
   };
-  obj = { isEnrolled: tmp4, QUEST_DOCK_EXPANDED_HEIGHT: closure_6, windowDimensions, withSpring: arg1(dependencyMap[9]).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5, questDockWrapperSpecs: context.questDockWrapperSpecs };
+  obj = { isEnrolled: tmp4, QUEST_DOCK_EXPANDED_HEIGHT: closure_6, windowDimensions, withSpring: activeQuestDockMode(windowDimensions[9]).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS: closure_5, questDockWrapperSpecs };
   fn.__closure = obj;
   fn.__workletHash = 17161265612101;
   fn.__initData = closure_10;
   const animatedStyle = obj.useAnimatedStyle(fn);
   obj = { style: items };
-  const items = [callback2().wrapper, animatedStyle];
+  items = [callback2().wrapper, animatedStyle];
   let tmp8 = !tmp4;
-  const tmp = callback2();
+  let tmp = callback2();
   const tmp6 = closure_8;
   if (!tmp4) {
-    tmp8 = callback(importDefault(dependencyMap[11]), {});
+    tmp8 = callback(questDockWrapperSpecs(windowDimensions[11]), {});
   }
   const items1 = [tmp8, ];
   if (tmp4) {
     const obj1 = { quest };
-    tmp4 = callback(importDefault(dependencyMap[12]), obj1);
+    tmp4 = callback(questDockWrapperSpecs(windowDimensions[12]), obj1);
   }
   items1[1] = tmp4;
   obj.children = items1;
-  return tmp6(importDefault(dependencyMap[10]), obj);
+  return tmp6(questDockWrapperSpecs(windowDimensions[10]), obj);
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentExpanded.tsx");
+const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentExpanded.tsx");
 
 export default memoResult;

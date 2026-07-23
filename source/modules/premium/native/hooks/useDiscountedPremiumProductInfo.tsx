@@ -1,76 +1,75 @@
-// Module ID: 7180
-// Function ID: 57839
+// Module ID: 7185
+// Function ID: 57873
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: []
+// Dependencies: [31, 5621, 482, 566, 5624, 5618, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 7180 (useDiscountedPremiumProductInfo)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const CurrencyCodes = arg1(dependencyMap[2]).CurrencyCodes;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumProductInfo.tsx");
+// Module 7185 (useDiscountedPremiumProductInfo)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { CurrencyCodes } from "sum";
+
+const require = arg1;
+let result = require("sum").fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumProductInfo.tsx");
 
 export const useDiscountedPremiumProductInfo = function useDiscountedPremiumProductInfo(premiumDiscountOffer, items3) {
-  items3 = premiumDiscountOffer;
+  const _require = premiumDiscountOffer;
   const dependencyMap = items3;
   const items = [premiumDiscountOffer, items3];
-  const memo = React.useMemo(() => {
-    if (null == arg0) {
+  memo = memo.useMemo(() => {
+    if (null == planIds) {
       return null;
     } else {
-      const discount = arg0.discount;
-      let planIds;
+      const discount = planIds.discount;
+      planIds = undefined;
       if (null != discount) {
         planIds = discount.planIds;
       }
       if (null == planIds) {
         planIds = [];
       }
-      const arg0 = planIds;
-      return arg1.find((basePlanId) => planIds.includes(basePlanId.basePlanId));
+      return items3.find((basePlanId) => planIds.includes(basePlanId.basePlanId));
     }
   }, items);
-  const React = memo;
-  let obj = items3(dependencyMap[3]);
-  const items1 = [closure_3];
+  let obj = _require(566);
+  const items1 = [stateFromStores];
   const items2 = [memo];
-  const stateFromStores = obj.useStateFromStores(items1, () => {
+  stateFromStores = obj.useStateFromStores(items1, () => {
     let product = null;
     if (null != memo) {
       product = stateFromStores.getProduct(memo.productId);
     }
     return product;
   }, items2);
-  closure_3 = stateFromStores;
   items3 = [premiumDiscountOffer, stateFromStores];
   obj = {
     discountedProduct: stateFromStores,
-    discountedPriceString: React.useMemo(() => {
-      if (null != arg0) {
+    discountedPriceString: memo.useMemo(() => {
+      if (null != premiumDiscountOffer) {
         if (null != stateFromStores) {
-          const tmp13 = arg0(arg1[4]).DiscountIdToProductOfferId[closure_0.discountId];
+          const tmp13 = premiumDiscountOffer(items3[4]).DiscountIdToProductOfferId[premiumDiscountOffer.discountId];
           let tmp2;
           if (null != tmp13) {
-            tmp2 = tmp13[closure_3.identifier];
+            tmp2 = tmp13[stateFromStores.identifier];
           }
-          const arg0 = tmp2;
+          premiumDiscountOffer = tmp2;
           if (null == tmp2) {
             return null;
           } else {
-            if (str2.toUpperCase() in constants) {
+            if (str2.toUpperCase() in outer1_4) {
               let USD = stateFromStores.currencyCode.toLowerCase();
               const str = stateFromStores.currencyCode;
             } else {
-              USD = constants.USD;
+              USD = outer1_4.USD;
             }
             if (null != stateFromStores.subscriptionOffers) {
               const subscriptionOffers = stateFromStores.subscriptionOffers;
-              const found = subscriptionOffers.find((offerId) => offerId.offerId === tmp2);
+              const found = subscriptionOffers.find((offerId) => offerId.offerId === closure_0);
               if (null != found) {
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    let obj = arg0(arg1[5]);
+                    let obj = premiumDiscountOffer(items3[5]);
                     obj = { convertToMajorUnits: false };
                     return obj.formatPrice(result, USD, obj);
                   }

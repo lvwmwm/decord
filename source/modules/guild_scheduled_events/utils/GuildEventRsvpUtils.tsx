@@ -1,31 +1,35 @@
-// Module ID: 8344
-// Function ID: 66463
+// Module ID: 8350
+// Function ID: 66500
 // Name: getExistingRsvp
-// Dependencies: []
+// Dependencies: [1194, 6758, 1354, 1212, 8351, 8352, 8346, 2]
 // Exports: getResponseOptions, handleRsvp
 
-// Module 8344 (getExistingRsvp)
+// Module 8350 (getExistingRsvp)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function getExistingRsvp(id, arg1) {
   return store.getRsvp(id, arg1, id.getId());
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ GuildScheduledEventUserResponses: closure_4, GuildScheduledEventStatusDone: closure_5 } = arg1(dependencyMap[2]));
-const obj = { SERIES: 0, [0]: "SERIES", RECURRENCE: 1, [1]: "RECURRENCE" };
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_scheduled_events/utils/GuildEventRsvpUtils.tsx");
+({ GuildScheduledEventUserResponses: closure_4, GuildScheduledEventStatusDone: closure_5 } = GUILD_EVENT_MAX_NAME_LENGTH);
+let obj = { SERIES: 0, [0]: "SERIES", RECURRENCE: 1, [1]: "RECURRENCE" };
+const result = require("GUILD_EVENT_MAX_NAME_LENGTH").fileFinishedImporting("modules/guild_scheduled_events/utils/GuildEventRsvpUtils.tsx");
 
 export { getExistingRsvp };
 export const ResponseOptions = obj;
 export const getResponseOptions = function getResponseOptions() {
   let obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.name = intl.string(arg1(dependencyMap[3]).t.uoorxi);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.name = intl.string(require(1212) /* getSystemLocale */.t.uoorxi);
   obj.value = obj.SERIES;
   const items = [obj, ];
   obj = {};
-  const intl2 = arg1(dependencyMap[3]).intl;
-  obj.name = intl2.string(arg1(dependencyMap[3]).t.lwZCFT);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.name = intl2.string(require(1212) /* getSystemLocale */.t.lwZCFT);
   obj.value = obj.RECURRENCE;
   items[1] = obj;
   return items;
@@ -39,8 +43,8 @@ export const handleRsvp = function handleRsvp(openRsvpPicker) {
   ({ eventId, recurrenceId, guildId, updateRsvp, onRsvp } = openRsvpPicker);
   const guildScheduledEvent = store.getGuildScheduledEvent(eventId);
   if (null != guildScheduledEvent) {
-    const eventException = arg1(dependencyMap[4]).getEventException(recurrenceId, eventId);
-    const obj3 = arg1(dependencyMap[4]);
+    const eventException = require(8351) /* _getEventException */.getEventException(recurrenceId, eventId);
+    const obj3 = require(8351) /* _getEventException */;
     let scheduled_start_time;
     if (null != guildScheduledEvent) {
       scheduled_start_time = guildScheduledEvent.scheduled_start_time;
@@ -54,13 +58,13 @@ export const handleRsvp = function handleRsvp(openRsvpPicker) {
       }
       const prototype = _Date.prototype;
       _Date = new _Date(scheduled_start_time1);
-      recurrenceStatus = arg1(dependencyMap[6]).getRecurrenceStatus(eventException, obj4.getEventSchedule(guildScheduledEvent, recurrenceId).startTime, _Date);
-      const obj = arg1(dependencyMap[6]);
+      recurrenceStatus = require(8346) /* getNextBucketedTime */.getRecurrenceStatus(eventException, obj4.getEventSchedule(guildScheduledEvent, recurrenceId).startTime, _Date);
+      const obj = require(8346) /* getNextBucketedTime */;
     }
     if (null == recurrenceStatus) {
       if (null == recurrenceId) {
-        recurrenceId = arg1(dependencyMap[6]).getNextRecurrenceIdInEvent(guildScheduledEvent);
-        const obj2 = arg1(dependencyMap[6]);
+        recurrenceId = require(8346) /* getNextBucketedTime */.getNextRecurrenceIdInEvent(guildScheduledEvent);
+        const obj2 = require(8346) /* getNextBucketedTime */;
       }
       let tmp14 = recurrenceId;
     } else {
@@ -90,6 +94,6 @@ export const handleRsvp = function handleRsvp(openRsvpPicker) {
     } else {
       openRsvpPicker.openRsvpPicker(guildScheduledEvent, tmp14);
     }
-    const obj4 = arg1(dependencyMap[5]);
+    obj4 = require(8352) /* _getEventSchedule */;
   }
 };

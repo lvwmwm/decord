@@ -1,41 +1,71 @@
-// Module ID: 14428
-// Function ID: 108807
+// Module ID: 14542
+// Function ID: 110960
 // Name: toggle
-// Dependencies: []
+// Dependencies: [14530, 7662, 3803, 5793, 10095, 1212, 2]
 
-// Module 14428 (toggle)
-const _module = require(dependencyMap[0]);
-({ getSelectedGuildId: closure_2, useUserSafetySettingsSelectedGuildStore: closure_3 } = _module);
-const _module1 = require(dependencyMap[4]);
-const toggle = _module1.createToggle({
+// Module 14542 (toggle)
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
+import createToggle from "createToggle";
+
+let closure_2;
+let closure_3;
+({ getSelectedGuildId: closure_2, useUserSafetySettingsSelectedGuildStore: closure_3 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[5]).intl;
-    return intl.string(require(dependencyMap[5]).t.T+nevN);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["T+nevN"]);
   },
   useDescription() {
-    const intl = require(dependencyMap[5]).intl;
-    return intl.string(require(dependencyMap[5]).t.b+bVSw);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["b+bVSw"]);
   },
-  parent: require(dependencyMap[1]).MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
-    const ActivityJoiningRestrictedGuilds = require(dependencyMap[2]).ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = require(3803) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
     const setting = ActivityJoiningRestrictedGuilds.useSetting();
     return !setting.includes(callback2().selectedGuildId);
   },
   onValueChange(arg0) {
     const tmp = callback();
-    const sanitizedActivityJoiningRestrictedGuilds = require(dependencyMap[3]).getSanitizedActivityJoiningRestrictedGuilds();
+    const sanitizedActivityJoiningRestrictedGuilds = require(5793) /* getSanitizedRestrictedGuilds */.getSanitizedActivityJoiningRestrictedGuilds();
     if (arg0) {
       sanitizedActivityJoiningRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityJoiningRestrictedGuilds.add(tmp);
     }
-    const ActivityJoiningRestrictedGuilds = require(dependencyMap[2]).ActivityJoiningRestrictedGuilds;
+    const ActivityJoiningRestrictedGuilds = require(3803) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
     const items = [...sanitizedActivityJoiningRestrictedGuilds];
     ActivityJoiningRestrictedGuilds.updateSetting(items);
   }
 });
-const _module2 = require(dependencyMap[6]);
-const result = _module2.fileFinishedImporting("modules/user_settings/defs/native/GuildSettingActivityJoining.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["T+nevN"]);
+  },
+  useDescription() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["b+bVSw"]);
+  },
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  useValue() {
+    const ActivityJoiningRestrictedGuilds = require(3803) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const setting = ActivityJoiningRestrictedGuilds.useSetting();
+    return !setting.includes(callback2().selectedGuildId);
+  },
+  onValueChange(arg0) {
+    const tmp = callback();
+    const sanitizedActivityJoiningRestrictedGuilds = require(5793) /* getSanitizedRestrictedGuilds */.getSanitizedActivityJoiningRestrictedGuilds();
+    if (arg0) {
+      sanitizedActivityJoiningRestrictedGuilds.delete(tmp);
+    } else {
+      sanitizedActivityJoiningRestrictedGuilds.add(tmp);
+    }
+    const ActivityJoiningRestrictedGuilds = require(3803) /* explicitContentFromProto */.ActivityJoiningRestrictedGuilds;
+    const items = [...sanitizedActivityJoiningRestrictedGuilds];
+    ActivityJoiningRestrictedGuilds.updateSetting(items);
+  }
+};
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/GuildSettingActivityJoining.tsx");
 
 export default toggle;

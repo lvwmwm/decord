@@ -1,15 +1,16 @@
-// Module ID: 12923
-// Function ID: 98526
+// Module ID: 13037
+// Function ID: 100682
 // Name: NitroWheel
-// Dependencies: []
+// Dependencies: [31, 33, 5085, 7997, 2]
 // Exports: default
 
-// Module 12923 (NitroWheel)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/void/NitroWheel/native/NitroWheel.tsx");
+// Module 13037 (NitroWheel)
+import "result";
+import { jsx } from "jsxProd";
+
+const result = require("preload").fileFinishedImporting("design/void/NitroWheel/native/NitroWheel.tsx");
 
 export default function NitroWheel(style) {
-  const obj = { source: importDefault(dependencyMap[3]), style: style.style, resizeMode: "contain" };
-  return jsx(importDefault(dependencyMap[2]), obj);
+  const obj = { source: importDefault(7997), style: style.style, resizeMode: "contain" };
+  return jsx(importDefault(5085), { source: importDefault(7997), style: style.style, resizeMode: "contain" });
 };

@@ -1,28 +1,29 @@
 // Module ID: 408
 // Function ID: 5806
 // Name: useAndroidRippleForView
-// Dependencies: []
+// Dependencies: [31, 38, 44, 115]
 // Exports: default
 
 // Module 408 (useAndroidRippleForView)
-importAll(dependencyMap[0]);
-const useMemo = arg1(dependencyMap[0]).useMemo;
+import "result";
+import { useMemo } from "result";
+
+const require = arg1;
 
 export default function useAndroidRippleForView(arg0, arg1) {
+  let closure_4;
   let foreground;
   let obj = arg0;
+  let closure_0 = arg1;
   if (null == arg0) {
     obj = {};
   }
   const color = obj.color;
-  const importDefault = color;
   const borderless = obj.borderless;
-  const dependencyMap = borderless;
   const radius = obj.radius;
-  const useMemo = radius;
   ({ cornerRadius: closure_4, foreground } = obj);
   const items = [borderless, color, foreground, radius, arg1];
-  return useMemo(() => {
+  return radius(() => {
     if (null == color) {
       if (null == borderless) {
         if (null == radius) {
@@ -47,9 +48,9 @@ export default function useAndroidRippleForView(arg0, arg1) {
     }
     obj.viewProps = obj1;
     obj.onPressIn = function onPressIn(nativeEvent) {
-      const current = ref.current;
+      const current = outer1_0.current;
       if (null != current) {
-        const Commands2 = ref(closure_2[3]).Commands;
+        const Commands2 = callback(borderless[3]).Commands;
         const locationX = nativeEvent.nativeEvent.locationX;
         let num = 0;
         if (null != locationX) {
@@ -61,14 +62,14 @@ export default function useAndroidRippleForView(arg0, arg1) {
           num2 = locationY;
         }
         Commands2.hotspotUpdate(current, num, num2);
-        const Commands = ref(closure_2[3]).Commands;
+        const Commands = callback(borderless[3]).Commands;
         Commands.setPressed(current, true);
       }
     };
     obj.onPressMove = function onPressMove(nativeEvent) {
-      const current = ref.current;
+      const current = outer1_0.current;
       if (null != current) {
-        const Commands = ref(closure_2[3]).Commands;
+        const Commands = callback(borderless[3]).Commands;
         const locationX = nativeEvent.nativeEvent.locationX;
         let num2 = 0;
         if (null != locationX) {
@@ -83,9 +84,9 @@ export default function useAndroidRippleForView(arg0, arg1) {
       }
     };
     obj.onPressOut = function onPressOut(arg0) {
-      const current = ref.current;
+      const current = outer1_0.current;
       if (null != current) {
-        const Commands = ref(closure_2[3]).Commands;
+        const Commands = callback(borderless[3]).Commands;
         Commands.setPressed(current, false);
       }
     };

@@ -1,14 +1,17 @@
-// Module ID: 11090
-// Function ID: 86240
+// Module ID: 11100
+// Function ID: 86290
 // Name: ChatTTITracker
-// Dependencies: []
+// Dependencies: [33, 10026, 14, 2]
 // Exports: ChatTTITracker
 
-// Module 11090 (ChatTTITracker)
-const _module = require(dependencyMap[0]);
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = _module);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/chat/native/ChatTTITracker.tsx");
+// Module 11100 (ChatTTITracker)
+import jsxProd from "jsxProd";
+
+let closure_3;
+let closure_4;
+let closure_5;
+({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/chat/native/ChatTTITracker.tsx");
 
 export const ChatTTITracker = function ChatTTITracker(messages) {
   messages = messages.messages;
@@ -18,22 +21,22 @@ export const ChatTTITracker = function ChatTTITracker(messages) {
     obj = {
       nativeID: "cached_messages_tti",
       onMeasurement(nativeEvent) {
-          const displayMessagesWithCache = callback(closure_2[2]).displayMessagesWithCache;
+          const displayMessagesWithCache = outer1_1(outer1_2[2]).displayMessagesWithCache;
           displayMessagesWithCache.record(nativeEvent.nativeEvent.timestamp);
         }
     };
-    tmp3 = callback(require(dependencyMap[1]).TTIMeasurementView, obj, "cached_messages_tti");
+    tmp3 = callback(require(10026) /* TTIMeasurementView */.TTIMeasurementView, obj, "cached_messages_tti");
   }
   const items = [tmp3, ];
   if (messages.hasFetched) {
     obj = {
       nativeID: "latest_messages_tti",
       onMeasurement(nativeEvent) {
-          const displayLatestMessages = callback(closure_2[2]).displayLatestMessages;
+          const displayLatestMessages = outer1_1(outer1_2[2]).displayLatestMessages;
           displayLatestMessages.record(nativeEvent.nativeEvent.timestamp);
         }
     };
-    let tmp7 = callback(require(dependencyMap[1]).TTIMeasurementView, obj, "latest_messages_tti");
+    let tmp7 = callback(require(10026) /* TTIMeasurementView */.TTIMeasurementView, obj, "latest_messages_tti");
   } else {
     tmp7 = null;
     if (messages.ready) {

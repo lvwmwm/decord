@@ -1,10 +1,12 @@
-// Module ID: 8653
-// Function ID: 68501
+// Module ID: 8660
+// Function ID: 68541
 // Name: set
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8653 (set)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/SimilarGamesConstants.tsx");
+// Module 8660 (set)
+import set from "set";
 
-export const SIMILAR_GAMES_BLOCKED_GAME_IDS = new Set([1.345, 0.194, 0.599, 0.853]);
+let set = new Set(["700136079562375258", "1402418693958275202", "1402418696126992445", "1417993715611467826"]);
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/SimilarGamesConstants.tsx");
+
+export const SIMILAR_GAMES_BLOCKED_GAME_IDS = set;

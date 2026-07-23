@@ -1,9 +1,11 @@
 // Module ID: 1541
-// Function ID: 17553
+// Function ID: 17554
 // Name: extractPathFromURL
-// Dependencies: []
+// Dependencies: [1501]
 
 // Module 1541 (extractPathFromURL)
+const module = arg2;
+const dependencyMap = arg6;
 arg5.default = function extractPathFromURL(arg0, str) {
   const iter = arg0[Symbol.iterator]();
   str = iter.next();
@@ -22,23 +24,23 @@ arg5.default = function extractPathFromURL(arg0, str) {
     }
     let tmp4 = str;
     let _RegExp = RegExp;
-    let tmp5 = arg2;
-    let tmp6 = arg6;
+    let tmp5 = module;
+    let tmp6 = dependencyMap;
     let _HermesInternal = HermesInternal;
     let tmp7 = new.target;
     let tmp8 = new.target;
-    let regExp = new RegExp("^" + arg2(arg6[0])(str2));
+    let regExp = new RegExp("^" + module(1501)(str2));
     let tmp10 = regExp;
     let str3 = str7.replace(regExp, "");
     let str4 = str3.replace(/\/+/g, "/");
     let str5 = str4.replace(/^\//, "");
     let _RegExp2 = RegExp;
-    let tmp11 = arg2(arg6[0])(str2);
+    let tmp11 = module(1501)(str2);
     let parts = str5.split(".");
     let mapped = parts.map((arg0) => {
       let str = "[^/]+";
       if ("*" !== arg0) {
-        str = callback(closure_1[0])(arg0);
+        str = outer1_0(outer1_1[0])(arg0);
       }
       return str;
     });
@@ -56,8 +58,6 @@ arg5.default = function extractPathFromURL(arg0, str) {
       let replaced1 = str6.replace(tmp14, "");
       iter.return();
       return replaced1;
-    } else {
-      // continue
     }
   }
 };

@@ -1,53 +1,57 @@
-// Module ID: 13391
-// Function ID: 101789
+// Module ID: 13505
+// Function ID: 103945
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 6960, 13506, 13508, 566, 2]
 // Exports: default, updateSortOrder
 
-// Module 13391 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 13505 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -87,10 +91,9 @@ function _arrayLikeToArray(arg0, arg1) {
 function getSortedDevToolsScreens(arg0) {
   let sortedScreenKeys = arg0;
   if (arg0 === undefined) {
-    sortedScreenKeys = sortedScreenKeys.sortedScreenKeys;
+    sortedScreenKeys = _isNativeReflectConstruct.sortedScreenKeys;
   }
-  const arg1 = sortedScreenKeys;
-  const entries = Object.entries(arg1(dependencyMap[2]).DevToolsScreens);
+  const entries = Object.entries(sortedScreenKeys(13506).DevToolsScreens);
   const found = entries.filter((arg0) => {
     let obj;
     [, obj] = arg0;
@@ -123,23 +126,21 @@ function getSortedDevToolsScreens(arg0) {
     return num2;
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/devtools/native/useSortedDevToolsScreens.tsx");
+let result = require("DevToolsScreens").fileFinishedImporting("modules/devtools/native/useSortedDevToolsScreens.tsx");
 
 export default function useSortedDevToolsScreens() {
-  const items = [closure_3];
-  return getSortedDevToolsScreens(arg1(dependencyMap[4]).useStateFromStores(items, () => sortedScreenKeys.sortedScreenKeys));
+  const items = [_isNativeReflectConstruct];
+  return getSortedDevToolsScreens(require(566) /* initialize */.useStateFromStores(items, () => outer1_3.sortedScreenKeys));
 };
 export const updateSortOrder = function updateSortOrder(closure_0, down) {
   let iter2;
-  const items = [...closure_3.sortedScreenKeys];
+  const items = [..._isNativeReflectConstruct.sortedScreenKeys];
   const tmp = _createForOfIteratorHelperLoose(getSortedDevToolsScreens());
   let iter = tmp();
   if (!iter.done) {
     do {
-      let tmp2 = closure_2;
-      let first = closure_2(iter.value, 1)[0];
+      let tmp2 = callback;
+      let first = callback(iter.value, 1)[0];
       if (!items.includes(first)) {
         let arr = items.push(first);
       }
@@ -155,5 +156,5 @@ export const updateSortOrder = function updateSortOrder(closure_0, down) {
     items[index] = items[index + 1];
     items[index + 1] = items[index];
   }
-  const result = down(dependencyMap[3]).updateDevToolsSettings({ sortedScreenKeys: items });
+  const result = require(13508) /* updateDevToolsSettings */.updateDevToolsSettings({ sortedScreenKeys: items });
 };

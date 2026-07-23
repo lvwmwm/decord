@@ -1,10 +1,15 @@
-// Module ID: 3851
-// Function ID: 32054
+// Module ID: 3853
+// Function ID: 32059
 // Name: createThemedContext
-// Dependencies: []
+// Dependencies: [31, 33, 2]
 // Exports: UseThemeContext, createThemedContext
 
-// Module 3851 (createThemedContext)
+// Module 3853 (createThemedContext)
+import importAllResult from "result";
+import jsxProd from "jsxProd";
+
+let closure_1;
+let closure_2;
 function createThemedContext(arg0) {
   const obj = {};
   const json = JSON.stringify(arg0);
@@ -13,7 +18,7 @@ function createThemedContext(arg0) {
   return obj;
 }
 function useThemeContext() {
-  const context = importAllResult.useContext(context);
+  context = importAllResult.useContext(context);
   if (null == context) {
     const _Error = Error;
     const error = new Error("useThemeContext must be used within a ThemeContext.Provider");
@@ -22,12 +27,10 @@ function useThemeContext() {
     return context;
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ Fragment: closure_1, jsx: closure_2 } = arg1(dependencyMap[1]));
-const themedContext = createThemedContext({});
-const context = importAllResult.createContext(themedContext);
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeContext.tsx");
+({ Fragment: closure_1, jsx: closure_2 } = jsxProd);
+const themedContext = createThemedContext({ theme: "light", primaryColor: null, secondaryColor: null, gradient: null, flags: 0, contrast: 1, saturation: 1, density: "compact", disableAdaptiveTheme: false, reduceAdaptiveTheme: false });
+let context = importAllResult.createContext(themedContext);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeContext.tsx");
 
 export { createThemedContext };
 export { useThemeContext };

@@ -1,82 +1,87 @@
-// Module ID: 7411
-// Function ID: 59575
+// Module ID: 7416
+// Function ID: 59609
 // Name: GoogleManagementLink
-// Dependencies: []
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 3789, 5459, 1212, 3776, 7412, 5464, 5484, 6642, 4126, 7417, 2]
 // Exports: default
 
-// Module 7411 (GoogleManagementLink)
+// Module 7416 (GoogleManagementLink)
+import _slicedToArray from "_slicedToArray";
+import "result";
+import { View } from "get ActivityIndicator";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 class GoogleManagementLink {
   constructor(arg0) {
     subscription = global.subscription;
-    obj = arg1(dependencyMap[7]);
+    obj = require("isPremiumGiftingSupported");
     tmp = null;
     if (obj.isGooglePlayBillingSupported()) {
       tmp = null;
       if (subscription.isPurchasedViaGoogle) {
         tmp2 = jsx;
-        tmp3 = arg1;
-        tmp4 = dependencyMap;
+        tmp3 = closure_0;
+        tmp4 = closure_2;
         num = 8;
-        obj = { "Null": "business", "Null": "cached", alignItems: "cancel" };
+        obj = { style: null, variant: "text-sm/medium", color: "text-link" };
         items = [];
         items[0] = global.style;
         obj.style = items;
         num2 = 9;
-        intl = arg1(dependencyMap[9]).intl;
+        intl = require("getSystemLocale").intl;
         obj1 = {};
         num3 = 10;
-        obj4 = arg1(dependencyMap[10]);
+        obj4 = require("_createForOfIteratorHelperLoose");
         str = "SUBSCRIPTION_MANAGEMENT";
         obj1.onClick = obj4.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
-        obj.children = intl.format(arg1(dependencyMap[9]).t.9NPc+O, obj1);
-        tmp = jsx(arg1(dependencyMap[8]).TextWithIOSLinkWorkaround, obj);
+        obj.children = intl.format(require("getSystemLocale").t["9NPc+O"], obj1);
+        tmp = jsx(require("findLinks").TextWithIOSLinkWorkaround, obj);
       }
     }
     return tmp;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ SubscriptionStatusTypes: closure_5, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, externalSubtext: { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } };
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.billingContainer = obj;
-obj.billingRenewalInfo = { marginTop: 4 };
-obj.billingManageGoogle = { marginTop: 8 };
-let closure_8 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("components_native/premium/PremiumBillingInfo.tsx");
+({ SubscriptionStatusTypes: closure_5, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = ME);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, externalSubtext: { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 16, marginTop: 8 };
+_createForOfIteratorHelperLoose.billingContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.billingRenewalInfo = { marginTop: 4 };
+_createForOfIteratorHelperLoose.billingManageGoogle = { marginTop: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("components_native/premium/PremiumBillingInfo.tsx");
 
 export default function PremiumBillingInfo(subscription) {
   subscription = subscription.subscription;
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[11]);
-  obj = { 1393537105: null, -760149847: null, -1309907082: null, subscriptionId: subscription.id, analyticsLocations: importDefault(dependencyMap[12])(), analyticsLocation: importDefault(dependencyMap[13]).PREMIUM_BILLING_INFO };
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(7412) /* createSubscriptionInvoicePreview */;
+  obj = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: importDefault(5464)(), analyticsLocation: importDefault(5484).PREMIUM_BILLING_INFO };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
-  arg1(dependencyMap[11]);
+  require(7412) /* createSubscriptionInvoicePreview */;
   if (null == first) {
     return null;
   } else {
-    let obj3 = arg1(dependencyMap[14]);
+    let obj3 = require(6642) /* getPremiumManagementMethod */;
     obj = { shouldAllowExternalManagement: true };
     const externalManagementMessage = obj3.getExternalManagementMessage(subscription, obj);
     const obj1 = { style: subscription.style };
-    const obj2 = { alignSelf: -1966325487, justifyContent: 863109121, alignItems: 603979776, backgroundColor: 16777216, style: tmp.title };
-    const intl = arg1(dependencyMap[9]).intl;
-    obj2.children = intl.string(arg1(dependencyMap[9]).t.Sb6wI1);
-    const items = [callback2(arg1(dependencyMap[15]).Text, obj2), , ];
+    const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default" };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj2.children = intl.string(require(1212) /* getSystemLocale */.t.Sb6wI1);
+    const items = [callback2(require(4126) /* Text */.Text, obj2), , ];
     obj3 = { style: tmp.billingContainer };
     const obj4 = { variant: "text-md/semibold" };
-    const intl2 = arg1(dependencyMap[9]).intl;
-    obj4.children = intl2.string(arg1(dependencyMap[9]).t.KXQjfc);
-    const items1 = [callback2(arg1(dependencyMap[15]).Text, obj4), , ];
-    const obj5 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: arg1(dependencyMap[16]).getBillingInformationStringNative(subscription, first, tmp4) };
-    items1[1] = callback2(arg1(dependencyMap[15]).Text, obj5);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.KXQjfc);
+    const items1 = [callback2(require(4126) /* Text */.Text, obj4), , ];
+    const obj5 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: require(7417) /* getBillingInformationStringNative */.getBillingInformationStringNative(subscription, first, tmp4) };
+    items1[1] = callback2(require(4126) /* Text */.Text, obj5);
     const obj6 = { style: tmp.billingManageGoogle, subscription };
     items1[2] = callback2(GoogleManagementLink, obj6);
     obj3.children = items1;
@@ -84,7 +89,7 @@ export default function PremiumBillingInfo(subscription) {
     let tmp8 = null;
     if (null != externalManagementMessage) {
       const obj7 = { style: tmp.externalSubtext, variant: "text-sm/medium", children: externalManagementMessage };
-      tmp8 = callback2(arg1(dependencyMap[15]).Text, obj7);
+      tmp8 = callback2(require(4126) /* Text */.Text, obj7);
     }
     items[2] = tmp8;
     obj1.children = items;

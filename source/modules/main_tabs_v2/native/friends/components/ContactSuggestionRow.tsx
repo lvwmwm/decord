@@ -1,59 +1,59 @@
-// Module ID: 15342
-// Function ID: 116815
+// Module ID: 15459
+// Function ID: 118989
 // Name: ContactSuggestionRow
-// Dependencies: []
+// Dependencies: [31, 4122, 653, 33, 3969, 3991, 1212, 624, 14912, 14911, 8834, 15169, 15170, 675, 2]
 // Exports: ContactSuggestionRow
 
-// Module 15342 (ContactSuggestionRow)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ AnalyticEvents: closure_5, InstantInviteSources: closure_6, RelationshipTypes: closure_7 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
+// Module 15459 (ContactSuggestionRow)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { jsx } from "jsxProd";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ AnalyticEvents: closure_5, InstantInviteSources: closure_6, RelationshipTypes: closure_7 } = ME);
 let closure_9 = { ADD: "add" };
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ContactSuggestionRow.tsx");
+let result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ContactSuggestionRow.tsx");
 
 export const ContactSuggestionRow = function ContactSuggestionRow(suggestedFriend) {
   suggestedFriend = suggestedFriend.suggestedFriend;
-  const arg1 = suggestedFriend;
   const added = suggestedFriend.added;
-  const importDefault = added;
   const onAddSuggestion = suggestedFriend.onAddSuggestion;
-  const dependencyMap = onAddSuggestion;
-  let obj = { <string:3714637141>: "spring", <string:3713523030>: 0.4, <string:3713559591>: 1 };
+  let obj = { suggestedFriend: 0, added: 0, onAddSuggestion: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(suggestedFriend, obj);
-  const React = merged;
-  let closure_4;
+  let sharedValue;
   if (null != suggestedFriend.friendSuggestionName) {
     if (suggestedFriend.friendSuggestionName.length > 0) {
       let friendSuggestionName = suggestedFriend.friendSuggestionName;
     }
-    let obj2 = arg1(dependencyMap[5]);
-    const sharedValue = obj2.useSharedValue(false);
-    closure_4 = sharedValue;
-    const items = [added, sharedValue];
-    const effect = React.useEffect(() => {
+    let obj2 = suggestedFriend(onAddSuggestion[5]);
+    sharedValue = obj2.useSharedValue(false);
+    let items = [added, sharedValue];
+    const effect = merged.useEffect(() => {
       const result = sharedValue.set(added);
     }, items);
     const items1 = [added];
-    const memo = React.useMemo(() => {
+    const memo = merged.useMemo(() => {
       if (added) {
         let items = [];
       } else {
-        const obj = { name: constants3.ADD };
+        const obj = { name: outer1_9.ADD };
         const intl = suggestedFriend(onAddSuggestion[6]).intl;
-        obj.label = intl.string(suggestedFriend(onAddSuggestion[6]).t.ed99+i);
+        obj.label = intl.string(suggestedFriend(onAddSuggestion[6]).t["ed99+i"]);
         items = [obj];
       }
       return items;
     }, items1);
-    const items2 = [closure_4];
-    const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items2, () => sharedValue.useReducedMotion);
+    const items2 = [sharedValue];
+    const stateFromStores = suggestedFriend(onAddSuggestion[7]).useStateFromStores(items2, () => sharedValue.useReducedMotion);
     const items3 = [sharedValue, onAddSuggestion, suggestedFriend.user];
     let mutualFriendsCount;
-    const callback = React.useCallback((nativeEvent) => {
-      if (nativeEvent.nativeEvent.actionName === constants3.ADD) {
+    const callback = merged.useCallback((nativeEvent) => {
+      if (nativeEvent.nativeEvent.actionName === outer1_9.ADD) {
         const result = sharedValue.set(true);
         onAddSuggestion(suggestedFriend.user);
         return suggestedFriend(onAddSuggestion[8]).addContactSuggestion(suggestedFriend.user);
@@ -70,18 +70,18 @@ export const ContactSuggestionRow = function ContactSuggestionRow(suggestedFrien
       }
       tmp13 = mutualFriendsCount1 > 0;
     }
-    const obj4 = arg1(dependencyMap[7]);
-    const suggestedContactNameForSuggestion = arg1(dependencyMap[9]).getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
+    const obj4 = suggestedFriend(onAddSuggestion[7]);
+    const suggestedContactNameForSuggestion = suggestedFriend(onAddSuggestion[9]).getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
     if (null != suggestedContactNameForSuggestion) {
       const _HermesInternal = HermesInternal;
-      let combined = "" + importDefault(dependencyMap[4]).getUserTag(suggestedFriend.user) + " \u00B7 " + suggestedContactNameForSuggestion;
-      const obj7 = importDefault(dependencyMap[4]);
+      let combined = "" + added(onAddSuggestion[4]).getUserTag(suggestedFriend.user) + " \u00B7 " + suggestedContactNameForSuggestion;
+      const obj7 = added(onAddSuggestion[4]);
     } else {
-      combined = importDefault(dependencyMap[4]).getUserTag(suggestedFriend.user);
-      const obj6 = importDefault(dependencyMap[4]);
+      combined = added(onAddSuggestion[4]).getUserTag(suggestedFriend.user);
+      const obj6 = added(onAddSuggestion[4]);
     }
     obj = {};
-    const obj5 = arg1(dependencyMap[9]);
+    const obj5 = suggestedFriend(onAddSuggestion[9]);
     const merged1 = Object.assign(merged);
     obj["user"] = suggestedFriend.user;
     obj["type"] = constants.SUGGESTION;
@@ -93,7 +93,7 @@ export const ContactSuggestionRow = function ContactSuggestionRow(suggestedFrien
     obj = { actioned: sharedValue, label: combined };
     let formatToPlainStringResult;
     if (tmp13) {
-      const intl = arg1(dependencyMap[6]).intl;
+      let intl = suggestedFriend(onAddSuggestion[6]).intl;
       let obj1 = {};
       let mutualFriendsCount2;
       if (null != suggestedFriend) {
@@ -104,13 +104,13 @@ export const ContactSuggestionRow = function ContactSuggestionRow(suggestedFrien
         str10 = mutualFriendsCount2;
       }
       obj1.count = str10;
-      formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[6]).t.z7y34b, obj1);
+      formatToPlainStringResult = intl.formatToPlainString(suggestedFriend(onAddSuggestion[6]).t.z7y34b, obj1);
     }
     obj.secondaryLabel = formatToPlainStringResult;
-    const intl2 = arg1(dependencyMap[6]).intl;
-    obj.actionStatus = intl2.string(arg1(dependencyMap[6]).t.Kzyxm9);
+    const intl2 = suggestedFriend(onAddSuggestion[6]).intl;
+    obj.actionStatus = intl2.string(suggestedFriend(onAddSuggestion[6]).t.Kzyxm9);
     obj.animate = !stateFromStores;
-    obj["subLabel"] = jsx(arg1(dependencyMap[11]).ActionStatusSubLabel, obj);
+    obj["subLabel"] = jsx(suggestedFriend(onAddSuggestion[11]).ActionStatusSubLabel, { actioned: sharedValue, label: combined });
     obj2 = {
       user: suggestedFriend.user,
       added: sharedValue,
@@ -119,17 +119,32 @@ export const ContactSuggestionRow = function ContactSuggestionRow(suggestedFrien
           obj = { suggested_user_id: id.id, suggestion_source: suggestedFriend.source };
           let ADD_FRIENDS_MODAL = merged.location;
           if (null == ADD_FRIENDS_MODAL) {
-            ADD_FRIENDS_MODAL = constants2.ADD_FRIENDS_MODAL;
+            ADD_FRIENDS_MODAL = outer1_6.ADD_FRIENDS_MODAL;
           }
           obj.location = ADD_FRIENDS_MODAL;
-          obj.track(constants.FRIEND_SUGGESTION_ADDED, obj);
+          obj.track(outer1_5.FRIEND_SUGGESTION_ADDED, obj);
           onAddSuggestion(id);
         },
       animate: !stateFromStores
     };
-    obj["trailing"] = jsx(arg1(dependencyMap[12]).ContactSuggestionActions, obj2);
-    return jsx(importDefault(dependencyMap[10]), obj);
+    obj["trailing"] = jsx(suggestedFriend(onAddSuggestion[12]).ContactSuggestionActions, {
+      user: suggestedFriend.user,
+      added: sharedValue,
+      onAddSuggestion(id) {
+          let obj = added(onAddSuggestion[13]);
+          obj = { suggested_user_id: id.id, suggestion_source: suggestedFriend.source };
+          let ADD_FRIENDS_MODAL = merged.location;
+          if (null == ADD_FRIENDS_MODAL) {
+            ADD_FRIENDS_MODAL = outer1_6.ADD_FRIENDS_MODAL;
+          }
+          obj.location = ADD_FRIENDS_MODAL;
+          obj.track(outer1_5.FRIEND_SUGGESTION_ADDED, obj);
+          onAddSuggestion(id);
+        },
+      animate: !stateFromStores
+    });
+    return jsx(added(onAddSuggestion[10]), { actioned: sharedValue, label: combined });
   }
-  obj1 = importDefault(dependencyMap[4]);
+  obj1 = added(onAddSuggestion[4]);
   friendSuggestionName = obj1.getName(suggestedFriend.user);
 };

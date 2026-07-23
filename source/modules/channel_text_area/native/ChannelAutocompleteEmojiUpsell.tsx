@@ -1,32 +1,36 @@
-// Module ID: 11422
-// Function ID: 88888
+// Module ID: 11432
+// Function ID: 88938
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: []
+// Dependencies: [31, 27, 1852, 33, 4130, 689, 5085, 1392, 4126, 1212, 2]
 // Exports: default
 
-// Module 11422 (ChannelAutocompleteEmojiUpsell)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[2]).EMOJI_URL_BASE_SIZE;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { upsell: { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole" }, title: { -105930140: null, -1504685627: "Group 11" }, emojis: { height: 28 } };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.emojiWrapper = obj;
-obj.emoji = { "Null": null, "Null": null };
-let closure_7 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteEmojiUpsell.tsx");
+// Module 11432 (ChannelAutocompleteEmojiUpsell)
+import "result";
+import { View } from "get ActivityIndicator";
+import { EMOJI_URL_BASE_SIZE } from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { upsell: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, title: { lineHeight: 16, flex: 1 }, emojis: { height: 28 } };
+_createForOfIteratorHelperLoose = { position: "absolute", width: 28, height: 28, padding: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderRadius: 14, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.emojiWrapper = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.emoji = { width: 16, height: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("set").fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteEmojiUpsell.tsx");
 
 export default function ChannelAutocompleteEmojiUpsell(results) {
   results = results.results;
-  const tmp = callback3();
-  const arg1 = tmp;
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
   const substr = results.slice(0, 3);
   let obj = { style: tmp.upsell };
   const mapped = substr.map((id) => {
     let obj = { style: items };
-    const items = [closure_5.emojiWrapper, ];
+    items = [outer1_5.emojiWrapper, ];
     obj = { left: 24 * arg1 };
     items[1] = obj;
     obj = { style: tmp.emoji };
@@ -34,23 +38,23 @@ export default function ChannelAutocompleteEmojiUpsell(results) {
     if (null != id.id) {
       const obj2 = {};
       ({ id: obj6.id, animated: obj6.animated } = id);
-      obj2.size = closure_4;
-      let url = callback(closure_2[7]).getEmojiURL(obj2);
-      const obj5 = callback(closure_2[7]);
+      obj2.size = outer1_4;
+      let url = outer1_1(outer1_2[7]).getEmojiURL(obj2);
+      const obj5 = outer1_1(outer1_2[7]);
     } else {
       url = id.url;
     }
     obj1.uri = url;
     obj.source = obj1;
-    obj.children = closure_5(callback(closure_2[6]), obj);
-    return closure_5(closure_3, obj, id.id);
+    obj.children = outer1_5(outer1_1(outer1_2[6]), obj);
+    return outer1_5(outer1_3, obj, id.id);
   });
   const result = 24 * substr.length;
-  obj = { style: tmp.title };
-  const intl = arg1(dependencyMap[9]).intl;
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium" };
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { count: results.length };
-  obj.children = intl.format(arg1(dependencyMap[9]).t.uEky42, obj);
-  const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
+  obj.children = intl.format(require(1212) /* getSystemLocale */.t.uEky42, obj);
+  let items = [callback(require(4126) /* Text */.Text, obj), ];
   const items1 = [tmp.emojis, { width: result + 16 }];
   items[1] = callback(View, { style: items1, children: mapped });
   obj.children = items;

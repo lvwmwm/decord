@@ -1,17 +1,19 @@
-// Module ID: 12386
-// Function ID: 94685
+// Module ID: 12500
+// Function ID: 96841
 // Name: GiftPurchaseButton
-// Dependencies: []
+// Dependencies: [5, 31, 27, 3782, 5621, 33, 4548, 4126, 566, 5624, 7203, 5464, 9683, 4471, 1212, 3776, 9679, 4544, 12501, 2]
 // Exports: default
 
-// Module 12386 (GiftPurchaseButton)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const jsx = arg1(dependencyMap[5]).jsx;
-const result = arg1(dependencyMap[19]).fileFinishedImporting("components_native/premium/GiftPurchaseButton.tsx");
+// Module 12500 (GiftPurchaseButton)
+import jsxProd from "jsxProd";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("get ActivityIndicator").fileFinishedImporting("components_native/premium/GiftPurchaseButton.tsx");
 
 export default function GiftPurchaseButton(style) {
   let str = style.variant;
@@ -19,57 +21,51 @@ export default function GiftPurchaseButton(style) {
     str = "primary";
   }
   const planId = style.planId;
-  const arg1 = planId;
   let analyticsLocation = style.analyticsLocation;
   if (analyticsLocation === undefined) {
     analyticsLocation = {};
   }
-  const importDefault = analyticsLocation;
   const recipientUserId = style.recipientUserId;
-  const dependencyMap = recipientUserId;
-  let callback;
-  let React;
-  let View;
-  let obj1 = arg1(dependencyMap[6]);
+  let productIdForGift;
+  let analyticsLocations;
+  let createOrReuseGiftOrder;
+  let obj1 = planId(recipientUserId[6]);
   const buttonTextColorStyles = obj1.useButtonTextColorStyles(str);
   let obj = {};
-  const merged = Object.assign(arg1(dependencyMap[7]).TextStyleSheet.text-sm/semibold);
+  const merged = Object.assign(planId(recipientUserId[7]).TextStyleSheet["text-sm/semibold"]);
   const merged1 = Object.assign(buttonTextColorStyles);
-  const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items, () => premiumSubscription.getPremiumSubscription());
-  const obj4 = arg1(dependencyMap[8]);
-  const productIdForGift = arg1(dependencyMap[9]).getProductIdForGift(planId);
-  callback = productIdForGift;
-  const obj5 = arg1(dependencyMap[9]);
-  const canPurchaseIAP = arg1(dependencyMap[10]).useCanPurchaseIAP(productIdForGift);
-  const obj6 = arg1(dependencyMap[10]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = planId(recipientUserId[8]).useStateFromStores(items, () => outer1_6.getPremiumSubscription());
+  const obj4 = planId(recipientUserId[8]);
+  productIdForGift = planId(recipientUserId[9]).getProductIdForGift(planId);
+  const obj5 = planId(recipientUserId[9]);
+  const canPurchaseIAP = planId(recipientUserId[10]).useCanPurchaseIAP(productIdForGift);
+  const obj6 = planId(recipientUserId[10]);
   const items1 = [closure_7];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items1, () => closure_7.isPurchasingProduct(productIdForGift));
-  const obj7 = arg1(dependencyMap[8]);
+  const stateFromStores1 = planId(recipientUserId[8]).useStateFromStores(items1, () => outer1_7.isPurchasingProduct(productIdForGift));
+  const obj7 = planId(recipientUserId[8]);
   const items2 = [closure_7];
   let tmp10 = null != stateFromStores;
-  const stateFromStores2 = arg1(dependencyMap[8]).useStateFromStores(items2, () => closure_7.getProduct(productIdForGift));
+  const stateFromStores2 = planId(recipientUserId[8]).useStateFromStores(items2, () => outer1_7.getProduct(productIdForGift));
   if (tmp10) {
     tmp10 = stateFromStores.planId === planId;
   }
-  const analyticsLocations = importDefault(dependencyMap[11])().analyticsLocations;
-  React = analyticsLocations;
-  const obj8 = arg1(dependencyMap[8]);
-  const createOrReuseGiftOrder = arg1(dependencyMap[12]).useCreateOrReuseGiftOrder("GiftPurchaseButton");
-  View = createOrReuseGiftOrder;
+  analyticsLocations = analyticsLocation(recipientUserId[11])().analyticsLocations;
+  const obj8 = planId(recipientUserId[8]);
+  createOrReuseGiftOrder = planId(recipientUserId[12]).useCreateOrReuseGiftOrder("GiftPurchaseButton");
   // CreateGeneratorClosureLongIndex (0x67)
   const items3 = [planId, recipientUserId, analyticsLocation, analyticsLocations, createOrReuseGiftOrder, productIdForGift];
   obj = { style: style.style };
-  callback = React.useCallback(callback(tmp), items3);
+  const callback = analyticsLocations.useCallback(productIdForGift(tmp), items3);
   obj1 = {};
   const obj2 = { style: obj, basePlanId: planId, isCurrentPlan: tmp10, isGift: true, product: stateFromStores2 };
-  obj1.textElement = importDefault(dependencyMap[18])(obj2);
+  obj1.textElement = analyticsLocation(recipientUserId[18])(obj2);
   obj1.variant = str;
   obj1.size = "sm";
   obj1.onPress = callback;
   obj1.loading = stateFromStores1;
   obj1.disabled = !canPurchaseIAP;
   obj1.grow = true;
-  obj.children = jsx(arg1(dependencyMap[17]).BaseTextButton, obj1);
-  return <View {...obj} />;
+  obj.children = jsx(planId(recipientUserId[17]).BaseTextButton, {});
+  return <createOrReuseGiftOrder style={arg0.style} />;
 };

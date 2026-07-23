@@ -1,13 +1,14 @@
-// Module ID: 12454
-// Function ID: 95081
+// Module ID: 12568
+// Function ID: 97237
 // Name: AltGatewayTracker
-// Dependencies: []
+// Dependencies: [6, 7, 12569, 2]
 
-// Module 12454 (AltGatewayTracker)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_3 = importDefault(dependencyMap[2])();
-const tmp2 = () => {
+// Module 12568 (AltGatewayTracker)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+let closure_3 = require("getCachedUseAltGateway")();
+const tmp2 = (() => {
   class AltGatewayTracker {
     constructor() {
       tmp = AltGatewayTracker(this, AltGatewayTracker);
@@ -16,16 +17,15 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = AltGatewayTracker;
   let obj = {
     key: "shouldUseAltGateway",
     value() {
       let tmp = !this.fallbackTripped;
       if (tmp) {
-        tmp = null != closure_2;
+        tmp = null != outer1_2;
       }
       if (tmp) {
-        tmp = closure_3;
+        tmp = outer1_3;
       }
       return tmp;
     }
@@ -34,7 +34,7 @@ const tmp2 = () => {
   obj = {
     key: "isAssignedToAltGateway",
     value() {
-      return null != closure_2 && closure_3;
+      return null != outer1_2 && outer1_3;
     }
   };
   items[1] = obj;
@@ -50,7 +50,7 @@ const tmp2 = () => {
     value() {
       let tmp = null;
       if (this.shouldUseAltGateway()) {
-        tmp = closure_2;
+        tmp = outer1_2;
       }
       return tmp;
     }
@@ -81,7 +81,7 @@ const tmp2 = () => {
     }
   };
   return callback(AltGatewayTracker, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/gateway/AltGatewayTracker.tsx");
+})();
+const result = require("getCachedUseAltGateway").fileFinishedImporting("modules/gateway/AltGatewayTracker.tsx");
 
 export default tmp2;

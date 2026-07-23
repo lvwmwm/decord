@@ -1,24 +1,36 @@
-// Module ID: 14259
-// Function ID: 107757
+// Module ID: 14373
+// Function ID: 109910
 // Name: pressable
-// Dependencies: []
+// Dependencies: [653, 3827, 10095, 1212, 4086, 2]
 
-// Module 14259 (pressable)
-const MarketingURLs = require(dependencyMap[0]).MarketingURLs;
-const _module = require(dependencyMap[2]);
-const pressable = _module.createPressable({
+// Module 14373 (pressable)
+import { MarketingURLs } from "ME";
+import createToggle from "createToggle";
+
+const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.0nUKy3);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["0nUKy3"]);
   },
   parent: null,
-  IconComponent: require(dependencyMap[4]).CircleInformationIcon,
+  IconComponent: require("CircleInformationIcon").CircleInformationIcon,
   onPress: function handleAcknowledgementsSettingPress() {
-    importDefault(dependencyMap[1]).openURL(MarketingURLs.ACKNOWLEDGEMENTS);
+    importDefault(3827).openURL(MarketingURLs.ACKNOWLEDGEMENTS);
   },
   withArrow: true
 });
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AcknowledgementsSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["0nUKy3"]);
+  },
+  parent: null,
+  IconComponent: require("CircleInformationIcon").CircleInformationIcon,
+  onPress: function handleAcknowledgementsSettingPress() {
+    importDefault(3827).openURL(MarketingURLs.ACKNOWLEDGEMENTS);
+  },
+  withArrow: true
+};
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AcknowledgementsSetting.tsx");
 
 export default pressable;

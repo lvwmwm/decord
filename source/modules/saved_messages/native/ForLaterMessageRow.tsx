@@ -1,39 +1,41 @@
-// Module ID: 9924
-// Function ID: 76764
+// Module ID: 9930
+// Function ID: 76801
 // Name: ForLaterMessageRow
-// Dependencies: []
+// Dependencies: [31, 33, 4066, 4130, 689, 3803, 7621, 9293, 477, 2]
 // Exports: ForLaterMessageRow
 
-// Module 9924 (ForLaterMessageRow)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/saved_messages/native/ForLaterMessageRow.tsx");
+// Module 9930 (ForLaterMessageRow)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("useTheme").fileFinishedImporting("modules/saved_messages/native/ForLaterMessageRow.tsx");
 
 export const ForLaterMessageRow = function ForLaterMessageRow(lineClamp) {
   let maxHeight;
   let message;
-  const arg1 = lineClamp.lineClamp;
+  lineClamp = lineClamp.lineClamp;
   ({ message, maxHeight } = lineClamp);
-  let obj = arg1(dependencyMap[3]);
-  obj = { seeMoreLabelColor: importDefault(dependencyMap[4]).colors.TEXT_DEFAULT };
-  const importDefault = obj.createNativeStyleProperties(obj)(importDefault(dependencyMap[2])());
-  const RenderEmbeds = arg1(dependencyMap[5]).RenderEmbeds;
-  const setting = RenderEmbeds.getSetting();
-  const dependencyMap = setting;
-  const InlineEmbedMedia = arg1(dependencyMap[5]).InlineEmbedMedia;
+  let obj = lineClamp(setting[3]);
+  obj = { seeMoreLabelColor: importDefault(setting[4]).colors.TEXT_DEFAULT };
+  importDefault = obj.createNativeStyleProperties(obj)(importDefault(setting[2])());
+  const RenderEmbeds = lineClamp(setting[5]).RenderEmbeds;
+  setting = RenderEmbeds.getSetting();
+  const InlineEmbedMedia = lineClamp(setting[5]).InlineEmbedMedia;
   const setting1 = InlineEmbedMedia.getSetting();
-  const React = setting1;
-  const InlineAttachmentMedia = arg1(dependencyMap[5]).InlineAttachmentMedia;
+  const InlineAttachmentMedia = lineClamp(setting[5]).InlineAttachmentMedia;
   const setting2 = InlineAttachmentMedia.getSetting();
-  const jsx = setting2;
   const items = [setting, setting1, setting2];
-  const memo = React.useMemo(() => {
+  const memo = setting1.useMemo(() => {
     let tmp = lib(setting[6]);
     tmp = new tmp();
-    tmp.setOptions({ renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2 });
+    const obj = { renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReplies: false, renderExecutedCommands: false, animateEmoji: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, shouldDisableInteractiveComponents: true };
+    tmp.setOptions(obj);
     return tmp;
   }, items);
   obj = {
+    pointerEvents: "none",
+    horizontalOffset: 0,
     modifyRow(arg0) {
       if (null != lineClamp) {
         const obj = { numberOfLines: lineClamp, expandable: lineClamp(setting[8]).isIOS() };
@@ -45,12 +47,12 @@ export const ForLaterMessageRow = function ForLaterMessageRow(lineClamp) {
         obj.seeMoreLabel = str;
         obj.seeMoreLabelColor = lib.seeMoreLabelColor;
         arg0.truncation = obj;
-        const obj3 = lineClamp(setting[8]);
+        obj3 = lineClamp(setting[8]);
       }
     },
     message,
     rowGenerator: memo,
     maxHeight
   };
-  return jsx(importDefault(dependencyMap[7]), obj);
+  return setting2(importDefault(setting[7]), obj);
 };

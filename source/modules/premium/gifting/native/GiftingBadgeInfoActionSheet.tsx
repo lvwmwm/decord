@@ -1,64 +1,68 @@
-// Module ID: 9678
-// Function ID: 75352
+// Module ID: 9685
+// Function ID: 75393
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 8268, 653, 33, 4130, 689, 1557, 566, 8265, 675, 5187, 4126, 1212, 2294, 9686, 2]
 // Exports: default
 
-// Module 9678 (GiftingBadgeInfoActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[3]).getSingleRequirementThreshold;
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { alignItems: "center", paddingTop: importDefault(dependencyMap[7]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[5]);
-obj.headerContainer = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
-obj.title = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-const obj2 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-obj.description = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
-const obj4 = { "Bool(true)": null, "Bool(true)": null, rowGap: importDefault(dependencyMap[7]).space.PX_8 };
-obj.tierCards = obj4;
-const obj3 = { textAlign: "center", marginBottom: importDefault(dependencyMap[7]).space.PX_16 };
-obj.tierCard = { padding: importDefault(dependencyMap[7]).space.PX_8 };
-const obj5 = { padding: importDefault(dependencyMap[7]).space.PX_8 };
-obj.iconWrapper = { paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
-let closure_11 = obj.createStyles(obj);
-const obj6 = { paddingVertical: importDefault(dependencyMap[7]).space.PX_8 };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/premium/gifting/native/GiftingBadgeInfoActionSheet.tsx");
+// Module 9685 (GiftingBadgeInfoActionSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { getSingleRequirementThreshold as closure_7 } from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_9;
+let require = arg1;
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.title = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj2 = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.description = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj4 = { flexDirection: "row", flexWrap: "wrap", rowGap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.tierCards = obj4;
+let obj5 = { width: "33.33%", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.tierCard = obj5;
+let obj3 = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.iconWrapper = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj6 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/gifting/native/GiftingBadgeInfoActionSheet.tsx");
 
 export default function GiftingBadgeInfoActionSheet() {
-  const tmp = callback3();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[9]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(closure_2[10]).BadgeId.GIFTING));
-  let obj1 = arg1(dependencyMap[9]);
-  const items1 = [closure_5];
-  const importDefault = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  let obj = require(566) /* initialize */;
+  let items = [closure_6];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getBadgeById(tmp(outer1_2[10]).BadgeId.GIFTING));
+  let obj1 = require(566) /* initialize */;
+  const items1 = [_isNativeReflectConstruct];
+  const importDefault = obj1.useStateFromStores(items1, () => outer1_5.useReducedMotion);
   const effect = React.useEffect(() => {
-    callback(closure_2[11]).track(constants.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
+    callback(outer1_2[11]).track(outer1_8.GIFTING_BADGE_INFO_ACTION_SHEET_OPENED);
   }, []);
-  obj = { openDisableCommunication: 1766088043, freezeEnabled: 827788593 };
+  obj = { scrollable: false, startExpanded: true };
   obj = {};
   const items2 = [tmp.container, ];
-  obj1 = { paddingBottom: importDefault(dependencyMap[8])().bottom + importDefault(dependencyMap[7]).space.PX_16 };
+  obj1 = { paddingBottom: importDefault(1557)().bottom + importDefault(689).space.PX_16 };
   items2[1] = obj1;
   obj.style = items2;
-  const obj2 = { style: tmp.headerContainer };
-  const obj3 = { "Null": null, "Null": "9dd37f954b23d7c3c7ed4428be93436f", "Null": "ClydeIcon", "Null": "png", style: tmp.title };
-  const intl = arg1(dependencyMap[14]).intl;
-  obj3.children = intl.string(importDefault(dependencyMap[15]).0MB2C6);
-  const items3 = [callback(arg1(dependencyMap[13]).Text, obj3), ];
-  const obj4 = { style: tmp.description };
-  const intl2 = arg1(dependencyMap[14]).intl;
-  obj4.children = intl2.string(importDefault(dependencyMap[15]).k9sNVH);
-  items3[1] = callback(arg1(dependencyMap[13]).Text, obj4);
+  let obj2 = { style: tmp.headerContainer };
+  let obj3 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header" };
+  let intl = require(1212) /* getSystemLocale */.intl;
+  obj3.children = intl.string(importDefault(2294)["0MB2C6"]);
+  const items3 = [callback(require(4126) /* Text */.Text, obj3), ];
+  const obj4 = { style: tmp.description, variant: "text-md/medium", color: "text-default" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj4.children = intl2.string(importDefault(2294).k9sNVH);
+  items3[1] = callback(require(4126) /* Text */.Text, obj4);
   obj2.children = items3;
   const items4 = [callback2(View, obj2), ];
   const obj5 = { style: tmp.tierCards };
@@ -82,29 +86,29 @@ export default function GiftingBadgeInfoActionSheet() {
             simple_icon_url = complex_icon_static_url.simple_icon_url;
           }
         }
-        const tmp3 = callback2(complex_icon_static_url);
+        const tmp3 = outer1_7(complex_icon_static_url);
         let obj = { style: tmp.tierCard };
         let tmp6 = null != simple_icon_url;
         if (tmp6) {
           obj = { style: tmp.iconWrapper };
           obj = { icon: simple_icon_url, size: 58 };
-          obj.children = callback3(callback(closure_2[16]), obj);
-          tmp6 = callback3(closure_4, obj);
+          obj.children = outer1_9(callback(outer1_2[16]), obj);
+          tmp6 = outer1_9(outer1_4, obj);
         }
         const items = [tmp6, , ];
-        const obj1 = { cachedAt: "<string:3704409292>", edpbxy: "<string:32796991>", children: complex_icon_static_url.name };
-        items[1] = callback3(tmp(closure_2[13]).Text, obj1);
+        const obj1 = { variant: "text-lg/semibold", color: "text-strong", children: complex_icon_static_url.name };
+        items[1] = outer1_9(tmp(outer1_2[13]).Text, obj1);
         let tmp12 = null != tmp3;
         if (tmp12) {
-          const obj2 = {};
-          const intl = tmp(closure_2[14]).intl;
+          const obj2 = { variant: "text-md/normal", color: "text-subtle" };
+          const intl = tmp(outer1_2[14]).intl;
           const obj3 = { count: tmp3 };
-          obj2.children = intl.formatToPlainString(callback(closure_2[15]).qvx9E4, obj3);
-          tmp12 = callback3(tmp(closure_2[13]).Text, obj2);
+          obj2.children = intl.formatToPlainString(callback(outer1_2[15]).qvx9E4, obj3);
+          tmp12 = outer1_9(tmp(outer1_2[13]).Text, obj2);
         }
         items[2] = tmp12;
         obj.children = items;
-        return closure_10(closure_4, obj, complex_icon_static_url.key);
+        return outer1_10(outer1_4, obj, complex_icon_static_url.key);
       });
     }
   }
@@ -112,5 +116,5 @@ export default function GiftingBadgeInfoActionSheet() {
   items4[1] = callback(View, obj5);
   obj.children = items4;
   obj.children = callback2(View, obj);
-  return callback(arg1(dependencyMap[12]).BottomSheet, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };

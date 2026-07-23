@@ -1,70 +1,76 @@
-// Module ID: 16363
-// Function ID: 126233
+// Module ID: 16480
+// Function ID: 128407
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: []
+// Dependencies: [31, 27, 1851, 482, 33, 4130, 689, 5085, 1273, 4126, 1212, 5618, 14120, 4544, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 16363 (GuildRoleSubscriptionTierTemplateBasicInfo)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const SubscriptionIntervalTypes = arg1(dependencyMap[2]).SubscriptionIntervalTypes;
-const CurrencyCodes = arg1(dependencyMap[3]).CurrencyCodes;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { container: { paddingBottom: 24 }, header: { flexDirection: "row" } };
-obj = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.image = obj;
-const tmp3 = arg1(dependencyMap[4]);
-obj.templateCTAButton = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.sm };
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateBasicInfo.tsx");
+// Module 16480 (GuildRoleSubscriptionTierTemplateBasicInfo)
+import "result";
+import { View } from "get ActivityIndicator";
+import { SubscriptionIntervalTypes } from "GuildFeatures";
+import { CurrencyCodes } from "sum";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { paddingBottom: 24 }, header: { flexDirection: "row" } };
+_createForOfIteratorHelperLoose = { width: 48, height: 48, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.image = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.templateCTAButton = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+const result = require("GuildFeatures").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateBasicInfo.tsx");
 
 export const GuildRoleSubscriptionTierTemplateBasicInfo = function GuildRoleSubscriptionTierTemplateBasicInfo(template) {
+  let dependencyMap;
   let description;
   let descriptionTextProps;
   let descriptionTextStyle;
   let image;
+  let importDefault;
   let name;
   let price_tier;
   let subscriptionPlanTextStyle;
   template = template.template;
-  const arg1 = template;
-  ({ handleSelectTemplateInPreview: closure_1, closeActionSheet: closure_2, descriptionTextProps } = template);
+  ({ handleSelectTemplateInPreview: importDefault, closeActionSheet: dependencyMap, descriptionTextProps } = template);
   ({ subscriptionPlanTextStyle, descriptionTextStyle } = template);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   obj = { style: tmp.header };
   ({ image, name, price_tier, description } = template.listings[0]);
   obj = { source: { uri: image }, style: tmp.image };
-  const items = [callback(importDefault(dependencyMap[7]), obj), callback(arg1(dependencyMap[8]).Spacer, { size: 16 }), ];
+  const items = [callback(importDefault(5085), obj), callback(template(1273).Spacer, { size: 16 }), ];
   const obj1 = { style: { flexShrink: 1 } };
-  const items1 = [callback(arg1(dependencyMap[9]).Text, { style: { flexWrap: "wrap" }, children: name }), callback(arg1(dependencyMap[8]).Spacer, { size: 4 }), ];
-  const obj2 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle };
-  const intl = arg1(dependencyMap[10]).intl;
-  const obj3 = {};
-  let obj6 = arg1(dependencyMap[11]);
-  obj3.price = obj6.formatPrice(price_tier, CurrencyCodes.USD);
-  obj3.interval = arg1(dependencyMap[12]).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
-  obj2.children = intl.format(arg1(dependencyMap[10]).t.CgmBaG, obj3);
-  items1[2] = callback(arg1(dependencyMap[9]).Text, obj2);
+  const obj2 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name };
+  const items1 = [callback(template(4126).Text, obj2), callback(template(1273).Spacer, { size: 4 }), ];
+  const obj3 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle };
+  const intl = template(1212).intl;
+  const obj4 = {};
+  let obj7 = template(5618);
+  obj4.price = obj7.formatPrice(price_tier, CurrencyCodes.USD);
+  obj4.interval = template(14120).formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
+  obj3.children = intl.format(template(1212).t.CgmBaG, obj4);
+  items1[2] = callback(template(4126).Text, obj3);
   obj1.children = items1;
   items[2] = callback2(View, obj1);
   obj.children = items;
   const items2 = [callback2(View, obj), , ];
-  const obj5 = { variant: "text-sm/normal", style: descriptionTextStyle };
+  const obj6 = { variant: "text-sm/normal", style: descriptionTextStyle };
   const merged = Object.assign(descriptionTextProps);
-  obj5["children"] = description;
-  items2[1] = callback(arg1(dependencyMap[9]).Text, obj5);
-  obj6 = {};
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj6.text = intl2.string(arg1(dependencyMap[10]).t.1W7mCt);
-  obj6.pillStyle = tmp.templateCTAButton;
-  obj6.onPress = function onPress() {
+  obj6["children"] = description;
+  items2[1] = callback(template(4126).Text, obj6);
+  obj7 = {};
+  const intl2 = template(1212).intl;
+  obj7.text = intl2.string(template(1212).t["1W7mCt"]);
+  obj7.pillStyle = tmp.templateCTAButton;
+  obj7.onPress = function onPress() {
     return callback(template, closure_2);
   };
-  obj6.grow = true;
-  items2[2] = callback(arg1(dependencyMap[13]).BaseTextButton, obj6);
+  obj7.grow = true;
+  items2[2] = callback(template(4544).BaseTextButton, obj7);
   obj.children = items2;
   return callback2(View, obj);
 };

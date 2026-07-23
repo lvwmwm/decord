@@ -1,19 +1,19 @@
-// Module ID: 7763
-// Function ID: 61658
+// Module ID: 7769
+// Function ID: 61695
 // Name: parseWithClassNameExtraction
-// Dependencies: []
+// Dependencies: [3829, 7770, 4572, 4590, 4591, 4120, 2]
 // Exports: renderChangelogMessageMarkup
 
-// Module 7763 (parseWithClassNameExtraction)
+// Module 7769 (parseWithClassNameExtraction)
+const require = arg1;
 function parseWithClassNameExtraction(transformUpperCase) {
   let flag = transformUpperCase.transformUpperCase;
   if (flag === undefined) {
     flag = false;
   }
-  const arg1 = flag;
   return (arg0, arg1, inline) => {
-    const match = regex.exec(arg0[1]);
-    const str2 = arg0[1].replace(regex, "");
+    const match = outer1_10.exec(arg0[1]);
+    const str2 = arg0[1].replace(outer1_10, "");
     let formatted = str2;
     if (flag) {
       formatted = str2.toUpperCase();
@@ -29,46 +29,46 @@ function parseWithClassNameExtraction(transformUpperCase) {
       num = 1;
     }
     obj.level = num;
-    obj.content = callback(closure_2[0]).parseInline(arg1, formatted, inline);
+    obj.content = outer1_1(outer1_2[0]).parseInline(arg1, formatted, inline);
     return obj;
   };
 }
 function defaultRules(arg0) {
   let obj = {};
-  const merged = Object.assign(arg1(dependencyMap[1]).baseRules);
+  const merged = Object.assign(require(7770) /* ChangeLogLink */.baseRules);
   obj = {};
   const merged1 = Object.assign(image);
-  if ("function" === typeof arg1(dependencyMap[1]).customRules.image) {
-    const customRules = arg1(dependencyMap[1]).customRules;
-    let image = customRules.image(arg0);
+  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.image) {
+    const customRules = require(7770) /* ChangeLogLink */.customRules;
+    image = customRules.image(arg0);
   } else {
-    image = arg1(dependencyMap[1]).customRules.image;
+    image = require(7770) /* ChangeLogLink */.customRules.image;
   }
   const merged2 = Object.assign(image);
   obj["image"] = obj;
   obj = {};
   const merged3 = Object.assign(link);
-  if ("function" === typeof arg1(dependencyMap[1]).customRules.link) {
-    const customRules2 = arg1(dependencyMap[1]).customRules;
-    let link = customRules2.link(arg0);
+  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.link) {
+    const customRules2 = require(7770) /* ChangeLogLink */.customRules;
+    link = customRules2.link(arg0);
   } else {
-    link = arg1(dependencyMap[1]).customRules.link;
+    link = require(7770) /* ChangeLogLink */.customRules.link;
   }
   const merged4 = Object.assign(link);
   obj["link"] = obj;
   const merged5 = Object.assign(list);
-  if ("function" === typeof arg1(dependencyMap[1]).customRules.list) {
-    const customRules3 = arg1(dependencyMap[1]).customRules;
-    let list = customRules3.list(arg0);
+  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.list) {
+    const customRules3 = require(7770) /* ChangeLogLink */.customRules;
+    list = customRules3.list(arg0);
   } else {
-    list = arg1(dependencyMap[1]).customRules.list;
+    list = require(7770) /* ChangeLogLink */.customRules.list;
   }
   const merged6 = Object.assign(list);
   obj["list"] = {};
   obj["interpolation"] = {
-    order: importDefault(dependencyMap[2]).order,
+    order: importDefault(4572).order,
     match(arg0) {
-      return regex.exec(arg0);
+      return outer1_11.exec(arg0);
     },
     parse(arg0, arg1, arg2) {
       if (null == arg2.interpolations[arg0[1]]) {
@@ -85,38 +85,38 @@ function defaultRules(arg0) {
   const obj3 = {};
   const merged7 = Object.assign(lheading);
   obj3["parse"] = parseWithClassNameExtraction({ transformUpperCase: true });
-  if ("function" === typeof arg1(dependencyMap[1]).customRules.lheading) {
-    const customRules4 = arg1(dependencyMap[1]).customRules;
-    let lheading = customRules4.lheading(arg0);
+  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.lheading) {
+    const customRules4 = require(7770) /* ChangeLogLink */.customRules;
+    lheading = customRules4.lheading(arg0);
   } else {
-    lheading = arg1(dependencyMap[1]).customRules.lheading;
+    lheading = require(7770) /* ChangeLogLink */.customRules.lheading;
   }
   const merged8 = Object.assign(lheading);
   obj["lheading"] = obj3;
   const merged9 = Object.assign(heading);
-  if ("function" === typeof arg1(dependencyMap[1]).customRules.heading) {
-    const customRules5 = arg1(dependencyMap[1]).customRules;
-    let heading = customRules5.heading(arg0);
+  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.heading) {
+    const customRules5 = require(7770) /* ChangeLogLink */.customRules;
+    heading = customRules5.heading(arg0);
   } else {
-    heading = arg1(dependencyMap[1]).customRules.heading;
+    heading = require(7770) /* ChangeLogLink */.customRules.heading;
   }
   const merged10 = Object.assign(heading);
   obj["heading"] = {};
   const merged11 = Object.assign(blockQuote);
-  if ("function" === typeof arg1(dependencyMap[1]).customRules.blockQuote) {
-    const customRules6 = arg1(dependencyMap[1]).customRules;
-    let blockQuote = customRules6.blockQuote(arg0);
+  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.blockQuote) {
+    const customRules6 = require(7770) /* ChangeLogLink */.customRules;
+    blockQuote = customRules6.blockQuote(arg0);
   } else {
-    blockQuote = arg1(dependencyMap[1]).customRules.blockQuote;
+    blockQuote = require(7770) /* ChangeLogLink */.customRules.blockQuote;
   }
   const merged12 = Object.assign(blockQuote);
   obj["blockQuote"] = {};
   const merged13 = Object.assign(paragraph);
-  if ("function" === typeof arg1(dependencyMap[1]).customRules.paragraph) {
-    const customRules7 = arg1(dependencyMap[1]).customRules;
-    let paragraph = customRules7.paragraph(arg0);
+  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.paragraph) {
+    const customRules7 = require(7770) /* ChangeLogLink */.customRules;
+    paragraph = customRules7.paragraph(arg0);
   } else {
-    paragraph = arg1(dependencyMap[1]).customRules.paragraph;
+    paragraph = require(7770) /* ChangeLogLink */.customRules.paragraph;
   }
   const merged14 = Object.assign(paragraph);
   obj["paragraph"] = {};
@@ -127,11 +127,11 @@ function specialRules(arg0) {
   obj = {};
   const merged = Object.assign(lheading);
   obj["parse"] = parseWithClassNameExtraction({ transformUpperCase: false });
-  if ("function" === typeof arg1(dependencyMap[1]).customRules.lheading) {
-    const customRules = arg1(dependencyMap[1]).customRules;
-    let lheading = customRules.lheading(arg0);
+  if ("function" === typeof require(7770) /* ChangeLogLink */.customRules.lheading) {
+    const customRules = require(7770) /* ChangeLogLink */.customRules;
+    lheading = customRules.lheading(arg0);
   } else {
-    lheading = arg1(dependencyMap[1]).customRules.lheading;
+    lheading = require(7770) /* ChangeLogLink */.customRules.lheading;
   }
   const merged1 = Object.assign(lheading);
   obj.lheading = obj;
@@ -141,27 +141,27 @@ function messageRules(arg0) {
   let obj = {};
   const merged = Object.assign(defaultRules(arg0));
   obj = {};
-  const merged1 = Object.assign(importDefault(dependencyMap[0]).defaultRules.newline);
+  const merged1 = Object.assign(importDefault(3829).defaultRules.newline);
   obj["newline"] = obj;
-  obj["text"] = importDefault(dependencyMap[2]);
-  obj["list"] = importDefault(dependencyMap[3]);
-  obj["subtext"] = importDefault(dependencyMap[4]);
+  obj["text"] = importDefault(4572);
+  obj["list"] = importDefault(4590);
+  obj["subtext"] = importDefault(4591);
   return obj;
 }
 function getDefaultRules(arg0) {
   const merged = Object.assign(defaultRules(arg0));
   return {};
 }
-const lheading = importDefault(dependencyMap[0]).defaultRules.lheading;
-const heading = importDefault(dependencyMap[0]).defaultRules.heading;
-const link = importDefault(dependencyMap[0]).defaultRules.link;
-const image = importDefault(dependencyMap[0]).defaultRules.image;
-const list = importDefault(dependencyMap[0]).defaultRules.list;
-const blockQuote = importDefault(dependencyMap[0]).defaultRules.blockQuote;
-const paragraph = importDefault(dependencyMap[0]).defaultRules.paragraph;
-let closure_10 = /\{(.+?)}/;
-let closure_11 = /^\$(\w+?)\$/;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("utils/ChangeLogUtils.tsx");
+let lheading = require("t").defaultRules.lheading;
+let heading = require("t").defaultRules.heading;
+let link = require("t").defaultRules.link;
+let image = require("t").defaultRules.image;
+let list = require("t").defaultRules.list;
+let blockQuote = require("t").defaultRules.blockQuote;
+let paragraph = require("t").defaultRules.paragraph;
+const re10 = /\{(.+?)}/;
+const re11 = /^\$(\w+?)\$/;
+const result = require("textRegexp").fileFinishedImporting("utils/ChangeLogUtils.tsx");
 
 export default {
   getDefaultRules,
@@ -176,13 +176,13 @@ export default {
   }
 };
 export const renderChangelogMessageMarkup = function renderChangelogMessageMarkup(content, arg1, changeLog) {
-  let obj = { st: true, Math: true };
-  const obj2 = importDefault(dependencyMap[5]);
+  let obj = { hasSpoilerEmbeds: false, hasBailedAst: false };
+  const obj2 = importDefault(4120);
   if (null != changeLog) {
     obj = { changeLog };
   } else {
     obj = {};
   }
-  obj.content = importDefault(dependencyMap[5]).reactParserFor(getDefaultRules(arg1))(content.content, false, obj);
+  obj.content = importDefault(4120).reactParserFor(getDefaultRules(arg1))(content.content, false, obj);
   return obj;
 };

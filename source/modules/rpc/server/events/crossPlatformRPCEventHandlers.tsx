@@ -1,15 +1,32 @@
-// Module ID: 13329
-// Function ID: 101225
+// Module ID: 13443
+// Function ID: 103381
 // Name: messageEventsValidation
-// Dependencies: []
+// Dependencies: [4167, 4150, 1391, 4149, 1348, 1917, 1838, 4177, 4202, 1849, 4146, 4033, 653, 10499, 10501, 10496, 4345, 8310, 22, 13391, 483, 620, 10502, 13444, 13445, 2]
 
-// Module 13329 (messageEventsValidation)
+// Module 13443 (messageEventsValidation)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { getGuildIconURL } from "isGuildOwner";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
+import ME from "ME";
+
 let RPCEvents;
 let RPC_AUTHENTICATED_SCOPE;
 let RPC_LOCAL_SCOPE;
 let RPC_SCOPE_CONFIG;
+let closure_15;
+let closure_16;
+const require = arg1;
 function messageEventsValidation(string) {
-  let obj = importDefault(dependencyMap[13])(string);
+  let obj = importDefault(10499)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.channel_id = string.string().required();
@@ -21,9 +38,9 @@ function messageEvents(args) {
   const channel = store.getChannel(channel_id);
   if (null != channel) {
     if (obj4.hasMessageReadPermission(channel, socket.application.id, socket.authorization.scopes)) {
-      let obj = arg1(dependencyMap[16]);
+      let obj = require(4345) /* shouldAgeVerifyForAgeGate */;
       if (obj.userCannotSeeNSFWContent(channel)) {
-        let tmp6 = importDefault(dependencyMap[15]);
+        let tmp6 = importDefault(10496);
         obj = { errorCode: constants2.INVALID_CHANNEL };
         const _HermesInternal = HermesInternal;
         const prototype = tmp6.prototype;
@@ -31,15 +48,15 @@ function messageEvents(args) {
         throw tmp6;
       }
     }
-    const obj4 = arg1(dependencyMap[14]);
+    obj4 = require(10501) /* recurseReplaceContentTree */;
   }
-  let tmp14 = importDefault(dependencyMap[15]);
+  let tmp14 = importDefault(10496);
   obj = { errorCode: constants2.INVALID_CHANNEL };
   tmp14 = new tmp14(obj, "Invalid channel id: " + channel_id);
   throw tmp14;
 }
 function speakingEventsValidation(string) {
-  let obj = importDefault(dependencyMap[13])(string);
+  let obj = importDefault(10499)(string);
   obj = { channel_id: string.string().allow(null) };
   return obj.keys(obj);
 }
@@ -47,7 +64,7 @@ function speakingEvents(args) {
   const channel_id = args.args.channel_id;
   if (null != channel_id) {
     if (null == store.getChannel(channel_id)) {
-      let tmp4 = importDefault(dependencyMap[15]);
+      let tmp4 = importDefault(10496);
       const obj = { errorCode: constants2.INVALID_CHANNEL };
       const _HermesInternal = HermesInternal;
       const prototype = tmp4.prototype;
@@ -56,25 +73,13 @@ function speakingEvents(args) {
     }
   }
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const getGuildIconURL = arg1(dependencyMap[2]).getGuildIconURL;
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-let closure_14 = importDefault(dependencyMap[10]);
-({ RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = arg1(dependencyMap[11]));
-const tmp2 = arg1(dependencyMap[11]);
-({ ApplicationFlags: closure_15, RPCErrors: closure_16, RPCEvents } = arg1(dependencyMap[12]));
+({ RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
+({ ApplicationFlags: closure_15, RPCErrors: closure_16, RPCEvents } = ME);
 let obj = {};
 obj = {
-  scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC,
+  scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(dependencyMap[13])(string);
+    let obj = importDefault(10499)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.guild_id = string.string().required();
@@ -82,10 +87,9 @@ obj = {
   },
   handler(args) {
     const guild_id = args.args.guild_id;
-    const arg1 = guild_id;
     if (null == guild.getGuild(guild_id)) {
-      let tmp3 = importDefault(dependencyMap[15]);
-      const obj = { errorCode: constants2.INVALID_GUILD };
+      let tmp3 = importDefault(10496);
+      let obj = { errorCode: constants2.INVALID_GUILD };
       const _HermesInternal = HermesInternal;
       const prototype = tmp3.prototype;
       tmp3 = new tmp3(obj, "Invalid guild id: " + guild_id);
@@ -95,12 +99,12 @@ obj = {
         let dispatch;
         let prevState;
         ({ prevState, dispatch } = arg0);
-        const guild = guild.getGuild(guild_id);
+        const guild = outer1_10.getGuild(guild_id);
         if (null != guild) {
           let obj = {};
           obj = {};
           ({ id: obj2.id, name: obj2.name } = guild);
-          const tmp3 = callback2(guild, 128);
+          const tmp3 = outer1_6(guild, 128);
           let tmp4 = null;
           if (null != tmp3) {
             tmp4 = tmp3;
@@ -120,11 +124,11 @@ obj = {
 obj[RPCEvents.GUILD_STATUS] = obj;
 obj = {};
 const obj1 = {};
-const items = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, arg1(dependencyMap[17]).OAuth2Scopes.RPC_VOICE_READ];
+const items = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_VOICE_READ];
 obj1[RPC_SCOPE_CONFIG.ANY] = items;
 obj.scope = obj1;
 obj.validation = function validation(string) {
-  let obj = importDefault(dependencyMap[13])(string);
+  let obj = importDefault(10499)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.channel_id = string.string().required();
@@ -132,9 +136,8 @@ obj.validation = function validation(string) {
 };
 obj.handler = function handler(args) {
   const channel_id = args.args.channel_id;
-  const arg1 = channel_id;
   if (null == store.getChannel(channel_id)) {
-    let tmp3 = importDefault(dependencyMap[15]);
+    let tmp3 = importDefault(10496);
     const obj = { errorCode: constants2.INVALID_CHANNEL };
     const _HermesInternal = HermesInternal;
     const prototype = tmp3.prototype;
@@ -142,18 +145,19 @@ obj.handler = function handler(args) {
     throw tmp3;
   } else {
     return (arg0) => {
+      let channel_id;
       let prevState;
-      ({ prevState, dispatch: closure_0 } = arg0);
+      ({ prevState, dispatch: channel_id } = arg0);
       let guildId;
-      const channel = channel.getChannel(channel_id);
+      const channel = outer1_8.getChannel(channel_id);
       if (null != channel) {
         guildId = channel.getGuildId();
         const _Object = Object;
-        const values = Object.values(voiceStatesForChannel.getVoiceStatesForChannel(channel.id));
+        const values = Object.values(outer1_14.getVoiceStatesForChannel(channel.id));
         if (prevState) {
-          const obj2 = channel(closure_3[18]);
-          const item = channel(closure_3[18]).differenceBy(values, prevState, (userId) => userId.userId).forEach((userId) => callback(callback(closure_3[14]).transformVoiceState(closure_2, channel.id, userId)));
-          const differenceByResult = channel(closure_3[18]).differenceBy(values, prevState, (userId) => userId.userId);
+          const obj2 = outer1_1(outer1_3[18]);
+          const item = outer1_1(outer1_3[18]).differenceBy(values, prevState, (userId) => userId.userId).forEach((userId) => callback(channel_id(outer2_3[14]).transformVoiceState(closure_2, channel.id, userId)));
+          const differenceByResult = outer1_1(outer1_3[18]).differenceBy(values, prevState, (userId) => userId.userId);
         }
         return values;
       }
@@ -161,13 +165,13 @@ obj.handler = function handler(args) {
   }
 };
 obj[RPCEvents.VOICE_STATE_CREATE] = obj;
-const obj2 = {};
-const obj3 = {};
-const items1 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, arg1(dependencyMap[17]).OAuth2Scopes.RPC_VOICE_READ];
+let obj2 = {};
+let obj3 = {};
+const items1 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_VOICE_READ];
 obj3[RPC_SCOPE_CONFIG.ANY] = items1;
 obj2.scope = obj3;
 obj2.validation = function validation(string) {
-  let obj = importDefault(dependencyMap[13])(string);
+  let obj = importDefault(10499)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.channel_id = string.string().required();
@@ -175,9 +179,8 @@ obj2.validation = function validation(string) {
 };
 obj2.handler = function handler(args) {
   const channel_id = args.args.channel_id;
-  const arg1 = channel_id;
   if (null == store.getChannel(channel_id)) {
-    let tmp3 = importDefault(dependencyMap[15]);
+    let tmp3 = importDefault(10496);
     const obj = { errorCode: constants2.INVALID_CHANNEL };
     const _HermesInternal = HermesInternal;
     const prototype = tmp3.prototype;
@@ -185,28 +188,28 @@ obj2.handler = function handler(args) {
     throw tmp3;
   } else {
     return (dispatch) => {
-      const channel_id = dispatch.dispatch;
+      dispatch = dispatch.dispatch;
       let guildId;
-      const channel = channel.getChannel(channel_id);
+      const channel = outer1_8.getChannel(dispatch);
       if (null != channel) {
         guildId = channel.getGuildId();
         const _Object = Object;
-        const values = Object.values(voiceStatesForChannel.getVoiceStatesForChannel(channel.id));
-        const obj2 = channel(closure_3[18]);
-        const item = channel(closure_3[18]).differenceBy(dispatch.prevState, values, (userId) => userId.userId).forEach((userId) => dispatch(dispatch(closure_3[14]).transformVoiceState(closure_2, channel.id, userId)));
+        const values = Object.values(outer1_14.getVoiceStatesForChannel(channel.id));
+        const obj2 = outer1_1(outer1_3[18]);
+        const item = outer1_1(outer1_3[18]).differenceBy(dispatch.prevState, values, (userId) => userId.userId).forEach((userId) => dispatch(channel_id(outer2_3[14]).transformVoiceState(closure_2, channel.id, userId)));
         return values;
       }
     };
   }
 };
 obj[RPCEvents.VOICE_STATE_DELETE] = obj2;
-const obj4 = {};
+let obj4 = {};
 const obj5 = {};
-const items2 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, arg1(dependencyMap[17]).OAuth2Scopes.RPC_VOICE_READ];
+const items2 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_VOICE_READ];
 obj5[RPC_SCOPE_CONFIG.ANY] = items2;
 obj4.scope = obj5;
 obj4.validation = function validation(string) {
-  let obj = importDefault(dependencyMap[13])(string);
+  let obj = importDefault(10499)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.channel_id = string.string().required();
@@ -214,9 +217,8 @@ obj4.validation = function validation(string) {
 };
 obj4.handler = function handler(args) {
   const channel_id = args.args.channel_id;
-  const arg1 = channel_id;
   if (null == store.getChannel(channel_id)) {
-    let tmp3 = importDefault(dependencyMap[15]);
+    let tmp3 = importDefault(10496);
     const obj = { errorCode: constants2.INVALID_CHANNEL };
     const _HermesInternal = HermesInternal;
     const prototype = tmp3.prototype;
@@ -224,16 +226,16 @@ obj4.handler = function handler(args) {
     throw tmp3;
   } else {
     return (dispatch) => {
-      const channel_id = dispatch.dispatch;
+      dispatch = dispatch.dispatch;
       let guildId;
-      const channel = channel.getChannel(channel_id);
+      const channel = outer1_8.getChannel(dispatch);
       if (null != channel) {
         guildId = channel.getGuildId();
         const _Object = Object;
-        const values = Object.values(voiceStatesForChannel.getVoiceStatesForChannel(channel.id));
-        const mapped = values.map((userId) => dispatch(closure_3[14]).transformVoiceState(closure_2, channel.id, userId));
-        const obj2 = channel(closure_3[18]);
-        const item = channel(closure_3[18]).differenceWith(mapped, dispatch.prevState, channel(closure_3[18]).isEqual).forEach((arg0) => dispatch(arg0));
+        const values = Object.values(outer1_14.getVoiceStatesForChannel(channel.id));
+        const mapped = values.map((userId) => channel_id(outer2_3[14]).transformVoiceState(closure_2, channel.id, userId));
+        const obj2 = outer1_1(outer1_3[18]);
+        const item = outer1_1(outer1_3[18]).differenceWith(mapped, dispatch.prevState, outer1_1(outer1_3[18]).isEqual).forEach((arg0) => dispatch(arg0));
         return mapped;
       }
     };
@@ -242,7 +244,7 @@ obj4.handler = function handler(args) {
 obj[RPCEvents.VOICE_STATE_UPDATE] = obj4;
 const obj6 = {};
 const obj7 = {};
-const items3 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, arg1(dependencyMap[17]).OAuth2Scopes.RPC_VOICE_READ];
+const items3 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_VOICE_READ];
 obj7[RPC_SCOPE_CONFIG.ANY] = items3;
 obj6.scope = obj7;
 obj6.handler = function handler() {
@@ -251,12 +253,12 @@ obj6.handler = function handler() {
     let prevState;
     const obj = {};
     ({ prevState, dispatch } = arg0);
-    obj.state = callback(closure_3[14]).getVoiceConnectionState(store.getState());
-    obj.hostname = store.getHostname();
-    obj.pings = store.getPings();
-    obj.average_ping = store.getAveragePing();
-    obj.last_ping = store.getLastPing();
-    const obj2 = callback(closure_3[14]);
+    obj.state = outer1_0(outer1_3[14]).getVoiceConnectionState(outer1_12.getState());
+    obj.hostname = outer1_12.getHostname();
+    obj.pings = outer1_12.getPings();
+    obj.average_ping = outer1_12.getAveragePing();
+    obj.last_ping = outer1_12.getLastPing();
+    const obj2 = outer1_0(outer1_3[14]);
     if (!obj3.isEqual(obj, prevState)) {
       dispatch(obj);
     }
@@ -264,15 +266,14 @@ obj6.handler = function handler() {
   };
 };
 obj[RPCEvents.VOICE_CONNECTION_STATUS] = obj6;
-const tmp3 = arg1(dependencyMap[12]);
-obj[RPCEvents.MESSAGE_CREATE] = { scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
-const obj8 = { scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
-obj[RPCEvents.MESSAGE_UPDATE] = { scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
-const obj9 = { scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
-obj[RPCEvents.MESSAGE_DELETE] = { scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
+obj[RPCEvents.MESSAGE_CREATE] = { scope: require("set").OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
+const obj8 = { scope: require("set").OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
+obj[RPCEvents.MESSAGE_UPDATE] = { scope: require("set").OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
+const obj9 = { scope: require("set").OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
+obj[RPCEvents.MESSAGE_DELETE] = { scope: require("set").OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
 const obj11 = {};
 const obj12 = {};
-const items4 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, arg1(dependencyMap[17]).OAuth2Scopes.RPC_VOICE_READ, RPC_LOCAL_SCOPE];
+const items4 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_VOICE_READ, RPC_LOCAL_SCOPE];
 obj12[RPC_SCOPE_CONFIG.ANY] = items4;
 obj11.scope = obj12;
 obj11.validation = speakingEventsValidation;
@@ -280,34 +281,34 @@ obj11.handler = speakingEvents;
 obj[RPCEvents.SPEAKING_START] = obj11;
 const obj13 = {};
 const obj14 = {};
-const items5 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, arg1(dependencyMap[17]).OAuth2Scopes.RPC_VOICE_READ, RPC_LOCAL_SCOPE];
+const items5 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_VOICE_READ, RPC_LOCAL_SCOPE];
 obj14[RPC_SCOPE_CONFIG.ANY] = items5;
 obj13.scope = obj14;
 obj13.validation = speakingEventsValidation;
 obj13.handler = speakingEvents;
 obj[RPCEvents.SPEAKING_STOP] = obj13;
-const obj10 = { scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
+const obj10 = { scope: require("set").OAuth2Scopes.RPC, validation: messageEventsValidation, handler: messageEvents };
 obj[RPCEvents.GUILD_CREATE] = {
-  scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC,
+  scope: require("set").OAuth2Scopes.RPC,
   handler() {
 
   }
 };
 const obj15 = {
-  scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC,
+  scope: require("set").OAuth2Scopes.RPC,
   handler() {
 
   }
 };
 obj[RPCEvents.CHANNEL_CREATE] = {
-  scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC,
+  scope: require("set").OAuth2Scopes.RPC,
   handler() {
 
   }
 };
 const obj17 = {};
 const obj18 = {};
-const items6 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
+const items6 = [require("set").OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
 obj18[RPC_SCOPE_CONFIG.ANY] = items6;
 obj17.scope = obj18;
 obj17.handler = function handler() {
@@ -316,7 +317,7 @@ obj17.handler = function handler() {
 obj[RPCEvents.GAME_JOIN] = obj17;
 const obj19 = {};
 const obj20 = {};
-const items7 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
+const items7 = [require("set").OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
 obj20[RPC_SCOPE_CONFIG.ANY] = items7;
 obj19.scope = obj20;
 obj19.handler = function handler() {
@@ -325,7 +326,7 @@ obj19.handler = function handler() {
 obj[RPCEvents.GAME_SPECTATE] = obj19;
 const obj21 = {};
 const obj22 = {};
-const items8 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE];
+const items8 = [require("set").OAuth2Scopes.RPC, RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE];
 obj22[RPC_SCOPE_CONFIG.ANY] = items8;
 obj21.scope = obj22;
 obj21.handler = function handler() {
@@ -334,7 +335,7 @@ obj21.handler = function handler() {
 obj[RPCEvents.ACTIVITY_JOIN] = obj21;
 const obj23 = {};
 const obj24 = {};
-const items9 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
+const items9 = [require("set").OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
 obj24[RPC_SCOPE_CONFIG.ANY] = items9;
 obj23.scope = obj24;
 obj23.handler = function handler() {
@@ -343,7 +344,7 @@ obj23.handler = function handler() {
 obj[RPCEvents.ACTIVITY_JOIN_REQUEST] = obj23;
 const obj25 = {};
 const obj26 = {};
-const items10 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE];
+const items10 = [require("set").OAuth2Scopes.RPC, RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE];
 obj26[RPC_SCOPE_CONFIG.ANY] = items10;
 obj25.scope = obj26;
 obj25.handler = function handler() {
@@ -352,7 +353,7 @@ obj25.handler = function handler() {
 obj[RPCEvents.ACTIVITY_SPECTATE] = obj25;
 const obj27 = {};
 const obj28 = {};
-const items11 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
+const items11 = [require("set").OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
 obj28[RPC_SCOPE_CONFIG.ANY] = items11;
 obj27.scope = obj28;
 obj27.handler = function handler() {
@@ -377,7 +378,7 @@ obj[RPCEvents.FRAME_LAYOUT_MODE_UPDATE] = {
 
   }
 };
-obj[RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE] = arg1(dependencyMap[19]).activityInstanceConnectedParticipantsUpdateEvent;
+obj[RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE] = require("activityInstanceConnectedParticipants").activityInstanceConnectedParticipantsUpdateEvent;
 const items12 = [RPC_AUTHENTICATED_SCOPE];
 obj[RPCEvents.THERMAL_STATE_UPDATE] = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items12 },
@@ -393,7 +394,7 @@ obj[RPCEvents.ORIENTATION_UPDATE] = {
   }
 };
 const obj16 = {
-  scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC,
+  scope: require("set").OAuth2Scopes.RPC,
   handler() {
 
   }
@@ -411,14 +412,14 @@ const obj30 = {
   }
 };
 obj[RPCEvents.VOICE_CHANNEL_SELECT] = {
-  scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC,
+  scope: require("set").OAuth2Scopes.RPC,
   handler() {
 
   }
 };
 const obj32 = {};
 const obj33 = {};
-const items14 = [arg1(dependencyMap[17]).OAuth2Scopes.RPC, arg1(dependencyMap[17]).OAuth2Scopes.RPC_NOTIFICATIONS_READ];
+const items14 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_NOTIFICATIONS_READ];
 obj33[RPC_SCOPE_CONFIG.ALL] = items14;
 obj32.scope = obj33;
 obj32.handler = function handler() {
@@ -426,51 +427,51 @@ obj32.handler = function handler() {
 };
 obj[RPCEvents.NOTIFICATION_CREATE] = obj32;
 const obj31 = {
-  scope: arg1(dependencyMap[17]).OAuth2Scopes.RPC,
+  scope: require("set").OAuth2Scopes.RPC,
   handler() {
 
   }
 };
 obj[RPCEvents.RELATIONSHIP_UPDATE] = {
-  scope: arg1(dependencyMap[17]).OAuth2Scopes.RELATIONSHIPS_READ,
+  scope: require("set").OAuth2Scopes.RELATIONSHIPS_READ,
   handler(socket) {
-    let obj = importAll(dependencyMap[20]);
+    let obj = importAll(483);
     const flags = socket.socket.application.flags;
     let num = 0;
     if (null != flags) {
       num = flags;
     }
-    const obj2 = importAll(dependencyMap[20]);
-    const deserializeResult = importAll(dependencyMap[20]).deserialize(num);
+    const obj2 = importAll(483);
+    const deserializeResult = importAll(483).deserialize(num);
     if (obj.has(deserializeResult, obj3.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
-      let tmp4 = importDefault(dependencyMap[15]);
+      let tmp4 = importDefault(10496);
       obj = { errorCode: constants2.INVALID_PERMISSIONS };
       const prototype = tmp4.prototype;
       tmp4 = new tmp4(obj, "Missing Permissions");
       throw tmp4;
     }
-    const obj3 = importAll(dependencyMap[20]);
+    obj3 = importAll(483);
   }
 };
 const obj35 = {};
 const obj36 = {};
-const items15 = [RPC_LOCAL_SCOPE, arg1(dependencyMap[17]).OAuth2Scopes.IDENTIFY];
+const items15 = [RPC_LOCAL_SCOPE, require("set").OAuth2Scopes.IDENTIFY];
 obj36[RPC_SCOPE_CONFIG.ANY] = items15;
 obj35.scope = obj36;
 obj35.handler = function handler() {
   return (prevState) => {
     prevState = prevState.prevState;
-    const obj = { currentUser: currentUser.getCurrentUser() };
+    const obj = { currentUser: outer1_13.getCurrentUser() };
     let tmp = null == obj.currentUser;
     if (!tmp) {
       let tmp2 = null != prevState;
       if (tmp2) {
-        tmp2 = callback(closure_3[21])(obj, prevState);
+        tmp2 = outer1_1(outer1_3[21])(obj, prevState);
       }
       tmp = tmp2;
     }
     if (!tmp) {
-      prevState.dispatch(callback(closure_3[22])(obj.currentUser));
+      prevState.dispatch(outer1_1(outer1_3[22])(obj.currentUser));
     }
     return obj;
   };
@@ -478,24 +479,24 @@ obj35.handler = function handler() {
 obj[RPCEvents.CURRENT_USER_UPDATE] = obj35;
 const obj37 = {};
 const obj38 = {};
-const items16 = [arg1(dependencyMap[17]).OAuth2Scopes.IDENTIFY, arg1(dependencyMap[17]).OAuth2Scopes.GUILDS_MEMBERS_READ];
+const items16 = [require("set").OAuth2Scopes.IDENTIFY, require("set").OAuth2Scopes.GUILDS_MEMBERS_READ];
 obj38[RPC_SCOPE_CONFIG.ALL] = items16;
 obj37.scope = obj38;
 obj37.handler = function handler(args) {
-  const arg1 = args.args.guild_id;
+  const guild_id = args.args.guild_id;
   return (prevState) => {
     prevState = prevState.prevState;
-    const obj = { currentGuildMember: selfMember.getSelfMember(guild_id) };
+    const obj = { currentGuildMember: outer1_9.getSelfMember(guild_id) };
     let tmp = null == obj.currentGuildMember;
     if (!tmp) {
       let tmp2 = null != prevState;
       if (tmp2) {
-        tmp2 = callback(closure_3[21])(obj, prevState);
+        tmp2 = outer1_1(outer1_3[21])(obj, prevState);
       }
       tmp = tmp2;
     }
     if (!tmp) {
-      prevState.dispatch(callback(closure_3[23])(obj.currentGuildMember));
+      prevState.dispatch(outer1_1(outer1_3[23])(obj.currentGuildMember));
     }
     return obj;
   };
@@ -517,7 +518,7 @@ obj[RPCEvents.ENTITLEMENT_DELETE] = {
 };
 const obj41 = {};
 const obj42 = {};
-const items19 = [RPC_LOCAL_SCOPE, arg1(dependencyMap[17]).OAuth2Scopes.RPC_SCREENSHARE_READ];
+const items19 = [RPC_LOCAL_SCOPE, require("set").OAuth2Scopes.RPC_SCREENSHARE_READ];
 obj42[RPC_SCOPE_CONFIG.ALL] = items19;
 obj41.scope = obj42;
 obj41.handler = function handler() {
@@ -525,14 +526,14 @@ obj41.handler = function handler() {
     let dispatch;
     let prevState;
     ({ prevState, dispatch } = arg0);
-    const streamerActiveStreamMetadata = streamerActiveStreamMetadata.getStreamerActiveStreamMetadata();
+    const streamerActiveStreamMetadata = outer1_7.getStreamerActiveStreamMetadata();
     let pid;
     if (null != streamerActiveStreamMetadata) {
       pid = streamerActiveStreamMetadata.pid;
     }
     let gameForPID = null;
     if (null != pid) {
-      gameForPID = gameForPID.getGameForPID(streamerActiveStreamMetadata.pid);
+      gameForPID = outer1_5.getGameForPID(streamerActiveStreamMetadata.pid);
     }
     let id;
     if (null != gameForPID) {
@@ -540,11 +541,11 @@ obj41.handler = function handler() {
     }
     let application = null;
     if (null != id) {
-      application = application.getApplication(gameForPID.id);
+      application = outer1_4.getApplication(gameForPID.id);
     }
     let tmp8 = null;
     if (null != application) {
-      tmp8 = callback(closure_3[24])(application);
+      tmp8 = outer1_1(outer1_3[24])(application);
     }
     if (null != streamerActiveStreamMetadata) {
       const sourceName = streamerActiveStreamMetadata.sourceName;
@@ -578,14 +579,14 @@ obj41.handler = function handler() {
 obj[RPCEvents.SCREENSHARE_STATE_UPDATE] = obj41;
 const obj43 = {};
 const obj44 = {};
-const items20 = [RPC_LOCAL_SCOPE, arg1(dependencyMap[17]).OAuth2Scopes.RPC_VIDEO_READ];
+const items20 = [RPC_LOCAL_SCOPE, require("set").OAuth2Scopes.RPC_VIDEO_READ];
 obj44[RPC_SCOPE_CONFIG.ALL] = items20;
 obj43.scope = obj44;
 obj43.handler = function handler() {
   return (arg0) => {
     let dispatch;
     let prevState;
-    const obj = { active: videoEnabled.isVideoEnabled() };
+    const obj = { active: outer1_11.isVideoEnabled() };
     ({ prevState, dispatch } = arg0);
     if (!obj2.isEqual(obj, prevState)) {
       dispatch(obj);
@@ -601,24 +602,24 @@ obj[RPCEvents.AUTHORIZE_REQUEST] = {
   }
 };
 const obj34 = {
-  scope: arg1(dependencyMap[17]).OAuth2Scopes.RELATIONSHIPS_READ,
+  scope: require("set").OAuth2Scopes.RELATIONSHIPS_READ,
   handler(socket) {
-    let obj = importAll(dependencyMap[20]);
+    let obj = importAll(483);
     const flags = socket.socket.application.flags;
     let num = 0;
     if (null != flags) {
       num = flags;
     }
-    const obj2 = importAll(dependencyMap[20]);
-    const deserializeResult = importAll(dependencyMap[20]).deserialize(num);
+    const obj2 = importAll(483);
+    const deserializeResult = importAll(483).deserialize(num);
     if (obj.has(deserializeResult, obj3.deserialize(constants.DISABLE_RELATIONSHIPS_ACCESS))) {
-      let tmp4 = importDefault(dependencyMap[15]);
+      let tmp4 = importDefault(10496);
       obj = { errorCode: constants2.INVALID_PERMISSIONS };
       const prototype = tmp4.prototype;
       tmp4 = new tmp4(obj, "Missing Permissions");
       throw tmp4;
     }
-    const obj3 = importAll(dependencyMap[20]);
+    obj3 = importAll(483);
   }
 };
 const obj39 = {
@@ -633,6 +634,6 @@ const obj40 = {
 
   }
 };
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/rpc/server/events/crossPlatformRPCEventHandlers.tsx");
+const result = require("isGuildOwner").fileFinishedImporting("modules/rpc/server/events/crossPlatformRPCEventHandlers.tsx");
 
 export default obj;

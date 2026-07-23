@@ -1,53 +1,55 @@
-// Module ID: 15445
-// Function ID: 117849
-// Dependencies: []
+// Module ID: 15562
+// Function ID: 120023
+// Dependencies: [31, 27, 3767, 653, 33, 4130, 5052, 689, 11628, 566, 675, 1212, 7779, 4466, 1273, 2]
 
-// Module 15445
+// Module 15562
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+import importDefaultResult1 from "createTextStyle";
+
 let Fonts;
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-({ Fonts, AnalyticEvents: closure_6, MessageFlags: closure_7 } = arg1(dependencyMap[3]));
-const jsx = arg1(dependencyMap[4]).jsx;
-let obj1 = arg1(dependencyMap[5]);
+let closure_6;
+let closure_7;
+const require = arg1;
+({ Fonts, AnalyticEvents: closure_6, MessageFlags: closure_7 } = ME);
 let obj = {};
 obj = { fontStyle: "italic" };
-const tmp2 = arg1(dependencyMap[3]);
-const merged = Object.assign(importDefault(dependencyMap[6])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[7]).colors.TEXT_DEFAULT, 12));
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, 12));
 obj["lineHeight"] = 16;
 obj.systemContent = obj;
-obj1 = {};
-const importDefaultResult = importDefault(dependencyMap[6]);
-const merged1 = Object.assign(importDefault(dependencyMap[6])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[7]).colors.TEXT_DEFAULT, 12));
-obj1["lineHeight"] = 16;
-obj.messageContent = obj1;
-let closure_9 = obj1.createStyles(obj);
-const importDefaultResult1 = importDefault(dependencyMap[6]);
+_createForOfIteratorHelperLoose = {};
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, 12));
+_createForOfIteratorHelperLoose["lineHeight"] = 16;
+obj.messageContent = _createForOfIteratorHelperLoose;
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function MessageRequestPreview(channel) {
   let error;
   let isBlocked;
   let isIgnored;
   let loaded;
   channel = channel.channel;
-  const arg1 = channel;
   const tmp = callback();
-  let obj = arg1(dependencyMap[8]);
+  let obj = channel(11628);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
-  const importDefault = message;
   ({ loaded, error } = messageRequestPreview);
-  const items = [closure_5];
+  const items = [_isNativeReflectConstruct];
   const items1 = [message];
-  const stateFromStoresObject = arg1(dependencyMap[9]).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = channel(566).useStateFromStoresObject(items, () => {
     const obj = {};
     let isBlockedForMessageResult = null != message;
     if (isBlockedForMessageResult) {
-      isBlockedForMessageResult = closure_5.isBlockedForMessage(message);
+      isBlockedForMessageResult = outer1_5.isBlockedForMessage(message);
     }
     obj.isBlocked = isBlockedForMessageResult;
     let isIgnoredForMessageResult = null != message;
     if (isIgnoredForMessageResult) {
-      isIgnoredForMessageResult = closure_5.isIgnoredForMessage(message);
+      isIgnoredForMessageResult = outer1_5.isIgnoredForMessage(message);
     }
     obj.isIgnored = isIgnoredForMessageResult;
     return obj;
@@ -56,16 +58,16 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   ({ isBlocked, isIgnored } = stateFromStoresObject);
   const effect = importAllResult.useEffect(() => {
     if (null != message) {
-      let obj = message(closure_2[10]);
+      let obj = message(outer1_2[10]);
       obj = {};
       ({ isSpam: obj2.is_spam, id: obj2.channel_id } = channel);
       obj.other_user_id = message.author.id;
-      obj.track(constants.MESSAGE_REQUEST_PREVIEW_VIEWED, obj);
+      obj.track(outer1_6.MESSAGE_REQUEST_PREVIEW_VIEWED, obj);
     }
   }, items2);
   if (error) {
-    const intl9 = arg1(dependencyMap[11]).intl;
-    let stringResult = intl9.string(arg1(dependencyMap[11]).t.BZHld2);
+    const intl9 = channel(1212).intl;
+    let stringResult = intl9.string(channel(1212).t.BZHld2);
     let flag = false;
   } else {
     flag = false;
@@ -73,15 +75,15 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
     if (loaded) {
       if (null != message) {
         if (isBlocked) {
-          const intl8 = arg1(dependencyMap[11]).intl;
-          stringResult = intl8.string(arg1(dependencyMap[11]).t.WPe+xL);
+          const intl8 = channel(1212).intl;
+          stringResult = intl8.string(channel(1212).t["WPe+xL"]);
           flag = false;
         }
       }
       if (null != message) {
         if (isIgnored) {
-          const intl7 = arg1(dependencyMap[11]).intl;
-          stringResult = intl7.string(arg1(dependencyMap[11]).t.uxrh1O);
+          const intl7 = channel(1212).intl;
+          stringResult = intl7.string(channel(1212).t.uxrh1O);
           flag = false;
         }
       }
@@ -91,52 +93,52 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = importDefault(dependencyMap[12])(message, { "Bool(false)": null, "Bool(false)": null }).content;
+          const content1 = message(7779)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
             stringResult = content1;
           }
-          const intl6 = arg1(dependencyMap[11]).intl;
-          stringResult = intl6.string(arg1(dependencyMap[11]).t.262oPB);
+          const intl6 = channel(1212).intl;
+          stringResult = intl6.string(channel(1212).t["262oPB"]);
           flag = false;
         }
       }
       if (null != message) {
         if (obj3.getMessageStickers(message).length > 0) {
-          const intl5 = arg1(dependencyMap[11]).intl;
-          let stringResult1 = intl5.string(arg1(dependencyMap[11]).t.zuI+by);
+          const intl5 = channel(1212).intl;
+          let stringResult1 = intl5.string(channel(1212).t["zuI+by"]);
         } else if (null != message.interaction) {
-          const intl4 = arg1(dependencyMap[11]).intl;
-          stringResult1 = intl4.string(arg1(dependencyMap[11]).t.2v7kfl);
+          const intl4 = channel(1212).intl;
+          stringResult1 = intl4.string(channel(1212).t["2v7kfl"]);
         } else if (message.hasFlag(closure_7.IS_VOICE_MESSAGE)) {
-          const intl3 = arg1(dependencyMap[11]).intl;
-          stringResult1 = intl3.string(arg1(dependencyMap[11]).t.6bhHrc);
+          const intl3 = channel(1212).intl;
+          stringResult1 = intl3.string(channel(1212).t["6bhHrc"]);
         } else {
-          const intl2 = arg1(dependencyMap[11]).intl;
+          const intl2 = channel(1212).intl;
           const string = intl2.string;
-          const t = arg1(dependencyMap[11]).t;
+          const t = channel(1212).t;
           if (hasFlagResult) {
             stringResult1 = string(t.Xxm5i3);
           } else {
             stringResult1 = string(t.LoMGlg);
           }
-          const hasFlagResult = message.hasFlag(closure_7.IS_COMPONENTS_V2);
+          hasFlagResult = message.hasFlag(closure_7.IS_COMPONENTS_V2);
         }
         stringResult = stringResult1;
         flag = false;
-        const obj3 = arg1(dependencyMap[13]);
+        obj3 = channel(4466);
       } else {
-        const intl = arg1(dependencyMap[11]).intl;
-        stringResult = intl.string(arg1(dependencyMap[11]).t.0KfDxM);
+        const intl = channel(1212).intl;
+        stringResult = intl.string(channel(1212).t["0KfDxM"]);
         flag = false;
       }
     }
   }
-  obj = { style: channel.style, children: jsx(arg1(dependencyMap[14]).LegacyText, obj) };
-  obj = { 0: -83885449, 0: 1107296907, 9223372036854775807: 110769, style: flag ? tmp.messageContent : tmp.systemContent, children: stringResult };
-  return <View {...obj} />;
+  obj = { style: channel.style, children: jsx(channel(1273).LegacyText, obj) };
+  obj = { style: flag ? tmp.messageContent : tmp.systemContent, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult };
+  return <View style={flag ? tmp.messageContent : tmp.systemContent} numberOfLines={3} ellipsizeMode="tail">{stringResult}</View>;
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/message_request/native/MessageRequestPreview.tsx");
 
 export default memoResult;

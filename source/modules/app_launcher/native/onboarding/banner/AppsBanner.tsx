@@ -1,24 +1,26 @@
-// Module ID: 11173
-// Function ID: 86893
+// Module ID: 11183
+// Function ID: 86943
 // Name: AppsBaner
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 11184, 11181, 1212, 2]
 // Exports: default
 
-// Module 11173 (AppsBaner)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles({ rocketIconContainer: { 10360: "b", 10496: 30.613 }, rocketIcon: { "Null": true, "Null": true } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppsBanner.tsx");
+// Module 11183 (AppsBaner)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ rocketIconContainer: { position: "absolute", top: -20 }, rocketIcon: { width: 90, height: 90 } });
+const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppsBanner.tsx");
 
 export default function AppsBaner() {
   const tmp = callback();
-  let obj = { style: tmp.rocketIconContainer, children: jsx(importDefault(dependencyMap[4]), obj) };
+  obj = { style: tmp.rocketIconContainer, children: jsx(importDefault(11184), obj) };
   obj = { style: tmp.rocketIcon };
-  obj = { image: <View {...obj} /> };
-  const tmp2 = <View {...obj} />;
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.text = intl.string(arg1(dependencyMap[6]).t.sjRwMJ);
-  return jsx(importDefault(dependencyMap[5]), obj);
+  obj = { image: <View style={tmp.rocketIcon} /> };
+  const tmp2 = <View image={<View style={tmp.rocketIcon} />} />;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl.string(require(1212) /* getSystemLocale */.t.sjRwMJ);
+  return jsx(importDefault(11181), { image: <View style={tmp.rocketIcon} /> });
 };

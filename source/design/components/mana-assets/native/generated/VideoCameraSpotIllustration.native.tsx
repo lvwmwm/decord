@@ -1,13 +1,13 @@
-// Module ID: 6603
-// Function ID: 50837
+// Module ID: 6608
+// Function ID: 50866
 // Name: VideoCameraSpotIllustration
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [33, 5085, 6609, 2]
 // Exports: VideoCameraSpotIllustration
 
-// Module 6603 (VideoCameraSpotIllustration)
-import { jsx } from "__exportStarResult1";
+// Module 6608 (VideoCameraSpotIllustration)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/VideoCameraSpotIllustration.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/VideoCameraSpotIllustration.native.tsx");
 
 export const VideoCameraSpotIllustration = function VideoCameraSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const VideoCameraSpotIllustration = function VideoCameraSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6609) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const VideoCameraSpotIllustration = function VideoCameraSpotIllustration(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

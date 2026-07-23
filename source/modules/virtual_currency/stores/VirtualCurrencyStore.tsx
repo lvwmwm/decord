@@ -1,9 +1,15 @@
-// Module ID: 8717
-// Function ID: 68972
+// Module ID: 8724
+// Function ID: 69013
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 686, 566, 2]
 
-// Module 8717 (_isNativeReflectConstruct)
+// Module 8724 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,18 +19,13 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class VirtualCurrencyStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, VirtualCurrencyStore);
+      tmp = outer1_2(this, apply);
       items = [, ];
-      items[0] = VirtualCurrencyStore(closure_1[5]);
+      items[0] = VirtualCurrencyStore(outer1_1[5]);
       items[1] = {
         VIRTUAL_CURRENCY_REDEEM_START(arg0) {
               return tmp2Result.handleRedeemVirtualCurrencyStart(arg0);
@@ -60,18 +61,18 @@ let tmp2 = (Store) => {
               const result = tmp2Result.setBalancePillOverlay(balancePillOverlay.balancePillOverlay);
             }
       };
-      obj = closure_5(VirtualCurrencyStore);
-      tmp2 = closure_4;
-      if (closure_7()) {
+      obj = outer1_5(apply);
+      tmp2 = outer1_4;
+      if (outer1_7()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      VirtualCurrencyStore = tmp2Result;
+      apply = tmp2Result;
       tmp2Result._entitlements = null;
       tmp2Result._redeemingSkuId = null;
       tmp2Result._isRedeemingVirtualCurrency = false;
@@ -84,7 +85,6 @@ let tmp2 = (Store) => {
       return tmp2Result;
     }
   }
-  const importDefault = VirtualCurrencyStore;
   callback2(VirtualCurrencyStore, Store);
   let obj = {
     key: "redeemError",
@@ -92,7 +92,7 @@ let tmp2 = (Store) => {
       return this._redeemVirtualCurrencyError;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "isRedeeming",
     get() {
@@ -247,9 +247,9 @@ let tmp2 = (Store) => {
     }
   };
   return callback(VirtualCurrencyStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "VirtualCurrencyStore";
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/virtual_currency/stores/VirtualCurrencyStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/virtual_currency/stores/VirtualCurrencyStore.tsx");
 
 export default tmp2;

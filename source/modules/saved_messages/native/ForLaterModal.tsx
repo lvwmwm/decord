@@ -1,51 +1,60 @@
-// Module ID: 9907
-// Function ID: 76651
+// Module ID: 9915
+// Function ID: 76694
 // Name: ForLaterModal
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1212, 9533, 5094, 9122, 477, 5087, 4337, 9916, 2]
 // Exports: default
 
-// Module 9907 (ForLaterModal)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { 9223372036854775807: null, 9223372036854775807: "hidden", 9223372036854775807: 1, 9223372036854775807: 84, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER };
-obj.modal = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.headerContainer = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, paddingTop: importDefault(dependencyMap[4]).space.PX_8 };
-let closure_6 = obj.createStyles(obj);
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, paddingTop: importDefault(dependencyMap[4]).space.PX_8 };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/saved_messages/native/ForLaterModal.tsx");
+// Module 9915 (ForLaterModal)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-export default function ForLaterModal() {
-  const tmp = callback2();
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, borderBottomWidth: 0, shadowColor: "transparent", height: "100%" };
+_createForOfIteratorHelperLoose.modal = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("jsxProd").fileFinishedImporting("modules/saved_messages/native/ForLaterModal.tsx");
+
+export default function ForLaterModal(type) {
+  type = type.type;
+  let _require;
+  const tmp = _createForOfIteratorHelperLoose();
+  const intl = _require(1212).intl;
+  if (type === _require(9533).SavedMessageSortTypes.REMINDER) {
+  } else {
+  }
+  const stringResult = intl.string(_2pAkDA);
+  _require = stringResult;
   let obj = { style: tmp.modal };
   obj = { style: tmp.headerContainer };
-  obj = {};
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.title = intl.string(arg1(dependencyMap[6]).t.2pAkDA);
-  obj.headerTitle = function headerTitle() {
-    const obj = {};
-    const intl = callback(closure_2[6]).intl;
-    obj.title = intl.string(callback(closure_2[6]).t.2pAkDA);
-    return callback2(callback(closure_2[7]).GenericHeaderTitle, obj);
+  obj = {
+    title: stringResult,
+    headerTitle() {
+      return outer1_4(_undefined(outer1_2[8]).GenericHeaderTitle, { title: _undefined });
+    },
+    headerTitleAlign: "center"
   };
-  obj.headerTitleAlign = "center";
   let num;
   if (obj4.isIOS()) {
     num = 0;
   }
   obj.headerStatusBarHeight = num;
-  const obj4 = arg1(dependencyMap[8]);
-  const tmp2 = closure_5;
-  obj.headerLeft = arg1(dependencyMap[9]).getHeaderCloseButton(importDefault(dependencyMap[10]).pop);
-  obj.children = callback(arg1(dependencyMap[5]).Header, obj);
+  obj4 = _require(477);
+  const tmp7 = closure_5;
+  obj.headerLeft = _require(5087).getHeaderCloseButton(importDefault(4337).pop);
+  obj.children = callback(_require(5094).Header, obj);
   const items = [callback(View, obj), ];
-  const obj1 = {};
-  const obj5 = arg1(dependencyMap[9]);
-  obj1.onClose = importDefault(dependencyMap[10]).pop;
-  items[1] = callback(importDefault(dependencyMap[11]), obj1);
+  const obj1 = { type };
+  const obj5 = _require(5087);
+  obj1.onClose = importDefault(4337).pop;
+  items[1] = callback(importDefault(9916), obj1, type);
   obj.children = items;
-  return tmp2(View, obj);
+  return tmp7(View, obj);
 };

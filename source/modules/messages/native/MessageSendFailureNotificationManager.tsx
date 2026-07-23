@@ -1,9 +1,25 @@
-// Module ID: 16394
-// Function ID: 126651
+// Module ID: 16511
+// Function ID: 128825
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 1906, 3947, 1849, 6651, 653, 12639, 10235, 10236, 10638, 1212, 5078, 2]
 
-// Module 16394 (_isNativeReflectConstruct)
+// Module 16511 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { LocalNotificationTypes } from "LocalNotificationTypes";
+import tmp3 from "AutomaticLifecycleManager";
+
+let closure_12;
+let closure_13;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -19,12 +35,12 @@ function handleMessageSendFailure(shouldNotify) {
   ({ channelId, messageId } = shouldNotify);
   if (shouldNotify.shouldNotify) {
     if ("active" !== state.getState()) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(10638);
       obj = { category: "local" };
-      const intl = arg1(dependencyMap[14]).intl;
-      obj.alertTitle = intl.string(arg1(dependencyMap[14]).t.LdlH2M);
-      const intl2 = arg1(dependencyMap[14]).intl;
-      obj.alertBody = intl2.string(arg1(dependencyMap[14]).t.xxRPOT);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj.alertTitle = intl.string(require(1212) /* getSystemLocale */.t.LdlH2M);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      obj.alertBody = intl2.string(require(1212) /* getSystemLocale */.t.xxRPOT);
       obj = { channelId, messageId, type: LocalNotificationTypes.MESSAGE_SEND_FAILED };
       obj.userInfo = obj;
       const result = obj.presentLocalNotification(obj);
@@ -36,26 +52,25 @@ function handleMessageSendFailure(shouldNotify) {
         key: `${channelId}-${messageId}`,
         duration: 5000,
         onDismiss() {
-              callback(closure_2[11]).clearNotification();
+              outer1_1(outer1_2[11]).clearNotification();
             }
       };
-      const obj4 = importDefault(dependencyMap[11]);
-      obj1.inAppNotificationId = arg1(dependencyMap[12]).generateInAppNotificationId();
+      const obj4 = importDefault(10235);
+      obj1.inAppNotificationId = require(10236) /* hasMedia */.generateInAppNotificationId();
       obj4.enqueueNotification(obj1);
-      const obj6 = arg1(dependencyMap[12]);
+      const obj6 = require(10236) /* hasMedia */;
     }
   }
 }
 function handleMessageCreate(message) {
   message = message.message;
-  const arg1 = message;
   const sendMessageOptions = message.sendMessageOptions;
   let tmp = null != sendMessageOptions && sendMessageOptions.isHydratingExpiredPendingMessage;
   if (tmp) {
     tmp = message.state === constants2.SEND_FAILED;
   }
   if (tmp) {
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let id;
     if (null != currentUser) {
       id = currentUser.id;
@@ -70,50 +85,12 @@ function handleMessageCreate(message) {
   if (tmp) {
     const _setTimeout = setTimeout;
     const timerId = setTimeout(() => {
-      callback({ channelId: message.channel_id, messageId: message.id, shouldNotify: true });
+      outer1_16({ channelId: message.channel_id, messageId: message.id, shouldNotify: true });
     }, 3000);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-({ InAppNotificationTypes: closure_12, MessageStates: closure_13 } = arg1(dependencyMap[9]));
-const LocalNotificationTypes = arg1(dependencyMap[10]).LocalNotificationTypes;
-let tmp3 = (arg0) => {
-  class MessageSendFailureNotificationManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_4(this, MessageSendFailureNotificationManager);
-      items1 = [...items];
-      obj = closure_6(MessageSendFailureNotificationManager);
-      tmp2 = closure_5;
-      if (closure_15()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = { MESSAGE_CREATE: closure_17, MESSAGE_SEND_FAILED: closure_16 };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const arg1 = MessageSendFailureNotificationManager;
-  callback2(MessageSendFailureNotificationManager, arg0);
-  return callback(MessageSendFailureNotificationManager);
-}(importDefault(dependencyMap[15]));
+({ InAppNotificationTypes: closure_12, MessageStates: closure_13 } = ME);
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[9]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/messages/native/MessageSendFailureNotificationManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/messages/native/MessageSendFailureNotificationManager.tsx");
 
 export default tmp3;

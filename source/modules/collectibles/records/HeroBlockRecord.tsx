@@ -1,17 +1,19 @@
-// Module ID: 6809
-// Function ID: 53715
+// Module ID: 6814
+// Function ID: 53747
 // Name: HeroBlockRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6806, 6786, 2]
 
-// Module 6809 (HeroBlockRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 6814 (HeroBlockRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class HeroBlockRecord {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, HeroBlockRecord);
-      this.type = HeroBlockRecord(closure_1[2]).ShopBlockType.HERO;
+      tmp = outer1_2(this, HeroBlockRecord);
+      this.type = HeroBlockRecord(outer1_1[2]).ShopBlockType.HERO;
       ({ category_sku_id: this.categorySkuId, name: this.name, summary } = arg0);
       this.summary = summary.trim();
       ({ category_store_listing_id: this.categoryStoreListingId, title: this.title, ranked_sku_ids: this.rankedSkuIds } = arg0);
@@ -26,14 +28,13 @@ const tmp2 = () => {
       }
       self.unpublishedAt = date;
       ({ banner_text_color: self.bannerTextColor, mobile_title: self.mobileTitle, mobile_summary: self.mobileSummary, mobile_products_title: self.mobileProductsTitle, hero_banner_url: self.heroBannerUrl, hero_banner_animated_url: self.heroBannerAnimatedUrl, hero_rive_url: self.heroRiveUrl, hero_logo_url: self.heroLogoUrl, mobile_hero_url: self.mobileHeroUrl, mobile_hero_animated_url: self.mobileHeroAnimatedUrl } = arg0);
-      obj = HeroBlockRecord(closure_1[3]);
+      obj = HeroBlockRecord(outer1_1[3]);
       self.bannerDisplayConfig = obj.getAssetDisplayConfig(arg0.banner_display_config);
-      obj2 = HeroBlockRecord(closure_1[3]);
+      obj2 = HeroBlockRecord(outer1_1[3]);
       self.logoDisplayConfig = obj2.getAssetDisplayConfig(arg0.logo_display_config);
       return;
     }
   }
-  const arg1 = HeroBlockRecord;
   const items = [
     {
       key: "fromServer",
@@ -43,7 +44,7 @@ const tmp2 = () => {
     }
   ];
   return callback(HeroBlockRecord, null, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/records/HeroBlockRecord.tsx");
+})();
+const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/HeroBlockRecord.tsx");
 
 export const HeroBlockRecord = tmp2;

@@ -1,54 +1,51 @@
-// Module ID: 13998
-// Function ID: 106387
+// Module ID: 14112
+// Function ID: 108543
 // Name: useManageSubscriptionCardData
-// Dependencies: []
+// Dependencies: [57, 31, 1838, 3752, 653, 3712, 5618, 1212, 14103, 566, 14101, 2]
 // Exports: default
 
-// Module 13998 (useManageSubscriptionCardData)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const SubscriptionStatusTypes = arg1(dependencyMap[4]).SubscriptionStatusTypes;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_role_subscriptions/manage_subscriptions/useManageSubscriptionCardData.tsx");
+// Module 14112 (useManageSubscriptionCardData)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { SubscriptionStatusTypes } from "ME";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/manage_subscriptions/useManageSubscriptionCardData.tsx");
 
 export default function useManageSubscriptionCardData(subscription) {
   let hasActiveTrial;
   let status;
-  let obj = callback(dependencyMap[8]);
-  const callback = obj.getRoleSubscriptionPlanId(subscription);
-  let obj1 = callback(dependencyMap[9]);
-  const items = [closure_6];
+  let obj = _require(stateFromStores1[8]);
+  _require = obj.getRoleSubscriptionPlanId(subscription);
+  let obj1 = _require(stateFromStores1[9]);
+  const items = [fetchSubscriptionsSettings];
   const stateFromStores = obj1.useStateFromStores(items, () => fetchSubscriptionsSettings.getSubscriptionListingForPlan(closure_0));
-  const importDefault = stateFromStores;
-  const items1 = [closure_6];
-  const stateFromStores1 = callback(dependencyMap[9]).useStateFromStores(items1, () => {
+  const items1 = [fetchSubscriptionsSettings];
+  stateFromStores1 = _require(stateFromStores1[9]).useStateFromStores(items1, () => {
     let subscriptionGroupListingForSubscriptionListing = null;
     if (null != stateFromStores) {
       subscriptionGroupListingForSubscriptionListing = fetchSubscriptionsSettings.getSubscriptionGroupListingForSubscriptionListing(stateFromStores.id);
     }
     return subscriptionGroupListingForSubscriptionListing;
   });
-  const dependencyMap = stateFromStores1;
-  const obj3 = callback(dependencyMap[9]);
-  const items2 = [closure_5];
-  const stateFromStores2 = callback(dependencyMap[9]).useStateFromStores(items2, () => {
+  const obj3 = _require(stateFromStores1[9]);
+  const items2 = [_createForOfIteratorHelperLoose];
+  const stateFromStores2 = _require(stateFromStores1[9]).useStateFromStores(items2, () => {
     let guild_id;
     if (null != stateFromStores1) {
       guild_id = stateFromStores1.guild_id;
     }
     return guild.getGuild(guild_id);
   });
-  const callback2 = stateFromStores2;
-  const tmp4 = callback2(React.useState(false), 2);
-  const first = tmp4[0];
-  const React = first;
-  closure_5 = tmp4[1];
-  const obj4 = callback(dependencyMap[9]);
-  const fetchSubscriptionsSettings = callback(dependencyMap[10]).useFetchSubscriptionsSettings().fetchSubscriptionsSettings;
-  closure_6 = fetchSubscriptionsSettings;
+  const tmp4 = stateFromStores2(first.useState(false), 2);
+  first = tmp4[0];
+  _createForOfIteratorHelperLoose = tmp4[1];
+  const obj4 = _require(stateFromStores1[9]);
+  fetchSubscriptionsSettings = _require(stateFromStores1[10]).useFetchSubscriptionsSettings().fetchSubscriptionsSettings;
   const items3 = [first, stateFromStores2, fetchSubscriptionsSettings];
-  const effect = React.useEffect(() => {
+  const effect = first.useEffect(() => {
     let tmp = first;
     if (first) {
       tmp = null != stateFromStores2;
@@ -76,18 +73,18 @@ export default function useManageSubscriptionCardData(subscription) {
     obj = { subscription };
     subscription = obj.subscription;
     let str2 = "";
-    const obj7 = importDefault(dependencyMap[5])(subscription.currentPeriodEnd);
+    const obj7 = stateFromStores(stateFromStores1[5])(subscription.currentPeriodEnd);
     if (null != subscription.price) {
-      str2 = callback(dependencyMap[6]).formatPrice(subscription.price, subscription.currency);
-      const obj8 = callback(dependencyMap[6]);
+      str2 = _require(stateFromStores1[6]).formatPrice(subscription.price, subscription.currency);
+      const obj8 = _require(stateFromStores1[6]);
     }
-    const formatResult = importDefault(dependencyMap[5])(subscription.currentPeriodEnd).format("M/D/YY");
+    const formatResult = stateFromStores(stateFromStores1[5])(subscription.currentPeriodEnd).format("M/D/YY");
     let PAST_DUE = SubscriptionStatusTypes.PAST_DUE;
-    obj1 = { memberSince: importDefault(dependencyMap[5])(subscription.createdAt).format("M/D/YY"), nextRenewalDate: formatResult };
+    obj1 = { memberSince: stateFromStores(stateFromStores1[5])(subscription.createdAt).format("M/D/YY"), nextRenewalDate: formatResult };
     ({ status, hasActiveTrial } = subscription);
-    const intl = callback(dependencyMap[7]).intl;
+    const intl = _require(stateFromStores1[7]).intl;
     const string = intl.string;
-    let UAfot2 = callback(dependencyMap[7]).t;
+    let UAfot2 = _require(stateFromStores1[7]).t;
     if (subscription.status === SubscriptionStatusTypes.CANCELED) {
       UAfot2 = UAfot2.UAfot2;
       let stringResult = string(UAfot2);
@@ -100,6 +97,6 @@ export default function useManageSubscriptionCardData(subscription) {
     PAST_DUE = status === PAST_DUE;
     obj1.isPastDue = PAST_DUE;
     obj1.isTrial = hasActiveTrial;
-    const obj9 = importDefault(dependencyMap[5])(subscription.createdAt);
+    const obj9 = stateFromStores(stateFromStores1[5])(subscription.createdAt);
   }
 };

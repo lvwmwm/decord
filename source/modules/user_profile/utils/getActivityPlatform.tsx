@@ -1,34 +1,35 @@
-// Module ID: 11927
-// Function ID: 92272
+// Module ID: 11939
+// Function ID: 92325
 // Name: PlatformTypes
-// Dependencies: []
+// Dependencies: [653, 11938, 9081, 4814, 8315, 11922, 11923, 11940, 11941, 2]
 // Exports: default
 
-// Module 11927 (PlatformTypes)
-const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
+// Module 11939 (PlatformTypes)
+import { PlatformTypes } from "ME";
+import set from "isListeningOnSpotify";
+
 const items = [, , , ];
 ({ LEAGUE_OF_LEGENDS: arr[0], ROBLOX: arr[1], TWITCH: arr[2], YOUTUBE: arr[3] } = PlatformTypes);
-const set = new Set(items);
-const _module = require(dependencyMap[9]);
-const result = _module.fileFinishedImporting("modules/user_profile/utils/getActivityPlatform.tsx");
+let set = new Set(items);
+const result = set.fileFinishedImporting("modules/user_profile/utils/getActivityPlatform.tsx");
 
 export default function getActivityPlatform(session_id) {
   const importDefault = session_id;
-  const tmp = importDefault(dependencyMap[1])(session_id.session_id);
+  const tmp = importDefault(11938)(session_id.session_id);
   if (null != tmp) {
     return tmp;
-  } else if (importDefault(dependencyMap[2])(session_id)) {
-    return tmp24(tmp25[3]).get(PlatformTypes.SPOTIFY);
-  } else if (tmp24(tmp25[4])(session_id)) {
-    return tmp2(tmp3[3]).get(PlatformTypes.CRUNCHYROLL);
-  } else if (tmp2(tmp3[5])(session_id)) {
-    return tmp4(tmp5[3]).get(PlatformTypes.XBOX);
-  } else if (tmp4(tmp5[6])(session_id)) {
-    return tmp6(tmp7[3]).get(PlatformTypes.PLAYSTATION);
+  } else if (importDefault(9081)(session_id)) {
+    return tmp24(4814).get(PlatformTypes.SPOTIFY);
+  } else if (tmp24(8315)(session_id)) {
+    return tmp2(4814).get(PlatformTypes.CRUNCHYROLL);
+  } else if (tmp2(11922)(session_id)) {
+    return tmp4(4814).get(PlatformTypes.XBOX);
+  } else if (tmp4(11923)(session_id)) {
+    return tmp6(4814).get(PlatformTypes.PLAYSTATION);
   } else {
-    if (!tmp6(tmp7[7])(session_id)) {
-      if (!importDefault(dependencyMap[8])(session_id)) {
-        const found = importDefault(dependencyMap[3]).find((name) => name.name === name.name);
+    if (!tmp6(11940)(session_id)) {
+      if (!importDefault(11941)(session_id)) {
+        const found = importDefault(4814).find((name) => name.name === session_id.name);
         let tmp13 = null;
         if (null != found) {
           tmp13 = null;
@@ -39,6 +40,6 @@ export default function getActivityPlatform(session_id) {
         return tmp13;
       }
     }
-    return importDefault(dependencyMap[3]).get(PlatformTypes.META_QUEST_OR_HORIZON);
+    return importDefault(4814).get(PlatformTypes.META_QUEST_OR_HORIZON);
   }
 };

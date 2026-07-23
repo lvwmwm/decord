@@ -1,12 +1,12 @@
 // Module ID: 3543
-// Function ID: 27520
+// Function ID: 27485
 // Name: _typeof
-// Dependencies: []
+// Dependencies: [3517, 3518, 3515]
 
 // Module 3543 (_typeof)
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
-    const _Symbol = Symbol;
+    let _Symbol = Symbol;
     if ("symbol" === typeof Symbol.iterator) {
       function _typeof(arg0) {
         return typeof arg0;
@@ -42,16 +42,16 @@ function _defineProperties(arg0, arg1) {
   }
 }
 function _setPrototypeOf(arg0, arg1) {
-  const tmp = Object.setPrototypeOf || function _setPrototypeOf(arg0, arg1) {
+  const tmp = Object.setPrototypeOf || (function _setPrototypeOf(arg0, arg1) {
     arg0.__proto__ = arg1;
     return arg0;
-  };
+  });
   const _setPrototypeOf = tmp;
   return tmp(arg0, arg1);
 }
 function _createSuper(arg0) {
-  const require = arg0;
-  let closure_1 = function _isNativeReflectConstruct() {
+  let closure_0 = arg0;
+  let closure_1 = (function _isNativeReflectConstruct() {
     if ("undefined" !== typeof Reflect) {
       const _Reflect3 = Reflect;
       if (Reflect.construct) {
@@ -75,22 +75,22 @@ function _createSuper(arg0) {
       }
     }
     return false;
-  }();
+  })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = callback3(arg0);
+    const obj = outer1_7(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, callback3(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      callback2(self);
+      outer1_6(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== callback(constructResult)) {
+      if ("object" !== outer1_2(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -108,7 +108,7 @@ function _assertThisInitialized(arg0) {
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
-    const _Object = Object;
+    let _Object = Object;
     let _getPrototypeOf = Object.getPrototypeOf;
   } else {
     _getPrototypeOf = function _getPrototypeOf(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { value, enumerable: true, configurable: true, writable: true };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const MinuteParser = (Parser) => {
-  class MinuteParser {
+export const Hour0To11Parser = ((Parser) => {
+  class Hour0To11Parser {
     constructor() {
-      if (this instanceof MinuteParser) {
+      if (this instanceof Hour0To11Parser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -148,21 +148,21 @@ export const MinuteParser = (Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = closure_8;
-        tmp12 = closure_6;
+        tmp11 = outer1_8;
+        tmp12 = outer1_6;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = closure_6(applyResult);
+        tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 60;
-        tmp17 = closure_8(applyResult, "priority", 60);
-        tmp18 = closure_6(applyResult);
+        num2 = 70;
+        tmp17 = outer1_8(applyResult, "priority", 70);
+        tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", ["Y", "R"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["h", "H", "k", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -176,11 +176,10 @@ export const MinuteParser = (Parser) => {
       }
     }
   }
-  const dependencyMap = MinuteParser;
   if ("function" !== typeof Parser) {
-    class MinuteParser {
+    class Hour0To11Parser {
       constructor() {
-        if (this instanceof MinuteParser) {
+        if (this instanceof Hour0To11Parser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -192,21 +191,21 @@ export const MinuteParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 60;
-          tmp17 = closure_8(applyResult, "priority", 60);
-          tmp18 = closure_6(applyResult);
+          num2 = 70;
+          tmp17 = outer1_8(applyResult, "priority", 70);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", ["Y", "R"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["h", "H", "k", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,12 +224,12 @@ export const MinuteParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { "": null, children: null, "": null, value: MinuteParser };
-  MinuteParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: Hour0To11Parser, writable: true, configurable: true };
+  Hour0To11Parser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class MinuteParser {
+    class Hour0To11Parser {
       constructor() {
-        if (this instanceof MinuteParser) {
+        if (this instanceof Hour0To11Parser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -242,21 +241,21 @@ export const MinuteParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 60;
-          tmp17 = closure_8(applyResult, "priority", 60);
-          tmp18 = closure_6(applyResult);
+          num2 = 70;
+          tmp17 = outer1_8(applyResult, "priority", 70);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", ["Y", "R"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["h", "H", "k", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -270,29 +269,29 @@ export const MinuteParser = (Parser) => {
         }
       }
     }
-    _setPrototypeOf(MinuteParser, Parser);
+    _setPrototypeOf(Hour0To11Parser, Parser);
   }
-  let closure_0 = _createSuper(MinuteParser);
+  let closure_0 = _createSuper(Hour0To11Parser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
-      if ("m" === arg1) {
-        return callback(MinuteParser[0]).parseNumericPattern(callback(MinuteParser[1]).numericPatterns.minute, arg0);
-      } else if ("mo" === arg1) {
-        const obj = { unit: "minute" };
+      if ("K" === arg1) {
+        return callback(Hour0To11Parser[0]).parseNumericPattern(callback(Hour0To11Parser[1]).numericPatterns.hour11h, arg0);
+      } else if ("Ko" === arg1) {
+        const obj = { unit: "hour" };
         return ordinalNumber.ordinalNumber(arg0, obj);
       } else {
-        return callback(MinuteParser[0]).parseNDigits(arg1.length, arg0);
+        return callback(Hour0To11Parser[0]).parseNDigits(arg1.length, arg0);
       }
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "validate",
     value: function validate(arg0, arg1) {
       let tmp = arg1 >= 0;
       if (tmp) {
-        tmp = arg1 <= 59;
+        tmp = arg1 <= 11;
       }
       return tmp;
     }
@@ -300,11 +299,16 @@ export const MinuteParser = (Parser) => {
   items[1] = obj;
   items[2] = {
     key: "set",
-    value: function set(setUTCMinutes) {
-      setUTCMinutes.setUTCMinutes(arg2, 0, 0);
-      return setUTCMinutes;
+    value: function set(getUTCHours) {
+      if (getUTCHours.getUTCHours() >= 12) {
+        if (arg2 < 12) {
+          getUTCHours.setUTCHours(arg2 + 12, 0, 0, 0);
+        }
+        return getUTCHours;
+      }
+      getUTCHours.setUTCHours(arg2, 0, 0, 0);
     }
   };
-  _defineProperties(MinuteParser.prototype, items);
-  return MinuteParser;
-}(require(dependencyMap[2]).Parser);
+  _defineProperties(Hour0To11Parser.prototype, items);
+  return Hour0To11Parser;
+})(require("_defineProperties").Parser);

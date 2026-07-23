@@ -1,10 +1,9 @@
-// Module ID: 4539
-// Function ID: 39815
+// Module ID: 4543
+// Function ID: 39847
 // Name: Button
-// Dependencies: []
+// Dependencies: [2, 4544]
 
-// Module 4539 (Button)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("design/components/Button/native/Button.native.tsx");
+// Module 4543 (Button)
+const result = require("set").fileFinishedImporting("design/components/Button/native/Button.native.tsx");
 
-export const Button = require(dependencyMap[1]).BaseTextButton;
+export const Button = require("CollapsingText").BaseTextButton;

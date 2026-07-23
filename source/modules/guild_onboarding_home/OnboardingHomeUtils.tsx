@@ -1,10 +1,21 @@
-// Module ID: 5604
-// Function ID: 47655
+// Module ID: 5607
+// Function ID: 47678
 // Name: canSeeOnboardingHomeInPreview
-// Dependencies: []
+// Dependencies: [1909, 1348, 1838, 4333, 653, 1355, 5608, 624, 5065, 4335, 2]
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
-// Module 5604 (canSeeOnboardingHomeInPreview)
+// Module 5607 (canSeeOnboardingHomeInPreview)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_6 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { ChannelFlags } from "set";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function canSeeOnboardingHomeInPreview(guild) {
   const id = guild.id;
   let newMemberActions = store.getNewMemberActions(id);
@@ -29,8 +40,8 @@ function hasResourceChannels(arg0, getMutableGuildChannelsForGuild) {
   for (const key10006 in mutableGuildChannelsForGuild) {
     let tmp2 = key10006;
     let obj = mutableGuildChannelsForGuild[key10006];
-    let tmp3 = closure_10;
-    if (!obj.hasFlag(closure_10.IS_GUILD_RESOURCE_CHANNEL)) {
+    let tmp3 = ChannelFlags;
+    if (!obj.hasFlag(ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
       continue;
     } else {
       let flag = true;
@@ -39,47 +50,41 @@ function hasResourceChannels(arg0, getMutableGuildChannelsForGuild) {
   }
   return false;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ FAVORITES: closure_7, GuildFeatures: closure_8, ME: closure_9 } = arg1(dependencyMap[4]));
-const ChannelFlags = arg1(dependencyMap[5]).ChannelFlags;
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_onboarding_home/OnboardingHomeUtils.tsx");
+({ FAVORITES: closure_7, GuildFeatures: closure_8, ME: closure_9 } = ME);
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_onboarding_home/OnboardingHomeUtils.tsx");
 
 export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id) {
-  const arg1 = guild_id;
-  const tmp = importDefault(dependencyMap[6])(guild_id);
-  const importDefault = tmp;
-  const items = [closure_4, closure_5, closure_3];
+  const _require = guild_id;
+  const tmp = importDefault(5608)(guild_id);
+  importDefault = tmp;
+  const items = [closure_4, _createForOfIteratorHelperLoose, _isNativeReflectConstruct];
   const items1 = [guild_id, tmp];
-  return arg1(dependencyMap[7]).useStateFromStores(items, () => {
-    if (arg0 !== closure_9) {
-      if (arg0 !== closure_7) {
-        const guild = guild.getGuild(arg0);
+  return _require(624).useStateFromStores(items, () => {
+    if (guild_id !== outer1_9) {
+      if (guild_id !== outer1_7) {
+        const guild = outer1_5.getGuild(guild_id);
         let tmp2 = null == guild;
         if (!tmp2) {
           const features = guild.features;
-          tmp2 = !features.has(constants.COMMUNITY);
+          tmp2 = !features.has(outer1_8.COMMUNITY);
         }
         if (tmp2) {
           return !tmp2;
-        } else if (fullServerPreview.isFullServerPreview(arg0)) {
-          let result = callback(guild);
+        } else if (outer1_3.isFullServerPreview(guild_id)) {
+          let result = outer1_11(guild);
         } else {
-          result = arg0(closure_2[8]).isGuildOnboardingSettingsAvailable(arg0);
+          result = guild_id(outer1_2[8]).isGuildOnboardingSettingsAvailable(guild_id);
           if (!result) {
-            result = tmp(closure_2[9])(guild);
+            result = tmp(outer1_2[9])(guild);
           }
           if (result) {
             let tmp11 = tmp;
             if (!tmp) {
-              tmp11 = callback2(arg0, closure_4);
+              tmp11 = outer1_12(guild_id, outer1_4);
             }
             result = tmp11;
           }
-          const obj = arg0(closure_2[8]);
+          const obj = guild_id(outer1_2[8]);
         }
       }
     }
@@ -87,7 +92,7 @@ export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id
   }, items1);
 };
 export const canSeeOnboardingHome = function canSeeOnboardingHome(guildId) {
-  const guild = guild.getGuild(guildId);
+  guild = guild.getGuild(guildId);
   if (null == guild) {
     return false;
   } else {
@@ -96,7 +101,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(guildId) {
         if (tmp2) {
           return canSeeOnboardingHomeInPreview(guild);
         } else {
-          let result = arg1(dependencyMap[8]).isGuildOnboardingSettingsAvailable(guildId);
+          let result = require(5065) /* _createForOfIteratorHelperLoose */.isGuildOnboardingSettingsAvailable(guildId);
           if (result) {
             const features = guild.features;
             result = features.has(constants.GUILD_ONBOARDING);

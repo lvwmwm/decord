@@ -1,47 +1,48 @@
-// Module ID: 11870
-// Function ID: 91901
+// Module ID: 11882
+// Function ID: 91954
 // Name: GuildProfileGameRow
-// Dependencies: []
+// Dependencies: [31, 27, 33, 8588, 8600, 5165, 11876, 4130, 11880, 11881, 7186, 1212, 4098, 8578, 1934, 5187, 5189, 5503, 2]
 // Exports: default
 
-// Module 11870 (GuildProfileGameRow)
+// Module 11882 (GuildProfileGameRow)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let require = arg1;
 function GuildProfileGameRow(activityLevel) {
   let clickable;
   let game;
   ({ game, clickable } = activityLevel);
-  let obj = { gameId: game.id, source: arg1(dependencyMap[4]).GameProfileSources.GuildProfileGames, trackEntryPointImpression: clickable };
-  const tmpResult = importDefault(dependencyMap[3])(obj);
-  const arg1 = tmpResult;
+  let obj = { gameId: game.id, source: require(8600) /* GameProfileEmbedAction */.GameProfileSources.GuildProfileGames, trackEntryPointImpression: clickable };
+  const tmpResult = importDefault(8588)(obj);
+  require = tmpResult;
   if (clickable) {
     clickable = null != tmpResult;
   }
-  obj = { icon: jsx(importDefault(dependencyMap[6]), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable };
+  obj = { icon: jsx(importDefault(11876), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable };
   let fn;
   if (clickable) {
     fn = () => tmpResult();
   }
   obj.onPress = fn;
-  return jsx(arg1(dependencyMap[5]).TableRow, obj);
+  return jsx(require(5165) /* TableRowInner */.TableRow, { icon: jsx(importDefault(11876), { game, activityLevel: activityLevel.activityLevel }), label: game.name, arrow: clickable });
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = arg1(dependencyMap[7]).createStyles({ container: { <string:2839314540>: "isArray", <string:172088541>: "isArray" } });
-const obj = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGamesActionSheet.tsx");
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, paddingBottom: 48 } });
+const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGamesActionSheet.tsx");
 
 export default function GuildProfileGamesActionSheet(profile) {
   profile = profile.profile;
   const id = profile.id;
-  const arg1 = id;
-  const importDefault = profile.gameActivity;
-  let obj = arg1(dependencyMap[8]);
+  const gameActivity = profile.gameActivity;
+  let obj = id(enabled[8]);
   const allGuildProfileGames = obj.useAllGuildProfileGames(profile);
-  let obj1 = arg1(dependencyMap[9]);
-  const dependencyMap = obj1.useGuildProfileGameProfilesExperiment({ location: "guild_profile_games_action_sheet" }).enabled;
-  let obj2 = arg1(dependencyMap[10]);
-  const intl = arg1(dependencyMap[11]).intl;
-  let str = intl.format(arg1(dependencyMap[11]).t.vuAVo7, { serverName: profile.name });
+  let obj1 = id(enabled[9]);
+  enabled = obj1.useGuildProfileGameProfilesExperiment({ location: "guild_profile_games_action_sheet" }).enabled;
+  let obj2 = id(enabled[10]);
+  const intl = id(enabled[11]).intl;
+  let str = intl.format(id(enabled[11]).t.vuAVo7, { serverName: profile.name });
   const items = [id];
   str = str.toString();
   const callback = React.useCallback(() => {
@@ -52,9 +53,9 @@ export default function GuildProfileGamesActionSheet(profile) {
   obj = { ref: obj2.useBottomSheetRef().bottomSheetRef, scrollable: true, onDismiss: callback, startHeight: 300 };
   obj = {};
   obj1 = { style: callback().container };
-  obj2 = { title: str, hasIcons: true, children: allGuildProfileGames.map((game) => callback(closure_7, { game, activityLevel: gameActivity[game.id], clickable: enabled }, game.id)) };
-  obj1.children = jsx(arg1(dependencyMap[17]).TableRowGroup, obj2);
-  obj.children = <View {...obj1} />;
-  obj.children = jsx(arg1(dependencyMap[16]).BottomSheetScrollView, obj);
-  return jsx(arg1(dependencyMap[15]).BottomSheet, obj);
+  obj2 = { title: str, hasIcons: true, children: allGuildProfileGames.map((game) => outer1_5(outer1_7, { game, activityLevel: gameActivity[game.id], clickable: enabled }, game.id)) };
+  obj1.children = jsx(id(enabled[17]).TableRowGroup, { title: str, hasIcons: true, children: allGuildProfileGames.map((game) => outer1_5(outer1_7, { game, activityLevel: gameActivity[game.id], clickable: enabled }, game.id)) });
+  obj.children = <View style={callback().container} />;
+  obj.children = jsx(id(enabled[16]).BottomSheetScrollView, {});
+  return jsx(id(enabled[15]).BottomSheet, {});
 };

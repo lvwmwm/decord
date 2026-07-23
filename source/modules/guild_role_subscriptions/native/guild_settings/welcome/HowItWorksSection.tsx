@@ -1,61 +1,65 @@
-// Module ID: 16272
-// Function ID: 125683
+// Module ID: 16389
+// Function ID: 127857
 // Name: HowItWorksCard
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 5085, 1212, 16390, 1273, 16391, 16392, 2]
 // Exports: default
 
-// Module 16272 (HowItWorksCard)
+// Module 16389 (HowItWorksCard)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function HowItWorksCard(iconSource) {
   let cardNumber;
   let description;
   ({ cardNumber, description } = iconSource);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.card, accessible: true, accessibilityLabel: "" + cardNumber + " - " + description };
-  obj = { style: tmp.cardNumber, children: cardNumber };
-  const items = [callback(arg1(dependencyMap[5]).Text, obj), , ];
-  obj = { style: tmp.container, children: callback(importDefault(dependencyMap[6]), obj1) };
+  obj = { style: tmp.cardNumber, variant: "text-xs/bold", color: "text-overlay-light", children: cardNumber };
+  const items = [callback(require(4126) /* Text */.Text, obj), , ];
+  obj = { style: tmp.container, children: callback(importDefault(5085), obj1) };
   items[1] = callback(View, obj);
-  const obj2 = { "Null": "<string:1660944958>", "Null": "<string:1358954888>", alignItems: "<string:3899911670>", style: tmp.howItWorksCardDescription, children: description };
-  items[2] = callback(arg1(dependencyMap[5]).Text, obj2);
+  const obj2 = { style: tmp.howItWorksCardDescription, variant: "text-sm/normal", color: "mobile-text-heading-primary", children: description };
+  items[2] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items;
   return callback2(View, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { flex: 1 }, horizontalContainer: { marginLeft: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013132815383737633, marginVertical: 203722238426496480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 } };
-obj = { "Bool(false)": "isArray", "Bool(false)": "LIGHT", "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray", "Bool(false)": "isArray", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };
-obj.card = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.cardNumber = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
-const obj2 = { "Bool(false)": "Text", "Bool(false)": "__workletHash", "Bool(false)": "category", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "constructor", "Bool(false)": "toString", "Bool(false)": "isArray", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL };
-obj.howItWorksCardDescription = obj2;
-obj.howItWorksCardIcon = { marginVertical: 24 };
-let closure_6 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/HowItWorksSection.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flex: 1 }, horizontalContainer: { flex: 1, flexDirection: "row" } };
+_createForOfIteratorHelperLoose = { flex: 1, marginVertical: 6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
+_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
+let obj1 = { width: 18, height: 18, position: "absolute", top: 9, start: 9, textAlign: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: 9, overflow: "hidden" };
+_createForOfIteratorHelperLoose.cardNumber = obj1;
+let obj2 = { width: "100%", paddingHorizontal: 18, paddingVertical: 8, textAlign: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, borderBottomStartRadius: 8, borderBottomEndRadius: 8, overflow: "hidden" };
+_createForOfIteratorHelperLoose.howItWorksCardDescription = obj2;
+_createForOfIteratorHelperLoose.howItWorksCardIcon = { marginVertical: 24 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/HowItWorksSection.tsx");
 
 export default function HowItWorksSection() {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   obj = { style: tmp.horizontalContainer };
   obj = { cardNumber: 1 };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.description = intl.string(arg1(dependencyMap[7]).t.lT0ZNS);
-  obj.iconSource = importDefault(dependencyMap[8]);
-  const items = [callback(HowItWorksCard, obj), callback(arg1(dependencyMap[9]).Spacer, { size: 12 }), ];
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl.string(require(1212) /* getSystemLocale */.t.lT0ZNS);
+  obj.iconSource = importDefault(16390);
+  const items = [callback(HowItWorksCard, obj), callback(require(1273) /* Button */.Spacer, { size: 12 }), ];
   const obj1 = { cardNumber: 2 };
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj1.description = intl2.string(arg1(dependencyMap[7]).t.ihN2Wb);
-  obj1.iconSource = importDefault(dependencyMap[10]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.description = intl2.string(require(1212) /* getSystemLocale */.t.ihN2Wb);
+  obj1.iconSource = importDefault(16391);
   items[2] = callback(HowItWorksCard, obj1);
   obj.children = items;
   const items1 = [callback2(View, obj), ];
   const obj2 = { cardNumber: 3 };
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj2.description = intl3.string(arg1(dependencyMap[7]).t.c8krDQ);
-  obj2.iconSource = importDefault(dependencyMap[11]);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj2.description = intl3.string(require(1212) /* getSystemLocale */.t.c8krDQ);
+  obj2.iconSource = importDefault(16392);
   items1[1] = callback(HowItWorksCard, obj2);
   obj.children = items1;
   return callback2(View, obj);

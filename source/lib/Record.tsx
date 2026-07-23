@@ -1,21 +1,19 @@
 // Module ID: 1858
-// Function ID: 20497
+// Function ID: 20498
 // Name: Record
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
 // Module 1858 (Record)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const tmp2 = () => {
+let tmp2 = (() => {
   class Record {
     constructor() {
       tmp = Record(this, Record);
       return;
     }
   }
-  let closure_0 = Record;
   let obj = {
     key: "toJS",
     value() {
@@ -23,7 +21,7 @@ const tmp2 = () => {
       return {};
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "set",
     value(arg0, getTime) {
@@ -97,7 +95,7 @@ const tmp2 = () => {
               }
               let tmp15 = obj;
               let tmp16 = obj2;
-              // continue
+              continue;
             }
             continue;
           }
@@ -147,18 +145,15 @@ const tmp2 = () => {
     }
   };
   return callback(Record, items);
-}();
-const result = items.fileFinishedImporting("lib/Record.tsx");
-
-export default tmp2;
-export const TypedRecord = () => {
+})();
+let closure_2 = tmp2;
+let tmp3 = (() => {
   class TypedRecord {
     constructor() {
       tmp = TypedRecord(this, TypedRecord);
       return;
     }
   }
-  let closure_0 = TypedRecord;
   let obj = {
     key: "toJS",
     value() {
@@ -166,7 +161,7 @@ export const TypedRecord = () => {
       return {};
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "set",
     value(arg0, arg1) {
@@ -197,7 +192,7 @@ export const TypedRecord = () => {
                 toJSResult = self.toJS();
               }
               toJSResult[tmp6] = arg0[tmp6];
-              // continue
+              continue;
             }
             continue;
           }
@@ -218,9 +213,8 @@ export const TypedRecord = () => {
     key: "update",
     value(arg0, arg1, arg2) {
       const self = this;
-      const tmp = this[arg0];
       let tmp2 = tmp;
-      if (tmp instanceof closure_2) {
+      if (this[arg0] instanceof outer1_2) {
         if (undefined === tmp2) {
           tmp2 = arg1;
         }
@@ -244,4 +238,8 @@ export const TypedRecord = () => {
     }
   };
   return callback(TypedRecord, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("lib/Record.tsx");
+
+export default tmp2;
+export const TypedRecord = tmp3;

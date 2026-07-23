@@ -1,13 +1,13 @@
-// Module ID: 15686
-// Function ID: 119833
+// Module ID: 15803
+// Function ID: 122006
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 15686 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003473060939976721, DateToSystemTimezoneSetter: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010611688584915835, defaultConfig: { "Null": true, "Null": true }, variations: { [1]: { "Null": "<string:1040334421>", "Null": "<string:1040334338>" }, [2]: { "Null": null, "Null": null } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/voice_calls/DefaultAudioRouteExperiment.tsx");
+// Module 15803 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-02-default-audio-route", kind: "user", defaultConfig: { defaultSpeakerForGuildCall: false, defaultSpeakerForDMCall: false }, variations: { [1]: { defaultSpeakerForGuildCall: true, defaultSpeakerForDMCall: false }, [2]: { defaultSpeakerForGuildCall: true, defaultSpeakerForDMCall: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/voice_calls/DefaultAudioRouteExperiment.tsx");
 
 export default apexExperiment;

@@ -1,34 +1,39 @@
-// Module ID: 4554
-// Function ID: 39905
+// Module ID: 4558
+// Function ID: 39937
 // Name: EllipsisCircle
-// Dependencies: []
+// Dependencies: [31, 33, 3991, 4130, 689, 4131, 4548, 4559, 2]
 // Exports: Ellipsis
 
-// Module 4554 (EllipsisCircle)
+// Module 4558 (EllipsisCircle)
+import "result";
+import jsxProd from "jsxProd";
+import { Easing } from "module_3991";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function EllipsisCircle(offset) {
   let size;
   let variant;
   offset = offset.offset;
-  const arg1 = offset;
   ({ variant, size } = offset);
-  const obj = arg1(dependencyMap[6]);
-  const tmp = callback3(size, offset, arg1(dependencyMap[6]).useForegroundColor(variant));
-  const sharedValue = arg1(dependencyMap[2]).useSharedValue(0.4);
-  const importDefault = sharedValue;
-  const obj2 = arg1(dependencyMap[2]);
-  const sharedValue1 = arg1(dependencyMap[2]).useSharedValue(0.75);
-  const dependencyMap = sharedValue1;
-  const obj3 = arg1(dependencyMap[2]);
-  const mountLayoutEffect = arg1(dependencyMap[7]).useMountLayoutEffect(() => {
-    const result = sharedValue.set(callback(offset, 1));
-    const result1 = sharedValue1.set(callback(offset, 1));
+  let obj = offset(sharedValue1[6]);
+  const tmp = callback3(size, offset, offset(sharedValue1[6]).useForegroundColor(variant));
+  const sharedValue = offset(sharedValue1[2]).useSharedValue(0.4);
+  const obj2 = offset(sharedValue1[2]);
+  sharedValue1 = offset(sharedValue1[2]).useSharedValue(0.75);
+  const obj3 = offset(sharedValue1[2]);
+  const mountLayoutEffect = offset(sharedValue1[7]).useMountLayoutEffect(() => {
+    const result = sharedValue.set(outer1_8(offset, 1));
+    const result1 = sharedValue1.set(outer1_8(offset, 1));
     return () => {
-      callback(closure_2[2]).cancelAnimation(closure_1);
-      const obj = callback(closure_2[2]);
-      callback(closure_2[2]).cancelAnimation(closure_2);
+      offset(sharedValue1[2]).cancelAnimation(outer1_1);
+      const obj = offset(sharedValue1[2]);
+      offset(sharedValue1[2]).cancelAnimation(outer1_2);
     };
   });
-  const obj4 = arg1(dependencyMap[7]);
+  const obj4 = offset(sharedValue1[7]);
   const fn = function w() {
     let obj = { opacity: sharedValue.get() };
     obj = { scale: sharedValue1.get() };
@@ -39,17 +44,14 @@ function EllipsisCircle(offset) {
   fn.__closure = { opacity: sharedValue, scale: sharedValue1 };
   fn.__workletHash = 13371762734705;
   fn.__initData = closure_9;
-  const animatedStyle = arg1(dependencyMap[2]).useAnimatedStyle(fn);
+  const animatedStyle = offset(sharedValue1[2]).useAnimatedStyle(fn);
   const style = [tmp.circle, animatedStyle];
-  return callback(importDefault(dependencyMap[2]).View, { style });
+  return callback(sharedValue(sharedValue1[2]).View, { style });
 }
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
-const obj = { duration: 500 };
-const Easing = arg1(dependencyMap[2]).Easing;
-obj.easing = Easing.inOut(arg1(dependencyMap[2]).Easing.quad);
-const tmp3 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[3]).createStyles((arg0, arg1, backgroundColor) => {
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let obj = { duration: 500 };
+obj.easing = Easing.inOut(require("module_3991").Easing.quad);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, backgroundColor) => {
   if ("lg" === arg0) {
     let num2 = 8;
     let num = 4;
@@ -67,7 +69,7 @@ let closure_6 = arg1(dependencyMap[3]).createStyles((arg0, arg1, backgroundColor
     num = 4;
   }
   let obj = {};
-  obj = { width: num2, height: num2, borderRadius: importDefault(dependencyMap[4]).radii.round };
+  obj = { width: num2, height: num2, borderRadius: importDefault(689).radii.round };
   let num3 = 0;
   if (2 !== arg1) {
     num3 = num;
@@ -78,22 +80,21 @@ let closure_6 = arg1(dependencyMap[3]).createStyles((arg0, arg1, backgroundColor
   return obj;
 });
 let closure_7 = { code: "function withEllipsisAnimation_ButtonEllipsisNativeTsx1(offset,value){const{ELLIPSIS_APPEAR_DURATION,withDelay,withRepeat,withTiming,ELLIPSIS_APPEAR_TIMING}=this.__closure;const animationTimeMs=ELLIPSIS_APPEAR_DURATION;const animationStaggerTimeMs=animationTimeMs/3;return withDelay(offset*animationStaggerTimeMs,withRepeat(withTiming(value,ELLIPSIS_APPEAR_TIMING,'animate-always'),-1,true));}" };
-let closure_8 = () => {
+let closure_8 = (() => {
   function withEllipsisAnimation(arg0, value) {
     const result = 166.66666666666666 * arg0;
-    const obj = callback(closure_2[2]);
-    const obj2 = callback(closure_2[2]);
-    return obj.withDelay(result, obj2.withRepeat(callback(closure_2[5]).withTiming(value, closure_5, "animate-always"), -1, true));
+    const obj = outer1_0(outer1_2[2]);
+    const obj2 = outer1_0(outer1_2[2]);
+    return obj.withDelay(result, obj2.withRepeat(outer1_0(outer1_2[5]).withTiming(value, outer1_5, "animate-always"), -1, true));
   }
-  const obj = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: arg1(dependencyMap[2]).withDelay, withRepeat: arg1(dependencyMap[2]).withRepeat, withTiming: arg1(dependencyMap[5]).withTiming, ELLIPSIS_APPEAR_TIMING: obj };
+  obj = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: require(3991).withDelay, withRepeat: require(3991).withRepeat, withTiming: require(4131) /* withTiming */.withTiming, ELLIPSIS_APPEAR_TIMING: obj };
   withEllipsisAnimation.__closure = obj;
   withEllipsisAnimation.__workletHash = 2181731162311;
   withEllipsisAnimation.__initData = closure_7;
   return withEllipsisAnimation;
-}();
+})();
 let closure_9 = { code: "function ButtonEllipsisNativeTsx2(){const{opacity,scale}=this.__closure;return{opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };
-const obj2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Button/native/ButtonEllipsis.native.tsx");
+let result = require("module_3991").fileFinishedImporting("design/components/Button/native/ButtonEllipsis.native.tsx");
 
 export const Ellipsis = function Ellipsis(arg0) {
   let obj = { style: { flexDirection: "row" } };
@@ -106,5 +107,5 @@ export const Ellipsis = function Ellipsis(arg0) {
   const merged2 = Object.assign(arg0);
   items[2] = callback(EllipsisCircle, { offset: 2 });
   obj.children = items;
-  return callback2(importDefault(dependencyMap[2]).View, obj);
+  return callback2(importDefault(3991).View, obj);
 };

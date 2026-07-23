@@ -1,5 +1,5 @@
 // Module ID: 1271
-// Function ID: 14377
+// Function ID: 14378
 // Name: isMessagesProxy
 // Dependencies: []
 
@@ -41,9 +41,10 @@ arg5.chainMessagesObjects = function chainMessagesObjects(importDefaultResult, $
   }
 };
 arg5.makeMessagesProxy = function makeMessagesProxy(loader) {
-  const isMessagesProxy = loader;
+  let closure_0 = loader;
   function makeBind(arg0) {
-    return (arg0) => arg0.get(arg0, arg0);
+    let closure_0 = arg0;
+    return (arg0) => closure_0.get(closure_0, arg0);
   }
   let obj = {};
   obj = {
@@ -73,8 +74,10 @@ arg5.makeMessagesProxy = function makeMessagesProxy(loader) {
     }
   };
   const proxy = new Proxy(obj, obj);
-  Object.defineProperty(proxy, "$$baseObject", { value: obj });
-  obj = { value: loader };
-  Object.defineProperty(proxy, "$$loader", obj);
+  obj = { value: null, enumerable: false, configurable: false, writable: false };
+  obj.value = obj;
+  Object.defineProperty(proxy, "$$baseObject", obj);
+  const obj1 = { value: loader, enumerable: false, configurable: false, writable: false };
+  Object.defineProperty(proxy, "$$loader", obj1);
   return proxy;
 };

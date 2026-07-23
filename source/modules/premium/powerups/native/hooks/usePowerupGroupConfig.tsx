@@ -1,50 +1,51 @@
-// Module ID: 11572
-// Function ID: 90006
+// Module ID: 11582
+// Function ID: 90055
 // Name: usePowerupGroupConfig
-// Dependencies: []
+// Dependencies: [31, 1838, 566, 7845, 1212, 2230, 11583, 11584, 1327, 2]
 // Exports: default
 
-// Module 11572 (usePowerupGroupConfig)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/powerups/native/hooks/usePowerupGroupConfig.tsx");
+// Module 11582 (usePowerupGroupConfig)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/premium/powerups/native/hooks/usePowerupGroupConfig.tsx");
 
 export default function usePowerupGroupConfig(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+  const _require = arg0;
+  let closure_1 = arg1;
+  const items = [_createForOfIteratorHelperLoose];
+  stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => {
+    const guild = outer1_4.getGuild(callback);
     let guildSupportsTagsResult = null != guild;
     if (guildSupportsTagsResult) {
-      guildSupportsTagsResult = arg0(stateFromStores[3]).guildSupportsTags(guild);
-      const obj = arg0(stateFromStores[3]);
+      guildSupportsTagsResult = callback(stateFromStores[3]).guildSupportsTags(guild);
+      const obj = callback(stateFromStores[3]);
     }
     return guildSupportsTagsResult;
   });
-  const dependencyMap = stateFromStores;
   const items1 = [arg1, stateFromStores];
   return React.useMemo(() => {
-    if ("guildTagsBadgePacks" === arg1.group) {
+    if ("guildTagsBadgePacks" === lib.group) {
       let obj = {};
-      const intl = arg0(stateFromStores[4]).intl;
-      obj.title = intl.string(arg1(stateFromStores[5]).KC9HRW);
-      const intl2 = arg0(stateFromStores[4]).intl;
-      obj.description = intl2.string(arg1(stateFromStores[5]).GJiSmP);
-      obj = { staticUrl: arg1(stateFromStores[6]), animatedUrl: arg1(stateFromStores[7]) };
+      const intl = callback(stateFromStores[4]).intl;
+      obj.title = intl.string(lib(stateFromStores[5]).KC9HRW);
+      const intl2 = callback(stateFromStores[4]).intl;
+      obj.description = intl2.string(lib(stateFromStores[5]).GJiSmP);
+      obj = { staticUrl: lib(stateFromStores[6]), animatedUrl: lib(stateFromStores[7]) };
       obj.image = obj;
       let stringResult;
       if (!stateFromStores) {
-        const intl3 = arg0(stateFromStores[4]).intl;
-        stringResult = intl3.string(arg1(stateFromStores[5]).lvk1Gc);
+        const intl3 = callback(stateFromStores[4]).intl;
+        stringResult = intl3.string(lib(stateFromStores[5]).lvk1Gc);
       }
       obj.disabledReason = stringResult;
       obj.badge = undefined;
       obj.forceStaticImages = true;
       return obj;
     } else {
-      obj = arg0(stateFromStores[8]);
-      obj.assertNever(arg1.group);
+      obj = callback(stateFromStores[8]);
+      obj.assertNever(lib.group);
     }
   }, items1);
 };

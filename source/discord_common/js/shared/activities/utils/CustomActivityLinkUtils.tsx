@@ -1,13 +1,14 @@
-// Module ID: 12098
-// Function ID: 93298
+// Module ID: 12212
+// Function ID: 95449
 // Name: CustomLinkType
-// Dependencies: []
+// Dependencies: [57, 2]
 // Exports: decodeCustomActivityLink
 
-// Module 12098 (CustomLinkType)
-let closure_0 = importDefault(dependencyMap[0]);
-const obj = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };
-const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/shared/activities/utils/CustomActivityLinkUtils.tsx");
+// Module 12212 (CustomLinkType)
+import _slicedToArray from "_slicedToArray";
+
+let obj = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/activities/utils/CustomActivityLinkUtils.tsx");
 
 export const CustomLinkType = obj;
 export const decodeCustomActivityLink = function decodeCustomActivityLink(link_id) {
@@ -26,7 +27,7 @@ export const decodeCustomActivityLink = function decodeCustomActivityLink(link_i
     }
     let tmp4 = null;
     if (null != MANAGED) {
-      const obj = { type: MANAGED, encodedLinkId: link_id, decodedLinkId: tmp6[1] };
+      obj = { type: MANAGED, encodedLinkId: link_id, decodedLinkId: tmp6[1] };
       tmp4 = obj;
     }
     return tmp4;

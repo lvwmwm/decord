@@ -1,9 +1,17 @@
-// Module ID: 3949
-// Function ID: 32625
+// Module ID: 3951
+// Function ID: 32630
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 566, 587, 686, 2]
 
-// Module 3949 (_isNativeReflectConstruct)
+// Module 3951 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import Storage from "Storage";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { Routes } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,26 +21,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const Routes = arg1(dependencyMap[5]).Routes;
-let obj = { revision: "o", override: "o" };
-let tmp2 = (PersistedStore) => {
+let obj = { lastViewedPath: null, lastViewedNonVoicePath: null };
+let tmp2 = ((PersistedStore) => {
   class DefaultRouteStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, DefaultRouteStore);
-      obj = closure_5(DefaultRouteStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, DefaultRouteStore);
+      obj = outer1_5(DefaultRouteStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,27 +43,27 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = DefaultRouteStore;
   callback2(DefaultRouteStore, PersistedStore);
   let obj = {
     key: "initialize",
     value() {
       let tmp = arg0;
       if (arg0 === undefined) {
-        tmp = closure_8;
+        tmp = outer1_8;
       }
       if (null == tmp) {
-        tmp = closure_8;
+        tmp = outer1_8;
       }
+      const outer1_9 = tmp;
     }
   };
   const items = [obj, , , , ];
   obj = {
     key: "defaultRoute",
     get() {
-      let ME = closure_9.lastViewedPath;
+      let ME = outer1_9.lastViewedPath;
       if (null == ME) {
-        ME = constants.ME;
+        ME = outer1_7.ME;
       }
       return ME;
     }
@@ -70,9 +72,9 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "lastNonVoiceRoute",
     get() {
-      let ME = closure_9.lastViewedNonVoicePath;
+      let ME = outer1_9.lastViewedNonVoicePath;
       if (null == ME) {
-        ME = constants.ME;
+        ME = outer1_7.ME;
       }
       return ME;
     }
@@ -81,24 +83,24 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "fallbackRoute",
     get() {
-      return constants.ME;
+      return outer1_7.ME;
     }
   };
   items[4] = {
     key: "getState",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   return callback(DefaultRouteStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "DefaultRouteStore";
 tmp2.persistKey = "DefaultRouteStore";
-const items = [
+let items = [
   () => {
-    const Storage = arg1(dependencyMap[7]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     const lastViewedPath = Storage.get("LAST_VIEWED_PATH", null);
-    const Storage2 = arg1(dependencyMap[7]).Storage;
+    const Storage2 = require(587) /* Storage */.Storage;
     Storage2.remove("LAST_VIEWED_PATH");
     return { lastViewedPath };
   }
@@ -114,10 +116,10 @@ obj = {
     return true;
   },
   LOGOUT: function handleLogout() {
-    let closure_9 = { revision: "o", override: "o" };
+    let closure_9 = { lastViewedPath: null, lastViewedNonVoicePath: null };
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[8]), obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/DefaultRouteStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/DefaultRouteStore.tsx");
 
 export default tmp2;

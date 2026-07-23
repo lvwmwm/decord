@@ -1,40 +1,40 @@
-// Module ID: 14369
-// Function ID: 108490
+// Module ID: 14483
+// Function ID: 110643
 // Name: useCollectiblesCoachmarkScrollDismissContext
-// Dependencies: []
+// Dependencies: [31, 482, 33, 2]
 // Exports: CollectiblesCoachmarkScrollDismissProvider, useCollectiblesCoachmarkScrollDismissContext
 
-// Module 14369 (useCollectiblesCoachmarkScrollDismissContext)
-const importAllResult = importAll(dependencyMap[0]);
-const NOOP = arg1(dependencyMap[1]).NOOP;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 14483 (useCollectiblesCoachmarkScrollDismissContext)
+import importAllResult from "result";
+import { NOOP } from "sum";
+import { jsx } from "jsxProd";
+
 const context = importAllResult.createContext({
   registerDismiss(arg0) {
     return NOOP;
   },
   handleDismissCoachmarkOnScroll: undefined
 });
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");
 
 export const useCollectiblesCoachmarkScrollDismissContext = function useCollectiblesCoachmarkScrollDismissContext() {
   return importAllResult.useContext(closure_3);
 };
 export const CollectiblesCoachmarkScrollDismissProvider = function CollectiblesCoachmarkScrollDismissProvider(children) {
-  const React = React.useRef(null);
-  let closure_1 = React.useRef(null);
-  const callback = React.useCallback((current) => {
+  importAllResult = importAllResult.useRef(null);
+  let closure_1 = importAllResult.useRef(null);
+  const callback = importAllResult.useCallback((current) => {
     let closure_0 = current;
     closure_0.current = current;
     closure_1.current = null;
     return () => {
-      if (arg0.current === arg0) {
-        arg0.current = null;
-        closure_1.current = null;
+      if (ref.current === ref) {
+        ref.current = null;
+        outer1_1.current = null;
       }
     };
   }, []);
-  const jsx = callback;
-  const callback1 = React.useCallback((nativeEvent) => {
+  const callback1 = importAllResult.useCallback((nativeEvent) => {
     const current = ref.current;
     if (null != current) {
       const contentOffset = nativeEvent.nativeEvent.contentOffset;
@@ -50,7 +50,6 @@ export const CollectiblesCoachmarkScrollDismissProvider = function CollectiblesC
       }
     }
   }, []);
-  const redux = callback1;
   const items = [callback, callback1];
-  return <redux.Provider value={React.useMemo(() => ({ registerDismiss: callback, handleDismissCoachmarkOnScroll: callback1 }), items)}>{arg0.children}</redux.Provider>;
+  return callback(callback1.Provider, { value: importAllResult.useMemo(() => ({ registerDismiss: callback, handleDismissCoachmarkOnScroll: callback1 }), items), children: children.children });
 };

@@ -1,17 +1,16 @@
-// Module ID: 8840
-// Function ID: 69752
+// Module ID: 8847
+// Function ID: 69793
 // Name: trackVoiceAndVideoDebuggingSettingsUpdated
-// Dependencies: [670, 2, 6]
+// Dependencies: [653, 675, 2]
 // Exports: default
 
-// Module 8840 (trackVoiceAndVideoDebuggingSettingsUpdated)
-import { AnalyticEvents } from "MessageEmbedTypes";
-import _classCallCheck from "_classCallCheck";
+// Module 8847 (trackVoiceAndVideoDebuggingSettingsUpdated)
+import { AnalyticEvents } from "ME";
 
-const result = _classCallCheck.fileFinishedImporting("modules/user_settings/voice/trackVoiceAndVideoSettingsUpdate.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/voice/trackVoiceAndVideoSettingsUpdate.tsx");
 
 export default function trackVoiceAndVideoDebuggingSettingsUpdated(arg0, arg1, arg2, arg3) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = {};
   let StringResult;
   if (null != arg2) {

@@ -1,52 +1,72 @@
-// Module ID: 6683
-// Function ID: 51431
+// Module ID: 6688
+// Function ID: 51463
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 6689, 7112, 1849, 6637, 3782, 1851, 7113, 3776, 566, 686, 2]
 
-// Module 6683 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6688 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import GuildFeatures from "GuildFeatures";
+
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -140,7 +160,7 @@ function handleSubscriptionStoreUpdate() {
     return tmp;
   } else {
     if (null != obj.userDiscountOffers[closure_14]) {
-      let obj = {};
+      obj = {};
       obj[closure_14] = obj.userDiscountOffers[closure_14];
       obj.userDiscountOffers = obj;
       obj.userTrialOffers = {};
@@ -153,36 +173,26 @@ function handleSubscriptionStoreUpdate() {
   }
 }
 function handlePaymentSourceChange() {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
 }
 function handleReferralTrialStoreUpdate() {
   return false;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-({ ANNUAL_DISCOUNT_IDS: closure_12, DISCOUNT_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_13, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_15, SubscriptionPlanInfo: closure_16, SubscriptionTrials: closure_17, TRIAL_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_18 } = arg1(dependencyMap[10]));
+({ ANNUAL_DISCOUNT_IDS: closure_12, DISCOUNT_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_13, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_15, SubscriptionPlanInfo: closure_16, SubscriptionTrials: closure_17, TRIAL_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_18 } = GuildFeatures);
 let obj = { userOffersLastFetchedAtDate: undefined, userTrialOffers: {}, userDiscountOffers: {}, userDiscounts: undefined, isFetching: false, lastFetchSuccessful: false };
-let tmp3 = (PersistedStore) => {
+let tmp3 = ((PersistedStore) => {
   class UserOfferStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, UserOfferStore);
-      obj = closure_5(UserOfferStore);
-      tmp2 = closure_4;
-      if (closure_23()) {
+      tmp = outer1_2(this, UserOfferStore);
+      obj = outer1_5(UserOfferStore);
+      tmp2 = outer1_4;
+      if (outer1_23()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -191,7 +201,6 @@ let tmp3 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = UserOfferStore;
   callback2(UserOfferStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -209,28 +218,28 @@ let tmp3 = (PersistedStore) => {
           let tmp;
           let tmp2;
           [tmp, tmp2] = arg0;
-          const items = [tmp, callback(tmp2)];
+          const items = [tmp, outer2_26(tmp2)];
           return items;
         }));
-        let closure_20 = obj;
+        let outer1_20 = obj;
       } else {
-        closure_20 = closure_19;
+        outer1_20 = outer1_19;
       }
-      self.waitFor(closure_10, closure_7, closure_11, closure_9);
-      const items = [closure_9];
-      self.syncWith(items, closure_25);
-      const items1 = [closure_11];
-      self.syncWith(items1, closure_27);
-      const items2 = [closure_7];
-      self.syncWith(items2, closure_28);
+      self.waitFor(outer1_10, outer1_7, outer1_11, outer1_9);
+      let items = [outer1_9];
+      self.syncWith(items, outer1_25);
+      const items1 = [outer1_11];
+      self.syncWith(items1, outer1_27);
+      const items2 = [outer1_7];
+      self.syncWith(items2, outer1_28);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "getUserTrialOffer",
     value(arg0) {
       if (null !== arg0) {
-        return closure_20.userTrialOffers[arg0];
+        return outer1_20.userTrialOffers[arg0];
       }
     }
   };
@@ -239,7 +248,7 @@ let tmp3 = (PersistedStore) => {
     key: "getUserDiscountOffer",
     value(arg0) {
       if (null !== arg0) {
-        return closure_20.userDiscountOffers[arg0];
+        return outer1_20.userDiscountOffers[arg0];
       }
     }
   };
@@ -247,12 +256,12 @@ let tmp3 = (PersistedStore) => {
   items[3] = {
     key: "getAnyOfUserTrialOfferId",
     value(arg0) {
-      const tmp = callback3(arg0);
+      const tmp = outer1_21(arg0);
       const iter = tmp();
       let iter2 = iter;
       if (!iter.done) {
         const value = iter2.value;
-        while (null == closure_20.userTrialOffers[value]) {
+        while (null == outer1_20.userTrialOffers[value]) {
           let iter3 = tmp();
           iter2 = iter3;
         }
@@ -264,21 +273,21 @@ let tmp3 = (PersistedStore) => {
   items[4] = {
     key: "isFetchingOffer",
     value() {
-      const isFetching = closure_20.isFetching;
+      const isFetching = outer1_20.isFetching;
       return null != isFetching && isFetching;
     }
   };
   items[5] = {
     key: "hasFetchedOffer",
     value() {
-      return null != closure_20.userOffersLastFetchedAtDate;
+      return null != outer1_20.userOffersLastFetchedAtDate;
     }
   };
   items[6] = {
     key: "shouldFetchReferralOffer",
     value(arg0) {
-      const userOffersLastFetchedAtDate = closure_20.userOffersLastFetchedAtDate;
-      const isFetching = closure_20.isFetching;
+      const userOffersLastFetchedAtDate = outer1_20.userOffersLastFetchedAtDate;
+      const isFetching = outer1_20.isFetching;
       if (null == userOffersLastFetchedAtDate) {
         return !tmp;
       } else {
@@ -302,9 +311,9 @@ let tmp3 = (PersistedStore) => {
   items[7] = {
     key: "shouldShowTrialOfferReminder",
     value(trial_id) {
-      let result = !closure_18.includes(trial_id.trial_id);
+      let result = !outer1_18.includes(trial_id.trial_id);
       if (!result) {
-        let obj = UserOfferStore(closure_1[11]);
+        let obj = UserOfferStore(outer1_1[11]);
         obj = { location: "user_offer_store" };
         result = obj.isPremiumOfferReminderExperimentEnabled(obj);
       }
@@ -314,20 +323,21 @@ let tmp3 = (PersistedStore) => {
   items[8] = {
     key: "getAlmostExpiringTrialOffersForReminder",
     value(arg0) {
-      const self = this;
-      const UserOfferStore = this;
-      let values = Object.values(closure_17);
-      let closure_2 = values.map((id) => id.id);
-      const currentUser = authStore.getCurrentUser();
+      let self = this;
+      self = this;
+      let closure_1 = arg0;
+      let values = Object.values(outer1_17);
+      let _isNativeReflectConstruct = values.map((id) => id.id);
+      const currentUser = outer1_9.getCurrentUser();
       if (obj.isPremium(currentUser)) {
         if (!self.canFractionalPremiumUserUseOffer()) {
           let items = [];
         }
         return items;
       }
-      values = Object.values(closure_20.userTrialOffers);
+      values = Object.values(outer1_20.userTrialOffers);
       items = values.filter((trial_id) => {
-        let hasItem = closure_2.includes(trial_id.trial_id);
+        let hasItem = _isNativeReflectConstruct.includes(trial_id.trial_id);
         if (hasItem) {
           hasItem = null != trial_id.expires_at;
         }
@@ -335,15 +345,15 @@ let tmp3 = (PersistedStore) => {
           hasItem = null != trial_id.subscription_trial;
         }
         if (hasItem) {
-          hasItem = trial_id.includes(trial_id.subscription_trial.sku_id);
+          hasItem = closure_1.includes(trial_id.subscription_trial.sku_id);
         }
         if (hasItem) {
           const _Date = Date;
           const _Date2 = Date;
           const parsed = Date.parse(trial_id.expires_at);
           const timestamp = Date.now();
-          hasItem = parsed < timestamp + self(trial_id[12]).getOfferNoticeThreshold(trial_id);
-          const obj = self(trial_id[12]);
+          hasItem = parsed < timestamp + UserOfferStore(outer2_1[12]).getOfferNoticeThreshold(trial_id);
+          const obj = UserOfferStore(outer2_1[12]);
         }
         if (hasItem) {
           hasItem = self.shouldShowTrialOfferReminder(trial_id);
@@ -355,9 +365,9 @@ let tmp3 = (PersistedStore) => {
   items[9] = {
     key: "shouldShowDiscountOfferReminder",
     value(discountId) {
-      let result = !closure_13.includes(discountId.discountId);
+      let result = !outer1_13.includes(discountId.discountId);
       if (!result) {
-        let obj = UserOfferStore(closure_1[11]);
+        let obj = UserOfferStore(outer1_1[11]);
         obj = { location: "user_offer_store" };
         result = obj.isPremiumOfferReminderExperimentEnabled(obj);
       }
@@ -367,29 +377,30 @@ let tmp3 = (PersistedStore) => {
   items[10] = {
     key: "getAlmostExpiringDiscountOffersForReminder",
     value(arg0) {
-      const self = this;
-      const UserOfferStore = this;
-      const currentUser = authStore.getCurrentUser();
+      let self = this;
+      self = this;
+      let closure_1 = arg0;
+      const currentUser = outer1_9.getCurrentUser();
       if (obj.isPremium(currentUser)) {
         if (!self.canFractionalPremiumUserUseOffer()) {
           let items = [];
         }
         return items;
       }
-      const values = Object.values(closure_20.userDiscountOffers);
+      const values = Object.values(outer1_20.userDiscountOffers);
       items = values.filter((expiresAt) => {
         let someResult = null != expiresAt.expiresAt && null != expiresAt.discount;
         if (someResult) {
           const planIds = expiresAt.discount.planIds;
-          someResult = planIds.some((arg0) => closure_1.includes(closure_16[arg0].skuId));
+          someResult = planIds.some((arg0) => outer1_1.includes(outer3_16[arg0].skuId));
         }
         if (someResult) {
           expiresAt = expiresAt.expiresAt;
           const _Date = Date;
           const time = expiresAt.getTime();
           const timestamp = Date.now();
-          someResult = time < timestamp + self(expiresAt[12]).getOfferNoticeThreshold(expiresAt);
-          const obj = self(expiresAt[12]);
+          someResult = time < timestamp + UserOfferStore(outer2_1[12]).getOfferNoticeThreshold(expiresAt);
+          const obj = UserOfferStore(outer2_1[12]);
         }
         if (someResult) {
           someResult = self.shouldShowDiscountOfferReminder(expiresAt);
@@ -402,17 +413,17 @@ let tmp3 = (PersistedStore) => {
     key: "getAcknowledgedOffers",
     value(arg0) {
       const self = this;
-      const UserOfferStore = arg0;
-      const currentUser = authStore.getCurrentUser();
+      let closure_0 = arg0;
+      const currentUser = outer1_9.getCurrentUser();
       if (obj.isPremium(currentUser)) {
         if (!self.canFractionalPremiumUserUseOffer()) {
           let items = [];
         }
         return items;
       }
-      const values = Object.values(closure_20.userTrialOffers);
+      const values = Object.values(outer1_20.userTrialOffers);
       items = values.filter((trial_id) => {
-        let hasItem = trial_id.includes(trial_id.trial_id);
+        let hasItem = closure_0.includes(trial_id.trial_id);
         if (hasItem) {
           hasItem = null != trial_id.expires_at;
         }
@@ -424,14 +435,14 @@ let tmp3 = (PersistedStore) => {
     key: "getUnacknowledgedDiscountOffers",
     value() {
       const self = this;
-      const currentUser = authStore.getCurrentUser();
+      const currentUser = outer1_9.getCurrentUser();
       if (obj.isPremium(currentUser)) {
         if (!self.canFractionalPremiumUserUseOffer()) {
           let items = [];
         }
         return items;
       }
-      let userDiscountOffers = closure_20.userDiscountOffers;
+      let userDiscountOffers = outer1_20.userDiscountOffers;
       if (null == userDiscountOffers) {
         userDiscountOffers = {};
       }
@@ -439,7 +450,7 @@ let tmp3 = (PersistedStore) => {
       items = values.filter((hasAcknowledged) => {
         let tmp = !hasAcknowledged.hasAcknowledged();
         if (tmp) {
-          tmp = !closure_12.includes(hasAcknowledged.discountId);
+          tmp = !outer2_12.includes(hasAcknowledged.discountId);
         }
         return tmp;
       });
@@ -449,17 +460,17 @@ let tmp3 = (PersistedStore) => {
     key: "getUnacknowledgedOffers",
     value(arg0) {
       const self = this;
-      const UserOfferStore = arg0;
-      const currentUser = authStore.getCurrentUser();
+      let closure_0 = arg0;
+      const currentUser = outer1_9.getCurrentUser();
       if (obj.isPremium(currentUser)) {
         if (!self.canFractionalPremiumUserUseOffer()) {
           let items = [];
         }
         return items;
       }
-      const values = Object.values(closure_20.userTrialOffers);
+      const values = Object.values(outer1_20.userTrialOffers);
       items = values.filter((trial_id) => {
-        let hasItem = trial_id.includes(trial_id.trial_id);
+        let hasItem = closure_0.includes(trial_id.trial_id);
         if (hasItem) {
           hasItem = null == trial_id.expires_at;
         }
@@ -470,7 +481,7 @@ let tmp3 = (PersistedStore) => {
   items[14] = {
     key: "hasAnyUnexpiredOffer",
     value() {
-      const values = Object.values(closure_20.userTrialOffers);
+      const values = Object.values(outer1_20.userTrialOffers);
       return values.some((expires_at) => {
         let tmp = null == expires_at.expires_at;
         if (!tmp) {
@@ -486,16 +497,16 @@ let tmp3 = (PersistedStore) => {
   items[15] = {
     key: "hasAnyUnexpiredDiscountOffer",
     value() {
-      const values = Object.values(closure_20.userDiscountOffers);
+      const values = Object.values(outer1_20.userDiscountOffers);
       return values.some((hasExpired) => !hasExpired.hasExpired());
     }
   };
   items[16] = {
     key: "canFractionalPremiumUserUseOffer",
     value() {
-      let result = fractionalPremiumActive.isFractionalPremiumActive({ excludeReverseTrial: true });
+      let result = outer1_10.isFractionalPremiumActive({ excludeReverseTrial: true });
       if (result) {
-        result = null == premiumTypeSubscription.getPremiumTypeSubscription();
+        result = null == outer1_11.getPremiumTypeSubscription();
       }
       return result;
     }
@@ -506,7 +517,7 @@ let tmp3 = (PersistedStore) => {
       let tmp = null;
       if (null != arg0) {
         let referrer;
-        if (null != closure_20.userTrialOffers[arg0]) {
+        if (null != outer1_20.userTrialOffers[arg0]) {
           referrer = tmp3.referrer;
         }
         tmp = referrer;
@@ -517,26 +528,26 @@ let tmp3 = (PersistedStore) => {
   items[18] = {
     key: "getState",
     value() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[19] = {
     key: "forceReset",
     value() {
-      callback5();
+      outer1_24();
     }
   };
   items[20] = {
     key: "lastFetchSuccessful",
     value() {
-      return closure_20.lastFetchSuccessful;
+      return outer1_20.lastFetchSuccessful;
     }
   };
   return callback(UserOfferStore, items);
-}(importDefault(dependencyMap[13]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = "UserOfferStore";
 tmp3.persistKey = "UserOfferStore";
-const items = [
+let items = [
   (userDiscounts) => {
     userDiscounts = undefined;
     if (null != userDiscounts) {
@@ -586,7 +597,7 @@ const items = [
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp, callback(tmp2)];
+        const items = [tmp, outer1_26(tmp2)];
         return items;
       }));
       return obj;
@@ -651,16 +662,16 @@ obj = {
     obj.lastFetchSuccessful = false;
   },
   BILLING_USER_OFFER_REDEEMED: function handleUserOfferRedeemed(offerId) {
-    const arg1 = offerId.offerId;
+    offerId = offerId.offerId;
     const keys = Object.keys(obj.userDiscountOffers);
-    if (null != keys.find((arg0) => closure_20.userDiscountOffers[arg0].id === offerId)) {
+    if (null != keys.find((arg0) => outer1_20.userDiscountOffers[arg0].id === offerId)) {
       const userDiscountOffers = obj.userDiscountOffers;
-      delete r4[r5];
+      delete tmp3[tmp4];
     }
     const keys1 = Object.keys(obj.userTrialOffers);
-    if (null != keys1.find((arg0) => closure_20.userTrialOffers[arg0].id === offerId)) {
+    if (null != keys1.find((arg0) => outer1_20.userTrialOffers[arg0].id === offerId)) {
       const userTrialOffers = obj.userTrialOffers;
-      delete r0[r1];
+      delete tmp[tmp2];
     }
     return true;
   },
@@ -669,8 +680,7 @@ obj = {
   BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: handlePaymentSourceChange,
   LOGOUT: handleReset
 };
-tmp3 = new tmp3(importDefault(dependencyMap[14]), obj);
-const tmp2 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("stores/billing/UserOfferStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/billing/UserOfferStore.tsx");
 
 export default tmp3;

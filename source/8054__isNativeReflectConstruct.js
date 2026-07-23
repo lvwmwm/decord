@@ -1,16 +1,19 @@
 // Module ID: 8054
-// Function ID: 63924
+// Function ID: 63920
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 5, 11, 29, 6, 7, 15]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8055, 8056, 8057]
 
 // Module 8054 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import checkLogForPII from "checkLogForPII";
-import _objectWithoutProperties from "_objectWithoutProperties";
-import _classCallCheck from "_classCallCheck";
-import tmp2 from "_possibleConstructorReturn";
+import jsxProd from "jsxProd";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import "result";
+import { jsx } from "jsxProd";
+import tmp3 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -20,7 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp2.displayName = "FeComponentTransfer";
-tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
+tmp3.displayName = "FeBlend";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { mode: "normal" });
 
-export default tmp2;
+export default tmp3;

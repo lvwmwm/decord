@@ -1,23 +1,22 @@
-// Module ID: 7742
-// Function ID: 61520
+// Module ID: 7748
+// Function ID: 61557
 // Name: maybeSortByProbability
-// Dependencies: []
+// Dependencies: [7749, 2]
 // Exports: maybeSortByProbability
 
-// Module 7742 (maybeSortByProbability)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/user_affinities/maybeSortByProbability.tsx");
+// Module 7748 (maybeSortByProbability)
+const result = require("set").fileFinishedImporting("modules/user_affinities/maybeSortByProbability.tsx");
 
-export const maybeSortByProbability = function maybeSortByProbability(arg0, stateFromStores, location) {
-  const require = stateFromStores;
-  const voiceUserAffinitySortType = require(dependencyMap[0]).getVoiceUserAffinitySortType(location);
+export const maybeSortByProbability = function maybeSortByProbability(closure_0, stateFromStores, location) {
+  const _require = stateFromStores;
+  const voiceUserAffinitySortType = _require(7749).getVoiceUserAffinitySortType(location);
   if (null == voiceUserAffinitySortType) {
-    return arg0;
+    return closure_0;
   } else if ("vc_probability" === voiceUserAffinitySortType) {
     const items = [];
-    HermesBuiltin.arraySpread(arg0, 0);
+    HermesBuiltin.arraySpread(closure_0, 0);
     let sorted = items.sort((id, id2) => {
-      let value = id2.get(id2.id);
+      let value = stateFromStores.get(id2.id);
       let vcProbability;
       if (null != value) {
         vcProbability = value.vcProbability;
@@ -26,7 +25,7 @@ export const maybeSortByProbability = function maybeSortByProbability(arg0, stat
       if (null != vcProbability) {
         num = vcProbability;
       }
-      value = id2.get(id.id);
+      value = stateFromStores.get(id.id);
       let vcProbability1;
       if (null != value) {
         vcProbability1 = value.vcProbability;
@@ -39,9 +38,9 @@ export const maybeSortByProbability = function maybeSortByProbability(arg0, stat
     });
   } else {
     const items1 = [];
-    HermesBuiltin.arraySpread(arg0, 0);
+    HermesBuiltin.arraySpread(closure_0, 0);
     sorted = items1.sort((id, id2) => {
-      let value = id2.get(id2.id);
+      let value = stateFromStores.get(id2.id);
       let prop;
       if (null != value) {
         prop = value.communicationProbability;
@@ -50,7 +49,7 @@ export const maybeSortByProbability = function maybeSortByProbability(arg0, stat
       if (null != prop) {
         num = prop;
       }
-      value = id2.get(id.id);
+      value = stateFromStores.get(id.id);
       let prop1;
       if (null != value) {
         prop1 = value.communicationProbability;

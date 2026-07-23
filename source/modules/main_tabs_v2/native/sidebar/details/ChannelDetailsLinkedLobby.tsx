@@ -1,26 +1,31 @@
-// Module ID: 15306
-// Function ID: 116396
+// Module ID: 15423
+// Function ID: 118570
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5470, 5459, 1212, 1920, 2]
 // Exports: default
 
-// Module 15306 (ChannelDetailsLinkedLobby)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
-({ Fragment: closure_5, jsxs: closure_6, jsx: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: { alignItems: "center" } };
-obj = { alignSelf: false, fontSize: false, marginBottom: false, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
-obj.divider = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsLinkedLobby.tsx");
+// Module 15423 (ChannelDetailsLinkedLobby)
+import "result";
+import { View } from "get ActivityIndicator";
+import { HelpdeskArticles } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ Fragment: closure_5, jsxs: closure_6, jsx: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { alignItems: "center" } };
+_createForOfIteratorHelperLoose = { height: 1, width: 48, marginTop: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
+_createForOfIteratorHelperLoose.divider = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsLinkedLobby.tsx");
 
 export default function ChannelDetailsLinkedLobby(channel) {
   channel = channel.channel;
-  let divider = callback2();
-  let obj = arg1(dependencyMap[6]);
+  let divider = _createForOfIteratorHelperLoose();
+  let obj = require(5470) /* useGetOrFetchApplications */;
   const linkedLobby = channel.linkedLobby;
   let application_id;
   if (null != linkedLobby) {
@@ -34,27 +39,27 @@ export default function ChannelDetailsLinkedLobby(channel) {
     const items = [divider.container, channel.containerStyle];
     obj.style = items;
     let tmp5 = callback;
-    let TextWithIOSLinkWorkaround = arg1(dependencyMap[7]).TextWithIOSLinkWorkaround;
-    obj = {};
+    let TextWithIOSLinkWorkaround = require(5459) /* findLinks */.TextWithIOSLinkWorkaround;
+    obj = { variant: "text-sm/normal", color: "text-default" };
     let obj1 = {};
     if (null != getOrFetchApplication) {
-      const intl2 = arg1(dependencyMap[8]).intl;
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       const obj2 = { applicationName: getOrFetchApplication.name };
-      let formatResult = intl2.format(arg1(dependencyMap[8]).t.SgxMJs, obj2);
+      let formatResult = intl2.format(require(1212) /* getSystemLocale */.t.SgxMJs, obj2);
     } else {
-      const intl = arg1(dependencyMap[8]).intl;
-      formatResult = intl.string(arg1(dependencyMap[8]).t.yQqVss);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      formatResult = intl.string(require(1212) /* getSystemLocale */.t.yQqVss);
     }
     const items1 = [formatResult, "  \u2022  ", ];
-    const intl3 = arg1(dependencyMap[8]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     const obj3 = {};
-    getOrFetchApplication = importDefault(dependencyMap[9]).getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
+    getOrFetchApplication = importDefault(1920).getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
     obj3.helpdeskArticle = getOrFetchApplication;
-    items1[2] = intl3.format(arg1(dependencyMap[8]).t.BPDKoA, obj3);
+    items1[2] = intl3.format(require(1212) /* getSystemLocale */.t.BPDKoA, obj3);
     obj1.children = items1;
     obj1 = tmp3(closure_5, obj1);
     obj.children = obj1;
-    const obj6 = importDefault(dependencyMap[9]);
+    const obj6 = importDefault(1920);
     const tmp4 = View;
     const tmp8 = closure_5;
     obj = [, ];

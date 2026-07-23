@@ -1,12 +1,11 @@
-// Module ID: 12238
-// Function ID: 93899
+// Module ID: 12352
+// Function ID: 96050
 // Name: deferJoinActivityApplication
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: default
 
-// Module 12238 (deferJoinActivityApplication)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/activities/utils/deferJoinActivityInChannel.tsx");
+// Module 12352 (deferJoinActivityApplication)
+const result = require("set").fileFinishedImporting("modules/activities/utils/deferJoinActivityInChannel.tsx");
 
 export default function deferJoinActivityApplication(arg0) {
   let analyticsLocations;
@@ -16,5 +15,5 @@ export default function deferJoinActivityApplication(arg0) {
   let intent;
   let inviterUserId;
   ({ channelId, applicationId, intent, inviterUserId, analyticsLocations, commandOrigin } = arg0);
-  importDefault(dependencyMap[0]).dispatch({ type: "EMBEDDED_ACTIVITY_DEFERRED_OPEN", channelId, applicationId, intent, inviterUserId, analyticsLocations, commandOrigin });
+  importDefault(686).dispatch({ type: "EMBEDDED_ACTIVITY_DEFERRED_OPEN", channelId, applicationId, intent, inviterUserId, analyticsLocations, commandOrigin });
 };

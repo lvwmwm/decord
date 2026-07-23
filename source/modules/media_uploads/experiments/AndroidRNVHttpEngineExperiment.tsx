@@ -1,19 +1,22 @@
-// Module ID: 8292
-// Function ID: 65470
+// Module ID: 8298
+// Function ID: 65507
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1188, 1194, 1428, 477, 2]
 // Exports: getMuxExperimentDimension, useRnvHttpEngine
 
-// Module 8292 (apexExperiment)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const apexExperiment = arg1(dependencyMap[2]).createApexExperiment({ defaultConfig: { httpEngine: "default" }, variations: { [0]: { httpEngine: "default" }, [1]: { httpEngine: "okhttp" }, [2]: { httpEngine: "cronet" } } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/media_uploads/experiments/AndroidRNVHttpEngineExperiment.tsx");
+// Module 8298 (apexExperiment)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import ApexExperiment from "ApexExperiment";
 
-export const AndroidRNVHttpEngineExperiment = apexExperiment;
+const require = arg1;
+ApexExperiment = { name: "2026-05-android-rnv-http-engine", kind: "user", defaultConfig: { httpEngine: "default" }, variations: { [0]: { httpEngine: "default" }, [1]: { httpEngine: "okhttp" }, [2]: { httpEngine: "cronet" } } };
+ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+const result = require("ApexExperiment").fileFinishedImporting("modules/media_uploads/experiments/AndroidRNVHttpEngineExperiment.tsx");
+
+export const AndroidRNVHttpEngineExperiment = ApexExperiment;
 export const useRnvHttpEngine = function useRnvHttpEngine() {
-  const config = apexExperiment.useConfig({ location: "android_rnv_http_engine" });
+  const config = ApexExperiment.useConfig({ location: "android_rnv_http_engine" });
   let httpEngine = null;
   if (obj.isAndroid()) {
     httpEngine = config.httpEngine;
@@ -21,7 +24,7 @@ export const useRnvHttpEngine = function useRnvHttpEngine() {
   return httpEngine;
 };
 export const getMuxExperimentDimension = function getMuxExperimentDimension() {
-  const assignment = assignment.getAssignment("user", id.getId(), "2026-05-android-rnv-http-engine");
+  assignment = assignment.getAssignment("user", id.getId(), "2026-05-android-rnv-http-engine");
   let trackedVariantId;
   if (null != assignment) {
     trackedVariantId = assignment.trackedVariantId;

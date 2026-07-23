@@ -1,50 +1,60 @@
-// Module ID: 11283
-// Function ID: 87815
+// Module ID: 11293
+// Function ID: 87865
 // Name: AppLauncherAutocompleteOption
-// Dependencies: []
+// Dependencies: [57, 31, 653, 33, 4130, 689, 1820, 4098, 11294, 1934, 11292, 4660, 4126, 2]
 // Exports: default
 
-// Module 11283 (AppLauncherAutocompleteOption)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { Mouse: false, filename: false, durationSecs: false, waveform: false, GET_GUILDS: false, EntryPointCommandButtonActions: false, woman_in_lotus_position: false, linkedUsersProcessed: false, backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.container = obj;
-obj.hasError = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
-const obj1 = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
-obj.inputText = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
-let closure_6 = obj.createStyles(obj);
-const obj2 = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteOption.tsx");
+// Module 11293 (AppLauncherAutocompleteOption)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, padding: 12, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.hasError = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
+const obj2 = { fontSize: 16, alignSelf: "center", fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.inputText = obj2;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
+let result = require("ME").fileFinishedImporting("modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteOption.tsx");
 
 export default function AppLauncherAutocompleteOption(arg0) {
+  let _createForOfIteratorHelperLoose;
   let autoFocus;
+  let _slicedToArray;
+  let result;
+  let closure_7;
+  let dependencyMap;
   let hasError;
+  let importDefault;
+  let jsx;
+  let require;
   let style;
-  ({ option: closure_0, onSelect: closure_1, onOpenAutocompleteSheet: closure_2, onDismissAutocompleteSheet: closure_3, channel: closure_4, activeCommand: closure_5, optionValues: closure_6, initialValue: closure_7, hasError } = arg0);
+  ({ option: require, onSelect: importDefault, onOpenAutocompleteSheet: dependencyMap, onDismissAutocompleteSheet: _slicedToArray, channel: result, activeCommand: jsx, optionValues: _createForOfIteratorHelperLoose, initialValue: closure_7, hasError } = arg0);
   let first;
   let closure_9;
   function onPress() {
-    if (null != lib) {
-      lib();
+    if (null != callback) {
+      callback();
     }
-    let obj = callback(lib[6]);
+    let obj = outer1_0(outer1_2[6]);
     const result = obj.dismissGlobalKeyboard();
     obj = {
-      option: callback,
+      option: closure_0,
       initChoice: first,
       onChoiceSelect(arg0) {
-        callback2(arg0);
-        callback(arg0);
+        outer1_9(arg0);
+        outer1_1(arg0);
       },
-      channel: closure_4,
+      channel: result,
       activeCommand: closure_5,
-      onDismissAutocompleteSheet: closure_3,
+      onDismissAutocompleteSheet: _slicedToArray,
       optionValues: ref.current
     };
-    callback2(lib[7]).openLazy(callback(lib[9])(lib[8], lib.paths), "AppLauncherAutocompleteActionSheet", obj);
+    outer1_1(outer1_2[7]).openLazy(outer1_0(outer1_2[9])(outer1_2[8], outer1_2.paths), "AppLauncherAutocompleteActionSheet", obj);
   }
   ({ style, autoFocus } = arg0);
   const tmp = callback(React.useState(() => {
@@ -60,8 +70,8 @@ export default function AppLauncherAutocompleteOption(arg0) {
   }), 2);
   first = tmp[0];
   closure_9 = tmp[1];
-  const tmp3 = callback2();
-  let obj = arg1(dependencyMap[10]);
+  const tmp3 = _createForOfIteratorHelperLoose();
+  let obj = require(11292) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
   obj = { onPress };
   const items = [tmp3.container, , ];
@@ -77,6 +87,6 @@ export default function AppLauncherAutocompleteOption(arg0) {
     str = first.displayName;
   }
   obj.children = str;
-  obj.children = jsx(arg1(dependencyMap[12]).Text, obj);
-  return jsx(arg1(dependencyMap[11]).PressableOpacity, obj);
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-md/normal", style: tmp3.inputText });
+  return jsx(require(4660) /* PressableBase */.PressableOpacity, { variant: "text-md/normal", style: tmp3.inputText });
 };

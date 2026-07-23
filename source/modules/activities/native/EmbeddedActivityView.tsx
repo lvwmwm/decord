@@ -1,45 +1,57 @@
-// Module ID: 10591
-// Function ID: 82645
+// Module ID: 10601
+// Function ID: 82695
 // Name: useBaseActivityView
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1347, 4155, 4156, 33, 4130, 10600, 1450, 686, 10602, 10603, 10598, 566, 10605, 10525, 10606, 10612, 2]
 
-// Module 10591 (useBaseActivityView)
+// Module 10601 (useBaseActivityView)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import items3 from "items3";
+import { OBEY_SILENT_HARDWARE_SWITCH_APP_IDS as closure_10 } from "ApplicationTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function useBaseActivityView(orientationLockState) {
   orientationLockState = orientationLockState.orientationLockState;
-  const arg1 = orientationLockState;
   const showLoadingIndicator = orientationLockState.showLoadingIndicator;
-  const importDefault = showLoadingIndicator;
   const setShowLoadingStateForLockingOrientation = orientationLockState.setShowLoadingStateForLockingOrientation;
-  const dependencyMap = setShowLoadingStateForLockingOrientation;
   const application = orientationLockState.application;
-  const callback = application;
   const setOrientationLockState = orientationLockState.setOrientationLockState;
-  let closure_7;
+  let first1;
   let closure_8;
   let isLandscape;
-  const setIsResetting = callback(importAllResult.useState(false), 2);
+  const setIsResetting = application(setOrientationLockState.useState(false), 2);
   const isResetting = setIsResetting[0];
-  const defaultOrientationLockState = arg1(dependencyMap[8]).getDefaultOrientationLockState(application);
+  const defaultOrientationLockState = orientationLockState(setShowLoadingStateForLockingOrientation[8]).getDefaultOrientationLockState(application);
   let id;
   if (null != application) {
     id = application.id;
   }
-  const tmp5 = callback(setOrientationLockState.useState(false), 2);
-  const first1 = tmp5[0];
-  closure_7 = first1;
+  const tmp5 = application(setOrientationLockState.useState(false), 2);
+  first1 = tmp5[0];
   closure_8 = tmp5[1];
-  const size = importDefault(dependencyMap[9])();
+  const size = showLoadingIndicator(setShowLoadingStateForLockingOrientation[9])();
   isLandscape = size.width > size.height;
   const items = [isLandscape];
-  const layoutEffect = importAllResult.useLayoutEffect(() => {
+  const layoutEffect = setOrientationLockState.useLayoutEffect(() => {
     showLoadingIndicator(setShowLoadingStateForLockingOrientation[10]).dispatch({ type: "ACTIVITY_SCREEN_ORIENTATION_UPDATE", screenOrientation: isLandscape ? isLandscape.LANDSCAPE : isLandscape.PORTRAIT });
   }, items);
   const items1 = [id];
-  const layoutEffect1 = importAllResult.useLayoutEffect(() => {
+  const layoutEffect1 = setOrientationLockState.useLayoutEffect(() => {
     callback(false);
   }, items1);
   const items2 = [defaultOrientationLockState, application, orientationLockState, isLandscape, first1, setShowLoadingStateForLockingOrientation, setOrientationLockState];
-  const layoutEffect2 = importAllResult.useLayoutEffect(() => {
+  const layoutEffect2 = setOrientationLockState.useLayoutEffect(() => {
     if (!first1) {
       if (null == orientationLockState) {
         if (!showLoadingIndicator(setShowLoadingStateForLockingOrientation[11])(isLandscape, defaultOrientationLockState)) {
@@ -53,13 +65,13 @@ function useBaseActivityView(orientationLockState) {
     setShowLoadingStateForLockingOrientation(false);
   }, items2);
   const items3 = [orientationLockState, isLandscape, setShowLoadingStateForLockingOrientation];
-  const layoutEffect3 = importAllResult.useLayoutEffect(() => {
+  const layoutEffect3 = setOrientationLockState.useLayoutEffect(() => {
     if (showLoadingIndicator(setShowLoadingStateForLockingOrientation[11])(isLandscape, orientationLockState)) {
       setShowLoadingStateForLockingOrientation(false);
     }
   }, items3);
   const items4 = [showLoadingIndicator, isResetting];
-  const layoutEffect4 = importAllResult.useLayoutEffect(() => {
+  const layoutEffect4 = setOrientationLockState.useLayoutEffect(() => {
     let tmp = showLoadingIndicator;
     if (!showLoadingIndicator) {
       tmp = isResetting;
@@ -72,7 +84,7 @@ function useBaseActivityView(orientationLockState) {
 }
 class ActivityViewLoadingIndicator {
   constructor() {
-    obj = { style: closure_14().loadingContainer, children: jsx(ActivityIndicator, { size: "large" }) };
+    obj = { style: c14().loadingContainer, children: jsx(ActivityIndicator, { size: "large" }) };
     return jsx(View, obj);
   }
 }
@@ -89,13 +101,13 @@ class BaseActivityView {
         tmp6 = Fragment;
         obj = {};
         tmp7 = jsx;
-        tmp8 = importDefault;
-        tmp9 = dependencyMap;
+        tmp8 = closure_1;
+        tmp9 = closure_2;
         num = 12;
         obj = {};
         obj.wakeLockKey = tmp2;
         items = [, ];
-        items[0] = jsx(importDefault(dependencyMap[12]), obj);
+        items[0] = jsx(require("useWakeLock"), obj);
         items[1] = tmp;
         obj.children = items;
         tmp4 = jsxs(Fragment, obj);
@@ -104,17 +116,10 @@ class BaseActivityView {
     return tmp4;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ ActivityIndicator: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[2]);
-({ ActivityLayoutMode: closure_8, ActivityScreenOrientation: closure_9 } = arg1(dependencyMap[4]));
-let closure_10 = arg1(dependencyMap[5]).OBEY_SILENT_HARDWARE_SWITCH_APP_IDS;
-const tmp3 = arg1(dependencyMap[4]);
-({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
-const tmp4 = arg1(dependencyMap[6]);
-let closure_14 = arg1(dependencyMap[7]).createStyles({ loadingContainer: { "Null": "<string:3942646034>", "Null": "<string:3355444267>" } });
+({ ActivityIndicator: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ ActivityLayoutMode: closure_8, ActivityScreenOrientation: closure_9 } = items3);
+({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = jsxProd);
+let closure_14 = _createForOfIteratorHelperLoose.createStyles({ loadingContainer: { flex: 1, justifyContent: "center" } });
 const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portraitSafeAreasConfig) {
   let channel;
   let channel2;
@@ -123,25 +128,23 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
   let tmp7;
   let tmp8;
   ({ channel, layoutMode } = portraitSafeAreasConfig);
-  const arg1 = layoutMode;
   let landscapeSafeAreasConfig = portraitSafeAreasConfig.portraitSafeAreasConfig;
-  let callback;
+  let setIsResetting;
   currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
-  const importDefault = currentEmbeddedActivity;
-  const tmp4 = importDefault(dependencyMap[13])();
+  const tmp4 = currentEmbeddedActivity(10598)();
   const dependencyMap = tmp4;
-  let obj = arg1(dependencyMap[14]);
+  let obj = layoutMode(566);
   const items = [currentEmbeddedActivity];
   const items1 = [tmp4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let orientationLockStateForApp;
     if (null != tmp4) {
-      orientationLockStateForApp = orientationLockStateForApp.getOrientationLockStateForApp(tmp4.id);
+      orientationLockStateForApp = outer1_7.getOrientationLockStateForApp(tmp4.id);
     }
     return orientationLockStateForApp;
   }, items1);
   ({ currentEmbeddedActivity, channel: channel2 } = { currentEmbeddedActivity, channel });
-  [tmp7, tmp8] = callback(importAllResult.useState(true), 2);
+  [tmp7, tmp8] = setIsResetting(importAllResult.useState(true), 2);
   if (null == currentEmbeddedActivity) {
     obj = { instance_id: "" };
     let tmp14 = obj;
@@ -152,7 +155,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       launchId = currentEmbeddedActivity.launchId;
     }
     obj.instance_id = launchId;
-    const _location = currentEmbeddedActivity.location;
+    let _location = currentEmbeddedActivity.location;
     let id;
     if (null != _location) {
       id = _location.id;
@@ -191,7 +194,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       tmp14 = obj;
     }
   }
-  importDefault(dependencyMap[15])({ connectedEmbeddedActivity: currentEmbeddedActivity });
+  currentEmbeddedActivity(10605)({ connectedEmbeddedActivity: currentEmbeddedActivity });
   const items2 = [layoutMode, currentEmbeddedActivity];
   const layoutEffect = importAllResult.useLayoutEffect(() => {
     if (null != currentEmbeddedActivity) {
@@ -201,7 +204,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
     }
   }, items2);
   const items3 = [tmp4, currentEmbeddedActivity];
-  callback = importAllResult.useCallback(() => {
+  const callback = importAllResult.useCallback(() => {
     let obj = currentEmbeddedActivity(tmp4[16]);
     obj = {};
     let _location;
@@ -236,11 +239,10 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
   if (!tmp19) {
     tmp19 = null == tmp4;
   }
-  const obj1 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp19, setShowLoadingStateForLockingOrientation: tmp8, application: tmp4, setOrientationLockState: arg1(dependencyMap[8]).setOrientationLockState };
-  const tmp2 = importDefault;
-  const tmp3 = dependencyMap;
-  const tmp6 = callback(importAllResult.useState(true), 2);
-  callback = useBaseActivityView(obj1).setIsResetting;
+  const obj1 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp19, setShowLoadingStateForLockingOrientation: tmp8, application: tmp4, setOrientationLockState: layoutMode(10600).setOrientationLockState };
+  const tmp2 = currentEmbeddedActivity;
+  const tmp6 = setIsResetting(importAllResult.useState(true), 2);
+  setIsResetting = useBaseActivityView(obj1).setIsResetting;
   let tmp25Result = null;
   if (null != currentEmbeddedActivity) {
     tmp25Result = null;
@@ -249,7 +251,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       const obj3 = {
         onActivityCrash() {
               setIsResetting(true);
-              const timerId = setTimeout(() => callback(false), 0);
+              const timerId = setTimeout(() => outer1_3(false), 0);
             },
         applicationId: id
       };
@@ -275,15 +277,15 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       const tmp25 = closure_11;
       const tmp26 = BaseActivityView;
       const tmp27 = closure_11;
-      const tmp30 = importDefault(dependencyMap[17]);
-      obj3.allowPopups = arg1(dependencyMap[18]).allowPopups(tmp4);
+      const tmp30 = currentEmbeddedActivity(10606);
+      obj3.allowPopups = layoutMode(10612).allowPopups(tmp4);
       obj3.referrerPolicy = "origin";
       let tmp37 = layoutMode === constants.PIP;
       if (!tmp37) {
         tmp37 = layoutMode === constants.GRID;
       }
       obj3.isPipOrGridMode = tmp37;
-      obj3.webViewKey = arg1(dependencyMap[16]).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
+      obj3.webViewKey = layoutMode(10525).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
       if (tmp23) {
         landscapeSafeAreasConfig = portraitSafeAreasConfig.landscapeSafeAreasConfig;
       }
@@ -291,13 +293,12 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       obj3.ignoreSilentHardwareSwitch = !set.has(id);
       obj2.children = tmp27(tmp30, obj3);
       tmp25Result = tmp25(tmp26, obj2);
-      const obj6 = arg1(dependencyMap[18]);
+      const obj6 = layoutMode(10612);
     }
   }
   return tmp25Result;
 });
-const obj2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/activities/native/EmbeddedActivityView.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/activities/native/EmbeddedActivityView.tsx");
 
 export default memoResult;
 export { useBaseActivityView };

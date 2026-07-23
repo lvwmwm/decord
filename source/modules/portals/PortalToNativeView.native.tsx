@@ -1,16 +1,17 @@
-// Module ID: 9251
-// Function ID: 72307
+// Module ID: 9258
+// Function ID: 72348
 // Name: PortalToNativeView
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 2]
 // Exports: default
 
-// Module 9251 (PortalToNativeView)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_1 = arg1(dependencyMap[1]).requireNativeComponent("PortalToNativeView");
-let closure_2 = arg1(dependencyMap[3]).createStyles({ portal: { display: "PaperIcon", justifyContent: "png", overflow: "row", backgroundColor: "flex-end", alignItems: null, justifyContent: "absolute" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/portals/PortalToNativeView.native.tsx");
+// Module 9258 (PortalToNativeView)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_1 = require("get ActivityIndicator").requireNativeComponent("PortalToNativeView");
+let closure_2 = _createForOfIteratorHelperLoose.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, right: 0, left: 0, top: 0 } });
+const result = require("jsxProd").fileFinishedImporting("modules/portals/PortalToNativeView.native.tsx");
 
 export default function PortalToNativeView(arg0) {
   let children;

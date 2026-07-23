@@ -1,59 +1,60 @@
-// Module ID: 11688
-// Function ID: 90699
+// Module ID: 11698
+// Function ID: 90748
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 1316, 4812, 5714, 653, 566, 1282, 1212, 1327, 1360, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 11688 (_createForOfIteratorHelperLoose)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { HUB_PROGRESS_STEP_ORDER } from "__exportStarResult1";
-import { PlatformTypes } from "__exportStarResult1";
+// Module 11698 (_createForOfIteratorHelperLoose)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { HUB_PROGRESS_STEP_ORDER } from "items";
+import { PlatformTypes } from "ME";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -64,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -91,12 +92,12 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function useCompletedStepsFromSettings(arg0) {
-  const arg1 = arg0;
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => {
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = _require(stateFromStores[5]).useStateFromStores(items, () => {
     let num = 0;
-    if (null != arg0) {
-      const guilds = settings.settings.guilds;
+    if (null != closure_0) {
+      const guilds = outer1_3.settings.guilds;
       let hubProgress;
       if (null != guilds) {
         if (null != guilds.guilds[closure_0]) {
@@ -111,19 +112,18 @@ function useCompletedStepsFromSettings(arg0) {
     }
     return num;
   });
-  const dependencyMap = stateFromStores;
   const items1 = [stateFromStores];
   return React.useMemo(() => {
     let iter2;
     const set = new Set();
-    const tmp2 = callback(closure_5);
+    const tmp2 = outer1_7(outer1_5);
     let iter = tmp2();
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp3 = closure_0;
-        let tmp4 = closure_1;
-        let obj2 = closure_0(closure_1[9]);
+        let tmp3 = callback;
+        let tmp4 = stateFromStores;
+        let obj2 = callback(stateFromStores[9]);
         if (obj2.hasFlag(tmp, value)) {
           let addResult = set.add(value);
         }
@@ -134,22 +134,22 @@ function useCompletedStepsFromSettings(arg0) {
     return set;
   }, items1);
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
 
 export const getHubProgressTitleForStep = function getHubProgressTitleForStep(nextHubProgressStep) {
-  if (arg1(dependencyMap[6]).HubProgressStep.JOIN_GUILD === nextHubProgressStep) {
-    const intl3 = arg1(dependencyMap[7]).intl;
-    return intl3.string(arg1(dependencyMap[7]).t.iNR25n);
-  } else if (arg1(dependencyMap[6]).HubProgressStep.INVITE_USER === nextHubProgressStep) {
-    const intl2 = arg1(dependencyMap[7]).intl;
-    return intl2.string(arg1(dependencyMap[7]).t.3NlTYU);
-  } else if (arg1(dependencyMap[6]).HubProgressStep.CONTACT_SYNC === nextHubProgressStep) {
-    const intl = arg1(dependencyMap[7]).intl;
-    return intl.string(arg1(dependencyMap[7]).t.HFvFte);
-  } else if (arg1(dependencyMap[6]).HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
+  if (require(1282) /* _callSuper */.HubProgressStep.JOIN_GUILD === nextHubProgressStep) {
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.iNR25n);
+  } else if (require(1282) /* _callSuper */.HubProgressStep.INVITE_USER === nextHubProgressStep) {
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t["3NlTYU"]);
+  } else if (require(1282) /* _callSuper */.HubProgressStep.CONTACT_SYNC === nextHubProgressStep) {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.HFvFte);
+  } else if (require(1282) /* _callSuper */.HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
     return null;
   } else {
-    arg1(dependencyMap[8]).assertNever(nextHubProgressStep);
+    require(1327) /* isDiscordFrontendDevelopment */.assertNever(nextHubProgressStep);
   }
 };
 export const useHubProgressBarCompletedSteps = function useHubProgressBarCompletedSteps(guild) {
@@ -158,13 +158,13 @@ export const useHubProgressBarCompletedSteps = function useHubProgressBarComplet
     id = guild.id;
   }
   const tmpResult = useCompletedStepsFromSettings(id);
-  const arg1 = tmpResult;
-  const tmp4 = function useContactSyncEverEnabled() {
-    const items = [closure_4];
-    return tmpResult(tmp4[5]).useStateFromStores(items, () => null != localAccount.getLocalAccount(constants.CONTACTS));
-  }();
+  const require = tmpResult;
+  const tmp4 = (function useContactSyncEverEnabled() {
+    const items = [outer1_4];
+    return tmpResult(tmp4[5]).useStateFromStores(items, () => null != outer2_4.getLocalAccount(outer2_6.CONTACTS));
+  })();
   const dependencyMap = tmp4;
-  const items = [tmpResult, tmp4];
+  let items = [tmpResult, tmp4];
   return React.useMemo(() => {
     if (tmp4) {
       const _Set = Set;

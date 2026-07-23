@@ -1,12 +1,13 @@
-// Module ID: 4051
-// Function ID: 33802
+// Module ID: 4053
+// Function ID: 33811
 // Name: validateAllExperiments
-// Dependencies: []
+// Dependencies: [4044, 2]
 // Exports: validateAllExperiments, validateOneExperiment
 
-// Module 4051 (validateAllExperiments)
-importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/experiments/trigger_points/validateTriggerPoint.tsx");
+// Module 4053 (validateAllExperiments)
+import "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/validateTriggerPoint.tsx");
 
 export function validateAllExperiments() {
 

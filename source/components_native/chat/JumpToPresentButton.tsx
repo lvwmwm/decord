@@ -1,46 +1,47 @@
-// Module ID: 11364
-// Function ID: 88375
+// Module ID: 11374
+// Function ID: 88425
 // Name: JumpToPresentButton
-// Dependencies: []
+// Dependencies: [31, 27, 9313, 4808, 4349, 33, 4130, 689, 477, 3834, 1324, 566, 10633, 1212, 11375, 11376, 7771, 11377, 2]
 // Exports: default
 
-// Module 11364 (JumpToPresentButton)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[2]).useChatInputContainerHeight;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[7]).radii.round, position: "absolute", right: importDefault(dependencyMap[7]).modules.mobile.JUMP_TO_PRESENT_RIGHT_SPACING };
-obj.container = obj;
-const obj1 = { <string:2874565219>: "<string:7536641>", <string:3568086099>: "<string:1677721600>", <string:1437410220>: "<string:1677721600>", marginBottom: importDefault(dependencyMap[7]).modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING };
-obj.containerIOS = obj1;
-let closure_9 = obj.createStyles(obj);
-let closure_10 = arg1(dependencyMap[8]).isIOS() ? () => null : (arg0) => {
-  let obj = arg1(dependencyMap[9]);
+// Module 11374 (JumpToPresentButton)
+import "result";
+import { View } from "get ActivityIndicator";
+import getChatInputContainerHeight from "getChatInputContainerHeight";
+import { useChatInputContainerHeight as closure_5 } from "getChatInputContainerHeight";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "getChatInputContainerHeight";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, position: "absolute", right: require("_createForOfIteratorHelperLoose").modules.mobile.JUMP_TO_PRESENT_RIGHT_SPACING };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { bottom: "100%", marginBottom: require("_createForOfIteratorHelperLoose").modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING, pointerEvents: "box-none" };
+_createForOfIteratorHelperLoose.containerIOS = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let closure_10 = set.isIOS() ? (() => null) : ((arg0) => {
+  let obj = require(3834) /* map */;
   obj = {};
-  const token = obj.useToken(importDefault(dependencyMap[7]).modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING);
+  const token = obj.useToken(importDefault(689).modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING);
   obj.bottom = callback2(arg0) + token;
   return obj;
-};
-const obj5 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("components_native/chat/JumpToPresentButton.tsx");
+});
+const result = set.fileFinishedImporting("components_native/chat/JumpToPresentButton.tsx");
 
 export default function JumpToPresentButton(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const screenIndex = channelId.screenIndex;
-  const importDefault = screenIndex;
   const onJumpToPresent = channelId.onJumpToPresent;
-  const tmp = callback3();
-  const tmp2 = callback4(screenIndex);
-  let obj = arg1(closure_2[11]);
-  const items = [closure_6];
-  closure_2 = obj.useStateFromStores(items, () => connected.isConnected(), []);
-  const tmp4 = callback((showingAutoComplete) => {
+  const tmp = _createForOfIteratorHelperLoose();
+  let tmp2 = callback3(screenIndex);
+  let obj = channelId(566);
+  const items = [_isNativeReflectConstruct];
+  const dependencyMap = obj.useStateFromStores(items, () => outer1_6.isConnected(), []);
+  let tmp4 = callback((showingAutoComplete) => {
     let tmp2 = !tmp;
     if (!!closure_2) {
       showingAutoComplete = showingAutoComplete.showingAutoComplete;
@@ -53,13 +54,13 @@ export default function JumpToPresentButton(channelId) {
     }
     return tmp2;
   });
-  let obj1 = arg1(closure_2[12]);
+  let obj1 = channelId(10633);
   const isVoicePanelMounted = obj1.useIsVoicePanelMounted(channelId);
-  const tmp3 = importDefault(closure_2[10])("JumpToPresentButton");
-  const isVoicePanelOpen = arg1(closure_2[12]).useIsVoicePanelOpen(channelId);
-  const obj3 = arg1(closure_2[12]);
+  const tmp3 = screenIndex(1324)("JumpToPresentButton");
+  const isVoicePanelOpen = channelId(10633).useIsVoicePanelOpen(channelId);
+  const obj3 = channelId(10633);
   const items1 = [closure_7];
-  const stateFromStores = arg1(closure_2[11]).useStateFromStores(items1, () => null != messages.getMessages(channelId).jumpReturnTargetId);
+  const stateFromStores = channelId(566).useStateFromStores(items1, () => null != outer1_7.getMessages(channelId).jumpReturnTargetId);
   if (!tmp4) {
     return null;
   }
@@ -67,30 +68,30 @@ export default function JumpToPresentButton(channelId) {
   if (null == tmp2) {
     containerIOS = tmp.containerIOS;
   }
-  const intl = arg1(closure_2[13]).intl;
+  const intl = channelId(1212).intl;
   const string = intl.string;
-  const t = arg1(closure_2[13]).t;
+  const t = channelId(1212).t;
   if (stateFromStores) {
     let stringResult = string(t.dpjpOp);
   } else {
     stringResult = string(t.gpoQsB);
   }
   obj = { style: items2 };
-  const items2 = [tmp.container, containerIOS];
+  items2 = [tmp.container, containerIOS];
   if (tmp4) {
     if (tmp3) {
       obj = { accessibilityLabel: stringResult };
-      stringResult = importDefault(closure_2[15]);
+      stringResult = screenIndex(11376);
       obj.icon = stringResult;
       obj.onPress = onJumpToPresent;
-      let tmp12Result = tmp12(importDefault(closure_2[14]), obj);
-      const tmp21 = importDefault(closure_2[14]);
+      let tmp12Result = tmp12(screenIndex(11375), obj);
+      const tmp21 = screenIndex(11375);
     } else {
-      obj1 = { accessibilityLabel: stringResult, onPress: onJumpToPresent, icon: importDefault(closure_2[15]), variant: "primary-overlay" };
-      tmp12Result = tmp12(arg1(closure_2[16]).IconButton, obj1);
+      obj1 = { accessibilityLabel: stringResult, onPress: onJumpToPresent, icon: screenIndex(11376), variant: "primary-overlay" };
+      tmp12Result = tmp12(channelId(7771).IconButton, obj1);
     }
   } else {
-    obj.children = tmp12(arg1(closure_2[17]).MemoedVoicePanelDismissChatButton, {});
+    obj.children = tmp12(channelId(11377).MemoedVoicePanelDismissChatButton, {});
     return tmp10(tmp11, obj);
   }
 };

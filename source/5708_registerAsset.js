@@ -1,0 +1,11 @@
+// Module ID: 5708
+// Function ID: 49102
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 5708 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "2d4d5e1376e3dc7d0fa68688da698fba", name: "ic_community_guild_badge_light_24px", type: "png" };
+
+export default registerAsset.registerAsset(obj);

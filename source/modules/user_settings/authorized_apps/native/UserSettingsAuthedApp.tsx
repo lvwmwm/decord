@@ -1,45 +1,68 @@
-// Module ID: 13730
-// Function ID: 103858
+// Module ID: 13844
+// Function ID: 106014
 // Name: WarningLabel
-// Dependencies: []
+// Dependencies: [31, 27, 1347, 5066, 1348, 3767, 4325, 1921, 653, 9102, 10420, 33, 4130, 689, 4086, 5459, 1456, 1457, 1212, 5472, 10525, 8960, 566, 11632, 1392, 4472, 11631, 4098, 10421, 1934, 480, 8923, 7488, 7375, 5793, 8336, 3982, 5079, 5073, 21, 11176, 4126, 9012, 5503, 5504, 5165, 2]
 // Exports: default
 
-// Module 13730 (WarningLabel)
-function WarningLabel(children) {
-  const tmp = callback3();
+// Module 13844 (WarningLabel)
+import showAlert from "showAlert";
+import get_ActivityIndicator from "showActionSheet";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens";
+import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY";
+import jsxProd from "dispatcher";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_17;
+let closure_18;
+let closure_4;
+let closure_5;
+const require = arg1;
+function WarningLabel(text) {
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.warningContainer };
-  obj = { size: "xs", color: importDefault(dependencyMap[13]).colors.TEXT_MUTED, style: tmp.warningIcon };
-  const items = [callback(arg1(dependencyMap[14]).CircleInformationIcon, obj), callback(arg1(dependencyMap[15]).TextWithIOSLinkWorkaround, { children: children.text })];
+  obj = { size: "xs", color: importDefault(689).colors.TEXT_MUTED, style: tmp.warningIcon };
+  const items = [callback(require(4086) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
+  obj = { color: "text-default", variant: "text-sm/medium", children: text.text };
+  items[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj);
   obj.children = items;
   return callback2(closure_5, obj);
 }
 function AuthorizedAppTwoWay(application) {
-  let obj = arg1(dependencyMap[16]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
+  let obj = navigation(1456);
+  navigation = obj.useNavigation();
   const items = [navigation];
   obj = {};
   const callback = React.useCallback(() => {
-    const CommonActions = navigation(closure_2[17]).CommonActions;
-    navigation.dispatch(CommonActions.navigate({ name: constants.CONNECTIONS }));
+    const CommonActions = navigation(outer1_2[17]).CommonActions;
+    navigation.dispatch(CommonActions.navigate({ name: outer1_12.CONNECTIONS }));
   }, items);
-  const intl = arg1(dependencyMap[18]).intl;
+  const intl = navigation(1212).intl;
   obj = { applicationName: application.application.name, onConnectionPress: callback };
-  obj.text = intl.format(arg1(dependencyMap[18]).t.jUhnwb, obj);
+  obj.text = intl.format(navigation(1212).t.jUhnwb, obj);
   return callback(WarningLabel, obj);
 }
 function ParentApp(application) {
   let obj = {};
-  const intl = arg1(dependencyMap[18]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { applicationName: application.application.name };
-  obj.text = intl.format(arg1(dependencyMap[18]).t.j4B7EW, obj);
+  obj.text = intl.format(require(1212) /* getSystemLocale */.t.j4B7EW, obj);
   return callback(WarningLabel, obj);
 }
-function handleDeleteApp(closure_1) {
-  const application = closure_1.application;
-  let obj = importDefault(dependencyMap[19]);
-  obj.delete(closure_1.id);
-  const selfEmbeddedActivities = selfEmbeddedActivities.getSelfEmbeddedActivities();
+function handleDeleteApp(outer1_1) {
+  const application = outer1_1.application;
+  let obj = importDefault(5472);
+  obj.delete(outer1_1.id);
+  selfEmbeddedActivities = selfEmbeddedActivities.getSelfEmbeddedActivities();
   const value = selfEmbeddedActivities.get(application.id);
   obj = {};
   let _location;
@@ -48,53 +71,36 @@ function handleDeleteApp(closure_1) {
   }
   obj.location = _location;
   obj.applicationId = application.id;
-  importDefault(dependencyMap[20]).leaveActivity(obj);
+  importDefault(10525).leaveActivity(obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ ScrollView: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-const tmp2 = arg1(dependencyMap[1]);
-({ UserSettingsSections: closure_12, AnalyticsSections: closure_13, AnalyticsPages: closure_14 } = arg1(dependencyMap[8]));
-let closure_15 = arg1(dependencyMap[9]).ChannelDetailsNavigatorScreens;
-let closure_16 = arg1(dependencyMap[10]).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
-const tmp3 = arg1(dependencyMap[8]);
-({ jsx: closure_17, jsxs: closure_18 } = arg1(dependencyMap[11]));
-let obj = arg1(dependencyMap[12]);
-obj = { container: {}, section: { marginBottom: 24 }, header: { borderWidth: 275924203, borderColor: 234881024, position: 1929379840, top: 16 }, appAboutDescription: { width: "100%" } };
-obj = { <string:3427919713>: "MAX_FAVORITE_GIFS_SIZE", <string:1374118325>: "%ArrayBuffer%", <string:1632825022>: "isArrayBuffer", marginTop: importDefault(dependencyMap[13]).space.PX_12 };
-obj.warningContainer = obj;
-const obj1 = { -9223372036854775808: 24, 9223372036854775807: 24, 0: null, color: importDefault(dependencyMap[13]).colors.TEXT_MUTED };
-obj.warningIcon = obj1;
-let closure_19 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[46]).fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedApp.tsx");
+({ ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ UserSettingsSections: closure_12, AnalyticsSections: closure_13, AnalyticsPages: closure_14 } = ME);
+({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { paddingHorizontal: 16, paddingVertical: 24 }, section: { marginBottom: 24 }, header: { flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 12 }, appAboutDescription: { width: "100%" } };
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, display: "flex", flexDirection: "row" };
+_createForOfIteratorHelperLoose.warningContainer = _createForOfIteratorHelperLoose;
+let obj1 = { width: 16, height: 16, marginRight: 8, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose.warningIcon = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedApp.tsx");
 
 export default function UserSettingsAuthedApp(oauth2Token) {
   oauth2Token = oauth2Token.oauth2Token;
-  const arg1 = oauth2Token;
-  let importDefault;
-  let React;
-  let closure_7;
-  const tmp = callback3();
-  const application = oauth2Token.application;
-  importDefault = application;
-  let tmp2 = importDefault(dependencyMap[21])(application);
-  let obj = arg1(dependencyMap[22]);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores2.getNewestTokenForApplication(application.id));
-  const dependencyMap = stateFromStores;
-  let obj1 = arg1(dependencyMap[22]);
+  let application;
+  let navigation;
+  let stateFromStores2;
+  const tmp = _createForOfIteratorHelperLoose();
+  application = oauth2Token.application;
+  let tmp2 = application(stateFromStores[21])(application);
+  let obj = oauth2Token(stateFromStores[22]);
+  const items = [stateFromStores2];
+  stateFromStores = obj.useStateFromStores(items, () => stateFromStores2.getNewestTokenForApplication(application.id));
+  let obj1 = oauth2Token(stateFromStores[22]);
   const items1 = [closure_11];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => locale.locale);
-  let obj2 = arg1(dependencyMap[16]);
-  const navigation = obj2.useNavigation();
-  React = navigation;
-  let obj3 = arg1(dependencyMap[22]);
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_11.locale);
+  let obj2 = oauth2Token(stateFromStores[16]);
+  navigation = obj2.useNavigation();
+  let obj3 = oauth2Token(stateFromStores[22]);
   const items2 = [closure_9];
   let closure_4 = obj3.useStateFromStores(items2, () => {
     let id;
@@ -104,70 +110,69 @@ export default function UserSettingsAuthedApp(oauth2Token) {
         id = bot.id;
       }
     }
-    return blocked.isBlocked(id);
+    return outer1_9.isBlocked(id);
   });
-  let obj4 = arg1(dependencyMap[23]);
+  let obj4 = oauth2Token(stateFromStores[23]);
   let shouldWarnAuthorizedAppTwoWay = obj4.useShouldWarnAuthorizedAppTwoWay(application.id);
-  let obj5 = importDefault(dependencyMap[24]);
+  let obj5 = application(stateFromStores[24]);
   obj = { id: application.id, icon: application.icon };
   const items3 = [stateFromStores, navigation];
   const applicationIconSource = obj5.getApplicationIconSource(obj);
-  const effect = React.useEffect(() => {
+  const effect = navigation.useEffect(() => {
     if (null == stateFromStores) {
       navigation.goBack();
     }
   }, items3);
   const items4 = [application, oauth2Token];
-  const callback = React.useCallback(() => {
+  const callback = navigation.useCallback(() => {
     let obj = oauth2Token(stateFromStores[25]);
     obj = {
       application,
       scopes: oauth2Token.scopes,
       onDelete() {
-        callback(closure_0);
+        outer2_23(outer1_0);
       }
     };
-    obj.openAlert("confirm-delete-authed-app", callback(application(stateFromStores[26]), obj));
+    obj.openAlert("confirm-delete-authed-app", outer1_17(application(stateFromStores[26]), obj));
   }, items4);
-  let closure_5 = React.useCallback((userId) => {
+  let closure_5 = navigation.useCallback((userId) => {
     let obj = application(stateFromStores[27]);
     obj = { userId, impressionName: oauth2Token(stateFromStores[30]).ImpressionNames.BLOCK_USER_CONFIRMATION };
-    obj.openLazy(oauth2Token(stateFromStores[29])(stateFromStores[28], stateFromStores.paths), closure_16, obj, "stack");
+    obj.openLazy(oauth2Token(stateFromStores[29])(stateFromStores[28], stateFromStores.paths), outer1_16, obj, "stack");
   }, []);
-  let closure_6 = React.useCallback((closure_3) => {
+  let closure_6 = navigation.useCallback((outer1_3) => {
     let obj = application(stateFromStores[31]);
-    obj = { location: constants2.SETTINGS_AUTHORIZED_APP };
-    obj.unblockUser(closure_3, obj);
-    const result = application(stateFromStores[32]).showUnblockSuccessToast(closure_3);
+    obj = { location: outer1_13.SETTINGS_AUTHORIZED_APP };
+    obj.unblockUser(outer1_3, obj);
+    const result = application(stateFromStores[32]).showUnblockSuccessToast(outer1_3);
   }, []);
-  let obj7 = arg1(dependencyMap[22]);
+  let obj7 = oauth2Token(stateFromStores[22]);
   const items5 = [closure_8];
-  const stateFromStores2 = obj7.useStateFromStores(items5, () => {
+  stateFromStores2 = obj7.useStateFromStores(items5, () => {
     const bot = application.bot;
     let id;
     if (null != bot) {
       id = bot.id;
     }
-    return dMFromUserId.getDMFromUserId(id);
+    return outer1_8.getDMFromUserId(id);
   });
-  closure_7 = stateFromStores2;
-  let obj8 = arg1(dependencyMap[22]);
+  let obj8 = oauth2Token(stateFromStores[22]);
   const items6 = [closure_10];
   const items7 = [stateFromStores2];
   const stateFromStoresObject = obj8.useStateFromStoresObject(items6, () => {
     if (null == stateFromStores2) {
-      let obj = { position: "<string:1243348993>", bottom: "<string:2137063425>" };
+      let obj = { appDMChannelMuteConfig: null, muted: false };
     } else {
-      obj = { appDMChannelMuteConfig: closure_10.getChannelMuteConfig(null, stateFromStores2), muted: closure_10.isChannelMuted(null, stateFromStores2) };
+      obj = { appDMChannelMuteConfig: outer1_10.getChannelMuteConfig(null, stateFromStores2), muted: outer1_10.isChannelMuted(null, stateFromStores2) };
     }
     return obj;
   }, items7);
   const appDMChannelMuteConfig = stateFromStoresObject.appDMChannelMuteConfig;
   obj = { contentContainerStyle: tmp.container };
   const description = application.description;
-  let obj10 = importDefault(dependencyMap[39]);
+  let obj10 = application(stateFromStores[39]);
   obj1 = { style: items8 };
-  const items8 = [, ];
+  items8 = [, ];
   ({ header: arr9[0], section: arr9[1] } = tmp);
   const date = new Date(obj10.extractTimestamp(oauth2Token.id));
   const tmp12 = closure_18;
@@ -175,22 +180,22 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   obj2 = { iconSource: applicationIconSource };
   const tmp15 = closure_18;
   const tmp16 = closure_5;
-  const toLocaleDateStringResult = new Date(obj10.extractTimestamp(oauth2Token.id)).toLocaleDateString(stateFromStores1, {});
-  obj2.iconBorderRadius = importDefault(dependencyMap[13]).radii.md;
+  const toLocaleDateStringResult = new Date(obj10.extractTimestamp(oauth2Token.id)).toLocaleDateString(stateFromStores1, { year: "numeric", month: "short", day: "numeric" });
+  obj2.iconBorderRadius = application(stateFromStores[13]).radii.md;
   obj2.iconSize = 64;
-  const items9 = [callback(importDefault(dependencyMap[40]), obj2), , ];
-  obj3 = { cachedAt: 400, edpbxy: 20 };
-  const intl = arg1(dependencyMap[18]).intl;
-  obj3.children = intl.format(arg1(dependencyMap[18]).t.yOApCK, { date: toLocaleDateStringResult });
-  items9[1] = callback(arg1(dependencyMap[41]).Text, obj3);
+  const items9 = [callback(application(stateFromStores[40]), obj2), , ];
+  obj3 = { variant: "text-sm/normal", color: "text-muted" };
+  let intl = oauth2Token(stateFromStores[18]).intl;
+  obj3.children = intl.format(oauth2Token(stateFromStores[18]).t.yOApCK, { date: toLocaleDateStringResult });
+  items9[1] = callback(oauth2Token(stateFromStores[41]).Text, obj3);
   let tmp18 = null;
   if (undefined !== description) {
     tmp18 = null;
     if ("" !== description) {
-      obj4 = { "Null": 1, "Null": "tail", alignItems: null, style: tmp.appAboutDescription };
-      let obj16 = arg1(dependencyMap[42]);
+      obj4 = { style: tmp.appAboutDescription, variant: "text-sm/normal", color: "text-default" };
+      let obj16 = oauth2Token(stateFromStores[42]);
       obj4.children = obj16.parseBioReactWithCachedAST(description);
-      tmp18 = callback(arg1(dependencyMap[41]).Text, obj4);
+      tmp18 = callback(oauth2Token(stateFromStores[41]).Text, obj4);
     }
   }
   items9[2] = tmp18;
@@ -199,7 +204,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   let tmp23Result = null;
   if (null != stateFromStores2) {
     obj5 = { style: tmp.section };
-    const obj6 = { -9223372036854775808: true, 9223372036854775807: true };
+    const obj6 = { title: "Notifications", hasIcons: false };
     obj7 = { label: "Mute DMs" };
     let end_time;
     if (null != appDMChannelMuteConfig) {
@@ -207,12 +212,12 @@ export default function UserSettingsAuthedApp(oauth2Token) {
     }
     let formatResult;
     if (null != end_time) {
-      const intl2 = arg1(dependencyMap[18]).intl;
+      let intl2 = oauth2Token(stateFromStores[18]).intl;
       obj8 = {};
       const _Date = Date;
       const date1 = new Date(appDMChannelMuteConfig.end_time);
-      obj8.endTime = date1.toLocaleString(arg1(dependencyMap[18]).intl.currentLocale, {});
-      formatResult = intl2.format(arg1(dependencyMap[18]).t.j7h4AJ, obj8);
+      obj8.endTime = date1.toLocaleString(oauth2Token(stateFromStores[18]).intl.currentLocale, { month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" });
+      formatResult = intl2.format(oauth2Token(stateFromStores[18]).t.j7h4AJ, obj8);
     }
     obj7.subLabel = formatResult;
     obj7.value = stateFromStoresObject.muted;
@@ -222,7 +227,7 @@ export default function UserSettingsAuthedApp(oauth2Token) {
           const rootNavigationRef = oauth2Token(stateFromStores[36]).getRootNavigationRef();
           if (null != rootNavigationRef) {
             if (rootNavigationRef.isReady()) {
-              let obj = { channelId: stateFromStores2, applicationId: application.id, initialRouteName: constants4.MUTE, source: "authorized-apps-settings" };
+              let obj = { channelId: stateFromStores2, applicationId: application.id, initialRouteName: outer1_15.MUTE, source: "authorized-apps-settings" };
               rootNavigationRef.navigate("sidebar", obj);
             }
           }
@@ -233,8 +238,8 @@ export default function UserSettingsAuthedApp(oauth2Token) {
         }
       }
     };
-    obj6.children = callback(arg1(dependencyMap[44]).TableSwitchRow, obj7);
-    obj5.children = callback(arg1(dependencyMap[43]).TableRowGroup, obj6);
+    obj6.children = callback(oauth2Token(stateFromStores[44]).TableSwitchRow, obj7);
+    obj5.children = callback(oauth2Token(stateFromStores[43]).TableRowGroup, obj6);
     tmp23Result = callback(closure_5, obj5);
     const tmp23 = callback;
     const tmp24 = closure_5;
@@ -244,29 +249,29 @@ export default function UserSettingsAuthedApp(oauth2Token) {
   items10[1] = tmp23Result;
   const obj9 = { style: tmp.section };
   obj10 = {};
-  const intl3 = arg1(dependencyMap[18]).intl;
-  obj10.title = intl3.string(arg1(dependencyMap[18]).t.8pMev2);
+  let intl3 = oauth2Token(stateFromStores[18]).intl;
+  obj10.title = intl3.string(oauth2Token(stateFromStores[18]).t["8pMev2"]);
   obj10.hasIcons = false;
   const obj11 = {};
-  const intl4 = arg1(dependencyMap[18]).intl;
-  obj11.label = intl4.string(arg1(dependencyMap[18]).t.xrmhRX);
+  const intl4 = oauth2Token(stateFromStores[18]).intl;
+  obj11.label = intl4.string(oauth2Token(stateFromStores[18]).t.xrmhRX);
   obj11.onPress = function handleClickPermissions() {
     let obj = application(stateFromStores[33]);
-    obj.setSection(constants.AUTHORIZED_APP_PERMISSIONS);
+    obj.setSection(outer1_12.AUTHORIZED_APP_PERMISSIONS);
     let obj1 = oauth2Token(stateFromStores[34]);
-    obj = { destinationPane: constants.AUTHORIZED_APP_PERMISSIONS, source: obj, applicationId: application.id };
-    obj = { page: constants3.USER_SETTINGS };
+    obj = { destinationPane: outer1_12.AUTHORIZED_APP_PERMISSIONS, source: obj, applicationId: application.id };
+    obj = { page: outer1_14.USER_SETTINGS };
     const result = obj1.trackUserSettingsPaneViewed(obj);
     obj1 = { oauth2Token };
-    navigation.navigate(constants.AUTHORIZED_APP_PERMISSIONS, obj1);
+    navigation.navigate(outer1_12.AUTHORIZED_APP_PERMISSIONS, obj1);
   };
   obj11.arrow = true;
-  const items11 = [callback(arg1(dependencyMap[45]).TableRow, obj11), , ];
+  const items11 = [callback(oauth2Token(stateFromStores[45]).TableRow, obj11), , ];
   let tmp39 = null != application.terms_of_service_url;
   if (tmp39) {
     const obj12 = {};
-    const intl5 = arg1(dependencyMap[18]).intl;
-    obj12.label = intl5.string(arg1(dependencyMap[18]).t.lx+Gec);
+    const intl5 = oauth2Token(stateFromStores[18]).intl;
+    obj12.label = intl5.string(oauth2Token(stateFromStores[18]).t["lx+Gec"]);
     obj12.onPress = function handleClickToS() {
       if (null != application.terms_of_service_url) {
         let obj = oauth2Token(stateFromStores[35]);
@@ -275,14 +280,14 @@ export default function UserSettingsAuthedApp(oauth2Token) {
       }
     };
     obj12.arrow = true;
-    tmp39 = callback(arg1(dependencyMap[45]).TableRow, obj12);
+    tmp39 = callback(oauth2Token(stateFromStores[45]).TableRow, obj12);
   }
   items11[1] = tmp39;
   let tmp43 = null != application.privacy_policy_url;
   if (tmp43) {
     const obj13 = {};
-    const intl6 = arg1(dependencyMap[18]).intl;
-    obj13.label = intl6.string(arg1(dependencyMap[18]).t.okSwq9);
+    const intl6 = oauth2Token(stateFromStores[18]).intl;
+    obj13.label = intl6.string(oauth2Token(stateFromStores[18]).t.okSwq9);
     obj13.onPress = function handleClickPrivacyPolicy() {
       if (null != application.privacy_policy_url) {
         let obj = oauth2Token(stateFromStores[35]);
@@ -291,27 +296,27 @@ export default function UserSettingsAuthedApp(oauth2Token) {
       }
     };
     obj13.arrow = true;
-    tmp43 = callback(arg1(dependencyMap[45]).TableRow, obj13);
+    tmp43 = callback(oauth2Token(stateFromStores[45]).TableRow, obj13);
   }
   items11[2] = tmp43;
   obj10.children = items11;
-  obj9.children = closure_18(arg1(dependencyMap[43]).TableRowGroup, obj10);
+  obj9.children = closure_18(oauth2Token(stateFromStores[43]).TableRowGroup, obj10);
   items10[2] = callback(closure_5, obj9);
   const obj14 = { style: tmp.section };
   const obj15 = {};
-  const intl7 = arg1(dependencyMap[18]).intl;
-  obj15.title = intl7.string(arg1(dependencyMap[18]).t.gAHBA7);
+  const intl7 = oauth2Token(stateFromStores[18]).intl;
+  obj15.title = intl7.string(oauth2Token(stateFromStores[18]).t.gAHBA7);
   obj15.hasIcons = false;
   obj16 = {};
-  const intl8 = arg1(dependencyMap[18]).intl;
-  obj16.label = intl8.string(arg1(dependencyMap[18]).t.xUqheM);
+  const intl8 = oauth2Token(stateFromStores[18]).intl;
+  obj16.label = intl8.string(oauth2Token(stateFromStores[18]).t.xUqheM);
   obj16.variant = "danger";
   obj16.onPress = callback;
   obj16.arrow = true;
-  obj15.children = callback(arg1(dependencyMap[45]).TableRow, obj16);
-  obj14.children = callback(arg1(dependencyMap[43]).TableRowGroup, obj15);
+  obj15.children = callback(oauth2Token(stateFromStores[45]).TableRow, obj16);
+  obj14.children = callback(oauth2Token(stateFromStores[43]).TableRowGroup, obj15);
   items10[3] = callback(closure_5, obj14);
-  items10[4] = () => {
+  items10[4] = (() => {
     let id;
     if (null != application) {
       const bot = application.bot;
@@ -319,18 +324,17 @@ export default function UserSettingsAuthedApp(oauth2Token) {
         id = bot.id;
       }
     }
-    const oauth2Token = id;
     if (null != id) {
       let obj = {};
       const intl = oauth2Token(stateFromStores[18]).intl;
-      obj.title = intl.string(oauth2Token(stateFromStores[18]).t.8msQQO);
+      obj.title = intl.string(oauth2Token(stateFromStores[18]).t["8msQQO"]);
       obj.hasIcons = false;
       if (closure_4) {
         obj = {};
         const intl3 = oauth2Token(stateFromStores[18]).intl;
         obj.label = intl3.string(oauth2Token(stateFromStores[18]).t.XyHpKH);
         obj.onPress = function onPress() {
-          return callback2(id);
+          return outer1_6(id);
         };
         obj.arrow = true;
       } else {
@@ -339,14 +343,14 @@ export default function UserSettingsAuthedApp(oauth2Token) {
         obj.label = intl2.string(oauth2Token(stateFromStores[18]).t.l4Emac);
         obj.variant = "danger";
         obj.onPress = function onPress() {
-          return callback(id);
+          return outer1_5(id);
         };
         obj.arrow = true;
       }
-      obj.children = closure_17(oauth2Token(stateFromStores[45]).TableRow, obj);
-      return closure_17(oauth2Token(stateFromStores[43]).TableRowGroup, obj);
+      obj.children = outer1_17(oauth2Token(stateFromStores[45]).TableRow, obj);
+      return outer1_17(oauth2Token(stateFromStores[43]).TableRowGroup, obj);
     }
-  }();
+  })();
   if (shouldWarnAuthorizedAppTwoWay) {
     const obj17 = { application };
     shouldWarnAuthorizedAppTwoWay = callback(AuthorizedAppTwoWay, obj17);

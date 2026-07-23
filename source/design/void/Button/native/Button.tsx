@@ -1,9 +1,32 @@
 // Module ID: 1276
-// Function ID: 14390
+// Function ID: 14391
 // Name: getButtonColorsToTextStyles
-// Dependencies: []
+// Dependencies: [31, 27, 653, 1277, 33, 4130, 689, 3974, 4973, 477, 11692, 7533, 3976, 5164, 4543, 2]
 
 // Module 1276 (getButtonColorsToTextStyles)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { getThemedRippleConfig } from "semanticColor";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+
+let closure_10;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getButtonColorsToTextStyles(textBrand) {
   return { [closure_13.BRAND]: textBrand.textBrand, [closure_13.RED]: textBrand.textRed, [closure_13.GREEN]: textBrand.textGreen, [closure_13.PRIMARY]: textBrand.textPrimary, [closure_13.TRANSPARENT]: textBrand.textTransparent, [closure_13.GREY]: textBrand.textGrey, [closure_13.LIGHTGREY]: textBrand.textLightgrey, [closure_13.WHITE]: textBrand.textWhite, [closure_13.LINK]: textBrand.textLink };
 }
@@ -54,7 +77,7 @@ function getButtonStyles(shrink, button) {
       const _HermesInternal = HermesInternal;
       combined = "" + color + "Dark";
     }
-    const obj = button(dependencyMap[9]);
+    obj = require(477) /* set */;
   }
   const items = [button.button, , , , , , ];
   let buttonShrink = null;
@@ -62,12 +85,12 @@ function getButtonStyles(shrink, button) {
     buttonShrink = button.buttonShrink;
   }
   items[1] = buttonShrink;
-  items[2] = button(dependencyMap[10]).getClass(button, "button", combined, disabled ? closure_14.DISABLED : closure_14.DEFAULT);
-  const obj2 = button(dependencyMap[10]);
+  items[2] = require(11692) /* getClass */.getClass(button, "button", combined, disabled ? closure_14.DISABLED : closure_14.DEFAULT);
+  const obj2 = require(11692) /* getClass */;
   const tmp2 = disabled ? closure_14.DISABLED : closure_14.DEFAULT;
-  items[3] = button(dependencyMap[10]).getClass(button, "button", size);
-  const obj3 = button(dependencyMap[10]);
-  items[4] = button(dependencyMap[10]).getClass(button, "button", look);
+  items[3] = require(11692) /* getClass */.getClass(button, "button", size);
+  const obj3 = require(11692) /* getClass */;
+  items[4] = require(11692) /* getClass */.getClass(button, "button", look);
   let faded;
   if (!flag3) {
     if (!obj5.isAndroid()) {
@@ -75,7 +98,7 @@ function getButtonStyles(shrink, button) {
         faded = button.faded;
       }
     }
-    const obj5 = button(dependencyMap[9]);
+    obj5 = require(477) /* set */;
   }
   items[5] = faded;
   items[6] = shrink.style;
@@ -87,17 +110,17 @@ class ButtonText {
     tmp = closure_11();
     if ("function" !== typeof children) {
       tmp6 = jsx;
-      tmp7 = importDefault;
-      tmp8 = dependencyMap;
+      tmp7 = closure_1;
+      tmp8 = closure_2;
       num = 11;
-      obj = { "Bool(true)": "\u{1F4A0}", "Bool(true)": 6 };
+      obj = { maxFontSizeMultiplier: 2, numberOfLines: 1 };
       tmp10 = getTextStyles;
       obj1 = {};
       obj1.color = color;
       obj1.look = look;
       obj1.size = size;
       obj1.disabled = disabled;
-      tmp9 = importDefault(dependencyMap[11]);
+      tmp9 = require("module_7533");
       items = [, ];
       items[0] = getTextStyles(obj1, tmp);
       items[1] = style;
@@ -158,78 +181,67 @@ class Button {
   constructor(arg0) {
     FILLED = global.look;
     if (FILLED === undefined) {
-      tmp = Object;
-      FILLED = Object.FILLED;
+      tmp = darkenOnPress;
+      FILLED = darkenOnPress.FILLED;
     }
-    arg1 = FILLED;
     BRAND = global.color;
     if (BRAND === undefined) {
-      tmp2 = closure_13;
-      BRAND = closure_13.BRAND;
+      tmp2 = foregroundRipple;
+      BRAND = foregroundRipple.BRAND;
     }
-    importDefault = BRAND;
     MEDIUM = global.size;
     if (MEDIUM === undefined) {
       tmp3 = closure_15;
       MEDIUM = closure_15.MEDIUM;
     }
-    dependencyMap = MEDIUM;
     text = global.text;
-    importAll = text;
+    result = text;
     flag = global.shrink;
     if (flag === undefined) {
       flag = false;
     }
-    closure_4 = flag;
+    c4 = flag;
     flag2 = global.disabled;
     if (flag2 === undefined) {
       flag2 = false;
     }
-    closure_5 = flag2;
+    c5 = flag2;
     flag3 = global.loading;
     if (flag3 === undefined) {
       flag3 = false;
     }
-    closure_6 = flag3;
+    c6 = flag3;
     WHITE = global.loadingColorDark;
     if (WHITE === undefined) {
-      tmp4 = importDefault;
-      tmp5 = dependencyMap;
+      tmp4 = BRAND;
+      tmp5 = MEDIUM;
       num = 6;
-      WHITE = importDefault(dependencyMap[6]).unsafe_rawColors.WHITE;
+      WHITE = require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE;
     }
-    getThemedRippleConfig = WHITE;
     PRIMARY_500 = global.loadingColorLight;
     if (PRIMARY_500 === undefined) {
-      tmp6 = importDefault;
-      tmp7 = dependencyMap;
+      tmp6 = BRAND;
+      tmp7 = MEDIUM;
       num2 = 6;
-      PRIMARY_500 = importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500;
+      PRIMARY_500 = require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500;
     }
-    jsx = PRIMARY_500;
     textStyle = global.textStyle;
-    Fragment = textStyle;
     style = global.style;
-    jsxs = style;
     str = global.accessibilityRole;
     if (str === undefined) {
       str = "button";
     }
     ({ accessibilityLabel, accessibilityHint, accessibilityState } = global);
     ({ accessibilityActions, onAccessibilityAction, darkenOnPress } = global);
-    Object = darkenOnPress;
     ({ renderIcon, renderRightIcon, renderShine, renderLinearGradient, onPress, onPressIn, onPressOut, onTouchStart, foregroundRipple } = global);
-    closure_13 = foregroundRipple;
     cornerRadius = global.cornerRadius;
-    closure_14 = cornerRadius;
     closure_15 = undefined;
-    getButtonColorsToTextStyles = undefined;
+    theme = undefined;
     ({ accessibilityValue, testID, onTouchEnd, onLongPress } = global);
     tmp8 = accessibilityState();
     closure_15 = tmp8;
-    obj = arg1(dependencyMap[12]);
+    obj = require("AccessibilityAnnouncer");
     theme = obj.useThemeContext().theme;
-    getButtonColorsToTextStyles = theme;
     items = [, , , , , , , , , ];
     items[0] = BRAND;
     items[1] = flag2;
@@ -244,15 +256,15 @@ class Button {
     items1 = [, ];
     items1[0] = flag2;
     items1[1] = accessibilityState;
-    memo = importAll.useMemo(() => {
+    memo = result.useMemo(() => {
       if (flag3) {
         let obj = { color: FILLED(MEDIUM[12]).isThemeDark(theme) ? WHITE : PRIMARY_500 };
         tmp(flag, obj);
         const obj3 = FILLED(MEDIUM[12]);
         const tmp9 = flag;
       } else {
-        obj = { color: BRAND, look: FILLED, size: MEDIUM, disabled: flag2, style: textStyle, children: text };
-        return tmp(closure_21, obj);
+        obj = { color: BRAND, look: FILLED, size: MEDIUM, disabled: flag2, style: textStyle, children: result };
+        return tmp(outer1_21, obj);
       }
     }, items);
     items2 = [, , , , , , , ];
@@ -264,7 +276,7 @@ class Button {
     items2[5] = flag;
     items2[6] = style;
     items2[7] = tmp8;
-    memo1 = importAll.useMemo(() => {
+    memo1 = result.useMemo(() => {
       const obj = {};
       const merged = Object.assign(accessibilityState);
       obj["disabled"] = flag2;
@@ -273,8 +285,8 @@ class Button {
     items3 = [, ];
     items3[0] = foregroundRipple;
     items3[1] = cornerRadius;
-    callback = importAll.useCallback((pressed) => callback({ color: BRAND, size: MEDIUM, disabled: flag2, look: FILLED, shrink: flag, pressed: pressed.pressed, darkenOnPress, style }, tmp8), items2);
-    memo2 = importAll.useMemo(() => {
+    callback = result.useCallback((pressed) => outer1_20({ color: BRAND, size: MEDIUM, disabled: flag2, look: FILLED, shrink: flag, pressed: pressed.pressed, darkenOnPress, style }, c15), items2);
+    memo2 = result.useMemo(() => {
       const obj = { foreground: foregroundRipple };
       let num = 3;
       if (null != cornerRadius) {
@@ -283,17 +295,17 @@ class Button {
       obj.cornerRadius = num;
       return WHITE(obj);
     }, items3);
-    if (importAll.useContext(arg1(dependencyMap[13]).RedesignCompatContext)) {
-      tmp13 = Object;
-      if (FILLED !== Object.LINK) {
+    if (result.useContext(require("context").RedesignCompatContext)) {
+      tmp13 = darkenOnPress;
+      if (FILLED !== darkenOnPress.LINK) {
         obj = {};
         obj.style = style;
-        tmp29 = arg1;
-        tmp30 = dependencyMap;
+        tmp29 = FILLED;
+        tmp30 = MEDIUM;
         num3 = 14;
-        tmp26 = jsx;
-        tmp27 = closure_6;
-        tmp28 = jsx;
+        tmp26 = PRIMARY_500;
+        tmp27 = c6;
+        tmp28 = PRIMARY_500;
         obj1 = {};
         obj1.text = text;
         tmp31 = getRedesignVariant;
@@ -339,7 +351,7 @@ class Button {
         }
         obj1.iconPosition = str2;
         obj1.grow = !flag;
-        obj.children = tmp28(arg1(dependencyMap[14]).Button, obj1);
+        obj.children = tmp28(require("Button").Button, obj1);
         tmp26Result = tmp26(tmp27, obj);
       }
       return tmp26Result;
@@ -359,8 +371,8 @@ class Button {
     obj2.onTouchEnd = onTouchEnd;
     obj2.onLongPress = onLongPress;
     tmp16 = flag2;
-    tmp14 = jsxs;
-    tmp15 = closure_5;
+    tmp14 = style;
+    tmp15 = c5;
     if (!flag2) {
       tmp16 = flag3;
     }
@@ -411,144 +423,129 @@ class Button {
     return;
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ ActivityIndicator: closure_4, Pressable: closure_5, View: closure_6 } = arg1(dependencyMap[1]));
-const getThemedRippleConfig = arg1(dependencyMap[3]).getThemedRippleConfig;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { button: { "Bool(false)": "REDESIGN_INPUT_CONTROL_ACTIVE_BG", "Bool(false)": "CAN", "Bool(false)": "CompanionRemoteAuth", "Bool(false)": "fireImmediately", "Bool(false)": "tryItOutBanner", "Bool(false)": "cc" }, buttonShrink: {} };
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND };
-obj.buttonBrandDefault = obj;
-const tmp3 = arg1(dependencyMap[4]);
-obj.buttonBrandDarkDefault = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_600 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_600 };
-obj.buttonRedDefault = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
-const obj2 = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
-obj.buttonRedDarkDefault = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.RED_500 };
-const obj3 = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.RED_500 };
-obj.buttonGreenDefault = { backgroundColor: importDefault(dependencyMap[6]).colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
-const obj4 = { backgroundColor: importDefault(dependencyMap[6]).colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
-obj.buttonGreenDarkDefault = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.GREEN_500 };
-const obj5 = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.GREEN_500 };
-obj.buttonGreyDarkDefault = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500 };
-const obj6 = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500 };
-obj.buttonLightgreyDefault = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500 };
-const obj7 = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500 };
-obj.buttonLightgreyDarkDefault = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500 };
+({ ActivityIndicator: closure_4, Pressable: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = { button: { flexDirection: "row", flexGrow: 1, justifyContent: "center", alignItems: "center", alignSelf: "stretch", borderRadius: 3 }, buttonShrink: { flexGrow: 0, alignSelf: "flex-start", paddingHorizontal: 10 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose.buttonBrandDefault = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.buttonBrandDarkDefault = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_600 };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_600 };
+_createForOfIteratorHelperLoose.buttonRedDefault = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+_createForOfIteratorHelperLoose.buttonRedDarkDefault = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_500 };
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_500 };
+_createForOfIteratorHelperLoose.buttonGreenDefault = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
+const obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose.buttonGreenDarkDefault = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_500 };
+let obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_500 };
+_createForOfIteratorHelperLoose.buttonGreyDarkDefault = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500 };
+const obj6 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500 };
+_createForOfIteratorHelperLoose.buttonLightgreyDefault = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500 };
+const obj7 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500 };
+_createForOfIteratorHelperLoose.buttonLightgreyDarkDefault = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500 };
 const obj9 = {};
-let obj12 = arg1(dependencyMap[7]);
-obj9.backgroundColor = obj12.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_500, 0.5);
-obj.buttonBrandDisabled = obj9;
+obj9.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500, 0.5);
+_createForOfIteratorHelperLoose.buttonBrandDisabled = obj9;
 const obj10 = {};
-let obj14 = arg1(dependencyMap[7]);
-obj10.backgroundColor = obj14.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.BRAND_600, 0.5);
-obj.buttonBrandDarkDisabled = obj10;
+obj10.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_600, 0.5);
+_createForOfIteratorHelperLoose.buttonBrandDarkDisabled = obj10;
 const obj11 = {};
-let obj16 = arg1(dependencyMap[7]);
-obj11.backgroundColor = obj16.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.RED_400, 0.5);
-obj.buttonRedDisabled = obj11;
-obj12 = {};
-let obj18 = arg1(dependencyMap[7]);
-obj12.backgroundColor = obj18.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.RED_500, 0.5);
-obj.buttonRedDarkDisabled = obj12;
+obj11.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, 0.5);
+_createForOfIteratorHelperLoose.buttonRedDisabled = obj11;
+hexToRgb = {};
+hexToRgb.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_500, 0.5);
+_createForOfIteratorHelperLoose.buttonRedDarkDisabled = hexToRgb;
 const obj13 = {};
-let obj20 = arg1(dependencyMap[7]);
-obj13.backgroundColor = obj20.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.GREEN_360, 0.5);
-obj.buttonGreenDisabled = obj13;
-obj14 = {};
-let obj22 = arg1(dependencyMap[7]);
-obj14.backgroundColor = obj22.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.GREEN_500, 0.5);
-obj.buttonGreenDarkDisabled = obj14;
+obj13.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360, 0.5);
+_createForOfIteratorHelperLoose.buttonGreenDisabled = obj13;
+hexToRgb = {};
+hexToRgb.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_500, 0.5);
+_createForOfIteratorHelperLoose.buttonGreenDarkDisabled = hexToRgb;
 const obj15 = {};
-let obj24 = arg1(dependencyMap[7]);
-obj15.backgroundColor = obj24.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500, 0.5);
-obj.buttonGreyDarkDisabled = obj15;
-obj16 = {};
-let obj26 = arg1(dependencyMap[7]);
-obj16.backgroundColor = obj26.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500, 0.5);
-obj.buttonLightgreyDisabled = obj16;
+obj15.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500, 0.5);
+_createForOfIteratorHelperLoose.buttonGreyDarkDisabled = obj15;
+hexToRgb = {};
+hexToRgb.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500, 0.5);
+_createForOfIteratorHelperLoose.buttonLightgreyDisabled = hexToRgb;
 const obj17 = {};
-let obj28 = arg1(dependencyMap[7]);
-obj17.backgroundColor = obj28.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500, 0.5);
-obj.buttonLightgreyDarkDisabled = obj17;
-obj.buttonTransparentDefault = { backgroundColor: "transparent" };
-obj.buttonTransparentDarkDefault = { backgroundColor: "transparent" };
-obj.buttonTransparentDisabled = { backgroundColor: "transparent" };
-obj.buttonTransparentDarkDisabled = { backgroundColor: "transparent" };
-obj18 = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
-obj.buttonWhiteDefault = obj18;
+obj17.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500, 0.5);
+_createForOfIteratorHelperLoose.buttonLightgreyDarkDisabled = obj17;
+_createForOfIteratorHelperLoose.buttonTransparentDefault = { backgroundColor: "transparent" };
+_createForOfIteratorHelperLoose.buttonTransparentDarkDefault = { backgroundColor: "transparent" };
+_createForOfIteratorHelperLoose.buttonTransparentDisabled = { backgroundColor: "transparent" };
+_createForOfIteratorHelperLoose.buttonTransparentDarkDisabled = { backgroundColor: "transparent" };
+hexToRgb = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.buttonWhiteDefault = hexToRgb;
 const obj19 = {};
-let obj31 = arg1(dependencyMap[7]);
-obj19.backgroundColor = obj31.hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.WHITE, 0.5);
-obj.buttonWhiteDisabled = obj19;
-obj.buttonFilled = {};
-obj.buttonLink = {};
-obj.buttonLinkDefault = {};
-obj20 = { join: "<string:1156272643>", to: "<string:41007431>", map: "<string:1090519040>", borderColor: arg1(dependencyMap[8]).BUTTON_OUTLINED_BORDER };
-obj.buttonOutlined = obj20;
-obj.buttonXsmall = { minHeight: 24 };
-obj.buttonSmall = { minHeight: 32 };
-obj.buttonMedium = { minHeight: 40 };
-obj.buttonLarge = { minHeight: 46 };
-const obj8 = { backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.PRIMARY_500 };
-obj.text = { color: importDefault(dependencyMap[6]).colors.WHITE, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD, flexShrink: 1 };
-obj.textXsmall = { fontSize: 12 };
-obj.textSmall = { fontSize: 14 };
-obj.textMedium = { fontSize: 14 };
-obj.textLarge = { fontSize: 20 };
-obj.textDisabled = { opacity: 0.6 };
-obj.textDefault = { opacity: 1 };
-obj22 = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj.textBrand = obj22;
-const obj21 = { color: importDefault(dependencyMap[6]).colors.WHITE, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD, flexShrink: 1 };
-obj.textRed = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj24 = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj.textGreen = obj24;
-const obj23 = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj.textGrey = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj26 = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj.textLightgrey = obj26;
-const obj25 = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj.textWhite = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj.textFilled = {};
-obj28 = { color: arg1(dependencyMap[8]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-obj.textOutlined = obj28;
-obj.faded = { opacity: 0.5 };
-const obj27 = { color: importDefault(dependencyMap[6]).colors.WHITE };
-obj.buttonWhiteDarkDefault = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
-const obj29 = { backgroundColor: importDefault(dependencyMap[6]).colors.WHITE };
-obj.textLink = { color: importDefault(dependencyMap[6]).colors.TEXT_LINK };
-obj31 = { backgroundColor: arg1(dependencyMap[8]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-obj.buttonPrimaryDefault = obj31;
-const obj30 = { color: importDefault(dependencyMap[6]).colors.TEXT_LINK };
-obj.buttonPrimaryDarkDefault = { backgroundColor: arg1(dependencyMap[8]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-const obj32 = { backgroundColor: arg1(dependencyMap[8]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-obj.buttonGreyDefault = { backgroundColor: arg1(dependencyMap[8]).DARK_PRIMARY_500_LIGHT_PRIMARY_430 };
-const obj33 = { backgroundColor: arg1(dependencyMap[8]).DARK_PRIMARY_500_LIGHT_PRIMARY_430 };
-obj.textPrimary = { color: arg1(dependencyMap[8]).DARK_PRIMARY_500_LIGHT_PRIMARY_100 };
-const obj34 = { color: arg1(dependencyMap[8]).DARK_PRIMARY_500_LIGHT_PRIMARY_100 };
-obj.textTransparent = { color: arg1(dependencyMap[8]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-const obj35 = { color: arg1(dependencyMap[8]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-obj.buttonPrimaryDisabled = { backgroundColor: arg1(dependencyMap[8]).BUTTON_PRIMARY_DISABLED_BACKGROUND };
-const obj36 = { backgroundColor: arg1(dependencyMap[8]).BUTTON_PRIMARY_DISABLED_BACKGROUND };
-obj.buttonPrimaryDarkDisabled = { backgroundColor: arg1(dependencyMap[8]).BUTTON_PRIMARY_DISABLED_BACKGROUND };
-const obj37 = { backgroundColor: arg1(dependencyMap[8]).BUTTON_PRIMARY_DISABLED_BACKGROUND };
-obj.buttonGreyDisabled = { backgroundColor: arg1(dependencyMap[8]).BUTTON_GREY_DISABLED_BACKGROUND };
-const styles = obj.createStyles(obj);
+obj19.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 0.5);
+_createForOfIteratorHelperLoose.buttonWhiteDisabled = obj19;
+_createForOfIteratorHelperLoose.buttonFilled = {};
+_createForOfIteratorHelperLoose.buttonLink = {};
+_createForOfIteratorHelperLoose.buttonLinkDefault = {};
+hexToRgb = { backgroundColor: "transparent", borderWidth: 1, borderStyle: "solid", borderColor: require("result").BUTTON_OUTLINED_BORDER };
+_createForOfIteratorHelperLoose.buttonOutlined = hexToRgb;
+_createForOfIteratorHelperLoose.buttonXsmall = { minHeight: 24 };
+_createForOfIteratorHelperLoose.buttonSmall = { minHeight: 32 };
+_createForOfIteratorHelperLoose.buttonMedium = { minHeight: 40 };
+_createForOfIteratorHelperLoose.buttonLarge = { minHeight: 46 };
+const obj8 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500 };
+_createForOfIteratorHelperLoose.text = { color: require("_createForOfIteratorHelperLoose").colors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, flexShrink: 1 };
+_createForOfIteratorHelperLoose.textXsmall = { fontSize: 12 };
+_createForOfIteratorHelperLoose.textSmall = { fontSize: 14 };
+_createForOfIteratorHelperLoose.textMedium = { fontSize: 14 };
+_createForOfIteratorHelperLoose.textLarge = { fontSize: 20 };
+_createForOfIteratorHelperLoose.textDisabled = { opacity: 0.6 };
+_createForOfIteratorHelperLoose.textDefault = { opacity: 1 };
+hexToRgb = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.textBrand = hexToRgb;
+const obj21 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, flexShrink: 1 };
+_createForOfIteratorHelperLoose.textRed = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+hexToRgb = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.textGreen = hexToRgb;
+const obj23 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.textGrey = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+hexToRgb = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.textLightgrey = hexToRgb;
+const obj25 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.textWhite = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.textFilled = {};
+hexToRgb = { color: require("result").DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+_createForOfIteratorHelperLoose.textOutlined = hexToRgb;
+_createForOfIteratorHelperLoose.faded = { opacity: 0.5 };
+const obj27 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.buttonWhiteDarkDefault = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+const obj29 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.textLink = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_LINK };
+hexToRgb = { backgroundColor: require("result").DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+_createForOfIteratorHelperLoose.buttonPrimaryDefault = hexToRgb;
+const obj30 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_LINK };
+_createForOfIteratorHelperLoose.buttonPrimaryDarkDefault = { backgroundColor: require("result").DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+const obj32 = { backgroundColor: require("result").DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+_createForOfIteratorHelperLoose.buttonGreyDefault = { backgroundColor: require("result").DARK_PRIMARY_500_LIGHT_PRIMARY_430 };
+const obj33 = { backgroundColor: require("result").DARK_PRIMARY_500_LIGHT_PRIMARY_430 };
+_createForOfIteratorHelperLoose.textPrimary = { color: require("result").DARK_PRIMARY_500_LIGHT_PRIMARY_100 };
+const obj34 = { color: require("result").DARK_PRIMARY_500_LIGHT_PRIMARY_100 };
+_createForOfIteratorHelperLoose.textTransparent = { color: require("result").DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+const obj35 = { color: require("result").DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+_createForOfIteratorHelperLoose.buttonPrimaryDisabled = { backgroundColor: require("result").BUTTON_PRIMARY_DISABLED_BACKGROUND };
+const obj36 = { backgroundColor: require("result").BUTTON_PRIMARY_DISABLED_BACKGROUND };
+_createForOfIteratorHelperLoose.buttonPrimaryDarkDisabled = { backgroundColor: require("result").BUTTON_PRIMARY_DISABLED_BACKGROUND };
+const obj37 = { backgroundColor: require("result").BUTTON_PRIMARY_DISABLED_BACKGROUND };
+_createForOfIteratorHelperLoose.buttonGreyDisabled = { backgroundColor: require("result").BUTTON_GREY_DISABLED_BACKGROUND };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 const obj39 = { FILLED: "filled", LINK: "link", OUTLINED: "outlined" };
 const obj40 = { BRAND: "brand", RED: "red", GREEN: "green", PRIMARY: "primary", TRANSPARENT: "transparent", GREY: "grey", LIGHTGREY: "lightgrey", WHITE: "white", LINK: "link" };
 let closure_14 = { DEFAULT: "Default", DISABLED: "Disabled" };
-const obj41 = { XSMALL: "xsmall", SMALL: "small", MEDIUM: "medium", LARGE: "large" };
+let obj41 = { XSMALL: "xsmall", SMALL: "small", MEDIUM: "medium", LARGE: "large" };
 Button.Looks = obj39;
 Button.Colors = obj40;
 Button.Sizes = obj41;
-const obj38 = { backgroundColor: arg1(dependencyMap[8]).BUTTON_GREY_DISABLED_BACKGROUND };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("design/void/Button/native/Button.tsx");
+const obj38 = { backgroundColor: require("result").BUTTON_GREY_DISABLED_BACKGROUND };
+const result = require("ME").fileFinishedImporting("design/void/Button/native/Button.tsx");
 
 export default Button;
 export const BUTTON_CORNER_RADIUS = 3;
-export const useButtonStyles = styles;
+export const useButtonStyles = _createForOfIteratorHelperLoose;
 export const ButtonLooks = obj39;
 export const ButtonColors = obj40;
 export const ButtonSizes = obj41;

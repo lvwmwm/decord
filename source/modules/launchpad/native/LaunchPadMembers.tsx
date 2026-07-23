@@ -1,26 +1,28 @@
-// Module ID: 15560
-// Function ID: 118726
-// Dependencies: []
+// Module ID: 15677
+// Function ID: 120899
+// Dependencies: [31, 27, 1348, 1906, 33, 4130, 624, 11309, 15381, 10867, 4126, 1212, 2]
 
-// Module 15560
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const jsx = arg1(dependencyMap[4]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_7 = arg1(dependencyMap[5]).createStyles({ wrapper: { minHeight: 16 }, listStyle: { flex: 0 }, emptyWrapper: { padding: 20 }, emptyText: { textAlign: "center" } });
-const obj2 = arg1(dependencyMap[5]);
-const memoResult = importAllResult.memo(function LaunchPadMembers() {
+// Module 15677
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { minHeight: 16 }, listStyle: { flex: 0 }, emptyWrapper: { padding: 20 }, emptyText: { textAlign: "center" } });
+const memoResult = require("result").memo(function LaunchPadMembers() {
   const tmp = callback();
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_5, closure_4];
+  let obj = require(624) /* defaultAreStatesEqual */;
+  const items = [closure_5, _isNativeReflectConstruct];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
+    const currentlySelectedChannelId = outer1_5.getCurrentlySelectedChannelId();
     let tmp2;
     if (null != currentlySelectedChannelId) {
       tmp2 = currentlySelectedChannelId;
     }
-    const channel = channel.getChannel(tmp2);
+    const channel = outer1_4.getChannel(tmp2);
     if (null != tmp2) {
       if (null != channel) {
         if (channel.isPrivate()) {
@@ -44,8 +46,8 @@ const memoResult = importAllResult.memo(function LaunchPadMembers() {
   if ("private" === stateFromStoresObject.type) {
     obj = { style: tmp.wrapper };
     obj = { channelId: stateFromStoresObject.channelId, listStyleOverride: tmp.listStyle, disableBottomSafeZone: true, insetEnd: 20 };
-    obj.children = jsx(importDefault(dependencyMap[7]), obj, stateFromStoresObject.channelId);
-    let tmp7 = <View {...obj} />;
+    obj.children = jsx(importDefault(11309), { channelId: stateFromStoresObject.channelId, listStyleOverride: tmp.listStyle, disableBottomSafeZone: true, insetEnd: 20 }, stateFromStoresObject.channelId);
+    let tmp7 = <View channelId={stateFromStoresObject.channelId} listStyleOverride={tmp.listStyle} disableBottomSafeZone insetEnd={20} />;
   } else if ("thread" === stateFromStoresObject.type) {
     const obj1 = { style: tmp.wrapper };
     const obj2 = {};
@@ -53,8 +55,8 @@ const memoResult = importAllResult.memo(function LaunchPadMembers() {
     obj2.listStyleOverride = tmp.listStyle;
     obj2.disableBottomSafeZone = true;
     obj2.insetEnd = 20;
-    obj1.children = jsx(importDefault(dependencyMap[8]), obj2, stateFromStoresObject.channelId);
-    tmp7 = <View {...obj1} />;
+    obj1.children = jsx(importDefault(15381), {}, stateFromStoresObject.channelId);
+    tmp7 = <View style={tmp.wrapper} />;
   } else if ("guild" === stateFromStoresObject.type) {
     const obj3 = { style: tmp.wrapper };
     const obj4 = {};
@@ -62,18 +64,18 @@ const memoResult = importAllResult.memo(function LaunchPadMembers() {
     obj4.listStyleOverride = tmp.listStyle;
     obj4.disableBottomSafeZone = true;
     obj4.insetEnd = 20;
-    obj3.children = jsx(importDefault(dependencyMap[9]), obj4, stateFromStoresObject.channelId);
-    tmp7 = <View {...obj3} />;
+    obj3.children = jsx(importDefault(10867), {}, stateFromStoresObject.channelId);
+    tmp7 = <View style={tmp.wrapper} />;
   } else {
     const obj5 = { style: tmp.emptyWrapper };
     const obj6 = { style: tmp.emptyText, variant: "text-md/semibold" };
-    const intl = arg1(dependencyMap[11]).intl;
-    obj6.children = intl.string(arg1(dependencyMap[11]).t.+7wtJq);
-    obj5.children = jsx(arg1(dependencyMap[10]).Text, obj6);
-    tmp7 = <View {...obj5} />;
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj6.children = intl.string(require(1212) /* getSystemLocale */.t["+7wtJq"]);
+    obj5.children = jsx(require(4126) /* Text */.Text, { style: tmp.emptyText, variant: "text-md/semibold" });
+    tmp7 = <View style={tmp.emptyWrapper} />;
   }
   return tmp7;
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/launchpad/native/LaunchPadMembers.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/launchpad/native/LaunchPadMembers.tsx");
 
 export default memoResult;

@@ -1,10 +1,12 @@
-// Module ID: 13210
-// Function ID: 100092
+// Module ID: 13324
+// Function ID: 102248
 // Name: resolveName
-// Dependencies: []
+// Dependencies: [27, 477, 13325, 2]
 // Exports: installSystrace
 
-// Module 13210 (resolveName)
+// Module 13324 (resolveName)
+import { Systrace } from "get ActivityIndicator";
+
 function resolveName(arg0) {
   let tmp = arg0;
   if ("string" !== typeof arg0) {
@@ -12,13 +14,11 @@ function resolveName(arg0) {
   }
   return tmp;
 }
-const Systrace = require(dependencyMap[0]).Systrace;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/systrace/native/installSystrace.tsx");
+const result = require("enforcing").fileFinishedImporting("modules/systrace/native/installSystrace.tsx");
 
 export const installSystrace = function installSystrace() {
   function getNativeModule(arg0) {
-    return getNativeModule(closure_1[2]).default;
+    return getNativeModule(outer1_1[2]).default;
   }
   if (obj.isAndroid()) {
     Systrace.isEnabled = () => {
@@ -32,7 +32,7 @@ export const installSystrace = function installSystrace() {
     Systrace.beginEvent = (arg0) => {
       const obj = getNativeModule();
       if (null != obj) {
-        obj.beginEvent(callback(arg0));
+        obj.beginEvent(outer1_3(arg0));
       }
     };
     Systrace.endEvent = () => {
@@ -45,7 +45,7 @@ export const installSystrace = function installSystrace() {
       const obj = getNativeModule();
       let beginAsyncEventResult;
       if (null != obj) {
-        beginAsyncEventResult = obj.beginAsyncEvent(callback(arg0));
+        beginAsyncEventResult = obj.beginAsyncEvent(outer1_3(arg0));
       }
       let num = 0;
       if (null != beginAsyncEventResult) {
@@ -56,13 +56,13 @@ export const installSystrace = function installSystrace() {
     Systrace.endAsyncEvent = (arg0, arg1) => {
       const obj = getNativeModule();
       if (null != obj) {
-        obj.endAsyncEvent(callback(arg0), arg1);
+        obj.endAsyncEvent(outer1_3(arg0), arg1);
       }
     };
     Systrace.counterEvent = (arg0, length) => {
       const obj = getNativeModule();
       if (null != obj) {
-        obj.counterEvent(callback(arg0), length);
+        obj.counterEvent(outer1_3(arg0), length);
       }
     };
   }

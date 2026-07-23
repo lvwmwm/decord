@@ -1,42 +1,41 @@
-// Module ID: 15663
-// Function ID: 119650
+// Module ID: 15780
+// Function ID: 121823
 // Name: VoiceControlsNuxActionSheetImporter
-// Dependencies: []
+// Dependencies: [57, 31, 4143, 10015, 4148, 33, 15781, 1934, 10014, 3991, 1334, 9642, 9643, 2]
 
-// Module 15663 (VoiceControlsNuxActionSheetImporter)
+// Module 15780 (VoiceControlsNuxActionSheetImporter)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { VoicePanelModes } from "VoicePanelModes";
+import { isActivityParticipant } from "ParticipantTypes";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function VoiceControlsNuxActionSheetImporter() {
-  return arg1(dependencyMap[7])(dependencyMap[6], dependencyMap.paths);
+  return require(1934) /* maybeLoadBundle */(15781, dependencyMap.paths);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const VoicePanelModes = arg1(dependencyMap[3]).VoicePanelModes;
-const isActivityParticipant = arg1(dependencyMap[4]).isActivityParticipant;
-const jsx = arg1(dependencyMap[5]).jsx;
 let closure_9 = { code: "function VoicePanelDismissableContentTsx1(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get;return mode.get()===VoicePanelModes.PANEL?(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id:undefined;}" };
 let closure_10 = { code: "function VoicePanelDismissableContentTsx2(manualId,previousManualId){const{runOnJS,handleFocusChange}=this.__closure;if(manualId!==previousManualId){runOnJS(handleFocusChange)(manualId);}}" };
 const memoResult = importAllResult.memo(function VoicePanelDismissibleContent() {
-  const context = importAllResult.useContext(importDefault(dependencyMap[8]));
+  const context = callback.useContext(focused(mode[8]));
   const channelId = context.channelId;
-  const arg1 = channelId;
-  const focused = context.focused;
-  const importDefault = focused;
-  const mode = context.mode;
-  const dependencyMap = mode;
-  const tmp2 = callback(importAllResult.useState(false), 2);
-  let callback = tmp2[1];
+  focused = context.focused;
+  mode = context.mode;
+  const tmp2 = callback(callback.useState(false), 2);
+  callback = tmp2[1];
   const items = [channelId];
-  callback = importAllResult.useCallback((arg0) => {
+  callback = callback.useCallback((arg0) => {
     let tmp = null != arg0;
     if (tmp) {
-      tmp = callback2(participant.getParticipant(channelId, arg0));
+      tmp = outer1_7(outer1_5.getParticipant(channelId, arg0));
     }
     callback(tmp);
   }, items);
-  let obj = arg1(dependencyMap[9]);
+  let obj = channelId(mode[9]);
   const fn = function h() {
     let tmp;
-    if (mode.get() === constants.PANEL) {
+    if (mode.get() === outer1_6.PANEL) {
       const value = focused.get();
       let id;
       if (null != value) {
@@ -56,13 +55,13 @@ const memoResult = importAllResult.memo(function VoicePanelDismissibleContent() 
       const obj = channelId(mode[9]);
     }
   };
-  obj = { runOnJS: arg1(dependencyMap[9]).runOnJS, handleFocusChange: callback };
+  obj = { runOnJS: channelId(mode[9]).runOnJS, handleFocusChange: callback };
   fn2.__closure = obj;
   fn2.__workletHash = 15579591345007;
   fn2.__initData = closure_10;
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   if (tmp2[0]) {
-    const items1 = [arg1(dependencyMap[10]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
+    const items1 = [channelId(mode[10]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
     let items2 = items1;
   } else {
     items2 = [];
@@ -75,14 +74,27 @@ const memoResult = importAllResult.memo(function VoicePanelDismissibleContent() 
       ({ visibleContent, markAsDismissed } = arg0);
       let tmp = null;
       if (visibleContent === channelId(mode[10]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX) {
-        const obj = { markAsDismissed, importer: closure_11, actionSheetKey: "VoiceControlToggleNuxActionSheet" };
-        tmp = callback3(channelId(mode[12]).DismissibleActionSheet, obj);
+        const obj = { markAsDismissed, importer: outer1_11, actionSheetKey: "VoiceControlToggleNuxActionSheet" };
+        tmp = outer1_8(channelId(mode[12]).DismissibleActionSheet, obj);
       }
       return tmp;
     }
   };
-  return jsx(importDefault(dependencyMap[11]), obj1);
+  return jsx(focused(mode[11]), {
+    contentTypes: items2,
+    children(arg0) {
+      let markAsDismissed;
+      let visibleContent;
+      ({ visibleContent, markAsDismissed } = arg0);
+      let tmp = null;
+      if (visibleContent === channelId(mode[10]).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX) {
+        const obj = { markAsDismissed, importer: outer1_11, actionSheetKey: "VoiceControlToggleNuxActionSheet" };
+        tmp = outer1_8(channelId(mode[12]).DismissibleActionSheet, obj);
+      }
+      return tmp;
+    }
+  });
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelDismissableContent.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelDismissableContent.tsx");
 
 export default memoResult;

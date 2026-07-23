@@ -1,15 +1,17 @@
-// Module ID: 14639
-// Function ID: 110390
+// Module ID: 14754
+// Function ID: 112554
 // Name: usePasswordRegistrationStep
-// Dependencies: []
+// Dependencies: [5, 57, 31, 14731, 9209, 14755, 1212, 14742, 2]
 // Exports: usePasswordRegistrationStep
 
-// Module 14639 (usePasswordRegistrationStep)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const useRegistrationUIStore = arg1(dependencyMap[3]).useRegistrationUIStore;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/auth/native/components/utils/usePasswordRegistrationStep.tsx");
+// Module 14754 (usePasswordRegistrationStep)
+import PasswordScore from "PasswordScore";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { useRegistrationUIStore } from "useRegistrationUIStore";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/auth/native/components/utils/usePasswordRegistrationStep.tsx");
 
 export const usePasswordRegistrationStep = function usePasswordRegistrationStep() {
   const password = useRegistrationUIStore((registrationOptions) => registrationOptions.registrationOptions).password;
@@ -19,13 +21,11 @@ export const usePasswordRegistrationStep = function usePasswordRegistrationStep(
   }
   const tmp3 = callback2(React.useState(str), 2);
   const first = tmp3[0];
-  const arg1 = first;
-  const tmp6 = importDefault(dependencyMap[4])("password", useRegistrationUIStore((errors) => errors.errors));
-  const importDefault = tmp6;
-  let obj = arg1(dependencyMap[5]);
+  const tmp6 = importDefault(passwordValid[4])("password", useRegistrationUIStore((errors) => errors.errors));
+  importDefault = tmp6;
+  let obj = first(passwordValid[5]);
   const passwordScore = obj.usePasswordScore(first);
-  const passwordValid = passwordScore.passwordValid;
-  const dependencyMap = passwordValid;
+  passwordValid = passwordScore.passwordValid;
   const items = [first, tmp6, passwordValid];
   // CreateGeneratorClosureLongIndex (0x67)
   const memo = React.useMemo(() => {
@@ -36,7 +36,7 @@ export const usePasswordRegistrationStep = function usePasswordRegistrationStep(
     if (!tmp) {
       let tmp4 = first.length < 8;
       if (!tmp4) {
-        tmp4 = null != tmp6;
+        tmp4 = null != closure_1;
       }
       if (!tmp4) {
         tmp4 = false === passwordValid;

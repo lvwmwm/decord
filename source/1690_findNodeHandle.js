@@ -1,8 +1,8 @@
 // Module ID: 1690
-// Function ID: 18711
+// Function ID: 18712
 // Name: findNodeHandle
-// Dependencies: []
+// Dependencies: [27]
 
 // Module 1690 (findNodeHandle)
 
-export const findNodeHandle = require(dependencyMap[0]).findNodeHandle;
+export const findNodeHandle = require("get ActivityIndicator").findNodeHandle;

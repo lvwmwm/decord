@@ -1,7 +1,7 @@
 // Module ID: 579
 // Function ID: 6966
-// Dependencies: []
+// Dependencies: [580]
 
 // Module 579
 
-export default require(dependencyMap[0]).Symbol;
+export { Symbol as default } from "module_580";

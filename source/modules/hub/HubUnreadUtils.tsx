@@ -1,30 +1,30 @@
-// Module ID: 14921
-// Function ID: 112374
+// Module ID: 15037
+// Function ID: 114542
 // Name: useHubUnreadCount
-// Dependencies: [31, 27, 14929, 1838, 33, 689]
+// Dependencies: [10042, 4142, 566, 21, 10034, 2]
 // Exports: useHubUnreadCount
 
-// Module 14921 (useHubUnreadCount)
-import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15037 (useHubUnreadCount)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
 
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/hub/HubUnreadUtils.tsx");
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/hub/HubUnreadUtils.tsx");
 
 export const useHubUnreadCount = function useHubUnreadCount(arg0) {
-  const arg1 = arg0;
-  const items = [module_31, getActivityIndicator];
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct, closure_4];
   const items1 = [arg0];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    if (null == arg0) {
+  return _require(566).useStateFromStores(items, () => {
+    if (null == lib) {
       return 0;
     } else {
-      const ackMessageIdResult = getActivityIndicator.ackMessageId(arg0.id);
-      const arg0 = ackMessageIdResult;
+      const ackMessageIdResult = outer1_4.ackMessageId(lib.id);
+      lib = ackMessageIdResult;
       if (null == ackMessageIdResult) {
         return 0;
       } else {
-        let directoryEntries = directoryEntries.getDirectoryEntries(arg0.id);
+        let directoryEntries = outer1_3.getDirectoryEntries(lib.id);
         if (null == directoryEntries) {
           directoryEntries = {};
         }
@@ -33,9 +33,9 @@ export const useHubUnreadCount = function useHubUnreadCount(arg0) {
         const found = values.filter((createdAt) => {
           const time = new Date(createdAt.createdAt).getTime();
           const date = new Date(createdAt.createdAt);
-          return time > callback(closure_2[3]).extractTimestamp(ackMessageIdResult);
+          return time > outer2_1(outer2_2[3]).extractTimestamp(closure_0);
         });
-        return Math.min(arg0(closure_2[4]).MAX_CATEGORY_SERVERS, found.length);
+        return Math.min(lib(outer1_2[4]).MAX_CATEGORY_SERVERS, found.length);
       }
     }
   }, items1);

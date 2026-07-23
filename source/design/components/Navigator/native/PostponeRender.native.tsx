@@ -1,23 +1,25 @@
-// Module ID: 5580
-// Function ID: 47381
+// Module ID: 5583
+// Function ID: 47404
 // Name: PostponeRender
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4559, 5584, 5585, 5587, 2]
 // Exports: PostponeRender
 
-// Module 5580 (PostponeRender)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-const View = tmp2.View;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = {};
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
-obj["backgroundColor"] = importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER;
-obj.view = obj;
-let closure_7 = obj.createStyles(obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/components/Navigator/native/PostponeRender.native.tsx");
+// Module 5583 (PostponeRender)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const View = get_ActivityIndicator.View;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
+_createForOfIteratorHelperLoose["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER;
+_createForOfIteratorHelperLoose.view = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Navigator/native/PostponeRender.native.tsx");
 
 export const PostponeRender = function PostponeRender(children) {
   let ignoreKeyboard;
@@ -27,16 +29,15 @@ export const PostponeRender = function PostponeRender(children) {
   ({ postpone, ignoreKeyboard, viewStyle } = children);
   const tmp2 = callback(React.useState(postpone), 2);
   const first = tmp2[0];
-  const arg1 = first;
   const importDefault = tmp2[1];
-  let closure_2 = React.useRef(undefined);
-  importDefault(closure_2[6])(() => {
+  const dependencyMap = React.useRef(undefined);
+  importDefault(4559)(() => {
     if (first) {
-      closure_2.current = first(closure_2[7]).runAfterInteractions(() => {
-        callback(false);
+      table.current = first(table[7]).runAfterInteractions(() => {
+        outer1_1(false);
       });
       return () => {
-        const current = ref.current;
+        const current = outer1_2.current;
         if (null != current) {
           current.cancel();
         }
@@ -44,15 +45,15 @@ export const PostponeRender = function PostponeRender(children) {
     }
   });
   if (first) {
-    children = jsx(arg1(closure_2[8]).SceneLoadingIndicator, {});
+    children = jsx(first(5585).SceneLoadingIndicator, {});
   }
   if (ignoreKeyboard) {
     let tmp10 = View;
   } else {
-    tmp10 = importDefault(closure_2[9]);
+    tmp10 = importDefault(5587);
   }
   const obj = { style: items };
-  const items = [callback2().view, viewStyle];
+  items = [_createForOfIteratorHelperLoose().view, viewStyle];
   obj.children = children;
-  return <tmp10 {...obj} />;
+  return <tmp10 style={items} />;
 };

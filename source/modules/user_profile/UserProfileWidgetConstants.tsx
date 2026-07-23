@@ -1,32 +1,34 @@
-// Module ID: 6857
-// Function ID: 54276
+// Module ID: 6862
+// Function ID: 54308
 // Name: items
-// Dependencies: []
+// Dependencies: [4167, 6857, 1212, 2]
 
-// Module 6857 (items)
-let closure_2 = importDefault(dependencyMap[0]);
-const items = [arg1(dependencyMap[1]).WidgetType.PERSONAL, arg1(dependencyMap[1]).WidgetType.APPLICATION, arg1(dependencyMap[1]).WidgetType.FAVORITE_GAMES, arg1(dependencyMap[1]).WidgetType.PLAYED_GAMES, arg1(dependencyMap[1]).WidgetType.CURRENT_GAMES, arg1(dependencyMap[1]).WidgetType.WANT_TO_PLAY_GAMES];
-const items1 = [arg1(dependencyMap[1]).WidgetType.FAVORITE_GAMES];
-const items2 = [arg1(dependencyMap[1]).WidgetType.CURRENT_GAMES, arg1(dependencyMap[1]).WidgetType.FAVORITE_GAMES];
+// Module 6862 (items)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const items = [require("WidgetType").WidgetType.PERSONAL, require("WidgetType").WidgetType.APPLICATION, require("WidgetType").WidgetType.FAVORITE_GAMES, require("WidgetType").WidgetType.PLAYED_GAMES, require("WidgetType").WidgetType.CURRENT_GAMES, require("WidgetType").WidgetType.WANT_TO_PLAY_GAMES];
+const items1 = [require("WidgetType").WidgetType.FAVORITE_GAMES];
+const items2 = [require("WidgetType").WidgetType.CURRENT_GAMES, require("WidgetType").WidgetType.FAVORITE_GAMES];
 const obj = {
-  [arg1(dependencyMap[1]).WidgetType.FAVORITE_GAMES]: () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.sUQar8);
+  [arg1(6857).WidgetType.FAVORITE_GAMES]: () => {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.sUQar8);
   },
-  [arg1(dependencyMap[1]).WidgetType.CURRENT_GAMES]: () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.SqNnus);
+  [arg1(6857).WidgetType.CURRENT_GAMES]: () => {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.SqNnus);
   },
-  [arg1(dependencyMap[1]).WidgetType.WANT_TO_PLAY_GAMES]: () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.bWSQwW);
+  [arg1(6857).WidgetType.WANT_TO_PLAY_GAMES]: () => {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.bWSQwW);
   },
-  [arg1(dependencyMap[1]).WidgetType.PLAYED_GAMES]: () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.scOKET);
+  [arg1(6857).WidgetType.PLAYED_GAMES]: () => {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.scOKET);
   },
-  [arg1(dependencyMap[1]).WidgetType.APPLICATION]: (applicationId) => {
-    const application = application.getApplication(applicationId.applicationId);
+  [arg1(6857).WidgetType.APPLICATION]: (applicationId) => {
+    application = application.getApplication(applicationId.applicationId);
     let name;
     if (null != application) {
       name = application.name;
@@ -37,12 +39,12 @@ const obj = {
     }
     return str;
   },
-  [arg1(dependencyMap[1]).WidgetType.PERSONAL]: () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.AVkYMx);
+  [arg1(6857).WidgetType.PERSONAL]: () => {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.AVkYMx);
   }
 };
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/user_profile/UserProfileWidgetConstants.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_profile/UserProfileWidgetConstants.tsx");
 
 export const WIDGET_SORT_ORDER = items;
 export const WIDGET_TITLES_BY_TYPE = obj;

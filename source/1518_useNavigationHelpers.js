@@ -1,27 +1,25 @@
 // Module ID: 1518
-// Function ID: 17425
+// Function ID: 17426
 // Name: useNavigationHelpers
-// Dependencies: []
+// Dependencies: [31, 1460, 1481, 1484, 1461]
 // Exports: default
 
 // Module 1518 (useNavigationHelpers)
-let closure_3 = importAll(dependencyMap[0]);
-const PrivateValueStore = arg1(dependencyMap[1]).PrivateValueStore;
+import result from "result";
+import { PrivateValueStore } from "PrivateValueStore";
+
+const require = arg1;
 
 export default function useNavigationHelpers(id) {
   id = id.id;
-  const arg1 = id;
   const onAction = id.onAction;
-  const importDefault = onAction;
   const getState = id.getState;
-  const dependencyMap = getState;
   const emitter = id.emitter;
-  const React = emitter;
   const router = id.router;
-  const context = React.useContext(importDefault(dependencyMap[2]));
-  const context1 = React.useContext(importDefault(dependencyMap[3]));
+  const context = emitter.useContext(onAction(getState[2]));
+  const context1 = emitter.useContext(onAction(getState[3]));
   const items = [id, emitter.emit, getState, onAction, context, context1, router];
-  return React.useMemo(() => {
+  return emitter.useMemo(() => {
     function dispatch(arg0) {
       let tmp = arg0;
       if ("function" === typeof arg0) {
@@ -29,20 +27,18 @@ export default function useNavigationHelpers(id) {
       }
       let tmp3 = merged(tmp);
       if (!tmp3) {
-        tmp3 = null == callback;
+        tmp3 = null == outer1_5;
       }
       if (!tmp3) {
-        callback(tmp);
+        outer1_5(tmp);
       }
     }
-    const id = dispatch;
     const merged = Object.assign({}, router.actionCreators, id(getState[4]).CommonActions);
-    const onAction = merged;
     const keys = Object.keys(merged);
     const reduced = keys.reduce((arg0, arg1) => {
-      const dispatch = arg1;
+      let closure_0 = arg1;
       arg0[arg1] = () => {
-        arg1(closure_1[closure_0](...arguments));
+        callback(outer1_1[callback](...arguments));
       };
       return arg0;
     }, {});
@@ -55,12 +51,12 @@ export default function useNavigationHelpers(id) {
     obj.isFocused = fn;
     obj.canGoBack = function canGoBack() {
       const tmp = merged1();
-      const CommonActions = dispatch(merged1[4]).CommonActions;
-      let flag = null !== stateForAction.getStateForAction(tmp, CommonActions.goBack(), { routeNames: tmp.routeNames, routeParamList: {}, routeGetIdList: {} });
+      const CommonActions = id(getState[4]).CommonActions;
+      let flag = null !== outer1_4.getStateForAction(tmp, CommonActions.goBack(), { routeNames: tmp.routeNames, routeParamList: {}, routeGetIdList: {} });
       if (!flag) {
         let canGoBackResult;
-        if (null != closure_6) {
-          canGoBackResult = closure_6.canGoBack();
+        if (null != outer1_6) {
+          canGoBackResult = outer1_6.canGoBack();
         }
         flag = canGoBackResult;
       }
@@ -92,12 +88,11 @@ export default function useNavigationHelpers(id) {
         }
         return tmp2;
       } else {
-        return closure_6;
+        return outer1_6;
       }
     };
-    obj.getState = getState;
-    const merged1 = Object.assign({}, context1, reduced, obj);
-    const getState = merged1;
+    obj.getState = merged1;
+    merged1 = Object.assign({}, context1, reduced, obj);
     return merged1;
   }, items);
 };

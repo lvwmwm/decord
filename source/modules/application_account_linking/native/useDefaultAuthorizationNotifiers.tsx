@@ -1,19 +1,21 @@
-// Module ID: 14968
-// Function ID: 112614
+// Module ID: 15084
+// Function ID: 114782
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: []
+// Dependencies: [31, 6651, 653, 566, 4096, 8284, 3831, 1212, 2812, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 14968 (useDefaultAuthorizationNotifiers)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const AppStates = arg1(dependencyMap[2]).AppStates;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/application_account_linking/native/useDefaultAuthorizationNotifiers.tsx");
+// Module 15084 (useDefaultAuthorizationNotifiers)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AppStates } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/application_account_linking/native/useDefaultAuthorizationNotifiers.tsx");
 
 export const useDefaultAuthorizationNotifiers = function useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked, value) {
   let obj = value;
-  hasAlreadyLinked = startAuthorization;
-  const importDefault = hasAlreadyLinked;
+  const _require = startAuthorization;
+  let closure_1 = hasAlreadyLinked;
   if (value === undefined) {
     obj = {};
   }
@@ -21,41 +23,39 @@ export const useDefaultAuthorizationNotifiers = function useDefaultAuthorization
   if (flag === undefined) {
     flag = true;
   }
-  const dependencyMap = flag;
   let React;
-  let closure_4;
-  let AppStates;
+  let c4;
+  let previousWhen;
   React = React.useRef(false);
-  const items = [closure_4];
-  const stateFromStores = hasAlreadyLinked(dependencyMap[3]).useStateFromStores(items, () => tmp4.getState() === previousWhen.ACTIVE);
-  const obj2 = hasAlreadyLinked(dependencyMap[3]);
+  const items = [c4];
+  const stateFromStores = _require(flag[3]).useStateFromStores(items, () => _undefined.getState() === previousWhen.ACTIVE);
+  const obj2 = _require(flag[3]);
   const items1 = [startAuthorization];
-  const isInAppBrowserOpen = hasAlreadyLinked(dependencyMap[4]).useIsInAppBrowserOpen();
+  const isInAppBrowserOpen = _require(flag[4]).useIsInAppBrowserOpen();
   let tmp4 = stateFromStores;
   const callback = React.useCallback((arg0) => {
-    closure_3.current = true;
-    return arg0(arg0);
+    result.current = true;
+    return startAuthorization(arg0);
   }, items1);
   if (stateFromStores) {
     tmp4 = !isInAppBrowserOpen;
   }
-  closure_4 = tmp4;
-  const obj3 = hasAlreadyLinked(dependencyMap[4]);
+  c4 = tmp4;
+  const obj3 = _require(flag[4]);
   obj = { value: hasAlreadyLinked, shouldUpdate: tmp4 };
-  const previousWhen = hasAlreadyLinked(dependencyMap[5]).usePreviousWhen(obj);
-  AppStates = previousWhen;
+  previousWhen = _require(flag[5]).usePreviousWhen(obj);
   const items2 = [hasAlreadyLinked, previousWhen, flag, tmp4];
   const effect = React.useEffect(() => {
     if (ref.current) {
       if (false === previousWhen) {
-        if (true === arg1) {
-          if (tmp4) {
+        if (true === hasAlreadyLinked) {
+          if (c4) {
             ref.current = false;
             if (flag) {
-              let obj = arg1(flag[6]);
+              let obj = hasAlreadyLinked(flag[6]);
               obj = {};
-              const intl = arg0(flag[7]).intl;
-              obj.content = intl.string(arg1(flag[8]).uG6teD);
+              const intl = startAuthorization(flag[7]).intl;
+              obj.content = intl.string(hasAlreadyLinked(flag[8]).uG6teD);
               obj.key = "account-linked-toast";
               obj.open(obj);
             }

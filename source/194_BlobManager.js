@@ -1,24 +1,25 @@
 // Module ID: 194
 // Function ID: 2804
 // Name: BlobManager
-// Dependencies: []
+// Dependencies: [6, 7, 44, 195, 197, 198]
 
 // Module 194 (BlobManager)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class BlobManager {
     constructor() {
-      tmp = closure_4(this, BlobManager);
+      tmp = outer1_4(this, BlobManager);
       return;
     }
   }
-  const global = BlobManager;
   let obj = {
     key: "createFromParts",
     value: function createFromParts(arr, type) {
-      callback2(closure_3[2])(callback2(closure_3[3]), "NativeBlobModule is available.");
-      const tmp3 = function uuidv4() {
+      outer1_2(outer1_3[2])(outer1_2(outer1_3[3]), "NativeBlobModule is available.");
+      let tmp3 = (function uuidv4() {
         return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (arg0) => {
           const tmp = 16 * Math.random() | 0;
           let str = tmp;
@@ -27,13 +28,13 @@ const tmp2 = () => {
           }
           return str.toString(16);
         });
-      }();
+      })();
       const mapped = arr.map((data) => {
         if (!(data instanceof ArrayBuffer)) {
           const _ArrayBuffer = ArrayBuffer;
           if (!ArrayBuffer.isView(data)) {
             const obj = {};
-            if (data instanceof callback(closure_3[4]).default) {
+            if (data instanceof outer2_1(outer2_3[4]).default) {
               obj.data = data.data;
               obj.type = "blob";
               let tmp3 = obj;
@@ -52,13 +53,13 @@ const tmp2 = () => {
       const reduced = mapped.reduce((arg0, type) => {
         if ("string" === type.type) {
           const _encodeURI = encodeURI;
-          let sum = arg0 + closure_0.unescape(encodeURI(type.data)).length;
+          let sum = arg0 + BlobManager.unescape(encodeURI(type.data)).length;
         } else {
           sum = arg0 + type.data.size;
         }
         return sum;
       }, 0);
-      let obj = callback2(closure_3[3]);
+      let obj = outer1_2(outer1_3[3]);
       const fromParts = obj.createFromParts(mapped, tmp3);
       obj = { blobId: tmp3, offset: 0, size: reduced };
       let str = "";
@@ -80,11 +81,11 @@ const tmp2 = () => {
   obj = {
     key: "createFromOptions",
     value: function createFromOptions(_response) {
-      let obj = callback(closure_3[5]);
+      let obj = outer1_1(outer1_3[5]);
       obj.register(_response.blobId);
       obj = {};
       let merged = _response;
-      obj = Object.create(callback(closure_3[4]).default.prototype);
+      obj = Object.create(outer1_1(outer1_3[4]).default.prototype);
       if (null == _response.__collector) {
         const obj1 = {};
         let result = null;
@@ -102,13 +103,13 @@ const tmp2 = () => {
   obj = {
     key: "release",
     value: function release(arg0) {
-      callback2(closure_3[2])(callback2(closure_3[3]), "NativeBlobModule is available.");
-      const tmp = callback2(closure_3[2]);
-      callback(closure_3[5]).unregister(arg0);
-      const obj = callback(closure_3[5]);
+      outer1_2(outer1_3[2])(outer1_2(outer1_3[3]), "NativeBlobModule is available.");
+      const tmp = outer1_2(outer1_3[2]);
+      outer1_1(outer1_3[5]).unregister(arg0);
+      const obj = outer1_1(outer1_3[5]);
       if (!obj2.has(arg0)) {
-        callback2(closure_3[3]).release(arg0);
-        const obj3 = callback2(closure_3[3]);
+        outer1_2(outer1_3[3]).release(arg0);
+        const obj3 = outer1_2(outer1_3[3]);
       }
     }
   };
@@ -116,37 +117,37 @@ const tmp2 = () => {
   items[3] = {
     key: "addNetworkingHandler",
     value: function addNetworkingHandler() {
-      callback2(closure_3[2])(callback2(closure_3[3]), "NativeBlobModule is available.");
-      const tmp = callback2(closure_3[2]);
-      callback2(closure_3[3]).addNetworkingHandler();
+      outer1_2(outer1_3[2])(outer1_2(outer1_3[3]), "NativeBlobModule is available.");
+      const tmp = outer1_2(outer1_3[2]);
+      outer1_2(outer1_3[3]).addNetworkingHandler();
     }
   };
   items[4] = {
     key: "addWebSocketHandler",
     value: function addWebSocketHandler(arg0) {
-      callback2(closure_3[2])(callback2(closure_3[3]), "NativeBlobModule is available.");
-      const tmp = callback2(closure_3[2]);
-      callback2(closure_3[3]).addWebSocketHandler(arg0);
+      outer1_2(outer1_3[2])(outer1_2(outer1_3[3]), "NativeBlobModule is available.");
+      const tmp = outer1_2(outer1_3[2]);
+      outer1_2(outer1_3[3]).addWebSocketHandler(arg0);
     }
   };
   items[5] = {
     key: "removeWebSocketHandler",
     value: function removeWebSocketHandler(arg0) {
-      callback2(closure_3[2])(callback2(closure_3[3]), "NativeBlobModule is available.");
-      const tmp = callback2(closure_3[2]);
-      const result = callback2(closure_3[3]).removeWebSocketHandler(arg0);
+      outer1_2(outer1_3[2])(outer1_2(outer1_3[3]), "NativeBlobModule is available.");
+      const tmp = outer1_2(outer1_3[2]);
+      const result = outer1_2(outer1_3[3]).removeWebSocketHandler(arg0);
     }
   };
   items[6] = {
     key: "sendOverSocket",
     value: function sendOverSocket(data) {
-      callback2(closure_3[2])(callback2(closure_3[3]), "NativeBlobModule is available.");
-      const tmp = callback2(closure_3[2]);
-      callback2(closure_3[3]).sendOverSocket(data.data, arg1);
+      outer1_2(outer1_3[2])(outer1_2(outer1_3[3]), "NativeBlobModule is available.");
+      const tmp = outer1_2(outer1_3[2]);
+      outer1_2(outer1_3[3]).sendOverSocket(data.data, arg1);
     }
   };
   return callback(BlobManager, null, items);
-}();
-tmp2.isAvailable = importDefault(dependencyMap[3]);
+})();
+tmp2.isAvailable = require("BlobModule");
 
 export default tmp2;

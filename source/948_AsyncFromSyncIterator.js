@@ -1,10 +1,14 @@
 // Module ID: 948
-// Function ID: 10264
+// Function ID: 10265
 // Name: AsyncFromSyncIterator
-// Dependencies: []
+// Dependencies: [77, 942, 944, 817, 845, 934, 936]
 // Exports: instrumentAsyncIterableStream, instrumentMessageStream
 
 // Module 948 (AsyncFromSyncIterator)
+import _defineProperty from "_defineProperty";
+import _awaitAsyncGenerator from "_awaitAsyncGenerator";
+import AsyncGenerator from "AsyncGenerator";
+
 function AsyncFromSyncIterator(arg0) {
   function AsyncFromSyncIteratorContinuation(done) {
     if (Object(done) !== done) {
@@ -12,7 +16,7 @@ function AsyncFromSyncIterator(arg0) {
       const typeError = new TypeError(done + " is not an object.");
       return Promise.reject(typeError);
     } else {
-      const AsyncFromSyncIteratorContinuation = done.done;
+      done = done.done;
       const resolved = Promise.resolve(done.value);
       return resolved.then((value) => ({ value, done }));
     }
@@ -24,9 +28,9 @@ function AsyncFromSyncIterator(arg0) {
       return;
     }
   }
-  const obj = {
-    accessibilityRole: "o",
-    HermesInternal: "o",
+  let obj = {
+    s: null,
+    n: null,
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -56,7 +60,7 @@ function AsyncFromSyncIterator(arg0) {
 }
 function processEvent(type, finishReasons, arg2, setStatus) {
   let name;
-  let tmp = arg2;
+  let tmp3 = arg2;
   if (type) {
     if ("object" === typeof type) {
       let flag = "type" in type;
@@ -67,7 +71,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         flag = "error" === type.type;
       }
       if (flag) {
-        let obj = { code: require(dependencyMap[3]).SPAN_STATUS_ERROR };
+        let obj = { code: require(817) /* getSpanStatusFromHttpCode */.SPAN_STATUS_ERROR };
         const error = type.error;
         type = undefined;
         if (null != error) {
@@ -79,20 +83,20 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         }
         obj.message = str4;
         setStatus.setStatus(obj);
-        let obj1 = require(dependencyMap[4]);
-        obj = { mechanism: {} };
+        let obj1 = require(845) /* captureCheckIn */;
+        obj = { mechanism: { handled: false, type: "auto.ai.anthropic.anthropic_error" } };
         obj1.captureException(type.error, obj);
         flag = true;
       }
       if (!flag) {
-        let tmp10 = "message_delta" === type.type && type.usage;
-        if (tmp10) {
-          tmp10 = "output_tokens" in type.usage;
+        let tmp12 = "message_delta" === type.type && type.usage;
+        if (tmp12) {
+          tmp12 = "output_tokens" in type.usage;
         }
-        if (tmp10) {
-          tmp10 = "number" === typeof type.usage.output_tokens;
+        if (tmp12) {
+          tmp12 = "number" === typeof type.usage.output_tokens;
         }
-        if (tmp10) {
+        if (tmp12) {
           finishReasons.completionTokens = type.usage.output_tokens;
         }
         if (type.message) {
@@ -127,11 +131,11 @@ function processEvent(type, finishReasons, arg2, setStatus) {
           content_block = type.content_block;
         }
         if (content_block) {
-          let tmp12 = "tool_use" !== type.content_block.type;
-          if (tmp12) {
-            tmp12 = "server_tool_use" !== type.content_block.type;
+          let tmp14 = "tool_use" !== type.content_block.type;
+          if (tmp14) {
+            tmp14 = "server_tool_use" !== type.content_block.type;
           }
-          if (!tmp12) {
+          if (!tmp14) {
             obj = { id: type.content_block.id, name: type.content_block.name, inputJsonParts: [] };
             finishReasons.activeToolBlocks[type.index] = obj;
           }
@@ -142,16 +146,16 @@ function processEvent(type, finishReasons, arg2, setStatus) {
               if ("partial_json" in type.delta) {
                 if ("string" === typeof type.delta.partial_json) {
                   if (finishReasons.activeToolBlocks[type.index]) {
-                    let inputJsonParts = tmp13.inputJsonParts;
+                    let inputJsonParts = tmp15.inputJsonParts;
                     inputJsonParts.push(type.delta.partial_json);
                   }
                 }
               }
             }
-            if (tmp) {
-              tmp = "string" === typeof type.delta.text;
+            if (tmp3) {
+              tmp3 = "string" === typeof type.delta.text;
             }
-            if (tmp) {
+            if (tmp3) {
               const responseTexts = finishReasons.responseTexts;
               responseTexts.push(type.delta.text);
             }
@@ -159,9 +163,9 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         }
         let activeToolBlocks = finishReasons;
         if ("content_block_stop" === type.type) {
-          if ("number" === typeof tmp16.index) {
-            name = tmp28;
-            if (activeToolBlocks.activeToolBlocks[tmp16.index]) {
+          if ("number" === typeof tmp18.index) {
+            name = tmp30;
+            if (activeToolBlocks.activeToolBlocks[tmp18.index]) {
               inputJsonParts = name.inputJsonParts;
               const joined = inputJsonParts.join("");
               if (joined) {
@@ -170,21 +174,21 @@ function processEvent(type, finishReasons, arg2, setStatus) {
               } else {
                 parsed = {};
               }
-              let tmp22 = parsed;
+              let tmp24 = parsed;
               const toolCalls = activeToolBlocks.toolCalls;
               const push = toolCalls.push;
               obj1 = { type: "tool_use" };
               ({ id: obj7.id, name } = name);
               obj1.name = name;
-              obj1.input = tmp22;
+              obj1.input = tmp24;
               push(obj1);
               activeToolBlocks = activeToolBlocks.activeToolBlocks;
-              delete r1[r0];
+              delete tmp2[tmp];
               while (true) {
-                let tmp23 = __exception;
+                let tmp25 = __exception;
                 let obj2 = { __unparsed: push };
-                tmp22 = obj2;
-                // continue
+                tmp24 = obj2;
+                continue;
               }
             }
           }
@@ -193,7 +197,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
     }
   }
 }
-async function _instrumentAsyncIterableStream(arg0, setAttributes, arg2, arg3) {
+async function _instrumentAsyncIterableStream(arg0, arg1, arg2, arg3) {
   let obj2;
   const obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: undefined, completionTokens: undefined, cacheCreationInputTokens: undefined, cacheReadInputTokens: undefined, toolCalls: [], activeToolBlocks: {} };
   if ("undefined" !== typeof Symbol) {
@@ -215,35 +219,35 @@ async function _instrumentAsyncIterableStream(arg0, setAttributes, arg2, arg3) {
       let obj3 = arg0[str2];
       let tmp4 = obj3;
       if (null != obj3) {
-        let tmp10 = ctor;
-        let prototype2 = ctor.prototype;
+        let tmp10 = outer2_5;
+        let prototype2 = outer2_5.prototype;
         let tmp11 = new.target;
         let tmp12 = new.target;
-        let iter = new ctor(obj3.call(arg0));
+        let iter = new outer2_5(obj3.call(arg0));
       }
       let iter2 = iter;
-      let tmp13 = closure_3;
-      let iter3 = yield closure_3(iter.next());
+      let tmp13 = outer2_3;
+      let iter3 = yield outer2_3(iter.next());
       let iter4 = iter3;
       let tmp14 = !iter3.done;
       let tmp15 = tmp14;
       if (tmp14) {
         let tmp16 = iter4;
         let value = iter4.value;
-        let tmp17 = callback3;
+        let tmp17 = outer2_6;
         let tmp18 = obj;
         let tmp19 = arg2;
-        let tmp20 = setAttributes;
+        let tmp20 = arg1;
         let tmp21 = value;
-        let tmp22 = callback3(value, tmp2, arg2, setAttributes);
+        let tmp22 = outer2_6(value, tmp2, arg2, arg1);
         let tmp23 = yield value;
         do {
           let flag2 = false;
-          let tmp24 = closure_3;
+          let tmp24 = outer2_3;
           let tmp25 = iter;
-          let iter5 = yield closure_3(iter2.next());
+          let iter5 = yield outer2_3(iter2.next());
           iter4 = iter5;
-          let tmp26 = !iter5.done;
+          tmp26 = !iter5.done;
           tmp15 = tmp26;
         } while (tmp26);
       }
@@ -256,12 +260,12 @@ async function _instrumentAsyncIterableStream(arg0, setAttributes, arg2, arg3) {
           let tmp29 = iter;
           let tmp30 = null;
           tmp28 = null != iter2.return;
-          // break
+          break;
         }
         if (tmp28) {
-          let tmp31 = closure_3;
+          let tmp31 = outer2_3;
           let tmp32 = iter;
-          let tmp33 = yield closure_3(iter2.return());
+          let tmp33 = yield outer2_3(iter2.return());
         }
         let tmp34 = flag;
         if (flag) {
@@ -270,47 +274,47 @@ async function _instrumentAsyncIterableStream(arg0, setAttributes, arg2, arg3) {
         } else {
           let tmp35 = obj;
           if (tmp2.responseId) {
-            let tmp36 = setAttributes;
-            let tmp37 = callback2;
-            let tmp38 = callback;
-            let tmp39 = closure_1;
+            let tmp36 = arg1;
+            let tmp37 = outer2_2;
+            let tmp38 = outer2_0;
+            let tmp39 = outer2_1;
             let num2 = 5;
             let tmp40 = obj;
-            let setAttributesResult = setAttributes.setAttributes(callback2({}, callback(closure_1[5]).GEN_AI_RESPONSE_ID_ATTRIBUTE, tmp2.responseId));
+            let setAttributesResult = arg1.setAttributes(outer2_2({}, outer2_0(outer2_1[5]).GEN_AI_RESPONSE_ID_ATTRIBUTE, tmp2.responseId));
           }
           let tmp42 = obj;
           if (tmp2.responseModel) {
-            let tmp43 = setAttributes;
-            let tmp44 = callback2;
-            let tmp45 = callback;
-            let tmp46 = closure_1;
+            let tmp43 = arg1;
+            let tmp44 = outer2_2;
+            let tmp45 = outer2_0;
+            let tmp46 = outer2_1;
             let num3 = 5;
             let tmp47 = obj;
-            let setAttributesResult1 = setAttributes.setAttributes(callback2({}, callback(closure_1[5]).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, tmp2.responseModel));
+            let setAttributesResult1 = arg1.setAttributes(outer2_2({}, outer2_0(outer2_1[5]).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, tmp2.responseModel));
           }
-          let tmp49 = callback;
-          let tmp50 = closure_1;
+          let tmp49 = outer2_0;
+          let tmp50 = outer2_1;
           let num4 = 6;
-          let obj4 = callback(closure_1[6]);
-          let tmp51 = setAttributes;
+          let obj4 = outer2_0(outer2_1[6]);
+          let tmp51 = arg1;
           let tmp52 = obj;
           let tmp53 = obj4;
-          let tmp54 = setAttributes;
-          let result = obj4.setTokenUsageAttributes(setAttributes, tmp2.promptTokens, tmp2.completionTokens, tmp2.cacheCreationInputTokens, tmp2.cacheReadInputTokens);
-          let tmp56 = callback2;
+          let tmp54 = arg1;
+          let result = obj4.setTokenUsageAttributes(arg1, tmp2.promptTokens, tmp2.completionTokens, tmp2.cacheCreationInputTokens, tmp2.cacheReadInputTokens);
+          let tmp56 = outer2_2;
           let num5 = 5;
           let flag3 = true;
-          let setAttributesResult2 = setAttributes.setAttributes(callback2({}, callback(closure_1[5]).GEN_AI_RESPONSE_STREAMING_ATTRIBUTE, true));
+          let setAttributesResult2 = arg1.setAttributes(outer2_2({}, outer2_0(outer2_1[5]).GEN_AI_RESPONSE_STREAMING_ATTRIBUTE, true));
           let num6 = 0;
           if (tmp2.finishReasons.length > 0) {
-            let tmp58 = setAttributes;
-            let tmp59 = callback2;
-            let tmp60 = callback;
-            let tmp61 = closure_1;
+            let tmp58 = arg1;
+            let tmp59 = outer2_2;
+            let tmp60 = outer2_0;
+            let tmp61 = outer2_1;
             let tmp62 = globalThis;
             let _JSON = JSON;
             let tmp63 = obj;
-            let setAttributesResult3 = setAttributes.setAttributes(callback2({}, callback(closure_1[5]).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, JSON.stringify(tmp2.finishReasons)));
+            let setAttributesResult3 = arg1.setAttributes(outer2_2({}, outer2_0(outer2_1[5]).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, JSON.stringify(tmp2.finishReasons)));
           }
           let tmp65 = arg2;
           let tmp66 = arg2;
@@ -319,13 +323,13 @@ async function _instrumentAsyncIterableStream(arg0, setAttributes, arg2, arg3) {
             tmp66 = tmp2.responseTexts.length > 0;
           }
           if (tmp66) {
-            let tmp68 = setAttributes;
-            let tmp69 = callback2;
-            let tmp70 = callback;
-            let tmp71 = closure_1;
+            let tmp68 = arg1;
+            let tmp69 = outer2_2;
+            let tmp70 = outer2_0;
+            let tmp71 = outer2_1;
             let tmp72 = obj;
             let responseTexts = tmp2.responseTexts;
-            let setAttributesResult4 = setAttributes.setAttributes(callback2({}, callback(closure_1[5]).GEN_AI_RESPONSE_TEXT_ATTRIBUTE, responseTexts.join("")));
+            let setAttributesResult4 = arg1.setAttributes(outer2_2({}, outer2_0(outer2_1[5]).GEN_AI_RESPONSE_TEXT_ATTRIBUTE, responseTexts.join("")));
           }
           let tmp74 = arg2;
           let tmp75 = arg2;
@@ -334,17 +338,17 @@ async function _instrumentAsyncIterableStream(arg0, setAttributes, arg2, arg3) {
             tmp75 = tmp2.toolCalls.length > 0;
           }
           if (tmp75) {
-            let tmp77 = setAttributes;
-            let tmp78 = callback2;
-            let tmp79 = callback;
-            let tmp80 = closure_1;
+            let tmp77 = arg1;
+            let tmp78 = outer2_2;
+            let tmp79 = outer2_0;
+            let tmp80 = outer2_1;
             let tmp81 = globalThis;
             let _JSON2 = JSON;
             let tmp82 = obj;
-            let setAttributesResult5 = setAttributes.setAttributes(callback2({}, callback(closure_1[5]).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(tmp2.toolCalls)));
+            let setAttributesResult5 = arg1.setAttributes(outer2_2({}, outer2_0(outer2_1[5]).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(tmp2.toolCalls)));
           }
-          let tmp84 = setAttributes;
-          let endResult = setAttributes.end();
+          let tmp84 = arg1;
+          let endResult = arg1.end();
         }
       }
     }
@@ -366,36 +370,33 @@ async function _instrumentAsyncIterableStream(arg0, setAttributes, arg2, arg3) {
   }
   iter = obj2.call(arg0);
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const instrumentAsyncIterableStream = function instrumentAsyncIterableStream(arg0, arg1, arg2) {
   return _instrumentAsyncIterableStream(...arguments);
 };
 export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, arg2) {
-  const require = arg1;
-  const dependencyMap = arg2;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
   let closure_2 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: undefined, completionTokens: undefined, cacheCreationInputTokens: undefined, cacheReadInputTokens: undefined, toolCalls: [], activeToolBlocks: {} };
   applyResult.on("streamEvent", (arg0) => {
-    callback2(arg0, closure_2, arg2, arg1);
+    outer1_6(arg0, closure_2, closure_1, closure_0);
   });
   applyResult.on("message", () => {
-    let tmp2 = arg2;
-    if (arg1.isRecording()) {
+    let tmp2 = dependencyMap;
+    if (lib.isRecording()) {
       if (tmp.responseId) {
-        obj.setAttributes(callback({}, arg1(arg2[5]).GEN_AI_RESPONSE_ID_ATTRIBUTE, tmp.responseId));
+        obj.setAttributes(callback({}, lib(934).GEN_AI_RESPONSE_ID_ATTRIBUTE, tmp.responseId));
       }
       if (tmp.responseModel) {
-        obj.setAttributes(callback({}, arg1(arg2[5]).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, tmp.responseModel));
+        obj.setAttributes(callback({}, lib(934).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, tmp.responseModel));
       }
-      const obj2 = arg1(arg2[6]);
+      const obj2 = lib(936);
       const result = obj2.setTokenUsageAttributes(obj, tmp.promptTokens, tmp.completionTokens, tmp.cacheCreationInputTokens, tmp.cacheReadInputTokens);
-      obj.setAttributes(callback({}, arg1(arg2[5]).GEN_AI_RESPONSE_STREAMING_ATTRIBUTE, true));
+      obj.setAttributes(callback({}, lib(934).GEN_AI_RESPONSE_STREAMING_ATTRIBUTE, true));
       if (tmp.finishReasons.length > 0) {
         const _JSON = JSON;
-        obj.setAttributes(callback({}, arg1(arg2[5]).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, JSON.stringify(tmp.finishReasons)));
+        obj.setAttributes(callback({}, lib(934).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, JSON.stringify(tmp.finishReasons)));
       }
       let tmp23 = tmp2;
       if (tmp2) {
@@ -403,25 +404,25 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
       }
       if (tmp23) {
         const responseTexts = tmp.responseTexts;
-        obj.setAttributes(callback({}, arg1(arg2[5]).GEN_AI_RESPONSE_TEXT_ATTRIBUTE, responseTexts.join("")));
+        obj.setAttributes(callback({}, lib(934).GEN_AI_RESPONSE_TEXT_ATTRIBUTE, responseTexts.join("")));
       }
       if (tmp2) {
         tmp2 = tmp.toolCalls.length > 0;
       }
       if (tmp2) {
         const _JSON2 = JSON;
-        obj.setAttributes(callback({}, arg1(arg2[5]).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(tmp.toolCalls)));
+        obj.setAttributes(callback({}, lib(934).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(tmp.toolCalls)));
       }
       obj.end();
     }
   });
-  applyResult.on("error", (arg0, self) => {
-    let obj = self(arg2[4]);
-    obj.captureException(arg0, { mechanism: {} });
-    if (self.isRecording()) {
-      obj = { code: self(arg2[3]).SPAN_STATUS_ERROR, message: "stream_error" };
-      self.setStatus(obj);
-      self.end();
+  applyResult.on("error", (arg0) => {
+    let obj = lib(845);
+    obj.captureException(arg0, { mechanism: { handled: false, type: "auto.ai.anthropic.stream_error" } });
+    if (lib.isRecording()) {
+      obj = { code: lib(817).SPAN_STATUS_ERROR, message: "stream_error" };
+      lib.setStatus(obj);
+      lib.end();
     }
   });
   return applyResult;

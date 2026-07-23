@@ -1,52 +1,56 @@
 // Module ID: 1891
-// Function ID: 21118
+// Function ID: 21119
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 4, 1884, 2]
 
 // Module 1891 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +61,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,18 +87,15 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
 let closure_4 = "1" === process.env.KV_STORAGE_LOGGING;
-const logger = new arg1(dependencyMap[2]).Logger("Runtime");
-const tmp3 = () => {
+const logger = new require("set").Logger("Runtime");
+let tmp3 = (() => {
   class Runtime {
     constructor() {
-      tmp = closure_2(this, Runtime);
+      tmp = outer1_2(this, Runtime);
       return;
     }
   }
-  const arg1 = Runtime;
   let obj = {
     key: "nextId",
     value() {
@@ -103,17 +104,19 @@ const tmp3 = () => {
       return sum;
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "executeAsync",
     value(arg0, arg1) {
-      const Runtime = this;
+      const self = this;
+      let closure_1 = arg0;
+      let _classCallCheck = arg1;
       this.initialize();
       return new Promise((resolve, reject) => {
         const nextIdResult = self.nextId();
-        reject(nextIdResult);
+        callback(nextIdResult);
         const pending = self.pending;
-        const result = pending.set(nextIdResult, { id: nextIdResult, tag: resolve, started: performance.now(), resolve, reject });
+        const result = pending.set(nextIdResult, { id: nextIdResult, tag: closure_1, started: performance.now(), resolve, reject });
       });
     }
   };
@@ -136,15 +139,15 @@ const tmp3 = () => {
   items[4] = {
     key: "removeCompletionCallback",
     value(arg0) {
-      const Runtime = arg0;
-      this.completionCallbacks = this.completionCallbacks.filter((arg0) => arg0 !== arg0);
+      let closure_0 = arg0;
+      this.completionCallbacks = this.completionCallbacks.filter((arg0) => arg0 !== closure_0);
     }
   };
   items[5] = {
     key: "removeDatabaseStateCallback",
     value(arg0) {
-      const Runtime = arg0;
-      this.dbStateCallbacks = this.dbStateCallbacks.filter((arg0) => arg0 !== arg0);
+      let closure_0 = arg0;
+      this.dbStateCallbacks = this.dbStateCallbacks.filter((arg0) => arg0 !== closure_0);
     }
   };
   items[6] = {
@@ -170,7 +173,7 @@ const tmp3 = () => {
     key: "onStatus",
     value(handle) {
       let done;
-      const tmp = callback2(this.dbStateCallbacks);
+      const tmp = outer1_6(this.dbStateCallbacks);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -208,7 +211,7 @@ const tmp3 = () => {
         ({ ok: obj.ok, data: obj.value } = timings);
         obj = { queue: timings.timings.queueTimeNanoseconds / 1000000, execution: timings.timings.executionTimeNanoseconds / 1000000, materialization: timings.timings.materializationTimeNanoseconds / 1000000, ccTotal: timings.timings.totalTimeNanoseconds / 1000000, jsTotal: arg2 - started.started };
         obj.timings = obj;
-        const tmp5 = callback2(tmp.completionCallbacks);
+        const tmp5 = outer1_6(tmp.completionCallbacks);
         let iter2 = tmp5();
         if (!iter2.done) {
           do {
@@ -224,20 +227,20 @@ const tmp3 = () => {
   items[10] = {
     key: "initialize",
     value() {
-      const self = this;
-      const Runtime = this;
+      let self = this;
+      self = this;
       if (!this.initialized) {
-        const KV_RAW = Runtime(closure_1[3]).KV_RAW;
+        const KV_RAW = Runtime(outer1_1[3]).KV_RAW;
         const obj = {
-          status(user, applicationId) {
-              return self.onStatus(user);
+          status(current, outer1_15) {
+              return self.onStatus(current);
             },
           response(arg0, arg1) {
               return self.onResponse(arg0, arg1);
             }
         };
         KV_RAW.setCallbacks(obj);
-        if (closure_4) {
+        if (outer1_4) {
           const result = self.addCompletionCallback((ok) => {
             let str = "failed";
             if (ok.ok) {
@@ -253,22 +256,22 @@ const tmp3 = () => {
             items[3] = "" + jsTotal.toFixed(3) + "ms js reception";
             const ccTotal2 = ok.timings.ccTotal;
             const joined = items.join(", ");
-            closure_5.info("" + ok.tag + " (#" + ok.id + ") " + str + " in " + ccTotal2.toFixed(3) + "ms (" + joined + ").");
+            outer2_5.info("" + ok.tag + " (#" + ok.id + ") " + str + " in " + ccTotal2.toFixed(3) + "ms (" + joined + ").");
           });
-          const result1 = self.addDatabaseStateCallback((arg0, arg1) => closure_5.info("" + arg0 + " (state: " + arg1 + ")"));
+          const result1 = self.addDatabaseStateCallback((arg0, arg1) => outer2_5.info("" + arg0 + " (state: " + arg1 + ")"));
         }
         self.initialized = true;
       }
     }
   };
   return callback(Runtime, null, items);
-}();
+})();
 tmp3.counter = 0;
 tmp3.pending = new Map();
 tmp3.initialized = false;
 tmp3.dbStateCallbacks = [];
 tmp3.completionCallbacks = [];
 const map = new Map();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("../discord_common/js/packages/kv-storage/js/raw/Runtime.tsx");
+let result = require("log").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/raw/Runtime.tsx");
 
 export const Runtime = tmp3;

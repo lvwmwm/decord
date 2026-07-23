@@ -1,18 +1,17 @@
-// Module ID: 12578
-// Function ID: 96755
+// Module ID: 12692
+// Function ID: 98911
 // Name: isNotAutomodEmbed
-// Dependencies: []
+// Dependencies: [670, 2]
 // Exports: isNotAutomodEmbed
 
-// Module 12578 (isNotAutomodEmbed)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStoreUtils.tsx");
+// Module 12692 (isNotAutomodEmbed)
+const result = require("set").fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStoreUtils.tsx");
 
 export const isNotAutomodEmbed = function isNotAutomodEmbed(type) {
   type = type.type;
-  let tmp = type !== require(dependencyMap[0]).MessageEmbedTypes.AUTO_MODERATION_MESSAGE;
+  let tmp = type !== require(670) /* MessageEmbedTypes */.MessageEmbedTypes.AUTO_MODERATION_MESSAGE;
   if (tmp) {
-    tmp = type !== require(dependencyMap[0]).MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION;
+    tmp = type !== require(670) /* MessageEmbedTypes */.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION;
   }
   return tmp;
 };

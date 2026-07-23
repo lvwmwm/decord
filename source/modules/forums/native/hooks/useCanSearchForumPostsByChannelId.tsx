@@ -1,23 +1,25 @@
-// Module ID: 10094
-// Function ID: 78181
+// Module ID: 10102
+// Function ID: 78221
 // Name: useCanSearchForumPostsByChannelId
-// Dependencies: []
+// Dependencies: [1348, 3758, 653, 566, 2]
 // Exports: useCanSearchForumPostsByChannelId
 
-// Module 10094 (useCanSearchForumPostsByChannelId)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const Permissions = arg1(dependencyMap[2]).Permissions;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/forums/native/hooks/useCanSearchForumPostsByChannelId.tsx");
+// Module 10102 (useCanSearchForumPostsByChannelId)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/forums/native/hooks/useCanSearchForumPostsByChannelId.tsx");
 
 export const useCanSearchForumPostsByChannelId = function useCanSearchForumPostsByChannelId(channelId) {
-  const arg1 = channelId;
-  const items = [closure_2, closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const channel = channel.getChannel(arg0);
+  const _require = channelId;
+  const items = [_isNativeReflectConstruct, closure_3];
+  return _require(566).useStateFromStores(items, () => {
+    const channel = outer1_2.getChannel(closure_0);
     let canResult = null != channel;
     if (canResult) {
-      canResult = closure_3.can(constants.READ_MESSAGE_HISTORY, channel);
+      canResult = outer1_3.can(outer1_4.READ_MESSAGE_HISTORY, channel);
     }
     return canResult;
   });

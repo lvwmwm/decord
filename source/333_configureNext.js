@@ -1,22 +1,23 @@
 // Module ID: 333
 // Function ID: 4949
 // Name: configureNext
-// Dependencies: []
+// Dependencies: [79, 262, 49, 46]
 
 // Module 333 (configureNext)
+const require = arg1;
 function configureNext(duration) {
   let fn = arg2;
-  const global = arg1;
-  if (!importDefault(dependencyMap[1]).isDisableAnimations) {
+  const _global = arg1;
+  if (!importDefault(262).isDisableAnimations) {
     if (closure_4) {
-      const callback = false;
+      const _require = false;
       function onAnimationComplete() {
-        if (!closure_1) {
-          closure_1 = true;
+        if (!c1) {
+          c1 = true;
           const _clearTimeout = clearTimeout;
           clearTimeout(closure_2);
-          if (null != arg1) {
-            arg1();
+          if (null != callback) {
+            callback();
           }
         }
       }
@@ -25,14 +26,14 @@ function configureNext(duration) {
       if (null != duration) {
         num = duration;
       }
-      const importDefault = setTimeout(onAnimationComplete, num + 17);
-      const fabricUIManager = callback(dependencyMap[2]).getFabricUIManager();
+      importDefault = setTimeout(onAnimationComplete, num + 17);
+      const fabricUIManager = _require(49).getFabricUIManager();
       if (null != fabricUIManager) {
         if (fabricUIManager.configureNextLayoutAnimation) {
-          let tmp14 = null == global;
-          let obj2 = global;
+          let tmp14 = null == _global;
+          let obj2 = _global;
           if (!tmp14) {
-            const nativeFabricUIManager = global.nativeFabricUIManager;
+            const nativeFabricUIManager = _global.nativeFabricUIManager;
             tmp14 = null == nativeFabricUIManager;
             obj2 = nativeFabricUIManager;
           }
@@ -46,9 +47,9 @@ function configureNext(duration) {
           }
         }
       }
-      let configureNextLayoutAnimation = null != callback(dependencyMap[3]).default;
+      let configureNextLayoutAnimation = null != _require(46).default;
       if (configureNextLayoutAnimation) {
-        configureNextLayoutAnimation = callback(dependencyMap[3]).default.configureNextLayoutAnimation;
+        configureNextLayoutAnimation = _require(46).default.configureNextLayoutAnimation;
       }
       if (configureNextLayoutAnimation) {
         let fn2 = onAnimationComplete;
@@ -63,26 +64,26 @@ function configureNext(duration) {
 
           };
         }
-        const result1 = callback(dependencyMap[3]).default.configureNextLayoutAnimation(duration, fn2, fn3);
-        const _default = callback(dependencyMap[3]).default;
+        const result1 = _require(46).default.configureNextLayoutAnimation(duration, fn2, fn3);
+        const _default = _require(46).default;
       }
-      const obj = callback(dependencyMap[2]);
+      const obj = _require(49);
     }
   }
 }
 function createLayoutAnimation(duration, easeInEaseOut, opacity) {
-  let obj = { duration, create: obj, update: obj, delete: obj1 };
+  obj = { duration, create: obj, update: obj, delete: obj1 };
   obj = { type: easeInEaseOut, property: opacity };
   obj = { type: easeInEaseOut };
   return obj;
 }
-let closure_4 = importAll(dependencyMap[0]).isLayoutAnimationEnabled();
-let obj = { easeInEaseOut: require("module_300"), linear: require("module_500"), spring: { duration: 700, create: {}, update: { "Bool(false)": true, "Bool(false)": true }, delete: {} } };
+let closure_4 = require("javaScriptFlagGetter").isLayoutAnimationEnabled();
+let obj = { easeInEaseOut: require("module_300"), linear: require("module_500"), spring: { duration: 700, create: { type: "linear", property: "opacity" }, update: { type: "spring", springDamping: 0.4 }, delete: { type: "linear", property: "opacity" } } };
 obj = {
   configureNext,
   create: createLayoutAnimation,
-  Types: Object.freeze({}),
-  Properties: Object.freeze({ g_s_ending: "<string:1313996802>", QUICKSWITCHER_CLOSED: true, bits: "<string:18022929>", "Null": "<string:4197531921>" }),
+  Types: Object.freeze({ spring: "spring", linear: "linear", easeInEaseOut: "easeInEaseOut", easeIn: "easeIn", easeOut: "easeOut", keyboard: "keyboard" }),
+  Properties: Object.freeze({ opacity: "opacity", scaleX: "scaleX", scaleY: "scaleY", scaleXY: "scaleXY" }),
   checkConfig() {
     console.error("LayoutAnimation.checkConfig(...) has been disabled.");
   },

@@ -1,32 +1,35 @@
-// Module ID: 14941
-// Function ID: 112456
+// Module ID: 15057
+// Function ID: 114624
 // Name: _handleVoiceChannelPress
-// Dependencies: []
+// Dependencies: [5, 31, 27, 6759, 3758, 4142, 4325, 4203, 10260, 653, 33, 689, 4619, 9145, 1934, 4341, 8455, 15056, 15058, 10214, 566, 15049, 9067, 4120, 7641, 8450, 675, 15050, 14969, 9099, 1212, 4312, 14980, 14974, 14982, 11179, 2]
 
-// Module 14941 (_handleVoiceChannelPress)
+// Module 15057 (_handleVoiceChannelPress)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "_createForOfIteratorHelperLoose";
+import { View } from "LimitAndDurationInfo";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { NO_VOICE_STATES } from "_isNativeReflectConstruct";
+import ME from "ME";
+import { jsx } from "AudienceItem";
+
+let closure_11;
+let closure_12;
+const require = arg1;
 function _handleVoiceChannelPress() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleVoiceChannelPress = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const NO_VOICE_STATES = arg1(dependencyMap[7]).NO_VOICE_STATES;
-({ AnalyticEvents: closure_11, Permissions: closure_12 } = arg1(dependencyMap[9]));
-const jsx = arg1(dependencyMap[10]).jsx;
+({ AnalyticEvents: closure_11, Permissions: closure_12 } = ME);
 let obj = {};
-obj = { gap: importDefault(dependencyMap[11]).space.PX_8 };
+obj = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, maxHeight: 1 };
 obj.channelInfo = obj;
-obj.voiceStates = { <string:3562168929>: "LengthDelimited", <string:1655483564>: "isArray", <string:1347507883>: "isArray" };
+obj.voiceStates = { marginLeft: 36, marginTop: -4, marginBottom: 2 };
 obj.voiceStatesCollapsed = { marginLeft: 16 };
-const tmp2 = arg1(dependencyMap[9]);
-obj.container = { marginVertical: arg1(dependencyMap[8]).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: importDefault(dependencyMap[11]).radii.md };
+obj.container = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
 let closure_15 = importAllResult.memo((channel) => {
   let collapsed;
   let embeddedActivitiesCount;
@@ -37,25 +40,24 @@ let closure_15 = importAllResult.memo((channel) => {
   let subtitle;
   let voiceStates;
   channel = channel.channel;
-  const arg1 = channel;
   ({ selected, collapsed, subtitle } = channel);
-  let importDefault;
+  let gameMentionsAsPlainText;
   ({ locked, voiceStates, embeddedActivitiesCount } = channel);
-  let obj = arg1(dependencyMap[16]);
+  let obj = channel(8455);
   const activeEvent = obj.useActiveEvent(channel.id);
-  let obj1 = arg1(dependencyMap[17]);
+  let obj1 = channel(15056);
   const startTime = obj1.useStartTime(channel);
-  let obj2 = arg1(dependencyMap[18]);
+  let obj2 = channel(15058);
   const ensureSyncedChannelVoiceStates = obj2.useEnsureSyncedChannelVoiceStates(channel.id, voiceStates);
-  let obj3 = arg1(dependencyMap[19]);
+  let obj3 = channel(10214);
   const isConnectedToVoiceChannel = obj3.useIsConnectedToVoiceChannel(channel);
-  let obj4 = arg1(dependencyMap[20]);
+  let obj4 = channel(566);
   const items = [closure_8, closure_9];
   const items1 = [channel];
-  const stateFromStoresObject = obj4.useStateFromStoresObject(items, () => ({ hasUnread: closure_8.hasUnread(channel.id), mentionCount: closure_8.getMentionCount(channel.id), resolvedUnreadSetting: closure_9.resolveUnreadSetting(channel) }), items1);
+  const stateFromStoresObject = obj4.useStateFromStoresObject(items, () => ({ hasUnread: outer1_8.hasUnread(channel.id), mentionCount: outer1_8.getMentionCount(channel.id), resolvedUnreadSetting: outer1_9.resolveUnreadSetting(channel) }), items1);
   let hasUnread = stateFromStoresObject.hasUnread;
   ({ mentionCount, resolvedUnreadSetting } = stateFromStoresObject);
-  let obj5 = arg1(dependencyMap[21]);
+  let obj5 = channel(15049);
   const channelSubtitleData = obj5.getChannelSubtitleData(subtitle);
   let type;
   if (null != subtitle) {
@@ -68,29 +70,28 @@ let closure_15 = importAllResult.memo((channel) => {
       text = subtitle.text;
     }
   }
-  let obj6 = arg1(dependencyMap[22]);
-  const gameMentionsAsPlainText = obj6.useGameMentionsAsPlainText(text);
-  importDefault = gameMentionsAsPlainText;
+  let obj6 = channel(9067);
+  gameMentionsAsPlainText = obj6.useGameMentionsAsPlainText(text);
   let result = null;
   if (null != gameMentionsAsPlainText) {
-    let obj7 = importDefault(dependencyMap[23]);
+    let obj7 = gameMentionsAsPlainText(4120);
     obj = { channelId: channel.id, linkVariant: "text-xs/medium" };
     result = obj7.parseVoiceChannelStatus(gameMentionsAsPlainText, true, obj);
   }
   let tmp12;
   if (!obj10.shouldSkipAccessibilityLabels()) {
     obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-    tmp12 = importDefault(dependencyMap[25])(obj);
+    tmp12 = gameMentionsAsPlainText(8450)(obj);
   }
   const items2 = [, , ];
   ({ id: arr4[0], guild_id: arr4[1] } = channel);
   items2[2] = gameMentionsAsPlainText;
   const effect = importAllResult.useEffect(() => {
     if (null !== gameMentionsAsPlainText) {
-      let obj = gameMentionsAsPlainText(closure_2[26]);
+      let obj = gameMentionsAsPlainText(outer1_2[26]);
       obj = {};
       ({ guild_id: obj2.guild_id, id: obj2.channel_id } = channel);
-      obj.track(constants.VOICE_CHANNEL_TOPIC_VIEWED, obj);
+      obj.track(outer1_11.VOICE_CHANNEL_TOPIC_VIEWED, obj);
     }
   }, items2);
   if (null == result) {
@@ -100,25 +101,25 @@ let closure_15 = importAllResult.memo((channel) => {
     }
     result = subtitle;
   }
-  const obj10 = arg1(dependencyMap[24]);
+  obj10 = channel(7641);
   const tmp17 = jsx;
   obj1 = {
     onPress() {
-      return function handleVoiceChannelPress(channel) {
-        return callback(...arguments);
-      }(channel);
+      return (function handleVoiceChannelPress(channel) {
+        return outer2_16(...arguments);
+      })(channel);
     },
     onLongPress() {
-      const result = channel(closure_2[29]).openChannelLongPressActionSheet(channel.id);
+      const result = channel(outer1_2[29]).openChannelLongPressActionSheet(channel.id);
     },
     style: obj.container,
     accessible: true,
     accessibilityRole: "button",
     accessibilityLabel: tmp12
   };
-  const tmp18 = jsx(importDefault(dependencyMap[27]), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
-  const intl = arg1(dependencyMap[30]).intl;
-  obj1.accessibilityHint = intl.string(arg1(dependencyMap[30]).t.9C444m);
+  const tmp18 = jsx(gameMentionsAsPlainText(15050), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
+  const intl = channel(1212).intl;
+  obj1.accessibilityHint = intl.string(channel(1212).t["9C444m"]);
   obj1.channel = channel;
   obj1.selected = selected;
   obj1.locked = locked;
@@ -133,29 +134,29 @@ let closure_15 = importAllResult.memo((channel) => {
   let tmp20 = null;
   if (0 !== ensureSyncedChannelVoiceStates.length) {
     if (collapsed) {
-      obj2 = { <string:879400349>: "mn", <string:2858505162>: "description", <string:1927653984>: "Array" };
+      obj2 = { channels: null, selectedChannelId: null, selectedVoiceChannelId: null };
       const items3 = [channel];
       obj2.channels = items3;
       obj3 = {};
       obj3[channel.id] = ensureSyncedChannelVoiceStates;
       obj2.voiceStates = obj3;
       obj4 = { style: obj.voiceStatesCollapsed };
-      const summarizedVoiceUsers = arg1(dependencyMap[31]).computeSummarizedVoiceUsers(obj2);
+      const summarizedVoiceUsers = channel(4312).computeSummarizedVoiceUsers(obj2);
       obj5 = { users: summarizedVoiceUsers, max: 8, guildId: channel.guild_id, renderIcon: false };
-      obj4.children = jsx(importDefault(dependencyMap[32]), obj5);
-      tmp20 = <View {...obj4} />;
-      const obj15 = arg1(dependencyMap[31]);
+      obj4.children = jsx(gameMentionsAsPlainText(14980), { users: summarizedVoiceUsers, max: 8, guildId: channel.guild_id, renderIcon: false });
+      tmp20 = <View style={obj.voiceStatesCollapsed} />;
+      const obj15 = channel(4312);
     } else {
       obj6 = { style: obj.voiceStates };
       obj7 = { channel, collapsed, voiceStates: ensureSyncedChannelVoiceStates };
-      obj6.children = jsx(importDefault(dependencyMap[33]), obj7);
-      tmp20 = <View {...obj6} />;
+      obj6.children = jsx(gameMentionsAsPlainText(14974), { channel, collapsed, voiceStates: ensureSyncedChannelVoiceStates });
+      tmp20 = <View style={obj.voiceStates} />;
     }
   }
   obj1.children = tmp20;
-  return tmp17(importDefault(dependencyMap[28]), obj1);
+  return tmp17(gameMentionsAsPlainText(14969), obj1);
 });
-const obj1 = { marginVertical: arg1(dependencyMap[8]).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: importDefault(dependencyMap[11]).radii.md };
+let obj1 = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
 const memoResult = importAllResult.memo((channel) => {
   let bypassLimit;
   let collapsed;
@@ -163,12 +164,11 @@ const memoResult = importAllResult.memo((channel) => {
   let selected;
   let subtitle;
   channel = channel.channel;
-  const arg1 = channel;
   ({ selected, subtitle } = channel);
-  const arr = importDefault(dependencyMap[35])(channel);
-  let obj = arg1(dependencyMap[20]);
+  const arr = importDefault(11179)(channel);
+  let obj = channel(566);
   const items = [closure_7, closure_6];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ locked: !closure_7.can(constants.CONNECT, channel), bypassLimit: closure_7.can(constants.MOVE_MEMBERS, channel), collapsed: collapsed.isCollapsed(channel.id) }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ locked: !outer1_7.can(outer1_12.CONNECT, channel), bypassLimit: outer1_7.can(outer1_12.MOVE_MEMBERS, channel), collapsed: outer1_6.isCollapsed(channel.id) }));
   obj = { channel };
   let length;
   ({ locked, bypassLimit, collapsed } = stateFromStoresObject);
@@ -181,7 +181,7 @@ const memoResult = importAllResult.memo((channel) => {
   }
   obj.embeddedActivitiesCount = num;
   obj.collapsed = collapsed;
-  let tmp6 = importDefault(dependencyMap[34])(channel.guild_id)[channel.id];
+  let tmp6 = importDefault(14982)(channel.guild_id)[channel.id];
   if (null == tmp6) {
     tmp6 = NO_VOICE_STATES;
   }
@@ -190,9 +190,9 @@ const memoResult = importAllResult.memo((channel) => {
   obj.locked = locked;
   obj.bypassLimit = bypassLimit;
   obj.subtitle = subtitle;
-  return <closure_15 {...obj} />;
+  return <closure_15 channel={channel} />;
 });
-const result = arg1(dependencyMap[36]).fileFinishedImporting("modules/channel_list_v2/native/items/VoiceChannel.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/channel_list_v2/native/items/VoiceChannel.tsx");
 
 export default memoResult;
 export const VOICE_USERS_MARGIN_TOP = -4;

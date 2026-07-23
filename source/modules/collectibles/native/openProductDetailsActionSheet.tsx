@@ -1,12 +1,11 @@
-// Module ID: 8729
-// Function ID: 69064
+// Module ID: 8736
+// Function ID: 69105
 // Name: PRODUCT_DETAILS_ACTION_SHEET_KEY
-// Dependencies: []
+// Dependencies: [6785, 6773, 4098, 8737, 1934, 2]
 // Exports: openProductDetailsActionSheet
 
-// Module 8729 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
+// Module 8736 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
+const result = require("showActionSheet").fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
 
 export const PRODUCT_DETAILS_ACTION_SHEET_KEY = "Shop Product Preview";
 export const openProductDetailsActionSheet = function openProductDetailsActionSheet(arg0, stack) {
@@ -19,7 +18,7 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
     initialVariantIndex = 0;
   }
   ({ analyticsLocations, shopAnalyticsContext } = arg0);
-  let obj = require(dependencyMap[0]);
+  let obj = require(6785) /* getProductOrbPrice */;
   const isVariantProduct = obj.getIsVariantProduct(product);
   let num = 0;
   if (isVariantProduct) {
@@ -33,8 +32,8 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
   } else {
     skuId = product.skuId;
   }
-  require(dependencyMap[1]).productDetailsOpened(skuId);
-  const obj2 = require(dependencyMap[1]);
+  require(6773) /* _createForOfIteratorHelperLoose */.productDetailsOpened(skuId);
+  const obj2 = require(6773) /* _createForOfIteratorHelperLoose */;
   obj = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
-  importDefault(dependencyMap[2]).openLazy(require(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), "Shop Product Preview", obj, stack);
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(8737, dependencyMap.paths), "Shop Product Preview", obj, stack);
 };

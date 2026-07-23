@@ -1,65 +1,86 @@
-// Module ID: 13432
-// Function ID: 101961
+// Module ID: 13546
+// Function ID: 104117
 // Name: DevToolsPersistedStoresActionSheet
-// Dependencies: []
+// Dependencies: [57, 31, 27, 567, 1194, 33, 4130, 689, 5165, 1882, 3831, 566, 1898, 1457, 5160, 8832, 8833, 8827, 5772, 4098, 4126, 9244, 5500, 5186, 5502, 2]
 // Exports: default
 
-// Module 13432 (DevToolsPersistedStoresActionSheet)
+// Module 13546 (DevToolsPersistedStoresActionSheet)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { PersistedStore } from "_superPropGet";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let require = arg1;
 function DevToolsPersistedStoresActionSheet(store) {
   store = store.store;
-  const arg1 = store;
-  const importDefault = store.close;
+  const close = store.close;
   let obj = {};
   obj = { title: store.getName() };
-  obj.header = jsx(arg1(dependencyMap[23]).BottomSheetTitleHeader, obj);
+  obj.header = jsx(store(5186).BottomSheetTitleHeader, { title: store.getName() });
   obj = { hasIcons: false };
   const obj1 = {
-    fetched: "#f0f8ff",
-    usernameSuggestionLoading: "#faebd7",
-    xml: "#00ffff",
+    variant: "danger",
+    label: "Clear persisted store",
+    subLabel: "App restart required to re-init the cleared store",
     onPress() {
       store.clear();
-      close(closure_2[10]).open({});
+      close(outer1_2[10]).open({ key: "DevToolsPersistedStoresActionSheet", content: "Store cleared from persisted storage" });
       close();
     }
   };
-  obj.children = jsx(arg1(dependencyMap[24]).ActionSheetRow, obj1);
-  obj.children = jsx(arg1(dependencyMap[24]).ActionSheetRow.Group, obj);
-  return jsx(arg1(dependencyMap[22]).ActionSheet, obj);
+  obj.children = jsx(store(5502).ActionSheetRow, {
+    variant: "danger",
+    label: "Clear persisted store",
+    subLabel: "App restart required to re-init the cleared store",
+    onPress() {
+      store.clear();
+      close(outer1_2[10]).open({ key: "DevToolsPersistedStoresActionSheet", content: "Store cleared from persisted storage" });
+      close();
+    }
+  });
+  obj.children = jsx(store(5502).ActionSheetRow.Group, { hasIcons: false });
+  return jsx(store(5500).ActionSheet, { hasIcons: false });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const PersistedStore = arg1(dependencyMap[3]).PersistedStore;
-let closure_7 = importDefault(dependencyMap[4]);
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj1 = arg1(dependencyMap[6]);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12, flex: 1 };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, flex: 1 };
 obj.container = obj;
-obj1 = { <string:3520545363>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000086916947618743, <string:1406347114>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010258372740256698, <string:2564671959>: 203543544958590500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:3226659658>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110481096015985, <string:1123936408>: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026578781074519194, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
-obj.sectionHeader = obj1;
-let closure_9 = obj1.createStyles(obj);
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, verticalAlign: "middle", flexDirection: "row", alignItems: "center", flex: 1 };
+obj.sectionHeader = _createForOfIteratorHelperLoose;
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_10 = importAllResult.memo(() => {
   const obj = {
-    reason: "targetFrames",
-    username_error: "VOICE_CHANNEL_SELECT",
+    label: "Disable Database",
+    start: true,
     onPress() {
-      const databaseResult = callback(closure_2[9]).database();
+      const databaseResult = outer1_1(outer1_2[9]).database();
       if (null != databaseResult) {
         databaseResult.disable("via UserSettingsDatabaseControls");
-        callback(closure_2[10]).open({});
-        const obj3 = callback(closure_2[10]);
+        outer1_1(outer1_2[10]).open({ key: "disable_database", content: "Database has been disabled." });
+        const obj3 = outer1_1(outer1_2[10]);
       }
     }
   };
-  return jsx(arg1(dependencyMap[8]).TableRow, obj);
+  return jsx(require(5165) /* TableRowInner */.TableRow, {
+    label: "Disable Database",
+    start: true,
+    onPress() {
+      const databaseResult = outer1_1(outer1_2[9]).database();
+      if (null != databaseResult) {
+        databaseResult.disable("via UserSettingsDatabaseControls");
+        outer1_1(outer1_2[10]).open({ key: "disable_database", content: "Database has been disabled." });
+        const obj3 = outer1_1(outer1_2[10]);
+      }
+    }
+  });
 });
 let closure_11 = importAllResult.memo(() => {
-  let obj = arg1(dependencyMap[11]);
-  const items = [importDefault(dependencyMap[12]), closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => callback(closure_2[12]).database(id.getId()));
-  obj = { lineClamp: null, maxFontSizeMultiplier: null, bottom: null };
+  let obj = require(566) /* initialize */;
+  const items = [importDefault(1898), _isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_1(outer1_2[12]).database(outer1_7.getId()));
+  obj = { label: null, start: true, end: true };
   let str = "No active database.";
   if (null != stateFromStores) {
     str = stateFromStores.name;
@@ -71,56 +92,64 @@ let closure_11 = importAllResult.memo(() => {
     combined = "Handle: " + stateFromStores.handle;
   }
   obj.subLabel = combined;
-  return jsx(arg1(dependencyMap[8]).TableRow, obj);
+  return jsx(require(5165) /* TableRowInner */.TableRow, { label: null, start: true, end: true });
 });
-let closure_12 = importAllResult.memo(() => jsx(arg1(dependencyMap[8]).TableRow, {
+let closure_12 = importAllResult.memo(() => jsx(require(5165) /* TableRowInner */.TableRow, {
   label: "Disable + Remove Database",
   onPress() {
-    const result = callback(closure_2[12]).replaceDisableAllDatabases("via UserSettingsDatabaseControls");
-    const obj = callback(closure_2[12]);
-    callback(closure_2[10]).open({ stateMachine: true, fit: true });
+    const result = outer1_1(outer1_2[12]).replaceDisableAllDatabases("via UserSettingsDatabaseControls");
+    const obj = outer1_1(outer1_2[12]);
+    outer1_1(outer1_2[10]).open({ key: "disable_database_and_remove", content: "Database has been removed." });
   }
 }));
 let closure_13 = importAllResult.memo(() => {
-  let obj = callback(dependencyMap[13]);
-  const callback = obj.useNavigation();
+  let obj = _require(1457);
+  _require = obj.useNavigation();
   obj = {
+    label: "View Cache Stats",
+    end: true,
     onPress() {
       navigation.navigate("cacheStats");
     }
   };
-  return jsx(callback(dependencyMap[8]).TableRow, obj);
+  return jsx(_require(5165).TableRow, {
+    label: "View Cache Stats",
+    end: true,
+    onPress() {
+      navigation.navigate("cacheStats");
+    }
+  });
 });
 let closure_14 = { DATABASE_CONTROLS: 0, [0]: "DATABASE_CONTROLS", DATABASE_CURRENT: 1, [1]: "DATABASE_CURRENT", PERSISTED_STORES: 2, [2]: "PERSISTED_STORES" };
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsDataStorageScreen.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsDataStorageScreen.tsx");
 
 export default function DevToolsDataStorageScreen() {
-  const tmp = callback3();
-  const arg1 = tmp;
-  const tmp2 = importDefault(dependencyMap[15])();
-  const tmp3 = importDefault(dependencyMap[16])();
-  const callback = importAllResult.useCallback((arg0) => {
+  let tmp = callback2();
+  const require = tmp;
+  const tmp2 = callback(persistedStores[15])();
+  const tmp3 = callback(persistedStores[16])();
+  callback = importAllResult.useCallback((arg0) => {
+    let closure_0 = arg0;
     const PersistedStore = callback(persistedStores[11]).PersistedStore;
     const all = PersistedStore.getAll();
     const found = all.filter((getName) => {
-      let hasItem = getName instanceof closure_6;
+      let hasItem = getName instanceof outer2_6;
       if (hasItem) {
         const name = getName.getName();
-        hasItem = name.toLocaleLowerCase().includes(getName.toLocaleLowerCase());
+        hasItem = name.toLocaleLowerCase().includes(closure_0.toLocaleLowerCase());
         const toLocaleLowerCaseResult = name.toLocaleLowerCase();
       }
       return hasItem;
     });
-    const callback = found;
     const items = [, , ];
-    ({ DATABASE_CONTROLS: arr2[0], DATABASE_CURRENT: arr2[1], PERSISTED_STORES: arr2[2] } = closure_14);
+    ({ DATABASE_CONTROLS: arr2[0], DATABASE_CURRENT: arr2[1], PERSISTED_STORES: arr2[2] } = outer1_14);
     return {
       sections: items.map((arg0) => {
-        if (constants.DATABASE_CONTROLS === arg0) {
+        if (outer2_14.DATABASE_CONTROLS === arg0) {
           return 3;
-        } else if (constants.DATABASE_CURRENT === arg0) {
+        } else if (outer2_14.DATABASE_CURRENT === arg0) {
           return 1;
-        } else if (constants.PERSISTED_STORES === arg0) {
+        } else if (outer2_14.PERSISTED_STORES === arg0) {
           let num3 = 1;
           if (found.length > 0) {
             num3 = found.length;
@@ -131,66 +160,64 @@ export default function DevToolsDataStorageScreen() {
       persistedStores: found
     };
   }, []);
-  const importDefault = callback;
-  const tmp6 = callback2(importAllResult.useState(() => callback("")), 2);
+  const tmp6 = callback(importAllResult.useState(() => callback("")), 2);
   const first = tmp6[0];
-  const persistedStores = first.persistedStores;
-  const dependencyMap = persistedStores;
-  let callback2 = tmp6[1];
-  const items = [persistedStores, callback];
+  persistedStores = first.persistedStores;
+  callback = tmp6[1];
+  let items = [persistedStores, callback];
   const items1 = [tmp];
   const callback1 = importAllResult.useCallback((arg0, arg1) => {
     let tmp = arg1;
-    if (constants.DATABASE_CONTROLS === arg0) {
+    if (outer1_14.DATABASE_CONTROLS === arg0) {
       if (0 === arg1) {
-        return callback(closure_10, {});
+        return outer1_8(outer1_10, {});
       } else if (1 === arg1) {
-        return callback(closure_12, {});
+        return outer1_8(outer1_12, {});
       } else if (2 === arg1) {
-        return callback(closure_13, {});
+        return outer1_8(outer1_13, {});
       } else {
         return null;
       }
-    } else if (constants.DATABASE_CURRENT === arg0) {
+    } else if (outer1_14.DATABASE_CURRENT === arg0) {
       let tmp14 = null;
       if (0 === arg1) {
-        tmp14 = callback(closure_11, {});
+        tmp14 = outer1_8(outer1_11, {});
       }
       return tmp14;
-    } else if (constants.PERSISTED_STORES === arg0) {
+    } else if (outer1_14.PERSISTED_STORES === arg0) {
       if (0 === arg1) {
         let obj = {};
         obj = {
           size: "md",
           onChange(arg0) {
-                return callback2(callback(arg0));
+                return outer1_3(outer1_1(arg0));
               }
         };
-        obj.label = callback(tmp(persistedStores[18]).SearchField, obj);
+        obj.label = outer1_8(tmp(persistedStores[18]).SearchField, obj);
         obj.start = true;
-        return callback(tmp(persistedStores[8]).TableRow, obj);
+        return outer1_8(tmp(persistedStores[8]).TableRow, obj);
       } else {
         if (1 === arg1) {
           if (0 === persistedStores.length) {
-            return callback(tmp(persistedStores[8]).TableRow, { x: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", backgroundColor: null });
+            return outer1_8(tmp(persistedStores[8]).TableRow, { label: "No results found.", end: true });
           }
         }
         obj = {
           label: persistedStores[arg1 - 1].getName(),
           end: arg1 === persistedStores.length,
           onPress() {
-                let obj = callback(closure_2[19]);
-                obj = { default: closure_15 };
+                let obj = callback(persistedStores[19]);
+                obj = { default: outer2_15 };
                 obj = {
-                  store: closure_2[closure_0 - 1],
+                  store: outer1_2[closure_0 - 1],
                   close() {
-                    return callback(closure_2[19]).hideActionSheet("DevToolsPersistedStoresActionSheet");
+                    return callback(persistedStores[19]).hideActionSheet("DevToolsPersistedStoresActionSheet");
                   }
                 };
                 obj.openLazy(Promise.resolve(obj), "DevToolsPersistedStoresActionSheet", obj);
               }
         };
-        return callback(tmp(persistedStores[8]).TableRow, obj);
+        return outer1_8(tmp(persistedStores[8]).TableRow, obj);
       }
     } else {
       tmp = null;
@@ -198,27 +225,27 @@ export default function DevToolsDataStorageScreen() {
     }
   }, items);
   callback2 = importAllResult.useCallback((arg0) => {
-    const obj = { style: closure_8.sectionHeader };
+    const obj = { style: outer1_8.sectionHeader, variant: "text-sm/semibold", color: "text-default" };
     let str = "Database Controls";
-    if (constants.DATABASE_CONTROLS !== arg0) {
+    if (outer1_14.DATABASE_CONTROLS !== arg0) {
       str = "Database (Current)";
-      if (constants.DATABASE_CURRENT !== arg0) {
-        if (constants.PERSISTED_STORES === arg0) {
+      if (outer1_14.DATABASE_CURRENT !== arg0) {
+        if (outer1_14.PERSISTED_STORES === arg0) {
           str = "Persisted Stores";
         }
       }
     }
     obj.children = str;
-    return closure_8(closure_8(persistedStores[20]).Text, obj);
+    return outer1_8(outer1_8(persistedStores[20]).Text, obj);
   }, items1);
   let obj = { sections: first.sections, renderItem: callback1, renderSectionHeader: callback2 };
-  const tmp4 = importDefault(dependencyMap[17])();
-  obj.insetEnd = importDefault(dependencyMap[14])({ includeKeyboardHeight: true }).insets.bottom + importDefault(dependencyMap[7]).space.PX_16;
+  const tmp4 = callback(persistedStores[17])();
+  obj.insetEnd = callback(persistedStores[14])({ includeKeyboardHeight: true }).insets.bottom + callback(persistedStores[7]).space.PX_16;
   obj.itemSize = tmp2;
   obj.sectionHeaderSize = tmp3;
   obj.estimatedListSize = "windowSize";
   obj.placeholderConfig = tmp4;
   obj.wrapChildren = true;
-  obj = { style: tmp.container, children: jsx(importDefault(dependencyMap[21]), obj) };
-  return <View {...obj} />;
+  obj = { style: tmp.container, children: jsx(callback(persistedStores[21]), { sections: first.sections, renderItem: callback1, renderSectionHeader: callback2 }) };
+  return <View style={tmp.container}>{jsx(callback(persistedStores[21]), { sections: first.sections, renderItem: callback1, renderSectionHeader: callback2 })}</View>;
 };

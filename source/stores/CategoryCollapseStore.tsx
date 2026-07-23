@@ -1,9 +1,21 @@
-// Module ID: 5073
-// Function ID: 44133
+// Module ID: 5076
+// Function ID: 44152
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1316, 1348, 4469, 1907, 653, 1282, 1327, 5077, 566, 686, 2]
 
-// Module 5073 (_isNativeReflectConstruct)
+// Module 5076 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +25,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +78,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -96,10 +108,10 @@ function incrementVersion() {
   closure_13 = closure_13 + 1;
 }
 function deleteCategory(id) {
-  if (null == closure_12[id]) {
+  if (null == dependencyMap[id]) {
     return false;
   } else {
-    delete r0[r1];
+    delete tmp[tmp2];
   }
 }
 function getFavoriteChannelsProto() {
@@ -118,11 +130,11 @@ function isFavoriteCategory(id) {
       type = tmp4.type;
     }
   }
-  return type === arg1(dependencyMap[10]).FavoriteChannelType.CATEGORY;
+  return type === require(1282) /* _callSuper */.FavoriteChannelType.CATEGORY;
 }
 function syncFavoriteCategoryCollapse() {
-  const tmp2 = getFavoriteChannelsProto();
-  if (null == tmp2) {
+  const tmp4 = getFavoriteChannelsProto();
+  if (null == tmp4) {
     return false;
   } else {
     let flag3 = false;
@@ -132,32 +144,32 @@ function syncFavoriteCategoryCollapse() {
       let flag = flag3;
       flag2 = flag3;
       while (keys[tmp] !== undefined) {
-        let tmp10 = tmp3;
-        let tmp11 = tmp2[tmp3];
-        let tmp12 = arg1;
-        let tmp13 = dependencyMap;
+        let tmp12 = tmp5;
+        let tmp13 = tmp4[tmp5];
+        let tmp14 = require;
+        let tmp15 = dependencyMap;
         flag3 = flag;
-        if (tmp11.type !== arg1(dependencyMap[10]).FavoriteChannelType.CATEGORY) {
+        if (tmp13.type !== require(1282) /* _callSuper */.FavoriteChannelType.CATEGORY) {
           continue;
         } else {
-          let tmp4 = closure_12;
-          let tmp5 = closure_12[tmp3];
-          if (tmp11.collapsed) {
-            if (!tmp5) {
-              let tmp7 = closure_12;
-              closure_12[tmp3] = true;
+          let tmp6 = dependencyMap;
+          let tmp7 = dependencyMap[tmp5];
+          if (tmp13.collapsed) {
+            if (!tmp7) {
+              let tmp9 = dependencyMap;
+              dependencyMap[tmp5] = true;
               flag = true;
             }
             flag3 = flag;
           } else {
             flag3 = flag;
-            if (tmp5) {
-              let tmp6 = closure_12;
-              delete r15[r14];
+            if (tmp7) {
+              let tmp8 = dependencyMap;
+              delete tmp3[tmp2];
               flag3 = true;
             }
           }
-          // continue
+          continue;
         }
         continue;
       }
@@ -165,31 +177,21 @@ function syncFavoriteCategoryCollapse() {
     return flag2;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-const ChannelTypes = arg1(dependencyMap[9]).ChannelTypes;
 let closure_12 = {};
-let closure_13 = 0;
-let tmp2 = (PersistedStore) => {
+let c13 = 0;
+let tmp2 = ((PersistedStore) => {
   class CategoryCollapseStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, CategoryCollapseStore);
-      obj = closure_5(CategoryCollapseStore);
-      tmp2 = closure_4;
-      if (closure_14()) {
+      tmp = outer1_2(this, CategoryCollapseStore);
+      obj = outer1_5(CategoryCollapseStore);
+      tmp2 = outer1_4;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -198,28 +200,28 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = CategoryCollapseStore;
   callback2(CategoryCollapseStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       let obj = arg0;
       const self = this;
-      this.waitFor(closure_8, closure_9, closure_10, closure_7);
-      this.removeChangeListener(closure_17);
-      this.addChangeListener(closure_17);
+      this.waitFor(outer1_8, outer1_9, outer1_10, outer1_7);
+      this.removeChangeListener(outer1_17);
+      this.addChangeListener(outer1_17);
       if (null == arg0) {
         obj = {};
       }
-      const items = [closure_7];
-      self.syncWith(items, closure_21);
+      const outer1_12 = obj;
+      const items = [outer1_7];
+      self.syncWith(items, outer1_21);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[1] = obj;
@@ -231,11 +233,11 @@ let tmp2 = (PersistedStore) => {
         tmp = "null" === arg0;
       }
       if (!tmp) {
-        tmp = !closure_12[arg0];
+        tmp = !outer1_12[arg0];
       }
       let tmp3 = !tmp;
       if (!tmp) {
-        tmp3 = closure_12[arg0];
+        tmp3 = outer1_12[arg0];
       }
       return tmp3;
     }
@@ -244,58 +246,58 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getCollapsedCategories",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[4] = {
     key: "version",
     get() {
-      return closure_13;
+      return outer1_13;
     }
   };
   return callback(CategoryCollapseStore, items);
-}(importDefault(dependencyMap[13]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "CategoryCollapseStore";
 tmp2.persistKey = "collapsedCategories";
-tmp2 = new tmp2(importDefault(dependencyMap[14]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(userGuildSettings) {
     let iter6;
     if (!userGuildSettings.userGuildSettings.partial) {
       let closure_12 = {};
     }
-    const tmp = _createForOfIteratorHelperLoose(userGuildSettings.userGuildSettings.entries);
-    const iter = tmp();
+    const tmp3 = _createForOfIteratorHelperLoose(userGuildSettings.userGuildSettings.entries);
+    const iter = tmp3();
     let iter2 = iter;
     if (!iter.done) {
       do {
         let value = iter2.value;
-        let tmp3 = tmp2;
+        let tmp5 = tmp4;
         if (null != value.channel_overrides) {
-          let tmp4 = closure_15;
-          let tmp5 = closure_15(value.channel_overrides);
-          let iter3 = tmp5();
+          let tmp6 = _createForOfIteratorHelperLoose;
+          let tmp7 = _createForOfIteratorHelperLoose(value.channel_overrides);
+          let iter3 = tmp7();
           let iter4 = iter3;
-          let tmp6 = iter3;
-          let tmp7 = tmp5;
-          tmp3 = tmp2;
+          let tmp8 = iter3;
+          let tmp9 = tmp7;
+          tmp5 = tmp4;
           if (!iter3.done) {
             do {
               value = iter4.value;
               if (value.collapsed) {
                 closure_12[value.channel_id] = true;
               } else {
-                delete r14[r2];
+                delete tmp2[tmp];
               }
-              let iter5 = tmp5();
+              iter5 = tmp7();
               iter4 = iter5;
-              let tmp8 = iter5;
-              let tmp9 = tmp5;
-              tmp3 = value;
+              let tmp10 = iter5;
+              let tmp11 = tmp7;
+              tmp5 = value;
             } while (!iter5.done);
           }
         }
-        iter6 = tmp();
-        let tmp2 = tmp3;
+        iter6 = tmp3();
+        tmp4 = tmp5;
         iter2 = iter6;
       } while (!iter6.done);
     }
@@ -306,9 +308,9 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
     userGuildSettings = userGuildSettings.userGuildSettings;
     const mapped = userGuildSettings.map((guild_id) => guild_id.guild_id);
     for (const key10024 in closure_12) {
-      let tmp8 = key10024;
-      let tmp9 = closure_8;
-      let channel = closure_8.getChannel(key10024);
+      let tmp10 = key10024;
+      let tmp11 = channel;
+      let channel = channel.getChannel(key10024);
       let hasItem = null != channel;
       if (hasItem) {
         hasItem = null != channel.guild_id;
@@ -319,34 +321,34 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
       if (!hasItem) {
         continue;
       } else {
-        let tmp2 = closure_12;
+        let tmp4 = closure_12;
         let id = channel.id;
-        delete r11[r10];
-        // continue
+        delete tmp2[tmp];
+        continue;
       }
       continue;
     }
-    const tmp3 = _createForOfIteratorHelperLoose(userGuildSettings);
-    const iter = tmp3();
+    const tmp5 = _createForOfIteratorHelperLoose(userGuildSettings);
+    const iter = tmp5();
     let iter2 = iter;
     if (!iter.done) {
       do {
-        let tmp4 = closure_15;
-        let tmp5 = closure_15(iter2.value.channel_overrides);
-        let iter3 = tmp5();
+        let tmp6 = _createForOfIteratorHelperLoose;
+        let tmp7 = _createForOfIteratorHelperLoose(iter2.value.channel_overrides);
+        let iter3 = tmp7();
         if (!iter3.done) {
           do {
             let value = iter3.value;
             if (value.collapsed) {
-              let tmp6 = closure_12;
+              let tmp8 = closure_12;
               closure_12[value.channel_id] = true;
             }
-            let iter4 = tmp5();
+            iter4 = tmp7();
             iter3 = iter4;
-            let tmp7 = value;
+            let tmp9 = value;
           } while (!iter4.done);
         }
-        iter5 = tmp3();
+        iter5 = tmp5();
         iter2 = iter5;
       } while (!iter5.done);
     }
@@ -356,8 +358,8 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
     const tmp = isFavoriteCategory(id);
     let tmp2 = !tmp;
     if (!tmp) {
-      if (!closure_12[id]) {
-        closure_12[id] = true;
+      if (!dependencyMap[id]) {
+        dependencyMap[id] = true;
       }
       tmp2 = tmp4;
     }
@@ -377,30 +379,30 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
     if (obj.isFavoritesGuildId(guildId)) {
       return false;
     } else {
-      const item = store.getChannels(guildId)[closure_11.GUILD_CATEGORY].forEach((channel) => {
+      const item = store.getChannels(guildId)[ChannelTypes.GUILD_CATEGORY].forEach((channel) => {
         channel = channel.channel;
         if ("null" !== channel.id) {
-          closure_12[channel.id] = true;
+          outer1_12[channel.id] = true;
         }
       });
     }
-    const obj = arg1(dependencyMap[12]);
+    obj = require(5077) /* isFavoritesGuildId */;
   },
   CATEGORY_EXPAND_ALL: function handleCategoryExpandAll(guildId) {
     guildId = guildId.guildId;
     if (obj.isFavoritesGuildId(guildId)) {
       return false;
     } else {
-      const item = store.getChannels(guildId)[closure_11.GUILD_CATEGORY].forEach((arg0) => {
-        delete r1[r0];
+      const item = store.getChannels(guildId)[ChannelTypes.GUILD_CATEGORY].forEach((arg0) => {
+        delete tmp2[tmp];
       });
     }
-    const obj = arg1(dependencyMap[12]);
+    obj = require(5077) /* isFavoritesGuildId */;
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     return deleteCategory(channel.channel.id);
   }
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("stores/CategoryCollapseStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/CategoryCollapseStore.tsx");
 
 export default tmp2;

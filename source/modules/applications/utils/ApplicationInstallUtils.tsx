@@ -1,10 +1,14 @@
-// Module ID: 8185
-// Function ID: 64668
+// Module ID: 8191
+// Function ID: 64705
 // Name: canInstallApplication
-// Dependencies: []
+// Dependencies: [7920, 4566, 8180, 2]
 // Exports: isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 8185 (canInstallApplication)
+// Module 8191 (canInstallApplication)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { BuiltInSectionId } from "TRUE_OPTION_NAME";
+
+const require = arg1;
 function canInstallApplication(application) {
   const integrationTypesConfig = application.integrationTypesConfig;
   let tmp = null != application.customInstallUrl || null != application.installParams;
@@ -33,9 +37,7 @@ function canInstallApplication(application) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const BuiltInSectionId = arg1(dependencyMap[1]).BuiltInSectionId;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
+const result = require("ApplicationIntegrationType").fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
 
 export { canInstallApplication };
 export const isAppUserInstallable = function isAppUserInstallable(customInstallUrl) {
@@ -45,7 +47,7 @@ export const isAppUserInstallable = function isAppUserInstallable(customInstallU
     tmp = null != integrationTypesConfig;
   }
   if (tmp) {
-    tmp = arg1(dependencyMap[2]).ApplicationIntegrationType.USER_INSTALL in integrationTypesConfig;
+    tmp = require(8180) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL in integrationTypesConfig;
   }
   return tmp;
 };
@@ -56,19 +58,19 @@ export const shouldInstallApplicationOnDemand = function shouldInstallApplicatio
   ({ applicationId, channel, commandIntegrationTypes } = arg0);
   let tmp = null != commandIntegrationTypes;
   if (tmp) {
-    tmp = !commandIntegrationTypes.includes(arg1(dependencyMap[2]).ApplicationIntegrationType.USER_INSTALL);
+    tmp = !commandIntegrationTypes.includes(require(8180) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
   }
   let tmp4 = !tmp;
   if (!tmp) {
     let tmp7 = !tmp6;
     if (applicationId !== BuiltInSectionId.BUILT_IN) {
-      let tmp9 = !closure_2.hasUserStateApplication(applicationId);
+      let tmp9 = !_isNativeReflectConstruct.hasUserStateApplication(applicationId);
       if (tmp9) {
         let tmp10 = null == channel;
         if (!tmp10) {
           const obj = { applicationId };
           ({ id: obj.channelId, guild_id: obj.guildId } = channel);
-          tmp10 = !closure_2.hasContextStateApplication(obj);
+          tmp10 = !_isNativeReflectConstruct.hasContextStateApplication(obj);
         }
         tmp9 = tmp10;
       }

@@ -1,22 +1,26 @@
-// Module ID: 11538
-// Function ID: 89857
+// Module ID: 11548
+// Function ID: 89906
 // Name: PromoSheet
-// Dependencies: []
+// Dependencies: [29, 31, 27, 33, 4130, 689, 1324, 8574, 5187, 4541, 8573, 4126, 2]
 // Exports: PromoSheet
 
-// Module 11538 (PromoSheet)
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { content: { "Bool(false)": 0, "Bool(false)": 3 }, title: { textAlign: "center" }, description: { textAlign: "center" }, illustration: { "Null": "w", "Null": "Array" } };
-obj = { alignSelf: "center", maxWidth: importDefault(dependencyMap[5]).modules.mobile.PROMO_SHEET_GRAPHIC_MAX_WIDTH };
-obj.graphic = obj;
-let closure_9 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("design/components/Sheet/native/PromoSheet.native.tsx");
+// Module 11548 (PromoSheet)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+let closure_3 = ["title", "description", "illustration", "graphic", "gradientColor", "actions"];
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = { content: { paddingHorizontal: 20, position: "relative" }, title: { textAlign: "center" }, description: { textAlign: "center" }, illustration: { alignSelf: "stretch", alignItems: "center" } };
+_createForOfIteratorHelperLoose = { alignSelf: "center", maxWidth: require("_createForOfIteratorHelperLoose").modules.mobile.PROMO_SHEET_GRAPHIC_MAX_WIDTH };
+_createForOfIteratorHelperLoose.graphic = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Sheet/native/PromoSheet.native.tsx");
 
 export const PromoSheet = function PromoSheet(arg0) {
   let actions;
@@ -26,27 +30,26 @@ export const PromoSheet = function PromoSheet(arg0) {
   let illustration;
   let title;
   ({ description, illustration, graphic, gradientColor } = arg0);
-  const arg1 = gradientColor;
   ({ title, actions } = arg0);
-  const tmp2 = importDefault(dependencyMap[6])("PromoSheet");
-  const importDefault = tmp2;
-  const tmp3 = callback3();
+  const tmp2 = importDefault(1324)("PromoSheet");
+  importDefault = tmp2;
+  const tmp3 = _createForOfIteratorHelperLoose();
   const items = [tmp2, gradientColor];
   const memo = React.useMemo(() => {
-    if (tmp2) {
+    if (closure_1) {
       if (null != gradientColor) {
         return (arg0) => {
           let obj = {};
           const merged = Object.assign(arg0);
-          obj = { offsetBottom: 0.25, color: callback, backgroundColor: callback2(closure_2[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-          obj["children"] = callback3(callback(closure_2[7]).ExpressiveGradient, obj);
-          return callback3(closure_6, obj);
+          obj = { offsetBottom: 0.25, color: outer1_0, backgroundColor: callback(outer2_2[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+          obj["children"] = outer2_7(gradientColor(outer2_2[7]).ExpressiveGradient, obj);
+          return outer2_7(outer2_6, obj);
         };
       }
     }
   }, items);
   let obj = {};
-  const merged = Object.assign(callback(arg0, closure_3));
+  let merged = Object.assign(callback(arg0, closure_3));
   obj["startExpanded"] = true;
   obj["contentStyles"] = tmp3.content;
   obj["backgroundComponent"] = memo;
@@ -56,7 +59,7 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj = {};
       const merged1 = Object.assign(graphic);
       obj["style"] = tmp3.graphic;
-      let tmp10 = callback2(arg1(dependencyMap[10]).Graphic, obj);
+      let tmp10 = callback2(gradientColor(8573).Graphic, obj);
     }
     const items1 = [tmp10, , ];
     const obj1 = {};
@@ -69,7 +72,7 @@ export const PromoSheet = function PromoSheet(arg0) {
     obj2.color = "mobile-text-heading-primary";
     obj2.style = tmp3.title;
     obj2.children = title;
-    const items2 = [callback2(arg1(dependencyMap[11]).Text, obj2), ];
+    const items2 = [callback2(gradientColor(4126).Text, obj2), ];
     let tmp24Result = null;
     if (null != description) {
       const obj3 = {};
@@ -85,16 +88,16 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj3.color = str5;
       obj3.style = tmp3.description;
       obj3.children = description;
-      tmp24Result = callback2(arg1(dependencyMap[11]).Text, obj3);
+      tmp24Result = callback2(gradientColor(4126).Text, obj3);
       const tmp24 = callback2;
     }
     items2[1] = tmp24Result;
     obj1.children = items2;
-    items1[1] = closure_8(arg1(dependencyMap[9]).Stack, obj1);
+    items1[1] = closure_8(gradientColor(4541).Stack, obj1);
     items1[2] = actions;
     obj.children = items1;
     obj["children"] = closure_8(tmp8, obj);
-    return callback2(arg1(dependencyMap[8]).BottomSheet, obj);
+    return callback2(gradientColor(5187).BottomSheet, obj);
   }
   tmp10 = null;
   if (null != illustration) {

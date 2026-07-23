@@ -1,16 +1,25 @@
-// Module ID: 15208
-// Function ID: 114767
+// Module ID: 15324
+// Function ID: 116937
 // Name: getSearchTokenText
-// Dependencies: []
+// Dependencies: [9103, 9133, 653, 1212, 10970, 9657, 12852, 4647, 8461, 15325, 15327, 9029, 10079, 11406, 11398, 4098, 8389, 1934, 10076, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 15208 (getSearchTokenText)
+// Module 15324 (getSearchTokenText)
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+let closure_6;
+let closure_7;
+let closure_8;
 function getSearchTokenText(arg0) {
-  let tmp = importDefault(dependencyMap[12])[arg0];
+  let tmp = importDefault(10079)[arg0];
   if (null == tmp) {
-    const result = require(dependencyMap[12]).rebuildSearchTokenConfigs();
-    tmp = importDefault(dependencyMap[12])[arg0];
-    const obj = require(dependencyMap[12]);
+    const result = require(10079) /* getMonths */.rebuildSearchTokenConfigs();
+    tmp = importDefault(10079)[arg0];
+    const obj = require(10079) /* getMonths */;
   }
   let key;
   if (null != tmp) {
@@ -21,45 +30,41 @@ function getSearchTokenText(arg0) {
   }
   return key;
 }
-const _module = require(dependencyMap[0]);
-({ EMPTY_SEARCH_QUERY_STRING: closure_3, SearchQueryTagTypes: closure_4 } = _module);
-const SearchFilterAddLocations = require(dependencyMap[1]).SearchFilterAddLocations;
-const _module1 = require(dependencyMap[2]);
-({ SEARCH_DATE_FORMAT: closure_6, SearchTokenTypes: closure_7, SearchTypes: closure_8 } = _module1);
-const _module2 = require(dependencyMap[19]);
-const result = _module2.fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterUtils.tsx");
+({ EMPTY_SEARCH_QUERY_STRING: closure_3, SearchQueryTagTypes: closure_4 } = SearchAutocompleteSelectAnalyticsActions);
+({ SEARCH_DATE_FORMAT: closure_6, SearchTokenTypes: closure_7, SearchTypes: closure_8 } = ME);
+let result = require("ME").fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterUtils.tsx");
 
-export const getSearchTokenLabel = function getSearchTokenLabel(closure_0, searchTokenType) {
+export const getSearchTokenLabel = function getSearchTokenLabel(outer1_0, searchTokenType) {
   if (constants.FILTER_FROM === searchTokenType) {
-    const intl9 = require(dependencyMap[3]).intl;
-    return intl9.string(require(dependencyMap[3]).t.6iuVMn);
+    const intl9 = require(1212) /* getSystemLocale */.intl;
+    return intl9.string(require(1212) /* getSystemLocale */.t["6iuVMn"]);
   } else if (constants.FILTER_HAS === searchTokenType) {
-    const intl8 = require(dependencyMap[3]).intl;
-    return intl8.string(require(dependencyMap[3]).t.DMAzx8);
+    const intl8 = require(1212) /* getSystemLocale */.intl;
+    return intl8.string(require(1212) /* getSystemLocale */.t.DMAzx8);
   } else if (constants.FILTER_MENTIONS === searchTokenType) {
-    const intl7 = require(dependencyMap[3]).intl;
-    return intl7.string(require(dependencyMap[3]).t.CMKzQx);
+    const intl7 = require(1212) /* getSystemLocale */.intl;
+    return intl7.string(require(1212) /* getSystemLocale */.t.CMKzQx);
   } else if (constants.FILTER_IN === searchTokenType) {
-    if (closure_0.type === constants2.DMS) {
-      const intl6 = require(dependencyMap[3]).intl;
-      let stringResult = intl6.string(require(dependencyMap[3]).t.8Fmo42);
+    if (outer1_0.type === constants2.DMS) {
+      const intl6 = require(1212) /* getSystemLocale */.intl;
+      let stringResult = intl6.string(require(1212) /* getSystemLocale */.t["8Fmo42"]);
     } else {
-      const intl5 = require(dependencyMap[3]).intl;
-      stringResult = intl5.string(require(dependencyMap[3]).t.cdPmq8);
+      const intl5 = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl5.string(require(1212) /* getSystemLocale */.t.cdPmq8);
     }
     return stringResult;
   } else if (constants.FILTER_ON === searchTokenType) {
-    const intl4 = require(dependencyMap[3]).intl;
-    return intl4.string(require(dependencyMap[3]).t.h4qGfp);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(require(1212) /* getSystemLocale */.t.h4qGfp);
   } else if (constants.FILTER_BEFORE === searchTokenType) {
-    const intl3 = require(dependencyMap[3]).intl;
-    return intl3.string(require(dependencyMap[3]).t.c9qSBR);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.c9qSBR);
   } else if (constants.FILTER_AFTER === searchTokenType) {
-    const intl2 = require(dependencyMap[3]).intl;
-    return intl2.string(require(dependencyMap[3]).t.hcMwDW);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.hcMwDW);
   } else if (constants.FILTER_AUTHOR_TYPE === searchTokenType) {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.C4r6xL);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.C4r6xL);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -69,29 +74,29 @@ export const getSearchTokenLabel = function getSearchTokenLabel(closure_0, searc
 };
 export const getSearchTokenSubLabel = function getSearchTokenSubLabel(searchTokenType) {
   if (constants.FILTER_FROM === searchTokenType) {
-    const intl8 = require(dependencyMap[3]).intl;
-    return intl8.string(require(dependencyMap[3]).t.kkGlww);
+    const intl8 = require(1212) /* getSystemLocale */.intl;
+    return intl8.string(require(1212) /* getSystemLocale */.t.kkGlww);
   } else if (constants.FILTER_HAS === searchTokenType) {
-    const intl7 = require(dependencyMap[3]).intl;
-    return intl7.string(require(dependencyMap[3]).t.gUfZa2);
+    const intl7 = require(1212) /* getSystemLocale */.intl;
+    return intl7.string(require(1212) /* getSystemLocale */.t.gUfZa2);
   } else if (constants.FILTER_IN === searchTokenType) {
-    const intl6 = require(dependencyMap[3]).intl;
-    return intl6.string(require(dependencyMap[3]).t.qDUdlT);
+    const intl6 = require(1212) /* getSystemLocale */.intl;
+    return intl6.string(require(1212) /* getSystemLocale */.t.qDUdlT);
   } else if (constants.FILTER_MENTIONS === searchTokenType) {
-    const intl5 = require(dependencyMap[3]).intl;
-    return intl5.string(require(dependencyMap[3]).t.ILtwK5);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    return intl5.string(require(1212) /* getSystemLocale */.t.ILtwK5);
   } else if (constants.FILTER_ON === searchTokenType) {
-    const intl4 = require(dependencyMap[3]).intl;
-    return intl4.string(require(dependencyMap[3]).t.t8bWvr);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(require(1212) /* getSystemLocale */.t.t8bWvr);
   } else if (constants.FILTER_BEFORE === searchTokenType) {
-    const intl3 = require(dependencyMap[3]).intl;
-    return intl3.string(require(dependencyMap[3]).t.YEN3uU);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.YEN3uU);
   } else if (constants.FILTER_AFTER === searchTokenType) {
-    const intl2 = require(dependencyMap[3]).intl;
-    return intl2.string(require(dependencyMap[3]).t.hwbB7s);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.hwbB7s);
   } else if (constants.FILTER_AUTHOR_TYPE === searchTokenType) {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.tJPdhZ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.tJPdhZ);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -101,21 +106,21 @@ export const getSearchTokenSubLabel = function getSearchTokenSubLabel(searchToke
 };
 export const getSearchTokenIcon = function getSearchTokenIcon(searchTokenType) {
   if (constants.FILTER_FROM === searchTokenType) {
-    return require(dependencyMap[4]).UserIcon;
+    return require(10970) /* UserIcon */.UserIcon;
   } else if (constants.FILTER_HAS === searchTokenType) {
-    return require(dependencyMap[5]).AttachmentIcon;
+    return require(9657) /* AttachmentIcon */.AttachmentIcon;
   } else if (constants.FILTER_IN === searchTokenType) {
-    return require(dependencyMap[6]).ChannelListMagnifyingGlassIcon;
+    return require(12852) /* ChannelListMagnifyingGlassIcon */.ChannelListMagnifyingGlassIcon;
   } else if (constants.FILTER_MENTIONS === searchTokenType) {
-    return require(dependencyMap[7]).AtIcon;
+    return require(4647) /* AtIcon */.AtIcon;
   } else if (constants.FILTER_ON === searchTokenType) {
-    return require(dependencyMap[8]).CalendarIcon;
+    return require(8461) /* CalendarIcon */.CalendarIcon;
   } else if (constants.FILTER_BEFORE === searchTokenType) {
-    return require(dependencyMap[9]).CalendarMinusIcon;
+    return require(15325) /* CalendarMinusIcon */.CalendarMinusIcon;
   } else if (constants.FILTER_AFTER === searchTokenType) {
-    return require(dependencyMap[10]).CalendarPlusIcon;
+    return require(15327) /* CalendarPlusIcon */.CalendarPlusIcon;
   } else if (constants.FILTER_AUTHOR_TYPE === searchTokenType) {
-    return require(dependencyMap[11]).RobotIcon;
+    return require(9029) /* RobotIcon */.RobotIcon;
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -123,10 +128,10 @@ export const getSearchTokenIcon = function getSearchTokenIcon(searchTokenType) {
     throw error;
   }
 };
-export const getSearchTokenPressHandler = function getSearchTokenPressHandler(closure_0, token, CONTEXT_MENU) {
-  const require = closure_0;
-  const importDefault = token;
-  const dependencyMap = CONTEXT_MENU;
+export const getSearchTokenPressHandler = function getSearchTokenPressHandler(outer1_0, token, CONTEXT_MENU) {
+  let closure_0 = outer1_0;
+  let closure_1 = token;
+  let closure_2 = CONTEXT_MENU;
   if (constants.FILTER_FROM !== token) {
     if (constants.FILTER_IN !== token) {
       if (constants.FILTER_HAS !== token) {
@@ -143,23 +148,25 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(cl
               }
             }
             return () => {
-              function handleSearchDateTokenPress(arg0, arg1, arg2) {
-                const result = arg0(arg2[14]).performKeyboardAwareNavigation(() => {
-                  let obj = arg1(arg2[15]);
+              (function handleSearchDateTokenPress(closure_0, closure_1, closure_2) {
+                const callback = closure_0;
+                const table = closure_2;
+                const result = callback(table[14]).performKeyboardAwareNavigation(() => {
+                  let obj = callback2(paths[15]);
                   obj = {
                     onSubmit(format) {
-                      let closure_0 = format.format(closure_6);
-                      let obj = callback(closure_2[13]);
-                      obj.updateSearchQuery(closure_0, () => { ... });
-                      obj = { searchContext: closure_0, searchTokenType: callback, location: closure_2 };
-                      callback(closure_2[18]).trackSearchFilterAdd(obj);
-                      const obj2 = callback(closure_2[18]);
-                      const initialMessages = callback(closure_2[14]).fetchInitialMessages(closure_0);
+                      let closure_0 = format.format(outer4_6);
+                      let obj = callback(11406);
+                      obj.updateSearchQuery(outer1_0, () => { ... });
+                      obj = { searchContext: outer1_0, searchTokenType: outer1_1, location: outer1_2 };
+                      callback(10076).trackSearchFilterAdd(obj);
+                      const obj2 = callback(10076);
+                      const initialMessages = callback(11398).fetchInitialMessages(outer1_0);
                     }
                   };
-                  obj.openLazy(arg0(arg2[17])(arg2[16], arg2.paths), "DatePicker", obj);
+                  obj.openLazy(callback(paths[17])(paths[16], paths.paths), "DatePicker", obj);
                 });
-              }(arg0, arg1, arg2);
+              })(closure_0, closure_1, closure_2);
             };
           }
         }
@@ -167,33 +174,34 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(cl
     }
   }
   return () => {
-    function handleSearchTokenPress(searchContext, arg1, arg2) {
-      arg2(closure_2[13]).updateSearchQuery(searchContext, (saveDraftTextInputValue) => {
-        if (arg2 === constants2.CONTEXT_MENU) {
+    (function handleSearchTokenPress(closure_0, closure_1, closure_2) {
+      closure_0 = closure_1;
+      const callback = closure_2;
+      callback(11406).updateSearchQuery(closure_0, (saveDraftTextInputValue) => {
+        if (closure_1 === outer3_5.CONTEXT_MENU) {
           const result = saveDraftTextInputValue.saveDraftTextInputValue();
         }
-        saveDraftTextInputValue.setTextInputValue(closure_3);
-        saveDraftTextInputValue.addTag({ type: constants.PREFIX, searchTokenType: arg1, location: arg2, text: callback(arg1) });
+        saveDraftTextInputValue.setTextInputValue(outer3_3);
+        saveDraftTextInputValue.addTag({ type: outer3_4.PREFIX, searchTokenType: closure_0, location: closure_1, text: outer3_9(closure_0) });
       });
-      const obj = arg2(closure_2[13]);
-      arg2(closure_2[14]).syncAutocomplete(searchContext);
-    }(arg0, arg1, arg2);
+      const obj = callback(11406);
+      callback(11398).syncAutocomplete(closure_0);
+    })(closure_0, closure_1, closure_2);
   };
 };
 export const getSearchFilterSuggestions = function getSearchFilterSuggestions(textInputValue) {
-  const require = textInputValue;
+  let closure_0 = textInputValue;
   const items = [];
-  const importDefault = items;
-  const keys = Object.keys(importDefault(dependencyMap[12]));
+  const keys = Object.keys(items(10079));
   const item = keys.forEach((token) => {
-    let obj = token(closure_2[12]);
+    let obj = textInputValue(outer1_2[12]);
     if (obj.isSearchFilterTokenType(token)) {
-      const plainText = items(closure_2[12])[token].plainText;
+      const plainText = items(outer1_2[12])[token].plainText;
       if (null != plainText) {
         const _RegExp = RegExp;
         const _HermesInternal = HermesInternal;
         const regExp = new RegExp("^" + plainText + "(?:: ?)?$", "i");
-        if (regExp.test(token)) {
+        if (regExp.test(textInputValue)) {
           obj = { token, text: plainText };
           items.push(obj);
         }

@@ -1,13 +1,13 @@
-// Module ID: 6601
-// Function ID: 50834
+// Module ID: 6606
+// Function ID: 50863
 // Name: VibeWithWumpusSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6607, 2]
 // Exports: VibeWithWumpusSpotIllustration
 
-// Module 6601 (VibeWithWumpusSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/VibeWithWumpusSpotIllustration.native.tsx");
+// Module 6606 (VibeWithWumpusSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/VibeWithWumpusSpotIllustration.native.tsx");
 
 export const VibeWithWumpusSpotIllustration = function VibeWithWumpusSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const VibeWithWumpusSpotIllustration = function VibeWithWumpusSpotIllustr
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6607) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const VibeWithWumpusSpotIllustration = function VibeWithWumpusSpotIllustr
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

@@ -1,18 +1,17 @@
-// Module ID: 15969
-// Function ID: 122474
+// Module ID: 16086
+// Function ID: 124647
 // Name: closeIFrameModal
-// Dependencies: [6, 7, 15, 17]
+// Dependencies: [16084, 4337, 686, 2]
 // Exports: default
 
-// Module 15969 (closeIFrameModal)
-import { INTERACTION_IFRAME_MODAL_KEY as closure_2 } from "_classCallCheck";
-import _getPrototypeOf from "_getPrototypeOf";
+// Module 16086 (closeIFrameModal)
+import { INTERACTION_IFRAME_MODAL_KEY as closure_2 } from "INTERACTION_IFRAME_MODAL_KEY";
 
-const result = _getPrototypeOf.fileFinishedImporting("modules/interaction_components/closeIFrameModal.native.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/interaction_components/closeIFrameModal.native.tsx");
 
 export default function closeIFrameModal(applicationId) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(4337);
   obj.popWithKey(closure_2);
   obj = { type: "INTERACTION_IFRAME_MODAL_CLOSE", applicationId };
-  importDefault(dependencyMap[2]).dispatch(obj);
+  importDefault(686).dispatch(obj);
 };

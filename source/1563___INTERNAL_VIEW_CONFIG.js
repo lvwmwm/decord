@@ -1,13 +1,14 @@
 // Module ID: 1563
-// Function ID: 17621
+// Function ID: 17622
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [110, 42]
 
 // Module 1563 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "RNCSafeAreaProvider", directEventTypes: { topInsetsChange: { registrationName: "onInsetsChange" } } };
-const _module = require(dependencyMap[0]);
-obj.validAttributes = Object.assign({}, _module.ConditionallyIgnoredEventHandlers({ onInsetsChange: true }));
-const _module1 = require(dependencyMap[1]);
+import weakSet from "weakSet";
+import get from "get";
 
-export default _module1.get("RNCSafeAreaProvider", () => obj);
+const obj = { uiViewClassName: "RNCSafeAreaProvider", directEventTypes: { topInsetsChange: { registrationName: "onInsetsChange" } } };
+obj.validAttributes = Object.assign({}, weakSet.ConditionallyIgnoredEventHandlers({ onInsetsChange: true }));
+
+export default get.get("RNCSafeAreaProvider", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

@@ -1,14 +1,15 @@
-// Module ID: 14220
-// Function ID: 107536
+// Module ID: 14334
+// Function ID: 109692
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isEligibleForFriendOnlineNotifications, useFriendOnlineNotificationExperiment
 
-// Module 14220 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/notifications/friend_online/FriendOnlineNotificationExperiment.tsx");
+// Module 14334 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-03-friend-is-online-v3", defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/notifications/friend_online/FriendOnlineNotificationExperiment.tsx");
 
 export default apexExperiment;
 export const useFriendOnlineNotificationExperiment = function useFriendOnlineNotificationExperiment(tabsV2Settings) {

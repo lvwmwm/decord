@@ -1,8 +1,8 @@
 // Module ID: 259
 // Function ID: 3333
 // Name: HeadlessJsTaskSupport
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 259 (HeadlessJsTaskSupport)
 
-export default importAll(dependencyMap[0]).get("HeadlessJsTaskSupport");
+export default require("requireModule").get("HeadlessJsTaskSupport");

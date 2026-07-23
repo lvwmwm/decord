@@ -1,5 +1,5 @@
 // Module ID: 1364
-// Function ID: 16345
+// Function ID: 16346
 // Name: PseudoMap
 // Dependencies: []
 
@@ -54,17 +54,17 @@ class PseudoMap {
   forEach(arg0, arg1) {
     tmp = require;
     self = this;
-    hasOwnProperty = global;
-    PseudoMap = require;
+    closure_0 = global;
+    closure_1 = require;
     if (!require) {
       tmp = self;
     }
-    PseudoMap = tmp;
+    closure_1 = tmp;
     keys = Object.keys(self._data);
     item = keys.forEach(function(arg0) {
       const self = this;
       if ("size" !== arg0) {
-        arg0.call(arg0, self._data[arg0].value, self._data[arg0].key);
+        callback.call(closure_1, self._data[arg0].value, self._data[arg0].key);
       }
     }, self);
     return;
@@ -115,11 +115,11 @@ class PseudoMap {
   }
   delete(arg0) {
     self = this;
-    tmp = find(this._data, global);
-    if (tmp) {
+    tmp3 = find(this._data, global);
+    if (tmp3) {
       _data = self._data;
-      _index = tmp._index;
-      delete r3[r2];
+      _index = tmp3._index;
+      delete tmp2[tmp];
       _data2 = self._data;
       _data2.size = _data2.size - 1;
     }
@@ -128,7 +128,7 @@ class PseudoMap {
   clear() {
     obj = Object.create(null);
     obj.size = 0;
-    obj = { onDownloadProgress: 60, GUILD_TAG_AVAILABLE_COACHMARK_V2: 0, _setupIntegrations: 0, blurTargetViewNativeId: 0 };
+    obj = { value: null, enumerable: false, configurable: true, writable: false };
     obj.value = obj;
     definePropertyResult = Object.defineProperty(this, "_data", obj);
     return;

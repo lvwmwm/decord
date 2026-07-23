@@ -1,9 +1,11 @@
 // Module ID: 811
-// Function ID: 9092
+// Function ID: 9093
 // Name: extractTraceparentData
-// Dependencies: []
+// Dependencies: [812, 806, 808, 813, 814, 801]
 
 // Module 811 (extractTraceparentData)
+const require = arg1;
+const dependencyMap = arg6;
 function extractTraceparentData(str) {
   if (str) {
     const match = str.match(regExp);
@@ -47,10 +49,10 @@ arg5.generateSentryTraceHeader = function generateSentryTraceHeader() {
       const _HermesInternal = HermesInternal;
       return "" + first + "-" + spanId + str2;
     }
-    spanId = arg1(arg6[1]).generateSpanId();
-    const obj2 = arg1(arg6[1]);
+    spanId = require(806) /* generateSpanId */.generateSpanId();
+    const obj2 = require(806) /* generateSpanId */;
   }
-  first = arg1(arg6[1]).generateTraceId();
+  first = require(806) /* generateSpanId */.generateTraceId();
 };
 arg5.generateTraceparentHeader = function generateTraceparentHeader(traceId, propagationSpanId2, sampled2) {
   if (arguments.length > 0) {
@@ -72,14 +74,14 @@ arg5.generateTraceparentHeader = function generateTraceparentHeader(traceId, pro
       const _HermesInternal = HermesInternal;
       return "00-" + first + "-" + spanId + "-" + str;
     }
-    spanId = propagationSpanId2(arg6[1]).generateSpanId();
-    const obj2 = propagationSpanId2(arg6[1]);
+    spanId = require(806) /* generateSpanId */.generateSpanId();
+    const obj2 = require(806) /* generateSpanId */;
   }
-  first = propagationSpanId2(arg6[1]).generateTraceId();
+  first = require(806) /* generateSpanId */.generateTraceId();
 };
 arg5.propagationContextFromHeaders = function propagationContextFromHeaders(arg0, arg1) {
   const tmp = extractTraceparentData(arg0);
-  let obj = arg1(arg6[0]);
+  let obj = require(812) /* parseBaggageHeader */;
   let result = obj.baggageHeaderToDynamicSamplingContext(arg1);
   if (null != tmp) {
     if (tmp.traceId) {
@@ -87,7 +89,7 @@ arg5.propagationContextFromHeaders = function propagationContextFromHeaders(arg0
       if (null != result) {
         sample_rand = result.sample_rand;
       }
-      const str = arg1(arg6[3]).parseSampleRate(sample_rand);
+      const str = require(813) /* parseSampleRate */.parseSampleRate(sample_rand);
       if (undefined !== str) {
         if (result) {
           result.sample_rand = str.toString();
@@ -105,39 +107,39 @@ arg5.propagationContextFromHeaders = function propagationContextFromHeaders(arg0
         if (null != result) {
           sample_rate = result.sample_rate;
         }
-        const parseSampleRateResult = arg1(arg6[3]).parseSampleRate(sample_rate);
+        const parseSampleRateResult = require(813) /* parseSampleRate */.parseSampleRate(sample_rate);
         if (!parseSampleRateResult) {
-          arg1(arg6[2]).safeMathRandom();
-          const obj4 = arg1(arg6[2]);
+          require(808) /* withRandomSafeContext */.safeMathRandom();
+          const obj4 = require(808) /* withRandomSafeContext */;
         } else {
           let parentSampled;
           if (null != tmp) {
             parentSampled = tmp.parentSampled;
           }
         }
-        const obj10 = arg1(arg6[3]);
-        const safeMathRandomResult1 = arg1(arg6[2]).safeMathRandom();
+        const obj10 = require(813) /* parseSampleRate */;
+        const safeMathRandomResult1 = require(808) /* withRandomSafeContext */.safeMathRandom();
         if (tmp.parentSampled) {
           let result1 = safeMathRandomResult1 * parseSampleRateResult;
         } else {
           result1 = parseSampleRateResult + safeMathRandomResult1 * (1 - parseSampleRateResult);
         }
-        const obj5 = arg1(arg6[2]);
+        const obj5 = require(808) /* withRandomSafeContext */;
       }
-      const obj3 = arg1(arg6[3]);
+      const obj3 = require(813) /* parseSampleRate */;
     }
   }
-  obj = { traceId: arg1(arg6[1]).generateTraceId() };
-  const obj8 = arg1(arg6[1]);
-  obj.sampleRand = arg1(arg6[2]).safeMathRandom();
+  obj = { traceId: require(806) /* generateSpanId */.generateTraceId() };
+  const obj8 = require(806) /* generateSpanId */;
+  obj.sampleRand = require(808) /* withRandomSafeContext */.safeMathRandom();
   return obj;
 };
 arg5.shouldContinueTrace = function shouldContinueTrace(client, org_id) {
-  const result = org_id(arg6[4]).extractOrgIdFromClient(client);
+  const result = require(814) /* dsnFromString */.extractOrgIdFromClient(client);
   if (org_id) {
     if (result) {
       if (org_id !== result) {
-        const debug2 = org_id(arg6[5]).debug;
+        const debug2 = require(801) /* consoleSandbox */.debug;
         const _HermesInternal2 = HermesInternal;
         debug2.log("Won't continue trace because org IDs don't match (incoming baggage: " + org_id + ", SDK options: " + result + ")");
         let flag = false;
@@ -145,7 +147,7 @@ arg5.shouldContinueTrace = function shouldContinueTrace(client, org_id) {
       return flag;
     }
   }
-  const obj = org_id(arg6[4]);
+  const obj = require(814) /* dsnFromString */;
   flag = !(client.getOptions().strictTraceContinuation || false);
   if (!flag) {
     let tmp3 = org_id;
@@ -159,7 +161,7 @@ arg5.shouldContinueTrace = function shouldContinueTrace(client, org_id) {
     flag = !tmp3;
   }
   if (!flag) {
-    const debug = org_id(arg6[5]).debug;
+    const debug = require(801) /* consoleSandbox */.debug;
     const _HermesInternal = HermesInternal;
     debug.log("Starting a new trace because strict trace continuation is enabled but one org ID is missing (incoming baggage: " + org_id + ", Sentry client: " + result + ")");
     flag = false;

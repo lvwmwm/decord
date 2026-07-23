@@ -1,16 +1,13 @@
-// Module ID: 10493
-// Function ID: 81929
+// Module ID: 10503
+// Function ID: 81979
 // Name: LeakyBucket
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 10493 (LeakyBucket)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 10503 (LeakyBucket)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("../discord_common/js/packages/leaky-bucket/LeakyBucket.tsx");
-
-export default () => {
+const tmp2 = (() => {
   class LeakyBucket {
     constructor(arg0, arg1) {
       tmp = LeakyBucket(this, LeakyBucket);
@@ -22,18 +19,17 @@ export default () => {
       return;
     }
   }
-  let closure_0 = LeakyBucket;
   let obj = {
     key: "_processQueue",
     value() {
-      const LeakyBucket = this;
+      const self = this;
       const timerId = setTimeout(() => {
         if (self._queue.length > 0) {
           if (self._tokenCount > 0) {
             self._tokenCount = self._tokenCount - 1;
             if (null == self._intervalID) {
               const _setInterval = setInterval;
-              self._intervalID = setInterval(() => closure_0._iterate(), self._intervalPeriod);
+              self._intervalID = setInterval(() => outer1_0._iterate(), self._intervalPeriod);
             }
             const _queue = self._queue;
             const arr = _queue.shift();
@@ -68,37 +64,40 @@ export default () => {
   obj = {
     key: "process",
     value(arg0) {
-      const LeakyBucket = this;
+      const self = this;
+      let _defineProperties = arg0;
       return new Promise((resolve) => {
-        const self = arg1;
-        if (null != resolve) {
-          if (resolve.aborted) {
+        const _self = arg1;
+        if (null != obj) {
+          if (obj.aborted) {
             const _Error = Error;
-            const error = new Error("Already aborted");
+            let error = new Error("Already aborted");
             arg1(error);
           }
         }
-        let obj = { resolve, signal: resolve };
-        resolve = obj;
-        const _queue = self._queue;
+        obj = { resolve, signal: obj };
+        let _queue = _self._queue;
         _queue.push(obj);
-        if (resolve) {
+        if (obj) {
           obj = { once: true };
-          const listener = resolve.addEventListener("abort", () => {
-            const _queue = arg1._queue;
+          const listener = obj.addEventListener("abort", () => {
+            const _queue = lib._queue;
             const index = _queue.indexOf(obj);
             if (index >= 0) {
-              const _queue1 = arg1._queue;
+              const _queue1 = lib._queue;
               _queue1.splice(index, 1);
             }
             const error = new Error("Aborted");
-            arg1(error);
+            lib(error);
           }, obj);
         }
-        self._processQueue();
+        _self._processQueue();
       });
     }
   };
   items[2] = obj;
   return callback(LeakyBucket, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/leaky-bucket/LeakyBucket.tsx");
+
+export default tmp2;

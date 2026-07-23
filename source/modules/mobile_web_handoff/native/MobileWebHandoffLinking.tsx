@@ -1,42 +1,54 @@
-// Module ID: 5687
-// Function ID: 48981
+// Module ID: 5692
+// Function ID: 49008
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: []
+// Dependencies: [5, 1194, 653, 4337, 5693, 5695, 675, 490, 5696, 1443, 3827, 2]
 
-// Module 5687 (createHandoffTokenWithLoadingModal)
+// Module 5692 (createHandoffTokenWithLoadingModal)
+import _createHandoffToken from "_createHandoffToken";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function createHandoffTokenWithLoadingModal(arg0) {
-  ({ nonce: closure_0, fingerprint: closure_1, handoffSource: closure_2 } = arg0);
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ nonce: require, fingerprint: importDefault, handoffSource: dependencyMap } = arg0);
   return new Promise((onResolved) => {
-    let obj = callback(closure_2[3]);
-    obj.popWithKey(closure_8);
-    if (authenticated.isAuthenticated()) {
+    let closure_0 = onResolved;
+    let obj = outer1_1(outer1_2[3]);
+    obj.popWithKey(outer1_8);
+    if (outer1_4.isAuthenticated()) {
       obj = {
-        operation() {
-            return callback(closure_2[5]).createHandoffToken(arg0);
+        operation(arg0) {
+            return outer2_1(outer2_2[5]).createHandoffToken(closure_0);
           },
         onResolved,
         onRejected(_55) {
-            let obj = callback(closure_2[6]);
-            obj = { reason: "handoff_token_fetch_failure", fingerprint: _55(closure_2[7]).maybeExtractId(callback), handoff_source: closure_2 };
-            obj = { fingerprint: callback };
-            obj.track(constants.MOBILE_WEB_HANDOFF_FAILURE, obj, obj);
-            _55("null");
+            let obj = outer2_1(outer2_2[6]);
+            obj = { reason: "handoff_token_fetch_failure", fingerprint: outer2_0(outer2_2[7]).maybeExtractId(outer1_1), handoff_source: outer1_2 };
+            obj = { fingerprint: outer1_1 };
+            obj.track(outer2_5.MOBILE_WEB_HANDOFF_FAILURE, obj, obj);
+            onResolved("null");
           }
       };
-      const result = onResolved(closure_2[4]).showSimpleLoadingModal(closure_8, obj);
-      const obj6 = onResolved(closure_2[4]);
+      const result = outer1_0(outer1_2[4]).showSimpleLoadingModal(outer1_8, obj);
+      const obj6 = outer1_0(outer1_2[4]);
     } else {
-      let obj1 = callback(closure_2[6]);
-      obj = { reason: "user_not_authenticated_in_app", fingerprint: onResolved(closure_2[7]).maybeExtractId(callback), handoff_source: closure_2 };
-      obj1 = { fingerprint: callback };
-      obj1.track(constants.MOBILE_WEB_HANDOFF_FAILURE, obj, obj1);
+      let obj1 = outer1_1(outer1_2[6]);
+      obj = { reason: "user_not_authenticated_in_app", fingerprint: outer1_0(outer1_2[7]).maybeExtractId(closure_1), handoff_source: closure_2 };
+      obj1 = { fingerprint: closure_1 };
+      obj1.track(outer1_5.MOBILE_WEB_HANDOFF_FAILURE, obj, obj1);
       onResolved("null");
-      const obj4 = onResolved(closure_2[7]);
+      const obj4 = outer1_0(outer1_2[7]);
     }
   });
 }
 async function _redirectWithHandoffToken(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let obj = arg1;
     if (obj === undefined) {
       obj = {};
@@ -53,12 +65,12 @@ async function _redirectWithHandoffToken(arg0, arg1) {
     const merged1 = Object.assign(merged);
     let nonce = merged.nonce;
     if (null == nonce) {
-      nonce = callback2(closure_2[5]).generateNonce();
-      const obj3 = callback2(closure_2[5]);
+      nonce = outer2_1(outer2_2[5]).generateNonce();
+      const obj3 = outer2_1(outer2_2[5]);
     }
     obj["nonce"] = nonce;
-    obj["handoffSource"] = callback(closure_2[8]).getLoginHandoffSourceFromRedirectTo(arg0);
-    const obj4 = callback(closure_2[8]);
+    obj["handoffSource"] = outer2_0(outer2_2[8]).getLoginHandoffSourceFromRedirectTo(arg0);
+    const obj4 = outer2_0(outer2_2[8]);
     if (true === merged.skipLoginRedirect) {
       const _URL2 = URL;
       const _location = location;
@@ -71,29 +83,29 @@ async function _redirectWithHandoffToken(arg0, arg1) {
       let uRL2 = uRL;
     } else {
       const _URL = URL;
-      uRL2 = new URL(callback2(closure_2[9]).makeUrl(constants.LOGIN_HANDOFF, false));
-      const obj5 = callback2(closure_2[9]);
+      uRL2 = new URL(outer2_1(outer2_2[9]).makeUrl(outer2_7.LOGIN_HANDOFF, false));
+      const obj5 = outer2_1(outer2_2[9]);
     }
     const searchParams = uRL2.searchParams;
-    searchParams.append("handoff_token", yield closure_9(obj));
+    searchParams.append("handoff_token", yield outer2_9(obj));
     if (true !== merged.skipLoginRedirect) {
       const searchParams2 = uRL2.searchParams;
       searchParams2.append("handoff_key", obj.nonce);
       const searchParams3 = uRL2.searchParams;
       searchParams3.append("redirect_to", arg0);
     }
-    const obj6 = callback2(closure_2[10]);
+    const obj6 = outer2_1(outer2_2[10]);
     if (flag) {
       obj6.openURLExternally(uRL2.href);
     } else {
       obj6.performURLNavigation(uRL2.href);
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _redirectDeveloperPortalWithHandoffToken(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let obj = arg1;
     if (obj === undefined) {
       obj = {};
@@ -103,22 +115,22 @@ async function _redirectDeveloperPortalWithHandoffToken(arg0, arg1) {
     const merged = Object.assign(obj);
     let nonce = obj.nonce;
     if (null == nonce) {
-      nonce = callback2(closure_2[5]).generateNonce();
-      const obj3 = callback2(closure_2[5]);
+      nonce = outer2_1(outer2_2[5]).generateNonce();
+      const obj3 = outer2_1(outer2_2[5]);
     }
     obj["nonce"] = nonce;
-    obj["handoffSource"] = callback(closure_2[8]).LoginHandoffSource.ROLE_SUBSCRIPTION_SETTING;
-    const uRL = new URL("" + location.protocol + closure_6.DEVELOPER_PORTAL_LOGIN_HANDOFF(obj.nonce, yield closure_9(obj), arg0));
-    callback2(closure_2[10]).performURLNavigation(uRL.href);
-  };
-  fn.next();
-  return fn;
+    obj["handoffSource"] = outer2_0(outer2_2[8]).LoginHandoffSource.ROLE_SUBSCRIPTION_SETTING;
+    const uRL = new URL("" + location.protocol + outer2_6.DEVELOPER_PORTAL_LOGIN_HANDOFF(obj.nonce, yield outer2_9(obj), arg0));
+    outer2_1(outer2_2[10]).performURLNavigation(uRL.href);
+  })();
+  iter.next();
+  return iter;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ AnalyticEvents: closure_5, MarketingURLs: closure_6, Routes: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = "mweb-handoff";
-const obj = {
+({ AnalyticEvents: closure_5, MarketingURLs: closure_6, Routes: closure_7 } = ME);
+let c8 = "mweb-handoff";
+let result = require("ME").fileFinishedImporting("modules/mobile_web_handoff/native/MobileWebHandoffLinking.tsx");
+
+export default {
   redirectWithHandoffToken(combined, arg1) {
     return _redirectWithHandoffToken(...arguments);
   },
@@ -126,7 +138,3 @@ const obj = {
     return _redirectDeveloperPortalWithHandoffToken(...arguments);
   }
 };
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/mobile_web_handoff/native/MobileWebHandoffLinking.tsx");
-
-export default obj;

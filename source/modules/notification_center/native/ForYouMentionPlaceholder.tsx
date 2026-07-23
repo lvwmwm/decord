@@ -1,45 +1,47 @@
-// Module ID: 15029
-// Function ID: 113204
+// Module ID: 15144
+// Function ID: 115373
 // Name: ForYouMentionPlaceholder
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 33, 4130, 689, 566, 3991, 4131, 2]
 // Exports: ForYouMentionPlaceholder
 
-// Module 15029 (ForYouMentionPlaceholder)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { placeholder: {} };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
-obj.placeholderImage = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.placeholderText = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.placeholderTextContainer = { "Bool(true)": null, "Bool(true)": null };
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.placeholderBody = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, height: 40, borderRadius: importDefault(dependencyMap[5]).radii.sm, marginTop: 4 };
-let closure_7 = obj.createStyles(obj);
-let closure_8 = ["keys", "disabled"];
+// Module 15144 (ForYouMentionPlaceholder)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { placeholder: { flexDirection: "row", marginBottom: 16, marginHorizontal: 24 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 52, width: 52, borderRadius: 26, marginEnd: 12 };
+_createForOfIteratorHelperLoose.placeholderImage = _createForOfIteratorHelperLoose;
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 15, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginRight: 12, marginBottom: 4 };
+_createForOfIteratorHelperLoose.placeholderText = obj1;
+_createForOfIteratorHelperLoose.placeholderTextContainer = { flexDirection: "row", flexWrap: "wrap" };
+_createForOfIteratorHelperLoose.placeholderBody = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginTop: 4 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let closure_8 = [70, 50];
 let closure_9 = { code: "function ForYouMentionPlaceholderTsx1(){const{reducedMotion,opacity}=this.__closure;return{opacity:reducedMotion?0.7:opacity.get()};}" };
-const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, height: 40, borderRadius: importDefault(dependencyMap[5]).radii.sm, marginTop: 4 };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/notification_center/native/ForYouMentionPlaceholder.tsx");
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, height: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginTop: 4 };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/notification_center/native/ForYouMentionPlaceholder.tsx");
 
 export const ForYouMentionPlaceholder = function ForYouMentionPlaceholder() {
-  const tmp = callback3();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const importDefault = stateFromStores;
-  let obj1 = arg1(dependencyMap[7]);
-  const sharedValue = obj1.useSharedValue(0.3);
-  const dependencyMap = sharedValue;
-  let obj3 = arg1(dependencyMap[7]);
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  let obj = require(sharedValue[6]);
+  let items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
+  let obj1 = require(sharedValue[7]);
+  sharedValue = obj1.useSharedValue(0.3);
+  let obj3 = require(sharedValue[7]);
   obj = { duration: 1000 };
-  const Easing = arg1(dependencyMap[7]).Easing;
-  obj.easing = Easing.inOut(arg1(dependencyMap[7]).Easing.ease);
-  const result = sharedValue.set(obj3.withRepeat(arg1(dependencyMap[8]).withTiming(0.7, obj), -1, true));
-  const obj5 = arg1(dependencyMap[8]);
+  const Easing = require(sharedValue[7]).Easing;
+  obj.easing = Easing.inOut(require(sharedValue[7]).Easing.ease);
+  const result = sharedValue.set(obj3.withRepeat(require(sharedValue[8]).withTiming(0.7, obj), -1, true));
+  const obj5 = require(sharedValue[8]);
   const fn = function y() {
     const obj = {};
     let num = 0.7;
@@ -52,9 +54,9 @@ export const ForYouMentionPlaceholder = function ForYouMentionPlaceholder() {
   fn.__closure = { reducedMotion: stateFromStores, opacity: sharedValue };
   fn.__workletHash = 8828208724188;
   fn.__initData = closure_9;
-  const animatedStyle = arg1(dependencyMap[7]).useAnimatedStyle(fn);
+  const animatedStyle = require(sharedValue[7]).useAnimatedStyle(fn);
   obj = { style: items1 };
-  const items1 = [tmp.placeholder, animatedStyle];
+  items1 = [tmp.placeholder, animatedStyle];
   obj1 = { style: tmp.placeholderImage };
   const items2 = [callback(View, obj1), ];
   const obj2 = {};
@@ -66,7 +68,7 @@ export const ForYouMentionPlaceholder = function ForYouMentionPlaceholder() {
       obj = { width: "" + arg0 + "%" };
       items[1] = obj;
       obj.style = items;
-      return callback(closure_3, obj, arg1);
+      return outer1_5(outer1_3, obj, arg1);
     })
   };
   const items3 = [callback(View, obj3), ];
@@ -75,5 +77,5 @@ export const ForYouMentionPlaceholder = function ForYouMentionPlaceholder() {
   obj2.children = items3;
   items2[1] = callback2(View, obj2);
   obj.children = items2;
-  return callback2(importDefault(dependencyMap[7]).View, obj);
+  return callback2(stateFromStores(sharedValue[7]).View, obj);
 };

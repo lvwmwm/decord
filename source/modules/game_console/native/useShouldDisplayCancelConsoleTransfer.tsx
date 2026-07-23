@@ -1,10 +1,13 @@
-// Module ID: 15735
-// Function ID: 120355
+// Module ID: 15852
+// Function ID: 122528
 // Name: shouldDisplayCancel
-// Dependencies: []
+// Dependencies: [57, 31, 2]
 // Exports: default
 
-// Module 15735 (shouldDisplayCancel)
+// Module 15852 (shouldDisplayCancel)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
 function shouldDisplayCancel(startedAt) {
   let tmp = null != startedAt;
   if (tmp) {
@@ -13,25 +16,23 @@ function shouldDisplayCancel(startedAt) {
   }
   return tmp;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/game_console/native/useShouldDisplayCancelConsoleTransfer.tsx");
+const result = require("set").fileFinishedImporting("modules/game_console/native/useShouldDisplayCancelConsoleTransfer.tsx");
 
 export default function useShouldDisplayCancelConsoleTransfer(arg0) {
   const callback = arg0;
-  const tmp = callback(React.useState(() => callback2(arg0)), 2);
-  const React = tmp[1];
+  let tmp = callback(React.useState(() => outer1_2(_slicedToArray)), 2);
+  React = tmp[1];
   const items = [arg0];
   const effect = React.useEffect(() => {
-    const tmp = callback2(startedAt);
+    const tmp = outer1_2(startedAt);
     callback(tmp);
     if (null != startedAt) {
       if (!tmp) {
         const _setTimeout = setTimeout;
         const _Date = Date;
-        const startedAt = setTimeout(() => callback(callback2(closure_0)), 6000 - (Date.now() - startedAt.startedAt));
+        startedAt = setTimeout(() => outer1_1(outer2_2(_slicedToArray)), 6000 - (Date.now() - startedAt.startedAt));
         return () => {
-          clearTimeout(closure_0);
+          clearTimeout(_slicedToArray);
         };
       }
     }

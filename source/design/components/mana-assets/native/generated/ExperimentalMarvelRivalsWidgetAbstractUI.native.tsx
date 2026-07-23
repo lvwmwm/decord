@@ -1,13 +1,13 @@
-// Module ID: 6043
-// Function ID: 49997
+// Module ID: 6048
+// Function ID: 50026
 // Name: ExperimentalMarvelRivalsWidgetAbstractUI
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 6049, 2]
 // Exports: ExperimentalMarvelRivalsWidgetAbstractUI
 
-// Module 6043 (ExperimentalMarvelRivalsWidgetAbstractUI)
-import { jsx } from "__exportStarResult1";
+// Module 6048 (ExperimentalMarvelRivalsWidgetAbstractUI)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalMarvelRivalsWidgetAbstractUI.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalMarvelRivalsWidgetAbstractUI.native.tsx");
 
 export const ExperimentalMarvelRivalsWidgetAbstractUI = function ExperimentalMarvelRivalsWidgetAbstractUI(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ExperimentalMarvelRivalsWidgetAbstractUI = function ExperimentalMar
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6049) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ExperimentalMarvelRivalsWidgetAbstractUI = function ExperimentalMar
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

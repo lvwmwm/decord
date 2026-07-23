@@ -1,27 +1,29 @@
-// Module ID: 7606
-// Function ID: 60983
+// Module ID: 7612
+// Function ID: 61020
 // Name: SettingsUpsellsConfigRegistry
-// Dependencies: []
+// Dependencies: [31, 7601, 7613, 7614, 7615, 1327, 2]
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs
 
-// Module 7606 (SettingsUpsellsConfigRegistry)
-let closure_2 = importAll(dependencyMap[0]);
+// Module 7612 (SettingsUpsellsConfigRegistry)
+import result from "result";
+
+const require = arg1;
 const obj = {};
-obj[arg1(dependencyMap[1]).SettingsUpsells.SAFETY_DM_SPAM_FILTER] = importDefault(dependencyMap[2]);
-obj[arg1(dependencyMap[1]).SettingsUpsells.SAFETY_SC_FILTERS_SEXUAL_MEDIA] = importDefault(dependencyMap[3]);
-obj[arg1(dependencyMap[1]).SettingsUpsells.SAFETY_SC_FILTERS_GRAPHIC_MEDIA] = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigRegistry.tsx");
+obj[require("ReportNames").SettingsUpsells.SAFETY_DM_SPAM_FILTER] = require("items");
+obj[require("ReportNames").SettingsUpsells.SAFETY_SC_FILTERS_SEXUAL_MEDIA] = require("items");
+obj[require("ReportNames").SettingsUpsells.SAFETY_SC_FILTERS_GRAPHIC_MEDIA] = require("items");
+const result = require("items").fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigRegistry.tsx");
 
 export const SettingsUpsellsConfigRegistry = obj;
 export const useIarReportSettingsUpsells = function useIarReportSettingsUpsells(reportSubType) {
-  const arg1 = reportSubType;
-  const items = [reportSubType];
+  let closure_0 = reportSubType;
+  let items = [reportSubType];
   return React.useMemo(() => {
     let tmp = null;
-    if (null != arg0) {
-      tmp = function getIarReportSubtypeUpsells(arg0) {
+    if (null != closure_0) {
+      tmp = (function getIarReportSubtypeUpsells(closure_0) {
         const items = [];
-        const entries = Object.entries(closure_3);
+        const entries = Object.entries(outer2_3);
         const item = entries.forEach((arg0) => {
           let tmp;
           let tmp2;
@@ -29,7 +31,7 @@ export const useIarReportSettingsUpsells = function useIarReportSettingsUpsells(
           let hasItem = null == tmp2.eligibleReportSubtypes;
           if (!hasItem) {
             const eligibleReportSubtypes = tmp2.eligibleReportSubtypes;
-            hasItem = eligibleReportSubtypes.includes(arg0);
+            hasItem = eligibleReportSubtypes.includes(closure_0);
           }
           if (hasItem) {
             items.push(tmp);
@@ -40,20 +42,20 @@ export const useIarReportSettingsUpsells = function useIarReportSettingsUpsells(
           tmp2 = items;
         }
         return tmp2;
-      }(arg0);
+      })(closure_0);
     }
     return tmp;
   }, items);
 };
 export const useSettingsUpsellsConfigs = function useSettingsUpsellsConfigs(settingsUpsells, type) {
-  type = settingsUpsells;
-  const dependencyMap = type;
+  let closure_0 = settingsUpsells;
+  let closure_1 = type;
   const items = [settingsUpsells, type];
   return React.useMemo(() => {
-    const mapped = arg0.map((arg0) => function getSettingsUpsellsConfig(arg0, closure_1) {
+    const mapped = settingsUpsells.map((arg0) => (function getSettingsUpsellsConfig(arg0, outer1_1) {
       let eligibleChannelTypes;
       let predicate;
-      ({ predicate, eligibleChannelTypes } = closure_3[arg0]);
+      ({ predicate, eligibleChannelTypes } = outer3_3[arg0]);
       let tmp2 = null == predicate;
       if (!tmp2) {
         let predicateResult;
@@ -70,7 +72,7 @@ export const useSettingsUpsellsConfigs = function useSettingsUpsellsConfigs(sett
         tmp5 = tmp;
       }
       return tmp5;
-    }(arg0, closure_1));
-    return mapped.filter(arg0(arg1[5]).isNotNullish);
+    })(arg0, outer1_1));
+    return mapped.filter(settingsUpsells(type[5]).isNotNullish);
   }, items);
 };

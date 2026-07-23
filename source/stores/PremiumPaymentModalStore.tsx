@@ -1,9 +1,16 @@
-// Module ID: 4363
-// Function ID: 38719
+// Module ID: 4367
+// Function ID: 38751
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4029, 566, 686, 2]
 
-// Module 4363 (_isNativeReflectConstruct)
+// Module 4367 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,29 +24,24 @@ function handleSubscribeFailure(error) {
   error = error.error;
 }
 function handleClearError() {
-  let closure_7 = null;
+  let c7 = null;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = null;
-let closure_8 = null;
-let closure_9 = null;
-let tmp2 = (Store) => {
+let c7 = null;
+let c8 = null;
+let c9 = null;
+let tmp2 = ((Store) => {
   class PremiumPaymentModalStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, PremiumPaymentModalStore);
-      obj = closure_5(PremiumPaymentModalStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, PremiumPaymentModalStore);
+      obj = outer1_5(PremiumPaymentModalStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -48,12 +50,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = PremiumPaymentModalStore;
   callback2(PremiumPaymentModalStore, Store);
   let obj = {
     key: "paymentError",
     get() {
-      return closure_7;
+      return outer1_7;
     }
   };
   const items = [obj, ];
@@ -61,17 +62,17 @@ let tmp2 = (Store) => {
     key: "getGiftCode",
     value(arg0) {
       let tmp = null;
-      if (arg0 === closure_9) {
-        tmp = closure_8;
+      if (arg0 === outer1_9) {
+        tmp = outer1_8;
       }
       return tmp;
     }
   };
   items[1] = obj;
   return callback(PremiumPaymentModalStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "PremiumPaymentModalStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   PREMIUM_PAYMENT_SUBSCRIBE_FAIL: handleSubscribeFailure,
   PREMIUM_PAYMENT_UPDATE_FAIL: handleSubscribeFailure,
   PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: function handleSubscribeSuccess() {
@@ -80,15 +81,15 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
   PREMIUM_PAYMENT_UPDATE_SUCCESS: handleClearError,
   PREMIUM_PAYMENT_ERROR_CLEAR: handleClearError,
   BRAINTREE_TOKENIZE_PAYPAL_FAIL: function handlePayPalTokenizeFailure(message) {
-    const billingError = new arg1(dependencyMap[5]).BillingError(message.message);
-    let closure_7 = billingError;
+    const billingError = new require(4029) /* V6OrEarlierAPIError */.BillingError(message.message);
   },
   BRAINTREE_TOKENIZE_VENMO_FAIL: function handleVenmoTokenizeFailure(message) {
-    const billingError = new arg1(dependencyMap[5]).BillingError(message.message);
-    let closure_7 = billingError;
+    const billingError = new require(4029) /* V6OrEarlierAPIError */.BillingError(message.message);
   },
   SKU_PURCHASE_SUCCESS: function handleSKUPurchaseSuccess(arg0) {
-    ({ giftCode: closure_8, skuId: closure_9 } = arg0);
+    let c8;
+    let c9;
+    ({ giftCode: c8, skuId: c9 } = arg0);
   },
   SKU_PURCHASE_FAIL: function handleSKUPurchaseFail(error) {
     error = error.error;
@@ -101,13 +102,13 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
   GIFT_CODE_CREATE: function handleGiftCodeCreate(giftCode) {
     giftCode = giftCode.giftCode;
     if (0 === giftCode.uses) {
-      if (giftCode.sku_id === closure_9) {
+      if (giftCode.sku_id === c9) {
         const code = giftCode.code;
       }
     }
     return false;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("stores/PremiumPaymentModalStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/PremiumPaymentModalStore.tsx");
 
 export default tmp2;

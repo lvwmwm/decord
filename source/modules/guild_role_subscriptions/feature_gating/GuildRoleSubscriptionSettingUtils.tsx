@@ -1,10 +1,17 @@
-// Module ID: 5636
-// Function ID: 48206
+// Module ID: 5641
+// Function ID: 48233
 // Name: canSeeGuildRoleSubscriptionSettingsContent
-// Dependencies: []
+// Dependencies: [1391, 3758, 1849, 653, 566, 5642, 5634, 2]
 // Exports: canSeeGuildRoleSubscriptionSettings, getGuildRoleSubscriptionSettingsVisibility, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 5636 (canSeeGuildRoleSubscriptionSettingsContent)
+// Module 5641 (canSeeGuildRoleSubscriptionSettingsContent)
+import { isGuildOwner } from "isGuildOwner";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
 function canSeeGuildRoleSubscriptionSettingsContent(canManageGuildRoleSubscriptions) {
   let guild;
   let isOwner;
@@ -52,19 +59,19 @@ function computeGuildRoleSubscriptionSettingsVisibility(guild) {
   return NONE;
 }
 function useGuildRoleSubscriptionSettingsVisibility(stateFromStores) {
-  const require = stateFromStores;
-  let obj = require(dependencyMap[4]);
+  const _require = stateFromStores;
+  let obj = _require(566);
   const items = [closure_4];
   stateFromStores = obj.useStateFromStores(items, () => {
-    let tmp2 = null != arg0;
+    let tmp2 = null != closure_0;
     if (tmp2) {
-      tmp2 = callback(arg0, tmp);
+      tmp2 = outer1_2(closure_0, tmp);
     }
     return tmp2;
   });
   const tmp = useCanManageGuildRoleSubscriptions(stateFromStores);
-  const isUserInCreatorMonetizationEligibleCountry = require(dependencyMap[5]).useIsUserInCreatorMonetizationEligibleCountry();
-  require(dependencyMap[6]);
+  const isUserInCreatorMonetizationEligibleCountry = _require(5642).useIsUserInCreatorMonetizationEligibleCountry();
+  _require(5634);
   if (null != stateFromStores) {
     const id = stateFromStores.id;
   }
@@ -77,26 +84,21 @@ function useGuildRoleSubscriptionSettingsVisibility(stateFromStores) {
   return NONE;
 }
 function useCanManageGuildRoleSubscriptions(guild) {
-  const require = guild;
-  const items = [closure_3];
+  const _require = guild;
+  const items = [_isNativeReflectConstruct];
   const items1 = [guild];
-  return require(dependencyMap[4]).useStateFromStores(items, () => callback(arg0), items1);
+  return _require(566).useStateFromStores(items, () => outer1_12(closure_0), items1);
 }
 function canManageGuildRoleSubscriptions(stateFromStores) {
   let canResult = null != stateFromStores;
   if (canResult) {
-    canResult = closure_3.can(constants2.ADMINISTRATOR, stateFromStores);
+    canResult = _isNativeReflectConstruct.can(constants2.ADMINISTRATOR, stateFromStores);
   }
   return canResult;
 }
-const isGuildOwner = require(dependencyMap[0]).isGuildOwner;
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const _module = require(dependencyMap[3]);
-({ GuildFeatures: closure_5, Permissions: closure_6 } = _module);
-const obj = { NONE: 0, [0]: "NONE", VISIBLE: 1, [1]: "VISIBLE" };
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/GuildRoleSubscriptionSettingUtils.tsx");
+({ GuildFeatures: closure_5, Permissions: closure_6 } = ME);
+let obj = { NONE: 0, [0]: "NONE", VISIBLE: 1, [1]: "VISIBLE" };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/GuildRoleSubscriptionSettingUtils.tsx");
 
 export const GuildRoleSubscriptionSettingsVisibility = obj;
 export { canSeeGuildRoleSubscriptionSettingsContent };
@@ -109,7 +111,7 @@ export const getGuildRoleSubscriptionSettingsVisibility = function getGuildRoleS
   if (null == guild) {
     return obj.NONE;
   } else {
-    const obj = { guild, isOwner: isGuildOwner(guild, currentUser.getCurrentUser()), canManageGuildRoleSubscriptions: canManageGuildRoleSubscriptions(guild), isUserInCreatorMonetizationEligibleCountry: require(dependencyMap[5]).isUserInCreatorMonetizationEligibleCountry() };
+    obj = { guild, isOwner: isGuildOwner(guild, currentUser.getCurrentUser()), canManageGuildRoleSubscriptions: canManageGuildRoleSubscriptions(guild), isUserInCreatorMonetizationEligibleCountry: require(5642) /* getCreatorMonetizationEligibleCountry */.isUserInCreatorMonetizationEligibleCountry() };
     const features = guild.features;
     obj.shouldRestrictUpdatingRoleSubscriptionSettings = features.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
     return computeGuildRoleSubscriptionSettingsVisibility(obj);

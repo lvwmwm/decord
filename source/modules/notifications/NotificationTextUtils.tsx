@@ -1,53 +1,84 @@
-// Module ID: 10212
-// Function ID: 78916
+// Module ID: 10224
+// Function ID: 78988
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1347, 3759, 5604, 3760, 4342, 1352, 1348, 1838, 4202, 3767, 1906, 3947, 4810, 4325, 1342, 1849, 10225, 653, 10226, 1211, 3803, 1360, 10227, 10228, 4365, 3982, 10229, 6926, 4320, 1212, 7900, 4319, 5651, 7673, 3, 5679, 3969, 1881, 6924, 10230, 566, 2]
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications
 
-// Module 10212 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10224 (_createForOfIteratorHelperLoose)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import withEqualityFn from "withEqualityFn";
+import _callSuper from "_callSuper";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import closure_17 from "_isNativeReflectConstruct";
+import closure_18 from "_isNativeReflectConstruct";
+import closure_19 from "_isNativeReflectConstruct";
+import closure_20 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { ActivityPanelModes } from "ActivityPanelModes";
+import { ThreadMemberFlags } from "AbortCodes";
+
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_24;
+let closure_25;
+let closure_26;
+let closure_27;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +89,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -114,7 +145,7 @@ function shouldNotifyBase(currentUser, user, channel, arg3) {
           }
           let tmp13 = !tmp10;
           if (!tmp10) {
-            const FocusMode = user(dependencyMap[20]).FocusMode;
+            const FocusMode = require(3803) /* explicitContentFromProto */.FocusMode;
             let tmp16 = !FocusMode.getSetting();
             if (tmp16) {
               let allowNoMessagesResult = !obj.ignoreNoMessagesSetting;
@@ -135,20 +166,20 @@ function shouldNotifyBase(currentUser, user, channel, arg3) {
   }
 }
 function renderTitle(name, channel, channel2) {
-  const obj = channel(dependencyMap[27]);
-  const isolateResult = channel(dependencyMap[27]).isolate(name);
-  const obj2 = channel(dependencyMap[27]);
-  const obj3 = channel(dependencyMap[28]);
+  const obj = require(6926) /* FSI */;
+  const isolateResult = require(6926) /* FSI */.isolate(name);
+  const obj2 = require(6926) /* FSI */;
+  const obj3 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
   let str = "";
   if (null != channel2) {
-    const obj4 = channel(dependencyMap[27]);
+    const obj4 = require(6926) /* FSI */;
     const _HermesInternal = HermesInternal;
-    str = ", " + obj4.isolate(channel(dependencyMap[28]).computeChannelName(channel2, closure_19, closure_13));
-    const obj5 = channel(dependencyMap[28]);
+    str = ", " + obj4.isolate(require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel2, closure_19, closure_13));
+    const obj5 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
   }
-  return "" + isolateResult + " (" + obj2.isolate(channel(dependencyMap[28]).computeChannelName(channel, closure_19, closure_13, true)) + str + ")";
+  return "" + isolateResult + " (" + obj2.isolate(require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_19, closure_13, true)) + str + ")";
 }
-function getInviteEmbedFormatString(type, /TD0la, /TD0la2, /TD0la3) {
+function getInviteEmbedFormatString(type, _TD0la, _TD0la2, _TD0la3) {
   type = type.type;
   if (constants2.GUILD_ANNOUNCEMENT !== type) {
     if (constants2.GUILD_TEXT !== type) {
@@ -162,29 +193,9 @@ function getInviteEmbedFormatString(type, /TD0la, /TD0la2, /TD0la3) {
   }
   return _TD0la;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ GUILD_VOCAL_CHANNEL_TYPES: closure_8, THREAD_CHANNEL_TYPES: closure_9 } = arg1(dependencyMap[5]));
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-let closure_14 = importDefault(dependencyMap[10]);
-let closure_15 = importDefault(dependencyMap[11]);
-let closure_16 = importDefault(dependencyMap[12]);
-let closure_17 = importDefault(dependencyMap[13]);
-let closure_18 = importDefault(dependencyMap[14]);
-let closure_19 = importDefault(dependencyMap[15]);
-let closure_20 = importDefault(dependencyMap[16]);
-const tmp2 = arg1(dependencyMap[5]);
-({ ActivityActionTypes: closure_21, ChannelTypes: closure_22, MessageFlags: closure_23, MessageTypes: closure_24, MessageTypesSets: closure_25, StatusTypes: closure_26, UserFlags: closure_27 } = arg1(dependencyMap[17]));
-const ActivityPanelModes = arg1(dependencyMap[18]).ActivityPanelModes;
-const ThreadMemberFlags = arg1(dependencyMap[19]).ThreadMemberFlags;
-const tmp3 = arg1(dependencyMap[17]);
-const result = arg1(dependencyMap[41]).fileFinishedImporting("modules/notifications/NotificationTextUtils.tsx");
+({ GUILD_VOCAL_CHANNEL_TYPES: closure_8, THREAD_CHANNEL_TYPES: closure_9 } = _callSuper);
+({ ActivityActionTypes: closure_21, ChannelTypes: closure_22, MessageFlags: closure_23, MessageTypes: closure_24, MessageTypesSets: closure_25, StatusTypes: closure_26, UserFlags: closure_27 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/notifications/NotificationTextUtils.tsx");
 
 export { shouldNotifyBase };
 export const shouldNotify = function shouldNotify(message, channel_id, result) {
@@ -197,7 +208,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
     flag2 = false;
   }
   if (null != message.flags) {
-    let obj = channel_id(dependencyMap[21]);
+    let obj = require(1360) /* hasFlag */;
     if (obj.hasFlag(message.flags, constants3.SUPPRESS_NOTIFICATIONS)) {
       return false;
     }
@@ -230,7 +241,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
           if (tmp14) {
             return false;
           }
-          const tmp14 = channel1.type === constants2.DM || null != channel1.linkedLobby;
+          tmp14 = channel1.type === constants2.DM || null != channel1.linkedLobby;
         }
         obj = { ignoreStatus: flag2 };
         const SELF_MENTIONABLE_SYSTEM = constants5.SELF_MENTIONABLE_SYSTEM;
@@ -243,7 +254,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
               if (obj4.isChannelCurrentlyVisible(channel1.id)) {
                 return false;
               }
-              const obj4 = channel_id(dependencyMap[22]);
+              obj4 = require(10227) /* isChannelCurrentlyVisible */;
             }
             if (closure_13.isBlockedOrIgnoredForMessage(message)) {
               return false;
@@ -271,14 +282,14 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
                 if (muted.isMuted(channel1.id)) {
                   return false;
                 } else {
-                  const threadNotificationSetting = channel_id(dependencyMap[23]).computeThreadNotificationSetting(channel1);
+                  const threadNotificationSetting = require(10228) /* computeThreadNotificationSetting */.computeThreadNotificationSetting(channel1);
                   let tmp44 = threadNotificationSetting !== ThreadMemberFlags.NO_MESSAGES;
                   if (tmp44) {
                     result = threadNotificationSetting === ThreadMemberFlags.ALL_MESSAGES;
                     if (!result) {
                       obj = { rawMessage: message, userId: currentUser.id, suppressEveryone: false, suppressRoles: false };
-                      result = channel_id(dependencyMap[24]).isRawMessageMentioned(obj);
-                      const obj8 = channel_id(dependencyMap[24]);
+                      result = require(4365) /* isMentioned */.isRawMessageMentioned(obj);
+                      const obj8 = require(4365) /* isMentioned */;
                     }
                     tmp44 = result;
                   }
@@ -297,7 +308,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
                 const result1 = closure_17.isSuppressEveryoneEnabled(channel1.getGuildId());
                 const result2 = closure_17.isSuppressRolesEnabled(channel1.getGuildId());
                 const obj1 = { rawMessage: message, userId: currentUser.id, suppressEveryone: result1, suppressRoles: result2 };
-                return channel_id(dependencyMap[24]).isRawMessageMentioned(obj1);
+                return require(4365) /* isMentioned */.isRawMessageMentioned(obj1);
               }
             }
           }
@@ -341,7 +352,7 @@ export const shouldNotifyForSelectedChannel = function shouldNotifyForSelectedCh
             if (tmp15) {
               let tmp18 = store3.getStatus() !== constants6.DND;
               if (tmp18) {
-                const FocusMode = channelId(dependencyMap[20]).FocusMode;
+                const FocusMode = require(3803) /* explicitContentFromProto */.FocusMode;
                 let tmp21 = !FocusMode.getSetting();
                 if (tmp21) {
                   tmp21 = !closure_17.allowNoMessages(channel1);
@@ -382,8 +393,8 @@ export const shouldNotifyForForumThreadCreation = function shouldNotifyForForumT
       if (tmp12) {
         let result = !flag;
         if (result) {
-          result = channel2(dependencyMap[22]).isChannelCurrentlyVisible(channel2.id);
-          const obj2 = channel2(dependencyMap[22]);
+          result = require(10227) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel2.id);
+          const obj2 = require(10227) /* isChannelCurrentlyVisible */;
         }
         let newForumThreadsCreated = !result;
         if (newForumThreadsCreated) {
@@ -424,8 +435,8 @@ export const shouldNotifyForReaction = function shouldNotifyForReaction(arg0) {
       if (tmp13) {
         let result = !includeSelectedChannel;
         if (result) {
-          result = arg1(dependencyMap[22]).isChannelCurrentlyVisible(channel.id);
-          const obj2 = arg1(dependencyMap[22]);
+          result = require(10227) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel.id);
+          const obj2 = require(10227) /* isChannelCurrentlyVisible */;
         }
         tmp13 = !result;
       }
@@ -436,18 +447,18 @@ export const shouldNotifyForReaction = function shouldNotifyForReaction(arg0) {
   return tmp5;
 };
 export const shouldIncludeSelectedChannel = function shouldIncludeSelectedChannel() {
-  const state = state.getState();
+  state = state.getState();
   let flag = true;
   if (!state.isVoicePanelFullscreen()) {
     if (null == store.getConnectedActivityLocation()) {
-      const rootNavigationRef = arg1(dependencyMap[25]).getRootNavigationRef();
+      const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
       let tmp7 = null == rootNavigationRef || !rootNavigationRef.isReady();
       if (!tmp7) {
-        tmp7 = !arg1(dependencyMap[26]).isChannelFocused();
-        const obj4 = arg1(dependencyMap[26]);
+        tmp7 = !require(10229) /* getFocusedChannelId */.isChannelFocused();
+        const obj4 = require(10229) /* getFocusedChannelId */;
       }
       flag = tmp7;
-      const obj2 = arg1(dependencyMap[25]);
+      const obj2 = require(3982) /* getRootNavigationRef */;
     } else {
       flag = true;
     }
@@ -457,7 +468,7 @@ export const shouldIncludeSelectedChannel = function shouldIncludeSelectedChanne
 export { renderTitle };
 export const makeTextChatNotification = function makeTextChatNotification(getGuildId, content, bot) {
   let emoji;
-  let obj = importDefault(dependencyMap[31]);
+  let obj = importDefault(4319);
   let name = obj.getName(getGuildId.getGuildId(), getGuildId.id, bot);
   const type = getGuildId.type;
   if (constants2.GUILD_ANNOUNCEMENT !== type) {
@@ -472,7 +483,7 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
               if (constants2.GROUP_DM === type) {
                 let tmp4 = getGuildId.isManaged() && bot.bot;
                 if (tmp4) {
-                  let obj1 = content(dependencyMap[28]);
+                  let obj1 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
                   tmp4 = name === obj1.computeChannelName(getGuildId, closure_19, closure_13);
                 }
                 tmp3 = name;
@@ -482,11 +493,11 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
               }
             }
             content = content.content;
-            if (importDefault(dependencyMap[32])(content)) {
-              let obj2 = importDefault(dependencyMap[33]);
+            if (importDefault(5651)(content)) {
+              let obj2 = importDefault(7673);
               content = obj2.stringify(content, getGuildId);
               if (null == content) {
-                let tmp87 = importDefault(dependencyMap[34]);
+                let tmp87 = importDefault(3);
                 const prototype = tmp87.prototype;
                 tmp87 = new tmp87("NotificationTextUtils");
                 obj = { message: content };
@@ -503,33 +514,33 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
             }
             const items = [];
             if ("message_reference" in content) {
-              let obj3 = content(dependencyMap[35]);
+              let obj3 = require(5679) /* isForwardMessage */;
               let result = obj3.isForwardServerMessage(content);
             } else {
-              result = importDefault(dependencyMap[35])(content);
+              result = importDefault(5679)(content);
             }
             if (result) {
-              const intl8 = content(dependencyMap[29]).intl;
-              let stringResult = intl8.string(content(dependencyMap[29]).t.9ddYKt);
+              const intl8 = require(1212) /* getSystemLocale */.intl;
+              let stringResult = intl8.string(require(1212) /* getSystemLocale */.t["9ddYKt"]);
               let tmp36 = items;
             } else {
               if (null != content.activity) {
                 if (null != content.application) {
                   if (content.activity.type === constants.JOIN) {
-                    const intl7 = content(dependencyMap[29]).intl;
+                    const intl7 = require(1212) /* getSystemLocale */.intl;
                     obj = { user: name, game: content.application.name };
-                    let str7 = intl7.formatToPlainString(getInviteEmbedFormatString(getGuildId, content(dependencyMap[29]).t.E8CgCh, content(dependencyMap[29]).t.c6KHWJ, content(dependencyMap[29]).t.Fy7rJN), obj);
+                    let str7 = intl7.formatToPlainString(getInviteEmbedFormatString(getGuildId, require(1212) /* getSystemLocale */.t.E8CgCh, require(1212) /* getSystemLocale */.t.c6KHWJ, require(1212) /* getSystemLocale */.t.Fy7rJN), obj);
                   } else {
                     name = constants;
                     str7 = "";
                     if (content.activity.type === constants.JOIN_REQUEST) {
-                      name = content;
+                      name = require;
                       name = dependencyMap;
-                      const intl11 = content(dependencyMap[29]).intl;
+                      const intl11 = require(1212) /* getSystemLocale */.intl;
                       name = getInviteEmbedFormatString;
                       name = getGuildId;
                       obj1 = { user: name, game: content.application.name };
-                      str7 = intl11.formatToPlainString(getInviteEmbedFormatString(getGuildId, content(dependencyMap[29]).t./TD0la, content(dependencyMap[29]).t./TD0la, content(dependencyMap[29]).t./TD0la), obj1);
+                      str7 = intl11.formatToPlainString(getInviteEmbedFormatString(getGuildId, require(1212) /* getSystemLocale */.t["/TD0la"], require(1212) /* getSystemLocale */.t["/TD0la"], require(1212) /* getSystemLocale */.t["/TD0la"]), obj1);
                     }
                   }
                   stringResult = str7;
@@ -538,32 +549,32 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
               }
               if (null != content.activity) {
                 if (content.activity.type === constants.LISTEN) {
-                  const intl6 = content(dependencyMap[29]).intl;
+                  const intl6 = require(1212) /* getSystemLocale */.intl;
                   obj2 = { user: name };
-                  stringResult = intl6.formatToPlainString(getInviteEmbedFormatString(getGuildId, content(dependencyMap[29]).t.SaDdmN, content(dependencyMap[29]).t.qsODhp, content(dependencyMap[29]).t.WeiMTW), obj2);
+                  stringResult = intl6.formatToPlainString(getInviteEmbedFormatString(getGuildId, require(1212) /* getSystemLocale */.t.SaDdmN, require(1212) /* getSystemLocale */.t.qsODhp, require(1212) /* getSystemLocale */.t.WeiMTW), obj2);
                   tmp36 = items;
-                  const tmp59 = getInviteEmbedFormatString(getGuildId, content(dependencyMap[29]).t.SaDdmN, content(dependencyMap[29]).t.qsODhp, content(dependencyMap[29]).t.WeiMTW);
+                  const tmp59 = getInviteEmbedFormatString(getGuildId, require(1212) /* getSystemLocale */.t.SaDdmN, require(1212) /* getSystemLocale */.t.qsODhp, require(1212) /* getSystemLocale */.t.WeiMTW);
                 }
               }
               if (null != sticker_items) {
                 if (sticker_items.length > 0) {
-                  const intl5 = content(dependencyMap[29]).intl;
+                  const intl5 = require(1212) /* getSystemLocale */.intl;
                   obj3 = { stickerName: sticker_items[0].name };
-                  stringResult = intl5.formatToPlainString(content(dependencyMap[29]).t.zY4v1B, obj3);
+                  stringResult = intl5.formatToPlainString(require(1212) /* getSystemLocale */.t.zY4v1B, obj3);
                   tmp36 = items;
                 }
               }
               if (content.type === constants4.PREMIUM_REFERRAL) {
-                const intl4 = content(dependencyMap[29]).intl;
+                const intl4 = require(1212) /* getSystemLocale */.intl;
                 let obj4 = {};
-                let obj8 = importDefault(dependencyMap[36]);
+                let obj8 = importDefault(3969);
                 obj4.username = obj8.getName(bot);
-                stringResult = intl4.formatToPlainString(content(dependencyMap[29]).t.lieTqU, obj4);
+                stringResult = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.lieTqU, obj4);
                 tmp36 = items;
               } else if (null != content.poll) {
-                const intl3 = content(dependencyMap[29]).intl;
+                const intl3 = require(1212) /* getSystemLocale */.intl;
                 const obj5 = { question: content.poll.question.text };
-                stringResult = intl3.formatToPlainString(content(dependencyMap[29]).t.ImizdM, obj5);
+                stringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.ImizdM, obj5);
                 tmp36 = items;
               } else {
                 name = constants4;
@@ -575,27 +586,27 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                     if (null != first) {
                       const fields = first.fields;
                       if (null != fields) {
-                        found = fields.find((name) => "poll_question_text" === "name" in name ? name.name : name.rawName);
+                        found = fields.find((name) => "poll_question_text" === ("name" in name ? name.name : name.rawName));
                       }
                     }
                   }
                   if (null == found) {
-                    const intl2 = content(dependencyMap[29]).intl;
+                    const intl2 = require(1212) /* getSystemLocale */.intl;
                     const obj6 = { question: "" };
-                    stringResult = intl2.formatToPlainString(content(dependencyMap[29]).t.9WrecI, obj6);
+                    stringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["9WrecI"], obj6);
                     tmp36 = items;
                   }
                 } else {
                   if (null != content.components) {
                     if (content.components.length > 0) {
-                      if (content.components[0].type === content(dependencyMap[37]).ComponentType.CHECKPOINT_CARD) {
-                        const intl = content(dependencyMap[29]).intl;
-                        stringResult = intl.string(content(dependencyMap[29]).t.HWnMTQ);
+                      if (content.components[0].type === require(1881) /* PermissionOverwriteType */.ComponentType.CHECKPOINT_CARD) {
+                        const intl = require(1212) /* getSystemLocale */.intl;
+                        stringResult = intl.string(require(1212) /* getSystemLocale */.t.HWnMTQ);
                         tmp36 = items;
                       }
                     }
                   }
-                  obj4 = importDefault(dependencyMap[38]);
+                  obj4 = importDefault(6924);
                   ({ content, emoji } = obj4.unparseWithMeta(content, getGuildId.id, true));
                   stringResult = content;
                   tmp36 = emoji;
@@ -658,8 +669,8 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                         }
                       }
                     }
-                    const intl10 = content(dependencyMap[29]).intl;
-                    str11 = intl10.string(content(dependencyMap[29]).t.slFYgi);
+                    const intl10 = require(1212) /* getSystemLocale */.intl;
+                    str11 = intl10.string(require(1212) /* getSystemLocale */.t.slFYgi);
                   }
                 }
               }
@@ -673,14 +684,14 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
                 if (undefined !== content.attachments) {
                   str11 = "";
                   if (content.attachments.length > 0) {
-                    const intl9 = content(dependencyMap[29]).intl;
-                    obj8 = { filename: importDefault(dependencyMap[30])(content.attachments[0]) };
-                    str11 = intl9.formatToPlainString(content(dependencyMap[29]).t.51OkwL, obj8);
-                    const tmp77 = importDefault(dependencyMap[30])(content.attachments[0]);
+                    const intl9 = require(1212) /* getSystemLocale */.intl;
+                    obj8 = { filename: importDefault(7900)(content.attachments[0]) };
+                    str11 = intl9.formatToPlainString(require(1212) /* getSystemLocale */.t["51OkwL"], obj8);
+                    const tmp77 = importDefault(7900)(content.attachments[0]);
                   }
                 }
               }
-              const obj13 = content(dependencyMap[21]);
+              obj13 = require(1360) /* hasFlag */;
             }
           }
         }
@@ -693,7 +704,7 @@ export const makeTextChatNotification = function makeTextChatNotification(getGui
       tmp3 = renderTitle(name, channel, store2.getChannel(channel.parent_id));
     }
   }
-  if (importDefault(dependencyMap[32])(content)) {
+  if (importDefault(5651)(content)) {
     tmp3 = name;
     if (null != guild.getGuild(getGuildId.getGuildId())) {
       tmp3 = renderTitle(name, getGuildId, channel);
@@ -706,7 +717,7 @@ export const allowInAppNotifications = function allowInAppNotifications() {
   if (closure_18.hasAction()) {
     return false;
   } else {
-    const ShowInAppNotifications = arg1(dependencyMap[20]).ShowInAppNotifications;
+    const ShowInAppNotifications = require(3803) /* explicitContentFromProto */.ShowInAppNotifications;
     let setting = ShowInAppNotifications.getSetting();
     if (setting) {
       setting = !obj.getFocusModeEnabled();
@@ -715,11 +726,11 @@ export const allowInAppNotifications = function allowInAppNotifications() {
   }
 };
 export const useAllowInAppNotifications = function useAllowInAppNotifications() {
-  const ShowInAppNotifications = arg1(dependencyMap[20]).ShowInAppNotifications;
+  const ShowInAppNotifications = require(3803) /* explicitContentFromProto */.ShowInAppNotifications;
   const setting = ShowInAppNotifications.useSetting();
-  const focusModeEnabled = arg1(dependencyMap[39]).useFocusModeEnabled();
-  const obj = arg1(dependencyMap[39]);
+  const focusModeEnabled = require(10230) /* useFocusModeEnabled */.useFocusModeEnabled();
+  const obj = require(10230) /* useFocusModeEnabled */;
   const items = [closure_18];
-  const obj2 = arg1(dependencyMap[40]);
-  return !arg1(dependencyMap[40]).useStateFromStores(items, () => closure_18.hasAction()) && setting && !focusModeEnabled;
+  const obj2 = require(566) /* initialize */;
+  return !require(566) /* initialize */.useStateFromStores(items, () => outer1_18.hasAction()) && setting && !focusModeEnabled;
 };

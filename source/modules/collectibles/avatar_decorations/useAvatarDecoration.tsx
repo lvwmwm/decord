@@ -1,22 +1,26 @@
-// Module ID: 9081
-// Function ID: 71185
+// Module ID: 9088
+// Function ID: 71226
 // Name: getAvatarDecoration
-// Dependencies: []
+// Dependencies: [57, 1917, 624, 2]
 // Exports: useAvatarDecoration
 
-// Module 9081 (getAvatarDecoration)
-function getAvatarDecoration(user, guildId) {
+// Module 9088 (getAvatarDecoration)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+function getAvatarDecoration(user, _slicedToArray) {
   let tmp = arg2;
   if (arg2 === undefined) {
-    const items = [closure_3];
+    const items = [_isNativeReflectConstruct];
     tmp = items;
   }
   const first = callback(tmp, 1)[0];
   let member = null;
-  if (null != guildId) {
+  if (null != _slicedToArray) {
     member = null;
     if (null != user) {
-      member = first.getMember(guildId, user.id);
+      member = first.getMember(_slicedToArray, user.id);
     }
   }
   let avatarDecoration;
@@ -32,17 +36,15 @@ function getAvatarDecoration(user, guildId) {
   }
   return avatarDecoration;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecoration.tsx");
+const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecoration.tsx");
 
 export const useAvatarDecoration = function useAvatarDecoration(user, guildId) {
-  guildId = user;
+  const _require = user;
   const dependencyMap = guildId;
-  const items = [closure_3];
-  return guildId(dependencyMap[2]).useStateFromStores(items, () => {
-    const items = [closure_3];
-    return callback(arg0, arg1, items);
+  let items = [_isNativeReflectConstruct];
+  return _require(624).useStateFromStores(items, () => {
+    const items = [outer1_3];
+    return outer1_4(closure_0, closure_1, items);
   });
 };
 export { getAvatarDecoration };

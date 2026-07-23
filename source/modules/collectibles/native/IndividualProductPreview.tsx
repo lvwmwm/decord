@@ -1,17 +1,32 @@
-// Module ID: 8742
-// Function ID: 69141
+// Module ID: 8749
+// Function ID: 69182
 // Name: ProfilePreviewWrapper
-// Dependencies: []
+// Dependencies: [31, 27, 655, 33, 4130, 689, 4554, 8667, 8234, 8750, 8751, 8752, 1876, 656, 8754, 8757, 2]
 // Exports: IndividualProductPreview
 
-// Module 8742 (ProfilePreviewWrapper)
+// Module 8749 (ProfilePreviewWrapper)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import items from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function ProfilePreviewWrapper(children) {
-  ({ handlePreviewPress: closure_0, onTrackPress: closure_1 } = children);
-  const tmp = callback3();
+  let importDefault;
+  let require;
+  ({ handlePreviewPress: require, onTrackPress: importDefault } = children);
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {
     onPress() {
       if (null != callback2) {
-        callback2(constants.FULL_PROFILE_PREVIEW);
+        callback2(outer1_6.FULL_PROFILE_PREVIEW);
       }
       if (null != callback) {
         callback();
@@ -21,10 +36,10 @@ function ProfilePreviewWrapper(children) {
   };
   obj = { style: tmp.profilePreviewContainer };
   const items = [children.children, ];
-  obj = { style: tmp.profilePreviewGradient, start: {}, end: {} };
+  obj = { style: tmp.profilePreviewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 } };
   const items1 = ["" + tmp.profilePreviewGradient.color + "00", tmp.profilePreviewGradient.color];
   obj.colors = items1;
-  items[1] = callback(importDefault(dependencyMap[6]), obj);
+  items[1] = callback(importDefault(4554), obj);
   obj.children = items;
   obj.children = callback2(closure_4, obj);
   return callback(closure_3, obj);
@@ -32,12 +47,12 @@ function ProfilePreviewWrapper(children) {
 class ProfileEffectPreview {
   constructor(arg0) {
     ({ profileEffect, profileEffectRestartKey, width, handlePreviewPress, onTrackPress } = global);
-    tmp = closure_9();
-    obj = arg1(dependencyMap[7]);
+    tmp = c9();
+    obj = require("useCurrentUser");
     obj = { handlePreviewPress, onTrackPress };
     currentUser = obj.useCurrentUser();
     obj1 = { user: currentUser, profileEffect, profileEffectRestartKey, maxWidth: width, style: tmp.profilePreview };
-    obj.children = jsx(importDefault(dependencyMap[8]), obj1);
+    obj.children = jsx(require("ProfileEffectUserPreview"), obj1);
     return jsx(ProfilePreviewWrapper, obj);
   }
 }
@@ -47,58 +62,53 @@ function ProfileFramePreview(arg0) {
   let profileFrame;
   let width;
   ({ profileFrame, width, handlePreviewPress, onTrackPress } = arg0);
-  let obj = arg1(dependencyMap[7]);
+  let obj = require(8667) /* useCurrentUser */;
   obj = { handlePreviewPress, onTrackPress };
   const currentUser = obj.useCurrentUser();
-  obj = { profileFrame, user: currentUser, maxWidth: width, style: callback3().profilePreview };
-  obj.children = callback(importDefault(dependencyMap[9]), obj);
+  obj = { profileFrame, user: currentUser, maxWidth: width, style: _createForOfIteratorHelperLoose().profilePreview };
+  obj.children = callback(importDefault(8750), obj);
   return callback(ProfilePreviewWrapper, obj);
 }
 class AvatarDecorationPreview {
   constructor(arg0) {
-    ({ handlePreviewPress: closure_0, onTrackPress: closure_1 } = global);
+    ({ handlePreviewPress, onTrackPress } = global);
     obj = {
       onPress() {
             if (null != callback2) {
-              callback2(constants.FULL_PROFILE_PREVIEW);
+              callback2(outer1_6.FULL_PROFILE_PREVIEW);
             }
             if (null != callback) {
               callback();
             }
           },
-      style: closure_9().collectiblePreview,
-      children: jsx(importDefault(dependencyMap[10]), { product: global.product })
+      style: c9().collectiblePreview,
+      children: jsx(require("AvatarDecorationProductPreview"), { product: global.product })
     };
     return jsx(Pressable, obj);
   }
 }
 class NameplatePreview {
   constructor(arg0) {
-    obj = { style: closure_9().collectiblePreview, children: jsx(importDefault(dependencyMap[11]), { product: global.product }) };
+    obj = { style: c9().collectiblePreview, children: jsx(require("NameplateUser"), { product: global.product }) };
     return jsx(View, obj);
   }
 }
-importAll(dependencyMap[0]);
-const tmp3 = arg1(dependencyMap[1]);
-({ Pressable: closure_3, View: closure_4 } = tmp3);
-({ EXTERNAL_PRODUCT_SKU_IDS: closure_5, ShopCtaEnum: closure_6 } = arg1(dependencyMap[2]));
-const tmp4 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { marginTop: importDefault(dependencyMap[5]).space.PX_12 };
-obj.collectiblePreview = obj;
-obj.profilePreviewContainer = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
-obj.profilePreview = { width: "66%" };
-const obj1 = {};
-const merged = Object.assign(tmp3.StyleSheet.absoluteFillObject);
+({ Pressable: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ EXTERNAL_PRODUCT_SKU_IDS: closure_5, ShopCtaEnum: closure_6 } = items);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, position: "relative", height: 280 };
+_createForOfIteratorHelperLoose.collectiblePreview = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.profilePreviewContainer = { position: "relative", flex: 1, alignItems: "center", overflow: "hidden" };
+_createForOfIteratorHelperLoose.profilePreview = { width: "66%" };
+let obj1 = {};
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
 obj1["bottom"] = -1;
 obj1["pointerEvents"] = "none";
-obj1["color"] = importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND;
-obj.profilePreviewGradient = obj1;
-let closure_9 = obj.createStyles(obj);
-const tmp5 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/collectibles/native/IndividualProductPreview.tsx");
+obj1["color"] = require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND;
+_createForOfIteratorHelperLoose.profilePreviewGradient = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("items").fileFinishedImporting("modules/collectibles/native/IndividualProductPreview.tsx");
 
 export { ProfileEffectPreview };
 export { AvatarDecorationPreview };
@@ -110,28 +120,29 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   let width;
   ({ product, width, handlePreviewPress, onTrackPress } = arg0);
   const type = product.type;
-  if (arg1(dependencyMap[12]).CollectiblesItemType.NAMEPLATE === type) {
+  if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
     let obj = { product };
     return callback(NameplatePreview, obj);
-  } else if (arg1(dependencyMap[12]).CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
     obj = { profileEffect: product.items[0], width, handlePreviewPress, onTrackPress };
     return callback(ProfileEffectPreview, obj);
-  } else if (arg1(dependencyMap[12]).CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
     const obj1 = { profileFrame: product.items[0], width, handlePreviewPress, onTrackPress };
     return callback(ProfileFramePreview, obj1);
-  } else if (arg1(dependencyMap[12]).CollectiblesItemType.AVATAR_DECORATION === type) {
+  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
     obj = { product, handlePreviewPress, onTrackPress };
     return callback(AvatarDecorationPreview, obj);
-  } else if (arg1(dependencyMap[12]).CollectiblesItemType.EXTERNAL_SKU === type) {
-    if (product.skuId === constants.FRACTIONAL_PREMIUM) {
-      let tmp4 = callback(arg1(dependencyMap[13]).FractionalNitroPreview, {});
+  } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.EXTERNAL_SKU === type) {
+    const ALL = require(656) /* set */.FractionalPremiumSKUsSets.ALL;
+    if (ALL.has(product.skuId)) {
+      let tmp5 = callback(require(8754) /* FractionalNitroPreview */.FractionalNitroPreview, {});
     } else {
-      tmp4 = null;
+      tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp4 = callback(arg1(dependencyMap[14]).OrbBadgePreview, {});
+        tmp5 = callback(require(8757) /* OrbBadgePreview */.OrbBadgePreview, {});
       }
     }
-    return tmp4;
+    return tmp5;
   } else {
     return null;
   }

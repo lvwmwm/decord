@@ -1,21 +1,23 @@
-// Module ID: 11135
-// Function ID: 86640
+// Module ID: 11145
+// Function ID: 86690
 // Name: useForumPostContainerPressedIn
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 7590, 3991, 10339, 1324, 5167, 2]
 // Exports: ForumPostDisabledContainer, ForumPostPressableContainer, useForumPostContainerPressedIn
 
-// Module 11135 (useForumPostContainerPressedIn)
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = { childContainer: {}, card: { marginBottom: 12 } };
-obj = { marginBottom: 12, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.md, overflow: "hidden" };
+// Module 11145 (useForumPostContainerPressedIn)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createFakeSharedValue from "createFakeSharedValue";
+
+const require = arg1;
+let obj = { childContainer: { position: "relative", minHeight: 110, padding: 12 }, card: { marginBottom: 12 } };
+obj = { marginBottom: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, overflow: "hidden" };
 obj.disabledContainer = obj;
-let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const context = importAllResult.createContext(arg1(dependencyMap[5]).createFakeSharedValue(false));
-const obj5 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/forums/native/posts/ForumPostContainer.tsx");
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const context = importAllResult.createContext(createFakeSharedValue.createFakeSharedValue(false));
+const result = require("jsxProd").fileFinishedImporting("modules/forums/native/posts/ForumPostContainer.tsx");
 
 export const useForumPostContainerPressedIn = function useForumPostContainerPressedIn() {
   return importAllResult.useContext(closure_7);
@@ -30,27 +32,26 @@ export const ForumPostPressableContainer = function ForumPostPressableContainer(
   let threadId;
   ({ threadId, children, style } = arg0);
   const tmp = callback();
-  let obj = arg1(dependencyMap[6]);
-  const sharedValue = obj.useSharedValue(false);
-  const arg1 = sharedValue;
+  let obj = sharedValue(3991);
+  sharedValue = obj.useSharedValue(false);
   const items = [sharedValue];
   const memo = importAllResult.useMemo(() => ({
     onPressIn() {
-      return store.set(true);
+      return outer1_0.set(true);
     },
     onPressOut() {
-      return store.set(false);
+      return outer1_0.set(false);
     }
   }), items);
   ({ onPressIn, onPressOut } = memo);
-  ({ onTapPost, onLongTapPost } = importDefault(dependencyMap[7])({ threadId }));
+  ({ onTapPost, onLongTapPost } = importDefault(10339)({ threadId }));
   let str = "secondary";
-  if (importDefault(dependencyMap[8])("ForumPostContainer")) {
+  if (importDefault(1324)("ForumPostContainer")) {
     str = "surface-high";
   }
-  obj = { style: tmp.card, children: jsx(arg1(dependencyMap[9]).Card, obj) };
+  obj = { style: tmp.card, children: jsx(sharedValue(5167).Card, obj) };
   obj = { style: items1 };
-  const items1 = [tmp.childContainer, style];
+  items1 = [tmp.childContainer, style];
   obj.variant = str;
   obj.accessibilityRole = "button";
   obj.onPress = onTapPost;
@@ -59,8 +60,8 @@ export const ForumPostPressableContainer = function ForumPostPressableContainer(
   obj.onLongPress = onLongTapPost;
   obj.unstable_pressDelay = 130;
   obj.children = children;
-  const tmp4 = importDefault(dependencyMap[7])({ threadId });
-  return <redux.Provider value={sharedValue}><View {...obj} /></redux.Provider>;
+  const tmp4 = importDefault(10339)({ threadId });
+  return <redux.Provider value={sharedValue}><View style={items1} /></redux.Provider>;
 };
 export const ForumPostDisabledContainer = function ForumPostDisabledContainer(arg0) {
   let children;
@@ -71,5 +72,5 @@ export const ForumPostDisabledContainer = function ForumPostDisabledContainer(ar
   obj.style = items;
   obj.pointerEvents = "none";
   obj.children = children;
-  return <View {...obj} />;
+  return <View />;
 };

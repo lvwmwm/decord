@@ -1,28 +1,31 @@
-// Module ID: 16301
-// Function ID: 125782
+// Module ID: 16418
+// Function ID: 127956
 // Name: FormGuildGatingModeSelector
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 16419, 4471, 1212, 4126, 16421, 10949, 16422, 2]
 // Exports: default
 
-// Module 16301 (FormGuildGatingModeSelector)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ container: { padding: 16 }, space: { height: 8 }, alertHeader: { paddingBottom: 16 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormGuildGatingModeSelector.tsx");
+// Module 16418 (FormGuildGatingModeSelector)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16 }, space: { height: 8 }, alertHeader: { paddingBottom: 16 } });
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormGuildGatingModeSelector.tsx");
 
 export default function FormGuildGatingModeSelector(isFullServerGating) {
   isFullServerGating = isFullServerGating.isFullServerGating;
-  const arg1 = isFullServerGating;
   const onChange = isFullServerGating.onChange;
-  const importDefault = onChange;
   const tmp = callback3();
   const dependencyMap = tmp;
-  let obj = arg1(dependencyMap[4]);
+  let obj = isFullServerGating(16419);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
-  const items = [onChange];
+  let items = [onChange];
   const items1 = [onChange, isFullServerGating, tmp];
   const callback = React.useCallback(() => {
     onChange(false);
@@ -33,43 +36,43 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
       let obj = onChange(tmp[5]);
       obj = {};
       const intl = isFullServerGating(tmp[6]).intl;
-      obj.confirmText = intl.string(isFullServerGating(onChange[6]).t.NX+WJN);
+      obj.confirmText = intl.string(isFullServerGating(onChange[6]).t["NX+WJN"]);
       obj = {};
-      const obj1 = { "Null": "<string:4294472349>", "Null": "<string:4294508543>", alignItems: "<string:1107427327>", style: onChange.alertHeader };
+      const obj1 = { style: onChange.alertHeader, variant: "heading-lg/bold", color: "mobile-text-heading-primary" };
       const intl2 = isFullServerGating(tmp[6]).intl;
       obj1.children = intl2.string(isFullServerGating(onChange[6]).t.dmVoOz);
-      const items = [callback(isFullServerGating(onChange[7]).Text, obj1), ];
+      const items = [outer1_5(isFullServerGating(onChange[7]).Text, obj1), ];
       const obj2 = { variant: "text-md/normal" };
       const intl3 = isFullServerGating(tmp[6]).intl;
       obj2.children = intl3.string(isFullServerGating(onChange[6]).t.mtwzdD);
-      items[1] = callback(isFullServerGating(onChange[7]).Text, obj2);
+      items[1] = outer1_5(isFullServerGating(onChange[7]).Text, obj2);
       obj.children = items;
-      obj.children = callback2(closure_6, obj);
+      obj.children = outer1_7(outer1_6, obj);
       obj.show(obj);
     }
     onChange(true);
   }, items1);
-  obj = { icon: importDefault(dependencyMap[9]) };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.title = intl.string(arg1(dependencyMap[6]).t.rXqxhF);
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj.description = intl2.string(arg1(dependencyMap[6]).t.yQiJne);
+  obj = { icon: onChange(10949) };
+  let intl = isFullServerGating(1212).intl;
+  obj.title = intl.string(isFullServerGating(1212).t.rXqxhF);
+  let intl2 = isFullServerGating(1212).intl;
+  obj.description = intl2.string(isFullServerGating(1212).t.yQiJne);
   obj.selected = !isFullServerGating;
   obj.onPress = callback;
   obj.disabled = roleSubscriptionSettingsDisabled;
-  const items2 = [callback(importDefault(dependencyMap[8]), obj), callback(View, { style: tmp.space }), ];
-  const obj2 = {};
-  const obj1 = { style: tmp.space };
-  const tmp5 = importDefault(dependencyMap[8]);
-  obj2.icon = importDefault(dependencyMap[10]);
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj2.title = intl3.string(arg1(dependencyMap[6]).t.WzC9s6);
-  const intl4 = arg1(dependencyMap[6]).intl;
-  obj2.description = intl4.string(arg1(dependencyMap[6]).t.WmagiB);
+  const items2 = [callback(onChange(16421), obj), callback(View, { style: tmp.space }), ];
+  let obj2 = {};
+  let obj1 = { style: tmp.space };
+  const tmp5 = onChange(16421);
+  obj2.icon = onChange(16422);
+  let intl3 = isFullServerGating(1212).intl;
+  obj2.title = intl3.string(isFullServerGating(1212).t.WzC9s6);
+  const intl4 = isFullServerGating(1212).intl;
+  obj2.description = intl4.string(isFullServerGating(1212).t.WmagiB);
   obj2.selected = isFullServerGating;
   obj2.onPress = callback1;
   obj2.disabled = roleSubscriptionSettingsDisabled;
-  items2[2] = callback(importDefault(dependencyMap[8]), obj2);
+  items2[2] = callback(onChange(16421), obj2);
   obj.children = items2;
   return callback2(View, obj);
 };

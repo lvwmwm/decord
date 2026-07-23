@@ -1,10 +1,13 @@
-// Module ID: 8305
-// Function ID: 65751
+// Module ID: 8311
+// Function ID: 65788
 // Name: spotifyUtmParams
-// Dependencies: []
+// Dependencies: [653, 4814, 477, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8305 (spotifyUtmParams)
+// Module 8311 (spotifyUtmParams)
+import set from "set";
+import set from "set";
+
 function spotifyUtmParams(desktop) {
   return "?utm_source=discord&utm_medium=" + desktop;
 }
@@ -53,20 +56,18 @@ obj = {
     return "https://app.adjust.com/bdyga9?campaign=" + Identifier;
   }
 };
-const importDefaultResult = importDefault(dependencyMap[1]);
 let str = "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8";
-if (obj4.isAndroid()) {
+if (set.isAndroid()) {
   str = "https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_US&gl=US";
 }
 obj.APP_STORE = str;
 obj.IOS_APP_STORE = "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8";
 const frozen = Object.freeze(obj);
-const obj4 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/spotify/SpotifyConstants.tsx");
+const result = set.fileFinishedImporting("modules/spotify/SpotifyConstants.tsx");
 
 export const SPOTIFY_APP_PROTOCOL = "spotify";
 export const SPOTIFY_PARTY_PREFIX = "spotify:";
-export const SPOTIFY_PLATFORM_NAME = importDefaultResult.get(arg1(dependencyMap[0]).PlatformTypes.SPOTIFY).name;
+export const SPOTIFY_PLATFORM_NAME = require("getPlatformUserUrl").get(require("ME").PlatformTypes.SPOTIFY).name;
 export const isSpotifyParty = function isSpotifyParty(id) {
   let startsWithResult = null != id;
   if (startsWithResult) {
@@ -76,7 +77,7 @@ export const isSpotifyParty = function isSpotifyParty(id) {
 };
 export const SpotifyResourceTypes = obj;
 export const SpotifyActionTypes = { USER_ACTIVITY_PLAY: "user_activity_play", USER_ACTIVITY_SYNC: "user_activity_sync", EMBED_SYNC: "embed_sync" };
-export const SPOTIFY_HOSTNAMES = ["dtstart", "wkst"];
+export const SPOTIFY_HOSTNAMES = ["open.spotify.com", "www.spotify.com"];
 export const SpotifyEndpoints = frozen;
 export const getSpotifyResourceType = function getSpotifyResourceType(arg0) {
   if ("string" !== typeof arg0) {

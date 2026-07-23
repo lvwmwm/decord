@@ -1,30 +1,35 @@
-// Module ID: 7872
-// Function ID: 62686
+// Module ID: 7878
+// Function ID: 62723
 // Name: EditCollectiblesPickerList
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 7865, 4126, 22, 7879, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 7872 (EditCollectiblesPickerList)
-let closure_2 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-let obj = { list: { loginWebAuthn: null, Ŕ: null }, listContent: { paddingBottom: 88 }, loadingContainer: { t: "_createPaymentsSetupCompleteCallback", channel: "_handleNewListener" } };
-obj = { paddingHorizontal: arg1(dependencyMap[5]).GUTTER_SIZE };
+// Module 7878 (EditCollectiblesPickerList)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ ActivityIndicator: closure_4, View: closure_5 } = get_ActivityIndicator);
+let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" } };
+obj = { paddingHorizontal: require("useCollectibleListLayout").GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 };
 obj.header = obj;
-let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
-let closure_8 = importAllResult.memo((children) => <closure_5 style={callback2().header}>{jsx(arg1(dependencyMap[6]).Heading, { children: arg0.header })}</closure_5>);
-const obj2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_8 = importAllResult.memo((header) => {
+  obj = { style: callback().header, children: jsx(require(4126) /* Text */.Heading, obj) };
+  obj = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: header.header };
+  return <closure_5 variant="heading-sm/medium" color="mobile-text-heading-primary">{arg0.header}</closure_5>;
+});
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");
 
 export const EditCollectiblesPickerList = function EditCollectiblesPickerList(sections) {
   sections = sections.sections;
-  const arg1 = sections;
   const selectedSkuId = sections.selectedSkuId;
-  const dependencyMap = selectedSkuId;
   const renderRow = sections.renderRow;
-  let callback = renderRow;
   let flag = sections.isFetching;
   if (flag === undefined) {
     flag = false;
@@ -32,54 +37,53 @@ export const EditCollectiblesPickerList = function EditCollectiblesPickerList(se
   let listContent = sections.contentContainerStyle;
   let closure_4;
   let num;
-  const tmp = callback2();
+  const tmp = callback();
   num = 0;
-  const tmp2 = callback(flag.useState(0), 2);
+  const tmp2 = renderRow(flag.useState(0), 2);
   const first = tmp2[0];
   closure_4 = tmp2[1];
-  callback = importAllResult.useCallback((nativeEvent) => {
+  callback = flag.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
   if (first > 0) {
-    const diff = first - 4 * arg1(dependencyMap[5]).GUTTER_SIZE;
-    num = diff / arg1(dependencyMap[5]).ROW_SIZE;
+    const diff = first - 4 * sections(selectedSkuId[5]).GUTTER_SIZE;
+    num = diff / sections(selectedSkuId[5]).ROW_SIZE;
   }
-  const items = [sections, flag];
+  let items = [sections, flag];
   const items1 = [renderRow, num, selectedSkuId];
-  const memo = importAllResult.useMemo(() => {
-    const items = [];
+  const memo = flag.useMemo(() => {
+    let items = [];
     if (flag) {
       return items;
     } else {
-      const sections = items;
-      const item = sections.forEach((header) => {
+      let item = items.forEach((header) => {
         const items = header;
         items.push({ type: "header", key: "header-" + header.section, header: header.header });
         const obj = { type: "header", key: "header-" + header.section, header: header.header };
-        const obj2 = items(closure_1[7]);
-        const item = items(closure_1[7]).chunk(header.items, items(closure_1[5]).ROW_SIZE).forEach((items) => {
-          items.push({ type: "row", key: "row-" + items.section + "-" + arg1, items });
+        const obj2 = sections(selectedSkuId[7]);
+        const item = sections(selectedSkuId[7]).chunk(header.items, sections(selectedSkuId[5]).ROW_SIZE).forEach((items) => {
+          header.push({ type: "row", key: "row-" + header.section + "-" + arg1, items });
         });
       });
       return items;
     }
   }, items);
-  const callback1 = importAllResult.useCallback((item) => {
+  const callback1 = flag.useCallback((item) => {
     item = item.item;
     if ("header" === item.type) {
       let obj = { header: item.header };
-      let tmp4 = callback2(closure_8, obj);
+      let tmp4 = outer1_6(outer1_8, obj);
     } else {
       obj = { items: item.items, size: num, selectedSkuId };
       tmp4 = renderRow(obj);
     }
     return tmp4;
   }, items1);
-  const callback2 = importAllResult.useCallback((type) => type.type, []);
+  const callback2 = flag.useCallback((type) => type.type, []);
   let obj = {};
   if (flag) {
     obj.style = tmp.loadingContainer;
-    obj.children = <closure_4 />;
+    obj.children = <closure_4 animating size="large" />;
     let tmp18 = obj;
   } else {
     obj.style = tmp.list;
@@ -90,7 +94,7 @@ export const EditCollectiblesPickerList = function EditCollectiblesPickerList(se
     obj.contentContainerStyle = listContent;
     obj.onLayout = callback;
     obj.keyboardShouldPersistTaps = "always";
-    obj.children = jsx(arg1(dependencyMap[8]).BottomSheetFlashList, obj);
+    obj.children = jsx(sections(selectedSkuId[8]).BottomSheetFlashList, { data: memo, renderItem: callback1, getItemType: callback2, keyExtractor: tmp11, extraData: selectedSkuId });
     tmp18 = obj;
     const tmp14 = jsx;
   }

@@ -1,9 +1,18 @@
-// Module ID: 9423
-// Function ID: 73363
+// Module ID: 9430
+// Function ID: 73404
 // Name: SlideoutButton
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 3974, 689, 4660, 1273, 2]
 
-// Module 9423 (SlideoutButton)
+// Module 9430 (SlideoutButton)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 class SlideoutButton {
   constructor(arg0) {
     ({ title, height } = global);
@@ -11,7 +20,7 @@ class SlideoutButton {
     if (height === undefined) {
       height = 60;
     }
-    tmp = closure_6();
+    tmp = c6();
     obj = { accessibilityRole: "button", onPress };
     obj = { style: items };
     items = [, ];
@@ -20,30 +29,25 @@ class SlideoutButton {
     obj1.height = height;
     items[1] = obj1;
     obj2 = {};
-    obj2.color = importDefault(dependencyMap[6]).colors.WHITE;
+    obj2.color = require("_createForOfIteratorHelperLoose").colors.WHITE;
     items1 = [, ];
     items1[0] = jsx(IconComponent, obj2);
     obj3 = { style: tmp.buttonText };
     obj3.children = title.toUpperCase();
-    items1[1] = jsx(arg1(dependencyMap[8]).LegacyText, obj3);
+    items1[1] = jsx(require("Button").LegacyText, obj3);
     obj.children = items1;
     obj.children = jsxs(View, obj);
-    return jsx(arg1(dependencyMap[7]).PressableOpacity, obj);
+    return jsx(require("PressableBase").PressableOpacity, obj);
   }
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { button: {} };
-obj = { 0: "<string:17891332>", 9223372036854775807: "external", 9223372036854775807: "<string:3477143808>", 0: "<string:285213921>", 9223372036854775807: "<string:553217>", 0: "<string:1090584576>" };
-const tmp3 = arg1(dependencyMap[3]);
-obj.color = arg1(dependencyMap[5]).hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.WHITE, 0.6);
-obj.fontFamily = arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD;
-obj.buttonText = obj;
-let closure_6 = obj.createStyles(obj);
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { button: { alignSelf: "flex-end", justifyContent: "center", alignItems: "center" } };
+_createForOfIteratorHelperLoose = { color: null, fontSize: 12, fontFamily: null, marginTop: 2, marginHorizontal: 2, textAlign: "center" };
+_createForOfIteratorHelperLoose.color = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 0.6);
+_createForOfIteratorHelperLoose.fontFamily = require("ME").Fonts.PRIMARY_SEMIBOLD;
+_createForOfIteratorHelperLoose.buttonText = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 SlideoutButton.width = 72;
-const obj4 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("components_native/common/SlideoutButton.tsx");
+const result = require("ME").fileFinishedImporting("components_native/common/SlideoutButton.tsx");
 
 export default SlideoutButton;

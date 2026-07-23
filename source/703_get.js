@@ -1,14 +1,14 @@
 // Module ID: 703
-// Function ID: 8709
+// Function ID: 8710
 // Name: get
-// Dependencies: []
+// Dependencies: [704]
 
 // Module 703 (get)
 
 export default function get(arg0, arg1, arg2) {
   let tmp;
   if (null != arg0) {
-    tmp = require(dependencyMap[0])(arg0, arg1);
+    tmp = require(704) /* baseGet */(arg0, arg1);
   }
   if (undefined === tmp) {
     tmp = arg2;

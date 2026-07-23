@@ -1,22 +1,22 @@
-// Module ID: 8285
-// Function ID: 65392
+// Module ID: 8291
+// Function ID: 65429
 // Name: MediaModalSheetWrapper
-// Dependencies: []
+// Dependencies: [31, 653, 33, 5444, 4098, 8292, 2]
 // Exports: default
 
-// Module 8285 (MediaModalSheetWrapper)
-let closure_2 = importAll(dependencyMap[0]);
-const MEDIA_MODAL_KEY = arg1(dependencyMap[1]).MEDIA_MODAL_KEY;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/media_viewer/native/components/MediaModalSheetWrapper.tsx");
+// Module 8291 (MediaModalSheetWrapper)
+import result from "result";
+import { MEDIA_MODAL_KEY } from "ME";
+import { jsx } from "jsxProd";
+
+const result = require("jsxProd").fileFinishedImporting("modules/media_viewer/native/components/MediaModalSheetWrapper.tsx");
 
 export default function MediaModalSheetWrapper(onCloseCallback) {
-  const importDefault = onCloseCallback;
+  onCloseCallback = onCloseCallback.onCloseCallback;
   let obj = Object.create(null);
   obj.onCloseCallback = 0;
   const merged = Object.assign(onCloseCallback, obj);
-  const context = React.useContext(importDefault(dependencyMap[3]));
-  const dependencyMap = context;
+  context = React.useContext(onCloseCallback(context[3]));
   const items = [context];
   const effect = React.useEffect(() => {
     let transitionState;
@@ -27,15 +27,15 @@ export default function MediaModalSheetWrapper(onCloseCallback) {
       context.onLeave();
     }
   }, items);
-  const items1 = [onCloseCallback.onCloseCallback];
+  const items1 = [onCloseCallback];
   const callback = React.useCallback(() => {
     if (null != onCloseCallback) {
       onCloseCallback();
     }
-    onCloseCallback(context[4]).hideActionSheet(closure_3);
+    onCloseCallback(context[4]).hideActionSheet(outer1_3);
   }, items1);
   obj = {};
   const merged1 = Object.assign(merged);
   obj["onClose"] = callback;
-  return jsx(importDefault(dependencyMap[5]), obj);
+  return jsx(onCloseCallback(context[5]), {});
 };

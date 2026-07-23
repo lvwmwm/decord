@@ -1,14 +1,15 @@
 // Module ID: 832
-// Function ID: 9263
+// Function ID: 9264
 // Name: SentryNonRecordingSpan
-// Dependencies: []
+// Dependencies: [6, 7, 806, 796]
 
 // Module 832 (SentryNonRecordingSpan)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const SentryNonRecordingSpan = () => {
+export const SentryNonRecordingSpan = (() => {
   class SentryNonRecordingSpan {
     constructor() {
       self = this;
@@ -16,24 +17,24 @@ export const SentryNonRecordingSpan = () => {
         if (undefined !== arguments[0]) {
           first = arguments[0];
         }
-        tmp = closure_2;
+        tmp = outer1_2;
         tmp2 = SentryNonRecordingSpan;
-        tmp3 = closure_2(self, SentryNonRecordingSpan);
+        tmp3 = outer1_2(self, SentryNonRecordingSpan);
         traceId = first.traceId;
         if (!traceId) {
           tmp4 = SentryNonRecordingSpan;
-          tmp5 = closure_1;
+          tmp5 = outer1_1;
           num = 2;
-          obj2 = SentryNonRecordingSpan(closure_1[2]);
+          obj2 = SentryNonRecordingSpan(outer1_1[2]);
           traceId = obj2.generateTraceId();
         }
         self._traceId = traceId;
         spanId = first.spanId;
         if (!spanId) {
           tmp6 = SentryNonRecordingSpan;
-          tmp7 = closure_1;
+          tmp7 = outer1_1;
           num2 = 2;
-          obj3 = SentryNonRecordingSpan(closure_1[2]);
+          obj3 = SentryNonRecordingSpan(outer1_1[2]);
           spanId = obj3.generateSpanId();
         }
         self._spanId = spanId;
@@ -43,11 +44,10 @@ export const SentryNonRecordingSpan = () => {
       return;
     }
   }
-  const require = SentryNonRecordingSpan;
   let obj = {
     key: "spanContext",
     value: function spanContext() {
-      return { spanId: this._spanId, traceId: this._traceId, traceFlags: SentryNonRecordingSpan(closure_1[3]).TRACE_FLAG_NONE };
+      return { spanId: this._spanId, traceId: this._traceId, traceFlags: SentryNonRecordingSpan(outer1_1[3]).TRACE_FLAG_NONE };
     }
   };
   const items = [obj, , , , , , , , , , ];
@@ -113,5 +113,5 @@ export const SentryNonRecordingSpan = () => {
 
     }
   };
-  return callback(SentryNonRecordingSpan, items);
-}();
+  return _defineProperties(SentryNonRecordingSpan, items);
+})();

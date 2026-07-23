@@ -1,61 +1,63 @@
-// Module ID: 15690
-// Function ID: 119858
+// Module ID: 15807
+// Function ID: 122031
 // Name: getConsoleInfo
-// Dependencies: []
+// Dependencies: [31, 653, 33, 4130, 689, 9054, 1212, 8933, 1327, 5517, 1273, 2]
 // Exports: default
 
-// Module 15690 (getConsoleInfo)
-function getConsoleInfo(type) {
-  type = type.type;
+// Module 15807 (getConsoleInfo)
+import result from "result";
+import { PlatformTypes } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let require = arg1;
+function getConsoleInfo(closure_1) {
+  const type = closure_1.type;
   if (PlatformTypes.XBOX === type) {
-    let obj = { icon: importDefault(dependencyMap[5])(type.type), color: importDefault(dependencyMap[4]).unsafe_rawColors.PLATFORM_XBOX };
-    const intl3 = arg1(dependencyMap[6]).intl;
-    obj.connectLabel = intl3.string(arg1(dependencyMap[6]).t.QN7HXV);
-    const intl4 = arg1(dependencyMap[6]).intl;
-    obj.connectSublabel = intl4.string(arg1(dependencyMap[6]).t.M/Ld86);
+    let obj = { icon: importDefault(9054)(closure_1.type), color: importDefault(689).unsafe_rawColors.PLATFORM_XBOX };
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    obj.connectLabel = intl3.string(require(1212) /* getSystemLocale */.t.QN7HXV);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    obj.connectSublabel = intl4.string(require(1212) /* getSystemLocale */.t["M/Ld86"]);
     return obj;
   } else if (PlatformTypes.PLAYSTATION === type) {
-    obj = { icon: importDefault(dependencyMap[5])(type.type), color: importDefault(dependencyMap[4]).unsafe_rawColors.PLATFORM_PLAYSTATION };
-    const intl = arg1(dependencyMap[6]).intl;
-    obj.connectLabel = intl.string(arg1(dependencyMap[6]).t.3qLlTS);
-    const intl2 = arg1(dependencyMap[6]).intl;
-    obj.connectSublabel = intl2.string(arg1(dependencyMap[6]).t./uR9x1);
+    obj = { icon: importDefault(9054)(closure_1.type), color: importDefault(689).unsafe_rawColors.PLATFORM_PLAYSTATION };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.connectLabel = intl.string(require(1212) /* getSystemLocale */.t["3qLlTS"]);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj.connectSublabel = intl2.string(require(1212) /* getSystemLocale */.t["/uR9x1"]);
     return obj;
   } else {
     return null;
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const PlatformTypes = arg1(dependencyMap[1]).PlatformTypes;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.round, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-obj.consoleIconContainer = obj;
-obj.consoleIcon = { tintColor: importDefault(dependencyMap[4]).colors.WHITE };
-let closure_6 = obj.createStyles(obj);
-const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.WHITE };
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/voice_panel/native/header/VoicePanelConsoleFacepile.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, padding: 8, margin: -3, borderWidth: 3, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.consoleIconContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.consoleIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelConsoleFacepile.tsx");
 
 export default function VoicePanelConsoleFacepile() {
-  const tmp = callback();
-  const arg1 = tmp;
-  const tmp2 = importDefault(dependencyMap[7])();
-  const importDefault = tmp2;
+  let tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  const tmp2 = importDefault(8933)();
+  importDefault = tmp2;
   let items = [tmp2];
   const items1 = [tmp];
   items = React.useMemo(() => {
-    const mapped = tmp2.map(closure_7);
-    return mapped.filter(tmp(closure_2[8]).isNotNullish);
+    const mapped = tmp2.map(outer1_7);
+    return mapped.filter(tmp(outer1_2[8]).isNotNullish);
   }, items);
   const renderItem = React.useCallback((backgroundColor) => {
     let obj = { style: items };
-    const items = [tmp.consoleIconContainer, { backgroundColor: backgroundColor.color }];
-    const tmp = tmp2(closure_2[9]);
-    obj = { style: tmp.consoleIcon, size: tmp(closure_2[10]).Icon.Sizes.MEDIUM, source: backgroundColor.icon };
-    obj.children = callback(tmp(closure_2[10]).Icon, obj);
-    return callback(tmp, obj);
+    items = [tmp.consoleIconContainer, { backgroundColor: backgroundColor.color }];
+    tmp = tmp2(outer1_2[9]);
+    obj = { style: tmp.consoleIcon, size: tmp(outer1_2[10]).Icon.Sizes.MEDIUM, source: backgroundColor.icon };
+    obj.children = outer1_5(tmp(outer1_2[10]).Icon, obj);
+    return outer1_5(tmp, obj);
   }, items1);
-  return jsx(arg1(dependencyMap[10]).SummarizedIconRow, { items, renderItem, offsetAmount: -3 });
+  return jsx(require(1273) /* Button */.SummarizedIconRow, { items, renderItem, offsetAmount: -3 });
 };
 export { getConsoleInfo };

@@ -12,14 +12,14 @@ function getBasePath(httpServerLocation) {
   }
   return substr;
 }
-let closure_0 = { nextDescriptor: "isVoicePanelEnabled", addWindow: "Text", FITNESS: "roundedCard", $$typeof: "then", Provider: "isOnStartStageScreen", Consumer: "Text" };
-const set = new Set(["FeConvolveMatrix", "FeDiffuseLighting", "FeDisplacementMap", "FeFuncA", "FeFuncB", "FeFuncG", "FeFuncR"]);
+let closure_0 = { "0.75": "ldpi", 1: "mdpi", "1.5": "hdpi", 2: "xhdpi", 3: "xxhdpi", 4: "xxxhdpi" };
+const set = new Set(["gif", "jpeg", "jpg", "ktx", "png", "webp", "xml"]);
 
 export default {
   getAndroidResourceFolderName(asset, arg1) {
     if (set.has(asset.type)) {
-      if (arg1.toString() in closure_0) {
-        let text = closure_0[arg1.toString(arg1)];
+      if (arg1.toString() in table) {
+        let text = table[arg1.toString(arg1)];
       } else {
         const _Number = Number;
         if (Number.isFinite(arg1)) {
@@ -41,7 +41,7 @@ export default {
         const _JSON2 = JSON;
         const text2 = `${`Don't know which android drawable suffix to use for scale: ${arg1}`}
     Asset: ${JSON.stringify(asset, null, "\t")}`;
-        const error1 = new Error(text2 + "\nPossible scales are:" + JSON.stringify(closure_0, null, "\t"));
+        const error1 = new Error(text2 + "\nPossible scales are:" + JSON.stringify(table, null, "\t"));
         throw error1;
       }
     } else {
@@ -49,10 +49,10 @@ export default {
     }
   },
   getAndroidResourceIdentifier(asset) {
-    const str = `${closure_2(asset)}/${asset.name}`;
-    const str2 = `${closure_2(asset)}/${asset.name}`.toLowerCase();
-    const str3 = `${closure_2(asset)}/${asset.name}`.toLowerCase().replace(/\//g, "_");
-    return `${closure_2(asset)}/${asset.name}`.toLowerCase().replace(/\//g, "_").replace(/([^a-z0-9_])/g, "").replace(/^(?:assets|assetsunstable_path)_/, "");
+    const str = `${getBasePath(asset)}/${asset.name}`;
+    const str2 = `${getBasePath(asset)}/${asset.name}`.toLowerCase();
+    const str3 = `${getBasePath(asset)}/${asset.name}`.toLowerCase().replace(/\//g, "_");
+    return `${getBasePath(asset)}/${asset.name}`.toLowerCase().replace(/\//g, "_").replace(/([^a-z0-9_])/g, "").replace(/^(?:assets|assetsunstable_path)_/, "");
   },
   getBasePath
 };

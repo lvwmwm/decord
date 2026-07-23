@@ -1,14 +1,16 @@
-// Module ID: 7728
-// Function ID: 61461
+// Module ID: 7734
+// Function ID: 61498
 // Name: createPremiumGroupInviteEmbed
-// Dependencies: []
+// Dependencies: [3790, 4130, 689, 7635, 7735, 7736, 1212, 2780, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 7728 (createPremiumGroupInviteEmbed)
-const _module = require(dependencyMap[0]);
-({ HELP_CENTER_LINK: closure_3, PremiumGroupInviteState: closure_4 } = _module);
-const _module1 = require(dependencyMap[8]);
-const result = _module1.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx");
+// Module 7734 (createPremiumGroupInviteEmbed)
+import TOTAL_PREMIUM_GROUP_MEMBER_SEATS from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
+
+let closure_3;
+let closure_4;
+({ HELP_CENTER_LINK: closure_3, PremiumGroupInviteState: closure_4 } = TOTAL_PREMIUM_GROUP_MEMBER_SEATS);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx");
 
 export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEmbed(message, theme, id, channel) {
   let betaPillBackgroundColor;
@@ -19,26 +21,26 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
   let headerTextColor;
   let linkTextColor;
   if (null != message.author) {
-    let obj = { headerTextColor: importDefault(dependencyMap[2]).colors.MOBILE_TEXT_HEADING_PRIMARY, bodyTextColor: importDefault(dependencyMap[2]).colors.TEXT_DEFAULT, linkTextColor: importDefault(dependencyMap[2]).colors.TEXT_LINK, backgroundColor: importDefault(dependencyMap[2]).colors.BACKGROUND_MOD_NORMAL, betaPillTextColor: importDefault(dependencyMap[2]).colors.BLACK, betaPillBackgroundColor: importDefault(dependencyMap[2]).colors.WHITE };
-    const tmp10 = require(dependencyMap[1]).createNativeStyleProperties(obj)(theme);
+    let obj = { headerTextColor: importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY, bodyTextColor: importDefault(689).colors.TEXT_DEFAULT, linkTextColor: importDefault(689).colors.TEXT_LINK, backgroundColor: importDefault(689).colors.BACKGROUND_MOD_NORMAL, betaPillTextColor: importDefault(689).colors.BLACK, betaPillBackgroundColor: importDefault(689).colors.WHITE };
+    const tmp10 = require(4130) /* _createForOfIteratorHelperLoose */.createNativeStyleProperties(obj)(theme);
     const backgroundColor = tmp10.backgroundColor;
     ({ headerTextColor, bodyTextColor, linkTextColor, betaPillTextColor, betaPillBackgroundColor } = tmp10);
-    const obj4 = require(dependencyMap[1]);
+    const obj4 = require(4130) /* _createForOfIteratorHelperLoose */;
     const author = message.author;
-    const assetUriForEmbed = require(dependencyMap[3]).getAssetUriForEmbed(importDefault(dependencyMap[4]));
-    const obj6 = require(dependencyMap[3]);
+    const assetUriForEmbed = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7735));
+    const obj6 = require(7635) /* frozen */;
     obj = { sender: author, channel, isSender: id === author.id, inviteState: constants.UNKNOWN };
-    const premiumGroupInviteEmbedText = require(dependencyMap[5]).getPremiumGroupInviteEmbedText(obj);
+    const premiumGroupInviteEmbedText = require(7736) /* getPremiumGroupInviteEmbedText */.getPremiumGroupInviteEmbedText(obj);
     if (null != premiumGroupInviteEmbedText) {
       ({ header, body } = premiumGroupInviteEmbedText);
-      const intl = require(dependencyMap[6]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       obj = {};
       const obj1 = { action: "bindOpenUrl", url: closure_3, linkColor: linkTextColor };
       obj.learnMoreLinkOnClick = obj1;
       const obj2 = { headerText: header, headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor, headerImageUrl: assetUriForEmbed };
-      const intl2 = require(dependencyMap[6]).intl;
-      const formatToPartsResult = intl.formatToParts(importDefault(dependencyMap[7]).9VTnfI, obj);
-      obj2.betaPillText = intl2.string(require(dependencyMap[6]).t.oW0eUd).toUpperCase();
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      const formatToPartsResult = intl.formatToParts(importDefault(2780)["9VTnfI"], obj);
+      obj2.betaPillText = intl2.string(require(1212) /* getSystemLocale */.t.oW0eUd).toUpperCase();
       obj2.betaPillTextColor = betaPillTextColor;
       obj2.betaPillBackgroundColor = betaPillBackgroundColor;
       obj2.bodyText = body;
@@ -46,6 +48,6 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
       obj2.learnMoreLink = formatToPartsResult;
       return obj2;
     }
-    const obj7 = require(dependencyMap[5]);
+    const obj7 = require(7736) /* getPremiumGroupInviteEmbedText */;
   }
 };

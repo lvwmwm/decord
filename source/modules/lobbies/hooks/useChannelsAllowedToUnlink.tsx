@@ -1,37 +1,39 @@
-// Module ID: 16097
-// Function ID: 123746
+// Module ID: 16214
+// Function ID: 125919
 // Name: getChannelsAllowedToUnlink
-// Dependencies: []
+// Dependencies: [1907, 3758, 10169, 566, 2]
 // Exports: useChannelsAllowedToUnlink
 
-// Module 16097 (getChannelsAllowedToUnlink)
+// Module 16214 (getChannelsAllowedToUnlink)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+let require = arg1;
 function getChannelsAllowedToUnlink(arg0) {
   let obj = arg1;
   let tmp = arg2;
   if (arg1 === undefined) {
-    obj = closure_2;
+    obj = _isNativeReflectConstruct;
   }
   if (tmp === undefined) {
     tmp = closure_4;
   }
-  const arg1 = tmp;
+  const require = tmp;
   if (null == arg0) {
     let items = [];
   } else {
-    const found = obj.getChannels(arg0)[closure_3].filter((channel) => tmp(closure_1[2]).canUnlinkLobbyChannel(channel.channel, tmp));
+    const found = obj.getChannels(arg0)[closure_3].filter((channel) => tmp(outer1_1[2]).canUnlinkLobbyChannel(channel.channel, tmp));
     items = found.map((channel) => channel.channel);
     const arr = obj.getChannels(arg0)[closure_3];
   }
   return items;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[0]).GUILD_SELECTABLE_CHANNELS_KEY;
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
+const result = require("canUnlinkLobbyChannel").fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
 
 export { getChannelsAllowedToUnlink };
 export const useChannelsAllowedToUnlink = function useChannelsAllowedToUnlink(id) {
-  const arg1 = id;
-  const items = [closure_4, closure_2];
-  return arg1(dependencyMap[3]).useStateFromStoresArray(items, () => callback(arg0, closure_2, closure_4));
+  const _require = id;
+  const items = [closure_4, _isNativeReflectConstruct];
+  return _require(566).useStateFromStoresArray(items, () => outer1_5(closure_0, outer1_2, outer1_4));
 };

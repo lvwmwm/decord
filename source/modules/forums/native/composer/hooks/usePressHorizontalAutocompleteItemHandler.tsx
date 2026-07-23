@@ -1,33 +1,33 @@
-// Module ID: 9549
-// Function ID: 74444
+// Module ID: 9556
+// Function ID: 74485
 // Name: set
-// Dependencies: []
+// Dependencies: [31, 653, 9557, 2]
 // Exports: usePressHorizontalAutocompleteItemHandler
 
-// Module 9549 (set)
-let closure_2 = importAll(dependencyMap[0]);
-const items = [, , , ];
-({ USER: arr[0], ROLE: arr[1], CHANNEL: arr[2], EMOJI: arr[3] } = arg1(dependencyMap[1]).AutoCompleteResultTypes);
-const set = new Set(items);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/forums/native/composer/hooks/usePressHorizontalAutocompleteItemHandler.tsx");
+// Module 9556 (set)
+import result from "result";
+import set from "getMentionTextWithUser";
+
+const require = arg1;
+let items = [, , , ];
+({ USER: arr[0], ROLE: arr[1], CHANNEL: arr[2], EMOJI: arr[3] } = require("ME").AutoCompleteResultTypes);
+let set = new Set(items);
+const result = set.fileFinishedImporting("modules/forums/native/composer/hooks/usePressHorizontalAutocompleteItemHandler.tsx");
 
 export const usePressHorizontalAutocompleteItemHandler = function usePressHorizontalAutocompleteItemHandler(draftContent) {
   draftContent = draftContent.draftContent;
-  const arg1 = draftContent;
   const handleTextChange = draftContent.handleTextChange;
-  const dependencyMap = handleTextChange;
   const setSelection = draftContent.setSelection;
-  const React = setSelection;
   const channel = draftContent.channel;
-  const items = [draftContent, handleTextChange, setSelection, channel];
-  return React.useCallback((type, length2) => {
+  let items = [draftContent, handleTextChange, setSelection, channel];
+  return setSelection.useCallback((type, length2) => {
     const obj = draftContent(handleTextChange[2]);
     const str = draftContent.substring(0, length2);
     const items = [...str];
     const reversed = items.reverse();
     const joined = reversed.join("");
     const substr = str.substring(0, str.length - joined.search(/\s|\r|\n/));
-    handleTextChange(`${tmp2}${tmp} ${closure_0.substring(length2 + arg2.length + 1)}`);
+    handleTextChange(`${tmp2}${tmp} ${draftContent.substring(length2 + arg2.length + 1)}`);
     const length = substr + draftContent(handleTextChange[2]).getAutocompleteResultText(type, channel, channel).length;
     setSelection({ start: length, end: length });
   }, items);

@@ -1,10 +1,14 @@
-// Module ID: 14751
-// Function ID: 111207
+// Module ID: 14867
+// Function ID: 113375
 // Name: folderLabel
-// Dependencies: []
+// Dependencies: [1838, 4970, 1212, 7955, 3976, 14868, 5048, 2]
 // Exports: default
 
-// Module 14751 (folderLabel)
+// Module 14867 (folderLabel)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function folderLabel(name) {
   if (null != name.name) {
     if ("" !== name.name) {
@@ -12,36 +16,34 @@ function folderLabel(name) {
     }
     return name;
   }
-  const intl = arg1(dependencyMap[2]).intl;
-  name = intl.string(arg1(dependencyMap[2]).t.ebAnWE);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  name = intl.string(require(1212) /* getSystemLocale */.t.ebAnWE);
 }
 function persistAndAnnounce(intl) {
-  arg1(dependencyMap[3]).saveGuildFolders(compatibleGuildFolders.getCompatibleGuildFolders());
+  require(7955) /* convertThemeToProto */.saveGuildFolders(compatibleGuildFolders.getCompatibleGuildFolders());
   if (null != intl) {
-    const AccessibilityAnnouncer = arg1(dependencyMap[4]).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(intl);
   }
 }
-function performMove(id, arg1, arg2, arg3, intl) {
-  const tmp = importDefault(dependencyMap[5])(id);
+function performMove(id, arg1, arg2, closure_5, intl) {
+  const tmp = importDefault(14868)(id);
   if (null != tmp) {
     const tmp3 = arg1(tmp);
     if (null != tmp3) {
-      const obj = importDefault(dependencyMap[6]);
-      obj.moveById(id, tmp3.id, arg2, arg3);
+      const obj = importDefault(5048);
+      obj.moveById(id, tmp3.id, arg2, closure_5);
       persistAndAnnounce(intl);
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildAccessibilityActions.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildAccessibilityActions.tsx");
 
 export default function getGuildsBarGuildAccessibilityActions(guildId) {
   let above;
   let below;
   let containingFolder;
-  const arg1 = guildId;
+  const _require = guildId;
   function guildAbove(above) {
     let node = null;
     if (null != above.above) {
@@ -82,10 +84,10 @@ export default function getGuildsBarGuildAccessibilityActions(guildId) {
     }
     return node;
   }
-  function currentFolder(containingFolder, currentFolder, arg2, arg3, closure_1) {
-    return containingFolder.containingFolder;
+  function currentFolder(closure_0, currentFolder, arg2, arg3, closure_1) {
+    return closure_0.containingFolder;
   }
-  const items = [];
+  let items = [];
   const guild = guildAbove.getGuild(guildId);
   let name;
   if (null != guild) {
@@ -95,58 +97,58 @@ export default function getGuildsBarGuildAccessibilityActions(guildId) {
   if (null != name) {
     str = name;
   }
-  const tmp3 = importDefault(closure_2[5])(guildId);
+  const tmp3 = importDefault(14868)(guildId);
   if (null == tmp3) {
     return items;
   } else {
     ({ containingFolder, above, below } = tmp3);
-    const intl8 = arg1(closure_2[2]).intl;
+    const intl8 = _require(1212).intl;
     let obj = { name: str };
-    const importDefault = intl8.formatToPlainString(arg1(closure_2[2]).t.2XShGC, obj);
-    const intl9 = arg1(closure_2[2]).intl;
+    importDefault = intl8.formatToPlainString(_require(1212).t["2XShGC"], obj);
+    const intl9 = _require(1212).intl;
     obj = { name: str };
-    closure_2 = intl9.formatToPlainString(arg1(closure_2[2]).t.D4maKL, obj);
+    const dependencyMap = intl9.formatToPlainString(_require(1212).t.D4maKL, obj);
     if (null == containingFolder) {
       obj = { name: "create-new-folder" };
-      const intl = arg1(closure_2[2]).intl;
-      obj.label = intl.string(arg1(closure_2[2]).t.ehmVyX);
+      const intl = _require(1212).intl;
+      obj.label = intl.string(_require(1212).t.ehmVyX);
       obj.action = function action() {
-        const items = [arg0];
-        const guildFolderLocal = callback(closure_2[6]).createGuildFolderLocal(items, "");
+        const items = [closure_0];
+        const guildFolderLocal = callback(table[6]).createGuildFolderLocal(items, "");
         folderBelow(callback);
       };
       items.push(obj);
     }
     if (null != above) {
       if (above.isFolder) {
-        const node = above.node;
+        let node = above.node;
         const tmp11 = folderAbove(node);
         const obj1 = {};
         const _HermesInternal = HermesInternal;
         obj1.name = "move-up-into-folder-" + node.id;
-        const intl3 = arg1(closure_2[2]).intl;
+        const intl3 = _require(1212).intl;
         const obj2 = { folderName: tmp11 };
-        obj1.label = intl3.formatToPlainString(arg1(closure_2[2]).t.08U1Sa, obj2);
+        obj1.label = intl3.formatToPlainString(_require(1212).t["08U1Sa"], obj2);
         obj1.action = function action() {
-          currentFolder(arg0, folderAbove, true, true, closure_1);
+          currentFolder(closure_0, folderAbove, true, true, closure_1);
         };
         items.push(obj1);
         const obj3 = {};
         const _HermesInternal2 = HermesInternal;
         obj3.name = "move-above-folder-" + node.id;
-        const intl4 = arg1(closure_2[2]).intl;
+        const intl4 = _require(1212).intl;
         const obj4 = { folderName: tmp11 };
-        obj3.label = intl4.formatToPlainString(arg1(closure_2[2]).t.gBM0Vf, obj4);
+        obj3.label = intl4.formatToPlainString(_require(1212).t.gBM0Vf, obj4);
         obj3.action = function action() {
-          currentFolder(arg0, folderAbove, false, false, null);
+          currentFolder(closure_0, folderAbove, false, false, null);
         };
         items.push(obj3);
       } else {
         const obj5 = { name: "move-up" };
-        const intl2 = arg1(closure_2[2]).intl;
-        obj5.label = intl2.string(arg1(closure_2[2]).t.yiH+Tx);
+        const intl2 = _require(1212).intl;
+        obj5.label = intl2.string(_require(1212).t["yiH+Tx"]);
         obj5.action = function action() {
-          currentFolder(arg0, guildAbove, false, false, null);
+          currentFolder(closure_0, guildAbove, false, false, null);
         };
         items.push(obj5);
       }
@@ -158,29 +160,29 @@ export default function getGuildsBarGuildAccessibilityActions(guildId) {
         const obj6 = {};
         const _HermesInternal3 = HermesInternal;
         obj6.name = "move-down-into-folder-" + node2.id;
-        const intl6 = arg1(closure_2[2]).intl;
+        const intl6 = _require(1212).intl;
         const obj7 = { folderName: tmp21 };
-        obj6.label = intl6.formatToPlainString(arg1(closure_2[2]).t.6lLC/B, obj7);
+        obj6.label = intl6.formatToPlainString(_require(1212).t["6lLC/B"], obj7);
         obj6.action = function action() {
-          currentFolder(arg0, folderBelow, true, true, closure_1);
+          currentFolder(closure_0, folderBelow, true, true, closure_1);
         };
         items.push(obj6);
         const obj8 = {};
         const _HermesInternal4 = HermesInternal;
         obj8.name = "move-below-folder-" + node2.id;
-        const intl7 = arg1(closure_2[2]).intl;
+        const intl7 = _require(1212).intl;
         const obj9 = { folderName: tmp21 };
-        obj8.label = intl7.formatToPlainString(arg1(closure_2[2]).t.YhxCkM, obj9);
+        obj8.label = intl7.formatToPlainString(_require(1212).t.YhxCkM, obj9);
         obj8.action = function action() {
-          currentFolder(arg0, folderBelow, true, false, null);
+          currentFolder(closure_0, folderBelow, true, false, null);
         };
         items.push(obj8);
       } else {
         const obj10 = { name: "move-down" };
-        const intl5 = arg1(closure_2[2]).intl;
-        obj10.label = intl5.string(arg1(closure_2[2]).t.+V6oLI);
+        const intl5 = _require(1212).intl;
+        obj10.label = intl5.string(_require(1212).t["+V6oLI"]);
         obj10.action = function action() {
-          currentFolder(arg0, guildBelow, true, false, null);
+          currentFolder(closure_0, guildBelow, true, false, null);
         };
         items.push(obj10);
       }
@@ -191,21 +193,21 @@ export default function getGuildsBarGuildAccessibilityActions(guildId) {
       const obj11 = {};
       const _HermesInternal5 = HermesInternal;
       obj11.name = "move-out-above-" + id;
-      const intl10 = arg1(closure_2[2]).intl;
+      const intl10 = _require(1212).intl;
       const obj12 = { folderName: tmp30 };
-      obj11.label = intl10.formatToPlainString(arg1(closure_2[2]).t.vnfRJG, obj12);
+      obj11.label = intl10.formatToPlainString(_require(1212).t.vnfRJG, obj12);
       obj11.action = function action() {
-        currentFolder(arg0, currentFolder, false, false, closure_2);
+        currentFolder(closure_0, currentFolder, false, false, closure_2);
       };
       items.push(obj11);
       const obj13 = {};
       const _HermesInternal6 = HermesInternal;
       obj13.name = "move-out-below-" + id;
-      const intl11 = arg1(closure_2[2]).intl;
+      const intl11 = _require(1212).intl;
       const obj14 = { folderName: tmp30 };
-      obj13.label = intl11.formatToPlainString(arg1(closure_2[2]).t.ejhw4S, obj14);
+      obj13.label = intl11.formatToPlainString(_require(1212).t.ejhw4S, obj14);
       obj13.action = function action() {
-        currentFolder(arg0, currentFolder, true, false, closure_2);
+        currentFolder(closure_0, currentFolder, true, false, closure_2);
       };
       items.push(obj13);
     }

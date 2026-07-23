@@ -1,30 +1,32 @@
-// Module ID: 11670
-// Function ID: 90555
+// Module ID: 11680
+// Function ID: 90604
 // Name: ChatViewPopups
-// Dependencies: []
+// Dependencies: [31, 11681, 11685, 11693, 2]
 
-// Module 11670 (ChatViewPopups)
+// Module 11680 (ChatViewPopups)
+import importAllResult from "result";
+
+const require = arg1;
 class ChatViewPopups {
   constructor(arg0) {
     guildId = global.guildId;
-    arg1 = guildId;
-    closure_1 = importAll.useRef(false);
-    tmp = closure_1(dependencyMap[1])(guildId);
-    dependencyMap = tmp;
-    obj = arg1(dependencyMap[2]);
+    c1 = channelId.useRef(false);
+    tmp = require("useIsHubRealNamePromptShowing")(guildId);
+    closure_2 = tmp;
+    obj = require("useShowWelcomeModal");
     showWelcomeModal = obj.useShowWelcomeModal(guildId, global.channelId);
-    importAll = showWelcomeModal;
+    channelId = showWelcomeModal;
     items = [, , ];
     items[0] = guildId;
     items[1] = showWelcomeModal;
     items[2] = tmp;
-    effect = importAll.useEffect(() => {
+    effect = channelId.useEffect(() => {
       if (!ref.current) {
         if (tmp) {
           let obj = {
             guildId,
             onHide() {
-                  closure_1.current = false;
+                  outer1_1.current = false;
                   return false;
                 }
           };
@@ -36,7 +38,7 @@ class ChatViewPopups {
           obj = {
             guildId,
             onHide() {
-                  closure_1.current = false;
+                  outer1_1.current = false;
                   return false;
                 }
           };
@@ -48,9 +50,8 @@ class ChatViewPopups {
     return null;
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
 const memoResult = importAllResult.memo(ChatViewPopups);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/chat/native/ChatViewPopups.tsx");
+let result = require("useShowWelcomeModal").fileFinishedImporting("modules/chat/native/ChatViewPopups.tsx");
 
 export default memoResult;
 export { ChatViewPopups };

@@ -1,10 +1,27 @@
-// Module ID: 7591
-// Function ID: 60773
+// Module ID: 7597
+// Function ID: 60810
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1352, 7464, 1857, 1348, 653, 1211, 3769, 3771, 1357, 1358, 507, 686, 22, 1387, 3712, 566, 2]
 
-// Module 7591 (_isNativeReflectConstruct)
+// Module 7597 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import apply from "apply";
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields";
+import { createChannelRecordFromInvite as closure_8 } from "_callSuper";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { DEFAULT_AUTO_ARCHIVE_DURATION as closure_16 } from "AbortCodes";
+import importDefaultResult from "apply";
+
 let FormStates;
+let closure_12;
+let closure_13;
+let closure_14;
+let require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,49 +31,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -67,16 +84,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -109,15 +126,15 @@ function normalizeChannelPropertyForCompare(arg0, emojiId) {
   } else if ("defaultSortOrder" === arg0) {
     let LATEST_ACTIVITY = emojiId;
     if (null == emojiId) {
-      LATEST_ACTIVITY = emojiId(dependencyMap[13]).ThreadSortOrder.LATEST_ACTIVITY;
+      LATEST_ACTIVITY = require(1357) /* set */.ThreadSortOrder.LATEST_ACTIVITY;
     }
     return LATEST_ACTIVITY;
   } else if ("defaultForumLayout" === arg0) {
     if (arg2 === constants2.GUILD_MEDIA) {
-      return emojiId(dependencyMap[14]).ForumLayout.GRID;
+      return require(1358) /* set */.ForumLayout.GRID;
     } else {
       if (null == emojiId) {
-        let LIST = emojiId(dependencyMap[14]).ForumLayout.LIST;
+        let LIST = require(1358) /* set */.ForumLayout.LIST;
       } else {
         LIST = emojiId;
       }
@@ -129,7 +146,7 @@ function normalizeChannelPropertyForCompare(arg0, emojiId) {
         if ("defaultReactionEmoji" === arg0) {
           let tmp2 = null;
           if (null != emojiId) {
-            let obj = emojiId(dependencyMap[11]);
+            let obj = require(3769) /* getReactionEmojiName */;
             if (obj.isCustomReactionEmojiId(emojiId.emojiId)) {
               obj = { emojiId: emojiId.emojiId };
               tmp2 = obj;
@@ -139,9 +156,9 @@ function normalizeChannelPropertyForCompare(arg0, emojiId) {
               if (null != emojiName) {
                 tmp5 = null;
                 if ("" !== emojiName) {
-                  obj = { emojiName: importDefault(dependencyMap[12]).translateInlineEmojiToSurrogates(emojiName) };
+                  obj = { emojiName: importDefault(3771).translateInlineEmojiToSurrogates(emojiName) };
                   tmp5 = obj;
-                  const obj3 = importDefault(dependencyMap[12]);
+                  const obj3 = importDefault(3771);
                 }
               }
               tmp2 = tmp5;
@@ -161,34 +178,36 @@ function normalizeChannelPropertyForCompare(arg0, emojiId) {
   }
 }
 function handleSetSection(arg0) {
+  let closure_17;
+  let closure_18;
   ({ section: closure_17, subsection: closure_18 } = arg0);
   let tmp = null != store2;
   if (tmp) {
     tmp = closure_17 === constants.INSTANT_INVITES;
   }
   if (tmp) {
-    let closure_26 = true;
-    const HTTP = arg1(dependencyMap[15]).HTTP;
-    const obj = { y: null, isArray: null, accessible: null, url: closure_14.INSTANT_INVITES(store2.id) };
+    let c26 = true;
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    let obj = { url: closure_14.INSTANT_INVITES(store2.id), oldFormErrors: true, rejectWithError: true };
     const value = HTTP.get(obj);
     value.then((body) => {
-      let closure_26 = false;
-      let obj = callback(closure_2[16]);
+      let c26 = false;
+      let obj = outer1_1(outer1_2[16]);
       obj = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
       obj.dispatch(obj);
     }, () => {
-      let closure_26 = false;
+      let c26 = false;
       return false;
     });
   }
 }
 function handleSettingsClose() {
-  let closure_27 = false;
+  let c27 = false;
   const CLOSED = FormStates.CLOSED;
-  let closure_17 = null;
-  let closure_19 = null;
-  let closure_20 = null;
-  let closure_21 = null;
+  let c17 = null;
+  let c19 = null;
+  let c20 = null;
+  let c21 = null;
   let closure_25 = {};
 }
 function _createInvite(code) {
@@ -203,32 +222,32 @@ function _createInvite(code) {
   obj.channel = callback3(code.channel);
   let fromInviteGuildResult = null;
   if (null != code.guild) {
-    fromInviteGuildResult = arg1(dependencyMap[18]).fromInviteGuild(code.guild);
-    const obj2 = arg1(dependencyMap[18]);
+    fromInviteGuildResult = require(1387) /* fromGuildPropertiesWithAdditionalFields */.fromInviteGuild(code.guild);
+    const obj2 = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
   }
   obj.guild = fromInviteGuildResult;
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
-  obj.createdAt = importDefault(dependencyMap[19])(code.created_at);
+  obj.createdAt = importDefault(3712)(code.created_at);
   ({ type: obj.type, roles: obj.roles } = code);
   tmp = new tmp(obj);
   return tmp;
 }
-function _syncChannelUpdate(channelId) {
+function _syncChannelUpdate(id) {
   let flag = false;
   if (null != channel1) {
     flag = false;
-    if (channel1.id === channelId) {
+    if (channel1.id === id) {
       if (channel1 === store2) {
-        const channel = store.getChannel(channelId);
+        const channel = store.getChannel(id);
         flag = false;
         if (null != channel) {
-          let channel1 = channel;
-          let store2 = channel;
+          channel1 = channel;
+          store2 = channel;
           let channel2 = store.getChannel(store2.parent_id);
           flag = true;
         }
       } else {
-        channel1 = store.getChannel(channelId);
+        channel1 = store.getChannel(id);
         flag = false;
         if (null != channel1) {
           flag = true;
@@ -250,11 +269,11 @@ function _syncChannelUpdate(channelId) {
   if (!tmp12) {
     let tmp15 = null != guildId;
     if (tmp15) {
-      tmp15 = null == store2.permissionOverwrites[closure_22];
+      tmp15 = null == store2.permissionOverwrites[guildId];
     }
     flag2 = true;
     if (tmp15) {
-      const guildId = store2.getGuildId();
+      guildId = store2.getGuildId();
       flag2 = true;
     }
   }
@@ -263,61 +282,50 @@ function _syncChannelUpdate(channelId) {
 function handleOverwriteUpdate(channelId) {
   return _syncChannelUpdate(channelId.channelId);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createChannelRecordFromInvite;
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-({ ChannelSettingsSections: closure_12, ChannelTypes: closure_13, Endpoints: closure_14, FormStates } = arg1(dependencyMap[9]));
-let closure_16 = arg1(dependencyMap[10]).DEFAULT_AUTO_ARCHIVE_DURATION;
-const CLOSED = FormStates.CLOSED;
+({ ChannelSettingsSections: closure_12, ChannelTypes: closure_13, Endpoints: closure_14, FormStates } = ME);
+let CLOSED = FormStates.CLOSED;
 let closure_24 = {};
 let closure_25 = {};
-let closure_26 = false;
-let closure_27 = false;
-let closure_28 = null;
-let closure_29 = ["discord_protos.discord_experimentation.v1.Override", "discord_protos.discord_experimentation.v1.Filter", "discord_protos.discord_experimentation.v1.StaffUsers", "discord_protos.discord_experimentation.v1.UserInGuild", "discord_protos.discord_experimentation.v1.UserIds", "discord_protos.discord_experimentation.v1.UserLocale", "discord_protos.discord_experimentation.v1.ClientLocale", "discord_protos.discord_experimentation.v1.ClientSystemLocale", "discord_protos.discord_experimentation.v1.ClientLocation", "discord_protos.discord_experimentation.v1.ClientLocation.Place", "discord_protos.discord_experimentation.v1.ClientLocation.ISORegion", "discord_protos.discord_experimentation.v1.ClientLocation.Location", "discord_protos.discord_experimentation.v1.UserLocation", "discord_protos.discord_experimentation.v1.ClientIP", "discord_protos.discord_experimentation.v1.UserIP", "discord_protos.discord_experimentation.v1.ClientOperatingSystem", "discord_protos.discord_experimentation.v1.SDKVersion", "discord_protos.discord_experimentation.v1.SDKVersionRange", "discord_protos.discord_experimentation.v1.SDKVersionRangeBound", "discord_protos.discord_experimentation.v1.SDKVersionSpecifier", "discord_protos.discord_experimentation.v1.ClientPlatform", "discord_protos.discord_experimentation.v1.PlatformVersion"];
-const tmp2 = arg1(dependencyMap[9]);
-let closure_30 = importDefault(dependencyMap[17]).debounce(() => {
+let c26 = false;
+let c27 = false;
+let c28 = null;
+let closure_29 = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
+let closure_30 = require("apply").debounce(() => {
   if (null != store2) {
     if (null != closure_19) {
       const toJSResult = store2.toJS();
-      const arg1 = toJSResult;
+      const require = toJSResult;
       let closure_1 = closure_19.toJS();
-      const dependencyMap = toJSResult.type;
+      const type = toJSResult.type;
       let everyResult = closure_29.every((arg0) => {
-        const tmp = callback2(arg0, toJSResult[arg0], type);
-        const tmp2 = callback2(arg0, callback[arg0], type);
-        return callback(type[17]).isEqual(tmp, tmp2);
+        const tmp = outer1_35(arg0, toJSResult[arg0], type);
+        const tmp2 = outer1_35(arg0, dependencyMap[arg0], type);
+        return dependencyMap(type[17]).isEqual(tmp, tmp2);
       });
       if (everyResult) {
         everyResult = store2 !== closure_19;
       }
       if (everyResult) {
-        const store2 = closure_19;
+        store2 = closure_19;
         tmp3.emitChange();
       }
     }
   }
   return false;
 }, 500);
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class ChannelSettingsStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, ChannelSettingsStore);
-      obj = closure_6(ChannelSettingsStore);
-      tmp2 = closure_5;
-      if (closure_32()) {
+      tmp = outer1_3(this, ChannelSettingsStore);
+      obj = outer1_6(ChannelSettingsStore);
+      tmp2 = outer1_5;
+      if (outer1_32()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -326,39 +334,38 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ChannelSettingsStore;
   callback2(ChannelSettingsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_11);
+      this.waitFor(outer1_11);
     }
   };
   const items = [obj, , , , , , , , , ];
   obj = {
     key: "hasChanges",
     value() {
-      return closure_20 !== closure_19;
+      return outer1_20 !== outer1_19;
     }
   };
   items[1] = obj;
   obj = {
     key: "isOpen",
     value() {
-      return closure_27;
+      return outer1_27;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getSection",
     value() {
-      return closure_17;
+      return outer1_17;
     }
   };
   items[4] = {
     key: "getInvites",
     value() {
-      return { invites: closure_25, loading: closure_26 };
+      return { invites: outer1_25, loading: outer1_26 };
     }
   };
   items[5] = {
@@ -370,37 +377,37 @@ let tmp3 = (Store) => {
   items[6] = {
     key: "getChannel",
     value() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[7] = {
     key: "getFormState",
     value() {
-      return closure_23;
+      return outer1_23;
     }
   };
   items[8] = {
     key: "getCategory",
     value() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[9] = {
     key: "getProps",
     value() {
-      return { submitting: closure_23 === constants.SUBMITTING, errors: closure_24, channel: closure_20, section: closure_17, subsection: closure_18, invites: closure_25, selectedOverwriteId: closure_22, hasChanges: this.hasChanges(), analyticsLocation: closure_28 };
+      return { submitting: outer1_23 === outer1_15.SUBMITTING, errors: outer1_24, channel: outer1_20, section: outer1_17, subsection: outer1_18, invites: outer1_25, selectedOverwriteId: outer1_22, hasChanges: this.hasChanges(), analyticsLocation: outer1_28 };
     }
   };
   return callback(ChannelSettingsStore, items);
-}(importDefault(dependencyMap[20]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "ChannelSettingsStore";
-tmp3 = new tmp3(importDefault(dependencyMap[16]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CHANNEL_SETTINGS_INIT: function handleSettingsInit(channelId) {
     const channel = store.getChannel(channelId.channelId);
     if (null == channel) {
       handleSettingsClose();
     } else {
-      const CLOSED = FormStates.OPEN;
+      const OPEN = FormStates.OPEN;
       let store2 = channel;
       let _location = null;
       if ("location" in channelId) {
@@ -409,7 +416,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[16]), {
           _location = channelId.location;
         }
       }
-      let closure_28 = _location;
       let subsection = null;
       if ("subsection" in channelId) {
         subsection = channelId.subsection;
@@ -432,23 +438,23 @@ tmp3 = new tmp3(importDefault(dependencyMap[16]), {
     }
   },
   CHANNEL_SETTINGS_SUBMIT: function handleSettingsSubmit() {
-    const CLOSED = FormStates.SUBMITTING;
+    const SUBMITTING = FormStates.SUBMITTING;
     let closure_24 = {};
   },
   CHANNEL_SETTINGS_SUBMIT_SUCCESS: function handleSettingsSubmitSuccess() {
     let closure_19 = closure_20;
-    const CLOSED = FormStates.OPEN;
+    const OPEN = FormStates.OPEN;
   },
   CHANNEL_SETTINGS_SUBMIT_FAILURE: function handleSettingsSubmitFailure(errors) {
-    const arg1 = errors;
-    const CLOSED = FormStates.OPEN;
+    let closure_0 = errors;
+    const OPEN = FormStates.OPEN;
     errors = errors.errors;
     if (null == errors) {
       errors = {};
     }
     const keys = Object.keys(errors);
     let closure_24 = keys.reduce((arg0, arg1) => {
-      if (obj2.isArray(arg0.errors[arg1])) {
+      if (obj2.isArray(errors.errors[arg1])) {
         arg0[arg1] = obj.join("\n");
       } else {
         arg0[arg1] = obj;
@@ -491,7 +497,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[16]), {
       return false;
     } else {
       if (null != name) {
-        let store2 = store2.set("name", name);
+        store2 = store2.set("name", name);
       }
       if (null != topic) {
         store2 = store2.set("topic", topic);
@@ -576,7 +582,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[16]), {
     let closure_25 = {};
     invites = invites.invites;
     const item = invites.forEach((code) => {
-      closure_25[code.code] = callback(code);
+      closure_25[code.code] = outer1_38(code);
     });
   },
   CHANNEL_UPDATES: function handleChannelUpdates(arg0) {
@@ -591,8 +597,8 @@ tmp3 = new tmp3(importDefault(dependencyMap[16]), {
       let flag2 = false;
       if (!iter.done) {
         do {
-          let tmp4 = closure_39;
-          let tmp5 = closure_39(iter2.value.id) || flag;
+          let tmp4 = _syncChannelUpdate;
+          let tmp5 = _syncChannelUpdate(iter2.value.id) || flag;
           iter3 = tmp3();
           flag = tmp5;
           iter2 = iter3;
@@ -620,25 +626,24 @@ tmp3 = new tmp3(importDefault(dependencyMap[16]), {
     return tmp2;
   },
   INSTANT_INVITE_REVOKE_SUCCESS: function handleInviteRevoke(arg0) {
-    const merged = Object.assign(closure_25);
-    closure_25 = {};
-    delete r1[r0];
+    const obj = {};
+    const merged = Object.assign(obj);
+    delete tmp2[tmp];
   },
   INSTANT_INVITE_CREATE_SUCCESS: function handleInviteCreateSuccess(invite) {
     const obj = {};
-    const merged = Object.assign(closure_25);
+    const merged = Object.assign(obj);
     obj[invite.invite.code] = _createInvite(invite.invite);
-    closure_25 = obj;
   }
 });
-const importDefaultResult = importDefault(dependencyMap[17]);
-const obj = {
+let closure_31 = tmp3;
+let obj = {
   CHANNEL_SETTINGS_INIT: function handleSettingsInit(channelId) {
     const channel = store.getChannel(channelId.channelId);
     if (null == channel) {
       handleSettingsClose();
     } else {
-      const CLOSED = FormStates.OPEN;
+      const OPEN = FormStates.OPEN;
       let store2 = channel;
       let _location = null;
       if ("location" in channelId) {
@@ -647,7 +652,6 @@ const obj = {
           _location = channelId.location;
         }
       }
-      let closure_28 = _location;
       let subsection = null;
       if ("subsection" in channelId) {
         subsection = channelId.subsection;
@@ -670,23 +674,23 @@ const obj = {
     }
   },
   CHANNEL_SETTINGS_SUBMIT: function handleSettingsSubmit() {
-    const CLOSED = FormStates.SUBMITTING;
+    const SUBMITTING = FormStates.SUBMITTING;
     let closure_24 = {};
   },
   CHANNEL_SETTINGS_SUBMIT_SUCCESS: function handleSettingsSubmitSuccess() {
     let closure_19 = closure_20;
-    const CLOSED = FormStates.OPEN;
+    const OPEN = FormStates.OPEN;
   },
   CHANNEL_SETTINGS_SUBMIT_FAILURE: function handleSettingsSubmitFailure(errors) {
-    const arg1 = errors;
-    const CLOSED = FormStates.OPEN;
+    let closure_0 = errors;
+    const OPEN = FormStates.OPEN;
     errors = errors.errors;
     if (null == errors) {
       errors = {};
     }
     const keys = Object.keys(errors);
     let closure_24 = keys.reduce((arg0, arg1) => {
-      if (obj2.isArray(arg0.errors[arg1])) {
+      if (obj2.isArray(errors.errors[arg1])) {
         arg0[arg1] = obj.join("\n");
       } else {
         arg0[arg1] = obj;
@@ -729,7 +733,7 @@ const obj = {
       return false;
     } else {
       if (null != name) {
-        let store2 = store2.set("name", name);
+        store2 = store2.set("name", name);
       }
       if (null != topic) {
         store2 = store2.set("topic", topic);
@@ -814,7 +818,7 @@ const obj = {
     let closure_25 = {};
     invites = invites.invites;
     const item = invites.forEach((code) => {
-      closure_25[code.code] = callback(code);
+      closure_25[code.code] = outer1_38(code);
     });
   },
   CHANNEL_UPDATES: function handleChannelUpdates(arg0) {
@@ -829,8 +833,8 @@ const obj = {
       let flag2 = false;
       if (!iter.done) {
         do {
-          let tmp4 = closure_39;
-          let tmp5 = closure_39(iter2.value.id) || flag;
+          let tmp4 = _syncChannelUpdate;
+          let tmp5 = _syncChannelUpdate(iter2.value.id) || flag;
           iter3 = tmp3();
           flag = tmp5;
           iter2 = iter3;
@@ -858,17 +862,16 @@ const obj = {
     return tmp2;
   },
   INSTANT_INVITE_REVOKE_SUCCESS: function handleInviteRevoke(arg0) {
-    const merged = Object.assign(closure_25);
-    closure_25 = {};
-    delete r1[r0];
+    const obj = {};
+    const merged = Object.assign(obj);
+    delete tmp2[tmp];
   },
   INSTANT_INVITE_CREATE_SUCCESS: function handleInviteCreateSuccess(invite) {
     const obj = {};
-    const merged = Object.assign(closure_25);
+    const merged = Object.assign(obj);
     obj[invite.invite.code] = _createInvite(invite.invite);
-    closure_25 = obj;
   }
 };
-const result = arg1(dependencyMap[21]).fileFinishedImporting("stores/ChannelSettingsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/ChannelSettingsStore.tsx");
 
 export default tmp3;

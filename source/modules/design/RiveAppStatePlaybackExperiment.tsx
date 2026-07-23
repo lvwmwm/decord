@@ -1,15 +1,15 @@
-// Module ID: 14610
-// Function ID: 110096
+// Module ID: 14725
+// Function ID: 112260
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: useRiveAppStatePlaybackExperiment
 
-// Module 14610 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: 11, DateToSystemTimezoneSetter: 11, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/design/RiveAppStatePlaybackExperiment.tsx");
+// Module 14725 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-06-rive-app-state-playback", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/design/RiveAppStatePlaybackExperiment.tsx");
 
 export default apexExperiment;
 export const useRiveAppStatePlaybackExperiment = function useRiveAppStatePlaybackExperiment(AppContainer) {

@@ -1,13 +1,18 @@
-// Module ID: 14684
-// Function ID: 110709
+// Module ID: 14799
+// Function ID: 112873
 // Name: trackForScreen
-// Dependencies: []
+// Dependencies: [31, 653, 3, 675, 3991, 2]
 // Exports: trackTabPressed, useTrackTabPerformance
 
-// Module 14684 (trackForScreen)
+// Module 14799 (trackForScreen)
+import result from "result";
+import { AnalyticEvents } from "ME";
+import importDefaultResult from "expandLocation";
+
+const require = arg1;
 function trackForScreen(tab, uiTime) {
   if (tmp) {
-    let obj = importDefault(dependencyMap[3]);
+    let obj = importDefault(675);
     obj = { tab };
     ({ startTime: obj2.start_time, layoutEffectTime: obj2.layout_effect_time, layoutUITime: obj2.layout_ui_thread_time, effectTime: obj2.effect_time, uiTime: obj2.ui_thread_time } = uiTime);
     obj.track(AnalyticEvents.REDESIGN_NAV_BAR_RENDERED, obj);
@@ -15,93 +20,90 @@ function trackForScreen(tab, uiTime) {
     importDefaultResult.info("First navigation to", tab, "took", obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-let importDefaultResult = importDefault(dependencyMap[2]);
 importDefaultResult = new importDefaultResult("TabsPerformanceTracker");
 let closure_6 = {};
 let closure_7 = { code: "function TabsPerformanceTrackerTsx1(){const{runOnJS,log}=this.__closure;return runOnJS(log)();}" };
 let closure_8 = { code: "function TabsPerformanceTrackerTsx2(){const{runOnJS,log}=this.__closure;return runOnJS(log)();}" };
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/TabsPerformanceTracker.tsx");
+const result = require("timestamp").fileFinishedImporting("modules/main_tabs_v2/native/tabs/TabsPerformanceTracker.tsx");
 
 export const trackTabPressed = function trackTabPressed(arg0) {
-  if (null == closure_6[arg0]) {
+  if (null == table[arg0]) {
     const obj = {};
     const _performance = performance;
     obj.startTime = performance.now();
-    closure_6[arg0] = obj;
+    table[arg0] = obj;
   }
 };
 export const useTrackTabPerformance = function useTrackTabPerformance(GUILDS) {
-  const arg1 = GUILDS;
+  let closure_0 = GUILDS;
   const items = [GUILDS];
   const layoutEffect = React.useLayoutEffect(() => {
     function log() {
-      let tmp = null != tmp;
+      tmp = null != tmp;
       if (tmp) {
         tmp = null != tmp.startTime;
       }
       if (tmp) {
         const _performance = performance;
         tmp.layoutUITime = performance.now();
-        callback(tmp, tmp);
+        outer2_9(tmp, tmp);
       }
     }
-    const arg0 = tmp;
-    if (null != closure_6[closure_0]) {
+    const GUILDS = tmp;
+    if (null != outer1_6[GUILDS]) {
       if (null != tmp.startTime) {
-        const _performance = performance;
+        let _performance = performance;
         tmp.layoutEffectTime = performance.now();
         const fn = function t() {
-          return tmp(closure_2[4]).runOnJS(log)();
+          return tmp(outer2_2[4]).runOnJS(log)();
         };
-        let obj = { runOnJS: arg0(closure_2[4]).runOnJS, log };
+        let obj = { runOnJS: GUILDS(outer1_2[4]).runOnJS, log };
         fn.__closure = obj;
         fn.__workletHash = 7114578957129;
-        fn.__initData = closure_7;
-        arg0(closure_2[4]).runOnUI(fn)();
-        const obj2 = arg0(closure_2[4]);
+        fn.__initData = outer1_7;
+        GUILDS(outer1_2[4]).runOnUI(fn)();
+        const obj2 = GUILDS(outer1_2[4]);
       }
     }
-    obj = closure_6[closure_0];
+    obj = outer1_6[GUILDS];
     if (null == obj) {
       obj = {};
     }
-    closure_6[arg0] = obj;
+    outer1_6[GUILDS] = obj;
   }, items);
   const items1 = [GUILDS];
   const effect = React.useEffect(() => {
     function log() {
-      let tmp = null != tmp;
+      tmp = null != tmp;
       if (tmp) {
         tmp = null != tmp.startTime;
       }
       if (tmp) {
         const _performance = performance;
         tmp.uiTime = performance.now();
-        callback(tmp, tmp);
+        outer2_9(tmp, tmp);
       }
     }
-    const arg0 = tmp;
-    if (null != closure_6[closure_0]) {
+    const GUILDS = tmp;
+    if (null != outer1_6[GUILDS]) {
       if (null != tmp.startTime) {
-        const _performance = performance;
+        let _performance = performance;
         tmp.effectTime = performance.now();
         const fn = function t() {
-          return tmp(closure_2[4]).runOnJS(log)();
+          return tmp(outer2_2[4]).runOnJS(log)();
         };
-        let obj = { runOnJS: arg0(closure_2[4]).runOnJS, log };
+        let obj = { runOnJS: GUILDS(outer1_2[4]).runOnJS, log };
         fn.__closure = obj;
         fn.__workletHash = 331508196106;
-        fn.__initData = closure_8;
-        arg0(closure_2[4]).runOnUI(fn)();
-        const obj2 = arg0(closure_2[4]);
+        fn.__initData = outer1_8;
+        GUILDS(outer1_2[4]).runOnUI(fn)();
+        const obj2 = GUILDS(outer1_2[4]);
       }
     }
-    obj = closure_6[closure_0];
+    obj = outer1_6[GUILDS];
     if (null == obj) {
       obj = {};
     }
-    closure_6[arg0] = obj;
+    outer1_6[GUILDS] = obj;
   }, items1);
 };

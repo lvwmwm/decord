@@ -1,15 +1,17 @@
-// Module ID: 4354
-// Function ID: 38631
+// Module ID: 4358
+// Function ID: 38663
 // Name: toContentScanMetadata
-// Dependencies: []
+// Dependencies: [653, 1360, 1881, 4317, 1443, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toUnfurledMediaItem
 
-// Module 4354 (toContentScanMetadata)
+// Module 4358 (toContentScanMetadata)
+import { MessageAttachmentFlags } from "ME";
+
 function toContentScanMetadata(content_scan_metadata) {
   return { version: content_scan_metadata.version, flags: content_scan_metadata.flags };
 }
 function messageAttachmentToUnfurledMediaItem(flags) {
-  let obj = require(dependencyMap[1]);
+  let obj = require(1360) /* hasFlag */;
   flags = flags.flags;
   let num = 0;
   if (null != flags) {
@@ -28,7 +30,7 @@ function messageAttachmentToUnfurledMediaItem(flags) {
   if (obj2.hasFlag(num3, MessageAttachmentFlags.IS_ANIMATED)) {
     num4 = obj.IS_ANIMATED | 0;
   }
-  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: require(dependencyMap[2]).UnfurledMediaLoadingState.LOADED_SUCCESS };
+  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: require(1881) /* PermissionOverwriteType */.UnfurledMediaLoadingState.LOADED_SUCCESS };
   let tmp3;
   if (null != flags.content_scan_version) {
     obj = { version: flags.content_scan_version, flags: num2 };
@@ -46,15 +48,13 @@ function getMessageAttachmentMediaItemType(filename) {
       str2 = "VIDEO";
     }
     str = str2;
-    const obj2 = require(dependencyMap[3]);
+    obj2 = require(4317) /* urlMatchesFileExtension */;
   }
   return str;
 }
-const MessageAttachmentFlags = require(dependencyMap[0]).MessageAttachmentFlags;
 let obj = { EXPLICIT: 1, [1]: "EXPLICIT", GORE: 2, [2]: "GORE", SELF_HARM: 4, [4]: "SELF_HARM" };
 obj = { IS_ANIMATED: 1, [1]: "IS_ANIMATED" };
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/media/MediaTypes.tsx");
+const result = require("PermissionOverwriteType").fileFinishedImporting("modules/media/MediaTypes.tsx");
 
 export const ContentScanFlags = obj;
 export const ImageEncoder = { NATIVE: "native", JPEGLI: "jpegli", JPEG_IOS: "jpeg_ios", PASSTHROUGH: "passthrough" };
@@ -87,11 +87,11 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(conten
         if (null != obj3.toURLSafe(contentType.proxyUrl)) {
           str3 = "VIDEO";
         }
-        const obj3 = importDefault(dependencyMap[4]);
+        obj3 = importDefault(1443);
       }
     }
     str = str3;
-    const obj2 = require(dependencyMap[3]);
+    obj2 = require(4317) /* urlMatchesFileExtension */;
   }
   return str;
 };
@@ -127,7 +127,7 @@ export const getMediaItemDisplayUrl = function getMediaItemDisplayUrl(type) {
   } else {
     if ("VIDEO" === type.type) {
       if (null != type.proxyUrl) {
-        let str = importDefault(dependencyMap[4]).toURLSafe(type.proxyUrl);
+        let str = importDefault(1443).toURLSafe(type.proxyUrl);
         str = null;
         if (null != str) {
           const searchParams = str.searchParams;

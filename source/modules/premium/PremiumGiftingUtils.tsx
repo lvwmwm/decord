@@ -1,25 +1,30 @@
-// Module ID: 7752
-// Function ID: 61600
+// Module ID: 7758
+// Function ID: 61637
 // Name: _sendGiftMessage
-// Dependencies: []
+// Dependencies: [5, 1348, 4123, 4140, 44, 4366, 6691, 6924, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 7752 (_sendGiftMessage)
-async function _sendGiftMessage(id, code, arg2) {
-  if (null == code) {
+// Module 7758 (_sendGiftMessage)
+import unambiguousRegex from "unambiguousRegex";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+
+const require = arg1;
+async function _sendGiftMessage(arg0, arg1, arg2) {
+  if (null == arg1) {
     const _Error2 = Error;
-    const error = new Error("giftCode must be defined");
+    let error = new Error("giftCode must be defined");
     throw error;
-  } else if (null == id) {
-    const _Error = Error;
+  } else if (null == arg0) {
+    let _Error = Error;
     const error1 = new Error("Recipient must be defined");
     throw error1;
   } else {
-    let obj = { recipientIds: id.id };
-    const obj5 = callback2(closure_2[3]);
-    const tmp21 = yield callback2(closure_2[3]).openPrivateChannel(obj).then((channelId) => {
-      const channel = channel.getChannel(channelId);
-      callback(closure_2[4])(null != channel, "PrivateChannel is null");
+    let obj = { recipientIds: arg0.id };
+    const obj5 = outer2_1(outer2_2[3]);
+    const tmp21 = yield outer2_1(outer2_2[3]).openPrivateChannel(obj).then((channelId) => {
+      const channel = outer3_4.getChannel(channelId);
+      outer3_1(outer3_2[4])(null != channel, "PrivateChannel is null");
       if (null == channel) {
         const _Error = Error;
         const error = new Error("Channel must be defined");
@@ -28,19 +33,16 @@ async function _sendGiftMessage(id, code, arg2) {
         return channel;
       }
     });
-    obj = callback(closure_2[5]);
-    const giftCodeURL = obj.getGiftCodeURL(code);
-    const obj2 = callback2(closure_2[6]);
-    id = tmp21.id;
-    const openPrivateChannelResult = callback2(closure_2[3]).openPrivateChannel(obj);
-    obj = { isGiftLinkSentOnBehalfOfUser: true, location: constants.GIFTING };
-    return obj2.sendMessage(id, callback2(closure_2[7]).parse(tmp21, giftCodeURL), undefined, obj);
+    obj = outer2_0(outer2_2[5]);
+    const giftCodeURL = obj.getGiftCodeURL(arg1);
+    const obj2 = outer2_1(outer2_2[6]);
+    const id = tmp21.id;
+    const openPrivateChannelResult = outer2_1(outer2_2[3]).openPrivateChannel(obj);
+    obj = { isGiftLinkSentOnBehalfOfUser: true, location: outer2_5.GIFTING };
+    return obj2.sendMessage(id, outer2_1(outer2_2[7]).parse(tmp21, giftCodeURL), undefined, obj);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const MessageSendLocation = arg1(dependencyMap[2]).MessageSendLocation;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/premium/PremiumGiftingUtils.tsx");
+const result = require("MESSAGE_GROUP_SPACING").fileFinishedImporting("modules/premium/PremiumGiftingUtils.tsx");
 
 export const AnimationState = { ACTION: "action", LOOP: "loop", IDLE: "idle" };
 export const sendGiftMessage = function sendGiftMessage() {

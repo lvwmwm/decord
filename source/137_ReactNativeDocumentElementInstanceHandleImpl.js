@@ -1,18 +1,19 @@
 // Module ID: 137
 // Function ID: 2229
 // Name: ReactNativeDocumentElementInstanceHandleImpl
-// Dependencies: []
+// Dependencies: [7, 6]
 // Exports: createReactNativeDocumentElementInstanceHandle, getNativeElementReferenceFromReactNativeDocumentElementInstanceHandle, getPublicInstanceFromReactNativeDocumentElementInstanceHandle, isReactNativeDocumentElementInstanceHandle, setNativeElementReferenceForReactNativeDocumentElementInstanceHandle, setPublicInstanceForReactNativeDocumentElementInstanceHandle
 
 // Module 137 (ReactNativeDocumentElementInstanceHandleImpl)
-let closure_0 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+
 class ReactNativeDocumentElementInstanceHandleImpl {
   constructor() {
-    tmp = closure_0(this, ReactNativeDocumentElementInstanceHandleImpl);
+    tmp = c0(this, ReactNativeDocumentElementInstanceHandleImpl);
     return;
   }
 }
-let closure_1 = importDefault(dependencyMap[0])(ReactNativeDocumentElementInstanceHandleImpl);
+let closure_1 = require("_defineProperties")(ReactNativeDocumentElementInstanceHandleImpl);
 
 export const createReactNativeDocumentElementInstanceHandle = function createReactNativeDocumentElementInstanceHandle() {
   return new closure_1();

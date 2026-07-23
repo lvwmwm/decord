@@ -1,10 +1,12 @@
-// Module ID: 11050
-// Function ID: 86042
+// Module ID: 11060
+// Function ID: 86092
 // Name: getConnectionPrereqTarget
-// Dependencies: []
+// Dependencies: [5, 6770, 6771, 2]
 // Exports: resolveConnectionPrereqTarget
 
-// Module 11050 (getConnectionPrereqTarget)
+// Module 11060 (getConnectionPrereqTarget)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
 function getConnectionPrereqTarget(teen_identity) {
   if ("ready" in teen_identity) {
     let obj = { section: frozen.REQUEST };
@@ -30,14 +32,12 @@ function getConnectionPrereqTarget(teen_identity) {
 function _resolveConnectionPrereqTarget() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _resolveConnectionPrereqTarget = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const frozen = Object.freeze({});
-let obj = { section: frozen.ERROR, params: obj };
-obj = { failureCode: arg1(dependencyMap[1]).FamilyCenterFailureCode.GENERIC_ERROR };
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/parent_tools/FamilyCenterModalRequestRouting.tsx");
+const frozen = Object.freeze({ PREREQ_LOADING: "PREREQ_LOADING", CONFIRM_AGE: "CONFIRM_AGE", VERIFYING: "VERIFYING", REQUEST: "REQUEST", SENT: "SENT", ERROR: "ERROR", INVALID_CODE: "INVALID_CODE", MUST_BE_ADULT: "MUST_BE_ADULT", TEEN_SCAN: "TEEN_SCAN" });
+obj = { section: frozen.ERROR, params: obj };
+obj = { failureCode: require("items").FamilyCenterFailureCode.GENERIC_ERROR };
+const result = require("maybeFetchCollectiblesForInvoices").fileFinishedImporting("modules/parent_tools/FamilyCenterModalRequestRouting.tsx");
 
 export const FamilyCenterModalRequestSections = frozen;
 export { getConnectionPrereqTarget };

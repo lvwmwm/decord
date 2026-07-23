@@ -1,34 +1,35 @@
-// Module ID: 11611
-// Function ID: 90194
+// Module ID: 11621
+// Function ID: 90243
 // Name: GuildPowerupsBoostButton
-// Dependencies: []
+// Dependencies: [31, 1838, 1849, 4023, 653, 33, 566, 6636, 1867, 4966, 6640, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 11611 (GuildPowerupsBoostButton)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const AnalyticsSections = arg1(dependencyMap[4]).AnalyticsSections;
-const jsx = arg1(dependencyMap[5]).jsx;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostButton.tsx");
+// Module 11621 (GuildPowerupsBoostButton)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { AnalyticsSections } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostButton.tsx");
 
 export const GuildPowerupsBoostButton = function GuildPowerupsBoostButton(guildId) {
-  const arg1 = guildId.guildId;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId));
+  guildId = guildId.guildId;
+  let obj = guildId(566);
+  let items = [_createForOfIteratorHelperLoose];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(guildId));
   const items1 = [closure_6];
-  const stateFromStores1 = arg1(dependencyMap[6]).useStateFromStores(items1, () => boostSlots.boostSlots);
-  const importDefault = stateFromStores1;
-  const obj2 = arg1(dependencyMap[6]);
-  const tmp3 = importDefault(dependencyMap[7])({ forceFetch: true });
-  const items2 = [closure_5];
-  const stateFromStores2 = arg1(dependencyMap[6]).useStateFromStores(items2, () => currentUser.getCurrentUser());
+  const stateFromStores1 = guildId(566).useStateFromStores(items1, () => outer1_6.boostSlots);
+  const obj2 = guildId(566);
+  const tmp3 = stateFromStores1(6636)({ forceFetch: true });
+  const items2 = [_isNativeReflectConstruct];
+  const stateFromStores2 = guildId(566).useStateFromStores(items2, () => outer1_5.getCurrentUser());
   if (null != stateFromStores2) {
     let UNSPECIFIED = stateFromStores2.premiumGroupRole;
   } else {
-    UNSPECIFIED = arg1(dependencyMap[8]).PremiumSubscriptionGroupRole.UNSPECIFIED;
+    UNSPECIFIED = guildId(1867).PremiumSubscriptionGroupRole.UNSPECIFIED;
   }
   const items3 = [stateFromStores1];
   const memo = React.useMemo(() => {
@@ -38,7 +39,7 @@ export const GuildPowerupsBoostButton = function GuildPowerupsBoostButton(guildI
   let tmp9 = null;
   if (null != stateFromStores) {
     obj = { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp3.fractionalState, onAvailableSlotPress: tmp8, premiumGroupRole: UNSPECIFIED };
-    tmp9 = jsx(importDefault(dependencyMap[10]), obj);
+    tmp9 = jsx(stateFromStores1(6640), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp3.fractionalState, onAvailableSlotPress: tmp8, premiumGroupRole: UNSPECIFIED });
   }
   return tmp9;
 };

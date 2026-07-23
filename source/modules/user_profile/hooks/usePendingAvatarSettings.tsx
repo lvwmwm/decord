@@ -1,29 +1,27 @@
-// Module ID: 7834
-// Function ID: 62444
+// Module ID: 7840
+// Function ID: 62481
 // Name: usePendingAvatarSettings
-// Dependencies: []
+// Dependencies: [31, 7841, 7843, 624, 7844, 7846, 7847, 2]
 // Exports: default
 
-// Module 7834 (usePendingAvatarSettings)
-require(dependencyMap[0]).useCallback;
-let closure_4 = importDefault(dependencyMap[1]);
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/user_profile/hooks/usePendingAvatarSettings.tsx");
+// Module 7840 (usePendingAvatarSettings)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+require("result").useCallback;
+let result = require("useTrackCollectiblesItemTryOut").fileFinishedImporting("modules/user_profile/hooks/usePendingAvatarSettings.tsx");
 
 export default function usePendingAvatarSettings(isTryItOut) {
   let pendingAvatar;
   let pendingAvatarDecoration;
   let pendingErrors;
   isTryItOut = isTryItOut.isTryItOut;
-  const require = isTryItOut;
   const guildId = isTryItOut.guildId;
-  const importDefault = guildId;
-  const tmp = importDefault(dependencyMap[2])(isTryItOut.analyticsLocations);
+  const tmp = guildId(7843)(isTryItOut.analyticsLocations);
   const dependencyMap = tmp;
-  let obj = require(dependencyMap[3]);
-  const items = [closure_4];
+  let obj = isTryItOut(624);
+  const items = [_isNativeReflectConstruct];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    let obj = closure_4;
+    let obj = outer1_4;
     if (isTryItOut) {
       const tryItOutChanges = obj.getTryItOutChanges();
       obj = {};
@@ -61,11 +59,11 @@ export default function usePendingAvatarSettings(isTryItOut) {
   }, items2);
   obj = { pendingAvatar, pendingAvatarDecoration, pendingErrors };
   if (isTryItOut) {
-    setTryItOutAvatar = require(dependencyMap[6]).setTryItOutAvatar;
+    setTryItOutAvatar = isTryItOut(7847).setTryItOutAvatar;
   }
   obj.setPendingAvatar = setTryItOutAvatar;
   if (isTryItOut) {
-    setTryItOutAvatarDecoration = require(dependencyMap[6]).setTryItOutAvatarDecoration;
+    setTryItOutAvatarDecoration = isTryItOut(7847).setTryItOutAvatarDecoration;
   }
   obj.setPendingAvatarDecoration = setTryItOutAvatarDecoration;
   return obj;

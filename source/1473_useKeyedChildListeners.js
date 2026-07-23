@@ -1,23 +1,24 @@
 // Module ID: 1473
-// Function ID: 17126
+// Function ID: 17127
 // Name: useKeyedChildListeners
-// Dependencies: []
+// Dependencies: [31]
 // Exports: default
 
 // Module 1473 (useKeyedChildListeners)
-let closure_0 = importAll(dependencyMap[0]);
+import result from "result";
+
 
 export default function useKeyedChildListeners() {
-  const current = React.useRef(Object.assign(Object.create(null), { getState: {}, beforeRemove: {} })).current;
-  const React = current;
+  current = current.useRef(Object.assign(Object.create(null), { getState: {}, beforeRemove: {} })).current;
   const items = [current];
   return {
     keyedListeners: current,
-    addKeyedListener: React.useCallback((arg0, arg1, arg2) => {
-      const current = arg0;
-      current[arg0][arg1] = arg2;
+    addKeyedListener: current.useCallback((arg0, arg1, arg2) => {
+      const table = arg0;
+      let closure_1 = arg1;
+      table[arg0][arg1] = arg2;
       return () => {
-        arg0[closure_0][arg1] = undefined;
+        table[table][closure_1] = undefined;
       };
     }, items)
   };

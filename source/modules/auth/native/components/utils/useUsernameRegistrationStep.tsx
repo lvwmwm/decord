@@ -1,74 +1,73 @@
-// Module ID: 14641
-// Function ID: 110406
+// Module ID: 14756
+// Function ID: 112570
 // Name: useUsernameRegistrationStep
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [57, 31, 13665, 14731, 14732, 14729, 1456, 9209, 13663, 13662, 14730, 1212, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 14641 (useUsernameRegistrationStep)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import { useRegistrationUIStore } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14756 (useUsernameRegistrationStep)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { useRegistrationUIStore } from "useRegistrationUIStore";
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
 
-({ authStateToRegisterTransitionStep: closure_7, RegistrationTransitionActionTypes: closure_8 } = require("__exportStarResult1"));
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/auth/native/components/utils/useUsernameRegistrationStep.tsx");
+let closure_7;
+let closure_8;
+const require = arg1;
+({ authStateToRegisterTransitionStep: closure_7, RegistrationTransitionActionTypes: closure_8 } = RegistrationTransitionActionTypes);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/auth/native/components/utils/useUsernameRegistrationStep.tsx");
 
 export const useUsernameRegistrationStep = function useUsernameRegistrationStep(REGISTER_ACCOUNT_INFORMATION) {
-  const arg1 = REGISTER_ACCOUNT_INFORMATION;
-  const context = React.useContext(arg1(dependencyMap[5]).TrackRegistrationContext);
-  const importDefault = context;
-  let obj = arg1(dependencyMap[6]);
-  const navigation = obj.useNavigation();
-  const dependencyMap = navigation;
+  const _require = REGISTER_ACCOUNT_INFORMATION;
+  const context = obj.useContext(_require(navigation[5]).TrackRegistrationContext);
+  obj = _require(navigation[6]);
+  navigation = obj.useNavigation();
   let username = useRegistrationUIStore((registrationOptions) => registrationOptions.registrationOptions).username;
   if (null == username) {
-    username = closure_5.registrationUsernameSuggestion();
+    username = _isNativeReflectConstruct.registrationUsernameSuggestion();
   }
   let str = "";
   if (null != username) {
     str = username;
   }
-  const tmp5 = callback(React.useState(str), 2);
-  const first = tmp5[0];
-  let callback = first;
-  const tmp8 = importDefault(dependencyMap[7])("username", useRegistrationUIStore((errors) => errors.errors));
+  const tmp5 = first(obj.useState(str), 2);
+  first = tmp5[0];
+  const tmp8 = context(navigation[7])("username", useRegistrationUIStore((errors) => errors.errors));
   const tmp7 = useRegistrationUIStore((errors) => errors.errors);
-  const usernameStatus = arg1(dependencyMap[8]).useUsernameStatus(first, true, true);
-  let React = usernameStatus;
+  const usernameStatus = _require(navigation[8]).useUsernameStatus(first, true, true);
+  obj = usernameStatus;
   let tmp10 = usernameStatus;
   if (null != tmp8) {
-    obj = { type: arg1(dependencyMap[9]).NameValidationState.ERROR, message: tmp8 };
-    React = obj;
+    obj = { type: _require(navigation[9]).NameValidationState.ERROR, message: tmp8 };
     tmp10 = obj;
   }
-  const items = [tmp10, navigation, context, REGISTER_ACCOUNT_INFORMATION];
+  let items = [tmp10, navigation, context, REGISTER_ACCOUNT_INFORMATION];
   const items1 = [first, tmp10];
-  callback = React.useCallback((arg0) => {
+  const callback = obj.useCallback((arg0) => {
     let type;
     if (null != obj) {
       type = obj.type;
     }
-    if (type === arg0(navigation[9]).NameValidationState.ERROR) {
-      let obj = { step: callback(arg0), actionType: constants.INPUT_ERROR };
+    if (type === REGISTER_ACCOUNT_INFORMATION(navigation[9]).NameValidationState.ERROR) {
+      obj = { step: outer1_7(REGISTER_ACCOUNT_INFORMATION), actionType: outer1_8.INPUT_ERROR };
       const items = [obj.message];
       obj.details = items;
       context(obj);
     }
     if (arg0) {
-      const result = arg0(navigation[10]).handleRegistrationSubmit(arg0, navigation, context);
-      const obj5 = arg0(navigation[10]);
+      const result = REGISTER_ACCOUNT_INFORMATION(navigation[10]).handleRegistrationSubmit(REGISTER_ACCOUNT_INFORMATION, navigation, context);
+      const obj5 = REGISTER_ACCOUNT_INFORMATION(navigation[10]);
     } else {
-      obj = { step: callback(arg0), toStep: arg0(navigation[10]).getNextRegistrationTransitionStep(arg0), actionType: constants.SUCCESS };
+      obj = { step: outer1_7(REGISTER_ACCOUNT_INFORMATION), toStep: REGISTER_ACCOUNT_INFORMATION(navigation[10]).getNextRegistrationTransitionStep(REGISTER_ACCOUNT_INFORMATION), actionType: outer1_8.SUCCESS };
       context(obj);
-      const obj3 = arg0(navigation[10]);
-      navigation.push(arg0(navigation[10]).getNextAuthState(arg0));
-      const obj4 = arg0(navigation[10]);
+      const obj3 = REGISTER_ACCOUNT_INFORMATION(navigation[10]);
+      navigation.push(REGISTER_ACCOUNT_INFORMATION(navigation[10]).getNextAuthState(REGISTER_ACCOUNT_INFORMATION));
+      const obj4 = REGISTER_ACCOUNT_INFORMATION(navigation[10]);
     }
   }, items);
   const items2 = [first, , ];
   let message;
-  const memo = React.useMemo(() => {
+  const memo = obj.useMemo(() => {
     let tmp = null == first;
     if (!tmp) {
       tmp = "" === first;
@@ -78,7 +77,7 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
       if (null != obj) {
         type = obj.type;
       }
-      tmp = type === arg0(navigation[9]).NameValidationState.ERROR;
+      tmp = type === REGISTER_ACCOUNT_INFORMATION(navigation[9]).NameValidationState.ERROR;
     }
     return tmp;
   }, items1);
@@ -91,29 +90,23 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
     type = tmp10.type;
   }
   items2[2] = type;
-  obj = {
-    username: first,
-    setUsername: tmp5[1],
-    usernameStatus: tmp10,
-    transitionToNextStepOrSubmit: callback,
-    preventSubmitUsername: memo,
-    validateUsername: React.useCallback(() => {
-      if (null != first) {
-        if ("" !== first) {
-          let type;
-          if (null != obj) {
-            type = obj.type;
-          }
-          let message = null;
-          if (type === arg0(navigation[9]).NameValidationState.ERROR) {
-            message = obj.message;
-          }
+  obj = { username: first, setUsername: tmp5[1], usernameStatus: tmp10, transitionToNextStepOrSubmit: callback, preventSubmitUsername: memo };
+  obj.validateUsername = obj.useCallback(() => {
+    if (null != first) {
+      if ("" !== first) {
+        let type;
+        if (null != obj) {
+          type = obj.type;
         }
-        return message;
+        let message = null;
+        if (type === REGISTER_ACCOUNT_INFORMATION(navigation[9]).NameValidationState.ERROR) {
+          message = obj.message;
+        }
       }
-      const intl = arg0(navigation[11]).intl;
-      message = intl.string(arg0(navigation[11]).t.GPfy3L);
-    }, items2)
-  };
+      return message;
+    }
+    const intl = REGISTER_ACCOUNT_INFORMATION(navigation[11]).intl;
+    message = intl.string(REGISTER_ACCOUNT_INFORMATION(navigation[11]).t.GPfy3L);
+  }, items2);
   return obj;
 };

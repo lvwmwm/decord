@@ -1,9 +1,21 @@
-// Module ID: 12190
-// Function ID: 93691
+// Module ID: 12304
+// Function ID: 95842
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 3767, 4810, 653, 22, 566, 686, 2]
 
-// Module 12190 (_isNativeReflectConstruct)
+// Module 12304 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_10;
+let closure_11;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +25,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +78,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,30 +105,30 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getPartyForUser(id, closure_11) {
-  let obj = closure_12[id];
+  let obj = dependencyMap[id];
   if (null == obj) {
     obj = {};
   }
   return obj[closure_11];
 }
 function removeUserFromParty(id, closure_11) {
-  const tmp = getPartyForUser(id, closure_11);
-  if (null != tmp) {
-    delete r7[r2];
-    if (obj.isEmpty(closure_12[id])) {
-      delete r2[r5];
+  const tmp4 = getPartyForUser(id, closure_11);
+  if (null != tmp4) {
+    delete tmp3[tmp];
+    if (obj.isEmpty(dependencyMap[id])) {
+      delete tmp[tmp2];
     }
-    const value = map.get(tmp);
+    const value = map.get(tmp4);
     if (null != value) {
       value.delete(id);
       if (0 === value.size) {
-        map.delete(tmp);
+        map.delete(tmp4);
       }
     }
-    const obj = importDefault(dependencyMap[9]);
+    obj = importDefault(22);
   }
 }
-function updateParty(closure_11, id, activities) {
+function updateParty(closure_11, id, activities, status) {
   const found = activities.find((party) => null != party.party && party.party.id);
   id = null;
   if (null != found) {
@@ -127,7 +139,7 @@ function updateParty(closure_11, id, activities) {
   }
   const tmp3 = getPartyForUser(id, closure_11);
   if (null != id) {
-    if (arg3 !== constants.OFFLINE) {
+    if (status !== constants.OFFLINE) {
       if (null != tmp3) {
         if (tmp3 === id) {
           return false;
@@ -135,10 +147,10 @@ function updateParty(closure_11, id, activities) {
           removeUserFromParty(id, closure_11);
         }
       }
-      let tmp5 = closure_12[id];
+      let tmp5 = dependencyMap[id];
       if (null == tmp5) {
         const obj = {};
-        closure_12[id] = obj;
+        dependencyMap[id] = obj;
         tmp5 = obj;
       }
       tmp5[closure_11] = id;
@@ -174,8 +186,8 @@ function handleGuildCreate(guild) {
   if (!iter.done) {
     do {
       let value = iter2.value;
-      let tmp2 = closure_19;
-      if (false !== closure_19(guild.id, value.user.id, value.activities, value.status)) {
+      let tmp2 = updateParty;
+      if (false !== updateParty(guild.id, value.user.id, value.activities, value.status)) {
         flag = true;
       }
       iter3 = tmp();
@@ -186,21 +198,21 @@ function handleGuildCreate(guild) {
   return flag2;
 }
 function batchUpdatePresences(guildId, addedMembers) {
-  const importDefault = guildId;
-  let closure_1 = false;
+  let closure_0 = guildId;
+  let c1 = false;
   const item = addedMembers.forEach((user) => {
     let tmp = null != user;
     if (tmp) {
-      tmp = callback(user, user.user.id, user.activities, user.status);
+      tmp = outer1_19(closure_0, user.user.id, user.activities, user.status);
     }
     if (tmp) {
-      let closure_1 = true;
+      let c1 = true;
     }
   });
-  return closure_1;
+  return c1;
 }
 function handleLocalPresenceUpdate() {
-  const id = id.getId();
+  id = id.getId();
   return updateParty(closure_11, id, activities.getActivities());
 }
 function handleRelationshipAddOrUpdate(relationship) {
@@ -211,15 +223,15 @@ function handleRelationshipAddOrUpdate(relationship) {
       return false;
     }
   }
-  if (null == closure_12[relationship.id]) {
+  if (null == dependencyMap[relationship.id]) {
     return false;
   } else {
-    const tmp6 = _createForOfIteratorHelperLoose(importDefault(dependencyMap[9]).values(tmp2));
+    const tmp6 = _createForOfIteratorHelperLoose(importDefault(22).values(tmp2));
     let iter = tmp6();
     if (!iter.done) {
       do {
-        let tmp7 = closure_13;
-        let value = closure_13.get(iter.value);
+        let tmp7 = map;
+        let value = map.get(iter.value);
         if (null != value) {
           let deleteResult = value.delete(relationship.id);
         }
@@ -229,30 +241,22 @@ function handleRelationshipAddOrUpdate(relationship) {
     }
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-({ StatusTypes: closure_10, ME: closure_11 } = arg1(dependencyMap[8]));
+({ StatusTypes: closure_10, ME: closure_11 } = ME);
 let closure_12 = {};
-const map = new Map();
-let tmp4 = (Store) => {
+let map = new Map();
+let tmp4 = ((Store) => {
   class GamePartyStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GamePartyStore);
-      obj = closure_5(GamePartyStore);
-      tmp2 = closure_4;
-      if (closure_14()) {
+      tmp = outer1_2(this, GamePartyStore);
+      obj = outer1_5(GamePartyStore);
+      tmp2 = outer1_4;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -261,25 +265,24 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = GamePartyStore;
   callback2(GamePartyStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const items = [closure_9];
-      this.syncWith(items, closure_22);
-      this.waitFor(closure_7, closure_8, closure_9);
+      const items = [outer1_9];
+      this.syncWith(items, outer1_22);
+      this.waitFor(outer1_7, outer1_8, outer1_9);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getParty",
     value(arg0) {
       let value = null;
       if (null != arg0) {
         value = null;
-        if (map.has(arg0)) {
-          value = map.get(arg0);
+        if (outer1_13.has(arg0)) {
+          value = outer1_13.get(arg0);
         }
       }
       return value;
@@ -289,20 +292,20 @@ let tmp4 = (Store) => {
   obj = {
     key: "getUserParties",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getParties",
     value() {
-      return closure_13;
+      return outer1_13;
     }
   };
   return callback(GamePartyStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "GamePartyStore";
-tmp4 = new tmp4(importDefault(dependencyMap[11]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN_SUPPLEMENTAL: function handleConnectionOpenSupplemental(presences) {
     let activities;
     let iter3;
@@ -319,11 +322,11 @@ tmp4 = new tmp4(importDefault(dependencyMap[11]), {
         ({ user, status, activities } = iter2.value);
         let tmp2 = null != user;
         if (tmp2) {
-          let tmp3 = closure_19;
+          let tmp3 = updateParty;
           let tmp4 = closure_11;
           let tmp5 = activities;
           let tmp6 = status;
-          tmp2 = false !== closure_19(closure_11, user.id, activities, status);
+          tmp2 = false !== updateParty(closure_11, user.id, activities, status);
         }
         if (tmp2) {
           flag = true;
@@ -339,9 +342,9 @@ tmp4 = new tmp4(importDefault(dependencyMap[11]), {
     let tmp8 = flag2;
     if (!iter4.done) {
       do {
-        let tmp9 = closure_20;
+        let tmp9 = handleGuildCreate;
         let obj = { guild: iter4.value };
-        if (false !== closure_20(obj)) {
+        if (false !== handleGuildCreate(obj)) {
           flag3 = true;
         }
         iter5 = tmp7();
@@ -353,10 +356,9 @@ tmp4 = new tmp4(importDefault(dependencyMap[11]), {
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(parties) {
     parties = parties.parties;
-    const importDefault = parties;
     const map = new Map();
+    const obj = {};
     const merged = Object.assign(parties.userParties);
-    let closure_12 = {};
     const keys = Object.keys(parties);
     const item = keys.forEach((arg0) => map.set(arg0, new Set(parties[arg0])));
   },
@@ -373,9 +375,9 @@ tmp4 = new tmp4(importDefault(dependencyMap[11]), {
         let user = iter2.value.user;
         let tmp3 = null != user;
         if (tmp3) {
-          let tmp4 = closure_19;
+          let tmp4 = updateParty;
           let tmp5 = closure_11;
-          tmp3 = false !== closure_19(closure_11, user.id, tmp2);
+          tmp3 = false !== updateParty(closure_11, user.id, tmp2);
         }
         if (tmp3) {
           flag = true;
@@ -395,9 +397,9 @@ tmp4 = new tmp4(importDefault(dependencyMap[11]), {
       let status;
       ({ guildId, status, activities } = user);
       if (null == guildId) {
-        guildId = closure_11;
+        guildId = outer1_11;
       }
-      return closure_19(guildId, user.user.id, activities, status);
+      return outer1_19(guildId, user.user.id, activities, status);
     });
     return mapped.some((arg0) => arg0);
   },
@@ -418,15 +420,15 @@ tmp4 = new tmp4(importDefault(dependencyMap[11]), {
   RELATIONSHIP_REMOVE: function handleRelationshipRemove(relationship) {
     let iter2;
     relationship = relationship.relationship;
-    if (null == closure_12[relationship.id]) {
+    if (null == dependencyMap[relationship.id]) {
       return false;
     } else {
-      const tmp5 = _createForOfIteratorHelperLoose(importDefault(dependencyMap[9]).values(tmp));
+      const tmp5 = _createForOfIteratorHelperLoose(importDefault(22).values(tmp));
       let iter = tmp5();
       if (!iter.done) {
         do {
-          let tmp6 = closure_13;
-          let value = closure_13.get(iter.value);
+          let tmp6 = map;
+          let value = map.get(iter.value);
           if (null != value) {
             let addResult = value.add(relationship.id);
           }
@@ -437,142 +439,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[11]), {
     }
   }
 });
-const obj = {
-  CONNECTION_OPEN_SUPPLEMENTAL: function handleConnectionOpenSupplemental(presences) {
-    let activities;
-    let iter3;
-    let iter5;
-    let status;
-    let user;
-    const tmp = _createForOfIteratorHelperLoose(presences.presences);
-    const iter = tmp();
-    let iter2 = iter;
-    let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        ({ user, status, activities } = iter2.value);
-        let tmp2 = null != user;
-        if (tmp2) {
-          let tmp3 = closure_19;
-          let tmp4 = closure_11;
-          let tmp5 = activities;
-          let tmp6 = status;
-          tmp2 = false !== closure_19(closure_11, user.id, activities, status);
-        }
-        if (tmp2) {
-          flag = true;
-        }
-        iter3 = tmp();
-        iter2 = iter3;
-        flag2 = flag;
-      } while (!iter3.done);
-    }
-    const tmp7 = _createForOfIteratorHelperLoose(presences.guilds);
-    let iter4 = tmp7();
-    let flag3 = flag2;
-    let tmp8 = flag2;
-    if (!iter4.done) {
-      do {
-        let tmp9 = closure_20;
-        let obj = { guild: iter4.value };
-        if (false !== closure_20(obj)) {
-          flag3 = true;
-        }
-        iter5 = tmp7();
-        iter4 = iter5;
-        tmp8 = flag3;
-      } while (!iter5.done);
-    }
-    return tmp8;
-  },
-  OVERLAY_INITIALIZE: function handleOverlayInitialize(parties) {
-    parties = parties.parties;
-    const importDefault = parties;
-    const map = new Map();
-    const merged = Object.assign(parties.userParties);
-    let closure_12 = {};
-    const keys = Object.keys(parties);
-    const item = keys.forEach((arg0) => map.set(arg0, new Set(parties[arg0])));
-  },
-  GUILD_CREATE: handleGuildCreate,
-  PRESENCES_REPLACE: function handlePresenceReplace(presences) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(presences.presences);
-    const iter = tmp();
-    let iter2 = iter;
-    let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let user = iter2.value.user;
-        let tmp3 = null != user;
-        if (tmp3) {
-          let tmp4 = closure_19;
-          let tmp5 = closure_11;
-          tmp3 = false !== closure_19(closure_11, user.id, tmp2);
-        }
-        if (tmp3) {
-          flag = true;
-        }
-        iter3 = tmp();
-        iter2 = iter3;
-        flag2 = flag;
-      } while (!iter3.done);
-    }
-    return flag2;
-  },
-  PRESENCE_UPDATES: function handlePresenceUpdates(updates) {
-    updates = updates.updates;
-    const mapped = updates.map((user) => {
-      let activities;
-      let guildId;
-      let status;
-      ({ guildId, status, activities } = user);
-      if (null == guildId) {
-        guildId = closure_11;
-      }
-      return closure_19(guildId, user.user.id, activities, status);
-    });
-    return mapped.some((arg0) => arg0);
-  },
-  THREAD_MEMBER_LIST_UPDATE: function handleThreadMemberListUpdate(members) {
-    members = members.members;
-    return batchUpdatePresences(members.guildId, members.map((presence) => presence.presence));
-  },
-  THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(addedMembers) {
-    addedMembers = addedMembers.addedMembers;
-    let tmp2 = null != addedMembers;
-    if (tmp2) {
-      tmp2 = batchUpdatePresences(tmp, addedMembers.map((presence) => presence.presence));
-    }
-    return tmp2;
-  },
-  RELATIONSHIP_ADD: handleRelationshipAddOrUpdate,
-  RELATIONSHIP_UPDATE: handleRelationshipAddOrUpdate,
-  RELATIONSHIP_REMOVE: function handleRelationshipRemove(relationship) {
-    let iter2;
-    relationship = relationship.relationship;
-    if (null == closure_12[relationship.id]) {
-      return false;
-    } else {
-      const tmp5 = _createForOfIteratorHelperLoose(importDefault(dependencyMap[9]).values(tmp));
-      let iter = tmp5();
-      if (!iter.done) {
-        do {
-          let tmp6 = closure_13;
-          let value = closure_13.get(iter.value);
-          if (null != value) {
-            let addResult = value.add(relationship.id);
-          }
-          iter2 = tmp5();
-          iter = iter2;
-        } while (!iter2.done);
-      }
-    }
-  }
-};
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("stores/GamePartyStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GamePartyStore.tsx");
 
 export default tmp4;

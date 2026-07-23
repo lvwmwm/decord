@@ -1,14 +1,13 @@
-// Module ID: 6489
-// Function ID: 50666
+// Module ID: 6494
+// Function ID: 50695
 // Name: ServerIconTheCrewExample
-// Dependencies: [33554457, 1946157056, 33, 5082]
+// Dependencies: [33, 5085, 6495, 2]
 // Exports: ServerIconTheCrewExample
 
-// Module 6489 (ServerIconTheCrewExample)
-import preload from "preload";
+// Module 6494 (ServerIconTheCrewExample)
+import { jsx } from "jsxProd";
 
-const jsx = require(dependencyMap[0]).jsx;
-const result = preload.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconTheCrewExample.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconTheCrewExample.native.tsx");
 
 export const ServerIconTheCrewExample = function ServerIconTheCrewExample(width) {
   let accessibilityLabel;
@@ -28,7 +27,7 @@ export const ServerIconTheCrewExample = function ServerIconTheCrewExample(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6495) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +35,5 @@ export const ServerIconTheCrewExample = function ServerIconTheCrewExample(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

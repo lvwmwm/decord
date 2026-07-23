@@ -1,32 +1,65 @@
-// Module ID: 7622
-// Function ID: 61065
+// Module ID: 7628
+// Function ID: 61102
 // Name: createThreadEmbed
-// Dependencies: []
+// Dependencies: [27, 4122, 4167, 3942, 4991, 7627, 7629, 3759, 7630, 6830, 3760, 5683, 1278, 1194, 1348, 1917, 1838, 3767, 7080, 1849, 4123, 7622, 653, 7632, 4320, 7633, 21, 7634, 5723, 1212, 7635, 7636, 7637, 4466, 1360, 7003, 7642, 4571, 7643, 7645, 5651, 7647, 7764, 7765, 7786, 5670, 6835, 3803, 7787, 7792, 7720, 7835, 4360, 1395, 1392, 7838, 1273, 5488, 7895, 1327, 7896, 3747, 4939, 7897, 7898, 3800, 7901, 7909, 7845, 5648, 689, 7910, 7650, 7912, 7913, 7761, 7916, 8192, 12281, 12300, 12302, 12316, 7653, 7654, 12317, 12320, 12321, 12322, 7655, 12323, 2]
 
-// Module 7622 (createThreadEmbed)
+// Module 7628 (createThreadEmbed)
+import { processColor } from "shouldUseOldMaxMessageCount";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import { ReferencedMessageState } from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import closure_17 from "_isNativeReflectConstruct";
+import closure_18 from "_isNativeReflectConstruct";
+import closure_19 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_21 from "_isNativeReflectConstruct";
+import closure_22 from "_isNativeReflectConstruct";
+import closure_23 from "_isNativeReflectConstruct";
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
+import { ReferencedMessageRowState } from "Changeset";
+import ME from "ME";
+import { GuildTagBadgeSize } from "items";
+
+let closure_24;
+let closure_25;
+let closure_26;
+let closure_28;
+let closure_29;
+let closure_30;
+let closure_31;
 function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, forcedTheme) {
   if (!isInlineReplyPreview) {
     if (message.hasFlag(closure_30.HAS_THREAD)) {
       if (null != channel1) {
-        let channelName = require(dependencyMap[24]).computeChannelName(channel1, closure_23, closure_21);
-        const backgroundColor = importDefault(dependencyMap[25])(forcedTheme).baseColors.backgroundColor;
-        const obj11 = require(dependencyMap[24]);
-        const mostRecentMessage = store3.getMostRecentMessage(importDefault(dependencyMap[26]).castMessageIdAsChannelId(message.id));
-        const obj12 = importDefault(dependencyMap[26]);
-        const count = store3.getCount(importDefault(dependencyMap[26]).castMessageIdAsChannelId(message.id));
-        const obj13 = importDefault(dependencyMap[26]);
-        let intl5 = require(dependencyMap[27]).formatMobileMessageCountLabel(count, channel1.id);
-        const obj14 = require(dependencyMap[27]);
-        let string2 = require(dependencyMap[27]).formatMessageCountLabel(count, channel1.id);
+        let channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel1, closure_23, closure_21);
+        const backgroundColor = importDefault(7633)(forcedTheme).baseColors.backgroundColor;
+        const obj11 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+        const mostRecentMessage = store3.getMostRecentMessage(importDefault(21).castMessageIdAsChannelId(message.id));
+        const obj12 = importDefault(21);
+        const count = store3.getCount(importDefault(21).castMessageIdAsChannelId(message.id));
+        const obj13 = importDefault(21);
+        let intl5 = require(7634) /* shouldUseOldMaxMessageCount */.formatMobileMessageCountLabel(count, channel1.id);
+        const obj14 = require(7634) /* shouldUseOldMaxMessageCount */;
+        let string2 = require(7634) /* shouldUseOldMaxMessageCount */.formatMessageCountLabel(count, channel1.id);
         if (null != count) {
           if (count > 0) {
-            let obj1 = require(dependencyMap[28]);
+            let obj1 = require(5723) /* getSpoilerGatingChannelId */;
             if (obj1.isChannelSpoilerGated(channel1)) {
               let obj = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
               channelName = require;
-              intl5 = require(dependencyMap[29]).intl;
+              intl5 = require(1212) /* getSystemLocale */.intl;
               string2 = intl5.string;
-              obj.messagePreviewString = string2(require(dependencyMap[29]).t.5uaI/7);
+              obj.messagePreviewString = string2(require(1212) /* getSystemLocale */.t["5uaI/7"]);
               obj.archived = false;
               obj.backgroundColor = backgroundColor;
               obj1 = obj;
@@ -35,13 +68,13 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
               if (null != threadMetadata) {
                 if (threadMetadata.archived) {
                   obj = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-                  const intl4 = require(dependencyMap[29]).intl;
-                  obj.messagePreviewString = intl4.string(require(dependencyMap[29]).t.ZTo4HS);
+                  const intl4 = require(1212) /* getSystemLocale */.intl;
+                  obj.messagePreviewString = intl4.string(require(1212) /* getSystemLocale */.t.ZTo4HS);
                   obj.archived = true;
-                  obj.archivedIconUrl = require(dependencyMap[30]).getAssetUriForEmbed(importDefault(dependencyMap[31]));
+                  obj.archivedIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7636));
                   obj.backgroundColor = backgroundColor;
                   obj1 = obj;
-                  const obj9 = require(dependencyMap[30]);
+                  const obj9 = require(7635) /* frozen */;
                 }
               }
               if (null != mostRecentMessage) {
@@ -51,21 +84,21 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                       if (!mostRecentMessage.ignored) {
                         obj1 = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
                         const obj2 = { state: ReferencedMessageRowState.LOADED };
-                        const obj3 = { 721365503: "title", 1174350847: "__closure", 314254: "x", 314252: "channel_id", 315911: "w", 315913: "Array", 314263: "isArray", 1140796497: "channel_id", message: mostRecentMessage, roleStyle, options };
+                        const obj3 = { message: mostRecentMessage, roleStyle, options, isFirst: true, isEditing: false, canShowImages: true, isSystemDM: false, isInlineReplyPreview: true };
                         obj2.message = createMessageContent(obj3);
                         obj1.referencedMessage = obj2;
                         obj1.backgroundColor = backgroundColor;
                       }
                     }
                     const obj4 = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-                    const intl2 = require(dependencyMap[29]).intl;
+                    const intl2 = require(1212) /* getSystemLocale */.intl;
                     const string = intl2.string;
-                    let XAkOo2 = require(dependencyMap[29]).t;
+                    let XAkOo2 = require(1212) /* getSystemLocale */.t;
                     if (mostRecentMessage.blocked) {
                       XAkOo2 = XAkOo2.XAkOo2;
                       let stringResult = string(XAkOo2);
                     } else {
-                      stringResult = string(XAkOo2.G7p6v/);
+                      stringResult = string(XAkOo2["G7p6v/"]);
                     }
                     obj4.messagePreviewString = stringResult;
                     obj4.archived = false;
@@ -74,8 +107,8 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                 }
               }
               const obj5 = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-              const intl3 = require(dependencyMap[29]).intl;
-              obj5.messagePreviewString = intl3.string(require(dependencyMap[29]).t.ZTo4HS);
+              const intl3 = require(1212) /* getSystemLocale */.intl;
+              obj5.messagePreviewString = intl3.string(require(1212) /* getSystemLocale */.t.ZTo4HS);
               obj5.archived = false;
               obj5.backgroundColor = backgroundColor;
               obj1 = obj5;
@@ -83,8 +116,8 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
           }
         }
         obj = { title: channelName, messageCountLabel: intl5, messageCountAccessibilityLabel: string2 };
-        const intl = require(dependencyMap[29]).intl;
-        obj.messagePreviewString = intl.string(require(dependencyMap[29]).t.HYtNyE);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        obj.messagePreviewString = intl.string(require(1212) /* getSystemLocale */.t.HYtNyE);
         obj.archived = false;
         obj.backgroundColor = backgroundColor;
         return obj;
@@ -110,14 +143,14 @@ function getForumPostActions(message, channel) {
       if (null != emojiId) {
         usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(defaultReactionEmoji.emojiId);
       }
-      let obj = require(dependencyMap[32]);
+      let obj = require(7637) /* createDefaultReaction */;
       obj = { defaultReactionEmoji, customGuildEmoji: usableCustomEmojiById };
       defaultReaction = obj.createDefaultReaction(obj);
     }
     const hasJoinedResult = closure_14.hasJoined(message.channel_id);
     const shouldDisplayPromptResult = closure_11.shouldDisplayPrompt(channel.id);
     obj = { isFollowing: hasJoinedResult, hasReactions: 0 !== message.reactions.length, defaultReaction, showMediaPostSharePrompt: shouldDisplayPromptResult };
-    return require(dependencyMap[32]).createForumPostActions(obj);
+    return require(7637) /* createDefaultReaction */.createForumPostActions(obj);
   }
 }
 function createMessageContent(message) {
@@ -181,36 +214,32 @@ function createMessageContent(message) {
   let timestampHourCycle;
   let useAlternateEmbedColors;
   message = message.message;
-  const require = message;
   ({ messageForward, roleStyle, isFirst, isEditing, canShowImages, isSystemDM, isInlineReplyPreview } = message);
   if (isInlineReplyPreview === undefined) {
     isInlineReplyPreview = false;
   }
   ({ options, pushFeedbackType, renderContentOnly } = message);
-  let importDefault;
-  let dependencyMap;
-  let processColor;
-  let closure_4;
+  gifAutoPlay = undefined;
+  shouldObscureSpoiler = undefined;
+  let shouldDisableInteractiveComponents;
+  let c4;
   let store;
-  let gradientPreset;
-  let closure_7;
-  message = undefined;
+  guildId = undefined;
+  let enabledHarmTypesForMessage;
+  let result1;
+  let setting;
   let interaction;
-  let closure_10;
   ({ animateEmoji, gifAutoPlay } = options);
-  importDefault = gifAutoPlay;
   ({ renderCommunicationDisabled, renderAttachments, renderPolls, forcedTheme, forceHideSimpleEmbedContent, shouldObscureSpoiler } = options);
-  dependencyMap = shouldObscureSpoiler;
-  const shouldDisableInteractiveComponents = options.shouldDisableInteractiveComponents;
-  processColor = shouldDisableInteractiveComponents;
+  shouldDisableInteractiveComponents = options.shouldDisableInteractiveComponents;
   const restrictedPreview = options.restrictedPreview;
   ({ renderEmbeds, renderReactions, inlineEmbedMedia, inlineAttachmentMedia, constrainedWidth, ignoreMentioned, animatingStickerMessageId, timestampHourCycle, renderCodedLinks, renderGiftCode, renderActivityInstanceEmbed, renderActivityInviteEmbed, renderComponents, renderThreadEmbeds, renderReplies, renderExecutedCommands, renderSharedClientTheme, renderForumPostActions, ignoreEmbedDescriptionCache, useAlternateEmbedColors } = options);
   if (null == forcedTheme) {
     let merged = theme;
     forcedTheme = theme.theme;
   }
-  const tmp2 = importDefault(dependencyMap[36])(forcedTheme, useAlternateEmbedColors);
-  closure_4 = tmp2;
+  const tmp2 = gifAutoPlay(shouldObscureSpoiler[36])(forcedTheme, useAlternateEmbedColors);
+  c4 = tmp2;
   store = tmp3;
   let tmp4 = tmp3;
   if (true === canShowImages) {
@@ -228,17 +257,16 @@ function createMessageContent(message) {
     tmp7 = inlineAttachmentMedia;
   }
   const channel = store4.getChannel(message.getChannelId());
-  let obj1 = importDefault(dependencyMap[26]);
+  let obj1 = gifAutoPlay(shouldObscureSpoiler[26]);
   const channel1 = store4.getChannel(obj1.castMessageIdAsChannelId(message.id));
   guildId = undefined;
   if (null != channel) {
     guildId = channel.getGuildId();
   }
-  gradientPreset = guildId;
-  let obj2 = require(dependencyMap[37]);
+  let obj2 = message(shouldObscureSpoiler[37]);
   const hasEnhancedRoleColors = obj2.getHasEnhancedRoleColors(guildId, message.author.id);
   if (null == messageForward) {
-    let obj3 = require(dependencyMap[38]);
+    let obj3 = message(shouldObscureSpoiler[38]);
     messageForward = obj3.maybeCreateSingleForwardForMessage(message);
   }
   let message2 = message;
@@ -248,7 +276,7 @@ function createMessageContent(message) {
   let items = [];
   if (renderReactions) {
     let obj = { reactions: message.reactions, animateEmoji };
-    items = importDefault(dependencyMap[39])(obj);
+    items = gifAutoPlay(shouldObscureSpoiler[39])(obj);
   }
   let tmp15 = null;
   if (message.type === constants.THREAD_STARTER_MESSAGE) {
@@ -276,9 +304,9 @@ function createMessageContent(message) {
     obj["id"] = message.id;
     return obj;
   } else {
-    merged = importDefault;
-    merged = dependencyMap;
-    if (importDefault(dependencyMap[40])(message)) {
+    merged = gifAutoPlay;
+    merged = shouldObscureSpoiler;
+    if (gifAutoPlay(shouldObscureSpoiler[40])(message)) {
       merged = constants;
       if (message.type === constants.THREAD_CREATED) {
         obj3 = {};
@@ -290,29 +318,29 @@ function createMessageContent(message) {
         merged = options;
         merged = forcedTheme;
         obj3.threadEmbed = createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, forcedTheme);
-        merged = require;
-        merged = dependencyMap;
+        merged = message;
+        merged = shouldObscureSpoiler;
         const obj4 = { message, theme: forcedTheme, reactions: items, roleStyle };
         merged = obj3;
-        merged = Object.assign(require(dependencyMap[41]).createSystemMessageContent(obj4));
+        merged = Object.assign(message(shouldObscureSpoiler[41]).createSystemMessageContent(obj4));
         merged = obj3;
-        const obj92 = require(dependencyMap[41]);
+        const obj92 = message(shouldObscureSpoiler[41]);
       } else {
-        merged = require;
-        merged = dependencyMap;
+        merged = message;
+        merged = shouldObscureSpoiler;
         let obj5 = { message, theme: forcedTheme, reactions: items, roleStyle };
         merged = undefined;
         if (null != channel) {
           merged = channel.isForumPost();
         }
         obj5.isForumPost = merged;
-        merged = require(dependencyMap[41]).createSystemMessageContent(obj5);
-        const obj89 = require(dependencyMap[41]);
+        merged = message(shouldObscureSpoiler[41]).createSystemMessageContent(obj5);
+        const obj89 = message(shouldObscureSpoiler[41]);
       }
       return merged;
     } else {
       const author = message.author;
-      obj5 = require(dependencyMap[42]);
+      obj5 = message(shouldObscureSpoiler[42]);
       let timestamp = message.editedTimestamp;
       if (null == timestamp) {
         timestamp = message.timestamp;
@@ -320,7 +348,7 @@ function createMessageContent(message) {
       const result = obj5.isMessageNewerThanImprovedMarkdownEpoch(timestamp.valueOf());
       if (null != message2.content) {
         if ("" !== message2.content) {
-          let obj7 = require(dependencyMap[43]);
+          let obj7 = message(shouldObscureSpoiler[43]);
           if (!forceHideSimpleEmbedContent) {
             let tmp26 = tmp4;
             if (tmp4) {
@@ -339,25 +367,21 @@ function createMessageContent(message) {
         }
         let stringResult = content;
         if (tmp36) {
-          stringResult = importDefault(dependencyMap[44])(content);
+          stringResult = gifAutoPlay(shouldObscureSpoiler[44])(content);
         }
-        let obj8 = require(dependencyMap[45]);
-        const enabledHarmTypesForMessage = obj8.getEnabledHarmTypesForMessage(message);
-        closure_7 = enabledHarmTypesForMessage;
-        let obj9 = require(dependencyMap[46]);
-        const result1 = obj9.shouldAgeVerifyForExplicitMedia();
-        message = result1;
-        const ViewImageDescriptions = require(dependencyMap[47]).ViewImageDescriptions;
-        const setting = ViewImageDescriptions.getSetting();
-        interaction = setting;
+        let obj8 = message(shouldObscureSpoiler[45]);
+        enabledHarmTypesForMessage = obj8.getEnabledHarmTypesForMessage(message);
+        let obj9 = message(shouldObscureSpoiler[46]);
+        result1 = obj9.shouldAgeVerifyForExplicitMedia();
+        const ViewImageDescriptions = message(shouldObscureSpoiler[47]).ViewImageDescriptions;
+        setting = ViewImageDescriptions.getSetting();
         if (tmp4) {
           tmp4 = !hasBailedAst;
         }
         if (tmp4) {
           tmp4 = !restrictedPreview;
         }
-        interaction = interaction.getInteraction(message);
-        closure_10 = interaction;
+        interaction = setting.getInteraction(message);
         let tmp47;
         if (tmp4) {
           const obj6 = {
@@ -376,15 +400,15 @@ function createMessageContent(message) {
             authorIsBot: message.author.bot,
             showContentInventoryEntryFallbackEmbed: message.showContentInventoryEntryFallbackEmbed,
             transformComponents(arg0) {
-                      return gifAutoPlay(shouldObscureSpoiler[49])({ message, guildId, interaction, shouldDisableInteractiveComponents, shouldShowMedia: tmp3, shouldObscureSpoiler, enabledContentHarmTypeFlags: enabledHarmTypesForMessage, shouldAgeVerify: result1, shouldShowMosaicMediaDescriptions: setting, shouldAutoPlayGifs: gifAutoPlay, colors: tmp2 }, arg0);
+                      return gifAutoPlay(shouldObscureSpoiler[49])({ message, guildId, interaction, shouldDisableInteractiveComponents, shouldShowMedia: c5, shouldObscureSpoiler, enabledContentHarmTypeFlags: enabledHarmTypesForMessage, shouldAgeVerify: result1, shouldShowMosaicMediaDescriptions: setting, shouldAutoPlayGifs: gifAutoPlay, colors: c4 }, arg0);
                     }
           };
-          tmp47 = importDefault(dependencyMap[48])(obj6);
+          tmp47 = gifAutoPlay(shouldObscureSpoiler[48])(obj6);
         }
         obj7 = { message, isSystemDM, channel, colors: tmp2 };
-        ({ tagText, tagAccessibilityLabel, tagVerified, tagTextColor, tagBackgroundColor, tagType, tagIconUrl, opTagText, opTagTextColor, opTagBackgroundColor } = importDefault(dependencyMap[50])(obj7));
+        ({ tagText, tagAccessibilityLabel, tagVerified, tagTextColor, tagBackgroundColor, tagType, tagIconUrl, opTagText, opTagTextColor, opTagBackgroundColor } = gifAutoPlay(shouldObscureSpoiler[50])(obj7));
         const uploaderFileForMessageId = store5.getUploaderFileForMessageId(message.id);
-        const tmp52 = importDefault(dependencyMap[50])(obj7);
+        const tmp52 = gifAutoPlay(shouldObscureSpoiler[50])(obj7);
         let tmp58 = tmp47;
         if (!tmp57) {
           let items1 = tmp47;
@@ -392,25 +416,25 @@ function createMessageContent(message) {
             items1 = [];
           }
           obj8 = { uploaderFile: uploaderFileForMessageId, useAttachmentUploadPreview: tmp55, colors: tmp2 };
-          items1.push(importDefault(dependencyMap[51])(obj8));
+          items1.push(gifAutoPlay(shouldObscureSpoiler[51])(obj8));
           tmp58 = items1;
         }
-        const message1 = message.getMessage(message.id);
+        const message1 = result1.getMessage(message.id);
         let tmp64 = tmp58;
         if (null != message1) {
           let items2 = tmp58;
           if (null == tmp58) {
             items2 = [];
           }
-          let obj13 = require(dependencyMap[51]);
+          let obj13 = message(shouldObscureSpoiler[51]);
           obj9 = { errorMessage: message1.errorMessage, colors: tmp2 };
           items2.push(obj13.createAutomodBlockedMessageEmbed(obj9));
           tmp64 = items2;
         }
-        let obj15 = require(dependencyMap[52]);
+        let obj15 = message(shouldObscureSpoiler[52]);
         const userAuthor = obj15.getUserAuthor(message.author, channel);
         ({ guildMemberAvatar, guildMemberAvatarDecoration, iconRoleId } = userAuthor);
-        let obj16 = require(dependencyMap[53]);
+        let obj16 = message(shouldObscureSpoiler[53]);
         if (message.isInteractionPlaceholder()) {
           if (null == message.author.avatar) {
             if (null == guildMemberAvatar) {
@@ -420,38 +444,38 @@ function createMessageContent(message) {
                 icon = application.icon;
               }
               if (null != icon) {
-                let obj19 = importDefault(dependencyMap[54]);
+                let obj19 = gifAutoPlay(shouldObscureSpoiler[54]);
                 const obj10 = { id: message.application.id, icon: message.application.icon, bot: message.application.bot };
                 let applicationIconSource = obj19.getApplicationIconSource(obj10);
               }
               const ensureAvatarSourceResult = obj16.ensureAvatarSource(applicationIconSource);
-              let obj21 = require(dependencyMap[54]);
+              let obj21 = message(shouldObscureSpoiler[54]);
               const obj11 = {};
               if (null == guildMemberAvatarDecoration) {
                 guildMemberAvatarDecoration = author.avatarDecoration;
               }
               obj11.avatarDecoration = guildMemberAvatarDecoration;
-              let obj23 = require(dependencyMap[55]);
-              obj11.size = obj23.getDecorationSizeForAvatarSize(require(dependencyMap[56]).AvatarSizes.NORMAL);
+              let obj23 = message(shouldObscureSpoiler[55]);
+              obj11.size = obj23.getDecorationSizeForAvatarSize(message(shouldObscureSpoiler[56]).AvatarSizes.NORMAL);
               const avatarDecorationURL = obj21.getAvatarDecorationURL(obj11);
               if (null != iconRoleId) {
                 if (null != guildId) {
-                  let obj24 = require(dependencyMap[57]);
+                  let obj24 = message(shouldObscureSpoiler[57]);
                   const obj12 = { guildId, roleId: iconRoleId, size: 18 };
                   const roleIcon = obj24.getRoleIcon(obj12);
                 }
               }
               if (message.hasFlag(closure_30.SOURCE_MESSAGE_DELETED)) {
-                const intl = require(dependencyMap[29]).intl;
-                stringResult = intl.string(require(dependencyMap[29]).t.JOtgSw);
+                const intl = message(shouldObscureSpoiler[29]).intl;
+                stringResult = intl.string(message(shouldObscureSpoiler[29]).t.JOtgSw);
               }
-              let obj26 = require(dependencyMap[52]);
+              let obj26 = message(shouldObscureSpoiler[52]);
               const messageAuthor = obj26.getMessageAuthor(message);
               ({ nick, colorString } = messageAuthor);
               if (message.type === constants.INTERACTION_PREMIUM_UPSELL) {
-                const intl2 = require(dependencyMap[29]).intl;
+                const intl2 = message(shouldObscureSpoiler[29]).intl;
                 obj13 = { appName: nick };
-                stringResult = intl2.formatToPlainString(require(dependencyMap[29]).t.u4A+xK, obj13);
+                stringResult = intl2.formatToPlainString(message(shouldObscureSpoiler[29]).t["u4A+xK"], obj13);
               }
               if (message.type === constants.REPLY) {
                 if (renderReplies) {
@@ -459,18 +483,18 @@ function createMessageContent(message) {
                   const state = messageByReference1.state;
                   if (ReferencedMessageState.LOADED === state) {
                     const message3 = messageByReference1.message;
-                    merged = require;
-                    merged = dependencyMap;
-                    merged = require(dependencyMap[38]).maybeCreateSingleForwardForMessage(message3);
+                    merged = message;
+                    merged = shouldObscureSpoiler;
+                    merged = message(shouldObscureSpoiler[38]).maybeCreateSingleForwardForMessage(message3);
                     merged = closure_21;
                     if (closure_21.isBlockedForMessage(message3)) {
                       const obj14 = {};
                       merged = ReferencedMessageRowState;
                       obj14.state = ReferencedMessageRowState.SYSTEM;
-                      merged = require;
-                      merged = dependencyMap;
-                      const intl12 = require(dependencyMap[29]).intl;
-                      obj14.content = intl12.string(require(dependencyMap[29]).t.XAkOo2);
+                      merged = message;
+                      merged = shouldObscureSpoiler;
+                      const intl12 = message(shouldObscureSpoiler[29]).intl;
+                      obj14.content = intl12.string(message(shouldObscureSpoiler[29]).t.XAkOo2);
                       let tmp96 = obj14;
                     } else {
                       merged = closure_21;
@@ -478,14 +502,14 @@ function createMessageContent(message) {
                         obj15 = {};
                         merged = ReferencedMessageRowState;
                         obj15.state = ReferencedMessageRowState.SYSTEM;
-                        merged = require;
-                        merged = dependencyMap;
-                        const intl11 = require(dependencyMap[29]).intl;
-                        obj15.content = intl11.string(require(dependencyMap[29]).t.G7p6v/);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        const intl11 = message(shouldObscureSpoiler[29]).intl;
+                        obj15.content = intl11.string(message(shouldObscureSpoiler[29]).t["G7p6v/"]);
                         tmp96 = obj15;
                       } else {
                         merged = createMessageContent;
-                        obj16 = { bind: "title", getCurrentUser: "__closure", mode: "x", valueOf: "channel_id", message: message3, push: "Array", fileFinishedImporting: "isArray", a: "channel_id", messageForward: merged, roleStyle };
+                        obj16 = { message: message3, messageForward: merged, roleStyle, isFirst: true, isEditing: false, canShowImages: true, isSystemDM: false, isInlineReplyPreview: true };
                         let obj17 = {};
                         merged = obj17;
                         merged = options;
@@ -497,16 +521,16 @@ function createMessageContent(message) {
                           const obj18 = {};
                           merged = ReferencedMessageRowState;
                           obj18.state = ReferencedMessageRowState.SYSTEM;
-                          merged = require;
-                          merged = dependencyMap;
-                          const intl10 = require(dependencyMap[29]).intl;
-                          obj18.content = intl10.string(require(dependencyMap[29]).t.1i+hMi);
+                          merged = message;
+                          merged = shouldObscureSpoiler;
+                          const intl10 = message(shouldObscureSpoiler[29]).intl;
+                          obj18.content = intl10.string(message(shouldObscureSpoiler[29]).t["1i+hMi"]);
                           tmp96 = obj18;
                         } else {
                           if ("username" in merged) {
-                            merged = require;
-                            merged = dependencyMap;
-                            merged = require(dependencyMap[52]).getMessageAuthor(message3);
+                            merged = message;
+                            merged = shouldObscureSpoiler;
+                            merged = message(shouldObscureSpoiler[52]).getMessageAuthor(message3);
                             ({ nick: nick2, colorString: colorString2 } = merged);
                             if (null == nick2) {
                               nick2 = message3.author.username;
@@ -520,7 +544,7 @@ function createMessageContent(message) {
                               let colorString3 = merged.colorString;
                             } else {
                               merged = undefined;
-                              merged = processColor;
+                              merged = shouldDisableInteractiveComponents;
                               if (null != colorString2) {
                                 merged = colorString2;
                               }
@@ -530,12 +554,12 @@ function createMessageContent(message) {
                               }
                             }
                             merged.colorString = colorString3;
-                            merged = importDefault;
-                            merged = dependencyMap;
-                            if (importDefault(dependencyMap[58])(message, message3)) {
+                            merged = gifAutoPlay;
+                            merged = shouldObscureSpoiler;
+                            if (gifAutoPlay(shouldObscureSpoiler[58])(message, message3)) {
                               merged.username = `@${tmp.username}`;
                             }
-                            const obj35 = require(dependencyMap[52]);
+                            const obj35 = message(shouldObscureSpoiler[52]);
                           }
                           merged = globalThis;
                           const _Array = Array;
@@ -552,65 +576,65 @@ function createMessageContent(message) {
                           }
                           merged = message3;
                           if ("stickers" in merged) {
-                            merged = require;
-                            merged = dependencyMap;
-                            let messageStickers = require(dependencyMap[33]).getMessageStickers(merged);
-                            const obj36 = require(dependencyMap[33]);
+                            merged = message;
+                            merged = shouldObscureSpoiler;
+                            let messageStickers = message(shouldObscureSpoiler[33]).getMessageStickers(merged);
+                            const obj36 = message(shouldObscureSpoiler[33]);
                           } else {
                             messageStickers = [];
                           }
                           if (messageStickers.length > 0) {
-                            merged = require;
-                            merged = dependencyMap;
-                            const intl9 = require(dependencyMap[29]).intl;
-                            merged = intl9.string(require(dependencyMap[29]).t.7K5Lma);
+                            merged = message;
+                            merged = shouldObscureSpoiler;
+                            const intl9 = message(shouldObscureSpoiler[29]).intl;
+                            merged = intl9.string(message(shouldObscureSpoiler[29]).t["7K5Lma"]);
                           } else {
                             if ("interaction" in merged) {
                               if (null != merged.interaction) {
                                 if ("" === merged.content) {
-                                  merged = require;
-                                  merged = dependencyMap;
-                                  const intl8 = require(dependencyMap[29]).intl;
-                                  merged = intl8.string(require(dependencyMap[29]).t.2v7kfl);
+                                  merged = message;
+                                  merged = shouldObscureSpoiler;
+                                  const intl8 = message(shouldObscureSpoiler[29]).intl;
+                                  merged = intl8.string(message(shouldObscureSpoiler[29]).t["2v7kfl"]);
                                 }
                               }
                             }
-                            merged = require;
-                            merged = dependencyMap;
+                            merged = message;
+                            merged = shouldObscureSpoiler;
                             merged = closure_30;
                             if (obj37.hasFlag(merged.flags, closure_30.IS_VOICE_MESSAGE)) {
-                              merged = require;
-                              merged = dependencyMap;
-                              const intl7 = require(dependencyMap[29]).intl;
-                              merged = intl7.string(require(dependencyMap[29]).t.6bhHrc);
+                              merged = message;
+                              merged = shouldObscureSpoiler;
+                              const intl7 = message(shouldObscureSpoiler[29]).intl;
+                              merged = intl7.string(message(shouldObscureSpoiler[29]).t["6bhHrc"]);
                             } else {
                               merged = constants;
                               if (merged.type === constants.POLL_RESULT) {
-                                merged = require;
-                                merged = dependencyMap;
-                                merged = require(dependencyMap[35]).getPollResultsReplyPreviewMobile(merged);
-                                const obj38 = require(dependencyMap[35]);
+                                merged = message;
+                                merged = shouldObscureSpoiler;
+                                merged = message(shouldObscureSpoiler[35]).getPollResultsReplyPreviewMobile(merged);
+                                const obj38 = message(shouldObscureSpoiler[35]);
                               } else {
-                                merged = require;
-                                merged = dependencyMap;
+                                merged = message;
+                                merged = shouldObscureSpoiler;
                                 merged = closure_30;
                                 if (obj97.hasFlag(merged.flags, closure_30.IS_COMPONENTS_V2)) {
-                                  merged = require;
-                                  merged = dependencyMap;
-                                  const intl6 = require(dependencyMap[29]).intl;
-                                  merged = intl6.string(require(dependencyMap[29]).t.Xxm5i3);
+                                  merged = message;
+                                  merged = shouldObscureSpoiler;
+                                  const intl6 = message(shouldObscureSpoiler[29]).intl;
+                                  merged = intl6.string(message(shouldObscureSpoiler[29]).t.Xxm5i3);
                                 } else if ("" === merged.content) {
-                                  merged = require;
-                                  merged = dependencyMap;
-                                  const intl5 = require(dependencyMap[29]).intl;
-                                  merged = intl5.string(require(dependencyMap[29]).t.JAKsM8);
+                                  merged = message;
+                                  merged = shouldObscureSpoiler;
+                                  const intl5 = message(shouldObscureSpoiler[29]).intl;
+                                  merged = intl5.string(message(shouldObscureSpoiler[29]).t.JAKsM8);
                                 } else {
                                   merged = null;
                                 }
-                                const obj97 = require(dependencyMap[34]);
+                                obj97 = message(shouldObscureSpoiler[34]);
                               }
                             }
-                            const obj37 = require(dependencyMap[34]);
+                            obj37 = message(shouldObscureSpoiler[34]);
                           }
                           merged = constants;
                           if (message3.type === constants.POLL_RESULT) {
@@ -628,17 +652,17 @@ function createMessageContent(message) {
                         }
                       }
                     }
-                    const obj32 = require(dependencyMap[38]);
+                    const obj32 = message(shouldObscureSpoiler[38]);
                   } else {
                     merged = ReferencedMessageState;
                     if (ReferencedMessageState.NOT_LOADED === state) {
                       const obj20 = {};
                       merged = ReferencedMessageRowState;
                       obj20.state = ReferencedMessageRowState.SYSTEM;
-                      merged = require;
-                      merged = dependencyMap;
-                      const intl4 = require(dependencyMap[29]).intl;
-                      obj20.content = intl4.string(require(dependencyMap[29]).t.1i+hMi);
+                      merged = message;
+                      merged = shouldObscureSpoiler;
+                      const intl4 = message(shouldObscureSpoiler[29]).intl;
+                      obj20.content = intl4.string(message(shouldObscureSpoiler[29]).t["1i+hMi"]);
                       tmp96 = obj20;
                     } else {
                       merged = ReferencedMessageState;
@@ -646,15 +670,15 @@ function createMessageContent(message) {
                         obj21 = {};
                         merged = ReferencedMessageRowState;
                         obj21.state = ReferencedMessageRowState.SYSTEM;
-                        merged = require;
-                        merged = dependencyMap;
-                        const intl3 = require(dependencyMap[29]).intl;
-                        obj21.content = intl3.string(require(dependencyMap[29]).t.mE3KJN);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        const intl3 = message(shouldObscureSpoiler[29]).intl;
+                        obj21.content = intl3.string(message(shouldObscureSpoiler[29]).t.mE3KJN);
                         tmp96 = obj21;
                       } else {
-                        merged = require;
-                        merged = dependencyMap;
-                        let obj28 = require(dependencyMap[59]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        let obj28 = message(shouldObscureSpoiler[59]);
                         merged = obj28.assertNever(messageByReference1);
                       }
                     }
@@ -671,22 +695,22 @@ function createMessageContent(message) {
                 merged = forcedTheme;
                 merged = createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, forcedTheme);
               }
-              merged = require;
-              merged = dependencyMap;
+              merged = message;
+              merged = shouldObscureSpoiler;
               merged = null;
-              merged = require(dependencyMap[60]).createInteractionStatus(message, interaction);
+              merged = message(shouldObscureSpoiler[60]).createInteractionStatus(message, interaction);
               if (null != guildId) {
                 merged = member;
                 merged = member.getMember(guildId, author.id);
               }
-              merged = require;
-              merged = dependencyMap;
-              const obj43 = require(dependencyMap[60]);
-              merged = closure_4;
-              const useReducedMotion = closure_4.useReducedMotion;
-              merged = closure_4;
+              merged = message;
+              merged = shouldObscureSpoiler;
+              const obj43 = message(shouldObscureSpoiler[60]);
+              merged = c4;
+              const useReducedMotion = c4.useReducedMotion;
+              merged = c4;
               merged = undefined;
-              merged = require(dependencyMap[61]).isMemberCommunicationDisabled(merged);
+              merged = message(shouldObscureSpoiler[61]).isMemberCommunicationDisabled(merged);
               if (null != channel) {
                 merged = channel.parent_id;
               }
@@ -701,11 +725,11 @@ function createMessageContent(message) {
                   }
                 }
               }
-              merged = require;
-              merged = dependencyMap;
-              const obj44 = require(dependencyMap[61]);
+              merged = message;
+              merged = shouldObscureSpoiler;
+              const obj44 = message(shouldObscureSpoiler[61]);
               const obj22 = { guildMember: merged, channel: merged, onlyChannelConnectionRoles: true };
-              merged = require(dependencyMap[62]).getVisibleConnectionsRole(obj22);
+              merged = message(shouldObscureSpoiler[62]).getVisibleConnectionsRole(obj22);
               merged = 0 !== message2.attachments.length;
               merged = tmp55;
               merged = 0 !== message2.embeds.length;
@@ -717,19 +741,19 @@ function createMessageContent(message) {
               }
               let items3 = [];
               if (merged) {
-                merged = importDefault;
-                merged = dependencyMap;
+                merged = gifAutoPlay;
+                merged = shouldObscureSpoiler;
                 obj23 = { uploaderFile: uploaderFileForMessageId };
                 merged = constants2;
                 obj23.isFailedMessage = message.state === constants2.SEND_FAILED;
                 obj23.shouldInlineAttachmentMedia = tmp7;
-                items3 = importDefault(dependencyMap[63])(obj23);
+                items3 = gifAutoPlay(shouldObscureSpoiler[63])(obj23);
               } else if (renderAttachments) {
-                merged = importDefault;
-                merged = dependencyMap;
+                merged = gifAutoPlay;
+                merged = shouldObscureSpoiler;
                 obj24 = { attachments: message2.attachments };
                 merged = store5;
-                merged = importDefault(dependencyMap[64]);
+                merged = gifAutoPlay(shouldObscureSpoiler[64]);
                 obj24.uploadAttachments = store5.getUploadAttachments(message.nonce);
                 obj24.shouldInlineAttachmentMedia = tmp7;
                 obj24.gifAutoPlay = gifAutoPlay;
@@ -745,27 +769,27 @@ function createMessageContent(message) {
               if (merged) {
                 merged = constants2;
                 if (message.state !== constants2.SEND_FAILED) {
-                  merged = require;
-                  merged = dependencyMap;
-                  const intl13 = require(dependencyMap[29]).intl;
-                  merged = intl13.string(require(dependencyMap[29]).t.yXY+5J);
+                  merged = message;
+                  merged = shouldObscureSpoiler;
+                  const intl13 = message(shouldObscureSpoiler[29]).intl;
+                  merged = intl13.string(message(shouldObscureSpoiler[29]).t["yXY+5J"]);
                 }
                 if (merged) {
                   merged = constants2;
                   if (message.state !== constants2.SEND_FAILED) {
-                    merged = require;
-                    merged = dependencyMap;
-                    const intl14 = require(dependencyMap[29]).intl;
-                    merged = intl14.string(require(dependencyMap[29]).t.yXY+5J);
+                    merged = message;
+                    merged = shouldObscureSpoiler;
+                    const intl14 = message(shouldObscureSpoiler[29]).intl;
+                    merged = intl14.string(message(shouldObscureSpoiler[29]).t["yXY+5J"]);
                   }
                   merged = id;
                   merged = stringResult;
                   merged = id.getId();
                   if (message.isUnsupported) {
-                    merged = require;
-                    merged = dependencyMap;
-                    const intl15 = require(dependencyMap[29]).intl;
-                    merged = intl15.string(require(dependencyMap[29]).t.sWi5EU);
+                    merged = message;
+                    merged = shouldObscureSpoiler;
+                    const intl15 = message(shouldObscureSpoiler[29]).intl;
+                    merged = intl15.string(message(shouldObscureSpoiler[29]).t.sWi5EU);
                   }
                   merged = !message.isPoll();
                   if (!merged) {
@@ -778,45 +802,45 @@ function createMessageContent(message) {
                     }
                   }
                   if (!merged) {
-                    merged = require;
-                    merged = dependencyMap;
-                    merged = require(dependencyMap[35]).getPollReplyPreview(message);
-                    const obj51 = require(dependencyMap[35]);
+                    merged = message;
+                    merged = shouldObscureSpoiler;
+                    merged = message(shouldObscureSpoiler[35]).getPollReplyPreview(message);
+                    const obj51 = message(shouldObscureSpoiler[35]);
                   }
                   if (renderPolls) {
-                    merged = importDefault;
-                    merged = dependencyMap;
+                    merged = gifAutoPlay;
+                    merged = shouldObscureSpoiler;
                     const obj25 = { theme: forcedTheme, animateEmoji };
-                    merged = importDefault(dependencyMap[66])(message, undefined, obj25);
+                    merged = gifAutoPlay(shouldObscureSpoiler[66])(message, undefined, obj25);
                   }
                   if (renderSharedClientTheme) {
-                    merged = require;
-                    merged = dependencyMap;
-                    merged = require(dependencyMap[67]).formatSharedClientThemeData(message, ensureAvatarSourceResult, nick);
-                    const obj53 = require(dependencyMap[67]);
+                    merged = message;
+                    merged = shouldObscureSpoiler;
+                    merged = message(shouldObscureSpoiler[67]).formatSharedClientThemeData(message, ensureAvatarSourceResult, nick);
+                    const obj53 = message(shouldObscureSpoiler[67]);
                   }
-                  merged = require;
-                  merged = dependencyMap;
+                  merged = message;
+                  merged = shouldObscureSpoiler;
                   merged = undefined;
                   if (null != guildId) {
                     merged = guildId;
                   }
                   if (obj54.shouldDisplayGuildTag(author.id, merged)) {
-                    merged = require;
-                    merged = dependencyMap;
-                    merged = require(dependencyMap[68]).getUserPrimaryGuild(author.primaryGuild);
+                    merged = message;
+                    merged = shouldObscureSpoiler;
+                    merged = message(shouldObscureSpoiler[68]).getUserPrimaryGuild(author.primaryGuild);
                     merged = undefined;
                     ({ guildId, tag } = merged);
                     if (null != merged.guildId) {
-                      merged = require;
-                      merged = dependencyMap;
+                      merged = message;
+                      merged = shouldObscureSpoiler;
                       merged = GuildTagBadgeSize;
-                      merged = require(dependencyMap[68]).getGuildTagBadgeUrl(merged.guildId, merged.badge, GuildTagBadgeSize.SIZE_12);
-                      const obj56 = require(dependencyMap[68]);
+                      merged = message(shouldObscureSpoiler[68]).getGuildTagBadgeUrl(merged.guildId, merged.badge, GuildTagBadgeSize.SIZE_12);
+                      const obj56 = message(shouldObscureSpoiler[68]);
                     }
                     merged = guildId;
                     merged = tag;
-                    const obj55 = require(dependencyMap[68]);
+                    const obj55 = message(shouldObscureSpoiler[68]);
                   }
                   merged = undefined;
                   if (null != channel) {
@@ -833,21 +857,21 @@ function createMessageContent(message) {
                         }
                         merged = undefined;
                         if (null != merged) {
-                          merged = importDefault;
-                          merged = dependencyMap;
+                          merged = gifAutoPlay;
+                          merged = shouldObscureSpoiler;
                           obj26 = {};
                           ({ id: obj58.id, icon: obj58.icon } = merged);
                           obj26.size = 16;
-                          merged = importDefault(dependencyMap[54]).getApplicationIconURL(obj26);
-                          const obj57 = importDefault(dependencyMap[54]);
+                          merged = gifAutoPlay(shouldObscureSpoiler[54]).getApplicationIconURL(obj26);
+                          const obj57 = gifAutoPlay(shouldObscureSpoiler[54]);
                         }
                         const additionalName = message.additionalName;
                       }
                     }
                   }
-                  merged = require;
-                  merged = dependencyMap;
-                  const obj54 = require(dependencyMap[68]);
+                  merged = message;
+                  merged = shouldObscureSpoiler;
+                  obj54 = message(shouldObscureSpoiler[68]);
                   merged = message;
                   if (null != message2) {
                     merged = message2;
@@ -855,7 +879,7 @@ function createMessageContent(message) {
                   merged = closure_30;
                   const applicationId = message.applicationId;
                   let str10 = "";
-                  merged = require(dependencyMap[34]).hasFlag(merged.flags, closure_30.IS_VOICE_MESSAGE);
+                  merged = message(shouldObscureSpoiler[34]).hasFlag(merged.flags, closure_30.IS_VOICE_MESSAGE);
                   merged = store;
                   if (null != applicationId) {
                     str10 = applicationId;
@@ -863,14 +887,14 @@ function createMessageContent(message) {
                   merged = store.getApplication(str10);
                   merged = null != merged;
                   if (merged) {
-                    merged = require;
-                    merged = dependencyMap;
+                    merged = message;
+                    merged = shouldObscureSpoiler;
                     merged = closure_30;
-                    merged = require(dependencyMap[34]).hasFlag(message.flags, closure_30.SENT_BY_SOCIAL_LAYER_INTEGRATION);
-                    const obj60 = require(dependencyMap[34]);
+                    merged = message(shouldObscureSpoiler[34]).hasFlag(message.flags, closure_30.SENT_BY_SOCIAL_LAYER_INTEGRATION);
+                    const obj60 = message(shouldObscureSpoiler[34]);
                   }
                   if (merged) {
-                    const id = merged.id;
+                    id = merged.id;
                   }
                   if (null != message2) {
                     merged = closure_30;
@@ -878,41 +902,41 @@ function createMessageContent(message) {
                       merged = guild;
                       merged = guild.getGuild(guildId);
                       if (null != merged) {
-                        merged = require;
-                        merged = dependencyMap;
+                        merged = message;
+                        merged = shouldObscureSpoiler;
                         if (obj61.isGuildOfficialMessagesEnabled(merged, "createMessageContent")) {
                           let officialMessageColor = merged.officialMessageColor;
                           if (null == officialMessageColor) {
                             officialMessageColor = closure_24;
                           }
-                          merged = closure_4;
-                          const officialMessageStyle = closure_4.officialMessageStyle;
-                          merged = require;
-                          merged = dependencyMap;
-                          merged = require(dependencyMap[69]).showGuildOfficialMessageGradient(officialMessageStyle);
+                          merged = c4;
+                          const officialMessageStyle = c4.officialMessageStyle;
+                          merged = message;
+                          merged = shouldObscureSpoiler;
+                          merged = message(shouldObscureSpoiler[69]).showGuildOfficialMessageGradient(officialMessageStyle);
                           merged = undefined;
                           if (merged) {
                             merged = closure_26;
                             merged = officialMessageColor | closure_26;
                           }
-                          merged = require;
-                          merged = dependencyMap;
-                          const obj62 = require(dependencyMap[69]);
+                          merged = message;
+                          merged = shouldObscureSpoiler;
+                          const obj62 = message(shouldObscureSpoiler[69]);
                           merged = undefined;
                           if (obj63.showGuildOfficialMessageTextColor(officialMessageStyle)) {
-                            merged = importDefault;
-                            merged = dependencyMap;
-                            const internal = importDefault(dependencyMap[70]).internal;
-                            merged = internal.resolveSemanticColor(forcedTheme, importDefault(dependencyMap[70]).colors.BACKGROUND_BASE_LOWER);
-                            merged = closure_4;
+                            merged = gifAutoPlay;
+                            merged = shouldObscureSpoiler;
+                            const internal = gifAutoPlay(shouldObscureSpoiler[70]).internal;
+                            merged = internal.resolveSemanticColor(forcedTheme, gifAutoPlay(shouldObscureSpoiler[70]).colors.BACKGROUND_BASE_LOWER);
+                            merged = c4;
                             let num61 = 1;
-                            if (closure_4.desaturateUserColors) {
-                              merged = closure_4;
-                              num61 = closure_4.saturation;
+                            if (c4.desaturateUserColors) {
+                              merged = c4;
+                              num61 = c4.saturation;
                             }
-                            merged = require;
-                            merged = dependencyMap;
-                            const obj64 = require(dependencyMap[69]);
+                            merged = message;
+                            merged = shouldObscureSpoiler;
+                            const obj64 = message(shouldObscureSpoiler[69]);
                             let num62 = 0;
                             if (merged) {
                               num62 = closure_25;
@@ -924,23 +948,23 @@ function createMessageContent(message) {
                             const accessibleGuildOfficialTextColor = obj64.getAccessibleGuildOfficialTextColor(officialMessageColor, merged, num61, num62);
                             merged = accessibleGuildOfficialTextColor.num();
                           }
-                          merged = require;
-                          merged = dependencyMap;
-                          const intl16 = require(dependencyMap[29]).intl;
-                          merged = intl16.string(require(dependencyMap[29]).t.GzDTxY);
-                          const obj63 = require(dependencyMap[69]);
+                          merged = message;
+                          merged = shouldObscureSpoiler;
+                          const intl16 = message(shouldObscureSpoiler[29]).intl;
+                          merged = intl16.string(message(shouldObscureSpoiler[29]).t.GzDTxY);
+                          obj63 = message(shouldObscureSpoiler[69]);
                         }
-                        const obj61 = require(dependencyMap[69]);
+                        obj61 = message(shouldObscureSpoiler[69]);
                       }
                     }
                   }
-                  merged = require;
-                  merged = dependencyMap;
-                  const obj59 = require(dependencyMap[34]);
+                  merged = message;
+                  merged = shouldObscureSpoiler;
+                  const obj59 = message(shouldObscureSpoiler[34]);
                   const obj27 = {};
                   ({ id: obj67.id, channel_id: obj67.channelId } = message);
                   merged = undefined;
-                  merged = require(dependencyMap[71]).createVoiceChannelBadge(message.author.id, guildId);
+                  merged = message(shouldObscureSpoiler[71]).createVoiceChannelBadge(message.author.id, guildId);
                   if (null != guildId) {
                     merged = guildId;
                   }
@@ -976,10 +1000,10 @@ function createMessageContent(message) {
                     if (message.isEdited()) {
                       str13 = "";
                       if (!renderContentOnly) {
-                        merged = require;
-                        merged = dependencyMap;
-                        const intl17 = require(dependencyMap[29]).intl;
-                        str13 = intl17.string(require(dependencyMap[29]).t.C8sXIM);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        const intl17 = message(shouldObscureSpoiler[29]).intl;
+                        str13 = intl17.string(message(shouldObscureSpoiler[29]).t.C8sXIM);
                       }
                     }
                     obj27.edited = str13;
@@ -987,10 +1011,10 @@ function createMessageContent(message) {
                     if (message.isEdited()) {
                       if (!renderContentOnly) {
                         if (null != message.editedTimestamp) {
-                          merged = require;
-                          merged = dependencyMap;
-                          merged = require(dependencyMap[65]).dateFormat(message.editedTimestamp, "LLLL");
-                          const obj68 = require(dependencyMap[65]);
+                          merged = message;
+                          merged = shouldObscureSpoiler;
+                          merged = message(shouldObscureSpoiler[65]).dateFormat(message.editedTimestamp, "LLLL");
+                          const obj68 = message(shouldObscureSpoiler[65]);
                         }
                       }
                     }
@@ -1043,7 +1067,7 @@ function createMessageContent(message) {
                     if (!tmp20) {
                       if ("username" === roleStyle) {
                         merged = undefined;
-                        merged = processColor;
+                        merged = shouldDisableInteractiveComponents;
                         if (null != colorString) {
                           merged = colorString;
                         }
@@ -1056,7 +1080,7 @@ function createMessageContent(message) {
                       merged = null;
                       if (!tmp20) {
                         merged = undefined;
-                        merged = processColor;
+                        merged = shouldDisableInteractiveComponents;
                         if (null != colorString) {
                           merged = colorString;
                         }
@@ -1068,21 +1092,21 @@ function createMessageContent(message) {
                       if (hasEnhancedRoleColors) {
                         merged = null;
                         if (!tmp20) {
-                          merged = require;
-                          merged = dependencyMap;
-                          merged = require(dependencyMap[72]).processColorStrings(messageAuthor.colorStrings);
-                          const obj69 = require(dependencyMap[72]);
+                          merged = message;
+                          merged = shouldObscureSpoiler;
+                          merged = message(shouldObscureSpoiler[72]).processColorStrings(messageAuthor.colorStrings);
+                          const obj69 = message(shouldObscureSpoiler[72]);
                         }
                       }
                       obj27.roleColors = merged;
                       obj27.shouldShowRoleDot = "dot" === roleStyle;
                       obj27.shouldShowRoleOnName = "username" === roleStyle;
-                      obj27.showLinkDecorations = closure_4.alwaysShowLinkDecorations;
+                      obj27.showLinkDecorations = c4.alwaysShowLinkDecorations;
                       if (tmp20) {
                         let defaultUsernameColor2 = tmp2.defaultUsernameColor;
                       } else {
                         merged = undefined;
-                        merged = processColor;
+                        merged = shouldDisableInteractiveComponents;
                         if (null != colorString) {
                           merged = colorString;
                         }
@@ -1099,20 +1123,20 @@ function createMessageContent(message) {
                       obj27.roleIcon = merged;
                       merged = undefined;
                       if (null != merged) {
-                        merged = require;
-                        merged = dependencyMap;
-                        merged = require(dependencyMap[73]).createConnectionsRoleTag(merged);
-                        const obj70 = require(dependencyMap[73]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        merged = message(shouldObscureSpoiler[73]).createConnectionsRoleTag(merged);
+                        const obj70 = message(shouldObscureSpoiler[73]);
                       }
                       obj27.connectionsRoleTag = merged;
                       merged = undefined;
                       obj27.timestamp = merged;
                       merged = undefined;
                       if (!tmp20) {
-                        merged = require;
-                        merged = dependencyMap;
-                        merged = require(dependencyMap[65]).dateFormat(message.timestamp, "LLLL");
-                        const obj71 = require(dependencyMap[65]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        merged = message(shouldObscureSpoiler[65]).dateFormat(message.timestamp, "LLLL");
+                        const obj71 = message(shouldObscureSpoiler[65]);
                       }
                       obj27.timestampTooltip = merged;
                       merged = undefined;
@@ -1127,21 +1151,21 @@ function createMessageContent(message) {
                       obj27.renderContentOnly = renderContentOnly;
                       merged = undefined;
                       if (undefined !== pushFeedbackType) {
-                        merged = require;
-                        merged = dependencyMap;
-                        merged = require(dependencyMap[74]).createSurveyIndication(message, forcedTheme, pushFeedbackType);
-                        const obj72 = require(dependencyMap[74]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        merged = message(shouldObscureSpoiler[74]).createSurveyIndication(message, forcedTheme, pushFeedbackType);
+                        const obj72 = message(shouldObscureSpoiler[74]);
                       }
                       obj27.surveyIndication = merged;
-                      merged = require;
-                      merged = dependencyMap;
-                      obj27.ephemeralIndication = require(dependencyMap[75]).createEphemeralIndication(message);
+                      merged = message;
+                      merged = shouldObscureSpoiler;
+                      obj27.ephemeralIndication = message(shouldObscureSpoiler[75]).createEphemeralIndication(message);
                       obj27.interactionStatus = merged;
                       merged = undefined;
                       if (renderExecutedCommands) {
-                        merged = require;
-                        merged = dependencyMap;
-                        const obj74 = require(dependencyMap[76]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        const obj74 = message(shouldObscureSpoiler[76]);
                         merged = obj74;
                         merged = message;
                         merged = channel;
@@ -1153,10 +1177,10 @@ function createMessageContent(message) {
                       merged = undefined;
                       if (message2.components.length > 0) {
                         if (renderComponents) {
-                          merged = importDefault;
-                          merged = dependencyMap;
+                          merged = gifAutoPlay;
+                          merged = shouldObscureSpoiler;
                           obj28 = { message, guildId, interaction, shouldDisableInteractiveComponents, shouldShowMedia: tmp3, shouldObscureSpoiler, enabledContentHarmTypeFlags: enabledHarmTypesForMessage, shouldAgeVerify: result1, shouldShowMosaicMediaDescriptions: setting, shouldAutoPlayGifs: gifAutoPlay, colors: tmp2 };
-                          merged = importDefault(dependencyMap[49])(obj28, message2.components);
+                          merged = gifAutoPlay(shouldObscureSpoiler[49])(obj28, message2.components);
                         }
                       }
                       obj27.components = merged;
@@ -1176,18 +1200,18 @@ function createMessageContent(message) {
                       }
                       obj27.embeds = merged;
                       if (renderGiftCode) {
-                        merged = require;
-                        merged = dependencyMap;
-                        let giftCodeEmbed = require(dependencyMap[77]).createGiftCodeEmbed(message, forcedTheme);
-                        const obj76 = require(dependencyMap[77]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        let giftCodeEmbed = message(shouldObscureSpoiler[77]).createGiftCodeEmbed(message, forcedTheme);
+                        const obj76 = message(shouldObscureSpoiler[77]);
                       } else {
                         giftCodeEmbed = [];
                       }
                       obj27.giftCodes = giftCodeEmbed;
                       if (renderCodedLinks) {
-                        merged = require;
-                        merged = dependencyMap;
-                        const obj77 = require(dependencyMap[78]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        const obj77 = message(shouldObscureSpoiler[78]);
                         merged = obj77;
                         merged = message;
                         merged = message2;
@@ -1200,18 +1224,18 @@ function createMessageContent(message) {
                       obj27.codedLinks = codedLinkEmbeds;
                       merged = undefined;
                       if (renderActivityInstanceEmbed) {
-                        merged = require;
-                        merged = dependencyMap;
-                        merged = require(dependencyMap[79]).createActivityInstanceEmbed(message);
-                        const obj78 = require(dependencyMap[79]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        merged = message(shouldObscureSpoiler[79]).createActivityInstanceEmbed(message);
+                        const obj78 = message(shouldObscureSpoiler[79]);
                       }
                       obj27.activityInstanceEmbed = merged;
                       merged = undefined;
                       if (renderActivityInviteEmbed) {
-                        merged = require;
-                        merged = dependencyMap;
-                        merged = require(dependencyMap[80]).createActivityRichPresenceInviteEmbed(message, channel);
-                        const obj79 = require(dependencyMap[80]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        merged = message(shouldObscureSpoiler[80]).createActivityRichPresenceInviteEmbed(message, channel);
+                        const obj79 = message(shouldObscureSpoiler[80]);
                       }
                       obj27.activityRichPresenceInviteEmbed = merged;
                       if (tmp7) {
@@ -1238,12 +1262,12 @@ function createMessageContent(message) {
                       if (restrictedPreview) {
                         let items4 = [];
                       } else {
-                        merged = importDefault;
-                        merged = dependencyMap;
+                        merged = gifAutoPlay;
+                        merged = shouldObscureSpoiler;
                         const obj29 = { message: message2 };
-                        merged = require;
-                        merged = importDefault(dependencyMap[81]);
-                        const AnimateStickers = require(dependencyMap[47]).AnimateStickers;
+                        merged = message;
+                        merged = gifAutoPlay(shouldObscureSpoiler[81]);
+                        const AnimateStickers = message(shouldObscureSpoiler[47]).AnimateStickers;
                         obj29.animateStickersSetting = AnimateStickers.getSetting();
                         obj29.isUserInteracting = message.id === animatingStickerMessageId;
                         items4 = merged(obj29);
@@ -1270,45 +1294,45 @@ function createMessageContent(message) {
                       }
                       obj27.postActions = merged;
                       obj27.isCurrentUserMessageAuthor = message.author.id === merged;
-                      merged = gradientPreset;
-                      obj27.usingGradientTheme = null != gradientPreset.gradientPreset;
-                      merged = require;
-                      merged = dependencyMap;
-                      const obj73 = require(dependencyMap[75]);
-                      merged = importDefault;
-                      obj27.swipeToReplyIconUrl = require(dependencyMap[30]).getAssetUriForEmbed(importDefault(dependencyMap[82]));
-                      const obj81 = require(dependencyMap[30]);
-                      obj27.swipeToEditIconUrl = require(dependencyMap[30]).getAssetUriForEmbed(importDefault(dependencyMap[83]));
+                      merged = guildId;
+                      obj27.usingGradientTheme = null != guildId.gradientPreset;
+                      merged = message;
+                      merged = shouldObscureSpoiler;
+                      const obj73 = message(shouldObscureSpoiler[75]);
+                      merged = gifAutoPlay;
+                      obj27.swipeToReplyIconUrl = message(shouldObscureSpoiler[30]).getAssetUriForEmbed(gifAutoPlay(shouldObscureSpoiler[82]));
+                      const obj81 = message(shouldObscureSpoiler[30]);
+                      obj27.swipeToEditIconUrl = message(shouldObscureSpoiler[30]).getAssetUriForEmbed(gifAutoPlay(shouldObscureSpoiler[83]));
                       if (tmp4) {
-                        merged = require;
-                        merged = dependencyMap;
-                        let postPreviewEmbeds = require(dependencyMap[84]).createPostPreviewEmbeds(message, roleStyle, useReducedMotion);
-                        const obj83 = require(dependencyMap[84]);
+                        merged = message;
+                        merged = shouldObscureSpoiler;
+                        let postPreviewEmbeds = message(shouldObscureSpoiler[84]).createPostPreviewEmbeds(message, roleStyle, useReducedMotion);
+                        const obj83 = message(shouldObscureSpoiler[84]);
                       } else {
                         postPreviewEmbeds = [];
                       }
                       obj27.postPreviewEmbeds = postPreviewEmbeds;
-                      merged = require;
-                      merged = dependencyMap;
-                      const intl18 = require(dependencyMap[29]).intl;
-                      obj27.obscureLearnMoreLabel = intl18.string(require(dependencyMap[29]).t.2aXnfa);
-                      const obj82 = require(dependencyMap[30]);
-                      obj27.safetyPolicyNoticeEmbed = require(dependencyMap[85]).createSafetyPolicyNoticeEmbed(message);
+                      merged = message;
+                      merged = shouldObscureSpoiler;
+                      const intl18 = message(shouldObscureSpoiler[29]).intl;
+                      obj27.obscureLearnMoreLabel = intl18.string(message(shouldObscureSpoiler[29]).t["2aXnfa"]);
+                      const obj82 = message(shouldObscureSpoiler[30]);
+                      obj27.safetyPolicyNoticeEmbed = message(shouldObscureSpoiler[85]).createSafetyPolicyNoticeEmbed(message);
                       obj27.pollData = merged;
                       obj27.sharedClientTheme = merged;
-                      const obj84 = require(dependencyMap[85]);
-                      obj27.safetySystemNotificationEmbed = require(dependencyMap[86]).createSafetySystemNotificationEmbed(message);
-                      const obj85 = require(dependencyMap[86]);
-                      obj27.ctaButton = require(dependencyMap[87]).createCtaButton(message.id, message.channel_id, tmp2);
+                      const obj84 = message(shouldObscureSpoiler[85]);
+                      obj27.safetySystemNotificationEmbed = message(shouldObscureSpoiler[86]).createSafetySystemNotificationEmbed(message);
+                      const obj85 = message(shouldObscureSpoiler[86]);
+                      obj27.ctaButton = message(shouldObscureSpoiler[87]).createCtaButton(message.id, message.channel_id, tmp2);
                       merged = undefined;
                       if (merged) {
                         merged = tmp2.embedBackgroundColor;
                       }
                       obj27.audioAttachmentBackgroundColor = merged;
-                      merged = require;
-                      merged = dependencyMap;
-                      const obj86 = require(dependencyMap[87]);
-                      obj27.accessibilityActions = require(dependencyMap[88]).createMessageAccessibilityActions(message, channel);
+                      merged = message;
+                      merged = shouldObscureSpoiler;
+                      const obj86 = message(shouldObscureSpoiler[87]);
+                      obj27.accessibilityActions = message(shouldObscureSpoiler[88]).createMessageAccessibilityActions(message, channel);
                       obj27.clanTagGuildId = merged;
                       obj27.clanTag = merged;
                       obj27.clanBadgeUrl = merged;
@@ -1322,73 +1346,47 @@ function createMessageContent(message) {
                       }
                       merged = constants3;
                       obj27.isAnnouncementChannel = merged === constants3.GUILD_ANNOUNCEMENT;
-                      merged = require;
-                      merged = dependencyMap;
-                      const obj87 = require(dependencyMap[88]);
-                      obj27.displayNameStyles = require(dependencyMap[89]).createDisplayNameStylesMobile(message.author, merged);
+                      merged = message;
+                      merged = shouldObscureSpoiler;
+                      const obj87 = message(shouldObscureSpoiler[88]);
+                      obj27.displayNameStyles = message(shouldObscureSpoiler[89]).createDisplayNameStylesMobile(message.author, merged);
                       obj27.voiceChannelBadge = merged;
                       return obj27;
                     }
                     defaultUsernameColor = tmp2.defaultUsernameColor;
                   }
                   nonce = message.nonce;
-                  const obj66 = require(dependencyMap[71]);
+                  const obj66 = message(shouldObscureSpoiler[71]);
                 }
-                merged = require;
-                merged = dependencyMap;
-                merged = require(dependencyMap[65]).accessibilityLabelCalendarFormat(message.timestamp);
-                const obj50 = require(dependencyMap[65]);
+                merged = message;
+                merged = shouldObscureSpoiler;
+                merged = message(shouldObscureSpoiler[65]).accessibilityLabelCalendarFormat(message.timestamp);
+                const obj50 = message(shouldObscureSpoiler[65]);
               }
-              merged = require;
-              merged = dependencyMap;
-              const obj45 = require(dependencyMap[62]);
-              merged = require(dependencyMap[65]).calendarFormat(message.timestamp, true, timestampHourCycle);
-              const obj49 = require(dependencyMap[65]);
+              merged = message;
+              merged = shouldObscureSpoiler;
+              const obj45 = message(shouldObscureSpoiler[62]);
+              merged = message(shouldObscureSpoiler[65]).calendarFormat(message.timestamp, true, timestampHourCycle);
+              const obj49 = message(shouldObscureSpoiler[65]);
             }
           }
         }
         if (null != guildMemberAvatar) {
           if (null != guildId) {
-            obj17 = importDefault(dependencyMap[54]);
+            obj17 = gifAutoPlay(shouldObscureSpoiler[54]);
             const obj30 = { userId: author.id, avatar: guildMemberAvatar, guildId };
             applicationIconSource = obj17.getGuildMemberAvatarSource(obj30, author);
           }
         }
         applicationIconSource = author.getAvatarSource(undefined);
-        const tmp57 = message.state !== constants2.SEND_FAILED || message.isCommandType();
+        tmp57 = message.state !== constants2.SEND_FAILED || message.isCommandType();
       }
-      parseMessageMarkupResult = { 357452015: "HTTP", 1585572706: "Date", -1172652393: "HTTP", content: undefined };
+      parseMessageMarkupResult = { content: undefined, hasSpoilerEmbeds: false, hasBailedAst: false };
     }
   }
 }
-const processColor = require(dependencyMap[0]).processColor;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-const ReferencedMessageState = require(dependencyMap[9]).ReferencedMessageState;
-let closure_14 = importDefault(dependencyMap[10]);
-let closure_15 = importDefault(dependencyMap[11]);
-let closure_16 = importDefault(dependencyMap[12]);
-let closure_17 = importDefault(dependencyMap[13]);
-let closure_18 = importDefault(dependencyMap[14]);
-let closure_19 = importDefault(dependencyMap[15]);
-let closure_20 = importDefault(dependencyMap[16]);
-let closure_21 = importDefault(dependencyMap[17]);
-let closure_22 = importDefault(dependencyMap[18]);
-let closure_23 = importDefault(dependencyMap[19]);
-const _module = require(dependencyMap[20]);
-({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_24, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: closure_25, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: closure_26 } = _module);
-const ReferencedMessageRowState = require(dependencyMap[21]).ReferencedMessageRowState;
-const _module1 = require(dependencyMap[22]);
-({ MessageTypes: closure_28, MessageStates: closure_29, MessageFlags: closure_30, ChannelTypes: closure_31 } = _module1);
-const GuildTagBadgeSize = require(dependencyMap[23]).GuildTagBadgeSize;
-const _module2 = require(dependencyMap[90]);
-const result = _module2.fileFinishedImporting("modules/messages/native/renderer/createMessageContent.tsx");
+({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_24, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: closure_25, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: closure_26 } = MESSAGE_GROUP_SPACING);
+({ MessageTypes: closure_28, MessageStates: closure_29, MessageFlags: closure_30, ChannelTypes: closure_31 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/createMessageContent.tsx");
 
 export default createMessageContent;

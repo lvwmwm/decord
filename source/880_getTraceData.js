@@ -1,9 +1,11 @@
 // Module ID: 880
-// Function ID: 9758
+// Function ID: 9759
 // Name: getTraceData
-// Dependencies: []
+// Dependencies: [825, 845, 802, 818, 796, 833, 812, 811, 801]
 
 // Module 880 (getTraceData)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.getTraceData = function getTraceData() {
   let propagationSpanId;
@@ -18,68 +20,68 @@ arg5.getTraceData = function getTraceData() {
     }
     let client = first.client;
     if (!client) {
-      client = arg1(arg6[0]).getClient();
-      const obj2 = arg1(arg6[0]);
+      client = require(825) /* getCurrentScope */.getClient();
+      const obj2 = require(825) /* getCurrentScope */;
     }
     if (obj3.isEnabled()) {
       if (client) {
-        const mainCarrier = arg1(arg6[2]).getMainCarrier();
-        const obj4 = arg1(arg6[2]);
-        const asyncContextStrategy = arg1(arg6[3]).getAsyncContextStrategy(mainCarrier);
+        const mainCarrier = require(802) /* getSentryCarrier */.getMainCarrier();
+        const obj4 = require(802) /* getSentryCarrier */;
+        const asyncContextStrategy = require(818) /* getAsyncContextStrategy */.getAsyncContextStrategy(mainCarrier);
         if (asyncContextStrategy.getTraceData) {
           return asyncContextStrategy.getTraceData(first);
         } else {
           let scope = first.scope;
           if (!scope) {
-            scope = arg1(arg6[0]).getCurrentScope();
-            const obj7 = arg1(arg6[0]);
+            scope = require(825) /* getCurrentScope */.getCurrentScope();
+            const obj7 = require(825) /* getCurrentScope */;
           }
           let span = first.span;
           if (!span) {
-            span = arg1(arg6[4]).getActiveSpan();
-            const obj8 = arg1(arg6[4]);
+            span = require(796) /* convertSpanLinksForEnvelope */.getActiveSpan();
+            const obj8 = require(796) /* convertSpanLinksForEnvelope */;
           }
           if (span) {
-            let spanToTraceHeaderResult = arg1(arg6[4]).spanToTraceHeader(span);
-            const obj10 = arg1(arg6[4]);
+            let spanToTraceHeaderResult = require(796) /* convertSpanLinksForEnvelope */.spanToTraceHeader(span);
+            const obj10 = require(796) /* convertSpanLinksForEnvelope */;
           } else {
             const propagationContext = scope.getPropagationContext();
             ({ traceId, sampled, propagationSpanId } = propagationContext);
-            spanToTraceHeaderResult = arg1(arg6[7]).generateSentryTraceHeader(traceId, propagationSpanId, sampled);
-            const obj9 = arg1(arg6[7]);
+            spanToTraceHeaderResult = require(811) /* extractTraceparentData */.generateSentryTraceHeader(traceId, propagationSpanId, sampled);
+            const obj9 = require(811) /* extractTraceparentData */;
           }
-          const obj11 = arg1(arg6[5]);
+          const obj11 = require(833) /* getDynamicSamplingContextFromClient */;
           if (span) {
             let dynamicSamplingContextFromSpan = obj11.getDynamicSamplingContextFromSpan(span);
           } else {
             dynamicSamplingContextFromSpan = obj11.getDynamicSamplingContextFromScope(client, scope);
           }
-          const result = arg1(arg6[6]).dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
-          const TRACEPARENT_REGEXP = arg1(arg6[7]).TRACEPARENT_REGEXP;
+          const result = require(812) /* parseBaggageHeader */.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+          const TRACEPARENT_REGEXP = require(811) /* extractTraceparentData */.TRACEPARENT_REGEXP;
           if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
-            const obj = { sentry-trace: spanToTraceHeaderResult, baggage: result };
+            const obj = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
             if (!first.propagateTraceparent) {
               return obj;
             } else {
               if (span) {
-                let result1 = arg1(arg6[4]).spanToTraceparentHeader(span);
-                const obj15 = arg1(arg6[4]);
+                let result1 = require(796) /* convertSpanLinksForEnvelope */.spanToTraceparentHeader(span);
+                const obj15 = require(796) /* convertSpanLinksForEnvelope */;
               } else {
                 const propagationContext1 = scope.getPropagationContext();
                 ({ traceId: traceId2, sampled: sampled2, propagationSpanId: propagationSpanId2 } = propagationContext1);
-                result1 = arg1(arg6[7]).generateTraceparentHeader(traceId2, propagationSpanId2, sampled2);
-                const obj14 = arg1(arg6[7]);
+                result1 = require(811) /* extractTraceparentData */.generateTraceparentHeader(traceId2, propagationSpanId2, sampled2);
+                const obj14 = require(811) /* extractTraceparentData */;
               }
               obj.traceparent = result1;
             }
           } else {
-            const debug = arg1(arg6[8]).debug;
+            const debug = require(801) /* consoleSandbox */.debug;
             debug.warn("Invalid sentry-trace data. Cannot generate trace data");
             return {};
           }
-          const obj12 = arg1(arg6[6]);
+          const obj12 = require(812) /* parseBaggageHeader */;
         }
-        const obj5 = arg1(arg6[3]);
+        const obj5 = require(818) /* getAsyncContextStrategy */;
       }
     }
     return {};

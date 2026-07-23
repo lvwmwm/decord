@@ -1,13 +1,15 @@
-// Module ID: 11190
-// Function ID: 87119
+// Module ID: 11200
+// Function ID: 87169
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: []
+// Dependencies: [31, 4122, 477, 1823, 3996, 1555, 1450, 11156, 5450, 10396, 2]
 // Exports: default
 
-// Module 11190 (useCustomKeyboardBottomSheetConfig)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/action_sheet/native/useCustomKeyboardBottomSheetConfig.tsx");
+// Module 11200 (useCustomKeyboardBottomSheetConfig)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/action_sheet/native/useCustomKeyboardBottomSheetConfig.tsx");
 
 export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   let animateOnMount;
@@ -16,28 +18,25 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   if (flag === undefined) {
     flag = false;
   }
-  const arg1 = flag;
   let flag2 = forceMaxHeight.enablePanDownToClose;
   if (flag2 === undefined) {
     flag2 = false;
   }
   let importDefault;
-  let dependencyMap;
-  let React;
-  const tmp = importDefault(dependencyMap[6])({ ignoreKeyboard: true });
+  let minimum;
+  let maximum;
+  let tmp = importDefault(minimum[6])({ ignoreKeyboard: true });
   importDefault = tmp;
-  const tmp2 = importDefault(dependencyMap[7])();
-  const minimum = tmp2.minimum;
-  dependencyMap = minimum;
-  const maximum = tmp2.maximum;
-  React = maximum;
-  const items = [flag, maximum, minimum];
-  ({ initialPosition, animateOnMount } = importDefault(dependencyMap[8])(() => {
-    let obj = { initialPosition: tmp.height - minimum, animateOnMount: false };
+  const tmp2 = importDefault(minimum[7])();
+  minimum = tmp2.minimum;
+  maximum = tmp2.maximum;
+  let items = [flag, maximum, minimum];
+  ({ initialPosition, animateOnMount } = importDefault(minimum[8])(() => {
+    let obj = { initialPosition: _undefined.height - minimum, animateOnMount: false };
     let tmp = obj;
     if (!obj2.isAndroid()) {
       tmp = obj;
-      if (!useReducedMotion.useReducedMotion) {
+      if (!outer1_4.useReducedMotion) {
         let tmp5 = obj;
         if (0 === obj3.getSystemKeyboardHeight()) {
           const keyboardTypePrevious = flag(minimum[4]).getKeyboardTypePrevious();
@@ -49,13 +48,13 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
           const obj4 = flag(minimum[4]);
         }
         tmp = tmp5;
-        const obj3 = flag(minimum[3]);
+        obj3 = flag(minimum[3]);
       }
     }
     return tmp;
   }));
-  const obj = { animateOnMount, enablePanDownToClose: flag2 };
-  const memo = React.useMemo(() => {
+  let obj = { animateOnMount, enablePanDownToClose: flag2 };
+  const memo = maximum.useMemo(() => {
     if (flag) {
       const items = [maximum, maximum];
       let items1 = items;
@@ -64,12 +63,12 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
     }
     return items1;
   }, items);
-  const tmp3 = importDefault(dependencyMap[8])(() => {
-    let obj = { initialPosition: tmp.height - minimum, animateOnMount: false };
+  const tmp3 = importDefault(minimum[8])(() => {
+    let obj = { initialPosition: _undefined.height - minimum, animateOnMount: false };
     let tmp = obj;
     if (!obj2.isAndroid()) {
       tmp = obj;
-      if (!useReducedMotion.useReducedMotion) {
+      if (!outer1_4.useReducedMotion) {
         let tmp5 = obj;
         if (0 === obj3.getSystemKeyboardHeight()) {
           const keyboardTypePrevious = flag(minimum[4]).getKeyboardTypePrevious();
@@ -81,12 +80,12 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
           const obj4 = flag(minimum[4]);
         }
         tmp = tmp5;
-        const obj3 = flag(minimum[3]);
+        obj3 = flag(minimum[3]);
       }
     }
     return tmp;
   });
-  const tmp5 = !arg1(dependencyMap[2]).isAndroid();
+  let tmp5 = !flag(minimum[2]).isAndroid();
   obj.accessible = !tmp5;
   obj.contentHeight = maximum;
   obj.containerHeight = tmp.height;
@@ -94,7 +93,7 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   obj.initialPosition = initialPosition;
   obj.keyboardBehavior = "extend";
   let str;
-  if (arg1(dependencyMap[9]).IS_SYSTEM_KEYBOARD_EXTERNAL) {
+  if (flag(minimum[9]).IS_SYSTEM_KEYBOARD_EXTERNAL) {
     str = "adjustResize";
   }
   obj.android_keyboardInputMode = str;

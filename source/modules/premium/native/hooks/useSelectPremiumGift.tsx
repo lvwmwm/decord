@@ -1,35 +1,32 @@
-// Module ID: 9675
-// Function ID: 75338
+// Module ID: 9682
+// Function ID: 75379
 // Name: useSelectPremiumGift
-// Dependencies: []
+// Dependencies: [5, 31, 1456, 8809, 9683, 3776, 5624, 4471, 1212, 9680, 2]
 // Exports: useSelectPremiumGift
 
-// Module 9675 (useSelectPremiumGift)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/native/hooks/useSelectPremiumGift.tsx");
+// Module 9682 (useSelectPremiumGift)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import result from "result";
+
+const require = arg1;
+const result = require("useNavigation").fileFinishedImporting("modules/premium/native/hooks/useSelectPremiumGift.tsx");
 
 export const useSelectPremiumGift = function useSelectPremiumGift(PremiumGiftPlanSelect) {
-  const navigation = arg1(dependencyMap[2]).useNavigation();
-  const arg1 = navigation;
-  const obj = arg1(dependencyMap[2]);
-  const nativeGiftContext = arg1(dependencyMap[3]).useNativeGiftContext();
+  navigation = navigation(recipientUserId[2]).useNavigation();
+  const obj = navigation(recipientUserId[2]);
+  const nativeGiftContext = navigation(recipientUserId[3]).useNativeGiftContext();
   const setPremiumType = nativeGiftContext.setPremiumType;
-  const importDefault = setPremiumType;
-  const recipientUserId = nativeGiftContext.recipientUserId;
-  const dependencyMap = recipientUserId;
+  recipientUserId = nativeGiftContext.recipientUserId;
   const planInterval = nativeGiftContext.planInterval;
-  let closure_3 = planInterval;
   const setOrder = nativeGiftContext.setOrder;
-  const React = setOrder;
-  const obj2 = arg1(dependencyMap[3]);
-  const createOrReuseGiftOrder = arg1(dependencyMap[4]).useCreateOrReuseGiftOrder(PremiumGiftPlanSelect);
+  const obj2 = navigation(recipientUserId[3]);
+  const createOrReuseGiftOrder = navigation(recipientUserId[4]).useCreateOrReuseGiftOrder(PremiumGiftPlanSelect);
   const items = [setPremiumType, planInterval, createOrReuseGiftOrder, recipientUserId, setOrder, navigation];
-  return React.useCallback(() => {
+  return setOrder.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = planInterval(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items);
+  })(), items);
 };

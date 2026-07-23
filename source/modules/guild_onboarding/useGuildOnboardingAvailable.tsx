@@ -1,26 +1,28 @@
-// Module ID: 5725
-// Function ID: 49215
+// Module ID: 5730
+// Function ID: 49242
 // Name: useGuildOnboardingAvailable
-// Dependencies: []
+// Dependencies: [1909, 653, 566, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 5725 (useGuildOnboardingAvailable)
-let closure_2 = importDefault(dependencyMap[0]);
-const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");
+// Module 5730 (useGuildOnboardingAvailable)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GuildFeatures } from "ME";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");
 
 export default function useGuildOnboardingAvailable(features) {
-  const arg1 = features;
-  const items = [closure_2];
-  let stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => {
+  const _require = features;
+  const items = [_isNativeReflectConstruct];
+  let stateFromStores = _require(566).useStateFromStores(items, () => {
     let id;
-    if (null != arg0) {
-      id = arg0.id;
+    if (null != user) {
+      id = user.id;
     }
     if (null == id) {
       return false;
     } else {
-      return closure_2.isFullServerPreview(arg0.id) && closure_2.isOnboardingEnabled(arg0.id);
+      return outer1_2.isFullServerPreview(user.id) && outer1_2.isOnboardingEnabled(user.id);
     }
   });
   if (!stateFromStores) {
@@ -37,7 +39,7 @@ export const isGuildOnboardingAvailable = function isGuildOnboardingAvailable(gu
   if (null == guild) {
     return false;
   } else {
-    let hasItem = closure_2.isFullServerPreview(guild.id) && closure_2.isOnboardingEnabled(guild.id);
+    let hasItem = _isNativeReflectConstruct.isFullServerPreview(guild.id) && _isNativeReflectConstruct.isOnboardingEnabled(guild.id);
     if (!hasItem) {
       const features = guild.features;
       hasItem = features.has(GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS);

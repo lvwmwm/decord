@@ -1,8 +1,10 @@
 // Module ID: 398
 // Function ID: 5771
-// Dependencies: []
+// Dependencies: [31, 380, 399]
 
 // Module 398
-importAll(dependencyMap[0]);
+import "result";
+import unstable_createAnimatedComponentWithAllowlist from "unstable_createAnimatedComponentWithAllowlist";
 
-export default importDefault(dependencyMap[1])(importDefault(dependencyMap[2]));
+
+export default unstable_createAnimatedComponentWithAllowlist(require("_isNativeReflectConstruct"));

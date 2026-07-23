@@ -1,12 +1,11 @@
-// Module ID: 4445
-// Function ID: 38924
+// Module ID: 4449
+// Function ID: 38956
 // Name: getChromeVersion
-// Dependencies: [5, 664]
+// Dependencies: [4450, 2]
 // Exports: canUseWebp, isFirefox, supportsHEVCAlpha
 
-// Module 4445 (getChromeVersion)
-import { name } from "asyncGeneratorStep";
-import module_664 from "module_664";
+// Module 4449 (getChromeVersion)
+import { name } from "capitalize";
 
 function getChromeVersion() {
   return num2;
@@ -47,7 +46,7 @@ const str2 = str.toLowerCase();
 let num = -1;
 let num2 = -1;
 if ("chrome" === str2.toLowerCase()) {
-  const version = require("asyncGeneratorStep").version;
+  const version = require("capitalize").version;
   let str3 = "";
   if (null != version) {
     str3 = version;
@@ -56,7 +55,7 @@ if ("chrome" === str2.toLowerCase()) {
 }
 let parsed = num;
 if ("electron" === str2.toLowerCase()) {
-  const version2 = require("asyncGeneratorStep").version;
+  const version2 = require("capitalize").version;
   let str4 = "";
   if (null != version2) {
     str4 = version2;
@@ -65,7 +64,7 @@ if ("electron" === str2.toLowerCase()) {
 }
 let parsed1 = num;
 if ("firefox" === str2.toLowerCase()) {
-  const version3 = require("asyncGeneratorStep").version;
+  const version3 = require("capitalize").version;
   let str5 = "";
   if (null != version3) {
     str5 = version3;
@@ -74,7 +73,7 @@ if ("firefox" === str2.toLowerCase()) {
 }
 let parsed2 = num;
 if ("edge" === str2.toLowerCase()) {
-  const version4 = require("asyncGeneratorStep").version;
+  const version4 = require("capitalize").version;
   let str6 = "";
   if (null != version4) {
     str6 = version4;
@@ -82,14 +81,14 @@ if ("edge" === str2.toLowerCase()) {
   parsed2 = parseInt(str6, 10);
 }
 if ("safari" === str2.toLowerCase()) {
-  const version5 = require("asyncGeneratorStep").version;
+  const version5 = require("capitalize").version;
   let str7 = "";
   if (null != version5) {
     str7 = version5;
   }
   num = parseInt(str7, 10);
 }
-const result = module_664.fileFinishedImporting("utils/BrowserUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/BrowserUtils.tsx");
 
 export { getChromeVersion };
 export { getElectronVersion };

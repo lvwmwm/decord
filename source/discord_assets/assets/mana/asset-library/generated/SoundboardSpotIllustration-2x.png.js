@@ -1,11 +1,10 @@
-// Module ID: 6524
-// Function ID: 50719
+// Module ID: 6529
+// Function ID: 50748
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6524 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SoundboardSpotIllustration-2x.png.js");
+// Module 6529 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SoundboardSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/229c4dd0953e4f6771055112cd3b4190d56e2cbdbfa0f83b062f548236d951e4.png";
 export const metadata = { fileBytes: 109279 };

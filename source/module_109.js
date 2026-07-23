@@ -1,13 +1,16 @@
 // Module ID: 109
 // Function ID: 1603
-// Dependencies: []
+// Dependencies: [110, 38, 84, 79, 83, 82, 73]
 
 // Module 109
+import weakSet from "weakSet";
+import weakSet from "weakSet";
+import importAllResult from "javaScriptFlagGetter";
+import importAllResult1 from "javaScriptFlagGetter";
+
 let obj = { topAccessibilityAction: { registrationName: "onAccessibilityAction" } };
-const _module = require(dependencyMap[0]);
-obj.onGestureHandlerEvent = _module.DynamicallyInjectedByGestureHandler({ registrationName: "onGestureHandlerEvent" });
-const _module1 = require(dependencyMap[0]);
-obj.onGestureHandlerStateChange = _module1.DynamicallyInjectedByGestureHandler({ registrationName: "onGestureHandlerStateChange" });
+obj.onGestureHandlerEvent = weakSet.DynamicallyInjectedByGestureHandler({ registrationName: "onGestureHandlerEvent" });
+obj.onGestureHandlerStateChange = weakSet.DynamicallyInjectedByGestureHandler({ registrationName: "onGestureHandlerStateChange" });
 obj.topContentSizeChange = { registrationName: "onContentSizeChange" };
 obj.topScrollBeginDrag = { registrationName: "onScrollBeginDrag" };
 obj.topMessage = { registrationName: "onMessage" };
@@ -20,23 +23,22 @@ obj.topMomentumScrollBegin = { registrationName: "onMomentumScrollBegin" };
 obj.topScrollEndDrag = { registrationName: "onScrollEndDrag" };
 obj.topScroll = { registrationName: "onScroll" };
 obj.topLayout = { registrationName: "onLayout" };
-obj = { -9223372036854775808: null, 0: null, 0: null };
-obj = { process: require(dependencyMap[1]).default };
+obj = { backgroundColor: null, transform: true, transformOrigin: true };
+obj = { process: require("processColor").default };
 obj.backgroundColor = obj;
-obj.experimental_backgroundImage = { process: require(dependencyMap[2]).default };
-const obj1 = { process: require(dependencyMap[2]).default };
-const tmp2 = !importAll(dependencyMap[3]).enableNativeCSSParsing();
+obj.experimental_backgroundImage = { process: require("processColorStops").default };
+const obj1 = { process: require("processColorStops").default };
+const tmp2 = !require("javaScriptFlagGetter").enableNativeCSSParsing();
 let tmp3 = !tmp2;
 if (tmp2) {
-  const obj2 = { process: require(dependencyMap[4]).default };
+  const obj2 = { process: require("parseLength").default };
   tmp3 = obj2;
 }
 obj.boxShadow = tmp3;
-const importAllResult = importAll(dependencyMap[3]);
-const tmp4 = !importAll(dependencyMap[3]).enableNativeCSSParsing();
+const tmp4 = !require("javaScriptFlagGetter").enableNativeCSSParsing();
 let tmp5 = !tmp4;
 if (tmp4) {
-  const obj3 = { process: require(dependencyMap[5]).default };
+  const obj3 = { process: require("_getFilterAmount").default };
   tmp5 = obj3;
 }
 obj.filter = tmp5;
@@ -44,8 +46,7 @@ obj.mixBlendMode = true;
 obj.isolation = true;
 obj.opacity = true;
 obj.elevation = true;
-const importAllResult1 = importAll(dependencyMap[3]);
-obj.shadowColor = { process: require(dependencyMap[1]).default };
+obj.shadowColor = { process: require("processColor").default };
 obj.zIndex = true;
 obj.renderToHardwareTextureAndroid = true;
 obj.testID = true;
@@ -131,8 +132,8 @@ obj.borderTopWidth = true;
 obj.borderBottomWidth = true;
 obj.borderLeftWidth = true;
 obj.borderRightWidth = true;
-const obj4 = { process: require(dependencyMap[1]).default };
-obj.outlineColor = { process: require(dependencyMap[1]).default };
+const obj4 = { process: require("processColor").default };
+obj.outlineColor = { process: require("processColor").default };
 obj.outlineOffset = true;
 obj.outlineStyle = true;
 obj.outlineWidth = true;
@@ -150,7 +151,7 @@ obj.insetInline = true;
 obj.insetInlineEnd = true;
 obj.insetInlineStart = true;
 obj.position = true;
-obj.style = importDefault(dependencyMap[6]);
+obj.style = require("module_73");
 obj.removeClippedSubviews = true;
 obj.accessible = true;
 obj.hasTVPreferredFocus = true;
@@ -178,28 +179,28 @@ obj.pointerEvents = true;
 obj.nativeBackgroundAndroid = true;
 obj.nativeForegroundAndroid = true;
 obj.needsOffscreenAlphaCompositing = true;
-const obj5 = { process: require(dependencyMap[1]).default };
-obj.borderColor = { process: require(dependencyMap[1]).default };
-const obj6 = { process: require(dependencyMap[1]).default };
-obj.borderLeftColor = { process: require(dependencyMap[1]).default };
-const obj7 = { process: require(dependencyMap[1]).default };
-obj.borderRightColor = { process: require(dependencyMap[1]).default };
-const obj8 = { process: require(dependencyMap[1]).default };
-obj.borderTopColor = { process: require(dependencyMap[1]).default };
-const obj9 = { process: require(dependencyMap[1]).default };
-obj.borderBottomColor = { process: require(dependencyMap[1]).default };
-const obj10 = { process: require(dependencyMap[1]).default };
-obj.borderStartColor = { process: require(dependencyMap[1]).default };
-const obj11 = { process: require(dependencyMap[1]).default };
-obj.borderEndColor = { process: require(dependencyMap[1]).default };
-const obj12 = { process: require(dependencyMap[1]).default };
-obj.borderBlockColor = { process: require(dependencyMap[1]).default };
-const obj13 = { process: require(dependencyMap[1]).default };
-obj.borderBlockEndColor = { process: require(dependencyMap[1]).default };
-const obj14 = { process: require(dependencyMap[1]).default };
-obj.borderBlockStartColor = { process: require(dependencyMap[1]).default };
+const obj5 = { process: require("processColor").default };
+obj.borderColor = { process: require("processColor").default };
+const obj6 = { process: require("processColor").default };
+obj.borderLeftColor = { process: require("processColor").default };
+const obj7 = { process: require("processColor").default };
+obj.borderRightColor = { process: require("processColor").default };
+const obj8 = { process: require("processColor").default };
+obj.borderTopColor = { process: require("processColor").default };
+const obj9 = { process: require("processColor").default };
+obj.borderBottomColor = { process: require("processColor").default };
+const obj10 = { process: require("processColor").default };
+obj.borderStartColor = { process: require("processColor").default };
+const obj11 = { process: require("processColor").default };
+obj.borderEndColor = { process: require("processColor").default };
+const obj12 = { process: require("processColor").default };
+obj.borderBlockColor = { process: require("processColor").default };
+const obj13 = { process: require("processColor").default };
+obj.borderBlockEndColor = { process: require("processColor").default };
+const obj14 = { process: require("processColor").default };
+obj.borderBlockStartColor = { process: require("processColor").default };
 obj.focusable = true;
 obj.backfaceVisibility = true;
-const obj15 = { process: require(dependencyMap[1]).default };
+const obj15 = { process: require("processColor").default };
 
-export default { directEventTypes: obj, bubblingEventTypes: { topChange: { phasedRegistrationNames: {} }, topSelect: { phasedRegistrationNames: { onPress: "mode", start: "Map" } }, topTouchEnd: { phasedRegistrationNames: { onPress: 0, start: null } }, topTouchCancel: { phasedRegistrationNames: { onPress: true, start: true } }, topTouchStart: { phasedRegistrationNames: { onPress: null, start: null } }, topTouchMove: { phasedRegistrationNames: {} }, topPointerCancel: { phasedRegistrationNames: { onPress: true, start: true } }, topPointerDown: { phasedRegistrationNames: { onPress: null, start: null } }, topPointerEnter: { phasedRegistrationNames: { "Null": "messagePreviewBarV2", "Null": "MemberSafetyPagePermissions", "Null": "a" } }, topPointerLeave: { phasedRegistrationNames: {} }, topPointerMove: { phasedRegistrationNames: { onPress: "last_dismissed_at_ms", start: "scalar" } }, topPointerUp: { phasedRegistrationNames: { onPress: "scalar", start: 4 } }, topPointerOut: { phasedRegistrationNames: { onPress: false, start: false } }, topPointerOver: { phasedRegistrationNames: { onPress: null, start: null } }, topClick: { phasedRegistrationNames: { onPress: false, start: null } }, topBlur: { phasedRegistrationNames: { onPress: 0, start: 35848481 } }, topFocus: { phasedRegistrationNames: { onPress: false, start: false } } }, validAttributes: Object.assign({}, obj, {}) };
+export default { directEventTypes: obj, bubblingEventTypes: { topChange: { phasedRegistrationNames: { captured: "onChangeCapture", bubbled: "onChange" } }, topSelect: { phasedRegistrationNames: { captured: "onSelectCapture", bubbled: "onSelect" } }, topTouchEnd: { phasedRegistrationNames: { captured: "onTouchEndCapture", bubbled: "onTouchEnd" } }, topTouchCancel: { phasedRegistrationNames: { captured: "onTouchCancelCapture", bubbled: "onTouchCancel" } }, topTouchStart: { phasedRegistrationNames: { captured: "onTouchStartCapture", bubbled: "onTouchStart" } }, topTouchMove: { phasedRegistrationNames: { captured: "onTouchMoveCapture", bubbled: "onTouchMove" } }, topPointerCancel: { phasedRegistrationNames: { captured: "onPointerCancelCapture", bubbled: "onPointerCancel" } }, topPointerDown: { phasedRegistrationNames: { captured: "onPointerDownCapture", bubbled: "onPointerDown" } }, topPointerEnter: { phasedRegistrationNames: { captured: "onPointerEnterCapture", bubbled: "onPointerEnter", skipBubbling: true } }, topPointerLeave: { phasedRegistrationNames: { captured: "onPointerLeaveCapture", bubbled: "onPointerLeave", skipBubbling: true } }, topPointerMove: { phasedRegistrationNames: { captured: "onPointerMoveCapture", bubbled: "onPointerMove" } }, topPointerUp: { phasedRegistrationNames: { captured: "onPointerUpCapture", bubbled: "onPointerUp" } }, topPointerOut: { phasedRegistrationNames: { captured: "onPointerOutCapture", bubbled: "onPointerOut" } }, topPointerOver: { phasedRegistrationNames: { captured: "onPointerOverCapture", bubbled: "onPointerOver" } }, topClick: { phasedRegistrationNames: { captured: "onClickCapture", bubbled: "onClick" } }, topBlur: { phasedRegistrationNames: { captured: "onBlurCapture", bubbled: "onBlur" } }, topFocus: { phasedRegistrationNames: { captured: "onFocusCapture", bubbled: "onFocus" } } }, validAttributes: Object.assign({}, obj, { onLayout: true, onMoveShouldSetResponder: true, onMoveShouldSetResponderCapture: true, onStartShouldSetResponder: true, onStartShouldSetResponderCapture: true, onResponderGrant: true, onResponderReject: true, onResponderStart: true, onResponderEnd: true, onResponderRelease: true, onResponderMove: true, onResponderTerminate: true, onResponderTerminationRequest: true, onShouldBlockNativeResponder: true, onTouchStart: true, onTouchMove: true, onTouchEnd: true, onTouchCancel: true, onClick: true, onClickCapture: true, onPointerEnter: true, onPointerEnterCapture: true, onPointerLeave: true, onPointerLeaveCapture: true, onPointerMove: true, onPointerMoveCapture: true, onPointerOut: true, onPointerOutCapture: true, onPointerOver: true, onPointerOverCapture: true, preventClipping: true }) };

@@ -1,51 +1,63 @@
-// Module ID: 14922
-// Function ID: 112378
+// Module ID: 15038
+// Function ID: 114546
 // Name: HubSidebarProgressOverview
-// Dependencies: []
+// Dependencies: [31, 5714, 33, 11698, 1212, 11507, 12982, 4098, 11702, 1934, 2]
 // Exports: default
 
-// Module 14922 (HubSidebarProgressOverview)
-importAll(dependencyMap[0]);
-({ HUB_PROGRESS_ACTION_SHEET_ID: closure_3, HUB_PROGRESS_NUM_TOTAL_STEPS: closure_4 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/hub/native/components/progress_bar/HubSideBarProgressOverview.tsx");
+// Module 15038 (HubSidebarProgressOverview)
+import "result";
+import items from "items";
+import { jsx } from "jsxProd";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ HUB_PROGRESS_ACTION_SHEET_ID: closure_3, HUB_PROGRESS_NUM_TOTAL_STEPS: closure_4 } = items);
+const result = require("jsxProd").fileFinishedImporting("modules/hub/native/components/progress_bar/HubSideBarProgressOverview.tsx");
 
 export default function HubSidebarProgressOverview(guild) {
   guild = guild.guild;
-  const arg1 = guild;
-  let obj = arg1(dependencyMap[3]);
+  let obj = guild(11698);
   const hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
-  const nextHubProgressStep = arg1(dependencyMap[3]).getNextHubProgressStep(hubProgressBarCompletedSteps);
+  const nextHubProgressStep = guild(11698).getNextHubProgressStep(hubProgressBarCompletedSteps);
   if (null == nextHubProgressStep) {
     return null;
   } else {
     const size = hubProgressBarCompletedSteps.size;
-    const hubProgressTitleForStep = arg1(dependencyMap[3]).getHubProgressTitleForStep(nextHubProgressStep);
+    const hubProgressTitleForStep = guild(11698).getHubProgressTitleForStep(nextHubProgressStep);
     if (size < closure_4) {
-      const intl2 = arg1(dependencyMap[4]).intl;
+      const intl2 = guild(1212).intl;
       obj = {};
       const _HermesInternal = HermesInternal;
       obj.number = "" + size;
       obj.total = closure_4;
-      let formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[4]).t.9j7xDu, obj);
+      let formatToPlainStringResult = intl2.formatToPlainString(guild(1212).t["9j7xDu"], obj);
     } else {
-      const intl = arg1(dependencyMap[4]).intl;
-      formatToPlainStringResult = intl.string(arg1(dependencyMap[4]).t.+Gyklt);
+      const intl = guild(1212).intl;
+      formatToPlainStringResult = intl.string(guild(1212).t["+Gyklt"]);
     }
     const _Math = Math;
-    const bound = Math.max(arg1(dependencyMap[5]).MIN_PROGRESS_PERCENT, 100 * size / closure_4);
+    const bound = Math.max(guild(11507).MIN_PROGRESS_PERCENT, 100 * size / closure_4);
     obj = {
       onPress() {
-          let obj = callback(paths[7]);
+          let obj = outer1_1(outer1_2[7]);
           obj = { guild, analyticsSource: "Channels Sidebar" };
-          obj.openLazy(guild(paths[9])(paths[8], paths.paths), closure_3, obj);
+          obj.openLazy(guild(outer1_2[9])(outer1_2[8], outer1_2.paths), outer1_3, obj);
         },
       title: hubProgressTitleForStep,
       subtitle: formatToPlainStringResult,
       percentComplete: bound
     };
-    return jsx(arg1(dependencyMap[6]).GuildProgressOverviewView, obj);
+    return jsx(guild(12982).GuildProgressOverviewView, {
+      onPress() {
+          let obj = outer1_1(outer1_2[7]);
+          obj = { guild, analyticsSource: "Channels Sidebar" };
+          obj.openLazy(guild(outer1_2[9])(outer1_2[8], outer1_2.paths), outer1_3, obj);
+        },
+      title: hubProgressTitleForStep,
+      subtitle: formatToPlainStringResult,
+      percentComplete: bound
+    });
   }
-  const obj2 = arg1(dependencyMap[3]);
+  const obj2 = guild(11698);
 };

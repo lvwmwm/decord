@@ -1,14 +1,14 @@
 // Module ID: 898
-// Function ID: 9868
+// Function ID: 9869
 // Name: _extractErrorData
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [77, 863, 804, 841, 799, 809, 800, 801]
 
 // Module 898 (_extractErrorData)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+import _defineProperty from "_defineProperty";
+import setupIntegration from "setupIntegration";
 
 function _extractErrorData(cause, arg1, arg2) {
-  const items = [null, null, null, null, null, null, null, null, null];
+  const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
   const obj = {};
   const keys = Object.keys(cause);
   const iter = keys[Symbol.iterator]();
@@ -17,7 +17,7 @@ function _extractErrorData(cause, arg1, arg2) {
     let tmp31 = nextResult;
     let tmp32 = items;
     if (-1 !== items.indexOf(nextResult)) {
-      // continue
+      continue;
     } else {
       let tmp33 = cause;
       let tmp34 = nextResult;
@@ -26,7 +26,7 @@ function _extractErrorData(cause, arg1, arg2) {
       let tmp37 = obj;
       let tmp38 = require;
       let tmp39 = dependencyMap;
-      let obj4 = require(dependencyMap[2]);
+      let obj4 = require(804) /* isBuiltin */;
       if (!obj4.isError(tmp35)) {
         let tmp3 = tmp35;
         if ("string" !== typeof tmp36) {
@@ -38,7 +38,7 @@ function _extractErrorData(cause, arg1, arg2) {
       if (arg2) {
         let tmp8 = require;
         let tmp9 = dependencyMap;
-        let obj2 = require(dependencyMap[5]);
+        let obj2 = require(809) /* isMatchingPattern */;
         let tmp10 = tmp35;
         let _HermesInternal2 = HermesInternal;
         let tmp11 = arg2;
@@ -59,11 +59,11 @@ function _extractErrorData(cause, arg1, arg2) {
         if (!name) {
           name2 = cause.cause.constructor.name;
         }
-        obj.cause = __exportStarResult1({}, name2, _extractErrorData(cause.cause, false, arg2));
+        obj.cause = _defineProperty({}, name2, _extractErrorData(cause.cause, false, arg2));
       } else {
         obj.cause = cause.cause;
       }
-      const obj5 = require(dependencyMap[2]);
+      obj5 = require(804) /* isBuiltin */;
     }
   }
   if ("function" === typeof cause.toJSON) {
@@ -75,14 +75,15 @@ function _extractErrorData(cause, arg1, arg2) {
       let tmp25 = tmp45[item10073];
       let str = tmp25;
       let tmp26 = obj;
-      let tmp27 = closure_0;
-      let tmp28 = closure_1;
-      let obj3 = closure_0(closure_1[2]);
+      let tmp27 = require;
+      let tmp28 = dependencyMap;
+      let obj3 = require(804) /* isBuiltin */;
       let tmp29 = tmp25;
       if (obj3.isError(tmp25)) {
         str = str.toString();
       }
       obj[item10073] = str;
+      continue;
     }
     const tmp45 = toJSONResult;
   }
@@ -90,7 +91,7 @@ function _extractErrorData(cause, arg1, arg2) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const extraErrorDataIntegration = __exportStarResult1.defineIntegration(function _extraErrorDataIntegration() {
+export const extraErrorDataIntegration = setupIntegration.defineIntegration(function _extraErrorDataIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       let first = arguments[0];
@@ -100,13 +101,12 @@ export const extraErrorDataIntegration = __exportStarResult1.defineIntegration(f
     if (undefined !== depth) {
       num = depth;
     }
-    const require = num;
     const captureErrorCause = first.captureErrorCause;
     let closure_1 = undefined === captureErrorCause || captureErrorCause;
-    const obj = {
+    let obj = {
       name: "ExtraErrorData",
       processEvent(contexts, arg1, getOptions) {
-          return function _enhanceEventWithErrorData(contexts, arg1, arg2, closure_1, maxValueLength) {
+          return (function _enhanceEventWithErrorData(contexts, arg1, arg2, closure_1, maxValueLength) {
             if (arguments.length > 1) {
               if (undefined !== arguments[1]) {
                 let obj = arguments[1];
@@ -122,16 +122,16 @@ export const extraErrorDataIntegration = __exportStarResult1.defineIntegration(f
               }
               if (obj.originalException) {
                 if (obj2.isError(obj.originalException)) {
-                  const tmp8 = callback2(obj.originalException, tmp2, tmp3);
+                  const tmp8 = outer2_3(obj.originalException, tmp2, tmp3);
                   if (tmp8) {
                     const _Object = Object;
                     const merged = Object.assign({}, contexts.contexts);
-                    const normalizeResult = callback(closure_1[3]).normalize(tmp8, tmp);
-                    const obj3 = callback(closure_1[3]);
+                    const normalizeResult = num(841).normalize(tmp8, tmp);
+                    const obj3 = num(841);
                     if (obj4.isPlainObject(normalizeResult)) {
-                      const result = callback(closure_1[4]).addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
+                      const result = num(799).addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
                       merged[tmp6] = normalizeResult;
-                      const obj5 = callback(closure_1[4]);
+                      const obj5 = num(799);
                     }
                     const _Object2 = Object;
                     obj = { contexts: merged };
@@ -139,14 +139,14 @@ export const extraErrorDataIntegration = __exportStarResult1.defineIntegration(f
                   } else {
                     return contexts;
                   }
-                  const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
+                  tmp6 = obj.originalException.name || obj.originalException.constructor.name;
                 }
-                const obj2 = callback(closure_1[2]);
+                obj2 = num(804);
               }
               return contexts;
             }
             obj = {};
-          }(contexts, arg1, num, closure_1, getOptions.getOptions().maxValueLength);
+          })(contexts, arg1, num, closure_1, getOptions.getOptions().maxValueLength);
         }
     };
     return obj;

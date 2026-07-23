@@ -1,14 +1,16 @@
-// Module ID: 15451
-// Function ID: 117884
+// Module ID: 15568
+// Function ID: 120058
 // Name: useMessageRequestsCount
-// Dependencies: []
+// Dependencies: [5604, 566, 2]
 // Exports: useMessageRequestsCount
 
-// Module 15451 (useMessageRequestsCount)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/message_request/hooks/useMessageRequestsCount.tsx");
+// Module 15568 (useMessageRequestsCount)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/message_request/hooks/useMessageRequestsCount.tsx");
 
 export const useMessageRequestsCount = function useMessageRequestsCount() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => messageRequestsCount.getMessageRequestsCount());
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getMessageRequestsCount());
 };

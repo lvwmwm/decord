@@ -1,9 +1,19 @@
 // Module ID: 332
 // Function ID: 4926
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 5, 6, 7, 15, 17, 18, 31, 33, 333, 334, 112, 253]
 
 // Module 332 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import result from "result";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import closure_8 from "_getPrototypeOf";
+import closure_9 from "_inherits";
+import { createRef } from "result";
+import { jsx } from "jsxProd";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,36 +23,27 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = [true, true, true, true, true, true, true];
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const createRef = arg1(dependencyMap[7]).createRef;
-const jsx = arg1(dependencyMap[8]).jsx;
+let closure_2 = ["behavior", "children", "contentContainerStyle", "enabled", "keyboardVerticalOffset", "style", "onLayout"];
 
-export default (Component) => {
+export default ((Component) => {
   class KeyboardAvoidingView {
     constructor(arg0) {
       self = this;
-      tmp = closure_5(this, KeyboardAvoidingView);
+      tmp = outer1_5(this, KeyboardAvoidingView);
       items = [];
       items[0] = Component;
-      obj = closure_8(KeyboardAvoidingView);
-      tmp2 = closure_7;
-      if (closure_12()) {
+      obj = outer1_8(KeyboardAvoidingView);
+      tmp2 = outer1_7;
+      if (outer1_12()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_8;
-        constructResult = Reflect.construct(obj, items, closure_8(self).constructor);
+        tmp5 = outer1_8;
+        constructResult = Reflect.construct(obj, items, outer1_8(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      f4941 = tmp2Result;
+      apply = tmp2Result;
       tmp2Result._frame = null;
       tmp2Result._keyboardEvent = null;
       tmp2Result._subscriptions = [];
@@ -56,8 +57,8 @@ export default (Component) => {
         tmp2Result._keyboardEvent = null;
         const result = tmp2Result._updateBottomIfNecessary();
       };
-      tmp2Result._onLayout = () => {
-        let closure_0 = callback(async (arg0) => {
+      tmp2Result._onLayout = (() => {
+        let closure_0 = outer2_4(async (arg0) => {
           arg0.persist();
           const _frame = closure_0._frame;
           closure_0._frame = arg0.nativeEvent.layout;
@@ -80,7 +81,7 @@ export default (Component) => {
         return function(arg0) {
           return callback(...arguments);
         };
-      }();
+      })();
       tmp2Result._setBottom = (_bottom) => {
         const enabled = tmp2Result.props.enabled;
         tmp2Result._bottom = _bottom;
@@ -89,18 +90,18 @@ export default (Component) => {
           tmp2Result.setState(obj);
         }
       };
-      tmp2Result._updateBottomIfNecessary = closure_4(async () => {
+      tmp2Result._updateBottomIfNecessary = outer1_4(async () => {
         let duration;
         let easing;
-        if (null != lib._keyboardEvent) {
-          const _keyboardEvent = lib._keyboardEvent;
+        if (null != outer1_0._keyboardEvent) {
+          const _keyboardEvent = outer1_0._keyboardEvent;
           ({ duration, easing } = _keyboardEvent);
-          const tmp4 = yield closure_0._relativeKeyboardHeight(_keyboardEvent.endCoordinates);
-          if (lib._bottom !== tmp4) {
-            lib._setBottom(tmp4);
-            const enabled = lib.props.enabled;
+          const tmp4 = yield outer1_0._relativeKeyboardHeight(_keyboardEvent.endCoordinates);
+          if (outer1_0._bottom !== tmp4) {
+            outer1_0._setBottom(tmp4);
+            const enabled = outer1_0.props.enabled;
             if (tmp6) {
-              let obj = lib(closure_1[9]);
+              let obj = callback(KeyboardAvoidingView[9]);
               obj = {};
               let num3 = 10;
               let num4 = 10;
@@ -113,23 +114,22 @@ export default (Component) => {
                 num3 = duration;
               }
               obj.duration = num3;
-              obj.type = lib(closure_1[9]).Types[easing] || "keyboard";
+              obj.type = callback(KeyboardAvoidingView[9]).Types[easing] || "keyboard";
               obj.update = obj;
               obj.configureNext(obj);
-              const tmp11 = lib(closure_1[9]).Types[easing] || "keyboard";
+              const tmp11 = callback(KeyboardAvoidingView[9]).Types[easing] || "keyboard";
             }
-            const tmp6 = (null == enabled || enabled) && duration && easing;
+            tmp6 = (null == enabled || enabled) && duration && easing;
           }
         } else {
-          lib._setBottom(0);
+          outer1_0._setBottom(0);
         }
       });
       tmp2Result.state = { bottom: 0 };
-      tmp2Result.viewRef = closure_10();
+      tmp2Result.viewRef = outer1_10();
       return tmp2Result;
     }
   }
-  const dependencyMap = KeyboardAvoidingView;
   callback3(KeyboardAvoidingView, Component);
   let obj = { key: "_relativeKeyboardHeight" };
   let closure_0 = callback(async function(arg0) {
@@ -162,7 +162,7 @@ export default (Component) => {
   obj.value = function _relativeKeyboardHeight(endCoordinates) {
     return callback(...arguments);
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "componentDidUpdate",
     value: function componentDidUpdate(arg0, bottom) {
@@ -187,7 +187,7 @@ export default (Component) => {
         self._keyboardEvent = null;
         self._setBottom(0);
       }
-      const obj = callback(KeyboardAvoidingView[10]);
+      obj = callback(KeyboardAvoidingView[10]);
       const items = [callback(KeyboardAvoidingView[10]).addListener("keyboardDidHide", self._onKeyboardChange), ];
       const obj2 = callback(KeyboardAvoidingView[10]);
       items[1] = callback(KeyboardAvoidingView[10]).addListener("keyboardDidShow", self._onKeyboardChange);
@@ -221,7 +221,7 @@ export default (Component) => {
         tmp = enabled;
       }
       ({ keyboardVerticalOffset, style, onLayout } = props);
-      const tmp2 = callback2(props, closure_2);
+      const tmp2 = outer1_3(props, outer1_2);
       let num = 0;
       if (true === tmp) {
         num = self.state.bottom;
@@ -234,12 +234,12 @@ export default (Component) => {
         }
         const _Object4 = Object;
         obj = { ref: self.viewRef };
-        const tmp20 = null != self._frame && self.state.bottom > 0;
+        tmp20 = null != self._frame && self.state.bottom > 0;
         const tmp25 = callback(KeyboardAvoidingView[11]);
         obj.style = callback(KeyboardAvoidingView[12]).compose(style, tmp21);
         obj.onLayout = self._onLayout;
         const obj1 = { children };
-        return callback7(tmp25, Object.assign(obj, tmp2, obj1));
+        return outer1_11(tmp25, Object.assign(obj, tmp2, obj1));
       } else if ("position" === behavior) {
         const _Object3 = Object;
         const obj2 = { ref: self.viewRef, style, onLayout: self._onLayout };
@@ -250,8 +250,8 @@ export default (Component) => {
         const obj5 = { bottom: num };
         obj4.style = obj9.compose(props.contentContainerStyle, obj5);
         obj4.children = children;
-        obj3.children = callback7(callback(KeyboardAvoidingView[11]), obj4);
-        return callback7(tmp16, Object.assign(obj2, tmp2, obj3));
+        obj3.children = outer1_11(callback(KeyboardAvoidingView[11]), obj4);
+        return outer1_11(tmp16, Object.assign(obj2, tmp2, obj3));
       } else if ("padding" === behavior) {
         const _Object2 = Object;
         const obj6 = { ref: self.viewRef };
@@ -260,16 +260,16 @@ export default (Component) => {
         obj6.style = obj3.compose(style, obj7);
         obj6.onLayout = self._onLayout;
         const obj8 = { children };
-        return callback7(callback(KeyboardAvoidingView[11]), Object.assign(obj6, tmp2, obj8));
+        return outer1_11(callback(KeyboardAvoidingView[11]), Object.assign(obj6, tmp2, obj8));
       } else {
         const _Object = Object;
         obj = {};
         ({ viewRef: obj.ref, _onLayout: obj.onLayout } = self);
         obj.style = style;
         obj9 = { children };
-        return callback7(callback(KeyboardAvoidingView[11]), Object.assign(obj, tmp2, obj9));
+        return outer1_11(callback(KeyboardAvoidingView[11]), Object.assign(obj, tmp2, obj9));
       }
     }
   };
   return callback2(KeyboardAvoidingView, items);
-}(importAll(dependencyMap[7]).Component);
+})(require("result").Component);

@@ -1,36 +1,38 @@
-// Module ID: 14826
-// Function ID: 111748
+// Module ID: 14942
+// Function ID: 113916
 // Name: HappeningNowVoiceCardSubtitle
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 653, 33, 4130, 566, 4320, 14184, 8450, 1212, 7882, 9081, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 14826 (HappeningNowVoiceCardSubtitle)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const ActivityTypes = arg1(dependencyMap[3]).ActivityTypes;
-const jsx = arg1(dependencyMap[4]).jsx;
-let closure_7 = arg1(dependencyMap[5]).createStyles({ cardDetails: { getMentionIconType: "<string:4294927360>", scoreMethod: "<string:7471103>", popoutData: "<string:822083584>" } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActivitySubtitle.tsx");
+// Module 14942 (HappeningNowVoiceCardSubtitle)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ActivityTypes } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ cardDetails: { marginTop: 2, flexDirection: "row", alignItems: "center" } });
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActivitySubtitle.tsx");
 
 export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubtitle(voiceState) {
-  const arg1 = voiceState.voiceState;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(voiceState.channelId));
+  voiceState = voiceState.voiceState;
+  let obj = voiceState(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(voiceState.channelId));
   obj = { style: callback().cardDetails };
   const tmp = callback();
   obj = { lineClamp: 1 };
   let tmp6;
   if (null != stateFromStores) {
     const obj1 = { channel: stateFromStores };
-    tmp6 = importDefault(dependencyMap[9])(obj1);
+    tmp6 = importDefault(8450)(obj1);
   }
   obj.accessibilityLabel = tmp6;
-  obj.children = importDefault(dependencyMap[7])(stateFromStores);
-  obj.children = jsx(arg1(dependencyMap[8]).HappeningNowCardSubtitle, obj);
-  return <View {...obj} />;
+  obj.children = importDefault(4320)(stateFromStores);
+  obj.children = jsx(voiceState(14184).HappeningNowCardSubtitle, { lineClamp: 1 });
+  return <View lineClamp={1} />;
 };
 export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCardSubtitle(activity) {
   activity = activity.activity;
@@ -44,7 +46,7 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
       let tmp3 = trimmed;
     }
     const obj = { lineClamp: 1, children: tmp3 };
-    return jsx(arg1(dependencyMap[8]).HappeningNowCardSubtitle, obj);
+    return jsx(require(14184) /* HAPPENING_NOW_CARD_MARGIN_RIGHT */.HappeningNowCardSubtitle, { lineClamp: 1, children: tmp3 });
   }
   if (null != activity.stream) {
     if (null != activity) {
@@ -52,8 +54,8 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
         let name3 = activity.name;
       }
     }
-    const intl = arg1(dependencyMap[10]).intl;
-    name3 = intl.string(arg1(dependencyMap[10]).t.eXan7B);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    name3 = intl.string(require(1212) /* getSystemLocale */.t.eXan7B);
   } else {
     let name;
     if (null != activity) {
@@ -61,8 +63,8 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
     }
     tmp3 = null;
     if (null != name) {
-      if (!importDefault(dependencyMap[11])(activity)) {
-        if (importDefault(dependencyMap[12])(activity)) {
+      if (!importDefault(7882)(activity)) {
+        if (importDefault(9081)(activity)) {
           if (null != activity.details) {
             if (null != activity.state) {
               const _HermesInternal = HermesInternal;

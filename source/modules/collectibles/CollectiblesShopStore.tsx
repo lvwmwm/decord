@@ -1,41 +1,43 @@
-// Module ID: 6786
-// Function ID: 53598
+// Module ID: 6791
+// Function ID: 53630
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 6786 (_isNativeReflectConstruct)
+// Module 6791 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import closure_1 from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const items = [];
-let closure_8 = null;
+let items = [];
+let c8 = null;
 let closure_9 = {};
-const set = new Set();
+let set = new Set();
 let closure_11 = {};
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class CollectiblesShopStore {
     constructor() {
       self = this;
       tmp = CollectiblesShopStore(this, CollectiblesShopStore);
-      obj = closure_3(CollectiblesShopStore);
-      tmp2 = closure_2;
-      if (closure_12()) {
+      obj = outer1_3(CollectiblesShopStore);
+      tmp2 = outer1_2;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -44,33 +46,32 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = CollectiblesShopStore;
   callback2(CollectiblesShopStore, Store);
   let obj = {
     key: "analyticsLocations",
     get() {
-      return closure_7;
+      return outer1_7;
     }
   };
   const items = [obj, , , , , , ];
   obj = {
     key: "analyticsSource",
     get() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[1] = obj;
   obj = {
     key: "initialProductSkuId",
     get() {
-      return closure_5;
+      return outer1_5;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getAnalytics",
     value() {
-      return { analyticsLocations: closure_7, analyticsSource: closure_8 };
+      return { analyticsLocations: outer1_7, analyticsSource: outer1_8 };
     }
   };
   items[4] = {
@@ -79,7 +80,7 @@ let tmp3 = (Store) => {
       let tmp = null;
       if (null != arg0) {
         let tmp4 = null;
-        if (null != closure_9[arg0]) {
+        if (null != outer1_9[arg0]) {
           tmp4 = tmp3;
         }
         tmp = tmp4;
@@ -92,7 +93,7 @@ let tmp3 = (Store) => {
     value(arg0) {
       let hasItem = null != arg0;
       if (hasItem) {
-        hasItem = set.has(arg0);
+        hasItem = outer1_10.has(arg0);
       }
       return hasItem;
     }
@@ -103,7 +104,7 @@ let tmp3 = (Store) => {
       let tmp = null;
       if (null != arg0) {
         let tmp4 = null;
-        if (null != closure_11[arg0]) {
+        if (null != outer1_11[arg0]) {
           tmp4 = tmp3;
         }
         tmp = tmp4;
@@ -112,31 +113,30 @@ let tmp3 = (Store) => {
     }
   };
   return callback(CollectiblesShopStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "CollectiblesShopStore";
-tmp3 = new tmp3(importDefault(dependencyMap[6]), {
+tmp3 = new tmp3(require("dispatcher"), {
   COLLECTIBLES_SHOP_OPEN: function handleOpen(analyticsLocations) {
     analyticsLocations = analyticsLocations.analyticsLocations;
     if (null == analyticsLocations) {
       analyticsLocations = items;
     }
-    const items = analyticsLocations;
     const analyticsSource = analyticsLocations.analyticsSource;
     let tmp = null;
     if (null != analyticsSource) {
       tmp = analyticsSource;
     }
-    let closure_8 = tmp;
+    let c8 = tmp;
     const initialProductSkuId = analyticsLocations.initialProductSkuId;
   },
   COLLECTIBLES_SHOP_CLOSE: function handleClose() {
     let closure_7 = items;
-    let closure_8 = null;
-    let closure_5;
+    let c8 = null;
+    let c5;
   },
   COLLECTIBLES_PRODUCT_DETAILS_OPEN: function handleProductDetailsOpen(skuId) {
-    if (skuId.skuId === closure_5) {
-      closure_5 = undefined;
+    if (skuId.skuId === c5) {
+      c5 = undefined;
     }
   },
   COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH: function handleShopTabLayoutFetch(tab) {
@@ -145,7 +145,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[6]), {
   COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH_SUCCESS: function handleShopTabLayoutFetchSuccess(tab) {
     tab = tab.tab;
     closure_9[tab] = tab.layoutId;
-    delete r1[r2];
+    delete tmp[tmp2];
     set.delete(tab);
   },
   COLLECTIBLES_SHOP_TAB_LAYOUT_FETCH_FAILURE: function handleShopTabLayoutFetchFailure(tab) {
@@ -155,13 +155,13 @@ tmp3 = new tmp3(importDefault(dependencyMap[6]), {
   },
   LOGOUT: function handleLogout() {
     let closure_7 = items;
-    let closure_8 = null;
-    let closure_5;
+    let c8 = null;
+    let c5;
     let closure_9 = {};
     const set = new Set();
     let closure_11 = {};
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/collectibles/CollectiblesShopStore.tsx");
+let result = set.fileFinishedImporting("modules/collectibles/CollectiblesShopStore.tsx");
 
 export default tmp3;

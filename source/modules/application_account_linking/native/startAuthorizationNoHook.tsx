@@ -1,19 +1,20 @@
-// Module ID: 10906
-// Function ID: 84746
+// Module ID: 10916
+// Function ID: 84795
 // Name: _startAuthorizationNoHook
-// Dependencies: []
+// Dependencies: [5, 653, 5469, 3827, 675, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 10906 (_startAuthorizationNoHook)
+// Module 10916 (_startAuthorizationNoHook)
+import set from "set";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function _startAuthorizationNoHook() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _startAuthorizationNoHook = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/application_account_linking/native/startAuthorizationNoHook.tsx");
+const result = require("getAuthorizationApp").fileFinishedImporting("modules/application_account_linking/native/startAuthorizationNoHook.tsx");
 
 export const startAuthorizationNoHook = function startAuthorizationNoHook(arg0, items) {
   return _startAuthorizationNoHook(...arguments);

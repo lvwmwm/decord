@@ -1,53 +1,59 @@
-// Module ID: 10443
-// Function ID: 80591
+// Module ID: 10453
+// Function ID: 80641
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 10454, 4217, 566, 10456, 2]
 // Exports: default
 
-// Module 10443 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10453 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,12 +91,12 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function useMissingActivities(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const items = [arg0, arg1];
-  const tmp = callback(React.useMemo(() => function getMessagesWithActivities(arr, isPrivate) {
-    if (isPrivate.isPrivate()) {
-      const found = arr.filter((application) => {
+  let items = [arg0, arg1];
+  const tmp = first(stateFromStoresArray.useMemo(() => (function getMessagesWithActivities(closure_0, closure_1) {
+    if (closure_1.isPrivate()) {
+      const found = closure_0.filter((application) => {
         application = application.application;
         let id;
         if (null != application) {
@@ -110,21 +116,19 @@ function useMissingActivities(arg0, arg1) {
       const items = [found, found.map((id) => id.id)];
       return items;
     } else {
-      const items1 = [closure_8, closure_7];
+      const items1 = [outer2_8, outer2_7];
       return items1;
     }
-  }(arg0, arg1), items), 2);
-  const first = tmp[0];
-  const callback = first;
-  const items1 = [closure_5];
+  })(closure_0, closure_1), items), 2);
+  first = tmp[0];
+  let items1 = [closure_5];
   const items2 = [first];
-  const stateFromStoresArray = arg1(dependencyMap[4]).useStateFromStoresArray(items1, () => {
-    const items = [];
-    const arg0 = items;
+  stateFromStoresArray = _require(566).useStateFromStoresArray(items1, () => {
+    let items = [];
     const item = first.forEach((author) => {
       const items = author;
-      if (null != closure_5.findActivity(author.author.id, (application_id) => {
-        const application = application_id.application;
+      if (null != outer2_5.findActivity(author.author.id, (application_id) => {
+        const application = author.application;
         let id;
         if (null != application) {
           id = application.id;
@@ -136,7 +140,7 @@ function useMissingActivities(arg0, arg1) {
           if (null != party) {
             id1 = party.id;
           }
-          const activity = application_id.activity;
+          const activity = author.activity;
           let party_id;
           if (null != activity) {
             party_id = activity.party_id;
@@ -150,13 +154,13 @@ function useMissingActivities(arg0, arg1) {
     });
     return items;
   }, items2);
-  const React = stateFromStoresArray;
   const items3 = [first, stateFromStoresArray];
   const items4 = [
     tmp[1],
-    React.useMemo(() => function makeActivitySubscriptions(first, stateFromStoresArray) {
+    stateFromStoresArray.useMemo(() => (function makeActivitySubscriptions(first, stateFromStoresArray) {
+      let closure_0 = stateFromStoresArray;
       if (0 === first.length) {
-        return closure_6;
+        return outer2_6;
       } else {
         const items = [];
         const item = first.forEach((application) => {
@@ -168,7 +172,7 @@ function useMissingActivities(arg0, arg1) {
           if (null != activity) {
             const party_id = activity.party_id;
           }
-          if (!(application.id in arg1)) {
+          if (!(application.id in closure_0)) {
             if (null != id) {
               if (null != party_id) {
                 const timestamp = application.timestamp;
@@ -182,36 +186,32 @@ function useMissingActivities(arg0, arg1) {
         });
         return items;
       }
-    }(first, stateFromStoresArray), items3)
+    })(first, stateFromStoresArray), items3)
   ];
   return items4;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
 let closure_6 = [];
 let closure_7 = [];
 let closure_8 = [];
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activities/useSubscribeMissingActivities.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/useSubscribeMissingActivities.tsx");
 
 export default function useSubscribeMissingActivities(arg0, arg1) {
-  const tmp = callback(useMissingActivities(arg0, arg1), 2);
-  arg1 = tmp2;
+  let tmp = callback(useMissingActivities(arg0, arg1), 2);
+  const require = tmp2;
   const items = [tmp[1]];
   const effect = React.useEffect(() => {
     let iter2;
     let tmp2;
-    const tmp = callback(tmp2);
+    const tmp = outer1_9(tmp2);
     let iter = tmp();
     if (!iter.done) {
       do {
         let value = iter.value;
-        tmp2 = closure_4;
-        if (!closure_4.isSubscribed(value)) {
-          let tmp3 = closure_0;
-          let tmp4 = closure_1;
-          let obj = closure_0(closure_1[5]);
+        tmp2 = outer1_4;
+        if (!outer1_4.isSubscribed(value)) {
+          let tmp3 = tmp2;
+          let tmp4 = outer1_1;
+          let obj = tmp2(outer1_1[5]);
           let subscription = obj.subscribe(value);
         }
         iter2 = tmp();

@@ -1,53 +1,55 @@
-// Module ID: 10210
-// Function ID: 78892
+// Module ID: 10222
+// Function ID: 78964
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1867, 1212, 2198, 2]
 // Exports: computeOverlappingInfo, formatDuration, formatRestrictedScheduleInAppSubtitle, getShortDayLabels, sortRulesByStartTime, toTimeProto
 
-// Module 10210 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10222 (_createForOfIteratorHelperLoose)
+import set from "messagesProxy";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,7 +87,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function formatTime(hours) {
-  const dateTimeFormat = new Intl.DateTimeFormat(require(dependencyMap[1]).intl.currentLocale, { -17117184: true, 0: true });
+  const dateTimeFormat = new Intl.DateTimeFormat(require(1212) /* getSystemLocale */.intl.currentLocale, { hour: "numeric", minute: "2-digit" });
   return dateTimeFormat.format(new Date(2025, 0, 1, hours.hours, hours.minutes));
 }
 function setsEqual(set, set2) {
@@ -106,22 +108,20 @@ function setsEqual(set, set2) {
 }
 function formatDays(days) {
   const set = new Set(days);
-  const require = set;
   if (setsEqual(set, set2)) {
-    const intl3 = require(dependencyMap[1]).intl;
-    return intl3.string(importDefault(dependencyMap[2]).bPjqd1);
+    const intl3 = set(1212).intl;
+    return intl3.string(dateTimeFormat(2198).bPjqd1);
   } else if (setsEqual(set, set)) {
-    const intl2 = require(dependencyMap[1]).intl;
-    return intl2.string(importDefault(dependencyMap[2]).4dr9L9);
+    const intl2 = set(1212).intl;
+    return intl2.string(dateTimeFormat(2198)["4dr9L9"]);
   } else if (setsEqual(set, set1)) {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(importDefault(dependencyMap[2]).6lTTJ+);
+    const intl = set(1212).intl;
+    return intl.string(dateTimeFormat(2198)["6lTTJ+"]);
   } else {
     const _Intl = Intl;
     const obj = { weekday: "short" };
-    const prototype = DateTimeFormat.prototype;
-    const dateTimeFormat = new DateTimeFormat(require(dependencyMap[1]).intl.currentLocale, obj);
-    const importDefault = dateTimeFormat;
+    let prototype = DateTimeFormat.prototype;
+    dateTimeFormat = new DateTimeFormat(set(1212).intl.currentLocale, obj);
     const mapped = items.map((arg0, arg1) => {
       let formatResult = null;
       if (set.has(arg0)) {
@@ -150,18 +150,16 @@ function getScheduleRuleDateRange(rule) {
   }
   return str;
 }
-const items = [require(dependencyMap[0]).DayOfWeek.SUNDAY, require(dependencyMap[0]).DayOfWeek.MONDAY, require(dependencyMap[0]).DayOfWeek.TUESDAY, require(dependencyMap[0]).DayOfWeek.WEDNESDAY, require(dependencyMap[0]).DayOfWeek.THURSDAY, require(dependencyMap[0]).DayOfWeek.FRIDAY, require(dependencyMap[0]).DayOfWeek.SATURDAY];
-const set = new Set(require("module_1"));
+const items = [require("_callSuper").DayOfWeek.SUNDAY, require("_callSuper").DayOfWeek.MONDAY, require("_callSuper").DayOfWeek.TUESDAY, require("_callSuper").DayOfWeek.WEDNESDAY, require("_callSuper").DayOfWeek.THURSDAY, require("_callSuper").DayOfWeek.FRIDAY, require("_callSuper").DayOfWeek.SATURDAY];
+let set = new Set(require("getSystemLocale"));
 const items1 = [items[0], items[6]];
 const set1 = new Set(items1);
 const set2 = new Set(items);
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/parent_tools/FamilyCenterRestrictedHoursUtils.tsx");
+let result = set.fileFinishedImporting("modules/parent_tools/FamilyCenterRestrictedHoursUtils.tsx");
 
 export const DAYS_ORDERED = items;
 export const getShortDayLabels = function getShortDayLabels(narrow) {
-  const dateTimeFormat = new Intl.DateTimeFormat(require(dependencyMap[1]).intl.currentLocale, { weekday: narrow });
-  const require = dateTimeFormat;
+  dateTimeFormat = new Intl.DateTimeFormat(dateTimeFormat(1212).intl.currentLocale, { weekday: narrow });
   return items.map((arg0, arg1) => dateTimeFormat.format(new Date(2025, 0, 5 + arg1)));
 };
 export { formatTime };
@@ -169,9 +167,9 @@ export { formatDays };
 export { timeToMinutes };
 export const formatDuration = function formatDuration(arg0) {
   const result = arg0 / 60;
-  const intl = require(dependencyMap[1]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const tmp3 = importDefault(dependencyMap[2]);
+  const tmp3 = importDefault(2198);
   if (isIntegerResult) {
     let obj = { hours: result };
     let formatToPlainStringResult = formatToPlainString(tmp3.hFDcmZ, obj);
@@ -191,11 +189,11 @@ export const formatRestrictedScheduleInAppSubtitle = function formatRestrictedSc
       const tmp10 = formatTime(startTime.startTime);
       const tmp11 = formatTime(startTime.endTime);
       if (tmp13 > timeToMinutes(startTime.endTime)) {
-        ERTn+E = importDefault(dependencyMap[2]).OxveI8;
+        ERTn_E = importDefault(2198).OxveI8;
       } else {
-        ERTn+E = importDefault(dependencyMap[2]).ERTn+E;
+        ERTn_E = importDefault(2198)["ERTn+E"];
       }
-      const intl = require(dependencyMap[1]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       const obj = { days: tmp8, startTime: tmp10, endTime: tmp11 };
       return intl.formatToPlainString(ERTn_E, obj);
     }
@@ -251,19 +249,18 @@ export const toTimeProto = function toTimeProto(hours) {
   return { hours: hours.hours, minutes: hours.minutes, seconds: 0, nanos: 0 };
 };
 export const computeOverlappingInfo = function computeOverlappingInfo(first3, memo1, memo) {
-  const require = first3;
-  const importDefault = memo1;
-  const dependencyMap = memo;
+  let closure_0 = first3;
+  let closure_1 = memo1;
+  let closure_2 = memo;
   const conflictingEntries = [];
-  const items = conflictingEntries;
-  const item = items.forEach((arg0, arg1) => {
+  const item = conflictingEntries.forEach((arg0, arg1) => {
     if (arg0.has(arg0)) {
-      const found = arg1.find((days) => {
+      const found = memo1.find((days) => {
         days = days.days;
-        return days.includes(days);
+        return days.includes(closure_0);
       });
       if (null != found) {
-        const obj = { dayLabel: arg2[arg1], timeRange: callback(found) };
+        const obj = { dayLabel: memo[arg1], timeRange: outer1_13(found) };
         conflictingEntries.push(obj);
       }
     }

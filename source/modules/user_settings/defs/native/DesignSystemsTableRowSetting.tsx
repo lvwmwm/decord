@@ -1,25 +1,25 @@
-// Module ID: 14318
-// Function ID: 108159
+// Module ID: 14432
+// Function ID: 110312
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14433, 2]
 
-// Module 14318 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14432 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Table Row";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_TABLE_ROW,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_TABLE_ROW,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14433) /* MyTableRow */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTableRowSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTableRowSetting.tsx");
 
 export default route;

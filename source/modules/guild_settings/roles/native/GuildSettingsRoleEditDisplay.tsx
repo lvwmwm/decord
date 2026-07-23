@@ -1,27 +1,34 @@
-// Module ID: 16203
-// Function ID: 125191
+// Module ID: 16320
+// Function ID: 127364
 // Name: GuildSettingsRoleEditDisplay
-// Dependencies: []
+// Dependencies: [31, 27, 1911, 16305, 16304, 653, 16307, 33, 4130, 689, 4571, 566, 5489, 5488, 1273, 16321, 4098, 14820, 1934, 16319, 16322, 16323, 7512, 1212, 16326, 5503, 5165, 4554, 1327, 665, 13569, 4086, 4126, 2230, 5504, 2]
 // Exports: default
 
-// Module 16203 (GuildSettingsRoleEditDisplay)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const isEveryoneRole = arg1(dependencyMap[2]).isEveryoneRole;
-let closure_6 = importDefault(dependencyMap[3]);
-const RoleColorsStyle = arg1(dependencyMap[3]).RoleColorsStyle;
-const STYLE_CONFIGS = arg1(dependencyMap[4]).STYLE_CONFIGS;
-({ DEFAULT_ROLE_COLOR: closure_9, MAX_ROLE_LENGTH: closure_10 } = arg1(dependencyMap[5]));
-let closure_11 = arg1(dependencyMap[6]).DEFAULT_GRADIENT_ROLE_COLORS;
-const tmp2 = arg1(dependencyMap[5]);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = { roleIcon: { "Null": -680565368796178500000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000867050025842914 }, trailingColorContainer: {}, colorBlock: {} };
-obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_FEEDBACK_INFO, padding: importDefault(dependencyMap[9]).space.PX_8, marginHorizontal: importDefault(dependencyMap[9]).space.PX_12, marginTop: -1 * importDefault(dependencyMap[9]).space.PX_12, marginBottom: importDefault(dependencyMap[9]).space.PX_12, display: "flex", flexDirection: "row", gap: importDefault(dependencyMap[9]).space.PX_8, justifyContent: "center", alignItems: "center", borderRadius: importDefault(dependencyMap[9]).radii.sm, borderWidth: 1, borderColor: importDefault(dependencyMap[9]).colors.ICON_FEEDBACK_INFO };
-obj.holographicInfo = obj;
-let closure_15 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[35]).fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleEditDisplay.tsx");
+// Module 16320 (GuildSettingsRoleEditDisplay)
+import CircleInformationIcon from "CircleInformationIcon";
+import { View } from "LinearGradient";
+import { isEveryoneRole } from "GuildRoleRecordTypeTag";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { RoleColorsStyle } from "_isNativeReflectConstruct";
+import { STYLE_CONFIGS } from "title";
+import ME from "ME";
+import { DEFAULT_GRADIENT_ROLE_COLORS as closure_11 } from "HOLOGRAPHIC_ROLE_COLORS";
+import jsxProd from "messagesProxy";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_9;
+const require = arg1;
+({ DEFAULT_ROLE_COLOR: closure_9, MAX_ROLE_LENGTH: closure_10 } = ME);
+({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
+_createForOfIteratorHelperLoose = { roleIcon: { paddingTop: 2, opacity: 0.5 }, trailingColorContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, colorBlock: { marginHorizontal: 0, marginVertical: 0, marginRight: 8, minWidth: 24, height: 24, borderRadius: 3 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_INFO, padding: require("_createForOfIteratorHelperLoose").space.PX_8, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, marginTop: -1 * require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12, display: "flex", flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_INFO };
+_createForOfIteratorHelperLoose.holographicInfo = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("GuildRoleRecordTypeTag").fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleEditDisplay.tsx");
 
 export default function GuildSettingsRoleEditDisplay(guild) {
   let autoFocusInput;
@@ -34,32 +41,28 @@ export default function GuildSettingsRoleEditDisplay(guild) {
   let onMentionableChanged;
   let onNameChanged;
   guild = guild.guild;
-  const arg1 = guild;
   const role = guild.role;
-  const importDefault = role;
-  let dependencyMap;
-  let React;
-  let View;
+  let id;
+  let SOLID;
+  let primary_color;
   let isEveryoneRole;
   ({ name, formErrors, mentionable, hoist, onNameChanged, onMentionableChanged, onHoistChanged, locked, autoFocusInput } = guild);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const tmp2 = isEveryoneRole(role);
   let tmp3 = tmp2;
   if (!tmp2) {
     tmp3 = locked;
   }
-  const id = role.id;
-  dependencyMap = id;
-  let obj = arg1(dependencyMap[10]);
+  id = role.id;
+  let obj = guild(id[10]);
   const hasEnhancedRoleColorsForRole = obj.useHasEnhancedRoleColorsForRole(guild.id, role);
-  let obj1 = arg1(dependencyMap[11]);
-  const items = [closure_6];
-  const stateFromStores = obj1.useStateFromStores(items, () => roleStyleData.getRoleStyleData(role.id));
+  let obj1 = guild(id[11]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getRoleStyleData(role.id));
   if (null != stateFromStores) {
     if (hasEnhancedRoleColorsForRole) {
-      let SOLID = stateFromStores.currentStyle;
+      SOLID = stateFromStores.currentStyle;
     }
-    React = SOLID;
     const found = STYLE_CONFIGS.find((id) => id.id === SOLID);
     let tmp8;
     if (null != stateFromStores) {
@@ -68,14 +71,13 @@ export default function GuildSettingsRoleEditDisplay(guild) {
         tmp8 = styleColors[SOLID];
       }
     }
-    let primary_color;
+    primary_color = undefined;
     if (null != tmp8) {
       primary_color = tmp8.primary_color;
     }
     if (null == primary_color) {
       primary_color = closure_9;
     }
-    View = primary_color;
     if (null == tmp8) {
       tmp8 = closure_11;
     } else {
@@ -85,31 +87,31 @@ export default function GuildSettingsRoleEditDisplay(guild) {
       }
     }
     isEveryoneRole = tmp8;
-    let obj2 = arg1(dependencyMap[12]);
-    let obj3 = arg1(dependencyMap[13]);
+    let obj2 = guild(id[12]);
+    let obj3 = guild(id[13]);
     obj = { guildId: guild.id, roleId: role.id, size: 26 };
     let roleIcon = obj3.useRoleIcon(obj);
     if (null == roleIcon) {
-      obj = { source: importDefault(dependencyMap[15]), size: arg1(dependencyMap[14]).IconSizes.MEDIUM };
-      roleIcon = callback(arg1(dependencyMap[14]).Icon, obj);
+      obj = { source: role(id[15]), size: guild(id[14]).IconSizes.MEDIUM };
+      roleIcon = callback(guild(id[14]).Icon, obj);
     }
     const items1 = [id, tmp8, primary_color, SOLID];
     const items2 = [guild.id, role, id, SOLID];
-    const callback = React.useCallback(() => {
-      if (SOLID === constants.SOLID) {
+    callback = SOLID.useCallback(() => {
+      if (SOLID === outer1_7.SOLID) {
         let obj = role(id[16]);
         obj = {
           color: primary_color,
           onSelect(color) {
-              callback(closure_2[19]).updateRoleColor(closure_2, color);
+              guild(id[19]).updateRoleColor(outer1_2, color);
             }
         };
         obj.openLazy(guild(id[18])(id[17], id.paths), "RoleColorPicker", obj);
-      } else if (SOLID === constants.GRADIENT) {
+      } else if (SOLID === outer1_7.GRADIENT) {
         obj = {
-          colors: role,
+          colors: c5,
           onSelect(colors) {
-              callback(closure_2[19]).updateRoleColors(closure_2, colors, constants.GRADIENT);
+              guild(id[19]).updateRoleColors(outer1_2, colors, outer2_7.GRADIENT);
             }
         };
         role(id[16]).openLazy(guild(id[18])(id[20], id.paths), "RoleColorPicker", obj);
@@ -117,21 +119,21 @@ export default function GuildSettingsRoleEditDisplay(guild) {
       }
     }, items1);
     obj1 = {};
-    const callback1 = React.useCallback(() => {
+    const callback1 = SOLID.useCallback(() => {
       let obj = role(id[16]);
       obj = {
         guildId: guild.id,
         role,
         roleStyle: SOLID,
         onStyleChanged(currentStyle) {
-          callback(closure_2[19]).updateRoleStyles(closure_2, currentStyle);
+          guild(id[19]).updateRoleStyles(outer1_2, currentStyle);
         }
       };
       obj.openLazy(guild(id[18])(id[21], id.paths), "EnhancedRoleColorsSelectStyleModal", obj);
     }, items2);
     obj2 = {};
-    const intl = arg1(dependencyMap[23]).intl;
-    obj2.label = intl.string(arg1(dependencyMap[23]).t.dLbkBk);
+    const intl = guild(id[23]).intl;
+    obj2.label = intl.string(guild(id[23]).t.dLbkBk);
     obj2.value = name;
     obj2.isDisabled = tmp3;
     obj2.onChange = onNameChanged;
@@ -143,13 +145,13 @@ export default function GuildSettingsRoleEditDisplay(guild) {
       first = name2[0];
     }
     obj2.errorMessage = first;
-    const items3 = [callback(arg1(dependencyMap[22]).TextInput, obj2), , , , , ];
+    const items3 = [callback(guild(id[22]).TextInput, obj2), , , , , ];
     obj3 = { role };
-    items3[1] = callback(importDefault(dependencyMap[24]), obj3);
+    items3[1] = callback(role(id[24]), obj3);
     const obj4 = { hasIcons: false };
     const obj5 = {};
-    const intl2 = arg1(dependencyMap[23]).intl;
-    obj5.label = intl2.string(arg1(dependencyMap[23]).t.9wVJRB);
+    const intl2 = guild(id[23]).intl;
+    obj5.label = intl2.string(guild(id[23]).t["9wVJRB"]);
     obj5.onPress = callback1;
     obj5.arrow = true;
     let labelString;
@@ -158,41 +160,41 @@ export default function GuildSettingsRoleEditDisplay(guild) {
     }
     let str = "";
     if (null != labelString) {
-      const intl3 = arg1(dependencyMap[23]).intl;
+      const intl3 = guild(id[23]).intl;
       str = intl3.string(found.labelString);
     }
     obj5.subLabel = str;
     obj5.disabled = tmp3;
-    const items4 = [callback(arg1(dependencyMap[26]).TableRow, obj5), ];
+    const items4 = [callback(guild(id[26]).TableRow, obj5), ];
     if (SOLID === RoleColorsStyle.HOLOGRAPHIC) {
       items4[1] = tmp38;
       obj4.children = items4;
-      items3[2] = tmp32(arg1(dependencyMap[25]).TableRowGroup, obj4);
+      items3[2] = tmp32(guild(id[25]).TableRowGroup, obj4);
       let tmp72 = SOLID === RoleColorsStyle.HOLOGRAPHIC;
       if (tmp72) {
         const obj6 = { style: tmp.holographicInfo };
-        const obj7 = { size: "sm", color: importDefault(dependencyMap[9]).colors.ICON_FEEDBACK_INFO };
-        const items5 = [callback(arg1(dependencyMap[31]).CircleInformationIcon, obj7), ];
+        const obj7 = { size: "sm", color: role(id[9]).colors.ICON_FEEDBACK_INFO };
+        const items5 = [callback(guild(id[31]).CircleInformationIcon, obj7), ];
         const obj8 = { variant: "text-sm/normal" };
-        const intl5 = arg1(dependencyMap[23]).intl;
-        obj8.children = intl5.string(importDefault(dependencyMap[33]).tBhCyr);
-        items5[1] = callback(arg1(dependencyMap[32]).Text, obj8);
+        const intl5 = guild(id[23]).intl;
+        obj8.children = intl5.string(role(id[33]).tBhCyr);
+        items5[1] = callback(guild(id[32]).Text, obj8);
         obj6.children = items5;
-        tmp72 = callback2(View, obj6);
+        tmp72 = callback2(primary_color, obj6);
       }
       items3[3] = tmp72;
       let tmp79 = null;
       if (canGuildUseRoleIconsResult) {
         const obj9 = { hasIcons: false };
         const obj10 = { disabled: tmp3 };
-        const intl6 = arg1(dependencyMap[23]).intl;
-        obj10.label = intl6.string(arg1(dependencyMap[23]).t.B9grJw);
+        const intl6 = guild(id[23]).intl;
+        obj10.label = intl6.string(guild(id[23]).t.B9grJw);
         const obj11 = { style: tmp.roleIcon, children: roleIcon };
-        obj10.trailing = callback(View, obj11);
-        const intl7 = arg1(dependencyMap[23]).intl;
-        obj10.subLabel = intl7.string(arg1(dependencyMap[23]).t.ZTpgyG);
-        obj9.children = callback(arg1(dependencyMap[26]).TableRow, obj10);
-        tmp79 = callback(arg1(dependencyMap[25]).TableRowGroup, obj9);
+        obj10.trailing = callback(primary_color, obj11);
+        const intl7 = guild(id[23]).intl;
+        obj10.subLabel = intl7.string(guild(id[23]).t.ZTpgyG);
+        obj9.children = callback(guild(id[26]).TableRow, obj10);
+        tmp79 = callback(guild(id[25]).TableRowGroup, obj9);
       }
       items3[4] = tmp79;
       const obj12 = { hasIcons: false };
@@ -202,31 +204,31 @@ export default function GuildSettingsRoleEditDisplay(guild) {
         tmp88 = tmp2;
       }
       obj13.disabled = tmp88;
-      const intl8 = arg1(dependencyMap[23]).intl;
-      obj13.label = intl8.string(arg1(dependencyMap[23]).t.iVW5w4);
+      const intl8 = guild(id[23]).intl;
+      obj13.label = intl8.string(guild(id[23]).t.iVW5w4);
       obj13.value = hoist;
       obj13.onValueChange = onHoistChanged;
-      const intl9 = arg1(dependencyMap[23]).intl;
-      obj13.subLabel = intl9.string(arg1(dependencyMap[23]).t.vceJPk);
-      const items6 = [callback(arg1(dependencyMap[34]).TableSwitchRow, obj13), ];
+      const intl9 = guild(id[23]).intl;
+      obj13.subLabel = intl9.string(guild(id[23]).t.vceJPk);
+      const items6 = [callback(guild(id[34]).TableSwitchRow, obj13), ];
       const obj14 = {};
       if (!tmp3) {
         tmp3 = tmp2;
       }
       obj14.disabled = tmp3;
-      const intl10 = arg1(dependencyMap[23]).intl;
-      obj14.label = intl10.format(arg1(dependencyMap[23]).t.DTXoJQ, {});
+      const intl10 = guild(id[23]).intl;
+      obj14.label = intl10.format(guild(id[23]).t.DTXoJQ, {});
       obj14.value = mentionable;
       obj14.onValueChange = onMentionableChanged;
-      items6[1] = callback(arg1(dependencyMap[34]).TableSwitchRow, obj14);
+      items6[1] = callback(guild(id[34]).TableSwitchRow, obj14);
       obj12.children = items6;
-      items3[5] = callback2(arg1(dependencyMap[25]).TableRowGroup, obj12);
+      items3[5] = callback2(guild(id[25]).TableRowGroup, obj12);
       obj1.children = items3;
       return tmp22(tmp23, obj1);
     } else {
       let obj15 = {};
-      const intl4 = arg1(dependencyMap[23]).intl;
-      obj15.label = intl4.string(arg1(dependencyMap[23]).t.5NC5YW);
+      const intl4 = guild(id[23]).intl;
+      obj15.label = intl4.string(guild(id[23]).t["5NC5YW"]);
       obj15.onPress = callback;
       obj15.arrow = true;
       let obj16 = { style: tmp.trailingColorContainer };
@@ -247,22 +249,22 @@ export default function GuildSettingsRoleEditDisplay(guild) {
           tertiary_color = tmp8.tertiary_color;
         }
         items7[2] = tertiary_color;
-        const found1 = items7.filter(arg1(dependencyMap[28]).isNotNullish);
+        const found1 = items7.filter(guild(id[28]).isNotNullish);
         obj17.colors = found1.map((color) => guild(id[29]).int2hex(color));
-        obj17.start = { 0: "%FunctionPrototype%", 0: "paddingStart" };
-        obj17.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
+        obj17.start = { x: 0, y: 0 };
+        obj17.end = { x: 1, y: 0 };
         obj17.style = tmp.colorBlock;
-        let tmp48Result = callback(importDefault(dependencyMap[27]), obj17);
+        let tmp48Result = callback(role(id[27]), obj17);
         const tmp48 = callback;
-        const tmp51 = importDefault(dependencyMap[27]);
+        const tmp51 = role(id[27]);
       } else {
         const obj18 = { color: primary_color, style: tmp.colorBlock };
-        tmp48Result = callback(importDefault(dependencyMap[30]), obj18);
+        tmp48Result = callback(role(id[30]), obj18);
       }
       obj16.children = tmp48Result;
-      obj15.trailing = callback(View, obj16);
+      obj15.trailing = callback(primary_color, obj16);
       if (SOLID === RoleColorsStyle.GRADIENT) {
-        obj16 = arg1(dependencyMap[29]);
+        obj16 = guild(id[29]);
         let primary_color2;
         if (null != tmp8) {
           primary_color2 = tmp8.primary_color;
@@ -272,7 +274,7 @@ export default function GuildSettingsRoleEditDisplay(guild) {
           num17 = primary_color2;
         }
         const int2hexResult = obj16.int2hex(num17);
-        obj17 = arg1(dependencyMap[29]);
+        obj17 = guild(id[29]);
         let secondary_color2;
         if (null != tmp8) {
           secondary_color2 = tmp8.secondary_color;
@@ -285,20 +287,20 @@ export default function GuildSettingsRoleEditDisplay(guild) {
         const _HermesInternal = HermesInternal;
         let combined = "[" + int2hexResult + ", " + obj17.int2hex(num18) + "]";
       } else {
-        obj15 = arg1(dependencyMap[29]);
+        obj15 = guild(id[29]);
         combined = obj15.int2hex(primary_color);
       }
       obj15.subLabel = combined;
       obj15.disabled = tmp3;
-      callback(arg1(dependencyMap[26]).TableRow, obj15);
-      const tmp42 = View;
+      callback(guild(id[26]).TableRow, obj15);
+      const tmp42 = primary_color;
     }
-    const canGuildUseRoleIconsResult = obj2.canGuildUseRoleIcons(guild, role);
-    const tmp22 = callback2;
-    const tmp23 = closure_14;
+    canGuildUseRoleIconsResult = obj2.canGuildUseRoleIcons(guild, role);
+    tmp22 = callback2;
+    tmp23 = closure_14;
     const tmp24 = callback;
     const tmp29 = callback;
-    const tmp32 = callback2;
+    tmp32 = callback2;
   }
   SOLID = RoleColorsStyle.SOLID;
 };

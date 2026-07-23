@@ -1,23 +1,28 @@
-// Module ID: 13320
-// Function ID: 101178
-// Dependencies: []
+// Module ID: 13434
+// Function ID: 103334
+// Dependencies: [6942, 653, 8310, 10501, 6965, 10496, 675, 686, 10476, 2]
 
-// Module 13320
+// Module 13434
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
 let RPCCommands;
-let closure_3 = importDefault(dependencyMap[0]);
-({ RPCCommands, RPCErrors: closure_4, AnalyticEvents: closure_5 } = arg1(dependencyMap[1]));
+let closure_4;
+let closure_5;
+const require = arg1;
+({ RPCCommands, RPCErrors: closure_4, AnalyticEvents: closure_5 } = ME);
 let obj = {};
 obj = {
-  scope: arg1(dependencyMap[2]).OAuth2Scopes.IDENTIFY,
+  scope: require("set").OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
     const quest_id = socket.args.quest_id;
-    let obj = arg1(dependencyMap[3]);
+    let obj = require(10501) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    const obj2 = arg1(dependencyMap[3]);
+    const obj2 = require(10501) /* recurseReplaceContentTree */;
     const quest = store.getQuest(quest_id);
-    const validateApplicationResult = arg1(dependencyMap[3]).validateApplication(socket.application);
-    const activityApplicationId = arg1(dependencyMap[4]).getActivityApplicationId(quest);
+    const validateApplicationResult = require(10501) /* recurseReplaceContentTree */.validateApplication(socket.application);
+    const activityApplicationId = require(6965) /* _createForOfIteratorHelperLoose */.getActivityApplicationId(quest);
     if (null != quest) {
       if (null != activityApplicationId) {
         if (activityApplicationId === validateApplicationResult) {
@@ -42,7 +47,7 @@ obj = {
         }
       }
     }
-    let tmp8 = importDefault(dependencyMap[5]);
+    let tmp8 = importDefault(10496);
     obj = { errorCode: constants.INVALID_COMMAND };
     tmp8 = new tmp8(obj, "Quest not found: " + quest_id);
     throw tmp8;
@@ -50,16 +55,16 @@ obj = {
 };
 obj[RPCCommands.GET_QUEST_ENROLLMENT_STATUS] = obj;
 obj = {
-  scope: arg1(dependencyMap[2]).OAuth2Scopes.IDENTIFY,
+  scope: require("set").OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
     const quest_id = socket.args.quest_id;
-    let obj = arg1(dependencyMap[3]);
+    let obj = require(10501) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    let obj1 = arg1(dependencyMap[3]);
+    let obj1 = require(10501) /* recurseReplaceContentTree */;
     const validateApplicationResult = obj1.validateApplication(socket.application);
     const quest = store.getQuest(quest_id);
-    let obj2 = arg1(dependencyMap[4]);
+    let obj2 = require(6965) /* _createForOfIteratorHelperLoose */;
     const playActivityApplicationId = obj2.getPlayActivityApplicationId(quest);
     if (null != quest) {
       if (null != playActivityApplicationId) {
@@ -70,44 +75,43 @@ obj = {
             enrolledAt = userStatus.enrolledAt;
           }
           if (null == enrolledAt) {
-            let tmp13 = importDefault(dependencyMap[5]);
+            let tmp13 = importDefault(10496);
             obj = { errorCode: constants.INVALID_COMMAND };
             const prototype = tmp13.prototype;
             tmp13 = new tmp13(obj, "User is not enrolled in quest");
             throw tmp13;
           } else {
-            let obj3 = importDefault(dependencyMap[6]);
+            let obj3 = importDefault(675);
             obj = { application_id: validateApplicationResult, quest_id };
             obj3.track(constants2.RPC_QUEST_START_TIMER_CALLED, obj);
             obj1 = { type: "QUEST_APPLICATION_START_TIMER", questId: quest_id, applicationId: validateApplicationResult };
-            importDefault(dependencyMap[7]).dispatch(obj1);
+            importDefault(686).dispatch(obj1);
             obj2 = { success: true };
             return obj2;
           }
         }
       }
     }
-    let tmp20 = importDefault(dependencyMap[5]);
+    let tmp20 = importDefault(10496);
     obj3 = { errorCode: constants.INVALID_COMMAND };
     tmp20 = new tmp20(obj3, "Quest not found: " + quest_id);
     throw tmp20;
   }
 };
 obj[RPCCommands.QUEST_START_TIMER] = obj;
-const tmp2 = arg1(dependencyMap[1]);
 obj[RPCCommands.GET_QUEST] = {
-  scope: arg1(dependencyMap[2]).OAuth2Scopes.IDENTIFY,
+  scope: require("set").OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
-    let obj = arg1(dependencyMap[3]);
+    let obj = require(10501) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    const obj2 = arg1(dependencyMap[3]);
-    const validateApplicationResult = arg1(dependencyMap[3]).validateApplication(socket.application);
-    const eligibleQuestsForApplicationId = arg1(dependencyMap[8]).getEligibleQuestsForApplicationId(store.quests, validateApplicationResult, true);
+    const obj2 = require(10501) /* recurseReplaceContentTree */;
+    const validateApplicationResult = require(10501) /* recurseReplaceContentTree */.validateApplication(socket.application);
+    const eligibleQuestsForApplicationId = require(10476) /* _createForOfIteratorHelperLoose */.getEligibleQuestsForApplicationId(store.quests, validateApplicationResult, true);
     if (0 === eligibleQuestsForApplicationId.length) {
-      let tmp5 = importDefault(dependencyMap[5]);
+      let tmp5 = importDefault(10496);
       obj = { errorCode: constants.INVALID_COMMAND };
-      const prototype = tmp5.prototype;
+      let prototype = tmp5.prototype;
       tmp5 = new tmp5(obj, "No eligible quests found");
       throw tmp5;
     } else {
@@ -158,22 +162,22 @@ obj[RPCCommands.GET_QUEST] = {
         return num;
       })[0];
     }
-    const obj3 = arg1(dependencyMap[8]);
+    const obj3 = require(10476) /* _createForOfIteratorHelperLoose */;
   }
 };
-const obj1 = {
-  scope: arg1(dependencyMap[2]).OAuth2Scopes.IDENTIFY,
+let obj1 = {
+  scope: require("set").OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
-    let obj = arg1(dependencyMap[3]);
+    let obj = require(10501) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    const obj2 = arg1(dependencyMap[3]);
-    const validateApplicationResult = arg1(dependencyMap[3]).validateApplication(socket.application);
-    const eligibleQuestsForApplicationId = arg1(dependencyMap[8]).getEligibleQuestsForApplicationId(store.quests, validateApplicationResult, true);
+    const obj2 = require(10501) /* recurseReplaceContentTree */;
+    const validateApplicationResult = require(10501) /* recurseReplaceContentTree */.validateApplication(socket.application);
+    const eligibleQuestsForApplicationId = require(10476) /* _createForOfIteratorHelperLoose */.getEligibleQuestsForApplicationId(store.quests, validateApplicationResult, true);
     if (0 === eligibleQuestsForApplicationId.length) {
-      let tmp5 = importDefault(dependencyMap[5]);
+      let tmp5 = importDefault(10496);
       obj = { errorCode: constants.INVALID_COMMAND };
-      const prototype = tmp5.prototype;
+      let prototype = tmp5.prototype;
       tmp5 = new tmp5(obj, "No eligible quests found");
       throw tmp5;
     } else {
@@ -224,9 +228,9 @@ const obj1 = {
         return num;
       })[0];
     }
-    const obj3 = arg1(dependencyMap[8]);
+    const obj3 = require(10476) /* _createForOfIteratorHelperLoose */;
   }
 };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/rpc/server/commands/quests.tsx");
+let result = require("set").fileFinishedImporting("modules/rpc/server/commands/quests.tsx");
 
 export default obj;

@@ -1,10 +1,13 @@
-// Module ID: 4296
-// Function ID: 37621
+// Module ID: 4300
+// Function ID: 37653
 // Name: normalizePath
-// Dependencies: []
+// Dependencies: [4162, 4301, 477, 2]
 // Exports: getRunningGameAnalytics, isVerifiedGameExecutable
 
-// Module 4296 (normalizePath)
+// Module 4300 (normalizePath)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function normalizePath(str) {
   const formatted = str.toLowerCase();
   let substr = formatted;
@@ -18,8 +21,7 @@ function removeExecutablePathPrefix(exePath) {
   const substr = parts.slice(-2);
   return substr.join("/");
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
 
 export { removeExecutablePathPrefix };
 export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
@@ -52,7 +54,7 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
     }
     obj.cmdLine = str;
     obj.lastFocused = 0;
-    const findGameResult = closure_2.findGame(obj);
+    const findGameResult = _isNativeReflectConstruct.findGame(obj);
     obj = {};
     const name2 = streamApplication.name;
     let tmp6;
@@ -92,8 +94,8 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
     obj.sku = tmp12;
     let subgameMetadata;
     if (null != streamApplication) {
-      subgameMetadata = arg1(dependencyMap[1]).getSubgameMetadata(streamApplication);
-      const obj3 = arg1(dependencyMap[1]);
+      subgameMetadata = require(4301) /* hasSubgameInfoChanged */.getSubgameMetadata(streamApplication);
+      const obj3 = require(4301) /* hasSubgameInfoChanged */;
     }
     obj.gameMetadata = subgameMetadata;
     obj.rawExePath = tmp;
@@ -103,8 +105,8 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
 export const isVerifiedGameExecutable = function isVerifiedGameExecutable(arg0, arr) {
   if (null != arg0) {
     if (null != arr) {
-      const callback = normalizePath(arg0);
-      const platformName = callback(platformName[2]).getPlatformName();
+      const _require = normalizePath(arg0);
+      const dependencyMap = _require(477).getPlatformName();
       return arr.some((os) => {
         let tmp = os.os === closure_1;
         if (tmp) {

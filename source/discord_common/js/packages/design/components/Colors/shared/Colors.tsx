@@ -1,17 +1,18 @@
-// Module ID: 3937
-// Function ID: 32453
+// Module ID: 3939
+// Function ID: 32458
 // Name: toRGBAString
-// Dependencies: []
+// Dependencies: [57, 666, 2]
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity
 
-// Module 3937 (toRGBAString)
+// Module 3939 (toRGBAString)
+import _slicedToArray from "_slicedToArray";
+
 function toRGBAString(rgba) {
   const tmp = callback(rgba.rgba(), 4);
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const obj = { "Null": "3.112.1", "Null": 19, "Null": "clips" };
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/design/components/Colors/shared/Colors.tsx");
+let obj = { NonText: 3, Text: 4.5, HighContrastText: 7 };
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/Colors/shared/Colors.tsx");
 
 export const WCAGContrastRatios = obj;
 export const getContrastingColor = function getContrastingColor(primaryColor, arg1) {
@@ -33,11 +34,11 @@ export const getContrastingColor = function getContrastingColor(primaryColor, ar
   if (null != base) {
     tmp3 = base;
   }
-  const tmp2Result = importDefault(dependencyMap[1])(tmp3);
-  const tmp4 = importDefault(dependencyMap[1])(primaryColor);
-  const tmp2 = importDefault(dependencyMap[1]);
+  const tmp2Result = importDefault(666)(tmp3);
+  const tmp4 = importDefault(666)(primaryColor);
+  const tmp2 = importDefault(666);
   const luminanceResult = tmp2Result.luminance();
-  let contrastResult = importDefault(dependencyMap[1]).contrast(tmp2Result, tmp4);
+  let contrastResult = importDefault(666).contrast(tmp2Result, tmp4);
   let num2 = 99;
   let obj4 = tmp4;
   while (true) {
@@ -50,7 +51,7 @@ export const getContrastingColor = function getContrastingColor(primaryColor, ar
           let brightenResult = obj4.brighten();
           let tmp12 = importDefault;
           let tmp13 = dependencyMap;
-          let obj5 = importDefault(dependencyMap[1]);
+          let obj5 = importDefault(666);
           contrastResult = obj5.contrast(tmp2Result, brightenResult);
           let tmp14 = +num2;
           num2 = tmp14 - 1;
@@ -73,11 +74,11 @@ export const getContrastingColor = function getContrastingColor(primaryColor, ar
   }
 };
 export const darkenColor = function darkenColor(contrastingColor, arg1) {
-  return toRGBAString(importDefault(dependencyMap[1])(contrastingColor).darken(arg1));
+  return toRGBAString(importDefault(666)(contrastingColor).darken(arg1));
 };
 export const brightenColor = function brightenColor(token, arg1) {
-  return toRGBAString(importDefault(dependencyMap[1])(token).brighten(arg1));
+  return toRGBAString(importDefault(666)(token).brighten(arg1));
 };
 export const setColorOpacity = function setColorOpacity(white, self) {
-  return toRGBAString(importDefault(dependencyMap[1])(white).alpha(self));
+  return toRGBAString(importDefault(666)(white).alpha(self));
 };

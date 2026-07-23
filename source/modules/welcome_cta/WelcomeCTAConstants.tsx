@@ -1,11 +1,10 @@
-// Module ID: 7683
-// Function ID: 61356
+// Module ID: 7689
+// Function ID: 61393
 // Name: items
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 7683 (items)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/welcome_cta/WelcomeCTAConstants.tsx");
-const items = [{}, { limit: null, mode: "409ea8be644aaa2b6a1519af84a7b604", body: "system-user-avatar", type: "png" }, { limit: 16, mode: 16, body: null, type: "c9a4f850f67785dd3a5d71532b973724" }, { limit: "png", mode: "emoji", body: "frowning", type: "\u{1F626}" }, { limit: 107.5, mode: 107, body: null, type: "a5d02f8d3612a7fc7609c190b11244f3" }, {}];
+// Module 7689 (items)
+const result = require("set").fileFinishedImporting("modules/welcome_cta/WelcomeCTAConstants.tsx");
+const items = [{ id: "749054660769218631", format_type: 3, description: "Wumpus waves hello", name: "Wave" }, { id: "751606379340365864", format_type: 3, description: "Nelly peeks around a wall and waves hello", name: "Wave" }, { id: "754108890559283200", format_type: 3, description: "Clyde cheerfully waving", name: "Wave" }, { id: "781291131828699156", format_type: 2, description: "Choco waves in greeting", name: "Wave" }, { id: "816087792291282944", format_type: 3, description: "Doggo spins and greets you", name: "Sup" }, { id: "819128604311027752", format_type: 3, description: "Peach raising her arms in distress", name: "Scream" }];
 
 export const WELCOME_STICKERS = items;

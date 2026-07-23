@@ -1,17 +1,17 @@
-// Module ID: 6903
-// Function ID: 55019
+// Module ID: 6908
+// Function ID: 55053
 // Name: trackCacheSkipped
-// Dependencies: []
+// Dependencies: [653, 675, 6707, 2]
 // Exports: default
 
-// Module 6903 (trackCacheSkipped)
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/cache/trackCacheSkipped.native.tsx");
+// Module 6908 (trackCacheSkipped)
+import { AnalyticEvents } from "ME";
+
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/cache/trackCacheSkipped.native.tsx");
 
 export default function trackCacheSkipped(reason, message) {
-  let obj = importDefault(dependencyMap[1]);
-  obj = { load_id: require(dependencyMap[2]).currentLoadId(), reason };
+  let obj = importDefault(675);
+  obj = { load_id: require(6707) /* _createForOfIteratorHelperLoose */.currentLoadId(), reason };
   message = undefined;
   if (null != message) {
     message = message.message;

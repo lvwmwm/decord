@@ -1,26 +1,28 @@
-// Module ID: 11258
-// Function ID: 87585
+// Module ID: 11268
+// Function ID: 87635
 // Name: useIsAppDM
-// Dependencies: []
+// Dependencies: [1849, 624, 2]
 // Exports: default
 
-// Module 11258 (useIsAppDM)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/app_dms/useIsAppDM.tsx");
+// Module 11268 (useIsAppDM)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/app_dms/useIsAppDM.tsx");
 
 export default function useIsAppDM(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, (self) => {
-    let isDMResult = null != self;
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  return _require(624).useStateFromStores(items, () => {
+    let isDMResult = null != dM;
     if (isDMResult) {
-      isDMResult = self.isDM();
+      isDMResult = dM.isDM();
     }
     if (isDMResult) {
-      isDMResult = 1 === self.recipients.length;
+      isDMResult = 1 === dM.recipients.length;
     }
     if (isDMResult) {
-      const user = user.getUser(self.recipients[0]);
+      const user = outer1_2.getUser(dM.recipients[0]);
       let bot;
       if (null != user) {
         bot = user.bot;

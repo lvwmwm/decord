@@ -1,97 +1,99 @@
-// Module ID: 11722
-// Function ID: 91005
+// Module ID: 11732
+// Function ID: 91054
 // Name: AddPhoneScreen
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 1849, 11706, 33, 4130, 5084, 689, 1456, 4126, 1212, 9238, 9239, 11705, 624, 5584, 44, 9262, 9233, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 11722 (AddPhoneScreen)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_7 = importDefault(dependencyMap[4]);
-const useContactSyncModalStore = arg1(dependencyMap[5]).useContactSyncModalStore;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[6]);
-obj.redesignContainer = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
-obj.header = { alignItems: "center" };
-obj.title = { textAlign: "center" };
-obj.subtitle = {};
-let closure_11 = obj.createStyles(obj);
-const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/contact_sync/native/components/AddPhoneScreens.tsx");
+// Module 11732 (AddPhoneScreen)
+import initialValues from "initialValues";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { useContactSyncModalStore } from "initialValues";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_9;
+const require = arg1;
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.redesignContainer = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
+_createForOfIteratorHelperLoose.header = { alignItems: "center" };
+_createForOfIteratorHelperLoose.title = { textAlign: "center" };
+_createForOfIteratorHelperLoose.subtitle = { marginTop: 8, lineHeight: 18, textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
+let result = require("result").fileFinishedImporting("modules/contact_sync/native/components/AddPhoneScreens.tsx");
 
 export const AddPhoneScreen = function AddPhoneScreen() {
-  let obj = callback(dependencyMap[10]);
-  const callback = obj.useNavigation();
-  const tmp = callback5();
+  let obj = _require(1456);
+  _require = obj.useNavigation();
+  const tmp = _createForOfIteratorHelperLoose();
   obj = { style: tmp.header };
-  obj = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
-  const intl = callback(dependencyMap[12]).intl;
-  obj.children = intl.string(callback(dependencyMap[12]).t.Xgb497);
-  const items = [callback3(callback(dependencyMap[11]).Text, obj), ];
-  const obj1 = { style: tmp.subtitle };
-  const intl2 = callback(dependencyMap[12]).intl;
-  obj1.children = intl2.string(callback(dependencyMap[12]).t.qFmzyo);
-  items[1] = callback3(callback(dependencyMap[11]).Text, obj1);
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+  const intl = _require(1212).intl;
+  obj.children = intl.string(_require(1212).t.Xgb497);
+  const items = [callback2(_require(4126).Text, obj), ];
+  const obj1 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default" };
+  const intl2 = _require(1212).intl;
+  obj1.children = intl2.string(_require(1212).t.qFmzyo);
+  items[1] = callback2(_require(4126).Text, obj1);
   obj.children = items;
   const obj2 = { style: tmp.container };
-  const tmp2 = callback4(View, obj);
-  obj2.reason = callback(dependencyMap[14]).ChangePhoneReason.CONTACT_SYNC;
+  const tmp2 = callback3(View, obj);
+  obj2.reason = _require(9239).ChangePhoneReason.CONTACT_SYNC;
   obj2.header = tmp2;
   obj2.onComplete = function onComplete(arg0) {
-    return callback(closure_2[15]).submitPhone(arg0, callback);
+    return callback(outer1_2[15]).submitPhone(arg0, callback);
   };
-  return callback3(importDefault(dependencyMap[13]), obj2);
+  return callback2(importDefault(9238), obj2);
 };
 export const VerifyPhoneScreen = function VerifyPhoneScreen() {
+  let require;
   let tmp3;
-  function _handleCodeEntered(closure_5, arg1) {
+  function _handleCodeEntered(result, arg1) {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = stateFromStores(tmp);
-    const _handleCodeEntered = obj;
     return obj(...arguments);
   }
-  const tmp = callback5();
-  [tmp3, closure_0] = _handleCodeEntered(React.useState(false), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  [tmp3, require] = _handleCodeEntered(React.useState(false), 2);
   const tmp4 = _handleCodeEntered(React.useState(), 2);
   const importDefault = tmp4[1];
-  const phone = useContactSyncModalStore().phone;
-  let obj = arg1(dependencyMap[10]);
-  const navigation = obj.useNavigation();
-  const dependencyMap = navigation;
+  let phone = useContactSyncModalStore().phone;
+  let obj = require(navigation[10]);
+  navigation = obj.useNavigation();
   const tmp2 = _handleCodeEntered(React.useState(false), 2);
-  const items = [closure_7];
-  const stateFromStores = arg1(dependencyMap[16]).useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(navigation[16]).useStateFromStores(items, () => {
+    const currentUser = outer1_7.getCurrentUser();
     let phone;
     if (null != currentUser) {
       phone = currentUser.phone;
     }
     return phone;
   });
-  let closure_3 = stateFromStores;
   const items1 = [navigation, phone, stateFromStores];
   const effect = React.useEffect(() => {
-    const callback = null;
+    let c0 = null;
     if (null != stateFromStores) {
-      const result = callback(navigation[15]).handlePhoneVerificationComplete(stateFromStores, navigation);
+      const result = outer1_0(navigation[15]).handlePhoneVerificationComplete(stateFromStores, navigation);
       result.then(() => {
-        const _null = _null(closure_2[17]).runAfterInteractions(() => callback(false));
+        let closure_0 = outer2_0(navigation[17]).runAfterInteractions(() => callback(false));
       });
-      const obj = callback(navigation[15]);
+      const obj = outer1_0(navigation[15]);
     }
     return () => {
-      if (null != closure_0) {
-        closure_0.cancel();
+      if (null != c0) {
+        c0.cancel();
       }
     };
   }, items1);
-  importDefault(dependencyMap[18])(null != phone, "Phone shouldn't be null when trying to verify the code");
+  importDefault(navigation[18])(null != phone, "Phone shouldn't be null when trying to verify the code");
   obj = {
     phone,
     loading: tmp3,
@@ -102,47 +104,44 @@ export const VerifyPhoneScreen = function VerifyPhoneScreen() {
       return _handleCodeEntered(...arguments);
     },
     onVerified(arg0) {
-      const result = callback(navigation[15]).verifyPhoneWithPassword(arg0, navigation);
+      const result = outer1_0(navigation[15]).verifyPhoneWithPassword(arg0, navigation);
     }
   };
-  return callback3(importDefault(dependencyMap[19]), obj);
+  return callback2(importDefault(navigation[19]), obj);
 };
 export const VerifyPasswordScreen = function VerifyPasswordScreen() {
-  const tmp = callback2(React.useState(false), 2);
-  const callback = tmp[1];
-  let obj = callback(dependencyMap[10]);
+  const tmp = callback(React.useState(false), 2);
+  const _require = tmp[1];
+  let obj = _require(phoneToken[10]);
   const navigation = obj.useNavigation();
-  const importDefault = navigation;
-  const phoneToken = useContactSyncModalStore().phoneToken;
-  const dependencyMap = phoneToken;
-  const tmp3 = callback5();
-  const items = [closure_7];
-  const stateFromStores = callback(dependencyMap[16]).useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  phoneToken = useContactSyncModalStore().phoneToken;
+  const tmp3 = _createForOfIteratorHelperLoose();
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(phoneToken[16]).useStateFromStores(items, () => {
+    const currentUser = outer1_7.getCurrentUser();
     let phone;
     if (null != currentUser) {
       phone = currentUser.phone;
     }
     return phone;
   });
-  let closure_3 = stateFromStores;
   const items1 = [navigation, stateFromStores];
   const effect = React.useEffect(() => {
-    const callback = null;
+    let c0 = null;
     if (null != stateFromStores) {
       const result = callback(phoneToken[15]).handlePhoneVerificationComplete(stateFromStores, navigation);
       result.then(() => {
-        const _null = _null(closure_2[17]).runAfterInteractions(() => callback(false));
+        _null = _null(phoneToken[17]).runAfterInteractions(() => callback(false));
       });
       const obj = callback(phoneToken[15]);
     }
     return () => {
-      if (null != closure_0) {
-        closure_0.cancel();
+      if (null != c0) {
+        c0.cancel();
       }
     };
   }, items1);
-  importDefault(dependencyMap[18])(null != phoneToken, "Phone token shouldn't be null when trying to verify the password");
+  navigation(phoneToken[18])(null != phoneToken, "Phone token shouldn't be null when trying to verify the password");
   obj = {
     hideUnverifiedBanner: true,
     parentLoading: tmp[0],
@@ -158,5 +157,5 @@ export const VerifyPasswordScreen = function VerifyPasswordScreen() {
 
     }
   };
-  return callback3(importDefault(dependencyMap[20]), obj);
+  return callback2(navigation(phoneToken[20]), obj);
 };

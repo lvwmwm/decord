@@ -1,10 +1,14 @@
-// Module ID: 5699
-// Function ID: 49068
+// Module ID: 5704
+// Function ID: 49095
 // Name: isPremiumGuild
-// Dependencies: []
+// Dependencies: [653, 1387, 2]
 // Exports: getGuildTraits, isDiscoverableGuild
 
-// Module 5699 (isPremiumGuild)
+// Module 5704 (isPremiumGuild)
+import ME from "ME";
+
+let closure_2;
+let closure_3;
 function isPremiumGuild(fromGuildProfileResult) {
   let premiumTier = fromGuildProfileResult;
   if (null == fromGuildProfileResult) {
@@ -23,14 +27,12 @@ function isPremiumGuild(fromGuildProfileResult) {
         tmp4 = premiumTier.premiumSubscriptionCount > 0;
       }
     }
-    const obj = require(dependencyMap[1]);
+    obj = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
   }
 }
-const _module = require(dependencyMap[0]);
-({ GuildFeatures: closure_2, BoostedGuildTiers: closure_3 } = _module);
-const obj = { PUBLIC: "PUBLIC", INVITE_ONLY: "INVITE_ONLY", APPLY_TO_JOIN: "APPLY_TO_JOIN" };
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/guild_badge/GuildTraits.tsx");
+({ GuildFeatures: closure_2, BoostedGuildTiers: closure_3 } = ME);
+let obj = { PUBLIC: "PUBLIC", INVITE_ONLY: "INVITE_ONLY", APPLY_TO_JOIN: "APPLY_TO_JOIN" };
+const result = require("set").fileFinishedImporting("modules/guild_badge/GuildTraits.tsx");
 
 export const GuildVisibility = obj;
 export const getGuildTraits = function getGuildTraits(fromGuildProfileResult) {
@@ -43,20 +45,20 @@ export const getGuildTraits = function getGuildTraits(fromGuildProfileResult) {
     const tmp7 = isPremiumGuild(fromGuildProfileResult);
     let num = 0;
     if (tmp7) {
-      const tmp10 = require(dependencyMap[1]).isGuildRecord(fromGuildProfileResult) ? fromGuildProfileResult.premiumSubscriberCount : fromGuildProfileResult.premiumSubscriptionCount;
+      const tmp10 = require(1387) /* fromGuildPropertiesWithAdditionalFields */.isGuildRecord(fromGuildProfileResult) ? fromGuildProfileResult.premiumSubscriberCount : fromGuildProfileResult.premiumSubscriptionCount;
       let num3 = 0;
       if (null != tmp10) {
         num3 = tmp10;
       }
       num = num3;
-      const obj2 = require(dependencyMap[1]);
+      const obj2 = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
     }
     if (obj3.isGuildRecord(fromGuildProfileResult)) {
       let NONE = fromGuildProfileResult.premiumTier;
     } else {
       NONE = constants2.NONE;
     }
-    const obj = { verified: set.has(constants.VERIFIED), partnered: set.has(constants.PARTNERED), community: set.has(constants.COMMUNITY), staff: set.has(constants.INTERNAL_EMPLOYEE_ONLY), visibility: APPLY_TO_JOIN, premium: tmp7, premiumSubscriberCount: num, premiumTier: NONE };
+    obj = { verified: set.has(constants.VERIFIED), partnered: set.has(constants.PARTNERED), community: set.has(constants.COMMUNITY), staff: set.has(constants.INTERNAL_EMPLOYEE_ONLY), visibility: APPLY_TO_JOIN, premium: tmp7, premiumSubscriberCount: num, premiumTier: NONE };
     return obj;
   }
   let hasItem = set.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);

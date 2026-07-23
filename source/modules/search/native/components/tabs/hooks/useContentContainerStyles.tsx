@@ -1,16 +1,16 @@
-// Module ID: 15263
-// Function ID: 115211
+// Module ID: 15380
+// Function ID: 117385
 // Name: styles
-// Dependencies: [704643131, 1778384949, 1811939357]
+// Dependencies: [9103, 4130, 2]
 
-// Module 15263 (styles)
+// Module 15380 (styles)
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let SEARCH_LIST_SECTION_TOP_PADDING;
-const _module = require(dependencyMap[0]);
-({ SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING } = _module);
-const _module1 = require(dependencyMap[1]);
-const styles = _module1.createStyles({ filesOrLinksContentContainer: { paddingTop: SEARCH_LIST_HORIZONTAL_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, mediaContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, messagesContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING - _module.SEARCH_ROW_TAP_STATE_PADDING }, membersContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING } });
-const _module2 = require(dependencyMap[2]);
-const result = _module2.fileFinishedImporting("modules/search/native/components/tabs/hooks/useContentContainerStyles.tsx");
+({ SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING } = SearchAutocompleteSelectAnalyticsActions);
+const styles = _createForOfIteratorHelperLoose.createStyles({ filesOrLinksContentContainer: { paddingTop: SEARCH_LIST_HORIZONTAL_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, mediaContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, messagesContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING - SearchAutocompleteSelectAnalyticsActions.SEARCH_ROW_TAP_STATE_PADDING }, membersContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING } });
+const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/hooks/useContentContainerStyles.tsx");
 
 export const useContentContainerStyles = styles;

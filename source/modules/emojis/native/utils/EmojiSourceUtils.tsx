@@ -1,19 +1,20 @@
-// Module ID: 14824
-// Function ID: 111733
+// Module ID: 14940
+// Function ID: 113901
 // Name: _getEmojiSource
-// Dependencies: []
+// Dependencies: [5, 27, 3775, 1392, 2]
 // Exports: getEmojiSource
 
-// Module 14824 (_getEmojiSource)
+// Module 14940 (_getEmojiSource)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { NativeModules } from "get ActivityIndicator";
+
+const require = arg1;
 function _getEmojiSource() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getEmojiSource = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/emojis/native/utils/EmojiSourceUtils.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/emojis/native/utils/EmojiSourceUtils.tsx");
 
 export const getEmojiSource = function getEmojiSource(emoji) {
   return _getEmojiSource(...arguments);

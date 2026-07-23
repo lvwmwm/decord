@@ -1,11 +1,24 @@
-// Module ID: 8565
-// Function ID: 68074
+// Module ID: 8572
+// Function ID: 68114
 // Name: Coachmark
-// Dependencies: []
+// Dependencies: [29, 57, 31, 27, 33, 3991, 4130, 689, 8567, 4548, 8573, 1324, 4539, 4126, 4543, 1212, 5119, 8372, 8574, 477, 3842, 2]
 // Exports: CoachmarkContainer
 
-// Module 8565 (Coachmark)
+// Module 8572 (Coachmark)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
+
 let Pressable;
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_7;
+const require = arg1;
 class Coachmark {
   constructor(arg0) {
     ({ targetMeasurements, surfaceMeasurements, offsetY } = global);
@@ -15,43 +28,40 @@ class Coachmark {
       num = offsetY;
     }
     graphic = global.graphic;
-    arg1 = graphic;
     imgSource = global.imgSource;
-    importDefault = imgSource;
     ({ position, onDismiss, buttonLabel, buttonVariant, onButtonPress, gradientColor, experimental_withBlurBackground, renderImgComponent } = global);
-    dependencyMap = renderImgComponent;
-    tmp = closure_14();
+    tmp = c14();
     Cursor = tmp;
-    ref = importAll.useRef(null);
-    closure_4 = ref;
-    tmp3 = closure_5(importAll.useState(null), 2);
+    ref = result.useRef(null);
+    _objectWithoutProperties = ref;
+    tmp3 = c5(result.useState(null), 2);
     first = tmp3[0];
-    closure_5 = tmp3[1];
-    tmp5 = importDefault(dependencyMap[8])(first, surfaceMeasurements, targetMeasurements, position, -8 + num);
+    c5 = tmp3[1];
+    tmp5 = require("useTooltipPosition")(first, surfaceMeasurements, targetMeasurements, position, -8 + num);
     adjustmentX = tmp5.adjustmentX;
     ({ tooltipX, tooltipY } = tmp5);
-    obj = arg1(dependencyMap[5]);
-    sharedValue = require("module_0");
-    importAll = sharedValue;
+    obj = require("module_3991");
+    sharedValue = require("_objectWithoutProperties");
+    result = sharedValue;
     items = [];
     items[0] = sharedValue;
     items1 = [];
     items1[0] = sharedValue;
-    callback = importAll.useCallback(() => {
+    callback = result.useCallback(() => {
       const result = sharedValue.set(1);
     }, items);
-    callback1 = importAll.useCallback(() => {
+    callback1 = result.useCallback(() => {
       const result = sharedValue.set(0);
     }, items1);
-    obj2 = arg1(dependencyMap[9]);
+    obj2 = require("useProfileThemedButtonStyles");
     buttonPressAnimationProps = obj2.useButtonPressAnimationProps(sharedValue);
-    tmp10 = closure_4(buttonPressAnimationProps, Cursor);
+    tmp10 = _objectWithoutProperties(buttonPressAnimationProps, Cursor);
     items2 = [, , , ];
     items2[0] = graphic;
     items2[1] = imgSource;
     items2[2] = renderImgComponent;
     items2[3] = tmp;
-    memo = importAll.useMemo(() => {
+    memo = result.useMemo(() => {
       if (null != graphic) {
         let obj = {};
         const items = [tmp.bottomMargin];
@@ -64,11 +74,11 @@ class Coachmark {
         if (null != aspectRatio) {
           str = aspectRatio;
         }
-        obj1.height = closure_15[str];
+        obj1.height = outer1_15[str];
         obj1.width = "auto";
         obj["style"] = obj1;
-        obj.children = callback2(graphic(renderImgComponent[10]).Graphic, obj);
-        return callback2(closure_7, obj);
+        obj.children = outer1_10(graphic(renderImgComponent[10]).Graphic, obj);
+        return outer1_10(outer1_7, obj);
       } else {
         let tmp2 = null;
         if (null != renderImgComponent) {
@@ -76,17 +86,17 @@ class Coachmark {
         }
         if (null != imgSource) {
           obj = { source: imgSource, style: tmp.image };
-          tmp2 = callback2(closure_9, obj);
+          tmp2 = outer1_10(outer1_9, obj);
         }
         let tmp8 = null;
         if (null != tmp2) {
           const obj2 = { style: tmp.bottomMargin, children: tmp2 };
-          tmp8 = callback2(closure_7, obj2);
+          tmp8 = outer1_10(outer1_7, obj2);
         }
         return tmp8;
       }
     }, items2);
-    tmp12 = importDefault(dependencyMap[11])("Coachmark");
+    tmp12 = require("useIsMobileVisualRefreshExperimentEnabled")("Coachmark");
     tmp13 = jsxs;
     obj = {};
     obj1 = {
@@ -130,7 +140,7 @@ class Coachmark {
     obj3.color = "mobile-text-heading-primary";
     obj3.children = title;
     items5 = [, ];
-    items5[0] = tmp19(arg1(dependencyMap[13]).Text, obj3);
+    items5[0] = tmp19(require("Text").Text, obj3);
     tmp21 = jsx;
     obj4 = { style: tmp.text, variant: "text-sm/medium" };
     str2 = "text-default";
@@ -139,7 +149,7 @@ class Coachmark {
     }
     obj4.color = str2;
     obj4.children = description;
-    items5[1] = tmp21(arg1(dependencyMap[13]).Text, obj4);
+    items5[1] = tmp21(require("Text").Text, obj4);
     obj2.children = items5;
     items3[1] = tmp16(tmp17, obj2);
     obj1.children = items3;
@@ -158,12 +168,12 @@ class Coachmark {
         tmp24 = Fragment;
         items7 = [, ];
         items7[0] = jsx(View, obj6);
-        tmp28 = arg1;
-        tmp29 = dependencyMap;
+        tmp28 = graphic;
+        tmp29 = renderImgComponent;
         num2 = 14;
         tmp27 = jsx;
         if (experimental_withBlurBackground) {
-          obj7 = {};
+          obj7 = { variant: "secondary-overlay", size: "lg", text: null, onPress: null, grow: true };
           obj7.text = buttonLabel;
           obj7.onPress = onButtonPress;
           obj8 = obj7;
@@ -183,7 +193,7 @@ class Coachmark {
           obj8.onPress = onButtonPress;
           obj8.grow = true;
         }
-        items7[1] = tmp27(arg1(dependencyMap[14]).Button, obj8);
+        items7[1] = tmp27(require("Button").Button, obj8);
         obj5.children = items7;
         tmp23Result = tmp23(tmp24, obj5);
       }
@@ -192,8 +202,8 @@ class Coachmark {
     obj9 = { accessibilityRole: "button" };
     tmp31 = jsx;
     tmp32 = Pressable;
-    intl = arg1(dependencyMap[15]).intl;
-    obj9.accessibilityLabel = intl.string(arg1(dependencyMap[15]).t.cpT0Cq);
+    intl = require("getSystemLocale").intl;
+    obj9.accessibilityLabel = intl.string(require("getSystemLocale").t.cpT0Cq);
     obj9.style = tmp.closeButton;
     obj9.onPress = onDismiss;
     obj9.onPressIn = callback;
@@ -203,22 +213,22 @@ class Coachmark {
       obj10 = {};
       str5 = "xs";
       obj10.size = "xs";
-      tmp34 = importDefault;
-      tmp35 = dependencyMap;
+      tmp34 = imgSource;
+      tmp35 = renderImgComponent;
       num3 = 7;
-      obj10.color = importDefault(dependencyMap[7]).colors.ICON_STRONG;
+      obj10.color = require("_createForOfIteratorHelperLoose").colors.ICON_STRONG;
       obj11 = obj10;
     } else {
       obj11 = {};
     }
-    obj9.children = tmp33(arg1(dependencyMap[16]).XSmallIcon, obj11);
+    obj9.children = tmp33(require("XSmallIcon").XSmallIcon, obj11);
     items6[2] = tmp31(tmp32, obj9);
     obj.children = items6;
     tmp13Result = tmp13(tmp14, obj);
     if (experimental_withBlurBackground) {
       tmp45 = jsx;
-      tmp46 = arg1;
-      tmp47 = dependencyMap;
+      tmp46 = graphic;
+      tmp47 = renderImgComponent;
       num6 = 17;
       obj12 = {};
       obj12.style = tmp.bodyContainer;
@@ -226,7 +236,7 @@ class Coachmark {
       obj12.blurTheme = "dark";
       obj12.pressed = sharedValue;
       obj12.children = tmp13Result;
-      tmp37Result = jsx(arg1(dependencyMap[17]).BackgroundBlurView, obj12);
+      tmp37Result = jsx(require("TwinButtons").BackgroundBlurView, obj12);
     } else {
       obj13 = {};
       items8 = [, ];
@@ -239,16 +249,16 @@ class Coachmark {
         tmp39 = null;
         if (null != gradientColor) {
           tmp40 = jsx;
-          tmp41 = arg1;
-          tmp42 = dependencyMap;
+          tmp41 = graphic;
+          tmp42 = renderImgComponent;
           num4 = 18;
           obj14 = {};
           obj14.style = tmp.gradient;
           obj14.color = gradientColor;
-          tmp43 = importDefault;
+          tmp43 = imgSource;
           num5 = 7;
-          obj14.backgroundColor = importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT;
-          tmp39 = jsx(arg1(dependencyMap[18]).ExpressiveGradient, obj14);
+          obj14.backgroundColor = require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT;
+          tmp39 = jsx(require("ExpressiveGradient").ExpressiveGradient, obj14);
         }
       }
       items9 = [, ];
@@ -267,7 +277,7 @@ class Coachmark {
     items10[0] = tmp.container;
     tmp48 = jsxs;
     tmp49 = View;
-    obj19 = arg1(dependencyMap[19]);
+    obj19 = require("set");
     shadow = undefined;
     if (obj19.isIOS()) {
       shadow = tmp.shadow;
@@ -303,7 +313,7 @@ class Coachmark {
     obj18["onPress"] = onDismiss;
     items12 = [, ];
     items12[0] = tmp.body;
-    obj23 = arg1(dependencyMap[19]);
+    obj23 = require("set");
     if (obj23.isAndroid()) {
       items13 = [, ];
       items13[0] = tmp.shadow;
@@ -335,7 +345,7 @@ function Cursor(arg0) {
   let adjustmentX;
   let position;
   ({ position, adjustmentX } = arg0);
-  const tmp = callback5();
+  const tmp = callback4();
   let str = "column";
   if ("top" === position) {
     str = "column-reverse";
@@ -349,61 +359,54 @@ function Cursor(arg0) {
     tmp3 = obj;
   }
   obj = { style: items };
-  const items = [tmp.cursorContainer, tmp3, ];
+  items = [tmp.cursorContainer, tmp3, ];
   obj = { flexDirection: str, left: -adjustmentX };
   items[2] = obj;
-  const items1 = [callback3(closure_7, { style: tmp.cursorHead }), callback3(closure_7, { style: tmp.cursorSpine })];
+  const items1 = [callback2(closure_7, { style: tmp.cursorHead }), callback2(closure_7, { style: tmp.cursorSpine })];
   obj.children = items1;
-  return callback4(closure_7, obj);
+  return callback3(closure_7, obj);
 }
-let closure_3 = [null];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[3]);
-({ View: closure_7, Pressable } = tmp2);
-const Image = tmp2.Image;
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
-let closure_13 = importDefault(dependencyMap[5]).createAnimatedComponent(Pressable);
-let obj1 = arg1(dependencyMap[6]);
-let obj = { container: { "Null": "keys", "Null": "disabled" } };
+let closure_3 = ["style"];
+({ View: closure_7, Pressable } = get_ActivityIndicator);
+const Image = get_ActivityIndicator.Image;
+({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
+let closure_13 = require("module_3991").createAnimatedComponent(Pressable);
+let obj = { container: { position: "absolute", alignItems: "center" } };
 obj = {};
-const merged = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_BUTTON_OVERLAY);
+let merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_BUTTON_OVERLAY);
 obj.shadow = obj;
-obj1 = { width: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BODY_WIDTH, borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden", zIndex: 1 };
-obj.body = obj1;
+_createForOfIteratorHelperLoose = { width: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BODY_WIDTH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden", zIndex: 1 };
+obj.body = _createForOfIteratorHelperLoose;
 obj.textGap = { gap: 4 };
-const importDefaultResult = importDefault(dependencyMap[5]);
-obj.textOnlyPadding = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_24 };
-const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_24 };
-obj.bodyBgColor = { borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
-const obj3 = { borderWidth: 1, borderColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.lg };
-obj.gradient = { borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden" };
-const obj5 = { "Bool(true)": "string", "Bool(true)": "string", "Bool(true)": "color", padding: importDefault(dependencyMap[7]).space.PX_16 };
+obj.textOnlyPadding = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let obj2 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
+obj.bodyBgColor = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+let obj3 = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BORDER_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+obj.gradient = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
+let obj5 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", justifyContent: "center" };
 obj.bodyContainer = obj5;
-obj.center = { <string:3596066964>: null, <string:3638417373>: null };
-const obj4 = { borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden" };
-obj.buttonSpacing = { height: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
-obj.text = {};
-obj.cursorContainer = { fromBinary: "isArray", ConvertEmoticons: "isArray" };
-const obj6 = { height: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
-obj.cursorHead = { borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
-const obj7 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, borderColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.cursorSpine = { backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.image = { hideWhenScrolling: "isArray", autoCapitalize: "c" };
-const obj8 = { backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.bottomMargin = { marginBottom: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
-const obj9 = { marginBottom: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
-obj.closeButton = { position: "absolute", top: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING, right: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
-let closure_14 = obj1.createStyles(obj);
-let closure_15 = {};
-const obj10 = { position: "absolute", top: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING, right: importDefault(dependencyMap[7]).modules.mobile.COACHMARK_BUTTON_SPACING };
-const result = arg1(dependencyMap[21]).fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
+obj.center = { alignItems: "center", justifyContent: "center" };
+let obj4 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
+obj.buttonSpacing = { height: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
+obj.text = { maxWidth: 200, textAlign: "center" };
+obj.cursorContainer = { alignItems: "center", zIndex: 0 };
+let obj7 = { height: 8, width: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderWidth: 2, backgroundColor: "transparent", borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+obj.cursorHead = obj7;
+let obj8 = { width: 2, height: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+obj.cursorSpine = obj8;
+obj.image = { height: 40, width: 40 };
+let obj6 = { height: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
+obj.bottomMargin = { marginBottom: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
+let obj9 = { marginBottom: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
+obj.closeButton = { position: "absolute", top: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING, right: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
+let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_15 = { "21/9": 90, "16/9": 90, "6/4": 60, "2/1": 40, "1/1": 40 };
+let obj10 = { position: "absolute", top: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING, right: require("_createForOfIteratorHelperLoose").modules.mobile.COACHMARK_BUTTON_SPACING };
+let result = require("result").fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
 
 export { Coachmark };
 export const CoachmarkContainer = function CoachmarkContainer(experimental_withBlurBackground) {
-  let obj = arg1(dependencyMap[20]);
+  let obj = require(3842) /* ManaContext */;
   let str = "dark";
   if (!experimental_withBlurBackground.experimental_withBlurBackground) {
     str = obj.useThemeContext().theme;
@@ -411,6 +414,6 @@ export const CoachmarkContainer = function CoachmarkContainer(experimental_withB
   obj = { theme: str };
   obj = {};
   const merged = Object.assign(experimental_withBlurBackground);
-  obj.children = callback3(Coachmark, obj);
-  return callback3(arg1(dependencyMap[20]).ThemeContextProvider, obj);
+  obj.children = callback2(Coachmark, obj);
+  return callback2(require(3842) /* ManaContext */.ThemeContextProvider, obj);
 };

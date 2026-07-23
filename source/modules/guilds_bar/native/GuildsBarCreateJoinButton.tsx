@@ -1,45 +1,52 @@
-// Module ID: 14765
-// Function ID: 111291
+// Module ID: 14881
+// Function ID: 113459
 // Name: handleCreateJoinGuildPress
-// Dependencies: []
+// Dependencies: [5, 31, 27, 653, 1851, 33, 4130, 9585, 1934, 11737, 5597, 7941, 5484, 1324, 14823, 1212, 14882, 11254, 689, 2]
 // Exports: handleCreateJoinGuildPress
 
-// Module 14765 (handleCreateJoinGuildPress)
+// Module 14881 (handleCreateJoinGuildPress)
+import jsxProd from "jsxProd";
+import { View } from "get ActivityIndicator";
+import ME from "ME";
+import { PremiumUpsellTypes } from "GuildFeatures";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function handleCreateJoinGuildPress() {
   return _handleCreateJoinGuildPress(...arguments);
 }
 function _handleCreateJoinGuildPress() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleCreateJoinGuildPress = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const View = arg1(dependencyMap[2]).View;
-const importAllResult = importAll(dependencyMap[1]);
-({ AnalyticsPages: closure_5, TooltipNames: closure_6, UpsellTypes: closure_7 } = arg1(dependencyMap[3]));
-const PremiumUpsellTypes = arg1(dependencyMap[4]).PremiumUpsellTypes;
-const jsx = arg1(dependencyMap[5]).jsx;
-const tmp2 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ stretch: { alignSelf: "stretch" } });
+({ AnalyticsPages: closure_5, TooltipNames: closure_6, UpsellTypes: closure_7 } = ME);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ stretch: { alignSelf: "stretch" } });
 let closure_11 = { onPress: handleCreateJoinGuildPress };
-const obj2 = arg1(dependencyMap[6]);
-const memoResult = importAllResult.memo(function GuildsBarCreateJoinButton() {
-  const tmp = importDefault(dependencyMap[13])("GuildsBarCreateJoinButton");
-  let obj = arg1(dependencyMap[14]);
+const memoResult = require("result").memo(function GuildsBarCreateJoinButton() {
+  const tmp = importDefault(1324)("GuildsBarCreateJoinButton");
+  let obj = require(14823) /* UnreadIndicator */;
   obj = { style: callback2().stretch };
   const tmp2 = callback2();
-  obj = { circle: !tmp, styles: obj.useGuildsBarAnimatedWrapperStyles(), overState: undefined, config: closure_11 };
+  obj = { selected: false, circle: !tmp, unread: false };
+  obj.styles = obj.useGuildsBarAnimatedWrapperStyles();
+  obj.overState = undefined;
+  obj.config = closure_11;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
-  const intl = arg1(dependencyMap[15]).intl;
-  obj.label = intl.string(arg1(dependencyMap[15]).t.l5WIbf);
-  obj.expandedChildren = jsx(arg1(dependencyMap[16]).HomeDrawerAddServerRowExpandedChildren, {});
-  const obj1 = { size: "md", color: importDefault(dependencyMap[18]).colors.MOBILE_GUILDBAR_ICON_DEFAULT };
-  obj.children = jsx(arg1(dependencyMap[17]).CirclePlusIcon, obj1);
-  obj.children = jsx(importDefault(dependencyMap[14]), obj);
-  return <View {...obj} />;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t.l5WIbf);
+  obj.expandedChildren = jsx(require(14882) /* HomeDrawerAddServerRowExpandedChildren */.HomeDrawerAddServerRowExpandedChildren, {});
+  const obj1 = { size: "md", color: importDefault(689).colors.MOBILE_GUILDBAR_ICON_DEFAULT };
+  obj.children = jsx(require(11254) /* CirclePlusIcon */.CirclePlusIcon, { size: "md", color: importDefault(689).colors.MOBILE_GUILDBAR_ICON_DEFAULT });
+  obj.children = jsx(importDefault(14823), { selected: false, circle: !tmp, unread: false });
+  return <View selected={false} circle={!tmp} unread={false} />;
 });
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx");
 
 export default memoResult;
 export { handleCreateJoinGuildPress };

@@ -1,30 +1,30 @@
-// Module ID: 4676
-// Function ID: 40746
+// Module ID: 4679
+// Function ID: 40764
 // Name: NativePermissionBaseUtils
-// Dependencies: [1553, 2, 27, 4686, 4688, 6, 7, 15, 17, 18]
+// Dependencies: [5, 6, 7, 4680, 4344, 653, 675, 4681, 1212, 2]
 
-// Module 4676 (NativePermissionBaseUtils)
-import isMetaQuest from "isMetaQuest";
-import result2 from "result2";
-import getActivityIndicator from "get ActivityIndicator";
-import module_4686 from "module_4686";
-import RNCImageCropPicker from "RNCImageCropPicker";
-import { AnalyticEvents } from "_classCallCheck";
-import _inherits from "_inherits";
+// Module 4679 (NativePermissionBaseUtils)
+import ME from "ME";
+import expandLocation from "expandLocation";
+import NativePermissionActionCreators from "NativePermissionActionCreators";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import NativePermissionStatus from "NativePermissionStatus";
+import { AnalyticEvents } from "ME";
 
-({ NativePermissionTypes: closure_7, NativePermissionStates: closure_8, NativePermissionStatus: closure_9 } = RNCImageCropPicker);
-const result = _inherits.fileFinishedImporting("modules/native_permissions/NativePermissionBaseUtils.tsx");
-
-export const NativePermissionBaseUtils = () => {
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ NativePermissionTypes: closure_7, NativePermissionStates: closure_8, NativePermissionStatus: closure_9 } = NativePermissionStatus);
+const tmp3 = (() => {
   class NativePermissionBaseUtils {
     constructor() {
-      tmp = result2(this, NativePermissionBaseUtils);
-      tmp2 = new module_4686();
+      tmp = outer1_4(this, NativePermissionBaseUtils);
+      tmp2 = new outer1_6();
       this.storage = tmp2;
       return;
     }
   }
-  const importDefault = NativePermissionBaseUtils;
   let obj = { key: "requestAuthorization" };
   let closure_0 = callback(async function(arg0, arg1, arg2) {
     const self = this;
@@ -35,14 +35,14 @@ export const NativePermissionBaseUtils = () => {
       throw error;
     } else {
       let obj = { type: arg0 };
-      callback(closure_2[6]).track(constants2.PERMISSIONS_REQUESTED, obj);
+      NativePermissionBaseUtils(outer2_2[6]).track(outer2_10.PERMISSIONS_REQUESTED, obj);
       const tmp20 = yield arg1();
-      let tmp2 = tmp20 === constants.AUTHORIZED;
+      let tmp2 = tmp20 === outer2_9.AUTHORIZED;
       if (!tmp2) {
-        tmp2 = tmp20 === constants.LIMITED;
+        tmp2 = tmp20 === outer2_9.LIMITED;
       }
-      obj = callback(closure_2[7]);
-      obj.setPermission(arg0, tmp2 ? closure_8.ACCEPTED : closure_8.DENIED);
+      obj = NativePermissionBaseUtils(outer2_2[7]);
+      obj.setPermission(arg0, tmp2 ? outer2_8.ACCEPTED : outer2_8.DENIED);
       let showAuthorizationError = !tmp2;
       if (!tmp2) {
         showAuthorizationError = arg2.showAuthorizationError;
@@ -74,41 +74,41 @@ export const NativePermissionBaseUtils = () => {
   items[3] = {
     key: "showAlert",
     value(arg0) {
-      const self = this;
-      const callback = this;
-      const NativePermissionBaseUtils = arg0;
-      const intl = callback(closure_2[8]).intl;
-      const intl2 = callback(closure_2[8]).intl;
-      const combined = "" + intl.string(callback(closure_2[8]).t.68G7fD) + ". " + intl2.string(callback(closure_2[8]).t.5Jvu1R);
-      let obj = { [closure_7.CAMERA]: combined, [closure_7.HEADSET_CAMERA]: combined };
-      const intl3 = callback(closure_2[8]).intl;
-      const stringResult = intl.string(callback(closure_2[8]).t.68G7fD);
-      const intl4 = callback(closure_2[8]).intl;
-      obj[constants.AUDIO] = "" + intl3.string(callback(closure_2[8]).t.xisTfe) + ". " + intl4.string(callback(closure_2[8]).t.5Jvu1R);
-      const intl5 = callback(closure_2[8]).intl;
-      const stringResult1 = intl3.string(callback(closure_2[8]).t.xisTfe);
-      const intl6 = callback(closure_2[8]).intl;
-      obj[constants.PHOTOS] = "" + intl5.string(callback(closure_2[8]).t.jQHU4M) + ". " + intl6.string(callback(closure_2[8]).t.5Jvu1R);
-      const intl7 = callback(closure_2[8]).intl;
-      const stringResult2 = intl5.string(callback(closure_2[8]).t.jQHU4M);
-      const intl8 = callback(closure_2[8]).intl;
-      obj[constants.INPUT_MONITORING] = "" + intl7.string(callback(closure_2[8]).t.UIBqsS) + ". " + intl8.string(callback(closure_2[8]).t.5Jvu1R);
-      const intl9 = callback(closure_2[8]).intl;
-      const stringResult3 = intl7.string(callback(closure_2[8]).t.UIBqsS);
-      const intl10 = callback(closure_2[8]).intl;
-      obj[constants.CONTACTS] = "" + intl9.string(callback(closure_2[8]).t.kTtf7o) + ". " + intl10.string(callback(closure_2[8]).t.5Jvu1R);
+      let self = this;
+      self = this;
+      let closure_1 = arg0;
+      const intl = callback(outer1_2[8]).intl;
+      const intl2 = callback(outer1_2[8]).intl;
+      const combined = "" + intl.string(callback(outer1_2[8]).t["68G7fD"]) + ". " + intl2.string(callback(outer1_2[8]).t["5Jvu1R"]);
+      let obj = { [outer1_7.CAMERA]: combined, [outer1_7.HEADSET_CAMERA]: combined };
+      const intl3 = callback(outer1_2[8]).intl;
+      const stringResult = intl.string(callback(outer1_2[8]).t["68G7fD"]);
+      const intl4 = callback(outer1_2[8]).intl;
+      obj[outer1_7.AUDIO] = "" + intl3.string(callback(outer1_2[8]).t.xisTfe) + ". " + intl4.string(callback(outer1_2[8]).t["5Jvu1R"]);
+      const intl5 = callback(outer1_2[8]).intl;
+      const stringResult1 = intl3.string(callback(outer1_2[8]).t.xisTfe);
+      const intl6 = callback(outer1_2[8]).intl;
+      obj[outer1_7.PHOTOS] = "" + intl5.string(callback(outer1_2[8]).t.jQHU4M) + ". " + intl6.string(callback(outer1_2[8]).t["5Jvu1R"]);
+      const intl7 = callback(outer1_2[8]).intl;
+      const stringResult2 = intl5.string(callback(outer1_2[8]).t.jQHU4M);
+      const intl8 = callback(outer1_2[8]).intl;
+      obj[outer1_7.INPUT_MONITORING] = "" + intl7.string(callback(outer1_2[8]).t.UIBqsS) + ". " + intl8.string(callback(outer1_2[8]).t["5Jvu1R"]);
+      const intl9 = callback(outer1_2[8]).intl;
+      const stringResult3 = intl7.string(callback(outer1_2[8]).t.UIBqsS);
+      const intl10 = callback(outer1_2[8]).intl;
+      obj[outer1_7.CONTACTS] = "" + intl9.string(callback(outer1_2[8]).t.kTtf7o) + ". " + intl10.string(callback(outer1_2[8]).t["5Jvu1R"]);
       if (null != obj[arg0]) {
         obj = {};
-        const intl11 = callback(closure_2[8]).intl;
-        obj.title = intl11.string(callback(closure_2[8]).t.u1Gxpu);
+        const intl11 = callback(outer1_2[8]).intl;
+        obj.title = intl11.string(callback(outer1_2[8]).t.u1Gxpu);
         obj.body = tmp7;
         obj.onConfirm = function onConfirm() {
-          return self.openSettings(arg0);
+          return self.openSettings(closure_1);
         };
-        const intl12 = callback(closure_2[8]).intl;
-        obj.cancelText = intl12.string(callback(closure_2[8]).t.ETE/oC);
-        const intl13 = callback(closure_2[8]).intl;
-        obj.confirmText = intl13.string(callback(closure_2[8]).t.XgZk+u);
+        const intl12 = callback(outer1_2[8]).intl;
+        obj.cancelText = intl12.string(callback(outer1_2[8]).t["ETE/oC"]);
+        const intl13 = callback(outer1_2[8]).intl;
+        obj.confirmText = intl13.string(callback(outer1_2[8]).t["XgZk+u"]);
         self.openAlertModal(obj);
       }
     }
@@ -130,4 +130,7 @@ export const NativePermissionBaseUtils = () => {
     }
   ];
   return callback2(NativePermissionBaseUtils, items, items1);
-}();
+})();
+const result = require("_defineProperties").fileFinishedImporting("modules/native_permissions/NativePermissionBaseUtils.tsx");
+
+export const NativePermissionBaseUtils = tmp3;

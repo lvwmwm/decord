@@ -1,9 +1,18 @@
 // Module ID: 1152
-// Function ID: 13105
+// Function ID: 13106
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 27, 1153, 973, 1088, 794, 1000, 977, 1154, 1155, 1104, 791, 1105]
 
 // Module 1152 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import ignoreRequireCycleLogs from "ignoreRequireCycleLogs";
+import getDefaultSidecarUrl from "getDefaultSidecarUrl";
+import mobileReplayIntegrationNoop from "mobileReplayIntegrationNoop";
+import _get from "_get";
+import _inherits from "_inherits";
+import { Alert } from "get ActivityIndicator";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,37 +23,30 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  arg1 = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_6(closure_5(prototype), arg1, arg2);
+  const tmpResult = _get(mobileReplayIntegrationNoop(prototype), arg1, arg2);
   const dependencyMap = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const Alert = arg1(dependencyMap[6]).Alert;
 
-export const ReactNativeClient = (Client) => {
+export const ReactNativeClient = ((Client) => {
   class ReactNativeClient {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, ReactNativeClient);
-      obj = ReactNativeClient(closure_1[7]);
-      ReactNativeVersion = ReactNativeClient(closure_1[8]).ReactNativeLibraries.ReactNativeVersion;
+      tmp = outer1_2(this, apply);
+      obj = ReactNativeClient(outer1_1[7]);
+      ReactNativeVersion = ReactNativeClient(outer1_1[8]).ReactNativeLibraries.ReactNativeVersion;
       version = undefined;
       if (null !== ReactNativeVersion) {
         if (undefined !== ReactNativeVersion) {
@@ -63,9 +65,9 @@ export const ReactNativeClient = (Client) => {
       }
       if (!sdk) {
         tmp6 = ReactNativeClient;
-        tmp7 = closure_1;
+        tmp7 = outer1_1;
         num = 9;
-        sdk = ReactNativeClient(closure_1[9]).defaultSdkInfo;
+        sdk = ReactNativeClient(outer1_1[9]).defaultSdkInfo;
       }
       obj1 = {};
       obj2 = {};
@@ -99,9 +101,9 @@ export const ReactNativeClient = (Client) => {
       }
       if (enableLogs2) {
         tmp11 = ReactNativeClient;
-        tmp12 = closure_1;
+        tmp12 = outer1_1;
         num2 = 10;
-        debug = ReactNativeClient(closure_1[10]).debug;
+        debug = ReactNativeClient(outer1_1[10]).debug;
         str3 = "disabling Sentry logs on JavaScript due to rule set by logsOrigin";
         logResult = debug.log("disabling Sentry logs on JavaScript due to rule set by logsOrigin");
         flag = false;
@@ -109,29 +111,29 @@ export const ReactNativeClient = (Client) => {
       }
       items = [];
       items[0] = Client;
-      obj5 = closure_5(ReactNativeClient);
-      tmp14 = closure_4;
-      if (closure_8()) {
+      obj5 = outer1_5(apply);
+      tmp14 = outer1_4;
+      if (outer1_8()) {
         _Reflect = Reflect;
-        tmp16 = closure_5;
-        constructResult = Reflect.construct(obj5, items, closure_5(self).constructor);
+        tmp16 = outer1_5;
+        constructResult = Reflect.construct(obj5, items, outer1_5(self).constructor);
       } else {
         constructResult = obj5.apply(self, items);
       }
       tmp14Result = tmp14(self, constructResult);
-      ReactNativeClient = tmp14Result;
+      apply = tmp14Result;
       tmp14Result._outcomesBuffer = [];
       if (true === Client.sendDefaultPii) {
         tmp17 = ReactNativeClient;
-        tmp18 = closure_1;
+        tmp18 = outer1_1;
         num3 = 10;
         str4 = "beforeSendSession";
-        onResult = tmp14Result.on("beforeSendSession", ReactNativeClient(closure_1[10]).addAutoIpAddressToSession);
+        onResult = tmp14Result.on("beforeSendSession", ReactNativeClient(outer1_1[10]).addAutoIpAddressToSession);
       }
       if (Client.enableLogs) {
         str5 = "flush";
         onResult1 = tmp14Result.on("flush", () => {
-          const result = tmp14Result(closure_1[10])._INTERNAL_flushLogsBuffer(tmp14Result);
+          const result = ReactNativeClient(outer2_1[10])._INTERNAL_flushLogsBuffer(closure_0);
         });
         str6 = "afterCaptureLog";
         onResult2 = tmp14Result.on("afterCaptureLog", () => {
@@ -140,7 +142,7 @@ export const ReactNativeClient = (Client) => {
             clearTimeout(tmp14Result._logFlushIdleTimeout);
           }
           tmp14Result._logFlushIdleTimeout = setTimeout(() => {
-            const result = callback(closure_1[10])._INTERNAL_flushLogsBuffer(callback);
+            const result = ReactNativeClient(outer3_1[10])._INTERNAL_flushLogsBuffer(outer1_0);
           }, 5000);
         });
       }
@@ -148,7 +150,6 @@ export const ReactNativeClient = (Client) => {
       return tmp14Result;
     }
   }
-  const arg1 = ReactNativeClient;
   callback2(ReactNativeClient, Client);
   let obj = {
     key: "eventFromException",
@@ -158,24 +159,24 @@ export const ReactNativeClient = (Client) => {
         if (undefined !== arguments[1]) {
           let obj = arguments[1];
         }
-        const obj2 = ReactNativeClient(closure_1[11]);
+        const obj2 = ReactNativeClient(outer1_1[11]);
         return obj2.eventFromException(self._options.stackParser, arg0, obj, self._options.attachStacktrace);
       }
       obj = {};
     }
   };
-  const items = [obj, , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , ];
   obj = {
     key: "eventFromMessage",
     value: function eventFromMessage(arg0, arg1, arg2) {
-      return ReactNativeClient(closure_1[11]).eventFromMessage(this._options.stackParser, arg0, arg1, arg2, this._options.attachStacktrace);
+      return ReactNativeClient(outer1_1[11]).eventFromMessage(this._options.stackParser, arg0, arg1, arg2, this._options.attachStacktrace);
     }
   };
   items[1] = obj;
   obj = {
     key: "nativeCrash",
     value: function nativeCrash() {
-      const NATIVE = ReactNativeClient(closure_1[12]).NATIVE;
+      const NATIVE = ReactNativeClient(outer1_1[12]).NATIVE;
       NATIVE.nativeCrash();
     }
   };
@@ -183,16 +184,17 @@ export const ReactNativeClient = (Client) => {
   items[3] = {
     key: "close",
     value: function close() {
-      return callback4(ReactNativeClient, "close", this, 3)([]).then((arg0) => {
-        const NATIVE = arg0(closure_1[12]).NATIVE;
-        return NATIVE.closeNativeSdk().then(() => arg0);
+      return outer1_9(ReactNativeClient, "close", this, 3)([]).then((arg0) => {
+        let closure_0 = arg0;
+        const NATIVE = ReactNativeClient(outer2_1[12]).NATIVE;
+        return NATIVE.closeNativeSdk().then(() => closure_0);
       });
     }
   };
   items[4] = {
     key: "captureUserFeedback",
     value: function captureUserFeedback(arg0) {
-      let obj = ReactNativeClient(closure_1[13]);
+      let obj = ReactNativeClient(outer1_1[13]);
       obj = { metadata: this._options._metadata, dsn: this.getDsn(), tunnel: undefined };
       this.sendEnvelope(obj.createUserFeedbackEnvelope(arg0, obj));
     }
@@ -202,42 +204,42 @@ export const ReactNativeClient = (Client) => {
     value: function sendEnvelope(arg0) {
       const self = this;
       const _clearOutcomesResult = this._clearOutcomes();
-      this._outcomesBuffer = ReactNativeClient(closure_1[14]).mergeOutcomes(this._outcomesBuffer, _clearOutcomesResult);
+      this._outcomesBuffer = ReactNativeClient(outer1_1[14]).mergeOutcomes(this._outcomesBuffer, _clearOutcomesResult);
       if (this._options.sendClientReports) {
         const result = self._attachClientReportTo(self._outcomesBuffer, arg0);
       }
-      const ReactNativeClient = true;
+      let c0 = true;
       if (self._isEnabled()) {
         if (self._transport) {
           if (self._dsn) {
             self.emit("beforeEnvelope", arg0);
             const _transport = self._transport;
             _transport.send(arg0).then(null, (arg0) => {
-              if (arg0 instanceof _true(closure_1[10]).SentryError) {
-                const _true = false;
-                const debug2 = _true(closure_1[10]).debug;
+              if (arg0 instanceof ReactNativeClient(outer2_1[10]).SentryError) {
+                let c0 = false;
+                const debug2 = ReactNativeClient(outer2_1[10]).debug;
                 debug2.error("SentryError while sending event, keeping outcomes buffer:", arg0);
               } else {
-                const debug = _true(closure_1[10]).debug;
+                const debug = ReactNativeClient(outer2_1[10]).debug;
                 debug.error("Error while sending event:", arg0);
               }
             });
             const sendResult = _transport.send(arg0);
           }
-          if (ReactNativeClient) {
+          if (c0) {
             self._outcomesBuffer = [];
           }
           return Promise.resolve({});
         }
       }
-      const debug = ReactNativeClient(closure_1[10]).debug;
+      let debug = ReactNativeClient(outer1_1[10]).debug;
       debug.error("Transport disabled");
     }
   };
   items[6] = {
     key: "init",
     value: function init() {
-      callback4(ReactNativeClient, "init", this, 3)([]);
+      outer1_9(ReactNativeClient, "init", this, 3)([]);
       this._initNativeSdk();
     }
   };
@@ -245,7 +247,7 @@ export const ReactNativeClient = (Client) => {
     key: "on",
     value: function on(arg0, arg1) {
       const items = [arg0, arg1];
-      return callback4(ReactNativeClient, "on", this, 3)(items);
+      return outer1_9(ReactNativeClient, "on", this, 3)(items);
     }
   };
   items[8] = {
@@ -261,20 +263,20 @@ export const ReactNativeClient = (Client) => {
         array[num2 - 1] = arguments[num2];
       }
       const items = [arg0];
-      callback4(ReactNativeClient, "emit", this, 3)(items.concat(array));
+      outer1_9(ReactNativeClient, "emit", this, 3)(items.concat(array));
     }
   };
   items[9] = {
     key: "_initNativeSdk",
     value: function _initNativeSdk() {
-      const self = this;
-      const ReactNativeClient = this;
-      const NATIVE = ReactNativeClient(closure_1[12]).NATIVE;
-      const obj = {};
+      let self = this;
+      self = this;
+      const NATIVE = ReactNativeClient(outer1_1[12]).NATIVE;
+      let obj = {};
       const merged = Object.assign({}, this._options);
-      obj.defaultSidecarUrl = ReactNativeClient(closure_1[15]).getDefaultSidecarUrl();
-      const obj2 = ReactNativeClient(closure_1[15]);
-      const devServer = ReactNativeClient(closure_1[16]).getDevServer();
+      obj.defaultSidecarUrl = ReactNativeClient(outer1_1[15]).getDefaultSidecarUrl();
+      const obj2 = ReactNativeClient(outer1_1[15]);
+      const devServer = ReactNativeClient(outer1_1[16]).getDevServer();
       let str;
       if (null !== devServer) {
         if (undefined !== devServer) {
@@ -286,9 +288,9 @@ export const ReactNativeClient = (Client) => {
       }
       obj.devServerUrl = str;
       let options;
-      if (self._integrations[closure_0(undefined, closure_1[17]).MOBILE_REPLAY_INTEGRATION_NAME]) {
-        if ("options" in self._integrations[closure_0(undefined, closure_1[17]).MOBILE_REPLAY_INTEGRATION_NAME]) {
-          options = self._integrations[closure_0(undefined, closure_1[17]).MOBILE_REPLAY_INTEGRATION_NAME].options;
+      if (self._integrations[ReactNativeClient(undefined, outer1_1[17]).MOBILE_REPLAY_INTEGRATION_NAME]) {
+        if ("options" in self._integrations[ReactNativeClient(undefined, outer1_1[17]).MOBILE_REPLAY_INTEGRATION_NAME]) {
+          options = self._integrations[ReactNativeClient(undefined, outer1_1[17]).MOBILE_REPLAY_INTEGRATION_NAME].options;
         }
       }
       obj.mobileReplayOptions = options;
@@ -301,7 +303,7 @@ export const ReactNativeClient = (Client) => {
       }
       obj.androidProfilingOptions = prop;
       const nativeSdk = NATIVE.initNativeSdk(Object.assign(merged, obj));
-      const obj3 = ReactNativeClient(closure_1[16]);
+      const obj3 = ReactNativeClient(outer1_1[16]);
       const nextPromise = nativeSdk.then((arg0) => arg0, () => {
         const result = self._showCannotConnectDialog();
         return false;
@@ -322,7 +324,7 @@ export const ReactNativeClient = (Client) => {
         }
         self.emit("afterInit");
       }).then(undefined, (arg0) => {
-        const debug = self(closure_1[10]).debug;
+        const debug = ReactNativeClient(outer2_1[10]).debug;
         debug.error("The OnReady callback threw an error: ", arg0);
       });
     }
@@ -339,13 +341,13 @@ export const ReactNativeClient = (Client) => {
       if (_outcomesBuffer.length > 0) {
         let obj = { type: "client_report" };
         const items = [obj, ];
-        obj = { timestamp: ReactNativeClient(closure_1[10]).dateTimestampInSeconds(), discarded_events: _outcomesBuffer };
+        obj = { timestamp: ReactNativeClient(outer1_1[10]).dateTimestampInSeconds(), discarded_events: _outcomesBuffer };
         items[1] = obj;
-        const obj3 = ReactNativeClient(closure_1[10]);
-        arg1[closure_0(undefined, closure_1[13]).items].push(items);
-        const arr2 = arg1[closure_0(undefined, closure_1[13]).items];
+        const obj3 = ReactNativeClient(outer1_1[10]);
+        arg1[ReactNativeClient(undefined, outer1_1[13]).items].push(items);
+        const arr2 = arg1[ReactNativeClient(undefined, outer1_1[13]).items];
       }
     }
   };
   return callback(ReactNativeClient, items);
-}(arg1(dependencyMap[10]).Client);
+})(require("registerSpanErrorInstrumentation").Client);

@@ -1,24 +1,36 @@
-// Module ID: 10399
-// Function ID: 80139
+// Module ID: 10409
+// Function ID: 80189
 // Name: LikelyAtoWarningBanner
-// Dependencies: []
+// Dependencies: [31, 9101, 10410, 653, 662, 33, 4130, 689, 10131, 10132, 4337, 10282, 7488, 3827, 10411, 1212, 10414, 1934, 4126, 10418, 5459, 2]
 
-// Module 10399 (LikelyAtoWarningBanner)
+// Module 10409 (LikelyAtoWarningBanner)
+import result from "result";
+import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+import LIKELY_ATO_MORE_TIPS_MODAL_KEY from "LIKELY_ATO_MORE_TIPS_MODAL_KEY";
+import { AnalyticEvents } from "ME";
+import { MuteUntilSeconds } from "MAX_FAVORITES";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 class LikelyAtoWarningBanner {
   constructor(arg0) {
     channelId = global.channelId;
-    arg1 = channelId;
     warningId = global.warningId;
-    importDefault = warningId;
     senderId = global.senderId;
-    dependencyMap = senderId;
     handleLearnMore = function handleLearnMore() {
       let obj = channelId(senderId[8]);
       obj = { channelId, warningId, senderId, warningType: callback.LIKELY_ATO, cta: channelId(senderId[8]).CtaEventTypes.USER_MODAL_LEARN_MORE };
       obj.trackCtaEvent(obj);
-      warningId(senderId[13]).openURL(closure_7);
+      warningId(senderId[13]).openURL(outer1_7);
     };
-    handleLearnMore = closure_13();
+    handleLearnMore = c13();
     items = [, , ];
     items[0] = channelId;
     items[1] = warningId;
@@ -26,7 +38,7 @@ class LikelyAtoWarningBanner {
     effect = handleLearnMore.useEffect(() => {
       let obj = channelId(senderId[8]);
       obj = { channelId, warningId, senderId, warningType: callback.LIKELY_ATO };
-      obj.trackViewedEvent(constants.SAFETY_WARNING_VIEWED, obj);
+      obj.trackViewedEvent(outer1_8.SAFETY_WARNING_VIEWED, obj);
     }, items);
     items1 = [, ];
     items1[0] = channelId;
@@ -43,9 +55,9 @@ class LikelyAtoWarningBanner {
     items2[1] = senderId;
     items2[2] = warningId;
     items2[3] = callback;
-    f80144 = handleLearnMore.useCallback((cta) => {
+    f80194 = handleLearnMore.useCallback((cta) => {
       let obj = channelId(senderId[11]);
-      obj = { channelId, guildId: null, muteDurationSeconds: constants2.ALWAYS };
+      obj = { channelId, guildId: null, muteDurationSeconds: outer1_9.ALWAYS };
       const result = obj.handleMuteSettingPress(obj);
       warningId(senderId[12]).showMuteSuccessToast(senderId, channelId);
       const obj3 = warningId(senderId[12]);
@@ -54,42 +66,42 @@ class LikelyAtoWarningBanner {
       callback();
     }, items2);
     obj = { channelId, warningId, senderId, warningType: SafetyWarningTypes.LIKELY_ATO };
-    tmp3 = importDefault(dependencyMap[14]);
-    intl = arg1(dependencyMap[15]).intl;
-    obj.header = intl.string(arg1(dependencyMap[15]).t.R8UsiI);
-    intl2 = arg1(dependencyMap[15]).intl;
-    obj.description = intl2.string(arg1(dependencyMap[15]).t.lI8nQl);
+    tmp3 = require("SafetyWarningBanner");
+    intl = require("getSystemLocale").intl;
+    obj.header = intl.string(require("getSystemLocale").t.R8UsiI);
+    intl2 = require("getSystemLocale").intl;
+    obj.description = intl2.string(require("getSystemLocale").t.lI8nQl);
     obj.onDismiss = callback;
     obj = {};
-    intl3 = arg1(dependencyMap[15]).intl;
-    obj.text = intl3.string(arg1(dependencyMap[15]).t.tC1pvL);
+    intl3 = require("getSystemLocale").intl;
+    obj.text = intl3.string(require("getSystemLocale").t.tC1pvL);
     obj.variant = "primary";
     obj.onpress = function onpress() {
       let obj = warningId(senderId[10]);
       obj = { modalKey: handleLearnMore, headerStyle: moreTipsHeader.moreTipsHeader, channelId, warningId, senderId };
       const intl = channelId(senderId[15]).intl;
-      obj.description = intl.string(channelId(senderId[15]).t./uid3p);
+      obj.description = intl.string(channelId(senderId[15]).t["/uid3p"]);
       const tmp = channelId(senderId[17])(senderId[16], senderId.paths);
-      obj.safetyTips = callback().map((children) => {
+      obj.safetyTips = callback().map((title) => {
         let obj = {};
-        obj = { children: children.title };
-        const items = [callback3(callback(closure_2[18]).Text, obj, arg1), ];
-        obj = { cachedAt: null, edpbxy: null, children: children.description };
-        items[1] = callback3(callback(closure_2[18]).Text, obj, arg1);
+        obj = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title.title };
+        const items = [outer2_10(channelId(senderId[18]).Text, obj, arg1), ];
+        obj = { variant: "text-xs/medium", color: "text-subtle", children: title.description };
+        items[1] = outer2_10(channelId(senderId[18]).Text, obj, arg1);
         obj.children = items;
-        return callback4(closure_11, obj);
+        return outer2_12(outer2_11, obj);
       });
       obj = {
         senderId,
         handleMutePressed() {
-          return callback2(callback(closure_2[8]).CtaEventTypes.USER_MODAL_MUTE);
+          return outer1_5(channelId(senderId[8]).CtaEventTypes.USER_MODAL_MUTE);
         }
       };
-      obj.actionItems = callback2(warningId(senderId[19]), obj);
-      const obj1 = { cachedAt: true, edpbxy: true };
+      obj.actionItems = outer1_10(warningId(senderId[19]), obj);
+      const obj1 = { variant: "text-sm/normal", color: "text-link" };
       const intl2 = channelId(senderId[15]).intl;
       obj1.children = intl2.format(channelId(senderId[15]).t.UkH122, { learnMoreLink: handleLearnMore });
-      obj.learnMore = callback2(channelId(senderId[20]).TextWithIOSLinkWorkaround, obj1);
+      obj.learnMore = outer1_10(channelId(senderId[20]).TextWithIOSLinkWorkaround, obj1);
       obj.pushLazy(tmp, obj, handleLearnMore);
       const arr = callback();
       const obj2 = { learnMoreLink: handleLearnMore };
@@ -99,8 +111,8 @@ class LikelyAtoWarningBanner {
     items3 = [, ];
     items3[0] = obj;
     obj1 = {};
-    intl4 = arg1(dependencyMap[15]).intl;
-    obj1.text = intl4.string(arg1(dependencyMap[15]).t.ftIK2A);
+    intl4 = require("getSystemLocale").intl;
+    obj1.text = intl4.string(require("getSystemLocale").t.ftIK2A);
     obj1.variant = "secondary";
     obj1.onpress = function onpress() {
       return callback(channelId(senderId[8]).CtaEventTypes.USER_BANNER_MUTE);
@@ -110,20 +122,13 @@ class LikelyAtoWarningBanner {
     return jsx(tmp3, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const SafetyWarningTypes = arg1(dependencyMap[1]).SafetyWarningTypes;
-({ getLikelyAtoMoreTips: closure_5, LIKELY_ATO_MORE_TIPS_MODAL_KEY: closure_6, LEARN_MORE_HC_ARTICLE: closure_7 } = arg1(dependencyMap[2]));
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const MuteUntilSeconds = arg1(dependencyMap[4]).MuteUntilSeconds;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
-obj.moreTipsHeader = obj;
-let closure_13 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/ato_alerts/native/components/LikelyAtoWarningBanner.tsx");
+({ getLikelyAtoMoreTips: closure_5, LIKELY_ATO_MORE_TIPS_MODAL_KEY: closure_6, LEARN_MORE_HC_ARTICLE: closure_7 } = LIKELY_ATO_MORE_TIPS_MODAL_KEY);
+({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
+_createForOfIteratorHelperLoose.moreTipsHeader = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("LIKELY_ATO_MORE_TIPS_MODAL_KEY").fileFinishedImporting("modules/ato_alerts/native/components/LikelyAtoWarningBanner.tsx");
 
 export default LikelyAtoWarningBanner;
 export { LikelyAtoWarningBanner };

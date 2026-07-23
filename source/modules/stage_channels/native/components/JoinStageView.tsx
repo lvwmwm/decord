@@ -1,24 +1,26 @@
-// Module ID: 10672
-// Function ID: 83196
+// Module ID: 10682
+// Function ID: 83246
 // Name: JoinStageView
-// Dependencies: []
+// Dependencies: [31, 33, 4963, 4957, 10627, 1212, 7484, 10645, 2]
 // Exports: default
 
-// Module 10672 (JoinStageView)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/stage_channels/native/components/JoinStageView.tsx");
+// Module 10682 (JoinStageView)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("useStageParticipants").fileFinishedImporting("modules/stage_channels/native/components/JoinStageView.tsx");
 
 export default function JoinStageView(channel) {
   channel = channel.channel;
-  let obj = arg1(dependencyMap[2]);
-  const stageParticipants = obj.useStageParticipants(channel.id, arg1(dependencyMap[3]).StageChannelParticipantNamedIndex.SPEAKER);
-  const found = stageParticipants.filter((type) => type.type === callback(closure_2[3]).StageChannelParticipantTypes.VOICE);
+  let obj = require(4963) /* useStageParticipants */;
+  const stageParticipants = obj.useStageParticipants(channel.id, require(4957) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
+  const found = stageParticipants.filter((type) => type.type === outer1_0(outer1_2[3]).StageChannelParticipantTypes.VOICE);
   obj = {};
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.title = intl.string(arg1(dependencyMap[5]).t.WZOeQv);
-  const tmp2 = importDefault(dependencyMap[4]);
-  obj.body = arg1(dependencyMap[6]).getParticipantNamesText(channel, found);
-  obj.children = jsx(arg1(dependencyMap[7]).JoinStagePrompt, { channel });
-  return <tmp2 {...obj} />;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.WZOeQv);
+  const tmp2 = importDefault(10627);
+  obj.body = require(7484) /* fillChunk */.getParticipantNamesText(channel, found);
+  obj.children = jsx(require(10645) /* AgeVerificationSpeakerActionSheet */.JoinStagePrompt, { channel });
+  return <tmp2 />;
 };

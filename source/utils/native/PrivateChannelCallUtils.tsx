@@ -1,79 +1,97 @@
-// Module ID: 4337
-// Function ID: 38279
+// Module ID: 4341
+// Function ID: 38311
 // Name: getVoiceChannelKeyByChannelId
-// Dependencies: []
+// Dependencies: [5, 31, 3823, 4342, 1348, 3767, 1906, 1849, 653, 1197, 4344, 33, 4345, 4323, 10633, 1207, 4337, 10528, 1934, 5584, 5589, 4098, 12694, 4944, 4471, 1212, 4675, 3989, 12729, 4472, 8922, 3981, 7478, 2]
 // Exports: handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openVoiceChannelActionSheet
 
-// Module 4337 (getVoiceChannelKeyByChannelId)
+// Module 4341 (getVoiceChannelKeyByChannelId)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+import withEqualityFn from "withEqualityFn";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { AgeGateSource } from "result";
+import { NativePermissionTypes } from "NativePermissionStatus";
+import { jsx } from "set";
+
+let closure_11;
+let closure_12;
+let closure_13;
+const require = arg1;
 function getVoiceChannelKeyByChannelId(id) {
-  return "" + closure_17 + "-" + id;
+  return "" + c17 + "-" + id;
 }
 function getVoiceChannelKey(id) {
   return getVoiceChannelKeyByChannelId(id);
 }
 function openChannelCallModal(channel) {
-  let obj = arg1(dependencyMap[12]);
+  let obj = require(4345) /* shouldAgeVerifyForAgeGate */;
   if (!obj.maybeOpenAgeGateForVoiceChannel(channel.id)) {
-    const result = importDefault(dependencyMap[13]).rebuildRTCActiveChannels();
-    const obj2 = importDefault(dependencyMap[13]);
+    const result = importDefault(4323).rebuildRTCActiveChannels();
+    const obj2 = importDefault(4323);
     if (obj3.isVoicePanelEnabled(channel)) {
-      const state = state.getState();
+      state = state.getState();
       state.openChannel(channel.id);
-      const ComponentDispatch = arg1(dependencyMap[15]).ComponentDispatch;
+      const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
       obj = { channelId: channel.id };
       ComponentDispatch.dispatch(constants2.VOICE_PANEL_OPEN, obj);
     } else {
       obj = { channel };
-      const obj4 = importDefault(dependencyMap[16]);
-      obj4.pushLazy(arg1(dependencyMap[18])(dependencyMap[17], dependencyMap.paths), obj, getVoiceChannelKey(channel.id));
-      const tmp8 = arg1(dependencyMap[18])(dependencyMap[17], dependencyMap.paths);
+      const obj4 = importDefault(4337);
+      obj4.pushLazy(require(1934) /* maybeLoadBundle */(10528, dependencyMap.paths), obj, getVoiceChannelKey(channel.id));
+      const tmp8 = require(1934) /* maybeLoadBundle */(10528, dependencyMap.paths);
     }
-    const obj3 = arg1(dependencyMap[14]);
+    obj3 = require(10633) /* isVoicePanelEnabled */;
   }
 }
 function dismissVoiceChannelScreens(channel, onExited) {
   const tmp = getVoiceChannelKey(channel.id);
-  importDefault(dependencyMap[16]).popWithKey(tmp, onExited);
+  importDefault(4337).popWithKey(tmp, onExited);
   if (key.getKey() === tmp) {
-    importDefault(dependencyMap[21]).hideActionSheet();
-    const obj2 = importDefault(dependencyMap[21]);
+    importDefault(4098).hideActionSheet();
+    const obj2 = importDefault(4098);
   }
 }
 function monkeyPatchCall() {
   return new Promise((arg0) => {
-    const channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
+    const channel = outer1_7.getChannel(outer1_9.getVoiceChannelId());
     if (null != channel) {
-      callback2(channel);
+      outer1_21(channel);
     }
-    const voiceChannel = callback(closure_2[23]).selectVoiceChannel(null);
+    const voiceChannel = outer1_1(outer1_2[23]).selectVoiceChannel(null);
     const timerId = setTimeout(arg0, 500);
   });
 }
 function showGuardCallAlert(arg0) {
-  const arg1 = arg0;
-  let obj = importDefault(dependencyMap[24]);
+  const _require = arg0;
+  let obj = importDefault(4471);
   obj = {};
-  const intl = arg1(dependencyMap[25]).intl;
-  obj.title = intl.string(arg1(dependencyMap[25]).t.91WuJ9);
-  const intl2 = arg1(dependencyMap[25]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[25]).t.Rs+Vk1);
-  const intl3 = arg1(dependencyMap[25]).intl;
-  obj.cancelText = intl3.string(arg1(dependencyMap[25]).t.ETE/oC);
+  const intl = _require(1212).intl;
+  obj.title = intl.string(_require(1212).t["91WuJ9"]);
+  const intl2 = _require(1212).intl;
+  obj.body = intl2.string(_require(1212).t["Rs+Vk1"]);
+  const intl3 = _require(1212).intl;
+  obj.cancelText = intl3.string(_require(1212).t["ETE/oC"]);
   obj.onConfirm = function onConfirm() {
-    return arg0();
+    return callback();
   };
   obj.onCancel = closure_13;
   obj.show(obj);
 }
 function guardPrivateCallForChannel(id, arg1) {
-  const channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
+  let closure_0 = arg1;
+  channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
   if (null != channel) {
     if (channel.type !== constants.GUILD_VOICE) {
       if (null != id) {
         if (id.id !== channel.id) {
           showGuardCallAlert(callback(async () => {
-            yield closure_22();
-            callback();
+            yield outer2_22();
+            outer1_0();
           }));
         }
       }
@@ -87,104 +105,90 @@ function openGuildVoiceModal(channel, newestAnalyticsLocation) {
     openChannelCallModal(channel);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-({ ChannelTypes: closure_11, ComponentActions: closure_12, NOOP: closure_13 } = arg1(dependencyMap[8]));
-const AgeGateSource = arg1(dependencyMap[9]).AgeGateSource;
-const NativePermissionTypes = arg1(dependencyMap[10]).NativePermissionTypes;
-const jsx = arg1(dependencyMap[11]).jsx;
-let closure_17 = "voice-channel";
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[33]).fileFinishedImporting("utils/native/PrivateChannelCallUtils.tsx");
+({ ChannelTypes: closure_11, ComponentActions: closure_12, NOOP: closure_13 } = ME);
+let c17 = "voice-channel";
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/native/PrivateChannelCallUtils.tsx");
 
 export { getVoiceChannelKeyByChannelId };
 export { getVoiceChannelKey };
 export const isVoiceChannelModalKey = function isVoiceChannelModalKey(openModalKey) {
-  return openModalKey.startsWith(closure_17);
+  return openModalKey.startsWith(c17);
 };
 export { openChannelCallModal };
 export const maybeShowAgeGateModal = function maybeShowAgeGateModal(channelId) {
   if (obj.shouldShowAgeGateForChannelId(channelId)) {
-    arg1(dependencyMap[19]).runAfterInteractions(() => {
-      callback(closure_2[20]).openAgeGateModal(constants.NSFW_VOICE_CHANNEL);
+    require(5584) /* runAfterInteractions */.runAfterInteractions(() => {
+      outer1_0(outer1_2[20]).openAgeGateModal(outer1_14.NSFW_VOICE_CHANNEL);
     }, 150);
-    const obj2 = arg1(dependencyMap[19]);
+    const obj2 = require(5584) /* runAfterInteractions */;
   }
 };
-export const openVoiceChannelActionSheet = function openVoiceChannelActionSheet(closure_0) {
-  let obj = importDefault(dependencyMap[21]);
-  obj = { channel: closure_0 };
-  obj.openLazy(arg1(dependencyMap[18])(dependencyMap[22], dependencyMap.paths), getVoiceChannelKey(closure_0.id), obj);
+export const openVoiceChannelActionSheet = function openVoiceChannelActionSheet(outer1_0) {
+  let obj = importDefault(4098);
+  obj = { channel: outer1_0 };
+  obj.openLazy(require(1934) /* maybeLoadBundle */(12694, dependencyMap.paths), getVoiceChannelKey(outer1_0.id), obj);
 };
 export const hideVoiceChannelActionSheet = function hideVoiceChannelActionSheet(id) {
-  importDefault(dependencyMap[21]).hideActionSheet(getVoiceChannelKey(id.id));
+  importDefault(4098).hideActionSheet(getVoiceChannelKey(id.id));
 };
 export { dismissVoiceChannelScreens };
 export { monkeyPatchCall };
 export { showGuardCallAlert };
 export { guardPrivateCallForChannel };
 export const handleJoinCall = function handleJoinCall(channel, flag) {
-  flag = channel;
+  let closure_0 = channel;
   if (flag === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   async function _onConfirm() {
-    if (callback) {
-      const obj = callback(closure_2[26]);
+    if (outer2_1) {
+      const obj = flag(_onConfirm[26]);
     }
-    lib(closure_2[27]).dismissKeyboard();
-    const obj2 = lib(closure_2[27]);
-    const voiceChannel = callback(closure_2[23]).selectVoiceChannel(lib.id, callback);
+    callback(_onConfirm[27]).dismissKeyboard();
+    const obj2 = callback(_onConfirm[27]);
+    const voiceChannel = flag(_onConfirm[23]).selectVoiceChannel(outer2_0.id, outer2_1);
   }
   guardPrivateCallForChannel(channel, function onConfirm() {
     return _onConfirm(...arguments);
   });
 };
 export const handleStartCall = function handleStartCall(channel, flag) {
-  flag = channel;
+  let closure_0 = channel;
   if (flag === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   async function _onConfirm2() {
-    if (callback) {
-      const obj = callback(closure_2[26]);
+    if (outer2_1) {
+      const obj = flag(_onConfirm2[26]);
     }
-    store(closure_2[27]).dismissKeyboard();
-    let isFriendResult = store.type !== constants.DM;
+    callback(_onConfirm2[27]).dismissKeyboard();
+    let isFriendResult = outer2_0.type !== outer3_11.DM;
     if (!isFriendResult) {
-      isFriendResult = friend.isFriend(store.getRecipientId());
+      isFriendResult = outer3_8.isFriend(outer2_0.getRecipientId());
     }
     let recipientId = null;
     if (!isFriendResult) {
-      recipientId = store.getRecipientId();
+      recipientId = outer2_0.getRecipientId();
     }
-    const obj2 = store(closure_2[27]);
+    const obj2 = callback(_onConfirm2[27]);
     if (isFriendResult) {
-      isFriendResult = !store.isManaged();
+      isFriendResult = !outer2_0.isManaged();
     }
-    callback(closure_2[30]).call(store.id, callback, isFriendResult, recipientId);
+    flag(_onConfirm2[30]).call(outer2_0.id, outer2_1, isFriendResult, recipientId);
   }
-  if (!function guardAgainstCallingProvisionalAccount(isDM) {
+  if (!(function guardAgainstCallingProvisionalAccount(isDM) {
     if (isDM.isDM()) {
-      const user = user.getUser(isDM.getRecipientId());
+      const user = outer1_10.getUser(isDM.getRecipientId());
       if (null != user) {
         if (user.isProvisional) {
-          const lazyResult = React.lazy(() => callback(paths[18])(paths[28], paths.paths));
-          isDM(_onConfirm2[29]).openAlert("ProvisionalAccountNocallAllowed", callback2(lazyResult, {}));
+          const lazyResult = outer1_4.lazy(() => callback(_onConfirm2[18])(_onConfirm2[28], _onConfirm2.paths));
+          channel(_onConfirm2[29]).openAlert("ProvisionalAccountNocallAllowed", outer1_16(lazyResult, {}));
           return true;
         }
       }
     }
     return false;
-  }(channel)) {
+  })(channel)) {
     guardPrivateCallForChannel(channel, function onConfirm() {
       return _onConfirm2(...arguments);
     });
@@ -192,18 +196,17 @@ export const handleStartCall = function handleStartCall(channel, flag) {
 };
 export const handleRedesignGroupDMCall = function handleRedesignGroupDMCall(id) {
   let flag = arg1;
-  const arg1 = id;
+  let closure_0 = id;
   if (arg1 === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   async function _onConfirm3() {
-    if (callback) {
-      const obj = callback(closure_2[26]);
+    if (outer2_1) {
+      const obj = flag(_onConfirm3[26]);
     }
-    lib(closure_2[27]).dismissKeyboard();
-    const obj2 = lib(closure_2[27]);
-    callback(closure_2[30]).call(lib.id, callback, true);
+    callback(_onConfirm3[27]).dismissKeyboard();
+    const obj2 = callback(_onConfirm3[27]);
+    flag(_onConfirm3[30]).call(outer2_0.id, outer2_1, true);
   }
   guardPrivateCallForChannel(id, function onConfirm() {
     return _onConfirm3(...arguments);
@@ -211,18 +214,17 @@ export const handleRedesignGroupDMCall = function handleRedesignGroupDMCall(id) 
 };
 export const handleRedesignJoinCall = function handleRedesignJoinCall(id) {
   let flag = arg1;
-  const arg1 = id;
+  let closure_0 = id;
   if (arg1 === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   async function _onConfirm4() {
-    if (callback) {
-      const obj = callback(closure_2[26]);
+    if (outer2_1) {
+      const obj = flag(_onConfirm4[26]);
     }
-    lib(closure_2[27]).dismissKeyboard();
-    const obj2 = lib(closure_2[27]);
-    const voiceChannel = callback(closure_2[23]).selectVoiceChannel(lib.id, callback);
+    callback(_onConfirm4[27]).dismissKeyboard();
+    const obj2 = callback(_onConfirm4[27]);
+    const voiceChannel = flag(_onConfirm4[23]).selectVoiceChannel(outer2_0.id, outer2_1);
   }
   guardPrivateCallForChannel(id, function onConfirm() {
     return _onConfirm4(...arguments);
@@ -233,8 +235,8 @@ export const navigateToVoiceChannel = function navigateToVoiceChannel(channel, L
   if (channel.isPrivate()) {
     openChannelCallModal(channel);
   } else if (channel.isGuildStageVoice()) {
-    LiveActivity(dependencyMap[32]).openStageChannel(channel);
-    const obj = LiveActivity(dependencyMap[32]);
+    require(7478) /* openStageChannel */.openStageChannel(channel);
+    const obj = require(7478) /* openStageChannel */;
   } else {
     openGuildVoiceModal(channel);
   }

@@ -1,11 +1,10 @@
-// Module ID: 6564
-// Function ID: 50779
+// Module ID: 6569
+// Function ID: 50808
 // Name: vanityUrl
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6564 (vanityUrl)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreamingTier7SmallBadge-2x.png.js");
+// Module 6569 (vanityUrl)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreamingTier7SmallBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/1bcbde9f58b9970ddcd8d85e5b895218da42f942693c98bb47c5a11414de6362.png";
 export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/StreamingTier7SmallBadge-2x.png";

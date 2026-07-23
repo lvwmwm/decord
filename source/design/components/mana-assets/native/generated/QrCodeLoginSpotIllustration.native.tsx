@@ -1,12 +1,13 @@
-// Module ID: 6429
-// Function ID: 50576
+// Module ID: 6434
+// Function ID: 50605
 // Name: QrCodeLoginSpotIllustration
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: [33, 5085, 6435, 2]
 // Exports: QrCodeLoginSpotIllustration
 
-// Module 6429 (QrCodeLoginSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/QrCodeLoginSpotIllustration.native.tsx");
+// Module 6434 (QrCodeLoginSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/QrCodeLoginSpotIllustration.native.tsx");
 
 export const QrCodeLoginSpotIllustration = function QrCodeLoginSpotIllustration(width) {
   let accessibilityLabel;
@@ -26,7 +27,7 @@ export const QrCodeLoginSpotIllustration = function QrCodeLoginSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6435) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -34,5 +35,5 @@ export const QrCodeLoginSpotIllustration = function QrCodeLoginSpotIllustration(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

@@ -1,9 +1,16 @@
 // Module ID: 142
 // Function ID: 2311
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 139, 135, 138, 143, 145]
 
 // Module 142 (_isNativeReflectConstruct)
+import getRendererProxy from "getRendererProxy";
+import getRawNativeDOMForTests from "getRawNativeDOMForTests";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,21 +20,16 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
 function noop() {
 
 }
 
-export default function replaceConstructorWithoutSuper(arg0) {
+export default (function replaceConstructorWithoutSuper(arg0) {
   class ReactNativeElement {
     constructor(arg0, arg1, arg2, arg3) {
-      obj = closure_0(closure_2[6]);
+      obj = outer1_0(outer1_2[6]);
       setOwnerDocumentResult = obj.setOwnerDocument(this, arg3);
-      obj2 = closure_0(closure_2[6]);
+      obj2 = outer1_0(outer1_2[6]);
       setInstanceHandleResult = obj2.setInstanceHandle(this, arg2);
       this.__nativeTag = arg0;
       this.__internalInstanceHandle = arg2;
@@ -37,21 +39,21 @@ export default function replaceConstructorWithoutSuper(arg0) {
   }
   ReactNativeElement.prototype = arg0.prototype;
   return ReactNativeElement;
-}((arg0) => {
+})(((arg0) => {
   class ReactNativeElement {
     constructor(arg0, arg1, arg2, arg3) {
       self = this;
-      tmp = closure_3(this, ReactNativeElement);
+      tmp = outer1_3(this, ReactNativeElement);
       items = [, ];
       items[0] = arg2;
       items[1] = arg3;
-      obj = closure_6(ReactNativeElement);
-      tmp2 = closure_5;
-      if (closure_9()) {
+      obj = outer1_6(ReactNativeElement);
+      tmp2 = outer1_5;
+      if (outer1_9()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -62,39 +64,38 @@ export default function replaceConstructorWithoutSuper(arg0) {
       return tmp2Result;
     }
   }
-  const arg1 = ReactNativeElement;
   callback2(ReactNativeElement, arg0);
   let obj = {
     key: "offsetHeight",
     get() {
-      return Math.round(ReactNativeElement(closure_2[5]).getBoundingClientRect(this, { includeTransform: false }).height);
+      return Math.round(ReactNativeElement(outer1_2[5]).getBoundingClientRect(this, { includeTransform: false }).height);
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "offsetLeft",
     get() {
-      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      const nativeElementReference = ReactNativeElement(outer1_2[6]).getNativeElementReference(this);
       if (null != nativeElementReference) {
         const _Math = Math;
-        return Math.round(callback(closure_2[7]).getOffset(nativeElementReference)[2]);
+        return Math.round(outer1_1(outer1_2[7]).getOffset(nativeElementReference)[2]);
       } else {
         return 0;
       }
-      const obj = ReactNativeElement(closure_2[6]);
+      const obj = ReactNativeElement(outer1_2[6]);
     }
   };
   items[1] = obj;
   obj = {
     key: "offsetParent",
     get() {
-      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      const nativeElementReference = ReactNativeElement(outer1_2[6]).getNativeElementReference(this);
       if (null != nativeElementReference) {
-        const offset = callback(closure_2[7]).getOffset(nativeElementReference);
+        const offset = outer1_1(outer1_2[7]).getOffset(nativeElementReference);
         if (null != offset[0]) {
-          return ReactNativeElement(closure_2[6]).getPublicInstanceFromInstanceHandle(offset[0]);
+          return ReactNativeElement(outer1_2[6]).getPublicInstanceFromInstanceHandle(offset[0]);
         }
-        const obj2 = callback(closure_2[7]);
+        const obj2 = outer1_1(outer1_2[7]);
       }
       return null;
     }
@@ -103,51 +104,51 @@ export default function replaceConstructorWithoutSuper(arg0) {
   items[3] = {
     key: "offsetTop",
     get() {
-      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      const nativeElementReference = ReactNativeElement(outer1_2[6]).getNativeElementReference(this);
       if (null != nativeElementReference) {
         const _Math = Math;
-        return Math.round(callback(closure_2[7]).getOffset(nativeElementReference)[1]);
+        return Math.round(outer1_1(outer1_2[7]).getOffset(nativeElementReference)[1]);
       } else {
         return 0;
       }
-      const obj = ReactNativeElement(closure_2[6]);
+      const obj = ReactNativeElement(outer1_2[6]);
     }
   };
   items[4] = {
     key: "offsetWidth",
     get() {
-      return Math.round(ReactNativeElement(closure_2[5]).getBoundingClientRect(this, { includeTransform: false }).width);
+      return Math.round(ReactNativeElement(outer1_2[5]).getBoundingClientRect(this, { includeTransform: false }).width);
     }
   };
   items[5] = {
     key: "blur",
     value: function blur() {
-      callback(closure_2[8]).blurTextInput(this);
+      outer1_1(outer1_2[8]).blurTextInput(this);
     }
   };
   items[6] = {
     key: "focus",
     value: function focus() {
-      callback(closure_2[8]).focusTextInput(this);
+      outer1_1(outer1_2[8]).focusTextInput(this);
     }
   };
   items[7] = {
     key: "measure",
     value: function measure(arg0) {
-      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      const nativeElementReference = ReactNativeElement(outer1_2[6]).getNativeElementReference(this);
       if (null != nativeElementReference) {
-        callback(closure_2[7]).measure(nativeElementReference, arg0);
-        const obj2 = callback(closure_2[7]);
+        outer1_1(outer1_2[7]).measure(nativeElementReference, arg0);
+        const obj2 = outer1_1(outer1_2[7]);
       }
     }
   };
   items[8] = {
     key: "measureInWindow",
     value: function measureInWindow(arg0) {
-      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      const nativeElementReference = ReactNativeElement(outer1_2[6]).getNativeElementReference(this);
       if (null != nativeElementReference) {
-        callback(closure_2[7]).measureInWindow(nativeElementReference, arg0);
-        const obj2 = callback(closure_2[7]);
+        outer1_1(outer1_2[7]).measureInWindow(nativeElementReference, arg0);
+        const obj2 = outer1_1(outer1_2[7]);
       }
     }
   };
@@ -158,35 +159,35 @@ export default function replaceConstructorWithoutSuper(arg0) {
       let tmp2 = arg2;
       if (arg0 instanceof ReactNativeElement) {
         const self = this;
-        const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
-        const obj = ReactNativeElement(closure_2[6]);
-        const nativeElementReference1 = ReactNativeElement(closure_2[6]).getNativeElementReference(arg0);
+        const nativeElementReference = ReactNativeElement(outer1_2[6]).getNativeElementReference(this);
+        const obj = ReactNativeElement(outer1_2[6]);
+        const nativeElementReference1 = ReactNativeElement(outer1_2[6]).getNativeElementReference(arg0);
         if (tmp8) {
-          const obj3 = callback(closure_2[7]);
+          const obj3 = outer1_1(outer1_2[7]);
           if (null == tmp2) {
-            tmp2 = closure_8;
+            tmp2 = outer1_8;
           }
           if (null == tmp) {
-            tmp = closure_8;
+            tmp = outer1_8;
           }
           obj3.measureLayout(nativeElementReference, nativeElementReference1, tmp2, tmp);
         }
-        const obj2 = ReactNativeElement(closure_2[6]);
-        const tmp8 = null != nativeElementReference && null != nativeElementReference1;
+        const obj2 = ReactNativeElement(outer1_2[6]);
+        tmp8 = null != nativeElementReference && null != nativeElementReference1;
       }
     }
   };
   items[10] = {
     key: "setNativeProps",
     value: function setNativeProps(arg0) {
-      let obj = ReactNativeElement(closure_2[9]);
+      let obj = ReactNativeElement(outer1_2[9]);
       obj = obj.create(arg0, this.__viewConfig.validAttributes);
-      const nativeElementReference = ReactNativeElement(closure_2[6]).getNativeElementReference(this);
+      const nativeElementReference = ReactNativeElement(outer1_2[6]).getNativeElementReference(this);
       if (tmp3) {
-        callback(closure_2[7]).setNativeProps(nativeElementReference, obj);
-        const obj3 = callback(closure_2[7]);
+        outer1_1(outer1_2[7]).setNativeProps(nativeElementReference, obj);
+        const obj3 = outer1_1(outer1_2[7]);
       }
     }
   };
   return callback(ReactNativeElement, items);
-}(importDefault(dependencyMap[5])));
+})(require("_isNativeReflectConstruct")));

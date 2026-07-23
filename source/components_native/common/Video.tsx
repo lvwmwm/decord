@@ -1,10 +1,26 @@
-// Module ID: 8296
-// Function ID: 65515
+// Module ID: 8302
+// Function ID: 65552
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 31, 27, 33, 4130, 689, 8148, 8274, 5584, 1212, 3842, 2]
 // Exports: createVideoControls
 
-// Module 8296 (_isNativeReflectConstruct)
+// Module 8302 (_isNativeReflectConstruct)
+import result from "result";
+import getActivityIndicator from "get ActivityIndicator";
+import ManaContext from "ManaContext";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -37,7 +53,7 @@ class VideoComponent {
     if (pauseWhileAppInactive === undefined) {
       pauseWhileAppInactive = true;
     }
-    closure_0 = pauseWhileAppInactive;
+    c0 = pauseWhileAppInactive;
     flag3 = global.playInBackground;
     if (flag3 === undefined) {
       flag3 = false;
@@ -46,15 +62,15 @@ class VideoComponent {
     if (flag4 === undefined) {
       flag4 = true;
     }
-    closure_1 = undefined;
-    tmp = closure_7(importAll.useState("active" === AppState.currentState), 2);
-    closure_1 = tmp[1];
+    c1 = undefined;
+    tmp = c7(closure_8.useState("active" === AppState.currentState), 2);
+    c1 = tmp[1];
     items = [];
     items[0] = pauseWhileAppInactive;
-    effect = importAll.useEffect(() => {
+    effect = closure_8.useEffect(() => {
       if (closure_0) {
-        closure_0 = closure_12.addEventListener("change", (arg0) => {
-          callback("active" === arg0);
+        closure_0 = outer1_12.addEventListener("change", (arg0) => {
+          outer1_1("active" === arg0);
         });
         return () => {
           closure_0.remove();
@@ -82,7 +98,7 @@ class VideoComponent {
     obj.onError = onError;
     obj.onEnd = onEnd;
     obj.disableFocus = disableFocus;
-    obj.aria-hidden = ariaHidden;
+    obj["aria-hidden"] = ariaHidden;
     obj.mixWithOthers = mixWithOthers;
     obj.preventsDisplaySleepDuringVideoPlayback = flag4;
     obj.httpEngine = global.httpEngine;
@@ -91,46 +107,36 @@ class VideoComponent {
       props = controls.props;
     }
     merged = Object.assign(props);
-    return tmp3(closure_0(closure_1[11]).default, obj);
+    return tmp3(require("_isNativeReflectConstruct").default, obj);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const importAllResult = importAll(dependencyMap[6]);
-({ TouchableWithoutFeedback: closure_9, View: closure_10, Image: closure_11, AppState: closure_12 } = arg1(dependencyMap[7]));
-const jsx = arg1(dependencyMap[8]).jsx;
-let obj = arg1(dependencyMap[9]);
-obj = {};
-obj = { shadowColor: importDefault(dependencyMap[10]).unsafe_rawColors.BLACK, shadowOffset: { hideWhenScrolling: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, autoCapitalize: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 }, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[7]);
-obj.video = { flex: 1, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
-let closure_14 = obj.createLegacyClassComponentStyles(obj);
-const tmp4 = (PureComponent) => {
+({ TouchableWithoutFeedback: closure_9, View: closure_10, Image: closure_11, AppState: closure_12 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, shadowColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, shadowOpacity: 0.5, shadowOffset: { height: 1, width: 0 }, shadowRadius: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.video = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+const tmp4 = ((PureComponent) => {
   class Video {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_2(this, Video);
+      tmp = outer1_2(this, apply);
       items1 = [...items];
-      obj = closure_5(Video);
-      tmp2 = closure_4;
-      if (closure_15()) {
+      obj = outer1_5(apply);
+      tmp2 = outer1_4;
+      if (outer1_15()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items1, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      Video = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.state = { postponeRender: true };
-      tmp2Result.ref = closure_8.createRef();
+      tmp2Result.ref = outer1_8.createRef();
       tmp2Result.isVideo = () => {
         const src = tmp2Result.props.src;
         let tmp = null != src;
@@ -155,7 +161,7 @@ const tmp4 = (PureComponent) => {
         }
         const current = tmp2Result.ref.current;
         if (null != current) {
-          let obj = tmp2Result(closure_1[12]);
+          let obj = Video(outer2_1[12]);
           obj = {};
           obj = {};
           const merged = Object.assign(src);
@@ -170,18 +176,17 @@ const tmp4 = (PureComponent) => {
       return tmp2Result;
     }
   }
-  const arg1 = Video;
   callback2(Video, PureComponent);
   let obj = {
     key: "componentDidMount",
     value() {
-      const Video = this;
-      this._renderTask = Video(closure_1[13]).runAfterInteractions(() => {
+      const self = this;
+      this._renderTask = Video(outer1_1[13]).runAfterInteractions(() => {
         self.setState({ postponeRender: false });
       });
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "componentWillUnmount",
     value() {
@@ -219,7 +224,7 @@ const tmp4 = (PureComponent) => {
             obj.ariaHidden = tmp8;
             obj.disableFocus = tmp9;
             obj.httpEngine = tmp10;
-            tmp12 = callback3(closure_16, obj);
+            tmp12 = outer1_13(outer1_16, obj);
           }
           return tmp12;
         }
@@ -239,8 +244,8 @@ const tmp4 = (PureComponent) => {
           obj.source = obj;
           obj = { width: tmp, height: tmp2 };
           obj.style = obj;
-          obj.aria-hidden = tmp3;
-          return callback3(closure_11, obj);
+          obj["aria-hidden"] = tmp3;
+          return outer1_13(outer1_11, obj);
         }
       }
     }
@@ -252,7 +257,7 @@ const tmp4 = (PureComponent) => {
       const props = this.props;
       let accessibilityLabel = props.accessibilityLabel;
       let obj = { ref: this.ref };
-      const items = [callback4(this.context).container, { width: props.width, height: props.height }, props.style];
+      const items = [outer1_14(this.context).container, { width: props.width, height: props.height }, props.style];
       obj.style = items;
       obj.accessible = null != accessibilityLabel;
       obj.accessibilityLabel = accessibilityLabel;
@@ -264,15 +269,15 @@ const tmp4 = (PureComponent) => {
           if (tmp) {
             obj = { accessibilityRole: "button" };
             if (null == accessibilityLabel) {
-              const intl = Video(closure_1[14]).intl;
-              accessibilityLabel = intl.string(Video(closure_1[14]).t.OIDkcp);
+              const intl = Video(outer1_1[14]).intl;
+              accessibilityLabel = intl.string(Video(outer1_1[14]).t.OIDkcp);
             }
             obj.accessibilityLabel = accessibilityLabel;
             obj.onPress = self.handleOpenFullScreen;
             obj.children = tmp3Result;
-            tmp9Result = closure_13(closure_9, obj);
-            const tmp10 = closure_9;
-            const tmp9 = closure_13;
+            tmp9Result = outer1_13(outer1_9, obj);
+            const tmp10 = outer1_9;
+            const tmp9 = outer1_13;
           }
           return tmp9Result;
         }
@@ -285,21 +290,19 @@ const tmp4 = (PureComponent) => {
     }
   };
   return callback(Video, items);
-}(importAllResult.PureComponent);
-tmp4.contextType = arg1(dependencyMap[15]).ThemeContext;
-const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
-const result = arg1(dependencyMap[16]).fileFinishedImporting("components_native/common/Video.tsx");
+})(importAllResult.PureComponent);
+tmp4.contextType = require("ManaContext").ThemeContext;
+const obj1 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/common/Video.tsx");
 
 export default tmp4;
-export const createVideoControls = function createVideoControls(NOOP) {
-  const arg1 = NOOP;
-  const ref = React.createRef();
-  let closure_4 = ref;
-  let closure_5 = 0;
-  let closure_6 = 0;
-  let closure_7 = 0;
-  const React = false;
-  let obj = {
+export const createVideoControls = function createVideoControls(ref1) {
+  let closure_0 = ref1;
+  const ref = importAllResult.createRef();
+  let c5 = 0;
+  let c6 = 0;
+  let c7 = 0;
+  obj = {
     seek(arg0) {
       const current = ref.current;
       if (!tmp) {
@@ -307,24 +310,27 @@ export const createVideoControls = function createVideoControls(NOOP) {
       }
     },
     pause(arg0) {
-      arg0(arg0);
+      callback(arg0);
       if (closure_8 !== arg0) {
         closure_8 = arg0;
-        if (null != callback2) {
-          callback2(closure_8);
+        if (null != callback3) {
+          callback3(closure_8);
         }
       }
     },
     useSubscribe(arg0, arg1, arg2) {
+      let closure_1 = arg0;
+      let result = arg1;
+      let getActivityIndicator = arg2;
       const layoutEffect = React.useLayoutEffect(() => {
-        if (null != arg0) {
-          arg0(closure_5, closure_6);
+        if (null != callback) {
+          callback(outer1_5, outer1_6);
         }
-        if (null != arg1) {
-          arg1(closure_8);
+        if (null != callback2) {
+          callback2(outer1_8);
         }
-        if (null != arg2) {
-          arg2(closure_7);
+        if (null != callback3) {
+          callback3(outer1_7);
         }
       }, []);
     },
@@ -333,23 +339,25 @@ export const createVideoControls = function createVideoControls(NOOP) {
   obj = {
     ref,
     onPlaybackRateChange(nativeEvent) {
-      if (closure_8 !== 0 === nativeEvent.playbackRate) {
-        closure_8 = tmp;
-        if (null != callback2) {
-          callback2(closure_8);
+      if (c8 !== 0 === nativeEvent.playbackRate) {
+        c8 = tmp;
+        if (null != callback3) {
+          callback3(c8);
         }
       }
     },
     onProgress(current) {
-      ({ currentTime: closure_5, seekableDuration: closure_6 } = current);
-      if (null != callback) {
-        callback(closure_5, closure_6);
+      let c5;
+      let c6;
+      ({ currentTime: c5, seekableDuration: c6 } = current);
+      if (null != callback2) {
+        callback2(c5, c6);
       }
     },
     onDownloadProgress(progressPercent) {
       progressPercent = progressPercent.progressPercent;
-      if (null != callback3) {
-        callback3(progressPercent);
+      if (null != callback4) {
+        callback4(progressPercent);
       }
     }
   };

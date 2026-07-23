@@ -1,10 +1,14 @@
 // Module ID: 1447
-// Function ID: 16851
+// Function ID: 16852
 // Name: fit
-// Dependencies: []
+// Dependencies: [5, 1448, 1449, 22, 44, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
 
 // Module 1447 (fit)
+import set from "set";
+import importDefaultResult from "apply";
+
+const require = arg1;
 function fit(minHeight) {
   let height;
   let maxHeight;
@@ -66,7 +70,7 @@ function getPalette(width) {
     context.drawImage(width, 0, 0, num, num2);
     const data = context.getImageData(0, 0, num, num2).data;
     const result = num * num2;
-    const items = [];
+    items = [];
     let num12 = 0;
     if (0 < result) {
       do {
@@ -86,7 +90,7 @@ function getPalette(width) {
         num12 = num12 + arg2;
       } while (num12 < result);
     }
-    const obj3 = importDefault(dependencyMap[1])(items, arg1);
+    const obj3 = importDefault(1448)(items, arg1);
     if ("boolean" === typeof obj3) {
       let paletteResult = items;
     } else {
@@ -95,10 +99,10 @@ function getPalette(width) {
     return paletteResult;
   }
 }
-async function _dataUrlToFile(arg0, arg1, type, arg3) {
-  let obj = callback(arg0);
+async function _dataUrlToFile(arg0, arg1, arg2, arg3) {
+  let obj = outer2_8(arg0);
   const items = [yield obj.arrayBuffer()];
-  obj = { type };
+  obj = { type: arg2 };
   const file = new File(items, arg1, obj);
   return file;
 }
@@ -127,9 +131,9 @@ function dataUrlToBlob(arg0) {
   const blob = new Blob(items, { type: arg0.split(",")[0].split(":")[1].split(";")[0] });
   return blob;
 }
-async function _isPNGAnimated(type, arg1) {
+async function _isPNGAnimated(arg0, arg1) {
   let first;
-  if (null != type.type) {
+  if (null != arg0.type) {
     first = str.split(";")[0];
   }
   if ("image/png" !== first) {
@@ -137,7 +141,7 @@ async function _isPNGAnimated(type, arg1) {
     const error = new Error("File is not a PNG");
     throw error;
   } else {
-    const arr = yield type.text();
+    const arr = yield arg0.text();
     const index = arr.indexOf("IDAT");
     let tmp3 = index > 0;
     if (tmp3) {
@@ -147,30 +151,30 @@ async function _isPNGAnimated(type, arg1) {
     return tmp3;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const items = [[]];
-importDefault(dependencyMap[3]).memoize((arg0) => {
-  const arg1 = arg0;
+let items = [[0, 0, 0]];
+require("apply").memoize((arg0) => {
+  let closure_0 = arg0;
   return new Promise((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     const image = new globalThis.Image();
     image.crossOrigin = "Anonymous";
     image.onerror = (arg0) => {
-      arg1(arg0);
-      closure_2.onload = null;
-      closure_2.onerror = null;
-      closure_2 = null;
+      callback2(arg0);
+      c2.onload = null;
+      c2.onerror = null;
+      c2 = null;
     };
     image.onload = () => {
-      arg0(callback(closure_2, 5, 10));
-      closure_2.onload = null;
-      closure_2.onerror = null;
-      closure_2 = null;
+      callback(outer2_6(c2, 5, 10));
+      c2.onload = null;
+      c2.onerror = null;
+      c2 = null;
     };
-    image.src = arg0;
+    image.src = closure_0;
   });
 });
-const importDefaultResult = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("utils/ImageUtils.tsx");
+let result = require("clampDimension").fileFinishedImporting("utils/ImageUtils.tsx");
 
 export { fit };
 export const IMAGE_MAX_ZOOM = 2000;
@@ -281,23 +285,24 @@ export const makeCssUrlString = function makeCssUrlString(arg0) {
 };
 export { getPalette };
 export const getPaletteForAvatar = function getPaletteForAvatar(emojiURL) {
-  return arg1(dependencyMap[2]).default.getPaletteForAvatarMobile(emojiURL);
+  return require(1449) /* clampDimension */.default.getPaletteForAvatarMobile(emojiURL);
 };
 export const readFileAsBase64 = function readFileAsBase64(arg0) {
-  const arg1 = arg0;
-  return new Promise((data) => {
+  let closure_0 = arg0;
+  return new Promise((closure_0) => {
+    let closure_1 = arg1;
     const fileReader = new FileReader();
-    const asDataURL = fileReader.readAsDataURL(data);
+    const asDataURL = fileReader.readAsDataURL(closure_0);
     fileReader.onload = () => {
-      arg1(fileReader[4])("string" === typeof fileReader.result, "Result must be a string");
-      arg0(fileReader.result);
+      outer2_1(outer2_2[4])("string" === typeof fileReader.result, "Result must be a string");
+      callback(fileReader.result);
     };
-    fileReader.onerror = (arg0) => arg1(arg0);
+    fileReader.onerror = (arg0) => callback2(arg0);
   });
 };
 export const dataUriFileSize = function dataUriFileSize(str) {
   const parts = str.split(";base64,");
-  importDefault(dependencyMap[4])(2 === parts.length, "Input data is not a valid image.");
+  importDefault(44)(2 === parts.length, "Input data is not a valid image.");
   return atob(parts[1]).length;
 };
 export const dataUrlToFile = function dataUrlToFile() {
@@ -308,11 +313,11 @@ export const isPNGAnimated = function isPNGAnimated() {
   return _isPNGAnimated(...arguments);
 };
 export const preloadImage = function preloadImage(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return new Promise((arg0, arg1) => {
     const image = new globalThis.Image();
     const listener = image.addEventListener("load", arg0);
     const listener1 = image.addEventListener("error", arg1);
-    image.src = arg0;
+    image.src = closure_0;
   });
 };

@@ -1,27 +1,34 @@
-// Module ID: 14894
-// Function ID: 112167
-// Dependencies: []
+// Module ID: 15010
+// Function ID: 114335
+// Dependencies: [57, 31, 27, 10260, 653, 33, 3991, 4130, 689, 477, 8830, 4549, 9889, 4324, 13999, 4542, 4546, 4647, 14707, 13953, 4126, 1212, 2]
 
-// Module 14894
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ getScaledSearchBarHeight: closure_5, VIEWABILITY_CONFIG: closure_6 } = arg1(dependencyMap[3]));
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-const tmp3 = arg1(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]).createAnimatedComponent(arg1(dependencyMap[2]).Pressable);
-const importDefaultResult = importDefault(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createStyles((arg0, arg1) => {
+// Module 15010
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import hairlineWidth from "hairlineWidth";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
+
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ getScaledSearchBarHeight: closure_5, VIEWABILITY_CONFIG: closure_6 } = hairlineWidth);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let closure_10 = require("module_3991").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
   let obj = {};
-  obj = {};
+  obj = { position: "absolute", right: "50%", zIndex: 1, marginVertical: 12, marginHorizontal: 0, paddingRight: 9, paddingLeft: null, paddingVertical: 4, minHeight: 24, flexDirection: "row", justifyContent: "center", alignItems: "center", borderRadius: null, backgroundColor: null, elevation: 4 };
   let num = 5;
   if (arg0) {
     num = 6;
   }
   obj.paddingLeft = num;
-  obj.borderRadius = importDefault(dependencyMap[8]).radii.round;
-  const tmp = importDefault(dependencyMap[8]);
+  obj.borderRadius = importDefault(689).radii.round;
+  const tmp = importDefault(689);
   if (arg0) {
     let RED_400 = tmp.unsafe_rawColors.RED_400;
   } else {
@@ -29,14 +36,14 @@ let closure_11 = arg1(dependencyMap[7]).createStyles((arg0, arg1) => {
     RED_400 = arg1 ? colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT : colors.BACKGROUND_SURFACE_HIGHEST;
   }
   obj.backgroundColor = RED_400;
-  obj.shadowColor = importDefault(dependencyMap[8]).colors.BLACK;
-  obj.shadowOffset = {};
+  obj.shadowColor = importDefault(689).colors.BLACK;
+  obj.shadowOffset = { width: 0, height: 1 };
   obj.shadowOpacity = 0.08;
   obj.shadowRadius = 4;
   obj.borderWidth = 1;
-  obj.borderColor = importDefault(dependencyMap[8]).colors.BORDER_SUBTLE;
+  obj.borderColor = importDefault(689).colors.BORDER_SUBTLE;
   obj.unreadBar = obj;
-  obj = { alignItems: "<string:1788936193>", justifyContent: "<string:913440772>", flexGrow: "<string:2320564228>", flexDirection: "maestro" };
+  obj = { textTransform: "uppercase", marginTop: null, marginLeft: 2, marginRight: 0 };
   let num2 = 0;
   if (obj4.isAndroid()) {
     num2 = -1;
@@ -46,29 +53,23 @@ let closure_11 = arg1(dependencyMap[7]).createStyles((arg0, arg1) => {
   return obj;
 });
 let closure_12 = { code: "function ChannelsUnreadBarTsx1(){const{shown,position,scrollPosition,listPaddingTop,searchBarHeight,justReachedEnd,runOnJS,resetReachedEnd,height,MARGIN,guildChannelsListUnreadBarInsetEnd,width,withSpring,springStandard,interpolate,pressed,ON_PRESS_SPRING}=this.__closure;const animatedShown=shown&&(position==='top'?scrollPosition!=null&&listPaddingTop!=null&&scrollPosition.get()>listPaddingTop+searchBarHeight:!justReachedEnd);if(justReachedEnd){runOnJS(resetReachedEnd)();}const offsetBase=height.get()-MARGIN;const value=animatedShown?position==='bottom'&&guildChannelsListUnreadBarInsetEnd!=null?-guildChannelsListUnreadBarInsetEnd.get():0:offsetBase*(position==='bottom'?1:-1);const opacity=animatedShown?1:0;const scale=width.get()>0?(width.get()+5)/width.get():1;return{opacity:withSpring(opacity,springStandard,'animate-always'),transform:[{translateY:withSpring(value,springStandard)},{translateX:width.get()/2},{scale:withSpring(interpolate(pressed.get(),[0,1],[1,scale]),ON_PRESS_SPRING)}]};}" };
-const obj3 = arg1(dependencyMap[7]);
 const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
   position = position.position;
-  const arg1 = position;
   const shown = position.shown;
-  const importDefault = shown;
   const onPress = position.onPress;
-  const dependencyMap = onPress;
   const isMention = position.isMention;
-  let callback = isMention;
   const guildChannelsListUnreadBarInsetEnd = position.guildChannelsListUnreadBarInsetEnd;
   const scrollPosition = position.scrollPosition;
   const listPaddingTop = position.listPaddingTop;
   const endReachedCounter = position.endReachedCounter;
-  const AnalyticEvents = endReachedCounter;
   const headerHeight = position.headerHeight;
   let first;
   let closure_10;
-  let callback2;
-  let closure_12;
+  let sharedValue;
+  let sharedValue1;
   let sharedValue2;
   let youBarTotalHeight;
-  let tmp19;
+  let c15;
   let first1;
   let closure_17;
   let callback4;
@@ -76,28 +77,26 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
   if (tmp2) {
     tmp2 = isMention;
   }
-  const tmp3 = callback(guildChannelsListUnreadBarInsetEnd.useState(tmp2), 2);
+  const tmp3 = isMention(guildChannelsListUnreadBarInsetEnd.useState(tmp2), 2);
   first = tmp3[0];
   closure_10 = tmp3[1];
-  const items = [isMention];
-  const effect = importAllResult.useEffect(() => {
+  let items = [isMention];
+  const effect = guildChannelsListUnreadBarInsetEnd.useEffect(() => {
     if (null != isMention) {
       callback(isMention);
     }
   }, items);
-  const tmp6 = callback2(first, importDefault(dependencyMap[10])());
-  let obj = arg1(dependencyMap[11]);
+  const tmp6 = sharedValue(first, shown(onPress[10])());
+  let obj = position(onPress[11]);
   const fontScale = obj.useFontScale();
-  let obj1 = arg1(dependencyMap[12]);
-  const sum = obj1.scaleTextLineHeight("text-xs/bold", fontScale) + 8;
-  let obj2 = arg1(dependencyMap[6]);
-  const sharedValue = obj2.useSharedValue(0);
-  callback2 = sharedValue;
-  const sharedValue1 = arg1(dependencyMap[6]).useSharedValue(sum);
-  closure_12 = sharedValue1;
-  const items1 = [sharedValue, sharedValue1];
+  let obj1 = position(onPress[12]);
+  let sum = obj1.scaleTextLineHeight("text-xs/bold", fontScale) + 8;
+  let obj2 = position(onPress[6]);
+  sharedValue = obj2.useSharedValue(0);
+  sharedValue1 = position(onPress[6]).useSharedValue(sum);
+  let items1 = [sharedValue, sharedValue1];
   const items2 = [shown, first, position];
-  callback = importAllResult.useCallback((nativeEvent) => {
+  const callback = guildChannelsListUnreadBarInsetEnd.useCallback((nativeEvent) => {
     const width = nativeEvent.nativeEvent.layout.width;
     if (0 !== width) {
       const result = sharedValue.set(width);
@@ -107,7 +106,7 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
       const result1 = sharedValue1.set(height);
     }
   }, items1);
-  const effect1 = importAllResult.useEffect(() => {
+  const effect1 = guildChannelsListUnreadBarInsetEnd.useEffect(() => {
     if (shown) {
       let obj = shown(onPress[13]);
       obj = { is_mention: first, position };
@@ -115,26 +114,26 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
     }
   }, items2);
   const items3 = [onPress, position, first];
-  const callback1 = importAllResult.useCallback(() => {
+  const callback1 = guildChannelsListUnreadBarInsetEnd.useCallback(() => {
     let obj = shown(onPress[13]);
     obj = { is_mention: first, position };
     obj.trackWithMetadata(endReachedCounter.CHANNEL_LIST_UNREAD_BADGE_CLICKED, obj);
     onPress();
   }, items3);
-  const obj4 = arg1(dependencyMap[6]);
-  sharedValue2 = arg1(dependencyMap[6]).useSharedValue(0);
+  const obj4 = position(onPress[6]);
+  sharedValue2 = position(onPress[6]).useSharedValue(0);
   const items4 = [sharedValue2];
   const items5 = [sharedValue2];
-  callback2 = importAllResult.useCallback(() => {
+  const callback2 = guildChannelsListUnreadBarInsetEnd.useCallback(() => {
     const result = sharedValue2.set(1);
   }, items4);
-  const callback3 = importAllResult.useCallback(() => {
+  const callback3 = guildChannelsListUnreadBarInsetEnd.useCallback(() => {
     const result = sharedValue2.set(0);
   }, items5);
-  const obj5 = arg1(dependencyMap[6]);
-  youBarTotalHeight = arg1(dependencyMap[14]).useYouBarTotalHeight();
+  let obj5 = position(onPress[6]);
+  youBarTotalHeight = position(onPress[14]).useYouBarTotalHeight();
   const items6 = [headerHeight, position, youBarTotalHeight];
-  const memo = importAllResult.useMemo(() => {
+  const memo = guildChannelsListUnreadBarInsetEnd.useMemo(() => {
     if ("bottom" === position) {
       let obj = { bottom: youBarTotalHeight };
     } else {
@@ -142,36 +141,37 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
     }
     return obj;
   }, items6);
-  tmp19 = scrollPosition(fontScale);
-  const tmp20 = callback(guildChannelsListUnreadBarInsetEnd.useState(false), 2);
+  const tmp19 = scrollPosition(fontScale);
+  c15 = tmp19;
+  const tmp20 = isMention(guildChannelsListUnreadBarInsetEnd.useState(false), 2);
   first1 = tmp20[0];
   closure_17 = tmp20[1];
   const items7 = [endReachedCounter];
-  const effect2 = importAllResult.useEffect(() => {
+  const effect2 = guildChannelsListUnreadBarInsetEnd.useEffect(() => {
     if (null != endReachedCounter) {
       callback2(true);
     }
   }, items7);
-  callback4 = importAllResult.useCallback(() => {
+  callback4 = guildChannelsListUnreadBarInsetEnd.useCallback(() => {
     const timerId = setTimeout(() => {
-      callback(false);
+      outer1_17(false);
     }, listPaddingTop.minimumViewTime + 1);
   }, []);
-  const obj6 = arg1(dependencyMap[14]);
+  const obj6 = position(onPress[14]);
   class X {
     constructor() {
       tmp = shown;
       if (!shown) {
-        tmp13 = closure_16;
-        if (closure_16) {
+        tmp13 = c16;
+        if (c16) {
           tmp14 = position;
           tmp15 = onPress;
           num = 6;
           obj = position(onPress[6]);
-          tmp16 = closure_18;
-          tmp17 = obj.runOnJS(closure_18)();
+          tmp16 = c18;
+          tmp17 = obj.runOnJS(c18)();
         }
-        tmp18 = closure_12;
+        tmp18 = c12;
         num2 = 12;
         tmp20 = position;
         str2 = "bottom";
@@ -199,14 +199,14 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
         if (tmp) {
           num6 = 1;
         }
-        tmp25 = closure_11;
+        tmp25 = c11;
         num7 = 1;
-        if (closure_11.get() > 0) {
-          tmp26 = closure_11;
+        if (c11.get() > 0) {
+          tmp26 = c11;
           num8 = 5;
-          tmp28 = closure_11;
-          sum = closure_11.get() + 5;
-          num7 = sum / closure_11.get();
+          tmp28 = c11;
+          sum = c11.get() + 5;
+          num7 = sum / c11.get();
         }
         obj = {};
         tmp29 = position;
@@ -222,18 +222,18 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
         items = [, , ];
         items[0] = obj1;
         obj2 = {};
-        tmp31 = closure_11;
+        tmp31 = c11;
         num11 = 2;
-        obj2.translateX = closure_11.get() / 2;
+        obj2.translateX = c11.get() / 2;
         items[1] = obj2;
         obj3 = {};
         obj8 = position(onPress[15]);
         num12 = 6;
         obj9 = position(onPress[6]);
-        tmp32 = closure_13;
-        items1 = [false];
+        tmp32 = c13;
+        items1 = [1];
         items1[1] = num7;
-        interpolateResult = obj9.interpolate(closure_13.get(), [77601039, 1612144654], items1);
+        interpolateResult = obj9.interpolate(c13.get(), [0, 1], items1);
         obj3.scale = obj8.withSpring(interpolateResult, position(onPress[16]).ON_PRESS_SPRING);
         items[2] = obj3;
         obj.transform = items;
@@ -252,33 +252,33 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
           if (tmp7) {
             tmp9 = scrollPosition;
             tmp10 = listPaddingTop;
-            tmp11 = closure_15;
-            tmp7 = scrollPosition.get() > listPaddingTop + closure_15;
+            tmp11 = c15;
+            tmp7 = scrollPosition.get() > listPaddingTop + c15;
           }
           tmp4 = tmp7;
         } else {
-          tmp3 = closure_16;
-          tmp4 = !closure_16;
+          tmp3 = c16;
+          tmp4 = !c16;
         }
         tmp12 = tmp4;
       }
       return;
     }
   }
-  obj = { shown, position, scrollPosition, listPaddingTop, searchBarHeight: tmp19, justReachedEnd: first1, runOnJS: arg1(dependencyMap[6]).runOnJS, resetReachedEnd: callback4, height: sharedValue1, MARGIN: 12, guildChannelsListUnreadBarInsetEnd, width: sharedValue, withSpring: arg1(dependencyMap[15]).withSpring, springStandard: arg1(dependencyMap[16]).springStandard, interpolate: arg1(dependencyMap[6]).interpolate, pressed: sharedValue2, ON_PRESS_SPRING: arg1(dependencyMap[16]).ON_PRESS_SPRING };
+  obj = { shown, position, scrollPosition, listPaddingTop, searchBarHeight: tmp19, justReachedEnd: first1, runOnJS: position(onPress[6]).runOnJS, resetReachedEnd: callback4, height: sharedValue1, MARGIN: 12, guildChannelsListUnreadBarInsetEnd, width: sharedValue, withSpring: position(onPress[15]).withSpring, springStandard: position(onPress[16]).springStandard, interpolate: position(onPress[6]).interpolate, pressed: sharedValue2, ON_PRESS_SPRING: position(onPress[16]).ON_PRESS_SPRING };
   X.__closure = obj;
   X.__workletHash = 978162815161;
-  X.__initData = closure_12;
-  const animatedStyle = arg1(dependencyMap[6]).useAnimatedStyle(X);
+  X.__initData = sharedValue1;
+  const animatedStyle = position(onPress[6]).useAnimatedStyle(X);
   if (first) {
-    let ArrowSmallUpIcon = arg1(dependencyMap[17]).AtIcon;
+    let ArrowSmallUpIcon = position(onPress[17]).AtIcon;
   } else if ("bottom" === position) {
-    ArrowSmallUpIcon = arg1(dependencyMap[18]).ArrowSmallDownIcon;
+    ArrowSmallUpIcon = position(onPress[18]).ArrowSmallDownIcon;
   } else {
-    ArrowSmallUpIcon = arg1(dependencyMap[19]).ArrowSmallUpIcon;
+    ArrowSmallUpIcon = position(onPress[19]).ArrowSmallUpIcon;
   }
   obj = {};
-  const tmp32 = importDefault(dependencyMap[8]);
+  const tmp32 = shown(onPress[8]);
   if (first) {
     let MOBILE_UNREADBAR_TEXT_DEFAULT = tmp32.unsafe_rawColors.WHITE;
   } else {
@@ -287,9 +287,9 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
   obj.color = MOBILE_UNREADBAR_TEXT_DEFAULT;
   obj.size = "xxs";
   obj1 = { style: items8 };
-  const items8 = [tmp6.unreadBar, memo, animatedStyle];
+  items8 = [tmp6.unreadBar, memo, animatedStyle];
   let str2 = "none";
-  const obj7 = arg1(dependencyMap[6]);
+  const obj7 = position(onPress[6]);
   const tmp31 = headerHeight;
   if (shown) {
     str2 = "auto";
@@ -309,12 +309,12 @@ const memoResult = importAllResult.memo(function ChannelsUnreadBar(position) {
   }
   obj2.color = str3;
   obj2.maxFontSizeMultiplier = 1.5;
-  const intl = arg1(dependencyMap[21]).intl;
-  obj2.children = intl.string(arg1(dependencyMap[21]).t.y2b7CA);
-  items9[1] = headerHeight(arg1(dependencyMap[20]).Text, obj2);
+  const intl = position(onPress[21]).intl;
+  obj2.children = intl.string(position(onPress[21]).t.y2b7CA);
+  items9[1] = headerHeight(position(onPress[20]).Text, obj2);
   obj1.children = items9;
   return first(closure_10, obj1);
 });
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/channel_list_v2/native/unread_bars/ChannelsUnreadBar.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/channel_list_v2/native/unread_bars/ChannelsUnreadBar.tsx");
 
 export default memoResult;

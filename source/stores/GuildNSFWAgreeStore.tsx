@@ -1,9 +1,16 @@
-// Module ID: 4342
-// Function ID: 38375
+// Module ID: 4346
+// Function ID: 38407
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 587, 4345, 566, 686, 2]
 
-// Module 4342 (_isNativeReflectConstruct)
+// Module 4346 (_isNativeReflectConstruct)
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +20,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class GuildNSFWAgreeStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GuildNSFWAgreeStore);
-      obj = closure_5(GuildNSFWAgreeStore);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      tmp = outer1_2(this, GuildNSFWAgreeStore);
+      obj = outer1_5(GuildNSFWAgreeStore);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,13 +42,16 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildNSFWAgreeStore;
   callback2(GuildNSFWAgreeStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const Storage = GuildNSFWAgreeStore(closure_1[5]).Storage;
-      const value = Storage.get("GuildNSFWAgreeStore");
+      const Storage = GuildNSFWAgreeStore(outer1_1[5]).Storage;
+      let value = Storage.get("GuildNSFWAgreeStore");
+      if (null == value) {
+        value = outer1_7;
+      }
+      outer1_7 = value;
     }
   };
   const items = [obj, ];
@@ -55,28 +60,28 @@ let tmp2 = (Store) => {
     value(arg0) {
       let tmp = null != arg0;
       if (tmp) {
-        let tmp4 = !GuildNSFWAgreeStore(closure_1[6]).shouldAgeVerifyForAgeGate();
+        let tmp4 = !GuildNSFWAgreeStore(outer1_1[6]).shouldAgeVerifyForAgeGate();
         if (tmp4) {
-          tmp4 = closure_7[arg0] || false;
-          const tmp6 = closure_7[arg0] || false;
+          tmp4 = outer1_7[arg0] || false;
+          const tmp6 = outer1_7[arg0] || false;
         }
         tmp = tmp4;
-        const obj = GuildNSFWAgreeStore(closure_1[6]);
+        const obj = GuildNSFWAgreeStore(outer1_1[6]);
       }
       return tmp;
     }
   };
   items[1] = obj;
   return callback(GuildNSFWAgreeStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GuildNSFWAgreeStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   GUILD_NSFW_AGREE: function handleGuildNSFWAgree(guildId) {
     closure_7[guildId.guildId] = true;
-    const Storage = arg1(dependencyMap[5]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     const result = Storage.set("GuildNSFWAgreeStore", closure_7);
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/GuildNSFWAgreeStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GuildNSFWAgreeStore.tsx");
 
 export default tmp2;

@@ -1,24 +1,32 @@
-// Module ID: 7783
-// Function ID: 62120
+// Module ID: 7789
+// Function ID: 62157
 // Name: nativeStyleProperties
-// Dependencies: []
+// Dependencies: [27, 4122, 1348, 1838, 4123, 7622, 653, 4130, 3974, 689, 5648, 4351, 1449, 2]
 
-// Module 7783 (nativeStyleProperties)
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_6, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: closure_7 } = arg1(dependencyMap[4]));
-const SwipeActionsType = arg1(dependencyMap[5]).SwipeActionsType;
-const tmp2 = arg1(dependencyMap[4]);
-({ MessageFlags: closure_9, MessageTypes: closure_10 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-const result = obj.experimental_createToken(() => arg1(dependencyMap[8]).hexWithOpacity(importDefault(dependencyMap[9]).unsafe_rawColors.BRAND_500, 0.1));
-const tmp3 = arg1(dependencyMap[6]);
-obj = { ephemeralBackgroundColor: importDefault(dependencyMap[9]).colors.INTERACTIVE_BACKGROUND_ACTIVE, ephemeralGutterColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BRAND, giftIntentEphemeralBackgroundColor: result, mentionedBackgroundColor: importDefault(dependencyMap[9]).colors.MESSAGE_MENTIONED_BACKGROUND_DEFAULT, mentionedGutterColor: importDefault(dependencyMap[9]).unsafe_rawColors.YELLOW_300, automodBlockedBackgroundColor: importDefault(dependencyMap[9]).colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, automodBlockedGutterColor: importDefault(dependencyMap[9]).unsafe_rawColors.RED_345, editingColor: importDefault(dependencyMap[9]).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT };
-const nativeStyleProperties = arg1(dependencyMap[7]).createNativeStyleProperties(obj);
-const MediaManager = arg1(dependencyMap[0]).NativeModules.MediaManager;
-const set = new Set(MediaManager.getConstants().supportedExtensions);
-obj = {
+// Module 7789 (nativeStyleProperties)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
+import { SwipeActionsType } from "Changeset";
+import ME from "ME";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "_isNativeReflectConstruct";
+
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_9;
+const require = arg1;
+({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_6, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: closure_7 } = MESSAGE_GROUP_SPACING);
+({ MessageFlags: closure_9, MessageTypes: closure_10 } = ME);
+const result = _createForOfIteratorHelperLoose.experimental_createToken(() => require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.BRAND_500, 0.1));
+_createForOfIteratorHelperLoose = { ephemeralBackgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE, ephemeralGutterColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, giftIntentEphemeralBackgroundColor: result, mentionedBackgroundColor: require("_createForOfIteratorHelperLoose").colors.MESSAGE_MENTIONED_BACKGROUND_DEFAULT, mentionedGutterColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300, automodBlockedBackgroundColor: require("_createForOfIteratorHelperLoose").colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, automodBlockedGutterColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_345, editingColor: require("_createForOfIteratorHelperLoose").colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createNativeStyleProperties(_createForOfIteratorHelperLoose);
+const MediaManager = require("get ActivityIndicator").NativeModules.MediaManager;
+let set = new Set(MediaManager.getConstants().supportedExtensions);
+_createForOfIteratorHelperLoose = {
   getImageSrc(proxy_url, width, height) {
     let flag = arg3;
     let hasItem = !proxy_url.endsWith(".webp");
@@ -35,14 +43,14 @@ obj = {
     if (flag) {
       str3 = "png";
     }
-    return importDefault(dependencyMap[12]).getMobileOptimizedSrc(proxy_url, width, height, str3);
+    return importDefault(1449).getMobileOptimizedSrc(proxy_url, width, height, str3);
   },
   createBackgroundHighlight(message) {
     let isAutomodBlockedMessage;
     let isEditing;
     message = message.message;
     ({ isEditing, isAutomodBlockedMessage } = message);
-    const tmp = nativeStyleProperties(message.theme);
+    const tmp = _createForOfIteratorHelperLoose(message.theme);
     if (isEditing) {
       let obj = { backgroundColor: tmp.editingColor };
       return obj;
@@ -52,15 +60,15 @@ obj = {
       return obj;
     } else {
       if (message.hasFlag(constants.IS_GUILD_OFFICIAL)) {
-        obj = arg1(dependencyMap[10]);
+        obj = require(5648) /* isGuildOfficialMessagesEnabled */;
         if (obj.showGuildOfficialMessageGradient(officialMessageStyle.officialMessageStyle)) {
-          const channel = channel.getChannel(message.getChannelId());
+          channel = channel.getChannel(message.getChannelId());
           let guild_id;
           if (null != channel) {
             guild_id = channel.guild_id;
           }
-          const guild = guild.getGuild(guild_id);
-          let obj1 = arg1(dependencyMap[10]);
+          guild = guild.getGuild(guild_id);
+          let obj1 = require(5648) /* isGuildOfficialMessagesEnabled */;
           if (obj1.isGuildOfficialMessagesEnabled(guild, "RowGeneratorUtils")) {
             let officialMessageColor;
             if (null != guild) {
@@ -75,7 +83,7 @@ obj = {
               if (obj6.hasEphemeralAppearance(message)) {
                 ephemeralGutterColor = tmp.ephemeralGutterColor;
               }
-              const obj6 = arg1(dependencyMap[11]);
+              obj6 = require(4351) /* createMinimalMessageRecord */;
             }
             obj1 = { backgroundColor: officialMessageColor | closure_7, gutterColor: ephemeralGutterColor };
             return obj1;
@@ -87,7 +95,7 @@ obj = {
         ({ mentionedBackgroundColor: obj5.backgroundColor, mentionedGutterColor: obj5.gutterColor } = tmp);
         const tmp16 = obj2;
       } else {
-        obj2 = arg1(dependencyMap[11]);
+        obj2 = require(4351) /* createMinimalMessageRecord */;
         if (obj2.hasEphemeralAppearance(message)) {
           const obj3 = { backgroundColor: message.type === constants2.GIFTING_PROMPT ? tmp.giftIntentEphemeralBackgroundColor : tmp.ephemeralBackgroundColor, gutterColor: tmp.ephemeralGutterColor };
         }
@@ -101,9 +109,8 @@ obj = {
     }
   }
 };
-const obj2 = arg1(dependencyMap[7]);
-const result1 = arg1(dependencyMap[13]).fileFinishedImporting("modules/messages/native/renderer/RowGeneratorUtils.tsx");
+const result1 = set.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorUtils.tsx");
 
-export default obj;
-export const InviteEmbedBackground = {};
-export const resolveHighlightThemedColors = nativeStyleProperties;
+export default _createForOfIteratorHelperLoose;
+export const InviteEmbedBackground = { dark: "#313339", light: "#fafafa" };
+export const resolveHighlightThemedColors = _createForOfIteratorHelperLoose;

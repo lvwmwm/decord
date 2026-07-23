@@ -1,13 +1,15 @@
-// Module ID: 7099
-// Function ID: 57092
-// Dependencies: []
+// Module ID: 7104
+// Function ID: 57126
+// Dependencies: [5043, 2]
 
-// Module 7099
-const _module = require(dependencyMap[0]);
-({ FindResultDirections: closure_0, AutocompleterResultTypes: closure_1 } = _module);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/autocompleter/findNextSelectedResult.tsx");
-function findNextSelectedResult(DOWN, closure_27, closure_31, arg3) {
+// Module 7104
+import HeaderRecord from "HeaderRecord";
+
+let closure_0;
+let closure_1;
+({ FindResultDirections: closure_0, AutocompleterResultTypes: closure_1 } = HeaderRecord);
+const result = require("set").fileFinishedImporting("modules/autocompleter/findNextSelectedResult.tsx");
+function findNextSelectedResult(DOWN, closure_27, closure_31) {
   if (0 === closure_31.length) {
     return 0;
   } else {
@@ -27,7 +29,7 @@ function findNextSelectedResult(DOWN, closure_27, closure_31, arg3) {
       if (sum < length) {
         let tmp12Result = sum;
         if (closure_31[sum].type === constants2.HEADER) {
-          tmp12Result = findNextSelectedResult(DOWN, sum, closure_31, tmp);
+          tmp12Result = callback(DOWN, sum, closure_31, tmp);
         }
       }
       return tmp12Result;
@@ -36,8 +38,8 @@ function findNextSelectedResult(DOWN, closure_27, closure_31, arg3) {
     if (sum < 0) {
       num2 = length;
     }
-    tmp12Result = findNextSelectedResult(DOWN, num2, closure_31, tmp);
-    const tmp12 = findNextSelectedResult;
+    tmp12Result = callback(DOWN, num2, closure_31, tmp);
+    const tmp12 = callback;
   }
 }
 

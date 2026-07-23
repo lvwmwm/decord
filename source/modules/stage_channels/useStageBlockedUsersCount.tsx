@@ -1,39 +1,41 @@
-// Module ID: 7581
-// Function ID: 60608
+// Module ID: 7587
+// Function ID: 60645
 // Name: useStageBlockedUsersCount
-// Dependencies: []
+// Dependencies: [4951, 566, 4957, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount, useStageBlockedUsers, useStageBlockedUsersCount, useStageIgnoredUsers, useStageIgnoredUsersCount
 
-// Module 7581 (useStageBlockedUsersCount)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/useStageBlockedUsersCount.tsx");
+// Module 7587 (useStageBlockedUsersCount)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("sortKey").fileFinishedImporting("modules/stage_channels/useStageBlockedUsersCount.tsx");
 
 export const useStageBlockedUsersCount = function useStageBlockedUsersCount(id) {
-  const arg1 = id;
-  const items = [closure_2];
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
   const items1 = [id];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     let num = 0;
-    if (null != arg0) {
-      num = participantCount.getParticipantCount(arg0, arg0(closure_1[2]).StageChannelParticipantNamedIndex.BLOCKED);
+    if (null != id) {
+      num = outer1_2.getParticipantCount(id, id(outer1_1[2]).StageChannelParticipantNamedIndex.BLOCKED);
     }
     return num;
   }, items1);
 };
 export const useStageIgnoredUsersCount = function useStageIgnoredUsersCount(id1) {
-  const arg1 = id1;
-  const items = [closure_2];
+  const _require = id1;
+  const items = [_isNativeReflectConstruct];
   const items1 = [id1];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     let num = 0;
-    if (null != arg0) {
-      num = participantCount.getParticipantCount(arg0, arg0(closure_1[2]).StageChannelParticipantNamedIndex.IGNORED);
+    if (null != id1) {
+      num = outer1_2.getParticipantCount(id1, id1(outer1_1[2]).StageChannelParticipantNamedIndex.IGNORED);
     }
     return num;
   }, items1);
 };
 export const getStageBlockedUsersCount = function getStageBlockedUsersCount(id) {
-  const participantCount = store.getParticipantCount(id, arg1(dependencyMap[2]).StageChannelParticipantNamedIndex.BLOCKED);
+  const participantCount = store.getParticipantCount(id, require(4957) /* sortKey */.StageChannelParticipantNamedIndex.BLOCKED);
   let num = 0;
   if (null != participantCount) {
     num = participantCount;
@@ -41,7 +43,7 @@ export const getStageBlockedUsersCount = function getStageBlockedUsersCount(id) 
   return num;
 };
 export const getStageIgnoredUsersCount = function getStageIgnoredUsersCount(id) {
-  const participantCount = store.getParticipantCount(id, arg1(dependencyMap[2]).StageChannelParticipantNamedIndex.IGNORED);
+  const participantCount = store.getParticipantCount(id, require(4957) /* sortKey */.StageChannelParticipantNamedIndex.IGNORED);
   let num = 0;
   if (null != participantCount) {
     num = participantCount;
@@ -49,14 +51,14 @@ export const getStageIgnoredUsersCount = function getStageIgnoredUsersCount(id) 
   return num;
 };
 export const useStageBlockedUsers = function useStageBlockedUsers(id) {
-  const arg1 = id;
-  const items = [closure_2];
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
   const items1 = [id];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => mutableParticipants.getMutableParticipants(arg0, arg0(closure_1[2]).StageChannelParticipantNamedIndex.BLOCKED), items1);
+  return _require(566).useStateFromStores(items, () => outer1_2.getMutableParticipants(id, id(outer1_1[2]).StageChannelParticipantNamedIndex.BLOCKED), items1);
 };
 export const useStageIgnoredUsers = function useStageIgnoredUsers(id) {
-  const arg1 = id;
-  const items = [closure_2];
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
   const items1 = [id];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => mutableParticipants.getMutableParticipants(arg0, arg0(closure_1[2]).StageChannelParticipantNamedIndex.IGNORED), items1);
+  return _require(566).useStateFromStores(items, () => outer1_2.getMutableParticipants(id, id(outer1_1[2]).StageChannelParticipantNamedIndex.IGNORED), items1);
 };

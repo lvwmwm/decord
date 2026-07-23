@@ -1,22 +1,26 @@
-// Module ID: 9242
-// Function ID: 72273
+// Module ID: 9249
+// Function ID: 72314
 // Name: useFastestListPropsEstimatedListSize
-// Dependencies: []
+// Dependencies: [57, 31, 1450, 2]
 // Exports: default
 
-// Module 9242 (useFastestListPropsEstimatedListSize)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/fastest_list/props/useFastestListPropsEstimatedListSize.native.tsx");
+// Module 9249 (useFastestListPropsEstimatedListSize)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+const result = require("useWindowDimensions").fileFinishedImporting("modules/fastest_list/props/useFastestListPropsEstimatedListSize.native.tsx");
 
 export default function useFastestListPropsEstimatedListSize(arg0) {
-  ({ estimatedListSize: closure_0, horizontal: closure_1 } = arg0);
+  let dependencyMap;
+  let require;
+  ({ estimatedListSize: require, horizontal: dependencyMap } = arg0);
   return callback(React.useState(() => {
-    if ("windowSize" === callback) {
-      const size = callback(closure_1[2]).getWindowDimensions();
-      const obj = callback(closure_1[2]);
+    if ("windowSize" === closure_0) {
+      const size = outer1_0(outer1_1[2]).getWindowDimensions();
+      const obj = outer1_0(outer1_1[2]);
     } else {
-      return callback;
+      return closure_0;
     }
   }), 2)[0];
 };

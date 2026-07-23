@@ -1,68 +1,76 @@
-// Module ID: 16087
-// Function ID: 123606
+// Module ID: 16204
+// Function ID: 125779
 // Name: handleTouch
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 1342, 653, 33, 4130, 689, 5497, 1212, 5590, 1557, 5093, 4540, 7889, 8559, 480, 4126, 5459, 4543, 8474, 8468, 2]
 // Exports: default
 
-// Module 16087 (handleTouch)
+// Module 16204 (handleTouch)
+import closure_3 from "ME";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function handleTouch() {
   closure_7.dismiss();
 }
 function handleMoreActions() {
-  let obj = arg1(dependencyMap[9]);
+  let obj = require(5497) /* showSimpleActionSheet */;
+  obj = { key: "NewTermsModalMore", options: null, hasIcons: false };
   obj = {};
-  obj = {};
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.label = intl.string(arg1(dependencyMap[10]).t.2jxGer);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t["2jxGer"]);
   obj.isDestructive = true;
   obj.onPress = function onPress() {
-    return callback(closure_2[11]).logout("new_terms_modal");
+    return outer1_1(outer1_2[11]).logout("new_terms_modal");
   };
   const items = [obj];
   obj.options = items;
   const result = obj.showSimpleActionSheet(obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ View: closure_6, Keyboard: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[3]);
-({ MarketingURLs: closure_10, UserRequiredActions: closure_11 } = arg1(dependencyMap[5]));
-const tmp3 = arg1(dependencyMap[5]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16 };
-obj.contentContainer = obj;
-obj.scrollView = { flex: 1 };
-const tmp4 = arg1(dependencyMap[6]);
-obj.container = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, flex: 1 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.description = { marginTop: importDefault(dependencyMap[8]).space.PX_24, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-const obj2 = { marginTop: importDefault(dependencyMap[8]).space.PX_24, marginBottom: importDefault(dependencyMap[8]).space.PX_24 };
-obj.agreementDescription = { marginTop: importDefault(dependencyMap[8]).space.PX_24 };
-const obj4 = { "Bool(false)": 40, "Bool(false)": 40, tintColor: importDefault(dependencyMap[8]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.navbarRight = obj4;
-const obj3 = { marginTop: importDefault(dependencyMap[8]).space.PX_24 };
-obj.stickyFooter = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, paddingVertical: importDefault(dependencyMap[8]).space.PX_16, marginTop: importDefault(dependencyMap[8]).space.PX_24, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
-let closure_14 = obj.createStyles(obj);
-const obj5 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_16, paddingVertical: importDefault(dependencyMap[8]).space.PX_16, marginTop: importDefault(dependencyMap[8]).space.PX_24, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: importDefault(dependencyMap[8]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/user_required_action/native/NewTermsModal.tsx");
+({ View: closure_6, Keyboard: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
+({ MarketingURLs: closure_10, UserRequiredActions: closure_11 } = ME);
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, flexGrow: 1, display: "flex", alignContent: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.contentContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.scrollView = { flex: 1 };
+_createForOfIteratorHelperLoose.container = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
+_createForOfIteratorHelperLoose.description = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.agreementDescription = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let obj4 = { position: "absolute", right: 0, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.navbarRight = obj4;
+let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.stickyFooter = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj5 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let result = require("result").fileFinishedImporting("modules/user_required_action/native/NewTermsModal.tsx");
 
 export default function NewTermsModal() {
-  const tmp = callback5();
-  const rect = importDefault(closure_2[12])();
+  const tmp = _createForOfIteratorHelperLoose();
+  const rect = importDefault(1557)();
   const top = rect.top;
-  const memo = React.useMemo(() => action.getAction(), []);
-  const arg1 = memo;
+  const memo = React.useMemo(() => outer1_9.getAction(), []);
   const tmp3 = callback2(React.useState(false), 2);
-  const importDefault = tmp3[1];
-  let obj = arg1(closure_2[13]);
+  importDefault = tmp3[1];
+  let obj = memo(5093);
   // CreateGeneratorClosureLongIndex (0x67)
-  closure_2 = React.useCallback(callback(obj.useNavigatorBackPressHandler(arg1(closure_2[14]).BackPressHandler.minimize)), []);
-  obj = { type: arg1(closure_2[17]).ImpressionTypes.VIEW, name: arg1(closure_2[17]).ImpressionNames.USER_AGREEMENTS, properties: { required_action: memo } };
-  importDefault(closure_2[16])(obj, {}, []);
+  const dependencyMap = React.useCallback(callback(obj.useNavigatorBackPressHandler(memo(4540).BackPressHandler.minimize)), []);
+  obj = { type: memo(480).ImpressionTypes.VIEW, name: memo(480).ImpressionNames.USER_AGREEMENTS, properties: { required_action: memo } };
+  importDefault(8559)(obj, {}, []);
   let tmp6 = null;
   if (null != memo) {
     obj = {};
@@ -75,69 +83,69 @@ export default function NewTermsModal() {
     obj2.style = items1;
     obj2.contentContainerStyle = tmp.contentContainer;
     obj2.onTouchStart = handleTouch;
-    const obj3 = {};
-    const intl = arg1(closure_2[10]).intl;
-    obj3.children = intl.string(arg1(closure_2[10]).t.7glvXu);
-    const items2 = [callback3(arg1(closure_2[18]).Text, obj3), , , , , , ];
+    const obj3 = { maxFontSizeMultiplier: 2, variant: "heading-xxl/bold" };
+    const intl = memo(1212).intl;
+    obj3.children = intl.string(memo(1212).t["7glvXu"]);
+    const items2 = [callback3(memo(4126).Text, obj3), , , , , , ];
     const obj4 = { variant: "text-md/normal", style: tmp.description };
-    const intl2 = arg1(closure_2[10]).intl;
+    const intl2 = memo(1212).intl;
     const obj5 = { url: constants.TERMS_SUMMARY };
-    obj4.children = intl2.format(arg1(closure_2[10]).t.CN0Hvb, obj5);
-    items2[1] = callback3(arg1(closure_2[19]).TextWithIOSLinkWorkaround, obj4);
+    obj4.children = intl2.format(memo(1212).t.CN0Hvb, obj5);
+    items2[1] = callback3(memo(5459).TextWithIOSLinkWorkaround, obj4);
     const obj6 = { variant: "text-md/normal" };
-    const intl3 = arg1(closure_2[10]).intl;
+    const intl3 = memo(1212).intl;
     const obj7 = { url: constants.TERMS };
-    obj6.children = intl3.format(arg1(closure_2[10]).t.iw0hFi, obj7);
-    items2[2] = callback3(arg1(closure_2[19]).TextWithIOSLinkWorkaround, obj6);
+    obj6.children = intl3.format(memo(1212).t.iw0hFi, obj7);
+    items2[2] = callback3(memo(5459).TextWithIOSLinkWorkaround, obj6);
     const obj8 = { variant: "text-md/normal" };
-    const intl4 = arg1(closure_2[10]).intl;
+    const intl4 = memo(1212).intl;
     const obj9 = { url: constants.PAID_TERMS };
-    obj8.children = intl4.format(arg1(closure_2[10]).t.36klnD, obj9);
-    items2[3] = callback3(arg1(closure_2[19]).TextWithIOSLinkWorkaround, obj8);
+    obj8.children = intl4.format(memo(1212).t["36klnD"], obj9);
+    items2[3] = callback3(memo(5459).TextWithIOSLinkWorkaround, obj8);
     const obj10 = { variant: "text-md/normal" };
-    const intl5 = arg1(closure_2[10]).intl;
+    const intl5 = memo(1212).intl;
     const obj11 = { url: constants.PRIVACY };
-    obj10.children = intl5.format(arg1(closure_2[10]).t.TquFBF, obj11);
-    items2[4] = callback3(arg1(closure_2[19]).TextWithIOSLinkWorkaround, obj10);
+    obj10.children = intl5.format(memo(1212).t.TquFBF, obj11);
+    items2[4] = callback3(memo(5459).TextWithIOSLinkWorkaround, obj10);
     const obj12 = { variant: "text-md/normal" };
-    const intl6 = arg1(closure_2[10]).intl;
+    const intl6 = memo(1212).intl;
     const obj13 = { url: constants.GUIDELINES };
-    obj12.children = intl6.format(arg1(closure_2[10]).t.ia96Tb, obj13);
-    items2[5] = callback3(arg1(closure_2[19]).TextWithIOSLinkWorkaround, obj12);
+    obj12.children = intl6.format(memo(1212).t.ia96Tb, obj13);
+    items2[5] = callback3(memo(5459).TextWithIOSLinkWorkaround, obj12);
     const obj14 = { variant: "text-md/normal", style: tmp.agreementDescription };
-    const intl7 = arg1(closure_2[10]).intl;
-    obj14.children = intl7.string(arg1(closure_2[10]).t.+USXQE);
-    items2[6] = callback3(arg1(closure_2[18]).Text, obj14);
+    const intl7 = memo(1212).intl;
+    obj14.children = intl7.string(memo(1212).t["+USXQE"]);
+    items2[6] = callback3(memo(4126).Text, obj14);
     obj2.children = items2;
     const items3 = [callback4(closure_8, obj2), , ];
     const obj15 = { style: tmp.stickyFooter };
     const obj16 = {
       loading: tmp3[0],
       onPress() {
-          if (memo === constants.AGREEMENTS) {
+          if (memo === outer1_11.AGREEMENTS) {
             callback();
           }
         }
     };
-    const intl8 = arg1(closure_2[10]).intl;
-    obj16.text = intl8.string(arg1(closure_2[10]).t.+TBKL1);
-    obj15.children = callback3(arg1(closure_2[20]).Button, obj16);
+    const intl8 = memo(1212).intl;
+    obj16.text = intl8.string(memo(1212).t["+TBKL1"]);
+    obj15.children = callback3(memo(4543).Button, obj16);
     items3[1] = callback3(closure_6, obj15);
     const obj17 = {};
     const items4 = [tmp.navbarRight, ];
     const obj18 = { top };
     items4[1] = obj18;
     obj17.style = items4;
-    obj17.source = importDefault(closure_2[22]);
+    obj17.source = importDefault(8468);
     obj17.color = tmp.navbarRight.tintColor;
     obj17.onPress = handleMoreActions;
     obj17.accessibilityRole = "button";
-    const intl9 = arg1(closure_2[10]).intl;
-    obj17.accessibilityLabel = intl9.string(arg1(closure_2[10]).t.UKOtz+);
-    items3[2] = callback3(importDefault(closure_2[21]), obj17);
+    const intl9 = memo(1212).intl;
+    obj17.accessibilityLabel = intl9.string(memo(1212).t["UKOtz+"]);
+    items3[2] = callback3(importDefault(8474), obj17);
     obj.children = items3;
     tmp6 = callback4(closure_6, obj);
-    const tmp16 = importDefault(closure_2[21]);
+    const tmp16 = importDefault(8474);
   }
   return tmp6;
 };

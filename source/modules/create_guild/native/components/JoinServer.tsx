@@ -1,52 +1,53 @@
-// Module ID: 11739
-// Function ID: 91187
+// Module ID: 11749
+// Function ID: 91236
 // Name: JoinServerContainer
-// Dependencies: []
+// Dependencies: [57, 31, 9227, 33, 4130, 5084, 1456, 5087, 11712, 5121, 9226, 1212, 7460, 2]
 // Exports: default
 
-// Module 11739 (JoinServerContainer)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ CreateGuildModalStates: closure_5, NUXGuildTemplatesAnalytics: closure_6 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = { flex: { flex: 1 } };
-obj = { marginTop: arg1(dependencyMap[5]).NAV_BAR_HEIGHT };
-obj.contentContainer = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/create_guild/native/components/JoinServer.tsx");
+// Module 11749 (JoinServerContainer)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ CreateGuildModalStates: closure_5, NUXGuildTemplatesAnalytics: closure_6 } = NUXGuildTemplatesAnalytics);
+_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
+_createForOfIteratorHelperLoose = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
+_createForOfIteratorHelperLoose.contentContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("NUXGuildTemplatesAnalytics").fileFinishedImporting("modules/create_guild/native/components/JoinServer.tsx");
 
 export default function JoinServerContainer(initialRoute) {
+  let closure_5;
   let tmp5;
   initialRoute = initialRoute.initialRoute;
-  const arg1 = initialRoute;
   const onClose = initialRoute.onClose;
-  const importDefault = onClose;
-  const dependencyMap = initialRoute.location;
-  const tmp2 = callback(React.useState(""), 2);
-  const first = tmp2[0];
-  const callback = first;
-  const React = tmp2[1];
-  const tmp = callback2();
-  [tmp5, closure_5] = callback(React.useState(false), 2);
-  const tmp6 = callback(React.useState(false), 2);
+  const location = initialRoute.location;
+  const tmp2 = first(React.useState(""), 2);
+  first = tmp2[0];
+  React = tmp2[1];
+  const tmp = _createForOfIteratorHelperLoose();
+  [tmp5, closure_5] = first(React.useState(false), 2);
+  const tmp6 = first(React.useState(false), 2);
   let closure_6 = tmp6[1];
-  let obj = arg1(dependencyMap[6]);
+  let obj = initialRoute(location[6]);
   const navigation = obj.useNavigation();
-  const jsx = navigation;
   const items = [navigation, initialRoute, onClose];
   const layoutEffect = React.useLayoutEffect(() => {
     const obj = {};
-    if (initialRoute === lib.JOIN_SERVER) {
+    if (initialRoute === outer1_5.JOIN_SERVER) {
       let headerCloseButton = initialRoute(location[7]).getHeaderCloseButton(() => {
-        callback(closure_2[8]).trackNUFStep(constants.STEP_GUILD_JOIN, constants.STEP_FRIEND_LIST, { skip: true });
-        callback2();
+        initialRoute(location[8]).trackNUFStep(constants.STEP_GUILD_JOIN, constants.STEP_FRIEND_LIST, { skip: true });
+        outer1_1();
       });
       const obj3 = initialRoute(location[7]);
     } else {
       headerCloseButton = initialRoute(location[7]).getHeaderBackButton(() => {
-        callback2();
+        outer1_1();
       });
       const obj2 = initialRoute(location[7]);
     }
@@ -54,25 +55,25 @@ export default function JoinServerContainer(initialRoute) {
     navigation.setOptions(obj);
   }, items);
   obj = { top: true, style: items1 };
-  const items1 = [, ];
+  items1 = [, ];
   ({ flex: arr2[0], contentContainer: arr2[1] } = tmp);
   obj = { inviteString: first };
   let stringResult = null;
-  const tmp4 = callback(React.useState(false), 2);
+  const tmp4 = first(React.useState(false), 2);
   if (tmp5) {
-    const intl = arg1(dependencyMap[11]).intl;
-    stringResult = intl.string(arg1(dependencyMap[11]).t.IRq5ah);
+    const intl = initialRoute(location[11]).intl;
+    stringResult = intl.string(initialRoute(location[11]).t.IRq5ah);
   }
   obj.error = stringResult;
   obj.submitting = tmp6[0];
   obj.onInviteChange = function onInviteChange(arg0) {
     callback(arg0);
   };
-  obj.onDone = function onDone() {
+  obj.onDone = function onDone(arg0) {
     const str = first.trim();
     if ("" !== str) {
-      callback2(true);
-      lib(false);
+      callback3(true);
+      callback2(false);
       const parts = str.split("/");
       let arr = parts.pop();
       let obj = onClose(location[12]);
@@ -82,14 +83,14 @@ export default function JoinServerContainer(initialRoute) {
       }
       const invite = obj.resolveInvite(arr, str3);
       invite.then(() => {
-        callback(false);
+        outer1_6(false);
       });
       obj = { code: arr };
-      arr = navigation.push(lib.ACCEPT_INVITE, obj);
+      arr = navigation.push(outer1_5.ACCEPT_INVITE, obj);
     } else {
-      lib(true);
+      callback2(true);
     }
   };
-  obj.children = jsx(importDefault(dependencyMap[10]), obj);
-  return jsx(arg1(dependencyMap[9]).SafeAreaPaddingView, obj);
+  obj.children = navigation(onClose(location[10]), obj);
+  return navigation(initialRoute(location[9]).SafeAreaPaddingView, obj);
 };

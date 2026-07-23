@@ -1,45 +1,48 @@
-// Module ID: 11625
-// Function ID: 90276
+// Module ID: 11635
+// Function ID: 90325
 // Name: UserProfileMutualGuildsActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 11636, 11637, 11638, 11639, 11643, 2]
 // Exports: default
 
-// Module 11625 (UserProfileMutualGuildsActionSheet)
-importAll(dependencyMap[0]);
-({ View: closure_3, ActivityIndicator: closure_4 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { paddingTop: importDefault(dependencyMap[4]).space.PX_8 };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[1]);
-obj.loadingState = { paddingTop: importDefault(dependencyMap[4]).space.PX_8, alignItems: "center" };
-obj.emptyState = { alignItems: "center" };
-let closure_6 = obj.createStyles(obj);
-const obj1 = { paddingTop: importDefault(dependencyMap[4]).space.PX_8, alignItems: "center" };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_profile/native/UserProfileMutualGuildsActionSheet.tsx");
+// Module 11635 (UserProfileMutualGuildsActionSheet)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ View: closure_3, ActivityIndicator: closure_4 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, gap: 20, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.loadingState = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center" };
+_createForOfIteratorHelperLoose.emptyState = { alignItems: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center" };
+const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileMutualGuildsActionSheet.tsx");
 
 export default function UserProfileMutualGuildsActionSheet(user) {
   user = user.user;
-  const arg1 = user;
-  const importDefault = user.onPressMutualGuild;
-  const tmp = callback();
-  const mutualGuilds = importDefault(dependencyMap[5])(user).mutualGuilds;
+  const onPressMutualGuild = user.onPressMutualGuild;
+  const tmp = _createForOfIteratorHelperLoose();
+  const mutualGuilds = onPressMutualGuild(11636)(user).mutualGuilds;
   let obj = { scrollable: true };
   let length;
   const tmp2 = jsx;
-  const tmp3 = importDefault(dependencyMap[6]);
+  const tmp3 = onPressMutualGuild(11637);
   if (null != mutualGuilds) {
     length = mutualGuilds.length;
   }
-  obj.title = importDefault(dependencyMap[7])(length);
+  obj.title = onPressMutualGuild(11638)(length);
   obj = { style: tmp.container };
   if (null == mutualGuilds) {
     obj = { style: tmp.loadingState, children: <closure_4 /> };
-    let tmp11 = <closure_3 {...obj} />;
+    let tmp11 = <closure_3 style={tmp.loadingState}><closure_4 /></closure_3>;
   } else if (0 === mutualGuilds.length) {
-    const obj1 = { style: tmp.emptyState, children: jsx(arg1(dependencyMap[8]).NoMutualServers, {}) };
-    tmp11 = <closure_3 {...obj1} />;
+    const obj1 = { style: tmp.emptyState, children: jsx(user(11639).NoMutualServers, {}) };
+    tmp11 = <closure_3 style={tmp.emptyState}>{jsx(user(11639).NoMutualServers, {})}</closure_3>;
   } else {
     const obj2 = {
       data: mutualGuilds,
@@ -50,22 +53,41 @@ export default function UserProfileMutualGuildsActionSheet(user) {
           let end;
           let start;
           item = item.item;
-          const user = item;
           ({ start, end } = item);
-          return callback(user(closure_2[9]).MutualGuildRow, {
-            user,
+          return outer1_5(user(outer1_2[9]).MutualGuildRow, {
+            user: item,
             mutualGuild: item,
             onPress() {
-              return callback(item.guild.id);
+              return outer1_1(item.guild.id);
             },
             start,
             end
           });
         }
     };
-    tmp11 = jsx(arg1(dependencyMap[6]).UserProfileStackedActionSheetList, obj2);
+    tmp11 = jsx(user(11637).UserProfileStackedActionSheetList, {
+      data: mutualGuilds,
+      keyExtractor(guild) {
+          return guild.guild.id;
+        },
+      renderItem(item) {
+          let end;
+          let start;
+          item = item.item;
+          ({ start, end } = item);
+          return outer1_5(user(outer1_2[9]).MutualGuildRow, {
+            user: item,
+            mutualGuild: item,
+            onPress() {
+              return outer1_1(item.guild.id);
+            },
+            start,
+            end
+          });
+        }
+    });
   }
   obj.children = tmp11;
-  obj.children = <closure_3 {...obj} />;
+  obj.children = <closure_3 style={tmp.container} />;
   return tmp2(tmp3, obj);
 };

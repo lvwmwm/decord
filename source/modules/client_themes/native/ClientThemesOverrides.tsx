@@ -1,18 +1,19 @@
-// Module ID: 8822
-// Function ID: 69560
+// Module ID: 8829
+// Function ID: 69601
 // Name: useGradientBottom
-// Dependencies: []
+// Dependencies: [31, 4130, 3941, 8830, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 8822 (useGradientBottom)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).createStyles({ none: { backgroundColor: "transparent" } });
-const obj = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/client_themes/native/ClientThemesOverrides.tsx");
+// Module 8829 (useGradientBottom)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ none: { backgroundColor: "transparent" } });
+const result = require("colorToHex").fileFinishedImporting("modules/client_themes/native/ClientThemesOverrides.tsx");
 
 export const useGradientBottom = function useGradientBottom() {
-  const gradientValue = arg1(dependencyMap[2]).useGradientValue(arg1(dependencyMap[2]).GradientPercentage.END);
-  const arg1 = gradientValue;
+  gradientValue = gradientValue(3941).useGradientValue(gradientValue(3941).GradientPercentage.END);
   const items = [gradientValue];
   return React.useMemo(() => {
     let tmp;
@@ -24,8 +25,7 @@ export const useGradientBottom = function useGradientBottom() {
   }, items);
 };
 export const useGradientTop = function useGradientTop() {
-  const gradientValue = arg1(dependencyMap[2]).useGradientValue(arg1(dependencyMap[2]).GradientPercentage.START);
-  const arg1 = gradientValue;
+  gradientValue = gradientValue(3941).useGradientValue(gradientValue(3941).GradientPercentage.START);
   const items = [gradientValue];
   return React.useMemo(() => {
     let tmp;
@@ -37,8 +37,7 @@ export const useGradientTop = function useGradientTop() {
   }, items);
 };
 export const useGradientMidpoint = function useGradientMidpoint() {
-  const gradientValue = arg1(dependencyMap[2]).useGradientValue(arg1(dependencyMap[2]).GradientPercentage.MID);
-  const arg1 = gradientValue;
+  gradientValue = gradientValue(3941).useGradientValue(gradientValue(3941).GradientPercentage.MID);
   const items = [gradientValue];
   return React.useMemo(() => {
     let tmp;
@@ -52,7 +51,7 @@ export const useGradientMidpoint = function useGradientMidpoint() {
 export const useClientThemesOverride = function useClientThemesOverride(themedChatInput) {
   let none = themedChatInput;
   let tmp;
-  if (importDefault(dependencyMap[3])()) {
+  if (importDefault(8830)()) {
     if (null == none) {
       none = tmp2.none;
     }

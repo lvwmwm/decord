@@ -1,15 +1,15 @@
-// Module ID: 12718
-// Function ID: 97626
+// Module ID: 12832
+// Function ID: 99782
 // Name: getIOSAudioInterruptExperimentConfig
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getIOSAudioInterruptExperimentConfig
 
-// Module 12718 (getIOSAudioInterruptExperimentConfig)
-const _module = require(dependencyMap[0]);
-const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/IOSAudioInterruptExperiment.tsx");
+// Module 12832 (getIOSAudioInterruptExperimentConfig)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-03-ios-audio-interrupt-handling", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/IOSAudioInterruptExperiment.tsx");
 
 export const getIOSAudioInterruptExperimentConfig = function getIOSAudioInterruptExperimentConfig(handleConnectionOpen) {
   return config.getConfig({ location: handleConnectionOpen });

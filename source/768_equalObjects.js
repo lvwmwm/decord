@@ -1,13 +1,13 @@
 // Module ID: 768
-// Function ID: 8837
+// Function ID: 8838
 // Name: equalObjects
-// Dependencies: []
+// Dependencies: [769]
 
 // Module 768 (equalObjects)
 
 export default function equalObjects(arg0, arg1, arg2, arg3, arg4, get) {
-  const arr = require(dependencyMap[0])(arg0);
-  if (arr.length != require(dependencyMap[0])(arg1).length) {
+  const arr = require(769) /* getAllKeys */(arg0);
+  if (arr.length != require(769) /* getAllKeys */(arg1).length) {
     if (!tmp) {
       return false;
     }

@@ -1,13 +1,14 @@
 // Module ID: 529
 // Function ID: 6639
-// Dependencies: []
+// Dependencies: [530, 531, 533, 534]
 
 // Module 529
-let _module = require(dependencyMap[0]);
-if (!_module) {
-  const _module1 = require(dependencyMap[1]);
-  const _module2 = require(dependencyMap[2]);
-  _module = _module1.call(_module2, require(dependencyMap[3]));
+import apply from "apply";
+
+if (!apply) {
+  const _module1 = require("bind");
+  const _module2 = require("module_533");
+  apply = _module1.call(_module2, require("module_534"));
 }
 
-export default _module;
+export default apply;

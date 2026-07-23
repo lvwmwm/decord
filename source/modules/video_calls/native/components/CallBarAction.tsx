@@ -1,17 +1,29 @@
-// Module ID: 10539
-// Function ID: 82363
+// Module ID: 10549
+// Function ID: 82413
 // Name: ActionButton
-// Dependencies: []
+// Dependencies: [31, 27, 10210, 33, 3974, 689, 4130, 10550, 4660, 10551, 4126, 2]
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 10539 (ActionButton)
+// Module 10549 (ActionButton)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { resetFocusTimer } from "resetFocusTimer";
+import jsxProd from "jsxProd";
+import hexToRgb from "hexToRgb";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_7;
+let closure_8;
+const require = arg1;
 class ActionButton {
   constructor(arg0) {
     flag = global.appearsDisabled;
     if (flag === undefined) {
       flag = false;
     }
-    ({ backgroundColor, imageStyle, onPress: closure_0, showBadge, accessibilityLabel, accessibilityState, source } = global);
+    ({ backgroundColor, imageStyle, onPress, showBadge, accessibilityLabel, accessibilityState, source } = global);
     if (showBadge === undefined) {
       showBadge = false;
     }
@@ -21,12 +33,12 @@ class ActionButton {
     }
     ({ lottieComponent, IconComponent } = global);
     ({ children, lottieComponentColor } = global);
-    tmp = closure_13();
+    tmp = c13();
     num = 12;
     if (flag2) {
-      tmp3 = closure_12;
+      tmp3 = c12;
       num = 12;
-      if (tmp2 < closure_12) {
+      if (tmp2 < c12) {
         num = 6;
       }
     }
@@ -40,7 +52,7 @@ class ActionButton {
       accessibilityRole: "button",
       accessibilityState,
       onPress() {
-            callback2();
+            outer1_6();
             callback();
           },
       disabled: false,
@@ -66,9 +78,9 @@ class ActionButton {
     obj3 = { circleRadius: tmp4.buttonRadius, cutoutRadius: sum };
     obj3.enableCutout = showBadge;
     obj3.cutoutPositionInDegrees = 45;
-    tmp12 = importDefault(dependencyMap[9]);
+    tmp12 = require("getCutoutCenterX");
     if (null == backgroundColor) {
-      backgroundColor = closure_9;
+      backgroundColor = c9;
     }
     obj3.circleFillColor = backgroundColor;
     items1 = [, , , ];
@@ -80,10 +92,10 @@ class ActionButton {
     tmp13 = jsx;
     tmp14 = View;
     if (null != lottieComponent) {
-      tmp19 = importAll;
+      tmp19 = result;
       obj5 = {};
       obj5.color = lottieComponentColor;
-      cloneElementResult = importAll.cloneElement(lottieComponent, obj5);
+      cloneElementResult = result.cloneElement(lottieComponent, obj5);
     } else if (null != IconComponent) {
       tmp18 = jsx;
       obj6 = {};
@@ -110,11 +122,11 @@ class ActionButton {
       obj9.width = result1;
       obj9.height = result1;
       obj9.borderRadius = tmp4.badgeRadius;
-      tmp23 = arg1;
-      tmp24 = dependencyMap;
-      obj12 = arg1(dependencyMap[9]);
+      tmp23 = onPress;
+      tmp24 = closure_2;
+      obj12 = require("getCutoutCenterX");
       obj9.top = obj12.getBadgeTop(tmp4.badgeRadius, tmp4.buttonRadius, 45);
-      obj13 = arg1(dependencyMap[9]);
+      obj13 = require("getCutoutCenterX");
       obj9.left = obj13.getBadgeLeft(tmp4.badgeRadius, tmp4.buttonRadius, 45);
       items3[1] = obj9;
       obj8.style = items3;
@@ -124,31 +136,25 @@ class ActionButton {
     items1[3] = children;
     obj1.children = items1;
     obj.children = tmp9(tmp10, obj1);
-    return tmp8(arg1(dependencyMap[8]).PressableOpacity, obj);
+    return tmp8(require("PressableBase").PressableOpacity, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-const resetFocusTimer = arg1(dependencyMap[2]).resetFocusTimer;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-let closure_9 = obj.hexWithOpacity(importDefault(dependencyMap[5]).unsafe_rawColors.WHITE, 0.24);
-let closure_10 = Object.freeze({ youtube_video_id: 110, queryGroupDMs: null, 9223372036854775807: "1116b1666a9928acf5e5ec15dec8e3d4" });
-const frozen = Object.freeze({});
+({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 0.24);
+let closure_10 = Object.freeze({ buttonRadius: 28, badgeRadius: 6, cutoutInset: 3 });
+const frozen = Object.freeze({ buttonRadius: 24, badgeRadius: 4, cutoutInset: 2 });
 let closure_12 = 24 + 2 * frozen.buttonRadius * 5 + 96;
-let obj1 = arg1(dependencyMap[6]);
-obj = { buttonContainer: { position: "absolute" }, iconContainer: { <string:4175141322>: true, <string:2410893134>: "/assets/.cache/intl/ZGVzaWdu", <string:2325658035>: null }, badge: {} };
-obj = { borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.PRIMARY_760 };
-obj.notificationArea = obj;
-obj.notificationText = { lineHeight: 16 };
-obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
-obj.notificationAreaMentioned = obj1;
-const tmp3 = arg1(dependencyMap[3]);
-obj.notificationAreaUnread = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.PRIMARY_600 };
-let closure_13 = obj1.createStyles(obj);
-const obj2 = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.PRIMARY_600 };
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/video_calls/native/components/CallBarAction.tsx");
+hexToRgb = { buttonContainer: { position: "absolute" }, iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center" }, badge: { backgroundColor: "white", position: "absolute" } };
+hexToRgb = { position: "absolute", top: -4, right: -4, height: 24, minWidth: 24, paddingHorizontal: 4, borderRadius: 12, borderWidth: 4, borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_760, alignItems: "center", justifyContent: "center" };
+hexToRgb.notificationArea = hexToRgb;
+hexToRgb.notificationText = { lineHeight: 16 };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
+hexToRgb.notificationAreaMentioned = _createForOfIteratorHelperLoose;
+hexToRgb.notificationAreaUnread = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_600 };
+hexToRgb = _createForOfIteratorHelperLoose.createStyles(hexToRgb);
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_600 };
+let result = require("resetFocusTimer").fileFinishedImporting("modules/video_calls/native/components/CallBarAction.tsx");
 
 export const SMALL_ACTION_BUTTON_DIMENSIONS = frozen;
 export { ActionButton };
@@ -170,14 +176,14 @@ export const ToggledActionButton = function ToggledActionButton(showBadge) {
     flag2 = false;
   }
   ({ backgroundColor, tintColor } = showBadge);
-  let obj = { 1515301718: "Text", 102650446: "resizeMode", 1415906845: "from", -868526421: "Array", 1454088292: "isArray", -1571204805: "braintreemasterpasslanding" };
+  let obj = { isActive: 0, disableTint: 0, showBadge: 0, isSmallSize: 0, backgroundColor: 0, tintColor: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(showBadge, obj);
   let WHITE = null;
   if (isActive) {
-    WHITE = importDefault(dependencyMap[5]).unsafe_rawColors.WHITE;
+    WHITE = importDefault(689).unsafe_rawColors.WHITE;
   }
-  const unsafe_rawColors = importDefault(dependencyMap[5]).unsafe_rawColors;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   let tmp6;
   if (!disableTint) {
     tmp6 = isActive ? unsafe_rawColors.PRIMARY_900 : unsafe_rawColors.WHITE;
@@ -212,8 +218,8 @@ export const PrimaryActionButton = function PrimaryActionButton(isSmallSize) {
   let obj = Object.create(null);
   obj.isSmallSize = 0;
   const merged = Object.assign(isSmallSize, obj);
-  obj = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400 };
-  obj = { tintColor: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE };
+  obj = { backgroundColor: importDefault(689).unsafe_rawColors.RED_400 };
+  obj = { tintColor: importDefault(689).unsafe_rawColors.WHITE };
   obj.imageStyle = obj;
   obj.isSmallSize = flag;
   const merged1 = Object.assign(merged);
@@ -225,7 +231,7 @@ export const NotifiedActionButton = function NotifiedActionButton(isMentioned) {
   obj.notifications = 0;
   obj.isMentioned = 0;
   const merged = Object.assign(isMentioned, obj);
-  const tmp3 = callback2();
+  const tmp3 = hexToRgb();
   obj = {};
   obj = {};
   const merged1 = Object.assign(merged);
@@ -237,8 +243,8 @@ export const NotifiedActionButton = function NotifiedActionButton(isMentioned) {
     }
     items[1] = notificationAreaMentioned;
     obj1.style = items;
-    const obj2 = { style: tmp3.notificationText, children: isMentioned.notifications };
-    obj1.children = callback(arg1(dependencyMap[10]).Text, obj2);
+    const obj2 = { style: tmp3.notificationText, variant: "text-xs/semibold", color: "text-overlay-light", children: isMentioned.notifications };
+    obj1.children = callback(require(4126) /* Text */.Text, obj2);
     obj["children"] = tmp8(tmp9, obj1);
     obj.children = tmp4(ActionButton, obj);
     return tmp4(closure_5, obj);

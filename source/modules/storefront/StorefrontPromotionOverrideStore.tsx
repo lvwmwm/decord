@@ -1,37 +1,38 @@
-// Module ID: 7363
-// Function ID: 59351
+// Module ID: 7368
+// Function ID: 59385
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 7363 (_isNativeReflectConstruct)
+// Module 7368 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5;
-let tmp2 = (Store) => {
+let c5;
+let tmp2 = ((Store) => {
   class StorefrontPromotionOverrideStore {
     constructor() {
       self = this;
       tmp = StorefrontPromotionOverrideStore(this, StorefrontPromotionOverrideStore);
-      obj = closure_3(StorefrontPromotionOverrideStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(StorefrontPromotionOverrideStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,27 +41,26 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = StorefrontPromotionOverrideStore;
   callback2(StorefrontPromotionOverrideStore, Store);
   const items = [
     {
       key: "getPromotionIdOverride",
       value() {
-        return closure_5;
+        return outer1_5;
       }
     }
   ];
   return callback(StorefrontPromotionOverrideStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "StorefrontPromotionOverrideStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   LOGOUT: function handleLogout() {
-    let closure_5;
+    let c5;
   },
   STOREFRONT_PROMOTION_ID_OVERRIDE_SET: function handleSet(promotionIdOverride) {
     promotionIdOverride = promotionIdOverride.promotionIdOverride;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/storefront/StorefrontPromotionOverrideStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/storefront/StorefrontPromotionOverrideStore.tsx");
 
 export default tmp2;

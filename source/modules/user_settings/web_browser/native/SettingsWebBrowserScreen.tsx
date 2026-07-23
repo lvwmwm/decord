@@ -1,19 +1,21 @@
-// Module ID: 14195
-// Function ID: 107430
-// Dependencies: []
+// Module ID: 14309
+// Function ID: 109586
+// Dependencies: [31, 7662, 33, 10095, 13550, 2]
 
-// Module 14195
-const importAllResult = importAll(dependencyMap[0]);
-const MobileSetting = arg1(dependencyMap[1]).MobileSetting;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 14309
+import importAllResult from "result";
+import { MobileSetting } from "MobileSetting";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo(function SettingsWebBrowserScreen() {
   const node = importAllResult.useMemo(() => {
-    const items = [constants.SELECT_WEB_BROWSER];
+    const items = [outer1_4.SELECT_WEB_BROWSER];
     const sections = [{ settings: items }];
-    return callback(closure_2[3]).createList({ sections });
+    return outer1_0(outer1_2[3]).createList({ sections });
   }, []);
-  return jsx(importDefault(dependencyMap[4]), { node });
+  return jsx(importDefault(13550), { node });
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_settings/web_browser/native/SettingsWebBrowserScreen.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/web_browser/native/SettingsWebBrowserScreen.tsx");
 
 export default memoResult;

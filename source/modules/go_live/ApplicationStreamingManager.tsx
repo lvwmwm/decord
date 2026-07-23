@@ -1,54 +1,75 @@
-// Module ID: 16433
-// Function ID: 126879
+// Module ID: 16550
+// Function ID: 129053
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 4149, 1194, 1348, 4051, 4223, 1906, 4216, 1849, 4195, 653, 22, 4309, 664, 4194, 4015, 686, 8857, 16528, 5078, 2]
 
-// Module 16433 (_createForOfIteratorHelperLoose)
+// Module 16550 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "apply";
+import closure_6 from "set";
+import isStreamKey from "isStreamKey";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import "_isNativeReflectConstruct";
+import StreamIssueReportReasons from "StreamIssueReportReasons";
+import ME from "ME";
+import apply from "getCommonErrorContext";
+import set from "_possibleConstructorReturn";
+
 let GO_LIVE_NOTIFY_FRIENDS_MIN_MEMBER_COUNT;
 let STREAM_NOTIFY_GUILD_MAX_SIZE;
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_15;
+let closure_16;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -59,16 +80,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -96,28 +117,28 @@ function _isNativeReflectConstruct() {
 }
 function pruneShownFullStreamModals() {
   const item = set.forEach((arg0) => {
-    if (!streamMarkedFull.isStreamMarkedFull(arg0)) {
-      set.delete(arg0);
+    if (!outer1_8.isStreamMarkedFull(arg0)) {
+      outer1_23.delete(arg0);
     }
   });
 }
 function clearSpectatorReconnectionTimer(arg0) {
-  if (null != closure_17[arg0]) {
+  if (null != table[arg0]) {
     obj.stop();
   }
-  delete r0[r1];
+  delete tmp[tmp2];
 }
 function clearConnectTimeout(arg0) {
-  if (null != closure_18[arg0]) {
+  if (null != dependencyMap[arg0]) {
     obj.stop();
   }
-  delete r0[r1];
+  delete tmp[tmp2];
 }
 function maybeAutowatchStream(channelId) {
   if (voiceChannelId.getVoiceChannelId() !== channelId) {
     return false;
   } else {
-    const channel = channel.getChannel(channelId);
+    channel = channel.getChannel(channelId);
     if (null == channel) {
       return false;
     } else {
@@ -133,17 +154,17 @@ function maybeAutowatchStream(channelId) {
         if (null == streamForUser) {
           return false;
         } else {
-          let obj = arg1(dependencyMap[18]);
+          let obj = require(4194) /* isStreamKey */;
           const encodeStreamKeyResult = obj.encodeStreamKey(streamForUser);
-          let tmp6 = encodeStreamKeyResult !== closure_22;
+          let tmp6 = encodeStreamKeyResult !== c22;
           if (tmp6) {
             let flag2 = !authStore.isStreamMarkedFull(encodeStreamKeyResult);
             if (flag2) {
-              closure_22 = encodeStreamKeyResult;
+              c22 = encodeStreamKeyResult;
               obj = { noFocus: true };
-              arg1(dependencyMap[16]).watchStream(streamForUser, obj);
+              require(4309) /* isVoiceChannelFull */.watchStream(streamForUser, obj);
               flag2 = true;
-              const obj2 = arg1(dependencyMap[16]);
+              const obj2 = require(4309) /* isVoiceChannelFull */;
             }
             tmp6 = flag2;
           }
@@ -153,102 +174,88 @@ function maybeAutowatchStream(channelId) {
     }
   }
 }
-function updateRegion(first, preferredRegion) {
+function updateRegion(closure_0, preferredRegion) {
   if (null == preferredRegion) {
     preferredRegion = store.getPreferredRegion();
   }
   let tmp3 = null != preferredRegion;
   if (tmp3) {
-    tmp3 = preferredRegion !== store.getRegion(store2.getHostname(first));
+    tmp3 = preferredRegion !== store.getRegion(store2.getHostname(closure_0));
   }
   if (tmp3) {
-    preferredRegion(dependencyMap[16]).changeStreamRegion(first, preferredRegion);
-    const obj = preferredRegion(dependencyMap[16]);
+    require(4309) /* isVoiceChannelFull */.changeStreamRegion(closure_0, preferredRegion);
+    const obj = require(4309) /* isVoiceChannelFull */;
   }
 }
 function maybeStartConnectTimeout(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const allActiveStreamKeys = store2.getAllActiveStreamKeys();
   if (!allActiveStreamKeys.includes(arg0)) {
-    let timeout = closure_18[arg0];
+    let timeout = dependencyMap[arg0];
     if (null == timeout) {
-      const Timeout = arg1(dependencyMap[19]).Timeout;
+      const Timeout = _require(4015).Timeout;
       const prototype = Timeout.prototype;
       timeout = new Timeout();
     }
-    closure_18[arg0] = timeout;
+    dependencyMap[arg0] = timeout;
     timeout.start(arg1 ? closure_21 : closure_20, () => {
-      let obj = callback(closure_2[20]);
-      obj = { type: "STREAM_TIMED_OUT", streamKey: arg0 };
+      let obj = outer1_1(outer1_2[20]);
+      obj = { type: "STREAM_TIMED_OUT", streamKey: closure_0 };
       obj.dispatch(obj);
     });
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-importDefault(dependencyMap[12]);
-({ GO_LIVE_NOTIFY_FRIENDS_MIN_MEMBER_COUNT, STREAM_NOTIFY_GUILD_MAX_SIZE } = arg1(dependencyMap[13]));
-const tmp3 = arg1(dependencyMap[13]);
-({ ApplicationStreamDeleteReasons: closure_15, ApplicationStreamStates: closure_16 } = arg1(dependencyMap[14]));
-const tmp4 = arg1(dependencyMap[14]);
-arg1(dependencyMap[15]).debounce(arg1(dependencyMap[16]).notifyStreamStart, 1000);
+({ GO_LIVE_NOTIFY_FRIENDS_MIN_MEMBER_COUNT, STREAM_NOTIFY_GUILD_MAX_SIZE } = StreamIssueReportReasons);
+({ ApplicationStreamDeleteReasons: closure_15, ApplicationStreamStates: closure_16 } = ME);
+apply.debounce(require("isVoiceChannelFull").notifyStreamStart, 1000);
 let closure_17 = {};
 let closure_18 = {};
-let closure_19 = 3 * importDefault(dependencyMap[17]).Millis.MINUTE;
-let closure_20 = 5 * importDefault(dependencyMap[17]).Millis.SECOND;
-let closure_21 = 12 * importDefault(dependencyMap[17]).Millis.SECOND;
-let closure_22 = null;
-const set = new Set();
-const obj = arg1(dependencyMap[15]);
-const tmp7 = (arg0) => {
+let closure_19 = 3 * require("set").Millis.MINUTE;
+let closure_20 = 5 * require("set").Millis.SECOND;
+let closure_21 = 12 * require("set").Millis.SECOND;
+let c22 = null;
+let set = new Set();
+let result = set.fileFinishedImporting("modules/go_live/ApplicationStreamingManager.tsx");
+
+export default ((arg0) => {
   class BaseApplicationStreamingManager {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_4(this, BaseApplicationStreamingManager);
+      tmp = outer1_4(this, apply);
       items1 = [...items];
-      obj = closure_6(BaseApplicationStreamingManager);
-      tmp2 = closure_5;
-      if (closure_26()) {
+      obj = outer1_6(apply);
+      tmp2 = outer1_5;
+      if (outer1_26()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      BaseApplicationStreamingManager = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.handleStreamWatch = (streamKey) => {
         streamKey = streamKey.streamKey;
-        const channel = store.getChannel(streamKey(closure_2[18]).decodeStreamKey(streamKey).channelId);
+        const channel = outer2_10.getChannel(BaseApplicationStreamingManager(outer2_2[18]).decodeStreamKey(streamKey).channelId);
         let isGuildStageVoiceResult;
         if (null != channel) {
           isGuildStageVoiceResult = channel.isGuildStageVoice();
         }
-        closure_32(streamKey, isGuildStageVoiceResult);
-        callback3(streamKey);
+        outer2_32(streamKey, isGuildStageVoiceResult);
+        outer2_28(streamKey);
         if (!streamKey.allowMultiple) {
-          const allActiveStreams = authStore.getAllActiveStreams();
+          const allActiveStreams = outer2_8.getAllActiveStreams();
           const item = allActiveStreams.forEach((ownerId) => {
-            const encodeStreamKeyResult = streamKey(closure_2[18]).encodeStreamKey(ownerId);
-            let tmp2 = ownerId.ownerId !== id.getId();
+            const encodeStreamKeyResult = BaseApplicationStreamingManager(outer3_2[18]).encodeStreamKey(ownerId);
+            let tmp2 = ownerId.ownerId !== outer3_9.getId();
             if (tmp2) {
               tmp2 = encodeStreamKeyResult !== streamKey;
             }
             if (tmp2) {
-              streamKey(closure_2[16]).stopStream(encodeStreamKeyResult, false);
-              const obj2 = streamKey(closure_2[16]);
+              BaseApplicationStreamingManager(outer3_2[16]).stopStream(encodeStreamKeyResult, false);
+              const obj2 = BaseApplicationStreamingManager(outer3_2[16]);
             }
           });
         }
@@ -258,64 +265,64 @@ const tmp7 = (arg0) => {
         let streamType;
         channelId = channelId.channelId;
         ({ streamType, guildId } = channelId);
-        const channel = store.getChannel(channelId);
-        const obj2 = tmp2Result(closure_2[18]);
-        const tmp = closure_32;
+        const channel = outer2_10.getChannel(channelId);
+        const obj2 = BaseApplicationStreamingManager(outer2_2[18]);
+        const tmp = outer2_32;
         let isGuildStageVoiceResult;
-        const obj = { streamType, guildId, channelId, ownerId: id.getId() };
+        const obj = { streamType, guildId, channelId, ownerId: outer2_9.getId() };
         if (null != channel) {
           isGuildStageVoiceResult = channel.isGuildStageVoice();
         }
-        tmp(obj2.encodeStreamKey({ streamType, guildId, channelId, ownerId: id.getId() }), isGuildStageVoiceResult);
+        tmp(obj2.encodeStreamKey({ streamType, guildId, channelId, ownerId: outer2_9.getId() }), isGuildStageVoiceResult);
         const result = tmp2Result.platformHandleStreamStart(channelId);
       };
       tmp2Result.handleStreamCreate = (streamKey) => {
         streamKey = streamKey.streamKey;
-        callback4(streamKey);
-        callback2();
-        const obj = tmp2Result(closure_2[18]);
-        const memberCount = memberCount.getMemberCount(tmp2Result(closure_2[18]).decodeStreamKey(streamKey).guildId);
+        outer2_29(streamKey);
+        outer2_27();
+        const obj = BaseApplicationStreamingManager(outer2_2[18]);
+        const memberCount = outer2_11.getMemberCount(BaseApplicationStreamingManager(outer2_2[18]).decodeStreamKey(streamKey).guildId);
       };
       tmp2Result.handleStreamUpdate = (streamKey) => {
-        callback4(streamKey.streamKey);
-        callback2();
+        outer2_29(streamKey.streamKey);
+        outer2_27();
       };
       tmp2Result.handleStreamDelete = (streamKey) => {
         streamKey = streamKey.streamKey;
-        callback4(streamKey);
-        if (streamKey.reason === constants.STREAM_FULL) {
-          let obj = tmp2Result(closure_2[21]);
-          obj = { type: tmp2Result(closure_2[21]).AVError.STREAM_FULL };
-          const merged = Object.assign(tmp2Result(closure_2[22]).getStreamErrorContext(streamKey));
+        outer2_29(streamKey);
+        if (streamKey.reason === outer2_15.STREAM_FULL) {
+          let obj = BaseApplicationStreamingManager(outer2_2[21]);
+          obj = { type: BaseApplicationStreamingManager(outer2_2[21]).AVError.STREAM_FULL };
+          const merged = Object.assign(BaseApplicationStreamingManager(outer2_2[22]).getStreamErrorContext(streamKey));
           obj.reportAVError(obj);
-          if (!set.has(streamKey)) {
-            set.add(streamKey);
+          if (!outer2_23.has(streamKey)) {
+            outer2_23.add(streamKey);
             const result = tmp2Result.platformShowStreamFull();
           }
-          const obj3 = tmp2Result(closure_2[22]);
+          const obj3 = BaseApplicationStreamingManager(outer2_2[22]);
         }
       };
       tmp2Result.handleStreamClose = (streamKey) => {
         streamKey = streamKey.streamKey;
-        callback3(streamKey);
-        callback4(streamKey);
+        outer2_28(streamKey);
+        outer2_29(streamKey);
       };
       tmp2Result.handleVoiceChannelSelect = (channelId) => {
         channelId = channelId.channelId;
         if (null != channelId) {
-          let closure_22 = null;
-          callback2();
-          const allApplicationStreamsForChannel = authStore.getAllApplicationStreamsForChannel(channelId);
+          const outer2_22 = null;
+          outer2_27();
+          const allApplicationStreamsForChannel = outer2_8.getAllApplicationStreamsForChannel(channelId);
           const found = allApplicationStreamsForChannel.find((ownerId) => {
-            let tmp = ownerId.ownerId !== id.getId();
+            let tmp = ownerId.ownerId !== outer3_9.getId();
             if (tmp) {
-              tmp = !streamMarkedFull.isStreamMarkedFull(callback(closure_2[18]).encodeStreamKey(ownerId));
-              const obj = callback(closure_2[18]);
+              tmp = !outer3_8.isStreamMarkedFull(BaseApplicationStreamingManager(outer3_2[18]).encodeStreamKey(ownerId));
+              const obj = BaseApplicationStreamingManager(outer3_2[18]);
             }
             return tmp;
           });
           if (null != found) {
-            callback5(channelId, found.ownerId);
+            outer2_30(channelId, found.ownerId);
           }
         }
       };
@@ -327,48 +334,49 @@ const tmp7 = (arg0) => {
           let selfStream;
           let userId;
           ({ userId, channelId, guildId, selfStream } = arg0);
-          const result = encodeStreamKeyResult.platformHandleVoiceStateUpdate(arg0);
-          if (userId !== id.getId()) {
+          const result = outer1_0.platformHandleVoiceStateUpdate(arg0);
+          if (userId !== outer3_9.getId()) {
             let tmp3 = !selfStream;
             if (!tmp3) {
               tmp3 = null == channelId;
             }
             if (tmp3) {
-              tmp3 = size.size > 0;
+              tmp3 = outer3_23.size > 0;
             }
             if (tmp3) {
-              callback();
+              outer3_27();
             }
             if (null != channelId) {
-              const activeStreamForUser = authStore.getActiveStreamForUser(userId, guildId);
+              const activeStreamForUser = outer3_8.getActiveStreamForUser(userId, guildId);
               if (null != activeStreamForUser) {
                 if (activeStreamForUser.channelId === channelId) {
                   if (!selfStream) {
-                    if (activeStreamForUser.state !== constants.ENDED) {
-                      const encodeStreamKeyResult = encodeStreamKeyResult(closure_2[18]).encodeStreamKey(activeStreamForUser);
-                      let timeout = closure_17[encodeStreamKeyResult];
+                    if (activeStreamForUser.state !== outer3_16.ENDED) {
+                      const encodeStreamKeyResult = BaseApplicationStreamingManager(outer3_2[18]).encodeStreamKey(activeStreamForUser);
+                      let closure_0 = encodeStreamKeyResult;
+                      let timeout = outer3_17[encodeStreamKeyResult];
                       if (null == timeout) {
-                        const Timeout = encodeStreamKeyResult(closure_2[19]).Timeout;
+                        const Timeout = BaseApplicationStreamingManager(outer3_2[19]).Timeout;
                         const prototype = Timeout.prototype;
                         timeout = new Timeout();
                       }
-                      timeout.start(closure_19, () => encodeStreamKeyResult(closure_2[16]).closeStream(encodeStreamKeyResult, false));
-                      closure_17[encodeStreamKeyResult] = timeout;
-                      const obj4 = encodeStreamKeyResult(closure_2[18]);
+                      timeout.start(outer3_19, () => BaseApplicationStreamingManager(outer4_2[16]).closeStream(closure_0, false));
+                      outer3_17[encodeStreamKeyResult] = timeout;
+                      const obj4 = BaseApplicationStreamingManager(outer3_2[18]);
                     }
                   }
                   if (selfStream) {
-                    if (activeStreamForUser.state === constants.ENDED) {
-                      callback2(encodeStreamKeyResult(closure_2[18]).encodeStreamKey(activeStreamForUser));
-                      const streamForUser = authStore.getStreamForUser(userId, guildId);
+                    if (activeStreamForUser.state === outer3_16.ENDED) {
+                      outer3_28(BaseApplicationStreamingManager(outer3_2[18]).encodeStreamKey(activeStreamForUser));
+                      const streamForUser = outer3_8.getStreamForUser(userId, guildId);
                       if (null != streamForUser) {
-                        if (!authStore.isStreamMarkedFull(obj2.encodeStreamKey(streamForUser))) {
-                          encodeStreamKeyResult(closure_2[16]).watchStream(streamForUser);
-                          const obj3 = encodeStreamKeyResult(closure_2[16]);
+                        if (!outer3_8.isStreamMarkedFull(obj2.encodeStreamKey(streamForUser))) {
+                          BaseApplicationStreamingManager(outer3_2[16]).watchStream(streamForUser);
+                          const obj3 = BaseApplicationStreamingManager(outer3_2[16]);
                         }
-                        const obj2 = encodeStreamKeyResult(closure_2[18]);
+                        obj2 = BaseApplicationStreamingManager(outer3_2[18]);
                       }
-                      const obj5 = encodeStreamKeyResult(closure_2[18]);
+                      const obj5 = BaseApplicationStreamingManager(outer3_2[18]);
                     }
                   }
                 }
@@ -381,31 +389,31 @@ const tmp7 = (arg0) => {
         let channelId;
         let region;
         ({ channelId, region } = arg0);
-        const currentUserActiveStream = authStore.getCurrentUserActiveStream();
+        const currentUserActiveStream = outer2_8.getCurrentUserActiveStream();
         channelId = undefined;
         if (null != currentUserActiveStream) {
           channelId = currentUserActiveStream.channelId;
         }
         if (channelId === channelId) {
-          callback6(tmp2Result(closure_2[18]).encodeStreamKey(currentUserActiveStream), region);
-          const obj = tmp2Result(closure_2[18]);
+          outer2_31(BaseApplicationStreamingManager(outer2_2[18]).encodeStreamKey(currentUserActiveStream), region);
+          const obj = BaseApplicationStreamingManager(outer2_2[18]);
         }
       };
       tmp2Result.handleChannelUpdates = (channels) => {
         let iter2;
-        const currentUserActiveStream = authStore.getCurrentUserActiveStream();
+        const currentUserActiveStream = outer2_8.getCurrentUserActiveStream();
         if (null != currentUserActiveStream) {
-          const tmp3 = callback(channels.channels);
+          const tmp3 = outer2_24(channels.channels);
           let iter = tmp3();
           if (!iter.done) {
             do {
               let value = iter.value;
               if (currentUserActiveStream.channelId === value.id) {
-                let tmp4 = closure_31;
-                let tmp5 = closure_0;
-                let tmp6 = closure_2;
-                let obj = closure_0(closure_2[18]);
-                let tmp7 = closure_31(obj.encodeStreamKey(currentUserActiveStream), value.rtcRegion);
+                let tmp4 = outer2_31;
+                let tmp5 = BaseApplicationStreamingManager;
+                let tmp6 = outer2_2;
+                let obj = BaseApplicationStreamingManager(outer2_2[18]);
+                let tmp7 = outer2_31(obj.encodeStreamKey(currentUserActiveStream), value.rtcRegion);
               }
               iter2 = tmp3();
               iter = iter2;
@@ -414,16 +422,12 @@ const tmp7 = (arg0) => {
         }
       };
       tmp2Result.handleSessionReset = () => {
-        set.clear();
+        outer2_23.clear();
       };
       tmp2Result.actions = { STREAM_WATCH: tmp2Result.handleStreamWatch, STREAM_START: tmp2Result.handleStreamStart, STREAM_CREATE: tmp2Result.handleStreamCreate, STREAM_UPDATE: tmp2Result.handleStreamUpdate, STREAM_DELETE: tmp2Result.handleStreamDelete, STREAM_CLOSE: tmp2Result.handleStreamClose, CALL_UPDATE: tmp2Result.handleCallUpdate, CHANNEL_UPDATES: tmp2Result.handleChannelUpdates, VOICE_CHANNEL_SELECT: tmp2Result.handleVoiceChannelSelect, VOICE_STATE_UPDATES: tmp2Result.handleVoiceStateUpdates, CONNECTION_CLOSED: tmp2Result.handleSessionReset, LOGOUT: tmp2Result.handleSessionReset };
       return tmp2Result;
     }
   }
-  const arg1 = BaseApplicationStreamingManager;
   callback2(BaseApplicationStreamingManager, arg0);
   return callback(BaseApplicationStreamingManager);
-}(importDefault(dependencyMap[23]));
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/go_live/ApplicationStreamingManager.tsx");
-
-export default tmp7;
+})(require("AutomaticLifecycleManager"));

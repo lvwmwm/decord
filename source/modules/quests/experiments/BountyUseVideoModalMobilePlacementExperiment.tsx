@@ -1,12 +1,13 @@
-// Module ID: 10834
-// Function ID: 84088
+// Module ID: 10844
+// Function ID: 84137
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 10834 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: false }, [2]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/quests/experiments/BountyUseVideoModalMobilePlacementExperiment.tsx");
+// Module 10844 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-06-bounty-use-video-modal-mobile-placement-experiment", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: false }, [2]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/quests/experiments/BountyUseVideoModalMobilePlacementExperiment.tsx");
 
 export default apexExperiment;

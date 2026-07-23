@@ -1,26 +1,29 @@
-// Module ID: 8844
-// Function ID: 69810
+// Module ID: 8851
+// Function ID: 69851
 // Name: _fetchVideoFilterAssets
-// Dependencies: []
+// Dependencies: [5, 4177, 1849, 653, 507, 686, 8852, 8853, 8850, 1331, 2]
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 8844 (_fetchVideoFilterAssets)
+// Module 8851 (_fetchVideoFilterAssets)
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _fetchVideoFilterAssets() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchVideoFilterAssets = obj;
   return obj(...arguments);
 }
 function _uploadVideoFilterAsset() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _uploadVideoFilterAsset = obj;
   return obj(...arguments);
 }
 function _deleteVideoFilterAsset() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _deleteVideoFilterAsset = obj;
   return obj(...arguments);
 }
 function saveLastUsedBackgroundOption() {
@@ -29,14 +32,9 @@ function saveLastUsedBackgroundOption() {
 function _saveLastUsedBackgroundOption() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _saveLastUsedBackgroundOption = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/video_backgrounds/VideoBackgroundActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_backgrounds/VideoBackgroundActionCreators.tsx");
 
 export const fetchVideoFilterAssets = function fetchVideoFilterAssets() {
   return _fetchVideoFilterAssets(...arguments);
@@ -49,19 +47,19 @@ export const deleteVideoFilterAsset = function deleteVideoFilterAsset() {
 };
 export { saveLastUsedBackgroundOption };
 export const applyMediaFilterSettings = function applyMediaFilterSettings(settings) {
-  if (closure_4.isSupported()) {
-    let obj = importDefault(dependencyMap[5]);
+  if (_isNativeReflectConstruct.isSupported()) {
+    let obj = importDefault(686);
     obj = { type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS", settings };
     obj.dispatch(obj);
   }
 };
 export const startApplyMediaFilterSettings = function startApplyMediaFilterSettings() {
-  if (closure_4.isSupported()) {
-    let obj = importDefault(dependencyMap[5]);
+  if (_isNativeReflectConstruct.isSupported()) {
+    let obj = importDefault(686);
     obj = { type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START" };
     obj.dispatch(obj);
   }
 };
 export const errorApplyingMediaFilterSettings = function errorApplyingMediaFilterSettings() {
-  importDefault(dependencyMap[5]).dispatch({ type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR" });
+  importDefault(686).dispatch({ type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR" });
 };

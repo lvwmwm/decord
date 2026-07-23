@@ -1,31 +1,32 @@
 // Module ID: 1793
-// Function ID: 19873
+// Function ID: 19874
 // Name: useScrollState
-// Dependencies: []
+// Dependencies: [31, 1582, 1771]
 // Exports: default
 
 // Module 1793 (useScrollState)
-const _module = require(dependencyMap[0]);
-({ useCallback: closure_2, useEffect: closure_3 } = _module);
-let closure_4 = [];
+import result from "result";
+
+let closure_2;
+let closure_3;
+({ useCallback: closure_2, useEffect: closure_3 } = result);
+let closure_4 = ["onScroll", "onScrollBeginDrag", "onScrollEndDrag", "onMomentumScrollBegin", "onMomentumScrollEnd"];
 let closure_5 = { code: "function pnpm_useScrollStateTs1(event){const{offset,layout,size}=this.__closure;offset.value=event.contentOffset.y;layout.value=event.layoutMeasurement;size.value=event.contentSize;}" };
 
 export default function useScrollState(arg0) {
-  let obj = require(dependencyMap[1]);
-  const sharedValue = obj.useSharedValue(0);
-  const require = sharedValue;
-  const sharedValue1 = require(dependencyMap[1]).useSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
-  const dependencyMap = sharedValue1;
-  const obj2 = require(dependencyMap[1]);
-  const sharedValue2 = require(dependencyMap[1]).useSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
-  const obj3 = require(dependencyMap[1]);
-  const callback = require(dependencyMap[2]).useEventHandlerRegistration(arg0);
-  const obj4 = require(dependencyMap[2]);
+  let obj = sharedValue(sharedValue1[1]);
+  sharedValue = obj.useSharedValue(0);
+  sharedValue1 = sharedValue(sharedValue1[1]).useSharedValue({ width: 0, height: 0 });
+  const obj2 = sharedValue(sharedValue1[1]);
+  const sharedValue2 = sharedValue(sharedValue1[1]).useSharedValue({ width: 0, height: 0 });
+  const obj3 = sharedValue(sharedValue1[1]);
+  const callback = sharedValue(sharedValue1[2]).useEventHandlerRegistration(arg0);
+  const obj4 = sharedValue(sharedValue1[2]);
   /* worklet (recovered source) */ function pnpm_useScrollStateTs1(event){const{offset,layout,size}=this.__closure;offset.value=event.contentOffset.y;layout.value=event.layoutMeasurement;size.value=event.contentSize;}
   pnpm_useScrollStateTs1.__closure = { offset: sharedValue, layout: sharedValue1, size: sharedValue2 };
   pnpm_useScrollStateTs1.__workletHash = 10534434800111;
   pnpm_useScrollStateTs1.__initData = closure_5;
-  closure_4 = require(dependencyMap[1]).useEvent(pnpm_useScrollStateTs1, closure_4);
+  closure_4 = sharedValue(sharedValue1[1]).useEvent(pnpm_useScrollStateTs1, closure_4);
   callback(() => {
     let closure_0 = callback(closure_4);
     return () => {
@@ -34,7 +35,7 @@ export default function useScrollState(arg0) {
   }, []);
   const items = [sharedValue1];
   const items1 = [sharedValue2];
-  const obj5 = require(dependencyMap[1]);
+  const obj5 = sharedValue(sharedValue1[1]);
   obj = {
     offset: sharedValue,
     layout: sharedValue1,

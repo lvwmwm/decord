@@ -1,30 +1,32 @@
-// Module ID: 7095
-// Function ID: 57070
+// Module ID: 7100
+// Function ID: 57104
 // Name: queryGamesAutocomplete
-// Dependencies: []
+// Dependencies: [7091, 574, 7101, 7092, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 7095 (queryGamesAutocomplete)
-let closure_2 = importDefault(dependencyMap[0]);
-const obj = { leading: true, maxWait: arg1(dependencyMap[2]).GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS };
-let closure_3 = importDefault(dependencyMap[1])((arg0) => {
-  const useGameAutocomplete = arg1(dependencyMap[2]).useGameAutocomplete;
+// Module 7100 (queryGamesAutocomplete)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "debounce";
+
+const require = arg1;
+const obj = { leading: true, maxWait: require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS };
+let closure_3 = require("debounce")((arg0) => {
+  const useGameAutocomplete = require(7101) /* fetchStore */.useGameAutocomplete;
   const items = [arg0];
   const many = useGameAutocomplete.fetchMany(items);
-}, arg1(dependencyMap[2]).GAME_AUTOCOMPLETE_DEBOUNCE_MS, obj);
-const importDefaultResult = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/games/autocomplete/queryGamesAutocomplete.tsx");
+}, require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MS, obj);
+let result = require("fetchStore").fileFinishedImporting("modules/games/autocomplete/queryGamesAutocomplete.tsx");
 
 export const queryGamesAutocomplete = function queryGamesAutocomplete(toLocaleLowerCase) {
-  const result = arg1(dependencyMap[3]).normalizeGameAutocompleteQuery(toLocaleLowerCase);
+  const result = require(7092) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.normalizeGameAutocompleteQuery(toLocaleLowerCase);
   let found = null;
   if (null != result) {
     callback(result);
-    let closestResults = closestResults.getClosestResults(result);
+    closestResults = closestResults.getClosestResults(result);
     if (null == closestResults) {
       closestResults = [];
     }
-    found = closestResults.filter(arg1(dependencyMap[3]).isGameAutocompleteResultAllowedInGameWidgets);
+    found = closestResults.filter(require(7092) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.isGameAutocompleteResultAllowedInGameWidgets);
   }
   return found;
 };

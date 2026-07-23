@@ -1,28 +1,30 @@
-// Module ID: 8750
-// Function ID: 69170
+// Module ID: 8757
+// Function ID: 69211
 // Name: OrbBadgePreview
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 8667, 8235, 8719, 1212, 2]
 // Exports: OrbBadgePreview
 
-// Module 8750 (OrbBadgePreview)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/collectibles/native/OrbBadgePreview.tsx");
+// Module 8757 (OrbBadgePreview)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/OrbBadgePreview.tsx");
 
 export const OrbBadgePreview = function OrbBadgePreview() {
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(8667) /* useCurrentUser */;
   obj = { style: callback().container };
   const currentUser = obj.useCurrentUser();
   obj = { compact: true, user: currentUser };
   const tmp = callback();
-  const tmp3 = importDefault(dependencyMap[5]);
-  const items = [arg1(dependencyMap[6]).createOrbProfileBadge()];
+  const tmp3 = importDefault(8235);
+  const items = [require(8719) /* _createForOfIteratorHelperLoose */.createOrbProfileBadge()];
   obj.additionalBadges = items;
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[7]).t.bxcI6Y);
-  obj.children = <tmp3 {...obj} />;
-  return <View {...obj} />;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.bxcI6Y);
+  obj.children = <tmp3 compact user={currentUser} />;
+  return <View compact user={currentUser} />;
 };

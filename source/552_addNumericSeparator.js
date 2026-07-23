@@ -1,7 +1,7 @@
 // Module ID: 552
 // Function ID: 6669
 // Name: addNumericSeparator
-// Dependencies: [0]
+// Dependencies: [553]
 
 // Module 552 (addNumericSeparator)
 function addNumericSeparator(name, typeError1) {
@@ -19,8 +19,8 @@ function addNumericSeparator(name, typeError1) {
             if (tmp4 !== name) {
               const _String = String;
               const StringResult = String(tmp4);
-              const text = `${closure_15.call(arr, tmp2, "$&_")}.`;
-              return `${closure_15.call(arr, tmp2, "$&_")}.` + replace.call(replace.call(slice.call(typeError1, String(tmp4).length + 1), /([0-9]{3})/g, "$&_"), /_$/, "");
+              const text = `${replace.call(arr, tmp2, "$&_")}.`;
+              return `${replace.call(arr, tmp2, "$&_")}.` + replace.call(replace.call(slice.call(typeError1, String(tmp4).length + 1), /([0-9]{3})/g, "$&_"), /_$/, "");
             }
           }
           return replace.call(typeError1, tmp2, "$&_");
@@ -30,11 +30,11 @@ function addNumericSeparator(name, typeError1) {
   }
   return typeError1;
 }
-function wrapQuotes(replace, single, quoteStyle) {
-  return obj[quoteStyle.quoteStyle || single] + replace + obj[quoteStyle.quoteStyle || single];
+function wrapQuotes(replace, double, quoteStyle) {
+  return obj[quoteStyle.quoteStyle || double] + replace + obj[quoteStyle.quoteStyle || double];
 }
-function quote(arg0) {
-  return replace.call(String(arg0), /"/g, "&quot;");
+function quote(value) {
+  return replace.call(String(value), /"/g, "&quot;");
 }
 function canTrustToString(name) {
   let tmp = !toStringTag;
@@ -43,7 +43,7 @@ function canTrustToString(name) {
     if (tmp2) {
       let tmp4 = toStringTag in name;
       if (!tmp4) {
-        tmp4 = undefined !== name[closure_27];
+        tmp4 = undefined !== name[toStringTag];
       }
       tmp2 = tmp4;
     }
@@ -67,14 +67,13 @@ function isRegExp(name) {
 }
 function isSymbol(custom) {
   let tmp = custom;
-  if (tmp10) {
+  if (closure_26) {
     if (tmp) {
       tmp = "object" === typeof custom;
     }
     if (tmp) {
       const _Symbol = Symbol;
       tmp = custom instanceof Symbol;
-      const tmp10 = globalThis;
     }
     return tmp;
   } else if ("symbol" === typeof tmp) {
@@ -92,7 +91,7 @@ function isSymbol(custom) {
   }
 }
 function has(arg0, arg1) {
-  return callback2.call(arg0, arg1);
+  return callback.call(arg0, arg1);
 }
 function toStr(name) {
   return toString.call(name);
@@ -130,15 +129,15 @@ function inspectString(slice, maxStringLength) {
 }
 function lowbyte(str) {
   str = str.charCodeAt(0);
-  const tmp = {}[str];
+  const tmp = { 8: "b", 9: "t", 10: "n", 12: "f", 13: "r" }[str];
   if (tmp) {
-    let text = `\${tmp}`;
+    let text = `\\${tmp}`;
   } else {
     let str2 = "";
     if (str < 16) {
       str2 = "0";
     }
-    text = `\x${str2}${tmp3(str.toString(16))}`;
+    text = `\\x${str2}${tmp3(str.toString(16))}`;
   }
   return text;
 }
@@ -148,8 +147,8 @@ function markBoxed(typeError1) {
 function weakCollectionOf(WeakMap) {
   return WeakMap + " { ? }";
 }
-function collectionOf(Map, get, items, prev) {
-  const text = `${Map} (${get}`;
+function collectionOf(Map, items1, items, prev) {
+  const text = `${Map} (${items1}`;
   if (prev) {
     let callResult = indentedJoin(items, prev);
   } else {
@@ -157,13 +156,13 @@ function collectionOf(Map, get, items, prev) {
   }
   return text + ") {" + callResult + "}";
 }
-function indentedJoin(items, prev) {
-  if (0 === items.length) {
+function indentedJoin(arr2, prev) {
+  if (0 === arr2.length) {
     return "";
   } else {
     const text = `
   ${prev.prev}${prev.base}`;
-    return text + join.call(items, "," + text) + "\n" + prev.prev;
+    return text + join.call(arr2, "," + text) + "\n" + prev.prev;
   }
 }
 function arrObjKeys(name, inspect) {
@@ -172,18 +171,14 @@ function arrObjKeys(name, inspect) {
   const items = [];
   if (tmp) {
     items.length = name.length;
-    let num = 0;
-    if (0 < name.length) {
-      do {
-        let tmp2 = closure_41;
-        let tmp3 = num;
-        let str2 = "";
-        if (closure_41(name, num)) {
-          str2 = inspect(name[num], name);
-        }
-        items[num] = str2;
-        num = num + 1;
-      } while (num < name.length);
+    for (let num = 0; num < name.length; num = num + 1) {
+      let tmp2 = has;
+      let tmp3 = num;
+      let str2 = "";
+      if (has(name, num)) {
+        str2 = inspect(name[num], name);
+      }
+      items[num] = str2;
     }
   }
   if ("function" === typeof getOwnPropertySymbols) {
@@ -191,7 +186,7 @@ function arrObjKeys(name, inspect) {
   } else {
     items1 = [];
   }
-  if (tmp10) {
+  if (closure_26) {
     const obj = {};
     let num2 = 0;
     let tmp5 = obj;
@@ -206,8 +201,8 @@ function arrObjKeys(name, inspect) {
   }
   for (const key10038 in arg0) {
     let tmp16 = key10038;
-    let tmp17 = closure_41;
-    if (!closure_41(arg0, key10038)) {
+    let tmp17 = has;
+    if (!has(arg0, key10038)) {
       continue;
     } else {
       let tmp6 = tmp;
@@ -230,16 +225,16 @@ function arrObjKeys(name, inspect) {
       if (tmp6) {
         continue;
       } else {
-        let tmp8 = closure_18;
+        let tmp8 = test;
         let push = items.push;
-        if (closure_18.call(/[^\w$]/, key10038)) {
+        if (test.call(/[^\w$]/, key10038)) {
           let text = `${arg1(key10038, arg0)}: `;
           let arr = push(`${arg1(key10038, arg0)}: ` + arg1(arg0[key10038], arg0));
-          // continue
+          continue;
         } else {
           let text1 = `${key10038}: `;
           arr = push(`${key10038}: ` + arg1(arg0[key10038], arg0));
-          // continue
+          continue;
         }
         continue;
       }
@@ -248,30 +243,26 @@ function arrObjKeys(name, inspect) {
     continue;
   }
   if ("function" === typeof getOwnPropertySymbols) {
-    let num3 = 0;
-    if (0 < items1.length) {
-      do {
-        let tmp13 = closure_28;
-        if (closure_28.call(name, items1[num3])) {
-          let text2 = `[${inspect(arr2[num3])}`;
-          let arr1 = items.push(`${`[${inspect(arr2[num3])}`}]: ${inspect(name[arr2[num3]], name)}`);
-        }
-        num3 = num3 + 1;
-      } while (num3 < items1.length);
+    for (let num3 = 0; num3 < items1.length; num3 = num3 + 1) {
+      let tmp13 = propertyIsEnumerable;
+      if (propertyIsEnumerable.call(name, items1[num3])) {
+        let text2 = `[${inspect(arr2[num3])}`;
+        let arr1 = items.push(`${`[${inspect(arr2[num3])}`}]: ${inspect(name[arr2[num3]], name)}`);
+      }
     }
   }
   return items;
 }
 let forEach = "function" === typeof Map;
 if (forEach) {
-  const _Map = Map;
+  let _Map = Map;
   forEach = Map.prototype;
 }
 let ownPropertyDescriptor = null;
 if (Object.getOwnPropertyDescriptor) {
   ownPropertyDescriptor = null;
   if (forEach) {
-    const _Object = Object;
+    let _Object = Object;
     const _Map2 = Map;
     ownPropertyDescriptor = Object.getOwnPropertyDescriptor(Map.prototype, "size");
   }
@@ -292,14 +283,14 @@ if (forEach) {
 }
 let forEach2 = "function" === typeof Set;
 if (forEach2) {
-  const _Set = Set;
+  let _Set = Set;
   forEach2 = Set.prototype;
 }
 let ownPropertyDescriptor1 = null;
 if (Object.getOwnPropertyDescriptor) {
   ownPropertyDescriptor1 = null;
   if (forEach2) {
-    const _Object2 = Object;
+    let _Object2 = Object;
     const _Set2 = Set;
     ownPropertyDescriptor1 = Object.getOwnPropertyDescriptor(Set.prototype, "size");
   }
@@ -320,7 +311,7 @@ if (forEach2) {
 }
 has = null;
 if ("function" === typeof WeakMap) {
-  const _WeakMap = WeakMap;
+  let _WeakMap = WeakMap;
   has = null;
   if (WeakMap.prototype) {
     const _WeakMap2 = WeakMap;
@@ -329,7 +320,7 @@ if ("function" === typeof WeakMap) {
 }
 let has1 = null;
 if ("function" === typeof WeakSet) {
-  const _WeakSet = WeakSet;
+  let _WeakSet = WeakSet;
   has1 = null;
   if (WeakSet.prototype) {
     const _WeakSet2 = WeakSet;
@@ -354,7 +345,7 @@ if ("function" === typeof BigInt) {
 }
 toString = null;
 if ("function" === typeof Symbol) {
-  const _Symbol = Symbol;
+  let _Symbol = Symbol;
   toString = null;
   if ("symbol" === typeof Symbol.iterator) {
     const _Symbol2 = Symbol;
@@ -366,6 +357,7 @@ if (tmp10) {
   const _Symbol3 = Symbol;
   tmp10 = "object" === typeof Symbol.iterator;
 }
+let closure_26 = tmp10;
 let toStringTag = null;
 if ("function" === typeof Symbol) {
   const _Symbol4 = Symbol;
@@ -380,11 +372,11 @@ if ("function" === typeof Symbol) {
 if ("function" === typeof Reflect) {
   const _Reflect = Reflect;
 } else {
-  const _Object3 = Object;
+  let _Object3 = Object;
   getPrototypeOf = Object.getPrototypeOf;
 }
 if (!getPrototypeOf) {
-  const _Array = Array;
+  let _Array = Array;
   let fn = null;
   if ([].__proto__ === Array.prototype) {
     fn = (arg0) => arg0.__proto__;
@@ -392,8 +384,8 @@ if (!getPrototypeOf) {
   getPrototypeOf = fn;
 }
 let custom = null;
-if (isSymbol(require("__exportStarResult1").custom)) {
-  custom = require("__exportStarResult1").custom;
+if (isSymbol(require("module_553").custom)) {
+  custom = require("module_553").custom;
 }
 let obj = Object.create(null);
 obj.double = "\"";
@@ -401,36 +393,34 @@ obj.single = "'";
 obj = Object.create(null);
 obj.double = /(["\\])/g;
 obj.single = /(['\\])/g;
-function inspect_(name, maxStringLength) {
-  let get1;
+function inspect_(name, quoteStyle) {
+  let items1;
   let length;
-  let obj = maxStringLength;
+  let obj = quoteStyle;
   let num = arg2;
-  const global = name;
-  let callback = arg2;
-  let closure_2 = arg3;
+  let closure_0 = name;
+  let _require = arg2;
+  let dependencyMap = arg3;
   function inspect(cause) {
     if (arg1) {
-      const callResult = callback.call(closure_2);
+      const callResult = outer1_21.call(closure_2);
       closure_2 = callResult;
       callResult.push(arg1);
     }
     if (arg2) {
       const obj = {};
       obj.depth = obj.depth;
-      if (callback2(obj, "quoteStyle")) {
+      if (outer1_41(obj, "quoteStyle")) {
         obj.quoteStyle = obj.quoteStyle;
       }
-      return callback3(cause, obj, closure_1 + 1, closure_2);
+      return outer1_51(cause, obj, c1 + 1, closure_2);
     } else {
-      return callback3(cause, obj, closure_1 + 1, closure_2);
+      return outer1_51(cause, obj, c1 + 1, closure_2);
     }
   }
-  const forEach2 = inspect;
-  if (!maxStringLength) {
+  if (!quoteStyle) {
     obj = {};
   }
-  const get = obj;
   if (has(obj, "quoteStyle")) {
     let typeError1 = has;
     if (!has(obj, obj.quoteStyle)) {
@@ -539,7 +529,7 @@ function inspect_(name, maxStringLength) {
           num6 = obj.depth;
         }
         if (undefined === num) {
-          callback = 0;
+          _require = 0;
           num = 0;
         }
         if (num >= num6) {
@@ -570,9 +560,9 @@ function inspect_(name, maxStringLength) {
             }
           }
         }
-        if (undefined === closure_2) {
-          closure_2 = [];
-        } else if (indexOf(closure_2, name) >= 0) {
+        if (undefined === dependencyMap) {
+          dependencyMap = [];
+        } else if (indexOf(dependencyMap, name) >= 0) {
           return "[Circular]";
         }
         if ("function" === typeError1) {
@@ -581,7 +571,7 @@ function inspect_(name, maxStringLength) {
             if (name.name) {
               name = name.name;
             } else {
-              const callResult = match.call(toString.call(name), /^function\s*([\w$]+)/);
+              let callResult = match.call(toString.call(name), /^function\s*([\w$]+)/);
               name = null;
               if (callResult) {
                 name = callResult[1];
@@ -594,14 +584,14 @@ function inspect_(name, maxStringLength) {
             }
             let str13 = "";
             if (arr.length > 0) {
-              str13 = `${" { " + closure_20.call(arr, ", ")} }`;
+              str13 = `${" { " + join.call(arr, ", ")} }`;
             }
             return "[Function" + str11 + "]" + str13;
           }
         }
         if (isSymbol(name)) {
-          typeError1 = tmp10;
-          if (tmp10) {
+          typeError1 = closure_26;
+          if (closure_26) {
             typeError1 = replace;
             typeError1 = globalThis;
             const _String7 = String;
@@ -611,8 +601,8 @@ function inspect_(name, maxStringLength) {
             typeError1 = toString.call(name);
           }
           if ("object" === typeError1) {
-            typeError1 = tmp10;
-            if (!tmp10) {
+            typeError1 = closure_26;
+            if (!closure_26) {
               typeError1 = markBoxed;
               typeError1 = markBoxed(typeError1);
             }
@@ -640,10 +630,10 @@ function inspect_(name, maxStringLength) {
             let num22 = 0;
             if (0 < arr8.length) {
               do {
-                typeError1 = closure_35;
-                typeError1 = closure_36;
+                typeError1 = wrapQuotes;
+                typeError1 = quote;
                 typeError1 = ` ${arr8[num22].name}`;
-                typeError1 = typeError1 + (` ${arr8[num22].name}` + "=" + closure_35(closure_36(arr8[num22].value), "double", obj));
+                typeError1 = typeError1 + (` ${arr8[num22].name}` + "=" + wrapQuotes(quote(arr8[num22].value), "double", obj));
                 num22 = num22 + 1;
                 length = arr8.length;
               } while (num22 < length);
@@ -678,12 +668,12 @@ function inspect_(name, maxStringLength) {
                 }
                 if (!flag8) {
                   typeError1 = indentedJoin;
-                  typeError1 = `${"[" + closure_49(arr9, tmp18)}]`;
+                  typeError1 = `${"[" + indentedJoin(arr9, tmp18)}]`;
                 }
                 return typeError1;
               }
               typeError1 = join;
-              typeError1 = `${"[ " + closure_20.call(arr9, ", ")} ]`;
+              typeError1 = `${"[ " + join.call(arr9, ", ")} ]`;
             }
           } else {
             let tmp37 = "[object Error]" === toStr(name);
@@ -715,18 +705,18 @@ function inspect_(name, maxStringLength) {
                 const _String4 = String;
                 typeError1 = join;
                 typeError1 = `{ [${String(name)}`;
-                typeError1 = `${`{ [${String(name)}` + "] " + closure_20.call(arr7, ", ")} }`;
+                typeError1 = `${`{ [${String(name)}` + "] " + join.call(arr7, ", ")} }`;
               }
             } else {
               if ("object" === typeError1) {
                 if (tmp11) {
                   if (custom) {
-                    if ("function" === typeof name[closure_30]) {
-                      if (callback(closure_2[0])) {
-                        typeError1 = callback;
-                        typeError1 = closure_2;
+                    if ("function" === typeof name[custom]) {
+                      if (_require(553)) {
+                        typeError1 = _require;
+                        typeError1 = dependencyMap;
                         obj = { depth: num6 - num };
-                        return callback(closure_2[0])(name, obj);
+                        return _require(553)(name, obj);
                       }
                     }
                   }
@@ -738,13 +728,13 @@ function inspect_(name, maxStringLength) {
                 }
               }
               let flag2 = false;
-              if (get) {
+              if (obj) {
                 flag2 = false;
                 if (tmp43) {
                   flag2 = false;
                   if ("object" === typeof tmp43) {
-                    get.call(tmp43);
-                    get1.call(tmp43);
+                    obj.call(tmp43);
+                    items1.call(tmp43);
                     const _Map = Map;
                     flag2 = tmp43 instanceof Map;
                   }
@@ -753,38 +743,37 @@ function inspect_(name, maxStringLength) {
               while (true) {
                 if (flag2) {
                   let items = [];
-                  let forEach = items;
-                  typeError1 = forEach;
-                  if (forEach) {
-                    typeError1 = forEach;
-                    typeError1 = forEach.call(name, (arg0, arg1) => {
-                      const text = `${closure_6(arg1, closure_0, true)} => `;
-                      items.push(`${closure_6(arg1, closure_0, true)} => ` + inspect(arg0, arg0));
+                  typeError1 = items;
+                  if (items) {
+                    typeError1 = items;
+                    typeError1 = items.call(name, (arg0, arg1) => {
+                      const text = `${inspect(arg1, closure_0, true)} => `;
+                      items.push(`${inspect(arg1, closure_0, true)} => ` + inspect(arg0, closure_0));
                     });
                   }
                   typeError1 = collectionOf;
-                  typeError1 = get;
+                  typeError1 = obj;
                   let str48 = "Map";
                   typeError1 = items;
                   typeError1 = tmp18;
-                  return collectionOf("Map", get.call(name), items, tmp18);
+                  return collectionOf("Map", obj.call(name), items, tmp18);
                 } else {
                   let tmp55 = name;
-                  let tmp56 = get1;
+                  let tmp56 = items1;
                   let flag3 = false;
-                  if (get1) {
+                  if (items1) {
                     let tmp57 = name;
                     flag3 = false;
                     if (tmp55) {
                       let tmp58 = name;
                       flag3 = false;
                       if ("object" === typeof tmp55) {
-                        let tmp59 = get1;
+                        let tmp59 = items1;
                         let tmp60 = name;
-                        let callResult3 = get1.call(tmp55);
-                        let tmp62 = get;
+                        let callResult3 = items1.call(tmp55);
+                        let tmp62 = obj;
                         let tmp63 = name;
-                        let callResult4 = get.call(tmp55);
+                        let callResult4 = obj.call(tmp55);
                         let tmp65 = name;
                         let tmp66 = globalThis;
                         let _Set = Set;
@@ -794,21 +783,20 @@ function inspect_(name, maxStringLength) {
                   }
                   while (true) {
                     if (flag3) {
-                      let items1 = [];
-                      get1 = items1;
-                      typeError1 = forEach2;
-                      if (forEach2) {
-                        typeError1 = forEach2;
-                        typeError1 = forEach2.call(name, (arg0) => {
-                          items1.push(inspect(arg0, arg0));
+                      items1 = [];
+                      typeError1 = inspect;
+                      if (inspect) {
+                        typeError1 = inspect;
+                        typeError1 = inspect.call(name, (arg0) => {
+                          items1.push(inspect(arg0, closure_0));
                         });
                       }
                       typeError1 = collectionOf;
-                      typeError1 = get1;
+                      typeError1 = items1;
                       let str47 = "Set";
                       typeError1 = items1;
                       typeError1 = tmp18;
-                      return collectionOf("Set", get1.call(name), items1, tmp18);
+                      return collectionOf("Set", items1.call(name), items1, tmp18);
                     } else {
                       let tmp67 = name;
                       let tmp68 = has;
@@ -963,9 +951,9 @@ function inspect_(name, maxStringLength) {
                                             }
                                             let _globalThis = globalThis;
                                             if ("undefined" === typeof globalThis) {
-                                              typeError1 = global;
-                                              if (undefined !== global) {
-                                                typeError1 = global;
+                                              typeError1 = closure_0;
+                                              if (undefined !== closure_0) {
+                                                typeError1 = closure_0;
                                               }
                                               typeError1 = toStr;
                                               let str28 = "[object Date]";
@@ -1046,13 +1034,13 @@ function inspect_(name, maxStringLength) {
                                                           typeError1 = indentedJoin;
                                                           let str39 = "{";
                                                           let str40 = "}";
-                                                          typeError1 = `${tmp + "{" + closure_49(arr2, tmp18)}}`;
+                                                          typeError1 = `${tmp + "{" + indentedJoin(arr2, tmp18)}}`;
                                                         } else {
                                                           typeError1 = join;
                                                           let str36 = ", ";
                                                           let str37 = "{ ";
                                                           let str38 = " }";
-                                                          typeError1 = `${tmp + "{ " + closure_20.call(arr2, ", ")} }`;
+                                                          typeError1 = `${tmp + "{ " + join.call(arr2, ", ")} }`;
                                                         }
                                                         return typeError1;
                                                       }
@@ -1094,8 +1082,8 @@ function inspect_(name, maxStringLength) {
     }
   }
 }
-let closure_33 = Object.prototype.hasOwnProperty || function(arg0) {
+let closure_33 = Object.prototype.hasOwnProperty || (function(arg0) {
   return arg0 in this;
-};
+});
 
 export default inspect_;

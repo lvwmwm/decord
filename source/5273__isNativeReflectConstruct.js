@@ -1,62 +1,62 @@
 // Module ID: 5273
-// Function ID: 45504
+// Function ID: 45492
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5256]
 
 // Module 5273 (_isNativeReflectConstruct)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _classCallCheck = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _classCallCheck;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 
-export const NativeGesture = (BaseGesture) => {
-  class NativeGesture {
+export const FlingGesture = ((BaseGesture) => {
+  class FlingGesture {
     constructor() {
       self = this;
-      tmp = NativeGesture(this, NativeGesture);
-      obj = closure_3(NativeGesture);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      tmp = FlingGesture(this, FlingGesture);
+      obj = outer1_3(FlingGesture);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, [], closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, [], outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
       tmp2Result.config = {};
-      tmp2Result.handlerName = "NativeViewGestureHandler";
+      tmp2Result.handlerName = "FlingGestureHandler";
       return tmp2Result;
     }
   }
-  let closure_0 = NativeGesture;
-  callback2(NativeGesture, BaseGesture);
+  callback2(FlingGesture, BaseGesture);
   let obj = {
-    key: "shouldActivateOnStart",
-    value: function shouldActivateOnStart(shouldActivateOnStart) {
-      this.config.shouldActivateOnStart = shouldActivateOnStart;
+    key: "numberOfPointers",
+    value: function numberOfPointers(numberOfPointers) {
+      this.config.numberOfPointers = numberOfPointers;
       return this;
     }
   };
   const items = [obj, ];
   obj = {
-    key: "disallowInterruption",
-    value: function disallowInterruption(disallowInterruption) {
-      this.config.disallowInterruption = disallowInterruption;
+    key: "direction",
+    value: function direction(DOWN) {
+      this.config.direction = DOWN;
       return this;
     }
   };
   items[1] = obj;
-  return callback(NativeGesture, items);
-}(arg1(dependencyMap[5]).BaseGesture);
+  return callback(FlingGesture, items);
+})(require("_callSuper").BaseGesture);

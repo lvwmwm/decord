@@ -1,9 +1,29 @@
-// Module ID: 15874
-// Function ID: 121486
+// Module ID: 15991
+// Function ID: 123659
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 27, 1347, 4954, 4149, 1194, 1348, 4177, 1906, 4146, 6651, 653, 477, 15992, 5078, 2]
 
-// Module 15874 (_isNativeReflectConstruct)
+// Module 15991 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import closure_5 from "_isNativeReflectConstruct";
+import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import { AppStates } from "ME";
+import set from "set";
+import tmp2 from "AutomaticLifecycleManager";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,7 +34,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleAVAudioSessionMode() {
-  const channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
+  channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
   if (null == channel) {
     let VIDEO = VoiceEngine.AVAudioSessionMode.DEFAULT;
   } else {
@@ -28,81 +48,33 @@ function handleAVAudioSessionMode() {
     if (!hasVideoResult) {
       if (null == currentEmbeddedActivity.getCurrentEmbeddedActivity()) {
         const AVAudioSessionMode = VoiceEngine.AVAudioSessionMode;
-        VIDEO = arg1(dependencyMap[17]).shouldImmediatelyRequestVoicePermissions(id.getId(), channel.id) ? AVAudioSessionMode.VOICE : AVAudioSessionMode.LISTEN;
-        const obj = arg1(dependencyMap[17]);
+        VIDEO = require(15992) /* _isNativeReflectConstruct */.shouldImmediatelyRequestVoicePermissions(id.getId(), channel.id) ? AVAudioSessionMode.VOICE : AVAudioSessionMode.LISTEN;
+        const obj = require(15992) /* _isNativeReflectConstruct */;
       }
     }
     VIDEO = VoiceEngine.AVAudioSessionMode.VIDEO;
   }
-  let tmp12 = VOICE !== VIDEO;
+  let tmp12 = VIDEO !== VIDEO;
   if (tmp12) {
     tmp12 = state.getState() === AppStates.ACTIVE;
   }
   if (tmp12) {
-    const VOICE = VIDEO;
     const result = VoiceEngine.setAVAudioSessionMode(VIDEO);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[6]);
-let closure_8 = importDefault(dependencyMap[7]);
-let closure_9 = importDefault(dependencyMap[8]);
-let closure_10 = importDefault(dependencyMap[9]);
-let closure_11 = importDefault(dependencyMap[10]);
-let closure_12 = importDefault(dependencyMap[11]);
-let closure_13 = importDefault(dependencyMap[12]);
-let closure_14 = importDefault(dependencyMap[13]);
-let closure_15 = importDefault(dependencyMap[14]);
-const AppStates = arg1(dependencyMap[15]).AppStates;
-let obj = arg1(dependencyMap[16]);
-if (obj.isAndroid()) {
-  obj = {
+if (set.isAndroid()) {
+  set = {
     setAVAudioSessionMode(VIDEO) {
 
       },
-    AVAudioSessionMode: { -1718972208: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534382033438972, 1641356417: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005331167966, -1737731717: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000409847598971625, -1650891182: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007318406987782769 }
+    AVAudioSessionMode: { VOICE: "AVAudioSessionModeVoiceChat", VIDEO: "AVAudioSessionModeVideoChat", LISTEN: "AVAudioSessionModeSpokenAudio", DEFAULT: "AVAudioSessionModeDefault" }
   };
-  let VoiceEngine = obj;
+  let VoiceEngine = set;
 } else {
-  VoiceEngine = arg1(dependencyMap[5]).NativeModules.VoiceEngine;
+  VoiceEngine = require("get ActivityIndicator").NativeModules.VoiceEngine;
 }
 const VOICE = VoiceEngine.AVAudioSessionMode.VOICE;
-let tmp2 = (arg0) => {
-  class AudioSessionModeManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, AudioSessionModeManager);
-      items1 = [...items];
-      obj = closure_5(AudioSessionModeManager);
-      tmp2 = closure_4;
-      if (closure_19()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      map = new Map();
-      result = map.set(closure_9, closure_20);
-      result1 = result.set(closure_14, closure_20);
-      result2 = result1.set(closure_12, closure_20);
-      result3 = result2.set(closure_8, closure_20);
-      tmp2Result.stores = result3.set(closure_7, closure_20);
-      return tmp2Result;
-    }
-  }
-  const arg1 = AudioSessionModeManager;
-  callback2(AudioSessionModeManager, arg0);
-  return callback(AudioSessionModeManager);
-}(importDefault(dependencyMap[18]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/voice_calls/native/AudioSessionModeManager.tsx");
+let result = set.fileFinishedImporting("modules/voice_calls/native/AudioSessionModeManager.tsx");
 
 export default tmp2;

@@ -1,40 +1,47 @@
-// Module ID: 12779
-// Function ID: 97923
+// Module ID: 12893
+// Function ID: 100079
 // Name: ActivateDeviceError
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 8986, 12891, 4126, 1212, 4543, 2]
 // Exports: ActivateDeviceError
 
-// Module 12779 (ActivateDeviceError)
-importAll(dependencyMap[0]);
-({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
-const tmp4 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ image: { "Null": null, "Null": "center", "Null": "center" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/activate_device/native/ActivateDeviceError.tsx");
+// Module 12893 (ActivateDeviceError)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 254, height: 127, alignSelf: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/activate_device/native/ActivateDeviceError.tsx");
 
 export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
   let obj = {};
-  obj = { source: importDefault(dependencyMap[4]), style: callback3().image };
+  obj = { source: importDefault(8986), style: callback3().image };
   const items = [callback(closure_3, obj), , ];
-  obj = { style: importDefault(dependencyMap[5]).innerContent };
-  const obj1 = { cachedAt: true, edpbxy: true, style: importDefault(dependencyMap[5]).centerText };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj1.children = intl.string(arg1(dependencyMap[7]).t.3dgwPD);
-  const items1 = [callback(arg1(dependencyMap[6]).Text, obj1), ];
-  const obj2 = { style: importDefault(dependencyMap[5]).centerText };
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj2.children = intl2.string(arg1(dependencyMap[7]).t./GAO1P);
-  items1[1] = callback(arg1(dependencyMap[6]).Text, obj2);
+  obj = { style: importDefault(12891).innerContent };
+  const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: importDefault(12891).centerText };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.string(require(1212) /* getSystemLocale */.t["3dgwPD"]);
+  const items1 = [callback(require(4126) /* Text */.Text, obj1), ];
+  const obj2 = { variant: "text-md/medium", color: "text-default", style: importDefault(12891).centerText };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["/GAO1P"]);
+  items1[1] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items1;
   items[1] = callback2(closure_4, obj);
   const obj3 = { size: "lg" };
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj3.text = intl3.string(arg1(dependencyMap[7]).t.5911Lb);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["5911Lb"]);
   obj3.onPress = onRetry.onRetry;
   obj3.grow = true;
-  items[2] = callback(arg1(dependencyMap[8]).Button, obj3);
+  items[2] = callback(require(4543) /* Button */.Button, obj3);
   obj.children = items;
   return callback2(closure_7, obj);
 };

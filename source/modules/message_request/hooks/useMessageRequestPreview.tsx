@@ -1,60 +1,61 @@
-// Module ID: 11618
-// Function ID: 90222
+// Module ID: 11628
+// Function ID: 90271
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 6897, 4967, 6851, 566, 22, 8460, 2, 31]
+// Dependencies: [5, 4349, 4142, 11629, 653, 566, 22, 507, 686, 2]
 // Exports: useMessageRequestPreview
 
-// Module 11618 (_createForOfIteratorHelperLoose)
-import _slicedToArray from "_slicedToArray";
-import closure_4 from "module_31";
+// Module 11628 (_createForOfIteratorHelperLoose)
+import initialize from "initialize";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
-import { Endpoints } from "_isNativeReflectConstruct";
-import module_31 from "module_31";
+import { Endpoints } from "ME";
+import set from "_isNativeReflectConstruct";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -65,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -97,7 +98,6 @@ function loadMessageRequestData() {
 function _loadMessageRequestData() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _loadMessageRequestData = obj;
   return obj(...arguments);
 }
 function loadMessageRequestDataHelper() {
@@ -106,12 +106,11 @@ function loadMessageRequestDataHelper() {
 function _loadMessageRequestDataHelper() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _loadMessageRequestDataHelper = obj;
   return obj(...arguments);
 }
-const set = new Set();
-let closure_9 = null;
-const result = module_31.fileFinishedImporting("modules/message_request/hooks/useMessageRequestPreview.tsx");
+let set = new Set();
+let c9 = null;
+const result = set.fileFinishedImporting("modules/message_request/hooks/useMessageRequestPreview.tsx");
 
 export const useMessageRequestPreview = function useMessageRequestPreview(channel, arg1) {
   let error;
@@ -119,7 +118,6 @@ export const useMessageRequestPreview = function useMessageRequestPreview(channe
   let message;
   let obj = arg1;
   const id = channel.id;
-  arg1 = id;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -127,16 +125,16 @@ export const useMessageRequestPreview = function useMessageRequestPreview(channe
   if (flag === undefined) {
     flag = true;
   }
-  const items = [closure_6, closure_4, _isNativeReflectConstruct];
+  const items = [closure_6, _isNativeReflectConstruct, closure_5];
   const items1 = [id];
-  const stateFromStoresObject = arg1(dependencyMap[5]).useStateFromStoresObject(items, () => {
-    const lastMessageIdResult = _isNativeReflectConstruct.lastMessageId(id);
-    const messageRequestPreview = closure_6.getMessageRequestPreview(id);
+  const stateFromStoresObject = id(566).useStateFromStoresObject(items, () => {
+    const lastMessageIdResult = outer1_5.lastMessageId(id);
+    const messageRequestPreview = outer1_6.getMessageRequestPreview(id);
     if (null == messageRequestPreview.message) {
       if (null != lastMessageIdResult) {
-        const message = message.getMessage(id, lastMessageIdResult);
+        const message = outer1_4.getMessage(id, lastMessageIdResult);
         if (null != message) {
-          const obj = { WAVE_EMPHASIZE: "<string:1040334421>", overflow: "<string:1040334338>", message };
+          const obj = { loaded: true, error: false, message };
           return obj;
         }
       }
@@ -144,10 +142,10 @@ export const useMessageRequestPreview = function useMessageRequestPreview(channe
     return messageRequestPreview;
   }, items1);
   ({ loaded, message, error } = stateFromStoresObject);
-  const obj2 = arg1(dependencyMap[5]);
+  const obj2 = id(566);
   const items2 = [closure_6];
   const items3 = [id];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items2, () => closure_6.shouldLoadMessageRequestPreview(id), items3);
+  const stateFromStores = id(566).useStateFromStores(items2, () => outer1_6.shouldLoadMessageRequestPreview(id), items3);
   if (flag) {
     flag = !loaded;
   }
@@ -161,7 +159,7 @@ export const useMessageRequestPreview = function useMessageRequestPreview(channe
     set.add(id);
     if (null == timeout) {
       const _setTimeout = setTimeout;
-      const timeout = setTimeout(loadMessageRequestData, 0);
+      timeout = setTimeout(loadMessageRequestData, 0);
     }
   }
   return { loaded, error, message };

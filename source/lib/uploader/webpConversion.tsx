@@ -1,69 +1,75 @@
-// Module ID: 4710
-// Function ID: 40973
+// Module ID: 4713
+// Function ID: 40991
 // Name: _shouldConvertToWebP
-// Dependencies: []
+// Dependencies: [5, 3, 4714, 1193, 2]
 // Exports: maybeConvertToWebP
 
-// Module 4710 (_shouldConvertToWebP)
+// Module 4713 (_shouldConvertToWebP)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import importDefaultResult from "createBuffer";
+
+const require = arg1;
 function _shouldConvertToWebP() {
   return _shouldConvertToWebP2(...arguments);
 }
-async function _shouldConvertToWebP2(type, arg1) {
-  let obj = type;
-  if ("image/webp" === type.type) {
-    closure_4.verbose("[WebP] File already WebP format");
-    return closure_5.ALREADY_WEBP;
+async function _shouldConvertToWebP2(arg0, arg1) {
+  let obj = arg0;
+  let closure_0 = arg0;
+  if ("image/webp" === arg0.type) {
+    outer2_4.verbose("[WebP] File already WebP format");
+    return outer2_5.ALREADY_WEBP;
   } else {
-    const items = [];
+    const items = ["image/png"];
     if (items.includes(obj.type)) {
       if ("function" === typeof obj.arrayBuffer) {
         const tmp15 = yield obj.arrayBuffer();
-        const DiscordImageFactory = type(closure_2[2]).DiscordImageFactory;
+        const DiscordImageFactory = outer2_0(outer2_2[2]).DiscordImageFactory;
         obj = DiscordImageFactory.create(tmp15);
         if (null == obj) {
           const _Error = Error;
-          const error = new Error("DiscordImage.create returned null");
+          let error = new Error("DiscordImage.create returned null");
           throw error;
         } else if (obj2.hasTransparency()) {
-          closure_4.verbose("[webp] png uses actual transparency - skipping conversion");
-          return closure_5.HAS_TRANSPARENCY;
+          outer2_4.verbose("[webp] png uses actual transparency - skipping conversion");
+          return outer2_5.HAS_TRANSPARENCY;
         } else if (obj2.isAnimated()) {
-          closure_4.verbose("[webp] png is animated (apng) - skipping conversion");
-          return closure_5.ANIMATED_IMAGE;
+          outer2_4.verbose("[webp] png is animated (apng) - skipping conversion");
+          return outer2_5.ANIMATED_IMAGE;
         } else if (obj2.isPng8()) {
-          closure_4.verbose("[webp] png is PNG8 format (indexed color) - skipping conversion");
-          return closure_5.PNG8_FORMAT;
+          outer2_4.verbose("[webp] png is PNG8 format (indexed color) - skipping conversion");
+          return outer2_5.PNG8_FORMAT;
         } else if (yield obj2.hasSrgbIccProfile()) {
           return null;
         } else {
-          return closure_5.ICC_NON_SRGB_PROFILE;
+          return outer2_5.ICC_NON_SRGB_PROFILE;
         }
         const tmp16 = tmp15;
       } else {
-        const promise = new Promise((data) => {
+        const promise = new Promise((closure_0) => {
+          let closure_1 = arg1;
           const fileReader = new FileReader();
-          fileReader.onload = () => arg0(fileReader.result);
+          fileReader.onload = () => callback(fileReader.result);
           fileReader.onerror = () => {
             const error = new Error("Failed to read file as ArrayBuffer");
-            return arg1(error);
+            return callback2(error);
           };
-          const asArrayBuffer = fileReader.readAsArrayBuffer(data);
+          const asArrayBuffer = fileReader.readAsArrayBuffer(closure_0);
         });
         const tmp11 = yield promise;
         return tmp11;
       }
     } else {
       const _HermesInternal = HermesInternal;
-      closure_4.verbose("[WebP] Unsupported format: " + obj.type);
-      return closure_5.UNSUPPORTED_FORMAT;
+      outer2_4.verbose("[WebP] Unsupported format: " + obj.type);
+      return outer2_5.UNSUPPORTED_FORMAT;
     }
   }
 }
 function hashImageData(data) {
   const uint8Array = new Uint8Array(data.data.buffer);
-  return importDefault(dependencyMap[3])(uint8Array).toString(16);
+  return importDefault(1193)(uint8Array).toString(16);
 }
-async function _performWebPConversion(name, arg1) {
+async function _performWebPConversion(arg0, arg1) {
   let height;
   let width;
   let size;
@@ -77,22 +83,22 @@ async function _performWebPConversion(name, arg1) {
   let obj = context;
   if (null == context) {
     const _Error2 = Error;
-    const error = new Error("could not get canvas context");
+    let error = new Error("could not get canvas context");
     throw error;
   } else {
     const prototype6 = globalThis.Image.prototype;
     image = new globalThis.Image();
     const _URL4 = URL;
-    objectURL = URL.createObjectURL(name);
+    objectURL = URL.createObjectURL(arg0);
     yield new Promise((arg0, arg1) => {
-      const size = arg0;
-      const image = arg1;
-      image.onload = () => arg0();
-      image.onerror = () => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      closure_1.onload = () => callback();
+      closure_1.onerror = () => {
         const error = new Error("failed to load image");
-        return arg1(error);
+        return callback2(error);
       };
-      image.src = objectURL;
+      closure_1.src = objectURL;
     });
     ({ width: size2.width, height: size2.height } = image);
     obj.drawImage(image, 0, 0);
@@ -114,12 +120,12 @@ async function _performWebPConversion(name, arg1) {
       const _URL2 = URL;
       objectURL = URL.createObjectURL(tmp11);
       yield new Promise((arg0, arg1) => {
-        const size = arg0;
-        const image = arg1;
-        image1.onload = () => arg0();
+        let closure_0 = arg0;
+        let closure_1 = arg1;
+        image1.onload = () => callback();
         image1.onerror = () => {
           const error = new Error("failed to load image");
-          return arg1(error);
+          return callback2(error);
         };
         image1.src = objectURL;
       });
@@ -129,15 +135,15 @@ async function _performWebPConversion(name, arg1) {
       const nowResult = performance.now();
       const tmp21 = image1;
       const tmp24 = objectURL;
-      const tmp37 = callback(tmp75);
-      const tmp38 = callback(yield obj.getImageData(0, 0, size.width, size.height));
+      const tmp37 = outer2_8(tmp75);
+      const tmp38 = outer2_8(yield obj.getImageData(0, 0, size.width, size.height));
       const _performance = performance;
       const diff = performance.now() - nowResult;
-      name = name.name;
+      const name = arg0.name;
       const _Math = Math;
       ({ width, height } = image1);
       const _HermesInternal = HermesInternal;
-      objectURL.verbose("[WebP] Pixel hash results: fileName=" + name + " fileLength={" + name.size + "} width=" + width + " height=" + height + " pixelHash=" + tmp37 + " mezzanineFileLength={" + tmp11.size + "} mezzaninePixelHash=" + tmp38 + " match=" + tmp37 === tmp38 + " elapsed_ms=" + Math.round(diff));
+      outer2_4.verbose("[WebP] Pixel hash results: fileName=" + name + " fileLength={" + arg0.size + "} width=" + width + " height=" + height + " pixelHash=" + tmp37 + " mezzanineFileLength={" + tmp11.size + "} mezzaninePixelHash=" + tmp38 + " match=" + tmp37 === tmp38 + " elapsed_ms=" + Math.round(diff));
       obj = {};
       if (tmp37 === tmp38) {
         obj.success = true;
@@ -146,7 +152,7 @@ async function _performWebPConversion(name, arg1) {
         let tmp51 = obj;
       } else {
         obj.success = false;
-        obj.reason = constants.PIXEL_HASH_MISMATCH;
+        obj.reason = outer2_5.PIXEL_HASH_MISMATCH;
         obj.pixelHashTimeMs = diff;
         tmp51 = obj;
       }
@@ -157,19 +163,20 @@ async function _performWebPConversion(name, arg1) {
   }
 }
 async function _maybeConvertToWebP(arg0, arg1) {
-  let nowResult;
+  let closure_0 = arg0;
+  let c1;
   function createFailedResult(INSUFFICIENT_SAVINGS, size) {
     if (size === undefined) {
-      size = INSUFFICIENT_SAVINGS.size;
+      size = closure_0.size;
     }
-    const obj = { success: false, originalFile: INSUFFICIENT_SAVINGS, sizeBefore: INSUFFICIENT_SAVINGS.size, sizeAfter: size };
+    const obj = { success: false, originalFile: closure_0, sizeBefore: closure_0.size, sizeAfter: size };
     let num = 1;
-    if (INSUFFICIENT_SAVINGS.size > 0) {
-      num = size / INSUFFICIENT_SAVINGS.size;
+    if (closure_0.size > 0) {
+      num = size / closure_0.size;
     }
     obj.compressionRatio = num;
     obj.reason = INSUFFICIENT_SAVINGS;
-    obj.compressTimeMs = Math.round(performance.now() - nowResult);
+    obj.compressTimeMs = Math.round(performance.now() - c1);
     return obj;
   }
   if (null == arg0) {
@@ -178,18 +185,19 @@ async function _maybeConvertToWebP(arg0, arg1) {
     throw error;
   } else {
     const _HermesInternal3 = HermesInternal;
-    closure_4.verbose("[WebP] Starting conversion for: " + tmp.name);
+    outer2_4.verbose("[WebP] Starting conversion for: " + tmp.name);
     const _performance = performance;
-    nowResult = performance.now();
-    const tmp36 = yield closure_6(tmp);
+    const nowResult = performance.now();
+    c1 = nowResult;
+    const tmp36 = yield outer2_6(tmp);
     if (null != tmp36) {
       const _HermesInternal2 = HermesInternal;
-      closure_4.verbose("[WebP] Conversion rejected: " + tmp2);
+      outer2_4.verbose("[WebP] Conversion rejected: " + tmp2);
       return createFailedResult(tmp2);
     } else {
-      const tmp38 = yield function performWebPConversion(arg0) {
-        return callback(...arguments);
-      }(tmp);
+      const tmp38 = yield (function performWebPConversion(arg0) {
+        return outer3_9(...arguments);
+      })(tmp);
       if (tmp38.success) {
         if (null != tmp3.webpBlob) {
           const webpBlob = tmp3.webpBlob;
@@ -201,15 +209,15 @@ async function _maybeConvertToWebP(arg0, arg1) {
           if (diff < 0) {
             const _Math = Math;
             const _HermesInternal = HermesInternal;
-            closure_4.verbose("[WebP] Insufficient savings: " + Math.round(100 * tmp9) + "% < 0% (" + tmp.size + " -> " + webpBlob.size + " bytes)");
-            let failedResult = createFailedResult(constants.INSUFFICIENT_SAVINGS, webpBlob.size);
+            outer2_4.verbose("[WebP] Insufficient savings: " + Math.round(100 * tmp9) + "% < 0% (" + tmp.size + " -> " + webpBlob.size + " bytes)");
+            let failedResult = createFailedResult(outer2_5.INSUFFICIENT_SAVINGS, webpBlob.size);
           } else {
             const _performance2 = performance;
             const diff1 = performance.now() - nowResult;
             const name = tmp.name;
             const _Math2 = Math;
             const _HermesInternal4 = HermesInternal;
-            closure_4.verbose("[WebP] Conversion successful: " + name + " to WebP in " + Math.round(diff1) + "ms");
+            outer2_4.verbose("[WebP] Conversion successful: " + name + " to WebP in " + Math.round(diff1) + "ms");
             failedResult = { success: true, originalFile: tmp, convertedBlob: webpBlob, sizeBefore: tmp.size, sizeAfter: webpBlob.size, compressionRatio: num, hashTimeMs: tmp3.pixelHashTimeMs };
             const _Math3 = Math;
             failedResult.compressTimeMs = Math.round(diff1);
@@ -221,17 +229,15 @@ async function _maybeConvertToWebP(arg0, arg1) {
       if (null != reason) {
         let UNKNOWN_ERROR = reason;
       } else {
-        UNKNOWN_ERROR = constants.UNKNOWN_ERROR;
+        UNKNOWN_ERROR = outer2_5.UNKNOWN_ERROR;
       }
       return createFailedResult(UNKNOWN_ERROR);
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult("WebP");
-const obj = { ALREADY_WEBP: "already_webp", UNSUPPORTED_FORMAT: "unsupported_format", ANIMATED_IMAGE: "animated_image", HAS_TRANSPARENCY: "has_transparency", PNG8_FORMAT: "png8_format", INSUFFICIENT_SAVINGS: "insufficient_savings", CONVERSION_FAILED: "conversion_failed", CORRUPTED_FILE: "corrupted_file", PIXEL_HASH_MISMATCH: "pixel_hash_mismatch", ICC_NON_SRGB_PROFILE: "icc_non_srgb_profile", ICC_DETECTION_FAILED: "icc_detection_failed", UNKNOWN_ERROR: "unknown_error" };
-const result = arg1(dependencyMap[4]).fileFinishedImporting("lib/uploader/webpConversion.tsx");
+let obj = { ALREADY_WEBP: "already_webp", UNSUPPORTED_FORMAT: "unsupported_format", ANIMATED_IMAGE: "animated_image", HAS_TRANSPARENCY: "has_transparency", PNG8_FORMAT: "png8_format", INSUFFICIENT_SAVINGS: "insufficient_savings", CONVERSION_FAILED: "conversion_failed", CORRUPTED_FILE: "corrupted_file", PIXEL_HASH_MISMATCH: "pixel_hash_mismatch", ICC_NON_SRGB_PROFILE: "icc_non_srgb_profile", ICC_DETECTION_FAILED: "icc_detection_failed", UNKNOWN_ERROR: "unknown_error" };
+const result = require("DiscordImageFactory").fileFinishedImporting("lib/uploader/webpConversion.tsx");
 
 export const ConversionFailureReason = obj;
 export { _shouldConvertToWebP };

@@ -1,16 +1,18 @@
-// Module ID: 15270
-// Function ID: 115268
+// Module ID: 15387
+// Function ID: 117442
 // Name: BaseMessagesScreen
-// Dependencies: []
+// Dependencies: [31, 5660, 10077, 9133, 33, 10076, 566, 10078, 15378, 15388, 11398, 15389, 15390, 15333, 15344, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 15270 (BaseMessagesScreen)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).SearchResultContentEntityTypes;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");
+// Module 15387 (BaseMessagesScreen)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { SearchResultContentEntityTypes as closure_6 } from "SearchEntrypointAnalyticsLocations";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");
 
 export default function BaseMessagesScreen(data) {
   let ItemSeparatorComponent;
@@ -19,18 +21,14 @@ export default function BaseMessagesScreen(data) {
   let isErrorFullscreen;
   let numColumns;
   data = data.data;
-  const arg1 = data;
   const searchContext = data.searchContext;
-  const importDefault = searchContext;
   const tab = data.tab;
-  const dependencyMap = tab;
   const isFocused = data.isFocused;
-  const React = isFocused;
   let isNextPageLoading = data.isFirstPageLoading;
-  let closure_4;
-  let closure_5;
-  let closure_6;
-  let jsx;
+  isNextPageLoading = undefined;
+  let isHistoricalIndexing;
+  let documentsIndexed;
+  let hasError;
   let isErrorToast;
   let showErrorToast;
   let searchFetchPendingManager;
@@ -38,31 +36,27 @@ export default function BaseMessagesScreen(data) {
   if (!isNextPageLoading) {
     isNextPageLoading = data.isNextPageLoading;
   }
-  closure_4 = isNextPageLoading;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_5, closure_4];
+  let obj = data(tab[6]);
+  const items = [isHistoricalIndexing, isNextPageLoading];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let obj = data(tab[7]);
     const searchTabFetchId = obj.getSearchTabFetchId(searchContext, tab, isHistoricalIndexing.getSearchResultsQuery(searchContext));
     obj = { isIndexing: isNextPageLoading.getIsIndexing(searchTabFetchId), isHistoricalIndexing: isNextPageLoading.getIsHistoricalIndexing(searchTabFetchId), documentsIndexed: isNextPageLoading.getDocumentsIndexed(searchTabFetchId) };
     return obj;
   });
-  const isHistoricalIndexing = stateFromStoresObject.isHistoricalIndexing;
-  closure_5 = isHistoricalIndexing;
-  const documentsIndexed = stateFromStoresObject.documentsIndexed;
-  closure_6 = documentsIndexed;
-  let obj1 = arg1(dependencyMap[8]);
+  isHistoricalIndexing = stateFromStoresObject.isHistoricalIndexing;
+  documentsIndexed = stateFromStoresObject.documentsIndexed;
+  let obj1 = data(tab[8]);
   obj = { searchContext, tab, hasListItems: data.length > 0 };
   const messageSearchErrorScreen = obj1.useMessageSearchErrorScreen(obj);
-  const hasError = messageSearchErrorScreen.hasError;
-  jsx = hasError;
+  hasError = messageSearchErrorScreen.hasError;
   isErrorToast = messageSearchErrorScreen.isErrorToast;
   showErrorToast = messageSearchErrorScreen.showErrorToast;
   ({ errorText, isErrorFullscreen } = messageSearchErrorScreen);
-  searchFetchPendingManager = arg1(dependencyMap[9]).useSearchFetchPendingManager(searchContext);
+  searchFetchPendingManager = data(tab[9]).useSearchFetchPendingManager(searchContext);
   const items1 = [data.length, isNextPageLoading, isFocused, hasError, searchContext, tab, searchFetchPendingManager];
   const items2 = [isFocused, isNextPageLoading, searchContext, searchFetchPendingManager, tab];
-  const callback = React.useCallback(() => {
+  const callback = isFocused.useCallback(() => {
     if (0 !== data.length) {
       if (isNextPageLoading) {
         searchFetchPendingManager.add(tab);
@@ -78,7 +72,7 @@ export default function BaseMessagesScreen(data) {
       }
     }
   }, items1);
-  const effect = React.useEffect(() => {
+  const effect = isFocused.useEffect(() => {
     let tmp = isFocused;
     if (isFocused) {
       tmp = !isNextPageLoading;
@@ -88,7 +82,7 @@ export default function BaseMessagesScreen(data) {
     }
   }, items2);
   const items3 = [isErrorToast, isNextPageLoading, isFocused, showErrorToast];
-  const effect1 = React.useEffect(() => {
+  const effect1 = isFocused.useEffect(() => {
     let tmp = isErrorToast;
     if (isErrorToast) {
       tmp = !isNextPageLoading;
@@ -103,16 +97,16 @@ export default function BaseMessagesScreen(data) {
   const items4 = [documentsIndexed, isHistoricalIndexing, searchContext, tab];
   if (stateFromStoresObject.isIndexing) {
     obj = { searchContext };
-    let tmp11 = jsx(importDefault(dependencyMap[12]), obj);
+    let tmp11 = hasError(searchContext(tab[12]), obj);
   } else {
     if (isErrorFullscreen) {
       if (!isNextPageLoading) {
         obj1 = { text: errorText };
-        tmp11 = jsx(importDefault(dependencyMap[13]), obj1);
+        tmp11 = hasError(searchContext(tab[13]), obj1);
       }
     }
     const obj2 = { contentContainerStyle, data, onEndReached: callback, ListHeaderComponent: tmp7, ItemSeparatorComponent, numColumns };
-    tmp11 = jsx(importDefault(dependencyMap[14]), obj2);
+    tmp11 = hasError(searchContext(tab[14]), obj2);
   }
   return tmp11;
 };
@@ -122,8 +116,8 @@ export const trackMessageItemPress = function trackMessageItemPress(messageId) {
   let searchContext;
   messageId = messageId.messageId;
   ({ searchContext, channelId, index } = messageId);
-  const message = message.getMessage(messageId);
-  let obj = importDefault(dependencyMap[5]);
+  message = message.getMessage(messageId);
+  let obj = importDefault(10076);
   obj = { searchContext, channelId, messageId };
   let id;
   if (null != message) {

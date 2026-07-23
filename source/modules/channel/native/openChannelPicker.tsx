@@ -1,13 +1,15 @@
-// Module ID: 10364
-// Function ID: 79982
+// Module ID: 10374
+// Function ID: 80032
 // Name: openChannelPicker
-// Dependencies: []
+// Dependencies: [1907, 1838, 4098, 10375, 1934, 1212, 2]
 // Exports: default
 
-// Module 10364 (openChannelPicker)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/channel/native/openChannelPicker.tsx");
+// Module 10374 (openChannelPicker)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("showActionSheet").fileFinishedImporting("modules/channel/native/openChannelPicker.tsx");
 
 export default function openChannelPicker(onClose) {
   let channelType;
@@ -21,19 +23,19 @@ export default function openChannelPicker(onClose) {
       return true;
     };
   }
-  let obj = { <string:3029674277>: false, <string:1045353029>: false, <string:1360093674>: false, <string:3361801618>: false, <string:2701284434>: false };
+  let obj = { selectedChannel: 0, guildId: 0, channelType: 0, filterFn: 0, onClose: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onClose, obj);
-  const guild = guild.getGuild(guildId);
+  guild = guild.getGuild(guildId);
   let items = channels.getChannels(guildId)[channelType];
   if (null == items) {
     items = [];
   }
   obj = {};
   obj = {};
-  const obj2 = importDefault(dependencyMap[2]);
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.title = intl.string(arg1(dependencyMap[5]).t.r2ptsz);
+  const obj2 = importDefault(4098);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.r2ptsz);
   obj.onClose = onClose.onClose;
   obj.header = obj;
   obj.guild = guild;
@@ -41,5 +43,5 @@ export default function openChannelPicker(onClose) {
   obj.channels = found.map((channel) => channel.channel);
   obj.selectedChannel = selectedChannel;
   const merged1 = Object.assign(merged);
-  obj2.openLazy(arg1(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), "ChannelPicker", obj);
+  obj2.openLazy(require(1934) /* maybeLoadBundle */(10375, dependencyMap.paths), "ChannelPicker", obj);
 };

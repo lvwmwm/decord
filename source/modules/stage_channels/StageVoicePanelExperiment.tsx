@@ -1,15 +1,15 @@
-// Module ID: 4339
-// Function ID: 38344
+// Module ID: 4343
+// Function ID: 38376
 // Name: useIsStageVoicePanelEnabled
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isStageVoicePanelEnabled, useIsStageVoicePanelEnabled
 
-// Module 4339 (useIsStageVoicePanelEnabled)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "r", "Bool(false)": "backend", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-let closure_0 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/stage_channels/StageVoicePanelExperiment.tsx");
+// Module 4343 (useIsStageVoicePanelEnabled)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-03-stage-voice-panel", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/stage_channels/StageVoicePanelExperiment.tsx");
 
 export const useIsStageVoicePanelEnabled = function useIsStageVoicePanelEnabled(location) {
   return closure_0.useConfig({ location }).enabled;

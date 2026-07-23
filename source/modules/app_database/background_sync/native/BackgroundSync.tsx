@@ -1,53 +1,73 @@
-// Module ID: 15879
-// Function ID: 121543
+// Module ID: 15996
+// Function ID: 123716
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 5, 1352, 1348, 4142, 6651, 6711, 653, 5035, 4991, 1838, 3, 664, 587, 6998, 477, 686, 1184, 675, 1882, 507, 21, 22, 6896, 6899, 6897, 12601, 14400, 6709, 1327, 6719, 2]
 // Exports: backgroundSync
 
-// Module 15879 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15996 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import closure_4 from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import ME from "ME";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_5;
+let closure_6;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +78,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -87,7 +107,6 @@ function _arrayLikeToArray(arg0, arg1) {
 function _backgroundSync() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _backgroundSync = obj;
   return obj(...arguments);
 }
 function backgroundSyncPrivateChannels() {
@@ -96,7 +115,6 @@ function backgroundSyncPrivateChannels() {
 function _backgroundSyncPrivateChannels() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _backgroundSyncPrivateChannels = obj;
   return obj(...arguments);
 }
 function backgroundSyncGuildData() {
@@ -105,7 +123,6 @@ function backgroundSyncGuildData() {
 function _backgroundSyncGuildData() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _backgroundSyncGuildData = obj;
   return obj(...arguments);
 }
 function backgroundSyncGuildChannels() {
@@ -114,7 +131,6 @@ function backgroundSyncGuildChannels() {
 function _backgroundSyncGuildChannels() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _backgroundSyncGuildChannels = obj;
   return obj(...arguments);
 }
 function processChannelChanges() {
@@ -123,41 +139,29 @@ function processChannelChanges() {
 function _processChannelChanges() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _processChannelChanges = obj;
   return obj(...arguments);
 }
 function writeMessageChanges(transaction) {
-  const importDefault = arg2;
-  const dependencyMap = arg3;
-  let closure_3 = arg4;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  let closure_2 = arg3;
+  let _slicedToArray = arg4;
   return transaction.transaction((arg0) => {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     for (const key10005 in closure_0) {
       let tmp2 = key10005;
       let tmpResult = tmp(key10005);
+      continue;
     }
   }, "Background Sync");
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ isPrivate: closure_5, isThread: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const tmp2 = arg1(dependencyMap[2]);
-({ AnalyticEvents: closure_11, Endpoints: closure_12, MAX_MESSAGES_PER_CHANNEL: closure_13 } = arg1(dependencyMap[7]));
-arg1(dependencyMap[8]);
-arg1(dependencyMap[3]);
-arg1(dependencyMap[9]);
-arg1(dependencyMap[10]);
-let importDefaultResult = importDefault(dependencyMap[11]);
+({ isPrivate: closure_5, isThread: closure_6 } = _callSuper);
+({ AnalyticEvents: closure_11, Endpoints: closure_12, MAX_MESSAGES_PER_CHANNEL: closure_13 } = ME);
 importDefaultResult = new importDefaultResult("BackgroundSync");
-let closure_15 = 4 * importDefault(dependencyMap[12]).Millis.HOUR;
-let closure_16 = "lastSyncTime";
-let closure_17 = "lastSyncedPrivateChannelsMessageId";
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/app_database/background_sync/native/BackgroundSync.tsx");
+let closure_15 = 4 * require("set").Millis.HOUR;
+const lastSyncTime = "lastSyncTime";
+const lastSyncedPrivateChannelsMessageId = "lastSyncedPrivateChannelsMessageId";
+const result = require("_callSuper").fileFinishedImporting("modules/app_database/background_sync/native/BackgroundSync.tsx");
 
 export const backgroundSync = function backgroundSync(arg0) {
   return _backgroundSync(...arguments);

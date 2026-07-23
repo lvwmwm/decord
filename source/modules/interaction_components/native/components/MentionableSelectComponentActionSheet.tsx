@@ -1,31 +1,36 @@
-// Module ID: 10958
-// Function ID: 85244
+// Module ID: 10968
+// Function ID: 85293
 // Name: MentionableSelectComponentActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 1910, 1838, 4217, 1849, 653, 33, 4130, 689, 5148, 7802, 10969, 4359, 1273, 5489, 5490, 8422, 10967, 9429, 4126, 10970, 1212, 2]
 // Exports: default
 
-// Module 10958 (MentionableSelectComponentActionSheet)
+// Module 10968 (MentionableSelectComponentActionSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let Fonts;
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ Fonts, DEFAULT_ROLE_COLOR_HEX: closure_9 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { color: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12, lineHeight: 16 };
-obj.name = obj;
-const tmp3 = arg1(dependencyMap[7]);
-obj.discriminator = { color: importDefault(dependencyMap[9]).colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
-obj.roleCountContainer = { FRAME_WEB_VIEW_KEY: null, VIDEO_DISABLED_LOCAL_AUTO: null, hasMidnightNux: null, -9223372036854775808: null, 9223372036854775807: null, -4212385683882: null };
-obj.roleCountText = { paddingRight: 4 };
-let closure_12 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[9]).colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/interaction_components/native/components/MentionableSelectComponentActionSheet.tsx");
+let closure_10;
+let closure_11;
+let closure_9;
+const require = arg1;
+({ Fonts, DEFAULT_ROLE_COLOR_HEX: closure_9 } = ME);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12, lineHeight: 16 };
+_createForOfIteratorHelperLoose.name = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.discriminator = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
+_createForOfIteratorHelperLoose.roleCountContainer = { display: "flex", flexDirection: "row", flexGrow: 1, alignItems: "center", justifyContent: "flex-end", marginRight: 12 };
+_createForOfIteratorHelperLoose.roleCountText = { paddingRight: 4 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/interaction_components/native/components/MentionableSelectComponentActionSheet.tsx");
 
 export default function MentionableSelectComponentActionSheet(selectionActionComponent) {
   let allowEmpty;
@@ -38,24 +43,20 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
   let setQuery;
   let submitSelection;
   selectionActionComponent = selectionActionComponent.selectionActionComponent;
-  const arg1 = selectionActionComponent;
   const channelId = selectionActionComponent.channelId;
-  const importDefault = channelId;
   const guildId = selectionActionComponent.guildId;
-  const dependencyMap = guildId;
   let closure_5;
   ({ labelComponent, containerId, onSubmit, allowEmpty } = selectionActionComponent);
-  const React = callback2();
-  const guild = guild.getGuild(guildId);
-  const View = guild;
+  const React = _createForOfIteratorHelperLoose();
+  guild = guild.getGuild(guildId);
   let id;
   if (null != guild) {
     id = guild.id;
   }
-  closure_5 = importDefault(dependencyMap[10])(id, arg1(dependencyMap[11]).MIN_REREQUEST_TIME);
-  const items = [selectionActionComponent, channelId];
+  closure_5 = channelId(guildId[10])(id, selectionActionComponent(guildId[11]).MIN_REREQUEST_TIME);
+  let items = [selectionActionComponent, channelId];
   const callback = React.useCallback((query) => selectionActionComponent(guildId[11]).queryMentionables(selectionActionComponent.type, query, channelId), items);
-  const tmp5 = importDefault(dependencyMap[12])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
+  const tmp5 = channelId(guildId[12])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
   const selectedOptions = tmp5.selectedOptions;
   const items1 = [guild, guildId];
   ({ options, isSelected, onPressOptionItem, submitSelection, setQuery } = tmp5);
@@ -63,20 +64,20 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
     let customIconSrc;
     let unicodeEmoji;
     if (type.type === selectionActionComponent(guildId[13]).SelectOptionType.USER) {
-      const user = authStore.getUser(type.value);
+      const user = outer1_8.getUser(type.value);
       if (null == user) {
         return null;
       } else {
-        const isMobileOnlineResult = closure_7.isMobileOnline(user.id);
-        const status = closure_7.getStatus(user.id);
-        let obj = { user, isMobileOnline: isMobileOnlineResult, isVROnline: closure_7.isVROnline(user.id), status };
+        const isMobileOnlineResult = outer1_7.isMobileOnline(user.id);
+        const status = outer1_7.getStatus(user.id);
+        let obj = { user, isMobileOnline: isMobileOnlineResult, isVROnline: outer1_7.isVROnline(user.id), status };
         let tmp20;
         if (null != guildId) {
           tmp20 = guildId;
         }
         obj.guildId = tmp20;
         obj.size = selectionActionComponent(guildId[14]).AvatarSizes.XSMALL;
-        return callback(selectionActionComponent(guildId[14]).Avatar, obj);
+        return outer1_10(selectionActionComponent(guildId[14]).Avatar, obj);
       }
     } else if (type.type === selectionActionComponent(guildId[13]).SelectOptionType.ROLE) {
       if (null != guild) {
@@ -97,7 +98,7 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
               tmp9 = obj;
             }
             const obj1 = { source: tmp9, unicodeEmoji, size: 24, name: role.name };
-            return callback(channelId(guildId[16]), obj1);
+            return outer1_10(channelId(guildId[16]), obj1);
           }
           const obj2 = {};
           let colorString;
@@ -105,24 +106,24 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
             colorString = role.colorString;
           }
           if (null == colorString) {
-            colorString = closure_9;
+            colorString = outer1_9;
           }
           obj2.color = colorString;
-          return callback(selectionActionComponent(guildId[17]).ShieldUserIcon, obj2);
+          return outer1_10(selectionActionComponent(guildId[17]).ShieldUserIcon, obj2);
         }
       }
       return null;
     }
   }, items1);
-  return callback(importDefault(dependencyMap[18]), {
+  return callback(channelId(guildId[18]), {
     onPressOptionItem,
     renderIcon: callback1,
     renderDescription(type) {
       if (type.type === selectionActionComponent(guildId[13]).SelectOptionType.USER) {
-        const user = authStore.getUser(type.value);
+        const user = outer1_8.getUser(type.value);
         const obj = { user };
-        ({ name: obj.usernameStyle, discriminator: obj.discriminatorStyle, name: obj.nicknameStyle } = closure_3);
-        return callback(channelId(guildId[19]), obj);
+        ({ name: obj.usernameStyle, discriminator: obj.discriminatorStyle, name: obj.nicknameStyle } = result);
+        return outer1_10(channelId(guildId[19]), obj);
       }
     },
     renderOptionSuffix(item) {
@@ -140,13 +141,13 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
           tmp6 = tmp8;
         }
         if (null != tmp6) {
-          let obj = { style: closure_3.roleCountContainer };
-          obj = { style: closure_3.roleCountText, children: tmp6 };
-          const items = [callback(selectionActionComponent(guildId[20]).Text, obj), ];
+          let obj = { style: result.roleCountContainer };
+          obj = { style: result.roleCountText, variant: "text-sm/medium", color: "interactive-text-default", children: tmp6 };
+          const items = [outer1_10(selectionActionComponent(guildId[20]).Text, obj), ];
           obj = { size: "xs" };
-          items[1] = callback(selectionActionComponent(guildId[21]).UserIcon, obj);
+          items[1] = outer1_10(selectionActionComponent(guildId[21]).UserIcon, obj);
           obj.children = items;
-          return callback2(guild, obj);
+          return outer1_11(guild, obj);
         }
       }
     },
@@ -160,7 +161,7 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
     onQueryChange: setQuery,
     itemAccessibilityLabel(type) {
       if (type.type === selectionActionComponent(guildId[13]).SelectOptionType.USER) {
-        const user = authStore.getUser(type.value);
+        const user = outer1_8.getUser(type.value);
         if (null != user) {
           if (user.bot) {
             const intl3 = selectionActionComponent(guildId[22]).intl;
@@ -170,7 +171,7 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
               discriminator = user.discriminator;
             }
             obj.discriminator = discriminator;
-            let formatToPlainStringResult = intl3.formatToPlainString(selectionActionComponent(guildId[22]).t.zogo/8, obj);
+            let formatToPlainStringResult = intl3.formatToPlainString(selectionActionComponent(guildId[22]).t["zogo/8"], obj);
           }
           return formatToPlainStringResult;
         }

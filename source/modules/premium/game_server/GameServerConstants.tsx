@@ -1,11 +1,13 @@
-// Module ID: 4017
-// Function ID: 33432
+// Module ID: 4019
+// Function ID: 33441
 // Name: NewGamesCoachmarkContent
-// Dependencies: []
+// Dependencies: [7, 6, 1856, 4020, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4017 (NewGamesCoachmarkContent)
-let closure_0 = importDefault(dependencyMap[1]);
+// Module 4019 (NewGamesCoachmarkContent)
+import _classCallCheck from "_classCallCheck";
+import importDefaultResult from "_defineProperties";
+
 let obj = { SELECT_GAME: "select-game", SERVER_SETTINGS: "server-settings" };
 obj = { type: "go-to-step", step: obj.SERVER_SETTINGS };
 obj = { type: "go-to-step", step: obj.SELECT_GAME };
@@ -42,11 +44,11 @@ if ("production" !== window.GLOBAL_ENV.PROJECT_ENV) {
 }
 class NewGamesCoachmarkContent {
   constructor() {
-    tmp = closure_0(this, NewGamesCoachmarkContent);
+    tmp = c0(this, NewGamesCoachmarkContent);
     return;
   }
 }
-const importDefaultResultResult = importDefault(dependencyMap[0])(NewGamesCoachmarkContent);
+const importDefaultResultResult = require("_defineProperties")(NewGamesCoachmarkContent);
 let str11 = "1497097140001046528";
 if ("production" === window.GLOBAL_ENV.PROJECT_ENV) {
   str11 = "1497100850261131334";
@@ -62,12 +64,11 @@ importDefaultResultResult.SECOND_GAME_NAME = "Factorio";
 importDefaultResultResult.THIRD_GAME_NAME = "V Rising";
 const obj1 = {};
 let str13 = "https://discord.shockbyte.com/support";
-if (window.GLOBAL_ENV.RELEASE_CHANNEL === arg1(dependencyMap[2]).Environments.STAGING) {
+if (window.GLOBAL_ENV.RELEASE_CHANNEL === require("Environments").Environments.STAGING) {
   str13 = "https://purple-prod.shockbyte.dev/support";
 }
-obj1[arg1(dependencyMap[3]).GameServerProviderType.SHOCKBYTE] = str13;
-const importDefaultResult = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/game_server/GameServerConstants.tsx");
+obj1[require("GameServerProviderType").GameServerProviderType.SHOCKBYTE] = str13;
+const result = require("Environments").fileFinishedImporting("modules/premium/game_server/GameServerConstants.tsx");
 
 export const GameServerSetupStep = obj;
 export const GAME_SERVER_DEFAULT_STEP_CONFIG = { steps: { [obj.SELECT_GAME]: { onBack: { type: "close" }, onNext: obj }, [obj.SERVER_SETTINGS]: { onBack: obj, onNext: { type: "save" } } } };
@@ -84,6 +85,6 @@ export const HYTALE_GAME_ID = str8;
 export const NewGamesCoachmarkContent = importDefaultResultResult;
 export const GameServerGameProvider = { SHOCKBYTE: 0, [0]: "SHOCKBYTE" };
 export const GAME_SERVER_SUPPORT_URLS = obj1;
-export const GAME_SERVER_TOS = { [arg1(dependencyMap[3]).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
+export const GAME_SERVER_TOS = { [arg1(4020).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
 export const GAME_SERVER_SURVEY_URL = (arg0, arg1) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=" + arg0 + "&guild_id=" + arg1;
 export const GAME_SERVER_POWERUP_SKU_ID = "0";

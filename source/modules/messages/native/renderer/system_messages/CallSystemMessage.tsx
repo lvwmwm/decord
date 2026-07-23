@@ -1,26 +1,28 @@
-// Module ID: 7660
-// Function ID: 61252
+// Module ID: 7666
+// Function ID: 61289
 // Name: createCallSystemMessage
-// Dependencies: []
+// Dependencies: [4143, 1194, 4146, 653, 4148, 7667, 7668, 1212, 1395, 3800, 7652, 2]
 // Exports: createCallSystemMessage
 
-// Module 7660 (createCallSystemMessage)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const ME = arg1(dependencyMap[3]).ME;
-const ParticipantTypes = arg1(dependencyMap[4]).ParticipantTypes;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");
+// Module 7666 (createCallSystemMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { ME } from "ME";
+import { ParticipantTypes } from "ParticipantTypes";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");
 
 export const createCallSystemMessage = function createCallSystemMessage(message) {
   message = message.message;
-  const id = id.getId();
+  id = id.getId();
   const channelId = message.getChannelId();
   const call = message.call;
-  const userVoiceChannelId = userVoiceChannelId.getUserVoiceChannelId(ME, id);
-  const tmp4 = importDefault(dependencyMap[5])(message);
-  const participants = participants.getParticipants(channelId);
-  let obj = arg1(dependencyMap[6]);
+  userVoiceChannelId = userVoiceChannelId.getUserVoiceChannelId(ME, id);
+  const tmp4 = importDefault(7667)(message);
+  participants = participants.getParticipants(channelId);
+  let obj = require(7668) /* checkIsCallActive */;
   const checkIsCallActiveResult = obj.checkIsCallActive(channelId, message.id);
   let tmp6 = !checkIsCallActiveResult;
   if (tmp6) {
@@ -30,49 +32,49 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
     const participants1 = call.participants;
     tmp6 = -1 === participants1.indexOf(id);
   }
-  const intl = arg1(dependencyMap[7]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[7]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if (checkIsCallActiveResult) {
     let str2 = "";
     if (checkIsCallActiveResult) {
       if (null == userVoiceChannelId) {
-        const intl3 = arg1(dependencyMap[7]).intl;
-        str2 = intl3.string(arg1(dependencyMap[7]).t.DqA3mi);
+        const intl3 = require(1212) /* getSystemLocale */.intl;
+        str2 = intl3.string(require(1212) /* getSystemLocale */.t.DqA3mi);
       } else {
         str2 = "";
       }
     }
-    const found = participants.filter((type) => type.type === constants.USER && !type.ringing);
+    const found = participants.filter((type) => type.type === outer1_7.USER && !type.ringing);
     let mapped = found.map((user) => {
       user = user.user;
-      return callback(closure_2[8]).ensureAvatarSource(user.getAvatarSource(undefined)).uri;
+      return outer1_0(outer1_2[8]).ensureAvatarSource(user.getAvatarSource(undefined)).uri;
     });
     let formatToPlainStringResult = str2;
-    let stringResult1 = string(t.NGg/fm);
-    const stringResult = string(t.NGg/fm);
+    let stringResult1 = string(t["NGg/fm"]);
+    const stringResult = string(t["NGg/fm"]);
   } else {
     if (tmp6) {
-      stringResult1 = string(t.2CnhoI);
+      stringResult1 = string(t["2CnhoI"]);
     } else {
       stringResult1 = string(t.v05Xd6);
     }
     if (null != tmp4) {
-      const intl2 = arg1(dependencyMap[7]).intl;
-      obj = { duration: tmp4, timestamp: arg1(dependencyMap[9]).calendarFormat(message.timestamp) };
-      formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[7]).t.SBDnp1, obj);
-      const obj4 = arg1(dependencyMap[9]);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      obj = { duration: tmp4, timestamp: require(3800) /* resetCache */.calendarFormat(message.timestamp) };
+      formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.SBDnp1, obj);
+      const obj4 = require(3800) /* resetCache */;
     } else {
-      formatToPlainStringResult = arg1(dependencyMap[9]).calendarFormat(message.timestamp);
-      const obj2 = arg1(dependencyMap[9]);
+      formatToPlainStringResult = require(3800) /* resetCache */.calendarFormat(message.timestamp);
+      const obj2 = require(3800) /* resetCache */;
     }
     const author = message.author;
-    mapped = [arg1(dependencyMap[8]).ensureAvatarSource(author.getAvatarSource(undefined)).uri];
-    const obj5 = arg1(dependencyMap[8]);
+    mapped = [require(1395) /* ensureAvatarSource */.ensureAvatarSource(author.getAvatarSource(undefined)).uri];
+    const obj5 = require(1395) /* ensureAvatarSource */;
   }
   obj = { title: stringResult1, description: formatToPlainStringResult, isCallActive: checkIsCallActiveResult, missed: tmp6, avatarURLs: mapped };
   const timestamp = message.timestamp;
   obj.rawMilliseconds = timestamp.valueOf();
-  const merged = Object.assign(importDefault(dependencyMap[10])(message));
+  const merged = Object.assign(importDefault(7652)(message));
   return obj;
 };

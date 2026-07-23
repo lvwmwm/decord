@@ -1,9 +1,16 @@
-// Module ID: 5737
-// Function ID: 49344
+// Module ID: 5742
+// Function ID: 49371
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5743, 566, 686, 2]
 
-// Module 5737 (_isNativeReflectConstruct)
+// Module 5742 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { VoiceChannelEffectAnimationType as closure_6 } from "VoiceChannelEffectAnimationType";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +20,19 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_1 = importDefault(dependencyMap[0]);
-let closure_2 = importDefault(dependencyMap[1]);
-let closure_3 = importDefault(dependencyMap[2]);
-let closure_4 = importDefault(dependencyMap[3]);
-let closure_5 = importDefault(dependencyMap[4]);
-let closure_6 = arg1(dependencyMap[5]).VoiceChannelEffectAnimationType;
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class VoiceChannelEffectsPersistedStore {
     constructor() {
       self = this;
-      tmp = closure_1(this, VoiceChannelEffectsPersistedStore);
-      obj = closure_4(VoiceChannelEffectsPersistedStore);
-      tmp2 = closure_3;
-      if (closure_7()) {
+      tmp = outer1_1(this, VoiceChannelEffectsPersistedStore);
+      obj = outer1_4(VoiceChannelEffectsPersistedStore);
+      tmp2 = outer1_3;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_4;
+        tmp7 = outer1_4;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -49,7 +50,7 @@ let tmp2 = (PersistedStore) => {
         animationType = animationType.animationType;
       }
       if (null == animationType) {
-        animationType = constants.PREMIUM;
+        animationType = outer1_6.PREMIUM;
       }
       const VoiceChannelEffectsPersistedStore = animationType;
     }
@@ -63,18 +64,18 @@ let tmp2 = (PersistedStore) => {
   };
   items[1] = obj;
   return callback(VoiceChannelEffectsPersistedStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "VoiceChannelEffectsPersistedStore";
 tmp2.persistKey = "VoiceChannelEffectsPersistedStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE: function handleToggleAnimationType() {
     if (BASIC === constants.BASIC) {
-      let BASIC = constants.PREMIUM;
+      BASIC = constants.PREMIUM;
     } else {
       BASIC = constants.BASIC;
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsPersistedStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsPersistedStore.tsx");
 
 export default tmp2;

@@ -1,19 +1,19 @@
-// Module ID: 14226
-// Function ID: 107554
+// Module ID: 14340
+// Function ID: 109710
 // Name: onProfileUpdatesNotificationSettingsChanged
-// Dependencies: []
+// Dependencies: [3770, 653, 3803, 675, 2]
 // Exports: onProfileUpdatesNotificationSettingsChanged
 
-// Module 14226 (onProfileUpdatesNotificationSettingsChanged)
-let closure_3 = require(dependencyMap[0]).NotificationSettingsUpdateType;
-const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/notifications/profile_updates/ProfileUpdatesNotificationUtils.tsx");
+// Module 14340 (onProfileUpdatesNotificationSettingsChanged)
+import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
+import { AnalyticEvents } from "ME";
+
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/notifications/profile_updates/ProfileUpdatesNotificationUtils.tsx");
 
 export const onProfileUpdatesNotificationSettingsChanged = function onProfileUpdatesNotificationSettingsChanged(profile_updates_notifications) {
-  const EnableProfileUpdatesNotifications = require(dependencyMap[2]).EnableProfileUpdatesNotifications;
+  const EnableProfileUpdatesNotifications = require(3803) /* explicitContentFromProto */.EnableProfileUpdatesNotifications;
   EnableProfileUpdatesNotifications.updateSetting(profile_updates_notifications);
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(675);
   obj = { update_type: constants.ACCOUNT, profile_updates_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

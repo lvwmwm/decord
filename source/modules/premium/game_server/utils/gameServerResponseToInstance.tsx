@@ -1,12 +1,11 @@
-// Module ID: 4038
-// Function ID: 33637
+// Module ID: 4040
+// Function ID: 33646
 // Name: gameServerResponseToInstance
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 4038 (gameServerResponseToInstance)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/premium/game_server/utils/gameServerResponseToInstance.tsx");
+// Module 4040 (gameServerResponseToInstance)
+const result = require("set").fileFinishedImporting("modules/premium/game_server/utils/gameServerResponseToInstance.tsx");
 
 export default function gameServerResponseToInstance(id) {
   const obj = { id: id.id, name: id.name, regionId: id.region_id, regionName: id.region_name, planId: id.sku_id, planName: id.plan_name };

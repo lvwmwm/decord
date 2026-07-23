@@ -1,26 +1,25 @@
 // Module ID: 1822
-// Function ID: 20000
+// Function ID: 20001
 // Name: readWindowSizeForAppEntry
-// Dependencies: []
+// Dependencies: [648, 2]
 // Exports: readScreenSizeForAppEntry, readWindowSizeForAppEntry
 
 // Module 1822 (readWindowSizeForAppEntry)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/screen/native/readAppEntryWindowMetrics.android.tsx");
+const result = require("set").fileFinishedImporting("modules/screen/native/readAppEntryWindowMetrics.android.tsx");
 
 export const readWindowSizeForAppEntry = function readWindowSizeForAppEntry(appEntryKey) {
   let windowSize;
-  if (null != importDefault(dependencyMap[0])) {
-    windowSize = importDefault(dependencyMap[0]).getWindowSize(appEntryKey);
-    const obj = importDefault(dependencyMap[0]);
+  if (null != importDefault(648)) {
+    windowSize = importDefault(648).getWindowSize(appEntryKey);
+    const obj = importDefault(648);
   }
   return windowSize;
 };
 export const readScreenSizeForAppEntry = function readScreenSizeForAppEntry(appEntryKey) {
   let screenSize;
-  if (null != importDefault(dependencyMap[0])) {
-    screenSize = importDefault(dependencyMap[0]).getScreenSize(appEntryKey);
-    const obj = importDefault(dependencyMap[0]);
+  if (null != importDefault(648)) {
+    screenSize = importDefault(648).getScreenSize(appEntryKey);
+    const obj = importDefault(648);
   }
   return screenSize;
 };

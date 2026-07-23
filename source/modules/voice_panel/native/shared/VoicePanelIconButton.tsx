@@ -1,15 +1,17 @@
-// Module ID: 15600
-// Function ID: 119053
-// Dependencies: []
+// Module ID: 15717
+// Function ID: 121226
+// Dependencies: [31, 33, 7589, 7771, 2]
 
-// Module 15600
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+// Module 15717
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo(importAllResult.forwardRef((overrideVariant, ref) => {
   let layout;
   let style;
   overrideVariant = overrideVariant.overrideVariant;
-  let obj = { position: "spring", top: 0.4, left: 1 };
+  let obj = { style: 0, overrideVariant: 0, layout: 0 };
   ({ style, layout } = overrideVariant);
   Object.setPrototypeOf(null);
   const merged = Object.assign(overrideVariant, obj);
@@ -23,9 +25,9 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((overrideVari
   }
   obj["variant"] = str;
   obj["maxFontSizeMultiplier"] = 2;
-  obj.children = jsx(ref(dependencyMap[3]).IconButton, obj);
-  return jsx(importDefault(dependencyMap[2]), obj);
+  obj.children = jsx(require(7771) /* IconButton */.IconButton, {});
+  return jsx(importDefault(7589), {});
 }));
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelIconButton.tsx");
+const result = require("module_7589").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelIconButton.tsx");
 
 export default memoResult;

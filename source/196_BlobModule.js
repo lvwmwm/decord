@@ -1,17 +1,17 @@
 // Module ID: 196
 // Function ID: 2819
 // Name: BlobModule
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 196 (BlobModule)
-const value = importAll(dependencyMap[0]).get("BlobModule");
+const value = require("requireModule").get("BlobModule");
 let tmp3 = null;
-let closure_1 = null;
+let c1 = null;
 if (null != value) {
   const obj = {
     getConstants() {
         if (null == constants) {
-          const constants = value.getConstants();
+          constants = value.getConstants();
         }
         return constants;
       },

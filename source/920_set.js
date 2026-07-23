@@ -1,13 +1,14 @@
 // Module ID: 920
-// Function ID: 10054
+// Function ID: 10055
 // Name: set
-// Dependencies: []
+// Dependencies: [57, 916]
 // Exports: filterMcpPiiFromSpanData
 
 // Module 920 (set)
-let closure_0 = require(dependencyMap[0]);
+import _slicedToArray from "_slicedToArray";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const items = [require(dependencyMap[1]).CLIENT_ADDRESS_ATTRIBUTE, require(dependencyMap[1]).CLIENT_PORT_ATTRIBUTE, require(dependencyMap[1]).MCP_RESOURCE_URI_ATTRIBUTE];
+const items = [require("module_916").CLIENT_ADDRESS_ATTRIBUTE, require("module_916").CLIENT_PORT_ATTRIBUTE, require("module_916").MCP_RESOURCE_URI_ATTRIBUTE];
 const set = new Set(items);
 
 export const filterMcpPiiFromSpanData = function filterMcpPiiFromSpanData(merged, BooleanResult) {
@@ -16,9 +17,9 @@ export const filterMcpPiiFromSpanData = function filterMcpPiiFromSpanData(merged
     const _Object = Object;
     const entries = Object.entries(merged);
     reduced = entries.reduce((arg0, arg1) => {
-      const tmp = callback(arg1, 2);
+      const tmp = outer1_0(arg1, 2);
       const first = tmp[0];
-      if (!set.has(first)) {
+      if (!outer1_1.has(first)) {
         arg0[first] = tmp[1];
       }
       return arg0;

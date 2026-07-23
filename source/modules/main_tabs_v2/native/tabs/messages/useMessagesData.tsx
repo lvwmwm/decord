@@ -1,56 +1,50 @@
-// Module ID: 14797
-// Function ID: 111507
+// Module ID: 14913
+// Function ID: 113675
 // Name: useMessagesData
-// Dependencies: []
+// Dependencies: [57, 31, 4808, 1194, 3767, 5603, 566, 14914, 3803, 2]
 // Exports: default
 
-// Module 14797 (useMessagesData)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const obj = { HappeningNow: 0, [0]: "HappeningNow", EmptyState: 1, [1]: "EmptyState" };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesData.tsx");
+// Module 14913 (useMessagesData)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+
+const require = arg1;
+let obj = { HappeningNow: 0, [0]: "HappeningNow", EmptyState: 1, [1]: "EmptyState" };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesData.tsx");
 
 export default function useMessagesData() {
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_6, closure_5];
+  let obj = connected(first[6]);
+  let items = [numFriendSuggestions, friendSuggestions];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ connected: null != numFriendSuggestions.getSessionId(), connectedToGateway: friendSuggestions.isConnected() }));
-  const connected = stateFromStoresObject.connected;
-  const arg1 = connected;
+  connected = stateFromStoresObject.connected;
   const connectedToGateway = stateFromStoresObject.connectedToGateway;
-  const importDefault = connectedToGateway;
-  const items1 = [closure_8];
-  const tmp2 = callback(arg1(dependencyMap[6]).useStateFromStoresArray(items1, () => stateFromStores.getSortedChannels()), 2);
-  const first = tmp2[0];
-  const dependencyMap = first;
-  const callback = tmp4;
+  const items1 = [stateFromStores];
+  const tmp2 = callback(connected(first[6]).useStateFromStoresArray(items1, () => stateFromStores.getSortedChannels()), 2);
+  first = tmp2[0];
+  callback = tmp4;
   obj = { location: "Messages Tab" };
   let tmp6 = connected;
-  const obj2 = arg1(dependencyMap[6]);
+  const obj2 = connected(first[6]);
   if (connected) {
     tmp6 = connectedToGateway;
   }
   obj.isConnected = tmp6;
-  const tmp5Result = importDefault(dependencyMap[7])(obj);
+  const tmp5Result = connectedToGateway(first[7])(obj);
   const setAdded = tmp5Result.setAdded;
-  const React = setAdded;
-  const friendSuggestions = tmp5Result.friendSuggestions;
-  closure_5 = friendSuggestions;
-  const numFriendSuggestions = tmp5Result.numFriendSuggestions;
-  closure_6 = numFriendSuggestions;
-  const HappeningNowCardsDisabled = arg1(dependencyMap[8]).HappeningNowCardsDisabled;
+  friendSuggestions = tmp5Result.friendSuggestions;
+  numFriendSuggestions = tmp5Result.numFriendSuggestions;
+  const HappeningNowCardsDisabled = connected(first[8]).HappeningNowCardsDisabled;
   const setting = HappeningNowCardsDisabled.useSetting();
-  let closure_7 = setting;
-  const tmp5 = importDefault(dependencyMap[7]);
-  const items2 = [closure_7];
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items2, () => setting.getFriendCount());
-  closure_8 = stateFromStores;
-  let closure_9 = React.useRef(-1);
+  const tmp5 = connectedToGateway(first[7]);
+  const items2 = [setting];
+  stateFromStores = connected(first[6]).useStateFromStores(items2, () => setting.getFriendCount());
+  let closure_9 = setAdded.useRef(-1);
   const items3 = [connected, connectedToGateway, first, tmp2[1], numFriendSuggestions, friendSuggestions, setting, stateFromStores, setAdded];
-  return React.useMemo(() => {
+  return setAdded.useMemo(() => {
     if (-1 === closure_9.current) {
       closure_9.current = 0;
     } else {

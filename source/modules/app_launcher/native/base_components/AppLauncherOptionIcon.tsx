@@ -1,19 +1,20 @@
-// Module ID: 11292
-// Function ID: 87878
+// Module ID: 11302
+// Function ID: 87928
 // Name: styles
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 // Exports: default
 
-// Module 11292 (styles)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.round };
-obj.iconWrapper = obj;
-const styles = obj.createStyles(obj);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherOptionIcon.tsx");
+// Module 11302 (styles)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { justifyContent: "center", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+_createForOfIteratorHelperLoose.iconWrapper = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherOptionIcon.tsx");
 
 export default function AppLauncherOptionIcon(wrapperSize) {
   let num = wrapperSize.wrapperSize;
@@ -21,11 +22,11 @@ export default function AppLauncherOptionIcon(wrapperSize) {
     num = 32;
   }
   let obj = {};
-  const items = [styles().iconWrapper, wrapperSize.wrapperStyle, ];
+  const items = [_createForOfIteratorHelperLoose().iconWrapper, wrapperSize.wrapperStyle, ];
   obj = { height: num, width: num };
   items[2] = obj;
   obj.style = items;
   obj.children = wrapperSize.icon;
-  return <View {...obj} />;
+  return <View height={num} width={num} />;
 };
-export const useAppLauncherOptionIconStyles = styles;
+export const useAppLauncherOptionIconStyles = _createForOfIteratorHelperLoose;

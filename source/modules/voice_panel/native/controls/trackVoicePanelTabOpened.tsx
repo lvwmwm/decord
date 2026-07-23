@@ -1,20 +1,21 @@
-// Module ID: 15732
-// Function ID: 120346
+// Module ID: 15849
+// Function ID: 122519
 // Name: trackVoicePanelTabOpened
-// Dependencies: []
+// Dependencies: [4142, 653, 675, 2]
 // Exports: default
 
-// Module 15732 (trackVoicePanelTabOpened)
-let closure_2 = importDefault(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx");
+// Module 15849 (trackVoicePanelTabOpened)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const result = require("expandLocation").fileFinishedImporting("modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx");
 
 export default function trackVoicePanelTabOpened(arg0, tab, source) {
-  let hasUnreadResult = closure_2.hasUnread(arg0);
+  let hasUnreadResult = _isNativeReflectConstruct.hasUnread(arg0);
   if (!hasUnreadResult) {
-    hasUnreadResult = closure_2.getMentionCount(arg0) > 0;
+    hasUnreadResult = _isNativeReflectConstruct.getMentionCount(arg0) > 0;
   }
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(675);
   obj = { tab, source, is_chat_badged: hasUnreadResult };
   obj.track(AnalyticEvents.VOICE_PANEL_TAB_OPENED, obj);
 };

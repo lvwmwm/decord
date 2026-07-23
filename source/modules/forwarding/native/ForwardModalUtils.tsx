@@ -1,13 +1,15 @@
-// Module ID: 9865
-// Function ID: 76384
+// Module ID: 9872
+// Function ID: 76425
 // Name: FORWARD_MODAL_KEY
-// Dependencies: []
+// Dependencies: [31, 33, 3989, 9873, 8133, 477, 4337, 9874, 1934, 9906, 4472, 2]
 // Exports: closeForwardModal, openForwardModal, showForwardFailedAlertModal
 
-// Module 9865 (FORWARD_MODAL_KEY)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forwarding/native/ForwardModalUtils.tsx");
+// Module 9872 (FORWARD_MODAL_KEY)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("getHighestActiveScreenIndex").fileFinishedImporting("modules/forwarding/native/ForwardModalUtils.tsx");
 
 export const FORWARD_MODAL_KEY = "forward-modal";
 export const openForwardModal = function openForwardModal(arg0) {
@@ -21,33 +23,33 @@ export const openForwardModal = function openForwardModal(arg0) {
     initialSelectedDestinations = [];
   }
   ({ forwardOptions, customSendHandler } = arg0);
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(3989) /* getHighestActiveScreenIndex */;
   obj.dismissKeyboard();
-  arg1(dependencyMap[3]).trackForwardStart(message.channel_id, message.id, source);
-  const obj2 = arg1(dependencyMap[3]);
-  let isWindowLarge = arg1(dependencyMap[4]).getIsWindowLarge();
+  require(9873) /* trackForwardStart */.trackForwardStart(message.channel_id, message.id, source);
+  const obj2 = require(9873) /* trackForwardStart */;
+  let isWindowLarge = require(8133) /* useIsWindowLarge */.getIsWindowLarge();
   if (isWindowLarge) {
-    isWindowLarge = arg1(dependencyMap[5]).isIOS();
-    const obj4 = arg1(dependencyMap[5]);
+    isWindowLarge = require(477) /* set */.isIOS();
+    const obj4 = require(477) /* set */;
   }
-  const obj3 = arg1(dependencyMap[4]);
-  const obj5 = importDefault(dependencyMap[6]);
+  const obj3 = require(8133) /* useIsWindowLarge */;
+  const obj5 = importDefault(4337);
   obj = { message, initialSelectedDestinations, forwardOptions, source, customSendHandler };
   let tmp7;
   if (!isWindowLarge) {
     obj = { presentation: "modal" };
     tmp7 = obj;
   }
-  obj5.pushLazy(arg1(dependencyMap[8])(dependencyMap[7], dependencyMap.paths), obj, "forward-modal", tmp7);
+  obj5.pushLazy(require(1934) /* maybeLoadBundle */(9874, dependencyMap.paths), obj, "forward-modal", tmp7);
 };
 export const closeForwardModal = function closeForwardModal() {
-  importDefault(dependencyMap[6]).popWithKey("forward-modal");
+  importDefault(4337).popWithKey("forward-modal");
 };
 export const showForwardFailedAlertModal = function showForwardFailedAlertModal(arg0) {
   let failedDestinations;
   let forwardOptions;
   let message;
   ({ message, failedDestinations, forwardOptions } = arg0);
-  const lazyResult = React.lazy(() => callback(paths[8])(paths[9], paths.paths));
-  arg1(dependencyMap[10]).openAlert("forward-failed-alert-modal", <lazyResult message={message} failedDestinations={failedDestinations} forwardOptions={forwardOptions} />);
+  const lazyResult = React.lazy(() => outer1_0(outer1_2[8])(outer1_2[9], outer1_2.paths));
+  require(4472) /* useAlertStore */.openAlert("forward-failed-alert-modal", <lazyResult message={message} failedDestinations={failedDestinations} forwardOptions={forwardOptions} />);
 };

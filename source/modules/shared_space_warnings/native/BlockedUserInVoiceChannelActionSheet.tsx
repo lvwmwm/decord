@@ -1,54 +1,62 @@
-// Module ID: 12551
-// Function ID: 96439
+// Module ID: 12665
+// Function ID: 98595
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 3767, 1849, 12659, 12662, 653, 33, 4130, 689, 566, 1212, 5500, 10413, 4126, 5503, 5165, 1273, 10970, 10735, 4543, 4098, 4944, 675, 2]
 // Exports: default
 
-// Module 12551 (BlockedUserInVoiceChannelActionSheet)
-importAll(dependencyMap[0]);
-({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const setDismissalTimeForUser = arg1(dependencyMap[5]).setDismissalTimeForUser;
-const tmp3 = arg1(dependencyMap[1]);
-({ BlockWarningEngagements: closure_9, VoiceChannelWarningSurfaces: closure_10 } = arg1(dependencyMap[6]));
-const AnalyticEvents = arg1(dependencyMap[7]).AnalyticEvents;
-const tmp4 = arg1(dependencyMap[6]);
-({ Fragment: closure_12, jsxs: closure_13, jsx: closure_14 } = arg1(dependencyMap[8]));
-let obj = arg1(dependencyMap[9]);
-obj = {};
-obj = { paddingTop: importDefault(dependencyMap[10]).space.PX_12, gap: importDefault(dependencyMap[10]).space.PX_8 };
-obj.container = obj;
-obj.headerImage = {};
-const tmp5 = arg1(dependencyMap[8]);
-obj.headerText = { gap: importDefault(dependencyMap[10]).space.PX_4, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-obj.centerText = { "Bool(false)": null, "Bool(false)": null };
-const obj1 = { gap: importDefault(dependencyMap[10]).space.PX_4, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-obj.buttonGroup = { paddingVertical: importDefault(dependencyMap[10]).space.PX_16, gap: 8 };
-let closure_15 = obj.createStyles(obj);
-const obj2 = { paddingVertical: importDefault(dependencyMap[10]).space.PX_16, gap: 8 };
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInVoiceChannelActionSheet.tsx");
+// Module 12665 (BlockedUserInVoiceChannelActionSheet)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { setDismissalTimeForUser } from "useSharedSpacesWarningStore";
+import GdmWarningMedium from "GdmWarningMedium";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_3;
+let closure_4;
+let closure_9;
+const require = arg1;
+({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ BlockWarningEngagements: closure_9, VoiceChannelWarningSurfaces: closure_10 } = GdmWarningMedium);
+({ Fragment: closure_12, jsxs: closure_13, jsx: closure_14 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerImage = { alignSelf: "center", width: 73, height: 86 };
+_createForOfIteratorHelperLoose.headerText = { gap: require("_createForOfIteratorHelperLoose").space.PX_4, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.centerText = { textAlign: "center", alignSelf: "center" };
+let obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_4, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.buttonGroup = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, gap: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, gap: 8 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInVoiceChannelActionSheet.tsx");
 
 export default function BlockedUserInVoiceChannelActionSheet(arg0) {
   let blockedUserId;
-  ({ channelId: closure_0, blockedUserId } = arg0);
-  const importDefault = blockedUserId;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[11]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => blocked.isBlocked(blockedUserId));
-  const dependencyMap = stateFromStores;
-  let obj1 = arg1(dependencyMap[11]);
-  const items1 = [closure_5];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => channel.getChannel(closure_0));
-  const user = user.getUser(blockedUserId);
+  let require;
+  ({ channelId: require, blockedUserId } = arg0);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(stateFromStores[11]);
+  let items = [closure_6];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_6.isBlocked(blockedUserId));
+  let obj1 = require(stateFromStores[11]);
+  let items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_5.getChannel(closure_0));
+  user = user.getUser(blockedUserId);
   obj = {};
-  const intl = arg1(dependencyMap[12]).intl;
+  const intl = require(stateFromStores[12]).intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[12]).t;
+  const t = require(stateFromStores[12]).t;
   if (stateFromStores) {
-    const items2 = [string(t.cpgfFk), "\n", ];
+    let items2 = [string(t.cpgfFk), "\n", ];
     const intl3 = tmp7(tmp8[12]).intl;
     items2[2] = intl3.string(tmp7(tmp8[12]).t.UKQ4Cn);
     obj.children = items2;
@@ -62,50 +70,50 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
   }
   obj = { startExpanded: true };
   obj1 = { style: tmp.container };
-  const obj2 = { source: importDefault(dependencyMap[14]), style: tmp.headerImage };
+  let obj2 = { source: blockedUserId(stateFromStores[14]), style: tmp.headerImage };
   const items4 = [callback2(closure_3, obj2), , , ];
   const obj3 = { style: tmp.headerText };
-  const obj4 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, style: tmp.centerText };
-  const intl4 = arg1(dependencyMap[12]).intl;
-  obj4.children = intl4.string(arg1(dependencyMap[12]).t.1/gpFh);
-  const items5 = [callback2(arg1(dependencyMap[15]).Text, obj4), ];
+  const obj4 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.centerText };
+  const intl4 = require(stateFromStores[12]).intl;
+  obj4.children = intl4.string(require(stateFromStores[12]).t["1/gpFh"]);
+  const items5 = [callback2(require(stateFromStores[15]).Text, obj4), ];
   const tmp13 = closure_4;
   const tmp5 = callback;
   const tmp5Result = callback(closure_12, tmp9);
   const tmp6 = closure_12;
-  items5[1] = callback2(arg1(dependencyMap[15]).Text, { variant: "text-md/medium", style: tmp.centerText, children: callback(closure_12, tmp9) });
+  items5[1] = callback2(require(stateFromStores[15]).Text, { variant: "text-md/medium", style: tmp.centerText, children: callback(closure_12, tmp9) });
   obj3.children = items5;
   items4[1] = callback(closure_4, obj3);
   const obj6 = { hasIcons: true };
   const obj7 = {};
   if (null != user) {
-    const obj8 = { size: arg1(dependencyMap[18]).AvatarSizes.SMALL, user };
+    const obj8 = { size: require(stateFromStores[18]).AvatarSizes.SMALL, user };
     let guild_id;
     if (null != stateFromStores1) {
       guild_id = stateFromStores1.guild_id;
     }
     obj8.guildId = guild_id;
-    let tmp18Result = callback2(arg1(dependencyMap[18]).Avatar, obj8);
+    let tmp18Result = callback2(require(stateFromStores[18]).Avatar, obj8);
     const tmp18 = callback2;
   } else {
-    tmp18Result = callback2(arg1(dependencyMap[19]).UserIcon, {});
+    tmp18Result = callback2(require(stateFromStores[19]).UserIcon, {});
   }
   obj7.icon = tmp18Result;
-  const intl5 = arg1(dependencyMap[12]).intl;
+  const intl5 = require(stateFromStores[12]).intl;
   const obj9 = {};
   let username;
   if (null != user) {
     username = user.username;
   }
   obj9.userName = username;
-  obj7.label = intl5.formatToPlainString(arg1(dependencyMap[12]).t.w0YvUo, obj9);
-  const items6 = [callback2(arg1(dependencyMap[17]).TableRow, obj7), ];
-  const obj10 = { icon: callback2(arg1(dependencyMap[20]).MicrophoneIcon, {}) };
-  const intl6 = arg1(dependencyMap[12]).intl;
-  obj10.label = intl6.string(arg1(dependencyMap[12]).t.+4O9nX);
-  items6[1] = callback2(arg1(dependencyMap[17]).TableRow, obj10);
+  obj7.label = intl5.formatToPlainString(require(stateFromStores[12]).t.w0YvUo, obj9);
+  const items6 = [callback2(require(stateFromStores[17]).TableRow, obj7), ];
+  const obj10 = { icon: callback2(require(stateFromStores[20]).MicrophoneIcon, {}) };
+  const intl6 = require(stateFromStores[12]).intl;
+  obj10.label = intl6.string(require(stateFromStores[12]).t["+4O9nX"]);
+  items6[1] = callback2(require(stateFromStores[17]).TableRow, obj10);
   obj6.children = items6;
-  items4[2] = callback(arg1(dependencyMap[16]).TableRowGroup, obj6);
+  items4[2] = callback(require(stateFromStores[16]).TableRowGroup, obj6);
   const obj11 = { style: tmp.buttonGroup };
   const obj12 = {
     size: "lg",
@@ -114,7 +122,7 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
       obj.hideActionSheet();
       blockedUserId(stateFromStores[23]).disconnect();
       const obj2 = blockedUserId(stateFromStores[23]);
-      obj = { action: constants.CLICK_TO_LEAVE, channel_id: closure_0 };
+      obj = { action: outer1_9.CLICK_TO_LEAVE, channel_id: closure_0 };
       if (stateFromStores) {
         const items = [blockedUserId];
         let items1 = items;
@@ -128,21 +136,21 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
         items2 = [blockedUserId];
       }
       obj.ignored_user_ids = items2;
-      obj.warning_surface = constants2.POST_JOIN_SHEET;
-      blockedUserId(stateFromStores[24]).track(constants3.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj);
+      obj.warning_surface = outer1_10.POST_JOIN_SHEET;
+      blockedUserId(stateFromStores[24]).track(outer1_11.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj);
     }
   };
-  const intl7 = arg1(dependencyMap[12]).intl;
-  obj12.text = intl7.string(arg1(dependencyMap[12]).t.Y56/oK);
-  const items7 = [callback2(arg1(dependencyMap[21]).Button, obj12), ];
+  const intl7 = require(stateFromStores[12]).intl;
+  obj12.text = intl7.string(require(stateFromStores[12]).t["Y56/oK"]);
+  const items7 = [callback2(require(stateFromStores[21]).Button, obj12), ];
   const obj13 = {
-    <string:1986169986>: null,
-    <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7",
+    size: "lg",
+    variant: "secondary",
     onPress() {
       let obj = blockedUserId(stateFromStores[22]);
       obj.hideActionSheet();
-      callback(blockedUserId);
-      obj = { action: constants.CLICK_TO_STAY, channel_id: closure_0 };
+      outer1_8(blockedUserId);
+      obj = { action: outer1_9.CLICK_TO_STAY, channel_id: closure_0 };
       if (stateFromStores) {
         const items = [blockedUserId];
         let items1 = items;
@@ -156,16 +164,16 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
         items2 = [blockedUserId];
       }
       obj.ignored_user_ids = items2;
-      obj.warning_surface = constants2.POST_JOIN_SHEET;
-      blockedUserId(stateFromStores[24]).track(constants3.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj);
+      obj.warning_surface = outer1_10.POST_JOIN_SHEET;
+      blockedUserId(stateFromStores[24]).track(outer1_11.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj);
     }
   };
-  const intl8 = arg1(dependencyMap[12]).intl;
-  obj13.text = intl8.string(arg1(dependencyMap[12]).t.bCcJST);
-  items7[1] = callback2(arg1(dependencyMap[21]).Button, obj13);
+  const intl8 = require(stateFromStores[12]).intl;
+  obj13.text = intl8.string(require(stateFromStores[12]).t.bCcJST);
+  items7[1] = callback2(require(stateFromStores[21]).Button, obj13);
   obj11.children = items7;
   items4[3] = callback(closure_4, obj11);
   obj1.children = items4;
   obj.children = callback(tmp13, obj1);
-  return callback2(arg1(dependencyMap[13]).ActionSheet, obj);
+  return callback2(require(stateFromStores[13]).ActionSheet, obj);
 };

@@ -1,29 +1,30 @@
-// Module ID: 14211
-// Function ID: 107507
+// Module ID: 14325
+// Function ID: 109663
 // Name: toggle
-// Dependencies: []
+// Dependencies: [14312, 7662, 477, 14314, 10095, 1212, 2]
 
-// Module 14211 (toggle)
-const _module = require(dependencyMap[0]);
-let closure_2 = _module.useAndroidNotificationVibrationsEnabled;
-const _module1 = require(dependencyMap[4]);
-const toggle = _module1.createToggle({
+// Module 14325 (toggle)
+import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore";
+import createToggle from "createToggle";
+
+let closure_2 = _initializeAndroidNotificationSettingsStore.useAndroidNotificationVibrationsEnabled;
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[5]).intl;
-    return intl.string(require(dependencyMap[5]).t.lFg/O1);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["lFg/O1"]);
   },
-  parent: require(dependencyMap[1]).MobileSetting.NOTIFICATIONS,
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: function useAndroidNotificationVibrationsSettingValue() {
     const tmp = callback();
     return null != tmp && tmp;
   },
-  onValueChange: _module.setAndroidNotificationVibrationsEnabled,
+  onValueChange: _initializeAndroidNotificationSettingsStore.setAndroidNotificationVibrationsEnabled,
   usePredicate: function useHasAndroidNotificationVibrationsSetting() {
     const tmp = callback();
-    let tmp2 = !require(dependencyMap[2]).isIOS();
+    let tmp2 = !require(477) /* set */.isIOS();
     if (tmp2) {
-      tmp2 = !require(dependencyMap[3]).hasAndroidNotificationChannels();
-      const obj2 = require(dependencyMap[3]);
+      tmp2 = !require(14314) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
+      const obj2 = require(14314) /* hasAndroidNotificationChannels */;
     }
     if (tmp2) {
       tmp2 = null != tmp;
@@ -31,7 +32,30 @@ const toggle = _module1.createToggle({
     return tmp2;
   }
 });
-const _module2 = require(dependencyMap[6]);
-const result = _module2.fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationVibrationsSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["lFg/O1"]);
+  },
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  useValue: function useAndroidNotificationVibrationsSettingValue() {
+    const tmp = callback();
+    return null != tmp && tmp;
+  },
+  onValueChange: _initializeAndroidNotificationSettingsStore.setAndroidNotificationVibrationsEnabled,
+  usePredicate: function useHasAndroidNotificationVibrationsSetting() {
+    const tmp = callback();
+    let tmp2 = !require(477) /* set */.isIOS();
+    if (tmp2) {
+      tmp2 = !require(14314) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
+      const obj2 = require(14314) /* hasAndroidNotificationChannels */;
+    }
+    if (tmp2) {
+      tmp2 = null != tmp;
+    }
+    return tmp2;
+  }
+};
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationVibrationsSetting.tsx");
 
 export default toggle;

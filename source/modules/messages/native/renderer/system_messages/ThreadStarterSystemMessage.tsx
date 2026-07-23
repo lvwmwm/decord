@@ -1,25 +1,27 @@
-// Module ID: 7693
-// Function ID: 61378
+// Module ID: 7699
+// Function ID: 61415
 // Name: createThreadStarterSystemMessage
-// Dependencies: []
+// Dependencies: [6830, 653, 44, 1212, 7652, 2]
 // Exports: createThreadStarterSystemMessage
 
-// Module 7693 (createThreadStarterSystemMessage)
-let closure_3 = importDefault(dependencyMap[0]);
-const ReferencedMessageState = arg1(dependencyMap[0]).ReferencedMessageState;
-const MessageTypes = arg1(dependencyMap[1]).MessageTypes;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");
+// Module 7699 (createThreadStarterSystemMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ReferencedMessageState } from "_isNativeReflectConstruct";
+import { MessageTypes } from "ME";
+
+const require = arg1;
+const result = require("invariant").fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");
 
 export const createThreadStarterSystemMessage = function createThreadStarterSystemMessage(message) {
   message = message.message;
   const type = message.type;
-  importDefault(dependencyMap[2])(type === MessageTypes.THREAD_STARTER_MESSAGE, "cannot call createThreadStarterSystemMessage on a message of type " + type);
+  importDefault(44)(type === MessageTypes.THREAD_STARTER_MESSAGE, "cannot call createThreadStarterSystemMessage on a message of type " + type);
   let tmp3 = null;
   if (messageByReference.getMessageByReference(message.messageReference).state !== ReferencedMessageState.LOADED) {
     const obj = {};
-    const intl = arg1(dependencyMap[3]).intl;
-    obj.content = intl.string(arg1(dependencyMap[3]).t.OCs36J);
-    const merged = Object.assign(importDefault(dependencyMap[4])(message));
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.content = intl.string(require(1212) /* getSystemLocale */.t.OCs36J);
+    const merged = Object.assign(importDefault(7652)(message));
     tmp3 = obj;
   }
   return tmp3;

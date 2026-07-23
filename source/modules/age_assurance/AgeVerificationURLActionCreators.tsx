@@ -1,40 +1,46 @@
-// Module ID: 7536
-// Function ID: 60307
+// Module ID: 7542
+// Function ID: 60344
 // Name: requestAgeVerification
-// Dependencies: []
+// Dependencies: [5, 1194, 7537, 653, 7543, 507, 686, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7536 (requestAgeVerification)
+// Module 7542 (requestAgeVerification)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { VerificationVendorName } from "set";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function requestAgeVerification(arg0) {
   return _requestAgeVerification(...arguments);
 }
 async function _requestAgeVerification(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let classificationId;
     let method;
     let vendor;
     ({ method, classificationId, vendor } = arg0);
     yield undefined;
-    let obj = callback(closure_2[4]);
+    let obj = outer2_0(outer2_2[4]);
     if (obj.isCurrentUserSuspended()) {
       obj = { classificationId, method };
-      const tmp7 = yield closure_12(obj);
+      const tmp7 = yield outer2_12(obj);
       return tmp7;
     } else {
-      const tmp3 = yield closure_10(method, vendor);
+      const tmp3 = yield outer2_10(method, vendor);
       return tmp3;
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-async function _requestIncodeMethodSession(method, arg1) {
+async function _requestIncodeMethodSession(arg0, arg1) {
   let api_url;
   let consent_id;
   let interview_id;
   let session_token;
-  let obj = { method, vendor: constants.INCODE };
-  let incode_parameters = yield closure_7(obj).incode_parameters;
+  let obj = { method: arg0, vendor: outer2_5.INCODE };
+  let incode_parameters = yield outer2_7(obj).incode_parameters;
   if (null == incode_parameters) {
     incode_parameters = {};
   }
@@ -58,43 +64,43 @@ async function _requestIncodeMethodSession(method, arg1) {
 function initiateAgeVerification(arg0) {
   return _initiateAgeVerification(...arguments);
 }
-async function _initiateAgeVerification(method, vendor, arg2) {
-  const HTTP = callback(closure_2[5]).HTTP;
-  let obj = { url: constants.VERIFY_AGE, body: obj, rejectWithError: true };
-  obj = { method, vendor };
+async function _initiateAgeVerification(arg0, arg1, arg2) {
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  obj = { url: outer2_6.VERIFY_AGE, body: obj, rejectWithError: true };
+  obj = { method: arg0, vendor: arg1 };
   return yield HTTP.post(obj).body;
 }
 function initiateSuspendedUserAgeVerification() {
   return _initiateSuspendedUserAgeVerification(...arguments);
 }
 async function _initiateSuspendedUserAgeVerification(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let classificationId;
     let method;
     ({ classificationId, method } = arg0);
     yield undefined;
-    const suspendedUserToken = suspendedUserToken.getSuspendedUserToken();
-    const HTTP = callback(closure_2[5]).HTTP;
-    return yield HTTP.post({ url: constants.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION, body: { token: suspendedUserToken, from_classification_id: classificationId, method }, rejectWithError: true }).body;
-  };
-  fn.next();
-  return fn;
+    const suspendedUserToken = outer2_4.getSuspendedUserToken();
+    const HTTP = outer2_0(outer2_2[5]).HTTP;
+    return yield HTTP.post({ url: outer2_6.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION, body: { token: suspendedUserToken, from_classification_id: classificationId, method }, rejectWithError: true }).body;
+  })();
+  iter.next();
+  return iter;
 }
-async function _registerIncodeInterview(interview_id, arg1) {
-  const HTTP = callback(closure_2[5]).HTTP;
-  let obj = { url: constants.REGISTER_INCODE_INTERVIEW, body: obj, rejectWithError: true };
-  obj = { interview_id };
+async function _registerIncodeInterview(arg0, arg1) {
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  obj = { url: outer2_6.REGISTER_INCODE_INTERVIEW, body: obj, rejectWithError: true };
+  obj = { interview_id: arg0 };
   yield HTTP.post(obj);
 }
 async function _requestIncodeSessionBootstrap() {
-  const fn = function*(sendMessageOptionsForReply) {
+  let iter = (function*(sendMessageOptionsForReply) {
     let obj = sendMessageOptionsForReply;
     if (obj === undefined) {
       obj = {};
     }
     yield undefined;
-    const HTTP = callback(closure_2[5]).HTTP;
-    obj = { url: constants.CREATE_INCODE_SESSION };
+    const HTTP = outer2_0(outer2_2[5]).HTTP;
+    obj = { url: outer2_6.CREATE_INCODE_SESSION };
     let tmp2;
     if (null != obj.previousInterviewId) {
       obj = {};
@@ -104,48 +110,44 @@ async function _requestIncodeSessionBootstrap() {
     obj.body = tmp2;
     obj.rejectWithError = true;
     return yield HTTP.post(obj).body;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _getAgeVerificationMethods() {
-  callback2(closure_2[6]).dispatch({ type: "AGE_VERIFICATION_METHODS_LOAD_START" });
-  const obj = callback2(closure_2[6]);
+  outer2_1(outer2_2[6]).dispatch({ type: "AGE_VERIFICATION_METHODS_LOAD_START" });
+  let obj = outer2_1(outer2_2[6]);
   if (obj2.isCurrentUserSuspended()) {
-    let promise = callback4();
+    let promise = outer2_18();
   } else {
-    promise = callback3();
+    promise = outer2_17();
   }
   if (null != promise) {
     const nextPromise = promise.then((body) => {
-      let obj = callback(closure_2[6]);
+      let obj = outer3_1(outer3_2[6]);
       obj = { type: "AGE_VERIFICATION_METHODS_LOAD_SUCCESS", methods: body.body.methods };
       obj.dispatch(obj);
     });
     const catchPromise = promise.then((body) => {
-      let obj = callback(closure_2[6]);
+      let obj = outer3_1(outer3_2[6]);
       obj = { type: "AGE_VERIFICATION_METHODS_LOAD_SUCCESS", methods: body.body.methods };
       obj.dispatch(obj);
     }).catch(() => {
-      callback(closure_2[6]).dispatch({ type: "AGE_VERIFICATION_METHODS_LOAD_FAILURE" });
+      outer3_1(outer3_2[6]).dispatch({ type: "AGE_VERIFICATION_METHODS_LOAD_FAILURE" });
     });
   }
   return yield catchPromise;
 }
 function fetchAgeVerificationMethods() {
-  const HTTP = arg1(dependencyMap[5]).HTTP;
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   return HTTP.get({ url: Endpoints.AGE_VERIFICATION_METHODS, rejectWithError: true });
 }
 function fetchAgeVerificationMethodsSuspendedUser() {
-  const suspendedUserToken = suspendedUserToken.getSuspendedUserToken();
-  const HTTP = arg1(dependencyMap[5]).HTTP;
+  suspendedUserToken = suspendedUserToken.getSuspendedUserToken();
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   return HTTP.post({ url: Endpoints.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS, rejectWithError: true, body: { token: suspendedUserToken } });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const VerificationVendorName = arg1(dependencyMap[2]).VerificationVendorName;
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/age_assurance/AgeVerificationURLActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/age_assurance/AgeVerificationURLActionCreators.tsx");
 
 export { requestAgeVerification };
 export const requestIncodeMethodSession = function requestIncodeMethodSession(method) {

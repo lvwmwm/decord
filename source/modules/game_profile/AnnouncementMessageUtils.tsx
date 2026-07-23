@@ -1,15 +1,15 @@
-// Module ID: 8647
-// Function ID: 68453
+// Module ID: 8654
+// Function ID: 68493
 // Name: toAnnouncementMessages
-// Dependencies: []
+// Dependencies: [3768, 1881, 4358, 4317, 8655, 4351, 7903, 1212, 1443, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 8647 (toAnnouncementMessages)
-const isMessageComponentsV2 = require(dependencyMap[0]).isMessageComponentsV2;
-let closure_4 = /^#{1,3}\s+(.+)$/;
-let closure_5 = /^https?:\/\/\S+$/;
-const _module = require(dependencyMap[9]);
-const result = _module.fileFinishedImporting("modules/game_profile/AnnouncementMessageUtils.tsx");
+// Module 8654 (toAnnouncementMessages)
+import { isMessageComponentsV2 } from "_callSuper";
+
+const re4 = /^#{1,3}\s+(.+)$/;
+const re5 = /^https?:\/\/\S+$/;
+let result = require("toContentScanMetadata").fileFinishedImporting("modules/game_profile/AnnouncementMessageUtils.tsx");
 
 export const toAnnouncementMessages = function toAnnouncementMessages(messages) {
   return messages.map((reactions) => {
@@ -17,12 +17,12 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
     let color;
     let title;
     let url;
-    let obj = callback(closure_2[5]);
-    const tmpResult = callback2(closure_2[4])(obj.createMessageRecord(reactions));
-    const arr = function extractContent(tmpResult) {
-      if (callback(tmpResult)) {
+    let obj = outer1_0(outer1_2[5]);
+    const tmpResult = outer1_1(outer1_2[4])(obj.createMessageRecord(reactions));
+    const arr = (function extractContent(tmpResult) {
+      if (outer2_3(tmpResult)) {
         const components = tmpResult.components;
-        const found = components.filter((type) => type.type === callback(closure_2[1]).ComponentType.TEXT_DISPLAY);
+        const found = components.filter((type) => type.type === outer3_0(outer3_2[1]).ComponentType.TEXT_DISPLAY);
         const mapped = found.map((content) => content.content);
         return mapped.join("\n");
       } else {
@@ -49,14 +49,14 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
         }
         tmp4 = content;
       }
-    }(tmpResult);
-    const tmp = callback2(closure_2[4]);
+    })(tmpResult);
+    const tmp = outer1_1(outer1_2[4]);
     const index = arr.indexOf("\n");
     let str = arr;
     if (-1 !== index) {
       str = arr.slice(0, index);
     }
-    const match = str.match(closure_4);
+    const match = str.match(outer1_4);
     if (null != match) {
       obj = { title: match[1].trim() };
       let str3 = "";
@@ -81,8 +81,8 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
     }
     let tmp8;
     if (arr !== tmpResult.content) {
-      if (!callback3(tmpResult)) {
-        const first = tmpResult.embeds[0];
+      if (!outer1_3(tmpResult)) {
+        let first = tmpResult.embeds[0];
         let tmp10;
         if (null != first) {
           const author = first.author;
@@ -134,18 +134,18 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
           if (null != color) {
             tmp18 = color;
           }
-          const obj1 = { authorName: name, authorIconUrl: iconProxyURL, providerName: text, providerIconUrl: iconProxyURL1, url, color: tmp18 };
+          let obj1 = { authorName: name, authorIconUrl: iconProxyURL, providerName: text, providerIconUrl: iconProxyURL1, url, color: tmp18 };
           tmp10 = obj1;
         }
         tmp8 = tmp10;
       }
     }
-    const obj2 = {
+    let obj2 = {
       id: tmpResult.id,
-      media: function extractMedia(tmpResult) {
-        if (callback(tmpResult)) {
+      media: (function extractMedia(tmpResult) {
+        if (outer2_3(tmpResult)) {
           const components = tmpResult.components;
-          const found = components.find((type) => type.type === found3(found5[1]).ComponentType.MEDIA_GALLERY);
+          const found = components.find((type) => type.type === outer3_0(outer3_2[1]).ComponentType.MEDIA_GALLERY);
           let media;
           if (null != found) {
             const first = found.items[0];
@@ -154,7 +154,7 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
             }
           }
           if (null != media) {
-            let obj = found3(found5[2]);
+            let obj = outer2_0(outer2_2[2]);
             const unfurledMediaItemType = obj.getUnfurledMediaItemType(media);
             if ("INVALID" !== unfurledMediaItemType) {
               obj = {};
@@ -167,14 +167,14 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
           }
         }
         const attachments = tmpResult.attachments;
-        const found1 = attachments.find((content_type) => found3(found5[3]).isImageContentType(content_type.content_type));
+        const found1 = attachments.find((content_type) => outer3_0(outer3_2[3]).isImageContentType(content_type.content_type));
         if (null != found1) {
-          return found3(found5[2]).messageAttachmentToMediaItem(found1, tmpResult);
+          return outer2_0(outer2_2[2]).messageAttachmentToMediaItem(found1, tmpResult);
         } else {
           const attachments1 = tmpResult.attachments;
-          const found2 = attachments1.find((content_type) => found3(found5[3]).isVideoContentType(content_type.content_type));
+          const found2 = attachments1.find((content_type) => outer3_0(outer3_2[3]).isVideoContentType(content_type.content_type));
           if (null != found2) {
-            return found3(found5[2]).messageAttachmentToMediaItem(found2, tmpResult);
+            return outer2_0(outer2_2[2]).messageAttachmentToMediaItem(found2, tmpResult);
           } else {
             let embeds = tmpResult.embeds;
             const found3 = embeds.find((video) => null != video.video && null != video.thumbnail);
@@ -188,7 +188,7 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
               const embeds3 = tmpResult.embeds;
               obj2.embedIndex = embeds3.findIndex((arg0) => arg0 === found3);
               obj1.identifier = obj2;
-              return found3(found5[2]).embedMediaToMediaItem(found3.thumbnail, obj1, "IMAGE");
+              return outer2_0(outer2_2[2]).embedMediaToMediaItem(found3.thumbnail, obj1, "IMAGE");
             } else {
               const embeds1 = tmpResult.embeds;
               const found4 = embeds1.find((image) => null != image.image);
@@ -197,7 +197,7 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
                 image = found4.image;
               }
               if (null != image) {
-                let obj4 = found3(found5[2]);
+                let obj4 = outer2_0(outer2_2[2]);
                 const obj3 = { message: tmpResult };
                 obj4 = { type: "embed" };
                 let embeds2 = tmpResult.embeds;
@@ -213,7 +213,7 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
                 }
                 let result;
                 if (null != thumbnail1) {
-                  obj1 = found3(found5[2]);
+                  obj1 = outer2_0(outer2_2[2]);
                   const obj5 = { message: tmpResult };
                   const obj6 = { type: "embed" };
                   embeds = tmpResult.embeds;
@@ -226,7 +226,7 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
             }
           }
         }
-      }(tmpResult),
+      })(tmpResult),
       title,
       body,
       content: arr,
@@ -239,15 +239,15 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
   });
 };
 export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
-  let result = require(dependencyMap[6]).formatExpirationLabel(poll.expiry);
+  let result = require(7903) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
   if (null == result) {
-    const intl = require(dependencyMap[7]).intl;
-    result = intl.string(require(dependencyMap[7]).t.e+J3JZ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    result = intl.string(require(1212) /* getSystemLocale */.t["e+J3JZ"]);
   }
   return result;
 };
-export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, closure_12) {
-  let str = importDefault(dependencyMap[8]).toURLSafe(proxyUrl);
+export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, c12) {
+  let str = importDefault(1443).toURLSafe(proxyUrl);
   str = null;
   if (null != str) {
     const searchParams = str.searchParams;
@@ -256,9 +256,9 @@ export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, closure_12) {
       const searchParams2 = str.searchParams;
       searchParams2.append("width", arg1.toString());
     }
-    if (null != closure_12) {
+    if (null != c12) {
       const searchParams3 = str.searchParams;
-      searchParams3.append("height", closure_12.toString());
+      searchParams3.append("height", c12.toString());
     }
     str = str.toString();
   }

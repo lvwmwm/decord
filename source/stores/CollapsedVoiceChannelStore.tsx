@@ -1,9 +1,16 @@
-// Module ID: 6754
-// Function ID: 52713
+// Module ID: 6759
+// Function ID: 52745
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1348, 21, 566, 686, 2]
 
-// Module 6754 (_isNativeReflectConstruct)
+// Module 6759 (_isNativeReflectConstruct)
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,34 +21,28 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleConnectionOpen() {
-  const obj = importDefault(dependencyMap[6]);
+  const obj = importDefault(21);
   const keys = obj.keys(obj);
   const item = keys.forEach((channelId) => {
-    if (null == channel.getChannel(channelId)) {
-      delete r0[r1];
+    if (null == outer1_7.getChannel(channelId)) {
+      delete tmp[tmp2];
     }
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
 let obj = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class CollapsedVoiceChannelStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, CollapsedVoiceChannelStore);
-      obj = closure_5(CollapsedVoiceChannelStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, CollapsedVoiceChannelStore);
+      obj = outer1_5(CollapsedVoiceChannelStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -50,41 +51,41 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = CollapsedVoiceChannelStore;
   callback2(CollapsedVoiceChannelStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       let tmp = arg0;
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
       if (null == arg0) {
-        tmp = closure_8;
+        tmp = outer1_8;
       }
+      const outer1_9 = tmp;
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[1] = obj;
   obj = {
     key: "getCollapsed",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "isCollapsed",
     value(arg0) {
-      return closure_9[arg0] || false;
+      return outer1_9[arg0] || false;
     }
   };
   return callback(CollapsedVoiceChannelStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "CollapsedVoiceChannelStore";
 tmp2.persistKey = "collapsedChannels";
 obj = {
@@ -93,15 +94,15 @@ obj = {
   CHANNEL_COLLAPSE: function handleChannelCollapse(channelId) {
     channelId = channelId.channelId;
     if (obj[channelId]) {
-      delete r0[r2];
+      delete tmp[tmp2];
     } else {
-      tmp[channelId] = true;
+      tmp3[channelId] = true;
     }
-    const obj = {};
+    obj = {};
     const merged = Object.assign(obj);
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[8]), obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/CollapsedVoiceChannelStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/CollapsedVoiceChannelStore.tsx");
 
 export default tmp2;

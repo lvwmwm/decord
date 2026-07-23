@@ -1,10 +1,18 @@
-// Module ID: 11871
-// Function ID: 91907
+// Module ID: 11883
+// Function ID: 91960
 // Name: TraitEmoji
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1392, 3775, 5151, 4126, 2]
 // Exports: default
 
-// Module 11871 (TraitEmoji)
+// Module 11883 (TraitEmoji)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function TraitEmoji(emoji) {
   emoji = emoji.emoji;
   if (null == emoji) {
@@ -12,42 +20,37 @@ function TraitEmoji(emoji) {
   } else {
     let emojiURL;
     if (null != emoji.id) {
-      let obj = importDefault(dependencyMap[5]);
+      let obj = importDefault(1392);
       obj = {};
       ({ id: obj2.id, animated: obj2.animated } = emoji);
       obj.size = 16;
       emojiURL = obj.getEmojiURL(obj);
     }
-    const obj3 = importDefault(dependencyMap[6]);
-    obj = { src: emojiURL, name: importDefault(dependencyMap[6]).isCustomEmoji(emoji) ? emoji.name : emoji.surrogates, fastImageStyle: tmp.emojiImage };
-    return callback(importDefault(dependencyMap[7]), obj);
+    const obj3 = importDefault(3775);
+    obj = { src: emojiURL, name: importDefault(3775).isCustomEmoji(emoji) ? emoji.name : emoji.surrogates, fastImageStyle: tmp.emojiImage };
+    return callback(importDefault(5151), obj);
   }
 }
 function GuildProfileTraitView(trait) {
   trait = trait.trait;
-  let obj = { style: callback3().trait };
+  let obj = { style: _createForOfIteratorHelperLoose().trait };
   obj = { emoji: trait.emoji };
   const items = [callback(TraitEmoji, obj), ];
-  obj = { children: trait.label };
-  items[1] = callback(arg1(dependencyMap[8]).Text, obj);
+  obj = { variant: "text-sm/medium", color: "text-default", children: trait.label };
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: {} };
-obj = { "Null": 0, "Null": 3, "Null": 4, "Null": "line_pinky", "Null": 7, "Null": 1, "Null": null, "Null": 0, "Null": null, borderRadius: importDefault(dependencyMap[4]).radii.lg, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-obj.trait = obj;
-obj.emojiImage = { "Null": null, "Null": null };
-let closure_7 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_profile/native/components/GuildProfileTraits.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { display: "flex", flexDirection: "row", flexWrap: "wrap", gap: 8 } };
+_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", gap: 4, alignItems: "center", paddingHorizontal: 8, paddingVertical: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 1, borderStyle: "solid", borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.trait = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.emojiImage = { width: 16, height: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileTraits.tsx");
 
 export default function GuildProfileTraits(profile) {
   profile = profile.profile;
-  const arg1 = profile;
   const items = [profile];
   const memo = React.useMemo(() => {
     const traits = profile.traits;
@@ -57,6 +60,6 @@ export default function GuildProfileTraits(profile) {
     });
     return mapped.filter((label) => label.label.length > 0);
   }, items);
-  const tmp = callback3();
-  return callback(View, { style: callback3().container, children: memo.map((key) => callback(closure_9, { trait: key }, key.key)) });
+  const tmp = _createForOfIteratorHelperLoose();
+  return callback(View, { style: _createForOfIteratorHelperLoose().container, children: memo.map((key) => outer1_5(outer1_9, { trait: key }, key.key)) });
 };

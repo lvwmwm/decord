@@ -1,41 +1,41 @@
-// Module ID: 11369
-// Function ID: 88404
-// Dependencies: [1140850707, 2097152005, 2365587463, 1006632962, 553648135, 503316480, 2969567248, 1879048194, 3690987522, 469762064, 3154116624, 4177526788]
+// Module ID: 11379
+// Function ID: 88454
+// Dependencies: [31, 27, 10013, 33, 4130, 689, 3991, 5517, 11380, 7589, 4126, 2]
 
-// Module 11369
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-let obj1 = arg1(dependencyMap[4]);
-let obj = { titleWrapper: obj };
-obj = { -429783202: 20, -153232592: null, 137452091: "row", 71893785: "center", 137955502: "center", 141232221: null, 63768138: 6, height: arg1(dependencyMap[2]).CONTROLS_DRAWER_HEADER_SIZE };
-obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.round };
-obj.titlePill = obj1;
-const tmp2 = arg1(dependencyMap[3]);
-obj.titlePillBG = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-let closure_6 = obj1.createStyles(obj);
+// Module 11379
+import { StyleSheet } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+obj = { titleWrapper: obj };
+obj = { position: "absolute", top: 0, left: 0, right: 0, justifyContent: "center", alignItems: "center", padding: 16, height: require("VoicePanelControlsModes").CONTROLS_DRAWER_HEADER_SIZE };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 };
+obj.titlePill = _createForOfIteratorHelperLoose;
+obj.titlePillBG = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_7 = { code: "function VoicePanelControlsDrawerTitleTsx1(){const{shown,_shown,disablePill,backgroundColor}=this.__closure;const showBGColor=shown!=null?shown.get():_shown.get();return{backgroundColor:showBGColor&&!disablePill?backgroundColor:'transparent'};}" };
-const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(children) {
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(shown) {
   let blurStyle;
   let style;
-  const shown = children.shown;
-  const arg1 = shown;
-  let flag = children.disablePill;
+  shown = shown.shown;
+  let flag = shown.disablePill;
   if (flag === undefined) {
     flag = false;
   }
-  const importDefault = flag;
-  let dependencyMap;
-  let StyleSheet;
-  ({ style, blurStyle } = children);
+  let sharedValue;
+  let backgroundColor;
+  ({ style, blurStyle } = shown);
   const tmp = callback2();
-  let obj = arg1(dependencyMap[6]);
-  let sharedValue = obj.useSharedValue(true);
-  dependencyMap = sharedValue;
-  const backgroundColor = tmp.titlePillBG.backgroundColor;
-  StyleSheet = backgroundColor;
-  let obj1 = arg1(dependencyMap[6]);
+  let obj = shown(sharedValue[6]);
+  sharedValue = obj.useSharedValue(true);
+  backgroundColor = tmp.titlePillBG.backgroundColor;
+  let obj1 = shown(sharedValue[6]);
   const fn = function p() {
     const obj = {};
     if (null != shown) {
@@ -59,26 +59,27 @@ const memoResult = importAllResult.memo(function VoicePanelControlsDrawerTitle(c
   fn.__initData = closure_7;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   obj = { style: items };
-  const items = [tmp.titleWrapper, style];
+  items = [tmp.titleWrapper, style];
   obj1 = {};
   const tmp4 = closure_5;
-  const tmp5 = importDefault(dependencyMap[7]);
+  const tmp5 = flag(sharedValue[7]);
   const tmp6 = callback;
   if (null != shown) {
     sharedValue = shown;
   }
   obj1.shown = sharedValue;
-  obj1.style = StyleSheet.absoluteFillObject;
+  obj1.style = backgroundColor.absoluteFillObject;
   obj1.blurStyle = blurStyle;
-  const items1 = [tmp6(importDefault(dependencyMap[8]), obj1), ];
+  const items1 = [tmp6(flag(sharedValue[8]), obj1), ];
   const obj2 = { style: items2 };
-  const items2 = [tmp.titlePill, animatedStyle];
-  const tmp7 = importDefault(dependencyMap[8]);
-  obj2.children = callback(arg1(dependencyMap[10]).Text, { children: children.title });
-  items1[1] = callback(importDefault(dependencyMap[9]), obj2);
+  items2 = [tmp.titlePill, animatedStyle];
+  const tmp7 = flag(sharedValue[8]);
+  const obj3 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: shown.title };
+  obj2.children = callback(shown(sharedValue[10]).Text, obj3);
+  items1[1] = callback(flag(sharedValue[9]), obj2);
   obj.children = items1;
   return tmp4(tmp5, obj);
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsDrawerTitle.tsx");
+const result = require("VoicePanelControlsModes").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsDrawerTitle.tsx");
 
 export default memoResult;

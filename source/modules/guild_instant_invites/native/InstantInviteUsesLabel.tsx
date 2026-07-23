@@ -1,13 +1,15 @@
-// Module ID: 10177
-// Function ID: 78630
+// Module ID: 10185
+// Function ID: 78670
 // Name: InstantInviteUsesLabel
-// Dependencies: []
+// Dependencies: [31, 33, 4126, 2]
 // Exports: default
 
-// Module 10177 (InstantInviteUsesLabel)
-importAll(dependencyMap[0]);
-const jsxs = arg1(dependencyMap[1]).jsxs;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteUsesLabel.tsx");
+// Module 10185 (InstantInviteUsesLabel)
+import "result";
+import { jsxs } from "jsxProd";
+
+const require = arg1;
+const result = require("Text").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteUsesLabel.tsx");
 
 export default function InstantInviteUsesLabel(style) {
   let maxUses;
@@ -18,8 +20,8 @@ export default function InstantInviteUsesLabel(style) {
     const _HermesInternal = HermesInternal;
     combined = "" + uses + "/" + maxUses;
   }
-  const obj = { cachedAt: null, edpbxy: "Array", style: style.style };
-  const items = [false, combined];
+  const obj = { variant: "text-md/semibold", color: "text-default", style: style.style };
+  const items = ["Uses: ", combined];
   obj.children = items;
-  return jsxs(arg1(dependencyMap[2]).Text, obj);
+  return jsxs(require(4126) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", style: style.style });
 };

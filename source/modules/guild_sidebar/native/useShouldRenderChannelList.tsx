@@ -1,44 +1,43 @@
-// Module ID: 14971
-// Function ID: 112624
+// Module ID: 15087
+// Function ID: 114792
 // Name: useShouldRenderChannelList
-// Dependencies: []
+// Dependencies: [57, 31, 6708, 4808, 653, 3981, 3982, 1207, 2]
 // Exports: useShouldRenderChannelList
 
-// Module 14971 (useShouldRenderChannelList)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const ComponentActions = arg1(dependencyMap[4]).ComponentActions;
-let closure_7 = false;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_sidebar/native/useShouldRenderChannelList.tsx");
+// Module 15087 (useShouldRenderChannelList)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { ComponentActions } from "ME";
+
+const require = arg1;
+let c7 = false;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_sidebar/native/useShouldRenderChannelList.tsx");
 
 export const useShouldRenderChannelList = function useShouldRenderChannelList() {
-  const tmp = callback(React.useState(closure_7), 2);
+  const tmp = callback(React.useState(c7), 2);
   const first = tmp[0];
-  const arg1 = first;
   let closure_1 = tmp[1];
   const items = [first];
   const effect = React.useEffect(() => {
-    function allowRender(arg0) {
-      let closure_7 = true;
+    function allowRender() {
+      const outer2_7 = true;
       handleGatewayChange(true);
     }
-    const first = allowRender;
     function handleGatewayChange(arg0) {
-      if (closure_5.isConnected()) {
+      if (outer2_5.isConnected()) {
         allowRender();
       }
     }
-    let closure_1 = handleGatewayChange;
     function handleCacheChange() {
-      if ("cache-loaded" === closure_4.getLazyCacheStatus()) {
+      if ("cache-loaded" === outer2_4.getLazyCacheStatus()) {
         allowRender();
       }
     }
     function handleNavigationChange() {
-      const obj = allowRender(handleGatewayChange[5]);
-      const rootNavigationRef = allowRender(handleGatewayChange[6]).getRootNavigationRef();
+      const obj = first(handleGatewayChange[5]);
+      const rootNavigationRef = first(handleGatewayChange[6]).getRootNavigationRef();
       let currentRoute;
       if (null != rootNavigationRef) {
         currentRoute = rootNavigationRef.getCurrentRoute();
@@ -47,21 +46,21 @@ export const useShouldRenderChannelList = function useShouldRenderChannelList() 
         allowRender();
       }
     }
-    if (!first) {
-      const result = closure_5.addReactChangeListener(handleGatewayChange);
-      const result1 = closure_4.addReactChangeListener(handleCacheChange);
-      const ComponentDispatch = first(closure_1[7]).ComponentDispatch;
-      const subscription = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-      const rootNavigationRef = first(closure_1[6]).getRootNavigationRef();
+    if (!allowRender) {
+      let result = outer1_5.addReactChangeListener(handleGatewayChange);
+      let result1 = outer1_4.addReactChangeListener(handleCacheChange);
+      let ComponentDispatch = first(1207).ComponentDispatch;
+      const subscription = ComponentDispatch.subscribe(outer1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+      let rootNavigationRef = first(3982).getRootNavigationRef();
       if (null != rootNavigationRef) {
         rootNavigationRef.addListener("state", handleNavigationChange);
       }
       return () => {
-        const result = closure_5.removeReactChangeListener(handleGatewayChange);
-        const result1 = closure_4.addReactChangeListener(handleCacheChange);
-        const ComponentDispatch = allowRender(handleGatewayChange[7]).ComponentDispatch;
-        ComponentDispatch.unsubscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-        const rootNavigationRef = allowRender(handleGatewayChange[6]).getRootNavigationRef();
+        const result = outer2_5.removeReactChangeListener(handleGatewayChange);
+        const result1 = outer2_4.addReactChangeListener(handleCacheChange);
+        const ComponentDispatch = first(handleGatewayChange[7]).ComponentDispatch;
+        ComponentDispatch.unsubscribe(outer2_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+        const rootNavigationRef = first(handleGatewayChange[6]).getRootNavigationRef();
         if (null != rootNavigationRef) {
           rootNavigationRef.removeListener("state", handleNavigationChange);
         }

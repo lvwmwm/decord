@@ -1,32 +1,48 @@
-// Module ID: 14853
-// Function ID: 111945
+// Module ID: 14969
+// Function ID: 114113
 // Name: getChannelMode
-// Dependencies: []
+// Dependencies: [29, 31, 27, 4217, 3767, 1849, 653, 1355, 4326, 33, 4130, 689, 4973, 11424, 1392, 5085, 14970, 4633, 4593, 566, 1273, 4574, 14971, 4320, 1198, 2]
 
-// Module 14853 (getChannelMode)
+// Module 14969 (getChannelMode)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { StaticChannelRoute } from "set";
+import { UnreadSetting } from "ReadStateTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+import set from "get ActivityIndicator";
+
+let closure_13;
+let closure_14;
+const require = arg1;
 function getChannelMode(selected) {
   let channel;
   let unread;
   ({ unread, channel } = selected);
   if (selected.selected) {
-    const ChannelModes = arg1(dependencyMap[13]).ChannelModes;
+    const ChannelModes = require(11424) /* BaseChannelSubtitle */.ChannelModes;
     if (!isGuildVocalResult) {
       const SELECTED = ChannelModes.SELECTED;
     }
-    const isGuildVocalResult = channel.isGuildVocal();
+    isGuildVocalResult = channel.isGuildVocal();
   } else {
     if (tmp2) {
-      let DEFAULT = arg1(dependencyMap[13]).ChannelModes.LOCKED;
+      let DEFAULT = require(11424) /* BaseChannelSubtitle */.ChannelModes.LOCKED;
     } else if (tmp) {
-      DEFAULT = arg1(dependencyMap[13]).ChannelModes.MUTED;
+      DEFAULT = require(11424) /* BaseChannelSubtitle */.ChannelModes.MUTED;
     } else if (unread) {
       if (selected.resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
-        let UNREAD_LESS_IMPORTANT = arg1(dependencyMap[13]).ChannelModes.UNREAD_IMPORTANT;
+        let UNREAD_LESS_IMPORTANT = require(11424) /* BaseChannelSubtitle */.ChannelModes.UNREAD_IMPORTANT;
       } else {
-        UNREAD_LESS_IMPORTANT = arg1(dependencyMap[13]).ChannelModes.UNREAD_LESS_IMPORTANT;
+        UNREAD_LESS_IMPORTANT = require(11424) /* BaseChannelSubtitle */.ChannelModes.UNREAD_LESS_IMPORTANT;
       }
     } else {
-      DEFAULT = arg1(dependencyMap[13]).ChannelModes.DEFAULT;
+      DEFAULT = require(11424) /* BaseChannelSubtitle */.ChannelModes.DEFAULT;
     }
     return DEFAULT;
   }
@@ -43,7 +59,7 @@ function ChannelIcon(arg0) {
     return callback2(DMChannelIcon, obj);
   } else {
     if (channel.type === ChannelTypes.GROUP_DM) {
-      obj = importDefault(dependencyMap[14]);
+      obj = importDefault(1392);
       obj = {};
       ({ id: obj2.id, icon: obj2.icon } = channel);
       obj.applicationId = channel.getApplicationId();
@@ -51,17 +67,17 @@ function ChannelIcon(arg0) {
       const channelIconSource = obj.getChannelIconSource(obj);
       if (null != channelIconSource) {
         const obj1 = { style: tmp.groupDmAvatar, source: channelIconSource };
-        return callback2(importDefault(dependencyMap[15]), obj1);
+        return callback2(importDefault(5085), obj1);
       }
     }
     if (tmp2) {
-      let tmp11 = importDefault(dependencyMap[16]);
-      let BookCheckIcon = arg1(dependencyMap[17]).BookCheckIcon;
+      let tmp11 = importDefault(14970);
+      let BookCheckIcon = require(4633) /* BookCheckIcon */.BookCheckIcon;
     } else {
-      let obj2 = arg1(dependencyMap[18]);
+      let obj2 = require(4593) /* getThreadChannelIcon */;
       obj2 = { isRulesChannel: false, locked };
       const channelIcon = obj2.getChannelIcon(channel, obj2);
-      let obj4 = arg1(dependencyMap[18]);
+      let obj4 = require(4593) /* getThreadChannelIcon */;
       const obj3 = { isRulesChannel: false, locked };
       BookCheckIcon = obj4.getChannelIconComponent(channel, obj3);
       tmp11 = channelIcon;
@@ -79,7 +95,7 @@ function ChannelIcon(arg0) {
       obj6 = {};
     }
     const merged = Object.assign(obj6);
-    return callback2(arg1(dependencyMap[13]).BaseChannelIcon, obj4);
+    return callback2(require(11424) /* BaseChannelSubtitle */.BaseChannelIcon, obj4);
   }
 }
 function DMChannelIcon(userId) {
@@ -87,71 +103,60 @@ function DMChannelIcon(userId) {
   let isVROnline;
   let status;
   userId = userId.userId;
-  const arg1 = userId;
   let avatarStatusSelected = userId.selected;
   const tmp = callback3();
-  let obj = arg1(dependencyMap[19]);
+  let obj = userId(566);
   const items = [closure_8];
   const items1 = [userId];
-  const stateFromStores = obj.useStateFromStores(items, () => user.getUser(userId), items1);
-  const items2 = [closure_6];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getUser(userId), items1);
+  const items2 = [_isNativeReflectConstruct];
   const items3 = [userId];
-  const stateFromStoresObject = arg1(dependencyMap[19]).useStateFromStoresObject(items2, () => ({ status: closure_6.getStatus(userId), isMobileOnline: closure_6.isMobileOnline(userId), isVROnline: closure_6.isVROnline(userId) }), items3);
+  const stateFromStoresObject = userId(566).useStateFromStoresObject(items2, () => ({ status: outer1_6.getStatus(userId), isMobileOnline: outer1_6.isMobileOnline(userId), isVROnline: outer1_6.isVROnline(userId) }), items3);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  obj = { user: stateFromStores, guildId: undefined, size: arg1(dependencyMap[20]).AvatarSizes.XSMALL_20, style: tmp.dmAvatar, status, isMobileOnline, isVROnline };
+  obj = { user: stateFromStores, guildId: undefined, size: userId(1273).AvatarSizes.XSMALL_20, style: tmp.dmAvatar, status, isMobileOnline, isVROnline };
   const items4 = [tmp.avatarStatus, ];
   if (avatarStatusSelected) {
     avatarStatusSelected = tmp.avatarStatusSelected;
   }
   items4[1] = avatarStatusSelected;
   obj.statusStyle = items4;
-  return closure_13(arg1(dependencyMap[20]).Avatar, obj);
+  return closure_13(userId(1273).Avatar, obj);
 }
-let closure_3 = ["<string:671088922>", "<string:1778385559>", "<string:2399142161>", "<string:620757311>", "<string:1224737504>", "Array", "isArray"];
-let closure_4 = importDefault(dependencyMap[0]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[6]);
-const ChannelTypes = tmp2.ChannelTypes;
-const Routes = tmp2.Routes;
-const StaticChannelRoute = arg1(dependencyMap[7]).StaticChannelRoute;
-const UnreadSetting = arg1(dependencyMap[8]).UnreadSetting;
-const importAllResult = importAll(dependencyMap[1]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
-const items = [, ];
+let closure_3 = ["channel", "subtitle", "hideIcon", "children", "textStyle", "channelInfo", "onPress"];
+const ChannelTypes = ME.ChannelTypes;
+const Routes = ME.Routes;
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+let items = [, ];
 ({ GUILD_VOICE: arr[0], GUILD_STAGE_VOICE: arr[1] } = ChannelTypes);
-const set = new Set(items);
-let obj1 = arg1(dependencyMap[10]);
+let set = new Set(items);
 let obj = {};
-obj = { tintColor: importDefault(dependencyMap[11]).unsafe_rawColors.GREEN_360 };
+obj = { tintColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
 obj.channelIconLive = obj;
 obj.dmAvatar = { marginRight: 8 };
-obj1 = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };
-obj.avatarStatus = obj1;
-obj.groupDmAvatar = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+obj.avatarStatus = _createForOfIteratorHelperLoose;
+obj.groupDmAvatar = { width: 20, height: 20, borderRadius: 10, marginRight: 8 };
 obj.channelInfoContainer = { paddingStart: 4 };
-const tmp3 = arg1(dependencyMap[9]);
-obj.avatarStatusSelected = { backgroundColor: arg1(dependencyMap[12]).DARK_393C42_LIGHT_DEE0E4 };
-let closure_16 = obj1.createStyles(obj);
-const obj2 = { backgroundColor: arg1(dependencyMap[12]).DARK_393C42_LIGHT_DEE0E4 };
-const memoResult = importAllResult.memo((channel) => {
+obj.avatarStatusSelected = { backgroundColor: require("result").DARK_393C42_LIGHT_DEE0E4 };
+let closure_16 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj2 = { backgroundColor: require("result").DARK_393C42_LIGHT_DEE0E4 };
+const result = set.fileFinishedImporting("modules/guild_sidebar/native/ChannelItem.tsx");
+
+export default importAllResult.memo((channel) => {
   let channelInfo;
   let children;
   let hideIcon;
+  let importDefault;
   let isSubscriptionGated;
   let needSubscriptionToAccess;
   let subtitle;
   let textStyle;
   channel = channel.channel;
-  const arg1 = channel;
-  ({ channelInfo, onPress: closure_1 } = channel);
+  ({ channelInfo, onPress: importDefault } = channel);
   ({ subtitle, hideIcon, children, textStyle } = channel);
   const tmp = callback3();
   const tmp2 = callback(channel, closure_3);
-  ({ isSubscriptionGated, needSubscriptionToAccess } = importDefault(dependencyMap[21])(channel.id));
-  const dependencyMap = needSubscriptionToAccess;
+  ({ isSubscriptionGated, needSubscriptionToAccess } = importDefault(needSubscriptionToAccess[21])(channel.id));
   const tmp4 = getChannelMode(channel);
   if (null != channelInfo) {
     let obj = { style: tmp.channelInfoContainer };
@@ -159,7 +164,7 @@ const memoResult = importAllResult.memo((channel) => {
     let tmp8 = null;
     if (isSubscriptionGated) {
       obj = { locked: needSubscriptionToAccess };
-      tmp8 = callback2(importDefault(dependencyMap[22]), obj);
+      tmp8 = callback2(importDefault(needSubscriptionToAccess[22]), obj);
     }
     items[1] = tmp8;
     obj.children = items;
@@ -171,19 +176,19 @@ const memoResult = importAllResult.memo((channel) => {
   }
   obj = { mode: tmp4 };
   const tmp12 = callback2;
-  const tmp3 = importDefault(dependencyMap[21])(channel.id);
-  let tmp14 = tmp4 === arg1(dependencyMap[13]).ChannelModes.UNREAD_IMPORTANT;
+  const tmp3 = importDefault(needSubscriptionToAccess[21])(channel.id);
+  let tmp14 = tmp4 === channel(needSubscriptionToAccess[13]).ChannelModes.UNREAD_IMPORTANT;
   if (!tmp14) {
-    tmp14 = tmp4 === arg1(dependencyMap[13]).ChannelModes.UNREAD_LESS_IMPORTANT;
+    tmp14 = tmp4 === channel(needSubscriptionToAccess[13]).ChannelModes.UNREAD_LESS_IMPORTANT;
   }
   obj.unread = tmp14;
   obj.hideIcon = hideIcon;
   const obj1 = { mode: tmp4 };
-  const tmp13 = importDefault(dependencyMap[13]);
-  obj1.name = arg1(dependencyMap[23]).computeChannelName(channel, closure_8, closure_7);
+  const tmp13 = importDefault(needSubscriptionToAccess[13]);
+  obj1.name = channel(needSubscriptionToAccess[23]).computeChannelName(channel, closure_8, closure_7);
   obj1.subtitle = subtitle;
   obj1.textStyle = textStyle;
-  obj.name = callback2(arg1(dependencyMap[13]).BaseChannelName, obj1);
+  obj.name = callback2(channel(needSubscriptionToAccess[13]).BaseChannelName, obj1);
   const obj2 = {};
   const merged = Object.assign(channel);
   obj2["mode"] = tmp4;
@@ -191,8 +196,8 @@ const memoResult = importAllResult.memo((channel) => {
   obj.channelInfo = tmp6Result;
   obj.onPress = function onPress(arg0) {
     if (needSubscriptionToAccess) {
-      if (set.has(channel.type)) {
-        channel(needSubscriptionToAccess[24]).transitionTo(closure_10.CHANNEL(channel.guild_id, constants.ROLE_SUBSCRIPTIONS));
+      if (outer1_15.has(channel.type)) {
+        channel(needSubscriptionToAccess[24]).transitionTo(outer1_10.CHANNEL(channel.guild_id, outer1_11.ROLE_SUBSCRIPTIONS));
         const obj = channel(needSubscriptionToAccess[24]);
       }
     }
@@ -204,7 +209,4 @@ const memoResult = importAllResult.memo((channel) => {
   obj["children"] = children;
   return tmp12(tmp13, obj);
 });
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_sidebar/native/ChannelItem.tsx");
-
-export default memoResult;
 export { getChannelMode };

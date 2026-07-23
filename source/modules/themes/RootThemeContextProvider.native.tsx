@@ -1,59 +1,57 @@
-// Module ID: 13377
-// Function ID: 101681
+// Module ID: 13491
+// Function ID: 103837
 // Name: RootThemeContextProvider
-// Dependencies: []
+// Dependencies: [31, 4122, 1278, 482, 33, 566, 3977, 1324, 13492, 3842, 10802, 2]
 // Exports: RootThemeContextProvider
 
-// Module 13377 (RootThemeContextProvider)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const ThemeTypes = arg1(dependencyMap[3]).ThemeTypes;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/themes/RootThemeContextProvider.native.tsx");
+// Module 13491 (RootThemeContextProvider)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { ThemeTypes } from "sum";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/themes/RootThemeContextProvider.native.tsx");
 
 export const RootThemeContextProvider = function RootThemeContextProvider(children) {
   let contrast;
   let saturation;
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_4, closure_5];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ saturation: closure_4.saturation, contrast: closure_4.contrast, theme: theme.theme }));
+  let obj = enabled(chatInputLegacySendButton[5]);
+  let items = [_isNativeReflectConstruct, closure_5];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ saturation: outer1_4.saturation, contrast: outer1_4.contrast, theme: outer1_5.theme }));
   ({ saturation, contrast } = stateFromStoresObject);
-  const tmp2 = importDefault(dependencyMap[6])();
-  const mobileVisualRefreshConfig = arg1(dependencyMap[7]).useMobileVisualRefreshConfig({ location: "RootThemeContextProvider" });
-  const enabled = mobileVisualRefreshConfig.enabled;
-  const arg1 = enabled;
-  const chatInputFloating = mobileVisualRefreshConfig.chatInputFloating;
-  const importDefault = chatInputFloating;
-  const chatInputLegacySendButton = mobileVisualRefreshConfig.chatInputLegacySendButton;
-  const dependencyMap = chatInputLegacySendButton;
-  const obj2 = arg1(dependencyMap[7]);
-  const manaTypeConsolidationExperiment = arg1(dependencyMap[8]).useManaTypeConsolidationExperiment("RootThemeContextProvider");
-  let closure_3 = manaTypeConsolidationExperiment;
+  const tmp2 = chatInputFloating(chatInputLegacySendButton[6])();
+  const mobileVisualRefreshConfig = enabled(chatInputLegacySendButton[7]).useMobileVisualRefreshConfig({ location: "RootThemeContextProvider" });
+  enabled = mobileVisualRefreshConfig.enabled;
+  chatInputFloating = mobileVisualRefreshConfig.chatInputFloating;
+  chatInputLegacySendButton = mobileVisualRefreshConfig.chatInputLegacySendButton;
+  const obj2 = enabled(chatInputLegacySendButton[7]);
+  const manaTypeConsolidationExperiment = enabled(chatInputLegacySendButton[8]).useManaTypeConsolidationExperiment("RootThemeContextProvider");
   const items1 = [enabled, chatInputFloating, chatInputLegacySendButton, manaTypeConsolidationExperiment];
   if (null == tmp2) {
     let num4 = 0;
     if (1 !== saturation) {
-      num4 = arg1(dependencyMap[9]).setThemeFlag(0, arg1(dependencyMap[9]).ThemeContextFlags.REDUCE_SATURATION_ENABLED);
-      const obj6 = arg1(dependencyMap[9]);
+      num4 = enabled(chatInputLegacySendButton[9]).setThemeFlag(0, enabled(chatInputLegacySendButton[9]).ThemeContextFlags.REDUCE_SATURATION_ENABLED);
+      const obj6 = enabled(chatInputLegacySendButton[9]);
     }
     if (1 === contrast) {
       obj = { theme: stateFromStoresObject.theme, flags: num4, saturation, contrast, enabledExperiments: tmp5, children: children.children };
-      return jsx(arg1(dependencyMap[10]).RootThemeContextProvider, obj);
+      return jsx(enabled(chatInputLegacySendButton[10]).RootThemeContextProvider, { theme: stateFromStoresObject.theme, flags: num4, saturation, contrast, enabledExperiments: tmp5, children: children.children });
     } else {
       if (contrast > 1) {
-        let REDUCED_CONTRAST_ENABLED = arg1(dependencyMap[9]).ThemeContextFlags.INCREASED_CONTRAST_ENABLED;
+        let REDUCED_CONTRAST_ENABLED = enabled(chatInputLegacySendButton[9]).ThemeContextFlags.INCREASED_CONTRAST_ENABLED;
       } else {
-        REDUCED_CONTRAST_ENABLED = arg1(dependencyMap[9]).ThemeContextFlags.REDUCED_CONTRAST_ENABLED;
+        REDUCED_CONTRAST_ENABLED = enabled(chatInputLegacySendButton[9]).ThemeContextFlags.REDUCED_CONTRAST_ENABLED;
       }
-      arg1(dependencyMap[9]).setThemeFlag(num4, REDUCED_CONTRAST_ENABLED);
-      const obj7 = arg1(dependencyMap[9]);
+      enabled(chatInputLegacySendButton[9]).setThemeFlag(num4, REDUCED_CONTRAST_ENABLED);
+      const obj7 = enabled(chatInputLegacySendButton[9]);
     }
   } else if (tmp2.theme === ThemeTypes.LIGHT) {
-    let setThemeFlagResult1 = arg1(dependencyMap[9]).setThemeFlag(0, arg1(dependencyMap[9]).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
-    const obj5 = arg1(dependencyMap[9]);
+    let setThemeFlagResult1 = enabled(chatInputLegacySendButton[9]).setThemeFlag(0, enabled(chatInputLegacySendButton[9]).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
+    const obj5 = enabled(chatInputLegacySendButton[9]);
   } else {
-    setThemeFlagResult1 = arg1(dependencyMap[9]).setThemeFlag(0, arg1(dependencyMap[9]).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
-    const obj4 = arg1(dependencyMap[9]);
+    setThemeFlagResult1 = enabled(chatInputLegacySendButton[9]).setThemeFlag(0, enabled(chatInputLegacySendButton[9]).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
+    const obj4 = enabled(chatInputLegacySendButton[9]);
   }
 };

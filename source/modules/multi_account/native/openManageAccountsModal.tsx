@@ -1,17 +1,17 @@
-// Module ID: 14989
-// Function ID: 112830
+// Module ID: 15105
+// Function ID: 114998
 // Name: openManageAccountsModal
-// Dependencies: []
+// Dependencies: [11453, 4098, 4337, 15106, 1934, 2]
 // Exports: default
 
-// Module 14989 (openManageAccountsModal)
-const SWITCH_ACCOUNTS_MODAL_KEY = require(dependencyMap[0]).SWITCH_ACCOUNTS_MODAL_KEY;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/multi_account/native/openManageAccountsModal.tsx");
+// Module 15105 (openManageAccountsModal)
+import { SWITCH_ACCOUNTS_MODAL_KEY } from "MAX_ACCOUNTS";
+
+const result = require("module_4337").fileFinishedImporting("modules/multi_account/native/openManageAccountsModal.tsx");
 
 export default function openManageAccountsModal(initialRouteName) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(4098);
   obj.hideActionSheet();
   obj = { initialRouteName };
-  importDefault(dependencyMap[2]).pushLazy(require(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), obj, SWITCH_ACCOUNTS_MODAL_KEY);
+  importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(15106, dependencyMap.paths), obj, SWITCH_ACCOUNTS_MODAL_KEY);
 };

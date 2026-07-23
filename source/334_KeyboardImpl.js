@@ -1,17 +1,18 @@
 // Module ID: 334
 // Function ID: 4958
 // Name: KeyboardImpl
-// Dependencies: []
+// Dependencies: [6, 7, 209, 294, 333]
 
 // Module 334 (KeyboardImpl)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let tmp2 = () => {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+let tmp2 = (() => {
   class KeyboardImpl {
     constructor() {
-      KeyboardImpl = this;
-      tmp = closure_2(this, KeyboardImpl);
-      tmp2 = KeyboardImpl(closure_1[2]);
+      self = this;
+      tmp = outer1_2(this, self);
+      tmp2 = KeyboardImpl(outer1_1[2]);
       tmp2 = new tmp2(null);
       this._emitter = tmp2;
       addListenerResult = this.addListener("keyboardDidShow", (_currentlyShowing) => {
@@ -23,7 +24,6 @@ let tmp2 = () => {
       return;
     }
   }
-  const importDefault = KeyboardImpl;
   let obj = {
     key: "addListener",
     value: function addListener(arg0, arg1, arg2) {
@@ -43,7 +43,7 @@ let tmp2 = () => {
   obj = {
     key: "dismiss",
     value: function dismiss() {
-      KeyboardImpl(closure_1[3])();
+      KeyboardImpl(outer1_1[3])();
     }
   };
   items[2] = obj;
@@ -75,12 +75,12 @@ let tmp2 = () => {
         tmp = 0 !== duration;
       }
       if (tmp) {
-        let obj = KeyboardImpl(closure_1[4]);
+        let obj = KeyboardImpl(outer1_1[4]);
         obj = { duration };
         obj = { duration };
         let str = null != easing;
         if (str) {
-          str = KeyboardImpl(closure_1[4]).Types[easing];
+          str = KeyboardImpl(outer1_1[4]).Types[easing];
         }
         if (!str) {
           str = "keyboard";
@@ -92,7 +92,7 @@ let tmp2 = () => {
     }
   };
   return callback(KeyboardImpl, items);
-}();
+})();
 tmp2 = new tmp2();
 
 export default tmp2;

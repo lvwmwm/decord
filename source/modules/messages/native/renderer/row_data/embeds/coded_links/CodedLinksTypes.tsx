@@ -1,10 +1,9 @@
-// Module ID: 11076
-// Function ID: 86158
+// Module ID: 11086
+// Function ID: 86208
 // Name: AppMessageEmbedDisplayType
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 11076 (AppMessageEmbedDisplayType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksTypes.tsx");
+// Module 11086 (AppMessageEmbedDisplayType)
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksTypes.tsx");
 
 export const AppMessageEmbedDisplayType = { DISPLAY: "display", BLOCKED: "blocked" };

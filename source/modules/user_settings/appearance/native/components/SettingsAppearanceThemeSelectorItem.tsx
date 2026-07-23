@@ -1,17 +1,31 @@
-// Module ID: 14048
-// Function ID: 106808
+// Module ID: 14162
+// Function ID: 108964
 // Name: GradientThemeBackground
-// Dependencies: []
+// Dependencies: [31, 27, 1278, 14161, 482, 33, 4130, 689, 3975, 3840, 4662, 1273, 14163, 624, 3834, 14164, 3944, 3848, 4660, 1212, 2]
 // Exports: default
 
-// Module 14048 (GradientThemeBackground)
+// Module 14162 (GradientThemeBackground)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "THEME_ITEM_WIDTH";
+import { ThemeTypes } from "sum";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult1 from "hslToRgb";
+import importDefaultResult2 from "hslToRgb";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function GradientThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   ({ item, isThemeLocked } = arg0);
-  let obj = arg1(dependencyMap[9]);
+  let obj = require(3840) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(item.theme);
-  const tmp2 = callback3(isThemeDarkResult);
+  const tmp2 = callback2(isThemeDarkResult);
   obj = {};
   const items = [tmp2.themeSelectorGradientBackground, ];
   let tmp5 = isThemeLocked;
@@ -22,15 +36,15 @@ function GradientThemeBackground(arg0) {
   items[1] = tmp5;
   obj.style = items;
   const obj1 = {};
-  const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+  const obj2 = { borderRadius: importDefault(689).radii.sm };
   obj1.componentStyles = obj2;
   obj1.gradientOverride = item;
   obj1.mix = true;
   obj1.mixColorOverride = isThemeDarkResult ? importDefaultResult1 : importDefaultResult2;
-  const items1 = [callback(importDefault(dependencyMap[10]), obj1), ];
+  const items1 = [callback(importDefault(4662), obj1), ];
   if (isThemeLocked) {
-    const obj3 = { source: importDefault(dependencyMap[12]), style: tmp2.lock };
-    isThemeLocked = callback(arg1(dependencyMap[11]).Icon, obj3);
+    const obj3 = { source: importDefault(14163), style: tmp2.lock };
+    isThemeLocked = callback(require(1273) /* Button */.Icon, obj3);
   }
   items1[1] = isThemeLocked;
   obj.children = items1;
@@ -38,28 +52,28 @@ function GradientThemeBackground(arg0) {
 }
 function DefaultThemeBackground(item) {
   item = item.item;
-  arg1(dependencyMap[13]);
-  [][0] = closure_4;
+  require(624) /* defaultAreStatesEqual */;
+  [][0] = _isNativeReflectConstruct;
   if ("system" === item.theme) {
-    let theme = closure_4.themePreferenceForSystemTheme(tmp2);
+    let theme = _isNativeReflectConstruct.themePreferenceForSystemTheme(tmp2);
   } else {
     theme = item.theme;
   }
-  let obj = arg1(dependencyMap[14]);
-  const token = obj.useToken(importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER, theme);
-  let obj1 = arg1(dependencyMap[14]);
-  const token1 = obj1.useToken(importDefault(dependencyMap[7]).colors.BORDER_STRONG, theme);
-  let obj2 = arg1(dependencyMap[14]);
+  let obj = require(3834) /* map */;
+  const token = obj.useToken(importDefault(689).colors.BACKGROUND_BASE_LOWER, theme);
+  let obj1 = require(3834) /* map */;
+  const token1 = obj1.useToken(importDefault(689).colors.BORDER_STRONG, theme);
+  let obj2 = require(3834) /* map */;
   obj = {};
-  obj = { variant: "png", text: true, grow: "/assets/images/native/avatars", onPress: 161, icon: 160, backgroundColor: token, borderColor: token1 };
-  const token2 = obj2.useToken(importDefault(dependencyMap[7]).colors.ICON_STRONG, theme);
-  obj.borderRadius = importDefault(dependencyMap[7]).radii.sm;
+  obj = { width: "100%", height: "100%", backgroundColor: token, borderColor: token1, borderWidth: 1 };
+  const token2 = obj2.useToken(importDefault(689).colors.ICON_STRONG, theme);
+  obj.borderRadius = importDefault(689).radii.sm;
   obj.style = obj;
   let tmp9 = null;
   if ("system" === item.theme) {
-    obj1 = { style: { "Bool(true)": "ADBE Vector Group", "Bool(true)": false, "Bool(true)": 2 } };
+    obj1 = { style: { alignSelf: "center", justifyContent: "center", flex: 1 } };
     obj2 = { fill: token2 };
-    obj1.children = callback(importDefault(dependencyMap[15]), obj2);
+    obj1.children = callback(importDefault(14164), obj2);
     tmp9 = callback(View, obj1);
   }
   obj.children = tmp9;
@@ -69,9 +83,9 @@ function CustomThemeBackground(arg0) {
   let isThemeLocked;
   let item;
   ({ item, isThemeLocked } = arg0);
-  let obj = arg1(dependencyMap[9]);
+  let obj = require(3840) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(item.theme);
-  const tmp2 = callback3(isThemeDarkResult);
+  const tmp2 = callback2(isThemeDarkResult);
   obj = {};
   const items = [tmp2.themeSelectorGradientBackground, ];
   let tmp5 = isThemeLocked;
@@ -82,57 +96,47 @@ function CustomThemeBackground(arg0) {
   items[1] = tmp5;
   obj.style = items;
   const obj1 = {};
-  const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.sm };
+  const obj2 = { borderRadius: importDefault(689).radii.sm };
   obj1.componentStyles = obj2;
   obj1.mix = true;
   obj1.mixColorOverride = isThemeDarkResult ? importDefaultResult1 : importDefaultResult2;
   obj1.customTheme = item;
-  const items1 = [callback(arg1(dependencyMap[10]).CustomThemedGradient, obj1), ];
+  const items1 = [callback(require(4662) /* getThemeMixColor */.CustomThemedGradient, obj1), ];
   if (isThemeLocked) {
-    const obj3 = { source: importDefault(dependencyMap[12]), style: tmp2.lock };
-    isThemeLocked = callback(arg1(dependencyMap[11]).Icon, obj3);
+    const obj3 = { source: importDefault(14163), style: tmp2.lock };
+    isThemeLocked = callback(require(1273) /* Button */.Icon, obj3);
   }
   items1[1] = isThemeLocked;
   obj.children = items1;
   return closure_7(View, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const importDefaultResult = importDefault(dependencyMap[3]);
-const ThemeTypes = arg1(dependencyMap[4]).ThemeTypes;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { color: importDefault(dependencyMap[7]).unsafe_rawColors.TRANSPARENT };
-obj.rippleColor = obj;
-obj.themeSelectorItemContainer = { width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT };
-const tmp4 = arg1(dependencyMap[5]);
-obj.themeSelectorItem = { borderRadius: importDefault(dependencyMap[7]).radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
-const obj2 = { image: "headerChannelContainer", label: "targetFrames", showLabel: "jest", variant: "isMessageComponentsV2", text: "%AsyncGeneratorPrototype%", grow: "scissors", onPress: 4, backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.RED_430, borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.newRedCircle = obj2;
-let closure_8 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
-let closure_9 = arg1(dependencyMap[6]).createStyles((arg0) => {
-  let obj = { themeSelectorGradientBackground: { "Null": "<string:570425661>", "Null": "<string:705839377>", "Null": null } };
-  obj = {};
-  const internal = importDefault(dependencyMap[7]).internal;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.TRANSPARENT };
+_createForOfIteratorHelperLoose.rippleColor = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.themeSelectorItemContainer = { width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT };
+_createForOfIteratorHelperLoose.themeSelectorItem = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_430, width: 12, height: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, position: "absolute", top: 0, right: 0 };
+_createForOfIteratorHelperLoose.newRedCircle = obj2;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
+  let obj = { themeSelectorGradientBackground: { justifyContent: "center", width: "100%", height: "100%" } };
+  obj = { position: "absolute", alignSelf: "center", opacity: 0.6 };
+  const internal = importDefault(689).internal;
   const resolveSemanticColor = internal.resolveSemanticColor;
   if (arg0) {
-    let semanticColor = resolveSemanticColor(tmp3.DARKER, tmp(tmp2[7]).colors.INTERACTIVE_TEXT_DEFAULT);
+    let semanticColor = resolveSemanticColor(tmp3.DARKER, tmp(689).colors.INTERACTIVE_TEXT_DEFAULT);
   } else {
-    semanticColor = resolveSemanticColor(tmp3.LIGHT, tmp(tmp2[7]).colors.INTERACTIVE_TEXT_DEFAULT);
+    semanticColor = resolveSemanticColor(tmp3.LIGHT, tmp(689).colors.INTERACTIVE_TEXT_DEFAULT);
   }
   obj.tintColor = semanticColor;
   obj.lock = obj;
   return obj;
 });
-let importDefaultResult1 = importDefault(dependencyMap[8]);
 importDefaultResult1 = new importDefaultResult1(0, 0, 0, 0.2);
-let importDefaultResult2 = importDefault(dependencyMap[8]);
 importDefaultResult2 = new importDefaultResult2(255, 255, 255, 0.5);
-const obj6 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeSelectorItem.tsx");
+let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: importDefaultResult.THEME_ITEM_PADDING };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceThemeSelectorItem.tsx");
 
 export default function ThemeSelectorItem(onPress) {
   let accessibilityRole;
@@ -142,29 +146,29 @@ export default function ThemeSelectorItem(onPress) {
   let isSelected;
   let themePreset;
   ({ themePreset, isPreview, isSelected, isNew } = onPress);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   if (isPreview) {
-    isPreview = themePreset.type !== arg1(dependencyMap[16]).ClientThemeType.STANDARD_BACKGROUND_THEME;
+    isPreview = themePreset.type !== require(3944) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME;
   }
-  if (themePreset.type === arg1(dependencyMap[16]).ClientThemeType.STANDARD_BACKGROUND_THEME) {
+  if (themePreset.type === require(3944) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME) {
     let obj = { item: themePreset };
     let tmp8 = callback(DefaultThemeBackground, obj);
-  } else if (themePreset.type === arg1(dependencyMap[16]).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
+  } else if (themePreset.type === require(3944) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
     obj = { item: themePreset, isThemeLocked: isPreview };
     tmp8 = callback(CustomThemeBackground, obj);
   } else {
     obj = { isThemeLocked: isPreview, item: themePreset };
     tmp8 = callback(GradientThemeBackground, obj);
   }
-  let obj3 = arg1(dependencyMap[17]);
+  let obj3 = require(3848) /* useCheckboxA11yNative */;
   const obj1 = { selected: isSelected, disabled: isPreview };
   const radioA11yNative = obj3.useRadioA11yNative(obj1);
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj2 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress: onPress.onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState };
   let stringResult;
   if (isPreview) {
-    const intl = arg1(dependencyMap[19]).intl;
-    stringResult = intl.string(arg1(dependencyMap[19]).t.VqGKm0);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1212) /* getSystemLocale */.t.VqGKm0);
   }
   obj2.accessibilityHint = stringResult;
   obj3 = { style: tmp.themeSelectorItem };
@@ -179,5 +183,5 @@ export default function ThemeSelectorItem(onPress) {
   items[1] = isNew;
   obj3.children = items;
   obj2.children = closure_7(View, obj3);
-  return callback(arg1(dependencyMap[18]).PressableOpacity, obj2);
+  return callback(require(4660) /* PressableBase */.PressableOpacity, obj2);
 };

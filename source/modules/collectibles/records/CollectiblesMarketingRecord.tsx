@@ -1,25 +1,26 @@
-// Module ID: 6792
-// Function ID: 53649
+// Module ID: 6797
+// Function ID: 53681
 // Name: CollectiblesMarketingsRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6798, 6800, 6801, 6802, 6799, 2]
 
-// Module 6792 (CollectiblesMarketingsRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).CollectiblesMarketingBadgeRecord;
-let closure_5 = arg1(dependencyMap[3]).CollectiblesMarketingBannerRecord;
-let closure_6 = arg1(dependencyMap[4]).CollectiblesMarketingCoachmarkRecord;
-let closure_7 = importDefault(dependencyMap[5]);
-const tmp2 = () => {
+// Module 6797 (CollectiblesMarketingsRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType";
+import set from "set";
+import { CollectiblesMarketingBadgeRecord as closure_4 } from "CollectiblesMarketingBadgeRecord";
+import { CollectiblesMarketingBannerRecord as closure_5 } from "CollectiblesMarketingBannerRecord";
+import { CollectiblesMarketingCoachmarkRecord as closure_6 } from "CollectiblesMarketingCoachmarkRecord";
+import CollectiblesMarketingTabTooltipRecord from "CollectiblesMarketingTabTooltipRecord";
+
+const require = arg1;
+const tmp2 = (() => {
   class CollectiblesMarketingsRecord {
     constructor(arg0) {
-      tmp = closure_2(this, CollectiblesMarketingsRecord);
+      tmp = outer1_2(this, CollectiblesMarketingsRecord);
       this.marketingsBySurfaces = arg0;
       return;
     }
   }
-  const arg1 = CollectiblesMarketingsRecord;
-  const items = [
+  let items = [
     {
       key: "fromServer",
       value(marketings) {
@@ -40,17 +41,17 @@ const tmp2 = () => {
           if (null != tmp2) {
             type = tmp2.type;
           }
-          if (callback(closure_1[6]).CollectiblesMarketingType.BADGE === type) {
-            const items = [tmp, closure_4.fromServer(tmp2)];
+          if (CollectiblesMarketingsRecord(outer2_1[6]).CollectiblesMarketingType.BADGE === type) {
+            const items = [tmp, outer2_4.fromServer(tmp2)];
             return items;
-          } else if (callback(closure_1[6]).CollectiblesMarketingType.BANNER === type) {
-            const items1 = [tmp, closure_5.fromServer(tmp2)];
+          } else if (CollectiblesMarketingsRecord(outer2_1[6]).CollectiblesMarketingType.BANNER === type) {
+            const items1 = [tmp, outer2_5.fromServer(tmp2)];
             return items1;
-          } else if (callback(closure_1[6]).CollectiblesMarketingType.COACHMARK === type) {
-            const items2 = [tmp, closure_6.fromServer(tmp2)];
+          } else if (CollectiblesMarketingsRecord(outer2_1[6]).CollectiblesMarketingType.COACHMARK === type) {
+            const items2 = [tmp, outer2_6.fromServer(tmp2)];
             return items2;
-          } else if (callback(closure_1[6]).CollectiblesMarketingType.TAB_TOOLTIP === type) {
-            const items3 = [tmp, closure_7.fromServer(tmp2)];
+          } else if (CollectiblesMarketingsRecord(outer2_1[6]).CollectiblesMarketingType.TAB_TOOLTIP === type) {
+            const items3 = [tmp, outer2_7.fromServer(tmp2)];
             return items3;
           } else {
             const items4 = [tmp, undefined];
@@ -62,7 +63,7 @@ const tmp2 = () => {
     }
   ];
   return callback(CollectiblesMarketingsRecord, null, items);
-}();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingRecord.tsx");
+})();
+const result = require("CollectiblesMarketingBadgeRecord").fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingRecord.tsx");
 
 export const CollectiblesMarketingsRecord = tmp2;

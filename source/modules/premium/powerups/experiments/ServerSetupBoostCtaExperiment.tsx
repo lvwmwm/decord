@@ -1,13 +1,13 @@
-// Module ID: 11612
-// Function ID: 90202
+// Module ID: 11622
+// Function ID: 90251
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 11612 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: "FILE_UPLOAD_250_MB", DateToSystemTimezoneSetter: "qwJHjo", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/premium/powerups/experiments/ServerSetupBoostCtaExperiment.tsx");
+// Module 11622 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-06-server-setup-boost-cta", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/ServerSetupBoostCtaExperiment.tsx");
 
 export const ServerSetupBoostCtaExperiment = apexExperiment;

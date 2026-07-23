@@ -1,9 +1,25 @@
-// Module ID: 15877
-// Function ID: 121508
+// Module ID: 15994
+// Function ID: 123681
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 57, 4144, 4578, 1194, 4177, 4191, 8846, 21, 1282, 587, 1331, 8845, 22, 12831, 9040, 5078, 2]
 
-// Module 15877 (_isNativeReflectConstruct)
+// Module 15994 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import apply from "apply";
+import makeContextUserKey from "makeContextUserKey";
+import _slicedToArray from "_slicedToArray";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import { MediaEngineContextTypes } from "DesktopSources";
+import importDefaultResult from "apply";
+import tmp2 from "AutomaticLifecycleManager";
+import importDefaultResult1 from "apply";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +29,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +82,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,14 +109,14 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function updateAudioSettingsProto(arg0, arg1, arg2, arg3) {
-  let obj = arg1(dependencyMap[16]);
+  let obj = require(8845) /* snapVolumeToDefault */;
   const result = obj.coerceAudioContextForProto(arg2);
   if (null == result) {
     return false;
   } else {
-    obj = tmp13[arg1];
+    obj = tmp15[arg1];
     if (null == obj) {
-      const AudioContextSetting = arg1(dependencyMap[13]).AudioContextSetting;
+      const AudioContextSetting = require(1282) /* _callSuper */.AudioContextSetting;
       obj = { muted: false, volume: DEFAULT_VOLUME_FOR_CONTEXT(arg2) };
       obj = AudioContextSetting.create(obj);
     }
@@ -110,52 +126,52 @@ function updateAudioSettingsProto(arg0, arg1, arg2, arg3) {
     const _Date = Date;
     arg0[result][arg1].modifiedAt = String(Date.now());
     if (flag) {
-      if (!tmp10) {
-        delete r1[r0];
+      if (!tmp12) {
+        delete tmp2[tmp];
       }
-      const tmp10 = tmp13[arg1].volume !== DEFAULT_VOLUME_FOR_CONTEXT(arg2) || tmp13[arg1].muted || tmp13[arg1].soundboardMuted;
+      tmp12 = tmp15[arg1].volume !== DEFAULT_VOLUME_FOR_CONTEXT(arg2) || tmp15[arg1].muted || tmp15[arg1].soundboardMuted;
     }
-    function trimOldestEntries(arg0) {
+    (function trimOldestEntries(arg0) {
       let diff;
-      const entries = callback(closure_2[12]).entries(arg0);
+      const entries = outer1_1(outer1_2[12]).entries(arg0);
       if (entries.length > 300) {
         let num3 = 0;
         if (0 < length - 300) {
           do {
-            let tmp2 = closure_8;
-            let first = closure_8(tmp[num3], 1)[0];
-            delete r9[r1];
+            let tmp4 = outer1_8;
+            let first = outer1_8(tmp3[num3], 1)[0];
+            delete tmp2[tmp];
             num3 = num3 + 1;
             diff = length - 300;
           } while (num3 < diff);
         }
       }
-    }(arg0[result]);
+    })(arg0[result]);
     return true;
   }
 }
 function handleConnectionOpen() {
-  function handleMigrateSettings() {
-    const Storage = callback(closure_2[14]).Storage;
-    if (!Storage.get(callback2(id.getId()))) {
-      const PreloadedUserSettingsActionCreators = callback(closure_2[15]).PreloadedUserSettingsActionCreators;
+  (function handleMigrateSettings() {
+    let Storage = outer1_0(outer1_2[14]).Storage;
+    if (!Storage.get(outer1_14(outer1_11.getId()))) {
+      const PreloadedUserSettingsActionCreators = outer1_0(outer1_2[15]).PreloadedUserSettingsActionCreators;
       PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", (arg0) => {
         let tmp40;
         let tmp41;
         let tmp5;
         let tmp6;
-        const entries = Object.entries(state.getState().settingsByContext);
+        const entries = Object.entries(outer2_12.getState().settingsByContext);
         let flag = false;
         let num = 0;
         let flag2 = false;
         if (0 < entries.length) {
           do {
-            let tmp3 = closure_8;
-            let tmp4 = closure_8(entries[num], 2);
+            let tmp3 = outer2_8;
+            let tmp4 = outer2_8(entries[num], 2);
             [tmp5, tmp6] = tmp4;
-            let tmp7 = closure_0;
-            let tmp8 = closure_2;
-            let obj = closure_0(closure_2[16]);
+            let tmp7 = outer2_0;
+            let tmp8 = outer2_2;
+            let obj = outer2_0(outer2_2[16]);
             let result = obj.coerceAudioContextForProto(tmp5);
             let tmp10 = flag;
             let tmp11 = tmp;
@@ -172,17 +188,17 @@ function handleConnectionOpen() {
               let num3 = 0;
               if (0 < entries1.length) {
                 do {
-                  let tmp13 = closure_8;
-                  let tmp14 = closure_8(entries1[num2], 2);
+                  let tmp13 = outer2_8;
+                  let tmp14 = outer2_8(entries1[num2], 2);
                   obj = { muted: tmp14[1] };
-                  let tmp15 = closure_15;
-                  obj.volume = closure_15(tmp5);
+                  let tmp15 = outer2_15;
+                  obj.volume = outer2_15(tmp5);
                   obj.modifiedAt = StringResult;
                   obj.soundboardMuted = false;
                   obj[tmp14[0]] = obj;
                   num2 = num2 + 1;
                   num3 = num2;
-                  let length = entries1.length;
+                  length = entries1.length;
                 } while (num2 < length);
               }
               let _Object = Object;
@@ -191,28 +207,28 @@ function handleConnectionOpen() {
               let num5 = 0;
               if (0 < entries2.length) {
                 do {
-                  let tmp16 = closure_8;
-                  let tmp17 = closure_8(entries2[num4], 2);
+                  let tmp16 = outer2_8;
+                  let tmp17 = outer2_8(entries2[num4], 2);
                   let first = tmp17[0];
                   let obj1 = { muted: false, modifiedAt: StringResult };
                   let tmp19 = obj1;
                   let merged = Object.assign(obj[first]);
-                  let tmp21 = closure_0;
-                  let tmp22 = closure_2;
-                  let obj4 = closure_0(closure_2[16]);
+                  let tmp21 = outer2_0;
+                  let tmp22 = outer2_2;
+                  let obj4 = outer2_0(outer2_2[16]);
                   obj1["volume"] = obj4.snapVolumeToDefault(tmp17[1], tmp5);
                   obj[first] = obj1;
                   num4 = num4 + 1;
                   num5 = num4;
-                  let length2 = entries2.length;
+                  length2 = entries2.length;
                 } while (num4 < length2);
               }
               let _Object2 = Object;
               let length3 = Object.keys(tmp63).length;
-              let tmp23 = closure_19;
+              let tmp23 = outer2_19;
               let _Object3 = Object;
               let entries3 = Object.entries(obj);
-              let tmp24 = closure_19(entries3.entries());
+              let tmp24 = outer2_19(entries3.entries());
               let iter = tmp24();
               let flag3 = flag;
               let iter2 = iter;
@@ -230,10 +246,10 @@ function handleConnectionOpen() {
               tmp11 = tmp;
               tmp12 = tmp2;
               if (!iter.done) {
-                let tmp35 = closure_8;
-                let tmp36 = closure_8(iter2.value, 2);
-                let tmp38 = closure_8;
-                let tmp39 = closure_8(tmp36[1], 2);
+                let tmp35 = outer2_8;
+                let tmp36 = outer2_8(iter2.value, 2);
+                let tmp38 = outer2_8;
+                let tmp39 = outer2_8(tmp36[1], 2);
                 [tmp40, tmp41] = tmp39;
                 let tmp42 = iter2;
                 tmp10 = flag3;
@@ -276,34 +292,35 @@ function handleConnectionOpen() {
             }
             num = num + 1;
             flag = tmp10;
-            let tmp = tmp11;
-            let tmp2 = tmp12;
+            tmp = tmp11;
+            tmp2 = tmp12;
             flag2 = tmp10;
           } while (num < entries.length);
         }
-        const Storage = callback(closure_2[14]).Storage;
-        const result1 = Storage.set(callback2(id.getId()), true);
+        const Storage = outer2_0(outer2_2[14]).Storage;
+        const result1 = Storage.set(outer2_14(outer2_11.getId()), true);
         return flag2;
-      }, callback(closure_2[15]).UserSettingsDelay.AUTOMATED);
+      }, outer1_0(outer1_2[15]).UserSettingsDelay.AUTOMATED);
     }
-  }();
+  })();
 }
 function writeRemoteSettings() {
-  const PreloadedUserSettingsActionCreators = arg1(dependencyMap[15]).PreloadedUserSettingsActionCreators;
+  const PreloadedUserSettingsActionCreators = require(1331) /* _createForOfIteratorHelperLoose */.PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", (arg0) => {
-    let closure_1 = false;
-    const result = arg0(closure_2[18]).drainPendingAudioSettings((arg0, arg1, arg2) => {
-      arg0 = arg2;
-      let tmp = closure_1;
-      if (!closure_1) {
-        tmp = callback(arg0, arg1, arg0, (arg0) => {
-          const merged = Object.assign(arg0, arg2);
+    let closure_0 = arg0;
+    let c1 = false;
+    const result = outer1_0(outer1_2[18]).drainPendingAudioSettings((arg0, arg1, arg2) => {
+      let closure_0 = arg2;
+      let tmp = c1;
+      if (!c1) {
+        tmp = outer2_21(closure_0, arg1, arg0, (arg0) => {
+          const merged = Object.assign(arg0, closure_0);
         });
       }
-      closure_1 = tmp;
+      c1 = tmp;
     });
-    return closure_1;
-  }, arg1(dependencyMap[15]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    return c1;
+  }, require(1331) /* _createForOfIteratorHelperLoose */.UserSettingsDelay.INFREQUENT_USER_ACTION);
 }
 function handleSetLocalVolume(arg0) {
   let context;
@@ -311,15 +328,15 @@ function handleSetLocalVolume(arg0) {
   let volume;
   ({ context, userId, volume } = arg0);
   if (userId !== store.getId()) {
-    const remoteSessionId = remoteSessionId.getRemoteSessionId();
+    remoteSessionId = remoteSessionId.getRemoteSessionId();
     if (null != remoteSessionId) {
       let obj = { muted: closure_12.isLocalMute(userId, context), volume };
       callback3(remoteSessionId, userId, context, obj);
     }
     obj = { volume };
-    const result = arg1(dependencyMap[18]).updatePendingSettings(context, userId, obj);
+    const result = require(12831) /* makeContextUserKey */.updatePendingSettings(context, userId, obj);
     lib();
-    const obj2 = arg1(dependencyMap[18]);
+    const obj2 = require(12831) /* makeContextUserKey */;
   }
 }
 function handleSetLocalMute(arg0) {
@@ -327,7 +344,7 @@ function handleSetLocalMute(arg0) {
   let userId;
   ({ context, userId } = arg0);
   if (userId !== store.getId()) {
-    let obj = arg1(dependencyMap[18]);
+    let obj = require(12831) /* makeContextUserKey */;
     obj = { muted: closure_12.isLocalMute(userId, context) };
     const result = obj.updatePendingSettings(context, userId, obj);
     lib.cancel();
@@ -339,7 +356,7 @@ function handleSetLocalSoundboardMute(userId) {
   userId = userId.userId;
   if (userId !== store.getId()) {
     const result = localSoundboardMuted.isLocalSoundboardMuted(userId);
-    let obj = arg1(dependencyMap[18]);
+    let obj = require(12831) /* makeContextUserKey */;
     obj = { soundboardMuted: result };
     const result1 = obj.updatePendingSettings(userId.context, userId, obj);
     lib.cancel();
@@ -351,69 +368,29 @@ function handleResetMediaEngineSettings(arg0) {
     HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
     throw undefined;
   } else {
-    const PreloadedUserSettingsActionCreators = arg1(dependencyMap[15]).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = require(1331) /* _createForOfIteratorHelperLoose */.PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", (arg0) => {
       arg0.user = {};
       arg0.stream = {};
-    }, arg1(dependencyMap[15]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, require(1331) /* _createForOfIteratorHelperLoose */.UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-const MediaEngineContextTypes = arg1(dependencyMap[10]).MediaEngineContextTypes;
 function SETTINGS_MIGRATION_KEY(arg0) {
   return "AudioContextSettingsMigrated:" + arg0;
 }
 function DEFAULT_VOLUME_FOR_CONTEXT(arg0) {
   if (arg0 === MediaEngineContextTypes.STREAM) {
-    let USER = arg1(dependencyMap[11]).AudioSettingsDefaultVolumes.STREAM;
+    let USER = require(8846) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.STREAM;
   } else {
-    USER = arg1(dependencyMap[11]).AudioSettingsDefaultVolumes.USER;
+    USER = require(8846) /* AudioSettingsDefaultVolumes */.AudioSettingsDefaultVolumes.USER;
   }
   return USER;
 }
-let closure_16 = importDefault(dependencyMap[17]).debounce(() => {
+let closure_16 = require("apply").debounce(() => {
   writeRemoteSettings();
 }, 2000);
-const importDefaultResult = importDefault(dependencyMap[17]);
-let closure_17 = importDefault(dependencyMap[17]).debounce(arg1(dependencyMap[19]).remoteAudioSettingsUpdate, 500, { maxWait: 500 });
-let tmp2 = (arg0) => {
-  class AudioSettingsManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_4(this, AudioSettingsManager);
-      items1 = [...items];
-      obj = closure_6(AudioSettingsManager);
-      tmp2 = closure_5;
-      if (closure_18()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = { POST_CONNECTION_OPEN: closure_22, AUDIO_SET_LOCAL_VOLUME: closure_24, AUDIO_TOGGLE_LOCAL_MUTE: closure_25, AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: closure_26, MEDIA_ENGINE_RESET_SETTINGS: closure_27 };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const arg1 = AudioSettingsManager;
-  callback2(AudioSettingsManager, arg0);
-  return callback(AudioSettingsManager);
-}(importDefault(dependencyMap[20]));
+let closure_17 = require("apply").debounce(require("logRemoteCommand").remoteAudioSettingsUpdate, 500, { maxWait: 500 });
 tmp2 = new tmp2();
-const importDefaultResult1 = importDefault(dependencyMap[17]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/user_settings/voice/AudioSettingsManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/voice/AudioSettingsManager.tsx");
 
 export default tmp2;

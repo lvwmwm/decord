@@ -1,26 +1,28 @@
-// Module ID: 12172
-// Function ID: 93619
+// Module ID: 12286
+// Function ID: 95770
 // Name: createGroupDMInvite
-// Dependencies: []
+// Dependencies: [1348, 3767, 1849, 6979, 7633, 9480, 1212, 11953, 1395, 4320, 2]
 // Exports: createGroupDMInvite
 
-// Module 12172 (createGroupDMInvite)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const InviteTypes = arg1(dependencyMap[3]).InviteTypes;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/GroupDMInvite.tsx");
+// Module 12286 (createGroupDMInvite)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { InviteTypes } from "InviteSendStates";
 
-export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, theme) {
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/GroupDMInvite.tsx");
+
+export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, closure_2) {
   let acceptLabelGreenBackgroundColor;
   let acceptLabelGreenColor;
   let baseColors;
   let channel;
   let colors;
   let recipients_;
-  ({ colors, baseColors } = importDefault(dependencyMap[4])(theme));
-  const tmp = importDefault(dependencyMap[4])(theme);
-  ({ channel, recipients_ } = importDefault(dependencyMap[5])(invite));
+  ({ colors, baseColors } = importDefault(7633)(closure_2));
+  const tmp = importDefault(7633)(closure_2);
+  ({ channel, recipients_ } = importDefault(9480)(invite));
   let id;
   if (null != channel) {
     id = channel.id;
@@ -30,17 +32,17 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   if (null != channel) {
     flag = true;
   }
-  const intl = arg1(dependencyMap[6]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[6]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if (arg1) {
     let str = string(t.qmtuXE);
   } else {
-    str = string(t.3p3/BK);
+    str = string(t["3p3/BK"]);
   }
-  const intl2 = arg1(dependencyMap[6]).intl;
+  const intl2 = require(1212) /* getSystemLocale */.intl;
   const string2 = intl2.string;
-  const t2 = arg1(dependencyMap[6]).t;
+  const t2 = require(1212) /* getSystemLocale */.t;
   if (flag) {
     string2(t2.cEnaWx);
   } else {
@@ -48,26 +50,26 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   }
   let formatToPlainStringResult;
   if (recipients_.length > 0) {
-    const intl3 = arg1(dependencyMap[6]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     let obj = { count: recipients_.length };
-    formatToPlainStringResult = intl3.formatToPlainString(arg1(dependencyMap[6]).t.zRl6XR, obj);
+    formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.zRl6XR, obj);
   }
   let channelIconSource = null;
   if (null != channel) {
-    channelIconSource = arg1(dependencyMap[7]).getChannelIconSource(channel);
-    const obj2 = arg1(dependencyMap[7]);
+    channelIconSource = require(11953) /* getChannelIconURL */.getChannelIconSource(channel);
+    const obj2 = require(11953) /* getChannelIconURL */;
   }
   let uri = null;
   if (null != channelIconSource) {
-    uri = arg1(dependencyMap[8]).ensureAvatarSource(channelIconSource).uri;
-    const obj3 = arg1(dependencyMap[8]);
+    uri = require(1395) /* ensureAvatarSource */.ensureAvatarSource(channelIconSource).uri;
+    const obj3 = require(1395) /* ensureAvatarSource */;
   }
   let channelName = null;
   if (flag) {
     channelName = null;
     if (null != channel) {
-      channelName = arg1(dependencyMap[9]).computeChannelName(channel, closure_5, closure_4);
-      const obj4 = arg1(dependencyMap[9]);
+      channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_5, closure_4);
+      const obj4 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
     }
   }
   if (!channelName) {
@@ -83,17 +85,17 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
     channelName = mapped.join(", ");
   }
   if (!channelName) {
-    const intl4 = arg1(dependencyMap[6]).intl;
-    channelName = intl4.string(arg1(dependencyMap[6]).t.LJpTRF);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    channelName = intl4.string(require(1212) /* getSystemLocale */.t.LJpTRF);
   }
   if (flag) {
     ({ acceptLabelDisabledColor: acceptLabelGreenColor, acceptLabelDisabledBackgroundColor: acceptLabelGreenBackgroundColor } = colors);
-    const intl6 = arg1(dependencyMap[6]).intl;
-    let stringResult = intl6.string(arg1(dependencyMap[6]).t.cEnaWx);
+    const intl6 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl6.string(require(1212) /* getSystemLocale */.t.cEnaWx);
   } else {
     ({ acceptLabelGreenColor, acceptLabelGreenBackgroundColor } = colors);
-    const intl5 = arg1(dependencyMap[6]).intl;
-    stringResult = intl5.string(arg1(dependencyMap[6]).t.XpeFYr);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl5.string(require(1212) /* getSystemLocale */.t.XpeFYr);
   }
   obj = {};
   const merged = Object.assign(baseColors);
@@ -126,8 +128,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   if (flag) {
     channelName1 = channelName;
     if (null != channel) {
-      channelName1 = arg1(dependencyMap[9]).computeChannelName(channel, closure_5, closure_4);
-      const obj7 = arg1(dependencyMap[9]);
+      channelName1 = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_5, closure_4);
+      const obj7 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
     }
   }
   obj["channelName"] = channelName1;

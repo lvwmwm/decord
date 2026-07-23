@@ -1,21 +1,26 @@
-// Module ID: 14591
-// Function ID: 109955
+// Module ID: 14706
+// Function ID: 112119
 // Name: MountMeasure
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4559, 2]
 // Exports: default
 
-// Module 14591 (MountMeasure)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/devtools/native/components/screens/performance/MountMeasure.tsx");
+// Module 14706 (MountMeasure)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/performance/MountMeasure.tsx");
 
 export default function MountMeasure(arg0) {
+  let View;
   let children;
+  let dependencyMap;
+  let require;
   let style;
-  ({ batchKey: closure_0, onMeasure: closure_1, onCancel: closure_2 } = arg0);
+  ({ batchKey: require, onMeasure: dependencyMap, onCancel: View } = arg0);
   ({ style, children } = arg0);
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(4559) /* useMountLayoutEffect */;
   const unmountEffect = obj.useUnmountEffect(() => callback2(closure_0));
   obj = {
     style,
@@ -24,5 +29,7 @@ export default function MountMeasure(arg0) {
     },
     children
   };
-  return <View {...obj} />;
+  return <View style={style} onLayout={function onLayout() {
+    return callback(closure_0);
+  }}>{children}</View>;
 };

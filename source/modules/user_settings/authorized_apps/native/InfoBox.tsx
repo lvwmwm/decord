@@ -1,24 +1,28 @@
-// Module ID: 8208
-// Function ID: 64901
+// Module ID: 8214
+// Function ID: 64938
 // Name: InfoBox
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4086, 7507, 4126, 2]
 // Exports: default
 
-// Module 8208 (InfoBox)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Bool(true)": "isArray", "Bool(true)": "key", "Bool(true)": "Array", "Bool(true)": "construct", "Bool(true)": "type", "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "Array", borderRadius: importDefault(dependencyMap[4]).radii.xs, borderColor: importDefault(dependencyMap[4]).colors.TEXT_LINK, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_INFO };
-obj.infoBox = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.infoBoxWarning = { borderColor: importDefault(dependencyMap[4]).colors.ICON_FEEDBACK_WARNING, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING };
-obj.infoText = { flex: 1 };
-let closure_6 = obj.createStyles(obj);
-const obj2 = { INFO: "info", WARNING: "warning" };
-const obj1 = { borderColor: importDefault(dependencyMap[4]).colors.ICON_FEEDBACK_WARNING, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/authorized_apps/native/InfoBox.tsx");
+// Module 8214 (InfoBox)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, padding: 8, borderStyle: "solid", borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.TEXT_LINK, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_INFO, flexDirection: "row", alignItems: "center", gap: 8 };
+_createForOfIteratorHelperLoose.infoBox = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.infoBoxWarning = { borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_WARNING, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING };
+_createForOfIteratorHelperLoose.infoText = { flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { INFO: "info", WARNING: "warning" };
+let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_WARNING, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING };
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/authorized_apps/native/InfoBox.tsx");
 
 export default function InfoBox(look) {
   let children;
@@ -28,21 +32,21 @@ export default function InfoBox(look) {
   if (INFO === undefined) {
     INFO = obj2.INFO;
   }
-  const tmp2 = callback3();
+  const tmp2 = _createForOfIteratorHelperLoose();
   const items = [tmp2.infoBox];
   const items1 = [, ];
   ({ infoBox: arr2[0], infoBoxWarning: arr2[1] } = tmp2);
   let obj = {};
-  obj = { color: importDefault(dependencyMap[4]).colors.TEXT_LINK };
-  obj[obj2.INFO] = callback(arg1(dependencyMap[5]).CircleInformationIcon, obj);
-  obj = { color: importDefault(dependencyMap[4]).colors.ICON_FEEDBACK_WARNING };
-  obj[obj2.WARNING] = callback(arg1(dependencyMap[6]).CircleErrorIcon, obj);
+  obj = { color: importDefault(689).colors.TEXT_LINK };
+  obj[obj2.INFO] = callback(require(4086) /* CircleInformationIcon */.CircleInformationIcon, obj);
+  obj = { color: importDefault(689).colors.ICON_FEEDBACK_WARNING };
+  obj[obj2.WARNING] = callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, obj);
   const obj1 = {};
   const items2 = [style, ...{ [closure_7.INFO]: items, [closure_7.WARNING]: items1 }[INFO]];
   obj1.style = items2;
   const items3 = [obj[INFO], ];
-  const obj2 = { style: tmp2.infoText, variant: "text-sm/semibold", children };
-  items3[1] = callback(arg1(dependencyMap[7]).Text, obj2);
+  obj2 = { style: tmp2.infoText, variant: "text-sm/semibold", children };
+  items3[1] = callback(require(4126) /* Text */.Text, obj2);
   obj1.children = items3;
   return callback2(View, obj1);
 };

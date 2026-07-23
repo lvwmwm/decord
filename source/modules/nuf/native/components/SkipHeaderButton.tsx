@@ -1,26 +1,28 @@
-// Module ID: 11715
-// Function ID: 90976
+// Module ID: 11725
+// Function ID: 91025
 // Name: SkipHeaderButton
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 1212, 9122, 2]
 // Exports: default
 
-// Module 11715 (SkipHeaderButton)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { color: importDefault(dependencyMap[3]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.button = obj;
-obj.insideNavigatorButton = { paddingRight: 16 };
-let closure_3 = obj.createStyles(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/nuf/native/components/SkipHeaderButton.tsx");
+// Module 11725 (SkipHeaderButton)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.button = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.insideNavigatorButton = { paddingRight: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/nuf/native/components/SkipHeaderButton.tsx");
 
 export default function SkipHeaderButton(label) {
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   label = label.label;
   if (null == label) {
-    const intl = arg1(dependencyMap[4]).intl;
-    label = intl.string(arg1(dependencyMap[4]).t.5Wxrcd);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    label = intl.string(require(1212) /* getSystemLocale */.t["5Wxrcd"]);
   }
   const obj = {};
   const merged = Object.assign(label);
@@ -33,5 +35,5 @@ export default function SkipHeaderButton(label) {
   obj["labelStyle"] = items;
   obj["label"] = label;
   obj["accessibilityLabel"] = label;
-  return jsx(arg1(dependencyMap[5]).HeaderTextButton, obj);
+  return jsx(require(9122) /* GenericHeaderTitle */.HeaderTextButton, {});
 };

@@ -1,71 +1,81 @@
-// Module ID: 15141
-// Function ID: 114236
+// Module ID: 15256
+// Function ID: 116405
 // Name: useIsCompletelyCovered
-// Dependencies: []
+// Dependencies: [57, 31, 27, 9123, 653, 482, 33, 4130, 15257, 3991, 4559, 4066, 1324, 8303, 15258, 4476, 3992, 4489, 15259, 1457, 14791, 3989, 14795, 5217, 3977, 14790, 3984, 686, 3990, 3842, 2]
 
-// Module 15141 (useIsCompletelyCovered)
+// Module 15256 (useIsCompletelyCovered)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "dispatcher";
+import { MIDNIGHT_BORDER_WIDTH } from "MIN_HEADER_HEIGHT";
+import ME from "ME";
+import { ThemeTypes } from "sum";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_12;
+let closure_13;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translateX) {
-  highestFullyRenderedScreenIndex = index;
+  const _require = index;
   const importDefault = highestFullyRenderedScreenIndex;
   const dependencyMap = translateX;
-  const enabled = importDefault(dependencyMap[8]).useConfig({ location: "MainTabsChannelScreenStack" }).enabled;
-  let closure_3 = enabled;
-  const obj = importDefault(dependencyMap[8]);
+  const enabled = importDefault(15257).useConfig({ location: "MainTabsChannelScreenStack" }).enabled;
+  const obj = importDefault(15257);
   const fn = function c() {
-    return arg2.get() > 0;
+    return translateX.get() > 0;
   };
   fn.__closure = { translateX };
   fn.__workletHash = 10608377273080;
   fn.__initData = closure_15;
-  const fn2 = function l(arg0, self) {
-    if (arg0 !== self) {
-      const value = self.get();
+  const fn2 = function l(arg0, arg1) {
+    if (arg0 !== arg1) {
+      const value = highestFullyRenderedScreenIndex.get();
       if (arg0) {
         if (value >= tmp3) {
-          const result = self.set(arg0 - 1);
+          const result = highestFullyRenderedScreenIndex.set(closure_0 - 1);
         }
       } else if (value < tmp3) {
-        const result1 = self.set(arg0);
+        const result1 = highestFullyRenderedScreenIndex.set(closure_0);
       }
     }
   };
   fn2.__closure = { highestFullyRenderedScreenIndex, index };
   fn2.__workletHash = 10137919010401;
   fn2.__initData = closure_16;
-  const animatedReaction = highestFullyRenderedScreenIndex(dependencyMap[9]).useAnimatedReaction(fn, fn2);
-  const obj2 = highestFullyRenderedScreenIndex(dependencyMap[9]);
-  const unmountEffect = highestFullyRenderedScreenIndex(dependencyMap[10]).useUnmountEffect((arg0, self) => {
-    if (self.get() >= arg0) {
-      const result = self.set(arg0 - 1);
+  const animatedReaction = _require(3991).useAnimatedReaction(fn, fn2);
+  const obj2 = _require(3991);
+  const unmountEffect = _require(4559).useUnmountEffect(() => {
+    if (highestFullyRenderedScreenIndex.get() >= closure_0) {
+      const result = highestFullyRenderedScreenIndex.set(closure_0 - 1);
     }
   });
-  const obj3 = highestFullyRenderedScreenIndex(dependencyMap[10]);
+  const obj3 = _require(4559);
   const fn3 = function u() {
     let tmp = enabled;
     if (enabled) {
-      tmp = arg1.get() > arg0;
+      tmp = highestFullyRenderedScreenIndex.get() > closure_0;
     }
     return tmp;
   };
   fn3.__closure = { enabled, highestFullyRenderedScreenIndex, index };
   fn3.__workletHash = 1648562234730;
   fn3.__initData = closure_17;
-  return highestFullyRenderedScreenIndex(dependencyMap[9]).useDerivedValue(fn3);
+  return _require(3991).useDerivedValue(fn3);
 }
 function getKey(index) {
   return String(index.index);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ NativeModules: closure_5, StyleSheet: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
-const MIDNIGHT_BORDER_WIDTH = arg1(dependencyMap[3]).MIDNIGHT_BORDER_WIDTH;
-const tmp2 = arg1(dependencyMap[2]);
-({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9, AnalyticsSections: closure_10 } = arg1(dependencyMap[4]));
-const ThemeTypes = arg1(dependencyMap[5]).ThemeTypes;
-const tmp3 = arg1(dependencyMap[4]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
-const tmp4 = arg1(dependencyMap[6]);
-let closure_14 = arg1(dependencyMap[7]).createStyles({ midnightContainerStyles: { marginTop: -MIDNIGHT_BORDER_WIDTH, marginLeft: -MIDNIGHT_BORDER_WIDTH } });
+({ NativeModules: closure_5, StyleSheet: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9, AnalyticsSections: closure_10 } = ME);
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+let closure_14 = _createForOfIteratorHelperLoose.createStyles({ midnightContainerStyles: { marginTop: -MIDNIGHT_BORDER_WIDTH, marginLeft: -MIDNIGHT_BORDER_WIDTH } });
 let closure_15 = { code: "function MainTabsChannelScreenStackTsx1(){const{translateX}=this.__closure;return translateX.get()>0;}" };
 let closure_16 = { code: "function MainTabsChannelScreenStackTsx2(isVisibleBeneath,wasVisibleBeneath){const{highestFullyRenderedScreenIndex,index}=this.__closure;if(isVisibleBeneath===wasVisibleBeneath)return;if(isVisibleBeneath){if(highestFullyRenderedScreenIndex.get()>=index){highestFullyRenderedScreenIndex.set(index-1);}return;}if(highestFullyRenderedScreenIndex.get()<index){highestFullyRenderedScreenIndex.set(index);}}" };
 let closure_17 = { code: "function MainTabsChannelScreenStackTsx3(){const{enabled,highestFullyRenderedScreenIndex,index}=this.__closure;return enabled&&highestFullyRenderedScreenIndex.get()>index;}" };
@@ -86,20 +96,18 @@ let closure_18 = importAllResult.memo(function FirstChannelScreen(cleanup) {
   let transitionState;
   let translateX;
   ({ frame, index, isDragging, translateX, containerWidth, isActive, maxWidth, transitionState } = cleanup);
-  const arg1 = transitionState;
   cleanup = cleanup.cleanup;
-  const importDefault = cleanup;
   ({ guildId, channelId, showCreateThread, freeze, focusChatPressableComponent, parentFreezeValue, highestFullyRenderedScreenIndex } = cleanup);
-  const tmp = importDefault(dependencyMap[11])();
-  let obj = arg1(dependencyMap[12]);
-  let obj1 = arg1(dependencyMap[13]);
+  const tmp = cleanup(4066)();
+  let obj = transitionState(1324);
+  let obj1 = transitionState(8303);
   const orientation = obj1.useOrientation();
-  const tmp2 = callback3();
-  let obj2 = arg1(dependencyMap[14]);
+  const tmp2 = callback2();
+  let obj2 = transitionState(15258);
   const items = [cleanup, transitionState];
   const mainTabsChannelScreenStyles = obj2.useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translateX), parentFreezeValue);
   const effect = importAllResult.useEffect(() => {
-    if (transitionState === transitionState(closure_2[15]).TransitionStates.YEETED) {
+    if (transitionState === transitionState(outer1_2[15]).TransitionStates.YEETED) {
       cleanup();
     }
   }, items);
@@ -130,11 +138,11 @@ let closure_18 = importAllResult.memo(function FirstChannelScreen(cleanup) {
   obj2.pointerEvents = str;
   obj2.accessibilityElementsHidden = !isActive || undefined;
   obj2.importantForAccessibility = "no-hide-descendants";
-  obj2.children = callback2(importDefault(dependencyMap[18]), { guildId, channelId, showCreateThread, isNavigationScreen: null == containerWidth, frame, screenIndex: index });
-  obj1.children = callback2(closure_7, obj2);
-  const items2 = [callback2(arg1(dependencyMap[17]).Freeze, obj1), focusChatPressableComponent];
+  obj2.children = callback(cleanup(15259), { guildId, channelId, showCreateThread, isNavigationScreen: null == containerWidth, frame, screenIndex: index });
+  obj1.children = callback(closure_7, obj2);
+  const items2 = [callback(transitionState(4489).Freeze, obj1), focusChatPressableComponent];
   obj.children = items2;
-  return tmp7(importDefault(dependencyMap[16]), obj);
+  return tmp7(cleanup(3992), obj);
 });
 let closure_19 = { code: "function MainTabsChannelScreenStackTsx4(){const{translateX}=this.__closure;return translateX.get()===0;}" };
 let closure_20 = { code: "function MainTabsChannelScreenStackTsx5(isFullyOpen,prev){const{index,mainTabsDisallowGesture}=this.__closure;if(isFullyOpen===prev)return;if(index!==1)return;mainTabsDisallowGesture.set(isFullyOpen);}" };
@@ -153,22 +161,18 @@ let closure_21 = importAllResult.memo(function ChannelScreen(transitionState) {
   let showCreateThread;
   let translateX;
   transitionState = transitionState.transitionState;
-  const arg1 = transitionState;
   const cleanup = transitionState.cleanup;
-  const importDefault = cleanup;
   ({ isActive, index } = transitionState);
-  const dependencyMap = index;
   ({ guildId, channelId, showCreateThread, freeze, parentFreezeValue, highestFullyRenderedScreenIndex } = transitionState);
-  const tmp = importDefault(dependencyMap[11])();
-  let obj = arg1(dependencyMap[12]);
-  let obj1 = arg1(dependencyMap[13]);
+  let tmp = cleanup(index[11])();
+  let obj = transitionState(index[12]);
+  let obj1 = transitionState(index[13]);
   const orientation = obj1.useOrientation();
-  let obj2 = arg1(dependencyMap[19]);
+  let obj2 = transitionState(index[19]);
   const navigation = obj2.useNavigation();
-  let closure_3 = navigation;
-  const React = React.useRef(false);
+  importAllResult = importAllResult.useRef(false);
   const items = [cleanup, navigation];
-  const callback = React.useCallback((arg0) => {
+  const callback = importAllResult.useCallback((arg0) => {
     if (!arg0) {
       if (ref.current) {
         cleanup();
@@ -179,17 +183,17 @@ let closure_21 = importAllResult.memo(function ChannelScreen(transitionState) {
     }
   }, items);
   obj = {};
-  const tmp2 = callback3();
-  obj.canDrag = transitionState !== arg1(dependencyMap[15]).TransitionStates.YEETED;
+  const tmp2 = callback2();
+  obj.canDrag = transitionState !== transitionState(index[15]).TransitionStates.YEETED;
   obj.onVisibilityChange = callback;
-  obj.onDragStart = arg1(dependencyMap[21]).dismissKeyboard;
+  obj.onDragStart = transitionState(index[21]).dismissKeyboard;
   obj.startShown = false;
-  const tmp6Result = importDefault(dependencyMap[20])(obj);
+  const tmp6Result = cleanup(index[20])(obj);
   ({ isDragging, translateX } = tmp6Result);
   ({ gesture, panelGestureContext, movePanel } = tmp6Result);
-  const tmp6 = importDefault(dependencyMap[20]);
-  const disallowGesture = React.useContext(importDefault(dependencyMap[22])).disallowGesture;
-  let obj4 = arg1(dependencyMap[9]);
+  const tmp6 = cleanup(index[20]);
+  const disallowGesture = importAllResult.useContext(cleanup(index[22])).disallowGesture;
+  let obj4 = transitionState(index[9]);
   const fn = function v() {
     return 0 === translateX.get();
   };
@@ -210,12 +214,12 @@ let closure_21 = importAllResult.memo(function ChannelScreen(transitionState) {
   fn2.__initData = closure_20;
   const animatedReaction = obj4.useAnimatedReaction(fn, fn2);
   obj = { cleanup, movePanel };
-  let closure_8 = React.useRef(obj);
-  const effect = React.useEffect(() => {
+  let closure_8 = importAllResult.useRef(obj);
+  const effect = importAllResult.useEffect(() => {
     closure_8.current = obj;
   });
   const items1 = [transitionState];
-  const effect1 = React.useEffect(() => {
+  const effect1 = importAllResult.useEffect(() => {
     const current = ref2.current;
     const movePanel = current.movePanel;
     if (transitionState !== transitionState(index[15]).TransitionStates.MOUNTED) {
@@ -231,13 +235,13 @@ let closure_21 = importAllResult.memo(function ChannelScreen(transitionState) {
     movePanel(true, false, 0, false);
   }, items1);
   const tmp8 = useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translateX);
-  const mainTabsChannelScreenStyles = arg1(dependencyMap[14]).useMainTabsChannelScreenStyles(isDragging, translateX, tmp6Result.maxWidth, tmp8, parentFreezeValue);
+  const mainTabsChannelScreenStyles = transitionState(index[14]).useMainTabsChannelScreenStyles(isDragging, translateX, tmp6Result.maxWidth, tmp8, parentFreezeValue);
   obj1 = { gesture };
   obj2 = { value: panelGestureContext };
   const obj3 = {};
   const items2 = [mainTabsChannelScreenStyles, ];
   let prop;
-  const obj7 = arg1(dependencyMap[14]);
+  const obj7 = transitionState(index[14]);
   if (tmp === ThemeTypes.MIDNIGHT) {
     if (!obj.useMobileVisualRefreshConfig({ location: "MainTabsChannelScreenStack" }).chatInputFloating) {
       prop = tmp2.midnightContainerStyles;
@@ -247,38 +251,32 @@ let closure_21 = importAllResult.memo(function ChannelScreen(transitionState) {
   obj3.style = items2;
   obj3.accessibilityElementsHidden = !isActive || undefined;
   obj3.importantForAccessibility = "no-hide-descendants";
-  obj4 = { freeze, children: callback2(importDefault(dependencyMap[18]), { guildId, channelId, showCreateThread, isNavigationScreen: true, frame: null, screenIndex: index }) };
-  obj3.children = callback2(arg1(dependencyMap[17]).Freeze, obj4);
-  obj2.children = callback2(importDefault(dependencyMap[16]), obj3);
-  obj1.children = callback2(arg1(dependencyMap[22]).MainTabsChannelScreenStackContext.Provider, obj2);
-  return callback2(arg1(dependencyMap[23]).GestureDetector, obj1);
+  obj4 = { freeze, children: callback(cleanup(index[18]), { guildId, channelId, showCreateThread, isNavigationScreen: true, frame: null, screenIndex: index }) };
+  obj3.children = callback(transitionState(index[17]).Freeze, obj4);
+  obj2.children = callback(cleanup(index[16]), obj3);
+  obj1.children = callback(transitionState(index[22]).MainTabsChannelScreenStackContext.Provider, obj2);
+  return callback(transitionState(index[23]).GestureDetector, obj1);
 });
 let closure_22 = { code: "function MainTabsChannelScreenStackTsx6(){const{translateX,maxWidth}=this.__closure;return translateX.get()===maxWidth;}" };
 let closure_23 = { code: "function MainTabsChannelScreenStackTsx7(value,prev){const{runOnJS,setIsHidden}=this.__closure;if(value===prev)return;runOnJS(setIsHidden)(value);}" };
-const obj = { marginTop: -MIDNIGHT_BORDER_WIDTH, marginLeft: -MIDNIGHT_BORDER_WIDTH };
-const obj2 = arg1(dependencyMap[7]);
 const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(screens) {
   let focusChatPressableComponent;
   let shouldFreeze;
   screens = screens.screens;
-  const arg1 = screens;
   const screenStackActive = screens.screenStackActive;
-  const importDefault = screenStackActive;
   const translateX = screens.translateX;
-  const dependencyMap = translateX;
   const isDragging = screens.isDragging;
-  let callback = isDragging;
   const maxWidth = screens.maxWidth;
   const highestFullyRenderedScreenIndex = screens.highestFullyRenderedScreenIndex;
   ({ shouldFreeze, focusChatPressableComponent } = screens);
   const firstScreenWidth = screens.firstScreenWidth;
   const firstScreenFrame = screens.firstScreenFrame;
-  let ThemeTypes;
-  let callback2;
+  let sharedValue;
+  let callback;
   let closure_13;
-  const tmp2 = callback(maxWidth.useState(translateX.get() === maxWidth), 2);
-  const tmp3 = tmp2[1];
-  let obj = arg1(dependencyMap[9]);
+  let tmp2 = isDragging(maxWidth.useState(translateX.get() === maxWidth), 2);
+  let closure_9 = tmp3;
+  let obj = screens(translateX[9]);
   const fn = function k() {
     return translateX.get() === maxWidth;
   };
@@ -298,7 +296,7 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
       return;
     }
   }
-  obj = { runOnJS: arg1(dependencyMap[9]).runOnJS, setIsHidden: tmp3 };
+  obj = { runOnJS: screens(translateX[9]).runOnJS, setIsHidden: tmp3 };
   A.__closure = obj;
   A.__workletHash = 10167608718442;
   A.__initData = closure_23;
@@ -318,7 +316,7 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
       return channelId;
     }, items)
   ];
-  const effect = importAllResult.useEffect(() => {
+  const effect = maxWidth.useEffect(() => {
     const MediaPlayerManager = highestFullyRenderedScreenIndex.MediaPlayerManager;
     if (!tmp) {
       MediaPlayerManager.pauseAllMediaPlayers();
@@ -331,23 +329,22 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
   if (shouldFreeze) {
     let tmp8 = null == first;
     if (!tmp8) {
-      tmp8 = first.type !== arg1(dependencyMap[25]).ChannelScreenType.DEFAULT;
+      tmp8 = first.type !== screens(translateX[25]).ChannelScreenType.DEFAULT;
     }
     shouldFreeze = tmp8;
   }
-  let obj2 = arg1(dependencyMap[9]);
-  const sharedValue = obj2.useSharedValue(0);
-  ThemeTypes = sharedValue;
+  let obj2 = screens(translateX[9]);
+  sharedValue = obj2.useSharedValue(0);
   const items2 = [shouldFreeze, sharedValue];
-  const effect1 = importAllResult.useEffect(() => {
+  const effect1 = maxWidth.useEffect(() => {
     const timeout = setTimeout(() => {
-      const result = store.set(store.get() + 1);
+      const result = outer1_11.set(outer1_11.get() + 1);
     }, 10);
     return () => clearTimeout(closure_0);
   }, items2);
   const items3 = [screens.length, focusChatPressableComponent, isDragging, translateX, firstScreenWidth, firstScreenFrame, maxWidth, sharedValue, screenStackActive, highestFullyRenderedScreenIndex];
   let channelId;
-  callback = importAllResult.useCallback((arg0, arg1, transitionState, cleanup) => {
+  callback = maxWidth.useCallback((arg0, arg1, transitionState, cleanup) => {
     let showCreateThread;
     let showCreateThread2;
     const NumberResult = Number(arg0);
@@ -376,9 +373,9 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
       obj.parentFreezeValue = sharedValue;
       obj.maxWidth = maxWidth;
       obj.highestFullyRenderedScreenIndex = highestFullyRenderedScreenIndex;
-      let tmp22Result = closure_12(closure_18, obj, arg0);
+      let tmp22Result = closure_12(outer1_18, obj, arg0);
       const tmp7 = closure_12;
-      const tmp8 = closure_18;
+      const tmp8 = outer1_18;
     } else {
       obj = {};
       ({ guildId: obj2.guildId, channelId: obj2.channelId, showCreateThread: showCreateThread2 } = arg1);
@@ -394,9 +391,9 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
       obj.isActive = NumberResult === screens.length - 1;
       obj.freeze = NumberResult < screens.length - 2;
       obj.highestFullyRenderedScreenIndex = highestFullyRenderedScreenIndex;
-      tmp22Result = closure_12(closure_21, obj, arg0);
+      tmp22Result = closure_12(outer1_21, obj, arg0);
       const tmp22 = closure_12;
-      const tmp23 = closure_21;
+      const tmp23 = outer1_21;
     }
     return tmp22Result;
   }, items3);
@@ -407,8 +404,8 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
   if (null != channelId) {
     tmp16 = channelId;
   }
-  callback2 = importAllResult.useRef(tmp16);
-  closure_13 = importAllResult.useRef(null);
+  callback = maxWidth.useRef(tmp16);
+  closure_13 = maxWidth.useRef(null);
   let type;
   if (null != first) {
     type = first.type;
@@ -419,7 +416,7 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
     channelId1 = first.channelId;
   }
   items4[1] = channelId1;
-  const effect2 = importAllResult.useEffect(() => {
+  const effect2 = maxWidth.useEffect(() => {
     let type;
     if (null != first) {
       type = first.type;
@@ -449,17 +446,17 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
       }
     }
   }, items4);
-  let obj3 = arg1(dependencyMap[28]);
+  let obj3 = screens(translateX[28]);
   obj3.freezeScreenIndex(shouldFreeze, 0);
   if (!shouldFreeze) {
     obj = { freeze: shouldFreeze };
-    const obj1 = { -71780508: null, 102585046: 0, -1201578193: 419, style: focusChatPressableComponent.absoluteFill, accessibilityElementsHidden: !screenStackActive, importantForAccessibility: "no-hide-descendants" };
+    const obj1 = { collapsable: false, style: focusChatPressableComponent.absoluteFill, pointerEvents: "box-none", accessibilityElementsHidden: !screenStackActive, importantForAccessibility: "no-hide-descendants" };
     obj2 = { gradient: tmp };
     obj3 = { items: screens, renderItem: callback, getItemKey: getKey };
-    obj2.children = callback2(arg1(dependencyMap[15]).TransitionGroup, obj3);
-    obj1.children = callback2(arg1(dependencyMap[29]).ThemeContextProvider, obj2);
-    obj.children = callback2(firstScreenWidth, obj1);
-    let tmp24Result = tmp24(arg1(dependencyMap[17]).Freeze, obj);
+    obj2.children = callback(screens(translateX[15]).TransitionGroup, obj3);
+    obj1.children = callback(screens(translateX[29]).ThemeContextProvider, obj2);
+    obj.children = callback(firstScreenWidth, obj1);
+    let tmp24Result = tmp24(screens(translateX[17]).Freeze, obj);
     const tmp27 = firstScreenWidth;
   } else {
     let showCreateThread;
@@ -470,6 +467,7 @@ const memoResult = importAllResult.memo(function MainTabsChannelScreenStack(scre
   }
   return tmp24Result;
 });
-const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/main_tabs_v2/native/panels/MainTabsChannelScreenStack.tsx");
+let obj = { marginTop: -MIDNIGHT_BORDER_WIDTH, marginLeft: -MIDNIGHT_BORDER_WIDTH };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/panels/MainTabsChannelScreenStack.tsx");
 
 export default memoResult;

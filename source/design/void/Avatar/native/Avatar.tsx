@@ -1,26 +1,38 @@
-// Module ID: 12912
-// Function ID: 98496
+// Module ID: 13026
+// Function ID: 100652
 // Name: getStatusSize
-// Dependencies: []
+// Dependencies: [31, 27, 653, 1274, 33, 4130, 689, 11951, 13015, 13016, 7873, 7838, 13027, 7872, 13017, 4545, 10592, 10593, 2]
 
-// Module 12912 (getStatusSize)
+// Module 13026 (getStatusSize)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { StatusTypes } from "ME";
+import STATUS_PADDING from "STATUS_PADDING";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getStatusSize(arg0) {
-  if (arg1(dependencyMap[7]).AvatarSizes.XXSMALL !== arg0) {
-    if (arg1(dependencyMap[7]).AvatarSizes.XSMALL !== arg0) {
-      if (arg1(dependencyMap[7]).AvatarSizes.XSMALL_20 !== arg0) {
-        if (arg1(dependencyMap[7]).AvatarSizes.SMALL !== arg0) {
-          if (arg1(dependencyMap[7]).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+  if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
+    if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XSMALL !== arg0) {
+      if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XSMALL_20 !== arg0) {
+        if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.SMALL !== arg0) {
+          if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return closure_7.REFRESH_MEDIUM_10;
           } else {
-            if (arg1(dependencyMap[7]).AvatarSizes.NORMAL !== arg0) {
-              if (arg1(dependencyMap[7]).AvatarSizes.TABS_22 !== arg0) {
-                if (arg1(dependencyMap[7]).AvatarSizes.LARGE !== arg0) {
-                  if (arg1(dependencyMap[7]).AvatarSizes.LARGE_48 !== arg0) {
-                    if (arg1(dependencyMap[7]).AvatarSizes.XLARGE !== arg0) {
-                      if (arg1(dependencyMap[7]).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (arg1(dependencyMap[7]).AvatarSizes.XXLARGE !== arg0) {
-                          if (arg1(dependencyMap[7]).AvatarSizes.PROFILE !== arg0) {
-                            if (arg1(dependencyMap[7]).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.NORMAL !== arg0) {
+              if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.TABS_22 !== arg0) {
+                if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.LARGE !== arg0) {
+                  if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.LARGE_48 !== arg0) {
+                    if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XLARGE !== arg0) {
+                      if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XLARGE_72 !== arg0) {
+                        if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXLARGE !== arg0) {
+                          if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.PROFILE !== arg0) {
+                            if (require(11951) /* StaticNativeCutoutAvatarImage */.AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -41,28 +53,22 @@ function getStatusSize(arg0) {
   return closure_7.SMALL;
 }
 function getAvatarDecorationMargin(closure_10) {
-  const decorationSizeForAvatarSize = arg1(dependencyMap[11]).getDecorationSizeForAvatarSize(closure_10);
-  return (decorationSizeForAvatarSize - arg1(dependencyMap[7]).styles[closure_10].width) / 2;
+  const decorationSizeForAvatarSize = require(7838) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(closure_10);
+  return (decorationSizeForAvatarSize - require(11951) /* StaticNativeCutoutAvatarImage */.styles[closure_10].width) / 2;
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const StatusTypes = arg1(dependencyMap[2]).StatusTypes;
-({ STATUS_PADDING: closure_6, StatusSizes: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[5]).createStyles((closure_10) => {
-  let obj = { status: {} };
-  obj = { <string:2523247253>: 6, <string:2320388538>: 85, <string:3852532579>: null, <string:1634712657>: "\u{1F482}\u200D\u2640\uFE0F", <string:2443006858>: true, borderColor: importDefault(dependencyMap[6]).colors.STATUS_SPEAKING };
+({ STATUS_PADDING: closure_6, StatusSizes: closure_7 } = STATUS_PADDING);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles((closure_10) => {
+  let obj = { status: { position: "absolute", right: -3, bottom: -3 } };
+  obj = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: importDefault(689).colors.STATUS_SPEAKING };
   obj.speaking = obj;
-  obj.stageSpeaking = { 1191129599: 6, 314226: 85, 315873: null };
-  obj = { 9223372036854775807: "center", 9223372036854775807: "#FFEAA0", -9223372036854775808: null, 0: "heading-xl/semibold", 9223372036854775807: "text-strong", 0: "header", -9223372036854775808: "heading-xl/medium", 0: "mobile-text-heading-primary", backgroundColor: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400, borderRadius: importDefault(dependencyMap[6]).radii.md };
+  obj.stageSpeaking = { position: "absolute", right: -2, bottom: -2 };
+  obj = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: importDefault(689).unsafe_rawColors.RED_400, borderRadius: importDefault(689).radii.md, right: 0, bottom: 0 };
   obj.voiceStatus = obj;
   obj.decoration = { position: "absolute", top: -getAvatarDecorationMargin(closure_10), left: -getAvatarDecorationMargin(closure_10) };
   obj.container = { position: "relative" };
   return obj;
 });
-const obj2 = arg1(dependencyMap[5]);
 const memoResult = importAllResult.memo((isMobileOnline) => {
   let accessibilityLabel;
   let accessible;
@@ -92,17 +98,14 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
   if (flag === undefined) {
     flag = false;
   }
-  const arg1 = flag;
   let flag2 = isMobileOnline.isVROnline;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const importDefault = flag2;
   const status = isMobileOnline.status;
-  const dependencyMap = status;
   let NORMAL = isMobileOnline.size;
   if (NORMAL === undefined) {
-    NORMAL = arg1(dependencyMap[7]).AvatarSizes.NORMAL;
+    NORMAL = flag(status[7]).AvatarSizes.NORMAL;
   }
   let flag3 = isMobileOnline.animate;
   if (flag3 === undefined) {
@@ -113,9 +116,7 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
     flag4 = false;
   }
   ({ avatarDecoration, cutout } = isMobileOnline);
-  const View = cutout;
   const autoStatusCutout = isMobileOnline.autoStatusCutout;
-  const StatusTypes = autoStatusCutout;
   ({ isStageCall, mute, deaf, statusStyle, avatarStyle, style } = isMobileOnline);
   if (isStageCall === undefined) {
     isStageCall = false;
@@ -129,9 +130,10 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
     typing = false;
   }
   const statusSizeOverride = isMobileOnline.statusSizeOverride;
-  let tmp3;
-  tmp3 = callback(NORMAL);
-  const items = [cutout, autoStatusCutout, flag, flag2, NORMAL, status, typing, statusSizeOverride, tmp3];
+  let callback;
+  const tmp3 = callback2(NORMAL);
+  callback = tmp3;
+  let items = [cutout, autoStatusCutout, flag, flag2, NORMAL, status, typing, statusSizeOverride, tmp3];
   const memo = NORMAL.useMemo(() => {
     let avatarSize;
     let height;
@@ -162,7 +164,7 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
         if (userStatus !== num) {
           userStatus = flag(status[7]).AVATAR_SIZE_MAP[avatarSize];
           if (null == statusSizeOverride) {
-            statusSizeOverride = callback(avatarSize);
+            statusSizeOverride = outer1_11(avatarSize);
           }
           num = 0;
           if (null != statusSizeOverride) {
@@ -226,19 +228,19 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
         }
       }
     } else {
-      const obj7 = { cutout, decorationCutout: flag(status[11]).getDecorationCutoutForAvatarCutout(cutout, -tmp3.decoration.top) };
+      const obj7 = { cutout, decorationCutout: flag(status[11]).getDecorationCutoutForAvatarCutout(cutout, -_undefined.decoration.top) };
       return obj7;
     }
   }, items);
   let merged = {};
   ({ cutout: cutout2, decorationCutout } = memo);
-  const items1 = [arg1(dependencyMap[7]).styles[NORMAL], tmp3.container, style];
+  let items1 = [flag(status[7]).styles[NORMAL], tmp3.container, style];
   merged.style = items1;
   merged.needsOffscreenAlphaCompositing = needsOffscreenAlphaCompositing;
   merged.accessible = accessible;
   merged.accessibilityLabel = accessibilityLabel;
   if (!flag4) {
-    const items2 = [null, , , , ];
+    let items2 = [null, , , , ];
     merged = { disablePlaceholder, style: avatarStyle, cutout: cutout2 };
     if (null == source) {
       if (null == user) {
@@ -246,21 +248,21 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
           items2[1] = null;
           let tmp39 = null;
           if (null != avatarDecoration) {
-            const obj = {};
-            let obj10 = arg1(dependencyMap[11]);
+            let obj = {};
+            let obj10 = flag(status[11]);
             obj.size = obj10.getDecorationSizeForAvatarSize(NORMAL);
             obj.avatarDecoration = avatarDecoration;
             obj.decorationStyle = tmp3.decoration;
             obj.animate = flag3;
             obj.cutout = decorationCutout;
-            tmp39 = tmp3(importDefault(dependencyMap[13]), obj, avatarDecoration.asset);
-            const tmp43 = importDefault(dependencyMap[13]);
+            tmp39 = callback(flag2(status[13]), obj, avatarDecoration.asset);
+            const tmp43 = flag2(status[13]);
           }
           items2[2] = tmp39;
           let tmp45 = null;
           if (null != status) {
             tmp45 = null;
-            if (status !== StatusTypes.UNKNOWN) {
+            if (status !== autoStatusCutout.UNKNOWN) {
               if (null != statusSizeOverride) {
                 let tmp48 = statusSizeOverride;
               } else {
@@ -268,8 +270,8 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
               }
               let id = null;
               if (null != tmp48) {
-                const obj1 = { size: tmp48, isMobileOnline: flag, isVROnline: flag2, status, streaming };
-                const items3 = [tmp3.status, statusStyle];
+                let obj1 = { size: tmp48, isMobileOnline: flag, isVROnline: flag2, status, streaming };
+                let items3 = [tmp3.status, statusStyle];
                 obj1.style = items3;
                 id = obj1;
               }
@@ -277,84 +279,84 @@ const memoResult = importAllResult.memo((isMobileOnline) => {
                 tmp45 = null;
               } else {
                 if (!typing) {
-                  const obj2 = {};
+                  let obj2 = {};
                   merged = Object.assign(id);
-                  let tmp58 = tmp3(importDefault(dependencyMap[14]), obj2);
-                  const tmp54 = importDefault(dependencyMap[14]);
+                  let tmp58 = callback(flag2(status[14]), obj2);
+                  const tmp54 = flag2(status[14]);
                 }
-                const obj3 = {};
+                let obj3 = {};
                 const merged1 = Object.assign(id);
                 obj3["typing"] = typing;
                 id = user.id;
                 user = "userId";
                 obj3["userId"] = id;
-                tmp58 = tmp3(arg1(dependencyMap[14]).StatusWithTyping, obj3);
+                tmp58 = callback(flag(status[14]).StatusWithTyping, obj3);
               }
             }
           }
           items2[3] = tmp45;
           if (deaf) {
-            const obj4 = {};
+            let obj4 = {};
             const items4 = [, ];
             ({ status: arr8[0], voiceStatus: arr8[1] } = tmp3);
             obj4.style = items4;
-            const obj5 = { size: importDefault(dependencyMap[15]).Sizes.REFRESH_SMALL_16, source: importDefault(dependencyMap[16]), color: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE };
-            obj4.children = tmp3(importDefault(dependencyMap[15]), obj5);
-            let tmp66 = tmp3(View, obj4);
-            const tmp76 = importDefault(dependencyMap[15]);
+            let obj5 = { size: flag2(status[15]).Sizes.REFRESH_SMALL_16, source: flag2(status[16]), color: flag2(status[6]).unsafe_rawColors.WHITE };
+            obj4.children = callback(flag2(status[15]), obj5);
+            let tmp66 = callback(cutout, obj4);
+            const tmp76 = flag2(status[15]);
           } else if (mute) {
-            const obj6 = {};
+            let obj6 = {};
             const items5 = [, ];
             ({ status: arr7[0], voiceStatus: arr7[1] } = tmp3);
             obj6.style = items5;
-            const obj7 = { size: importDefault(dependencyMap[15]).Sizes.REFRESH_SMALL_16, source: importDefault(dependencyMap[17]), color: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE };
-            obj6.children = tmp3(importDefault(dependencyMap[15]), obj7);
-            tmp66 = tmp3(View, obj6);
-            const tmp71 = importDefault(dependencyMap[15]);
+            let obj7 = { size: flag2(status[15]).Sizes.REFRESH_SMALL_16, source: flag2(status[17]), color: flag2(status[6]).unsafe_rawColors.WHITE };
+            obj6.children = callback(flag2(status[15]), obj7);
+            tmp66 = callback(cutout, obj6);
+            const tmp71 = flag2(status[15]);
           }
           items2[4] = tmp66;
           merged.children = items2;
-          return closure_9(View, merged);
+          return closure_9(cutout, merged);
         }
       }
     }
     if (null != source) {
       const obj8 = { source, size: NORMAL, animate: flag3 };
       merged = Object.assign(merged);
-      let tmp17 = tmp3(importDefault(dependencyMap[7]), obj8);
-      const tmp35 = importDefault(dependencyMap[7]);
+      let tmp17 = callback(flag2(status[7]), obj8);
+      const tmp35 = flag2(status[7]);
     } else if (null != user) {
       const obj9 = { user, guildId, size: NORMAL, animate: flag3 };
       const merged2 = Object.assign(merged);
-      tmp17 = tmp3(importDefault(dependencyMap[7]), obj9);
-      const tmp28 = importDefault(dependencyMap[7]);
+      tmp17 = callback(flag2(status[7]), obj9);
+      const tmp28 = flag2(status[7]);
     } else if (null != channel) {
       obj10 = { channel, size: NORMAL, animate: flag3 };
       const merged3 = Object.assign(merged);
-      tmp17 = tmp3(importDefault(dependencyMap[7]), obj10);
-      const tmp21 = importDefault(dependencyMap[7]);
+      tmp17 = callback(flag2(status[7]), obj10);
+      const tmp21 = flag2(status[7]);
     }
   } else {
-    const sum = arg1(dependencyMap[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
+    let sum = flag(status[7]).AVATAR_SIZE_MAP[NORMAL] + 4;
     if (isStageCall) {
       const obj11 = {};
       const items6 = [tmp3.stageSpeaking, ];
       const obj12 = { width: sum, height: sum, borderRadius: sum / 2 };
       items6[1] = obj12;
       obj11.style = items6;
-      let tmp10Result = tmp10(importDefault(dependencyMap[12]), obj11);
+      let tmp10Result = tmp10(flag2(status[12]), obj11);
     } else {
-      const obj13 = {};
+      let obj13 = {};
       const items7 = [tmp3.speaking, ];
       const obj14 = { width: sum, height: sum, borderRadius: sum / 2 };
       items7[1] = obj14;
       obj13.style = items7;
-      tmp10Result = tmp10(View, obj13);
+      tmp10Result = tmp10(cutout, obj13);
     }
   }
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");
+const result = require("ME").fileFinishedImporting("design/void/Avatar/native/Avatar.tsx");
 
 export default memoResult;
-export const AvatarSizes = arg1(dependencyMap[7]).AvatarSizes;
+export const AvatarSizes = require("StaticNativeCutoutAvatarImage").AvatarSizes;
 export { getStatusSize };

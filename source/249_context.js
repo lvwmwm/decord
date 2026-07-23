@@ -1,14 +1,15 @@
 // Module ID: 249
 // Function ID: 3310
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 204]
 // Exports: usePerformanceLogger
 
 // Module 249 (context)
-importAll(dependencyMap[0]);
-const obj = arg1(dependencyMap[0]);
-const useContext = obj.useContext;
-const context = obj.createContext(importDefault(dependencyMap[1]));
+import "result";
+import result from "result";
+import context from "PerformanceLogger";
+
+const useContext = result.useContext;
 
 export default context;
 export const usePerformanceLogger = function usePerformanceLogger() {

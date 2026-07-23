@@ -1,45 +1,49 @@
-// Module ID: 5176
-// Function ID: 44991
+// Module ID: 5179
+// Function ID: 45010
 // Name: FormArrow
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 1273, 5173, 2]
 // Exports: default
 
-// Module 5176 (FormArrow)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { wrapper: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
-obj = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.icon = obj;
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/void/Form/native/FormArrow.tsx");
+// Module 5179 (FormArrow)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { wrapper: { flexDirection: "row", alignItems: "center" } };
+_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, marginRight: -8, marginLeft: 8 };
+_createForOfIteratorHelperLoose.icon = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormArrow.tsx");
 
 export default function FormArrow(arg0) {
   let label;
   let style;
   ({ label, style } = arg0);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   if (null != label) {
     let obj = { style: tmp.wrapper };
-    obj = { children: label };
-    const items = [callback(arg1(dependencyMap[5]).Text, obj), ];
+    obj = { maxFontSizeMultiplier: 1.5, variant: "text-md/medium", color: "text-muted", children: label };
+    const items = [callback(require(4126) /* Text */.Text, obj), ];
     const obj1 = {};
     const items1 = [tmp.icon, style];
     obj1.style = items1;
-    obj1.source = importDefault(dependencyMap[7]);
-    obj1.size = arg1(dependencyMap[6]).Icon.Sizes.MEDIUM;
-    items[1] = callback(arg1(dependencyMap[6]).Icon, obj1);
+    obj1.source = importDefault(5173);
+    obj1.size = require(1273) /* Button */.Icon.Sizes.MEDIUM;
+    items[1] = callback(require(1273) /* Button */.Icon, obj1);
     obj.children = items;
     let tmp6 = callback2(View, obj);
   } else {
     obj = {};
     const items2 = [tmp.icon, style];
     obj.style = items2;
-    obj.source = importDefault(dependencyMap[7]);
-    obj.size = arg1(dependencyMap[6]).Icon.Sizes.MEDIUM;
-    tmp6 = callback(arg1(dependencyMap[6]).Icon, obj);
+    obj.source = importDefault(5173);
+    obj.size = require(1273) /* Button */.Icon.Sizes.MEDIUM;
+    tmp6 = callback(require(1273) /* Button */.Icon, obj);
   }
   return tmp6;
 };

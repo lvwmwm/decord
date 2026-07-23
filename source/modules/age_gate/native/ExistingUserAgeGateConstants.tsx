@@ -1,10 +1,9 @@
-// Module ID: 15864
-// Function ID: 121401
+// Module ID: 15981
+// Function ID: 123574
 // Name: ExistingUserAgeGateScreens
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 15864 (ExistingUserAgeGateScreens)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/age_gate/native/ExistingUserAgeGateConstants.tsx");
+// Module 15981 (ExistingUserAgeGateScreens)
+const result = require("set").fileFinishedImporting("modules/age_gate/native/ExistingUserAgeGateConstants.tsx");
 
 export const ExistingUserAgeGateScreens = { AgeGate: "AgeGate", AgeGateConfirm: "AgeGateConfirm", Blocked: "Blocked", NSFWBlocked: "NSFWBlocked", NSFWGateGuild: "NSFWGateGuild", Pawtect: "Pawtect" };

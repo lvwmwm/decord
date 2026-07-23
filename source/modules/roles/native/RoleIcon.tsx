@@ -1,14 +1,16 @@
-// Module ID: 5487
-// Function ID: 46834
+// Module ID: 5490
+// Function ID: 46857
 // Name: RoleIcon
-// Dependencies: []
+// Dependencies: [31, 27, 33, 1273, 2]
 // Exports: default
 
-// Module 5487 (RoleIcon)
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/roles/native/RoleIcon.tsx");
+// Module 5490 (RoleIcon)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/roles/native/RoleIcon.tsx");
 
 export default function RoleIcon(arg0) {
   let size;
@@ -18,12 +20,12 @@ export default function RoleIcon(arg0) {
   if (size === undefined) {
     size = 20;
   }
-  let obj = { roleIcon: obj, unicodeEmojiRoleIcon: obj };
+  obj = { roleIcon: obj, unicodeEmojiRoleIcon: obj };
   obj = { height: size, width: size, resizeMode: "contain" };
-  obj = { fontSize: size };
+  obj = { fontFamily: "System", fontSize: size, marginBottom: -2 };
   if (null != source) {
     const obj1 = { source, style: obj.roleIcon };
-    let tmp = <Image {...obj1} />;
+    let tmp = <Image source={source} style={obj.roleIcon} />;
   } else {
     tmp = null;
     if (null != unicodeEmoji) {
@@ -32,7 +34,7 @@ export default function RoleIcon(arg0) {
       ({ roleIcon: arr[0], unicodeEmojiRoleIcon: arr[1] } = obj);
       obj2.style = items;
       obj2.children = unicodeEmoji.surrogates;
-      tmp = jsx(arg1(dependencyMap[3]).LegacyText, obj2);
+      tmp = jsx(require(1273) /* Button */.LegacyText, { adjustsFontSizeToFit: true });
     }
   }
   return tmp;

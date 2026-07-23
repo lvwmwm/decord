@@ -1,9 +1,21 @@
-// Module ID: 10437
-// Function ID: 80540
+// Module ID: 10447
+// Function ID: 80590
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 5, 4812, 3970, 653, 664, 507, 4938, 686, 7820, 4814, 636, 566, 2]
 
-// Module 10437 (_isNativeReflectConstruct)
+// Module 10447 (_isNativeReflectConstruct)
+import isUndefinedOrNull from "isUndefinedOrNull";
+import closure_4 from "set";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { PlatformTypes } from "ME";
+import set from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,9 +26,9 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function makeTwitchRequest(arg0, query) {
-  const HTTP = query(dependencyMap[10]).HTTP;
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   let obj = { url: "https://api.twitch.tv/helix" + arg0, query };
-  obj = { Client-ID: "33kozedd0zs6fbauka98psnc7zwom2s", Authorization: "Bearer " + arg2 };
+  obj = { "Client-ID": "33kozedd0zs6fbauka98psnc7zwom2s", Authorization: "Bearer " + arg2 };
   obj.headers = obj;
   obj.rejectWithError = false;
   return HTTP.get(obj);
@@ -24,7 +36,6 @@ function makeTwitchRequest(arg0, query) {
 function _getTwitchGame() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback3(tmp);
-  const _getTwitchGame = obj;
   return obj(...arguments);
 }
 function streamerModeUpdate() {
@@ -34,39 +45,29 @@ function streamerModeUpdate() {
     obj.stop();
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const PlatformTypes = arg1(dependencyMap[8]).PlatformTypes;
-const MINUTE = importDefault(dependencyMap[9]).Millis.MINUTE;
-let closure_13 = 5 * importDefault(dependencyMap[9]).Millis.MINUTE;
-let closure_14 = /live_user_(.*)-\{width\}/;
-let closure_15 = null;
-let closure_16 = 0;
-let closure_17 = null;
-const set = new Set();
+const MINUTE = require("set").Millis.MINUTE;
+let closure_13 = 5 * require("set").Millis.MINUTE;
+const re14 = /live_user_(.*)-\{width\}/;
+let c15 = null;
+let c16 = 0;
+let c17 = null;
+let set = new Set();
 let closure_19 = {};
-let tmp3 = () => {
+let tmp3 = (() => {
   class StreamingPoller {
     constructor() {
-      tmp = closure_6(this, StreamingPoller);
+      tmp = outer1_6(this, StreamingPoller);
       this._started = false;
       return;
     }
   }
-  const dependencyMap = StreamingPoller;
   let obj = {
     key: "start",
     value() {
       const self = this;
       if (!this._started) {
         self._started = true;
-        if (closure_9.isFetching()) {
+        if (outer1_9.isFetching()) {
           const response = callback2(StreamingPoller[11]).fetch();
           const obj = callback2(StreamingPoller[11]);
         } else {
@@ -75,18 +76,18 @@ let tmp3 = () => {
       }
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "stop",
     value() {
       this._started = false;
-      let closure_17 = null;
-      let closure_16 = 0;
+      const outer1_17 = null;
+      const outer1_16 = 0;
       if (null != this._nextCheck) {
         const _clearTimeout = clearTimeout;
         clearTimeout(tmp._nextCheck);
       }
-      callback2(StreamingPoller[12]).dispatch({ count: "omit", accessible: 1610613502 });
+      callback2(StreamingPoller[12]).dispatch({ type: "STREAMING_UPDATE", stream: null });
     }
   };
   items[1] = obj;
@@ -107,26 +108,25 @@ let tmp3 = () => {
   items[4] = {
     key: "_check",
     value() {
-      const self = this;
-      let closure_0 = this;
+      let self = this;
+      self = this;
       if (this._started) {
-        const accounts = closure_9.getAccounts();
+        const accounts = outer1_9.getAccounts();
         if (null != accounts) {
           if (null != self._nextCheck) {
             const _clearTimeout = clearTimeout;
             clearTimeout(self._nextCheck);
           }
-          const items = [constants.TWITCH];
-          let closure_1 = items;
+          const items = [outer1_11.TWITCH];
           const _Date = Date;
           const timestamp = Date.now();
-          if (closure_16 <= timestamp) {
-            items.push(constants.YOUTUBE);
-            closure_16 = timestamp + closure_13;
+          if (outer1_16 <= timestamp) {
+            items.push(outer1_11.YOUTUBE);
+            outer1_16 = timestamp + outer1_13;
           }
           const found = accounts.filter((type) => items.includes(type.type));
           Promise.allSettled(found.map((type) => {
-            if (type.type === constants.TWITCH) {
+            if (type.type === outer2_11.TWITCH) {
               let _checkTwitchResult = self._checkTwitch(type);
             } else {
               _checkTwitchResult = self._checkYouTube(type);
@@ -147,19 +147,19 @@ let tmp3 = () => {
               }
               let tmp3 = null == value;
               if (tmp3) {
-                tmp3 = null != closure_17;
+                tmp3 = null != outer2_17;
               }
               if (tmp3) {
-                value = closure_17;
+                value = outer2_17;
               }
-              let obj = items(closure_2[12]);
+              let obj = items(StreamingPoller[12]);
               obj = { type: "STREAMING_UPDATE", stream: value };
               obj.dispatch(obj);
             }
             self._scheduleCheck();
           });
           const allSettledResult = Promise.allSettled(found.map((type) => {
-            if (type.type === constants.TWITCH) {
+            if (type.type === outer2_11.TWITCH) {
               let _checkTwitchResult = self._checkTwitch(type);
             } else {
               _checkTwitchResult = self._checkYouTube(type);
@@ -173,29 +173,30 @@ let tmp3 = () => {
   items[5] = {
     key: "_scheduleCheck",
     value() {
-      let closure_0 = this;
+      const self = this;
       if (this._started) {
         const _setTimeout = setTimeout;
-        tmp._nextCheck = setTimeout(() => self._check(), closure_12);
+        tmp._nextCheck = setTimeout(() => self._check(), outer1_12);
       }
     }
   };
   return callback2(StreamingPoller, items);
-}();
+})();
 tmp3 = new tmp3();
-let tmp5 = (Store) => {
+let closure_20 = tmp3;
+let tmp5 = ((Store) => {
   class ExternalStreamingStore {
     constructor() {
       self = this;
-      tmp = closure_6(this, ExternalStreamingStore);
-      obj = closure_4(ExternalStreamingStore);
-      tmp2 = closure_3;
-      if (closure_21()) {
+      tmp = outer1_6(this, ExternalStreamingStore);
+      obj = outer1_4(ExternalStreamingStore);
+      tmp2 = outer1_3;
+      if (outer1_21()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_4;
+        tmp7 = outer1_4;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -204,31 +205,30 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ExternalStreamingStore;
   callback(ExternalStreamingStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      callback4();
-      this.waitFor(closure_9, closure_10);
-      const items = [closure_10];
-      this.syncWith(items, callback4);
+      outer1_24();
+      this.waitFor(outer1_9, outer1_10);
+      const items = [outer1_10];
+      this.syncWith(items, outer1_24);
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "getStream",
     value() {
-      return closure_15;
+      return outer1_15;
     }
   };
   items[1] = obj;
   return callback2(ExternalStreamingStore, items);
-}(importDefault(dependencyMap[16]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "ExternalStreamingStore";
-tmp5 = new tmp5(importDefault(dependencyMap[12]), {
+tmp5 = new tmp5(require("dispatcher"), {
   STREAMING_UPDATE: function streamUpdate(stream) {
-    if (importDefault(dependencyMap[15])(stream.stream, closure_15)) {
+    if (importDefault(636)(stream.stream, c15)) {
       return false;
     } else {
       stream = stream.stream;
@@ -236,13 +236,13 @@ tmp5 = new tmp5(importDefault(dependencyMap[12]), {
       if (null != stream) {
         tmp = stream;
       }
-      closure_15 = tmp;
+      c15 = tmp;
     }
   },
   USER_CONNECTIONS_UPDATE() {
     return tmp3._check();
   }
 });
-const result = arg1(dependencyMap[17]).fileFinishedImporting("stores/ExternalStreamingStore.tsx");
+let result = set.fileFinishedImporting("stores/ExternalStreamingStore.tsx");
 
 export default tmp5;

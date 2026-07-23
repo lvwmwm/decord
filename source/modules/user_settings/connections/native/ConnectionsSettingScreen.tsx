@@ -1,19 +1,20 @@
-// Module ID: 13745
-// Function ID: 103935
+// Module ID: 13859
+// Function ID: 106091
 // Name: onPress
-// Dependencies: []
+// Dependencies: [31, 33, 4098, 13860, 1934, 1456, 6653, 9122, 1212, 13861, 2]
 
-// Module 13745 (onPress)
+// Module 13859 (onPress)
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function onPress() {
-  importDefault(dependencyMap[2]).openLazy(arg1(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), "AddConnection");
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(13860, dependencyMap.paths), "AddConnection");
 }
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
 const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
-  let obj = arg1(dependencyMap[5]);
-  const stackNavigation = obj.useStackNavigation();
-  const arg1 = stackNavigation;
-  const params = arg1(dependencyMap[6]).useSettingNavigationRoute().params;
+  let obj = stackNavigation(1456);
+  stackNavigation = obj.useStackNavigation();
+  const params = stackNavigation(6653).useSettingNavigationRoute().params;
   let selectedPlatformType;
   if (null != params) {
     selectedPlatformType = params.selectedPlatformType;
@@ -24,16 +25,16 @@ const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
       headerRight(arg0) {
         const obj = {};
         const merged = Object.assign(arg0);
-        obj["onPress"] = closure_5;
-        const intl = callback(closure_2[8]).intl;
-        obj["label"] = intl.string(callback(closure_2[8]).t.OYkgVk);
-        return callback2(callback(closure_2[7]).HeaderTextButton, obj);
+        obj["onPress"] = outer2_5;
+        const intl = stackNavigation(outer2_2[8]).intl;
+        obj["label"] = intl.string(stackNavigation(outer2_2[8]).t.OYkgVk);
+        return outer2_4(stackNavigation(outer2_2[7]).HeaderTextButton, obj);
       }
     });
   }, items);
   obj = { selectedPlatformType };
-  return jsx(arg1(dependencyMap[9]).UserSettingsConnections, obj);
+  return jsx(stackNavigation(13861).UserSettingsConnections, { selectedPlatformType });
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
+const result = require("showActionSheet").fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 
 export default memoResult;

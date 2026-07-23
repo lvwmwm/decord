@@ -1,14 +1,16 @@
-// Module ID: 4300
-// Function ID: 37653
+// Module ID: 4304
+// Function ID: 37685
 // Name: sendSMS
-// Dependencies: []
+// Dependencies: [27, 477, 4305, 2]
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS
 
-// Module 4300 (sendSMS)
-const _module = require(dependencyMap[0]);
-({ Linking: closure_3, NativeModules: closure_4 } = _module);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/instant_invite/native/DCDSendUtils.tsx");
+// Module 4304 (sendSMS)
+import get_ActivityIndicator from "get ActivityIndicator";
+
+let closure_3;
+let closure_4;
+({ Linking: closure_3, NativeModules: closure_4 } = get_ActivityIndicator);
+const result = require("enforcing").fileFinishedImporting("modules/instant_invite/native/DCDSendUtils.tsx");
 
 export const sendSMS = function sendSMS(body, recipients) {
   if (obj.isAndroid()) {
@@ -21,8 +23,8 @@ export const sendSMS = function sendSMS(body, recipients) {
     if (null == recipients) {
       recipients = [];
     }
-    importDefault(dependencyMap[2]).sendSMS(str, recipients);
-    const obj2 = importDefault(dependencyMap[2]);
+    importDefault(4305).sendSMS(str, recipients);
+    const obj2 = importDefault(4305);
   } else {
     const DCDSend = closure_4.DCDSend;
     DCDSend.sendSMS(body, recipients);
@@ -44,8 +46,8 @@ export const sendMail = function sendMail(subject, arg1, recipients) {
     if (null == recipients) {
       recipients = [];
     }
-    importDefault(dependencyMap[2]).sendMail(str2, str, recipients);
-    const obj2 = importDefault(dependencyMap[2]);
+    importDefault(4305).sendMail(str2, str, recipients);
+    const obj2 = importDefault(4305);
   } else {
     const DCDSend = closure_4.DCDSend;
     DCDSend.sendMail(subject, arg1);
@@ -53,8 +55,8 @@ export const sendMail = function sendMail(subject, arg1, recipients) {
 };
 export const canSendSMS = function canSendSMS() {
   if (obj.isAndroid()) {
-    let resolved = Promise.resolve(importDefault(dependencyMap[2]).canSendSMS());
-    const obj2 = importDefault(dependencyMap[2]);
+    let resolved = Promise.resolve(importDefault(4305).canSendSMS());
+    const obj2 = importDefault(4305);
   } else {
     const DCDSend = closure_4.DCDSend;
     resolved = DCDSend.canSendSMS();
@@ -63,8 +65,8 @@ export const canSendSMS = function canSendSMS() {
 };
 export const canSendMail = function canSendMail() {
   if (obj.isAndroid()) {
-    let resolved = Promise.resolve(importDefault(dependencyMap[2]).canSendMail());
-    const obj2 = importDefault(dependencyMap[2]);
+    let resolved = Promise.resolve(importDefault(4305).canSendMail());
+    const obj2 = importDefault(4305);
   } else {
     const DCDSend = closure_4.DCDSend;
     resolved = DCDSend.canSendMail();
@@ -72,19 +74,20 @@ export const canSendMail = function canSendMail() {
   return resolved;
 };
 export const canOpenUrlScheme = function canOpenUrlScheme(roblox) {
-  const require = roblox;
+  const _require = roblox;
   if (obj.isAndroid()) {
-    return Promise.resolve(importDefault(dependencyMap[2]).canOpenUrlScheme(roblox));
+    return Promise.resolve(importDefault(4305).canOpenUrlScheme(roblox));
   } else {
     const promise = new Promise((arg0) => {
-      const canOpenURLResult = closure_3.canOpenURL("" + arg0 + "://app");
-      closure_3.canOpenURL("" + arg0 + "://app").then((arg0) => {
-        arg0(arg0);
+      let closure_0 = arg0;
+      const canOpenURLResult = outer1_3.canOpenURL("" + closure_0 + "://app");
+      outer1_3.canOpenURL("" + closure_0 + "://app").then((arg0) => {
+        callback(arg0);
       }).catch(() => {
-        arg0(false);
+        callback(false);
       });
     });
     return promise;
   }
-  const obj = require(dependencyMap[1]);
+  obj = _require(477);
 };

@@ -1,22 +1,24 @@
-// Module ID: 7527
-// Function ID: 60239
+// Module ID: 7532
+// Function ID: 60273
 // Name: CardSection
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 7533, 2]
 // Exports: default
 
-// Module 7527 (CardSection)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: { -9223372036854775808: null, 9223372036854775807: null } };
-const tmp3 = arg1(dependencyMap[3]);
-obj.title = importDefault(dependencyMap[5])(arg1(dependencyMap[2]).Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[6]).colors.TEXT_SUBTLE, 12, {});
-obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs, overflow: "hidden", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWEST };
-obj.card = obj;
-let closure_5 = obj.createStyles(obj);
-const importDefaultResult = importDefault(dependencyMap[5]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/void/CardSection/native/CardSection.tsx");
+// Module 7532 (CardSection)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_3;
+let closure_4;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { paddingTop: 16, paddingHorizontal: 16 }, title: require("createTextStyle")(require("ME").Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 12, { uppercase: true, marginBottom: 6 }) };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("design/void/CardSection/native/CardSection.tsx");
 
 export default function CardSection(arg0) {
   let accessibilityLabel;
@@ -29,9 +31,9 @@ export default function CardSection(arg0) {
   let titleStyle;
   ({ title, children, headerComponent } = arg0);
   ({ titleStyle, cardStyle, style, accessibilityRole, accessibilityLabel } = arg0);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items, accessibilityRole, accessibilityLabel };
-  const items = [tmp.container, style];
+  items = [tmp.container, style];
   let tmp4 = null;
   if (null != title) {
     obj = {};
@@ -39,7 +41,7 @@ export default function CardSection(arg0) {
     obj.style = items1;
     obj.accessibilityRole = "header";
     obj.children = title;
-    tmp4 = callback(importDefault(dependencyMap[7]), obj);
+    tmp4 = callback(importDefault(7533), obj);
   }
   const items2 = [tmp4, , ];
   let tmp8 = null;

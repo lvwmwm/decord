@@ -1,10 +1,15 @@
-// Module ID: 11109
-// Function ID: 86470
+// Module ID: 11119
+// Function ID: 86520
 // Name: areMemberGroupsHydrated
-// Dependencies: []
+// Dependencies: [57, 31, 5658, 5688, 5664, 7934, 22, 2]
 // Exports: useHereMentionCallback
 
-// Module 11109 (areMemberGroupsHydrated)
+// Module 11119 (areMemberGroupsHydrated)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function areMemberGroupsHydrated(groups) {
   let tmp = groups.length > 1;
   if (!tmp) {
@@ -26,11 +31,11 @@ function tryUpdateSubscriptionForHereMention(arr, maxMessageLength, guild_id, id
     }
     let tmp5 = !tmp3;
     if (!tmp3) {
-      let flag = -1 !== arr.indexOf(closure_6);
+      let flag = -1 !== arr.indexOf(c6);
       if (flag) {
-        maxMessageLength(dependencyMap[3]).subscribeChannel(guild_id, id, maxMessageLength(dependencyMap[4]).DEFAULT_RANGES);
+        require(5688) /* subscribeChannel */.subscribeChannel(guild_id, id, require(5664) /* serializeChannelRanges */.DEFAULT_RANGES);
         flag = true;
-        const obj = maxMessageLength(dependencyMap[3]);
+        const obj = require(5688) /* subscribeChannel */;
       }
       tmp5 = flag;
     }
@@ -38,39 +43,34 @@ function tryUpdateSubscriptionForHereMention(arr, maxMessageLength, guild_id, id
   }
   return tmp2;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = "@here";
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/channel_text_area/ChatInputContentCallbacks.tsx");
+let c6 = "@here";
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_text_area/ChatInputContentCallbacks.tsx");
 
 export { tryUpdateSubscriptionForHereMention };
 export const useHereMentionCallback = function useHereMentionCallback(arg0, arg1, arg2) {
-  arg1 = arg0;
+  let closure_0 = arg0;
   const importDefault = arg1;
   const dependencyMap = arg2;
-  const tmp = importDefault(dependencyMap[5])();
+  const tmp = importDefault(7934)();
   const callback = tmp;
-  const tmp2 = callback(React.useState(false), 2);
-  const first = tmp2[0];
-  const React = first;
-  let closure_5 = tmp2[1];
+  const tmp2 = callback(first.useState(false), 2);
+  first = tmp2[0];
+  let _isNativeReflectConstruct = tmp2[1];
   const items = [tmp, arg1, arg2];
-  const memo = React.useMemo(() => arg1(arg2[6]).debounce((arg0) => {
-    if (callback2(arg0, closure_3, closure_1, closure_2)) {
-      callback(true);
+  const memo = first.useMemo(() => callback(table[6]).debounce((arg0) => {
+    if (outer2_8(arg0, outer1_3, outer1_1, outer1_2)) {
+      outer1_5(true);
     }
   }, 200, { maxWait: 500 }), items);
-  let closure_6 = memo;
   const items1 = [first, memo, arg0, arg1, arg2];
-  const effect = React.useEffect(() => {
-    if (null != arg1) {
-      if (!callback(tmp)) {
+  const effect = first.useEffect(() => {
+    if (null != closure_1) {
+      if (!outer1_7(tmp)) {
         if (!first) {
-          arg0.addListener("text-changed", memo);
+          closure_0.addListener("text-changed", memo);
           return () => {
-            closure_0.removeListener("text-changed", closure_6);
-            closure_6.cancel();
+            outer1_0.removeListener("text-changed", outer1_6);
+            outer1_6.cancel();
           };
         }
       }

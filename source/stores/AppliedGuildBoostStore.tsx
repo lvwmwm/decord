@@ -1,46 +1,47 @@
-// Module ID: 11585
-// Function ID: 90046
+// Module ID: 11595
+// Function ID: 90095
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 11585 (_isNativeReflectConstruct)
+// Module 11595 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
 function handleModifyingAppliedBoostStart() {
-  let closure_9 = true;
+  let c9 = true;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = {};
-let closure_6 = null;
+let c6 = null;
 let closure_7 = [];
-let closure_8 = false;
-let closure_9 = false;
-let closure_10 = null;
-let closure_11 = null;
-let tmp2 = (Store) => {
+let c8 = false;
+let c9 = false;
+let c10 = null;
+let c11 = null;
+let tmp2 = ((Store) => {
   class AppliedGuildBoostStore {
     constructor() {
       self = this;
       tmp = AppliedGuildBoostStore(this, AppliedGuildBoostStore);
-      obj = closure_3(AppliedGuildBoostStore);
-      tmp2 = closure_2;
-      if (closure_12()) {
+      obj = outer1_3(AppliedGuildBoostStore);
+      tmp2 = outer1_2;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -49,14 +50,13 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = AppliedGuildBoostStore;
   callback2(AppliedGuildBoostStore, Store);
   let obj = {
     key: "getAppliedGuildBoostsForGuild",
     value(arg0) {
       let subscriptions = null;
-      if (null != closure_5[arg0]) {
-        subscriptions = closure_5[arg0].subscriptions;
+      if (null != outer1_5[arg0]) {
+        subscriptions = outer1_5[arg0].subscriptions;
       }
       return subscriptions;
     }
@@ -66,8 +66,8 @@ let tmp2 = (Store) => {
     key: "getLastFetchedAtForGuild",
     value(arg0) {
       let lastFetchedAt = null;
-      if (null != closure_5[arg0]) {
-        lastFetchedAt = closure_5[arg0].lastFetchedAt;
+      if (null != outer1_5[arg0]) {
+        lastFetchedAt = outer1_5[arg0].lastFetchedAt;
       }
       return lastFetchedAt;
     }
@@ -76,56 +76,56 @@ let tmp2 = (Store) => {
   obj = {
     key: "getCurrentUserAppliedBoosts",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getAppliedGuildBoost",
     value(arg0) {
-      const AppliedGuildBoostStore = arg0;
-      return closure_7.find((id) => id.id === id);
+      let dispatcher = arg0;
+      return outer1_7.find((id) => id.id === dispatcher);
     }
   };
   items[4] = {
     key: "isModifyingAppliedBoost",
     get() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[5] = {
     key: "applyBoostError",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[6] = {
     key: "unapplyBoostError",
     get() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[7] = {
     key: "cooldownEndsAt",
     get() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[8] = {
     key: "isFetchingCurrentUserAppliedBoosts",
     get() {
-      return closure_8;
+      return outer1_8;
     }
   };
   return callback(AppliedGuildBoostStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "AppliedGuildBoostStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: function handleAppliedBoostsForGuildFetchSuccess(appliedBoosts) {
     closure_5[appliedBoosts.guildId] = { subscriptions: appliedBoosts.appliedBoosts, lastFetchedAt: Date.now() };
   },
   USER_APPLIED_BOOSTS_FETCH_SUCCESS: function handleAppliedBoostsForuserFetchSuccess(appliedGuildBoosts) {
-    let closure_8 = false;
+    let c8 = false;
     appliedGuildBoosts = appliedGuildBoosts.appliedGuildBoosts;
   },
   APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS: function handleAppliedBoostCooldownFetch(endsAt) {
@@ -135,29 +135,28 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
   GUILD_APPLY_BOOST_START: handleModifyingAppliedBoostStart,
   GUILD_APPLY_BOOST_SUCCESS: function handleApplyBoostSuccess(appliedGuildBoost) {
     appliedGuildBoost = appliedGuildBoost.appliedGuildBoost;
-    let closure_0 = new Set(appliedGuildBoost.map((id) => id.id));
-    const items = [...appliedGuildBoost, ...closure_7.filter((id) => !set.has(id.id))];
-    let closure_7 = items;
-    let closure_10 = null;
-    let closure_9 = false;
+    const set = new Set(appliedGuildBoost.map((id) => id.id));
+    items = [...appliedGuildBoost, ...items.filter((id) => !set.has(id.id))];
+    let c10 = null;
+    let c9 = false;
   },
   GUILD_APPLY_BOOST_FAIL: function handleApplyBoostFail(error) {
-    let closure_9 = false;
+    let c9 = false;
     error = error.error;
   },
   GUILD_UNAPPLY_BOOST_SUCCESS: function handleUnapplyBoostSuccess(boostId) {
     boostId = boostId.boostId;
     closure_7 = closure_7.filter((id) => id.id !== boostId);
-    let closure_9 = false;
+    let c9 = false;
   },
   GUILD_UNAPPLY_BOOST_FAIL: function handleUnapplyBoostFail(error) {
-    let closure_9 = false;
+    let c9 = false;
     error = error.error;
   },
   USER_APPLIED_BOOSTS_FETCH_START: function handleUserAppliedBoostsFetchStart() {
-    let closure_8 = true;
+    let c8 = true;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("stores/AppliedGuildBoostStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/AppliedGuildBoostStore.tsx");
 
 export default tmp2;

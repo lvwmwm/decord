@@ -1,13 +1,13 @@
-// Module ID: 9859
-// Function ID: 76343
+// Module ID: 9866
+// Function ID: 76384
 // Name: retrySendMessage
-// Dependencies: []
+// Dependencies: [4123, 6691, 8184, 4664, 7939, 2]
 // Exports: default
 
-// Module 9859 (retrySendMessage)
-const MessageSendLocation = require(dependencyMap[0]).MessageSendLocation;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");
+// Module 9866 (retrySendMessage)
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");
 
 export default function retrySendMessage(id, id2, arr) {
   let content;
@@ -15,17 +15,17 @@ export default function retrySendMessage(id, id2, arr) {
   let nonce;
   let tts;
   let obj = arg3;
-  const require = id;
+  const _require = id;
   if (arg3 === undefined) {
     obj = {};
   }
-  importDefault(dependencyMap[1]).deleteMessage(id.id, id2.id, true);
+  importDefault(6691).deleteMessage(id.id, id2.id, true);
   if (id2.isCommandType()) {
     if (tmp17) {
-      require(dependencyMap[2]).retryCommandMessage(id2, id, obj);
-      const obj6 = require(dependencyMap[2]);
+      _require(8184).retryCommandMessage(id2, id, obj);
+      const obj6 = _require(8184);
     }
-    const tmp17 = null != id2.interactionData && null != obj.applicationId;
+    tmp17 = null != id2.interactionData && null != obj.applicationId;
   } else {
     const messageReference = id2.messageReference;
     let mapped;
@@ -34,13 +34,13 @@ export default function retrySendMessage(id, id2, arr) {
       mapped = arr.map((on) => {
         let fromJsonResult = on;
         if (null == on.on) {
-          const CloudUpload = on(closure_2[3]).CloudUpload;
+          const CloudUpload = guildId(outer1_2[3]).CloudUpload;
           fromJsonResult = CloudUpload.fromJson(on);
         }
         return fromJsonResult;
       });
     }
-    const obj3 = importDefault(dependencyMap[1]);
+    const obj3 = importDefault(6691);
     id = id.id;
     obj = { content, tts, invalidEmojis: [], validNonShortcutEmojis: [] };
     obj = {};
@@ -55,8 +55,8 @@ export default function retrySendMessage(id, id2, arr) {
     obj["location"] = MessageSendLocation.RETRY;
     obj["attachmentsToUpload"] = mapped;
     obj["onAttachmentUploadError"] = function onAttachmentUploadError(file, code, reason) {
-      let obj = file(closure_2[4]);
-      obj = { file, guildId: file.getGuildId(), analyticsLocations: [], code, reason };
+      let obj = guildId(outer1_2[4]);
+      obj = { file, guildId: guildId.getGuildId(), analyticsLocations: [], code, reason };
       const result = obj.handleUploadMessageAttachmentsErrors(obj);
     };
     obj3.sendMessage(id, obj, undefined, obj);

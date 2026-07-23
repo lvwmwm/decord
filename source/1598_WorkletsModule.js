@@ -1,8 +1,8 @@
 // Module ID: 1598
-// Function ID: 17814
+// Function ID: 17815
 // Name: WorkletsModule
-// Dependencies: []
+// Dependencies: [1599]
 
 // Module 1598 (WorkletsModule)
 
-export const WorkletsModule = require(dependencyMap[0]).WorkletsModule;
+export const WorkletsModule = require("WorkletsModule").WorkletsModule;

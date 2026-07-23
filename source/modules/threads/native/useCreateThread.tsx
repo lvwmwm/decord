@@ -1,17 +1,17 @@
-// Module ID: 9543
-// Function ID: 74403
+// Module ID: 9550
+// Function ID: 74444
 // Name: useCreateThread
-// Dependencies: [31, 27, 33, 4126, 689, 4316, 4656, 1212, 5116, 4641, 4124, 4629, 2, 57, 31]
+// Dependencies: [5, 31, 4468, 4123, 5464, 7935, 6691, 6924, 7939, 7938, 7081, 4711, 4670, 7940, 2]
 // Exports: default, useCreateForumPost
 
-// Module 9543 (useCreateThread)
-import closure_3 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
-import { DraftType } from "module_33";
-import { MessageSendLocation } from "_createForOfIteratorHelperLoose";
-import module_31 from "module_31";
+// Module 9550 (useCreateThread)
+import getIsPrivate from "getIsPrivate";
+import result from "result";
+import { DraftType } from "_isNativeReflectConstruct";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
 
-const result = module_31.fileFinishedImporting("modules/threads/native/useCreateThread.tsx");
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/threads/native/useCreateThread.tsx");
 
 export default function useCreateThread(arg0) {
   let _location;
@@ -22,8 +22,8 @@ export default function useCreateThread(arg0) {
   let threadSettings;
   let useDefaultThreadName;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
-  const arg1 = importDefault(dependencyMap[4])().analyticsLocations;
-  let obj = arg1(dependencyMap[5]);
+  const analyticsLocations = importDefault(5464)().analyticsLocations;
+  let obj = analyticsLocations(7935);
   obj = {
     parentChannel,
     parentMessageId,
@@ -33,22 +33,23 @@ export default function useCreateThread(arg0) {
     onThreadCreated,
     useDefaultThreadName,
     uploadHandler(id, attachmentsToUpload) {
-      const analyticsLocations = id;
-      let obj = attachmentsToUpload(closure_2[6]);
+      let closure_0 = id;
+      let closure_1 = attachmentsToUpload;
+      let obj = outer1_1(outer1_2[6]);
       obj = {
-        location: constants.THREAD_CREATION,
+        location: outer1_6.THREAD_CREATION,
         attachmentsToUpload,
         onAttachmentUploadError(file, code, reason) {
-          let obj = file(closure_2[8]);
-          obj = { file, guildId: file.getGuildId(), analyticsLocations: file, code, reason };
+          let obj = analyticsLocations(outer2_2[8]);
+          obj = { file, guildId: guildId.getGuildId(), analyticsLocations: guildId, code, reason };
           if (obj.handleUploadMessageAttachmentsErrors(obj)) {
-            obj = { channelId: file.id, uploads: code, draftType: FirstThreadMessage.FirstThreadMessage, resetState: true };
-            code(closure_2[9]).setUploads(obj);
-            const obj3 = code(closure_2[9]);
+            obj = { channelId: guildId.id, uploads: closure_1, draftType: outer2_5.FirstThreadMessage, resetState: true };
+            outer2_1(outer2_2[9]).setUploads(obj);
+            const obj3 = outer2_1(outer2_2[9]);
           }
         }
       };
-      obj.sendMessage(id.id, attachmentsToUpload(closure_2[7]).parse(id, arg2), undefined, obj);
+      obj.sendMessage(id.id, outer1_1(outer1_2[7]).parse(id, arg2), undefined, obj);
     }
   };
   return obj.useCreateThreadCommon(obj);
@@ -57,21 +58,19 @@ export const useCreateForumPost = function useCreateForumPost(parentChannel) {
   let appliedTags;
   let onThreadCreated;
   parentChannel = parentChannel.parentChannel;
-  const arg1 = parentChannel;
   const threadSettings = parentChannel.threadSettings;
   let name;
   ({ appliedTags, onThreadCreated } = parentChannel);
-  const analyticsLocations = importDefault(dependencyMap[4])().analyticsLocations;
-  const importDefault = analyticsLocations;
+  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
   const items = [analyticsLocations, parentChannel];
-  const callback = React.useCallback(() => {
+  const callback = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_3(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items);
-  let obj = arg1(dependencyMap[5]);
+  })(), items);
+  let obj = parentChannel(7935);
   obj = { parentChannel };
   if (null != threadSettings) {
     name = threadSettings.name;

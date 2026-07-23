@@ -1,25 +1,37 @@
-// Module ID: 4453
-// Function ID: 39258
+// Module ID: 4457
+// Function ID: 39290
 // Name: getStripe
-// Dependencies: []
+// Dependencies: [5, 57, 1921, 653, 3, 4458, 507, 566, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 4453 (getStripe)
+// Module 4457 (getStripe)
+import _typeof from "_typeof";
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import importDefaultResult from "ME";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function getStripe() {
   if (null != closure_2) {
     let resolved = Promise.resolve(closure_2);
   } else {
-    const stripe = arg1(dependencyMap[5]).loadStripe(constants.STRIPE.KEY);
-    resolved = stripe.then((arg0) => arg0);
-    const obj = arg1(dependencyMap[5]);
+    const stripe = require(4458) /* _typeof */.loadStripe(constants.STRIPE.KEY);
+    resolved = stripe.then((arg0) => {
+      const outer1_2 = arg0;
+      return arg0;
+    });
+    const obj = require(4458) /* _typeof */;
   }
   return resolved;
 }
-async function _authenticatePaymentIntentForPaymentId(paymentId, arg1) {
-  const HTTP = callback(closure_1[6]).HTTP;
-  let obj = { y: 1567300603, isArray: 221342020, accessible: 822948183, url: closure_6.BILLING_STRIPE_PAYMENT_INTENTS(paymentId) };
+async function _authenticatePaymentIntentForPaymentId(arg0, arg1) {
+  const HTTP = outer2_0(outer2_1[6]).HTTP;
+  let obj = { url: outer2_6.BILLING_STRIPE_PAYMENT_INTENTS(arg0), oldFormErrors: true, rejectWithError: false };
   const stripe_payment_intent_client_secret = yield HTTP.get(obj).body.stripe_payment_intent_client_secret;
-  const tmp = yield closure_11();
+  const tmp = yield outer2_11();
   let obj1 = tmp;
   if (null == tmp) {
     obj = { error: "unable to load stripe" };
@@ -37,7 +49,7 @@ async function _authenticatePaymentIntentForPaymentId(paymentId, arg1) {
     } else {
       const obj2 = {};
       let tmp4 = tmp25;
-      if (paymentIntent.status === constants.REQUIRES_PAYMENT_METHOD) {
+      if (paymentIntent.status === outer2_9.REQUIRES_PAYMENT_METHOD) {
         tmp4 = null != paymentIntent.last_payment_error;
       }
       let tmp5 = tmp4;
@@ -48,12 +60,12 @@ async function _authenticatePaymentIntentForPaymentId(paymentId, arg1) {
         obj2.payment_method = paymentIntent.last_payment_error.payment_method.id;
       }
       const status = paymentIntent.status;
-      if (constants.REQUIRES_PAYMENT_METHOD !== status) {
-        if (constants.REQUIRES_CONFIRMATION !== status) {
-          if (constants.REQUIRES_ACTION !== status) {
-            if (constants.SUCCEEDED !== status) {
-              if (constants.PROCESSING !== status) {
-                const CANCELED = constants.CANCELED;
+      if (outer2_9.REQUIRES_PAYMENT_METHOD !== status) {
+        if (outer2_9.REQUIRES_CONFIRMATION !== status) {
+          if (outer2_9.REQUIRES_ACTION !== status) {
+            if (outer2_9.SUCCEEDED !== status) {
+              if (outer2_9.PROCESSING !== status) {
+                const CANCELED = outer2_9.CANCELED;
                 const obj3 = {};
                 const _HermesInternal = HermesInternal;
                 obj3.error = "Invalid Payment Intent status: " + paymentIntent.status;
@@ -77,30 +89,26 @@ async function _authenticatePaymentIntentForPaymentId(paymentId, arg1) {
 }
 function getStripeElementLocale(arg0) {
   let tmp = arg0;
-  if (null != closure_10[arg0]) {
+  if (null != table[arg0]) {
     tmp = tmp2;
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ Endpoints: closure_6, PaymentSettings: closure_7 } = arg1(dependencyMap[3]));
-let importDefaultResult = importDefault(dependencyMap[4]);
+({ Endpoints: closure_6, PaymentSettings: closure_7 } = ME);
 importDefaultResult = new importDefaultResult("StripeUtils");
 let closure_9 = { REQUIRES_PAYMENT_METHOD: "requires_payment_method", REQUIRES_CONFIRMATION: "requires_confirmation", REQUIRES_ACTION: "requires_action", PROCESSING: "processing", CANCELED: "canceled", SUCCEEDED: "succeeded" };
-let closure_10 = { player_mux_plugin_name: null, player_mux_plugin_version: "title", 9223372036854775807: "__closure" };
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("utils/StripeUtils.tsx");
+let closure_10 = { "en-US": "en", "zh-CN": "zh", "sv-SE": "sv" };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/StripeUtils.tsx");
 
 export const validateExpiry = function validateExpiry(arg0) {
-  const tmp = callback2(function parseExpString(str) {
+  const tmp = callback2((function parseExpString(str) {
+    let closure_0 = str;
     function throwErr(arg0) {
       let str = "";
       if (null != arg0) {
         str = arg0;
       }
-      return "You passed an invalid expiration date " + arg0 + str + "Please pass a string containing a numeric month and year such as `01-17` or `2015 / 05`";
+      return "You passed an invalid expiration date " + closure_0 + str + "Please pass a string containing a numeric month and year such as `01-17` or `2015 / 05`";
     }
     const parts = str.split(/[.\-/\s]+/g);
     if (2 !== parts.length) {
@@ -125,10 +133,10 @@ export const validateExpiry = function validateExpiry(arg0) {
     } else {
       items1 = [mapped[0], mapped[1]];
     }
-    const tmp3 = callback(items1, 2);
+    const tmp3 = outer1_4(items1, 2);
     const first = tmp3[0];
     if (first > 12) {
-      const _HermesInternal = HermesInternal;
+      let _HermesInternal = HermesInternal;
       throwErr("Month must be a number 1-12, not " + first + ".");
     }
     let sum = tmp5;
@@ -137,7 +145,7 @@ export const validateExpiry = function validateExpiry(arg0) {
     }
     const items2 = [first, sum];
     return items2;
-  }(arg0), 2);
+  })(arg0), 2);
   const date = new Date(tmp[1], tmp[0]);
   date.setMonth(date.getMonth() - 1);
   date.setMonth(date.getMonth() + 1, 1);
@@ -216,7 +224,7 @@ export const parseStripePaymentMethod = function parseStripePaymentMethod(billin
   return obj;
 };
 export const parseBillingAddressInfoToStripeBillingDetails = function parseBillingAddressInfoToStripeBillingDetails(name) {
-  let obj = { name: name.name, address: obj };
+  obj = { name: name.name, address: obj };
   obj = { line1: name.line1, line2: name.line2, city: name.city, state: name.state, postal_code: name.postalCode, country: name.country };
   return obj;
 };
@@ -225,6 +233,6 @@ export const authenticatePaymentIntentForPaymentId = function authenticatePaymen
 };
 export { getStripeElementLocale };
 export const useStripeLocale = function useStripeLocale() {
-  const items = [closure_5];
-  return arg1(dependencyMap[7]).useStateFromStores(items, () => callback(locale.locale));
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_13(outer1_5.locale));
 };

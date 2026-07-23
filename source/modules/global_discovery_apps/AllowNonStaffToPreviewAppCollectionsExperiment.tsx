@@ -1,13 +1,13 @@
-// Module ID: 11227
-// Function ID: 87407
+// Module ID: 11237
+// Function ID: 87457
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 11227 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": true, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/global_discovery_apps/AllowNonStaffToPreviewAppCollectionsExperiment.tsx");
+// Module 11237 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2025-01-allow-nonstaff-to-preview-app-collections", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/global_discovery_apps/AllowNonStaffToPreviewAppCollectionsExperiment.tsx");
 
 export default apexExperiment;

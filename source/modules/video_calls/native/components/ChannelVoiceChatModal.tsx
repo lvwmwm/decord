@@ -1,32 +1,33 @@
-// Module ID: 10196
-// Function ID: 78717
+// Module ID: 10208
+// Function ID: 78789
 // Name: ChannelVoiceChatModal
-// Dependencies: []
+// Dependencies: [31, 33, 4320, 4323, 9112, 4654, 4011, 10209, 2]
 // Exports: default
 
-// Module 10196 (ChannelVoiceChatModal)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChatModal.tsx");
+// Module 10208 (ChannelVoiceChatModal)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("computeDefaultGroupDmNameFromUserIds").fileFinishedImporting("modules/video_calls/native/components/ChannelVoiceChatModal.tsx");
 
 export default function ChannelVoiceChatModal(channel) {
   channel = channel.channel;
-  const arg1 = channel;
-  const tmp = importDefault(dependencyMap[2])(channel);
+  const tmp = importDefault(4320)(channel);
   const items = [channel.id];
   const effect = React.useEffect(() => {
-    callback(closure_2[3]).updateChatOpen(channel.id, true);
+    outer1_1(outer1_2[3]).updateChatOpen(channel.id, true);
     return () => {
-      callback(closure_2[3]).updateChatOpen(id.id, false);
+      outer2_1(outer2_2[3]).updateChatOpen(outer1_0.id, false);
     };
   }, items);
-  const obj = { screenKey: "StageVoiceChat" };
+  let obj = { screenKey: "StageVoiceChat" };
   let str = "";
   if (null != tmp) {
     str = tmp;
   }
   obj.title = str;
-  obj.titleIcon = jsx(arg1(dependencyMap[5]).StageIcon, { size: "sm" });
+  obj.titleIcon = jsx(channel(4654).StageIcon, { size: "sm" });
   obj.render = function render() {
     let obj = {};
     const guild_id = channel.guild_id;
@@ -36,8 +37,8 @@ export default function ChannelVoiceChatModal(channel) {
     }
     obj.value = tmp2;
     obj = { channel, inModal: true };
-    obj.children = callback2(callback(closure_2[7]), obj);
-    return callback2(callback(closure_2[6]).Provider, obj);
+    obj.children = outer1_4(outer1_1(outer1_2[7]), obj);
+    return outer1_4(outer1_1(outer1_2[6]).Provider, obj);
   };
-  return jsx(importDefault(dependencyMap[4]), obj);
+  return jsx(importDefault(9112), { screenKey: "StageVoiceChat" });
 };

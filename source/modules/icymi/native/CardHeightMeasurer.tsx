@@ -1,20 +1,21 @@
-// Module ID: 15132
-// Function ID: 114179
+// Module ID: 15247
+// Function ID: 116348
 // Name: CardHeightMeasurer
-// Dependencies: []
+// Dependencies: [31, 27, 33, 15180, 8321, 2]
 
-// Module 15132 (CardHeightMeasurer)
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 15247 (CardHeightMeasurer)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo((children) => {
   const itemId = children.itemId;
-  const arg1 = itemId;
   const items = [itemId];
   return <View onLayout={importAllResult.useCallback((nativeEvent) => {
-    callback(closure_2[4]).setCardHeight(itemId, nativeEvent.nativeEvent.layout.height);
-  }, items)} pointerEvents="box-none" style={{ width: importAllResult.useContext(arg1(dependencyMap[3]).ICYMIContext).width, alignSelf: "center" }}>{arg0.children}</View>;
+    outer1_1(outer1_2[4]).setCardHeight(itemId, nativeEvent.nativeEvent.layout.height);
+  }, items)} pointerEvents="box-none" style={{ width: importAllResult.useContext(itemId(15180).ICYMIContext).width, alignSelf: "center" }}>{arg0.children}</View>;
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/icymi/native/CardHeightMeasurer.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/icymi/native/CardHeightMeasurer.tsx");
 
 export const CardHeightMeasurer = memoResult;

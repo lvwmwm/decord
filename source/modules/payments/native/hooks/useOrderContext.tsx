@@ -1,27 +1,27 @@
-// Module ID: 8804
-// Function ID: 69417
+// Module ID: 8811
+// Function ID: 69458
 // Name: useOrderContext
-// Dependencies: []
+// Dependencies: [57, 31, 2]
 // Exports: useOrderContext
 
-// Module 8804 (useOrderContext)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/payments/native/hooks/useOrderContext.tsx");
+// Module 8811 (useOrderContext)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/payments/native/hooks/useOrderContext.tsx");
 
 export const useOrderContext = function useOrderContext(initialOrder, NativeGiftContext) {
-  const tmp = callback(React.useState(initialOrder), 2);
-  const first = tmp[0];
-  let callback = first;
-  const React = tmp3;
-  callback = React.useCallback((arg0) => {
-    const first = arg0;
+  let tmp = first(React.useState(initialOrder), 2);
+  first = tmp[0];
+  React = tmp3;
+  const callback = React.useCallback((arg0) => {
+    let _slicedToArray = arg0;
     tmp3((arg0) => {
       let tmp = arg0;
       if (null != arg0) {
         const obj = {};
         const merged = Object.assign(arg0);
-        obj["revision"] = arg0;
+        obj["revision"] = _slicedToArray;
         tmp = obj;
       }
       return tmp;
@@ -29,7 +29,7 @@ export const useOrderContext = function useOrderContext(initialOrder, NativeGift
   }, []);
   const items = [first, tmp[1], callback];
   return React.useMemo(() => {
-    const obj = { order: first, setOrder: tmp3, setRevision: callback };
+    const obj = { order: first, setOrder: result, setRevision: callback };
     let id;
     if (null != first) {
       id = first.id;
@@ -39,7 +39,7 @@ export const useOrderContext = function useOrderContext(initialOrder, NativeGift
     if (null != first) {
       const order_line_items = first.order_line_items;
       if (null != order_line_items) {
-        const first = order_line_items[0];
+        first = order_line_items[0];
         if (null != first) {
           id1 = first.id;
         }

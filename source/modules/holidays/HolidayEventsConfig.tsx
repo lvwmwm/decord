@@ -1,31 +1,28 @@
-// Module ID: 15947
-// Function ID: 122313
+// Module ID: 16064
+// Function ID: 124486
 // Name: useIsExperimentEligible
-// Dependencies: []
+// Dependencies: [10248, 1212, 16065, 16066, 1334, 2]
 
-// Module 15947 (useIsExperimentEligible)
+// Module 16064 (useIsExperimentEligible)
 let obj = {
-  "Null": false,
-  "Null": false,
-  "Null": false,
-  "Null": false,
-  "Null": false,
-  "Null": false,
+  experiment: null,
   useIsExperimentEligible() {
     return false;
   },
   getIsExperimentEligible() {
     return false;
   },
-  soundpack: require(dependencyMap[0]).Soundpacks.WINTER_HOLIDAY,
-  soundpackLabel: require(dependencyMap[1]).t.Z5OQNp
+  startTimeMs: 1766163600000,
+  endTimeMs: 1767632400000,
+  isDesktopOnly: true,
+  soundpack: require("Soundpacks").Soundpacks.WINTER_HOLIDAY,
+  soundpackLabel: require("getSystemLocale").t.Z5OQNp
 };
-obj = { webmDark: importDefault(dependencyMap[2]), webmLight: importDefault(dependencyMap[3]) };
+obj = { webmDark: require("registerAsset"), webmLight: require("registerAsset") };
 obj.appSpinnerSources = obj;
-obj.coachmarkDismissibleContent = require(dependencyMap[4]).DismissibleContent.HOLIDAY_COACHMARK_WINTER_2025;
+obj.coachmarkDismissibleContent = require("DismissibleContent").DismissibleContent.HOLIDAY_COACHMARK_WINTER_2025;
 obj.coachmarkBackgroundColor = "#1170ed";
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/holidays/HolidayEventsConfig.tsx");
+const result = require("registerAsset").fileFinishedImporting("modules/holidays/HolidayEventsConfig.tsx");
 
 export default obj;
 export const HolidayEmojiAnimationType = { THROW_EMOJI: 0, [0]: "THROW_EMOJI", SNOW: 1, [1]: "SNOW" };

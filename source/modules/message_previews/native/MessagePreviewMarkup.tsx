@@ -1,17 +1,20 @@
-// Module ID: 10246
-// Function ID: 79211
+// Module ID: 10258
+// Function ID: 79279
 // Name: getRules
-// Dependencies: []
+// Dependencies: [4564, 4565, 10259, 3829, 4120, 3808, 1362, 2]
 // Exports: renderMessagePreviewMarkup
 
-// Module 10246 (getRules)
+// Module 10258 (getRules)
+import importDefaultResult from "priv";
+
+const require = arg1;
 function getRules(layout) {
   let color;
   let fontScale;
   let maxFontSizeMultiplier;
   ({ color, fontScale, maxFontSizeMultiplier } = layout);
-  const items = [importDefault(dependencyMap[1]).RULES, importDefault(dependencyMap[2])(layout.layout, color, fontScale, maxFontSizeMultiplier)];
-  return importDefault(dependencyMap[0])(items);
+  const items = [importDefault(4565).RULES, importDefault(10259)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
+  return importDefault(4564)(items);
 }
 function renderASTToReact(layout) {
   let initialParserState;
@@ -19,13 +22,13 @@ function renderASTToReact(layout) {
   ({ tree, initialParserState } = layout);
   const obj = { layout: layout.layout, color: layout.color, fontScale: layout.fontScale, maxFontSizeMultiplier: layout.maxFontSizeMultiplier };
   const tmp = getRules({ layout: layout.layout, color: layout.color, fontScale: layout.fontScale, maxFontSizeMultiplier: layout.maxFontSizeMultiplier });
-  const obj2 = importDefault(dependencyMap[3]);
-  return obj2.reactFor(importDefault(dependencyMap[3]).ruleOutput(tmp, "react"))(tree, initialParserState);
+  const obj2 = importDefault(3829);
+  return obj2.reactFor(importDefault(3829).ruleOutput(tmp, "react"))(tree, initialParserState);
 }
 function getMessagePreviewASTParser(layout) {
   const obj = { layout: layout.layout, color: layout.color, fontScale: layout.fontScale, maxFontSizeMultiplier: layout.maxFontSizeMultiplier };
   const tmp = getRules({ layout: layout.layout, color: layout.color, fontScale: layout.fontScale, maxFontSizeMultiplier: layout.maxFontSizeMultiplier });
-  return importDefault(dependencyMap[4]).astParserFor(tmp);
+  return importDefault(4120).astParserFor(tmp);
 }
 function getOrParseMessagePreviewMarkupAST(arg0) {
   let color;
@@ -57,9 +60,8 @@ function getOrParseMessagePreviewMarkupAST(arg0) {
     return tmp11Result;
   }
 }
-let importDefaultResult = importDefault(dependencyMap[6]);
 importDefaultResult = new importDefaultResult({ max: 2000 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/message_previews/native/MessagePreviewMarkup.tsx");
+let result = require("defaultReactFn").fileFinishedImporting("modules/message_previews/native/MessagePreviewMarkup.tsx");
 
 export { renderASTToReact };
 export { getMessagePreviewASTParser };
@@ -75,7 +77,7 @@ export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fo
   ({ content, muted, layout } = fontScale);
   ({ guildId, channelId } = fontScale);
   if (layout === undefined) {
-    layout = arg1(dependencyMap[5]).ChannelListLayoutTypes.COMPACT;
+    layout = require(3808) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT;
   }
   ({ color, disableAnimatedEmoji, postProcessor } = fontScale);
   if (disableAnimatedEmoji === undefined) {
@@ -89,7 +91,7 @@ export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fo
   if ("" === content) {
     return null;
   } else {
-    let obj = { mentionChannels: [] };
+    let obj = { allowLinks: true, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], mentionGames: null, soundboardSounds: null, formatInline: true, noStyleAndInteraction: true, allowHeading: true, allowList: true, disableAutoBlockNewlines: true, previewLinkTarget: false };
     const _Map = Map;
     const map = new Map();
     obj.mentionGames = map;

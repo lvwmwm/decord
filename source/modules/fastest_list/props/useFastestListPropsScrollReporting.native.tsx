@@ -1,26 +1,24 @@
-// Module ID: 9247
-// Function ID: 72290
+// Module ID: 9254
+// Function ID: 72331
 // Name: useFastestListPropsScrollReporting
-// Dependencies: []
+// Dependencies: [3991, 2]
 // Exports: default
 
-// Module 9247 (useFastestListPropsScrollReporting)
+// Module 9254 (useFastestListPropsScrollReporting)
 let closure_2 = { code: "function useFastestListPropsScrollReportingNativeTsx1(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx");
+let result = require("set").fileFinishedImporting("modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx");
 
 export default function useFastestListPropsScrollReporting(scrollReporting, horizontal) {
-  const require = horizontal;
+  const _require = horizontal;
   let scrollPosition;
   if ("animatedScrollPosition" === scrollReporting.scrollReporting) {
     scrollPosition = scrollReporting.scrollPosition;
   }
-  const dependencyMap = scrollPosition;
-  require(dependencyMap[0]);
+  _require(scrollPosition[0]);
   const fn = function n(contentOffset) {
     if (null != scrollPosition) {
       contentOffset = contentOffset.contentOffset;
-      const result = scrollPosition.set(arg1 ? contentOffset.x : contentOffset.y);
+      const result = scrollPosition.set(closure_0 ? contentOffset.x : contentOffset.y);
     }
   };
   let obj = { scrollPosition, horizontal };

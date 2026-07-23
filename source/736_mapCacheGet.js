@@ -1,10 +1,10 @@
 // Module ID: 736
-// Function ID: 8775
+// Function ID: 8776
 // Name: mapCacheGet
-// Dependencies: []
+// Dependencies: [734]
 
 // Module 736 (mapCacheGet)
 
 export default function mapCacheGet(arg0) {
-  return require(dependencyMap[0])(this, arg0).get(arg0);
+  return require(734) /* getMapData */(this, arg0).get(arg0);
 };

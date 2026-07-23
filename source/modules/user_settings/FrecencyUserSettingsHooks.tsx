@@ -1,19 +1,21 @@
-// Module ID: 9577
-// Function ID: 74636
+// Module ID: 9584
+// Function ID: 74677
 // Name: useFrecencySettings
-// Dependencies: []
+// Dependencies: [31, 1316, 1331, 566, 2]
 // Exports: useFrecencySettings
 
-// Module 9577 (useFrecencySettings)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
+// Module 9584 (useFrecencySettings)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
 
 export const useFrecencySettings = function useFrecencySettings() {
   const effect = React.useEffect(() => {
-    const FrecencyUserSettingsActionCreators = callback(closure_1[2]).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = outer1_0(outer1_1[2]).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
-  const items = [closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => obj.frecencyWithoutFetchingLatest);
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.frecencyWithoutFetchingLatest);
 };

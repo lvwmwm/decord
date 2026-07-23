@@ -1,40 +1,41 @@
-// Module ID: 16298
-// Function ID: 125774
+// Module ID: 16415
+// Function ID: 127948
 // Name: useRoleSubscriptionFormat
-// Dependencies: []
+// Dependencies: [31, 1911, 1910, 1838, 14094, 653, 566, 2]
 // Exports: default
 
-// Module 16298 (useRoleSubscriptionFormat)
-let closure_2 = importAll(dependencyMap[0]);
-const hasPermission = arg1(dependencyMap[1]).hasPermission;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[4]).GuildRoleSubscriptionFormat;
-const Permissions = arg1(dependencyMap[5]).Permissions;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionFormat.tsx");
+// Module 16415 (useRoleSubscriptionFormat)
+import result from "result";
+import { hasPermission } from "GuildRoleRecordTypeTag";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import { GuildRoleSubscriptionFormat as closure_6 } from "MAX_SUBSCRIPTION_TIERS";
+import { Permissions } from "ME";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionFormat.tsx");
 
 export default function useRoleSubscriptionFormat(arg0) {
-  const arg1 = arg0;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_5, closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+  const _require = arg0;
+  let obj = _require(stateFromStores[6]);
+  const items = [closure_5, _createForOfIteratorHelperLoose];
+  stateFromStores = obj.useStateFromStores(items, () => {
+    const guild = outer1_5.getGuild(closure_0);
     let everyoneRole;
     if (null != guild) {
-      everyoneRole = everyoneRole.getEveryoneRole(guild);
+      everyoneRole = outer1_4.getEveryoneRole(guild);
     }
     return everyoneRole;
   });
-  const dependencyMap = stateFromStores;
   const items1 = [stateFromStores];
   const memo = React.useMemo(() => {
     if (null != stateFromStores) {
-      if (!callback(stateFromStores, constants2.VIEW_CHANNEL)) {
-        let SOME_CHANNELS = constants.ALL_CHANNELS;
+      if (!outer1_3(stateFromStores, outer1_7.VIEW_CHANNEL)) {
+        let SOME_CHANNELS = outer1_6.ALL_CHANNELS;
       }
       return SOME_CHANNELS;
     }
-    SOME_CHANNELS = constants.SOME_CHANNELS;
+    SOME_CHANNELS = outer1_6.SOME_CHANNELS;
   }, items1);
   obj = { format: memo, isFullServerGating: memo === constants.ALL_CHANNELS };
   return obj;

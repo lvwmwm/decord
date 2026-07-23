@@ -1,19 +1,20 @@
 // Module ID: 1461
-// Function ID: 16994
+// Function ID: 16995
 // Name: CommonActions
-// Dependencies: []
+// Dependencies: [1462, 1463, 1464, 1466, 1468, 1467]
 
 // Module 1461 (CommonActions)
-for (const key10016 in arg1(arg6[0])) {
+for (const key10016 in require("module_1462")) {
   let tmp2 = key10016;
-  arg5[key10016] = arg1(arg6[0])[key10016];
+  arg5[key10016] = require("module_1462")[key10016];
+  continue;
 }
 
-export const CommonActions = importAll(dependencyMap[1]);
-export const BaseRouter = importDefault(dependencyMap[2]);
-export const DrawerActions = require(dependencyMap[3]).DrawerActions;
-export const DrawerRouter = importDefault(dependencyMap[3]);
-export const StackActions = require(dependencyMap[4]).StackActions;
-export const StackRouter = importDefault(dependencyMap[4]);
-export const TabActions = require(dependencyMap[5]).TabActions;
-export const TabRouter = importDefault(dependencyMap[5]);
+export const CommonActions = require("goBack");
+export const BaseRouter = require("nanoid");
+export const DrawerActions = require("DrawerRouter").DrawerActions;
+export const DrawerRouter = require("DrawerRouter");
+export const StackActions = require("StackRouter").StackActions;
+export const StackRouter = require("StackRouter");
+export const TabActions = require("getRouteHistory").TabActions;
+export const TabRouter = require("getRouteHistory");

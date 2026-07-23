@@ -1,13 +1,15 @@
-// Module ID: 7767
-// Function ID: 61700
+// Module ID: 7773
+// Function ID: 61737
 // Name: XNeutralIcon
-// Dependencies: []
+// Dependencies: [31, 33, 3833, 7774, 2]
 // Exports: XNeutralIcon
 
-// Module 7767 (XNeutralIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Icon/native/redesign/generated/XNeutralIcon.tsx");
+// Module 7773 (XNeutralIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("BaseIconImage").fileFinishedImporting("design/components/Icon/native/redesign/generated/XNeutralIcon.tsx");
 
 export const XNeutralIcon = function XNeutralIcon(color) {
   let str = color.color;
@@ -18,7 +20,7 @@ export const XNeutralIcon = function XNeutralIcon(color) {
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[3]), color: str, style: color.style };
+  obj = { source: require(7774) /* registerAsset */, color: str, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[2]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(7774) /* registerAsset */, color: str, style: color.style });
 };

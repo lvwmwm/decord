@@ -1,26 +1,28 @@
-// Module ID: 13939
-// Function ID: 105926
+// Module ID: 14053
+// Function ID: 108082
 // Name: useVideoExternallyPaused
-// Dependencies: []
+// Dependencies: [3823, 9303, 3981, 10474, 566, 4472, 477, 2]
 // Exports: useVideoExternallyPaused
 
-// Module 13939 (useVideoExternallyPaused)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx");
+// Module 14053 (useVideoExternallyPaused)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx");
 
 export const useVideoExternallyPaused = function useVideoExternallyPaused(id, arg1) {
-  const activeContextMenu = arg1(dependencyMap[1]).useActiveContextMenu();
-  const obj = arg1(dependencyMap[1]);
-  const openModalKey = arg1(dependencyMap[2]).useOpenModalKey();
-  const obj2 = arg1(dependencyMap[2]);
-  const obj3 = arg1(dependencyMap[3]);
-  const tmp3 = openModalKey !== arg1(dependencyMap[3]).getVideoQuestModalKey(id);
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => key.getKey());
-  const obj4 = arg1(dependencyMap[4]);
-  const obj5 = arg1(dependencyMap[5]);
-  const tmp5 = arg1(dependencyMap[5]).useAlertStore((alerts) => alerts.alerts).length > 0;
-  let tmp6 = arg1(dependencyMap[6]).isIOS() && arg1;
+  const activeContextMenu = require(9303) /* updateContextMenuState */.useActiveContextMenu();
+  const obj = require(9303) /* updateContextMenuState */;
+  const openModalKey = require(3981) /* _createForOfIteratorHelperLoose */.useOpenModalKey();
+  const obj2 = require(3981) /* _createForOfIteratorHelperLoose */;
+  const obj3 = require(10474) /* sendVideoProgress */;
+  const tmp3 = openModalKey !== require(10474) /* sendVideoProgress */.getVideoQuestModalKey(id);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getKey());
+  const obj4 = require(566) /* initialize */;
+  const obj5 = require(4472) /* useAlertStore */;
+  const tmp5 = require(4472) /* useAlertStore */.useAlertStore((alerts) => alerts.alerts).length > 0;
+  let tmp6 = require(477) /* set */.isIOS() && arg1;
   if (!tmp6) {
     tmp6 = null != stateFromStores;
   }

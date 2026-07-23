@@ -1,10 +1,13 @@
 // Module ID: 1467
-// Function ID: 17028
+// Function ID: 17029
 // Name: getRouteHistory
-// Dependencies: []
+// Dependencies: [1464, 1465]
 
 // Module 1467 (getRouteHistory)
-const obj = {
+const require = arg1;
+const module = arg2;
+let dependencyMap = arg6;
+let obj = {
   jumpTo(name, params) {
     const payload = { name, params };
     return { type: "JUMP_TO", payload };
@@ -12,7 +15,7 @@ const obj = {
 };
 function getRouteHistory(routes, index, arg2, arg3) {
   let diff = index;
-  index = arg3;
+  let closure_0 = arg3;
   let obj = { type: "route", key: routes[index].key };
   const items = [obj];
   if ("order" === arg2) {
@@ -29,7 +32,7 @@ function getRouteHistory(routes, index, arg2, arg3) {
       items.unshift(obj);
     }
   } else if ("initialRoute" === arg2) {
-    const findIndexResult = routes.findIndex((name) => name.name === arg3);
+    const findIndexResult = routes.findIndex((name) => name.name === closure_0);
     let num = 0;
     if (-1 !== findIndexResult) {
       num = findIndexResult;
@@ -43,7 +46,7 @@ function getRouteHistory(routes, index, arg2, arg3) {
 }
 function changeIndex(history, index) {
   if ("history" === arg2) {
-    index = key;
+    const key = history.routes[index].key;
     history = history.history;
     const found = history.filter((type) => {
       let tmp = "route" === type.type;
@@ -52,7 +55,7 @@ function changeIndex(history, index) {
       }
       return tmp;
     });
-    let obj = { type: "route", key: history.routes[index].key };
+    let obj = { type: "route", key };
     let combined = found.concat(obj);
   } else {
     combined = getRouteHistory(history.routes, index, arg2, arg3);
@@ -62,31 +65,32 @@ function changeIndex(history, index) {
 }
 arg5.default = function TabRouter(arg0) {
   let backBehavior;
-  ({ initialRouteName: closure_0, backBehavior } = arg0);
+  let require;
+  ({ initialRouteName: require, backBehavior } = arg0);
   let str = "firstRoute";
   if (undefined !== backBehavior) {
     str = backBehavior;
   }
-  const arg2 = str;
-  const obj = {
+  obj = {
     type: "tab",
     getInitialState(arg0) {
+      let closure_0;
       let routeNames;
       ({ routeNames, routeParamList: closure_0 } = arg0);
       let num = 0;
-      if (undefined !== callback) {
+      if (undefined !== closure_0) {
         num = 0;
-        if (routeNames.includes(callback)) {
-          num = routeNames.indexOf(callback);
+        if (routeNames.includes(closure_0)) {
+          num = routeNames.indexOf(closure_0);
         }
       }
       const mapped = routeNames.map((name) => {
-        const obj = { name, key: "" + name + "-" + callback(closure_2[1]).nanoid(), params: callback[name] };
+        const obj = { name, key: "" + name + "-" + outer2_0(outer2_2[1]).nanoid(), params: table[name] };
         return obj;
       });
-      const obj = { mcpTransport: 570425343, networkTransport: 42977857 };
-      const tmp4 = callback2(mapped, num, str, callback);
-      obj.key = "tab-" + callback(closure_2[1]).nanoid();
+      let obj = { stale: false, type: "tab" };
+      const tmp4 = outer1_4(mapped, num, str, closure_0);
+      obj.key = "tab-" + outer1_0(outer1_2[1]).nanoid();
       obj.index = num;
       obj.routeNames = routeNames;
       obj.history = tmp4;
@@ -94,15 +98,17 @@ arg5.default = function TabRouter(arg0) {
       return obj;
     },
     getRehydratedState(stale) {
+      let closure_0;
       let routeNames;
       ({ routeNames, routeParamList: closure_0 } = arg1);
-      let str = stale;
+      let closure_1 = stale;
       if (false === stale.stale) {
         return stale;
       } else {
         const mapped = routeNames.map((name) => {
-          const routes = name.routes;
-          const found = routes.find((name) => name.name === name);
+          const dependencyMap = name;
+          const routes = stale.routes;
+          const found = routes.find((name) => name.name === closure_0);
           const obj = { name };
           if (found) {
             if (found.name === name) {
@@ -110,12 +116,12 @@ arg5.default = function TabRouter(arg0) {
                 let key = found.key;
               }
               obj.key = key;
-              if (undefined !== name[name]) {
+              if (undefined !== dependencyMap[name]) {
                 let params;
                 if (found) {
                   params = found.params;
                 }
-                params = Object.assign({}, name[name], params);
+                params = Object.assign({}, dependencyMap[name], params);
               } else if (found) {
                 params = found.params;
               }
@@ -123,7 +129,7 @@ arg5.default = function TabRouter(arg0) {
               return tmp3({}, found, obj);
             }
           }
-          key = "" + name + "-" + name(mapped[1]).nanoid();
+          key = "" + name + "-" + outer2_0(outer2_2[1]).nanoid();
         });
         let index;
         if (null != stale) {
@@ -141,74 +147,85 @@ arg5.default = function TabRouter(arg0) {
         const history = stale.history;
         let found;
         if (null != history) {
-          found = history.filter((arg0) => mapped.find((key) => key.key === key.key));
+          found = history.filter((arg0) => {
+            let closure_0 = arg0;
+            return mapped.find((key) => key.key === key.key);
+          });
         }
         if (null == found) {
           found = [];
         }
-        const obj = { mcpTransport: 570425343, networkTransport: 42977857 };
+        let obj = { stale: false, type: "tab" };
         const _HermesInternal = HermesInternal;
-        str = "tab-";
-        obj.key = "tab-" + callback(mapped[1]).nanoid();
+        obj.key = "tab-" + outer1_0(outer1_2[1]).nanoid();
         obj.index = bound;
         obj.routeNames = routeNames;
         obj.history = found;
         obj.routes = mapped;
-        return callback3(obj, bound, str, callback);
+        return outer1_5(obj, bound, closure_1, closure_0);
       }
     },
     getStateForRouteNamesChange(history) {
+      let closure_2;
       let routeNames;
-      ({ routeNames, routeParamList: closure_1, routeKeyChanges: closure_2 } = arg1);
+      let str;
+      let closure_0 = history;
+      ({ routeNames, routeParamList: str, routeKeyChanges: closure_2 } = arg1);
       const mapped = routeNames.map((name) => {
-        const routes = name.routes;
+        const history = name;
+        const routes = history.routes;
         let found = routes.find((name) => {
-          let tmp = name.name === name;
+          let tmp = name.name === closure_0;
           if (tmp) {
-            tmp = !closure_2.includes(name.name);
+            tmp = !outer1_2.includes(name.name);
           }
           return tmp;
         });
         if (!found) {
           const obj = { name };
           const _HermesInternal = HermesInternal;
-          obj.key = "" + name + "-" + name(closure_2[1]).nanoid();
-          obj.params = closure_1[name];
+          obj.key = "" + name + "-" + outer2_0(outer2_2[1]).nanoid();
+          obj.params = table[name];
           found = obj;
-          const obj2 = name(closure_2[1]);
+          const obj2 = outer2_0(outer2_2[1]);
         }
         return found;
       });
       const bound = Math.max(0, routeNames.indexOf(history.routes[history.index].name));
       history = history.history;
-      const found = history.filter((type) => {
+      let found = history.filter((type) => {
+        let closure_0 = type;
         let found = "route" !== type.type;
         if (!found) {
-          found = mapped.find((key) => key.key === key.key);
+          found = mapped.find((key) => key.key === type.key);
         }
         return found;
       });
       let tmp3 = found;
       if (!found.length) {
-        tmp3 = callback2(mapped, bound, str, history);
+        tmp3 = outer1_4(mapped, bound, str, closure_0);
       }
-      const obj = { history: tmp3, routeNames, routes: mapped, index: bound };
+      let obj = { history: tmp3, routeNames, routes: mapped, index: bound };
       return Object.assign({}, history, obj);
     },
     getStateForRouteFocus(routes) {
+      let closure_0 = arg1;
       routes = routes.routes;
-      const findIndexResult = routes.findIndex((key) => key.key === arg1);
+      const findIndexResult = routes.findIndex((key) => key.key === closure_0);
       let tmp2 = routes;
       if (-1 !== findIndexResult) {
         tmp2 = routes;
         if (findIndexResult !== routes.index) {
-          tmp2 = callback3(routes, findIndexResult, str, arg1);
+          tmp2 = outer1_5(routes, findIndexResult, str, closure_0);
         }
       }
       return tmp2;
     },
     getStateForAction(history, type) {
-      ({ routeParamList: closure_1, routeGetIdList: closure_2 } = arg2);
+      let closure_2;
+      let str;
+      let closure_0 = type;
+      ({ routeParamList: str, routeGetIdList: closure_2 } = arg2);
       type = type.type;
       if ("JUMP_TO" !== type) {
         if ("NAVIGATE" !== type) {
@@ -220,7 +237,7 @@ arg5.default = function TabRouter(arg0) {
               const findIndexResult = routes3.findIndex((key) => key.key === key);
               let merged = null;
               if (-1 !== findIndexResult) {
-                const _Object = Object;
+                let _Object = Object;
                 let obj = {};
                 history = history.history;
                 obj.history = history.slice(0, -1);
@@ -230,7 +247,7 @@ arg5.default = function TabRouter(arg0) {
               return merged;
             }
           } else {
-            obj = str(closure_2[0]);
+            obj = str(outer1_2[0]);
             return obj.getStateForAction(history, type);
           }
         }
@@ -239,57 +256,57 @@ arg5.default = function TabRouter(arg0) {
       if ("NAVIGATE" === type.type) {
         if (type.payload.key) {
           const routes2 = history.routes;
-          findIndexResult1 = routes2.findIndex((key) => key.key === arg1.payload.key);
+          findIndexResult1 = routes2.findIndex((key) => key.key === type.payload.key);
         }
         let tmp7 = null;
         if (-1 !== findIndexResult1) {
-          const _Object2 = Object;
+          let _Object2 = Object;
           obj = {};
           let routes = history.routes;
-          obj.routes = routes.map((params, self) => {
-            if (self !== findIndexResult1) {
+          obj.routes = routes.map((params) => {
+            if (arg1 !== findIndexResult1) {
               return params;
             } else {
               let tmp;
-              if (null != closure_2[params.name]) {
+              if (null != table[params.name]) {
                 let obj = { params: params.params };
                 tmp = tmp27(obj);
               }
               let tmp2;
-              if (null != closure_2[params.name]) {
-                obj = { params: self.payload.params };
+              if (null != table[params.name]) {
+                obj = { params: type.payload.params };
                 tmp2 = tmp27(obj);
               }
               if (tmp === tmp2) {
                 let key = params.key;
               } else {
                 const _HermesInternal = HermesInternal;
-                key = "" + params.name + "-" + self(closure_2[1]).nanoid();
-                const obj3 = self(closure_2[1]);
+                key = "" + params.name + "-" + outer2_0(outer2_2[1]).nanoid();
+                const obj3 = outer2_0(outer2_2[1]);
               }
-              if ("NAVIGATE" === self.type) {
-                if (self.payload.merge) {
+              if ("NAVIGATE" === type.type) {
+                if (type.payload.merge) {
                   if (tmp4) {
-                    if (undefined === self.payload.params) {
-                      if (undefined === closure_1[params.name]) {
+                    if (undefined === type.payload.params) {
+                      if (undefined === dependencyMap[params.name]) {
                         let params2 = params.params;
                       }
                     }
                     const _Object2 = Object;
                     const _Object3 = Object;
-                    params2 = Object.assign({}, closure_1[params.name], params.params, self.payload.params);
+                    params2 = Object.assign({}, dependencyMap[params.name], params.params, type.payload.params);
                   }
                 }
               }
-              if (undefined !== closure_1[params.name]) {
+              if (undefined !== dependencyMap[params.name]) {
                 const _Object = Object;
-                params = Object.assign({}, closure_1[params.name], self.payload.params);
+                params = Object.assign({}, dependencyMap[params.name], type.payload.params);
               } else {
-                params = self.payload.params;
+                params = type.payload.params;
               }
-              if ("NAVIGATE" === self.type) {
-                if (null != self.payload.path) {
-                  let path = self.payload.path;
+              if ("NAVIGATE" === type.type) {
+                if (null != type.payload.path) {
+                  let path = type.payload.path;
                 }
                 if (params !== params.params) {
                   const _Object4 = Object;
@@ -303,18 +320,18 @@ arg5.default = function TabRouter(arg0) {
               path = params.path;
             }
           });
-          tmp7 = callback3(Object.assign({}, history, obj), findIndexResult1, str, type);
+          tmp7 = outer1_5(Object.assign({}, history, obj), findIndexResult1, str, closure_0);
         }
         return tmp7;
       }
       routes = history.routes;
-      findIndexResult1 = routes.findIndex((name) => name.name === arg1.payload.name);
+      findIndexResult1 = routes.findIndex((name) => name.name === type.payload.name);
     },
     shouldActionChangeFocus(type) {
       return "NAVIGATE" === type.type;
     },
     actionCreators: obj
   };
-  return Object.assign({}, arg2(arg6[0]), obj);
+  return Object.assign({}, str(1464), obj);
 };
 arg5.TabActions = obj;

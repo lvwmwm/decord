@@ -1,14 +1,16 @@
-// Module ID: 10589
-// Function ID: 82638
+// Module ID: 10599
+// Function ID: 82688
 // Name: useCurrentEmbeddedActivity
-// Dependencies: []
+// Dependencies: [1347, 566, 2]
 // Exports: default
 
-// Module 10589 (useCurrentEmbeddedActivity)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedActivity.tsx");
+// Module 10599 (useCurrentEmbeddedActivity)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedActivity.tsx");
 
 export default function useCurrentEmbeddedActivity() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => currentEmbeddedActivity.getCurrentEmbeddedActivity());
+  const items = [_createForOfIteratorHelperLoose];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getCurrentEmbeddedActivity());
 };

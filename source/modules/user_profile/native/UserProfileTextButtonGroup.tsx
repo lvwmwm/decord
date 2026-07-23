@@ -1,18 +1,21 @@
-// Module ID: 11904
-// Function ID: 92139
+// Module ID: 11916
+// Function ID: 92192
 // Name: UserProfileTextButtonGroup
-// Dependencies: []
+// Dependencies: [31, 27, 5512, 33, 4130, 1450, 2]
 // Exports: default
 
-// Module 11904 (UserProfileTextButtonGroup)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const PROFILE_SIDE_PADDING = arg1(dependencyMap[2]).PROFILE_SIDE_PADDING;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[4]).createStyles({ container: {}, buttonArea: { flexGrow: 1 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_profile/native/UserProfileTextButtonGroup.tsx");
+// Module 11916 (UserProfileTextButtonGroup)
+import "result";
+import { View } from "get ActivityIndicator";
+import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", flexWrap: "wrap", gap: 12 }, buttonArea: { flexGrow: 1 } });
+let result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/user_profile/native/UserProfileTextButtonGroup.tsx");
 
 export default function UserProfileTextButtonGroup(arg0) {
   let maxWidth;
@@ -21,7 +24,7 @@ export default function UserProfileTextButtonGroup(arg0) {
   let style;
   ({ primaryButton, secondaryButton, maxWidth, style } = arg0);
   let items = callback3();
-  const width = importDefault(dependencyMap[5])().width;
+  const width = importDefault(1450)().width;
   let bound = width;
   if (null != maxWidth) {
     const _Math = Math;

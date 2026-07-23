@@ -1,24 +1,24 @@
 // Module ID: 594
 // Function ID: 7016
 // Name: createBaseEach
-// Dependencies: []
+// Dependencies: [595]
 
 // Module 594 (createBaseEach)
 
 export default function createBaseEach(arg0, arg1) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return (arg0, arg1) => {
     if (null == arg0) {
       return arg0;
-    } else if (arg0(arg1[0])(arg0)) {
+    } else if (callback(table[0])(arg0)) {
       let num = -1;
-      if (arg1) {
+      if (table) {
         num = length;
       }
       const _Object = Object;
       const ObjectResult = Object(arg0);
-      if (arg1) {
+      if (table) {
         let diff = tmp8 - 1;
         let tmp7 = tmp8;
       } else {
@@ -28,8 +28,8 @@ export default function createBaseEach(arg0, arg1) {
       if (tmp7) {
         if (false !== arg1(ObjectResult[diff], diff, ObjectResult)) {
           while (true) {
-            let tmp9 = arg1;
-            if (arg1) {
+            let tmp9 = table;
+            if (table) {
               let tmp12 = +diff;
               let diff1 = tmp12 - 1;
               let tmp11 = tmp12;
@@ -50,7 +50,7 @@ export default function createBaseEach(arg0, arg1) {
       }
       return arg0;
     } else {
-      return arg0(arg0, arg1);
+      return callback(arg0, arg1);
     }
   };
 };

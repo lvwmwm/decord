@@ -1,7 +1,7 @@
 // Module ID: 90
 // Function ID: 1520
 // Name: getSourceCodeScriptURL
-// Dependencies: []
+// Dependencies: [91, 93, 94, 95]
 // Exports: default
 
 // Module 90 (getSourceCodeScriptURL)
@@ -9,32 +9,32 @@ function getSourceCodeScriptURL() {
   if (null != scriptURL) {
     const tmp3 = scriptURL;
   } else {
-    const scriptURL = importDefault(dependencyMap[0]).getConstants().scriptURL;
-    const obj = importDefault(dependencyMap[0]);
+    scriptURL = importDefault(91).getConstants().scriptURL;
+    const obj = importDefault(91);
   }
   return tmp3;
 }
 function resolveAssetSource(source) {
   if (null != source) {
     if ("object" !== typeof source) {
-      const assetByID = require(dependencyMap[1]).getAssetByID(source);
+      const assetByID = require(93).getAssetByID(source);
       if (assetByID) {
-        let _default = require(dependencyMap[2]).default;
+        let _default = require(94) /* getScaledAssetPath */.default;
         if (undefined === first) {
-          const str = getSourceCodeScriptURL();
+          let str = getSourceCodeScriptURL();
           let match;
           if (null != str) {
             match = str.match(/^https?:\/\/.*?\//);
           }
-          let first = null;
+          first = null;
           if (match) {
             first = match[0];
           }
         }
         const prototype = _default.prototype;
-        _default = new _default(first, function getScriptURL() {
-          if (undefined === tmp4) {
-            const str = callback();
+        _default = new _default(first, (function getScriptURL() {
+          if (undefined === outer1_4) {
+            const str = outer1_7();
             let text = str;
             if (null == str) {
               let tmp4 = text;
@@ -48,9 +48,10 @@ function resolveAssetSource(source) {
                 }
               }
             }
+            outer1_4 = tmp4;
           }
-          return tmp4;
-        }(), assetByID);
+          return outer1_4;
+        })(), assetByID);
         if (closure_6) {
           for (const item10033 of closure_6) {
             let tmp15 = _default;
@@ -59,8 +60,6 @@ function resolveAssetSource(source) {
             if (null != item10033Result) {
               obj2.return();
               return item10033Result;
-            } else {
-              // continue
             }
           }
         }
@@ -68,16 +67,15 @@ function resolveAssetSource(source) {
       } else {
         return null;
       }
-      const obj3 = require(dependencyMap[1]);
+      const obj3 = require(93);
     }
   }
   return source;
 }
 let closure_6 = [];
-resolveAssetSource.pickScale = require(dependencyMap[3]).pickScale;
+resolveAssetSource.pickScale = require("pickScale").pickScale;
 resolveAssetSource.setCustomSourceTransformer = function setCustomSourceTransformer(arg0) {
   const items = [arg0];
-  let closure_6 = items;
 };
 resolveAssetSource.addCustomSourceTransformer = function addCustomSourceTransformer(arg0) {
 

@@ -1,11 +1,12 @@
 // Module ID: 645
 // Function ID: 7360
 // Name: clientLaunchId
-// Dependencies: []
+// Dependencies: [491, 2]
 
 // Module 645 (clientLaunchId)
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("../discord_common/js/packages/analytics-utils/clientLaunchId.tsx");
+import v1 from "v1";
 
-export const clientLaunchId = _module.v4();
+v1 = v1.v4();
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/analytics-utils/clientLaunchId.tsx");
+
+export const clientLaunchId = v1;

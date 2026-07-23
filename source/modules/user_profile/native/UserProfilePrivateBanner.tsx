@@ -1,39 +1,43 @@
-// Module ID: 12021
-// Function ID: 92886
+// Module ID: 12135
+// Function ID: 95037
 // Name: UserProfilePrivateBanner
-// Dependencies: []
+// Dependencies: [31, 27, 5512, 33, 4130, 689, 665, 4652, 4126, 1212, 2]
 // Exports: default
 
-// Module 12021 (UserProfilePrivateBanner)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { "Bool(true)": 140, "Bool(true)": null, "Bool(true)": "ad61eda1bea496e5c4dfb770ef28c56b", "Bool(true)": "server-invite-envelope", "Bool(true)": "png", paddingBottom: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: arg1(dependencyMap[2]).PROFILE_TOP_LAYER_Z_INDEX };
-obj.banner = obj;
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_profile/native/UserProfilePrivateBanner.tsx");
+// Module 12135 (UserProfilePrivateBanner)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: require("ARBITRARY_LARGE_OFFSET").PROFILE_TOP_LAYER_Z_INDEX };
+_createForOfIteratorHelperLoose.banner = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/user_profile/native/UserProfilePrivateBanner.tsx");
 
 export default function UserProfilePrivateBanner(primaryColor) {
   primaryColor = primaryColor.primaryColor;
   let obj = {};
-  const items = [callback2().banner, ];
+  const items = [_createForOfIteratorHelperLoose().banner, ];
   let tmp3 = null != primaryColor;
   if (tmp3) {
-    obj = { backgroundColor: arg1(dependencyMap[6]).int2hex(primaryColor) };
+    obj = { backgroundColor: require(665) /* pad2 */.int2hex(primaryColor) };
     tmp3 = obj;
-    const obj3 = arg1(dependencyMap[6]);
+    const obj3 = require(665) /* pad2 */;
   }
   items[1] = tmp3;
   obj.style = items;
-  obj = { size: "xs", color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
-  const items1 = [callback(arg1(dependencyMap[7]).LockIcon, obj), ];
-  const obj1 = {};
-  const intl = arg1(dependencyMap[9]).intl;
-  obj1.children = intl.string(arg1(dependencyMap[9]).t.KPnd2O);
-  items1[1] = callback(arg1(dependencyMap[8]).Text, obj1);
+  obj = { size: "xs", color: importDefault(689).colors.TEXT_DEFAULT };
+  const items1 = [callback(require(4652) /* LockIcon */.LockIcon, obj), ];
+  const obj1 = { variant: "text-sm/medium", color: "text-default" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.string(require(1212) /* getSystemLocale */.t.KPnd2O);
+  items1[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items1;
   return closure_5(View, obj);
 };

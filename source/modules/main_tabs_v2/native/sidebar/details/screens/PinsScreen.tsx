@@ -1,37 +1,38 @@
-// Module ID: 15429
-// Function ID: 117729
-// Dependencies: []
+// Module ID: 15546
+// Function ID: 119903
+// Dependencies: [31, 27, 1348, 9103, 33, 4130, 689, 1459, 566, 10075, 15408, 2]
 
-// Module 15429
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const SearchTabs = arg1(dependencyMap[3]).SearchTabs;
-const jsx = arg1(dependencyMap[4]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 15546
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { SearchTabs } from "SearchAutocompleteSelectAnalyticsActions";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
 let obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
+obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
 obj.container = obj;
-let closure_7 = arg1(dependencyMap[5]).createStyles(obj);
-const obj2 = arg1(dependencyMap[5]);
-const memoResult = importAllResult.memo(() => {
-  let obj = arg1(dependencyMap[7]);
-  const channelId = obj.useRoute().params.channelId;
-  const arg1 = channelId;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items, () => {
-    const channel = channel.getChannel(channelId);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(() => {
+  let obj = channelId(1459);
+  channelId = obj.useRoute().params.channelId;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = channelId(566).useStateFromStores(items, () => {
+    const channel = outer1_4.getChannel(channelId);
     let guild_id;
     if (null != channel) {
       guild_id = channel.guild_id;
     }
     return guild_id;
   });
-  const obj2 = arg1(dependencyMap[8]);
-  const channelDetailsSearchContext = arg1(dependencyMap[9]).useChannelDetailsSearchContext(channelId, stateFromStores);
-  obj = { style: callback().container, children: jsx(importDefault(dependencyMap[10]), obj) };
+  const obj2 = channelId(566);
+  const channelDetailsSearchContext = channelId(10075).useChannelDetailsSearchContext(channelId, stateFromStores);
+  obj = { style: callback().container, children: jsx(importDefault(15408), obj) };
   obj = { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS };
-  return <View {...obj} />;
+  return <View searchContext={channelDetailsSearchContext} isFocused tab={SearchTabs.PINS} />;
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/PinsScreen.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/PinsScreen.tsx");
 
 export default memoResult;

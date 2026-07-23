@@ -1,14 +1,15 @@
-// Module ID: 5796
-// Function ID: 49567
+// Module ID: 5801
+// Function ID: 49596
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: useGiftCardsExperimentConfig
 
-// Module 5796 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/billing/experiments/GiftCardsExperiment.tsx");
+// Module 5801 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-02-gift-cards", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/billing/experiments/GiftCardsExperiment.tsx");
 
 export default apexExperiment;
 export const useGiftCardsExperimentConfig = function useGiftCardsExperimentConfig(location) {

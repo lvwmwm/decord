@@ -1,10 +1,14 @@
 // Module ID: 652
 // Function ID: 7394
 // Name: addToken
-// Dependencies: []
+// Dependencies: [5, 653, 673, 675, 2]
 // Exports: describeConnectionReasons, recordStartHeadlessTask, startBridgeTo, withRequest
 
 // Module 652 (addToken)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function addToken(arg0) {
   const value = map.get(arg0);
   let num = 0;
@@ -30,45 +34,42 @@ function makeBridgeToken(arg0) {
   return "BRIDGE:" + arg0;
 }
 function isRequested() {
-  return map.size > 0 || closure_6;
+  return map.size > 0 || c6;
 }
-function setRequestedBy(arg0) {
-  const arg1 = arg0;
+function setRequestedBy(closure_0) {
   withStateTransitions(() => {
-    callback(arg0);
-    callback2(callback3(arg0));
+    outer1_8(closure_0);
+    outer1_9(outer1_10(closure_0));
   });
 }
-function stopRequest(closure_0) {
-  const arg1 = closure_0;
+function stopRequest(outer1_0) {
+  let closure_0 = outer1_0;
   withStateTransitions(() => {
-    callback(arg0);
+    outer1_9(closure_0);
   });
 }
 async function _withRequest(arg0, arg1, arg2) {
-  callback(arg0);
-  callback2(arg0);
+  outer2_12(arg0);
+  outer2_13(arg0);
   return yield arg1();
 }
 function withStateTransitions(arg0) {
   isRequested();
-  let closure_6 = false;
+  let c6 = false;
   arg0();
   isRequested();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-let closure_5 = [];
-let closure_6 = true;
+let closure_5 = ["COLD_START"];
+let c6 = true;
 const map = new Map();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/gateway/RequestGatewaySocket.tsx");
+let result = require("setOriginWindow").fileFinishedImporting("modules/gateway/RequestGatewaySocket.tsx");
 
 export { isRequested };
 export function recordStartHeadlessTask() {
-  let closure_6 = false;
+  let c6 = false;
 }
 export const describeConnectionReasons = function describeConnectionReasons() {
-  const items = [...closure_6 ? closure_5 : [], ...closure_7.keys()];
+  const items = [...c6 ? closure_5 : [], ...map.keys()];
   const sorted = items.sort();
   let str = "NO_REASONS";
   if (sorted.length > 0) {
@@ -78,20 +79,20 @@ export const describeConnectionReasons = function describeConnectionReasons() {
 };
 export { setRequestedBy };
 export const startBridgeTo = function startBridgeTo(arg0) {
-  const callback = makeBridgeToken(arg0);
+  const _require = makeBridgeToken(arg0);
   let closure_1 = performance.now();
   withStateTransitions(() => {
-    callback2(closure_0);
+    outer1_8(closure_0);
   });
-  callback(dependencyMap[2]).requestSafeIdleCallback(() => {
-    if (set.has(closure_0)) {
-      let obj = callback(closure_2[3]);
+  _require(673).requestSafeIdleCallback(() => {
+    if (outer1_7.has(closure_0)) {
+      let obj = callback(outer1_2[3]);
       obj = { bridge_token: closure_0 };
       const _performance = performance;
       obj.cleared_after = performance.now() - callback;
-      obj.track(constants.GATEWAY_BRIDGE_TIMEOUT, obj);
+      obj.track(outer1_4.GATEWAY_BRIDGE_TIMEOUT, obj);
     }
-    callback3(closure_0);
+    outer1_13(closure_0);
   }, { timeout: 5000 });
 };
 export { stopRequest };

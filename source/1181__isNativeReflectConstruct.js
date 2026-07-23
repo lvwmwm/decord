@@ -1,9 +1,26 @@
 // Module ID: 1181
-// Function ID: 13429
+// Function ID: 13430
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1172, 794, 978, 977, 1177, 1174, 1175, 1178, 1180, 1182, 1173]
 
 // Module 1181 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import isModalSupported from "isModalSupported";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import _inherits from "_inherits";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,13 +30,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-({ Appearance: closure_9, Image: closure_10, Keyboard: closure_11, Text: closure_12, TextInput: closure_13, TouchableOpacity: closure_14, TouchableWithoutFeedback: closure_15, View: closure_16 } = arg1(dependencyMap[6]));
+({ Appearance: closure_9, Image: closure_10, Keyboard: closure_11, Text: closure_12, TextInput: closure_13, TouchableOpacity: closure_14, TouchableWithoutFeedback: closure_15, View: closure_16 } = get_ActivityIndicator);
 let fn = this;
 if (this) {
   fn = this.__awaiter;
@@ -27,77 +38,78 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    arg1 = arg0;
-    const importDefault = arg1;
-    let dependencyMap = arg2;
-    let closure_3 = arg3;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let getActivityIndicator = arg3;
     if (!arg2) {
-      dependencyMap = Promise;
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;
   };
 }
-const tmp4 = (Component) => {
+const tmp4 = ((Component) => {
   class FeedbackWidget {
     constructor(arg0) {
       self = this;
-      tmp = closure_3(this, FeedbackWidget);
+      tmp = outer1_3(this, apply);
       items = [];
       items[0] = Component;
-      obj = closure_6(FeedbackWidget);
-      tmp2 = closure_5;
-      if (closure_18()) {
+      obj = outer1_6(apply);
+      tmp2 = outer1_5;
+      if (outer1_18()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      FeedbackWidget = tmp2Result;
+      apply = tmp2Result;
       tmp2Result._didSubmitForm = false;
       tmp2Result.handleFeedbackSubmit = () => {
         let description;
@@ -126,9 +138,9 @@ const tmp4 = (Component) => {
             if (tmp5) {
               if (tmp2Result.props.shouldValidateEmail) {
                 if (tmp2Result.props.isEmailRequired) {
-                  let obj1 = tmp2Result(closure_2[7]);
+                  let obj1 = FeedbackWidget(outer2_2[7]);
                   if (!obj1.isValidEmail(arr)) {
-                    let obj2 = tmp2Result(closure_2[7]);
+                    let obj2 = FeedbackWidget(outer2_2[7]);
                     obj2.feedbackAlertDialog(props.errorTitle, props.emailError);
                   }
                 }
@@ -141,33 +153,33 @@ const tmp4 = (Component) => {
                   tmp22 = items;
                 }
               }
-              obj = { message: tmp5, name: tmp2, email: arr, associatedEventId: tmp2Result(closure_2[8]).lastEventId() };
+              obj = { message: tmp5, name: tmp2, email: arr, associatedEventId: FeedbackWidget(outer2_2[8]).lastEventId() };
               if (!onFormSubmitted) {
                 obj1 = { isVisible: false };
                 tmp2Result.setState(obj1);
               }
-              const obj6 = tmp2Result(closure_2[8]);
+              const obj6 = FeedbackWidget(outer2_2[8]);
               const tmp31 = obj;
               let tmp39;
               if (tmp22) {
                 obj2 = { attachments: tmp25 };
                 tmp39 = obj2;
               }
-              tmp2Result(closure_2[8]).captureFeedback(tmp31, tmp39);
+              FeedbackWidget(outer2_2[8]).captureFeedback(tmp31, tmp39);
               const obj3 = { name: trimmed, email: trimmed1, message: trimmed2, attachments: tmp22 };
               onSubmitSuccess(obj3);
-              const obj8 = tmp2Result(closure_2[8]);
-              tmp2Result(closure_2[7]).feedbackAlertDialog(props.successMessageText, "");
+              const obj8 = FeedbackWidget(outer2_2[8]);
+              FeedbackWidget(outer2_2[7]).feedbackAlertDialog(props.successMessageText, "");
               onFormSubmitted();
               tmp2Result._didSubmitForm = true;
-              const obj11 = tmp2Result(closure_2[7]);
+              const obj11 = FeedbackWidget(outer2_2[7]);
             }
           }
         }
-        obj = tmp2Result(closure_2[7]);
+        obj = FeedbackWidget(outer2_2[7]);
         obj.feedbackAlertDialog(props.errorTitle, props.formError);
       };
-      tmp2Result.onScreenshotButtonPress = () => callback(tmp2Result, undefined, undefined, function*() {
+      tmp2Result.onScreenshotButtonPress = () => outer2_17(closure_0, undefined, undefined, function*() {
         const self = this;
         let imagePicker;
         let fileName;
@@ -184,9 +196,9 @@ const tmp4 = (Component) => {
                 let callResult;
                 if (null !== launchImageLibraryAsync) {
                   if (undefined !== launchImageLibraryAsync) {
-                    const obj = { mediaTypes: [null], base64: self(fileName[9]).isWeb() };
+                    const obj = { mediaTypes: ["images"], base64: FeedbackWidget(outer5_2[9]).isWeb() };
                     callResult = launchImageLibraryAsync.call(imagePicker, obj);
-                    const obj2 = self(fileName[9]);
+                    const obj2 = FeedbackWidget(outer5_2[9]);
                   }
                 }
                 return callResult;
@@ -199,9 +211,9 @@ const tmp4 = (Component) => {
                   let callResult;
                   if (null !== launchImageLibrary) {
                     if (undefined !== launchImageLibrary) {
-                      const obj = { mediaType: "photo", includeBase64: self(fileName[9]).isWeb() };
+                      const obj = { mediaType: "photo", includeBase64: FeedbackWidget(outer5_2[9]).isWeb() };
                       callResult = launchImageLibrary.call(imagePicker, obj);
-                      const obj2 = self(fileName[9]);
+                      const obj2 = FeedbackWidget(outer5_2[9]);
                     }
                   }
                   return callResult;
@@ -238,14 +250,14 @@ const tmp4 = (Component) => {
                     }
                     let base64ToUint8ArrayResult;
                     if (base64) {
-                      base64ToUint8ArrayResult = self(fileName[7]).base64ToUint8Array(base64);
-                      const obj2 = self(fileName[7]);
+                      base64ToUint8ArrayResult = FeedbackWidget(outer4_2[7]).base64ToUint8Array(base64);
+                      let obj2 = FeedbackWidget(outer4_2[7]);
                     }
                     if (base64ToUint8ArrayResult) {
                       obj = { filename: fileName, attachment: base64ToUint8ArrayResult, attachmentUri: uri };
                       self.setState(obj);
                     } else {
-                      const debug2 = self(fileName[8]).debug;
+                      const debug2 = FeedbackWidget(outer4_2[8]).debug;
                       debug2.error("Failed to read image data on the web");
                     }
                   } else {
@@ -263,20 +275,20 @@ const tmp4 = (Component) => {
                       }
                     }
                     if (uri) {
-                      obj = self(fileName[10]);
-                      const dataFromUri = obj.getDataFromUri(uri);
+                      obj = FeedbackWidget(outer4_2[10]);
+                      let dataFromUri = obj.getDataFromUri(uri);
                       dataFromUri.then((attachment) => {
                         if (null != attachment) {
                           const obj = { filename: fileName, attachment, attachmentUri: uri };
                           self.setState(obj);
                         } else {
                           const result = self._showImageRetrievalDevelopmentNote();
-                          const debug = self(fileName[8]).debug;
+                          const debug = FeedbackWidget(outer5_2[8]).debug;
                           debug.error("Failed to read image data from uri:", uri);
                         }
                       }).catch((arg0) => {
                         const result = self._showImageRetrievalDevelopmentNote();
-                        const debug = self(fileName[8]).debug;
+                        const debug = FeedbackWidget(outer5_2[8]).debug;
                         debug.error("Failed to read image data from uri:", uri, "error: ", arg0);
                       });
                       const nextPromise = dataFromUri.then((attachment) => {
@@ -285,79 +297,80 @@ const tmp4 = (Component) => {
                           self.setState(obj);
                         } else {
                           const result = self._showImageRetrievalDevelopmentNote();
-                          const debug = self(fileName[8]).debug;
+                          const debug = FeedbackWidget(outer5_2[8]).debug;
                           debug.error("Failed to read image data from uri:", uri);
                         }
                       });
                     }
                   }
-                  const obj5 = self(fileName[9]);
+                  obj5 = FeedbackWidget(outer4_2[9]);
                 }
               }
             } else {
-              const debug = self(fileName[8]).debug;
+              let debug = FeedbackWidget(outer4_2[8]).debug;
               debug.warn("No compatible image picker library found. Please provide a valid image picker library.");
             }
           } else {
             const _Object = Object;
             const _Object2 = Object;
-            Object.assign(Object.assign({}, self(fileName[11]).defaultConfiguration), self.props).onAddScreenshot((arg0) => {
-              const self = arg0;
-              const dataFromUri = self(fileName[10]).getDataFromUri(arg0);
-              const obj = self(fileName[10]);
+            Object.assign(Object.assign({}, FeedbackWidget(outer4_2[11]).defaultConfiguration), self.props).onAddScreenshot((arg0) => {
+              let closure_0 = arg0;
+              const dataFromUri = FeedbackWidget(outer5_2[10]).getDataFromUri(arg0);
+              let obj = FeedbackWidget(outer5_2[10]);
               dataFromUri.then((attachment) => {
                 if (null != attachment) {
-                  const obj = { filename: "feedback_screenshot", attachment, attachmentUri: attachment };
-                  attachment.setState(obj);
+                  const obj = { filename: "feedback_screenshot", attachment, attachmentUri: closure_0 };
+                  closure_0.setState(obj);
                 } else {
-                  const result = attachment._showImageRetrievalDevelopmentNote();
-                  const debug = attachment(closure_2[8]).debug;
-                  debug.error("Failed to read image data from uri:", attachment);
+                  const result = closure_0._showImageRetrievalDevelopmentNote();
+                  const debug = FeedbackWidget(outer6_2[8]).debug;
+                  debug.error("Failed to read image data from uri:", closure_0);
                 }
               }).catch((arg0) => {
-                const result = arg0._showImageRetrievalDevelopmentNote();
-                const debug = arg0(closure_2[8]).debug;
-                debug.error("Failed to read image data from uri:", arg0, "error: ", arg0);
+                const result = closure_0._showImageRetrievalDevelopmentNote();
+                const debug = FeedbackWidget(outer6_2[8]).debug;
+                debug.error("Failed to read image data from uri:", closure_0, "error: ", arg0);
               });
             });
           }
         }
       });
       tmp2Result._setCapturedScreenshot = (data) => {
+        let closure_0 = data;
         if (null != data.data) {
-          const debug2 = tmp2Result(closure_2[8]).debug;
+          const debug2 = FeedbackWidget(outer2_2[8]).debug;
           debug2.log("Setting captured screenshot:", data.filename);
-          const NATIVE = tmp2Result(closure_2[10]).NATIVE;
+          const NATIVE = FeedbackWidget(outer2_2[10]).NATIVE;
           const encodeToBase64Result = NATIVE.encodeToBase64(data.data);
-          NATIVE.encodeToBase64(data.data).then((self) => {
-            if (null != self) {
+          NATIVE.encodeToBase64(data.data).then((arg0) => {
+            if (null != arg0) {
               const _HermesInternal = HermesInternal;
               const obj = {};
-              ({ filename: obj.filename, data: obj.attachment } = self);
-              obj.attachmentUri = "data:" + self.contentType + ";base64," + self;
-              self.setState(obj);
+              ({ filename: obj.filename, data: obj.attachment } = data);
+              obj.attachmentUri = "data:" + data.contentType + ";base64," + arg0;
+              data.setState(obj);
             } else {
-              const debug = self(closure_2[8]).debug;
-              debug.error("Failed to read image data from:", self.filename);
+              const debug = FeedbackWidget(outer3_2[8]).debug;
+              debug.error("Failed to read image data from:", data.filename);
             }
           }).catch((arg0) => {
-            const debug = arg0(closure_2[8]).debug;
-            debug.error("Failed to read image data from:", arg0.filename, "error: ", arg0);
+            const debug = FeedbackWidget(outer3_2[8]).debug;
+            debug.error("Failed to read image data from:", data.filename, "error: ", arg0);
           });
-          const nextPromise = NATIVE.encodeToBase64(data.data).then((self) => {
-            if (null != self) {
+          const nextPromise = NATIVE.encodeToBase64(data.data).then((arg0) => {
+            if (null != arg0) {
               const _HermesInternal = HermesInternal;
               const obj = {};
-              ({ filename: obj.filename, data: obj.attachment } = self);
-              obj.attachmentUri = "data:" + self.contentType + ";base64," + self;
-              self.setState(obj);
+              ({ filename: obj.filename, data: obj.attachment } = data);
+              obj.attachmentUri = "data:" + data.contentType + ";base64," + arg0;
+              data.setState(obj);
             } else {
-              const debug = self(closure_2[8]).debug;
-              debug.error("Failed to read image data from:", self.filename);
+              const debug = FeedbackWidget(outer3_2[8]).debug;
+              debug.error("Failed to read image data from:", data.filename);
             }
           });
         } else {
-          const debug = tmp2Result(closure_2[8]).debug;
+          let debug = FeedbackWidget(outer2_2[8]).debug;
           debug.error("Failed to read image data from:", data.filename);
         }
       };
@@ -365,8 +378,8 @@ const tmp4 = (Component) => {
         tmp2Result._savedState = Object.assign({}, tmp2Result.state);
       };
       tmp2Result._clearFormState = () => {
-        const obj = { "Bool(false)": "french", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/aW50bA==", filename: undefined, attachment: undefined, attachmentUri: undefined };
-        tmp2Result._savedState = obj;
+        const obj = { name: "", email: "", description: "", filename: undefined, attachment: undefined, attachmentUri: undefined };
+        closure_0._savedState = obj;
       };
       tmp2Result._hasScreenshot = () => {
         let tmp = undefined !== tmp2Result.state.filename;
@@ -379,26 +392,26 @@ const tmp4 = (Component) => {
         return tmp;
       };
       tmp2Result._getUser = () => {
-        const currentScope = tmp2Result(closure_2[8]).getCurrentScope();
+        const currentScope = FeedbackWidget(outer2_2[8]).getCurrentScope();
         const user = currentScope.getUser();
         if (user) {
           return user;
         } else {
-          const isolationScope = tmp2Result(closure_2[8]).getIsolationScope();
+          const isolationScope = FeedbackWidget(outer2_2[8]).getIsolationScope();
           let user1 = isolationScope.getUser();
           if (!user1) {
-            const globalScope = tmp2Result(closure_2[8]).getGlobalScope();
+            const globalScope = FeedbackWidget(outer2_2[8]).getGlobalScope();
             user1 = globalScope.getUser();
-            const obj5 = tmp2Result(closure_2[8]);
+            const obj5 = FeedbackWidget(outer2_2[8]);
           }
           return user1;
         }
-        const obj = tmp2Result(closure_2[8]);
+        const obj = FeedbackWidget(outer2_2[8]);
       };
       tmp2Result._showImageRetrievalDevelopmentNote = () => {
         if (obj.isExpoGo()) {
-          tmp2Result(closure_2[7]).feedbackAlertDialog("Development note", "The feedback widget cannot retrieve image data in Expo Go. Please build your app to test this functionality.");
-          const obj2 = tmp2Result(closure_2[7]);
+          FeedbackWidget(outer2_2[7]).feedbackAlertDialog("Development note", "The feedback widget cannot retrieve image data in Expo Go. Please build your app to test this functionality.");
+          const obj2 = FeedbackWidget(outer2_2[7]);
         }
       };
       obj = {};
@@ -458,30 +471,29 @@ const tmp4 = (Component) => {
       }
       obj1.name = str2;
       obj.useSentryUser = obj1;
-      tmp12 = FeedbackWidget._savedState.name || obj.useSentryUser.name;
-      tmp13 = FeedbackWidget._savedState.email || obj.useSentryUser.email;
-      tmp14 = FeedbackWidget._savedState.description || "";
-      tmp15 = FeedbackWidget._savedState.filename || undefined;
-      tmp16 = FeedbackWidget._savedState.attachment || undefined;
-      tmp17 = FeedbackWidget._savedState.attachmentUri || undefined;
+      tmp12 = apply._savedState.name || obj.useSentryUser.name;
+      tmp13 = apply._savedState.email || obj.useSentryUser.email;
+      tmp14 = apply._savedState.description || "";
+      tmp15 = apply._savedState.filename || undefined;
+      tmp16 = apply._savedState.attachment || undefined;
+      tmp17 = apply._savedState.attachmentUri || undefined;
       tmp2Result.state = { isVisible: true, name: tmp12, email: tmp13, description: tmp14, filename: tmp15, attachment: tmp16, attachmentUri: tmp17 };
-      obj5 = FeedbackWidget(closure_2[12]);
+      obj5 = FeedbackWidget(outer1_2[12]);
       result = obj5.lazyLoadFeedbackIntegration();
       return tmp2Result;
     }
   }
-  const arg1 = FeedbackWidget;
   callback2(FeedbackWidget, Component);
   let obj = {
     key: "componentDidMount",
     value: function componentDidMount() {
-      const FeedbackWidget = this;
-      this._themeListener = closure_9.addChangeListener(() => {
+      const self = this;
+      this._themeListener = outer1_9.addChangeListener(() => {
         self.forceUpdate();
       });
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
@@ -513,14 +525,14 @@ const tmp4 = (Component) => {
       let name;
       let props;
       let props2;
-      const self = this;
-      const FeedbackWidget = this;
-      let obj = FeedbackWidget(props2[13]);
+      let self = this;
+      self = this;
+      let obj = FeedbackWidget(outer1_2[13]);
       const onFormClose = this.props.onFormClose;
       ({ props, props: props2 } = this);
       const theme = obj.getTheme();
       ({ name, email, description } = this.state);
-      const merged = Object.assign(Object.assign({}, onFormClose(props2[14])(theme)), this.props.styles);
+      const merged = Object.assign(Object.assign({}, outer1_1(outer1_2[14])(theme)), this.props.styles);
       function onCancel() {
         if (onFormClose) {
           onFormClose();
@@ -530,49 +542,49 @@ const tmp4 = (Component) => {
         }
       }
       if (this.state.isVisible) {
-        let obj1 = FeedbackWidget(props2[15]);
+        let obj1 = FeedbackWidget(outer1_2[15]);
         const capturedScreenshot = obj1.getCapturedScreenshot();
         if ("ErrorCapturingScreenshot" === capturedScreenshot) {
           const _setTimeout = setTimeout;
-          const timerId = setTimeout(() => callback(self, undefined, undefined, function*() {
+          const timerId = setTimeout(() => outer2_17(self, undefined, undefined, function*() {
             if (obj) {
               return obj.resume();
             } else {
-              callback(closure_2[7]).feedbackAlertDialog(closure_2.errorTitle, closure_2.captureScreenshotError);
+              FeedbackWidget(outer4_2[7]).feedbackAlertDialog(outer2_2.errorTitle, outer2_2.captureScreenshotError);
             }
           }), 100);
         } else if (capturedScreenshot) {
           const result = self._setCapturedScreenshot(capturedScreenshot);
         }
-        obj = { 1449306720: "HTTP", 1643143851: "Date", 1642052689: "HTTP" };
-        let obj3 = FeedbackWidget(props2[9]);
+        obj = { onPress: null, accessible: false, accessibilityElementsHidden: false };
+        let obj3 = FeedbackWidget(outer1_2[9]);
         let dismiss;
         if (obj3.notWeb()) {
-          dismiss = dismiss.dismiss;
+          dismiss = outer1_11.dismiss;
         }
         obj.onPress = dismiss;
         obj = { style: merged.container };
         obj1 = { style: merged.titleContainer };
         const obj2 = { style: merged.title, testID: "sentry-feedback-form-title" };
-        ({ createElement, createElement: createElement2 } = React);
-        const element = <closure_12 {......obj2}>{props2.formTitle}</closure_12>;
+        ({ createElement, createElement: createElement2 } = outer1_8);
+        const element = <outer1_12 style={merged.title} testID="sentry-feedback-form-title">{props2.formTitle}</outer1_12>;
         let showBranding = props.showBranding;
         if (showBranding) {
           obj3 = {};
-          const obj4 = { uri: FeedbackWidget(props2[16]).sentryLogo };
+          const obj4 = { uri: FeedbackWidget(outer1_2[16]).sentryLogo };
           obj3.source = obj4;
           obj3.style = merged.sentryLogo;
           obj3.testID = "sentry-logo";
-          showBranding = <closure_10 {......obj3} />;
+          showBranding = <outer1_10 />;
         }
         const element2 = createElement2(tmp16, obj1, element, showBranding);
         let showName = props.showName;
         if (showName) {
-          const Fragment = React.Fragment;
+          const Fragment = outer1_8.Fragment;
           const obj5 = { style: merged.label };
           const nameLabel = props2.nameLabel;
           let isNameRequired = props.isNameRequired;
-          ({ createElement: createElement3, createElement: createElement4 } = React);
+          ({ createElement: createElement3, createElement: createElement4 } = outer1_8);
           if (isNameRequired) {
             const _HermesInternal = HermesInternal;
             isNameRequired = " " + props2.isRequiredLabel;
@@ -587,15 +599,17 @@ const tmp4 = (Component) => {
                 }
           };
           const element4 = createElement4(tmp30, obj5, nameLabel, isNameRequired);
-          showName = createElement3(Fragment, null, element4, <closure_13 {......obj6} />);
+          showName = createElement3(Fragment, null, element4, <outer1_13 style={merged.input} testID="sentry-feedback-name-input" placeholder={props2.namePlaceholder} value={name} onChangeText={function onChangeText(name) {
+            return self.setState({ name });
+          }} />);
         }
         let showEmail = props.showEmail;
         if (showEmail) {
-          const Fragment2 = React.Fragment;
+          const Fragment2 = outer1_8.Fragment;
           const obj7 = { style: merged.label };
           const emailLabel = props2.emailLabel;
           let isEmailRequired = props.isEmailRequired;
-          ({ createElement: createElement5, createElement: createElement6 } = React);
+          ({ createElement: createElement5, createElement: createElement6 } = outer1_8);
           if (isEmailRequired) {
             const _HermesInternal2 = HermesInternal;
             isEmailRequired = " " + props2.isRequiredLabel;
@@ -611,11 +625,13 @@ const tmp4 = (Component) => {
                 }
           };
           const element6 = createElement6(tmp43, obj7, emailLabel, isEmailRequired);
-          showEmail = createElement5(Fragment2, null, element6, <closure_13 {......obj8} />);
+          showEmail = createElement5(Fragment2, null, element6, <outer1_13 style={merged.input} testID="sentry-feedback-email-input" placeholder={props2.emailPlaceholder} keyboardType="email-address" value={email} onChangeText={function onChangeText(email) {
+            return self.setState({ email });
+          }} />);
         }
         const obj9 = { style: merged.label };
         const _HermesInternal3 = HermesInternal;
-        const element1 = <closure_12 {......obj9}>{props2.messageLabel}{" " + props2.isRequiredLabel}</closure_12>;
+        const element1 = <outer1_12 style={merged.label}>{props2.messageLabel}{" " + props2.isRequiredLabel}</outer1_12>;
         const obj10 = {};
         const items = [, ];
         ({ input: arr[0], textArea: arr[1] } = merged);
@@ -627,30 +643,35 @@ const tmp4 = (Component) => {
           return self.setState({ description });
         };
         obj10.multiline = true;
-        const element3 = <closure_13 {......obj10} />;
+        const element3 = <outer1_13 />;
         const tmp63 = props.enableScreenshot || this.props.imagePicker || self._hasScreenshot();
         if (!tmp63) {
-          let obj20 = FeedbackWidget(props2[9]);
+          let obj20 = FeedbackWidget(outer1_2[9]);
           let element5 = obj20.notWeb() && props.enableTakeScreenshot && !self.state.attachmentUri;
           if (element5) {
             const obj11 = {
               style: merged.takeScreenshotButton,
               onPress() {
-                      self(props2[17]).hideFeedbackButton();
+                      FeedbackWidget(outer2_2[17]).hideFeedbackButton();
                       onCancel();
-                      const obj = self(props2[17]);
-                      self(props2[17]).showScreenshotButton();
+                      const obj = FeedbackWidget(outer2_2[17]);
+                      FeedbackWidget(outer2_2[17]).showScreenshotButton();
                     }
             };
             const obj12 = { style: merged.takeScreenshotText, testID: "sentry-feedback-take-screenshot-button" };
-            element5 = <closure_14 {......obj11}><closure_12 {......obj12}>{props2.captureScreenshotButtonLabel}</closure_12></closure_14>;
+            element5 = <outer1_14 style={merged.takeScreenshotButton} onPress={function onPress() {
+              FeedbackWidget(outer2_2[17]).hideFeedbackButton();
+              onCancel();
+              const obj = FeedbackWidget(outer2_2[17]);
+              FeedbackWidget(outer2_2[17]).showScreenshotButton();
+            }}><outer1_12 style={merged.takeScreenshotText} testID="sentry-feedback-take-screenshot-button">{props2.captureScreenshotButtonLabel}</outer1_12></outer1_14>;
           }
           const obj13 = { style: merged.submitButton, onPress: self.handleFeedbackSubmit };
           const obj14 = { style: merged.submitText, testID: "sentry-feedback-submit-button" };
           const obj15 = { style: merged.cancelButton, onPress: onCancel };
           const obj16 = { style: merged.cancelText };
-          const element7 = <closure_14 {......obj13}><closure_12 {......obj14}>{props2.submitButtonLabel}</closure_12></closure_14>;
-          return <tmp10 {......obj}><tmp16 {......obj}>{element2}{showName}{showEmail}{element1}{element3}{tmp63}{element5}{element7}<closure_14 {......obj15}><closure_12 {......obj16}>{props2.cancelButtonLabel}</closure_12></closure_14></tmp16></tmp10>;
+          const element7 = <outer1_14 style={merged.submitButton} onPress={self.handleFeedbackSubmit}><outer1_12 style={merged.submitText} testID="sentry-feedback-submit-button">{props2.submitButtonLabel}</outer1_12></outer1_14>;
+          return <tmp10 {......obj}><tmp16 {......obj}>{element2}{showName}{showEmail}{element1}{element3}{tmp63}{element5}{element7}<outer1_14 style={merged.cancelButton} onPress={onCancel}><outer1_12 style={merged.cancelText}>{props2.cancelButtonLabel}</outer1_12></outer1_14></tmp16></tmp10>;
         } else {
           const obj17 = { style: merged.screenshotContainer };
           let attachmentUri = self.state.attachmentUri;
@@ -659,16 +680,16 @@ const tmp4 = (Component) => {
             const obj19 = { uri: self.state.attachmentUri };
             obj18.source = obj19;
             obj18.style = merged.screenshotThumbnail;
-            attachmentUri = <closure_10 {......obj18} />;
+            attachmentUri = <outer1_10 />;
           }
           obj20 = { style: merged.screenshotButton, onPress: self.onScreenshotButtonPress };
           const obj21 = { style: merged.screenshotText };
-          const element8 = <tmp65 {......obj17}>{attachmentUri}<closure_14 {......obj20}><closure_12 {......obj21}>{self._hasScreenshot() ? props2.removeScreenshotButtonLabel : props2.addScreenshotButtonLabel}</closure_12></closure_14></tmp65>;
-          const tmp64 = React;
-          const tmp69 = closure_14;
-          const tmp70 = closure_12;
+          const element8 = <tmp65 style={merged.screenshotContainer}>{attachmentUri}<outer1_14 style={merged.screenshotButton} onPress={self.onScreenshotButtonPress}><outer1_12 style={merged.screenshotText}>{self._hasScreenshot() ? props2.removeScreenshotButtonLabel : props2.addScreenshotButtonLabel}</outer1_12></outer1_14></tmp65>;
+          const tmp64 = outer1_8;
+          const tmp69 = outer1_14;
+          const tmp70 = outer1_12;
         }
-        const tmp10 = closure_15;
+        const tmp10 = outer1_15;
       } else {
         return null;
       }
@@ -679,15 +700,15 @@ const tmp4 = (Component) => {
     {
       key: "reset",
       value: function reset() {
-        const obj = { "Bool(false)": "french", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/aW50bA==", filename: undefined, attachment: undefined, attachmentUri: undefined };
+        const obj = { name: "", email: "", description: "", filename: undefined, attachment: undefined, attachmentUri: undefined };
         FeedbackWidget._savedState = obj;
       }
     }
   ];
   return callback(FeedbackWidget, items, items1);
-}(importAllResult.Component);
-tmp4.defaultProps = arg1(dependencyMap[11]).defaultConfiguration;
-const obj = { "Bool(false)": "french", "Bool(false)": true, "Bool(false)": "/assets/.cache/intl/aW50bA==", filename: undefined, attachment: undefined, attachmentUri: undefined };
+})(importAllResult.Component);
+tmp4.defaultProps = require("module_1177").defaultConfiguration;
+let obj = { name: "", email: "", description: "", filename: undefined, attachment: undefined, attachmentUri: undefined };
 tmp4._savedState = obj;
 
 export const FeedbackWidget = tmp4;

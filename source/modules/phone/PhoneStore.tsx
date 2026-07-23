@@ -1,9 +1,16 @@
-// Module ID: 9189
-// Function ID: 71989
+// Module ID: 9196
+// Function ID: 72030
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 3811, 566, 686, 2]
 
-// Module 9189 (_isNativeReflectConstruct)
+// Module 9196 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import getCountryCodeByCountryName from "getCountryCodeByCountryName";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -23,28 +30,22 @@ function handleSetLocationMetadata(countryCode) {
     let closure_8 = tmp2;
   }
 }
-let closure_1 = importDefault(dependencyMap[0]);
-let closure_2 = importDefault(dependencyMap[1]);
-let closure_3 = importDefault(dependencyMap[2]);
-let closure_4 = importDefault(dependencyMap[3]);
-let closure_5 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[5]);
-const getDefaultCountryCode = tmp2.getDefaultCountryCode;
-const getCountryCodeByAlpha2 = tmp2.getCountryCodeByAlpha2;
+const getDefaultCountryCode = getCountryCodeByCountryName.getDefaultCountryCode;
+const getCountryCodeByAlpha2 = getCountryCodeByCountryName.getCountryCodeByAlpha2;
 let closure_8 = getDefaultCountryCode();
-let tmp3 = (DeviceSettingsStore) => {
+let tmp3 = ((DeviceSettingsStore) => {
   class PhoneStore {
     constructor() {
       self = this;
-      tmp = closure_1(this, PhoneStore);
-      obj = closure_4(PhoneStore);
-      tmp2 = closure_3;
-      if (closure_9()) {
+      tmp = outer1_1(this, PhoneStore);
+      obj = outer1_4(PhoneStore);
+      tmp2 = outer1_3;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_4;
+        tmp7 = outer1_4;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -73,21 +74,21 @@ let tmp3 = (DeviceSettingsStore) => {
   obj = {
     key: "getCountryCode",
     value() {
-      return null != PhoneStore ? PhoneStore : closure_8;
+      return null != PhoneStore ? PhoneStore : outer1_8;
     }
   };
   items[2] = obj;
   return callback(PhoneStore, items);
-}(importDefault(dependencyMap[6]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp3.displayName = "PhoneStore";
 tmp3.persistKey = "PhoneStore";
-tmp3 = new tmp3(importDefault(dependencyMap[7]), {
+tmp3 = new tmp3(require("dispatcher"), {
   PHONE_SET_COUNTRY_CODE: function handleSetCountryCode(countryCode) {
     countryCode = countryCode.countryCode;
   },
   CONNECTION_OPEN: handleSetLocationMetadata,
   SET_LOCATION_METADATA: handleSetLocationMetadata
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/phone/PhoneStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/phone/PhoneStore.tsx");
 
 export default tmp3;

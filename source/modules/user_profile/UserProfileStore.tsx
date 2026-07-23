@@ -1,9 +1,25 @@
-// Module ID: 6851
-// Function ID: 54117
+// Module ID: 6856
+// Function ID: 54149
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1921, 1857, 1194, 1838, 1196, 4217, 4970, 653, 6857, 22, 6858, 6876, 4015, 1876, 1829, 6877, 1212, 6878, 4814, 1327, 2]
 
-// Module 6851 (_isNativeReflectConstruct)
+// Module 6856 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import items from "items";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import CollectiblesItemType from "CollectiblesItemType";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import { MAX_TIMEOUT_MS } from "ME";
+import tmp10 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +29,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +82,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -94,12 +110,12 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function createUserWidgetFromServer(data) {
   const type = data.data.type;
-  if (arg1(dependencyMap[13]).WidgetType.CURRENT_GAMES !== type) {
-    if (arg1(dependencyMap[13]).WidgetType.FAVORITE_GAMES !== type) {
-      if (arg1(dependencyMap[13]).WidgetType.PLAYED_GAMES !== type) {
-        if (arg1(dependencyMap[13]).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-          if (arg1(dependencyMap[13]).WidgetType.APPLICATION === type) {
-            const ApplicationWidget = arg1(dependencyMap[16]).ApplicationWidget;
+  if (require(6857) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
+    if (require(6857) /* WidgetType */.WidgetType.FAVORITE_GAMES !== type) {
+      if (require(6857) /* WidgetType */.WidgetType.PLAYED_GAMES !== type) {
+        if (require(6857) /* WidgetType */.WidgetType.WANT_TO_PLAY_GAMES !== type) {
+          if (require(6857) /* WidgetType */.WidgetType.APPLICATION === type) {
+            const ApplicationWidget = require(6876) /* ApplicationWidget */.ApplicationWidget;
             let obj = { id: data.id, applicationId: data.data.application_id };
             const prototype = ApplicationWidget.prototype;
             const applicationWidget = new ApplicationWidget(obj);
@@ -111,14 +127,14 @@ function createUserWidgetFromServer(data) {
   }
   const games = data.data.games;
   const mapped = games.map((applicationId) => ({ applicationId: applicationId.game_id, comment: applicationId.comment, tags: applicationId.tags }));
-  const obj2 = importDefault(dependencyMap[14]);
-  obj = { id: data.id, type, games: importDefault(dependencyMap[14]).uniqBy(mapped, "applicationId") };
-  const baseGameWidget = new arg1(dependencyMap[15]).BaseGameWidget(obj);
+  const obj2 = importDefault(22);
+  obj = { id: data.id, type, games: importDefault(22).uniqBy(mapped, "applicationId") };
+  const baseGameWidget = new require(6858) /* items */.BaseGameWidget(obj);
   return baseGameWidget;
 }
 function checkUserProfileCollectiblesExpiration(id, guild_id) {
-  guild_id = id;
-  const importDefault = guild_id;
+  let closure_0 = id;
+  let closure_1 = guild_id;
   let tmp = null;
   if (null != guild_id) {
     let value = map2.get(id);
@@ -130,14 +146,12 @@ function checkUserProfileCollectiblesExpiration(id, guild_id) {
   } else {
     value1 = map1.get(id);
   }
-  const dependencyMap = value1;
   let collectibles;
   if (tmp != value1) {
     collectibles = value1.collectibles;
   }
   if (tmp != collectibles) {
     const items = [];
-    let closure_3 = items;
     const collectibles1 = value1.collectibles;
     const item = collectibles1.forEach((expiresAt) => {
       if (null != expiresAt.expiresAt) {
@@ -148,28 +162,28 @@ function checkUserProfileCollectiblesExpiration(id, guild_id) {
         if (diff <= 0) {
           items.push(expiresAt);
         } else {
-          if (null == closure_20[closure_0]) {
+          if (null == outer1_20[id]) {
             const obj = {};
-            obj[closure_15] = {};
-            closure_20[expiresAt] = obj;
+            obj[outer1_15] = {};
+            outer1_20[id] = obj;
           }
-          if (null != closure_20[closure_0][null != closure_1 ? closure_1 : closure_15]) {
-            if (null != closure_20[closure_0][null != closure_1 ? closure_1 : closure_15][expiresAt.skuId]) {
+          if (null != outer1_20[id][null != closure_1 ? closure_1 : outer1_15]) {
+            if (null != outer1_20[id][null != closure_1 ? closure_1 : outer1_15][expiresAt.skuId]) {
               const _Math = Math;
-              closure_20[closure_0][null != closure_1 ? closure_1 : closure_15][expiresAt.skuId].start(Math.min(closure_14, diff), () => {
-                callback(closure_0, closure_1);
+              outer1_20[id][null != closure_1 ? closure_1 : outer1_15][expiresAt.skuId].start(Math.min(outer1_14, diff), () => {
+                outer2_33(outer1_0, outer1_1);
               });
-              const obj2 = closure_20[closure_0][null != closure_1 ? closure_1 : closure_15][expiresAt.skuId];
+              const obj2 = outer1_20[id][null != closure_1 ? closure_1 : outer1_15][expiresAt.skuId];
             } else {
-              let skuId = closure_20[closure_0];
+              let skuId = outer1_20[id];
               skuId = expiresAt.skuId;
-              const Timeout = expiresAt(value1[17]).Timeout;
+              const Timeout = id(value1[17]).Timeout;
               const prototype = Timeout.prototype;
               const timeout = new Timeout();
-              skuId[null != closure_1 ? closure_1 : closure_15][skuId] = timeout;
+              skuId[null != closure_1 ? closure_1 : outer1_15][skuId] = timeout;
             }
           } else {
-            closure_20[closure_0][null != arg1 ? arg1 : closure_15] = {};
+            outer1_20[id][null != closure_1 ? closure_1 : outer1_15] = {};
           }
         }
       }
@@ -178,16 +192,18 @@ function checkUserProfileCollectiblesExpiration(id, guild_id) {
       const collectibles2 = value1.collectibles;
       value1.collectibles = collectibles2.filter((arg0) => !items.includes(arg0));
       const item1 = items.forEach((type) => {
-        if (type.type === type(value1[18]).CollectiblesItemType.PROFILE_EFFECT) {
+        if (type.type === id(value1[18]).CollectiblesItemType.PROFILE_EFFECT) {
           value1.profileEffect = undefined;
-        } else if (type.type === type(value1[18]).CollectiblesItemType.PROFILE_FRAME) {
+        } else if (type.type === id(value1[18]).CollectiblesItemType.PROFILE_FRAME) {
           value1.profileFrame = undefined;
         }
-        if (null == closure_20[closure_0]) {
-          if (!tmp6) {
+        if (null == outer1_20[id]) {
+          if (!tmp8) {
             const skuId = type.skuId;
-            delete r2[r1];
+            delete tmp2[tmp];
           }
+        } else {
+          const tmp10 = tmp7[null != closure_1 ? closure_1 : outer1_15];
         }
       });
       if ("guildId" in value1) {
@@ -211,7 +227,7 @@ function handleLogout() {
   map3.clear();
   map4.clear();
   map5.clear();
-  let closure_26 = false;
+  let c26 = false;
 }
 function handleMutualFriendsFetchStart(userId) {
   set.add(userId.userId);
@@ -220,17 +236,17 @@ function handleMutualFriendsFetchFailure(userId) {
   set.delete(userId.userId);
 }
 function getMutualFriends(id) {
-  const mapped = importDefault(dependencyMap[14])(id).map((id) => {
+  const mapped = importDefault(22)(id).map((id) => {
     let obj = { key: id.id };
     obj = {};
     const merged = Object.assign(id);
-    obj["collectibles"] = callback(closure_2[19]).parseServerUserCollectibles(id.collectibles);
-    const obj3 = callback(closure_2[19]);
-    obj.user = new closure_9(obj);
-    obj.status = status.getStatus(id.id);
+    obj["collectibles"] = outer1_0(outer1_2[19]).parseServerUserCollectibles(id.collectibles);
+    const obj3 = outer1_0(outer1_2[19]);
+    obj.user = new outer1_9(obj);
+    obj.status = outer1_12.getStatus(id.id);
     return obj;
   });
-  const arr = importDefault(dependencyMap[14])(id);
+  const arr = importDefault(22)(id);
   return mapped.sortBy((user) => user.user.username.toLowerCase()).value();
 }
 function handleMutualFriendsFetchSuccess(userId) {
@@ -243,9 +259,9 @@ function handleProfileFetch(arg0) {
   let guildId;
   let userProfile;
   ({ userProfile, fetchStartedAt, guildId } = arg0);
-  let callback;
-  let importDefault;
-  let dependencyMap;
+  let _require;
+  let date;
+  let date1;
   if (null == guildId) {
     const guild_member_profile = userProfile.guild_member_profile;
     let guild_id;
@@ -263,19 +279,19 @@ function handleProfileFetch(arg0) {
   }
   set.delete(userProfile.user.id);
   if (null != userProfile.mutual_guilds) {
-    callback = {};
+    _require = {};
     const mutual_guilds = userProfile.mutual_guilds;
     const item = mutual_guilds.forEach((id) => {
       id = id.id;
-      const guild = guild.getGuild(id);
+      const guild = outer1_11.getGuild(id);
       if (null != guild) {
         const obj = { guild, nick: id.nick };
         closure_0[id] = obj;
       }
     });
-    const flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
-    const found = flattenedGuildIds.filter((arg0) => null != closure_0[arg0]);
-    const result = map5.set(userProfile.user.id, found.map((arg0) => ({ guild: closure_0[arg0].guild, nick: closure_0[arg0].nick })));
+    flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+    const found = flattenedGuildIds.filter((arg0) => null != dependencyMap[arg0]);
+    const result = map5.set(userProfile.user.id, found.map((arg0) => ({ guild: dependencyMap[arg0].guild, nick: dependencyMap[arg0].nick })));
   }
   if (null != userProfile.mutual_friends_count) {
     const mutual_friends_count = userProfile.mutual_friends_count;
@@ -288,33 +304,31 @@ function handleProfileFetch(arg0) {
     const result3 = map3.set(userProfile.user.id, getMutualFriends(userProfile.mutual_friends));
     const result4 = map4.set(userProfile.user.id, userProfile.mutual_friends.length);
   }
-  let date = null;
+  date = null;
   if (null != userProfile.premium_since) {
     const _Date = Date;
     date = new Date(userProfile.premium_since);
   }
-  importDefault = date;
-  let date1 = null;
+  date1 = null;
   if (null != userProfile.premium_guild_since) {
     const _Date2 = Date;
     date1 = new Date(userProfile.premium_guild_since);
   }
-  dependencyMap = date1;
   const application = userProfile.application;
   if (null != userProfile.badges) {
     const badges = userProfile.badges;
     let mapped = badges.map((id) => {
-      let obj = callback(date1[20]);
+      let obj = dependencyMap(date1[20]);
       const tieredTenureBadgeData = obj.getTieredTenureBadgeData(id.id);
       if ("premium" === id.id) {
         if (null != date) {
-          const intl2 = callback(date1[21]).intl;
+          const intl2 = dependencyMap(date1[21]).intl;
           obj = { date };
-          let formatToPlainStringResult = intl2.formatToPlainString(callback(date1[21]).t.8zbGNR, obj);
+          let formatToPlainStringResult = intl2.formatToPlainString(dependencyMap(date1[21]).t["8zbGNR"], obj);
           if (null != tieredTenureBadgeData) {
-            const intl3 = callback(date1[21]).intl;
+            const intl3 = dependencyMap(date1[21]).intl;
             obj = { date };
-            formatToPlainStringResult = intl3.formatToPlainString(callback(date1[21]).t.Hu4jfi, obj);
+            formatToPlainStringResult = intl3.formatToPlainString(dependencyMap(date1[21]).t.Hu4jfi, obj);
           }
           const obj1 = {};
           const merged = Object.assign(id);
@@ -329,9 +343,9 @@ function handleProfileFetch(arg0) {
         if (null != date1) {
           const obj2 = {};
           const merged1 = Object.assign(id);
-          const intl = callback(date1[21]).intl;
+          const intl = dependencyMap(date1[21]).intl;
           const obj3 = { date: date1 };
-          obj2["description"] = intl.formatToPlainString(callback(date1[21]).t.IWkAq7, obj3);
+          obj2["description"] = intl.formatToPlainString(dependencyMap(date1[21]).t.IWkAq7, obj3);
           tmp5 = obj2;
         }
       }
@@ -347,14 +361,14 @@ function handleProfileFetch(arg0) {
   if (tmp26) {
     const _Date3 = Date;
     if (Date.now() > _null.expiresAtMs) {
-      const _null = null;
+      _null = null;
     } else {
       mergePinnedBadges(mapped, _null);
     }
   }
   const timestamp = Date.now();
   let obj = {};
-  const merged = Object.assign(importDefault(dependencyMap[22])(userProfile.user_profile));
+  let merged = Object.assign(date(date1[22])(userProfile.user_profile));
   obj["userId"] = userProfile.user.id;
   const user_profile = userProfile.user_profile;
   let banner;
@@ -429,7 +443,7 @@ function handleProfileFetch(arg0) {
   let found2;
   if (null != widgets) {
     const mapped1 = widgets.map(createUserWidgetFromServer);
-    found2 = mapped1.filter(callback(dependencyMap[24]).isNotNullish);
+    found2 = mapped1.filter(_require(date1[24]).isNotNullish);
   }
   obj["widgets"] = found2;
   obj["wishlistSettings"] = userProfile.wishlist_settings;
@@ -437,8 +451,8 @@ function handleProfileFetch(arg0) {
   const result5 = map1.set(userProfile.user.id, obj);
   checkUserProfileCollectiblesExpiration(userProfile.user.id);
   if (null != userProfile.guild_member_profile) {
-    const obj1 = {};
-    const merged1 = Object.assign(importDefault(dependencyMap[22])(userProfile.guild_member_profile));
+    let obj1 = {};
+    let merged1 = Object.assign(date(date1[22])(userProfile.guild_member_profile));
     obj1["userId"] = userProfile.user.id;
     obj1["guildId"] = userProfile.guild_member_profile.guild_id;
     obj1["banner"] = userProfile.guild_member_profile.banner;
@@ -465,21 +479,20 @@ function handleProfileFetch(arg0) {
       const result6 = value.set(userProfile.guild_member_profile.guild_id, obj1);
     } else {
       const _Map = Map;
-      const map = new Map();
+      map = new Map();
       const result7 = map.set(userProfile.guild_member_profile.guild_id, obj1);
       const result8 = map2.set(userProfile.user.id, map);
     }
     userProfile = checkUserProfileCollectiblesExpiration(userProfile.user.id, userProfile.guild_member_profile.guild_id);
   }
 }
-function mergePinnedBadges(badges, closure_27) {
+function mergePinnedBadges(badges, c27) {
   if (null != badges) {
     const _Set = Set;
     const set = new Set(badges.map((id) => id.id));
-    closure_27 = set;
     let found;
-    if (null != closure_27) {
-      badges = closure_27.badges;
+    if (null != c27) {
+      badges = c27.badges;
       found = badges.filter((id) => !set.has(id.id));
     }
     if (found.length > 0) {
@@ -528,7 +541,7 @@ function handleProfileFetchFailure(arg0) {
   set.delete(userId);
   value = map1.get(userId);
   if (null == value) {
-    const obj = { connectedAccounts: [], applicationRoleConnections: [], userId, fetchError: undefined };
+    const obj = { connectedAccounts: [], applicationRoleConnections: [], premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: undefined };
     value = obj;
   }
   const timestamp = Date.now();
@@ -559,7 +572,7 @@ function handleProfileFetchFailure(arg0) {
   }
 }
 function handleProfileUpdateStart() {
-  let closure_26 = true;
+  let c26 = true;
 }
 function handleProfileUpdateSuccess(guild_id) {
   let accent_color;
@@ -577,7 +590,7 @@ function handleProfileUpdateSuccess(guild_id) {
   let theme_colors;
   let theme_colors2;
   let userId;
-  let closure_26 = false;
+  let c26 = false;
   if (null != guild_id.guild_id) {
     ({ userId, guild_id } = guild_id);
     ({ accent_color, banner, bio, pronouns, popout_animation_particle_type, theme_colors, collectibles } = guild_id);
@@ -589,7 +602,7 @@ function handleProfileUpdateSuccess(guild_id) {
           let obj = {};
           const merged = Object.assign(value);
           obj = { collectibles };
-          const merged1 = Object.assign(importDefault(dependencyMap[22])(obj));
+          const merged1 = Object.assign(importDefault(6878)(obj));
           obj["accentColor"] = accent_color;
           obj["banner"] = banner;
           obj["bio"] = bio;
@@ -609,7 +622,7 @@ function handleProfileUpdateSuccess(guild_id) {
       const obj1 = {};
       const merged2 = Object.assign(value1);
       const obj2 = { collectibles: collectibles2 };
-      const merged3 = Object.assign(importDefault(dependencyMap[22])(obj2));
+      const merged3 = Object.assign(importDefault(6878)(obj2));
       obj1["accentColor"] = accent_color2;
       obj1["banner"] = banner2;
       obj1["bio"] = bio2;
@@ -622,7 +635,7 @@ function handleProfileUpdateSuccess(guild_id) {
   }
 }
 function handleProfileUpdateFailure() {
-  let closure_26 = false;
+  let c26 = false;
 }
 function handleWidgetsUpdateSuccess(arg0) {
   let userId;
@@ -635,21 +648,20 @@ function handleWidgetsUpdateSuccess(arg0) {
     const obj = {};
     const merged = Object.assign(value);
     const mapped = widgets.map(createUserWidgetFromServer);
-    obj["widgets"] = mapped.filter(arg1(dependencyMap[24]).isNotNullish);
+    obj["widgets"] = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
     const result = map1.set(userId, obj);
   }
 }
 function handlePinBadgesToProfile(badges) {
   const userId = badges.userId;
   let obj = { userId, badges: badges.badges, expiresAtMs: Date.now() + 1000 * badges.ttlInSeconds };
-  let closure_27 = obj;
   const value = map1.get(userId);
   if (null != value) {
     badges = value.badges;
     if (null == badges) {
       badges = [];
     }
-    mergePinnedBadges(badges, closure_27);
+    mergePinnedBadges(badges, obj);
     obj = {};
     const merged = Object.assign(value);
     obj["badges"] = badges;
@@ -674,8 +686,8 @@ function handleUserUpdate(user) {
   return tmp4;
 }
 function handleGuildStatusChange() {
-  const items = [...closure_18.keys()];
-  return items.reduce((arg0, arg1) => callback(arg1) || arg0, false);
+  const items = [...map1.keys()];
+  return items.reduce((arg0, arg1) => outer1_53(arg1) || arg0, false);
 }
 function handleGuildMemberStatusChange(user) {
   return resetProfileFetch(user.user.id);
@@ -720,21 +732,9 @@ function resetProfileFetch(id) {
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[10]);
-let closure_13 = importDefault(dependencyMap[11]);
-const MAX_TIMEOUT_MS = arg1(dependencyMap[12]).MAX_TIMEOUT_MS;
 let closure_15 = Symbol("NO GUILD ID");
-const map = new Map();
-const set = new Set();
+let map = new Map();
+let set = new Set();
 const map1 = new Map();
 const map2 = new Map();
 let closure_20 = {};
@@ -743,241 +743,12 @@ const map4 = new Map();
 const map5 = new Map();
 let closure_24 = [];
 let closure_25 = [];
-let closure_26 = false;
-let closure_27 = null;
-let tmp10 = (importDefaultResult) => {
-  class UserProfileStore {
-    constructor() {
-      self = this;
-      tmp = closure_3(this, UserProfileStore);
-      obj = {
-        CACHE_LOADED_LAZY() {
-              return tmp2Result.loadCache();
-            },
-        USER_PROFILE_FETCH_START: closure_41,
-        USER_PROFILE_FETCH_FAILURE: closure_42,
-        USER_PROFILE_FETCH_SUCCESS: closure_39,
-        USER_PROFILE_UPDATE_START: closure_43,
-        USER_PROFILE_UPDATE_SUCCESS: closure_44,
-        USER_PROFILE_UPDATE_FAILURE: closure_45,
-        WIDGET_PENDING_SAVE_SUCCESS: closure_46,
-        USER_PROFILE_PIN_BADGES_ON_CLIENT: closure_47,
-        MUTUAL_FRIENDS_FETCH_START: closure_35,
-        MUTUAL_FRIENDS_FETCH_SUCCESS: closure_38,
-        MUTUAL_FRIENDS_FETCH_FAILURE: closure_36,
-        USER_UPDATE: closure_48,
-        GUILD_MEMBER_UPDATE: closure_48,
-        GUILD_JOIN: closure_49,
-        GUILD_DELETE: closure_49,
-        INVITE_ACCEPT_SUCCESS: closure_49,
-        GUILD_MEMBER_ADD: closure_50,
-        GUILD_MEMBER_REMOVE: closure_50,
-        RELATIONSHIP_ADD: closure_51,
-        RELATIONSHIP_REMOVE: closure_51,
-        RELATIONSHIP_UPDATE: closure_51,
-        LOGOUT: closure_34
-      };
-      items = [];
-      items[0] = obj;
-      obj2 = closure_6(UserProfileStore);
-      tmp2 = closure_5;
-      if (closure_29()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj2, items, closure_6(self).constructor);
-      } else {
-        constructResult = obj2.apply(self, items);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      UserProfileStore = tmp2Result;
-      tmp2Result.loadCache = () => {
-        const snapshot = tmp2Result.readSnapshot(tmp2Result.LATEST_SNAPSHOT_VERSION);
-        if (null != snapshot) {
-          const item = snapshot.forEach((arg0) => {
-            let profile;
-            let userId;
-            ({ userId, profile } = arg0);
-            if (null != userId) {
-              if (null != profile) {
-                const result = map.set(userId, profile);
-              } else {
-                map.delete(userId);
-              }
-            }
-          });
-        }
-      };
-      return tmp2Result;
-    }
-  }
-  const arg1 = UserProfileStore;
-  callback3(UserProfileStore, importDefaultResult);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(closure_13);
-      const items = [closure_8];
-      this.syncWith(items, closure_52);
-    }
-  };
-  const items = [obj, , , , , , , , , , , , , ];
-  obj = {
-    key: "isFetchingProfile",
-    value(arg0, arg1) {
-      let tmp = arg1;
-      const value = closure_16.get(arg0);
-      let hasItem = null != value;
-      if (hasItem) {
-        if (null == tmp) {
-          tmp = closure_15;
-        }
-        hasItem = value.has(tmp);
-      }
-      return hasItem;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isFetchingFriends",
-    value(arg0) {
-      return set.has(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isSubmitting",
-    get() {
-      return closure_26;
-    }
-  };
-  items[4] = {
-    key: "getUserProfile",
-    value(arg0) {
-      return store.get(arg0);
-    }
-  };
-  items[5] = {
-    key: "getGuildMemberProfile",
-    value(arg0, arg1) {
-      let tmp = null;
-      if (null != arg1) {
-        let value = closure_19.get(arg0);
-        value = undefined;
-        if (null != value) {
-          value = value.get(arg1);
-        }
-        let tmp5 = null;
-        if (null != value) {
-          tmp5 = value;
-        }
-        tmp = tmp5;
-      }
-      return tmp;
-    }
-  };
-  items[6] = {
-    key: "getMutualFriends",
-    value(arg0) {
-      return closure_21.get(arg0);
-    }
-  };
-  items[7] = {
-    key: "getMutualFriendsCount",
-    value(arg0) {
-      return closure_22.get(arg0);
-    }
-  };
-  items[8] = {
-    key: "getMutualGuilds",
-    value(arg0) {
-      return closure_23.get(arg0);
-    }
-  };
-  items[9] = {
-    key: "getWidgets",
-    value(arg0) {
-      const value = store.get(arg0);
-      let widgets;
-      if (null != value) {
-        widgets = value.widgets;
-      }
-      return widgets;
-    }
-  };
-  items[10] = {
-    key: "getWishlistIds",
-    value(arg0) {
-      const value = store.get(arg0);
-      let wishlistSettings;
-      if (null != value) {
-        wishlistSettings = value.wishlistSettings;
-      }
-      if (null != wishlistSettings) {
-        const _Object = Object;
-        let keys = Object.keys(value.wishlistSettings);
-      } else {
-        keys = [];
-      }
-      return keys;
-    }
-  };
-  items[11] = {
-    key: "getFirstWishlistId",
-    value(arg0) {
-      const self = this;
-      if (null == arg0) {
-        return null;
-      } else {
-        const wishlistIds = self.getWishlistIds(arg0);
-        let first = null;
-        if (wishlistIds.length > 0) {
-          first = wishlistIds[0];
-        }
-        return first;
-      }
-    }
-  };
-  items[12] = {
-    key: "getWishlistSettings",
-    value(arg0, arg1) {
-      const value = store.get(arg0);
-      let tmp2;
-      if (null != value) {
-        const wishlistSettings = value.wishlistSettings;
-        if (null != wishlistSettings) {
-          tmp2 = wishlistSettings[arg1];
-        }
-      }
-      let tmp4 = null;
-      if (null != tmp2) {
-        tmp4 = tmp2;
-      }
-      return tmp4;
-    }
-  };
-  items[13] = {
-    key: "takeSnapshot",
-    value() {
-      const id = id.getId();
-      const value = store.get(id);
-      if (null != value) {
-        let obj = { version: UserProfileStore.LATEST_SNAPSHOT_VERSION };
-        obj = { userId: id, profile: value };
-        const items = [obj];
-        obj.data = items;
-      } else {
-        obj = { version: UserProfileStore.LATEST_SNAPSHOT_VERSION, data: [] };
-      }
-      return obj;
-    }
-  };
-  return callback2(UserProfileStore, items);
-}(importDefault(dependencyMap[9]));
+let c26 = false;
+let c27 = null;
 tmp10.displayName = "UserProfileStore";
 tmp10.LATEST_SNAPSHOT_VERSION = 1;
 tmp10 = new tmp10();
-const importDefaultResult = importDefault(dependencyMap[9]);
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/user_profile/UserProfileStore.tsx");
+let closure_28 = tmp10;
+let result = set.fileFinishedImporting("modules/user_profile/UserProfileStore.tsx");
 
 export default tmp10;

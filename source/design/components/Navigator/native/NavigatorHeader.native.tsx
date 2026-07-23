@@ -1,15 +1,26 @@
-// Module ID: 5084
-// Function ID: 44264
+// Module ID: 5087
+// Function ID: 44283
 // Name: HeaderBackImage
-// Dependencies: []
+// Dependencies: [5, 31, 27, 653, 33, 4130, 689, 4126, 5088, 5091, 1457, 5093, 1212, 5094, 5119, 477, 1557, 5084, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5084 (HeaderBackImage)
+// Module 5087 (HeaderBackImage)
+import closure_3 from "_createForOfIteratorHelperLoose";
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 class HeaderBackImage {
   constructor() {
-    tmp = closure_8();
+    tmp = c8();
     obj = { size: "md", style: tmp.headerButtonIcon };
-    return jsx(arg1(dependencyMap[9]).ArrowLargeLeftIcon, obj);
+    return jsx(require("ArrowLargeLeftIcon").ArrowLargeLeftIcon, obj);
   }
 }
 function CloseButton(onPress) {
@@ -17,22 +28,21 @@ function CloseButton(onPress) {
   let obj = Object.create(null);
   obj.onPress = 0;
   const merged = Object.assign(onPress, obj);
-  let dependencyMap;
-  const callback = styles();
-  obj = callback(dependencyMap[10]);
+  fn = undefined;
+  const _require = _createForOfIteratorHelperLoose();
+  obj = _require(fn[10]);
   let closure_1 = obj.useNavigation();
   if (null == fn) {
     fn = () => {
 
     };
   }
-  dependencyMap = fn;
-  callback(dependencyMap[11]).useNavigatorBackPressHandler(() => {
+  _require(fn[11]).useNavigatorBackPressHandler(() => {
     fn();
     return true;
   });
-  const intl = callback(dependencyMap[12]).intl;
-  const stringResult = intl.string(callback(dependencyMap[12]).t.cpT0Cq);
+  const intl = _require(fn[12]).intl;
+  const stringResult = intl.string(_require(fn[12]).t.cpT0Cq);
   obj = {};
   const merged1 = Object.assign(merged);
   obj["onPress"] = fn;
@@ -40,18 +50,17 @@ function CloseButton(onPress) {
   obj["labelVisible"] = false;
   obj["backImage"] = function backImage(tintColor) {
     const style = [lib.headerButtonIcon, { tintColor: tintColor.tintColor }];
-    return callback(lib(fn[14]).XSmallIcon, { size: "md", style });
+    return outer1_6(lib(fn[14]).XSmallIcon, { size: "md", style });
   };
   obj["accessibilityLabel"] = stringResult;
-  return callback2(callback(dependencyMap[13]).HeaderBackButton, obj);
+  return callback(_require(fn[13]).HeaderBackButton, obj);
 }
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
-  const arg1 = onPress;
   let obj = Object.create(null);
   obj.onPress = 0;
   const merged = Object.assign(onPress, obj);
-  obj = arg1(dependencyMap[11]);
+  obj = onPress(5093);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       onPress();
@@ -63,9 +72,9 @@ function CustomHeaderBackButton(onPress) {
   obj["onPress"] = onPress;
   obj["labelVisible"] = false;
   obj["backImage"] = function backImage() {
-    return callback(closure_9, {});
+    return outer1_6(outer1_9, {});
   };
-  return callback2(arg1(dependencyMap[13]).HeaderBackButton, obj);
+  return callback(onPress(5094).HeaderBackButton, obj);
 }
 function HeaderTextButton(text) {
   text = text.text;
@@ -74,7 +83,7 @@ function HeaderTextButton(text) {
   obj.labelStyle = 0;
   const merged = Object.assign(text, obj);
   obj = {};
-  const merged1 = Object.assign(styles().headerBackTitleStyle);
+  const merged1 = Object.assign(_createForOfIteratorHelperLoose().headerBackTitleStyle);
   obj["marginHorizontal"] = 16;
   const items = [obj, text.labelStyle];
   obj = {};
@@ -90,82 +99,79 @@ function HeaderTextButton(text) {
     tmp6 = text;
   }
   obj["accessibilityLabel"] = tmp6;
-  return closure_6(arg1(dependencyMap[13]).HeaderBackButton, obj);
+  return closure_6(require(5094) /* Background */.HeaderBackButton, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-({ View: closure_4, ActivityIndicator: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
-obj.fauxHeaderWrapper = obj;
-const obj1 = {};
-const merged = Object.assign(arg1(dependencyMap[7]).TextStyleSheet.redesign/heading-18/bold);
-obj1["color"] = importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY;
-obj.headerTitle = obj1;
-const obj2 = { 0: true, 9223372036854775807: true, 9223372036854775807: true, 0: true, fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.headerBackTitleStyle = obj2;
-obj.navigatorHeaderTitleContainer = {};
-obj.navigatorHeaderContainer = {};
-obj.navigatorHeaderSubtitle = { marginTop: -2 };
-const tmp4 = arg1(dependencyMap[4]);
-obj.headerButtonIcon = { tintColor: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const obj3 = { tintColor: importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.submittingIndicator = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT };
-const styles = obj.createStyles(obj);
-const obj4 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT };
-const result = arg1(dependencyMap[18]).fileFinishedImporting("design/components/Navigator/native/NavigatorHeader.native.tsx");
+({ View: closure_4, ActivityIndicator: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
+_createForOfIteratorHelperLoose.fauxHeaderWrapper = _createForOfIteratorHelperLoose;
+let obj1 = {};
+let merged = Object.assign(require("Text").TextStyleSheet["redesign/heading-18/bold"]);
+obj1["color"] = require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY;
+_createForOfIteratorHelperLoose.headerTitle = obj1;
+const obj2 = { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, fontSize: 16, letterSpacing: 0, lineHeight: 20, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+_createForOfIteratorHelperLoose.headerBackTitleStyle = obj2;
+_createForOfIteratorHelperLoose.navigatorHeaderTitleContainer = { flexDirection: "row", justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.navigatorHeaderContainer = { flexDirection: "column", justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.navigatorHeaderSubtitle = { marginTop: -2 };
+const obj3 = { width: 24, height: 24, tintColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+_createForOfIteratorHelperLoose.headerButtonIcon = obj3;
+const obj4 = { width: 22, height: 22, color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.submittingIndicator = obj4;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Navigator/native/NavigatorHeader.native.tsx");
 
-export const useStyles = styles;
+export const useStyles = _createForOfIteratorHelperLoose;
 export const NavigatorHeader = function NavigatorHeader(subtitle) {
   let icon;
   let title;
   subtitle = subtitle.subtitle;
   ({ title, icon } = subtitle);
-  const tmp = styles();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.navigatorHeaderContainer };
   obj = { style: tmp.navigatorHeaderTitleContainer };
-  const items = [icon, callback2(arg1(dependencyMap[7]).Text, { children: title })];
+  const items = [icon, ];
+  obj = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title };
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
-  const items1 = [callback3(closure_4, obj), , ];
+  const items1 = [callback2(closure_4, obj), , ];
   let tmp5 = null != subtitle;
   if (tmp5) {
     tmp5 = "" !== subtitle;
   }
   if (tmp5) {
-    obj = { style: tmp.navigatorHeaderSubtitle, children: subtitle };
-    tmp5 = callback2(arg1(dependencyMap[7]).Text, obj);
+    const obj1 = { lineClamp: 1, style: tmp.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
+    tmp5 = callback(require(4126) /* Text */.Text, obj1);
   }
   items1[1] = tmp5;
-  items1[2] = importDefault(dependencyMap[8])("js-stack");
+  items1[2] = importDefault(5088)("js-stack");
   obj.children = items1;
-  return callback3(closure_4, obj);
+  return callback2(closure_4, obj);
 };
 export { HeaderBackImage };
 export const renderBackImage = function renderBackImage() {
-  return callback2(HeaderBackImage, {});
+  return callback(HeaderBackImage, {});
 };
 export function getHeaderCloseButton(pop) {
-  const arg1 = pop;
+  let closure_0 = pop;
   return (arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["onPress"] = arg0;
-    return callback(closure_10, obj);
+    obj["onPress"] = closure_0;
+    return outer1_6(outer1_10, obj);
   };
 }
 export function getHeaderConditionalBackButton(handleBack) {
-  const arg1 = handleBack;
+  let closure_0 = handleBack;
   return (onPress) => {
     onPress = onPress.onPress;
     let obj = Object.create(null);
     obj.onPress = 0;
     async function _handlePress() {
-      if (yield closure_0()) {
-        if (null != callback) {
-          callback();
+      if (yield onPress()) {
+        if (null != outer2_0) {
+          outer2_0();
         }
       }
     }
@@ -174,16 +180,15 @@ export function getHeaderConditionalBackButton(handleBack) {
     obj["onPress"] = function handlePress() {
       return _handlePress(...arguments);
     };
-    return callback(closure_11, obj);
+    return outer1_6(outer1_11, obj);
   };
 }
 export function getHeaderBackButton(onClose, arg1) {
   let flag = arg1;
-  arg1 = onClose;
+  let closure_0 = onClose;
   if (arg1 === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   return function renderBackImage(onPress) {
     onPress = onPress.onPress;
     let obj = Object.create(null);
@@ -194,24 +199,24 @@ export function getHeaderBackButton(onClose, arg1) {
       if (null != onPress) {
         onPress();
       }
-      if (!closure_1) {
+      if (!outer1_1) {
         if (null != onPress) {
           onPress();
         }
       }
     };
-    return callback(closure_11, obj);
+    return outer1_6(outer1_11, obj);
   };
 }
 export function getHeaderTextButton(intl, callback) {
-  callback = intl;
-  const importDefault = callback;
+  let closure_0 = intl;
+  let closure_1 = callback;
   return (arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["text"] = arg0;
-    obj["onPress"] = arg1;
-    return callback(closure_12, obj);
+    obj["text"] = closure_0;
+    obj["onPress"] = closure_1;
+    return outer1_6(outer1_12, obj);
   };
 }
 export function getHeaderNoTitle() {
@@ -221,17 +226,17 @@ export const FauxHeader = function FauxHeader(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);
-  const top = importDefault(dependencyMap[16])().top;
+  const top = importDefault(1557)().top;
   let obj = {};
-  const items = [styles().fauxHeaderWrapper, , ];
-  obj = { paddingTop: top, height: top + arg1(dependencyMap[17]).NAV_BAR_HEIGHT };
+  const items = [_createForOfIteratorHelperLoose().fauxHeaderWrapper, , ];
+  obj = { paddingTop: top, height: top + require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };
   items[1] = obj;
   items[2] = style;
   obj.style = items;
   obj.children = children;
-  return callback2(closure_4, obj);
+  return callback(closure_4, obj);
 };
 export const HeaderSubmittingIndicator = function HeaderSubmittingIndicator() {
-  const tmp = styles();
-  return callback2(closure_5, { animating: true, style: tmp.submittingIndicator, color: tmp.submittingIndicator.color });
+  const tmp = _createForOfIteratorHelperLoose();
+  return callback(closure_5, { animating: true, style: tmp.submittingIndicator, color: tmp.submittingIndicator.color });
 };

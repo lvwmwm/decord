@@ -1,12 +1,15 @@
-// Module ID: 4521
-// Function ID: 39734
+// Module ID: 4525
+// Function ID: 39766
 // Name: AccessibilityView
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4526, 3991, 2]
 
-// Module 4521 (AccessibilityView)
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef((accessibilityViewIsModal, ref) => {
+// Module 4525 (AccessibilityView)
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+import importDefaultResult from "module_3991";
+
+const forwardRefResult = require("result").forwardRef((accessibilityViewIsModal, ref) => {
   let nativeID;
   let onAccessibilityEscape;
   let flag = accessibilityViewIsModal.accessibilityViewIsModal;
@@ -14,7 +17,7 @@ const forwardRefResult = importAll(dependencyMap[0]).forwardRef((accessibilityVi
     flag = false;
   }
   ({ nativeID, onAccessibilityEscape } = accessibilityViewIsModal);
-  let obj = { "Null": -24, "Null": null, "Null": 1, "Null": "Malaysia" };
+  let obj = { accessibilityViewIsModal: 0, nativeID: 0, collapsable: 0, onAccessibilityEscape: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(accessibilityViewIsModal, obj);
   if (flag) {
@@ -25,7 +28,7 @@ const forwardRefResult = importAll(dependencyMap[0]).forwardRef((accessibilityVi
     }
   }
   obj = { accessibilityViewIsModal: flag, nativeID };
-  importDefault(dependencyMap[3])(obj);
+  importDefault(4526)(obj);
   obj = { ref, nativeID };
   let collapsable = null == nativeID;
   if (collapsable) {
@@ -35,12 +38,10 @@ const forwardRefResult = importAll(dependencyMap[0]).forwardRef((accessibilityVi
   obj.onAccessibilityEscape = onAccessibilityEscape;
   obj.accessibilityViewIsModal = flag;
   const merged1 = Object.assign(merged);
-  return <View {...obj} />;
+  return <View ref={arg1} nativeID={nativeID} />;
 });
-const importAllResult = importAll(dependencyMap[0]);
-const animatedComponent = importDefault(dependencyMap[4]).createAnimatedComponent(forwardRefResult);
-const importDefaultResult = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/AccessibilityView/AccessibilityView.native.tsx");
+const animatedComponent = require("module_3991").createAnimatedComponent(forwardRefResult);
+const result = require("jsxProd").fileFinishedImporting("design/components/AccessibilityView/AccessibilityView.native.tsx");
 
 export const AccessibilityView = forwardRefResult;
 export const AccessibilityViewAnimated = animatedComponent;

@@ -1,38 +1,40 @@
-// Module ID: 11099
-// Function ID: 86368
+// Module ID: 11109
+// Function ID: 86418
 // Name: getChatInputMaxHeight
-// Dependencies: []
+// Dependencies: [57, 31, 1452, 11105, 1823, 5163, 3996, 1555, 1450, 11110, 4131, 4134, 3991, 2]
 // Exports: default, getChatInputHeightAnimationTiming, getChatInputMinHeight
 
-// Module 11099 (getChatInputMaxHeight)
+// Module 11109 (getChatInputMaxHeight)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
+import { CHAT_INPUT_PILL_CONTENT_SIZE as closure_6 } from "TextAreaCta";
+
+const require = arg1;
 function getChatInputMaxHeight() {
-  let systemKeyboardHeight = arg1(dependencyMap[4]).getSystemKeyboardHeight();
-  const obj = arg1(dependencyMap[4]);
-  const customKeyboardHeight = arg1(dependencyMap[5]).getCustomKeyboardHeight();
-  const obj2 = arg1(dependencyMap[5]);
-  const keyboardType = arg1(dependencyMap[6]).getKeyboardType();
-  if (keyboardType !== arg1(dependencyMap[7]).KeyboardTypes.SYSTEM) {
+  let systemKeyboardHeight = require(1823) /* useSystemKeyboardHeight */.getSystemKeyboardHeight();
+  const obj = require(1823) /* useSystemKeyboardHeight */;
+  const customKeyboardHeight = require(5163) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
+  const obj2 = require(5163) /* useCustomKeyboardHeight */;
+  const keyboardType = require(3996) /* getKeyboardContextForType */.getKeyboardType();
+  if (keyboardType !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
     systemKeyboardHeight = customKeyboardHeight;
   }
-  const obj3 = arg1(dependencyMap[6]);
-  return Math.min(200, Math.max(2 * closure_6, arg1(dependencyMap[8]).getWindowDimensions({ ignoreKeyboard: true }).height - systemKeyboardHeight - 200));
+  const obj3 = require(3996) /* getKeyboardContextForType */;
+  return Math.min(200, Math.max(2 * closure_6, require(1450) /* useWindowDimensions */.getWindowDimensions({ ignoreKeyboard: true }).height - systemKeyboardHeight - 200));
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).CHAT_INPUT_PILL_CONTENT_SIZE;
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/chat_input/native/useChatInputMaxHeight.tsx");
+const result = require("subscribeToKeyboardUIStore").fileFinishedImporting("modules/chat_input/native/useChatInputMaxHeight.tsx");
 
 export default function useChatInputMaxHeight(arg0) {
-  const arg1 = arg0;
-  const tmp = callback(React.useState(getChatInputMaxHeight), 2);
+  let closure_0 = arg0;
+  let tmp = callback(React.useState(getChatInputMaxHeight), 2);
   let closure_1 = tmp[1];
   const items = [arg0];
   const effect = React.useEffect(() => {
     function maybeUpdateMaxHeight() {
       callback2((arg0) => {
         let tmp = arg0;
-        const tmp2 = callback2();
+        const tmp2 = outer3_7();
         if (arg0 !== tmp2) {
           tmp = tmp2;
           if (null != callback) {
@@ -43,8 +45,8 @@ export default function useChatInputMaxHeight(arg0) {
         return tmp;
       });
     }
-    let closure_0 = callback(closure_2[9])(maybeUpdateMaxHeight);
-    const callback = callback2(maybeUpdateMaxHeight);
+    let closure_0 = callback(outer1_2[9])(maybeUpdateMaxHeight);
+    callback = outer1_5(maybeUpdateMaxHeight);
     return () => {
       callback();
       callback2();
@@ -58,7 +60,7 @@ export function getChatInputMinHeight() {
 export { getChatInputMaxHeight };
 export const getChatInputHeightAnimationTiming = function getChatInputHeightAnimationTiming(height) {
   const bound = Math.min(height, getChatInputMaxHeight());
-  let obj = arg1(dependencyMap[10]);
-  obj = { duration: arg1(dependencyMap[11]).timingFastDuration, easing: arg1(dependencyMap[12]).Easing.linear };
+  let obj = require(4131) /* withTiming */;
+  obj = { duration: require(4134) /* timingNone */.timingFastDuration, easing: require(3991).Easing.linear };
   return obj.withTiming(bound, obj);
 };

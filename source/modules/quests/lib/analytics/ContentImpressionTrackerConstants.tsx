@@ -1,11 +1,10 @@
-// Module ID: 10460
-// Function ID: 80988
+// Module ID: 10470
+// Function ID: 81038
 // Name: MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 10460 (MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/quests/lib/analytics/ContentImpressionTrackerConstants.tsx");
+// Module 10470 (MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN)
+const result = require("set").fileFinishedImporting("modules/quests/lib/analytics/ContentImpressionTrackerConstants.tsx");
 
 export const MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN = 100;
 export const HEARTBEAT_SECONDS = 60;

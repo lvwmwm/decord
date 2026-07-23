@@ -1,7 +1,7 @@
 // Module ID: 636
 // Function ID: 7329
 // Name: isUndefinedOrNull
-// Dependencies: []
+// Dependencies: [637, 638]
 
 // Module 636 (isUndefinedOrNull)
 function isUndefinedOrNull(arr2) {
@@ -49,8 +49,8 @@ const fn = (arr2, getTime) => {
             if (!isUndefinedOrNull(arr2)) {
               flag = false;
               if (arr.prototype === arr2.prototype) {
-                if (require(dependencyMap[0])(arr)) {
-                  const tmp55 = !require(dependencyMap[0])(arr2);
+                if (require(637) /* supported */(arr)) {
+                  const tmp55 = !require(637) /* supported */(arr2);
                   let tmp56 = !tmp55;
                   if (!tmp55) {
                     const callResult = slice.call(arr);
@@ -73,14 +73,19 @@ const fn = (arr2, getTime) => {
                           num2 = sum;
                           let tmp51 = time;
                           flag = true;
+                          if (sum < arr.length) {
+                            continue;
+                          } else {
+                            break;
+                          }
                           break;
                         }
                       }
                     }
                   }
                 } else {
-                  const arr3 = require(dependencyMap[1])(arr);
-                  const arr4 = require(dependencyMap[1])(arr2);
+                  const arr3 = require(638) /* shim */(arr);
+                  const arr4 = require(638) /* shim */(arr2);
                   flag = false;
                   if (arr3.length == arr4.length) {
                     const sorted = arr3.sort();
@@ -115,7 +120,7 @@ const fn = (arr2, getTime) => {
               }
             }
           }
-          const tmp3 = obj;
+          tmp3 = obj;
         }
       }
       if (!obj.strict) {

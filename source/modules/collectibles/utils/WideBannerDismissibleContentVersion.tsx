@@ -1,13 +1,15 @@
-// Module ID: 12881
-// Function ID: 98379
+// Module ID: 12995
+// Function ID: 100535
 // Name: getWideBannerDismissibleContentVersion
-// Dependencies: []
+// Dependencies: [6821, 655, 6806, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 12881 (getWideBannerDismissibleContentVersion)
-let closure_2 = importDefault(dependencyMap[0]);
-const CollectibleShopTab = arg1(dependencyMap[1]).CollectibleShopTab;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/utils/WideBannerDismissibleContentVersion.tsx");
+// Module 12995 (getWideBannerDismissibleContentVersion)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { CollectibleShopTab } from "items";
+
+const require = arg1;
+const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/utils/WideBannerDismissibleContentVersion.tsx");
 
 export const getWideBannerDismissibleContentVersion = function getWideBannerDismissibleContentVersion() {
   let found;
@@ -17,8 +19,8 @@ export const getWideBannerDismissibleContentVersion = function getWideBannerDism
   if (0 < items.length) {
     while (true) {
       let tmp = shopBlocks;
-      let shopBlocks = shopBlocks.getShopBlocks(items[num]);
-      found = shopBlocks.find((type) => type.type === callback(closure_1[2]).ShopBlockType.WIDE_BANNER);
+      shopBlocks = shopBlocks.getShopBlocks(items[num]);
+      found = shopBlocks.find((type) => type.type === outer1_0(outer1_1[2]).ShopBlockType.WIDE_BANNER);
       let prop;
       if (null != found) {
         prop = found.dismissibleContentVersion;

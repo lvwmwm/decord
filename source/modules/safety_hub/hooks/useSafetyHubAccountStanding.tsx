@@ -1,14 +1,16 @@
-// Module ID: 11023
-// Function ID: 85839
+// Module ID: 11033
+// Function ID: 85889
 // Name: useSafetyHubAccountStanding
-// Dependencies: []
+// Dependencies: [11026, 566, 2]
 // Exports: useSafetyHubAccountStanding
 
-// Module 11023 (useSafetyHubAccountStanding)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubAccountStanding.tsx");
+// Module 11033 (useSafetyHubAccountStanding)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubAccountStanding.tsx");
 
 export const useSafetyHubAccountStanding = function useSafetyHubAccountStanding() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => accountStanding.getAccountStanding());
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getAccountStanding());
 };

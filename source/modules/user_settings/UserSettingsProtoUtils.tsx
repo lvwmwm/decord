@@ -1,38 +1,37 @@
 // Module ID: 1332
-// Function ID: 15641
+// Function ID: 15642
 // Name: getProtoFieldClass
-// Dependencies: []
+// Dependencies: [1318, 2]
 // Exports: createModifiedProto, getProtoFieldClass
 
 // Module 1332 (getProtoFieldClass)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/user_settings/UserSettingsProtoUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingsProtoUtils.tsx");
 
-export const getProtoFieldClass = function getProtoFieldClass(PreloadedUserSettings, closure_1) {
-  const require = closure_1;
+export const getProtoFieldClass = function getProtoFieldClass(PreloadedUserSettings, outer1_1) {
+  let closure_0 = outer1_1;
   const fields = PreloadedUserSettings.fields;
-  const found = fields.find((localName) => localName.localName === arg1);
+  const found = fields.find((localName) => localName.localName === closure_0);
   if (null == found) {
     const _Error = Error;
     const _String = String;
     const _HermesInternal = HermesInternal;
-    throw Error("Unknown proto field name " + String(closure_1));
+    throw Error("Unknown proto field name " + String(outer1_1));
   } else {
     return found.T();
   }
 };
-export const createModifiedProto = function createModifiedProto(favoriteGifs, closure_2, protoFieldClass, PreloadedUserSettings, closure_1) {
+export const createModifiedProto = function createModifiedProto(favoriteGifs, outer1_2, protoFieldClass, PreloadedUserSettings, outer1_1) {
   if (null != favoriteGifs) {
-    let fromBinaryResult = protoFieldClass.fromBinary(protoFieldClass.toBinary(favoriteGifs), require(dependencyMap[0]).BINARY_READ_OPTIONS);
+    let fromBinaryResult = protoFieldClass.fromBinary(protoFieldClass.toBinary(favoriteGifs), require(1318) /* _createForOfIteratorHelperLoose */.BINARY_READ_OPTIONS);
     const toBinaryResult = protoFieldClass.toBinary(favoriteGifs);
   } else {
     fromBinaryResult = protoFieldClass.create();
   }
-  if (false === closure_2(fromBinaryResult)) {
+  if (false === outer1_2(fromBinaryResult)) {
     return null;
   } else {
     const obj = PreloadedUserSettings.create();
-    obj[closure_1] = fromBinaryResult;
+    obj[outer1_1] = fromBinaryResult;
     return obj;
   }
 };

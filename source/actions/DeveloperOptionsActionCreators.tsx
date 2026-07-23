@@ -1,20 +1,19 @@
 // Module ID: 685
 // Function ID: 8468
 // Name: setDeveloperOptionSettings
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: setDeveloperOptionSettings, setRoutingKeyTags
 
 // Module 685 (setDeveloperOptionSettings)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("actions/DeveloperOptionsActionCreators.tsx");
+const result = require("set").fileFinishedImporting("actions/DeveloperOptionsActionCreators.tsx");
 
 export const setDeveloperOptionSettings = function setDeveloperOptionSettings(settings) {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(686);
   obj = { type: "DEVELOPER_OPTIONS_UPDATE_SETTINGS", settings };
   return obj.dispatch(obj);
 };
 export const setRoutingKeyTags = function setRoutingKeyTags(tags) {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(686);
   obj = { type: "DEVELOPER_OPTIONS_SET_ROUTING_KEY", tags };
   return obj.dispatch(obj);
 };

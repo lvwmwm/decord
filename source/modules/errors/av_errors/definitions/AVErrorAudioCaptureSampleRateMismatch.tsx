@@ -1,14 +1,16 @@
-// Module ID: 16423
-// Function ID: 126824
+// Module ID: 16540
+// Function ID: 128998
 // Name: AVErrorAudioCaptureSampleRateMismatchDefinition
-// Dependencies: []
+// Dependencies: [4215, 4177, 4202, 664, 8857, 16528, 2]
 
-// Module 16423 (AVErrorAudioCaptureSampleRateMismatchDefinition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = 10 * importDefault(dependencyMap[3]).Millis.SECOND;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorAudioCaptureSampleRateMismatch.tsx");
+// Module 16540 (AVErrorAudioCaptureSampleRateMismatchDefinition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+let closure_5 = 10 * require("set").Millis.SECOND;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorAudioCaptureSampleRateMismatch.tsx");
 
 export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
   getActiveErrors() {
@@ -29,7 +31,7 @@ export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
         if (null != rTCConnection1) {
           mediaEngineConnectionId = rTCConnection1.getMediaEngineConnectionId();
         }
-        const connectionStats = connectionStats.getConnectionStats(mediaEngineConnectionId);
+        connectionStats = connectionStats.getConnectionStats(mediaEngineConnectionId);
         let prop;
         if (null != connectionStats) {
           const outbound = connectionStats.stats.rtp.outbound;
@@ -45,15 +47,15 @@ export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
         const _Math = Math;
         let tmp7;
         if (Math.abs(num2) > 30) {
-          const obj = { type: arg1(dependencyMap[4]).AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH, audioCaptureSampleRateMismatchPercent: num2 };
-          const merged = Object.assign(arg1(dependencyMap[5]).getVoiceChannelErrorContext());
+          const obj = { type: require(8857) /* validateUniqueErrorCodes */.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH, audioCaptureSampleRateMismatchPercent: num2 };
+          const merged = Object.assign(require(16528) /* getCommonErrorContext */.getVoiceChannelErrorContext());
           const items = [obj];
           tmp7 = items;
-          const obj3 = arg1(dependencyMap[5]);
+          const obj3 = require(16528) /* getCommonErrorContext */;
         }
         return tmp7;
       }
-      const nowResult = performance.now();
+      nowResult = performance.now();
     }
   },
   makeErrorContextKey(mediaSessionId) {

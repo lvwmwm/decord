@@ -1,75 +1,80 @@
-// Module ID: 10350
-// Function ID: 79872
+// Module ID: 10360
+// Function ID: 79922
 // Name: ConfirmationToast
-// Dependencies: []
+// Dependencies: [31, 27, 10237, 1852, 33, 4130, 689, 10278, 3991, 4560, 4131, 5151, 1392, 4091, 4126, 2]
 // Exports: ConfirmationToast
 
-// Module 10350 (ConfirmationToast)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ extrapolateConfig: closure_4, PAN_INPUT_RANGE: closure_5 } = arg1(dependencyMap[2]));
-const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[3]).EMOJI_URL_BASE_SIZE;
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { <string:3596066964>: null, <string:3638417373>: null, marginTop: importDefault(dependencyMap[6]).space.PX_12 };
-obj.container = obj;
-const obj1 = {};
-const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_HIGH);
+// Module 10360 (ConfirmationToast)
+import "result";
+import { View } from "get ActivityIndicator";
+import set from "set";
+import { EMOJI_URL_BASE_SIZE } from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+
+let closure_4;
+let closure_5;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ extrapolateConfig: closure_4, PAN_INPUT_RANGE: closure_5 } = set);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = {};
+const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
 obj1["flexDirection"] = "row";
 obj1["alignItems"] = "center";
 obj1["justifyContent"] = "center";
-obj1["gap"] = importDefault(dependencyMap[6]).space.PX_8;
-obj1["backgroundColor"] = importDefault(dependencyMap[6]).colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
-obj1["paddingStart"] = importDefault(dependencyMap[6]).space.PX_8;
-obj1["paddingEnd"] = importDefault(dependencyMap[6]).space.PX_12;
-obj1["paddingVertical"] = importDefault(dependencyMap[6]).space.PX_8;
-obj1["borderRadius"] = importDefault(dependencyMap[6]).radii.round;
+obj1["gap"] = require("_createForOfIteratorHelperLoose").space.PX_8;
+obj1["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
+obj1["paddingStart"] = require("_createForOfIteratorHelperLoose").space.PX_8;
+obj1["paddingEnd"] = require("_createForOfIteratorHelperLoose").space.PX_12;
+obj1["paddingVertical"] = require("_createForOfIteratorHelperLoose").space.PX_8;
+obj1["borderRadius"] = require("_createForOfIteratorHelperLoose").radii.round;
 obj1["overflow"] = "hidden";
-obj.notificationRow = obj1;
-obj.textEmoji = { fontSize: 20 };
-obj.imageEmoji = {};
-let closure_9 = obj.createStyles(obj);
+_createForOfIteratorHelperLoose.notificationRow = obj1;
+_createForOfIteratorHelperLoose.textEmoji = { fontSize: 20 };
+_createForOfIteratorHelperLoose.imageEmoji = { width: 20, height: 20 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_10 = { code: "function ConfirmationToastTsx1(){const{animatedValue,interpolate,notificationGestureY,PAN_INPUT_RANGE,extrapolateConfig}=this.__closure;const value=animatedValue.get();const scale=interpolate(value,[0,1],[0.8,1]);const enterTranslateY=interpolate(value,[0,1],[-20,0]);const gestureY=notificationGestureY.get();const dismissOpacity=interpolate(gestureY,PAN_INPUT_RANGE,[0,1,0],extrapolateConfig);return{transform:[{translateY:enterTranslateY+gestureY},{scale:scale}],opacity:value*dismissOpacity};}" };
-const tmp4 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/in_app_notifications/native/ConfirmationToast.tsx");
+let result = set.fileFinishedImporting("modules/in_app_notifications/native/ConfirmationToast.tsx");
 
 export const ConfirmationToast = function ConfirmationToast(reaction) {
   reaction = reaction.reaction;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[7]);
-  const notificationGestureY = obj.useInAppNotificationContext().notificationGestureY;
-  const arg1 = notificationGestureY;
-  let obj1 = arg1(dependencyMap[8]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = notificationGestureY(10278);
+  notificationGestureY = obj.useInAppNotificationContext().notificationGestureY;
+  let obj1 = notificationGestureY(3991);
   const sharedValue = obj1.useSharedValue(0);
-  const importDefault = sharedValue;
-  importDefault(dependencyMap[9])(() => {
-    const result = sharedValue.set(notificationGestureY(closure_2[10]).withTiming(1, { duration: 200 }));
+  sharedValue(4560)(() => {
+    const result = sharedValue.set(notificationGestureY(outer1_2[10]).withTiming(1, { duration: 200 }));
   });
-  let obj2 = arg1(dependencyMap[8]);
+  let obj2 = notificationGestureY(3991);
   class A {
     constructor() {
       value = closure_1.get();
-      obj = notificationGestureY(closure_2[8]);
-      interpolateResult = obj.interpolate(value, [77601039, 1612144654], []);
-      obj2 = notificationGestureY(closure_2[8]);
+      obj = notificationGestureY(outer1_2[8]);
+      interpolateResult = obj.interpolate(value, [0, 1], [0.8, 1]);
+      obj2 = notificationGestureY(outer1_2[8]);
       items = [, ];
       items[0] = -20;
       items[1] = 0;
-      interpolateResult1 = obj2.interpolate(value, [77601039, 1612144654], items);
+      interpolateResult1 = obj2.interpolate(value, [0, 1], items);
       value1 = notificationGestureY.get();
       obj = { transform: items1 };
       obj1 = { translateY: interpolateResult1 + value1 };
       items1 = [, ];
       items1[0] = obj1;
       items1[1] = { scale: interpolateResult };
-      obj5 = notificationGestureY(closure_2[8]);
-      obj.opacity = value * obj5.interpolate(value1, closure_5, [255, 235, 205], closure_4);
+      obj5 = notificationGestureY(outer1_2[8]);
+      obj.opacity = value * obj5.interpolate(value1, outer1_5, [0, 1, 0], outer1_4);
       return obj;
     }
   }
-  obj = { animatedValue: sharedValue, interpolate: arg1(dependencyMap[8]).interpolate, notificationGestureY, PAN_INPUT_RANGE: closure_5, extrapolateConfig: closure_4 };
+  obj = { animatedValue: sharedValue, interpolate: notificationGestureY(3991).interpolate, notificationGestureY, PAN_INPUT_RANGE: closure_5, extrapolateConfig: closure_4 };
   A.__closure = obj;
   A.__workletHash = 4654280152495;
   A.__initData = closure_10;
@@ -89,39 +94,39 @@ export const ConfirmationToast = function ConfirmationToast(reaction) {
       ({ id: obj9.id, animated: obj9.animated } = reaction);
       reaction = EMOJI_URL_BASE_SIZE;
       obj2.size = EMOJI_URL_BASE_SIZE;
-      let url = importDefault(dependencyMap[12]).getEmojiURL(obj2);
-      const obj8 = importDefault(dependencyMap[12]);
+      let url = sharedValue(1392).getEmojiURL(obj2);
+      const obj8 = sharedValue(1392);
     } else {
       url = reaction.url;
     }
     obj1.src = url;
-    callback(importDefault(dependencyMap[11]), obj1);
+    callback(sharedValue(5151), obj1);
     const tmp11 = callback;
-    const tmp14 = importDefault(dependencyMap[11]);
+    const tmp14 = sharedValue(5151);
   } else {
-    const obj3 = { size: "md", color: importDefault(dependencyMap[6]).colors.STATUS_POSITIVE };
-    const items1 = [callback(arg1(dependencyMap[13]).CircleCheckIcon, obj3), ];
-    const obj4 = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum", children: reaction.message };
-    items1[1] = callback(arg1(dependencyMap[14]).Text, obj4);
+    const obj3 = { size: "md", color: sharedValue(689).colors.STATUS_POSITIVE };
+    let items1 = [callback(notificationGestureY(4091).CircleCheckIcon, obj3), ];
+    const obj4 = { variant: "text-sm/semibold", color: "text-default", children: reaction.message };
+    items1[1] = callback(notificationGestureY(4126).Text, obj4);
     obj.children = items1;
     class A {
       constructor() {
         value = closure_1.get();
-        obj = notificationGestureY(closure_2[8]);
-        interpolateResult = obj.interpolate(value, [77601039, 1612144654], []);
-        obj2 = notificationGestureY(closure_2[8]);
+        obj = notificationGestureY(outer1_2[8]);
+        interpolateResult = obj.interpolate(value, [0, 1], [0.8, 1]);
+        obj2 = notificationGestureY(outer1_2[8]);
         items = [, ];
         items[0] = -20;
         items[1] = 0;
-        interpolateResult1 = obj2.interpolate(value, [77601039, 1612144654], items);
+        interpolateResult1 = obj2.interpolate(value, [0, 1], items);
         value1 = notificationGestureY.get();
         obj = { transform: items1 };
         obj1 = { translateY: interpolateResult1 + value1 };
         items1 = [, ];
         items1[0] = obj1;
         items1[1] = { scale: interpolateResult };
-        obj5 = notificationGestureY(closure_2[8]);
-        obj.opacity = value * obj5.interpolate(value1, closure_5, [255, 235, 205], closure_4);
+        obj5 = notificationGestureY(outer1_2[8]);
+        obj.opacity = value * obj5.interpolate(value1, outer1_5, [0, 1, 0], outer1_4);
         return obj;
       }
     }

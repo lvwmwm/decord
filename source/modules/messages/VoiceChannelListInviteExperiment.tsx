@@ -1,18 +1,18 @@
-// Module ID: 9469
-// Function ID: 73787
+// Module ID: 9476
+// Function ID: 73828
 // Name: items
-// Dependencies: []
+// Dependencies: [4042, 2]
 // Exports: getVoiceChannelListInviteExperiment, useVoiceChannelListInviteExperiment
 
-// Module 9469 (items)
-const _module = require(dependencyMap[0]);
-let obj = { shapes: "<string:2805465090>", flex: "<string:4132503554>", sk: "<string:3678474733>", defaultConfig: { enabled: false } };
-obj = { displayNameStylesEnabled: null, submitButtonEnabled: 154, config: { enabled: true } };
+// Module 9476 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2026-05_voice_channel_list_invite_embed", label: "Voice Channel List Invite Embed", defaultConfig: { enabled: false } };
+obj = { id: 1, label: "Enable channel-list-style voice invite embed", config: { enabled: true } };
 const items = [obj];
 obj.treatments = items;
-let closure_0 = _module.createExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/messages/VoiceChannelListInviteExperiment.tsx");
+let closure_0 = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/messages/VoiceChannelListInviteExperiment.tsx");
 
 export const getVoiceChannelListInviteExperiment = function getVoiceChannelListInviteExperiment(guildId) {
   return closure_0.getCurrentConfig({ guildId: guildId.guildId, location: guildId.location });

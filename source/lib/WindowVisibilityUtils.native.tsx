@@ -1,13 +1,14 @@
-// Module ID: 10570
-// Function ID: 82547
+// Module ID: 10580
+// Function ID: 82597
 // Name: isDiscordVisible
-// Dependencies: []
+// Dependencies: [6651, 653, 10233, 2]
 // Exports: default
 
-// Module 10570 (isDiscordVisible)
-let closure_2 = importDefault(dependencyMap[0]);
-const AppStates = arg1(dependencyMap[1]).AppStates;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/WindowVisibilityUtils.native.tsx");
+// Module 10580 (isDiscordVisible)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AppStates } from "ME";
+
+const result = require("NativeModules").fileFinishedImporting("lib/WindowVisibilityUtils.native.tsx");
 
 export default function isDiscordVisible() {
   const tmp = state.getState() === AppStates.BACKGROUND;

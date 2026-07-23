@@ -1,19 +1,20 @@
-// Module ID: 4579
-// Function ID: 40161
+// Module ID: 4583
+// Function ID: 40193
 // Name: isSoundValid
-// Dependencies: []
+// Dependencies: [1348, 3758, 1849, 4579, 482, 3776, 2]
 // Exports: default
 
-// Module 4579 (isSoundValid)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const DEFAULT_SOUND_GUILD_ID = arg1(dependencyMap[3]).DEFAULT_SOUND_GUILD_ID;
-const Permissions = arg1(dependencyMap[4]).Permissions;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/sounds/soundmoji/utils/isSoundValid.tsx");
+// Module 4583 (isSoundValid)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
+import { Permissions } from "sum";
+
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/isSoundValid.tsx");
 
 export default function isSoundValid(guildId, arg1, channelId) {
-  const channel = channel.getChannel(channelId);
+  channel = channel.getChannel(channelId);
   guildId = undefined;
   if (null != guildId) {
     guildId = guildId.guildId;
@@ -36,7 +37,7 @@ export default function isSoundValid(guildId, arg1, channelId) {
       }
       if (guildId2 !== arg1) {
         let canResult = null == channel;
-        const result = importDefault(dependencyMap[5]).canUseSoundboardEverywhere(currentUser.getCurrentUser());
+        const result = importDefault(3776).canUseSoundboardEverywhere(currentUser.getCurrentUser());
         if (!canResult) {
           canResult = null == channel.guild_id;
         }

@@ -1,14 +1,19 @@
-// Module ID: 15427
-// Function ID: 117724
-// Dependencies: []
+// Module ID: 15544
+// Function ID: 119898
+// Dependencies: [31, 27, 33, 4130, 10111, 2]
 
-// Module 15427
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[3]).createStyles({ container: { 9223372036854775807: null, -9223372036854775808: null, 9223372036854775807: null, 0: null } });
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo((channelId) => <View style={callback().container}>{jsx(importDefault(dependencyMap[4]), { channelId: arg0.channelId })}</View>);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorPreviewHeader.tsx");
+// Module 15544
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ container: { flexShrink: 1, paddingRight: 12, flexDirection: "row", alignItems: "center" } });
+const memoResult = require("result").memo((channelId) => {
+  obj = { style: callback().container, children: jsx(importDefault(10111), obj) };
+  obj = { channelId: channelId.channelId, screenIndex: "none", pressable: false, isGuildMemberCountVisible: false, isNavigationScreen: true };
+  return <View channelId={arg0.channelId} screenIndex="none" pressable={false} isGuildMemberCountVisible={false} isNavigationScreen />;
+});
+const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorPreviewHeader.tsx");
 
 export default memoResult;

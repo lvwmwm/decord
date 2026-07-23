@@ -1,9 +1,15 @@
-// Module ID: 4799
-// Function ID: 41713
+// Module ID: 4802
+// Function ID: 41731
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 620, 566, 686, 2]
 
-// Module 4799 (_isNativeReflectConstruct)
+// Module 4802 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,35 +20,30 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function guildDimensionFactory(guildId) {
-  const obj = { textAlign: "mn", marginVertical: "description", paddingHorizontal: "Array", guildId };
+  const obj = { guildId, scrollTop: null, scrollTo: null };
   return obj;
 }
 function _isAtBottom(channelId) {
-  if (null != closure_7[channelId]) {
-    return closure_7[channelId].scrollTop === closure_7[channelId].scrollHeight - closure_7[channelId].offsetHeight;
+  if (null != dependencyMap[channelId]) {
+    return dependencyMap[channelId].scrollTop === dependencyMap[channelId].scrollHeight - dependencyMap[channelId].offsetHeight;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = {};
 let closure_8 = {};
 let closure_9 = { scrollTop: 0 };
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class DimensionStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, DimensionStore);
-      obj = closure_5(DimensionStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, DimensionStore);
+      obj = outer1_5(DimensionStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -51,13 +52,12 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = DimensionStore;
   callback2(DimensionStore, Store);
   let obj = {
     key: "percentageScrolled",
     value(arg0) {
-      if (null != closure_7[arg0]) {
-        return closure_7[arg0].scrollTop / closure_7[arg0].scrollHeight;
+      if (null != outer1_7[arg0]) {
+        return outer1_7[arg0].scrollTop / outer1_7[arg0].scrollHeight;
       } else {
         return 1;
       }
@@ -67,16 +67,16 @@ let tmp2 = (Store) => {
   obj = {
     key: "getChannelDimensions",
     value(arg0) {
-      return closure_7[arg0];
+      return outer1_7[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getGuildDimensions",
     value(arg0) {
-      let tmp = closure_8[arg0];
+      let tmp = outer1_8[arg0];
       if (null == tmp) {
-        tmp = callback4(arg0);
+        tmp = outer1_11(arg0);
       }
       return tmp;
     }
@@ -85,19 +85,19 @@ let tmp2 = (Store) => {
   items[3] = {
     key: "getGuildListDimensions",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[4] = {
     key: "isAtBottom",
     value(arg0) {
-      return callback5(arg0);
+      return outer1_12(arg0);
     }
   };
   return callback(DimensionStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "DimensionStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   UPDATE_CHANNEL_DIMENSIONS: function handleChannelScroll(arg0) {
     let channelId;
     let offsetHeight;
@@ -108,19 +108,19 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       if (null != scrollHeight) {
         if (null != offsetHeight) {
           const obj = { channelId, scrollTop, scrollHeight, offsetHeight };
-          if (null != tmp) {
-            if (importDefault(dependencyMap[5])(tmp, obj)) {
+          if (null != tmp3) {
+            if (importDefault(620)(tmp3, obj)) {
               return false;
             }
           }
-          closure_7[channelId] = obj;
+          dependencyMap[channelId] = obj;
         }
       }
     }
-    if (null == closure_7[channelId]) {
+    if (null == dependencyMap[channelId]) {
       return false;
     } else {
-      delete r0[r1];
+      delete tmp[tmp2];
     }
   },
   UPDATE_CHANNEL_LIST_DIMENSIONS: function handleGuildUpdate(arg0) {
@@ -128,16 +128,16 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     let scrollTo;
     let scrollTop;
     ({ guildId, scrollTop, scrollTo } = arg0);
-    if (null == closure_8[guildId]) {
-      closure_8[guildId] = guildDimensionFactory(guildId);
+    if (null == dependencyMap2[guildId]) {
+      dependencyMap2[guildId] = guildDimensionFactory(guildId);
     }
     if (undefined !== scrollTop) {
-      closure_8[guildId].scrollTop = scrollTop;
+      dependencyMap2[guildId].scrollTop = scrollTop;
     }
     let flag = false;
     if (undefined !== scrollTo) {
-      flag = closure_8[guildId].scrollTo !== scrollTo;
-      closure_8[guildId].scrollTo = scrollTo;
+      flag = dependencyMap2[guildId].scrollTo !== scrollTo;
+      dependencyMap2[guildId].scrollTo = scrollTo;
     }
     return null != scrollTo || flag;
   },
@@ -146,10 +146,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
   },
   CALL_CREATE: function handleCallCreate(channelId) {
     if (_isAtBottom(channelId.channelId)) {
-      delete r1[r2];
+      delete tmp[tmp2];
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("stores/DimensionStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/DimensionStore.tsx");
 
 export default tmp2;

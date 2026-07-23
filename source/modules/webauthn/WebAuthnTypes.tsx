@@ -1,36 +1,37 @@
-// Module ID: 9195
-// Function ID: 72026
+// Module ID: 9202
+// Function ID: 72067
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 162, 2]
 
-// Module 9195 (_isNativeReflectConstruct)
+// Module 9202 (_isNativeReflectConstruct)
+import _defineProperties from "_defineProperties";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _defineProperties;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = (arg0) => {
+const tmp2 = ((arg0) => {
   class IgnorableWebAuthnError {
     constructor() {
       self = this;
-      tmp = closure_1(this, IgnorableWebAuthnError);
-      obj = closure_3(IgnorableWebAuthnError);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      tmp = outer1_1(this, IgnorableWebAuthnError);
+      obj = outer1_3(IgnorableWebAuthnError);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -39,10 +40,9 @@ const tmp2 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const callback = IgnorableWebAuthnError;
-  callback2(IgnorableWebAuthnError, arg0);
-  return callback(IgnorableWebAuthnError);
-}(importDefault(dependencyMap[5])(Error));
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/webauthn/WebAuthnTypes.tsx");
+  callback(IgnorableWebAuthnError, arg0);
+  return IgnorableWebAuthnError(IgnorableWebAuthnError);
+})(require("_wrapNativeSuper")(Error));
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/webauthn/WebAuthnTypes.tsx");
 
 export const IgnorableWebAuthnError = tmp2;

@@ -1,13 +1,12 @@
 // Module ID: 1428
-// Function ID: 16701
+// Function ID: 16702
 // Name: ApexExperiment
-// Dependencies: []
+// Dependencies: [2, 1325, 1429]
 
 // Module 1428 (ApexExperiment)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/experiments/apex/index.tsx");
+const result = require("INSTALLATION_UNIT_ID").fileFinishedImporting("modules/experiments/apex/index.tsx");
 
-export const ApexExperiment = require(dependencyMap[1]).ApexExperiment;
-export const ApexExperimentsMessage = require(dependencyMap[2]).ApexExperimentsMessage;
-export const ExperimentName = require(dependencyMap[2]).ExperimentName;
-export const createApexExperiment = importDefault(dependencyMap[1]);
+export const ApexExperiment = require("getUnitId").ApexExperiment;
+export const ApexExperimentsMessage = require("INSTALLATION_UNIT_ID").ApexExperimentsMessage;
+export const ExperimentName = require("INSTALLATION_UNIT_ID").ExperimentName;
+export const createApexExperiment = require("getUnitId");

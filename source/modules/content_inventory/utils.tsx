@@ -1,20 +1,20 @@
-// Module ID: 7809
-// Function ID: 62311
+// Module ID: 7815
+// Function ID: 62348
 // Name: calculateTimestampDurations
-// Dependencies: []
+// Dependencies: [664, 21, 1212, 3712, 7816, 3355, 7810, 2]
 // Exports: formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getTrendingType, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 7809 (calculateTimestampDurations)
+// Module 7815 (calculateTimestampDurations)
 function calculateTimestampDurations(end, now) {
   const bound = Math.max(end - now, 0);
-  const result = bound / importDefault(dependencyMap[0]).Millis.SECOND;
+  const result = bound / importDefault(664).Millis.SECOND;
   const obj = {};
   const rounded = Math.floor(result);
-  obj.seconds = rounded % importDefault(dependencyMap[0]).Seconds.MINUTE;
-  const rounded1 = Math.floor(result / importDefault(dependencyMap[0]).Seconds.MINUTE);
-  obj.minutes = rounded1 % importDefault(dependencyMap[0]).Seconds.MINUTE;
-  obj.hours = Math.floor(result / importDefault(dependencyMap[0]).Seconds.HOUR);
-  obj.days = Math.floor(result / importDefault(dependencyMap[0]).Seconds.DAY);
+  obj.seconds = rounded % importDefault(664).Seconds.MINUTE;
+  const rounded1 = Math.floor(result / importDefault(664).Seconds.MINUTE);
+  obj.minutes = rounded1 % importDefault(664).Seconds.MINUTE;
+  obj.hours = Math.floor(result / importDefault(664).Seconds.HOUR);
+  obj.days = Math.floor(result / importDefault(664).Seconds.DAY);
   return obj;
 }
 function calculateActiveTimestampDurations(end, now) {
@@ -37,8 +37,8 @@ function calculateActiveTimestampDurations(end, now) {
     }
   }
   if ("id" in end) {
-    let start = importDefault(dependencyMap[1]).extractTimestamp(end.id);
-    const obj = importDefault(dependencyMap[1]);
+    let start = importDefault(21).extractTimestamp(end.id);
+    const obj = importDefault(21);
   } else {
     start = end.start;
   }
@@ -81,14 +81,14 @@ function formatTimestampToA11yLabel(hours) {
   const items = [];
   ({ minutes, seconds } = hours);
   if (hours > 0) {
-    const intl = require(dependencyMap[2]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj = { hours };
-    items.push(intl.formatToPlainString(require(dependencyMap[2]).t.xCjYxK, obj));
+    items.push(intl.formatToPlainString(require(1212) /* getSystemLocale */.t.xCjYxK, obj));
   }
-  const intl2 = require(dependencyMap[2]).intl;
-  items.push(intl2.formatToPlainString(require(dependencyMap[2]).t.iXLF9W, { minutes }));
-  const intl3 = require(dependencyMap[2]).intl;
-  items.push(intl3.formatToPlainString(require(dependencyMap[2]).t.geSp4K, { seconds }));
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  items.push(intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.iXLF9W, { minutes }));
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  items.push(intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.geSp4K, { seconds }));
   return items.join(", ");
 }
 function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
@@ -100,38 +100,38 @@ function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_3;
   }
-  const obj2 = importDefault(dependencyMap[3])(timestamp);
-  const tmp = importDefault(dependencyMap[3]);
-  const diffResult = obj2.diff(tmp(importDefault(dependencyMap[1]).extractTimestamp(entry.id)), "s");
+  const obj2 = importDefault(3712)(timestamp);
+  const tmp = importDefault(3712);
+  const diffResult = obj2.diff(tmp(importDefault(21).extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
-  if (absolute < importDefault(dependencyMap[0]).Seconds.MINUTE) {
+  if (absolute < importDefault(664).Seconds.MINUTE) {
     return formatSet.secondsAgo(diffResult);
-  } else if (absolute < importDefault(dependencyMap[0]).Seconds.HOUR) {
+  } else if (absolute < importDefault(664).Seconds.HOUR) {
     const _Math5 = Math;
-    return formatSet.minutesAgo(Math.round(diffResult / importDefault(dependencyMap[0]).Seconds.MINUTE));
-  } else if (absolute < 12 * importDefault(dependencyMap[0]).Seconds.HOUR) {
+    return formatSet.minutesAgo(Math.round(diffResult / importDefault(664).Seconds.MINUTE));
+  } else if (absolute < 12 * importDefault(664).Seconds.HOUR) {
     const _Math4 = Math;
-    return formatSet.hoursAgo(Math.round(diffResult / importDefault(dependencyMap[0]).Seconds.HOUR));
-  } else if (absolute < 9 * importDefault(dependencyMap[0]).Seconds.DAY) {
+    return formatSet.hoursAgo(Math.round(diffResult / importDefault(664).Seconds.HOUR));
+  } else if (absolute < 9 * importDefault(664).Seconds.DAY) {
     const _Math3 = Math;
-    return formatSet.daysAgo(Math.round(diffResult / importDefault(dependencyMap[0]).Seconds.DAY));
-  } else if (absolute < 4 * importDefault(dependencyMap[0]).Seconds.WEEK) {
+    return formatSet.daysAgo(Math.round(diffResult / importDefault(664).Seconds.DAY));
+  } else if (absolute < 4 * importDefault(664).Seconds.WEEK) {
     const _Math2 = Math;
-    return formatSet.weeksAgo(Math.round(diffResult / (7 * importDefault(dependencyMap[0]).Seconds.DAY)));
+    return formatSet.weeksAgo(Math.round(diffResult / (7 * importDefault(664).Seconds.DAY)));
   } else {
     const _Math = Math;
-    return formatSet.monthsAgo(Math.round(diffResult / importDefault(dependencyMap[0]).Seconds.DAYS_30));
+    return formatSet.monthsAgo(Math.round(diffResult / importDefault(664).Seconds.DAYS_30));
   }
-  const obj3 = importDefault(dependencyMap[1]);
+  const obj3 = importDefault(21);
 }
 function getTrait(contentInventoryEntry, AGGREGATE_COUNT) {
-  const require = AGGREGATE_COUNT;
+  let closure_0 = AGGREGATE_COUNT;
   const traits = contentInventoryEntry.traits;
-  return traits.find((type) => type.type === arg1);
+  return traits.find((type) => type.type === closure_0);
 }
 function isEntryActive(entry) {
   let is_live;
-  const tmp2 = getTrait(entry, require(dependencyMap[4]).ContentInventoryTraitType.IS_LIVE);
+  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.IS_LIVE);
   if (null != tmp2) {
     is_live = tmp2.is_live;
   }
@@ -150,7 +150,7 @@ function isEntryExpired(content) {
 }
 function getEntryDuration(contentInventoryEntry) {
   let duration_seconds;
-  const tmp2 = getTrait(contentInventoryEntry, require(dependencyMap[4]).ContentInventoryTraitType.DURATION_SECONDS);
+  const tmp2 = getTrait(contentInventoryEntry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.DURATION_SECONDS);
   if (null != tmp2) {
     duration_seconds = tmp2.duration_seconds;
   }
@@ -158,7 +158,7 @@ function getEntryDuration(contentInventoryEntry) {
 }
 function getStreakCount(entry) {
   let streak_count_days;
-  const tmp2 = getTrait(entry, require(dependencyMap[4]).ContentInventoryTraitType.STREAK_DAYS);
+  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.STREAK_DAYS);
   if (null != tmp2) {
     streak_count_days = tmp2.streak_count_days;
   }
@@ -166,32 +166,31 @@ function getStreakCount(entry) {
 }
 let closure_3 = {
   secondsAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.EOrEJl, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.EOrEJl, { count });
   },
   minutesAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.LRNgHp, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.LRNgHp, { count });
   },
   hoursAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.raJpz3, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.raJpz3, { count });
   },
   daysAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.KkvKhi, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.KkvKhi, { count });
   },
   weeksAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.sDtO6D, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.sDtO6D, { count });
   },
   monthsAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.ITymou, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.ITymou, { count });
   }
 };
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/content_inventory/utils.tsx");
+let result = require("getSystemLocale").fileFinishedImporting("modules/content_inventory/utils.tsx");
 
 export { calculateTimestampDurations };
 export { calculateActiveTimestampDurations };
@@ -203,28 +202,28 @@ export const formatActiveA11yTimestamp = function formatActiveA11yTimestamp(end,
 };
 export const A11Y_FORMAT_SET = {
   secondsAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.jfUoRQ, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.jfUoRQ, { count });
   },
   minutesAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.DmvRVO, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.DmvRVO, { count });
   },
   hoursAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.AfXezt, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.AfXezt, { count });
   },
   daysAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.Lru1rV, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.Lru1rV, { count });
   },
   weeksAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.jovF+x, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["jovF+x"], { count });
   },
   monthsAgo(count) {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.formatToPlainString(require(dependencyMap[2]).t.nmSbST, { count });
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.nmSbST, { count });
   }
 };
 export { formatEndedTimestamp };
@@ -249,15 +248,15 @@ export { getTrait };
 export { isEntryActive };
 export const isEntryNew = function isEntryNew(entry) {
   let first_time;
-  const tmp2 = getTrait(entry, require(dependencyMap[4]).ContentInventoryTraitType.FIRST_TIME);
+  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.FIRST_TIME);
   if (null != tmp2) {
     first_time = tmp2.first_time;
   }
   return null != first_time && first_time;
 };
 export const isEntryRecent = function isEntryRecent(id) {
-  const obj = importDefault(dependencyMap[1]);
-  return importDefault(dependencyMap[1]).age(id.id) / importDefault(dependencyMap[0]).Millis.HOUR < 48;
+  const obj = importDefault(21);
+  return importDefault(21).age(id.id) / importDefault(664).Millis.HOUR < 48;
 };
 export { isEntryExpired };
 export const isEntryLive = function isEntryLive(entry) {
@@ -270,7 +269,7 @@ export const isEntryLive = function isEntryLive(entry) {
 export { getEntryDuration };
 export const getAggregateRange = function getAggregateRange(contentInventoryEntry) {
   let range;
-  const tmp2 = getTrait(contentInventoryEntry, require(dependencyMap[4]).ContentInventoryTraitType.AGGREGATE_RANGE);
+  const tmp2 = getTrait(contentInventoryEntry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.AGGREGATE_RANGE);
   if (null != tmp2) {
     range = tmp2.range;
   }
@@ -278,14 +277,14 @@ export const getAggregateRange = function getAggregateRange(contentInventoryEntr
 };
 export const isEntryMarathon = function isEntryMarathon(entry) {
   let marathon;
-  const tmp2 = getTrait(entry, require(dependencyMap[4]).ContentInventoryTraitType.MARATHON);
+  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.MARATHON);
   if (null != tmp2) {
     marathon = tmp2.marathon;
   }
   return marathon;
 };
 export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastPlayTime(entry) {
-  const tmp = getTrait(entry, require(dependencyMap[4]).ContentInventoryTraitType.RESURRECTED);
+  const tmp = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.RESURRECTED);
   let prop;
   if (null != tmp) {
     prop = tmp.resurrected_last_played;
@@ -298,7 +297,7 @@ export const getResurrectedEntryLastPlayTime = function getResurrectedEntryLastP
   return date;
 };
 export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(start) {
-  let obj = require(dependencyMap[5]);
+  let obj = require(3355);
   obj = { start, end: new Date() };
   const intervalToDurationResult = obj.intervalToDuration(obj);
   const months = intervalToDurationResult.months;
@@ -316,7 +315,7 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
   if (undefined !== days) {
     num3 = days;
   }
-  const intl = require(dependencyMap[2]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { months: num };
   let num4 = 0;
   if (num <= 0) {
@@ -331,7 +330,7 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
     }
   }
   obj.days = num5;
-  return intl.formatToPlainString(require(dependencyMap[2]).t.NXBtjF, obj);
+  return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.NXBtjF, obj);
 };
 export const getEpisodeBadgeText = function getEpisodeBadgeText(large_text) {
   if (null != large_text) {
@@ -340,9 +339,9 @@ export const getEpisodeBadgeText = function getEpisodeBadgeText(large_text) {
       const match = obj.exec(large_text);
       let formatToPlainStringResult = null;
       if (null != match) {
-        const intl = require(dependencyMap[2]).intl;
+        const intl = require(1212) /* getSystemLocale */.intl;
         obj = { seasonNum: match[1], episodeNum: match[2] };
-        formatToPlainStringResult = intl.formatToPlainString(require(dependencyMap[2]).t.ijVm6y, obj);
+        formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.ijVm6y, obj);
       }
       return formatToPlainStringResult;
     }
@@ -372,9 +371,9 @@ export const getRichGameStateBadgeText = function getRichGameStateBadgeText(stat
     if (null != tmp4) {
       if (tmp2 > 0) {
         if (tmp4 > 0) {
-          const intl2 = require(dependencyMap[2]).intl;
+          const intl2 = require(1212) /* getSystemLocale */.intl;
           let obj = { count: tmp2, max: tmp4 };
-          let formatToPlainStringResult = intl2.formatToPlainString(require(dependencyMap[2]).t.wmUSiy, obj);
+          let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.wmUSiy, obj);
         }
         if (null != formatToPlainStringResult) {
           if (null != state) {
@@ -395,13 +394,13 @@ export const getRichGameStateBadgeText = function getRichGameStateBadgeText(stat
     tmp5 = tmp2 > 0;
   }
   if (tmp5) {
-    const intl = require(dependencyMap[2]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { count: tmp2 };
-    formatToPlainStringResult = intl.formatToPlainString(require(dependencyMap[2]).t.UTYMsa, obj);
+    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.UTYMsa, obj);
   }
 };
 export const isEntryTopGame = function isEntryTopGame(contentInventoryEntry) {
-  return contentInventoryEntry.content_type === require(dependencyMap[6]).ContentInventoryEntryType.TOP_GAME;
+  return contentInventoryEntry.content_type === require(7810) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_GAME;
 };
 export { getStreakCount };
 export const isValidStreak = function isValidStreak(id) {
@@ -412,35 +411,35 @@ export const isValidStreak = function isValidStreak(id) {
     return false;
   } else {
     const _Date = Date;
-    const obj = importDefault(dependencyMap[1]);
-    const diff = Date.now() - importDefault(dependencyMap[1]).extractTimestamp(id.id);
-    return diff <= 48 * importDefault(dependencyMap[0]).Millis.HOUR;
+    const obj = importDefault(21);
+    const diff = Date.now() - importDefault(21).extractTimestamp(id.id);
+    return diff <= 48 * importDefault(664).Millis.HOUR;
   }
 };
 export const getMarathonDescription = function getMarathonDescription(entry) {
   const tmp = getEntryDuration(entry);
   if (null == tmp) {
-    return { "Bool(false)": "o", "Bool(false)": "o" };
+    return { text: null, tooltipText: null };
   } else {
     const _Math = Math;
-    const rounded = Math.round(tmp / importDefault(dependencyMap[0]).Seconds.HOUR);
+    const rounded = Math.round(tmp / importDefault(664).Seconds.HOUR);
     if (rounded <= 0) {
-      let obj = { "Bool(false)": "o", "Bool(false)": "o" };
+      let obj = { text: null, tooltipText: null };
     } else {
       obj = {};
-      const intl = require(dependencyMap[2]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       obj = { hours: rounded };
-      obj.text = intl.formatToPlainString(require(dependencyMap[2]).t.vZaMem, obj);
-      const intl2 = require(dependencyMap[2]).intl;
+      obj.text = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.vZaMem, obj);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       obj = { hours: rounded };
-      obj.tooltipText = intl2.formatToPlainString(require(dependencyMap[2]).t.S5F485, obj);
+      obj.tooltipText = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.S5F485, obj);
     }
     return obj;
   }
 };
 export const getTrendingType = function getTrendingType(entry) {
   let trending;
-  const tmp2 = getTrait(entry, require(dependencyMap[4]).ContentInventoryTraitType.TRENDING_CONTENT);
+  const tmp2 = getTrait(entry, require(7816) /* ContentInventoryTraitType */.ContentInventoryTraitType.TRENDING_CONTENT);
   if (null != tmp2) {
     trending = tmp2.trending;
   }

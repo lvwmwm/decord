@@ -1,60 +1,64 @@
-// Module ID: 11758
-// Function ID: 91302
+// Module ID: 11768
+// Function ID: 91351
 // Name: HubEmailConnectionWaitlist
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1456, 5788, 1212, 11769, 1273, 4126, 4543, 2]
 // Exports: default
 
-// Module 11758 (HubEmailConnectionWaitlist)
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: {}, header: { marginBottom: 16 } };
-obj = { 1936959572: "Array", -823869256: "handleActivityItemSelected", -1717677639: "dotSeparator", 1884411745: "mic", 1390895600: "handleReduceTransparencyChanged", fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.title = obj;
-obj.description = { memo: 52881784.83212474, accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
-obj.redesignButton = { "Bool(false)": "column", "Bool(false)": "flex-end" };
-let closure_8 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/hub/native/components/HubEmailConnectionWaitlist.tsx");
+// Module 11768 (HubEmailConnectionWaitlist)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flex: 1, alignItems: "center", justifyContent: "center" }, header: { marginBottom: 16 } };
+_createForOfIteratorHelperLoose = { fontFamily: require("ME").Fonts.PRIMARY_BOLD, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
+_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.description = { textAlign: "center", marginBottom: 16 };
+_createForOfIteratorHelperLoose.redesignButton = { paddingHorizontal: 16, width: "100%" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionWaitlist.tsx");
 
 export default function HubEmailConnectionWaitlist(school) {
   const onClose = school.onClose;
-  const arg1 = onClose;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = onClose(1456);
   const navigation = obj.useNavigation();
-  const importDefault = navigation;
   const items = [navigation, onClose];
   const layoutEffect = React.useLayoutEffect(() => {
     navigation.setOptions({
       headerLeft() {
         const obj = {};
-        const intl = callback(closure_2[8]).intl;
-        obj.text = intl.string(callback(closure_2[8]).t.cpT0Cq);
-        obj.onPress = callback;
-        return callback2(callback(closure_2[7]).HeaderActionButton, obj);
+        const intl = onClose(outer2_2[8]).intl;
+        obj.text = intl.string(onClose(outer2_2[8]).t.cpT0Cq);
+        obj.onPress = outer1_0;
+        return outer2_6(onClose(outer2_2[7]).HeaderActionButton, obj);
       }
     });
   }, items);
   obj = { style: tmp.container };
-  obj = { source: importDefault(dependencyMap[9]), style: tmp.header };
+  obj = { source: navigation(11769), style: tmp.header };
   const items1 = [callback(closure_5, obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header" };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj1.children = intl.string(arg1(dependencyMap[8]).t.OaloU5);
-  items1[1] = callback(arg1(dependencyMap[10]).LegacyText, obj1);
-  const obj2 = { style: tmp.description };
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj2.children = intl2.format(arg1(dependencyMap[8]).t.Rs7MXJ, { school: school.school });
-  items1[2] = callback(arg1(dependencyMap[11]).Text, obj2);
+  let intl = onClose(1212).intl;
+  obj1.children = intl.string(onClose(1212).t.OaloU5);
+  items1[1] = callback(onClose(1273).LegacyText, obj1);
+  const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
+  const intl2 = onClose(1212).intl;
+  obj2.children = intl2.format(onClose(1212).t.Rs7MXJ, { school: school.school });
+  items1[2] = callback(onClose(4126).Text, obj2);
   const obj3 = { style: tmp.redesignButton };
   const obj4 = { size: "lg" };
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj4.text = intl3.string(arg1(dependencyMap[8]).t.i4jeWR);
+  const intl3 = onClose(1212).intl;
+  obj4.text = intl3.string(onClose(1212).t.i4jeWR);
   obj4.onPress = onClose;
-  obj3.children = callback(arg1(dependencyMap[12]).Button, obj4);
+  obj3.children = callback(onClose(4543).Button, obj4);
   items1[3] = callback(closure_4, obj3);
   obj.children = items1;
   return callback2(closure_4, obj);

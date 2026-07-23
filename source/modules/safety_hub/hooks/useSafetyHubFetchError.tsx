@@ -1,14 +1,16 @@
-// Module ID: 13540
-// Function ID: 102706
+// Module ID: 13654
+// Function ID: 104862
 // Name: useSafetyHubFetchError
-// Dependencies: []
+// Dependencies: [11026, 566, 2]
 // Exports: useSafetyHubFetchError
 
-// Module 13540 (useSafetyHubFetchError)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubFetchError.tsx");
+// Module 13654 (useSafetyHubFetchError)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubFetchError.tsx");
 
 export const useSafetyHubFetchError = function useSafetyHubFetchError() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => fetchError.getFetchError());
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getFetchError());
 };

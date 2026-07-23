@@ -1,16 +1,18 @@
-// Module ID: 13924
-// Function ID: 105794
+// Module ID: 14038
+// Function ID: 107950
 // Name: logger
-// Dependencies: []
+// Dependencies: [6, 7, 4, 14039, 2]
 
-// Module 13924 (logger)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const logger = new arg1(dependencyMap[2]).Logger("MobileMuxWrapper");
-const tmp3 = () => {
+// Module 14038 (logger)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const logger = new require("set").Logger("MobileMuxWrapper");
+let tmp3 = (() => {
   class MobileMuxWrapper {
     constructor(arg0) {
-      tmp = closure_2(this, MobileMuxWrapper);
+      tmp = outer1_2(this, MobileMuxWrapper);
       this.muxIntegration = null;
       this.seekingEmitted = false;
       this.seekTimeout = null;
@@ -18,15 +20,14 @@ const tmp3 = () => {
       return;
     }
   }
-  const arg1 = MobileMuxWrapper;
   let obj = {
     key: "initialize",
     value() {
-      const mobileCustomMuxIntegration = new MobileMuxWrapper(closure_1[3]).MobileCustomMuxIntegration(this.config);
+      const mobileCustomMuxIntegration = new MobileMuxWrapper(outer1_1[3]).MobileCustomMuxIntegration(this.config);
       this.muxIntegration = mobileCustomMuxIntegration;
       const muxIntegration = this.muxIntegration;
       muxIntegration.initialize();
-      closure_4.info("MobileMuxWrapper initialized successfully");
+      outer1_4.info("MobileMuxWrapper initialized successfully");
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , , , , , , ];
@@ -134,10 +135,11 @@ const tmp3 = () => {
   items[12] = {
     key: "onSeek",
     value() {
-      const self = this;
+      let self = this;
+      self = this;
       if (null != this.muxIntegration) {
         if (!self.seekingEmitted) {
-          const muxIntegration = self.muxIntegration;
+          let muxIntegration = self.muxIntegration;
           muxIntegration.emitSeeking();
           self.seekingEmitted = true;
         }
@@ -205,7 +207,7 @@ const tmp3 = () => {
             muxIntegration3.emitPlaying();
           }
         }
-        const tmp3 = null != muxIntegration2 && muxIntegration2.hasPlayStarted();
+        tmp3 = null != muxIntegration2 && muxIntegration2.hasPlayStarted();
       }
     }
   };
@@ -229,7 +231,8 @@ const tmp3 = () => {
   items[18] = {
     key: "onVideoTrackChange",
     value(arg0, arr) {
-      const size = arr.find((trackId) => trackId.trackId === trackId);
+      let closure_0 = arg0;
+      const size = arr.find((trackId) => trackId.trackId === closure_0);
       if (null != size) {
         const self = this;
         const muxIntegration = this.muxIntegration;
@@ -277,7 +280,7 @@ const tmp3 = () => {
     }
   };
   return callback(MobileMuxWrapper, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/video-qoe/MobileMuxWrapper.tsx");
+})();
+let result = require("log").fileFinishedImporting("modules/video-qoe/MobileMuxWrapper.tsx");
 
 export const MobileMuxWrapper = tmp3;

@@ -1,56 +1,59 @@
-// Module ID: 14141
-// Function ID: 107302
+// Module ID: 14255
+// Function ID: 109458
 // Name: handleLanguageChange
-// Dependencies: []
+// Dependencies: [5, 31, 27, 1922, 1921, 33, 4130, 689, 7955, 566, 5121, 7519, 1212, 7518, 14256, 2]
 
-// Module 14141 (handleLanguageChange)
+// Module 14255 (handleLanguageChange)
+import jsxProd from "jsxProd";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { setAppLocale } from "_setAppLocale";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_4;
+let closure_5;
+let require = arg1;
 function handleLanguageChange() {
   return _handleLanguageChange(...arguments);
 }
 function _handleLanguageChange() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleLanguageChange = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ Image: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[2]));
-const setAppLocale = arg1(dependencyMap[3]).setAppLocale;
-let closure_7 = importDefault(dependencyMap[4]);
-const jsx = arg1(dependencyMap[5]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
+({ Image: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
 let obj = {};
-obj = { padding: importDefault(dependencyMap[7]).space.PX_16 };
+obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
 obj.content = obj;
-obj.flagImage = { "Null": "fi", "Null": "png" };
-let closure_9 = arg1(dependencyMap[6]).createStyles(obj);
-const obj2 = arg1(dependencyMap[6]);
-const memoResult = importAllResult.memo(function UserSettingsLocale() {
+obj.flagImage = { width: 27, height: 18 };
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function UserSettingsLocale() {
   const tmp = callback2();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[9]);
-  const items = [closure_7];
+  const require = tmp;
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
   obj = { contentContainerStyle: tmp.content };
-  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.locale);
   obj = { bottom: true };
   const obj1 = { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true };
-  const availableLocales = arg1(dependencyMap[12]).getAvailableLocales();
+  const availableLocales = require(1212) /* getSystemLocale */.getAvailableLocales();
   obj1.children = availableLocales.map((localizedName) => {
     let name;
     let value;
     ({ name, value } = localizedName);
     let obj = { value, label: name };
-    const intl = tmp(closure_2[12]).intl;
+    const intl = tmp(outer1_2[12]).intl;
     obj.subLabel = intl.string(localizedName.localizedName);
-    obj = { style: tmp.flagImage, source: tmp(closure_2[14]).flags[value] };
-    obj.icon = callback(closure_4, obj);
-    return callback(tmp(closure_2[13]).TableRadioRow, obj, name);
+    obj = { style: tmp.flagImage, source: tmp(outer1_2[14]).flags[value] };
+    obj.icon = outer1_8(outer1_4, obj);
+    return outer1_8(tmp(outer1_2[13]).TableRadioRow, obj, name);
   });
-  obj.children = jsx(arg1(dependencyMap[11]).TableRadioGroup, obj1);
-  obj.children = jsx(arg1(dependencyMap[10]).SafeAreaPaddingView, obj);
-  return <closure_5 {...obj} />;
+  obj.children = jsx(require(7519) /* context */.TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true });
+  obj.children = jsx(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true });
+  return <closure_5 bottom />;
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/user_settings/language_and_time/native/UserSettingsLocale.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/language_and_time/native/UserSettingsLocale.tsx");
 
 export default memoResult;

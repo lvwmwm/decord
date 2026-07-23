@@ -1,20 +1,33 @@
-// Module ID: 15849
-// Function ID: 121146
+// Module ID: 15966
+// Function ID: 123319
 // Name: HcaptchaModal
-// Dependencies: []
+// Dependencies: [29, 31, 27, 1921, 1849, 653, 33, 4130, 566, 1456, 1881, 1557, 1212, 9446, 4540, 4541, 689, 4126, 477, 15965, 4660, 4084, 2]
 
-// Module 15849 (HcaptchaModal)
+// Module 15966 (HcaptchaModal)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 class HcaptchaModal {
   constructor(arg0) {
     onMessage = global.onMessage;
-    arg1 = onMessage;
-    tmp = closure_4(global, closure_3);
-    tmp2 = closure_13();
-    obj = arg1(dependencyMap[8]);
+    tmp = _objectWithoutProperties(global, closure_3);
+    tmp2 = c13();
+    obj = require("initialize");
     items = [];
-    items[0] = closure_10;
-    stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-    obj2 = arg1(dependencyMap[9]);
+    items[0] = c10;
+    stateFromStores = obj.useStateFromStores(items, () => outer1_10.getCurrentUser());
+    obj2 = require("useNavigation");
     navigation = obj2.useNavigation();
     routes = navigation.getState().routes;
     tmp4 = routes.length > 0;
@@ -28,26 +41,26 @@ class HcaptchaModal {
       if (null != stateFromStores) {
         prop = stateFromStores.ageVerificationStatus;
       }
-      tmp7 = arg1;
-      tmp8 = dependencyMap;
+      tmp7 = onMessage;
+      tmp8 = closure_2;
       num = 10;
-      tmp4 = prop === arg1(dependencyMap[10]).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+      tmp4 = prop === require("PermissionOverwriteType").AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
     }
-    tmp9 = importDefault(dependencyMap[11])();
-    intl = arg1(dependencyMap[12]).intl;
+    tmp9 = require("useSafeAreaInsets")();
+    intl = require("getSystemLocale").intl;
     items1 = [];
     items1[0] = onMessage;
-    stringResult = intl.string(arg1(dependencyMap[12]).t.wsoPhr);
-    callback = importAll.useCallback(() => {
+    stringResult = intl.string(require("getSystemLocale").t.wsoPhr);
+    callback = result.useCallback(() => {
       if (null != onMessage) {
         let obj = {};
-        obj = { data: onMessage(closure_2[13]).CaptchaError.CANCEL };
+        obj = { data: onMessage(outer1_2[13]).CaptchaError.CANCEL };
         obj.nativeEvent = obj;
         onMessage(obj);
       }
     }, items1);
-    importDefault = callback;
-    tmp12 = importDefault(dependencyMap[14])(() => {
+    closure_1 = callback;
+    tmp12 = require("useBackPressHandler")(() => {
       callback();
       return true;
     });
@@ -56,85 +69,78 @@ class HcaptchaModal {
     tmp13 = jsxs;
     tmp14 = View;
     if (!tmp4) {
-      tmp17 = arg1;
-      tmp18 = dependencyMap;
+      tmp17 = onMessage;
+      tmp18 = closure_2;
       num2 = 15;
       tmp16 = jsxs;
       obj1 = {};
-      tmp19 = importDefault;
+      tmp19 = closure_1;
       num3 = 16;
-      obj1.spacing = importDefault(dependencyMap[16]).space.PX_16;
+      obj1.spacing = require("_createForOfIteratorHelperLoose").space.PX_16;
       str2 = "center";
       obj1.align = "center";
       tmp20 = jsx;
       num4 = 17;
-      obj2 = {};
+      obj2 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary" };
       obj2.style = tmp2.title;
       obj2.children = stringResult;
       items2 = [, ];
-      items2[0] = jsx(arg1(dependencyMap[17]).Text, obj2);
+      items2[0] = jsx(require("Text").Text, obj2);
       obj3 = {};
       str3 = "small";
       obj3.size = "small";
       num5 = 18;
       tmp21 = jsx;
       tmp22 = ActivityIndicator;
-      obj8 = arg1(dependencyMap[18]);
+      obj8 = require("set");
       WHITE = undefined;
       if (obj8.isAndroid()) {
-        tmp24 = importDefault;
-        tmp25 = dependencyMap;
-        WHITE = importDefault(dependencyMap[16]).unsafe_rawColors.WHITE;
+        tmp24 = closure_1;
+        tmp25 = closure_2;
+        WHITE = require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE;
       }
       obj3.color = WHITE;
       items2[1] = tmp21(tmp22, obj3);
       obj1.children = items2;
-      tmp16Result = tmp16(arg1(dependencyMap[15]).Stack, obj1);
+      tmp16Result = tmp16(require("Stack").Stack, obj1);
     }
     items3 = [, , ];
     items3[0] = tmp16Result;
     obj4 = { style: StyleSheet.absoluteFillObject };
     obj5 = {};
-    tmp26 = importDefault(dependencyMap[19]);
+    tmp26 = require("Hcaptcha");
     merged = Object.assign(tmp);
-    obj5["languageCode"] = closure_9.locale;
+    obj5["languageCode"] = c9.locale;
     obj5["onMessage"] = onMessage;
     obj4.children = jsx(tmp26, obj5);
     items3[1] = jsx(View, obj4);
     obj6 = {};
     items4 = [, ];
     items4[0] = tmp2.closeButtonContainer;
-    obj7 = { paddingTop: top + importDefault(dependencyMap[16]).space.PX_8, paddingLeft: left + importDefault(dependencyMap[16]).space.PX_16 };
+    obj7 = { paddingTop: top + require("_createForOfIteratorHelperLoose").space.PX_8, paddingLeft: left + require("_createForOfIteratorHelperLoose").space.PX_16 };
     ({ top, left } = tmp9);
     items4[1] = obj7;
     obj6.style = items4;
     obj6.pointerEvents = "box-none";
     obj8 = { accessibilityRole: "button" };
-    intl2 = arg1(dependencyMap[12]).intl;
-    obj8.accessibilityLabel = intl2.string(arg1(dependencyMap[12]).t.cpT0Cq);
+    intl2 = require("getSystemLocale").intl;
+    obj8.accessibilityLabel = intl2.string(require("getSystemLocale").t.cpT0Cq);
     obj8.onPress = callback;
     obj8.style = tmp2.closeButtonHitArea;
     obj9 = {};
-    obj9.color = importDefault(dependencyMap[16]).colors.INTERACTIVE_ICON_DEFAULT;
-    obj8.children = jsx(arg1(dependencyMap[21]).XLargeIcon, obj9);
-    obj6.children = jsx(arg1(dependencyMap[20]).PressableOpacity, obj8);
+    obj9.color = require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_ICON_DEFAULT;
+    obj8.children = jsx(require("XLargeIcon").XLargeIcon, obj9);
+    obj6.children = jsx(require("PressableBase").PressableOpacity, obj8);
     items3[2] = jsx(View, obj6);
     obj.children = items3;
     return tmp13(tmp14, obj);
   }
 }
-let closure_3 = ["VOICE_STATE_UPDATES", "VOICE_CHANNEL_SELECT"];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-({ ActivityIndicator: closure_6, View: closure_7, StyleSheet: closure_8 } = arg1(dependencyMap[2]));
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-let closure_13 = arg1(dependencyMap[7]).createStyles({ container: {}, title: { textAlign: "center" }, closeButtonContainer: {}, closeButtonHitArea: {} });
-HcaptchaModal.modalConfig = { animation: arg1(dependencyMap[5]).ModalAnimation.FADE };
-const obj = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/captcha/native/HcaptchaModal.tsx");
+let closure_3 = ["onMessage", "onClose"];
+({ ActivityIndicator: closure_6, View: closure_7, StyleSheet: closure_8 } = get_ActivityIndicator);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+let closure_13 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" }, title: { textAlign: "center" }, closeButtonContainer: { position: "absolute", top: 0, left: 0, zIndex: 2 }, closeButtonHitArea: { minWidth: 44, minHeight: 44, justifyContent: "center", alignItems: "center" } });
+HcaptchaModal.modalConfig = { animation: require("ME").ModalAnimation.FADE };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/captcha/native/HcaptchaModal.tsx");
 
 export default HcaptchaModal;

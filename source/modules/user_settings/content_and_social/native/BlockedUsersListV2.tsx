@@ -1,55 +1,59 @@
-// Module ID: 13590
-// Function ID: 103012
+// Module ID: 13704
+// Function ID: 105168
 // Name: BlockedUsersList
-// Dependencies: []
+// Dependencies: [31, 27, 3767, 33, 4130, 689, 5464, 5484, 1273, 13705, 1212, 5121, 4126, 5503, 13709, 566, 2]
 // Exports: default
 
-// Module 13590 (BlockedUsersList)
+// Module 13704 (BlockedUsersList)
+import "result";
+import { ScrollView } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function BlockedUsersList(userIds) {
   userIds = userIds.userIds;
-  const tmp = callback3();
-  importDefault(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  importDefault(5464);
   if (0 === userIds.length) {
-    let obj = { Illustration: arg1(dependencyMap[9]).Blocked };
-    const intl = arg1(dependencyMap[10]).intl;
-    obj.body = intl.string(arg1(dependencyMap[10]).t.nnsFif);
-    let tmp7 = callback(arg1(dependencyMap[8]).EmptyState, obj);
+    let obj = { Illustration: require(13705) /* getBlockedSource */.Blocked };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.body = intl.string(require(1212) /* getSystemLocale */.t.nnsFif);
+    let tmp7 = callback(require(1273) /* Button */.EmptyState, obj);
   } else {
     obj = { value: tmp3 };
     obj = { bottom: true, style: tmp.list };
     const obj1 = {};
-    const obj2 = { style: tmp.sectionLabelStyle };
-    const intl2 = arg1(dependencyMap[10]).intl;
+    const obj2 = { style: tmp.sectionLabelStyle, variant: "text-sm/semibold", color: "text-default" };
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj3 = { numberOfBlockedUsers: userIds.length };
-    obj2.children = intl2.formatToPlainString(arg1(dependencyMap[10]).t.c+JVEB, obj3);
-    const items = [callback(arg1(dependencyMap[12]).Text, obj2), ];
-    const obj4 = { hasIcons: true, children: userIds.map((userId) => callback2(callback(closure_2[14]), { userId }, userId)) };
-    const intl3 = arg1(dependencyMap[10]).intl;
-    items[1] = callback(arg1(dependencyMap[13]).TableRowGroup, obj4, intl3.string(arg1(dependencyMap[10]).t.PFOUKW));
+    obj2.children = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["c+JVEB"], obj3);
+    const items = [callback(require(4126) /* Text */.Text, obj2), ];
+    const obj4 = { hasIcons: true, children: userIds.map((userId) => outer1_5(outer1_1(outer1_2[14]), { userId }, userId)) };
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    items[1] = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj4, intl3.string(require(1212) /* getSystemLocale */.t.PFOUKW));
     obj1.children = items;
     obj.children = callback2(ScrollView, obj1);
-    obj.children = callback(arg1(dependencyMap[11]).SafeAreaPaddingView, obj);
-    tmp7 = callback(arg1(dependencyMap[6]).AnalyticsLocationProvider, obj);
+    obj.children = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+    tmp7 = callback(require(5464) /* mergeLocations */.AnalyticsLocationProvider, obj);
   }
   return tmp7;
 }
-importAll(dependencyMap[0]);
-const ScrollView = arg1(dependencyMap[1]).ScrollView;
-let closure_4 = importDefault(dependencyMap[2]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { flex: 1, paddingTop: importDefault(dependencyMap[5]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
-obj.list = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.sectionLabelStyle = { marginTop: importDefault(dependencyMap[5]).space.PX_12, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
-let closure_7 = obj.createStyles(obj);
-const obj1 = { marginTop: importDefault(dependencyMap[5]).space.PX_12, marginBottom: importDefault(dependencyMap[5]).space.PX_8 };
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUsersListV2.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.list = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.sectionLabelStyle = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUsersListV2.tsx");
 
 export default function ConnectedBlockedUsersList() {
-  let obj = arg1(dependencyMap[15]);
-  const items = [closure_4];
-  obj = { userIds: obj.useStateFromStoresArray(items, () => blockedIDs.getBlockedIDs()) };
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  obj = { userIds: obj.useStateFromStoresArray(items, () => outer1_4.getBlockedIDs()) };
   return callback(BlockedUsersList, obj);
 };

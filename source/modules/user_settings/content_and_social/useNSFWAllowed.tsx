@@ -1,17 +1,19 @@
-// Module ID: 7921
-// Function ID: 63159
+// Module ID: 7927
+// Function ID: 63196
 // Name: useNSFWAllowed
-// Dependencies: []
+// Dependencies: [1849, 566, 2]
 // Exports: useNSFWAllowed
 
-// Module 7921 (useNSFWAllowed)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_settings/content_and_social/useNSFWAllowed.tsx");
+// Module 7927 (useNSFWAllowed)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/useNSFWAllowed.tsx");
 
 export const useNSFWAllowed = function useNSFWAllowed() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const currentUser = outer1_2.getCurrentUser();
     let nsfwAllowed;
     if (null != currentUser) {
       nsfwAllowed = currentUser.nsfwAllowed;

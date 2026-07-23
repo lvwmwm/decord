@@ -1,27 +1,31 @@
-// Module ID: 12899
-// Function ID: 98462
+// Module ID: 13013
+// Function ID: 100618
 // Name: Tooltip
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1327, 4126, 1273, 2]
 // Exports: default
 
-// Module 12899 (Tooltip)
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
+// Module 13013 (Tooltip)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 let obj = { UP: "UP", DOWN: "DOWN" };
 obj = { CENTER: "CENTER", RIGHT: "RIGHT", LEFT: "LEFT" };
-let obj2 = arg1(dependencyMap[4]);
 obj = {};
-const tmp2 = arg1(dependencyMap[3]);
-obj.container = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
-obj2 = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_MEDIUM, fontSize: 12, color: importDefault(dependencyMap[5]).colors.WHITE };
-obj.label = obj2;
+let obj1 = { padding: 10, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, alignSelf: "flex-start", minWidth: 60, alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+obj.container = obj1;
+_createForOfIteratorHelperLoose = { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, fontSize: 12, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+obj.label = _createForOfIteratorHelperLoose;
 obj.title = { marginBottom: 4 };
-const obj3 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, borderTopColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderBottomColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
+let obj3 = { width: 0, height: 0, borderStyle: "solid", borderLeftColor: "transparent", borderRightColor: "transparent", borderTopColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
 obj.arrow = obj3;
-let closure_8 = obj2.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.xs, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/void/Tooltip/native/Tooltip.tsx");
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("ME").fileFinishedImporting("design/void/Tooltip/native/Tooltip.tsx");
 
 export default function Tooltip(arrowHeight) {
   let arrowStyle;
@@ -45,12 +49,10 @@ export default function Tooltip(arrowHeight) {
   if (num2 === undefined) {
     num2 = 0;
   }
-  const arg1 = num2;
   let LEFT = arrowHeight.arrowPosition;
   if (LEFT === undefined) {
     LEFT = obj.LEFT;
   }
-  const dependencyMap = LEFT;
   let UP = arrowHeight.arrowDirection;
   if (UP === undefined) {
     UP = obj.UP;
@@ -58,13 +60,13 @@ export default function Tooltip(arrowHeight) {
   const tmp3 = callback2();
   const items = [LEFT, num2];
   const memo = React.useMemo(() => {
-    if (constants.LEFT === LEFT) {
+    if (outer1_7.LEFT === LEFT) {
       let obj = { alignSelf: "flex-start", left: num2 };
       return obj;
-    } else if (constants.CENTER === tmp) {
+    } else if (outer1_7.CENTER === tmp) {
       obj = { alignSelf: "center" };
       return obj;
-    } else if (constants.RIGHT === tmp) {
+    } else if (outer1_7.RIGHT === tmp) {
       const obj1 = { alignSelf: "flex-end", right: num2 };
       return obj1;
     } else {
@@ -72,7 +74,7 @@ export default function Tooltip(arrowHeight) {
       obj.assertNever(LEFT);
     }
   }, items);
-  let obj = { style };
+  obj = { style };
   let tmp7 = UP === obj.UP;
   if (tmp7) {
     obj = {};
@@ -85,12 +87,12 @@ export default function Tooltip(arrowHeight) {
     tmp7 = callback(View, obj);
   }
   const items2 = [tmp7, , ];
-  const obj1 = { onLayout: arrowHeight.onLayout, style: items3 };
-  const items3 = [tmp3.container, containerStyle];
+  let obj1 = { onLayout: arrowHeight.onLayout, style: items3 };
+  items3 = [tmp3.container, containerStyle];
   let tmp12 = null;
   if (null != title) {
-    const obj2 = { "Null": null, "Null": null, alignItems: null, style: tmp3.title, children: title };
-    tmp12 = callback(arg1(dependencyMap[7]).Heading, obj2);
+    const obj2 = { style: tmp3.title, variant: "text-md/semibold", color: "text-overlay-light", children: title };
+    tmp12 = callback(num2(LEFT[7]).Heading, obj2);
   }
   const items4 = [tmp12, , ];
   let tmp16 = null;
@@ -99,7 +101,7 @@ export default function Tooltip(arrowHeight) {
     const items5 = [tmp3.label, labelStyle];
     obj3.style = items5;
     obj3.children = label;
-    tmp16 = callback(arg1(dependencyMap[8]).LegacyText, obj3);
+    tmp16 = callback(num2(LEFT[8]).LegacyText, obj3);
   }
   items4[1] = tmp16;
   items4[2] = children;

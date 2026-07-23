@@ -1,21 +1,21 @@
-// Module ID: 8903
-// Function ID: 70277
+// Module ID: 8910
+// Function ID: 70318
 // Name: useSecureFramesUserVerifiedKeysCount
-// Dependencies: []
+// Dependencies: [31, 8881, 8882, 566, 2]
 // Exports: useSecureFramesUserVerifiedKeysCount
 
-// Module 8903 (useSecureFramesUserVerifiedKeysCount)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeysCount.tsx");
+// Module 8910 (useSecureFramesUserVerifiedKeysCount)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeysCount.tsx");
 
 export const useSecureFramesUserVerifiedKeysCount = function useSecureFramesUserVerifiedKeysCount(userId) {
   userId = userId.userId;
-  const arg1 = userId;
   const keyToOmit = userId.keyToOmit;
-  const dependencyMap = keyToOmit;
   const items = [keyToOmit];
-  const memo = React.useMemo(() => {
+  memo = memo.useMemo(() => {
     if (null == keyToOmit) {
       return null;
     } else {
@@ -24,16 +24,15 @@ export const useSecureFramesUserVerifiedKeysCount = function useSecureFramesUser
       return userId(keyToOmit[2]).serializeKey(uint8Array);
     }
   }, items);
-  const React = memo;
-  const items1 = [closure_3];
+  const items1 = [_isNativeReflectConstruct];
   const items2 = [memo, userId];
-  return arg1(dependencyMap[3]).useStateFromStores(items1, () => {
-    const userVerifiedKeys = userVerifiedKeys.getUserVerifiedKeys(userId);
+  return userId(keyToOmit[3]).useStateFromStores(items1, () => {
+    const userVerifiedKeys = outer1_3.getUserVerifiedKeys(userId);
     let num = 0;
     if (null != userVerifiedKeys) {
       const _Object = Object;
       const keys = Object.keys(userVerifiedKeys);
-      num = keys.filter((arg0) => arg0 !== closure_2).length;
+      num = keys.filter((arg0) => arg0 !== outer1_2).length;
     }
     return num;
   }, items2);

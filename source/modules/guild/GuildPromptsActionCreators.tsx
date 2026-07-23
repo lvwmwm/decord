@@ -1,21 +1,20 @@
-// Module ID: 11674
-// Function ID: 90576
+// Module ID: 11684
+// Function ID: 90625
 // Name: viewPrompt
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: viewPrompt
 
-// Module 11674 (viewPrompt)
+// Module 11684 (viewPrompt)
 function viewPrompt(REAL_NAME_PROMPT, closure_0) {
   const importDefault = REAL_NAME_PROMPT;
   const dependencyMap = closure_0;
-  importDefault(dependencyMap[0]).wait(() => {
-    let obj = arg0(arg1[0]);
-    obj = { type: "GUILD_PROMPT_VIEWED", prompt: arg0, guildId: arg1 };
+  importDefault(686).wait(() => {
+    let obj = REAL_NAME_PROMPT(table[0]);
+    obj = { type: "GUILD_PROMPT_VIEWED", prompt: REAL_NAME_PROMPT, guildId: table };
     obj.dispatch(obj);
   });
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild/GuildPromptsActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/guild/GuildPromptsActionCreators.tsx");
 
 export default { viewPrompt };
 export { viewPrompt };

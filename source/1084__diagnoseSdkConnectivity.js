@@ -1,13 +1,15 @@
 // Module ID: 1084
-// Function ID: 12451
+// Function ID: 12452
 // Name: _diagnoseSdkConnectivity
-// Dependencies: []
+// Dependencies: [5, 794]
 // Exports: diagnoseSdkConnectivity
 
 // Module 1084 (_diagnoseSdkConnectivity)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
 async function _diagnoseSdkConnectivity() {
   let str3;
-  const client = str3(closure_1[1]).getClient();
+  const client = outer2_0(outer2_1[1]).getClient();
   if (client) {
     if (client.getDsn()) {
       const tunnel = client.getOptions().tunnel;
@@ -15,16 +17,15 @@ async function _diagnoseSdkConnectivity() {
       if (!tunnel) {
         str3 = "https://o447951.ingest.sentry.io/api/4509632503087104/envelope/?sentry_version=7&sentry_key=c1dfb07d783ad5325c245c1fd3725390&sentry_client=sentry.javascript.browser%2F1.33.7";
       }
-      yield str3(closure_1[1]).suppressTracing(() => fetch(str3, { <string:2690405947>: "scaleChange", <string:140796500>: "getVoiceChannelBadgeExperiment", <string:1401660095>: "mediaType", <string:3279245136>: "MAX_MESSAGE_CACHE_SIZE" }));
+      yield outer2_0(outer2_1[1]).suppressTracing(() => fetch(str3, { body: "{}", method: "POST", mode: "cors", credentials: "omit" }));
     } else {
       return "no-dsn-configured";
     }
   } else {
     return "no-client-active";
   }
-  const obj = str3(closure_1[1]);
+  const obj = outer2_0(outer2_1[1]);
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const diagnoseSdkConnectivity = function diagnoseSdkConnectivity() {

@@ -1,10 +1,23 @@
-// Module ID: 9168
-// Function ID: 71828
+// Module ID: 9175
+// Function ID: 71869
 // Name: useVerificationForm
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 5082, 653, 33, 4130, 3831, 1212, 9176, 9149, 5450, 3950, 566, 4620, 5128, 9177, 9004, 4543, 2]
 // Exports: default
 
-// Module 9168 (useVerificationForm)
+// Module 9175 (useVerificationForm)
+import ME from "ME";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { NO_MEMBER_VERIFICATION_FORM as closure_8 } from "_isNativeReflectConstruct";
+import { VerificationLevels } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function useVerificationForm(guild) {
   function getFormFields() {
     if (!memo) {
@@ -29,30 +42,28 @@ function useVerificationForm(guild) {
       formFields1 = [];
     }
   }
-  const View = getFormFields;
   const id = guild.id;
-  const arg1 = id;
-  let closure_1 = function useRequiredVerificationFields(id) {
+  let closure_1 = (function useRequiredVerificationFields(id) {
+    let closure_0 = id;
     const callback = id(stateFromStores[11]).useInitialVerification(id.id);
     return callback(stateFromStores[12])(() => {
-      if (arg0.verificationLevel === constants.VERY_HIGH) {
+      if (verificationLevel.verificationLevel === outer2_9.VERY_HIGH) {
         if (null == phone) {
-          let obj = { field_type: arg0(closure_2[13]).VerificationFormFieldTypes.VERIFICATION, platform: arg0(closure_2[13]).UserVerificationFieldPlatforms.PHONE };
+          let obj = { field_type: id(stateFromStores[13]).VerificationFormFieldTypes.VERIFICATION, platform: id(stateFromStores[13]).UserVerificationFieldPlatforms.PHONE };
           let tmp6 = obj;
         } else {
           tmp6 = null;
         }
         obj = tmp6;
       } else {
-        obj = { field_type: arg0(closure_2[13]).VerificationFormFieldTypes.VERIFICATION, platform: arg0(closure_2[13]).UserVerificationFieldPlatforms.EMAIL };
+        obj = { field_type: id(stateFromStores[13]).VerificationFormFieldTypes.VERIFICATION, platform: id(stateFromStores[13]).UserVerificationFieldPlatforms.EMAIL };
       }
       return obj;
     });
-  }(guild);
-  const items = [closure_7];
+  })(guild);
+  let items = [_isNativeReflectConstruct];
   const items1 = [id];
-  const stateFromStores = arg1(dependencyMap[14]).useStateFromStores(items, () => closure_7.get(id), items1);
-  const dependencyMap = stateFromStores;
+  stateFromStores = id(stateFromStores[14]).useStateFromStores(items, () => outer1_7.get(id), items1);
   let formFields;
   if (null != stateFromStores) {
     formFields = stateFromStores.formFields;
@@ -63,18 +74,17 @@ function useVerificationForm(guild) {
     if (null != stateFromStores) {
       const formFields = stateFromStores.formFields;
       if (null != formFields) {
-        someResult = formFields.some((field_type) => field_type.field_type !== callback(closure_2[13]).VerificationFormFieldTypes.TERMS);
+        someResult = formFields.some((field_type) => field_type.field_type !== id(stateFromStores[13]).VerificationFormFieldTypes.TERMS);
       }
     }
     return someResult;
   }, items2);
-  let closure_3 = memo;
-  const callback = React.useRef(getFormFields);
+  let callback = React.useRef(getFormFields);
   const effect = React.useEffect(() => {
-    closure_4.current = getFormFields;
+    _slicedToArray.current = getFormFields;
   });
-  const tmp6 = callback(React.useState(getFormFields()), 2);
-  const React = tmp7;
+  let tmp6 = callback(React.useState(getFormFields()), 2);
+  React = tmp7;
   const items3 = [stateFromStores];
   const effect1 = React.useEffect(() => {
     if (null != stateFromStores) {
@@ -84,54 +94,43 @@ function useVerificationForm(guild) {
   const items4 = [tmp6[0], tmp6[1], stateFromStores, memo];
   return items4;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[4]).NO_MEMBER_VERIFICATION_FORM;
-const VerificationLevels = arg1(dependencyMap[5]).VerificationLevels;
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-let closure_12 = arg1(dependencyMap[7]).createStyles({ container: {}, submitButton: { y: null, channelId: null }, error: {} });
-const obj = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationForm.tsx");
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+let closure_12 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 16, paddingVertical: 0 }, submitButton: { marginTop: 12, marginBottom: 12 }, error: { alignSelf: "center", paddingVertical: 16, fontSize: 16 } });
+const result = require("result").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationForm.tsx");
 
 export default function MemberVerificationForm(guild) {
+  let c8;
+  let c9;
+  let importDefault;
   let onClose;
   let tmp10;
   let tmp8;
   guild = guild.guild;
-  const arg1 = guild;
-  ({ onSuccess: closure_1, onClose } = guild);
-  const dependencyMap = onClose;
-  let callback;
-  let View;
-  let closure_8;
-  let closure_9;
+  ({ onSuccess: importDefault, onClose } = guild);
+  let first;
+  let c6;
+  c8 = undefined;
+  c9 = undefined;
   let memo;
   function _handleSubmit() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = userVerificationState(tmp);
-    const _handleSubmit = obj;
     return obj(...arguments);
   }
   const tmp = callback2();
-  let obj = arg1(dependencyMap[11]);
+  let obj = guild(onClose[11]);
   const userVerificationState = obj.useUserVerificationState();
-  let closure_3 = userVerificationState;
-  const tmp3 = callback(useVerificationForm(guild), 4);
-  const first = tmp3[0];
-  callback = first;
+  const tmp3 = first(useVerificationForm(guild), 4);
+  first = tmp3[0];
   const React = tmp3[1];
-  View = tmp5;
-  let closure_7 = tmp6;
-  [tmp8, closure_8] = callback(React.useState(false), 2);
-  const tmp7 = callback(React.useState(false), 2);
-  [tmp10, closure_9] = callback(React.useState(null), 2);
-  const items = [onClose, tmp3[2]];
+  c6 = tmp5;
+  let _isNativeReflectConstruct = tmp6;
+  [tmp8, c8] = first(React.useState(false), 2);
+  const tmp7 = first(React.useState(false), 2);
+  [tmp10, c9] = first(React.useState(null), 2);
+  let items = [onClose, tmp3[2]];
   const effect = React.useEffect(() => {
-    if (tmp5 === closure_8) {
+    if (c6 === c8) {
       if (null != onClose) {
         onClose(false);
       }
@@ -140,28 +139,28 @@ export default function MemberVerificationForm(guild) {
   const items1 = [guild.verificationLevel, tmp3[3], userVerificationState, first];
   memo = React.useMemo(() => {
     if (null != first) {
-      if (first.some((required) => !callback(closure_2[15]).isValidFormResponse(required))) {
+      if (first.some((required) => !guild(onClose[15]).isValidFormResponse(required))) {
         return true;
       }
     }
-    if (tmp6) {
+    if (_isNativeReflectConstruct) {
       return false;
     } else {
       const verificationLevel = guild.verificationLevel;
-      if (constants.VERY_HIGH === verificationLevel) {
-        return !userVerificationState[closure_0(undefined, closure_2[13]).UserVerificationFieldPlatforms.PHONE];
+      if (_undefined.VERY_HIGH === verificationLevel) {
+        return !userVerificationState[guild(undefined, onClose[13]).UserVerificationFieldPlatforms.PHONE];
       } else {
-        if (constants.HIGH !== verificationLevel) {
-          if (constants.MEDIUM !== verificationLevel) {
-            if (constants.LOW !== verificationLevel) {
-              const NONE = constants.NONE;
+        if (_undefined.HIGH !== verificationLevel) {
+          if (_undefined.MEDIUM !== verificationLevel) {
+            if (_undefined.LOW !== verificationLevel) {
+              const NONE = _undefined.NONE;
               return false;
             }
           }
         }
-        let tmp10 = !userVerificationState[closure_0(undefined, closure_2[13]).UserVerificationFieldPlatforms.EMAIL];
+        let tmp10 = !userVerificationState[guild(undefined, onClose[13]).UserVerificationFieldPlatforms.EMAIL];
         if (tmp10) {
-          tmp10 = !userVerificationState[closure_0(undefined, closure_2[13]).UserVerificationFieldPlatforms.PHONE];
+          tmp10 = !userVerificationState[guild(undefined, onClose[13]).UserVerificationFieldPlatforms.PHONE];
         }
         return tmp10;
       }
@@ -189,26 +188,26 @@ export default function MemberVerificationForm(guild) {
         },
       verification: userVerificationState
     };
-    const items2 = [memo(importDefault(dependencyMap[17]), obj), , ];
+    const items2 = [memo(importDefault(onClose[17]), obj), , ];
     let tmp16 = null;
     if (null != tmp10) {
       const obj1 = { style: tmp.error, children: tmp10 };
-      tmp16 = memo(importDefault(dependencyMap[18]), obj1);
+      tmp16 = memo(importDefault(onClose[18]), obj1);
     }
     items2[1] = tmp16;
     const obj2 = { style: tmp.submitButton };
-    const obj3 = {};
-    const intl = arg1(dependencyMap[9]).intl;
-    obj3.text = intl.string(arg1(dependencyMap[9]).t.r8/DT+);
+    const obj3 = { variant: "primary", size: "md", grow: true };
+    const intl = guild(onClose[9]).intl;
+    obj3.text = intl.string(guild(onClose[9]).t["r8/DT+"]);
     obj3.loading = tmp8;
     obj3.disabled = tmp8;
     obj3.onPress = function handleSubmit() {
       return _handleSubmit(...arguments);
     };
-    obj2.children = memo(arg1(dependencyMap[19]).Button, obj3);
-    items2[2] = memo(View, obj2);
+    obj2.children = memo(guild(onClose[19]).Button, obj3);
+    items2[2] = memo(c6, obj2);
     obj.children = items2;
-    return _handleSubmit(View, obj);
+    return _handleSubmit(c6, obj);
   }
-  const tmp9 = callback(React.useState(null), 2);
+  const tmp9 = first(React.useState(null), 2);
 };

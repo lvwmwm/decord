@@ -1,39 +1,43 @@
-// Module ID: 11772
-// Function ID: 91389
+// Module ID: 11782
+// Function ID: 91438
 // Name: DiscoverabilityLandingScene
-// Dependencies: []
+// Dependencies: [31, 27, 11706, 1849, 653, 33, 4130, 689, 5084, 1456, 566, 11713, 668, 11733, 11783, 11726, 480, 5519, 1212, 2]
 
-// Module 11772 (DiscoverabilityLandingScene)
+// Module 11782 (DiscoverabilityLandingScene)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { useContactSyncModalStore } from "initialValues";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function DiscoverabilityLandingScene() {
-  const navigation = arg1(dependencyMap[9]).useNavigation();
-  const arg1 = navigation;
-  const obj = arg1(dependencyMap[9]);
-  const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[10]).useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  navigation = navigation(allowPhone[9]).useNavigation();
+  let obj = navigation(allowPhone[9]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = navigation(allowPhone[10]).useStateFromStores(items, () => {
+    const currentUser = outer1_6.getCurrentUser();
     let phone;
     if (null != currentUser) {
       phone = currentUser.phone;
     }
     return phone;
   });
-  const importDefault = stateFromStores;
   const tmp3 = useContactSyncModalStore();
-  const allowPhone = tmp3.allowPhone;
-  const dependencyMap = allowPhone;
+  allowPhone = tmp3.allowPhone;
   const allowEmail = tmp3.allowEmail;
-  const React = allowEmail;
   let tmp4 = allowPhone;
   if (!allowPhone) {
     tmp4 = allowEmail;
   }
   const View = tmp4;
   const items1 = [navigation, stateFromStores, allowEmail, allowPhone, tmp4];
-  const onNext = React.useCallback(() => {
+  const onNext = allowEmail.useCallback(() => {
     let obj = stateFromStores(allowPhone[11]);
     obj = { phone: allowPhone, email: allowEmail };
     const result = obj.updateDiscoverability(obj);
-    if (tmp4) {
+    if (closure_4) {
       if (null != stateFromStores) {
         if (allowPhone) {
           navigation.push(navigation(allowPhone[12]).DiscoverabilityScenes.NAME);
@@ -42,26 +46,25 @@ function DiscoverabilityLandingScene() {
     }
     const result1 = navigation(allowPhone[13]).closeDiscoverabilityModal(false);
   }, items1);
-  return jsx(importDefault(dependencyMap[14]), { onNext });
+  return jsx(stateFromStores(allowPhone[14]), { onNext });
 }
 function DiscoverabilityNameScene() {
   let allowPhone;
   let name;
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   ({ name, allowPhone } = useContactSyncModalStore());
-  const arg1 = allowPhone;
   const items = [allowPhone];
   const effect = React.useEffect(() => {
     if (!allowPhone) {
-      const result = allowPhone(closure_2[13]).closeDiscoverabilityModal(false);
-      const obj = allowPhone(closure_2[13]);
+      const result = allowPhone(outer1_2[13]).closeDiscoverabilityModal(false);
+      const obj = allowPhone(outer1_2[13]);
     }
   }, items);
   let obj = { style: tmp.container };
   const callback = React.useCallback((arg0) => {
-    const result = allowPhone(closure_2[13]).startContactSyncForDiscoverability(arg0);
-    const obj = allowPhone(closure_2[13]);
-    const result1 = allowPhone(closure_2[13]).closeDiscoverabilityModal(false);
+    const result = allowPhone(outer1_2[13]).startContactSyncForDiscoverability(arg0);
+    const obj = allowPhone(outer1_2[13]);
+    const result1 = allowPhone(outer1_2[13]).closeDiscoverabilityModal(false);
   }, []);
   obj = { onNext: callback, loading: false };
   let str = "";
@@ -73,16 +76,18 @@ function DiscoverabilityNameScene() {
     str = name;
   }
   obj.initialName = str;
-  obj.children = tmp7(importDefault(dependencyMap[15]), obj);
+  obj.children = tmp7(importDefault(11726), obj);
   return tmp5(tmp6, obj);
 }
 class DiscoverabilityModal {
   constructor() {
     obj = {};
-    obj.screens = importAll.useMemo(() => function getScreens() {
+    obj.screens = result.useMemo(() => (function getScreens() {
       let obj = {};
       obj = {
-        impressionName: callback(closure_2[16]).ImpressionNames.DISCOVERABILITY,
+        ignoreKeyboard: true,
+        impressionName: outer2_0(outer2_2[16]).ImpressionNames.DISCOVERABILITY,
+        fullscreen: true,
         headerLeft() {
           return null;
         },
@@ -90,39 +95,35 @@ class DiscoverabilityModal {
           return null;
         },
         render() {
-          return callback(closure_9, {});
+          return outer3_7(outer3_9, {});
         }
       };
-      obj[callback(closure_2[12]).DiscoverabilityScenes.LANDING] = obj;
+      obj[outer2_0(outer2_2[12]).DiscoverabilityScenes.LANDING] = obj;
       obj = {
-        impressionName: callback(closure_2[16]).ImpressionNames.DISCOVERABILITY,
+        ignoreKeyboard: true,
+        impressionName: outer2_0(outer2_2[16]).ImpressionNames.DISCOVERABILITY,
+        fullscreen: true,
         headerTitle() {
           return null;
         },
         render() {
-          return callback(closure_10, {});
+          return outer3_7(outer3_10, {});
         }
       };
-      obj[callback(closure_2[12]).DiscoverabilityScenes.NAME] = obj;
+      obj[outer2_0(outer2_2[12]).DiscoverabilityScenes.NAME] = obj;
       return obj;
-    }(), []);
-    obj.initialRouteName = arg1(dependencyMap[12]).DiscoverabilityScenes.LANDING;
-    intl = arg1(dependencyMap[18]).intl;
-    obj.headerBackTitle = intl.string(arg1(dependencyMap[18]).t.13/7kX);
-    return jsx(arg1(dependencyMap[17]).Navigator, obj);
+    })(), []);
+    obj.initialRouteName = require("keys").DiscoverabilityScenes.LANDING;
+    intl = require("getSystemLocale").intl;
+    obj.headerBackTitle = intl.string(require("getSystemLocale").t["13/7kX"]);
+    return jsx(require("NavigationStack").Navigator, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const useContactSyncModalStore = arg1(dependencyMap[2]).useContactSyncModalStore;
-let closure_6 = importDefault(dependencyMap[3]);
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, paddingTop: arg1(dependencyMap[8]).NAV_BAR_HEIGHT + 32 };
-obj.container = obj;
-let closure_8 = obj.createStyles(obj);
-DiscoverabilityModal.modalConfig = { animation: arg1(dependencyMap[4]).ModalAnimation.SLIDE_IN_OUT };
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/nuf/native/components/DiscoverabilityModal.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT + 32 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+DiscoverabilityModal.modalConfig = { animation: require("ME").ModalAnimation.SLIDE_IN_OUT };
+let result = require("initialValues").fileFinishedImporting("modules/nuf/native/components/DiscoverabilityModal.tsx");
 
 export default DiscoverabilityModal;

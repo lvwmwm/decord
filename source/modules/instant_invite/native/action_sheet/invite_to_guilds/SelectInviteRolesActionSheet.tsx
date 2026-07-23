@@ -1,66 +1,66 @@
-// Module ID: 16376
-// Function ID: 126361
+// Module ID: 16493
+// Function ID: 128535
 // Name: SelectInviteRolesActionSheet
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 33, 4130, 566, 8827, 8832, 4098, 22, 7495, 1273, 4126, 4660, 1212, 5186, 5500, 9244, 2]
 // Exports: default
 
-// Module 16376 (SelectInviteRolesActionSheet)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[5]).createStyles({ list: { flex: 1 }, label: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, roleDot: { marginEnd: 8 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/SelectInviteRolesActionSheet.tsx");
+// Module 16493 (SelectInviteRolesActionSheet)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ list: { flex: 1 }, label: { flexDirection: "row", alignItems: "center" }, roleDot: { marginEnd: 8 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/action_sheet/invite_to_guilds/SelectInviteRolesActionSheet.tsx");
 
 export default function SelectInviteRolesActionSheet(assignableRoles) {
   assignableRoles = assignableRoles.assignableRoles;
-  const arg1 = assignableRoles;
   const selectedRoleIds = assignableRoles.selectedRoleIds;
-  const importDefault = selectedRoleIds;
   const onSave = assignableRoles.onSave;
-  const dependencyMap = onSave;
   const tmp = callback2();
   let callback = tmp;
-  const items = [assignableRoles, selectedRoleIds];
-  const memo = React.useMemo(() => {
-    const assignableRoles = new Set(assignableRoles.map((id) => id.id));
+  let items = [assignableRoles, selectedRoleIds];
+  memo = memo.useMemo(() => {
+    set = new Set(set.map((id) => id.id));
     return selectedRoleIds.filter((arg0) => set.has(arg0));
   }, items);
-  const React = memo;
-  const tmp3 = callback(React.useState(() => new Set(memo)), 2);
+  const tmp3 = callback(memo.useState(() => new Set(memo)), 2);
   const first = tmp3[0];
-  const View = first;
-  let closure_6 = tmp3[1];
-  let obj = arg1(dependencyMap[6]);
-  const items1 = [closure_6];
+  let _isNativeReflectConstruct = tmp3[1];
+  let obj = assignableRoles(onSave[6]);
+  let items1 = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items1, () => lib.roleStyle);
-  const tmp6 = importDefault(dependencyMap[7])();
-  callback = React.useCallback((arg0) => {
-    const assignableRoles = arg0;
+  const tmp6 = selectedRoleIds(onSave[7])();
+  callback = memo.useCallback((arg0) => {
+    let closure_0 = arg0;
     lib((items) => {
       const set = new Set(items);
-      if (!set.delete(items)) {
-        set.add(items);
+      if (!set.delete(closure_0)) {
+        set.add(closure_0);
       }
       return set;
     });
   }, []);
   const items2 = [onSave, first, memo];
   const items3 = [assignableRoles, stateFromStores, first, tmp, callback];
-  const callback1 = React.useCallback(() => {
+  const callback1 = memo.useCallback(() => {
     selectedRoleIds(onSave[9]).hideActionSheet();
     const obj = selectedRoleIds(onSave[9]);
     const sorted = Array.from(first).sort();
     const arr = Array.from(first);
-    const items = [...closure_4];
+    const items = [...memo];
     if (!obj3.isEqual(sorted, items.sort())) {
       onSave(sorted);
     }
   }, items2);
-  const callback2 = React.useCallback((arg0, arg1) => {
+  callback2 = memo.useCallback((arg0, arg1) => {
     const assignableRoles = tmp;
     let obj = {};
     obj = {};
@@ -90,7 +90,7 @@ export default function SelectInviteRolesActionSheet(assignableRoles) {
     obj.children = items;
     obj.label = callback(first, obj);
     obj.onPress = function onPress() {
-      return callback(tmp.id);
+      return outer1_8(tmp.id);
     };
     const obj4 = { selected: first.has(assignableRoles[arg1].id) };
     obj.trailing = stateFromStores(assignableRoles(onSave[11]).FormRow.Checkbox, obj4);
@@ -101,21 +101,21 @@ export default function SelectInviteRolesActionSheet(assignableRoles) {
     }
     items1[1] = tmp16;
     obj.children = items1;
-    return callback(closure_9, obj);
+    return callback(outer1_9, obj);
   }, items3);
   obj = { onPress: callback1, accessibilityRole: "button" };
   obj = { variant: "text-md/semibold" };
-  const intl = arg1(dependencyMap[15]).intl;
-  obj.children = intl.string(arg1(dependencyMap[15]).t.i4jeWR);
-  obj.children = stateFromStores(arg1(dependencyMap[13]).Text, obj);
-  const tmp7 = importDefault(dependencyMap[8])();
-  const obj1 = {};
-  const intl2 = arg1(dependencyMap[15]).intl;
-  obj1.title = intl2.string(arg1(dependencyMap[15]).t.LPJmL/);
-  obj1.trailing = stateFromStores(arg1(dependencyMap[14]).PressableOpacity, obj);
-  const tmp11 = stateFromStores(arg1(dependencyMap[14]).PressableOpacity, obj);
-  const obj2 = { header: stateFromStores(arg1(dependencyMap[16]).BottomSheetTitleHeader, obj1) };
+  const intl = assignableRoles(onSave[15]).intl;
+  obj.children = intl.string(assignableRoles(onSave[15]).t.i4jeWR);
+  obj.children = stateFromStores(assignableRoles(onSave[13]).Text, obj);
+  let tmp7 = selectedRoleIds(onSave[8])();
+  let obj1 = {};
+  const intl2 = assignableRoles(onSave[15]).intl;
+  obj1.title = intl2.string(assignableRoles(onSave[15]).t["LPJmL/"]);
+  obj1.trailing = stateFromStores(assignableRoles(onSave[14]).PressableOpacity, obj);
+  const tmp11 = stateFromStores(assignableRoles(onSave[14]).PressableOpacity, obj);
+  let obj2 = { scrollable: true, header: stateFromStores(assignableRoles(onSave[16]).BottomSheetTitleHeader, obj1), startExpanded: true };
   const items4 = [assignableRoles.length];
-  obj2.children = stateFromStores(importDefault(dependencyMap[18]), { inActionSheet: true, style: tmp.list, itemSize: tmp7, sections: items4, renderItem: callback2, placeholderConfig: tmp6, estimatedListSize: "windowSize", listId: "select-invite-roles", wrapChildren: true });
-  return stateFromStores(arg1(dependencyMap[17]).ActionSheet, obj2);
+  obj2.children = stateFromStores(selectedRoleIds(onSave[18]), { inActionSheet: true, style: tmp.list, itemSize: tmp7, sections: items4, renderItem: callback2, placeholderConfig: tmp6, estimatedListSize: "windowSize", listId: "select-invite-roles", wrapChildren: true });
+  return stateFromStores(assignableRoles(onSave[17]).ActionSheet, obj2);
 };

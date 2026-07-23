@@ -1,55 +1,56 @@
-// Module ID: 14440
-// Function ID: 108861
+// Module ID: 14554
+// Function ID: 111014
 // Name: useIsDisabled
-// Dependencies: [0, 0, 0, 0, 4294967295]
+// Dependencies: [6769, 7662, 7125, 13728, 14540, 7536, 7538, 13727, 10095, 1212, 2198, 2]
 
-// Module 14440 (useIsDisabled)
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14554 (useIsDisabled)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
 
+const require = arg1;
 function useIsDisabled() {
-  return arg1(dependencyMap[7]).useDefaultGuildsRestricted();
+  return require(13727) /* useParentalControlledExplicitContentSettings */.useDefaultGuildsRestricted();
 }
-let obj = arg1(dependencyMap[8]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[9]).intl;
-    return intl.string(arg1(dependencyMap[9]).t.3o2ojh);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["3o2ojh"]);
   },
   useDescription() {
-    const intl = arg1(dependencyMap[9]).intl;
-    return intl.string(importDefault(dependencyMap[10]).7aYkh1);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2198)["7aYkh1"]);
   },
-  parent: require("__exportStarResult1").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue() {
     let tmp;
     const tmp2 = useIsDisabled();
-    const selectedTeenId = arg1(dependencyMap[2]).useSelectedTeenId();
-    const ParentalControlledDefaultMessageRequestRestricted = arg1(dependencyMap[3]).ParentalControlledDefaultMessageRequestRestricted;
+    const selectedTeenId = require(7125) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledDefaultMessageRequestRestricted = require(13728) /* result */.ParentalControlledDefaultMessageRequestRestricted;
     if (null != selectedTeenId) {
       tmp = selectedTeenId;
     }
-    const obj = arg1(dependencyMap[2]);
+    const obj = require(7125) /* useSelectedTeen */;
     return !tmp2 && !ParentalControlledDefaultMessageRequestRestricted.useControlledSetting(tmp);
   },
   useIsDisabled,
   onValueChange: function onAllowMessageRequestsFromServerMembersValueChange(arg0) {
-    const selectedTeenId = selectedTeenId.getSelectedTeenId();
+    selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
       if (!arg0) {
-        let obj = arg1(dependencyMap[4]);
+        let obj = require(14540) /* shouldAgeVerifyForDMDefaultOff */;
         if (obj.shouldAgeVerifyForDMDefaultOff()) {
-          obj = { entryPoint: arg1(dependencyMap[6]).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
-          const result = importDefault(dependencyMap[5]).showAgeVerificationGetStartedModal(obj);
-          const obj2 = importDefault(dependencyMap[5]);
+          obj = { entryPoint: require(7538) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
+          const result = importDefault(7536).showAgeVerificationGetStartedModal(obj);
+          const obj2 = importDefault(7536);
         }
       }
-      const ParentalControlledDefaultMessageRequestRestricted = arg1(dependencyMap[3]).ParentalControlledDefaultMessageRequestRestricted;
+      const ParentalControlledDefaultMessageRequestRestricted = require(13728) /* result */.ParentalControlledDefaultMessageRequestRestricted;
       const result1 = ParentalControlledDefaultMessageRequestRestricted.updateControlledSetting(selectedTeenId, !arg0);
     }
   },
   unsearchable: true
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsMessageRequests.tsx");
+createToggle = createToggle.createToggle(createToggle);
+let result = require("useSelectedTeen").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsMessageRequests.tsx");
 
-export default toggle;
+export default createToggle;

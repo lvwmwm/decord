@@ -1,37 +1,41 @@
-// Module ID: 5057
-// Function ID: 43829
+// Module ID: 5060
+// Function ID: 43847
 // Name: getDefaultPermissionsForChannel
-// Dependencies: []
+// Dependencies: [1908, 1348, 653, 483, 566, 3763, 2]
 // Exports: canChannelBeDefault, useCanChannelBeDefault
 
-// Module 5057 (getDefaultPermissionsForChannel)
+// Module 5060 (getDefaultPermissionsForChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function getDefaultPermissionsForChannel(channel) {
   if (null != channel) {
     const GUILD_VOCAL = constants.GUILD_VOCAL;
     if (GUILD_VOCAL.has(channel.type)) {
-      let VIEW_CHANNEL = importAll(dependencyMap[3]).combine(constants2.VIEW_CHANNEL, constants2.CONNECT);
-      const obj = importAll(dependencyMap[3]);
+      let VIEW_CHANNEL = importAll(483).combine(constants2.VIEW_CHANNEL, constants2.CONNECT);
+      const obj = importAll(483);
     }
     return VIEW_CHANNEL;
   }
   VIEW_CHANNEL = constants2.VIEW_CHANNEL;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ ChannelTypesSets: closure_5, Permissions: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_onboarding/DefaultChannelUtils.tsx");
+({ ChannelTypesSets: closure_5, Permissions: closure_6 } = ME);
+const result = require("ME").fileFinishedImporting("modules/guild_onboarding/DefaultChannelUtils.tsx");
 
 export const useCanChannelBeDefault = function useCanChannelBeDefault(arg0, arg1) {
-  arg1 = arg0;
-  const importAll = arg1;
-  const items = [closure_3, closure_4];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
-    const channel = channel.getChannel(arg1);
-    let isChannelGatedResult = channelGated.isChannelGated(arg0, arg1);
+  const _require = arg0;
+  let closure_1 = arg1;
+  const items = [_isNativeReflectConstruct, closure_4];
+  return _require(566).useStateFromStores(items, () => {
+    const channel = outer1_4.getChannel(callback);
+    let isChannelGatedResult = outer1_3.isChannelGated(closure_0, callback);
     if (!isChannelGatedResult) {
-      isChannelGatedResult = arg1(closure_2[5]).canEveryoneRole(tmp2, channel);
-      const obj = arg1(closure_2[5]);
+      isChannelGatedResult = callback(outer1_2[5]).canEveryoneRole(tmp2, channel);
+      const obj = callback(outer1_2[5]);
     }
     return isChannelGatedResult;
   });
@@ -39,8 +43,8 @@ export const useCanChannelBeDefault = function useCanChannelBeDefault(arg0, arg1
 export const canChannelBeDefault = function canChannelBeDefault(guild_id, id) {
   let isChannelGatedResult = channelGated.isChannelGated(guild_id, id);
   if (!isChannelGatedResult) {
-    isChannelGatedResult = importAll(dependencyMap[5]).canEveryoneRole(tmp, store.getChannel(id));
-    const obj = importAll(dependencyMap[5]);
+    isChannelGatedResult = importAll(3763).canEveryoneRole(tmp, store.getChannel(id));
+    const obj = importAll(3763);
   }
   return isChannelGatedResult;
 };

@@ -1,42 +1,45 @@
-// Module ID: 12920
-// Function ID: 98520
+// Module ID: 13034
+// Function ID: 100676
 // Name: LiveTag
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 477, 4126, 1212, 2]
 // Exports: default
 
-// Module 12920 (LiveTag)
+// Module 13034 (LiveTag)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "jsxProd";
+
+const require = arg1;
 let num = 0;
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { <string:1415220235>: -69281784875637070000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1711201730>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000413316521254222, <string:1204404296>: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024083515902442267, <string:3762720961>: 0.00004054605975767518, <string:1376280968>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015866006235933253, <string:1769381051>: 8596178144.001585, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
-obj.tag = obj;
-const obj1 = { textAlign: "center", color: importDefault(dependencyMap[4]).unsafe_rawColors.WHITE };
-if (obj5.isAndroid()) {
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: 6, paddingVertical: 2, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, overflow: "hidden", justifyContent: "center", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+_createForOfIteratorHelperLoose.tag = _createForOfIteratorHelperLoose;
+const obj1 = { textAlign: "center", color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE };
+if (set.isAndroid()) {
   num = -2;
 }
 obj1.marginTop = num;
-obj.tagText = obj1;
-let closure_4 = obj.createStyles(obj);
-const obj5 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/void/LiveTag/native/LiveTag.tsx");
+_createForOfIteratorHelperLoose.tagText = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = set.fileFinishedImporting("design/void/LiveTag/native/LiveTag.tsx");
 
 export default function LiveTag(arg0) {
   let allowFontScaling;
   let style;
   let textStyle;
   ({ style, textStyle, allowFontScaling } = arg0);
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items };
-  const items = [tmp.tag, style];
-  obj = { guild_id: "/assets/design/components/LottieIcon/native/generated/lotties", exports: null, body: "3b38f8bf8ac6605b344df2f05c37673a" };
+  items = [tmp.tag, style];
+  obj = { variant: "text-xs/bold", style: null, lineClamp: 1 };
   const items1 = [tmp.tagText, textStyle];
   obj.style = items1;
   obj.allowFontScaling = allowFontScaling;
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.children = intl.string(arg1(dependencyMap[7]).t.dI3q4h).toUpperCase();
-  obj.children = jsx(arg1(dependencyMap[6]).Text, obj);
-  return <View {...obj} />;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.dI3q4h).toUpperCase();
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xs/bold", style: null, lineClamp: 1 });
+  return <View variant="text-xs/bold" style={null} lineClamp={1} />;
 };

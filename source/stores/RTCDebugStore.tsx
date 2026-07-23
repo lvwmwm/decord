@@ -1,10 +1,23 @@
-// Module ID: 10756
-// Function ID: 83573
+// Module ID: 10766
+// Function ID: 83622
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 57, 6, 7, 4177, 1849, 653, 4191, 10767, 4227, 686, 566, 2]
 // Exports: keySection, parseSection
 
-// Module 10756 (_isNativeReflectConstruct)
+// Module 10766 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import DesktopSources from "DesktopSources";
+
+let closure_13;
+let closure_14;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -38,13 +51,13 @@ function getLastGraphValue(arr) {
 function setDefaultStats() {
   const values = Object.values(MediaEngineContextTypes);
   const item = values.forEach((arg0) => {
-    closure_17[arg0] = {};
+    outer1_17[arg0] = {};
   });
 }
 function destroyReplayConnection() {
   if (null != _null) {
     _null.destroy();
-    const _null = null;
+    _null = null;
   }
 }
 function computeScreenshareFps(videohookFrames, videohookFrames2) {
@@ -190,11 +203,10 @@ function computeScreenshareFps(videohookFrames, videohookFrames2) {
   const sum19 = sum18 + num24;
   return { screenshareCapturedFps: Math.max(0, (sum5 - sum11) / arg2), screenshareCapturedFpsUnique: Math.max(0, (sum15 - sum19) / arg2) };
 }
-function updateStats(arg0) {
+function updateStats(arr1, arg1, timestamp) {
   let arr2;
   let tmp10;
   let obj = arg1;
-  let timestamp = arg2;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -203,12 +215,12 @@ function updateStats(arg0) {
     timestamp = Date.now();
   }
   obj = {};
-  const entries = Object.entries(arg0);
+  const entries = Object.entries(arr1);
   let num = 0;
   if (0 < entries.length) {
     do {
-      let tmp8 = closure_7;
-      let tmp9 = closure_7(entries[num], 2);
+      let tmp8 = callback2;
+      let tmp9 = callback2(entries[num], 2);
       [tmp10, arr2] = tmp9;
       let tmp11 = obj[tmp10];
       let _Array = Array;
@@ -234,8 +246,8 @@ function updateStats(arg0) {
               if ("object" !== typeof tmp20) {
                 obj = {};
               }
-              let tmp21 = closure_31;
-              let arr = items1.push(closure_31(arr1[num3], obj, timestamp));
+              let tmp21 = updateStats;
+              let arr = items1.push(updateStats(arr1[num3], obj, timestamp));
               num3 = num3 + 1;
               tmp14 = items;
               tmp15 = items1;
@@ -261,8 +273,8 @@ function updateStats(arg0) {
             } else {
               obj1 = tmp11;
             }
-            let tmp19 = closure_31;
-            obj[tmp10] = closure_31(arr1, obj1, timestamp);
+            let tmp19 = updateStats;
+            obj[tmp10] = updateStats(arr1, obj1, timestamp);
             tmp14 = tmp3;
             tmp15 = tmp4;
             num2 = tmp5;
@@ -270,8 +282,8 @@ function updateStats(arg0) {
             tmp17 = tmp7;
           }
         }
-        let tmp13 = closure_19;
-        if (tmp10 in closure_19) {
+        let tmp13 = obj;
+        if (tmp10 in obj) {
           if ("number" === tmp12) {
             let _Array2 = Array;
             let items2 = tmp11;
@@ -287,7 +299,7 @@ function updateStats(arg0) {
             tmp16 = tmp6;
             tmp17 = items2;
             if (items2.length > 600) {
-              let arr1 = items2.shift();
+              arr1 = items2.shift();
               tmp14 = tmp3;
               tmp15 = tmp4;
               num2 = tmp5;
@@ -304,39 +316,29 @@ function updateStats(arg0) {
         tmp17 = tmp7;
       }
       num = num + 1;
-      let tmp3 = tmp14;
-      let tmp4 = tmp15;
-      let tmp5 = num2;
-      let tmp6 = tmp16;
-      let tmp7 = tmp17;
+      tmp3 = tmp14;
+      tmp4 = tmp15;
+      tmp5 = num2;
+      tmp6 = tmp16;
+      tmp7 = tmp17;
     } while (num < entries.length);
   }
   return obj;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-const tmp2 = arg1(dependencyMap[9]);
-const MediaEngineContextTypes = tmp2.MediaEngineContextTypes;
-({ Features: closure_13, SimulcastOverrideQuality: closure_14 } = tmp2);
-const keySectionResult = keySection(MediaEngineContextTypes.DEFAULT, arg1(dependencyMap[8]).RTCDebugSections.TRANSPORT, 0);
+const MediaEngineContextTypes = DesktopSources.MediaEngineContextTypes;
+({ Features: closure_13, SimulcastOverrideQuality: closure_14 } = DesktopSources);
+const keySectionResult = keySection(MediaEngineContextTypes.DEFAULT, require("ME").RTCDebugSections.TRANSPORT, 0);
 let closure_17 = {};
 const map = new Map();
-let obj = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003562007816064813, "Bool(false)": -625777451929953900000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000004665177423075728, "Bool(false)": 0.0000000000000000000000000000000000000007492573506792921, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000004667261458395371, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000041336278527542125, "Bool(false)": -2718669166212202000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000004667261458271609, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000012181491896527616, "Bool(false)": 241979899612687240000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000004667261426588809, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008709925065606198, "Bool(false)": 0.6, "Bool(false)": "BounceOutRight", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutLeft", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutUp", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutDown", "Bool(false)": null, "Bool(false)": 0.6 };
-const obj2 = () => {
+let obj = { availableOutgoingBitrate: true, bitrate: true, bitrateTarget: true, bytesReceived: true, bytesSent: true, encoderQualityPsnr: true, encoderQualityVmaf: true, encodeUsage: true, frameRateDecode: true, frameRateEncode: true, frameRateInput: true, frameRateNetwork: true, frameRateRender: true, keyFramesEncoded: true, keyFramesDecoded: true, inboundBitrateEstimate: true, packetsLost: true, packetsReceived: true, packetsSent: true, ping: true, qpSum: true, videoEntropy: true, audioLevel: true, screenshareCapturedFps: true, screenshareCapturedFpsUnique: true };
+let obj2 = (() => {
   class RTCDebugVideoOutputMap {
     constructor(arg0) {
-      tmp = closure_8(this, RTCDebugVideoOutputMap);
+      tmp = outer1_8(this, RTCDebugVideoOutputMap);
       this.state = arg0;
       return;
     }
   }
-  const arg1 = RTCDebugVideoOutputMap;
   let obj = {
     key: "put",
     value(arg0, arg1, arg2, arg3) {
@@ -344,18 +346,18 @@ const obj2 = () => {
       if ("" === arg3) {
         let obj = {};
         const merged = Object.assign(self.state);
-        callback2(arg0, arg1, arg2);
-        delete r2[r0];
+        outer1_25(arg0, arg1, arg2);
+        delete tmp2[tmp];
         const prototype2 = RTCDebugVideoOutputMap.prototype;
-        const tmp18 = new RTCDebugVideoOutputMap(obj);
-        return tmp18;
+        const tmp20 = new RTCDebugVideoOutputMap(obj);
+        return tmp20;
       } else {
         obj = {};
-        obj[callback2(arg0, arg1, arg2)] = arg3;
+        obj[outer1_25(arg0, arg1, arg2)] = arg3;
         const merged1 = Object.assign(self.state);
         const prototype = RTCDebugVideoOutputMap.prototype;
-        const tmp8 = new RTCDebugVideoOutputMap(obj);
-        return tmp8;
+        const tmp10 = new RTCDebugVideoOutputMap(obj);
+        return tmp10;
       }
     }
   };
@@ -363,7 +365,7 @@ const obj2 = () => {
   obj = {
     key: "get",
     value(arg0, arg1, arg2) {
-      const tmp = this.state[closure_25(undefined, arg0, arg1, arg2)];
+      const tmp = this.state[outer1_25(undefined, arg0, arg1, arg2)];
       let tmp2 = null;
       if (null != tmp) {
         tmp2 = tmp;
@@ -380,25 +382,25 @@ const obj2 = () => {
   };
   const items1 = [obj];
   return callback3(RTCDebugVideoOutputMap, items, items1);
-}();
+})();
 let closure_20 = obj2.empty();
-let closure_21 = false;
-let closure_22 = null;
+let c21 = false;
+let c22 = null;
 const map1 = new Map();
 setDefaultStats();
-let tmp7 = (Store) => {
+let tmp7 = ((Store) => {
   class RTCDebugStore {
     constructor() {
       self = this;
-      tmp = closure_8(this, RTCDebugStore);
-      obj = closure_5(RTCDebugStore);
-      tmp2 = closure_4;
-      if (closure_24()) {
+      tmp = outer1_8(this, RTCDebugStore);
+      obj = outer1_5(RTCDebugStore);
+      tmp2 = outer1_4;
+      if (outer1_24()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -407,19 +409,18 @@ let tmp7 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = RTCDebugStore;
   callback(RTCDebugStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_10, closure_11);
+      this.waitFor(outer1_10, outer1_11);
     }
   };
   const items = [obj, , , , , , , ];
   obj = {
     key: "getSection",
     value() {
-      return closure_16;
+      return outer1_16;
     }
   };
   items[1] = obj;
@@ -454,7 +455,7 @@ let tmp7 = (Store) => {
       if (null != found) {
         frameRateRender = found.frameRateRender;
       }
-      obj.fps = closure_27(frameRateRender);
+      obj.fps = outer1_27(frameRateRender);
       return obj;
     }
   };
@@ -495,12 +496,12 @@ let tmp7 = (Store) => {
       if (null != transport) {
         prop = transport.availableOutgoingBitrate;
       }
-      obj.bitrateEstimate = closure_27(prop);
+      obj.bitrateEstimate = outer1_27(prop);
       let frameRateEncode;
       if (null != found) {
         frameRateEncode = found.frameRateEncode;
       }
-      obj.fps = closure_27(frameRateEncode);
+      obj.fps = outer1_27(frameRateEncode);
       return obj;
     }
   };
@@ -509,64 +510,65 @@ let tmp7 = (Store) => {
     value() {
       let DEFAULT = arg0;
       if (arg0 === undefined) {
-        DEFAULT = constants.DEFAULT;
+        DEFAULT = outer1_12.DEFAULT;
       }
-      return Object.values(closure_17[DEFAULT]);
+      return Object.values(outer1_17[DEFAULT]);
     }
   };
   items[5] = {
     key: "getVideoStreams",
     value() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[6] = {
     key: "shouldRecordNextConnection",
     value() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[7] = {
     key: "getSimulcastDebugOverride",
     value(arg0, arg1) {
-      const tmp = callback4(arg0, arg1);
-      if (map.has(tmp)) {
-        let NO_OVERRIDE = map.get(tmp);
+      const tmp = outer1_26(arg0, arg1);
+      if (outer1_18.has(tmp)) {
+        let NO_OVERRIDE = outer1_18.get(tmp);
       } else {
-        NO_OVERRIDE = constants2.NO_OVERRIDE;
+        NO_OVERRIDE = outer1_14.NO_OVERRIDE;
       }
       return NO_OVERRIDE;
     }
   };
   return callback3(RTCDebugStore, items);
-}(importDefault(dependencyMap[13]).Store);
+})(require("initialize").Store);
 tmp7.displayName = "RTCDebugStore";
 obj = {
   RTC_DEBUG_MODAL_OPEN: function handleOpen(section) {
     section = section.section;
+    if (null == section) {
+      section = closure_15;
+    }
   },
   RTC_DEBUG_MODAL_CLOSE: function handleFormClose() {
     destroyReplayConnection();
   },
   RTC_DEBUG_MODAL_SET_SECTION: function handleSetSection(section) {
-
+    section = section.section;
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY: function handleOpenReplay() {
-    importAll(dependencyMap[10]).chooseReplayPath();
+    importAll(10767).chooseReplayPath();
   },
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: function handleOpenReplayAtPath(path) {
     path = path.path;
-    let arg1;
-    const mediaEngine = mediaEngine.getMediaEngine();
+    let replayConnection;
+    mediaEngine = mediaEngine.getMediaEngine();
     destroyReplayConnection();
     if (mediaEngine.supports(constants.CONNECTION_REPLAY)) {
       if (0 !== path.length) {
-        const replayConnection = mediaEngine.createReplayConnection(MediaEngineContextTypes.DEFAULT, path);
-        arg1 = replayConnection;
+        replayConnection = mediaEngine.createReplayConnection(MediaEngineContextTypes.DEFAULT, path);
         if (null != replayConnection) {
-          let closure_22 = replayConnection;
-          replayConnection.on(arg1(dependencyMap[11]).BaseConnectionEvent.Video, (userId) => {
-            let obj = callback(closure_3[12]);
+          replayConnection.on(replayConnection(4227).BaseConnectionEvent.Video, (userId) => {
+            let obj = outer1_1(outer1_3[12]);
             obj = { type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT", mediaEngineConnectionId: replayConnection.mediaEngineConnectionId, userId };
             let num = 0;
             if (null != arg3) {
@@ -580,8 +582,8 @@ obj = {
             obj.streamId = str;
             obj.dispatch(obj);
           });
-          importDefault(dependencyMap[12]).wait(() => callback2(closure_3[10]).open());
-          const obj2 = importDefault(dependencyMap[12]);
+          importDefault(686).wait(() => outer1_2(outer1_3[10]).open());
+          const obj2 = importDefault(686);
         }
       }
     }
@@ -608,68 +610,68 @@ obj = {
     }
   },
   MEDIA_ENGINE_CONNECTION_STATS: function handleMediaEngineConnectionStats(connectionStats) {
-    const arg1 = connectionStats.connectionStats;
+    connectionStats = connectionStats.connectionStats;
     const values = Object.values(MediaEngineContextTypes);
-    const item = values.forEach((arg0) => {
+    let item = values.forEach((arg0) => {
       const connectionStats = arg0;
-      const found = connectionStats.filter((context) => context.context === context);
+      const found = connectionStats.filter((context) => context.context === closure_0);
       const item = found.forEach((stats, index) => {
         let context;
-        let obj = { context: stats, stats: stats.stats, index };
+        let obj = { context: closure_0, stats: stats.stats, index };
         ({ context, stats, index } = obj);
         if (null != stats) {
-          const tmp4 = callback(closure_16.split(":"), 3);
-          if (tmp4[0] === context) {
+          const tmp6 = outer2_7(outer2_16.split(":"), 3);
+          if (tmp6[0] === context) {
             const _parseInt = parseInt;
-            if (parseInt(tmp6) === index) {
-              if (null != user.getUser(tmp5)) {
+            if (parseInt(tmp8) === index) {
+              if (null != outer2_11.getUser(tmp7)) {
                 const _Object = Object;
                 const keys = Object.keys(stats.rtp.inbound);
-                if (!keys.includes(tmp5)) {
-                  closure_16 = closure_15;
+                if (!keys.includes(tmp7)) {
+                  outer2_16 = outer2_15;
                 }
               }
             }
           }
           const _Date = Date;
           const timestamp = Date.now();
-          let tmp12 = stats;
+          let tmp14 = stats;
           if (null != stats.screenshare) {
             const _HermesInternal = HermesInternal;
             const combined = "" + context + ":" + index;
-            const value = store.get(combined);
-            if (null != tmp[index]) {
-              const screenshare = tmp28.screenshare;
+            const value = outer2_23.get(combined);
+            if (null != tmp3[index]) {
+              const screenshare = tmp30.screenshare;
             }
-            const result = store.set(combined, timestamp);
-            tmp12 = stats;
+            const result = outer2_23.set(combined, timestamp);
+            tmp14 = stats;
             if (null != value) {
-              tmp12 = stats;
+              tmp14 = stats;
               if (null != screenshare) {
                 const result1 = (timestamp - value) / 1000;
-                tmp12 = stats;
+                tmp14 = stats;
                 if (result1 > 0) {
                   obj = {};
                   const merged = Object.assign(stats);
                   obj = {};
                   const merged1 = Object.assign(stats.screenshare);
-                  const merged2 = Object.assign(callback2(stats.screenshare, screenshare, result1));
+                  const merged2 = Object.assign(outer2_30(stats.screenshare, screenshare, result1));
                   obj["screenshare"] = obj;
-                  tmp12 = obj;
+                  tmp14 = obj;
                 }
               }
             }
           }
-          tmp[index] = callback3(tmp12, tmp[index], timestamp);
+          tmp3[index] = outer2_31(tmp14, tmp3[index], timestamp);
         } else {
-          delete r1[r2];
+          delete tmp[tmp2];
         }
       });
     });
   }
 };
-tmp7 = new tmp7(importDefault(dependencyMap[12]), obj);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("stores/RTCDebugStore.tsx");
+tmp7 = new tmp7(require("dispatcher"), obj);
+let result = require("_inherits").fileFinishedImporting("stores/RTCDebugStore.tsx");
 
 export default tmp7;
 export const DEFAULT_SECTION = keySectionResult;

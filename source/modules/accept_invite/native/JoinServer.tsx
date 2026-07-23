@@ -1,55 +1,64 @@
-// Module ID: 9219
-// Function ID: 72105
+// Module ID: 9226
+// Function ID: 72146
 // Name: OrSeparator
-// Dependencies: []
+// Dependencies: [31, 27, 9227, 33, 4130, 689, 4126, 1212, 5160, 1456, 1450, 9000, 4543, 2]
 // Exports: default
 
-// Module 9219 (OrSeparator)
+// Module 9226 (OrSeparator)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 class OrSeparator {
   constructor() {
-    tmp = closure_11();
+    tmp = c11();
     obj = { style: tmp.separator };
     obj = { style: tmp.innerSeparator };
     items = [, , ];
     items[0] = jsx(View, obj);
-    obj1 = { "Null": false, "Null": false, alignItems: false };
+    obj1 = { style: null, variant: "text-sm/semibold", color: "text-muted" };
     obj1.style = tmp.orText;
-    intl = arg1(dependencyMap[7]).intl;
-    obj1.children = intl.string(arg1(dependencyMap[7]).t.HEuagM);
-    items[1] = jsx(arg1(dependencyMap[6]).Text, obj1);
+    intl = require("getSystemLocale").intl;
+    obj1.children = intl.string(require("getSystemLocale").t.HEuagM);
+    items[1] = jsx(require("Text").Text, obj1);
     obj2 = { style: tmp.innerSeparator };
     items[2] = jsx(View, obj2);
     obj.children = items;
     return jsxs(View, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ CREATE_GUILD_SMALL_SCREEN_MAX_HEIGHT: closure_6, CreateGuildModalStates: closure_7 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { flexGrow: 2, minHeight: importDefault(dependencyMap[5]).space.PX_24 };
-obj.growSpacing = obj;
-const tmp4 = arg1(dependencyMap[3]);
-obj.container = { flexGrow: 2, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
-const obj1 = { flexGrow: 2, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_16 };
-obj.textInput = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
-const obj3 = { 9223372036854775807: -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -9223372036854775808: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.innerSeparator = obj3;
-obj.separator = { alignItems: null, justifyContent: "\u{1F937}\u{1F3FC}", margin: true, paddingHorizontal: null };
-const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.orText = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
-obj.header = { textAlign: "center" };
-obj.description = {};
-obj.exampleText = { marginTop: 8 };
-let closure_11 = obj.createStyles(obj);
-const items = [];
+({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+({ CREATE_GUILD_SMALL_SCREEN_MAX_HEIGHT: closure_6, CreateGuildModalStates: closure_7 } = NUXGuildTemplatesAnalytics);
+({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexGrow: 2, minHeight: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.growSpacing = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.container = { flexGrow: 2, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj1 = { flexGrow: 2, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.textInput = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+let obj3 = { height: 1, flexGrow: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.innerSeparator = obj3;
+_createForOfIteratorHelperLoose.separator = { paddingVertical: 12, flexDirection: "row", justifyContent: "center", alignItems: "center" };
+let obj4 = { textAlign: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, textTransform: "uppercase" };
+_createForOfIteratorHelperLoose.orText = obj4;
+_createForOfIteratorHelperLoose.header = { textAlign: "center" };
+_createForOfIteratorHelperLoose.description = { textAlign: "center", marginTop: 8, marginBottom: 32 };
+_createForOfIteratorHelperLoose.exampleText = { marginTop: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let items = ["https://discord.gg/hTKzmak", "hTKzmak", "https://discord.gg/wumpus-friends"];
 let closure_13 = items[0];
-const obj4 = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_8 };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/accept_invite/native/JoinServer.tsx");
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+const result = require("NUXGuildTemplatesAnalytics").fileFinishedImporting("modules/accept_invite/native/JoinServer.tsx");
 
 export default function JoinServer(arg0) {
   let error;
@@ -59,84 +68,84 @@ export default function JoinServer(arg0) {
   let submitting;
   ({ onDone, submitting } = arg0);
   ({ error, inviteString, onInviteChange } = arg0);
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[9]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = navigation(1456);
+  navigation = obj.useNavigation();
   const items = [navigation];
   obj = { keyboardShouldPersistTaps: "handled" };
   const items1 = [tmp.container, ];
   obj = {};
   const callback = React.useCallback(() => {
-    navigation.push(constants.JOIN_STUDENT_HUB);
+    navigation.push(outer1_7.JOIN_STUDENT_HUB);
   }, items);
-  obj.paddingBottom = importDefault(dependencyMap[8])().insets.bottom + importDefault(dependencyMap[5]).space.PX_16;
+  obj.paddingBottom = importDefault(5160)().insets.bottom + importDefault(689).space.PX_16;
   items1[1] = obj;
   obj.contentContainerStyle = items1;
   const obj1 = {};
   let tmp8 = null;
-  if (importDefault(dependencyMap[10])().height > closure_6) {
+  if (importDefault(1450)().height > closure_6) {
     const obj2 = {};
-    const obj3 = { style: tmp.header };
-    const intl = arg1(dependencyMap[7]).intl;
-    obj3.children = intl.string(arg1(dependencyMap[7]).t.jlfuFW);
-    const items2 = [callback(arg1(dependencyMap[6]).Text, obj3), ];
-    const obj4 = { style: tmp.description };
-    const intl2 = arg1(dependencyMap[7]).intl;
-    obj4.children = intl2.string(arg1(dependencyMap[7]).t.lVvN3A);
-    items2[1] = callback(arg1(dependencyMap[6]).Text, obj4);
+    const obj3 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
+    const intl = navigation(1212).intl;
+    obj3.children = intl.string(navigation(1212).t.jlfuFW);
+    const items2 = [callback(navigation(4126).Text, obj3), ];
+    const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
+    const intl2 = navigation(1212).intl;
+    obj4.children = intl2.string(navigation(1212).t.lVvN3A);
+    items2[1] = callback(navigation(4126).Text, obj4);
     obj2.children = items2;
     tmp8 = callback2(closure_10, obj2);
   }
   const items3 = [tmp8, , ];
   const obj5 = {};
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj5.label = intl3.string(arg1(dependencyMap[7]).t.qreV25);
+  const intl3 = navigation(1212).intl;
+  obj5.label = intl3.string(navigation(1212).t.qreV25);
   obj5.error = error;
   obj5.value = inviteString;
   obj5.onChangeText = onInviteChange;
   obj5.placeholder = closure_13;
-  const intl4 = arg1(dependencyMap[7]).intl;
-  obj5.accessibilityLabel = intl4.string(arg1(dependencyMap[7]).t.qreV25);
+  const intl4 = navigation(1212).intl;
+  obj5.accessibilityLabel = intl4.string(navigation(1212).t.qreV25);
   obj5.autoFocus = true;
   obj5.autoCapitalize = "none";
   obj5.autoCorrect = false;
   obj5.returnKeyType = "join";
   obj5.textStyle = tmp.textInput;
   obj5.onSubmitEditing = onDone;
-  items3[1] = callback(importDefault(dependencyMap[11]), obj5);
-  const obj6 = { style: tmp.exampleText };
-  const intl5 = arg1(dependencyMap[7]).intl;
-  obj6.children = intl5.format(arg1(dependencyMap[7]).t.vwWaTe, {
+  items3[1] = callback(importDefault(9000), obj5);
+  const obj6 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted" };
+  const intl5 = navigation(1212).intl;
+  obj6.children = intl5.format(navigation(1212).t.vwWaTe, {
     example1: items[0],
     example2: items[1],
     example3: items[2],
     exampleHook(children) {
-      return callback(navigation(closure_2[6]).Text, { children }, arg1);
+      const obj = { variant: "text-sm/medium", color: "text-default", children };
+      return outer1_8(navigation(outer1_2[6]).Text, obj, arg1);
     }
   });
-  items3[2] = callback(arg1(dependencyMap[6]).Text, obj6);
+  items3[2] = callback(navigation(4126).Text, obj6);
   obj1.children = items3;
   const items4 = [callback2(closure_4, obj1), ];
   const obj8 = {};
   const items5 = [callback(closure_4, { style: tmp.growSpacing }), , , ];
   const obj10 = { size: "lg" };
-  const intl6 = arg1(dependencyMap[7]).intl;
-  obj10.text = intl6.string(arg1(dependencyMap[7]).t.+H/coT);
-  const intl7 = arg1(dependencyMap[7]).intl;
-  obj10.accessibilityLabel = intl7.string(arg1(dependencyMap[7]).t.+H/coT);
+  const intl6 = navigation(1212).intl;
+  obj10.text = intl6.string(navigation(1212).t["+H/coT"]);
+  const intl7 = navigation(1212).intl;
+  obj10.accessibilityLabel = intl7.string(navigation(1212).t["+H/coT"]);
   obj10.loading = submitting;
   obj10.disabled = submitting;
   obj10.onPress = onDone;
-  items5[1] = callback(arg1(dependencyMap[12]).Button, obj10);
+  items5[1] = callback(navigation(4543).Button, obj10);
   items5[2] = callback(OrSeparator, {});
-  const obj11 = { <string:1986169986>: null, <string:2487833047>: "955eed7cc4876c0375acb05d74c44ea7" };
-  const intl8 = arg1(dependencyMap[7]).intl;
-  obj11.text = intl8.string(arg1(dependencyMap[7]).t.MOqX/G);
-  const intl9 = arg1(dependencyMap[7]).intl;
-  obj11.accessibilityLabel = intl9.string(arg1(dependencyMap[7]).t.MOqX/G);
+  const obj11 = { size: "lg", variant: "secondary" };
+  const intl8 = navigation(1212).intl;
+  obj11.text = intl8.string(navigation(1212).t["MOqX/G"]);
+  const intl9 = navigation(1212).intl;
+  obj11.accessibilityLabel = intl9.string(navigation(1212).t["MOqX/G"]);
   obj11.onPress = callback;
-  items5[3] = callback(arg1(dependencyMap[12]).Button, obj11);
+  items5[3] = callback(navigation(4543).Button, obj11);
   obj8.children = items5;
   items4[1] = callback2(closure_10, obj8);
   obj.children = items4;

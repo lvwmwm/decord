@@ -1,35 +1,39 @@
-// Module ID: 13670
-// Function ID: 103521
+// Module ID: 13784
+// Function ID: 105677
 // Name: ConnectGuardianCard
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 6770, 33, 4130, 689, 624, 6678, 13780, 13781, 5492, 3830, 1212, 2198, 4541, 12171, 4126, 4704, 4543, 12227, 4965, 2]
 // Exports: ConnectGuardianCard
 
-// Module 13670 (ConnectGuardianCard)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).FAMILY_CENTER_REQUEST_QR_CODE_URL;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.compactContainer = { alignSelf: "center", gap: importDefault(dependencyMap[6]).space.PX_16 };
-const obj2 = { mousemoveCb: "png", stretch: true, inCall: "/assets/images/native/community", padding: importDefault(dependencyMap[6]).space.PX_12, borderRadius: importDefault(dependencyMap[6]).radii.lg, borderColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL };
-obj.card = obj2;
-obj.countdown = { textAlign: "center" };
-const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", paddingHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
-obj.divider = obj3;
-obj.compactDividerFlush = { paddingHorizontal: 0 };
-const obj4 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_NORMAL, borderWidth: "<string:2941583362>" };
-obj.dividerLine = obj4;
-const obj1 = { alignSelf: "center", gap: importDefault(dependencyMap[6]).space.PX_16 };
-obj.dividerText = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
-obj.buttonGroup = { paddingTop: 0 };
-let closure_9 = obj.createStyles(obj);
-const obj5 = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/parent_tools/native/ConnectGuardianCard.tsx");
+// Module 13784 (ConnectGuardianCard)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FAMILY_CENTER_REQUEST_QR_CODE_URL as closure_6 } from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.compactContainer = { alignSelf: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj2 = { alignSelf: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_12, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_NORMAL };
+_createForOfIteratorHelperLoose.card = obj2;
+_createForOfIteratorHelperLoose.countdown = { textAlign: "center" };
+let obj3 = { flexDirection: "row", alignItems: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.divider = obj3;
+_createForOfIteratorHelperLoose.compactDividerFlush = { paddingHorizontal: 0 };
+let obj4 = { flex: 1, height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_NORMAL };
+_createForOfIteratorHelperLoose.dividerLine = obj4;
+let obj1 = { alignSelf: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.dividerText = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.buttonGroup = { paddingTop: 0 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj5 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/native/ConnectGuardianCard.tsx");
 
 export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
   let days;
@@ -39,25 +43,22 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
   let seconds;
   let shareActions;
   linkCode = linkCode.linkCode;
-  const arg1 = linkCode;
   ({ expiresAt, shareActions } = linkCode);
   if (shareActions === undefined) {
     shareActions = "none";
   }
-  let importDefault;
-  let dependencyMap;
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  importDefault = stateFromStores;
+  let stateFromStores;
   let id;
+  let tmp = _createForOfIteratorHelperLoose();
+  let obj = linkCode(id[7]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
+  id = undefined;
   if (null != stateFromStores) {
     id = stateFromStores.id;
   }
-  dependencyMap = id;
-  ({ days, hours, minutes, seconds } = importDefault(dependencyMap[8])(expiresAt));
-  importDefault(dependencyMap[9])(expiresAt, linkCode.onRefresh);
+  ({ days, hours, minutes, seconds } = stateFromStores(id[8])(expiresAt));
+  stateFromStores(id[9])(expiresAt, linkCode.onRefresh);
   const items1 = [stateFromStores, linkCode];
   const callback = React.useCallback(() => {
     let tmp = null != stateFromStores;
@@ -73,19 +74,19 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
   if (null == id) {
     return null;
   } else {
-    const intl5 = arg1(dependencyMap[13]).intl;
+    const intl5 = linkCode(id[13]).intl;
     obj = { style: tmp.card };
     const tmp31 = callback(id, linkCode);
-    obj = { align: "center", spacing: importDefault(dependencyMap[6]).space.PX_8 };
+    obj = { align: "center", spacing: stateFromStores(id[6]).space.PX_8 };
     const obj1 = { size: 160, text: tmp31 };
-    const items3 = [callback2(arg1(dependencyMap[16]).QRCodeWithOverlay, obj1), ];
+    const items3 = [callback2(linkCode(id[16]).QRCodeWithOverlay, obj1), ];
     const obj2 = { style: tmp.countdown, variant: "text-xs/normal" };
-    const stringResult = intl5.string(importDefault(dependencyMap[14]).RfkLDs);
+    const stringResult = intl5.string(stateFromStores(id[14]).RfkLDs);
     const _HermesInternal = HermesInternal;
-    obj2.children = "" + stringResult + " " + arg1(dependencyMap[18]).getTimeFormat(86400 * days + 3600 * hours + 60 * minutes + seconds);
-    items3[1] = callback2(arg1(dependencyMap[17]).Text, obj2);
+    obj2.children = "" + stringResult + " " + linkCode(id[18]).getTimeFormat(86400 * days + 3600 * hours + 60 * minutes + seconds);
+    items3[1] = callback2(linkCode(id[17]).Text, obj2);
     obj.children = items3;
-    obj.children = callback3(arg1(dependencyMap[15]).Stack, obj);
+    obj.children = callback3(linkCode(id[15]).Stack, obj);
     const tmp40 = callback2(View, obj);
     if ("none" === shareActions) {
       return tmp40;
@@ -100,11 +101,11 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
       obj3.style = items4;
       const obj4 = { style: tmp.dividerLine };
       const items5 = [callback2(View, obj4), , ];
-      const obj5 = { style: tmp.dividerText };
-      const intl = arg1(dependencyMap[13]).intl;
-      const tmp14 = importDefault(dependencyMap[14]);
+      const obj5 = { style: tmp.dividerText, variant: "text-sm/medium", color: "text-muted" };
+      const intl = linkCode(id[13]).intl;
+      const tmp14 = stateFromStores(id[14]);
       obj5.children = intl.string("compact" === shareActions ? tmp14.XhROZk : tmp14.lggBOi);
-      items5[1] = callback2(arg1(dependencyMap[17]).Text, obj5);
+      items5[1] = callback2(linkCode(id[17]).Text, obj5);
       const obj6 = { style: tmp.dividerLine };
       items5[2] = callback2(View, obj6);
       obj3.children = items5;
@@ -112,40 +113,40 @@ export const ConnectGuardianCard = function ConnectGuardianCard(linkCode) {
       if ("compact" === shareActions) {
         const obj7 = { style: tmp.compactContainer };
         const items6 = [tmp40, tmp42Result, ];
-        const obj8 = {};
-        const intl4 = arg1(dependencyMap[13]).intl;
-        obj8.text = intl4.string(arg1(dependencyMap[13]).t.Ej3B3Y);
-        const obj9 = { size: "md", color: importDefault(dependencyMap[6]).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-        obj8.icon = callback2(arg1(dependencyMap[20]).ShareIcon, obj9);
+        const obj8 = { variant: "secondary", size: "md" };
+        const intl4 = linkCode(id[13]).intl;
+        obj8.text = intl4.string(linkCode(id[13]).t.Ej3B3Y);
+        const obj9 = { size: "md", color: stateFromStores(id[6]).colors.CONTROL_SECONDARY_TEXT_DEFAULT };
+        obj8.icon = callback2(linkCode(id[20]).ShareIcon, obj9);
         obj8.disabled = "" === linkCode;
         obj8.onPress = callback;
-        items6[2] = callback2(arg1(dependencyMap[19]).Button, obj8);
+        items6[2] = callback2(linkCode(id[19]).Button, obj8);
         obj7.children = items6;
         let tmp18Result = tmp18(View, obj7);
       } else {
-        const obj10 = { spacing: importDefault(dependencyMap[6]).space.PX_32, style: tmp.container };
+        const obj10 = { spacing: stateFromStores(id[6]).space.PX_32, style: tmp.container };
         const items7 = [tmp40, tmp42Result, ];
         const obj11 = { style: tmp.buttonGroup };
-        const obj12 = {};
-        const intl2 = arg1(dependencyMap[13]).intl;
-        obj12.text = intl2.string(arg1(dependencyMap[13]).t.Ej3B3Y);
+        const obj12 = { variant: "secondary", size: "md" };
+        const intl2 = linkCode(id[13]).intl;
+        obj12.text = intl2.string(linkCode(id[13]).t.Ej3B3Y);
         obj12.disabled = "" === linkCode;
         obj12.onPress = callback;
-        const items8 = [callback2(arg1(dependencyMap[19]).Button, obj12), ];
-        const obj13 = {};
-        const intl3 = arg1(dependencyMap[13]).intl;
-        obj13.text = intl3.string(arg1(dependencyMap[13]).t.WqhZss);
+        const items8 = [callback2(linkCode(id[19]).Button, obj12), ];
+        const obj13 = { variant: "secondary", size: "md" };
+        const intl3 = linkCode(id[13]).intl;
+        obj13.text = intl3.string(linkCode(id[13]).t.WqhZss);
         obj13.disabled = "" === linkCode;
         obj13.onPress = tmp7;
-        items8[1] = callback2(arg1(dependencyMap[19]).Button, obj13);
+        items8[1] = callback2(linkCode(id[19]).Button, obj13);
         obj11.children = items8;
-        items7[2] = tmp18(arg1(dependencyMap[21]).ButtonGroup, obj11);
+        items7[2] = tmp18(linkCode(id[21]).ButtonGroup, obj11);
         obj10.children = items7;
-        tmp18Result = tmp18(arg1(dependencyMap[15]).Stack, obj10);
+        tmp18Result = tmp18(linkCode(id[15]).Stack, obj10);
       }
       return tmp18Result;
     }
-    const obj16 = arg1(dependencyMap[18]);
+    const obj16 = linkCode(id[18]);
   }
-  const tmp4 = importDefault(dependencyMap[8])(expiresAt);
+  const tmp4 = stateFromStores(id[8])(expiresAt);
 };

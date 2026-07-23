@@ -1,9 +1,20 @@
-// Module ID: 3765
-// Function ID: 28855
+// Module ID: 3767
+// Function ID: 28860
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 3768, 1849, 653, 686, 566, 2]
 
-// Module 3765 (_isNativeReflectConstruct)
+// Module 3767 (_isNativeReflectConstruct)
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_8 from "_callSuper";
+import closure_9 from "_isNativeReflectConstruct";
+import { RelationshipTypes } from "ME";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +24,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -132,10 +143,10 @@ function removeRelationship(arg0) {
   }
 }
 function recountPending() {
-  const size2 = set.size;
-  const size3 = set2.size;
+  let size = set.size;
+  size = set2.size;
   const value = map1.get(RelationshipTypes.PENDING_INCOMING);
-  let size;
+  size = undefined;
   if (null != value) {
     size = value.size;
   }
@@ -143,46 +154,37 @@ function recountPending() {
   if (null != size) {
     num = size;
   }
-  let closure_21 = Math.max(num - size2 - size3, 0);
+  let closure_21 = Math.max(num - size - size, 0);
   closure_19 = closure_19 + 1;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-const RelationshipTypes = arg1(dependencyMap[8]).RelationshipTypes;
 const map = new Map();
 let closure_12 = {};
 let closure_13 = {};
 let closure_14 = {};
-const set = new Set();
+let set = new Set();
 const set1 = new Set();
 const set2 = new Set();
 let closure_18 = {};
-let closure_19 = 0;
+let c19 = 0;
 let closure_20 = {};
-let closure_21 = 0;
-let closure_22 = 0;
-let closure_23 = 0;
+let c21 = 0;
+let c22 = 0;
+let c23 = 0;
 let closure_24 = { friends: undefined, blocked: undefined, ignored: undefined, blockedOrIgnored: undefined };
 const map1 = new Map();
-let tmp7 = (Store) => {
+let tmp7 = ((Store) => {
   class RelationshipStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, RelationshipStore);
-      obj = closure_5(RelationshipStore);
-      tmp2 = closure_4;
-      if (closure_26()) {
+      tmp = outer1_2(this, RelationshipStore);
+      obj = outer1_5(RelationshipStore);
+      tmp2 = outer1_4;
+      if (outer1_26()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -191,21 +193,20 @@ let tmp7 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = RelationshipStore;
   callback2(RelationshipStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_9);
+      this.waitFor(outer1_9);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "isFriend",
     value(arg0) {
       let tmp = null != arg0;
       if (tmp) {
-        tmp = store.get(arg0) === constants.FRIEND;
+        tmp = outer1_11.get(arg0) === outer1_10.FRIEND;
       }
       return tmp;
     }
@@ -231,7 +232,7 @@ let tmp7 = (Store) => {
     value(arg0) {
       let tmp = null != arg0;
       if (tmp) {
-        tmp = store.get(arg0) === constants.BLOCKED;
+        tmp = outer1_11.get(arg0) === outer1_10.BLOCKED;
       }
       return tmp;
     }
@@ -241,12 +242,12 @@ let tmp7 = (Store) => {
     value(author) {
       const self = this;
       if (null != author.author) {
-        if (store.get(author.author.id) === constants.BLOCKED) {
+        if (outer1_11.get(author.author.id) === outer1_10.BLOCKED) {
           return true;
         }
       }
       const isBlocked = self.isBlocked;
-      if (author instanceof closure_8) {
+      if (author instanceof outer1_8) {
         const interactionMetadata = author.interactionMetadata;
         let id;
         if (null != interactionMetadata) {
@@ -279,9 +280,9 @@ let tmp7 = (Store) => {
     value(arg0) {
       let tmp = null != arg0;
       if (tmp) {
-        let hasItem = store.get(arg0) !== constants.BLOCKED;
+        let hasItem = outer1_11.get(arg0) !== outer1_10.BLOCKED;
         if (hasItem) {
-          hasItem = set2.has(arg0);
+          hasItem = outer1_16.has(arg0);
         }
         tmp = hasItem;
       }
@@ -298,7 +299,7 @@ let tmp7 = (Store) => {
         }
       }
       const isIgnored = self.isIgnored;
-      if (author instanceof closure_8) {
+      if (author instanceof outer1_8) {
         const interactionMetadata = author.interactionMetadata;
         let id;
         if (null != interactionMetadata) {
@@ -330,31 +331,31 @@ let tmp7 = (Store) => {
     key: "isUnfilteredPendingIncoming",
     value(arg0) {
       const self = this;
-      return store.get(arg0) === constants.PENDING_INCOMING && !self.isSpam(arg0) && !self.isIgnored(arg0);
+      return outer1_11.get(arg0) === outer1_10.PENDING_INCOMING && !self.isSpam(arg0) && !self.isIgnored(arg0);
     }
   };
   items[9] = {
     key: "getPendingCount",
     value() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[10] = {
     key: "getSpamCount",
     value() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[11] = {
     key: "getPendingIgnoredCount",
     value() {
-      return closure_23;
+      return outer1_23;
     }
   };
   items[12] = {
     key: "getOutgoingCount",
     value() {
-      const value = store2.get(constants.PENDING_OUTGOING);
+      const value = outer1_25.get(outer1_10.PENDING_OUTGOING);
       let size;
       if (null != value) {
         size = value.size;
@@ -369,7 +370,7 @@ let tmp7 = (Store) => {
   items[13] = {
     key: "getFriendCount",
     value() {
-      const value = store2.get(constants.FRIEND);
+      const value = outer1_25.get(outer1_10.FRIEND);
       let size;
       if (null != value) {
         size = value.size;
@@ -384,33 +385,33 @@ let tmp7 = (Store) => {
   items[14] = {
     key: "getRelationshipCount",
     value() {
-      return store.size;
+      return outer1_11.size;
     }
   };
   items[15] = {
     key: "getMutableRelationships",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[16] = {
     key: "getVersion",
     value() {
-      return closure_19;
+      return outer1_19;
     }
   };
   items[17] = {
     key: "isSpam",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_15.has(arg0);
     }
   };
   items[18] = {
     key: "getRelationshipType",
     value(arg0) {
-      let NONE = store.get(arg0);
+      let NONE = outer1_11.get(arg0);
       if (null == NONE) {
-        NONE = constants.NONE;
+        NONE = outer1_10.NONE;
       }
       return NONE;
     }
@@ -418,77 +419,77 @@ let tmp7 = (Store) => {
   items[19] = {
     key: "getNickname",
     value(arg0) {
-      return closure_12[arg0];
+      return outer1_12[arg0];
     }
   };
   items[20] = {
     key: "getSince",
     value(arg0) {
-      return closure_13[arg0];
+      return outer1_13[arg0];
     }
   };
   items[21] = {
     key: "getSinces",
     value() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[22] = {
     key: "getNote",
     value(arg0) {
-      return closure_14[arg0];
+      return outer1_14[arg0];
     }
   };
   items[23] = {
     key: "getFriendIDs",
     value() {
-      if (null == closure_24.friends) {
-        let items = store2.get(constants.FRIEND);
+      if (null == outer1_24.friends) {
+        let items = outer1_25.get(outer1_10.FRIEND);
         if (null == items) {
           items = [];
         }
-        closure_24.friends = Array.from(items);
-        const tmp = closure_24;
+        outer1_24.friends = Array.from(items);
+        const tmp = outer1_24;
       }
-      return closure_24.friends;
+      return outer1_24.friends;
     }
   };
   items[24] = {
     key: "getBlockedIDs",
     value() {
-      if (null == closure_24.blocked) {
-        let items = store2.get(constants.BLOCKED);
+      if (null == outer1_24.blocked) {
+        let items = outer1_25.get(outer1_10.BLOCKED);
         if (null == items) {
           items = [];
         }
-        closure_24.blocked = Array.from(items);
-        const tmp = closure_24;
+        outer1_24.blocked = Array.from(items);
+        const tmp = outer1_24;
       }
-      return closure_24.blocked;
+      return outer1_24.blocked;
     }
   };
   items[25] = {
     key: "getIgnoredIDs",
     value() {
-      const RelationshipStore = this;
-      if (null == closure_24.ignored) {
+      const self = this;
+      if (null == outer1_24.ignored) {
         const _Array = Array;
-        closure_24.ignored = Array.from(set2.values()).filter((arg0) => self.isIgnored(arg0));
-        const arr = Array.from(set2.values());
+        outer1_24.ignored = Array.from(outer1_16.values()).filter((arg0) => self.isIgnored(arg0));
+        const arr = Array.from(outer1_16.values());
       }
-      return closure_24.ignored;
+      return outer1_24.ignored;
     }
   };
   items[26] = {
     key: "getBlockedOrIgnoredIDs",
     value() {
       let done;
-      if (null == closure_24.blockedOrIgnored) {
+      if (null == outer1_24.blockedOrIgnored) {
         const _Set = Set;
-        const set = new Set(closure_16);
-        const value = store2.get(constants.BLOCKED);
+        const set = new Set(outer1_16);
+        const value = outer1_25.get(outer1_10.BLOCKED);
         if (null != value) {
-          const tmp2 = callback4(value);
+          const tmp2 = outer1_27(value);
           let iter = tmp2();
           if (!iter.done) {
             do {
@@ -500,34 +501,34 @@ let tmp7 = (Store) => {
           }
         }
         const _Array = Array;
-        closure_24.blockedOrIgnored = Array.from(set.values());
+        outer1_24.blockedOrIgnored = Array.from(set.values());
       }
-      return closure_24.blockedOrIgnored;
+      return outer1_24.blockedOrIgnored;
     }
   };
   items[27] = {
     key: "getOriginApplicationId",
     value(arg0) {
-      return closure_18[arg0];
+      return outer1_18[arg0];
     }
   };
   items[28] = {
     key: "isStranger",
     value(arg0) {
-      if (null != closure_20[arg0]) {
+      if (null != outer1_20[arg0]) {
         const _Date = Date;
-        if (closure_20[arg0].expiry < Date.now()) {
-          delete r0[r1];
+        if (outer1_20[arg0].expiry < Date.now()) {
+          delete tmp[tmp2];
         } else {
-          return closure_20[arg0].isStranger;
+          return outer1_20[arg0].isStranger;
         }
       }
     }
   };
   return callback(RelationshipStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp7.displayName = "RelationshipStore";
-tmp7 = new tmp7(importDefault(dependencyMap[9]), {
+tmp7 = new tmp7(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(relationships) {
     map.clear();
     map1.clear();
@@ -542,7 +543,7 @@ tmp7 = new tmp7(importDefault(dependencyMap[9]), {
     let closure_20 = {};
     relationships = relationships.relationships;
     const item = relationships.forEach((id) => {
-      callback(id.id, id.type);
+      outer1_30(id.id, id.type);
       if (null != id.nickname) {
         closure_12[id.id] = id.nickname;
       }
@@ -553,15 +554,15 @@ tmp7 = new tmp7(importDefault(dependencyMap[9]), {
         closure_14[id.id] = id.note;
       }
       if (id.is_spam_request) {
-        set.add(id.id);
+        outer1_15.add(id.id);
       }
       if (null != id.origin_application_id) {
         closure_18[id.id] = id.origin_application_id;
       }
       if (id.user_ignored) {
-        set2.add(id.id);
-        if (id.type === constants.PENDING_INCOMING) {
-          set3.add(id.id);
+        outer1_16.add(id.id);
+        if (id.type === outer1_10.PENDING_INCOMING) {
+          outer1_17.add(id.id);
         }
       }
     });
@@ -575,10 +576,10 @@ tmp7 = new tmp7(importDefault(dependencyMap[9]), {
     let iter = tmp3();
     if (!iter.done) {
       do {
-        let tmp4 = closure_7;
-        let tmp5 = closure_7(iter.value, 2);
-        let tmp6 = closure_30;
-        let tmp7 = closure_30(tmp5[0], tmp5[1]);
+        let tmp4 = callback3;
+        let tmp5 = callback3(iter.value, 2);
+        let tmp6 = upsertRelationship;
+        let tmp7 = upsertRelationship(tmp5[0], tmp5[1]);
         let iter2 = tmp3();
         iter = iter2;
         done = iter2.done;
@@ -591,27 +592,23 @@ tmp7 = new tmp7(importDefault(dependencyMap[9]), {
     upsertRelationship(relationship.relationship.id, relationship.relationship.type);
     if (null != relationship.relationship.nickname) {
       let obj = {};
-      const merged = Object.assign(closure_12);
+      const merged = Object.assign(obj);
       obj[relationship.relationship.id] = relationship.relationship.nickname;
-      closure_12 = obj;
     }
     if (null != relationship.relationship.since) {
       obj = {};
-      const merged1 = Object.assign(closure_13);
+      const merged1 = Object.assign(obj);
       obj[relationship.relationship.id] = relationship.relationship.since;
-      closure_13 = obj;
     }
     if (null != relationship.relationship.note) {
       obj = {};
-      const merged2 = Object.assign(closure_14);
+      const merged2 = Object.assign(obj);
       obj[relationship.relationship.id] = relationship.relationship.note;
-      closure_14 = obj;
     }
     if (null != relationship.relationship.originApplicationId) {
       const obj1 = {};
-      const merged3 = Object.assign(closure_18);
+      const merged3 = Object.assign(obj1);
       obj1[relationship.relationship.id] = relationship.relationship.originApplicationId;
-      closure_18 = obj1;
     }
     if (relationship.relationship.isSpamRequest) {
       obj5.add(relationship.relationship.id);
@@ -636,39 +633,35 @@ tmp7 = new tmp7(importDefault(dependencyMap[9]), {
     }
     if (tmp28) {
       const obj2 = { type: "FRIEND_REQUEST_ACCEPTED", user: relationship.relationship.user };
-      importDefault(dependencyMap[9]).dispatch(obj2);
-      const obj7 = importDefault(dependencyMap[9]);
+      importDefault(686).dispatch(obj2);
+      const obj7 = importDefault(686);
     }
   },
   RELATIONSHIP_REMOVE: function handleRelationshipRemove(relationship) {
     removeRelationship(relationship.relationship.id);
-    if (null != closure_12[relationship.relationship.id]) {
-      let obj = {};
-      const merged = Object.assign(closure_12);
-      closure_12 = obj;
+    if (null != obj[relationship.relationship.id]) {
+      obj = {};
+      const merged = Object.assign(obj);
       const id = relationship.relationship.id;
-      delete r5[r3];
+      delete tmp3[tmp];
     }
-    if (null != closure_13[relationship.relationship.id]) {
+    if (null != obj[relationship.relationship.id]) {
       obj = {};
-      const merged1 = Object.assign(closure_13);
-      closure_13 = obj;
+      const merged1 = Object.assign(obj);
       const id2 = relationship.relationship.id;
-      delete r5[r3];
+      delete tmp3[tmp];
     }
-    if (null != closure_14[relationship.relationship.id]) {
+    if (null != obj[relationship.relationship.id]) {
       obj = {};
-      const merged2 = Object.assign(closure_14);
-      closure_14 = obj;
+      const merged2 = Object.assign(obj);
       const id3 = relationship.relationship.id;
-      delete r5[r3];
+      delete tmp3[tmp];
     }
-    if (null != closure_18[relationship.relationship.id]) {
-      const obj1 = {};
-      const merged3 = Object.assign(closure_18);
-      closure_18 = obj1;
+    if (null != obj1[relationship.relationship.id]) {
+      obj1 = {};
+      const merged3 = Object.assign(obj1);
       const id4 = relationship.relationship.id;
-      delete r4[r3];
+      delete tmp2[tmp];
     }
     if (!relationship.relationship.userIgnored) {
       set1.delete(relationship.relationship.id);
@@ -682,19 +675,19 @@ tmp7 = new tmp7(importDefault(dependencyMap[9]), {
     upsertRelationship(relationship.id, relationship.type);
     if (null == relationship.since) {
       const id = relationship.id;
-      delete r5[r3];
+      delete tmp3[tmp];
     } else {
       closure_13[relationship.id] = relationship.since;
     }
     if (null == relationship.nickname) {
       const id2 = relationship.id;
-      delete r5[r3];
+      delete tmp3[tmp];
     } else {
       closure_12[relationship.id] = relationship.nickname;
     }
     if (null == relationship.note) {
       const id3 = relationship.id;
-      delete r5[r3];
+      delete tmp3[tmp];
     } else {
       closure_14[relationship.id] = relationship.note;
     }
@@ -703,13 +696,13 @@ tmp7 = new tmp7(importDefault(dependencyMap[9]), {
     } else {
       obj.delete(relationship.id);
     }
-    if (null != closure_20[relationship.id]) {
+    if (null != table[relationship.id]) {
       const id4 = relationship.id;
-      delete r5[r3];
+      delete tmp3[tmp];
     }
     if (null == relationship.originApplicationId) {
       const id5 = relationship.id;
-      delete r4[r3];
+      delete tmp2[tmp];
     } else {
       closure_18[relationship.id] = relationship.originApplicationId;
     }
@@ -726,24 +719,24 @@ tmp7 = new tmp7(importDefault(dependencyMap[9]), {
   },
   RELATIONSHIP_PENDING_INCOMING_REMOVED: function handlePendingIncomingRemoved() {
     let iter2;
-    const tmp = _createForOfIteratorHelperLoose(map.keys());
-    let iter = tmp();
+    const tmp3 = _createForOfIteratorHelperLoose(map.keys());
+    let iter = tmp3();
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp2 = closure_11;
-        let tmp3 = closure_10;
-        if (closure_11.get(value) === closure_10.PENDING_INCOMING) {
-          let tmp4 = closure_31;
-          let tmp5 = closure_31(value);
-          let tmp6 = closure_15;
-          let deleteResult = closure_15.delete(value);
-          let tmp8 = closure_17;
-          let deleteResult1 = closure_17.delete(value);
-          let tmp10 = closure_20;
-          delete r2[r5];
+        let tmp4 = map;
+        let tmp5 = RelationshipTypes;
+        if (map.get(value) === RelationshipTypes.PENDING_INCOMING) {
+          let tmp6 = removeRelationship;
+          let tmp7 = removeRelationship(value);
+          let tmp8 = set;
+          let deleteResult = set.delete(value);
+          let tmp10 = set2;
+          let deleteResult1 = set2.delete(value);
+          let tmp12 = closure_20;
+          delete tmp[tmp2];
         }
-        iter2 = tmp();
+        iter2 = tmp3();
         iter = iter2;
       } while (!iter2.done);
     }
@@ -753,6 +746,6 @@ tmp7 = new tmp7(importDefault(dependencyMap[9]), {
     closure_20[isStranger.userId] = { expiry: Date.now() + 300000, isStranger: isStranger.isStranger };
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("stores/RelationshipStore.tsx");
+let result = set.fileFinishedImporting("stores/RelationshipStore.tsx");
 
 export default tmp7;

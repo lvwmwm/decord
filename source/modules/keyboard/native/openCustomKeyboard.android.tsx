@@ -1,20 +1,22 @@
-// Module ID: 11143
-// Function ID: 86666
+// Module ID: 11153
+// Function ID: 86716
 // Name: openCustomKeyboard
-// Dependencies: []
+// Dependencies: [1454, 5584, 3997, 11114, 2]
 // Exports: default
 
-// Module 11143 (openCustomKeyboard)
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");
+// Module 11153 (openCustomKeyboard)
+const result = require("closePortalKeyboard").fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");
 
 export default function openCustomKeyboard(secondaryTextFieldRef) {
+  let dependencyMap;
+  let importDefault;
   let keyboardParams;
-  ({ channelId: closure_0, chatInputRef: closure_1, chatInputNativeRef: closure_2, keyboardParams } = secondaryTextFieldRef);
+  let require;
+  ({ channelId: require, chatInputRef: importDefault, chatInputNativeRef: dependencyMap, keyboardParams } = secondaryTextFieldRef);
   secondaryTextFieldRef = secondaryTextFieldRef.secondaryTextFieldRef;
-  require(dependencyMap[0]).setKeyboardType(keyboardParams);
-  const obj = require(dependencyMap[0]);
-  require(dependencyMap[1]).runAfterInteractions(() => {
+  require(1454) /* _createForOfIteratorHelperLoose */.setKeyboardType(keyboardParams);
+  let obj = require(1454) /* _createForOfIteratorHelperLoose */;
+  require(5584) /* runAfterInteractions */.runAfterInteractions(() => {
     const current = ref.current;
     current.blur();
     let tmp2 = null == secondaryTextFieldRef;
@@ -26,8 +28,8 @@ export default function openCustomKeyboard(secondaryTextFieldRef) {
     if (!tmp2) {
       obj.blur();
     }
-    callback(ref2[2]).openPortalKeyboard(keyboardParams.type, callback, ref);
-    const obj2 = callback(ref2[2]);
-    ref(ref2[3]).openCustomKeyboard(ref2.current);
+    outer1_0(outer1_2[2]).openPortalKeyboard(keyboardParams.type, closure_0, ref);
+    const obj2 = outer1_0(outer1_2[2]);
+    outer1_1(outer1_2[3]).openCustomKeyboard(ref2.current);
   });
 };

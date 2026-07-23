@@ -1,10 +1,15 @@
 // Module ID: 498
 // Function ID: 6431
 // Name: v35
-// Dependencies: []
+// Dependencies: [499, 494]
 
 // Module 498 (v35)
+const require = arg1;
+const module = arg2;
+const dependencyMap = arg6;
 arg5.default = function v35(name) {
+  let closure_0 = arg1;
+  let closure_1 = arg2;
   function generateUUID(arg0, arg1, arg2, arg3) {
     let num = arg3;
     let arr = arg0;
@@ -20,13 +25,13 @@ arg5.default = function v35(name) {
           arr = items.push(unescapeResult.charCodeAt(num2));
           num2 = num2 + 1;
           arr = items;
-          let length = unescapeResult.length;
+          length = unescapeResult.length;
         } while (num2 < length);
       }
     }
     let arr4 = arg1;
     if ("string" === typeof arg1) {
-      arr4 = arg2(closure_2[0])(arg1);
+      arr4 = callback2(outer1_2[0])(arg1);
     }
     length = undefined;
     if (null !== arr4) {
@@ -42,8 +47,8 @@ arg5.default = function v35(name) {
       const uint8Array = new Uint8Array(16 + arr.length);
       const result = uint8Array.set(arr4);
       const result1 = uint8Array.set(arr, arr4.length);
-      const tmp16 = arg2(uint8Array);
-      tmp16[6] = 15 & tmp16[6] | arg1;
+      const tmp16 = callback2(uint8Array);
+      tmp16[6] = 15 & tmp16[6] | callback;
       tmp16[8] = 63 & tmp16[8] | 128;
       if (arg2) {
         if (!num) {
@@ -56,7 +61,7 @@ arg5.default = function v35(name) {
         } while (num5 < 16);
         return arg2;
       } else {
-        return arg1(closure_2[1]).unsafeStringify(tmp16);
+        return callback(outer1_2[1]).unsafeStringify(tmp16);
       }
     }
   }

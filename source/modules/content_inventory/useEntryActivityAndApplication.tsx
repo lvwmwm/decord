@@ -1,20 +1,22 @@
-// Module ID: 11908
-// Function ID: 92197
+// Module ID: 11920
+// Function ID: 92250
 // Name: useEntryActivityAndApplication
-// Dependencies: []
+// Dependencies: [57, 1347, 11921, 566, 5470, 2]
 // Exports: default
 
-// Module 11908 (useEntryActivityAndApplication)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/content_inventory/useEntryActivityAndApplication.tsx");
+// Module 11920 (useEntryActivityAndApplication)
+import _slicedToArray from "_slicedToArray";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/content_inventory/useEntryActivityAndApplication.tsx");
 
 export default function useEntryActivityAndApplication(extra) {
-  const arg1 = extra;
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => matchingActivity.getMatchingActivity(arg0));
+  const _require = extra;
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getMatchingActivity(closure_0));
   let application_id;
   if (null != stateFromStores) {
     application_id = stateFromStores.application_id;
@@ -25,18 +27,17 @@ export default function useEntryActivityAndApplication(extra) {
     application_id1 = extra.extra.application_id;
   }
   items1[1] = application_id1;
-  const tmp5 = callback(importDefault(dependencyMap[4])(items1), 2);
-  const first = tmp5[0];
-  const importDefault = first;
+  const tmp5 = callback(first(5470)(items1), 2);
+  first = tmp5[0];
   obj = { activity: stateFromStores };
-  const tmp2 = importDefault(dependencyMap[4]);
-  const items2 = [closure_4];
-  obj.embeddedActivity = arg1(dependencyMap[3]).useStateFromStores(items2, () => {
+  const tmp2 = first(5470);
+  const items2 = [_createForOfIteratorHelperLoose];
+  obj.embeddedActivity = _require(566).useStateFromStores(items2, () => {
     let id;
     if (null != first) {
       id = first.id;
     }
-    return embeddedActivityForUserId.getEmbeddedActivityForUserId(arg0.author_id, id);
+    return outer1_4.getEmbeddedActivityForUserId(extra.author_id, id);
   });
   let tmp8 = tmp7;
   if (null != first) {

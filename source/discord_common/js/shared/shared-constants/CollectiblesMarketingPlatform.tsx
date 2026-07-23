@@ -1,10 +1,9 @@
-// Module ID: 6822
-// Function ID: 53786
+// Module ID: 6827
+// Function ID: 53818
 // Name: CollectiblesMarketingPlatform
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6822 (CollectiblesMarketingPlatform)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingPlatform.tsx");
+// Module 6827 (CollectiblesMarketingPlatform)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingPlatform.tsx");
 
 export const CollectiblesMarketingPlatform = { DESKTOP: 0, [0]: "DESKTOP", MOBILE: 1, [1]: "MOBILE" };

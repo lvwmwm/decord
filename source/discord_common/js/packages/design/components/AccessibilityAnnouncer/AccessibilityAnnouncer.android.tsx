@@ -1,18 +1,18 @@
-// Module ID: 3841
-// Function ID: 32015
+// Module ID: 3843
+// Function ID: 32020
 // Name: AccessibilityAnnouncer
-// Dependencies: []
+// Dependencies: [27, 3844, 2]
 
-// Module 3841 (AccessibilityAnnouncer)
-const AccessibilityInfo = require(dependencyMap[0]).AccessibilityInfo;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncer.android.tsx");
+// Module 3843 (AccessibilityAnnouncer)
+import { AccessibilityInfo } from "get ActivityIndicator";
+
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncer.android.tsx");
 
 export const AccessibilityAnnouncer = {
   announce(intl, polite) {
     if ("polite" === polite) {
-      const result = require(dependencyMap[1]).updateAccessibilityAnnouncerLiveRegionMessage(intl);
-      const obj = require(dependencyMap[1]);
+      const result = require(3844) /* updateAccessibilityAnnouncerLiveRegionMessage */.updateAccessibilityAnnouncerLiveRegionMessage(intl);
+      const obj = require(3844) /* updateAccessibilityAnnouncerLiveRegionMessage */;
     } else {
       const result1 = AccessibilityInfo.announceForAccessibility(intl);
     }

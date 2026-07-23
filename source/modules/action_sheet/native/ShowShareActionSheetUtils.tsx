@@ -1,19 +1,19 @@
-// Module ID: 8328
-// Function ID: 66018
+// Module ID: 8334
+// Function ID: 66055
 // Name: resolveShareFileExtension
-// Dependencies: []
+// Dependencies: [653, 675, 8335, 5145, 2]
 // Exports: getMediaShareParams, trackAppClickInNativeShareSheet
 
-// Module 8328 (resolveShareFileExtension)
+// Module 8334 (resolveShareFileExtension)
+import { AnalyticEvents } from "ME";
+
 function resolveShareFileExtension(uri, contentType) {
-  return require(dependencyMap[3]).decideFileExtension(uri, contentType, true);
+  return require(5145) /* decideFileExtension */.decideFileExtension(uri, contentType, true);
 }
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
+const result = require("apexExperiment").fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
 
 export const trackAppClickInNativeShareSheet = function trackAppClickInNativeShareSheet(app, _location) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = {};
   let str = "";
   if (null != app) {
@@ -26,7 +26,7 @@ export const trackAppClickInNativeShareSheet = function trackAppClickInNativeSha
 export const getMediaShareParams = function getMediaShareParams(source) {
   let contentType;
   let videoURI;
-  let obj = require(dependencyMap[2]);
+  let obj = require(8335) /* apexExperiment */;
   if (obj.getMobileMediaViewerShareExperimentEnabled("shareMediaSource")) {
     if (true !== source.disableDownload) {
       if (true === source.isGIFV) {

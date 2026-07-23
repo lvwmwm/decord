@@ -1,37 +1,38 @@
-// Module ID: 4306
-// Function ID: 37714
+// Module ID: 4310
+// Function ID: 37746
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 4306 (_isNativeReflectConstruct)
+// Module 4310 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class PopoutWindowStore {
     constructor() {
       self = this;
       tmp = PopoutWindowStore(this, PopoutWindowStore);
-      obj = closure_3(PopoutWindowStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(PopoutWindowStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,7 +41,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = PopoutWindowStore;
   callback2(PopoutWindowStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -49,6 +49,7 @@ let tmp2 = (PersistedStore) => {
       if (null == arg0) {
         obj = {};
       }
+      const outer1_5 = obj;
     }
   };
   const items = [obj, , , , , , , , , , , ];
@@ -99,7 +100,7 @@ let tmp2 = (PersistedStore) => {
   items[8] = {
     key: "getState",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   items[9] = {
@@ -121,10 +122,10 @@ let tmp2 = (PersistedStore) => {
     }
   };
   return callback(PopoutWindowStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "PopoutWindowStore";
 tmp2.persistKey = "PopoutWindowStoreIOS";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {});
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/popout-window/PopoutWindowStore.native.tsx");
+tmp2 = new tmp2(require("dispatcher"), {});
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/popout-window/PopoutWindowStore.native.tsx");
 
 export default tmp2;

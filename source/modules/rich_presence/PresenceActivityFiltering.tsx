@@ -1,17 +1,20 @@
-// Module ID: 10438
-// Function ID: 80577
+// Module ID: 10448
+// Function ID: 80627
 // Name: doesGameHaveRichPresence
-// Dependencies: []
+// Dependencies: [4167, 1881, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 10438 (doesGameHaveRichPresence)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/rich_presence/PresenceActivityFiltering.tsx");
+// Module 10448 (doesGameHaveRichPresence)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/rich_presence/PresenceActivityFiltering.tsx");
 
 export const doesGameHaveRichPresence = function doesGameHaveRichPresence(id, items2) {
+  let closure_0 = items2;
   if (null !== id.id) {
     if (undefined !== id.id) {
-      const application = application.getApplication(id.id);
+      application = application.getApplication(id.id);
       let tmp3 = null != application && null != application.linkedGames;
       if (tmp3) {
         tmp3 = application.linkedGames.length > 0;
@@ -19,11 +22,12 @@ export const doesGameHaveRichPresence = function doesGameHaveRichPresence(id, it
       if (tmp3) {
         const linkedGames = application.linkedGames;
         tmp3 = undefined !== linkedGames.find((type) => {
-          let tmp = type.type === arg1(closure_1[1]).GameLinkTypes.LINKED;
+          let tmp = type.type === items2(outer1_1[1]).GameLinkTypes.LINKED;
           if (tmp) {
-            tmp = function hasRichPresenceForGame(id, arr) {
-              return null != arr.find((application_id) => application_id.application_id === application_id);
-            }(type.id, arg1);
+            tmp = (function hasRichPresenceForGame(id, closure_0) {
+              closure_0 = id;
+              return null != closure_0.find((application_id) => application_id.application_id === closure_0);
+            })(type.id, items2);
           }
           return tmp;
         });

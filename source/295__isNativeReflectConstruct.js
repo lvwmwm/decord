@@ -1,9 +1,16 @@
 // Module ID: 295
 // Function ID: 4515
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 296, 298, 38, 44]
 
 // Module 295 (_isNativeReflectConstruct)
+import getConstants from "getConstants";
+import closure_4 from "getConstants";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importDefaultResult from "getConstants";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -43,16 +50,11 @@ function createStackEntry(animated) {
   obj.networkActivityIndicatorVisible = animated.networkActivityIndicatorVisible;
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const tmp2 = (Component) => {
+let tmp2 = ((Component) => {
   class StatusBar {
     constructor() {
       self = this;
-      tmp = closure_3(this, StatusBar);
+      tmp = outer1_3(this, StatusBar);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -60,14 +62,14 @@ const tmp2 = (Component) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_6(StatusBar);
-      tmp3 = closure_5;
-      if (closure_8()) {
+      obj = outer1_6(StatusBar);
+      tmp3 = outer1_5;
+      if (outer1_8()) {
         if (!combined) {
           combined = [];
         }
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, combined, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, combined, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
@@ -76,7 +78,6 @@ const tmp2 = (Component) => {
       return tmp3Result;
     }
   }
-  const importDefault = StatusBar;
   callback2(StatusBar, Component);
   let obj = {
     key: "componentDidMount",
@@ -84,7 +85,7 @@ const tmp2 = (Component) => {
       this._stackEntry = StatusBar.pushStackEntry(this.props);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
@@ -115,14 +116,14 @@ const tmp2 = (Component) => {
       key: "setHidden",
       value: function setHidden(value) {
         StatusBar._defaultProps.hidden.value = value;
-        StatusBar(closure_1[6]).setHidden(value);
+        StatusBar(outer1_1[6]).setHidden(value);
       }
     },
     {
       key: "setBarStyle",
       value: function setBarStyle(barStyle) {
         StatusBar._defaultProps.barStyle.value = barStyle;
-        StatusBar(closure_1[6]).setStyle(barStyle);
+        StatusBar(outer1_1[6]).setStyle(barStyle);
       }
     },
     {
@@ -139,11 +140,11 @@ const tmp2 = (Component) => {
           flag = false;
         }
         StatusBar._defaultProps.backgroundColor.value = value;
-        const tmp = StatusBar(closure_1[8])(value);
+        const tmp = StatusBar(outer1_1[8])(value);
         if (null != tmp) {
-          StatusBar(closure_1[9])("number" === typeof tmp, "Unexpected color given for StatusBar.setBackgroundColor");
-          StatusBar(closure_1[6]).setColor(tmp, flag);
-          const obj = StatusBar(closure_1[6]);
+          StatusBar(outer1_1[9])("number" === typeof tmp, "Unexpected color given for StatusBar.setBackgroundColor");
+          StatusBar(outer1_1[6]).setColor(tmp, flag);
+          const obj = StatusBar(outer1_1[6]);
         } else {
           const _console = console;
           const _String = String;
@@ -156,13 +157,13 @@ const tmp2 = (Component) => {
       key: "setTranslucent",
       value: function setTranslucent(translucent) {
         StatusBar._defaultProps.translucent = translucent;
-        StatusBar(closure_1[6]).setTranslucent(translucent);
+        StatusBar(outer1_1[6]).setTranslucent(translucent);
       }
     },
     {
       key: "pushStackEntry",
       value: function pushStackEntry(props) {
-        const tmp = callback4(props);
+        const tmp = outer1_9(props);
         const _propsStack = StatusBar._propsStack;
         _propsStack.push(tmp);
         StatusBar._updatePropsStack();
@@ -184,7 +185,7 @@ const tmp2 = (Component) => {
     {
       key: "replaceStackEntry",
       value: function replaceStackEntry(_stackEntry, props) {
-        const tmp = callback4(props);
+        const tmp = outer1_9(props);
         const _propsStack = StatusBar._propsStack;
         const index = _propsStack.indexOf(_stackEntry);
         if (-1 !== index) {
@@ -196,10 +197,11 @@ const tmp2 = (Component) => {
     }
   ];
   return callback(StatusBar, items, items1);
-}(importAll(dependencyMap[5]).Component);
+})(require("result").Component);
+let closure_2 = tmp2;
 tmp2._propsStack = [];
-const obj = {};
-const DEFAULT_BACKGROUND_COLOR = importDefault(dependencyMap[6]).getConstants().DEFAULT_BACKGROUND_COLOR;
+let obj = { backgroundColor: null, barStyle: "default", translucent: false, hidden: false, networkActivityIndicatorVisible: false };
+const DEFAULT_BACKGROUND_COLOR = require("getConstants").getConstants().DEFAULT_BACKGROUND_COLOR;
 let str = "black";
 if (null != DEFAULT_BACKGROUND_COLOR) {
   str = DEFAULT_BACKGROUND_COLOR;
@@ -208,13 +210,12 @@ obj.backgroundColor = str;
 tmp2._defaultProps = createStackEntry(obj);
 tmp2._updateImmediate = null;
 tmp2._currentValues = null;
-const importDefaultResult = importDefault(dependencyMap[6]);
-tmp2.currentHeight = importDefault(dependencyMap[6]).getConstants().HEIGHT;
+tmp2.currentHeight = require("getConstants").getConstants().HEIGHT;
 tmp2._updatePropsStack = () => {
   clearImmediate(tmp2._updateImmediate);
   tmp2._updateImmediate = setImmediate(() => {
-    const _currentValues = closure_2._currentValues;
-    const tmp = function mergePropsStack(_propsStack, _defaultProps) {
+    const _currentValues = outer1_2._currentValues;
+    let tmp = (function mergePropsStack(_propsStack, _defaultProps) {
       return _propsStack.reduce((arg0, obj) => {
         for (const key10005 in arg1) {
           let tmp = key10005;
@@ -222,23 +223,23 @@ tmp2._updatePropsStack = () => {
             continue;
           } else {
             arg0[key10005] = arg1[key10005];
-            // continue
+            continue;
           }
           continue;
         }
         return arg0;
       }, Object.assign({}, _defaultProps));
-    }(closure_2._propsStack, closure_2._defaultProps);
-    callback(closure_1[6]).setStyle(tmp.barStyle.value);
-    const tmp3 = callback(closure_1[8])(tmp.backgroundColor.value);
+    })(outer1_2._propsStack, outer1_2._defaultProps);
+    outer1_0(outer1_1[6]).setStyle(tmp.barStyle.value);
+    const tmp3 = outer1_0(outer1_1[8])(tmp.backgroundColor.value);
     if (null == tmp3) {
       const _console = console;
       const _HermesInternal = HermesInternal;
       console.warn("`StatusBar._updatePropsStack`: Color " + tmp.backgroundColor.value + " parsed to null or undefined");
     } else {
-      callback(closure_1[9])("number" === typeof tmp3, "Unexpected color given in StatusBar._updatePropsStack");
-      callback(closure_1[6]).setColor(tmp3, tmp.backgroundColor.animated);
-      const obj2 = callback(closure_1[6]);
+      outer1_0(outer1_1[9])("number" === typeof tmp3, "Unexpected color given in StatusBar._updatePropsStack");
+      outer1_0(outer1_1[6]).setColor(tmp3, tmp.backgroundColor.animated);
+      const obj2 = outer1_0(outer1_1[6]);
     }
     let tmp10 = _currentValues;
     if (_currentValues) {
@@ -249,8 +250,8 @@ tmp2._updatePropsStack = () => {
       tmp10 = value === tmp.hidden.value;
     }
     if (!tmp10) {
-      callback(closure_1[6]).setHidden(tmp.hidden.value);
-      const obj3 = callback(closure_1[6]);
+      outer1_0(outer1_1[6]).setHidden(tmp.hidden.value);
+      const obj3 = outer1_0(outer1_1[6]);
     }
     let tmp15 = _currentValues;
     if (_currentValues) {
@@ -260,10 +261,10 @@ tmp2._updatePropsStack = () => {
       tmp15 = !tmp.translucent;
     }
     if (!tmp15) {
-      callback(closure_1[6]).setTranslucent(tmp.translucent);
-      const obj4 = callback(closure_1[6]);
+      outer1_0(outer1_1[6]).setTranslucent(tmp.translucent);
+      const obj4 = outer1_0(outer1_1[6]);
     }
-    closure_2._currentValues = tmp;
+    outer1_2._currentValues = tmp;
   });
 };
 

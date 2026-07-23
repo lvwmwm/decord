@@ -1,10 +1,10 @@
-// Module ID: 4692
-// Function ID: 40874
+// Module ID: 4695
+// Function ID: 40892
 // Name: isPhotoKitAsset
-// Dependencies: []
+// Dependencies: [477, 4696, 2]
 // Exports: shouldConvertToJPG, shouldForceConvertToJPG
 
-// Module 4692 (isPhotoKitAsset)
+// Module 4695 (isPhotoKitAsset)
 function isPhotoKitAsset(uri, filename) {
   let tmp = null != uri.match(/^ph:\/\//i);
   if (tmp) {
@@ -24,13 +24,12 @@ function isHeicUTI(str) {
     return hasItem;
   }
 }
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/media_uploads/native/ImageConversionDecision.tsx");
+const result = require("set").fileFinishedImporting("modules/media_uploads/native/ImageConversionDecision.tsx");
 
 export { isPhotoKitAsset };
 export { isHeicUTI };
 export const shouldForceConvertToJPG = function shouldForceConvertToJPG(uri, filename, arg2) {
-  const tmp = !require(dependencyMap[0]).isIOS();
+  const tmp = !require(477) /* set */.isIOS();
   let tmp2 = !tmp;
   if (!tmp) {
     const tmp5 = !isHeicUTI(arg2);
@@ -81,15 +80,15 @@ export const shouldConvertToJPG = function shouldConvertToJPG(uri, filename, isL
             if (obj2.isExtensionAnimated(formatted)) {
               return false;
             } else {
-              const supportedExtensions = importDefault(dependencyMap[1]).getSupportedExtensions();
+              const supportedExtensions = importDefault(4696).getSupportedExtensions();
               if (null !== supportedExtensions) {
                 if (supportedExtensions.has(formatted)) {
                   return true;
                 }
               }
-              const obj3 = importDefault(dependencyMap[1]);
+              const obj3 = importDefault(4696);
             }
-            const obj2 = importDefault(dependencyMap[1]);
+            obj2 = importDefault(4696);
           }
           return false;
         }
@@ -118,5 +117,5 @@ export const shouldConvertToJPG = function shouldConvertToJPG(uri, filename, isL
   } else {
     return false;
   }
-  const obj = require(dependencyMap[0]);
+  obj = require(477) /* set */;
 };

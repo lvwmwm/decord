@@ -1,56 +1,55 @@
-// Module ID: 15483
-// Function ID: 118102
+// Module ID: 15600
+// Function ID: 120276
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 15483 (_createForOfIteratorHelperLoose)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 15600 (_createForOfIteratorHelperLoose)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let _classCallCheck = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -61,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _classCallCheck = tmp;
     }
-    let module_511 = 0;
+    let c1 = 0;
     return () => {
-      if (module_511 >= tmp.length) {
+      if (_defineProperties >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        module_511 = tmp3 + 1;
-        obj.value = tmp[+module_511];
+        _defineProperties = tmp3 + 1;
+        obj.value = length[+_defineProperties];
       }
       return obj;
     };
@@ -87,20 +86,18 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const result = items.fileFinishedImporting("lib/ModalRegistry.tsx");
-
-export default () => {
+let tmp2 = (() => {
   class ModalRegistry {
     constructor(arg0) {
       tmp = ModalRegistry(this, ModalRegistry);
       this.modals = arg0;
       set = new Set();
-      tmp2 = closure_2(arg0);
+      tmp2 = outer1_2(arg0);
       iter = tmp2();
       if (!iter.done) {
         do {
-          tmp3 = closure_2;
-          tmp4 = closure_2(iter.value.stores);
+          tmp3 = outer1_2;
+          tmp4 = outer1_2(iter.value.stores);
           iter2 = tmp4();
           if (!iter2.done) {
             do {
@@ -118,7 +115,6 @@ export default () => {
       return;
     }
   }
-  let closure_0 = ModalRegistry;
   let obj = {
     key: "getStores",
     value() {
@@ -134,19 +130,21 @@ export default () => {
       if (-1 === findIndexResult) {
         return null;
       } else {
-        const obj3 = this.modals[findIndexResult];
         let props;
-        if (null != obj3.getProps) {
+        if (null != this.modals[findIndexResult].getProps) {
           props = obj3.getProps();
         }
         if (null == props) {
           props = {};
         }
-        const obj = { key: findIndexResult, component: obj3.getComponent(), props, closable: null == obj3.closable || obj3.closable, backdropInstant: null != obj3.backdropInstant && obj3.backdropInstant, backdropStyle: obj3.backdropStyle, disableAnimation: null != obj3.disableAnimation && obj3.disableAnimation };
+        const obj = { key: findIndexResult, component: this.modals[findIndexResult].getComponent(), props, closable: null == this.modals[findIndexResult].closable || this.modals[findIndexResult].closable, backdropInstant: null != this.modals[findIndexResult].backdropInstant && this.modals[findIndexResult].backdropInstant, backdropStyle: this.modals[findIndexResult].backdropStyle, disableAnimation: null != this.modals[findIndexResult].disableAnimation && this.modals[findIndexResult].disableAnimation };
         return obj;
       }
     }
   };
   items[1] = obj;
   return callback(ModalRegistry, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("lib/ModalRegistry.tsx");
+
+export default tmp2;

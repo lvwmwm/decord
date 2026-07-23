@@ -1,165 +1,169 @@
-// Module ID: 11495
-// Function ID: 89532
+// Module ID: 11505
+// Function ID: 89582
 // Name: useGuildChannelCreated
-// Dependencies: []
+// Dependencies: [31, 1194, 1348, 1907, 4051, 1838, 11506, 4349, 3758, 653, 566, 8363, 21, 22, 5651, 2]
 // Exports: useCompletedStates, usePermissions
 
-// Module 11495 (useGuildChannelCreated)
+// Module 11505 (useGuildChannelCreated)
+import result from "result";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_14;
+let closure_15;
+let closure_6;
+let closure_7;
+const require = arg1;
 function useGuildChannelCreated(guild) {
-  const arg1 = guild;
+  const _require = guild;
   const items = [closure_8];
   const items1 = [guild];
-  return arg1(dependencyMap[10]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     function hasNewChannel(channel) {
-      let tmp = null != id;
+      let tmp = null != outer1_0;
       if (tmp) {
-        const obj = callback(closure_2[12]);
-        const extractTimestampResult = callback(closure_2[12]).extractTimestamp(channel.channel.id);
-        tmp = extractTimestampResult - callback(closure_2[12]).extractTimestamp(id.id) > 500;
-        const obj2 = callback(closure_2[12]);
+        const obj = outer2_1(outer2_2[12]);
+        const extractTimestampResult = outer2_1(outer2_2[12]).extractTimestamp(channel.channel.id);
+        tmp = extractTimestampResult - outer2_1(outer2_2[12]).extractTimestamp(outer1_0.id) > 500;
+        const obj2 = outer2_1(outer2_2[12]);
       }
       return tmp;
     }
     let id;
-    if (null != arg0) {
-      id = arg0.id;
+    if (null != guild) {
+      id = guild.id;
     }
-    const channels = channels.getChannels(id);
-    return channels[closure_6].some(hasNewChannel) || channels[closure_7].some(hasNewChannel);
+    const channels = outer1_8.getChannels(id);
+    return channels[outer1_6].some(hasNewChannel) || channels[outer1_7].some(hasNewChannel);
   }, items1);
 }
 function useGuildPopulated(guild) {
-  const arg1 = guild;
+  const _require = guild;
   const items = [closure_5];
-  let closure_1 = arg1(dependencyMap[10]).useStateFromStores(items, () => {
+  let closure_1 = _require(stateFromStoresArray[10]).useStateFromStores(items, () => {
     let systemChannelId;
-    if (null != arg0) {
-      systemChannelId = arg0.systemChannelId;
+    if (null != guild) {
+      systemChannelId = guild.systemChannelId;
     }
-    return channel.getChannel(systemChannelId);
+    return outer1_5.getChannel(systemChannelId);
   });
-  const obj = arg1(dependencyMap[10]);
+  const obj = _require(stateFromStoresArray[10]);
   const items1 = [closure_12];
-  const stateFromStoresArray = arg1(dependencyMap[10]).useStateFromStoresArray(items1, () => {
+  stateFromStoresArray = _require(stateFromStoresArray[10]).useStateFromStoresArray(items1, () => {
     if (null != id) {
-      const messages = messages.getMessages(id.id);
+      const messages = outer1_12.getMessages(id.id);
       let toArrayResult = messages.toArray();
     } else {
       toArrayResult = [];
     }
     return toArrayResult;
   });
-  const dependencyMap = stateFromStoresArray;
-  const obj2 = arg1(dependencyMap[10]);
+  const obj2 = _require(stateFromStoresArray[10]);
   const items2 = [closure_9];
   const items3 = [guild, stateFromStoresArray];
-  return arg1(dependencyMap[10]).useStateFromStores(items2, () => {
+  return _require(stateFromStoresArray[10]).useStateFromStores(items2, () => {
     let id;
-    if (null != arg0) {
-      id = arg0.id;
+    if (null != guild) {
+      id = guild.id;
     }
-    const memberCount = memberCount.getMemberCount(id);
+    const memberCount = outer1_9.getMemberCount(id);
     let num = 0;
     if (null != memberCount) {
       num = memberCount;
     }
-    return num > 1 || stateFromStoresArray.some((type) => type.type === constants.USER_JOIN);
+    return num > 1 || stateFromStoresArray.some((type) => type.type === outer2_15.USER_JOIN);
   }, items3);
 }
 function useGuildPersonalized(guild) {
-  const arg1 = guild;
+  const _require = guild;
   let icon;
   const items = [closure_11];
-  const stateFromStores = arg1(dependencyMap[10]).useStateFromStores(items, () => closure_11.hasLayers());
-  const obj = arg1(dependencyMap[10]);
-  const items1 = [closure_10];
-  const stateFromStores1 = arg1(dependencyMap[10]).useStateFromStores(items1, () => {
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_11.hasLayers());
+  const obj = _require(566);
+  const items1 = [_createForOfIteratorHelperLoose];
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => {
     let id;
-    if (null != arg0) {
-      id = arg0.id;
+    if (null != guild) {
+      id = guild.id;
     }
-    return guild.getGuild(id);
+    return outer1_10.getGuild(id);
   });
   if (null != stateFromStores1) {
     icon = stateFromStores1.icon;
   }
   return null != icon && !stateFromStores;
 }
-function useChannelsMessaged(closure_3) {
-  const arg1 = closure_3;
+function useChannelsMessaged(result) {
+  const _require = result;
   const items = [closure_4];
-  let closure_1 = arg1(dependencyMap[10]).useStateFromStores(items, () => id.getId());
-  const obj = arg1(dependencyMap[10]);
+  let closure_1 = _require(566).useStateFromStores(items, () => outer1_4.getId());
+  const obj = _require(566);
   const items1 = [closure_12];
-  return arg1(dependencyMap[10]).useStateFromStores(items1, () => callback(closure_2[13]).some(arg0, (id) => {
-    const messages = messages.getMessages(id.id);
+  return _require(566).useStateFromStores(items1, () => callback(outer1_2[13]).some(closure_0, (id) => {
+    const messages = outer2_12.getMessages(id.id);
     const toArrayResult = messages.toArray();
-    return callback(closure_2[13]).some(toArrayResult, (author) => {
-      let tmp = author.author.id === callback;
+    return callback(outer2_2[13]).some(toArrayResult, (author) => {
+      let tmp = author.author.id === outer2_1;
       if (tmp) {
-        tmp = !callback(closure_2[14])(author);
+        tmp = !callback(outer3_2[14])(author);
       }
       return tmp;
     });
   }));
 }
 function useGuildMessaged(guild) {
-  const arg1 = guild;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[10]).useStateFromStores(items, () => {
+  const _require = guild;
+  let items = [closure_5];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
     let mutableBasicGuildChannelsForGuild = null;
-    if (null != arg0) {
-      mutableBasicGuildChannelsForGuild = mutableBasicGuildChannelsForGuild.getMutableBasicGuildChannelsForGuild(arg0.id);
+    if (null != guild) {
+      mutableBasicGuildChannelsForGuild = outer1_5.getMutableBasicGuildChannelsForGuild(guild.id);
     }
     return mutableBasicGuildChannelsForGuild;
   });
-  const importDefault = stateFromStores;
   const items1 = [stateFromStores];
   return useChannelsMessaged(React.useMemo(() => {
     if (null == stateFromStores) {
       let items = [];
     } else {
-      items = stateFromStores(closure_2[13]).values(stateFromStores);
-      const obj = stateFromStores(closure_2[13]);
+      items = stateFromStores(outer1_2[13]).values(stateFromStores);
+      const obj = stateFromStores(outer1_2[13]);
     }
     return items;
   }, items1));
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ GUILD_SELECTABLE_CHANNELS_KEY: closure_6, GUILD_VOCAL_CHANNELS_KEY: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]);
-let closure_13 = importDefault(dependencyMap[8]);
-const tmp2 = arg1(dependencyMap[3]);
-({ Permissions: closure_14, MessageTypes: closure_15 } = arg1(dependencyMap[9]));
-const tmp3 = arg1(dependencyMap[9]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_progress/GuildProgressHooks.tsx");
+({ GUILD_SELECTABLE_CHANNELS_KEY: closure_6, GUILD_VOCAL_CHANNELS_KEY: closure_7 } = _isNativeReflectConstruct);
+({ Permissions: closure_14, MessageTypes: closure_15 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_progress/GuildProgressHooks.tsx");
 
 export const usePermissions = function usePermissions(channel, guild) {
-  guild = channel;
-  const importDefault = guild;
+  const _require = channel;
+  let closure_1 = guild;
   const items = [closure_13];
   const items1 = [guild, channel];
-  return guild(dependencyMap[10]).useStateFromStoresObject(items, () => {
-    const obj = { canInvite: arg0(closure_2[11]).canViewInviteModal(closure_13, arg1, arg0) };
-    let canResult = null != arg1;
+  return _require(566).useStateFromStoresObject(items, () => {
+    const obj = { canInvite: channel(outer1_2[11]).canViewInviteModal(outer1_13, closure_1, channel) };
+    let canResult = null != closure_1;
     if (canResult) {
-      canResult = closure_13.can(constants.MANAGE_GUILD, arg1);
+      canResult = outer1_13.can(outer1_14.MANAGE_GUILD, closure_1);
     }
     obj.canManageGuild = canResult;
-    let canResult1 = null != arg0;
+    let canResult1 = null != channel;
     if (canResult1) {
-      canResult1 = closure_13.can(constants.SEND_MESSAGES, arg0);
+      canResult1 = outer1_13.can(outer1_14.SEND_MESSAGES, channel);
     }
     obj.canMessage = canResult1;
-    let canResult2 = null != arg1;
+    let canResult2 = null != closure_1;
     if (canResult2) {
-      canResult2 = closure_13.can(constants.MANAGE_CHANNELS, arg1);
+      canResult2 = outer1_13.can(outer1_14.MANAGE_CHANNELS, closure_1);
     }
     obj.canCreateChannel = canResult2;
     return obj;

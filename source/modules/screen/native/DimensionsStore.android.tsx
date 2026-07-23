@@ -1,52 +1,57 @@
 // Module ID: 1451
-// Function ID: 16939
+// Function ID: 16940
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [27, 1452, 1822, 1557, 1823, 1570, 682, 621, 1558, 2]
 
 // Module 1451 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import { Dimensions } from "get ActivityIndicator";
+import keys from "keys";
+import importDefaultResult from "subscribeToKeyboardUIStore";
+import importDefaultResult1 from "module_1558";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -89,7 +94,7 @@ function computeWindowDimensions(prop, arg1, width, size, appEntryKey) {
   size = prop;
   width = width.width;
   ({ width: width2, height } = size);
-  let obj = require(dependencyMap[3]);
+  let obj = require(1557) /* useSafeAreaInsets */;
   const rect = obj.getSafeAreaInsets(appEntryKey);
   let tmp = width2;
   let tmp2 = height;
@@ -102,8 +107,8 @@ function computeWindowDimensions(prop, arg1, width, size, appEntryKey) {
   const sum = width.height + rect.top + rect.bottom;
   if (!arg1) {
     obj = { appEntryKey };
-    num = require(dependencyMap[4]).getSystemKeyboardHeight(obj);
-    const obj2 = require(dependencyMap[4]);
+    num = require(1823) /* useSystemKeyboardHeight */.getSystemKeyboardHeight(obj);
+    const obj2 = require(1823) /* useSystemKeyboardHeight */;
   }
   const bound1 = Math.min(sum - num, tmp2);
   width = undefined;
@@ -120,9 +125,9 @@ function getDimensionsStoreStateForEntry(appEntryKey, width) {
   let obj = width;
   obj = {};
   const merged = Object.assign(Dimensions.get("window"));
-  const merged1 = Object.assign(require(dependencyMap[2]).readWindowSizeForAppEntry(appEntryKey));
-  const obj3 = require(dependencyMap[2]);
-  let size = require(dependencyMap[2]).readScreenSizeForAppEntry(appEntryKey);
+  const merged1 = Object.assign(require(1822) /* readWindowSizeForAppEntry */.readWindowSizeForAppEntry(appEntryKey));
+  const obj3 = require(1822) /* readWindowSizeForAppEntry */;
+  let size = require(1822) /* readWindowSizeForAppEntry */.readScreenSizeForAppEntry(appEntryKey);
   if (null == size) {
     size = Dimensions.get("screen");
   }
@@ -152,7 +157,7 @@ function getDimensionsStoreState(arg0) {
   let iter3;
   let tmp = arg0;
   let obj = {};
-  const tmp3 = _createForOfIteratorHelperLoose(require(dependencyMap[5]).APP_ENTRY_KEYS);
+  const tmp3 = _createForOfIteratorHelperLoose(require(1570) /* APP_ENTRY_KEYS */.APP_ENTRY_KEYS);
   const iter = tmp3();
   let iter2 = iter;
   let flag = tmp2;
@@ -161,7 +166,7 @@ function getDimensionsStoreState(arg0) {
     do {
       let value = iter2.value;
       let tmp6;
-      let tmp5 = closure_7;
+      let tmp5 = getDimensionsStoreStateForEntry;
       if (null != tmp) {
         tmp6 = tmp.byAppEntry[value];
       }
@@ -187,13 +192,10 @@ function getDimensionsStoreState(arg0) {
   return tmp;
 }
 function updateDimensionsStoreState() {
-  require(dependencyMap[6]).batchUpdates(() => state.setState((arg0) => callback(arg0)));
+  require(682) /* batchUpdates */.batchUpdates(() => outer1_3.setState((arg0) => outer2_8(arg0)));
 }
-const Dimensions = require(dependencyMap[0]).Dimensions;
-const _module = require(dependencyMap[7]);
-const obj = _module.create(() => getDimensionsStoreState(undefined));
-const importDefaultResult = importDefault(dependencyMap[1]);
-const subscription = importDefault(dependencyMap[8]).subscribe(() => {
+let obj = keys.create(() => getDimensionsStoreState(undefined));
+const subscription = require("module_1558").subscribe(() => {
   updateDimensionsStoreState();
 });
 importDefaultResult(() => {
@@ -202,7 +204,6 @@ importDefaultResult(() => {
 const listener = Dimensions.addEventListener("change", () => {
   updateDimensionsStoreState();
 });
-const _module1 = require(dependencyMap[9]);
-const result = _module1.fileFinishedImporting("modules/screen/native/DimensionsStore.android.tsx");
+const result = require("readWindowSizeForAppEntry").fileFinishedImporting("modules/screen/native/DimensionsStore.android.tsx");
 
 export default obj;

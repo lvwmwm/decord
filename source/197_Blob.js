@@ -1,13 +1,15 @@
 // Module ID: 197
 // Function ID: 2827
 // Name: Blob
-// Dependencies: []
+// Dependencies: [6, 7, 194]
 
 // Module 197 (Blob)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export default () => {
+const require = arg1;
+
+export default (() => {
   class Blob {
     constructor() {
       self = this;
@@ -20,20 +22,19 @@ export default () => {
         if (arguments.length > 1) {
           tmp2 = arguments[1];
         }
-        tmp3 = closure_2;
+        tmp3 = outer1_2;
         tmp4 = Blob;
-        tmp5 = closure_2(self, Blob);
+        tmp5 = outer1_2(self, Blob);
         tmp6 = Blob;
-        tmp7 = closure_1;
+        tmp7 = outer1_1;
         num2 = 2;
-        _default = Blob(closure_1[2]).default;
+        _default = Blob(outer1_1[2]).default;
         self.data = _default.createFromParts([], tmp2).data;
         return;
       }
       return;
     }
   }
-  const arg1 = Blob;
   let obj = {
     key: "data",
     get() {
@@ -87,14 +88,14 @@ export default () => {
         tmp2 = sum;
       }
       const obj = { blobId: self.data.blobId, offset: tmp2, size: tmp3, type: str, __collector: self.data.__collector };
-      return Blob(closure_1[2]).default.createFromOptions(obj);
+      return Blob(outer1_1[2]).default.createFromOptions(obj);
     }
   };
   items[1] = obj;
   obj = {
     key: "close",
     value: function close() {
-      Blob(closure_1[2]).default.release(this.data.blobId);
+      Blob(outer1_1[2]).default.release(this.data.blobId);
       this.data = null;
     }
   };
@@ -112,4 +113,4 @@ export default () => {
     }
   };
   return callback(Blob, items);
-}();
+})();

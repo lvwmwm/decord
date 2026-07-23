@@ -1,25 +1,26 @@
-// Module ID: 12504
-// Function ID: 95821
+// Module ID: 12618
+// Function ID: 97977
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [4045, 1428, 4042, 8322, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping, useIsHotwheelsClickableGameIconEnabled
 
-// Module 12504 (apexExperiment)
-const _module = require(dependencyMap[1]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { "Null": null, "Null": null }, variations: { [0]: { "Null": true, "Null": true } } });
-const _module1 = require(dependencyMap[2]);
-let obj = { shapes: null, flex: null, sk: null, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {} };
-obj = { displayNameStylesEnabled: null, submitButtonEnabled: "Group 5", config: {} };
-const items = [obj, ];
-const obj1 = { displayNameStylesEnabled: 24, submitButtonEnabled: -60, config: {} };
-items[1] = obj1;
+// Module 12618 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+import createExperiment from "createExperiment";
+import ApexExperiment from "ApexExperiment";
+
+let obj = { kind: "user", name: "2026-03-content-inventory-memberlist-and-ranker", defaultConfig: { enabled: true, impressionCappingEnabled: true }, variations: { [0]: { enabled: false, impressionCappingEnabled: false } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+obj = { kind: "user", id: "2025-09_hotwheels_nvidia_boost", label: "Next iteration of the activity feed ranking model.", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.CONNECTION_OPEN, defaultConfig: {} };
+const obj1 = { id: 16, label: "ML model V3 - Nvidia small boost", config: {} };
+const items = [obj1, ];
+const obj2 = { id: 17, label: "ML model V3 - Nvidia big boost", config: {} };
+items[1] = obj2;
 obj.treatments = items;
-const experiment = _module1.createExperiment(obj);
-const _module2 = require(dependencyMap[1]);
-const obj2 = { y: "<string:2154954753>", DateToSystemTimezoneSetter: "<string:2080374784>", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment1 = _module2.createApexExperiment(obj2);
-const _module3 = require(dependencyMap[4]);
-const result = _module3.fileFinishedImporting("modules/content_inventory/ContentInventoryExperiments.tsx");
+const experiment = createExperiment.createExperiment(obj);
+const obj3 = { name: "2026-07-hotwheels-clickable-game-icon", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment1 = ApexExperiment.createApexExperiment(obj3);
+const result = require("createExperiment").fileFinishedImporting("modules/content_inventory/ContentInventoryExperiments.tsx");
 
 export const MemberlistRankerExperiment = apexExperiment;
 export const HotwheelsActivityFeedNvidiaExperiment = experiment;

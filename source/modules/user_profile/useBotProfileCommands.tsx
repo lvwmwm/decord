@@ -1,20 +1,19 @@
-// Module ID: 11878
-// Function ID: 91960
+// Module ID: 11890
+// Function ID: 92013
 // Name: useBotProfileCommands
-// Dependencies: [1194, 4213, 653, 566]
+// Dependencies: [31, 8189, 1881, 2]
 // Exports: default
 
-// Module 11878 (useBotProfileCommands)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import initialize from "initialize";
+// Module 11890 (useBotProfileCommands)
+import result from "result";
 
-const result = initialize.fileFinishedImporting("modules/user_profile/useBotProfileCommands.tsx");
+const require = arg1;
+const result = require("PermissionOverwriteType").fileFinishedImporting("modules/user_profile/useBotProfileCommands.tsx");
 
 export default function useBotProfileCommands(channel) {
-  let obj = importAll(dependencyMap[1]);
+  let obj = importAll(8189);
   const accessibleCommandsForApplication = obj.useAccessibleCommandsForApplication(channel, arg1, arg2);
   const commands = accessibleCommandsForApplication.commands;
-  const arg1 = commands;
   obj = {
     application: accessibleCommandsForApplication.application,
     commands: React.useMemo(() => {
@@ -28,9 +27,9 @@ export default function useBotProfileCommands(channel) {
             if (null != options) {
               found = options.find((type) => {
                 type = type.type;
-                let tmp = type === callback(closure_2[2]).ApplicationCommandOptionType.SUB_COMMAND;
+                let tmp = type === commands(outer3_2[2]).ApplicationCommandOptionType.SUB_COMMAND;
                 if (!tmp) {
-                  tmp = type === callback(closure_2[2]).ApplicationCommandOptionType.SUB_COMMAND_GROUP;
+                  tmp = type === commands(outer3_2[2]).ApplicationCommandOptionType.SUB_COMMAND_GROUP;
                 }
                 return tmp;
               });
@@ -43,6 +42,6 @@ export default function useBotProfileCommands(channel) {
       return found;
     }, items)
   };
-  const items = [commands];
+  items = [commands];
   return obj;
 };

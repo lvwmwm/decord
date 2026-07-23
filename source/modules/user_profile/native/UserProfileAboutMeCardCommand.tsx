@@ -1,27 +1,29 @@
-// Module ID: 11879
-// Function ID: 91965
-// Dependencies: []
+// Module ID: 11891
+// Function ID: 92018
+// Dependencies: [31, 653, 33, 4130, 689, 4126, 3989, 10881, 675, 4324, 4098, 10886, 6753, 6755, 2]
 
-// Module 11879
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const jsxs = arg1(dependencyMap[2]).jsxs;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 11891
+import { AnalyticEvents } from "ME";
+import { jsxs } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
 let obj = {};
-obj = { color: importDefault(dependencyMap[4]).colors.MENTION_FOREGROUND, backgroundColor: importDefault(dependencyMap[4]).colors.MENTION_BACKGROUND, marginEnd: importDefault(dependencyMap[4]).space.PX_12, marginBottom: importDefault(dependencyMap[4]).space.PX_12 };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.MENTION_FOREGROUND, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MENTION_BACKGROUND, marginEnd: require("_createForOfIteratorHelperLoose").space.PX_12, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
 obj.commandClickable = obj;
-let closure_5 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function UserProfileAboutMeCardCommand(channel) {
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function UserProfileAboutMeCardCommand(channel) {
   let command;
-  ({ application: closure_0, command } = channel);
-  const importDefault = command;
-  const dependencyMap = channel.channel;
+  let require;
+  ({ application: require, command } = channel);
+  channel = channel.channel;
   const tmp = callback();
-  const items = [, command.displayName];
-  return jsxs(arg1(dependencyMap[5]).Text, {
+  const items = ["/", command.displayName];
+  return jsxs(require(channel[5]).Text, {
     variant: "text-md/bold",
     onPress() {
-      let obj = bestActiveInput(channel[6]);
+      let obj = outer1_0(channel[6]);
       const bestActiveInput = obj.getBestActiveInput();
       obj = { channelId: channel.id };
       let text;
@@ -42,20 +44,20 @@ const memoResult = importAllResult.memo(function UserProfileAboutMeCardCommand(c
         return openCustomKeyboardResult;
       };
       obj.onSetCommand = function onSetCommand() {
-        let obj = lib(guildId[8]);
+        let obj = command(channel[8]);
         obj = {};
         let id;
         if (null != bestActiveInput) {
           id = bestActiveInput.id;
         }
         obj.application_id = id;
-        obj.command_id = lib.id;
-        obj.guild_id = guildId.getGuildId();
-        const merged = Object.assign(bestActiveInput(guildId[9]).collectChannelAnalyticsMetadata(guildId));
-        obj.track(constants.POPULAR_APPLICATION_COMMAND_CLICKED, obj);
-        const obj3 = bestActiveInput(guildId[9]);
-        lib(guildId[10]).hideActionSheet();
-        lib(guildId[11])();
+        obj.command_id = outer1_1.id;
+        obj.guild_id = outer1_2.getGuildId();
+        const merged = Object.assign(outer2_0(channel[9]).collectChannelAnalyticsMetadata(outer1_2));
+        obj.track(outer2_3.POPULAR_APPLICATION_COMMAND_CLICKED, obj);
+        const obj3 = outer2_0(channel[9]);
+        command(channel[10]).hideActionSheet();
+        command(channel[11])();
         if (null != bestActiveInput) {
           bestActiveInput.openSystemKeyboard();
         }
@@ -66,26 +68,26 @@ const memoResult = importAllResult.memo(function UserProfileAboutMeCardCommand(c
           const obj5 = applicationCommandManager;
         }
         if (!tmp9) {
-          obj = { channelId: guildId.id, command: lib };
+          obj = { channelId: outer1_2.id, command: outer1_1 };
           let applicationCommandSection = null;
           if (null != bestActiveInput) {
-            applicationCommandSection = bestActiveInput(guildId[12]).getApplicationCommandSection(bestActiveInput);
-            const obj7 = bestActiveInput(guildId[12]);
+            applicationCommandSection = outer2_0(channel[12]).getApplicationCommandSection(bestActiveInput);
+            const obj7 = outer2_0(channel[12]);
           }
           obj.section = applicationCommandSection;
-          obj.location = bestActiveInput(guildId[13]).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
+          obj.location = outer2_0(channel[13]).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
           obj5.setCommand(obj);
         }
       };
-      const result = bestActiveInput(channel[7]).handleTapCommandMention(obj);
+      const result = outer1_0(channel[7]).handleTapCommandMention(obj);
     },
     onLongPress() {
-      return callback(channel[7]).handleLongPressCommandMention(command.displayName, command.id);
+      return outer1_0(channel[7]).handleLongPressCommandMention(command.displayName, command.id);
     },
     style: callback().commandClickable,
     children: items
   });
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCardCommand.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCardCommand.tsx");
 
 export default memoResult;

@@ -1,53 +1,57 @@
-// Module ID: 8681
-// Function ID: 68786
+// Module ID: 8688
+// Function ID: 68826
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 5613, 7887, 8689, 566, 6858, 6876, 22, 2]
 // Exports: default
 
-// Module 8681 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8688 (_createForOfIteratorHelperLoose)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,16 +88,14 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/slayer_storefront/hooks/useDisplayProfileSocialLayerStorefrontApplicationIds.tsx");
+const result = require("useDisplayProfile").fileFinishedImporting("modules/slayer_storefront/hooks/useDisplayProfileSocialLayerStorefrontApplicationIds.tsx");
 
 export default function useDisplayProfileSocialLayerStorefrontApplicationIds(userId) {
   let application;
-  const tmp2 = importDefault(dependencyMap[2])(userId.userId);
-  const arg1 = tmp2;
-  const items = [tmp2];
-  const memo = React.useMemo(() => {
+  const tmp2 = usersPlayingStorefrontEnabledGamesApplicationIds(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[2])(userId.userId);
+  const require = tmp2;
+  let items = [tmp2];
+  const memo = areUsersInSocialLayerStorefrontMutualGuildsApplicationIds.useMemo(() => {
     let userId;
     if (null != tmp2) {
       userId = tmp2.userId;
@@ -106,60 +108,56 @@ export default function useDisplayProfileSocialLayerStorefrontApplicationIds(use
     }
     return items1;
   }, items);
-  const usersPlayingStorefrontEnabledGamesApplicationIds = arg1(dependencyMap[3]).useUsersPlayingStorefrontEnabledGamesApplicationIds({ userIds: memo });
-  const importDefault = usersPlayingStorefrontEnabledGamesApplicationIds;
-  const obj = arg1(dependencyMap[3]);
-  const usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds = arg1(dependencyMap[3]).useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds({ userIds: memo });
-  const dependencyMap = usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds;
-  const obj2 = arg1(dependencyMap[3]);
-  const areUsersInSocialLayerStorefrontMutualGuildsApplicationIds = arg1(dependencyMap[3]).useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds(memo);
-  const React = areUsersInSocialLayerStorefrontMutualGuildsApplicationIds;
-  const obj3 = arg1(dependencyMap[3]);
-  const items1 = [closure_4];
+  usersPlayingStorefrontEnabledGamesApplicationIds = require(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[3]).useUsersPlayingStorefrontEnabledGamesApplicationIds({ userIds: memo });
+  let obj = require(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[3]);
+  usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds = require(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[3]).useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds({ userIds: memo });
+  const obj2 = require(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[3]);
+  areUsersInSocialLayerStorefrontMutualGuildsApplicationIds = require(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[3]).useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds(memo);
+  const obj3 = require(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[3]);
+  let items1 = [stateFromStoresArray];
   const items2 = [tmp2];
-  const stateFromStoresArray = arg1(dependencyMap[4]).useStateFromStoresArray(items1, () => {
+  stateFromStoresArray = require(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[4]).useStateFromStoresArray(items1, () => {
     let iter3;
     let widgets;
-    if (null != tmp2) {
-      widgets = tmp2.widgets;
+    if (null != set) {
+      widgets = set.widgets;
     }
     if (null == widgets) {
       return [];
     } else {
       const _Set = Set;
-      const set = new Set();
-      const tmp2 = set;
+      set = new Set();
       let widgets1;
-      if (null != tmp2) {
-        widgets1 = tmp2.widgets;
+      if (null != set) {
+        widgets1 = set.widgets;
       }
       if (null == widgets1) {
         widgets1 = [];
       }
-      const tmp19Result = closure_5(widgets1);
+      const tmp19Result = outer1_5(widgets1);
       const iter = tmp19Result();
       let iter2 = iter;
       if (!iter.done) {
         do {
           let value = iter2.value;
-          let tmp6 = closure_0;
-          let tmp7 = closure_2;
-          if (value instanceof closure_0(closure_2[5]).BaseGameWidget) {
+          let tmp6 = tmp2;
+          let tmp7 = usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds;
+          if (value instanceof tmp2(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[5]).BaseGameWidget) {
             let games = value.games;
             let item = games.forEach((applicationId) => {
-              const applicationIdFromDetectableId = applicationIdFromDetectableId.getApplicationIdFromDetectableId(applicationId.applicationId);
+              const applicationIdFromDetectableId = stateFromStoresArray.getApplicationIdFromDetectableId(applicationId.applicationId);
               if (null != applicationIdFromDetectableId) {
                 set.add(applicationIdFromDetectableId);
               }
             });
             let tmp10 = tmp5;
           } else {
-            let tmp8 = closure_0;
-            let tmp9 = closure_2;
+            let tmp8 = tmp2;
+            let tmp9 = usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds;
             tmp10 = tmp5;
-            if (value instanceof closure_0(closure_2[6]).ApplicationWidget) {
-              let tmp11 = closure_4;
-              let applicationIdFromDetectableId = closure_4.getApplicationIdFromDetectableId(value.applicationId);
+            if (value instanceof tmp2(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[6]).ApplicationWidget) {
+              let tmp11 = stateFromStoresArray;
+              let applicationIdFromDetectableId = stateFromStoresArray.getApplicationIdFromDetectableId(value.applicationId);
               tmp10 = applicationIdFromDetectableId;
               if (null != applicationIdFromDetectableId) {
                 let addResult = set.add(applicationIdFromDetectableId);
@@ -168,7 +166,7 @@ export default function useDisplayProfileSocialLayerStorefrontApplicationIds(use
             }
           }
           iter3 = tmp19Result();
-          let tmp5 = tmp10;
+          tmp5 = tmp10;
           iter2 = iter3;
         } while (!iter3.done);
       }
@@ -176,12 +174,11 @@ export default function useDisplayProfileSocialLayerStorefrontApplicationIds(use
       return Array.from(set).sort();
     }
   }, items2);
-  closure_4 = stateFromStoresArray;
   if (null != tmp2) {
     application = tmp2.application;
   }
   const items3 = [application, usersPlayingStorefrontEnabledGamesApplicationIds, usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds, areUsersInSocialLayerStorefrontMutualGuildsApplicationIds, stateFromStoresArray];
-  return React.useMemo(() => {
+  return areUsersInSocialLayerStorefrontMutualGuildsApplicationIds.useMemo(() => {
     let application;
     if (null != tmp2) {
       application = tmp2.application;

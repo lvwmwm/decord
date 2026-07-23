@@ -1,60 +1,61 @@
-// Module ID: 14532
-// Function ID: 109414
+// Module ID: 14646
+// Function ID: 111574
 // Name: isValidClipboardCode
-// Dependencies: []
+// Dependencies: [5, 57, 31, 33, 14647, 14642, 1212, 14648, 14645, 2]
 // Exports: default
 
-// Module 14532 (isValidClipboardCode)
+// Module 14646 (isValidClipboardCode)
+import MFAOptionScreen from "MFAOptionScreen";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function isValidClipboardCode(arg0) {
-  let isMatch = arg0.length === arg1(dependencyMap[4]).TOTP_CODE_LENGTH;
+  let isMatch = arg0.length === require(14647) /* finishMFACheck */.TOTP_CODE_LENGTH;
   if (isMatch) {
     isMatch = /^\d+$/.test(arg0);
     const obj = /^\d+$/;
   }
   return isMatch;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/mfa/native/screens/TotpScreen.tsx");
+const result = require("result").fileFinishedImporting("modules/mfa/native/screens/TotpScreen.tsx");
 
 export default function TotpScreen(finish) {
+  let _slicedToArray;
+  let result;
   let tmp5;
   let tmp7;
   finish = finish.finish;
-  const arg1 = finish;
   const tmp = callback(React.useState(false), 2);
   let first = tmp[0];
   const importDefault = tmp[1];
   const tmp3 = callback(React.useState(""), 2);
   const first1 = tmp3[0];
-  const dependencyMap = first1;
-  let closure_3 = tmp3[1];
-  [tmp5, closure_4] = callback(React.useState(undefined), 2);
+  let MFAOptionScreen = tmp3[1];
+  [tmp5, _slicedToArray] = callback(React.useState(undefined), 2);
   const tmp4 = callback(React.useState(undefined), 2);
-  [tmp7, closure_5] = callback(React.useState(false), 2);
+  [tmp7, result] = callback(React.useState(false), 2);
   const items = [finish];
-  const callback = React.useCallback(() => {
+  callback = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = callback(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items);
-  const jsx = callback;
+  })(), items);
   let obj = {};
   const tmp6 = callback(React.useState(false), 2);
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.headerText = intl.string(arg1(dependencyMap[6]).t.uc00u5);
+  const intl = finish(first1[6]).intl;
+  obj.headerText = intl.string(finish(first1[6]).t.uc00u5);
   obj = {};
-  const tmp10 = importDefault(dependencyMap[5]);
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj.label = intl2.string(arg1(dependencyMap[6]).t.HZPBOd);
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj.placeholder = intl3.string(arg1(dependencyMap[6]).t.tARzgo);
+  const tmp10 = importDefault(first1[5]);
+  const intl2 = finish(first1[6]).intl;
+  obj.label = intl2.string(finish(first1[6]).t.HZPBOd);
+  const intl3 = finish(first1[6]).intl;
+  obj.placeholder = intl3.string(finish(first1[6]).t.tARzgo);
   obj.isValidClipboardCode = isValidClipboardCode;
-  obj.maxLength = arg1(dependencyMap[4]).TOTP_CODE_LENGTH;
+  obj.maxLength = finish(first1[4]).TOTP_CODE_LENGTH;
   obj.onChangeCode = callback;
   obj.error = tmp5;
   let tmp12 = first;
@@ -65,12 +66,12 @@ export default function TotpScreen(finish) {
   obj.textContentType = "oneTimeCode";
   obj.autoComplete = "one-time-code";
   obj.keyboardType = "number-pad";
-  obj.input = jsx(importDefault(dependencyMap[7]), obj);
+  obj.input = callback(importDefault(first1[7]), obj);
   obj = { variant: "primary" };
-  const tmp11 = importDefault(dependencyMap[7]);
-  const tmp13 = jsx;
-  const intl4 = arg1(dependencyMap[6]).intl;
-  obj.text = intl4.string(arg1(dependencyMap[6]).t.geKm7t);
+  const tmp11 = importDefault(first1[7]);
+  const tmp13 = callback;
+  const intl4 = finish(first1[6]).intl;
+  obj.text = intl4.string(finish(first1[6]).t.geKm7t);
   let tmp15 = first;
   if (!first) {
     tmp15 = tmp7;
@@ -83,11 +84,11 @@ export default function TotpScreen(finish) {
     first = tmp7;
   }
   if (!first) {
-    first = first1.length !== arg1(dependencyMap[4]).TOTP_CODE_LENGTH;
+    first = first1.length !== finish(first1[4]).TOTP_CODE_LENGTH;
   }
   obj.disabled = first;
-  obj.submit = tmp13(importDefault(dependencyMap[8]), obj);
+  obj.submit = tmp13(importDefault(first1[8]), obj);
   obj.screenProps = { mfaChallenge: finish.mfaChallenge, finish };
   obj.mfaMethod = "totp";
-  return <tmp10 {...obj} />;
+  return callback(tmp10, obj);
 };

@@ -1,25 +1,24 @@
-// Module ID: 6745
-// Function ID: 52501
+// Module ID: 6750
+// Function ID: 52533
 // Name: Feedback
-// Dependencies: []
+// Dependencies: [1212, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 6745 (Feedback)
+// Module 6750 (Feedback)
 let obj = { BUG: "BUG", ALLOWED: "ALLOWED", MENTION_RAID_REMOVE_RESTRICTION: "MENTION_RAID_REMOVE_RESTRICTION" };
 obj = { LEGITIMATE_ACTIVITY: "LEGITIMATE_ACTIVITY", LEGITIMATE_ACCOUNTS: "LEGITIMATE_ACCOUNTS", LEGITIMATE_DMS: "LEGITIMATE_DMS", DM_SPAM: "DM_SPAM", JOIN_RAID: "JOIN_RAID", OTHER: "OTHER" };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_automod/AutomodFeedback.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_automod/AutomodFeedback.tsx");
 
 export const Feedback = obj;
 export const generateFeedbackOptions = function generateFeedbackOptions() {
   let obj = {};
-  const intl = require(dependencyMap[0]).intl;
-  obj.name = intl.string(require(dependencyMap[0]).t.+MbOX4);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.name = intl.string(require(1212) /* getSystemLocale */.t["+MbOX4"]);
   obj.value = obj.BUG;
   const items = [obj, ];
   obj = {};
-  const intl2 = require(dependencyMap[0]).intl;
-  obj.name = intl2.string(require(dependencyMap[0]).t.CRsCRC);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.name = intl2.string(require(1212) /* getSystemLocale */.t.CRsCRC);
   obj.value = obj.ALLOWED;
   items[1] = obj;
   return items;

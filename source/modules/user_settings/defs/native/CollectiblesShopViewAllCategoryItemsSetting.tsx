@@ -1,27 +1,27 @@
-// Module ID: 14395
-// Function ID: 108616
+// Module ID: 14509
+// Function ID: 110769
 // Name: route
-// Dependencies: []
+// Dependencies: [653, 10095, 13745, 14510, 2]
 
-// Module 14395 (route)
-const _module = require(dependencyMap[1]);
-let obj = {
+// Module 14509 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "";
   },
   parent: null,
-  usePredicate: require(dependencyMap[2]).useStaffOrDeveloperSettingPredicate,
+  usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
   unsearchable: true,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS,
+  route: require("ME").UserSettingsSections.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14510) /* CollectiblesShopViewAllCategoryItemsScreen */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/CollectiblesShopViewAllCategoryItemsSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("useStaffOrDeveloperSettingPredicate").fileFinishedImporting("modules/user_settings/defs/native/CollectiblesShopViewAllCategoryItemsSetting.tsx");
 
 export default route;

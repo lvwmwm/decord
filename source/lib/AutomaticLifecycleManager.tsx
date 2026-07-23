@@ -1,15 +1,16 @@
-// Module ID: 5075
-// Function ID: 44166
+// Module ID: 5078
+// Function ID: 44185
 // Name: AutomaticLifecycleManager
-// Dependencies: []
+// Dependencies: [6, 7, 686, 2]
 
-// Module 5075 (AutomaticLifecycleManager)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 5078 (AutomaticLifecycleManager)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const tmp2 = (() => {
   class AutomaticLifecycleManager {
     constructor() {
-      tmp = closure_2(this, AutomaticLifecycleManager);
+      tmp = outer1_2(this, AutomaticLifecycleManager);
       this.initializedCount = 0;
       this.actions = {};
       map = new Map();
@@ -17,7 +18,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const importDefault = AutomaticLifecycleManager;
   let obj = {
     key: "initialize",
     value() {
@@ -35,7 +35,7 @@ const tmp2 = () => {
           if ("function" !== typeof tmp2) {
             callback = tmp2.callback;
           }
-          const subscription = callback(closure_1[2]).subscribe(tmp, callback);
+          const subscription = AutomaticLifecycleManager(outer2_1[2]).subscribe(tmp, callback);
         });
         const stores = self.stores;
         const item1 = stores.forEach((handleStoreChange, addChangeListener) => {
@@ -68,7 +68,7 @@ const tmp2 = () => {
             if ("function" !== typeof tmp2) {
               callback = tmp2.callback;
             }
-            callback(closure_1[2]).unsubscribe(tmp, callback);
+            AutomaticLifecycleManager(outer2_1[2]).unsubscribe(tmp, callback);
           });
           const stores = self.stores;
           const item1 = stores.forEach((arg0, removeChangeListener) => {
@@ -93,7 +93,7 @@ const tmp2 = () => {
     }
   };
   return callback(AutomaticLifecycleManager, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");
+})();
+const result = require("dispatcher").fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");
 
 export default tmp2;

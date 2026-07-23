@@ -1,11 +1,13 @@
 // Module ID: 862
-// Function ID: 9636
+// Function ID: 9637
 // Name: createMetricContainerEnvelopeItem
-// Dependencies: []
+// Dependencies: [814, 840]
 
 // Module 862 (createMetricContainerEnvelopeItem)
+const require = arg1;
+const dependencyMap = arg6;
 function createMetricContainerEnvelopeItem(items) {
-  const obj = { 145777185: "feedback", 1834027105: "info", 69280065: "trace", item_count: items.length };
+  const obj = { type: "trace_metric", item_count: items.length, content_type: "application/vnd.sentry.items.trace-metric+json" };
   items = [obj, { items }];
   return items;
 }
@@ -22,9 +24,9 @@ arg5.createMetricEnvelope = function createMetricEnvelope(items, sdk) {
     tmp = arg3;
   }
   if (tmp) {
-    obj.dsn = sdk(arg6[0]).dsnToString(arg3);
-    const obj3 = sdk(arg6[0]);
+    obj.dsn = require(814) /* dsnFromString */.dsnToString(arg3);
+    const obj3 = require(814) /* dsnFromString */;
   }
   items = [createMetricContainerEnvelopeItem(items)];
-  return sdk(arg6[1]).createEnvelope(obj, items);
+  return require(840) /* forEachEnvelopeItem */.createEnvelope(obj, items);
 };

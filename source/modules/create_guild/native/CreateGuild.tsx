@@ -1,26 +1,30 @@
-// Module ID: 10058
-// Function ID: 77699
+// Module ID: 10066
+// Function ID: 77739
 // Name: CreateGuild
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 4528, 4539, 4541, 4126, 1212, 10067, 7512, 5504, 5459, 4543, 9004, 2]
 // Exports: default
 
-// Module 10058 (CreateGuild)
-let closure_3 = importAll(dependencyMap[0]);
-const ScrollView = arg1(dependencyMap[1]).ScrollView;
-let closure_5 = importDefault(dependencyMap[2]);
-const MarketingURLs = arg1(dependencyMap[3]).MarketingURLs;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { flex: { flex: 1 } };
-obj = { 562090611: null, 948336869: null, 951008687: null, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
-obj.contentContainer = obj;
-obj.header = { textAlign: "center" };
-obj.description = { <string:2790674827>: null, <string:3372925522>: null, <string:2700829437>: null };
-obj.iconUploader = { "Bool(false)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(false)": 160 };
-obj.hint = { marginBottom: 8 };
-let closure_9 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/create_guild/native/CreateGuild.tsx");
+// Module 10066 (CreateGuild)
+import result from "result";
+import { ScrollView } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { MarketingURLs } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16, paddingBottom: 16 };
+_createForOfIteratorHelperLoose.contentContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.header = { textAlign: "center" };
+_createForOfIteratorHelperLoose.description = { lineHeight: 18, textAlign: "center", marginBottom: 24 };
+_createForOfIteratorHelperLoose.iconUploader = { alignSelf: "center", marginBottom: 4 };
+_createForOfIteratorHelperLoose.hint = { marginBottom: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/create_guild/native/CreateGuild.tsx");
 
 export default function CreateGuild(arg0) {
   let autoFocus;
@@ -39,17 +43,15 @@ export default function CreateGuild(arg0) {
   if (autoFocus === undefined) {
     autoFocus = true;
   }
-  let arg1;
-  let importDefault;
-  const tmp = callback2();
-  const currentUser = currentUser.getCurrentUser();
+  let isScreenReaderEnabled;
+  let ref;
+  let tmp = _createForOfIteratorHelperLoose();
+  currentUser = currentUser.getCurrentUser();
   const tmp2 = null == currentUser || !currentUser.isStaff();
   let tmp3 = !tmp2;
-  let obj1 = arg1(dependencyMap[7]);
-  const isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
-  arg1 = isScreenReaderEnabled;
-  const ref = React.useRef(null);
-  importDefault = ref;
+  let obj1 = isScreenReaderEnabled(4528);
+  isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
+  ref = React.useRef(null);
   const items = [isScreenReaderEnabled];
   const effect = React.useEffect(() => {
     let tmp = isScreenReaderEnabled;
@@ -57,31 +59,31 @@ export default function CreateGuild(arg0) {
       tmp = null != ref.current;
     }
     if (tmp) {
-      let obj = isScreenReaderEnabled(closure_2[8]);
+      let obj = isScreenReaderEnabled(outer1_2[8]);
       obj = { ref, delay: 100 };
       const result = obj.setAccessibilityFocus(obj);
     }
   }, items);
-  let obj = { <string:1675145676>: 44, <string:2591642016>: 45, <string:2985086052>: 45, <string:1927697147>: 22, <string:3429125722>: 26, style: tmp.flex, contentInset: { top: 0 }, contentContainerStyle: tmp.contentContainer };
+  let obj = { style: tmp.flex, contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer };
   obj = {};
-  obj1 = { ref, style: tmp.header };
+  obj1 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   if (null == customTitle) {
-    const intl = arg1(dependencyMap[11]).intl;
-    customTitle = intl.string(arg1(dependencyMap[11]).t.XioBx6);
+    const intl = isScreenReaderEnabled(1212).intl;
+    customTitle = intl.string(isScreenReaderEnabled(1212).t.XioBx6);
   }
   obj1.children = customTitle;
-  const items1 = [callback(arg1(dependencyMap[10]).Text, obj1), , , , , , , ];
-  const obj2 = { style: tmp.description };
+  const items1 = [callback(isScreenReaderEnabled(4126).Text, obj1), , , , , , , ];
+  const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
   if (null == customDescription) {
-    const intl2 = arg1(dependencyMap[11]).intl;
-    customDescription = intl2.string(arg1(dependencyMap[11]).t./k/L/j);
+    const intl2 = isScreenReaderEnabled(1212).intl;
+    customDescription = intl2.string(isScreenReaderEnabled(1212).t["/k/L/j"]);
   }
   obj2.children = customDescription;
-  items1[1] = callback(arg1(dependencyMap[10]).Text, obj2);
-  items1[2] = callback(importDefault(dependencyMap[12]), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
+  items1[1] = callback(isScreenReaderEnabled(4126).Text, obj2);
+  items1[2] = callback(ref(10067), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
   const obj4 = { isClearable: true };
-  const intl3 = arg1(dependencyMap[11]).intl;
-  obj4.label = intl3.string(arg1(dependencyMap[11]).t.dBih7e);
+  const intl3 = isScreenReaderEnabled(1212).intl;
+  obj4.label = intl3.string(isScreenReaderEnabled(1212).t.dBih7e);
   let firstFieldErrorMessage;
   if (null != error) {
     firstFieldErrorMessage = error.getFirstFieldErrorMessage("name");
@@ -95,27 +97,27 @@ export default function CreateGuild(arg0) {
   obj4.autoFocus = autoFocus;
   obj4.autoCorrect = false;
   obj4.returnKeyType = "done";
-  items1[3] = callback(arg1(dependencyMap[13]).TextInput, obj4);
+  items1[3] = callback(isScreenReaderEnabled(7512).TextInput, obj4);
   if (!tmp2) {
-    const obj5 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly };
-    const intl4 = arg1(dependencyMap[11]).intl;
-    obj5.subLabel = intl4.string(arg1(dependencyMap[11]).t.edQ5va);
-    tmp3 = callback(arg1(dependencyMap[14]).TableSwitchRow, obj5);
+    const obj5 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only" };
+    const intl4 = isScreenReaderEnabled(1212).intl;
+    obj5.subLabel = intl4.string(isScreenReaderEnabled(1212).t.edQ5va);
+    tmp3 = callback(isScreenReaderEnabled(5504).TableSwitchRow, obj5);
   }
   items1[4] = tmp3;
-  const obj6 = { style: tmp.hint };
-  const intl5 = arg1(dependencyMap[11]).intl;
-  obj6.children = intl5.format(arg1(dependencyMap[11]).t.2bprXx, { guidelinesURL: MarketingURLs.GUIDELINES });
-  items1[5] = callback(arg1(dependencyMap[15]).TextWithIOSLinkWorkaround, obj6);
-  const obj8 = { "Null": 40, "Null": true, "Null": "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", disabled: "" === guild.name };
+  const obj6 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted" };
+  const intl5 = isScreenReaderEnabled(1212).intl;
+  obj6.children = intl5.format(isScreenReaderEnabled(1212).t["2bprXx"], { guidelinesURL: MarketingURLs.GUIDELINES });
+  items1[5] = callback(isScreenReaderEnabled(5459).TextWithIOSLinkWorkaround, obj6);
+  const obj8 = { disabled: "" === guild.name, size: "md", grow: true };
   if (null == customButtonLabel) {
-    const intl6 = arg1(dependencyMap[11]).intl;
-    customButtonLabel = intl6.string(arg1(dependencyMap[11]).t.O0p/lS);
+    const intl6 = isScreenReaderEnabled(1212).intl;
+    customButtonLabel = intl6.string(isScreenReaderEnabled(1212).t["O0p/lS"]);
   }
   obj8.text = customButtonLabel;
   obj8.onPress = onCreate;
   obj8.loading = submitting;
-  items1[6] = callback(arg1(dependencyMap[16]).Button, obj8);
+  items1[6] = callback(isScreenReaderEnabled(4543).Button, obj8);
   let firstFieldErrorMessage1;
   if (null != error) {
     firstFieldErrorMessage1 = error.getFirstFieldErrorMessage("name");
@@ -140,14 +142,14 @@ export default function CreateGuild(arg0) {
           message2 = error.message;
         }
         obj9.children = message2;
-        tmp27Result = callback(importDefault(dependencyMap[17]), obj9);
+        tmp27Result = callback(ref(9004), obj9);
         const tmp27 = callback;
-        const tmp30 = importDefault(dependencyMap[17]);
+        const tmp30 = ref(9004);
       }
     }
   }
   items1[7] = tmp27Result;
   obj.children = items1;
-  obj.children = closure_8(arg1(dependencyMap[9]).Stack, obj);
+  obj.children = closure_8(isScreenReaderEnabled(4541).Stack, obj);
   return callback(ScrollView, obj);
 };

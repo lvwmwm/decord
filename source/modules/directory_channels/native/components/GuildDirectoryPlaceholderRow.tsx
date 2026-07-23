@@ -1,21 +1,24 @@
-// Module ID: 10065
-// Function ID: 77722
-// Dependencies: []
+// Module ID: 10073
+// Function ID: 77762
+// Dependencies: [31, 27, 33, 4130, 689, 4973, 10074, 2]
 
-// Module 10065
-const View = arg1(dependencyMap[1]).View;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-let obj1 = arg1(dependencyMap[3]);
-let obj = { row: {}, rowInner: { flex: 1 } };
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+// Module 10073
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_3;
+let closure_4;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let obj = { row: { flexDirection: "row", padding: 16 }, rowInner: { flex: 1 } };
+obj = { width: 40, height: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden", marginRight: 16, backgroundColor: require("result").DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 obj.placeholderAvatar = obj;
-obj1 = { backgroundColor: arg1(dependencyMap[5]).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
-obj.placeholderText = obj1;
-obj.placeholderBody = { "Null": true, "Null": true };
-let closure_5 = obj1.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const memoResult = importAllResult.memo(() => {
+_createForOfIteratorHelperLoose = { height: 15, borderRadius: 5, backgroundColor: require("result").DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+obj.placeholderText = _createForOfIteratorHelperLoose;
+obj.placeholderBody = { width: "100%", marginTop: 10 };
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(() => {
   const tmp = callback3();
   const importDefault = tmp;
   const sum = Math.floor(2 * Math.random()) + 2;
@@ -23,7 +26,7 @@ const memoResult = importAllResult.memo(() => {
   let obj = { style: tmp.row };
   obj = { style: tmp.placeholderAvatar };
   const sum1 = Math.floor(50 * Math.random()) + 10;
-  const items = [callback(View, obj), ];
+  let items = [callback(View, obj), ];
   obj = { style: tmp.rowInner };
   const obj1 = {};
   const items1 = [tmp.placeholderText, { width: "" + sum1 + "%" }];
@@ -35,16 +38,16 @@ const memoResult = importAllResult.memo(() => {
     let obj = {};
     const items = [, , ];
     ({ placeholderText: arr[0], placeholderBody: arr[1] } = tmp);
-    obj = { width: "" + tmp(closure_1[6])(closure_1 + arg1) + "%" };
+    obj = { width: "" + tmp(table[6])(table + arg1) + "%" };
     items[2] = obj;
     obj.style = items;
-    return callback(closure_2, obj, arg1);
+    return outer1_3(outer1_2, obj, arg1);
   });
   obj.children = items2;
   items[1] = callback2(View, obj);
   obj.children = items;
   return callback2(View, obj);
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryPlaceholderRow.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryPlaceholderRow.tsx");
 
 export default memoResult;

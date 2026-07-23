@@ -1,15 +1,17 @@
 // Module ID: 874
-// Function ID: 9732
+// Function ID: 9733
 // Name: set
-// Dependencies: []
+// Dependencies: [800, 801]
 
 // Module 874 (set)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 const set = new Set();
 arg5._INTERNAL_clearAiProviderSkips = function _INTERNAL_clearAiProviderSkips() {
   set.clear();
-  if (arg1(arg6[0]).DEBUG_BUILD) {
-    const debug = arg1(arg6[1]).debug;
+  if (require(800).DEBUG_BUILD) {
+    const debug = require(801) /* consoleSandbox */.debug;
     debug.log("Cleared AI provider skip registrations");
   }
 };
@@ -18,9 +20,9 @@ arg5._INTERNAL_shouldSkipAiProviderWrapping = function _INTERNAL_shouldSkipAiPro
 };
 arg5._INTERNAL_skipAiProviderWrapping = function _INTERNAL_skipAiProviderWrapping(arr) {
   const item = arr.forEach((arg0) => {
-    set.add(arg0);
-    if (callback(closure_1[0]).DEBUG_BUILD) {
-      const debug = callback(closure_1[1]).debug;
+    outer1_2.add(arg0);
+    if (outer1_0(outer1_1[0]).DEBUG_BUILD) {
+      const debug = outer1_0(outer1_1[1]).debug;
       const _HermesInternal = HermesInternal;
       debug.log("AI provider \"" + arg0 + "\" wrapping will be skipped");
     }

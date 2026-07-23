@@ -1,15 +1,16 @@
-// Module ID: 8899
-// Function ID: 70250
+// Module ID: 8906
+// Function ID: 70291
 // Name: items
-// Dependencies: []
+// Dependencies: [4043, 2]
 // Exports: getSecureFramesDeeplinkExperiment, useSecureFramesDeeplinkExperiment
 
-// Module 8899 (items)
-const obj = { shapes: false, flex: false, sk: false, defaultConfig: { enabled: false } };
-const items = [{ config: { enabled: true } }];
+// Module 8906 (items)
+let obj = { kind: "user", id: "2024-09_secure_frames_deeplink", label: "Secure Frames Deeplinks", defaultConfig: { enabled: false } };
+obj = { id: 1, label: "Enabled.", config: { enabled: true } };
+const items = [obj];
 obj.treatments = items;
-let closure_0 = importDefault(dependencyMap[0])(obj);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/rtc/SecureFramesDeeplinkExperiment.tsx");
+let closure_0 = require("getExperimentDescriptor")(obj);
+const result = require("set").fileFinishedImporting("modules/rtc/SecureFramesDeeplinkExperiment.tsx");
 
 export const useSecureFramesDeeplinkExperiment = function useSecureFramesDeeplinkExperiment(location) {
   return closure_0.useExperiment({ location: location.location }, { autoTrackExposure: true });

@@ -1,12 +1,12 @@
 // Module ID: 3523
-// Function ID: 27185
+// Function ID: 27149
 // Name: _typeof
-// Dependencies: []
+// Dependencies: [3517, 3515]
 
 // Module 3523 (_typeof)
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
-    const _Symbol = Symbol;
+    let _Symbol = Symbol;
     if ("symbol" === typeof Symbol.iterator) {
       function _typeof(arg0) {
         return typeof arg0;
@@ -42,16 +42,16 @@ function _defineProperties(arg0, arg1) {
   }
 }
 function _setPrototypeOf(arg0, arg1) {
-  const tmp = Object.setPrototypeOf || function _setPrototypeOf(arg0, arg1) {
+  const tmp = Object.setPrototypeOf || (function _setPrototypeOf(arg0, arg1) {
     arg0.__proto__ = arg1;
     return arg0;
-  };
+  });
   const _setPrototypeOf = tmp;
   return tmp(arg0, arg1);
 }
 function _createSuper(arg0) {
-  const require = arg0;
-  let closure_1 = function _isNativeReflectConstruct() {
+  let closure_0 = arg0;
+  let closure_1 = (function _isNativeReflectConstruct() {
     if ("undefined" !== typeof Reflect) {
       const _Reflect3 = Reflect;
       if (Reflect.construct) {
@@ -75,22 +75,22 @@ function _createSuper(arg0) {
       }
     }
     return false;
-  }();
+  })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = callback3(arg0);
+    const obj = outer1_7(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, callback3(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      callback2(self);
+      outer1_6(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== callback(constructResult)) {
+      if ("object" !== outer1_2(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -108,7 +108,7 @@ function _assertThisInitialized(arg0) {
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
-    const _Object = Object;
+    let _Object = Object;
     let _getPrototypeOf = Object.getPrototypeOf;
   } else {
     _getPrototypeOf = function _getPrototypeOf(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { value, enumerable: true, configurable: true, writable: true };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const StandAloneMonthParser = (Parser) => {
-  class StandAloneMonthParser {
+export const StandAloneQuarterParser = ((Parser) => {
+  class StandAloneQuarterParser {
     constructor() {
-      if (this instanceof StandAloneMonthParser) {
+      if (this instanceof StandAloneQuarterParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -148,21 +148,21 @@ export const StandAloneMonthParser = (Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = closure_8;
-        tmp12 = closure_6;
+        tmp11 = outer1_8;
+        tmp12 = outer1_6;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = closure_6(applyResult);
+        tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 110;
-        tmp17 = closure_8(applyResult, "priority", 110);
-        tmp18 = closure_6(applyResult);
+        num2 = 120;
+        tmp17 = outer1_8(applyResult, "priority", 120);
+        tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, "prototype", "text", "Array", "format", "r", "Button"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "Q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -176,11 +176,10 @@ export const StandAloneMonthParser = (Parser) => {
       }
     }
   }
-  const dependencyMap = StandAloneMonthParser;
   if ("function" !== typeof Parser) {
-    class StandAloneMonthParser {
+    class StandAloneQuarterParser {
       constructor() {
-        if (this instanceof StandAloneMonthParser) {
+        if (this instanceof StandAloneQuarterParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -192,21 +191,21 @@ export const StandAloneMonthParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 110;
-          tmp17 = closure_8(applyResult, "priority", 110);
-          tmp18 = closure_6(applyResult);
+          num2 = 120;
+          tmp17 = outer1_8(applyResult, "priority", 120);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, "prototype", "text", "Array", "format", "r", "Button"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "Q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,12 +224,12 @@ export const StandAloneMonthParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { "": null, children: null, "": null, value: StandAloneMonthParser };
-  StandAloneMonthParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: StandAloneQuarterParser, writable: true, configurable: true };
+  StandAloneQuarterParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class StandAloneMonthParser {
+    class StandAloneQuarterParser {
       constructor() {
-        if (this instanceof StandAloneMonthParser) {
+        if (this instanceof StandAloneQuarterParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -242,21 +241,21 @@ export const StandAloneMonthParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 110;
-          tmp17 = closure_8(applyResult, "priority", 110);
-          tmp18 = closure_6(applyResult);
+          num2 = 120;
+          tmp17 = outer1_8(applyResult, "priority", 120);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, "prototype", "text", "Array", "format", "r", "Button"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["Y", "R", "Q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -270,38 +269,36 @@ export const StandAloneMonthParser = (Parser) => {
         }
       }
     }
-    _setPrototypeOf(StandAloneMonthParser, Parser);
+    _setPrototypeOf(StandAloneQuarterParser, Parser);
   }
-  let closure_0 = _createSuper(StandAloneMonthParser);
+  let closure_0 = _createSuper(StandAloneQuarterParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
-      function valueCallback(arg0) {
-        return arg0 - 1;
+      if ("q" !== arg1) {
+        if ("qq" !== arg1) {
+          if ("qo" === arg1) {
+            const obj = { unit: "quarter" };
+            return ordinalNumber.ordinalNumber(arg0, obj);
+          } else if ("qqq" === arg1) {
+            return ordinalNumber.quarter(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "standalone" });
+          } else if ("qqqqq" === arg1) {
+            return ordinalNumber.quarter(arg0, { width: "narrow", context: "standalone" });
+          } else {
+            return ordinalNumber.quarter(arg0, { width: "wide", context: "standalone" }) || ordinalNumber.quarter(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.quarter(arg0, { width: "narrow", context: "standalone" });
+          }
+        }
       }
-      if ("L" === arg1) {
-        return callback(StandAloneMonthParser[0]).mapValue(callback(StandAloneMonthParser[0]).parseNumericPattern(callback(StandAloneMonthParser[1]).numericPatterns.month, arg0), valueCallback);
-      } else if ("LL" === arg1) {
-        return callback(StandAloneMonthParser[0]).mapValue(callback(StandAloneMonthParser[0]).parseNDigits(2, arg0), valueCallback);
-      } else if ("Lo" === arg1) {
-        const obj = { unit: "month" };
-        return callback(StandAloneMonthParser[0]).mapValue(ordinalNumber.ordinalNumber(arg0, obj), valueCallback);
-      } else if ("LLL" === arg1) {
-        return ordinalNumber.month(arg0, {}) || ordinalNumber.month(arg0, {});
-      } else if ("LLLLL" === arg1) {
-        return ordinalNumber.month(arg0, {});
-      } else {
-        return ordinalNumber.month(arg0, {}) || ordinalNumber.month(arg0, {}) || ordinalNumber.month(arg0, {});
-      }
+      return callback(StandAloneQuarterParser[0]).parseNDigits(arg1.length, arg0);
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "validate",
     value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 0;
+      let tmp = arg1 >= 1;
       if (tmp) {
-        tmp = arg1 <= 11;
+        tmp = arg1 <= 4;
       }
       return tmp;
     }
@@ -310,11 +307,11 @@ export const StandAloneMonthParser = (Parser) => {
   items[2] = {
     key: "set",
     value: function set(setUTCMonth) {
-      setUTCMonth.setUTCMonth(arg2, 1);
+      setUTCMonth.setUTCMonth(3 * (arg2 - 1), 1);
       setUTCMonth.setUTCHours(0, 0, 0, 0);
       return setUTCMonth;
     }
   };
-  _defineProperties(StandAloneMonthParser.prototype, items);
-  return StandAloneMonthParser;
-}(require(dependencyMap[2]).Parser);
+  _defineProperties(StandAloneQuarterParser.prototype, items);
+  return StandAloneQuarterParser;
+})(require("_defineProperties").Parser);

@@ -1,10 +1,20 @@
 // Module ID: 1340
-// Function ID: 15741
+// Function ID: 15742
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1341, 1342, 1343, 677, 1339, 682, 1344, 566, 686, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, removeCandidateContent, useIsAnyContentShown, useIsContentShown
 
 // Module 1340 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import TaskRunner from "TaskRunner";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,7 +25,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function initState() {
-  const obj = { "Bool(true)": "mn", "Bool(true)": "description", "Bool(true)": "Array", candidates: new Map(), recentlyShown: [] };
+  const obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [] };
   const map = new Map();
   obj.currentlyShown = new Set();
   const set = new Set();
@@ -56,13 +66,14 @@ function withoutContent(currentlyShown, shownFatigableCandidate) {
   return currentlyShown;
 }
 function withContent(currentlyShown, content) {
+  const _require = content;
   if (null == content) {
     return currentlyShown;
   } else {
     currentlyShown = currentlyShown.currentlyShown;
     currentlyShown.add(content.content);
     const recentlyShown = currentlyShown.recentlyShown;
-    const found = recentlyShown.filter((arg0) => arg0 !== arg1.content);
+    const found = recentlyShown.filter((arg0) => arg0 !== content.content);
     found.unshift(content.content);
     found.splice(5);
     currentlyShown.recentlyShown = found;
@@ -70,7 +81,7 @@ function withContent(currentlyShown, content) {
       const currentlyShownGroup = currentlyShown.currentlyShownGroup;
       currentlyShownGroup.add(content.groupName);
     }
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = content(dependencyMap[9]).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1339).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content)) {
       currentlyShown.shownFatigableCandidate = content;
       const prevFatigableCandidate = currentlyShown.prevFatigableCandidate;
@@ -121,7 +132,7 @@ function withUpdateWinner(candidates) {
         taskRunner.unschedule();
         let value;
         if (null != candidates.prevFatigableCandidate) {
-          const candidates2 = candidates.candidates;
+          let candidates2 = candidates.candidates;
           value = candidates2.get(candidates.prevFatigableCandidate.content);
         }
         swapFatigableContent(candidates, value);
@@ -136,10 +147,11 @@ function withUpdateWinner(candidates) {
       }
       if (!scheduledResult) {
         taskRunner.schedule(() => {
-          callback(closure_2[10]).batchUpdates(() => {
-            state.setState((arg0) => {
-              const tmp = callback(arg0);
-              callback2(tmp, function nextFatigableContent(candidates) {
+          outer1_0(outer1_2[10]).batchUpdates(() => {
+            outer2_11.setState((arg0) => {
+              const tmp = outer3_15(arg0);
+              outer3_19(tmp, (function nextFatigableContent(candidates) {
+                let closure_0 = candidates;
                 candidates = candidates.candidates;
                 const items = [...candidates.keys()];
                 let hasItem = null !== candidates.prevFatigableCandidate;
@@ -156,7 +168,7 @@ function withUpdateWinner(candidates) {
                 }
                 const candidates3 = candidates.candidates;
                 return candidates3.get(found[Math.floor(Math, Math.random(Math) * found.length)]);
-              }(tmp));
+              })(tmp));
               return tmp;
             });
           });
@@ -174,39 +186,31 @@ function isStateInCooldown(state) {
   return tmp3;
 }
 function reset() {
-  arg1(dependencyMap[10]).batchUpdates(() => {
-    state.setState(() => {
-      const tmp = callback();
+  require(682) /* batchUpdates */.batchUpdates(() => {
+    outer1_11.setState(() => {
+      const tmp = outer2_14();
       tmp.postConnectionOpen = true;
       return tmp;
     });
   });
   taskRunner.unschedule();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const taskRunner = new arg1(dependencyMap[7]).TaskRunner();
-let obj = arg1(dependencyMap[8]);
-let closure_11 = obj.createWithEqualityFn(initState);
-let closure_12 = false;
-let tmp3 = (Store) => {
+const taskRunner = new require("TaskRunner").TaskRunner();
+let closure_11 = useStoreWithEqualityFn.createWithEqualityFn(initState);
+let c12 = false;
+let tmp3 = ((Store) => {
   class DismissibleContentShownStateStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, DismissibleContentShownStateStore);
-      obj = closure_6(DismissibleContentShownStateStore);
-      tmp2 = closure_5;
-      if (closure_13()) {
+      tmp = outer1_3(this, DismissibleContentShownStateStore);
+      obj = outer1_6(DismissibleContentShownStateStore);
+      tmp2 = outer1_5;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -215,29 +219,28 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = DismissibleContentShownStateStore;
   callback2(DismissibleContentShownStateStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const DismissibleContentShownStateStore = this;
-      this.waitFor(closure_8, closure_9);
-      const items = [closure_8, closure_9];
+      const self = this;
+      this.waitFor(outer1_8, outer1_9);
+      const items = [outer1_8, outer1_9];
       this.syncWith(items, () => self.setHasRequiredAction());
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "setHasRequiredAction",
     value() {
-      let closure_12 = callback(closure_2[11])(closure_8, closure_9);
+      const outer1_12 = outer1_1(outer1_2[11])(outer1_8, outer1_9);
     }
   };
   items[1] = obj;
   return callback(DismissibleContentShownStateStore, items);
-}(importDefault(dependencyMap[12]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "DismissibleContentShownStateStore";
-obj = {
+useStoreWithEqualityFn = {
   CONNECTION_OPEN() {
     reset();
   },
@@ -245,8 +248,8 @@ obj = {
     reset();
   }
 };
-tmp3 = new tmp3(importDefault(dependencyMap[13]), obj);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/dismissible_content/DismissibleContentShownStateStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), useStoreWithEqualityFn);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/dismissible_content/DismissibleContentShownStateStore.tsx");
 
 export default function useDismissibleContentShownStateStore(arg0, arg1) {
   return store(arg0, arg1);
@@ -256,19 +259,19 @@ export const isInCooldown = function isInCooldown() {
 };
 export { isStateInCooldown };
 export const addCandidateContent = function addCandidateContent(content) {
-  const arg1 = content;
-  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = arg1(dependencyMap[9]).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+  const _require = content;
+  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1339).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
   let closure_1 = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content);
-  arg1(dependencyMap[10]).batchUpdates(() => {
-    state.setState((arg0) => {
-      const tmp = callback(arg0);
-      if (!closure_12) {
-        if (closure_1) {
-          callback2(tmp, content);
+  _require(682).batchUpdates(() => {
+    outer1_11.setState((arg0) => {
+      const tmp = outer2_15(arg0);
+      if (!outer2_12) {
+        if (outer1_1) {
+          outer2_17(tmp, outer1_0);
         } else {
           const candidates = tmp.candidates;
-          const result = candidates.set(content.content, content);
-          callback3(tmp);
+          const result = candidates.set(outer1_0.content, outer1_0);
+          outer2_20(tmp);
         }
       }
       return tmp;
@@ -276,18 +279,18 @@ export const addCandidateContent = function addCandidateContent(content) {
   });
 };
 export const removeCandidateContent = function removeCandidateContent(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  arg1(dependencyMap[10]).batchUpdates(() => {
-    state.setState((arg0) => {
-      const tmp = callback(arg0);
-      if (closure_1) {
-        callback3(tmp, closure_0);
-        callback2(tmp, closure_0);
-        callback4(tmp);
+  const _require = arg0;
+  let closure_1 = arg1;
+  _require(682).batchUpdates(() => {
+    outer1_11.setState((arg0) => {
+      const tmp = outer2_15(arg0);
+      if (outer1_1) {
+        outer2_18(tmp, outer1_0);
+        outer2_16(tmp, outer1_0);
+        outer2_20(tmp);
       } else {
-        callback3(tmp, closure_0);
-        callback2(tmp, closure_0);
+        outer2_18(tmp, outer1_0);
+        outer2_16(tmp, outer1_0);
       }
       return tmp;
     });
@@ -318,21 +321,24 @@ export const isContentShown = function isContentShown(DOUBLE_TAP_TO_REACT_EXPAND
   return currentlyShown.has(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
 };
 export const useIsContentShown = function useIsContentShown(FAVORITES_SERVER_ONBOARDING_MENU_ITEM) {
-  const arg1 = FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+  let closure_0 = FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
   return store((currentlyShown) => {
     currentlyShown = currentlyShown.currentlyShown;
-    return currentlyShown.has(currentlyShown);
+    return currentlyShown.has(closure_0);
   });
 };
 export const useIsAnyContentShown = function useIsAnyContentShown(arg0) {
-  const arg1 = arg0;
-  return store((arg0) => arg0.some((arg0) => {
-    const currentlyShown = arg0.currentlyShown;
-    return currentlyShown.has(arg0);
-  }));
+  let closure_0 = arg0;
+  return store((arg0) => {
+    let closure_0 = arg0;
+    return closure_0.some((arg0) => {
+      currentlyShown = currentlyShown.currentlyShown;
+      return currentlyShown.has(arg0);
+    });
+  });
 };
 export const isAnyContentShown = function isAnyContentShown(arr) {
-  const arg1 = store.getState().currentlyShown;
+  const currentlyShown = store.getState().currentlyShown;
   return arr.find((arg0) => currentlyShown.has(arg0));
 };
 export const getCurrentlyShownCounts = function getCurrentlyShownCounts() {
@@ -340,7 +346,7 @@ export const getCurrentlyShownCounts = function getCurrentlyShownCounts() {
   const items1 = [
     store.getState().currentlyShown.size,
     items.filter((arg0) => {
-      const CONTENT_TYPES_WITH_BYPASS_FATIGUE = callback(closure_2[9]).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+      const CONTENT_TYPES_WITH_BYPASS_FATIGUE = outer1_0(outer1_2[9]).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
       return !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(arg0);
     }).length
   ];

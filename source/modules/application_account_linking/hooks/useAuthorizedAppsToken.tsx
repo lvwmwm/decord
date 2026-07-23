@@ -1,59 +1,63 @@
-// Module ID: 5468
-// Function ID: 46726
+// Module ID: 5471
+// Function ID: 46745
 // Name: useAuthorizedAppsTokens
-// Dependencies: []
+// Dependencies: [31, 5066, 566, 1327, 5472, 2]
 // Exports: useAuthorizedAppsToken
 
-// Module 5468 (useAuthorizedAppsTokens)
-function useAuthorizedAppsTokens(closure_3, arg1) {
+// Module 5471 (useAuthorizedAppsTokens)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+
+const require = arg1;
+function useAuthorizedAppsTokens(result, arg1) {
   let obj = arg1;
-  arg1 = closure_3;
+  const _require = result;
   if (null == arg1) {
     obj = {};
   }
   const disableFetch = obj.disableFetch;
   const importDefault = tmp;
-  const items = [closure_4];
-  const items1 = [closure_3];
-  const tokens = arg1(dependencyMap[2]).useStateFromStoresArray(items, () => {
+  const items = [_isNativeReflectConstruct];
+  const items1 = [result];
+  const tokens = _require(stateFromStoresArray1[2]).useStateFromStoresArray(items, () => {
     let found;
-    if (null != arg0) {
-      const mapped = arg0.map((arg0) => newestTokenForApplication.getNewestTokenForApplication(arg0));
-      found = mapped.filter(arg0(stateFromStoresArray1[3]).isNotNullish);
+    if (null != lib) {
+      const mapped = lib.map((arg0) => outer2_4.getNewestTokenForApplication(arg0));
+      found = mapped.filter(lib(stateFromStoresArray1[3]).isNotNullish);
     }
     if (null == found) {
       found = [];
     }
     return found;
   }, items1);
-  const obj2 = arg1(dependencyMap[2]);
-  const items2 = [closure_4];
-  const items3 = [closure_3];
-  const fetched = arg1(dependencyMap[2]).useStateFromStores(items2, () => {
+  const obj2 = _require(stateFromStoresArray1[2]);
+  const items2 = [_isNativeReflectConstruct];
+  const items3 = [result];
+  const fetched = _require(stateFromStoresArray1[2]).useStateFromStores(items2, () => {
     let everyResult;
-    if (null != arg0) {
-      everyResult = arg0.every((arg0) => fetchStateForApplication.getFetchStateForApplication(arg0) === constants.FETCHED);
+    if (null != lib) {
+      everyResult = lib.every((arg0) => outer2_4.getFetchStateForApplication(arg0) === outer2_5.FETCHED);
     }
     return null != everyResult && everyResult;
   }, items3);
-  const obj3 = arg1(dependencyMap[2]);
-  const items4 = [closure_4];
-  const items5 = [closure_3];
-  const stateFromStoresArray1 = arg1(dependencyMap[2]).useStateFromStoresArray(items4, () => {
+  const obj3 = _require(stateFromStoresArray1[2]);
+  const items4 = [_isNativeReflectConstruct];
+  const items5 = [result];
+  stateFromStoresArray1 = _require(stateFromStoresArray1[2]).useStateFromStoresArray(items4, () => {
     let found;
-    if (null != arg0) {
-      found = arg0.filter((arg0) => fetchStateForApplication.getFetchStateForApplication(arg0) === constants.NOT_FETCHED);
+    if (null != lib) {
+      found = lib.filter((arg0) => outer2_4.getFetchStateForApplication(arg0) === outer2_5.NOT_FETCHED);
     }
     if (null == found) {
       found = [];
     }
     return found;
   }, items5);
-  const dependencyMap = stateFromStoresArray1;
   const items6 = [undefined !== disableFetch && disableFetch, stateFromStoresArray1];
   const effect = React.useEffect(() => {
     if (!tmp) {
-      const tmp = 0 === stateFromStoresArray1.length;
+      tmp = 0 === stateFromStoresArray1.length;
     }
     if (!tmp) {
       const response = tmp(stateFromStoresArray1[4]).fetch(stateFromStoresArray1);
@@ -62,19 +66,16 @@ function useAuthorizedAppsTokens(closure_3, arg1) {
   }, items6);
   return { tokens, fetched };
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const FetchState = arg1(dependencyMap[1]).FetchState;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizedAppsToken.tsx");
+const result = require("initialize").fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizedAppsToken.tsx");
 
 export { useAuthorizedAppsTokens };
 export const useAuthorizedAppsToken = function useAuthorizedAppsToken(parentId) {
-  const arg1 = parentId;
-  const items = [parentId];
-  const tmp = useAuthorizedAppsTokens(React.useMemo(() => {
+  let closure_0 = parentId;
+  let items = [parentId];
+  let tmp = useAuthorizedAppsTokens(React.useMemo(() => {
     let tmp = null;
-    if (null != arg0) {
-      const items = [arg0];
+    if (null != closure_0) {
+      const items = [closure_0];
       tmp = items;
     }
     return tmp;

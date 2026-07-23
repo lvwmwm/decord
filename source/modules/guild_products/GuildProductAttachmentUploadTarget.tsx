@@ -1,53 +1,56 @@
-// Module ID: 4704
-// Function ID: 40939
+// Module ID: 4707
+// Function ID: 40957
 // Name: GuildProductAttachmentUploadTarget
-// Dependencies: []
+// Dependencies: [6, 7, 4708, 653, 2]
 
-// Module 4704 (GuildProductAttachmentUploadTarget)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-({ MAX_ATTACHMENT_UPLOAD_COUNT: closure_2, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_3, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: closure_4 } = arg1(dependencyMap[2]));
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const tmp2 = arg1(dependencyMap[2]);
-const tmp3 = () => {
+// Module 4707 (GuildProductAttachmentUploadTarget)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import GUILD_PRODUCT_EDIT_MODAL_KEY from "GUILD_PRODUCT_EDIT_MODAL_KEY";
+import { Endpoints } from "ME";
+
+let closure_2;
+let closure_3;
+let closure_4;
+({ MAX_ATTACHMENT_UPLOAD_COUNT: closure_2, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_3, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: closure_4 } = GUILD_PRODUCT_EDIT_MODAL_KEY);
+const tmp3 = (() => {
   class GuildProductAttachmentUploadTarget {
     constructor() {
       tmp = GuildProductAttachmentUploadTarget(this, GuildProductAttachmentUploadTarget);
       return;
     }
   }
-  let closure_0 = GuildProductAttachmentUploadTarget;
   let obj = {
     key: "getCreateAttachmentURL",
     value(arg0) {
-      return closure_5.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD(arg0);
+      return outer1_5.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD(arg0);
     }
   };
   const items = [obj, , , , , ];
   obj = {
     key: "getDeleteUploadURL",
     value(arg0) {
-      return closure_5.MESSAGE_DELETE_UPLOAD(arg0);
+      return outer1_5.MESSAGE_DELETE_UPLOAD(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "getMaxFileSize",
     value() {
-      return closure_3;
+      return outer1_3;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getMaxAttachmentsCount",
     value() {
-      return closure_2;
+      return outer1_2;
     }
   };
   items[4] = {
     key: "getMaxTotalAttachmentSize",
     value() {
-      return closure_4;
+      return outer1_4;
     }
   };
   items[5] = {
@@ -57,7 +60,7 @@ const tmp3 = () => {
     }
   };
   return callback(GuildProductAttachmentUploadTarget, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_products/GuildProductAttachmentUploadTarget.tsx");
+})();
+const result = require("GUILD_PRODUCT_EDIT_MODAL_KEY").fileFinishedImporting("modules/guild_products/GuildProductAttachmentUploadTarget.tsx");
 
 export default tmp3;

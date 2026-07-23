@@ -1,13 +1,13 @@
-// Module ID: 7903
-// Function ID: 62924
+// Module ID: 7909
+// Function ID: 62961
 // Name: formatSharedClientThemeData
-// Dependencies: []
+// Dependencies: [27, 7738, 1212, 2396, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 7903 (formatSharedClientThemeData)
-const Image = require(dependencyMap[0]).Image;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");
+// Module 7909 (formatSharedClientThemeData)
+import { Image } from "get ActivityIndicator";
+
+const result = require("getSystemLocale").fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");
 
 export const formatSharedClientThemeData = function formatSharedClientThemeData(message, ensureAvatarSourceResult, nick) {
   const sharedClientTheme = message.sharedClientTheme;
@@ -20,15 +20,15 @@ export const formatSharedClientThemeData = function formatSharedClientThemeData(
       str2 = ensureAvatarSourceResult.uri;
     }
     obj.createdByAvatarUrl = str2;
-    obj.nitroWheelIconUrl = Image.resolveAssetSource(importDefault(dependencyMap[1])).uri;
-    const intl = require(dependencyMap[2]).intl;
-    obj.previewLabel = intl.string(require(dependencyMap[2]).t.SKNnqq);
-    const intl2 = require(dependencyMap[2]).intl;
-    obj.previewHeading = intl2.string(importDefault(dependencyMap[3]).yl1iMm);
-    const intl3 = require(dependencyMap[2]).intl;
+    obj.nitroWheelIconUrl = Image.resolveAssetSource(importDefault(7738)).uri;
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.previewLabel = intl.string(require(1212) /* getSystemLocale */.t.SKNnqq);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj.previewHeading = intl2.string(importDefault(2396).yl1iMm);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     obj = { username: "__USERNAME__" };
     const _HermesInternal = HermesInternal;
-    obj.createdByLabel = "" + intl3.format(importDefault(dependencyMap[3]).fQPSEf, obj);
+    obj.createdByLabel = "" + intl3.format(importDefault(2396).fQPSEf, obj);
     return obj;
   }
 };

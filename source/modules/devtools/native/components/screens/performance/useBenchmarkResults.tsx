@@ -1,33 +1,37 @@
-// Module ID: 14588
-// Function ID: 109943
+// Module ID: 14703
+// Function ID: 112107
 // Name: useBenchmarkResults
-// Dependencies: []
+// Dependencies: [57, 31, 2]
 // Exports: default
 
-// Module 14588 (useBenchmarkResults)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/devtools/native/components/screens/performance/useBenchmarkResults.tsx");
+// Module 14703 (useBenchmarkResults)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/useBenchmarkResults.tsx");
 
 export default function useBenchmarkResults() {
+  let _slicedToArray;
   let tmp2;
-  [tmp2, closure_0] = callback(React.useState([]), 2);
-  const React = React.useRef(0);
+  [tmp2, _slicedToArray] = callback(React.useState([]), 2);
+  React = React.useRef(0);
   const tmp = callback(React.useState([]), 2);
   return {
     results: tmp2,
     addMount: React.useCallback((arg0, arg1) => {
-      let closure_1 = arg1;
-      arg0((arg0) => {
-        arg1.current = +arg1.current + 1;
-        const items = [{ kind: "mount", id: tmp, label: arg0, elapsedMs: arg1 }, ...arg0];
+      const callback = arg0;
+      let result = arg1;
+      callback((arg0) => {
+        ref.current = +ref.current + 1;
+        const items = [{ kind: "mount", id: tmp, label: _slicedToArray, elapsedMs: ref }, ...arg0];
         return items;
       });
     }, []),
     addScroll: React.useCallback((arg0) => {
-      arg0((arg0) => {
-        ref.current = +ref.current + 1;
-        const merged = Object.assign(arg0);
+      const callback = arg0;
+      callback((arg0) => {
+        outer1_1.current = +outer1_1.current + 1;
+        const merged = Object.assign(_slicedToArray);
         const items = [{ kind: "scroll", id: tmp }, ...arg0];
         return items;
       });

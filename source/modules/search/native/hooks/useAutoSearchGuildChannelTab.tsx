@@ -1,45 +1,45 @@
-// Module ID: 15295
-// Function ID: 116292
+// Module ID: 15412
+// Function ID: 118466
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 11399, 10078, 11406, 22, 11398, 2]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 15295 (useAutoSearchGuildChannelTab)
-import __exportStarResult1 from "__exportStarResult1";
-import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "__exportStarResult1";
+// Module 15412 (useAutoSearchGuildChannelTab)
+import result from "result";
+import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
+const require = arg1;
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
 
 export const useAutoSearchGuildChannelTab = function useAutoSearchGuildChannelTab(searchContext, arg1) {
-  arg1 = searchContext;
-  const importDefault = arg1;
+  let closure_0 = searchContext;
+  let closure_1 = arg1;
   const items = [searchContext];
   const callback = React.useCallback((searchQueryString) => {
-    let obj = searchQueryString(callback[2]);
-    const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchQueryString);
+    let obj = searchContext(callback[2]);
+    const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
     if (null != guildIdFromSearchContext) {
-      obj = { searchContext: searchQueryString, searchQueryString, guildId: guildIdFromSearchContext };
-      const result = arg1(callback[3]).searchGuildChannelTab(obj);
-      const obj2 = arg1(callback[3]);
+      obj = { searchContext, searchQueryString, guildId: guildIdFromSearchContext };
+      const result = callback(callback[3]).searchGuildChannelTab(obj);
+      const obj2 = callback(callback[3]);
     }
   }, items);
-  const dependencyMap = callback;
   const items1 = [arg1, callback];
   const effect = React.useEffect(() => {
-    if (!arg1) {
+    if (!closure_1) {
       callback("");
     }
   }, items1);
   const items2 = [searchContext, arg1, callback];
   const effect1 = React.useEffect(() => {
-    if (!arg1) {
-      const obj = arg0(callback[4]);
-      const debounceResult = arg0(callback[4]).debounce(callback, closure_4);
-      return arg1(callback[5]).subscribeTextInputValue(arg0, debounceResult, true);
+    if (!callback) {
+      const obj = searchContext(callback[4]);
+      const debounceResult = searchContext(callback[4]).debounce(callback, outer1_4);
+      return callback(callback[5]).subscribeTextInputValue(searchContext, debounceResult, true);
     }
   }, items2);
   const items3 = [searchContext];
   const effect2 = React.useEffect(() => () => {
-    const result = callback(closure_2[3]).cleanupGuildChannelTab(closure_0);
+    const result = callback(callback[3]).cleanupGuildChannelTab(outer1_0);
   }, items3);
 };

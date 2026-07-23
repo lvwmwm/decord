@@ -1,14 +1,15 @@
-// Module ID: 5161
-// Function ID: 44947
+// Module ID: 5164
+// Function ID: 44966
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 33, 2]
 // Exports: RedesignCompat
 
-// Module 5161 (context)
-const jsx = arg1(dependencyMap[1]).jsx;
-const context = importAll(dependencyMap[0]).createContext(false);
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("design/components/RedesignCompat/native/RedesignCompat.native.tsx");
+// Module 5164 (context)
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const context = require("result").createContext(false);
+const result = require("set").fileFinishedImporting("design/components/RedesignCompat/native/RedesignCompat.native.tsx");
 
 export const RedesignCompatContext = context;
 export const RedesignCompat = function RedesignCompat(enabled) {
@@ -20,5 +21,5 @@ export const RedesignCompat = function RedesignCompat(enabled) {
   }
   obj.value = tmp2;
   obj.children = enabled.children;
-  return <context.Provider {...obj} />;
+  return <context.Provider />;
 };

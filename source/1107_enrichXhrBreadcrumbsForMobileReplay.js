@@ -1,9 +1,11 @@
 // Module ID: 1107
-// Function ID: 12639
+// Function ID: 12640
 // Name: enrichXhrBreadcrumbsForMobileReplay
-// Dependencies: []
+// Dependencies: [1108, 794]
 
 // Module 1107 (enrichXhrBreadcrumbsForMobileReplay)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.enrichXhrBreadcrumbsForMobileReplay = function enrichXhrBreadcrumbsForMobileReplay(category, xhr) {
   let response;
   let responseType;
@@ -24,9 +26,9 @@ arg5.enrichXhrBreadcrumbsForMobileReplay = function enrichXhrBreadcrumbsForMobil
         }
         xhr = xhr.xhr;
         let num = 0;
-        const bodySize = xhr(arg6[0]).getBodySize(xhr.input);
+        const bodySize = require(1108) /* parseContentLengthHeader */.getBodySize(xhr.input);
         if (xhr.getResponseHeader("content-length")) {
-          num = xhr(arg6[num]);
+          num = require(dependencyMap[num]);
           let result = num.parseContentLengthHeader(xhr.getResponseHeader("content-length"));
         } else {
           ({ response, responseType } = xhr);
@@ -36,18 +38,18 @@ arg5.enrichXhrBreadcrumbsForMobileReplay = function enrichXhrBreadcrumbsForMobil
                 const _JSON = JSON;
                 let json = JSON.stringify(response);
               }
-              result = xhr(arg6[num]).getBodySize(json);
-              const obj3 = xhr(arg6[num]);
+              result = require(dependencyMap[num]).getBodySize(json);
+              const obj3 = require(dependencyMap[num]);
             }
           }
           json = response;
         }
-        const obj2 = xhr(arg6[0]);
+        const obj2 = require(1108) /* parseContentLengthHeader */;
         const _Object = obj.Object;
         assign = _Object.assign;
         obj = { start_timestamp: startTimestamp, end_timestamp: endTimestamp, request_body_size: bodySize, response_body_size: result };
-        category.data = xhr(arg6[1]).dropUndefinedKeys(assign(obj, category.data));
-        const obj4 = xhr(arg6[1]);
+        category.data = require(794) /* registerSpanErrorInstrumentation */.dropUndefinedKeys(assign(obj, category.data));
+        const obj4 = require(794) /* registerSpanErrorInstrumentation */;
       }
     }
   }

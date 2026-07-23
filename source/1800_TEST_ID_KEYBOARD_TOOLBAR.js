@@ -1,7 +1,7 @@
 // Module ID: 1800
-// Function ID: 19910
+// Function ID: 19911
 // Name: TEST_ID_KEYBOARD_TOOLBAR
-// Dependencies: []
+// Dependencies: [1777]
 
 // Module 1800 (TEST_ID_KEYBOARD_TOOLBAR)
 const combined = "" + "keyboard.toolbar" + ".previous";
@@ -9,7 +9,7 @@ const combined1 = "" + "keyboard.toolbar" + ".next";
 const combined2 = "" + "keyboard.toolbar" + ".content";
 let num = 0;
 const combined3 = "" + "keyboard.toolbar" + ".done";
-const tmp6 = require(dependencyMap[0]).KEYBOARD_BORDER_RADIUS > 0;
+const tmp6 = require("AndroidSoftInputModes").KEYBOARD_BORDER_RADIUS > 0;
 if (tmp6) {
   num = -11;
 }

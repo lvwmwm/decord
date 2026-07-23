@@ -1,45 +1,53 @@
-// Module ID: 10824
-// Function ID: 84052
+// Module ID: 10834
+// Function ID: 84101
 // Name: SuccessResultModal
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 3758, 1906, 653, 1455, 33, 4130, 689, 8303, 1212, 4337, 5737, 675, 566, 4098, 3989, 1555, 5121, 10835, 4126, 4543, 2]
 // Exports: default
 
-// Module 10824 (SuccessResultModal)
-let closure_3 = importAll(dependencyMap[0]);
-({ Image: closure_4, View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[1]));
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[1]);
-({ AnalyticEvents: closure_10, Permissions: closure_11 } = arg1(dependencyMap[5]));
-const AppLauncherRouteName = arg1(dependencyMap[6]).AppLauncherRouteName;
-const tmp3 = arg1(dependencyMap[5]);
-({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
-obj.container = obj;
-obj.scrollView = { flex: 1 };
-const tmp4 = arg1(dependencyMap[7]);
-obj.scrollViewContentContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
-obj.inner = { <string:3023162607>: 24, <string:2937120107>: 24, <string:2781144925>: null, <string:775504923>: "2ec8d4d40c93ceea32933ae4e505df6e" };
-obj.text = {};
-obj.footer = { "Bool(true)": null, "Bool(true)": 0.3, "Bool(true)": "PinwheelOut", "Bool(true)": null };
-obj.footerLandscape = {};
-obj.footerPortrait = { "Null": "safety_state", "Null": "message" };
-let closure_16 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/oauth2/native/SuccessResult.tsx");
+// Module 10834 (SuccessResultModal)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ Image: closure_4, View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ AnalyticEvents: closure_10, Permissions: closure_11 } = ME);
+({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.scrollView = { flex: 1 };
+let obj1 = { height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.scrollViewContentContainer = obj1;
+_createForOfIteratorHelperLoose.inner = { flexDirection: "column", alignItems: "center", justifyContent: "center", paddingHorizontal: 16 };
+_createForOfIteratorHelperLoose.text = { marginTop: 24, paddingHorizontal: 40, textAlign: "center" };
+_createForOfIteratorHelperLoose.footer = { flexDirection: "column", justifyContent: "space-between", padding: 16, gap: 16 };
+_createForOfIteratorHelperLoose.footerLandscape = { flexDirection: "row-reverse", padding: 16 };
+_createForOfIteratorHelperLoose.footerPortrait = { flexDirection: "column", padding: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/oauth2/native/SuccessResult.tsx");
 
 export default function SuccessResultModal(guild) {
   guild = guild.guild;
-  const arg1 = guild;
   const application = guild.application;
-  const importDefault = application;
-  let dependencyMap;
+  let stateFromStores;
   let React;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[10]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = guild(stateFromStores[10]);
   const items = [application, guild];
   const memo = React.useMemo(() => {
     if (null != application) {
@@ -69,7 +77,7 @@ export default function SuccessResultModal(guild) {
       }
     } else {
       const intl = guild(stateFromStores[11]).intl;
-      return intl.string(guild(stateFromStores[11]).t.Dp+rgP);
+      return intl.string(guild(stateFromStores[11]).t["Dp+rgP"]);
     }
   }, items);
   const items1 = [guild, ];
@@ -103,17 +111,16 @@ export default function SuccessResultModal(guild) {
         id3 = guild.id;
       }
       obj.guild_id = id3;
-      obj.track(closure_10.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, obj);
+      obj.track(outer1_10.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, obj);
       const obj3 = guild(stateFromStores[13]);
     }
   }, items1);
-  let obj1 = arg1(dependencyMap[15]);
+  let obj1 = guild(stateFromStores[15]);
   const items2 = [closure_9];
-  const stateFromStores = obj1.useStateFromStores(items2, () => channelId.getChannelId());
-  dependencyMap = stateFromStores;
-  let obj2 = arg1(dependencyMap[15]);
-  const items3 = [closure_7];
-  React = obj2.useStateFromStores(items3, () => channel.getChannel(stateFromStores));
+  stateFromStores = obj1.useStateFromStores(items2, () => outer1_9.getChannelId());
+  let obj2 = guild(stateFromStores[15]);
+  const items3 = [_isNativeReflectConstruct];
+  React = obj2.useStateFromStores(items3, () => outer1_7.getChannel(stateFromStores));
   const items4 = [application, stateFromStores];
   let id1;
   const callback1 = React.useCallback(() => {
@@ -127,14 +134,14 @@ export default function SuccessResultModal(guild) {
     }
     if (tmp3) {
       obj = { application_id: application.id };
-      application(stateFromStores[14]).track(closure_10.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, obj);
+      application(stateFromStores[14]).track(outer1_10.OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED, obj);
       const _setImmediate = setImmediate;
       setImmediate(() => {
-        let obj = callback(closure_2[17]);
+        let obj = guild(stateFromStores[17]);
         const bestActiveInput = obj.getBestActiveInput();
         if (null != bestActiveInput) {
-          obj = { type: callback(closure_2[18]).KeyboardTypes.APP_LAUNCHER };
-          obj = { initialRouteName: constants.APPLICATION_VIEW, application: closure_1 };
+          obj = { type: guild(stateFromStores[18]).KeyboardTypes.APP_LAUNCHER };
+          obj = { initialRouteName: outer2_12.APPLICATION_VIEW, application: outer1_1 };
           obj.context = obj;
           bestActiveInput.openCustomKeyboard(obj);
         }
@@ -157,7 +164,7 @@ export default function SuccessResultModal(guild) {
       id = application.id;
     }
     obj.application_id = id;
-    obj.track(closure_10.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, obj);
+    obj.track(outer1_10.OAUTH2_AUTHORIZE_SUCCESS_CLOSE_CLICKED, obj);
   }, items5);
   if (null != application) {
     id2 = application.id;
@@ -171,46 +178,46 @@ export default function SuccessResultModal(guild) {
       id = application.id;
     }
     obj.application_id = id;
-    obj.track(closure_10.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, obj);
+    obj.track(outer1_10.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, obj);
   }, items6);
-  let obj3 = arg1(dependencyMap[15]);
+  let obj3 = guild(stateFromStores[15]);
   const items7 = [closure_8];
-  const stateFromStores1 = obj3.useStateFromStores(items7, () => closure_8.can(constants.SEND_MESSAGES, closure_3));
+  const stateFromStores1 = obj3.useStateFromStores(items7, () => outer1_8.can(outer1_11.SEND_MESSAGES, result));
   obj = { bottom: true, style: tmp.container };
   obj = { style: tmp.scrollView, contentContainerStyle: tmp.scrollViewContentContainer };
   obj1 = { style: tmp.inner };
-  obj2 = { source: importDefault(dependencyMap[20]) };
+  obj2 = { source: application(stateFromStores[20]) };
   const items8 = [callback(closure_4, obj2), , ];
   obj3 = { style: tmp.text, variant: "text-lg/medium" };
-  const intl = arg1(dependencyMap[11]).intl;
-  obj3.children = intl.string(arg1(dependencyMap[11]).t.se5gLj);
-  items8[1] = callback(arg1(dependencyMap[21]).Text, obj3);
+  let intl = guild(stateFromStores[11]).intl;
+  obj3.children = intl.string(guild(stateFromStores[11]).t.se5gLj);
+  items8[1] = callback(guild(stateFromStores[21]).Text, obj3);
   let tmp19 = null;
   if (null != memo) {
     const obj4 = { style: tmp.text, variant: "text-sm/normal", children: memo };
-    tmp19 = callback(arg1(dependencyMap[21]).Text, obj4);
+    tmp19 = callback(guild(stateFromStores[21]).Text, obj4);
   }
   items8[2] = tmp19;
   obj1.children = items8;
   obj.children = closure_14(closure_5, obj1);
   const items9 = [callback(closure_6, obj), ];
   const obj5 = {};
-  const items10 = [tmp.footer, obj.useStore().orientation === arg1(dependencyMap[10]).OrientationType.LANDSCAPE ? tmp.footerLandscape : tmp.footerPortrait];
+  const items10 = [tmp.footer, obj.useStore().orientation === guild(stateFromStores[10]).OrientationType.LANDSCAPE ? tmp.footerLandscape : tmp.footerPortrait];
   obj5.style = items10;
   const obj6 = {};
   let tmp28Result = null;
   if (null != guild) {
     const obj7 = { size: "lg" };
-    const intl2 = arg1(dependencyMap[11]).intl;
+    let intl2 = guild(stateFromStores[11]).intl;
     const obj8 = {};
     let name;
     if (null != guild) {
       name = guild.name;
     }
     obj8.guildName = name;
-    obj7.text = intl2.formatToPlainString(arg1(dependencyMap[11]).t.UdYYP3, obj8);
+    obj7.text = intl2.formatToPlainString(guild(stateFromStores[11]).t.UdYYP3, obj8);
     obj7.onPress = callback;
-    tmp28Result = callback(arg1(dependencyMap[22]).Button, obj7);
+    tmp28Result = callback(guild(stateFromStores[22]).Button, obj7);
     const tmp28 = callback;
   }
   const items11 = [tmp28Result, , ];
@@ -219,10 +226,10 @@ export default function SuccessResultModal(guild) {
     tmp32 = null;
     if (stateFromStores1) {
       const obj9 = { size: "lg" };
-      const intl3 = arg1(dependencyMap[11]).intl;
-      obj9.text = intl3.string(arg1(dependencyMap[11]).t.0cCDKP);
+      let intl3 = guild(stateFromStores[11]).intl;
+      obj9.text = intl3.string(guild(stateFromStores[11]).t["0cCDKP"]);
       obj9.onPress = callback1;
-      tmp32 = callback(arg1(dependencyMap[22]).Button, obj9);
+      tmp32 = callback(guild(stateFromStores[22]).Button, obj9);
     }
   }
   items11[1] = tmp32;
@@ -232,13 +239,13 @@ export default function SuccessResultModal(guild) {
     str4 = "tertiary";
   }
   obj10.variant = str4;
-  const intl4 = arg1(dependencyMap[11]).intl;
-  obj10.text = intl4.string(arg1(dependencyMap[11]).t.cpT0Cq);
+  const intl4 = guild(stateFromStores[11]).intl;
+  obj10.text = intl4.string(guild(stateFromStores[11]).t.cpT0Cq);
   obj10.onPress = callback2;
-  items11[2] = callback(arg1(dependencyMap[22]).Button, obj10);
+  items11[2] = callback(guild(stateFromStores[22]).Button, obj10);
   obj6.children = items11;
   obj5.children = closure_14(closure_15, obj6);
   items9[1] = callback(closure_5, obj5);
   obj.children = items9;
-  return closure_14(arg1(dependencyMap[19]).SafeAreaPaddingView, obj);
+  return closure_14(guild(stateFromStores[19]).SafeAreaPaddingView, obj);
 };

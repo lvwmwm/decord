@@ -1,7 +1,7 @@
 // Module ID: 1470
-// Function ID: 17108
+// Function ID: 17109
 // Name: get getKey
-// Dependencies: []
+// Dependencies: [31]
 
 // Module 1470 (get getKey)
 const obj = { isDefault: true };
@@ -41,4 +41,4 @@ Object.defineProperty(obj, "getIsInitial", {
   set: undefined
 });
 
-export default importAll(dependencyMap[0]).createContext(obj);
+export default require("result").createContext(obj);

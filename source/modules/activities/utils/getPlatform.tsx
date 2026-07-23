@@ -1,19 +1,18 @@
-// Module ID: 8177
-// Function ID: 64549
+// Module ID: 8183
+// Function ID: 64586
 // Name: getPlatform
-// Dependencies: []
+// Dependencies: [1881, 2]
 // Exports: default
 
-// Module 8177 (getPlatform)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/activities/utils/getPlatform.tsx");
+// Module 8183 (getPlatform)
+const result = require("set").fileFinishedImporting("modules/activities/utils/getPlatform.tsx");
 
 export default function getPlatform(arg0) {
   if ("android" === arg0) {
-    return require(dependencyMap[0]).EmbeddedActivitySupportedPlatforms.ANDROID;
+    return require(1881) /* PermissionOverwriteType */.EmbeddedActivitySupportedPlatforms.ANDROID;
   } else if ("ios" === arg0) {
-    return require(dependencyMap[0]).EmbeddedActivitySupportedPlatforms.IOS;
+    return require(1881) /* PermissionOverwriteType */.EmbeddedActivitySupportedPlatforms.IOS;
   } else {
-    return require(dependencyMap[0]).EmbeddedActivitySupportedPlatforms.WEB;
+    return require(1881) /* PermissionOverwriteType */.EmbeddedActivitySupportedPlatforms.WEB;
   }
 };

@@ -1,9 +1,17 @@
-// Module ID: 15285
-// Function ID: 115380
+// Module ID: 15402
+// Function ID: 117554
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 3768, 15403, 22, 10078, 15407, 2]
 
-// Module 15285 (_isNativeReflectConstruct)
+// Module 15402 (_isNativeReflectConstruct)
+import apply from "apply";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _callSuper from "_callSuper";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,44 +21,37 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const tmp2 = (CachedSearchResultParser) => {
+let tmp2 = ((CachedSearchResultParser) => {
   class SearchResultMessageParser {
     constructor(arg0, arg1) {
       self = this;
-      tmp = closure_3(this, SearchResultMessageParser);
-      obj = closure_5(SearchResultMessageParser);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      tmp = outer1_3(this, apply);
+      obj = outer1_5(apply);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, [], closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, [], outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      SearchResultMessageParser = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.truncateMessage = (str) => {
         let num = arg2;
         if (arg2 === undefined) {
           num = 1;
         }
-        let tmp2Result;
+        let set;
         if (null == str) {
           return null;
         } else {
           const str4 = str.replace(/(\r\n|\n|\r)/gm, " ");
           const _Set = Set;
-          const set = new Set(tmp2Result(closure_1[6]).analyze(arg1));
-          tmp2Result = set;
+          set = new Set(SearchResultMessageParser(outer2_1[6]).analyze(arg1));
           const parts = str4.split(/(\W+)/g);
-          const found = parts.find((arg0) => set(closure_1[6]).shouldHighlight(arg0, set));
+          const found = parts.find((arg0) => SearchResultMessageParser(outer3_1[6]).shouldHighlight(arg0, set));
           if (null == found) {
             return null;
           } else {
@@ -70,32 +71,32 @@ const tmp2 = (CachedSearchResultParser) => {
               return "" + str2 + str4.substring(bound);
             }
           }
-          const obj = tmp2Result(closure_1[6]);
+          const obj = SearchResultMessageParser(outer2_1[6]);
         }
       };
       tmp2Result.getSearchResults = (content) => {
         if (null != tmp2Result.tokenizedQueryContent) {
           if ("" !== tmp2Result.tokenizedQueryContent) {
-            const truncateMessageResult = tmp2Result.truncateMessage(content.content, tmp2Result.tokenizedQueryContent, tmp2Result.lineClamp);
+            let truncateMessageResult = tmp2Result.truncateMessage(content.content, tmp2Result.tokenizedQueryContent, tmp2Result.lineClamp);
             if (null != truncateMessageResult) {
-              const prototype2 = ctor.prototype;
-              const tmp11 = new ctor(content);
+              const prototype2 = outer2_7.prototype;
+              const tmp11 = new outer2_7(content);
               tmp11.content = truncateMessageResult;
               return tmp11;
             } else {
-              const obj = tmp2Result(closure_1[7]);
-              const mapped = tmp2Result(closure_1[7]).chain(content.embeds).map((rawTitle) => {
-                let truncateMessageResult = closure_0.truncateMessage(rawTitle.rawTitle, closure_0.tokenizedQueryContent, closure_0.lineClamp);
+              const obj = SearchResultMessageParser(outer2_1[7]);
+              const mapped = SearchResultMessageParser(outer2_1[7]).chain(content.embeds).map((rawTitle) => {
+                let truncateMessageResult = outer1_0.truncateMessage(rawTitle.rawTitle, outer1_0.tokenizedQueryContent, outer1_0.lineClamp);
                 if (null == truncateMessageResult) {
-                  truncateMessageResult = closure_0.truncateMessage(rawTitle.rawDescription, closure_0.tokenizedQueryContent, closure_0.lineClamp);
+                  truncateMessageResult = outer1_0.truncateMessage(rawTitle.rawDescription, outer1_0.tokenizedQueryContent, outer1_0.lineClamp);
                 }
                 return truncateMessageResult;
               });
-              const chainResult = tmp2Result(closure_1[7]).chain(content.embeds);
+              const chainResult = SearchResultMessageParser(outer2_1[7]).chain(content.embeds);
               const valueResult = mapped.find((arg0) => null != arg0).value();
               if (null != valueResult) {
-                const prototype = ctor.prototype;
-                const tmp5 = new ctor(content);
+                const prototype = outer2_7.prototype;
+                const tmp5 = new outer2_7(content);
                 tmp5.content = valueResult;
                 return tmp5;
               } else {
@@ -107,11 +108,11 @@ const tmp2 = (CachedSearchResultParser) => {
         }
         return content;
       };
-      obj2 = SearchResultMessageParser(closure_1[8]);
+      obj2 = SearchResultMessageParser(outer1_1[8]);
       tokenizeQueryResult = obj2.tokenizeQuery(CachedSearchResultParser);
-      obj3 = SearchResultMessageParser(closure_1[8]);
+      obj3 = SearchResultMessageParser(outer1_1[8]);
       searchQueryFromTokens = obj3.getSearchQueryFromTokens(tokenizeQueryResult);
-      obj4 = SearchResultMessageParser(closure_1[8]);
+      obj4 = SearchResultMessageParser(outer1_1[8]);
       str = obj4.getQueryContentString(searchQueryFromTokens);
       trimmed = undefined;
       if (null != str) {
@@ -126,10 +127,9 @@ const tmp2 = (CachedSearchResultParser) => {
       return tmp2Result;
     }
   }
-  const arg1 = SearchResultMessageParser;
   callback2(SearchResultMessageParser, CachedSearchResultParser);
   return callback(SearchResultMessageParser);
-}(arg1(dependencyMap[9]).CachedSearchResultParser);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/search/native/message_parsers/MessageSearchResultParser.tsx");
+})(require("CachedSearchResultParser").CachedSearchResultParser);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/search/native/message_parsers/MessageSearchResultParser.tsx");
 
 export default tmp2;

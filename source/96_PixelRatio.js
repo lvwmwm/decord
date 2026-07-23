@@ -1,31 +1,32 @@
 // Module ID: 96
 // Function ID: 1550
 // Name: PixelRatio
-// Dependencies: []
+// Dependencies: [6, 7, 97]
 
 // Module 96 (PixelRatio)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export default () => {
+const require = arg1;
+
+export default (() => {
   class PixelRatio {
     constructor() {
-      tmp = closure_2(this, PixelRatio);
+      tmp = outer1_2(this, PixelRatio);
       return;
     }
   }
-  const arg1 = PixelRatio;
   let obj = {
     key: "get",
     value: function get() {
-      return PixelRatio(closure_1[2]).default.get("window").scale;
+      return PixelRatio(outer1_1[2]).default.get("window").scale;
     }
   };
   const items = [obj, , , , ];
   obj = {
     key: "getFontScale",
     value: function getFontScale() {
-      let fontScale = PixelRatio(closure_1[2]).default.get("window").fontScale;
+      let fontScale = PixelRatio(outer1_1[2]).default.get("window").fontScale;
       if (!fontScale) {
         fontScale = PixelRatio.get();
       }
@@ -54,4 +55,4 @@ export default () => {
     }
   };
   return callback(PixelRatio, null, items);
-}();
+})();

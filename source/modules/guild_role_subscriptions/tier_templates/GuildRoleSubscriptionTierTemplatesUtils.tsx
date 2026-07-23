@@ -1,53 +1,64 @@
-// Module ID: 14008
-// Function ID: 106525
+// Module ID: 14122
+// Function ID: 108681
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 31, 1348, 3752, 14117, 14123, 653, 1355, 4370, 624, 1360, 686, 8411, 5641, 12900, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 14008 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 14122 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { useMemo } from "result";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { useEditStateStore } from "AllChannelAccessOptions";
+import closure_9 from "_isNativeReflectConstruct";
+import { GuildFeatures } from "ME";
+import { ChannelFlags } from "set";
+import importDefaultResult from "allSettled";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +69,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -87,19 +98,18 @@ function _arrayLikeToArray(arg0, arg1) {
 function getUsedTemplateChannelsForGuild(arg0) {
   let iter2;
   let arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
-  const arg1 = useEditStateStore.getState().listings;
+  const listings = useEditStateStore.getState().listings;
   const set = new Set();
-  const importDefault = set;
   if (null != arr) {
-    const item = arr.forEach((arg0) => {
+    let item = arr.forEach((arg0) => {
       let channelBenefits;
       if (null != listings[arg0]) {
         channelBenefits = tmp.channelBenefits;
       }
       if (null != channelBenefits) {
         const item = channelBenefits.forEach((ref_id) => {
-          if (null != channel.getChannel(ref_id.ref_id)) {
-            set.add(ref_id.ref_id);
+          if (null != outer2_9.getChannel(ref_id.ref_id)) {
+            outer1_1.add(ref_id.ref_id);
           }
         });
       }
@@ -110,8 +120,8 @@ function getUsedTemplateChannelsForGuild(arg0) {
   let iter = tmp3();
   if (!iter.done) {
     do {
-      let tmp4 = closure_9;
-      let channel = closure_9.getChannel(iter.value);
+      let tmp4 = store;
+      let channel = store.getChannel(iter.value);
       if (null != channel) {
         arr = items.push(channel.set("guild_id", arg0));
       }
@@ -124,34 +134,22 @@ function getUsedTemplateChannelsForGuild(arg0) {
 function _createChannelsFromTemplateTierBenefits() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _createChannelsFromTemplateTierBenefits = obj;
   return obj(...arguments);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-const useMemo = arg1(dependencyMap[1]).useMemo;
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-const useEditStateStore = arg1(dependencyMap[4]).useEditStateStore;
-let closure_9 = importDefault(dependencyMap[5]);
-const GuildFeatures = arg1(dependencyMap[6]).GuildFeatures;
-const ChannelFlags = arg1(dependencyMap[7]).ChannelFlags;
-importDefault(dependencyMap[8]).shim();
+require("allSettled").shim();
 let closure_12 = {};
-const importDefaultResult = importDefault(dependencyMap[8]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplatesUtils.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplatesUtils.tsx");
 
 export const useChannelWithTemplateFallback = function useChannelWithTemplateFallback(ref_id) {
-  const arg1 = ref_id;
+  const _require = ref_id;
   const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[9]).useStateFromStores(items, () => channel.getChannel(arg0));
-  const importDefault = stateFromStores;
-  const obj = arg1(dependencyMap[9]);
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_6.getChannel(closure_0));
+  let obj = _require(624);
   const items1 = [closure_9];
-  let stateFromStores1 = arg1(dependencyMap[9]).useStateFromStores(items1, () => channel2.getChannel(arg0));
-  const obj3 = arg1(dependencyMap[9]);
+  let stateFromStores1 = _require(624).useStateFromStores(items1, () => outer1_9.getChannel(closure_0));
+  const obj3 = _require(624);
   const items2 = [closure_7];
-  const stateFromStores2 = arg1(dependencyMap[9]).useStateFromStores(items2, () => benefitChannel.getBenefitChannel(arg0));
-  const importAll = stateFromStores2;
+  const stateFromStores2 = _require(624).useStateFromStores(items2, () => outer1_7.getBenefitChannel(closure_0));
   const items3 = [stateFromStores, stateFromStores2];
   const tmp3 = useMemo(() => {
     let mergeResult = null;
@@ -160,9 +158,9 @@ export const useChannelWithTemplateFallback = function useChannelWithTemplateFal
       if (stateFromStores.isObfuscated()) {
         mergeResult = null;
         if (null != stateFromStores2) {
-          const obj = { name: stateFromStores2.name, flags: stateFromStores2(closure_3[10]).removeFlag(stateFromStores.flags, constants.OBFUSCATED) };
+          const obj = { name: stateFromStores2.name, flags: stateFromStores2(outer1_3[10]).removeFlag(stateFromStores.flags, outer1_11.OBFUSCATED) };
           mergeResult = stateFromStores.merge(obj);
-          const obj2 = stateFromStores2(closure_3[10]);
+          const obj2 = stateFromStores2(outer1_3[10]);
         }
       }
     }
@@ -181,21 +179,20 @@ export const useChannelWithTemplateFallback = function useChannelWithTemplateFal
   return stateFromStores1;
 };
 export const useSuggestedUnusedPrices = function useSuggestedUnusedPrices(guildId, arr, price_tier) {
-  arr = guildId;
+  const _require = guildId;
   const items = [closure_7];
-  const stateFromStores = arr(dependencyMap[9]).useStateFromStores(items, () => subscriptionListingsForGuild.getSubscriptionListingsForGuild(arg0));
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_7.getSubscriptionListingsForGuild(closure_0));
   const arr3 = useEditStateStore((arg0) => arg0.editStateIdsForGroup[closure_0]);
   let closure_1 = useEditStateStore((listings) => listings.listings);
   if (undefined !== price_tier) {
     if (undefined !== arr) {
       const found = stateFromStores.filter((soft_deleted) => !soft_deleted.soft_deleted && !soft_deleted.archived);
       const items1 = [];
-      const importAll = items1;
       const mapped = found.map((arg0) => arg0.subscription_plans[0].price);
       if (undefined !== arr3) {
         const item = arr3.forEach((arg0) => {
           let priceTier;
-          if (null != closure_1[arg0]) {
+          if (null != table[arg0]) {
             priceTier = tmp.priceTier;
           }
           if (null != priceTier) {
@@ -238,17 +235,17 @@ export const announceCreateTemplateChannels = function announceCreateTemplateCha
   const arr = getUsedTemplateChannelsForGuild(arg0);
   closure_12[arg0] = arr;
   const item = arr.forEach((set) => {
-    const result = set.set("flags", constants.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
-    callback(closure_3[11]).dispatch({ type: "CHANNEL_CREATE", channel: result });
+    const result = set.set("flags", outer1_11.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
+    outer1_1(outer1_3[11]).dispatch({ type: "CHANNEL_CREATE", channel: result });
   });
 };
 export const announceDeleteTemplateChannels = function announceDeleteTemplateChannels(arg0) {
-  let arr = closure_12[arg0];
+  let arr = table[arg0];
   if (null == arr) {
     arr = getUsedTemplateChannelsForGuild(arg0);
   }
   const item = arr.forEach((channel) => {
-    let obj = callback(closure_3[11]);
+    let obj = outer1_1(outer1_3[11]);
     obj = { type: "CHANNEL_DELETE", channel };
     obj.dispatch(obj);
   });
@@ -263,11 +260,11 @@ export const getTemplateTierCreationAnalyticsContext = function getTemplateTierC
     usedTemplate = tmp.usedTemplate;
   }
   if (null == usedTemplate) {
-    return { "Bool(false)": "o", "Bool(false)": "o" };
+    return { templateCategory: null, hasChangeFromTemplate: null };
   } else {
-    const templateWithCategory = templateWithCategory.getTemplateWithCategory(guildId, usedTemplate);
+    const templateWithCategory = store.getTemplateWithCategory(guildId, usedTemplate);
     if (null == templateWithCategory) {
-      return { "Bool(false)": "o", "Bool(false)": "o" };
+      return { templateCategory: null, hasChangeFromTemplate: null };
     } else {
       const first = templateWithCategory.listings[0];
       let name;
@@ -356,14 +353,14 @@ export const getTemplateTierCreationAnalyticsContext = function getTemplateTierC
   }
 };
 export const isEligibleForNewBadge = function isEligibleForNewBadge(features) {
-  let result = arg1(dependencyMap[13]).canManageGuildRoleSubscriptions(features);
+  let result = require(5641) /* canSeeGuildRoleSubscriptionSettingsContent */.canManageGuildRoleSubscriptions(features);
   if (result) {
     features = features.features;
     result = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
   }
   if (result) {
-    result = arg1(dependencyMap[14]).isGuildEligibleForTierTemplates(features.id);
-    const obj2 = arg1(dependencyMap[14]);
+    result = require(12900) /* GuildFeatures */.isGuildEligibleForTierTemplates(features.id);
+    const obj2 = require(12900) /* GuildFeatures */;
   }
   return result;
 };

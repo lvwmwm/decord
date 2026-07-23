@@ -1,15 +1,16 @@
-// Module ID: 15543
-// Function ID: 118639
+// Module ID: 15660
+// Function ID: 120812
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 27, 33, 15659, 2]
 // Exports: default
 
-// Module 15543 (items)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const items = [importDefault(dependencyMap[3])().layout.margin, { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true }];
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/launchpad/native/shared/renderChannelPressableWrapper.tsx");
+// Module 15660 (items)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const items = [require("items")().layout.margin, { flex: 1, flexDirection: "row", alignItems: "center" }];
+const result = require("jsxProd").fileFinishedImporting("modules/launchpad/native/shared/renderChannelPressableWrapper.tsx");
 
 export default function renderChannelPressableWrapper(children) {
   return <View style={items}>{arg0}</View>;

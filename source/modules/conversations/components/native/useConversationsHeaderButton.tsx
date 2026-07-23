@@ -1,65 +1,65 @@
-// Module ID: 9263
-// Function ID: 72365
+// Module ID: 9270
+// Function ID: 72406
 // Name: useConversationsHeaderButton
-// Dependencies: []
+// Dependencies: [5, 31, 6831, 6833, 9271, 669, 9272, 9273, 566, 9284, 9275, 9286, 1212, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 9263 (useConversationsHeaderButton)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-({ CONVERSATION_HAS_MORE_EXPIRATION_MS: closure_5, MOBILE_FETCH_LIMIT: closure_6, MOBILE_PREVIEW_MESSAGE_COUNT: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/conversations/components/native/useConversationsHeaderButton.tsx");
+// Module 9270 (useConversationsHeaderButton)
+import set from "set";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import CONVERSATION_COLORS from "CONVERSATION_COLORS";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ CONVERSATION_HAS_MORE_EXPIRATION_MS: closure_5, MOBILE_FETCH_LIMIT: closure_6, MOBILE_PREVIEW_MESSAGE_COUNT: closure_7 } = CONVERSATION_COLORS);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/conversations/components/native/useConversationsHeaderButton.tsx");
 
 export const useConversationsHeaderButton = function useConversationsHeaderButton(channel) {
-  const arg1 = channel;
-  let isTopicalNavEnabled = arg1(dependencyMap[4]).useIsTopicalNavEnabled(channel.guild_id, "channel_header");
+  const _require = channel;
+  isTopicalNavEnabled = _require(isTopicalNavEnabled[4]).useIsTopicalNavEnabled(channel.guild_id, "channel_header");
   if (isTopicalNavEnabled) {
-    isTopicalNavEnabled = channel.type === arg1(dependencyMap[5]).ChannelTypes.GUILD_TEXT;
+    isTopicalNavEnabled = channel.type === _require(isTopicalNavEnabled[5]).ChannelTypes.GUILD_TEXT;
   }
-  const dependencyMap = isTopicalNavEnabled;
-  const obj = arg1(dependencyMap[4]);
+  let obj = _require(isTopicalNavEnabled[4]);
   const items = [channel.id];
-  const conversationBackoffRef = arg1(dependencyMap[6]).useConversationBackoffRef(items);
-  let closure_2 = conversationBackoffRef;
+  const conversationBackoffRef = _require(isTopicalNavEnabled[6]).useConversationBackoffRef(items);
   const items1 = [, , , ];
   ({ id: arr2[0], guild_id: arr2[1] } = channel);
   items1[2] = isTopicalNavEnabled;
   items1[3] = conversationBackoffRef;
-  const callback = React.useCallback(() => {
+  callback = callback.useCallback((() => {
     function fetchPage() {
       return callback(...arguments);
     }
-    const isTopicalNavEnabled = fetchPage;
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = conversationBackoffRef(tmp);
     return fetchPage;
-  }(), items1);
-  const React = callback;
+  })(), items1);
   const items2 = [, , , ];
   ({ id: arr3[0], guild_id: arr3[1] } = channel);
   items2[2] = isTopicalNavEnabled;
   items2[3] = callback;
-  const effect = React.useEffect(() => {
+  const effect = callback.useEffect(() => {
     let hasChannelDataResult = !isTopicalNavEnabled;
     if (!hasChannelDataResult) {
-      hasChannelDataResult = stateFromStores.hasChannelData(arg0.id);
+      hasChannelDataResult = stateFromStores.hasChannelData(channel.id);
     }
     if (!hasChannelDataResult) {
-      hasChannelDataResult = stateFromStores.isPendingFetch(arg0.id);
+      hasChannelDataResult = stateFromStores.isPendingFetch(channel.id);
     }
     if (!hasChannelDataResult) {
       callback();
     }
   }, items2);
-  const obj2 = arg1(dependencyMap[6]);
-  const items3 = [closure_4];
+  const obj2 = _require(isTopicalNavEnabled[6]);
+  const items3 = [stateFromStores];
   const items4 = [channel.id];
-  const stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items3, () => stateFromStores.getEdgeMarker(arg0.id, "after"), items4);
-  closure_4 = stateFromStores;
+  stateFromStores = _require(isTopicalNavEnabled[8]).useStateFromStores(items3, () => stateFromStores.getEdgeMarker(channel.id, "after"), items4);
   const items5 = [stateFromStores, isTopicalNavEnabled, callback];
-  const effect1 = React.useEffect(() => {
+  const effect1 = callback.useEffect(() => {
     if (isTopicalNavEnabled) {
       if (null != stateFromStores) {
         const _Date = Date;
@@ -75,11 +75,11 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
       }
     }
   }, items5);
-  const obj3 = arg1(dependencyMap[8]);
-  const items6 = [closure_4];
+  const obj3 = _require(isTopicalNavEnabled[8]);
+  const items6 = [stateFromStores];
   const items7 = [channel.id];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items6, () => {
-    const channelConversations = stateFromStores.getChannelConversations(arg0.id);
+  const stateFromStores1 = _require(isTopicalNavEnabled[8]).useStateFromStores(items6, () => {
+    const channelConversations = stateFromStores.getChannelConversations(channel.id);
     let length;
     if (null != channelConversations) {
       length = channelConversations.length;
@@ -93,39 +93,39 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
   if (isTopicalNavEnabled) {
     isTopicalNavEnabled = stateFromStores1 > 0;
   }
-  let closure_7 = React.useRef(null);
+  let closure_7 = callback.useRef(null);
   const items8 = [isTopicalNavEnabled, stateFromStores1, channel.id];
-  const effect2 = React.useEffect(() => {
+  const effect2 = callback.useEffect(() => {
     let tmp = isTopicalNavEnabled;
     if (isTopicalNavEnabled) {
-      tmp = ref.current !== arg0.id;
+      tmp = ref.current !== channel.id;
     }
     if (tmp) {
-      ref.current = arg0.id;
-      const result = arg0(isTopicalNavEnabled[7]).trackTopicalNavigationEntrypointImpression(arg0.id, stateFromStores1);
-      const obj = arg0(isTopicalNavEnabled[7]);
+      ref.current = channel.id;
+      const result = channel(isTopicalNavEnabled[7]).trackTopicalNavigationEntrypointImpression(channel.id, stateFromStores1);
+      const obj = channel(isTopicalNavEnabled[7]);
     }
   }, items8);
   const items9 = [isTopicalNavEnabled, conversationBackoffRef, , ];
   ({ id: arr10[2], guild_id: arr10[3] } = channel);
-  return React.useMemo(() => {
+  return callback.useMemo(() => {
     let tmp = null;
     if (isTopicalNavEnabled) {
-      const obj = {
+      let obj = {
         source: null,
-        IconComponent: arg0(isTopicalNavEnabled[9]).PaperIcon,
+        IconComponent: channel(isTopicalNavEnabled[9]).PaperIcon,
         onPress() {
-            const current = ref.current;
+            const current = outer1_2.current;
             current.cancel();
-            const ConversationsAnalytics = lib(closure_1[10]).ConversationsAnalytics;
-            let obj = { channelId: lib.id, conversationIds: [], isFocusMode: false };
+            const ConversationsAnalytics = callback(isTopicalNavEnabled[10]).ConversationsAnalytics;
+            let obj = { channelId: outer1_0.id, conversationIds: [], isFocusMode: false };
             const result = ConversationsAnalytics.trackTopicsUnitImpression(obj);
-            obj = { channelId: lib.id, guildId: lib.guild_id };
-            const result1 = lib(closure_1[11]).openConversationNavigator(obj);
+            obj = { channelId: outer1_0.id, guildId: outer1_0.guild_id };
+            const result1 = callback(isTopicalNavEnabled[11]).openConversationNavigator(obj);
           }
       };
-      const intl = arg0(isTopicalNavEnabled[12]).intl;
-      obj.accessibilityLabel = intl.string(arg0(isTopicalNavEnabled[12]).t.u54FxB);
+      const intl = channel(isTopicalNavEnabled[12]).intl;
+      obj.accessibilityLabel = intl.string(channel(isTopicalNavEnabled[12]).t.u54FxB);
       tmp = obj;
     }
     return tmp;

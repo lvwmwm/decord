@@ -1,11 +1,11 @@
 // Module ID: 1368
-// Function ID: 16486
+// Function ID: 16487
 // Name: isArguments
-// Dependencies: []
+// Dependencies: [1369, 551]
 
 // Module 1368 (isArguments)
-let closure_0 = require(dependencyMap[0])();
-let closure_1 = require(dependencyMap[1])("Object.prototype.toString");
+let closure_0 = require("hasToStringTagShams")();
+let closure_1 = require("callBoundIntrinsic")("Object.prototype.toString");
 function isArguments(arg0) {
   let tmp = closure_0;
   if (closure_0) {
@@ -55,7 +55,7 @@ let isArguments2 = function isArguments(callee) {
   return tmp2;
 };
 isArguments.isLegacyArguments = isArguments2;
-if (() => isArguments(arguments)()) {
+if ((() => isArguments(arguments))()) {
   isArguments2 = isArguments;
 }
 

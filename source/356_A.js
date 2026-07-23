@@ -26,9 +26,9 @@ function getSlope(arg0, arg1, arg2) {
 let closure_0 = "function" === typeof Float32Array;
 arg5.default = function bezier(arg0, arg1, arg2, arg3) {
   let closure_0 = arg0;
-  const A = arg1;
-  const B = arg2;
-  const C = arg3;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  let closure_3 = arg3;
   function getTForX(arg0) {
     let num = 0;
     let num2 = 1;
@@ -52,11 +52,11 @@ arg5.default = function bezier(arg0, arg1, arg2, arg3) {
     }
     const diff = num4 - 1;
     const sum2 = num3 + (arg0 - float32Array[diff]) / (float32Array[diff + 1] - float32Array[diff]) * 0.1;
-    const tmp6 = getTForX(sum2, arg0, arg2);
+    const tmp6 = getTForX(sum2, closure_0, closure_2);
     if (tmp6 >= 0.001) {
       let diff1 = sum2;
       let num9 = 0;
-      const tmp20 = getTForX(diff1, arg0, arg2);
+      const tmp20 = getTForX(diff1, closure_0, closure_2);
       let tmp22 = diff1;
       while (0 !== tmp20) {
         let tmp23 = float32Array;
@@ -110,13 +110,12 @@ arg5.default = function bezier(arg0, arg1, arg2, arg3) {
             const _Array = Array;
             float32Array = new Array(11);
           }
-          const calcBezier = float32Array;
           let num4 = 0;
           if (arg0 !== arg1) {
             do {
-              let tmp9 = closure_4;
+              let tmp9 = float32Array;
               let num5 = 0.1;
-              float32Array[num4] = closure_4(num4 * 0.1, arg0, arg2);
+              float32Array[num4] = float32Array(num4 * 0.1, arg0, arg2);
               num4 = num4 + 1;
               let num6 = 11;
             } while (num4 < 11);
@@ -124,12 +123,12 @@ arg5.default = function bezier(arg0, arg1, arg2, arg3) {
             num4 = 0;
           }
           return function BezierEasing(arg0) {
-            if (arg0 !== arg1) {
+            if (closure_0 !== closure_1) {
               let num = 0;
               if (0 !== arg0) {
                 let num2 = 1;
                 if (1 !== arg0) {
-                  num2 = float32Array(getTForX(arg0), arg1, arg3);
+                  num2 = float32Array(getTForX(arg0), closure_1, closure_3);
                 }
                 num = num2;
               }

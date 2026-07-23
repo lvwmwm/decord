@@ -1,52 +1,64 @@
-// Module ID: 15931
-// Function ID: 122115
+// Module ID: 16048
+// Function ID: 124288
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 15, 17, 18, 1194, 1348, 16049, 16050, 16051, 5078, 2]
 
-// Module 15931 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16048 (_createForOfIteratorHelperLoose)
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import closure_8 from "_inherits";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import tmp2 from "AutomaticLifecycleManager";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +69,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,89 +104,9 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = null;
-let closure_13 = null;
-let tmp2 = (arg0) => {
-  class GuildRoomManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_4(this, GuildRoomManager);
-      items1 = [...items];
-      obj = closure_7(GuildRoomManager);
-      tmp2 = closure_6;
-      if (closure_16()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items1, closure_7(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      apply = tmp2Result;
-      tmp2Result.actions = {
-        VOICE_STATE_UPDATES(arg0) {
-              return tmp2Result.handleVoiceStateUpdates(arg0);
-            },
-        EMBEDDED_ACTIVITY_LAUNCH_SUCCESS(arg0) {
-              return tmp2Result.handleEmbeddedActivityLaunchSuccess(arg0);
-            }
-      };
-      return tmp2Result;
-    }
-  }
-  const importDefault = GuildRoomManager;
-  callback3(GuildRoomManager, arg0);
-  let obj = {
-    key: "isExperimentEnabled",
-    value(guildId, location) {
-      let obj = GuildRoomManager(closure_2[9]);
-      obj = { guildId, location };
-      return obj.getCurrentConfig(obj).enabled;
-    }
-  };
-  const items = [obj, , ];
-  obj = { key: "handleVoiceStateUpdates" };
-  // CreateGeneratorClosureLongIndex (0x67)
-  let closure_0 = callback(tmp);
-  obj.value = function handleVoiceStateUpdates() {
-    return callback(...arguments);
-  };
-  items[1] = obj;
-  obj = {
-    key: "handleEmbeddedActivityLaunchSuccess",
-    value(channelId) {
-      const self = this;
-      if (null != channelId.channelId) {
-        const channel = channel.getChannel(channelId.channelId);
-        let isExperimentEnabledResult = null != channel;
-        if (isExperimentEnabledResult) {
-          isExperimentEnabledResult = self.isExperimentEnabled(channel.guild_id, "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS");
-        }
-        if (isExperimentEnabledResult) {
-          isExperimentEnabledResult = visible.isVisible(channelId.channelId);
-        }
-        if (isExperimentEnabledResult) {
-          const result = callback(closure_2[10]).guildRoomToggleLayout(channelId.channelId, true);
-          const obj = callback(closure_2[10]);
-        }
-      }
-    }
-  };
-  items[2] = obj;
-  return callback2(GuildRoomManager, items);
-}(importDefault(dependencyMap[11]));
+let c12 = null;
+let c13 = null;
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_rooms/GuildRoomManager.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/guild_rooms/GuildRoomManager.tsx");
 
 export default tmp2;

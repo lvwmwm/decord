@@ -1,29 +1,28 @@
-// Module ID: 15317
-// Function ID: 116496
+// Module ID: 15434
+// Function ID: 118670
 // Name: headerBackground
-// Dependencies: [5, 57, 31, 27, 1352, 1348, 3765, 5600]
+// Dependencies: [31, 33, 4662, 8830, 1557, 477, 4110, 2]
 // Exports: default
 
-// Module 15317 (headerBackground)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import { jsx } from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15434 (headerBackground)
+import result from "result";
+import { jsx } from "jsxProd";
 
+let require = arg1;
 function headerBackground(arg0) {
-  return jsx(importDefault(dependencyMap[2]), {});
+  return jsx(importDefault(4662), { absolute: true, tall: true, wide: true });
 }
 let closure_5 = { headerBackground: undefined, contentStyle: undefined };
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/client_themes/native/useThemedHeaderOptions.tsx");
+const result = require("getThemeMixColor").fileFinishedImporting("modules/client_themes/native/useThemedHeaderOptions.tsx");
 
 export default function useThemedHeaderOptions() {
-  const tmp = importDefault(dependencyMap[3])();
-  const arg1 = tmp;
-  const top = importDefault(dependencyMap[4])().top;
-  const importDefault = top;
+  const tmp = top(8830)();
+  const require = tmp;
+  top = top(1557)().top;
   const items = [top, tmp];
   return React.useMemo(() => {
     if (tmp) {
-      let obj = tmp(closure_2[5]);
+      let obj = tmp(outer1_2[5]);
       if (obj.isIOS()) {
         let num3 = 0;
         if (top > 50) {
@@ -33,16 +32,16 @@ export default function useThemedHeaderOptions() {
         if (obj3.isIpadOS()) {
           num5 = 46;
         }
-        obj = { headerBackground: closure_6 };
+        obj = { headerBackground: outer1_6 };
         obj = { marginTop: -top + num3 + (56 - num5) };
         obj.contentStyle = obj;
         return obj;
       } else {
-        const obj1 = { headerBackground: closure_6, contentStyle: contentStyle.contentStyle };
+        const obj1 = { headerBackground: outer1_6, contentStyle: outer1_5.contentStyle };
         return obj1;
       }
     } else {
-      return contentStyle;
+      return outer1_5;
     }
   }, items);
 };

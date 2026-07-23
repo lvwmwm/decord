@@ -1,17 +1,20 @@
-// Module ID: 12511
-// Function ID: 95859
+// Module ID: 12625
+// Function ID: 98015
 // Name: getFirstInstallTimeMillis
-// Dependencies: []
+// Dependencies: [1194, 587, 12626, 4206, 2]
 // Exports: getFirstInstallTimeElapsed
 
-// Module 12511 (getFirstInstallTimeMillis)
+// Module 12625 (getFirstInstallTimeMillis)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getFirstInstallTimeMillis(arg0) {
-  const firstInstallTimeMillis = importDefault(dependencyMap[2]).getFirstInstallTimeMillis();
+  const firstInstallTimeMillis = importDefault(12626).getFirstInstallTimeMillis();
   let str = "InstallTimeLaunch";
   if ("authed" === arg0.from) {
     str = "InstallTimeAuthed";
   }
-  const Storage = arg1(dependencyMap[1]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   const value = Storage.get(str);
   if (null != value) {
     if (value > 0) {
@@ -29,7 +32,7 @@ function getFirstInstallTimeMillis(arg0) {
     if (authenticated.isAuthenticated()) {
       const _Date2 = Date;
       const timestamp = Date.now();
-      const Storage3 = arg1(dependencyMap[1]).Storage;
+      const Storage3 = require(587) /* Storage */.Storage;
       const result = Storage3.set(str, timestamp);
       num2 = timestamp;
     }
@@ -39,12 +42,11 @@ function getFirstInstallTimeMillis(arg0) {
       const _Date = Date;
       num2 = Date.now();
     }
-    const Storage2 = arg1(dependencyMap[1]).Storage;
+    const Storage2 = require(587) /* Storage */.Storage;
     const result1 = Storage2.set(str, num2);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/install/native/InstallTime.tsx");
+let result = require("enforcing").fileFinishedImporting("modules/install/native/InstallTime.tsx");
 
 export { getFirstInstallTimeMillis };
 export const getFirstInstallTimeElapsed = function getFirstInstallTimeElapsed(unit) {
@@ -59,8 +61,8 @@ export const getFirstInstallTimeElapsed = function getFirstInstallTimeElapsed(un
     const diff = Date.now() - tmp2;
     let result = diff;
     if (null != unit) {
-      obj = arg1(dependencyMap[3]);
-      result = obj.convertMinutesToGivenTimeUnit(diff / arg1(dependencyMap[3]).MS_PER_MINUTE, unit);
+      obj = require(4206) /* sleep */;
+      result = obj.convertMinutesToGivenTimeUnit(diff / require(4206) /* sleep */.MS_PER_MINUTE, unit);
     }
     return result;
   }

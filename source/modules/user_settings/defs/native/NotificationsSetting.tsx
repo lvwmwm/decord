@@ -1,27 +1,27 @@
-// Module ID: 14196
-// Function ID: 107433
+// Module ID: 14310
+// Function ID: 109589
 // Name: route
-// Dependencies: []
+// Dependencies: [653, 10095, 1212, 10204, 14311, 2]
 
-// Module 14196 (route)
-const _module = require(dependencyMap[1]);
-let obj = {
+// Module 14310 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.HcoRu0);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.HcoRu0);
   },
   parent: null,
-  IconComponent: require(dependencyMap[3]).BellIcon,
+  IconComponent: require("BellIcon").BellIcon,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.NOTIFICATIONS,
+  route: require("ME").UserSettingsSections.NOTIFICATIONS,
   getComponent() {
-    return require(dependencyMap[4]).default;
+    return require(14311) /* SystemNotificationsSubLabel */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/NotificationsSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/NotificationsSetting.tsx");
 
 export default route;

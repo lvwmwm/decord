@@ -1,17 +1,18 @@
-// Module ID: 9442
-// Function ID: 73596
+// Module ID: 9449
+// Function ID: 73637
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: shouldMigrateToAdAnalyticsInterface
 
-// Module 9442 (apexExperiment)
+// Module 9449 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
 let obj = { STEP_1_LOADED: 0, [0]: "STEP_1_LOADED", STEP_2_CLICKED_INTERNAL: 1, [1]: "STEP_2_CLICKED_INTERNAL", STEP_3_CLICKED_EXTERNAL: 2, [2]: "STEP_3_CLICKED_EXTERNAL", STEP_4_VIEWED_NON_IMPRESSION: 3, [3]: "STEP_4_VIEWED_NON_IMPRESSION", STEP_5_VIEWED_IMPRESSION: 4, [4]: "STEP_5_VIEWED_IMPRESSION" };
-const _module = require(dependencyMap[0]);
+obj = { name: "2026-05-use-ad-analytics-interface", kind: "user", defaultConfig: { enabled: false, maxStep: -1 } };
 obj = { enabled: true, maxStep: obj.STEP_1_LOADED };
-obj = { enabled: true, maxStep: obj.STEP_2_CLICKED_INTERNAL };
-const apexExperiment = _module.createApexExperiment({ defaultConfig: {}, variations: { [0]: {}, [1]: obj, [2]: obj, [3]: { enabled: true, maxStep: obj.STEP_3_CLICKED_EXTERNAL }, [4]: { enabled: true, maxStep: obj.STEP_4_VIEWED_NON_IMPRESSION }, [5]: { enabled: true, maxStep: obj.STEP_5_VIEWED_IMPRESSION } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/quests/experiments/AdAnalyticsInterfaceExperiment.tsx");
+obj.variations = { [0]: { enabled: false, maxStep: -1 }, [1]: obj, [2]: { enabled: true, maxStep: obj.STEP_2_CLICKED_INTERNAL }, [3]: { enabled: true, maxStep: obj.STEP_3_CLICKED_EXTERNAL }, [4]: { enabled: true, maxStep: obj.STEP_4_VIEWED_NON_IMPRESSION }, [5]: { enabled: true, maxStep: obj.STEP_5_VIEWED_IMPRESSION } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/quests/experiments/AdAnalyticsInterfaceExperiment.tsx");
 
 export const AdAnalyticsInterfaceExperimentStep = obj;
 export const AdAnalyticsInterfaceExperiment = apexExperiment;

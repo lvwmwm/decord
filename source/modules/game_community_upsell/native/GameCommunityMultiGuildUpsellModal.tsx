@@ -1,57 +1,68 @@
-// Module ID: 14977
-// Function ID: 112710
+// Module ID: 15093
+// Function ID: 114878
 // Name: trackImpressionForCard
-// Dependencies: []
+// Dependencies: [31, 27, 14590, 653, 9123, 33, 4130, 689, 8559, 480, 1457, 566, 5464, 5484, 15094, 7879, 1557, 8829, 12637, 4126, 1212, 15090, 675, 9122, 9130, 2]
 // Exports: default
 
-// Module 14977 (trackImpressionForCard)
+// Module 15093 (trackImpressionForCard)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function trackImpressionForCard(current, guild_id, game_id, variant, location_stack) {
   current = current.current;
   current.add(guild_id.id);
-  let obj = guild_id(dependencyMap[8]);
-  obj = { type: guild_id(dependencyMap[9]).ImpressionTypes.PANE, name: guild_id(dependencyMap[9]).ImpressionNames.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD, properties: obj };
+  let obj = require(8559) /* trackImpression */;
+  obj = { type: require(480) /* isThrottled */.ImpressionTypes.PANE, name: require(480) /* isThrottled */.ImpressionNames.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD, properties: obj };
   obj = { game_id, guild_id: guild_id.id, location_stack, variant };
   obj.trackImpression(obj);
 }
 function useOnViewableItemsChanged(stateFromStoresObject, arg1, analyticsLocations) {
-  arg1 = stateFromStoresObject;
-  const importDefault = arg1;
-  const importAll = analyticsLocations;
-  let closure_3 = React.useRef(new Set());
+  const _require = stateFromStoresObject;
+  let closure_1 = arg1;
+  let closure_2 = analyticsLocations;
+  const dependencyMap = React.useRef(new Set());
   const set = new Set();
-  const focusEffect = arg1(closure_3[10]).useFocusEffect(React.useCallback(() => {
+  const focusEffect = _require(1457).useFocusEffect(React.useCallback(() => {
     const current = ref.current;
     current.clear();
   }, []));
   const items = [stateFromStoresObject, analyticsLocations, arg1];
   return React.useCallback((viewableItems) => {
     viewableItems = viewableItems.viewableItems;
-    const item = viewableItems.forEach((item) => {
+    let item = viewableItems.forEach((item) => {
       item = item.item;
       if (null != item) {
         let tmp = "left" in item && null != item.left;
         if (tmp) {
-          const current = ref.current;
+          const current = outer1_3.current;
           tmp = !current.has(item.left.id);
         }
         if (tmp) {
-          callback(ref, item.left, closure_0[item.left.id], closure_1, closure_2);
+          outer2_13(outer1_3, item.left, outer1_0[item.left.id], outer1_1, outer1_2);
         }
         let tmp9 = "right" in item && null != item.right;
         if (tmp9) {
-          const current2 = ref.current;
+          const current2 = outer1_3.current;
           tmp9 = !current2.has(item.right.id);
         }
         if (tmp9) {
-          callback(ref, item.right, closure_0[item.right.id], closure_1, closure_2);
+          outer2_13(outer1_3, item.right, outer1_0[item.right.id], outer1_1, outer1_2);
         }
         let tmp17 = "id" in item && null != item.id;
         if (tmp17) {
-          const current3 = ref.current;
+          const current3 = outer1_3.current;
           tmp17 = !current3.has(item.id);
         }
         if (tmp17) {
-          callback(ref, item, closure_0[item.id], closure_1, closure_2);
+          outer2_13(outer1_3, item, outer1_0[item.id], outer1_1, outer1_2);
         }
       }
     });
@@ -60,19 +71,18 @@ function useOnViewableItemsChanged(stateFromStoresObject, arg1, analyticsLocatio
 class OneColumnGuildUpsellList {
   constructor(arg0) {
     onDismiss = global.onDismiss;
-    arg1 = onDismiss;
     ({ suggestedGuilds, contentContainerStyle, subheader } = global);
-    callback = closure_4.useCallback((id) => id.id, []);
-    obj = arg1(dependencyMap[11]);
+    callback = result.useCallback((id) => id.id, []);
+    obj = require("initialize");
     items = [];
-    items[0] = closure_6;
-    stateFromStoresObject = obj.useStateFromStoresObject(items, () => guildGameIds.getGuildGameIds());
-    importDefault = stateFromStoresObject;
-    tmp3 = importDefault(dependencyMap[12]);
+    items[0] = c6;
+    stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_6.getGuildGameIds());
+    closure_1 = stateFromStoresObject;
+    tmp3 = require("mergeLocations");
     items1 = [, ];
     items1[0] = onDismiss;
     items1[1] = stateFromStoresObject;
-    callback1 = closure_4.useCallback((item) => {
+    callback1 = result.useCallback((item) => {
       item = item.item;
       let tmp = null;
       const obj = { guild: item, gameId: stateFromStoresObject[item.id], variant: "one-column" };
@@ -80,32 +90,29 @@ class OneColumnGuildUpsellList {
         tmp = onDismiss;
       }
       obj.onDismiss = tmp;
-      return closure_9(stateFromStoresObject(closure_3[14]), obj, item.id);
+      return outer1_9(stateFromStoresObject(outer1_3[14]), obj, item.id);
     }, items1);
-    tmp5 = useOnViewableItemsChanged(stateFromStoresObject, "one-column", tmp3(importDefault(dependencyMap[13]).GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations);
-    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f112726, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 };
-    return jsx(arg1(dependencyMap[15]).FlashList, obj);
+    tmp5 = useOnViewableItemsChanged(stateFromStoresObject, "one-column", tmp3(require("QUICK_SWITCHER").GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations);
+    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f114894, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 };
+    return jsx(require("defaultMVCPConfig").FlashList, obj);
   }
 }
 class TwoColumnGuildUpsellList {
   constructor(arg0) {
     suggestedGuilds = global.suggestedGuilds;
-    arg1 = suggestedGuilds;
     rowStyle = global.rowStyle;
-    importDefault = rowStyle;
     onDismiss = global.onDismiss;
-    importAll = onDismiss;
     items = [];
     items[0] = suggestedGuilds;
     ({ contentContainerStyle, subheader } = global);
-    memo = closure_4.useMemo(() => suggestedGuilds.reduce((arr, left) => {
+    memo = result.useMemo(() => suggestedGuilds.reduce((arr, left) => {
       if (arg2 % 2 === 0) {
-        const obj = { left, right: closure_0[arg2 + 1] };
+        const obj = { left, right: outer1_0[arg2 + 1] };
         arr.push(obj);
       }
       return arr;
     }, []), items);
-    callback = closure_4.useCallback((left) => {
+    callback = result.useCallback((left) => {
       left = left.left;
       let id;
       if (null != left) {
@@ -126,18 +133,18 @@ class TwoColumnGuildUpsellList {
       }
       return "" + str + "-" + str2;
     }, []);
-    obj = arg1(dependencyMap[11]);
+    obj = require("initialize");
     items1 = [];
-    items1[0] = closure_6;
-    stateFromStoresObject = obj.useStateFromStoresObject(items1, () => guildGameIds.getGuildGameIds());
-    dependencyMap = stateFromStoresObject;
-    tmp4 = importDefault(dependencyMap[12]);
+    items1[0] = c6;
+    stateFromStoresObject = obj.useStateFromStoresObject(items1, () => outer1_6.getGuildGameIds());
+    closure_3 = stateFromStoresObject;
+    tmp4 = require("mergeLocations");
     items2 = [, , ];
     items2[0] = rowStyle;
     items2[1] = onDismiss;
     items2[2] = stateFromStoresObject;
-    tmp5 = useOnViewableItemsChanged(stateFromStoresObject, "two-column", tmp4(importDefault(dependencyMap[13]).GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations);
-    callback1 = closure_4.useCallback((item) => {
+    tmp5 = useOnViewableItemsChanged(stateFromStoresObject, "two-column", tmp4(require("QUICK_SWITCHER").GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations);
+    callback1 = result.useCallback((item) => {
       item = item.item;
       const left = item.left;
       let id;
@@ -166,8 +173,8 @@ class TwoColumnGuildUpsellList {
           tmp15 = onDismiss;
         }
         obj.onDismiss = tmp15;
-        tmp10Result = callback(rowStyle(stateFromStoresObject[14]), obj);
-        const tmp10 = callback;
+        tmp10Result = outer1_9(rowStyle(stateFromStoresObject[14]), obj);
+        const tmp10 = outer1_9;
         const tmp13 = rowStyle(stateFromStoresObject[14]);
       }
       const items = [tmp10Result, ];
@@ -178,63 +185,54 @@ class TwoColumnGuildUpsellList {
           tmp24 = onDismiss;
         }
         obj.onDismiss = tmp24;
-        let tmp19Result = callback(rowStyle(stateFromStoresObject[14]), obj);
-        const tmp19 = callback;
+        let tmp19Result = outer1_9(rowStyle(stateFromStoresObject[14]), obj);
+        const tmp19 = outer1_9;
         const tmp22 = rowStyle(stateFromStoresObject[14]);
       } else {
         const obj1 = {};
         const obj2 = { flex: 1 };
         obj1.style = obj2;
-        tmp19Result = callback(closure_5, obj1);
+        tmp19Result = outer1_9(outer1_5, obj1);
       }
       items[1] = tmp19Result;
       obj.children = items;
-      return closure_10(closure_5, obj);
+      return outer1_10(outer1_5, obj);
     }, items2);
-    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f112726, contentContainerStyle, keyExtractor: callback, data: memo, ListHeaderComponent: subheader, renderItem: callback1 };
-    return jsx(arg1(dependencyMap[15]).FlashList, obj);
+    obj = { onViewableItemsChanged: tmp5, viewabilityConfig: f114894, contentContainerStyle, keyExtractor: callback, data: memo, ListHeaderComponent: subheader, renderItem: callback1 };
+    return jsx(require("defaultMVCPConfig").FlashList, obj);
   }
 }
-let closure_4 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_6 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const MIN_HEADER_HEIGHT = arg1(dependencyMap[4]).MIN_HEADER_HEIGHT;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-let closure_11 = arg1(dependencyMap[6]).createStyles((paddingBottom, paddingTop) => {
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles((paddingBottom, paddingTop) => {
   let obj = {};
-  obj = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
+  obj = { flex: 1, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
   obj.container = obj;
-  obj = { paddingTop, minHeight: paddingTop + MIN_HEADER_HEIGHT, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
+  obj = { flexDirection: "row", alignItems: "center", flexShrink: 0, paddingTop, minHeight: paddingTop + MIN_HEADER_HEIGHT, paddingHorizontal: importDefault(689).space.PX_8 };
   obj.headerWrapper = obj;
-  obj.headerTitle = {};
-  obj.subtitle = { alignSelf: "center", marginHorizontal: importDefault(dependencyMap[7]).space.PX_24, marginBottom: importDefault(dependencyMap[7]).space.PX_24, marginTop: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, textAlign: "center" };
-  const obj1 = { alignSelf: "center", marginHorizontal: importDefault(dependencyMap[7]).space.PX_24, marginBottom: importDefault(dependencyMap[7]).space.PX_24, marginTop: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW, textAlign: "center" };
-  obj.listContent = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingBottom };
-  const obj3 = { "Null": "<string:1895825670>", "Null": "type", "Null": "<string:33627458>", gap: importDefault(dependencyMap[7]).space.PX_16 };
+  obj.headerTitle = { flex: 1, alignItems: "center", justifyContent: "center" };
+  obj.subtitle = { alignSelf: "center", marginHorizontal: importDefault(689).space.PX_24, marginBottom: importDefault(689).space.PX_24, marginTop: importDefault(689).space.PX_8, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, textAlign: "center" };
+  const obj1 = { alignSelf: "center", marginHorizontal: importDefault(689).space.PX_24, marginBottom: importDefault(689).space.PX_24, marginTop: importDefault(689).space.PX_8, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, textAlign: "center" };
+  obj.listContent = { paddingHorizontal: importDefault(689).space.PX_16, paddingBottom };
+  const obj3 = { flexDirection: "row", gap: importDefault(689).space.PX_16, flex: 1 };
   obj.twoColumnRow = obj3;
   return obj;
 });
-let closure_12 = { "Bool(false)": "mobile-text-heading-primary", "Bool(false)": "heading-lg/bold" };
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/game_community_upsell/native/GameCommunityMultiGuildUpsellModal.tsx");
+let closure_12 = { itemVisiblePercentThreshold: 50, minimumViewTime: 500 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_community_upsell/native/GameCommunityMultiGuildUpsellModal.tsx");
 
 export default function GameCommunityMultiGuildUpsellModal(onClose) {
   let bottom;
   let top;
-  ({ top, bottom } = importDefault(dependencyMap[16])());
-  let obj = arg1(dependencyMap[17]);
-  const gradientTop = obj.useGradientTop();
-  const arg1 = gradientTop;
+  ({ top, bottom } = importDefault(1557)());
+  let obj = gradientTop(8829);
+  gradientTop = obj.useGradientTop();
   const tmp3 = callback3(bottom, top);
-  const importDefault = tmp3;
-  const GameCommunityUpsellMultiExperiment = arg1(dependencyMap[18]).GameCommunityUpsellMultiExperiment;
+  importDefault = tmp3;
+  const GameCommunityUpsellMultiExperiment = gradientTop(12637).GameCommunityUpsellMultiExperiment;
   const visualVariant = GameCommunityUpsellMultiExperiment.useConfig({ location: "GameCommunityMultiGuildUpsellModal" }).visualVariant;
-  const importAll = visualVariant;
-  let obj1 = arg1(dependencyMap[11]);
-  const items = [closure_6];
-  const stateFromStoresArray = obj1.useStateFromStoresArray(items, () => presentableUpsellGuilds.getPresentableUpsellGuilds());
+  let obj1 = gradientTop(566);
+  let items = [_isNativeReflectConstruct];
+  const stateFromStoresArray = obj1.useStateFromStoresArray(items, () => outer1_6.getPresentableUpsellGuilds());
   const items1 = [tmp3.headerWrapper, gradientTop];
   const items2 = [tmp3.subtitle];
   const memo = React.useMemo(() => {
@@ -242,29 +240,29 @@ export default function GameCommunityMultiGuildUpsellModal(onClose) {
     return items;
   }, items1);
   const memo1 = React.useMemo(() => {
-    const obj = { cachedAt: "y", edpbxy: "isArray", style: tmp3.subtitle };
-    const intl = gradientTop(closure_3[20]).intl;
-    obj.children = intl.string(gradientTop(closure_3[20]).t.PH+G/A);
-    return callback(gradientTop(closure_3[19]).Text, obj);
+    const obj = { variant: "text-sm/medium", color: "text-muted", style: tmp3.subtitle };
+    const intl = gradientTop(outer1_3[20]).intl;
+    obj.children = intl.string(gradientTop(outer1_3[20]).t["PH+G/A"]);
+    return outer1_9(gradientTop(outer1_3[19]).Text, obj);
   }, items2);
   const items3 = [visualVariant];
   const callback = React.useCallback((guild_id, game_id) => {
-    let obj = visualVariant(closure_3[21]);
+    let obj = visualVariant(outer1_3[21]);
     obj.dismissGuild(guild_id);
     obj = { game_id, guild_id, variant: visualVariant };
-    tmp3(closure_3[22]).track(constants.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED, obj);
+    tmp3(outer1_3[22]).track(outer1_7.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED, obj);
   }, items3);
   obj = { style: tmp3.container };
   obj = { style: memo };
-  obj1 = { source: importDefault(dependencyMap[24]), onPress: onClose.onClose };
-  const intl = arg1(dependencyMap[20]).intl;
-  obj1.accessibilityLabel = intl.string(arg1(dependencyMap[20]).t.cpT0Cq);
-  const items4 = [callback(arg1(dependencyMap[23]).HeaderIconButton, obj1), , ];
+  obj1 = { source: importDefault(9130), onPress: onClose.onClose };
+  let intl = gradientTop(1212).intl;
+  obj1.accessibilityLabel = intl.string(gradientTop(1212).t.cpT0Cq);
+  const items4 = [callback(gradientTop(9122).HeaderIconButton, obj1), , ];
   const obj2 = { style: tmp3.headerTitle };
-  const obj3 = { 803799044: null, 1269170180: null, 711589892: null };
-  const intl2 = arg1(dependencyMap[20]).intl;
-  obj3.children = intl2.string(arg1(dependencyMap[20]).t.fs+2Kn);
-  obj2.children = callback(arg1(dependencyMap[19]).Text, obj3);
+  const obj3 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1 };
+  const intl2 = gradientTop(1212).intl;
+  obj3.children = intl2.string(gradientTop(1212).t["fs+2Kn"]);
+  obj2.children = callback(gradientTop(4126).Text, obj3);
   items4[1] = callback(View, obj2);
   items4[2] = callback(View, { style: { width: 40 } });
   obj.children = items4;

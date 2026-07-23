@@ -1,32 +1,34 @@
-// Module ID: 14183
-// Function ID: 107387
+// Module ID: 14297
+// Function ID: 109543
 // Name: toggle
-// Dependencies: []
+// Dependencies: [1280, 7662, 566, 14295, 3803, 10095, 1212, 2]
 
-// Module 14183 (toggle)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[5]);
-obj = {
+// Module 14297 (toggle)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t.ix8XIj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.ix8XIj);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.CHAT,
+  parent: require("MobileSetting").MobileSetting.CHAT,
   useValue: function useDataSavingModeSettingValue() {
-    const items = [closure_2];
-    return arg1(dependencyMap[2]).useStateFromStores(items, () => dataSavingMode.dataSavingMode);
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.dataSavingMode);
   },
   onValueChange: function onDataSavingModeSettingValueChange(dataSavingMode) {
-    let obj = arg1(dependencyMap[3]);
-    obj = { videoUploadQuality: closure_2.videoUploadQuality };
-    const ViewImageDescriptions = arg1(dependencyMap[4]).ViewImageDescriptions;
+    let obj = require(14295) /* trackSettingsUpdated */;
+    obj = { videoUploadQuality: _isNativeReflectConstruct.videoUploadQuality };
+    const ViewImageDescriptions = require(3803) /* explicitContentFromProto */.ViewImageDescriptions;
     obj.viewImageDescriptions = ViewImageDescriptions.getSetting();
-    obj.lowQualityImageMode = closure_2.lowQualityImageMode;
+    obj.lowQualityImageMode = _isNativeReflectConstruct.lowQualityImageMode;
     obj.dataSavingMode = dataSavingMode;
     obj.setDataSavingMode(obj);
   }
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/DataSavingModeSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/DataSavingModeSetting.tsx");
 
-export default toggle;
+export default createToggle;

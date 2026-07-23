@@ -1,35 +1,38 @@
-// Module ID: 4184
-// Function ID: 36012
+// Module ID: 4188
+// Function ID: 36044
 // Name: isClipsEnabled
-// Dependencies: []
+// Dependencies: [4183, 4189, 4193, 566, 477, 2]
 // Exports: isDecoupledClipsEnabled, useIsDecoupledClipsEnabled
 
-// Module 4184 (isClipsEnabled)
+// Module 4188 (isClipsEnabled)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function isClipsEnabled() {
-  let clipsEnabled = arg1(dependencyMap[1]).areClipsAvailable();
+  let clipsEnabled = require(4189) /* isUserPremiumTypeForClipsEarlyAccess */.areClipsAvailable();
   if (clipsEnabled) {
     clipsEnabled = store.getState().clipsSettings.clipsEnabled;
   }
   if (clipsEnabled) {
-    let decoupledClipsEnabled = !arg1(dependencyMap[2]).isClipsSettingsRedesignEnabled();
+    let decoupledClipsEnabled = !require(4193) /* useIsClipsSettingsRedesignEnabled */.isClipsSettingsRedesignEnabled();
     if (!decoupledClipsEnabled) {
       decoupledClipsEnabled = store.getState().clipsSettings.decoupledClipsEnabled;
     }
     clipsEnabled = decoupledClipsEnabled;
-    const obj2 = arg1(dependencyMap[2]);
+    const obj2 = require(4193) /* useIsClipsSettingsRedesignEnabled */;
   }
   return clipsEnabled;
 }
 function useIsClipsEnabled() {
-  let isClipsAvailable = arg1(dependencyMap[1]).useIsClipsAvailable();
-  const obj = arg1(dependencyMap[1]);
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => store.getState().clipsSettings.clipsEnabled);
-  const obj2 = arg1(dependencyMap[3]);
-  const isClipsSettingsRedesignEnabled = arg1(dependencyMap[2]).useIsClipsSettingsRedesignEnabled();
-  const obj3 = arg1(dependencyMap[2]);
-  const items1 = [closure_2];
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => store.getState().clipsSettings.decoupledClipsEnabled);
+  let isClipsAvailable = require(4189) /* isUserPremiumTypeForClipsEarlyAccess */.useIsClipsAvailable();
+  const obj = require(4189) /* isUserPremiumTypeForClipsEarlyAccess */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getState().clipsSettings.clipsEnabled);
+  const obj2 = require(566) /* initialize */;
+  const isClipsSettingsRedesignEnabled = require(4193) /* useIsClipsSettingsRedesignEnabled */.useIsClipsSettingsRedesignEnabled();
+  const obj3 = require(4193) /* useIsClipsSettingsRedesignEnabled */;
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_2.getState().clipsSettings.decoupledClipsEnabled);
   if (isClipsAvailable) {
     isClipsAvailable = stateFromStores;
   }
@@ -39,15 +42,14 @@ function useIsClipsEnabled() {
   }
   return isClipsAvailable;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/clips/isClipsEnabled.tsx");
+const result = require("useIsClipsSettingsRedesignEnabled").fileFinishedImporting("modules/clips/isClipsEnabled.tsx");
 
 export { isClipsEnabled };
 export { useIsClipsEnabled };
 export const isDecoupledClipsEnabled = function isDecoupledClipsEnabled() {
   let tmp = isClipsEnabled();
-  const isWindowsResult = arg1(dependencyMap[4]).isWindows();
-  const obj = arg1(dependencyMap[4]);
+  const isWindowsResult = require(477) /* set */.isWindows();
+  const obj = require(477) /* set */;
   if (obj2.isClipsSettingsRedesignEnabled()) {
     if (tmp) {
       tmp = isWindowsResult;
@@ -63,15 +65,15 @@ export const isDecoupledClipsEnabled = function isDecoupledClipsEnabled() {
     }
     return decoupledClipsEnabled;
   }
-  const obj2 = arg1(dependencyMap[2]);
+  obj2 = require(4193) /* useIsClipsSettingsRedesignEnabled */;
 };
 export const useIsDecoupledClipsEnabled = function useIsDecoupledClipsEnabled() {
   let tmp = useIsClipsEnabled();
-  const isWindowsResult = arg1(dependencyMap[4]).isWindows();
-  const obj = arg1(dependencyMap[4]);
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => state.getState().clipsSettings.decoupledClipsEnabled);
-  const obj2 = arg1(dependencyMap[3]);
+  const isWindowsResult = require(477) /* set */.isWindows();
+  const obj = require(477) /* set */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getState().clipsSettings.decoupledClipsEnabled);
+  const obj2 = require(566) /* initialize */;
   if (obj3.useIsClipsSettingsRedesignEnabled()) {
     if (tmp) {
       tmp = isWindowsResult;

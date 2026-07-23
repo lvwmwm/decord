@@ -1,108 +1,115 @@
-// Module ID: 14902
-// Function ID: 112270
+// Module ID: 15018
+// Function ID: 114438
 // Name: PX_8
-// Dependencies: []
+// Dependencies: [5, 31, 27, 653, 1345, 33, 689, 15019, 9889, 4547, 4130, 15020, 11992, 1212, 5167, 4660, 5119, 4126, 4543, 7563, 5692, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 14902 (PX_8)
-let closure_3 = importDefault(dependencyMap[0]);
-const View = arg1(dependencyMap[2]).View;
-const importAllResult = importAll(dependencyMap[1]);
-({ GuildFeatures: closure_5, RelativeMarketingURLs: closure_6 } = arg1(dependencyMap[3]));
-const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType;
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-const PX_8 = importDefault(dependencyMap[6]).space.PX_8;
-const PX_82 = importDefault(dependencyMap[6]).space.PX_8;
-let closure_12 = 2 * importDefault(dependencyMap[6]).space.PX_12;
-let obj1 = arg1(dependencyMap[10]);
+// Module 15018 (PX_8)
+import closure_3 from "jsxProd";
+import { View } from "get ActivityIndicator";
+import ME from "ME";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ GuildFeatures: closure_5, RelativeMarketingURLs: closure_6 } = ME);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
+const PX_82 = require("_createForOfIteratorHelperLoose").space.PX_8;
+let closure_12 = 2 * require("_createForOfIteratorHelperLoose").space.PX_12;
 let obj = {};
-obj = { padding: importDefault(dependencyMap[6]).space.PX_12 };
+obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_12 };
 obj.card = obj;
-obj1 = { backgroundColor: "r", flexDirection: "ConnectionCablesSpotIllustration", justifyContent: "Array", alignItems: "soundshareSession", overflow: "LURKER_STAGE_CHANNEL_PERMISSIONS_ALLOWLIST", zIndex: "ViewNsfwCommands", minHeight: "ars", flex: "prefixTag", top: importDefault(dependencyMap[6]).space.PX_12, right: importDefault(dependencyMap[6]).space.PX_12 };
-obj.closeButton = obj1;
+_createForOfIteratorHelperLoose = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_12, right: require("_createForOfIteratorHelperLoose").space.PX_12, width: 24, height: 24, alignItems: "center", justifyContent: "center", zIndex: 1 };
+obj.closeButton = _createForOfIteratorHelperLoose;
 obj.centeredText = { textAlign: "center" };
-const tmp3 = arg1(dependencyMap[5]);
-obj.body = { marginTop: importDefault(dependencyMap[6]).space.PX_4 };
-const obj2 = { marginTop: importDefault(dependencyMap[6]).space.PX_4 };
-obj.cta = { marginTop: importDefault(dependencyMap[6]).space.PX_8 };
-let closure_13 = obj1.createStyles(obj);
-const obj3 = { marginTop: importDefault(dependencyMap[6]).space.PX_8 };
+obj.body = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+obj.cta = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
 const memoResult = importAllResult.memo((arg0) => {
   let guild;
-  ({ guild, markAsDismissed: closure_0 } = arg0);
+  let require;
+  ({ guild, markAsDismissed: require } = arg0);
   const tmp2 = callback4();
-  let obj = arg1(dependencyMap[11]);
+  let obj = require(15020) /* fetchUnclaimedGames */;
   const first = obj.useUnclaimedGameIdsForGuild(guild.id)[0];
   let tmp4 = null;
   if (null != first) {
     tmp4 = first;
   }
-  const intl = arg1(dependencyMap[13]).intl;
-  const tmp5 = importDefault(dependencyMap[12]);
-  const coverImageUrl = importDefault(dependencyMap[12])(tmp4, intl.string(arg1(dependencyMap[13]).t.VQq92a)).coverImageUrl;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const tmp5 = importDefault(11992);
+  const coverImageUrl = importDefault(11992)(tmp4, intl.string(require(1212) /* getSystemLocale */.t.VQq92a)).coverImageUrl;
   if (null == coverImageUrl) {
     return null;
   } else {
     const features = guild.features;
     const hasItem = features.has(constants.VERIFIED);
-    const intl4 = arg1(dependencyMap[13]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
     const string = intl4.string;
-    const t = arg1(dependencyMap[13]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (hasItem) {
       let stringResult = string(t.uUARXe);
     } else {
-      stringResult = string(t.0Dx29f);
+      stringResult = string(t["0Dx29f"]);
     }
     obj = { variant: "secondary", style: tmp2.card };
     obj = {
       accessibilityRole: "button",
       onPress() {
-          return callback(constants.USER_DISMISS);
+          return callback(outer1_7.USER_DISMISS);
         },
       style: tmp2.closeButton,
-      children: callback2(arg1(dependencyMap[16]).XSmallIcon, {})
+      children: callback2(require(5119) /* XSmallIcon */.XSmallIcon, { size: "sm", color: "text-default" })
     };
-    const items = [callback2(arg1(dependencyMap[15]).PressableOpacity, obj), , , , ];
+    const items = [callback2(require(4660) /* PressableBase */.PressableOpacity, obj), , , , ];
     const obj1 = { imageSrc: coverImageUrl };
-    items[1] = callback2(importDefault(dependencyMap[7]), obj1);
-    const obj2 = { cachedAt: "<string:3559849986>", edpbxy: "<string:1240334337>", style: tmp2.centeredText };
-    const intl2 = arg1(dependencyMap[13]).intl;
+    items[1] = callback2(importDefault(15019), obj1);
+    const obj2 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp2.centeredText };
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj3 = { gameName: tmp7 };
-    obj2.children = intl2.format(arg1(dependencyMap[13]).t.Q11WTQ, obj3);
-    items[2] = callback2(arg1(dependencyMap[17]).Text, obj2);
-    const obj4 = {};
+    obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.Q11WTQ, obj3);
+    items[2] = callback2(require(4126) /* Text */.Text, obj2);
+    const obj4 = { variant: "text-sm/normal", color: "text-overlay-light" };
     const items1 = [, ];
     ({ body: arr2[0], centeredText: arr2[1] } = tmp2);
     obj4.style = items1;
     obj4.children = stringResult;
-    items[3] = callback2(arg1(dependencyMap[17]).Text, obj4);
+    items[3] = callback2(require(4126) /* Text */.Text, obj4);
     const obj5 = { style: tmp2.cta };
-    const obj6 = {};
-    const intl3 = arg1(dependencyMap[13]).intl;
-    obj6.text = intl3.string(arg1(dependencyMap[13]).t.2u6ZlY);
-    obj6.icon = callback2(arg1(dependencyMap[19]).LinkExternalSmallIcon, { "Bool(false)": false, "Bool(false)": null });
+    const obj6 = { variant: "primary", size: "sm", text: null, icon: null, iconPosition: "end" };
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    obj6.text = intl3.string(require(1212) /* getSystemLocale */.t["2u6ZlY"]);
+    obj6.icon = callback2(require(7563) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, { size: "xs", color: "white" });
     // CreateGeneratorClosureLongIndex (0x67)
     obj6.onPress = callback(tmp);
-    obj5.children = callback2(arg1(dependencyMap[18]).Button, obj6);
+    obj5.children = callback2(require(4543) /* Button */.Button, obj6);
     items[4] = callback2(View, obj5);
     obj.children = items;
-    return callback3(arg1(dependencyMap[14]).Card, obj);
+    return callback3(require(5167) /* getCardBackgroundToken */.Card, obj);
   }
-  const tmp5Result = importDefault(dependencyMap[12])(tmp4, intl.string(arg1(dependencyMap[13]).t.VQq92a));
+  const tmp5Result = importDefault(11992)(tmp4, intl.string(require(1212) /* getSystemLocale */.t.VQq92a));
 });
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/game_claim/native/GameClaimCoachmark.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/game_claim/native/GameClaimCoachmark.tsx");
 
 export default memoResult;
 export const GAME_CLAIM_NOTICE_MARGIN_TOP = PX_8;
 export const GAME_CLAIM_NOTICE_MARGIN_BOTTOM = PX_82;
 export const getScaledGameClaimNoticeHeight = function getScaledGameClaimNoticeHeight(fontScale) {
   const sum = PX_8 + closure_12;
-  const sum1 = sum + arg1(dependencyMap[7]).CARD_STACK_HEIGHT;
-  const sum2 = sum1 + arg1(dependencyMap[8]).scaleTextLineHeight("text-md/medium", fontScale);
-  const sum3 = sum2 + importDefault(dependencyMap[6]).space.PX_4;
-  const obj = arg1(dependencyMap[8]);
-  const result = 2 * arg1(dependencyMap[8]).scaleTextLineHeight("text-sm/normal", fontScale);
-  const sum4 = sum3 + result + importDefault(dependencyMap[6]).space.PX_8;
-  return sum4 + arg1(dependencyMap[9]).SMALL_BUTTON_HEIGHT + PX_82;
+  const sum1 = sum + require(15019) /* importDefaultResult1 */.CARD_STACK_HEIGHT;
+  const sum2 = sum1 + require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-md/medium", fontScale);
+  const sum3 = sum2 + importDefault(689).space.PX_4;
+  const obj = require(9889) /* scaleLineHeight */;
+  const result = 2 * require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-sm/normal", fontScale);
+  const sum4 = sum3 + result + importDefault(689).space.PX_8;
+  return sum4 + require(4547) /* getButtonPadding */.SMALL_BUTTON_HEIGHT + PX_82;
 };

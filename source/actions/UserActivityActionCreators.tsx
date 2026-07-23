@@ -1,41 +1,41 @@
-// Module ID: 10894
-// Function ID: 84713
+// Module ID: 10904
+// Function ID: 84762
 // Name: _getMetadata
-// Dependencies: []
+// Dependencies: [5, 4217, 653, 686, 10901, 507, 2]
 // Exports: getMetadata, play, sync
 
-// Module 10894 (_getMetadata)
+// Module 10904 (_getMetadata)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _getMetadata() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getMetadata = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("actions/UserActivityActionCreators.tsx");
+const result = require("ME").fileFinishedImporting("actions/UserActivityActionCreators.tsx");
 
 export const sync = function sync(activity, userId) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(686);
   obj = { type: "ACTIVITY_SYNC", activity, userId };
   obj.dispatch(obj);
 };
-export const play = function play(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const spotifyMetadataFromActivity = arg1(dependencyMap[4]).getSpotifyMetadataFromActivity(arg0, arg1);
-  const obj = arg1(dependencyMap[4]);
+export const play = function play(closure_0, closure_1) {
+  const _require = closure_0;
+  const spotifyMetadataFromActivity = _require(10901).getSpotifyMetadataFromActivity(closure_0, closure_1);
+  let obj = _require(10901);
   spotifyMetadataFromActivity.then((metadata) => {
-    let obj = arg1(closure_2[3]);
-    obj = { type: "ACTIVITY_PLAY", activity: metadata, userId: arg1, metadata };
+    let obj = callback(outer1_2[3]);
+    obj = { type: "ACTIVITY_PLAY", activity: closure_0, userId: callback, metadata };
     return obj.dispatch(obj);
   }).catch(() => {
-    let obj = arg1(closure_2[3]);
-    obj = { type: "ACTIVITY_PLAY", activity: arg0, userId: arg1 };
+    let obj = callback(outer1_2[3]);
+    obj = { type: "ACTIVITY_PLAY", activity: closure_0, userId: callback };
     return obj.dispatch(obj);
   });
 };
-export const getMetadata = function getMetadata(arg0, id) {
+export const getMetadata = function getMetadata(outer1_1, id) {
   return _getMetadata(...arguments);
 };

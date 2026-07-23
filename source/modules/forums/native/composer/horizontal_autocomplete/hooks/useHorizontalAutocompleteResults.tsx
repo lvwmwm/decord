@@ -1,52 +1,52 @@
-// Module ID: 9631
-// Function ID: 75012
+// Module ID: 9638
+// Function ID: 75053
 // Name: useHorizontalAutocompleteResults
-// Dependencies: []
+// Dependencies: [57, 31, 653, 9639, 668, 566, 2]
 // Exports: useHorizontalAutocompleteResults
 
-// Module 9631 (useHorizontalAutocompleteResults)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-({ AutoCompleteResultTypes: closure_4, ChannelTypes: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/forums/native/composer/horizontal_autocomplete/hooks/useHorizontalAutocompleteResults.tsx");
+// Module 9638 (useHorizontalAutocompleteResults)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ AutoCompleteResultTypes: closure_4, ChannelTypes: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/forums/native/composer/horizontal_autocomplete/hooks/useHorizontalAutocompleteResults.tsx");
 
 export const useHorizontalAutocompleteResults = function useHorizontalAutocompleteResults(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   const selection = channel.selection;
-  const dependencyMap = selection;
   const text = channel.text;
-  let callback = text;
-  const tmp = callback(React.useState([]), 2);
-  const first = tmp[0];
-  const React = first;
+  let tmp = text(first.useState([]), 2);
+  first = tmp[0];
   let closure_4 = tmp[1];
-  const items = [channel];
-  const memo = React.useMemo(() => channel(selection[3]).getAutocompleteOptions(channel, false, false), items);
+  let items = [channel];
+  const memo = first.useMemo(() => channel(selection[3]).getAutocompleteOptions(channel, false, false), items);
   let obj = { text, selectionStart: selection.start, selectionEnd: selection.end };
-  const tmp4 = callback(React.useState(obj), 2);
+  let tmp4 = text(first.useState(obj), 2);
   const first1 = tmp4[0];
   const text2 = first1.text;
   const selectionStart = first1.selectionStart;
   const selectionEnd = first1.selectionEnd;
   let closure_9 = tmp4[1];
   const items1 = [text, selection];
-  const effect = React.useEffect(() => {
+  const effect = first.useEffect(() => {
     const timeout = setTimeout(() => {
-      callback({ text: closure_2, selectionStart: closure_1.start, selectionEnd: closure_1.end });
+      outer1_9({ text: outer1_2, selectionStart: outer1_1.start, selectionEnd: outer1_1.end });
     }, 16);
     return () => {
       clearTimeout(closure_0);
     };
   }, items1);
   const items2 = [selectionStart, selectionEnd, text2, memo];
-  const memo1 = React.useMemo(() => {
+  const memo1 = first.useMemo(() => {
     let tmp13;
     let tmp14;
     let tmp15;
     let tmp = selectionStart;
-    let text = selectionStart;
+    let diff = selectionStart;
     if (null != text2) {
       if (0 !== text2.trim().length) {
         while (true) {
@@ -62,10 +62,9 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
               tmp8 = selectionEnd;
             }
             let substr = text2.slice(tmp, tmp8);
-            let channel = substr[0];
+            let closure_0 = substr[0];
             let str = substr.slice(1);
             let formatted = str.toLowerCase();
-            let selection = formatted;
             let _Object = Object;
             let tmp10 = memo;
             let keys = Object.keys(memo);
@@ -75,7 +74,7 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
                 matchesResult = undefined !== formatted;
               }
               if (matchesResult) {
-                matchesResult = obj.matches(closure_0, formatted, diff);
+                matchesResult = obj.matches(closure_0, formatted, _slicedToArray);
               }
               return matchesResult;
             });
@@ -87,8 +86,7 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
               break;
             }
           }
-          let diff = tmp - 1;
-          text = diff;
+          diff = tmp - 1;
           tmp = diff;
           tmp15 = found;
           tmp13 = tmp12;
@@ -106,46 +104,45 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
         return obj;
       }
     }
-    return { 1367204962: "mn", -77364717: "description", "Bool(false)": "Array" };
+    return { query: null, autocompleteType: null, autocompleteSelectionStart: null };
   }, items2);
   const autocompleteType = memo1.autocompleteType;
   const query = memo1.query;
   const queryOptions = memo1.queryOptions;
   const items3 = [autocompleteType, query, queryOptions, memo];
-  callback = React.useCallback((arg0) => {
+  const callback = first.useCallback((arg0) => {
     if (null != autocompleteType) {
       if (null != query) {
-        callback(memo[closure_10].queryResults(query, queryOptions, arg0));
-        const obj = memo[closure_10];
+        callback(memo[autocompleteType].queryResults(query, queryOptions, arg0));
+        const obj = memo[autocompleteType];
       }
     }
     callback([]);
   }, items3);
   const items4 = [autocompleteType, callback, memo];
-  const effect1 = React.useEffect(() => {
+  const effect1 = first.useEffect(() => {
     let tmp = null;
     if (null != autocompleteType) {
       let stores;
       if (null != memo) {
-        stores = memo[closure_10].stores;
+        stores = memo[autocompleteType].stores;
       }
       tmp = stores;
     }
     if (null != tmp) {
       const BatchedStoreListener = channel(selection[5]).BatchedStoreListener;
       const prototype = BatchedStoreListener.prototype;
-      const batchedStoreListener = new BatchedStoreListener(tmp, () => callback(false));
-      const channel = batchedStoreListener;
+      const batchedStoreListener = new BatchedStoreListener(tmp, () => outer1_13(false));
       batchedStoreListener.attach("useHorizontalAutocompleteResults");
       return () => batchedStoreListener.detach();
     }
   }, items4);
   const items5 = [callback];
-  const effect2 = React.useEffect(() => {
+  const effect2 = first.useEffect(() => {
     callback(true);
   }, items5);
   obj = {
-    results: React.useMemo(() => first.filter((type) => {
+    results: first.useMemo(() => first.filter((type) => {
       type = type.type;
       let tmp = type === constants.USER;
       if (!tmp) {
@@ -162,6 +159,6 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
     autocompleteSelectionStart: memo1.autocompleteSelectionStart,
     query
   };
-  const items6 = [first];
+  items6 = [first];
   return obj;
 };

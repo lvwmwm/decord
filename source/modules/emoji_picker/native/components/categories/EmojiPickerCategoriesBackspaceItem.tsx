@@ -1,27 +1,28 @@
-// Module ID: 9417
-// Function ID: 73299
+// Module ID: 9424
+// Function ID: 73340
 // Name: EmojiPickerCategoriesBackspaceItem
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4015, 1212, 9425, 2]
 // Exports: default
 
-// Module 9417 (EmojiPickerCategoriesBackspaceItem)
-let closure_2 = importAll(dependencyMap[0]);
-const Pressable = arg1(dependencyMap[1]).Pressable;
-const NODE_MARGIN = arg1(dependencyMap[2]).NODE_MARGIN;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoriesBackspaceItem.tsx");
+// Module 9424 (EmojiPickerCategoriesBackspaceItem)
+import result from "result";
+import { Pressable } from "get ActivityIndicator";
+import { NODE_MARGIN } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoriesBackspaceItem.tsx");
 
 export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   let iconStyle;
   let style;
   onBackspace = onBackspace.onBackspace;
-  const arg1 = onBackspace;
   let React;
   ({ style, iconStyle } = onBackspace);
-  const interval = new arg1(closure_1[4]).Interval();
-  closure_1 = React.useRef(interval);
-  const delayedCall = new arg1(closure_1[4]).DelayedCall(500, () => {
-    const current = closure_2.current;
+  const interval = new onBackspace(4015).Interval();
+  const dependencyMap = React.useRef(interval);
+  const delayedCall = new onBackspace(4015).DelayedCall(500, () => {
+    const current = result.current;
     current.cancel();
     const current2 = ref.current;
     current2.start(50, onBackspace);
@@ -31,31 +32,32 @@ export default function EmojiPickerCategoriesBackspaceItem(onBackspace) {
   const items1 = [onBackspace];
   const callback = React.useCallback(() => {
     onBackspace();
-    const current = closure_2.current;
+    const current = result.current;
     current.delay();
   }, items);
   const callback1 = React.useCallback(() => {
-    const current = closure_2.current;
+    const current = result.current;
     current.cancel();
     const current2 = ref.current;
     current2.stop();
     onBackspace();
   }, items1);
   const effect = React.useEffect(() => {
-    const onBackspace = ref.current;
+    current = current.current;
+    current = result.current;
     return () => {
       current.stop();
       current.cancel();
     };
   });
-  let obj = { hitSlop: obj, style, accessibilityRole: "keyboardkey" };
+  obj = { hitSlop: obj, style, accessibilityRole: "keyboardkey" };
   obj = { top: NODE_MARGIN, bottom: NODE_MARGIN, right: NODE_MARGIN, left: NODE_MARGIN };
-  const intl = arg1(closure_1[5]).intl;
-  obj.accessibilityLabel = intl.string(arg1(closure_1[5]).t.4SnBzF);
+  const intl = onBackspace(1212).intl;
+  obj.accessibilityLabel = intl.string(onBackspace(1212).t["4SnBzF"]);
   obj.delayLongPress = 500;
   obj.onPressOut = callback1;
   obj.onLongPress = callback;
   const items2 = [iconStyle, { opacity: 0.5 }];
-  obj.children = jsx(arg1(closure_1[6]).BackspaceIcon, { style: items2 });
-  return <Pressable {...obj} />;
+  obj.children = jsx(onBackspace(9425).BackspaceIcon, { style: items2 });
+  return <Pressable top={NODE_MARGIN} bottom={NODE_MARGIN} right={NODE_MARGIN} left={NODE_MARGIN} />;
 };

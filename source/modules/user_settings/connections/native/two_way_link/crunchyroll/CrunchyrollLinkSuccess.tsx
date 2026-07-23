@@ -1,45 +1,51 @@
-// Module ID: 8989
-// Function ID: 70804
+// Module ID: 8996
+// Function ID: 70845
 // Name: CrunchyrollLinkDiscordSuccess
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 8943, 8997, 4126, 1212, 5121, 4543, 2]
 // Exports: default
 
-// Module 8989 (CrunchyrollLinkDiscordSuccess)
-importAll(dependencyMap[0]);
-({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp4 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ image: { "Bool(false)": null, "Bool(false)": "231cc2e45d7613cf5eb4ce4ba6961f0d", "Bool(false)": "EmbedIcon" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
+// Module 8996 (CrunchyrollLinkDiscordSuccess)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 232, height: 108, marginBottom: 24 } });
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
 
 export default function CrunchyrollLinkDiscordSuccess(onClose) {
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(8943) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container };
   obj = { style: twoWayLinkStyles.content };
   const tmp = callback3();
-  const items = [callback(closure_3, { source: importDefault(dependencyMap[5]), style: callback3().image }), , ];
-  const obj2 = { style: twoWayLinkStyles.title };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj2.children = intl.string(arg1(dependencyMap[7]).t.Fnvxvk);
-  items[1] = callback(arg1(dependencyMap[6]).Text, obj2);
-  const obj3 = { cachedAt: 1, edpbxy: 1, style: twoWayLinkStyles.body };
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj3.children = intl2.string(arg1(dependencyMap[7]).t.YwXceg);
-  items[2] = callback(arg1(dependencyMap[6]).Text, obj3);
+  const items = [callback(closure_3, { source: importDefault(8997), style: callback3().image }), , ];
+  const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl.string(require(1212) /* getSystemLocale */.t.Fnvxvk);
+  items[1] = callback(require(4126) /* Text */.Text, obj2);
+  const obj3 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.YwXceg);
+  items[2] = callback(require(4126) /* Text */.Text, obj3);
   obj.children = items;
   const items1 = [callback2(closure_4, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer };
   const obj5 = { style: twoWayLinkStyles.footerButton };
   const obj6 = { size: "md" };
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj6.text = intl3.string(arg1(dependencyMap[7]).t.i4jeWR);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj6.text = intl3.string(require(1212) /* getSystemLocale */.t.i4jeWR);
   obj6.onPress = onClose.onClose;
-  obj5.children = callback(arg1(dependencyMap[9]).Button, obj6);
+  obj5.children = callback(require(4543) /* Button */.Button, obj6);
   obj4.children = callback(closure_4, obj5);
-  items1[1] = callback(arg1(dependencyMap[8]).SafeAreaPaddingView, obj4);
+  items1[1] = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   obj.children = items1;
   return callback2(closure_4, obj);
 };

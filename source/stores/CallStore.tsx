@@ -1,9 +1,20 @@
-// Module ID: 4806
-// Function ID: 41916
+// Module ID: 4809
+// Function ID: 41934
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1906, 3947, 653, 686, 507, 22, 566, 2]
 
-// Module 4806 (_isNativeReflectConstruct)
+// Module 4809 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,48 +33,39 @@ function callConnect(channelId, channelId2) {
   if (channelId === undefined) {
     channelId = channelId.getChannelId();
   }
-  const channel = channel.getChannel(channelId);
+  channel = channel.getChannel(channelId);
   if (null != channel) {
     if (null == channel.getGuildId()) {
       if (null != channelId) {
-        let tmp5 = closure_12[channelId];
+        let tmp5 = dependencyMap[channelId];
         if (null == tmp5) {
           let obj = { channelId, ringing: [] };
           tmp5 = obj;
         }
-        closure_12[channelId] = tmp5;
+        dependencyMap[channelId] = tmp5;
         obj = { type: "CALL_CONNECT", channelId };
-        importDefault(dependencyMap[9]).dispatch(obj);
+        importDefault(686).dispatch(obj);
         return true;
       }
     }
   }
   return false;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const Endpoints = arg1(dependencyMap[8]).Endpoints;
 let closure_12 = {};
 let closure_13 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class CallStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, CallStore);
-      obj = closure_6(CallStore);
-      tmp2 = closure_5;
-      if (closure_14()) {
+      tmp = outer1_3(this, CallStore);
+      obj = outer1_6(CallStore);
+      tmp2 = outer1_5;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -72,26 +74,25 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = CallStore;
   callback2(CallStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_9, closure_10);
+      this.waitFor(outer1_8, outer1_9, outer1_10);
     }
   };
   const items = [obj, , , , , , ];
   obj = {
     key: "getCall",
     value(arg0) {
-      return closure_12[arg0];
+      return outer1_12[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getCalls",
     value() {
-      return Object.values(closure_12);
+      return Object.values(outer1_12);
     }
   };
   items[2] = obj;
@@ -109,7 +110,7 @@ let tmp2 = (Store) => {
   items[4] = {
     key: "isCallActive",
     value(arg0, arg1) {
-      let messageId = closure_12[arg0];
+      let messageId = outer1_12[arg0];
       if (!(null != messageId && !messageId.unavailable)) {
         return tmp;
       } else if (null != arg1) {
@@ -123,19 +124,19 @@ let tmp2 = (Store) => {
   items[5] = {
     key: "isCallUnavailable",
     value(arg0) {
-      return null != closure_12[arg0] && closure_12[arg0].unavailable;
+      return null != outer1_12[arg0] && outer1_12[arg0].unavailable;
     }
   };
   items[6] = {
     key: "getInternalState",
     value() {
-      return { calls: closure_12, enqueuedRings: closure_13 };
+      return { calls: outer1_12, enqueuedRings: outer1_13 };
     }
   };
   return callback(CallStore, items);
-}(importDefault(dependencyMap[12]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "CallStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     return callConnect(true);
   },
@@ -147,10 +148,8 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     callStoreInternalState = callStoreInternalState.callStoreInternalState;
     let obj = {};
     const merged = Object.assign(callStoreInternalState.calls);
-    let closure_12 = obj;
     obj = {};
     const merged1 = Object.assign(callStoreInternalState.enqueuedRings);
-    let closure_13 = obj;
   },
   CONNECTION_RESUMED: function handleConnectionResumed() {
     return callConnect(true);
@@ -160,30 +159,30 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     channel = channel.channel;
-    if (null != closure_13[channel.id]) {
+    if (null != dependencyMap2[channel.id]) {
       const id = channel.id;
-      delete r4[r2];
+      delete tmp4[tmp3];
     }
-    if (null == closure_12[channel.id]) {
+    if (null == dependencyMap[channel.id]) {
       return false;
     } else {
       const id2 = channel.id;
-      delete r1[r0];
+      delete tmp2[tmp];
     }
   },
   CALL_CREATE: function handleCallCreate(channelId) {
     channelId = channelId.channelId;
     let obj = { channelId, messageId: channelId.messageId, region: channelId.region, ringing: Object.keys(channelId.ongoingRings), unavailable: false, regionUpdated: false };
     closure_12[channelId] = obj;
-    if (null != closure_13[channelId]) {
-      let tmp = closure_13[channelId];
-      delete r1[r6];
-      if (1 !== tmp.indexOf("all")) {
-        tmp = null;
+    if (null != dependencyMap2[channelId]) {
+      let tmp3 = dependencyMap2[channelId];
+      delete tmp[tmp2];
+      if (1 !== tmp3.indexOf("all")) {
+        tmp3 = null;
       }
-      const HTTP = arg1(dependencyMap[10]).HTTP;
+      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
       obj = { url: Endpoints.CALL_RING(channelId) };
-      obj = { recipients: tmp };
+      obj = { recipients: tmp3 };
       obj.body = obj;
       obj.oldFormErrors = true;
       obj.rejectWithError = true;
@@ -203,42 +202,42 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
       const tmp3 = tmp.regionUpdated || tmp.region !== region;
     }
     const obj = {};
-    const merged = Object.assign(closure_12[channelId]);
+    const merged = Object.assign(dependencyMap[channelId]);
     obj["messageId"] = messageId;
     obj["region"] = region;
     obj["ringing"] = Object.keys(ongoingRings);
     obj["regionUpdated"] = tmp2;
-    closure_12[channelId] = obj;
+    dependencyMap[channelId] = obj;
   },
   CALL_DELETE: function handleCallDelete(arg0) {
     let channelId;
     let unavailable;
     ({ channelId, unavailable } = arg0);
     if (true === unavailable) {
-      if (null != tmp) {
+      if (null != tmp3) {
         let obj = {};
-        const merged = Object.assign(tmp);
+        const merged = Object.assign(tmp3);
         obj["unavailable"] = unavailable;
       }
-      tmp2[channelId] = obj;
-      if (null != closure_13[channelId]) {
-        delete r0[r1];
+      tmp4[channelId] = obj;
+      if (null != dependencyMap2[channelId]) {
+        delete tmp[tmp2];
       }
     }
-    obj = { p: -1, e: -1882570463, transparent: 1360068610, animationType: 1361143520, emptyStateContentContainer: 1340580, channelId, ringing: [], unavailable };
+    obj = { channelId, ringing: [], messageId: null, region: null, regionUpdated: false, unavailable };
   },
   CALL_ENQUEUE_RING: function handleCallEnqueueRing(arg0) {
     let channelId;
     let recipients;
     ({ channelId, recipients } = arg0);
-    let items = closure_13[channelId];
+    let items = dependencyMap2[channelId];
     if (null == items) {
       items = [];
     }
     if (null == recipients) {
-      recipients = [null];
+      recipients = ["all"];
     }
-    closure_13[channelId] = importDefault(dependencyMap[11]).union(items, recipients);
+    dependencyMap2[channelId] = importDefault(22).union(items, recipients);
   },
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(channelId) {
     if (null == channelId.channelId) {
@@ -246,6 +245,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     }
   }
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("stores/CallStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/CallStore.tsx");
 
 export default tmp2;

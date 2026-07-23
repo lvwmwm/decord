@@ -1,39 +1,43 @@
-// Module ID: 11964
-// Function ID: 92486
+// Module ID: 11976
+// Function ID: 92539
 // Name: _isNativeReflectConstruct
-// Dependencies: [2382364718, 1912602631, 1845493806, 1140850734, 1426063392, 3556769813, 2130706466, 1426063375]
+// Dependencies: [6, 7, 15, 17, 18, 1388, 1839, 1841, 2]
 
-// Module 11964 (_isNativeReflectConstruct)
+// Module 11976 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import constructInPlace from "constructInPlace";
+import { LibdiscoreBatchStoreRefactorExperiment } from "_callSuper";
+
 let TypeTag;
+let closure_5;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-({ TypeTag, constructInPlace: closure_5 } = arg1(dependencyMap[5]));
-let tmp3 = (LibdiscoreStore) => {
+({ TypeTag, constructInPlace: closure_5 } = constructInPlace);
+let tmp3 = ((LibdiscoreStore) => {
   class NoteStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
       tmp = NoteStore(this, NoteStore);
       items1 = [...items];
-      obj = closure_3(NoteStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(NoteStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, items1, closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, items1, outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -42,7 +46,6 @@ let tmp3 = (LibdiscoreStore) => {
       return tmp2Result;
     }
   }
-  let closure_0 = NoteStore;
   callback2(NoteStore, LibdiscoreStore);
   let obj = {
     key: "getNote",
@@ -51,7 +54,7 @@ let tmp3 = (LibdiscoreStore) => {
       return database.get(arg0);
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "stateWrapper",
     value() {
@@ -60,9 +63,8 @@ let tmp3 = (LibdiscoreStore) => {
   };
   items[1] = obj;
   return callback(NoteStore, items);
-}(arg1(dependencyMap[6]).LibdiscoreStore);
+})(require("_isNativeReflectConstruct").LibdiscoreStore);
 tmp3.displayName = "NoteStore";
-const LibdiscoreBatchStoreRefactorExperiment = arg1(dependencyMap[7]).LibdiscoreBatchStoreRefactorExperiment;
 tmp3 = new tmp3({
   LOGOUT(arg0, clear) {
     return clear.clear();
@@ -80,31 +82,10 @@ tmp3 = new tmp3({
     const result = set.set(note.id, callback3("Note", { loading: false, note: note.note }));
   },
   USER_NOTE_LOAD_START(userId, set) {
-    const result = set.set(userId.userId, callback3("Note", {}));
+    const result = set.set(userId.userId, callback3("Note", { loading: true, note: null }));
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-const obj = {
-  LOGOUT(arg0, clear) {
-    return clear.clear();
-  },
-  RESET_SOCKET(arg0, clear) {
-    return clear.clear();
-  },
-  CONNECTION_OPEN(arg0, clear) {
-    return clear.clear();
-  },
-  OVERLAY_INITIALIZE(arg0, clear) {
-    return clear.clear();
-  },
-  USER_NOTE_UPDATE(note, set) {
-    const result = set.set(note.id, callback3("Note", { loading: false, note: note.note }));
-  },
-  USER_NOTE_LOAD_START(userId, set) {
-    const result = set.set(userId.userId, callback3("Note", {}));
-  }
-};
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_profile/notes/NoteStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_profile/notes/NoteStore.tsx");
 
 export default tmp3;
 export const NoteRecordTypeTag = "Note";

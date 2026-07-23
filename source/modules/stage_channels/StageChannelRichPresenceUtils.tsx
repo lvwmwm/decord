@@ -1,15 +1,23 @@
-// Module ID: 9075
-// Function ID: 71169
+// Module ID: 9082
+// Function ID: 71210
 // Name: unpackStageChannelParty
-// Dependencies: []
+// Dependencies: [57, 1194, 1348, 1838, 4954, 4947, 653, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 9075 (unpackStageChannelParty)
+// Module 9082 (unpackStageChannelParty)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_isNativeReflectConstruct";
+import { STAGE_APPLICATION_ID } from "MAX_STAGE_TOPIC_LENGTH";
+import { GuildFeatures } from "ME";
+
 function unpackStageChannelParty(activity) {
   if (null != activity) {
     if (null != tmp.party) {
       if (null != activity.party.id) {
-        if (str.startsWith(closure_7)) {
+        if (str.startsWith(c7)) {
           const tmp7 = callback(str.split(":"), 5);
           const _parseInt = parseInt;
           const parsed = parseInt(tmp7[3], 16);
@@ -20,22 +28,15 @@ function unpackStageChannelParty(activity) {
     }
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const STAGE_APPLICATION_ID = arg1(dependencyMap[5]).STAGE_APPLICATION_ID;
-const GuildFeatures = arg1(dependencyMap[6]).GuildFeatures;
-let closure_7 = "stage:";
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
+let c7 = "stage:";
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
 
 export const packStageChannelPartyId = function packStageChannelPartyId(channel, stageInstanceByChannel) {
   let num = 0;
   if (speaker.isSpeaker(id.getId(), channel.id)) {
     num = 1;
   }
-  const guild = guild.getGuild(channel.getGuildId());
+  guild = guild.getGuild(channel.getGuildId());
   let str = num;
   if (null != guild) {
     const features = guild.features;
@@ -50,7 +51,7 @@ export const packStageChannelPartyId = function packStageChannelPartyId(channel,
     }
     str = tmp5;
   }
-  return "" + closure_7 + channel.guild_id + ":" + channel.id + ":" + str.toString(16) + ":" + stageInstanceByChannel.id;
+  return "" + c7 + channel.guild_id + ":" + channel.id + ":" + str.toString(16) + ":" + stageInstanceByChannel.id;
 };
 export { unpackStageChannelParty };
 export const isStageActivity = function isStageActivity(activity) {

@@ -1,9 +1,18 @@
-// Module ID: 10633
-// Function ID: 83028
+// Module ID: 10643
+// Function ID: 83078
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 587, 566, 686, 2]
 
-// Module 10633 (_isNativeReflectConstruct)
+// Module 10643 (_isNativeReflectConstruct)
+import Storage from "Storage";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { StorageKeys } from "ME";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,67 +22,60 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const StorageKeys = arg1(dependencyMap[5]).StorageKeys;
-const set = new Set();
+let set = new Set();
 const set1 = new Set();
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class TooltipStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_2(this, TooltipStore);
+      tmp = outer1_2(this, TooltipStore);
       items1 = [...items];
-      obj = closure_5(TooltipStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      obj = outer1_5(TooltipStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items1, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
       tmp2Result.canShowTooltip = (arg0) => {
-        let hasItem = set.has(arg0);
+        let hasItem = outer2_8.has(arg0);
         if (hasItem) {
-          hasItem = !set2.has(arg0);
+          hasItem = !outer2_9.has(arg0);
         }
         return hasItem;
       };
-      tmp2Result.hasShownTooltip = (arg0) => set.has(arg0);
+      tmp2Result.hasShownTooltip = (arg0) => outer2_8.has(arg0);
       return tmp2Result;
     }
   }
-  const arg1 = TooltipStore;
   callback2(TooltipStore, Store);
-  const items = [
+  let items = [
     {
       key: "initialize",
       value() {
-        const Storage = TooltipStore(closure_1[6]).Storage;
-        let items = Storage.get(constants.ACKNOWLEDGED_TOOLTIPS_KEY, []);
+        const Storage = TooltipStore(outer1_1[6]).Storage;
+        let items = Storage.get(outer1_7.ACKNOWLEDGED_TOOLTIPS_KEY, []);
         if (null == items) {
           items = [];
         }
-        let closure_9 = Set(...items);
+        const outer1_9 = Set(...items);
       }
     }
   ];
   return callback(TooltipStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "TooltipStore";
-tmp4 = new tmp4(importDefault(dependencyMap[8]), {
+tmp4 = new tmp4(require("dispatcher"), {
   TOOLTIP_ACKNOWLEDGE: function handleTooltipAcknowledge(tooltip) {
     if (null != set1) {
       set1.add(tooltip.tooltip);
     }
-    const Storage = arg1(dependencyMap[6]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     const result = Storage.set(StorageKeys.ACKNOWLEDGED_TOOLTIPS_KEY, Array(set1));
   },
   TOOLTIP_SHOW_ATTEMPT: function hasAttemptedToShowTooltip(arg0) {
@@ -93,6 +95,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[8]), {
     return false;
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/tooltip/TooltipStore.tsx");
+let result = set.fileFinishedImporting("modules/tooltip/TooltipStore.tsx");
 
 export default tmp4;

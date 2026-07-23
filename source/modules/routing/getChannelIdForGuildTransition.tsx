@@ -1,22 +1,25 @@
-// Module ID: 5599
-// Function ID: 47571
+// Module ID: 5602
+// Function ID: 47594
 // Name: getChannelIdForGuildTransition
-// Dependencies: []
+// Dependencies: [5054, 1348, 1907, 1838, 1906, 5603, 653, 1355, 5607, 5609, 5611, 2]
 // Exports: getChannelIdForGuildTransition
 
-// Module 5599 (getChannelIdForGuildTransition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const ME = arg1(dependencyMap[5]).ME;
-const StaticChannelRoute = arg1(dependencyMap[6]).StaticChannelRoute;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/routing/getChannelIdForGuildTransition.tsx");
+// Module 5602 (getChannelIdForGuildTransition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { ME } from "ME";
+import { StaticChannelRoute } from "set";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/routing/getChannelIdForGuildTransition.tsx");
 
 export const getChannelIdForGuildTransition = function getChannelIdForGuildTransition(guildId) {
-  const channelId = channelId.getChannelId(guildId);
-  const defaultChannel = defaultChannel.getDefaultChannel(guildId);
+  channelId = channelId.getChannelId(guildId);
+  defaultChannel = defaultChannel.getDefaultChannel(guildId);
   let id;
   if (null != defaultChannel) {
     id = defaultChannel.id;
@@ -24,7 +27,7 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
   if (null == id) {
     let tmp5;
     if (guildId === ME) {
-      const privateChannelIds = privateChannelIds.getPrivateChannelIds();
+      privateChannelIds = privateChannelIds.getPrivateChannelIds();
       let first;
       if (privateChannelIds.length > 0) {
         first = privateChannelIds[0];
@@ -34,7 +37,7 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
     id = tmp5;
   }
   if (channelId === StaticChannelRoute.GUILD_ONBOARDING) {
-    if (!closure_2.shouldShowOnboarding(guildId)) {
+    if (!_isNativeReflectConstruct.shouldShowOnboarding(guildId)) {
       return id;
     }
   }
@@ -42,19 +45,26 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
     if (!obj.canSeeOnboardingHome(guildId)) {
       return id;
     }
-    const obj = arg1(dependencyMap[7]);
+    obj = require(5607) /* canSeeOnboardingHomeInPreview */;
   }
-  if (channelId === StaticChannelRoute.GAME_SHOP) {
-    if (obj2.canSeeGameShop(guildId)) {
-      return channelId;
+  if (channelId === StaticChannelRoute.GUILD_SPACE) {
+    if (obj4.canUseGuildSpace(guild.getGuild(guildId), "getChannelIdForGuildTransition")) {
+      id = channelId;
     }
-    const obj2 = arg1(dependencyMap[8]);
-  }
-  const channel = channel.getChannel(channelId);
-  if (null == channel) {
-    let tmp13 = id;
+    return id;
   } else {
-    tmp13 = channelId;
+    if (channelId === StaticChannelRoute.GAME_SHOP) {
+      if (obj2.canSeeGameShop(guildId)) {
+        return channelId;
+      }
+      obj2 = require(5611) /* _createForOfIteratorHelperLoose */;
+    }
+    channel = channel.getChannel(channelId);
+    if (null == channel) {
+      let tmp15 = id;
+    } else {
+      tmp15 = channelId;
+    }
+    return tmp15;
   }
-  return tmp13;
 };

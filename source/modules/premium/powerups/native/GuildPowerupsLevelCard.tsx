@@ -1,16 +1,31 @@
-// Module ID: 11588
-// Function ID: 90099
+// Module ID: 11598
+// Function ID: 90148
 // Name: GuildLevelPowerupHeader
-// Dependencies: []
+// Dependencies: [31, 27, 4018, 653, 11599, 33, 4130, 689, 4554, 8013, 11581, 11560, 4126, 1212, 2230, 11531, 11552, 11600, 11601, 11557, 2]
 // Exports: default
 
-// Module 11588 (GuildLevelPowerupHeader)
+// Module 11598 (GuildLevelPowerupHeader)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import BoostedGuildTiers from "BoostedGuildTiers";
+import ME from "ME";
+import { TIER_CARDS } from "BoostedGuildTiers";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function GuildLevelPowerupHeader(arg0) {
   let active;
   let nextActive;
   let position;
   ({ active, nextActive, position } = arg0);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   if (active) {
     if (false !== nextActive) {
       const items = [tmp.boostContainerActive.backgroundColor, tmp.boostContainerActive.backgroundColor];
@@ -26,7 +41,7 @@ function GuildLevelPowerupHeader(arg0) {
     items1[1] = progressStart;
     items1[2] = position === constants.END && tmp.progressEnd;
     obj.style = items1;
-    const items2 = [callback(importDefault(dependencyMap[8]), obj), , ];
+    const items2 = [callback(importDefault(4554), obj), , ];
     obj = {};
     const items3 = [, ];
     ({ boostContainer: arr6[0], boostContainerBackground: arr6[1] } = tmp);
@@ -41,9 +56,9 @@ function GuildLevelPowerupHeader(arg0) {
     items4[1] = boostContainerActive;
     obj1.style = items4;
     const obj2 = { size: "xs" };
-    const colors = importDefault(dependencyMap[7]).colors;
+    const colors = importDefault(689).colors;
     obj2.color = active ? colors.WHITE : colors.TEXT_MUTED;
-    obj1.children = callback(arg1(dependencyMap[9]).BoostGemIcon, obj2);
+    obj1.children = callback(require(8013) /* BoostGemIcon */.BoostGemIcon, obj2);
     items2[2] = callback(View, obj1);
     obj.children = items2;
     return closure_11(View, obj);
@@ -59,14 +74,11 @@ function GuildLevelPowerupHeader(arg0) {
 class GuildPowerupLevelBody {
   constructor(arg0) {
     index = global.index;
-    arg1 = index;
     tmp = jsxs();
-    importDefault = tmp;
-    tmp2 = importDefault(dependencyMap[10])(global.isActive);
+    closure_1 = tmp;
+    tmp2 = require("useGuildPowerupColorConfig")(global.isActive);
     textColor = tmp2.textColor;
-    dependencyMap = textColor;
     iconColor = tmp2.iconColor;
-    importAll = iconColor;
     items = [, , , ];
     items[0] = index;
     items[1] = iconColor;
@@ -74,11 +86,11 @@ class GuildPowerupLevelBody {
     items[3] = tmp;
     obj = { style: tmp.perkRowContainer };
     items1 = [, ];
-    items1[0] = importAll.useMemo(() => {
-      if (null == closure_9[closure_0]) {
+    items1[0] = iconColor.useMemo(() => {
+      if (null == outer1_9[index]) {
         return [];
       } else {
-        if (tmp.tier === TIER_3.TIER_3) {
+        if (tmp.tier === outer1_7.TIER_3) {
           const perks = tmp.perks;
           let substr = perks.slice(0, -1);
         } else {
@@ -87,14 +99,14 @@ class GuildPowerupLevelBody {
         let mapped;
         if (null != substr) {
           mapped = substr.map((perkIcon) => {
-            let obj = callback(closure_2[11]);
-            obj = { style: closure_1.perkRowStyle };
-            obj = { color: closure_3, size: "sm" };
-            const items = [callback2(obj.getIconForPerk(perkIcon.perkIcon), obj), ];
-            const obj1 = { color: closure_2, style: closure_1.perkText, variant: "text-sm/medium", children: perkIcon.getCopy() };
-            items[1] = callback2(callback(closure_2[12]).Text, obj1);
+            let obj = index(textColor[11]);
+            obj = { style: outer1_1.perkRowStyle };
+            obj = { color: outer1_3, size: "sm" };
+            const items = [outer2_10(obj.getIconForPerk(perkIcon.perkIcon), obj), ];
+            const obj1 = { color: outer1_2, style: outer1_1.perkText, variant: "text-sm/medium", children: perkIcon.getCopy() };
+            items[1] = outer2_10(index(textColor[12]).Text, obj1);
             obj.children = items;
-            return callback3(closure_4, obj, "perk-" + callback + "-" + arg1);
+            return outer2_11(outer2_4, obj, "perk-" + outer1_0 + "-" + arg1);
           });
         }
         return mapped;
@@ -102,53 +114,46 @@ class GuildPowerupLevelBody {
     }, items);
     obj = { style: tmp.perkRow };
     obj1 = { color: textColor, variant: "text-sm/medium" };
-    intl = arg1(dependencyMap[13]).intl;
-    obj1.children = intl.string(importDefault(dependencyMap[14]).nIj3LZ);
-    obj.children = jsx(arg1(dependencyMap[12]).Text, obj1);
+    intl = require("getSystemLocale").intl;
+    obj1.children = intl.string(require("messagesProxy").nIj3LZ);
+    obj.children = jsx(require("Text").Text, obj1);
     items1[1] = jsx(View, obj);
     obj.children = items1;
     return jsxs(View, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ LevelCardPosition: closure_5, PowerupActiveStatusType: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ BoostedGuildTiers: closure_7, HorizontalGradient: closure_8 } = arg1(dependencyMap[3]));
-const TIER_CARDS = arg1(dependencyMap[4]).TIER_CARDS;
-const tmp3 = arg1(dependencyMap[3]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = { cardContainer: { flex: 1 }, card: { zIndex: "c5a514a204d76328abe2ecbd82735ce3", elevation: "no_mutual_friends_dark", backgroundColor: "png" } };
-obj = { marginVertical: importDefault(dependencyMap[7]).space.PX_24, position: "relative" };
-obj.progressContainer = obj;
-const tmp4 = arg1(dependencyMap[5]);
-obj.progress = { height: 6, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
-const obj1 = { height: 6, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
-obj.progressStart = { marginStart: importDefault(dependencyMap[7]).space.PX_16 };
-const obj2 = { marginStart: importDefault(dependencyMap[7]).space.PX_16 };
-obj.progressEnd = { marginEnd: importDefault(dependencyMap[7]).space.PX_16, borderTopEndRadius: importDefault(dependencyMap[7]).radii.round, borderBottomEndRadius: importDefault(dependencyMap[7]).radii.round };
-const obj3 = { marginEnd: importDefault(dependencyMap[7]).space.PX_16, borderTopEndRadius: importDefault(dependencyMap[7]).radii.round, borderBottomEndRadius: importDefault(dependencyMap[7]).radii.round };
-obj.boostContainerBackground = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, start: importDefault(dependencyMap[7]).space.PX_16 - 2 };
-const obj4 = { backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, start: importDefault(dependencyMap[7]).space.PX_16 - 2 };
-obj.boostContainer = { padding: importDefault(dependencyMap[7]).space.PX_4, borderRadius: importDefault(dependencyMap[7]).radii.round, start: importDefault(dependencyMap[7]).space.PX_16, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
-const obj5 = { padding: importDefault(dependencyMap[7]).space.PX_4, borderRadius: importDefault(dependencyMap[7]).radii.round, start: importDefault(dependencyMap[7]).space.PX_16, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
-obj.boostContainerActive = { backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.GUILD_BOOSTING_PINK };
-const obj6 = { backgroundColor: importDefault(dependencyMap[7]).unsafe_rawColors.GUILD_BOOSTING_PINK };
-obj.boostContainerInactive = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
-const obj7 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_SUBTLE };
-obj.contentContainer = { padding: importDefault(dependencyMap[7]).space.PX_16 };
-const obj8 = { padding: importDefault(dependencyMap[7]).space.PX_16 };
-obj.perkRowContainer = { flexDirection: "column", marginTop: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
-obj.perkRow = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-obj.perkRowStyle = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-const obj9 = { flexDirection: "column", marginTop: importDefault(dependencyMap[7]).space.PX_16, gap: importDefault(dependencyMap[7]).space.PX_8 };
-obj.perkText = { marginStart: importDefault(dependencyMap[7]).space.PX_8 };
-const obj10 = { marginStart: importDefault(dependencyMap[7]).space.PX_8 };
-obj.footerContainer = { marginTop: "auto", paddingTop: importDefault(dependencyMap[7]).space.PX_16 };
-let closure_12 = obj.createStyles(obj);
-const obj11 = { marginTop: "auto", paddingTop: importDefault(dependencyMap[7]).space.PX_16 };
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsLevelCard.tsx");
+({ LevelCardPosition: closure_5, PowerupActiveStatusType: closure_6 } = BoostedGuildTiers);
+({ BoostedGuildTiers: closure_7, HorizontalGradient: closure_8 } = ME);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = { cardContainer: { flex: 1 }, card: { padding: 0, overflow: "hidden", flex: 1 } };
+_createForOfIteratorHelperLoose = { marginVertical: require("_createForOfIteratorHelperLoose").space.PX_24, position: "relative" };
+_createForOfIteratorHelperLoose.progressContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.progress = { height: 6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+let obj1 = { height: 6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+_createForOfIteratorHelperLoose.progressStart = { marginStart: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj2 = { marginStart: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.progressEnd = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_16, borderTopEndRadius: require("_createForOfIteratorHelperLoose").radii.round, borderBottomEndRadius: require("_createForOfIteratorHelperLoose").radii.round };
+const obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT, width: 28, height: 28, start: require("_createForOfIteratorHelperLoose").space.PX_16 - 2, top: -11 };
+_createForOfIteratorHelperLoose.boostContainerBackground = obj4;
+const obj5 = { padding: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, position: "absolute", width: 24, height: 24, top: -9, start: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+_createForOfIteratorHelperLoose.boostContainer = obj5;
+const obj3 = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_16, borderTopEndRadius: require("_createForOfIteratorHelperLoose").radii.round, borderBottomEndRadius: require("_createForOfIteratorHelperLoose").radii.round };
+_createForOfIteratorHelperLoose.boostContainerActive = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GUILD_BOOSTING_PINK };
+const obj6 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GUILD_BOOSTING_PINK };
+_createForOfIteratorHelperLoose.boostContainerInactive = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+const obj8 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: 0, flex: 1 };
+_createForOfIteratorHelperLoose.contentContainer = obj8;
+const obj7 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+_createForOfIteratorHelperLoose.perkRowContainer = { flexDirection: "column", marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.perkRow = { flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.perkRowStyle = { flexDirection: "row", alignItems: "center" };
+const obj9 = { flexDirection: "column", marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.perkText = { marginStart: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const obj10 = { marginStart: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.footerContainer = { marginTop: "auto", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj11 = { marginTop: "auto", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("BoostedGuildTiers").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsLevelCard.tsx");
 
 export default function GuildPowerupsLevelCard(arg0) {
   let guildId;
@@ -157,14 +162,13 @@ export default function GuildPowerupsLevelCard(arg0) {
   let nextPowerup;
   let powerup;
   ({ guildId, powerup, nextPowerup, index, isScrollingRef } = arg0);
-  const arg1 = isScrollingRef;
-  const tmp = callback3();
-  const tmp2 = importDefault(dependencyMap[15])(guildId, powerup);
-  let obj = arg1(dependencyMap[16]);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = importDefault(11531)(guildId, powerup);
+  let obj = isScrollingRef(11552);
   const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp2, false);
-  const tmp3 = importDefault(dependencyMap[15])(guildId, nextPowerup);
-  const tmp7 = importDefault(dependencyMap[17])(guildId, powerup);
-  const importDefault = tmp7;
+  const tmp3 = importDefault(11531)(guildId, nextPowerup);
+  const tmp7 = importDefault(11600)(guildId, powerup);
+  importDefault = tmp7;
   if (0 === index) {
     let MIDDLE = constants.START;
   } else if (null == nextPowerup) {
@@ -182,19 +186,19 @@ export default function GuildPowerupsLevelCard(arg0) {
   obj = { position: MIDDLE, active: tmp2.type !== constants2.INACTIVE };
   let tmp17;
   const tmp13 = callback2;
-  const tmp6 = importDefault(dependencyMap[15])(guildId, nextPowerup).type !== constants2.INACTIVE;
+  const tmp6 = importDefault(11531)(guildId, nextPowerup).type !== constants2.INACTIVE;
   if (null != nextPowerup) {
     tmp17 = tmp6;
   }
   obj.nextActive = tmp17;
   const items1 = [callback(GuildLevelPowerupHeader, obj), ];
   const obj1 = { style: tmp.contentContainer };
-  const items2 = [callback(arg1(dependencyMap[12]).Text, { variant: "heading-lg/semibold", children: powerup.title }), callback(GuildPowerupLevelBody, { isActive: tmp2.type !== constants2.INACTIVE, index }), ];
+  const items2 = [callback(isScrollingRef(4126).Text, { variant: "heading-lg/semibold", children: powerup.title }), callback(GuildPowerupLevelBody, { isActive: tmp2.type !== constants2.INACTIVE, index }), ];
   const obj2 = { variant: "heading-lg/semibold", children: powerup.title };
-  const tmp14 = importDefault(dependencyMap[18]);
+  const tmp14 = importDefault(11601);
   const tmp15 = callback;
   const tmp16 = GuildLevelPowerupHeader;
-  items2[2] = callback(View, { style: tmp.footerContainer, children: callback(arg1(dependencyMap[19]).GuildPowerupsCardFooter, obj4) });
+  items2[2] = callback(View, { style: tmp.footerContainer, children: callback(isScrollingRef(11557).GuildPowerupsCardFooter, obj4) });
   obj1.children = items2;
   items1[1] = callback2(View, obj1);
   obj.children = items1;

@@ -1,52 +1,59 @@
-// Module ID: 9546
-// Function ID: 74425
+// Module ID: 9553
+// Function ID: 74466
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 5658, 3758, 653, 44, 6924, 2]
 
-// Module 9546 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 9553 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,8 +91,8 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function everyoneMemberCount(extractEveryoneRoleResult, isThread) {
-  const importDefault = extractEveryoneRoleResult;
-  let closure_1 = 0;
+  let closure_0 = extractEveryoneRoleResult;
+  let c1 = 0;
   if (isThread.isThread()) {
     const memberCount = isThread.memberCount;
     let num = 0;
@@ -96,15 +103,15 @@ function everyoneMemberCount(extractEveryoneRoleResult, isThread) {
   } else {
     const groups = props.getProps(isThread.getGuildId(), isThread.id).groups;
     const item = groups.forEach((id) => {
-      let tmp = "@everyone" !== id;
+      let tmp = "@everyone" !== closure_0;
       if (tmp) {
-        tmp = id.id === constants.OFFLINE;
+        tmp = id.id === outer1_6.OFFLINE;
       }
       if (!tmp) {
         closure_1 = closure_1 + id.count;
       }
     });
-    tmp3 = closure_1;
+    tmp3 = c1;
   }
   return tmp3;
 }
@@ -141,15 +148,14 @@ function parsedItemUsesEveryoneRole(value) {
   }
   return null;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-({ Permissions: closure_5, StatusTypes: closure_6 } = arg1(dependencyMap[3]));
+({ Permissions: closure_5, StatusTypes: closure_6 } = ME);
 const regExp = new RegExp(/@(:?everyone|here)/);
-const obj = {
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/MentionGuardUtils.tsx");
+
+export default {
   shouldShowEveryoneGuard(extractEveryoneRoleResult, getGuildId) {
     const guildId = getGuildId.getGuildId();
-    importDefault(dependencyMap[4])(guildId, "isGuildChannel with null guildId");
+    importDefault(44)(guildId, "isGuildChannel with null guildId");
     let canResult = everyoneMemberCount(extractEveryoneRoleResult, getGuildId) > 30;
     if (canResult) {
       canResult = closure_4.can(constants.MENTION_EVERYONE, getGuildId);
@@ -158,7 +164,7 @@ const obj = {
   },
   everyoneMemberCount,
   extractEveryoneRole(arg0, getGuildId) {
-    const tmp = _createForOfIteratorHelperLoose(importDefault(dependencyMap[5]).parsePreprocessor(getGuildId, arg0));
+    const tmp = _createForOfIteratorHelperLoose(importDefault(6924).parsePreprocessor(getGuildId, arg0));
     const iter = tmp();
     let iter2 = iter;
     if (!iter.done) {
@@ -172,7 +178,3 @@ const obj = {
     return null;
   }
 };
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("utils/MentionGuardUtils.tsx");
-
-export default obj;

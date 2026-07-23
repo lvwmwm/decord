@@ -1,12 +1,11 @@
-// Module ID: 8765
-// Function ID: 69302
+// Module ID: 8772
+// Function ID: 69343
 // Name: MODE_CHANGE_PHYSICS
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8765 (MODE_CHANGE_PHYSICS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/MainTabsConstants.tsx");
+// Module 8772 (MODE_CHANGE_PHYSICS)
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/MainTabsConstants.tsx");
 
-export const MODE_CHANGE_PHYSICS = {};
+export const MODE_CHANGE_PHYSICS = { mass: 0.5, damping: 30, stiffness: 320 };
 export const YouBarNavigatorScreens = { GUILDS: "guilds", ICYMI: "icymi", NOTIFICATIONS: "notifications" };
 export const RootNavigatorScreen = { YOU: "you", SETTINGS: "settings" };

@@ -1,52 +1,56 @@
-// Module ID: 14382
-// Function ID: 108554
+// Module ID: 14496
+// Function ID: 110707
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: []
+// Dependencies: [31, 653, 33, 4130, 689, 3827, 1920, 5187, 4126, 1212, 4965, 4543, 7563, 4098, 2]
 // Exports: default
 
-// Module 14382 (PersonalizationDisclaimerActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
-obj.container = obj;
-const obj1 = { enabled: "string", verticalScrollEnabled: "string", scrollAffordanceVariant: "color", paddingVertical: importDefault(dependencyMap[4]).space.PX_8 };
-obj.header = obj1;
-let closure_7 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/collectibles/native/PersonalizationDisclaimerActionSheet.tsx");
+// Module 14496 (PersonalizationDisclaimerActionSheet)
+import result from "result";
+import { HelpdeskArticles } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8, alignSelf: "center", textAlign: "center" };
+_createForOfIteratorHelperLoose.header = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/PersonalizationDisclaimerActionSheet.tsx");
 
 export default function PersonalizationDisclaimerActionSheet() {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const callback = React.useCallback(() => {
-    const obj = callback(closure_2[5]);
-    obj.openURL(callback(closure_2[6]).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
+    const obj = outer1_1(outer1_2[5]);
+    obj.openURL(outer1_1(outer1_2[6]).getArticleURL(outer1_4.DATA_USED_FOR_RECOMMENDED));
   }, []);
   let obj = { contentStyles: tmp.container };
-  obj = { style: tmp.header };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.children = intl.string(arg1(dependencyMap[9]).t.euks4U);
-  const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
+  obj = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.euks4U);
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
   obj = {};
   const obj1 = { size: "lg" };
-  const intl2 = arg1(dependencyMap[9]).intl;
-  obj1.text = intl2.string(arg1(dependencyMap[9]).t.hvVgAZ);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.text = intl2.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
   obj1.onPress = callback;
-  const obj2 = { color: importDefault(dependencyMap[4]).colors.WHITE };
-  obj1.icon = callback(arg1(dependencyMap[12]).LinkExternalSmallIcon, obj2);
+  const obj2 = { color: importDefault(689).colors.WHITE };
+  obj1.icon = callback(require(7563) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, obj2);
   obj1.iconPosition = "end";
-  const items1 = [callback(arg1(dependencyMap[11]).Button, obj1), ];
-  const obj3 = {};
-  const intl3 = arg1(dependencyMap[9]).intl;
-  obj3.text = intl3.string(arg1(dependencyMap[9]).t.WAI6xu);
+  const items1 = [callback(require(4543) /* Button */.Button, obj1), ];
+  const obj3 = { variant: "tertiary", size: "lg" };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.WAI6xu);
   obj3.onPress = function onPress() {
-    return callback(closure_2[13]).hideActionSheet();
+    return outer1_1(outer1_2[13]).hideActionSheet();
   };
-  items1[1] = callback(arg1(dependencyMap[11]).Button, obj3);
+  items1[1] = callback(require(4543) /* Button */.Button, obj3);
   obj.children = items1;
-  items[1] = callback2(arg1(dependencyMap[10]).ButtonGroup, obj);
+  items[1] = callback2(require(4965) /* ButtonGroup */.ButtonGroup, obj);
   obj.children = items;
-  return callback2(arg1(dependencyMap[7]).BottomSheet, obj);
+  return callback2(require(5187) /* Background */.BottomSheet, obj);
 };

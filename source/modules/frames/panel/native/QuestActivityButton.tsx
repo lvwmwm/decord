@@ -1,25 +1,36 @@
-// Module ID: 15596
-// Function ID: 118993
+// Module ID: 15713
+// Function ID: 121166
 // Name: QuestActivityButtonInner
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 6942, 15714, 4976, 33, 3991, 8018, 4130, 689, 10464, 566, 4337, 15715, 1934, 4098, 15716, 4131, 5453, 14028, 15717, 13898, 1212, 10476, 2]
 
-// Module 15596 (QuestActivityButtonInner)
+// Module 15713 (QuestActivityButtonInner)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { QuestVariants } from "QuestsExperimentLocations";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function QuestActivityButtonInner(quest) {
   let userStatus;
   quest = quest.quest;
-  const arg1 = quest;
   let dependencyMap;
-  let importAllResult;
-  let View;
-  let closure_5;
-  let closure_6;
-  let closure_7;
-  let QuestVariants;
-  let obj = arg1(dependencyMap[11]);
-  let obj1 = arg1(dependencyMap[12]);
-  const items = [closure_5];
+  let num;
+  let c4;
+  let sharedValue;
+  let sharedValue1;
+  let ref;
+  let c8;
+  let obj = quest(10464);
+  let obj1 = quest(566);
+  let items = [sharedValue];
   const stateFromStores = obj1.useStateFromStores(items, () => sharedValue.useReducedMotion);
-  const importDefault = stateFromStores;
   const items1 = [, ];
   ({ id: arr2[0], userStatus } = quest);
   let enrolledAt;
@@ -27,10 +38,10 @@ function QuestActivityButtonInner(quest) {
     enrolledAt = userStatus.enrolledAt;
   }
   items1[1] = enrolledAt;
-  const result = 2 * Math.PI * 14.3;
+  let result = 2 * Math.PI * 14.3;
   dependencyMap = result;
   let enrolledAt1;
-  const callback = importAllResult.useCallback(() => {
+  const callback = num.useCallback(() => {
     const userStatus = quest.userStatus;
     let enrolledAt;
     if (null != userStatus) {
@@ -38,12 +49,12 @@ function QuestActivityButtonInner(quest) {
     }
     if (null == enrolledAt) {
       let obj = { questId: quest.id };
-      stateFromStores(result[13]).pushLazy(quest(result[15])(result[14], result.paths), obj, closure_16);
-      const obj3 = stateFromStores(result[13]);
+      stateFromStores(_undefined[13]).pushLazy(quest(_undefined[15])(_undefined[14], _undefined.paths), obj, outer1_16);
+      const obj3 = stateFromStores(_undefined[13]);
     } else {
-      obj = stateFromStores(result[16]);
+      obj = stateFromStores(_undefined[16]);
       obj = { questId: quest.id };
-      obj.openLazy(quest(result[15])(result[17], result.paths), "QuestProgressBottomSheet", obj);
+      obj.openLazy(quest(_undefined[15])(_undefined[17], _undefined.paths), "QuestProgressBottomSheet", obj);
     }
   }, items1);
   if (null != quest) {
@@ -52,11 +63,10 @@ function QuestActivityButtonInner(quest) {
       enrolledAt1 = userStatus2.enrolledAt;
     }
   }
-  let num = 0;
+  num = 0;
   if (null != enrolledAt1) {
     num = obj.useQuestCompletionDetails(quest).completedRatio;
   }
-  importAllResult = num;
   let enrolledAt2;
   if (null != quest) {
     const userStatus3 = quest.userStatus;
@@ -75,25 +85,22 @@ function QuestActivityButtonInner(quest) {
     }
     tmp8 = null != completedAt;
   }
-  View = tmp8;
-  let obj2 = arg1(dependencyMap[7]);
-  const sharedValue = obj2.useSharedValue(num);
-  closure_5 = sharedValue;
-  let obj3 = arg1(dependencyMap[7]);
+  c4 = tmp8;
+  let obj2 = quest(3991);
+  sharedValue = obj2.useSharedValue(num);
+  let obj3 = quest(3991);
   let num2 = 0;
   if (tmp8) {
     num2 = 1;
   }
-  const sharedValue1 = obj3.useSharedValue(num2);
-  closure_6 = sharedValue1;
-  const ref = importAllResult.useRef(null);
-  closure_7 = ref;
+  sharedValue1 = obj3.useSharedValue(num2);
+  ref = num.useRef(null);
   const tmp13 = callback3();
-  QuestVariants = tmp13;
-  let obj4 = arg1(dependencyMap[7]);
+  c8 = tmp13;
+  let obj4 = quest(3991);
   class I {
     constructor() {
-      obj = { shadowOpacity: closure_6.get() };
+      obj = { shadowOpacity: c6.get() };
       return obj;
     }
   }
@@ -102,19 +109,19 @@ function QuestActivityButtonInner(quest) {
   I.__initData = closure_14;
   const items2 = [tmp13.confetti];
   const animatedStyle = obj4.useAnimatedStyle(I);
-  const memo = importAllResult.useMemo(() => {
+  const memo = num.useMemo(() => {
     const obj = {};
-    const merged = Object.assign(tmp13.confetti);
-    obj["width"] = closure_11;
-    obj["height"] = closure_11;
+    const merged = Object.assign(_undefined2.confetti);
+    obj["width"] = outer1_11;
+    obj["height"] = outer1_11;
     const items = [{ scale: 1.6 }];
     obj["transform"] = items;
     return obj;
   }, items2);
-  let obj5 = arg1(dependencyMap[7]);
+  let obj5 = quest(3991);
   class E {
     constructor() {
-      obj = { strokeDashoffset: closure_2 - closure_2 * closure_5.get() };
+      obj = { strokeDashoffset: c2 - c2 * c5.get() };
       return obj;
     }
   }
@@ -123,8 +130,8 @@ function QuestActivityButtonInner(quest) {
   E.__initData = closure_15;
   const items3 = [sharedValue, num, stateFromStores];
   const animatedProps = obj5.useAnimatedProps(E);
-  const effect = importAllResult.useEffect(() => {
-    let obj = quest(result[18]);
+  const effect = num.useEffect(() => {
+    let obj = quest(_undefined[18]);
     obj = {};
     let num = 500;
     if (stateFromStores) {
@@ -133,14 +140,14 @@ function QuestActivityButtonInner(quest) {
     obj.duration = num;
     const result = sharedValue.set(obj.withTiming(num, obj));
     return () => {
-      callback(closure_2[7]).cancelAnimation(closure_5);
+      quest(table[7]).cancelAnimation(outer1_5);
     };
   }, items3);
   const items4 = [sharedValue1, tmp8, stateFromStores];
-  const effect1 = importAllResult.useEffect(() => {
+  const effect1 = num.useEffect(() => {
     if (!stateFromStores) {
-      if (tmp8) {
-        let obj = quest(result[18]);
+      if (c4) {
+        let obj = quest(_undefined[18]);
         obj = { duration: 500 };
         const result = sharedValue1.set(obj.withTiming(1, obj));
         const current = ref.current;
@@ -156,87 +163,77 @@ function QuestActivityButtonInner(quest) {
     }
   }, items4);
   obj = { style: items5, pointerEvents: "box-none" };
-  const items5 = [, , ];
+  items5 = [, , ];
   ({ container: arr6[0], completionGlow: arr6[1] } = tmp13);
   items5[2] = animatedStyle;
   obj = { style: memo, pointerEvents: "none" };
-  obj1 = { ref, source: arg1(dependencyMap[20]), autoPlay: false, loop: false };
-  obj.children = callback(importDefault(dependencyMap[19]), obj1);
-  const items6 = [callback(View, obj), , , ];
+  obj1 = { ref, source: quest(14028), autoPlay: false, loop: false };
+  obj.children = callback(stateFromStores(5453), obj1);
+  const items6 = [callback(c4, obj), , , ];
   obj2 = { style: tmp13.buttonWrapper };
   obj3 = {};
-  const tmp19 = importDefault(dependencyMap[19]);
-  obj3.icon = importDefault(dependencyMap[22]);
+  const tmp19 = stateFromStores(5453);
+  obj3.icon = stateFromStores(13898);
   obj3.onPress = callback;
-  const intl = arg1(dependencyMap[23]).intl;
-  obj3.accessibilityLabel = intl.string(arg1(dependencyMap[23]).t.JALI2K);
-  obj2.children = callback(importDefault(dependencyMap[21]), obj3);
-  items6[1] = callback(View, obj2);
+  const intl = quest(1212).intl;
+  obj3.accessibilityLabel = intl.string(quest(1212).t.JALI2K);
+  obj2.children = callback(stateFromStores(15717), obj3);
+  items6[1] = callback(c4, obj2);
   obj4 = { pointerEvents: "none", style: tmp13.canvas };
-  obj5 = { height: closure_11, width: closure_11 };
-  const obj6 = { stroke: importDefault(dependencyMap[10]).unsafe_rawColors.OPACITY_32, strokeDasharray: result };
-  obj5.children = callback(arg1(dependencyMap[8]).Circle, obj6);
-  obj4.children = callback(arg1(dependencyMap[8]).Svg, obj5);
-  items6[2] = callback(View, obj4);
+  obj5 = { height: c11, width: c11 };
+  const obj6 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: stateFromStores(689).unsafe_rawColors.OPACITY_32, strokeWidth: 3.4, strokeDasharray: result };
+  obj5.children = callback(quest(8018).Circle, obj6);
+  obj4.children = callback(quest(8018).Svg, obj5);
+  items6[2] = callback(c4, obj4);
   const obj7 = { pointerEvents: "none", style: tmp13.canvas };
-  const obj8 = { height: closure_11, width: closure_11, children: callback(closure_12, { stroke: tmp13.progressPath.color, strokeDasharray: result, animatedProps }) };
-  obj7.children = callback(arg1(dependencyMap[8]).Svg, obj8);
-  items6[3] = callback(View, obj7);
+  const obj8 = { height: c11, width: c11 };
+  const obj9 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: tmp13.progressPath.color, strokeWidth: 3.4, strokeDasharray: result, animatedProps };
+  obj8.children = callback(closure_12, obj9);
+  obj7.children = callback(quest(8018).Svg, obj8);
+  items6[3] = callback(c4, obj7);
   obj.children = items6;
-  return callback2(importDefault(dependencyMap[7]).View, obj);
+  return callback2(stateFromStores(3991).View, obj);
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const QuestVariants = arg1(dependencyMap[5]).QuestVariants;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
-let closure_11 = 32;
-const tmp2 = arg1(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]).createAnimatedComponent(arg1(dependencyMap[8]).Circle);
-const importDefaultResult = importDefault(dependencyMap[7]);
-let obj = { container: { <string:1457021873>: 711724901615082200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:3251393195>: 703831249369113300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:3747914383>: 426844242226160100000000000000000000000000000000000000000000, <string:1738603478>: -701662608915588200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:4222741708>: -280204345943320200000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, completionGlow: { shadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } }, canvas: { position: "absolute", transform: items } };
-const items = [{ rotate: "-90deg" }];
-obj = { color: importDefault(dependencyMap[10]).colors.STATUS_POSITIVE };
-obj.progressPath = obj;
-obj.buttonWrapper = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001525231300344862, "Bool(true)": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015006194054165923, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000166880539428337 };
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let c11 = 32;
+let closure_12 = require("module_3991").createAnimatedComponent(require("inlineStyles").Circle);
+obj = { container: { position: "relative", width: 32, height: 32, justifyContent: "center", alignItems: "center" }, completionGlow: obj, canvas: { position: "absolute", transform: items } };
+obj = { shadowOffset: { width: 0, height: 0 }, shadowRadius: 12, shadowOpacity: 0, elevation: 4, shadowColor: "#30C77399" };
+items = [{ rotate: "-90deg" }];
+obj.progressPath = { color: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE };
+obj.buttonWrapper = { position: "absolute", borderRadius: 16, overflow: "hidden" };
 obj.confetti = { position: "absolute" };
-let closure_13 = arg1(dependencyMap[9]).createStyles(obj);
+let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_14 = { code: "function QuestActivityButtonTsx1(){const{glowOpacity}=this.__closure;return{shadowOpacity:glowOpacity.get()};}" };
 let closure_15 = { code: "function QuestActivityButtonTsx2(){const{circumference,animatedProgress}=this.__closure;return{strokeDashoffset:circumference-circumference*animatedProgress.get()};}" };
-let closure_16 = "QUEST_ACTIVITY_UNENROLLED_MODAL_KEY";
-const obj3 = arg1(dependencyMap[9]);
+const QUEST_ACTIVITY_UNENROLLED_MODAL_KEY = "QUEST_ACTIVITY_UNENROLLED_MODAL_KEY";
+let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE };
 const memoResult = importAllResult.memo(function QuestActivityButton(applicationId) {
   applicationId = applicationId.applicationId;
-  const arg1 = applicationId;
-  let obj = arg1(dependencyMap[12]);
+  let obj = applicationId(stateFromStores1[12]);
   const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => quests.quests);
-  const importDefault = stateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.quests);
   const items1 = [closure_7];
-  const stateFromStores1 = arg1(dependencyMap[12]).useStateFromStores(items1, () => closure_7.getState().autoEnroll);
-  const dependencyMap = stateFromStores1;
+  stateFromStores1 = applicationId(stateFromStores1[12]).useStateFromStores(items1, () => outer1_7.getState().autoEnroll);
   const items2 = [stateFromStores, applicationId];
-  const memo = importAllResult.useMemo(() => {
+  memo = memo.useMemo(() => {
     const eligibleQuestsForApplicationId = applicationId(stateFromStores1[24]).getEligibleQuestsForApplicationId(stateFromStores, applicationId, true);
     return eligibleQuestsForApplicationId.find((config) => {
       const features = config.config.features;
-      return features.includes(constants.MOBILE_ACTIVITY_QUEST);
+      return features.includes(outer2_8.MOBILE_ACTIVITY_QUEST);
     });
   }, items2);
-  const obj2 = arg1(dependencyMap[12]);
+  const obj2 = applicationId(stateFromStores1[12]);
   const items3 = [closure_7];
-  const stateFromStores2 = arg1(dependencyMap[12]).useStateFromStores(items3, () => {
+  const stateFromStores2 = applicationId(stateFromStores1[12]).useStateFromStores(items3, () => {
     let id;
     if (null != memo) {
       id = memo.id;
     }
-    return closure_7.isDismissed(id);
+    return outer1_7.isDismissed(id);
   });
-  const View = stateFromStores2;
   const items4 = [memo, stateFromStores1, stateFromStores2];
-  const effect = importAllResult.useEffect(() => {
+  const effect = memo.useEffect(() => {
     let tmp = null == memo;
     if (!tmp) {
       const userStatus = memo.userStatus;
@@ -255,7 +252,7 @@ const memoResult = importAllResult.memo(function QuestActivityButton(application
     if (!tmp) {
       let obj = stateFromStores(stateFromStores1[13]);
       obj = { questId: memo.id };
-      obj.pushLazy(applicationId(stateFromStores1[15])(stateFromStores1[14], stateFromStores1.paths), obj, closure_16);
+      obj.pushLazy(applicationId(stateFromStores1[15])(stateFromStores1[14], stateFromStores1.paths), obj, outer1_16);
     }
   }, items4);
   let tmp6 = null;
@@ -265,6 +262,6 @@ const memoResult = importAllResult.memo(function QuestActivityButton(application
   }
   return tmp6;
 });
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/frames/panel/native/QuestActivityButton.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/frames/panel/native/QuestActivityButton.tsx");
 
 export default memoResult;

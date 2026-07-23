@@ -1,25 +1,27 @@
-// Module ID: 14066
-// Function ID: 106838
+// Module ID: 14180
+// Function ID: 108994
 // Name: MessagesHeaderItem
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 2]
 // Exports: default
 
-// Module 14066 (MessagesHeaderItem)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { -2108412530: "text-lg/normal", -266912356: "text-default", 1638363508: true, gap: importDefault(dependencyMap[4]).space.PX_12, marginHorizontal: importDefault(dependencyMap[4]).space.PX_24 };
-obj.messagesHeaderContainer = obj;
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceMessagesHeaderItem.tsx");
+// Module 14180 (MessagesHeaderItem)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.messagesHeaderContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceMessagesHeaderItem.tsx");
 
 export default function MessagesHeaderItem(animatedStyles) {
-  let obj = { style: callback().messagesHeaderContainer };
-  obj = { canCreateGuild: true, _hasMore: true, GameDepthTier9LargeBadge: true, style: animatedStyles.animatedStyles.textNormal };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.children = intl.string(arg1(dependencyMap[6]).t.OIgYlQ);
-  obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
-  return <View {...obj} />;
+  let obj = { style: _createForOfIteratorHelperLoose().messagesHeaderContainer };
+  obj = { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.OIgYlQ);
+  obj.children = jsx(require(4126) /* Text */.Text, { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold" });
+  return <View animated style={arg0.animatedStyles.textNormal} variant="text-lg/bold" />;
 };

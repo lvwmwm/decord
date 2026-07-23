@@ -1,42 +1,46 @@
-// Module ID: 16187
-// Function ID: 124918
+// Module ID: 16304
+// Function ID: 127091
 // Name: title
-// Dependencies: []
+// Dependencies: [16305, 653, 16307, 483, 3763, 688, 1212, 2]
 
-// Module 16187 (title)
+// Module 16304 (title)
+import { RoleColorsStyle } from "_isNativeReflectConstruct";
+import ME from "ME";
+import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS";
+import importAllResult from "fromHexReverseArray";
+import importAllResult1 from "fromHexReverseArray";
+import importAllResult2 from "fromHexReverseArray";
+import importAllResult3 from "fromHexReverseArray";
+import unsafe_getRawColor from "unsafe_getRawColor";
+import unsafe_getRawColor from "unsafe_getRawColor";
+import unsafe_getRawColor from "unsafe_getRawColor";
+import unsafe_getRawColor from "unsafe_getRawColor";
+
 let DEFAULT_GRADIENT_ROLE_COLORS;
 let HOLOGRAPHIC_ROLE_COLORS;
-const RoleColorsStyle = require(dependencyMap[0]).RoleColorsStyle;
-const _module = require(dependencyMap[1]);
-const Permissions = _module.Permissions;
-const _module1 = require(dependencyMap[2]);
+const Permissions = ME.Permissions;
 let obj = { COSMETIC: 0, [0]: "COSMETIC", MEMBER: 1, [1]: "MEMBER", MODERATOR: 2, [2]: "MODERATOR", MANAGER: 3, [3]: "MANAGER" };
-({ DEFAULT_GRADIENT_ROLE_COLORS, HOLOGRAPHIC_ROLE_COLORS } = _module1);
-const importAllResult = importAll(dependencyMap[3]);
-const removeResult = importAll(dependencyMap[3]).remove(importAll(dependencyMap[4]).DEFAULT, Permissions.MENTION_EVERYONE);
-const combineResult = importAll(dependencyMap[3]).combine(importAll(dependencyMap[4]).DEFAULT, Permissions.VIEW_AUDIT_LOG, Permissions.MANAGE_NICKNAMES, Permissions.KICK_MEMBERS, Permissions.BAN_MEMBERS, Permissions.MANAGE_MESSAGES, Permissions.MUTE_MEMBERS, Permissions.DEAFEN_MEMBERS, Permissions.MOVE_MEMBERS, Permissions.PRIORITY_SPEAKER, Permissions.MODERATE_MEMBERS);
-const importAllResult1 = importAll(dependencyMap[3]);
-const combineResult1 = importAll(dependencyMap[3]).combine(combineResult, Permissions.MANAGE_CHANNELS, Permissions.MANAGE_THREADS, Permissions.MANAGE_ROLES, Permissions.MANAGE_GUILD_EXPRESSIONS, Permissions.MANAGE_GUILD, Permissions.MANAGE_WEBHOOKS, Permissions.SEND_TTS_MESSAGES);
-const importAllResult2 = importAll(dependencyMap[3]);
+({ DEFAULT_GRADIENT_ROLE_COLORS, HOLOGRAPHIC_ROLE_COLORS } = HOLOGRAPHIC_ROLE_COLORS);
+const removeResult = require("fromHexReverseArray").remove(require("calculateElevatedPermissions").DEFAULT, Permissions.MENTION_EVERYONE);
+const combineResult = require("fromHexReverseArray").combine(require("calculateElevatedPermissions").DEFAULT, Permissions.VIEW_AUDIT_LOG, Permissions.MANAGE_NICKNAMES, Permissions.KICK_MEMBERS, Permissions.BAN_MEMBERS, Permissions.MANAGE_MESSAGES, Permissions.MUTE_MEMBERS, Permissions.DEAFEN_MEMBERS, Permissions.MOVE_MEMBERS, Permissions.PRIORITY_SPEAKER, Permissions.MODERATE_MEMBERS);
+const combineResult1 = require("fromHexReverseArray").combine(combineResult, Permissions.MANAGE_CHANNELS, Permissions.MANAGE_THREADS, Permissions.MANAGE_ROLES, Permissions.MANAGE_GUILD_EXPRESSIONS, Permissions.MANAGE_GUILD, Permissions.MANAGE_WEBHOOKS, Permissions.SEND_TTS_MESSAGES);
 obj = {};
 obj = { key: "template_cosmetic" };
-const importAllResult3 = importAll(dependencyMap[3]);
-const _module2 = require(dependencyMap[5]);
-obj.color = _module2.unsafe_getRawColor("BRAND_500");
-obj.permissions = importAll(dependencyMap[4]).NONE;
+obj.color = unsafe_getRawColor.unsafe_getRawColor("BRAND_500");
+obj.permissions = require("calculateElevatedPermissions").NONE;
 obj.title = function title() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.M8jQyg);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.M8jQyg);
 };
 obj.description = function description() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.7nF/S/);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t["7nF/S/"]);
 };
 obj.contents = function contents() {
-  const intl = require(dependencyMap[6]).intl;
-  const items = [intl.string(require(dependencyMap[6]).t.uwLDAb), ];
-  const intl2 = require(dependencyMap[6]).intl;
-  items[1] = intl2.string(require(dependencyMap[6]).t.gqngN7);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const items = [intl.string(require(1212) /* getSystemLocale */.t.uwLDAb), ];
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  items[1] = intl2.string(require(1212) /* getSystemLocale */.t.gqngN7);
   return items;
 };
 obj.contentPreface = function contentPreface() {
@@ -44,25 +48,24 @@ obj.contentPreface = function contentPreface() {
 };
 obj[obj.COSMETIC] = obj;
 const obj1 = { key: "template_member" };
-const _module3 = require(dependencyMap[5]);
-obj1.color = _module3.unsafe_getRawColor("GREEN_360");
-obj1.permissions = importAll(dependencyMap[4]).DEFAULT;
+obj1.color = unsafe_getRawColor.unsafe_getRawColor("GREEN_360");
+obj1.permissions = require("calculateElevatedPermissions").DEFAULT;
 obj1.communityPermissions = removeResult;
 obj1.title = function title() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.9BsHzh);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t["9BsHzh"]);
 };
 obj1.description = function description() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.ywKYtw);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.ywKYtw);
 };
 obj1.contents = function contents() {
-  const intl = require(dependencyMap[6]).intl;
-  const items = [intl.string(require(dependencyMap[6]).t.9Vhbnl), , ];
-  const intl2 = require(dependencyMap[6]).intl;
-  items[1] = intl2.string(require(dependencyMap[6]).t.0xn+w1);
-  const intl3 = require(dependencyMap[6]).intl;
-  items[2] = intl3.string(require(dependencyMap[6]).t.ieWVpB);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const items = [intl.string(require(1212) /* getSystemLocale */.t["9Vhbnl"]), , ];
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  items[1] = intl2.string(require(1212) /* getSystemLocale */.t["0xn+w1"]);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  items[2] = intl3.string(require(1212) /* getSystemLocale */.t.ieWVpB);
   return items;
 };
 obj1.contentPreface = function contentPreface() {
@@ -70,71 +73,69 @@ obj1.contentPreface = function contentPreface() {
 };
 obj[obj.MEMBER] = obj1;
 const obj2 = { key: "template_moderator" };
-const _module4 = require(dependencyMap[5]);
-obj2.color = _module4.unsafe_getRawColor("YELLOW_300");
+obj2.color = unsafe_getRawColor.unsafe_getRawColor("YELLOW_300");
 obj2.permissions = combineResult;
 obj2.title = function title() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.m/GC8z);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t["m/GC8z"]);
 };
 obj2.description = function description() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.ERrMJZ);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.ERrMJZ);
 };
 obj2.contents = function contents() {
-  const intl = require(dependencyMap[6]).intl;
-  const items = [intl.string(require(dependencyMap[6]).t.YOSxcd), , , ];
-  const intl2 = require(dependencyMap[6]).intl;
-  items[1] = intl2.string(require(dependencyMap[6]).t.q9H4Fm);
-  const intl3 = require(dependencyMap[6]).intl;
-  items[2] = intl3.string(require(dependencyMap[6]).t.9nHnCj);
-  const intl4 = require(dependencyMap[6]).intl;
-  items[3] = intl4.string(require(dependencyMap[6]).t.iqwXvc);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const items = [intl.string(require(1212) /* getSystemLocale */.t.YOSxcd), , , ];
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  items[1] = intl2.string(require(1212) /* getSystemLocale */.t.q9H4Fm);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  items[2] = intl3.string(require(1212) /* getSystemLocale */.t["9nHnCj"]);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  items[3] = intl4.string(require(1212) /* getSystemLocale */.t.iqwXvc);
   return items;
 };
 obj2.contentPreface = function contentPreface() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.amGM7K);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.amGM7K);
 };
 obj[obj.MODERATOR] = obj2;
 const obj3 = { key: "template_manager" };
-const _module5 = require(dependencyMap[5]);
-obj3.color = _module5.unsafe_getRawColor("RED_400");
+obj3.color = unsafe_getRawColor.unsafe_getRawColor("RED_400");
 obj3.permissions = combineResult1;
-obj3.communityPermissions = importAll(dependencyMap[3]).add(combineResult1, Permissions.VIEW_GUILD_ANALYTICS);
+obj3.communityPermissions = require("fromHexReverseArray").add(combineResult1, Permissions.VIEW_GUILD_ANALYTICS);
 obj3.title = function title() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.qKmu3w);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.qKmu3w);
 };
 obj3.description = function description() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.WxWPYV);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.WxWPYV);
 };
 obj3.contents = function contents() {
-  const intl = require(dependencyMap[6]).intl;
-  const items = [intl.string(require(dependencyMap[6]).t.Hx1Vox), , , ];
-  const intl2 = require(dependencyMap[6]).intl;
-  items[1] = intl2.string(require(dependencyMap[6]).t.aUZ/zD);
-  const intl3 = require(dependencyMap[6]).intl;
-  items[2] = intl3.string(require(dependencyMap[6]).t.8lQujv);
-  const intl4 = require(dependencyMap[6]).intl;
-  items[3] = intl4.string(require(dependencyMap[6]).t.cUP4pl);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const items = [intl.string(require(1212) /* getSystemLocale */.t.Hx1Vox), , , ];
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  items[1] = intl2.string(require(1212) /* getSystemLocale */.t["aUZ/zD"]);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  items[2] = intl3.string(require(1212) /* getSystemLocale */.t["8lQujv"]);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  items[3] = intl4.string(require(1212) /* getSystemLocale */.t.cUP4pl);
   return items;
 };
 obj3.contentPreface = function contentPreface() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.7Dkb62);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t["7Dkb62"]);
 };
 obj[obj.MANAGER] = obj3;
-const addResult = importAll(dependencyMap[3]).add(combineResult1, Permissions.VIEW_GUILD_ANALYTICS);
-const obj5 = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array", primary_color: _module.DEFAULT_ROLE_COLOR };
-const items = [{ id: RoleColorsStyle.SOLID, colors: obj5, labelString: require(dependencyMap[6]).t.8Qyahn }, , ];
-const obj4 = { id: RoleColorsStyle.SOLID, colors: obj5, labelString: require(dependencyMap[6]).t.8Qyahn };
-items[1] = { id: RoleColorsStyle.GRADIENT, colors: DEFAULT_GRADIENT_ROLE_COLORS, labelString: require(dependencyMap[6]).t.XpWmJz };
-const obj6 = { id: RoleColorsStyle.GRADIENT, colors: DEFAULT_GRADIENT_ROLE_COLORS, labelString: require(dependencyMap[6]).t.XpWmJz };
-items[2] = { id: RoleColorsStyle.HOLOGRAPHIC, colors: HOLOGRAPHIC_ROLE_COLORS, labelString: require(dependencyMap[6]).t.QTKppe };
-const _module6 = require(dependencyMap[7]);
-const result = _module6.fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRoleConstants.tsx");
+const addResult = require("fromHexReverseArray").add(combineResult1, Permissions.VIEW_GUILD_ANALYTICS);
+const obj5 = { primary_color: ME.DEFAULT_ROLE_COLOR, secondary_color: null, tertiary_color: null };
+let items = [{ id: RoleColorsStyle.SOLID, colors: obj5, labelString: require("getSystemLocale").t["8Qyahn"] }, , ];
+const obj4 = { id: RoleColorsStyle.SOLID, colors: obj5, labelString: require("getSystemLocale").t["8Qyahn"] };
+items[1] = { id: RoleColorsStyle.GRADIENT, colors: DEFAULT_GRADIENT_ROLE_COLORS, labelString: require("getSystemLocale").t.XpWmJz };
+const obj6 = { id: RoleColorsStyle.GRADIENT, colors: DEFAULT_GRADIENT_ROLE_COLORS, labelString: require("getSystemLocale").t.XpWmJz };
+items[2] = { id: RoleColorsStyle.HOLOGRAPHIC, colors: HOLOGRAPHIC_ROLE_COLORS, labelString: require("getSystemLocale").t.QTKppe };
+const obj7 = { id: RoleColorsStyle.HOLOGRAPHIC, colors: HOLOGRAPHIC_ROLE_COLORS, labelString: require("getSystemLocale").t.QTKppe };
+const result = require("HOLOGRAPHIC_ROLE_COLORS").fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRoleConstants.tsx");
 
 export const CREATE_ROLE_DESKTOP_MODAL_WIDTH = 440;
 export const DEFAULT_HEADER_HEIGHT_PX = 371;

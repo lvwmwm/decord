@@ -1,13 +1,21 @@
-// Module ID: 6780
-// Function ID: 53480
+// Module ID: 6785
+// Function ID: 53512
 // Name: getProductOrbPrice
-// Dependencies: []
+// Dependencies: [57, 6780, 653, 1876, 2]
 // Exports: getProductSkuIds, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 6780 (getProductOrbPrice)
+// Module 6785 (getProductOrbPrice)
+import _slicedToArray from "_slicedToArray";
+import { isProfileEffectRecord } from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function getProductOrbPrice(arg0) {
+  const tmp2 = arg0.product.prices[arg0.hasShopDiscount ? closure_5.PREMIUM_TIER_2 : closure_5.DEFAULT];
   let substr;
-  if (null != arg0.product.prices[arg0.hasShopDiscount ? closure_5.PREMIUM_TIER_2 : closure_5.DEFAULT]) {
+  if (null != tmp2) {
     const countryPrices = tmp2.countryPrices;
     if (null != countryPrices) {
       const prices = countryPrices.prices;
@@ -19,7 +27,7 @@ function getProductOrbPrice(arg0) {
   if (null == substr) {
     substr = [];
   }
-  const found = substr.find((currency) => currency.currency === constants.DISCORD_ORB);
+  const found = substr.find((currency) => currency.currency === outer1_4.DISCORD_ORB);
   let tmp4 = null;
   if (null != found) {
     tmp4 = found;
@@ -27,8 +35,9 @@ function getProductOrbPrice(arg0) {
   return tmp4;
 }
 function getProductFiatPrice(arg0) {
+  const tmp2 = arg0.product.prices[arg0.hasShopDiscount ? closure_5.MOBILE_PREMIUM_TIER_2 : closure_5.MOBILE];
   let substr;
-  if (null != arg0.product.prices[arg0.hasShopDiscount ? closure_5.MOBILE_PREMIUM_TIER_2 : closure_5.MOBILE]) {
+  if (null != tmp2) {
     const countryPrices = tmp2.countryPrices;
     if (null != countryPrices) {
       const prices = countryPrices.prices;
@@ -40,7 +49,7 @@ function getProductFiatPrice(arg0) {
   if (null == substr) {
     substr = [];
   }
-  const found = substr.find((currency) => currency.currency !== constants.DISCORD_ORB);
+  const found = substr.find((currency) => currency.currency !== outer1_4.DISCORD_ORB);
   let tmp4 = null;
   if (null != found) {
     tmp4 = found;
@@ -54,7 +63,7 @@ function getHasNonOrbPrice(product) {
   return null != getProductFiatPrice({ product, hasShopDiscount: false });
 }
 function getIsVariantProduct(product) {
-  let tmp = product.type === arg1(dependencyMap[3]).CollectiblesItemType.VARIANTS_GROUP;
+  let tmp = product.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
   if (tmp) {
     tmp = null != product.variants;
   }
@@ -66,7 +75,7 @@ function getIsVariantProduct(product) {
 function getProductType(product) {
   if (null == product) {
     return null;
-  } else if (product.type === arg1(dependencyMap[3]).CollectiblesItemType.VARIANTS_GROUP) {
+  } else if (product.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP) {
     if (null != product.variants) {
       if (0 !== product.variants.length) {
         const first = product.variants[0];
@@ -82,11 +91,8 @@ function getProductType(product) {
     return product.type;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const isProfileEffectRecord = arg1(dependencyMap[1]).isProfileEffectRecord;
-({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/utils/CollectiblesProductUtils.tsx");
+({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/collectibles/utils/CollectiblesProductUtils.tsx");
 
 export { getProductOrbPrice };
 export { getProductFiatPrice };
@@ -106,11 +112,11 @@ export const isOrbsExclusiveProduct = function isOrbsExclusiveProduct(product) {
 export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
   let tmp = null != selectedProduct;
   if (tmp) {
-    let someResult = getProductType(selectedProduct) === arg1(dependencyMap[3]).CollectiblesItemType.PROFILE_EFFECT;
+    let someResult = getProductType(selectedProduct) === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
     if (someResult) {
       const items = selectedProduct.items;
       someResult = items.some((effects) => {
-        let someResult = callback(effects);
+        let someResult = outer1_3(effects);
         if (someResult) {
           effects = effects.effects;
           someResult = effects.some((randomizedSources) => {
@@ -131,20 +137,20 @@ export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
 };
 export const getProductsWithOrbsPrice = function getProductsWithOrbsPrice(arr) {
   return arr.filter((arg0) => {
-    let tmp = callback(arg0);
+    let tmp = outer1_8(arg0);
     if (tmp) {
-      tmp = callback2(arg0);
+      tmp = outer1_9(arg0);
     }
     return tmp;
   });
 };
 export { getIsVariantProduct };
-export const getProductSkuIds = function getProductSkuIds(product) {
-  if (getIsVariantProduct(product)) {
-    const variants = product.variants;
+export const getProductSkuIds = function getProductSkuIds(closure_0) {
+  if (getIsVariantProduct(closure_0)) {
+    const variants = closure_0.variants;
     let mapped = variants.map((skuId) => skuId.skuId);
   } else {
-    mapped = [product.skuId];
+    mapped = [closure_0.skuId];
   }
   return mapped;
 };

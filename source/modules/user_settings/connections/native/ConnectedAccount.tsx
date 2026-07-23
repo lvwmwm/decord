@@ -1,9 +1,34 @@
-// Module ID: 13752
-// Function ID: 103985
+// Module ID: 13866
+// Function ID: 106141
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [5, 6, 7, 15, 17, 18, 57, 31, 27, 4812, 1838, 653, 4940, 33, 4130, 1273, 689, 5052, 4938, 566, 4543, 1212, 4126, 5515, 4814, 5504, 13867, 8214, 4470, 4561, 8970, 13868, 13871, 4939, 10001, 3827, 1920, 4660, 9670, 13873, 2748, 1392, 3976, 4541, 7607, 5165, 5503, 3842, 2]
 
-// Module 13752 (_isNativeReflectConstruct)
+// Module 13866 (_isNativeReflectConstruct)
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import closure_6 from "Button";
+import createTextStyle from "createTextStyle";
+import callback from "callback";
+import closure_9 from "_slicedToArray";
+import importAllResult from "XboxTwoWayLinkUpsell";
+import { View } from "InfoBox";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_13 from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import { MetadataFields } from "OperatorTypes";
+import jsxProd from "officialApplicationIds";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import Button from "Button";
+import importDefaultResult from "createTextStyle";
+
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_19;
+let closure_20;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,43 +40,42 @@ function _isNativeReflectConstruct() {
 }
 function Integration(integration) {
   integration = integration.integration;
-  const arg1 = integration;
-  let obj = arg1(dependencyMap[14]);
-  const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(legacyClassComponentStyles);
+  let obj = integration(4130);
+  const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
   const tmp2 = callback3(importAllResult.useState(), 2);
   const importDefault = tmp2[1];
-  let obj1 = arg1(dependencyMap[19]);
-  const items = [closure_12];
+  let obj1 = integration(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [integration.id];
-  const stateFromStores = obj1.useStateFromStores(items, () => joining.isJoining(integration.id), items1);
-  let obj2 = arg1(dependencyMap[19]);
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_12.isJoining(integration.id), items1);
+  let obj2 = integration(566);
   const items2 = [closure_13];
   const items3 = [integration.guild.id];
   if (tmp4) {
     let tmp15 = tmp2[0] === integration.id;
     if (tmp15) {
-      obj = { "Null": "ars", "Null": "<string:1156272384>", alignItems: "AccountAgeTier9LargeBadge", style: legacyClassComponentStyles.integrationErrorText };
-      const intl2 = arg1(dependencyMap[21]).intl;
-      obj.children = intl2.string(arg1(dependencyMap[21]).t.fEptJP);
-      tmp15 = callback4(arg1(dependencyMap[22]).Text, obj);
+      obj = { style: legacyClassComponentStyles.integrationErrorText, variant: "text-sm/medium", color: "text-feedback-critical" };
+      const intl2 = integration(1212).intl;
+      obj.children = intl2.string(integration(1212).t.fEptJP);
+      tmp15 = callback4(integration(4126).Text, obj);
     }
     obj = { style: legacyClassComponentStyles.integrationContainer };
     obj1 = { style: legacyClassComponentStyles.integrationContainerInternal };
-    obj2 = { guild: integration.guild, size: arg1(dependencyMap[23]).GuildIconSizes.SMALL, style: legacyClassComponentStyles.integrationGuildIcon };
-    const items4 = [callback4(importDefault(dependencyMap[23]), obj2), , ];
+    obj2 = { guild: integration.guild, size: integration(5515).GuildIconSizes.SMALL, style: legacyClassComponentStyles.integrationGuildIcon };
+    const items4 = [callback4(importDefault(5515), obj2), , ];
     const obj3 = { style: legacyClassComponentStyles.integrationTextRowContainer };
-    const obj4 = { children: integration.guild.name };
-    const items5 = [callback4(arg1(dependencyMap[22]).Text, obj4), ];
-    const obj5 = {};
+    const obj4 = { lineClamp: 1, variant: "text-sm/medium", children: integration.guild.name };
+    const items5 = [callback4(integration(4126).Text, obj4), ];
+    const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted" };
     const tmp19 = closure_20;
     const tmp20 = View;
     const tmp21 = closure_20;
     const tmp22 = View;
-    const tmp26 = importDefault(dependencyMap[23]);
+    const tmp26 = importDefault(5515);
     const tmp28 = closure_20;
     const tmp29 = View;
     const tmp31 = callback4;
-    const value = importDefault(dependencyMap[24]).get(integration.type);
+    const value = importDefault(4814).get(integration.type);
     let platformUserUrl;
     if (null != value) {
       if (null != value.getPlatformUserUrl) {
@@ -59,7 +83,7 @@ function Integration(integration) {
       }
     }
     obj5.children = platformUserUrl;
-    items5[1] = tmp31(arg1(dependencyMap[22]).Text, obj5);
+    items5[1] = tmp31(integration(4126).Text, obj5);
     obj3.children = items5;
     items4[1] = tmp28(tmp29, obj3);
     items4[2] = tmp5;
@@ -70,16 +94,18 @@ function Integration(integration) {
   } else {
     const obj6 = { style: legacyClassComponentStyles.integrationJoinButton };
     let obj7 = {
+      size: "sm",
+      variant: "secondary",
       onPress() {
-          callback(closure_2[18]).joinServer(integration.id, () => {
-            callback(id.id);
+          callback(outer1_2[18]).joinServer(integration.id, () => {
+            outer1_1(outer1_0.id);
           });
         },
       disabled: stateFromStores
     };
-    const intl = arg1(dependencyMap[21]).intl;
+    const intl = integration(1212).intl;
     const string = intl.string;
-    let RXvQQu = arg1(dependencyMap[21]).t;
+    let RXvQQu = integration(1212).t;
     if (stateFromStores) {
       RXvQQu = RXvQQu.RXvQQu;
       let stringResult = string(RXvQQu);
@@ -87,7 +113,7 @@ function Integration(integration) {
       stringResult = string(RXvQQu.XpeFYr);
     }
     obj7.text = stringResult;
-    obj7 = callback4(arg1(dependencyMap[20]).Button, obj7);
+    obj7 = callback4(integration(4543).Button, obj7);
     obj6.children = obj7;
     callback4(View, obj6);
     const tmp6 = callback4;
@@ -101,160 +127,143 @@ function RowSwitch(label) {
   const merged = Object.assign(label, obj);
   obj = { label: label.label };
   const merged1 = Object.assign(merged);
-  return callback4(arg1(dependencyMap[25]).TableSwitchRow, obj);
+  return callback4(require(5504) /* TableSwitchRow */.TableSwitchRow, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const importAllResult = importAll(dependencyMap[7]);
-const View = arg1(dependencyMap[8]).View;
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-const tmp3 = arg1(dependencyMap[11]);
-({ FRIEND_SYNC_PLATFORM_TYPES: closure_14, ACTIVITY_PLATFORM_TYPES: closure_15, PlatformTypes: closure_16, HelpdeskArticles: closure_17 } = tmp3);
-const MetadataFields = arg1(dependencyMap[12]).MetadataFields;
-({ jsx: closure_19, jsxs: closure_20 } = arg1(dependencyMap[13]));
-let obj = arg1(dependencyMap[14]);
-obj = { platformIcon: { marginRight: 4 } };
-obj = {};
-let obj3 = arg1(dependencyMap[15]);
-obj.borderRadius = obj3.getIconSize(arg1(dependencyMap[15]).Icon.Sizes.LARGE);
-obj.marginRight = 4;
-obj.connectedApplicationIdentityIcon = obj;
-const tmp4 = arg1(dependencyMap[13]);
-obj.deleteConnectionIcon = { marginRight: 10, tintColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.container = { guildId: "Array", guildMemberAvatar: "isArray" };
-const obj1 = { marginRight: 10, tintColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.connectedAccountItem = { borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
-obj3 = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopRightRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
-obj.connectedAccountTopContainer = obj3;
-obj.connectedAccountContentContainer = { hotel: 800, GiftingBadgeDesktopExperiment: 16 };
-const obj2 = { borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
-obj.integrationContainer = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
-obj.integrationContainerInternal = { width: true, marginHorizontal: true };
-obj.integrationTextRowContainer = { "Null": false, "Null": false, "Null": false };
-obj.integrationErrorText = {};
-obj.integrationCategoryLabel = { marginVertical: 0 };
-obj.integrationGuildIcon = { margin: 8 };
-obj.integrationJoinButton = { "Bool(false)": "L2", "Bool(false)": 1, "Bool(false)": 0 };
-const obj5 = { <string:3890177015>: "50a11b05117d31e1ad224516819cbd87", <string:897799382>: "ic_clock", <string:1737456548>: "png", -3056305900156: true, backgroundColor: importDefault(dependencyMap[16]).colors.BORDER_SUBTLE };
-obj.divider = obj5;
-obj.alertInfoBox = { marginTop: 8 };
-const obj4 = { backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[16]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
-const obj6 = { marginTop: 16 };
-const merged = Object.assign(importDefault(dependencyMap[17])(tmp3.Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[16]).colors.TEXT_DEFAULT, 16));
-obj.alertBodyText = obj6;
-const obj7 = { -9223372036854775808: true, 9223372036854775807: true, 0: false, 0: false, -9223372036854775808: false, "Bool(false)": false, "Bool(false)": false, backgroundColor: importDefault(dependencyMap[16]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[16]).radii.xs };
-obj.metadataContainer = obj7;
-obj.metadataItemsContainer = { "Null": "SubscriptionIcon", "Null": "png", "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24, "Null": 24, "Null": null };
-obj.metadataRefreshButton = { -1252912056: "<string:2387738626>", 1635872382: "<string:1374549508>" };
-obj.metadataRefreshButtonDisabled = { opacity: 0.5 };
-obj.metadataRefreshIcon = { hideWhenScrolling: null, autoCapitalize: null };
-obj.metadataBannerContainer = { createInGameMessageNuxSystemMessage: null, canCreateApplicationBypassInvites: null, suggestedGamesIds: null, pf: null, fetchApexExperimentsMetadata: 1093128785 };
-obj.newBadge = { marginRight: 4 };
-obj.rowDivider = {};
-obj.addDetailsButton = {};
-obj.learnMoreButton = { paddingVertical: "<string:855900161>", width: "<string:1902706689>" };
-const obj8 = { "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[16]).radii.round };
-obj.relinkButton = obj8;
-obj.relinkText = { marginTop: 8 };
-const legacyClassComponentStyles = obj.createLegacyClassComponentStyles(obj);
-const tmp8 = (PureComponent) => {
+({ FRIEND_SYNC_PLATFORM_TYPES: closure_14, ACTIVITY_PLATFORM_TYPES: closure_15, PlatformTypes: closure_16, HelpdeskArticles: closure_17 } = ME);
+({ jsx: closure_19, jsxs: closure_20 } = jsxProd);
+_createForOfIteratorHelperLoose = { platformIcon: { marginRight: 4 } };
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose.borderRadius = Button.getIconSize(require("Button").Icon.Sizes.LARGE);
+_createForOfIteratorHelperLoose.marginRight = 4;
+_createForOfIteratorHelperLoose.connectedApplicationIdentityIcon = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.deleteConnectionIcon = { marginRight: 10, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.container = { marginHorizontal: 8, marginVertical: 4 };
+let obj1 = { marginRight: 10, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.connectedAccountItem = { borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
+Button = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopRightRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS };
+_createForOfIteratorHelperLoose.connectedAccountTopContainer = Button;
+_createForOfIteratorHelperLoose.connectedAccountContentContainer = { marginTop: 8, gap: 8 };
+let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, marginTop: 12, paddingVertical: 4, borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS, flexDirection: "column", alignItems: "center" };
+_createForOfIteratorHelperLoose.integrationContainer = obj4;
+_createForOfIteratorHelperLoose.integrationContainerInternal = { alignItems: "center", flexDirection: "row" };
+_createForOfIteratorHelperLoose.integrationTextRowContainer = { alignItems: "flex-start", flexDirection: "column", flex: 1 };
+_createForOfIteratorHelperLoose.integrationErrorText = { alignItems: "center", marginTop: 4, marginBottom: 8 };
+_createForOfIteratorHelperLoose.integrationCategoryLabel = { marginVertical: 0 };
+_createForOfIteratorHelperLoose.integrationGuildIcon = { margin: 8 };
+_createForOfIteratorHelperLoose.integrationJoinButton = { alignSelf: "center", marginEnd: 8, marginStart: 8 };
+let obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, height: 1, marginVertical: 8, marginHorizontal: 16 };
+_createForOfIteratorHelperLoose.divider = obj5;
+_createForOfIteratorHelperLoose.alertInfoBox = { marginTop: 8 };
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
+let obj6 = { marginTop: 16 };
+let merged = Object.assign(require("createTextStyle")(ME.Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, 16));
+_createForOfIteratorHelperLoose.alertBodyText = obj6;
+let obj7 = { display: "flex", flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, padding: 8, marginLeft: 16, marginRight: 16 };
+_createForOfIteratorHelperLoose.metadataContainer = obj7;
+_createForOfIteratorHelperLoose.metadataItemsContainer = { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", alignContent: "flex-start", paddingRight: 8, flexShrink: 1 };
+_createForOfIteratorHelperLoose.metadataRefreshButton = { alignSelf: "center", marginLeft: "auto" };
+_createForOfIteratorHelperLoose.metadataRefreshButtonDisabled = { opacity: 0.5 };
+_createForOfIteratorHelperLoose.metadataRefreshIcon = { height: 16, width: 16 };
+_createForOfIteratorHelperLoose.metadataBannerContainer = { justifyContent: "center", flexWrap: "wrap", alignItems: "center", paddingHorizontal: 16, paddingVertical: 14 };
+_createForOfIteratorHelperLoose.newBadge = { marginRight: 4 };
+_createForOfIteratorHelperLoose.rowDivider = { flexBasis: "100%", height: 12 };
+_createForOfIteratorHelperLoose.addDetailsButton = { paddingHorizontal: 16, flexGrow: 0, marginRight: 12 };
+_createForOfIteratorHelperLoose.learnMoreButton = { paddingHorizontal: 16, flexGrow: 0 };
+let obj8 = { paddingVertical: 8, paddingHorizontal: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+_createForOfIteratorHelperLoose.relinkButton = obj8;
+_createForOfIteratorHelperLoose.relinkText = { marginTop: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+let tmp8 = ((PureComponent) => {
   class ConnectedAccount {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_4(this, ConnectedAccount);
+      tmp = outer1_4(this, apply);
       items1 = [...items];
-      obj = closure_7(ConnectedAccount);
-      tmp2 = closure_6;
-      if (closure_22()) {
+      obj = outer1_7(apply);
+      tmp2 = outer1_6;
+      if (outer1_22()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items1, closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, items1, outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      ConnectedAccount = tmp2Result;
+      apply = tmp2Result;
       obj = { isVisible: 1 === tmp2Result.props.account.visibility, isMetadataVisible: 1 === tmp2Result.props.account.metadataVisibility, inProgressVisibility: null, inProgressMetadataVisibility: null, showActivity: tmp2Result.props.account.showActivity, friendSync: tmp2Result.props.account.friendSync, metadataRefreshing: false, metadataAlreadyRefreshed: false };
       tmp2Result.state = obj;
       tmp2Result.handleDisconnect = () => {
-        const tmp = callback5(tmp2Result.context);
+        const tmp = outer2_21(tmp2Result.context);
         const account = tmp2Result.props.account;
-        let obj = callback(closure_2[24]);
+        let obj = outer2_1(outer2_2[24]);
         const value = obj.get(account.type);
-        const intl = tmp2Result(closure_2[21]).intl;
+        const intl = ConnectedAccount(outer2_2[21]).intl;
         obj = { provider: value.name };
-        const formatResult = intl.format(tmp2Result(closure_2[21]).t.VgqIPj, obj);
+        const formatResult = intl.format(ConnectedAccount(outer2_2[21]).t.VgqIPj, obj);
         let tmp4;
-        if (callback(closure_2[26])(account)) {
+        if (outer2_1(outer2_2[26])(account)) {
           obj = {};
           const obj1 = { style: tmp.alertBodyText, variant: "text-md/medium", children: formatResult };
-          const items = [callback3(tmp2Result(closure_2[22]).Text, obj1), ];
+          const items = [outer2_19(ConnectedAccount(outer2_2[22]).Text, obj1), ];
           const obj2 = { style: tmp.alertInfoBox };
-          const intl2 = tmp2Result(closure_2[21]).intl;
+          const intl2 = ConnectedAccount(outer2_2[21]).intl;
           const obj3 = { platformName: value.name };
-          obj2.children = intl2.format(tmp2Result(closure_2[21]).t.COW3Xn, obj3);
-          items[1] = callback3(callback(closure_2[27]), obj2);
+          obj2.children = intl2.format(ConnectedAccount(outer2_2[21]).t.COW3Xn, obj3);
+          items[1] = outer2_19(outer2_1(outer2_2[27]), obj2);
           obj.children = items;
-          tmp4 = callback4(closure_11, obj);
-          const tmp12 = callback(closure_2[27]);
+          tmp4 = outer2_20(outer2_11, obj);
+          const tmp12 = outer2_1(outer2_2[27]);
         }
         const obj4 = {};
-        const intl3 = tmp2Result(closure_2[21]).intl;
-        obj4.title = intl3.formatToPlainString(tmp2Result(closure_2[21]).t.U5x12f, { name: value.name });
+        const intl3 = ConnectedAccount(outer2_2[21]).intl;
+        obj4.title = intl3.formatToPlainString(ConnectedAccount(outer2_2[21]).t.U5x12f, { name: value.name });
         obj4.body = formatResult;
-        const intl4 = tmp2Result(closure_2[21]).intl;
-        obj4.cancelText = intl4.string(tmp2Result(closure_2[21]).t.ETE/oC);
+        const intl4 = ConnectedAccount(outer2_2[21]).intl;
+        obj4.cancelText = intl4.string(ConnectedAccount(outer2_2[21]).t["ETE/oC"]);
         obj4.children = tmp4;
-        const intl5 = tmp2Result(closure_2[21]).intl;
-        obj4.confirmText = intl5.string(tmp2Result(closure_2[21]).t.ppppRJ);
+        const intl5 = ConnectedAccount(outer2_2[21]).intl;
+        obj4.confirmText = intl5.string(ConnectedAccount(outer2_2[21]).t.ppppRJ);
         obj4.onConfirm = tmp2Result.handleConfirmDisconnectAccount;
-        obj4.confirmColor = callback(closure_2[29]).Colors.RED;
-        callback(closure_2[28]).show(obj4);
+        obj4.confirmColor = outer2_1(outer2_2[29]).Colors.RED;
+        outer2_1(outer2_2[28]).show(obj4);
       };
       tmp2Result.handleConfirmDisconnectAccount = () => {
         const account = tmp2Result.props.account;
-        callback(closure_2[18]).disconnect(account.type, account.id);
+        outer2_1(outer2_2[18]).disconnect(account.type, account.id);
       };
-      tmp2Result.handleVisibilityChange = () => {
+      tmp2Result.handleVisibilityChange = (() => {
         // CreateGeneratorClosureLongIndex (0x67)
-        let closure_0 = callback2(tmp);
+        let closure_0 = outer2_3(tmp);
         return function() {
           return callback(...arguments);
         };
-      }();
-      tmp2Result.handleMetadataVisibilityChange = () => {
+      })();
+      tmp2Result.handleMetadataVisibilityChange = (() => {
         // CreateGeneratorClosureLongIndex (0x67)
-        let closure_0 = callback2(tmp);
+        let closure_0 = outer2_3(tmp);
         return function() {
           return callback(...arguments);
         };
-      }();
-      tmp2Result.handleFriendSyncChange = () => {
+      })();
+      tmp2Result.handleFriendSyncChange = (() => {
         // CreateGeneratorClosureLongIndex (0x67)
-        let closure_0 = callback2(tmp);
+        let closure_0 = outer2_3(tmp);
         return function() {
           return callback(...arguments);
         };
-      }();
-      tmp2Result.handleShowActivityChange = () => {
+      })();
+      tmp2Result.handleShowActivityChange = (() => {
         // CreateGeneratorClosureLongIndex (0x67)
-        let closure_0 = callback2(tmp);
+        let closure_0 = outer2_3(tmp);
         return function() {
           return callback(...arguments);
         };
-      }();
+      })();
       return tmp2Result;
     }
   }
-  const arg1 = ConnectedAccount;
   callback2(ConnectedAccount, PureComponent);
   let obj = {
     key: "componentDidUpdate",
@@ -275,33 +284,33 @@ const tmp8 = (PureComponent) => {
           if (null != inProgressVisibility) {
             obj.isVisible = 1 === inProgressVisibility;
             obj.inProgressVisibility = null;
-            obj = callback(closure_2[18]);
+            obj = outer1_1(outer1_2[18]);
             obj.setVisibility(account.type, account.id, inProgressVisibility);
           }
           if (null != inProgressMetadataVisibility) {
             obj.isMetadataVisible = 1 === inProgressMetadataVisibility;
             obj.inProgressMetadataVisibility = null;
-            const result = callback(closure_2[18]).setMetadataVisibility(account.type, account.id, inProgressMetadataVisibility);
-            const obj2 = callback(closure_2[18]);
+            const result = outer1_1(outer1_2[18]).setMetadataVisibility(account.type, account.id, inProgressMetadataVisibility);
+            const obj2 = outer1_1(outer1_2[18]);
           }
         }
         self.setState(obj);
       }
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "renderUpsell",
     value() {
       const account = this.props.account;
       if (account.twoWayLink) {
         return null;
-      } else if (account.type === constants.XBOX) {
-        let tmp3 = callback4(ConnectedAccount(closure_2[31]).XboxTwoWayLinkUpsell, {});
+      } else if (account.type === outer1_16.XBOX) {
+        let tmp3 = outer1_19(ConnectedAccount(outer1_2[31]).XboxTwoWayLinkUpsell, {});
       } else {
         tmp3 = null;
-        if (account.type === constants.PLAYSTATION) {
-          tmp3 = callback4(ConnectedAccount(closure_2[32]).PlayStationTwoWayLinkUpsell, {});
+        if (account.type === outer1_16.PLAYSTATION) {
+          tmp3 = outer1_19(ConnectedAccount(outer1_2[32]).PlayStationTwoWayLinkUpsell, {});
         }
       }
     }
@@ -311,11 +320,11 @@ const tmp8 = (PureComponent) => {
     key: "renderVisibilityCheckRow",
     value() {
       const obj = {};
-      const intl = ConnectedAccount(closure_2[21]).intl;
-      obj.label = intl.string(ConnectedAccount(closure_2[21]).t.f7yOAX);
+      const intl = ConnectedAccount(outer1_2[21]).intl;
+      obj.label = intl.string(ConnectedAccount(outer1_2[21]).t.f7yOAX);
       obj.value = this.state.isVisible;
       obj.onValueChange = this.handleVisibilityChange;
-      return callback4(closure_24, obj);
+      return outer1_19(outer1_24, obj);
     }
   };
   items[2] = obj;
@@ -325,7 +334,7 @@ const tmp8 = (PureComponent) => {
       let isMetadataVisible;
       let isVisible;
       const self = this;
-      let obj = callback(closure_2[24]);
+      let obj = outer1_1(outer1_2[24]);
       const value = obj.get(this.props.account.type);
       let hasMetadata;
       if (null != value) {
@@ -336,21 +345,21 @@ const tmp8 = (PureComponent) => {
       } else {
         obj = {};
         ({ isMetadataVisible, isVisible } = self.state);
-        const intl = ConnectedAccount(closure_2[21]).intl;
-        obj.label = intl.string(ConnectedAccount(closure_2[21]).t.FYKGsL);
+        const intl = ConnectedAccount(outer1_2[21]).intl;
+        obj.label = intl.string(ConnectedAccount(outer1_2[21]).t.FYKGsL);
         obj.value = isMetadataVisible;
         obj.disabled = !isVisible;
         obj.onValueChange = self.handleMetadataVisibilityChange;
-        return callback4(closure_24, obj);
+        return outer1_19(outer1_24, obj);
       }
     }
   };
   items[4] = {
     key: "renderMetadata",
     value() {
-      const self = this;
-      const ConnectedAccount = this;
-      let tmp = callback6(this.context);
+      let self = this;
+      self = this;
+      let tmp = outer1_21(this.context);
       const props = this.props;
       const account = props.account;
       let metadata = account.metadata;
@@ -358,54 +367,54 @@ const tmp8 = (PureComponent) => {
         metadata = {};
       }
       let items = [];
-      let obj1 = ConnectedAccount(closure_2[33]);
-      const createdAtDate = obj1.getCreatedAtDate(metadata[closure_18.CREATED_AT], props.locale);
+      let obj1 = ConnectedAccount(outer1_2[33]);
+      const createdAtDate = obj1.getCreatedAtDate(metadata[outer1_18.CREATED_AT], props.locale);
       const type = account.type;
-      if (constants.REDDIT === type) {
-        let obj6 = ConnectedAccount(closure_2[34]);
+      if (outer1_16.REDDIT === type) {
+        let obj6 = ConnectedAccount(outer1_2[34]);
         items = obj6.generateRedditMetadataItems(metadata);
-      } else if (constants.STEAM === type) {
-        let obj5 = ConnectedAccount(closure_2[34]);
+      } else if (outer1_16.STEAM === type) {
+        let obj5 = ConnectedAccount(outer1_2[34]);
         items = obj5.generateSteamMetadataItems(metadata);
       } else {
-        if (constants.BLUESKY !== type) {
-          if (constants.TWITTER !== type) {
-            if (constants.MASTODON !== type) {
-              if (constants.EBAY === type) {
-                let obj3 = ConnectedAccount(closure_2[34]);
+        if (outer1_16.BLUESKY !== type) {
+          if (outer1_16.TWITTER !== type) {
+            if (outer1_16.MASTODON !== type) {
+              if (outer1_16.EBAY === type) {
+                let obj3 = ConnectedAccount(outer1_2[34]);
                 items = obj3.generateEbayMetadataItems(metadata);
-              } else if (constants.PAYPAL === type) {
-                let obj2 = ConnectedAccount(closure_2[34]);
+              } else if (outer1_16.PAYPAL === type) {
+                let obj2 = ConnectedAccount(outer1_2[34]);
                 items = obj2.generatePaypalMetadataItems(metadata);
-              } else if (constants.TIKTOK === type) {
-                items = ConnectedAccount(closure_2[34]).generateTikTokMetadataItems(metadata);
-                const obj16 = ConnectedAccount(closure_2[34]);
+              } else if (outer1_16.TIKTOK === type) {
+                items = ConnectedAccount(outer1_2[34]).generateTikTokMetadataItems(metadata);
+                const obj16 = ConnectedAccount(outer1_2[34]);
               }
             }
           }
         }
-        let obj4 = ConnectedAccount(closure_2[34]);
+        let obj4 = ConnectedAccount(outer1_2[34]);
         items = obj4.generateTwitterMetadataItems(metadata);
       }
       if (null !== createdAtDate) {
-        let obj = { cachedAt: "Array", edpbxy: "isArray" };
-        const intl2 = ConnectedAccount(closure_2[21]).intl;
+        let obj = { variant: "text-xs/normal", color: "interactive-text-default" };
+        const intl2 = ConnectedAccount(outer1_2[21]).intl;
         obj = { date: createdAtDate };
-        obj.children = intl2.format(ConnectedAccount(closure_2[21]).t.9rfonh, obj);
-        items.push(callback4(ConnectedAccount(closure_2[22]).Text, obj, constants2.CREATED_AT));
+        obj.children = intl2.format(ConnectedAccount(outer1_2[21]).t["9rfonh"], obj);
+        items.push(outer1_19(ConnectedAccount(outer1_2[22]).Text, obj, outer1_18.CREATED_AT));
       }
       function handleRefresh() {
         self.setState({ metadataRefreshing: true });
-        const obj = account(closure_2[18]);
-        account(closure_2[18]).refresh(account.type, account.id).finally(() => {
+        const obj = outer2_1(outer2_2[18]);
+        outer2_1(outer2_2[18]).refresh(account.type, account.id).finally(() => {
           const timerId = setTimeout(() => {
-            state.setState({ 0: 1766088043, -9223372036854775808: 827788593 });
+            outer2_0.setState({ metadataRefreshing: false, metadataAlreadyRefreshed: true });
           }, 2000);
         });
       }
       let tmp15 = self.state.metadataRefreshing || self.state.metadataAlreadyRefreshed;
       if (0 === items.length) {
-        let obj10 = account(closure_2[24]);
+        let obj10 = outer1_1(outer1_2[24]);
         const value = obj10.get(account.type);
         let hasMetadata;
         if (null != value) {
@@ -419,31 +428,31 @@ const tmp8 = (PureComponent) => {
           ({ metadataContainer: arr4[0], metadataBannerContainer: arr4[1] } = tmp);
           obj1.style = items1;
           obj2 = {};
-          const intl4 = ConnectedAccount(closure_2[21]).intl;
-          obj2.text = intl4.string(ConnectedAccount(closure_2[21]).t.y2b7CA);
+          const intl4 = ConnectedAccount(outer1_2[21]).intl;
+          obj2.text = intl4.string(ConnectedAccount(outer1_2[21]).t.y2b7CA);
           obj2.style = tmp.newBadge;
-          const items2 = [callback4(ConnectedAccount(closure_2[15]).TextBadge, obj2), , , , ];
+          const items2 = [outer1_19(ConnectedAccount(outer1_2[15]).TextBadge, obj2), , , , ];
           obj3 = { variant: "text-xs/normal" };
-          const intl5 = ConnectedAccount(closure_2[21]).intl;
-          obj3.children = intl5.string(ConnectedAccount(closure_2[21]).t.eH16Gn);
-          items2[1] = callback4(ConnectedAccount(closure_2[22]).Text, obj3);
+          const intl5 = ConnectedAccount(outer1_2[21]).intl;
+          obj3.children = intl5.string(ConnectedAccount(outer1_2[21]).t.eH16Gn);
+          items2[1] = outer1_19(ConnectedAccount(outer1_2[22]).Text, obj3);
           obj4 = { style: tmp.rowDivider };
-          items2[2] = callback4(closure_11, obj4);
-          let tmp33 = callback4;
-          let tmp34 = closure_11;
+          items2[2] = outer1_19(outer1_11, obj4);
+          let tmp33 = outer1_19;
+          let tmp34 = outer1_11;
           obj5 = { style: tmp.addDetailsButton };
-          let intl = callback4;
+          let intl = outer1_19;
           let num10 = 20;
-          let string = ConnectedAccount(closure_2[20]).Button;
+          let string = ConnectedAccount(outer1_2[20]).Button;
           obj6 = {};
-          const intl6 = ConnectedAccount(closure_2[21]).intl;
+          const intl6 = ConnectedAccount(outer1_2[21]).intl;
           const string2 = intl6.string;
-          let i4jeWR = ConnectedAccount(closure_2[21]).t;
+          let i4jeWR = ConnectedAccount(outer1_2[21]).t;
           if (self.state.metadataAlreadyRefreshed) {
             i4jeWR = i4jeWR.i4jeWR;
             let string2Result = string2(i4jeWR);
           } else {
-            string2Result = string2(i4jeWR.LVh3/5);
+            string2Result = string2(i4jeWR["LVh3/5"]);
           }
           obj6.text = string2Result;
           obj6.size = "sm";
@@ -451,34 +460,34 @@ const tmp8 = (PureComponent) => {
           obj6.disabled = tmp15;
           obj5.children = intl(string, obj6);
           items2[3] = tmp33(tmp34, obj5);
-          tmp33 = callback4;
-          tmp34 = closure_11;
+          tmp33 = outer1_19;
+          tmp34 = outer1_11;
           const obj7 = { style: tmp.learnMoreButton };
-          tmp = callback4;
+          tmp = outer1_19;
           tmp15 = ConnectedAccount;
-          const obj8 = { EMOJI_PICKER_EMOJI_CLICKED: 44, overflow: null, getOwnPropertyNames: true };
-          intl = ConnectedAccount(closure_2[21]).intl;
+          const obj8 = { text: null, variant: "secondary", size: "sm" };
+          intl = ConnectedAccount(outer1_2[21]).intl;
           string = intl.string;
-          obj6 = string(ConnectedAccount(closure_2[21]).t.8O0mlf);
+          obj6 = string(ConnectedAccount(outer1_2[21]).t["8O0mlf"]);
           obj8.text = obj6;
           obj8.onPress = function onPress() {
-            const obj = account(closure_2[35]);
-            return obj.openURL(account(closure_2[36]).getArticleURL(constants.CONNECTION_DETAILS));
+            const obj = outer2_1(outer2_2[35]);
+            return obj.openURL(outer2_1(outer2_2[36]).getArticleURL(outer2_17.CONNECTION_DETAILS));
           };
-          num10 = callback4(ConnectedAccount(closure_2[num10]).Button, obj8);
+          num10 = outer1_19(ConnectedAccount(outer1_2[num10]).Button, obj8);
           obj7.children = num10;
-          obj5 = callback4(closure_11, obj7);
+          obj5 = outer1_19(outer1_11, obj7);
           items2[4] = obj5;
           obj1.children = items2;
-          callback5(closure_11, obj1);
-          const tmp52 = callback5;
-          const tmp53 = closure_11;
+          outer1_20(outer1_11, obj1);
+          const tmp52 = outer1_20;
+          const tmp53 = outer1_11;
         }
       } else {
         const obj9 = { accessibilityRole: "button" };
-        const intl3 = ConnectedAccount(closure_2[21]).intl;
-        obj9.accessibilityLabel = intl3.string(ConnectedAccount(closure_2[21]).t.wzzjk9);
-        obj9.hitSlop = {};
+        const intl3 = ConnectedAccount(outer1_2[21]).intl;
+        obj9.accessibilityLabel = intl3.string(ConnectedAccount(outer1_2[21]).t.wzzjk9);
+        obj9.hitSlop = { top: 8, right: 8, bottom: 8, left: 8 };
         obj9.onPress = handleRefresh;
         obj9.disabled = tmp15;
         const items3 = [tmp.metadataRefreshButton, ];
@@ -488,34 +497,34 @@ const tmp8 = (PureComponent) => {
         }
         items3[1] = metadataRefreshButtonDisabled;
         obj9.style = items3;
-        obj10 = { style: tmp.metadataRefreshIcon, size: ConnectedAccount(closure_2[15]).Icon.Sizes.SMALL };
+        obj10 = { style: tmp.metadataRefreshIcon, size: ConnectedAccount(outer1_2[15]).Icon.Sizes.SMALL };
         if (self.state.metadataAlreadyRefreshed) {
           let tmp19Result = tmp19(tmp20[38]);
         } else {
           tmp19Result = tmp19(tmp20[39]);
         }
         obj10.source = tmp19Result;
-        obj9.children = callback4(ConnectedAccount(closure_2[15]).Icon, obj10);
+        obj9.children = outer1_19(ConnectedAccount(outer1_2[15]).Icon, obj10);
         const obj11 = { style: tmp.metadataContainer };
         const obj12 = { style: tmp.metadataItemsContainer, children: items };
-        const items4 = [callback4(closure_11, obj12), callback4(ConnectedAccount(closure_2[37]).PressableOpacity, obj9)];
+        const items4 = [outer1_19(outer1_11, obj12), outer1_19(ConnectedAccount(outer1_2[37]).PressableOpacity, obj9)];
         obj11.children = items4;
-        return callback5(closure_11, obj11);
+        return outer1_20(outer1_11, obj11);
       }
     }
   };
   items[5] = {
     key: "renderFriendSyncCheckRow",
     value() {
-      let obj = callback(closure_2[24]);
+      let obj = outer1_1(outer1_2[24]);
       let tmp = null;
-      if (set.has(obj.get(this.props.account.type).type)) {
+      if (outer1_14.has(obj.get(this.props.account.type).type)) {
         obj = {};
-        const intl = ConnectedAccount(closure_2[21]).intl;
-        obj.label = intl.string(ConnectedAccount(closure_2[21]).t.+KCMSi);
+        const intl = ConnectedAccount(outer1_2[21]).intl;
+        obj.label = intl.string(ConnectedAccount(outer1_2[21]).t["+KCMSi"]);
         obj.value = this.state.friendSync;
         obj.onValueChange = this.handleFriendSyncChange;
-        tmp = callback4(closure_24, obj);
+        tmp = outer1_19(outer1_24, obj);
       }
       return tmp;
     }
@@ -523,17 +532,17 @@ const tmp8 = (PureComponent) => {
   items[6] = {
     key: "renderActivityCheckRow",
     value() {
-      let obj = callback(closure_2[24]);
+      let obj = outer1_1(outer1_2[24]);
       const value = obj.get(this.props.account.type);
       let tmp2 = null;
-      if (set2.has(value.type)) {
+      if (outer1_15.has(value.type)) {
         obj = {};
-        const intl = ConnectedAccount(closure_2[21]).intl;
+        const intl = ConnectedAccount(outer1_2[21]).intl;
         obj = { platform: value.name };
-        obj.label = intl.formatToPlainString(ConnectedAccount(closure_2[21]).t.6u6J0q, obj);
+        obj.label = intl.formatToPlainString(ConnectedAccount(outer1_2[21]).t["6u6J0q"], obj);
         obj.value = this.state.showActivity;
         obj.onValueChange = this.handleShowActivityChange;
-        tmp2 = callback4(closure_24, obj);
+        tmp2 = outer1_19(outer1_24, obj);
       }
       return tmp2;
     }
@@ -541,7 +550,7 @@ const tmp8 = (PureComponent) => {
   items[7] = {
     key: "renderIntegrationsRow",
     value() {
-      const tmp = callback6(this.context);
+      const tmp = outer1_21(this.context);
       const account = this.props.account;
       let tmp2 = null;
       if (account.integrations.length > 0) {
@@ -549,18 +558,18 @@ const tmp8 = (PureComponent) => {
         if (!account.revoked) {
           let obj = {};
           obj = { style: tmp.divider };
-          const items = [callback4(closure_11, obj), ];
-          obj = { style: {} };
-          const obj1 = { style: tmp.integrationCategoryLabel };
-          const intl = ConnectedAccount(closure_2[21]).intl;
-          obj1.children = intl.string(ConnectedAccount(closure_2[21]).t.fOe3fZ);
-          const items1 = [callback4(ConnectedAccount(closure_2[22]).Text, obj1), ];
+          const items = [outer1_19(outer1_11, obj), ];
+          obj = { style: { paddingHorizontal: 16, paddingVertical: 8 } };
+          const obj1 = { style: tmp.integrationCategoryLabel, variant: "eyebrow", color: "mobile-text-heading-primary" };
+          const intl = ConnectedAccount(outer1_2[21]).intl;
+          obj1.children = intl.string(ConnectedAccount(outer1_2[21]).t.fOe3fZ);
+          const items1 = [outer1_19(ConnectedAccount(outer1_2[22]).Text, obj1), ];
           const integrations = account.integrations;
-          items1[1] = integrations.map((id) => callback(closure_23, { integration: id }, id.id));
+          items1[1] = integrations.map((id) => outer2_19(outer2_23, { integration: id }, id.id));
           obj.children = items1;
-          items[1] = callback5(closure_11, obj);
+          items[1] = outer1_20(outer1_11, obj);
           obj.children = items;
-          tmp2 = callback5(closure_11, obj);
+          tmp2 = outer1_20(outer1_11, obj);
         }
       }
       return tmp2;
@@ -570,35 +579,35 @@ const tmp8 = (PureComponent) => {
     key: "render",
     value() {
       const self = this;
-      const tmp = callback6(this.context);
+      const tmp = outer1_21(this.context);
       const props = this.props;
       const account = props.account;
-      let obj = callback(closure_2[24]);
+      let obj = outer1_1(outer1_2[24]);
       const value = obj.get(account.type);
       const migrationData = value.migrationData;
       if (null != migrationData) {
         if (migrationData.getMigrationExperimentEnabled("User Settings Connections Mobile")) {
-          const intl = ConnectedAccount(closure_2[21]).intl;
+          const intl = ConnectedAccount(outer1_2[21]).intl;
           obj = { platformName: account.name };
-          let name = intl.format(callback(closure_2[40]).Glhokn, obj);
+          let name = intl.format(outer1_1(outer1_2[40]).Glhokn, obj);
         }
-        obj = { accessible: true, accessibilityLabel: value.name, style: tmp.platformIcon, size: ConnectedAccount(closure_2[15]).Icon.Sizes.LARGE };
-        let obj3 = ConnectedAccount(closure_2[41]);
-        let obj4 = ConnectedAccount(closure_2[42]);
+        obj = { accessible: true, accessibilityLabel: value.name, style: tmp.platformIcon, size: ConnectedAccount(outer1_2[15]).Icon.Sizes.LARGE };
+        let obj3 = ConnectedAccount(outer1_2[41]);
+        let obj4 = ConnectedAccount(outer1_2[42]);
         const icon = value.icon;
         obj.source = obj3.makeSource(obj4.isThemeDark(props.theme) ? icon.darkPNG : icon.lightPNG);
         obj.disableColor = true;
-        const obj1 = { <string:2494249571>: 8, <string:1638682449>: "absolute", <string:180507111>: 8 };
+        const obj1 = { spacing: 8, direction: "horizontal", align: "center" };
         const obj2 = { accessibilityRole: "button" };
-        const intl2 = ConnectedAccount(closure_2[21]).intl;
-        obj2.accessibilityLabel = intl2.string(ConnectedAccount(closure_2[21]).t.DT39A+);
+        const intl2 = ConnectedAccount(outer1_2[21]).intl;
+        obj2.accessibilityLabel = intl2.string(ConnectedAccount(outer1_2[21]).t["DT39A+"]);
         obj2.onPress = self.handleDisconnect;
-        obj2.hitSlop = { useManaTypeConsolidationExperiment: "Text", notification_center_id: "options", bdt: "to", animatedContainerHeight: "Array" };
-        obj3 = { style: tmp.deleteConnectionIcon, source: callback(closure_2[44]) };
-        obj2.children = callback4(ConnectedAccount(closure_2[15]).Icon, obj3);
-        obj1.children = callback4(ConnectedAccount(closure_2[37]).PressableOpacity, obj2);
-        const tmp6 = callback4;
-        const tmp6Result = callback4(ConnectedAccount(closure_2[15]).Icon, obj);
+        obj2.hitSlop = { top: 5, left: 5, bottom: 5, right: 5 };
+        obj3 = { style: tmp.deleteConnectionIcon, source: outer1_1(outer1_2[44]) };
+        obj2.children = outer1_19(ConnectedAccount(outer1_2[15]).Icon, obj3);
+        obj1.children = outer1_19(ConnectedAccount(outer1_2[37]).PressableOpacity, obj2);
+        const tmp6 = outer1_19;
+        const tmp6Result = outer1_19(ConnectedAccount(outer1_2[15]).Icon, obj);
         const result = self.renderIntegrationsRow();
         const result1 = self.renderFriendSyncCheckRow();
         const result2 = self.renderActivityCheckRow();
@@ -607,30 +616,29 @@ const tmp8 = (PureComponent) => {
         const obj5 = { style: tmp.connectedAccountItem };
         const obj6 = { style: tmp.connectedAccountTopContainer };
         const result4 = self.renderVisibilityCheckRow();
-        const obj7 = { label: name, icon: tmp6Result, trailing: callback4(ConnectedAccount(closure_2[43]).Stack, obj1) };
-        obj6.children = callback4(ConnectedAccount(closure_2[45]).TableRow, obj7);
-        const items = [callback4(closure_11, obj6), ];
+        const obj7 = { label: name, icon: tmp6Result, trailing: outer1_19(ConnectedAccount(outer1_2[43]).Stack, obj1) };
+        obj6.children = outer1_19(ConnectedAccount(outer1_2[45]).TableRow, obj7);
+        const items = [outer1_19(outer1_11, obj6), ];
         const obj8 = { style: tmp.connectedAccountContentContainer };
         const items1 = [self.renderUpsell(), self.renderMetadata(), , ];
         const obj9 = { hasIcons: false };
         const items2 = [result4, result3, result2, result1];
         obj9.children = items2;
-        items1[2] = callback5(ConnectedAccount(closure_2[46]).TableRowGroup, obj9);
+        items1[2] = outer1_20(ConnectedAccount(outer1_2[46]).TableRowGroup, obj9);
         items1[3] = result;
         obj8.children = items1;
-        items[1] = callback5(closure_11, obj8);
+        items[1] = outer1_20(outer1_11, obj8);
         obj5.children = items;
-        obj4.children = callback5(closure_11, obj5);
-        return callback4(closure_11, obj4);
+        obj4.children = outer1_20(outer1_11, obj5);
+        return outer1_19(outer1_11, obj4);
       }
       name = account.name;
     }
   };
   return callback(ConnectedAccount, items);
-}(importAllResult.PureComponent);
-tmp8.contextType = arg1(dependencyMap[47]).ThemeContext;
-const importDefaultResult = importDefault(dependencyMap[17]);
-const result = arg1(dependencyMap[48]).fileFinishedImporting("modules/user_settings/connections/native/ConnectedAccount.tsx");
+})(importAllResult.PureComponent);
+tmp8.contextType = require("ManaContext").ThemeContext;
+let result = require("_defineProperties").fileFinishedImporting("modules/user_settings/connections/native/ConnectedAccount.tsx");
 
 export default tmp8;
-export const readStyles = legacyClassComponentStyles;
+export const readStyles = _createForOfIteratorHelperLoose;

@@ -1,24 +1,25 @@
-// Module ID: 3990
-// Function ID: 33116
+// Module ID: 3992
+// Function ID: 33121
 // Name: View
-// Dependencies: []
+// Dependencies: [31, 33, 1582, 3993, 3994, 2]
 
-// Module 3990 (View)
-const jsx = require(dependencyMap[1]).jsx;
-let closure_1 = importDefault(dependencyMap[2]).createAnimatedComponent(importDefault(dependencyMap[3]));
-let View = require(dependencyMap[0]).forwardRef((entering) => {
+// Module 3992 (View)
+import { jsx } from "jsxProd";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import isFabric from "isFabric";
+import importDefaultResult from "cancelAnimation";
+
+let View = require("result").forwardRef((entering) => {
   const obj = {};
   const merged = Object.assign(entering);
   obj["hasEnteringAnimation"] = null != entering.entering;
   obj["ref"] = arg1;
-  return <closure_1 {...obj} />;
+  return <__INTERNAL_VIEW_CONFIG />;
 });
 View.displayName = "REAWorkaroundView";
-const _module = require(dependencyMap[4]);
-if (!_module.isFabric()) {
-  View = importDefault(dependencyMap[2]).View;
+if (!isFabric.isFabric()) {
+  View = require("cancelAnimation").View;
 }
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/reanimated/native/REAWorkaroundView.tsx");
+const result = require("cancelAnimation").fileFinishedImporting("modules/reanimated/native/REAWorkaroundView.tsx");
 
 export default View;

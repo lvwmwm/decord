@@ -1,26 +1,28 @@
-// Module ID: 14272
-// Function ID: 107852
-// Dependencies: []
+// Module ID: 14386
+// Function ID: 110005
+// Dependencies: [1554, 1212, 14387, 10095, 9742, 3803, 2]
 
-// Module 14272
-const constants = importAll(dependencyMap[0]).getConstants();
-const importAllResult = importAll(dependencyMap[0]);
-const obj2 = arg1(dependencyMap[3]);
-const obj = {
+// Module 14386
+import createToggle from "createToggle";
+import importAllResult from "getConstants";
+
+const require = arg1;
+const constants = require("getConstants").getConstants();
+let obj = {
   useTitle: function useAppVersionSettingTitle() {
-    const intl = arg1(dependencyMap[1]).intl;
-    return intl.string(arg1(dependencyMap[1]).t.H66MEk);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.H66MEk);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[4]).ClydeIcon,
+  IconComponent: require("ClydeIcon").ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
-    const clientInfoString = arg1(dependencyMap[2]).getClientInfoString(closure_3.ReleaseChannel);
-    const obj = arg1(dependencyMap[2]);
-    const obj2 = arg1(dependencyMap[2]);
-    const clientInfoString1 = obj2.getClientInfoString(importAll(dependencyMap[0]).getBuildNumberLabel());
+    const clientInfoString = require(14387) /* getClientInfoString */.getClientInfoString(closure_3.ReleaseChannel);
+    const obj = require(14387) /* getClientInfoString */;
+    const obj2 = require(14387) /* getClientInfoString */;
+    const clientInfoString1 = obj2.getClientInfoString(importAll(1554).getBuildNumberLabel());
     const hasItem = clientInfoString1.includes("dev");
-    const obj3 = importAll(dependencyMap[0]);
-    const clientInfoString2 = arg1(dependencyMap[2]).getClientInfoString(closure_3.Version);
+    const obj3 = importAll(1554);
+    const clientInfoString2 = require(14387) /* getClientInfoString */.getClientInfoString(closure_3.Version);
     if (hasItem) {
       let combined = concat(clientInfoString2, " (", clientInfoString, ")");
     } else {
@@ -28,23 +30,23 @@ const obj = {
     }
     return combined;
   },
-  usePredicate: arg1(dependencyMap[5]).DeveloperMode.useSetting
+  usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting
 };
-const createStaticResult = obj2.createStatic({
+const createStaticResult = createToggle.createStatic({
   useTitle: function useAppVersionSettingTitle() {
-    const intl = arg1(dependencyMap[1]).intl;
-    return intl.string(arg1(dependencyMap[1]).t.H66MEk);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.H66MEk);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[4]).ClydeIcon,
+  IconComponent: require("ClydeIcon").ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
-    const clientInfoString = arg1(dependencyMap[2]).getClientInfoString(closure_3.ReleaseChannel);
-    const obj = arg1(dependencyMap[2]);
-    const obj2 = arg1(dependencyMap[2]);
-    const clientInfoString1 = obj2.getClientInfoString(importAll(dependencyMap[0]).getBuildNumberLabel());
+    const clientInfoString = require(14387) /* getClientInfoString */.getClientInfoString(closure_3.ReleaseChannel);
+    const obj = require(14387) /* getClientInfoString */;
+    const obj2 = require(14387) /* getClientInfoString */;
+    const clientInfoString1 = obj2.getClientInfoString(importAll(1554).getBuildNumberLabel());
     const hasItem = clientInfoString1.includes("dev");
-    const obj3 = importAll(dependencyMap[0]);
-    const clientInfoString2 = arg1(dependencyMap[2]).getClientInfoString(closure_3.Version);
+    const obj3 = importAll(1554);
+    const clientInfoString2 = require(14387) /* getClientInfoString */.getClientInfoString(closure_3.Version);
     if (hasItem) {
       let combined = concat(clientInfoString2, " (", clientInfoString, ")");
     } else {
@@ -52,8 +54,8 @@ const createStaticResult = obj2.createStatic({
     }
     return combined;
   },
-  usePredicate: arg1(dependencyMap[5]).DeveloperMode.useSetting
+  usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting
 });
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/AppVersionSetting.tsx");
+const result = require("getClientInfoString").fileFinishedImporting("modules/user_settings/defs/native/AppVersionSetting.tsx");
 
 export default createStaticResult;

@@ -1,18 +1,13 @@
 // Module ID: 3223
-// Function ID: 25860
-// Dependencies: []
+// Function ID: 25861
+// Dependencies: [3224, 3225, 3226, 3227, 3228]
 
 // Module 3223
-const _module = require(dependencyMap[0]);
-if (!_module) {
-  let obj = { default: _module };
-} else {
-  obj = _module;
-}
-obj = {};
-obj.date = obj.default({ formats: {}, defaultWidth: "full" });
-obj.time = obj.default({ formats: { "Null": "<string:30527488>", "Null": "<string:19720960>", "Null": "<string:40710656>", "Null": "<string:38627584>" }, defaultWidth: "full" });
-obj.dateTime = obj.default({ formats: { "Null": false, "Null": false, "Null": false, "Null": false }, defaultWidth: "full" });
+import result from "result";
+import result1 from "result1";
+import result2 from "result2";
+import result3 from "result3";
 
-export default obj;
+
+export default { code: "da", formatDistance: result.default, formatLong: result1.default, formatRelative: result2.default, localize: result3.default, match: require("module_3228"), options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
 export default exports.default;

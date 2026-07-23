@@ -1,32 +1,43 @@
-// Module ID: 10612
-// Function ID: 82796
+// Module ID: 10622
+// Function ID: 82846
 // Name: ModeratorViewOverlay
-// Dependencies: []
+// Dependencies: [57, 31, 27, 482, 33, 10623, 3991, 4542, 689, 10624, 10682, 10626, 10214, 10213, 9878, 10020, 4323, 10683, 10743, 3842, 10530, 10751, 10752, 10629, 10757, 10765, 10769, 10800, 10801, 4130, 10802, 10645, 2]
 // Exports: default
 
-// Module 10612 (ModeratorViewOverlay)
+// Module 10622 (ModeratorViewOverlay)
+import _slicedToArray from "_slicedToArray";
+import AgeVerificationSpeakerActionSheet from "AgeVerificationSpeakerActionSheet";
+import get_ActivityIndicator from "module_10800";
+import { ThemeTypes } from "sum";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function ModeratorViewOverlay(channel) {
   channel = channel.channel;
-  let obj = arg1(dependencyMap[5]);
+  let obj = first(first1[5]);
   const tmp = callback(obj.useModeratorOverlayChannelState(channel.id), 2);
-  const first = tmp[0];
-  const arg1 = first;
+  first = tmp[0];
   const importDefault = tmp3;
   const tmp4 = callback(React.useState(first), 2);
-  const first1 = tmp4[0];
-  const dependencyMap = first1;
-  const callback = tmp4[1];
-  let obj1 = arg1(dependencyMap[6]);
+  first1 = tmp4[0];
+  callback = tmp4[1];
+  let obj1 = first(first1[6]);
   const fn = function s() {
     const obj = {};
     let num = 0;
     if (first1) {
       num = 1;
     }
-    obj.opacity = first(first1[7]).withSpring(num, closure_11);
+    obj.opacity = first(first1[7]).withSpring(num, outer1_11);
     return obj;
   };
-  obj = { withSpring: arg1(dependencyMap[7]).withSpring, showStartStageView: first1, viewAnimationConfig: closure_11 };
+  obj = { withSpring: first(first1[7]).withSpring, showStartStageView: first1, viewAnimationConfig: closure_11 };
   fn.__closure = obj;
   fn.__workletHash = 3663814804791;
   fn.__initData = closure_13;
@@ -35,7 +46,7 @@ function ModeratorViewOverlay(channel) {
   const effect = React.useEffect(() => {
     const timeout = setTimeout(() => {
       if (!closure_0) {
-        callback(false);
+        outer1_3(false);
       }
     }, 500);
     return () => {
@@ -47,39 +58,38 @@ function ModeratorViewOverlay(channel) {
   if (first1) {
     obj = {};
     const items1 = [closure_5.absoluteFill, , ];
-    obj1 = { backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_800 };
+    obj1 = { backgroundColor: importDefault(first1[8]).unsafe_rawColors.PRIMARY_800 };
     items1[1] = obj1;
     items1[2] = animatedStyle;
     obj.style = items1;
     const obj2 = { channel, onSkip: tmp8 };
-    obj.children = callback2(importDefault(dependencyMap[9]), obj2);
-    tmp9 = callback2(importDefault(dependencyMap[6]).View, obj);
+    obj.children = callback2(importDefault(first1[9]), obj2);
+    tmp9 = callback2(importDefault(first1[6]).View, obj);
   }
   return tmp9;
 }
 function JoinStageOverlay(channel) {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  const arg1 = first;
   const importDefault = tmp[1];
-  let obj = arg1(dependencyMap[6]);
+  let obj = first(3991);
   const fn = function s() {
     const obj = {};
     let num = 0;
     if (first) {
       num = 1;
     }
-    obj.opacity = first(closure_2[7]).withSpring(num, closure_11);
+    obj.opacity = first(outer1_2[7]).withSpring(num, outer1_11);
     return obj;
   };
-  obj = { withSpring: arg1(dependencyMap[7]).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
+  obj = { withSpring: first(4542).withSpring, showOverlay: first, viewAnimationConfig: closure_11 };
   fn.__closure = obj;
   fn.__workletHash = 1929951426580;
   fn.__initData = closure_14;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const effect = React.useEffect(() => {
     const timeout = setTimeout(() => {
-      callback(true);
+      outer1_1(true);
     }, 500);
     return () => {
       clearTimeout(closure_0);
@@ -87,73 +97,66 @@ function JoinStageOverlay(channel) {
   }, []);
   obj = {};
   const items = [closure_5.absoluteFill, , ];
-  const obj1 = { backgroundColor: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_800 };
+  const obj1 = { backgroundColor: importDefault(689).unsafe_rawColors.PRIMARY_800 };
   items[1] = obj1;
   items[2] = animatedStyle;
   obj.style = items;
-  obj.children = callback2(importDefault(dependencyMap[10]), { channel: channel.channel });
-  return callback2(importDefault(dependencyMap[6]).View, obj);
+  obj.children = callback2(importDefault(10682), { channel: channel.channel });
+  return callback2(importDefault(3991).View, obj);
 }
 function StagePromptWrapper(channel) {
   const obj = { children: callback2(StagePromptInner, { channel: channel.channel }) };
-  return callback2(arg1(dependencyMap[30]).DisableCustomTheme, obj);
+  return callback2(require(10802) /* RootThemeContextProvider */.DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
-  const tmp = callback3();
-  return callback2(arg1(dependencyMap[31]).AnimatedStartStagePrompt, { channel: channel.channel, style: callback3().startStagePrompt });
+  const tmp = _createForOfIteratorHelperLoose();
+  return callback2(require(10645) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: _createForOfIteratorHelperLoose().startStagePrompt });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ StyleSheet: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-const ThemeTypes = arg1(dependencyMap[3]).ThemeTypes;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = arg1(dependencyMap[4]));
-let closure_11 = { EXPANDED_DRAWER_SHOW_POSITION: "_findItemIndexWithKey", flexGrow: "ts", margin: "GAME_CLAIM", MARK_CHANNEL_READ: "useWatchAgeVerificationStatusChange", availableOutgoingBitrate: "getCodecsUsed", bitrate: "getCodecsUsed" };
+({ StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
+let closure_11 = { mass: 0.5, stiffness: 600, damping: 30, overshootClamping: false, restSpeedThreshold: 0.01, restDisplacementThreshold: 0.01 };
 let closure_12 = { fullScreen: { flex: 1 } };
 let closure_13 = { code: "function StageChannelCallNavigatorTsx1(){const{withSpring,showStartStageView,viewAnimationConfig}=this.__closure;return{opacity:withSpring(showStartStageView?1:0,viewAnimationConfig)};}" };
 let closure_14 = { code: "function StageChannelCallNavigatorTsx2(){const{withSpring,showOverlay,viewAnimationConfig}=this.__closure;return{opacity:withSpring(showOverlay?1:0,viewAnimationConfig)};}" };
-let obj = arg1(dependencyMap[29]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH };
-obj.startStagePrompt = obj;
-let closure_15 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallNavigator.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.startStagePrompt = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/stage_channels/native/components/StageChannelCallNavigator.tsx");
 
 export default function StageChannelCallNavigator(channel) {
+  let c5;
   let isLive;
   let isModerator;
   let tmp9;
   channel = channel.channel;
-  const arg1 = channel;
   let importDefault;
-  let dependencyMap;
+  let first;
   let callback;
   let React;
-  let closure_5;
+  c5 = undefined;
   let closure_6;
-  let obj = arg1(dependencyMap[11]);
+  let obj = channel(first[11]);
   const stageChannelStartEvent = obj.useStageChannelStartEvent(channel.id);
   ({ isModerator, isLive } = stageChannelStartEvent);
-  let obj1 = arg1(dependencyMap[12]);
+  let obj1 = channel(first[12]);
   let tmp3 = isModerator;
   const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel);
   if (isModerator) {
     tmp3 = !isLive;
   }
   importDefault = tmp3;
-  let obj2 = arg1(dependencyMap[5]);
+  let obj2 = channel(first[5]);
   const tmp4 = callback(obj2.useModeratorOverlayChannelState(channel.id), 2);
-  const first = tmp4[0];
-  dependencyMap = first;
+  first = tmp4[0];
   callback = tmp6;
-  const tmp7 = importDefault(dependencyMap[13])(channel);
+  const tmp7 = importDefault(first[13])(channel);
   React = tmp7;
-  [tmp9, closure_5] = callback(React.useState(false), 2);
+  [tmp9, c5] = callback(React.useState(false), 2);
   const items = [, ];
   ({ id: arr[0], guild_id: arr[1] } = channel);
   const effect = React.useEffect(() => {
-    let obj = tmp3(first[14]);
+    let obj = _undefined(first[14]);
     obj = { guildId: channel.guild_id, channelId: channel.id };
     const messages = obj.fetchMessages(obj);
   }, items);
@@ -163,26 +166,26 @@ export default function StageChannelCallNavigator(channel) {
   });
   const items1 = [tmp7];
   const effect2 = React.useEffect(() => {
-    let tmp = null == tmp7;
+    let tmp = null == c4;
     if (!tmp) {
-      tmp = tmp3(first[15])(tmp7);
+      tmp = _undefined(first[15])(c4);
     }
     if (!tmp) {
-      const participant = tmp3(first[16]).selectParticipant(ref.current, null);
-      const obj = tmp3(first[16]);
+      const participant = _undefined(first[16]).selectParticipant(ref.current, null);
+      const obj = _undefined(first[16]);
     }
   }, items1);
   const items2 = [tmp3, tmp4[1], first];
   const effect3 = React.useEffect(() => {
     let tmp = first;
     if (first) {
-      tmp = !tmp3;
+      tmp = !c1;
     }
     if (tmp) {
-      tmp6();
+      _undefined2();
     }
   }, items2);
-  obj = { actionBar: callback2(importDefault(dependencyMap[17]), { channel }), expandedControls: callback2(importDefault(dependencyMap[18]), { channel }), isTouchingLeftScreenEdge: true, channel };
+  obj = { actionBar: callback2(importDefault(first[17]), { channel }), expandedControls: callback2(importDefault(first[18]), { channel }), isTouchingLeftScreenEdge: true, channel };
   obj = { theme: ThemeTypes.DARK };
   if (null != tmp7) {
     obj1 = { style: fullScreen.fullScreen };
@@ -191,35 +194,35 @@ export default function StageChannelCallNavigator(channel) {
     const tmp34 = callback2;
     const tmp35 = closure_6;
     const tmp37 = closure_9;
-    const tmp40 = importDefault(dependencyMap[20]);
+    const tmp40 = importDefault(first[20]);
     const obj4 = { channel, selectedParticipant: tmp7 };
-    obj3.children = callback2(arg1(dependencyMap[22]).ChannelCallSingleController, obj4);
-    const items3 = [callback2(importDefault(dependencyMap[21]), obj3), , ];
+    obj3.children = callback2(channel(first[22]).ChannelCallSingleController, obj4);
+    const items3 = [callback2(importDefault(first[21]), obj3), , ];
     const obj5 = {};
-    const tmp42 = importDefault(dependencyMap[21]);
+    const tmp42 = importDefault(first[21]);
     const obj6 = {
       channel,
       fullscreenStream: true,
       onOpenRTCDebugOverlay(arg0) {
-          return _undefined(true);
+          return _undefined3(true);
         }
     };
-    obj5.header = callback2(importDefault(dependencyMap[24]), obj6);
+    obj5.header = callback2(importDefault(first[24]), obj6);
     const merged = Object.assign(obj);
-    items3[1] = callback2(importDefault(dependencyMap[23]), obj5);
+    items3[1] = callback2(importDefault(first[23]), obj5);
     if (tmp9) {
       const obj7 = {
         onClose() {
-              return _undefined(false);
+              return _undefined3(false);
             }
       };
-      tmp9 = callback2(importDefault(dependencyMap[25]), obj7);
+      tmp9 = callback2(importDefault(first[25]), obj7);
     }
     items3[2] = tmp9;
     obj2.children = items3;
     obj1.children = tmp37(tmp40, obj2);
     let tmp54Result = tmp34(tmp35, obj1);
-    const tmp46 = importDefault(dependencyMap[23]);
+    const tmp46 = importDefault(first[23]);
   } else {
     const obj8 = {};
     if (first) {
@@ -232,7 +235,7 @@ export default function StageChannelCallNavigator(channel) {
           }
         }
       }
-      tmp15 = importDefault(dependencyMap[26]);
+      tmp15 = importDefault(first[26]);
     }
     const obj9 = { channel };
     const items4 = [callback2(tmp15, obj9), ];
@@ -246,7 +249,7 @@ export default function StageChannelCallNavigator(channel) {
     obj10.header = callback2(importDefault(tmp24), obj11);
     const merged1 = Object.assign(obj);
     const obj12 = { channel };
-    const items5 = [callback2(importDefault(dependencyMap[28]), obj12), ];
+    const items5 = [callback2(importDefault(first[28]), obj12), ];
     if (isModerator) {
       isModerator = !callback(React.useState(isLive), 1)[0];
     }
@@ -259,17 +262,17 @@ export default function StageChannelCallNavigator(channel) {
     }
     items5[1] = isModerator;
     obj10["children"] = items5;
-    items4[1] = closure_9(importDefault(dependencyMap[23]), obj10);
+    items4[1] = closure_9(importDefault(first[23]), obj10);
     obj8.children = items4;
     tmp54Result = closure_9(closure_10, obj8);
     const tmp18 = closure_9;
     const tmp19 = importDefault;
-    const tmp21 = importDefault(dependencyMap[23]);
+    const tmp21 = importDefault(first[23]);
     const tmp22 = callback2;
     const tmp54 = closure_9;
     const tmp55 = closure_10;
     const tmp56 = callback2;
   }
   obj.children = tmp54Result;
-  return callback2(arg1(dependencyMap[19]).ThemeContextProvider, obj);
+  return callback2(channel(first[19]).ThemeContextProvider, obj);
 };

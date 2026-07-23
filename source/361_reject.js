@@ -1,44 +1,47 @@
 // Module ID: 361
 // Function ID: 5354
 // Name: reject
-// Dependencies: []
+// Dependencies: [44]
 
 // Module 361 (reject)
+const require = arg1;
+const dependencyMap = arg6;
 function reject(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const timerId = setTimeout(() => {
-    throw arg0;
+    throw closure_0;
   }, 0);
 }
 arg5.default = {
-  Events: { go: 42977857, next: -531558144 },
+  Events: { interactionStart: "interactionStart", interactionComplete: "interactionComplete" },
   runAfterInteractions(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     const promise = new Promise((arg0) => {
-      const immediate = setImmediate((self) => {
-        if ("object" === typeof self) {
-          if (null !== self) {
-            if ("function" === typeof self.gen) {
-              self.gen().then(self, callback);
-              const genResult = self.gen();
-            } else if ("function" === typeof self.run) {
-              self.run();
-              self();
+      let closure_0 = arg0;
+      const immediate = setImmediate(() => {
+        if ("object" === typeof lib) {
+          if (null !== lib) {
+            if ("function" === typeof lib.gen) {
+              lib.gen().then(lib, outer2_2);
+              const genResult = lib.gen();
+            } else if ("function" === typeof lib.run) {
+              lib.run();
+              lib();
             } else {
               const _TypeError2 = TypeError;
               const _HermesInternal = HermesInternal;
-              const typeError = new TypeError("Task \"" + self.name + "\" missing gen or run.");
-              callback(typeError);
+              const typeError = new TypeError("Task \"" + lib.name + "\" missing gen or run.");
+              outer2_2(typeError);
             }
           }
         }
-        if ("function" === typeof self) {
-          self();
-          self();
+        if ("function" === typeof lib) {
+          lib();
+          lib();
         } else {
           const _TypeError = TypeError;
-          const typeError1 = new TypeError("Invalid task of type: " + typeof self);
-          callback(typeError1);
+          const typeError1 = new TypeError("Invalid task of type: " + typeof lib);
+          outer2_2(typeError1);
         }
       });
     });
@@ -54,7 +57,7 @@ arg5.default = {
     return -1;
   },
   clearInteractionHandle(arg0) {
-    arg1(arg6[0])(arg0, "InteractionManager: Must provide a handle to clear.");
+    require(44) /* invariant */(arg0, "InteractionManager: Must provide a handle to clear.");
   },
   addListener() {
     return {

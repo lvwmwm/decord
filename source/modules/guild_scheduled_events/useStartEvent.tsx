@@ -1,26 +1,27 @@
-// Module ID: 8464
-// Function ID: 67524
+// Module ID: 8470
+// Function ID: 67561
 // Name: useStartEvent
-// Dependencies: []
+// Dependencies: [5, 57, 31, 8471, 8472, 4029, 2]
 // Exports: default
 
-// Module 8464 (useStartEvent)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
+// Module 8470 (useStartEvent)
+import V6OrEarlierAPIError from "V6OrEarlierAPIError";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
 let closure_6 = {
   onSuccess() {
 
   },
   permissionOverwrites: []
 };
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_scheduled_events/useStartEvent.tsx");
+const result = require("result").fileFinishedImporting("modules/guild_scheduled_events/useStartEvent.tsx");
 
 export default function useStartEvent() {
   function _startEvent() {
     // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    const _startEvent = obj;
+    const obj = outer1_3(tmp);
     return obj(...arguments);
   }
   const tmp = callback(React.useState(false), 2);

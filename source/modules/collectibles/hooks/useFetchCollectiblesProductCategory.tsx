@@ -1,21 +1,23 @@
-// Module ID: 9770
-// Function ID: 75986
+// Module ID: 9777
+// Function ID: 76027
 // Name: useFetchCollectiblesProductCategory
-// Dependencies: []
+// Dependencies: [57, 6774, 7860, 624, 2]
 // Exports: useFetchCollectiblesProductCategory
 
-// Module 9770 (useFetchCollectiblesProductCategory)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProductCategory.tsx");
+// Module 9777 (useFetchCollectiblesProductCategory)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProductCategory.tsx");
 
 export const useFetchCollectiblesProductCategory = function useFetchCollectiblesProductCategory(skuId) {
-  const arg1 = skuId;
-  importDefault(dependencyMap[2])();
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_4];
+  const _require = skuId;
+  importDefault(7860)();
+  let obj = _require(624);
+  let items = [_isNativeReflectConstruct];
   const tmp2 = callback(obj.useStateFromStoresArray(items, () => {
-    const items = [categoryForProduct.isFetchingCategories, categoryForProduct.getCategoryForProduct(arg0)];
+    const items = [outer1_4.isFetchingCategories, outer1_4.getCategoryForProduct(closure_0)];
     return items;
   }), 2);
   obj = { isFetching: tmp2[0], category: tmp2[1] };

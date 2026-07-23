@@ -1,15 +1,17 @@
-// Module ID: 10837
-// Function ID: 84116
+// Module ID: 10847
+// Function ID: 84165
 // Name: getMessageJumpData
-// Dependencies: []
+// Dependencies: [57, 31, 1452, 1849, 477, 1823, 4062, 21, 2]
 // Exports: default, useMessageJumpAndroidKeyboardHeight
 
-// Module 10837 (getMessageJumpData)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("components_native/chat/getMessageJumpData.tsx");
+// Module 10847 (getMessageJumpData)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("subscribeToKeyboardUIStore").fileFinishedImporting("components_native/chat/getMessageJumpData.tsx");
 
 export default function getMessageJumpData(messages, isAtBottom, messages2) {
   let channelId;
@@ -22,8 +24,8 @@ export default function getMessageJumpData(messages, isAtBottom, messages2) {
   const lastResult = messages.last();
   messages2 = messages2.messages;
   const lastResult1 = messages2.last();
-  const currentUser = currentUser.getCurrentUser();
-  const ANIMATED = isAtBottom(dependencyMap[6]).JumpType.ANIMATED;
+  currentUser = currentUser.getCurrentUser();
+  const ANIMATED = require(4062) /* GuildThemeSourcePreference */.JumpType.ANIMATED;
   let tmp5 = tmp4;
   ({ jumpSequenceId, focusTargetId } = messages);
   if (messages.initialScrollSequenceId === messages2.initialScrollSequenceId) {
@@ -50,7 +52,7 @@ export default function getMessageJumpData(messages, isAtBottom, messages2) {
           if (null != currentUser) {
             if (lastResult.author.id === currentUser.id) {
               if (null != lastResult1) {
-                let obj = importDefault(dependencyMap[7]);
+                let obj = importDefault(21);
               }
               let id = lastResult.id;
               let tmp11 = null;
@@ -88,7 +90,7 @@ export default function getMessageJumpData(messages, isAtBottom, messages2) {
       }
     }
   }
-  const obj2 = isAtBottom(dependencyMap[4]);
+  const obj2 = require(477) /* set */;
   flag = false;
   id = null;
   tmp11 = null;
@@ -103,14 +105,14 @@ export default function getMessageJumpData(messages, isAtBottom, messages2) {
 export const useMessageJumpAndroidKeyboardHeight = function useMessageJumpAndroidKeyboardHeight() {
   let num = 0;
   if (obj.isAndroid()) {
-    num = callback(dependencyMap[5]).getSystemKeyboardHeight();
-    const obj2 = callback(dependencyMap[5]);
+    num = _require(1823).getSystemKeyboardHeight();
+    const obj2 = _require(1823);
   }
-  const tmp4 = callback2(React.useState(num), 2);
-  const callback = tmp4[1];
-  const effect = React.useEffect(() => callback((keyboardHeight) => {
+  const tmp4 = callback(React.useState(num), 2);
+  _require = tmp4[1];
+  const effect = React.useEffect(() => outer1_5((keyboardHeight) => {
     if (obj.isAndroid()) {
-      callback(keyboardHeight.keyboardHeight);
+      outer1_0(keyboardHeight.keyboardHeight);
     }
   }), []);
   return tmp4[0];

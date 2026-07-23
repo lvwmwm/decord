@@ -1,109 +1,115 @@
-// Module ID: 8930
-// Function ID: 70419
+// Module ID: 8937
+// Function ID: 70460
 // Name: CloseButton
-// Dependencies: []
+// Dependencies: [31, 8938, 653, 33, 5788, 7607, 8936, 1212, 8939, 8944, 8945, 8949, 9032, 9037, 9038, 8943, 8987, 5519, 2]
 // Exports: default
 
-// Module 8930 (CloseButton)
+// Module 8937 (CloseButton)
+import result from "result";
+import { XboxLinkModalScenes } from "XboxLinkModalScenes";
+import { PlatformTypes } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function CloseButton() {
   const obj = {
-    source: importDefault(dependencyMap[5]),
+    source: importDefault(7607),
     onPress() {
-      return callback(closure_2[6]).hideModal();
+      return outer1_1(outer1_2[6]).hideModal();
     }
   };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[7]).t.cpT0Cq);
-  return jsx(arg1(dependencyMap[4]).HeaderActionButton, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
+  return jsx(require(5788) /* HeaderActionButton */.HeaderActionButton, {
+    source: importDefault(7607),
+    onPress() {
+      return outer1_1(outer1_2[6]).hideModal();
+    }
+  });
 }
-let closure_3 = importAll(dependencyMap[0]);
-const XboxLinkModalScenes = arg1(dependencyMap[1]).XboxLinkModalScenes;
-const PlatformTypes = arg1(dependencyMap[2]).PlatformTypes;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkModal.tsx");
+const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkModal.tsx");
 
 export default function XboxLinkModal(locationStack) {
-  let obj = arg1(dependencyMap[15]);
-  const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  const arg1 = twoWayLinkStyles;
+  let obj = twoWayLinkStyles(8943);
+  twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
-  const memo = React.useMemo(() => function getScreens(twoWayLinkStyles) {
+  const memo = React.useMemo(() => (function getScreens(twoWayLinkStyles) {
     function onClose() {
-      return callback(closure_2[6]).hideModal();
+      return outer3_1(outer3_2[6]).hideModal();
     }
     function blank() {
       return null;
     }
     let obj = {
       headerLeft: blank,
-      headerRight: closure_7,
+      headerRight: outer2_7,
       headerTitle: blank,
       headerStyle: twoWayLinkStyles.navHeader,
       render() {
-        return callback2(callback(closure_2[8]), {});
+        return outer3_6(outer3_1(outer3_2[8]), {});
       }
     };
     obj = {
       headerLeft: blank,
-      headerRight: closure_7,
+      headerRight: outer2_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { "Null": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 });
+        return outer3_6(twoWayLinkStyles(outer3_2[9]).TwoWayLinkStepHeader, { idx: 1, total: 2 });
       },
       render() {
-        return callback2(callback(closure_2[10]), {});
+        return outer3_6(outer3_1(outer3_2[10]), {});
       }
     };
     obj = {
       headerLeft: blank,
-      headerRight: closure_7,
+      headerRight: outer2_7,
       headerStyle: twoWayLinkStyles.navHeader,
       headerTitle() {
-        return callback2(onClose(closure_2[9]).TwoWayLinkStepHeader, { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" });
+        return outer3_6(twoWayLinkStyles(outer3_2[9]).TwoWayLinkStepHeader, { idx: 2, total: 2 });
       },
       render(arg0) {
         let callbackCode;
         let callbackState;
         ({ callbackCode, callbackState } = arg0);
-        return callback2(callback(closure_2[11]), { callbackCode, callbackState });
+        return outer3_6(outer3_1(outer3_2[11]), { callbackCode, callbackState });
       }
     };
     return {
-      [closure_4.LANDING]: obj,
-      [closure_4.PRE_CONNECT]: obj,
-      [closure_4.DISCORD_CONSENT]: obj,
-      [closure_4.SUCCESS]: {
+      [outer2_4.LANDING]: obj,
+      [outer2_4.PRE_CONNECT]: obj,
+      [outer2_4.DISCORD_CONSENT]: obj,
+      [outer2_4.SUCCESS]: {
         headerLeft: blank,
-        headerRight: closure_7,
+        headerRight: outer2_7,
         headerTitle: blank,
         headerStyle: twoWayLinkStyles.navHeader,
         render() {
-          return callback2(callback(closure_2[12]), {});
+          return outer3_6(outer3_1(outer3_2[12]), {});
         }
       },
-      [closure_4.EDUCATION]: {
+      [outer2_4.EDUCATION]: {
         headerLeft: blank,
-        headerRight: closure_7,
+        headerRight: outer2_7,
         headerTitle: blank,
         headerStyle: twoWayLinkStyles.navHeader,
         render() {
-          return callback2(callback(closure_2[13]), { onClose });
+          return outer3_6(outer3_1(outer3_2[13]), { onClose });
         }
       },
-      [closure_4.ERROR]: {
+      [outer2_4.ERROR]: {
         headerLeft: blank,
-        headerRight: closure_7,
+        headerRight: outer2_7,
         headerTitle: blank,
         headerStyle: twoWayLinkStyles.navHeader,
         render() {
-          return callback2(callback(closure_2[14]), { onClose });
+          return outer3_6(outer3_1(outer3_2[14]), { onClose });
         }
       }
     };
-  }(twoWayLinkStyles), items);
-  const accountLinkStepTracking = arg1(dependencyMap[16]).useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack.locationStack);
+  })(twoWayLinkStyles), items);
+  const accountLinkStepTracking = twoWayLinkStyles(8987).useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack.locationStack);
   obj = { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: XboxLinkModalScenes.LANDING };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.headerBackTitle = intl.string(arg1(dependencyMap[7]).t.13/7kX);
-  return jsx(arg1(dependencyMap[17]).Navigator, obj);
+  const intl = twoWayLinkStyles(1212).intl;
+  obj.headerBackTitle = intl.string(twoWayLinkStyles(1212).t["13/7kX"]);
+  return jsx(twoWayLinkStyles(5519).Navigator, { onStateChange: accountLinkStepTracking, screens: memo, initialRouteName: XboxLinkModalScenes.LANDING });
 };

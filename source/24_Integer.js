@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 24 (Integer)
-const tmp = (arg0) => {
+let tmp = ((arg0) => {
   class Integer {
     constructor(arg0, arg1, arg2, arg3) {
       if (undefined === arg0) {
@@ -480,7 +480,7 @@ const tmp = (arg0) => {
         num2 = 64;
         if (bitLengthResult <= 64) {
           tmp7 = millerRabinTest;
-          return millerRabinTest(absResult, ["ch\u00E1pu", "dokonal\u00FD", "gesto OK", "jasn\u011B", "ok", "OK", "par\u00E1da", "peckovn\u00ED", "perfektn\u00ED", "prvot\u0159\u00EDdn\u00ED", "rozum\u00EDm", "ruka"]);
+          return millerRabinTest(absResult, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
         } else {
           tmp8 = globalThis;
           _Math2 = Math;
@@ -497,8 +497,8 @@ const tmp = (arg0) => {
           rounded = Math.ceil(result1);
           items = [];
           for (let num = 0; num < rounded; num = num + 1) {
-            tmp4 = closure_0;
-            arr = items.push(closure_0(num + 2));
+            tmp4 = outer1_0;
+            arr = items.push(outer1_0(num + 2));
           }
           tmp6 = millerRabinTest;
           return millerRabinTest(absResult, items);
@@ -522,8 +522,8 @@ const tmp = (arg0) => {
         num3 = 2;
         if (0 < num) {
           do {
-            tmp3 = closure_0;
-            arr = items.push(closure_0.randBetween(2, absResult.minus(2), arg1));
+            tmp3 = outer1_0;
+            arr = items.push(outer1_0.randBetween(2, absResult.minus(2), arg1));
             num2 = num2 + 1;
           } while (num2 < num);
         }
@@ -533,8 +533,8 @@ const tmp = (arg0) => {
     }
     modInv(arg0) {
       self = this;
-      zero = closure_0.zero;
-      one = closure_0.one;
+      zero = outer1_0.zero;
+      one = outer1_0.one;
       obj = parseValue(arg0);
       absResult = this.abs();
       obj3 = zero;
@@ -634,14 +634,14 @@ const tmp = (arg0) => {
           tmp9 = toJSNumberResult;
           if (toJSNumberResult >= length) {
             do {
-              tmp10 = closure_6;
-              multiplyResult = multiplyResult.multiply(closure_6);
-              tmp11 = closure_5;
-              diff = diff - (closure_5 - 1);
-              tmp12 = closure_5;
+              tmp10 = length;
+              multiplyResult = multiplyResult.multiply(length);
+              tmp11 = length;
+              diff = diff - (length - 1);
+              tmp12 = length;
               obj3 = multiplyResult;
               tmp9 = diff;
-            } while (diff >= closure_5);
+            } while (diff >= length);
           }
           tmp13 = Object;
           return obj3.multiply(Object[tmp9]);
@@ -739,23 +739,23 @@ const tmp = (arg0) => {
     bitLength() {
       self = this;
       self2 = this;
-      if (this.compareTo(closure_0(0)) < 0) {
+      if (this.compareTo(outer1_0(0)) < 0) {
         negateResult = self.negate();
-        tmp = closure_0;
+        tmp = outer1_0;
         num = 1;
-        self2 = negateResult.subtract(closure_0(1));
+        self2 = negateResult.subtract(outer1_0(1));
       }
-      if (0 === self2.compareTo(closure_0(0))) {
-        tmp6 = closure_0;
-        addResult = closure_0(0);
+      if (0 === self2.compareTo(outer1_0(0))) {
+        tmp6 = outer1_0;
+        addResult = outer1_0(0);
       } else {
-        tmp2 = closure_0;
+        tmp2 = outer1_0;
         tmp3 = integerLogarithm;
         num2 = 2;
-        obj2 = closure_0(integerLogarithm(self2, closure_0(2)).e);
-        tmp4 = closure_0;
+        obj2 = outer1_0(integerLogarithm(self2, outer1_0(2)).e);
+        tmp4 = outer1_0;
         num3 = 1;
-        addResult = obj2.add(closure_0(1));
+        addResult = obj2.add(outer1_0(1));
       }
       return addResult;
     }
@@ -1016,12 +1016,12 @@ const tmp = (arg0) => {
         tmp5 = new SmallInteger(value + 1);
       } else {
         tmp = BigInteger;
-        tmp2 = closure_1;
+        tmp2 = c1;
         prototype = BigInteger.prototype;
         tmp3 = new.target;
         flag = false;
         tmp4 = new.target;
-        tmp5 = new BigInteger(closure_1, false);
+        tmp5 = new BigInteger(c1, false);
       }
       return tmp5;
     }
@@ -1035,12 +1035,12 @@ const tmp = (arg0) => {
         tmp5 = new SmallInteger(value - 1);
       } else {
         tmp = BigInteger;
-        tmp2 = closure_1;
+        tmp2 = c1;
         prototype = BigInteger.prototype;
         tmp3 = new.target;
         flag = true;
         tmp4 = new.target;
-        tmp5 = new BigInteger(closure_1, true);
+        tmp5 = new BigInteger(c1, true);
       }
       return tmp5;
     }
@@ -1582,8 +1582,8 @@ const tmp = (arg0) => {
     if (diff >= 0) {
       do {
         let sum = num * 10000000 + arr5[diff];
-        let tmp4 = closure_18;
-        let tmp5 = closure_18(sum / error);
+        let tmp4 = truncate;
+        let tmp5 = truncate(sum / error);
         num = sum - tmp5 * error;
         tmp[diff] = tmp5 | 0;
         diff = diff - 1;
@@ -1828,10 +1828,10 @@ const tmp = (arg0) => {
                   let tmp17 = subtract;
                   tmp18 = subtract(items11, tmp13);
                 }
-                let tmp21 = tmp15;
-                let tmp22 = result;
-                let tmp23 = sum3;
-                let tmp24 = tmp13;
+                tmp21 = tmp15;
+                tmp22 = result;
+                tmp23 = sum3;
+                tmp24 = tmp13;
                 items11 = tmp18;
                 tmp25 = tmp18;
               }
@@ -1945,8 +1945,8 @@ const tmp = (arg0) => {
       while (true) {
         let tmp4 = tmp3;
         if (!absResult.lesser(items[num3])) {
-          let tmp5 = lib;
-          let obj4 = lib(items[num3]);
+          let tmp5 = outer1_0;
+          let obj4 = outer1_0(items[num3]);
           let modPowResult = obj4.modPow(tmp, absResult);
           tmp4 = tmp3;
           let tmp6 = modPowResult;
@@ -1983,7 +1983,7 @@ const tmp = (arg0) => {
           }
         }
         num3 = num3 + 1;
-        let tmp3 = tmp4;
+        tmp3 = tmp4;
       }
     }
     return true;
@@ -2057,9 +2057,9 @@ const tmp = (arg0) => {
       num2 = 1;
     }
     if (0 !== arg2(num, num2)) {
-      let tmp19 = lib(-1);
+      let tmp19 = outer1_0(-1);
     } else {
-      tmp19 = lib(0);
+      tmp19 = outer1_0(0);
     }
     let diff2 = items.length - 1;
     let addResult = tmp19;
@@ -2068,8 +2068,8 @@ const tmp = (arg0) => {
       do {
         let tmp23 = closure_6;
         let multiplyResult = addResult.multiply(closure_6);
-        let tmp24 = closure_0;
-        addResult = multiplyResult.add(closure_0(items[diff2]));
+        let tmp24 = outer1_0;
+        addResult = multiplyResult.add(outer1_0(items[diff2]));
         diff2 = diff2 - 1;
         tmp22 = addResult;
       } while (diff2 >= 0);
@@ -2079,10 +2079,10 @@ const tmp = (arg0) => {
   function roughLOB(value) {
     value = value.value;
     if ("number" === typeof value) {
-      let tmp2 = value | closure_7;
+      let tmp2 = value | c7;
     } else if ("bigint" === tmp) {
       const _BigInt = BigInt;
-      tmp2 = value | BigInt(closure_7);
+      tmp2 = value | BigInt(c7);
     } else {
       tmp2 = value[0] + value[1] * 10000000 | 1073758208;
     }
@@ -2101,7 +2101,7 @@ const tmp = (arg0) => {
       }
       return obj;
     } else {
-      obj = { p: lib(1), e: 0 };
+      obj = { p: outer1_0(1), e: 0 };
       return obj;
     }
   }
@@ -2172,8 +2172,8 @@ const tmp = (arg0) => {
       let obj14 = tmp3;
       if (obj5.isEven()) {
         do {
-          let tmp9 = closure_37;
-          let divideResult2 = obj12.divide(closure_37(obj12));
+          let tmp9 = roughLOB;
+          let divideResult2 = obj12.divide(roughLOB(obj12));
           obj12 = divideResult2;
           obj13 = divideResult2;
           obj14 = tmp3;
@@ -2185,11 +2185,11 @@ const tmp = (arg0) => {
         let tmp11 = obj14;
         if (obj14.isEven()) {
           do {
-            let tmp12 = closure_37;
-            let divideResult3 = obj16.divide(closure_37(obj16));
+            let tmp12 = roughLOB;
+            let divideResult3 = obj16.divide(roughLOB(obj16));
             obj16 = divideResult3;
             tmp11 = divideResult3;
-            let isEvenResult1 = divideResult3.isEven();
+            isEvenResult1 = divideResult3.isEven();
           } while (isEvenResult1);
         }
         obj18 = obj13;
@@ -2234,10 +2234,10 @@ const tmp = (arg0) => {
   function toBase(addResult, arg1) {
     let quotient;
     let remainder;
-    let obj = lib(arg1);
+    let obj = outer1_0(arg1);
     if (obj.isZero()) {
       if (addResult.isZero()) {
-        obj = { value: [0.229], isNegative: false };
+        obj = { value: [0], isNegative: false };
         return obj;
       } else {
         const _Error = Error;
@@ -2246,7 +2246,7 @@ const tmp = (arg0) => {
       }
     } else if (obj.equals(-1)) {
       if (addResult.isZero()) {
-        obj = { value: [0.229], isNegative: false };
+        obj = { value: [0], isNegative: false };
         return obj;
       } else if (addResult.isNegative()) {
         const obj1 = {};
@@ -2254,15 +2254,15 @@ const tmp = (arg0) => {
         const _Array6 = Array;
         const _Array7 = Array;
         const _Array8 = Array;
-        obj1.value = concat2.apply([], Array.apply(null, Array(-addResult.toJSNumber())).map(Array.prototype.valueOf, [true, true]));
+        obj1.value = concat2.apply([], Array.apply(null, Array(-addResult.toJSNumber())).map(Array.prototype.valueOf, [1, 0]));
         obj1.isNegative = false;
         return obj1;
       } else {
         const _Array3 = Array;
         const _Array4 = Array;
         const _Array5 = Array;
-        const mapped = Array.apply(null, Array(addResult.toJSNumber() - 1)).map(Array.prototype.valueOf, [77601039, 1612144654]);
-        mapped.unshift([false]);
+        const mapped = Array.apply(null, Array(addResult.toJSNumber() - 1)).map(Array.prototype.valueOf, [0, 1]);
+        mapped.unshift([1]);
         let obj2 = {};
         const concat = [].concat;
         obj2.value = concat.apply([], mapped);
@@ -2279,7 +2279,7 @@ const tmp = (arg0) => {
       if (obj.isUnit()) {
         let obj3 = {};
         if (absResult.isZero()) {
-          obj3.value = [0.229];
+          obj3.value = [0];
           obj3.isNegative = false;
           let tmp8 = obj3;
         } else {
@@ -2329,10 +2329,11 @@ const tmp = (arg0) => {
         const obj4 = { value: items.reverse(), isNegative: flag2 };
         return obj4;
       }
-      const tmp = addResult.isNegative() && obj.isPositive();
+      tmp = addResult.isNegative() && obj.isPositive();
     }
   }
   function toBaseString(self, arg1, arg2) {
+    let closure_0 = arg2;
     const iter = toBase(self, arg1);
     let str = "";
     if (iter.isNegative) {
@@ -2340,9 +2341,9 @@ const tmp = (arg0) => {
     }
     const value = iter.value;
     const mapped = value.map((arg0) => {
-      let arr = arg2;
-      if (!arg2) {
-        arr = closure_2;
+      let arr = closure_0;
+      if (!closure_0) {
+        arr = outer1_2;
       }
       if (arg0 < arr.length) {
         let text = arr[arg0];
@@ -2447,7 +2448,7 @@ const tmp = (arg0) => {
           const error4 = new Error("Invalid integer: " + str2);
           throw error4;
         }
-        const obj = /^([0-9][0-9]*)$/;
+        obj = /^([0-9][0-9]*)$/;
       }
     }
   }
@@ -2482,7 +2483,7 @@ const tmp = (arg0) => {
     }
   }
   let closure_1 = smallToArray(9007199254740992);
-  let closure_2 = "0123456789abcdefghijklmnopqrstuvwxyz";
+  let c2 = "0123456789abcdefghijklmnopqrstuvwxyz";
   let closure_3 = "function" === typeof BigInt;
   BigInteger.prototype = Object.create(Integer.prototype);
   SmallInteger.prototype = Object.create(Integer.prototype);
@@ -2574,7 +2575,7 @@ const tmp = (arg0) => {
   const modInv = BigInteger.prototype.modInv;
   SmallInteger.prototype.modInv = modInv;
   NativeBigInt.prototype.modInv = modInv;
-  const items = [false];
+  let items = [1];
   if (2 * items[items.length - 1] <= 10000000) {
     class Integer {
       constructor(arg0, arg1, arg2, arg3) {
@@ -2600,7 +2601,7 @@ const tmp = (arg0) => {
       }
     }
   }
-  const length = items.length;
+  let length = items.length;
   let closure_6 = items[length - 1];
   shiftLeft = BigInteger.prototype.shiftLeft;
   SmallInteger.prototype.shiftLeft = shiftLeft;
@@ -2620,7 +2621,7 @@ const tmp = (arg0) => {
   const xor = BigInteger.prototype.xor;
   SmallInteger.prototype.xor = xor;
   NativeBigInt.prototype.xor = xor;
-  let closure_7 = 1073741824;
+  let c7 = 1073741824;
   const bitLength = BigInteger.prototype.bitLength;
   SmallInteger.prototype.bitLength = bitLength;
   NativeBigInt.prototype.bitLength = bitLength;
@@ -2630,7 +2631,7 @@ const tmp = (arg0) => {
     let tmp2;
     let str = arg2;
     if (!arg2) {
-      str = closure_2;
+      str = c2;
     }
     const str2 = String(arg0);
     let formatted = str2;
@@ -2701,7 +2702,7 @@ const tmp = (arg0) => {
           }
         }
         num3 = sum + 1;
-        let tmp9 = tmp15;
+        tmp9 = tmp15;
       }
       const _Error2 = Error;
       const error1 = new Error(tmp10 + " is not a valid character");
@@ -3201,7 +3202,7 @@ const tmp = (arg0) => {
           num2 = 64;
           if (bitLengthResult <= 64) {
             tmp7 = millerRabinTest;
-            return millerRabinTest(absResult, ["ch\u00E1pu", "dokonal\u00FD", "gesto OK", "jasn\u011B", "ok", "OK", "par\u00E1da", "peckovn\u00ED", "perfektn\u00ED", "prvot\u0159\u00EDdn\u00ED", "rozum\u00EDm", "ruka"]);
+            return millerRabinTest(absResult, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
           } else {
             tmp8 = globalThis;
             _Math2 = Math;
@@ -3218,8 +3219,8 @@ const tmp = (arg0) => {
             rounded = Math.ceil(result1);
             items = [];
             for (let num = 0; num < rounded; num = num + 1) {
-              tmp4 = closure_0;
-              arr = items.push(closure_0(num + 2));
+              tmp4 = outer1_0;
+              arr = items.push(outer1_0(num + 2));
             }
             tmp6 = millerRabinTest;
             return millerRabinTest(absResult, items);
@@ -3243,8 +3244,8 @@ const tmp = (arg0) => {
           num3 = 2;
           if (0 < num) {
             do {
-              tmp3 = closure_0;
-              arr = items.push(closure_0.randBetween(2, absResult.minus(2), arg1));
+              tmp3 = outer1_0;
+              arr = items.push(outer1_0.randBetween(2, absResult.minus(2), arg1));
               num2 = num2 + 1;
             } while (num2 < num);
           }
@@ -3254,8 +3255,8 @@ const tmp = (arg0) => {
       }
       modInv(arg0) {
         self = this;
-        zero = closure_0.zero;
-        one = closure_0.one;
+        zero = outer1_0.zero;
+        one = outer1_0.one;
         obj = parseValue(arg0);
         absResult = this.abs();
         obj3 = zero;
@@ -3355,14 +3356,14 @@ const tmp = (arg0) => {
             tmp9 = toJSNumberResult;
             if (toJSNumberResult >= length) {
               do {
-                tmp10 = closure_6;
-                multiplyResult = multiplyResult.multiply(closure_6);
-                tmp11 = closure_5;
-                diff = diff - (closure_5 - 1);
-                tmp12 = closure_5;
+                tmp10 = length;
+                multiplyResult = multiplyResult.multiply(length);
+                tmp11 = length;
+                diff = diff - (length - 1);
+                tmp12 = length;
                 obj3 = multiplyResult;
                 tmp9 = diff;
-              } while (diff >= closure_5);
+              } while (diff >= length);
             }
             tmp13 = Object;
             return obj3.multiply(Object[tmp9]);
@@ -3460,23 +3461,23 @@ const tmp = (arg0) => {
       bitLength() {
         self = this;
         self2 = this;
-        if (this.compareTo(closure_0(0)) < 0) {
+        if (this.compareTo(outer1_0(0)) < 0) {
           negateResult = self.negate();
-          tmp = closure_0;
+          tmp = outer1_0;
           num = 1;
-          self2 = negateResult.subtract(closure_0(1));
+          self2 = negateResult.subtract(outer1_0(1));
         }
-        if (0 === self2.compareTo(closure_0(0))) {
-          tmp6 = closure_0;
-          addResult = closure_0(0);
+        if (0 === self2.compareTo(outer1_0(0))) {
+          tmp6 = outer1_0;
+          addResult = outer1_0(0);
         } else {
-          tmp2 = closure_0;
+          tmp2 = outer1_0;
           tmp3 = integerLogarithm;
           num2 = 2;
-          obj2 = closure_0(integerLogarithm(self2, closure_0(2)).e);
-          tmp4 = closure_0;
+          obj2 = outer1_0(integerLogarithm(self2, outer1_0(2)).e);
+          tmp4 = outer1_0;
           num3 = 1;
-          addResult = obj2.add(closure_0(1));
+          addResult = obj2.add(outer1_0(1));
         }
         return addResult;
       }
@@ -3738,12 +3739,12 @@ const tmp = (arg0) => {
           tmp5 = new SmallInteger(value + 1);
         } else {
           tmp = BigInteger;
-          tmp2 = closure_1;
+          tmp2 = c1;
           prototype = BigInteger.prototype;
           tmp3 = new.target;
           flag = false;
           tmp4 = new.target;
-          tmp5 = new BigInteger(closure_1, false);
+          tmp5 = new BigInteger(c1, false);
         }
         return tmp5;
       }
@@ -3757,12 +3758,12 @@ const tmp = (arg0) => {
           tmp5 = new SmallInteger(value - 1);
         } else {
           tmp = BigInteger;
-          tmp2 = closure_1;
+          tmp2 = c1;
           prototype = BigInteger.prototype;
           tmp3 = new.target;
           flag = true;
           tmp4 = new.target;
-          tmp5 = new BigInteger(closure_1, true);
+          tmp5 = new BigInteger(c1, true);
         }
         return tmp5;
       }
@@ -3838,8 +3839,8 @@ const tmp = (arg0) => {
           if (flag2) {
             num3 = value[num2];
           }
-          let tmp6 = closure_18;
-          let tmp7 = closure_18(random() * num3);
+          let tmp6 = truncate;
+          let tmp7 = truncate(random() * num3);
           let arr = items.push(tmp7);
           if (tmp7 < num3) {
             flag2 = false;
@@ -3860,7 +3861,8 @@ const tmp = (arg0) => {
     return parseBaseFromArray(mapped, parseValue(num), arg2);
   };
   return Integer;
-}();
+})();
+let closure_0 = tmp;
 let hasOwnPropertyResult = undefined !== module;
 if (hasOwnPropertyResult) {
   hasOwnPropertyResult = module.hasOwnProperty("exports");
@@ -3873,5 +3875,5 @@ if (amd) {
   amd = globalThis.define.amd;
 }
 if (amd) {
-  globalThis.define(() => tmp);
+  globalThis.define(() => closure_0);
 }

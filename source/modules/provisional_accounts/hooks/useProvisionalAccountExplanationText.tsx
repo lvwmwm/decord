@@ -1,36 +1,37 @@
-// Module ID: 11652
-// Function ID: 90398
+// Module ID: 11662
+// Function ID: 90447
 // Name: useProvisionalAccountExplanationText
-// Dependencies: []
+// Dependencies: [31, 653, 11663, 1212, 1920, 2]
 // Exports: useProvisionalAccountExplanationText
 
-// Module 11652 (useProvisionalAccountExplanationText)
-let closure_3 = importAll(dependencyMap[0]);
-const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountExplanationText.tsx");
+// Module 11662 (useProvisionalAccountExplanationText)
+import result from "result";
+import { HelpdeskArticles } from "ME";
+
+const require = arg1;
+const result = require("useProvisionalAccountApplication").fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountExplanationText.tsx");
 
 export const useProvisionalAccountExplanationText = function useProvisionalAccountExplanationText(renderApplicationName) {
   renderApplicationName = renderApplicationName.renderApplicationName;
-  const arg1 = renderApplicationName;
-  const tmp = importDefault(dependencyMap[2])(renderApplicationName.userId);
-  const importDefault = tmp;
+  const tmp = importDefault(11663)(renderApplicationName.userId);
+  importDefault = tmp;
   const items = [tmp, renderApplicationName];
   return React.useMemo(() => {
     if (null != tmp) {
-      const intl2 = renderApplicationName(closure_2[3]).intl;
+      const intl2 = renderApplicationName(outer1_2[3]).intl;
       let obj = {
-        helpdeskArticle: tmp(closure_2[4]).getArticleURL(constants.SLAYER_PROVISIONAL_ACCOUNTS),
+        helpdeskArticle: tmp(outer1_2[4]).getArticleURL(outer1_4.SLAYER_PROVISIONAL_ACCOUNTS),
         applicationName() {
-            return callback(closure_1);
+            return outer1_0(outer1_1);
           }
       };
-      let formatResult = intl2.format(renderApplicationName(closure_2[3]).t.rSUACb, obj);
-      const obj4 = tmp(closure_2[4]);
+      let formatResult = intl2.format(renderApplicationName(outer1_2[3]).t.rSUACb, obj);
+      const obj4 = tmp(outer1_2[4]);
     } else {
-      const intl = renderApplicationName(closure_2[3]).intl;
-      obj = { helpdeskArticle: renderApplicationName(closure_2[4]).getArticleURL(constants.SLAYER_PROVISIONAL_ACCOUNTS) };
-      formatResult = intl.format(renderApplicationName(closure_2[3]).t.q+N8L6, obj);
-      const obj2 = renderApplicationName(closure_2[4]);
+      const intl = renderApplicationName(outer1_2[3]).intl;
+      obj = { helpdeskArticle: renderApplicationName(outer1_2[4]).getArticleURL(outer1_4.SLAYER_PROVISIONAL_ACCOUNTS) };
+      formatResult = intl.format(renderApplicationName(outer1_2[3]).t["q+N8L6"], obj);
+      const obj2 = renderApplicationName(outer1_2[4]);
     }
     return formatResult;
   }, items);

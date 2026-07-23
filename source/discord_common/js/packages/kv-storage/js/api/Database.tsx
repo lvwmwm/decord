@@ -1,52 +1,57 @@
 // Module ID: 1890
-// Function ID: 21084
+// Function ID: 21085
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [771751943, 1291845639, 2885681168]
+// Dependencies: [5, 6, 7, 1889, 1891, 20, 1892, 2]
 
 // Module 1890 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import AppStartPerformance from "AppStartPerformance";
+import Host from "Host";
+import set from "set";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,19 +88,15 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const tmp3 = () => {
+let tmp3 = (() => {
   class DatabaseTransaction {
     constructor(arg0) {
-      tmp = closure_4(this, DatabaseTransaction);
+      tmp = outer1_4(this, DatabaseTransaction);
       this.database = arg0;
       this.operations = [];
       return;
     }
   }
-  const arg1 = DatabaseTransaction;
   let obj = {
     key: "add",
     value(arg0) {
@@ -108,7 +109,7 @@ const tmp3 = () => {
     key: "complete",
     value() {
       let done;
-      const tmp = callback2(this.operations);
+      const tmp = outer1_7(this.operations);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -130,17 +131,18 @@ const tmp3 = () => {
   };
   items[2] = obj;
   return callback2(DatabaseTransaction, items);
-}();
-const tmp2 = () => {
+})();
+let closure_6 = tmp3;
+let tmp2 = (() => {
   class Database {
     constructor(arg0) {
-      f21108 = this;
-      tmp = closure_4(this, Database);
+      self = this;
+      tmp = outer1_4(this, Database);
       this.raw = arg0;
       this.name = arg0.name;
-      this.lastState = f21108(Database[3]).DatabaseState.Open;
+      this.lastState = f21109(Database[3]).DatabaseState.Open;
       this.handle = arg0.handle;
-      Runtime = f21108(Database[4]).Runtime;
+      Runtime = f21109(Database[4]).Runtime;
       this.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
         if (self.handle === arg0) {
           self.lastState = lastState;
@@ -149,7 +151,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const dependencyMap = Database;
   let obj = {
     key: "close",
     value() {
@@ -173,7 +174,7 @@ const tmp2 = () => {
         let resolved = Promise.resolve();
       } else {
         self.lastState = callback(Database[3]).DatabaseState.Disabled;
-        const obj = { 1850885835: true, 1422284245: true, reason };
+        const obj = { type: "db.disable", handle: 0, reason };
         resolved = self.execute(obj);
       }
       return resolved;
@@ -184,9 +185,9 @@ const tmp2 = () => {
     key: "execute",
     value(table) {
       let type = arg1;
-      let closure_0 = this;
+      const self = this;
       const callback2 = table;
-      const Database = arg1;
+      let closure_2 = arg1;
       if (null == this.raw) {
         const _Error = Error;
         const _HermesInternal2 = HermesInternal;
@@ -199,16 +200,16 @@ const tmp2 = () => {
           table = table.table;
         }
         function callback() {
-          const Runtime = self(arg1[4]).Runtime;
-          if (null != arg1) {
-            let type = arg1;
+          const Runtime = _self(Database[4]).Runtime;
+          if (null != closure_2) {
+            let type = closure_2;
           } else {
-            type = arg0.type;
+            type = table.type;
           }
           return Runtime.executeAsync(type, (arg0) => {
-            const raw = raw.raw;
+            const raw = outer1_0.raw;
             const obj = {};
-            const merged = Object.assign(closure_1);
+            const merged = Object.assign(outer1_1);
             obj["handle"] = 0;
             raw.execute(arg0, obj);
           });
@@ -225,7 +226,7 @@ const tmp2 = () => {
           }
           const _HermesInternal = HermesInternal;
           callbackResult = callback2(Database[5]).timeAsync("\u{1F4BE}", "" + type + " " + str2, callback);
-          const obj = callback2(Database[5]);
+          let obj = callback2(Database[5]);
         }
         return callbackResult;
       }
@@ -235,7 +236,7 @@ const tmp2 = () => {
   items[3] = {
     key: "executeSync",
     value(table) {
-      let closure_0 = this;
+      const self = this;
       const callback2 = table;
       if (null == this.raw) {
         const _Error = Error;
@@ -256,7 +257,7 @@ const tmp2 = () => {
         return callback2(Database[5]).time("\u{1F4BE}", "SYNC: " + table.type + " " + str, () => {
           const raw = self.raw;
           const obj = {};
-          const merged = Object.assign(arg0);
+          const merged = Object.assign(closure_1);
           obj["handle"] = 0;
           return raw.execute(null, obj, { synchronous: true });
         });
@@ -266,19 +267,19 @@ const tmp2 = () => {
   items[4] = {
     key: "fullVacuum",
     value() {
-      return this.execute({});
+      return this.execute({ type: "db.vacuum", handle: 0, complete: true });
     }
   };
   items[5] = {
     key: "fsInfo",
     value() {
-      return this.execute({ 1850885835: "s", 1422284245: "title" });
+      return this.execute({ type: "db.fs_info", handle: 0 });
     }
   };
   items[6] = {
     key: "incrementalVacuum",
     value() {
-      return this.execute({ GameProfileShareLinkExperiment: 15180885971583744000000000000000000000000000000000000000000000000000000000000000000, one: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010175274906459004, singularNominative: 0.00000000000000000000000000000000000000000000000000000000000010695827934163575 });
+      return this.execute({ type: "db.vacuum", handle: 0, complete: false });
     }
   };
   items[7] = {
@@ -299,7 +300,7 @@ const tmp2 = () => {
   let closure_1 = callback(async function() {
     const self = this;
     if (null == self.raw) {
-      let Closed = callback(closure_2[3]).DatabaseState.Closed;
+      let Closed = callback(Database[3]).DatabaseState.Closed;
     } else {
       const obj = { type: "db.state" };
       const tmp = yield self.execute(obj);
@@ -321,15 +322,15 @@ const tmp2 = () => {
   items[10] = {
     key: "transaction",
     value(arg0, arg1) {
-      let closure_0 = this;
+      const self = this;
       let closure_1 = arg1;
-      const tmp = new closure_6(this);
+      const tmp = new outer1_6(this);
       const Database = tmp;
       const resolved = Promise.resolve(arg0(tmp));
       return resolved.then(() => {
         if (tmp.operations.length > 0) {
           const obj = { type: "db.transaction", operations: tmp.complete() };
-          let executeResult = self.execute(obj, arg1);
+          let executeResult = self.execute(obj, closure_1);
         } else {
           executeResult = Promise.resolve();
         }
@@ -339,8 +340,8 @@ const tmp2 = () => {
   };
   const obj9 = { key: "open" };
   let closure_0 = callback(async (arg0, arg1) => {
-    let tmp = closure_2;
-    const Host = callback(closure_2[6]).Host;
+    let tmp = outer1_2;
+    const Host = callback(Database[6]).Host;
     tmp = new tmp(yield Host.open(arg0, arg1));
     return tmp;
   });
@@ -365,8 +366,8 @@ const tmp2 = () => {
     }
   ];
   return callback2(Database, items, items1);
-}();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Database.tsx");
+})();
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Database.tsx");
 
 export const Database = tmp2;
 export const DatabaseTransaction = tmp3;

@@ -1,15 +1,15 @@
-// Module ID: 15987
-// Function ID: 122672
+// Module ID: 16104
+// Function ID: 124845
 // Name: setupLoadFromMessageManagerHandlers
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 15987 (setupLoadFromMessageManagerHandlers)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/messages/setupLoadFromMessageManagerHandlers.tsx");
+// Module 16104 (setupLoadFromMessageManagerHandlers)
+const result = require("set").fileFinishedImporting("modules/messages/setupLoadFromMessageManagerHandlers.tsx");
 
 export default function setupLoadFromMessageManagerHandlers(actions) {
   let obj = arg2;
+  let closure_0 = arg1;
   if (arg2 === undefined) {
     obj = {};
   }
@@ -21,7 +21,7 @@ export default function setupLoadFromMessageManagerHandlers(actions) {
       hasItem = set.has(message.channel_id);
     }
     if (hasItem) {
-      arg1(message);
+      callback(message);
     }
   }
   function handleMessage(message) {
@@ -44,7 +44,7 @@ export default function setupLoadFromMessageManagerHandlers(actions) {
       onBeforeBatch();
     }
     const item = messages.forEach((arg0) => {
-      callback(arg0);
+      outer1_3(arg0);
     });
   }
   function handleSearchMessagesSuccess(data) {
@@ -52,10 +52,10 @@ export default function setupLoadFromMessageManagerHandlers(actions) {
     if (null != onBeforeBatch) {
       onBeforeBatch();
     }
-    const item = data.forEach((messages) => {
+    let item = data.forEach((messages) => {
       messages = messages.messages;
-      const item = messages.forEach((arr) => {
-        const item = arr.forEach((arg0) => callback(arg0));
+      let item = messages.forEach((arr) => {
+        const item = arr.forEach((arg0) => outer3_0(arg0));
       });
     });
   }
@@ -75,14 +75,14 @@ export default function setupLoadFromMessageManagerHandlers(actions) {
     if (null != onBeforeBatch) {
       onBeforeBatch();
     }
-    const item = messages.forEach((arg0) => callback(arg0));
+    const item = messages.forEach((arg0) => outer1_0(arg0));
   };
   obj["LOAD_PINNED_MESSAGES_SUCCESS"] = function LOAD_PINNED_MESSAGES_SUCCESS(pins) {
     pins = pins.pins;
     if (null != onBeforeBatch) {
       onBeforeBatch();
     }
-    const item = pins.forEach((message) => callback(message.message));
+    const item = pins.forEach((message) => outer1_0(message.message));
   };
   obj["SEARCH_MESSAGES_SUCCESS"] = handleSearchMessagesSuccess;
   obj["MOD_VIEW_SEARCH_MESSAGES_SUCCESS"] = handleSearchMessagesSuccess;

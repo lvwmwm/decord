@@ -1,10 +1,10 @@
-// Module ID: 5579
-// Function ID: 47377
+// Module ID: 5582
+// Function ID: 47400
 // Name: designConfig
-// Dependencies: []
+// Dependencies: [2]
 // Exports: setDesignConfig
 
-// Module 5579 (designConfig)
+// Module 5582 (designConfig)
 const obj = {
   getDefaultLinkInterceptor() {
 
@@ -13,8 +13,7 @@ const obj = {
 
   }
 };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("design/config.tsx");
+const result = require("set").fileFinishedImporting("design/config.tsx");
 
 export const designConfig = obj;
 export const setDesignConfig = function setDesignConfig(arg0) {

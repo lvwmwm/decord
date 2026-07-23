@@ -1,19 +1,19 @@
-// Module ID: 11976
-// Function ID: 92612
+// Module ID: 11988
+// Function ID: 92666
 // Name: widgetGameTagMetadata
-// Dependencies: []
+// Dependencies: [11989, 11990, 9298, 9300, 3832, 2]
 // Exports: getWidgetGameTagMetadata
 
-// Module 11976 (widgetGameTagMetadata)
-const _module = require(dependencyMap[0]);
+// Module 11988 (widgetGameTagMetadata)
+import WidgetGameTagIconRole from "WidgetGameTagIconRole";
+
 const obj = {};
-obj[require(dependencyMap[0]).WidgetGameTagIconRole.RIBBON] = require(dependencyMap[1]).RibbonIcon;
-obj[require(dependencyMap[0]).WidgetGameTagIconRole.THUMBS_UP] = require(dependencyMap[2]).ThumbsUpIcon;
-obj[require(dependencyMap[0]).WidgetGameTagIconRole.THUMBS_DOWN] = require(dependencyMap[3]).ThumbsDownIcon;
-obj[require(dependencyMap[0]).WidgetGameTagIconRole.FRIENDS] = require(dependencyMap[4]).FriendsIcon;
-const widgetGameTagMetadata = _module.buildWidgetGameTagMetadata(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_profile/UserProfileGameWidgetConstants.native.tsx");
+obj[require("WidgetGameTagIconRole").WidgetGameTagIconRole.RIBBON] = require("RibbonIcon").RibbonIcon;
+obj[require("WidgetGameTagIconRole").WidgetGameTagIconRole.THUMBS_UP] = require("ThumbsUpIcon").ThumbsUpIcon;
+obj[require("WidgetGameTagIconRole").WidgetGameTagIconRole.THUMBS_DOWN] = require("ThumbsDownIcon").ThumbsDownIcon;
+obj[require("WidgetGameTagIconRole").WidgetGameTagIconRole.FRIENDS] = require("FriendsIcon").FriendsIcon;
+const widgetGameTagMetadata = WidgetGameTagIconRole.buildWidgetGameTagMetadata(obj);
+const result = require("ThumbsUpIcon").fileFinishedImporting("modules/user_profile/UserProfileGameWidgetConstants.native.tsx");
 
 export const WIDGET_GAME_TAG_METADATA = widgetGameTagMetadata;
 export const getWidgetGameTagMetadata = function getWidgetGameTagMetadata(tag) {

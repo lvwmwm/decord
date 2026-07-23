@@ -1,10 +1,9 @@
-// Module ID: 13627
-// Function ID: 103237
+// Module ID: 13741
+// Function ID: 105393
 // Name: HighlightColors
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 13627 (HighlightColors)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild_settings/safety/HighlightedSettingsTypes.tsx");
+// Module 13741 (HighlightColors)
+const result = require("set").fileFinishedImporting("modules/guild_settings/safety/HighlightedSettingsTypes.tsx");
 
 export const HighlightColors = { ACCENT: "accent", GREEN: "statusGreen", YELLOW: "statusYellow", ORANGE: "statusOrange", RED: "statusRed", NONE: "transparent" };

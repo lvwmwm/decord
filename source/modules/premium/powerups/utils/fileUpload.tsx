@@ -1,25 +1,27 @@
-// Module ID: 11520
-// Function ID: 89773
+// Module ID: 11530
+// Function ID: 89823
 // Name: useShouldShowFileUploadRollback
-// Dependencies: []
+// Dependencies: [4017, 4018, 566, 4021, 11531, 4058, 2]
 // Exports: useShouldShowFileUploadRollback
 
-// Module 11520 (useShouldShowFileUploadRollback)
-let closure_3 = importDefault(dependencyMap[0]);
-const PowerupActiveStatusType = arg1(dependencyMap[1]).PowerupActiveStatusType;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/utils/fileUpload.tsx");
+// Module 11530 (useShouldShowFileUploadRollback)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PowerupActiveStatusType } from "BoostedGuildTiers";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/premium/powerups/utils/fileUpload.tsx");
 
 export const useShouldShowFileUploadRollback = function useShouldShowFileUploadRollback(guildId, location) {
-  location = guildId;
-  const items = [closure_3];
-  const stateFromStores = location(dependencyMap[2]).useStateFromStores(items, () => stateForGuild.getStateForGuild(arg0));
+  const _require = guildId;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_3.getStateForGuild(closure_0));
   let tmp2;
   if (null != stateFromStores) {
-    tmp2 = stateFromStores.allPowerups[closure_0(undefined, closure_2[3]).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
+    tmp2 = stateFromStores.allPowerups[_require(undefined, 4021).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
   }
-  const obj = location(dependencyMap[2]);
-  const tmp5 = importDefault(dependencyMap[4])(guildId, tmp2);
-  let tmp6 = location(dependencyMap[5]).useFileUpload250MbPowerupRollbackEnabled(guildId, location) && null != tmp2 && null != tmp2.storeRemovalDate;
+  const obj = _require(566);
+  const tmp5 = importDefault(11531)(guildId, tmp2);
+  let tmp6 = _require(4058).useFileUpload250MbPowerupRollbackEnabled(guildId, location) && null != tmp2 && null != tmp2.storeRemovalDate;
   if (tmp6) {
     tmp6 = tmp5.type === PowerupActiveStatusType.POWERUP_ACTIVATED;
   }

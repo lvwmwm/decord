@@ -1,33 +1,35 @@
-// Module ID: 14671
-// Function ID: 110613
+// Module ID: 14786
+// Function ID: 112777
 // Name: usePortraitOrientationOnly
-// Dependencies: []
+// Dependencies: [31, 4110, 1553, 9197, 8303, 2]
 // Exports: default
 
-// Module 14671 (usePortraitOrientationOnly)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/auth/native/useOrientationLock.tsx");
+// Module 14786 (usePortraitOrientationOnly)
+import result from "result";
+
+let require = arg1;
+const result = require("isMetaQuest").fileFinishedImporting("modules/auth/native/useOrientationLock.tsx");
 
 export default function usePortraitOrientationOnly() {
-  const tmp = importDefault(dependencyMap[3])();
-  const arg1 = tmp;
+  let tmp = importDefault(9197)();
+  const require = tmp;
   const items = [tmp];
   const effect = React.useEffect(() => {
-    let tmp = !tmp(closure_2[1]).isIpadOS();
+    tmp = !tmp(outer1_2[1]).isIpadOS();
     if (tmp) {
-      tmp = !tmp(closure_2[2]).isMetaQuest();
-      const obj2 = tmp(closure_2[2]);
+      tmp = !tmp(outer1_2[2]).isMetaQuest();
+      const obj2 = tmp(outer1_2[2]);
     }
     if (tmp) {
       tmp = !tmp;
     }
     if (tmp) {
-      tmp(closure_2[4]).lockOrientation("PORTRAIT", false);
-      const obj3 = tmp(closure_2[4]);
+      tmp(outer1_2[4]).lockOrientation("PORTRAIT", false);
+      const obj3 = tmp(outer1_2[4]);
     }
     return () => {
       if (tmp) {
-        let obj = tmp(closure_2[4]);
+        let obj = tmp(outer2_2[4]);
         obj = { unlockAfterRotatingToPreviousLock: false };
         obj.unlockOrientation(obj);
       }

@@ -1,9 +1,17 @@
-// Module ID: 5471
-// Function ID: 46757
+// Module ID: 5474
+// Function ID: 46780
 // Name: GameIcon
-// Dependencies: []
+// Dependencies: [31, 27, 1851, 33, 4130, 689, 5475, 5476, 5477, 5478, 2]
 
-// Module 5471 (GameIcon)
+// Module 5474 (GameIcon)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { PremiumSubscriptionSKUs } from "GuildFeatures";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2;
+let closure_3;
 class GameIcon {
   constructor(arg0) {
     ({ game, skuId, size } = global);
@@ -11,7 +19,7 @@ class GameIcon {
       tmp = Image;
       size = Image.NORMAL;
     }
-    tmp2 = closure_8();
+    tmp2 = c8();
     obj = { [closure_6.NORMAL]: tmp2.normal, [closure_6.SMALL]: tmp2.small, [closure_6.SIZE_24]: tmp2.size24, [closure_6.LARGE]: tmp2.large };
     items = [, , ];
     items[0] = tmp2.gameIcon;
@@ -21,8 +29,8 @@ class GameIcon {
       tmp15 = undefined;
       if (null != game) {
         if (null == undefined) {
-          tmp16 = closure_7;
-          iconURL = game.getIconURL(closure_7[size]);
+          tmp16 = large;
+          iconURL = game.getIconURL(large[size]);
           if (null != iconURL) {
             obj = {};
             obj.uri = iconURL;
@@ -31,10 +39,10 @@ class GameIcon {
         }
       }
       if (null == tmp15) {
-        tmp18 = importDefault;
-        tmp19 = dependencyMap;
+        tmp18 = closure_0;
+        tmp19 = closure_1;
         num4 = 9;
-        tmp15 = importDefault(dependencyMap[9]);
+        tmp15 = require("registerAsset");
         arr = items.push(tmp2.placeholder);
       }
       tmp21 = jsx;
@@ -54,58 +62,53 @@ class GameIcon {
     } else {
       tmp3 = PremiumSubscriptionSKUs;
       if (PremiumSubscriptionSKUs.TIER_0 === skuId) {
-        tmp12 = importDefault;
-        tmp13 = dependencyMap;
+        tmp12 = closure_0;
+        tmp13 = closure_1;
         num3 = 6;
-        tmp7 = importDefault(dependencyMap[6]);
+        tmp7 = require("registerAsset");
         tmp14 = tmp7;
       } else {
         tmp4 = PremiumSubscriptionSKUs;
         if (PremiumSubscriptionSKUs.TIER_1 !== skuId) {
           tmp5 = PremiumSubscriptionSKUs;
           if (PremiumSubscriptionSKUs.TIER_2 === skuId) {
-            tmp8 = importDefault;
-            tmp9 = dependencyMap;
+            tmp8 = closure_0;
+            tmp9 = closure_1;
             num = 8;
-            tmp7 = importDefault(dependencyMap[8]);
+            tmp7 = require("registerAsset");
           } else {
             tmp6 = PremiumSubscriptionSKUs;
             tmp7 = null;
           }
         }
       }
-      tmp10 = importDefault;
-      tmp11 = dependencyMap;
+      tmp10 = closure_0;
+      tmp11 = closure_1;
       num2 = 7;
-      tmp7 = importDefault(dependencyMap[7]);
+      tmp7 = require("registerAsset");
     }
     return;
   }
 }
-importAll(dependencyMap[0]);
-({ Image: closure_2, View: closure_3 } = arg1(dependencyMap[1]));
-const PremiumSubscriptionSKUs = arg1(dependencyMap[2]).PremiumSubscriptionSKUs;
-const jsx = arg1(dependencyMap[3]).jsx;
+({ Image: closure_2, View: closure_3 } = get_ActivityIndicator);
 let obj = { SIZE_24: "size_24", SMALL: "small", NORMAL: "normal", LARGE: "large" };
 obj = { [obj.SIZE_24]: 24, [obj.SMALL]: 32, [obj.NORMAL]: 48, [obj.LARGE]: 80 };
-let obj2 = arg1(dependencyMap[4]);
-obj = { gameIcon: { "Bool(false)": null, "Bool(false)": null } };
-const tmp3 = arg1(dependencyMap[1]);
-obj.size24 = { width: obj.size_24, height: obj.size_24, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj2 = { width: obj.small, height: obj.small, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.small = obj2;
-const obj1 = { width: obj.size_24, height: obj.size_24, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.normal = { width: obj.normal, height: obj.normal, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-const obj3 = { width: obj.normal, height: obj.normal, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.large = { width: obj.large, height: obj.large, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-const obj4 = { width: obj.large, height: obj.large, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.placeholder = { borderRadius: importDefault(dependencyMap[5]).radii.none, tintColor: importDefault(dependencyMap[5]).colors.ICON_MUTED };
-const obj5 = { borderRadius: importDefault(dependencyMap[5]).radii.none, tintColor: importDefault(dependencyMap[5]).colors.ICON_MUTED };
-obj.entityWrapper = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-let closure_8 = obj2.createStyles(obj);
+obj = { gameIcon: { justifyContent: "center", alignItems: "center" } };
+obj.size24 = { width: obj.size_24, height: obj.size_24, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose = { width: obj.small, height: obj.small, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+obj.small = _createForOfIteratorHelperLoose;
+let obj1 = { width: obj.size_24, height: obj.size_24, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+obj.normal = { width: obj.normal, height: obj.normal, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+const obj3 = { width: obj.normal, height: obj.normal, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+obj.large = { width: obj.large, height: obj.large, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+const obj4 = { width: obj.large, height: obj.large, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+obj.placeholder = { borderRadius: require("_createForOfIteratorHelperLoose").radii.none, tintColor: require("_createForOfIteratorHelperLoose").colors.ICON_MUTED };
+const obj6 = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, overflow: "hidden" };
+obj.entityWrapper = obj6;
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
 GameIcon.Sizes = obj;
-const obj6 = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/game_detection/native/GameIcon.tsx");
+const obj5 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.none, tintColor: require("_createForOfIteratorHelperLoose").colors.ICON_MUTED };
+const result = require("GuildFeatures").fileFinishedImporting("modules/game_detection/native/GameIcon.tsx");
 
 export default GameIcon;
 export const GameIconSizes = obj;

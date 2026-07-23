@@ -1,52 +1,62 @@
-// Module ID: 6704
-// Function ID: 52028
+// Module ID: 6709
+// Function ID: 52060
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 57, 6, 7, 4808, 1348, 6710, 3, 4807, 1882, 6716, 6719, 1883, 2]
 
-// Module 6704 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6709 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import timestamp from "timestamp";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "_defineProperties";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +67,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,20 +96,12 @@ function _arrayLikeToArray(arg0, arg1) {
 function isLikelyNotDelta(author) {
   return null != author.author && null != author.content && null != author.mentions && null != author.timestamp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let importDefaultResult = importDefault(dependencyMap[7]);
 importDefaultResult = new importDefaultResult("Messages");
-const tmp4 = () => {
+let tmp4 = (() => {
   class ChannelHistory {
     constructor(arg0) {
       self = this;
-      tmp = closure_5(this, ChannelHistory);
+      tmp = outer1_5(this, connectionId);
       this.connectionId = null;
       this.users = [];
       this.members = [];
@@ -110,11 +112,10 @@ const tmp4 = () => {
         if (null != first) {
           connectionId = first.connectionId;
         }
-        ChannelHistory = connectionId;
-        tmp3 = ChannelHistory;
-        tmp4 = closure_4;
+        tmp3 = connectionId;
+        tmp4 = outer1_4;
         num = 2;
-        tmp5 = closure_4(ChannelHistory.computeUsersAndMembers(arg0), 2);
+        tmp5 = outer1_4(connectionId.computeUsersAndMembers(arg0), 2);
         num2 = 1;
         everyResult = arg0.length > 0;
         [tmp6, tmp7] = tmp5;
@@ -131,16 +132,15 @@ const tmp4 = () => {
       return;
     }
   }
-  const arg1 = ChannelHistory;
   let obj = {
     key: "computeUsersAndMembers",
     value(messages) {
       let done;
       const self = this;
-      const result = ChannelHistory(closure_2[8]).requireSortedDescending(messages);
+      const result = ChannelHistory(outer1_2[8]).requireSortedDescending(messages);
       const map = new Map();
       const map1 = new Map();
-      const tmp2 = callback3(messages);
+      const tmp2 = outer1_12(messages);
       let iter = tmp2();
       if (!iter.done) {
         do {
@@ -156,12 +156,12 @@ const tmp4 = () => {
       return items;
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "addIntoMap",
     value(get) {
       let iter2;
-      const tmp = callback3(arg1);
+      const tmp = outer1_12(arg1);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -183,13 +183,14 @@ const tmp4 = () => {
     }
   };
   items[1] = obj;
-  return callback2(ChannelHistory, null, items);
-}();
-let tmp5 = () => {
+  return callback(ChannelHistory, null, items);
+})();
+let closure_11 = tmp4;
+let tmp5 = (() => {
   class Messages {
     constructor() {
-      f52071 = this;
-      tmp = closure_5(this, Messages);
+      self = this;
+      tmp = outer1_5(this, Messages);
       this.actions = {
         CHANNEL_DELETE(arg0, arg1) {
               return self.handleChannelDelete(arg0, arg1);
@@ -219,34 +220,33 @@ let tmp5 = () => {
       return;
     }
   }
-  const callback = Messages;
   let obj = { key: "startupLoad" };
-  let closure_2 = callback(async (arg0, arg1, arg2, arg3) => {
-    const obj = callback(closure_2[9]);
-    const messagesResult = callback(closure_2[9]).messages(arg0);
-    const tmp = yield callback(closure_2[9]).messages(arg0).getLatest(arg1, arg2, arg3);
-    return new closure_11(yield callback(closure_2[9]).messages(arg0).getLatest(arg1, arg2, arg3));
+  let closure_2 = Messages(async (arg0, arg1, arg2, arg3) => {
+    const obj = callback(table[9]);
+    const messagesResult = callback(table[9]).messages(arg0);
+    const tmp = yield callback(table[9]).messages(arg0).getLatest(arg1, arg2, arg3);
+    return new outer2_11(yield callback(table[9]).messages(arg0).getLatest(arg1, arg2, arg3));
   });
-  obj.value = function startupLoad(arg0, guildId, channelId, arg3) {
-    return callback3(...arguments);
+  obj.value = function startupLoad(arg0, guildId, channelId, outer2_14) {
+    return dependencyMap(...arguments);
   };
   const items = [obj, , , , , , , , , , , , , , , , , , ];
   obj = { key: "load" };
-  let closure_1 = callback(async (arg0, arg1, arg2) => {
-    const basicChannel = basicChannel.getBasicChannel(arg1);
+  let closure_1 = Messages(async (arg0, arg1, arg2) => {
+    const basicChannel = outer2_8.getBasicChannel(arg1);
     if (null != arg1) {
       if (null != basicChannel) {
         if (obj.isReadableChannel(basicChannel)) {
-          const obj2 = callback2(closure_2[9]);
-          const tmp9 = yield callback2(closure_2[9]).messages(arg0).getLatest(basicChannel.guild_id, arg1, arg2);
-          const prototype = ctor.prototype;
-          const tmp14 = new ctor(tmp9);
+          const obj2 = callback2(1882);
+          const tmp9 = yield callback2(1882).messages(arg0).getLatest(basicChannel.guild_id, arg1, arg2);
+          const prototype = outer2_11.prototype;
+          const tmp14 = new outer2_11(tmp9);
           return tmp14;
         }
-        const obj = callback(closure_2[10]);
+        obj = callback(6716);
       }
     }
-    return new ctor([]);
+    return new outer2_11([]);
   });
   obj.value = function load() {
     return callback2(...arguments);
@@ -264,7 +264,7 @@ let tmp5 = () => {
         if (obj.isReadableChannelId(optimistic.channelId)) {
           self.upsertOne(optimistic.guildId, optimistic.channelId, optimistic.message, arg1);
         }
-        const obj = callback(closure_2[10]);
+        obj = callback(6716);
       }
     }
   };
@@ -275,11 +275,11 @@ let tmp5 = () => {
       const self = this;
       let isReadableChannelIdResult = null != message.message.id && null != message.message.channel_id;
       if (isReadableChannelIdResult) {
-        isReadableChannelIdResult = callback(closure_2[10]).isReadableChannelId(message.message.channel_id);
-        const obj = callback(closure_2[10]);
+        isReadableChannelIdResult = callback(6716).isReadableChannelId(message.message.channel_id);
+        const obj = callback(6716);
       }
       if (isReadableChannelIdResult) {
-        if (callback6(message.message)) {
+        if (outer1_14(message.message)) {
           self.upsertOne(message.guildId, message.message.channel_id, message.message, arg1);
         } else {
           self.updateOne(message.guildId, message.message.channel_id, message.message, arg1);
@@ -292,14 +292,14 @@ let tmp5 = () => {
     value(messages) {
       let iter2;
       const self = this;
-      const tmp = callback5(messages.messages);
+      const tmp = outer1_12(messages.messages);
       let iter = tmp();
       if (!iter.done) {
         do {
           let value = iter.value;
-          let tmp2 = closure_0;
-          let tmp3 = closure_2;
-          let obj = closure_0(closure_2[10]);
+          let tmp2 = callback;
+          let tmp3 = dependencyMap;
+          let obj = callback(6716);
           if (obj.isReadableChannelId(value.channel_id)) {
             let tmp4 = self;
             let tmp5 = value;
@@ -316,7 +316,7 @@ let tmp5 = () => {
     key: "handleLoadMessagesSuccess",
     value(channelId) {
       const self = this;
-      const basicChannel = basicChannel.getBasicChannel(channelId.channelId);
+      const basicChannel = outer1_8.getBasicChannel(channelId.channelId);
       if (null != basicChannel) {
         if (obj.isReadableChannelId(channelId.channelId)) {
           if (!channelId.isAfter) {
@@ -330,7 +330,7 @@ let tmp5 = () => {
           }
           self.upsertMany(basicChannel.guild_id, channelId.channelId, channelId.messages, arg1);
         }
-        const obj = callback(closure_2[10]);
+        obj = callback(6716);
       }
     }
   };
@@ -348,7 +348,7 @@ let tmp5 = () => {
     value(ids) {
       let done;
       const self = this;
-      const tmp = callback5(ids.ids);
+      const tmp = outer1_12(ids.ids);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -386,37 +386,37 @@ let tmp5 = () => {
   items[11] = {
     key: "insertStale",
     value(arg0, arg1, arg2, arg3) {
-      const obj = callback2(closure_2[9]);
-      const result = closure_7.lastTimeConnectedChanged();
-      const KvMessage = callback(closure_2[11]).KvMessage;
-      const messagesTransactionResult = callback2(closure_2[9]).messagesTransaction(arg3);
-      messagesTransactionResult.put(arg0, arg1, KvMessage.fromMessage(arg0, arg1, arg2, result), callback(closure_2[12]).ConflictOptions.Skip);
+      const obj = callback2(1882);
+      const result = outer1_7.lastTimeConnectedChanged();
+      const KvMessage = callback(6719).KvMessage;
+      const messagesTransactionResult = callback2(1882).messagesTransaction(arg3);
+      messagesTransactionResult.put(arg0, arg1, KvMessage.fromMessage(arg0, arg1, arg2, result), callback(1883).ConflictOptions.Skip);
     }
   };
   items[12] = {
     key: "upsertOne",
     value(items, limit) {
-      const messagesTransactionResult = callback2(closure_2[9]).messagesTransaction(arg3);
-      const result = closure_7.lastTimeConnectedChanged();
-      const KvMessage = callback(closure_2[11]).KvMessage;
-      const obj = callback2(closure_2[9]);
-      messagesTransactionResult.put(items, limit, KvMessage.fromMessage(items, limit, arg2, result), callback(closure_2[12]).ConflictOptions.Replace);
-      messagesTransactionResult.trimChannel(items, limit, closure_9.saveLimit(limit));
+      const messagesTransactionResult = callback2(1882).messagesTransaction(arg3);
+      const result = outer1_7.lastTimeConnectedChanged();
+      const KvMessage = callback(6719).KvMessage;
+      const obj = callback2(1882);
+      messagesTransactionResult.put(items, limit, KvMessage.fromMessage(items, limit, arg2, result), callback(1883).ConflictOptions.Replace);
+      messagesTransactionResult.trimChannel(items, limit, outer1_9.saveLimit(limit));
     }
   };
   items[13] = {
     key: "upsertMany",
     value(items, limit) {
       let done;
-      const messagesTransactionResult = callback2(closure_2[9]).messagesTransaction(arg3);
-      const result = closure_7.lastTimeConnectedChanged();
-      const tmp2 = callback5(arg2);
+      const messagesTransactionResult = callback2(1882).messagesTransaction(arg3);
+      const result = outer1_7.lastTimeConnectedChanged();
+      const tmp2 = outer1_12(arg2);
       let iter = tmp2();
       if (!iter.done) {
         do {
-          let tmp3 = closure_0;
-          let tmp4 = closure_2;
-          let KvMessage = closure_0(closure_2[11]).KvMessage;
+          let tmp3 = callback;
+          let tmp4 = dependencyMap;
+          let KvMessage = callback(6719).KvMessage;
           let tmp5 = KvMessage;
           let tmp6 = items;
           let tmp7 = limit;
@@ -427,7 +427,7 @@ let tmp5 = () => {
           done = iter2.done;
         } while (!done);
       }
-      messagesTransactionResult.trimChannel(items, limit, closure_9.saveLimit(limit));
+      messagesTransactionResult.trimChannel(items, limit, outer1_9.saveLimit(limit));
     }
   };
   items[14] = {
@@ -435,36 +435,36 @@ let tmp5 = () => {
     value(items, limit, arr) {
       let closure_0 = items;
       const callback2 = limit;
-      const messagesTransactionResult = callback2(closure_2[9]).messagesTransaction(arg3);
-      closure_2 = closure_7.lastTimeConnectedChanged();
-      const saveLimitResult = closure_9.saveLimit(limit);
+      const messagesTransactionResult = callback2(1882).messagesTransaction(arg3);
+      const dependencyMap = outer1_7.lastTimeConnectedChanged();
+      const saveLimitResult = outer1_9.saveLimit(limit);
       let substr = arr;
       if (arr.length > saveLimitResult) {
         substr = arr.slice(arr.length - saveLimitResult);
       }
       messagesTransactionResult.replaceChannel(items, limit, substr.map((arg0) => {
-        const KvMessage = arg0(closure_2[11]).KvMessage;
-        return KvMessage.fromMessage(arg0, arg1, arg0, closure_2);
+        const KvMessage = items(table[11]).KvMessage;
+        return KvMessage.fromMessage(items, closure_1, arg0, table);
       }));
-      messagesTransactionResult.trimChannel(items, limit, closure_9.saveLimit(limit));
+      messagesTransactionResult.trimChannel(items, limit, outer1_9.saveLimit(limit));
     }
   };
   const obj13 = { key: "updateOne" };
-  let closure_0 = callback(async (arg0, arg1, arg2, arg3) => {
+  let closure_0 = Messages(async (arg0, arg1, arg2, arg3) => {
     if (null != arg2.id) {
-      let obj = callback2(closure_2[9]);
+      let obj = callback2(1882);
       const messagesResult = obj.messages(arg3.database);
       const tmp6 = yield messagesResult.get(arg0, arg1, arg2.id);
-      const result = closure_7.lastTimeConnectedChanged();
+      const result = outer2_7.lastTimeConnectedChanged();
       if (null != tmp6) {
-        const KvMessage = callback(closure_2[11]).KvMessage;
+        const KvMessage = callback(6719).KvMessage;
         obj = {};
         const merged = Object.assign(tmp6.message);
         const merged1 = Object.assign(arg2);
         messagesResult.put(arg0, arg1, KvMessage.fromMessage(arg0, arg1, obj, result));
       }
     } else {
-      closure_10.warn("updateOne: message.id is null; cannot update a message if we do not know its id.");
+      outer2_10.warn("updateOne: message.id is null; cannot update a message if we do not know its id.");
     }
   });
   obj13.value = function updateOne(guildId, channel_id, message, arg3) {
@@ -474,28 +474,28 @@ let tmp5 = () => {
   items[16] = {
     key: "deleteOne",
     value(arg0, arg1, arg2, arg3) {
-      const obj = callback2(closure_2[9]);
-      callback2(closure_2[9]).messagesTransaction(arg3).deleteMessage(arg0, arg1, arg2);
+      const obj = callback2(1882);
+      callback2(1882).messagesTransaction(arg3).deleteMessage(arg0, arg1, arg2);
     }
   };
   items[17] = {
     key: "deleteChannel",
     value(arg0, arg1, arg2) {
-      const obj = callback2(closure_2[9]);
-      callback2(closure_2[9]).messagesTransaction(arg2).deleteChannel(arg0, arg1);
+      const obj = callback2(1882);
+      callback2(1882).messagesTransaction(arg2).deleteChannel(arg0, arg1);
     }
   };
   items[18] = {
     key: "deleteGuild",
     value(arg0, arg1) {
-      const obj = callback2(closure_2[9]);
-      callback2(closure_2[9]).messagesTransaction(arg1).deleteGuild(arg0);
+      const obj = callback2(1882);
+      callback2(1882).messagesTransaction(arg1).deleteGuild(arg0);
     }
   };
-  return callback2(Messages, items);
-}();
+  return callback(Messages, items);
+})();
 tmp5 = new tmp5();
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_database/modules/Messages.tsx");
+let result = require("_classCallCheck").fileFinishedImporting("modules/app_database/modules/Messages.tsx");
 
 export default tmp5;
 export const ChannelHistory = tmp4;

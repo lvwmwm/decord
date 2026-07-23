@@ -1,27 +1,38 @@
-// Module ID: 16011
-// Function ID: 122827
+// Module ID: 16128
+// Function ID: 125000
 // Name: _shouldSkipContactSyncStep
-// Dependencies: []
+// Dependencies: [5, 27, 14743, 4812, 1849, 653, 11707, 4344, 11709, 477, 8481, 686, 1457, 11712, 3981, 16129, 4337, 1198, 11781, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 16011 (_shouldSkipContactSyncStep)
+// Module 16128 (_shouldSkipContactSyncStep)
+import importDefaultResult from "ME";
+import { NativeModules } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { ContactPermissions } from "ContactSyncLandingPage";
+import { NotificationAuthorizationStatus as closure_11 } from "NativePermissionStatus";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 function _shouldSkipContactSyncStep() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = importDefaultResult(tmp);
-  const _shouldSkipContactSyncStep = obj;
   return obj(...arguments);
 }
 function lastStepComplete(STEP_GUILD_TEMPLATE) {
-  arg1(dependencyMap[13]).trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
-  const obj = arg1(dependencyMap[13]);
-  if (obj2.isModalOpen(arg1(dependencyMap[15]).NEW_USER_MODAL_KEY)) {
-    importDefault(dependencyMap[16]).popWithKey(arg1(dependencyMap[15]).NEW_USER_MODAL_KEY);
-    const obj3 = importDefault(dependencyMap[16]);
+  require(11712) /* trackNUFStep */.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
+  const obj = require(11712) /* trackNUFStep */;
+  if (obj2.isModalOpen(require(16129) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY)) {
+    importDefault(4337).popWithKey(require(16129) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY);
+    const obj3 = importDefault(4337);
   }
-  const obj2 = arg1(dependencyMap[14]);
-  arg1(dependencyMap[17]).transitionTo(constants.ME, { navigationReplace: true });
-  const obj4 = arg1(dependencyMap[17]);
-  const result = arg1(dependencyMap[18]).setNewUserFlowCompleted();
+  obj2 = require(3981) /* _createForOfIteratorHelperLoose */;
+  require(1198) /* shouldNavigate */.transitionTo(constants.ME, { navigationReplace: true });
+  const obj4 = require(1198) /* shouldNavigate */;
+  const result = require(11781) /* setNewUser */.setNewUserFlowCompleted();
 }
 function getNextOnboardingStep(arg0, first1, first) {
   return _getNextOnboardingStep(...arguments);
@@ -29,21 +40,13 @@ function getNextOnboardingStep(arg0, first1, first) {
 function _getNextOnboardingStep() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = importDefaultResult(tmp);
-  const _getNextOnboardingStep = obj;
   return obj(...arguments);
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ PlatformTypes: closure_8, Routes: closure_9 } = arg1(dependencyMap[5]));
-const ContactPermissions = arg1(dependencyMap[6]).ContactPermissions;
-let closure_11 = arg1(dependencyMap[7]).NotificationAuthorizationStatus;
+({ PlatformTypes: closure_8, Routes: closure_9 } = ME);
 let obj = {
   key: "choose-avatar",
   shouldShowStep() {
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let avatar;
     if (null != currentUser) {
       avatar = currentUser.avatar;
@@ -63,7 +66,7 @@ let closure_13 = importDefaultResult("contact-sync");
 obj.shouldShowStep = function() {
   return callback2(...arguments);
 };
-const items = [
+let items = [
   obj,
   obj,
   {
@@ -79,7 +82,13 @@ const items = [
       return shouldShowGuardianConnect.getShouldShowGuardianConnect();
     }
   },
-
+  {
+    key: "accept-invite",
+    shouldShowStep: require("showInstantInviteActionSheet").hasDeferredInvite,
+    transitionStep() {
+      importDefault(686).dispatch({ type: "DEFERRED_INVITE_SHOW" });
+    }
+  }
 ];
 const obj1 = {
   key: "discoverability",
@@ -87,28 +96,20 @@ const obj1 = {
     return true;
   }
 };
-const obj2 = {
+let obj2 = {
   key: "connect-guardian",
   shouldShowStep() {
     return shouldShowGuardianConnect.getShouldShowGuardianConnect();
   }
 };
-const tmp3 = arg1(dependencyMap[5]);
-items[5] = {
+let obj3 = {
   key: "accept-invite",
-  shouldShowStep: arg1(dependencyMap[10]).hasDeferredInvite,
+  shouldShowStep: require("showInstantInviteActionSheet").hasDeferredInvite,
   transitionStep() {
-    importDefault(dependencyMap[11]).dispatch({ type: "DEFERRED_INVITE_SHOW" });
+    importDefault(686).dispatch({ type: "DEFERRED_INVITE_SHOW" });
   }
 };
-const obj3 = {
-  key: "accept-invite",
-  shouldShowStep: arg1(dependencyMap[10]).hasDeferredInvite,
-  transitionStep() {
-    importDefault(dependencyMap[11]).dispatch({ type: "DEFERRED_INVITE_SHOW" });
-  }
-};
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/nuf/native/NewUserUtils.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/nuf/native/NewUserUtils.tsx");
 
 export const getKeyForOnboardingStep = function getKeyForOnboardingStep(onboardingStepIndex) {
   let key;
@@ -118,6 +119,7 @@ export const getKeyForOnboardingStep = function getKeyForOnboardingStep(onboardi
   return key;
 };
 export const continueToNextStep = function continueToNextStep(onboardingStepIndex, current) {
+  let closure_0 = current;
   let key;
   if (null != items[onboardingStepIndex]) {
     key = tmp.key;
@@ -125,17 +127,17 @@ export const continueToNextStep = function continueToNextStep(onboardingStepInde
   if (null !== key) {
     current.navigate(key, {});
     const _setTimeout = setTimeout;
-    const timerId = setTimeout((arg0, self) => {
-      const state = self.getState();
+    const timerId = setTimeout(() => {
+      const state = current.getState();
       const routes = state.routes;
       if (2 === routes.length) {
         const items = [routes[1]];
-        const CommonActions = self(closure_2[12]).CommonActions;
+        const CommonActions = current(outer1_2[12]).CommonActions;
         const obj = {};
         const merged = Object.assign(state);
         obj["routes"] = items;
         obj["index"] = 0;
-        self.dispatch(CommonActions.reset(obj));
+        current.dispatch(CommonActions.reset(obj));
       }
     }, 500);
   }

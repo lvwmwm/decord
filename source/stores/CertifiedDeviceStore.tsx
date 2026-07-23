@@ -1,9 +1,17 @@
-// Module ID: 4197
-// Function ID: 36060
+// Module ID: 4201
+// Function ID: 36092
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4191, 587, 22, 566, 686, 2]
 
-// Module 4197 (_isNativeReflectConstruct)
+// Module 4201 (_isNativeReflectConstruct)
+import Storage from "Storage";
+import apply from "apply";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { DeviceTypes } from "DesktopSources";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,46 +23,40 @@ function _isNativeReflectConstruct() {
 }
 function getOrElse(arg0, arg1, arg2) {
   let tmp = arg1;
-  if (null != closure_10[arg0]) {
+  if (null != table2[arg0]) {
     tmp = arg2(tmp2);
   }
   return tmp;
 }
 function updateDevicesForApplication(applicationId, devices) {
-  if (null != closure_9[applicationId]) {
+  if (null != table[applicationId]) {
     const item = arr.forEach((id) => {
-      delete r1[r0];
+      delete tmp2[tmp];
       return id.id;
     });
   }
-  closure_9[applicationId] = devices;
+  table[applicationId] = devices;
   const item1 = devices.forEach((id) => {
-    closure_10[id.id] = id;
+    outer1_10[id.id] = id;
     return id;
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const DeviceTypes = arg1(dependencyMap[5]).DeviceTypes;
 let closure_9 = {};
 let closure_10 = {};
-let closure_11 = 0;
-let tmp2 = (Store) => {
+let c11 = 0;
+let tmp2 = ((Store) => {
   class CertifiedDeviceStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, CertifiedDeviceStore);
-      obj = closure_6(CertifiedDeviceStore);
-      tmp2 = closure_5;
-      if (closure_12()) {
+      tmp = outer1_3(this, CertifiedDeviceStore);
+      obj = outer1_6(CertifiedDeviceStore);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -63,23 +65,22 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = CertifiedDeviceStore;
   callback2(CertifiedDeviceStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const Storage = CertifiedDeviceStore(closure_2[6]).Storage;
+      const Storage = CertifiedDeviceStore(outer1_2[6]).Storage;
       const value = Storage.get("CertifiedDeviceStore");
       if (null != value) {
-        const item = callback(closure_2[7]).forEach(value, (arr) => {
+        let item = outer1_1(outer1_2[7]).forEach(value, (arr) => {
           const item = arr.forEach((type) => {
             if (tmp) {
               type.hardwareMute = false;
             }
           });
-          callback(arg1, arr);
+          outer2_14(arg1, arr);
         });
-        const arr = callback(closure_2[7]);
+        const arr = outer1_1(outer1_2[7]);
       }
     }
   };
@@ -87,14 +88,14 @@ let tmp2 = (Store) => {
   obj = {
     key: "isCertified",
     value(arg0) {
-      return null != closure_10[arg0];
+      return null != outer1_10[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getCertifiedDevice",
     value(arg0) {
-      return closure_10[arg0];
+      return outer1_10[arg0];
     }
   };
   items[2] = obj;
@@ -113,63 +114,63 @@ let tmp2 = (Store) => {
   items[4] = {
     key: "getCertifiedDeviceByType",
     value(arg0) {
-      const CertifiedDeviceStore = arg0;
-      return callback(closure_2[7]).find(closure_10, (type) => type.type === type);
+      let closure_0 = arg0;
+      return outer1_1(outer1_2[7]).find(outer1_10, (type) => type.type === closure_0);
     }
   };
   items[5] = {
     key: "isHardwareMute",
     value(arg0) {
-      return callback5(arg0, false, (type) => type.type === constants.AUDIO_INPUT && type.hardwareMute);
+      return outer1_13(arg0, false, (type) => type.type === outer2_8.AUDIO_INPUT && type.hardwareMute);
     }
   };
   items[6] = {
     key: "hasEchoCancellation",
     value(arg0) {
-      return callback5(arg0, false, (type) => type.type === constants.AUDIO_INPUT && type.echoCancellation);
+      return outer1_13(arg0, false, (type) => type.type === outer2_8.AUDIO_INPUT && type.echoCancellation);
     }
   };
   items[7] = {
     key: "hasNoiseSuppression",
     value(arg0) {
-      return callback5(arg0, false, (type) => type.type === constants.AUDIO_INPUT && type.noiseSuppression);
+      return outer1_13(arg0, false, (type) => type.type === outer2_8.AUDIO_INPUT && type.noiseSuppression);
     }
   };
   items[8] = {
     key: "hasAutomaticGainControl",
     value(arg0) {
-      return callback5(arg0, false, (type) => type.type === constants.AUDIO_INPUT && type.automaticGainControl);
+      return outer1_13(arg0, false, (type) => type.type === outer2_8.AUDIO_INPUT && type.automaticGainControl);
     }
   };
   items[9] = {
     key: "getVendor",
     value(arg0) {
-      return callback5(arg0, null, (vendor) => vendor.vendor);
+      return outer1_13(arg0, null, (vendor) => vendor.vendor);
     }
   };
   items[10] = {
     key: "getModel",
     value(arg0) {
-      return callback5(arg0, null, (model) => model.model);
+      return outer1_13(arg0, null, (model) => model.model);
     }
   };
   items[11] = {
     key: "getRevision",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   return callback(CertifiedDeviceStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "CertifiedDeviceStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CERTIFIED_DEVICES_SET: function handleSetCertifiedDevices(applicationId) {
     updateDevicesForApplication(applicationId.applicationId, applicationId.devices);
-    const Storage = arg1(dependencyMap[6]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     const result = Storage.set("CertifiedDeviceStore", closure_9);
     closure_11 = closure_11 + 1;
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("stores/CertifiedDeviceStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/CertifiedDeviceStore.tsx");
 
 export default tmp2;

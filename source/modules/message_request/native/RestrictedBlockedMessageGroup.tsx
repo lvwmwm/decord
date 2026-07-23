@@ -1,41 +1,46 @@
-// Module ID: 15468
-// Function ID: 117975
+// Module ID: 15585
+// Function ID: 120149
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 15583, 689, 4660, 4126, 1212, 2]
 // Exports: default
 
-// Module 15468 (RestrictedBlockedMessageGroup)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { marginLeft: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET, marginVertical: importDefault(dependencyMap[6]).space.PX_8 };
-obj.toggle = obj;
-let closure_7 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/message_request/native/RestrictedBlockedMessageGroup.tsx");
+// Module 15585 (RestrictedBlockedMessageGroup)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginLeft: require("RESTRICTED_AVATAR_SIZE").RESTRICTED_CONTENT_INSET, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.toggle = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/message_request/native/RestrictedBlockedMessageGroup.tsx");
 
 export default function RestrictedBlockedMessageGroup(arg0) {
   let messages;
-  ({ messages, renderMessage: closure_0 } = arg0);
+  let require;
+  ({ messages, renderMessage: require } = arg0);
   const tmp2 = callback(React.useState(false), 2);
   let first = tmp2[0];
-  let closure_1 = tmp2[1];
+  const dependencyMap = tmp2[1];
   let obj = {};
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     callback2((arg0) => !arg0);
   }, []);
-  obj = { style: callback3().toggle, accessibilityRole: "button", accessibilityState: obj, onPress: callback };
+  obj = { style: _createForOfIteratorHelperLoose().toggle, accessibilityRole: "button", accessibilityState: obj, onPress: callback };
   obj = { expanded: first };
-  const obj1 = { cachedAt: "y", edpbxy: "isArray" };
-  const intl = arg1(closure_1[9]).intl;
-  obj1.children = intl.format(arg1(closure_1[9]).t.+FcYM/, { count: messages.length });
-  obj.children = callback2(arg1(closure_1[8]).Text, obj1);
-  const items = [callback2(arg1(closure_1[7]).PressableOpacity, obj), ];
+  const obj1 = { variant: "text-sm/medium", color: "text-muted" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.format(require(1212) /* getSystemLocale */.t["+FcYM/"], { count: messages.length });
+  obj.children = callback2(require(4126) /* Text */.Text, obj1);
+  const items = [callback2(require(4660) /* PressableBase */.PressableOpacity, obj), ];
   if (first) {
-    first = messages.map((id) => callback3(closure_4, { children: callback(id) }, id.id));
+    first = messages.map((id) => outer1_5(outer1_4, { children: callback(id) }, id.id));
   }
   items[1] = first;
   obj.children = items;

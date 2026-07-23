@@ -1,41 +1,40 @@
 // Module ID: 380
 // Function ID: 5666
 // Name: unstable_createAnimatedComponentWithAllowlist
-// Dependencies: []
+// Dependencies: [57, 29, 31, 33, 381, 325, 255]
 // Exports: default
 
 // Module 380 (unstable_createAnimatedComponentWithAllowlist)
+import _slicedToArray from "_slicedToArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import "result";
+import { useMemo } from "result";
+import { jsx } from "jsxProd";
+
 function unstable_createAnimatedComponentWithAllowlist(displayName, arg1) {
   const importDefault = displayName;
-  closure_1 = importDefault(closure_1[4])(arg1);
+  const dependencyMap = importDefault(381)(arg1);
   class AnimatedComponent {
     constructor(arg0) {
-      tmp = closure_3(arg1(closure_4(displayName, closure_2)), 2);
+      tmp = outer1_3(style(outer1_4(displayName, outer1_2)), 2);
       first = tmp[0];
       ({ passthroughAnimatedPropExplicitValues, style } = first);
-      displayName = style;
       style = undefined;
-      tmp3 = displayName(arg1[5])(tmp[1], displayName.ref);
+      tmp3 = closure_0(closure_1[5])(tmp[1], displayName.ref);
       if (null != passthroughAnimatedPropExplicitValues) {
         style = passthroughAnimatedPropExplicitValues.style;
       }
-      arg1 = style;
       items = [, ];
       items[0] = style;
       items[1] = style;
-      obj = { style: closure_5(() => style(style[6])(style, style), items), ref: tmp3 };
-      return closure_6(displayName, Object.assign({}, first, passthroughAnimatedPropExplicitValues, obj));
+      obj = { style: outer1_5(() => style(style2[6])(style, style), items), ref: tmp3 };
+      return outer1_6(style, Object.assign({}, first, passthroughAnimatedPropExplicitValues, obj));
     }
   }
   AnimatedComponent.displayName = "Animated(" + displayName.displayName || "Anonymous" + ")";
   return AnimatedComponent;
 }
-let closure_2 = [];
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-importAll(dependencyMap[2]);
-const useMemo = arg1(dependencyMap[2]).useMemo;
-const jsx = arg1(dependencyMap[3]).jsx;
+let closure_2 = ["ref"];
 
 export default function createAnimatedComponent(displayName) {
   return unstable_createAnimatedComponentWithAllowlist(displayName, null);

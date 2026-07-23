@@ -1,25 +1,26 @@
-// Module ID: 4328
-// Function ID: 38207
+// Module ID: 4332
+// Function ID: 38239
 // Name: hasPendingMemberAction
-// Dependencies: []
+// Dependencies: [1348, 1917, 1838, 4333, 4334, 653, 3746, 4335, 1360, 2]
 // Exports: hasPendingMemberAction
 
-// Module 4328 (hasPendingMemberAction)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const GuildFeatures = arg1(dependencyMap[5]).GuildFeatures;
-const GuildMemberFlags = arg1(dependencyMap[6]).GuildMemberFlags;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_onboarding_home/hasPendingMemberAction.tsx");
+// Module 4332 (hasPendingMemberAction)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { GuildFeatures } from "ME";
+import { GuildMemberFlags } from "GuildMemberFlags";
+
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_onboarding_home/hasPendingMemberAction.tsx");
 
 export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, selectedChannelId) {
-  const guild = guild.getGuild(guild_id);
-  const channel = channel.getChannel(selectedChannelId);
+  guild = guild.getGuild(guild_id);
+  channel = channel.getChannel(selectedChannelId);
   let hasItem = null != guild && null != channel;
   if (hasItem) {
-    hasItem = importDefault(dependencyMap[7])(guild);
+    hasItem = importDefault(4335)(guild);
   }
   if (hasItem) {
     const features = guild.features;
@@ -27,7 +28,7 @@ export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, 
   }
   if (hasItem) {
     let flags;
-    const selfMember = selfMember.getSelfMember(guild.id);
+    selfMember = selfMember.getSelfMember(guild.id);
     if (null != selfMember) {
       flags = selfMember.flags;
     }
@@ -35,8 +36,8 @@ export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, 
     if (null != flags) {
       num3 = flags;
     }
-    hasItem = !importAll(dependencyMap[8]).hasFlag(num3, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
-    const obj = importAll(dependencyMap[8]);
+    hasItem = !importAll(1360).hasFlag(num3, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+    const obj = importAll(1360);
   }
   if (hasItem) {
     hasItem = closure_6.hasMemberAction(guild.id, channel.id);

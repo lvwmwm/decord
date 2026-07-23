@@ -1,29 +1,30 @@
-// Module ID: 12237
-// Function ID: 93897
+// Module ID: 12351
+// Function ID: 96048
 // Name: shouldShowVoiceChannelChangeConfirmation
-// Dependencies: []
+// Dependencies: [4144, 1280, 1194, 1838, 4146, 2]
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
-// Module 12237 (shouldShowVoiceChannelChangeConfirmation)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/channel/shouldShowVoiceChannelChangeConfirmation.tsx");
+// Module 12351 (shouldShowVoiceChannelChangeConfirmation)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel/shouldShowVoiceChannelChangeConfirmation.tsx");
 
 export const shouldShowVoiceChannelChangeConfirmation = function shouldShowVoiceChannelChangeConfirmation(id) {
   if (obj.disableVoiceChannelChangeAlert) {
     return false;
   } else {
-    const remoteSessionId = remoteSessionId.getRemoteSessionId();
+    remoteSessionId = remoteSessionId.getRemoteSessionId();
     if (null != closure_4.getVoiceStateForSession(id.getId(), remoteSessionId)) {
       return false;
     } else if (closure_4.isCurrentClientInVoiceChannel()) {
       if (closure_4.isInChannel(id.id)) {
         return false;
       } else {
-        const guild = guild.getGuild(id.getGuildId());
+        guild = guild.getGuild(id.getGuildId());
         let afkChannelId;
         if (null != guild) {
           afkChannelId = guild.afkChannelId;

@@ -1,24 +1,35 @@
-// Module ID: 10957
-// Function ID: 85228
+// Module ID: 10967
+// Function ID: 85277
 // Name: SelectionHeader
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 1906, 5188, 33, 4130, 689, 5186, 1212, 4543, 8425, 3848, 5165, 7497, 8524, 5160, 3843, 1557, 1450, 5084, 566, 4098, 5187, 5189, 2]
 // Exports: default
 
-// Module 10957 (SelectionHeader)
+// Module 10967 (SelectionHeader)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { ACTION_SHEET_START_HEIGHT_RATIO as closure_7 } from "ACTION_SHEET_START_HEIGHT_RATIO";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_8;
+let closure_9;
+const require = arg1;
 function SelectionHeader(renderIcon) {
+  let result;
+  let dependencyMap;
   let labelComponent;
   let onQueryChange;
   let selectButtonDisabled;
   let selectedOptions;
   let selectionActionComponent;
   renderIcon = renderIcon.renderIcon;
-  const arg1 = renderIcon;
   ({ selectionActionComponent, labelComponent, selectButtonDisabled, selectedOptions } = renderIcon);
-  const importDefault = selectedOptions;
-  ({ onPressOptionItem: closure_2, onRemoveOptionItem: closure_3, onQueryChange } = renderIcon);
-  const View = onQueryChange;
-  const tmp = callback2();
-  let closure_5 = tmp;
+  ({ onPressOptionItem: dependencyMap, onRemoveOptionItem: result, onQueryChange } = renderIcon);
+  let tmp = _createForOfIteratorHelperLoose();
+  let _isNativeReflectConstruct = tmp;
   let closure_6 = React.useRef(null);
   const items = [selectedOptions, tmp, renderIcon];
   const memo = React.useMemo(() => {
@@ -26,10 +37,10 @@ function SelectionHeader(renderIcon) {
     if (null != selectedOptions) {
       mapped = selectedOptions.map((id) => {
         let obj = { id: id.value, text: id.label };
-        obj = { style: closure_5.tagListIconWrapper };
-        obj = { style: closure_5.tagListIcon, children: callback(id) };
-        obj.children = callback2(closure_4, obj);
-        obj.icon = callback2(closure_4, obj);
+        obj = { style: outer1_5.tagListIconWrapper };
+        obj = { style: outer1_5.tagListIcon, children: outer1_0(id) };
+        obj.children = outer2_8(onQueryChange, obj);
+        obj.icon = outer2_8(onQueryChange, obj);
         return obj;
       });
     }
@@ -48,16 +59,16 @@ function SelectionHeader(renderIcon) {
     label = selectionActionComponent.placeholder;
   }
   if (null == label) {
-    const intl = arg1(dependencyMap[9]).intl;
-    label = intl.string(arg1(dependencyMap[9]).t.Otr6W2);
+    const intl = renderIcon(1212).intl;
+    label = intl.string(renderIcon(1212).t.Otr6W2);
   }
   obj.title = label;
   let formatToPlainStringResult;
   if (selectionActionComponent.maxValues > 1) {
     if (selectionActionComponent.minValues > 0) {
-      const intl2 = arg1(dependencyMap[9]).intl;
+      const intl2 = renderIcon(1212).intl;
       obj = { count: selectionActionComponent.minValues };
-      formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[9]).t.Jmwzdx, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(renderIcon(1212).t.Jmwzdx, obj);
     }
   }
   obj.subtitle = formatToPlainStringResult;
@@ -71,13 +82,13 @@ function SelectionHeader(renderIcon) {
     obj1.variant = str2;
     obj1.disabled = selectButtonDisabled;
     obj1.onPress = renderIcon.submitSelection;
-    const intl3 = arg1(dependencyMap[9]).intl;
-    obj1.text = intl3.string(arg1(dependencyMap[9]).t.XqMe3N);
-    tmp13Result = callback(arg1(dependencyMap[10]).Button, obj1);
+    const intl3 = renderIcon(1212).intl;
+    obj1.text = intl3.string(renderIcon(1212).t.XqMe3N);
+    tmp13Result = callback(renderIcon(4543).Button, obj1);
     const tmp13 = callback;
   }
   obj.trailing = tmp13Result;
-  const items1 = [callback(arg1(dependencyMap[8]).BottomSheetTitleHeader, obj), ];
+  const items1 = [callback(renderIcon(5186).BottomSheetTitleHeader, obj), ];
   let tmp19Result = null;
   if (null != onQueryChange) {
     tmp19Result = null;
@@ -86,7 +97,7 @@ function SelectionHeader(renderIcon) {
       let tmp23;
       if (tmp2) {
         if (0 !== memo.length) {
-          tmp23 = callback(View, {});
+          tmp23 = callback(onQueryChange, {});
         }
       }
       obj2.icon = tmp23;
@@ -97,19 +108,19 @@ function SelectionHeader(renderIcon) {
           tmp = selectedOptions[arg0];
         }
         if (null != tmp) {
-          null != closure_3 ? closure_3 : closure_2(arg0, tmp);
+          null != result ? result : closure_2(arg0, tmp);
         }
       };
       obj2.onChangeText = function onChangeText(arg0) {
         const current = ref.current;
         if (null != current) {
-          current.scrollTo({ <string:1667345620>: "absolute", <string:1638680913>: -1 });
+          current.scrollTo({ y: 0, animated: false });
         }
         onQueryChange(arg0);
       };
-      tmp19Result = callback(importDefault(dependencyMap[11]), obj2);
+      tmp19Result = callback(selectedOptions(8425), obj2);
       const tmp19 = callback;
-      const tmp22 = importDefault(dependencyMap[11]);
+      const tmp22 = selectedOptions(8425);
     }
   }
   items1[1] = tmp19Result;
@@ -118,9 +129,11 @@ function SelectionHeader(renderIcon) {
 }
 function SelectionOptionItem(item) {
   let clearable;
+  let dependencyMap;
   let disabled;
   let end;
   let iconContainerStyle;
+  let importDefault;
   let itemAccessibilityLabel;
   let multi;
   let renderDescription;
@@ -130,10 +143,9 @@ function SelectionOptionItem(item) {
   let skipIcon;
   let start;
   item = item.item;
-  const arg1 = item;
-  ({ onPressOptionItem: closure_1, selected, disabled, index: closure_2, itemAccessibilityLabel, renderDescription, renderOptionSuffix } = item);
+  ({ onPressOptionItem: importDefault, selected, disabled, index: dependencyMap, itemAccessibilityLabel, renderDescription, renderOptionSuffix } = item);
   ({ clearable, start, end, iconContainerStyle, skipIcon, multi, renderIcon } = item);
-  let obj = arg1(dependencyMap[12]);
+  let obj = item(3848);
   obj = {};
   let tmp2 = null != selected;
   if (tmp2) {
@@ -142,7 +154,7 @@ function SelectionOptionItem(item) {
   obj.checked = tmp2;
   obj.disabled = disabled;
   const checkboxA11yNative = obj.useCheckboxA11yNative(obj);
-  let obj2 = arg1(dependencyMap[12]);
+  let obj2 = item(3848);
   obj = {};
   let tmp4 = null != selected;
   if (tmp4) {
@@ -196,40 +208,33 @@ function SelectionOptionItem(item) {
       selected = false;
     }
     obj4.checked = selected;
-    let tmp19Result = callback(arg1(dependencyMap[14]).FormCheckbox, obj4);
+    let tmp19Result = callback(item(7497).FormCheckbox, obj4);
     const tmp19 = callback;
   } else {
     tmp19Result = null;
     if (true === selected) {
       const obj5 = { color: "text-brand" };
-      tmp19Result = callback(arg1(dependencyMap[15]).CheckmarkSmallBoldIcon, obj5);
+      tmp19Result = callback(item(8524).CheckmarkSmallBoldIcon, obj5);
     }
   }
   items1[1] = tmp19Result;
   obj3.children = items1;
   obj1.trailing = closure_10(View, obj3);
-  return callback(arg1(dependencyMap[13]).TableRow, obj1);
+  return callback(item(5165).TableRow, obj1);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).ACTION_SHEET_START_HEIGHT_RATIO;
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { width: importDefault(dependencyMap[7]).space.PX_32, alignItems: "center" };
-obj.selectionOptionItemIconWrapper = obj;
-const tmp2 = arg1(dependencyMap[5]);
-obj.tagListIconWrapper = { width: importDefault(dependencyMap[7]).space.PX_16, height: importDefault(dependencyMap[7]).space.PX_16 };
-const obj1 = { width: importDefault(dependencyMap[7]).space.PX_16, height: importDefault(dependencyMap[7]).space.PX_16 };
-const items = [{ scale: 0.75 }];
-obj.tagListIcon = { transform: items, top: -importDefault(dependencyMap[7]).space.PX_4, left: -importDefault(dependencyMap[7]).space.PX_4 };
-const obj2 = { transform: items, top: -importDefault(dependencyMap[7]).space.PX_4, left: -importDefault(dependencyMap[7]).space.PX_4 };
-obj.textInputWrapper = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_4, marginTop: importDefault(dependencyMap[7]).space.PX_16, marginHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-let closure_11 = obj.createStyles(obj);
-const obj3 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_4, marginTop: importDefault(dependencyMap[7]).space.PX_16, marginHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/interaction_components/native/components/SelectComponentActionSheet.tsx");
+({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: require("_createForOfIteratorHelperLoose").space.PX_32, alignItems: "center" };
+_createForOfIteratorHelperLoose.selectionOptionItemIconWrapper = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.tagListIconWrapper = { width: require("_createForOfIteratorHelperLoose").space.PX_16, height: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj1 = { width: require("_createForOfIteratorHelperLoose").space.PX_16, height: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let items = [{ scale: 0.75 }];
+_createForOfIteratorHelperLoose.tagListIcon = { transform: items, top: -require("_createForOfIteratorHelperLoose").space.PX_4, left: -require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj2 = { transform: items, top: -require("_createForOfIteratorHelperLoose").space.PX_4, left: -require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.textInputWrapper = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/interaction_components/native/components/SelectComponentActionSheet.tsx");
 
 export default function SelectComponentActionSheet(selectionActionComponent) {
   let expanded;
@@ -241,47 +246,36 @@ export default function SelectComponentActionSheet(selectionActionComponent) {
   let selectedOptions;
   let submitSelection;
   selectionActionComponent = selectionActionComponent.selectionActionComponent;
-  const arg1 = selectionActionComponent;
   const onPressOptionItem = selectionActionComponent.onPressOptionItem;
-  const importDefault = onPressOptionItem;
   const selectedCount = selectionActionComponent.selectedCount;
-  const dependencyMap = selectedCount;
   let renderIcon = selectionActionComponent.renderIcon;
-  const React = renderIcon;
   ({ renderHeaderIcon, iconContainerStyle } = selectionActionComponent);
-  const View = iconContainerStyle;
   const skipIcon = selectionActionComponent.skipIcon;
-  let channel = skipIcon;
   const renderDescription = selectionActionComponent.renderDescription;
-  let closure_6 = renderDescription;
   const renderOptionSuffix = selectionActionComponent.renderOptionSuffix;
-  let closure_7 = renderOptionSuffix;
   const options = selectionActionComponent.options;
   const itemStyle = selectionActionComponent.itemStyle;
   const isSelected = selectionActionComponent.isSelected;
   const itemAccessibilityLabel = selectionActionComponent.itemAccessibilityLabel;
-  let closure_11 = itemAccessibilityLabel;
   const channelId = selectionActionComponent.channelId;
-  const SelectionHeader = channelId;
   const allowEmpty = selectionActionComponent.allowEmpty;
-  const SelectionOptionItem = allowEmpty;
   ({ labelComponent, selectedOptions, onQueryChange, submitSelection, expanded, onRemoveOptionItem } = selectionActionComponent);
-  const effect = React.useEffect(() => {
+  const effect = renderIcon.useEffect(() => {
     const AccessibilityAnnouncer = selectionActionComponent(selectedCount[17]).AccessibilityAnnouncer;
     const intl = selectionActionComponent(selectedCount[9]).intl;
-    AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[9]).t.7gxe9o));
+    AccessibilityAnnouncer.announce(intl.string(selectionActionComponent(selectedCount[9]).t["7gxe9o"]));
   }, []);
-  const memo = React.useMemo(() => {
+  const memo = renderIcon.useMemo(() => {
     const safeAreaInsets = selectionActionComponent(selectedCount[18]).getSafeAreaInsets();
     const obj = selectionActionComponent(selectedCount[18]);
     return renderOptionSuffix * (selectionActionComponent(selectedCount[19]).getWindowDimensions().height - selectionActionComponent(selectedCount[20]).NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top);
   }, []);
-  let obj = arg1(dependencyMap[21]);
-  const items = [closure_6];
+  let obj = selectionActionComponent(selectedCount[21]);
+  const items = [renderDescription];
   const stateFromStores = obj.useStateFromStores(items, () => renderDescription.getChannelId());
-  channel = channel.getChannel(channelId);
+  const channel = skipIcon.getChannel(channelId);
   const items1 = [stateFromStores, channelId, channel];
-  const effect1 = React.useEffect(() => {
+  const effect1 = renderIcon.useEffect(() => {
     let isGuildVoiceResult = null != channel;
     if (isGuildVoiceResult) {
       isGuildVoiceResult = channel.isGuildVoice();
@@ -298,9 +292,9 @@ export default function SelectComponentActionSheet(selectionActionComponent) {
     }
   }, items1);
   const items2 = [selectionActionComponent];
-  const memo1 = React.useMemo(() => selectionActionComponent.maxValues > 1, items2);
+  const memo1 = renderIcon.useMemo(() => selectionActionComponent.maxValues > 1, items2);
   const items3 = [isSelected, memo1, allowEmpty, selectionActionComponent.maxValues, itemStyle, selectedCount, options.length, onPressOptionItem, renderIcon, iconContainerStyle, skipIcon, renderDescription, renderOptionSuffix, itemAccessibilityLabel];
-  const callback = React.useCallback((arg0) => {
+  const callback = renderIcon.useCallback((arg0) => {
     let index;
     let item;
     ({ item, index } = arg0);
@@ -337,7 +331,7 @@ export default function SelectComponentActionSheet(selectionActionComponent) {
     obj.multi = memo1;
     return options(allowEmpty, obj);
   }, items3);
-  obj = { scrollable: true, ref: React.useRef(null), startHeight: memo, startExpanded: expanded };
+  obj = { scrollable: true, ref: renderIcon.useRef(null), startHeight: memo, startExpanded: expanded };
   obj = { selectionActionComponent, labelComponent };
   if (selectedCount > selectionActionComponent.maxValues) {
     obj.selectButtonDisabled = tmp13;
@@ -358,7 +352,7 @@ export default function SelectComponentActionSheet(selectionActionComponent) {
       data: options,
       renderItem: callback
     };
-    const obj2 = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_16 + importDefault(dependencyMap[16])({ isKeyboardAwareOnAndroid: false }).insets.bottom };
+    const obj2 = { paddingHorizontal: onPressOptionItem(selectedCount[7]).space.PX_16, paddingBottom: onPressOptionItem(selectedCount[7]).space.PX_16 + onPressOptionItem(selectedCount[16])({ isKeyboardAwareOnAndroid: false }).insets.bottom };
     obj1.contentContainerStyle = obj2;
     obj1.keyboardShouldPersistTaps = "always";
     let str2 = "radiogroup";
@@ -366,7 +360,7 @@ export default function SelectComponentActionSheet(selectionActionComponent) {
       str2 = "none";
     }
     obj1.accessibilityRole = str2;
-    obj.children = options(arg1(dependencyMap[24]).BottomSheetFlatList, obj1);
+    obj.children = options(selectionActionComponent(selectedCount[24]).BottomSheetFlatList, obj1);
     return options(tmp10, obj);
   } else if (0 === selectedCount) {
     let tmp14 = !allowEmpty;

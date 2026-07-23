@@ -1,22 +1,23 @@
-// Module ID: 8523
-// Function ID: 67935
+// Module ID: 8529
+// Function ID: 67972
 // Name: useIsPremiumSubscriber
-// Dependencies: []
+// Dependencies: [1849, 1851, 566, 1872, 2]
 // Exports: useIsPremiumSubscriber
 
-// Module 8523 (useIsPremiumSubscriber)
-let closure_2 = importDefault(dependencyMap[0]);
-const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/useIsPremiumSubscriber.tsx");
+// Module 8529 (useIsPremiumSubscriber)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PremiumTypes } from "GuildFeatures";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/premium/useIsPremiumSubscriber.tsx");
 
 export const useIsPremiumSubscriber = function useIsPremiumSubscriber(TIER_2) {
   if (TIER_2 === undefined) {
     TIER_2 = PremiumTypes.TIER_2;
   }
-  const arg1 = TIER_2;
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
-    return TIER_2(closure_1[3]).isPremiumExactly(currentUser, TIER_2);
+  const items = [_isNativeReflectConstruct];
+  return TIER_2(566).useStateFromStores(items, () => {
+    const currentUser = outer1_2.getCurrentUser();
+    return TIER_2(outer1_1[3]).isPremiumExactly(currentUser, TIER_2);
   });
 };

@@ -1,13 +1,13 @@
-// Module ID: 11066
-// Function ID: 86108
+// Module ID: 11076
+// Function ID: 86158
 // Name: getInlineForwardOptions
-// Dependencies: []
+// Dependencies: [653, 4317, 2]
 // Exports: getInlineForwardOptions
 
-// Module 11066 (getInlineForwardOptions)
-const MessageReferenceTypes = require(dependencyMap[0]).MessageReferenceTypes;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/forwarding/getInlineForwardOptions.tsx");
+// Module 11076 (getInlineForwardOptions)
+import { MessageReferenceTypes } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/forwarding/getInlineForwardOptions.tsx");
 
 export const getInlineForwardOptions = function getInlineForwardOptions(message, nativeSyntheticEventData) {
   let embedIndex;
@@ -34,10 +34,10 @@ export const getInlineForwardOptions = function getInlineForwardOptions(message,
       const attachments = tmp5.attachments;
       const found = attachments.filter((filename) => {
         filename = filename.filename;
-        let isImageFileResult = callback(closure_1[1]).isImageFile(filename);
+        let isImageFileResult = outer1_0(outer1_1[1]).isImageFile(filename);
         if (!isImageFileResult) {
-          isImageFileResult = callback(closure_1[1]).isVideoFile(filename);
-          const obj2 = callback(closure_1[1]);
+          isImageFileResult = outer1_0(outer1_1[1]).isVideoFile(filename);
+          const obj2 = outer1_0(outer1_1[1]);
         }
         return isImageFileResult;
       });

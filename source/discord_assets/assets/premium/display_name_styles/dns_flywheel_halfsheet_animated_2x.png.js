@@ -1,11 +1,10 @@
-// Module ID: 15503
-// Function ID: 118295
+// Module ID: 15620
+// Function ID: 120468
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 15503 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/premium/display_name_styles/dns_flywheel_halfsheet_animated_2x.png.js");
+// Module 15620 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/premium/display_name_styles/dns_flywheel_halfsheet_animated_2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/4bfadf7b5fec1892fc18ec639d445be3d0209bc75e5f41c14da37e4779ea6722.png";
 export const metadata = { fileBytes: 259060 };

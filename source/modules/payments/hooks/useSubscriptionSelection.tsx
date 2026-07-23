@@ -1,13 +1,14 @@
-// Module ID: 8763
-// Function ID: 69279
+// Module ID: 8770
+// Function ID: 69320
 // Name: useSubscriptionSelection
-// Dependencies: []
+// Dependencies: [57, 31, 2]
 // Exports: default
 
-// Module 8763 (useSubscriptionSelection)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/payments/hooks/useSubscriptionSelection.tsx");
+// Module 8770 (useSubscriptionSelection)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/payments/hooks/useSubscriptionSelection.tsx");
 
 export default function useSubscriptionSelection() {
   let tmp2;

@@ -1,41 +1,42 @@
-// Module ID: 7008
-// Function ID: 56234
+// Module ID: 7013
+// Function ID: 56268
 // Name: createSessionData
-// Dependencies: []
+// Dependencies: [6, 7, 491, 2]
 
-// Module 7008 (createSessionData)
+// Module 7013 (createSessionData)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
 function createSessionData(channelId) {
-  const obj = { channelId, sessionId: arg1(dependencyMap[2]).v4() };
+  const obj = { channelId, sessionId: require(491) /* v1 */.v4() };
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let tmp2 = () => {
+let tmp2 = (() => {
   class ForumSessionAnalyticsManager {
     constructor() {
-      tmp = closure_2(this, ForumSessionAnalyticsManager);
+      tmp = outer1_2(this, ForumSessionAnalyticsManager);
       return;
     }
   }
-  const arg1 = ForumSessionAnalyticsManager;
   const items = [
     {
       key: "getForumChannelSessionId",
       value(arg0) {
         const self = this;
         if (null == this.session) {
-          self.session = callback2(arg0);
+          self.session = outer1_4(arg0);
         }
         if (self.session.channelId !== arg0) {
-          self.session = callback2(arg0);
+          self.session = outer1_4(arg0);
         }
         return self.session.sessionId;
       }
     }
   ];
   return callback(ForumSessionAnalyticsManager, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/forums/tracking/ForumSessionAnalyticsManager.tsx");
+const result = require("v1").fileFinishedImporting("modules/forums/tracking/ForumSessionAnalyticsManager.tsx");
 
 export default tmp2;

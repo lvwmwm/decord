@@ -1,10 +1,10 @@
-// Module ID: 9196
-// Function ID: 72032
+// Module ID: 9203
+// Function ID: 72073
 // Name: encodeTotpSecret
-// Dependencies: []
+// Dependencies: [27, 1553, 9204, 1184, 2]
 // Exports: captureWebAuthnException, encodeTotpSecretAsUrl, generateTotpSecret
 
-// Module 9196 (encodeTotpSecret)
+// Module 9203 (encodeTotpSecret)
 function encodeTotpSecret(totpSecret) {
   return totpSecret.replace(/[\s._-]+/g, "").toUpperCase();
 }
@@ -26,25 +26,24 @@ if (tmp5) {
 if (tmp5) {
   tmp5 = tmp4;
 }
-let tmp6 = null != require(dependencyMap[0]).NativeModules.DCDSecurityKeyManager;
+let tmp6 = null != require("get ActivityIndicator").NativeModules.DCDSecurityKeyManager;
 if (tmp6) {
-  const _module = require(dependencyMap[1]);
+  const _module = require("isMetaQuest");
   tmp6 = !_module.isMetaQuest();
 }
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("utils/MFAUtils.tsx");
+const result = require("encode").fileFinishedImporting("utils/MFAUtils.tsx");
 
 export const hasCrypto = tmp5;
 export const hasWebAuthn = tmp6;
 export const generateTotpSecret = function generateTotpSecret() {
   const uint8Array = new Uint8Array(20);
   const randomValues = _crypto.getRandomValues(uint8Array);
-  const obj = importDefault(dependencyMap[2]);
-  const str = importDefault(dependencyMap[2]).encode(randomValues);
-  const str2 = importDefault(dependencyMap[2]).encode(randomValues).toString("utf8");
-  const str3 = importDefault(dependencyMap[2]).encode(randomValues).toString("utf8").replace(/=/g, "");
-  const str4 = importDefault(dependencyMap[2]).encode(randomValues).toString("utf8").replace(/=/g, "").toLowerCase();
-  return importDefault(dependencyMap[2]).encode(randomValues).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim();
+  const obj = importDefault(9204);
+  const str = importDefault(9204).encode(randomValues);
+  const str2 = importDefault(9204).encode(randomValues).toString("utf8");
+  const str3 = importDefault(9204).encode(randomValues).toString("utf8").replace(/=/g, "");
+  const str4 = importDefault(9204).encode(randomValues).toString("utf8").replace(/=/g, "").toLowerCase();
+  return importDefault(9204).encode(randomValues).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim();
 };
 export { encodeTotpSecret };
 export const encodeTotpSecretAsUrl = function encodeTotpSecretAsUrl(arg0, totpSecret) {
@@ -57,7 +56,7 @@ export const encodeTotpSecretAsUrl = function encodeTotpSecretAsUrl(arg0, totpSe
   return "otpauth://totp/" + encodeURIResult + ":" + encodeURIResult1 + "?secret=" + encodeTotpSecret(totpSecret) + "&issuer=" + encodeURIComponent(str);
 };
 export const captureWebAuthnException = function captureWebAuthnException(message, tags) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(1184);
   obj = {};
   const merged = Object.assign(tags);
   obj = {};

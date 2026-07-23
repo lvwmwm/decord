@@ -1,33 +1,39 @@
 // Module ID: 1353
-// Function ID: 16251
+// Function ID: 16252
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1354, 566, 686, 2]
 
 // Module 1353 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { GuildScheduledEventPrivacyLevel as closure_5 } from "GUILD_EVENT_MAX_NAME_LENGTH";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
 function addStageInstancesForGuild(guild_id, items) {
   let obj = {};
-  obj = closure_6[guild_id];
+  obj = dependencyMap[guild_id];
   if (null == obj) {
     obj = {};
   }
   const merged = Object.assign(obj);
-  let closure_0 = obj;
   if (null != items) {
     const item = items.forEach((channel_id) => {
-      closure_7[channel_id.channel_id] = channel_id;
+      outer1_7[channel_id.channel_id] = channel_id;
       obj[channel_id.channel_id] = channel_id;
     });
   }
-  closure_6[guild_id] = obj;
+  dependencyMap[guild_id] = obj;
 }
 function handleStageInstanceCreateOrUpdate(instance) {
   instance = instance.instance;
@@ -35,39 +41,33 @@ function handleStageInstanceCreateOrUpdate(instance) {
   addStageInstancesForGuild(instance.guild_id, items);
 }
 function doDelete(guild_id, channel_id) {
-  delete r1[r3];
+  delete tmp[tmp2];
   if (null != guild_id) {
     let obj = {};
-    obj = closure_6[guild_id];
+    obj = dependencyMap[guild_id];
     if (null == obj) {
       obj = {};
     }
     const merged = Object.assign(obj);
-    delete r1[r3];
-    closure_6[guild_id] = obj;
+    delete tmp[tmp2];
+    dependencyMap[guild_id] = obj;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = arg1(dependencyMap[5]).GuildScheduledEventPrivacyLevel;
 let closure_6 = {};
 let closure_7 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class StageInstanceStore {
     constructor() {
       self = this;
       tmp = StageInstanceStore(this, StageInstanceStore);
-      obj = closure_3(StageInstanceStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(StageInstanceStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -76,13 +76,12 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = StageInstanceStore;
   callback2(StageInstanceStore, Store);
   let obj = {
     key: "getStageInstanceByChannel",
     value(arg0) {
       if (null != arg0) {
-        return closure_7[arg0];
+        return outer1_7[arg0];
       }
     }
   };
@@ -102,7 +101,7 @@ let tmp2 = (Store) => {
       if (null != stageInstanceByChannel) {
         privacy_level = stageInstanceByChannel.privacy_level;
       }
-      return privacy_level === constants.PUBLIC;
+      return privacy_level === outer1_5.PUBLIC;
     }
   };
   items[2] = obj;
@@ -112,7 +111,7 @@ let tmp2 = (Store) => {
       if (null == arg0) {
         let obj = {};
       } else {
-        obj = closure_6[arg0];
+        obj = outer1_6[arg0];
         if (null == obj) {
           obj = {};
         }
@@ -123,19 +122,19 @@ let tmp2 = (Store) => {
   items[4] = {
     key: "getAllStageInstances",
     value() {
-      return Object.values(closure_7);
+      return Object.values(outer1_7);
     }
   };
   return callback(StageInstanceStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "StageInstanceStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     guilds = guilds.guilds;
     let closure_6 = {};
     let closure_7 = {};
     const item = guilds.forEach((id) => {
-      callback(id.id, id.stage_instances);
+      outer1_9(id.id, id.stage_instances);
     });
   },
   GUILD_CREATE: function handleGuildCreate(guild) {
@@ -143,14 +142,14 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     addStageInstancesForGuild(guild.id, guild.stage_instances);
   },
   GUILD_DELETE: function handleGuildDelete(arg0) {
-    let obj = closure_6[arg0.guild.id];
+    let obj = dependencyMap[arg0.guild.id];
     if (null == obj) {
       obj = {};
     }
-    delete r1[r0];
+    delete tmp2[tmp];
     const keys = Object.keys(obj);
     const item = keys.forEach((arg0) => {
-      delete r1[r0];
+      delete tmp2[tmp];
     });
   },
   STAGE_INSTANCE_CREATE: handleStageInstanceCreateOrUpdate,
@@ -168,6 +167,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     let closure_6 = {};
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/stage_channels/StageInstanceStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stage_channels/StageInstanceStore.tsx");
 
 export default tmp2;

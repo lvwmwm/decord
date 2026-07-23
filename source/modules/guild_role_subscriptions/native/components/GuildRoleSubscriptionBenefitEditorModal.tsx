@@ -1,82 +1,85 @@
-// Module ID: 16331
-// Function ID: 126020
+// Module ID: 16448
+// Function ID: 128194
 // Name: DeleteButton
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 3767, 1849, 16447, 14094, 653, 33, 4130, 689, 5052, 12905, 4660, 4089, 1273, 1212, 1557, 16449, 4320, 7495, 16451, 7494, 16452, 2]
 
-// Module 16331 (DeleteButton)
+// Module 16448 (DeleteButton)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import resetImperatively from "resetImperatively";
+import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+import importDefaultResult from "createTextStyle";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_5;
+let closure_6;
+const require = arg1;
 function DeleteButton(onDelete) {
   const tmp = callback4();
   let obj = { style: items, accessibilityRole: "button", onPress: onDelete.onDelete };
-  const items = [importDefault(dependencyMap[13])().textInput, tmp.deleteButton];
-  obj = { style: tmp.deleteIcon, color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400, size: "custom" };
-  const items1 = [callback2(arg1(dependencyMap[15]).TrashIcon, obj), ];
+  items = [importDefault(12905)().textInput, tmp.deleteButton];
+  obj = { style: tmp.deleteIcon, color: importDefault(689).unsafe_rawColors.RED_400, size: "custom" };
+  const items1 = [callback2(require(4089) /* TrashIcon */.TrashIcon, obj), ];
   obj = { style: tmp.deleteLabel };
-  const intl = arg1(dependencyMap[17]).intl;
-  obj.children = intl.string(arg1(dependencyMap[17]).t.p4Bh7f);
-  items1[1] = callback2(arg1(dependencyMap[16]).LegacyText, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.p4Bh7f);
+  items1[1] = callback2(require(1273) /* Button */.LegacyText, obj);
   obj.children = items1;
-  return callback3(arg1(dependencyMap[14]).PressableOpacity, obj);
+  return callback3(require(4660) /* PressableBase */.PressableOpacity, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[3]));
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importAll(dependencyMap[6]);
-const tmp2 = arg1(dependencyMap[3]);
-({ GuildRoleSubscriptionBenefitTypes: closure_10, MAX_SUBSCRIPTION_BENEFIT_DESCRIPTION_LENGTH: closure_11, MAX_SUBSCRIPTION_BENEFIT_NAME_LENGTH: closure_12 } = arg1(dependencyMap[7]));
-const tmp3 = arg1(dependencyMap[7]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
-let obj1 = arg1(dependencyMap[10]);
+({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ GuildRoleSubscriptionBenefitTypes: closure_10, MAX_SUBSCRIPTION_BENEFIT_DESCRIPTION_LENGTH: closure_11, MAX_SUBSCRIPTION_BENEFIT_NAME_LENGTH: closure_12 } = MAX_SUBSCRIPTION_TIERS);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" };
 obj.container = obj;
 obj.scrollContainer = { flexGrow: 1 };
-obj.deleteButton = { <string:1268252674>: 800, <string:22413314>: 16, <string:16843009>: "100%", <string:16843009>: 296 };
-obj.deleteIcon = {};
-obj1 = {};
-const tmp4 = arg1(dependencyMap[9]);
-const merged = Object.assign(importDefault(dependencyMap[12])(arg1(dependencyMap[8]).Fonts.PRIMARY_SEMIBOLD, importDefault(dependencyMap[11]).unsafe_rawColors.RED_400, 16));
-obj1["marginStart"] = 8;
-obj1["lineHeight"] = 20;
-obj.deleteLabel = obj1;
-let closure_15 = obj1.createStyles(obj);
-const importDefaultResult = importDefault(dependencyMap[12]);
+obj.deleteButton = { flexDirection: "row", marginTop: 16, alignItems: "center", justifyContent: "center" };
+obj.deleteIcon = { width: 20, height: 20 };
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, 16));
+_createForOfIteratorHelperLoose["marginStart"] = 8;
+_createForOfIteratorHelperLoose["lineHeight"] = 20;
+obj.deleteLabel = _createForOfIteratorHelperLoose;
+let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj);
 const forwardRefResult = importAllResult.forwardRef((benefitType) => {
-  const arg1 = benefitType;
+  const _require = benefitType;
   function _handleSave() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = first1(tmp);
-    const _handleSave = obj;
     return obj(...arguments);
   }
   function _handleDelete() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = first1(tmp);
-    const _handleDelete = obj;
     return obj(...arguments);
   }
   const tmp = callback4();
-  const tmp2 = importDefault(dependencyMap[13])();
-  const tmp3 = callback(closure_9.useNameState(), 2);
-  const first = tmp3[0];
-  const importDefault = first;
+  const tmp2 = first(12905)();
+  const tmp3 = callback(resetImperatively.useNameState(), 2);
+  first = tmp3[0];
   const dependencyMap = tmp4;
-  const tmp5 = callback(closure_9.useEmojiIdState(), 2);
+  const tmp5 = callback(resetImperatively.useEmojiIdState(), 2);
   const first1 = tmp5[0];
-  let closure_3 = first1;
-  const callback = tmp5[1];
-  const tmp6 = callback(closure_9.useEmojiNameState(), 2);
+  callback = tmp5[1];
+  const tmp6 = callback(resetImperatively.useEmojiNameState(), 2);
   const first2 = tmp6[0];
   let closure_6 = tmp6[1];
-  const tmp7 = callback(closure_9.useDescriptionState(), 2);
+  const tmp7 = callback(resetImperatively.useDescriptionState(), 2);
   const first3 = tmp7[0];
-  let closure_7 = first3;
-  const tmp9 = callback(closure_9.useRefIdState(), 2);
+  const tmp9 = callback(resetImperatively.useRefIdState(), 2);
   const first4 = tmp9[0];
-  let closure_8 = first4;
-  closure_9 = tmp9[1];
+  resetImperatively = tmp9[1];
   let length;
   if (null != first1) {
     length = first1.length;
@@ -99,25 +102,25 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
   }
   if (!tmp12) {
     if (benefitType.benefitType === _handleSave.CHANNEL) {
-      const intl2 = arg1(dependencyMap[17]).intl;
-      let stringResult = intl2.string(arg1(dependencyMap[17]).t.Odqwp9);
+      const intl2 = _require(1212).intl;
+      let stringResult = intl2.string(_require(1212).t.Odqwp9);
     } else {
-      const intl = arg1(dependencyMap[17]).intl;
-      stringResult = intl.string(arg1(dependencyMap[17]).t.0rVUnI);
+      const intl = _require(1212).intl;
+      stringResult = intl.string(_require(1212).t["0rVUnI"]);
     }
     if (benefitType.benefitType === _handleSave.CHANNEL) {
-      const intl4 = arg1(dependencyMap[17]).intl;
-      let stringResult1 = intl4.string(arg1(dependencyMap[17]).t.GK18KJ);
+      const intl4 = _require(1212).intl;
+      let stringResult1 = intl4.string(_require(1212).t.GK18KJ);
     } else {
-      const intl3 = arg1(dependencyMap[17]).intl;
-      stringResult1 = intl3.string(arg1(dependencyMap[17]).t.kV54/Y);
+      const intl3 = _require(1212).intl;
+      stringResult1 = intl3.string(_require(1212).t["kV54/Y"]);
     }
     if (benefitType.benefitType === _handleSave.CHANNEL) {
-      const intl6 = arg1(dependencyMap[17]).intl;
-      let stringResult2 = intl6.string(arg1(dependencyMap[17]).t.DDUpp+);
+      const intl6 = _require(1212).intl;
+      let stringResult2 = intl6.string(_require(1212).t["DDUpp+"]);
     } else {
-      const intl5 = arg1(dependencyMap[17]).intl;
-      stringResult2 = intl5.string(arg1(dependencyMap[17]).t.NNqncc);
+      const intl5 = _require(1212).intl;
+      stringResult2 = intl5.string(_require(1212).t.NNqncc);
     }
     if (benefitType.benefitType === _handleSave.CHANNEL) {
       let obj = {
@@ -125,18 +128,18 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
         guildId: benefitType.guildId,
         onChange: function handleChannelSelected(id) {
               callback3(id.id);
-              tmp4(id(tmp4[20]).computeChannelName(id, first4, first3));
+              tmp4(benefitType(tmp4[20]).computeChannelName(id, first4, first3));
             }
       };
-      let tmp40 = callback2(importDefault(dependencyMap[19]), obj);
+      let tmp40 = callback2(first(16449), obj);
     } else {
-      obj = { style: tmp2.textInput, maxLength: closure_12, value: first };
-      const intl9 = arg1(dependencyMap[17]).intl;
-      obj.placeholder = intl9.string(arg1(dependencyMap[17]).t.kV54/Y);
+      obj = { style: tmp2.textInput, showTopContainer: false, multiline: false, maxLength: closure_12, value: first };
+      const intl9 = _require(1212).intl;
+      obj.placeholder = intl9.string(_require(1212).t["kV54/Y"]);
       obj.onChange = tmp4;
       obj.autoFocus = true;
-      obj.clearButtonVisibility = arg1(dependencyMap[16]).ClearButtonVisibility.WITH_CONTENT;
-      tmp40 = callback2(arg1(dependencyMap[21]).FormInput, obj);
+      obj.clearButtonVisibility = _require(1273).ClearButtonVisibility.WITH_CONTENT;
+      tmp40 = callback2(_require(7495).FormInput, obj);
     }
     obj = { style: tmp.container };
     const obj1 = {
@@ -148,18 +151,18 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
         },
       listingId: benefitType.listingId
     };
-    const items = [callback2(importDefault(dependencyMap[22]), obj1), ];
-    const obj2 = { -397224337: "DenyIcon", 1671428002: "png", 1364634426: true };
+    const items = [callback2(first(16451), obj1), ];
+    const obj2 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false };
     const items1 = [tmp.scrollContainer, ];
-    const obj3 = { paddingBottom: importDefault(dependencyMap[18])().bottom + 32 + 16 };
+    const obj3 = { paddingBottom: first(1557)().bottom + 32 + 16 };
     items1[1] = obj3;
     obj2.contentContainerStyle = items1;
     const obj4 = { style: tmp2.header, children: stringResult1 };
-    const items2 = [callback2(importDefault(dependencyMap[23]), obj4), tmp40, , , , , ];
+    const items2 = [callback2(first(7494), obj4), tmp40, , , , , ];
     const obj5 = { style: tmp2.header };
-    const intl7 = arg1(dependencyMap[17]).intl;
-    obj5.children = intl7.string(arg1(dependencyMap[17]).t.sMOuuS);
-    items2[2] = callback2(importDefault(dependencyMap[23]), obj5);
+    const intl7 = _require(1212).intl;
+    obj5.children = intl7.string(_require(1212).t.sMOuuS);
+    items2[2] = callback2(first(7494), obj5);
     const obj6 = {};
     const obj7 = { emojiId: first1, emojiName: first2 };
     obj6.emoji = obj7;
@@ -168,18 +171,18 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       callback(emojiId.emojiId);
       callback2(emojiId.emojiName);
     };
-    items2[3] = callback2(importDefault(dependencyMap[24]), obj6);
+    items2[3] = callback2(first(16452), obj6);
     const obj8 = { style: tmp2.header };
     const tmp41 = closure_14;
     const tmp42 = first2;
     const tmp46 = closure_14;
     const tmp47 = closure_6;
-    const tmp50 = importDefault(dependencyMap[23]);
-    const intl8 = arg1(dependencyMap[17]).intl;
-    obj8.children = intl8.string(arg1(dependencyMap[17]).t.74JctW);
-    items2[4] = callback2(importDefault(dependencyMap[23]), obj8);
-    const obj9 = { style: tmp2.textInput, maxLength: _handleDelete, value: first3, onChange: tmp7[1], placeholder: stringResult2 };
-    items2[5] = callback2(arg1(dependencyMap[21]).FormInput, obj9);
+    const tmp50 = first(7494);
+    const intl8 = _require(1212).intl;
+    obj8.children = intl8.string(_require(1212).t["74JctW"]);
+    items2[4] = callback2(first(7494), obj8);
+    const obj9 = { style: tmp2.textInput, showTopContainer: false, multiline: true, maxLength: _handleDelete, numberOfLines: 3, value: first3, onChange: tmp7[1], placeholder: stringResult2 };
+    items2[5] = callback2(_require(7495).FormInput, obj9);
     let tmp57 = null;
     if (null != benefitType.onDelete) {
       const obj10 = {
@@ -208,6 +211,6 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
     tmp16 = num3 > 0;
   }
 });
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModal.tsx");
+const result = require("result").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModal.tsx");
 
 export default forwardRefResult;

@@ -1,30 +1,31 @@
-// Module ID: 15383
-// Function ID: 117260
-// Dependencies: []
+// Module ID: 15500
+// Function ID: 119434
+// Dependencies: [653, 507, 686, 2]
 
-// Module 15383
-const Endpoints = require(dependencyMap[0]).Endpoints;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("actions/RegionActionCreators.tsx");
+// Module 15500
+import { Endpoints } from "ME";
+
+const result = require("dispatcher").fileFinishedImporting("actions/RegionActionCreators.tsx");
 
 export default {
   fetchRegions(id) {
-    const require = id;
-    const HTTP = require(dependencyMap[1]).HTTP;
-    const value = HTTP.get({ url: Endpoints.REGIONS(id) });
+    const _require = id;
+    const HTTP = _require(507).HTTP;
+    let obj = { url: Endpoints.REGIONS(id), retries: 1, oldFormErrors: true, rejectWithError: true };
+    const value = HTTP.get(obj);
     value.then((body) => {
-      let obj = callback(closure_2[2]);
-      obj = { type: "LOAD_REGIONS", regions: body.body, guildId: body };
+      let obj = outer1_1(outer1_2[2]);
+      obj = { type: "LOAD_REGIONS", regions: body.body, guildId: closure_0 };
       return obj.dispatch(obj);
     }, () => {
-      let obj = callback(closure_2[2]);
-      obj = { type: "LOAD_REGIONS", regions: [], guildId: arg0 };
+      let obj = outer1_1(outer1_2[2]);
+      obj = { type: "LOAD_REGIONS", regions: [], guildId: closure_0 };
       return obj.dispatch(obj);
     });
   },
   changeCallRegion(arg0, region) {
-    const HTTP = require(dependencyMap[1]).HTTP;
-    let obj = { url: Endpoints.CALL(arg0), body: obj, oldFormErrors: true, rejectWithError: true };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: Endpoints.CALL(arg0), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { region };
     HTTP.patch(obj);
   }

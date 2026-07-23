@@ -1,21 +1,21 @@
 // Module ID: 1028
-// Function ID: 11093
+// Function ID: 11094
 // Name: LCPEntryManager
-// Dependencies: []
+// Dependencies: [6, 7]
 
 // Module 1028 (LCPEntryManager)
-let closure_0 = require(dependencyMap[0]);
-let closure_1 = require(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const LCPEntryManager = () => {
+export const LCPEntryManager = (() => {
   class LCPEntryManager {
     constructor() {
       tmp = LCPEntryManager(this, LCPEntryManager);
       return;
     }
   }
-  let closure_0 = LCPEntryManager;
   const items = [
     {
       key: "_processEntry",
@@ -27,5 +27,5 @@ export const LCPEntryManager = () => {
       }
     }
   ];
-  return callback(LCPEntryManager, items);
-}();
+  return _defineProperties(LCPEntryManager, items);
+})();

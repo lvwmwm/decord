@@ -1,23 +1,22 @@
-// Module ID: 5041
-// Function ID: 43577
-// Dependencies: []
+// Module ID: 5044
+// Function ID: 43595
+// Dependencies: [653, 1212, 2]
 
-// Module 5041
-require(dependencyMap[0]).AutoCompleteResultTypes;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("utils/native/AutocompleteUtils.tsx");
+// Module 5044
+require("ME").AutoCompleteResultTypes;
+const result = require("set").fileFinishedImporting("utils/native/AutocompleteUtils.tsx");
 
 export default {
   MENTION_EVERYONE() {
-    const obj = { type: AutoCompleteResultTypes.GLOBAL };
-    const intl = require(dependencyMap[1]).intl;
-    obj.description = intl.string(require(dependencyMap[1]).t.5atMLZ);
+    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "everyone", text: "@everyone" };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.description = intl.string(require(1212) /* getSystemLocale */.t["5atMLZ"]);
     return obj;
   },
   MENTION_HERE() {
-    const obj = { type: AutoCompleteResultTypes.GLOBAL };
-    const intl = require(dependencyMap[1]).intl;
-    obj.description = intl.string(require(dependencyMap[1]).t.iX9SFD);
+    const obj = { type: AutoCompleteResultTypes.GLOBAL, test: "here", text: "@here" };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.description = intl.string(require(1212) /* getSystemLocale */.t.iX9SFD);
     return obj;
   },
   LAUNCHABLE_APPLICATIONS() {

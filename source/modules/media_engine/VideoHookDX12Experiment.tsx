@@ -1,12 +1,13 @@
-// Module ID: 12655
-// Function ID: 97319
+// Module ID: 12769
+// Function ID: 99475
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 12655 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/VideoHookDX12Experiment.tsx");
+// Module 12769 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-video-hook-dx12", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/VideoHookDX12Experiment.tsx");
 
 export const VideoHookDX12Experiment = apexExperiment;

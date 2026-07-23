@@ -1,30 +1,31 @@
-// Module ID: 10101
-// Function ID: 78219
+// Module ID: 10109
+// Function ID: 78259
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 7920, 4167, 6856, 4153, 1849, 653, 1881, 566, 7888, 686, 5470, 2]
 // Exports: default
 
-// Module 10101 (items)
-let closure_3 = importAll(dependencyMap[0]);
-const useQueryState = arg1(dependencyMap[1]).useQueryState;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[6]).EMPTY_STRING_SNOWFLAKE_ID;
-const items = [arg1(dependencyMap[7]).ApplicationCommandType.PRIMARY_ENTRY_POINT, arg1(dependencyMap[7]).ApplicationCommandType.CHAT, arg1(dependencyMap[7]).ApplicationCommandType.MESSAGE, arg1(dependencyMap[7]).ApplicationCommandType.USER];
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/app_dms/useAppDMChatInputState.tsx");
+// Module 10109 (items)
+import result from "result";
+import { useQueryState } from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import closure_8 from "_isNativeReflectConstruct";
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
+
+const require = arg1;
+let items = [require("PermissionOverwriteType").ApplicationCommandType.PRIMARY_ENTRY_POINT, require("PermissionOverwriteType").ApplicationCommandType.CHAT, require("PermissionOverwriteType").ApplicationCommandType.MESSAGE, require("PermissionOverwriteType").ApplicationCommandType.USER];
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_dms/useAppDMChatInputState.tsx");
 
 export default function useAppDMChatInputState(context) {
   let dependencyMap;
-  let React;
+  let application;
   const channel = context.context.channel;
-  const arg1 = channel;
   const items = [channel];
-  const memo = React.useMemo(() => {
+  const memo = application.useMemo(() => {
     if (null != channel) {
       if (true === channel.isDM()) {
-        const user = user.getUser(channel.getRecipientId());
+        const user = outer1_8.getUser(channel.getRecipientId());
         let tmp5 = null;
         if (undefined !== user) {
           tmp5 = null;
@@ -37,17 +38,16 @@ export default function useAppDMChatInputState(context) {
     }
     return null;
   }, items);
-  const importDefault = memo;
-  let obj = arg1(dependencyMap[8]);
-  const items1 = [closure_5];
+  let obj = channel(566);
+  const items1 = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items1, () => {
     let id;
     if (null != memo) {
       id = memo.id;
     }
-    return appIdForBotUserId.getAppIdForBotUserId(id);
+    return outer1_5.getAppIdForBotUserId(id);
   });
-  let obj1 = arg1(dependencyMap[8]);
+  let obj1 = channel(566);
   const items2 = [closure_6];
   const stateFromStores1 = obj1.useStateFromStores(items2, () => {
     let tmp;
@@ -56,7 +56,7 @@ export default function useAppDMChatInputState(context) {
       if (null != memo) {
         id = memo.id;
       }
-      const userProfile = userProfile.getUserProfile(id);
+      const userProfile = outer1_6.getUserProfile(id);
       let application;
       if (null != userProfile) {
         application = userProfile.application;
@@ -75,18 +75,18 @@ export default function useAppDMChatInputState(context) {
   }
   dependencyMap = tmp4;
   const items3 = [memo, tmp4];
-  const effect = React.useEffect(() => {
-    if (null == tmp4) {
+  const effect = application.useEffect(() => {
+    if (null == _undefined) {
       let id;
       if (null != memo) {
         id = memo.id;
       }
       if (null == id) {
-        id = closure_9;
+        id = outer1_9;
       }
       const obj = { withMutualGuilds: true };
-      memo(memo[9])(id, undefined, obj);
-      const tmp3 = memo(memo[9]);
+      memo(_undefined[9])(id, undefined, obj);
+      const tmp3 = memo(_undefined[9]);
     }
   }, items3);
   let id1;
@@ -94,13 +94,13 @@ export default function useAppDMChatInputState(context) {
     id1 = memo.id;
   }
   const items4 = [id1];
-  const effect1 = React.useEffect(() => {
+  const effect1 = application.useEffect(() => {
     let id;
     if (null != memo) {
       id = memo.id;
     }
     if (null != id) {
-      let obj = memo(tmp4[10]);
+      let obj = memo(_undefined[10]);
       obj = { type: "APP_DM_OPEN", botUserId: memo.id };
       obj.dispatch(obj);
     }
@@ -120,18 +120,17 @@ export default function useAppDMChatInputState(context) {
     if (null != application) {
       id = application.id;
     }
-    return id === tmp4;
+    return id === c2;
   });
-  let application;
+  application = undefined;
   if (null != found) {
     application = found.application;
   }
-  React = application;
   const items5 = [application];
-  const memo1 = React.useMemo(() => {
+  const memo1 = application.useMemo(() => {
     let fromServer;
     if (null != application) {
-      fromServer = closure_7.createFromServer(application);
+      fromServer = outer1_7.createFromServer(application);
     }
     return fromServer;
   }, items5);
@@ -139,7 +138,7 @@ export default function useAppDMChatInputState(context) {
   if (null == memo1) {
     tmp15 = tmp4;
   }
-  let getOrFetchApplication = arg1(dependencyMap[11]).useGetOrFetchApplication(tmp15);
+  let getOrFetchApplication = channel(5470).useGetOrFetchApplication(tmp15);
   obj1 = {};
   if (null != memo1) {
     getOrFetchApplication = memo1;

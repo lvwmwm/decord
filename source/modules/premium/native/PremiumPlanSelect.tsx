@@ -1,29 +1,103 @@
-// Module ID: 12358
-// Function ID: 94500
-// Name: getPlanDescription
-// Dependencies: []
+// Module ID: 12472
+// Function ID: 96651
+// Name: BoostPurchaseNitroBanner
+// Dependencies: [5, 57, 31, 27, 6663, 1838, 3781, 3782, 5621, 12473, 1851, 653, 6671, 4113, 33, 4130, 5052, 4973, 689, 4541, 5807, 4126, 1212, 3776, 12474, 12475, 12476, 12477, 12478, 12479, 7871, 3834, 566, 12480, 7118, 4066, 1273, 7400, 7401, 5165, 12481, 5586, 5217, 3976, 478, 6648, 7156, 4471, 12482, 1934, 5503, 4554, 12484, 5624, 3791, 4337, 6649, 7161, 5464, 5638, 5450, 4559, 7157, 7119, 1456, 6656, 7412, 5484, 7121, 4451, 7187, 7376, 6642, 675, 7194, 7195, 2]
 // Exports: default
 
-// Module 12358 (getPlanDescription)
+// Module 12472 (BoostPurchaseNitroBanner)
+import closure_3 from "_createForOfIteratorHelperLoose";
+import getHeaderBackground from "getHeaderBackground";
+import importAllResult from "map";
+import get_ActivityIndicator from "registerAsset";
+import { useNativeCheckoutStore } from "context";
+import closure_10 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import usePremiumPlanSelectStore from "usePremiumPlanSelectStore";
+import GuildFeatures from "GuildFeatures";
+import ME from "ME";
+import items from "items";
+import { ItemPurchaseType } from "CustomCheckoutFlow";
+import jsxProd from "getViewerProductId";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let Fonts;
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_24;
+let closure_25;
+let closure_26;
+let closure_27;
+let closure_28;
+let closure_29;
+let closure_31;
+let closure_32;
+let closure_33;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+function BoostPurchaseNitroBanner() {
+  const tmp = callback5();
+  let obj = { align: "center", spacing: importDefault(689).space.PX_12, style: tmp.nitroBanner };
+  const items = [callback3(require(5807) /* AccountAgeTier10LargeBadge */.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
+  obj = { align: "center", spacing: importDefault(689).space.PX_4 };
+  obj = { variant: "text-md/semibold", color: "text-default", style: tmp.nitroBannerText };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const obj1 = {};
+  const obj2 = { variant: "text-md/semibold", color: "text-feedback-positive" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.RmVM19, { percentageOff: closure_16 });
+  obj1.discount = callback3(require(4126) /* Text */.Text, obj2, "discount");
+  obj.children = intl.format(require(1212) /* getSystemLocale */.t.jbrHpT, obj1);
+  const items1 = [callback3(require(4126) /* Text */.Text, obj), ];
+  const obj4 = { variant: "text-sm/medium", color: "text-muted", style: tmp.nitroBannerText };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj4.children = intl3.format(require(1212) /* getSystemLocale */.t.HYpETY, { boostCount: closure_17 });
+  items1[1] = callback3(require(4126) /* Text */.Text, obj4);
+  obj.children = items1;
+  items[1] = callback4(require(4541) /* Stack */.Stack, obj);
+  obj.children = items;
+  return callback4(require(4541) /* Stack */.Stack, obj);
+}
 function getPlanDescription(premiumTier) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
   if (null == premiumTier.premiumTier) {
-    const intl = arg1(dependencyMap[19]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     let obj = { numSubscriptions: premiumTier.numPremiumGuild };
-    let formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[19]).t.gDsyB9, obj);
+    let formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.gDsyB9, obj);
   } else if (0 === premiumTier.numPremiumGuild) {
-    formatToPlainStringResult = arg1(dependencyMap[20]).getPremiumTypeDisplayName(premiumTier.premiumTier);
-    const obj2 = arg1(dependencyMap[20]);
+    formatToPlainStringResult = require(3776) /* _createForOfIteratorHelperLoose */.getPremiumTypeDisplayName(premiumTier.premiumTier);
+    const obj3 = require(3776) /* _createForOfIteratorHelperLoose */;
   } else {
-    const intl2 = arg1(dependencyMap[19]).intl;
-    if (premiumTier.premiumTier === closure_18.TIER_1) {
-      let u6dBsN = arg1(dependencyMap[19]).t.sexoHq;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    const formatToPlainString = intl2.formatToPlainString;
+    if (flag) {
+      obj = { numSubscriptions: premiumTier.numPremiumGuild };
+      formatToPlainStringResult = formatToPlainString(tmp11(1212).t.gDsyB9, obj);
     } else {
-      u6dBsN = arg1(dependencyMap[19]).t.u6dBsN;
+      if (premiumTier.premiumTier === closure_19.TIER_1) {
+        let u6dBsN = require(1212) /* getSystemLocale */.t.sexoHq;
+      } else {
+        u6dBsN = require(1212) /* getSystemLocale */.t.u6dBsN;
+      }
+      obj = { num: premiumTier.numPremiumGuild };
+      formatToPlainStringResult = formatToPlainString(u6dBsN, obj);
     }
-    obj = { num: premiumTier.numPremiumGuild };
-    formatToPlainStringResult = intl2.formatToPlainString(u6dBsN, obj);
+    tmp11 = require;
   }
   return formatToPlainStringResult;
 }
@@ -31,28 +105,27 @@ function BoostDeltaPriceTrailing(arg0) {
   let interval;
   let price;
   ({ price, interval } = arg0);
-  let obj = { "Bool(false)": "absolute", "Bool(false)": 8, spacing: importDefault(dependencyMap[18]).space.PX_4 };
-  obj = { size: "xs", color: importDefault(dependencyMap[18]).colors.ICON_FEEDBACK_POSITIVE };
-  const items = [callback4(arg1(dependencyMap[28]).NitroWheelIcon, obj), ];
-  obj = { cachedAt: "y", edpbxy: "isArray" };
-  const intl = arg1(dependencyMap[19]).intl;
+  let obj = { direction: "horizontal", align: "center", spacing: importDefault(689).space.PX_4 };
+  obj = { size: "xs", color: importDefault(689).colors.ICON_FEEDBACK_POSITIVE };
+  const items = [callback3(require(7871) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
+  obj = { variant: "text-sm/medium", color: "text-muted" };
+  const intl = require(1212) /* getSystemLocale */.intl;
   if (interval === constants.MONTH) {
-    rS8FA+ = arg1(dependencyMap[19]).t.AbOLNu;
+    rS8FA_ = require(1212) /* getSystemLocale */.t.AbOLNu;
   } else {
-    rS8FA+ = arg1(dependencyMap[19]).t.rS8FA+;
+    rS8FA_ = require(1212) /* getSystemLocale */.t["rS8FA+"];
   }
-  const obj2 = { cachedAt: 143327234, edpbxy: null, children: price };
-  obj.children = intl.format(rS8FA_, { price: callback4(arg1(dependencyMap[29]).Text, obj2, "price") });
-  items[1] = callback4(arg1(dependencyMap[29]).Text, obj);
+  const obj2 = { variant: "text-sm/semibold", color: "text-feedback-positive", children: price };
+  obj.children = intl.format(rS8FA_, { price: callback3(require(4126) /* Text */.Text, obj2, "price") });
+  items[1] = callback3(require(4126) /* Text */.Text, obj);
   obj.children = items;
-  return closure_31(arg1(dependencyMap[27]).Stack, obj);
+  return closure_32(require(4541) /* Stack */.Stack, obj);
 }
 function PlanRow(plan) {
+  let importDefault;
   let subscription;
   plan = plan.plan;
-  const arg1 = plan;
-  ({ purchase: closure_1, subscription } = plan);
-  const dependencyMap = subscription;
+  ({ purchase: importDefault, subscription } = plan);
   let flag = plan.disabled;
   if (flag === undefined) {
     flag = false;
@@ -65,43 +138,47 @@ function PlanRow(plan) {
   if (flag3 === undefined) {
     flag3 = false;
   }
-  let closure_3;
-  let callback;
+  let flag4 = plan.showBoostOnlyLabels;
+  if (flag4 === undefined) {
+    flag4 = false;
+  }
+  let premiumTypeFromSubscription;
+  flag = undefined;
   function onPress() {
     if (!flag) {
       if (null != subscription) {
-        if (premiumTypeFromSubscription === closure_18.TIER_2) {
-          if (plan.premiumTier === closure_18.TIER_0) {
+        if (premiumTypeFromSubscription === outer1_19.TIER_2) {
+          if (plan.premiumTier === outer1_19.TIER_0) {
             const obj = {
               subscription,
-              mode: plan(subscription[37]).WhatYouLoseMode.DOWNGRADE,
+              mode: plan(subscription[38]).WhatYouLoseMode.DOWNGRADE,
               onContinue() {
-                        return callback(productId.productId);
+                        return outer1_1(outer1_0.productId);
                       }
             };
-            callback(subscription[36])(obj);
-            const tmp9 = callback(subscription[36]);
+            outer1_1(subscription[37])(obj);
+            const tmp9 = outer1_1(subscription[37]);
           }
         }
       }
       callback(plan.productId);
     }
   }
-  const tmp = callback6();
-  const tmp3 = callback2((purchasingProductId) => purchasingProductId.purchasingProductId === plan.productId);
-  let obj = arg1(dependencyMap[30]);
-  const token = obj.useToken(importDefault(dependencyMap[18]).colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND);
-  let obj1 = arg1(dependencyMap[31]);
-  const items = [closure_13];
-  const tmp5 = callback(obj1.useStateFromStoresArray(items, () => {
-    const items = [closure_13.getProduct(plan.productId), closure_13.isBusy()];
+  const tmp = callback5();
+  const tmp3 = callback((purchasingProductId) => purchasingProductId.purchasingProductId === plan.productId);
+  let obj = plan(subscription[31]);
+  const token = obj.useToken(importDefault(subscription[18]).colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND);
+  let obj1 = plan(subscription[32]);
+  let items = [closure_13];
+  const tmp5 = flag(obj1.useStateFromStoresArray(items, () => {
+    const items = [outer1_13.getProduct(plan.productId), outer1_13.isBusy()];
     return items;
   }), 2);
   const first = tmp5[0];
-  const tmp2 = callback2((isPurchasing) => isPurchasing.isPurchasing);
-  let obj2 = arg1(dependencyMap[32]);
+  const tmp2 = callback((isPurchasing) => isPurchasing.isPurchasing);
+  let obj2 = plan(subscription[33]);
   const premiumTier2DeltaPriceString = obj2.usePremiumTier2DeltaPriceString(plan, subscription, first, flag3);
-  let obj3 = arg1(dependencyMap[33]);
+  let obj3 = plan(subscription[34]);
   let checkoutPlanPriceString = obj3.useCheckoutPlanPriceString(plan.productId, first);
   if (null != premiumTier2DeltaPriceString) {
     checkoutPlanPriceString = premiumTier2DeltaPriceString;
@@ -110,7 +187,7 @@ function PlanRow(plan) {
   if (null != checkoutPlanPriceString) {
     str = checkoutPlanPriceString;
   }
-  let tmp11 = plan.premiumTier === closure_18.TIER_2;
+  let tmp11 = plan.premiumTier === closure_19.TIER_2;
   const tmp7 = useNativeCheckoutStore((isPatchOrderLoading) => isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading);
   if (tmp11) {
     tmp11 = 0 === plan.numPremiumGuild;
@@ -121,48 +198,47 @@ function PlanRow(plan) {
     const items1 = [, ];
     ({ rowText: arr2[0], rowPlanDescriptionSubtext: arr2[1] } = tmp);
     obj.style = items1;
-    const intl = arg1(dependencyMap[19]).intl;
-    obj = { num: closure_16 };
-    obj.children = intl.format(arg1(dependencyMap[19]).t.he52LA, obj);
-    tmp12 = callback4(arg1(dependencyMap[35]).LegacyText, obj);
+    const intl = plan(subscription[22]).intl;
+    obj = { num: closure_17 };
+    obj.children = intl.format(plan(subscription[22]).t.he52LA, obj);
+    tmp12 = callback3(plan(subscription[36]).LegacyText, obj);
   }
   if (null == plan.premiumTier) {
-    let tmp23 = importDefault(dependencyMap[21]);
+    let tmp23 = importDefault(subscription[24]);
   } else if (0 !== plan.numPremiumGuild) {
-    if (plan.premiumTier === closure_18.TIER_1) {
-      tmp23 = importDefault(dependencyMap[25]);
+    if (plan.premiumTier === closure_19.TIER_1) {
+      tmp23 = importDefault(subscription[28]);
     } else {
-      tmp23 = importDefault(dependencyMap[26]);
+      tmp23 = importDefault(subscription[29]);
     }
   } else {
     const premiumTier = plan.premiumTier;
-    if (closure_18.TIER_0 === premiumTier) {
-      tmp23 = importDefault(dependencyMap[22]);
-    } else if (closure_18.TIER_1 === premiumTier) {
-      tmp23 = importDefault(dependencyMap[23]);
-    } else if (closure_18.TIER_2 === premiumTier) {
-      tmp23 = importDefault(dependencyMap[24]);
+    if (closure_19.TIER_0 === premiumTier) {
+      tmp23 = importDefault(subscription[25]);
+    } else if (closure_19.TIER_1 === premiumTier) {
+      tmp23 = importDefault(subscription[26]);
+    } else if (closure_19.TIER_2 === premiumTier) {
+      tmp23 = importDefault(subscription[27]);
     }
   }
-  const intl2 = arg1(dependencyMap[19]).intl;
+  const intl2 = plan(subscription[22]).intl;
   if (plan.interval === constants.MONTH) {
-    rS8FA+ = arg1(dependencyMap[19]).t.AbOLNu;
+    rS8FA_ = plan(subscription[22]).t.AbOLNu;
   } else {
-    rS8FA+ = arg1(dependencyMap[19]).t.rS8FA+;
+    rS8FA_ = plan(subscription[22]).t["rS8FA+"];
   }
   obj1 = { price: str };
   const formatToPlainStringResult = intl2.formatToPlainString(rS8FA_, obj1);
   if (tmp11) {
-    const intl3 = arg1(dependencyMap[19]).intl;
-    obj2 = { num: closure_16 };
-    const formatToPlainStringResult1 = intl3.formatToPlainString(arg1(dependencyMap[19]).t.RTaZb4, obj2);
+    const intl3 = plan(subscription[22]).intl;
+    obj2 = { num: closure_17 };
+    const formatToPlainStringResult1 = intl3.formatToPlainString(plan(subscription[22]).t.RTaZb4, obj2);
   }
-  let premiumTypeFromSubscription = null;
+  premiumTypeFromSubscription = null;
   if (null != subscription) {
-    let obj8 = arg1(dependencyMap[20]);
+    let obj8 = plan(subscription[23]);
     premiumTypeFromSubscription = obj8.getPremiumTypeFromSubscription(subscription);
   }
-  closure_3 = premiumTypeFromSubscription;
   if (!flag) {
     flag = tmp2;
   }
@@ -172,30 +248,29 @@ function PlanRow(plan) {
   if (!flag) {
     flag = tmp7;
   }
-  callback = flag;
   if (flag3) {
     obj3 = {};
     if (tmp17) {
-      let tmp66Result = tmp66(importDefault(dependencyMap[39]), { "Null": true, "Null": true });
+      let tmp66Result = tmp66(importDefault(subscription[40]), { width: 32, height: 32 });
     } else if (tmp11) {
-      const obj4 = { size: "xxs", color: importDefault(dependencyMap[18]).colors.ICON_DEFAULT };
-      tmp66Result = tmp66(arg1(dependencyMap[28]).NitroWheelIcon, obj4);
+      const obj4 = { size: "xxs", color: importDefault(subscription[18]).colors.ICON_DEFAULT };
+      tmp66Result = tmp66(plan(subscription[30]).NitroWheelIcon, obj4);
     } else {
       const obj5 = { style: tmp.boostRowIcon, source: tmp23 };
       tmp66Result = tmp66(closure_6, obj5);
     }
     obj3.icon = tmp66Result;
-    obj3.label = getPlanDescription(plan);
+    obj3.label = getPlanDescription(plan, flag4);
     obj3.subLabel = formatToPlainStringResult1;
     if (tmp3) {
-      const obj6 = { "Null": "Array", "Null": "isArray", color: token };
-      let tmp78 = callback4(arg1(dependencyMap[40]).ActivityIndicator, obj6);
+      const obj6 = { animating: true, size: "small", color: token };
+      let tmp78 = callback3(plan(subscription[41]).ActivityIndicator, obj6);
     } else if (null != premiumTier2DeltaPriceString) {
       const obj7 = { price: premiumTier2DeltaPriceString, interval: plan.interval };
-      tmp78 = callback4(BoostDeltaPriceTrailing, obj7);
+      tmp78 = callback3(BoostDeltaPriceTrailing, obj7);
     } else {
-      obj8 = { children: formatToPlainStringResult };
-      tmp78 = callback4(arg1(dependencyMap[29]).Text, obj8);
+      obj8 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: formatToPlainStringResult };
+      tmp78 = callback3(plan(subscription[21]).Text, obj8);
     }
     obj3.trailing = tmp78;
     obj3.arrow = true;
@@ -204,14 +279,14 @@ function PlanRow(plan) {
     }
     obj3.disabled = flag;
     obj3.onPress = onPress;
-    let tmp46Result = tmp46(tmp47(tmp48[38]).TableRow, obj3);
+    let tmp46Result = tmp46(tmp47(tmp48[39]).TableRow, obj3);
   } else {
-    const obj9 = { borderStyle: 0.55, borderWidth: 0, borderColor: 3.896 };
+    const obj9 = { activeOpacity: 0.6, underlayColor: null, accessibilityRole: "button" };
     let str3 = "none";
     if (!tmp47Result.isThemeDark(tmp10)) {
       str3 = "none";
       if (flag2) {
-        str3 = importDefault(dependencyMap[18]).unsafe_rawColors.PRIMARY_230;
+        str3 = importDefault(subscription[18]).unsafe_rawColors.PRIMARY_230;
       }
     }
     obj9.underlayColor = str3;
@@ -228,68 +303,81 @@ function PlanRow(plan) {
     }
     items2[2] = rowDisabled;
     obj10.style = items2;
-    const obj11 = { style: tmp[closure_34[tmp23]], source: tmp23 };
-    const items3 = [callback4(closure_6, obj11), , , , ];
+    const obj11 = { style: tmp[table[tmp23]], source: tmp23 };
+    const items3 = [callback3(closure_6, obj11), , , , ];
     const obj12 = {};
     const items4 = [, ];
     ({ rowText: arr5[0], rowPlanDescription: arr5[1] } = tmp);
     obj12.style = items4;
-    obj12.children = getPlanDescription(plan);
-    items3[1] = callback4(arg1(dependencyMap[35]).LegacyText, obj12);
+    obj12.children = getPlanDescription(plan, flag4);
+    items3[1] = callback3(plan(subscription[36]).LegacyText, obj12);
     items3[2] = tmp12;
     const obj13 = {};
     const items5 = [, ];
     ({ rowText: arr6[0], rowPrice: arr6[1] } = tmp);
     obj13.style = items5;
     obj13.children = formatToPlainStringResult;
-    items3[3] = callback4(arg1(dependencyMap[35]).LegacyText, obj13);
+    items3[3] = callback3(plan(subscription[36]).LegacyText, obj13);
     let tmp61 = null;
     if (tmp3) {
-      const obj14 = { "Null": "Array", "Null": "isArray", style: tmp.purchasingSpinner, color: token };
-      tmp61 = callback4(arg1(dependencyMap[40]).ActivityIndicator, obj14);
+      const obj14 = { animating: true, size: "small", style: tmp.purchasingSpinner, color: token };
+      tmp61 = callback3(plan(subscription[41]).ActivityIndicator, obj14);
     }
     items3[4] = tmp61;
     obj10.children = items3;
-    obj9.children = closure_31(closure_7, obj10);
-    tmp46Result = tmp46(tmp47(tmp48[41]).TouchableHighlight, obj9);
-    const tmp47Result = tmp47(tmp48[42]);
-    const tmp51 = closure_31;
+    obj9.children = closure_32(closure_7, obj10);
+    tmp46Result = tmp46(tmp47(tmp48[42]).TouchableHighlight, obj9);
+    tmp47Result = tmp47(tmp48[43]);
+    const tmp51 = closure_32;
     const tmp52 = closure_7;
   }
   return tmp46Result;
 }
-function PlanSection(label) {
+function PlanSection(showBoostOnlyLabels) {
+  let closure_3;
+  let getHeaderBackground;
+  let closure_5;
+  let closure_6;
+  let closure_7;
+  let dependencyMap;
   let plans;
   let shouldShowModernBoostFlow;
-  ({ plans, shouldShowModernBoostFlow } = label);
+  ({ plans, shouldShowModernBoostFlow } = showBoostOnlyLabels);
   if (shouldShowModernBoostFlow === undefined) {
     shouldShowModernBoostFlow = false;
   }
-  const arg1 = shouldShowModernBoostFlow;
-  ({ purchase: closure_1, analyticsLoadId: closure_2, trackNewPaymentFlow: closure_3, trackPaymentFlowStep: closure_4, subscription: closure_5, shouldRemoveYearlyUpsell: closure_6 } = label);
-  let tmp;
-  let isIOSResult;
-  tmp = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
-  let obj = arg1(dependencyMap[43]);
-  isIOSResult = obj.isIOS();
+  let flag = showBoostOnlyLabels.showBoostOnlyLabels;
+  if (flag === undefined) {
+    flag = false;
+  }
+  ({ purchase: dependencyMap, analyticsLoadId: closure_3, trackNewPaymentFlow: getHeaderBackground, trackPaymentFlowStep: closure_5, subscription: closure_6, shouldRemoveYearlyUpsell: closure_7 } = showBoostOnlyLabels);
+  let c8;
+  let useNativeCheckoutStore;
+  const tmp = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
+  c8 = tmp;
+  let obj = shouldShowModernBoostFlow(478);
+  let isIOSResult = obj.isIOS();
   if (isIOSResult) {
     isIOSResult = null != tmp;
   }
-  const mapped = plans.map((plan) => callback(closure_39, {
+  useNativeCheckoutStore = isIOSResult;
+  const mapped = plans.map((plan) => outer1_31(outer1_41, {
     plan,
-    subscription: closure_5,
+    subscription: closure_6,
     shouldShowModernBoostFlow,
+    showBoostOnlyLabels: flag,
     purchase(productId) {
-      let obj = productId(tmp2[44]);
+      let closure_0 = productId;
+      let obj = shouldShowModernBoostFlow(outer2_2[45]);
       const toggledIntervalProduct = obj.getToggledIntervalProduct(productId);
       let tmp2 = null;
-      if (closure_8) {
+      if (outer1_9) {
         tmp2 = null;
         if (null != toggledIntervalProduct) {
           let availablePlanForItems;
-          if (null != availablePlanForItems) {
-            let obj1 = productId(tmp2[44]);
-            availablePlanForItems = availablePlanForItems.getAvailablePlanForItems(obj1.getSubscriptionItemsForProduct(toggledIntervalProduct));
+          if (null != outer1_8) {
+            let obj1 = shouldShowModernBoostFlow(outer2_2[45]);
+            availablePlanForItems = outer1_8.getAvailablePlanForItems(obj1.getSubscriptionItemsForProduct(toggledIntervalProduct));
           }
           tmp2 = null;
           if (null != availablePlanForItems) {
@@ -297,305 +385,316 @@ function PlanSection(label) {
           }
         }
       }
-      if (closure_8) {
+      let closure_2 = tmp2;
+      if (outer1_9) {
         let tmp8 = null != tmp2;
       } else {
         tmp8 = null != toggledIntervalProduct;
         if (tmp8) {
-          tmp8 = null != product.getProduct(toggledIntervalProduct);
+          tmp8 = null != outer2_13.getProduct(toggledIntervalProduct);
         }
       }
       if (null != toggledIntervalProduct) {
         if (tmp8) {
-          if (!closure_6) {
-            obj = { fromStep: productId(tmp2[45]).PaymentFlowStep.PLAN_SELECT, toStep: productId(tmp2[45]).PaymentFlowStep.YEARLY_UPSELL, productId };
-            callback(obj);
+          if (!outer1_7) {
+            obj = { fromStep: shouldShowModernBoostFlow(outer2_2[46]).PaymentFlowStep.PLAN_SELECT, toStep: shouldShowModernBoostFlow(outer2_2[46]).PaymentFlowStep.YEARLY_UPSELL, productId };
+            outer1_5(obj);
             obj = {
-              0: null,
-              0: null,
-              9223372036854775807: null,
               importer() {
-                      return arg0(tmp2[48])(tmp2[47], tmp2.paths).then((arg0) => {
+                      return shouldShowModernBoostFlow(outer3_2[49])(outer3_2[48], outer3_2.paths).then((arg0) => {
                         let closure_0 = arg0.default;
                         return () => { ... };
                       });
-                    }
+                    },
+              hideActionSheet: true,
+              isDismissable: true
             };
-            toggledIntervalProduct(tmp2[46]).openLazy(obj);
+            flag(outer2_2[47]).openLazy(obj);
           }
         }
       }
-      obj1 = { fromStep: productId(tmp2[45]).PaymentFlowStep.PLAN_SELECT, toStep: productId(tmp2[45]).PaymentFlowStep.EXTERNAL_PAYMENT, productId };
-      callback(obj1);
-      return toggledIntervalProduct(productId, tmp2);
+      obj1 = { fromStep: shouldShowModernBoostFlow(outer2_2[46]).PaymentFlowStep.PLAN_SELECT, toStep: shouldShowModernBoostFlow(outer2_2[46]).PaymentFlowStep.EXTERNAL_PAYMENT, productId };
+      outer1_5(obj1);
+      return outer1_2(productId, outer1_3);
     }
   }, plan.productId));
   if (shouldShowModernBoostFlow) {
-    obj = { title: label.label, hasIcons: true, children: mapped };
-    let tmp5Result = tmp5(arg1(dependencyMap[49]).TableRowGroup, obj);
+    obj = { title: showBoostOnlyLabels.label, hasIcons: true, children: mapped };
+    let tmp5Result = tmp5(shouldShowModernBoostFlow(5503).TableRowGroup, obj);
   } else {
     obj = { children: mapped };
-    tmp5Result = tmp5(tmp, obj);
+    tmp5Result = tmp5(closure_7, obj);
   }
   return tmp5Result;
 }
 function CurrentPlanRow(subscription) {
+  let closure_3;
+  let getHeaderBackground;
+  let closure_5;
+  let dependencyMap;
+  let importDefault;
   subscription = subscription.subscription;
-  const arg1 = subscription;
-  ({ trackPaymentFlowStep: closure_1, trackNewPaymentFlow: closure_2, purchase: closure_3, analyticsLoadId: closure_4, shouldRemoveYearlyUpsell: closure_5 } = subscription);
+  ({ trackPaymentFlowStep: importDefault, trackNewPaymentFlow: dependencyMap, purchase: closure_3, analyticsLoadId: getHeaderBackground, shouldRemoveYearlyUpsell: closure_5 } = subscription);
   let productIdFromSubscription;
   let toggledIntervalProduct;
-  const tmp = callback6();
+  const tmp = callback5();
   if (subscription.showCurrentPlan) {
     if (null != subscription) {
-      productIdFromSubscription = arg1(dependencyMap[44]).getProductIdFromSubscription(subscription, true);
-      const obj4 = arg1(dependencyMap[44]);
-      const premiumBundledItemsFromProductId = arg1(dependencyMap[44]).getPremiumBundledItemsFromProductId(productIdFromSubscription);
+      productIdFromSubscription = subscription(6648).getProductIdFromSubscription(subscription, true);
+      let obj4 = subscription(6648);
+      const premiumBundledItemsFromProductId = subscription(6648).getPremiumBundledItemsFromProductId(productIdFromSubscription);
       const premiumTier = premiumBundledItemsFromProductId.premiumTier;
       if (null != premiumTier) {
-        let PREMIUM_GUILD = callback3(premiumTier);
+        let PREMIUM_GUILD = callback2(premiumTier);
       } else {
         PREMIUM_GUILD = constants7.PREMIUM_GUILD;
       }
-      let obj = arg1(dependencyMap[44]);
+      let obj = subscription(6648);
       toggledIntervalProduct = obj.getToggledIntervalProduct(productIdFromSubscription);
       obj = { style: tmp.currentPlanGradient, colors: PREMIUM_GUILD, start: constants4.START, end: constants4.END };
       obj = { plan: premiumBundledItemsFromProductId, subscription };
       let tmp15 = null == toggledIntervalProduct;
-      const obj5 = arg1(dependencyMap[44]);
-      const tmp8 = closure_30;
+      const obj5 = subscription(6648);
+      const tmp8 = closure_31;
       if (tmp15) {
         tmp15 = subscription.status !== constants6.CANCELED;
       }
       obj.disabled = tmp15;
       obj.hasBackground = true;
       obj.purchase = function purchase() {
+        let subscription;
         let yearly;
-        let obj = subscription(closure_2[44]);
+        let obj = subscription(outer1_2[45]);
         const productIdsForBothIntervals = obj.getProductIdsForBothIntervals(productIdFromSubscription);
-        ({ monthly: closure_0, yearly } = productIdsForBothIntervals);
+        ({ monthly: subscription, yearly } = productIdsForBothIntervals);
         let status;
         if (null != subscription) {
           status = subscription.status;
         }
-        if (status === constants.CANCELED) {
+        if (status === outer1_27.CANCELED) {
           if (null != yearly) {
             if (!closure_5) {
-              obj = { fromStep: subscription(closure_2[45]).PaymentFlowStep.PLAN_SELECT, toStep: subscription(closure_2[45]).PaymentFlowStep.YEARLY_UPSELL, productId: productIdFromSubscription };
+              obj = { fromStep: subscription(outer1_2[46]).PaymentFlowStep.PLAN_SELECT, toStep: subscription(outer1_2[46]).PaymentFlowStep.YEARLY_UPSELL, productId: productIdFromSubscription };
               yearly(obj);
               obj = {
-                0: null,
-                0: null,
-                9223372036854775807: null,
                 importer() {
-                        return callback(paths[48])(paths[47], paths.paths).then((arg0) => {
+                        return subscription(outer2_2[49])(outer2_2[48], outer2_2.paths).then((arg0) => {
                           let closure_0 = arg0.default;
                           return (arg0) => {
                             const obj = {};
                             const merged = Object.assign(arg0);
-                            obj["productId"] = closure_1;
+                            obj["productId"] = outer2_1;
                             // CreateGeneratorClosureLongIndex (0x67)
-                            obj["continueWithUpsell"] = callback(closure_1);
+                            obj["continueWithUpsell"] = outer4_3(outer2_1);
                             // CreateGeneratorClosureLongIndex (0x67)
-                            obj["continueWithDefault"] = callback(tmp);
-                            return callback2(closure_0, obj);
+                            obj["continueWithDefault"] = outer4_3(tmp);
+                            return outer4_31(closure_0, obj);
                           };
                         });
-                      }
+                      },
+                hideActionSheet: true,
+                isDismissable: true
               };
-              yearly(closure_2[46]).openLazy(obj);
-              const obj4 = yearly(closure_2[46]);
+              outer1_1(outer1_2[47]).openLazy(obj);
+              const obj4 = outer1_1(outer1_2[47]);
             }
           }
-          const obj1 = { fromStep: subscription(closure_2[45]).PaymentFlowStep.PLAN_SELECT, toStep: subscription(closure_2[45]).PaymentFlowStep.EXTERNAL_PAYMENT, productId: productIdFromSubscription };
+          const obj1 = { fromStep: subscription(outer1_2[46]).PaymentFlowStep.PLAN_SELECT, toStep: subscription(outer1_2[46]).PaymentFlowStep.EXTERNAL_PAYMENT, productId: productIdFromSubscription };
           yearly(obj1);
-          const tmp22 = callback(productIdFromSubscription, closure_4);
+          const tmp22 = callback(productIdFromSubscription, getHeaderBackground);
         } else {
           let tmp6;
           if (null != toggledIntervalProduct) {
-            if (null != product.getProduct(toggledIntervalProduct)) {
-              const obj2 = { fromStep: subscription(closure_2[45]).PaymentFlowStep.PLAN_SELECT, toStep: subscription(closure_2[45]).PaymentFlowStep.EXTERNAL_PAYMENT, productId: toggledIntervalProduct };
+            if (null != outer1_13.getProduct(toggledIntervalProduct)) {
+              const obj2 = { fromStep: subscription(outer1_2[46]).PaymentFlowStep.PLAN_SELECT, toStep: subscription(outer1_2[46]).PaymentFlowStep.EXTERNAL_PAYMENT, productId: toggledIntervalProduct };
               yearly(obj2);
-              tmp6 = callback(toggledIntervalProduct, closure_4);
+              tmp6 = callback(toggledIntervalProduct, getHeaderBackground);
             }
           }
           return tmp6;
         }
       };
       obj.style = tmp.currentPlanRow;
-      obj.children = closure_30(PlanRow, obj);
-      return tmp8(importDefault(dependencyMap[50]), obj);
+      obj.children = closure_31(PlanRow, obj);
+      return tmp8(importDefault(4554), obj);
     }
   }
   return null;
 }
 function PlanSectionHeader(children) {
-  const tmp = callback6();
-  return callback4(arg1(dependencyMap[35]).LegacyText, { style: callback6().header, children: children.string });
+  const tmp = callback5();
+  return callback3(require(1273) /* Button */.LegacyText, { style: callback5().header, children: children.string });
 }
 function PlanSections(showCurrentPlan) {
   let analyticsLoadId;
   let isBoostPurchaseFlow;
+  let require;
   let subscription;
-  ({ plans: closure_0, subscription } = showCurrentPlan);
-  const importDefault = subscription;
+  ({ plans: require, subscription } = showCurrentPlan);
   ({ isBoostPurchaseFlow, analyticsLoadId } = showCurrentPlan);
-  const dependencyMap = analyticsLoadId;
   const trackPaymentFlowStep = showCurrentPlan.trackPaymentFlowStep;
-  let closure_3 = trackPaymentFlowStep;
   const trackNewPaymentFlow = showCurrentPlan.trackNewPaymentFlow;
-  let closure_4 = trackNewPaymentFlow;
   const purchase = showCurrentPlan.purchase;
   let productIdFromSubscription;
   let shouldRemoveYearlyUpsell;
-  let useNativeCheckoutStore;
-  const tmp = callback6();
-  let closure_6 = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
+  isBoostPurchaseFlow = undefined;
+  let c10;
+  const tmp = callback5();
+  let closure_6 = isBoostPurchaseFlow((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
   productIdFromSubscription = null;
   if (null != subscription) {
-    let obj = arg1(dependencyMap[44]);
+    let obj = require(analyticsLoadId[45]);
     productIdFromSubscription = obj.getProductIdFromSubscription(subscription, false);
   }
   shouldRemoveYearlyUpsell = isBoostPurchaseFlow;
   if (isBoostPurchaseFlow) {
-    shouldRemoveYearlyUpsell = arg1(dependencyMap[51]).getShouldRemoveYearlyUpsell("PremiumPlanSelect");
-    const obj2 = arg1(dependencyMap[51]);
+    shouldRemoveYearlyUpsell = require(analyticsLoadId[52]).getShouldRemoveYearlyUpsell("PremiumPlanSelect");
+    let obj2 = require(analyticsLoadId[52]);
   }
   if (isBoostPurchaseFlow) {
-    isBoostPurchaseFlow = arg1(dependencyMap[51]).getMobileBoostingEnabled("PremiumPlanSelect");
-    const obj3 = arg1(dependencyMap[51]);
+    isBoostPurchaseFlow = require(analyticsLoadId[52]).getMobileBoostingEnabled("PremiumPlanSelect");
+    let obj3 = require(analyticsLoadId[52]);
   }
-  useNativeCheckoutStore = isBoostPurchaseFlow;
+  let tmp10 = null != subscription;
+  if (tmp10) {
+    tmp10 = require(analyticsLoadId[23]).getPremiumTypeFromSubscription(subscription) === closure_19.TIER_2;
+    const obj4 = require(analyticsLoadId[23]);
+  }
+  let tmp14 = isBoostPurchaseFlow;
+  if (isBoostPurchaseFlow) {
+    tmp14 = tmp10;
+  }
+  c10 = tmp14;
+  const mapped = items.map((section) => {
+    let closure_0 = section;
+    return {
+      section,
+      plansInSection: closure_0.filter((productId) => {
+        let predicateResult = productId.productId !== outer1_7;
+        if (predicateResult) {
+          predicateResult = !outer2_0(analyticsLoadId[45]).productsHaveSamePerks(productId.productId, outer1_7);
+          const obj = outer2_0(analyticsLoadId[45]);
+        }
+        if (predicateResult) {
+          predicateResult = section.predicate(productId);
+        }
+        if (predicateResult) {
+          predicateResult = productId.premiumTier !== outer2_19.TIER_1;
+        }
+        if (predicateResult) {
+          let tmp9 = !outer2_0(analyticsLoadId[44]).isIOS();
+          if (!tmp9) {
+            tmp9 = null == outer1_6;
+          }
+          if (!tmp9) {
+            tmp9 = null != outer1_6.getAvailablePlanForItems(outer2_0(analyticsLoadId[45]).getSubscriptionItemsForProduct(productId.productId));
+            const obj3 = outer2_0(analyticsLoadId[45]);
+          }
+          predicateResult = tmp9;
+          const obj2 = outer2_0(analyticsLoadId[44]);
+        }
+        if (predicateResult) {
+          let flag = true;
+          if (null != outer1_7) {
+            const tmp20 = outer2_0(analyticsLoadId[53]).AppStorePremiumProductIdsToPremiumBundledItems[tmp16];
+            flag = null != tmp20.premiumTier || productId.numPremiumGuild >= tmp20.numPremiumGuild;
+            const tmp21 = null != tmp20.premiumTier || productId.numPremiumGuild >= tmp20.numPremiumGuild;
+          }
+          predicateResult = flag;
+        }
+        return predicateResult;
+      })
+    };
+  });
+  const found = mapped.filter((plansInSection) => plansInSection.plansInSection.length > 0);
+  let found1 = found;
+  if (tmp14) {
+    found1 = found;
+    if (tmp15) {
+      found1 = found.filter((section) => "premium-guild" !== section.section.id);
+    }
+  }
   obj = {};
-  const items = [tmp.container, ];
+  items = [tmp.container, ];
   if (isBoostPurchaseFlow) {
     isBoostPurchaseFlow = tmp.boostContainer;
   }
   items[1] = isBoostPurchaseFlow;
   obj.style = items;
+  if (tmp14) {
+    tmp14 = callback3(BoostPurchaseNitroBanner, {});
+  }
+  const items1 = [tmp14, , ];
   obj = { subscription, analyticsLoadId, purchase, trackPaymentFlowStep, trackNewPaymentFlow, showCurrentPlan: showCurrentPlan.showCurrentPlan, shouldRemoveYearlyUpsell };
-  const items1 = [
-    callback4(CurrentPlanRow, obj),
-    items.map((predicate) => {
-      predicate = predicate.predicate;
-      const found = predicate.filter((productId) => {
-        let tmp = productId.productId !== closure_7;
-        if (tmp) {
-          tmp = !predicate(closure_2[44]).productsHaveSamePerks(productId.productId, closure_7);
-          const obj = predicate(closure_2[44]);
-        }
-        if (tmp) {
-          tmp = predicate(productId);
-        }
-        if (tmp) {
-          tmp = productId.premiumTier !== TIER_1.TIER_1;
-        }
-        if (tmp) {
-          let tmp9 = !predicate(closure_2[43]).isIOS();
-          if (!tmp9) {
-            tmp9 = null == availablePlanForItems;
-          }
-          if (!tmp9) {
-            tmp9 = null != availablePlanForItems.getAvailablePlanForItems(predicate(closure_2[44]).getSubscriptionItemsForProduct(productId.productId));
-            const obj3 = predicate(closure_2[44]);
-          }
-          tmp = tmp9;
-          const obj2 = predicate(closure_2[43]);
-        }
-        if (tmp) {
-          let flag = true;
-          if (null != closure_7) {
-            const tmp20 = predicate(closure_2[52]).AppStorePremiumProductIdsToPremiumBundledItems[tmp16];
-            flag = null != tmp20.premiumTier || productId.numPremiumGuild >= tmp20.numPremiumGuild;
-            const tmp21 = null != tmp20.premiumTier || productId.numPremiumGuild >= tmp20.numPremiumGuild;
-          }
-          tmp = flag;
-        }
-        return tmp;
-      });
-      if (0 === found.length) {
-        return null;
-      } else {
-        const label = predicate.getLabel();
-        let obj = {};
-        let tmp3 = !isBoostPurchaseFlow;
-        if (tmp3) {
-          obj = { string: label };
-          tmp3 = callback(closure_42, obj);
-        }
-        const items = [tmp3, ];
-        obj = { trackPaymentFlowStep, trackNewPaymentFlow, analyticsLoadId, plans: found, label, shouldShowModernBoostFlow: isBoostPurchaseFlow, purchase, subscription, shouldRemoveYearlyUpsell };
-        items[1] = callback(closure_40, obj);
-        obj.children = items;
-        return closure_31(productIdFromSubscription, obj, label);
-      }
-    })
-  ];
+  items1[1] = callback3(CurrentPlanRow, obj);
+  items1[2] = found1.map((plans) => {
+    const section = plans.section;
+    const label = section.getLabel(c10);
+    let obj = {};
+    let tmp4 = !isBoostPurchaseFlow;
+    if (tmp4) {
+      obj = { string: label };
+      tmp4 = outer1_31(outer1_44, obj);
+    }
+    const items = [tmp4, ];
+    obj = { trackPaymentFlowStep, trackNewPaymentFlow, analyticsLoadId, plans: plans.plansInSection, label, shouldShowModernBoostFlow: isBoostPurchaseFlow, showBoostOnlyLabels: c10, purchase, subscription, shouldRemoveYearlyUpsell };
+    items[1] = outer1_31(outer1_42, obj);
+    obj.children = items;
+    return outer1_32(productIdFromSubscription, obj, section.id);
+  });
   obj.children = items1;
-  return closure_31(productIdFromSubscription, obj);
+  return closure_32(productIdFromSubscription, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-({ Image: closure_6, View: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[3]));
-const useNativeCheckoutStore = arg1(dependencyMap[4]).useNativeCheckoutStore;
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]);
-let closure_13 = importDefault(dependencyMap[8]);
-const tmp2 = arg1(dependencyMap[3]);
-({ setIsPurchasing: closure_14, usePremiumPlanSelectStore: closure_15 } = arg1(dependencyMap[9]));
-const tmp3 = arg1(dependencyMap[9]);
-({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_16, PremiumSubscriptionSKUs: closure_17, PremiumTypes: closure_18, SubscriptionIntervalTypes: closure_19, SubscriptionPlans: closure_20 } = arg1(dependencyMap[10]));
-const tmp4 = arg1(dependencyMap[10]);
-({ AnalyticEvents: closure_21, AnalyticsObjects: closure_22, AnalyticsObjectTypes: closure_23, Fonts, HorizontalGradient: closure_24, PaymentGateways: closure_25, SubscriptionStatusTypes: closure_26, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = arg1(dependencyMap[11]));
-const tmp5 = arg1(dependencyMap[11]);
-({ getPremiumGradientColor: closure_27, Gradients: closure_28 } = arg1(dependencyMap[12]));
-const ItemPurchaseType = arg1(dependencyMap[13]).ItemPurchaseType;
-const tmp6 = arg1(dependencyMap[12]);
-({ jsx: closure_30, jsxs: closure_31, Fragment: closure_32 } = arg1(dependencyMap[14]));
-let obj1 = arg1(dependencyMap[15]);
+({ Image: closure_6, View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
+({ setIsPurchasing: closure_14, usePremiumPlanSelectStore: closure_15 } = usePremiumPlanSelectStore);
+({ GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_16, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_17, PremiumSubscriptionSKUs: closure_18, PremiumTypes: closure_19, SubscriptionIntervalTypes: closure_20, SubscriptionPlans: closure_21 } = GuildFeatures);
+({ AnalyticEvents: closure_22, AnalyticsObjects: closure_23, AnalyticsObjectTypes: closure_24, Fonts, HorizontalGradient: closure_25, PaymentGateways: closure_26, SubscriptionStatusTypes: closure_27, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = ME);
+({ getPremiumGradientColor: closure_28, Gradients: closure_29 } = items);
+({ jsx: closure_31, jsxs: closure_32, Fragment: closure_33 } = jsxProd);
 let obj = {};
 obj = {};
-const merged = Object.assign(importDefault(dependencyMap[16])(Fonts.DISPLAY_EXTRABOLD, undefined, 24));
+let merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, undefined, 24));
 obj["marginTop"] = 16;
-obj["color"] = arg1(dependencyMap[17]).DARK_WHITE_500_LIGHT_BLACK_500;
+obj["color"] = require("result").DARK_WHITE_500_LIGHT_BLACK_500;
 obj.header = obj;
-obj1 = { <string:1369465220>: "M12 12H10.5V10.5H12V12Z", <string:4217439774>: "#FCC0F4", <string:1638320977>: "M13.5 10.5H12V9H13.5V10.5Z", <string:3882771414>: "#FCC0F4", <string:2690802681>: "M15 9H13.5V7.5H15V9Z", <string:1314542008>: "#FCC0F4", <string:4065459041>: "M12 18H10.5V16.5H12V18Z", borderRadius: importDefault(dependencyMap[18]).radii.sm, backgroundColor: arg1(dependencyMap[17]).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
-obj.row = obj1;
+_createForOfIteratorHelperLoose = { marginTop: 7, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, flexDirection: "row", alignItems: "center", paddingVertical: 12, paddingHorizontal: 12, flexWrap: "wrap", backgroundColor: require("result").DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj.row = _createForOfIteratorHelperLoose;
 obj.rowDisabled = { opacity: 0.5 };
-obj.imgWumpusNitro = { hideWhenScrolling: "isArray", autoCapitalize: "c" };
-obj.imgBoost = { hideWhenScrolling: "isArray", autoCapitalize: "c" };
-obj.imgWumpusNitroBoost = { "Null": true, "Null": true };
-obj.imgWumpusNitroClassic = { "Null": "isArray", "Null": "c" };
-obj.imgWumpusNitroClassicBoost = { "Null": true, "Null": true };
-obj.imgWumpusNitroTier0 = { "Null": "isArray", "Null": "c" };
-const tmp7 = arg1(dependencyMap[14]);
-obj.rowText = { fontSize: 16, color: arg1(dependencyMap[17]).DARK_WHITE_500_LIGHT_BLACK_500 };
-obj.rowPlanDescription = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
-const obj4 = { resizeMode: null, color: null, style: null, variant: null, fontFamily: Fonts.PRIMARY_MEDIUM };
+obj.imgWumpusNitro = { height: 40, width: 40 };
+obj.imgBoost = { height: 40, width: 40 };
+obj.imgWumpusNitroBoost = { width: 32, height: 32 };
+obj.imgWumpusNitroClassic = { width: 40, height: 40 };
+obj.imgWumpusNitroClassicBoost = { width: 32, height: 32 };
+obj.imgWumpusNitroTier0 = { width: 40, height: 40 };
+obj.rowText = { fontSize: 16, color: require("result").DARK_WHITE_500_LIGHT_BLACK_500 };
+let obj3 = { marginLeft: 12, fontFamily: Fonts.PRIMARY_SEMIBOLD, lineHeight: 20 };
+obj.rowPlanDescription = obj3;
+let obj4 = { fontSize: 12, marginLeft: 5, fontFamily: Fonts.PRIMARY_MEDIUM, fontWeight: "400" };
 obj.rowPlanDescriptionSubtext = obj4;
 obj.rowPrice = { marginLeft: "auto" };
-obj.purchasingSpinner = { <string:1382672226>: false, <string:3949718378>: false, <string:1369504610>: false, <string:928094841>: false, <string:2985058826>: false, <string:1373970001>: false, <string:3965848119>: false };
-obj.container = { 9223372036854775807: "<string:879886337>", 0: "<string:771751936>" };
-const obj2 = { fontSize: 16, color: arg1(dependencyMap[17]).DARK_WHITE_500_LIGHT_BLACK_500 };
-const obj3 = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
-obj.currentPlanGradient = { marginTop: 20, borderRadius: importDefault(dependencyMap[18]).radii.sm };
-obj.currentPlanRow = { delete: "isArray", borderRadius: "constructor", paddingHorizontal: "type", width: "isArray" };
-obj.loadingSpinnerContainer = {};
-const obj6 = { HOUR: "%Float16Array%", DAY: "liveContainer", margin: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
+obj.purchasingSpinner = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" };
+obj.container = { marginHorizontal: 14.5, paddingBottom: 10 };
+let obj2 = { fontSize: 16, color: require("result").DARK_WHITE_500_LIGHT_BLACK_500 };
+obj.currentPlanGradient = { marginTop: 20, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+obj.currentPlanRow = { marginTop: 0.5, marginRight: 0.5, marginLeft: 0.5, marginBottom: 0.5 };
+obj.loadingSpinnerContainer = { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" };
+let obj6 = { lineHeight: 20, marginTop: 40, margin: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj.offPlatformSubscriptionMessage = obj6;
 obj.premiumHeaderLabel = { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, marginTop: 8 };
-const obj5 = { marginTop: 20, borderRadius: importDefault(dependencyMap[18]).radii.sm };
-obj.boostContainer = { rowGap: importDefault(dependencyMap[18]).space.PX_24 };
-obj.boostRowIcon = { "Null": true, "Null": true };
-let closure_33 = obj1.createStyles(obj);
-let closure_34 = { [importDefault(dependencyMap[24])]: "imgWumpusNitro", [importDefault(dependencyMap[26])]: "imgWumpusNitroBoost", [importDefault(dependencyMap[23])]: "imgWumpusNitroClassic", [importDefault(dependencyMap[25])]: "imgWumpusNitroClassicBoost", [importDefault(dependencyMap[22])]: "imgWumpusNitroTier0", [importDefault(dependencyMap[21])]: "imgBoost" };
-const items = [
+let obj5 = { marginTop: 20, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+obj.boostContainer = { rowGap: require("_createForOfIteratorHelperLoose").space.PX_24 };
+obj.boostRowIcon = { width: 32, height: 32 };
+let obj7 = { rowGap: require("_createForOfIteratorHelperLoose").space.PX_24 };
+obj.nitroBanner = { alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
+obj.nitroBannerText = { textAlign: "center" };
+let closure_34 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_35 = { [importDefault(12477)]: "imgWumpusNitro", [importDefault(12479)]: "imgWumpusNitroBoost", [importDefault(12476)]: "imgWumpusNitroClassic", [importDefault(12478)]: "imgWumpusNitroClassicBoost", [importDefault(12475)]: "imgWumpusNitroTier0", [importDefault(12474)]: "imgBoost" };
+items = [
   {
+    id: "premium",
     getLabel() {
-      const intl = arg1(dependencyMap[19]).intl;
-      return intl.string(arg1(dependencyMap[19]).t.A4BfLn);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.A4BfLn);
     },
     predicate(premiumTier) {
       let tmp = null != premiumTier.premiumTier;
@@ -606,9 +705,11 @@ const items = [
     }
   },
   {
-    getLabel() {
-      const intl = arg1(dependencyMap[19]).intl;
-      return intl.string(arg1(dependencyMap[19]).t.lyXyD0);
+    id: "premium-and-premium-guild",
+    getLabel(arg0) {
+      const intl = require(1212) /* getSystemLocale */.intl;
+      const t = require(1212) /* getSystemLocale */.t;
+      return intl.string(arg0 ? t.rPoOQW : t.lyXyD0);
     },
     predicate(premiumTier) {
       let tmp = null != premiumTier.premiumTier;
@@ -619,9 +720,10 @@ const items = [
     }
   },
   {
+    id: "premium-guild",
     getLabel() {
-      const intl = arg1(dependencyMap[19]).intl;
-      return intl.string(arg1(dependencyMap[19]).t.rPoOQW);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.rPoOQW);
     },
     predicate(premiumTier) {
       let tmp = null == premiumTier.premiumTier;
@@ -632,7 +734,7 @@ const items = [
     }
   }
 ];
-let closure_36 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPurchaseFlow) {
+let closure_37 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPurchaseFlow) {
   let analyticsLocation;
   let applicationId;
   let planId;
@@ -648,49 +750,46 @@ let closure_36 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPu
     flag = false;
   }
   ({ analyticsLocation, planId, applicationId } = isBoostPurchaseFlow);
-  const arg1 = applicationId;
   let importDefault;
-  let dependencyMap;
-  let closure_3;
-  let callback;
-  let importAllResult;
+  let basePurchaseFlowAnalyticsFields;
+  let obj2;
+  let handlePremiumPurchase;
+  let navigation;
   let patchOrderLineItems;
   let orderRequired;
   let stateFromStores;
-  const tmp2 = callback6();
-  const analyticsLocations = importDefault(dependencyMap[57])().analyticsLocations;
-  let obj = arg1(dependencyMap[31]);
-  const items = [closure_12, closure_11];
-  const tmp3 = callback(obj.useStateFromStoresArray(items, () => {
-    const items = [closure_12.hasFetchedSubscriptions(), loadedForPremiumSKUs.isLoadedForPremiumSKUs()];
+  const tmp2 = callback5();
+  const analyticsLocations = importDefault(basePurchaseFlowAnalyticsFields[58])().analyticsLocations;
+  let obj = applicationId(basePurchaseFlowAnalyticsFields[32]);
+  let items = [closure_12, _isNativeReflectConstruct];
+  const tmp3 = handlePremiumPurchase(obj.useStateFromStoresArray(items, () => {
+    const items = [outer1_12.hasFetchedSubscriptions(), outer1_11.isLoadedForPremiumSKUs()];
     return items;
   }), 2);
   importDefault = tmp4;
   const items1 = [tmp3[1]];
-  const effect = importAllResult.useEffect(() => {
-    if (!tmp4) {
-      const premiumSubscriptionPlans = applicationId(basePurchaseFlowAnalyticsFields[58]).fetchPremiumSubscriptionPlans();
-      const obj = applicationId(basePurchaseFlowAnalyticsFields[58]);
+  const effect = navigation.useEffect(() => {
+    if (!c1) {
+      const premiumSubscriptionPlans = applicationId(basePurchaseFlowAnalyticsFields[59]).fetchPremiumSubscriptionPlans();
+      const obj = applicationId(basePurchaseFlowAnalyticsFields[59]);
     }
   }, items1);
-  const tmp6 = importDefault(dependencyMap[59])(() => applicationId(basePurchaseFlowAnalyticsFields[45]).getNewAnalyticsLoadId());
-  let obj1 = arg1(dependencyMap[45]);
+  const tmp6 = importDefault(basePurchaseFlowAnalyticsFields[60])(() => applicationId(basePurchaseFlowAnalyticsFields[46]).getNewAnalyticsLoadId());
+  let obj1 = applicationId(basePurchaseFlowAnalyticsFields[46]);
   obj = { analyticsLoadId: tmp6 };
   obj = { object: constants2.BUTTON_CTA, object_type: constants3.BUY };
-  const merged = Object.assign(analyticsLocation);
+  let merged = Object.assign(analyticsLocation);
   obj.analyticsLocation = obj;
   obj.analyticsLocations = analyticsLocations;
-  const basePurchaseFlowAnalyticsFields = obj1.getBasePurchaseFlowAnalyticsFields(obj);
-  dependencyMap = basePurchaseFlowAnalyticsFields;
+  basePurchaseFlowAnalyticsFields = obj1.getBasePurchaseFlowAnalyticsFields(obj);
   if (null != planId) {
     obj1 = { subscription_plan_id: planId };
-    let obj2 = obj1;
+    obj2 = obj1;
   } else {
     obj2 = {};
   }
-  closure_3 = obj2;
-  importDefault(dependencyMap[60])(() => {
-    let obj = applicationId(basePurchaseFlowAnalyticsFields[61]);
+  importDefault(basePurchaseFlowAnalyticsFields[61])(() => {
+    let obj = applicationId(basePurchaseFlowAnalyticsFields[62]);
     obj = {};
     const merged = Object.assign(basePurchaseFlowAnalyticsFields);
     const merged1 = Object.assign(obj2);
@@ -698,77 +797,75 @@ let closure_36 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPu
     const result = obj.trackPaymentFlowStartedAnalyticsAndCTP(obj);
   });
   const activeSubscription = useNativeCheckoutStore((activeSubscription) => ({ activeSubscription: activeSubscription.checkoutInitParameters.activeSubscription, order: activeSubscription.orderRecord })).activeSubscription;
-  let obj6 = arg1(dependencyMap[62]);
-  const handlePremiumPurchase = obj6.useHandlePremiumPurchase();
-  callback = handlePremiumPurchase;
-  let obj7 = arg1(dependencyMap[63]);
-  const navigation = obj7.useNavigation();
-  importAllResult = navigation;
-  let obj8 = arg1(dependencyMap[64]);
+  let obj6 = applicationId(basePurchaseFlowAnalyticsFields[63]);
+  handlePremiumPurchase = obj6.useHandlePremiumPurchase();
+  let obj7 = applicationId(basePurchaseFlowAnalyticsFields[64]);
+  navigation = obj7.useNavigation();
+  let obj8 = applicationId(basePurchaseFlowAnalyticsFields[65]);
   const isPaymentsBlocked = obj8.useIsPaymentsBlocked();
-  let obj9 = arg1(dependencyMap[65]);
+  let obj9 = applicationId(basePurchaseFlowAnalyticsFields[66]);
   if (null != activeSubscription) {
-    const obj3 = { subscriptionId: activeSubscription.id, renewal: true, analyticsLocations, analyticsLocation: importDefault(dependencyMap[66]).PREMIUM_PLAN_SELECT };
+    const obj3 = { subscriptionId: activeSubscription.id, renewal: true, analyticsLocations, analyticsLocation: importDefault(basePurchaseFlowAnalyticsFields[67]).PREMIUM_PLAN_SELECT };
     let obj4 = obj3;
   } else {
     obj4 = {};
   }
-  const first = callback(obj9.useFetchSubscriptionInvoicePreview(obj4), 1)[0];
+  const first = handlePremiumPurchase(obj9.useFetchSubscriptionInvoicePreview(obj4), 1)[0];
   const tmp16 = useNativeCheckoutStore((patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired }));
   patchOrderLineItems = tmp16.patchOrderLineItems;
   orderRequired = tmp16.orderRequired;
-  let obj12 = arg1(dependencyMap[31]);
+  let obj12 = applicationId(basePurchaseFlowAnalyticsFields[32]);
   const items2 = [closure_12];
-  stateFromStores = obj12.useStateFromStores(items2, () => closure_12.getPremiumTypeSubscription());
+  stateFromStores = obj12.useStateFromStores(items2, () => outer1_12.getPremiumTypeSubscription());
   const items3 = [basePurchaseFlowAnalyticsFields.location, applicationId, handlePremiumPurchase, navigation, patchOrderLineItems, orderRequired, stateFromStores];
   if (null == predicate) {
     return null;
   } else {
     if (!tmp3[0]) {
-      const obj5 = { style: tmp2.loadingSpinnerContainer, children: callback4(arg1(dependencyMap[40]).ActivityIndicator, {}) };
-      callback4(orderRequired, obj5);
+      const obj5 = { style: tmp2.loadingSpinnerContainer, children: callback3(applicationId(basePurchaseFlowAnalyticsFields[41]).ActivityIndicator, { animating: true, size: "large" }) };
+      callback3(orderRequired, obj5);
     }
     if (isPaymentsBlocked) {
       obj6 = { ref: tmp };
       obj7 = { top: 40 };
       obj6.contentInset = obj7;
-      tmp = importDefault(dependencyMap[69]);
-      obj6.children = callback4(tmp, {});
-      let tmp26Result = callback4(stateFromStores, obj6);
+      tmp = importDefault(basePurchaseFlowAnalyticsFields[70]);
+      obj6.children = callback3(tmp, {});
+      let tmp26Result = callback3(stateFromStores, obj6);
     } else {
       if (null != activeSubscription) {
         if (activeSubscription.isOnPlatformMatchingExternalPaymentGateway) {
-          let obj14 = arg1(dependencyMap[44]);
-          let obj15 = arg1(dependencyMap[44]);
+          let obj14 = applicationId(basePurchaseFlowAnalyticsFields[45]);
+          let obj15 = applicationId(basePurchaseFlowAnalyticsFields[45]);
         }
         obj8 = {};
         let tmp28 = null != first;
         if (tmp28) {
           obj9 = {};
-          const obj10 = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp2.premiumHeaderLabel };
-          const intl = arg1(dependencyMap[19]).intl;
-          obj10.children = intl.string(arg1(dependencyMap[19]).t.ITurwY);
-          const items4 = [callback4(arg1(dependencyMap[29]).Text, obj10), ];
+          const obj10 = { style: tmp2.premiumHeaderLabel, variant: "eyebrow", color: "text-default" };
+          const intl = applicationId(basePurchaseFlowAnalyticsFields[22]).intl;
+          obj10.children = intl.string(applicationId(basePurchaseFlowAnalyticsFields[22]).t.ITurwY);
+          const items4 = [callback3(applicationId(basePurchaseFlowAnalyticsFields[21]).Text, obj10), ];
           const obj11 = { subscription: activeSubscription, renewalInvoicePreview: first };
-          items4[1] = callback4(arg1(dependencyMap[70]).PremiumSubscriptionHeader, obj11);
+          items4[1] = callback3(applicationId(basePurchaseFlowAnalyticsFields[71]).PremiumSubscriptionHeader, obj11);
           obj9.children = items4;
-          tmp28 = callback5(closure_32, obj9);
+          tmp28 = callback4(closure_33, obj9);
         }
         const items5 = [tmp28, ];
         obj12 = { style: tmp2.offPlatformSubscriptionMessage, variant: "text-md/semibold" };
         const obj13 = { shouldAllowExternalManagement: true };
-        obj12.children = arg1(dependencyMap[71]).getExternalManagementMessage(activeSubscription, obj13);
-        items5[1] = callback4(arg1(dependencyMap[29]).Text, obj12);
+        obj12.children = applicationId(basePurchaseFlowAnalyticsFields[72]).getExternalManagementMessage(activeSubscription, obj13);
+        items5[1] = callback3(applicationId(basePurchaseFlowAnalyticsFields[21]).Text, obj12);
         obj8.children = items5;
-        tmp26Result = callback5(stateFromStores, obj8);
-        const obj22 = arg1(dependencyMap[71]);
-        const tmp26 = callback5;
+        tmp26Result = callback4(stateFromStores, obj8);
+        const obj22 = applicationId(basePurchaseFlowAnalyticsFields[72]);
+        const tmp26 = callback4;
         const tmp27 = stateFromStores;
       }
       obj14 = { ref: tmp };
       obj15 = {
         subscription: activeSubscription,
-        plans: arg1(dependencyMap[44]).getPremiumBundlesWithPredicate(predicate),
+        plans: applicationId(basePurchaseFlowAnalyticsFields[45]).getPremiumBundlesWithPredicate(predicate),
         showCurrentPlan,
         isBoostPurchaseFlow: flag,
         analyticsLoadId: tmp6,
@@ -777,16 +874,16 @@ let closure_36 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPu
               let productId;
               let toStep;
               ({ productId, fromStep, toStep } = arg0);
-              let obj = tmp4(basePurchaseFlowAnalyticsFields[72]);
+              let obj = _undefined(basePurchaseFlowAnalyticsFields[73]);
               obj = { application_id: applicationId };
-              const merged = Object.assign(applicationId(basePurchaseFlowAnalyticsFields[45]).getPaymentFlowStepAnalyticsFields(basePurchaseFlowAnalyticsFields, { from_step: fromStep, to_step: toStep, subscription_plan_gateway_plan_id: productId }));
-              obj.track(constants.PAYMENT_FLOW_STEP, obj);
+              const merged = Object.assign(applicationId(basePurchaseFlowAnalyticsFields[46]).getPaymentFlowStepAnalyticsFields(basePurchaseFlowAnalyticsFields, { from_step: fromStep, to_step: toStep, subscription_plan_gateway_plan_id: productId }));
+              obj.track(outer1_22.PAYMENT_FLOW_STEP, obj);
             },
         trackNewPaymentFlow(arg0) {
               let newFlowAnalyticsLoadId;
               let productId;
               ({ newFlowAnalyticsLoadId, productId } = arg0);
-              let obj = applicationId(basePurchaseFlowAnalyticsFields[61]);
+              let obj = applicationId(basePurchaseFlowAnalyticsFields[62]);
               obj = {};
               const merged = Object.assign(basePurchaseFlowAnalyticsFields);
               obj["subscription_plan_gateway_plan_id"] = productId;
@@ -796,17 +893,47 @@ let closure_36 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPu
             },
         purchase: tmp18
       };
-      obj14.children = callback4(PlanSections, obj15);
-      tmp26Result = callback4(stateFromStores, obj14);
-      const obj26 = arg1(dependencyMap[44]);
+      obj14.children = callback3(PlanSections, obj15);
+      tmp26Result = callback3(stateFromStores, obj14);
+      const obj26 = applicationId(basePurchaseFlowAnalyticsFields[45]);
     }
   }
 });
-const obj7 = { rowGap: importDefault(dependencyMap[18]).space.PX_24 };
-const obj8 = {
+let obj10 = {
+  id: "premium-and-premium-guild",
+  getLabel(arg0) {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    const t = require(1212) /* getSystemLocale */.t;
+    return intl.string(arg0 ? t.rPoOQW : t.lyXyD0);
+  },
+  predicate(premiumTier) {
+    let tmp = null != premiumTier.premiumTier;
+    if (tmp) {
+      tmp = 0 !== premiumTier.numPremiumGuild;
+    }
+    return tmp;
+  }
+};
+let obj11 = {
+  id: "premium-guild",
   getLabel() {
-    const intl = arg1(dependencyMap[19]).intl;
-    return intl.string(arg1(dependencyMap[19]).t.A4BfLn);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.rPoOQW);
+  },
+  predicate(premiumTier) {
+    let tmp = null == premiumTier.premiumTier;
+    if (tmp) {
+      tmp = 0 !== premiumTier.numPremiumGuild;
+    }
+    return tmp;
+  }
+};
+let obj8 = { alignItems: "center", paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
+let obj9 = {
+  id: "premium",
+  getLabel() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.A4BfLn);
   },
   predicate(premiumTier) {
     let tmp = null != premiumTier.premiumTier;
@@ -816,18 +943,17 @@ const obj8 = {
     return tmp;
   }
 };
-const result = arg1(dependencyMap[75]).fileFinishedImporting("modules/premium/native/PremiumPlanSelect.tsx");
+let result = require("result").fileFinishedImporting("modules/premium/native/PremiumPlanSelect.tsx");
 
 export default function PremiumPlanSelectWithOrderCTX(isBoostPurchaseFlow) {
-  const arg1 = isBoostPurchaseFlow;
-  let obj = arg1(dependencyMap[63]);
+  const _require = isBoostPurchaseFlow;
+  let obj = _require(stateFromStores1[64]);
   const navigation = obj.useNavigation();
-  const importDefault = navigation;
-  let obj1 = arg1(dependencyMap[31]);
+  let obj1 = _require(stateFromStores1[32]);
   const items = [closure_12];
-  const stateFromStores = obj1.useStateFromStores(items, () => closure_12.getPremiumTypeSubscription());
-  const NitroACOMSubscriptionExperiment = arg1(dependencyMap[73]).NitroACOMSubscriptionExperiment;
-  let obj2 = arg1(dependencyMap[43]);
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_12.getPremiumTypeSubscription());
+  const NitroACOMSubscriptionExperiment = _require(stateFromStores1[74]).NitroACOMSubscriptionExperiment;
+  let obj2 = _require(stateFromStores1[44]);
   if (obj2.isIOS()) {
     NitroACOMSubscriptionExperiment.useConfig({ location: "PremiumPlanSelectWithOrderCTX" }).enabled ? tmp4.APPLE_ADVANCED_COMMERCE : tmp4.APPLE;
   } else {
@@ -836,26 +962,25 @@ export default function PremiumPlanSelectWithOrderCTX(isBoostPurchaseFlow) {
       paymentGateway = stateFromStores.paymentGateway;
     }
     obj = { subscriptionPlanId: PREMIUM_YEAR_TIER_2.PREMIUM_YEAR_TIER_2 };
-    let obj4 = arg1(dependencyMap[20]);
+    let obj4 = _require(stateFromStores1[23]);
     obj.skuId = obj4.castPremiumSubscriptionAsSkuId(TIER_2.TIER_2);
     obj.quantity = 1;
     const items1 = [obj];
-    let obj5 = arg1(dependencyMap[31]);
+    let obj5 = _require(stateFromStores1[32]);
     const items2 = [closure_12];
-    const stateFromStores1 = obj5.useStateFromStores(items2, () => closure_12.hasFetchedSubscriptions());
-    const dependencyMap = stateFromStores1;
+    stateFromStores1 = obj5.useStateFromStores(items2, () => outer1_12.hasFetchedSubscriptions());
     const items3 = [stateFromStores1];
     const effect = importAllResult.useEffect(() => {
       if (!stateFromStores1) {
-        const subscriptions = arg0(stateFromStores1[68]).fetchSubscriptions();
-        const obj = arg0(stateFromStores1[68]);
+        const subscriptions = isBoostPurchaseFlow(stateFromStores1[69]).fetchSubscriptions();
+        const obj = isBoostPurchaseFlow(stateFromStores1[69]);
       }
     }, items3);
     const items4 = [closure_10];
-    const stateFromStores2 = arg1(dependencyMap[31]).useStateFromStores(items4, () => {
+    const stateFromStores2 = _require(stateFromStores1[32]).useStateFromStores(items4, () => {
       let tmp;
-      if (null != arg0.guildId) {
-        const guild = guild.getGuild(arg0.guildId);
+      if (null != isBoostPurchaseFlow.guildId) {
+        const guild = outer1_10.getGuild(isBoostPurchaseFlow.guildId);
         let name;
         if (null != guild) {
           name = guild.name;
@@ -864,27 +989,25 @@ export default function PremiumPlanSelectWithOrderCTX(isBoostPurchaseFlow) {
       }
       return tmp;
     });
-    let closure_3 = stateFromStores2;
     let mobileBoostingEnabled = true === isBoostPurchaseFlow.isBoostPurchaseFlow;
     if (mobileBoostingEnabled) {
-      mobileBoostingEnabled = arg1(dependencyMap[51]).getMobileBoostingEnabled("PremiumPlanSelect");
-      const obj8 = arg1(dependencyMap[51]);
+      mobileBoostingEnabled = _require(stateFromStores1[52]).getMobileBoostingEnabled("PremiumPlanSelect");
+      const obj8 = _require(stateFromStores1[52]);
     }
-    let closure_4 = mobileBoostingEnabled;
     const items5 = [navigation, mobileBoostingEnabled, stateFromStores2];
     const layoutEffect = importAllResult.useLayoutEffect(() => {
       let obj = {};
       if (mobileBoostingEnabled) {
         if (null != stateFromStores2) {
-          const intl2 = arg0(stateFromStores1[19]).intl;
+          const intl2 = isBoostPurchaseFlow(stateFromStores1[22]).intl;
           obj = { server: stateFromStores2 };
-          let formatToPlainStringResult = intl2.formatToPlainString(arg0(stateFromStores1[19]).t.LcefAL, obj);
+          let formatToPlainStringResult = intl2.formatToPlainString(isBoostPurchaseFlow(stateFromStores1[22]).t.LcefAL, obj);
         }
         obj.title = formatToPlainStringResult;
         tmp2(obj);
       }
-      const intl = arg0(stateFromStores1[19]).intl;
-      formatToPlainStringResult = intl.string(arg0(stateFromStores1[19]).t.u95Dt4);
+      const intl = isBoostPurchaseFlow(stateFromStores1[22]).intl;
+      formatToPlainStringResult = intl.string(isBoostPurchaseFlow(stateFromStores1[22]).t.u95Dt4);
     }, items5);
     if (stateFromStores1) {
       if (null != paymentGateway) {
@@ -906,8 +1029,8 @@ export default function PremiumPlanSelectWithOrderCTX(isBoostPurchaseFlow) {
         };
         obj1 = {};
         const merged = Object.assign(isBoostPurchaseFlow);
-        obj.children = callback4(closure_36, obj1);
-        return callback4(importDefault(dependencyMap[74]), obj);
+        obj.children = callback3(closure_37, obj1);
+        return callback3(navigation(stateFromStores1[75]), obj);
       }
       let str2 = "Android";
       if (obj12.isIOS()) {
@@ -915,15 +1038,15 @@ export default function PremiumPlanSelectWithOrderCTX(isBoostPurchaseFlow) {
       }
       obj2 = {};
       const obj3 = { variant: "display-md" };
-      const intl = arg1(dependencyMap[19]).intl;
+      let intl = _require(stateFromStores1[22]).intl;
       obj4 = { mobilePlatform: str2 };
-      obj3.children = intl.format(arg1(dependencyMap[19]).t.CnoyAN, obj4);
-      obj2.children = callback4(arg1(dependencyMap[29]).Text, obj3);
-      return callback4(closure_7, obj2);
+      obj3.children = intl.format(_require(stateFromStores1[22]).t.CnoyAN, obj4);
+      obj2.children = callback3(_require(stateFromStores1[21]).Text, obj3);
+      return callback3(closure_7, obj2);
     } else {
-      obj5 = { style: tmp.loadingSpinnerContainer, children: callback4(arg1(dependencyMap[40]).ActivityIndicator, {}) };
-      return callback4(closure_7, obj5);
+      obj5 = { style: tmp.loadingSpinnerContainer, children: callback3(_require(stateFromStores1[41]).ActivityIndicator, { animating: true, size: "large" }) };
+      return callback3(closure_7, obj5);
     }
-    const obj7 = arg1(dependencyMap[31]);
+    const obj7 = _require(stateFromStores1[32]);
   }
 };

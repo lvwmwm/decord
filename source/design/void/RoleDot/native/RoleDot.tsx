@@ -1,25 +1,29 @@
-// Module ID: 12921
-// Function ID: 98522
+// Module ID: 13035
+// Function ID: 100678
 // Name: RoleDot
-// Dependencies: [251461632, 251527168, 251658240, 255852544, 297402368, 297664512, 270467072, 270663680, 270598144, 707264512, 270401536]
+// Dependencies: [31, 27, 33, 4130, 689, 477, 4549, 4571, 4554, 1327, 2]
 // Exports: RoleDot
 
-// Module 12921 (RoleDot)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { flexShrink: 0 }, background: { position: "relative" } };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[4]).radii.xs };
-obj.backgroundColor = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.borderBase = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[4]).radii.md };
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[4]).radii.md };
-obj.borderColor = { borderRadius: importDefault(dependencyMap[4]).radii.md, opacity: 0.4 };
-obj.dot = {};
-let closure_6 = obj.createStyles(obj);
-const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.md, opacity: 0.4 };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/void/RoleDot/native/RoleDot.tsx");
+// Module 13035 (RoleDot)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flexShrink: 0 }, background: { position: "relative" } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+_createForOfIteratorHelperLoose.backgroundColor = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.borderBase = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+_createForOfIteratorHelperLoose.borderColor = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, opacity: 0.4 };
+_createForOfIteratorHelperLoose.dot = { borderRadius: 10, position: "absolute" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, opacity: 0.4 };
+let result = require("jsxProd").fileFinishedImporting("design/void/RoleDot/native/RoleDot.tsx");
 
 export const RoleDot = function RoleDot(background) {
   let color;
@@ -36,8 +40,8 @@ export const RoleDot = function RoleDot(background) {
     flag = true;
   }
   ({ containerStyles, guildId } = background);
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(4549) /* getFontScale */;
   const fontScale = obj.useFontScale();
   if (null == color) {
     if (null == colors) {
@@ -53,7 +57,7 @@ export const RoleDot = function RoleDot(background) {
   const diff = sum - 2;
   obj = {};
   obj = { paddingRight: 2 * fontScale };
-  let obj3 = arg1(dependencyMap[5]);
+  let obj3 = require(477) /* set */;
   if (obj3.isAndroid()) {
     let result1 = 3 * fontScale;
   } else {
@@ -67,7 +71,7 @@ export const RoleDot = function RoleDot(background) {
   const result2 = diff / 2;
   obj.dot = { height: diff, width: diff, top: result2, left: result2 };
   const obj1 = { style: items };
-  const items = [tmp.container, obj.container, containerStyles];
+  items = [tmp.container, obj.container, containerStyles];
   const obj2 = {};
   const items1 = [tmp.background, , ];
   let backgroundColor = null;
@@ -78,7 +82,7 @@ export const RoleDot = function RoleDot(background) {
   items1[2] = obj.background;
   obj2.style = items1;
   obj3 = { style: items2 };
-  const items2 = [tmp.borderBase];
+  items2 = [tmp.borderBase];
   const obj4 = {};
   const items3 = [tmp.borderColor, obj.border, ];
   const obj5 = {};
@@ -97,13 +101,13 @@ export const RoleDot = function RoleDot(background) {
         const obj6 = {};
         const items5 = [, , ];
         ({ primaryColor: arr7[0], secondaryColor: arr7[1], tertiaryColor: arr7[2] } = colors);
-        obj6.colors = items5.filter(arg1(dependencyMap[9]).isNotNullish);
-        obj6.start = { 0: "%FunctionPrototype%", 0: "paddingStart" };
-        obj6.end = { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
+        obj6.colors = items5.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
+        obj6.start = { x: 0, y: 0 };
+        obj6.end = { x: 1, y: 0 };
         const items6 = [tmp.dot, obj.dot];
         obj6.style = items6;
-        let tmp16Result = callback(importDefault(dependencyMap[8]), obj6);
-        const tmp23 = importDefault(dependencyMap[8]);
+        let tmp16Result = callback(importDefault(4554), obj6);
+        const tmp23 = importDefault(4554);
       }
       items4[1] = tmp16Result;
       obj2.children = items4;

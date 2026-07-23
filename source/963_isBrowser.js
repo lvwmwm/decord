@@ -1,16 +1,18 @@
 // Module ID: 963
-// Function ID: 10429
+// Function ID: 10430
 // Name: isBrowser
-// Dependencies: []
+// Dependencies: [964, 798]
 
 // Module 963 (isBrowser)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.isBrowser = function isBrowser() {
   let tmp = "undefined" !== typeof window;
   if (tmp) {
-    let tmp4 = !arg1(arg6[0]).isNodeEnv();
+    let tmp4 = !require(964) /* dynamicRequire */.isNodeEnv();
     if (!tmp4) {
-      const _process = arg1(arg6[1]).GLOBAL_OBJ.process;
+      const _process = require(798).GLOBAL_OBJ.process;
       let type;
       if (null != _process) {
         type = _process.type;
@@ -18,7 +20,7 @@ arg5.isBrowser = function isBrowser() {
       tmp4 = "renderer" === type;
     }
     tmp = tmp4;
-    const obj = arg1(arg6[0]);
+    const obj = require(964) /* dynamicRequire */;
   }
   return tmp;
 };

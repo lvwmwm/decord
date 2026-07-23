@@ -1,68 +1,70 @@
-// Module ID: 13747
-// Function ID: 103949
+// Module ID: 13861
+// Function ID: 106105
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: []
+// Dependencies: [31, 27, 5066, 1194, 4812, 1921, 653, 33, 4130, 689, 4066, 566, 12119, 5472, 4938, 4098, 13860, 1934, 8970, 13862, 7495, 13865, 4541, 13866, 2]
 // Exports: UserSettingsConnections
 
-// Module 13747 (ADD_CONNECTIONS_SHEET_SENTINEL)
-let closure_3 = importAll(dependencyMap[0]);
-const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
-let closure_5 = importDefault(dependencyMap[2]);
-const FetchState = arg1(dependencyMap[2]).FetchState;
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const AnalyticsLocations = arg1(dependencyMap[6]).AnalyticsLocations;
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = { flex: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, padding: importDefault(dependencyMap[9]).space.PX_16 };
-obj.form = obj;
-let closure_13 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/user_settings/connections/native/UserSettingsConnections.tsx");
+// Module 13861 (ADD_CONNECTIONS_SHEET_SENTINEL)
+import result from "result";
+import { ActivityIndicator } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { AnalyticsLocations } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+const require = arg1;
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.form = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/connections/native/UserSettingsConnections.tsx");
 
 export const ADD_CONNECTIONS_SHEET_SENTINEL = -1;
 export const UserSettingsConnections = function UserSettingsConnections(selectedPlatformType) {
   let accounts;
   let fetching;
   selectedPlatformType = selectedPlatformType.selectedPlatformType;
-  const arg1 = selectedPlatformType;
-  const tmp = callback3();
-  const importDefault = importDefault(closure_2[10])();
-  let obj = arg1(closure_2[11]);
+  const tmp = _createForOfIteratorHelperLoose();
+  importDefault = importDefault(4066)();
+  let obj = selectedPlatformType(566);
   const items = [closure_9];
-  closure_2 = obj.useStateFromStores(items, () => locale.locale);
-  let obj1 = arg1(closure_2[11]);
+  const dependencyMap = obj.useStateFromStores(items, () => outer1_9.locale);
+  let obj1 = selectedPlatformType(566);
   const items1 = [closure_8];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => ({ fetching: closure_8.isFetching(), accounts: closure_8.getAccounts() }));
+  const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => ({ fetching: outer1_8.isFetching(), accounts: outer1_8.getAccounts() }));
   ({ accounts, fetching } = stateFromStoresObject);
-  const items2 = [closure_5];
-  const stateFromStoresObject1 = arg1(closure_2[11]).useStateFromStoresObject(items2, () => ({ authorizedAppsFetchState: authStore.getFetchState(), authorizedApps: authStore.getNewestTokensForNonChildrenApplications() }));
+  const items2 = [_isNativeReflectConstruct];
+  const stateFromStoresObject1 = selectedPlatformType(566).useStateFromStoresObject(items2, () => ({ authorizedAppsFetchState: outer1_5.getFetchState(), authorizedApps: outer1_5.getNewestTokensForNonChildrenApplications() }));
   const authorizedAppsFetchState = stateFromStoresObject1.authorizedAppsFetchState;
-  const React = authorizedAppsFetchState;
-  const ActivityIndicator = stateFromStoresObject1.authorizedApps;
-  const obj3 = arg1(closure_2[11]);
-  const tmp4Result = importDefault(closure_2[12])(id.getId(), { includeHidden: true });
+  const authorizedApps = stateFromStoresObject1.authorizedApps;
+  const obj3 = selectedPlatformType(566);
+  const tmp4Result = importDefault(12119)(id.getId(), { includeHidden: true });
   const prop = tmp4Result.filteredAppIdentities;
   const items3 = [authorizedAppsFetchState];
-  const effect = React.useEffect(() => {
-    if (authorizedAppsFetchState === constants.NOT_FETCHED) {
-      const response = callback(closure_2[13]).fetch();
-      const obj = callback(closure_2[13]);
+  const effect = authorizedAppsFetchState.useEffect(() => {
+    if (authorizedAppsFetchState === outer1_6.NOT_FETCHED) {
+      const response = callback(paths[13]).fetch();
+      const obj = callback(paths[13]);
     }
   }, items3);
-  const effect1 = React.useEffect(() => {
-    const response = callback(closure_2[14]).fetch();
+  const effect1 = authorizedAppsFetchState.useEffect(() => {
+    const response = callback(paths[14]).fetch();
   }, []);
   const items4 = [selectedPlatformType];
-  const effect2 = React.useEffect(() => {
+  const effect2 = authorizedAppsFetchState.useEffect(() => {
     if (null != selectedPlatformType) {
       if (-1 === selectedPlatformType) {
         callback(paths[15]).openLazy(selectedPlatformType(paths[17])(paths[16], paths.paths), "AddConnection");
         const obj2 = callback(paths[15]);
       } else {
-        const obj = { platformType: selectedPlatformType, location: constants2.USER_SETTINGS };
+        const obj = { platformType: selectedPlatformType, location: outer1_10.USER_SETTINGS };
         callback(paths[18])(obj);
       }
     }
@@ -71,25 +73,25 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (!tmp4Result.isLoading) {
       if (0 === accounts.length) {
         if (0 === prop.length) {
-          let tmp13 = callback(importDefault(closure_2[19]), {});
+          let tmp13 = callback(importDefault(13862), {});
         }
       }
       obj = { style: tmp.form };
       const items5 = [
         prop.map((application_id) => {
-              const selectedPlatformType = application_id;
-              const obj = { identity: application_id, token: authorizedApps.find((application) => application.application.id === application.application_id) };
-              return callback2(callback(closure_2[21]), obj, "" + application_id.application_id + "-" + application_id.provider_issued_user_id);
+              let closure_0 = application_id;
+              const obj = { identity: application_id, token: authorizedApps.find((application) => application.application.id === application_id.application_id) };
+              return outer1_11(callback(paths[21]), obj, "" + application_id.application_id + "-" + application_id.provider_issued_user_id);
             }),
 
       ];
-      obj = { spacing: 16, children: accounts.map((account) => callback2(callback(closure_2[23]), { theme: callback, locale: closure_2, account }, account.id)) };
-      items5[1] = callback(arg1(closure_2[22]).Stack, obj);
+      obj = { spacing: 16, children: accounts.map((account) => outer1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id)) };
+      items5[1] = callback(selectedPlatformType(4541).Stack, obj);
       obj.children = items5;
-      tmp13 = callback2(arg1(closure_2[20]).Form, obj);
+      tmp13 = callback2(selectedPlatformType(7495).Form, obj);
     }
     return tmp13;
   }
   obj1 = { style: tmp.flex, size: "large" };
-  tmp13 = callback(ActivityIndicator, obj1);
+  tmp13 = callback(authorizedApps, obj1);
 };

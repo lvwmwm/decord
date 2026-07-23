@@ -1,10 +1,10 @@
-// Module ID: 14467
-// Function ID: 109015
+// Module ID: 14581
+// Function ID: 111168
 // Name: calculateJaroWinklerDistance
-// Dependencies: []
+// Dependencies: [2]
 // Exports: calculateJaroWinklerSimilarity
 
-// Module 14467 (calculateJaroWinklerDistance)
+// Module 14581 (calculateJaroWinklerDistance)
 function calculateJaroWinklerDistance(formatted, arg1) {
   const diff = Math.floor(Math.max(formatted.length, arg1.length) / 2) - 1;
   const items = [];
@@ -40,7 +40,7 @@ function calculateJaroWinklerDistance(formatted, arg1) {
     const _Math4 = Math;
     const _Math5 = Math;
     const diff1 = Math.floor(Math.max(formatted.length, arg1.length) / 2) - 1;
-    const obj = { <string:194540254>: "Normal", <string:1390895599>: true };
+    const obj = { a: "", b: "" };
     const items1 = [];
     for (let num4 = 0; num4 < formatted.length; num4 = num4 + 1) {
       let _Math6 = Math;
@@ -107,7 +107,7 @@ function calculateJaroWinklerDistance(formatted, arg1) {
           continue;
         } else {
           sum3 = sum2 + 1;
-          // break
+          break;
         }
         let num13 = 0.1;
         return result + 0.1 * sum3 * (1 - result);
@@ -117,10 +117,9 @@ function calculateJaroWinklerDistance(formatted, arg1) {
     return 0;
   }
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/search/StringMatchUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/search/StringMatchUtils.tsx");
 
-export const calculateJaroWinklerSimilarity = function calculateJaroWinklerSimilarity(closure_0, str) {
+export const calculateJaroWinklerSimilarity = function calculateJaroWinklerSimilarity(c0, str) {
   let obj = arg2;
   if (null == arg2) {
     obj = {};
@@ -128,10 +127,10 @@ export const calculateJaroWinklerSimilarity = function calculateJaroWinklerSimil
   const caseSensitive = obj.caseSensitive;
   if (undefined !== caseSensitive) {
     if (caseSensitive) {
-      let tmp2 = calculateJaroWinklerDistance(closure_0, str);
+      let tmp2 = calculateJaroWinklerDistance(c0, str);
     }
     return tmp2;
   }
-  const formatted = closure_0.toLowerCase();
+  const formatted = c0.toLowerCase();
   tmp2 = calculateJaroWinklerDistance(formatted, str.toLowerCase());
 };

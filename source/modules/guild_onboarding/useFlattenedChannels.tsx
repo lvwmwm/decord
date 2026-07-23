@@ -1,53 +1,56 @@
-// Module ID: 5065
-// Function ID: 43983
+// Module ID: 5068
+// Function ID: 44002
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1348, 22, 1327, 566, 2]
 // Exports: useFlattenedChannels
 
-// Module 5065 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5068 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +61,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -87,29 +90,28 @@ function _arrayLikeToArray(arg0, arg1) {
 function getFlattenedChannels(guildId, set, found, arg3) {
   let done;
   let flag = arg3;
+  const _require = set;
   const importDefault = found;
   if (arg3 === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
   let mutableGuildChannelsForGuild;
-  let _createForOfIteratorHelperLoose;
-  let _arrayLikeToArray;
-  const tmp = importDefault(dependencyMap[1]);
-  const values = importDefault(dependencyMap[1])(mutableGuildChannelsForGuild.getMutableGuildChannelsForGuild(guildId)).values();
-  const tmpResult = importDefault(dependencyMap[1])(mutableGuildChannelsForGuild.getMutableGuildChannelsForGuild(guildId));
+  set = undefined;
+  let found2;
+  const tmp = importDefault(flag[1]);
+  const values = importDefault(flag[1])(mutableGuildChannelsForGuild.getMutableGuildChannelsForGuild(guildId)).values();
+  const tmpResult = importDefault(flag[1])(mutableGuildChannelsForGuild.getMutableGuildChannelsForGuild(guildId));
   mutableGuildChannelsForGuild = values.groupBy("parent_id").value();
   const iter = values.groupBy("parent_id");
-  const mapped = importDefault(dependencyMap[1])(found).map((isCategory) => isCategory.isCategory() ? isCategory.id : isCategory.parent_id);
-  found = mapped.filter(set(dependencyMap[2]).isNotNullish);
-  const arr = importDefault(dependencyMap[1])(found);
+  const mapped = importDefault(flag[1])(found).map((isCategory) => isCategory.isCategory() ? isCategory.id : isCategory.parent_id);
+  found = mapped.filter(_require(flag[2]).isNotNullish);
+  const arr = importDefault(flag[1])(found);
   const mapped1 = found.uniq().map((channelId) => channel.getChannel(channelId));
-  const found1 = mapped1.filter(set(dependencyMap[2]).isNotNullish);
+  const found1 = mapped1.filter(_require(flag[2]).isNotNullish);
   const uniqResult = found.uniq();
   const valueResult = found1.sortBy("position").value();
-  const iter2 = found1.sortBy("position");
-  _createForOfIteratorHelperLoose = new Set(valueResult.map((id) => id.id));
-  const found2 = found.filter((isCategory) => {
+  set = new Set(valueResult.map((id) => id.id));
+  found2 = found.filter((isCategory) => {
     let isCategoryResult = isCategory.isCategory();
     if (!isCategoryResult) {
       let hasItem = null != isCategory.parent_id;
@@ -120,9 +122,8 @@ function getFlattenedChannels(guildId, set, found, arg3) {
     }
     return !isCategoryResult;
   });
-  _arrayLikeToArray = found2;
-  set = new Set(valueResult.map((id) => id.id));
-  const sortByResult = importDefault(dependencyMap[1]).sortBy(found2, (position) => {
+  const iter2 = found1.sortBy("position");
+  const sortByResult = importDefault(flag[1]).sortBy(found2, (position) => {
     position = position.position;
     if (position.isGuildVocal()) {
       let sum = position + 10000;
@@ -131,22 +132,21 @@ function getFlattenedChannels(guildId, set, found, arg3) {
     }
     return sum;
   });
-  _arrayLikeToArray = sortByResult;
+  found2 = sortByResult;
   function _loop(value) {
-    const arg1 = value;
     if (!flag) {
-      sortByResult.push(value);
+      found2.push(value);
     }
-    if (arg1.has(value.id)) {
-      let found = closure_3[value.id];
+    if (value.has(value.id)) {
+      let found = channel[value.id];
     } else {
-      found = arg2.filter((parent_id) => parent_id.parent_id === parent_id.id);
+      found = lib.filter((parent_id) => parent_id.parent_id === value.id);
     }
     if (null == found) {
       found = [];
     }
     const items = [
-      ...arg2(flag[1]).sortBy(found, (position) => {
+      ...lib(flag[1]).sortBy(found, (position) => {
         position = position.position;
         if (position.isGuildVocal()) {
           let sum = position + 10000;
@@ -156,9 +156,9 @@ function getFlattenedChannels(guildId, set, found, arg3) {
         return sum;
       })
     ];
-    sortByResult.push.apply(items);
+    found2.push.apply(items);
   }
-  const tmp5 = _createForOfIteratorHelperLoose(valueResult);
+  const tmp5 = set(valueResult);
   let iter3 = tmp5();
   if (!iter3.done) {
     do {
@@ -170,21 +170,19 @@ function getFlattenedChannels(guildId, set, found, arg3) {
   }
   return sortByResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_onboarding/useFlattenedChannels.tsx");
+const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("modules/guild_onboarding/useFlattenedChannels.tsx");
 
 export { getFlattenedChannels };
 export const useFlattenedChannels = function useFlattenedChannels(arg0, arg1) {
   let flag = arg2;
-  arg1 = arg0;
-  const importDefault = arg1;
+  const _require = arg0;
+  let closure_1 = arg1;
   if (arg2 === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
-  const items = [closure_3];
-  return arg1(dependencyMap[3]).useStateFromStoresArray(items, () => {
-    const mapped = Array.from(arg1).map((channelId) => channel.getChannel(channelId));
-    return callback(arg0, arg1, mapped.filter(arg0(flag[2]).isNotNullish), flag);
+  const items = [_isNativeReflectConstruct];
+  return _require(flag[3]).useStateFromStoresArray(items, () => {
+    const mapped = Array.from(closure_1).map((channelId) => outer2_3.getChannel(channelId));
+    return outer1_6(callback, closure_1, mapped.filter(callback(flag[2]).isNotNullish), flag);
   });
 };

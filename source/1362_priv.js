@@ -1,16 +1,16 @@
 // Module ID: 1362
-// Function ID: 16298
+// Function ID: 16299
 // Name: priv
-// Dependencies: []
+// Dependencies: [1363, 1365, 1366]
 
 // Module 1362 (priv)
 function priv(self, lruList, dispose) {
   let tmp = dispose;
-  if (closure_3[lruList]) {
-    let tmp3 = closure_3[lruList];
+  if (dependencyMap2[lruList]) {
+    let tmp3 = dependencyMap2[lruList];
   } else {
     tmp3 = callback(lruList);
-    closure_3[lruList] = tmp3;
+    dependencyMap2[lruList] = tmp3;
   }
   if (2 === arguments.length) {
     tmp = self[tmp3];
@@ -91,12 +91,12 @@ class LRUCache {
     prev = priv(self, "lruList").tail;
     if (null !== prev) {
       do {
-        tmp3 = closure_7;
+        tmp3 = forEachStep;
         tmp4 = self;
         tmp5 = global;
         tmp6 = prev;
         tmp7 = tmp;
-        tmp8 = closure_7(self, global, prev, tmp);
+        tmp8 = forEachStep(self, global, prev, tmp);
         prev = prev.prev;
       } while (null !== tmp2);
     }
@@ -111,12 +111,12 @@ class LRUCache {
     iter = priv(self, "lruList").head;
     if (null !== iter) {
       do {
-        tmp3 = closure_7;
+        tmp3 = forEachStep;
         tmp4 = self;
         tmp5 = global;
         tmp6 = iter;
         tmp7 = tmp;
-        tmp8 = closure_7(self, global, iter, tmp);
+        tmp8 = forEachStep(self, global, iter, tmp);
         iter = iter.next;
       } while (null !== tmp2);
     }
@@ -150,13 +150,13 @@ class LRUCache {
       str3 = "lruList";
       arr = priv(self, "lruList");
       item = arr.forEach(function(key) {
-        callback(this, "dispose").call(this, key.key, key.value);
+        outer1_4(this, "dispose").call(this, key.key, key.value);
       }, self);
     }
-    tmp5 = require(dependencyMap[0]);
+    tmp5 = require("PseudoMap");
     tmp5 = new tmp5();
     tmp7 = priv(self, "cache", tmp5);
-    tmp8 = require(dependencyMap[1]);
+    tmp8 = require("Yallist");
     tmp8 = new tmp8();
     tmp10 = priv(self, "lruList", tmp8);
     tmp11 = priv(self, "length", 0);
@@ -167,7 +167,7 @@ class LRUCache {
     mapped = arr.map(function(arg0) {
       let maxAge;
       let now;
-      if (!callback(this, arg0)) {
+      if (!outer1_9(this, arg0)) {
         const obj = {};
         ({ key: obj.k, value: obj.v, maxAge, now } = arg0);
         if (!maxAge) {
@@ -185,16 +185,17 @@ class LRUCache {
   }
   inspect(arg0, arg1) {
     self = this;
-    closure_1 = "LRUCache {";
-    closure_2 = false;
+    closure_0 = require;
+    c1 = "LRUCache {";
+    c2 = false;
     flag = false;
     if (priv(this, "allowStale")) {
-      tmp = closure_1;
+      tmp = c1;
       str = "\n  allowStale: true";
-      closure_1 = `${closure_1}
+      c1 = `${c1}
   allowStale: true`;
       flag2 = true;
-      closure_2 = true;
+      c2 = true;
       flag = true;
     }
     tmp2 = priv(self, "max");
@@ -206,116 +207,116 @@ class LRUCache {
     flag3 = flag;
     if (tmp3) {
       if (flag) {
-        tmp4 = closure_1;
+        tmp4 = c1;
         str2 = ",";
-        closure_1 = `${closure_1},`;
+        c1 = `${c1},`;
       }
-      tmp5 = closure_1;
-      tmp6 = require;
-      tmp7 = closure_1;
+      tmp5 = c1;
+      tmp6 = closure_0;
+      tmp7 = c1;
       num2 = 2;
-      obj = require(closure_1[2]);
+      obj = require("inspect");
       str3 = "\n  max: ";
-      closure_1 = `${closure_1}
+      c1 = `${c1}
   max: ${obj.inspect(tmp2, require)}`;
       flag4 = true;
-      closure_2 = true;
+      c2 = true;
       flag3 = true;
     }
     tmp8 = priv(self, "maxAge");
-    module = tmp8;
+    closure_3 = tmp8;
     flag5 = flag3;
     if (tmp8) {
       if (flag3) {
-        tmp9 = closure_1;
+        tmp9 = c1;
         str4 = ",";
-        closure_1 = `${closure_1},`;
+        c1 = `${c1},`;
       }
-      tmp10 = closure_1;
-      tmp11 = require;
-      tmp12 = closure_1;
+      tmp10 = c1;
+      tmp11 = closure_0;
+      tmp12 = c1;
       num3 = 2;
-      obj2 = require(closure_1[2]);
+      obj2 = require("inspect");
       str5 = "\n  maxAge: ";
-      closure_1 = `${closure_1}
+      c1 = `${c1}
   maxAge: ${obj2.inspect(tmp8, require)}`;
       flag6 = true;
-      closure_2 = true;
+      c2 = true;
       flag5 = true;
     }
     tmp13 = priv(self, "lengthCalculator");
     priv = tmp13;
     tmp14 = tmp13;
     if (tmp13) {
-      tmp15 = closure_5;
-      tmp14 = tmp13 !== closure_5;
+      tmp15 = c5;
+      tmp14 = tmp13 !== c5;
     }
     flag7 = flag5;
     if (tmp14) {
       if (flag5) {
-        tmp16 = closure_1;
+        tmp16 = c1;
         str6 = ",";
-        closure_1 = `${closure_1},`;
+        c1 = `${c1},`;
       }
-      tmp17 = closure_1;
-      tmp18 = require;
-      tmp19 = closure_1;
+      tmp17 = c1;
+      tmp18 = closure_0;
+      tmp19 = c1;
       num4 = 2;
-      tmp20 = require(closure_1[2]);
+      tmp20 = require("inspect");
       tmp22 = priv;
       str7 = "length";
       str8 = "\n  length: ";
-      closure_1 = `${closure_1}
-  length: ${tmp21(closure_4(self, "length"), require)}`;
+      c1 = `${c1}
+  length: ${tmp21(priv(self, "length"), require)}`;
       flag8 = true;
-      closure_2 = true;
+      c2 = true;
       flag7 = true;
     }
-    closure_5 = false;
+    c5 = false;
     arr = priv(self, "lruList");
     item = arr.forEach(function(key) {
-      if (closure_5) {
-        let closure_1 = `${closure_1},
+      if (c5) {
+        let dependencyMap = `${closure_1},
         `;
       } else {
-        if (closure_2) {
-          closure_1 = `${closure_1},
+        if (c2) {
+          dependencyMap = `${closure_1},
       `;
         }
-        closure_5 = true;
-        closure_1 = `${closure_1}
+        c5 = true;
+        dependencyMap = `${closure_1}
         `;
       }
-      let obj = arg1(closure_1[2]);
+      let obj = callback(1366);
       const parts = obj.inspect(key.key).split("\n");
       obj = { value: key.value };
       const joined = parts.join("\n  ");
-      if (key.maxAge !== tmp8) {
+      if (key.maxAge !== closure_3) {
         obj.maxAge = key.maxAge;
       }
-      if (tmp13 !== closure_5) {
+      if (closure_4 !== c5) {
         obj.length = key.length;
       }
-      if (callback(this, key)) {
+      if (outer1_9(this, key)) {
         obj.stale = true;
       }
       const str4 = obj.inspect(key.key);
-      const obj4 = arg1(closure_1[2]);
-      const parts1 = arg1(closure_1[2]).inspect(obj, arg1).split("\n");
-      closure_1 = `${closure_1}${tmp5} => ${obj5.join("\n  ")}`;
+      const obj4 = callback(1366);
+      const parts1 = callback(1366).inspect(obj, callback).split("\n");
+      dependencyMap = `${closure_1}${tmp5} => ${obj5.join("\n  ")}`;
     });
-    tmp24 = closure_5;
-    if (!closure_5) {
+    tmp24 = c5;
+    if (!c5) {
       tmp24 = flag7;
     }
     if (tmp24) {
-      tmp25 = closure_1;
+      tmp25 = c1;
       str9 = "\n";
-      closure_1 = `${closure_1}
+      c1 = `${c1}
 `;
     }
-    closure_1 = `${closure_1}}`;
-    return `${closure_1}}`;
+    c1 = `${c1}}`;
+    return `${c1}}`;
   }
   set(arg0, arg1, arg2) {
     tmp = importDefault;
@@ -467,19 +468,19 @@ class LRUCache {
     return;
   }
   prune() {
-    require = this;
+    self = this;
     arr = priv(this, "cache");
     item = arr.forEach((arg0, arg1) => {
-      callback(self, arg1, false);
+      outer1_8(self, arg1, false);
     });
     return;
   }
 }
-function forEachStep(self, call, value) {
-  value = value.value;
-  let iter = value;
+function forEachStep(self, call, iter, arg3) {
+  const value = iter.value;
+  iter = value;
   if (isStale(self, value)) {
-    del(self, value);
+    del(self, iter);
     iter = value;
   }
   if (iter) {
@@ -538,10 +539,10 @@ function trim(self) {
             break;
           }
         }
-        const tmp8 = priv(self, "length");
+        tmp8 = priv(self, "length");
       }
     }
-    const tmp3 = priv(self, "length");
+    tmp3 = priv(self, "length");
   }
 }
 function del(self, value) {
@@ -570,11 +571,11 @@ function Entry(key, value, arg2, now) {
   this.maxAge = num;
 }
 let closure_3 = {};
-let closure_2 = "function" === typeof Symbol ? function makeSymbol(arg0) {
+let closure_2 = "function" === typeof Symbol ? (function makeSymbol(arg0) {
   return Symbol.for(arg0);
-} : function makeSymbol(arg0) {
+}) : (function makeSymbol(arg0) {
   return "_" + arg0;
-};
+});
 let obj = {
   set(dispose) {
     let num = dispose;
@@ -642,8 +643,8 @@ Object.defineProperty(LRUCache.prototype, "lengthCalculator", {
       priv(self, "lengthCalculator", tmp);
       priv(self, "length", 0);
       const item = priv(self, "lruList").forEach(function(value) {
-        value.length = callback(this, "lengthCalculator").call(this, value.value, value.key);
-        callback(this, "length", callback(this, "length") + value.length);
+        value.length = outer1_4(this, "lengthCalculator").call(this, value.value, value.key);
+        outer1_4(this, "length", outer1_4(this, "length") + value.length);
       }, self);
       const arr = priv(self, "lruList");
     }

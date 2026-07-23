@@ -1,13 +1,16 @@
-// Module ID: 13509
-// Function ID: 102501
+// Module ID: 13623
+// Function ID: 104657
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 4294967295, 0, 0]
+// Dependencies: [6, 7, 15, 17, 18, 1881, 566, 686, 2]
 
-// Module 13509 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
+// Module 13623 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,24 +20,22 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = false;
+let c7 = false;
 let closure_8 = [];
-let closure_9 = false;
-let tmp2 = (Store) => {
+let c9 = false;
+let tmp2 = ((Store) => {
   class WebAuthnStore {
     constructor() {
       self = this;
-      tmp = __exportStarResult1(this, WebAuthnStore);
-      obj = closure_5(WebAuthnStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, WebAuthnStore);
+      obj = outer1_5(WebAuthnStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -43,68 +44,64 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = WebAuthnStore;
   callback2(WebAuthnStore, Store);
   let obj = {
     key: "hasFetchedCredentials",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "hasCredentials",
     get() {
-      return length.length > 0;
+      return outer1_8.length > 0;
     }
   };
   items[1] = obj;
   obj = {
     key: "getCredentials",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "hasPendingRegisterTrigger",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   return callback(WebAuthnStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "WebAuthnStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   LOGOUT: function handleReset() {
     let closure_8 = [];
-    let closure_7 = false;
-    let closure_9 = false;
+    let c7 = false;
+    let c9 = false;
   },
   MFA_WEBAUTHN_CREDENTIALS_LOADED: function handleWebAuthnCredentialsLoaded(credentials) {
     credentials = credentials.credentials;
     let flag = false;
-    if (closure_8 !== credentials) {
-      closure_8 = credentials;
+    if (credentials !== credentials) {
       flag = true;
     }
-    if (!closure_7) {
-      closure_7 = true;
+    if (!c7) {
+      c7 = true;
       flag = true;
     }
     return flag;
   },
   AUTHENTICATOR_CREATE: function handleAuthenticatorCreate(credential) {
     credential = credential.credential;
-    const arg1 = credential;
-    if (credential.type === arg1(dependencyMap[5]).AuthenticatorType.WEBAUTHN) {
-      const tmp2 = undefined === closure_8.find((id) => id.id === credential.id);
+    if (credential.type === credential(1881).AuthenticatorType.WEBAUTHN) {
+      const tmp2 = undefined === items.find((id) => id.id === credential.id);
       if (tmp2) {
-        const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(closure_8, 0);
+        items = [];
+        const arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
         items[arraySpreadResult] = credential;
         const sum = arraySpreadResult + 1;
-        closure_8 = items;
       }
       let flag = tmp2;
     } else {
@@ -115,8 +112,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
   },
   AUTHENTICATOR_UPDATE: function handleAuthenticatorUpdate(credential) {
     credential = credential.credential;
-    const arg1 = credential;
-    if (credential.type !== arg1(dependencyMap[5]).AuthenticatorType.WEBAUTHN) {
+    if (credential.type !== credential(1881).AuthenticatorType.WEBAUTHN) {
       const type = credential.type;
       return false;
     } else {
@@ -131,8 +127,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
   },
   AUTHENTICATOR_DELETE: function handleAuthenticatorDelete(credential) {
     credential = credential.credential;
-    const arg1 = credential;
-    if (credential.type !== arg1(dependencyMap[5]).AuthenticatorType.WEBAUTHN) {
+    if (credential.type !== credential(1881).AuthenticatorType.WEBAUTHN) {
       const type = credential.type;
       return false;
     } else {
@@ -140,20 +135,20 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     }
   },
   WEBAUTHN_TRIGGER_REGISTER: function handleTriggerRegister() {
-    if (closure_9) {
+    if (c9) {
       return false;
     } else {
-      closure_9 = true;
+      c9 = true;
     }
   },
   WEBAUTHN_CLEAR_REGISTER_TRIGGER: function handleClearRegisterTrigger() {
-    if (closure_9) {
-      closure_9 = false;
+    if (c9) {
+      c9 = false;
     } else {
       return false;
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/webauthn/WebAuthnStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/webauthn/WebAuthnStore.tsx");
 
 export default tmp2;

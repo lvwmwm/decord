@@ -1,77 +1,79 @@
-// Module ID: 8557
-// Function ID: 68018
+// Module ID: 8564
+// Function ID: 68058
 // Name: useTooltipHelper
-// Dependencies: []
+// Dependencies: [57, 5, 31, 33, 3, 491, 5451, 8565, 1450, 8570, 2]
 // Exports: useTooltip
 
-// Module 8557 (useTooltipHelper)
+// Module 8564 (useTooltipHelper)
+import _slicedToArray from "_slicedToArray";
+import v1 from "v1";
+import result from "result";
+import { jsx } from "jsxProd";
+import importDefaultResult from "jsxProd";
+
+const require = arg1;
 function useTooltipHelper(ref, ref, arg2) {
+  const _require = ref;
   const importDefault = ref;
   const dependencyMap = arg2;
-  const tmp = importDefault(dependencyMap[8])();
-  let closure_3 = tmp;
-  let closure_4 = React.useRef(tmp);
-  const context = React.useContext(ref(dependencyMap[6]).LayerContext);
-  const React = context;
-  let closure_6 = React.useRef(null);
+  const tmp = importDefault(1450)();
+  let _slicedToArray = tmp;
+  let v1 = context.useRef(tmp);
+  context = context.useContext(_require(5451).LayerContext);
+  let closure_6 = context.useRef(null);
   const items = [context, ref];
-  const effect = React.useEffect(() => {
-    const arg0 = arg0.current;
+  const effect = context.useEffect(() => {
+    current = current.current;
     return () => {
       if (null != current) {
-        closure_5.remove(current);
+        outer1_5.remove(current);
       }
       current.current = null;
     };
   }, items);
   const items1 = [context.surfaceRef, ref, ref, arg2];
-  const callback = React.useCallback((arg0) => {
+  const callback = context.useCallback((arg0) => {
     function _measureHelper() {
       // CreateGeneratorClosureLongIndex (0x67)
       const obj = callback(tmp);
-      const _measureHelper = obj;
       return obj(...arguments);
     }
-    ref2.current = arg0(arg2[5]).v4();
-    return function measureHelper(current) {
+    ref3.current = arg0(table[5]).v4();
+    return (function measureHelper(current) {
       return _measureHelper(...arguments);
-    }(ref2.current);
+    })(ref3.current);
   }, items1);
   const items2 = [context, tmp, callback, ref];
-  const effect1 = React.useEffect(() => {
-    if (ref.current !== tmp) {
-      if (null != arg0.current) {
-        context.remove(arg0.current);
+  const effect1 = context.useEffect(() => {
+    if (ref2.current !== _slicedToArray) {
+      if (null != ref.current) {
+        context.remove(ref.current);
       }
-      ref.current = tmp;
+      ref2.current = _slicedToArray;
     }
-    callback(ref.current !== tmp);
+    callback(ref2.current !== _slicedToArray);
   }, items2);
   return callback;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("useTooltip.native");
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/components/Tooltip/native/useTooltip.native.tsx");
+const result = require("result").fileFinishedImporting("design/components/Tooltip/native/useTooltip.native.tsx");
 
 export const useTooltip = function useTooltip(ref, memo) {
-  const obj = memo(dependencyMap[5]);
-  return useTooltipHelper(React.useRef(memo(dependencyMap[5]).v4()), ref, function useAddTooltip(memo) {
-    const context = React.useContext(memo(closure_2[6]).LayerContext);
+  let obj = require(491) /* v1 */;
+  return useTooltipHelper(React.useRef(require(491) /* v1 */.v4()), ref, (function useAddTooltip(memo) {
+    let closure_0 = memo;
+    const context = outer1_5.useContext(outer1_0(outer1_2[6]).LayerContext);
     if (null == context) {
-      closure_7.warn("Tooltip called with no layer context. It will not show without a LayerScope.");
+      outer1_7.warn("Tooltip called with no layer context. It will not show without a LayerScope.");
     }
     const items = [context, memo];
-    return React.useCallback((arg0, arg1, arg2) => {
+    return outer1_5.useCallback((arg0, arg1, arg2) => {
       const obj = {};
-      const merged = Object.assign(arg0);
+      const merged = Object.assign(closure_0);
       obj["targetMeasurements"] = arg1;
       obj["surfaceMeasurements"] = arg2;
-      context.add(arg0, callback(arg0(closure_2[7]).AnimatedTooltip, obj));
+      context.add(arg0, outer2_6(outer2_0(outer2_2[7]).AnimatedTooltip, obj));
     }, items);
-  }(memo));
+  })(memo));
 };
 export { useTooltipHelper };

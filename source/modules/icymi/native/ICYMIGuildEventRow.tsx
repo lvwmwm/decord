@@ -1,20 +1,34 @@
-// Module ID: 15128
-// Function ID: 114141
+// Module ID: 15243
+// Function ID: 116310
 // Name: ICYMIGuildEventRow
-// Dependencies: []
+// Dependencies: [31, 27, 6758, 1348, 1838, 33, 15179, 689, 8352, 1212, 8346, 4320, 8349, 8449, 8321, 8353, 5737, 8356, 15220, 21, 4126, 8451, 4646, 1273, 566, 2]
 // Exports: default
 
-// Module 15128 (ICYMIGuildEventRow)
+// Module 15243 (ICYMIGuildEventRow)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "jsxProd";
+import createICYMIStyles from "createICYMIStyles";
+
+let closure_11;
+let closure_12;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function ICYMIGuildEventRow(event) {
   let channel;
   let guild;
   event = event.event;
-  const arg1 = event;
   ({ channel, guild } = event);
-  const importDefault = guild;
   let React;
   const tmp = callback5();
-  const tmp2 = importDefault(dependencyMap[8])(event, null);
+  const tmp2 = guild(8352)(event, null);
   const tmp3 = callback2(event);
   const dependencyMap = tmp3;
   let toISOStringResult;
@@ -24,24 +38,24 @@ function ICYMIGuildEventRow(event) {
   }
   React = toISOStringResult;
   const items = [toISOStringResult, tmp3];
-  const tmp5 = importDefault(dependencyMap[11])(channel);
-  let obj = arg1(dependencyMap[12]);
+  const tmp5 = guild(4320)(channel);
+  let obj = event(8349);
   let locationFromEvent = obj.getLocationFromEvent(event);
   if (null != tmp5) {
     locationFromEvent = tmp5;
   }
-  let obj1 = arg1(dependencyMap[13]);
+  let obj1 = event(8449);
   const eventLocationIconSource = obj1.getEventLocationIconSource(event, channel, true);
-  let obj2 = arg1(dependencyMap[13]);
+  let obj2 = event(8449);
   const eventLocationIconComponent = obj2.getEventLocationIconComponent(event, channel, true);
-  let obj3 = arg1(dependencyMap[10]);
+  let obj3 = event(8346);
   const items1 = [event];
   const nextRecurrenceIdInEvent = obj3.getNextRecurrenceIdInEvent(event);
   const items2 = [guild.id, event.id];
   const callback = React.useCallback(() => {
     let obj = guild(tmp3[14]);
     obj.itemInteracted(event.id, "guild_event", "press_event");
-    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { "Bool(false)": true, "Bool(false)": "/assets/modules/guild_role_subscriptions/native/images", "Bool(false)": 84.5, "Bool(false)": 90.5 } };
+    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { actionGestureType: "press", actionTargetElement: "item_body", actionIntentType: "navigate", actionDestinationType: "event" } };
     guild(tmp3[14]).feedItemActioned(obj);
     const obj2 = guild(tmp3[14]);
     obj = { eventId: event.id, event };
@@ -50,7 +64,7 @@ function ICYMIGuildEventRow(event) {
   const callback1 = React.useCallback(() => {
     let obj = guild(tmp3[14]);
     obj.itemInteracted(event.id, "guild_event", "press_event");
-    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { "Bool(false)": "Text", "Bool(false)": "keys", "Bool(false)": "HTTP", "Bool(false)": "r" } };
+    obj = { itemId: event.id, itemType: "guild_event", actionParameters: { actionGestureType: "press", actionTargetElement: "item_header", actionIntentType: "navigate", actionDestinationType: "guild" } };
     guild(tmp3[14]).feedItemActioned(obj);
     const obj2 = guild(tmp3[14]);
     event(tmp3[16]).transitionToGuild(guild.id);
@@ -67,12 +81,12 @@ function ICYMIGuildEventRow(event) {
   if (null != event) {
     id = event.id;
   }
-  const tmp12 = importDefault(dependencyMap[17]);
+  const tmp12 = guild(8356);
   obj = {};
-  const tmp12Result = importDefault(dependencyMap[17])(guild_id, id, nextRecurrenceIdInEvent);
+  const tmp12Result = guild(8356)(guild_id, id, nextRecurrenceIdInEvent);
   const tmp16 = callback3;
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.actionLabel = intl.string(arg1(dependencyMap[9]).t.6pFsLQ);
+  let intl = event(1212).intl;
+  obj.actionLabel = intl.string(event(1212).t["6pFsLQ"]);
   obj.id = event.id;
   obj.interactionType = "guild_event";
   let id1;
@@ -81,7 +95,7 @@ function ICYMIGuildEventRow(event) {
   }
   obj.channelId = id1;
   obj.guildId = guild.id;
-  let obj5 = importDefault(dependencyMap[19]);
+  let obj5 = guild(21);
   obj.timestamp = obj5.extractTimestamp(event.id);
   obj.onHeaderPress = callback1;
   obj.onHeaderLongPress = callback1;
@@ -94,18 +108,18 @@ function ICYMIGuildEventRow(event) {
   }
   obj2.color = str;
   obj2.children = React.useMemo(() => {
-    if (tmp3) {
+    if (closure_2) {
       const obj = {};
       const intl = tmp(tmp2[9]).intl;
       obj.startDateTimeString = intl.string(tmp(tmp2[9]).t.TxqPQR);
       let eventTimeData = obj;
     } else {
-      eventTimeData = tmp(tmp2[10]).getEventTimeData(toISOStringResult);
+      eventTimeData = tmp(tmp2[10]).getEventTimeData(c3);
       const tmpResult = tmp(tmp2[10]);
     }
     return eventTimeData;
   }, items).startDateTimeString;
-  obj1.children = callback3(arg1(dependencyMap[20]).Text, obj2);
+  obj1.children = callback3(event(4126).Text, obj2);
   const items3 = [callback3(closure_5, obj1), , , , ];
   obj3 = {};
   if (title) {
@@ -114,27 +128,27 @@ function ICYMIGuildEventRow(event) {
   obj3.style = title;
   obj3.variant = "text-lg/semibold";
   obj3.children = event.name;
-  items3[1] = callback3(arg1(dependencyMap[20]).Text, obj3);
+  items3[1] = callback3(event(4126).Text, obj3);
   let tmp25 = null != event.description;
   if (tmp25) {
     tmp25 = event.description.length > 0;
   }
   if (tmp25) {
-    const obj4 = {};
-    let obj11 = arg1(dependencyMap[21]);
+    const obj4 = { variant: "text-md/normal", color: "text-subtle", lineClamp: 5 };
+    let obj11 = event(8451);
     obj5 = { guildId: guild.id };
     obj4.children = obj11.guildEventDetailsParser(event.description, true, obj5);
-    tmp25 = callback3(arg1(dependencyMap[20]).Text, obj4);
+    tmp25 = callback3(event(4126).Text, obj4);
   }
   items3[2] = tmp25;
   items3[3] = callback3(closure_5, { style: tmp.separator });
   const obj7 = { style: tmp.infoContainer };
   const obj8 = { style: tmp.locationContainer };
-  const items4 = [callback3(arg1(dependencyMap[22]).GroupIcon, { size: "xs", style: tmp.eventsChannelIcon }), ];
-  const obj10 = {};
-  const intl2 = arg1(dependencyMap[9]).intl;
-  obj10.children = intl2.format(arg1(dependencyMap[9]).t.+DLsD8, { count: tmp12Result });
-  items4[1] = callback3(arg1(dependencyMap[20]).Text, obj10);
+  const items4 = [callback3(event(4646).GroupIcon, { size: "xs", style: tmp.eventsChannelIcon }), ];
+  const obj10 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted" };
+  const intl2 = event(1212).intl;
+  obj10.children = intl2.format(event(1212).t["+DLsD8"], { count: tmp12Result });
+  items4[1] = callback3(event(4126).Text, obj10);
   obj8.children = items4;
   const items5 = [callback4(closure_5, obj8), ];
   obj11 = { style: tmp.locationContainer };
@@ -144,73 +158,64 @@ function ICYMIGuildEventRow(event) {
   } else {
     tmp33 = null != eventLocationIconSource;
     if (tmp33) {
-      const obj13 = { source: eventLocationIconSource, size: arg1(dependencyMap[23]).Icon.Sizes.EXTRA_SMALL, style: tmp.eventsChannelIcon, disableColor: true };
-      tmp33 = callback3(arg1(dependencyMap[23]).Icon, obj13);
+      const obj13 = { source: eventLocationIconSource, size: event(1273).Icon.Sizes.EXTRA_SMALL, style: tmp.eventsChannelIcon, disableColor: true };
+      tmp33 = callback3(event(1273).Icon, obj13);
     }
   }
   const items6 = [tmp33, ];
-  const obj14 = {};
+  const obj14 = { lineClamp: 2, variant: "text-xs/normal", color: "text-muted" };
   let result = null;
   if (null != locationFromEvent) {
-    result = arg1(dependencyMap[21]).guildEventDetailsParser(locationFromEvent, true);
-    const obj23 = arg1(dependencyMap[21]);
+    result = event(8451).guildEventDetailsParser(locationFromEvent, true);
+    const obj23 = event(8451);
   }
   obj14.children = result;
-  items6[1] = callback3(arg1(dependencyMap[20]).Text, obj14);
+  items6[1] = callback3(event(4126).Text, obj14);
   obj11.children = items6;
   items5[1] = callback4(closure_5, obj11);
   obj7.children = items5;
   items3[4] = callback4(closure_5, obj7);
   obj.children = items3;
   obj.children = callback4(closure_4, obj);
-  return tmp16(importDefault(dependencyMap[18]), obj);
+  return tmp16(guild(15220), obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ isGuildEventEnded: closure_6, isGuildScheduledEventActive: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[2]);
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = importDefault(dependencyMap[4]);
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[5]));
-const tmp4 = arg1(dependencyMap[5]);
-let closure_13 = arg1(dependencyMap[6]).createICYMIStyles((margin) => {
-  let obj = { container: obj };
+({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ isGuildEventEnded: closure_6, isGuildScheduledEventActive: closure_7 } = _isNativeReflectConstruct);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+let closure_13 = createICYMIStyles.createICYMIStyles((margin) => {
+  obj = { container: obj };
   obj = { marginHorizontal: margin.margin, marginBottom: margin.margin, marginLeft: margin.margin + margin.inset };
-  obj = { marginTop: importDefault(dependencyMap[7]).space.PX_12 };
+  obj = { marginTop: importDefault(689).space.PX_12 };
   obj.card = obj;
-  obj.title = { marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
-  const obj1 = { marginBottom: importDefault(dependencyMap[7]).space.PX_4 };
-  obj.timeAndUserPillContainer = { marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-  const obj3 = { hideWhenScrolling: false, autoCapitalize: false, backgroundColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, marginVertical: importDefault(dependencyMap[7]).space.PX_12 };
+  obj.title = { marginBottom: importDefault(689).space.PX_4 };
+  const obj2 = { flexDirection: "row", alignItems: "center", marginBottom: importDefault(689).space.PX_8, justifyContent: "space-between" };
+  obj.timeAndUserPillContainer = obj2;
+  const obj3 = { height: 1, width: "100%", backgroundColor: importDefault(689).colors.BORDER_SUBTLE, marginVertical: importDefault(689).space.PX_12 };
   obj.separator = obj3;
-  const obj2 = { marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-  obj.eventsChannelIcon = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj4 = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.infoContainer = { gap: importDefault(dependencyMap[7]).space.PX_4 };
-  const obj6 = { width: true, marginHorizontal: true, gap: importDefault(dependencyMap[7]).space.PX_8 };
+  const obj1 = { marginBottom: importDefault(689).space.PX_4 };
+  obj.eventsChannelIcon = { tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj4 = { tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj.infoContainer = { gap: importDefault(689).space.PX_4 };
+  const obj6 = { alignItems: "center", flexDirection: "row", gap: importDefault(689).space.PX_8 };
   obj.locationContainer = obj6;
   return obj;
 });
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/icymi/native/ICYMIGuildEventRow.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/ICYMIGuildEventRow.tsx");
 
 export default function ICYMIGuildEventRowWrapper(eventId) {
-  const arg1 = eventId.eventId;
-  let obj = arg1(dependencyMap[24]);
+  eventId = eventId.eventId;
+  let obj = eventId(566);
   const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => guildScheduledEvent.getGuildScheduledEvent(eventId));
-  const importDefault = stateFromStores;
-  const items1 = [closure_10];
-  const stateFromStores1 = arg1(dependencyMap[24]).useStateFromStores(items1, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuildScheduledEvent(eventId));
+  const items1 = [_createForOfIteratorHelperLoose];
+  const stateFromStores1 = eventId(566).useStateFromStores(items1, () => {
     let guild_id;
     if (null != stateFromStores) {
       guild_id = stateFromStores.guild_id;
     }
-    return guild.getGuild(guild_id);
+    return outer1_10.getGuild(guild_id);
   });
-  arg1(dependencyMap[24]);
+  eventId(566);
   [][0] = closure_9;
   let tmp5 = null;
   if (null != stateFromStores) {

@@ -1,12 +1,13 @@
-// Module ID: 11449
-// Function ID: 89161
+// Module ID: 11459
+// Function ID: 89211
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 11449 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/nuf/native/PostReactionPermissionNudgeExperiment.tsx");
+// Module 11459 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-post-reaction-push-banner", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/nuf/native/PostReactionPermissionNudgeExperiment.tsx");
 
 export default apexExperiment;

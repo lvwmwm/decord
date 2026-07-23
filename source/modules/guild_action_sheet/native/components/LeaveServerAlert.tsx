@@ -1,49 +1,50 @@
-// Module ID: 12855
-// Function ID: 98240
+// Module ID: 12969
+// Function ID: 100396
 // Name: LeaveServerAlert
-// Dependencies: []
+// Dependencies: [653, 33, 4475, 1212, 4475, 8438, 2]
 // Exports: default
 
-// Module 12855 (LeaveServerAlert)
-const GuildFeatures = require(dependencyMap[0]).GuildFeatures;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = _module);
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/guild_action_sheet/native/components/LeaveServerAlert.tsx");
+// Module 12969 (LeaveServerAlert)
+import { GuildFeatures } from "ME";
+import jsxProd from "jsxProd";
+
+let closure_4;
+let closure_5;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+const result = require("getAlertModalItemKey").fileFinishedImporting("modules/guild_action_sheet/native/components/LeaveServerAlert.tsx");
 
 export default function LeaveServerAlert(guild) {
   guild = guild.guild;
-  const require = guild;
   let obj = {};
   const features = guild.features;
   const hasItem = features.has(GuildFeatures.HUB);
-  const intl = require(dependencyMap[3]).intl;
+  const intl = guild(1212).intl;
   const string = intl.string;
-  const t = require(dependencyMap[3]).t;
+  const t = guild(1212).t;
   if (hasItem) {
     let stringResult = string(t.Dv8gFT);
   } else {
     stringResult = string(t.J2TBi3);
   }
   obj.title = stringResult;
-  const intl2 = require(dependencyMap[3]).intl;
+  const intl2 = guild(1212).intl;
   obj = { name: guild.name };
-  obj.content = intl2.formatToPlainString(require(dependencyMap[3]).t.TB1og8, obj);
+  obj.content = intl2.formatToPlainString(guild(1212).t.TB1og8, obj);
   obj = {};
   const obj1 = {
     variant: "destructive",
     onPress() {
-      return callback(closure_2[5]).leaveGuild(guild.id);
+      return outer1_1(outer1_2[5]).leaveGuild(guild.id);
     }
   };
-  const intl3 = require(dependencyMap[3]).intl;
-  obj1.text = intl3.string(require(dependencyMap[3]).t.p89ACt);
-  const items = [callback(require(dependencyMap[2]).AlertActionButton, obj1, "confirm"), ];
+  const intl3 = guild(1212).intl;
+  obj1.text = intl3.string(guild(1212).t.p89ACt);
+  const items = [callback(guild(4475).AlertActionButton, obj1, "confirm"), ];
   const obj2 = { variant: "secondary" };
-  const intl4 = require(dependencyMap[3]).intl;
-  obj2.text = intl4.string(require(dependencyMap[3]).t.gm1Vej);
-  items[1] = callback(require(dependencyMap[2]).AlertActionButton, obj2, "cancel");
+  const intl4 = guild(1212).intl;
+  obj2.text = intl4.string(guild(1212).t.gm1Vej);
+  items[1] = callback(guild(4475).AlertActionButton, obj2, "cancel");
   obj.children = items;
-  obj.actions = callback2(require(dependencyMap[4]).AlertActions, obj);
-  return callback(require(dependencyMap[2]).AlertModal, obj);
+  obj.actions = callback2(guild(4475).AlertActions, obj);
+  return callback(guild(4475).AlertModal, obj);
 };

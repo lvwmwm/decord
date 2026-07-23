@@ -1,29 +1,31 @@
-// Module ID: 3998
-// Function ID: 33236
+// Module ID: 4000
+// Function ID: 33241
 // Name: PortalKeyboardState
-// Dependencies: []
+// Dependencies: [31, 33, 3981, 477, 4001, 2]
 // Exports: PortalKeyboard, PortalKeyboardHost
 
-// Module 3998 (PortalKeyboardState)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/keyboard/native/PortalKeyboard.tsx");
+// Module 4000 (PortalKeyboardState)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/keyboard/native/PortalKeyboard.tsx");
 
 export const PortalKeyboardState = { EMPTY: "empty", REQUEST_OPEN: "request_open", OPENING: "opening", OPEN: "open", REQUEST_CLOSE: "request_close", CLOSING: "closing", CLOSED: "closed" };
 export const PORTAL_HOST_NAME_DEFAULT = "default";
 export const PORTAL_HOST_NAME_MODAL = "modal";
 export const PortalKeyboard = function PortalKeyboard(children) {
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(3981) /* _createForOfIteratorHelperLoose */;
   let str = "default";
   if (obj.useIsModalOpen()) {
     str = "default";
     if (obj2.isIOS()) {
       str = "modal";
     }
-    const obj2 = arg1(dependencyMap[3]);
+    obj2 = require(477) /* set */;
   }
   obj = { hostName: str, children: children.children };
-  return jsx(arg1(dependencyMap[4]).Portal, obj);
+  return jsx(require(4001) /* Portal */.Portal, { hostName: str, children: children.children });
 };
 export const PortalKeyboardHost = function PortalKeyboardHost(name) {
   let str = name.name;
@@ -31,5 +33,5 @@ export const PortalKeyboardHost = function PortalKeyboardHost(name) {
     str = "default";
   }
   const obj = { name: str };
-  return jsx(arg1(dependencyMap[4]).PortalHost, obj);
+  return jsx(require(4001) /* Portal */.PortalHost, { name: str });
 };

@@ -1,11 +1,12 @@
-// Module ID: 15606
-// Function ID: 119072
+// Module ID: 15723
+// Function ID: 121245
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 15697, 2]
 
-// Module 15606 (context)
-const context = importAll(dependencyMap[0]).createContext(arg1(dependencyMap[1]).activityPanelStateContextDefault);
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/frames/panel/native/FramePanelStateContext.tsx");
+// Module 15723 (context)
+import importAllResult from "result";
+
+const context = require("result").createContext(require("useActivityWebViewLock").activityPanelStateContextDefault);
+const result = require("set").fileFinishedImporting("modules/frames/panel/native/FramePanelStateContext.tsx");
 
 export default context;

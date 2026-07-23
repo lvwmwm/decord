@@ -1,9 +1,20 @@
-// Module ID: 7016
-// Function ID: 56296
+// Module ID: 7021
+// Function ID: 56330
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 7022, 653, 477, 1881, 4324, 566, 686, 2]
 
-// Module 7016 (_isNativeReflectConstruct)
+// Module 7021 (_isNativeReflectConstruct)
+import ME from "ME";
+import closure_3 from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import set from "set";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -27,7 +38,7 @@ function getOrCreateChannelState(arg0) {
     const map = new Map();
     obj.optionNameToAutocompleteQueries = map;
     const _Map2 = Map;
-    const map1 = new Map();
+    map1 = new Map();
     obj.optionNameToLastResults = map1;
     const _Map3 = Map;
     const map2 = new Map();
@@ -77,35 +88,27 @@ function handleCommandChange(arg0, commandId) {
     value.commandId = commandId;
     value.optionName = activeOptionName;
     flag = true;
-    const tmp4 = null != commandId && commandId !== value.commandId;
+    tmp4 = null != commandId && commandId !== value.commandId;
   }
   return flag;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const AnalyticEvents = arg1(dependencyMap[6]).AnalyticEvents;
-const map = new Map();
-const map1 = new Map();
-const map2 = new Map();
-let obj = arg1(dependencyMap[7]);
-let closure_12 = obj.isDesktop();
-let tmp5 = (Store) => {
+let map = new Map();
+let map1 = new Map();
+let map2 = new Map();
+set = set.isDesktop();
+let tmp5 = ((Store) => {
   class ApplicationCommandAutocompleteStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ApplicationCommandAutocompleteStore);
-      obj = closure_5(ApplicationCommandAutocompleteStore);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, ApplicationCommandAutocompleteStore);
+      obj = outer1_5(ApplicationCommandAutocompleteStore);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -114,19 +117,18 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ApplicationCommandAutocompleteStore;
   callback2(ApplicationCommandAutocompleteStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
     }
   };
   const items = [obj, , , , ];
   obj = {
     key: "getLastErrored",
     value(arg0) {
-      return callback4(arg0).lastErrored;
+      return outer1_14(arg0).lastErrored;
     }
   };
   items[1] = obj;
@@ -134,7 +136,7 @@ let tmp5 = (Store) => {
     key: "getAutocompleteChoices",
     value(arg0, arg1, arg2) {
       let value;
-      const optionNameToAutocompleteQueries = callback4(arg0).optionNameToAutocompleteQueries;
+      const optionNameToAutocompleteQueries = outer1_14(arg0).optionNameToAutocompleteQueries;
       value = optionNameToAutocompleteQueries.get(arg1);
       if (null != value) {
         value = value.get(arg2);
@@ -146,19 +148,19 @@ let tmp5 = (Store) => {
   items[3] = {
     key: "getAutocompleteLastChoices",
     value(arg0, arg1) {
-      return callback4(arg0).optionNameToLastResults.get(arg1);
+      return outer1_14(arg0).optionNameToLastResults.get(arg1);
     }
   };
   items[4] = {
     key: "getLastResponseNonce",
     value(arg0) {
-      return callback4(arg0).lastResponseNonce;
+      return outer1_14(arg0).lastResponseNonce;
     }
   };
   return callback(ApplicationCommandAutocompleteStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "ApplicationCommandAutocompleteStore";
-obj = {
+set = {
   CONNECTION_OPEN: handleInit,
   LOGOUT: handleInit,
   CHANNEL_SELECT: handleInit,
@@ -211,7 +213,7 @@ obj = {
     let choices;
     let nonce;
     ({ choices, nonce } = arg0);
-    let arg1;
+    let _require;
     let value = map.get(nonce);
     if (null == value) {
       return false;
@@ -222,19 +224,19 @@ obj = {
       if (null == optionNameToAutocompleteQueries3.get(value.name)) {
         const optionNameToAutocompleteQueries = tmp31.optionNameToAutocompleteQueries;
         const _Map = Map;
-        const map = new Map();
+        map = new Map();
         const result = optionNameToAutocompleteQueries.set(value.name, map);
       }
-      let tmp8 = closure_12;
-      if (closure_12) {
+      let tmp8 = set;
+      if (set) {
         const activeOption = store.getActiveOption(value.channelId);
         let type;
         if (null != activeOption) {
           type = activeOption.type;
         }
-        tmp8 = type === arg1(dependencyMap[8]).ApplicationCommandOptionType.INTEGER;
+        tmp8 = type === _require(1881).ApplicationCommandOptionType.INTEGER;
       }
-      arg1 = tmp8;
+      _require = tmp8;
       let mapped;
       if (null != choices) {
         mapped = choices.map((arg0) => {
@@ -250,7 +252,7 @@ obj = {
           obj.displayName = tmp;
           obj.name = name;
           let NumberResult = value;
-          if (tmp8) {
+          if (c0) {
             const _Number = Number;
             NumberResult = Number(value);
           }
@@ -269,8 +271,8 @@ obj = {
         const time = date.getTime();
         num2 = time - value.getTime();
       }
-      const obj = { duration_ms: num2, error: false, num_options: mapped.length };
-      arg1(dependencyMap[9]).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+      let obj = { duration_ms: num2, error: false, num_options: mapped.length };
+      _require(4324).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
       map2.delete(nonce);
       const optionNameToAutocompleteQueries2 = tmp31.optionNameToAutocompleteQueries;
       const value1 = optionNameToAutocompleteQueries2.get(value.name);
@@ -306,7 +308,7 @@ obj = {
           num = time - value.getTime();
         }
         const obj = { duration_ms: num, error: true };
-        arg1(dependencyMap[9]).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+        require(4324) /* _createForOfIteratorHelperLoose */.trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
         map2.delete(nonce);
         getOrCreateChannelState(value.channelId).lastErrored = true;
         return true;
@@ -324,7 +326,7 @@ obj = {
     handleCommandChange(command.channelId, id);
   }
 };
-tmp5 = new tmp5(importDefault(dependencyMap[11]), obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/application_commands/ApplicationCommandAutocompleteStore.tsx");
+tmp5 = new tmp5(require("dispatcher"), set);
+let result = set.fileFinishedImporting("modules/application_commands/ApplicationCommandAutocompleteStore.tsx");
 
 export default tmp5;

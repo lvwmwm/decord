@@ -1,21 +1,22 @@
-// Module ID: 6808
-// Function ID: 53711
+// Module ID: 6813
+// Function ID: 53743
 // Name: GameServerHostingBannerBlockRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6806, 2]
 
-// Module 6808 (GameServerHostingBannerBlockRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 6813 (GameServerHostingBannerBlockRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class GameServerHostingBannerBlockRecord {
     constructor(arg0) {
-      tmp = closure_2(this, GameServerHostingBannerBlockRecord);
-      this.type = GameServerHostingBannerBlockRecord(closure_1[2]).ShopBlockType.GAME_SERVER_HOSTING_BANNER;
+      tmp = outer1_2(this, GameServerHostingBannerBlockRecord);
+      this.type = GameServerHostingBannerBlockRecord(outer1_1[2]).ShopBlockType.GAME_SERVER_HOSTING_BANNER;
       this.isDismissible = arg0.is_dismissible;
       return;
     }
   }
-  const arg1 = GameServerHostingBannerBlockRecord;
   const items = [
     {
       key: "fromServer",
@@ -25,7 +26,7 @@ const tmp2 = () => {
     }
   ];
   return callback(GameServerHostingBannerBlockRecord, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/records/GameServerHostingBannerBlockRecord.tsx");
+})();
+const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/GameServerHostingBannerBlockRecord.tsx");
 
 export const GameServerHostingBannerBlockRecord = tmp2;

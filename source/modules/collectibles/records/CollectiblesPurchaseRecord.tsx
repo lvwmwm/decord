@@ -1,25 +1,25 @@
-// Module ID: 6798
-// Function ID: 53671
+// Module ID: 6803
+// Function ID: 53703
 // Name: CollectiblesPurchaseRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6777, 6778, 6776, 655, 653, 4171, 2]
 
-// Module 6798 (CollectiblesPurchaseRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createCollectiblesItemsFromServerResponse;
-let closure_6 = arg1(dependencyMap[4]).CollectiblesVariantProductRecord;
-let closure_7 = arg1(dependencyMap[5]).REWARD_CATEGORY_AND_REWARD_SKU_IDS;
-const PREMIUM_TYPE_NONE = arg1(dependencyMap[6]).PREMIUM_TYPE_NONE;
-const tmp2 = () => {
+// Module 6803 (CollectiblesPurchaseRecord)
+import ME from "ME";
+import getPricesFromServer from "getPricesFromServer";
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord";
+import { createCollectiblesItemsFromServerResponse as closure_5 } from "_createForOfIteratorHelperLoose";
+import { CollectiblesVariantProductRecord as closure_6 } from "_callSuper";
+import { REWARD_CATEGORY_AND_REWARD_SKU_IDS as closure_7 } from "items";
+import { PREMIUM_TYPE_NONE } from "ME";
+
+const tmp2 = (() => {
   class CollectiblesPurchaseRecord {
     constructor(arg0) {
-      tmp = closure_2(this, CollectiblesPurchaseRecord);
+      tmp = outer1_2(this, CollectiblesPurchaseRecord);
       ({ skuId: this.skuId, name: this.name, type: this.type, premiumType: this.premiumType, items: this.items, categorySkuId: this.categorySkuId, isCategoryReward: this.isCategoryReward, prices: this.prices, bundledProducts: this.bundledProducts, googleSkuIds: this.googleSkuIds, variants: this.variants, eligibleOffers: this.eligibleOffers, baseVariantName: this.baseVariantName, baseVariantSkuId: this.baseVariantSkuId, variantLabel: this.variantLabel, variantValue: this.variantValue, purchasedAt: this.purchasedAt, purchaseType: this.purchaseType, expiresAt: this.expiresAt } = arg0);
       return;
     }
   }
-  const importDefault = CollectiblesPurchaseRecord;
   const items = [
     {
       key: "fromServer",
@@ -39,31 +39,30 @@ const tmp2 = () => {
         let variant_value;
         let variants;
         sku_id = sku_id.sku_id;
-        const CollectiblesPurchaseRecord = sku_id;
         ({ premium_type, bundled_products, variants, purchased_at, expires_at } = sku_id);
-        let obj = {};
+        let obj = { type: 0, sku_id: 0, name: 0, premium_type: 0, category_sku_id: 0, prices: 0, bundled_products: 0, variants: 0, base_variant_name: 0, base_variant_sku_id: 0, variant_label: 0, variant_value: 0, purchased_at: 0, purchase_type: 0, expires_at: 0 };
         ({ type, name, category_sku_id, prices, base_variant_name, base_variant_sku_id, variant_label, variant_value, purchase_type } = sku_id);
         Object.setPrototypeOf(null);
         const merged = Object.assign(sku_id, obj);
-        let tmp3 = CollectiblesPurchaseRecord;
+        let tmp3 = sku_id;
         obj = { type, name, skuId: sku_id };
         let tmp4 = null;
-        if (premium_type !== closure_8) {
+        if (premium_type !== outer1_8) {
           tmp4 = premium_type;
         }
         obj.premiumType = tmp4;
         obj.categorySkuId = category_sku_id;
-        obj.isCategoryReward = closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === sku_id);
-        obj.prices = CollectiblesPurchaseRecord(closure_1[7])(prices);
-        obj.items = callback2(merged.items);
+        obj.isCategoryReward = outer1_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === sku_id);
+        obj.prices = CollectiblesPurchaseRecord(outer1_1[7])(prices);
+        obj.items = outer1_5(merged.items);
         let mapped;
         if (null != bundled_products) {
-          mapped = bundled_products.map(fromServer.fromServer);
+          mapped = bundled_products.map(outer1_4.fromServer);
         }
         obj.bundledProducts = mapped;
         let mapped1;
         if (null != variants) {
-          mapped1 = variants.map(fromServer2.fromServer);
+          mapped1 = variants.map(outer1_6.fromServer);
         }
         obj.variants = mapped1;
         ({ google_sku_ids: obj2.googleSkuIds, eligible_offers: obj2.eligibleOffers } = merged);
@@ -90,7 +89,7 @@ const tmp2 = () => {
     }
   ];
   return callback(CollectiblesPurchaseRecord, null, items);
-}();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/collectibles/records/CollectiblesPurchaseRecord.tsx");
+})();
+const result = require("CollectiblesBundledProductRecord").fileFinishedImporting("modules/collectibles/records/CollectiblesPurchaseRecord.tsx");
 
 export default tmp2;

@@ -1,14 +1,13 @@
-// Module ID: 7750
-// Function ID: 61597
+// Module ID: 7756
+// Function ID: 61634
 // Name: getFriendAnniversaryGateConfig
-// Dependencies: []
+// Dependencies: [7757, 2]
 // Exports: getFriendAnniversaryGateConfig
 
-// Module 7750 (getFriendAnniversaryGateConfig)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");
+// Module 7756 (getFriendAnniversaryGateConfig)
+const result = require("set").fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");
 
 export const getFriendAnniversaryGateConfig = function getFriendAnniversaryGateConfig(arg0) {
-  const obj = { enabled: importDefault(dependencyMap[0]).getConfig(arg0).enabled };
+  const obj = { enabled: importDefault(7757).getConfig(arg0).enabled };
   return obj;
 };

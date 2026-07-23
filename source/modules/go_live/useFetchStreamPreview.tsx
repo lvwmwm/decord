@@ -1,81 +1,79 @@
-// Module ID: 10779
-// Function ID: 83750
+// Module ID: 10789
+// Function ID: 83799
 // Name: useFetchStreamPreview
-// Dependencies: [31, 27, 33, 4126, 5081, 10751, 10747, 2, 57]
+// Dependencies: [31, 4311, 1348, 3758, 1906, 482, 566, 4309, 2]
 // Exports: default
 
-// Module 10779 (useFetchStreamPreview)
-import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
-import module_33 from "module_33";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT";
-import { BasicPermissions } from "useMyCurrentStageChannelRole";
-import _slicedToArray from "_slicedToArray";
+// Module 10789 (useFetchStreamPreview)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { BasicPermissions } from "sum";
 
-const result = _slicedToArray.fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
 
 export default function useFetchStreamPreview(arg0, arg1, arg2) {
   let isLoading;
   let previewUrl;
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
   const React = arg2;
-  let getActivityIndicator = tmp;
-  let obj = arg1(dependencyMap[6]);
-  const items = [module_33];
-  module_33 = obj.useStateFromStores(items, () => channel.getChannel(arg1));
-  const items1 = [_createForOfIteratorHelperLoose];
-  let stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items1, () => {
-    let canBasicChannelResult = null != module_33;
+  let _isNativeReflectConstruct = tmp;
+  let obj = _require(566);
+  const items = [closure_4];
+  closure_4 = obj.useStateFromStores(items, () => channel.getChannel(closure_1));
+  const items1 = [shouldFetchPreview];
+  let stateFromStores = _require(566).useStateFromStores(items1, () => {
+    let canBasicChannelResult = null != closure_4;
     if (canBasicChannelResult) {
-      canBasicChannelResult = shouldFetchPreview.canBasicChannel(constants.CONNECT, module_33);
+      canBasicChannelResult = shouldFetchPreview.canBasicChannel(outer1_7.CONNECT, closure_4);
     }
     return canBasicChannelResult;
   });
-  const obj2 = arg1(dependencyMap[6]);
-  const items2 = [NAV_BAR_HEIGHT];
-  const stateFromStores1 = arg1(dependencyMap[6]).useStateFromStores(items2, () => stateFromStores.getVoiceChannelId() === arg1);
-  const obj3 = arg1(dependencyMap[6]);
-  const items3 = [getActivityIndicator];
-  const stateFromStoresObject = arg1(dependencyMap[6]).useStateFromStoresObject(items3, () => {
+  const obj2 = _require(566);
+  const items2 = [stateFromStores];
+  const stateFromStores1 = _require(566).useStateFromStores(items2, () => stateFromStores.getVoiceChannelId() === closure_1);
+  const obj3 = _require(566);
+  const items3 = [_isNativeReflectConstruct];
+  const stateFromStoresObject = _require(566).useStateFromStoresObject(items3, () => {
     const obj = {};
     let shouldFetchPreviewResult = !tmp;
     if (!tmp) {
-      shouldFetchPreviewResult = tmp.shouldFetchPreview(arg0, arg1, arg2);
+      shouldFetchPreviewResult = tmp.shouldFetchPreview(closure_0, closure_1, result);
     }
     obj.shouldFetchPreview = shouldFetchPreviewResult;
     let previewURL = null;
     if (!tmp) {
-      previewURL = tmp.getPreviewURL(arg0, arg1, arg2);
+      previewURL = tmp.getPreviewURL(closure_0, closure_1, result);
     }
     obj.previewUrl = previewURL;
     let isPreviewLoading = !tmp;
     if (!tmp) {
-      isPreviewLoading = tmp.getIsPreviewLoading(arg0, arg1, arg2);
+      isPreviewLoading = tmp.getIsPreviewLoading(closure_0, closure_1, result);
     }
     obj.isLoading = isPreviewLoading;
     return obj;
   });
-  const shouldFetchPreview = stateFromStoresObject.shouldFetchPreview;
-  _createForOfIteratorHelperLoose = shouldFetchPreview;
+  shouldFetchPreview = stateFromStoresObject.shouldFetchPreview;
   ({ previewUrl, isLoading } = stateFromStoresObject);
   if (!stateFromStores) {
     stateFromStores = stateFromStores1;
   }
-  NAV_BAR_HEIGHT = stateFromStores;
   const items4 = [shouldFetchPreview, arg1, arg0, arg2, null == arg1 || null == arg2, stateFromStores];
   const effect = React.useEffect(() => {
     let tmp = shouldFetchPreview;
     if (shouldFetchPreview) {
-      tmp = !tmp;
+      tmp = !_isNativeReflectConstruct;
     }
     if (tmp) {
       tmp = stateFromStores;
     }
     if (tmp) {
-      const streamPreview = arg0(arg1[7]).fetchStreamPreview(arg0, arg1, arg2);
-      const obj = arg0(arg1[7]);
+      const streamPreview = callback(table[7]).fetchStreamPreview(callback, table, result);
+      const obj = callback(table[7]);
     }
   }, items4);
   if (!(null == arg1 || null == arg2)) {

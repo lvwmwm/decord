@@ -1,10 +1,9 @@
-// Module ID: 4232
-// Function ID: 37107
+// Module ID: 4236
+// Function ID: 37139
 // Name: STATS_INTERVAL
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4232 (STATS_INTERVAL)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/Stats.tsx");
+// Module 4236 (STATS_INTERVAL)
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/Stats.tsx");
 
 export const STATS_INTERVAL = 1000;

@@ -1,17 +1,17 @@
-// Module ID: 3831
-// Function ID: 31988
+// Module ID: 3833
+// Function ID: 31993
 // Name: BaseIconImage
-// Dependencies: [31, 33, 2, 31, 33]
+// Dependencies: [31, 27, 33, 3834, 2]
 // Exports: BaseIconImage
 
-// Module 3831 (BaseIconImage)
-import "module_31";
-import { Image } from "module_33";
-import { jsx } from "result2";
-import module_33 from "module_33";
+// Module 3833 (BaseIconImage)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
 
-let closure_4 = { xxs: { "Null": null, "Null": null }, xs: { "Null": null, "Null": null }, sm: { "Null": null, "Null": null }, md: {}, lg: { "Null": true, "Null": true }, custom: { width: undefined, height: undefined }, refresh_sm: { "Null": null, "Null": null } };
-const result = module_33.fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
+const require = arg1;
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: undefined, height: undefined }, refresh_sm: { width: 18, height: 18 } };
+const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export const BaseIconImage = function BaseIconImage(source) {
   let accessibilityLabel;
@@ -24,7 +24,7 @@ export const BaseIconImage = function BaseIconImage(source) {
   }
   const color = source.color;
   ({ resizeMode, style, accessible, accessibilityLabel } = source);
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(3834) /* map */;
   const token = obj.useToken(color);
   if (null != token) {
     obj = { tintColor: token };
@@ -39,7 +39,7 @@ export const BaseIconImage = function BaseIconImage(source) {
       tmp3 = obj;
     }
   }
-  style = [closure_4[str], tmp3, ];
+  style = [table[str], tmp3, ];
   style[2] = style;
   return <Image fadeDuration={0} source={arg0.source} resizeMode={resizeMode} style={style} accessible={accessible} accessibilityLabel={accessibilityLabel} />;
 };

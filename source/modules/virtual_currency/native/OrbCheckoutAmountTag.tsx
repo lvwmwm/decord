@@ -1,36 +1,38 @@
-// Module ID: 11805
-// Function ID: 91609
+// Module ID: 11815
+// Function ID: 91658
 // Name: OrbCheckoutAmountTag
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 689, 8708, 4126, 1212, 2]
 // Exports: default
 
-// Module 11805 (OrbCheckoutAmountTag)
-const View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_3, jsxs: closure_4 } = _module);
-const _module1 = require(dependencyMap[2]);
+// Module 11815 (OrbCheckoutAmountTag)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
 let obj = {};
-obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[3]).space.PX_4 };
+obj = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
 obj.orbAmountTag = obj;
-obj.orbsIcon = { "Null": "<string:1912602975>", "Null": "height" };
-let closure_5 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[7]);
-const result = _module2.fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
+obj.orbsIcon = { width: 14, height: 14 };
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/virtual_currency/native/OrbCheckoutAmountTag.tsx");
 
 export default function OrbCheckoutAmountTag(orbAmount) {
   orbAmount = orbAmount.orbAmount;
   const tmp = callback2();
   let obj = { style: tmp.orbAmountTag };
-  obj = { style: tmp.orbsIcon };
-  const items = [callback(require(dependencyMap[4]).OrbsIcon, obj), ];
+  obj = { size: "custom", color: "icon-strong", style: tmp.orbsIcon };
+  const items = [callback(require(8708) /* OrbsIcon */.OrbsIcon, obj), ];
   obj = { variant: "text-md/semibold" };
   if (null == orbAmount) {
-    const intl2 = require(dependencyMap[6]).intl;
-    let stringResult = intl2.string(require(dependencyMap[6]).t.pfChQr);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.pfChQr);
   } else {
-    const intl = require(dependencyMap[6]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj1 = { orbAmount };
-    stringResult = intl.formatToPlainString(require(dependencyMap[6]).t.W4DfeF, obj1);
+    stringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.W4DfeF, obj1);
   }
   obj.accessibilityLabel = stringResult;
   let str = "--";
@@ -38,7 +40,7 @@ export default function OrbCheckoutAmountTag(orbAmount) {
     str = orbAmount;
   }
   obj.children = str;
-  items[1] = callback(require(dependencyMap[5]).Text, obj);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return closure_4(View, obj);
 };

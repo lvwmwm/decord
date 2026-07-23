@@ -1,40 +1,56 @@
-// Module ID: 10746
-// Function ID: 83504
+// Module ID: 10756
+// Function ID: 83553
 // Name: SingleVideoCall
-// Dependencies: []
+// Dependencies: [31, 10210, 33, 1557, 5464, 10590, 1273, 10574, 4323, 8492, 2]
 // Exports: default
 
-// Module 10746 (SingleVideoCall)
-let closure_3 = importAll(dependencyMap[0]);
-({ resetFocus: closure_4, toggleFocus: closure_5 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/video_calls/native/components/SingleVideoCall.tsx");
+// Module 10756 (SingleVideoCall)
+import result from "result";
+import resetFocusTimer from "resetFocusTimer";
+import { jsx } from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ resetFocus: closure_4, toggleFocus: closure_5 } = resetFocusTimer);
+const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/SingleVideoCall.tsx");
 
 export default function SingleVideoCall(channel) {
-  const arg1 = channel.channel;
-  const rect = importDefault(dependencyMap[3])();
-  const bottom = rect.bottom;
-  const importDefault = bottom;
-  const right = rect.right;
-  const dependencyMap = right;
-  const React = importDefault(dependencyMap[4])().analyticsLocations;
+  channel = channel.channel;
+  const rect = bottom(right[3])();
+  bottom = rect.bottom;
+  right = rect.right;
+  const analyticsLocations = bottom(right[4])().analyticsLocations;
   const items = [right, bottom];
-  const memo = React.useMemo(() => ({ marginRight: right, marginBottom: bottom }), items);
+  const memo = analyticsLocations.useMemo(() => ({ marginRight: right, marginBottom: bottom }), items);
   const obj = {
     gestureEnabled: true,
     participant: channel.participant,
-    avatarSize: arg1(dependencyMap[6]).AvatarSizes.PROFILE,
-    resizeMode: arg1(dependencyMap[7]).ResizeMode.AUTO,
+    avatarSize: channel(right[6]).AvatarSizes.PROFILE,
+    resizeMode: channel(right[7]).ResizeMode.AUTO,
     statusStyle: memo,
     onSingleTap: closure_5,
     onDoubleTap() {
-      callback();
+      outer1_4();
       const participant = bottom(right[8]).selectParticipant(channel.id, null);
     },
     onLongPress(user) {
       bottom(right[9])({ userId: user.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
     }
   };
-  return jsx(importDefault(dependencyMap[5]), obj);
+  return jsx(bottom(right[5]), {
+    gestureEnabled: true,
+    participant: channel.participant,
+    avatarSize: channel(right[6]).AvatarSizes.PROFILE,
+    resizeMode: channel(right[7]).ResizeMode.AUTO,
+    statusStyle: memo,
+    onSingleTap: closure_5,
+    onDoubleTap() {
+      outer1_4();
+      const participant = bottom(right[8]).selectParticipant(channel.id, null);
+    },
+    onLongPress(user) {
+      bottom(right[9])({ userId: user.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
+    }
+  });
 };

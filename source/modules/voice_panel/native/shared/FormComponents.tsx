@@ -1,63 +1,67 @@
-// Module ID: 8858
-// Function ID: 69899
+// Module ID: 8865
+// Function ID: 69940
 // Name: VoiceBadges
-// Dependencies: []
+// Dependencies: [31, 4217, 33, 4130, 689, 5517, 5503, 8866, 1273, 5464, 8867, 8878, 8920, 4361, 8516, 8492, 566, 6981, 4126, 1212, 5165, 4543, 8922, 3969, 8577, 8931, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 8858 (VoiceBadges)
+// Module 8865 (VoiceBadges)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function VoiceBadges(arg0) {
   let muteDeafenIconState;
   let videoIconState;
   ({ muteDeafenIconState, videoIconState } = arg0);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.voiceBadgesContainer };
   let tmp4 = null;
   if (null != muteDeafenIconState) {
     obj = { style: tmp.iconWrapper };
-    obj = { state: muteDeafenIconState, size: arg1(dependencyMap[8]).IconSizes.SMALL, style: tmp.icon };
-    obj.children = callback(arg1(dependencyMap[7]).MuteDeafenIcon, obj);
-    tmp4 = callback(importDefault(dependencyMap[5]), obj);
-    const tmp8 = importDefault(dependencyMap[5]);
+    obj = { state: muteDeafenIconState, size: require(1273) /* Button */.IconSizes.SMALL, style: tmp.icon };
+    obj.children = callback(require(8866) /* VideoDisabledSvgIcon */.MuteDeafenIcon, obj);
+    tmp4 = callback(importDefault(5517), obj);
+    const tmp8 = importDefault(5517);
   }
   const items = [tmp4, ];
   let tmp11 = null;
   if (null != videoIconState) {
     const obj1 = { style: tmp.iconWrapper };
-    const obj2 = { state: videoIconState, size: arg1(dependencyMap[8]).IconSizes.SMALL, style: tmp.icon };
-    obj1.children = callback(arg1(dependencyMap[7]).VideoIcon, obj2);
-    tmp11 = callback(importDefault(dependencyMap[5]), obj1);
-    const tmp15 = importDefault(dependencyMap[5]);
+    const obj2 = { state: videoIconState, size: require(1273) /* Button */.IconSizes.SMALL, style: tmp.icon };
+    obj1.children = callback(require(8866) /* VideoDisabledSvgIcon */.VideoIcon, obj2);
+    tmp11 = callback(importDefault(5517), obj1);
+    const tmp15 = importDefault(5517);
   }
   items[1] = tmp11;
   obj.children = items;
-  return closure_6(importDefault(dependencyMap[5]), obj);
+  return closure_6(importDefault(5517), obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" } };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: importDefault(dependencyMap[4]).radii.round };
-obj.iconWrapper = obj;
-const obj1 = { "Null": null, "Null": null, tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.icon = obj1;
-obj.notConnectedAvatar = { opacity: 0.5 };
-obj.memberRow = { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null };
-let closure_7 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" } };
+_createForOfIteratorHelperLoose = { marginLeft: 8, padding: 6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+_createForOfIteratorHelperLoose.iconWrapper = _createForOfIteratorHelperLoose;
+let obj1 = { width: 16, height: 16, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.icon = obj1;
+_createForOfIteratorHelperLoose.notConnectedAvatar = { opacity: 0.5 };
+_createForOfIteratorHelperLoose.memberRow = { flexDirection: "row", alignItems: "center", gap: 4 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
 
 export const VoicePanelFormSection = function VoicePanelFormSection(style) {
   let obj = Object.create(null);
   obj.style = 0;
   const merged = Object.assign(style, obj);
   obj = { style: items };
-  const items = [callback2().container, style.style];
-  const tmp3 = callback2();
+  items = [_createForOfIteratorHelperLoose().container, style.style];
+  const tmp3 = _createForOfIteratorHelperLoose();
   obj = {};
   const merged1 = Object.assign(merged);
-  obj.children = callback(arg1(dependencyMap[6]).TableRowGroup, obj);
-  return callback(importDefault(dependencyMap[5]), obj);
+  obj.children = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback(importDefault(5517), obj);
 };
 export const MemberRowItem = function MemberRowItem(user) {
   let guildId;
@@ -66,14 +70,11 @@ export const MemberRowItem = function MemberRowItem(user) {
   let showRing;
   let showSecureFramesUI;
   user = user.user;
-  const arg1 = user;
   const channelId = user.channelId;
-  const importDefault = channelId;
   let flag = user.selfStream;
   if (flag === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
   ({ nick, guildId, notConnected } = user);
   if (notConnected === undefined) {
     notConnected = false;
@@ -82,34 +83,32 @@ export const MemberRowItem = function MemberRowItem(user) {
   if (showSecureFramesUI === undefined) {
     showSecureFramesUI = false;
   }
-  let React;
-  let closure_4;
+  let analyticsLocations;
+  let id;
   let stateFromStores;
-  const tmp = callback2();
-  const analyticsLocations = importDefault(dependencyMap[9])().analyticsLocations;
-  React = analyticsLocations;
-  let obj = arg1(dependencyMap[10]);
+  const tmp = _createForOfIteratorHelperLoose();
+  analyticsLocations = channelId(flag[9])().analyticsLocations;
+  let obj = user(flag[10]);
   const muteDeafenIconState = obj.useMuteDeafenIconState(user.id, guildId);
-  let obj1 = arg1(dependencyMap[10]);
+  let obj1 = user(flag[10]);
   const videoIconState = obj1.useVideoIconState(user.id, guildId);
-  const id = user.id;
-  closure_4 = id;
-  let obj2 = arg1(dependencyMap[11]);
+  id = user.id;
+  let obj2 = user(flag[11]);
   const isUserSecureFramesVerified = obj2.useIsUserSecureFramesVerified({ userId: id, channelId });
-  let obj3 = arg1(dependencyMap[12]);
+  let obj3 = user(flag[12]);
   const canRing = obj3.useCanRing(user, "MemberRowItem");
   obj = { userId: user.id, guildId };
-  let obj5 = arg1(dependencyMap[14]);
-  const displayNameStylesFont = obj5.useDisplayNameStylesFont({ displayNameStyles: importDefault(dependencyMap[13])(obj) });
-  const items = [id, channelId, analyticsLocations];
-  const callback = React.useCallback(() => {
+  let obj5 = user(flag[14]);
+  const displayNameStylesFont = obj5.useDisplayNameStylesFont({ displayNameStyles: channelId(flag[13])(obj) });
+  let items = [id, channelId, analyticsLocations];
+  const callback = analyticsLocations.useCallback(() => {
     channelId(flag[15])({ userId: id, channelId, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
   }, items);
-  let obj6 = arg1(dependencyMap[16]);
-  const items1 = [closure_4];
+  let obj6 = user(flag[16]);
+  const items1 = [id];
   stateFromStores = obj6.useStateFromStores(items1, () => user(flag[17]).getStreamerActivityByUserId(id, id));
   const items2 = [stateFromStores, flag];
-  const memo = React.useMemo(() => {
+  const memo = analyticsLocations.useMemo(() => {
     if (!flag) {
       return null;
     } else {
@@ -117,7 +116,7 @@ export const MemberRowItem = function MemberRowItem(user) {
         const intl = user(flag[19]).intl;
         intl.string(user(flag[19]).t.eXan7B);
       }
-      let formatResult = { 803799044: 3309567, 1269170180: 601874432, 711589892: 4319821 };
+      let formatResult = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1 };
       const intl2 = user(flag[19]).intl;
       formatResult = {};
       if (null == stateFromStores.details) {
@@ -127,34 +126,36 @@ export const MemberRowItem = function MemberRowItem(user) {
         tmp4(user(flag[18]).Text, formatResult);
       }
       const details = stateFromStores.details;
-      const tmp4 = stateFromStores;
+      tmp4 = stateFromStores;
     }
   }, items2);
   obj = { onPress: callback };
-  obj1 = { user, guildId, size: arg1(dependencyMap[8]).AvatarSizes.REFRESH_MEDIUM_32 };
+  obj1 = { user, guildId, size: user(flag[8]).AvatarSizes.REFRESH_MEDIUM_32 };
   let notConnectedAvatar;
   if (notConnected) {
     notConnectedAvatar = tmp.notConnectedAvatar;
   }
   obj1.style = notConnectedAvatar;
-  obj.icon = stateFromStores(arg1(dependencyMap[8]).Avatar, obj1);
+  obj.icon = stateFromStores(user(flag[8]).Avatar, obj1);
   obj.subLabel = memo;
   if (showRing) {
     if (canRing) {
       obj2 = {
+        size: "sm",
+        variant: "secondary",
         onPress() {
               const items = [user.id];
               return channelId(flag[22]).ring(channelId, items, "voice_panel_floating_cta");
             }
       };
-      const intl = arg1(dependencyMap[19]).intl;
-      obj2.text = intl.string(arg1(dependencyMap[19]).t.bHa9kN);
-      let tmp14 = stateFromStores(arg1(dependencyMap[21]).Button, obj2);
+      let intl = user(flag[19]).intl;
+      obj2.text = intl.string(user(flag[19]).t.bHa9kN);
+      let tmp14 = stateFromStores(user(flag[21]).Button, obj2);
     }
     obj.trailing = tmp14;
     if (null == nick) {
-      nick = arg1(dependencyMap[23]).getName(user);
-      const obj12 = arg1(dependencyMap[23]);
+      nick = user(flag[23]).getName(user);
+      const obj12 = user(flag[23]);
     }
     obj3 = { style: tmp.memberRow };
     const obj4 = { variant: "text-md/semibold" };
@@ -170,21 +171,21 @@ export const MemberRowItem = function MemberRowItem(user) {
     }
     obj4.style = tmp29;
     obj4.children = nick;
-    const items3 = [stateFromStores(arg1(dependencyMap[18]).Text, obj4), , ];
+    const items3 = [stateFromStores(user(flag[18]).Text, obj4), , ];
     obj6 = { userId: user.id };
-    items3[1] = stateFromStores(importDefault(dependencyMap[24]), obj6);
+    items3[1] = stateFromStores(channelId(flag[24]), obj6);
     let tmp33 = null;
     if (showSecureFramesUI) {
       tmp33 = null;
       if (isUserSecureFramesVerified) {
         const obj7 = { size: "xs", style: tmp.icon };
-        tmp33 = stateFromStores(arg1(dependencyMap[25]).ShieldLockIcon, obj7);
+        tmp33 = stateFromStores(user(flag[25]).ShieldLockIcon, obj7);
       }
     }
     items3[2] = tmp33;
     obj3.children = items3;
-    obj.label = closure_6(importDefault(dependencyMap[5]), obj3);
-    return stateFromStores(arg1(dependencyMap[20]).TableRow, obj);
+    obj.label = closure_6(channelId(flag[5]), obj3);
+    return stateFromStores(user(flag[20]).TableRow, obj);
   }
   if (null != muteDeafenIconState) {
     const obj8 = { muteDeafenIconState, videoIconState };

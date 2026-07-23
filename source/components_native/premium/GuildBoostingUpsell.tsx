@@ -1,52 +1,58 @@
-// Module ID: 12339
-// Function ID: 94452
+// Module ID: 12453
+// Function ID: 96603
 // Name: FEATURES_PREMIUM_GUILD_USER
-// Dependencies: []
+// Dependencies: [31, 27, 4970, 1851, 33, 4130, 689, 12432, 1212, 8013, 12454, 12455, 12457, 8422, 12458, 8007, 12459, 10256, 12460, 11563, 12461, 8005, 12462, 9395, 566, 7429, 12463, 4066, 7389, 3976, 7398, 7399, 4126, 8138, 12467, 12468, 12469, 2]
 // Exports: default
 
-// Module 12339 (FEATURES_PREMIUM_GUILD_USER)
-importAll(dependencyMap[0]);
-const tmp3 = arg1(dependencyMap[1]);
-({ View: closure_3, Image: closure_4 } = tmp3);
-let closure_5 = importDefault(dependencyMap[2]);
-const FractionalPremiumStates = arg1(dependencyMap[3]).FractionalPremiumStates;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { root: { "Bool(false)": null, "Bool(false)": null }, title: { marginTop: 16 }, features: { marginTop: 16 }, cardText: {}, guildList: { marginTop: 16 }, logoPremiumGuild: { "Null": 50, "Null": null, "Null": 1, "Null": "text-md/semibold", "Null": "interactive-text-active" }, imgPremiumGuild: { "Null": "/assets/design/components/Illustration/native/redesign/generated/images", "Null": 177 }, imgNoGuilds: {}, header: { alignItems: "center" } };
-obj = { 105999969: "a", 995517444: "oldRule", borderTopWidth: 2 * tmp3.StyleSheet.hairlineWidth, borderTopColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
-obj.upsell = obj;
-obj.subscriptionUpsell = { marginTop: 32 };
-let closure_9 = obj.createStyles(obj);
+// Module 12453 (FEATURES_PREMIUM_GUILD_USER)
+import "registerAsset";
+import get_ActivityIndicator from "useTheme";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FractionalPremiumStates } from "GuildFeatures";
+import jsxProd from "PremiumFeatureList";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = { root: { paddingHorizontal: 16, paddingVertical: 32 }, title: { marginTop: 16 }, features: { marginTop: 16 }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" }, guildList: { marginTop: 16 }, logoPremiumGuild: { resizeMode: "contain", width: "100%", height: 34, maxWidth: 320, marginTop: 16 }, imgPremiumGuild: { width: 95, height: 65 }, imgNoGuilds: { width: 178, height: 112, marginTop: 32 }, header: { alignItems: "center" } };
+_createForOfIteratorHelperLoose = { marginTop: 32, paddingTop: 16, borderTopWidth: 2 * get_ActivityIndicator.StyleSheet.hairlineWidth, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.upsell = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.subscriptionUpsell = { marginTop: 32 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 class FEATURES_PREMIUM_GUILD_USER {
   constructor() {
-    obj = { icon: importDefault(dependencyMap[7]) };
-    intl = arg1(dependencyMap[8]).intl;
-    obj.label = intl.string(arg1(dependencyMap[8]).t.GS+bL0);
-    obj.IconComponent = arg1(dependencyMap[9]).BoostGemIcon;
-    obj.color = importDefault(dependencyMap[6]).unsafe_rawColors.GUILD_BOOSTING_PINK;
+    obj = { icon: require("registerAsset") };
+    intl = require("getSystemLocale").intl;
+    obj.label = intl.string(require("getSystemLocale").t["GS+bL0"]);
+    obj.IconComponent = require("BoostGemIcon").BoostGemIcon;
+    obj.color = require("_createForOfIteratorHelperLoose").unsafe_rawColors.GUILD_BOOSTING_PINK;
     items = [, , ];
     items[0] = obj;
-    obj = { icon: importDefault(dependencyMap[10]) };
-    intl2 = arg1(dependencyMap[8]).intl;
-    obj.label = intl2.string(arg1(dependencyMap[8]).t.a7LWeM);
+    obj = { icon: require("registerAsset") };
+    intl2 = require("getSystemLocale").intl;
+    obj.label = intl2.string(require("getSystemLocale").t.a7LWeM);
     obj.IconComponent = function IconComponent(arg0) {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["color"] = callback2(closure_2[6]).unsafe_rawColors.GUILD_BOOSTING_PINK;
-      return callback3(callback(closure_2[11]).BoostTier3Icon, obj);
+      obj["color"] = outer1_1(outer1_2[6]).unsafe_rawColors.GUILD_BOOSTING_PINK;
+      return outer1_7(outer1_0(outer1_2[11]).BoostTier3Icon, obj);
     };
     items[1] = obj;
-    obj1 = { icon: importDefault(dependencyMap[12]) };
-    intl3 = arg1(dependencyMap[8]).intl;
-    obj1.label = intl3.string(arg1(dependencyMap[8]).t.E76jz8);
-    obj1.color = importDefault(dependencyMap[6]).unsafe_rawColors.YELLOW_300;
-    obj1.IconComponent = arg1(dependencyMap[13]).ShieldUserIcon;
+    obj1 = { icon: require("registerAsset") };
+    intl3 = require("getSystemLocale").intl;
+    obj1.label = intl3.string(require("getSystemLocale").t.E76jz8);
+    obj1.color = require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300;
+    obj1.IconComponent = require("ShieldUserIcon").ShieldUserIcon;
     items[2] = obj1;
     return items;
   }
 }
-const tmp4 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[37]).fileFinishedImporting("components_native/premium/GuildBoostingUpsell.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/premium/GuildBoostingUpsell.tsx");
 
 export default function GuildBoostingUpsell(arg0) {
   let fractionalState;
@@ -55,13 +61,13 @@ export default function GuildBoostingUpsell(arg0) {
   let onLearnMorePremium;
   ({ fractionalState, isInReverseTrial } = arg0);
   ({ onLearnMorePremium, hasAvailableSlots } = arg0);
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[24]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => flattenedGuildIds.getFlattenedGuildIds().length > 0);
-  let obj1 = arg1(dependencyMap[25]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getFlattenedGuildIds().length > 0);
+  let obj1 = require(7429) /* _createForOfIteratorHelperLoose */;
   const subscriptionPlansLoaded = obj1.useSubscriptionPlansLoaded();
-  let obj2 = arg1(dependencyMap[26]);
+  let obj2 = require(12463) /* getGuildSubscriptionNoGuildsSource */;
   const guildSubscriptionNoGuildsSource = obj2.useGuildSubscriptionNoGuildsSource();
   if (fractionalState !== FractionalPremiumStates.NONE) {
     if (!isInReverseTrial) {
@@ -71,85 +77,85 @@ export default function GuildBoostingUpsell(arg0) {
   }
   obj = { style: tmp.root };
   obj = { style: tmp.header };
-  obj1 = { style: tmp.imgPremiumGuild, source: importDefault(dependencyMap[28]) };
+  obj1 = { style: tmp.imgPremiumGuild, source: importDefault(7389) };
   const items1 = [callback(closure_4, obj1), , , ];
   obj2 = { style: tmp.logoPremiumGuild };
-  let obj7 = arg1(dependencyMap[29]);
+  let obj7 = require(3976) /* AccessibilityAnnouncer */;
   if (obj7.isThemeDark(tmp5)) {
-    let tmp11Result = tmp11(tmp12[30]);
+    let tmp11Result = tmp11(7398);
   } else {
-    tmp11Result = tmp11(tmp12[31]);
+    tmp11Result = tmp11(7399);
   }
   obj2.source = tmp11Result;
   items1[1] = callback(closure_4, obj2);
   let num3 = 32;
-  const obj3 = { style: tmp.title };
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
   let num4 = 8;
-  const intl = arg1(dependencyMap[8]).intl;
-  obj3.children = intl.string(arg1(dependencyMap[8]).t.hw6WTd);
-  items1[2] = callback(arg1(dependencyMap[32]).Text, obj3);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj3.children = intl.string(require(1212) /* getSystemLocale */.t.hw6WTd);
+  items1[2] = callback(require(4126) /* Text */.Text, obj3);
   const obj4 = { style: tmp.cardText, variant: "text-md/medium" };
   let str = "text-md/medium";
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj4.children = intl2.string(arg1(dependencyMap[8]).t.K5jBdG);
-  items1[3] = callback(arg1(dependencyMap[32]).Text, obj4);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj4.children = intl2.string(require(1212) /* getSystemLocale */.t.K5jBdG);
+  items1[3] = callback(require(4126) /* Text */.Text, obj4);
   obj.children = items1;
   const items2 = [closure_8(closure_3, obj), , , , , ];
-  const obj5 = { style: tmp.title };
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj5.children = intl3.string(arg1(dependencyMap[8]).t.RvfRTB);
-  items2[1] = callback(arg1(dependencyMap[32]).Text, obj5);
+  const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj5.children = intl3.string(require(1212) /* getSystemLocale */.t.RvfRTB);
+  items2[1] = callback(require(4126) /* Text */.Text, obj5);
   const obj6 = { style: tmp.features };
   const tmp10 = closure_4;
-  const tmp5 = importDefault(dependencyMap[27])();
+  tmp5 = importDefault(4066)();
   const tmp9 = callback;
   obj6.features = FEATURES_PREMIUM_GUILD_USER();
-  items2[2] = callback(importDefault(dependencyMap[33]), obj6);
-  obj7 = { style: tmp.title };
-  const intl4 = arg1(dependencyMap[8]).intl;
-  obj7.children = intl4.string(arg1(dependencyMap[8]).t./pVhjb);
-  items2[3] = callback(arg1(dependencyMap[32]).Text, obj7);
+  items2[2] = callback(importDefault(8138), obj6);
+  obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj7.children = intl4.string(require(1212) /* getSystemLocale */.t["/pVhjb"]);
+  items2[3] = callback(require(4126) /* Text */.Text, obj7);
   const obj8 = { style: tmp.features };
   const obj9 = {};
-  const tmp14 = importDefault(dependencyMap[33]);
-  obj9.icon = importDefault(dependencyMap[14]);
-  const intl5 = arg1(dependencyMap[8]).intl;
-  obj9.label = intl5.string(arg1(dependencyMap[8]).t.Ts7BVI);
-  obj9.IconComponent = arg1(dependencyMap[15]).ReactionIcon;
-  obj9.color = importDefault(dependencyMap[6]).unsafe_rawColors.PREMIUM_PERK_YELLOW;
+  const tmp14 = importDefault(8138);
+  obj9.icon = importDefault(12458);
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj9.label = intl5.string(require(1212) /* getSystemLocale */.t.Ts7BVI);
+  obj9.IconComponent = require(8007) /* ReactionIcon */.ReactionIcon;
+  obj9.color = importDefault(689).unsafe_rawColors.PREMIUM_PERK_YELLOW;
   const items3 = [obj9, , , , ];
-  const obj10 = { icon: importDefault(dependencyMap[16]) };
-  const intl6 = arg1(dependencyMap[8]).intl;
-  obj10.label = intl6.string(arg1(dependencyMap[8]).t.QcJbt6);
-  obj10.IconComponent = arg1(dependencyMap[17]).StickerIcon;
-  obj10.color = importDefault(dependencyMap[6]).unsafe_rawColors.PREMIUM_PERK_PURPLE;
+  const obj10 = { icon: importDefault(12459) };
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj10.label = intl6.string(require(1212) /* getSystemLocale */.t.QcJbt6);
+  obj10.IconComponent = require(10256) /* StickerIcon */.StickerIcon;
+  obj10.color = importDefault(689).unsafe_rawColors.PREMIUM_PERK_PURPLE;
   items3[1] = obj10;
-  const obj11 = { icon: importDefault(dependencyMap[18]) };
-  const intl7 = arg1(dependencyMap[8]).intl;
-  obj11.label = intl7.string(arg1(dependencyMap[8]).t.rFNkf5);
+  const obj11 = { icon: importDefault(12460) };
+  const intl7 = require(1212) /* getSystemLocale */.intl;
+  obj11.label = intl7.string(require(1212) /* getSystemLocale */.t.rFNkf5);
   obj11.color = "#4173da";
-  obj11.IconComponent = arg1(dependencyMap[19]).HeadphonesIcon;
+  obj11.IconComponent = require(11563) /* HeadphonesIcon */.HeadphonesIcon;
   items3[2] = obj11;
-  const obj12 = { icon: importDefault(dependencyMap[20]) };
-  const intl8 = arg1(dependencyMap[8]).intl;
-  obj12.label = intl8.string(arg1(dependencyMap[8]).t.BpjjS/);
-  obj12.IconComponent = arg1(dependencyMap[21]).UploadIcon;
-  obj12.color = importDefault(dependencyMap[6]).unsafe_rawColors.GUILD_BOOSTING_PINK;
+  const obj12 = { icon: importDefault(12461) };
+  const intl8 = require(1212) /* getSystemLocale */.intl;
+  obj12.label = intl8.string(require(1212) /* getSystemLocale */.t["BpjjS/"]);
+  obj12.IconComponent = require(8005) /* UploadIcon */.UploadIcon;
+  obj12.color = importDefault(689).unsafe_rawColors.GUILD_BOOSTING_PINK;
   items3[3] = obj12;
-  const obj13 = { icon: importDefault(dependencyMap[22]) };
-  const intl9 = arg1(dependencyMap[8]).intl;
-  obj13.label = intl9.string(arg1(dependencyMap[8]).t.9g5Lgb);
-  obj13.IconComponent = arg1(dependencyMap[23]).StarIcon;
-  obj13.color = importDefault(dependencyMap[6]).unsafe_rawColors.PREMIUM_PERK_GOLD;
+  const obj13 = { icon: importDefault(12462) };
+  const intl9 = require(1212) /* getSystemLocale */.intl;
+  obj13.label = intl9.string(require(1212) /* getSystemLocale */.t["9g5Lgb"]);
+  obj13.IconComponent = require(9395) /* StarIcon */.StarIcon;
+  obj13.color = importDefault(689).unsafe_rawColors.PREMIUM_PERK_GOLD;
   items3[4] = obj13;
   obj8.features = items3;
-  items2[4] = callback(importDefault(dependencyMap[33]), obj8);
+  items2[4] = callback(importDefault(8138), obj8);
   const obj14 = { style: tmp.upsell };
   let tmp18 = null;
   if (subscriptionPlansLoaded) {
     tmp18 = null;
     if (fractionalState === FractionalPremiumStates.NONE) {
-      tmp18 = callback(importDefault(dependencyMap[34]), {});
+      tmp18 = callback(importDefault(12467), {});
     }
   }
   const items4 = [tmp18, , ];
@@ -158,7 +164,7 @@ export default function GuildBoostingUpsell(arg0) {
     let tmp34 = null;
     if (subscriptionPlansLoaded) {
       const obj15 = { onLearnMorePremium, style: tmp.subscriptionUpsell };
-      tmp34 = callback(importDefault(dependencyMap[36]), obj15);
+      tmp34 = callback(importDefault(12469), obj15);
     }
     items4[2] = tmp34;
     obj14.children = items4;
@@ -169,20 +175,20 @@ export default function GuildBoostingUpsell(arg0) {
     const obj16 = {};
     if (stateFromStores) {
       const obj17 = { style: tmp.cardText, variant: str };
-      const intl12 = arg1(dependencyMap[num4]).intl;
-      obj17.children = intl12.string(arg1(dependencyMap[num4]).t.WRzob8);
-      const items5 = [tmp25(arg1(dependencyMap[num3]).Text, obj17), , ];
+      const intl12 = require(dependencyMap[num4]).intl;
+      obj17.children = intl12.string(require(dependencyMap[num4]).t.WRzob8);
+      const items5 = [tmp25(require(dependencyMap[num3]).Text, obj17), , ];
       const obj18 = {};
       const items6 = [tmp.cardText];
       obj18.style = items6;
       obj18.variant = "text-md/bold";
-      const intl13 = arg1(dependencyMap[num4]).intl;
+      const intl13 = require(dependencyMap[num4]).intl;
       str = intl13.string;
-      num4 = str(arg1(dependencyMap[num4]).t.j4bXcm);
+      num4 = str(require(dependencyMap[num4]).t.j4bXcm);
       obj18.children = num4;
-      items5[1] = tmp25(arg1(dependencyMap[num3]).Text, obj18);
+      items5[1] = tmp25(require(dependencyMap[num3]).Text, obj18);
       const obj19 = { style: tmp.guildList };
-      num3 = tmp25(importDefault(dependencyMap[35]), obj19);
+      num3 = tmp25(importDefault(12468), obj19);
       items5[2] = num3;
       obj16.children = items5;
       let tmp29 = obj16;
@@ -193,13 +199,13 @@ export default function GuildBoostingUpsell(arg0) {
       const items8 = [tmp.cardText];
       obj21.style = items8;
       obj21.variant = "text-md/bold";
-      const intl10 = arg1(dependencyMap[num4]).intl;
-      obj21.children = intl10.string(arg1(dependencyMap[num4]).t.FHm4bZ);
-      items7[1] = tmp25(arg1(dependencyMap[num3]).Text, obj21);
+      const intl10 = require(dependencyMap[num4]).intl;
+      obj21.children = intl10.string(require(dependencyMap[num4]).t.FHm4bZ);
+      items7[1] = tmp25(require(dependencyMap[num3]).Text, obj21);
       const obj22 = { style: tmp.cardText, variant: str };
-      const intl11 = arg1(dependencyMap[num4]).intl;
-      obj22.children = intl11.string(arg1(dependencyMap[num4]).t.PSLiiu);
-      items7[2] = tmp25(arg1(dependencyMap[num3]).Text, obj22);
+      const intl11 = require(dependencyMap[num4]).intl;
+      obj22.children = intl11.string(require(dependencyMap[num4]).t.PSLiiu);
+      items7[2] = tmp25(require(dependencyMap[num3]).Text, obj22);
       obj16.children = items7;
       tmp29 = obj16;
     }

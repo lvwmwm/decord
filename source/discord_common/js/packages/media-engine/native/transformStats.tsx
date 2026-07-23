@@ -1,10 +1,10 @@
-// Module ID: 4270
-// Function ID: 37374
+// Module ID: 4274
+// Function ID: 37406
 // Name: convertAudioLevel
-// Dependencies: []
+// Dependencies: [4275, 2]
 // Exports: default
 
-// Module 4270 (convertAudioLevel)
+// Module 4274 (convertAudioLevel)
 function convertAudioLevel(arg0) {
   return arg0 / 32768;
 }
@@ -195,8 +195,8 @@ function transformPlayoutStats(obj) {
     let _Array = Array;
     let arr = arg0[key10006];
     if (Array.isArray(arg0[key10006])) {
-      obj[key10006] = arr.map((arg0) => arg0 * closure_2);
-      // continue
+      obj[key10006] = arr.map((arg0) => arg0 * outer1_2);
+      continue;
     } else {
       if (null == arr) {
         continue;
@@ -204,25 +204,25 @@ function transformPlayoutStats(obj) {
         let tmp = arg0[key10006];
         obj = {};
         let _Math = Math;
-        let tmp2 = closure_2;
-        obj.last = Math.round(tmp.last * closure_2);
+        let tmp2 = c2;
+        obj.last = Math.round(tmp.last * c2);
         let _Math2 = Math;
-        let tmp3 = closure_2;
-        obj.mean = Math.round(tmp.mean * closure_2);
+        let tmp3 = c2;
+        obj.mean = Math.round(tmp.mean * c2);
         let _Math3 = Math;
-        let tmp4 = closure_2;
-        obj.p75 = Math.round(tmp.p75 * closure_2);
+        let tmp4 = c2;
+        obj.p75 = Math.round(tmp.p75 * c2);
         let _Math4 = Math;
-        let tmp5 = closure_2;
-        obj.p95 = Math.round(tmp.p95 * closure_2);
+        let tmp5 = c2;
+        obj.p95 = Math.round(tmp.p95 * c2);
         let _Math5 = Math;
-        let tmp6 = closure_2;
-        obj.p99 = Math.round(tmp.p99 * closure_2);
+        let tmp6 = c2;
+        obj.p99 = Math.round(tmp.p99 * c2);
         let _Math6 = Math;
-        let tmp7 = closure_2;
-        obj.max = Math.round(tmp.max * closure_2);
+        let tmp7 = c2;
+        obj.max = Math.round(tmp.max * c2);
         obj[key10006] = obj;
-        // continue
+        continue;
       }
       continue;
     }
@@ -230,18 +230,18 @@ function transformPlayoutStats(obj) {
   }
   return obj;
 }
-function transformOutboundVideoStats(video, any) {
+function transformOutboundVideoStats(video, id) {
   const substreams = video.substreams;
   const found = substreams.find((isRTX) => !isRTX.isRTX && !isRTX.isFlexFEC);
   if (null != found) {
     const substreams1 = video.substreams;
     const substreams2 = video.substreams;
-    const reduced = substreams1.reduce((arg0, rtpStats) => arg0 + callback(rtpStats.rtpStats), 0);
+    const reduced = substreams1.reduce((arg0, rtpStats) => arg0 + outer1_4(rtpStats.rtpStats), 0);
     let obj = { type: "video", ssrc: found.ssrc };
-    const reduced1 = substreams2.reduce((arg0, rtpStats) => arg0 + callback2(rtpStats.rtpStats), 0);
-    obj.sinkWant = require(dependencyMap[0]).formatSinkWantStat(any, found.ssrc, true);
-    const obj2 = require(dependencyMap[0]);
-    obj.sinkWantAsInt = require(dependencyMap[0]).formatSinkWantAsInt(any, found.ssrc);
+    const reduced1 = substreams2.reduce((arg0, rtpStats) => arg0 + outer1_5(rtpStats.rtpStats), 0);
+    obj.sinkWant = require(4275) /* formatSinkWantStat */.formatSinkWantStat(id, found.ssrc, true);
+    const obj2 = require(4275) /* formatSinkWantStat */;
+    obj.sinkWantAsInt = require(4275) /* formatSinkWantStat */.formatSinkWantAsInt(id, found.ssrc);
     obj = {};
     ({ codecPayloadType: obj4.id, codecName: obj4.name } = video);
     obj.codec = obj;
@@ -422,17 +422,17 @@ function transformOutboundVideoStats(video, any) {
     return obj;
   }
 }
-function transformInboundVideoStats(height, any, any) {
+function transformInboundVideoStats(height, id, id) {
   let obj = { type: "video", ssrc: height.ssrc };
   const tmp = sumBytes(height.rtpStats);
   const tmp2 = sumPackets(height.rtpStats);
-  obj.sinkWant = require(dependencyMap[0]).formatSinkWantStat(any, height.ssrc, true);
-  const obj2 = require(dependencyMap[0]);
-  obj.sinkWantAsInt = require(dependencyMap[0]).formatSinkWantAsInt(any, height.ssrc);
-  const obj3 = require(dependencyMap[0]);
-  obj.sinkWantLocal = require(dependencyMap[0]).formatSinkWantStat(any, height.ssrc, true);
-  const obj4 = require(dependencyMap[0]);
-  obj.sinkWantLocalAsInt = require(dependencyMap[0]).formatSinkWantAsInt(any, height.ssrc);
+  obj.sinkWant = require(4275) /* formatSinkWantStat */.formatSinkWantStat(id, height.ssrc, true);
+  const obj2 = require(4275) /* formatSinkWantStat */;
+  obj.sinkWantAsInt = require(4275) /* formatSinkWantStat */.formatSinkWantAsInt(id, height.ssrc);
+  const obj3 = require(4275) /* formatSinkWantStat */;
+  obj.sinkWantLocal = require(4275) /* formatSinkWantStat */.formatSinkWantStat(id, height.ssrc, true);
+  const obj4 = require(4275) /* formatSinkWantStat */;
+  obj.sinkWantLocalAsInt = require(4275) /* formatSinkWantStat */.formatSinkWantAsInt(id, height.ssrc);
   obj.codec = { id: height.codecPayloadType, name: height.codecName };
   obj.bytesReceived = tmp;
   obj.packetsReceived = tmp2;
@@ -468,18 +468,17 @@ function transformInboundVideoStats(height, any, any) {
   const merged = Object.assign(obj);
   return obj;
 }
-let closure_2 = 1000;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/native/transformStats.tsx");
+let c2 = 1000;
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/transformStats.tsx");
 
-export default function transformStats(mediaEngineConnectionId, arg1, any) {
+export default function transformStats(mediaEngineConnectionId, arg1, id) {
   let audio;
   let inboundBitrateEstimate;
   let video;
   let videos;
-  const require = any;
+  const _require = id;
   const dependencyMap = arg3;
-  let closure_2 = null;
+  let c2 = null;
   let convertAudioLevel = null;
   let parsed = arg1;
   if ("string" === typeof arg1) {
@@ -487,7 +486,6 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
     parsed = JSON.parse(arg1);
   }
   const items = [];
-  const sumBytes = items;
   if (null != parsed.outbound) {
     ({ audio, video, videos } = parsed.outbound);
     if (null != audio) {
@@ -497,10 +495,10 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
       }
       convertAudioLevel = num + audio.bytesSent;
       let obj = { type: "audio", ssrc: audio.ssrc };
-      let obj1 = require(dependencyMap[0]);
-      obj.sinkWant = obj1.formatSinkWantStat(any, audio.ssrc, false);
-      let obj2 = require(dependencyMap[0]);
-      obj.sinkWantAsInt = obj2.formatSinkWantAsInt(any, audio.ssrc);
+      let obj1 = _require(4275);
+      obj.sinkWant = obj1.formatSinkWantStat(id, audio.ssrc, false);
+      let obj2 = _require(4275);
+      obj.sinkWantAsInt = obj2.formatSinkWantAsInt(id, audio.ssrc);
       obj = {};
       ({ codecPayloadType: obj4.id, codecName: obj4.name } = audio);
       obj.codec = obj;
@@ -513,8 +511,8 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
       items.push(obj);
     }
     if (null != videos) {
-      const item = videos.forEach((arg0) => {
-        const tmp = callback3(arg0, arg2);
+      let item = videos.forEach((arg0) => {
+        const tmp = outer1_7(arg0, closure_0);
         if (null != tmp) {
           let num = 0;
           if (null != closure_3) {
@@ -525,7 +523,7 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
         }
       });
     } else if (null != video) {
-      const tmp9 = transformOutboundVideoStats(video, any);
+      const tmp9 = transformOutboundVideoStats(video, id);
       if (null != tmp9) {
         let num3 = 0;
         if (null != convertAudioLevel) {
@@ -537,7 +535,6 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
     }
   }
   obj = {};
-  const sumPackets = obj;
   if (null != parsed.inbound) {
     const inbound = parsed.inbound;
     const item1 = inbound.forEach((id) => {
@@ -546,27 +543,25 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
       let video;
       let videos;
       id = id.id;
-      const arg2 = id;
       ({ audio, video, videos, playout } = id);
-      const arg3 = playout;
       obj[id] = [];
       if (null == audio) {
         if (null != videos) {
           const item = videos.forEach((rtpStats) => {
-            const tmp = callback2(rtpStats, id, playout, playout);
+            const tmp = outer2_8(rtpStats, id, playout, playout);
             if (null != tmp) {
               let num = 0;
               if (null != closure_2) {
                 num = closure_2;
               }
-              closure_2 = num + callback(rtpStats.rtpStats);
-              let arr = closure_5[closure_0];
+              closure_2 = num + items(rtpStats.rtpStats);
+              let arr = outer1_5[id];
               arr = arr.push(tmp);
-              const tmp3 = callback(rtpStats.rtpStats);
+              const tmp3 = items(rtpStats.rtpStats);
             }
           });
         } else if (null != video) {
-          const tmp15 = callback4(video, arg2, arg3, playout);
+          const tmp15 = outer1_8(video, id, playout, playout);
           if (null != tmp15) {
             let num3 = 0;
             if (null != closure_2) {
@@ -585,10 +580,10 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
         }
         closure_2 = num + audio.bytesReceived;
         arr = obj[id];
-        let obj = { type: "audio", ssrc: audio.ssrc };
-        let obj2 = arg2(arg3[0]);
-        obj.sinkWant = obj2.formatSinkWantStat(arg2, audio.ssrc, false);
-        obj.sinkWantAsInt = arg2(arg3[0]).formatSinkWantAsInt(arg2, audio.ssrc);
+        obj = { type: "audio", ssrc: audio.ssrc };
+        let obj2 = id(4275);
+        obj.sinkWant = obj2.formatSinkWantStat(id, audio.ssrc, false);
+        obj.sinkWantAsInt = id(4275).formatSinkWantAsInt(id, audio.ssrc);
         obj = {};
         ({ codecPayloadType: obj4.id, codecName: obj4.name } = audio);
         obj.codec = obj;
@@ -605,14 +600,14 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
         ({ opSilence: obj.opSilence, opNormal: obj.opNormal, opMerge: obj.opMerge, opExpand: obj.opExpand, opAccelerate: obj.opAccelerate, opPreemptiveExpand: obj.opPreemptiveExpand, opCNG: obj.opCNG, delayEstimate: obj.delayEstimate, passthroughCount: obj.passthroughCount, decryptSuccessCount: obj.decryptSuccessCount, decryptFailureCount: obj.decryptFailureCount, decryptDuration: obj.decryptDuration, decryptAttempts: obj.decryptAttempts, decryptMissingKeyCount: obj.decryptMissingKeyCount, decryptInvalidNonceCount: obj.decryptInvalidNonceCount } = audio);
         if (null != playout) {
           ({ audioJitterBuffer: obj6.audioJitterBuffer, audioJitterBufferSamples: obj6.audioJitterBufferSamples, audioJitterDelay: obj6.audioJitterDelay, audioJitterDelaySamples: obj6.audioJitterDelaySamples, audioJitterTarget: obj6.audioJitterTarget, audioJitterTargetSamples: obj6.audioJitterTargetSamples, audioPlayoutUnderruns: obj6.audioPlayoutUnderruns, relativeReceptionDelay: obj6.relativeReceptionDelay, relativePlayoutDelay: obj6.relativePlayoutDelay } = playout);
-          obj2 = callback2({});
+          obj2 = outer1_6({});
           const obj1 = {};
         } else {
           obj2 = {};
         }
         const merged = Object.assign(obj2);
         obj = arr.push(obj);
-        const obj3 = arg2(arg3[0]);
+        const obj3 = id(4275);
       }
     });
   }
@@ -644,10 +639,10 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
   }
   let tmp15 = null != bytesReceived;
   if (!tmp15) {
-    let tmp17 = null != closure_2;
+    let tmp17 = null != c2;
     if (tmp17) {
       const _Number = Number;
-      tmp17 = !Number.isNaN(closure_2);
+      tmp17 = !Number.isNaN(c2);
     }
     tmp15 = tmp17;
   }
@@ -657,7 +652,7 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
       bytesReceived1 = transport.bytesReceived;
     }
     if (null == bytesReceived1) {
-      bytesReceived1 = closure_2;
+      bytesReceived1 = c2;
     }
     let tmp21;
     if (null != bytesReceived1) {
@@ -698,7 +693,7 @@ export default function transformStats(mediaEngineConnectionId, arg1, any) {
   if (null != camera) {
     ({ capturedFramesDropped: obj8.capturedFramesDropped, capturedFramesCount: obj8.capturedFramesCount, capturedFramesMean: obj8.capturedFramesMean, capturedFramesStdev: obj8.capturedFramesStdev } = camera);
     tmp30 = {};
-    const obj3 = {};
+    let obj3 = {};
   }
   obj2.camera = tmp30;
   obj2.clips = parsed.clips;

@@ -1,13 +1,12 @@
-// Module ID: 12781
-// Function ID: 97926
+// Module ID: 12895
+// Function ID: 100082
 // Name: openGuildSettingsPickerModal
-// Dependencies: []
+// Dependencies: [4098, 12896, 1934, 2]
 // Exports: openGuildSettingsPickerModal
 
-// Module 12781 (openGuildSettingsPickerModal)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/guild_settings_picker/GuildSettingsPickerActionCreators.native.tsx");
+// Module 12895 (openGuildSettingsPickerModal)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/guild_settings_picker/GuildSettingsPickerActionCreators.native.tsx");
 
 export const openGuildSettingsPickerModal = function openGuildSettingsPickerModal(arg0) {
-  importDefault(dependencyMap[0]).openLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), "GuildSettingsPickerBottomSheet", arg0);
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(12896, dependencyMap.paths), "GuildSettingsPickerBottomSheet", arg0);
 };

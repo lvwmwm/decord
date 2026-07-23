@@ -1,33 +1,35 @@
-// Module ID: 7551
-// Function ID: 60439
+// Module ID: 7557
+// Function ID: 60476
 // Name: AgeVerifyScreen
-// Dependencies: []
+// Dependencies: [31, 7537, 33, 7543, 3981, 4347, 7547, 4130, 689, 4337, 5788, 1212, 5519, 2]
 // Exports: default
 
-// Module 7551 (AgeVerifyScreen)
+// Module 7557 (AgeVerifyScreen)
+import result from "result";
+import { AGE_VERIFICATION_MODAL_KEY as closure_4 } from "set";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function AgeVerifyScreen(onComplete) {
   onComplete = onComplete.onComplete;
-  const arg1 = onComplete;
   const onClose = onComplete.onClose;
-  const importDefault = onClose;
-  let obj = arg1(dependencyMap[3]);
-  const isSuspendedUser = obj.useIsSuspendedUser();
-  const dependencyMap = isSuspendedUser;
+  let obj = onComplete(isSuspendedUser[3]);
+  isSuspendedUser = obj.useIsSuspendedUser();
   const items = [onComplete, onClose];
-  const callback = React.useCallback(() => {
+  callback = callback.useCallback(() => {
     onComplete();
     onClose();
   }, items);
-  const React = callback;
   const items1 = [callback];
-  const callback1 = React.useCallback(() => {
-    if (obj.isModalOpen(closure_4)) {
+  const callback1 = callback.useCallback(() => {
+    if (obj.isModalOpen(outer1_4)) {
       callback();
     }
   }, items1);
-  const watchAgeVerificationStatusChange = arg1(dependencyMap[5]).useWatchAgeVerificationStatusChange(callback1);
+  const watchAgeVerificationStatusChange = onComplete(isSuspendedUser[5]).useWatchAgeVerificationStatusChange(callback1);
   const items2 = [callback, isSuspendedUser];
-  const callback2 = React.useCallback((nativeEvent) => {
+  const callback2 = callback.useCallback((nativeEvent) => {
     if (null != nativeEvent.nativeEvent.data) {
       if ("string" === typeof tmp.nativeEvent.data) {
         const _JSON = JSON;
@@ -48,15 +50,16 @@ function AgeVerifyScreen(onComplete) {
       }
     }
   }, items2);
-  obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false, source: { uri: onComplete.webviewUrl }, onMessage: callback2 };
-  return jsx(importDefault(dependencyMap[6]), obj);
+  obj = { allowsInlineMediaPlayback: true, javaScriptEnabled: true, source: { uri: onComplete.webviewUrl }, onMessage: callback2, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n" };
+  return jsx(onClose(isSuspendedUser[6]), { allowsInlineMediaPlayback: true, javaScriptEnabled: true, source: { uri: onComplete.webviewUrl }, onMessage: callback2, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n" });
 }
 function getScreens(headerStyle, arg1, arg2, arg3, headerTitle) {
-  const importDefault = arg2;
-  const dependencyMap = arg3;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  let closure_2 = arg3;
   function handleClose() {
-    arg3();
-    let arr = arg2(arg3[9]);
+    dependencyMap();
+    let arr = callback2(4337);
     arr = arr.pop();
   }
   return {
@@ -65,43 +68,35 @@ function getScreens(headerStyle, arg1, arg2, arg3, headerTitle) {
       headerTitle,
       headerLeft() {
         const obj = { onPress: handleClose };
-        const intl = arg1(arg3[11]).intl;
-        obj.text = intl.string(arg1(arg3[11]).t.cpT0Cq);
-        return callback(arg1(arg3[10]).HeaderActionButton, obj);
+        const intl = callback(1212).intl;
+        obj.text = intl.string(callback(1212).t.cpT0Cq);
+        return outer1_5(callback(5788).HeaderActionButton, obj);
       },
       render() {
-        return callback(closure_8, { webviewUrl: arg1, onComplete: arg2, onClose: handleClose });
+        return outer1_5(outer1_8, { webviewUrl: closure_0, onComplete: closure_1, onClose: handleClose });
       }
     }
   };
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).AGE_VERIFICATION_MODAL_KEY;
-const jsx = arg1(dependencyMap[2]).jsx;
 let closure_6 = { VERIFY_AGE: "VERIFY_AGE" };
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER };
-obj.headerStyle = obj;
-let closure_7 = obj.createStyles(obj);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/age_assurance/native/AgeVerificationModal.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.headerStyle = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/age_assurance/native/AgeVerificationModal.tsx");
 
 export default function AgeVerificationModal(webviewUrl) {
   webviewUrl = webviewUrl.webviewUrl;
-  const arg1 = webviewUrl;
   const onComplete = webviewUrl.onComplete;
-  const importDefault = onComplete;
   const onClose = webviewUrl.onClose;
-  const dependencyMap = onClose;
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   const React = tmp;
-  const intl = arg1(dependencyMap[11]).intl;
-  const stringResult = intl.string(arg1(dependencyMap[11]).t.wJVyYR);
-  let closure_4 = stringResult;
+  const intl = webviewUrl(onClose[11]).intl;
+  const stringResult = intl.string(webviewUrl(onClose[11]).t.wJVyYR);
   const items = [tmp, webviewUrl, onComplete, onClose, stringResult];
-  const memo = React.useMemo(() => callback(tmp, webviewUrl, onComplete, onClose, stringResult), items);
+  const memo = React.useMemo(() => outer1_9(result, webviewUrl, onComplete, onClose, closure_4), items);
   const obj = { screens: memo, initialRouteName: constants.VERIFY_AGE };
-  const intl2 = arg1(dependencyMap[11]).intl;
-  obj.headerBackTitle = intl2.string(arg1(dependencyMap[11]).t.13/7kX);
-  return jsx(arg1(dependencyMap[12]).Navigator, obj);
+  const intl2 = webviewUrl(onClose[11]).intl;
+  obj.headerBackTitle = intl2.string(webviewUrl(onClose[11]).t["13/7kX"]);
+  return jsx(webviewUrl(onClose[12]).Navigator, { screens: memo, initialRouteName: constants.VERIFY_AGE });
 };

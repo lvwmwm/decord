@@ -1,11 +1,12 @@
-// Module ID: 10575
-// Function ID: 82563
-// Dependencies: []
+// Module ID: 10585
+// Function ID: 82613
+// Dependencies: [4536, 10586, 2]
 
-// Module 10575
-const obj = { componentName: "DCDVideoRenderer", componentFoundInstance: importDefault(dependencyMap[1]) };
-const importDefaultResult = importDefault(dependencyMap[0]);
-const importDefaultResultResult = importDefault(dependencyMap[0])(obj);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/video_calls/native/components/DCDVideoRenderer.tsx");
+// Module 10585
+import importDefaultResult from "map";
+
+const obj = { componentName: "DCDVideoRenderer", componentFoundInstance: require("__INTERNAL_VIEW_CONFIG") };
+const importDefaultResultResult = require("map")(obj);
+const result = require("set").fileFinishedImporting("modules/video_calls/native/components/DCDVideoRenderer.tsx");
 
 export default importDefaultResultResult;

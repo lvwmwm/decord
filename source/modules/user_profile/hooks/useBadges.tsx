@@ -1,24 +1,26 @@
-// Module ID: 8248
-// Function ID: 65091
+// Module ID: 8254
+// Function ID: 65128
 // Name: useBadges
-// Dependencies: []
+// Dependencies: [3970, 1849, 3803, 624, 1212, 2]
 // Exports: default
 
-// Module 8248 (useBadges)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_profile/hooks/useBadges.tsx");
+// Module 8254 (useBadges)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_profile/hooks/useBadges.tsx");
 
 export default function useBadges(getBadges) {
-  const LegacyUsernameDisabled = arg1(dependencyMap[2]).LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = require(3803) /* explicitContentFromProto */.LegacyUsernameDisabled;
   let setting = LegacyUsernameDisabled.useSetting();
   if (undefined !== arg1) {
     setting = arg1;
   }
   const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  arg1(dependencyMap[3]);
-  [][0] = closure_2;
+  const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_3.getCurrentUser());
+  require(624) /* defaultAreStatesEqual */;
+  [][0] = _isNativeReflectConstruct;
   if (null == getBadges) {
     return [];
   } else {
@@ -39,8 +41,8 @@ export default function useBadges(getBadges) {
         const obj = {};
         const merged = Object.assign(id);
         if (id.id === "legacy_username") {
-          const intl = callback(closure_1[4]).intl;
-          let description = intl.string(callback(closure_1[4]).t.Br1ls3);
+          const intl = outer1_0(outer1_1[4]).intl;
+          let description = intl.string(outer1_0(outer1_1[4]).t.Br1ls3);
         } else {
           description = id.description;
         }
@@ -50,6 +52,6 @@ export default function useBadges(getBadges) {
     }
     return mapped;
   }
-  const obj = arg1(dependencyMap[3]);
+  let obj = require(624) /* defaultAreStatesEqual */;
 };
 export const QUEST_COMPLETED_BADGE = "quest_completed";

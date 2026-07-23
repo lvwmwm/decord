@@ -1,9 +1,18 @@
-// Module ID: 3968
-// Function ID: 32856
+// Module ID: 3970
+// Function ID: 32861
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 653, 675, 3971, 566, 686, 2]
 
-// Module 3968 (_isNativeReflectConstruct)
+// Module 3970 (_isNativeReflectConstruct)
+import ME from "ME";
+import expandLocation from "expandLocation";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,34 +23,27 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function trackToggle(value, automatic) {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(675);
   obj = { enabled: value, automatic };
   obj.track(AnalyticEvents.STREAMER_MODE_TOGGLE, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const AnalyticEvents = arg1(dependencyMap[6]).AnalyticEvents;
-let obj = { disabledOverlayWidgets: [] };
+let obj = { enabled: false, autoToggle: true, hideInstantInvites: true, hidePersonalInformation: true, disableSounds: true, disableNotifications: true, disabledOverlayWidgets: [], enableContentProtection: false };
 let closure_11 = {};
 obj = {};
-const merged = Object.assign(obj);
-let tmp3 = (PersistedStore) => {
+let merged = Object.assign(obj);
+let tmp3 = ((PersistedStore) => {
   class StreamerModeStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, StreamerModeStore);
-      obj = closure_6(StreamerModeStore);
-      tmp2 = closure_5;
-      if (closure_13()) {
+      tmp = outer1_3(this, StreamerModeStore);
+      obj = outer1_6(StreamerModeStore);
+      tmp2 = outer1_5;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -50,56 +52,56 @@ let tmp3 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = StreamerModeStore;
   callback2(StreamerModeStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
-      const merged = Object.assign(closure_11, arg0);
-      const items = [closure_8];
+      let merged = Object.assign(outer1_11, arg0);
+      const items = [outer1_8];
       this.syncWith(items, () => {
-        const id = id.getId();
+        const id = outer2_8.getId();
         if (null != id) {
-          let tmp6 = closure_11[id];
+          let tmp6 = outer2_11[id];
           if (null == tmp6) {
             let obj = {};
-            const merged = Object.assign(closure_10);
-            closure_11[id] = obj;
+            const merged = Object.assign(outer2_10);
+            outer2_11[id] = obj;
             tmp6 = obj;
           }
           obj = tmp6;
         } else {
           obj = {};
-          const merged1 = Object.assign(closure_10);
+          const merged1 = Object.assign(outer2_10);
         }
+        const outer2_12 = obj;
       });
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[1] = obj;
   obj = {
     key: "getSettings",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "enabled",
     get() {
-      return closure_12.enabled;
+      return outer1_12.enabled;
     }
   };
   items[4] = {
     key: "autoToggle",
     get() {
-      return closure_12.autoToggle;
+      return outer1_12.autoToggle;
     }
   };
   items[5] = {
@@ -107,7 +109,7 @@ let tmp3 = (PersistedStore) => {
     get() {
       let hideInstantInvites = this.enabled;
       if (hideInstantInvites) {
-        hideInstantInvites = closure_12.hideInstantInvites;
+        hideInstantInvites = outer1_12.hideInstantInvites;
       }
       return hideInstantInvites;
     }
@@ -117,7 +119,7 @@ let tmp3 = (PersistedStore) => {
     get() {
       let hidePersonalInformation = this.enabled;
       if (hidePersonalInformation) {
-        hidePersonalInformation = closure_12.hidePersonalInformation;
+        hidePersonalInformation = outer1_12.hidePersonalInformation;
       }
       return hidePersonalInformation;
     }
@@ -127,7 +129,7 @@ let tmp3 = (PersistedStore) => {
     get() {
       let disableSounds = this.enabled;
       if (disableSounds) {
-        disableSounds = closure_12.disableSounds;
+        disableSounds = outer1_12.disableSounds;
       }
       return disableSounds;
     }
@@ -137,7 +139,7 @@ let tmp3 = (PersistedStore) => {
     get() {
       let disableNotifications = this.enabled;
       if (disableNotifications) {
-        disableNotifications = closure_12.disableNotifications;
+        disableNotifications = outer1_12.disableNotifications;
       }
       return disableNotifications;
     }
@@ -147,7 +149,7 @@ let tmp3 = (PersistedStore) => {
     get() {
       let enableContentProtection = this.enabled;
       if (enableContentProtection) {
-        enableContentProtection = closure_12.enableContentProtection;
+        enableContentProtection = outer1_12.enableContentProtection;
       }
       return enableContentProtection;
     }
@@ -155,13 +157,13 @@ let tmp3 = (PersistedStore) => {
   items[10] = {
     key: "isOverlayWidgetDisabled",
     value(arg0) {
-      const tmp = !StreamerModeStore(closure_2[8]).getOverlayStreamerModeConfig("StreamerModeStore").enabled;
+      const tmp = !StreamerModeStore(outer1_2[8]).getOverlayStreamerModeConfig("StreamerModeStore").enabled;
       let tmp2 = !tmp;
       if (!tmp) {
         const self = this;
         let enabled = this.enabled;
         if (enabled) {
-          const disabledOverlayWidgets = closure_12.disabledOverlayWidgets;
+          const disabledOverlayWidgets = outer1_12.disabledOverlayWidgets;
           let hasItem;
           if (null != disabledOverlayWidgets) {
             hasItem = disabledOverlayWidgets.includes(arg0);
@@ -174,12 +176,12 @@ let tmp3 = (PersistedStore) => {
     }
   };
   return callback(StreamerModeStore, items);
-}(importDefault(dependencyMap[9]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = "StreamerModeStore";
 tmp3.persistKey = "StreamerModeStore";
-const items = [
+let items = [
   (arg0) => {
-    const id = id.getId();
+    id = id.getId();
     if (null != arg0) {
       if (null != id) {
         let obj = {};
@@ -202,7 +204,7 @@ obj = {
   MULTI_ACCOUNT_REMOVE_ACCOUNT: function handleMultiAccountRemove(userId) {
     if (userId.userId in closure_11) {
       userId = userId.userId;
-      delete r1[r0];
+      delete tmp2[tmp];
     }
   },
   STREAMER_MODE_UPDATE: function handleStreamerModeUpdate(value) {
@@ -238,7 +240,7 @@ obj = {
       str3 = joined1;
     }
     obj.old_disabled_overlay_widgets = str3;
-    importDefault(dependencyMap[7]).track(AnalyticEvents.UPDATE_STREAMER_MODE_SETTINGS, obj);
+    importDefault(675).track(AnalyticEvents.UPDATE_STREAMER_MODE_SETTINGS, obj);
   },
   RUNNING_STREAMER_TOOLS_CHANGE: function handleRunningStreamerToolsChange(count) {
     if (obj.autoToggle) {
@@ -250,7 +252,7 @@ obj = {
     }
   }
 };
-tmp3 = new tmp3(importDefault(dependencyMap[10]), obj);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("stores/StreamerModeStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/StreamerModeStore.tsx");
 
 export default tmp3;

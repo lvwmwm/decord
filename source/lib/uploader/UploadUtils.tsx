@@ -1,20 +1,21 @@
-// Module ID: 4669
-// Function ID: 40599
+// Module ID: 4672
+// Function ID: 40617
 // Name: DefaultHttpClient
-// Dependencies: []
+// Dependencies: [6, 7, 4665, 507, 4673, 1844, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 4669 (DefaultHttpClient)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 4672 (DefaultHttpClient)
+import set from "set";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class DefaultHttpClient {
     constructor() {
-      tmp = closure_2(this, DefaultHttpClient);
+      tmp = outer1_2(this, DefaultHttpClient);
       return;
     }
   }
-  const arg1 = DefaultHttpClient;
   let obj = {
     key: "sliceBody",
     value(arr) {
@@ -37,18 +38,18 @@ const tmp2 = () => {
       if (null != fileByteRange) {
         body.body = self.sliceBody(body.body, fileByteRange.fileByteRange.start);
       }
-      const HTTP = DefaultHttpClient(closure_1[3]).HTTP;
+      const HTTP = DefaultHttpClient(outer1_1[3]).HTTP;
       return HTTP.put(body);
     }
   };
   items[1] = obj;
   return callback(DefaultHttpClient, items);
-}();
-const tmp3 = () => {
+})();
+let tmp3 = (() => {
   class LibdiscoreHttpClient {
     constructor() {
-      tmp = closure_2(this, LibdiscoreHttpClient);
-      obj = LibdiscoreHttpClient(closure_1[5]);
+      tmp = outer1_2(this, LibdiscoreHttpClient);
+      obj = LibdiscoreHttpClient(outer1_1[5]);
       if (obj.isLibdiscoreInitialized()) {
         return;
       } else {
@@ -64,16 +65,15 @@ const tmp3 = () => {
       }
     }
   }
-  const arg1 = LibdiscoreHttpClient;
   const items = [
     {
       key: "doUpload",
       value(body) {
-        const LibdiscoreHttpClient = body;
-        const httpClientAPI = LibdiscoreHttpClient(httpClientAPI[5]).getHttpClientAPI();
+        let closure_0 = body;
+        const httpClientAPI = LibdiscoreHttpClient(outer1_1[5]).getHttpClientAPI();
         if (null == httpClientAPI) {
-          const _Error2 = Error;
-          const error = new Error("Libdiscore client is not available");
+          let _Error2 = Error;
+          let error = new Error("Libdiscore client is not available");
           throw error;
         } else {
           body = body.body;
@@ -87,8 +87,8 @@ const tmp3 = () => {
           }
           if (!tmp3) {
             // // eliminated: always false
-            const _Error = Error;
-            const error1 = new Error("No file path found in request body");
+            let _Error = Error;
+            let error1 = new Error("No file path found in request body");
             throw error1;
           } else {
             uri = body.body.uri;
@@ -104,13 +104,13 @@ const tmp3 = () => {
     }
   ];
   return callback(LibdiscoreHttpClient, items);
-}();
-const result = arg1(dependencyMap[6]).fileFinishedImporting("lib/uploader/UploadUtils.tsx");
+})();
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("lib/uploader/UploadUtils.tsx");
 
-export const doesImageMatchUpload = function doesImageMatchUpload(image, id) {
-  if (id.id !== image.uri) {
-    if (id.item.platform === id(dependencyMap[2]).UploadPlatform.REACT_NATIVE) {
-      const item = id.item;
+export const doesImageMatchUpload = function doesImageMatchUpload(image, closure_0) {
+  if (closure_0.id !== image.uri) {
+    if (closure_0.item.platform === require(4665) /* _isNativeReflectConstruct */.UploadPlatform.REACT_NATIVE) {
+      const item = closure_0.item;
       const filename = image.filename;
       if (item.originalUri === image.uri) {
         return true;
@@ -142,17 +142,17 @@ export const calculateProgress = function calculateProgress(loaded, currentSize)
 };
 export const DefaultHttpClient = tmp2;
 export const canUploadNatively = function canUploadNatively(item) {
-  let fileIsInAppDirResult = item.platform === arg1(dependencyMap[2]).UploadPlatform.REACT_NATIVE;
+  let fileIsInAppDirResult = item.platform === require(4665) /* _isNativeReflectConstruct */.UploadPlatform.REACT_NATIVE;
   if (fileIsInAppDirResult) {
     fileIsInAppDirResult = null != item.uri;
   }
   if (fileIsInAppDirResult) {
-    fileIsInAppDirResult = arg1(dependencyMap[4]).fileIsInAppDir(item.uri);
-    const obj = arg1(dependencyMap[4]);
+    fileIsInAppDirResult = require(4673) /* _getAttachmentFile */.fileIsInAppDir(item.uri);
+    const obj = require(4673) /* _getAttachmentFile */;
   }
   if (fileIsInAppDirResult) {
-    fileIsInAppDirResult = arg1(dependencyMap[5]).isLibdiscoreInitialized();
-    const obj2 = arg1(dependencyMap[5]);
+    fileIsInAppDirResult = require(1844) /* isBlockedDomain */.isLibdiscoreInitialized();
+    const obj2 = require(1844) /* isBlockedDomain */;
   }
   return fileIsInAppDirResult;
 };

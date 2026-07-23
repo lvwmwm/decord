@@ -1,37 +1,38 @@
-// Module ID: 8873
-// Function ID: 69962
+// Module ID: 8880
+// Function ID: 70003
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 8873 (_isNativeReflectConstruct)
+// Module 8880 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 const map = new Map();
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class TransientKeyStore {
     constructor() {
       self = this;
       tmp = TransientKeyStore(this, TransientKeyStore);
-      obj = closure_3(TransientKeyStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(TransientKeyStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,19 +41,18 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = TransientKeyStore;
   callback2(TransientKeyStore, Store);
   let obj = {
     key: "getUsers",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   const items = [obj, ];
   obj = {
     key: "isKeyVerified",
     value(arg0, arg1) {
-      const value = closure_5.get(arg0);
+      const value = outer1_5.get(arg0);
       if (null != arg1) {
         if (null != value) {
           if (value.length === arg1.length) {
@@ -72,9 +72,9 @@ let tmp3 = (Store) => {
   };
   items[1] = obj;
   return callback(TransientKeyStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "TransientKeyStore";
-tmp3 = new tmp3(importDefault(dependencyMap[6]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     map.clear();
   },
@@ -86,6 +86,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[6]), {
     return map.delete(userId.userId);
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/rtc/TransientKeyStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/rtc/TransientKeyStore.tsx");
 
 export default tmp3;

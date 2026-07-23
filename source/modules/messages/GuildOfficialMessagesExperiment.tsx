@@ -1,13 +1,16 @@
-// Module ID: 5644
-// Function ID: 48268
-// Name: experiment
-// Dependencies: []
+// Module ID: 5649
+// Function ID: 48295
+// Name: items
+// Dependencies: [4042, 2]
 
-// Module 5644 (experiment)
-const _module = require(dependencyMap[0]);
-const items = [{ config: { enabled: true } }];
-const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/messages/GuildOfficialMessagesExperiment.tsx");
+// Module 5649 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2026-03_guild_official_messages", label: "Guild Official Messages", defaultConfig: { enabled: false } };
+obj = { id: 1, label: "Enable official messages", config: { enabled: true } };
+const items = [obj];
+obj.treatments = items;
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/messages/GuildOfficialMessagesExperiment.tsx");
 
 export default experiment;

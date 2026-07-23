@@ -1,14 +1,13 @@
-// Module ID: 15913
-// Function ID: 121915
+// Module ID: 16030
+// Function ID: 124088
 // Name: trackActivityProblem
-// Dependencies: [670, 2, 6]
+// Dependencies: [653, 675, 2]
 // Exports: default
 
-// Module 15913 (trackActivityProblem)
-import { AnalyticEvents } from "MessageEmbedTypes";
-import _classCallCheck from "_classCallCheck";
+// Module 16030 (trackActivityProblem)
+import { AnalyticEvents } from "ME";
 
-const result = _classCallCheck.fileFinishedImporting("modules/activities/trackActivityProblem.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/trackActivityProblem.tsx");
 
 export default function trackActivityProblem(arg0) {
   let _location;
@@ -28,7 +27,7 @@ export default function trackActivityProblem(arg0) {
   if (rating === undefined) {
     rating = null;
   }
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = { reason: problem };
   let guildId;
   if (null != channel) {

@@ -1,8 +1,8 @@
 // Module ID: 1562
-// Function ID: 17620
+// Function ID: 17621
 // Name: NativeSafeAreaProvider
-// Dependencies: []
+// Dependencies: [1563]
 
 // Module 1562 (NativeSafeAreaProvider)
 
-export const NativeSafeAreaProvider = importDefault(dependencyMap[0]);
+export const NativeSafeAreaProvider = require("__INTERNAL_VIEW_CONFIG");

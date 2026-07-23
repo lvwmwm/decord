@@ -1,7 +1,7 @@
 // Module ID: 1360
-// Function ID: 16283
+// Function ID: 16284
 // Name: hasFlag
-// Dependencies: []
+// Dependencies: [2]
 // Exports: hasAnyFlag, removeFlags, setFlag, toggleFlag
 
 // Module 1360 (hasFlag)
@@ -14,8 +14,7 @@ function addFlag(setting, MUTUAL_FRIENDS) {
 function removeFlag(flags, OBFUSCATED) {
   return flags & ~OBFUSCATED;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/utils/FlagUtils.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/FlagUtils.tsx");
 
 export { hasFlag };
 export const hasAnyFlag = function hasAnyFlag(flags, arg1) {
@@ -25,7 +24,7 @@ export { addFlag };
 export { removeFlag };
 export const removeFlags = function removeFlags(setting, MUTUAL_FRIENDS, NO_RELATION) {
   const substr = [...arguments].slice();
-  return substr.reduce((arg0, arg1) => callback(arg0, arg1), setting);
+  return substr.reduce((arg0, arg1) => outer1_2(arg0, arg1), setting);
 };
 export const setFlag = function setFlag(setting, MUTUAL_FRIENDS) {
   if (arg2) {

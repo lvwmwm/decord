@@ -1,52 +1,56 @@
-// Module ID: 12634
-// Function ID: 97156
+// Module ID: 12748
+// Function ID: 99312
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 22, 6985, 4227, 2]
 
-// Module 12634 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12748 (_createForOfIteratorHelperLoose)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +61,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,52 +87,49 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+let tmp2 = (() => {
   class SystemResponsiveness {
     constructor(arg0) {
-      SystemResponsiveness = this;
-      tmp = closure_3(this, SystemResponsiveness);
+      self = this;
+      tmp = outer1_3(this, self);
       this.connection = arg0;
       this.sampleStats = (rtp) => {
         if (null != rtp) {
-          const item = callback(closure_2[2]).forEach(rtp.rtp.outbound, (type) => {
+          const item = outer2_1(outer2_2[2]).forEach(rtp.rtp.outbound, (type) => {
             let done;
             if ("audio" === type.type) {
               let prop = type.pttQueueLatencyMicrosSamples;
               if (null == prop) {
                 prop = [];
               }
-              const tmpResult = closure_5(prop);
+              const tmpResult = outer3_5(prop);
               let iter = tmpResult();
               if (!iter.done) {
                 do {
-                  let tmp4 = closure_0;
-                  let pttQueueLatencyHistogram = closure_0.pttQueueLatencyHistogram;
+                  let tmp4 = outer1_0;
+                  let pttQueueLatencyHistogram = outer1_0.pttQueueLatencyHistogram;
                   let addSampleResult = pttQueueLatencyHistogram.addSample(iter.value / 1000);
                   let iter2 = tmpResult();
                   iter = iter2;
                   done = iter2.done;
                 } while (!done);
               }
-              const tmp = closure_5;
+              const tmp = outer3_5;
             }
           });
-          const arr = callback(closure_2[2]);
+          const arr = outer2_1(outer2_2[2]);
         }
       };
-      histogram = new SystemResponsiveness(closure_2[3]).Histogram();
+      histogram = new SystemResponsiveness(outer1_2[3]).Histogram();
       this.pttQueueLatencyHistogram = histogram;
       return;
     }
   }
-  const arg1 = SystemResponsiveness;
   let obj = {
     key: "start",
     value() {
       const connection = this.connection;
-      connection.on(SystemResponsiveness(closure_2[4]).BaseConnectionEvent.Stats, this.sampleStats);
+      connection.on(SystemResponsiveness(outer1_2[4]).BaseConnectionEvent.Stats, this.sampleStats);
     }
   };
   const items = [obj, , ];
@@ -136,7 +137,7 @@ const tmp2 = () => {
     key: "stop",
     value() {
       const connection = this.connection;
-      connection.off(SystemResponsiveness(closure_2[4]).BaseConnectionEvent.Stats, this.sampleStats);
+      connection.off(SystemResponsiveness(outer1_2[4]).BaseConnectionEvent.Stats, this.sampleStats);
     }
   };
   items[1] = obj;
@@ -144,13 +145,13 @@ const tmp2 = () => {
     key: "getPttQueueLatencyStats",
     value() {
       const pttQueueLatencyHistogram = this.pttQueueLatencyHistogram;
-      const report = pttQueueLatencyHistogram.getReport(["\u21E5", "SPACE"]);
+      const report = pttQueueLatencyHistogram.getReport([50, 95]);
       return { ptt_queue_latency_max: report.max, ptt_queue_latency_mean: report.mean, ptt_queue_latency_p50: report.percentiles[50], ptt_queue_latency_p95: report.percentiles[95], ptt_queue_latency_samples: report.samples };
     }
   };
   items[2] = obj;
   return callback(SystemResponsiveness, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("lib/SystemResponsiveness.tsx");
+})();
+const result = require("apply").fileFinishedImporting("lib/SystemResponsiveness.tsx");
 
 export default tmp2;

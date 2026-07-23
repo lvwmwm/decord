@@ -1,10 +1,12 @@
-// Module ID: 4157
-// Function ID: 35115
+// Module ID: 4161
+// Function ID: 35147
 // Name: isImageProxyURL
-// Dependencies: []
+// Dependencies: [1443, 1426, 2]
 // Exports: getSizedImageProxyURL
 
-// Module 4157 (isImageProxyURL)
+// Module 4161 (isImageProxyURL)
+import set from "set";
+
 function isImageProxyURL(hostname) {
   const tmp = !set.has(hostname.hostname);
   let startsWithResult = !tmp;
@@ -29,27 +31,26 @@ const mapped1 = mapped.map(function getHostWithoutPort(arg0) {
   }
   return first;
 });
-const set = new Set(mapped1.filter(Boolean));
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/image_proxy/ImageProxyUtils.tsx");
+let set = new Set(mapped1.filter(Boolean));
+let result = set.fileFinishedImporting("modules/image_proxy/ImageProxyUtils.tsx");
 
 export { isImageProxyURL };
 export const getSizedImageProxyURL = function getSizedImageProxyURL(value, arg1) {
   let keepAspectRatio;
   let size;
   ({ size, keepAspectRatio } = arg1);
-  const str = importDefault(dependencyMap[0]).toURLSafe(value);
+  const str = importDefault(1443).toURLSafe(value);
   if (null != str) {
     if (isImageProxyURL(str)) {
       if (null != size) {
         const _String = String;
-        const obj2 = require(dependencyMap[1]);
-        const StringResult = String(obj2.getBestMediaProxySize(size * require(dependencyMap[1]).getDevicePixelRatio()));
+        const obj2 = require(1426) /* isAttachmentLadderEnabled */;
+        const StringResult = String(obj2.getBestMediaProxySize(size * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio()));
         const searchParams = str.searchParams;
         const result = searchParams.set("width", StringResult);
         const searchParams2 = str.searchParams;
         const result1 = searchParams2.set("height", StringResult);
-        const obj3 = require(dependencyMap[1]);
+        const obj3 = require(1426) /* isAttachmentLadderEnabled */;
       }
       if (null != keepAspectRatio) {
         const searchParams3 = str.searchParams;

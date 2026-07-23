@@ -1,22 +1,24 @@
-// Module ID: 8370
-// Function ID: 66705
+// Module ID: 8376
+// Function ID: 66742
 // Name: InputButton
-// Dependencies: []
+// Dependencies: [29, 31, 27, 33, 4130, 689, 4547, 5780, 4544, 2]
 
-// Module 8370 (InputButton)
-let closure_2 = [];
-let closure_3 = importDefault(dependencyMap[0]);
-const Text = arg1(dependencyMap[2]).Text;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj1 = arg1(dependencyMap[4]);
-let obj = { buttonText: {} };
-obj = { color: importDefault(dependencyMap[5]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+// Module 8376 (InputButton)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import { Text } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_2 = ["size", "isRound", "text", "value", "icon", "iconPosition", "accessibilityLabel", "accessibilityValue", "maxFontSizeMultiplier"];
+let obj = { buttonText: { flexGrow: 1, flexShrink: 1, width: "100%" } };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.buttonTextPlaceholder = obj;
-obj1 = { color: importDefault(dependencyMap[5]).colors.REDESIGN_BUTTON_TERTIARY_TEXT };
-obj.buttonTextValue = obj1;
-let closure_6 = obj1.createStyles(obj);
-const importAllResult = importAll(dependencyMap[1]);
-const forwardRefResult = importAll(dependencyMap[1]).forwardRef((size) => {
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
+obj.buttonTextValue = _createForOfIteratorHelperLoose;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const forwardRefResult = require("result").forwardRef((size) => {
   let accessibilityLabel;
   let accessibilityValue;
   let icon;
@@ -37,10 +39,10 @@ const forwardRefResult = importAll(dependencyMap[1]).forwardRef((size) => {
   }
   ({ accessibilityLabel, accessibilityValue, maxFontSizeMultiplier } = size);
   if (undefined === maxFontSizeMultiplier) {
-    maxFontSizeMultiplier = arg1(dependencyMap[6]).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    maxFontSizeMultiplier = require(4547) /* getButtonPadding */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmp4 = callback(size, closure_2);
-  let obj = arg1(dependencyMap[7]);
+  let obj = require(5780) /* useInputStyles */;
   obj = { size: str, isRound: undefined !== isRound && isRound, hasLeadingIcon: "start" === str2 };
   const inputStyles = obj.useInputStyles(obj);
   const tmp7 = callback2();
@@ -86,10 +88,10 @@ const forwardRefResult = importAll(dependencyMap[1]).forwardRef((size) => {
       text = value;
     }
     obj4.children = text;
-    obj2["textElement"] = <Text {...obj4} />;
-    return jsx(arg1(dependencyMap[8]).BaseTextButton, obj2);
+    obj2["textElement"] = <Text />;
+    return jsx(require(4544) /* CollapsingText */.BaseTextButton, {});
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/experimental/Button/native/InputButton.native.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("design/components/experimental/Button/native/InputButton.native.tsx");
 
 export const InputButton = forwardRefResult;

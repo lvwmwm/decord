@@ -1,12 +1,23 @@
-// Module ID: 11521
-// Function ID: 89776
+// Module ID: 11531
+// Function ID: 89826
 // Name: usePowerupsActiveStatuses
-// Dependencies: []
+// Dependencies: [1838, 4017, 4019, 4018, 653, 566, 2]
 // Exports: default, isPowerupActiveStatusActive
 
-// Module 11521 (usePowerupsActiveStatuses)
+// Module 11531 (usePowerupsActiveStatuses)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GAME_SERVER_POWERUP_SKU_ID as closure_4 } from "NewGamesCoachmarkContent";
+import BoostedGuildTiers from "BoostedGuildTiers";
+import { GuildFeatures } from "ME";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function usePowerupsActiveStatuses(guildId, powerups) {
-  powerups = guildId;
+  const _require = guildId;
   function getPowerupActiveStatus(skuId) {
     let isActiveFromLevel;
     let levelEntitlement;
@@ -17,12 +28,12 @@ function usePowerupsActiveStatuses(guildId, powerups) {
       if (null != stateFromStores) {
         const features = stateFromStores.features;
         if (null != features) {
-          hasItem = features.has(constants2.GAME_SERVERS);
+          hasItem = features.has(outer1_9.GAME_SERVERS);
         }
       }
       if (null != hasItem) {
         if (hasItem) {
-          let INACTIVE = constants.POWERUP_ACTIVATED;
+          let INACTIVE = outer1_6.POWERUP_ACTIVATED;
         }
         obj.type = INACTIVE;
         obj.powerup = skuId;
@@ -30,16 +41,16 @@ function usePowerupsActiveStatuses(guildId, powerups) {
         obj.sourcePowerup = undefined;
         return obj;
       }
-      INACTIVE = constants.INACTIVE;
+      INACTIVE = outer1_6.INACTIVE;
     } else {
       if (null != skuId) {
         if (null != stateFromStores) {
           if (null != guild) {
-            if (null == closure_7[skuId.skuId]) {
+            if (null == outer1_7[skuId.skuId]) {
               obj = { isActiveFromLevel: false, levelEntitlement: undefined, levelPowerup: undefined };
             } else {
               let tmp5;
-              if (null != closure_8[tmp32]) {
+              if (null != outer1_8[tmp32]) {
                 const unlockedPowerups = guild.unlockedPowerups;
                 let tmp7;
                 if (null != unlockedPowerups) {
@@ -48,7 +59,7 @@ function usePowerupsActiveStatuses(guildId, powerups) {
                 tmp5 = tmp7;
               }
               let tmp8;
-              if (null != closure_8[tmp32]) {
+              if (null != outer1_8[tmp32]) {
                 const allPowerups = guild.allPowerups;
                 let tmp10;
                 if (null != allPowerups) {
@@ -60,10 +71,10 @@ function usePowerupsActiveStatuses(guildId, powerups) {
               const tmp2 = stateFromStores.premiumTier >= tmp32;
             }
           }
-          let hasItem1 = closure_3;
+          let hasItem1 = _isNativeReflectConstruct;
           ({ isActiveFromLevel, levelEntitlement, levelPowerup } = obj);
-          if (closure_3) {
-            hasItem1 = set.has(skuId.skuId);
+          if (_isNativeReflectConstruct) {
+            hasItem1 = outer1_5.has(skuId.skuId);
           }
           let tmp14;
           if (null != guild) {
@@ -76,15 +87,15 @@ function usePowerupsActiveStatuses(guildId, powerups) {
           if (null != tmp14) {
             tmp16 = tmp14;
           }
-          let obj1 = { type: constants.INACTIVE, powerup: skuId, sourceEntitlement: undefined, sourcePowerup: undefined };
+          let obj1 = { type: outer1_6.INACTIVE, powerup: skuId, sourceEntitlement: undefined, sourcePowerup: undefined };
           if (isActiveFromLevel) {
-            const obj2 = { type: constants.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
+            const obj2 = { type: outer1_6.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
             obj1 = obj2;
           } else if (hasItem1) {
-            const obj3 = { type: constants.TIER_OVERRIDE_ACTIVATED, powerup: skuId, sourceEntitlement: undefined, sourcePowerup: skuId };
+            const obj3 = { type: outer1_6.TIER_OVERRIDE_ACTIVATED, powerup: skuId, sourceEntitlement: undefined, sourcePowerup: skuId };
             obj1 = obj3;
           } else if (null != tmp16) {
-            const obj4 = { type: constants.POWERUP_ACTIVATED, powerup: skuId, sourceEntitlement: tmp16, sourcePowerup: skuId };
+            const obj4 = { type: outer1_6.POWERUP_ACTIVATED, powerup: skuId, sourceEntitlement: tmp16, sourcePowerup: skuId };
             obj1 = obj4;
           }
           return obj1;
@@ -94,29 +105,23 @@ function usePowerupsActiveStatuses(guildId, powerups) {
       obj = obj5;
     }
   }
-  const items = [closure_2];
-  const stateFromStores = powerups(dependencyMap[5]).useStateFromStores(items, () => guild.getGuild(arg0));
-  const dependencyMap = stateFromStores;
-  const obj = powerups(dependencyMap[5]);
-  const items1 = [closure_3];
-  closure_2 = powerups(dependencyMap[5]).useStateFromStores(items1, () => stateForGuild.getStateForGuild(arg0));
+  const items = [_createForOfIteratorHelperLoose];
+  stateFromStores = _require(stateFromStores[5]).useStateFromStores(items, () => guild.getGuild(closure_0));
+  let obj = _require(stateFromStores[5]);
+  const items1 = [_isNativeReflectConstruct];
+  _createForOfIteratorHelperLoose = _require(stateFromStores[5]).useStateFromStores(items1, () => stateForGuild.getStateForGuild(closure_0));
   let hasItem;
   if (null != stateFromStores) {
-    const features = stateFromStores.features;
+    let features = stateFromStores.features;
     if (null != features) {
       hasItem = features.has(GuildFeatures.PREMIUM_TIER_3_OVERRIDE);
     }
   }
-  closure_3 = null != hasItem && hasItem;
+  _isNativeReflectConstruct = null != hasItem && hasItem;
   return powerups.map((skuId) => getPowerupActiveStatus(skuId));
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).GAME_SERVER_POWERUP_SKU_ID;
-({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_5, PowerupActiveStatusType: closure_6, POWERUPS_INCLUDED_IN_LEVEL: closure_7, BOOSTING_TIER_TO_LEVEL_SKU_ID: closure_8 } = arg1(dependencyMap[3]));
-const GuildFeatures = arg1(dependencyMap[4]).GuildFeatures;
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/hooks/usePowerupActiveStatus.tsx");
+({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_5, PowerupActiveStatusType: closure_6, POWERUPS_INCLUDED_IN_LEVEL: closure_7, BOOSTING_TIER_TO_LEVEL_SKU_ID: closure_8 } = BoostedGuildTiers);
+const result = require("NewGamesCoachmarkContent").fileFinishedImporting("modules/premium/powerups/hooks/usePowerupActiveStatus.tsx");
 
 export default function usePowerupActiveStatus(arg0, arg1) {
   if (null == arg1) {

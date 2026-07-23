@@ -1,10 +1,28 @@
-// Module ID: 16352
-// Function ID: 126149
+// Module ID: 16469
+// Function ID: 128323
 // Name: ArchiveOrDeleteTierSection
-// Dependencies: []
+// Dependencies: [57, 31, 27, 3752, 16424, 14094, 653, 1345, 33, 4130, 689, 1456, 16436, 16432, 5634, 7494, 4126, 4543, 1273, 16470, 5121, 16464, 16462, 16439, 14101, 16419, 11329, 16471, 1212, 14116, 3830, 5087, 5788, 8360, 1334, 16472, 1934, 9642, 9643, 8760, 2]
 // Exports: default
 
-// Module 16352 (ArchiveOrDeleteTierSection)
+// Module 16469 (ArchiveOrDeleteTierSection)
+import _slicedToArray from "_slicedToArray";
+import HeaderBackImage from "HeaderBackImage";
+import get_ActivityIndicator from "ActionableNotice";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+import closure_10 from "_createForOfIteratorHelperLoose";
+import { GuildRoleSubscriptionsTierScenes } from "MAX_SUBSCRIPTION_TIERS";
+import { GuildSettingsSections } from "ME";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "useSegmentedControlState";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_6;
+let closure_7;
+const require = arg1;
 function ArchiveOrDeleteTierSection() {
   let archiving;
   let deleting;
@@ -12,51 +30,51 @@ function ArchiveOrDeleteTierSection() {
   let editStateId;
   let groupListingId;
   let handleArchiveOrDelete;
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[11]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(1456) /* useNavigation */;
   const navigation = obj.useNavigation();
-  let obj1 = arg1(dependencyMap[12]);
+  let obj1 = require(16436) /* useEditStateContext */;
   const editStateContext = obj1.useEditStateContext();
   const guildId = editStateContext.guildId;
   ({ groupListingId, editStateId } = editStateContext);
-  const tmp4 = importDefault(dependencyMap[13])(guildId, groupListingId, editStateId, navigation);
+  const tmp4 = importDefault(16432)(guildId, groupListingId, editStateId, navigation);
   const buttonText = tmp4.buttonText;
   ({ descriptionText, handleArchiveOrDelete, deleting, archiving } = tmp4);
-  let obj2 = arg1(dependencyMap[14]);
+  let obj2 = require(5634) /* useCreatorMonetizationRestrictions */;
   obj = {};
   obj = { style: tmp.actionHeader, children: buttonText };
-  const items = [callback2(importDefault(dependencyMap[15]), obj), , ];
-  obj1 = { style: tmp.actionDescription, children: descriptionText };
-  items[1] = callback2(arg1(dependencyMap[16]).Text, obj1);
+  const items = [callback2(importDefault(7494), obj), , ];
+  obj1 = { style: tmp.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText };
+  items[1] = callback2(require(4126) /* Text */.Text, obj1);
   obj2 = { style: tmp.actionButton };
-  const obj3 = { "Null": 1929380131, "Null": -1677721309 };
-  const obj4 = { size: arg1(dependencyMap[18]).Icon.Sizes.SMALL, disableColor: true, source: importDefault(dependencyMap[19]) };
-  obj3.icon = callback2(arg1(dependencyMap[18]).Icon, obj4);
+  const obj3 = { variant: "destructive", grow: true };
+  const obj4 = { size: require(1273) /* Button */.Icon.Sizes.SMALL, disableColor: true, source: importDefault(16470) };
+  obj3.icon = callback2(require(1273) /* Button */.Icon, obj4);
   obj3.onPress = handleArchiveOrDelete;
   obj3.disabled = !obj2.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).allowSelfRemoveMonetization || deleting || archiving;
   obj3.text = buttonText;
-  obj2.children = callback2(arg1(dependencyMap[17]).Button, obj3);
+  obj2.children = callback2(require(4543) /* Button */.Button, obj3);
   items[2] = callback2(closure_6, obj2);
   obj.children = items;
   return closure_16(closure_15, obj);
 }
 function TabContent(selectedTab) {
   selectedTab = selectedTab.selectedTab;
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   if (GuildRoleSubscriptionsTierScenes.DETAILS === selectedTab) {
     let obj = { style: tmp.tabContent };
     obj = { bottom: true };
-    const items = [callback2(arg1(dependencyMap[21]).GuildRoleSubscriptionTierDetailsTab, {}), callback2(ArchiveOrDeleteTierSection, {})];
+    const items = [callback2(require(16464) /* Content */.GuildRoleSubscriptionTierDetailsTab, {}), callback2(ArchiveOrDeleteTierSection, {})];
     obj.children = items;
-    obj.children = callback3(arg1(dependencyMap[20]).SafeAreaPaddingView, obj);
+    obj.children = callback3(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
     return callback2(closure_7, obj);
   } else if (GuildRoleSubscriptionsTierScenes.DESIGN === selectedTab) {
     obj = { style: tmp.tabContent };
-    const obj1 = { bottom: true, children: callback2(arg1(dependencyMap[22]).GuildRoleSubscriptionTierDesignTab, {}) };
-    obj.children = callback2(arg1(dependencyMap[20]).SafeAreaPaddingView, obj1);
+    const obj1 = { bottom: true, children: callback2(require(16462) /* MemberPreviews */.GuildRoleSubscriptionTierDesignTab, {}) };
+    obj.children = callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
     return callback2(closure_7, obj);
   } else if (GuildRoleSubscriptionsTierScenes.BENEFITS === selectedTab) {
-    return callback2(arg1(dependencyMap[23]).GuildRoleSubscriptionTierBenefitsTab, {});
+    return callback2(require(16439) /* AddBenefitButton */.GuildRoleSubscriptionTierBenefitsTab, {});
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -64,49 +82,39 @@ function TabContent(selectedTab) {
     throw error;
   }
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-({ View: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-const FetchState = arg1(dependencyMap[3]).FetchState;
-let closure_10 = importAll(dependencyMap[4]);
-const GuildRoleSubscriptionsTierScenes = arg1(dependencyMap[5]).GuildRoleSubscriptionsTierScenes;
-const GuildSettingsSections = arg1(dependencyMap[6]).GuildSettingsSections;
-const ContentDismissActionType = arg1(dependencyMap[7]).ContentDismissActionType;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = arg1(dependencyMap[8]));
-let obj = arg1(dependencyMap[9]);
-obj = { container: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, padding: 16 };
-obj.tabsContainer = obj;
-obj.tabsContainerWithDraft = { paddingBottom: 0 };
-obj.actionButton = { 1927631340: true, 105999969: "/assets/design/components/Icon/native/redesign/generated/images", 995517444: 24 };
-const tmp3 = arg1(dependencyMap[8]);
-obj.tabContent = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
-obj.actionHeader = {};
-obj.actionDescription = { -9223372036854775808: null, 9223372036854775807: null };
-let closure_17 = obj.createStyles(obj);
-const items = [, , ];
+({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flex: 1 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 16 };
+_createForOfIteratorHelperLoose.tabsContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.tabsContainerWithDraft = { paddingBottom: 0 };
+_createForOfIteratorHelperLoose.actionButton = { alignSelf: "stretch", margin: 16, marginTop: 0 };
+_createForOfIteratorHelperLoose.tabContent = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.actionHeader = { marginTop: 24, paddingStart: 16 };
+_createForOfIteratorHelperLoose.actionDescription = { marginBottom: 16, marginLeft: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let items = [, , ];
 ({ DETAILS: arr[0], DESIGN: arr[1], BENEFITS: arr[2] } = GuildRoleSubscriptionsTierScenes);
 let closure_19 = items.reduce((arg0, arg1, arg2) => {
   arg0[arg1] = arg2;
   return arg0;
 }, {});
-let closure_20 = arg1(dependencyMap[1]).forwardRef((arg0, arg1) => {
+let closure_20 = require("HeaderBackImage").forwardRef((arg0, arg1) => {
+  let dependencyMap;
   let error;
   let groupListingId;
+  let importAll;
+  let require;
   let submitting;
-  let obj = arg1(dependencyMap[12]);
+  let obj = require(16436) /* useEditStateContext */;
   const editStateContext = obj.useEditStateContext();
-  ({ guildId: closure_0, groupListingId } = editStateContext);
-  const importDefault = groupListingId;
-  let obj1 = arg1(dependencyMap[24]);
+  ({ guildId: require, groupListingId } = editStateContext);
+  let obj1 = require(14101) /* _createForOfIteratorHelperLoose */;
   const publishSubscriptionListing = obj1.usePublishSubscriptionListing();
-  ({ error, publishSubscriptionListing: closure_2, clearError: closure_3, submitting } = publishSubscriptionListing);
-  let obj2 = arg1(dependencyMap[24]);
+  ({ error, publishSubscriptionListing: importAll, clearError: dependencyMap, submitting } = publishSubscriptionListing);
+  let obj2 = require(14101) /* _createForOfIteratorHelperLoose */;
   const subscriptionListing = obj2.useSubscriptionListing(editStateContext.editStateId);
-  let closure_4 = subscriptionListing;
-  let obj3 = arg1(dependencyMap[25]);
+  let obj3 = require(16419) /* useRoleSubscriptionSettingsDisabled */;
   const roleSubscriptionSettingsDisabled = obj3.useRoleSubscriptionSettingsDisabled();
   const imperativeHandle = React.useImperativeHandle(arg1, () => ({ dismissError: closure_3 }));
   let tmp6 = null;
@@ -118,20 +126,20 @@ let closure_20 = arg1(dependencyMap[1]).forwardRef((arg0, arg1) => {
         if (null != error) {
           obj = {};
           obj = { size: 16 };
-          const items = [callback2(arg1(dependencyMap[18]).Spacer, obj), , ];
+          const items = [callback2(require(1273) /* Button */.Spacer, obj), , ];
           obj1 = { children: error.getAnyErrorMessage() };
-          items[1] = callback2(importDefault(dependencyMap[26]), obj1);
+          items[1] = callback2(groupListingId(11329), obj1);
           obj2 = { size: 16 };
-          items[2] = callback2(arg1(dependencyMap[18]).Spacer, obj2);
+          items[2] = callback2(require(1273) /* Button */.Spacer, obj2);
           obj.children = items;
           let tmp16 = callback3(closure_15, obj);
-          const tmp14 = importDefault(dependencyMap[26]);
+          const tmp14 = groupListingId(11329);
         } else {
           obj3 = {};
-          const intl = arg1(dependencyMap[28]).intl;
-          obj3.message = intl.string(arg1(dependencyMap[28]).t.V5mSpz);
-          const intl2 = arg1(dependencyMap[28]).intl;
-          obj3.ctaMessage = intl2.string(arg1(dependencyMap[28]).t.Lj6R5m);
+          const intl = require(1212) /* getSystemLocale */.intl;
+          obj3.message = intl.string(require(1212) /* getSystemLocale */.t.V5mSpz);
+          const intl2 = require(1212) /* getSystemLocale */.intl;
+          obj3.ctaMessage = intl2.string(require(1212) /* getSystemLocale */.t.Lj6R5m);
           obj3.onClick = function onClick() {
             if (null != groupListingId) {
               if (null != subscriptionListing) {
@@ -142,81 +150,71 @@ let closure_20 = arg1(dependencyMap[1]).forwardRef((arg0, arg1) => {
           };
           obj3.submitting = submitting;
           obj3.disabled = roleSubscriptionSettingsDisabled;
-          tmp16 = callback2(importDefault(dependencyMap[27]), obj3);
-          const tmp21 = importDefault(dependencyMap[27]);
+          tmp16 = callback2(groupListingId(16471), obj3);
+          const tmp21 = groupListingId(16471);
         }
       }
     }
   }
   return tmp6;
 });
-const obj1 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
-const result = arg1(dependencyMap[40]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionTierEdit.tsx");
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionTierEdit.tsx");
 
 export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
+  let c14;
   let tmp15;
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const groupListingId = guildId.groupListingId;
-  const importDefault = groupListingId;
   const onBeforeDispatchNewListing = guildId.onBeforeDispatchNewListing;
-  const importAll = onBeforeDispatchNewListing;
   let removeEditStateId;
-  let closure_8;
-  let FetchState;
-  let closure_10;
-  let GuildRoleSubscriptionsTierScenes;
-  let GuildSettingsSections;
-  let ContentDismissActionType;
+  let ref;
+  let hasChanges;
+  let loading;
+  let handleCreateOrUpdateFromEditState;
+  let error;
+  let callback;
   let callback2;
   function GuildRoleSubscriptionsTierTemplateSelectedActionSheetImporter() {
     return guildId(first[36])(first[35], first.paths);
   }
-  const tmp = callback4();
-  const tmp2 = callback(React.useState(guildId.initialEditStateId), 2);
+  let tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = callback(navigation.useState(guildId.initialEditStateId), 2);
   const first = tmp2[0];
-  const dependencyMap = first;
-  let callback = tmp2[1];
-  let obj = arg1(dependencyMap[11]);
-  const navigation = obj.useNavigation();
-  const React = navigation;
-  let obj1 = arg1(dependencyMap[24]);
+  callback = tmp2[1];
+  let obj = guildId(first[11]);
+  navigation = obj.useNavigation();
+  let obj1 = guildId(first[24]);
   const subscriptionListing = obj1.useSubscriptionListing(first);
-  let obj2 = importAll(dependencyMap[29]);
+  let obj2 = onBeforeDispatchNewListing(first[29]);
   const first1 = callback(obj2.useName(first), 1)[0];
   let published;
   if (null != subscriptionListing) {
     published = subscriptionListing.published;
   }
-  let obj3 = importAll(dependencyMap[29]);
+  let obj3 = onBeforeDispatchNewListing(first[29]);
   removeEditStateId = obj3.useEditStateIds(groupListingId, guildId).removeEditStateId;
-  const ref = React.useRef(null);
-  closure_8 = ref;
-  let obj4 = importAll(dependencyMap[29]);
-  const hasChanges = obj4.useHasChanges(first);
-  FetchState = hasChanges;
-  let obj5 = importAll(dependencyMap[29]);
+  ref = navigation.useRef(null);
+  let obj4 = onBeforeDispatchNewListing(first[29]);
+  hasChanges = obj4.useHasChanges(first);
+  let obj5 = onBeforeDispatchNewListing(first[29]);
   const createOrUpdateListingFromEditState = obj5.useCreateOrUpdateListingFromEditState();
-  const loading = createOrUpdateListingFromEditState.loading;
-  closure_10 = loading;
-  const handleCreateOrUpdateFromEditState = createOrUpdateListingFromEditState.handleCreateOrUpdateFromEditState;
-  GuildRoleSubscriptionsTierScenes = handleCreateOrUpdateFromEditState;
-  const error = createOrUpdateListingFromEditState.error;
-  GuildSettingsSections = error;
-  const items = [guildId, handleCreateOrUpdateFromEditState, first, groupListingId, onBeforeDispatchNewListing, removeEditStateId];
-  callback = React.useCallback(() => handleCreateOrUpdateFromEditState({
+  loading = createOrUpdateListingFromEditState.loading;
+  handleCreateOrUpdateFromEditState = createOrUpdateListingFromEditState.handleCreateOrUpdateFromEditState;
+  error = createOrUpdateListingFromEditState.error;
+  let items = [guildId, handleCreateOrUpdateFromEditState, first, groupListingId, onBeforeDispatchNewListing, removeEditStateId];
+  callback = navigation.useCallback(() => handleCreateOrUpdateFromEditState({
     guildId,
     editStateId: first,
     groupListingId,
     onBeforeDispatchNewListing,
     onAfterDispatchNewListing(id) {
-      callback(id.id);
-      callback2(closure_3);
+      outer1_4(id.id);
+      outer1_7(outer1_3);
     }
   }), items);
-  ContentDismissActionType = callback;
   const items1 = [error];
-  const layoutEffect = React.useLayoutEffect(() => {
+  const layoutEffect = navigation.useLayoutEffect(() => {
     if (null != error) {
       let anyErrorMessage = error.getAnyErrorMessage();
       if (null == anyErrorMessage) {
@@ -227,7 +225,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       const obj = guildId(first[30]);
     }
   }, items1);
-  [tmp15, closure_14] = callback(closure_10.useRoleTierEditStore((currentScene) => {
+  [tmp15, c14] = callback(loading.useRoleTierEditStore((currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (null == DETAILS) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -236,26 +234,26 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
     return items;
   }), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  const layoutEffect1 = React.useLayoutEffect(() => {
+  const layoutEffect1 = navigation.useLayoutEffect(() => {
     navigation.setOptions({
-      headerRight: loading ? () => callback2(callback(closure_3[31]).HeaderSubmittingIndicator, {}) : () => {
+      headerRight: loading ? (() => callback(guildId(first[31]).HeaderSubmittingIndicator, {})) : (() => {
         const obj = {};
-        const intl = callback(closure_3[28]).intl;
-        obj.text = intl.string(callback(closure_3[28]).t.R3BPH+);
-        obj.onPress = closure_13;
-        obj.disabled = !closure_9;
-        return callback2(callback(closure_3[32]).HeaderActionButton, obj);
-      },
+        const intl = guildId(first[28]).intl;
+        obj.text = intl.string(guildId(first[28]).t["R3BPH+"]);
+        obj.onPress = outer1_13;
+        obj.disabled = !outer1_9;
+        return callback(guildId(first[32]).HeaderActionButton, obj);
+      }),
       headerTitle() {
-        const obj = { title: closure_6 };
-        const intl = callback(closure_3[28]).intl;
-        obj.subtitle = intl.string(callback(closure_3[28]).t.t94EHg);
-        return callback2(callback(closure_3[31]).NavigatorHeader, obj);
+        const obj = { title: outer1_6 };
+        const intl = guildId(first[28]).intl;
+        obj.subtitle = intl.string(guildId(first[28]).t.t94EHg);
+        return callback(guildId(first[31]).NavigatorHeader, obj);
       }
     });
   }, items2);
   const items3 = [navigation, first, guildId];
-  const layoutEffect2 = React.useLayoutEffect(() => {
+  const layoutEffect2 = navigation.useLayoutEffect(() => {
     if (null == first) {
       const routes = navigation.getState().routes;
       let name;
@@ -266,15 +264,15 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       if (!tmp3) {
         navigation.pop();
       }
-      const tmp3 = name !== error.ROLE_SUBSCRIPTIONS_TIER_EDIT || ref.getSubscriptionGroupListingsForGuildFetchState(guildId) === hasChanges.FETCHING;
+      tmp3 = name !== error.ROLE_SUBSCRIPTIONS_TIER_EDIT || ref.getSubscriptionGroupListingsForGuildFetchState(guildId) === hasChanges.FETCHING;
     }
   }, items3);
-  arg1(dependencyMap[33]);
+  guildId(first[33]);
   obj = {
     pageWidth: 0,
-    defaultIndex: closure_19[tmp15],
+    defaultIndex: table[tmp15],
     onSetActiveIndex(arg0) {
-      if (null != closure_18[arg0]) {
+      if (null != outer1_18[arg0]) {
         _undefined(tmp);
         const current = ref.current;
         if (null != current) {
@@ -283,18 +281,18 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       }
     }
   };
-  const intl = arg1(dependencyMap[28]).intl;
-  const items4 = [intl.string(arg1(dependencyMap[28]).t.f7rGug), , ];
-  const intl2 = arg1(dependencyMap[28]).intl;
-  items4[1] = intl2.string(arg1(dependencyMap[28]).t.YCpDtS);
-  const intl3 = arg1(dependencyMap[28]).intl;
-  items4[2] = intl3.string(arg1(dependencyMap[28]).t.MpDNxN);
+  let intl = guildId(first[28]).intl;
+  const items4 = [intl.string(guildId(first[28]).t.f7rGug), , ];
+  const intl2 = guildId(first[28]).intl;
+  items4[1] = intl2.string(guildId(first[28]).t.YCpDtS);
+  const intl3 = guildId(first[28]).intl;
+  items4[2] = intl3.string(guildId(first[28]).t.MpDNxN);
   obj.items = items4.map((id) => ({ id, label: id, page: null }));
   if (null == first) {
     return null;
   } else {
     if (undefined === subscriptionListing) {
-      const items5 = [arg1(dependencyMap[34]).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES];
+      const items5 = [guildId(first[34]).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES];
       let items6 = items5;
     } else {
       items6 = [];
@@ -305,12 +303,12 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
     obj3 = {
       contentTypes: items6,
       children(markAsDismissed) {
-          const guildId = markAsDismissed.markAsDismissed;
+          markAsDismissed = markAsDismissed.markAsDismissed;
           let tmp = null;
           if (markAsDismissed.visibleContent === guildId(first[34]).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES) {
             const obj = {
               markAsDismissed() {
-                  return markAsDismissed(constants.UNKNOWN);
+                  return markAsDismissed(callback.UNKNOWN);
                 },
               actionSheetKey: "TierTemplateSelected",
               importer: GuildRoleSubscriptionsTierTemplateSelectedActionSheetImporter
@@ -320,7 +318,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
           return tmp;
         }
     };
-    const items7 = [callback2(importDefault(dependencyMap[37]), obj3), , ];
+    const items7 = [callback2(groupListingId(first[37]), obj3), , ];
     obj4 = {};
     const items8 = [tmp.tabsContainer, ];
     let prop = null;
@@ -330,7 +328,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
     items8[1] = prop;
     obj4.style = items8;
     obj5 = { state: tmp19 };
-    const items9 = [callback2(arg1(dependencyMap[39]).SegmentedControl, obj5), ];
+    const items9 = [callback2(guildId(first[39]).SegmentedControl, obj5), ];
     const obj6 = { ref };
     items9[1] = callback2(closure_20, obj6);
     obj4.children = items9;
@@ -339,10 +337,10 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
     items7[2] = callback2(TabContent, obj7);
     obj2.children = items7;
     obj1.children = closure_16(first1, obj2);
-    obj.children = callback2(arg1(dependencyMap[25]).RoleSubscriptionSettingsDisabledContextProvider, obj1);
-    return callback2(arg1(dependencyMap[12]).EditStateContextProvider, obj);
+    obj.children = callback2(guildId(first[25]).RoleSubscriptionSettingsDisabledContextProvider, obj1);
+    return callback2(guildId(first[12]).EditStateContextProvider, obj);
   }
-  const tmp14 = callback(closure_10.useRoleTierEditStore((currentScene) => {
+  const tmp14 = callback(loading.useRoleTierEditStore((currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (null == DETAILS) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -350,5 +348,5 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
     const items = [DETAILS, currentScene.setScene];
     return items;
   }), 2);
-  const tmp8 = null != published && published;
+  tmp8 = null != published && published;
 };

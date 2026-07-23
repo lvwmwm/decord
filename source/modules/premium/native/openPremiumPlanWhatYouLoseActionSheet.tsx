@@ -1,15 +1,14 @@
-// Module ID: 7395
-// Function ID: 59497
+// Module ID: 7400
+// Function ID: 59531
 // Name: openPremiumPlanWhatYouLoseActionSheet
-// Dependencies: []
+// Dependencies: [4098, 7401, 1934, 2]
 // Exports: default
 
-// Module 7395 (openPremiumPlanWhatYouLoseActionSheet)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/premium/native/openPremiumPlanWhatYouLoseActionSheet.tsx");
+// Module 7400 (openPremiumPlanWhatYouLoseActionSheet)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/premium/native/openPremiumPlanWhatYouLoseActionSheet.tsx");
 
 export default function openPremiumPlanWhatYouLoseActionSheet(arg0) {
-  importDefault(dependencyMap[0]).hideActionSheet();
-  const obj = importDefault(dependencyMap[0]);
-  importDefault(dependencyMap[0]).openLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), "PremiumPlanWhatYouLoseActionSheet", arg0);
+  importDefault(4098).hideActionSheet();
+  const obj = importDefault(4098);
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(7401, dependencyMap.paths), "PremiumPlanWhatYouLoseActionSheet", arg0);
 };

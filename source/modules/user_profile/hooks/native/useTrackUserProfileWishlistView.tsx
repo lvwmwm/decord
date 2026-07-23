@@ -1,31 +1,30 @@
-// Module ID: 12011
-// Function ID: 92830
+// Module ID: 12125
+// Function ID: 94981
 // Name: useTrackUserProfileWishlistView
-// Dependencies: []
+// Dependencies: [31, 8677, 566, 2]
 // Exports: default
 
-// Module 12011 (useTrackUserProfileWishlistView)
-const _module = require(dependencyMap[0]);
-({ useEffect: closure_2, useRef: closure_3 } = _module);
-let closure_4 = importDefault(dependencyMap[1]);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileWishlistView.tsx");
+// Module 12125 (useTrackUserProfileWishlistView)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let closure_2;
+let closure_3;
+({ useEffect: closure_2, useRef: closure_3 } = result);
+result = require("initialize").fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileWishlistView.tsx");
 
 export default function useTrackUserProfileWishlistView(wishlistId) {
   wishlistId = wishlistId.wishlistId;
-  const require = wishlistId;
   const onAction = wishlistId.onAction;
-  const dependencyMap = onAction;
   const productLines = wishlistId.productLines;
   let flag = wishlistId.isVisible;
   if (flag === undefined) {
     flag = true;
   }
-  let closure_4;
+  let stateFromStores;
   let closure_5;
-  const items = [closure_4];
-  const stateFromStores = require(dependencyMap[2]).useStateFromStores(items, () => stateFromStores.isFetching(wishlistId));
-  closure_4 = stateFromStores;
+  const items = [stateFromStores];
+  stateFromStores = wishlistId(onAction[2]).useStateFromStores(items, () => stateFromStores.isFetching(wishlistId));
   closure_5 = flag(false);
   const items1 = [flag, stateFromStores, onAction, wishlistId, productLines];
   productLines(() => {

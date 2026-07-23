@@ -1,25 +1,25 @@
-// Module ID: 9548
-// Function ID: 74438
+// Module ID: 9555
+// Function ID: 74479
 // Name: usePressEmojiHandler
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: usePressEmojiHandler, usePressGIFHandler
 
-// Module 9548 (usePressEmojiHandler)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/forums/native/composer/hooks/ExpressionPickerHandlers.tsx");
+// Module 9555 (usePressEmojiHandler)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/forums/native/composer/hooks/ExpressionPickerHandlers.tsx");
 
 export const usePressEmojiHandler = function usePressEmojiHandler(selection) {
   selection = selection.selection;
-  const React = selection;
   const draftContent = selection.draftContent;
   const handleTextChange = selection.handleTextChange;
   const focusTextInput = selection.focusTextInput;
   const setSelection = selection.setSelection;
-  let closure_5 = React.useRef({ selection, draftContent, handleTextChange, focusTextInput, setSelection });
-  const effect = React.useEffect(() => {
+  let closure_5 = selection.useRef({ selection, draftContent, handleTextChange, focusTextInput, setSelection });
+  const effect = selection.useEffect(() => {
     closure_5.current = { selection, draftContent, handleTextChange, focusTextInput, setSelection };
   });
-  return React.useCallback((id) => {
+  return selection.useCallback((id) => {
     let draftContent;
     let focusTextInput;
     let handleTextChange;
@@ -57,7 +57,6 @@ export const usePressEmojiHandler = function usePressEmojiHandler(selection) {
 };
 export const usePressGIFHandler = function usePressGIFHandler(selection) {
   selection = selection.selection;
-  const React = selection;
   const draftContent = selection.draftContent;
   const handleTextChange = selection.handleTextChange;
   const focusTextInput = selection.focusTextInput;
@@ -65,7 +64,7 @@ export const usePressGIFHandler = function usePressGIFHandler(selection) {
   const items = [draftContent, focusTextInput, handleTextChange, , , ];
   ({ end: arr[3], start: arr[4] } = selection);
   items[5] = setSelection;
-  return React.useCallback((url) => {
+  return selection.useCallback((url) => {
     url = url.url;
     const substr = draftContent.substring(0, selection.start);
     let start = selection.end;

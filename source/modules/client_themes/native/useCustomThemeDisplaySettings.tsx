@@ -1,19 +1,21 @@
-// Module ID: 4063
-// Function ID: 33859
+// Module ID: 4065
+// Function ID: 33868
 // Name: useCustomThemeDisplaySettings
-// Dependencies: []
+// Dependencies: [57, 1322, 566, 2]
 // Exports: useCustomThemeDisplaySettings
 
-// Module 4063 (useCustomThemeDisplaySettings)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/client_themes/native/useCustomThemeDisplaySettings.tsx");
+// Module 4065 (useCustomThemeDisplaySettings)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/client_themes/native/useCustomThemeDisplaySettings.tsx");
 
 export const useCustomThemeDisplaySettings = function useCustomThemeDisplaySettings(base_theme) {
-  let obj = arg1(dependencyMap[2]);
-  const items = [closure_3];
+  let obj = require(566) /* initialize */;
+  let items = [_isNativeReflectConstruct];
   const tmp = callback(obj.useStateFromStoresArray(items, () => {
-    const items = [store.getCustomTheme(), store.getBaseTheme(), store.getPreviewTheme()];
+    const items = [outer1_3.getCustomTheme(), outer1_3.getBaseTheme(), outer1_3.getPreviewTheme()];
     return items;
   }), 3);
   const first = tmp[0];

@@ -1,26 +1,28 @@
-// Module ID: 7479
-// Function ID: 60049
+// Module ID: 7484
+// Function ID: 60083
 // Name: fillChunk
-// Dependencies: []
+// Dependencies: [4202, 1353, 4947, 653, 7485, 22, 4319, 1212, 3763, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 7479 (fillChunk)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[2]).RequestToSpeakPermissionStates;
-const Permissions = arg1(dependencyMap[3]).Permissions;
-const RowType = arg1(dependencyMap[4]).RowType;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stage_channels/StageChannelUtils.tsx");
+// Module 7484 (fillChunk)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH";
+import { Permissions } from "ME";
+import { RowType } from "RowType";
+
+let require = arg1;
+const result = require("MAX_STAGE_TOPIC_LENGTH").fileFinishedImporting("modules/stage_channels/StageChannelUtils.tsx");
 
 export const fillChunk = function fillChunk(arg0, arg1, arg2) {
   let tmp = arg1;
-  const obj = arg1(dependencyMap[5]);
+  const obj = require(22) /* apply */;
   if (null != arg2) {
     tmp = arg2;
   }
-  arg1 = tmp;
-  return arg1(dependencyMap[5]).chunk(arg0, arg1).reduce((arg0, arg1) => {
-    if (tmp <= arg1.length) {
+  require = tmp;
+  return require(22) /* apply */.chunk(arg0, arg1).reduce((arg0, arg1) => {
+    if (closure_0 <= arg1.length) {
       const items = [];
       let arraySpreadResult = HermesBuiltin.arraySpread(arg0, 0);
       items[arraySpreadResult] = arg1;
@@ -30,7 +32,7 @@ export const fillChunk = function fillChunk(arg0, arg1, arg2) {
       const items1 = [];
       const _Array = Array;
       arraySpreadResult = HermesBuiltin.arraySpread(arg1, 0);
-      const array = new Array(tmp - arg1.length);
+      const array = new Array(closure_0 - arg1.length);
       HermesBuiltin.arraySpread(array.fill(null), arraySpreadResult);
       const items2 = [];
       const arraySpreadResult2 = HermesBuiltin.arraySpread(arg0, 0);
@@ -43,7 +45,7 @@ export const fillChunk = function fillChunk(arg0, arg1, arg2) {
 export const summarizeUsernamesParticipating = function summarizeUsernamesParticipating(arg0, arg1, arg2, arg3) {
   let length = arg3;
   const first = arg1[0];
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(4319);
   const name = obj.getName(arg0, arg2, first);
   if (null == arg3) {
     length = arg1.length;
@@ -54,13 +56,13 @@ export const summarizeUsernamesParticipating = function summarizeUsernamesPartic
     }
   }
   if (null == first) {
-    const intl2 = arg1(dependencyMap[7]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     obj = { count: length };
-    intl2.formatToPlainString(arg1(dependencyMap[7]).t.chmM9N, obj);
+    intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.chmM9N, obj);
   } else {
-    const intl = arg1(dependencyMap[7]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { name, count: length - 1 };
-    intl.formatToPlainString(arg1(dependencyMap[7]).t.GhkJ21, obj);
+    intl.formatToPlainString(require(1212) /* getSystemLocale */.t.GhkJ21, obj);
   }
 };
 export const summarizeUsernamesParticipatingWithSpeakerNickname = function summarizeUsernamesParticipatingWithSpeakerNickname(arg0, name) {
@@ -74,22 +76,22 @@ export const summarizeUsernamesParticipatingWithSpeakerNickname = function summa
     }
   }
   if (null == name) {
-    const intl2 = name(dependencyMap[7]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     let obj = { count: length };
-    intl2.formatToPlainString(name(dependencyMap[7]).t.chmM9N, obj);
+    intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.chmM9N, obj);
   } else {
-    const intl = name(dependencyMap[7]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { name, count: length - 1 };
-    intl.formatToPlainString(name(dependencyMap[7]).t.GhkJ21, obj);
+    intl.formatToPlainString(require(1212) /* getSystemLocale */.t.GhkJ21, obj);
   }
 };
 export const getRemoveModeratorTooltipHint = function getRemoveModeratorTooltipHint(arg0, arg1) {
   if (RowType.OWNER === arg0) {
-    const intl3 = arg1(dependencyMap[7]).intl;
-    return intl3.string(arg1(dependencyMap[7]).t.icuNBM);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.icuNBM);
   } else if (RowType.ADMINISTRATOR === arg0) {
-    const intl2 = arg1(dependencyMap[7]).intl;
-    return intl2.string(arg1(dependencyMap[7]).t.eTmN5a);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.eTmN5a);
   } else {
     if (RowType.MEMBER !== arg0) {
       if (RowType.ROLE !== arg0) {
@@ -100,9 +102,9 @@ export const getRemoveModeratorTooltipHint = function getRemoveModeratorTooltipH
         }
       }
     }
-    const intl = arg1(dependencyMap[7]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const string = intl.string;
-    const t = arg1(dependencyMap[7]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (arg1) {
       let stringResult = string(t.Hw3XWx);
     } else {
@@ -112,7 +114,7 @@ export const getRemoveModeratorTooltipHint = function getRemoveModeratorTooltipH
   }
 };
 export const getStageChannelMetadata = function getStageChannelMetadata(channel_id) {
-  const stageInstanceByChannel = stageInstanceByChannel.getStageInstanceByChannel(channel_id.id);
+  stageInstanceByChannel = stageInstanceByChannel.getStageInstanceByChannel(channel_id.id);
   const obj = { channel_id: channel_id.id, guild_id: channel_id.guild_id };
   let topic;
   if (null != stageInstanceByChannel) {
@@ -120,7 +122,7 @@ export const getStageChannelMetadata = function getStageChannelMetadata(channel_
   }
   obj.topic = topic;
   obj.media_session_id = mediaSessionId.getMediaSessionId();
-  obj.request_to_speak_state = importAll(dependencyMap[8]).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, channel_id) ? closure_6.EVERYONE : closure_6.NO_ONE;
+  obj.request_to_speak_state = importAll(3763).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, channel_id) ? closure_6.EVERYONE : closure_6.NO_ONE;
   let id;
   if (null != stageInstanceByChannel) {
     id = stageInstanceByChannel.id;
@@ -129,11 +131,11 @@ export const getStageChannelMetadata = function getStageChannelMetadata(channel_
   return obj;
 };
 export const getParticipantNamesText = function getParticipantNamesText(channel, found) {
-  found = channel;
+  const _require = channel;
   function getParticipantName(user) {
-    return set(closure_3[6]).getName(user.getGuildId(), user.id, user.user);
+    return set(outer1_3[6]).getName(guildId.getGuildId(), guildId.id, user.user);
   }
-  const importDefault = new Set();
+  const set = new Set();
   found = found.filter((user) => {
     const id = user.user.id;
     let flag = !set.has(id);
@@ -144,20 +146,20 @@ export const getParticipantNamesText = function getParticipantNamesText(channel,
     return flag;
   });
   if (0 === found.length) {
-    const intl4 = found(dependencyMap[7]).intl;
-    let stringResult = intl4.string(found(dependencyMap[7]).t.FUVhyC);
+    const intl4 = _require(1212).intl;
+    let stringResult = intl4.string(_require(1212).t.FUVhyC);
   } else if (1 === found.length) {
-    const intl3 = found(dependencyMap[7]).intl;
+    const intl3 = _require(1212).intl;
     let obj = { a: getParticipantName(found[0]) };
-    stringResult = intl3.formatToPlainString(found(dependencyMap[7]).t.EQwZlN, obj);
+    stringResult = intl3.formatToPlainString(_require(1212).t.EQwZlN, obj);
   } else if (2 === found.length) {
-    const intl2 = found(dependencyMap[7]).intl;
+    const intl2 = _require(1212).intl;
     obj = { a: getParticipantName(found[0]), b: getParticipantName(found[1]) };
-    stringResult = intl2.formatToPlainString(found(dependencyMap[7]).t.zBcKoA, obj);
+    stringResult = intl2.formatToPlainString(_require(1212).t.zBcKoA, obj);
   } else {
-    const intl = found(dependencyMap[7]).intl;
+    const intl = _require(1212).intl;
     obj = { a: getParticipantName(found[0]), b: getParticipantName(found[1]), n: found.length - 2 };
-    stringResult = intl.formatToPlainString(found(dependencyMap[7]).t.3AqFaG, obj);
+    stringResult = intl.formatToPlainString(_require(1212).t["3AqFaG"], obj);
   }
   return stringResult;
 };

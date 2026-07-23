@@ -1,41 +1,40 @@
-// Module ID: 13865
-// Function ID: 104850
+// Module ID: 13979
+// Function ID: 107006
 // Name: useIsCarouselInView
-// Dependencies: []
+// Dependencies: [57, 31, 1450, 2]
 // Exports: default
 
-// Module 13865 (useIsCarouselInView)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/quests/native/useIsCarouselInView.tsx");
+// Module 13979 (useIsCarouselInView)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const result = require("useWindowDimensions").fileFinishedImporting("modules/quests/native/useIsCarouselInView.tsx");
 
 export default function useIsCarouselInView() {
   const containerRef = React.useRef(null);
-  const importDefault = containerRef;
-  const height = importDefault(dependencyMap[2])().height;
-  const dependencyMap = height;
+  height = containerRef(height[2])().height;
   const callback = React.useRef(height);
   const items = [height];
   const effect = React.useEffect(() => {
-    closure_2.current = height;
+    _slicedToArray.current = height;
   }, items);
   const tmp3 = callback(React.useState(true), 2);
   const isInView = tmp3[0];
-  const React = tmp3[1];
+  React = tmp3[1];
   let closure_4 = React.useRef(isInView);
   const effect1 = React.useEffect(() => {
     const interval = setInterval(() => {
       if (null != ref.current) {
         const current = ref.current;
         current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-          const bound = Math.min(arg5 + arg3, ref.current);
+          const bound = Math.min(arg5 + arg3, outer2_2.current);
           let tmp2 = arg3 > 0;
           if (tmp2) {
             tmp2 = Math.max(0, bound - Math.max(arg5, 0)) / arg3 >= 0.5;
           }
-          if (tmp2 !== ref2.current) {
-            ref2.current = tmp2;
-            callback(tmp2);
+          if (tmp2 !== outer2_4.current) {
+            outer2_4.current = tmp2;
+            outer2_3(tmp2);
           }
         });
       }

@@ -1,10 +1,14 @@
-// Module ID: 12579
-// Function ID: 96757
+// Module ID: 12693
+// Function ID: 98913
 // Name: _resetAgeVerification
-// Dependencies: []
+// Dependencies: [5, 653, 507, 686, 2]
 // Exports: fetchReactiveCheckResult, resetAgeVerification
 
-// Module 12579 (_resetAgeVerification)
+// Module 12693 (_resetAgeVerification)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _fetchReactiveCheckResult() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
@@ -13,12 +17,9 @@ function _fetchReactiveCheckResult() {
 function _resetAgeVerification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _resetAgeVerification = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/age_assurance/ReactiveCheckActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/age_assurance/ReactiveCheckActionCreators.tsx");
 
 export const fetchReactiveCheckResult = function fetchReactiveCheckResult() {
   return _fetchReactiveCheckResult(...arguments);

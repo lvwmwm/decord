@@ -1,5 +1,5 @@
 // Module ID: 864
-// Function ID: 9652
+// Function ID: 9653
 // Name: getPossibleEventMessages
 // Dependencies: []
 
@@ -10,8 +10,9 @@ arg5.getPossibleEventMessages = function getPossibleEventMessages(message) {
   if (message.message) {
     items.push(tmp.message);
   }
+  const iter = message.exception.values[message.exception.values.length - 1];
   let value = tmp5;
-  if (null != message.exception.values[message.exception.values.length - 1]) {
+  if (null != iter) {
     value = iter2.value;
   }
   if (value) {

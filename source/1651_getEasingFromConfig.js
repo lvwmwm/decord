@@ -1,27 +1,30 @@
 // Module ID: 1651
-// Function ID: 18347
+// Function ID: 18348
 // Name: getEasingFromConfig
-// Dependencies: []
+// Dependencies: [1641, 1634, 1586, 1623, 1607, 1638, 1652, 1668, 1592, 1669, 1670, 1675]
 
 // Module 1651 (getEasingFromConfig)
+const require = arg1;
+let dependencyMap = arg6;
 function getEasingFromConfig(easingV) {
   if (easingV.easingV) {
-    const obj2 = arg1(arg6[0]);
+    const tmp5 = easingV.easingV[require(undefined, 1634) /* linear */.EasingNameSymbol];
+    const obj2 = require(1641) /* getEasingByName */;
     if (tmp6) {
       return obj2.getEasingByName(tmp5);
     } else {
       let maybeGetBezierEasingResult = obj2.maybeGetBezierEasing(easingV.easingV);
       if (!maybeGetBezierEasingResult) {
-        const logger = arg1(arg6[2]).logger;
+        const logger = require(1586) /* noop */.logger;
         logger.warn("Selected easing is not currently supported on web. Using linear easing instead.");
-        maybeGetBezierEasingResult = arg1(arg6[0]).getEasingByName("linear");
-        const obj3 = arg1(arg6[0]);
+        maybeGetBezierEasingResult = require(1641) /* getEasingByName */.getEasingByName("linear");
+        const obj3 = require(1641) /* getEasingByName */;
       }
       return maybeGetBezierEasingResult;
     }
-    const tmp6 = easingV.easingV[closure_0(undefined, closure_1[1]).EasingNameSymbol] in arg1(arg6[0]).WebEasings;
+    tmp6 = tmp5 in require(1641) /* getEasingByName */.WebEasings;
   } else {
-    return arg1(arg6[0]).getEasingByName("linear");
+    return require(1641) /* getEasingByName */.getEasingByName("linear");
   }
 }
 function getRandomDelay(delayV) {
@@ -50,8 +53,8 @@ function getDelayFromConfig(randomizeDelay) {
 }
 function getDurationFromConfig(durationV, animationWithInitialValues) {
   let num = 0.3;
-  if (animationWithInitialValues in animationWithInitialValues(arg6[5]).Animations) {
-    num = animationWithInitialValues(arg6[5]).Animations[animationWithInitialValues].duration;
+  if (animationWithInitialValues in require(1638) /* TransitionType */.Animations) {
+    num = require(1638) /* TransitionType */.Animations[animationWithInitialValues].duration;
   }
   if (undefined !== durationV.durationV) {
     num = durationV.durationV / 1000;
@@ -70,12 +73,12 @@ function getReversedFromConfig(reversed) {
 }
 function saveSnapshot(_componentDOMRef) {
   const size = _componentDOMRef.getBoundingClientRect();
-  const snapshots = arg1(arg6[7]).snapshots;
+  const snapshots = require(1668) /* weakMap */.snapshots;
   const result = snapshots.set(_componentDOMRef, { top: size.top, left: size.left, width: size.width, height: size.height, scrollOffsets: getElementScrollValue(_componentDOMRef) });
 }
 function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offsetParent) {
-  dummyAnimationConfig = cloneNodeResult;
-  const arg6 = dummyAnimationConfig;
+  const _require = cloneNodeResult;
+  const dependencyMap = dummyAnimationConfig;
   let closure_2 = arguments.length > 2 && undefined !== arguments[2] && arguments[2];
   let tmp = null;
   if (arguments.length > 3) {
@@ -86,84 +89,82 @@ function setElementAnimation(cloneNodeResult, dummyAnimationConfig, arg2, offset
   }
   const getRandomDelay = tmp;
   const animationName = dummyAnimationConfig.animationName;
-  const getDelayFromConfig = animationName;
   const duration = dummyAnimationConfig.duration;
-  const getDurationFromConfig = duration;
   const delay = dummyAnimationConfig.delay;
-  const getReversedFromConfig = dummyAnimationConfig.easing;
+  const easing = dummyAnimationConfig.easing;
   function configureAnimation() {
-    arg0.style.animationName = animationName;
-    arg0.style.animationDuration = "" + duration + "s";
-    arg0.style.animationDelay = "" + delay + "s";
-    arg0.style.animationTimingFunction = easing;
+    cloneNodeResult.style.animationName = animationName;
+    cloneNodeResult.style.animationDuration = "" + duration + "s";
+    cloneNodeResult.style.animationDelay = "" + delay + "s";
+    cloneNodeResult.style.animationTimingFunction = easing;
   }
-  if (dummyAnimationConfig.animationType === dummyAnimationConfig(arg6[4]).LayoutAnimationType.ENTERING) {
+  if (dummyAnimationConfig.animationType === _require(1607).LayoutAnimationType.ENTERING) {
     const _requestAnimationFrame = requestAnimationFrame;
     const animationFrame = requestAnimationFrame(configureAnimation);
   } else {
     configureAnimation();
   }
-  function maybeRemoveElement(arg0) {
-    let isDummy = arg0.isDummy;
+  function maybeRemoveElement(closure_0) {
+    let isDummy = cloneNodeResult.isDummy;
     if (isDummy) {
       isDummy = null != tmp;
     }
     if (isDummy) {
-      isDummy = tmp.contains(arg0);
+      isDummy = tmp.contains(cloneNodeResult);
     }
     if (isDummy) {
-      arg0.removedAfterAnimation = true;
-      tmp.removeChild(arg0);
+      cloneNodeResult.removedAfterAnimation = true;
+      tmp.removeChild(cloneNodeResult);
     }
   }
-  let closure_9 = false;
+  let c9 = false;
   function maybeCallCallback(arg0) {
-    let callback = !closure_9;
-    if (!closure_9) {
-      callback = arg1.callback;
+    let callback = !c9;
+    if (!c9) {
+      callback = dummyAnimationConfig.callback;
     }
     if (callback) {
-      arg1.callback(arg0);
-      closure_9 = true;
+      dummyAnimationConfig.callback(arg0);
+      c9 = true;
     }
   }
   cloneNodeResult.onanimationend = () => {
     if (closure_2) {
-      maybeRemoveElement(arg0);
+      maybeRemoveElement(cloneNodeResult);
     }
     maybeRemoveElement();
     maybeCallCallback(true);
-    const removed = arg0.removeEventListener("animationcancel", animationCancelHandler);
+    const removed = cloneNodeResult.removeEventListener("animationcancel", animationCancelHandler);
   };
   function animationCancelHandler() {
     maybeRemoveElement();
     maybeCallCallback(false);
-    const removed = arg0.removeEventListener("animationcancel", animationCancelHandler);
+    const removed = cloneNodeResult.removeEventListener("animationcancel", animationCancelHandler);
   }
   cloneNodeResult.onanimationstart = () => {
-    if (arg1.animationType === arg0(arg1[4]).LayoutAnimationType.ENTERING) {
-      let obj = arg0(arg1[8]);
+    if (dummyAnimationConfig.animationType === cloneNodeResult(dummyAnimationConfig[4]).LayoutAnimationType.ENTERING) {
+      let obj = cloneNodeResult(dummyAnimationConfig[8]);
       obj = { visibility: "initial" };
-      obj._updatePropsJS(obj, arg0);
+      obj._updatePropsJS(obj, cloneNodeResult);
     }
-    const listener = arg0.addEventListener("animationcancel", animationCancelHandler);
+    const listener = cloneNodeResult.addEventListener("animationcancel", animationCancelHandler);
   };
-  if (!(animationName in dummyAnimationConfig(arg6[5]).Animations)) {
-    const result = dummyAnimationConfig(arg6[9]).scheduleAnimationCleanup(animationName, duration + delay, () => {
+  if (!(animationName in _require(1638).Animations)) {
+    const result = _require(1669).scheduleAnimationCleanup(animationName, duration + delay, () => {
       if (closure_2) {
-        const snapshots = arg0(arg1[7]).snapshots;
-        arg0(arg1[7]).setElementPosition(arg0, snapshots.get(arg0));
-        const obj = arg0(arg1[7]);
+        const snapshots = cloneNodeResult(dummyAnimationConfig[7]).snapshots;
+        cloneNodeResult(dummyAnimationConfig[7]).setElementPosition(cloneNodeResult, snapshots.get(cloneNodeResult));
+        const obj = cloneNodeResult(dummyAnimationConfig[7]);
       }
       maybeRemoveElement();
       maybeCallCallback(false);
     });
-    const obj = dummyAnimationConfig(arg6[9]);
+    let obj = _require(1669);
   }
 }
 function getElementScrollValue(offsetParent) {
   let parentElement = offsetParent;
-  const obj = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
+  const obj = { scrollTopOffset: 0, scrollLeftOffset: 0 };
   if (offsetParent) {
     do {
       let tmp = 0 !== parentElement.scrollTop && 0 === obj.scrollTopOffset;
@@ -182,22 +183,22 @@ function getElementScrollValue(offsetParent) {
 arg5.getReducedMotionFromConfig = function getReducedMotionFromConfig(entering) {
   if (entering.reduceMotionV) {
     const reduceMotionV = entering.reduceMotionV;
-    if (arg1(arg6[4]).ReduceMotion.Never === reduceMotionV) {
+    if (require(1607) /* isWorkletFunction */.ReduceMotion.Never === reduceMotionV) {
       return false;
-    } else if (arg1(arg6[4]).ReduceMotion.Always === reduceMotionV) {
+    } else if (require(1607) /* isWorkletFunction */.ReduceMotion.Always === reduceMotionV) {
       return true;
     } else {
-      return arg1(arg6[3]).ReducedMotionManager.jsValue;
+      return require(1623) /* isReducedMotionEnabledInSystem */.ReducedMotionManager.jsValue;
     }
   } else {
-    return arg1(arg6[3]).ReducedMotionManager.jsValue;
+    return require(1623) /* isReducedMotionEnabledInSystem */.ReducedMotionManager.jsValue;
   }
 };
 arg5.getProcessedConfig = function getProcessedConfig(animationWithInitialValues, animationType, entering) {
   return { animationName: animationWithInitialValues, animationType, duration: getDurationFromConfig(entering, animationWithInitialValues), delay: getDelayFromConfig(entering), easing: getEasingFromConfig(entering), callback: getCallbackFromConfig(entering), reversed: getReversedFromConfig(entering) };
 };
 arg5.maybeModifyStyleForKeyframe = function maybeModifyStyleForKeyframe(style, entering) {
-  if (entering instanceof entering(arg6[6]).Keyframe) {
+  if (entering instanceof require(1652) /* BaseAnimationBuilder */.Keyframe) {
     style.style.animationFillMode = "forwards";
     const _Object = Object;
     const values = Object.values(entering.definitions);
@@ -219,22 +220,22 @@ arg5.handleLayoutTransition = function handleLayoutTransition(_componentDOMRef, 
   let dummyTransitionKeyframeName;
   animationName = animationName.animationName;
   if ("LinearTransition" === animationName) {
-    let ENTRY_EXIT = animationName(arg6[5]).TransitionType.LINEAR;
+    let ENTRY_EXIT = require(1638) /* TransitionType */.TransitionType.LINEAR;
   } else if ("SequencedTransition" === animationName) {
-    ENTRY_EXIT = animationName(arg6[5]).TransitionType.SEQUENCED;
+    ENTRY_EXIT = require(1638) /* TransitionType */.TransitionType.SEQUENCED;
   } else if ("FadingTransition" === animationName) {
-    ENTRY_EXIT = animationName(arg6[5]).TransitionType.FADING;
+    ENTRY_EXIT = require(1638) /* TransitionType */.TransitionType.FADING;
   } else if ("JumpingTransition" === animationName) {
-    ENTRY_EXIT = animationName(arg6[5]).TransitionType.JUMPING;
+    ENTRY_EXIT = require(1638) /* TransitionType */.TransitionType.JUMPING;
   } else if ("CurvedTransition" === animationName) {
-    ENTRY_EXIT = animationName(arg6[5]).TransitionType.CURVED;
+    ENTRY_EXIT = require(1638) /* TransitionType */.TransitionType.CURVED;
   } else if ("EntryExitTransition" === animationName) {
-    ENTRY_EXIT = animationName(arg6[5]).TransitionType.ENTRY_EXIT;
+    ENTRY_EXIT = require(1638) /* TransitionType */.TransitionType.ENTRY_EXIT;
   }
-  const obj = animationName(arg6[10]);
-  ({ dummyTransitionKeyframeName, transitionKeyframeName: animationName.animationName } = animationName(arg6[10]).TransitionGenerator(ENTRY_EXIT, easingY));
-  if (ENTRY_EXIT === animationName(arg6[5]).TransitionType.CURVED) {
-    const obj2 = animationName(arg6[11]);
+  const obj = require(1670) /* addPxToTransform */;
+  ({ dummyTransitionKeyframeName, transitionKeyframeName: animationName.animationName } = require(1670) /* addPxToTransform */.TransitionGenerator(ENTRY_EXIT, easingY));
+  if (ENTRY_EXIT === require(1638) /* TransitionType */.TransitionType.CURVED) {
+    const obj2 = require(1675) /* showChildren */;
     const result = obj2.prepareCurvedTransition(_componentDOMRef, animationName, easingY, dummyTransitionKeyframeName);
     setElementAnimation(result.dummy, result.dummyAnimationConfig);
   }
@@ -242,23 +243,23 @@ arg5.handleLayoutTransition = function handleLayoutTransition(_componentDOMRef, 
 };
 arg5.handleExitingAnimation = function handleExitingAnimation(offsetParent, dummyAnimationConfig) {
   let firstChild;
-  dummyAnimationConfig = offsetParent;
+  const _require = offsetParent;
   offsetParent = offsetParent.offsetParent;
   const cloneNodeResult = offsetParent.cloneNode();
-  const arg6 = cloneNodeResult;
+  const dependencyMap = cloneNodeResult;
   cloneNodeResult.isDummy = true;
   cloneNodeResult.style.animationName = "";
   offsetParent.dummyClone = cloneNodeResult;
   offsetParent.style.animationName = "";
-  const getEasingFromConfig = new Map();
-  function saveScrollPosition(scrollTop) {
-    const result = map.set(scrollTop, { top: scrollTop.scrollTop, left: scrollTop.scrollLeft });
+  const map = new Map();
+  function saveScrollPosition(item10015) {
+    const result = map.set(item10015, { top: item10015.scrollTop, left: item10015.scrollLeft });
     for (const item10015 of arr) {
-      let tmp3 = closure_3;
-      let tmp4 = closure_3(item10015);
+      let tmp3 = saveScrollPosition;
+      let tmp4 = saveScrollPosition(item10015);
+      continue;
     }
   }
-  const getRandomDelay = saveScrollPosition;
   saveScrollPosition(offsetParent);
   if (offsetParent.firstChild) {
     do {
@@ -271,23 +272,23 @@ arg5.handleExitingAnimation = function handleExitingAnimation(offsetParent, dumm
   }
   function restoreScrollPosition(cloneNodeResult) {
     let tmp2 = cloneNodeResult;
-    if (cloneNodeResult === cloneNodeResult) {
-      tmp2 = cloneNodeResult;
+    if (cloneNodeResult === closure_1) {
+      tmp2 = closure_0;
     }
     const value = map.get(tmp2);
     if (value) {
       ({ top: cloneNodeResult.scrollTop, left: cloneNodeResult.scrollLeft } = value);
     }
     for (const item10016 of arr) {
-      let tmp5 = closure_4;
-      let tmp6 = closure_4(item10016);
+      let tmp5 = restoreScrollPosition;
+      let tmp6 = restoreScrollPosition(item10016);
+      continue;
     }
   }
-  const getDelayFromConfig = restoreScrollPosition;
-  const result = restoreScrollPosition(cloneNodeResult);
-  const snapshots = dummyAnimationConfig(arg6[7]).snapshots;
+  let result = restoreScrollPosition(cloneNodeResult);
+  const snapshots = _require(1668).snapshots;
   const rect = snapshots.get(offsetParent);
-  const tmp6 = getElementScrollValue(offsetParent);
+  let tmp6 = getElementScrollValue(offsetParent);
   const scrollTopOffset = tmp6.scrollTopOffset;
   const scrollTopOffset2 = rect.scrollOffsets.scrollTopOffset;
   if (scrollTopOffset !== scrollTopOffset2) {
@@ -298,9 +299,8 @@ arg5.handleExitingAnimation = function handleExitingAnimation(offsetParent, dumm
   if (scrollLeftOffset !== scrollLeftOffset2) {
     rect.left = rect.left + (scrollLeftOffset2 - scrollLeftOffset);
   }
-  const snapshots2 = dummyAnimationConfig(arg6[7]).snapshots;
+  const snapshots2 = _require(1668).snapshots;
   const result1 = snapshots2.set(cloneNodeResult, rect);
-  const map = new Map();
-  dummyAnimationConfig(arg6[7]).setElementPosition(cloneNodeResult, rect);
+  _require(1668).setElementPosition(cloneNodeResult, rect);
   setElementAnimation(cloneNodeResult, dummyAnimationConfig, false, offsetParent);
 };

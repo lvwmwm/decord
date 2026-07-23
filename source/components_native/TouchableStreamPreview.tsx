@@ -1,45 +1,56 @@
-// Module ID: 10775
-// Function ID: 83720
+// Module ID: 10785
+// Function ID: 83769
 // Name: StreamPreviewContainer
-// Dependencies: []
+// Dependencies: [31, 27, 4144, 4149, 1194, 1348, 1838, 3758, 4146, 653, 33, 4130, 3974, 689, 4312, 566, 1212, 4944, 4309, 4336, 4323, 4194, 4559, 10786, 4126, 2]
 // Exports: default
 
-// Module 10775 (StreamPreviewContainer)
+// Module 10785 (StreamPreviewContainer)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+
+const require = arg1;
 function StreamPreviewContainer(disableTransition) {
   disableTransition = disableTransition.disableTransition;
-  const arg1 = disableTransition;
   const onPress = disableTransition.onPress;
-  const importDefault = onPress;
   const stream = disableTransition.stream;
-  const dependencyMap = stream;
   const channel = disableTransition.channel;
-  const React = channel;
-  const tmp = callback();
-  let obj = arg1(dependencyMap[14]);
-  let obj1 = arg1(dependencyMap[15]);
-  const items = [closure_5];
-  const stateFromStores = obj1.useStateFromStores(items, () => null != remoteSessionId.getRemoteSessionId());
-  let obj2 = arg1(dependencyMap[15]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = disableTransition(stream[14]);
+  let obj1 = disableTransition(stream[15]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj1.useStateFromStores(items, () => null != outer1_5.getRemoteSessionId());
+  let obj2 = disableTransition(stream[15]);
   const items1 = [closure_10];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => !closure_10.can(constants.CONNECT, channel));
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => !outer1_10.can(outer1_12.CONNECT, channel));
   const isChannelFullResult = obj.isChannelFull(channel, closure_11, closure_9);
   const items2 = [closure_11];
-  const stateFromStores2 = arg1(dependencyMap[15]).useStateFromStores(items2, () => inChannel.isInChannel(channel.id));
-  const obj4 = arg1(dependencyMap[15]);
+  const stateFromStores2 = disableTransition(stream[15]).useStateFromStores(items2, () => outer1_11.isInChannel(channel.id));
+  let obj4 = disableTransition(stream[15]);
   const items3 = [closure_6, closure_7];
   const items4 = [channel.id, stream.ownerId];
-  const stateFromStores3 = arg1(dependencyMap[15]).useStateFromStores(items3, () => {
-    let isSelfStreamHiddenResult = stream.ownerId === id.getId();
+  const stateFromStores3 = disableTransition(stream[15]).useStateFromStores(items3, () => {
+    let isSelfStreamHiddenResult = stream.ownerId === outer1_7.getId();
     if (isSelfStreamHiddenResult) {
-      isSelfStreamHiddenResult = selfStreamHidden.isSelfStreamHidden(channel.id);
+      isSelfStreamHiddenResult = outer1_6.isSelfStreamHidden(channel.id);
     }
     return isSelfStreamHiddenResult;
   }, items4);
-  const intl = arg1(dependencyMap[16]).intl;
-  let stringResult = intl.string(arg1(dependencyMap[16]).t.7Xq/nV);
+  const intl = disableTransition(stream[16]).intl;
+  let stringResult = intl.string(disableTransition(stream[16]).t["7Xq/nV"]);
   if (stateFromStores) {
-    const intl4 = arg1(dependencyMap[16]).intl;
-    let stringResult1 = intl4.string(arg1(dependencyMap[16]).t.gcnYT2);
+    const intl4 = disableTransition(stream[16]).intl;
+    let stringResult1 = intl4.string(disableTransition(stream[16]).t.gcnYT2);
     let flag = true;
   } else {
     let tmp8 = stateFromStores2;
@@ -50,14 +61,14 @@ function StreamPreviewContainer(disableTransition) {
     flag = false;
     if (!tmp8) {
       if (isChannelFullResult) {
-        const intl3 = arg1(dependencyMap[16]).intl;
-        stringResult = intl3.string(arg1(dependencyMap[16]).t.rZfiNq);
+        const intl3 = disableTransition(stream[16]).intl;
+        stringResult = intl3.string(disableTransition(stream[16]).t.rZfiNq);
         let flag2 = true;
       } else {
         flag2 = false;
         if (stateFromStores1) {
-          const intl2 = arg1(dependencyMap[16]).intl;
-          stringResult = intl2.string(arg1(dependencyMap[16]).t.TVBCKZ);
+          const intl2 = disableTransition(stream[16]).intl;
+          stringResult = intl2.string(disableTransition(stream[16]).t.TVBCKZ);
           flag2 = true;
         }
       }
@@ -66,7 +77,7 @@ function StreamPreviewContainer(disableTransition) {
     }
   }
   const items5 = [stream, disableTransition, onPress];
-  const callback = React.useCallback(() => {
+  const callback = channel.useCallback(() => {
     const voiceChannel = onPress(stream[17]).selectVoiceChannel(stream.channelId);
     const obj = onPress(stream[17]);
     disableTransition(stream[18]).watchStream(stream);
@@ -83,7 +94,7 @@ function StreamPreviewContainer(disableTransition) {
       onPress();
     }
   }, items5);
-  importDefault(dependencyMap[22])(() => {
+  onPress(stream[22])(() => {
     if (channel.isGuildStageVoice()) {
       let obj = disableTransition(stream[18]);
       obj = { noFocus: true };
@@ -97,51 +108,37 @@ function StreamPreviewContainer(disableTransition) {
   obj.disabled = flag;
   obj = { style: tmp.ctaWrapper };
   obj1 = { style: tmp.ctaBackground };
-  const obj5 = arg1(dependencyMap[15]);
-  obj2 = { "Null": null, "Null": null, alignItems: null, style: tmp.ctaText, children: stringResult1 };
-  obj1.children = jsx(arg1(dependencyMap[24]).Text, obj2);
-  obj.children = <View {...obj1} />;
-  obj.children = <View {...obj} />;
-  return jsx(importDefault(dependencyMap[23]), obj);
+  const obj5 = disableTransition(stream[15]);
+  obj2 = { style: tmp.ctaText, variant: "text-md/semibold", color: "text-overlay-light", children: stringResult1 };
+  obj1.children = jsx(disableTransition(stream[24]).Text, { style: tmp.ctaText, variant: "text-md/semibold", color: "text-overlay-light", children: stringResult1 });
+  obj.children = <View style={tmp.ctaBackground} />;
+  obj.children = <View style={tmp.ctaWrapper} />;
+  return jsx(onPress(stream[23]), { style: tmp.ctaWrapper });
 }
-let closure_3 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const View = tmp2.View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-const Permissions = arg1(dependencyMap[9]).Permissions;
-const jsx = arg1(dependencyMap[10]).jsx;
-let obj = arg1(dependencyMap[11]);
-obj = { touchable: {} };
-obj = {};
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
-obj["alignItems"] = "center";
-obj["justifyContent"] = "center";
-obj["backgroundColor"] = arg1(dependencyMap[12]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.PRIMARY_700, 0.7);
-obj.ctaWrapper = obj;
-const obj4 = arg1(dependencyMap[12]);
-obj.ctaBackground = { backgroundColor: importDefault(dependencyMap[13]).unsafe_rawColors.PRIMARY_500 };
-obj.ctaText = { lineHeight: 20 };
-let closure_14 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[13]).unsafe_rawColors.PRIMARY_500 };
-const result = arg1(dependencyMap[25]).fileFinishedImporting("components_native/TouchableStreamPreview.tsx");
+const View = get_ActivityIndicator.View;
+_createForOfIteratorHelperLoose = { touchable: { borderRadius: 5, overflow: "hidden" } };
+_createForOfIteratorHelperLoose = {};
+let merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
+_createForOfIteratorHelperLoose["alignItems"] = "center";
+_createForOfIteratorHelperLoose["justifyContent"] = "center";
+_createForOfIteratorHelperLoose["backgroundColor"] = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_700, 0.7);
+_createForOfIteratorHelperLoose.ctaWrapper = _createForOfIteratorHelperLoose;
+let obj1 = { height: 40, paddingHorizontal: 16, borderRadius: 20, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_500, justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.ctaBackground = obj1;
+_createForOfIteratorHelperLoose.ctaText = { lineHeight: 20 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/TouchableStreamPreview.tsx");
 
 export default function VoiceChannelSettingsStreamPreview(arg0) {
-  const arg1 = arg0;
-  let obj = arg1(dependencyMap[15]);
+  const _require = arg0;
+  let obj = _require(566);
   const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, (self) => streamForUser.getStreamForUser(self.userId, self.guildId));
-  const importDefault = stateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getStreamForUser(closure_0.userId, closure_0.guildId));
   const items1 = [closure_8];
-  const stateFromStores1 = arg1(dependencyMap[15]).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => {
     let channel = null;
     if (null != stateFromStores) {
-      channel = channel.getChannel(stateFromStores.channelId);
+      channel = outer1_8.getChannel(stateFromStores.channelId);
     }
     return channel;
   });
@@ -153,7 +150,7 @@ export default function VoiceChannelSettingsStreamPreview(arg0) {
       const merged = Object.assign(arg0);
       obj["stream"] = stateFromStores;
       obj["channel"] = stateFromStores1;
-      tmp3 = <StreamPreviewContainer {...obj} />;
+      tmp3 = <StreamPreviewContainer />;
     }
   }
   return tmp3;

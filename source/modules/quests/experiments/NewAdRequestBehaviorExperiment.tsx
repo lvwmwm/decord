@@ -1,12 +1,13 @@
-// Module ID: 6952
-// Function ID: 55541
+// Module ID: 6957
+// Function ID: 55575
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 6952 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enableNewRequestBehavior: false }, variations: { [1]: { enableNewRequestBehavior: false }, [2]: { enableNewRequestBehavior: true }, [3]: { enableNewRequestBehavior: false }, [4]: { enableNewRequestBehavior: true }, [5]: { enableNewRequestBehavior: true }, [6]: { enableNewRequestBehavior: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/quests/experiments/NewAdRequestBehaviorExperiment.tsx");
+// Module 6957 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2025-10-ad-request-behavior-experiment", kind: "user", defaultConfig: { enableNewRequestBehavior: false }, variations: { [1]: { enableNewRequestBehavior: false }, [2]: { enableNewRequestBehavior: true }, [3]: { enableNewRequestBehavior: false }, [4]: { enableNewRequestBehavior: true }, [5]: { enableNewRequestBehavior: true }, [6]: { enableNewRequestBehavior: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/quests/experiments/NewAdRequestBehaviorExperiment.tsx");
 
 export default apexExperiment;

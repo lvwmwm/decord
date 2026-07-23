@@ -1,32 +1,37 @@
-// Module ID: 12964
-// Function ID: 98629
+// Module ID: 13078
+// Function ID: 100785
 // Name: ContextMenuItem
-// Dependencies: []
+// Dependencies: [31, 27, 33, 3991, 4130, 9304, 689, 1324, 9303, 4542, 4546, 4545, 4126, 2]
 // Exports: ContextMenuItem
 
-// Module 12964 (ContextMenuItem)
-let closure_3 = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]).createAnimatedComponent(arg1(dependencyMap[1]).Pressable);
-const importDefaultResult = importDefault(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles((arg0) => {
+// Module 13078 (ContextMenuItem)
+import result from "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = require("module_3991").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { padding: arg1(dependencyMap[5]).CONTEXT_MENU_ITEM_PADDING, minHeight: arg1(dependencyMap[5]).CONTEXT_MENU_ITEM_BASE_HEIGHT };
+  obj = { padding: require(9304) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_PADDING, minHeight: require(9304) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_BASE_HEIGHT, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 8 };
   obj.container = obj;
   obj.containerRefresh = { justifyContent: "flex-start" };
-  obj = { borderTopLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[6]).radii.lg };
+  obj = { borderTopLeftRadius: importDefault(689).radii.lg, borderTopRightRadius: importDefault(689).radii.lg };
   obj.roundedTop = obj;
-  obj.roundedBottom = { borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.lg };
-  const obj1 = { borderBottomLeftRadius: importDefault(dependencyMap[6]).radii.lg, borderBottomRightRadius: importDefault(dependencyMap[6]).radii.lg };
-  obj.border = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
-  const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE };
-  obj.pressed = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_SUBTLE };
-  const obj4 = {};
+  obj.roundedBottom = { borderBottomLeftRadius: importDefault(689).radii.lg, borderBottomRightRadius: importDefault(689).radii.lg };
+  const obj1 = { borderBottomLeftRadius: importDefault(689).radii.lg, borderBottomRightRadius: importDefault(689).radii.lg };
+  obj.border = { borderBottomWidth: 1, borderBottomColor: importDefault(689).colors.BORDER_SUBTLE };
+  const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(689).colors.BORDER_SUBTLE };
+  obj.pressed = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_SUBTLE };
+  const obj4 = { width: 20, height: 20 };
   if ("destructive" === arg0) {
-    let TEXT_STRONG = importDefault(dependencyMap[6]).colors.TEXT_FEEDBACK_CRITICAL;
+    let TEXT_STRONG = importDefault(689).colors.TEXT_FEEDBACK_CRITICAL;
   } else {
-    TEXT_STRONG = importDefault(dependencyMap[6]).colors.TEXT_STRONG;
+    TEXT_STRONG = importDefault(689).colors.TEXT_STRONG;
   }
   obj4.tintColor = TEXT_STRONG;
   obj.icon = obj4;
@@ -37,8 +42,7 @@ let closure_7 = arg1(dependencyMap[4]).createStyles((arg0) => {
 let closure_8 = { code: "function ContextMenuItemNativeTsx1(){const{pan}=this.__closure;return pan.get();}" };
 let closure_9 = { code: "function ContextMenuItemNativeTsx2(_current,previous){const{measure,ref,index,INDEX_BOUNDS_OFFSET,itemMeasurements,INDEX_BOUNDS_PAGE_X_OFFSET,INDEX_BOUNDS_PAGE_Y_OFFSET,INDEX_BOUNDS_WIDTH_OFFSET,INDEX_BOUNDS_HEIGHT_OFFSET}=this.__closure;if(previous==null||_current===previous)return;const measurements=measure(ref);if(measurements!=null){const{pageX:pageX,pageY:pageY,width:width,height:height}=measurements;const offset=index*INDEX_BOUNDS_OFFSET;itemMeasurements.get()[offset+INDEX_BOUNDS_PAGE_X_OFFSET]=pageX;itemMeasurements.get()[offset+INDEX_BOUNDS_PAGE_Y_OFFSET]=pageY;itemMeasurements.get()[offset+INDEX_BOUNDS_WIDTH_OFFSET]=width;itemMeasurements.get()[offset+INDEX_BOUNDS_HEIGHT_OFFSET]=height;}}" };
 let closure_10 = { code: "function ContextMenuItemNativeTsx3(){const{activeIndex,index,pressed,withSpring,backgroundColor,SUBTLE_SPRING}=this.__closure;const isActive=activeIndex.get()===index||pressed.get()===1;return{backgroundColor:withSpring(isActive?backgroundColor:'transparent',SUBTLE_SPRING,'animate-always')};}" };
-const obj2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("design/components/ContextMenu/native/ContextMenuItem.native.tsx");
+let result = require("jsxProd").fileFinishedImporting("design/components/ContextMenu/native/ContextMenuItem.native.tsx");
 
 export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   let IconComponent;
@@ -53,7 +57,6 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   let trailingIndicator;
   let variant;
   ({ IconComponent, trailingIndicator, iconSource, start, end, index } = accessibilityRole);
-  const arg1 = index;
   ({ state, variant } = accessibilityRole);
   ({ label, lastInSection, onPress } = accessibilityRole);
   if (variant === undefined) {
@@ -63,25 +66,22 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   if (str === undefined) {
     str = "button";
   }
-  let importDefault;
-  let dependencyMap;
-  let React;
+  let animatedRef;
+  let pan;
+  let itemMeasurements;
   let activeIndex;
   let sharedValue;
-  let closure_6;
-  let obj = arg1(dependencyMap[3]);
-  const animatedRef = obj.useAnimatedRef();
-  importDefault = animatedRef;
+  let backgroundColor;
+  let obj = index(pan[3]);
+  animatedRef = obj.useAnimatedRef();
   const tmp2 = callback(variant);
-  const tmp3 = importDefault(dependencyMap[7])("ContextMenuItem");
-  const pan = state.pan;
-  dependencyMap = pan;
-  const itemMeasurements = state.itemMeasurements;
-  React = itemMeasurements;
+  const tmp3 = animatedRef(pan[7])("ContextMenuItem");
+  pan = state.pan;
+  itemMeasurements = state.itemMeasurements;
   activeIndex = state.activeIndex;
-  let obj1 = arg1(dependencyMap[3]);
+  let obj1 = index(pan[3]);
   sharedValue = obj1.useSharedValue(0);
-  let obj2 = arg1(dependencyMap[3]);
+  let obj2 = index(pan[3]);
   class U {
     constructor() {
       return pan.get();
@@ -114,21 +114,20 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
       }
     }
   };
-  obj = { measure: arg1(dependencyMap[3]).measure, ref: animatedRef, index, INDEX_BOUNDS_OFFSET: arg1(dependencyMap[8]).INDEX_BOUNDS_OFFSET, itemMeasurements, INDEX_BOUNDS_PAGE_X_OFFSET: arg1(dependencyMap[8]).INDEX_BOUNDS_PAGE_X_OFFSET, INDEX_BOUNDS_PAGE_Y_OFFSET: arg1(dependencyMap[8]).INDEX_BOUNDS_PAGE_Y_OFFSET, INDEX_BOUNDS_WIDTH_OFFSET: arg1(dependencyMap[8]).INDEX_BOUNDS_WIDTH_OFFSET, INDEX_BOUNDS_HEIGHT_OFFSET: arg1(dependencyMap[8]).INDEX_BOUNDS_HEIGHT_OFFSET };
+  obj = { measure: index(pan[3]).measure, ref: animatedRef, index, INDEX_BOUNDS_OFFSET: index(pan[8]).INDEX_BOUNDS_OFFSET, itemMeasurements, INDEX_BOUNDS_PAGE_X_OFFSET: index(pan[8]).INDEX_BOUNDS_PAGE_X_OFFSET, INDEX_BOUNDS_PAGE_Y_OFFSET: index(pan[8]).INDEX_BOUNDS_PAGE_Y_OFFSET, INDEX_BOUNDS_WIDTH_OFFSET: index(pan[8]).INDEX_BOUNDS_WIDTH_OFFSET, INDEX_BOUNDS_HEIGHT_OFFSET: index(pan[8]).INDEX_BOUNDS_HEIGHT_OFFSET };
   fn.__closure = obj;
   fn.__workletHash = 9571959267234;
   fn.__initData = closure_9;
   const animatedReaction = obj2.useAnimatedReaction(U, fn);
-  const backgroundColor = tmp2.pressed.backgroundColor;
-  closure_6 = backgroundColor;
-  let obj4 = arg1(dependencyMap[3]);
+  backgroundColor = tmp2.pressed.backgroundColor;
+  let obj4 = index(pan[3]);
   class R {
     constructor() {
       tmp = activeIndex.get() === index;
       if (!tmp) {
-        tmp2 = closure_5;
+        tmp2 = c5;
         num = 1;
-        tmp = 1 === closure_5.get();
+        tmp = 1 === c5.get();
       }
       obj = {};
       obj2 = index(pan[9]);
@@ -140,7 +139,7 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
       return obj;
     }
   }
-  obj = { activeIndex, index, pressed: sharedValue, withSpring: arg1(dependencyMap[9]).withSpring, backgroundColor, SUBTLE_SPRING: arg1(dependencyMap[10]).SUBTLE_SPRING };
+  obj = { activeIndex, index, pressed: sharedValue, withSpring: index(pan[9]).withSpring, backgroundColor, SUBTLE_SPRING: index(pan[10]).SUBTLE_SPRING };
   R.__closure = obj;
   R.__workletHash = 624481847983;
   R.__initData = closure_10;
@@ -152,7 +151,7 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
     tmp7 = null;
     if (null != iconSource) {
       obj2 = { source: iconSource, style: tmp2.icon };
-      tmp7 = activeIndex(importDefault(dependencyMap[11]), obj2);
+      tmp7 = activeIndex(animatedRef(pan[11]), obj2);
     }
   }
   let tmp12 = null;
@@ -162,7 +161,7 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   }
   const items = [index, itemMeasurements];
   const items1 = [activeIndex, index];
-  const callback = React.useCallback((nativeEvent) => {
+  callback = itemMeasurements.useCallback((nativeEvent) => {
     let height;
     let width;
     ({ height, width } = nativeEvent.nativeEvent.layout);
@@ -177,13 +176,13 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
     }
   }, items);
   const items2 = [activeIndex];
-  const callback1 = React.useCallback(() => {
+  const callback1 = itemMeasurements.useCallback(() => {
     const result = activeIndex.set(index);
   }, items1);
   obj4 = { ref: animatedRef };
   const items3 = [tmp2.container, , , , , ];
   let containerRefresh = tmp3;
-  const callback2 = React.useCallback(() => {
+  const callback2 = itemMeasurements.useCallback(() => {
     const result = activeIndex.set(-1);
   }, items2);
   if (tmp3) {
@@ -209,29 +208,29 @@ export const ContextMenuItem = function ContextMenuItem(accessibilityRole) {
   let tmp19 = tmp3;
   if (tmp3) {
     const obj5 = { children: tmp7 };
-    tmp19 = activeIndex(importDefault(dependencyMap[3]).View, obj5);
+    tmp19 = activeIndex(animatedRef(pan[3]).View, obj5);
   }
   const items4 = [tmp19, , , ];
-  const obj6 = { hasMask: true, masksProperties: "/assets/images/native/icons", style: tmp2.label };
+  const obj6 = { animated: true, variant: "text-md/medium", style: tmp2.label };
   let str4 = "text-strong";
   if ("destructive" === variant) {
     str4 = "text-feedback-critical";
   }
   obj6.color = str4;
   obj6.children = label;
-  items4[1] = activeIndex(arg1(dependencyMap[12]).Text, obj6);
+  items4[1] = activeIndex(index(pan[12]).Text, obj6);
   let tmp24 = !tmp3;
   if (tmp24) {
     const obj7 = { children: tmp7 };
-    tmp24 = activeIndex(importDefault(dependencyMap[3]).View, obj7);
+    tmp24 = activeIndex(animatedRef(pan[3]).View, obj7);
   }
   items4[2] = tmp24;
   let tmp28 = null != tmp12;
   if (tmp28) {
     const obj8 = { style: tmp2.trailingIndicator, children: tmp12 };
-    tmp28 = activeIndex(importDefault(dependencyMap[3]).View, obj8);
+    tmp28 = activeIndex(animatedRef(pan[3]).View, obj8);
   }
   items4[3] = tmp28;
   obj4.children = items4;
-  return sharedValue(closure_6, obj4);
+  return sharedValue(backgroundColor, obj4);
 };

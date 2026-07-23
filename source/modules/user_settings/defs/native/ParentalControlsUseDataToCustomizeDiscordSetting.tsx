@@ -1,23 +1,25 @@
-// Module ID: 14449
-// Function ID: 108906
+// Module ID: 14563
+// Function ID: 111059
 // Name: toggle
-// Dependencies: []
+// Dependencies: [6769, 7662, 653, 13727, 6771, 10095, 1212, 2]
 
-// Module 14449 (toggle)
-let closure_3 = importDefault(dependencyMap[0]);
-const Consents = arg1(dependencyMap[2]).Consents;
-let obj = arg1(dependencyMap[5]);
-obj = {
+// Module 14563 (toggle)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Consents } from "ME";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t.MNKzyg);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.MNKzyg);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToCustomizeDiscordSettingValue() {
-    return arg1(dependencyMap[3]).useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented;
+    return require(13727) /* useParentalControlledExplicitContentSettings */.useParentalControlledConsent(Consents.PERSONALIZATION).hasConsented;
   },
   onValueChange: function handlePersonalizationChange(arg0) {
-    const selectedTeenId = selectedTeenId.getSelectedTeenId();
+    selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
       if (arg0) {
         const items = [Consents.PERSONALIZATION];
@@ -30,12 +32,12 @@ obj = {
       } else {
         items2 = [Consents.PERSONALIZATION];
       }
-      importDefault(dependencyMap[4]).updateTeenConsents(selectedTeenId, items1, items2);
-      const obj = importDefault(dependencyMap[4]);
+      importDefault(6771).updateTeenConsents(selectedTeenId, items1, items2);
+      const obj = importDefault(6771);
     }
   }
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToCustomizeDiscordSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToCustomizeDiscordSetting.tsx");
 
-export default toggle;
+export default createToggle;

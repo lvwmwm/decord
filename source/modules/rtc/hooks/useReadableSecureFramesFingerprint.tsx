@@ -1,20 +1,19 @@
-// Module ID: 8897
-// Function ID: 70239
+// Module ID: 8904
+// Function ID: 70280
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: []
+// Dependencies: [31, 206, 8882, 2]
 // Exports: useReadableSecureFramesFingerprint
 
-// Module 8897 (useReadableSecureFramesFingerprint)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/rtc/hooks/useReadableSecureFramesFingerprint.tsx");
+// Module 8904 (useReadableSecureFramesFingerprint)
+import result from "result";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/rtc/hooks/useReadableSecureFramesFingerprint.tsx");
 
 export const useReadableSecureFramesFingerprint = function useReadableSecureFramesFingerprint(fingerprintBase64) {
   fingerprintBase64 = fingerprintBase64.fingerprintBase64;
-  const arg1 = fingerprintBase64;
   const chunkSize = fingerprintBase64.chunkSize;
-  const importDefault = chunkSize;
   const desiredLength = fingerprintBase64.desiredLength;
-  const dependencyMap = desiredLength;
   const items = [chunkSize, fingerprintBase64, desiredLength];
   const memo = React.useMemo(() => {
     if (null != fingerprintBase64) {

@@ -1,73 +1,92 @@
-// Module ID: 11162
-// Function ID: 86801
+// Module ID: 11172
+// Function ID: 86851
 // Name: Placeholder
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1347, 11173, 653, 33, 4130, 689, 7919, 1327, 5470, 1324, 11174, 10884, 566, 8182, 4324, 3991, 4131, 1212, 8524, 11175, 11171, 1881, 8372, 11176, 4126, 9302, 8525, 4660, 11177, 6755, 5085, 11180, 2]
 // Exports: default
 
-// Module 11162 (Placeholder)
+// Module 11172 (Placeholder)
+import _slicedToArray from "_slicedToArray";
+import getStaffReleasePhase from "getStaffReleasePhase";
+import get_ActivityIndicator from "Text";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FrecencySectionSelection } from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import jsxProd from "preload";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_5;
+let closure_6;
+const require = arg1;
 function Placeholder() {
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[12]);
+  const tmp2 = _createForOfIteratorHelperLoose();
+  let obj = require(11174) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(20, 90);
-  let obj1 = arg1(dependencyMap[12]);
-  obj = { style: tmp.commandContainer };
-  obj = { style: tmp.loadingCommandIcon };
+  let obj1 = require(11174) /* usePlaceholderWidth */;
+  obj = {};
+  const items = [tmp2.commandContainer, ];
+  let rowShadow = !importDefault(1324)("AppLauncherRecents-native");
   const placeholderWidth1 = obj1.usePlaceholderWidth(20, 70);
-  const items = [callback2(closure_5, obj), ];
+  if (rowShadow) {
+    rowShadow = tmp2.rowShadow;
+  }
+  items[1] = rowShadow;
+  obj.style = items;
+  obj = { style: tmp2.loadingCommandIcon };
+  const items1 = [callback2(closure_5, obj), ];
   obj1 = {};
-  const items1 = [tmp.loadingTextPlaceholder, { width: placeholderWidth }];
-  const items2 = [callback2(closure_5, { style: items1 }), ];
-  const items3 = [tmp.loadingTextPlaceholderSmall, { width: placeholderWidth1 }];
-  items2[1] = callback2(closure_5, { style: items3 });
-  obj1.children = items2;
-  items[1] = callback3(closure_5, obj1);
-  obj.children = items;
+  const items2 = [tmp2.loadingTextPlaceholder, { width: placeholderWidth }];
+  const items3 = [callback2(closure_5, { style: items2 }), ];
+  const items4 = [tmp2.loadingTextPlaceholderSmall, { width: placeholderWidth1 }];
+  items3[1] = callback2(closure_5, { style: items4 });
+  obj1.children = items3;
+  items1[1] = callback3(closure_5, obj1);
+  obj.children = items1;
   return callback3(closure_5, obj);
 }
 function FrecentActivityOneClickCTA(context) {
   let entrypoint;
   let onActivityItemSelected;
   context = context.context;
-  const arg1 = context;
   const app = context.app;
-  const importDefault = app;
-  let dependencyMap;
-  let obj = arg1(dependencyMap[13]);
+  let handleActivityItemSelected;
+  let obj = context(handleActivityItemSelected[14]);
   const appLauncherContext = obj.useAppLauncherContext();
   ({ entrypoint, onActivityItemSelected } = appLauncherContext);
-  const id = React.useId();
-  let obj1 = arg1(dependencyMap[14]);
-  const items = [closure_7];
+  let id = React.useId();
+  let obj1 = context(handleActivityItemSelected[15]);
+  let items = [closure_7];
   const tmp3 = callback(obj1.useStateFromStoresArray(items, () => {
-    const items = [closure_7.isLaunchingActivity(), ];
+    const items = [outer1_7.isLaunchingActivity(), ];
     let id;
     if ("channel" === context.type) {
       id = context.channel.id;
     }
-    items[1] = closure_7.getLaunchState(app.applicationId, id);
+    items[1] = outer1_7.getLaunchState(app.applicationId, id);
     return items;
   }), 2);
   let first = tmp3[0];
   obj = { context, applicationId: app.applicationId };
   let isLaunching = null != tmp5;
-  const activityAction = arg1(dependencyMap[30]).useActivityAction(obj);
+  const activityAction = context(handleActivityItemSelected[31]).useActivityAction(obj);
   if (isLaunching) {
     isLaunching = tmp5.isLaunching;
   }
   if (isLaunching) {
     isLaunching = tmp5.componentId === id;
   }
-  const obj3 = arg1(dependencyMap[30]);
-  obj = { applicationId: app.applicationId, context, sectionName: arg1(dependencyMap[15]).AppLauncherSectionName.RECENT_APPS, onActivityItemSelected, location: arg1(dependencyMap[31]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, entrypoint, launchingComponentId: id, fetchesApplication: false };
-  const handleActivityItemSelected = arg1(dependencyMap[22]).useHandleActivityItemSelected(obj).handleActivityItemSelected;
-  dependencyMap = handleActivityItemSelected;
+  const obj3 = context(handleActivityItemSelected[31]);
+  obj = { applicationId: app.applicationId, context, sectionName: context(handleActivityItemSelected[16]).AppLauncherSectionName.RECENT_APPS, onActivityItemSelected, location: context(handleActivityItemSelected[32]).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME, entrypoint, launchingComponentId: id, fetchesApplication: false };
+  handleActivityItemSelected = context(handleActivityItemSelected[23]).useHandleActivityItemSelected(obj).handleActivityItemSelected;
   const items1 = [handleActivityItemSelected];
   obj1 = { app };
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     handleActivityItemSelected();
   }, items1);
   if (!first) {
-    first = activityAction === arg1(dependencyMap[30]).ActivityAction.LEAVE;
+    first = activityAction === context(handleActivityItemSelected[31]).ActivityAction.LEAVE;
   }
   obj1.disabled = first;
   obj1.submitting = isLaunching;
@@ -78,17 +97,16 @@ function FrecentApp(app) {
   let disabled;
   let submitting;
   app = app.app;
-  const arg1 = app;
   ({ disabled, submitting } = app);
   if (submitting === undefined) {
     submitting = false;
   }
-  const importDefault = app.onAppSelected;
-  const tmp = callback4();
+  const onAppSelected = app.onAppSelected;
+  let tmp = _createForOfIteratorHelperLoose();
   if (null == app.section) {
     return null;
   } else {
-    const appLauncherIconSource = arg1(dependencyMap[22]).getAppLauncherIconSource(app.section.application);
+    const appLauncherIconSource = app(11171).getAppLauncherIconSource(app.section.application);
     let obj = { style: disabled ? tmp.appContainerDisabled : tmp.appContainer, disabled, accessible: true };
     const application = app.section.application;
     let name;
@@ -103,104 +121,99 @@ function FrecentApp(app) {
         tmp = null != app.section.application;
       }
       if (tmp) {
-        const obj = { application: app.section.application, sectionName: app(closure_2[15]).AppLauncherSectionName.RECENT_APPS };
+        const obj = { application: app.section.application, sectionName: app(outer1_2[16]).AppLauncherSectionName.RECENT_APPS };
         onAppSelected(obj);
       }
     };
     let tmp3 = null != appLauncherIconSource;
     if (tmp3) {
       obj = { style: tmp.appIcon, source: appLauncherIconSource };
-      tmp3 = callback2(importDefault(dependencyMap[32]), obj);
+      tmp3 = callback2(onAppSelected(5085), obj);
     }
     const items = [tmp3, ];
     obj = { submitting, style: tmp.submittingOverlay };
-    items[1] = callback2(arg1(dependencyMap[33]).SubmittingOverlay, obj);
+    items[1] = callback2(app(11180).SubmittingOverlay, obj);
     obj.children = items;
-    return closure_12(arg1(dependencyMap[29]).PressableOpacity, obj, app.applicationId);
+    return closure_12(app(4660).PressableOpacity, obj, app.applicationId);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const FrecencySectionSelection = arg1(dependencyMap[4]).FrecencySectionSelection;
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { marginBottom: importDefault(dependencyMap[8]).space.PX_16 };
-obj.container = obj;
-obj.headerContainer = { "Null": "<string:3435973836>", "Null": "<string:1903247380>", "Null": "r" };
-const obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[8]).space.PX_4 };
-obj.header = obj1;
-obj.scrollView = { -1604222868: null, 1520073042: null };
-const tmp3 = arg1(dependencyMap[6]);
-obj.scrollViewContentContainer = { gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.contextMenuIcon = { hideWhenScrolling: null, autoCapitalize: null };
-const obj2 = { gap: importDefault(dependencyMap[8]).space.PX_8 };
-const merged = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_LOW);
-obj.appContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.lg };
-const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.lg };
-const merged1 = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_LOW);
-obj.appContainerDisabled = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.lg, opacity: 0.4 };
-const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.lg, opacity: 0.4 };
-const merged2 = Object.assign(importDefault(dependencyMap[8]).shadows.SHADOW_LOW);
-obj.commandContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md, paddingLeft: importDefault(dependencyMap[8]).space.PX_12, paddingRight: importDefault(dependencyMap[8]).space.PX_16, paddingVertical: importDefault(dependencyMap[8]).space.PX_12, flexDirection: "row", justifyContent: "center", alignItems: "center", gap: importDefault(dependencyMap[8]).space.PX_8 };
-const obj6 = { "Null": -8364231971842388000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 13343173839891460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, borderRadius: importDefault(dependencyMap[8]).radii.lg };
-obj.appIcon = obj6;
-const obj7 = { "Null": 0, "Null": -1048576, borderRadius: importDefault(dependencyMap[8]).radii.sm, backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE };
-obj.loadingCommandIcon = obj7;
-const obj5 = { backgroundColor: importDefault(dependencyMap[8]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[8]).radii.md, paddingLeft: importDefault(dependencyMap[8]).space.PX_12, paddingRight: importDefault(dependencyMap[8]).space.PX_16, paddingVertical: importDefault(dependencyMap[8]).space.PX_12, flexDirection: "row", justifyContent: "center", alignItems: "center", gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.loadingTextPlaceholder = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[8]).radii.lg, alignSelf: "flex-start", marginBottom: importDefault(dependencyMap[8]).space.PX_4 };
-const obj8 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[8]).radii.lg, alignSelf: "flex-start", marginBottom: importDefault(dependencyMap[8]).space.PX_4 };
-obj.loadingTextPlaceholderSmall = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[8]).radii.lg, alignSelf: "flex-start" };
-const obj9 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[8]).radii.lg, alignSelf: "flex-start" };
-obj.submittingOverlay = { borderRadius: importDefault(dependencyMap[8]).radii.lg };
-let closure_13 = obj.createStyles(obj);
-const obj11 = { APPS: 0, [0]: "APPS", COMMANDS: 1, [1]: "COMMANDS" };
+({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerContainer = { flexDirection: "row", justifyContent: "space-between", alignItems: "center" };
+let obj1 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.header = obj1;
+_createForOfIteratorHelperLoose.scrollView = { marginTop: 8, overflow: "visible" };
+_createForOfIteratorHelperLoose.scrollViewContentContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.contextMenuIcon = { height: 16, width: 16 };
+let obj2 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
+_createForOfIteratorHelperLoose.appContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+const merged1 = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
+_createForOfIteratorHelperLoose.appContainerDisabled = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, opacity: 0.4 };
+let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, opacity: 0.4 };
+_createForOfIteratorHelperLoose.commandContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "row", justifyContent: "center", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const merged2 = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
+_createForOfIteratorHelperLoose.rowShadow = {};
+let obj7 = { width: 60, height: 60, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose.appIcon = obj7;
+let obj8 = { width: 36, height: 36, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+_createForOfIteratorHelperLoose.loadingCommandIcon = obj8;
+let obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "row", justifyContent: "center", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj6 = {};
+_createForOfIteratorHelperLoose.loadingTextPlaceholder = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+const obj9 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.loadingTextPlaceholderSmall = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start" };
+const obj11 = { position: "absolute", top: 0, left: 0, width: 60, height: 60, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose.submittingOverlay = obj11;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj12 = { APPS: 0, [0]: "APPS", COMMANDS: 1, [1]: "COMMANDS" };
 let closure_15 = { code: "function FrecencySectionTsx1(){const{withTiming,isRecentsMenuOpen}=this.__closure;return{transform:[{rotate:withTiming(isRecentsMenuOpen?'-180deg':'0deg')}]};}" };
-const obj10 = { borderRadius: importDefault(dependencyMap[8]).radii.lg };
-const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySection.tsx");
+const obj10 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start" };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySection.tsx");
 
 export default function FrecencySection(loading) {
+  let closure_5;
+  let closure_6;
+  let closure_7;
   let commands;
-  ({ context: closure_0, sectionDescriptors: closure_1, commands } = loading);
-  const dependencyMap = commands;
+  let importDefault;
+  let require;
+  ({ context: require, sectionDescriptors: importDefault, commands } = loading);
   loading = loading.loading;
-  const callback = loading;
-  const apps = loading.apps;
-  const React = apps;
+  let apps = loading.apps;
   ({ onAppSelected: closure_5, onCommandSelected: closure_6, onViewAllSelected: closure_7 } = loading);
   let first1;
-  let closure_12;
-  let callback4;
-  let constants;
+  let _createForOfIteratorHelperLoose;
+  let obj12;
   let closure_15;
-  const tmp = callback4();
-  let closure_8 = tmp;
-  let obj = arg1(dependencyMap[13]);
-  const tmp2 = callback(React.useState(false), 2);
+  let COMMANDS;
+  let _isNativeReflectConstruct = importDefault(commands[12])("AppLauncherRecents-native");
+  let tmp = _createForOfIteratorHelperLoose();
+  const FrecencySectionSelection = tmp;
+  let obj = require(commands[14]);
+  const tmp2 = loading(apps.useState(false), 2);
   const first = tmp2[0];
-  const FrecencySectionSelection = first;
-  let closure_10 = tmp2[1];
-  let obj1 = arg1(dependencyMap[14]);
-  const items = [closure_8];
-  const stateFromStores = obj1.useStateFromStores(items, () => tmp.getSelection());
-  arg1(dependencyMap[14]);
+  const callback2 = tmp2[1];
+  let obj1 = require(commands[15]);
+  let items = [_isNativeReflectConstruct];
+  const stateFromStores = obj1.useStateFromStores(items, () => selection.getSelection());
+  require(commands[15]);
   [][0] = closure_7;
   if (commands.length > 0) {
     if (stateFromStores === FrecencySectionSelection.COMMANDS) {
-      let APPS = constants.COMMANDS;
+      let APPS = obj12.COMMANDS;
     }
-    const tmp12 = callback(tmp8(APPS), 2);
+    const tmp12 = loading(tmp8(APPS), 2);
     first1 = tmp12[0];
-    closure_12 = tmp12[1];
-    const tmp16 = obj.useAppLauncherContext().entrypoint === arg1(dependencyMap[15]).AppLauncherEntrypoint.VOICE;
-    callback4 = tmp16;
-    const items1 = [commands.length, apps.length, loading, first1];
-    const effect = React.useEffect(() => {
+    _createForOfIteratorHelperLoose = tmp12[1];
+    const tmp16 = obj.useAppLauncherContext().entrypoint === require(commands[16]).AppLauncherEntrypoint.VOICE;
+    obj12 = tmp16;
+    let items1 = [commands.length, apps.length, loading, first1];
+    const effect = apps.useEffect(() => {
       let tmp = loading;
       if (!loading) {
         let tmp3 = 0 === commands.length;
@@ -210,28 +223,28 @@ export default function FrecencySection(loading) {
         tmp = tmp3;
       }
       if (!tmp) {
-        let trackWithMetadataResult = callback(commands[16]);
+        let trackWithMetadataResult = outer1_0(commands[17]);
         trackWithMetadataResult = {};
-        if (first1 === constants.APPS) {
+        if (first1 === _undefined.APPS) {
           let length = apps.length;
         } else {
           length = commands.length;
         }
         trackWithMetadataResult.num = length;
-        if (first1 === constants.APPS) {
-          let RECENT_COMMANDS = callback(commands[15]).AppLauncherSectionName.RECENT_APPS;
+        if (first1 === _undefined.APPS) {
+          let RECENT_COMMANDS = outer1_0(commands[16]).AppLauncherSectionName.RECENT_APPS;
         } else {
-          RECENT_COMMANDS = callback(commands[15]).AppLauncherSectionName.RECENT_COMMANDS;
+          RECENT_COMMANDS = outer1_0(commands[16]).AppLauncherSectionName.RECENT_COMMANDS;
         }
         trackWithMetadataResult.section_name = RECENT_COMMANDS;
-        trackWithMetadataResult.location = callback(commands[15]).AppLauncherLocations.HOME;
-        trackWithMetadataResult = trackWithMetadataResult.trackWithMetadata(lib.APP_LAUNCHER_FRECENTS_SEEN, trackWithMetadataResult);
+        trackWithMetadataResult.location = outer1_0(commands[16]).AppLauncherLocations.HOME;
+        trackWithMetadataResult = trackWithMetadataResult.trackWithMetadata(first.APP_LAUNCHER_FRECENTS_SEEN, trackWithMetadataResult);
       }
     }, items1);
-    const items2 = [apps];
-    const memo = React.useMemo(() => apps.slice(0, 8), items2);
+    let items2 = [apps];
+    let memo = apps.useMemo(() => apps.slice(0, 8), items2);
     obj = { apps: memo, onlyActivityApps: tmp16 };
-    function useFetchFrecentActivityApps(apps) {
+    (function useFetchFrecentActivityApps(apps) {
       apps = apps.apps;
       const onlyActivityApps = apps.onlyActivityApps;
       const items = [apps, onlyActivityApps];
@@ -244,28 +257,28 @@ export default function FrecencySection(loading) {
               id = null;
               if (obj.isEmbeddedApp(section.section.application)) {
                 id = null;
-                if (closure_1) {
+                if (outer1_1) {
                   id = section.section.application.id;
                 }
               }
-              const obj = callback(closure_2[9]);
+              obj = outer3_0(commands[9]);
             }
             tmp = id;
           }
           return tmp;
         });
-        return mapped.filter(apps(closure_2[10]).isNotNullish);
+        return mapped.filter(outer2_0(commands[10]).isNotNullish);
       }, items);
-      onlyActivityApps(commands[11])(memo);
-    }(obj);
-    let obj3 = arg1(dependencyMap[17]);
+      outer1_1(commands[11])(memo);
+    })(obj);
+    let obj3 = require(commands[18]);
     class V {
       constructor() {
         obj = {};
         obj = {};
-        obj3 = context(commands[18]);
+        obj3 = context(commands[19]);
         str = "0deg";
-        if (closure_9) {
+        if (closure_10) {
           str = "-180deg";
         }
         obj.rotate = obj3.withTiming(str);
@@ -275,52 +288,53 @@ export default function FrecencySection(loading) {
         return obj;
       }
     }
-    obj = { withTiming: arg1(dependencyMap[18]).withTiming, isRecentsMenuOpen: first };
+    obj = { withTiming: require(commands[19]).withTiming, isRecentsMenuOpen: first };
     V.__closure = obj;
     V.__workletHash = 4528534448308;
     V.__initData = closure_15;
-    constants = obj3.useAnimatedStyle(V);
+    closure_15 = obj3.useAnimatedStyle(V);
     if (0 === commands.length) {
       if (0 === apps.length) {
         return null;
       }
     }
     obj1 = {};
-    const intl = arg1(dependencyMap[19]).intl;
-    obj1.label = intl.string(arg1(dependencyMap[19]).t.XRBNsN);
+    let intl = require(commands[20]).intl;
+    obj1.label = intl.string(require(commands[20]).t.XRBNsN);
     let prop;
-    if (first1 === constants.COMMANDS) {
-      prop = arg1(dependencyMap[20]).CheckmarkSmallBoldIcon;
+    if (first1 === obj12.COMMANDS) {
+      prop = require(commands[21]).CheckmarkSmallBoldIcon;
     }
     obj1.IconComponent = prop;
     obj1.action = function action() {
-      callback3(constants.COMMANDS);
-      let obj = callback(commands[21]);
-      const result = obj.setFrecencySectionSelection(first.COMMANDS);
-      obj = { num: commands.length, section_name: callback(commands[15]).AppLauncherSectionName.RECENT_COMMANDS };
-      callback(commands[16]).trackWithMetadata(lib.APP_LAUNCHER_FRECENTS_TOGGLED, obj);
+      let obj = outer1_0(commands[22]);
+      const result = obj.setFrecencySectionSelection(callback3(_undefined.COMMANDS).COMMANDS);
+      const tmp = callback3(_undefined.COMMANDS);
+      obj = { num: commands.length, section_name: outer1_0(commands[16]).AppLauncherSectionName.RECENT_COMMANDS };
+      outer1_0(commands[17]).trackWithMetadata(first.APP_LAUNCHER_FRECENTS_TOGGLED, obj);
     };
     const items3 = [obj1, ];
-    const obj2 = {};
-    const intl2 = arg1(dependencyMap[19]).intl;
-    obj2.label = intl2.string(arg1(dependencyMap[19]).t.TCAk0p);
+    let obj2 = {};
+    const intl2 = require(commands[20]).intl;
+    obj2.label = intl2.string(require(commands[20]).t.TCAk0p);
     let prop1;
-    if (first1 === constants.APPS) {
-      prop1 = arg1(dependencyMap[20]).CheckmarkSmallBoldIcon;
+    if (first1 === obj12.APPS) {
+      prop1 = require(commands[21]).CheckmarkSmallBoldIcon;
     }
     obj2.IconComponent = prop1;
     obj2.action = function action() {
-      callback3(constants.APPS);
-      let obj = callback(commands[21]);
-      const result = obj.setFrecencySectionSelection(first.APPS);
-      obj = { num: apps.length, section_name: callback(commands[15]).AppLauncherSectionName.RECENT_APPS };
-      callback(commands[16]).trackWithMetadata(lib.APP_LAUNCHER_FRECENTS_TOGGLED, obj);
+      let obj = outer1_0(commands[22]);
+      const result = obj.setFrecencySectionSelection(callback3(_undefined.APPS).APPS);
+      const tmp = callback3(_undefined.APPS);
+      obj = { num: apps.length, section_name: outer1_0(commands[16]).AppLauncherSectionName.RECENT_APPS };
+      outer1_0(commands[17]).trackWithMetadata(first.APP_LAUNCHER_FRECENTS_TOGGLED, obj);
     };
     items3[1] = obj2;
     const substr = commands.slice(0, 8);
-    const mapped = substr.map((type) => {
-      const found = found.find((id) => id.id === id.applicationId);
-      let obj = type(commands[22]);
+    let mapped = substr.map((type) => {
+      let closure_0 = type;
+      found = found.find((id) => id.id === type.applicationId);
+      let obj = outer1_0(commands[23]);
       let application;
       if (null != found) {
         application = found.application;
@@ -331,70 +345,77 @@ export default function FrecencySection(loading) {
       } else {
         let FAKE_BUILT_IN_APP = found.application;
         if (null == FAKE_BUILT_IN_APP) {
-          FAKE_BUILT_IN_APP = type(commands[9]).FAKE_BUILT_IN_APP;
+          FAKE_BUILT_IN_APP = outer1_0(commands[9]).FAKE_BUILT_IN_APP;
         }
-        const sectionName = type(commands[9]).getSectionName(FAKE_BUILT_IN_APP);
-        if (type.type === type(commands[23]).ApplicationCommandType.PRIMARY_ENTRY_POINT) {
-          let obj1 = type(commands[9]);
+        const sectionName = outer1_0(commands[9]).getSectionName(FAKE_BUILT_IN_APP);
+        if (type.type === outer1_0(commands[24]).ApplicationCommandType.PRIMARY_ENTRY_POINT) {
+          let obj1 = outer1_0(commands[9]);
           let displayName = obj1.formatPrimaryEntryPointCommandName(type.displayName);
         } else {
           displayName = type.displayName;
         }
-        obj = { style: tmp.commandContainer, accessible: true };
+        obj = {};
+        const items = [tmp.commandContainer, ];
+        let rowShadow = !_isNativeReflectConstruct;
+        if (rowShadow) {
+          rowShadow = tmp.rowShadow;
+        }
+        items[1] = rowShadow;
+        obj.style = items;
+        obj.accessible = true;
         const _HermesInternal = HermesInternal;
         obj.accessibilityLabel = "" + displayName + " " + sectionName;
         obj.accessibilityRole = "button";
         obj.onPress = function onPress() {
-          return callback(arg0, found);
+          return outer1_6(closure_0, found);
         };
-        let tmp16 = null != appLauncherIconSource;
-        if (tmp16) {
+        let tmp18 = null != appLauncherIconSource;
+        if (tmp18) {
           obj = { iconSize: 36, iconSource: appLauncherIconSource };
-          tmp16 = first1(found(commands[25]), obj);
+          tmp18 = callback2(outer1_1(commands[26]), obj);
         }
-        const items = [tmp16, ];
+        const items1 = [tmp18, ];
         obj1 = {};
-        const obj2 = { cachedAt: true, edpbxy: true, children: displayName };
-        const items1 = [first1(type(commands[26]).Text, obj2), ];
-        const obj3 = { cachedAt: true, edpbxy: "/assets/design/components/Icon/native/redesign/generated/images", children: sectionName };
-        items1[1] = first1(type(commands[26]).Text, obj3);
-        obj1.children = items1;
-        items[1] = callback3(closure_5, obj1);
-        obj.children = items;
-        return callback3(type(commands[24]).PressableScale, obj, type.id);
+        const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: displayName };
+        const items2 = [callback2(outer1_0(commands[27]).Text, obj2), ];
+        const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: sectionName };
+        items2[1] = callback2(outer1_0(commands[27]).Text, obj3);
+        obj1.children = items2;
+        items1[1] = first1(outer1_5, obj1);
+        obj.children = items1;
+        return first1(outer1_0(commands[25]).PressableScale, obj, type.id);
       }
     });
-    const found = mapped.filter(arg1(dependencyMap[10]).isNotNullish);
+    let found = mapped.filter(require(commands[10]).isNotNullish);
     const mapped1 = memo.map((section) => {
       let applicationId = section;
       if (null == section.section) {
         return null;
       } else {
         if (null != applicationId.section.application) {
-          let obj = callback(commands[9]);
-          obj = { context: callback, app: applicationId };
+          let obj = outer1_0(commands[9]);
+          obj = { context: closure_0, app: applicationId };
           applicationId = applicationId.applicationId;
-          let tmp7 = first1(closure_17, obj, applicationId);
+          let tmp7 = callback2(outer1_17, obj, applicationId);
         }
         obj = { app: applicationId, onAppSelected: closure_5 };
-        tmp7 = first1(closure_18, obj, applicationId.applicationId);
+        tmp7 = callback2(outer1_18, obj, applicationId.applicationId);
       }
     });
     const filter = mapped1.filter;
     if (0 === commands.length) {
       if (apps.length > 0) {
-        let COMMANDS = constants.APPS;
+        COMMANDS = obj12.APPS;
       }
-      closure_15 = COMMANDS;
       let mapped2 = tmp37;
-      if (COMMANDS === constants.COMMANDS) {
+      if (COMMANDS === obj12.COMMANDS) {
         mapped2 = found;
       }
       obj3 = { style: tmp.container };
       const obj4 = { style: tmp.headerContainer };
       const obj5 = {};
       let tmp49 = commands.length > 0;
-      const ContextMenu = arg1(dependencyMap[27]).ContextMenu;
+      const ContextMenu = require(commands[28]).ContextMenu;
       if (tmp49) {
         tmp49 = apps.length > 0;
       }
@@ -402,10 +423,10 @@ export default function FrecencySection(loading) {
       obj5.items = items3;
       obj5.triggerOnTap = true;
       obj5.onOpen = function onOpen() {
-        return lib(true);
+        return callback2(true);
       };
       obj5.onClose = function onClose() {
-        return lib(false);
+        return callback2(false);
       };
       obj5.children = function children(ref) {
         let obj = Object.create(null);
@@ -413,32 +434,32 @@ export default function FrecencySection(loading) {
         obj = { style: tmp.header };
         const merged = Object.assign(Object.assign(ref, obj));
         obj["ref"] = ref.ref;
-        obj = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
-        const intl = callback(commands[19]).intl;
-        obj.children = intl.string(callback(commands[19]).t.acSE0h);
-        const items = [first1(callback(commands[26]).Text, obj), ];
+        obj = { accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary" };
+        const intl = outer1_0(commands[20]).intl;
+        obj.children = intl.string(outer1_0(commands[20]).t.acSE0h);
+        const items = [callback2(outer1_0(commands[27]).Text, obj), ];
         let tmp5 = null;
         if (commands.length > 0) {
           tmp5 = null;
           if (apps.length > 0) {
-            const obj1 = { style: closure_14 };
+            const obj1 = { style: closure_15 };
             const obj2 = { color: "interactive-text-default", style: tmp.contextMenuIcon };
-            obj1.children = first1(callback(commands[28]).ChevronSmallDownIcon, obj2);
-            tmp5 = first1(callback2(commands[17]).View, obj1);
+            obj1.children = callback2(outer1_0(commands[29]).ChevronSmallDownIcon, obj2);
+            tmp5 = callback2(outer1_1(commands[18]).View, obj1);
           }
         }
         items[1] = tmp5;
         obj["children"] = items;
-        return closure_12(closure_5, obj);
+        return first1(outer1_5, obj);
       };
       const items4 = [, ];
       class V {
         constructor() {
           obj = {};
           obj = {};
-          obj3 = context(commands[18]);
+          obj3 = context(commands[19]);
           str = "0deg";
-          if (closure_9) {
+          if (closure_10) {
             str = "-180deg";
           }
           obj.rotate = obj3.withTiming(str);
@@ -449,43 +470,43 @@ export default function FrecencySection(loading) {
         }
       }
       const obj6 = {};
-      let tmp54 = COMMANDS === constants.APPS;
+      let tmp54 = COMMANDS === obj12.APPS;
       if (tmp54) {
         tmp54 = tmp6;
       }
       obj6.disabled = tmp54;
       obj6.onPress = function onPress() {
-        return launchingActivity(COMMANDS);
+        return callback(COMMANDS);
       };
       obj6.accessibilityRole = "button";
-      const obj7 = {};
-      const intl3 = arg1(dependencyMap[19]).intl;
-      obj7.children = intl3.string(arg1(dependencyMap[19]).t./qG8v7);
-      obj6.children = first1(arg1(dependencyMap[26]).Text, obj7);
-      items4[1] = first1(arg1(dependencyMap[29]).PressableOpacity, obj6);
+      const obj7 = { variant: "text-sm/medium", color: "text-brand" };
+      const intl3 = require(commands[20]).intl;
+      obj7.children = intl3.string(require(commands[20]).t["/qG8v7"]);
+      obj6.children = callback2(require(commands[27]).Text, obj7);
+      items4[1] = callback2(require(commands[30]).PressableOpacity, obj6);
       obj4.children = items4;
-      const items5 = [closure_12(closure_5, obj4), ];
+      const items5 = [first1(closure_5, obj4), ];
       const obj8 = {};
       ({ scrollView: obj13.style, scrollViewContentContainer: obj13.contentContainerStyle } = tmp);
       obj8.horizontal = true;
       obj8.showsHorizontalScrollIndicator = false;
       if (loading) {
-        const items6 = [-246073409197756000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000239323476373968, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048688816964709514, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026153235666674146, 21644209508003567000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
-        mapped2 = items6.map((arg0, arg1) => first1(closure_16, {}, arg1));
+        const items6 = [1, 2, 3, 4, 5];
+        mapped2 = items6.map((arg0, arg1) => callback2(COMMANDS, {}, arg1));
       }
       obj8.children = mapped2;
-      items5[1] = first1(closure_6, obj8);
+      items5[1] = callback2(closure_6, obj8);
       obj3.children = items5;
-      return closure_12(closure_5, obj3);
+      return first1(closure_5, obj3);
     }
     COMMANDS = first1;
     if (commands.length > 0) {
       COMMANDS = first1;
       if (0 === apps.length) {
-        COMMANDS = constants.COMMANDS;
+        COMMANDS = obj12.COMMANDS;
       }
     }
   }
-  APPS = constants.APPS;
+  APPS = obj12.APPS;
 };
-export const SectionItemType = obj11;
+export const SectionItemType = obj12;

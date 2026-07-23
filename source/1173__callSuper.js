@@ -1,10 +1,17 @@
 // Module ID: 1173
-// Function ID: 13345
+// Function ID: 13346
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 1174, 978, 794]
 // Exports: hideFeedbackButton, hideScreenshotButton, resetFeedbackButtonManager, resetFeedbackWidgetManager, resetScreenshotButtonManager, showFeedbackButton, showFeedbackWidget, showScreenshotButton
 
 // Module 1173 (_callSuper)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import isHermesEnabled from "isHermesEnabled";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback(arg1);
@@ -16,7 +23,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_2(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -27,22 +34,16 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 function NOOP_SET_VISIBILITY() {
 
 }
-const tmp2 = () => {
+const tmp2 = (() => {
   class FeedbackManager {
     constructor() {
-      tmp = closure_5(this, FeedbackManager);
+      tmp = outer1_5(this, FeedbackManager);
       return;
     }
   }
-  const arg1 = FeedbackManager;
   let obj = {
     key: "_feedbackComponentName",
     get() {
@@ -62,7 +63,7 @@ const tmp2 = () => {
     key: "reset",
     value: function reset() {
       this._isVisible = false;
-      this._setVisibility = closure_7;
+      this._setVisibility = outer1_7;
     }
   };
   items[2] = obj;
@@ -70,7 +71,7 @@ const tmp2 = () => {
     key: "show",
     value: function show() {
       const self = this;
-      if (this._setVisibility !== closure_7) {
+      if (this._setVisibility !== outer1_7) {
         self._isVisible = true;
         self._setVisibility(true);
       } else {
@@ -84,7 +85,7 @@ const tmp2 = () => {
     key: "hide",
     value: function hide() {
       const self = this;
-      if (this._setVisibility !== closure_7) {
+      if (this._setVisibility !== outer1_7) {
         self._isVisible = false;
         self._setVisibility(false);
       } else {
@@ -101,16 +102,15 @@ const tmp2 = () => {
     }
   };
   return callback3(FeedbackManager, null, items);
-}();
+})();
 tmp2._isVisible = false;
-const tmp3 = (arg0) => {
+const tmp3 = ((arg0) => {
   class FeedbackWidgetManager {
     constructor() {
-      tmp = closure_5(this, FeedbackWidgetManager);
-      return closure_11(this, FeedbackWidgetManager, arguments);
+      tmp = outer1_5(this, FeedbackWidgetManager);
+      return outer1_11(this, FeedbackWidgetManager, arguments);
     }
   }
-  const arg1 = FeedbackWidgetManager;
   callback2(FeedbackWidgetManager, arg0);
   const items = [
     {
@@ -121,15 +121,15 @@ const tmp3 = (arg0) => {
     }
   ];
   return callback3(FeedbackWidgetManager, null, items);
-}(tmp2);
-const tmp4 = (arg0) => {
+})(tmp2);
+let closure_8 = tmp3;
+const tmp4 = ((arg0) => {
   class FeedbackButtonManager {
     constructor() {
-      tmp = closure_5(this, FeedbackButtonManager);
-      return closure_11(this, FeedbackButtonManager, arguments);
+      tmp = outer1_5(this, FeedbackButtonManager);
+      return outer1_11(this, FeedbackButtonManager, arguments);
     }
   }
-  const arg1 = FeedbackButtonManager;
   callback2(FeedbackButtonManager, arg0);
   const items = [
     {
@@ -140,15 +140,15 @@ const tmp4 = (arg0) => {
     }
   ];
   return callback3(FeedbackButtonManager, null, items);
-}(tmp2);
-const tmp5 = (arg0) => {
+})(tmp2);
+let closure_9 = tmp4;
+const tmp5 = ((arg0) => {
   class ScreenshotButtonManager {
     constructor() {
-      tmp = closure_5(this, ScreenshotButtonManager);
-      return closure_11(this, ScreenshotButtonManager, arguments);
+      tmp = outer1_5(this, ScreenshotButtonManager);
+      return outer1_11(this, ScreenshotButtonManager, arguments);
     }
   }
-  const arg1 = ScreenshotButtonManager;
   callback2(ScreenshotButtonManager, arg0);
   const items = [
     {
@@ -159,7 +159,8 @@ const tmp5 = (arg0) => {
     }
   ];
   return callback3(ScreenshotButtonManager, null, items);
-}(tmp2);
+})(tmp2);
+let closure_10 = tmp5;
 
 export const PULL_DOWN_CLOSE_THRESHOLD = 200;
 export const SLIDE_ANIMATION_DURATION = 200;
@@ -168,24 +169,24 @@ export const FeedbackWidgetManager = tmp3;
 export const FeedbackButtonManager = tmp4;
 export const ScreenshotButtonManager = tmp5;
 export const showFeedbackButton = function showFeedbackButton() {
-  const result = arg1(dependencyMap[5]).lazyLoadAutoInjectFeedbackButtonIntegration();
+  const result = require(1174) /* lazyLoadFeedbackIntegration */.lazyLoadAutoInjectFeedbackButtonIntegration();
   tmp4.show();
 };
 export const hideFeedbackButton = function hideFeedbackButton() {
   tmp4.hide();
 };
 export const showFeedbackWidget = function showFeedbackWidget() {
-  const result = arg1(dependencyMap[5]).lazyLoadAutoInjectFeedbackIntegration();
+  const result = require(1174) /* lazyLoadFeedbackIntegration */.lazyLoadAutoInjectFeedbackIntegration();
   tmp3.show();
 };
 export const showScreenshotButton = function showScreenshotButton() {
   if (obj.isWeb()) {
-    const debug = tmp(tmp2[7]).debug;
+    const debug = tmp(794).debug;
     debug.warn("ScreenshotButton is not supported on Web.");
   } else {
-    const result = tmp(tmp2[5]).lazyLoadAutoInjectScreenshotButtonIntegration();
+    const result = tmp(1174).lazyLoadAutoInjectScreenshotButtonIntegration();
     tmp5.show();
-    const tmpResult = tmp(tmp2[5]);
+    const tmpResult = tmp(1174);
   }
 };
 export const hideScreenshotButton = function hideScreenshotButton() {

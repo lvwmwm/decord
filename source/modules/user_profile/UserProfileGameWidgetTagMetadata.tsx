@@ -1,124 +1,123 @@
-// Module ID: 11977
-// Function ID: 92614
+// Module ID: 11989
+// Function ID: 92668
 // Name: WidgetGameTagIconRole
-// Dependencies: []
+// Dependencies: [6864, 1212, 2]
 // Exports: buildWidgetGameTagMetadata
 
-// Module 11977 (WidgetGameTagIconRole)
+// Module 11989 (WidgetGameTagIconRole)
 let obj = { RIBBON: "ribbon", THUMBS_UP: "thumbsUp", THUMBS_DOWN: "thumbsDown", FRIENDS: "friends" };
 obj = {
   getText() {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.jbIRBE);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.jbIRBE);
   },
   iconRole: obj.RIBBON
 };
 obj = {
   getText() {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.xcFFv6);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.xcFFv6);
   },
   iconRole: obj.RIBBON
 };
 let closure_2 = {
-  [require(dependencyMap[0]).WidgetGameTag.BETTER_THAN_YOU]: obj,
-  [require(dependencyMap[0]).WidgetGameTag.CASUAL]: obj,
-  [require(dependencyMap[0]).WidgetGameTag.INTERMEDIATE]: {
+  [require(6864).WidgetGameTag.BETTER_THAN_YOU]: obj,
+  [require(6864).WidgetGameTag.CASUAL]: obj,
+  [require(6864).WidgetGameTag.INTERMEDIATE]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.A/mIs/);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t["A/mIs/"]);
     },
     iconRole: obj.RIBBON
   },
-  [require(dependencyMap[0]).WidgetGameTag.EXPERT]: {
+  [require(6864).WidgetGameTag.EXPERT]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.RIOFc2);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.RIOFc2);
     },
     iconRole: obj.RIBBON
   },
-  [require(dependencyMap[0]).WidgetGameTag.OBSESSED]: {
+  [require(6864).WidgetGameTag.OBSESSED]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.isPJDu);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.isPJDu);
     },
     iconRole: obj.THUMBS_UP
   },
-  [require(dependencyMap[0]).WidgetGameTag.LOVE_IT]: {
+  [require(6864).WidgetGameTag.LOVE_IT]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.1rN7BF);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t["1rN7BF"]);
     },
     iconRole: obj.THUMBS_UP
   },
-  [require(dependencyMap[0]).WidgetGameTag.KIND_OF_LOVE_IT]: {
+  [require(6864).WidgetGameTag.KIND_OF_LOVE_IT]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.bCBpVg);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.bCBpVg);
     },
     iconRole: obj.THUMBS_UP
   },
-  [require(dependencyMap[0]).WidgetGameTag.KIND_OF_HATE_IT]: {
+  [require(6864).WidgetGameTag.KIND_OF_HATE_IT]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t./WcmcP);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t["/WcmcP"]);
     },
     iconRole: obj.THUMBS_DOWN
   },
-  [require(dependencyMap[0]).WidgetGameTag.RAGE_QUITTING]: {
+  [require(6864).WidgetGameTag.RAGE_QUITTING]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.NXZ/MZ);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t["NXZ/MZ"]);
     },
     iconRole: obj.THUMBS_DOWN
   },
-  [require(dependencyMap[0]).WidgetGameTag.OPEN_TO_PLAY]: {
+  [require(6864).WidgetGameTag.OPEN_TO_PLAY]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.q30PoH);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.q30PoH);
     },
     iconRole: obj.FRIENDS
   },
-  [require(dependencyMap[0]).WidgetGameTag.LOOKING_FOR_GROUP]: {
+  [require(6864).WidgetGameTag.LOOKING_FOR_GROUP]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.DWWAAQ);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.DWWAAQ);
     },
     iconRole: obj.FRIENDS
   },
-  [require(dependencyMap[0]).WidgetGameTag.LOOKING_FOR_TIPS]: {
+  [require(6864).WidgetGameTag.LOOKING_FOR_TIPS]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.KQDVvH);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.KQDVvH);
     },
     iconRole: obj.FRIENDS
   },
-  [require(dependencyMap[0]).WidgetGameTag.OPEN_TO_TEACH]: {
+  [require(6864).WidgetGameTag.OPEN_TO_TEACH]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.5HhQo+);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t["5HhQo+"]);
     },
     iconRole: obj.FRIENDS
   },
-  [require(dependencyMap[0]).WidgetGameTag.LOOKING_TO_DISCUSS]: {
+  [require(6864).WidgetGameTag.LOOKING_TO_DISCUSS]: {
     getText() {
-      const intl = require(dependencyMap[1]).intl;
-      return intl.string(require(dependencyMap[1]).t.GipOCq);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.GipOCq);
     },
     iconRole: obj.FRIENDS
   }
 };
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/user_profile/UserProfileGameWidgetTagMetadata.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/UserProfileGameWidgetTagMetadata.tsx");
 
 export const WidgetGameTagIconRole = obj;
 export const buildWidgetGameTagMetadata = function buildWidgetGameTagMetadata(arg0) {
   let obj = {};
-  const keys = Object.keys(closure_2);
+  const keys = Object.keys(table);
   for (let num = 0; num < keys.length; num = num + 1) {
     let tmp = keys[num];
-    let tmp2 = closure_2;
-    let tmp3 = closure_2[tmp];
+    let tmp2 = table;
+    let tmp3 = table[tmp];
     if (null != tmp3) {
       obj = { getText: tmp3.getText, icon: arg0[tmp3.iconRole] };
       obj[tmp] = obj;

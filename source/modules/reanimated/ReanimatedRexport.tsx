@@ -1,20 +1,21 @@
-// Module ID: 3989
-// Function ID: 33115
-// Dependencies: []
+// Module ID: 3991
+// Function ID: 33120
+// Dependencies: [478, 1582, 3992, 2]
 
-// Module 3989
-const _module = require(dependencyMap[0]);
-if (_module.isAndroid()) {
+// Module 3991
+import isWindows from "isWindows";
+
+if (isWindows.isAndroid()) {
   const _Object = Object;
-  const obj = { View: importDefault(dependencyMap[2]) };
-  const merged = Object.assign(importDefault(dependencyMap[1]), obj);
-  const importDefaultResult = importDefault(dependencyMap[1]);
+  const obj = { View: require("View") };
+  const merged = Object.assign(require("cancelAnimation"), obj);
+  const importDefaultResult = require("cancelAnimation");
 }
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/reanimated/ReanimatedRexport.tsx");
-for (const key10039 in arg1(arg6[1])) {
+const result = require("View").fileFinishedImporting("modules/reanimated/ReanimatedRexport.tsx");
+for (const key10039 in require("cancelAnimation")) {
   let tmp5 = key10039;
-  arg5[key10039] = arg1(arg6[1])[key10039];
+  arg5[key10039] = require("cancelAnimation")[key10039];
+  continue;
 }
 
-export default importDefault(dependencyMap[1]);
+export { default } from "cancelAnimation";

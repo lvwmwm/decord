@@ -1,14 +1,16 @@
 // Module ID: 1450
-// Function ID: 16931
+// Function ID: 16932
 // Name: useWindowDimensions
-// Dependencies: []
+// Dependencies: [31, 1451, 1453, 2]
 // Exports: default, getWindowDimensions
 
 // Module 1450 (useWindowDimensions)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let closure_4 = { ignoreKeyboard: false };
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/screen/useWindowDimensions.native.tsx");
+const result = require("context").fileFinishedImporting("modules/screen/useWindowDimensions.native.tsx");
 
 export default function useWindowDimensions() {
   let tmp = arg0;
@@ -19,17 +21,21 @@ export default function useWindowDimensions() {
   if (flag === undefined) {
     flag = false;
   }
-  const arg1 = flag;
   let appEntryKey = tmp.appEntryKey;
-  let dependencyMap;
-  appEntryKey = arg1(dependencyMap[2]).useAppEntryKey();
-  dependencyMap = appEntryKey;
+  appEntryKey = undefined;
+  appEntryKey = flag(appEntryKey[2]).useAppEntryKey();
   const items = [flag, appEntryKey];
   return state(React.useMemo(() => {
     if (flag) {
-      let tmp2 = (appEntryKey) => (arg0) => arg0.byAppEntry[closure_0].windowDimensionsIgnoringKeyboard(appEntryKey);
+      let tmp2 = ((appEntryKey) => {
+        let closure_0 = appEntryKey;
+        return (arg0) => arg0.byAppEntry[closure_0].windowDimensionsIgnoringKeyboard;
+      })(appEntryKey);
     } else {
-      tmp2 = (appEntryKey) => (arg0) => arg0.byAppEntry[closure_0].windowDimensions(appEntryKey);
+      tmp2 = ((appEntryKey) => {
+        let closure_0 = appEntryKey;
+        return (arg0) => arg0.byAppEntry[closure_0].windowDimensions;
+      })(appEntryKey);
     }
     return tmp2;
   }, items));

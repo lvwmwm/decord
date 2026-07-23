@@ -1,16 +1,21 @@
-// Module ID: 16288
-// Function ID: 125729
+// Module ID: 16405
+// Function ID: 127903
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: []
+// Dependencies: [31, 1391, 1849, 653, 5642, 624, 16406, 16407, 16408, 5634, 1212, 1920, 16409, 2]
 // Exports: default
 
-// Module 16288 (useOnboardingMonetizationEnableFlow)
-let closure_3 = importAll(dependencyMap[0]);
-const isGuildOwner = arg1(dependencyMap[1]).isGuildOwner;
-let closure_5 = importDefault(dependencyMap[2]);
-({ GuildFeatures: closure_6, HelpdeskArticles: closure_7, MarketingURLs: closure_8 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx");
+// Module 16405 (useOnboardingMonetizationEnableFlow)
+import result from "result";
+import { isGuildOwner } from "isGuildOwner";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ GuildFeatures: closure_6, HelpdeskArticles: closure_7, MarketingURLs: closure_8 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx");
 
 export default function useOnboardingMonetizationEnableFlow(features) {
   let createEnableRequest;
@@ -20,8 +25,8 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   let loading;
   let loading2;
   let requestCooldownDuration;
-  const arg1 = features;
-  let obj = arg1(dependencyMap[4]);
+  const _require = features;
+  let obj = _require(5642);
   const isExpeditedOnboardingGuild = obj.useIsExpeditedOnboardingGuild(features);
   if (null != features) {
     features = features.features;
@@ -31,12 +36,12 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     const features2 = features.features;
     const hasItem1 = features2.has(constants.CREATOR_MONETIZABLE);
   }
-  let obj1 = arg1(dependencyMap[5]);
-  const items = [closure_5];
+  let obj1 = _require(624);
+  const items = [_isNativeReflectConstruct];
   const stateFromStores = obj1.useStateFromStores(items, () => {
-    let tmp2 = null != arg0;
+    let tmp2 = null != closure_0;
     if (tmp2) {
-      tmp2 = callback(arg0, tmp);
+      tmp2 = outer1_4(closure_0, tmp);
     }
     return tmp2;
   });
@@ -44,21 +49,20 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (null != features) {
     id = features.id;
   }
-  const tmp7Result = importDefault(dependencyMap[6])(id);
+  const tmp7Result = refresh(16406)(id);
   const submittedRequest = tmp7Result.submittedRequest;
   ({ error, loading, createEnableRequest } = tmp7Result);
   let id1;
-  const tmp7 = importDefault(dependencyMap[6]);
+  const tmp7 = refresh(16406);
   if (null != features) {
     id1 = features.id;
   }
-  const tmp10Result = importDefault(dependencyMap[7])(id1);
-  const refresh = tmp10Result.refresh;
-  const importDefault = refresh;
+  const tmp10Result = refresh(16407)(id1);
+  refresh = tmp10Result.refresh;
   const eligibility = tmp10Result.eligibility;
   ({ loading: loading2, error: error2 } = tmp10Result);
-  const tmp10 = importDefault(dependencyMap[7]);
-  ({ isApplicationRejected, requestCooldownDuration } = importDefault(dependencyMap[8])(eligibility));
+  const tmp10 = refresh(16407);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(16408)(eligibility));
   let hasItem2;
   if (null != features) {
     const features3 = features.features;
@@ -73,7 +77,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     }
     tmp16 = true === hasItem3;
   }
-  let obj2 = arg1(dependencyMap[9]);
+  let obj2 = _require(5634);
   let id2;
   if (null != features) {
     id2 = features.id;
@@ -90,21 +94,21 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (null != eligibility) {
     canApply = eligibility.canApply;
   }
-  const intl = arg1(dependencyMap[10]).intl;
+  const intl = _require(1212).intl;
   obj = {};
-  const tmp13 = importDefault(dependencyMap[8])(eligibility);
-  obj.faqUrl = importDefault(dependencyMap[11]).getArticleURL(constants2.CREATOR_FAQ);
-  const obj5 = importDefault(dependencyMap[11]);
+  const tmp13 = refresh(16408)(eligibility);
+  obj.faqUrl = refresh(1920).getArticleURL(constants2.CREATOR_FAQ);
+  const obj5 = refresh(1920);
   if (isApplicationRejected) {
     if (obj2.useIsMonetizationReapplicationDisabled(id2).isMonetizationReapplicationDisabled) {
       if (true === hasItem) {
-        const intl4 = arg1(dependencyMap[10]).intl;
+        const intl4 = _require(1212).intl;
         obj = { communityGuidelineUrl: constants3.GUIDELINES };
-        let formatResult1 = intl4.format(arg1(dependencyMap[10]).t.0o1Q+t, obj);
+        let formatResult1 = intl4.format(_require(1212).t["0o1Q+t"], obj);
       } else {
-        const intl3 = arg1(dependencyMap[10]).intl;
+        const intl3 = _require(1212).intl;
         obj1 = { communityGuidelineUrl: constants3.GUIDELINES };
-        formatResult1 = intl3.format(arg1(dependencyMap[10]).t.b6h59n, obj1);
+        formatResult1 = intl3.format(_require(1212).t.b6h59n, obj1);
       }
     }
   }
@@ -114,10 +118,10 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   }
   let formatResult2;
   if (tmp25) {
-    const intl2 = arg1(dependencyMap[10]).intl;
-    obj2 = { requestCooldownDuration, creatorRevenuePolicyUrl: importDefault(dependencyMap[11]).getArticleURL(constants2.CREATOR_POLICY) };
-    formatResult2 = intl2.format(arg1(dependencyMap[10]).t.TvX207, obj2);
-    const obj7 = importDefault(dependencyMap[11]);
+    const intl2 = _require(1212).intl;
+    obj2 = { requestCooldownDuration, creatorRevenuePolicyUrl: refresh(1920).getArticleURL(constants2.CREATOR_POLICY) };
+    formatResult2 = intl2.format(_require(1212).t.TvX207, obj2);
+    const obj7 = refresh(1920);
   }
   let tmp39 = isExpeditedOnboardingGuild;
   if (isExpeditedOnboardingGuild) {
@@ -131,20 +135,20 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (isExpeditedOnboardingGuild) {
     tmp40 = false === hasItem;
   }
-  const formatResult = intl.format(arg1(dependencyMap[10]).t.aJUdOi, obj);
+  const formatResult = intl.format(_require(1212).t.aJUdOi, obj);
   let formatResult3;
-  const creatorMonetizationAcceptTermsCheckboxText = arg1(dependencyMap[12]).getCreatorMonetizationAcceptTermsCheckboxText();
+  const creatorMonetizationAcceptTermsCheckboxText = _require(16409).getCreatorMonetizationAcceptTermsCheckboxText();
   if (isApplicationRejected) {
     if (tmp23) {
       if (stateFromStores) {
-        const intl5 = arg1(dependencyMap[10]).intl;
-        formatResult3 = intl5.format(arg1(dependencyMap[10]).t.wbVIUB, {});
+        const intl5 = _require(1212).intl;
+        formatResult3 = intl5.format(_require(1212).t.wbVIUB, {});
       }
     }
   }
   const items1 = [refresh, tmp39];
   const effect = React.useEffect(() => {
-    if (tmp39) {
+    if (closure_2) {
       refresh();
     }
   }, items1);

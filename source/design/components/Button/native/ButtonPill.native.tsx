@@ -1,10 +1,25 @@
-// Module ID: 4548
-// Function ID: 39874
+// Module ID: 4552
+// Function ID: 39906
 // Name: PillWrapper
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4547, 4130, 689, 4548, 3842, 3834, 4553, 4554, 3991, 3976, 4558, 3849, 4542, 4546, 2]
 // Exports: ButtonPill
 
-// Module 4548 (PillWrapper)
+// Module 4552 (PillWrapper)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import getButtonPadding from "getButtonPadding";
+import getButtonPadding from "getButtonPadding";
+import getButtonPadding from "getButtonPadding";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function PillWrapper(expressivePressState) {
   let children;
   let expressiveRiveRef;
@@ -18,23 +33,23 @@ function PillWrapper(expressivePressState) {
   }
   expressivePressState = expressivePressState.expressivePressState;
   ({ expressiveRiveRef, size } = expressivePressState);
-  let obj = arg1(dependencyMap[7]);
+  let obj = require(4548) /* useProfileThemedButtonStyles */;
   const buttonPillStyles = obj.useButtonPillStyles(variant, expressivePressState.pressed);
-  let obj1 = arg1(dependencyMap[7]);
+  let obj1 = require(4548) /* useProfileThemedButtonStyles */;
   const gradientPillStyles = obj1.useGradientPillStyles(variant);
-  let obj2 = arg1(dependencyMap[8]);
+  let obj2 = require(3842) /* ManaContext */;
   const tmp3 = callback4(variant, size);
-  let obj3 = arg1(dependencyMap[9]);
-  let items = [obj3.useToken(importDefault(dependencyMap[6]).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
-  let obj4 = arg1(dependencyMap[9]);
-  items[1] = obj4.useToken(importDefault(dependencyMap[6]).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
-  let obj5 = arg1(dependencyMap[9]);
-  items[2] = obj5.useToken(importDefault(dependencyMap[6]).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
-  const items1 = [importDefault(dependencyMap[6]).unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, importDefault(dependencyMap[6]).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2, importDefault(dependencyMap[6]).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS];
+  let obj3 = require(3834) /* map */;
+  let items = [obj3.useToken(importDefault(689).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
+  let obj4 = require(3834) /* map */;
+  items[1] = obj4.useToken(importDefault(689).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
+  let obj5 = require(3834) /* map */;
+  items[2] = obj5.useToken(importDefault(689).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
+  const items1 = [importDefault(689).unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS, importDefault(689).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2, importDefault(689).unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS];
   let tmp4 = null;
   if (shiny) {
     obj = { variant };
-    tmp4 = callback2(arg1(dependencyMap[10]).ButtonShine, obj);
+    tmp4 = callback2(require(4553) /* useShineEffectStyles */.ButtonShine, obj);
   }
   if ("experimental_premium-primary" !== variant) {
     if ("experimental_premium-basic" !== variant) {
@@ -44,7 +59,7 @@ function PillWrapper(expressivePressState) {
         obj1 = {};
         const items2 = [closure_6.absoluteFill, tmp3.expressivePill];
         obj1.style = items2;
-        obj2 = { ref: expressiveRiveRef };
+        obj2 = { withReducedMotion: "short-loop", ref: expressiveRiveRef, fit: "layout" };
         let str = "Mobile Expressive Button Dark Mode";
         if (obj10.isThemeLight(obj2.useThemeContext().theme)) {
           str = "Mobile Expressive Button Lightmode";
@@ -53,9 +68,9 @@ function PillWrapper(expressivePressState) {
         obj3 = { buttonColor: tmp3.expressiveRiveFill.color, cornerRadius: tmp3.expressivePill.borderRadius };
         const merged = Object.assign(expressivePressState);
         obj2.dataBinding = obj3;
-        obj1.children = callback2(arg1(dependencyMap[8]).ExpressiveButtonRive, obj2);
+        obj1.children = callback2(require(3842) /* ManaContext */.ExpressiveButtonRive, obj2);
         tmp10Result = callback2(closure_5, obj1);
-        const obj10 = arg1(dependencyMap[13]);
+        obj10 = require(3976) /* AccessibilityAnnouncer */;
         const tmp10 = callback2;
         const tmp11 = closure_5;
         const tmp13 = callback2;
@@ -66,22 +81,22 @@ function PillWrapper(expressivePressState) {
       obj4.style = items4;
       const items5 = [children, tmp4];
       obj4.children = items5;
-      items3[1] = callback3(importDefault(dependencyMap[12]).View, obj4);
+      items3[1] = callback3(importDefault(3991).View, obj4);
       obj.children = items3;
     }
     return tmp8(tmp9, obj);
   }
   obj5 = {};
-  const obj6 = { start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 }, style: items6 };
-  const items6 = [style, gradientPillStyles, closure_6.absoluteFill];
+  const obj6 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, style: items6 };
+  items6 = [style, gradientPillStyles, closure_6.absoluteFill];
   if ("experimental_premium-basic" === variant) {
     items = items1;
   }
   obj6.colors = items;
-  const items7 = [callback2(importDefault(dependencyMap[11]), obj6), ];
+  const items7 = [callback2(importDefault(4554), obj6), ];
   const items8 = [style, buttonPillStyles];
   const items9 = [children, tmp4];
-  items7[1] = callback3(importDefault(dependencyMap[12]).View, { style: items8, children: items9 });
+  items7[1] = callback3(importDefault(3991).View, { style: items8, children: items9 });
   obj5.children = items7;
   obj = obj5;
 }
@@ -94,17 +109,17 @@ class BasicButtonPill {
     }
     DEFAULT_BUTTON_SIZE = global.size;
     if (DEFAULT_BUTTON_SIZE === undefined) {
-      tmp = arg1;
-      tmp2 = dependencyMap;
+      tmp = closure_0;
+      tmp2 = closure_2;
       num = 4;
-      DEFAULT_BUTTON_SIZE = arg1(dependencyMap[4]).DEFAULT_BUTTON_SIZE;
+      DEFAULT_BUTTON_SIZE = require("getButtonPadding").DEFAULT_BUTTON_SIZE;
     }
     flag = global.shiny;
     if (flag === undefined) {
       flag = false;
     }
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39883(str, DEFAULT_BUTTON_SIZE);
+    tmp3 = f39915(str, DEFAULT_BUTTON_SIZE);
     obj = {};
     obj.variant = str;
     obj.size = DEFAULT_BUTTON_SIZE;
@@ -130,28 +145,28 @@ class LoadingButtonPill {
     }
     DEFAULT_BUTTON_SIZE = global.size;
     if (DEFAULT_BUTTON_SIZE === undefined) {
-      tmp = closure_0;
-      tmp2 = closure_2;
+      tmp = c0;
+      tmp2 = c2;
       num = 4;
-      DEFAULT_BUTTON_SIZE = closure_0(closure_2[4]).DEFAULT_BUTTON_SIZE;
+      DEFAULT_BUTTON_SIZE = require("getButtonPadding").DEFAULT_BUTTON_SIZE;
     }
     flag = global.loading;
     if (flag === undefined) {
       flag = false;
     }
-    closure_0 = flag;
+    c0 = flag;
     loaderSize = global.loaderSize;
-    importDefault = undefined;
-    closure_2 = undefined;
+    useRef = undefined;
+    c2 = undefined;
     ({ expressiveRiveRef, expressivePressState } = global);
-    tmp3 = f39883(str, DEFAULT_BUTTON_SIZE);
-    importDefault = importAll.useRef(null);
-    tmp4 = closure_3(importAll.useState(flag), 2);
+    tmp3 = f39915(str, DEFAULT_BUTTON_SIZE);
+    useRef = result.useRef(null);
+    tmp4 = _slicedToArray(result.useState(flag), 2);
     first = tmp4[0];
-    closure_2 = tmp4[1];
+    c2 = tmp4[1];
     items = [];
     items[0] = flag;
-    effect = importAll.useEffect(() => {
+    effect = result.useEffect(() => {
       if (null != ref.current) {
         const _clearTimeout = clearTimeout;
         clearTimeout(ref.current);
@@ -161,11 +176,11 @@ class LoadingButtonPill {
       } else {
         const _setTimeout = setTimeout;
         ref.current = setTimeout(() => {
-          callback(false);
+          outer1_2(false);
         }, 500);
       }
     }, items);
-    tmp7 = closure_3(useLoadingStyles(flag, DEFAULT_BUTTON_SIZE), 2);
+    tmp7 = _slicedToArray(useLoadingStyles(flag, DEFAULT_BUTTON_SIZE), 2);
     obj = {};
     obj.variant = str;
     obj.size = DEFAULT_BUTTON_SIZE;
@@ -183,15 +198,15 @@ class LoadingButtonPill {
     items2[0] = tmp3.childContainer;
     items2[1] = tmp8;
     items3 = [, ];
-    items3[0] = jsx(importDefault(closure_2[12]).View, { style: items2, children });
+    items3[0] = jsx(require("module_3991").View, { style: items2, children });
     tmp12 = jsx;
     obj = { style: items4 };
     items4 = [, ];
     items4[0] = tmp3.ellipsis;
     items4[1] = tmp9;
     if (first) {
-      tmp14 = closure_0;
-      tmp15 = closure_2;
+      tmp14 = c0;
+      tmp15 = c2;
       num2 = 14;
       tmp13 = jsx;
       obj1 = {};
@@ -200,37 +215,35 @@ class LoadingButtonPill {
         DEFAULT_BUTTON_SIZE = loaderSize;
       }
       obj1.size = DEFAULT_BUTTON_SIZE;
-      first = tmp13(closure_0(closure_2[14]).Ellipsis, obj1);
+      first = tmp13(require("EllipsisCircle").Ellipsis, obj1);
     }
     obj.children = first;
-    items3[1] = tmp12(importDefault(closure_2[12]).View, obj);
+    items3[1] = tmp12(require("module_3991").View, obj);
     obj.children = items3;
     return tmp10(tmp11, obj);
   }
 }
 function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
-  DEFAULT_BUTTON_SIZE = flag;
-  const enabled = React.useContext(DEFAULT_BUTTON_SIZE(dependencyMap[15]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const importDefault = enabled;
-  let num = 12;
+  const _require = flag;
+  const enabled = React.useContext(_require(num[15]).AccessibilityPreferencesContext).reducedMotion.enabled;
+  num = 12;
   if ("lg" === DEFAULT_BUTTON_SIZE) {
     num = 18;
   }
-  const dependencyMap = num;
-  let obj = DEFAULT_BUTTON_SIZE(dependencyMap[12]);
+  let obj = _require(num[12]);
   const fn = function o() {
-    let obj = arg0(num[16]);
-    let num = 1;
-    if (arg0) {
+    let obj = callback(num[16]);
+    num = 1;
+    if (callback) {
       num = 0;
     }
-    const withSpringResult = obj.withSpring(num, arg0(num[17]).SUBTLE_SPRING, "animate-always");
+    const withSpringResult = obj.withSpring(num, callback(num[17]).SUBTLE_SPRING, "animate-always");
     obj = {};
     if (enabled) {
       let withDelayResult = withSpringResult;
-      if (!arg0) {
-        withDelayResult = arg0(num[12]).withDelay(closure_10, withSpringResult);
-        const obj5 = arg0(num[12]);
+      if (!callback) {
+        withDelayResult = callback(num[12]).withDelay(outer1_10, withSpringResult);
+        const obj5 = callback(num[12]);
       }
       obj.opacity = withDelayResult;
       obj = { translateY: 0 };
@@ -241,35 +254,35 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
       obj.opacity = withSpringResult;
       const obj1 = {};
       let num2 = 0;
-      if (arg0) {
+      if (callback) {
         num2 = -1 * num;
       }
-      obj1.translateY = arg0(num[16]).withSpring(num2, arg0(num[17]).SUBTLE_SPRING);
+      obj1.translateY = callback(num[16]).withSpring(num2, callback(num[17]).SUBTLE_SPRING);
       const items1 = [obj1];
       obj.transform = items1;
       tmp8 = obj;
-      const obj4 = arg0(num[16]);
+      const obj4 = callback(num[16]);
     }
     return tmp8;
   };
-  obj = { withSpring: DEFAULT_BUTTON_SIZE(dependencyMap[16]).withSpring, loading: flag, SUBTLE_SPRING: DEFAULT_BUTTON_SIZE(dependencyMap[17]).SUBTLE_SPRING, useReducedMotion: enabled, withDelay: DEFAULT_BUTTON_SIZE(dependencyMap[12]).withDelay, FADE_DELAY: closure_10, offsetY: num };
+  obj = { withSpring: _require(num[16]).withSpring, loading: flag, SUBTLE_SPRING: _require(num[17]).SUBTLE_SPRING, useReducedMotion: enabled, withDelay: _require(num[12]).withDelay, FADE_DELAY: c10, offsetY: num };
   fn.__closure = obj;
   fn.__workletHash = 9388603334085;
   fn.__initData = closure_15;
-  const items = [obj.useAnimatedStyle(fn), ];
+  let items = [obj.useAnimatedStyle(fn), ];
   const fn2 = function l() {
-    let obj = arg0(num[16]);
-    let num = 0;
-    if (arg0) {
+    let obj = callback(num[16]);
+    num = 0;
+    if (callback) {
       num = 1;
     }
-    const withSpringResult = obj.withSpring(num, arg0(num[17]).SUBTLE_SPRING, "animate-always");
+    const withSpringResult = obj.withSpring(num, callback(num[17]).SUBTLE_SPRING, "animate-always");
     obj = {};
     if (enabled) {
       let withDelayResult = withSpringResult;
-      if (arg0) {
-        withDelayResult = arg0(num[12]).withDelay(closure_10, withSpringResult);
-        const obj5 = arg0(num[12]);
+      if (callback) {
+        withDelayResult = callback(num[12]).withDelay(outer1_10, withSpringResult);
+        const obj5 = callback(num[12]);
       }
       obj.opacity = withDelayResult;
       obj = { translateY: 0 };
@@ -280,67 +293,59 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
       obj.opacity = withSpringResult;
       const obj1 = {};
       let num2 = 0;
-      if (!arg0) {
+      if (!callback) {
         num2 = num;
       }
-      obj1.translateY = arg0(num[16]).withSpring(num2, arg0(num[17]).SUBTLE_SPRING);
+      obj1.translateY = callback(num[16]).withSpring(num2, callback(num[17]).SUBTLE_SPRING);
       const items1 = [obj1];
       obj.transform = items1;
       tmp7 = obj;
-      const obj4 = arg0(num[16]);
+      const obj4 = callback(num[16]);
     }
     return tmp7;
   };
-  obj = { withSpring: DEFAULT_BUTTON_SIZE(dependencyMap[16]).withSpring, loading: flag, SUBTLE_SPRING: DEFAULT_BUTTON_SIZE(dependencyMap[17]).SUBTLE_SPRING, useReducedMotion: enabled, withDelay: DEFAULT_BUTTON_SIZE(dependencyMap[12]).withDelay, FADE_DELAY: closure_10, offsetY: num };
+  obj = { withSpring: _require(num[16]).withSpring, loading: flag, SUBTLE_SPRING: _require(num[17]).SUBTLE_SPRING, useReducedMotion: enabled, withDelay: _require(num[12]).withDelay, FADE_DELAY: c10, offsetY: num };
   fn2.__closure = obj;
   fn2.__workletHash = 8255420825872;
   fn2.__initData = closure_16;
-  items[1] = DEFAULT_BUTTON_SIZE(dependencyMap[12]).useAnimatedStyle(fn2);
+  items[1] = _require(num[12]).useAnimatedStyle(fn2);
   return items;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, StyleSheet: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[3]));
-let closure_10 = 300;
-const tmp3 = arg1(dependencyMap[3]);
-const buttonPadding = arg1(dependencyMap[4]).getButtonPadding(arg1(dependencyMap[4]).SMALL_BUTTON_HEIGHT, arg1(dependencyMap[4]).SMALL_BUTTON_ICON_SIZE);
-const obj = arg1(dependencyMap[4]);
-const buttonPadding2 = arg1(dependencyMap[4]).getButtonPadding(arg1(dependencyMap[4]).MEDIUM_BUTTON_HEIGHT, arg1(dependencyMap[4]).MEDIUM_BUTTON_ICON_SIZE);
-const obj2 = arg1(dependencyMap[4]);
-const buttonPadding3 = arg1(dependencyMap[4]).getButtonPadding(arg1(dependencyMap[4]).LARGE_BUTTON_HEIGHT, arg1(dependencyMap[4]).LARGE_BUTTON_ICON_SIZE);
-const obj3 = arg1(dependencyMap[4]);
-let closure_14 = arg1(dependencyMap[5]).createStyles((arg0, arg1) => {
+({ View: closure_5, StyleSheet: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
+let c10 = 300;
+const buttonPadding = getButtonPadding.getButtonPadding(require("getButtonPadding").SMALL_BUTTON_HEIGHT, require("getButtonPadding").SMALL_BUTTON_ICON_SIZE);
+const buttonPadding2 = getButtonPadding.getButtonPadding(require("getButtonPadding").MEDIUM_BUTTON_HEIGHT, require("getButtonPadding").MEDIUM_BUTTON_ICON_SIZE);
+const buttonPadding3 = getButtonPadding.getButtonPadding(require("getButtonPadding").LARGE_BUTTON_HEIGHT, require("getButtonPadding").LARGE_BUTTON_ICON_SIZE);
+let closure_14 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
   let obj = {};
   if ("sm" === arg1) {
-    obj = { minHeight: arg1(dependencyMap[4]).SMALL_BUTTON_HEIGHT, minWidth: arg1(dependencyMap[4]).SMALL_BUTTON_HEIGHT, paddingHorizontal: arg1(dependencyMap[4]).SMALL_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_11 };
+    obj = { minHeight: require(4547) /* getButtonPadding */.SMALL_BUTTON_HEIGHT, minWidth: require(4547) /* getButtonPadding */.SMALL_BUTTON_HEIGHT, paddingHorizontal: require(4547) /* getButtonPadding */.SMALL_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_11 };
   } else if ("md" === arg1) {
-    obj = { minHeight: arg1(dependencyMap[4]).MEDIUM_BUTTON_HEIGHT, minWidth: arg1(dependencyMap[4]).MEDIUM_BUTTON_HEIGHT, paddingHorizontal: arg1(dependencyMap[4]).MEDIUM_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_12 };
+    obj = { minHeight: require(4547) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT, minWidth: require(4547) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT, paddingHorizontal: require(4547) /* getButtonPadding */.MEDIUM_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_12 };
   } else if ("lg" === arg1) {
-    const obj1 = { minHeight: arg1(dependencyMap[4]).LARGE_BUTTON_HEIGHT, minWidth: arg1(dependencyMap[4]).LARGE_BUTTON_HEIGHT, paddingHorizontal: arg1(dependencyMap[4]).LARGE_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_13 };
+    const obj1 = { minHeight: require(4547) /* getButtonPadding */.LARGE_BUTTON_HEIGHT, minWidth: require(4547) /* getButtonPadding */.LARGE_BUTTON_HEIGHT, paddingHorizontal: require(4547) /* getButtonPadding */.LARGE_BUTTON_HORIZONTAL_PADDING, paddingVertical: closure_13 };
     obj = obj1;
   }
   if ("lg" === arg1) {
-    let BORDER_RADIUS = importDefault(dependencyMap[6]).modules.button.BORDER_RADIUS_LG;
+    let BORDER_RADIUS = importDefault(689).modules.button.BORDER_RADIUS_LG;
   } else {
-    BORDER_RADIUS = importDefault(dependencyMap[6]).modules.button.BORDER_RADIUS;
+    BORDER_RADIUS = importDefault(689).modules.button.BORDER_RADIUS;
   }
   const obj2 = {};
-  const obj3 = { borderWidth: arg1(dependencyMap[4]).BUTTON_BORDER_WIDTH, borderRadius: BORDER_RADIUS };
+  const obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", overflow: "hidden", borderWidth: require(4547) /* getButtonPadding */.BUTTON_BORDER_WIDTH, borderRadius: BORDER_RADIUS };
   const merged = Object.assign(obj);
   obj2.pill = obj3;
   const obj4 = { overflow: "hidden", borderRadius: BORDER_RADIUS };
   obj2.expressivePill = obj4;
-  obj2.expressiveRiveFill = { color: importDefault(dependencyMap[6]).colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
-  obj2.childContainer = {};
-  obj2.ellipsis = { 0: null, 0: null, children: null, cutouts: null, borderRadius: null };
+  obj2.expressiveRiveFill = { color: importDefault(689).colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
+  obj2.childContainer = { flexDirection: "row", alignItems: "center", justifyContent: "center", flexGrow: 1, maxWidth: "100%" };
+  obj2.ellipsis = { position: "absolute", height: "100%", width: "100%", justifyContent: "center", alignItems: "center" };
   return obj2;
 });
 let closure_15 = { code: "function ButtonPillNativeTsx1(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?0:1,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?opacityTransition:withDelay(FADE_DELAY,opacityTransition),transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?-1*offsetY:0,SUBTLE_SPRING)}]};}" };
 let closure_16 = { code: "function ButtonPillNativeTsx2(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?1:0,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?withDelay(FADE_DELAY,opacityTransition):opacityTransition,transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?0:offsetY,SUBTLE_SPRING)}]};}" };
-const obj4 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("design/components/Button/native/ButtonPill.native.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Button/native/ButtonPill.native.tsx");
 
 export const ButtonPill = function ButtonPill(loading) {
   if (null == loading.loading) {

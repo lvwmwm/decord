@@ -1,10 +1,11 @@
-// Module ID: 4040
-// Function ID: 33642
+// Module ID: 4042
+// Function ID: 33651
 // Name: createExperiment
-// Dependencies: []
+// Dependencies: [4043, 2]
 
-// Module 4040 (createExperiment)
-const importDefaultResult = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/experiments/index.tsx");
+// Module 4042 (createExperiment)
+import importDefaultResult from "getExperimentDescriptor";
+
+const result = require("set").fileFinishedImporting("modules/experiments/index.tsx");
 
 export const createExperiment = importDefaultResult;

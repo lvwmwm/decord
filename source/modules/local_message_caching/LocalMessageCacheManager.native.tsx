@@ -1,52 +1,71 @@
-// Module ID: 13358
-// Function ID: 101547
+// Module ID: 13472
+// Function ID: 103703
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 99, 100, 5, 57, 3768, 1194, 1348, 4349, 653, 13473, 3, 664, 587, 3712, 3800, 6995, 6691, 686, 10899, 9866, 1934, 9878, 4803, 4530, 2]
 
-// Module 13358 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 13472 (_createForOfIteratorHelperLoose)
+import _classPrivateFieldKey from "_classPrivateFieldKey";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import timestamp from "timestamp";
+import Storage from "Storage";
+import closure_7 from "t";
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import closure_9 from "_classPrivateFieldBase";
+import _slicedToArray from "_slicedToArray";
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import { MessageStates } from "ME";
+import createLock from "createLock";
+import importDefaultResult1 from "_getPrototypeOf";
+import tmp5 from "LifecycleManager";
+import importDefaultResult from "_classPrivateFieldKey";
+
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -116,29 +135,41 @@ function _getKeyForFileId(arg0) {
   }
 }
 function cacheSendingMessage(arg0) {
+  let _slicedToArray;
+  let _callSuper;
+  let _classPrivateFieldKey;
+  let asyncGeneratorStep;
+  let timestamp;
+  let Storage;
+  let closure_7;
+  let _classPrivateFieldBase;
+  let closure_9;
+  let dependencyMap;
+  let importDefault;
   let message;
-  ({ key: closure_0, message, file: closure_1, sendMessageOptions: closure_2 } = arg0);
-  ({ content: closure_3, id: closure_4, channel_id: closure_5, tts: closure_6, nonce: closure_7, timestamp: closure_8, type: closure_9, flags: closure_10, state: closure_11 } = message);
-  return callback5(() => {
-    const tmp2 = callback(closure_0);
-    let obj = { content: closure_3, type: closure_9 };
-    if (null != closure_11) {
-      let SENDING = closure_11;
+  let require;
+  ({ key: require, message, file: importDefault, sendMessageOptions: dependencyMap } = arg0);
+  ({ content: _classPrivateFieldKey, id: asyncGeneratorStep, channel_id: timestamp, tts: Storage, nonce: closure_7, timestamp: _classPrivateFieldBase, type: closure_9, flags: _slicedToArray, state: _callSuper } = message);
+  return createLock(() => {
+    const tmp2 = outer1_21(closure_0);
+    let obj = { content: _classPrivateFieldKey, type: closure_9 };
+    if (null != _callSuper) {
+      let SENDING = _callSuper;
     } else {
-      SENDING = constants.SENDING;
+      SENDING = outer1_15.SENDING;
     }
     obj.state = SENDING;
-    obj.channel_id = closure_5;
-    obj.tts = closure_6;
-    obj.id = closure_4;
+    obj.channel_id = timestamp;
+    obj.tts = Storage;
+    obj.id = asyncGeneratorStep;
     obj.nonce = closure_7;
-    if ("string" === typeof closure_8) {
-      let toISOStringResult = closure_8;
+    if ("string" === typeof _classPrivateFieldBase) {
+      let toISOStringResult = _classPrivateFieldBase;
     } else {
-      toISOStringResult = closure_8.toISOString();
+      toISOStringResult = _classPrivateFieldBase.toISOString();
     }
     obj.timestamp = toISOStringResult;
-    obj.flags = closure_10;
+    obj.flags = _slicedToArray;
     if (null != closure_1) {
       let file = closure_1;
     } else if (null != tmp2) {
@@ -155,24 +186,24 @@ function cacheSendingMessage(arg0) {
         sendMessageOptions = tmp2.sendMessageOptions;
       }
       obj.sendMessageOptions = sendMessageOptions;
-      closure_22(closure_0, obj);
+      outer1_22(closure_0, obj);
     }
   });
 }
 function removeCachedMessage(arg0) {
-  const arg1 = arg0;
-  return callback5(() => callback(arg0, null));
+  let closure_0 = arg0;
+  return createLock(() => outer1_22(closure_0, null));
 }
 function removeCachedMessageWithMessageId(arg0) {
-  const arg1 = arg0;
-  return callback5(() => {
-    const entries = Object.entries(callback2());
+  let closure_0 = arg0;
+  return createLock(() => {
+    const entries = Object.entries(outer1_20());
     let num = 0;
     let first;
     if (0 < entries.length) {
-      const tmp4 = callback(entries[num], 2);
+      const tmp4 = outer1_10(entries[num], 2);
       first = tmp4[0];
-      while (tmp4[1].id !== arg0) {
+      while (tmp4[1].id !== closure_0) {
         num = num + 1;
         if (num >= entries.length) {
           break;
@@ -180,31 +211,31 @@ function removeCachedMessageWithMessageId(arg0) {
       }
     }
     if (null != first) {
-      callback3(first, null);
+      outer1_22(first, null);
     }
   });
 }
 function updateCachedMessage(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  return callback5(() => {
-    const tmp = callback(arg0);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return createLock(() => {
+    const tmp = outer1_21(closure_0);
     if (null != tmp) {
       const obj = {};
       const merged = Object.assign(tmp);
-      const merged1 = Object.assign(arg1);
-      callback2(arg0, obj);
+      const merged1 = Object.assign(closure_1);
+      outer1_22(closure_0, obj);
     }
   });
 }
 function getAllCachedMessages() {
-  return callback5(_getMessages);
+  return createLock(_getMessages);
 }
 function messageTimestampIsInInterval(arg0, arg1) {
   if (null != arg0) {
-    const tmp3 = importDefault(dependencyMap[18])();
-    const tmp4 = importDefault(dependencyMap[18])(arg0);
-    return arg1(dependencyMap[19]).isWithinInterval(tmp3, tmp4, arg1);
+    const tmp3 = importDefault(3712)();
+    const tmp4 = importDefault(3712)(arg0);
+    return require(3800) /* resetCache */.isWithinInterval(tmp3, tmp4, arg1);
   } else {
     return false;
   }
@@ -217,15 +248,14 @@ function createFailedMessage(channel_id) {
   channel_id = channel_id.channel_id;
   ({ content, tts, state } = channel_id);
   let obj = { channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED };
-  const tmp = importDefault(dependencyMap[20])(obj);
-  const arg1 = tmp;
+  const tmp = file(6995)(obj);
+  const require = tmp;
   ({ timestamp: tmp.timestamp, file } = channel_id);
-  const importDefault = file;
   obj = { isHydratingExpiredPendingMessage: state === MessageStates.SENDING };
-  importDefault(dependencyMap[21]).receiveMessage(channel_id, tmp, true, obj);
+  file(6691).receiveMessage(channel_id, tmp, true, obj);
   if (null != file) {
-    importDefault(dependencyMap[22]).wait(() => file(closure_2[23]).restoreFailedUpload(tmp.id, file));
-    const obj4 = importDefault(dependencyMap[22]);
+    file(686).wait(() => file(outer1_2[23]).restoreFailedUpload(tmp.id, file));
+    const obj4 = file(686);
   }
 }
 function resumeSendingMessage() {
@@ -234,36 +264,19 @@ function resumeSendingMessage() {
 function _resumeSendingMessage() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback3(tmp);
-  const _resumeSendingMessage = obj;
   return obj(...arguments);
 }
 function _rehydrateFailedMessages() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback3(tmp);
-  const _rehydrateFailedMessages = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-let closure_12 = importDefault(dependencyMap[10]);
-let closure_13 = importDefault(dependencyMap[11]);
-let closure_14 = importDefault(dependencyMap[12]);
-const MessageStates = arg1(dependencyMap[13]).MessageStates;
-const importDefaultResult = importDefault(dependencyMap[6]);
-let closure_16 = arg1(dependencyMap[14]).createLock();
-let importDefaultResult1 = importDefault(dependencyMap[15]);
+createLock = createLock.createLock();
 importDefaultResult1 = new importDefaultResult1("LocalMessageCacheManager");
-let closure_18 = 5 * importDefault(dependencyMap[16]).Millis.MINUTE;
-let closure_19 = 14 * importDefault(dependencyMap[16]).Millis.DAY;
+let closure_18 = 5 * require("set").Millis.MINUTE;
+let closure_19 = 14 * require("set").Millis.DAY;
 function _getMessages(arg0) {
-  const Storage = arg1(dependencyMap[17]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   let obj = Storage.get("LocalMessageCacheManagerMessageCacheKey");
   if (null == obj) {
     obj = {};
@@ -283,7 +296,7 @@ function _writeMessage(arg0, id) {
     channel_id = id.channel_id;
   }
   importDefaultResult1.verbose("_writeMessage", id, channel_id);
-  const tmp5 = _getMessages();
+  const tmp7 = _getMessages();
   if (null != id) {
     const obj = {};
     const merged = Object.assign(id);
@@ -293,208 +306,17 @@ function _writeMessage(arg0, id) {
       str = content;
     }
     obj["content"] = str;
-    tmp5[arg0] = obj;
-    importDefaultResult1.verbose("_writeMessage after write", tmp5[arg0].id, tmp5[arg0].channel_id);
+    tmp7[arg0] = obj;
+    importDefaultResult1.verbose("_writeMessage after write", tmp7[arg0].id, tmp7[arg0].channel_id);
   } else {
-    delete r0[r2];
+    delete tmp[tmp2];
   }
-  const Storage = id(dependencyMap[17]).Storage;
-  const result = Storage.set("LocalMessageCacheManagerMessageCacheKey", tmp5);
-  return tmp5;
+  const Storage = require(587) /* Storage */.Storage;
+  const result = Storage.set("LocalMessageCacheManagerMessageCacheKey", tmp7);
+  return tmp7;
 }
-let closure_23 = importDefaultResult("loadedChannels");
-let tmp5 = (arg0) => {
-  class LocalMessageCacheManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp2 = closure_3(this, LocalMessageCacheManager);
-      items1 = [...items];
-      obj = closure_6(LocalMessageCacheManager);
-      tmp3 = closure_5;
-      if (closure_26()) {
-        tmp5 = globalThis;
-        _Reflect = Reflect;
-        tmp6 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp3Result = tmp3(self, constructResult);
-      LocalMessageCacheManager = tmp3Result;
-      obj = { writable: true };
-      set = new Set();
-      obj.value = set;
-      definePropertyResult = Object.defineProperty(tmp3Result, closure_23, obj);
-      // CreateGeneratorClosureLongIndex (0x67)
-      tmp3Result.handlePostConnectionOpen = closure_9(tmp);
-      tmp3Result.handleMessageDelete = (id) => {
-        callback7(id.id);
-      };
-      tmp3Result.handleLogout = () => {
-        !function removeAllCachedMessages() {
-          return callback(() => {
-            const Storage = callback(closure_2[17]).Storage;
-            return Storage.remove("LocalMessageCacheManagerMessageCacheKey");
-          });
-        }();
-      };
-      tmp3Result.handleMessageCreate = (message) => {
-        message = message.message;
-        const author = message.author;
-        let id;
-        if (null != author) {
-          id = author.id;
-        }
-        if (id === id.getId()) {
-          id = message.nonce;
-          if (null == id) {
-            id = message.id;
-          }
-          if (message.state !== constants.SENDING) {
-            if (message.state !== constants.SEND_FAILED) {
-              callback6(id);
-            }
-          }
-          let obj = callback(tmp3Result, closure_23)[closure_23];
-          obj.add(message.channel_id);
-          obj = { key: id, message, sendMessageOptions: message.sendMessageOptions };
-          callback5(obj);
-        }
-      };
-      tmp3Result.handleLoadMessagesSuccess = (channelId) => {
-        tmp3Result.handleChannelLoaded(channelId.channelId);
-      };
-      tmp3Result.handleCacheLoaded = (arg0) => {
-        const items = [, ];
-        ({ privateChannels: arr[0], initialGuildChannels: arr[1] } = arg0);
-        for (let num = 0; num < items.length; num = num + 1) {
-          let tmp = callback4;
-          let tmp2 = callback4(items[num]);
-          let iter = tmp2();
-          if (!iter.done) {
-            do {
-              let tmp3 = closure_0;
-              let handleChannelLoadedResult = closure_0.handleChannelLoaded(iter.value.id);
-              let iter2 = tmp2();
-              iter = iter2;
-              let done = iter2.done;
-            } while (!done);
-          }
-        }
-      };
-      tmp3Result.handleChannelLoaded = () => {
-        // CreateGeneratorClosureLongIndex (0x67)
-        let closure_0 = callback2(tmp);
-        return function(arg0) {
-          return callback(...arguments);
-        };
-      }();
-      tmp3Result.handleFileUploadStart = (message) => {
-        message = message.message;
-        if (null != message) {
-          const obj = {};
-          let id = message.nonce;
-          if (null == id) {
-            id = message.id;
-          }
-          obj.key = id;
-          obj.message = message;
-          obj.file = tmp;
-          closure_28(obj);
-          const tmp2 = closure_28;
-        }
-      };
-      tmp3Result.handleUploadProgress = (file) => {
-        callback3(() => {
-          const tmp = callback(file.id);
-          if (null != tmp) {
-            const obj = { file };
-            callback2(tmp, obj);
-          }
-        });
-      };
-      tmp3Result.handleUploadComplete = (aborted) => {
-        if (aborted.aborted) {
-          function removeCachedMessageForFile(arg0) {
-            return callback(() => {
-              const tmp = callback2(arg0.id);
-              if (null != tmp) {
-                callback(tmp, null);
-              }
-            });
-          }(tmp);
-        }
-      };
-      tmp3Result.handleRestoreFailedUpload = (file) => {
-        callback8(file.messageId, { file: file.file });
-      };
-      tmp3Result.handleTextMessageFailed = (messageId) => {
-        callback8(messageId.messageId, { state: constants.SEND_FAILED });
-      };
-      return tmp3Result;
-    }
-  }
-  const arg1 = LocalMessageCacheManager;
-  callback2(LocalMessageCacheManager, arg0);
-  let obj = {
-    key: "_terminate",
-    value: function _terminate() {
-      callback(closure_2[22]).unsubscribe("LOGOUT", this.handleLogout);
-      const obj = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("MESSAGE_CREATE", this.handleMessageCreate);
-      const obj2 = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("MESSAGE_SEND_FAILED", this.handleTextMessageFailed);
-      const obj3 = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("UPLOAD_START", this.handleFileUploadStart);
-      const obj4 = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("MESSAGE_DELETE", this.handleMessageDelete);
-      const obj5 = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("UPLOAD_RESTORE_FAILED_UPLOAD", this.handleRestoreFailedUpload);
-      const obj6 = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("UPLOAD_COMPLETE", this.handleUploadComplete);
-      const obj7 = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("UPLOAD_PROGRESS", this.handleUploadProgress);
-      const obj8 = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("LOAD_MESSAGES_SUCCESS", this.handleLoadMessagesSuccess);
-      const obj9 = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("CACHE_LOADED", this.handleCacheLoaded);
-      const obj10 = callback(closure_2[22]);
-      callback(closure_2[22]).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "_initialize",
-    value: function _initialize() {
-      const LocalMessageCacheManager = this;
-      closure_17.verbose("cache manager initialize");
-      const subscription = callback(closure_2[22]).subscribe("LOGOUT", this.handleLogout);
-      const obj = callback(closure_2[22]);
-      const subscription1 = callback(closure_2[22]).subscribe("MESSAGE_CREATE", this.handleMessageCreate);
-      const obj2 = callback(closure_2[22]);
-      const subscription2 = callback(closure_2[22]).subscribe("MESSAGE_SEND_FAILED", this.handleTextMessageFailed);
-      const obj3 = callback(closure_2[22]);
-      const subscription3 = callback(closure_2[22]).subscribe("UPLOAD_START", this.handleFileUploadStart);
-      const obj4 = callback(closure_2[22]);
-      const subscription4 = callback(closure_2[22]).subscribe("MESSAGE_DELETE", this.handleMessageDelete);
-      const obj5 = callback(closure_2[22]);
-      const subscription5 = callback(closure_2[22]).subscribe("UPLOAD_RESTORE_FAILED_UPLOAD", this.handleRestoreFailedUpload);
-      const obj6 = callback(closure_2[22]);
-      const subscription6 = callback(closure_2[22]).subscribe("UPLOAD_COMPLETE", this.handleUploadComplete);
-      const obj7 = callback(closure_2[22]);
-      const subscription7 = callback(closure_2[22]).subscribe("UPLOAD_PROGRESS", this.handleUploadProgress);
-      const obj8 = callback(closure_2[22]);
-      const subscription8 = callback(closure_2[22]).subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
-      // CreateGeneratorClosureLongIndex (0x67)
-      callback4(tmp)();
-    }
-  };
-  items[1] = obj;
-  return callback(LocalMessageCacheManager, items);
-}(importDefault(dependencyMap[28]));
+let closure_23 = require("_classPrivateFieldKey")("loadedChannels");
 tmp5 = new tmp5();
-const obj = arg1(dependencyMap[14]);
-const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/local_message_caching/LocalMessageCacheManager.native.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/local_message_caching/LocalMessageCacheManager.native.tsx");
 
 export default tmp5;

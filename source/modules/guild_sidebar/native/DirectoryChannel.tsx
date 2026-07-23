@@ -1,61 +1,61 @@
-// Module ID: 14918
-// Function ID: 112351
-// Dependencies: []
+// Module ID: 15034
+// Function ID: 114519
+// Dependencies: [31, 1348, 1907, 10260, 4326, 33, 4130, 689, 624, 1198, 9099, 14969, 8450, 2]
 
-// Module 14918
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const UnreadSetting = arg1(dependencyMap[4]).UnreadSetting;
-const jsx = arg1(dependencyMap[5]).jsx;
+// Module 15034
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { UnreadSetting } from "ReadStateTypes";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let obj = {};
-obj = { marginVertical: arg1(dependencyMap[3]).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: importDefault(dependencyMap[7]).radii.md };
+obj = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
 obj.container = obj;
-let closure_8 = arg1(dependencyMap[6]).createStyles(obj);
-const obj2 = arg1(dependencyMap[6]);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((guildId) => {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   let selected = guildId.selected;
-  let importDefault;
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_4, closure_5];
+  let id;
+  let obj = guildId(624);
+  const items = [_isNativeReflectConstruct, closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const directoryChannelIds = directoryChannelIds.getDirectoryChannelIds(guildId);
+    const directoryChannelIds = outer1_5.getDirectoryChannelIds(guildId);
     let channel = null;
     if (0 !== directoryChannelIds.length) {
-      channel = channel.getChannel(directoryChannelIds[0]);
+      channel = outer1_4.getChannel(directoryChannelIds[0]);
     }
     return channel;
   });
-  let id;
+  id = undefined;
   if (null != stateFromStores) {
     id = stateFromStores.id;
   }
-  importDefault = id;
   if (!selected) {
     selected = id === guildId.selectedChannelId;
   }
   const items1 = [guildId, id];
   [][0] = id;
   const callback = importAllResult.useCallback(() => {
-    guildId(closure_2[9]).transitionToGuild(guildId, id);
+    guildId(outer1_2[9]).transitionToGuild(guildId, id);
   }, items1);
   let tmp6 = null;
   if (null != stateFromStores) {
     obj = { onPress: callback, onLongPress: tmp5, style: tmp.container, accessible: true, accessibilityRole: "button" };
     obj = { channel: stateFromStores };
-    obj.accessibilityLabel = importDefault(dependencyMap[12])(obj);
+    obj.accessibilityLabel = id(8450)(obj);
     const obj1 = { selected };
     obj.accessibilityState = obj1;
     obj.channel = stateFromStores;
     obj.selected = selected;
     obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-    tmp6 = jsx(importDefault(dependencyMap[11]), obj);
-    const tmp10 = importDefault(dependencyMap[11]);
+    tmp6 = jsx(id(14969), { channel: stateFromStores });
+    const tmp10 = id(14969);
   }
   return tmp6;
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
 
 export default memoResult;

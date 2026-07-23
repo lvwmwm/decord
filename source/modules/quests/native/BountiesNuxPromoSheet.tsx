@@ -1,35 +1,37 @@
-// Module ID: 13850
-// Function ID: 104662
+// Module ID: 13964
+// Function ID: 106818
 // Name: BountiesNuxPromoSheet
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4098, 13963, 11548, 1212, 5912, 4543, 2]
 // Exports: default
 
-// Module 13850 (BountiesNuxPromoSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { paddingTop: importDefault(dependencyMap[4]).space.PX_12 };
-obj.illustrationContainer = obj;
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/quests/native/BountiesNuxPromoSheet.tsx");
+// Module 13964 (BountiesNuxPromoSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.illustrationContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/quests/native/BountiesNuxPromoSheet.tsx");
 
 export default function BountiesNuxPromoSheet() {
   const callback = React.useCallback(() => {
-    callback2(closure_2[5]).hideActionSheet(callback(closure_2[6]).PROMO_SHEET_KEY);
+    outer1_1(outer1_2[5]).hideActionSheet(outer1_0(outer1_2[6]).PROMO_SHEET_KEY);
   }, []);
   let obj = { gradientColor: "purple" };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.title = intl.string(arg1(dependencyMap[8]).t.DDpHZG);
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj.description = intl2.string(arg1(dependencyMap[8]).t.LY+igv);
-  obj = { style: callback().illustrationContainer, children: jsx(arg1(dependencyMap[9]).BountiesPosterSpotIllustration, {}) };
-  obj.illustration = <View {...obj} />;
-  obj = { <string:2812997771>: "<string:1615986690>", <string:1672384813>: "<string:300807816>", <string:1362501123>: "/assets/design/components/Icon/native/redesign/generated/images" };
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj.text = intl3.string(arg1(dependencyMap[8]).t.cpT0Cq);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.DDpHZG);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl2.string(require(1212) /* getSystemLocale */.t["LY+igv"]);
+  obj = { style: _createForOfIteratorHelperLoose().illustrationContainer, children: jsx(require(5912) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 }) };
+  obj.illustration = <View style={_createForOfIteratorHelperLoose().illustrationContainer}>{jsx(require(5912) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
+  obj = { grow: true, size: "lg", variant: "primary" };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl3.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj.onPress = callback;
-  obj.actions = jsx(arg1(dependencyMap[10]).Button, obj);
-  return jsx(arg1(dependencyMap[7]).PromoSheet, obj);
+  obj.actions = jsx(require(4543) /* Button */.Button, { grow: true, size: "lg", variant: "primary" });
+  return jsx(require(11548) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary" });
 };

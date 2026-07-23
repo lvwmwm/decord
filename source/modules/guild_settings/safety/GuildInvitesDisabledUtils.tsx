@@ -1,29 +1,36 @@
-// Module ID: 11406
-// Function ID: 88737
+// Module ID: 11416
+// Function ID: 88787
 // Name: useInvitesDisabledPermission
-// Dependencies: []
+// Dependencies: [10219, 3758, 653, 566, 2]
 // Exports: useShouldShowInvitesDisabledNotif
 
-// Module 11406 (useInvitesDisabledPermission)
+// Module 11416 (useInvitesDisabledPermission)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function useInvitesDisabledPermission(guild) {
-  const arg1 = guild;
+  const _require = guild;
   const items = [closure_3];
   const items1 = [guild];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    let canResult = null != arg0;
+  return _require(566).useStateFromStores(items, () => {
+    let canResult = null != closure_0;
     if (canResult) {
-      canResult = closure_3.can(constants.MANAGE_GUILD, arg0);
+      canResult = outer1_3.can(outer1_5.MANAGE_GUILD, closure_0);
     }
     return canResult;
   }, items1);
 }
 function useInvitesDisabled(features) {
-  const arg1 = features;
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => {
+  const _require = features;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
     let guildIncident = null;
-    if (null != arg0) {
-      guildIncident = guildIncident.getGuildIncident(arg0.id);
+    if (null != id) {
+      guildIncident = outer1_2.getGuildIncident(id.id);
     }
     return guildIncident;
   });
@@ -49,11 +56,8 @@ function useInvitesDisabled(features) {
   }
   return hasItem;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ GuildFeatures: closure_4, Permissions: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_settings/safety/GuildInvitesDisabledUtils.tsx");
+({ GuildFeatures: closure_4, Permissions: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/guild_settings/safety/GuildInvitesDisabledUtils.tsx");
 
 export { useInvitesDisabledPermission };
 export { useInvitesDisabled };

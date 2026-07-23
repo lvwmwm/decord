@@ -1,17 +1,19 @@
-// Module ID: 10427
-// Function ID: 80330
+// Module ID: 10437
+// Function ID: 80380
 // Name: ChatOverlays
-// Dependencies: []
+// Dependencies: [1347, 1348, 10435, 10226, 624, 3748, 10438, 2]
 // Exports: default
 
-// Module 10427 (ChatOverlays)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const ChatOverlays = arg1(dependencyMap[2]).ChatOverlays;
-const ActivityPanelModes = arg1(dependencyMap[3]).ActivityPanelModes;
-const items = [, , ];
+// Module 10437 (ChatOverlays)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ChatOverlays } from "ChatOverlays";
+import { ActivityPanelModes } from "ActivityPanelModes";
+
+const require = arg1;
+let items = [, , ];
 ({ NEW_MESSAGES: arr[0], OPT_IN_CHANNEL: arr[1], SUMMARIES: arr[2] } = ChatOverlays);
-const items1 = [, , ];
+let items1 = [, , ];
 ({ NEW_MESSAGES: arr2[0], OPT_IN_CHANNEL: arr2[1], SUMMARIES: arr2[2] } = ChatOverlays);
 const items2 = [, , ];
 ({ NEW_MESSAGES: arr3[0], OPT_IN_CHANNEL: arr3[1], SUMMARIES: arr3[2] } = ChatOverlays);
@@ -20,21 +22,21 @@ const items3 = [, , ];
 const items4 = [, , ];
 ({ NEW_MESSAGES: arr5[0], OPT_IN_CHANNEL: arr5[1], SUMMARIES: arr5[2] } = ChatOverlays);
 let closure_5 = { ["no_text_activity"]: items, [ActivityPanelModes.DISCONNECTED]: items1, [ActivityPanelModes.LAUNCHING_WITH_ORIENTATION_CHANGE]: items2, [ActivityPanelModes.PANEL]: [], [ActivityPanelModes.PIP]: items3, [ActivityPanelModes.ACTIVITY_POPOUT_WINDOW]: items4 };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/messages/useAllowedChatOverlays.tsx");
+const result = require("ChatOverlays").fileFinishedImporting("modules/messages/useAllowedChatOverlays.tsx");
 
 export default function useAllowedChatOverlays() {
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => store.getCurrentEmbeddedActivity());
-  const obj = arg1(dependencyMap[4]);
-  const items1 = [closure_3];
-  const stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items1, () => store.getActivityPanelMode());
-  arg1(dependencyMap[5]);
+  const items = [_createForOfIteratorHelperLoose];
+  const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_3.getCurrentEmbeddedActivity());
+  const obj = require(624) /* defaultAreStatesEqual */;
+  const items1 = [_createForOfIteratorHelperLoose];
+  const stateFromStores1 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items1, () => outer1_3.getActivityPanelMode());
+  require(3748) /* getEmbeddedActivityLocationChannelId */;
   if (null != stateFromStores) {
     const _location = stateFromStores.location;
   }
   if (undefined !== stateFromStores) {
-    if (!importDefault(dependencyMap[6])(tmp4, closure_4)) {
-      let no_text_activity = no_text_activity[stateFromStores1];
+    if (!importDefault(10438)(tmp4, _isNativeReflectConstruct)) {
+      no_text_activity = no_text_activity[stateFromStores1];
     }
     return no_text_activity;
   }

@@ -1,13 +1,14 @@
 // Module ID: 1440
-// Function ID: 16787
+// Function ID: 16788
 // Name: parse
-// Dependencies: []
+// Dependencies: [1441, 1442]
 
 // Module 1440 (parse)
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[1]);
+import hasOwnProperty from "hasOwnProperty";
+import stringifyPrimitive from "stringifyPrimitive";
 
-export const parse = _module;
-export const decode = _module;
-export const stringify = _module1;
-export const encode = _module1;
+
+export const parse = hasOwnProperty;
+export const decode = hasOwnProperty;
+export const stringify = stringifyPrimitive;
+export const encode = stringifyPrimitive;

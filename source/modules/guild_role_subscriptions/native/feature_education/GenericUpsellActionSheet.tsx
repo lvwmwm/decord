@@ -1,23 +1,27 @@
-// Module ID: 14953
-// Function ID: 112559
+// Module ID: 15069
+// Function ID: 114727
 // Name: GenericUpsellActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 1345, 33, 4130, 689, 7186, 5187, 5085, 5446, 4126, 1273, 4543, 2]
 // Exports: default
 
-// Module 14953 (GenericUpsellActionSheet)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { image: { width: "100%" } };
-obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
-obj.content = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.description = { marginBottom: importDefault(dependencyMap[5]).space.PX_16, flex: 1 };
-let closure_7 = obj.createStyles(obj);
-const obj1 = { marginBottom: importDefault(dependencyMap[5]).space.PX_16, flex: 1 };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/GenericUpsellActionSheet.tsx");
+// Module 15069 (GenericUpsellActionSheet)
+import "result";
+import { View } from "get ActivityIndicator";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { image: { width: "100%" } };
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.description = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, flex: 1 };
+const result = require("ContentDismissActionType").fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/GenericUpsellActionSheet.tsx");
 
 export default function GenericUpsellActionSheet(markAsDismissed) {
   let body;
@@ -27,30 +31,32 @@ export default function GenericUpsellActionSheet(markAsDismissed) {
   let header;
   let imageSource;
   let onCTAPress;
-  const arg1 = markAsDismissed.markAsDismissed;
+  markAsDismissed = markAsDismissed.markAsDismissed;
   ({ imageSource, header, body, onCTAPress, cta } = markAsDismissed);
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = markAsDismissed(7186);
   bottomSheetRef = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
   obj = {
     ref: bottomSheetRef,
     startExpanded: true,
     onDismiss() {
-      return markAsDismissed(constants.UNKNOWN);
+      return markAsDismissed(outer1_4.UNKNOWN);
     },
     handleDisabled: true
   };
   obj = {};
-  const items = [callback(importDefault(dependencyMap[8]), { source: imageSource, style: tmp.image }), callback(arg1(dependencyMap[9]).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
+  const items = [callback(importDefault(5085), { source: imageSource, style: tmp.image }), callback(markAsDismissed(5446).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
   obj.children = items;
   obj.header = callback2(View, obj);
   const obj2 = { style: tmp.content };
-  const obj3 = { "Bool(false)": "_desired", "Bool(false)": "hash", "Bool(false)": "construct", children: header };
-  const items1 = [callback(arg1(dependencyMap[10]).Text, obj3), callback(arg1(dependencyMap[11]).Spacer, { size: 12 }), callback(arg1(dependencyMap[10]).Text, { style: tmp.description, children: body }), ];
-  const obj5 = { "Null": null, "Null": null, onPress: onCTAPress, text: cta };
-  items1[3] = callback(arg1(dependencyMap[12]).Button, obj5);
+  const obj3 = { accessibilityRole: "header", variant: "heading-xl/medium", color: "mobile-text-heading-primary", children: header };
+  const items1 = [callback(markAsDismissed(4126).Text, obj3), callback(markAsDismissed(1273).Spacer, { size: 12 }), , ];
+  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: body };
+  items1[2] = callback(markAsDismissed(4126).Text, obj4);
+  const obj5 = { variant: "primary", grow: true, onPress: onCTAPress, text: cta };
+  items1[3] = callback(markAsDismissed(4543).Button, obj5);
   obj2.children = items1;
   obj.children = callback2(View, obj2);
-  return callback(arg1(dependencyMap[7]).BottomSheet, obj);
+  return callback(markAsDismissed(5187).BottomSheet, obj);
 };

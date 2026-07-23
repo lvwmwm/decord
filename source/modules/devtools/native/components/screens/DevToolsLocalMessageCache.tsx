@@ -1,10 +1,17 @@
-// Module ID: 13403
-// Function ID: 101868
+// Module ID: 13517
+// Function ID: 104024
 // Name: CacheLogEntry
-// Dependencies: []
+// Dependencies: [27, 1348, 33, 4130, 689, 5165, 4541, 5503, 6720, 4126, 2]
 // Exports: default
 
-// Module 13403 (CacheLogEntry)
+// Module 13517 (CacheLogEntry)
+import { ScrollView } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
 function CacheLogEntry(entry) {
   entry = entry.entry;
   const before = entry.before;
@@ -45,7 +52,7 @@ function CacheLogEntry(entry) {
     }
   }
   const obj = {};
-  const channel = channel.getChannel(entry.channelId);
+  channel = channel.getChannel(entry.channelId);
   let name;
   if (null != channel) {
     name = channel.name;
@@ -53,42 +60,38 @@ function CacheLogEntry(entry) {
   obj.label = "" + name;
   const items = [combined, combined1, str3, str7, str11];
   obj.subLabel = items.join("\n");
-  return closure_5(require(dependencyMap[5]).TableRow, obj);
+  return closure_5(require(5165) /* TableRowInner */.TableRow, obj);
 }
-const ScrollView = require(dependencyMap[0]).ScrollView;
-let closure_4 = importDefault(dependencyMap[1]);
-const _module = require(dependencyMap[2]);
-({ jsx: closure_5, jsxs: closure_6 } = _module);
-const _module1 = require(dependencyMap[3]);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
+obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.contentContainer = { padding: importDefault(dependencyMap[4]).space.PX_16 };
-let closure_7 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[10]);
-const result = _module2.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsLocalMessageCache.tsx");
+obj.contentContainer = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsLocalMessageCache.tsx");
 
 export default function DevToolsLocalMessageCache() {
   const tmp = callback3();
   let obj = { style: tmp.container, contentContainerStyle: tmp.contentContainer };
   obj = { spacing: 8 };
-  obj = {};
-  const obj1 = { label: "Channels Fetched", subLabel: importDefault(dependencyMap[8]).channelsFetchStarted.size };
-  const items = [callback(require(dependencyMap[5]).TableRow, obj1), , , ];
-  const obj2 = { label: "Cache Hits", subLabel: importDefault(dependencyMap[8]).channelsFetchedWithLocalMessages.size };
-  items[1] = callback(require(dependencyMap[5]).TableRow, obj2);
-  const obj3 = { label: "Cache Misses", subLabel: importDefault(dependencyMap[8]).channelsFetchedNetwork.size - importDefault(dependencyMap[8]).channelsFetchedWithLocalMessages.size };
-  items[2] = callback(require(dependencyMap[5]).TableRow, obj3);
-  const obj4 = { label: "Incomplete Fetches", subLabel: importDefault(dependencyMap[8]).channelsFetchStarted.size - importDefault(dependencyMap[8]).channelsFetchedNetwork.size };
-  items[3] = callback(require(dependencyMap[5]).TableRow, obj4);
+  obj = { title: "Local Message Cache Stats", hasIcons: false };
+  const obj1 = { label: "Channels Fetched", subLabel: importDefault(6720).channelsFetchStarted.size };
+  const items = [callback(require(5165) /* TableRowInner */.TableRow, obj1), , , ];
+  const obj2 = { label: "Cache Hits", subLabel: importDefault(6720).channelsFetchedWithLocalMessages.size };
+  items[1] = callback(require(5165) /* TableRowInner */.TableRow, obj2);
+  const obj3 = { label: "Cache Misses", subLabel: importDefault(6720).channelsFetchedNetwork.size - importDefault(6720).channelsFetchedWithLocalMessages.size };
+  items[2] = callback(require(5165) /* TableRowInner */.TableRow, obj3);
+  const obj4 = { label: "Incomplete Fetches", subLabel: importDefault(6720).channelsFetchStarted.size - importDefault(6720).channelsFetchedNetwork.size };
+  items[3] = callback(require(5165) /* TableRowInner */.TableRow, obj4);
   obj.children = items;
-  const items1 = [callback2(require(dependencyMap[7]).TableRowGroup, obj), callback(require(dependencyMap[9]).Text, { category: false, position: false, top: false }), ];
-  const obj5 = { -9223372036854775808: "fa8fba4f08666ddc130e1c29719257b7", 9223372036854775807: "PawPrintIcon" };
-  const fetchLogs = importDefault(dependencyMap[8]).fetchLogs;
+  const items1 = [callback2(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj), callback(require(4126) /* Text */.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
+  const obj5 = { title: "Fetch Log (Reversed)", hasIcons: false };
+  const fetchLogs = importDefault(6720).fetchLogs;
   const reversed = Array.from(fetchLogs.values()).reverse();
-  obj5.children = reversed.map((entry) => callback(closure_8, { entry }, arg1));
-  items1[2] = callback(require(dependencyMap[7]).TableRowGroup, obj5);
+  obj5.children = reversed.map((entry) => outer1_5(outer1_8, { entry }, arg1));
+  items1[2] = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj5);
   obj.children = items1;
-  obj.children = callback2(require(dependencyMap[6]).Stack, obj);
+  obj.children = callback2(require(4541) /* Stack */.Stack, obj);
   return callback(ScrollView, obj);
 };

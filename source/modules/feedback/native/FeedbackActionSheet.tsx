@@ -1,30 +1,41 @@
-// Module ID: 9514
-// Function ID: 74059
+// Module ID: 9521
+// Function ID: 74100
 // Name: closeActionSheet
-// Dependencies: []
+// Dependencies: [57, 31, 27, 9500, 33, 4130, 689, 4098, 8284, 22, 9503, 4559, 4337, 9522, 1934, 1557, 5187, 5186, 5501, 5189, 4126, 9504, 5503, 5165, 9094, 1212, 2]
 // Exports: default
 
-// Module 9514 (closeActionSheet)
+// Module 9521 (closeActionSheet)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { FeedbackRating } from "FeedbackRating";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function closeActionSheet() {
-  importDefault(dependencyMap[7]).hideActionSheet();
+  importDefault(4098).hideActionSheet();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const FeedbackRating = arg1(dependencyMap[3]).FeedbackRating;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { padding: importDefault(dependencyMap[6]).space.PX_16 };
-obj.container = obj;
-obj.ratingsHeader = { textAlign: "center" };
-const tmp2 = arg1(dependencyMap[4]);
-obj.reasonsList = { marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/feedback/native/FeedbackActionSheet.tsx");
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.ratingsHeader = { textAlign: "center" };
+_createForOfIteratorHelperLoose.reasonsList = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/feedback/native/FeedbackActionSheet.tsx");
 
 export default function FeedbackActionSheet(feedbackReasons) {
+  let View;
+  let closure_11;
+  let closure_12;
+  let closure_13;
+  let closure_14;
+  let _slicedToArray;
+  let result;
   let headerLabel;
   let hideDontShowAgainCheckbox;
   let ratingOptions;
@@ -34,32 +45,27 @@ export default function FeedbackActionSheet(feedbackReasons) {
   let reasonsHeaderLabel;
   let showHeaderCloseButton;
   ({ hideDontShowAgainCheckbox, ratingsBodyLabel, reasons } = feedbackReasons);
-  const arg1 = reasons;
   feedbackReasons = feedbackReasons.feedbackReasons;
-  const importDefault = feedbackReasons;
   const otherKey = feedbackReasons.otherKey;
-  const dependencyMap = otherKey;
-  ({ trackOpen: closure_3, trackReport: closure_4, getFreeformDescription: closure_5 } = feedbackReasons);
+  ({ trackOpen: _slicedToArray, trackReport: result, getFreeformDescription: View } = feedbackReasons);
   ({ headerLabel, showHeaderCloseButton, ratingOptions, ratingTextLabels, reasonsHeaderLabel } = feedbackReasons);
-  const tmp = callback2();
+  let tmp = first1();
   const ref = React.useRef(null);
-  const FeedbackRating = ref;
-  const tmp3 = importDefault(dependencyMap[8])(reasons);
-  let obj = importDefault(dependencyMap[9]);
+  const tmp3 = feedbackReasons(otherKey[8])(reasons);
+  const callback2 = tmp3;
+  let obj = feedbackReasons(otherKey[9]);
   const tmp4 = callback(React.useState(obj.shuffle(reasons)), 2);
   const first = tmp4[0];
   let closure_8 = tmp4[1];
   const items = [reasons, tmp3, otherKey];
   const effect = React.useEffect(() => {
-    if (!obj.isEqual(tmp3, reasons)) {
+    if (!obj.isEqual(closure_7, reasons)) {
       callback4(reasons(otherKey[10]).shuffleProblems(reasons, otherKey));
       const obj2 = reasons(otherKey[10]);
-      const tmp3 = otherKey;
     }
   }, items);
   const tmp6 = callback(React.useState(null), 2);
-  const first1 = tmp6[0];
-  const callback2 = first1;
+  first1 = tmp6[0];
   let closure_10 = tmp6[1];
   [closure_11, closure_12] = callback(React.useState(null), 2);
   const tmp8 = callback(React.useState(null), 2);
@@ -67,10 +73,10 @@ export default function FeedbackActionSheet(feedbackReasons) {
   const tmp10 = callback(React.useState(false), 2);
   const first2 = tmp10[0];
   let closure_16 = tmp10[1];
-  importDefault(dependencyMap[11])(() => {
+  feedbackReasons(otherKey[11])(() => {
     callback();
   });
-  let obj1 = arg1(dependencyMap[11]);
+  let obj1 = reasons(otherKey[11]);
   const unmountEffect = obj1.useUnmountEffect(() => {
     if (closure_13) {
       let obj = {};
@@ -95,7 +101,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
     }
   });
   const items1 = [feedbackReasons];
-  const callback = React.useCallback((arg0) => {
+  callback = React.useCallback((arg0) => {
     callback5(arg0);
     if (arg0 === ref.GOOD) {
       callback6(null);
@@ -121,9 +127,9 @@ export default function FeedbackActionSheet(feedbackReasons) {
   }, items1);
   let tmp15 = null !== first1;
   if (tmp15) {
-    tmp15 = first1 !== FeedbackRating.GOOD;
+    tmp15 = first1 !== ref.GOOD;
   }
-  const bottom = importDefault(dependencyMap[15])().bottom;
+  const bottom = feedbackReasons(otherKey[15])().bottom;
   let num = 48;
   if (hideDontShowAgainCheckbox) {
     num = 0;
@@ -139,18 +145,18 @@ export default function FeedbackActionSheet(feedbackReasons) {
   let tmp21 = null;
   if (showHeaderCloseButton) {
     obj1 = { onPress: closure_10 };
-    tmp21 = tmp3(arg1(dependencyMap[18]).ActionSheetCloseButton, obj1);
+    tmp21 = callback2(reasons(otherKey[18]).ActionSheetCloseButton, obj1);
   }
   obj.trailing = tmp21;
-  obj.header = tmp3(arg1(dependencyMap[17]).BottomSheetTitleHeader, obj);
-  const obj2 = { contentContainerStyle: items2 };
-  const items2 = [tmp.container, { paddingBottom: tmp.container.padding + bottom }];
+  obj.header = callback2(reasons(otherKey[17]).BottomSheetTitleHeader, obj);
+  let obj2 = { contentContainerStyle: items2 };
+  items2 = [tmp.container, { paddingBottom: tmp.container.padding + bottom }];
   let tmp27 = null;
   if (null != ratingsBodyLabel) {
-    const obj3 = { style: tmp.ratingsHeader, children: ratingsBodyLabel };
-    tmp27 = tmp3(arg1(dependencyMap[20]).Text, obj3);
+    const obj3 = { style: tmp.ratingsHeader, variant: "text-md/medium", color: "text-default", children: ratingsBodyLabel };
+    tmp27 = callback2(reasons(otherKey[20]).Text, obj3);
   }
-  const items3 = [tmp27, tmp3(importDefault(dependencyMap[21]), { ratingOptions, textLabels: ratingTextLabels, selectedRating: first1, onChangeRating: callback }), , ];
+  const items3 = [tmp27, callback2(feedbackReasons(otherKey[21]), { ratingOptions, textLabels: ratingTextLabels, selectedRating: first1, onChangeRating: callback }), , ];
   let tmp31 = null;
   if (tmp15) {
     const obj4 = { style: tmp.reasonsList };
@@ -158,14 +164,14 @@ export default function FeedbackActionSheet(feedbackReasons) {
       title: reasonsHeaderLabel,
       hasIcons: false,
       children: first.map((label) => {
-          const reasons = label;
+          let closure_0 = label;
           let tmp;
           if (null != label.label) {
             const obj = {
               label: label.label,
               labelLineClamp: 2,
               onPress() {
-                  return callback(arg0);
+                  return outer1_17(closure_0);
                 }
             };
             tmp = tmp3(reasons(otherKey[23]).TableRow, obj, arg1);
@@ -173,22 +179,22 @@ export default function FeedbackActionSheet(feedbackReasons) {
           return tmp;
         })
     };
-    obj4.children = tmp3(arg1(dependencyMap[22]).TableRowGroup, obj5);
-    tmp31 = tmp3(View, obj4);
+    obj4.children = callback2(reasons(otherKey[22]).TableRowGroup, obj5);
+    tmp31 = callback2(View, obj4);
   }
   items3[2] = tmp31;
   let tmp36 = null;
   if (!hideDontShowAgainCheckbox) {
-    const obj6 = { 400888199: null, 2091392542: null, checked: first2 };
-    const intl = arg1(dependencyMap[25]).intl;
-    obj6.label = intl.string(arg1(dependencyMap[25]).t.5E9SB9);
+    const obj6 = { start: true, end: true, checked: first2 };
+    const intl = reasons(otherKey[25]).intl;
+    obj6.label = intl.string(reasons(otherKey[25]).t["5E9SB9"]);
     obj6.onPress = function onPress() {
       return callback8(!first2);
     };
-    tmp36 = tmp3(arg1(dependencyMap[24]).TableCheckboxRow, obj6);
+    tmp36 = callback2(reasons(otherKey[24]).TableCheckboxRow, obj6);
   }
   items3[3] = tmp36;
   obj2.children = items3;
-  obj.children = closure_8(arg1(dependencyMap[19]).BottomSheetScrollView, obj2);
-  return tmp3(arg1(dependencyMap[16]).BottomSheet, obj);
+  obj.children = closure_8(reasons(otherKey[19]).BottomSheetScrollView, obj2);
+  return callback2(reasons(otherKey[16]).BottomSheet, obj);
 };

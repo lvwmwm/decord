@@ -1,17 +1,19 @@
-// Module ID: 6810
-// Function ID: 53719
+// Module ID: 6815
+// Function ID: 53751
 // Name: ImmersiveBannerBlockRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6806, 2]
 
-// Module 6810 (ImmersiveBannerBlockRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 6815 (ImmersiveBannerBlockRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class ImmersiveBannerBlockRecord {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, ImmersiveBannerBlockRecord);
-      this.type = ImmersiveBannerBlockRecord(closure_1[2]).ShopBlockType.IMMERSIVE_BANNER;
+      tmp = outer1_2(this, ImmersiveBannerBlockRecord);
+      this.type = ImmersiveBannerBlockRecord(outer1_1[2]).ShopBlockType.IMMERSIVE_BANNER;
       ({ title: this.title, body: this.body, help_center_url: this.helpCenterUrl, text_color: this.textColor } = arg0);
       date = undefined;
       if (null != arg0.end_time) {
@@ -27,7 +29,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = ImmersiveBannerBlockRecord;
   const items = [
     {
       key: "fromServer",
@@ -37,7 +38,7 @@ const tmp2 = () => {
     }
   ];
   return callback(ImmersiveBannerBlockRecord, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/records/ImmersiveBannerBlockRecord.tsx");
+})();
+const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/ImmersiveBannerBlockRecord.tsx");
 
 export const ImmersiveBannerBlockRecord = tmp2;

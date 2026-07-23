@@ -1,16 +1,13 @@
-// Module ID: 13007
-// Function ID: 98986
+// Module ID: 13121
+// Function ID: 101142
 // Name: BaseTelemetryChannel
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 13007 (BaseTelemetryChannel)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 13121 (BaseTelemetryChannel)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("modules/telemetry_ring/native/channels/BaseTelemetryChannel.tsx");
-
-export default () => {
+const tmp2 = (() => {
   class BaseTelemetryChannel {
     constructor(arg0, arg1) {
       tmp = BaseTelemetryChannel(this, BaseTelemetryChannel);
@@ -19,7 +16,6 @@ export default () => {
       return;
     }
   }
-  let closure_0 = BaseTelemetryChannel;
   let obj = {
     key: "append",
     value(arg0, arg1, arg2, arg3) {
@@ -59,4 +55,7 @@ export default () => {
   };
   items[2] = obj;
   return callback(BaseTelemetryChannel, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/telemetry_ring/native/channels/BaseTelemetryChannel.tsx");
+
+export default tmp2;

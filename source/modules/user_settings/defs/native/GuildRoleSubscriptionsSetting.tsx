@@ -1,31 +1,31 @@
-// Module ID: 13979
-// Function ID: 106235
+// Module ID: 14093
+// Function ID: 108391
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 14094, 14095, 10095, 1212, 14096, 14098, 2]
 
-// Module 13979 (route)
-let closure_3 = require(dependencyMap[2]).UserGuildRoleSubscriptionRelationship;
-const _module = require(dependencyMap[4]);
-let obj = {
+// Module 14093 (route)
+import { UserGuildRoleSubscriptionRelationship as closure_3 } from "MAX_SUBSCRIPTION_TIERS";
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[5]).intl;
-    return intl.string(require(dependencyMap[5]).t.trSpHX);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.trSpHX);
   },
-  parent: require(dependencyMap[0]).MobileSetting.PREMIUM,
-  IconComponent: require(dependencyMap[6]).TicketIcon,
+  parent: require("MobileSetting").MobileSetting.PREMIUM,
+  IconComponent: require("TicketIcon").TicketIcon,
   usePredicate: function useHasGuildRoleSubscriptionsSetting() {
-    return importDefault(dependencyMap[3])() === constants.SUBSCRIBED;
+    return importDefault(14095)() === constants.SUBSCRIBED;
   },
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS,
+  route: require("ME").UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS,
   getComponent() {
-    return require(dependencyMap[7]).default;
+    return require(14098) /* GuildRoleSubscriptionsSectionHeader */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[8]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/GuildRoleSubscriptionsSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("MAX_SUBSCRIPTION_TIERS").fileFinishedImporting("modules/user_settings/defs/native/GuildRoleSubscriptionsSetting.tsx");
 
 export default route;

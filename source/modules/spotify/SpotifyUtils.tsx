@@ -1,53 +1,64 @@
-// Module ID: 10891
-// Function ID: 84657
+// Module ID: 10901
+// Function ID: 84706
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 4150, 10902, 4811, 8311, 653, 664, 4814, 10903, 10904, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 10891 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10901 (_createForOfIteratorHelperLoose)
+import ME from "ME";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import spotifyUtmParams from "spotifyUtmParams";
+import { PlatformTypes } from "ME";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +69,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -96,18 +107,11 @@ function asString(arg0) {
 function _getSpotifyMetadataFromActivity() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getSpotifyMetadataFromActivity = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ SPOTIFY_APP_PROTOCOL: closure_7, SpotifyResourceTypes: closure_8, getSpotifyResourceType: closure_9 } = arg1(dependencyMap[4]));
-const PlatformTypes = arg1(dependencyMap[5]).PlatformTypes;
-let closure_11 = 30 * importDefault(dependencyMap[6]).Millis.SECOND;
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/spotify/SpotifyUtils.tsx");
+({ SPOTIFY_APP_PROTOCOL: closure_7, SpotifyResourceTypes: closure_8, getSpotifyResourceType: closure_9 } = spotifyUtmParams);
+let closure_11 = 30 * require("set").Millis.SECOND;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/spotify/SpotifyUtils.tsx");
 
 export const isSpotifyPlayable = function isSpotifyPlayable(getActiveSocketAndDevice) {
   let isProtocolRegisteredResult = null != getActiveSocketAndDevice.getActiveSocketAndDevice();
@@ -124,35 +128,37 @@ export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
     return Promise.resolve(activeSocketAndDevice);
   } else if (closure_5.isProtocolRegistered()) {
     const playableComputerDevices = store.getPlayableComputerDevices();
-    const arg1 = playableComputerDevices;
-    let obj = importDefault(dependencyMap[7]);
+    let obj = importDefault(4814);
     if (observedAppRunning.isObservedAppRunning(obj.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        arg1(dependencyMap[8]).setActiveDevice(socket.accountId, device.id);
+        playableComputerDevices(10903).setActiveDevice(socket.accountId, device.id);
         obj = { socket, device };
         return Promise.resolve(obj);
       }
     }
     const promise = new Promise((arg0, arg1) => {
-      const playableComputerDevices = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function onSpotifyStoreChange() {
         let done;
         function _loop(socket, device) {
-          if (null == socket.find((device) => device.device.id === arg1.id)) {
+          let closure_0 = socket;
+          let closure_1 = device;
+          if (null == closure_0.find((device) => device.device.id === device.id)) {
             const _clearTimeout = clearTimeout;
-            clearTimeout(closure_2);
-            closure_6.removeChangeListener(closure_3);
+            clearTimeout(outer1_2);
+            outer3_6.removeChangeListener(outer1_3);
             const _setImmediate = setImmediate;
             setImmediate(() => {
-              let obj = arg0(closure_2[8]);
-              obj.setActiveDevice(arg0.accountId, arg1.id);
-              obj = { socket: arg0, device: arg1 };
-              arg0(obj);
+              let obj = playableComputerDevices(outer4_2[8]);
+              obj.setActiveDevice(socket.accountId, device.id);
+              obj = { socket, device };
+              outer2_0(obj);
             });
           }
         }
-        const tmp = callback(closure_6.getPlayableComputerDevices());
+        const tmp = outer2_12(outer2_6.getPlayableComputerDevices());
         let iter = tmp();
         if (!iter.done) {
           do {
@@ -165,17 +171,17 @@ export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
         }
       }
       const timeout = setTimeout(() => {
-        closure_6.removeChangeListener(onSpotifyStoreChange);
+        outer2_6.removeChangeListener(onSpotifyStoreChange);
         const error = new Error("timeout launching spotify");
-        arg1(error);
-      }, closure_11);
-      closure_6.addChangeListener(onSpotifyStoreChange);
-      window.open("" + closure_7 + ":");
+        callback(error);
+      }, outer1_11);
+      outer1_6.addChangeListener(onSpotifyStoreChange);
+      window.open("" + outer1_7 + ":");
     });
     return promise;
   } else {
     const _Error = Error;
-    const error = new Error("protocol is not registered");
+    let error = new Error("protocol is not registered");
     return Promise.reject(error);
   }
 };
@@ -190,16 +196,15 @@ export const isSpotifyPremium = function isSpotifyPremium() {
 export const ensureSpotifyPremium = function ensureSpotifyPremium() {
   const activeSocketAndDevice = store.getActiveSocketAndDevice();
   if (null == activeSocketAndDevice) {
-    const _Error = Error;
-    const error = new Error("no active profile");
+    let _Error = Error;
+    let error = new Error("no active profile");
     return Promise.reject(error);
   } else {
     const socket = activeSocketAndDevice.socket;
-    const arg1 = socket;
     if (socket.isPremium) {
       let resolved = Promise.resolve();
     } else {
-      const profile = arg1(dependencyMap[8]).getProfile(socket.accountId, socket.accessToken);
+      const profile = socket(10903).getProfile(socket.accountId, socket.accessToken);
       resolved = profile.then(() => {
         if (!socket.isPremium) {
           const _Error = Error;
@@ -207,11 +212,11 @@ export const ensureSpotifyPremium = function ensureSpotifyPremium() {
           return Promise.reject(error);
         }
       });
-      const obj = arg1(dependencyMap[8]);
+      const obj = socket(10903);
     }
     return resolved;
   }
 };
-export const getSpotifyMetadataFromActivity = function getSpotifyMetadataFromActivity(arg0, arg1) {
+export const getSpotifyMetadataFromActivity = function getSpotifyMetadataFromActivity(closure_0, closure_1) {
   return _getSpotifyMetadataFromActivity(...arguments);
 };

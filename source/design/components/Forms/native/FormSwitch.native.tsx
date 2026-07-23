@@ -1,36 +1,38 @@
-// Module ID: 5502
-// Function ID: 46907
+// Module ID: 5505
+// Function ID: 46930
 // Name: FormSwitch
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 3991, 4130, 689, 4545, 3849, 1324, 4542, 4546, 3834, 5506, 5507, 4099, 4100, 2]
 // Exports: FormSwitch
 
-// Module 5502 (FormSwitch)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = importDefault(dependencyMap[4]).createAnimatedComponent(arg1(dependencyMap[2]).Pressable);
-let obj1 = arg1(dependencyMap[5]);
+// Module 5505 (FormSwitch)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
+import getIconSize from "getIconSize";
+import importDefaultResult1 from "module_3991";
+
+let require = arg1;
+let closure_6 = require("module_3991").createAnimatedComponent(require("get ActivityIndicator").Pressable);
 let obj = {};
-obj = { width: importDefault(dependencyMap[6]).modules.mobile.CONTROL_SWITCH_WIDTH, height: importDefault(dependencyMap[6]).modules.mobile.CONTROL_SWITCH_HEIGHT, padding: importDefault(dependencyMap[6]).space.PX_4 - 1, flexGrow: 0, flexShrink: 0, borderRadius: importDefault(dependencyMap[6]).radii.lg, borderWidth: 1 };
+obj = { width: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_WIDTH, height: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_HEIGHT, padding: require("_createForOfIteratorHelperLoose").space.PX_4 - 1, flexGrow: 0, flexShrink: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 1 };
 obj.switch = obj;
-obj1 = { tintColor: importDefault(dependencyMap[6]).colors.SWITCH_BACKGROUND_DEFAULT, borderColor: importDefault(dependencyMap[6]).colors.SWITCH_BORDER_DEFAULT };
-obj.unselectedBackground = obj1;
-const importDefaultResult = importDefault(dependencyMap[4]);
-obj.unselectedIcon = { tintColor: importDefault(dependencyMap[6]).colors.SWITCH_THUMB_ICON_DEFAULT };
-const obj2 = { tintColor: importDefault(dependencyMap[6]).colors.SWITCH_THUMB_ICON_DEFAULT };
-obj.selectedIcon = { tintColor: importDefault(dependencyMap[6]).colors.SWITCH_THUMB_ICON_ACTIVE };
-const obj3 = { tintColor: importDefault(dependencyMap[6]).colors.SWITCH_THUMB_ICON_ACTIVE };
-obj.selected = { tintColor: importDefault(dependencyMap[6]).colors.SWITCH_BACKGROUND_SELECTED_DEFAULT, borderColor: importDefault(dependencyMap[6]).colors.SWITCH_BORDER_SELECTED_DEFAULT };
-const obj4 = { tintColor: importDefault(dependencyMap[6]).colors.SWITCH_BACKGROUND_SELECTED_DEFAULT, borderColor: importDefault(dependencyMap[6]).colors.SWITCH_BORDER_SELECTED_DEFAULT };
-obj.knob = { height: importDefault(dependencyMap[6]).modules.mobile.CONTROL_SWITCH_KNOB_SIZE, width: importDefault(dependencyMap[6]).modules.mobile.CONTROL_SWITCH_KNOB_SIZE, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[6]).radii.round };
-let closure_7 = obj1.createStyles(obj);
-const obj5 = { height: importDefault(dependencyMap[6]).modules.mobile.CONTROL_SWITCH_KNOB_SIZE, width: importDefault(dependencyMap[6]).modules.mobile.CONTROL_SWITCH_KNOB_SIZE, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[6]).radii.round };
-let closure_8 = importDefault(dependencyMap[4]).createAnimatedComponent(importDefault(dependencyMap[7]));
+_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BACKGROUND_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BORDER_DEFAULT };
+obj.unselectedBackground = _createForOfIteratorHelperLoose;
+obj.unselectedIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_THUMB_ICON_DEFAULT };
+let obj2 = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_THUMB_ICON_DEFAULT };
+obj.selectedIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_THUMB_ICON_ACTIVE };
+let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_THUMB_ICON_ACTIVE };
+obj.selected = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BACKGROUND_SELECTED_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BORDER_SELECTED_DEFAULT };
+let obj4 = { tintColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BACKGROUND_SELECTED_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.SWITCH_BORDER_SELECTED_DEFAULT };
+obj.knob = { height: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, width: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+const obj5 = { height: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, width: require("_createForOfIteratorHelperLoose").modules.mobile.CONTROL_SWITCH_KNOB_SIZE, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
 let closure_9 = { code: "function FormSwitchNativeTsx1(){const{withSpring,checked,selected,unselectedBackground,SUBTLE_SPRING}=this.__closure;return{backgroundColor:withSpring(checked?selected.tintColor:unselectedBackground.tintColor,SUBTLE_SPRING,'animate-always'),borderColor:withSpring(checked?selected.borderColor:unselectedBackground.borderColor,SUBTLE_SPRING,'animate-always')};}" };
 let closure_10 = { code: "function FormSwitchNativeTsx2(){const{withSpring,checked,knobCheckedLeft,SUBTLE_SPRING,knobSelectedBackgroundColor,knobBackgroundColor}=this.__closure;return{left:withSpring(checked?knobCheckedLeft:0,SUBTLE_SPRING,'animate-always'),backgroundColor:withSpring(checked?knobSelectedBackgroundColor:knobBackgroundColor,SUBTLE_SPRING,'animate-always')};}" };
 let closure_11 = { code: "function FormSwitchNativeTsx3(){const{useReducedMotion,checked,on,off,withSpring,SUBTLE_SPRING}=this.__closure;const scale=useReducedMotion?1:checked?on:off;return{opacity:withSpring(checked?on:off,SUBTLE_SPRING,'animate-always'),transform:[{scale:withSpring(scale,SUBTLE_SPRING)}]};}" };
-const importDefaultResult1 = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("design/components/Forms/native/FormSwitch.native.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Forms/native/FormSwitch.native.tsx");
 
 export const FormSwitch = function FormSwitch(onValueChange) {
   let accessibilityHint;
@@ -39,16 +41,16 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   let tmp;
   let value;
   function useIconAnimation(on, off) {
-    const value = on;
-    const onValueChange = off;
+    let closure_0 = on;
+    let closure_1 = off;
     let obj = value(enabled[4]);
     const fn = function n() {
-      if (closure_2) {
-        let obj = { opacity: arg0(closure_2[10]).withSpring(closure_3 ? arg0 : arg1, arg0(closure_2[11]).SUBTLE_SPRING, "animate-always") };
+      if (outer1_2) {
+        let obj = { opacity: value(enabled[10]).withSpring(outer1_3 ? closure_0 : closure_1, value(enabled[11]).SUBTLE_SPRING, "animate-always") };
         obj = {};
-        const obj2 = arg0(closure_2[10]);
-        const tmp6 = closure_3 ? arg0 : arg1;
-        obj.scale = arg0(closure_2[10]).withSpring(1, arg0(closure_2[11]).SUBTLE_SPRING);
+        const obj2 = value(enabled[10]);
+        const tmp6 = outer1_3 ? closure_0 : closure_1;
+        obj.scale = value(enabled[10]).withSpring(1, value(enabled[11]).SUBTLE_SPRING);
         const items = [obj];
         obj.transform = items;
         return obj;
@@ -57,36 +59,33 @@ export const FormSwitch = function FormSwitch(onValueChange) {
     obj = { useReducedMotion: enabled, checked: first, on, off, withSpring: value(enabled[10]).withSpring, SUBTLE_SPRING: value(enabled[11]).SUBTLE_SPRING };
     fn.__closure = obj;
     fn.__workletHash = 14329332652102;
-    fn.__initData = closure_11;
+    fn.__initData = outer1_11;
     return obj.useAnimatedStyle(fn);
   }
   ({ disabled, value } = onValueChange);
-  const arg1 = value;
-  const importDefault = onValueChange.onValueChange;
+  const require = value;
+  onValueChange = onValueChange.onValueChange;
   ({ accessibilityLabel, accessibilityHint, aria-hidden: tmp } = onValueChange);
-  const context = React.useContext(arg1(dependencyMap[8]).AccessibilityPreferencesContext);
-  const dependencyMap = context.reducedMotion.enabled;
-  const tmp3 = callback(React.useState(value), 2);
-  const first = tmp3[0];
-  const callback = first;
-  const React = tmp3[1];
-  const items = [value];
+  const context = React.useContext(require(enabled[8]).AccessibilityPreferencesContext);
+  enabled = context.reducedMotion.enabled;
+  const tmp3 = first(React.useState(value), 2);
+  first = tmp3[0];
+  React = tmp3[1];
+  let items = [value];
   const effect = React.useEffect(() => {
-    callback(value);
+    callback(closure_0);
   }, items);
-  const tmp6 = importDefault(dependencyMap[9])("FormSwitch");
+  let tmp6 = onValueChange(enabled[9])("FormSwitch");
   const jsx = tmp6;
-  const tmp7 = callback2();
+  const tmp7 = unselectedBackground();
   const selected = tmp7.selected;
-  let closure_6 = selected;
-  const unselectedBackground = tmp7.unselectedBackground;
-  const callback2 = unselectedBackground;
-  let obj = arg1(dependencyMap[4]);
+  unselectedBackground = tmp7.unselectedBackground;
+  let obj = require(enabled[4]);
   class G {
     constructor() {
       obj = {};
       obj2 = value(enabled[10]);
-      if (closure_3) {
+      if (_slicedToArray) {
         tmp2 = selected;
         tintColor = selected.tintColor;
       } else {
@@ -95,7 +94,7 @@ export const FormSwitch = function FormSwitch(onValueChange) {
       }
       obj.backgroundColor = obj2.withSpring(tintColor, value(enabled[11]).SUBTLE_SPRING, "animate-always");
       obj3 = value(enabled[10]);
-      if (closure_3) {
+      if (_slicedToArray) {
         tmp4 = selected;
         borderColor = selected.borderColor;
       } else {
@@ -106,21 +105,18 @@ export const FormSwitch = function FormSwitch(onValueChange) {
       return obj;
     }
   }
-  obj = { withSpring: arg1(dependencyMap[10]).withSpring, checked: first, selected, unselectedBackground, SUBTLE_SPRING: arg1(dependencyMap[11]).SUBTLE_SPRING };
+  obj = { withSpring: require(enabled[10]).withSpring, checked: first, selected, unselectedBackground, SUBTLE_SPRING: require(enabled[11]).SUBTLE_SPRING };
   G.__closure = obj;
   G.__workletHash = 2232234503354;
-  G.__initData = closure_9;
+  G.__initData = token1;
   const animatedStyle = obj.useAnimatedStyle(G);
-  let obj2 = arg1(dependencyMap[12]);
-  const token = obj2.useToken(importDefault(dependencyMap[6]).modules.mobile.CONTROL_SWITCH_KNOB_CHECKED_OFFSET);
-  let closure_8 = token;
-  let obj3 = arg1(dependencyMap[12]);
-  const token1 = obj3.useToken(importDefault(dependencyMap[6]).colors.SWITCH_THUMB_BACKGROUND_DEFAULT);
-  closure_9 = token1;
-  let obj4 = arg1(dependencyMap[12]);
-  const token2 = obj4.useToken(importDefault(dependencyMap[6]).colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT);
-  let closure_10 = token2;
-  const fn = function f() {
+  let obj2 = require(enabled[12]);
+  const token = obj2.useToken(onValueChange(enabled[6]).modules.mobile.CONTROL_SWITCH_KNOB_CHECKED_OFFSET);
+  let obj3 = require(enabled[12]);
+  token1 = obj3.useToken(onValueChange(enabled[6]).colors.SWITCH_THUMB_BACKGROUND_DEFAULT);
+  let obj4 = require(enabled[12]);
+  const token2 = obj4.useToken(onValueChange(enabled[6]).colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT);
+  let fn = function f() {
     const obj = {};
     let num = 0;
     if (first) {
@@ -131,11 +127,11 @@ export const FormSwitch = function FormSwitch(onValueChange) {
     obj.backgroundColor = value(enabled[10]).withSpring(first ? token2 : token1, value(enabled[11]).SUBTLE_SPRING, "animate-always");
     return obj;
   };
-  obj = { withSpring: arg1(dependencyMap[10]).withSpring, checked: first, knobCheckedLeft: token, SUBTLE_SPRING: arg1(dependencyMap[11]).SUBTLE_SPRING, knobSelectedBackgroundColor: token2, knobBackgroundColor: token1 };
+  obj = { withSpring: require(enabled[10]).withSpring, checked: first, knobCheckedLeft: token, SUBTLE_SPRING: require(enabled[11]).SUBTLE_SPRING, knobSelectedBackgroundColor: token2, knobBackgroundColor: token1 };
   fn.__closure = obj;
   fn.__workletHash = 3687946563898;
-  fn.__initData = closure_10;
-  const animatedStyle1 = arg1(dependencyMap[4]).useAnimatedStyle(fn);
+  fn.__initData = token2;
+  const animatedStyle1 = require(enabled[4]).useAnimatedStyle(fn);
   const iconAnimation = useIconAnimation(1, 0);
   let tmp15 = tmp6;
   const iconAnimation1 = useIconAnimation(0, 1);
@@ -147,10 +143,10 @@ export const FormSwitch = function FormSwitch(onValueChange) {
     const items1 = [tmp7.switch, animatedStyle];
     obj1.style = items1;
     obj1.onPress = function onPress() {
-      if (tmp6) {
+      if (closure_5) {
         const triggerHapticFeedback = value(enabled[15]).triggerHapticFeedback;
         const tmp6 = onValueChange(enabled[16]);
-        if (value) {
+        if (closure_0) {
           const result = triggerHapticFeedback(tmp6.TOGGLE_OFF);
         } else {
           const result1 = triggerHapticFeedback(tmp6.TOGGLE_ON);
@@ -158,32 +154,32 @@ export const FormSwitch = function FormSwitch(onValueChange) {
         const tmp4 = value(enabled[15]);
       }
       if (null != onValueChange) {
-        onValueChange(!value);
+        onValueChange(!closure_0);
       }
     };
     obj1.disabled = disabled;
     obj1.accessible = true;
-    obj1.aria-hidden = tmp;
+    obj1["aria-hidden"] = tmp;
     obj1.accessibilityRole = "switch";
     obj1.accessibilityLabel = accessibilityLabel;
     obj1.accessibilityHint = accessibilityHint;
     obj2 = { disabled, checked: first };
     obj1.accessibilityState = obj2;
     obj1.onAccessibilityTap = function onAccessibilityTap() {
-      if (tmp6) {
+      if (closure_5) {
         const triggerHapticFeedback = value(enabled[15]).triggerHapticFeedback;
         const tmp6 = onValueChange(enabled[16]);
-        if (value) {
+        if (closure_0) {
           const result = triggerHapticFeedback(tmp6.TOGGLE_OFF);
         } else {
           const result1 = triggerHapticFeedback(tmp6.TOGGLE_ON);
         }
         const tmp4 = value(enabled[15]);
       }
-      callback(!value);
+      callback(!closure_0);
       const timerId = setTimeout(() => {
-        if (null != callback) {
-          callback(!closure_0);
+        if (null != outer1_1) {
+          outer1_1(!outer1_0);
         }
       });
     };
@@ -191,8 +187,8 @@ export const FormSwitch = function FormSwitch(onValueChange) {
     const items2 = [tmp7.knob, animatedStyle1];
     obj3.style = items2;
     obj3.children = null;
-    obj1.children = jsx(importDefault(dependencyMap[4]).View, obj3);
-    return <closure_6 {...obj1} />;
+    obj1.children = jsx(onValueChange(enabled[4]).View, {});
+    return <selected />;
   } else {
     obj4 = {};
     if (!first) {
@@ -202,8 +198,8 @@ export const FormSwitch = function FormSwitch(onValueChange) {
       obj4.style = items3;
       tmp16(tmp17, obj4);
     }
-    obj4.source = importDefault(dependencyMap[13]);
-    let selectedIcon = importDefault(dependencyMap[7]).Sizes;
+    obj4.source = onValueChange(enabled[13]);
+    let selectedIcon = onValueChange(enabled[7]).Sizes;
     obj4.size = tmp6 ? selectedIcon.SMALL_20 : selectedIcon.SMALL;
     selectedIcon = tmp7.selectedIcon;
     const items4 = [selectedIcon, iconAnimation];

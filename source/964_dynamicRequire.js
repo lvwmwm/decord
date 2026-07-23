@@ -1,15 +1,18 @@
 // Module ID: 964
-// Function ID: 10431
+// Function ID: 10432
 // Name: dynamicRequire
-// Dependencies: []
+// Dependencies: [965]
 
 // Module 964 (dynamicRequire)
+const require = arg1;
+let dependencyMap = arg4;
+dependencyMap = arg6;
 function dynamicRequire(require) {
   return require.require(arg1);
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.isNodeEnv = function isNodeEnv() {
-  let tmp = !arg1(arg6[0]).isBrowserBundle();
+  let tmp = !require(965) /* getSDKSource */.isBrowserBundle();
   if (tmp) {
     const _Object = Object;
     const _process = process;
@@ -40,9 +43,9 @@ arg5.loadModule = function loadModule(arg0) {
         let str2 = "";
         let str3 = "/node_modules/";
         tmp6 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
-        // break
+        break;
       }
     }
   }
-  tmp = arg4;
+  tmp = dependencyMap;
 };

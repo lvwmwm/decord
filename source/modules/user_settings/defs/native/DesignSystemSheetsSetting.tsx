@@ -1,26 +1,25 @@
-// Module ID: 14348
-// Function ID: 108340
+// Module ID: 14462
+// Function ID: 110493
 // Name: route
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [7662, 653, 10095, 14463, 2]
 
-// Module 14348 (route)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14462 (route)
+import createToggle from "createToggle";
 
-let obj = {
+obj = {
   useTitle() {
     return "Sheets";
   },
-  parent: require("__exportStarResult1").MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require("__exportStarResult1").UserSettingsSections.DESIGN_SYSTEM_SHEETS,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_SHEETS,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14463) /* DemoActionSheet */.default;
   }
 };
-const route = __exportStarResult1.createRoute(obj);
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemSheetsSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemSheetsSetting.tsx");
 
 export default route;

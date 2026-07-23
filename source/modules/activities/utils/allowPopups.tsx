@@ -1,13 +1,13 @@
-// Module ID: 10602
-// Function ID: 82738
+// Module ID: 10612
+// Function ID: 82788
 // Name: allowPopups
-// Dependencies: []
+// Dependencies: [4155, 2]
 // Exports: allowPopups
 
-// Module 10602 (allowPopups)
-let closure_0 = require(dependencyMap[0]).APPLICATIONS_WITH_ALLOWED_POPUPS;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/activities/utils/allowPopups.tsx");
+// Module 10612 (allowPopups)
+import { APPLICATIONS_WITH_ALLOWED_POPUPS as closure_0 } from "items3";
+
+const result = require("set").fileFinishedImporting("modules/activities/utils/allowPopups.tsx");
 
 export const allowPopups = function allowPopups(application) {
   let flag = application;
@@ -25,7 +25,7 @@ export const allowPopups = function allowPopups(application) {
       }
       flag = true;
       let tmp5 = true === prop;
-      const tmp7 = prop == embeddedActivityConfig;
+      tmp7 = prop == embeddedActivityConfig;
     } else {
       tmp5 = "embedded_activity_config" in flag;
       if (tmp5) {

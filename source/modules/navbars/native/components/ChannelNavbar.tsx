@@ -1,10 +1,31 @@
-// Module ID: 11795
-// Function ID: 91552
+// Module ID: 11805
+// Function ID: 91601
 // Name: ChannelTitleContent
-// Dependencies: []
+// Dependencies: [31, 27, 4808, 1352, 1348, 1838, 4217, 3767, 1849, 653, 1355, 1345, 33, 4130, 5052, 689, 566, 1212, 4593, 4320, 9063, 11806, 11807, 1273, 10115, 11808, 5085, 10113, 9348, 4660, 4126, 3969, 7882, 8474, 3946, 1334, 9642, 11809, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 11795 (ChannelTitleContent)
+// Module 11805 (ChannelTitleContent)
+import importAllResult from "conceal";
+import { View } from "registerAsset";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { THREAD_CHANNEL_TYPES } from "_callSuper";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { StaticChannelRoute } from "set";
+import ContentDismissActionType from "ContentDismissActionType";
+import jsxProd from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+const require = arg1;
 function ChannelTitleContent(arg0) {
   let accessibleTitle;
   let icon;
@@ -18,16 +39,16 @@ function ChannelTitleContent(arg0) {
   if (null != icon) {
     let tmp4 = icon;
     if (!importAllResult.isValidElement(icon)) {
-      let obj = { size: arg1(dependencyMap[23]).Icon.Sizes.CUSTOM, source: icon, style: tmp.channelIcon, color: tmp.channelIconColor.color };
-      tmp4 = callback(arg1(dependencyMap[23]).Icon, obj);
+      let obj = { size: require(1273) /* Button */.Icon.Sizes.CUSTOM, source: icon, style: tmp.channelIcon, color: tmp.channelIconColor.color };
+      tmp4 = callback(require(1273) /* Button */.Icon, obj);
     }
     tmp2 = tmp4;
   }
   let tmp8 = title;
   if (!importAllResult.isValidElement(title)) {
     obj = { style: tmp.channelNameContainer };
-    obj = { style: tmp.channelName, accessibilityLabel: accessibleTitle, children: title };
-    obj.children = callback(arg1(dependencyMap[30]).Text, obj);
+    obj = { style: tmp.channelName, lineClamp: 1, variant: "heading-md/bold", color: "mobile-text-heading-primary", accessibilityLabel: accessibleTitle, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: title };
+    obj.children = callback(require(4126) /* Text */.Text, obj);
     tmp8 = callback(View, obj);
   }
   const obj1 = { style: tmp.flexRow };
@@ -42,27 +63,26 @@ function ChannelTitleContent(arg0) {
 }
 function ParentChannelSubTitle(parentChannel) {
   parentChannel = parentChannel.parentChannel;
-  let obj = { style: callback3().navbarTitleSecondaryText };
-  const intl = arg1(dependencyMap[17]).intl;
+  let obj = { lineClamp: 1, style: callback3().navbarTitleSecondaryText, accessibilityLabel: null, maxFontSizeMultiplier: 1, variant: "text-xs/medium", color: "text-muted" };
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = {};
   const tmp = callback3();
-  obj.channelName = arg1(dependencyMap[19]).computeChannelName(parentChannel, closure_11, closure_10);
-  obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[17]).t.BjYvHO, obj);
-  const obj3 = arg1(dependencyMap[19]);
-  obj.children = arg1(dependencyMap[19]).computeChannelName(parentChannel, closure_11, closure_10, true);
-  return callback(arg1(dependencyMap[30]).Text, obj);
+  obj.channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(parentChannel, closure_11, closure_10);
+  obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.BjYvHO, obj);
+  const obj3 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+  obj.children = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(parentChannel, closure_11, closure_10, true);
+  return callback(require(4126) /* Text */.Text, obj);
 }
 function DMChannelName(userId) {
   userId = userId.userId;
-  const arg1 = userId;
-  let obj = arg1(dependencyMap[16]);
+  let obj = userId(566);
   const items = [closure_11, closure_10];
   const items1 = [userId];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let nickname = nickname.getNickname(userId);
+    let nickname = outer1_10.getNickname(userId);
     if (null == nickname) {
-      nickname = callback(closure_2[31]).getName(tmp2);
-      const obj = callback(closure_2[31]);
+      nickname = outer1_1(outer1_2[31]).getName(tmp2);
+      const obj = outer1_1(outer1_2[31]);
     }
     let str = "";
     if (null != nickname) {
@@ -70,64 +90,49 @@ function DMChannelName(userId) {
     }
     return str;
   }, items1);
-  obj = { get: null, ty: 0, jsxs: 40, string: 40, guildId: 73, style: userId.style };
-  const intl = arg1(dependencyMap[17]).intl;
-  obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[17]).t.fYqXVY, { channelName: stateFromStores });
+  obj = { numberOfLines: 1, style: userId.style, accessibilityLabel: null, maxFontSizeMultiplier: 1, accessibilityRole: "header" };
+  const intl = userId(1212).intl;
+  obj.accessibilityLabel = intl.formatToPlainString(userId(1212).t.fYqXVY, { channelName: stateFromStores });
   obj.children = stateFromStores;
-  return callback(arg1(dependencyMap[23]).LegacyText, obj);
+  return callback(userId(1273).LegacyText, obj);
 }
 function ConnectedStatus(userId) {
   let isMobileOnline;
   let isVROnline;
   let status;
   let streaming;
-  const arg1 = userId.userId;
-  let obj = arg1(dependencyMap[16]);
+  userId = userId.userId;
+  let obj = userId(566);
   const items = [closure_9];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const obj = { status: store.getStatus(userId), isMobileOnline: store.isMobileOnline(userId), isVROnline: store.isVROnline(userId), streaming: callback(closure_2[32])(store.getActivities(userId)) };
+    const obj = { status: outer1_9.getStatus(userId), isMobileOnline: outer1_9.isMobileOnline(userId), isVROnline: outer1_9.isVROnline(userId), streaming: outer1_1(outer1_2[32])(outer1_9.getActivities(userId)) };
     return obj;
   });
   ({ status, isMobileOnline, isVROnline, streaming } = stateFromStoresObject);
-  obj = { isMobileOnline, isVROnline, status, streaming, size: arg1(dependencyMap[23]).StatusSizes.SMALL, style: userId.style };
-  return callback(arg1(dependencyMap[23]).Status, obj);
+  obj = { isMobileOnline, isVROnline, status, streaming, size: userId(1273).StatusSizes.SMALL, style: userId.style };
+  return callback(userId(1273).Status, obj);
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const THREAD_CHANNEL_TYPES = arg1(dependencyMap[3]).THREAD_CHANNEL_TYPES;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-const tmp2 = arg1(dependencyMap[9]);
-const ChannelTypes = tmp2.ChannelTypes;
-const StaticChannelRoute = arg1(dependencyMap[10]).StaticChannelRoute;
-({ ContentDismissActionType: closure_14, DismissibleContentGroupName: closure_15 } = arg1(dependencyMap[11]));
-const tmp3 = arg1(dependencyMap[11]);
-({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[12]));
-let obj1 = arg1(dependencyMap[13]);
-let obj = { navbarTitleContainer: { "Bool(true)": null, "Bool(true)": false, "Bool(true)": "gr", "Bool(true)": null } };
+const ChannelTypes = ME.ChannelTypes;
+({ ContentDismissActionType: closure_14, DismissibleContentGroupName: closure_15 } = ContentDismissActionType);
+({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
+let obj = { navbarTitleContainer: { height: "100%", flex: 1, flexDirection: "row", alignItems: "center" } };
 obj = {};
-const tmp4 = arg1(dependencyMap[12]);
-const merged = Object.assign(importDefault(dependencyMap[14])(tmp2.Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[15]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
+const merged = Object.assign(require("createTextStyle")(ME.Fonts.DISPLAY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 obj["flexShrink"] = 1;
 obj.navbarTitlePrimaryText = obj;
-obj1 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, color: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
-obj.navbarTitleSecondaryText = obj1;
-obj.channelIcon = {};
-const importDefaultResult = importDefault(dependencyMap[14]);
-obj.channelIconColor = { color: importDefault(dependencyMap[15]).colors.CHANNEL_ICON };
-const obj2 = { color: importDefault(dependencyMap[15]).colors.CHANNEL_ICON };
-obj.homeIcon = { tintColor: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose = { fontSize: 12, lineHeight: 16, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, marginTop: -4 };
+obj.navbarTitleSecondaryText = _createForOfIteratorHelperLoose;
+obj.channelIcon = { height: 18, width: 18, marginRight: 8 };
+obj.channelIconColor = { color: require("_createForOfIteratorHelperLoose").colors.CHANNEL_ICON };
+let obj3 = { height: 20, width: 20, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, marginTop: 0, marginRight: 8 };
+obj.homeIcon = obj3;
 obj.premiumIcon = { marginRight: 4 };
-obj.status = { logMessageGiftIntentShown: false, categorySkuId: false };
-obj.channelTextContainer = { "Bool(true)": "<string:2491613185>", "Bool(true)": "<string:2941583362>" };
+obj.status = { marginLeft: 1, marginTop: 4 };
+obj.channelTextContainer = { flex: 1, flexGrow: 1 };
 obj.channelNameContainer = { flexGrow: 1 };
 obj.channelName = { textAlign: "left" };
-obj.flexRow = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-let closure_18 = obj1.createStyles(obj);
+obj.flexRow = { flexDirection: "row", alignItems: "center" };
+let closure_18 = _createForOfIteratorHelperLoose.createStyles(obj);
 function ChannelTitleWrapper(arg0) {
   let children;
   let onPressTitle;
@@ -150,52 +155,49 @@ function ChannelTitleWrapper(arg0) {
       return null;
     };
     obj.children = children;
-    tmp5 = callback(arg1(dependencyMap[29]).PressableOpacity, obj);
+    tmp5 = callback(require(4660) /* PressableBase */.PressableOpacity, obj);
   }
   return tmp5;
 }
-const obj3 = { tintColor: importDefault(dependencyMap[15]).colors.TEXT_MUTED };
+let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.CHANNEL_ICON };
 const memoResult = importAllResult.memo((threadDraft) => {
   let channelId;
   let onPressTitle;
   ({ onPressTitle, channelId } = threadDraft);
-  const arg1 = channelId;
   threadDraft = threadDraft.threadDraft;
-  const importDefault = threadDraft;
   const style = threadDraft.style;
   let channelName = callback3();
-  let obj = arg1(dependencyMap[16]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => connected.isConnected());
-  let obj1 = arg1(dependencyMap[16]);
+  let obj = channelId(stateFromStores1[16]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.isConnected());
+  let obj1 = channelId(stateFromStores1[16]);
   const items1 = [closure_7];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => {
+  stateFromStores1 = obj1.useStateFromStores(items1, () => {
     let channel = null;
-    if (channelId !== constants.GUILD_HOME) {
+    if (channelId !== outer1_13.GUILD_HOME) {
       channel = null;
-      if (channelId !== constants.MEMBER_SAFETY) {
-        channel = store.getChannel(channelId);
+      if (channelId !== outer1_13.MEMBER_SAFETY) {
+        channel = outer1_7.getChannel(channelId);
       }
     }
     return channel;
   });
-  const dependencyMap = stateFromStores1;
-  let obj3 = arg1(dependencyMap[16]);
+  let obj3 = channelId(stateFromStores1[16]);
   const items2 = [closure_8];
   const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     let guildId;
     if (null != stateFromStores1) {
       guildId = stateFromStores1.getGuildId();
     }
-    return guild.getGuild(guildId);
+    return outer1_8.getGuild(guildId);
   });
-  let obj4 = arg1(dependencyMap[16]);
+  let obj4 = channelId(stateFromStores1[16]);
   const items3 = [closure_7];
   const items4 = [stateFromStores1, threadDraft];
   const stateFromStores3 = obj4.useStateFromStores(items3, () => {
     if (null != threadDraft) {
       if (null != threadDraft.parentChannelId) {
-        let channel = store.getChannel(threadDraft.parentChannelId);
+        let channel = outer1_7.getChannel(threadDraft.parentChannelId);
       }
       return channel;
     }
@@ -204,60 +206,60 @@ const memoResult = importAllResult.memo((threadDraft) => {
       channel = null;
       if (null != stateFromStores1.parent_id) {
         channel = null;
-        if (set.has(stateFromStores1.type)) {
-          channel = store.getChannel(stateFromStores1.parent_id);
+        if (outer1_6.has(stateFromStores1.type)) {
+          channel = outer1_7.getChannel(stateFromStores1.parent_id);
         }
       }
     }
   }, items4);
-  let obj5 = arg1(dependencyMap[21]);
+  let obj5 = channelId(stateFromStores1[21]);
   const selectedSpecialNavigationPath = obj5.useSelectedSpecialNavigationPath();
-  const intl = arg1(dependencyMap[17]).intl;
+  const intl = channelId(stateFromStores1[17]).intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[17]).t;
+  const t = channelId(stateFromStores1[17]).t;
   if (stateFromStores) {
     let stringResult = string(t.ai6Lbr);
   } else {
     stringResult = string(t.ZTNur7);
   }
-  if (selectedSpecialNavigationPath === arg1(dependencyMap[21]).SpecialNavigationPath.FRIENDS) {
+  if (selectedSpecialNavigationPath === channelId(stateFromStores1[21]).SpecialNavigationPath.FRIENDS) {
     obj = { style };
     obj = {};
-    channelName = dependencyMap;
-    const intl9 = arg1(dependencyMap[17]).intl;
-    obj.title = intl9.string(arg1(dependencyMap[17]).t.TdEu5X);
+    channelName = stateFromStores1;
+    const intl9 = channelId(stateFromStores1[17]).intl;
+    obj.title = intl9.string(channelId(stateFromStores1[17]).t.TdEu5X);
     obj.children = callback(ChannelTitleContent, obj);
     return callback(ChannelTitleWrapper, obj);
   } else {
     channelName = StaticChannelRoute;
     if (channelId === StaticChannelRoute.GUILD_HOME) {
-      obj1 = { size: arg1(dependencyMap[23]).Icon.Sizes.CUSTOM, source: importDefault(dependencyMap[24]), style: channelName.homeIcon };
+      obj1 = { size: channelId(stateFromStores1[23]).Icon.Sizes.CUSTOM, source: threadDraft(stateFromStores1[24]), style: channelName.homeIcon };
       const obj2 = { onPressTitle, style };
       obj3 = {};
-      const intl8 = arg1(dependencyMap[17]).intl;
-      obj3.title = intl8.string(arg1(dependencyMap[17]).t.Ym2Ri6);
-      obj3.icon = callback(arg1(dependencyMap[23]).Icon, obj1);
+      const intl8 = channelId(stateFromStores1[17]).intl;
+      obj3.title = intl8.string(channelId(stateFromStores1[17]).t.Ym2Ri6);
+      obj3.icon = callback(channelId(stateFromStores1[23]).Icon, obj1);
       obj2.children = callback(ChannelTitleContent, obj3);
       return callback(ChannelTitleWrapper, obj2);
     } else {
       channelName = StaticChannelRoute;
       if (channelId === StaticChannelRoute.MEMBER_SAFETY) {
-        obj4 = { size: arg1(dependencyMap[23]).Icon.Sizes.CUSTOM, source: importDefault(dependencyMap[25]), style: channelName.homeIcon };
+        obj4 = { size: channelId(stateFromStores1[23]).Icon.Sizes.CUSTOM, source: threadDraft(stateFromStores1[25]), style: channelName.homeIcon };
         obj5 = { onPressTitle, style };
         let obj6 = {};
-        const intl7 = arg1(dependencyMap[17]).intl;
-        obj6.title = intl7.string(arg1(dependencyMap[17]).t.9Oq93m);
-        obj6.icon = callback(arg1(dependencyMap[23]).Icon, obj4);
+        const intl7 = channelId(stateFromStores1[17]).intl;
+        obj6.title = intl7.string(channelId(stateFromStores1[17]).t["9Oq93m"]);
+        obj6.icon = callback(channelId(stateFromStores1[23]).Icon, obj4);
         obj5.children = callback(ChannelTitleContent, obj6);
         return callback(ChannelTitleWrapper, obj5);
       } else if (tmp6) {
-        const obj7 = { source: importDefault(dependencyMap[27]), style: channelName.premiumIcon };
+        const obj7 = { source: threadDraft(stateFromStores1[27]), style: channelName.premiumIcon };
         const obj8 = { style };
         const obj9 = {};
-        const tmp70 = importDefault(dependencyMap[26]);
-        const intl6 = arg1(dependencyMap[17]).intl;
-        obj9.title = intl6.string(arg1(dependencyMap[17]).t.KzCF/6);
-        obj9.icon = callback(importDefault(dependencyMap[26]), obj7);
+        const tmp70 = threadDraft(stateFromStores1[26]);
+        const intl6 = channelId(stateFromStores1[17]).intl;
+        obj9.title = intl6.string(channelId(stateFromStores1[17]).t["KzCF/6"]);
+        obj9.icon = callback(threadDraft(stateFromStores1[26]), obj7);
         obj8.children = callback(ChannelTitleContent, obj9);
         return callback(ChannelTitleWrapper, obj8);
       } else {
@@ -266,12 +268,12 @@ const memoResult = importAllResult.memo((threadDraft) => {
             if (threadDraft.name.length > 0) {
               let name = threadDraft.name;
             }
-            let obj23 = arg1(dependencyMap[18]);
+            let obj23 = channelId(stateFromStores1[18]);
             const threadChannelIcon = obj23.getThreadChannelIcon(threadDraft.isPrivate ? tmp56.PRIVATE_THREAD : tmp56.PUBLIC_THREAD);
-            const intl5 = arg1(dependencyMap[17]).intl;
+            const intl5 = channelId(stateFromStores1[17]).intl;
             const obj10 = { channelName: name };
             const obj11 = { style };
-            const obj12 = { title: name, accessibleTitle: intl5.formatToPlainString(arg1(dependencyMap[17]).t.OkzL+Q, obj10), icon: threadChannelIcon };
+            const obj12 = { title: name, accessibleTitle: intl5.formatToPlainString(channelId(stateFromStores1[17]).t["OkzL+Q"], obj10), icon: threadChannelIcon };
             let tmp64 = null != stateFromStores3;
             if (tmp64) {
               const obj13 = { parentChannel: stateFromStores3 };
@@ -281,15 +283,15 @@ const memoResult = importAllResult.memo((threadDraft) => {
             obj11.children = callback(ChannelTitleContent, obj12);
             return callback(ChannelTitleWrapper, obj11);
           }
-          const intl4 = arg1(dependencyMap[17]).intl;
-          name = intl4.string(arg1(dependencyMap[17]).t.4WNcpu);
+          const intl4 = channelId(stateFromStores1[17]).intl;
+          name = intl4.string(channelId(stateFromStores1[17]).t["4WNcpu"]);
         }
-        obj6 = arg1(dependencyMap[28]);
+        obj6 = channelId(stateFromStores1[28]);
         if (obj6.shouldNSFWGateGuild(threadDraft.guildId)) {
           const obj14 = { style };
           const obj15 = {};
-          const intl3 = arg1(dependencyMap[17]).intl;
-          obj15.title = intl3.string(arg1(dependencyMap[17]).t.HbPHt1);
+          const intl3 = channelId(stateFromStores1[17]).intl;
+          obj15.title = intl3.string(channelId(stateFromStores1[17]).t.HbPHt1);
           obj14.children = callback(ChannelTitleContent, obj15);
           return callback(ChannelTitleWrapper, obj14);
         } else if (null == stateFromStores1) {
@@ -298,13 +300,13 @@ const memoResult = importAllResult.memo((threadDraft) => {
           obj16.children = callback(ChannelTitleContent, obj17);
           return callback(ChannelTitleWrapper, obj16);
         } else {
-          channelName = arg1;
-          channelName = dependencyMap;
+          channelName = channelId;
+          channelName = stateFromStores1;
           channelName = closure_11;
           channelName = closure_10;
-          channelName = arg1(dependencyMap[19]).computeChannelName(stateFromStores1, closure_11, closure_10);
-          const obj40 = arg1(dependencyMap[19]);
-          channelName = arg1(dependencyMap[18]).getChannelIconWithGuild(stateFromStores1, stateFromStores2);
+          channelName = channelId(stateFromStores1[19]).computeChannelName(stateFromStores1, closure_11, closure_10);
+          const obj40 = channelId(stateFromStores1[19]);
+          channelName = channelId(stateFromStores1[18]).getChannelIconWithGuild(stateFromStores1, stateFromStores2);
           if (stateFromStores1.isDM()) {
             const recipientId = stateFromStores1.getRecipientId();
             const obj18 = { userId: recipientId, style: channelName.navbarTitlePrimaryText };
@@ -323,17 +325,17 @@ const memoResult = importAllResult.memo((threadDraft) => {
             }
             obj20.guildId = guild_id;
             const obj21 = { onPressTitle, style };
-            const obj22 = { title: tmp29, icon: channelName, titleSuffix: tmp30, subTitle: tmp33(importDefault(dependencyMap[20]), obj20) };
+            const obj22 = { title: tmp29, icon: channelName, titleSuffix: tmp30, subTitle: tmp33(threadDraft(stateFromStores1[20]), obj20) };
             obj21.children = callback(ChannelTitleContent, obj22);
             return callback(ChannelTitleWrapper, obj21);
           } else {
-            const intl2 = arg1(dependencyMap[17]).intl;
+            const intl2 = channelId(stateFromStores1[17]).intl;
             const formatToPlainString = intl2.formatToPlainString;
-            const t2 = arg1(dependencyMap[17]).t;
+            const t2 = channelId(stateFromStores1[17]).t;
             if (isThreadResult) {
               obj23 = { channelName };
               const obj24 = { onPressTitle, style };
-              const obj25 = { title: channelName, accessibleTitle: formatToPlainString(t2.OkzL+Q, obj23), icon: channelName };
+              const obj25 = { title: channelName, accessibleTitle: formatToPlainString(t2["OkzL+Q"], obj23), icon: channelName };
               let tmp22 = null != stateFromStores3;
               if (tmp22) {
                 const obj26 = { parentChannel: stateFromStores3 };
@@ -349,30 +351,31 @@ const memoResult = importAllResult.memo((threadDraft) => {
               obj28.children = callback(ChannelTitleContent, obj29);
               return callback(ChannelTitleWrapper, obj28);
             }
-            const isThreadResult = stateFromStores1.isThread();
+            isThreadResult = stateFromStores1.isThread();
           }
-          const obj41 = arg1(dependencyMap[18]);
+          const obj41 = channelId(stateFromStores1[18]);
         }
       }
     }
   }
-  const tmp6 = importDefault(dependencyMap[22])();
+  tmp6 = threadDraft(stateFromStores1[22])();
 });
-const result = arg1(dependencyMap[38]).fileFinishedImporting("modules/navbars/native/components/ChannelNavbar.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/navbars/native/components/ChannelNavbar.tsx");
 
 export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) {
   let onPressTitle;
-  ({ onPressTitle, channelId: closure_0 } = arg0);
+  let require;
+  ({ onPressTitle, channelId: require } = arg0);
   const tmp = callback3();
-  let obj = arg1(dependencyMap[16]);
+  let obj = require(566) /* initialize */;
   const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(closure_0));
-  let obj2 = arg1(dependencyMap[16]);
-  const items1 = [closure_5];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => connected.isConnected());
-  const intl = arg1(dependencyMap[17]).intl;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getChannel(closure_0));
+  let obj2 = require(566) /* initialize */;
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_5.isConnected());
+  const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[17]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if (stateFromStores1) {
     let stringResult = string(t.ai6Lbr);
   } else {
@@ -380,12 +383,12 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
   }
   let channelIcon = null;
   if (null != stateFromStores) {
-    let obj3 = arg1(dependencyMap[18]);
+    let obj3 = require(4593) /* getThreadChannelIcon */;
     channelIcon = obj3.getChannelIcon(stateFromStores);
   }
   let channelName = null;
   if (null != stateFromStores) {
-    let obj4 = arg1(dependencyMap[19]);
+    let obj4 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
     channelName = obj4.computeChannelName(stateFromStores, closure_11, closure_10);
   }
   if (null != stateFromStores) {
@@ -400,7 +403,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
       }
       const obj1 = { userId: recipientId, guildId: stateFromStores.guild_id };
       obj2 = { onPressTitle };
-      obj3 = { title: callback(DMChannelName, obj), icon: channelIcon, titleSuffix: tmp21, subTitle: callback(importDefault(dependencyMap[20]), obj1) };
+      obj3 = { title: callback(DMChannelName, obj), icon: channelIcon, titleSuffix: tmp21, subTitle: callback(importDefault(9063), obj1) };
       obj2.children = callback(ChannelTitleContent, obj3);
       return callback(ChannelTitleWrapper, obj2);
     }
@@ -418,7 +421,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
 export const ChannelTitle = memoResult;
 export const ChannelButtons = function ChannelButtons(buttons) {
   buttons = buttons.buttons;
-  const obj = { style: buttons.style };
+  let obj = { style: buttons.style };
   let mapped;
   if (null != buttons) {
     mapped = buttons.map((onPress) => {
@@ -435,13 +438,13 @@ export const ChannelButtons = function ChannelButtons(buttons) {
       ({ onLongPress, source, color, style, accessibilityLabel, children, disabled } = onPress);
       obj = { accessibilityRole: "button", accessibilityLabel, color, source };
       if (hasActivitiesPrivateChannelTooltip) {
-        fn = (arg0) => {
+        fn = (prototype) => {
           if (null != fn) {
-            fn(arg0);
+            fn(prototype);
           }
-          let obj = fn(closure_2[34]);
-          obj = { dismissAction: constants.AUTO };
-          const result = obj.UNSAFE_markDismissibleContentAsDismissed(fn(closure_2[35]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
+          let obj = outer2_0(outer2_2[34]);
+          obj = { dismissAction: outer2_14.AUTO };
+          const result = obj.UNSAFE_markDismissibleContentAsDismissed(outer2_0(outer2_2[35]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
         };
       }
       obj.onPress = fn;
@@ -449,31 +452,32 @@ export const ChannelButtons = function ChannelButtons(buttons) {
       obj.disabled = disabled;
       obj.style = style;
       obj.children = children;
-      const items = [callback2(callback(closure_2[33]), obj), ];
+      const items = [outer1_16(outer1_1(outer1_2[33]), obj), ];
       let tmp5 = null;
       if (hasActivitiesPrivateChannelTooltip) {
         obj = {};
-        const items1 = [fn(closure_2[35]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP];
+        const items1 = [outer1_0(outer1_2[35]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP];
         obj.contentTypes = items1;
-        obj.groupName = constants.CHANNEL_HEADER_CALL_BUTTON_TOOLTIPS;
+        obj.groupName = outer1_15.CHANNEL_HEADER_CALL_BUTTON_TOOLTIPS;
         obj.children = function children(markAsDismissed) {
+          markAsDismissed = markAsDismissed.markAsDismissed;
           let tmp = null;
-          if (markAsDismissed.visibleContent === fn(closure_2[35]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP) {
+          if (markAsDismissed.visibleContent === outer2_0(outer2_2[35]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP) {
             const obj = {
               onClosePress() {
-                  return markAsDismissed(constants.UNKNOWN);
+                  return markAsDismissed(outer3_14.UNKNOWN);
                 }
             };
-            tmp = callback2(callback(closure_2[37]), obj);
+            tmp = outer2_16(outer2_1(outer2_2[37]), obj);
           }
           return tmp;
         };
-        tmp5 = callback2(callback(closure_2[36]), obj);
-        const tmp9 = callback(closure_2[36]);
+        tmp5 = outer1_16(outer1_1(outer1_2[36]), obj);
+        const tmp9 = outer1_1(outer1_2[36]);
       }
       items[1] = tmp5;
       obj.children = items;
-      return closure_17(closure_4, obj, arg1);
+      return outer1_17(outer1_4, obj, arg1);
     });
   }
   obj.children = mapped;

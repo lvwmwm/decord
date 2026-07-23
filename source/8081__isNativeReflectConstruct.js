@@ -1,9 +1,17 @@
 // Module ID: 8081
-// Function ID: 64099
+// Function ID: 64098
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 8034, 8057]
 
 // Module 8081 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import tmp2 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,57 +21,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-importAll(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class ForeignObject {
-    constructor() {
-      self = this;
-      tmp = closure_3(this, ForeignObject);
-      obj = closure_6(ForeignObject);
-      tmp2 = closure_5;
-      if (closure_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = closure_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  const arg1 = ForeignObject;
-  callback2(ForeignObject, arg0);
-  const items = [
-    {
-      key: "render",
-      value: function render() {
-        const ForeignObject = this;
-        const props = this.props;
-        let obj = { x: props.x, y: props.y, width: props.width, height: props.height };
-        obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        const tmp = callback(closure_2[7]);
-        obj = { children: props.children };
-        return callback4(tmp, Object.assign(obj, ForeignObject(closure_2[8]).withoutXY(this, props), obj, obj));
-      }
-    }
-  ];
-  return callback(ForeignObject, items);
-}(importDefault(dependencyMap[9]));
-tmp3.displayName = "ForeignObject";
-tmp3.defaultProps = {};
+tmp2.displayName = "FeSpecularLighting";
+tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
 
-export default tmp3;
+export default tmp2;

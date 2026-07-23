@@ -1,16 +1,19 @@
 // Module ID: 8072
-// Function ID: 64040
+// Function ID: 64033
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 5, 11, 29, 6, 7, 15]
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8073, 8056, 8057]
 
 // Module 8072 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import checkLogForPII from "checkLogForPII";
-import _objectWithoutProperties from "_objectWithoutProperties";
-import _classCallCheck from "_classCallCheck";
-import tmp2 from "_possibleConstructorReturn";
+import jsxProd from "jsxProd";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import "result";
+import { jsx } from "jsxProd";
+import tmp3 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -20,7 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-tmp2.displayName = "FeImage";
-tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
+tmp3.displayName = "FeFlood";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { floodColor: "black", floodOpacity: 1 });
 
-export default tmp2;
+export default tmp3;

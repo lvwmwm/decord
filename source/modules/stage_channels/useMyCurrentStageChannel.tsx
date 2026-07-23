@@ -1,20 +1,22 @@
-// Module ID: 10624
-// Function ID: 82870
+// Module ID: 10634
+// Function ID: 82920
 // Name: useMyCurrentStageChannel
-// Dependencies: []
+// Dependencies: [1348, 1906, 566, 2]
 // Exports: default
 
-// Module 10624 (useMyCurrentStageChannel)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");
+// Module 10634 (useMyCurrentStageChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");
 
 export default function useMyCurrentStageChannel() {
-  const items = [closure_3, closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const voiceChannelId = voiceChannelId.getVoiceChannelId();
+  const items = [closure_3, _isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const voiceChannelId = outer1_3.getVoiceChannelId();
     if (null != voiceChannelId) {
-      const channel = channel.getChannel(voiceChannelId);
+      const channel = outer1_2.getChannel(voiceChannelId);
       if (null != channel) {
         if (channel.isGuildStageVoice()) {
           return channel;

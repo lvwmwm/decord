@@ -1,40 +1,44 @@
-// Module ID: 11028
-// Function ID: 85874
-// Dependencies: []
+// Module ID: 11038
+// Function ID: 85924
+// Dependencies: [5, 7544, 7537, 33, 686, 4098, 11039, 1934, 4337, 7559, 7538, 11032, 2]
 
-// Module 11028
-let closure_3 = importDefault(dependencyMap[0]);
-({ AGE_APPEAL_ACTION_SHEET_NAME: closure_4, AGE_CHECK_POLL_DELAY_MS: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = arg1(dependencyMap[2]).AGE_VERIFICATION_GET_STARTED_MODAL_KEY;
-const jsx = arg1(dependencyMap[3]).jsx;
-const obj = {
+// Module 11038
+import showActionSheet from "showActionSheet";
+import SafetyHubLinks from "SafetyHubLinks";
+import { AGE_VERIFICATION_GET_STARTED_MODAL_KEY as closure_6 } from "set";
+import { jsx } from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ AGE_APPEAL_ACTION_SHEET_NAME: closure_4, AGE_CHECK_POLL_DELAY_MS: closure_5 } = SafetyHubLinks);
+let obj = {
   open(classificationId, onClose) {
-    let obj = importDefault(dependencyMap[4]);
+    let obj = importDefault(686);
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     obj = { classificationId, onClose };
-    importDefault(dependencyMap[5]).openLazy(onClose(dependencyMap[7])(dependencyMap[6], dependencyMap.paths), closure_4, obj);
+    importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(11039, dependencyMap.paths), closure_4, obj);
   },
   openV2(classificationId, onClose) {
-    onClose = classificationId;
+    let closure_0 = classificationId;
     const importDefault = onClose;
-    let obj = importDefault(dependencyMap[4]);
+    let obj = importDefault(686);
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     // CreateGeneratorClosureLongIndex (0x67)
     obj = { onClose };
-    importDefault(dependencyMap[8]).pushLazy(callback(tmp), obj, closure_6);
+    importDefault(4337).pushLazy(callback(tmp), obj, closure_6);
   },
   close() {
-    importDefault(dependencyMap[4]).dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE" });
+    importDefault(686).dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE" });
   },
   success() {
-    importDefault(dependencyMap[4]).dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS" });
+    importDefault(686).dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS" });
   },
   start_verification_check() {
-    importDefault(dependencyMap[4]).dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL" });
-    const timerId = setTimeout(() => callback(closure_2[11]).checkSuspendedUserAgeVerification(), closure_5);
+    importDefault(686).dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL" });
+    const timerId = setTimeout(() => outer1_0(outer1_2[11]).checkSuspendedUserAgeVerification(), closure_5);
   }
 };
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/safety_hub/AutomatedUnderageAppealModalActionCreators.native.tsx");
+const result = require("set").fileFinishedImporting("modules/safety_hub/AutomatedUnderageAppealModalActionCreators.native.tsx");
 
 export default obj;

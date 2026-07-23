@@ -1,6 +1,6 @@
 // Module ID: 580
 // Function ID: 6967
-// Dependencies: []
+// Dependencies: [581]
 
 // Module 580
 let _self = "object" === typeof self && self;
@@ -12,7 +12,7 @@ if (_self) {
 if (_self) {
   _self = self;
 }
-let tmp = require(dependencyMap[0]) || _self;
+let tmp = require("module_581") || _self;
 if (!tmp) {
   const _Function = Function;
   tmp = Function("return this")();

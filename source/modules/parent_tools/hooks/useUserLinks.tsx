@@ -1,22 +1,34 @@
-// Module ID: 7118
-// Function ID: 57190
+// Module ID: 7123
+// Function ID: 57224
 // Name: useUserIdsForLinkStatus
-// Dependencies: []
+// Dependencies: [31, 1849, 6769, 6770, 624, 7124, 7125, 6828, 2]
 // Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUsers, useActivityWindowTimeStamp, useHasActiveLinks, useHasActiveParentLinks, useHasMaxConnections, useLinkTimestampText, usePendingRequestCount, useRequiresParentalConsent, useUserQRLinkUrl
 
-// Module 7118 (useUserIdsForLinkStatus)
+// Module 7123 (useUserIdsForLinkStatus)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import items from "items";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function useUserIdsForLinkStatus(ACTIVE) {
-  const arg1 = ACTIVE;
+  const _require = ACTIVE;
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
-  const importDefault = stateFromStores;
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_5.getLinkedUsers());
   const items1 = [stateFromStores, ACTIVE];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
     const found = values.filter((link_status) => {
       let tmp = null != link_status;
       if (tmp) {
-        tmp = link_status.link_status === closure_0;
+        tmp = link_status.link_status === outer1_0;
       }
       return tmp;
     });
@@ -30,20 +42,16 @@ function useUserIdsForLinkStatus(ACTIVE) {
   }, items1);
 }
 function useUsersForLinkStatus(ACTIVE) {
-  const callback = useUserIdsForLinkStatus(ACTIVE);
-  const items = [closure_4];
-  const stateFromStoresArray = callback(dependencyMap[4]).useStateFromStoresArray(items, () => closure_0.map((arg0) => user.getUser(arg0)));
+  const _require = useUserIdsForLinkStatus(ACTIVE);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresArray = _require(624).useStateFromStoresArray(items, () => closure_0.map((arg0) => outer2_4.getUser(arg0)));
   return stateFromStoresArray.filter((arg0) => null != arg0);
 }
 function useActiveLinkUserIds() {
   return useUserIdsForLinkStatus(constants.ACTIVE);
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: closure_6, FAMILY_CENTER_REQUEST_QR_CODE_URL: closure_7, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_8, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: closure_9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: closure_10, UserLinkStatus: closure_11, UserLinkType: closure_12 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/parent_tools/hooks/useUserLinks.tsx");
+({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: closure_6, FAMILY_CENTER_REQUEST_QR_CODE_URL: closure_7, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_8, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: closure_9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: closure_10, UserLinkStatus: closure_11, UserLinkType: closure_12 } = items);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/hooks/useUserLinks.tsx");
 
 export { useUserIdsForLinkStatus };
 export { useUsersForLinkStatus };
@@ -53,7 +61,7 @@ export const getActiveLinkUserIds = function getActiveLinkUserIds() {
   const found = values.filter((link_status) => {
     let tmp = null != link_status;
     if (tmp) {
-      tmp = link_status.link_status === constants.ACTIVE;
+      tmp = link_status.link_status === outer1_11.ACTIVE;
     }
     return tmp;
   });
@@ -73,18 +81,17 @@ export const useHasActiveLinks = function useHasActiveLinks() {
 };
 export const useHasActiveParentLinks = function useHasActiveParentLinks() {
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
-  const arg1 = stateFromStores;
+  stateFromStores = stateFromStores(624).useStateFromStores(items, () => outer1_5.getLinkedUsers());
   const items1 = [stateFromStores];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
     return values.some((link_status) => {
       let tmp = null != link_status;
       if (tmp) {
-        tmp = link_status.link_status === constants.ACTIVE;
+        tmp = link_status.link_status === outer2_11.ACTIVE;
       }
       if (tmp) {
-        tmp = link_status.link_type === constants2.PARENT;
+        tmp = link_status.link_type === outer2_12.PARENT;
       }
       return tmp;
     });
@@ -92,27 +99,26 @@ export const useHasActiveParentLinks = function useHasActiveParentLinks() {
 };
 export const useUserQRLinkUrl = function useUserQRLinkUrl() {
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => linkCode.getLinkCode());
-  const obj = arg1(dependencyMap[4]);
-  const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items1, () => currentUser.getCurrentUser());
+  const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_5.getLinkCode());
+  const obj = require(624) /* defaultAreStatesEqual */;
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items1, () => outer1_4.getCurrentUser());
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;
     if (null != stateFromStores1) {
-      tmp3 = callback2(stateFromStores1.id, stateFromStores);
+      tmp3 = callback(stateFromStores1.id, stateFromStores);
     }
   }
   return tmp3;
 };
 export const useHasMaxConnections = function useHasMaxConnections() {
-  return useActiveLinkUserIds().length >= importDefault(dependencyMap[5])() ? closure_8 : closure_9;
+  return useActiveLinkUserIds().length >= (importDefault(7124)() ? closure_8 : closure_9);
 };
 export const usePendingRequestCount = function usePendingRequestCount() {
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const arg1 = stateFromStores;
-  arg1(dependencyMap[4]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = stateFromStores(624).useStateFromStores(items, () => outer1_4.getCurrentUser());
+  stateFromStores(624);
   [][0] = closure_5;
   let num = 0;
   if (null != stateFromStores) {
@@ -121,7 +127,7 @@ export const usePendingRequestCount = function usePendingRequestCount() {
     num = values.filter((link_status) => {
       let tmp = null != link_status;
       if (tmp) {
-        tmp = link_status.link_status === constants.PENDING;
+        tmp = link_status.link_status === outer1_11.PENDING;
       }
       if (tmp) {
         tmp = stateFromStores.id !== link_status.requestor_id;
@@ -135,7 +141,7 @@ export const useRequiresParentalConsent = function useRequiresParentalConsent(id
   const items = [closure_5];
   let tmp = null != id;
   if (tmp) {
-    const tmp2 = obj.useStateFromStores(items, () => linkedUsers.getLinkedUsers())[id];
+    const tmp2 = obj.useStateFromStores(items, () => outer1_5.getLinkedUsers())[id];
     let prop;
     if (null != tmp2) {
       prop = tmp2.teen_requires_parental_consent;
@@ -149,14 +155,14 @@ export const useAcceptedRequestsCount = function useAcceptedRequestsCount() {
   return useActiveLinkUserIds().length;
 };
 export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(activityWindowTimestampFormatter) {
-  const arg1 = activityWindowTimestampFormatter;
-  let closure_1 = arg1(dependencyMap[6]).useSelectedTeenId();
-  const obj = arg1(dependencyMap[6]);
+  const _require = activityWindowTimestampFormatter;
+  let closure_1 = _require(7125).useSelectedTeenId();
+  const obj = _require(7125);
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => {
+  const stateFromStores = _require(624).useStateFromStores(items, () => {
     let rangeStartTimestamp = null;
     if (null != closure_1) {
-      rangeStartTimestamp = rangeStartTimestamp.getRangeStartTimestamp();
+      rangeStartTimestamp = outer1_5.getRangeStartTimestamp();
     }
     return rangeStartTimestamp;
   });
@@ -164,20 +170,20 @@ export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(ac
   if (null != stateFromStores) {
     const _Date = Date;
     const date = new Date(stateFromStores);
-    result = arg1(dependencyMap[7]).formatUserActivityTimestamp(date.getTime(), () => arg0, 7);
-    const obj3 = arg1(dependencyMap[7]);
+    result = _require(6828).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
+    const obj3 = _require(6828);
   }
   return result;
 };
 export const useLinkTimestampText = function useLinkTimestampText(id, status) {
-  status = id;
+  const _require = id;
   const items = [closure_5];
-  const stateFromStores = status(dependencyMap[4]).useStateFromStores(items, () => linkTimestamp.getLinkTimestamp(arg0));
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_5.getLinkTimestamp(closure_0));
   if (null == stateFromStores) {
     return null;
   } else {
     const _Date = Date;
-    status(dependencyMap[7]).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
-    const obj2 = status(dependencyMap[7]);
+    _require(6828).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
+    const obj2 = _require(6828);
   }
 };

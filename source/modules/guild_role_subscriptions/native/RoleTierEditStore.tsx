@@ -1,53 +1,58 @@
-// Module ID: 16307
-// Function ID: 125796
+// Module ID: 16424
+// Function ID: 127970
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 5, 682, 677, 5637, 3743, 4559, 14101, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 16307 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16424 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import isIterable from "isIterable";
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,48 +90,46 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function keyUpdater(arg0, groupCover) {
-  groupCover = arg0;
-  const importDefault = groupCover;
+  let closure_0 = arg0;
+  let closure_1 = groupCover;
   return (arg0) => {
-    arg0(closure_3[2]).batchUpdates(() => arg0({ [closure_1]: arg0 }));
+    const callback = arg0;
+    callback(outer1_3[2]).batchUpdates(() => callback({ [outer1_1]: callback }));
   };
 }
 function usePriceTiers(guildId) {
-  const arg1 = guildId;
-  function onRefresh(arg0) {
+  const _require = guildId;
+  function onRefresh(arg0, arg1) {
     let tmp = null == first;
     if (tmp) {
-      tmp = tmp3 !== constants.LOADING;
+      tmp = closure_2 !== outer1_6.LOADING;
     }
     if (tmp) {
       callback(arg0);
     }
   }
-  const callback = onRefresh;
-  const tmp = callback(withEqualityFn((arg0) => {
+  let tmp = onRefresh(withEqualityFn((arg0) => {
     const items = [, , ];
     ({ priceTiers: arr[0], priceTierState: arr[1], loadPriceTiers: arr[2] } = arg0);
     return items;
-  }, arg1(closure_3[5]).shallow), 3);
+  }, _require(3743).shallow), 3);
   const first = tmp[0];
-  const importDefault = first;
   const importAll = tmp3;
-  closure_3 = tmp[2];
-  importDefault(closure_3[6])(() => {
-    onRefresh(arg0);
+  const dependencyMap = tmp[2];
+  first(4559)(() => {
+    onRefresh(closure_0);
   });
   return { tiers: first, state: tmp[1], onRefresh, guildId };
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const obj = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
-let closure_7 = Object.freeze({ placeholder: 199051673509235200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, maxLength: 206081226602725000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, returnKeyType: 220140332372954660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, variant: 271571397450565000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
-const withEqualityFn = arg1(dependencyMap[3]).createWithEqualityFn((arg0) => {
-  const arg1 = arg0;
+let obj = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
+let closure_7 = Object.freeze({ currentScene: null, groupCover: null, groupDescription: "", groupIsFullGate: false });
+const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0) => {
+  let closure_0 = arg0;
   const obj = {};
   const merged = Object.assign(closure_7);
   obj["setScene"] = function setScene(arg0) {
-    arg0(closure_3[2]).batchUpdates(() => arg0({ currentScene: arg0 }));
+    const callback = arg0;
+    callback(outer1_3[2]).batchUpdates(() => callback({ currentScene: callback }));
   };
   obj["setGroupCover"] = keyUpdater(arg0, "groupCover");
   obj["setGroupDescription"] = keyUpdater(arg0, "groupDescription");
@@ -134,16 +137,16 @@ const withEqualityFn = arg1(dependencyMap[3]).createWithEqualityFn((arg0) => {
   obj["priceTiers"] = null;
   obj["priceTierState"] = obj.IDLE;
   obj["loadPriceTiers"] = function loadPriceTiers(arg0) {
+    let closure_0 = arg0;
     // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return outer1_5(tmp)();
   };
   obj["reset"] = function reset() {
-    arg0(closure_3[2]).batchUpdates(() => callback(closure_7));
+    callback(outer1_3[2]).batchUpdates(() => outer1_0(outer2_7));
   };
   return obj;
 });
-const obj2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_role_subscriptions/native/RoleTierEditStore.tsx");
+const result = require("batchUpdates").fileFinishedImporting("modules/guild_role_subscriptions/native/RoleTierEditStore.tsx");
 
 export const LoadingState = obj;
 export const useRoleTierEditStore = withEqualityFn;
@@ -166,10 +169,9 @@ export const usePriceTiersAvailableInGuild = function usePriceTiersAvailableInGu
   const tmp = usePriceTiers(guildId);
   const tiers = tmp.tiers;
   ({ state, onRefresh } = tmp);
-  let obj = arg1(dependencyMap[7]);
+  let obj = set(14101);
   const subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId);
-  const set = new Set();
-  const arg1 = set;
+  set = new Set();
   const tmp3 = _createForOfIteratorHelperLoose(subscriptionListingsForGuild);
   let iter = tmp3();
   if (!iter.done) {
@@ -195,19 +197,19 @@ export const useGroupCoverState = function useGroupCoverState() {
     const items = [, ];
     ({ groupCover: arr[0], setGroupCover: arr[1] } = arg0);
     return items;
-  }, arg1(dependencyMap[5]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };
 export const useGroupDescriptionState = function useGroupDescriptionState() {
   return withEqualityFn((arg0) => {
     const items = [, ];
     ({ groupDescription: arr[0], setGroupDescription: arr[1] } = arg0);
     return items;
-  }, arg1(dependencyMap[5]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };
 export const useGroupIsFullGateState = function useGroupIsFullGateState() {
   return withEqualityFn((arg0) => {
     const items = [, ];
     ({ groupIsFullGate: arr[0], setGroupIsFullGate: arr[1] } = arg0);
     return items;
-  }, arg1(dependencyMap[5]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };

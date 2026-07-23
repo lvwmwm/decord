@@ -1,11 +1,10 @@
-// Module ID: 6878
-// Function ID: 54573
+// Module ID: 6883
+// Function ID: 54607
 // Name: NotificationCenterScenes
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6878 (NotificationCenterScenes)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/notification_center/NotificationCenterItemsTypes.tsx");
+// Module 6883 (NotificationCenterScenes)
+const result = require("set").fileFinishedImporting("modules/notification_center/NotificationCenterItemsTypes.tsx");
 
 export const NotificationCenterScenes = { LANDING: "notification_center_landing" };
 export const ItemEnum = { UPDATE_PROFILE: 0, [0]: "UPDATE_PROFILE", FIND_FRIENDS: 1, [1]: "FIND_FRIENDS", ADD_FRIEND: 2, [2]: "ADD_FRIEND", FIRST_MESSAGE: 3, [3]: "FIRST_MESSAGE" };

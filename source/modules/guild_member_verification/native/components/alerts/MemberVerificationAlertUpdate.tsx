@@ -1,41 +1,45 @@
-// Module ID: 9157
-// Function ID: 71802
+// Module ID: 9164
+// Function ID: 71843
 // Name: MemberVerificationAlertUpdate
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 4561, 1212, 3827, 9165, 4126, 2]
 // Exports: default
 
-// Module 9157 (MemberVerificationAlertUpdate)
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const DownloadLinks = arg1(dependencyMap[2]).DownloadLinks;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ headerImage: { position: null, top: null, left: null }, header: { MINIMAL: true, currentScreenId: null }, text: {} });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertUpdate.tsx");
+// Module 9164 (MemberVerificationAlertUpdate)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { DownloadLinks } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ headerImage: { marginLeft: "auto", marginRight: "auto", marginTop: 8 }, header: { marginTop: 24, textAlign: "center" }, text: { marginVertical: 8, lineHeight: 18, textAlign: "center" } });
+const result = require("ME").fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertUpdate.tsx");
 
 export default function MemberVerificationAlertUpdate(onClose) {
   const tmp = callback3();
   let obj = {};
   const merged = Object.assign(onClose);
-  const intl = arg1(dependencyMap[6]).intl;
-  obj["confirmText"] = intl.string(arg1(dependencyMap[6]).t.b8siyY);
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj["cancelText"] = intl2.string(arg1(dependencyMap[6]).t.ETE/oC);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj["confirmText"] = intl.string(require(1212) /* getSystemLocale */.t.b8siyY);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj["cancelText"] = intl2.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
   obj["onConfirm"] = function onConfirm() {
-    return callback(closure_2[7]).openURL(constants.IOS);
+    return outer1_1(outer1_2[7]).openURL(outer1_4.IOS);
   };
   obj["onCancel"] = onClose.onClose;
-  obj = { source: importDefault(dependencyMap[8]), style: tmp.headerImage };
+  obj = { source: importDefault(9165), style: tmp.headerImage };
   const items = [callback(Image, obj), , ];
-  obj = { "Null": false, "Null": 0, alignItems: 4, style: tmp.header };
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj.children = intl3.string(arg1(dependencyMap[6]).t.kkjNHU);
-  items[1] = callback(arg1(dependencyMap[9]).Text, obj);
-  const obj1 = { style: tmp.text };
-  const intl4 = arg1(dependencyMap[6]).intl;
-  obj1.children = intl4.string(arg1(dependencyMap[6]).t.gnkqzQ);
-  items[2] = callback(arg1(dependencyMap[9]).Text, obj1);
+  obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl3.string(require(1212) /* getSystemLocale */.t.kkjNHU);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
+  const obj1 = { style: tmp.text, variant: "text-sm/medium", color: "text-default" };
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl4.string(require(1212) /* getSystemLocale */.t.gnkqzQ);
+  items[2] = callback(require(4126) /* Text */.Text, obj1);
   obj["children"] = items;
-  return callback2(importDefault(dependencyMap[5]), obj);
+  return callback2(importDefault(4561), obj);
 };

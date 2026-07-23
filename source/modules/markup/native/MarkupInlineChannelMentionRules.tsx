@@ -1,16 +1,19 @@
-// Module ID: 10256
-// Function ID: 79267
+// Module ID: 10268
+// Function ID: 79335
 // Name: createInlineChannelReact
-// Dependencies: []
+// Dependencies: [31, 33, 9969, 1273, 1327, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact
 
-// Module 10256 (createInlineChannelReact)
+// Module 10268 (createInlineChannelReact)
+import "result";
+import { jsxs } from "jsxProd";
+
+const require = arg1;
 function createInlineChannelReact(arg0) {
   let str = arg0;
   if (arg0 === undefined) {
     str = "\u{1F4AC}";
   }
-  const arg1 = str;
   return (iconType, output, key) => {
     iconType = iconType.iconType;
     if ("text" !== iconType) {
@@ -40,7 +43,7 @@ function createInlineChannelReact(arg0) {
                                                 if ("browse" !== iconType) {
                                                   if ("customize" !== iconType) {
                                                     if ("linked-roles" !== iconType) {
-                                                      let obj = str(closure_1[4]);
+                                                      let obj = str(outer1_1[4]);
                                                       obj.assertNever(iconType);
                                                     }
                                                   }
@@ -59,9 +62,9 @@ function createInlineChannelReact(arg0) {
                           str2 = "\"";
                         }
                         obj = {};
-                        const items = [str2, str(closure_1[2]).smartOutput(iconType, output, key), str3];
+                        const items = [str2, str(outer1_1[2]).smartOutput(iconType, output, key), str3];
                         obj.children = items;
-                        return callback(str(closure_1[3]).LegacyText, obj, key.key);
+                        return outer1_2(str(outer1_1[3]).LegacyText, obj, key.key);
                       }
                     }
                   }
@@ -75,21 +78,19 @@ function createInlineChannelReact(arg0) {
     str2 = "#";
   };
 }
-importAll(dependencyMap[0]);
-const jsxs = arg1(dependencyMap[1]).jsxs;
 const inlineChannelReact = createInlineChannelReact();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/markup/native/MarkupInlineChannelMentionRules.tsx");
+const result = require("smartOutput").fileFinishedImporting("modules/markup/native/MarkupInlineChannelMentionRules.tsx");
 
 export const inlineChannelMentionReact = function inlineChannelMentionReact(inContent, output, key) {
   if (null == inContent.inContent) {
-    let smartOutputResult = output(dependencyMap[2]).smartOutput(inContent, output, key);
-    const obj3 = output(dependencyMap[2]);
+    let smartOutputResult = require(9969) /* smartOutput */.smartOutput(inContent, output, key);
+    const obj3 = require(9969) /* smartOutput */;
   } else {
     const obj = {};
-    const items = [output(inContent.inContent, key), " \u203A ", output(dependencyMap[2]).smartOutput(inContent, output, key)];
+    const items = [output(inContent.inContent, key), " \u203A ", require(9969) /* smartOutput */.smartOutput(inContent, output, key)];
     obj.children = items;
-    smartOutputResult = jsxs(output(dependencyMap[3]).LegacyText, obj, key.key);
-    const obj2 = output(dependencyMap[2]);
+    smartOutputResult = jsxs(require(1273) /* Button */.LegacyText, {}, key.key);
+    const obj2 = require(9969) /* smartOutput */;
   }
   return smartOutputResult;
 };

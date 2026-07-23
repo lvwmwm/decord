@@ -1,16 +1,15 @@
-// Module ID: 14848
-// Function ID: 111890
+// Module ID: 14964
+// Function ID: 114058
 // Name: CategoryChannel
-// Dependencies: []
+// Dependencies: [2, 14965, 14966, 14981]
 
-// Module 14848 (CategoryChannel)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/channel_list_v2/native/items/index.tsx");
+// Module 14964 (CategoryChannel)
+const result = require("ThreadChannel").fileFinishedImporting("modules/channel_list_v2/native/items/index.tsx");
 
-export const CategoryChannel = require(dependencyMap[1]).CategoryChannel;
-export const SuggestedCategory = require(dependencyMap[1]).SuggestedCategory;
-export const RecentlyActiveCategory = require(dependencyMap[1]).RecentlyActiveCategory;
-export const renderCategoryItem = require(dependencyMap[1]).renderCategoryItem;
-export const useCategoryStyles = require(dependencyMap[1]).useCategoryStyles;
-export const ThreadChannel = importDefault(dependencyMap[2]);
-export const RedesignVoiceUserSummary = importDefault(dependencyMap[3]);
+export const CategoryChannel = require("renderCategoryItem").CategoryChannel;
+export const SuggestedCategory = require("renderCategoryItem").SuggestedCategory;
+export const RecentlyActiveCategory = require("renderCategoryItem").RecentlyActiveCategory;
+export const renderCategoryItem = require("renderCategoryItem").renderCategoryItem;
+export const useCategoryStyles = require("renderCategoryItem").useCategoryStyles;
+export const ThreadChannel = require("ThreadChannel");
+export const RedesignVoiceUserSummary = require("RedesignVoiceUserSummary");

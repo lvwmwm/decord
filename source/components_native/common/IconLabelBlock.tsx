@@ -1,9 +1,25 @@
-// Module ID: 15418
-// Function ID: 117635
+// Module ID: 15535
+// Function ID: 119809
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 33, 4130, 689, 1273, 4126, 10164, 3976, 3842, 2]
 
-// Module 15418 (_isNativeReflectConstruct)
+// Module 15535 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import getActivityIndicator from "get ActivityIndicator";
+import ManaContext from "ManaContext";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,39 +29,30 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [false];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const importAllResult = importAll(dependencyMap[6]);
-({ View: closure_10, Image: closure_11 } = arg1(dependencyMap[7]));
-const tmp3 = arg1(dependencyMap[7]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
-let obj = arg1(dependencyMap[9]);
-obj = { wrapper: {} };
-obj = { color: importDefault(dependencyMap[10]).unsafe_rawColors.RED_400 };
-obj.error = obj;
-const obj1 = { confused_face: null, slight_frown: "\u{1F595}", color: importDefault(dependencyMap[10]).colors.TEXT_SUBTLE };
-obj.label = obj1;
-obj.iconUploaderWrapper = { "Null": "w", "Null": "Array" };
-obj.text = { marginTop: 9 };
-let closure_14 = obj.createLegacyClassComponentStyles(obj);
-const tmp5 = (PureComponent) => {
+let closure_3 = ["error"];
+({ View: closure_10, Image: closure_11 } = get_ActivityIndicator);
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = { wrapper: { alignItems: "center", paddingTop: 26, paddingBottom: 16 } };
+_createForOfIteratorHelperLoose = { fontSize: 12, textAlign: "center", alignSelf: "center", marginBottom: 10, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+_createForOfIteratorHelperLoose.error = _createForOfIteratorHelperLoose;
+let obj1 = { fontSize: 12, marginTop: 20, color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+_createForOfIteratorHelperLoose.label = obj1;
+_createForOfIteratorHelperLoose.iconUploaderWrapper = { alignSelf: "stretch", alignItems: "center" };
+_createForOfIteratorHelperLoose.text = { marginTop: 9 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+const tmp5 = ((PureComponent) => {
   class IconLabelBlock {
     constructor() {
       self = this;
-      tmp = closure_5(this, IconLabelBlock);
-      obj = closure_8(IconLabelBlock);
-      tmp2 = closure_7;
-      if (closure_15()) {
+      tmp = outer1_5(this, IconLabelBlock);
+      obj = outer1_8(IconLabelBlock);
+      tmp2 = outer1_7;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_8;
+        tmp7 = outer1_8;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_8(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_8(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -54,7 +61,6 @@ const tmp5 = (PureComponent) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = IconLabelBlock;
   callback2(IconLabelBlock, PureComponent);
   let obj = {
     key: "renderLabel",
@@ -66,24 +72,24 @@ const tmp5 = (PureComponent) => {
         const items = [tmp.label, tmp2];
         obj.style = items;
         obj.children = label;
-        tmp3 = callback5(IconLabelBlock(closure_2[11]).LegacyText, obj);
+        tmp3 = outer1_12(IconLabelBlock(outer1_2[11]).LegacyText, obj);
       }
       return tmp3;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "renderText",
     value() {
       const text = this.props.text;
       let tmp4 = null;
       if (null != text) {
-        const obj = { cachedAt: true, edpbxy: "/assets/modules/stage_channels/native/images" };
+        const obj = { variant: "heading-md/medium", color: "text-default" };
         const items = [tmp.text, tmp2];
         obj.style = items;
         obj.accessibilityRole = tmp3;
         obj.children = text;
-        tmp4 = callback5(IconLabelBlock(closure_2[12]).Text, obj);
+        tmp4 = outer1_12(IconLabelBlock(outer1_2[12]).Text, obj);
       }
       return tmp4;
     }
@@ -96,17 +102,17 @@ const tmp5 = (PureComponent) => {
       let errorProps;
       let iconProps;
       let source;
-      const tmp = callback7(this.context);
+      const tmp = outer1_14(this.context);
       ({ iconProps, source, darkSource, errorProps } = this.props);
       if (null != iconProps) {
         const error = iconProps.error;
         let obj = { style: tmp.iconUploaderWrapper };
         obj = {};
-        const tmp11 = callback2(iconProps, closure_3);
-        const tmp12 = closure_13;
-        const tmp13 = closure_10;
+        const tmp11 = outer1_4(iconProps, outer1_3);
+        const tmp12 = outer1_13;
+        const tmp13 = outer1_10;
         const merged = Object.assign(tmp11);
-        const items = [callback5(callback(closure_2[13]), obj), ];
+        const items = [outer1_12(outer1_1(outer1_2[13]), obj), ];
         let tmp20 = null;
         if (null != error) {
           let obj1 = {};
@@ -114,7 +120,7 @@ const tmp5 = (PureComponent) => {
           obj1.style = items1;
           const merged1 = Object.assign(errorProps);
           obj1["children"] = error;
-          tmp20 = callback5(IconLabelBlock(closure_2[11]).LegacyText, obj1);
+          tmp20 = outer1_12(IconLabelBlock(outer1_2[11]).LegacyText, obj1);
         }
         items[1] = tmp20;
         obj.children = items;
@@ -122,7 +128,7 @@ const tmp5 = (PureComponent) => {
       } else {
         obj = {};
         if (null == source) {
-          obj1 = IconLabelBlock(closure_2[14]);
+          obj1 = IconLabelBlock(outer1_2[14]);
           if (obj1.isThemeLight(this.context.theme)) {
             darkSource = tmp2;
           }
@@ -131,7 +137,7 @@ const tmp5 = (PureComponent) => {
         obj.source = source;
         obj.style = tmp3;
         obj.resizeMode = "contain";
-        return callback5(closure_11, obj);
+        return outer1_12(outer1_11, obj);
       }
     }
   };
@@ -140,17 +146,16 @@ const tmp5 = (PureComponent) => {
     key: "render",
     value() {
       const obj = {};
-      const items = [callback7(this.context).wrapper, this.props.wrapperStyles];
+      const items = [outer1_14(this.context).wrapper, this.props.wrapperStyles];
       obj.style = items;
       const items1 = [this.renderIcon(), this.props.children, this.renderLabel(), this.renderText()];
       obj.children = items1;
-      return callback6(closure_10, obj);
+      return outer1_13(outer1_10, obj);
     }
   };
   return callback(IconLabelBlock, items);
-}(importAllResult.PureComponent);
-tmp5.contextType = arg1(dependencyMap[15]).ThemeContext;
-const tmp4 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("components_native/common/IconLabelBlock.tsx");
+})(require("result").PureComponent);
+tmp5.contextType = require("ManaContext").ThemeContext;
+let result = require("_defineProperties").fileFinishedImporting("components_native/common/IconLabelBlock.tsx");
 
 export default tmp5;

@@ -1,13 +1,18 @@
-// Module ID: 9451
-// Function ID: 73648
+// Module ID: 9458
+// Function ID: 73689
 // Name: resolveAsset
-// Dependencies: []
+// Dependencies: [4976, 653, 9459, 9460, 9461, 9462, 9463, 6947, 9470, 9471, 4983, 1443, 1825, 2]
 // Exports: getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 9451 (resolveAsset)
+// Module 9458 (resolveAsset)
+import QuestsExperimentLocations from "QuestsExperimentLocations";
+import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_5 } from "ME";
+
 let TIER_1;
 let TIER_2;
 let TIER_3;
+let closure_3;
+let closure_4;
 function resolveAsset(id, questBarHeroVideo, theme) {
   const tmp2 = getMimetype(questBarHeroVideo);
   const obj = { url: buildUrl(id, questBarHeroVideo, theme), mimetype: tmp2 };
@@ -66,7 +71,7 @@ function resolveCdnUrl(hero_video) {
 }
 function getMimetype(questBarHeroVideo) {
   const startsWithResult = questBarHeroVideo.startsWith("blob:");
-  const toURLSafeResult = importDefault(dependencyMap[11]).toURLSafe(questBarHeroVideo);
+  const toURLSafeResult = importDefault(1443).toURLSafe(questBarHeroVideo);
   if (startsWithResult) {
     let value;
     if (!tmp3) {
@@ -133,7 +138,7 @@ function getMimetype(questBarHeroVideo) {
       return "image/jpeg";
     }
   }
-  const obj = importDefault(dependencyMap[11]);
+  const obj = importDefault(1443);
 }
 function safeMediaProxyDimension(height) {
   return Math.min(Math.ceil(height), closure_5);
@@ -146,7 +151,7 @@ function getAssetUrlWithMediaProxyQueryParams(assetUrl, arg1) {
   if (assetUrl.startsWith("blob:")) {
     return assetUrl;
   } else {
-    let str = importDefault(dependencyMap[11]).toURLSafe(assetUrl);
+    let str = importDefault(1443).toURLSafe(assetUrl);
     str = assetUrl;
     if (null != str) {
       if (null != size.format) {
@@ -172,7 +177,7 @@ function convertVideoToFirstFrameImageWithMediaProxy(assetUrl, width) {
   if (assetUrl.startsWith("blob:")) {
     return assetUrl;
   } else {
-    let str = importDefault(dependencyMap[11]).toURLSafe(assetUrl);
+    let str = importDefault(1443).toURLSafe(assetUrl);
     str = null;
     if (null != str) {
       const searchParams = str.searchParams;
@@ -190,20 +195,18 @@ function convertVideoToFirstFrameImageWithMediaProxy(assetUrl, width) {
     return str;
   }
 }
-const _module = require(dependencyMap[0]);
-({ CDN_URL_BASE: closure_3, QUESTS_CDN_URL_BASE: closure_4 } = _module);
-let closure_5 = require(dependencyMap[1]).MEDIA_PROXY_MAX_TARGET_RESOLUTION;
+({ CDN_URL_BASE: closure_3, QUESTS_CDN_URL_BASE: closure_4 } = QuestsExperimentLocations);
 const tmp3 = /\.([a-zA-Z0-9]+)$/;
-const items = [true, true];
+let closure_6 = tmp3;
+const items = ["video/mp4", "video/webm"];
 let obj = { HERO: "hero", HERO_IMAGE: "hero_image", HERO_VIDEO: "hero_video", QUEST_BAR_HERO: "quest_bar_hero", QUEST_BAR_HERO_VIDEO: "quest_bar_hero_video", QUEST_BAR_HERO_IMAGE: "quest_bar_hero_image", REWARD: "reward", REWARD_IMAGE: "reward_image", GAME_TILE: "game_tile", LOGO_TYPE: "logo_type", COSPONSOR_LOGO_TYPE: "cosponsor_logo_type", VIDEO_PLAYER_VIDEO: "video_player_video", VIDEO_PLAYER_VIDEO_LOW_RES: "video_player_video_low_res", VIDEO_PLAYER_VIDEO_HLS: "video_player_video_hls", VIDEO_PLAYER_THUMBNAIL: "video_player_thumbnail", VIDEO_PLAYER_CAPTION: "video_player_caption", VIDEO_PLAYER_TRANSCRIPT: "video_player_transcript" };
 obj = { VIDEO: "video", VIDEO_LOW_RES: "videoLowRes", VIDEO_HLS: "videoHls" };
 obj = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIPT: "transcript" };
-const obj1 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
+let obj1 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
 let closure_9 = { [obj.VIDEO_PLAYER_VIDEO]: { variant: obj.VIDEO, property: obj.VIDEO }, [obj.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj.VIDEO_LOW_RES, property: obj.VIDEO }, [obj.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj.VIDEO_HLS, property: obj.VIDEO }, [obj.VIDEO_PLAYER_THUMBNAIL]: { variant: obj.VIDEO, property: obj.THUMBNAIL }, [obj.VIDEO_PLAYER_CAPTION]: { variant: obj.VIDEO, property: obj.CAPTION }, [obj.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj.VIDEO, property: obj.TRANSCRIPT } };
-const obj8 = { [TIER_1]: importDefault(dependencyMap[2]), [TIER_2]: importDefault(dependencyMap[3]), [TIER_3]: importDefault(dependencyMap[4]), [obj1.TIER_4]: importDefault(dependencyMap[5]) };
+const obj8 = { [TIER_1]: require("metadata"), [TIER_2]: require("metadata"), [TIER_3]: require("metadata"), [obj1.TIER_4]: require("metadata") };
 ({ TIER_1, TIER_2, TIER_3 } = obj1);
-const _module1 = require(dependencyMap[13]);
-const result = _module1.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
+let result = require("metadata").fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
 
 export const EXTENSION_RE = tmp3;
 export const ANIMATED_MIMETYPES = items;
@@ -252,21 +255,21 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
     flag = false;
     flag2 = false;
   } else if (obj.REWARD === VIDEO_PLAYER_TRANSCRIPT) {
-    let obj1 = require(dependencyMap[6]);
+    let obj1 = require(9463) /* getCollectiblesQuestReward */;
     const questPrimaryReward = obj1.getQuestPrimaryReward(quest);
-    if (questPrimaryReward.type === require(dependencyMap[7]).QuestRewardTypes.VIRTUAL_CURRENCY) {
+    if (questPrimaryReward.type === require(6947) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       let tmp30;
       if (null != arg4) {
         tmp30 = obj8[arg4];
       }
       if (null != tmp30) {
-        let obj = { url: tmp30 };
+        obj = { url: tmp30, mimetype: "video/webm", isAnimated: true };
         obj1 = obj;
       } else if (flag) {
-        obj = { flexDirection: 49389056, paddingTop: 49388032, paddingBottom: 35606784, url: importDefault(dependencyMap[8]) };
+        obj = { url: importDefault(9470), mimetype: "video/mp4", isAnimated: true };
         obj1 = obj;
       } else {
-        obj1 = { url: importDefault(dependencyMap[9]) };
+        obj1 = { url: importDefault(9471), mimetype: "video/webm", isAnimated: true };
       }
       return obj1;
     } else {
@@ -277,9 +280,9 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
       flag2 = false;
     }
   } else if (obj.REWARD_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
-    obj = require(dependencyMap[6]);
+    obj = require(9463) /* getCollectiblesQuestReward */;
     const questPrimaryReward1 = obj.getQuestPrimaryReward(quest);
-    if (questPrimaryReward1.type === require(dependencyMap[7]).QuestRewardTypes.VIRTUAL_CURRENCY) {
+    if (questPrimaryReward1.type === require(6947) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       return null;
     } else {
       logotype = questPrimaryReward1.asset;
@@ -358,9 +361,10 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
       }
     }
     if ("taskConfigV2" in quest.config) {
-      const FirstPartyQuestTaskTypes = require(dependencyMap[10]).FirstPartyQuestTaskTypes;
+      const FirstPartyQuestTaskTypes = require(4983) /* set */.FirstPartyQuestTaskTypes;
+      const tmp9 = quest.config.taskConfigV2.tasks[flag ? FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE : FirstPartyQuestTaskTypes.WATCH_VIDEO];
       let tmp13;
-      if (null != quest.config.taskConfigV2.tasks[flag ? FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE : FirstPartyQuestTaskTypes.WATCH_VIDEO]) {
+      if (null != tmp9) {
         if (null != tmp9.assets[tmp11.variant]) {
           tmp13 = tmp14[tmp11.property];
         }
@@ -400,7 +404,7 @@ export const resolveAdCreativeCdnUrl = function resolveAdCreativeCdnUrl(hero_ima
 };
 export { getMimetype };
 export const getDevicePixelScaledDimensions = function getDevicePixelScaledDimensions(width, height) {
-  const tmp = importDefault(dependencyMap[12])();
+  const tmp = importDefault(1825)();
   if (tmp < 3) {
     let obj = { width, height };
   } else {
@@ -414,7 +418,7 @@ export const getScaledImageUrl = function getScaledImageUrl(arg0) {
   let height;
   let width;
   ({ assetUrl, width, height } = arg0);
-  const tmp = importDefault(dependencyMap[12])();
+  const tmp = importDefault(1825)();
   return getAssetUrlWithMediaProxyQueryParams(assetUrl, { width: width * tmp, height: height * tmp, format: "webp" });
 };
 export { convertVideoToFirstFrameImageWithMediaProxy };
@@ -423,6 +427,6 @@ export const getScaledFirstFrameImageUrl = function getScaledFirstFrameImageUrl(
   let height;
   let width;
   ({ assetUrl, width, height } = arg0);
-  const tmp = importDefault(dependencyMap[12])();
+  const tmp = importDefault(1825)();
   return convertVideoToFirstFrameImageWithMediaProxy(assetUrl, { width: width * tmp, height: height * tmp });
 };

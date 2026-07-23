@@ -1,14 +1,13 @@
-// Module ID: 6237
-// Function ID: 50288
+// Module ID: 6242
+// Function ID: 50317
 // Name: GroupGamingSpotIllustration
-// Dependencies: [33554456, 1946157056, 33, 5082]
+// Dependencies: [33, 5085, 6243, 2]
 // Exports: GroupGamingSpotIllustration
 
-// Module 6237 (GroupGamingSpotIllustration)
-import preload from "preload";
+// Module 6242 (GroupGamingSpotIllustration)
+import { jsx } from "jsxProd";
 
-const jsx = require(dependencyMap[0]).jsx;
-const result = preload.fileFinishedImporting("design/components/mana-assets/native/generated/GroupGamingSpotIllustration.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GroupGamingSpotIllustration.native.tsx");
 
 export const GroupGamingSpotIllustration = function GroupGamingSpotIllustration(width) {
   let accessibilityLabel;
@@ -28,7 +27,7 @@ export const GroupGamingSpotIllustration = function GroupGamingSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6243) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +35,5 @@ export const GroupGamingSpotIllustration = function GroupGamingSpotIllustration(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

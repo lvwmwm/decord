@@ -1,12 +1,20 @@
-// Module ID: 9877
-// Function ID: 76491
+// Module ID: 9884
+// Function ID: 76532
 // Name: makeAutocompleterSearchParams
-// Dependencies: []
+// Dependencies: [57, 31, 4808, 1194, 5042, 7107, 9885, 566, 9888, 9584, 7089, 2]
 // Exports: useShareSearchResults
 
-// Module 9877 (makeAutocompleterSearchParams)
+// Module 9884 (makeAutocompleterSearchParams)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { ALLOWED_TYPES } from "ALLOWED_TYPES";
+
+const require = arg1;
 function makeAutocompleterSearchParams(arg0) {
-  let obj = arg1(dependencyMap[6]);
+  let obj = require(9885) /* getQuickSwitcherOptions */;
   const quickSwitcherOptions = obj.getQuickSwitcherOptions(arg0);
   const queryMode = quickSwitcherOptions.queryMode;
   let tmp2 = ALLOWED_TYPES;
@@ -23,95 +31,79 @@ function makeAutocompleterSearchParams(arg0) {
   obj = { query: quickSwitcherOptions.query, queryMode: tmp5, resultTypes: tmp2 };
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const ALLOWED_TYPES = arg1(dependencyMap[5]).ALLOWED_TYPES;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/share/useShareSearchResults.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/share/useShareSearchResults.tsx");
 
 export { makeAutocompleterSearchParams };
 export const useShareSearchResults = function useShareSearchResults(targetDestination) {
   targetDestination = targetDestination.targetDestination;
-  const arg1 = targetDestination;
   const selectedDestinations = targetDestination.selectedDestinations;
-  const importDefault = selectedDestinations;
   const originDestination = targetDestination.originDestination;
-  const dependencyMap = originDestination;
   const channelFilter = targetDestination.channelFilter;
-  let callback = channelFilter;
   let flag = targetDestination.includeMissingDMs;
   if (flag === undefined) {
     flag = false;
   }
-  const React = flag;
-  let closure_5;
-  let closure_6;
-  let closure_7;
-  let ALLOWED_TYPES;
-  let makeAutocompleterSearchParams;
-  let tmp6;
+  let stateFromStores;
+  let search;
+  let query;
+  let results;
+  let first;
+  let c10;
   let queryMode;
   let ref;
   let ref1;
   let current;
   let stateFromStores1;
   let stateFromStores2;
-  let tmp15;
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => search.getId());
-  closure_5 = stateFromStores;
+  let c17;
+  let obj = targetDestination(originDestination[7]);
+  let items = [search];
+  stateFromStores = obj.useStateFromStores(items, () => search.getId());
   const items1 = [stateFromStores];
-  const memo = React.useMemo(() => {
+  const memo = flag.useMemo(() => {
     let obj = {};
-    obj = { items: "CONSOLE_DEVICE_ACCOUNT_LINK_ERROR", keyboardShouldPersistTaps: "hut", triggerOnTap: null };
+    obj = { blacklist: null, frecencyBoosters: true, userFilters: null };
     const items = ["user:" + stateFromStores];
     obj.blacklist = new Set(items);
     obj.searchOptions = obj;
     return obj;
   }, items1);
-  const tmp3 = importDefault(dependencyMap[8])(memo);
-  const search = tmp3.search;
-  closure_6 = search;
-  const query = tmp3.query;
-  closure_7 = query;
-  const results = tmp3.results;
-  ALLOWED_TYPES = results;
-  const tmp4 = callback(React.useState(makeAutocompleterSearchParams("")), 2);
-  const first = tmp4[0];
-  makeAutocompleterSearchParams = first;
-  tmp6 = tmp4[1];
-  const items2 = [tmp6];
+  const tmp3 = selectedDestinations(originDestination[8])(memo);
+  search = tmp3.search;
+  query = tmp3.query;
+  results = tmp3.results;
+  const tmp4 = channelFilter(flag.useState(first("")), 2);
+  first = tmp4[0];
+  c10 = tmp6;
+  const items2 = [tmp4[1]];
   queryMode = first.queryMode;
-  callback = React.useCallback((arg0) => tmp6(first(arg0)), items2);
-  ref = React.useRef(null);
-  ref1 = React.useRef(selectedDestinations);
+  const callback = flag.useCallback((arg0) => _undefined(first(arg0)), items2);
+  ref = flag.useRef(null);
+  ref1 = flag.useRef(selectedDestinations);
   current = selectedDestinations;
   if (query === ref.current) {
     current = ref1.current;
   }
   const items3 = [query, selectedDestinations];
-  const effect = React.useEffect(() => {
+  const effect = flag.useEffect(() => {
     if (query !== ref.current) {
       ref1.current = selectedDestinations;
     }
     ref.current = query;
   }, items3);
   const items4 = [search, first];
-  const layoutEffect = React.useLayoutEffect(() => {
+  const layoutEffect = flag.useLayoutEffect(() => {
     search({ query: first.query, resultTypes: first.resultTypes });
   }, items4);
-  const frecencySettings = arg1(dependencyMap[9]).useFrecencySettings();
-  const obj2 = arg1(dependencyMap[9]);
-  const items5 = [closure_7];
-  stateFromStores1 = arg1(dependencyMap[7]).useStateFromStores(items5, () => query.getFrequentlyWithoutFetchingLatest());
-  const obj3 = arg1(dependencyMap[7]);
-  const items6 = [closure_5];
-  stateFromStores2 = arg1(dependencyMap[7]).useStateFromStores(items6, () => stateFromStores.isConnected());
-  tmp15 = "" !== query;
-  obj = { results: React.useMemo(() => selectedDestinations(originDestination[10])({ results, hasQuery: tmp15, queryMode, targetDestination, frequentChannels: stateFromStores1, selectedDestinations, pinnedDestinations: current, originDestination, channelFilter, includeMissingDMs: flag, isConnected: stateFromStores2 }), items7), updateSearchText: callback };
-  const items7 = [results, tmp15, queryMode, targetDestination, stateFromStores1, selectedDestinations, current, originDestination, channelFilter, flag, stateFromStores2];
+  const frecencySettings = targetDestination(originDestination[9]).useFrecencySettings();
+  const obj2 = targetDestination(originDestination[9]);
+  const items5 = [query];
+  stateFromStores1 = targetDestination(originDestination[7]).useStateFromStores(items5, () => query.getFrequentlyWithoutFetchingLatest());
+  const obj3 = targetDestination(originDestination[7]);
+  const items6 = [stateFromStores];
+  stateFromStores2 = targetDestination(originDestination[7]).useStateFromStores(items6, () => stateFromStores.isConnected());
+  c17 = tmp15;
+  obj = { results: flag.useMemo(() => selectedDestinations(originDestination[10])({ results, hasQuery: c17, queryMode, targetDestination, frequentChannels: stateFromStores1, selectedDestinations, pinnedDestinations: current, originDestination, channelFilter, includeMissingDMs: flag, isConnected: stateFromStores2 }), items7), updateSearchText: callback };
+  items7 = [results, "" !== query, queryMode, targetDestination, stateFromStores1, selectedDestinations, current, originDestination, channelFilter, flag, stateFromStores2];
   return obj;
 };

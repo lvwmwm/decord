@@ -1,27 +1,28 @@
-// Module ID: 15005
-// Function ID: 112998
+// Module ID: 15121
+// Function ID: 115166
 // Name: useNotificationsTabBadge
-// Dependencies: []
+// Dependencies: [31, 6882, 566, 6883, 2]
 // Exports: default
 
-// Module 15005 (useNotificationsTabBadge)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/useNotificationsTabBadge.tsx");
+// Module 15121 (useNotificationsTabBadge)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/useNotificationsTabBadge.tsx");
 
 export default function useNotificationsTabBadge() {
-  let obj = arg1(dependencyMap[2]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => localItems.localItems);
-  const arg1 = stateFromStores;
+  let obj = stateFromStores(566);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_3.localItems);
   const items1 = [stateFromStores];
   const memo = React.useMemo(() => stateFromStores.filter((type) => {
-    let tmp = type.type === callback(closure_1[3]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
+    let tmp = type.type === stateFromStores(outer2_1[3]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS;
     if (!tmp) {
-      tmp = type.type === callback(closure_1[3]).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
+      tmp = type.type === stateFromStores(outer2_1[3]).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
     }
     if (!tmp) {
-      tmp = type.type === callback(closure_1[3]).NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE;
+      tmp = type.type === stateFromStores(outer2_1[3]).NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE;
     }
     return tmp;
   }).length, items1);

@@ -1,21 +1,32 @@
-// Module ID: 9515
-// Function ID: 74070
+// Module ID: 9522
+// Function ID: 74111
 // Name: FeedbackForm
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 7495, 1212, 5459, 1920, 4543, 4337, 5519, 5087, 2]
 // Exports: default
 
-// Module 9515 (FeedbackForm)
+// Module 9522 (FeedbackForm)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let require = arg1;
 function FeedbackForm(result) {
   let descriptionLabel;
+  let importDefault;
   let titleLabel;
   result = result.result;
-  const arg1 = result;
-  ({ trackReport: closure_1, titleLabel, descriptionLabel } = result);
+  const require = result;
+  ({ trackReport: importDefault, titleLabel, descriptionLabel } = result);
   const tmp = callback3();
   const reason = result.reason;
   const tmp2 = callback(React.useState(""), 2);
   const first = tmp2[0];
-  const dependencyMap = first;
   let obj = { keyboardShouldPersistTaps: "handled" };
   obj = {};
   obj = {};
@@ -25,31 +36,31 @@ function FeedbackForm(result) {
   }
   obj.value = label;
   if (null == titleLabel) {
-    const intl = arg1(dependencyMap[6]).intl;
-    titleLabel = intl.string(arg1(dependencyMap[6]).t.vcqwCj);
+    const intl = require(first[6]).intl;
+    titleLabel = intl.string(require(first[6]).t.vcqwCj);
   }
   obj.title = titleLabel;
   obj.disabled = true;
-  const items = [callback2(arg1(dependencyMap[5]).FormInput, obj, "channel-input"), callback2(arg1(dependencyMap[5]).FormDivider, {}), ];
-  const obj1 = { value: first };
+  const items = [callback2(require(first[5]).FormInput, obj, "channel-input"), callback2(require(first[5]).FormDivider, {}), ];
+  const obj1 = { value: first, title: null, onChange: null, multiline: true, numberOfLines: 4, autoCorrect: true };
   if (null == descriptionLabel) {
-    const intl2 = arg1(dependencyMap[6]).intl;
-    descriptionLabel = intl2.string(arg1(dependencyMap[6]).t.h95hcn);
+    const intl2 = require(first[6]).intl;
+    descriptionLabel = intl2.string(require(first[6]).t.h95hcn);
   }
   obj1.title = descriptionLabel;
   obj1.onChange = tmp2[1];
-  items[2] = callback2(arg1(dependencyMap[5]).FormInput, obj1);
+  items[2] = callback2(require(first[5]).FormInput, obj1);
   obj.children = items;
-  const items1 = [closure_8(arg1(dependencyMap[5]).FormSection, obj), ];
+  const items1 = [closure_8(require(first[5]).FormSection, obj), ];
   const obj2 = { style: tmp.bottomContainer };
   let tmp16 = !result.hideHelpdeskLink;
   if (tmp16) {
-    const obj3 = { style: tmp.helpDeskLabel };
-    const intl3 = arg1(dependencyMap[6]).intl;
-    const obj4 = { helpdeskURL: importDefault(dependencyMap[8]).getSubmitRequestURL() };
-    obj3.children = intl3.format(arg1(dependencyMap[6]).t.ybi2tD, obj4);
-    tmp16 = callback2(arg1(dependencyMap[7]).TextWithIOSLinkWorkaround, obj3);
-    const obj8 = importDefault(dependencyMap[8]);
+    const obj3 = { style: tmp.helpDeskLabel, variant: "text-xs/medium", color: "text-muted" };
+    const intl3 = require(first[6]).intl;
+    const obj4 = { helpdeskURL: importDefault(first[8]).getSubmitRequestURL() };
+    obj3.children = intl3.format(require(first[6]).t.ybi2tD, obj4);
+    tmp16 = callback2(require(first[7]).TextWithIOSLinkWorkaround, obj3);
+    const obj8 = importDefault(first[8]);
   }
   const items2 = [tmp16, ];
   const obj5 = { style: tmp.submitButton };
@@ -59,42 +70,36 @@ function FeedbackForm(result) {
     tmp24 = "" === first;
   }
   obj6.disabled = tmp24;
-  const intl4 = arg1(dependencyMap[6]).intl;
-  obj6.text = intl4.string(arg1(dependencyMap[6]).t.geKm7t);
+  const intl4 = require(first[6]).intl;
+  obj6.text = intl4.string(require(first[6]).t.geKm7t);
   obj6.onPress = function onPress() {
-    let arr = callback(first[10]);
+    let arr = outer1_1(first[10]);
     arr = arr.pop();
     const obj = {};
-    const merged = Object.assign(result);
+    const merged = Object.assign(closure_0);
     obj["feedback"] = first;
     callback(obj);
   };
-  obj5.children = callback2(arg1(dependencyMap[9]).Button, obj6);
+  obj5.children = callback2(require(first[9]).Button, obj6);
   items2[1] = callback2(closure_5, obj5);
   obj2.children = items2;
   items1[1] = closure_8(closure_5, obj2);
   obj.children = items1;
   return closure_8(closure_6, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles({ helpDeskLabel: {}, bottomContainer: { paddingHorizontal: 16 }, submitButton: {} });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/feedback/native/FeedbackModal.tsx");
+({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ helpDeskLabel: { lineHeight: 16, marginTop: 8 }, bottomContainer: { paddingHorizontal: 16 }, submitButton: { marginTop: 24, marginBottom: 24 } });
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/feedback/native/FeedbackModal.tsx");
 
 export default function FeedbackModal(result) {
-  const arg1 = result;
+  const _require = result;
   result = result.result;
   const importDefault = result;
   const trackReport = result.trackReport;
-  const dependencyMap = trackReport;
-  let closure_3 = React.useRef({ result, trackReport });
+  let _slicedToArray = React.useRef({ result, trackReport });
   const effect = React.useEffect(() => {
-    closure_3.current = { result, trackReport };
+    _slicedToArray.current = { result: closure_1, trackReport };
   });
   const callback = React.useCallback(() => {
     let arr = result(trackReport[10]);
@@ -105,14 +110,14 @@ export default function FeedbackModal(result) {
   let obj = { initialRouteName: "Feedback" };
   obj = {};
   obj = {};
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.title = intl.string(arg1(dependencyMap[6]).t.dBx+Cn);
-  obj.headerLeft = arg1(dependencyMap[12]).getHeaderCloseButton(callback);
+  const intl = _require(trackReport[6]).intl;
+  obj.title = intl.string(_require(trackReport[6]).t["dBx+Cn"]);
+  obj.headerLeft = _require(trackReport[12]).getHeaderCloseButton(callback);
   obj.render = function render() {
-    const merged = Object.assign(arg0);
-    return callback(closure_10, {});
+    const merged = Object.assign(closure_0);
+    return outer1_7(outer1_10, {});
   };
   obj.Feedback = obj;
   obj.screens = obj;
-  return callback2(arg1(dependencyMap[11]).Navigator, obj);
+  return callback2(_require(trackReport[11]).Navigator, obj);
 };

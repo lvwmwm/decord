@@ -1,18 +1,26 @@
-// Module ID: 8841
-// Function ID: 69754
+// Module ID: 8848
+// Function ID: 69795
 // Name: _getFilterBlob
-// Dependencies: []
+// Dependencies: [5, 1849, 8849, 7851, 653, 44, 8851, 4227, 8854, 1392, 8850, 8853, 8855, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 8841 (_getFilterBlob)
+// Module 8848 (_getFilterBlob)
+import invariant from "invariant";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import VideoFilterType from "VideoFilterType";
+import { NOOP } from "ME";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function _getFilterBlob() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getFilterBlob = obj;
   return obj(...arguments);
 }
 function applyBackgroundMediaFilterSettings(arg0, target, graph, image, blob) {
-  let obj = target(dependencyMap[6]);
+  let obj = require(8851) /* _fetchVideoFilterAssets */;
   obj = { graph, target, image, blob };
   const result = obj.applyMediaFilterSettings({ [arg0]: obj });
 }
@@ -22,7 +30,6 @@ function applyBackgroundOption() {
 function _applyBackgroundOption() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _applyBackgroundOption = obj;
   return obj(...arguments);
 }
 function applyBackgroundOptionLive(lastUsedVideoBackgroundOption, arg1) {
@@ -31,33 +38,26 @@ function applyBackgroundOptionLive(lastUsedVideoBackgroundOption, arg1) {
 function _applyBackgroundOptionLive() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _applyBackgroundOptionLive = obj;
   return obj(...arguments);
 }
 function _applyBackgroundOptionPreview() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _applyBackgroundOptionPreview = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ BACKGROUND_REPLACEMENT_SIZE: closure_6, BLUR_BACKGROUND_OPTION: closure_7 } = arg1(dependencyMap[3]));
-const NOOP = arg1(dependencyMap[4]).NOOP;
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/video_backgrounds/applyBackgroundOption.tsx");
+({ BACKGROUND_REPLACEMENT_SIZE: closure_6, BLUR_BACKGROUND_OPTION: closure_7 } = VideoFilterType);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_backgrounds/applyBackgroundOption.tsx");
 
 export { applyBackgroundOptionLive };
 export const applyBackgroundOptionPreview = function applyBackgroundOptionPreview() {
   return _applyBackgroundOptionPreview(...arguments);
 };
 export const applyInitialVideoBackgroundOption = function applyInitialVideoBackgroundOption() {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
-    let obj = arg1(dependencyMap[11]);
+    let obj = require(8853) /* getOptionFromSettingsFiltered */;
     const lastUsedVideoBackgroundOption = obj.getLastUsedVideoBackgroundOption(currentUser);
-    let tmp6 = importDefault(dependencyMap[12])();
+    let tmp6 = importDefault(8855)();
     if (tmp6) {
       tmp6 = !hasBeenApplied.hasBeenApplied;
     }

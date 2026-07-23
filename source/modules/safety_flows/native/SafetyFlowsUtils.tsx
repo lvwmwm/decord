@@ -1,24 +1,29 @@
-// Module ID: 16446
-// Function ID: 127030
+// Module ID: 16563
+// Function ID: 129204
 // Name: getScreensForTaskType
-// Dependencies: []
+// Dependencies: [5, 31, 1849, 16557, 16559, 4337, 16558, 3831, 10332, 1212, 2460, 1456, 16562, 2]
 // Exports: useOnTaskComplete
 
-// Module 16446 (getScreensForTaskType)
+// Module 16563 (getScreensForTaskType)
+import module_4337 from "module_4337";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getScreensForTaskType(task_type) {
-  const tmp = arg1(dependencyMap[3]).TASK_TYPE_TO_SCREENS[task_type];
+  const tmp = require(16557) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
   let tmp2 = null;
   if (null != tmp) {
     let tmp5 = tmp;
-    if (task_type === arg1(dependencyMap[3]).TaskType.EMAIL_VERIFICATION) {
-      const currentUser = currentUser.getCurrentUser();
+    if (task_type === require(16557) /* TaskType */.TaskType.EMAIL_VERIFICATION) {
+      currentUser = currentUser.getCurrentUser();
       let email;
       if (null != currentUser) {
         email = currentUser.email;
       }
       tmp5 = tmp;
       if (null != email) {
-        const items = [arg1(dependencyMap[3]).SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [require(16557) /* TaskType */.SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }
@@ -32,49 +37,42 @@ function fetchAndUpdateTask() {
 function _fetchAndUpdateTask() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchAndUpdateTask = obj;
   return obj(...arguments);
 }
 function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
-    let obj = importDefault(dependencyMap[5]);
-    obj.popWithKey(task_type(dependencyMap[6]).SAFETY_FLOWS_MODAL_KEY);
-    obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: importDefault(dependencyMap[8]) };
-    const intl = task_type(dependencyMap[9]).intl;
-    obj.content = intl.string(importDefault(dependencyMap[10])./fHz9S);
-    importDefault(dependencyMap[7]).open(obj);
+    let obj = importDefault(4337);
+    obj.popWithKey(require(16558) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
+    obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: importDefault(10332) };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.content = intl.string(importDefault(2460)["/fHz9S"]);
+    importDefault(3831).open(obj);
   } else {
     const tmp2 = getScreensForTaskType(task_type.task_type);
     if (null != tmp2) {
       arr.push(tmp2[0]);
     } else {
-      arr.push(task_type(dependencyMap[3]).SafetyFlowScreens.UPDATE_APP);
+      arr.push(require(16557) /* TaskType */.SafetyFlowScreens.UPDATE_APP);
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/safety_flows/native/SafetyFlowsUtils.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/safety_flows/native/SafetyFlowsUtils.tsx");
 
 export { getScreensForTaskType };
 export { fetchAndUpdateTask };
 export { navigateToScreenForTask };
 export const useOnTaskComplete = function useOnTaskComplete() {
-  const navigation = arg1(dependencyMap[11]).useNavigation();
-  const arg1 = navigation;
-  const obj = arg1(dependencyMap[11]);
-  const safetyFlowTask = arg1(dependencyMap[12]).useSafetyFlowTask();
+  navigation = navigation(setTask[11]).useNavigation();
+  const obj = navigation(setTask[11]);
+  const safetyFlowTask = navigation(setTask[12]).useSafetyFlowTask();
   const task = safetyFlowTask.task;
-  const importDefault = task;
-  const setTask = safetyFlowTask.setTask;
-  const dependencyMap = setTask;
+  setTask = safetyFlowTask.setTask;
   const items = [navigation, task, setTask];
-  return React.useCallback(() => {
+  return React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_3(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items);
+  })(), items);
 };

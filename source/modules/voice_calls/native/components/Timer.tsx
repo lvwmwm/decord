@@ -1,9 +1,18 @@
-// Module ID: 12613
-// Function ID: 96929
+// Module ID: 12727
+// Function ID: 99085
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 22, 1273, 2]
 
-// Module 12613 (_isNativeReflectConstruct)
+// Module 12727 (_isNativeReflectConstruct)
+import jsxProd from "jsxProd";
+import apply from "apply";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { jsxs } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,31 +22,25 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const jsxs = arg1(dependencyMap[6]).jsxs;
-const tmp3 = (PureComponent) => {
+const tmp3 = ((PureComponent) => {
   class Timer {
     constructor(arg0) {
       self = this;
-      tmp = closure_3(this, Timer);
+      tmp = outer1_3(this, apply);
       items = [];
       items[0] = PureComponent;
-      obj = closure_6(Timer);
-      tmp2 = closure_5;
-      if (closure_9()) {
+      obj = outer1_6(apply);
+      tmp2 = outer1_5;
+      if (outer1_9()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      Timer = tmp2Result;
+      apply = tmp2Result;
       tmp2Result._incrementSecond = () => {
         let hours;
         let minutes;
@@ -91,7 +94,7 @@ const tmp3 = (PureComponent) => {
             num = 59;
             num2 = 59;
           }
-          const tmp = minutes < 1 && hours >= 1;
+          tmp = minutes < 1 && hours >= 1;
         }
       };
       ({ seconds, minutes, hours, timestamp } = PureComponent);
@@ -141,7 +144,6 @@ const tmp3 = (PureComponent) => {
       return tmp2Result;
     }
   }
-  const arg1 = Timer;
   callback2(Timer, PureComponent);
   let obj = {
     key: "componentDidMount",
@@ -155,7 +157,7 @@ const tmp3 = (PureComponent) => {
       }
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "componentWillUnmount",
     value() {
@@ -180,35 +182,34 @@ const tmp3 = (PureComponent) => {
       if (!props.hideHours) {
         const _String = String;
         const _HermesInternal = HermesInternal;
-        let str = "" + callback(closure_2[7]).padStart(String(hours), 2, "0") + ":";
-        const obj = callback(closure_2[7]);
+        let str = "" + outer1_1(outer1_2[7]).padStart(String(hours), 2, "0") + ":";
+        const obj = outer1_1(outer1_2[7]);
       } else {
         str = "";
       }
       if (!hideMinutes) {
         const _String2 = String;
         const _HermesInternal2 = HermesInternal;
-        let str5 = "" + callback(closure_2[7]).padStart(String(minutes), 2, "0") + ":";
-        const obj2 = callback(closure_2[7]);
+        let str5 = "" + outer1_1(outer1_2[7]).padStart(String(minutes), 2, "0") + ":";
+        const obj2 = outer1_1(outer1_2[7]);
       } else {
         str5 = "";
       }
       if (str.length > 0) {
         const _String3 = String;
-        let padStartResult = callback(closure_2[7]).padStart(String(seconds), 2, "0");
-        const obj3 = callback(closure_2[7]);
+        let padStartResult = outer1_1(outer1_2[7]).padStart(String(seconds), 2, "0");
+        const obj3 = outer1_1(outer1_2[7]);
       } else {
         padStartResult = seconds;
       }
       const children = [str, str5, padStartResult];
-      return callback4(Timer(closure_2[8]).LegacyText, { style, accessibilityRole: "timer", children });
+      return outer1_8(Timer(outer1_2[8]).LegacyText, { style, accessibilityRole: "timer", children });
     }
   };
   items[2] = obj;
   return callback(Timer, items);
-}(importAll(dependencyMap[5]).PureComponent);
-tmp3.defaultProps = { -1395675954: true, -447589535: true };
-const importAllResult = importAll(dependencyMap[5]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/voice_calls/native/components/Timer.tsx");
+})(require("result").PureComponent);
+tmp3.defaultProps = { hideMinutes: false, hideHours: false };
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_calls/native/components/Timer.tsx");
 
 export default tmp3;

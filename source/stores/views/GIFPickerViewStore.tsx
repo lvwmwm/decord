@@ -1,9 +1,16 @@
-// Module ID: 9568
-// Function ID: 74540
+// Module ID: 9575
+// Function ID: 74581
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 1317, 1212, 566, 686, 2]
 
-// Module 9568 (_isNativeReflectConstruct)
+// Module 9575 (_isNativeReflectConstruct)
+import _callSuper from "_callSuper";
+import getSystemLocale from "getSystemLocale";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,38 +25,33 @@ function getFormatFromUrl(src) {
   const formatted = uRL.pathname.toLowerCase();
   if (!formatted.endsWith(".mp4")) {
     if (!formatted.endsWith(".webm")) {
-      const IMAGE = arg1(dependencyMap[6]).GIFType.IMAGE;
+      const IMAGE = require(1317) /* _callSuper */.GIFType.IMAGE;
     }
   }
-  return arg1(dependencyMap[6]).GIFType.VIDEO;
+  return require(1317) /* _callSuper */.GIFType.VIDEO;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-arg1(dependencyMap[5]).GIFPickerResultTypes;
-const IMAGE = arg1(dependencyMap[6]).GIFType.IMAGE;
-let closure_9 = null;
-let closure_10 = "";
-let closure_11 = "";
+require("ME").GIFPickerResultTypes;
+let IMAGE = require("_callSuper").GIFType.IMAGE;
+let c9 = null;
+let c10 = "";
+let c11 = "";
 let closure_12 = [];
 let closure_13 = [];
 let closure_14 = [];
 let closure_15 = [];
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class GIFPickerViewStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GIFPickerViewStore);
-      obj = closure_5(GIFPickerViewStore);
-      tmp2 = closure_4;
-      if (closure_16()) {
+      tmp = outer1_2(this, GIFPickerViewStore);
+      obj = outer1_5(GIFPickerViewStore);
+      tmp2 = outer1_4;
+      if (outer1_16()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -58,39 +60,38 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GIFPickerViewStore;
   callback2(GIFPickerViewStore, Store);
   let obj = {
     key: "getAnalyticsID",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   const items = [obj, , , , , , , ];
   obj = {
     key: "getQuery",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[1] = obj;
   obj = {
     key: "getResultQuery",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getResultItems",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[4] = {
     key: "getTrendingCategories",
     value() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[5] = {
@@ -102,34 +103,33 @@ let tmp2 = (Store) => {
   items[6] = {
     key: "getSuggestions",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[7] = {
     key: "getTrendingSearchTerms",
     value() {
-      return closure_15;
+      return outer1_15;
     }
   };
   return callback(GIFPickerViewStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GIFPickerViewStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   GIF_PICKER_INITIALIZE: function handleInitialize(analyticsID) {
     analyticsID = analyticsID.analyticsID;
   },
   GIF_PICKER_QUERY: function handleQuery(query) {
     query = query.query;
-    let closure_10 = query;
     if ("" === query) {
-      let closure_11 = "";
+      let c11 = "";
       let closure_12 = [];
       let closure_14 = [];
     }
   },
   GIF_PICKER_QUERY_SUCCESS: function handleQuerySuccess(query) {
     if (null != query.query) {
-      if (closure_10 === query) {
+      if (c10 === query) {
         return false;
       }
     }
@@ -137,23 +137,22 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
       query = query.query;
     }
     const items = query.items;
-    let closure_12 = items.map((width) => ({ width: width.width, height: width.height, src: width.src, gifSrc: width.gif_src, url: width.url, id: width.id, format: closure_8 }));
+    let closure_12 = items.map((width) => ({ width: width.width, height: width.height, src: width.src, gifSrc: width.gif_src, url: width.url, id: width.id, format: outer1_8 }));
   },
   GIF_PICKER_QUERY_FAILURE: function handleQueryFailure(query) {
     query = query.query;
     if (null == query) {
       return false;
     } else {
-      let closure_11 = query;
       let closure_12 = [];
     }
   },
   GIF_PICKER_TRENDING_FETCH_SUCCESS: function handleTrendingFetchSuccess(trendingCategories) {
     trendingCategories = trendingCategories.trendingCategories;
     if (null != trendingCategories.trendingGIFPreview) {
-      const obj = { type: GIFPickerResultTypes.TRENDING_GIFS };
-      const intl = arg1(dependencyMap[7]).intl;
-      obj.name = intl.string(arg1(dependencyMap[7]).t.H6zNFz);
+      let obj = { type: GIFPickerResultTypes.TRENDING_GIFS };
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj.name = intl.string(require(1212) /* getSystemLocale */.t.H6zNFz);
       obj.src = trendingCategories.trendingGIFPreview.src;
       obj.format = getFormatFromUrl(trendingCategories.trendingGIFPreview.src);
       const items = [obj];
@@ -167,12 +166,11 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
         const obj = {};
         const merged = Object.assign(src);
         obj["src"] = src.src;
-        obj["type"] = constants.TRENDING_CATEGORY;
-        obj["format"] = callback(src.src);
+        obj["type"] = outer1_7.TRENDING_CATEGORY;
+        obj["format"] = outer1_17(src.src);
         return obj;
       })
     ];
-    let closure_13 = items2;
   },
   GIF_PICKER_SUGGESTIONS_SUCCESS: function handleSuggestionsSuccess(items) {
     items = items.items;
@@ -181,6 +179,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     items = items.items;
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("stores/views/GIFPickerViewStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/views/GIFPickerViewStore.tsx");
 
 export default tmp2;

@@ -1,21 +1,22 @@
-// Module ID: 13218
-// Function ID: 100192
+// Module ID: 13332
+// Function ID: 102348
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [15, 17, 18, 6, 7, 4044, 1188, 8323, 1194, 8306, 491, 8330, 566, 686, 2]
 // Exports: resetGlobalState
 
-// Module 13218 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import closure_11 from "__exportStarResult1";
+// Module 13332 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,49 +26,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -78,16 +79,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -125,31 +126,31 @@ function handleTabOpened() {
   if (closure_13.length > 0) {
     const prototype = tmp3.prototype;
     const tmp5 = new new.target(closure_13, "focus");
-    let closure_12 = tmp5;
+    let c12 = tmp5;
     flag = true;
   }
   return flag;
 }
-let closure_12 = null;
+let c12 = null;
 let closure_13 = [];
-let closure_14 = 0;
-const map = new Map();
-const tmp3 = () => {
+let c14 = 0;
+let map = new Map();
+let tmp3 = (() => {
   class ICYMISession {
     constructor() {
       items = arg0;
       str = arg1;
       self = this;
-      ICYMISession = this;
+      self = this;
       if (arg0 === undefined) {
         items = [];
       }
       if (str === undefined) {
         str = "list";
       }
-      closure_1 = str;
-      tmp = closure_5(self, ICYMISession);
-      obj = ICYMISession(closure_1[10]);
+      list = str;
+      tmp = outer1_5(self, self);
+      obj = ICYMISession(outer1_1[10]);
       self._sessionId = obj.v4();
       self._startTimestamp = Date.now();
       self._endTimestamp = null;
@@ -169,8 +170,8 @@ const tmp3 = () => {
       self._actionCount = 0;
       self._latestDwellStartTimeMs = 0;
       self._timeout = setTimeout(() => self.endSession(), 300000);
-      ICYMIAnalytics = ICYMISession(closure_1[11]).ICYMIAnalytics;
-      obj = { icymiSessionId: self._sessionId, sessionStartTimeMs: self._startTimestamp, previousIcymiSessionCount: closure_14, uxVariation: ICYMISession(closure_1[11]).DEFAULT_UX_VARIATION };
+      ICYMIAnalytics = ICYMISession(outer1_1[11]).ICYMIAnalytics;
+      obj = { icymiSessionId: self._sessionId, sessionStartTimeMs: self._startTimestamp, previousIcymiSessionCount: outer1_14, uxVariation: ICYMISession(outer1_1[11]).DEFAULT_UX_VARIATION };
       result = ICYMIAnalytics.trackFeedSessionStarted(obj);
       if (items.length > 0) {
         startItemsDwellResult = self.startItemsDwell(items.map((arg0) => {
@@ -184,14 +185,13 @@ const tmp3 = () => {
       return;
     }
   }
-  const arg1 = ICYMISession;
   let obj = {
     key: "sessionId",
     get() {
       return this._sessionId;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "startTimestamp",
     get() {
@@ -263,18 +263,19 @@ const tmp3 = () => {
   items[12] = {
     key: "getImpression",
     value(arg0) {
-      const ICYMISession = arg0;
+      let closure_0 = arg0;
       const _activeItems = this._activeItems;
-      return _activeItems.find((itemId) => itemId.itemId === itemId);
+      return _activeItems.find((itemId) => itemId.itemId === closure_0);
     }
   };
   items[13] = {
     key: "startItemsDwell",
     value(arr) {
       let iter2;
-      const self = this;
-      const ICYMISession = this;
+      let self = this;
+      self = this;
       this._resetTimeout();
+      const outer1_13 = arr;
       if (arr.length === this._activeItems.length) {
         if (arr.every((itemId) => self._activeItems[arg1].itemId === itemId.itemId)) {
           return self._activeItems;
@@ -284,7 +285,7 @@ const tmp3 = () => {
       const items = [];
       const _activeItems = self._activeItems;
       const set = new Set(_activeItems.map((itemId) => itemId.itemId));
-      const tmp2 = callback2(arr);
+      const tmp2 = outer1_18(arr);
       let iter = tmp2();
       if (!iter.done) {
         do {
@@ -313,7 +314,7 @@ const tmp3 = () => {
       let iter2;
       let uxVariation;
       const self = this;
-      const tmp = callback2(arg0);
+      const tmp = outer1_18(arg0);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -333,9 +334,9 @@ const tmp3 = () => {
             num = value;
           }
           let result1 = _impressionItemIdMap.set(value.itemId, num + 1);
-          let tmp7 = closure_0;
-          let tmp8 = closure_1;
-          let ICYMIAnalytics = closure_0(closure_1[11]).ICYMIAnalytics;
+          let tmp7 = ICYMISession;
+          let tmp8 = outer1_1;
+          let ICYMIAnalytics = ICYMISession(outer1_1[11]).ICYMIAnalytics;
           let obj = { icymiSessionId: self._sessionId };
           ({ impressionId: obj.impressionId, itemId: obj.itemId, itemType: obj.itemType, impressionStartTimestamp: obj.dwellStartTimeMs, triggerType: obj.triggerType } = result);
           let _dwelledItemIdMap = self._dwelledItemIdMap;
@@ -346,8 +347,8 @@ const tmp3 = () => {
           }
           obj.itemOccurenceCountInSession = num2;
           ({ itemFeedIndex: obj.itemFeedIndex, itemScore: obj.itemScore, isInitiallyVisible: obj.isInitiallyVisible, itemChannelType: obj.itemChannelType } = result);
-          let tmp10 = closure_15;
-          let itemCardHeight = closure_15.get(result.itemId);
+          let tmp10 = outer1_15;
+          let itemCardHeight = outer1_15.get(result.itemId);
           if (null == itemCardHeight) {
             itemCardHeight = result.itemCardHeight;
           }
@@ -359,9 +360,9 @@ const tmp3 = () => {
           obj.isDwelling = null != impression;
           ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, uxVariation } = result);
           if (null == uxVariation) {
-            let tmp12 = closure_0;
-            let tmp13 = closure_1;
-            uxVariation = closure_0(closure_1[11]).DEFAULT_UX_VARIATION;
+            let tmp12 = ICYMISession;
+            let tmp13 = outer1_1;
+            uxVariation = ICYMISession(outer1_1[11]).DEFAULT_UX_VARIATION;
           }
           obj.uxVariation = uxVariation;
           obj.sessionImpressionIndex = result.sessionImpressionIndex;
@@ -377,7 +378,7 @@ const tmp3 = () => {
     value(id, type, actionType) {
       const self = this;
       const impression = this.getImpression(id);
-      const ICYMIAnalytics = ICYMISession(closure_1[11]).ICYMIAnalytics;
+      const ICYMIAnalytics = ICYMISession(outer1_1[11]).ICYMIAnalytics;
       const obj = { id, type, actionType };
       let impressionId;
       if (null != impression) {
@@ -389,7 +390,7 @@ const tmp3 = () => {
         uxVariation = impression.uxVariation;
       }
       if (null == uxVariation) {
-        uxVariation = ICYMISession(closure_1[11]).DEFAULT_UX_VARIATION;
+        uxVariation = ICYMISession(outer1_1[11]).DEFAULT_UX_VARIATION;
       }
       obj.uxVariation = uxVariation;
       const sum = self._interactionCount + 1;
@@ -409,14 +410,14 @@ const tmp3 = () => {
     value(itemId) {
       const self = this;
       const impression = this.getImpression(itemId.itemId);
-      const ICYMIAnalytics = ICYMISession(closure_1[11]).ICYMIAnalytics;
+      const ICYMIAnalytics = ICYMISession(outer1_1[11]).ICYMIAnalytics;
       const obj = { icymiSessionId: this._sessionId };
       let uxVariation;
       if (null != impression) {
         uxVariation = impression.uxVariation;
       }
       if (null == uxVariation) {
-        uxVariation = ICYMISession(closure_1[11]).DEFAULT_UX_VARIATION;
+        uxVariation = ICYMISession(outer1_1[11]).DEFAULT_UX_VARIATION;
       }
       obj.uxVariation = uxVariation;
       const sum = self._actionCount + 1;
@@ -444,14 +445,14 @@ const tmp3 = () => {
       if (null != itemId.itemId) {
         impression = self.getImpression(itemId.itemId);
       }
-      const ICYMIAnalytics = ICYMISession(closure_1[11]).ICYMIAnalytics;
+      const ICYMIAnalytics = ICYMISession(outer1_1[11]).ICYMIAnalytics;
       const obj = { icymiSessionId: self._sessionId };
       let uxVariation;
       if (null != impression) {
         uxVariation = impression.uxVariation;
       }
       if (null == uxVariation) {
-        uxVariation = ICYMISession(closure_1[11]).DEFAULT_UX_VARIATION;
+        uxVariation = ICYMISession(outer1_1[11]).DEFAULT_UX_VARIATION;
       }
       obj.uxVariation = uxVariation;
       const sum = self._actionCount + 1;
@@ -473,11 +474,11 @@ const tmp3 = () => {
   items[18] = {
     key: "trackFeedPageActioned",
     value(arg0) {
-      const ICYMIAnalytics = ICYMISession(closure_1[11]).ICYMIAnalytics;
+      const ICYMIAnalytics = ICYMISession(outer1_1[11]).ICYMIAnalytics;
       const sum = this._actionCount + 1;
       this._actionCount = sum;
       const merged = Object.assign(arg0);
-      const result = ICYMIAnalytics.trackFeedPageActioned({ icymiSessionId: this._sessionId, uxVariation: ICYMISession(closure_1[11]).DEFAULT_UX_VARIATION, sessionActionIndex: sum });
+      const result = ICYMIAnalytics.trackFeedPageActioned({ icymiSessionId: this._sessionId, uxVariation: ICYMISession(outer1_1[11]).DEFAULT_UX_VARIATION, sessionActionIndex: sum });
     }
   };
   items[19] = {
@@ -496,7 +497,7 @@ const tmp3 = () => {
   items[21] = {
     key: "endAllImpressions",
     value() {
-      const ICYMISession = this;
+      const self = this;
       const items = [...this._activeItems];
       const item = items.forEach((itemId) => self._endImpression(itemId.itemId));
     }
@@ -506,19 +507,19 @@ const tmp3 = () => {
     value() {
       this.endAllImpressions();
       this._endTimestamp = Date.now();
-      const ICYMIAnalytics = ICYMISession(closure_1[11]).ICYMIAnalytics;
-      const result = ICYMIAnalytics.trackFeedSessionCompleted({ icymiSessionId: this._sessionId, sessionDurationMs: this._endTimestamp - this._startTimestamp, sessionStartTimeMs: this._startTimestamp, sessionEndTimeMs: this._endTimestamp, impressionCount: this._impressionCount, uniqueImpressionCount: this._impressionItemIdMap.size, impressionItemTypes: Array.from(this._impressionItemTypes), feedReloadCount: this._reloadCount, feedDwelledItemsChangedCount: this._dwelledItemsChangedCount, feedFetchCount: this._feedFetchCount, latestDwellStartTimeMs: this._latestDwellStartTimeMs, previousIcyMiSessionCount: closure_14, interactionCount: this._interactionCount, dwelledCount: this._dwellCount, uniqueDwelledCount: this._dwelledItemIdMap.size, uxVariation: ICYMISession(closure_1[11]).DEFAULT_UX_VARIATION });
+      const ICYMIAnalytics = ICYMISession(outer1_1[11]).ICYMIAnalytics;
+      const result = ICYMIAnalytics.trackFeedSessionCompleted({ icymiSessionId: this._sessionId, sessionDurationMs: this._endTimestamp - this._startTimestamp, sessionStartTimeMs: this._startTimestamp, sessionEndTimeMs: this._endTimestamp, impressionCount: this._impressionCount, uniqueImpressionCount: this._impressionItemIdMap.size, impressionItemTypes: Array.from(this._impressionItemTypes), feedReloadCount: this._reloadCount, feedDwelledItemsChangedCount: this._dwelledItemsChangedCount, feedFetchCount: this._feedFetchCount, latestDwellStartTimeMs: this._latestDwellStartTimeMs, previousIcyMiSessionCount: outer1_14, interactionCount: this._interactionCount, dwelledCount: this._dwellCount, uniqueDwelledCount: this._dwelledItemIdMap.size, uxVariation: ICYMISession(outer1_1[11]).DEFAULT_UX_VARIATION });
       clearTimeout(this._timeout);
-      closure_14 = closure_14 + 1;
-      let closure_12 = null;
-      store.clear();
+      outer1_14 = outer1_14 + 1;
+      const outer1_12 = null;
+      outer1_15.clear();
       return this;
     }
   };
   items[23] = {
     key: "_resetTimeout",
     value() {
-      const ICYMISession = this;
+      const self = this;
       clearTimeout(this._timeout);
       this._timeout = setTimeout(() => self.endSession(), 300000);
     }
@@ -547,15 +548,15 @@ const tmp3 = () => {
   items[25] = {
     key: "_constructImpressionFromInput",
     value(itemId) {
-      let obj = ICYMISession(closure_1[10]);
+      let obj = ICYMISession(outer1_1[10]);
       obj = { itemId: itemId.itemId, itemType: itemId.itemType, impressionId: obj.v4(), impressionStartTimestamp: Date.now(), impressionComplete: false, triggerType: itemId.triggerType, itemFeedIndex: itemId.itemFeedIndex, itemScore: itemId.itemScore, isInitiallyVisible: itemId.isInitiallyVisible, itemChannelType: itemId.itemChannelType };
-      const value = store.get(itemId.itemId);
+      const value = outer1_15.get(itemId.itemId);
       let tmp2 = null;
       if (null != value) {
         tmp2 = value;
       }
       obj.itemCardHeight = tmp2;
-      obj.uxVariation = ICYMISession(closure_1[11]).DEFAULT_UX_VARIATION;
+      obj.uxVariation = ICYMISession(outer1_1[11]).DEFAULT_UX_VARIATION;
       obj.interactionActionTypes = [];
       obj.interactionCount = 0;
       obj.sessionImpressionIndex = null;
@@ -566,16 +567,15 @@ const tmp3 = () => {
     key: "_endImpression",
     value(arg0) {
       const self = this;
-      const ICYMISession = arg0;
+      let closure_0 = arg0;
       let _activeItems = this._activeItems;
-      const findIndexResult = _activeItems.findIndex((itemId) => itemId.itemId === itemId);
-      const tmp2 = this._activeItems[findIndexResult];
+      const findIndexResult = _activeItems.findIndex((itemId) => itemId.itemId === closure_0);
       let tmp3 = null;
-      if (null != tmp2) {
+      if (null != this._activeItems[findIndexResult]) {
         const _Date = Date;
         tmp2.impressionEndTimestamp = Date.now();
         tmp2.impressionComplete = true;
-        const ICYMIAnalytics = ICYMISession(closure_1[11]).ICYMIAnalytics;
+        const ICYMIAnalytics = ICYMISession(outer1_1[11]).ICYMIAnalytics;
         const obj = { icymiSessionId: self._sessionId, impressionId: tmp2.impressionId, dwellTimeMs: tmp2.impressionEndTimestamp - tmp2.impressionStartTimestamp };
         ({ itemId: obj.itemId, itemType: obj.itemType, impressionStartTimestamp: obj.dwellStartTimeMs, impressionEndTimestamp: obj.dwellEndTimeMs, triggerType: obj.triggerType } = tmp2);
         const _dwelledItemIdMap = self._dwelledItemIdMap;
@@ -586,7 +586,7 @@ const tmp3 = () => {
         }
         obj.itemOccurenceCountInSession = num2;
         ({ itemFeedIndex: obj.itemFeedIndex, itemScore: obj.itemScore, isInitiallyVisible: obj.isInitiallyVisible, itemChannelType: obj.itemChannelType } = tmp2);
-        let itemCardHeight = store.get(tmp2.itemId);
+        let itemCardHeight = outer1_15.get(tmp2.itemId);
         if (null == itemCardHeight) {
           itemCardHeight = tmp2.itemCardHeight;
         }
@@ -597,7 +597,7 @@ const tmp3 = () => {
         obj.itemCardHeight = tmp9;
         let DEFAULT_UX_VARIATION = tmp2.uxVariation;
         if (null == DEFAULT_UX_VARIATION) {
-          DEFAULT_UX_VARIATION = ICYMISession(closure_1[11]).DEFAULT_UX_VARIATION;
+          DEFAULT_UX_VARIATION = ICYMISession(outer1_1[11]).DEFAULT_UX_VARIATION;
         }
         obj.uxVariation = DEFAULT_UX_VARIATION;
         ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, sessionImpressionIndex: obj.sessionImpressionIndex } = tmp2);
@@ -610,20 +610,21 @@ const tmp3 = () => {
     }
   };
   return callback2(ICYMISession, items);
-}();
-let tmp4 = (Store) => {
+})();
+let closure_16 = tmp3;
+let tmp4 = ((Store) => {
   class ICYMISessionStore {
     constructor() {
       self = this;
-      tmp = closure_5(this, ICYMISessionStore);
-      obj = closure_3(ICYMISessionStore);
-      tmp2 = __exportStarResult1;
-      if (closure_17()) {
+      tmp = outer1_5(this, ICYMISessionStore);
+      obj = outer1_3(ICYMISessionStore);
+      tmp2 = outer1_2;
+      if (outer1_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -632,32 +633,31 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ICYMISessionStore;
   callback(ICYMISessionStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_10, closure_11, closure_7, closure_9);
+      this.waitFor(outer1_8, outer1_10, outer1_11, outer1_7, outer1_9);
     }
   };
   const items = [obj, , ];
   obj = {
     key: "currentSession",
     get() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[1] = obj;
   obj = {
     key: "endedSessionCount",
     get() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[2] = obj;
   return callback2(ICYMISessionStore, items);
-}(require("__exportStarResult1").Store);
-tmp4 = new tmp4(require("__exportStarResult1"), {
+})(require("initialize").Store);
+tmp4 = new tmp4(require("dispatcher"), {
   ICYMI_TAB_OPENED: handleTabOpened,
   ICYMI_TAB_CLOSED: function handleTabClosed() {
     return endCurrentSession();
@@ -688,7 +688,7 @@ tmp4 = new tmp4(require("__exportStarResult1"), {
     if (null == _null) {
       const prototype = tmp3.prototype;
       const tmp6 = new tmp3(items.items, "list");
-      const _null = tmp6;
+      _null = tmp6;
     } else {
       _null.startItemsDwell(items.items);
     }
@@ -698,7 +698,7 @@ tmp4 = new tmp4(require("__exportStarResult1"), {
     if (null == _null) {
       const prototype = tmp3.prototype;
       const tmp4 = new new.target(items.items, "list");
-      const _null = tmp4;
+      _null = tmp4;
     }
     const result = _null.trackItemsLongImpression(items.items);
     return true;
@@ -723,7 +723,7 @@ tmp4 = new tmp4(require("__exportStarResult1"), {
   APP_STATE_UPDATE: function handleAppStateUpdate(state) {
     let tmp = "active" !== state.state;
     if (tmp) {
-      tmp = null != closure_12;
+      tmp = null != c12;
     }
     if (tmp) {
       tmp = endCurrentSession();
@@ -731,7 +731,7 @@ tmp4 = new tmp4(require("__exportStarResult1"), {
     return tmp;
   },
   CHANNEL_SELECT: function handleChannelSelected() {
-    let tmp = null != closure_12;
+    let tmp = null != c12;
     if (tmp) {
       tmp = endCurrentSessionImpressions();
     }
@@ -745,7 +745,7 @@ tmp4 = new tmp4(require("__exportStarResult1"), {
     if (null == _null) {
       const prototype = tmp3.prototype;
       const tmp5 = new new.target(closure_13, "focus");
-      const _null = tmp5;
+      _null = tmp5;
     }
     _null.trackItemInteraction(press_comments.itemId, press_comments.itemType, press_comments.actionType);
     return true;
@@ -754,7 +754,7 @@ tmp4 = new tmp4(require("__exportStarResult1"), {
     if (null == _null) {
       const prototype = tmp3.prototype;
       const tmp5 = new new.target(closure_13, "focus");
-      const _null = tmp5;
+      _null = tmp5;
     }
     const result = _null.trackFeedItemActioned(icymiSessionId);
     return true;
@@ -763,7 +763,7 @@ tmp4 = new tmp4(require("__exportStarResult1"), {
     if (null == _null) {
       const prototype = tmp3.prototype;
       const tmp5 = new new.target(closure_13, "focus");
-      const _null = tmp5;
+      _null = tmp5;
     }
     const result = _null.trackFeedFilterActioned(icymiSessionId);
     return true;
@@ -772,13 +772,13 @@ tmp4 = new tmp4(require("__exportStarResult1"), {
     if (null == _null) {
       const prototype = tmp3.prototype;
       const tmp5 = new new.target(closure_13, "focus");
-      const _null = tmp5;
+      _null = tmp5;
     }
     const result = _null.trackFeedPageActioned(icymiSessionId);
     return true;
   }
 });
-const result = require("__exportStarResult1").fileFinishedImporting("modules/icymi/ICYMISessionStore.tsx");
+let result = require("_inherits").fileFinishedImporting("modules/icymi/ICYMISessionStore.tsx");
 
 export default tmp4;
 export const resetGlobalState = function resetGlobalState() {
@@ -786,9 +786,9 @@ export const resetGlobalState = function resetGlobalState() {
     const _clearTimeout = clearTimeout;
     clearTimeout(_null._timeout);
   }
-  const _null = null;
+  _null = null;
   let closure_13 = [];
-  let closure_14 = 0;
+  let c14 = 0;
   map.clear();
 };
 export const ICYMISession = tmp3;

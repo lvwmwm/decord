@@ -1,29 +1,31 @@
-// Module ID: 5768
-// Function ID: 49404
+// Module ID: 5773
+// Function ID: 49431
 // Name: TextField
-// Dependencies: [131072, 2893348864, 2902458373, 2919235589, 318767109, 33554438, 1929379840]
+// Dependencies: [31, 33, 5774, 5775, 5779, 5782, 2]
 
-// Module 5768 (TextField)
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef((onClear) => {
+// Module 5773 (TextField)
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const forwardRefResult = require("result").forwardRef((onClear) => {
   let innerRef;
   let inputStyle;
   let leading;
   let state;
   let trailing;
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(5774) /* useTextFieldState */;
   const textField = obj.useTextField(onClear, arg1);
   ({ innerRef, state } = textField);
-  const inputClearButtonConfig = arg1(dependencyMap[3]).useInputClearButtonConfig(onClear, state);
+  const inputClearButtonConfig = require(5775) /* useInputClearButtonConfig */.useInputClearButtonConfig(onClear, state);
   let tmp3;
   if (null != inputClearButtonConfig) {
     obj = {};
     ({ content: obj3.trailing, pressableProps: obj3.trailingPressableProps } = inputClearButtonConfig);
     tmp3 = obj;
   }
-  const obj2 = arg1(dependencyMap[3]);
-  const inputAttachments = arg1(dependencyMap[4]).useInputAttachments(onClear, tmp3);
+  const obj2 = require(5775) /* useInputClearButtonConfig */;
+  const inputAttachments = require(5779) /* estimateAttachmentWidth */.useInputAttachments(onClear, tmp3);
   ({ leading, trailing, inputStyle } = inputAttachments);
   obj = {};
   const merged = Object.assign(textField.inputProps);
@@ -31,8 +33,8 @@ const forwardRefResult = importAll(dependencyMap[0]).forwardRef((onClear) => {
   obj["leading"] = leading;
   obj["trailing"] = trailing;
   obj["inputStyle"] = inputStyle;
-  return jsx(arg1(dependencyMap[5]).BaseTextField, obj);
+  return jsx(require(5782) /* collapseNewlines */.BaseTextField, {});
 });
-const result = arg1(dependencyMap[6]).fileFinishedImporting("design/components/TextField/native/TextField.native.tsx");
+const result = require("useTextFieldState").fileFinishedImporting("design/components/TextField/native/TextField.native.tsx");
 
 export const TextField = forwardRefResult;

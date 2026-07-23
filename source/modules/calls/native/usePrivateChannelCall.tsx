@@ -1,45 +1,47 @@
-// Module ID: 12040
-// Function ID: 93023
+// Module ID: 12154
+// Function ID: 95174
 // Name: usePrivateChannelCall
-// Dependencies: []
+// Dependencies: [5, 31, 1348, 566, 1212, 8835, 4140, 2]
 // Exports: default
 
-// Module 12040 (usePrivateChannelCall)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/calls/native/usePrivateChannelCall.tsx");
+// Module 12154 (usePrivateChannelCall)
+import getPrivateChannelCall from "getPrivateChannelCall";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/calls/native/usePrivateChannelCall.tsx");
 
 export default function usePrivateChannelCall(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importDefault = arg1;
+  const _require = arg0;
+  let closure_1 = arg1;
   const dependencyMap = arg2;
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_5];
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [arg1, arg0];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const channel = authStore.getChannel(authStore.getDMFromUserId(arg0));
+    const channel = outer1_5.getChannel(outer1_5.getDMFromUserId(callback));
     if (null != channel) {
       if (channel.isPrivate()) {
         let obj = {};
-        ({ text: obj2.text, accessibilityHint: obj2.accessibilityHint, inCall: obj2.inCall } = arg1(arg2[5])(channel, arg1));
+        ({ text: obj2.text, accessibilityHint: obj2.accessibilityHint, inCall: obj2.inCall } = callback2(8835)(channel, callback2));
         return obj;
       }
     }
     obj = {};
-    const intl = arg0(arg2[4]).intl;
+    const intl = callback(1212).intl;
     const string = intl.string;
-    const t = arg0(arg2[4]).t;
-    if (arg1) {
-      let stringResult = string(t.7AWk50);
+    const t = callback(1212).t;
+    if (callback2) {
+      let stringResult = string(t["7AWk50"]);
     } else {
-      stringResult = string(t.EZgS+9);
+      stringResult = string(t["EZgS+9"]);
     }
     obj.text = stringResult;
-    const intl2 = arg0(arg2[4]).intl;
+    const intl2 = callback(1212).intl;
     const string2 = intl2.string;
-    const t2 = arg0(arg2[4]).t;
-    if (arg1) {
+    const t2 = callback(1212).t;
+    if (callback2) {
       let string2Result = string2(t2.oCqlGG);
     } else {
       string2Result = string2(t2.focH1t);
@@ -50,6 +52,6 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
   }, items1);
   obj = { text: stateFromStoresObject.text, inCall: stateFromStoresObject.inCall, accessibilityHint: stateFromStoresObject.accessibilityHint, handlePress: React.useCallback(callback(tmp), items2) };
   // CreateGeneratorClosureLongIndex (0x67)
-  const items2 = [arg0, arg1, arg2];
+  items2 = [arg0, arg1, arg2];
   return obj;
 };

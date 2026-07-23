@@ -1,14 +1,17 @@
-// Module ID: 9957
-// Function ID: 76938
+// Module ID: 9965
+// Function ID: 76978
 // Name: canEditMessage
-// Dependencies: []
+// Dependencies: [653, 5651, 4351, 5679, 2]
 // Exports: default
 
-// Module 9957 (canEditMessage)
-const _module = require(dependencyMap[0]);
-({ MessageFlags: closure_3, MessageStates: closure_4, MessageTypes: closure_5 } = _module);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/messages/canEditMessage.tsx");
+// Module 9965 (canEditMessage)
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+let closure_5;
+({ MessageFlags: closure_3, MessageStates: closure_4, MessageTypes: closure_5 } = ME);
+const result = require("createMinimalMessageRecord").fileFinishedImporting("modules/messages/canEditMessage.tsx");
 
 export default function canEditMessage(author) {
   let tmp = null != arg1;
@@ -17,9 +20,9 @@ export default function canEditMessage(author) {
     if (tmp2) {
       let tmp4 = author.state === constants2.SENT;
       if (tmp4) {
-        let tmp7 = !importDefault(dependencyMap[1])(author);
+        let tmp7 = !importDefault(5651)(author);
         if (tmp7) {
-          const tmp10 = !require(dependencyMap[2]).canEditMessageWithStickers(author);
+          const tmp10 = !require(4351) /* createMinimalMessageRecord */.canEditMessageWithStickers(author);
           let tmp11 = !tmp10;
           if (!tmp10) {
             let tmp13 = !author.hasFlag(constants.IS_VOICE_MESSAGE);
@@ -28,7 +31,7 @@ export default function canEditMessage(author) {
               if (tmp14) {
                 let tmp15 = !author.isPoll();
                 if (tmp15) {
-                  let tmp18 = !importDefault(dependencyMap[3])(author);
+                  let tmp18 = !importDefault(5679)(author);
                   if (tmp18) {
                     tmp18 = author.type !== constants3.MEDIA_MENTION_MESSAGE;
                   }
@@ -41,7 +44,7 @@ export default function canEditMessage(author) {
             tmp11 = tmp13;
           }
           tmp7 = tmp11;
-          const obj = require(dependencyMap[2]);
+          const obj = require(4351) /* createMinimalMessageRecord */;
         }
         tmp4 = tmp7;
       }

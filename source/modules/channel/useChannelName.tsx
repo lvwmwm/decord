@@ -1,42 +1,48 @@
-// Module ID: 4316
-// Function ID: 37814
+// Module ID: 4320
+// Function ID: 37846
 // Name: computeDefaultGroupDmNameFromUserIds
-// Dependencies: []
+// Dependencies: [57, 4044, 3767, 1849, 653, 1327, 3969, 1212, 566, 2]
 // Exports: computeGroupDmName, default, unescapeChannelName, useComputedGroupDmName
 
-// Module 4316 (computeDefaultGroupDmNameFromUserIds)
-function computeDefaultGroupDmNameFromUserIds(recipients, getUser, closure_12) {
-  getUser = closure_12;
+// Module 4320 (computeDefaultGroupDmNameFromUserIds)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+
+const require = arg1;
+function computeDefaultGroupDmNameFromUserIds(recipients, getUser, closure_7) {
+  const _require = closure_7;
   const mapped = recipients.map(getUser.getUser);
-  const found = mapped.filter(getUser(dependencyMap[5]).isNotNullish);
+  const found = mapped.filter(_require(1327).isNotNullish);
   const mapped1 = found.map((id) => {
-    let nickname = arg2.getNickname(id.id);
+    nickname = nickname.getNickname(id.id);
     if (null == nickname) {
-      nickname = callback(closure_2[6]).getName(id);
-      const obj = callback(closure_2[6]);
+      nickname = outer1_1(outer1_2[6]).getName(id);
+      const obj = outer1_1(outer1_2[6]);
     }
     return nickname;
   });
   if (mapped1.length > 0) {
     let joined = mapped1.join(", ");
   } else {
-    const intl = getUser(dependencyMap[7]).intl;
-    const obj = { name: importDefault(dependencyMap[6]).getName(getUser.getCurrentUser()) };
-    joined = intl.formatToPlainString(getUser(dependencyMap[7]).t.9Uk8PF, obj);
-    const obj2 = importDefault(dependencyMap[6]);
+    const intl = _require(1212).intl;
+    let obj = { name: importDefault(3969).getName(getUser.getCurrentUser()) };
+    joined = intl.formatToPlainString(_require(1212).t["9Uk8PF"], obj);
+    const obj2 = importDefault(3969);
   }
   return joined;
 }
-function computeDefaultGroupDmName(recipients, closure_11, closure_12) {
-  return computeDefaultGroupDmNameFromUserIds(recipients.recipients, closure_11, closure_12);
+function computeDefaultGroupDmName(recipients, closure_14, closure_7) {
+  return computeDefaultGroupDmNameFromUserIds(recipients.recipients, closure_14, closure_7);
 }
-function computeChannelName(channel, closure_11, closure_12, arg3, arg4) {
+function computeChannelName(channel, closure_14, closure_7, arg3, arg4) {
   let flag = arg3;
   let flag2 = arg4;
   if (arg3 === undefined) {
     flag = false;
   }
-  closure_11 = flag;
   if (flag2 === undefined) {
     flag2 = false;
   }
@@ -50,8 +56,8 @@ function computeChannelName(channel, closure_11, closure_12, arg3, arg4) {
   }
   const name = channel.name;
   if (channel.isObfuscated()) {
-    const intl = closure_11(dependencyMap[7]).intl;
-    return intl.string(closure_11(dependencyMap[7]).t./YzI63);
+    const intl = flag(1212).intl;
+    return intl.string(flag(1212).t["/YzI63"]);
   } else {
     const type = channel.type;
     if (ChannelTypes.DM === type) {
@@ -59,8 +65,8 @@ function computeChannelName(channel, closure_11, closure_12, arg3, arg4) {
         return maybeFormatDmName(name);
       } else {
         const recipients = channel.recipients;
-        const mapped = recipients.map(closure_11.getUser);
-        const first = callback(mapped.filter(closure_11(dependencyMap[5]).isNotNullish), 1)[0];
+        const mapped = recipients.map(closure_14.getUser);
+        const first = callback(mapped.filter(flag(1327).isNotNullish), 1)[0];
         if (null == first) {
           return "???";
         } else {
@@ -69,10 +75,10 @@ function computeChannelName(channel, closure_11, closure_12, arg3, arg4) {
               return first.globalName;
             }
           }
-          let nickname = closure_12.getNickname(first.id);
+          let nickname = closure_7.getNickname(first.id);
           if (null == nickname) {
-            nickname = importDefault(dependencyMap[6]).getName(first);
-            const obj = importDefault(dependencyMap[6]);
+            nickname = importDefault(3969).getName(first);
+            const obj = importDefault(3969);
           }
           let str7 = "???";
           if (null != nickname) {
@@ -84,7 +90,7 @@ function computeChannelName(channel, closure_11, closure_12, arg3, arg4) {
     } else if (ChannelTypes.GROUP_DM === type) {
       let tmp13 = name;
       if ("" === name) {
-        tmp13 = computeDefaultGroupDmName(channel, closure_11, closure_12);
+        tmp13 = computeDefaultGroupDmName(channel, closure_14, closure_7);
       }
       return tmp13;
     } else {
@@ -113,7 +119,7 @@ function computeChannelName(channel, closure_11, closure_12, arg3, arg4) {
                 if (flag) {
                   combined = name;
                   if (channel.isThread()) {
-                    const _HermesInternal = HermesInternal;
+                    let _HermesInternal = HermesInternal;
                     combined = "\"" + name + "\"";
                   }
                 }
@@ -135,25 +141,19 @@ function computeChannelName(channel, closure_11, closure_12, arg3, arg4) {
 function escapeChannelName(channelName) {
   return channelName.replace(/\\/g, "\\\\").replace(/"/g, "\\\"");
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const ChannelTypes = arg1(dependencyMap[4]).ChannelTypes;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/channel/useChannelName.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel/useChannelName.tsx");
 
 export default function useChannelName(arg0) {
   let flag = arg1;
-  const arg1 = arg0;
+  const _require = arg0;
   if (arg1 === undefined) {
     flag = false;
   }
-  const importDefault = flag;
-  const items = [closure_6, closure_4, closure_5];
-  return arg1(dependencyMap[8]).useStateFromStores(items, () => {
+  const items = [closure_6, _isNativeReflectConstruct, closure_5];
+  return _require(566).useStateFromStores(items, () => {
     let tmp = null;
-    if (null != arg0) {
-      tmp = callback(arg0, closure_6, closure_5, flag);
+    if (null != closure_0) {
+      tmp = outer1_10(closure_0, outer1_6, outer1_5, flag);
     }
     return tmp;
   });
@@ -161,14 +161,14 @@ export default function useChannelName(arg0) {
 export { computeDefaultGroupDmNameFromUserIds };
 export { computeDefaultGroupDmName };
 export const useComputedGroupDmName = function useComputedGroupDmName(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const items = [closure_6, closure_5];
-  return arg1(dependencyMap[8]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     let tmp = null;
-    if (null != arg0) {
+    if (null != multiUserDM) {
       tmp = null;
-      if (arg0.isMultiUserDM()) {
-        tmp = callback(arg0, closure_6, closure_5);
+      if (multiUserDM.isMultiUserDM()) {
+        tmp = outer1_9(multiUserDM, outer1_6, outer1_5);
       }
     }
     return tmp;

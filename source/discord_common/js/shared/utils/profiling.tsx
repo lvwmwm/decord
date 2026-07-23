@@ -1,12 +1,11 @@
 // Module ID: 632
 // Function ID: 7296
 // Name: mark
-// Dependencies: []
+// Dependencies: [2]
 // Exports: clearMarks, clearMeasures, mark, measure
 
 // Module 632 (mark)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/utils/profiling.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/profiling.tsx");
 
 export function mark(arg0) {
 

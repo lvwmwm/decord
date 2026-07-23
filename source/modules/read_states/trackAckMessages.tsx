@@ -1,19 +1,21 @@
-// Module ID: 12734
-// Function ID: 97699
+// Module ID: 12848
+// Function ID: 99855
 // Name: trackAckMessages
-// Dependencies: []
+// Dependencies: [1348, 6879, 1838, 4325, 653, 4324, 2]
 // Exports: default
 
-// Module 12734 (trackAckMessages)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/read_states/trackAckMessages.tsx");
+// Module 12848 (trackAckMessages)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/read_states/trackAckMessages.tsx");
 
 export default function trackAckMessages(channel_id, location) {
-  const channel = channel.getChannel(channel_id);
+  channel = channel.getChannel(channel_id);
   const obj = { channel_id };
   let guildId;
   if (null != channel) {
@@ -21,11 +23,11 @@ export default function trackAckMessages(channel_id, location) {
   }
   obj.guild_id = guildId;
   obj.location = location;
-  const guildsArray = guildsArray.getGuildsArray();
+  guildsArray = guildsArray.getGuildsArray();
   obj.guild_unread_statuses = guildsArray.map((id) => {
-    const mentionCount = closure_3.getMentionCount(id.id);
-    const hasUnreadResult = closure_3.hasUnread(id.id);
-    return "" + id.id + "," + hasUnreadResult + "," + mentionCount + "," + closure_5.isMuted(id.id) + "," + closure_5.resolveGuildUnreadSetting(id);
+    const mentionCount = outer1_3.getMentionCount(id.id);
+    const hasUnreadResult = outer1_3.hasUnread(id.id);
+    return "" + id.id + "," + hasUnreadResult + "," + mentionCount + "," + outer1_5.isMuted(id.id) + "," + outer1_5.resolveGuildUnreadSetting(id);
   });
-  location(dependencyMap[5]).trackWithMetadata(AnalyticEvents.ACK_MESSAGES, obj);
+  require(4324) /* _createForOfIteratorHelperLoose */.trackWithMetadata(AnalyticEvents.ACK_MESSAGES, obj);
 };

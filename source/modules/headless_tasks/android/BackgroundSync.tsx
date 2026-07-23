@@ -1,33 +1,35 @@
-// Module ID: 16503
-// Function ID: 127416
+// Module ID: 16620
+// Function ID: 129590
 // Name: resolved
-// Dependencies: []
+// Dependencies: [4808, 1194, 6651, 3, 1898, 15996, 2]
 
-// Module 16503 (resolved)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let importDefaultResult = importDefault(dependencyMap[3]);
+// Module 16620 (resolved)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import importDefaultResult from "timestamp";
+
+const require = arg1;
 importDefaultResult = new importDefaultResult("BackgroundSync");
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/headless_tasks/android/BackgroundSync.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/headless_tasks/android/BackgroundSync.tsx");
 
 export default (arg0) => {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   if ("active" === state.getState()) {
     let resolved = Promise.resolve();
   } else {
-    let isConnectedResult = closure_3.isConnected();
+    let isConnectedResult = _isNativeReflectConstruct.isConnected();
     if (!isConnectedResult) {
-      isConnectedResult = closure_3.isTryingToConnect();
+      isConnectedResult = _isNativeReflectConstruct.isTryingToConnect();
     }
     if (!isConnectedResult) {
-      const result = importDefault(dependencyMap[4]).carefullyOpenDatabase(id.getId());
-      const obj = importDefault(dependencyMap[4]);
+      const result = importDefault(1898).carefullyOpenDatabase(id.getId());
+      let obj = importDefault(1898);
     }
     resolved = new Promise((arg0) => {
-      closure_6.log("Executing BackgroundSync with ", arg0);
-      const obj = arg0(closure_2[5]);
-      arg0(closure_2[5]).backgroundSync({}).then(arg0);
+      outer1_6.log("Executing BackgroundSync with ", callback);
+      const obj = callback(outer1_2[5]);
+      callback(outer1_2[5]).backgroundSync({}).then(arg0);
     });
   }
   return resolved;

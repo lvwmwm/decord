@@ -1,9 +1,19 @@
-// Module ID: 16407
-// Function ID: 126753
+// Module ID: 16524
+// Function ID: 128927
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 3782, 6688, 663, 21, 7374, 16104, 5078, 2]
 
-// Module 16407 (_isNativeReflectConstruct)
+// Module 16524 (_isNativeReflectConstruct)
+import set from "set";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import tmp2 from "AutomaticLifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,53 +24,22 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleReferralMessages(type) {
-  if (type.type === arg1(dependencyMap[7]).MessageTypes.PREMIUM_REFERRAL) {
+  if (type.type === require(663) /* set */.MessageTypes.PREMIUM_REFERRAL) {
     if (null != type.content) {
       if (obj3.isProbablyAValidSnowflake(type.content)) {
-        const premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
-        const obj = importDefault(dependencyMap[8]);
+        premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
+        const obj = importDefault(21);
         if (tmp6) {
-          const userOffer = arg1(dependencyMap[9]).fetchUserOffer("ReferralMessageManager");
-          const obj2 = arg1(dependencyMap[9]);
+          const userOffer = require(7374) /* _fetchUserOffer */.fetchUserOffer("ReferralMessageManager");
+          const obj2 = require(7374) /* _fetchUserOffer */;
         }
-        const tmp6 = null == premiumTypeSubscription && closure_9.shouldFetchReferralOffer(importDefault(dependencyMap[8]).extractTimestamp(type.content));
+        tmp6 = null == premiumTypeSubscription && closure_9.shouldFetchReferralOffer(importDefault(21).extractTimestamp(type.content));
       }
-      const obj3 = importDefault(dependencyMap[8]);
+      obj3 = importDefault(21);
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let tmp2 = (arg0) => {
-  class ReferralMessageManager {
-    constructor() {
-      self = this;
-      tmp = closure_4(this, ReferralMessageManager);
-      obj = closure_6(ReferralMessageManager);
-      tmp2 = closure_5;
-      if (closure_10()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, [], closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, undefined);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp7 = closure_1(closure_2[10])(tmp2Result, closure_11);
-      return tmp2Result;
-    }
-  }
-  const arg1 = ReferralMessageManager;
-  callback2(ReferralMessageManager, arg0);
-  return callback(ReferralMessageManager);
-}(importDefault(dependencyMap[11]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/referrals/ReferralMessageManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/native/referrals/ReferralMessageManager.tsx");
 
 export default tmp2;

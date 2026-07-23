@@ -1,38 +1,40 @@
-// Module ID: 9194
-// Function ID: 72008
+// Module ID: 9201
+// Function ID: 72049
 // Name: _promptForRegisterCredential
-// Dependencies: []
+// Dependencies: [5, 27, 3, 5594, 1212, 477, 9202, 9203, 1553, 2]
 
-// Module 9194 (_promptForRegisterCredential)
+// Module 9201 (_promptForRegisterCredential)
+import set from "set";
+import { NativeModules } from "get ActivityIndicator";
+import importDefaultResult from "_fetchWebAuthnConditionalChallenge";
+
+const require = arg1;
 function _promptForRegisterCredential() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _promptForRegisterCredential = obj;
   return obj(...arguments);
 }
 function registerSecurityKey(setError, register) {
   if (register === undefined) {
     register = NativeModules.DCDSecurityKeyManager.register;
   }
-  register = undefined;
-  let dependencyMap;
+  setError = undefined;
+  let setRegistering;
   setError = setError.setError;
-  register = setError;
-  const setRegistering = setError.setRegistering;
-  dependencyMap = setRegistering;
+  setRegistering = setError.setRegistering;
   if (undefined !== setError) {
     setError("");
   }
   setRegistering(true);
-  const promise = function promptForRegisterCredential(register) {
-    return callback(...arguments);
-  }(register);
-  const nextPromise = function promptForRegisterCredential(register) {
-    return callback(...arguments);
-  }(register).then(setError.onRegisterSuccess);
-  return function promptForRegisterCredential(register) {
-    return callback(...arguments);
-  }(register).then(setError.onRegisterSuccess).catch((arg0) => {
+  const promise = (function promptForRegisterCredential(register) {
+    return outer1_5(...arguments);
+  })(register);
+  const nextPromise = (function promptForRegisterCredential(register) {
+    return outer1_5(...arguments);
+  })(register).then(setError.onRegisterSuccess);
+  return (function promptForRegisterCredential(register) {
+    return outer1_5(...arguments);
+  })(register).then(setError.onRegisterSuccess).catch((arg0) => {
     if (undefined === setError) {
       throw arg0;
     } else {
@@ -43,24 +45,21 @@ function registerSecurityKey(setError, register) {
   }).finally(() => setRegistering(false));
 }
 function mutateAndroidRegisterChallengeForDiscoverable(register) {
-  const arg1 = register;
+  let closure_0 = register;
   return (arg0) => {
     const parsed = JSON.parse(arg0);
     parsed.publicKey.authenticatorSelection.residentKey = "required";
-    return arg0(JSON.stringify(parsed));
+    return callback(JSON.stringify(parsed));
   };
 }
 function registerAndroidCredentialManagerPasskey(setError) {
   return registerSecurityKey(setError, mutateAndroidRegisterChallengeForDiscoverable(NativeModules.DCDSecurityKeyManager.registerPasskey));
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-let importDefaultResult = importDefault(dependencyMap[2]);
 importDefaultResult = new importDefaultResult("WebAuthnUtils");
-const obj = {};
+let obj = {};
 Object.defineProperty(obj, "hasAndroidPasskeySupport", {
   get: () => {
-    let isAndroidResult = arg1(dependencyMap[5]).isAndroid();
+    let isAndroidResult = require(477) /* set */.isAndroid();
     if (isAndroidResult) {
       const DCDSecurityKeyManager = NativeModules.DCDSecurityKeyManager;
       let registerPasskey;
@@ -75,28 +74,28 @@ Object.defineProperty(obj, "hasAndroidPasskeySupport", {
 });
 Object.defineProperty(obj, "shouldDisplayAndroidFidoSelector", {
   get: () => {
-    let isAndroidResult = arg1(dependencyMap[5]).isAndroid();
+    let isAndroidResult = require(477) /* set */.isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = !arg1(dependencyMap[8]).isMetaQuest();
-      const obj2 = arg1(dependencyMap[8]);
+      isAndroidResult = !require(1553) /* isMetaQuest */.isMetaQuest();
+      const obj2 = require(1553) /* isMetaQuest */;
     }
     return isAndroidResult;
   },
   set: undefined
 });
 obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
-  let arg1 = NativeModules.DCDSecurityKeyManager.authenticate;
-  let isAndroidResult = arg1(dependencyMap[5]).isAndroid();
+  let authenticatePasskey = NativeModules.DCDSecurityKeyManager.authenticate;
+  let isAndroidResult = authenticatePasskey(477).isAndroid();
   if (isAndroidResult) {
     const DCDSecurityKeyManager = NativeModules.DCDSecurityKeyManager;
-    let authenticatePasskey;
+    authenticatePasskey = undefined;
     if (null != DCDSecurityKeyManager) {
       authenticatePasskey = DCDSecurityKeyManager.authenticatePasskey;
     }
     isAndroidResult = null != authenticatePasskey;
   }
   if (isAndroidResult) {
-    arg1 = NativeModules.DCDSecurityKeyManager.authenticatePasskey;
+    authenticatePasskey = NativeModules.DCDSecurityKeyManager.authenticatePasskey;
   }
   // CreateGeneratorClosureLongIndex (0x67)
   return callback(tmp);
@@ -114,6 +113,6 @@ obj.registerPasskey = function registerPasskey(setError) {
   return tmp2;
 };
 obj.registerSecurityKey = registerSecurityKey;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/webauthn/native/NativeCeremonies.tsx");
+const result = require("timestamp").fileFinishedImporting("modules/webauthn/native/NativeCeremonies.tsx");
 
 export default obj;

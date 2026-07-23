@@ -1,15 +1,14 @@
-// Module ID: 14084
-// Function ID: 106933
+// Module ID: 14198
+// Function ID: 109089
 // Name: track
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: track
 
-// Module 14084 (track)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("actions/AnalyticsTrackingActionCreators.tsx");
+// Module 14198 (track)
+const result = require("set").fileFinishedImporting("actions/AnalyticsTrackingActionCreators.tsx");
 
 export const track = function track(event, properties) {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(686);
   obj = { type: "TRACK", event, properties };
   obj.dispatch(obj);
 };

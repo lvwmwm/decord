@@ -1,45 +1,50 @@
-// Module ID: 10092
-// Function ID: 78166
+// Module ID: 10100
+// Function ID: 78206
 // Name: ButtonBadge
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 477, 1273, 1324, 4549, 4660, 4126, 9128, 2]
 // Exports: default
 
-// Module 10092 (ButtonBadge)
+// Module 10100 (ButtonBadge)
+import importAllResult from "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 class ButtonBadge {
   constructor(arg0) {
     str = global.badgePosition;
     if (str === undefined) {
       str = "left";
     }
-    tmp = f78168(false);
+    tmp = f78208(false);
     tmp2 = jsx;
     obj = {};
-    tmp3 = importDefault(dependencyMap[10]);
-    obj.size = arg1(dependencyMap[10]).CHANNEL_BADGE_SIZE;
+    tmp3 = require("DEFAULT_BADGE_SIZE");
+    obj.size = require("DEFAULT_BADGE_SIZE").CHANNEL_BADGE_SIZE;
     obj.maskSize = 2;
     obj.style = "left" === str ? tmp.unreadBadgeLeft : tmp.unreadBadgeRight;
     obj.maskColor = tmp.unreadBadgeMask.color;
     return tmp2(tmp3, obj);
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
-  let obj = { actionIconButtonPressable: { <string:2104241004>: 0.000000000000000000000000000025261340779372826, <string:143479472>: -0.00000000000000000000000000000000000000000008971708424961389, <string:1449329397>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012347486809543077, <string:2103730859>: 69269383559347000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1630826065>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014924179216646993, <string:2131317000>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000640959344055744, <string:1627653713>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002753581674325211, <string:3359199547>: "isArray", <string:2622925666>: "Error", <string:3332623508>: "start" }, withoutMargin: { marginEnd: 0 } };
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
+  let obj = { actionIconButtonPressable: { minWidth: 32, minHeight: 32, borderRadius: 20, marginEnd: 12, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 12 }, withoutMargin: { marginEnd: 0 } };
   obj = {};
   let prop;
   if (!arg0) {
-    prop = importDefault(dependencyMap[3]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
+    prop = importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
   }
   obj.backgroundColor = prop;
   obj.filled = obj;
-  obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: importDefault(dependencyMap[3]).colors.INPUT_BACKGROUND_DEFAULT };
-  const merged = Object.assign(importDefault(dependencyMap[3]).shadows.SHADOW_LOW);
+  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: importDefault(689).colors.INPUT_BACKGROUND_DEFAULT };
+  const merged = Object.assign(importDefault(689).shadows.SHADOW_LOW);
   obj.outlined = obj;
-  obj.roundButton = { nm: true, View: true };
+  obj.roundButton = { maxWidth: 32, maxHeight: 32 };
   const obj1 = {};
-  const colors = importDefault(dependencyMap[3]).colors;
+  const colors = importDefault(689).colors;
   obj1.tintColor = arg0 ? colors.ICON_SUBTLE : colors.INTERACTIVE_TEXT_DEFAULT;
   obj.actionIcon = obj1;
   const obj2 = { marginLeft: 4 };
@@ -49,29 +54,27 @@ let closure_6 = arg1(dependencyMap[2]).createStyles((arg0) => {
   }
   obj2.marginTop = num2;
   obj.actionText = obj2;
-  obj.unreadBadgeLeft = {};
-  obj.unreadBadgeRight = {};
-  const obj6 = arg1(dependencyMap[4]);
-  obj.unreadBadgeMask = { color: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW };
-  const obj3 = { color: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW };
-  obj.countStyle = { position: "relative", marginLeft: importDefault(dependencyMap[3]).space.PX_8 };
+  obj.unreadBadgeLeft = { position: "absolute", left: -2, top: -1 };
+  obj.unreadBadgeRight = { position: "absolute", right: -2, top: -1 };
+  obj6 = require(477) /* set */;
+  obj.unreadBadgeMask = { color: importDefault(689).colors.BACKGROUND_BASE_LOW };
+  const obj3 = { color: importDefault(689).colors.BACKGROUND_BASE_LOW };
+  obj.countStyle = { position: "relative", marginLeft: importDefault(689).space.PX_8 };
   return obj;
 });
 let closure_7 = importAllResult.memo((color) => {
   let IconComponent;
   let source;
   ({ IconComponent, source } = color);
-  const arg1 = source;
   let ICON_SUBTLE = color.color;
-  const importDefault = ICON_SUBTLE;
   const isRefreshEnabled = color.isRefreshEnabled;
   const tmp = callback2(isRefreshEnabled);
   const dependencyMap = tmp;
   const items = [tmp, ICON_SUBTLE, source];
   if (null != IconComponent) {
-    const obj = { size: "sm" };
+    let obj = { size: "sm" };
     if (isRefreshEnabled) {
-      ICON_SUBTLE = importDefault(dependencyMap[3]).colors.ICON_SUBTLE;
+      ICON_SUBTLE = ICON_SUBTLE(689).colors.ICON_SUBTLE;
     }
     obj.color = ICON_SUBTLE;
     let tmp2Result = closure_4(IconComponent, obj);
@@ -81,8 +84,7 @@ let closure_7 = importAllResult.memo((color) => {
   }
   return tmp2Result;
 });
-const obj2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/IconActionButton.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/IconActionButton.tsx");
 
 export default function IconActionButton(variant) {
   let IconComponent;
@@ -112,9 +114,9 @@ export default function IconActionButton(variant) {
     num = 0;
   }
   ({ noMargin, hitSlop, disabled, onPress, onLongPress } = variant);
-  const tmp = importDefault(dependencyMap[6])("IconActionButton");
+  const tmp = importDefault(1324)("IconActionButton");
   const tmp2 = callback2(tmp);
-  arg1(dependencyMap[7]);
+  require(4549) /* getFontScale */;
   let tmp5 = null != buttonText;
   if (tmp5) {
     tmp5 = tmp4 <= 1.2;
@@ -136,13 +138,13 @@ export default function IconActionButton(variant) {
   const items1 = [callback(closure_7, { IconComponent, color, source, isRefreshEnabled: tmp }), , , ];
   if (tmp5) {
     obj = { variant: "text-sm/bold", style: tmp2.actionText, children: buttonText };
-    tmp5 = callback(arg1(dependencyMap[9]).Text, obj);
+    tmp5 = callback(require(4126) /* Text */.Text, obj);
   }
   items1[1] = tmp5;
   let tmp12 = null;
   if (num > 0) {
     obj = { style: tmp2.countStyle, value: num };
-    tmp12 = callback(arg1(dependencyMap[5]).Badge, obj);
+    tmp12 = callback(require(1273) /* Button */.Badge, obj);
   }
   items1[2] = tmp12;
   if (badge) {
@@ -151,7 +153,7 @@ export default function IconActionButton(variant) {
   }
   items1[3] = badge;
   obj.children = items1;
-  return closure_5(arg1(dependencyMap[8]).PressableOpacity, obj);
+  return closure_5(require(4660) /* PressableBase */.PressableOpacity, obj);
 };
 export const ICON_ACTION_BUTTON_SIZE = 32;
 export { ButtonBadge };

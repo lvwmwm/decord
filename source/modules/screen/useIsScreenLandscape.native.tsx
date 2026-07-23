@@ -1,13 +1,15 @@
-// Module ID: 4659
-// Function ID: 40369
+// Module ID: 4663
+// Function ID: 40401
 // Name: getIsScreenLandscape
-// Dependencies: []
+// Dependencies: [31, 1451, 1453, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 4659 (getIsScreenLandscape)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");
+// Module 4663 (getIsScreenLandscape)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("context").fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");
 
 export const getIsScreenLandscape = function getIsScreenLandscape() {
   let str = arg0;
@@ -17,8 +19,7 @@ export const getIsScreenLandscape = function getIsScreenLandscape() {
   return state.getState().byAppEntry[str].screenIsLandscape;
 };
 export const useIsScreenLandscape = function useIsScreenLandscape() {
-  const appEntryKey = arg1(dependencyMap[2]).useAppEntryKey();
-  const arg1 = appEntryKey;
+  appEntryKey = appEntryKey(1453).useAppEntryKey();
   const items = [appEntryKey];
-  return state(React.useCallback((arg0) => arg0.byAppEntry[closure_0].screenIsLandscape, items));
+  return state(React.useCallback((arg0) => arg0.byAppEntry[appEntryKey].screenIsLandscape, items));
 };

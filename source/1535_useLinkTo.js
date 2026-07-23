@@ -1,17 +1,17 @@
 // Module ID: 1535
-// Function ID: 17517
+// Function ID: 17518
 // Name: useLinkTo
-// Dependencies: []
+// Dependencies: [31, 1459, 1534]
 // Exports: default
 
 // Module 1535 (useLinkTo)
-let closure_3 = importAll(dependencyMap[0]);
+import result from "result";
+
+const require = arg1;
 
 export default function useLinkTo() {
-  const context = React.useContext(arg1(dependencyMap[1]).NavigationContainerRefContext);
-  const arg1 = context;
-  const context1 = React.useContext(importDefault(dependencyMap[2]));
-  const importDefault = context1;
+  context = React.useContext(context(1459).NavigationContainerRefContext);
+  context1 = React.useContext(context1(1534));
   const items = [context1, context];
   return React.useCallback((path) => {
     if (undefined === context) {
@@ -30,13 +30,13 @@ export default function useLinkTo() {
             if (null != options) {
               config = options.config;
             }
-            const actionFromState = context(closure_2[1]).getActionFromState(stateFromPath, config);
+            const actionFromState = context(outer1_2[1]).getActionFromState(stateFromPath, config);
             if (undefined !== actionFromState) {
               context.dispatch(actionFromState);
             } else {
               context.reset(stateFromPath);
             }
-            const obj2 = context(closure_2[1]);
+            const obj2 = context(outer1_2[1]);
           } else {
             const _Error2 = Error;
             const error1 = new Error("Failed to parse the path to a navigation state.");
@@ -47,8 +47,8 @@ export default function useLinkTo() {
         if (null != options) {
           config1 = options.config;
         }
-        stateFromPath = context(closure_2[1]).getStateFromPath(path, config1);
-        const obj = context(closure_2[1]);
+        stateFromPath = context(outer1_2[1]).getStateFromPath(path, config1);
+        const obj = context(outer1_2[1]);
       } else {
         const _Error = Error;
         const _HermesInternal = HermesInternal;

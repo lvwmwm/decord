@@ -1,41 +1,43 @@
-// Module ID: 14298
-// Function ID: 107993
+// Module ID: 14412
+// Function ID: 110146
 // Name: useExperimentOverrideActiveCount
-// Dependencies: []
+// Dependencies: [4044, 1188, 33, 13503, 566, 13504, 13745, 10095, 13514, 2]
 
-// Module 14298 (useExperimentOverrideActiveCount)
+// Module 14412 (useExperimentOverrideActiveCount)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const require = arg1;
 function useExperimentOverrideActiveCount() {
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
-  const obj = arg1(dependencyMap[4]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => Object.keys(outer1_2.getAllExperimentOverrideDescriptors()).length);
+  const obj = require(566) /* initialize */;
   const items1 = [closure_3];
-  return stateFromStores + arg1(dependencyMap[4]).useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length);
+  return stateFromStores + require(566) /* initialize */.useStateFromStores(items1, () => Object.keys(outer1_3.getClientOverrides()).length);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[7]);
-obj = {
+createToggle = {
   useTitle() {
     return "Experiments Overrides Active";
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[8]).BeakerIcon,
+  IconComponent: require("BeakerIcon").BeakerIcon,
   useDescription: function useExperimentOverrideActiveDescription() {
     const obj = { label: "Experiments overridden: ", value: useExperimentOverrideActiveCount().toString() };
-    return jsx(arg1(dependencyMap[5]).DevToolsContentSubLabel, obj);
+    return jsx(require(13504) /* DevToolsContentSortButtons */.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: useExperimentOverrideActiveCount().toString() });
   },
   usePredicate: function useHasExperimentOverrideActive() {
-    const staffOrDeveloperSettingPredicate = arg1(dependencyMap[6]).useStaffOrDeveloperSettingPredicate();
-    const obj = arg1(dependencyMap[6]);
+    const staffOrDeveloperSettingPredicate = require(13745) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = require(13745) /* useStaffOrDeveloperSettingPredicate */;
     return useExperimentOverrideActiveCount() > 0 && staffOrDeveloperSettingPredicate;
   },
   onPress: function handleExperimentOverrideActivePress() {
-    arg1(dependencyMap[3]).navigateToDevTools({ screenKey: "experiments" });
+    require(13503) /* navigateToDevTools */.navigateToDevTools({ screenKey: "experiments" });
   },
   withArrow: true
 };
-const pressable = obj.createPressable(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/defs/native/ExperimentOverrideActiveSetting.tsx");
+createToggle = createToggle.createPressable(createToggle);
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/defs/native/ExperimentOverrideActiveSetting.tsx");
 
-export default pressable;
+export default createToggle;

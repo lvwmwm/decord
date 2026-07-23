@@ -1,32 +1,32 @@
-// Module ID: 4942
-// Function ID: 42378
+// Module ID: 4945
+// Function ID: 42396
 // Name: selectVoiceChannelAdditional
-// Dependencies: []
+// Dependencies: [1348, 1838, 4946, 3758, 1906, 1849, 4146, 4947, 4312, 4948, 3830, 4949, 4950, 4098, 4962, 1934, 12561, 491, 686, 2]
 // Exports: selectVoiceChannelAdditional
 
-// Module 4942 (selectVoiceChannelAdditional)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const STAGE_BOOSTING_SHEET_KEY = arg1(dependencyMap[7]).STAGE_BOOSTING_SHEET_KEY;
-const result = arg1(dependencyMap[19]).fileFinishedImporting("actions/SelectedChannelActionCreatorsAdditional.native.tsx");
+// Module 4945 (selectVoiceChannelAdditional)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/SelectedChannelActionCreatorsAdditional.native.tsx");
 
 export const selectVoiceChannelAdditional = function selectVoiceChannelAdditional(channelId, guildId, flag, flag2, arg4) {
   let obj = arg4;
-  guildId = channelId;
+  const _require = channelId;
   const importDefault = guildId;
   if (flag === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let channel = flag2;
   if (obj === undefined) {
     obj = {};
   }
@@ -34,40 +34,38 @@ export const selectVoiceChannelAdditional = function selectVoiceChannelAdditiona
   if (flag3 === undefined) {
     flag3 = false;
   }
-  let closure_4 = flag3;
   let flag4 = obj.bypassIdleUpdate;
   if (flag4 === undefined) {
     flag4 = false;
   }
-  let check = flag4;
-  channel = channel.getChannel(channelId);
-  const currentUser = currentUser.getCurrentUser();
+  const channel = flag2.getChannel(channelId);
+  currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
     if (null != channel) {
-      const isChannelFullResult = guildId(dependencyMap[8]).isChannelFull(channel, closure_9, closure_4);
-      check = check.getCheck(channel.guild_id);
+      const isChannelFullResult = _require(flag[8]).isChannelFull(channel, closure_9, flag3);
+      const check = flag4.getCheck(channel.guild_id);
       if (!check.canChat) {
         if (!obj3.canLurkerListen(channel)) {
-          return guildId(dependencyMap[10]).unverifiedVoiceGate(check);
+          return _require(flag[10]).unverifiedVoiceGate(check);
         }
-        const obj3 = guildId(dependencyMap[9]);
+        obj3 = _require(flag[9]);
       }
-      const obj8 = guildId(dependencyMap[8]);
+      const obj8 = _require(flag[8]);
       if (isChannelFullResult) {
         if (channel.isGuildStageVoice()) {
           if (obj5.getStageHasMedia(channel.id)) {
             obj = { channel };
-            importDefault(dependencyMap[13]).openLazy(guildId(dependencyMap[15])(dependencyMap[14], dependencyMap.paths), STAGE_BOOSTING_SHEET_KEY, obj);
+            importDefault(flag[13]).openLazy(_require(flag[15])(flag[14], flag.paths), STAGE_BOOSTING_SHEET_KEY, obj);
           }
-          const obj5 = guildId(dependencyMap[12]);
+          obj5 = _require(flag[12]);
         }
       }
     }
-    importDefault(dependencyMap[16])(() => {
-      let obj = arg0(flag[17]);
+    importDefault(flag[16])(() => {
+      let obj = channelId(flag[17]);
       const v4Result = obj.v4();
-      obj = { type: "VOICE_CHANNEL_SELECT", guildId: arg1, channelId: arg0, currentVoiceChannelId: voiceChannelId.getVoiceChannelId(), video: flag, stream: flag2, lockVoiceStateForResume: flag3, joinVoiceId: v4Result, bypassIdleUpdate: flag4 };
-      arg1(flag[18]).dispatch(obj);
+      obj = { type: "VOICE_CHANNEL_SELECT", guildId, channelId, currentVoiceChannelId: outer1_7.getVoiceChannelId(), video: flag, stream: flag2, lockVoiceStateForResume: flag3, joinVoiceId: v4Result, bypassIdleUpdate: flag4 };
+      guildId(flag[18]).dispatch(obj);
     }, channelId, flag2, flag);
   }
 };

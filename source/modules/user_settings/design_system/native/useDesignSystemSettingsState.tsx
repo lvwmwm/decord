@@ -1,10 +1,12 @@
-// Module ID: 14307
-// Function ID: 108078
-// Dependencies: []
+// Module ID: 14421
+// Function ID: 110231
+// Name: keys
+// Dependencies: [621, 2]
 
-// Module 14307
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/user_settings/design_system/native/useDesignSystemSettingsState.tsx");
+// Module 14421 (keys)
+import keys from "keys";
 
-export default _module.create(() => ({}));
+const obj = keys.create(() => ({ buttonSize: "md", buttonScale: 8, enableLoadingState: false, iconPosition: "start", showIcon: false, showDisabled: false }));
+const result = require("set").fileFinishedImporting("modules/user_settings/design_system/native/useDesignSystemSettingsState.tsx");
+
+export default obj;

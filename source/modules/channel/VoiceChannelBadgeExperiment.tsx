@@ -1,18 +1,20 @@
-// Module ID: 7905
-// Function ID: 62928
+// Module ID: 7911
+// Function ID: 62965
 // Name: items
-// Dependencies: []
+// Dependencies: [4045, 4042, 2]
 // Exports: getVoiceChannelBadgeExperiment, useVoiceChannelBadgeExperiment
 
-// Module 7905 (items)
-const _module = require(dependencyMap[1]);
-let obj = { "Bool(false)": 231584282385006940000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007534477813443604, "Bool(false)": -504174744500473500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 152149109490599420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false } };
-obj = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: { enabled: false } };
-const items = [obj, { config: { enabled: true } }];
+// Module 7911 (items)
+import createExperiment from "createExperiment";
+
+let obj = { id: "2026-03_voice_badge", kind: "guild", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, label: "Display Voice Channel Badge", defaultConfig: { enabled: false } };
+obj = { id: 0, label: "Control", config: { enabled: false } };
+const items = [obj, ];
+const obj1 = { id: 1, label: "Show voice badges", config: { enabled: true } };
+items[1] = obj1;
 obj.treatments = items;
-const experiment = _module.createExperiment(obj);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/channel/VoiceChannelBadgeExperiment.tsx");
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/channel/VoiceChannelBadgeExperiment.tsx");
 
 export const VoiceChannelBadgeExperiment = experiment;
 export const useVoiceChannelBadgeExperiment = function useVoiceChannelBadgeExperiment(guildId) {

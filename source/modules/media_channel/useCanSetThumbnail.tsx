@@ -1,17 +1,19 @@
-// Module ID: 9817
-// Function ID: 76179
+// Module ID: 9824
+// Function ID: 76220
 // Name: useCanSetThumbnail
-// Dependencies: []
+// Dependencies: [1348, 624, 2]
 // Exports: default
 
-// Module 9817 (useCanSetThumbnail)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/media_channel/useCanSetThumbnail.tsx");
+// Module 9824 (useCanSetThumbnail)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/media_channel/useCanSetThumbnail.tsx");
 
 export default function useCanSetThumbnail(arg0, isImage) {
-  isImage = arg0;
-  const items = [closure_2];
-  const stateFromStores = isImage(dependencyMap[1]).useStateFromStores(items, () => channel.getChannel(arg0));
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_2.getChannel(closure_0));
   let isMediaChannelResult;
   if (null != stateFromStores) {
     isMediaChannelResult = stateFromStores.isMediaChannel();

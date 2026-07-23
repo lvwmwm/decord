@@ -1,10 +1,24 @@
 // Module ID: 312
 // Function ID: 4780
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 44, 313]
 
 // Module 312 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import closure_4 from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { isValidElement } from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import importAllResult from "result";
+
 let StyleSheet;
+let closure_10;
+let closure_11;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,24 +28,15 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const isValidElement = arg1(dependencyMap[5]).isValidElement;
-const importAllResult = importAll(dependencyMap[5]);
-({ StyleSheet, View: closure_9 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
-const tmp4 = arg1(dependencyMap[7]);
+({ StyleSheet, View: closure_9 } = get_ActivityIndicator);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
 const styles = StyleSheet.create({ row: { flexDirection: "row" }, rowReverse: { flexDirection: "row-reverse" }, columnReverse: { flexDirection: "column-reverse" } });
 
-export default (PureComponent) => {
+export default ((PureComponent) => {
   class CellRenderer {
     constructor() {
       self = this;
-      tmp = closure_3(this, CellRenderer);
+      tmp = outer1_3(this, apply);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -39,19 +44,19 @@ export default (PureComponent) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_6(CellRenderer);
-      tmp3 = closure_5;
-      if (closure_13()) {
+      obj = outer1_6(apply);
+      tmp3 = outer1_5;
+      if (outer1_13()) {
         if (!combined) {
           combined = [];
         }
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, combined, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, combined, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
       tmp3Result = tmp3(self, constructResult);
-      CellRenderer = tmp3Result;
+      apply = tmp3Result;
       obj = { highlighted: false, leadingItem: tmp3Result.props.item };
       tmp3Result.state = { separatorProps: obj };
       tmp3Result._separators = {
@@ -93,16 +98,14 @@ export default (PureComponent) => {
       return tmp3Result;
     }
   }
-  const arg1 = CellRenderer;
   callback2(CellRenderer, PureComponent);
   let obj = {
     key: "updateSeparatorProps",
-    value: function updateSeparatorProps(arg0) {
-      const CellRenderer = arg0;
-      this.setState((separatorProps) => ({ separatorProps: Object.assign({}, separatorProps.separatorProps, separatorProps) }));
+    value: function updateSeparatorProps(closure_0) {
+      this.setState((separatorProps) => ({ separatorProps: Object.assign({}, separatorProps.separatorProps, closure_0) }));
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
@@ -125,12 +128,12 @@ export default (PureComponent) => {
       }
       if (ListItemComponent) {
         let obj = { item, index, separators: self._separators };
-        let tmp7 = callback5(ListItemComponent, obj);
+        let tmp7 = outer1_10(ListItemComponent, obj);
       } else if (renderItem) {
         obj = { item, index, separators: self._separators };
         tmp7 = renderItem(obj);
       } else {
-        callback(closure_2[8])(false, "VirtualizedList: Either ListItemComponent or renderItem props are required but none were found.");
+        outer1_1(outer1_2[8])(false, "VirtualizedList: Either ListItemComponent or renderItem props are required but none were found.");
       }
       return tmp7;
     }
@@ -151,16 +154,16 @@ export default (PureComponent) => {
       ({ CellRendererComponent, ItemSeparatorComponent, horizontal, item, index, inversionStyle, onCellLayout } = props);
       const _renderElementResult = this._renderElement(props.renderItem, props.ListItemComponent, item, index);
       let tmp2 = ItemSeparatorComponent;
-      if (!callback4(ItemSeparatorComponent)) {
+      if (!outer1_8(ItemSeparatorComponent)) {
         let tmp3 = ItemSeparatorComponent;
         if (ItemSeparatorComponent) {
           const _Object = Object;
-          tmp3 = callback5(ItemSeparatorComponent, Object.assign({}, self.state.separatorProps));
+          tmp3 = outer1_10(ItemSeparatorComponent, Object.assign({}, self.state.separatorProps));
         }
         tmp2 = tmp3;
       }
       if (inversionStyle) {
-        let items = row;
+        let items = outer1_12;
         if (horizontal) {
           items = [, ];
           items[0] = items.rowReverse;
@@ -172,7 +175,7 @@ export default (PureComponent) => {
       } else {
         let tmp6 = inversionStyle;
         if (horizontal) {
-          const items2 = [row.row, inversionStyle];
+          const items2 = [outer1_12.row, inversionStyle];
           tmp6 = items2;
         }
         if (CellRendererComponent) {
@@ -195,15 +198,15 @@ export default (PureComponent) => {
           const obj3 = {};
           const items4 = [_renderElementResult, tmp2];
           obj3.children = items4;
-          tmp9Result = tmp9(closure_9, Object.assign(obj, tmp12, obj3));
-          const tmp11 = closure_9;
+          tmp9Result = tmp9(outer1_9, Object.assign(obj, tmp12, obj3));
+          const tmp11 = outer1_9;
         }
         const obj4 = { cellKey: self.props.cellKey, children: tmp9Result };
-        return callback5(CellRenderer(closure_2[9]).VirtualizedListCellContextProvider, obj4);
+        return outer1_10(CellRenderer(outer1_2[9]).VirtualizedListCellContextProvider, obj4);
       }
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "getDerivedStateFromProps",
       value: function getDerivedStateFromProps(item, separatorProps) {
@@ -220,4 +223,4 @@ export default (PureComponent) => {
     }
   ];
   return callback(CellRenderer, items, items1);
-}(importAllResult.PureComponent);
+})(require("result").PureComponent);

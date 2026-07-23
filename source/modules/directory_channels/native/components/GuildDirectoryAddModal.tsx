@@ -1,74 +1,76 @@
-// Module ID: 10031
-// Function ID: 77500
+// Module ID: 10039
+// Function ID: 77540
 // Name: GuildDirectoryAddModal
-// Dependencies: []
+// Dependencies: [31, 10040, 33, 4130, 5084, 480, 5087, 10038, 10041, 10049, 10053, 10063, 5121, 5450, 5519, 1212, 2]
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 10031 (GuildDirectoryAddModal)
-importAll(dependencyMap[0]);
-const GuildDirectoryCreate = arg1(dependencyMap[1]).GuildDirectoryCreate;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { marginTop: arg1(dependencyMap[4]).NAV_BAR_HEIGHT, flex: 1 };
-obj.safeArea = obj;
-let closure_5 = obj.createStyles(obj);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryAddModal.tsx");
+// Module 10039 (GuildDirectoryAddModal)
+import "result";
+import { GuildDirectoryCreate } from "GuildDirectoryCreate";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT, flex: 1 };
+_createForOfIteratorHelperLoose.safeArea = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryAddModal.tsx");
 
 export default function GuildDirectoryAddModal(arg0) {
   let initialStack;
   let screens;
-  const arg1 = arg0;
-  ({ screens, initialStack } = importDefault(dependencyMap[13])(() => {
-    let obj = { name: constants.CREATE_OR_ADD };
+  const _require = arg0;
+  ({ screens, initialStack } = importDefault(5450)(() => {
+    let obj = { name: outer1_3.CREATE_OR_ADD };
     obj = {};
-    const merged = Object.assign(arg0);
+    let merged = Object.assign(callback);
     obj.params = obj;
     const items = [obj];
     obj = {};
     const obj1 = {};
-    const obj2 = { fullscreen: true, impressionName: arg0(closure_2[5]).ImpressionNames.HUB_EXISTING_GUILD_CHOOSE };
-    let obj5 = arg0(closure_2[6]);
-    obj2.headerLeft = obj5.getHeaderCloseButton(callback(closure_2[7]).close);
+    const obj2 = { fullscreen: true, impressionName: callback(outer1_2[5]).ImpressionNames.HUB_EXISTING_GUILD_CHOOSE };
+    let obj5 = callback(outer1_2[6]);
+    obj2.headerLeft = obj5.getHeaderCloseButton(outer1_1(outer1_2[7]).close);
     obj2.headerTitle = function headerTitle() {
       return null;
     };
     obj2.render = function render(arg0) {
       const merged = Object.assign(arg0);
-      return callback2(callback(closure_2[8]), {});
+      return outer2_4(outer2_1(outer2_2[8]), {});
     };
-    obj1[constants.CREATE_OR_ADD] = obj2;
-    obj1[constants.DESCRIPTION] = {
+    obj1[outer1_3.CREATE_OR_ADD] = obj2;
+    obj1[outer1_3.DESCRIPTION] = {
       fullscreen: true,
-      impressionName: arg0(closure_2[5]).ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
+      impressionName: callback(outer1_2[5]).ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
       headerTitle() {
         return null;
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(closure_2[9]), {});
+        return outer2_4(outer2_1(outer2_2[9]), {});
       }
     };
     const obj3 = {
       fullscreen: true,
-      impressionName: arg0(closure_2[5]).ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
+      impressionName: callback(outer1_2[5]).ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
       headerTitle() {
         return null;
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(closure_2[9]), {});
+        return outer2_4(outer2_1(outer2_2[9]), {});
       }
     };
-    obj1[constants.TEMPLATES] = {
+    obj1[outer1_3.TEMPLATES] = {
       fullscreen: true,
-      impressionName: arg0(closure_2[5]).ImpressionNames.HUB_CREATE_GUILD_TEMPLATE,
+      impressionName: callback(outer1_2[5]).ImpressionNames.HUB_CREATE_GUILD_TEMPLATE,
       headerTitle() {
         return null;
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(closure_2[10]), {});
+        return outer2_4(outer2_1(outer2_2[10]), {});
       }
     };
     obj5 = {
@@ -76,23 +78,23 @@ export default function GuildDirectoryAddModal(arg0) {
         return null;
       },
       fullscreen: true,
-      impressionName: arg0(closure_2[5]).ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
+      impressionName: callback(outer1_2[5]).ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(closure_2[11]), {});
+        return outer2_4(outer2_1(outer2_2[11]), {});
       }
     };
-    obj1[constants.CREATE] = obj5;
+    obj1[outer1_3.CREATE] = obj5;
     obj.screens = obj1;
     obj.initialStack = items;
     return obj;
   }));
-  const obj = { screens, initialRouteStack: initialStack };
-  const intl = arg1(dependencyMap[15]).intl;
-  obj.headerBackTitle = intl.string(arg1(dependencyMap[15]).t.13/7kX);
-  return jsx(arg1(dependencyMap[14]).Navigator, obj);
+  let obj = { screens, initialRouteStack: initialStack };
+  const intl = _require(1212).intl;
+  obj.headerBackTitle = intl.string(_require(1212).t["13/7kX"]);
+  return jsx(_require(5519).Navigator, { screens, initialRouteStack: initialStack });
 };
 export const GuildDirectoryAddModalScreen = function GuildDirectoryAddModalScreen(children) {
-  const tmp = callback();
-  return jsx(arg1(dependencyMap[12]).SafeAreaPaddingView, { top: true, style: callback().safeArea, children: children.children });
+  const tmp = _createForOfIteratorHelperLoose();
+  return jsx(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: _createForOfIteratorHelperLoose().safeArea, children: children.children });
 };

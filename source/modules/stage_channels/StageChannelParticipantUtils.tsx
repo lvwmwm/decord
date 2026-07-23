@@ -1,17 +1,18 @@
-// Module ID: 10655
-// Function ID: 83159
+// Module ID: 10665
+// Function ID: 83209
 // Name: participantMemberInfo
-// Dependencies: []
+// Dependencies: [664, 3969, 1212, 2]
 // Exports: participantMemberInfo
 
-// Module 10655 (participantMemberInfo)
-const DAY = importDefault(dependencyMap[0]).Millis.DAY;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");
+// Module 10665 (participantMemberInfo)
+const require = arg1;
+const DAY = require("set").Millis.DAY;
+const result = require("getSystemLocale").fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");
 
 export const participantMemberInfo = function participantMemberInfo(participant) {
   if (obj.isNewUser(participant.user)) {
-    const intl5 = arg1(dependencyMap[2]).intl;
-    return intl5.string(arg1(dependencyMap[2]).t.VaCdhQ);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    return intl5.string(require(1212) /* getSystemLocale */.t.VaCdhQ);
   } else {
     const member = participant.member;
     let joinedAt;
@@ -19,8 +20,8 @@ export const participantMemberInfo = function participantMemberInfo(participant)
       joinedAt = member.joinedAt;
     }
     if (null == joinedAt) {
-      const intl4 = arg1(dependencyMap[2]).intl;
-      let stringResult = intl4.string(arg1(dependencyMap[2]).t.CQmzib);
+      const intl4 = require(1212) /* getSystemLocale */.intl;
+      let stringResult = intl4.string(require(1212) /* getSystemLocale */.t.CQmzib);
     } else {
       if (null != participant.member) {
         if (participant.member.roles.length > 0) {
@@ -30,8 +31,8 @@ export const participantMemberInfo = function participantMemberInfo(participant)
             name = role.name;
           }
           if (null == name) {
-            const intl3 = arg1(dependencyMap[2]).intl;
-            name = intl3.string(arg1(dependencyMap[2]).t.97/NdO);
+            const intl3 = require(1212) /* getSystemLocale */.intl;
+            name = intl3.string(require(1212) /* getSystemLocale */.t["97/NdO"]);
           }
           stringResult = name;
         }
@@ -41,14 +42,14 @@ export const participantMemberInfo = function participantMemberInfo(participant)
       const _Date2 = Date;
       const time = date.getTime();
       if (time - Date.parse(joinedAt) < DAY) {
-        const intl2 = arg1(dependencyMap[2]).intl;
-        stringResult = intl2.string(arg1(dependencyMap[2]).t.IKE48n);
+        const intl2 = require(1212) /* getSystemLocale */.intl;
+        stringResult = intl2.string(require(1212) /* getSystemLocale */.t.IKE48n);
       } else {
-        const intl = arg1(dependencyMap[2]).intl;
-        stringResult = intl.string(arg1(dependencyMap[2]).t.u0gUWt);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        stringResult = intl.string(require(1212) /* getSystemLocale */.t.u0gUWt);
       }
     }
     return stringResult;
   }
-  const obj = arg1(dependencyMap[1]);
+  obj = require(3969) /* conceal */;
 };

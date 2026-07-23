@@ -1,17 +1,22 @@
-// Module ID: 13846
-// Function ID: 104653
+// Module ID: 13960
+// Function ID: 106809
 // Name: BountiesModalEndCard
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 3991, 4131, 4134, 4554, 13941, 2]
 // Exports: default
 
-// Module 13846 (BountiesModalEndCard)
-const _module = require(dependencyMap[0]);
-({ StyleSheet: closure_3, View: closure_4 } = _module);
-const _module1 = require(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = _module1);
-const _module2 = require(dependencyMap[2]);
-let closure_7 = _module2.createStyles(() => {
-  let obj = { container: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false } };
+// Module 13960 (BountiesModalEndCard)
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+({ StyleSheet: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(() => {
+  let obj = { container: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center" } };
   obj = {};
   const merged = Object.assign(closure_3.absoluteFillObject);
   obj["backgroundColor"] = "rgba(241, 251, 169, 0.15)";
@@ -22,27 +27,25 @@ let closure_7 = _module2.createStyles(() => {
   return obj;
 });
 let closure_8 = { code: "function BountiesModalEndCardTsx1(){const{withTiming,visible,timingStandard}=this.__closure;return{opacity:withTiming(visible?1:0,timingStandard)};}" };
-const _module3 = require(dependencyMap[8]);
-const result = _module3.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalEndCard.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalEndCard.tsx");
 
 export default function BountiesModalEndCard(visible) {
   let bounty;
   let sourceQuestContent;
   visible = visible.visible;
-  const require = visible;
   ({ bounty, sourceQuestContent } = visible);
   const tmp = callback3();
-  require(dependencyMap[3]);
+  visible(3991);
   const fn = function y() {
     const obj = {};
     let num = 0;
     if (visible) {
       num = 1;
     }
-    obj.opacity = visible(closure_2[4]).withTiming(num, visible(closure_2[5]).timingStandard);
+    obj.opacity = visible(outer1_2[4]).withTiming(num, visible(outer1_2[5]).timingStandard);
     return obj;
   };
-  let obj = { withTiming: require(dependencyMap[4]).withTiming, visible, timingStandard: require(dependencyMap[5]).timingStandard };
+  let obj = { withTiming: visible(4131).withTiming, visible, timingStandard: visible(4134).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 15062259404736;
   fn.__initData = closure_8;
@@ -53,12 +56,12 @@ export default function BountiesModalEndCard(visible) {
     obj.pointerEvents = "box-none";
     obj = { style: tmp.backdropTint };
     const items1 = [callback(closure_4, obj), , ];
-    const obj1 = { colors: [], locations: [95.192, 147.067], style: tmp.backdropGradient };
-    items1[1] = callback(importDefault(dependencyMap[6]), obj1);
+    const obj1 = { colors: ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"], locations: [0, 0.841], style: tmp.backdropGradient };
+    items1[1] = callback(importDefault(4554), obj1);
     const obj2 = { bounty, sourceQuestContent };
-    items1[2] = callback(importDefault(dependencyMap[7]), obj2);
+    items1[2] = callback(importDefault(13941), obj2);
     obj.children = items1;
-    visible = callback2(importDefault(dependencyMap[3]).View, obj);
+    visible = callback2(importDefault(3991).View, obj);
   }
   return visible;
 };

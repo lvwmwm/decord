@@ -1,9 +1,23 @@
-// Module ID: 4199
-// Function ID: 36183
+// Module ID: 4203
+// Function ID: 36215
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 1857, 1194, 1348, 1917, 1849, 4146, 653, 3969, 3754, 22, 21, 566, 686, 2]
 
-// Module 4199 (_isNativeReflectConstruct)
+// Module 4203 (_isNativeReflectConstruct)
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import dispatcher from "dispatcher";
+import set from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import { ME } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +27,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +80,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,11 +107,11 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getVoiceStatesForGuild(guildId) {
-  let tmp = closure_16[guildId];
+  let tmp = dependencyMap[guildId];
   if (null == tmp) {
     const prototype = ctor2.prototype;
     const tmp6 = new ctor2(guildId);
-    closure_16[guildId] = tmp6;
+    dependencyMap[guildId] = tmp6;
     tmp = tmp6;
   }
   return tmp;
@@ -112,8 +126,8 @@ function makeMemberAndComparator(voiceState, member, arg2) {
     nick = member.nick;
   }
   if (null == nick) {
-    nick = importDefault(dependencyMap[12]).getName(arg2);
-    const obj2 = importDefault(dependencyMap[12]);
+    nick = importDefault(3969).getName(arg2);
+    const obj2 = importDefault(3969);
   }
   obj.comparator = getComparator(voiceState, nick);
   return obj;
@@ -126,7 +140,7 @@ function getComparator(selfStream, str) {
   return "" + str + str.toLowerCase() + "\0" + selfStream.userId;
 }
 function makeSortedVoiceState(voiceState, guildId, id, connectedOn) {
-  const user = user.getUser(id);
+  user = user.getUser(id);
   let tmp3 = user;
   if (null == user) {
     let obj = { id, username: "...", discriminator: id.slice(-5, -1) };
@@ -156,42 +170,29 @@ function makeSortedVoiceState(voiceState, guildId, id, connectedOn) {
   return obj;
 }
 function handleUpdateUsers() {
-  return importDefault(dependencyMap[14]).reduce(closure_16, (arg0, updateUsers) => updateUsers.updateUsers() || arg0, false);
+  return importDefault(22).reduce(closure_16, (arg0, updateUsers) => updateUsers.updateUsers() || arg0, false);
 }
 function init() {
   let closure_16 = {};
-  const allVoiceStates = allVoiceStates.getAllVoiceStates();
-  const arg1 = allVoiceStates;
-  const keys = importDefault(dependencyMap[15]).keys(allVoiceStates);
-  const item = keys.forEach((arg0) => {
+  allVoiceStates = allVoiceStates.getAllVoiceStates();
+  let keys = importDefault(21).keys(allVoiceStates);
+  let item = keys.forEach((arg0) => {
     const allVoiceStates = arg0;
     const keys = Object.keys(allVoiceStates[arg0]);
     const item = keys.forEach((guildId) => {
-      callback(null != guildId ? guildId : closure_14).updateVoiceState(guildId);
+      outer2_21(null != closure_0 ? closure_0 : outer2_14).updateVoiceState(guildId);
     });
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-const ME = arg1(dependencyMap[11]).ME;
 const frozen = Object.freeze([]);
 let closure_16 = {};
-let closure_17 = () => {
+let closure_17 = (() => {
   class SortedVoiceStates {
     constructor(arg0) {
-      tmp = closure_6(this, SortedVoiceStates);
+      tmp = outer1_6(this, SortedVoiceStates);
       set = new Set();
       this._pending = set;
-      secondaryIndexMap = new SortedVoiceStates(closure_2[13]).SecondaryIndexMap((voiceState) => {
+      secondaryIndexMap = new SortedVoiceStates(outer1_2[13]).SecondaryIndexMap((voiceState) => {
         const channelId = voiceState.voiceState.channelId;
         if (null != channelId) {
           const items = [channelId];
@@ -206,7 +207,6 @@ let closure_17 = () => {
       return;
     }
   }
-  const arg1 = SortedVoiceStates;
   let obj = {
     key: "updateVoiceState",
     value(arg0) {
@@ -216,31 +216,31 @@ let closure_17 = () => {
         _pending.add(arg0);
         return false;
       } else {
-        const voiceState = voiceState.getVoiceState(self.guildId, arg0);
+        const voiceState = outer1_13.getVoiceState(self.guildId, arg0);
         const _voiceStates4 = self._voiceStates;
         const value = _voiceStates4.get(arg0);
-        const user = authStore.getUser(arg0);
+        const user = outer1_12.getUser(arg0);
         if (null != voiceState) {
           if (null != user) {
             if (null == value) {
               const _voiceStates3 = self._voiceStates;
-              const result = _voiceStates3.set(arg0, callback6(voiceState, self.guildId, arg0));
+              const result = _voiceStates3.set(arg0, outer1_25(voiceState, self.guildId, arg0));
               return true;
             } else if (value.voiceState !== voiceState) {
-              const tmp3 = callback3(self.guildId, user);
+              const tmp3 = outer1_22(self.guildId, user);
               let nick;
               if (null != tmp3) {
                 nick = tmp3.nick;
               }
               if (null == nick) {
-                let obj = callback(closure_2[12]);
+                let obj = outer1_1(outer1_2[12]);
                 nick = obj.getName(user);
               }
               const _voiceStates2 = self._voiceStates;
               obj = {};
               const merged = Object.assign(value);
               obj["member"] = tmp3;
-              obj["comparator"] = callback5(voiceState, nick);
+              obj["comparator"] = outer1_24(voiceState, nick);
               obj["nick"] = nick;
               obj["voiceState"] = voiceState;
               const result1 = _voiceStates2.set(arg0, obj);
@@ -257,7 +257,7 @@ let closure_17 = () => {
       }
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "updateMember",
     value(arg0) {
@@ -269,10 +269,10 @@ let closure_17 = () => {
       } else {
         const _voiceStates2 = self._voiceStates;
         const value = _voiceStates2.get(arg0);
-        const user = authStore.getUser(arg0);
+        const user = outer1_12.getUser(arg0);
         if (null != value) {
           if (null != user) {
-            const tmp2 = callback3(self.guildId, user);
+            const tmp2 = outer1_22(self.guildId, user);
             let nick;
             if (null != tmp2) {
               nick = tmp2.nick;
@@ -297,7 +297,7 @@ let closure_17 = () => {
             const obj = {};
             const merged = Object.assign(value);
             obj["member"] = tmp2;
-            obj["comparator"] = callback4(value.voiceState, tmp2, user).comparator;
+            obj["comparator"] = outer1_23(value.voiceState, tmp2, user).comparator;
             let nick2;
             if (null != tmp2) {
               nick2 = tmp2.nick;
@@ -315,19 +315,19 @@ let closure_17 = () => {
   obj = {
     key: "updateUsers",
     value() {
-      const SortedVoiceStates = this;
+      const self = this;
       let reduced = null == this._pending;
       if (reduced) {
-        const _voiceStates = this._voiceStates;
+        let _voiceStates = this._voiceStates;
         const values = _voiceStates.values();
         reduced = values.reduce((arg0, user) => {
-          user = user.getUser(user.user.id);
+          user = outer2_12.getUser(user.user.id);
           let flag = arg0;
           if (null != user) {
             flag = arg0;
             if (user.user !== user) {
               const _voiceStates = self._voiceStates;
-              const result = _voiceStates.set(user.id, callback(user.voiceState, self.guildId, user.id, user));
+              const result = _voiceStates.set(user.id, outer2_25(user.voiceState, self.guildId, user.id, user));
               flag = true;
             }
           }
@@ -361,7 +361,7 @@ let closure_17 = () => {
       const _voiceStates = this._voiceStates;
       let values = _voiceStates.values(arg0);
       if (0 === values.length) {
-        values = closure_15;
+        values = outer1_15;
       }
       return values;
     }
@@ -384,8 +384,8 @@ let closure_17 = () => {
   items[8] = {
     key: "processPending",
     value() {
-      const self = this;
-      const SortedVoiceStates = this;
+      let self = this;
+      self = this;
       if (null != this._pending) {
         const _pending = self._pending;
         self._pending = undefined;
@@ -394,20 +394,20 @@ let closure_17 = () => {
     }
   };
   return callback2(SortedVoiceStates, items);
-}();
-let tmp3 = (Store) => {
+})();
+let tmp3 = ((Store) => {
   class SortedVoiceStateStore {
     constructor() {
       self = this;
-      tmp = closure_6(this, SortedVoiceStateStore);
-      obj = closure_4(SortedVoiceStateStore);
-      tmp2 = closure_3;
-      if (closure_18()) {
+      tmp = outer1_6(this, SortedVoiceStateStore);
+      obj = outer1_4(SortedVoiceStateStore);
+      tmp2 = outer1_3;
+      if (outer1_18()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_4;
+        tmp7 = outer1_4;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -416,33 +416,32 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SortedVoiceStateStore;
   callback(SortedVoiceStateStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      callback4();
-      this.waitFor(closure_9, closure_10, closure_11, closure_12, closure_13);
-      const items = [closure_12];
-      this.syncWith(items, closure_26);
+      outer1_27();
+      this.waitFor(outer1_9, outer1_10, outer1_11, outer1_12, outer1_13);
+      const items = [outer1_12];
+      this.syncWith(items, outer1_26);
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "getVoiceStates",
     value(arg0) {
       let tmp = arg0;
       if (null == arg0) {
-        tmp = closure_14;
+        tmp = outer1_14;
       }
-      return closure_21(tmp).getVoiceStates();
+      return outer1_21(tmp).getVoiceStates();
     }
   };
   items[1] = obj;
   obj = {
     key: "getAllVoiceStates",
     value() {
-      return closure_16;
+      return outer1_16;
     }
   };
   items[2] = obj;
@@ -451,9 +450,9 @@ let tmp3 = (Store) => {
     value(getGuildId) {
       let guildId = getGuildId.getGuildId();
       if (null == guildId) {
-        guildId = closure_14;
+        guildId = outer1_14;
       }
-      return closure_21(guildId).getVoiceStatesForChannel(getGuildId.id);
+      return outer1_21(guildId).getVoiceStatesForChannel(getGuildId.id);
     }
   };
   items[4] = {
@@ -461,23 +460,23 @@ let tmp3 = (Store) => {
     value(arg0, arg1) {
       let tmp = arg1;
       if (null == arg1) {
-        tmp = closure_14;
+        tmp = outer1_14;
       }
-      return closure_21(tmp).getVoiceStatesForChannel(arg0);
+      return outer1_21(tmp).getVoiceStatesForChannel(arg0);
     }
   };
   items[5] = {
     key: "countVoiceStatesForChannel",
     value(channelId) {
-      const channel = channel.getChannel(channelId);
+      const channel = outer1_10.getChannel(channelId);
       if (null == channel) {
         return 0;
       } else {
         let guildId = channel.getGuildId();
         if (null == guildId) {
-          guildId = closure_14;
+          guildId = outer1_14;
         }
-        return closure_21(guildId).countVoiceStatesForChannel(channelId);
+        return outer1_21(guildId).countVoiceStatesForChannel(channelId);
       }
     }
   };
@@ -486,15 +485,15 @@ let tmp3 = (Store) => {
     value(arg0) {
       let tmp = arg0;
       if (null == arg0) {
-        tmp = closure_14;
+        tmp = outer1_14;
       }
-      return closure_21(tmp).getVersion();
+      return outer1_21(tmp).getVersion();
     }
   };
   return callback2(SortedVoiceStateStore, items);
-}(importDefault(dependencyMap[16]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "SortedVoiceStateStore";
-tmp3 = new tmp3(importDefault(dependencyMap[17]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let closure_16 = {};
   },
@@ -503,7 +502,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
   },
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(guildId) {
     guildId = guildId.guildId;
-    const id = id.getId();
+    id = id.getId();
     let updateVoiceStateResult = null != id;
     if (updateVoiceStateResult) {
       if (null == guildId) {
@@ -520,27 +519,27 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     return voiceStates.reduce((arg0, guildId) => {
       guildId = guildId.guildId;
       if (null == guildId) {
-        guildId = closure_14;
+        guildId = outer1_14;
       }
-      const tmp = closure_21;
-      const tmpResult = closure_21(guildId);
-      return closure_21(guildId).updateVoiceState(guildId.userId) || arg0;
+      const tmp = outer1_21;
+      const tmpResult = outer1_21(guildId);
+      return outer1_21(guildId).updateVoiceState(guildId.userId) || arg0;
     }, false);
   },
   GUILD_MEMBER_UPDATE: function handleGuildMemberUpdate(guildId) {
     return getVoiceStatesForGuild(guildId.guildId).updateMember(guildId.user.id);
   },
   GUILD_CREATE: function handleGuildCreate(arg0) {
-    delete r1[r0];
+    delete tmp2[tmp];
   },
   GUILD_DELETE: function handleGuildDelete(arg0) {
-    delete r1[r0];
+    delete tmp2[tmp];
   },
   PASSIVE_UPDATE_V2: function handlePassiveUpdateV2(voiceStates) {
     let iter3;
     let iter5;
     let userIds;
-    if (null != closure_16[voiceStates.guildId]) {
+    if (null != dependencyMap[voiceStates.guildId]) {
       userIds = obj.getUserIds();
     }
     voiceStates = voiceStates.voiceStates;
@@ -559,8 +558,8 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     let flag2 = false;
     if (!iter.done) {
       do {
-        let tmp7 = closure_21;
-        let obj3 = closure_21(voiceStates.guildId);
+        let tmp7 = getVoiceStatesForGuild;
+        let obj3 = getVoiceStatesForGuild(voiceStates.guildId);
         let tmp8 = obj3.updateVoiceState(iter2.value) || flag;
         iter3 = tmp6();
         flag = tmp8;
@@ -577,8 +576,8 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
         let value = iter4.value;
         let tmp12 = tmp10;
         if (!set2.has(value)) {
-          let tmp13 = closure_21;
-          let obj4 = closure_21(voiceStates.guildId);
+          let tmp13 = getVoiceStatesForGuild;
+          let obj4 = getVoiceStatesForGuild(voiceStates.guildId);
           let tmp14 = obj4.updateMember(value) || tmp10;
           tmp12 = tmp14;
         }
@@ -591,7 +590,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     return tmp11;
   }
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("stores/views/SortedVoiceStateStore.tsx");
+let result = require("_inherits").fileFinishedImporting("stores/views/SortedVoiceStateStore.tsx");
 
 export default tmp3;
 export const NO_VOICE_STATES = frozen;

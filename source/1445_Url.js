@@ -1,9 +1,11 @@
 // Module ID: 1445
-// Function ID: 16822
+// Function ID: 16823
 // Name: Url
-// Dependencies: []
+// Dependencies: [510, 1446]
 
 // Module 1445 (Url)
+const require = arg1;
+const dependencyMap = arg6;
 class Url {
   constructor() {
     this.protocol = null;
@@ -65,14 +67,14 @@ class Url {
             if (match[2]) {
               self.search = match[2];
               if (arg1) {
-                tmp3 = arg1;
-                tmp4 = arg6;
-                obj2 = arg1(arg6[0]);
+                tmp3 = closure_0;
+                tmp4 = closure_1;
+                obj2 = require("module_510");
                 str8 = self.search;
-                parsed = obj2.parse(require("module_1"));
+                parsed = obj2.parse(require("error"));
               } else {
                 str7 = self.search;
-                parsed = require("module_1");
+                parsed = require("error");
               }
               self.query = parsed;
             } else {
@@ -102,9 +104,9 @@ class Url {
         if (!tmp8) {
           substr7 = str9;
         }
-        tmp15 = concat;
+        tmp15 = closure_11;
         tmp16 = substr7;
-        if (!concat[tmp8]) {
+        if (!closure_11[tmp8]) {
           if (tmp10) {
             tmp18 = concat;
             num5 = -1;
@@ -112,8 +114,8 @@ class Url {
             num7 = -1;
             if (0 < concat.length) {
               do {
-                tmp19 = closure_7;
-                index1 = substr7.indexOf(closure_7[num6]);
+                tmp19 = concat;
+                index1 = substr7.indexOf(concat[num6]);
                 tmp21 = -1 !== index1;
                 if (tmp21) {
                   tmp22 = -1 === num5 || index1 < num5;
@@ -123,9 +125,9 @@ class Url {
                   num5 = index1;
                 }
                 num6 = num6 + 1;
-                tmp23 = closure_7;
+                tmp23 = concat;
                 num7 = num5;
-              } while (num6 < closure_7.length);
+              } while (num6 < concat.length);
             }
             if (-1 === num7) {
               str13 = "@";
@@ -137,7 +139,7 @@ class Url {
             substr1 = substr7;
             if (-1 !== lastIndexOfResult) {
               num8 = 1;
-              substr = require("module_0");
+              substr = require("module_510");
               substr1 = substr7.slice(lastIndexOfResult + 1);
               tmp26 = globalThis;
               _decodeURIComponent = decodeURIComponent;
@@ -149,8 +151,8 @@ class Url {
             num11 = -1;
             if (0 < concat.length) {
               do {
-                tmp28 = closure_6;
-                index2 = substr1.indexOf(closure_6[num10]);
+                tmp28 = concat;
+                index2 = substr1.indexOf(concat[num10]);
                 tmp30 = -1 !== index2;
                 if (tmp30) {
                   tmp31 = -1 === num9 || index2 < num9;
@@ -160,14 +162,14 @@ class Url {
                   num9 = index2;
                 }
                 num10 = num10 + 1;
-                tmp32 = closure_6;
+                tmp32 = concat;
                 num11 = num9;
-              } while (num10 < closure_6.length);
+              } while (num10 < concat.length);
             }
             if (-1 === num11) {
               num11 = substr1.length;
             }
-            self.host = require("module_0");
+            self.host = require("module_510");
             substr2 = substr1.slice(num11);
             parseHostResult = self.parseHost();
             self.hostname = self.hostname || "";
@@ -195,11 +197,11 @@ class Url {
                   tmp41 = tmp38;
                   tmp42 = tmp39;
                   if (str19) {
-                    tmp43 = concat;
+                    tmp43 = closure_8;
                     tmp40 = tmp37;
                     tmp41 = tmp38;
                     tmp42 = tmp39;
-                    if (!str19.match(concat)) {
+                    if (!str19.match(closure_8)) {
                       length2 = str19.length;
                       str20 = "";
                       num15 = 0;
@@ -219,11 +221,11 @@ class Url {
                           num16 = num15;
                         } while (num15 < length2);
                       }
-                      tmp46 = concat;
+                      tmp46 = closure_8;
                       tmp40 = str21;
                       tmp41 = num16;
                       tmp42 = length2;
-                      if (!str21.match(concat)) {
+                      if (!str21.match(closure_8)) {
                         break;
                       }
                     }
@@ -234,13 +236,13 @@ class Url {
                   tmp39 = tmp42;
                   tmp36 = substr2;
                 }
-                substr3 = require("module_0");
+                substr3 = require("module_510");
                 num17 = 1;
                 substr4 = parts1.slice(num14 + 1);
-                tmp47 = concat;
-                match2 = str19.match(concat);
+                tmp47 = closure_9;
+                match2 = str19.match(closure_9);
                 if (match2) {
-                  arr = substr3.push(match2[1]);
+                  arr = require("error");
                   num18 = 2;
                   arr1 = substr4.unshift(match2[2]);
                 }
@@ -263,10 +265,10 @@ class Url {
               self.hostname = str24.toLowerCase();
             }
             if (!tmp35) {
-              tmp52 = arg1;
-              tmp53 = arg6;
+              tmp52 = closure_0;
+              tmp53 = closure_1;
               num20 = 1;
-              obj3 = arg1(arg6[1]);
+              obj3 = require("error");
               self.hostname = obj3.toASCII(self.hostname);
             }
             str26 = "";
@@ -283,7 +285,7 @@ class Url {
               str29 = self.hostname;
               num21 = 2;
               num22 = 1;
-              self.hostname = require("module_1");
+              self.hostname = require("error");
               text2 = tmp36;
               if ("/" !== tmp36[0]) {
                 text2 = `/${tmp36}`;
@@ -293,14 +295,14 @@ class Url {
           } else {
             tmp16 = substr7;
             if (tmp8) {
-              tmp17 = concat;
+              tmp17 = closure_12;
               tmp16 = substr7;
             }
           }
         }
-        tmp56 = concat;
+        tmp56 = closure_10;
         arr6 = tmp16;
-        if (!concat[tmp7]) {
+        if (!closure_10[tmp7]) {
           tmp57 = closure_5;
           length3 = closure_5.length;
           tmp58 = globalThis;
@@ -335,7 +337,7 @@ class Url {
         substr5 = arr6;
         if (-1 !== index3) {
           self.hash = arr6.substr(index3);
-          substr5 = require("module_0");
+          substr5 = require("module_510");
         }
         index4 = substr5.indexOf("?");
         if (-1 !== index4) {
@@ -343,12 +345,12 @@ class Url {
           num24 = 1;
           self.query = substr5.substr(index4 + 1);
           if (arg1) {
-            tmp69 = arg1;
-            tmp70 = arg6;
-            obj5 = arg1(arg6[0]);
+            tmp69 = closure_0;
+            tmp70 = closure_1;
+            obj5 = require("module_510");
             self.query = obj5.parse(self.query);
           }
-          substr6 = require("module_0");
+          substr6 = require("module_510");
         } else {
           substr6 = substr5;
           if (arg1) {
@@ -361,8 +363,8 @@ class Url {
         if (substr6) {
           self.pathname = substr6;
         }
-        tmp71 = concat;
-        tmp72 = concat[tmp7] && self.hostname && !self.pathname;
+        tmp71 = closure_12;
+        tmp72 = closure_12[tmp7] && self.hostname && !self.pathname;
         if (tmp72) {
           self.pathname = "/";
         }
@@ -376,13 +378,13 @@ class Url {
       }
       num4 = 2;
       str11 = "//";
-      tmp11 = "//" === require("module_0");
+      tmp11 = "//" === require("module_510");
       tmp12 = !tmp11;
       if (tmp11) {
         tmp13 = tmp8;
         if (tmp8) {
-          tmp14 = concat;
-          tmp13 = concat[tmp8];
+          tmp14 = closure_11;
+          tmp13 = closure_11[tmp8];
         }
         tmp12 = tmp13;
       }
@@ -447,11 +449,11 @@ class Url {
     }
     str11 = "";
     if (length) {
-      tmp7 = arg1;
-      tmp8 = arg6;
+      tmp7 = closure_0;
+      tmp8 = closure_1;
       num2 = 0;
-      obj = arg1(arg6[0]);
-      str11 = obj.stringify(self.query, {});
+      obj = require("module_510");
+      str11 = obj.stringify(self.query, { arrayFormat: "repeat", addQueryPrefix: false });
     }
     str12 = self.search;
     if (!str12) {
@@ -483,7 +485,7 @@ class Url {
         if (str6) {
           num5 = 0;
           str21 = "#";
-          tmp15 = "#" !== require("module_0");
+          tmp15 = "#" !== require("module_510");
         }
         text4 = str6;
         if (tmp15) {
@@ -494,7 +496,7 @@ class Url {
         if (str12) {
           num6 = 0;
           str23 = "?";
-          tmp17 = "?" !== require("module_0");
+          tmp17 = "?" !== require("module_510");
         }
         str24 = str12;
         if (tmp17) {
@@ -507,7 +509,7 @@ class Url {
         sum2 = sum1 + str16.replace(/[?#]/g, (arg0) => encodeURIComponent(arg0));
         return sum2 + str24.replace("#", "%23") + text4;
       } else {
-        tmp12 = concat;
+        tmp12 = closure_12;
       }
       str16 = str5;
       str17 = flag;
@@ -525,7 +527,7 @@ class Url {
     if (str5) {
       num4 = 0;
       str19 = "/";
-      tmp14 = "/" !== require("module_0");
+      tmp14 = "/" !== require("module_510");
     }
     str16 = str5;
     str17 = text5;
@@ -582,8 +584,8 @@ class Url {
               url2[tmp7] = url[tmp7];
             }
           }
-          tmp8 = concat;
-          tmp9 = concat[url2.protocol] && url2.hostname && !url2.pathname;
+          tmp8 = closure_12;
+          tmp9 = closure_12[url2.protocol] && url2.hostname && !url2.pathname;
           if (tmp9) {
             str2 = "/";
             url2.pathname = "/";
@@ -595,12 +597,12 @@ class Url {
       }
       if (url.protocol) {
         if (url.protocol !== url2.protocol) {
-          tmp49 = concat;
-          if (concat[url.protocol]) {
+          tmp49 = closure_12;
+          if (closure_12[url.protocol]) {
             url2.protocol = url.protocol;
             if (!url.host) {
-              tmp51 = concat;
-              if (!concat[url.protocol]) {
+              tmp51 = closure_11;
+              if (!closure_11[url.protocol]) {
                 str35 = url.pathname || "";
                 str36 = "/";
                 parts = str35.split("/");
@@ -668,7 +670,7 @@ class Url {
       if (pathname) {
         str3 = url2.pathname;
         str4 = "/";
-        pathname = "/" === require("module_0");
+        pathname = "/" === require("module_510");
       }
       host = url.host;
       if (!host) {
@@ -676,7 +678,7 @@ class Url {
         if (pathname2) {
           str5 = url.pathname;
           str6 = "/";
-          pathname2 = "/" === require("module_0");
+          pathname2 = "/" === require("module_510");
         }
         host = pathname2;
       }
@@ -708,8 +710,8 @@ class Url {
       }
       protocol = url2.protocol;
       if (protocol) {
-        tmp12 = concat;
-        protocol = !concat[url2.protocol];
+        tmp12 = closure_12;
+        protocol = !closure_12[url2.protocol];
       }
       tmp13 = tmp10;
       if (protocol) {
@@ -874,7 +876,7 @@ class Url {
             if (first1) {
               str21 = combined[0];
               str22 = "/";
-              first1 = "/" === require("module_0");
+              first1 = "/" === require("module_510");
             }
             tmp37 = first1;
           }
@@ -895,7 +897,7 @@ class Url {
             if (first2) {
               str25 = combined[0];
               str26 = "/";
-              first2 = "/" === require("module_0");
+              first2 = "/" === require("module_510");
             }
             tmp41 = first2;
           }
@@ -990,9 +992,9 @@ class Url {
       str3 = ":";
       if (":" !== str2) {
         num2 = 1;
-        self.port = require("module_1");
+        self.port = require("error");
       }
-      substr = require("module_0");
+      substr = require("module_510");
     }
     if (substr) {
       self.hostname = substr;
@@ -1012,20 +1014,20 @@ function urlParse(arg0, arg1, arg2) {
   const parsed = obj.parse(arg0, arg1, arg2);
   return obj;
 }
-let closure_2 = /^([a-z0-9.+-]+:)/i;
-let closure_3 = /:[0-9]*$/;
-let closure_4 = /^(\/\/?(?!\/)[^?\s]*)(\?[^\s]*)?$/;
-const items = [null, "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite"];
-const items1 = ["hasDiversityParent"];
-const combined = items1.concat(items.concat(["<string:3848036803>", "<string:2716463218>", "<string:1532062049>", "<string:3130868189>", "<string:3881893892>", "<string:1653906513>", "<string:2052221415>", "<string:1359516168>"]));
-const items2 = [true, true, true, true, true];
+const re2 = /^([a-z0-9.+-]+:)/i;
+const re3 = /:[0-9]*$/;
+const re4 = /^(\/\/?(?!\/)[^?\s]*)(\?[^\s]*)?$/;
+let items = ["{", "}", "|", "\\", "^", "`"];
+const items1 = ["'"];
+let combined = items1.concat(items.concat(["<", ">", "\"", "`", " ", "\r", "\n", "\t"]));
+const items2 = ["%", "/", "?", ";", "#"];
 let closure_6 = items2.concat(combined);
-let closure_7 = [];
-let closure_8 = /^[+a-z0-9A-Z_-]{0,63}$/;
-let closure_9 = /^([+a-z0-9A-Z_-]{0,63})(.*)$/;
-let closure_10 = { top: null, bottom: null };
-let closure_11 = { top: null, bottom: null };
-let closure_12 = {};
+let closure_7 = ["/", "?", "#"];
+const re8 = /^[+a-z0-9A-Z_-]{0,63}$/;
+const re9 = /^([+a-z0-9A-Z_-]{0,63})(.*)$/;
+let closure_10 = { javascript: true, "javascript:": true };
+let closure_11 = { javascript: true, "javascript:": true };
+let closure_12 = { http: true, https: true, ftp: true, gopher: true, file: true, "http:": true, "https:": true, "ftp:": true, "gopher:": true, "file:": true };
 arg5.parse = urlParse;
 arg5.resolve = function urlResolve(arg0, arg1) {
   return urlParse(arg0, false, true).resolve(arg1);

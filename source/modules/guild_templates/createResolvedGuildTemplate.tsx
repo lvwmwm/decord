@@ -1,13 +1,13 @@
-// Module ID: 5714
-// Function ID: 49139
+// Module ID: 5719
+// Function ID: 49166
 // Name: createResolvedGuildTemplate
-// Dependencies: []
+// Dependencies: [5720, 2]
 // Exports: default
 
-// Module 5714 (createResolvedGuildTemplate)
-const GuildTemplateStates = require(dependencyMap[0]).GuildTemplateStates;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_templates/createResolvedGuildTemplate.tsx");
+// Module 5719 (createResolvedGuildTemplate)
+import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
+
+const result = require("set").fileFinishedImporting("modules/guild_templates/createResolvedGuildTemplate.tsx");
 
 export default function createResolvedGuildTemplate(code) {
   const obj = { code: code.code, state: GuildTemplateStates.RESOLVED, name: code.name };

@@ -1,21 +1,22 @@
-// Module ID: 11079
-// Function ID: 86170
+// Module ID: 11089
+// Function ID: 86220
 // Name: _joinOrStartActivityInChannel
-// Dependencies: []
+// Dependencies: [5, 1347, 1348, 1906, 10527, 10486, 10524, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 11079 (_joinOrStartActivityInChannel)
+// Module 11089 (_joinOrStartActivityInChannel)
+import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _joinOrStartActivityInChannel() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _joinOrStartActivityInChannel = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/applications/message_embed/native/utils/joinOrStartActivityInChannel.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/applications/message_embed/native/utils/joinOrStartActivityInChannel.tsx");
 
 export const joinOrStartActivityInChannel = function joinOrStartActivityInChannel(arg0) {
   return _joinOrStartActivityInChannel(...arguments);

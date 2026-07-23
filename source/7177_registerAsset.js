@@ -1,0 +1,11 @@
+// Module ID: 7177
+// Function ID: 57861
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 7177 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/activated", width: 279, height: 48, scales: [2, 3], hash: "1fff7418e65eeae25a3f248ccb7dea3b", name: "img_nitro_tier_1_activated_light", type: "png" };
+
+export default registerAsset.registerAsset(obj);

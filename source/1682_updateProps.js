@@ -1,9 +1,9 @@
 // Module ID: 1682
-// Function ID: 18632
+// Function ID: 18633
 // Name: updateProps
-// Dependencies: []
+// Dependencies: [1683]
 
 // Module 1682 (updateProps)
 
-export const updateProps = importDefault(dependencyMap[0]);
-export const updatePropsJestWrapper = arg1(dependencyMap[0]).updatePropsJestWrapper;
+export const updateProps = require("updatePropsOnReactJS");
+export const updatePropsJestWrapper = require("updatePropsOnReactJS").updatePropsJestWrapper;

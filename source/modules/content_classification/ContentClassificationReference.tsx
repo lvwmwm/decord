@@ -1,18 +1,17 @@
-// Module ID: 10526
-// Function ID: 82225
+// Module ID: 10536
+// Function ID: 82275
 // Name: isAgeRestrictedClassificationReference
-// Dependencies: []
+// Dependencies: [8179, 2]
 // Exports: isAgeRestrictedClassificationReference
 
-// Module 10526 (isAgeRestrictedClassificationReference)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/content_classification/ContentClassificationReference.tsx");
+// Module 10536 (isAgeRestrictedClassificationReference)
+let result = require("set").fileFinishedImporting("modules/content_classification/ContentClassificationReference.tsx");
 
 export const isAgeRestrictedClassificationReference = function isAgeRestrictedClassificationReference(contentClassification) {
   let result = null == contentClassification || !contentClassification.loaded;
   if (!result) {
-    result = require(dependencyMap[0]).isAgeRestrictedContentClassification(contentClassification.data);
-    const obj = require(dependencyMap[0]);
+    result = require(8179) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(contentClassification.data);
+    const obj = require(8179) /* isAgeRestrictedContentClassification */;
   }
   return result;
 };

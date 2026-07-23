@@ -1,52 +1,70 @@
-// Module ID: 16179
-// Function ID: 124722
+// Module ID: 16296
+// Function ID: 126895
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 33, 22, 1450, 2]
 
-// Module 16179 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16296 (_createForOfIteratorHelperLoose)
+import getActivityIndicator from "get ActivityIndicator";
+import closure_3 from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import { createElement } from "result";
+import importDefaultResult from "apply";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -94,7 +112,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_4(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -105,22 +123,13 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-const tmp3 = arg1(dependencyMap[6]);
-({ View: closure_8, Animated: closure_9, PanResponder: closure_10, SectionList: closure_11 } = tmp3);
-({ jsxs: closure_12, jsx: closure_13 } = arg1(dependencyMap[7]));
-const createElement = arg1(dependencyMap[5]).createElement;
-let closure_15 = 24 + tmp3.StyleSheet.hairlineWidth;
-const tmp4 = arg1(dependencyMap[7]);
-let closure_16 = importDefault(dependencyMap[8]).memoize((arr) => {
+({ View: closure_8, Animated: closure_9, PanResponder: closure_10, SectionList: closure_11 } = get_ActivityIndicator);
+({ jsxs: closure_12, jsx: closure_13 } = jsxProd);
+let closure_15 = 24 + get_ActivityIndicator.StyleSheet.hairlineWidth;
+let closure_16 = require("apply").memoize((arr) => {
   const mapped = arr.map((category) => {
     const items = [{ type: "section", data: category.category }, ...data.map((data) => ({ type: "row", data }))];
-    const data = category.data;
+    data = category.data;
     return items;
   });
   return mapped.reduce((arg0, arg1) => {
@@ -128,16 +137,18 @@ let closure_16 = importDefault(dependencyMap[8]).memoize((arr) => {
     return items;
   }, []);
 });
-let closure_17 = (Component) => {
+let closure_17 = ((Component) => {
   class Row {
     constructor(arg0) {
       items = [...arguments];
-      tmp = closure_2(this, Row);
+      tmp = outer1_2(this, Row);
       items1 = [...items];
-      tmp2 = closure_21(this, Row, items1);
+      tmp2 = outer1_21(this, Row, items1);
       Row = tmp2;
       tmp2.handleLongPress = (arg0) => {
-        ({ onRowActive: closure_1, rowData: closure_2 } = arg0.props);
+        let closure_1;
+        let getActivityIndicator;
+        ({ onRowActive: closure_1, rowData: getActivityIndicator } = arg0.props);
         const _view = tmp2._view;
         if (null != _view) {
           _view.measure((arg0, arg1, arg2, frameHeight, arg4, pageY) => {
@@ -145,15 +156,15 @@ let closure_17 = (Component) => {
               let obj = {};
               obj = { frameHeight, pageY };
               obj.layout = obj;
-              obj.rowData = closure_2;
-              obj.touch = arg0.nativeEvent;
+              obj.rowData = getActivityIndicator;
+              obj.touch = nativeEvent.nativeEvent;
               callback(obj);
             }
           });
         }
       };
       tmp2.setViewRef = (_view) => {
-        tmp2._view = _view;
+        closure_0._view = _view;
       };
       tmp2.measure = (arg0) => {
         const _view = tmp2._view;
@@ -164,9 +175,8 @@ let closure_17 = (Component) => {
       return tmp2;
     }
   }
-  const arg1 = Row;
   callback3(Row, Component);
-  const items = [
+  let items = [
     {
       key: "render",
       value() {
@@ -217,7 +227,7 @@ let closure_17 = (Component) => {
             }
           }
         }
-        const items1 = [tmp9, closure_7.cloneElement(renderItem(rowData.data), tmp4), ];
+        const items1 = [tmp9, outer1_7.cloneElement(renderItem(rowData.data), tmp4), ];
         let tmp10 = null;
         if (isAfter) {
           tmp10 = null;
@@ -230,19 +240,19 @@ let closure_17 = (Component) => {
         }
         items1[2] = tmp10;
         obj.children = items1;
-        return closure_12(closure_8, obj);
+        return outer1_12(outer1_8, obj);
       }
     }
   ];
   return callback(Row, items);
-}(importAllResult.Component);
-let closure_18 = (Component) => {
+})(importAllResult.Component);
+let closure_18 = ((Component) => {
   class SortRow {
     constructor(arg0) {
-      tmp = closure_2(this, SortRow);
+      tmp = outer1_2(this, SortRow);
       items = [];
       items[0] = Component;
-      tmp2 = closure_21(this, SortRow, items);
+      tmp2 = outer1_21(this, SortRow, items);
       if (null == Component.list.state.active) {
         tmp3 = globalThis;
         _Error = Error;
@@ -255,7 +265,7 @@ let closure_18 = (Component) => {
       } else {
         layout = Component.list.state.active.layout;
         obj = {};
-        obj = { accessibilityLabel: 402653185, padding: 16777217, y: 38074178, space: 33949952, body: -302624512, np: 1106644561, apply: 180118 };
+        obj = { position: "absolute", left: 0, right: 0, opacity: null, height: null, overflow: "hidden", backgroundColor: "transparent" };
         activeOpacity = Component.activeOpacity;
         num = 0.8;
         if (null != activeOpacity) {
@@ -270,9 +280,8 @@ let closure_18 = (Component) => {
       }
     }
   }
-  const arg1 = SortRow;
   callback3(SortRow, Component);
-  const items = [
+  let items = [
     {
       key: "render",
       value() {
@@ -286,20 +295,19 @@ let closure_18 = (Component) => {
         items[2] = pan.getLayout();
         obj.style = items;
         obj.children = renderItem(rowData.data, true);
-        return callback2(RN.View, obj);
+        return outer1_13(outer1_9.View, obj);
       }
     }
   ];
   return callback(SortRow, items);
-}(importAllResult.Component);
-const importDefaultResult = importDefault(dependencyMap[8]);
-const tmp5 = (Component) => {
+})(importAllResult.Component);
+let tmp5 = ((Component) => {
   class SortableChannels {
     constructor(arg0) {
-      tmp = closure_2(this, SortableChannels);
+      tmp = outer1_2(this, SortableChannels);
       items = [];
       items[0] = Component;
-      obj = closure_21(this, SortableChannels, items);
+      obj = outer1_21(this, SortableChannels, items);
       SortableChannels = obj;
       obj.cancel = () => {
         if (!obj.moved) {
@@ -309,14 +317,14 @@ const tmp5 = (Component) => {
               onMoveCancel();
             }
           }
-          obj.setState({ "Bool(true)": "png", "Bool(true)": "xxs", "Bool(true)": "icon-subtle" });
+          obj.setState({ active: null, hoveringIndex: -1, activeIndex: -1 });
         }
       };
       obj.handleWrapperLayout = () => {
         if (null != obj._view) {
           const _view = obj._view;
           _view.measure((arg0, arg1, arg2, frameHeight, arg4, pageY) => {
-            closure_0.wrapperLayout = { frameHeight, pageY };
+            outer1_0.wrapperLayout = { frameHeight, pageY };
           });
         }
       };
@@ -354,7 +362,7 @@ const tmp5 = (Component) => {
               }
               if (null != diff1) {
                 obj.scrollValue = diff1;
-                const obj = {};
+                obj = {};
                 obj.y = obj.scrollValue;
                 obj.x = 0;
                 obj.scrollTo(obj);
@@ -411,7 +419,7 @@ const tmp5 = (Component) => {
           diff1 = num3 - 1;
         }
         if (tmp5) {
-          const obj = { hoveringIndex: diff1 };
+          obj = { hoveringIndex: diff1 };
           obj.setState(obj);
           if (null != onHoverChange) {
             onHoverChange(order[diff1]);
@@ -423,10 +431,10 @@ const tmp5 = (Component) => {
         const onRowActive = props.onRowActive;
         if (!props.disableSorting) {
           const pan = obj.state.pan;
-          pan.setValue({ 0: "%FunctionPrototype%", 0: "paddingStart" });
+          pan.setValue({ x: 0, y: 0 });
           obj.moveY = layout.layout.pageY + layout.layout.frameHeight / 2;
           const index = layout.rowData.index;
-          const obj = { active: layout, activeIndex: index, hoveringIndex: index };
+          obj = { active: layout, activeIndex: index, hoveringIndex: index };
           obj.setState(obj, obj.scrollAnimation);
           if (null != onRowActive) {
             onRowActive(layout);
@@ -447,10 +455,10 @@ const tmp5 = (Component) => {
             }
             let renderActiveDividerResult = renderActiveDivider(frameHeight, arg0, tmp4);
           } else {
-            let obj = {};
+            obj = {};
             obj = { height: frameHeight };
             obj.style = obj;
-            renderActiveDividerResult = callback(closure_8, obj);
+            renderActiveDividerResult = outer2_13(outer2_8, obj);
           }
           return renderActiveDividerResult;
         }
@@ -481,7 +489,7 @@ const tmp5 = (Component) => {
         if (null != obj.props.order[hoveringIndex]) {
           str = tmp7;
         }
-        let obj = { data, index, isRow: false };
+        obj = { data, index, isRow: false };
         const itemLayoutProps = obj.getItemLayoutProps(obj.index);
         obj = {};
         const merged = Object.assign(obj.props);
@@ -504,7 +512,7 @@ const tmp5 = (Component) => {
         obj["rowData"] = obj;
         obj["onRowActive"] = obj.handleRowActive;
         obj["isAfter"] = hoveringIndex > activeIndex;
-        return closure_14(arg1 ? closure_18 : closure_17, obj);
+        return outer2_14(arg1 ? outer2_18 : outer2_17, obj);
       };
       obj.renderItem = (data) => {
         let active;
@@ -530,7 +538,7 @@ const tmp5 = (Component) => {
         if (null != obj.props.order[hoveringIndex]) {
           str = tmp6;
         }
-        let obj = { data, index: data.item.index, isRow: true };
+        obj = { data, index: data.item.index, isRow: true };
         const itemLayoutProps = obj.getItemLayoutProps(obj.index);
         obj = {};
         const merged = Object.assign(obj.props);
@@ -551,7 +559,7 @@ const tmp5 = (Component) => {
         obj["rowData"] = obj;
         obj["onRowActive"] = obj.handleRowActive;
         obj["isAfter"] = hoveringIndex > activeIndex;
-        return closure_14(arg1 ? closure_18 : closure_17, obj);
+        return outer2_14(arg1 ? outer2_18 : outer2_17, obj);
       };
       obj.getItemLayout = (arg0, arg1) => obj.getItemLayoutProps(arg1);
       obj.getSectionHeight = (data) => {
@@ -566,9 +574,9 @@ const tmp5 = (Component) => {
         }
         return bound;
       };
-      obj.getRowHeight = () => Math.max(closure_15 + 20 * obj.props.fontScale, 48);
+      obj.getRowHeight = () => Math.max(outer2_15 + 20 * obj.props.fontScale, 48);
       obj.getItemLayoutProps = (index) => {
-        const tmp = callback3(callback2(obj.props.sections));
+        const tmp = outer2_19(outer2_16(obj.props.sections));
         const iter = tmp();
         let tmp2;
         let tmp3;
@@ -615,7 +623,7 @@ const tmp5 = (Component) => {
             }
           }
         }
-        let obj = { length: tmp2, offset: num, index };
+        obj = { length: tmp2, offset: num, index };
         if (null == tmp3) {
           return obj;
         } else {
@@ -658,8 +666,8 @@ const tmp5 = (Component) => {
         }
         return tmp2;
       };
-      obj = { 0: "%FunctionPrototype%", 0: "paddingStart" };
-      valueXY = new closure_9.ValueXY(obj);
+      obj = { x: 0, y: 0 };
+      valueXY = new outer1_9.ValueXY(obj);
       panResponder = obj.createPanResponder(Component, obj, valueXY);
       obj.listener = valueXY.addListener((arg0) => {
         const y = arg0.y;
@@ -671,9 +679,9 @@ const tmp5 = (Component) => {
       obj.dy = 0;
       obj.direction = "down";
       obj.scrollValue = 0;
-      obj4 = SortableChannels(closure_1[9]);
+      obj4 = SortableChannels(outer1_1[9]);
       obj.scrollContainerHeight = 1.2 * obj4.getWindowDimensions().height;
-      obj1 = { "Bool(false)": "png", "Bool(false)": "xxs", "Bool(false)": "icon-subtle" };
+      obj1 = { active: null, activeIndex: -1, hoveringIndex: -1 };
       obj1.panResponder = panResponder;
       obj1.pan = valueXY;
       obj.state = obj1;
@@ -681,7 +689,6 @@ const tmp5 = (Component) => {
       return obj;
     }
   }
-  const arg1 = SortableChannels;
   callback3(SortableChannels, Component);
   let obj = {
     key: "componentWillUnmount",
@@ -690,14 +697,16 @@ const tmp5 = (Component) => {
       pan.removeListener(this.listener);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "createPanResponder",
     value(arg0, arg1, dx) {
-      const SortableChannels = this;
+      const self = this;
+      let closure_1 = arg0;
+      let getActivityIndicator = arg1;
       let obj = { dx: dx.x, dy: dx.y };
-      const items = [true, obj];
-      let closure_3 = closure_9.event(items, { useNativeDriver: false });
+      const items = [null, obj];
+      let closure_3 = outer1_9.event(items, { useNativeDriver: false });
       obj = {
         onStartShouldSetPanResponder() {
           return true;
@@ -729,7 +738,7 @@ const tmp5 = (Component) => {
         onPanResponderGrant() {
           const state = self.state;
           const pan = state.pan;
-          const onMoveStart = arg0.onMoveStart;
+          const onMoveStart = closure_1.onMoveStart;
           if (null != state.active) {
             self.moved = true;
             self.dy = 0;
@@ -737,8 +746,8 @@ const tmp5 = (Component) => {
             if (null != onMoveStart) {
               onMoveStart();
             }
-            pan.setOffset(arg1);
-            pan.setValue(arg1);
+            pan.setOffset(getActivityIndicator);
+            pan.setValue(getActivityIndicator);
           }
         },
         onPanResponderTerminate() {
@@ -746,7 +755,7 @@ const tmp5 = (Component) => {
           if (null != onHoverChange) {
             onHoverChange("-1");
           }
-          self.setState({ "Bool(true)": "png", "Bool(true)": "xxs", "Bool(true)": "icon-subtle" });
+          self.setState({ active: null, hoveringIndex: -1, activeIndex: -1 });
         },
         onPanResponderRelease() {
           let active;
@@ -754,8 +763,8 @@ const tmp5 = (Component) => {
           ({ active, hoveringIndex } = self.state);
           const onRowMoved = self.props.onRowMoved;
           self.moved = false;
-          if (null != arg0.onMoveEnd) {
-            arg0.onMoveEnd();
+          if (null != closure_1.onMoveEnd) {
+            closure_1.onMoveEnd();
           }
           if (null == active) {
             if (hoveringIndex >= 0) {
@@ -770,13 +779,13 @@ const tmp5 = (Component) => {
               tmp3 = index;
             }
             if (tmp3 === index) {
-              return self.setState({ "Bool(true)": "png", "Bool(true)": "xxs", "Bool(true)": "icon-subtle" });
+              return self.setState({ active: null, hoveringIndex: -1, activeIndex: -1 });
             } else {
               obj = { row: active.rowData, from: index - 1, to: tmp3 - 1 };
               if (null != onRowMoved) {
                 onRowMoved(obj);
               }
-              self.setState({ "Bool(true)": "png", "Bool(true)": "xxs", "Bool(true)": "icon-subtle" });
+              self.setState({ active: null, hoveringIndex: -1, activeIndex: -1 });
               const _Math = Math;
               const bound = Math.max(0, self.scrollContainerHeight - self.listLayout.height + active.layout.frameHeight);
               if (self.scrollValue > bound) {
@@ -790,7 +799,7 @@ const tmp5 = (Component) => {
           }
         }
       };
-      return closure_10.create(obj);
+      return outer1_10.create(obj);
     }
   };
   items[1] = obj;
@@ -840,13 +849,13 @@ const tmp5 = (Component) => {
         return key.key;
       };
       obj["getItemLayout"] = self.getItemLayout;
-      const items = [closure_13(closure_11, obj), self.renderActive()];
+      const items = [outer1_13(outer1_11, obj), self.renderActive()];
       obj.children = items;
-      return closure_12(closure_8, obj);
+      return outer1_12(outer1_8, obj);
     }
   };
   return callback(SortableChannels, items);
-}(importAllResult.Component);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("components_native/common/SortableChannels.tsx");
+})(importAllResult.Component);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/common/SortableChannels.tsx");
 
 export default tmp5;

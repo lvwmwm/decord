@@ -1,29 +1,41 @@
-// Module ID: 7191
-// Function ID: 57886
+// Module ID: 7196
+// Function ID: 57920
 // Name: useNativeIAPPayments
-// Dependencies: []
+// Dependencies: [5, 57, 31, 5623, 3781, 3782, 5621, 653, 3, 566, 6658, 7197, 3791, 7198, 5450, 675, 7157, 5624, 44, 4451, 7200, 7201, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription
 
-// Module 7191 (useNativeIAPPayments)
+// Module 7196 (useNativeIAPPayments)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+let closure_10;
+let closure_11;
+let closure_12;
+const require = arg1;
 function useNativeIAPPayments() {
-  let obj = arg1(dependencyMap[9]);
-  const items = [closure_6, closure_9];
-  const tmp = callback2(obj.useStateFromStoresArray(items, () => {
-    const items = [closure_6.isGenericIapConnected(), closure_6.genericProductsLoaded(), closure_6.getStoreFront(), products.getProducts()];
+  let obj = first(566);
+  let items = [closure_6, closure_9];
+  let tmp = first(obj.useStateFromStoresArray(items, () => {
+    const items = [outer1_6.isGenericIapConnected(), outer1_6.genericProductsLoaded(), outer1_6.getStoreFront(), outer1_9.getProducts()];
     return items;
   }), 4);
-  let first = tmp[0];
-  const arg1 = first;
+  first = tmp[0];
   const importDefault = tmp3;
   const dependencyMap = tmp4;
-  let closure_3 = tmp[3];
+  let _isNativeReflectConstruct = tmp[3];
   if (first) {
     first = tmp3;
   }
   if (first) {
     first = null != tmp4;
   }
-  const callback2 = first;
   const items1 = [tmp[1]];
   const effect = React.useEffect(() => {
     if (!tmp3) {
@@ -31,29 +43,29 @@ function useNativeIAPPayments() {
       const obj = tmp3(tmp4[10]);
     }
   }, items1);
-  importDefault(dependencyMap[11])(() => {
+  importDefault(7197)(() => {
     let tmp = first;
     if (!first) {
-      tmp = closure_15;
+      tmp = outer1_15;
     }
     if (!tmp) {
-      closure_15 = true;
+      outer1_15 = true;
       let mapped;
       let obj = first(tmp4[12]);
       obj = {};
       obj = { alertPriority: "0" };
       obj.tags = obj;
       const obj1 = {};
-      if (null != closure_3) {
-        mapped = closure_3.map((identifier) => identifier.identifier);
+      if (null != _isNativeReflectConstruct) {
+        mapped = _isNativeReflectConstruct.map((identifier) => identifier.identifier);
       }
       if (null == mapped) {
         mapped = [];
       }
       obj1.loadedProducts = mapped;
       obj1.connected = first;
-      obj1.genericProductsLoaded = tmp4;
-      obj1.storeFront = closure_3;
+      obj1.genericProductsLoaded = closure_1;
+      obj1.storeFront = _isNativeReflectConstruct;
       obj.extra = obj1;
       const result = obj.captureBillingMessage("useNativeIAPPayments failed to load required context", obj);
     }
@@ -66,130 +78,107 @@ function computeCanUpdateSubscription(currency, currency2) {
 }
 function useCreateSubscription(planId) {
   planId = planId.planId;
-  const arg1 = planId;
   const skuId = planId.skuId;
-  const importDefault = skuId;
   const applicationId = planId.applicationId;
-  const dependencyMap = applicationId;
   const analyticsLocation = planId.analyticsLocation;
-  let callback = analyticsLocation;
   const tmp = useNativeIAPPayments();
   const nativePaymentsConnected = tmp.nativePaymentsConnected;
-  let closure_4 = nativePaymentsConnected;
-  let obj = arg1(dependencyMap[9]);
-  const items = [closure_7];
+  let obj = planId(applicationId[9]);
+  const items = [callback];
   const items1 = [planId];
   const stateFromStores = obj.useStateFromStores(items, () => callback.get(planId), items1);
-  const tmp3 = importDefault(dependencyMap[13])(stateFromStores, tmp.storeFront);
+  const tmp3 = skuId(applicationId[13])(stateFromStores, tmp.storeFront);
   const React = tmp3;
-  const tmp4 = importDefault(dependencyMap[14])(() => planId(applicationId[15]).getNewAnalyticsLoadId());
+  const tmp4 = skuId(applicationId[14])(() => planId(applicationId[15]).getNewAnalyticsLoadId());
   let closure_6 = tmp4;
   const items2 = [tmp4, analyticsLocation, applicationId, planId, skuId];
   callback = React.useCallback(() => {
     let obj = planId(applicationId[16]);
-    obj = { load_id: tmp4, payment_type: closure_10[closure_11.SUBSCRIPTION], subscription_plan_gateway_plan_id: planId(applicationId[17]).ProductIds.GENERIC_SUBSCRIPTION, subscription_type: constants.GUILD, is_gift: false, location: analyticsLocation, application_id: applicationId, subscription_plan_id: planId, sku_id: skuId };
+    obj = { load_id: closure_6, payment_type: outer1_10[outer1_11.SUBSCRIPTION], subscription_plan_gateway_plan_id: planId(applicationId[17]).ProductIds.GENERIC_SUBSCRIPTION, subscription_type: outer1_12.GUILD, is_gift: false, location: analyticsLocation, application_id: applicationId, subscription_plan_id: planId, sku_id: skuId };
     const result = obj.trackPaymentFlowStartedAnalyticsAndCTP(obj);
   }, items2);
-  closure_7 = callback;
   obj = {
-    createSubscription: React.useCallback(callback(async () => {
-      callback2(closure_2[18])(closure_4, "cannot connect to IAP API");
-      callback2(closure_2[18])(null != closure_5, "plan not found");
-      yield callback2(closure_2[10]).restoreAndApplyPurchases();
-      callback3();
-      const obj = callback2(closure_2[10]);
-      yield callback(closure_2[10]).createGenericSubscription(closure_5);
-      const obj2 = callback(closure_2[10]);
-      yield callback(closure_2[19]).fetchSubscriptions();
+    createSubscription: React.useCallback(analyticsLocation(async () => {
+      skuId(applicationId[18])(outer1_4, "cannot connect to IAP API");
+      skuId(applicationId[18])(null != outer1_5, "plan not found");
+      yield skuId(applicationId[10]).restoreAndApplyPurchases();
+      outer1_7();
+      const obj = skuId(applicationId[10]);
+      yield planId(applicationId[10]).createGenericSubscription(outer1_5);
+      const obj2 = planId(applicationId[10]);
+      yield planId(applicationId[19]).fetchSubscriptions();
     }), items3),
     nativePaymentsConnected
   };
-  const items3 = [tmp3, nativePaymentsConnected, callback];
+  items3 = [tmp3, nativePaymentsConnected, callback];
   return obj;
 }
 function useCancelSubscription(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const importDefault = arg1;
   const tmp = useNativeIAPPayments();
   const nativePaymentsConnected = tmp.nativePaymentsConnected;
-  const dependencyMap = nativePaymentsConnected;
   const storeFront = tmp.storeFront;
-  const callback = storeFront;
-  let obj = arg1(dependencyMap[9]);
+  let obj = _require(nativePaymentsConnected[9]);
   const items = [closure_8];
   const items1 = [arg0];
-  const stateFromStores = obj.useStateFromStores(items, () => subscriptionById.getSubscriptionById(arg0), items1);
-  let closure_4 = stateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getSubscriptionById(closure_0), items1);
   const items2 = [storeFront, stateFromStores];
-  const memo = React.useMemo(() => callback(stateFromStores, storeFront), items2);
-  const React = memo;
-  const tmp4 = importDefault(dependencyMap[20])(arg0);
+  memo = memo.useMemo(() => outer1_17(stateFromStores, storeFront), items2);
+  let tmp4 = importDefault(nativePaymentsConnected[20])(arg0);
   let closure_6 = tmp4;
   obj = {
-    cancelSubscription: React.useCallback(callback(async () => {
-      callback2(closure_2[18])(closure_5, "Cannot update subscription");
-      callback2(closure_2[18])(closure_2, "Cannot connect to IAP API");
-      callback2(closure_2[18])(null != closure_6, "Subscription not found");
-      const obj = callback(closure_2[10]);
-      const tmp4 = yield callback(closure_2[10]).cancelGenericSubscription(closure_6.requestIdentifier, closure_6.subscriptionId, closure_1);
-      yield callback(closure_2[19]).fetchSubscriptions();
+    cancelSubscription: memo.useCallback(storeFront(async () => {
+      callback2(nativePaymentsConnected[18])(outer1_5, "Cannot update subscription");
+      callback2(nativePaymentsConnected[18])(outer1_2, "Cannot connect to IAP API");
+      callback2(nativePaymentsConnected[18])(null != outer1_6, "Subscription not found");
+      const obj = callback(nativePaymentsConnected[10]);
+      const tmp4 = yield callback(nativePaymentsConnected[10]).cancelGenericSubscription(outer1_6.requestIdentifier, outer1_6.subscriptionId, outer1_1);
+      yield callback(nativePaymentsConnected[19]).fetchSubscriptions();
       return tmp4;
     }), items3),
     nativePaymentsConnected
   };
-  const items3 = [memo, tmp4, nativePaymentsConnected, arg1];
+  items3 = [memo, tmp4, nativePaymentsConnected, arg1];
   return obj;
 }
 function useResubscribeSubscription(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const tmp = useNativeIAPPayments();
   const nativePaymentsConnected = tmp.nativePaymentsConnected;
-  const importDefault = nativePaymentsConnected;
   const storeFront = tmp.storeFront;
-  const dependencyMap = storeFront;
-  let obj = arg1(dependencyMap[9]);
+  let obj = _require(storeFront[9]);
   const items = [closure_8];
   const items1 = [arg0];
-  const stateFromStores = obj.useStateFromStores(items, () => subscriptionById.getSubscriptionById(arg0), items1);
-  const callback = stateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getSubscriptionById(closure_0), items1);
   const items2 = [storeFront, stateFromStores];
-  const memo = React.useMemo(() => callback(stateFromStores, storeFront), items2);
-  let closure_4 = memo;
-  const tmp4 = importDefault(dependencyMap[21])(arg0);
-  const React = tmp4;
+  const memo = React.useMemo(() => outer1_17(stateFromStores, storeFront), items2);
+  const tmp4 = nativePaymentsConnected(storeFront[21])(arg0);
+  React = tmp4;
   obj = {
-    resubscribeSubscription: React.useCallback(callback(async () => {
-      callback2(closure_2[18])(closure_4, "Cannot update subscription");
-      callback2(closure_2[18])(callback2, "Cannot connect to IAP API");
-      callback2(closure_2[18])(null != closure_5, "Subscription not found");
-      callback2(closure_2[18])(null != closure_3, "Subscription not found");
-      const obj = callback(closure_2[10]);
-      const tmp5 = yield callback(closure_2[10]).resubscribeGenericSubscription(closure_5, closure_3.isACOM);
-      yield callback(closure_2[19]).fetchSubscriptions();
+    resubscribeSubscription: React.useCallback(stateFromStores(async () => {
+      nativePaymentsConnected(storeFront[18])(outer1_4, "Cannot update subscription");
+      nativePaymentsConnected(storeFront[18])(outer1_1, "Cannot connect to IAP API");
+      nativePaymentsConnected(storeFront[18])(null != outer1_5, "Subscription not found");
+      nativePaymentsConnected(storeFront[18])(null != outer1_3, "Subscription not found");
+      const obj = callback(storeFront[10]);
+      const tmp5 = yield callback(storeFront[10]).resubscribeGenericSubscription(outer1_5, outer1_3.isACOM);
+      yield callback(storeFront[19]).fetchSubscriptions();
       return tmp5;
     }), items3),
     nativePaymentsConnected
   };
-  const items3 = [memo, nativePaymentsConnected, tmp4, stateFromStores];
+  items3 = [memo, nativePaymentsConnected, tmp4, stateFromStores];
   return obj;
 }
 function useGoogleSkuIds() {
   return closure_14;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-({ PurchaseTypeToAnalyticsPaymentType: closure_10, PurchaseTypes: closure_11, SubscriptionTypes: closure_12 } = arg1(dependencyMap[7]));
-let importDefaultResult = importDefault(dependencyMap[8]);
+({ PurchaseTypeToAnalyticsPaymentType: closure_10, PurchaseTypes: closure_11, SubscriptionTypes: closure_12 } = ME);
 importDefaultResult = new importDefaultResult("NativePaymentHooks.ios.tsx");
-let closure_14 = { "Bool(true)": "L", "Bool(true)": "L" };
-let closure_15 = false;
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.ios.tsx");
+let closure_14 = { isFetchingGoogleSkus: false, fetchError: null };
+let c15 = false;
+let result = require("result").fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.ios.tsx");
 
 export default { useNativeIAPPayments, useGoogleSkuIds, useCreateSubscription, useCancelSubscription, useResubscribeSubscription };
 export { useNativeIAPPayments };

@@ -1,18 +1,34 @@
-// Module ID: 14906
-// Function ID: 112302
+// Module ID: 15022
+// Function ID: 114470
 // Name: AccountLinkLargeBanner
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 1345, 33, 689, 5474, 15023, 9889, 4547, 4130, 624, 5464, 5484, 5167, 4660, 5119, 1273, 4126, 1212, 4543, 8648, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 14906 (AccountLinkLargeBanner)
+// Module 15022 (AccountLinkLargeBanner)
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function AccountLinkLargeBanner(arg0) {
   let application;
-  ({ application, markAsDismissed: closure_0, startAuthorization: closure_1 } = arg0);
+  let importDefault;
+  let require;
+  ({ application, markAsDismissed: require, startAuthorization: importDefault } = arg0);
   const tmp = callback3();
-  let obj = arg1(dependencyMap[11]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const dependencyMap = importDefault(dependencyMap[12])(importDefault(dependencyMap[13]).MOBILE_ACCOUNT_LINK_LARGE_BANNER).analyticsLocations;
+  let obj = require(analyticsLocations[11]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
+  analyticsLocations = importDefault(analyticsLocations[12])(importDefault(analyticsLocations[13]).MOBILE_ACCOUNT_LINK_LARGE_BANNER).analyticsLocations;
   const applicationAccountLinkBenefitConfig = application.applicationAccountLinkBenefitConfig;
   let reward_name;
   if (null != applicationAccountLinkBenefitConfig) {
@@ -24,15 +40,15 @@ function AccountLinkLargeBanner(arg0) {
     obj = {
       accessibilityRole: "button",
       onPress() {
-          return callback(constants.USER_DISMISS);
+          return callback(outer1_6.USER_DISMISS);
         },
       style: tmp.closeButton,
-      children: callback(arg1(dependencyMap[16]).XSmallIcon, {})
+      children: callback(require(analyticsLocations[16]).XSmallIcon, { size: "sm", color: "text-muted" })
     };
-    const items1 = [callback(arg1(dependencyMap[15]).PressableOpacity, obj), , , , ];
+    const items1 = [callback(require(analyticsLocations[15]).PressableOpacity, obj), , , , ];
     const obj1 = { style: tmp.imagesContainer };
     const obj2 = { game: application, size: NORMAL };
-    const items2 = [callback(importDefault(dependencyMap[6]), obj2), , ];
+    const items2 = [callback(importDefault(analyticsLocations[6]), obj2), , ];
     const obj3 = { style: tmp.ellipsisContainer };
     const obj4 = { style: tmp.ellipsisDot };
     const items3 = [callback(closure_4, obj4), , ];
@@ -42,41 +58,43 @@ function AccountLinkLargeBanner(arg0) {
     items3[2] = callback(closure_4, obj6);
     obj3.children = items3;
     items2[1] = callback2(closure_4, obj3);
-    const obj7 = { user: stateFromStores, size: arg1(dependencyMap[17]).AvatarSizes.LARGE_48, guildId: undefined };
-    items2[2] = callback(arg1(dependencyMap[17]).Avatar, obj7);
+    const obj7 = { user: stateFromStores, size: require(analyticsLocations[17]).AvatarSizes.LARGE_48, guildId: undefined };
+    items2[2] = callback(require(analyticsLocations[17]).Avatar, obj7);
     obj1.children = items2;
     items1[1] = callback2(closure_4, obj1);
-    const obj8 = { variant: closure_17, color: "mobile-text-heading-primary", style: tmp.title };
-    const intl = arg1(dependencyMap[19]).intl;
+    const obj8 = { variant: c17, color: "mobile-text-heading-primary", style: tmp.title };
+    const intl = require(analyticsLocations[19]).intl;
     const obj9 = { gameName: application.name };
-    obj8.children = intl.formatToPlainString(arg1(dependencyMap[19]).t.3gpxqO, obj9);
-    items1[2] = callback(arg1(dependencyMap[18]).Text, obj8);
-    const obj10 = { variant: closure_18, color: "text-muted", style: tmp.body };
-    const intl2 = arg1(dependencyMap[19]).intl;
+    obj8.children = intl.formatToPlainString(require(analyticsLocations[19]).t["3gpxqO"], obj9);
+    items1[2] = callback(require(analyticsLocations[18]).Text, obj8);
+    const obj10 = { variant: c18, color: "text-muted", style: tmp.body };
+    const intl2 = require(analyticsLocations[19]).intl;
     const obj11 = { rewardName: reward_name };
-    obj10.children = intl2.formatToPlainString(arg1(dependencyMap[19]).t.vxvKMm, obj11);
-    items1[3] = callback(arg1(dependencyMap[18]).Text, obj10);
+    obj10.children = intl2.formatToPlainString(require(analyticsLocations[19]).t.vxvKMm, obj11);
+    items1[3] = callback(require(analyticsLocations[18]).Text, obj10);
     const obj12 = { style: tmp.ctaContainer };
-    const obj13 = {};
-    const intl3 = arg1(dependencyMap[19]).intl;
-    obj13.text = intl3.string(arg1(dependencyMap[19]).t.0mvtKL);
+    const obj13 = { variant: "secondary", size: "md" };
+    const intl3 = require(analyticsLocations[19]).intl;
+    obj13.text = intl3.string(require(analyticsLocations[19]).t["0mvtKL"]);
     obj13.onPress = function onPress() {
       callback2({ analyticsLocations });
     };
     const obj14 = { size: "sm" };
-    obj13.icon = callback(arg1(dependencyMap[21]).ExperimentalGameControllerLinkIcon, obj14);
-    obj12.children = callback(arg1(dependencyMap[20]).Button, obj13);
+    obj13.icon = callback(require(analyticsLocations[21]).ExperimentalGameControllerLinkIcon, obj14);
+    obj12.children = callback(require(analyticsLocations[20]).Button, obj13);
     items1[4] = callback(closure_4, obj12);
     obj.children = items1;
-    tmp5 = callback2(arg1(dependencyMap[14]).Card, obj);
+    tmp5 = callback2(require(analyticsLocations[14]).Card, obj);
   }
   return tmp5;
 }
 function AccountLinkMediumBanner(arg0) {
   let application;
-  ({ application, markAsDismissed: closure_0, startAuthorization: closure_1 } = arg0);
+  let importDefault;
+  let require;
+  ({ application, markAsDismissed: require, startAuthorization: importDefault } = arg0);
   const tmp = callback4();
-  const dependencyMap = importDefault(dependencyMap[12])(importDefault(dependencyMap[13]).MOBILE_ACCOUNT_LINK_MEDIUM_BANNER).analyticsLocations;
+  analyticsLocations = importDefault(analyticsLocations[12])(importDefault(analyticsLocations[13]).MOBILE_ACCOUNT_LINK_MEDIUM_BANNER).analyticsLocations;
   const applicationAccountLinkBenefitConfig = application.applicationAccountLinkBenefitConfig;
   let reward_name;
   if (null != applicationAccountLinkBenefitConfig) {
@@ -98,93 +116,86 @@ function AccountLinkMediumBanner(arg0) {
       obj.style = tmp.rewardImage;
       obj.resizeMode = "contain";
       const items = [callback(closure_3, obj), , ];
-      const obj2 = { cachedAt: "polite", edpbxy: "column", style: tmp.bodyText };
-      const intl = arg1(dependencyMap[19]).intl;
+      const obj2 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.bodyText };
+      const intl = require(analyticsLocations[19]).intl;
       const obj3 = { gameName: application.name, rewardName: reward_name };
-      obj2.children = intl.formatToPlainString(arg1(dependencyMap[19]).t.V/C76E, obj3);
-      items[1] = callback(arg1(dependencyMap[18]).Text, obj2);
+      obj2.children = intl.formatToPlainString(require(analyticsLocations[19]).t["V/C76E"], obj3);
+      items[1] = callback(require(analyticsLocations[18]).Text, obj2);
       const obj4 = {
         accessibilityRole: "button",
         onPress() {
-              return callback(constants.USER_DISMISS);
+              return callback(outer1_6.USER_DISMISS);
             },
         style: tmp.closeButton,
-        children: callback(arg1(dependencyMap[16]).XSmallIcon, {})
+        children: callback(require(analyticsLocations[16]).XSmallIcon, { size: "sm", color: "text-muted" })
       };
-      items[2] = callback(arg1(dependencyMap[15]).PressableOpacity, obj4);
+      items[2] = callback(require(analyticsLocations[15]).PressableOpacity, obj4);
       obj.children = items;
       const items1 = [callback2(closure_4, obj), ];
       const obj5 = { style: tmp.ctaContainer };
-      const obj6 = {};
-      const intl2 = arg1(dependencyMap[19]).intl;
-      obj6.text = intl2.string(arg1(dependencyMap[19]).t.0mvtKL);
+      const obj6 = { variant: "secondary", size: "sm" };
+      const intl2 = require(analyticsLocations[19]).intl;
+      obj6.text = intl2.string(require(analyticsLocations[19]).t["0mvtKL"]);
       obj6.onPress = function onPress() {
         callback2({ analyticsLocations });
       };
       const obj7 = { size: "xs" };
-      obj6.icon = callback(arg1(dependencyMap[21]).ExperimentalGameControllerLinkIcon, obj7);
-      obj5.children = callback(arg1(dependencyMap[20]).Button, obj6);
+      obj6.icon = callback(require(analyticsLocations[21]).ExperimentalGameControllerLinkIcon, obj7);
+      obj5.children = callback(require(analyticsLocations[20]).Button, obj6);
       items1[1] = callback(closure_4, obj5);
       obj.children = items1;
-      tmp4 = callback2(arg1(dependencyMap[14]).Card, obj);
+      tmp4 = callback2(require(analyticsLocations[14]).Card, obj);
     }
   }
   return tmp4;
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = importDefault(dependencyMap[2]);
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
-const PX_8 = importDefault(dependencyMap[5]).space.PX_8;
-const PX_82 = importDefault(dependencyMap[5]).space.PX_8;
-const PX_12 = importDefault(dependencyMap[5]).space.PX_12;
-const PX_16 = importDefault(dependencyMap[5]).space.PX_16;
-const PX_4 = importDefault(dependencyMap[5]).space.PX_4;
-const NORMAL = arg1(dependencyMap[6]).GameIconSizes.NORMAL;
-let closure_16 = arg1(dependencyMap[6]).GameIconImageSize[NORMAL];
-let closure_17 = "heading-md/bold";
-let closure_18 = "text-sm/medium";
-const PX_162 = importDefault(dependencyMap[5]).space.PX_16;
-const PX_122 = importDefault(dependencyMap[5]).space.PX_12;
-let obj1 = arg1(dependencyMap[10]);
+({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
+const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
+const PX_82 = require("_createForOfIteratorHelperLoose").space.PX_8;
+const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
+const PX_16 = require("_createForOfIteratorHelperLoose").space.PX_16;
+const PX_4 = require("_createForOfIteratorHelperLoose").space.PX_4;
+const NORMAL = require("GameIcon").GameIconSizes.NORMAL;
+let closure_16 = require("GameIcon").GameIconImageSize[NORMAL];
+let c17 = "heading-md/bold";
+let c18 = "text-sm/medium";
+const PX_162 = require("_createForOfIteratorHelperLoose").space.PX_16;
+const PX_122 = require("_createForOfIteratorHelperLoose").space.PX_12;
 let obj = { card: { padding: PX_12 } };
-obj = { backgroundColor: "r", flexDirection: "ConnectionCablesSpotIllustration", justifyContent: "Array", alignItems: "soundshareSession", overflow: "LURKER_STAGE_CHANNEL_PERMISSIONS_ALLOWLIST", zIndex: "ViewNsfwCommands", minHeight: "ars", flex: "prefixTag", top: importDefault(dependencyMap[5]).space.PX_12, right: importDefault(dependencyMap[5]).space.PX_12 };
+obj = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_12, right: require("_createForOfIteratorHelperLoose").space.PX_12, width: 24, height: 24, alignItems: "center", justifyContent: "center", zIndex: 1 };
 obj.closeButton = obj;
-obj.imagesContainer = {};
-obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", marginHorizontal: importDefault(dependencyMap[5]).space.PX_8, gap: importDefault(dependencyMap[5]).space.PX_4 };
-obj.ellipsisContainer = obj1;
-const tmp3 = arg1(dependencyMap[4]);
-obj.ellipsisDot = { width: importDefault(dependencyMap[5]).space.PX_4, height: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).space.PX_4 / 2, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_MUTED };
+obj.imagesContainer = { flexDirection: "row", alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+obj.ellipsisContainer = _createForOfIteratorHelperLoose;
+obj.ellipsisDot = { width: require("_createForOfIteratorHelperLoose").space.PX_4, height: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").space.PX_4 / 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_MUTED };
 obj.title = { marginTop: PX_16, textAlign: "center" };
 obj.body = { marginTop: PX_4, textAlign: "center" };
 obj.ctaContainer = { marginTop: PX_162 };
-let closure_21 = obj1.createStyles(obj);
-const obj2 = { width: importDefault(dependencyMap[5]).space.PX_4, height: importDefault(dependencyMap[5]).space.PX_4, borderRadius: importDefault(dependencyMap[5]).space.PX_4 / 2, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_MUTED };
-const obj3 = { card: { padding: PX_12 }, closeButton: {} };
-const obj7 = arg1(dependencyMap[10]);
-obj3.contentContainer = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_12 };
-obj3.rewardImage = {};
-obj3.bodyText = {};
+let closure_21 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj3 = { card: { padding: PX_12 }, closeButton: { width: 24, height: 24, alignItems: "center", justifyContent: "center", alignSelf: "flex-start" } };
+let obj2 = { width: require("_createForOfIteratorHelperLoose").space.PX_4, height: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").space.PX_4 / 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_MUTED };
+obj3.contentContainer = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+obj3.rewardImage = { width: 48, height: 48 };
+obj3.bodyText = { flexGrow: 1, flexShrink: 1, alignSelf: "center" };
 obj3.ctaContainer = { marginTop: PX_122, width: "100%" };
-let closure_22 = obj7.createStyles(obj3);
-const obj4 = { flexDirection: "row", gap: importDefault(dependencyMap[5]).space.PX_12 };
+let closure_22 = _createForOfIteratorHelperLoose.createStyles(obj3);
+let obj4 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
 const memoResult = importAllResult.memo((arg0) => {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(15023);
   const config = obj.useConfig({ location: "AccountLinkBanner" });
   const bannerSize = config.bannerSize;
   let tmp3Result = null;
   if (config.enabled) {
     obj = {};
-    let tmp7 = bannerSize === arg1(dependencyMap[7]).MobileAccountLinkingBannerSize.LARGE;
+    let tmp7 = bannerSize === require(15023) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE;
     if (tmp7) {
       obj = {};
       const merged = Object.assign(arg0);
       tmp7 = callback(AccountLinkLargeBanner, obj);
     }
     const items = [tmp7, ];
-    let tmp15 = bannerSize === arg1(dependencyMap[7]).MobileAccountLinkingBannerSize.MEDIUM;
+    let tmp15 = bannerSize === require(15023) /* apexExperiment */.MobileAccountLinkingBannerSize.MEDIUM;
     if (tmp15) {
       const obj1 = {};
       const merged1 = Object.assign(arg0);
@@ -198,28 +209,28 @@ const memoResult = importAllResult.memo((arg0) => {
   }
   return tmp3Result;
 });
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/application_account_linking/native/AccountLinkBanner.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/application_account_linking/native/AccountLinkBanner.tsx");
 
 export default memoResult;
 export const ACCOUNT_LINK_BANNER_MARGIN_TOP = PX_8;
 export const ACCOUNT_LINK_BANNER_MARGIN_BOTTOM = PX_82;
 export const getScaledAccountLinkBannerHeight = function getScaledAccountLinkBannerHeight(fontScale) {
-  const config = importDefault(dependencyMap[7]).getConfig({ location: "getScaledAccountLinkBannerHeight" });
+  const config = importDefault(15023).getConfig({ location: "getScaledAccountLinkBannerHeight" });
   const bannerSize = config.bannerSize;
   if (!config.enabled) {
     return 0;
-  } else if (bannerSize === arg1(dependencyMap[7]).MobileAccountLinkingBannerSize.LARGE) {
+  } else if (bannerSize === require(15023) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE) {
     const sum = PX_8 + PX_12 + closure_16 + PX_16;
-    const sum1 = sum + arg1(dependencyMap[8]).scaleTextLineHeight(closure_17, fontScale) + PX_4;
-    const obj2 = arg1(dependencyMap[8]);
-    const sum2 = sum1 + 2 * arg1(dependencyMap[8]).scaleTextLineHeight(closure_18, fontScale) + PX_162;
-    let num = sum2 + arg1(dependencyMap[9]).MEDIUM_BUTTON_HEIGHT + PX_12 + PX_82;
-    const obj3 = arg1(dependencyMap[8]);
+    const sum1 = sum + require(9889) /* scaleLineHeight */.scaleTextLineHeight(c17, fontScale) + PX_4;
+    const obj2 = require(9889) /* scaleLineHeight */;
+    const sum2 = sum1 + 2 * require(9889) /* scaleLineHeight */.scaleTextLineHeight(c18, fontScale) + PX_162;
+    let num = sum2 + require(4547) /* getButtonPadding */.MEDIUM_BUTTON_HEIGHT + PX_12 + PX_82;
+    const obj3 = require(9889) /* scaleLineHeight */;
   } else {
     num = 0;
-    if (bannerSize === arg1(dependencyMap[7]).MobileAccountLinkingBannerSize.MEDIUM) {
+    if (bannerSize === require(15023) /* apexExperiment */.MobileAccountLinkingBannerSize.MEDIUM) {
       const sum3 = PX_8 + PX_12 + 48 + PX_122;
-      num = sum3 + arg1(dependencyMap[9]).SMALL_BUTTON_HEIGHT + PX_12 + PX_82;
+      num = sum3 + require(4547) /* getButtonPadding */.SMALL_BUTTON_HEIGHT + PX_12 + PX_82;
     }
   }
 };

@@ -1,13 +1,12 @@
 // Module ID: 484
 // Function ID: 6292
 // Name: getAuthenticationPath
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 // Exports: getLoginPath, wrapPaths
 
 // Module 484 (getAuthenticationPath)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
 function getAuthenticationPath(login, arg1, flag, arg3) {
   let tmp = arg1;
@@ -47,7 +46,7 @@ function getAuthenticationPath(login, arg1, flag, arg3) {
     combined = "&" + str;
   }
 }
-const tmp2 = () => {
+const tmp2 = (() => {
   class UnescapedPathParam {
     constructor(arg0) {
       tmp = UnescapedPathParam(this, UnescapedPathParam);
@@ -55,7 +54,6 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = UnescapedPathParam;
   const items = [
     {
       key: "toString",
@@ -65,8 +63,9 @@ const tmp2 = () => {
     }
   ];
   return callback(UnescapedPathParam, items);
-}();
-const result = items.fileFinishedImporting("../discord_common/js/shared/utils/PathUtils.tsx");
+})();
+let closure_2 = tmp2;
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/PathUtils.tsx");
 
 export const getLoginPath = function getLoginPath(arg0, flag) {
   let str = arg2;
@@ -82,23 +81,24 @@ export { getAuthenticationPath };
 export const UnescapedPathParam = tmp2;
 export const wrapPaths = function wrapPaths(frozen, arg1) {
   let length;
-  let closure_0 = frozen;
-  let module_511 = arg1;
+  let _classCallCheck = frozen;
+  let _defineProperties = arg1;
   const obj = {};
   function _loop() {
-    const arg0 = tmp;
-    if ("function" !== typeof arg0[closure_3]) {
+    const table = tmp;
+    if ("function" !== typeof table[closure_3]) {
       obj[closure_3] = tmp;
       return 1;
     } else {
-      obj[closure_3] = (arg0) => tmp(...function encodePathArguments(arr, arg1) {
+      obj[closure_3] = (arg0) => tmp(...(function encodePathArguments(arr, outer1_1) {
+        let _classCallCheck = outer1_1;
         return arr.map((arg0) => {
           if (null == arg0) {
             return arg0;
-          } else if (arg0 instanceof closure_2) {
+          } else if (arg0 instanceof obj) {
             let str = arg0.toString();
-          } else if (null == arg1) {
-            const _encodeURIComponent = encodeURIComponent;
+          } else if (null == _classCallCheck) {
+            let _encodeURIComponent = encodeURIComponent;
             str = encodeURIComponent(arg0);
           } else {
             const _String = String;
@@ -108,14 +108,14 @@ export const wrapPaths = function wrapPaths(frozen, arg1) {
             str = mapped.join("");
           }
         });
-      }(HermesBuiltin.copyRestArgs(), module_511));
+      })(HermesBuiltin.copyRestArgs(), outer1_1));
     }
   }
   const keys = Object.keys(frozen);
   let num = 0;
   if (0 < keys.length) {
     do {
-      closure_3 = keys[num];
+      let getAuthenticationPath = keys[num];
       let _loopResult = _loop();
       num = num + 1;
       length = keys.length;

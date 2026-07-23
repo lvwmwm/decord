@@ -1,20 +1,22 @@
-// Module ID: 16414
-// Function ID: 126788
+// Module ID: 16531
+// Function ID: 128962
 // Name: getReportInboundErrors
-// Dependencies: []
+// Dependencies: [4215, 664, 10579, 2]
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 16414 (getReportInboundErrors)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = 10 * importDefault(dependencyMap[1]).Millis.SECOND;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/errors/av_errors/AVErrorUtils.tsx");
+// Module 16531 (getReportInboundErrors)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let closure_3 = 10 * require("set").Millis.SECOND;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/AVErrorUtils.tsx");
 
 export const getReportInboundErrors = function getReportInboundErrors() {
-  const WindowVisibilityVideoManager = arg1(dependencyMap[2]).WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = require(10579) /* _isNativeReflectConstruct */.WindowVisibilityVideoManager;
   let result = WindowVisibilityVideoManager.isIncomingVideoEnabled();
   if (result) {
     const _performance = performance;
-    const WindowVisibilityVideoManager2 = arg1(dependencyMap[2]).WindowVisibilityVideoManager;
+    const WindowVisibilityVideoManager2 = require(10579) /* _isNativeReflectConstruct */.WindowVisibilityVideoManager;
     result = performance.now() - WindowVisibilityVideoManager2.lastIncomingVideoEnabledChangeTime() > closure_3;
     const nowResult = performance.now();
   }

@@ -1,88 +1,89 @@
-// Module ID: 11013
-// Function ID: 85692
+// Module ID: 11023
+// Function ID: 85742
 // Name: ClassificationDetailModal
-// Dependencies: []
+// Dependencies: [31, 653, 11024, 33, 4130, 689, 4337, 5087, 11025, 5796, 11055, 11032, 1457, 5519, 1212, 2]
 // Exports: default
 
-// Module 11013 (ClassificationDetailModal)
-let closure_4 = importAll(dependencyMap[0]);
-const UserSettingsSections = arg1(dependencyMap[1]).UserSettingsSections;
-const AccountSettingsTabs = arg1(dependencyMap[2]).AccountSettingsTabs;
-const jsx = arg1(dependencyMap[3]).jsx;
+// Module 11023 (ClassificationDetailModal)
+import result from "result";
+import { UserSettingsSections } from "ME";
+import { AccountSettingsTabs } from "AccountSettingsTabs";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let closure_8 = { CLASSIFICATION_DETAIL: "CLASSIFICATION_DETAIL" };
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
-obj.headerStyle = obj;
-let closure_9 = obj.createStyles(obj);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/safety_hub/native/ClassificationDetailModal.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.headerStyle = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("AccountSettingsTabs").fileFinishedImporting("modules/safety_hub/native/ClassificationDetailModal.tsx");
 
 export default function ClassificationDetailModal(classificationId) {
   classificationId = classificationId.classificationId;
-  const arg1 = classificationId;
   const source = classificationId.source;
-  const importDefault = source;
   let flag = classificationId.shouldRedirectToAccountStanding;
   if (flag === undefined) {
     flag = false;
   }
-  const importAll = flag;
   let dependencyMap;
-  let React;
-  const tmp = callback();
+  let safetyHubInitialized;
+  const tmp = _createForOfIteratorHelperLoose();
   dependencyMap = tmp;
-  let obj = arg1(dependencyMap[10]);
-  const safetyHubInitialized = obj.useSafetyHubInitialized();
-  React = safetyHubInitialized;
+  let obj = classificationId(11055);
+  safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
-  const effect = React.useEffect(() => {
+  const effect = safetyHubInitialized.useEffect(() => {
     if (!safetyHubInitialized) {
-      const safetyHubData = flag(flag[11]).getSafetyHubData();
-      const obj = flag(flag[11]);
+      const safetyHubData = flag(_undefined[11]).getSafetyHubData();
+      const obj = flag(_undefined[11]);
     }
   }, items);
-  const isFocused = arg1(dependencyMap[12]).useIsFocused();
+  const isFocused = classificationId(1457).useIsFocused();
   const items1 = [classificationId, flag, tmp, source];
-  const memo = React.useMemo(() => function getScreens(classificationId, flag, headerStyle, source) {
+  const memo = safetyHubInitialized.useMemo(() => (function getScreens(classificationId, flag, c3, source) {
+    let closure_0 = classificationId;
+    let closure_1 = flag;
+    let closure_2 = source;
     function closeModal() {
-      return arg1(closeModal[6]).pop();
+      return source(4337).pop();
     }
     let obj = {};
     obj = {
-      headerStyle: headerStyle.headerStyle,
+      headerStyle: c3.headerStyle,
       headerTitle() {
         return null;
       },
-      headerLeft: classificationId(closeModal[7]).getHeaderCloseButton(closeModal),
+      headerLeft: classificationId(table[7]).getHeaderCloseButton(closeModal),
       render() {
-        return callback(arg1(closeModal[8]), {
-          classificationId: arg0,
-          source: arg3,
+        return outer3_7(source(11025), {
+          classificationId: closure_0,
+          source: closure_2,
           onClose() {
-            callback2();
-            if (closure_1) {
-              let obj = callback(callback2[9]);
-              obj = { screen: constants.ACCOUNT };
-              obj = { initialTab: constants2.STANDING };
+            outer1_3();
+            if (outer1_1) {
+              let obj = classificationId(5796);
+              obj = { screen: outer4_5.ACCOUNT };
+              obj = { initialTab: outer4_6.STANDING };
               obj.params = obj;
               obj.openUserSettings(obj);
             }
           },
           onError() {
-            callback2();
-            let obj = callback(callback2[9]);
-            obj = { screen: constants.ACCOUNT, params: obj };
-            obj = { initialTab: constants2.STANDING };
+            outer1_3();
+            let obj = classificationId(5796);
+            obj = { screen: outer4_5.ACCOUNT, params: obj };
+            obj = { initialTab: outer4_6.STANDING };
             obj.openUserSettings(obj);
           }
         });
       }
     };
-    obj[constants.CLASSIFICATION_DETAIL] = obj;
+    obj[outer2_8.CLASSIFICATION_DETAIL] = obj;
     return obj;
-  }(classificationId, flag, tmp, source), items1);
+  })(classificationId, flag, c3, source), items1);
   obj = { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL };
-  const intl = arg1(dependencyMap[14]).intl;
-  obj.headerBackTitle = intl.string(arg1(dependencyMap[14]).t.13/7kX);
-  return jsx(arg1(dependencyMap[13]).Navigator, obj);
+  const intl = classificationId(1212).intl;
+  obj.headerBackTitle = intl.string(classificationId(1212).t["13/7kX"]);
+  return jsx(classificationId(5519).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL });
 };

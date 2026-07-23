@@ -1,18 +1,20 @@
-// Module ID: 13517
-// Function ID: 102557
+// Module ID: 13631
+// Function ID: 104713
 // Name: PasskeyUpsellFullModal
-// Dependencies: []
+// Dependencies: [31, 13624, 33, 13627, 11073, 2]
 // Exports: default
 
-// Module 13517 (PasskeyUpsellFullModal)
-importAll(dependencyMap[0]);
-const WebAuthnScreens = arg1(dependencyMap[1]).WebAuthnScreens;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/webauthn/native/PasskeyUpsellFullModal.tsx");
+// Module 13631 (PasskeyUpsellFullModal)
+import "result";
+import { WebAuthnScreens } from "WebAuthnScreens";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/webauthn/native/PasskeyUpsellFullModal.tsx");
 
 export default function PasskeyUpsellFullModal() {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(13627) /* getScreens */;
   const screens = obj.getScreens({ isModal: true });
   obj = { screens, initialRouteName: WebAuthnScreens.MODAL_UPSELL };
-  return jsx(arg1(dependencyMap[4]).Modal, obj);
+  return jsx(require(11073) /* Modal */.Modal, { screens, initialRouteName: WebAuthnScreens.MODAL_UPSELL });
 };

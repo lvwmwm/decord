@@ -1,12 +1,11 @@
-// Module ID: 4115
-// Function ID: 34083
+// Module ID: 4117
+// Function ID: 34092
 // Name: getFirstQueryStringValue
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getFirstQueryStringValue
 
-// Module 4115 (getFirstQueryStringValue)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/QueryStringUtils.tsx");
+// Module 4117 (getFirstQueryStringValue)
+const result = require("set").fileFinishedImporting("utils/QueryStringUtils.tsx");
 
 export const getFirstQueryStringValue = function getFirstQueryStringValue(arg0) {
   let first = arg0;

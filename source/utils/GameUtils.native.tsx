@@ -1,10 +1,10 @@
-// Module ID: 8591
-// Function ID: 68239
-// Dependencies: []
+// Module ID: 8598
+// Function ID: 68279
+// Name: set
+// Dependencies: [2]
 
-// Module 8591
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/GameUtils.native.tsx");
+// Module 8598 (set)
+const result = require("set").fileFinishedImporting("utils/GameUtils.native.tsx");
 
 export default {
   waitSubscribed() {

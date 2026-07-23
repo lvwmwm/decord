@@ -1,17 +1,19 @@
-// Module ID: 6833
-// Function ID: 53998
+// Module ID: 6838
+// Function ID: 54030
 // Name: isStable
-// Dependencies: []
+// Dependencies: [1554, 477, 2]
 
-// Module 6833 (isStable)
-const ReleaseChannel = importAll(dependencyMap[0]).getConstants().ReleaseChannel;
-const importAllResult = importAll(dependencyMap[0]);
-let isAndroidResult = arg1(dependencyMap[1]).isAndroid();
-if (isAndroidResult) {
-  isAndroidResult = -1 === ReleaseChannel.indexOf("canary");
+// Module 6838 (isStable)
+import set from "set";
+import set from "set";
+
+const ReleaseChannel = require("getConstants").getConstants().ReleaseChannel;
+set = set.isAndroid();
+if (set) {
+  set = -1 === ReleaseChannel.indexOf("canary");
 }
-if (isAndroidResult) {
-  isAndroidResult = -1 === ReleaseChannel.indexOf("beta");
+if (set) {
+  set = -1 === ReleaseChannel.indexOf("beta");
 }
 let tmp3 = "stable" === ReleaseChannel;
 let tmp4 = -1 !== ReleaseChannel.indexOf("debug");
@@ -21,12 +23,11 @@ if (!tmp4) {
 let tmp5 = !tmp4;
 if (!tmp4) {
   if (!tmp3) {
-    tmp3 = isAndroidResult;
+    tmp3 = set;
   }
   tmp5 = tmp3;
 }
-const obj2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("utils/ReleaseChannelUtils.native.tsx");
+const result = set.fileFinishedImporting("utils/ReleaseChannelUtils.native.tsx");
 
 export const isStable = tmp5;
 export const CurrentReleaseChannel = ReleaseChannel;

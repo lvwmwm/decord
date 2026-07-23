@@ -1,51 +1,52 @@
-// Module ID: 8501
-// Function ID: 67851
+// Module ID: 8507
+// Function ID: 67888
 // Name: useUserProfileGradientColors
-// Dependencies: []
+// Dependencies: [31, 4122, 566, 3842, 5486, 7893, 2]
 // Exports: useUserProfileGradientColors
 
-// Module 8501 (useUserProfileGradientColors)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileGradientColors.tsx");
+// Module 8507 (useUserProfileGradientColors)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("initialize").fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileGradientColors.tsx");
 
 export const useUserProfileGradientColors = function useUserProfileGradientColors(primaryColor, secondaryColor, fallbackBackground) {
-  secondaryColor = primaryColor;
+  const _require = primaryColor;
   const dependencyMap = secondaryColor;
   const React = fallbackBackground;
-  const items = [closure_3];
-  const stateFromStores = secondaryColor(dependencyMap[2]).useStateFromStores(items, () => overlay.syncProfileThemeWithUserTheme);
-  const obj = secondaryColor(dependencyMap[2]);
-  const obj2 = secondaryColor(dependencyMap[3]);
-  const profileThemeValues = secondaryColor(dependencyMap[4]).useProfileThemeValues(obj2.useThemeContext().theme);
+  const items = [overlay];
+  const stateFromStores = _require(566).useStateFromStores(items, () => overlay.syncProfileThemeWithUserTheme);
+  let obj = _require(566);
+  let obj2 = _require(3842);
+  const profileThemeValues = _require(5486).useProfileThemeValues(obj2.useThemeContext().theme);
   if (stateFromStores) {
     let prop;
     if (!tmp3) {
       prop = profileThemeValues.overlaySyncedWithUserTheme;
     }
-    let overlay = prop;
+    overlay = prop;
   } else if (!tmp3) {
     overlay = profileThemeValues.overlay;
   }
-  closure_3 = overlay;
   const items1 = [fallbackBackground, primaryColor, secondaryColor, overlay];
   return React.useMemo(() => {
     let result = null;
-    if (null != arg0) {
+    if (null != primaryColor) {
       result = null;
       if (null != overlay) {
-        result = arg0(arg1[5]).calculateOverlayedColor(arg0, overlay);
-        const obj = arg0(arg1[5]);
+        result = primaryColor(secondaryColor[5]).calculateOverlayedColor(primaryColor, overlay);
+        const obj = primaryColor(secondaryColor[5]);
       }
     }
     let result1 = null;
-    if (null != arg1) {
+    if (null != secondaryColor) {
       result1 = null;
       if (null != overlay) {
-        result1 = arg0(arg1[5]).calculateOverlayedColor(arg1, overlay);
-        const obj2 = arg0(arg1[5]);
+        result1 = primaryColor(secondaryColor[5]).calculateOverlayedColor(secondaryColor, overlay);
+        const obj2 = primaryColor(secondaryColor[5]);
       }
     }
-    return arg0(arg1[5]).getUserProfileGradientContainerColors(result, result1, arg2);
+    return primaryColor(secondaryColor[5]).getUserProfileGradientContainerColors(result, result1, result);
   }, items1);
 };

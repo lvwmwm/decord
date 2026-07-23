@@ -1,16 +1,18 @@
-// Module ID: 16219
-// Function ID: 125354
-// Name: experiment
-// Dependencies: []
+// Module ID: 16336
+// Function ID: 127527
+// Name: items
+// Dependencies: [4042, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled
 
-// Module 16219 (experiment)
-const _module = require(dependencyMap[0]);
-const obj = { displayNameStylesEnabled: true, submitButtonEnabled: true, config: { enabled: true } };
+// Module 16336 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2026-04_application_identity_linked_roles", label: "Application Identity Linked Roles", defaultConfig: { enabled: false } };
+obj = { id: 1, label: "Enable Application Identity Linked Roles", config: { enabled: true } };
 const items = [obj];
-const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/connections/experiments/ApplicationIdentityLinkedRolesExperiment.tsx");
+obj.treatments = items;
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/connections/experiments/ApplicationIdentityLinkedRolesExperiment.tsx");
 
 export const ApplicationIdentityLinkedRolesExperiment = experiment;
 export const useApplicationIdentityLinkedRolesEnabled = function useApplicationIdentityLinkedRolesEnabled(guildId, location) {

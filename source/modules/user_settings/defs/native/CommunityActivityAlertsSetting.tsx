@@ -1,34 +1,36 @@
-// Module ID: 14237
-// Function ID: 107602
+// Module ID: 14351
+// Function ID: 109758
 // Name: route
-// Dependencies: []
+// Dependencies: [10219, 7662, 653, 566, 1212, 10095, 14352, 2]
 
-// Module 14237 (route)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[5]);
-obj = {
+// Module 14351 (route)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.string(arg1(dependencyMap[4]).t.D9yVAH);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.D9yVAH);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.NOTIFICATIONS,
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useDescription: function useCommunityActivityAlertsSettingDescription() {
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.string(arg1(dependencyMap[4]).t.0PhAOH);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["0PhAOH"]);
   },
   usePredicate: function useHasCommunityActivityAlertsSetting() {
-    const items = [closure_2];
-    return arg1(dependencyMap[3]).useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => Object.keys(outer1_2.getGuildAlertSettings()).length > 0);
   },
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[2]).UserSettingsSections.COMMUNITY_ALERTS,
+createToggle = {
+  route: require("ME").UserSettingsSections.COMMUNITY_ALERTS,
   getComponent() {
-    return arg1(dependencyMap[6]).default;
+    return require(14352) /* UserSettingsCommunityNotifications */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/CommunityActivityAlertsSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/CommunityActivityAlertsSetting.tsx");
 
-export default route;
+export default createToggle;

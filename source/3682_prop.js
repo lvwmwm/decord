@@ -1,5 +1,5 @@
 // Module ID: 3682
-// Function ID: 28054
+// Function ID: 28057
 // Name: prop
 // Dependencies: []
 
@@ -10,14 +10,14 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { accessibilityHint: 1, legacyCompat_selected: "flex", legacyCompat_onPress: "center", eventTarget: -352059390 }, narrow: {}, short: { accessibilityHint: 1, legacyCompat_selected: "flex", legacyCompat_onPress: "center", eventTarget: -352059390 } };
+    obj = { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } };
     obj.conjunction = obj;
-    const obj1 = { long: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true }, narrow: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true }, short: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true } };
+    const obj1 = { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" }, short: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" } };
     obj.disjunction = obj1;
-    const obj2 = { long: {}, narrow: {}, short: {} };
+    const obj2 = { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } };
     obj.unit = obj2;
     obj.data = obj;
-    obj.locale = "el";
+    obj.locale = "da";
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { accessibilityHint: 1, legacyCompat_selected: "flex", legacyCompat_onPress: "center", eventTarget: -352059390 }, narrow: {}, short: { accessibilityHint: 1, legacyCompat_selected: "flex", legacyCompat_onPress: "center", eventTarget: -352059390 } }, disjunction: { long: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true }, narrow: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true }, short: { accessibilityHint: true, legacyCompat_selected: true, legacyCompat_onPress: true, eventTarget: true } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "el" });
+prop.push({ data: { conjunction: { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" }, short: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } } }, locale: "da" });

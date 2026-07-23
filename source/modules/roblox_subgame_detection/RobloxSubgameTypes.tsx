@@ -1,10 +1,10 @@
-// Module ID: 4298
-// Function ID: 37645
+// Module ID: 4302
+// Function ID: 37677
 // Name: ROBLOX_PROTOCOL_URL
-// Dependencies: []
+// Dependencies: [2]
 // Exports: ROBLOX_DEFERRED_WEB_URL
 
-// Module 4298 (ROBLOX_PROTOCOL_URL)
+// Module 4302 (ROBLOX_PROTOCOL_URL)
 class ROBLOX_PROTOCOL_URL {
   constructor(arg0) {
     return "roblox://placeId=" + global;
@@ -15,14 +15,13 @@ class ROBLOX_WEB_URL {
     return "https://www.roblox.com/games/start?placeId=" + global;
   }
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/roblox_subgame_detection/RobloxSubgameTypes.tsx");
+const result = require("set").fileFinishedImporting("modules/roblox_subgame_detection/RobloxSubgameTypes.tsx");
 
 export const ROBLOX_APPLICATION_ID = "363445589247131668";
 export const ROBLOX_GAME_ID = "363445589247131668";
-export const RobloxMetadataKeys = {};
-export const NativeRobloxSubgameKeys = {};
+export const RobloxMetadataKeys = { PLACE_ID: "placeId", ROBLOX_TIME_STARTED: "timeStarted" };
+export const NativeRobloxSubgameKeys = { UNIVERSE_ID: "universeid", PLACE_ID: "placeid" };
 export const ROBLOX_URL_SCHEME = "roblox";
 export { ROBLOX_PROTOCOL_URL };
 export { ROBLOX_WEB_URL };
-export const ROBLOX_DEFERRED_WEB_URL = (closure_0) => "https://ro.blox.com/Ebh5?af_dp=" + encodeURIComponent(ROBLOX_PROTOCOL_URL(closure_0)) + "&af_web_dp=" + encodeURIComponent(ROBLOX_WEB_URL(closure_0));
+export const ROBLOX_DEFERRED_WEB_URL = (outer1_0) => "https://ro.blox.com/Ebh5?af_dp=" + encodeURIComponent(ROBLOX_PROTOCOL_URL(outer1_0)) + "&af_web_dp=" + encodeURIComponent(ROBLOX_WEB_URL(outer1_0));

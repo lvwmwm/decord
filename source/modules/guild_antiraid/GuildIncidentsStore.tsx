@@ -1,9 +1,20 @@
-// Module ID: 10207
-// Function ID: 78831
+// Module ID: 10219
+// Function ID: 78903
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4044, 1316, 1838, 3758, 7702, 566, 686, 2]
 
-// Module 10207 (_isNativeReflectConstruct)
+// Module 10219 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +24,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -94,7 +105,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function computeAlertSettings() {
   let done;
-  let guildsProto = guildsProto.getGuildsProto();
+  guildsProto = guildsProto.getGuildsProto();
   if (null == guildsProto) {
     guildsProto = {};
   }
@@ -128,30 +139,21 @@ function incidentsDataFromServer(incidents_data) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
 let closure_11 = {};
 let closure_12 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class GuildIncidentsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GuildIncidentsStore);
-      obj = closure_5(GuildIncidentsStore);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, GuildIncidentsStore);
+      obj = outer1_5(GuildIncidentsStore);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -160,41 +162,40 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildIncidentsStore;
   callback2(GuildIncidentsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_9, closure_10, closure_7);
-      const items = [closure_8, closure_9, closure_10, closure_7];
-      this.syncWith(items, closure_16);
+      this.waitFor(outer1_8, outer1_9, outer1_10, outer1_7);
+      const items = [outer1_8, outer1_9, outer1_10, outer1_7];
+      this.syncWith(items, outer1_16);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getGuildIncident",
     value(arg0) {
-      return closure_11[arg0];
+      return outer1_11[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getIncidentsByGuild",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getGuildAlertSettings",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   return callback(GuildIncidentsStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GuildIncidentsStore";
-tmp2 = new tmp2(importDefault(dependencyMap[11]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     let iter2;
     let closure_11 = {};
@@ -205,21 +206,21 @@ tmp2 = new tmp2(importDefault(dependencyMap[11]), {
         let value = iter.value;
         let properties = value.properties;
         let incidents_data;
-        let tmp2 = closure_17;
+        let tmp2 = incidentsDataFromServer;
         if (null != properties) {
           incidents_data = properties.incidents_data;
         }
         let tmp2Result = tmp2(incidents_data);
         let tmp5 = null != tmp2Result;
         if (tmp5) {
-          let tmp6 = closure_0;
-          let tmp7 = closure_1;
-          let obj = closure_0(closure_1[9]);
+          let tmp6 = require;
+          let tmp7 = dependencyMap;
+          let obj = require(7702) /* hasDetectedRaid */;
           let hasDetectedActivityResult = obj.hasDetectedActivity(tmp2Result);
           if (!hasDetectedActivityResult) {
-            let tmp9 = closure_0;
-            let tmp10 = closure_1;
-            let obj2 = closure_0(closure_1[9]);
+            let tmp9 = require;
+            let tmp10 = dependencyMap;
+            let obj2 = require(7702) /* hasDetectedRaid */;
             hasDetectedActivityResult = obj2.isUnderLockdown(tmp2Result);
           }
           tmp5 = hasDetectedActivityResult;
@@ -243,13 +244,13 @@ tmp2 = new tmp2(importDefault(dependencyMap[11]), {
     const tmpResult = incidentsDataFromServer(incidents_data);
     let tmp4 = null != tmpResult;
     if (tmp4) {
-      let hasDetectedActivityResult = arg1(dependencyMap[9]).hasDetectedActivity(tmpResult);
+      let hasDetectedActivityResult = require(7702) /* hasDetectedRaid */.hasDetectedActivity(tmpResult);
       if (!hasDetectedActivityResult) {
-        hasDetectedActivityResult = arg1(dependencyMap[9]).isUnderLockdown(tmpResult);
-        const obj2 = arg1(dependencyMap[9]);
+        hasDetectedActivityResult = require(7702) /* hasDetectedRaid */.isUnderLockdown(tmpResult);
+        const obj2 = require(7702) /* hasDetectedRaid */;
       }
       tmp4 = hasDetectedActivityResult;
-      const obj = arg1(dependencyMap[9]);
+      const obj = require(7702) /* hasDetectedRaid */;
     }
     if (tmp4) {
       closure_11[guild.id] = tmpResult;
@@ -257,25 +258,25 @@ tmp2 = new tmp2(importDefault(dependencyMap[11]), {
   },
   GUILD_UPDATE: function handleGuildUpdate(guild) {
     guild = guild.guild;
-    const tmp = incidentsDataFromServer(guild.incidents_data);
-    if (null == tmp) {
+    const tmp3 = incidentsDataFromServer(guild.incidents_data);
+    if (null == tmp3) {
       const id = guild.id;
-      delete r5[r4];
+      delete tmp2[tmp];
     } else {
-      if (!obj.hasDetectedActivity(tmp)) {
-        const obj2 = arg1(dependencyMap[9]);
+      if (!obj.hasDetectedActivity(tmp3)) {
+        const obj2 = require(7702) /* hasDetectedRaid */;
       }
-      closure_11[guild.id] = tmp;
-      const obj = arg1(dependencyMap[9]);
+      closure_11[guild.id] = tmp3;
+      obj = require(7702) /* hasDetectedRaid */;
     }
   },
   GUILD_DELETE: function handleGuildDelete(arg0) {
-    delete r1[r0];
+    delete tmp2[tmp];
   },
   LOGOUT: function handleLogout() {
     let closure_11 = {};
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_antiraid/GuildIncidentsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_antiraid/GuildIncidentsStore.tsx");
 
 export default tmp2;

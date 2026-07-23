@@ -1,29 +1,29 @@
-// Module ID: 15106
-// Function ID: 113875
+// Module ID: 15221
+// Function ID: 116044
 // Name: getIconForChannel
-// Dependencies: []
+// Dependencies: [653, 4651, 4658, 4654, 4638, 4645, 4644, 2]
 // Exports: getIconForChannel
 
-// Module 15106 (getIconForChannel)
-const ChannelTypes = require(dependencyMap[0]).ChannelTypes;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");
+// Module 15221 (getIconForChannel)
+import { ChannelTypes } from "ME";
+
+const result = require("VoiceNormalIcon").fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");
 
 export const getIconForChannel = function getIconForChannel(stateFromStores) {
   const type = stateFromStores.type;
   if (ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return require(dependencyMap[1]).AnnouncementsIcon;
+    return require(4651) /* AnnouncementsIcon */.AnnouncementsIcon;
   } else if (ChannelTypes.GUILD_VOICE === type) {
-    return require(dependencyMap[2]).VoiceNormalIcon;
+    return require(4658) /* VoiceNormalIcon */.VoiceNormalIcon;
   } else if (ChannelTypes.GUILD_STAGE_VOICE === type) {
-    return require(dependencyMap[3]).StageIcon;
+    return require(4654) /* StageIcon */.StageIcon;
   } else if (ChannelTypes.GUILD_TEXT === type) {
-    return require(dependencyMap[4]).TextIcon;
+    return require(4638) /* TextIcon */.TextIcon;
   } else if (ChannelTypes.GUILD_FORUM === type) {
-    return require(dependencyMap[5]).ForumIcon;
+    return require(4645) /* ForumIcon */.ForumIcon;
   } else if (ChannelTypes.GUILD_MEDIA === type) {
-    return require(dependencyMap[6]).ImageIcon;
+    return require(4644) /* ImageIcon */.ImageIcon;
   } else {
-    return require(dependencyMap[4]).TextIcon;
+    return require(4638) /* TextIcon */.TextIcon;
   }
 };

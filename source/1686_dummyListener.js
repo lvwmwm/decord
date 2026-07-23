@@ -1,41 +1,43 @@
 // Module ID: 1686
-// Function ID: 18664
+// Function ID: 18665
 // Name: dummyListener
-// Dependencies: []
+// Dependencies: [6, 7, 1679, 1654, 1678, 1687, 1631, 1585]
 
 // Module 1686 (dummyListener)
+import isSharedValue from "isSharedValue";
+import isJest from "isJest";
+
+const require = arg1;
 function dummyListener() {
 
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
 
-export const PropsFilter = () => {
+export const PropsFilter = (() => {
   class PropsFilter {
     constructor() {
-      tmp = closure_2(this, PropsFilter);
+      tmp = outer1_2(this, PropsFilter);
       map = new Map();
       this._initialPropsMap = map;
       return;
     }
   }
-  const arg1 = PropsFilter;
   const items = [
     {
       key: "filterNonAnimatedProps",
       value: function filterNonAnimatedProps(props) {
-        const PropsFilter = props;
+        let closure_0 = props;
         const self = this;
         props = props.props;
-        const obj = {};
+        let obj = {};
         for (const key10008 in props) {
           let tmp2 = key10008;
-          closure_4 = key10008;
+          let closure_4 = key10008;
           let tmpResult = tmp();
+          continue;
         }
         return obj;
       }
     }
   ];
   return callback(PropsFilter, items);
-}();
+})();

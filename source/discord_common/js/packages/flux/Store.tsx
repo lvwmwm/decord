@@ -1,23 +1,25 @@
 // Module ID: 568
 // Function ID: 6873
 // Name: Store
-// Dependencies: []
+// Dependencies: [6, 7, 569, 570, 20, 44, 2]
 
 // Module 568 (Store)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
+import set from "set";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
 let closure_6 = [];
-let closure_7 = false;
-const tmp3 = () => {
+let c7 = false;
+const tmp3 = (() => {
   class Store {
     constructor(arg0, arg1, arg2) {
       obj = arg1;
       self = this;
-      Store = this;
-      tmp = closure_4(this, Store);
-      changeListeners = new Store(closure_2[2]).ChangeListeners();
+      self = this;
+      tmp = outer1_4(this, self);
+      changeListeners = new Store(outer1_2[2]).ChangeListeners();
       this._changeCallbacks = changeListeners;
-      changeListeners1 = new Store(closure_2[2]).ChangeListeners();
+      changeListeners1 = new Store(outer1_2[2]).ChangeListeners();
       this._reactChangeCallbacks = changeListeners1;
       this._syncWiths = [];
       this._isInitialized = false;
@@ -31,9 +33,9 @@ const tmp3 = () => {
           hasAnyResult = self._syncWiths.length > 0;
         }
         if (hasAnyResult) {
-          callback(closure_2[3]).markChanged(self);
-          const obj = callback(closure_2[3]);
-          let isPaused = callback(closure_2[3]).getIsPaused();
+          outer2_1(outer2_2[3]).markChanged(self);
+          const obj = outer2_1(outer2_2[3]);
+          let isPaused = outer2_1(outer2_2[3]).getIsPaused();
           if (isPaused) {
             isPaused = null != self._mustEmitChanges;
           }
@@ -41,10 +43,10 @@ const tmp3 = () => {
             isPaused = self._mustEmitChanges(arg0);
           }
           if (isPaused) {
-            callback(closure_2[3]).resume(false);
-            const obj3 = callback(closure_2[3]);
+            outer2_1(outer2_2[3]).resume(false);
+            const obj3 = outer2_1(outer2_2[3]);
           }
-          const obj2 = callback(closure_2[3]);
+          const obj2 = outer2_1(outer2_2[3]);
         }
       };
       this.addChangeListener = this._changeCallbacks.add;
@@ -60,14 +62,13 @@ const tmp3 = () => {
         obj = {};
       }
       result = this.registerActionHandlers(obj, arg2);
-      arr = closure_6.push(self);
-      if (closure_7) {
+      arr = outer1_6.push(self);
+      if (outer1_7) {
         initializeIfNeededResult = self.initializeIfNeeded();
       }
       return;
     }
   }
-  const arg1 = Store;
   let obj = {
     key: "registerActionHandlers",
     value(arg0, arg1) {
@@ -75,7 +76,7 @@ const tmp3 = () => {
       _dispatcher.register(this.getName(), arg0, this.doEmitChanges, arg1, this._dispatchToken);
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "getName",
     value() {
@@ -99,8 +100,8 @@ const tmp3 = () => {
         const _Date2 = Date;
         const diff = Date.now() - timestamp;
         if (diff > 5) {
-          callback(closure_2[4]).mark("\u{1F9A5}", `${self.getName()}.initialize()`, diff);
-          const obj = callback(closure_2[4]);
+          outer1_1(outer1_2[4]).mark("\u{1F9A5}", `${self.getName()}.initialize()`, diff);
+          const obj = outer1_1(outer1_2[4]);
         }
       }
     }
@@ -115,18 +116,19 @@ const tmp3 = () => {
   items[4] = {
     key: "syncWith",
     value(arr) {
-      const Store = this;
+      const self = this;
+      let closure_1 = arg1;
       const items = [...arr];
       this.waitFor.apply(items);
       if (null != arg2) {
-        let closure_2 = 0;
+        let c2 = 0;
         function wrapper() {
           if (changeSentinel !== obj.getChangeSentinel()) {
-            const changeSentinel = arg1(changeSentinel[3]).getChangeSentinel();
-            if (false !== arg1()) {
+            changeSentinel = outer2_1(outer2_2[3]).getChangeSentinel();
+            if (false !== callback()) {
               self.emitChange();
             }
-            const obj2 = arg1(changeSentinel[3]);
+            const obj2 = outer2_1(outer2_2[3]);
           }
         }
         let closure_3 = wrapper;
@@ -134,27 +136,28 @@ const tmp3 = () => {
         if (null != arg2) {
           num = arg2;
         }
-        closure_3 = function debounce(arg0, wrapper) {
-          const self = arg0;
-          let closure_2 = null;
-          return 0 === arg0 ? () => {
+        closure_3 = (function debounce(arg0, wrapper) {
+          let closure_0 = arg0;
+          let closure_1 = wrapper;
+          let c2 = null;
+          return 0 === arg0 ? (() => {
             clearImmediate(immediate);
-            const immediate = setImmediate(arg1);
-          } : () => {
+            immediate = setImmediate(closure_1);
+          }) : (() => {
             if (null == timeout) {
               const _setTimeout = setTimeout;
-              const timeout = setTimeout(() => {
-                callback();
+              timeout = setTimeout(() => {
+                outer1_1();
                 let closure_2 = null;
-              }, arg0);
+              }, closure_0);
             }
-          };
-        }(num, wrapper);
+          });
+        })(num, wrapper);
         const item = arr.forEach((addChangeListener) => addChangeListener.addChangeListener(closure_3));
       } else {
         const item1 = arr.forEach((_syncWiths) => {
           _syncWiths = _syncWiths._syncWiths;
-          _syncWiths.push({ func: arg1, store: self });
+          _syncWiths.push({ func: closure_1, store: self });
         });
       }
     }
@@ -162,26 +165,26 @@ const tmp3 = () => {
   items[5] = {
     key: "waitFor",
     value(arg0) {
-      const Store = this;
+      const self = this;
       const items = [...arguments];
       const mapped = items.map((_dispatcher) => {
         let dispatchToken = null;
-        callback(closure_2[5])(null != _dispatcher, "Store.waitFor(...) called with null Store at index " + arg1 + " for store " + self.getName());
+        outer2_1(outer2_2[5])(null != _dispatcher, "Store.waitFor(...) called with null Store at index " + arg1 + " for store " + self.getName());
         if (null != _dispatcher._dispatcher) {
-          callback(closure_2[5])(_dispatcher._dispatcher === self._dispatcher, "Stores belong to two separate dispatchers.");
+          outer2_1(outer2_2[5])(_dispatcher._dispatcher === self._dispatcher, "Stores belong to two separate dispatchers.");
           dispatchToken = _dispatcher.getDispatchToken();
         }
         return dispatchToken;
       });
       const _dispatcher = this._dispatcher;
-      const dispatchToken = this.getDispatchToken();
+      let dispatchToken = this.getDispatchToken();
       _dispatcher.addDependencies(dispatchToken, mapped.filter((arg0) => null != arg0));
     }
   };
   items[6] = {
     key: "emitChange",
     value() {
-      callback(closure_2[3]).markChanged(this);
+      outer1_1(outer1_2[3]).markChanged(this);
     }
   };
   items[7] = {
@@ -206,51 +209,51 @@ const tmp3 = () => {
     {
       key: "initialize",
       value() {
-        let closure_7 = true;
-        const item = arr.forEach((initializeIfNeeded) => initializeIfNeeded.initializeIfNeeded());
-        if (null != callback2) {
-          callback2();
+        const outer1_7 = true;
+        const item = outer1_6.forEach((initializeIfNeeded) => initializeIfNeeded.initializeIfNeeded());
+        if (null != outer1_3) {
+          outer1_3();
         }
       }
     },
     {
       key: "destroy",
       value() {
-        closure_6.length = 0;
-        callback(closure_2[3]).destroy();
+        outer1_6.length = 0;
+        outer1_1(outer1_2[3]).destroy();
       }
     },
     {
       key: "getAll",
       value() {
-        return closure_6;
+        return outer1_6;
       }
     },
     {
       key: "removeAllConditionalListeners",
       value() {
-        const item = arr.forEach((_changeCallbacks) => {
+        const item = outer1_6.forEach((_changeCallbacks) => {
           _changeCallbacks._changeCallbacks.removeAllConditional();
         });
       }
     }
   ];
   return callback(Store, items, items1);
-}();
+})();
 tmp3.initialized = new Promise((arg0) => {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   function t() {
-    arg0();
-    let closure_3 = null;
+    callback();
+    const t = null;
   }
 });
 const promise = new Promise((arg0) => {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   function t() {
-    arg0();
-    let closure_3 = null;
+    callback();
+    const t = null;
   }
 });
-const result = arg1(dependencyMap[6]).fileFinishedImporting("../discord_common/js/packages/flux/Store.tsx");
+let result = require("ChangeListeners").fileFinishedImporting("../discord_common/js/packages/flux/Store.tsx");
 
 export const Store = tmp3;

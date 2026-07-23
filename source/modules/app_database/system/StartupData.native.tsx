@@ -1,17 +1,17 @@
 // Module ID: 1899
-// Function ID: 21338
+// Function ID: 21339
 // Name: getUserId
-// Dependencies: []
+// Dependencies: [27, 477, 1900, 2]
 // Exports: getUserId, setUserId
 
 // Module 1899 (getUserId)
-const NativeModules = require(dependencyMap[0]).NativeModules;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");
+import { NativeModules } from "get ActivityIndicator";
+
+const result = require("enforcing").fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");
 
 export const getUserId = function getUserId() {
   if (obj.isAndroid()) {
-    const userId2 = importDefault(dependencyMap[2]).getConstants().userId;
+    const userId2 = importDefault(1900).getConstants().userId;
     let tmp5 = null;
     if (null != userId2) {
       tmp5 = userId2;
@@ -25,12 +25,12 @@ export const getUserId = function getUserId() {
     }
     return tmp2;
   }
-  const obj = require(dependencyMap[1]);
+  obj = require(477) /* set */;
 };
 export const setUserId = function setUserId(id) {
   if (obj.isAndroid()) {
-    importDefault(dependencyMap[2]).setUserId(id);
-    const obj2 = importDefault(dependencyMap[2]);
+    importDefault(1900).setUserId(id);
+    const obj2 = importDefault(1900);
   } else {
     const DCDAppDatabase = NativeModules.DCDAppDatabase;
     DCDAppDatabase.setUserId(id);

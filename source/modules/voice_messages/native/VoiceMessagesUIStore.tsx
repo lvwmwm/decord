@@ -1,18 +1,21 @@
-// Module ID: 11093
-// Function ID: 86303
+// Module ID: 11103
+// Function ID: 86353
 // Name: VoiceMessageRecordingStatus
-// Dependencies: []
+// Dependencies: [11104, 621, 3991, 682, 4542, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11093 (VoiceMessageRecordingStatus)
-const _module = require(dependencyMap[0]);
-({ VoiceMessageAnimationState: closure_2, WAVEFORM_WAVE_MAX_VALUE: closure_3 } = _module);
-const _module1 = require(dependencyMap[1]);
-const obj = _module1.create(() => {
-  const obj = { "Bool(false)": -1, "Bool(false)": -1882570463, "Bool(false)": 1360068610, "Bool(false)": 1361143520, "Bool(false)": 1340580 };
+// Module 11103 (VoiceMessageRecordingStatus)
+import VoiceMessageAnimationState from "VoiceMessageAnimationState";
+import keys from "keys";
+
+let closure_2;
+let closure_3;
+({ VoiceMessageAnimationState: closure_2, WAVEFORM_WAVE_MAX_VALUE: closure_3 } = VoiceMessageAnimationState);
+let obj = keys.create(() => {
+  const obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: null, showRecordingOverlay: false };
   const items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = closure_2);
-  obj.voiceMessageAnimationState = require(dependencyMap[2]).makeMutable(items);
+  obj.voiceMessageAnimationState = require(3991).makeMutable(items);
   obj.currWaveHeight = undefined;
   obj.startTimeMillis = undefined;
   obj.waveform = [];
@@ -23,94 +26,92 @@ const obj = _module1.create(() => {
   obj.isUsingHoldGesture = false;
   return obj;
 });
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/voice_messages/native/VoiceMessagesUIStore.tsx");
+let result = require("module_3991").fileFinishedImporting("modules/voice_messages/native/VoiceMessagesUIStore.tsx");
 
 export const VoiceMessageRecordingStatus = { REQUESTED: 0, [0]: "REQUESTED", STARTED: 1, [1]: "STARTED" };
 export const useVoiceMessagesUIStore = obj;
 export const setShowRecordingOverlay = function setShowRecordingOverlay(arg0) {
-  const require = arg0;
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ showRecordingOverlay: arg0 });
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    outer1_4.setState({ showRecordingOverlay: closure_0 });
   });
 };
 export const setVoiceMessageRecordingState = function setVoiceMessageRecordingState(arg0) {
-  const require = arg0;
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ recordingStatus: arg0 });
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    outer1_4.setState({ recordingStatus: closure_0 });
   });
 };
 export const setVoiceMessageRecordingId = function setVoiceMessageRecordingId(arg0) {
-  const require = arg0;
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ recordingId: arg0 });
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    outer1_4.setState({ recordingId: closure_0 });
   });
 };
 export const setVoiceMessageStartTimeMillis = function setVoiceMessageStartTimeMillis(arg0) {
-  const require = arg0;
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ startTimeMillis: arg0 });
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    outer1_4.setState({ startTimeMillis: closure_0 });
   });
 };
 export const setVoiceMessageAnimationState = function setVoiceMessageAnimationState(arg0) {
-  const require = arg0;
-  require(dependencyMap[3]).batchUpdates(() => {
-    const merged = Object.assign(arg0);
-    state.setState({});
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    const merged = Object.assign(closure_0);
+    outer1_4.setState({});
   });
 };
 export const addVoiceMessageWave = function addVoiceMessageWave(arg0) {
   const waveform = obj.getState().waveform;
   const waveformVersion = obj.getState().waveformVersion;
-  const require = waveformVersion;
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    const obj = require(dependencyMap[4]);
+    obj = waveformVersion(4542);
     const result = currWaveHeight.set(obj.withSpring(arg0 / closure_3));
   }
   const items = [arg0, waveformVersion];
   waveform.push(items);
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ waveformVersion: waveformVersion + 1 });
+  waveformVersion(682).batchUpdates(() => {
+    outer1_4.setState({ waveformVersion: waveformVersion + 1 });
   });
 };
 export const showVoiceMessagesTooltip = function showVoiceMessagesTooltip() {
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ showVoiceMessagesTooltip: true });
+  require(682) /* batchUpdates */.batchUpdates(() => {
+    outer1_4.setState({ showVoiceMessagesTooltip: true });
   });
 };
 export const hideVoiceMessagesTooltip = function hideVoiceMessagesTooltip() {
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ showVoiceMessagesTooltip: false });
+  require(682) /* batchUpdates */.batchUpdates(() => {
+    outer1_4.setState({ showVoiceMessagesTooltip: false });
   });
 };
 export const resetVoiceMessageState = function resetVoiceMessageState() {
-  const obj = require(dependencyMap[3]);
+  let obj = require(682) /* batchUpdates */;
   obj.batchUpdates(() => {
-    const obj = { "Null": "_desired", "Null": "hash", "Null": "constructor", waveform: [], startTimeMillis: undefined, savedVoiceMessageUploadData: undefined };
-    state.setState(obj);
+    const obj = { waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: undefined, savedVoiceMessageUploadData: undefined };
+    outer1_4.setState(obj);
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    const result = currWaveHeight.set(require(dependencyMap[4]).withSpring(0));
-    const obj2 = require(dependencyMap[4]);
+    const result = currWaveHeight.set(require(4542) /* withSpring */.withSpring(0));
+    const obj2 = require(4542) /* withSpring */;
   }
 };
 export const setSavedVoiceMessageUploadData = function setSavedVoiceMessageUploadData(arg0) {
-  const require = arg0;
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ savedVoiceMessageUploadData: arg0 });
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    outer1_4.setState({ savedVoiceMessageUploadData: closure_0 });
   });
 };
 export const setIsVoiceMessageButtonMounted = function setIsVoiceMessageButtonMounted(arg0) {
-  const require = arg0;
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ isVoiceMessageButtonMounted: arg0 });
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    outer1_4.setState({ isVoiceMessageButtonMounted: closure_0 });
   });
 };
 export const setIsUsingHoldGesture = function setIsUsingHoldGesture(arg0) {
-  const require = arg0;
-  require(dependencyMap[3]).batchUpdates(() => {
-    state.setState({ isUsingHoldGesture: arg0 });
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    outer1_4.setState({ isUsingHoldGesture: closure_0 });
   });
 };

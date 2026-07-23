@@ -1,37 +1,43 @@
-// Module ID: 13475
-// Function ID: 102275
+// Module ID: 13589
+// Function ID: 104431
 // Name: FormControlText
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 7505, 4660, 1212, 5171, 477, 5505, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormSwitch
 
-// Module 13475 (FormControlText)
-function FormControlText(children) {
-  const tmp = callback4();
-  return callback2(arg1(dependencyMap[6]).Text, { style: callback4().formControlText, children: children.text });
+// Module 13589 (FormControlText)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let require = arg1;
+function FormControlText(text) {
+  const obj = { variant: "text-sm/medium", color: "text-default", style: _createForOfIteratorHelperLoose().formControlText, children: text.text };
+  return callback2(require(4126) /* Text */.Text, obj);
 }
 function FormControlSubtext(text) {
   text = text.text;
   let tmp2 = null;
   if (null != text) {
-    const obj = { cachedAt: "center", edpbxy: "center", style: tmp.formControlText, children: text };
-    tmp2 = callback2(arg1(dependencyMap[6]).Text, obj);
+    const obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.formControlText, children: text };
+    tmp2 = callback2(require(4126) /* Text */.Text, obj);
   }
   return tmp2;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, borderRadius: importDefault(dependencyMap[5]).radii.md };
-obj.button = obj;
-obj.buttonTextContainer = { nestedScrollEnabled: "<string:1456144386>", scrollEventThrottle: "<string:3762421761>", borderStyle: "<string:2499805807>" };
-obj.formControlText = {};
-let closure_8 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
+({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+_createForOfIteratorHelperLoose.button = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.buttonTextContainer = { flexGrow: 1, flexShrink: 1, flexDirection: "column" };
+_createForOfIteratorHelperLoose.formControlText = { marginRight: "auto", flexShrink: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
 
 export const UserProfileEditFormButton = function UserProfileEditFormButton(loading) {
   let accessibilityValue;
@@ -56,11 +62,11 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp = callback4();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { label, labelTrailing };
   obj = { onPress, style: tmp.button, accessibilityRole: "button", accessibilityLabel: label, accessibilityValue };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.accessibilityHint = intl.string(arg1(dependencyMap[9]).t.4lAcxv);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityHint = intl.string(require(1212) /* getSystemLocale */.t["4lAcxv"]);
   obj = { disabled, busy: flag };
   obj.accessibilityState = obj;
   obj.disabled = disabled;
@@ -72,23 +78,24 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   items[2] = trailing;
   let tmp4 = !flag2;
   if (tmp4) {
-    tmp4 = callback2(arg1(dependencyMap[10]).TableRowArrow, {});
+    tmp4 = callback2(require(5171) /* TableRowArrow */.TableRowArrow, {});
   }
   items[3] = tmp4;
   obj.children = items;
-  obj.children = callback3(arg1(dependencyMap[8]).PressableHighlight, obj);
-  return callback2(arg1(dependencyMap[7]).Input, obj);
+  obj.children = callback3(require(4660) /* PressableBase */.PressableHighlight, obj);
+  return callback2(require(7505) /* Input */.Input, obj);
 };
 export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0) {
   let accessibilityHint;
   let accessibilityLabel;
+  let dependencyMap;
   let disabled;
   let label;
   let subLabel;
   let value;
   ({ subLabel, value } = arg0);
-  const arg1 = value;
-  ({ onValueChange: closure_1, accessibilityLabel, disabled } = arg0);
+  const require = value;
+  ({ onValueChange: dependencyMap, accessibilityLabel, disabled } = arg0);
   ({ label, accessibilityHint } = arg0);
   if (disabled === undefined) {
     disabled = false;
@@ -97,20 +104,20 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   function handleOnPress() {
     let tmp;
     if (null != callback) {
-      tmp = callback(!value);
+      tmp = callback(!closure_0);
     }
     return tmp;
   }
-  let obj = arg1(dependencyMap[11]);
+  let obj = require(477) /* set */;
   const isAndroidResult = obj.isAndroid();
   const tmp3 = callback(React.useState(value), 2);
   callback = tmp3[1];
   const items = [value];
   const effect = React.useEffect(() => {
-    callback2(value);
+    callback2(closure_0);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = arg1(dependencyMap[8]).PressableHighlight;
+    let PressableHighlight = require(4660) /* PressableBase */.PressableHighlight;
   } else {
     PressableHighlight = closure_4;
   }
@@ -122,14 +129,14 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   }
   obj.onPress = tmp9;
   obj.onAccessibilityTap = function onAccessibilityTap() {
-    callback2(!value);
+    callback2(!closure_0);
     const timerId = setTimeout(() => {
-      if (null != callback) {
-        callback(!closure_0);
+      if (null != outer1_1) {
+        outer1_1(!outer1_0);
       }
     });
   };
-  obj.style = callback4().button;
+  obj.style = _createForOfIteratorHelperLoose().button;
   obj.accessibilityRole = "switch";
   let tmp10 = subLabel;
   if (null != accessibilityLabel) {
@@ -141,9 +148,9 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   obj.accessibilityState = obj1;
   obj.disabled = disabled;
   const items1 = [callback2(FormControlText, { text: subLabel }), ];
-  const obj2 = { aria-hidden: true, value, onValueChange: handleOnPress, disabled };
-  items1[1] = callback2(arg1(dependencyMap[12]).FormSwitch, obj2);
+  const obj2 = { "aria-hidden": true, value, onValueChange: handleOnPress, disabled };
+  items1[1] = callback2(require(5505) /* FormSwitch */.FormSwitch, obj2);
   obj.children = items1;
   obj.children = closure_7(PressableHighlight, obj);
-  return callback2(arg1(dependencyMap[7]).Input, obj);
+  return callback2(require(7505) /* Input */.Input, obj);
 };

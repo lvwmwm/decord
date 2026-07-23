@@ -1,18 +1,18 @@
-// Module ID: 13980
-// Function ID: 106239
+// Module ID: 14094
+// Function ID: 108395
 // Name: MAX_SUBSCRIPTION_TIERS
-// Dependencies: []
+// Dependencies: [1851, 482, 2]
 
-// Module 13980 (MAX_SUBSCRIPTION_TIERS)
-const SubscriptionIntervalTypes = require(dependencyMap[0]).SubscriptionIntervalTypes;
+// Module 14094 (MAX_SUBSCRIPTION_TIERS)
+import { SubscriptionIntervalTypes } from "GuildFeatures";
+
 let obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 1 };
 const items = [obj, ];
 obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 7 };
 items[1] = obj;
-const combined = "https://" + require(dependencyMap[1]).PRIMARY_DOMAIN + "/creators";
-const frozen = Object.freeze({ "Bool(true)": null, "Bool(true)": "d415e9ae6db962a437b5c21e64fa1fc3", "Bool(true)": "ThemeMidnightIcon" });
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsConstants.tsx");
+const combined = "https://" + require("sum").PRIMARY_DOMAIN + "/creators";
+const frozen = Object.freeze({ MUST_READ_ARTICLES: "https://discord.com/creators/5-must-read-articles-for-beginners", CREATOR_TO_ADMIN_101: "https://discord.com/creators/creator-to-server-admin-101", CREATOR_TO_ADMIN_201: "https://discord.com/creators/creator-to-server-admin-201" });
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsConstants.tsx");
 
 export const MAX_SUBSCRIPTION_TIERS = 3;
 export const MAX_SUBSCRIPTION_TIER_NAME_LENGTH = 100;

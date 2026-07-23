@@ -1,19 +1,21 @@
-// Module ID: 13615
-// Function ID: 103154
+// Module ID: 13729
+// Function ID: 105310
 // Name: defineParentalControlledSetting
-// Dependencies: []
+// Dependencies: [6772, 6771, 566, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 13615 (defineParentalControlledSetting)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/user_settings/family_center/ParentalControlledUserSettingsDefinitions.tsx");
+// Module 13729 (defineParentalControlledSetting)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/user_settings/family_center/ParentalControlledUserSettingsDefinitions.tsx");
 
 export const defineParentalControlledSetting = function defineParentalControlledSetting(privacy, defaultGuildsRestricted, explicitContentFromProto, explicitContentToProto, arg4) {
   let obj = arg4;
-  defaultGuildsRestricted = privacy;
-  const importDefault = defaultGuildsRestricted;
-  const dependencyMap = explicitContentFromProto;
-  let closure_3 = explicitContentToProto;
+  let closure_0 = privacy;
+  let closure_1 = defaultGuildsRestricted;
+  let closure_2 = explicitContentFromProto;
+  let _isNativeReflectConstruct = explicitContentToProto;
   if (arg4 === undefined) {
     obj = {};
   }
@@ -25,15 +27,15 @@ export const defineParentalControlledSetting = function defineParentalControlled
   }
   let getControlledSetting;
   let S;
-  getControlledSetting = function getControlledSetting(closure_0) {
-    const settings = arg3.getSettings(closure_0);
+  getControlledSetting = function getControlledSetting(guildId) {
+    const settings = explicitContentToProto.getSettings(guildId);
     let tmp3;
     if (null != settings) {
       if (null != settings[closure_0]) {
         tmp3 = tmp5[closure_1];
       }
     }
-    return arg2(tmp3);
+    return closure_2(tmp3);
   };
   obj = {
     getControlledSetting,
@@ -45,27 +47,33 @@ export const defineParentalControlledSetting = function defineParentalControlled
       return S(arg0, tmp2);
     },
     useControlledSetting(arg0) {
-      const items = [arg3];
+      const privacy = arg0;
+      const items = [_isNativeReflectConstruct];
       const items1 = [arg0];
-      return arg0(arg2[2]).useStateFromStores(items, () => callback(arg0), items1, fn);
+      return privacy(explicitContentFromProto[2]).useStateFromStores(items, () => outer1_7(closure_0), items1, fn);
     }
   };
-  S = function S(arg0, arg1) {
-    arg0 = arg1;
+  S = function S(arg0, closure_0) {
     if (null == arg0) {
       let resolved = Promise.resolve();
     } else {
-      resolved = arg1(arg2[1]).updateTeenSettings(arg0, arg0, (arg0) => {
-        arg0[closure_1] = callback(arg1, arg0[closure_1]);
+      resolved = defaultGuildsRestricted(explicitContentFromProto[1]).updateTeenSettings(arg0, closure_0, (arg0) => {
+        arg0[outer1_1] = outer1_3(closure_0, arg0[outer1_1]);
       });
-      const obj = arg1(arg2[1]);
+      const obj = defaultGuildsRestricted(explicitContentFromProto[1]);
     }
     return resolved;
   };
   return obj;
 };
 export const wrapParentalControlledSettingWithExperimentDefaults = function wrapParentalControlledSettingWithExperimentDefaults(arg0) {
-  ({ baseSetting: closure_0, isEligible: closure_1, useIsEligible: closure_2, eligibleDefault: closure_3, ineligibleDefault: closure_4, onUseDefault: closure_5 } = arg0);
+  let _isNativeReflectConstruct;
+  let closure_4;
+  let closure_5;
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ baseSetting: require, isEligible: importDefault, useIsEligible: dependencyMap, eligibleDefault: _isNativeReflectConstruct, ineligibleDefault: closure_4, onUseDefault: closure_5 } = arg0);
   return {
     getControlledSetting(arg0) {
       const controlledSetting = closure_0.getControlledSetting(arg0);

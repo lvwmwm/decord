@@ -1,10 +1,16 @@
-// Module ID: 6682
-// Function ID: 51422
+// Module ID: 6687
+// Function ID: 51454
 // Name: hasUserTrialOfferExpired
-// Dependencies: []
+// Dependencies: [57, 31, 1849, 6688, 566, 3776, 4015, 2]
 // Exports: useTrialOffer
 
-// Module 6682 (hasUserTrialOfferExpired)
+// Module 6687 (hasUserTrialOfferExpired)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function hasUserTrialOfferExpired(stateFromStores) {
   let tmp = null != stateFromStores && null != stateFromStores.expires_at;
   if (tmp) {
@@ -15,27 +21,21 @@ function hasUserTrialOfferExpired(stateFromStores) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/premium/useTrialOffer.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/useTrialOffer.tsx");
 
 export { hasUserTrialOfferExpired };
 export const useTrialOffer = function useTrialOffer(closure_9) {
-  const arg1 = closure_9;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => userTrialOffer.getUserTrialOffer(arg0));
-  const dependencyMap = stateFromStores;
-  const tmp2 = callback(React.useState(hasUserTrialOfferExpired(stateFromStores)), 2);
-  const first = tmp2[0];
-  const callback = first;
-  const React = tmp2[1];
-  const obj = arg1(dependencyMap[4]);
-  const items1 = [closure_4];
-  let result = !arg1(dependencyMap[4]).useStateFromStores(items1, () => arg0(stateFromStores[5]).isPremium(currentUser.getCurrentUser()));
+  const _require = closure_9;
+  const items = [_createForOfIteratorHelperLoose];
+  stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => outer1_5.getUserTrialOffer(closure_0));
+  const tmp2 = first(React.useState(hasUserTrialOfferExpired(stateFromStores)), 2);
+  first = tmp2[0];
+  React = tmp2[1];
+  const obj = _require(stateFromStores[4]);
+  const items1 = [_isNativeReflectConstruct];
+  let result = !_require(stateFromStores[4]).useStateFromStores(items1, () => callback(stateFromStores[5]).isPremium(outer1_4.getCurrentUser()));
   if (!result) {
-    result = closure_5.canFractionalPremiumUserUseOffer();
+    result = _createForOfIteratorHelperLoose.canFractionalPremiumUserUseOffer();
   }
   const items2 = [first, stateFromStores];
   const effect = React.useEffect(() => {
@@ -50,23 +50,21 @@ export const useTrialOffer = function useTrialOffer(closure_9) {
         }
         if (null != timeout) {
           timeout.start(num, () => {
-            if (!closure_2) {
-              if (callback3(callback)) {
-                callback2(true);
+            if (!outer2_2) {
+              if (outer3_6(startTimer)) {
+                outer2_3(true);
               }
             }
-            callback();
+            outer1_1();
           });
         }
       }
     }
-    const stateFromStores = startTimer;
-    if (null != stateFromStores) {
-      if (null != stateFromStores.expires_at) {
-        const Timeout = arg0(stateFromStores[6]).Timeout;
+    if (null != startTimer) {
+      if (null != startTimer.expires_at) {
+        const Timeout = callback(stateFromStores[6]).Timeout;
         const prototype = Timeout.prototype;
         const timeout = new Timeout();
-        const arg0 = timeout;
         startTimer();
         return () => timeout.stop();
       }

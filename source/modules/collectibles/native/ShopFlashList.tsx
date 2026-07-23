@@ -1,24 +1,26 @@
-// Module ID: 14392
-// Function ID: 108600
+// Module ID: 14506
+// Function ID: 110753
 // Name: ShopEmptyState
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 14479, 7879, 1273, 8502, 1212, 2]
 // Exports: default
 
-// Module 14392 (ShopEmptyState)
+// Module 14506 (ShopEmptyState)
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function ShopEmptyState() {
-  const obj = { style: { marginTop: 42 }, Illustration: arg1(dependencyMap[7]).NoResults };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.body = intl.string(arg1(dependencyMap[8]).t.eAn6z2);
-  return jsx(arg1(dependencyMap[6]).EmptyState, obj);
+  const obj = { style: { marginTop: 42 }, Illustration: require(8502) /* getNoResultsSource */.NoResults };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl.string(require(1212) /* getSystemLocale */.t.eAn6z2);
+  return jsx(require(1273) /* Button */.EmptyState, { style: { marginTop: 42 }, Illustration: require(8502) /* getNoResultsSource */.NoResults });
 }
-let closure_2 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWEST };
-obj.contentContainer = obj;
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/native/ShopFlashList.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.contentContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/native/ShopFlashList.tsx");
 
 export default function ShopFlashList(initialScrollIndex) {
   let data;
@@ -27,7 +29,7 @@ export default function ShopFlashList(initialScrollIndex) {
   initialScrollIndex = initialScrollIndex.initialScrollIndex;
   ({ data, renderItem, getItemType } = initialScrollIndex);
   const ref = React.useRef(null);
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(14479) /* INITIAL_SCROLL_DELAY_MS */;
   obj = {};
   let tmp3 = null != initialScrollIndex;
   if (tmp3) {
@@ -36,8 +38,8 @@ export default function ShopFlashList(initialScrollIndex) {
   obj.shouldScroll = tmp3;
   obj.initialScrollIndex = initialScrollIndex;
   obj.flashListRef = ref;
-  obj.afterMs = arg1(dependencyMap[4]).INITIAL_SCROLL_DELAY_MS;
+  obj.afterMs = require(14479) /* INITIAL_SCROLL_DELAY_MS */.INITIAL_SCROLL_DELAY_MS;
   const scrollToInitialIndexOnce = obj.useScrollToInitialIndexOnce(obj);
-  obj = { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent: ShopEmptyState, initialScrollIndex, getItemType, contentContainerStyle: callback().contentContainer };
-  return jsx(arg1(dependencyMap[5]).FlashList, obj);
+  obj = { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent: ShopEmptyState, initialScrollIndex, getItemType, contentContainerStyle: _createForOfIteratorHelperLoose().contentContainer };
+  return jsx(require(7879) /* defaultMVCPConfig */.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent: ShopEmptyState, initialScrollIndex, getItemType, contentContainerStyle: _createForOfIteratorHelperLoose().contentContainer });
 };

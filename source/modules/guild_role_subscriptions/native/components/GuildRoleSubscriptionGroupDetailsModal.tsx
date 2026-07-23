@@ -1,68 +1,79 @@
-// Module ID: 16306
-// Function ID: 125793
+// Module ID: 16423
+// Function ID: 127967
 // Name: Content
-// Dependencies: []
+// Dependencies: [57, 31, 27, 16424, 14094, 653, 33, 4130, 12905, 16419, 7494, 1212, 16425, 4126, 14106, 7495, 16428, 2]
 // Exports: default
 
-// Module 16306 (Content)
+// Module 16423 (Content)
+import _slicedToArray from "_slicedToArray";
+import "result";
+import { View } from "get ActivityIndicator";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS";
+import { UPLOAD_BANNER_SIZE } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_6;
+let closure_7;
+let closure_9;
+const require = arg1;
 class Content {
   constructor(arg0) {
     ({ cover, setCover, description, setDescription } = global);
-    tmp = closure_12();
-    tmp2 = importDefault(dependencyMap[8])();
-    obj = arg1(dependencyMap[9]);
+    tmp = c12();
+    tmp2 = require("styles")();
+    obj = require("useRoleSubscriptionSettingsDisabled");
     roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
     obj = {};
     obj1 = { style: tmp2.header };
-    tmp4 = importDefault(dependencyMap[10]);
-    intl = arg1(dependencyMap[11]).intl;
-    obj1.children = intl.string(arg1(dependencyMap[11]).t.3S8gA7);
+    tmp4 = require("FormHeader");
+    intl = require("getSystemLocale").intl;
+    obj1.children = intl.string(require("getSystemLocale").t["3S8gA7"]);
     items = [, , , , ];
     items[0] = jsx(tmp4, obj1);
     obj2 = { style: tmp.paddedContainer };
     obj3 = { style: tmp.coverPhoto, image: cover, imageUploadSize: UPLOAD_BANNER_SIZE.width };
-    obj3.previewShape = arg1(dependencyMap[12]).PreviewShape.SQUIRCLE;
+    obj3.previewShape = require("pickImage").PreviewShape.SQUIRCLE;
     obj3.setImage = setCover;
     obj3.disabled = roleSubscriptionSettingsDisabled;
     obj3.standalone = true;
     obj3.size = 114;
     items1 = [, ];
-    items1[0] = jsx(arg1(dependencyMap[12]).ImagePickerIcon, obj3);
-    obj4 = { style: tmp.coverDescription };
-    intl2 = arg1(dependencyMap[11]).intl;
-    obj4.children = intl2.string(arg1(dependencyMap[11]).t.0ng4rB);
-    items1[1] = jsx(arg1(dependencyMap[13]).Text, obj4);
+    items1[0] = jsx(require("pickImage").ImagePickerIcon, obj3);
+    obj4 = { style: null, variant: "text-sm/medium", color: "text-default" };
+    obj4.style = tmp.coverDescription;
+    intl2 = require("getSystemLocale").intl;
+    obj4.children = intl2.string(require("getSystemLocale").t["0ng4rB"]);
+    items1[1] = jsx(require("Text").Text, obj4);
     obj2.children = items1;
     items[1] = jsxs(View, obj2);
     obj5 = { style: tmp.paddedContainer };
-    items[2] = jsx(importDefault(dependencyMap[14]), obj5);
+    items[2] = jsx(require("FormSeparator"), obj5);
     obj6 = { style: tmp2.header };
-    tmp5 = importDefault(dependencyMap[10]);
-    intl3 = arg1(dependencyMap[11]).intl;
-    obj6.children = intl3.string(arg1(dependencyMap[11]).t.74JctW);
+    tmp5 = require("FormHeader");
+    intl3 = require("getSystemLocale").intl;
+    obj6.children = intl3.string(require("getSystemLocale").t["74JctW"]);
     items[3] = jsx(tmp5, obj6);
-    obj7 = { style: tmp2.textInput, maxLength: closure_7, value: description };
-    intl4 = arg1(dependencyMap[11]).intl;
-    obj7.placeholder = intl4.string(arg1(dependencyMap[11]).t.3YHwoG);
+    obj7 = { style: null, showTopContainer: false, multiline: true, maxLength: null, numberOfLines: 3 };
+    obj7.style = tmp2.textInput;
+    obj7.maxLength = c7;
+    obj7.value = description;
+    intl4 = require("getSystemLocale").intl;
+    obj7.placeholder = intl4.string(require("getSystemLocale").t["3YHwoG"]);
     obj7.onChange = setDescription;
     obj7.disabled = roleSubscriptionSettingsDisabled;
-    items[4] = jsx(arg1(dependencyMap[15]).FormInput, obj7);
+    items[4] = jsx(require("Form").FormInput, obj7);
     obj.children = items;
     return jsxs(Fragment, obj);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_5 = importAll(dependencyMap[3]);
-({ GuildRoleSubscriptionsTierScenes: closure_6, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: closure_7 } = arg1(dependencyMap[4]));
-const UPLOAD_BANNER_SIZE = arg1(dependencyMap[5]).UPLOAD_BANNER_SIZE;
-const tmp3 = arg1(dependencyMap[4]);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[6]));
-const tmp4 = arg1(dependencyMap[6]);
-let closure_12 = arg1(dependencyMap[7]).createStyles({ coverPhoto: { hideWhenScrolling: "jsx", autoCapitalize: "r" }, coverDescription: { marginTop: 16 }, paddedContainer: { paddingHorizontal: 16 } });
-const obj = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionGroupDetailsModal.tsx");
+({ GuildRoleSubscriptionsTierScenes: closure_6, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: closure_7 } = MAX_SUBSCRIPTION_TIERS);
+({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
+let closure_12 = _createForOfIteratorHelperLoose.createStyles({ coverPhoto: { height: 114, width: "100%" }, coverDescription: { marginTop: 16 }, paddedContainer: { paddingHorizontal: 16 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionGroupDetailsModal.tsx");
 
 export default function GuildRoleSubscriptionTierDetailsModal(arg0) {
   const tmp = callback(closure_5.useGroupCoverState(), 2);
@@ -74,10 +85,10 @@ export default function GuildRoleSubscriptionTierDetailsModal(arg0) {
     tmp4 = null != first;
   }
   let obj = {};
-  const intl = arg1(dependencyMap[11]).intl;
-  obj.title = intl.string(arg1(dependencyMap[11]).t.EPOLQD);
-  const intl2 = arg1(dependencyMap[11]).intl;
-  obj.description = intl2.string(arg1(dependencyMap[11]).t.LeAm+L);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.EPOLQD);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl2.string(require(1212) /* getSystemLocale */.t["LeAm+L"]);
   obj.canProceedToNextStep = tmp4;
   obj.nextStep = constants.DETAILS;
   const merged = Object.assign(arg0);
@@ -88,6 +99,6 @@ export default function GuildRoleSubscriptionTierDetailsModal(arg0) {
   obj["description"] = first1;
   obj["setDescription"] = tmp3[1];
   obj["children"] = callback2(Content, obj);
-  return callback2(importDefault(dependencyMap[16]), obj);
+  return callback2(importDefault(16428), obj);
 };
 export { Content };

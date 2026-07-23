@@ -1,21 +1,23 @@
-// Module ID: 5182
-// Function ID: 45001
+// Module ID: 5185
+// Function ID: 45020
 // Name: FormIcon
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 1273, 2]
 // Exports: default
 
-// Module 5182 (FormIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = arg1(dependencyMap[2]).createStyles({ icon: { opacity: 0.6 } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/void/Form/native/FormIcon.tsx");
+// Module 5185 (FormIcon)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_3 = _createForOfIteratorHelperLoose.createStyles({ icon: { opacity: 0.6 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/void/Form/native/FormIcon.tsx");
 
 export default function FormIcon(color) {
   let style;
   let themedColor;
   ({ style, themedColor } = color);
-  let obj = { "Null": "spring", "Null": 0.4, "Null": 1 };
+  let obj = { style: 0, color: 0, themedColor: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   const tmp3 = callback();
@@ -25,14 +27,14 @@ export default function FormIcon(color) {
     obj.style = items;
     obj.themedColor = themedColor;
     const merged1 = Object.assign(merged);
-    let tmp10 = jsx(arg1(dependencyMap[3]).ThemedIcon, obj);
+    let tmp10 = jsx(require(1273) /* Button */.ThemedIcon, {});
   } else {
     obj = {};
     const items1 = [tmp3.icon, style];
     obj.style = items1;
     obj.color = color.color;
     const merged2 = Object.assign(merged);
-    tmp10 = jsx(arg1(dependencyMap[3]).Icon, obj);
+    tmp10 = jsx(require(1273) /* Button */.Icon, {});
   }
   return tmp10;
 };

@@ -1,46 +1,47 @@
-// Module ID: 4216
-// Function ID: 36800
+// Module ID: 4220
+// Function ID: 36832
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4185, 4191, 566, 686, 2]
 
-// Module 4216 (_isNativeReflectConstruct)
+// Module 4220 (_isNativeReflectConstruct)
+import DesktopSources from "DesktopSources";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import makeButton from "makeButton";
+import { MediaEngineContextTypes } from "DesktopSources";
+
 let ApplicationStreamFPS;
 let ApplicationStreamResolutions;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let DesktopSources = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return DesktopSources;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[5]);
-const ApplicationStreamPresets = tmp2.ApplicationStreamPresets;
-({ ApplicationStreamResolutions, ApplicationStreamFPS } = tmp2);
-const MediaEngineContextTypes = arg1(dependencyMap[6]).MediaEngineContextTypes;
-const PRESET_VIDEO = ApplicationStreamPresets.PRESET_VIDEO;
+const ApplicationStreamPresets = makeButton.ApplicationStreamPresets;
+({ ApplicationStreamResolutions, ApplicationStreamFPS } = makeButton);
+let PRESET_VIDEO = ApplicationStreamPresets.PRESET_VIDEO;
 const RESOLUTION_720 = ApplicationStreamResolutions.RESOLUTION_720;
 const FPS_30 = ApplicationStreamFPS.FPS_30;
-let closure_10 = true;
-let tmp3 = (PersistedStore) => {
+let c10 = true;
+let tmp3 = ((PersistedStore) => {
   class ApplicationStreamingSettingsStore {
     constructor() {
       self = this;
       tmp = ApplicationStreamingSettingsStore(this, ApplicationStreamingSettingsStore);
-      obj = closure_3(ApplicationStreamingSettingsStore);
-      tmp2 = closure_2;
-      if (closure_11()) {
+      obj = outer1_3(ApplicationStreamingSettingsStore);
+      tmp2 = outer1_2;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -49,19 +50,21 @@ let tmp3 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ApplicationStreamingSettingsStore;
   callback2(ApplicationStreamingSettingsStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(preset) {
+      let outer1_8;
+      let outer1_9;
       let soundshareEnabled;
       if (null != preset) {
         let PRESET_VIDEO = preset.preset;
         if (null == PRESET_VIDEO) {
-          PRESET_VIDEO = constants.PRESET_VIDEO;
+          PRESET_VIDEO = outer1_5.PRESET_VIDEO;
         }
-        ({ resolution: closure_8, fps: closure_9, soundshareEnabled } = preset);
-        let closure_10 = null == soundshareEnabled || soundshareEnabled;
+        const outer1_7 = PRESET_VIDEO;
+        ({ resolution: outer1_8, fps: outer1_9, soundshareEnabled } = preset);
+        const outer1_10 = null == soundshareEnabled || soundshareEnabled;
       }
     }
   };
@@ -69,15 +72,15 @@ let tmp3 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return { preset: closure_7, resolution: closure_8, fps: closure_9, soundshareEnabled: closure_10 };
+      return { preset: outer1_7, resolution: outer1_8, fps: outer1_9, soundshareEnabled: outer1_10 };
     }
   };
   items[1] = obj;
   return callback(ApplicationStreamingSettingsStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = "ApplicationStreamingSettingsStore";
 tmp3.persistKey = "ApplicationStreamingSettingStore";
-tmp3 = new tmp3(importDefault(dependencyMap[8]), {
+tmp3 = new tmp3(require("dispatcher"), {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: function handleSetGoLiveSource(settings) {
     settings = settings.settings;
     let context;
@@ -91,16 +94,16 @@ tmp3 = new tmp3(importDefault(dependencyMap[8]), {
       }
       if (null != qualityOptions) {
         let flag = false;
-        if (PRESET_VIDEO !== settings.qualityOptions.preset) {
-          const PRESET_VIDEO = settings.qualityOptions.preset;
+        if (preset !== settings.qualityOptions.preset) {
+          preset = settings.qualityOptions.preset;
           flag = true;
         }
-        if (RESOLUTION_720 !== settings.qualityOptions.resolution) {
-          const RESOLUTION_720 = settings.qualityOptions.resolution;
+        if (resolution !== settings.qualityOptions.resolution) {
+          resolution = settings.qualityOptions.resolution;
           flag = true;
         }
-        if (FPS_30 !== settings.qualityOptions.frameRate) {
-          const FPS_30 = settings.qualityOptions.frameRate;
+        if (frameRate !== settings.qualityOptions.frameRate) {
+          frameRate = settings.qualityOptions.frameRate;
           flag = true;
         }
         return flag;
@@ -116,40 +119,36 @@ tmp3 = new tmp3(importDefault(dependencyMap[8]), {
     ({ preset, resolution, frameRate, soundshareEnabled } = arg0);
     let tmp = null != preset;
     if (tmp) {
-      tmp = preset !== PRESET_VIDEO;
+      tmp = preset !== preset;
     }
     let flag = false;
     if (tmp) {
-      const PRESET_VIDEO = preset;
       flag = true;
     }
     let tmp3 = null != resolution;
     if (tmp3) {
-      tmp3 = resolution !== RESOLUTION_720;
+      tmp3 = resolution !== resolution;
     }
     if (tmp3) {
-      const RESOLUTION_720 = resolution;
       flag = true;
     }
     let tmp5 = null != frameRate;
     if (tmp5) {
-      tmp5 = frameRate !== FPS_30;
+      tmp5 = frameRate !== frameRate;
     }
     if (tmp5) {
-      const FPS_30 = frameRate;
       flag = true;
     }
     let tmp7 = null != soundshareEnabled;
     if (tmp7) {
-      tmp7 = soundshareEnabled !== closure_10;
+      tmp7 = soundshareEnabled !== soundshareEnabled;
     }
     if (tmp7) {
-      closure_10 = soundshareEnabled;
       flag = true;
     }
     return flag;
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/ApplicationStreamingSettingsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/ApplicationStreamingSettingsStore.tsx");
 
 export default tmp3;

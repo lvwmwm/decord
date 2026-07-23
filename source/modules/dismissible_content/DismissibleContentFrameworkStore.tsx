@@ -1,9 +1,18 @@
 // Module ID: 1338
-// Function ID: 15718
+// Function ID: 15719
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 1339, 1335, 675, 566, 686, 2]
 
 // Module 1338 (_isNativeReflectConstruct)
+import closure_3 from "set";
+import isTimeRecurringDismissibleContent from "isTimeRecurringDismissibleContent";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { AnalyticEvents } from "ME";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,30 +31,25 @@ function hasAlreadySeenDCForGuild(dismissibleContent, guildId) {
   }
   return hasItem;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-let obj = { <string:2752579683>: true, <string:1454068579>: true, <string:2593391081>: true, <string:2789844552>: true, <string:1855346291>: true, value: true, onChange: true, dismissibleContentSeenDuringSession: new Set() };
-const set = new Set();
+let obj = { numberOfDCsShownToday: 0, dailyCapPeriodStart: null, dismissibleContentSeenDuringSession: null, dailyCapOverridden: false, newUserMinAgeRequiredOverridden: false, renderedAtTimestamps: null, lastDismissed: null };
+let set = new Set();
+obj.dismissibleContentSeenDuringSession = set;
 obj.renderedAtTimestamps = new Map();
-const map = new Map();
+let map = new Map();
 obj.seenForGuildId = new Map();
-let tmp5 = (PersistedStore) => {
+let tmp5 = ((PersistedStore) => {
   class DismissibleContentFrameworkStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, DismissibleContentFrameworkStore);
-      obj = closure_6(DismissibleContentFrameworkStore);
-      tmp2 = closure_5;
-      if (closure_10()) {
+      tmp = outer1_3(this, DismissibleContentFrameworkStore);
+      obj = outer1_6(DismissibleContentFrameworkStore);
+      tmp2 = outer1_5;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -54,7 +58,6 @@ let tmp5 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = DismissibleContentFrameworkStore;
   callback2(DismissibleContentFrameworkStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -66,108 +69,108 @@ let tmp5 = (PersistedStore) => {
         if (null != numberOfDCsShownToday) {
           num = numberOfDCsShownToday;
         }
-        closure_9.numberOfDCsShownToday = num;
-        ({ dailyCapPeriodStart: closure_9.dailyCapPeriodStart, dailyCapOverridden } = numberOfDCsShownToday);
+        outer1_9.numberOfDCsShownToday = num;
+        ({ dailyCapPeriodStart: outer1_9.dailyCapPeriodStart, dailyCapOverridden } = numberOfDCsShownToday);
         let tmp4 = null != dailyCapOverridden;
         if (tmp4) {
           tmp4 = dailyCapOverridden;
         }
-        closure_9.dailyCapOverridden = tmp4;
+        outer1_9.dailyCapOverridden = tmp4;
         const newUserMinAgeRequiredOverridden = numberOfDCsShownToday.newUserMinAgeRequiredOverridden;
         let tmp6 = null != newUserMinAgeRequiredOverridden;
         if (tmp6) {
           tmp6 = newUserMinAgeRequiredOverridden;
         }
-        closure_9.newUserMinAgeRequiredOverridden = tmp6;
-        const tmp = closure_9;
-        const tmp3 = closure_9;
-        const tmp5 = closure_9;
+        outer1_9.newUserMinAgeRequiredOverridden = tmp6;
+        const tmp = outer1_9;
+        const tmp3 = outer1_9;
+        const tmp5 = outer1_9;
       }
-      closure_9.dismissibleContentSeenDuringSession = new Set();
+      outer1_9.dismissibleContentSeenDuringSession = new Set();
       const set = new Set();
-      closure_9.seenForGuildId = new Map();
-      closure_9.lastDismissed = null;
+      outer1_9.seenForGuildId = new Map();
+      outer1_9.lastDismissed = null;
     }
   };
   const items = [obj, , , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[1] = obj;
   obj = {
     key: "dailyCapOverridden",
     get() {
-      return closure_9.dailyCapOverridden;
+      return outer1_9.dailyCapOverridden;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "newUserMinAgeRequiredOverridden",
     get() {
-      return closure_9.newUserMinAgeRequiredOverridden;
+      return outer1_9.newUserMinAgeRequiredOverridden;
     }
   };
   items[4] = {
     key: "lastDismissed",
     get() {
-      return closure_9.lastDismissed;
+      return outer1_9.lastDismissed;
     }
   };
   items[5] = {
     key: "getRenderedAtTimestamp",
     value(arg0) {
-      const renderedAtTimestamps = closure_9.renderedAtTimestamps;
+      const renderedAtTimestamps = outer1_9.renderedAtTimestamps;
       return renderedAtTimestamps.get(arg0);
     }
   };
   items[6] = {
     key: "hasUserHitDCCap",
-    value(closure_0) {
-      if (null != closure_0) {
-        const CONTENT_TYPES_WITH_BYPASS_FATIGUE = DismissibleContentFrameworkStore(closure_2[6]).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    value(dismissibleContent) {
+      if (null != dismissibleContent) {
+        const CONTENT_TYPES_WITH_BYPASS_FATIGUE = DismissibleContentFrameworkStore(outer1_2[6]).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
         return false;
       }
-      if (null != closure_0) {
+      if (null != dismissibleContent) {
         let result = null != arg1;
         if (result) {
-          result = DismissibleContentFrameworkStore(closure_2[7]).isGuildDismissibleContent(closure_0);
-          const obj = DismissibleContentFrameworkStore(closure_2[7]);
+          result = DismissibleContentFrameworkStore(outer1_2[7]).isGuildDismissibleContent(dismissibleContent);
+          const obj = DismissibleContentFrameworkStore(outer1_2[7]);
         }
         if (result) {
           if (null != arg1) {
-            if (callback4(closure_0, arg1)) {
+            if (outer1_11(dismissibleContent, arg1)) {
               return false;
             }
           }
         }
         if (!result) {
-          const dismissibleContentSeenDuringSession = closure_9.dismissibleContentSeenDuringSession;
-          if (dismissibleContentSeenDuringSession.has(closure_0)) {
+          const dismissibleContentSeenDuringSession = outer1_9.dismissibleContentSeenDuringSession;
+          if (dismissibleContentSeenDuringSession.has(dismissibleContent)) {
             return false;
           }
         }
       }
       const date = new Date();
       date.setHours(0, 0, 0, 0);
-      let tmp10 = null != closure_9.dailyCapPeriodStart;
+      let tmp10 = null != outer1_9.dailyCapPeriodStart;
       if (tmp10) {
-        tmp10 = closure_9.dailyCapPeriodStart < date.getTime();
+        tmp10 = outer1_9.dailyCapPeriodStart < date.getTime();
       }
       if (tmp10) {
-        closure_9.numberOfDCsShownToday = 0;
-        closure_9.dailyCapPeriodStart = null;
+        outer1_9.numberOfDCsShownToday = 0;
+        outer1_9.dailyCapPeriodStart = null;
       }
-      return closure_9.numberOfDCsShownToday >= 3;
+      return outer1_9.numberOfDCsShownToday >= 3;
     }
   };
   return callback(DismissibleContentFrameworkStore, items);
-}(importDefault(dependencyMap[9]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp5.displayName = "DismissibleContentFrameworkStore";
 tmp5.persistKey = "DismissibleContentFrameworkStore";
-const items = [
+let items = [
   (arg0) => {
     const merged = Object.assign(arg0);
     return {};
@@ -196,10 +199,10 @@ obj = {
     ({ dismissibleContent, guildId } = arg0);
     const renderedAtTimestamps = obj.renderedAtTimestamps;
     const result = renderedAtTimestamps.set(dismissibleContent, new Date().getTime());
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = arg1(dependencyMap[6]).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require(1339) /* set */.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(dismissibleContent)) {
       if (!obj.dailyCapOverridden) {
-        let result1 = arg1(dependencyMap[7]).isGuildDismissibleContent(dismissibleContent);
+        let result1 = require(1335) /* isTimeRecurringDismissibleContent */.isGuildDismissibleContent(dismissibleContent);
         if (result1) {
           result1 = null != guildId;
         }
@@ -227,16 +230,16 @@ obj = {
             }
             obj.numberOfDCsShownToday = obj.numberOfDCsShownToday + 1;
             if (obj.numberOfDCsShownToday > 3) {
-              const obj = { cap_type: "daily_cap", dismissible_content: dismissibleContent };
+              obj = { cap_type: "daily_cap", dismissible_content: dismissibleContent };
               obj.shown_dcs = obj.numberOfDCsShownToday;
-              importDefault(dependencyMap[8]).track(AnalyticEvents.DCF_CAP_EXCEEDED, obj);
-              const obj5 = importDefault(dependencyMap[8]);
+              importDefault(675).track(AnalyticEvents.DCF_CAP_EXCEEDED, obj);
+              const obj5 = importDefault(675);
             }
           }
         } else {
           const dismissibleContentSeenDuringSession = obj.dismissibleContentSeenDuringSession;
         }
-        const obj2 = arg1(dependencyMap[7]);
+        const obj2 = require(1335) /* isTimeRecurringDismissibleContent */;
       }
     }
   },
@@ -264,8 +267,7 @@ obj = {
     obj.lastDismissed = null;
   }
 };
-tmp5 = new tmp5(importDefault(dependencyMap[10]), obj);
-const map1 = new Map();
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkStore.tsx");
+tmp5 = new tmp5(require("dispatcher"), obj);
+let result = set.fileFinishedImporting("modules/dismissible_content/DismissibleContentFrameworkStore.tsx");
 
 export default tmp5;

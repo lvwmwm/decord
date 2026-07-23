@@ -1,14 +1,14 @@
-// Module ID: 6934
-// Function ID: 55295
+// Module ID: 6939
+// Function ID: 55329
 // Name: __handleIntersections
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getIntersectionObserver, unwatch, watch
 
-// Module 6934 (__handleIntersections)
+// Module 6939 (__handleIntersections)
 function __handleIntersections(arr) {
-  const weakMap = arg1;
+  let closure_0 = arg1;
   const item = arr.forEach((target) => {
-    let value = closure_1.get(arg1);
+    let value = outer1_1.get(closure_0);
     value = undefined;
     if (null != value) {
       value = value.get(target.target);
@@ -18,10 +18,9 @@ function __handleIntersections(arr) {
     }
   });
 }
-const weakMap = new WeakMap();
+let weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/utils/InteractionObserverUtils.tsx");
+let result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/InteractionObserverUtils.tsx");
 
 export const getIntersectionObserver = function getIntersectionObserver(current) {
   let value = weakMap.get(current);
@@ -30,13 +29,13 @@ export const getIntersectionObserver = function getIntersectionObserver(current)
     const intersectionObserver = new globalThis.IntersectionObserver(__handleIntersections, current);
     const result = weakMap.set(current, intersectionObserver);
     const _WeakMap = WeakMap;
-    const weakMap = new WeakMap();
+    weakMap = new WeakMap();
     const result1 = weakMap1.set(intersectionObserver, weakMap);
     value = intersectionObserver;
   }
   return value;
 };
-export const watch = function watch(current2, current, arg2) {
+export const watch = function watch(current2, current, closure_0) {
   let weakMap = weakMap1.get(current2);
   if (null == weakMap) {
     const _WeakMap = WeakMap;
@@ -45,7 +44,7 @@ export const watch = function watch(current2, current, arg2) {
   if (!weakMap.has(current)) {
     current2.observe(current);
   }
-  const result = weakMap.set(current, arg2);
+  const result = weakMap.set(current, closure_0);
   const result1 = weakMap1.set(current2, weakMap);
 };
 export const unwatch = function unwatch(current2, current) {

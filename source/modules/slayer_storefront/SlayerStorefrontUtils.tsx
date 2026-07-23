@@ -1,53 +1,71 @@
-// Module ID: 5606
-// Function ID: 47666
+// Module ID: 5611
+// Function ID: 47696
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
-// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformSocialLayerStorefrontAffinityServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
+// Dependencies: [4167, 5612, 4153, 1838, 5613, 5614, 653, 655, 482, 4369, 22, 5615, 1443, 4988, 566, 5470, 2]
+// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 5606 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5611 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { WishlistRecommendationReason as closure_4 } from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import STOREFRONT_MARKETING_GUILD_ID from "STOREFRONT_MARKETING_GUILD_ID";
+import ME from "ME";
+import { CollectibleShopTab } from "items";
+import { CurrencyCodes } from "sum";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,10 +110,10 @@ function getCountryPrices(arg0, arg1) {
     return countryPrices;
   }
   countryPrices = null;
-  if (null != arg0.prices[closure_12.DEFAULT]) {
+  if (null != arg0.prices[constants2.DEFAULT]) {
     countryPrices = null;
-    if (arg0.prices[closure_12.DEFAULT].countryPrices.prices.length > 0) {
-      countryPrices = arg0.prices[closure_12.DEFAULT].countryPrices;
+    if (arg0.prices[constants2.DEFAULT].countryPrices.prices.length > 0) {
+      countryPrices = arg0.prices[constants2.DEFAULT].countryPrices;
     }
   }
 }
@@ -184,7 +202,7 @@ function parseServerDate(published_at) {
 }
 function isOnCollectiblesShopGameShopPage(pathname, search, applicationId, skuId) {
   let tab;
-  const parsed = search(dependencyMap[13]).parse(search);
+  const parsed = require(4988) /* encode */.parse(search);
   ({ tab, applicationId, skuId } = parsed);
   let tmp2 = pathname.indexOf(closure_13.COLLECTIBLES_SHOP) >= 0;
   if (tmp2) {
@@ -232,28 +250,19 @@ function getSocialLayerStorefrontApplicationIdHelper(guild, applicationIdFromGui
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).WishlistRecommendationReason;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ getChannelsGameShopPrefix: closure_8, STOREFRONT_MARKETING_GUILD_ID: closure_9, STOREFRONT_MARKETING_GUILD_ID_TEST: closure_10 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-({ GuildFeatures: closure_11, PriceSetAssignmentPurchaseTypes: closure_12, Routes: closure_13, SKUProductLines: closure_14 } = arg1(dependencyMap[6]));
-const CollectibleShopTab = arg1(dependencyMap[7]).CollectibleShopTab;
-const CurrencyCodes = arg1(dependencyMap[8]).CurrencyCodes;
+({ getChannelsGameShopPrefix: closure_8, STOREFRONT_MARKETING_GUILD_ID: closure_9, STOREFRONT_MARKETING_GUILD_ID_TEST: closure_10 } = STOREFRONT_MARKETING_GUILD_ID);
+({ GuildFeatures: closure_11, PriceSetAssignmentPurchaseTypes: closure_12, Routes: closure_13, SKUProductLines: closure_14 } = ME);
 let str = "jpg";
-if (arg1(dependencyMap[9]).SUPPORTS_WEBP) {
+if (require("_httpGetWithCountryCodeQuery").SUPPORTS_WEBP) {
   str = "webp";
 }
-const tmp3 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/slayer_storefront/SlayerStorefrontUtils.tsx");
+let result = require("_callSuper").fileFinishedImporting("modules/slayer_storefront/SlayerStorefrontUtils.tsx");
 
 export const LARGE_ASSET_FORMAT = str;
 export const hasPrice = function hasPrice(price) {
   let tmp = null != price.price;
   if (!tmp) {
-    tmp = null != price.prices[closure_12.DEFAULT];
+    tmp = null != price.prices[constants2.DEFAULT];
   }
   return tmp;
 };
@@ -282,8 +291,8 @@ export const getOrderedStorefrontSkuIds = function getOrderedStorefrontSkuIds(pa
   if (!iter.done) {
     do {
       let value = iter2.value;
-      let tmp3 = closure_18;
-      let tmp4 = closure_18(value.skuIds);
+      let tmp3 = _createForOfIteratorHelperLoose;
+      let tmp4 = _createForOfIteratorHelperLoose(value.skuIds);
       let iter3 = tmp4();
       if (!iter3.done) {
         do {
@@ -292,13 +301,13 @@ export const getOrderedStorefrontSkuIds = function getOrderedStorefrontSkuIds(pa
             let addResult = set.add(value);
             let arr = items.push(value);
           }
-          let iter4 = tmp4();
+          iter4 = tmp4();
           iter3 = iter4;
           let tmp7 = value;
         } while (!iter4.done);
       }
       let sections = value.sections;
-      let tmp8 = closure_18;
+      let tmp8 = _createForOfIteratorHelperLoose;
       if (null == sections) {
         sections = [];
       }
@@ -308,8 +317,8 @@ export const getOrderedStorefrontSkuIds = function getOrderedStorefrontSkuIds(pa
       let tmp10 = tmp2;
       if (!iter5.done) {
         do {
-          let tmp11 = closure_18;
-          let tmp12 = closure_18(iter6.value.skuIds);
+          let tmp11 = _createForOfIteratorHelperLoose;
+          let tmp12 = _createForOfIteratorHelperLoose(iter6.value.skuIds);
           let iter7 = tmp12();
           let iter8 = iter7;
           let tmp13 = iter7;
@@ -320,17 +329,17 @@ export const getOrderedStorefrontSkuIds = function getOrderedStorefrontSkuIds(pa
                 let addResult1 = set.add(value);
                 arr = items.push(value);
               }
-              let iter9 = tmp12();
+              iter9 = tmp12();
               iter8 = iter9;
               tmp13 = iter9;
               tmp10 = value;
             } while (!iter9.done);
           }
-          let iter10 = tmp8Result();
+          iter10 = tmp8Result();
           let tmp16 = tmp13;
           iter6 = iter10;
           let tmp17 = tmp12;
-          let tmp2 = tmp10;
+          tmp2 = tmp10;
         } while (!iter10.done);
       }
       iter11 = tmp();
@@ -391,7 +400,7 @@ export const transformSlayerApplicationStorefrontSummaryServer = function transf
   return obj;
 };
 export const transformSlayerApplicationStorefrontServer = function transformSlayerApplicationStorefrontServer(body) {
-  const obj = {
+  let obj = {
     id: body.id,
     publishedAt: parseServerDate(body.published_at),
     applicationId: body.application_id,
@@ -416,25 +425,25 @@ export const transformSlayerApplicationStorefrontServer = function transformSlay
       return obj;
     })
   };
-  const pages = body.pages;
-  obj.assets = importDefault(dependencyMap[10]).keyBy(body.assets, "id");
+  pages = body.pages;
+  obj.assets = importDefault(22).keyBy(body.assets, "id");
   let fromServer;
   if (null != body.application) {
-    fromServer = closure_5.createFromServer(body.application);
+    fromServer = _callSuper.createFromServer(body.application);
   }
   obj.application = fromServer;
   let result;
   if (null != body.storefront_pricing) {
-    result = arg1(dependencyMap[11]).transformStorefrontPricesServer(body.storefront_pricing);
-    const obj3 = arg1(dependencyMap[11]);
+    result = require(5615) /* transformStorefrontSKUPricesServer */.transformStorefrontPricesServer(body.storefront_pricing);
+    const obj3 = require(5615) /* transformStorefrontSKUPricesServer */;
   }
   obj.storefrontPricing = result;
-  const obj2 = importDefault(dependencyMap[10]);
+  const obj2 = importDefault(22);
   let promotions = body.promotions;
   if (null == promotions) {
     promotions = {};
   }
-  obj.promotions = importDefault(dependencyMap[10]).mapValues(promotions, transformSlayerStorefrontPromotionServer);
+  obj.promotions = importDefault(22).mapValues(promotions, transformSlayerStorefrontPromotionServer);
   return obj;
 };
 export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(tenantMetadata, application_id) {
@@ -465,15 +474,15 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
           obj = { primaryIconAsset: undefined, primaryIconLabel: undefined };
         } else {
           obj = {};
-          const obj4 = application_id(dependencyMap[9]);
-          const toURLSafeResult = importDefault(dependencyMap[12]).toURLSafe(obj4.getAssetURL(application_id, first.labelIconAssetId, num, "webp"));
+          const obj4 = require(4369) /* _httpGetWithCountryCodeQuery */;
+          const toURLSafeResult = importDefault(1443).toURLSafe(obj4.getAssetURL(application_id, first.labelIconAssetId, num, "webp"));
           let tmp9;
           if (null != toURLSafeResult) {
             tmp9 = toURLSafeResult;
           }
           obj.primaryIconAsset = tmp9;
           obj.primaryIconLabel = first.label;
-          const obj3 = importDefault(dependencyMap[12]);
+          const obj3 = importDefault(1443);
         }
         return obj;
       }
@@ -493,8 +502,8 @@ export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   }
   if (null != error) {
     if (null != error.thumbnailAssetId) {
-      const obj3 = arg1(dependencyMap[9]);
-      return importDefault(dependencyMap[12]).toURLSafe(obj3.getAssetURL(error.applicationId, error.thumbnailAssetId, num, "webp"));
+      const obj3 = require(4369) /* _httpGetWithCountryCodeQuery */;
+      return importDefault(1443).toURLSafe(obj3.getAssetURL(error.applicationId, error.thumbnailAssetId, num, "webp"));
     }
   }
 };
@@ -530,8 +539,8 @@ export const getCardImageURL = function getCardImageURL(sku, arg1) {
   }
   if (null != cardImageAssetId) {
     if (null != applicationId) {
-      const obj3 = arg1(dependencyMap[9]);
-      return importDefault(dependencyMap[12]).toURLSafe(obj3.getAssetURL(applicationId, cardImageAssetId, num, "webp"));
+      const obj3 = require(4369) /* _httpGetWithCountryCodeQuery */;
+      return importDefault(1443).toURLSafe(obj3.getAssetURL(applicationId, cardImageAssetId, num, "webp"));
     }
   }
 };
@@ -561,8 +570,8 @@ export const getCardBackgroundImageURL = function getCardBackgroundImageURL(sku,
       applicationId = sku.applicationId;
     }
     if (null != applicationId) {
-      const obj3 = arg1(dependencyMap[9]);
-      return importDefault(dependencyMap[12]).toURLSafe(obj3.getAssetURL(sku.applicationId, sku.tenantMetadata.socialLayer.cardBackgroundImageAssetId, num, str));
+      const obj3 = require(4369) /* _httpGetWithCountryCodeQuery */;
+      return importDefault(1443).toURLSafe(obj3.getAssetURL(sku.applicationId, sku.tenantMetadata.socialLayer.cardBackgroundImageAssetId, num, str));
     }
   }
 };
@@ -580,13 +589,14 @@ export const canSeeGameShop = function canSeeGameShop(guildId) {
   return tmp2;
 };
 export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrPopularRecommendations(arr) {
-  const importDefault = arg2;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
   if (0 === arr.length) {
-    let obj = { roundedCard: true, reflectionLongConvert: true };
+    let obj = { hasWishlist: false, hasPopular: false };
   } else {
     obj = {
       hasWishlist: arr.some((arg0) => {
-          let obj = arg1[arg0.id];
+          let obj = dependencyMap[arg0.id];
           if (null == obj) {
             obj = {};
           }
@@ -595,9 +605,9 @@ export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrP
             let tmp;
             let tmp2;
             [tmp, tmp2] = arg0;
-            let hasItem = tmp2 === constants.WISHLIST;
+            let hasItem = tmp2 === outer2_4.WISHLIST;
             if (hasItem) {
-              hasItem = set.has(tmp);
+              hasItem = outer1_1.has(tmp);
             }
             return hasItem;
           });
@@ -611,12 +621,12 @@ export const getHasWishlistOrPopularRecommendations = function getHasWishlistOrP
               let tmp;
               let tmp2;
               [tmp, tmp2] = arg0;
-              let hasItem = tmp2 === constants.RECOMMENDATION;
+              let hasItem = tmp2 === outer2_4.RECOMMENDATION;
               if (hasItem) {
-                hasItem = set.has(tmp);
+                hasItem = outer1_1.has(tmp);
               }
               if (!hasItem) {
-                hasItem = !set.has(tmp);
+                hasItem = !outer1_1.has(tmp);
               }
               return hasItem;
             });
@@ -660,11 +670,11 @@ export const isOnSocialLayerStorefrontSkuPage = function isOnSocialLayerStorefro
   return tmp;
 };
 export const useGetSocialLayerStorefrontGuildIdAndApplication = function useGetSocialLayerStorefrontGuildIdAndApplication(applicationId) {
-  const arg1 = applicationId;
-  let obj = arg1(dependencyMap[14]);
+  const _require = applicationId;
+  let obj = _require(566);
   const items = [closure_7];
-  let stateFromStores = obj.useStateFromStores(items, () => guildIdFromApplicationId.getGuildIdFromApplicationId(arg0));
-  const getOrFetchApplication = arg1(dependencyMap[15]).useGetOrFetchApplication(applicationId);
+  let stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuildIdFromApplicationId(closure_0));
+  const getOrFetchApplication = _require(5470).useGetOrFetchApplication(applicationId);
   obj = {};
   if (null == stateFromStores) {
     let guildId;
@@ -682,19 +692,19 @@ export const getSocialLayerStorefrontApplicationId = function getSocialLayerStor
   return getSocialLayerStorefrontApplicationIdHelper(store.getGuild(guildId), applicationIdFromGuildId);
 };
 export const useGetSocialLayerStorefrontApplicationId = function useGetSocialLayerStorefrontApplicationId(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const items = [closure_7];
-  const stateFromStores = arg1(dependencyMap[14]).useStateFromStores(items, () => applicationIdFromGuildId.getApplicationIdFromGuildId(arg0));
-  const obj = arg1(dependencyMap[14]);
-  const items1 = [closure_6];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_7.getApplicationIdFromGuildId(closure_0));
+  const obj = _require(566);
+  const items1 = [_createForOfIteratorHelperLoose];
   const items2 = [arg0];
-  return getSocialLayerStorefrontApplicationIdHelper(arg1(dependencyMap[14]).useStateFromStores(items1, () => guild.getGuild(arg0), items2), stateFromStores);
+  return getSocialLayerStorefrontApplicationIdHelper(_require(566).useStateFromStores(items1, () => outer1_6.getGuild(closure_0), items2), stateFromStores);
 };
 export const getSocialLayerStorefrontGuildId = function getSocialLayerStorefrontGuildId(applicationId) {
   if (null != applicationId) {
     let guildIdFromApplicationId = store2.getGuildIdFromApplicationId(applicationId);
     if (null == guildIdFromApplicationId) {
-      const application = application.getApplication(applicationId);
+      application = application.getApplication(applicationId);
       let guildId;
       if (null != application) {
         guildId = application.guildId;
@@ -703,7 +713,4 @@ export const getSocialLayerStorefrontGuildId = function getSocialLayerStorefront
     }
     return guildIdFromApplicationId;
   }
-};
-export const transformSocialLayerStorefrontAffinityServer = function transformSocialLayerStorefrontAffinityServer(body) {
-  return importDefault(dependencyMap[10]).mapValues(body, (isEligible) => ({ isEligible: isEligible.is_eligible }));
 };

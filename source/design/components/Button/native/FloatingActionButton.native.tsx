@@ -1,24 +1,27 @@
-// Module ID: 8373
-// Function ID: 66713
+// Module ID: 8379
+// Function ID: 66750
 // Name: styles
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 4547, 1324, 3991, 4542, 7772, 2]
 // Exports: FloatingActionButton
 
-// Module 8373 (styles)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const styles = arg1(dependencyMap[2]).createStyles(() => {
+// Module 8379 (styles)
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const styles = _createForOfIteratorHelperLoose.createStyles(() => {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
   let obj = {};
   obj = {};
-  const merged = Object.assign(importDefault(dependencyMap[3]).shadows.SHADOW_HIGH);
+  const merged = Object.assign(importDefault(689).shadows.SHADOW_HIGH);
   obj.button = obj;
-  obj = { minWidth: arg1(dependencyMap[4]).FAB_BUTTON_SIZE, minHeight: arg1(dependencyMap[4]).FAB_BUTTON_SIZE, padding: 0 };
+  obj = { minWidth: require(4547) /* getButtonPadding */.FAB_BUTTON_SIZE, minHeight: require(4547) /* getButtonPadding */.FAB_BUTTON_SIZE, padding: 0 };
   if (flag) {
-    const obj1 = { borderRadius: importDefault(dependencyMap[3]).radii.lg };
+    const obj1 = { borderRadius: importDefault(689).radii.lg };
     let obj2 = obj1;
   } else {
     obj2 = {};
@@ -27,10 +30,9 @@ const styles = arg1(dependencyMap[2]).createStyles(() => {
   obj.iconButtonPill = obj;
   return obj;
 });
-let closure_6 = {};
+let closure_6 = { mass: 0.5, damping: 80, stiffness: 320 };
 let closure_7 = { code: "function FloatingActionButtonNativeTsx1(){const{withSpring,positionBottom,DEFAULT_POSITION_OFFSET,SPRING_CONFIG,positionRight}=this.__closure;var _positionBottom,_positionRight;return{position:'absolute',bottom:withSpring((_positionBottom=positionBottom)!==null&&_positionBottom!==void 0?_positionBottom:DEFAULT_POSITION_OFFSET,SPRING_CONFIG),right:withSpring((_positionRight=positionRight)!==null&&_positionRight!==void 0?_positionRight:DEFAULT_POSITION_OFFSET,SPRING_CONFIG)};}" };
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/Button/native/FloatingActionButton.native.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Button/native/FloatingActionButton.native.tsx");
 
 export const DEFAULT_POSITION_OFFSET = 16;
 export const useStyles = styles;
@@ -38,33 +40,31 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   let icon;
   let positionBottom;
   ({ icon, positionBottom } = positionRight);
-  const arg1 = positionBottom;
   positionRight = positionRight.positionRight;
-  const importDefault = positionRight;
-  let obj = { <string:3429227929>: -24, <string:1675145708>: null, <string:1671067985>: 1, <string:1372388256>: "Malaysia" };
+  let obj = { icon: 0, positionBottom: 0, positionRight: 0, accessibilityLabel: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(positionRight, obj);
-  const tmp3 = styles(importDefault(dependencyMap[5])("FloatingActionButton"));
-  let obj1 = arg1(dependencyMap[6]);
+  const tmp3 = styles(positionRight(1324)("FloatingActionButton"));
+  let obj1 = positionBottom(3991);
   class F {
     constructor() {
       obj = { position: "absolute" };
-      obj2 = positionBottom(closure_2[7]);
+      obj2 = positionBottom(outer1_2[7]);
       num = 16;
       num2 = 16;
       if (null != positionBottom) {
         num2 = positionBottom;
       }
-      obj.bottom = obj2.withSpring(num2, closure_6);
-      obj3 = positionBottom(closure_2[7]);
+      obj.bottom = obj2.withSpring(num2, outer1_6);
+      obj3 = positionBottom(outer1_2[7]);
       if (null != positionRight) {
         num = positionRight;
       }
-      obj.right = obj3.withSpring(num, closure_6);
+      obj.right = obj3.withSpring(num, outer1_6);
       return obj;
     }
   }
-  obj = { withSpring: arg1(dependencyMap[7]).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
+  obj = { withSpring: positionBottom(4542).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
   F.__closure = obj;
   F.__workletHash = 10762818944671;
   F.__initData = closure_7;
@@ -76,13 +76,13 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   obj1["size"] = "lg";
   obj1["variant"] = "primary";
   let cloneElementResult = icon;
-  if (closure_3.isValidElement(icon)) {
-    const obj2 = { color: importDefault(dependencyMap[3]).colors.WHITE };
-    cloneElementResult = closure_3.cloneElement(icon, obj2);
+  if (result.isValidElement(icon)) {
+    let obj2 = { color: positionRight(689).colors.WHITE };
+    cloneElementResult = result.cloneElement(icon, obj2);
   }
   obj1["icon"] = cloneElementResult;
   obj1["style"] = tmp3.button;
   obj1["pillStyle"] = tmp3.iconButtonPill;
-  obj.children = jsx(arg1(dependencyMap[8]).BaseIconButton, obj1);
-  return jsx(importDefault(dependencyMap[6]).View, obj);
+  obj.children = jsx(positionBottom(7772).BaseIconButton, {});
+  return jsx(positionRight(3991).View, { style: animatedStyle });
 };

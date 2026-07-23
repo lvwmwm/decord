@@ -1,52 +1,59 @@
-// Module ID: 10801
-// Function ID: 83883
+// Module ID: 10811
+// Function ID: 83932
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 4808, 10812, 653, 1198, 10813, 7231, 2]
 
-// Module 10801 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10811 (_createForOfIteratorHelperLoose)
+import convertRouteToNavigation from "convertRouteToNavigation";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getMatchData from "getMatchData";
+import { Routes } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,16 +90,11 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const Routes = arg1(dependencyMap[4]).Routes;
-let tmp2 = () => {
+let tmp2 = (() => {
   class RouteManager {
     constructor() {
-      RouteManager = this;
-      tmp = closure_2(this, RouteManager);
+      self = this;
+      tmp = outer1_2(this, self);
       set = new Set();
       this.rewrites = set;
       set1 = new Set();
@@ -101,7 +103,7 @@ let tmp2 = () => {
       this.timer = -1;
       this.connected = false;
       this.handleConnectionChange = () => {
-        const isConnectedResult = connected.isConnected();
+        const isConnectedResult = outer2_4.isConnected();
         let tmp2 = isConnectedResult;
         if (isConnectedResult) {
           tmp2 = !self.connected;
@@ -109,24 +111,24 @@ let tmp2 = () => {
         self.connected = isConnectedResult;
         if (tmp2) {
           self.routeChangeCount = 0;
-          self.executeRouteRewrites(self(closure_1[5]).getHistory().location, "REPLACE");
-          const obj = self(closure_1[5]);
+          self.executeRouteRewrites(RouteManager(outer2_1[5]).getHistory().location, "REPLACE");
+          const obj = RouteManager(outer2_1[5]);
         }
       };
       this.handleRouteChange = (pathname) => {
         if ("POP" !== arg1) {
           if (!self.executeRouteRewrites(pathname, tmp)) {
             if (!obj.convertRouteToNavigation(pathname)) {
-              self(closure_1[5]).replaceWith(constants.ME);
+              RouteManager(outer2_1[5]).replaceWith(outer2_6.ME);
             }
-            const obj = self(closure_1[6]);
+            obj = RouteManager(outer2_1[6]);
           }
         }
-        const state = store.getState();
+        const state = outer2_5.getState();
         if (state.basePath !== pathname.pathname) {
           state.resetPath(pathname.pathname);
         }
-        const tmp14 = callback(self.listeners);
+        const tmp14 = outer2_7(self.listeners);
         const iter = tmp14();
         let iter2 = iter;
         if (!iter.done) {
@@ -159,27 +161,26 @@ let tmp2 = () => {
       };
       this.flushRoute = () => {
         clearTimeout(self.timer);
-        const state = store.getState();
+        const state = outer2_5.getState();
         if (null != state.path) {
-          self(closure_1[5]).transitionTo(state.path);
-          const obj = self(closure_1[5]);
+          RouteManager(outer2_1[5]).transitionTo(state.path);
+          const obj = RouteManager(outer2_1[5]);
         }
       };
       return;
     }
   }
-  const arg1 = RouteManager;
   let obj = {
     key: "initialize",
     value() {
       this.cleanup();
-      const history = RouteManager(closure_1[5]).getHistory();
+      const history = RouteManager(outer1_1[5]).getHistory();
       this.unlistenHistory = history.listen(this.handleRouteChange);
-      const obj = RouteManager(closure_1[5]);
-      const state = closure_5.getState();
-      state.resetPath(RouteManager(closure_1[5]).getHistory().location.pathname);
-      this.unlistenKeyboardChange = closure_5.subscribe(this.handleKeybindRouteChange);
-      closure_4.addChangeListener(this.handleConnectionChange);
+      const obj = RouteManager(outer1_1[5]);
+      const state = outer1_5.getState();
+      state.resetPath(RouteManager(outer1_1[5]).getHistory().location.pathname);
+      this.unlistenKeyboardChange = outer1_5.subscribe(this.handleKeybindRouteChange);
+      outer1_4.addChangeListener(this.handleConnectionChange);
     }
   };
   const items = [obj, , , , , , , ];
@@ -188,11 +189,11 @@ let tmp2 = () => {
     value(arg0, arg1) {
       this.routeChangeCount = this.routeChangeCount + 1;
       if (this.routeChangeCount < 10) {
-        const tmp8 = callback2(tmp.rewrites);
+        const tmp8 = outer1_7(tmp.rewrites);
         const iter = tmp8();
         let iter2 = iter;
         if (!iter.done) {
-          let obj = RouteManager(closure_1[5]);
+          let obj = RouteManager(outer1_1[5]);
           const valueResult = iter2.value(arg0, arg1);
           while (null == valueResult) {
             let iter3 = tmp8();
@@ -202,9 +203,9 @@ let tmp2 = () => {
           obj = { replacePath: valueResult.path };
           obj.previousPath = obj.getHistory().location.pathname;
           obj.data = obj;
-          RouteManager(closure_1[7]).addBreadcrumb(obj);
-          const obj2 = RouteManager(closure_1[7]);
-          RouteManager(closure_1[5]).replaceWith(valueResult.path, valueResult.state);
+          RouteManager(outer1_1[7]).addBreadcrumb(obj);
+          const obj2 = RouteManager(outer1_1[7]);
+          RouteManager(outer1_1[5]).replaceWith(valueResult.path, valueResult.state);
           return true;
         }
         return false;
@@ -230,39 +231,41 @@ let tmp2 = () => {
         unlistenKeyboardChange.call(self);
       }
       self.unlistenKeyboardChange = undefined;
-      closure_4.removeChangeListener(self.handleConnectionChange);
+      outer1_4.removeChangeListener(self.handleConnectionChange);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "addRouteChangeListener",
     value(arg0) {
-      const RouteManager = this;
+      const self = this;
+      let closure_1 = arg0;
       if (null != this.unlistenHistory) {
-        arg0(RouteManager(arg0[5]).getHistory().location, "REPLACE");
-        const obj = RouteManager(arg0[5]);
+        arg0(RouteManager(outer1_1[5]).getHistory().location, "REPLACE");
+        const obj = RouteManager(outer1_1[5]);
       }
       const listeners = this.listeners;
       listeners.add(arg0);
-      return () => self.removeRouteChangeListener(arg0);
+      return () => self.removeRouteChangeListener(closure_1);
     }
   };
   items[4] = {
     key: "addRouteRewriter",
     value(arg0) {
-      const RouteManager = this;
+      const self = this;
+      let closure_1 = arg0;
       if (null != this.unlistenHistory) {
-        const obj = RouteManager(arg0[5]);
-        const tmp3 = arg0(obj.getHistory().location, RouteManager(arg0[5]).getHistory().action);
+        const obj = RouteManager(outer1_1[5]);
+        const tmp3 = arg0(obj.getHistory().location, RouteManager(outer1_1[5]).getHistory().action);
         if (null != tmp3) {
-          RouteManager(arg0[5]).replaceWith(tmp3.path, tmp3.state);
-          const obj3 = RouteManager(arg0[5]);
+          RouteManager(outer1_1[5]).replaceWith(tmp3.path, tmp3.state);
+          const obj3 = RouteManager(outer1_1[5]);
         }
-        const obj2 = RouteManager(arg0[5]);
+        const obj2 = RouteManager(outer1_1[5]);
       }
       const rewrites = this.rewrites;
       rewrites.add(arg0);
-      return () => self.removeRouteRewriter(arg0);
+      return () => self.removeRouteRewriter(closure_1);
     }
   };
   items[5] = {
@@ -282,12 +285,12 @@ let tmp2 = () => {
   items[7] = {
     key: "getHistory",
     value() {
-      return RouteManager(closure_1[5]).getHistory();
+      return RouteManager(outer1_1[5]).getHistory();
     }
   };
   return callback(RouteManager, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/routing/RouteManager.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/routing/RouteManager.tsx");
 
 export default tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 4023
-// Function ID: 33499
+// Module ID: 4025
+// Function ID: 33508
 // Name: formatSize
-// Dependencies: []
+// Dependencies: [1212, 2]
 // Exports: formatKbSize
 
-// Module 4023 (formatSize)
+// Module 4025 (formatSize)
 function formatSize(result, arg1) {
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -13,16 +13,16 @@ function formatSize(result, arg1) {
   let num = 1000;
   let num2 = 1000;
   if (tmp.useKibibytes) {
-    num2 = closure_2;
+    num2 = c2;
   }
   if (tmp.useKibibytes) {
     num = 1024;
   }
   const rounded = Math.ceil(result / num2);
   if (rounded < num) {
-    const intl2 = require(dependencyMap[0]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString2 = intl2.formatToPlainString;
-    const t2 = require(dependencyMap[0]).t;
+    const t2 = require(1212) /* getSystemLocale */.t;
     if (tmp.useSpace) {
       let obj = { size: rounded };
       let formatToPlainString2Result = formatToPlainString2(t2.cS889N, obj);
@@ -39,9 +39,9 @@ function formatSize(result, arg1) {
     } else {
       result1 = round(result);
     }
-    const intl = require(dependencyMap[0]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const t = require(dependencyMap[0]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (tmp.useSpace) {
       const obj1 = { size: result1 };
       let formatToPlainStringResult = formatToPlainString(t.yhEXX7, obj1);
@@ -52,10 +52,9 @@ function formatSize(result, arg1) {
     return formatToPlainStringResult;
   }
 }
-let closure_2 = 1024;
-let closure_3 = {};
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/FileSizeUtils.tsx");
+let c2 = 1024;
+let closure_3 = { useKibibytes: false, showDecimalForGB: true, useSpace: true };
+let result = require("set").fileFinishedImporting("utils/FileSizeUtils.tsx");
 
 export const BYTE_IN_KB = 1024;
 export const KB_IN_MB = 1024;
@@ -72,14 +71,14 @@ export const formatKbSize = function formatKbSize(MAX_STICKER_FILE_SIZE, arg1) {
   }
   const result = MAX_STICKER_FILE_SIZE / num2;
   if (tmp.useKibibytes) {
-    num = closure_2;
+    num = c2;
   }
   if (result / num >= 1) {
     let formatToPlainStringResult = formatSize(result, tmp);
   } else {
-    const intl = require(dependencyMap[0]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const t = require(dependencyMap[0]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (tmp.useSpace) {
       let obj = {};
       const _Math2 = Math;

@@ -1,30 +1,33 @@
-// Module ID: 7444
-// Function ID: 59704
+// Module ID: 7449
+// Function ID: 59738
 // Name: usePromotionMarketingComponent
-// Dependencies: []
+// Dependencies: [57, 31, 6688, 7130, 7450, 566, 7132, 2]
 // Exports: usePromotionMarketingComponent
 
-// Module 7444 (usePromotionMarketingComponent)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/premium/hooks/usePromotionMarketingComponent.tsx");
+// Module 7449 (usePromotionMarketingComponent)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/hooks/usePromotionMarketingComponent.tsx");
 
 export const usePromotionMarketingComponent = function usePromotionMarketingComponent(PREMIUM_TAB) {
+  let result;
   let tmp6;
-  const arg1 = PREMIUM_TAB;
+  const _require = PREMIUM_TAB;
   const effect = React.useEffect(() => {
-    const result = arg0(stateFromStores[4]).maybeFetchActivePromotions();
+    const result = PREMIUM_TAB(stateFromStores[4]).maybeFetchActivePromotions();
   }, []);
-  const items = [closure_5, closure_4];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => {
-    const marketingComponentByType = store.getMarketingComponentByType(arg0);
+  const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
+  stateFromStores = _require(stateFromStores[5]).useStateFromStores(items, () => {
+    const marketingComponentByType = outer1_5.getMarketingComponentByType(PREMIUM_TAB);
     if (null == marketingComponentByType) {
       return null;
     } else {
       let trialId;
-      const promotionByTypeAndId = store.getPromotionByTypeAndId(arg0(stateFromStores[6]).PromotionTypes.MARKETING_MOMENT, marketingComponentByType.promotionId);
+      const promotionByTypeAndId = outer1_5.getPromotionByTypeAndId(PREMIUM_TAB(stateFromStores[6]).PromotionTypes.MARKETING_MOMENT, marketingComponentByType.promotionId);
       if (null != promotionByTypeAndId) {
         trialId = promotionByTypeAndId.trialId;
       }
@@ -42,10 +45,9 @@ export const usePromotionMarketingComponent = function usePromotionMarketingComp
       return marketingComponentByType;
     }
   });
-  const dependencyMap = stateFromStores;
-  const obj = arg1(dependencyMap[5]);
-  const items1 = [closure_5];
-  const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items1, () => {
+  const obj = _require(stateFromStores[5]);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = _require(stateFromStores[5]).useStateFromStores(items1, () => {
     let promotionId;
     if (null != stateFromStores) {
       promotionId = stateFromStores.promotionId;
@@ -54,16 +56,15 @@ export const usePromotionMarketingComponent = function usePromotionMarketingComp
     if (null != promotionId) {
       str = promotionId;
     }
-    return store.getPromotionByTypeAndId(arg0(stateFromStores[6]).PromotionTypes.MARKETING_MOMENT, str);
+    return outer1_5.getPromotionByTypeAndId(PREMIUM_TAB(stateFromStores[6]).PromotionTypes.MARKETING_MOMENT, str);
   });
   let endDate;
   if (null != stateFromStores1) {
     endDate = stateFromStores1.endDate;
   }
-  const callback = endDate;
-  const obj2 = arg1(dependencyMap[5]);
-  [tmp6, closure_3] = callback(React.useState(false), 2);
-  closure_4 = React.useRef(null);
+  const obj2 = _require(stateFromStores[5]);
+  [tmp6, result] = endDate(React.useState(false), 2);
+  _createForOfIteratorHelperLoose = React.useRef(null);
   const items2 = [endDate];
   const effect1 = React.useEffect(() => {
     if (null != endDate) {
@@ -77,11 +78,11 @@ export const usePromotionMarketingComponent = function usePromotionMarketingComp
           clearTimeout(ref.current);
           const _setTimeout = setTimeout;
           ref.current = setTimeout(() => {
-            callback(true);
+            outer1_3(true);
           }, diff);
         }
         return () => {
-          clearTimeout(ref.current);
+          clearTimeout(outer1_4.current);
         };
       }
       if (diff <= 0) {

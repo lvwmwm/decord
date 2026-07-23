@@ -1,13 +1,13 @@
-// Module ID: 6271
-// Function ID: 50339
+// Module ID: 6276
+// Function ID: 50368
 // Name: LaptopSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6277, 2]
 // Exports: LaptopSpotIllustration
 
-// Module 6271 (LaptopSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/LaptopSpotIllustration.native.tsx");
+// Module 6276 (LaptopSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/LaptopSpotIllustration.native.tsx");
 
 export const LaptopSpotIllustration = function LaptopSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const LaptopSpotIllustration = function LaptopSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6277) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const LaptopSpotIllustration = function LaptopSpotIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

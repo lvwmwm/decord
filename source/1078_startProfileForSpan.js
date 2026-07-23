@@ -1,55 +1,57 @@
 // Module ID: 1078
-// Function ID: 12414
+// Function ID: 12415
 // Name: startProfileForSpan
-// Dependencies: []
+// Dependencies: [5, 1077, 794, 1048, 1004]
 // Exports: startProfileForSpan
 
 // Module 1078 (startProfileForSpan)
-let closure_2 = require(dependencyMap[0]);
+import asyncGeneratorStep from "asyncGeneratorStep";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const startProfileForSpan = function startProfileForSpan(rootSpan) {
-  const require = rootSpan;
+  const _require = rootSpan;
   function onProfileHandler() {
     return _onProfileHandler(...arguments);
   }
   async function _onProfileHandler() {
     if (obj) {
       return obj.resume();
-    } else if (callback) {
-      if (closure_1) {
-        if (closure_3) {
-          if (callback(closure_1[3]).DEBUG_BUILD) {
-            const debug = callback(closure_1[2]).debug;
-            debug.log("[Profiling] profile for:", callback(closure_1[2]).spanToJSON(callback).description, "already exists, returning early");
-            const obj2 = callback(closure_1[2]);
+    } else if (outer2_0) {
+      if (outer2_1) {
+        if (outer2_3) {
+          if (callback(startJSSelfProfileResult[3]).DEBUG_BUILD) {
+            let debug = callback(startJSSelfProfileResult[2]).debug;
+            debug.log("[Profiling] profile for:", callback(startJSSelfProfileResult[2]).spanToJSON(outer2_0).description, "already exists, returning early");
+            let obj2 = callback(startJSSelfProfileResult[2]);
           }
         } else {
-          const stopResult = closure_1.stop();
-          return closure_1.stop().then((arg0) => {
-            if (closure_4) {
-              const WINDOW = callback(closure_1[4]).WINDOW;
-              WINDOW.clearTimeout(closure_4);
-              closure_4 = undefined;
+          const stopResult = outer2_1.stop();
+          return outer2_1.stop().then((arg0) => {
+            if (outer3_4) {
+              const WINDOW = callback(startJSSelfProfileResult[4]).WINDOW;
+              WINDOW.clearTimeout(outer3_4);
+              outer3_4 = undefined;
             }
-            if (callback(closure_1[3]).DEBUG_BUILD) {
-              const debug = callback(closure_1[2]).debug;
+            if (callback(startJSSelfProfileResult[3]).DEBUG_BUILD) {
+              const debug = callback(startJSSelfProfileResult[2]).debug;
               const _HermesInternal = HermesInternal;
-              debug.log("[Profiling] stopped profiling of span: " + callback(closure_1[2]).spanToJSON(callback).description);
-              const obj = callback(closure_1[2]);
+              debug.log("[Profiling] stopped profiling of span: " + callback(startJSSelfProfileResult[2]).spanToJSON(outer3_0).description);
+              const obj = callback(startJSSelfProfileResult[2]);
             }
             if (arg0) {
-              const result = callback(closure_1[1]).addProfileToGlobalCache(closure_2, arg0);
-              const obj3 = callback(closure_1[1]);
-            } else if (callback(closure_1[3]).DEBUG_BUILD) {
-              const debug2 = callback(closure_1[2]).debug;
+              const outer3_3 = arg0;
+              const result = callback(startJSSelfProfileResult[1]).addProfileToGlobalCache(outer3_2, arg0);
+              const obj3 = callback(startJSSelfProfileResult[1]);
+            } else if (callback(startJSSelfProfileResult[3]).DEBUG_BUILD) {
+              const debug2 = callback(startJSSelfProfileResult[2]).debug;
               const _HermesInternal2 = HermesInternal;
-              debug2.log("[Profiling] profiler returned null profile for: " + callback(closure_1[2]).spanToJSON(callback).description, "this may indicate an overlapping span or a call to stopProfiling with a profile title that was never started");
-              const obj2 = callback(closure_1[2]);
+              debug2.log("[Profiling] profiler returned null profile for: " + callback(startJSSelfProfileResult[2]).spanToJSON(outer3_0).description, "this may indicate an overlapping span or a call to stopProfiling with a profile title that was never started");
+              const obj2 = callback(startJSSelfProfileResult[2]);
             }
           }).catch((arg0) => {
-            if (callback(closure_1[3]).DEBUG_BUILD) {
-              const debug = callback(closure_1[2]).debug;
+            if (callback(startJSSelfProfileResult[3]).DEBUG_BUILD) {
+              const debug = callback(startJSSelfProfileResult[2]).debug;
               debug.log("[Profiling] error while stopping profiler:", arg0);
             }
           });
@@ -57,52 +59,52 @@ export const startProfileForSpan = function startProfileForSpan(rootSpan) {
       }
     }
   }
-  let obj = require(dependencyMap[1]);
+  let obj = _require(1077);
   if (obj.isAutomatedPageLoadSpan(rootSpan)) {
-    const result = 1000 * require(dependencyMap[2]).timestampInSeconds();
-    const obj2 = require(dependencyMap[2]);
+    let result = 1000 * _require(794).timestampInSeconds();
+    let obj2 = _require(794);
   }
-  const startJSSelfProfileResult = require(dependencyMap[1]).startJSSelfProfile();
+  const startJSSelfProfileResult = _require(1077).startJSSelfProfile();
   const dependencyMap = startJSSelfProfileResult;
   if (startJSSelfProfileResult) {
-    if (require(dependencyMap[3]).DEBUG_BUILD) {
-      const debug = require(dependencyMap[2]).debug;
-      const _HermesInternal = HermesInternal;
-      debug.log("[Profiling] started profiling span: " + require(dependencyMap[2]).spanToJSON(rootSpan).description);
-      const obj4 = require(dependencyMap[2]);
+    if (_require(1048).DEBUG_BUILD) {
+      let debug = _require(794).debug;
+      let _HermesInternal = HermesInternal;
+      debug.log("[Profiling] started profiling span: " + _require(794).spanToJSON(rootSpan).description);
+      const obj4 = _require(794);
     }
-    const uuid4Result = require(dependencyMap[2]).uuid4();
-    let closure_2 = uuid4Result;
-    let closure_3 = null;
-    const obj5 = require(dependencyMap[2]);
-    const currentScope = require(dependencyMap[2]).getCurrentScope();
+    const uuid4Result = _require(794).uuid4();
+    const asyncGeneratorStep = uuid4Result;
+    let c3 = null;
+    const obj5 = _require(794);
+    const currentScope = _require(794).getCurrentScope();
     obj = { profile_id: uuid4Result, start_timestamp: result };
     currentScope.setContext("profile", obj);
-    const WINDOW = require(dependencyMap[4]).WINDOW;
+    let WINDOW = _require(1004).WINDOW;
     const timeout = WINDOW.setTimeout(() => {
-      if (arg0(startJSSelfProfileResult[3]).DEBUG_BUILD) {
-        const debug = arg0(startJSSelfProfileResult[2]).debug;
-        debug.log("[Profiling] max profile duration elapsed, stopping profiling for:", arg0(startJSSelfProfileResult[2]).spanToJSON(arg0).description);
-        const obj = arg0(startJSSelfProfileResult[2]);
+      if (callback(startJSSelfProfileResult[3]).DEBUG_BUILD) {
+        const debug = callback(startJSSelfProfileResult[2]).debug;
+        debug.log("[Profiling] max profile duration elapsed, stopping profiling for:", callback(startJSSelfProfileResult[2]).spanToJSON(callback).description);
+        const obj = callback(startJSSelfProfileResult[2]);
       }
       onProfileHandler();
-    }, require(dependencyMap[1]).MAX_PROFILE_DURATION_MS);
+    }, _require(1077).MAX_PROFILE_DURATION_MS);
     const end = rootSpan.end;
     let closure_5 = end.bind(rootSpan);
     rootSpan.end = function profilingWrappedSpanEnd() {
-      if (arg0) {
+      if (closure_0) {
         onProfileHandler().then(() => {
-          callback();
+          outer1_5();
         }, () => {
-          callback();
+          outer1_5();
         });
-        let tmp2 = arg0;
+        let tmp2 = closure_0;
         const promise = onProfileHandler();
       } else {
-        tmp2 = callback();
+        tmp2 = callback2();
       }
       return tmp2;
     };
-    const obj6 = require(dependencyMap[2]);
+    const obj6 = _require(794);
   }
 };

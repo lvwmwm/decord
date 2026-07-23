@@ -1,28 +1,32 @@
-// Module ID: 14418
-// Function ID: 108758
+// Module ID: 14532
+// Function ID: 110911
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: []
+// Dependencies: [1838, 14530, 653, 566, 2]
 // Exports: useAllServersOptionSelected, useIsSelectedGuildAHub
 
-// Module 14418 (useUserSafetySettingsSelectedGuildId)
+// Module 14532 (useUserSafetySettingsSelectedGuildId)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
+import { GuildFeatures } from "ME";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function useUserSafetySettingsSelectedGuildId() {
-  return callback2().selectedGuildId;
+  return callback().selectedGuildId;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_3, useUserSafetySettingsSelectedGuildStore: closure_4 } = arg1(dependencyMap[1]));
-const GuildFeatures = arg1(dependencyMap[2]).GuildFeatures;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/privacy_and_safety/useUserSafetySettingsSelectedGuildId.tsx");
+({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_3, useUserSafetySettingsSelectedGuildStore: closure_4 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
+const result = require("ME").fileFinishedImporting("modules/user_settings/privacy_and_safety/useUserSafetySettingsSelectedGuildId.tsx");
 
 export { useUserSafetySettingsSelectedGuildId };
 export const useAllServersOptionSelected = function useAllServersOptionSelected() {
-  return callback2().selectedGuildId === closure_3;
+  return callback().selectedGuildId === closure_3;
 };
 export const useIsSelectedGuildAHub = function useIsSelectedGuildAHub() {
   let hasItem;
-  const callback = useUserSafetySettingsSelectedGuildId();
-  const items = [closure_2];
-  const stateFromStores = callback(dependencyMap[3]).useStateFromStores(items, () => guild.getGuild(closure_0));
+  const _require = useUserSafetySettingsSelectedGuildId();
+  const items = [_createForOfIteratorHelperLoose];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getGuild(closure_0));
   if (null != stateFromStores) {
     const features = stateFromStores.features;
     hasItem = features.has(GuildFeatures.HUB);

@@ -1,10 +1,18 @@
-// Module ID: 14814
-// Function ID: 111655
+// Module ID: 14930
+// Function ID: 113823
 // Name: cardSize
-// Dependencies: []
+// Dependencies: [3767, 4146, 14183, 1327, 22, 2]
 // Exports: filterHappeningNowCards, sortHappeningNowCards
 
-// Module 14814 (cardSize)
+// Module 14930 (cardSize)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function cardSize(kind) {
   kind = kind.kind;
   if ("placeholder" !== kind) {
@@ -22,7 +30,7 @@ function cardSize(kind) {
                       if ("create-channel" !== kind) {
                         if ("customize-guild" !== kind) {
                           if ("student-hub-add-channel" !== kind) {
-                            arg1(dependencyMap[3]).assertNever(kind);
+                            require(1327) /* isDiscordFrontendDevelopment */.assertNever(kind);
                           }
                         }
                       }
@@ -39,18 +47,15 @@ function cardSize(kind) {
   }
   return closure_5;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: closure_5, HAPPENING_NOW_CARD_WIDTH_SMALL_WITH_MARGIN: closure_6, HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN: closure_7 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/happeningNowRankingUtils.tsx");
+({ HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: closure_5, HAPPENING_NOW_CARD_WIDTH_SMALL_WITH_MARGIN: closure_6, HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN: closure_7 } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
+const result = require("HAPPENING_NOW_PANELS_CONTAINER_PADDING").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/happeningNowRankingUtils.tsx");
 
 export { cardSize };
-export const HappeningNowWeights = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001367526821605, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000019191818394193216, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022369976435775283, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000142492558028833, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034991815798887, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001723710261009181, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000190831620819946, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130375421427825 };
+export const HappeningNowWeights = { Stage: 7, Voice: 6, Stream: 5, Game: 4, Listening: 3, CustomStatus: 3, User: 2, Base: 1 };
 export const HAPPENING_NOW_OFFLINE_PENALTY = -1000;
 export const filterHappeningNowCards = function filterHappeningNowCards(first) {
   function hasNoDiscoverableVoiceStates(voiceState) {
-    return function cardHasNoDiscoverableVoiceStates(voiceState) {
+    return (function cardHasNoDiscoverableVoiceStates(voiceState) {
       if ("voiceState" in voiceState) {
         if (null != voiceState.voiceState) {
           const channelId = voiceState.voiceState.channelId;
@@ -58,36 +63,36 @@ export const filterHappeningNowCards = function filterHappeningNowCards(first) {
             return false;
           } else {
             const _Object = Object;
-            const values = Object.values(voiceStatesForChannel.getVoiceStatesForChannel(channelId));
+            const values = Object.values(outer2_4.getVoiceStatesForChannel(channelId));
             return values.length > 0 && values.every((discoverable) => false === discoverable.discoverable);
           }
         }
       }
       return false;
-    }(voiceState);
+    })(voiceState);
   }
   function hasBlockedOrIgnoredUserInChannel(voiceState) {
-    return function cardHasBlockedOrIgnoredUserInVoiceChannel(voiceState) {
+    return (function cardHasBlockedOrIgnoredUserInVoiceChannel(voiceState) {
       if ("voiceState" in voiceState) {
         if (null != voiceState.voiceState) {
           const channelId = voiceState.voiceState.channelId;
           if (null == channelId) {
             return false;
           } else {
-            const voiceStatesForChannel = voiceStatesForChannel.getVoiceStatesForChannel(channelId);
+            const voiceStatesForChannel = outer2_4.getVoiceStatesForChannel(channelId);
             let someResult = null != voiceStatesForChannel;
             if (someResult) {
-              const mapped = callback2(closure_2[4])(voiceStatesForChannel).map((userId) => userId.userId);
-              const found = mapped.filter(callback(closure_2[3]).isNotNullish);
-              someResult = found.some((arg0) => blockedOrIgnored.isBlockedOrIgnored(arg0));
-              const arr = callback2(closure_2[4])(voiceStatesForChannel);
+              const mapped = hasBlockedOrIgnoredUserInChannel(outer2_2[4])(voiceStatesForChannel).map((userId) => userId.userId);
+              const found = mapped.filter(hasNoDiscoverableVoiceStates(outer2_2[3]).isNotNullish);
+              someResult = found.some((arg0) => outer3_3.isBlockedOrIgnored(arg0));
+              const arr = hasBlockedOrIgnoredUserInChannel(outer2_2[4])(voiceStatesForChannel);
             }
             return someResult;
           }
         }
       }
       return false;
-    }(voiceState);
+    })(voiceState);
   }
   return first.filter((voiceState) => {
     let tmp = !hasNoDiscoverableVoiceStates(voiceState);
@@ -101,12 +106,12 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
   const items = [
     (arg0) => {
       let num = 1;
-      if (callback(arg0) === closure_5) {
+      if (outer1_8(arg0) === outer1_5) {
         num = 0;
       }
       return num;
     },
-    (voiceState) => function cardHasNonDiscoverableVoiceStates(voiceState) {
+    (voiceState) => (function cardHasNonDiscoverableVoiceStates(voiceState) {
       if ("voiceState" in voiceState) {
         if (null != voiceState.voiceState) {
           voiceState = voiceState.voiceState;
@@ -117,7 +122,7 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
             let someResult = null != channelId;
             if (someResult) {
               const _Object = Object;
-              const values = Object.values(voiceStatesForChannel.getVoiceStatesForChannel(channelId));
+              const values = Object.values(outer2_4.getVoiceStatesForChannel(channelId));
               someResult = values.some((discoverable) => false === discoverable.discoverable);
             }
             return someResult;
@@ -125,7 +130,7 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
         }
       }
       return false;
-    }(voiceState)
+    })(voiceState)
   ];
-  return arg1(dependencyMap[4]).orderBy(result, items, [null, null]);
+  return require(22) /* apply */.orderBy(result, items, ["asc", "asc"]);
 };

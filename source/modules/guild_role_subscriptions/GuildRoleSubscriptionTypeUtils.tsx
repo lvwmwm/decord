@@ -1,14 +1,14 @@
-// Module ID: 14006
-// Function ID: 106514
+// Module ID: 14120
+// Function ID: 108670
 // Name: getBenefitKey
-// Dependencies: []
+// Dependencies: [14094, 1851, 1212, 2]
 // Exports: formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 14006 (getBenefitKey)
-let closure_2 = require(dependencyMap[0]).GuildRoleSubscriptionBenefitTypes;
-const SubscriptionIntervalTypes = require(dependencyMap[1]).SubscriptionIntervalTypes;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionTypeUtils.tsx");
+// Module 14120 (getBenefitKey)
+import { GuildRoleSubscriptionBenefitTypes as closure_2 } from "MAX_SUBSCRIPTION_TIERS";
+import { SubscriptionIntervalTypes } from "GuildFeatures";
+
+const result = require("getSystemLocale").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionTypeUtils.tsx");
 
 export const getBenefitKey = function getBenefitKey(id) {
   if ("roles" in id) {
@@ -22,13 +22,13 @@ export const getBenefitKey = function getBenefitKey(id) {
 };
 export const formatPlanInterval = function formatPlanInterval(first2) {
   const interval = first2.interval;
-  const intl = require(dependencyMap[2]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   if (SubscriptionIntervalTypes.DAY === interval) {
-    let cuSp8Q = require(dependencyMap[2]).t.3rUmPQ;
+    let cuSp8Q = require(1212) /* getSystemLocale */.t["3rUmPQ"];
   } else if (SubscriptionIntervalTypes.MONTH === interval) {
-    cuSp8Q = require(dependencyMap[2]).t.zuN545;
+    cuSp8Q = require(1212) /* getSystemLocale */.t.zuN545;
   } else if (SubscriptionIntervalTypes.YEAR === interval) {
-    cuSp8Q = require(dependencyMap[2]).t.cuSp8Q;
+    cuSp8Q = require(1212) /* getSystemLocale */.t.cuSp8Q;
   }
   return intl.format(cuSp8Q, { count: first2.interval_count });
 };
@@ -38,23 +38,23 @@ export const formatPlanIntervalDuration = function formatPlanIntervalDuration(in
   if (SubscriptionIntervalTypes.DAY === interval) {
     if (interval_count > 0) {
       if (interval_count % 7 === 0) {
-        const intl4 = require(dependencyMap[2]).intl;
+        const intl4 = require(1212) /* getSystemLocale */.intl;
         let obj = { weeks: interval_count / 7 };
-        let formatToPlainStringResult = intl4.formatToPlainString(require(dependencyMap[2]).t.iVZYyl, obj);
+        let formatToPlainStringResult = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.iVZYyl, obj);
       }
       return formatToPlainStringResult;
     }
-    const intl3 = require(dependencyMap[2]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     obj = { days: interval_count };
-    formatToPlainStringResult = intl3.formatToPlainString(require(dependencyMap[2]).t.jzH70Z, obj);
+    formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.jzH70Z, obj);
   } else if (SubscriptionIntervalTypes.MONTH === interval) {
-    const intl2 = require(dependencyMap[2]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj1 = { months: interval_count };
-    return intl2.formatToPlainString(require(dependencyMap[2]).t.erUSmA, obj1);
+    return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.erUSmA, obj1);
   } else if (SubscriptionIntervalTypes.YEAR === interval) {
-    const intl = require(dependencyMap[2]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { years: interval_count };
-    return intl.formatToPlainString(require(dependencyMap[2]).t.IfYQVC, obj);
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.IfYQVC, obj);
   }
 };
 export const isChannelBenefit = function isChannelBenefit(ref_type) {

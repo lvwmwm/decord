@@ -1,9 +1,14 @@
-// Module ID: 4541
-// Function ID: 39834
+// Module ID: 4545
+// Function ID: 39866
 // Name: getIconSize
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 
-// Module 4541 (getIconSize)
+// Module 4545 (getIconSize)
+import importAllResult from "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 function getIconSize(arg0) {
   if (obj.EXTRA_SMALL_10 === arg0) {
     return 10;
@@ -27,13 +32,10 @@ function getIconStyle(MEDIUM) {
   const width = getIconSize(MEDIUM);
   return { width, height: width };
 }
-const importAllResult = importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const obj = { EXTRA_SMALL_10: "extraSmall10", EXTRA_SMALL: "extraSmall", SMALL: "small", SMALL_20: "small20", MEDIUM: "medium", LARGE: "large", CUSTOM: "custom", REFRESH_SMALL_16: "refreshSmall16", SMALL_14: "small14" };
-let closure_5 = arg1(dependencyMap[3]).createStyles(() => {
+let obj = { EXTRA_SMALL_10: "extraSmall10", EXTRA_SMALL: "extraSmall", SMALL: "small", SMALL_20: "small20", MEDIUM: "medium", LARGE: "large", CUSTOM: "custom", REFRESH_SMALL_16: "refreshSmall16", SMALL_14: "small14" };
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj = { tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.iconColor = obj;
   return obj;
 });
@@ -58,14 +60,14 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((size, ref) =
   }
   ({ accessible, accessibilityLabel } = size);
   if (disableColor) {
-    let obj = { resizeMode, source: size.source };
+    obj = { resizeMode, source: size.source };
     const items = [getIconStyle(MEDIUM), undefined, style];
     obj.style = items;
     obj.accessible = accessible;
     obj.accessibilityLabel = accessibilityLabel;
     obj.fadeDuration = 0;
     obj.ref = ref;
-    return <Image {...obj} />;
+    return <Image resizeMode={resizeMode} source={arg0.source} />;
   } else if (null != color) {
     obj = { tintColor: color };
     let iconColor = obj;
@@ -75,8 +77,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((size, ref) =
 }));
 memoResult.displayName = "Icon";
 memoResult.Sizes = obj;
-const obj3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/void/Icon/native/Icon.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/void/Icon/native/Icon.tsx");
 
 export default memoResult;
 export const IconSizes = obj;

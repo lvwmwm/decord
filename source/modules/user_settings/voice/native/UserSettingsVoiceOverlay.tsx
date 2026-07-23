@@ -1,30 +1,32 @@
-// Module ID: 10710
-// Function ID: 83381
+// Module ID: 10720
+// Function ID: 83430
 // Name: UserSettingsVoiceOverlay
-// Dependencies: []
+// Dependencies: [31, 10710, 33, 624, 10709, 1212, 5504, 10721, 2]
 // Exports: default
 
-// Module 10710 (UserSettingsVoiceOverlay)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOverlay.tsx");
+// Module 10720 (UserSettingsVoiceOverlay)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOverlay.tsx");
 
 export default function UserSettingsVoiceOverlay() {
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => enabled.getEnabled());
+  let obj = require(624) /* defaultAreStatesEqual */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getEnabled());
   obj = {};
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.title = intl.string(arg1(dependencyMap[5]).t.bNqkD9);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.bNqkD9);
   obj.hasIcons = false;
   obj = {};
-  const intl2 = arg1(dependencyMap[5]).intl;
-  obj.label = intl2.string(arg1(dependencyMap[5]).t.9CSZJm);
-  const intl3 = arg1(dependencyMap[5]).intl;
-  obj.subLabel = intl3.string(arg1(dependencyMap[5]).t.Wfoivk);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl2.string(require(1212) /* getSystemLocale */.t["9CSZJm"]);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.subLabel = intl3.string(require(1212) /* getSystemLocale */.t.Wfoivk);
   obj.value = stateFromStores;
-  obj.onValueChange = importDefault(dependencyMap[7]).setEnabled;
-  obj.children = jsx(arg1(dependencyMap[6]).TableSwitchRow, obj);
-  return jsx(arg1(dependencyMap[4]).UserSettingsTableRowGroup, obj);
+  obj.onValueChange = importDefault(10721).setEnabled;
+  obj.children = jsx(require(5504) /* TableSwitchRow */.TableSwitchRow, {});
+  return jsx(require(10709) /* UserSettingsVoice */.UserSettingsTableRowGroup, {});
 };

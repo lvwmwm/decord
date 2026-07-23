@@ -1,25 +1,26 @@
-// Module ID: 8493
-// Function ID: 67830
+// Module ID: 8499
+// Function ID: 67867
 // Name: useMaybeTrackProfileFrameViewed
-// Dependencies: []
+// Dependencies: [31, 6774, 624, 8267, 2]
 // Exports: default
 
-// Module 8493 (useMaybeTrackProfileFrameViewed)
-const _module = require(dependencyMap[0]);
-({ useEffect: closure_2, useRef: closure_3 } = _module);
-let closure_4 = importDefault(dependencyMap[1]);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeTrackProfileFrameViewed.tsx");
+// Module 8499 (useMaybeTrackProfileFrameViewed)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let closure_2;
+let closure_3;
+({ useEffect: closure_2, useRef: closure_3 } = result);
+result = require("defaultAreStatesEqual").fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeTrackProfileFrameViewed.tsx");
 
 export default function useMaybeTrackProfileFrameViewed(skuId) {
+  let closure_2;
+  let closure_3;
   skuId = skuId.skuId;
-  const require = skuId;
   const openedAt = skuId.openedAt;
-  const dependencyMap = openedAt;
   ({ context: closure_2, analyticsLocations: closure_3 } = skuId);
-  const items = [closure_4];
-  const stateFromStores = require(dependencyMap[2]).useStateFromStores(items, () => stateFromStores.getProductFetch(skuId));
-  closure_4 = stateFromStores;
+  const items = [stateFromStores];
+  stateFromStores = skuId(openedAt[2]).useStateFromStores(items, () => stateFromStores.getProductFetch(skuId));
   let closure_5 = callback2(undefined);
   let closure_6 = callback2(undefined);
   let closure_7 = callback2(undefined);

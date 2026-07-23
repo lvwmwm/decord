@@ -1,13 +1,13 @@
-// Module ID: 6575
-// Function ID: 50795
+// Module ID: 6580
+// Function ID: 50824
 // Name: SunIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6581, 2]
 // Exports: SunIllocon
 
-// Module 6575 (SunIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SunIllocon.native.tsx");
+// Module 6580 (SunIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SunIllocon.native.tsx");
 
 export const SunIllocon = function SunIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const SunIllocon = function SunIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6581) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const SunIllocon = function SunIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

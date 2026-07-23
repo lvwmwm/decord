@@ -1,13 +1,12 @@
-// Module ID: 7758
-// Function ID: 61614
+// Module ID: 7764
+// Function ID: 61651
 // Name: isMessageNewerThanImprovedMarkdownEpoch
-// Dependencies: []
+// Dependencies: [21, 2]
 // Exports: isMessageNewerThanImprovedMarkdownEpoch
 
-// Module 7758 (isMessageNewerThanImprovedMarkdownEpoch)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/markup/MarkupEligibilityUtils.tsx");
+// Module 7764 (isMessageNewerThanImprovedMarkdownEpoch)
+const result = require("set").fileFinishedImporting("modules/markup/MarkupEligibilityUtils.tsx");
 
 export const isMessageNewerThanImprovedMarkdownEpoch = function isMessageNewerThanImprovedMarkdownEpoch(timestamp) {
-  return timestamp >= importDefault(dependencyMap[0]).extractTimestamp("1088216706570268682");
+  return timestamp >= importDefault(21).extractTimestamp("1088216706570268682");
 };

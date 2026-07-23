@@ -1,33 +1,33 @@
-// Module ID: 14613
-// Function ID: 110133
+// Module ID: 14728
+// Function ID: 112297
 // Name: navigatorFactory
-// Dependencies: []
+// Dependencies: [31, 33, 1457, 3981, 13085, 9113, 2]
 
-// Module 14613 (navigatorFactory)
-let closure_2 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const navigatorFactory = arg1(dependencyMap[2]).createNavigatorFactory(function ChatPanelNativeStackNavigator(arg0) {
+// Module 14728 (navigatorFactory)
+import result from "result";
+import { jsx } from "jsxProd";
+import Link from "Link";
+
+const require = arg1;
+const navigatorFactory = Link.createNavigatorFactory(function ChatPanelNativeStackNavigator(arg0) {
   let children;
   let id;
   let initialRouteName;
   let screenListeners;
   let screenOptions;
-  let obj = { -1546889341: false, -355386132: false, -1439431477: false, -592728634: false, 1630734434: false };
+  let obj = { id: 0, initialRouteName: 0, children: 0, screenListeners: 0, screenOptions: 0 };
   ({ id, initialRouteName, children, screenListeners, screenOptions } = arg0);
   Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  const navigationBuilder = arg1(dependencyMap[2]).useNavigationBuilder(arg1(dependencyMap[2]).StackRouter, { id, initialRouteName, children, screenListeners, screenOptions });
-  const state = navigationBuilder.state;
-  const arg1 = state;
-  const descriptors = navigationBuilder.descriptors;
-  const dependencyMap = descriptors;
+  let merged = Object.assign(arg0, obj);
+  const navigationBuilder = state(descriptors[2]).useNavigationBuilder(state(descriptors[2]).StackRouter, { id, initialRouteName, children, screenListeners, screenOptions });
+  state = navigationBuilder.state;
+  descriptors = navigationBuilder.descriptors;
   const navigation = navigationBuilder.navigation;
-  const React = navigation;
-  const items = [state, descriptors];
-  const memo = React.useMemo(() => {
+  let items = [state, descriptors];
+  const memo = navigation.useMemo(() => {
     const state = {};
     const merged = Object.assign(state);
-    const items = [...closure_0.routes];
+    const items = [...state.routes];
     state["routes"] = items;
     const items1 = [];
     const items2 = [];
@@ -38,9 +38,9 @@ const navigatorFactory = arg1(dependencyMap[2]).createNavigatorFactory(function 
     if (0 < state.routes.length) {
       do {
         let tmp2 = state.routes[num2];
-        let tmp3 = closure_0;
-        let tmp4 = closure_1;
-        let obj3 = closure_0(closure_1[3]);
+        let tmp3 = state;
+        let tmp4 = descriptors;
+        let obj3 = state(descriptors[3]);
         if (null != obj3.coerceChannelRoute(tmp2)) {
           let arr = items1.push(tmp2);
           let sum = num;
@@ -49,11 +49,11 @@ const navigatorFactory = arg1(dependencyMap[2]).createNavigatorFactory(function 
           }
         } else {
           arr = items2.push(tmp2);
-          let tmp6 = closure_1;
+          let tmp6 = descriptors;
           sum = num;
-          if (tmp2.key in closure_1) {
-            let tmp8 = closure_1;
-            filteredDescriptors[tmp2.key] = closure_1[tmp2.key];
+          if (tmp2.key in descriptors) {
+            let tmp8 = descriptors;
+            filteredDescriptors[tmp2.key] = descriptors[tmp2.key];
             sum = num;
           }
         }
@@ -72,28 +72,28 @@ const navigatorFactory = arg1(dependencyMap[2]).createNavigatorFactory(function 
     return { state, filteredDescriptors };
   }, items);
   const state2 = memo.state;
-  const jsx = state2;
-  const obj2 = arg1(dependencyMap[2]);
-  const items1 = [navigation, , ];
+  const obj2 = state(descriptors[2]);
+  let items1 = [navigation, , ];
   ({ index: arr2[1], key: arr2[2] } = state2);
-  const accessibilityPatchedDescriptors = arg1(dependencyMap[4]).useAccessibilityPatchedDescriptors(memo.filteredDescriptors);
-  const effect = React.useEffect(() => {
+  const accessibilityPatchedDescriptors = state(descriptors[4]).useAccessibilityPatchedDescriptors(memo.filteredDescriptors);
+  const effect = navigation.useEffect(() => {
     let addListenerResult;
     if (null != navigation) {
       if (null != navigation.addListener) {
         addListenerResult = navigation.addListener("tabPress", (arg0) => {
-          let closure_1 = focused.isFocused();
+          let closure_0 = arg0;
+          let closure_1 = outer1_2.isFocused();
           const animationFrame = requestAnimationFrame(() => {
-            let tmp = closure_3.index > 0 && closure_1;
+            let tmp = outer2_3.index > 0 && closure_1;
             if (tmp) {
-              tmp = !arg0.defaultPrevented;
+              tmp = !defaultPrevented.defaultPrevented;
             }
             if (tmp) {
               const obj = {};
-              const StackActions = arg0(closure_1[2]).StackActions;
+              const StackActions = state(descriptors[2]).StackActions;
               const merged = Object.assign(StackActions.popToTop());
-              obj["target"] = closure_3.key;
-              closure_2.dispatch(obj);
+              obj["target"] = outer2_3.key;
+              outer2_2.dispatch(obj);
             }
           });
         });
@@ -107,10 +107,9 @@ const navigatorFactory = arg1(dependencyMap[2]).createNavigatorFactory(function 
   obj["state"] = state2;
   obj["navigation"] = navigation;
   obj["descriptors"] = accessibilityPatchedDescriptors;
-  obj.children = jsx(arg1(dependencyMap[5]).NativeStackView, obj);
-  return <navigationBuilder.NavigationContent {...obj} />;
+  obj.children = state2(state(descriptors[5]).NativeStackView, obj);
+  return state2(navigationBuilder.NavigationContent, obj);
 });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/main_tabs_v2/native/panels/createChatPanelNativeStackNavigator.tsx");
+const result = require("Link").fileFinishedImporting("modules/main_tabs_v2/native/panels/createChatPanelNativeStackNavigator.tsx");
 
 export default navigatorFactory;

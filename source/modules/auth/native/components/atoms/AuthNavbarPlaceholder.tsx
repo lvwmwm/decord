@@ -1,22 +1,22 @@
-// Module ID: 9218
-// Function ID: 72103
+// Module ID: 9225
+// Function ID: 72144
 // Name: AuthNavbarPlaceholder
-// Dependencies: [79429632, 498139136, 131072, 368050176, 5, 57]
+// Dependencies: [31, 33, 4130, 689, 5087, 2]
 // Exports: default
 
-// Module 9218 (AuthNavbarPlaceholder)
-import _slicedToArray from "_slicedToArray";
+// Module 9225 (AuthNavbarPlaceholder)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[3]).unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 };
-obj.navBar = obj;
-let closure_3 = obj.createStyles(obj);
-const result = _slicedToArray.fileFinishedImporting("modules/auth/native/components/atoms/AuthNavbarPlaceholder.tsx");
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 };
+_createForOfIteratorHelperLoose.navBar = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/auth/native/components/atoms/AuthNavbarPlaceholder.tsx");
 
 export default function AuthNavbarPlaceholder() {
-  const tmp = callback();
-  return jsx(arg1(dependencyMap[4]).FauxHeader, { style: callback().navBar, children: null });
+  const tmp = _createForOfIteratorHelperLoose();
+  return jsx(require(5087) /* HeaderBackImage */.FauxHeader, { style: _createForOfIteratorHelperLoose().navBar, children: null });
 };

@@ -1,26 +1,23 @@
-// Module ID: 15668
-// Function ID: 119696
+// Module ID: 15785
+// Function ID: 121869
 // Name: useVoicePanelNavArrowPressed
-// Dependencies: []
+// Dependencies: [31, 10013, 10014, 2]
 // Exports: default
 
-// Module 15668 (useVoicePanelNavArrowPressed)
-let closure_2 = importAll(dependencyMap[0]);
-const VoicePanelControlsModes = arg1(dependencyMap[1]).VoicePanelControlsModes;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelNavArrowPressed.tsx");
+// Module 15785 (useVoicePanelNavArrowPressed)
+import result from "result";
+import { VoicePanelControlsModes } from "VoicePanelControlsModes";
+
+const result = require("dismissPanel").fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelNavArrowPressed.tsx");
 
 export default function useVoicePanelNavArrowPressed() {
-  const context = React.useContext(importDefault(dependencyMap[2]));
-  const focused = context.focused;
-  const importDefault = focused;
-  const setFocused = context.setFocused;
-  const dependencyMap = setFocused;
-  const dismissPanel = context.dismissPanel;
-  const React = dismissPanel;
+  const context = dismissPanel.useContext(focused(setFocused[2]));
+  focused = context.focused;
+  setFocused = context.setFocused;
+  dismissPanel = context.dismissPanel;
   const controlsSpecs = context.controlsSpecs;
-  const VoicePanelControlsModes = controlsSpecs;
   const items = [focused, controlsSpecs, dismissPanel, setFocused];
-  return React.useCallback(() => {
+  return dismissPanel.useCallback(() => {
     const value = focused.get();
     let id;
     if (null != value) {

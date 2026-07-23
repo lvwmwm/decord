@@ -1,9 +1,17 @@
-// Module ID: 16054
-// Function ID: 123258
+// Module ID: 16171
+// Function ID: 125431
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 4810, 5078, 686, 2]
 
-// Module 16054 (_isNativeReflectConstruct)
+// Module 16171 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import tmp2 from "AutomaticLifecycleManager";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,44 +22,11 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleChange() {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(686);
   obj = { type: "SELF_PRESENCE_STORE_UPDATE", status: store.getStatus(), activities: store.getActivities(true), hiddenActivities: store.getHiddenActivities() };
   obj.dispatch(obj);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let tmp2 = (arg0) => {
-  class SelfPresenceStoreManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, SelfPresenceStoreManager);
-      items1 = [...items];
-      obj = closure_5(SelfPresenceStoreManager);
-      tmp2 = closure_4;
-      if (closure_8()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      map = new Map();
-      tmp2Result.stores = map.set(closure_7, closure_9);
-      return tmp2Result;
-    }
-  }
-  const importDefault = SelfPresenceStoreManager;
-  callback2(SelfPresenceStoreManager, arg0);
-  return callback(SelfPresenceStoreManager);
-}(importDefault(dependencyMap[6]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("stores/SelfPresenceStoreManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/SelfPresenceStoreManager.tsx");
 
 export default tmp2;

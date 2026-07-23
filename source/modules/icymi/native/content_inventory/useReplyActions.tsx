@@ -1,50 +1,49 @@
-// Module ID: 15118
-// Function ID: 114062
+// Module ID: 15233
+// Function ID: 116231
 // Name: useReplyActions
-// Dependencies: []
+// Dependencies: [5, 31, 1348, 4468, 1849, 1852, 4123, 33, 566, 7810, 7938, 4140, 15234, 3969, 6924, 6691, 15230, 4098, 3831, 1212, 13790, 8321, 9326, 7006, 15234, 1934, 2]
 // Exports: useReplyActions
 
-// Module 15118 (useReplyActions)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const DraftType = arg1(dependencyMap[3]).DraftType;
-let closure_7 = importDefault(dependencyMap[4]);
-const EmojiIntention = arg1(dependencyMap[5]).EmojiIntention;
-const MessageSendLocation = arg1(dependencyMap[6]).MessageSendLocation;
-const jsx = arg1(dependencyMap[7]).jsx;
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/icymi/native/content_inventory/useReplyActions.tsx");
+// Module 15233 (useReplyActions)
+import set from "set";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { DraftType } from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { EmojiIntention } from "set";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/content_inventory/useReplyActions.tsx");
 
 export const useReplyActions = function useReplyActions(content) {
   content = content.content;
-  const arg1 = content;
-  let closure_3;
+  let stateFromStores1;
   let React;
-  let closure_5;
-  let DraftType;
-  let obj = arg1(closure_2[8]);
+  let callback;
+  let callback1;
+  let obj = content(hotwheels_gaming_activity[8]);
   const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => user.getUser(content.author_id));
-  const importDefault = stateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getUser(content.author_id));
   let str = "unknown";
-  closure_2 = "unknown";
-  const content_type = content.content_type;
-  if (arg1(closure_2[9]).ContentInventoryEntryType.TOP_GAME !== content_type) {
-    if (arg1(closure_2[9]).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-      if (arg1(closure_2[9]).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
-        closure_2 = "hotwheels_custom_status";
+  hotwheels_gaming_activity = "unknown";
+  let content_type = content.content_type;
+  if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.TOP_GAME !== content_type) {
+    if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+      if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+        hotwheels_gaming_activity = "hotwheels_custom_status";
         str = "hotwheels_custom_status";
       }
     }
-    const items1 = [closure_5];
-    const stateFromStores1 = arg1(closure_2[8]).useStateFromStores(items1, () => {
+    const items1 = [callback];
+    stateFromStores1 = content(hotwheels_gaming_activity[8]).useStateFromStores(items1, () => {
       if (null == stateFromStores) {
         return null;
       } else {
         return callback.getChannel(callback.getDMFromUserId(stateFromStores.id));
       }
     });
-    closure_3 = stateFromStores1;
     React = tmp11;
     const items2 = [null != stateFromStores1, ];
     let id;
@@ -52,28 +51,27 @@ export const useReplyActions = function useReplyActions(content) {
       id = stateFromStores1.id;
     }
     items2[1] = id;
-    const effect = React.useEffect(() => tmp11 ? () => {
+    const effect = React.useEffect(() => c4 ? (() => {
       let id;
-      if (null != id) {
-        id = id.id;
+      if (null != outer1_3) {
+        id = outer1_3.id;
       }
-      callback(closure_2[10]).clearAll(id, ChannelMessage.ChannelMessage);
-    } : undefined, items2);
+      stateFromStores(hotwheels_gaming_activity[10]).clearAll(id, callback1.ChannelMessage);
+    }) : undefined, items2);
     const items3 = [stateFromStores, content];
-    const callback = React.useCallback(() => {
+    callback = React.useCallback((() => {
       // CreateGeneratorClosureLongIndex (0x67)
       let closure_0 = stateFromStores1(tmp);
       return function() {
         return callback(...arguments);
       };
-    }(), items3);
-    closure_5 = callback;
+    })(), items3);
     const items4 = [content.id, str, callback];
-    const callback1 = React.useCallback((id) => {
-      let obj = stateFromStores(closure_2[21]);
-      obj.itemInteracted(content.id, closure_2, "press_emoji_send");
-      obj = { itemId: content.id, itemType: closure_2, actionParameters: { "Bool(false)": "alrededor de 1 a\u00F1o", "Bool(false)": "alrededor de {{count}} a\u00F1os", "Bool(false)": "1 a\u00F1o", "Bool(false)": "{{count}} a\u00F1os" } };
-      stateFromStores(closure_2[21]).feedItemActioned(obj);
+    callback1 = React.useCallback((id) => {
+      let obj = stateFromStores(hotwheels_gaming_activity[21]);
+      obj.itemInteracted(content.id, hotwheels_gaming_activity, "press_emoji_send");
+      obj = { itemId: content.id, itemType: hotwheels_gaming_activity, actionParameters: { actionGestureType: "press", actionTargetElement: "reaction_reply_button", actionIntentType: "react", actionDestinationType: null } };
+      stateFromStores(hotwheels_gaming_activity[21]).feedItemActioned(obj);
       if (null != id.id) {
         const _HermesInternal = HermesInternal;
         let surrogates = ":" + id.name + ":";
@@ -82,45 +80,44 @@ export const useReplyActions = function useReplyActions(content) {
       }
       return callback(surrogates);
     }, items4);
-    DraftType = callback1;
     const items5 = [stateFromStores1, callback1];
     obj = {};
     const items6 = [stateFromStores, content, callback1, callback];
     const callback2 = React.useCallback(() => {
-      let obj = content(closure_2[22]);
-      obj = { flex: "HTTP", height: "Date", overflow: "HTTP", pickerIntention: constants.REACTION, onPressEmoji: callback1 };
+      let obj = content(hotwheels_gaming_activity[22]);
+      obj = { pickerIntention: outer1_8.REACTION, autoFocus: false, startExpanded: false, onPressEmoji: callback1 };
       let tmp;
       if (null != stateFromStores1) {
         tmp = stateFromStores1;
       }
       obj.channel = tmp;
-      obj.reactionType = content(closure_2[23]).ReactionTypes.NORMAL;
+      obj.reactionType = content(hotwheels_gaming_activity[23]).ReactionTypes.NORMAL;
       const result = obj.openEmojiPickerActionSheet(obj);
     }, items5);
     obj.openReplyActionSheet = React.useCallback(() => {
       if (null != stateFromStores) {
         const content_type = content.content_type;
         let str = "hotwheels_custom_status";
-        if (content(paths[9]).ContentInventoryEntryType.CUSTOM_STATUS !== content_type) {
-          if (content(paths[9]).ContentInventoryEntryType.TOP_GAME === content_type) {
+        if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.CUSTOM_STATUS !== content_type) {
+          if (content(hotwheels_gaming_activity[9]).ContentInventoryEntryType.TOP_GAME === content_type) {
             str = "hotwheels_gaming_activity";
           } else {
             str = "unknown";
           }
         }
-        let obj = stateFromStores(paths[21]);
+        let obj = stateFromStores(hotwheels_gaming_activity[21]);
         obj.itemInteracted(content.id, str, "press_reply_react");
-        obj = { itemId: content.id, itemType: str, actionParameters: {} };
-        stateFromStores(paths[21]).feedItemActioned(obj);
-        const obj2 = stateFromStores(paths[21]);
+        obj = { itemId: content.id, itemType: str, actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null } };
+        stateFromStores(hotwheels_gaming_activity[21]).feedItemActioned(obj);
+        const obj2 = stateFromStores(hotwheels_gaming_activity[21]);
         obj = { content, author: stateFromStores, sendMessage: callback, onPressEmoji: callback1 };
-        stateFromStores(paths[17]).openLazy(content(paths[25])(paths[24], paths.paths), "ReactActionSheet", obj);
-        const obj4 = stateFromStores(paths[17]);
+        stateFromStores(hotwheels_gaming_activity[17]).openLazy(content(hotwheels_gaming_activity[25])(hotwheels_gaming_activity[24], hotwheels_gaming_activity.paths), "ReactActionSheet", obj);
+        const obj4 = stateFromStores(hotwheels_gaming_activity[17]);
       }
     }, items6);
     obj.openEmojiPicker = callback2;
     return obj;
   }
-  closure_2 = "hotwheels_gaming_activity";
+  hotwheels_gaming_activity = "hotwheels_gaming_activity";
   str = "hotwheels_gaming_activity";
 };

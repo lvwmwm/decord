@@ -1,14 +1,13 @@
-// Module ID: 15919
-// Function ID: 121934
+// Module ID: 16036
+// Function ID: 124107
 // Name: trackInAppReportsFeedback
-// Dependencies: [670, 2, 6]
+// Dependencies: [653, 675, 2]
 // Exports: default
 
-// Module 15919 (trackInAppReportsFeedback)
-import { AnalyticEvents } from "MessageEmbedTypes";
-import _classCallCheck from "_classCallCheck";
+// Module 16036 (trackInAppReportsFeedback)
+import { AnalyticEvents } from "ME";
 
-const result = _classCallCheck.fileFinishedImporting("modules/in_app_reports/trackInAppReportsFeedback.tsx");
+const result = require("set").fileFinishedImporting("modules/in_app_reports/trackInAppReportsFeedback.tsx");
 
 export default function trackInAppReportsFeedback(reportId) {
   let feedback;
@@ -23,7 +22,7 @@ export default function trackInAppReportsFeedback(reportId) {
   if (rating === undefined) {
     rating = null;
   }
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = { reason: problem, report_type: reportType, report_id: reportId, rating, feedback, dont_show_again: reportId.dontShowAgain };
   obj.track(AnalyticEvents.IAR_FEEDBACK_SUBMITTED, obj);
 };

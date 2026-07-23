@@ -1,12 +1,13 @@
-// Module ID: 6431
-// Function ID: 50579
+// Module ID: 6436
+// Function ID: 50608
 // Name: QrCodeSuccessSpotIllustration
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: [33, 5085, 6437, 2]
 // Exports: QrCodeSuccessSpotIllustration
 
-// Module 6431 (QrCodeSuccessSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/QrCodeSuccessSpotIllustration.native.tsx");
+// Module 6436 (QrCodeSuccessSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/QrCodeSuccessSpotIllustration.native.tsx");
 
 export const QrCodeSuccessSpotIllustration = function QrCodeSuccessSpotIllustration(width) {
   let accessibilityLabel;
@@ -26,7 +27,7 @@ export const QrCodeSuccessSpotIllustration = function QrCodeSuccessSpotIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6437) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -34,5 +35,5 @@ export const QrCodeSuccessSpotIllustration = function QrCodeSuccessSpotIllustrat
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

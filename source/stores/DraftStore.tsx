@@ -1,19 +1,20 @@
-// Module ID: 4464
-// Function ID: 39419
+// Module ID: 4468
+// Function ID: 39451
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1348, 4469, 653, 22, 21, 1327, 566, 686, 2]
 
-// Module 4464 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import closure_11 from "__exportStarResult1";
+// Module 4468 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -23,49 +24,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -76,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -103,10 +104,10 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getUserDrafts(id) {
-  let tmp = closure_14[id];
+  let tmp = table[id];
   if (null == tmp) {
     const obj = {};
-    closure_14[id] = obj;
+    table[id] = obj;
     tmp = obj;
   }
   return tmp;
@@ -116,7 +117,7 @@ function handleChanged(type) {
   let draft;
   let draftType;
   ({ channelId, draft, draftType } = type);
-  const channel = channel.getChannel(channelId);
+  const channel = store2.getChannel(channelId);
   let template;
   if (null != channel) {
     template = channel.template;
@@ -163,13 +164,13 @@ function deleteDraft(channelId, draftType, id) {
   if (null == id) {
     return false;
   } else {
-    const tmp4 = getUserDrafts(id)[channelId];
-    if (null == tmp4) {
+    const tmp8 = getUserDrafts(id)[channelId];
+    if (null == tmp8) {
       return false;
     } else {
-      delete r5[r4];
-      if (obj.isEmpty(tmp4)) {
-        delete r1[r2];
+      delete tmp4[tmp3];
+      if (obj.isEmpty(tmp8)) {
+        delete tmp[tmp2];
       }
     }
   }
@@ -178,15 +179,15 @@ function pruneNonexistentChannels() {
   const id = store.getId();
   if (null != id) {
     if (obj.totalUnavailableGuilds <= 0) {
-      const tmp4 = getUserDrafts(id);
-      for (const key10012 in tmp4) {
-        let tmp6 = key10012;
-        let tmp7 = closure_10;
-        if (null != closure_10.getChannel(key10012)) {
+      const tmp6 = getUserDrafts(id);
+      for (const key10012 in tmp6) {
+        let tmp8 = key10012;
+        let tmp9 = store2;
+        if (null != store2.getChannel(key10012)) {
           continue;
         } else {
-          delete r5[r8];
-          // continue
+          delete tmp[tmp2];
+          continue;
         }
         continue;
       }
@@ -197,26 +198,26 @@ function handleChannelDelete(arg0) {
   const id = store.getId();
   if (null != id) {
     getUserDrafts(id);
-    delete r0[r1];
+    delete tmp[tmp2];
   }
   return false;
 }
-let closure_12 = require("__exportStarResult1").MAX_MESSAGE_LENGTH_PREMIUM + 500;
+let closure_12 = require("ME").MAX_MESSAGE_LENGTH_PREMIUM + 500;
 let obj = { ChannelMessage: 0, [0]: "ChannelMessage", ThreadSettings: 1, [1]: "ThreadSettings", FirstThreadMessage: 2, [2]: "FirstThreadMessage", ApplicationLauncherCommand: 3, [3]: "ApplicationLauncherCommand", Poll: 4, [4]: "Poll", SlashCommand: 5, [5]: "SlashCommand", ForwardContextMessage: 6, [6]: "ForwardContextMessage", InteractionModal: 7, [7]: "InteractionModal" };
 let closure_14 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class DraftStore {
     constructor() {
       self = this;
-      tmp = __exportStarResult1(this, DraftStore);
-      obj = closure_6(DraftStore);
-      tmp2 = closure_5;
-      if (closure_15()) {
+      tmp = outer1_3(this, DraftStore);
+      obj = outer1_6(DraftStore);
+      tmp2 = outer1_5;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -225,7 +226,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = DraftStore;
   callback2(DraftStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -238,27 +238,28 @@ let tmp2 = (PersistedStore) => {
       if (null == arg0) {
         obj = {};
       }
-      const tmp = callback5(callback(closure_2[11]).entries(obj));
+      const outer1_14 = obj;
+      const tmp = outer1_16(outer1_1(outer1_2[11]).entries(outer1_14));
       const iter = tmp();
       let iter2 = iter;
       if (!iter.done) {
         do {
-          let tmp2 = closure_8;
-          let tmp3 = closure_8(iter2.value, 2);
-          let tmp6 = closure_16;
-          let tmp7 = closure_1;
-          let tmp8 = closure_2;
+          let tmp2 = outer1_8;
+          let tmp3 = outer1_8(iter2.value, 2);
+          let tmp6 = outer1_16;
+          let tmp7 = outer1_1;
+          let tmp8 = outer1_2;
           [tmp4, tmp5] = tmp3;
-          let obj3 = closure_1(closure_2[11]);
-          let tmp9 = closure_16(obj3.entries(tmp5));
+          let obj3 = outer1_1(outer1_2[11]);
+          let tmp9 = outer1_16(obj3.entries(tmp5));
           let iter3 = tmp9();
           if (!iter3.done) {
             do {
-              let tmp10 = closure_8;
-              let tmp11 = closure_8(iter3.value, 2);
+              let tmp10 = outer1_8;
+              let tmp11 = outer1_8(iter3.value, 2);
               let first = tmp11[0];
-              let tmp13 = closure_13;
-              let tmp14 = tmp11[1][closure_13.ChannelMessage];
+              let tmp13 = outer1_13;
+              let tmp14 = tmp11[1][outer1_13.ChannelMessage];
               if (null != tmp14) {
                 let tmp15 = "" !== tmp14.draft;
                 if (tmp15) {
@@ -266,12 +267,12 @@ let tmp2 = (PersistedStore) => {
                   tmp15 = "" !== str.trim();
                 }
                 if (!tmp15) {
-                  let tmp16 = closure_19;
-                  let tmp17 = closure_13;
-                  let tmp18 = closure_19(first, closure_13.ChannelMessage, tmp4);
+                  let tmp16 = outer1_19;
+                  let tmp17 = outer1_13;
+                  let tmp18 = outer1_19(first, outer1_13.ChannelMessage, tmp4);
                 }
               }
-              let iter4 = tmp9();
+              iter4 = tmp9();
               iter3 = iter4;
               let tmp19 = first;
               let tmp20 = tmp14;
@@ -281,34 +282,35 @@ let tmp2 = (PersistedStore) => {
           iter2 = iter5;
         } while (!iter5.done);
       }
-      self.waitFor(closure_9, closure_10, closure_11);
+      self.waitFor(outer1_9, outer1_10, outer1_11);
     }
   };
   const items = [obj, , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[1] = obj;
   obj = {
     key: "getThreadDraftWithParentMessageId",
     value(arg0) {
-      const self = this;
-      const DraftStore = this;
-      const id = store.getId();
+      let self = this;
+      self = this;
+      let closure_1 = arg0;
+      const id = outer1_9.getId();
       if (null != id) {
         let threadSettings;
-        const tmp4 = callback6(id);
-        const keys = arg0(closure_2[11]).keys(tmp4);
+        const tmp4 = outer1_18(id);
+        const keys = outer1_1(outer1_2[11]).keys(tmp4);
         const found = keys.find((arg0) => {
           const threadSettings = self.getThreadSettings(arg0);
           let parentMessageId;
           if (null != threadSettings) {
             parentMessageId = threadSettings.parentMessageId;
           }
-          return parentMessageId === arg0;
+          return parentMessageId === closure_1;
         });
         if (null != found) {
           threadSettings = self.getThreadSettings(found);
@@ -321,45 +323,45 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getRecentlyEditedDrafts",
     value(arg0) {
-      const DraftStore = arg0;
-      const id = store.getId();
+      let closure_0 = arg0;
+      const id = outer1_9.getId();
       if (null == id) {
         return [];
       } else {
-        const tmp3 = callback6(id);
-        const obj = callback(closure_2[10])(callback6(id));
-        const mapValuesResult = callback(closure_2[10])(callback6(id)).mapValues((arg0) => {
+        const tmp3 = outer1_18(id);
+        const obj = outer1_1(outer1_2[10])(outer1_18(id));
+        const mapValuesResult = outer1_1(outer1_2[10])(outer1_18(id)).mapValues((arg0) => {
           let tmp;
           if (null != arg0) {
             tmp = arg0[closure_0];
           }
           return tmp;
         });
-        const pickByResult = callback(closure_2[10])(callback6(id)).mapValues((arg0) => {
+        const pickByResult = outer1_1(outer1_2[10])(outer1_18(id)).mapValues((arg0) => {
           let tmp;
           if (null != arg0) {
             tmp = arg0[closure_0];
           }
           return tmp;
-        }).pickBy(DraftStore(closure_2[12]).isNotNullish);
-        const mapped = callback(closure_2[10])(callback6(id)).mapValues((arg0) => {
+        }).pickBy(DraftStore(outer1_2[12]).isNotNullish);
+        const mapped = outer1_1(outer1_2[10])(outer1_18(id)).mapValues((arg0) => {
           let tmp;
           if (null != arg0) {
             tmp = arg0[closure_0];
           }
           return tmp;
-        }).pickBy(DraftStore(closure_2[12]).isNotNullish).toPairs().map((arg0) => {
+        }).pickBy(DraftStore(outer1_2[12]).isNotNullish).toPairs().map((arg0) => {
           let tmp;
           [tmp, ] = arg0;
           return { channelId, timestamp, draft };
         });
-        const toPairsResult = callback(closure_2[10])(callback6(id)).mapValues((arg0) => {
+        const toPairsResult = outer1_1(outer1_2[10])(outer1_18(id)).mapValues((arg0) => {
           let tmp;
           if (null != arg0) {
             tmp = arg0[closure_0];
           }
           return tmp;
-        }).pickBy(DraftStore(closure_2[12]).isNotNullish).toPairs();
+        }).pickBy(DraftStore(outer1_2[12]).isNotNullish).toPairs();
         return mapped.sortBy((timestamp) => -timestamp.timestamp).value();
       }
     }
@@ -367,11 +369,11 @@ let tmp2 = (PersistedStore) => {
   items[4] = {
     key: "getDraft",
     value(arg0, arg1) {
-      const id = store.getId();
+      const id = outer1_9.getId();
       if (null == id) {
         return "";
       } else {
-        const tmp4 = callback6(id)[arg0];
+        const tmp4 = outer1_18(id)[arg0];
         if (null != tmp4) {
           if (null != tmp4[arg1]) {
             return tmp6.draft;
@@ -384,24 +386,24 @@ let tmp2 = (PersistedStore) => {
   items[5] = {
     key: "getThreadSettings",
     value(arg0) {
-      const id = store.getId();
+      const id = outer1_9.getId();
       if (null == id) {
         return null;
       } else {
-        const tmp4 = callback6(id)[arg0];
+        const tmp4 = outer1_18(id)[arg0];
         let tmp5 = null;
         if (null != tmp4) {
-          tmp5 = tmp4[closure_13.ThreadSettings];
+          tmp5 = tmp4[outer1_13.ThreadSettings];
         }
         return tmp5;
       }
     }
   };
   return callback(DraftStore, items);
-}(require("__exportStarResult1").PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "DraftStore";
 tmp2.persistKey = "DraftStore";
-const items = [
+let items = [
   (obj) => {
     if (null == obj) {
       return {};
@@ -412,10 +414,10 @@ const items = [
           continue;
         } else {
           obj = {};
-          let tmp2 = closure_13;
-          obj[closure_13.ChannelMessage] = arg0[key10005];
+          let tmp2 = obj;
+          obj[obj.ChannelMessage] = arg0[key10005];
           arg0[key10005] = obj;
-          // continue
+          continue;
         }
         continue;
       }
@@ -432,6 +434,7 @@ const items = [
         for (const key10009 in arg0) {
           let tmp3 = key10009;
           obj[key10009] = arg0[key10009];
+          continue;
         }
         return obj;
       }
@@ -457,7 +460,7 @@ obj = {
   MULTI_ACCOUNT_REMOVE_ACCOUNT: function handleMultiAccountRemove(userId) {
     if (userId.userId in closure_14) {
       userId = userId.userId;
-      delete r1[r0];
+      delete tmp2[tmp];
     }
   },
   GUILD_DELETE: function handleGuildDelete() {
@@ -474,7 +477,7 @@ obj = {
         const tmp10 = getUserDrafts(id);
         if (null == tmp10[channel.parent_id]) {
           return false;
-        } else if (null == tmp11[closure_13.ThreadSettings]) {
+        } else if (null == tmp11[obj.ThreadSettings]) {
           return false;
         } else {
           if (tmp13.parentMessageId !== obj3.castChannelIdAsMessageId(channel.id)) {
@@ -483,7 +486,7 @@ obj = {
             return false;
           } else {
             let draft;
-            if (null != tmp16[closure_13.FirstThreadMessage]) {
+            if (null != tmp16[obj.FirstThreadMessage]) {
               draft = tmp18.draft;
             }
             let str2 = "";
@@ -491,7 +494,7 @@ obj = {
               str2 = draft;
             }
             if ("" !== str2) {
-              let obj = {};
+              obj = {};
               obj = {};
               const _Date = Date;
               obj.timestamp = Date.now();
@@ -502,7 +505,7 @@ obj = {
             deleteDraft(channel.parent_id, obj.ThreadSettings);
             deleteDraft(channel.parent_id, obj.FirstThreadMessage);
           }
-          const obj3 = importDefault(dependencyMap[11]);
+          obj3 = importDefault(21);
         }
       }
     }
@@ -529,15 +532,15 @@ obj = {
       obj = {};
       const _Date = Date;
       obj.timestamp = Date.now();
-      const merged = Object.assign(tmp4[closure_13.ThreadSettings]);
+      const merged = Object.assign(tmp4[obj.ThreadSettings]);
       const merged1 = Object.assign(draft);
       obj["parentChannelId"] = channelId;
       tmp4[obj.ThreadSettings] = obj;
     }
   }
 };
-tmp2 = new tmp2(require("__exportStarResult1"), obj);
-const result = require("__exportStarResult1").fileFinishedImporting("stores/DraftStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/DraftStore.tsx");
 
 export default tmp2;
 export const DraftType = obj;

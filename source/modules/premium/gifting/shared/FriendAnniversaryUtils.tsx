@@ -1,53 +1,53 @@
-// Module ID: 7749
-// Function ID: 61587
+// Module ID: 7755
+// Function ID: 61624
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [3355, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 7749 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 7755 (_createForOfIteratorHelperLoose)
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +58,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,8 +84,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/premium/gifting/shared/FriendAnniversaryUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/gifting/shared/FriendAnniversaryUtils.tsx");
 
 export const FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS = 7;
 export const isFriendAnniversary = function isFriendAnniversary(date) {
@@ -95,14 +94,14 @@ export const isFriendAnniversary = function isFriendAnniversary(date) {
     while (true) {
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      let obj = require(dependencyMap[0]);
+      let obj = require(3355);
       let setYearResult = obj.setYear(date, tmp2 + items[num]);
-      let obj2 = require(dependencyMap[0]);
+      let obj2 = require(3355);
       if (!obj2.isSameDay(setYearResult, date)) {
         let _Math = Math;
         let tmp6 = require;
         let tmp7 = dependencyMap;
-        let obj3 = require(dependencyMap[0]);
+        let obj3 = require(3355);
         if (Math.abs(obj3.differenceInDays(date, setYearResult)) <= 7) {
           break;
         }
@@ -114,14 +113,13 @@ export const isFriendAnniversary = function isFriendAnniversary(date) {
   return false;
 };
 export const yearsSince = function yearsSince(friendsSince) {
-  const obj = require(dependencyMap[0]);
+  const obj = require(3355);
   return Math.round(obj.differenceInMonths(new Date(), friendsSince) / 12);
 };
 export const categorizeFriendAnniversariesByAffinity = function categorizeFriendAnniversariesByAffinity(closure_16, arg1, flag) {
+  let iter2;
   const highestAffinity = new Set();
-  const require = highestAffinity;
   const highAffinity = new Set();
-  const dependencyMap = highAffinity;
   if (flag) {
     const _Math = Math;
     const substr = closure_16.slice(0, Math.ceil(closure_16.length / 2));
@@ -135,7 +133,7 @@ export const categorizeFriendAnniversariesByAffinity = function categorizeFriend
     const tmp2 = _createForOfIteratorHelperLoose(closure_16);
     let iter = tmp2();
     if (!iter.done) {
-      while (true) {
+      do {
         let value = iter.value;
         let tmp4 = arg1(value);
         let tmp5 = null != tmp4 && tmp4 > 0.7;
@@ -146,14 +144,9 @@ export const categorizeFriendAnniversariesByAffinity = function categorizeFriend
         if (tmp7) {
           let addResult1 = highAffinity.add(value);
         }
-        let iter2 = tmp2();
+        iter2 = tmp2();
         iter = iter2;
-        if (iter2.done) {
-          break;
-        } else {
-          // continue
-        }
-      }
+      } while (!iter2.done);
     }
   }
   return { highestAffinity, highAffinity };
@@ -167,7 +160,7 @@ export const pruneTimestampMap = function pruneTimestampMap(messageGiftIntentLas
       continue;
     } else {
       obj[key10006] = tmp2;
-      // continue
+      continue;
     }
     continue;
   }

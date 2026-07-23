@@ -1,28 +1,30 @@
-// Module ID: 13483
-// Function ID: 102329
+// Module ID: 13597
+// Function ID: 104485
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: []
+// Dependencies: [57, 31, 27, 5512, 1345, 482, 33, 689, 4130, 8703, 5802, 1334, 7846, 8206, 1876, 4098, 13598, 1934, 1212, 13589, 5586, 1273, 8697, 7867, 2]
 // Exports: default
 
-// Module 13483 (COLLECTIBLES_PREVIEW_SIZE)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const COLLECTIBLES_PREVIEW_SIZE = arg1(dependencyMap[3]).COLLECTIBLES_PREVIEW_SIZE;
-const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType;
-const NOOP = arg1(dependencyMap[5]).NOOP;
-const jsx = arg1(dependencyMap[6]).jsx;
-const PX_4 = importDefault(dependencyMap[7]).space.PX_4;
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, paddingVertical: PX_4, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, justifyContent: "center", alignItems: "center", borderRadius: importDefault(dependencyMap[7]).radii.xs, overflow: "hidden" };
-obj.previewContainer = obj;
-obj.noneIcon = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
-const obj1 = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
-obj.newBadge = { paddingTop: 0, marginLeft: importDefault(dependencyMap[7]).space.PX_4 };
-let closure_11 = obj.createStyles(obj);
-const obj2 = { paddingTop: 0, marginLeft: importDefault(dependencyMap[7]).space.PX_4 };
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/user_profile/native/UserProfileFrameEditButton.tsx");
+// Module 13597 (COLLECTIBLES_PREVIEW_SIZE)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { NOOP } from "sum";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const PX_4 = require("_createForOfIteratorHelperLoose").space.PX_4;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, paddingVertical: PX_4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
+_createForOfIteratorHelperLoose.previewContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.noneIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+_createForOfIteratorHelperLoose.newBadge = { paddingTop: 0, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { paddingTop: 0, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileFrameEditButton.tsx");
 
 export default function UserProfileFrameEditButton(arg0) {
   let displayProfile;
@@ -30,18 +32,16 @@ export default function UserProfileFrameEditButton(arg0) {
   let pendingProfileFrame;
   let user;
   ({ displayProfile, user } = arg0);
-  const arg1 = user;
   ({ pendingProfileFrame, guildId } = arg0);
-  const importDefault = guildId;
-  let callback;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[9]);
+  let userProfileFrame;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = user(8703);
   const canViewProfileFramesInCollectiblesShop = obj.useCanViewProfileFramesInCollectiblesShop("UserProfileFrameEditButton");
-  let obj1 = arg1(dependencyMap[10]);
-  const items = [arg1(dependencyMap[11]).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE];
-  const tmp3 = callback(obj1.useSelectedDismissibleContent(items), 2);
+  let obj1 = user(5802);
+  const items = [user(1334).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE];
+  const tmp3 = userProfileFrame(obj1.useSelectedDismissibleContent(items), 2);
   const dependencyMap = tmp4;
-  let obj2 = arg1(dependencyMap[12]);
+  let obj2 = user(7846);
   obj = { pendingValue: pendingProfileFrame };
   let profileFrame;
   if (null != displayProfile) {
@@ -61,7 +61,7 @@ export default function UserProfileFrameEditButton(arg0) {
   obj.guildValue = profileFrame1;
   obj.guildId = guildId;
   const profilePreviewValue = obj2.getProfilePreviewValue(obj);
-  let obj4 = arg1(dependencyMap[13]);
+  let obj4 = user(8206);
   let skuId;
   if (null != profilePreviewValue) {
     skuId = profilePreviewValue.skuId;
@@ -75,15 +75,14 @@ export default function UserProfileFrameEditButton(arg0) {
       type = first.type;
     }
   }
-  if (type === arg1(dependencyMap[14]).CollectiblesItemType.PROFILE_FRAME) {
+  if (type === user(1876).CollectiblesItemType.PROFILE_FRAME) {
     const first1 = product.items[0];
   }
-  let obj5 = arg1(dependencyMap[12]);
-  let userProfileFrame = obj5.useUserProfileFrame({ user, guildId });
+  let obj5 = user(7846);
+  userProfileFrame = obj5.useUserProfileFrame({ user, guildId });
   if (undefined !== pendingProfileFrame) {
     userProfileFrame = pendingProfileFrame;
   }
-  callback = userProfileFrame;
   const items1 = [userProfileFrame, guildId, user, tmp3[1]];
   if (canViewProfileFramesInCollectiblesShop) {
     let name;
@@ -91,43 +90,43 @@ export default function UserProfileFrameEditButton(arg0) {
       name = product.name;
     }
     if (null == name) {
-      const intl = arg1(dependencyMap[18]).intl;
-      name = intl.string(arg1(dependencyMap[18]).t.PoWNfe);
+      const intl = user(1212).intl;
+      name = intl.string(user(1212).t.PoWNfe);
     }
     let formatToPlainStringResult = name;
     if (null != guildId) {
       formatToPlainStringResult = name;
       if (null == userProfileFrame) {
-        const intl2 = arg1(dependencyMap[18]).intl;
+        const intl2 = user(1212).intl;
         obj = { label: name };
-        formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[18]).t.ep5D4i, obj);
+        formatToPlainStringResult = intl2.formatToPlainString(user(1212).t.ep5D4i, obj);
       }
     }
     if (fetchCollectiblesProduct.isFetching) {
       obj1 = {};
-      const intl5 = arg1(dependencyMap[18]).intl;
-      obj1.label = intl5.string(arg1(dependencyMap[18]).t.GWrZOd);
-      const intl6 = arg1(dependencyMap[18]).intl;
-      obj1.buttonText = intl6.string(arg1(dependencyMap[18]).t.MKDeyL);
+      const intl5 = user(1212).intl;
+      obj1.label = intl5.string(user(1212).t.GWrZOd);
+      const intl6 = user(1212).intl;
+      obj1.buttonText = intl6.string(user(1212).t.MKDeyL);
       obj1.onPress = NOOP;
-      obj1.leading = jsx(arg1(dependencyMap[20]).ActivityIndicator, {});
+      obj1.leading = jsx(user(5586).ActivityIndicator, { animating: true, size: "large" });
       obj1.loading = true;
       obj1.disabled = true;
       obj1.hideArrow = true;
       obj2 = obj1;
     } else {
       obj2 = {};
-      const intl3 = arg1(dependencyMap[18]).intl;
-      obj2.label = intl3.string(arg1(dependencyMap[18]).t.GWrZOd);
+      const intl3 = user(1212).intl;
+      obj2.label = intl3.string(user(1212).t.GWrZOd);
       let tmp26;
-      if (tmp3[0] === arg1(dependencyMap[11]).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE) {
-        const obj3 = { aria-hidden: true };
+      if (tmp3[0] === user(1334).DismissibleContent.PROFILE_FRAME_USER_PROFILE_NEW_BADGE) {
+        const obj3 = { "aria-hidden": true };
         obj4 = {};
-        const intl4 = arg1(dependencyMap[18]).intl;
-        obj4.text = intl4.string(arg1(dependencyMap[18]).t.y2b7CA);
+        const intl4 = user(1212).intl;
+        obj4.text = intl4.string(user(1212).t.y2b7CA);
         obj4.style = tmp.newBadge;
-        obj3.children = jsx(arg1(dependencyMap[21]).TextBadge, obj4);
-        tmp26 = <View {...obj3} />;
+        obj3.children = jsx(user(1273).TextBadge, {});
+        tmp26 = <View aria-hidden />;
       }
       obj2.labelTrailing = tmp26;
       obj2.buttonText = formatToPlainStringResult;
@@ -136,17 +135,17 @@ export default function UserProfileFrameEditButton(arg0) {
       obj2.onPress = tmp14;
       if (null != first1) {
         const obj6 = { style: tmp.previewContainer };
-        const obj7 = { profileFrame: first1, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * importDefault(dependencyMap[7]).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH };
-        obj6.children = jsx(importDefault(dependencyMap[22]), obj7);
-        let tmp35 = <View {...obj6} />;
-        const tmp40 = importDefault(dependencyMap[22]);
+        const obj7 = { profileFrame: first1, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(689).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: guildId(689).colors.BACKGROUND_SURFACE_HIGH };
+        obj6.children = jsx(guildId(8697), { profileFrame: first1, previewWidth: COLLECTIBLES_PREVIEW_SIZE - 2 * guildId(689).space.PX_8, previewHeight: COLLECTIBLES_PREVIEW_SIZE - 2 * PX_4, profileBackgroundColor: guildId(689).colors.BACKGROUND_SURFACE_HIGH });
+        let tmp35 = <View style={tmp.previewContainer} />;
+        const tmp40 = guildId(8697);
       } else {
-        const obj8 = { source: importDefault(dependencyMap[23]), style: tmp.noneIcon };
-        tmp35 = jsx(arg1(dependencyMap[21]).Icon, obj8);
+        const obj8 = { source: guildId(7867), style: tmp.noneIcon };
+        tmp35 = jsx(user(1273).Icon, { source: guildId(7867), style: tmp.noneIcon });
       }
       obj2.leading = tmp35;
     }
-    return jsx(arg1(dependencyMap[19]).UserProfileEditFormButton, obj2);
+    return jsx(user(13589).UserProfileEditFormButton, obj2);
   } else {
     return null;
   }

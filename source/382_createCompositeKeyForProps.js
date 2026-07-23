@@ -1,10 +1,18 @@
 // Module ID: 382
 // Function ID: 5696
 // Name: createCompositeKeyForProps
-// Dependencies: []
+// Dependencies: [57, 31, 79, 147, 358, 377, 375, 48]
 // Exports: createAnimatedPropsMemoHook
 
 // Module 382 (createCompositeKeyForProps)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function createCompositeKeyForProps(arg0, style) {
   const keys = Object.keys(arg0);
   let num = 0;
@@ -16,13 +24,13 @@ function createCompositeKeyForProps(arg0, style) {
       let tmp5 = arg0[tmp4];
       if (null == style) {
         if ("style" === tmp4) {
-          let tmp19 = closure_1;
-          let tmp20 = closure_3;
-          let tmp21 = closure_1(closure_3[3])(tmp5);
+          let tmp19 = importDefault;
+          let tmp20 = dependencyMap;
+          let tmp21 = importDefault(147)(tmp5);
           let tmp12 = tmp21;
           if (null != tmp21) {
             style = undefined;
-            let tmp22 = closure_13;
+            let tmp22 = createCompositeKeyForObject;
             if (null != style) {
               style = style.style;
             }
@@ -30,35 +38,35 @@ function createCompositeKeyForProps(arg0, style) {
             tmp12 = tmp21;
           }
         } else {
-          let tmp26 = closure_1;
-          let tmp27 = closure_3;
+          let tmp26 = importDefault;
+          let tmp27 = dependencyMap;
           tmp22Result = tmp5;
           tmp12 = tmp2;
-          if (!(tmp5 instanceof closure_1(closure_3[4]))) {
-            let tmp9 = closure_0;
-            let tmp10 = closure_3;
+          if (!(tmp5 instanceof importDefault(358))) {
+            let tmp9 = require;
+            let tmp10 = dependencyMap;
             tmp22Result = tmp5;
             tmp12 = tmp2;
-            if (!(tmp5 instanceof closure_0(closure_3[5]).AnimatedEvent)) {
+            if (!(tmp5 instanceof require(377) /* attachNativeEventImpl */.AnimatedEvent)) {
               let _Array = Array;
               if (Array.isArray(tmp5)) {
                 let tmp17 = tmp5;
                 if (null != style) {
-                  let tmp18 = closure_12;
-                  tmp17 = closure_12(tmp5);
+                  let tmp18 = createCompositeKeyForArray;
+                  tmp17 = createCompositeKeyForArray(tmp5);
                 }
                 tmp22Result = tmp17;
                 tmp12 = tmp2;
               } else {
-                let tmp13 = closure_0;
-                let tmp14 = closure_3;
-                let obj = closure_0(closure_3[6]);
+                let tmp13 = require;
+                let tmp14 = dependencyMap;
+                let obj = require(375) /* _isNativeReflectConstruct */;
                 tmp12 = tmp2;
                 if (obj.isPlainObject(tmp5)) {
                   let tmp15 = tmp5;
                   if (null != style) {
-                    let tmp16 = closure_13;
-                    tmp15 = closure_13(tmp5);
+                    let tmp16 = createCompositeKeyForObject;
+                    tmp15 = createCompositeKeyForObject(tmp5);
                   }
                   tmp22Result = tmp15;
                   tmp12 = tmp2;
@@ -81,13 +89,13 @@ function createCompositeKeyForProps(arg0, style) {
           tmp8 = tmp12;
         }
       } else {
-        let tmp6 = closure_10;
+        let tmp6 = fn;
         tmp7 = tmp;
         tmp8 = tmp2;
       }
       num = num + 1;
       tmp = tmp7;
-      let tmp2 = tmp8;
+      tmp2 = tmp8;
       tmp3 = tmp7;
     } while (num < length);
   }
@@ -100,21 +108,21 @@ function createCompositeKeyForArray(arg0) {
   if (0 < arg0.length) {
     do {
       let tmp3 = arg0[num];
-      let tmp4 = closure_1;
-      let tmp5 = closure_3;
+      let tmp4 = importDefault;
+      let tmp5 = dependencyMap;
       let tmp6 = tmp3;
-      if (!(tmp3 instanceof closure_1(closure_3[4]))) {
+      if (!(tmp3 instanceof importDefault(358))) {
         let _Array = Array;
         if (Array.isArray(tmp3)) {
-          let tmp10 = closure_12;
-          tmp6 = closure_12(tmp3);
+          let tmp10 = createCompositeKeyForArray;
+          tmp6 = createCompositeKeyForArray(tmp3);
         } else {
-          let tmp7 = closure_0;
-          let tmp8 = closure_3;
-          let obj = closure_0(closure_3[6]);
+          let tmp7 = require;
+          let tmp8 = dependencyMap;
+          let obj = require(375) /* _isNativeReflectConstruct */;
           if (obj.isPlainObject(tmp3)) {
-            let tmp9 = closure_13;
-            tmp6 = closure_13(tmp3);
+            let tmp9 = createCompositeKeyForObject;
+            tmp6 = createCompositeKeyForObject(tmp3);
           }
         }
       }
@@ -139,7 +147,7 @@ function createCompositeKeyForArray(arg0) {
   }
   return tmp2;
 }
-function createCompositeKeyForObject(arg0, arg1) {
+function createCompositeKeyForObject(arg0, prototype) {
   const keys = Object.keys(arg0);
   let num = 0;
   let tmp = null;
@@ -147,23 +155,23 @@ function createCompositeKeyForObject(arg0, arg1) {
   if (0 < keys.length) {
     do {
       let tmp3 = keys[num];
-      if (null == arg1) {
+      if (null == prototype) {
         let tmp6 = arg0[tmp3];
-        let tmp7 = closure_1;
-        let tmp8 = closure_3;
+        let tmp7 = importDefault;
+        let tmp8 = dependencyMap;
         let tmp9 = tmp6;
-        if (!(tmp6 instanceof closure_1(closure_3[4]))) {
+        if (!(tmp6 instanceof importDefault(358))) {
           let _Array = Array;
           if (Array.isArray(tmp6)) {
-            let tmp13 = closure_12;
-            tmp9 = closure_12(tmp6);
+            let tmp13 = createCompositeKeyForArray;
+            tmp9 = createCompositeKeyForArray(tmp6);
           } else {
-            let tmp10 = closure_0;
-            let tmp11 = closure_3;
-            let obj = closure_0(closure_3[6]);
+            let tmp10 = require;
+            let tmp11 = dependencyMap;
+            let obj = require(375) /* _isNativeReflectConstruct */;
             if (obj.isPlainObject(tmp6)) {
-              let tmp12 = closure_13;
-              tmp9 = closure_13(tmp6);
+              let tmp12 = createCompositeKeyForObject;
+              tmp9 = createCompositeKeyForObject(tmp6);
             }
           }
         }
@@ -181,7 +189,7 @@ function createCompositeKeyForObject(arg0, arg1) {
           let tmp17 = tmp9;
         }
       } else {
-        let tmp4 = closure_10;
+        let tmp4 = fn;
         tmp5 = tmp;
       }
       num = num + 1;
@@ -191,23 +199,23 @@ function createCompositeKeyForObject(arg0, arg1) {
   }
   return tmp2;
 }
-function areCompositeKeysEqual(arg0, arg1, arg2) {
-  if (arg0 === arg1) {
+function areCompositeKeysEqual(arg0, prototype) {
+  if (arg0 === prototype) {
     return true;
   } else {
     if (null !== arg0) {
-      if (null !== arg1) {
+      if (null !== prototype) {
         const _Object = Object;
         const keys = Object.keys(arg0);
         const _Object2 = Object;
-        if (keys.length !== Object.keys(arg1).length) {
+        if (keys.length !== Object.keys(prototype).length) {
           return false;
         } else {
           let num = 0;
           if (0 < length) {
-            while (fn(arg1, keys[num])) {
+            while (fn(prototype, keys[num])) {
               let tmp3 = arg0[tmp];
-              let tmp4 = arg1[tmp];
+              let tmp4 = prototype[tmp];
               if ("style" === tmp) {
                 let tmp10 = areCompositeKeyComponentsEqual;
                 if (!areCompositeKeyComponentsEqual(tmp3, tmp4)) {
@@ -217,10 +225,10 @@ function areCompositeKeysEqual(arg0, arg1, arg2) {
               } else {
                 let tmp5 = importDefault;
                 let tmp6 = dependencyMap;
-                if (!(tmp3 instanceof importDefault(dependencyMap[4]))) {
-                  let tmp7 = arg1;
+                if (!(tmp3 instanceof importDefault(358))) {
+                  let tmp7 = require;
                   let tmp8 = dependencyMap;
-                  if (!(tmp3 instanceof arg1(dependencyMap[5]).AnimatedEvent)) {
+                  if (!(tmp3 instanceof require(377) /* attachNativeEventImpl */.AnimatedEvent)) {
                     if (null == arg2) {
                       if (tmp3 !== tmp4) {
                         let flag3 = false;
@@ -254,7 +262,7 @@ function areCompositeKeysEqual(arg0, arg1, arg2) {
 function areCompositeKeyComponentsEqual(arg0, arg1) {
   if (arg0 === arg1) {
     return true;
-  } else if (arg0 instanceof importDefault(dependencyMap[4])) {
+  } else if (arg0 instanceof importDefault(358)) {
     return tmp;
   } else {
     const _Array = Array;
@@ -287,7 +295,7 @@ function areCompositeKeyComponentsEqual(arg0, arg1) {
           } else {
             let num3 = 0;
             if (0 < length) {
-              while (fn(importDefault(dependencyMap[7])(arg1), keys[num3])) {
+              while (fn(importDefault(48)(arg1), keys[num3])) {
                 let tmp13 = areCompositeKeyComponentsEqual;
                 if (!areCompositeKeyComponentsEqual(arg0[tmp9], arg1[tmp9])) {
                   break;
@@ -302,59 +310,58 @@ function areCompositeKeyComponentsEqual(arg0, arg1) {
         } else {
           return false;
         }
-        const obj2 = arg1(dependencyMap[6]);
+        obj2 = require(375) /* _isNativeReflectConstruct */;
       } else {
         return false;
       }
-      const obj = arg1(dependencyMap[6]);
+      obj = require(375) /* _isNativeReflectConstruct */;
     }
   }
 }
-let closure_4 = importDefault(dependencyMap[0]);
-({ useInsertionEffect: closure_5, useMemo: closure_6, useRef: closure_7, useState: closure_8 } = arg1(dependencyMap[1]));
+({ useInsertionEffect: closure_5, useMemo: closure_6, useRef: closure_7, useState: closure_8 } = result);
 let fn = Object.hasOwn;
 if (null == fn) {
   fn = (arg0, arg1) => hasOwnProperty.call(arg0, arg1);
 }
 
 export function createAnimatedPropsMemoHook(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   function useAnimatedPropsMemo_ref(arg0, arg1) {
-    arg0 = arg1;
+    let closure_0 = arg1;
     const items = [arg1];
-    const tmp = callback3(() => callback(arg1, arg1), items);
-    const tmp2 = callback4();
+    const tmp = outer1_6(() => outer2_11(closure_0, closure_0), items);
+    const tmp2 = outer1_7();
     const useAnimatedPropsMemo_ref = tmp2;
     let current = tmp2.current;
     if (null == current) {
       const obj = { compositeKey: tmp, node: arg0() };
       current = obj;
     }
-    const useAnimatedPropsMemo_state = current;
     const items1 = [current];
-    callback2(() => {
-      tmp2.current = current;
+    outer1_5(() => {
+      closure_1.current = current;
     }, items1);
     return current.node;
   }
   function useAnimatedPropsMemo_state(arg0) {
-    const useAnimatedPropsMemo_ref = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     const items = [arg1];
-    const tmp = callback3(() => callback(arg1, arg0), items);
+    const tmp = outer1_6(() => outer2_11(closure_1, closure_0), items);
     const useAnimatedPropsMemo_state = tmp;
-    const tmp2 = callback(callback5(() => ({ allowlist: arg0, compositeKey: tmp, value: arg0() })), 2);
-    let tmp3 = iter.allowlist === arg0;
+    const tmp2 = outer1_4(outer1_8(() => ({ allowlist: callback, compositeKey: closure_2, value: callback() })), 2);
+    let tmp3 = iter.allowlist === closure_0;
     if (tmp3) {
-      tmp3 = callback6(iter.compositeKey, tmp);
+      tmp3 = outer1_14(iter.compositeKey, tmp);
     }
     if (!tmp3) {
-      const obj = { allowlist: arg0, compositeKey: tmp, value: arg0() };
+      const obj = { allowlist: closure_0, compositeKey: tmp, value: arg0() };
       tmp2[1](obj);
     }
     return tmp2[0].value;
   }
   return function useAnimatedPropsMemo(arg0, arg1) {
-    return useAnimatedPropsMemo_state(closure_3[2]).avoidStateUpdateInAnimatedPropsMemo() ? useAnimatedPropsMemo_ref : useAnimatedPropsMemo_state(arg0, arg1);
+    return useAnimatedPropsMemo_state(outer1_3[2]).avoidStateUpdateInAnimatedPropsMemo() ? useAnimatedPropsMemo_ref : useAnimatedPropsMemo_state(arg0, arg1);
   };
 }
 export { createCompositeKeyForProps };

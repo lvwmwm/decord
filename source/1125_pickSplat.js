@@ -1,12 +1,14 @@
 // Module ID: 1125
-// Function ID: 12817
+// Function ID: 12818
 // Name: pickSplat
-// Dependencies: []
+// Dependencies: [57, 1118, 794]
 // Exports: clearNavigationContext, getActiveRootSpan, getNavigationContext, initializeRouterUtils, resolveRouteNameAndSource, setNavigationContext, transactionNameHasWildcard
 
 // Module 1125 (pickSplat)
+import _slicedToArray from "_slicedToArray";
+
 function pickSplat(params) {
-  return params.params.* || "";
+  return params.params["*"] || "";
 }
 function trimSlash(pathname) {
   let substr = pathname;
@@ -30,10 +32,10 @@ function pathIsWildcardAndHasChildren(sum, route) {
   }
   return flag;
 }
-function routeIsDescendant(children) {
-  let tmp = children.children || !children.element;
+function routeIsDescendant(route) {
+  let tmp = route.children || !route.element;
   if (!tmp) {
-    const path = children.path;
+    const path = route.path;
     tmp = null == path;
     const obj = path;
   }
@@ -46,7 +48,7 @@ function sendIndexPath(sum, pathname, arg2) {
   let arr = sum;
   if (!sum) {
     let tmp2 = pathname;
-    if (closure_4) {
+    if (c4) {
       tmp2 = stripBasenameFromPathname(pathname, arg2);
     }
     arr = tmp2;
@@ -109,32 +111,33 @@ function prefixWithSlash(combined) {
   return combined;
 }
 function rebuildRoutePathFromAllRoutes(arg0, _location) {
-  const require = arg0;
-  const dependencyMap = _location;
+  let closure_0 = arg0;
+  let closure_1 = _location;
   const arr = callback(arg0, _location);
   if (arr) {
     if (0 !== arr.length) {
       function _loop(item10012) {
+        let closure_0 = item10012;
         if (item10012.route.path) {
           if ("*" !== item10012.route.path) {
-            let str2 = function pickPath(route) {
+            let str2 = (function pickPath(route) {
               let substr = arr;
               if ("*" === route.route.path || ""[route.route.path || "".length - 1]) {
                 substr = arr.slice(0, -1);
               }
               return substr;
-            }(item10012);
-            const tmp4 = callback2(arg1.pathname, callback3(item10012.pathnameBase));
-            if (arg1.pathname === tmp4) {
-              let obj = { v: callback(tmp4) };
+            })(item10012);
+            const tmp4 = outer1_13(_location.pathname, outer1_14(item10012.pathnameBase));
+            if (_location.pathname === tmp4) {
+              let obj = { v: outer1_7(tmp4) };
             } else {
               obj = {};
               if (!str2) {
                 str2 = "";
               }
               obj = { pathname: tmp4 };
-              obj.v = callback(callback(str2) + callback3(callback4(item10012.filter((arg0) => arg0 !== arg0.route), obj)));
-              const tmp5Result = callback(str2);
+              obj.v = outer1_7(outer1_7(str2) + outer1_14(outer1_15(closure_0.filter((arg0) => arg0 !== item10012.route), obj)));
+              const tmp5Result = outer1_7(str2);
             }
             return obj;
           }
@@ -147,8 +150,6 @@ function rebuildRoutePathFromAllRoutes(arg0, _location) {
         if (_loopResult) {
           obj.return();
           return _loopResult.v;
-        } else {
-          // continue
         }
       }
       return "";
@@ -160,23 +161,24 @@ function locationIsInsideDescendantRoute(_location, arg1) {
   const tmp = callback(arg1, _location);
   if (tmp) {
     for (const item10008 of tmp) {
-      let tmp4 = closure_10;
+      let tmp4 = routeIsDescendant;
       let tmp3 = item10008;
-      if (closure_10(item10008.route)) {
-        let tmp5 = closure_6;
+      if (routeIsDescendant(item10008.route)) {
+        let tmp5 = pickSplat;
         let tmp6 = item10008;
-        if (closure_6(tmp3)) {
+        if (pickSplat(tmp3)) {
           obj.return();
           let flag = true;
           return true;
         }
       }
+      continue;
     }
   }
   return false;
 }
 function getFallbackTransactionName(pathname, arg1) {
-  if (closure_4) {
+  if (c4) {
     let tmp = stripBasenameFromPathname(pathname.pathname, arg1);
   } else {
     tmp = pathname.pathname || "";
@@ -247,9 +249,9 @@ function getNormalizedName(arg0, pathname, items, arg3) {
                         let tmp28 = pathEndsWithWildcard;
                         let tmp29 = sum;
                         if (!pathEndsWithWildcard(sum)) {
-                          let tmp30 = closure_4;
+                          let tmp30 = c4;
                           let tmp31 = str;
-                          if (!closure_4) {
+                          if (!c4) {
                             tmp31 = str2;
                           }
                           let tmp32 = combined;
@@ -268,8 +270,8 @@ function getNormalizedName(arg0, pathname, items, arg3) {
                         let num3 = -1;
                         sum = sum.slice(0, -1);
                       }
-                      let tmp37 = closure_4;
-                      if (!closure_4) {
+                      let tmp37 = c4;
+                      if (!c4) {
                         str = str2;
                       }
                       let tmp38 = sum;
@@ -284,7 +286,7 @@ function getNormalizedName(arg0, pathname, items, arg3) {
               }
             }
           }
-          // continue
+          continue;
         }
         const items2 = [getFallbackTransactionName(pathname, tmp), "url"];
         return items2;
@@ -294,7 +296,7 @@ function getNormalizedName(arg0, pathname, items, arg3) {
       }
     }
   }
-  if (closure_4) {
+  if (c4) {
     pathname = stripBasenameFromPathname(pathname.pathname, str2);
   } else {
     pathname = pathname.pathname;
@@ -302,35 +304,34 @@ function getNormalizedName(arg0, pathname, items, arg3) {
   const items4 = [pathname, "url"];
   return items4;
 }
-let closure_3 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = false;
+let c4 = false;
 let closure_5 = [];
 
 export const clearNavigationContext = function clearNavigationContext(setNavigationContextResult) {
   let token;
-  if (null != arr[closure_5.length - 1]) {
+  if (null != arr[arr.length - 1]) {
     token = tmp.token;
   }
   if (token === setNavigationContextResult) {
-    const arr = arr.pop();
+    arr = arr.pop();
   }
 };
 export const getActiveRootSpan = function getActiveRootSpan() {
-  const activeSpan = require(dependencyMap[2]).getActiveSpan();
+  const activeSpan = require(794) /* registerSpanErrorInstrumentation */.getActiveSpan();
   let rootSpan;
   if (activeSpan) {
-    rootSpan = require(dependencyMap[2]).getRootSpan(activeSpan);
-    const obj2 = require(dependencyMap[2]);
+    rootSpan = require(794) /* registerSpanErrorInstrumentation */.getRootSpan(activeSpan);
+    const obj2 = require(794) /* registerSpanErrorInstrumentation */;
   }
   if (rootSpan) {
-    const op = require(dependencyMap[2]).spanToJSON(rootSpan).op;
+    const op = require(794) /* registerSpanErrorInstrumentation */.spanToJSON(rootSpan).op;
     if ("navigation" === op) {
       const tmp7 = rootSpan;
     }
     return tmp7;
   }
-  const obj = require(dependencyMap[2]);
+  const obj = require(794) /* registerSpanErrorInstrumentation */;
 };
 export const getNavigationContext = function getNavigationContext() {
   let tmp = null;
@@ -345,6 +346,7 @@ export const getNavigationContext = function getNavigationContext() {
 export { getNormalizedName };
 export { getNumberOfUrlSegments };
 export const initializeRouterUtils = function initializeRouterUtils(arg0, flag) {
+  let closure_2 = arg0;
   let closure_4 = arguments.length > 1 && undefined !== arguments[1] && arguments[1];
 };
 export { locationIsInsideDescendantRoute };
@@ -368,7 +370,7 @@ export const resolveRouteNameAndSource = function resolveRouteNameAndSource(_loc
     str2 = "route";
   }
   if (!tmp) {
-    const tmp11 = callback2(getNormalizedName(arg1, _location, items, str), 2);
+    const tmp11 = _slicedToArray(getNormalizedName(arg1, _location, items, str), 2);
     first = tmp11[0];
     str2 = tmp11[1];
   }
@@ -379,16 +381,16 @@ export const resolveRouteNameAndSource = function resolveRouteNameAndSource(_loc
   return items;
 };
 export { routeIsDescendant };
-export const setNavigationContext = function setNavigationContext(closure_1, closure_2) {
+export const setNavigationContext = function setNavigationContext(outer1_1, outer1_2) {
   let obj = {};
   if (arr.length >= 10) {
-    if (require(dependencyMap[1]).DEBUG_BUILD) {
-      const debug = require(dependencyMap[2]).debug;
+    if (require(1118).DEBUG_BUILD) {
+      const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
       debug.warn("[React Router] Navigation context stack overflow - removing oldest context");
     }
-    let arr = arr.shift();
+    arr = arr.shift();
   }
-  obj = { token: obj, targetPath: closure_1, span: closure_2 };
+  obj = { token: obj, targetPath: outer1_1, span: outer1_2 };
   arr = arr.push(obj);
   return obj;
 };

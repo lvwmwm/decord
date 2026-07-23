@@ -1,69 +1,67 @@
-// Module ID: 11291
-// Function ID: 87869
+// Module ID: 11301
+// Function ID: 87919
 // Name: MentionableIcon
-// Dependencies: []
+// Dependencies: [57, 31, 4122, 1910, 1849, 482, 33, 4130, 689, 566, 11302, 9104, 11303, 1273, 11304, 11305, 11299, 4098, 11303, 1934, 2]
 // Exports: default
 
-// Module 11291 (MentionableIcon)
+// Module 11301 (MentionableIcon)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import { StatusTypes } from "sum";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function MentionableIcon(mentionable) {
   mentionable = mentionable.mentionable;
-  let obj = arg1(dependencyMap[9]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
   obj = {};
-  const tmp = callback2();
-  obj.icon = jsx(arg1(dependencyMap[11]).UserCircleIcon, {});
+  const tmp = _createForOfIteratorHelperLoose();
+  obj.icon = jsx(require(9104) /* UserCircleIcon */.UserCircleIcon, { size: "sm", color: "interactive-text-default" });
   obj.wrapperStyle = tmp.iconWrapper;
-  const tmp4 = jsx(importDefault(dependencyMap[10]), obj);
+  const tmp4 = jsx(importDefault(11302), {});
   if (null == mentionable) {
     return tmp4;
   } else {
     const type = mentionable.type;
-    if (arg1(dependencyMap[12]).MentionableItemTypes.USER === type) {
-      obj = { user: mentionable.result.user, guildId: mentionable.guildId, animate: !stateFromStores, size: arg1(dependencyMap[13]).AvatarSizes.REFRESH_MEDIUM_32 };
-      return jsx(arg1(dependencyMap[13]).Avatar, obj);
-    } else if (arg1(dependencyMap[12]).MentionableItemTypes.ROLE === type) {
+    if (require(11303) /* AppLauncherMentionableListActionSheet */.MentionableItemTypes.USER === type) {
+      obj = { user: mentionable.result.user, guildId: mentionable.guildId, animate: !stateFromStores, size: require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32 };
+      return jsx(require(1273) /* Button */.Avatar, { user: mentionable.result.user, guildId: mentionable.guildId, animate: !stateFromStores, size: require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32 });
+    } else if (require(11303) /* AppLauncherMentionableListActionSheet */.MentionableItemTypes.ROLE === type) {
       const obj1 = { role: mentionable.result };
-      return jsx(arg1(dependencyMap[14]).RoleIcon, obj1);
+      return jsx(require(11304) /* getRoleColor */.RoleIcon, { role: mentionable.result });
     } else {
-      const GLOBAL = arg1(dependencyMap[12]).MentionableItemTypes.GLOBAL;
+      const GLOBAL = require(11303) /* AppLauncherMentionableListActionSheet */.MentionableItemTypes.GLOBAL;
       return tmp4;
     }
   }
-  const tmp3 = importDefault(dependencyMap[10]);
+  const tmp3 = importDefault(11302);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const StatusTypes = arg1(dependencyMap[5]).StatusTypes;
-const jsx = arg1(dependencyMap[6]).jsx;
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_MOD_SUBTLE };
-obj.iconWrapper = obj;
-let closure_10 = obj.createStyles(obj);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/app_launcher/native/options/mentionable/AppLauncherMentionableOption.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+_createForOfIteratorHelperLoose.iconWrapper = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/options/mentionable/AppLauncherMentionableOption.tsx");
 
 export default function AppLauncherMentionableOption(option) {
   let autoFocus;
   let channel;
+  let _slicedToArray;
   let hasError;
   let style;
   option = option.option;
-  const arg1 = option;
   const initialValue = option.initialValue;
-  const importDefault = initialValue;
   const onMentionablePress = option.onMentionablePress;
-  const dependencyMap = onMentionablePress;
-  ({ onActionSheetDismiss: closure_3, channel } = option);
-  const React = channel;
+  ({ onActionSheetDismiss: _slicedToArray, channel } = option);
   const onPress = option.onPress;
   const guild_id = channel.guild_id;
-  let closure_6 = guild_id;
   ({ style, autoFocus, hasError } = option);
-  const tmp = callback(React.useState(() => {
+  let tmp = callback(channel.useState(() => {
     if (null != initialValue) {
       if ("roleMention" === initialValue.type) {
         const role = guild_id.getRole(guild_id, initialValue.roleId);
@@ -91,10 +89,9 @@ export default function AppLauncherMentionableOption(option) {
     return null;
   }), 2);
   const first = tmp[0];
-  let closure_7 = first;
   let closure_8 = tmp[1];
   const items = [onMentionablePress, option.name, initialValue, first];
-  const effect = React.useEffect(() => {
+  const effect = channel.useEffect(() => {
     let tmp = null != initialValue;
     if (tmp) {
       tmp = null == first;
@@ -105,14 +102,14 @@ export default function AppLauncherMentionableOption(option) {
     }
   }, items);
   const items1 = [first, guild_id];
-  const memo = React.useMemo(() => {
+  const memo = channel.useMemo(() => {
     if (null == first) {
       return null;
     } else {
       const type = first.type;
       if (option(onMentionablePress[12]).MentionableItemTypes.USER === type) {
         const obj = { guildId: guild_id, user: first.result.user };
-        return callback(initialValue(onMentionablePress[15]), obj);
+        return outer1_9(initialValue(onMentionablePress[15]), obj);
       } else if (option(onMentionablePress[12]).MentionableItemTypes.ROLE === type) {
         return first.result.name;
       } else if (option(onMentionablePress[12]).MentionableItemTypes.GLOBAL === type) {
@@ -120,7 +117,7 @@ export default function AppLauncherMentionableOption(option) {
       }
     }
   }, items1);
-  const obj = { style, option, hasError, selected: null != first };
+  let obj = { style, option, hasError, selected: null != first };
   let tmp7;
   if (null != first) {
     tmp7 = memo;
@@ -137,13 +134,13 @@ export default function AppLauncherMentionableOption(option) {
       channel,
       onMentionablePress(mentionable) {
         mentionable = mentionable.mentionable;
-        callback2(mentionable);
-        callback({ mentionable });
+        outer1_8(mentionable);
+        outer1_2({ mentionable });
       },
-      onActionSheetDismiss: closure_3
+      onActionSheetDismiss: _slicedToArray
     };
     obj.openLazy(option(onMentionablePress[19])(onMentionablePress[18], onMentionablePress.paths), option(onMentionablePress[12]).APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, obj);
   };
   obj.autoFocus = autoFocus;
-  return jsx(importDefault(dependencyMap[16]), obj);
+  return jsx(initialValue(onMentionablePress[16]), { style, option, hasError, selected: null != first });
 };

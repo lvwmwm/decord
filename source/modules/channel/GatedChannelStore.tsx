@@ -1,9 +1,28 @@
 // Module ID: 1908
-// Function ID: 21473
+// Function ID: 21474
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1909, 1352, 1911, 1348, 1917, 1910, 1838, 1849, 653, 3749, 3750, 3751, 566, 686, 2]
 
 // Module 1908 (_isNativeReflectConstruct)
+import _callSuper from "_callSuper";
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
+import isChannelAccessDeniedBy from "isChannelAccessDeniedBy";
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { THREAD_CHANNEL_TYPES } from "_callSuper";
+import { hasPermission } from "GuildRoleRecordTypeTag";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_13 from "_createForOfIteratorHelperLoose";
+import closure_14 from "_isNativeReflectConstruct";
+import ME from "ME";
+import set from "_possibleConstructorReturn";
+
+let closure_15;
+let closure_16;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +32,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +85,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -97,7 +116,7 @@ function isSubscriptionGated(role) {
   let isPreviewingRoles;
   role = role.role;
   ({ guildId, isPreviewingRoles } = role);
-  const tmp = !arg1(dependencyMap[14]).isSubscriptionRole(role);
+  const tmp = !require(3749) /* isSubscriptionRole */.isSubscriptionRole(role);
   let tmp2 = !tmp;
   if (!tmp) {
     let tmp4 = !tmp3;
@@ -106,15 +125,15 @@ function isSubscriptionGated(role) {
       if (null != role) {
         tmp8 = role;
       }
-      const tmp9 = !arg1(dependencyMap[14]).isSubscriptionRoleAvailableForPurchase(tmp8);
+      const tmp9 = !require(3749) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(tmp8);
       let tmp10 = !tmp9;
       if (tmp9) {
         let flag = false;
         if (null != role) {
-          const currentUser = currentUser.getCurrentUser();
+          currentUser = currentUser.getCurrentUser();
           flag = false;
           if (null != currentUser) {
-            const member = member.getMember(guildId, currentUser.id);
+            member = member.getMember(guildId, currentUser.id);
             let hasItem = null != member;
             if (hasItem) {
               const roles = member.roles;
@@ -126,7 +145,7 @@ function isSubscriptionGated(role) {
         tmp10 = flag;
       }
       tmp4 = tmp10;
-      const obj2 = arg1(dependencyMap[14]);
+      const obj2 = require(3749) /* isSubscriptionRole */;
     }
     tmp2 = tmp4;
   }
@@ -150,9 +169,9 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
       let tmp5 = isSubscriptionGated;
       let obj = { guildId: guild.id, role: store.getRole(guild.id, tmp3), isPreviewingRoles: isViewingServerShopResult };
       if (isSubscriptionGated(obj)) {
-        let tmp6 = guild;
+        let tmp6 = require;
         let tmp7 = dependencyMap;
-        let obj2 = guild(dependencyMap[15]);
+        let obj2 = require(3750) /* isChannelAccessDeniedBy */;
         if (obj2.isChannelAccessGrantedBy(channel, channel.permissionOverwrites[tmp3])) {
           break;
         }
@@ -172,9 +191,9 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
           let tmp12 = isSubscriptionGated;
           obj = { guildId: guild.id, role: value, isPreviewingRoles: isViewingServerShopResult };
           if (isSubscriptionGated(obj)) {
-            let tmp13 = guild;
+            let tmp13 = require;
             let tmp14 = dependencyMap;
-            let obj5 = guild(dependencyMap[15]);
+            let obj5 = require(3750) /* isChannelAccessDeniedBy */;
             if (obj5.hasViewChannelPermission(value)) {
               break;
             }
@@ -189,14 +208,14 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
   return false;
 }
 function computeForChannel(guild_id, id) {
-  if (null == closure_17[guild_id]) {
+  if (null == table[guild_id]) {
     return false;
   } else {
-    const channel = channel.getChannel(id);
+    channel = channel.getChannel(id);
     if (null == channel) {
       return false;
     } else {
-      const guild = guild.getGuild(channel.getGuildId());
+      guild = guild.getGuild(channel.getGuildId());
       if (null == guild) {
         return false;
       } else {
@@ -222,10 +241,10 @@ function handleInitialize() {
   set.clear();
 }
 function handleGuildUpdate(arg0) {
-  delete r1[r0];
+  delete tmp2[tmp];
 }
 function handleGuildRoleUpdate(arg0) {
-  delete r0[r1];
+  delete tmp[tmp2];
 }
 function handleChannelUpdate(channel) {
   channel = channel.channel;
@@ -235,35 +254,22 @@ function handleChannelUpdate(channel) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const THREAD_CHANNEL_TYPES = arg1(dependencyMap[6]).THREAD_CHANNEL_TYPES;
-const hasPermission = arg1(dependencyMap[7]).hasPermission;
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-let closure_12 = importDefault(dependencyMap[10]);
-let closure_13 = importDefault(dependencyMap[11]);
-let closure_14 = importDefault(dependencyMap[12]);
-({ Permissions: closure_15, GuildFeatures: closure_16 } = arg1(dependencyMap[13]));
+({ Permissions: closure_15, GuildFeatures: closure_16 } = ME);
 let closure_17 = {};
-const set = new Set();
-let tmp4 = (Store) => {
+let set = new Set();
+let tmp4 = ((Store) => {
   class GatedChannelStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GatedChannelStore);
-      obj = closure_5(GatedChannelStore);
-      tmp2 = closure_4;
-      if (closure_19()) {
+      tmp = outer1_2(this, GatedChannelStore);
+      obj = outer1_5(GatedChannelStore);
+      tmp2 = outer1_4;
+      if (outer1_19()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -272,12 +278,11 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GatedChannelStore;
   callback2(GatedChannelStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_10, closure_11, closure_12, closure_13, closure_7, closure_14);
+      this.waitFor(outer1_10, outer1_11, outer1_12, outer1_13, outer1_7, outer1_14);
     }
   };
   const items = [obj, , , ];
@@ -287,31 +292,31 @@ let tmp4 = (Store) => {
       if (null == guildId) {
         return false;
       } else {
-        let obj = closure_17[guildId];
+        let obj = outer1_17[guildId];
         if (null == obj) {
-          const guild = guild.getGuild(guildId);
+          const guild = outer1_13.getGuild(guildId);
           if (null != guild) {
             const _Set = Set;
             const set = new Set();
-            closure_17[guildId] = set;
+            outer1_17[guildId] = set;
             const features = guild.features;
-            if (features.has(constants.ROLE_SUBSCRIPTIONS_ENABLED)) {
-              const mutableGuildChannelsForGuild = store.getMutableGuildChannelsForGuild(guildId);
+            if (features.has(outer1_16.ROLE_SUBSCRIPTIONS_ENABLED)) {
+              const mutableGuildChannelsForGuild = outer1_10.getMutableGuildChannelsForGuild(guildId);
               for (const key10008 in mutableGuildChannelsForGuild) {
                 let tmp17 = key10008;
                 let tmp18 = mutableGuildChannelsForGuild[key10008];
-                let tmp19 = closure_23;
-                if (!closure_23(tmp18, guild)) {
+                let tmp19 = outer1_23;
+                if (!outer1_23(tmp18, guild)) {
                   continue;
                 } else {
                   let addResult = set.add(tmp18.id);
-                  // continue
+                  continue;
                 }
                 continue;
               }
             }
           }
-          obj = closure_17[guildId];
+          obj = outer1_17[guildId];
         }
         let hasItem = null != obj;
         if (hasItem) {
@@ -330,7 +335,7 @@ let tmp4 = (Store) => {
       if (tmp) {
         let isChannelGatedResult = self.isChannelGated(arg0, arg1);
         if (isChannelGatedResult) {
-          isChannelGatedResult = !set2.has(arg0);
+          isChannelGatedResult = !outer1_18.has(arg0);
         }
         tmp = isChannelGatedResult;
       }
@@ -347,14 +352,14 @@ let tmp4 = (Store) => {
       } else if (self.isChannelGated(arg0, channelId)) {
         return true;
       } else {
-        const channel = store.getChannel(channelId);
+        const channel = outer1_10.getChannel(channelId);
         let tmp3 = null == channel || null == channel.parent_id;
         if (!tmp3) {
           let type;
           if (null != channel) {
             type = channel.type;
           }
-          tmp3 = !set.has(type);
+          tmp3 = !outer1_8.has(type);
         }
         let result = !tmp3;
         if (!tmp3) {
@@ -365,9 +370,9 @@ let tmp4 = (Store) => {
     }
   };
   return callback(GatedChannelStore, items);
-}(importDefault(dependencyMap[17]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "GatedChannelStore";
-tmp4 = new tmp4(importDefault(dependencyMap[18]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: handleInitialize,
   OVERLAY_INITIALIZE: handleInitialize,
   CACHE_LOADED_LAZY: handleInitialize,
@@ -393,8 +398,8 @@ tmp4 = new tmp4(importDefault(dependencyMap[18]), {
         let value = iter2.value;
         let tmp2 = flag;
         if (null != value.guild_id) {
-          let tmp3 = closure_24;
-          if (closure_24(value.guild_id, value.id)) {
+          let tmp3 = computeForChannel;
+          if (computeForChannel(value.guild_id, value.id)) {
             flag = true;
           }
           tmp2 = flag;
@@ -419,59 +424,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[18]), {
     set.add(guildId.guildId);
   }
 });
-const obj = {
-  CONNECTION_OPEN: handleInitialize,
-  OVERLAY_INITIALIZE: handleInitialize,
-  CACHE_LOADED_LAZY: handleInitialize,
-  GUILD_CREATE: handleGuildUpdate,
-  GUILD_UPDATE: handleGuildUpdate,
-  GUILD_DELETE: handleGuildUpdate,
-  GUILD_ROLE_CREATE: handleGuildRoleUpdate,
-  GUILD_ROLE_UPDATE: handleGuildRoleUpdate,
-  GUILD_ROLE_DELETE: handleGuildRoleUpdate,
-  IMPERSONATE_UPDATE: handleGuildRoleUpdate,
-  IMPERSONATE_STOP: handleGuildRoleUpdate,
-  CHANNEL_CREATE: handleChannelUpdate,
-  CHANNEL_DELETE: handleChannelUpdate,
-  CHANNEL_UPDATES: function handleChannelUpdates(channels) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(channels.channels);
-    const iter = tmp();
-    let iter2 = iter;
-    let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp2 = flag;
-        if (null != value.guild_id) {
-          let tmp3 = closure_24;
-          if (closure_24(value.guild_id, value.id)) {
-            flag = true;
-          }
-          tmp2 = flag;
-        }
-        iter3 = tmp();
-        flag = tmp2;
-        iter2 = iter3;
-        flag2 = tmp2;
-      } while (!iter3.done);
-    }
-    return flag2;
-  },
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: function handleRoleSubscriptionsRestrictionsUpdate(guildId) {
-    guildId = guildId.guildId;
-    if (obj.isRestrictedFromShowingGuildPurchaseEntryPoints(guildId.restrictions)) {
-      obj2.add(guildId);
-    } else {
-      obj2.delete(guildId);
-    }
-  },
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: function handleRoleSubscriptionsRestrictionsFetchFailure(guildId) {
-    set.add(guildId.guildId);
-  }
-};
-const tmp2 = arg1(dependencyMap[13]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/channel/GatedChannelStore.tsx");
+let result = set.fileFinishedImporting("modules/channel/GatedChannelStore.tsx");
 
 export default tmp4;

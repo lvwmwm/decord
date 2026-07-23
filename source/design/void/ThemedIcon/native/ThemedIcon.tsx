@@ -1,21 +1,23 @@
-// Module ID: 12896
-// Function ID: 98456
+// Module ID: 13010
+// Function ID: 100612
 // Name: ThemedIcon
-// Dependencies: []
+// Dependencies: [31, 33, 3834, 4545, 2]
 // Exports: default
 
-// Module 12896 (ThemedIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/void/ThemedIcon/native/ThemedIcon.tsx");
+// Module 13010 (ThemedIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("map").fileFinishedImporting("design/void/ThemedIcon/native/ThemedIcon.tsx");
 
 export default function ThemedIcon(themedColor) {
   let obj = Object.create(null);
   obj.themedColor = 0;
   const merged = Object.assign(themedColor, obj);
-  obj = arg1(dependencyMap[2]);
+  obj = require(3834) /* map */;
   const token = obj.useToken(themedColor.themedColor);
   obj = { color: token };
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(dependencyMap[3]), obj);
+  return jsx(importDefault(4545), { color: token });
 };

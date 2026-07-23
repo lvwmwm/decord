@@ -1,22 +1,24 @@
-// Module ID: 7953
-// Function ID: 63451
+// Module ID: 7959
+// Function ID: 63488
 // Name: BetaTag
-// Dependencies: []
+// Dependencies: [31, 27, 6671, 33, 4130, 689, 4554, 668, 4126, 1212, 2]
 // Exports: default
 
-// Module 7953 (BetaTag)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const Gradients = arg1(dependencyMap[2]).Gradients;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { XgH9eh: false, incidentDateNew: 800, getPremiumTypeDisplayName: 16, STAGE_VIDEO_LIMIT: 20, EmojiInteractionPoint: "heading-lg/normal", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.container = obj;
-obj.text = { textTransform: "uppercase" };
-let closure_6 = obj.createStyles(obj);
-const obj1 = { SMALL: "small", MEDIUM: "medium" };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/void/BetaTag/native/BetaTag.tsx");
+// Module 7959 (BetaTag)
+import "result";
+import { View } from "get ActivityIndicator";
+import { Gradients } from "items";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.text = { textTransform: "uppercase" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { SMALL: "small", MEDIUM: "medium" };
+const result = require("items").fileFinishedImporting("design/void/BetaTag/native/BetaTag.tsx");
 
 export default function BetaTag(gradient) {
   let size;
@@ -30,7 +32,7 @@ export default function BetaTag(gradient) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp2 = callback();
+  const tmp2 = _createForOfIteratorHelperLoose();
   let str = "text-xs/bold";
   if (obj1.SMALL !== size) {
     if (obj1.MEDIUM === size) {
@@ -41,27 +43,27 @@ export default function BetaTag(gradient) {
     let obj = {};
     const items = [tmp2.container, style];
     obj.style = items;
-    obj.start = arg1(dependencyMap[7]).HorizontalGradient.START;
-    obj.end = arg1(dependencyMap[7]).HorizontalGradient.END;
+    obj.start = require(668) /* keys */.HorizontalGradient.START;
+    obj.end = require(668) /* keys */.HorizontalGradient.END;
     obj.colors = Gradients.PREMIUM_TIER_2_TRI_COLOR;
     obj = { variant: str, color: "text-overlay-light" };
     const items1 = [tmp2.text, textStyle];
     obj.style = items1;
-    const intl2 = arg1(dependencyMap[9]).intl;
-    obj.children = intl2.string(arg1(dependencyMap[9]).t.oW0eUd);
-    obj.children = tmp4(arg1(dependencyMap[8]).Text, obj);
-    let tmp4Result = tmp4(importDefault(dependencyMap[6]), obj);
-    const tmp11 = importDefault(dependencyMap[6]);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj.children = intl2.string(require(1212) /* getSystemLocale */.t.oW0eUd);
+    obj.children = tmp4(require(4126) /* Text */.Text, obj);
+    let tmp4Result = tmp4(importDefault(4554), obj);
+    const tmp11 = importDefault(4554);
   } else {
     obj = {};
     const items2 = [tmp2.container, style];
     obj.style = items2;
-    const obj1 = { variant: str, color: "text-overlay-light" };
+    obj1 = { variant: str, color: "text-overlay-light" };
     const items3 = [tmp2.text, textStyle];
     obj1.style = items3;
-    const intl = arg1(dependencyMap[9]).intl;
-    obj1.children = intl.string(arg1(dependencyMap[9]).t.oW0eUd);
-    obj.children = tmp4(arg1(dependencyMap[8]).Text, obj1);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj1.children = intl.string(require(1212) /* getSystemLocale */.t.oW0eUd);
+    obj.children = tmp4(require(4126) /* Text */.Text, obj1);
     tmp4Result = tmp4(View, obj);
   }
   return tmp4Result;

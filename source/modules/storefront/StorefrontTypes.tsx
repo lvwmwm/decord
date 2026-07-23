@@ -1,11 +1,10 @@
-// Module ID: 5612
-// Function ID: 47850
+// Module ID: 5617
+// Function ID: 47877
 // Name: StorefrontPromotionRewardType
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5612 (StorefrontPromotionRewardType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/storefront/StorefrontTypes.tsx");
+// Module 5617 (StorefrontPromotionRewardType)
+const result = require("set").fileFinishedImporting("modules/storefront/StorefrontTypes.tsx");
 
 export const StorefrontPromotionRewardType = { DISCOUNT: 1, [1]: "DISCOUNT", FIXED_PRICE: 2, [2]: "FIXED_PRICE", ACTION: 3, [3]: "ACTION" };
 export const StorefrontDiscountTypes = { FLAT: 1, [1]: "FLAT", PERCENT: 2, [2]: "PERCENT" };

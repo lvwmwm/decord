@@ -1,43 +1,45 @@
-// Module ID: 7686
-// Function ID: 61361
+// Module ID: 7692
+// Function ID: 61398
 // Name: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
-// Dependencies: []
+// Dependencies: [1348, 1838, 7690, 7691, 7649, 7651, 1212, 4022, 7652, 2]
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 7686 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionTierAchievedSystemMessage.tsx");
+// Module 7692 (createUserPremiumGuildSubscriptionTierAchievedSystemMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("createUserPremiumGuildSubscriptionSystemMessage").fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionTierAchievedSystemMessage.tsx");
 
 export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = function createUserPremiumGuildSubscriptionTierAchievedSystemMessage(message, TIER_1) {
   message = message.message;
-  const channel = channel.getChannel(message.getChannelId());
+  channel = channel.getChannel(message.getChannelId());
   if (null == channel) {
-    return TIER_1(dependencyMap[2]).createUserPremiumGuildSubscriptionSystemMessage(message);
+    return require(7690) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
   } else {
-    const guild = guild.getGuild(channel.getGuildId());
+    guild = guild.getGuild(channel.getGuildId());
     if (null == guild) {
-      return TIER_1(dependencyMap[2]).createUserPremiumGuildSubscriptionSystemMessage(message);
+      return require(7690) /* createUserPremiumGuildSubscriptionSystemMessage */.createUserPremiumGuildSubscriptionSystemMessage(message);
     } else {
-      const tmp18 = importDefault(dependencyMap[3])(message);
-      const messageAuthorWithProcessedColor = TIER_1(dependencyMap[4]).getMessageAuthorWithProcessedColor(message);
+      const tmp18 = importDefault(7691)(message);
+      const messageAuthorWithProcessedColor = require(7649) /* getMessageAuthorWithProcessedColor */.getMessageAuthorWithProcessedColor(message);
       let obj = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
-      const tmp21 = importDefault(dependencyMap[5])(obj);
+      const tmp21 = importDefault(7651)(obj);
       obj = {};
       if (tmp18 > 1) {
-        const intl2 = TIER_1(dependencyMap[6]).intl;
-        const obj1 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp21, guildName: guild.name, newTierName: TIER_1(dependencyMap[7]).getTierName(TIER_1), numSubscriptions: tmp18 };
-        let formatToPartsResult = intl2.formatToParts(TIER_1(dependencyMap[6]).t.GjNvr7, obj1);
-        const obj5 = TIER_1(dependencyMap[7]);
+        const intl2 = require(1212) /* getSystemLocale */.intl;
+        const obj1 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp21, guildName: guild.name, newTierName: require(4022) /* _createForOfIteratorHelperLoose */.getTierName(TIER_1), numSubscriptions: tmp18 };
+        let formatToPartsResult = intl2.formatToParts(require(1212) /* getSystemLocale */.t.GjNvr7, obj1);
+        const obj5 = require(4022) /* _createForOfIteratorHelperLoose */;
       } else {
-        const intl = TIER_1(dependencyMap[6]).intl;
+        const intl = require(1212) /* getSystemLocale */.intl;
         let obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp21, guildName: guild.name };
-        obj2 = TIER_1(dependencyMap[7]);
+        obj2 = require(4022) /* _createForOfIteratorHelperLoose */;
         obj2.newTierName = obj2.getTierName(TIER_1);
-        formatToPartsResult = intl.formatToParts(TIER_1(dependencyMap[6]).t.oAYAP7, obj2);
+        formatToPartsResult = intl.formatToParts(require(1212) /* getSystemLocale */.t.oAYAP7, obj2);
       }
       obj.content = formatToPartsResult;
-      const merged = Object.assign(importDefault(dependencyMap[8])(message));
+      const merged = Object.assign(importDefault(7652)(message));
       return obj;
     }
   }

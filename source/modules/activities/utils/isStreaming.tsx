@@ -1,13 +1,12 @@
-// Module ID: 7876
-// Function ID: 62716
+// Module ID: 7882
+// Function ID: 62753
 // Name: _isStreaming
-// Dependencies: [1392, 3801, 2]
+// Dependencies: [4155, 653, 2]
 // Exports: default
 
-// Module 7876 (_isStreaming)
-import { validStreamURL } from "getAvatarURL";
-import { ActivityTypes } from "explicitContentFromProto";
-import result2 from "result2";
+// Module 7882 (_isStreaming)
+import { validStreamURL } from "items3";
+import { ActivityTypes } from "ME";
 
 function _isStreaming(type) {
   let tmp = type.type === ActivityTypes.STREAMING;
@@ -20,17 +19,17 @@ function _isStreaming(type) {
   }
   return tmp;
 }
-const result = result2.fileFinishedImporting("modules/activities/utils/isStreaming.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/utils/isStreaming.tsx");
 
-export default function isStreaming(items, arg1) {
-  if (null == items) {
+export default function isStreaming(activeSourceId, arg1) {
+  if (null == activeSourceId) {
     return tmp;
   } else {
     const _Array = Array;
-    if (Array.isArray(items)) {
-      let someResult = items.some(_isStreaming);
+    if (Array.isArray(activeSourceId)) {
+      let someResult = activeSourceId.some(_isStreaming);
     } else {
-      someResult = _isStreaming(items);
+      someResult = _isStreaming(activeSourceId);
     }
   }
 };

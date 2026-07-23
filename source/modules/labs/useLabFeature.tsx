@@ -1,16 +1,18 @@
-// Module ID: 8319
-// Function ID: 65932
+// Module ID: 8325
+// Function ID: 65969
 // Name: useLabFeature
-// Dependencies: []
+// Dependencies: [8323, 566, 2]
 // Exports: default
 
-// Module 8319 (useLabFeature)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/labs/useLabFeature.tsx");
+// Module 8325 (useLabFeature)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/labs/useLabFeature.tsx");
 
 export default function useLabFeature(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
   const items1 = [arg0];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => closure_2.get(arg0), items1);
+  return _require(566).useStateFromStores(items, () => outer1_2.get(closure_0), items1);
 };

@@ -1,0 +1,11 @@
+// Module ID: 4829
+// Function ID: 42175
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 4829 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "f42a65d76bbabdff3fd54cfb0d130cfb", name: "img_account_sync_bluesky_white", type: "png" };
+
+export default registerAsset.registerAsset(obj);

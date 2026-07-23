@@ -1,15 +1,17 @@
-// Module ID: 9529
-// Function ID: 74236
+// Module ID: 9536
+// Function ID: 74277
 // Name: hasForLaterPremiumType
-// Dependencies: []
+// Dependencies: [1849, 1851, 1872, 2]
 // Exports: default
 
-// Module 9529 (hasForLaterPremiumType)
-let closure_2 = importDefault(dependencyMap[0]);
-const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/saved_messages/hasForLaterPremiumType.tsx");
+// Module 9536 (hasForLaterPremiumType)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PremiumTypes } from "GuildFeatures";
+
+const require = arg1;
+const result = require("isPremiumAtLeast").fileFinishedImporting("modules/saved_messages/hasForLaterPremiumType.tsx");
 
 export default function hasForLaterPremiumType() {
-  const currentUser = currentUser.getCurrentUser();
-  return arg1(dependencyMap[2]).isPremium(currentUser, PremiumTypes.TIER_2);
+  currentUser = currentUser.getCurrentUser();
+  return require(1872) /* isPremiumAtLeast */.isPremium(currentUser, PremiumTypes.TIER_2);
 };

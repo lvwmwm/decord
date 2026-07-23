@@ -1,9 +1,17 @@
 // Module ID: 1850
-// Function ID: 20417
+// Function ID: 20418
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1851, 1855, 566, 686, 2]
 
 // Module 1850 (_isNativeReflectConstruct)
+import getEnv from "getEnv";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import GuildFeatures from "GuildFeatures";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,30 +22,24 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function setPremiumTypeActual(user) {
-  closure_9.premiumTypeActual = arg1(dependencyMap[6]).getPremiumTypeFromRawValue(user.user.premium_type);
+  closure_9.premiumTypeActual = require(1855) /* getEnv */.getPremiumTypeFromRawValue(user.user.premium_type);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[5]);
-const UNSELECTED_CREATED_AT_DATE = tmp2.UNSELECTED_CREATED_AT_DATE;
-const UNSELECTED_PREMIUM_TYPE_OVERRIDE = tmp2.UNSELECTED_PREMIUM_TYPE_OVERRIDE;
+const UNSELECTED_CREATED_AT_DATE = GuildFeatures.UNSELECTED_CREATED_AT_DATE;
+const UNSELECTED_PREMIUM_TYPE_OVERRIDE = GuildFeatures.UNSELECTED_PREMIUM_TYPE_OVERRIDE;
 let closure_9 = { premiumTypeOverride: UNSELECTED_PREMIUM_TYPE_OVERRIDE, premiumTypeActual: UNSELECTED_PREMIUM_TYPE_OVERRIDE, createdAtOverride: UNSELECTED_CREATED_AT_DATE };
-let tmp3 = (PersistedStore) => {
+let tmp3 = ((PersistedStore) => {
   class OverridePremiumTypeStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, OverridePremiumTypeStore);
-      obj = closure_5(OverridePremiumTypeStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, OverridePremiumTypeStore);
+      obj = outer1_5(OverridePremiumTypeStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -46,7 +48,6 @@ let tmp3 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = OverridePremiumTypeStore;
   callback2(OverridePremiumTypeStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -56,22 +57,22 @@ let tmp3 = (PersistedStore) => {
         if (null != premiumTypeActual) {
           premiumTypeActual = premiumTypeActual.premiumTypeActual;
         }
-        closure_9.premiumTypeActual = premiumTypeActual;
+        outer1_9.premiumTypeActual = premiumTypeActual;
         let premiumTypeOverride;
         if (null != premiumTypeActual) {
           premiumTypeOverride = premiumTypeActual.premiumTypeOverride;
         }
-        closure_9.premiumTypeOverride = premiumTypeOverride;
+        outer1_9.premiumTypeOverride = premiumTypeOverride;
         if (null != premiumTypeActual.createdAtOverride) {
           const _Date = Date;
           const date = new Date(premiumTypeActual.createdAtOverride);
-          closure_9.createdAtOverride = date;
+          outer1_9.createdAtOverride = date;
         } else {
-          closure_9.createdAtOverride = closure_7;
+          outer1_9.createdAtOverride = outer1_7;
         }
       } else {
-        closure_9.premiumTypeOverride = closure_8;
-        closure_9.createdAtOverride = closure_7;
+        outer1_9.premiumTypeOverride = outer1_8;
+        outer1_9.createdAtOverride = outer1_7;
       }
     }
   };
@@ -79,40 +80,40 @@ let tmp3 = (PersistedStore) => {
   obj = {
     key: "getPremiumTypeOverride",
     value() {
-      return closure_9.premiumTypeOverride;
+      return outer1_9.premiumTypeOverride;
     }
   };
   items[1] = obj;
   obj = {
     key: "getPremiumTypeActual",
     value() {
-      return closure_9.premiumTypeActual;
+      return outer1_9.premiumTypeActual;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getCreatedAtOverride",
     value() {
-      return closure_9.createdAtOverride;
+      return outer1_9.createdAtOverride;
     }
   };
   items[4] = {
     key: "getState",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[5] = {
     key: "premiumType",
     get() {
-      return closure_9.premiumTypeOverride;
+      return outer1_9.premiumTypeOverride;
     }
   };
   return callback(OverridePremiumTypeStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = "OverridePremiumTypeStore";
 tmp3.persistKey = "OverridePremiumTypeStore";
-const items = [
+let items = [
   (createdAtOverride) => {
     createdAtOverride = undefined;
     if (null != createdAtOverride) {
@@ -127,7 +128,7 @@ const items = [
   }
 ];
 tmp3.migrations = items;
-tmp3 = new tmp3(importDefault(dependencyMap[8]), {
+tmp3 = new tmp3(require("dispatcher"), {
   SET_PREMIUM_TYPE_OVERRIDE: function setPremiumTypeOverride(premiumType) {
     closure_9.premiumTypeOverride = premiumType.premiumType;
   },
@@ -137,6 +138,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[8]), {
   CURRENT_USER_UPDATE: setPremiumTypeActual,
   CONNECTION_OPEN: setPremiumTypeActual
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/OverridePremiumTypeStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/OverridePremiumTypeStore.tsx");
 
 export default tmp3;

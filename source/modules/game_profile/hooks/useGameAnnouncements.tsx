@@ -1,53 +1,52 @@
-// Module ID: 8651
-// Function ID: 68478
+// Module ID: 8658
+// Function ID: 68518
 // Name: useGameAnnouncements
-// Dependencies: []
+// Dependencies: [31, 8596, 566, 8659, 2]
 // Exports: default
 
-// Module 8651 (useGameAnnouncements)
-const useEffect = require(dependencyMap[0]).useEffect;
-let closure_3 = importDefault(dependencyMap[1]);
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/game_profile/hooks/useGameAnnouncements.tsx");
+// Module 8658 (useGameAnnouncements)
+import { useEffect } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let result = require("initialize").fileFinishedImporting("modules/game_profile/hooks/useGameAnnouncements.tsx");
 
 export default function useGameAnnouncements(arg0, arg1) {
   let data;
   let hasFetched;
-  const require = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  let obj = require(dependencyMap[2]);
-  const items = [closure_3];
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const obj = {};
     let announcements;
-    if (null != arg0) {
-      announcements = closure_3.getAnnouncements(arg0);
+    if (null != closure_0) {
+      announcements = outer1_3.getAnnouncements(closure_0);
     }
     obj.data = announcements;
-    let result = null != arg0;
+    let result = null != closure_0;
     if (result) {
-      result = closure_3.hasAnnouncementsBeenFetched(arg0);
+      result = outer1_3.hasAnnouncementsBeenFetched(closure_0);
     }
     obj.hasFetched = result;
-    let result1 = null != arg0;
+    let result1 = null != closure_0;
     if (result1) {
-      result1 = closure_3.isAnnouncementsFetching(arg0);
+      result1 = outer1_3.isAnnouncementsFetching(closure_0);
     }
     obj.isFetching = result1;
     return obj;
   });
   ({ data, hasFetched } = stateFromStoresObject);
-  const useEffect = hasFetched;
   const items1 = [arg0, hasFetched, arg1];
-  useEffect(() => {
-    let result = null == arg0 || hasFetched;
+  hasFetched(() => {
+    let result = null == callback || hasFetched;
     if (!result) {
-      result = closure_3.isAnnouncementsFetching(arg0);
+      result = outer1_3.isAnnouncementsFetching(callback);
     }
     if (!result) {
-      let obj = arg0(arg1[3]);
-      obj = { limit: arg1 };
-      const gameAnnouncements = obj.getGameAnnouncements(arg0, obj);
+      let obj = callback(table[3]);
+      obj = { limit: table };
+      const gameAnnouncements = obj.getGameAnnouncements(callback, obj);
     }
   }, items1);
   obj = {};

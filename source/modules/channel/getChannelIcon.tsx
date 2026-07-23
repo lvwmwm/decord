@@ -1,32 +1,34 @@
-// Module ID: 11941
-// Function ID: 92342
+// Module ID: 11953
+// Function ID: 92395
 // Name: getChannelIconURL
-// Dependencies: []
+// Dependencies: [57, 1849, 653, 1327, 1392, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 11941 (getChannelIconURL)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const ChannelTypes = arg1(dependencyMap[2]).ChannelTypes;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/channel/getChannelIcon.tsx");
+// Module 11953 (getChannelIconURL)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
 
-export const getChannelIconURL = function getChannelIconURL(type, closure_10, animate) {
-  let num = closure_10;
-  if (closure_10 === undefined) {
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/channel/getChannelIcon.tsx");
+
+export const getChannelIconURL = function getChannelIconURL(type, canRing, animate) {
+  let num = canRing;
+  if (canRing === undefined) {
     num = 32;
   }
   type = type.type;
   if (ChannelTypes.DM === type) {
     const recipients = type.recipients;
-    const mapped = recipients.map(closure_4.getUser);
-    const first = callback(mapped.filter(closure_10(dependencyMap[3]).isNotNullish), 1)[0];
+    const mapped = recipients.map(_isNativeReflectConstruct.getUser);
+    const first = callback(mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish), 1)[0];
     let avatarURL = null;
     if (null != first) {
       avatarURL = first.getAvatarURL(undefined, num, animate);
     }
     return avatarURL;
   } else if (ChannelTypes.GROUP_DM === type) {
-    let obj = importDefault(dependencyMap[4]);
+    let obj = importDefault(1392);
     obj = {};
     ({ id: obj2.id, icon: obj2.icon } = type);
     obj.applicationId = type.getApplicationId();
@@ -38,15 +40,15 @@ export const getChannelIconSource = function getChannelIconSource(type) {
   type = type.type;
   if (ChannelTypes.DM === type) {
     const recipients = type.recipients;
-    const mapped = recipients.map(closure_4.getUser);
-    const first = callback(mapped.filter(arg1(dependencyMap[3]).isNotNullish), 1)[0];
+    const mapped = recipients.map(_isNativeReflectConstruct.getUser);
+    const first = callback(mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish), 1)[0];
     let avatarSource = null;
     if (null != first) {
       avatarSource = first.getAvatarSource(undefined);
     }
     return avatarSource;
   } else if (ChannelTypes.GROUP_DM === type) {
-    let obj = importDefault(dependencyMap[4]);
+    let obj = importDefault(1392);
     obj = {};
     ({ id: obj2.id, icon: obj2.icon } = type);
     obj.applicationId = type.getApplicationId();

@@ -1,9 +1,25 @@
-// Module ID: 10059
-// Function ID: 77702
+// Module ID: 10067
+// Function ID: 77742
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 33, 4130, 689, 3976, 10068, 10069, 4126, 1212, 10070, 10071, 4660, 3842, 2]
 
-// Module 10059 (_isNativeReflectConstruct)
+// Module 10067 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getSystemLocale from "getSystemLocale";
+import registerAsset from "registerAsset";
+import PressableBase from "PressableBase";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_10 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_11;
+let closure_12;
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,44 +29,35 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-({ View: closure_8, Image: closure_9 } = arg1(dependencyMap[6]));
-let closure_10 = importDefault(dependencyMap[7]);
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[8]));
-let obj = arg1(dependencyMap[9]);
-obj = { container: { unicodeVersion: null, y: null, isArray: null } };
-obj = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
-obj.guildPlaceholder = obj;
-obj.guildIcon = {};
-obj.iconWrapperBorder = {};
-const obj1 = { 1637466961: true, -512601725: true, -766065311: true, 1486058615: true, 1023272163: true, borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.filledIconWrapper = obj1;
-const tmp4 = arg1(dependencyMap[8]);
-obj.emptyIconWrapper = { borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
-const obj2 = { borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND };
-obj.emptyGuildIcon = { borderColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.emptyGuildIconText = {};
-obj.uploadIcon = { hideWhenScrolling: null, autoCapitalize: null };
-let closure_13 = obj.createLegacyClassComponentStyles(obj);
-const tmp5 = (PureComponent) => {
+({ View: closure_8, Image: closure_9 } = get_ActivityIndicator);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { width: 82, height: 82, marginTop: 4 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.guildPlaceholder = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.guildIcon = { width: 82, height: 82, borderRadius: 41 };
+_createForOfIteratorHelperLoose.iconWrapperBorder = { position: "absolute", top: -8, right: -8, width: 40, height: 40, borderRadius: 20, justifyContent: "center", alignItems: "center" };
+let obj1 = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, justifyContent: "center", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+_createForOfIteratorHelperLoose.filledIconWrapper = obj1;
+let obj2 = { position: "absolute", top: -4, right: -4, width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.emptyIconWrapper = obj2;
+let obj3 = { borderWidth: 2, borderStyle: "dashed", justifyContent: "center", alignItems: "center", borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.emptyGuildIcon = obj3;
+_createForOfIteratorHelperLoose.emptyGuildIconText = { textAlign: "center", lineHeight: 16, paddingTop: 4 };
+_createForOfIteratorHelperLoose.uploadIcon = { height: 16, width: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+const tmp5 = ((PureComponent) => {
   class GuildIconUploader {
     constructor() {
       self = this;
-      tmp = closure_3(this, GuildIconUploader);
-      obj = closure_6(GuildIconUploader);
-      tmp2 = closure_5;
-      if (closure_14()) {
+      tmp = outer1_3(this, GuildIconUploader);
+      obj = outer1_6(GuildIconUploader);
+      tmp2 = outer1_5;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -59,12 +66,11 @@ const tmp5 = (PureComponent) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildIconUploader;
   callback2(GuildIconUploader, PureComponent);
   let obj = {
     key: "renderIcon",
     value() {
-      const tmp = callback6(this.context);
+      const tmp = outer1_13(this.context);
       const icon = this.props.icon;
       if (null != icon) {
         let obj = {};
@@ -73,41 +79,41 @@ const tmp5 = (PureComponent) => {
         obj.style = items;
         obj = { uri: icon };
         obj.source = obj;
-        let tmp9Result = callback4(closure_9, obj);
+        let tmp9Result = outer1_11(outer1_9, obj);
       } else {
         const obj1 = {};
         const items1 = [, ];
         ({ guildIcon: arr3[0], emptyGuildIcon: arr3[1] } = tmp);
         obj1.style = items1;
         const obj2 = {};
-        if (obj6.isThemeDark(theme.theme)) {
+        if (obj6.isThemeDark(outer1_10.theme)) {
           let tmp16Result = tmp16(tmp17[12]);
         } else {
           tmp16Result = tmp16(tmp17[13]);
         }
         obj2.source = tmp16Result;
-        const items2 = [callback4(closure_9, obj2), ];
-        obj = { "Null": true, "Null": true, alignItems: true, style: tmp.emptyGuildIconText };
-        const intl = GuildIconUploader(closure_2[15]).intl;
-        const obj6 = GuildIconUploader(closure_2[11]);
-        const tmp10 = closure_8;
-        const tmp11 = callback4;
-        const tmp12 = closure_9;
-        const tmp9 = closure_12;
-        obj.children = intl.string(GuildIconUploader(closure_2[15]).t.3UB9ad).toUpperCase();
-        items2[1] = callback4(GuildIconUploader(closure_2[14]).Text, obj);
+        const items2 = [outer1_11(outer1_9, obj2), ];
+        obj = { style: tmp.emptyGuildIconText, variant: "text-xs/bold", color: "text-default" };
+        const intl = GuildIconUploader(outer1_2[15]).intl;
+        obj6 = GuildIconUploader(outer1_2[11]);
+        const tmp10 = outer1_8;
+        const tmp11 = outer1_11;
+        const tmp12 = outer1_9;
+        const tmp9 = outer1_12;
+        obj.children = intl.string(GuildIconUploader(outer1_2[15]).t["3UB9ad"]).toUpperCase();
+        items2[1] = outer1_11(GuildIconUploader(outer1_2[14]).Text, obj);
         obj1.children = items2;
         tmp9Result = tmp9(tmp10, obj1);
-        const str = intl.string(GuildIconUploader(closure_2[15]).t.3UB9ad);
+        const str = intl.string(GuildIconUploader(outer1_2[15]).t["3UB9ad"]);
       }
       return tmp9Result;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "renderUpload",
     value() {
-      const tmp = callback6(this.context);
+      const tmp = outer1_13(this.context);
       const props = this.props;
       const iconBackgroundColor = props.iconBackgroundColor;
       if (null != props.icon) {
@@ -122,15 +128,15 @@ const tmp5 = (PureComponent) => {
         const obj3 = { tintColor: iconBackgroundColor };
         items1[1] = obj3;
         obj2.style = items1;
-        obj2.source = callback(closure_2[16]);
-        obj1.children = callback4(closure_9, obj2);
-        obj.children = callback4(closure_8, obj1);
+        obj2.source = outer1_1(outer1_2[16]);
+        obj1.children = outer1_11(outer1_9, obj2);
+        obj.children = outer1_11(outer1_8, obj1);
       } else {
         obj = { style: tmp.emptyIconWrapper };
-        const obj4 = { source: callback(closure_2[17]) };
-        obj.children = callback4(closure_9, obj4);
+        const obj4 = { source: outer1_1(outer1_2[17]) };
+        obj.children = outer1_11(outer1_9, obj4);
       }
-      return callback4(closure_8, obj);
+      return outer1_11(outer1_8, obj);
     }
   };
   items[1] = obj;
@@ -141,32 +147,31 @@ const tmp5 = (PureComponent) => {
       let onPress;
       let style;
       const self = this;
-      const tmp = callback6(this.context);
+      const tmp = outer1_13(this.context);
       ({ style, onPress, icon } = this.props);
       let obj = { accessibilityRole: "button" };
       if (null != icon) {
-        const intl2 = GuildIconUploader(closure_2[15]).intl;
-        let stringResult = intl2.string(GuildIconUploader(closure_2[15]).t.VATxfe);
+        const intl2 = GuildIconUploader(outer1_2[15]).intl;
+        let stringResult = intl2.string(GuildIconUploader(outer1_2[15]).t.VATxfe);
       } else {
-        const intl = GuildIconUploader(closure_2[15]).intl;
-        stringResult = intl.string(GuildIconUploader(closure_2[15]).t.MsUY/S);
+        const intl = GuildIconUploader(outer1_2[15]).intl;
+        stringResult = intl.string(GuildIconUploader(outer1_2[15]).t["MsUY/S"]);
       }
       obj.accessibilityLabel = stringResult;
       obj.onPress = onPress;
       obj = { style: items };
-      const items = [tmp.container, style];
+      items = [tmp.container, style];
       obj = { style: tmp.guildIcon, children: self.renderIcon() };
-      const items1 = [callback4(closure_8, obj), self.renderUpload()];
+      const items1 = [outer1_11(outer1_8, obj), self.renderUpload()];
       obj.children = items1;
-      obj.children = callback5(closure_8, obj);
-      return callback4(GuildIconUploader(closure_2[18]).PressableOpacity, obj);
+      obj.children = outer1_12(outer1_8, obj);
+      return outer1_11(GuildIconUploader(outer1_2[18]).PressableOpacity, obj);
     }
   };
   items[2] = obj;
   return callback(GuildIconUploader, items);
-}(importAllResult.PureComponent);
-tmp5.contextType = arg1(dependencyMap[19]).ThemeContext;
-const obj3 = { borderColor: importDefault(dependencyMap[10]).colors.INTERACTIVE_TEXT_DEFAULT };
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild/native/GuildIconUploader.tsx");
+})(require("result").PureComponent);
+tmp5.contextType = require("ManaContext").ThemeContext;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild/native/GuildIconUploader.tsx");
 
 export default tmp5;

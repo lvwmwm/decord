@@ -1,126 +1,125 @@
-// Module ID: 6882
-// Function ID: 54599
+// Module ID: 6887
+// Function ID: 54633
 // Name: appDatabaseManager
-// Dependencies: []
+// Dependencies: [6888, 6890, 6891, 4997, 6893, 6894, 6895, 5038, 6896, 6897, 6709, 6898, 6899, 6722, 6721, 6723, 6900, 2]
 
-// Module 6882 (appDatabaseManager)
+// Module 6887 (appDatabaseManager)
 let obj = {
   name: "Channels",
-  actions: ["d", "D", "E", "i", "c", "t", "T", "y", "R", "u"],
+  actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_RECIPIENT_ADD", "CHANNEL_RECIPIENT_REMOVE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "CONNECTION_OPEN_SUPPLEMENTAL", "GUILD_CREATE", "GUILD_DELETE"],
   require() {
-    return require(dependencyMap[1]).default;
+    return require(6890) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 const items = [obj, , , , , , , , , , , , , , , ];
 obj = {
   name: "GuildBasicChannels",
-  actions: [],
+  actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_MEMBER_UPDATE", "GUILD_ROLE_UPDATE", "GUILD_UPDATE", "POST_CONNECTION_OPEN", "WRITE_CACHES"],
   require() {
-    return require(dependencyMap[2]).default;
+    return require(6891) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[1] = obj;
 obj = {
   name: "GuildEmojis",
-  actions: [false, false, false, false, false, false],
+  actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_EMOJIS_UPDATE", "GUILD_UPDATE"],
   require() {
-    return require(dependencyMap[3]).default;
+    return require(4997) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[2] = obj;
 items[3] = {
   name: "Guilds",
-  actions: ["<string:1409245440>", "<string:24510997>", "<string:727777583>", "<string:1979849811>", "<string:1627528193>", "<string:34953003>", "<string:29819420>", "<string:37618099>", "<string:87884150>", "<string:3428823121>"],
+  actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_MEMBER_ADD", "GUILD_MEMBER_UPDATE", "GUILD_ROLE_CREATE", "GUILD_ROLE_DELETE", "GUILD_ROLE_UPDATE", "GUILD_UPDATE"],
   require() {
-    return require(dependencyMap[4]).default;
+    return require(6893) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[4] = {
   name: "GuildsRequiringDeletedIdsSync",
-  actions: [],
+  actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "DELETED_ENTITY_IDS"],
   require() {
-    return require(dependencyMap[5]).default;
+    return require(6894) /* GuildsRequiringDeletedIdsSync */.default;
   }
 };
 items[5] = {
   name: "GuildsRequiringChannelSync",
-  actions: [],
+  actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "CHANNEL_SYNC", "UNMARK_RESYNC_GUILDS"],
   require() {
-    return require(dependencyMap[6]).default;
+    return require(6895) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[6] = {
   name: "GuildStickers",
-  actions: ["<string:1983271680>", "<string:717886051>", "<string:32919617>", "<string:2526302720>", "<string:1113697248>", "reduceMotionChanged"],
+  actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_STICKERS_UPDATE", "GUILD_UPDATE"],
   require() {
-    return require(dependencyMap[7]).default;
+    return require(5038) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[7] = {
   name: "GuildVersions",
-  actions: [],
+  actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_EMOJIS_UPDATE", "GUILD_ROLE_CREATE", "GUILD_ROLE_DELETE", "GUILD_ROLE_UPDATE", "GUILD_STICKERS_UPDATE", "GUILD_UPDATE"],
   require() {
-    return require(dependencyMap[8]).default;
+    return require(6896) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[8] = {
   name: "KvCacheVersion",
-  actions: [],
+  actions: ["CONNECTION_OPEN", "WRITE_CACHES", "BACKGROUND_SYNC"],
   require() {
-    return require(dependencyMap[9]).default;
+    return require(6897) /* KvCacheVersion */.default;
   }
 };
 items[9] = {
   name: "Messages",
-  actions: ["GAME_CLICKED_LANDING", "woman_with_probing_cane", "_handleConnectionOpenSupplemental", "NitroSupergraphicLogo", "UNKNOWN_USER", "hasViewManagerConfig", "person_pouting", "BACKDROP_OPACITY"],
+  actions: ["CHANNEL_DELETE", "GUILD_DELETE", "LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "MESSAGE_DELETE_BULK", "MESSAGE_DELETE", "MESSAGE_PREVIEWS_LOADED", "MESSAGE_UPDATE"],
   require() {
-    return require(dependencyMap[10]).default;
+    return require(6709) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[10] = {
   name: "LowDiskTrim",
-  actions: [false],
+  actions: ["POST_CONNECTION_OPEN"],
   require() {
-    return require(dependencyMap[11]).default;
+    return require(6898) /* LowDiskTrim */.default;
   }
 };
 items[11] = {
   name: "NonGuildVersions",
-  actions: ["spoiler", "timestamp"],
+  actions: ["CONNECTION_OPEN", "BACKGROUND_SYNC"],
   require() {
-    return require(dependencyMap[12]).default;
+    return require(6899) /* NonGuildVersions */.default;
   }
 };
 items[12] = {
   name: "ReadStates",
-  actions: [17, 152, 122, 4, 153],
+  actions: ["CONNECTION_OPEN", "CHANNEL_PINS_ACK", "MESSAGE_ACK", "BACKGROUND_SYNC_FINISHED", "WRITE_CACHES"],
   require() {
-    return require(dependencyMap[13]).default;
+    return require(6722) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[13] = {
   name: "UserSettingsProto",
-  actions: [],
+  actions: ["CONNECTION_OPEN", "USER_SETTINGS_PROTO_UPDATE", "USER_SETTINGS_PROTO_ENQUEUE_UPDATE", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO"],
   require() {
-    return require(dependencyMap[14]).default;
+    return require(6721) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[14] = {
   name: "UserGuildSettings",
-  actions: [],
+  actions: ["CONNECTION_OPEN", "USER_GUILD_SETTINGS_FULL_UPDATE"],
   require() {
-    return require(dependencyMap[15]).default;
+    return require(6723) /* _createForOfIteratorHelperLoose */.default;
   }
 };
 items[15] = {
   name: "UserSearchItems",
-  actions: [],
+  actions: ["POST_CONNECTION_OPEN", "WRITE_CACHES"],
   require() {
-    return require(dependencyMap[16]).default;
+    return require(6900) /* _createForOfIteratorHelperLoose */.default;
   }
 };
-const appDatabaseManager = new require(dependencyMap[0]).AppDatabaseManager("MobileAppDatabaseManager", [], items);
-const _module = require(dependencyMap[17]);
-const result = _module.fileFinishedImporting("modules/app_database/managers/MobileAppDatabaseManager.tsx");
+const appDatabaseManager = new require("_createForOfIteratorHelperLoose").AppDatabaseManager("MobileAppDatabaseManager", [], items);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_database/managers/MobileAppDatabaseManager.tsx");
 
 export default appDatabaseManager;

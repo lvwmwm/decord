@@ -1,21 +1,23 @@
-// Module ID: 10211
-// Function ID: 78913
+// Module ID: 10223
+// Function ID: 78985
 // Name: canViewPotentiallyNSFWChannel
-// Dependencies: []
+// Dependencies: [1348, 1849, 4345, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 10211 (canViewPotentiallyNSFWChannel)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/messages/MessageUtils.tsx");
+// Module 10223 (canViewPotentiallyNSFWChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("shouldAgeVerifyForAgeGate").fileFinishedImporting("modules/messages/MessageUtils.tsx");
 
 export const canViewPotentiallyNSFWChannel = function canViewPotentiallyNSFWChannel(channel_id) {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   const channel = store.getChannel(channel_id);
   let tmp3 = null != currentUser && null != channel;
   if (tmp3) {
-    tmp3 = !arg1(dependencyMap[2]).isChannelContentGated(channel);
-    const obj = arg1(dependencyMap[2]);
+    tmp3 = !require(4345) /* shouldAgeVerifyForAgeGate */.isChannelContentGated(channel);
+    const obj = require(4345) /* shouldAgeVerifyForAgeGate */;
   }
   return tmp3;
 };

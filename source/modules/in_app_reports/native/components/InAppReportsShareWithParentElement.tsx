@@ -1,25 +1,26 @@
-// Module ID: 12222
-// Function ID: 93817
+// Module ID: 12336
+// Function ID: 95968
 // Name: parents
-// Dependencies: []
+// Dependencies: [57, 31, 33, 6771, 3830, 1212, 7488, 12335, 12227, 2]
 // Exports: default
 
-// Module 12222 (parents)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsShareWithParentElement.tsx");
+// Module 12336 (parents)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsShareWithParentElement.tsx");
 
 export default function _default(parents) {
   parents = parents.parents;
-  const arg1 = parents;
   const tmp = callback(React.useState(false), 2);
   const importDefault = tmp[1];
   [][0] = parents;
   if (0 === parents.length) {
     return null;
   } else {
-    const intl3 = arg1(dependencyMap[5]).intl;
+    const intl3 = parents(1212).intl;
     let obj = { count: parents.length, parent1: parents[0].username };
     let username;
     if (null != parents[1]) {
@@ -32,10 +33,10 @@ export default function _default(parents) {
     }
     obj.parent3 = username1;
     obj = {};
-    obj.title = intl3.formatToPlainString(arg1(dependencyMap[5]).t.HqyWeO, obj);
-    const formatToPlainStringResult = intl3.formatToPlainString(arg1(dependencyMap[5]).t.HqyWeO, obj);
+    obj.title = intl3.formatToPlainString(parents(1212).t.HqyWeO, obj);
+    const formatToPlainStringResult = intl3.formatToPlainString(parents(1212).t.HqyWeO, obj);
     const tmp7 = jsx;
-    const intl = arg1(dependencyMap[5]).intl;
+    let intl = parents(1212).intl;
     obj = { count: parents.length, parent1: parents[0].username };
     let username2;
     if (null != parents[1]) {
@@ -47,12 +48,12 @@ export default function _default(parents) {
       username3 = tmp14.username;
     }
     obj.parent3 = username3;
-    obj.disabledTitle = intl.formatToPlainString(arg1(dependencyMap[5]).t.BlAMme, obj);
-    obj.icon = jsx(arg1(dependencyMap[8]).ShareIcon, {});
-    const intl2 = arg1(dependencyMap[5]).intl;
-    obj.description = intl2.string(arg1(dependencyMap[5]).t.5l/hlt);
+    obj.disabledTitle = intl.formatToPlainString(parents(1212).t.BlAMme, obj);
+    obj.icon = jsx(parents(12227).ShareIcon, {});
+    const intl2 = parents(1212).intl;
+    obj.description = intl2.string(parents(1212).t["5l/hlt"]);
     obj.disabled = tmp[0];
     obj.onPress = tmp2;
-    return tmp7(importDefault(dependencyMap[7]), obj);
+    return tmp7(importDefault(12335), obj);
   }
 };

@@ -1,9 +1,17 @@
-// Module ID: 7131
-// Function ID: 57423
+// Module ID: 7136
+// Function ID: 57457
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1284, 2]
 
-// Module 7131 (_callSuper)
+// Module 7136 (_callSuper)
+import _slicedToArray from "_slicedToArray";
+import module_1284 from "module_1284";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -15,7 +23,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_5(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -26,27 +34,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let tmp2 = (MessageType) => {
+let tmp2 = ((MessageType) => {
   class LocalizedString$Type {
     constructor() {
-      tmp = closure_3(this, LocalizedString$Type);
+      tmp = outer1_3(this, LocalizedString$Type);
       items = [, ];
-      items[0] = {};
-      obj = { -111020099: "body", 1351895378: "scalar", 1456955659: 9, -1801654842: 0 };
-      obj.V = {};
+      items[0] = { no: 1, name: "default", kind: "scalar", T: 9 };
+      obj = { no: 2, name: "localizations", kind: "map", K: 9 };
+      obj.V = { kind: "scalar", T: 9 };
       items[1] = obj;
-      items1 = [null];
+      items1 = ["discord_protos.common.v1.LocalizedString"];
       items1[1] = items;
-      return closure_8(this, LocalizedString$Type, items1);
+      return outer1_8(this, LocalizedString$Type, items1);
     }
   }
-  const arg1 = LocalizedString$Type;
   callback3(LocalizedString$Type, MessageType);
   let obj = {
     key: "create",
@@ -54,15 +55,15 @@ let tmp2 = (MessageType) => {
       let obj = { default: "", localizations: {} };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, LocalizedString$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, LocalizedString$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = LocalizedString$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = LocalizedString$Type(closure_1[6]);
+        const result = LocalizedString$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = LocalizedString$Type(outer1_1[6]);
       }
       return obj;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "internalBinaryRead",
     value(pos, arg1, readUnknownField) {
@@ -75,8 +76,8 @@ let tmp2 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.default = pos.string();
@@ -112,8 +113,8 @@ let tmp2 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = LocalizedString$Type;
-                let tmp13 = closure_1;
-                onRead = LocalizedString$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = LocalizedString$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -125,8 +126,8 @@ let tmp2 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -141,8 +142,8 @@ let tmp2 = (MessageType) => {
       let tmp5;
       if (pos.pos < sum) {
         while (true) {
-          let tmp6 = callback;
-          let tmp7 = callback(pos.tag(), 2);
+          let tmp6 = outer1_2;
+          let tmp7 = outer1_2(pos.tag(), 2);
           [tmp8, r10020] = tmp7;
           if (1 === tmp8) {
             let stringResult = pos.string();
@@ -152,7 +153,7 @@ let tmp2 = (MessageType) => {
           } else {
             stringResult1 = pos.string();
           }
-          let tmp3 = stringResult1;
+          tmp3 = stringResult1;
           tmp4 = stringResult;
           tmp5 = stringResult1;
         }
@@ -179,21 +180,21 @@ let tmp2 = (MessageType) => {
     value(localizations, tag, writeUnknownFields) {
       let length;
       if ("" !== localizations.default) {
-        tag.tag(1, LocalizedString$Type(closure_1[6]).WireType.LengthDelimited).string(localizations.default);
-        const tagResult = tag.tag(1, LocalizedString$Type(closure_1[6]).WireType.LengthDelimited);
+        tag.tag(1, LocalizedString$Type(outer1_1[6]).WireType.LengthDelimited).string(localizations.default);
+        const tagResult = tag.tag(1, LocalizedString$Type(outer1_1[6]).WireType.LengthDelimited);
       }
       const keys = Object.keys(localizations.localizations);
       let num3 = 0;
       if (0 < keys.length) {
         do {
           let tmp4 = keys[num3];
-          let tmp5 = closure_0;
-          let tmp6 = closure_1;
-          let tagResult1 = tag.tag(2, closure_0(closure_1[6]).WireType.LengthDelimited);
+          let tmp5 = LocalizedString$Type;
+          let tmp6 = outer1_1;
+          let tagResult1 = tag.tag(2, LocalizedString$Type(outer1_1[6]).WireType.LengthDelimited);
           let forkResult = tagResult1.fork();
-          let tagResult2 = forkResult.tag(1, closure_0(closure_1[6]).WireType.LengthDelimited);
+          let tagResult2 = forkResult.tag(1, LocalizedString$Type(outer1_1[6]).WireType.LengthDelimited);
           let stringResult1 = tagResult2.string(tmp4);
-          let tagResult3 = stringResult1.tag(2, closure_0(closure_1[6]).WireType.LengthDelimited);
+          let tagResult3 = stringResult1.tag(2, LocalizedString$Type(outer1_1[6]).WireType.LengthDelimited);
           let stringResult2 = tagResult3.string(localizations.localizations[tmp4]);
           let joined = stringResult2.join();
           num3 = num3 + 1;
@@ -203,7 +204,7 @@ let tmp2 = (MessageType) => {
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = LocalizedString$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = LocalizedString$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, localizations, tag);
@@ -212,23 +213,22 @@ let tmp2 = (MessageType) => {
     }
   };
   return callback(LocalizedString$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp2 = new tmp2();
-let tmp4 = (MessageType) => {
+let tmp4 = ((MessageType) => {
   class LocalizedSnowflake$Type {
     constructor() {
-      tmp = closure_3(this, LocalizedSnowflake$Type);
+      tmp = outer1_3(this, LocalizedSnowflake$Type);
       items = [, ];
-      items[0] = {};
-      obj = { -111020099: "body", 1351895378: "scalar", 1456955659: 9, -1801654842: 0 };
-      obj.V = { 0: "Array", -9223372036854775808: "isArray" };
+      items[0] = { no: 1, name: "default", kind: "scalar", T: 6 };
+      obj = { no: 2, name: "localizations", kind: "map", K: 9 };
+      obj.V = { kind: "scalar", T: 6 };
       items[1] = obj;
-      items1 = [null];
+      items1 = ["discord_protos.common.v1.LocalizedSnowflake"];
       items1[1] = items;
-      return closure_8(this, LocalizedSnowflake$Type, items1);
+      return outer1_8(this, LocalizedSnowflake$Type, items1);
     }
   }
-  const arg1 = LocalizedSnowflake$Type;
   callback3(LocalizedSnowflake$Type, MessageType);
   let obj = {
     key: "create",
@@ -236,15 +236,15 @@ let tmp4 = (MessageType) => {
       let obj = { default: "0", localizations: {} };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, LocalizedSnowflake$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, LocalizedSnowflake$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = LocalizedSnowflake$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = LocalizedSnowflake$Type(closure_1[6]);
+        const result = LocalizedSnowflake$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = LocalizedSnowflake$Type(outer1_1[6]);
       }
       return obj;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "internalBinaryRead",
     value(pos, arg1, readUnknownField) {
@@ -257,8 +257,8 @@ let tmp4 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           let str4 = pos.fixed64();
@@ -295,8 +295,8 @@ let tmp4 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = LocalizedSnowflake$Type;
-                let tmp13 = closure_1;
-                onRead = LocalizedSnowflake$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = LocalizedSnowflake$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -308,8 +308,8 @@ let tmp4 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -324,8 +324,8 @@ let tmp4 = (MessageType) => {
       let tmp5;
       if (pos.pos < sum) {
         while (true) {
-          let tmp6 = callback;
-          let tmp7 = callback(pos.tag(), 2);
+          let tmp6 = outer1_2;
+          let tmp7 = outer1_2(pos.tag(), 2);
           [tmp8, r10020] = tmp7;
           if (1 === tmp8) {
             let stringResult = pos.string();
@@ -336,7 +336,7 @@ let tmp4 = (MessageType) => {
             let str2 = pos.fixed64();
             str = str2.toString();
           }
-          let tmp3 = str;
+          tmp3 = str;
           tmp4 = stringResult;
           tmp5 = str;
         }
@@ -364,21 +364,21 @@ let tmp4 = (MessageType) => {
     value(localizations, tag, writeUnknownFields) {
       let length;
       if ("0" !== localizations.default) {
-        tag.tag(1, LocalizedSnowflake$Type(closure_1[6]).WireType.Bit64).fixed64(localizations.default);
-        const tagResult = tag.tag(1, LocalizedSnowflake$Type(closure_1[6]).WireType.Bit64);
+        tag.tag(1, LocalizedSnowflake$Type(outer1_1[6]).WireType.Bit64).fixed64(localizations.default);
+        const tagResult = tag.tag(1, LocalizedSnowflake$Type(outer1_1[6]).WireType.Bit64);
       }
       const keys = Object.keys(localizations.localizations);
       let num3 = 0;
       if (0 < keys.length) {
         do {
           let tmp4 = keys[num3];
-          let tmp5 = closure_0;
-          let tmp6 = closure_1;
-          let tagResult1 = tag.tag(2, closure_0(closure_1[6]).WireType.LengthDelimited);
+          let tmp5 = LocalizedSnowflake$Type;
+          let tmp6 = outer1_1;
+          let tagResult1 = tag.tag(2, LocalizedSnowflake$Type(outer1_1[6]).WireType.LengthDelimited);
           let forkResult = tagResult1.fork();
-          let tagResult2 = forkResult.tag(1, closure_0(closure_1[6]).WireType.LengthDelimited);
+          let tagResult2 = forkResult.tag(1, LocalizedSnowflake$Type(outer1_1[6]).WireType.LengthDelimited);
           let stringResult = tagResult2.string(tmp4);
-          let tagResult3 = stringResult.tag(2, closure_0(closure_1[6]).WireType.Bit64);
+          let tagResult3 = stringResult.tag(2, LocalizedSnowflake$Type(outer1_1[6]).WireType.Bit64);
           let fixed64Result1 = tagResult3.fixed64(localizations.localizations[tmp4]);
           let joined = fixed64Result1.join();
           num3 = num3 + 1;
@@ -388,7 +388,7 @@ let tmp4 = (MessageType) => {
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = LocalizedSnowflake$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = LocalizedSnowflake$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, localizations, tag);
@@ -397,9 +397,9 @@ let tmp4 = (MessageType) => {
     }
   };
   return callback(LocalizedSnowflake$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/common/v1/localized_string.tsx");
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/common/v1/localized_string.tsx");
 
 export const LocalizedString = tmp2;
 export const LocalizedSnowflake = tmp4;

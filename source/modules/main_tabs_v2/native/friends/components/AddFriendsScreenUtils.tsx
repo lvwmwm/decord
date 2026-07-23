@@ -1,27 +1,28 @@
-// Module ID: 14796
-// Function ID: 111499
+// Module ID: 14912
+// Function ID: 113667
 // Name: _sendWave
-// Dependencies: []
+// Dependencies: [5, 1348, 653, 4123, 9057, 4140, 3830, 1212, 11370, 6691, 8923, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 14796 (_sendWave)
+// Module 14912 (_sendWave)
+import module_4140 from "module_4140";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticsSections } from "ME";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+
+const require = arg1;
 function _sendWave() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _sendWave = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const AnalyticsSections = arg1(dependencyMap[2]).AnalyticsSections;
-const MessageSendLocation = arg1(dependencyMap[3]).MessageSendLocation;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/main_tabs_v2/native/friends/components/AddFriendsScreenUtils.tsx");
+let result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/AddFriendsScreenUtils.tsx");
 
 export const dismissIncomingRequest = function dismissIncomingRequest(arg0) {
   let applicationId;
   let userId;
   ({ userId, applicationId } = arg0);
-  let obj = importDefault(dependencyMap[4]);
+  let obj = importDefault(9057);
   obj = { userId, applicationId, location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   obj.cancelFriendRequest(obj);
 };
@@ -29,7 +30,7 @@ export const acceptIncomingRequest = function acceptIncomingRequest(arg0) {
   let applicationId;
   let userId;
   ({ userId, applicationId } = arg0);
-  let obj = importDefault(dependencyMap[4]);
+  let obj = importDefault(9057);
   obj = { userId, applicationId, location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   const result = obj.maybeConfirmFriendRequestAccept(obj);
 };
@@ -37,7 +38,7 @@ export const sendWave = function sendWave(id, arg1, arg2) {
   return _sendWave(...arguments);
 };
 export const addContactSuggestion = function addContactSuggestion(user) {
-  let obj = importDefault(dependencyMap[10]);
+  let obj = importDefault(8923);
   obj = { userId: user.id, context: obj, type: undefined, fromFriendSuggestion: true };
   obj = { location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   obj.addRelationship(obj);

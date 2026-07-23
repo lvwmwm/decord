@@ -1,28 +1,30 @@
-// Module ID: 13837
-// Function ID: 104593
+// Module ID: 13951
+// Function ID: 106749
 // Name: BountiesModalCloseButton
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 4660, 1212, 5119, 2]
 // Exports: default
 
-// Module 13837 (BountiesModalCloseButton)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_4 = arg1(dependencyMap[2]).createStyles(() => {
+// Module 13951 (BountiesModalCloseButton)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { <string:3596066964>: null, <string:3638417373>: null, backgroundColor: importDefault(dependencyMap[3]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[3]).radii.round, width: importDefault(dependencyMap[3]).space.PX_32, height: importDefault(dependencyMap[3]).space.PX_32 };
+  obj = { alignItems: "center", justifyContent: "center", backgroundColor: importDefault(689).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: importDefault(689).radii.round, width: importDefault(689).space.PX_32, height: importDefault(689).space.PX_32 };
   obj.closeButton = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalCloseButton.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalCloseButton.tsx");
 
 export default function BountiesModalCloseButton(onPress) {
-  let obj = { <string:1403277940>: "messageId", <string:2544012649>: "Array", <string:2086001431>: "isArray" };
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[5]).t.cpT0Cq);
+  let obj = { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12 };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj.onPress = onPress.onPress;
   obj.style = callback().closeButton;
-  obj = { size: "sm", color: importDefault(dependencyMap[3]).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
-  obj.children = jsx(arg1(dependencyMap[6]).XSmallIcon, obj);
-  return jsx(arg1(dependencyMap[4]).PressableOpacity, obj);
+  obj = { size: "sm", color: importDefault(689).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
+  obj.children = jsx(require(5119) /* XSmallIcon */.XSmallIcon, { size: "sm", color: importDefault(689).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT });
+  return jsx(require(4660) /* PressableBase */.PressableOpacity, { size: "sm", color: importDefault(689).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT });
 };

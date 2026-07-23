@@ -1,8 +1,8 @@
 // Module ID: 469
 // Function ID: 6153
 // Name: ToastAndroid
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 469 (ToastAndroid)
 
-export default importAll(dependencyMap[0]).getEnforcing("ToastAndroid");
+export default require("requireModule").getEnforcing("ToastAndroid");

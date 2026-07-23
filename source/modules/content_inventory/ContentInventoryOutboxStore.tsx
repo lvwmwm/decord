@@ -1,9 +1,17 @@
-// Module ID: 8683
-// Function ID: 68814
+// Module ID: 8690
+// Function ID: 68854
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 8308, 566, 686, 2]
 
-// Module 8683 (_isNativeReflectConstruct)
+// Module 8690 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -16,32 +24,27 @@ function _isNativeReflectConstruct() {
 function resetOutboxes() {
   const map = new Map();
   const set = new Set();
-  let closure_9 = null;
-  let closure_10 = false;
+  let c9 = null;
+  let c10 = false;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const map = new Map();
-const set = new Set();
-let closure_9 = null;
-let closure_10 = false;
-let closure_11 = false;
-let tmp4 = (Store) => {
+let map = new Map();
+let set = new Set();
+let c9 = null;
+let c10 = false;
+let c11 = false;
+let tmp4 = ((Store) => {
   class ContentInventoryOutboxStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ContentInventoryOutboxStore);
-      obj = closure_5(ContentInventoryOutboxStore);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      tmp = outer1_2(this, ContentInventoryOutboxStore);
+      obj = outer1_5(ContentInventoryOutboxStore);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -50,16 +53,15 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ContentInventoryOutboxStore;
   callback2(ContentInventoryOutboxStore, Store);
   let obj = {
     key: "getMatchingOutboxEntry",
     value(activity) {
       activity = activity.activity;
-      const value = store.get(activity.userId);
+      const value = outer1_7.get(activity.userId);
       if (null != value) {
         if (null != activity) {
-          return ContentInventoryOutboxStore(closure_1[5]).findMatchingEntry(value.entries, activity);
+          return ContentInventoryOutboxStore(outer1_1[5]).findMatchingEntry(value.entries, activity);
         }
       }
     }
@@ -68,42 +70,42 @@ let tmp4 = (Store) => {
   obj = {
     key: "getUserOutbox",
     value(arg0) {
-      return store.get(arg0);
+      return outer1_7.get(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "isFetchingUserOutbox",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_8.has(arg0);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "deleteOutboxEntryError",
     get() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[4] = {
     key: "isDeletingEntryHistory",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[5] = {
     key: "hasInitialized",
     get() {
-      return closure_11;
+      return outer1_11;
     }
   };
   return callback(ContentInventoryOutboxStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "ContentInventoryOutboxStore";
-tmp4 = new tmp4(importDefault(dependencyMap[7]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     resetOutboxes();
-    let closure_11 = true;
+    let c11 = true;
   },
   LOGOUT: function handleLogOut() {
     resetOutboxes();
@@ -123,13 +125,14 @@ tmp4 = new tmp4(importDefault(dependencyMap[7]), {
     set.delete(userId.userId);
   },
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START: function handleDeleteOutboxEntryStart() {
-    let closure_9 = null;
-    let closure_10 = true;
+    let c9 = null;
+    let c10 = true;
   },
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_SUCCESS: function handleDeleteOutboxEntrySuccess(arg0) {
+    let require;
     let userId;
-    ({ entry: closure_0, userId } = arg0);
-    let closure_9 = null;
+    ({ entry: require, userId } = arg0);
+    let c9 = null;
     const value = map.get(userId);
     if (null == value) {
       return false;
@@ -140,18 +143,18 @@ tmp4 = new tmp4(importDefault(dependencyMap[7]), {
       const merged = Object.assign(value);
       obj["entries"] = found;
       const result = map.set(userId, obj);
-      let closure_10 = false;
+      let c10 = false;
     }
   },
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_FAILURE: function handleDeleteOutboxEntryFailure(error) {
     error = error.error;
-    let closure_10 = false;
+    let c10 = false;
   },
   CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR: function handleClearError() {
-    let closure_9 = null;
-    let closure_10 = false;
+    let c9 = null;
+    let c10 = false;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/content_inventory/ContentInventoryOutboxStore.tsx");
+let result = set.fileFinishedImporting("modules/content_inventory/ContentInventoryOutboxStore.tsx");
 
 export default tmp4;

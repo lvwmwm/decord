@@ -1,10 +1,14 @@
-// Module ID: 8233
-// Function ID: 65018
+// Module ID: 8239
+// Function ID: 65055
 // Name: _activityFromSetting
-// Dependencies: []
+// Dependencies: [31, 4991, 653, 3771, 3803, 566, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 8233 (_activityFromSetting)
+// Module 8239 (_activityFromSetting)
+import { useMemo } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ActivityTypes } from "ME";
+
 function _activityFromSetting(emojiName) {
   if (null != arg1) {
     let obj = {};
@@ -15,15 +19,15 @@ function _activityFromSetting(emojiName) {
     if (null != emojiName.emojiName) {
       tmp = null;
       if ("" !== emojiName.emojiName) {
-        const obj6 = importDefault(dependencyMap[3]);
-        const byName = obj6.getByName(importDefault(dependencyMap[3]).convertSurrogateToName(emojiName.emojiName, false));
+        const obj6 = importDefault(3771);
+        const byName = obj6.getByName(importDefault(3771).convertSurrogateToName(emojiName.emojiName, false));
         let tmp2 = null;
         if (null != byName) {
-          obj = { name: byName.surrogates };
+          obj = { id: null, name: byName.surrogates, animated: false };
           tmp2 = obj;
         }
         tmp = tmp2;
-        const obj7 = importDefault(dependencyMap[3]);
+        const obj7 = importDefault(3771);
       }
     }
   }
@@ -50,11 +54,7 @@ function _activityFromSetting(emojiName) {
   obj.metadata = obj2;
   return obj;
 }
-const useMemo = require(dependencyMap[0]).useMemo;
-let closure_4 = importDefault(dependencyMap[1]);
-const ActivityTypes = require(dependencyMap[2]).ActivityTypes;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/custom_status/utils/userSettingToActivity.tsx");
+const result = require("ME").fileFinishedImporting("modules/custom_status/utils/userSettingToActivity.tsx");
 
 export const getActivityFromCustomStatus = function getActivityFromCustomStatus(setting) {
   const emojiId = setting.emojiId;
@@ -68,32 +68,29 @@ export const getActivityFromCustomStatus = function getActivityFromCustomStatus(
   return _activityFromSetting(setting, usableCustomEmojiById);
 };
 export const useCustomStatusActivity = function useCustomStatusActivity() {
-  const CustomStatusSetting = require(dependencyMap[4]).CustomStatusSetting;
-  const setting = CustomStatusSetting.useSetting();
-  const require = setting;
+  const CustomStatusSetting = setting(stateFromStores[4]).CustomStatusSetting;
+  setting = CustomStatusSetting.useSetting();
   let emojiId;
   if (null != setting) {
     emojiId = setting.emojiId;
   }
-  const importDefault = emojiId;
-  const items = [closure_4];
+  const items = [_isNativeReflectConstruct];
   const items1 = [emojiId];
-  const stateFromStores = require(dependencyMap[5]).useStateFromStores(items, () => {
+  stateFromStores = setting(stateFromStores[5]).useStateFromStores(items, () => {
     let usableCustomEmojiById = null;
     if (null != emojiId) {
       usableCustomEmojiById = null;
       if ("0" !== emojiId) {
-        usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(emojiId);
+        usableCustomEmojiById = outer1_4.getUsableCustomEmojiById(emojiId);
       }
     }
     return usableCustomEmojiById;
   }, items1);
-  const dependencyMap = stateFromStores;
   const items2 = [setting, stateFromStores];
   return useMemo(() => {
     let tmp = null;
     if (null != setting) {
-      tmp = callback(setting, stateFromStores);
+      tmp = outer1_6(setting, stateFromStores);
     }
     return tmp;
   }, items2);

@@ -1,53 +1,53 @@
-// Module ID: 11084
-// Function ID: 86201
+// Module ID: 11094
+// Function ID: 86251
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [14, 11095, 4062, 9440, 477, 9439, 2]
 // Exports: default
 
-// Module 11084 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11094 (_createForOfIteratorHelperLoose)
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +58,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,12 +84,55 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/messages/native/hooks/useRowManager.tsx");
+const result = require("GuildThemeSourcePreference").fileFinishedImporting("modules/messages/native/hooks/useRowManager.tsx");
 
 export default function useRowManager(arg0) {
-  ({ chatManager: closure_0, rowGenerator: closure_1, animatingStickerMessageIdRef: closure_2, canAddNewReactions: closure_3, channel: closure_4, messages: closure_5, isMessagesReady: closure_6, uploads: closure_7, roleStyle: closure_8, oldestUnreadMessageId: closure_9, replyingMessageId: closure_10, inlineAttachmentMedia: closure_11, inlineEmbedMedia: closure_12, renderEmbeds: closure_13, renderReactions: closure_14, animateEmoji: closure_15, gifAutoPlay: closure_16, timestampHourCycle: closure_17, currentUserId: closure_18, renderCommunicationDisabled: closure_19, selectedSummary: closure_20, enableSwipeActions: closure_21, isResourceChannel: closure_22, shouldObscureSpoiler: closure_23, shouldDisableInteractiveComponents: closure_24, unloadableContentEntryMessageIds: closure_25, containerWidth: closure_26, chatRef: closure_27, loadedRef: closure_28, animatedRef: closure_29, hasMoreMessagesAfterForLastUpdateRef: closure_30, updateNativeRows: closure_31, isLoadingAtTop: closure_32, channelLatestMessageLoadingStatsManager: closure_33, channelId: closure_34, isMessagesCached: closure_35, chatUpdatesQueue: closure_36, shouldJumpToOriginalPost: closure_37, findMessageIndex: closure_38, scrollToTopMessage: closure_39, useReducedMotion: closure_40 } = arg0);
+  let _arrayLikeToArray;
+  let _createForOfIteratorHelperLoose;
+  let closure_10;
+  let closure_11;
+  let closure_12;
+  let closure_13;
+  let closure_14;
+  let closure_15;
+  let closure_16;
+  let closure_17;
+  let closure_18;
+  let closure_19;
+  let closure_20;
+  let closure_21;
+  let closure_22;
+  let closure_23;
+  let closure_24;
+  let closure_25;
+  let closure_26;
+  let closure_27;
+  let closure_28;
+  let closure_29;
+  let closure_30;
+  let closure_31;
+  let closure_32;
+  let closure_33;
+  let closure_34;
+  let closure_35;
+  let closure_36;
+  let closure_37;
+  let closure_38;
+  let closure_39;
+  let closure_40;
+  let closure_5;
+  let closure_6;
+  let closure_7;
+  let closure_8;
+  let closure_9;
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ chatManager: require, rowGenerator: importDefault, animatingStickerMessageIdRef: dependencyMap, canAddNewReactions: _createForOfIteratorHelperLoose, channel: _arrayLikeToArray, messages: closure_5, isMessagesReady: closure_6, uploads: closure_7, roleStyle: closure_8, oldestUnreadMessageId: closure_9, replyingMessageId: closure_10, inlineAttachmentMedia: closure_11, inlineEmbedMedia: closure_12, renderEmbeds: closure_13, renderReactions: closure_14, animateEmoji: closure_15, gifAutoPlay: closure_16, timestampHourCycle: closure_17, currentUserId: closure_18, renderCommunicationDisabled: closure_19, selectedSummary: closure_20, enableSwipeActions: closure_21, isResourceChannel: closure_22, shouldObscureSpoiler: closure_23, shouldDisableInteractiveComponents: closure_24, unloadableContentEntryMessageIds: closure_25, containerWidth: closure_26, chatRef: closure_27, loadedRef: closure_28, animatedRef: closure_29, hasMoreMessagesAfterForLastUpdateRef: closure_30, updateNativeRows: closure_31, isLoadingAtTop: closure_32, channelLatestMessageLoadingStatsManager: closure_33, channelId: closure_34, isMessagesCached: closure_35, chatUpdatesQueue: closure_36, shouldJumpToOriginalPost: closure_37, findMessageIndex: closure_38, scrollToTopMessage: closure_39, useReducedMotion: closure_40 } = arg0);
   function createRows(arg0) {
+    let closure_0;
+    let closure_1;
+    let closure_2;
     ({ forceRender: closure_0, updateMessageIds: closure_1, ignoreEmbedDescriptionCache: closure_2 } = arg0);
     let measureResult = null;
     if (null != closure_4) {
@@ -97,26 +140,26 @@ export default function useRowManager(arg0) {
       if (null != closure_5) {
         measureResult = null;
         if (closure_6) {
-          const firstRowGenerator = callback(closure_2[0]).firstRowGenerator;
+          const firstRowGenerator = outer1_1(outer1_2[0]).firstRowGenerator;
           measureResult = firstRowGenerator.measure(() => {
             let done;
-            closure_0.setup(closure_5);
-            let obj = { inlineAttachmentMedia: closure_11, inlineEmbedMedia: closure_12, renderEmbeds: closure_13, renderReactions: closure_14, animateEmoji: closure_15, animatingStickerMessageId: ref.current, constrainedWidth: closure_26, gifAutoPlay: closure_16, timestampHourCycle: closure_17, renderCommunicationDisabled: closure_19, ignoreEmbedDescriptionCache: ref, enableSwipeActions: closure_21, shouldObscureSpoiler: closure_23, shouldDisableInteractiveComponents: closure_24 };
-            options.setOptions(obj);
-            obj = { channel: closure_4, messages: closure_5, uploads: closure_7, oldestUnreadMessageId: closure_9, replyingMessageId: closure_10, currentUserId: closure_18, canAddNewReactions: callback(), selectedSummary: closure_20, chatManager: closure_0, roleStyle: closure_8, forceRender: closure_0, updateMessageIds: options, isResourceChannel: closure_22, unloadableContentEntryMessageIds: closure_25 };
-            const tmp4 = callback(options(ref[1])(obj));
+            outer1_0.setup(outer1_5);
+            let obj = { inlineAttachmentMedia: outer1_11, inlineEmbedMedia: outer1_12, renderEmbeds: outer1_13, renderReactions: outer1_14, animateEmoji: outer1_15, animatingStickerMessageId: outer1_2.current, constrainedWidth: outer1_26, gifAutoPlay: outer1_16, timestampHourCycle: outer1_17, renderCommunicationDisabled: outer1_19, ignoreEmbedDescriptionCache: closure_2, enableSwipeActions: outer1_21, shouldObscureSpoiler: outer1_23, shouldDisableInteractiveComponents: outer1_24 };
+            outer1_1.setOptions(obj);
+            obj = { channel: outer1_4, messages: outer1_5, uploads: outer1_7, oldestUnreadMessageId: outer1_9, replyingMessageId: outer1_10, currentUserId: outer1_18, canAddNewReactions: outer1_3(), selectedSummary: outer1_20, chatManager: outer1_0, roleStyle: outer1_8, forceRender: closure_0, updateMessageIds: closure_1, isResourceChannel: outer1_22, unloadableContentEntryMessageIds: outer1_25 };
+            const tmp4 = outer2_3(outer2_1(outer2_2[1])(obj));
             let iter = tmp4();
             if (!iter.done) {
               do {
-                let tmp5 = closure_1;
-                let tmp6 = closure_0;
-                let row = closure_0.createRow(closure_1.generate(iter.value));
+                let tmp5 = outer1_1;
+                let tmp6 = outer1_0;
+                let row = outer1_0.createRow(outer1_1.generate(iter.value));
                 let iter2 = tmp4();
                 iter = iter2;
                 done = iter2.done;
               } while (!done);
             }
-            return closure_0.createChangeset();
+            return outer1_0.createChangeset();
           });
         }
       }
@@ -127,11 +170,12 @@ export default function useRowManager(arg0) {
     let flag = arg1;
     let INSTANT = arg2;
     let flag2 = arg3;
+    let closure_0 = arg0;
     if (arg1 === undefined) {
       flag = false;
     }
     if (INSTANT === undefined) {
-      INSTANT = arg0(INSTANT[2]).JumpType.INSTANT;
+      INSTANT = outer1_0(outer1_2[2]).JumpType.INSTANT;
     }
     if (flag2 === undefined) {
       flag2 = false;
@@ -139,19 +183,19 @@ export default function useRowManager(arg0) {
     if (null != arg0) {
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const tmp = callback(arg0);
+        const tmp = outer1_38(closure_0);
         if (null != tmp) {
-          if (null != ref.current) {
+          if (null != outer1_27.current) {
             let flag2 = false;
             if (flag) {
-              let obj = { scrollToMessageId: arg0, jumpTargetId: arg0, jumpType: INSTANT, focusTargetId: arg0, overrideScrollJumpType: arg0(INSTANT[2]).JumpType.INSTANT, isRescrolling: true, hasJumpedToOriginalPost: flag2 };
-              callback2(obj);
+              let obj = { scrollToMessageId: closure_0, jumpTargetId: closure_0, jumpType: INSTANT, focusTargetId: closure_0, overrideScrollJumpType: outer2_0(outer2_2[2]).JumpType.INSTANT, isRescrolling: true, hasJumpedToOriginalPost: flag2 };
+              outer1_44(obj);
               flag2 = true;
             }
             if (!flag2) {
-              obj = { animated: INSTANT === arg0(INSTANT[2]).JumpType.ANIMATED };
-              flag(INSTANT[3]).scrollTo(ref.current, tmp, obj);
-              const obj2 = flag(INSTANT[3]);
+              obj = { animated: INSTANT === outer2_0(outer2_2[2]).JumpType.ANIMATED };
+              outer2_1(outer2_2[3]).scrollTo(outer1_27.current, tmp, obj);
+              const obj2 = outer2_1(outer2_2[3]);
             }
           }
         }
@@ -166,11 +210,11 @@ export default function useRowManager(arg0) {
     }
     let ANIMATED = scrollToMessageId.jumpType;
     if (ANIMATED === undefined) {
-      ANIMATED = scrollToMessageId(tmp9[2]).JumpType.ANIMATED;
+      ANIMATED = outer1_0(outer1_2[2]).JumpType.ANIMATED;
     }
     let TOP = scrollToMessageId.scrollPosition;
     if (TOP === undefined) {
-      TOP = scrollToMessageId(tmp9[3]).ChatScrollPosition.TOP;
+      TOP = outer1_0(outer1_2[3]).ChatScrollPosition.TOP;
     }
     let flag = scrollToMessageId.minimizeScrolling;
     if (flag === undefined) {
@@ -184,35 +228,36 @@ export default function useRowManager(arg0) {
     if (flag3 === undefined) {
       flag3 = false;
     }
-    let tmp9;
-    let tmp18;
+    let c2;
+    let c3;
     let tmp6 = closure_40;
     if (!closure_40) {
-      tmp6 = ANIMATED === scrollToMessageId(tmp9[2]).JumpType.INSTANT;
+      tmp6 = ANIMATED === outer1_0(outer1_2[2]).JumpType.INSTANT;
     }
-    tmp9 = !tmp6;
-    let obj = scrollToMessageId(tmp9[4]);
+    c2 = tmp9;
+    let obj = outer1_0(outer1_2[4]);
     if (obj.isIOS()) {
       if (!flag2) {
-        const JumpType = scrollToMessageId(tmp9[2]).JumpType;
+        const JumpType = outer1_0(outer1_2[2]).JumpType;
         const tmp13 = tmp9 ? JumpType.ANIMATED : JumpType.INSTANT;
         maybeRescrollToMessageId(scrollToMessageId, true, tmp13, flag3);
         const tmp10 = maybeRescrollToMessageId;
       }
     }
-    tmp18 = callback5(scrollToMessageId);
+    const tmp18 = callback4(scrollToMessageId);
+    c3 = tmp18;
     if (null != tmp18) {
       if (flag) {
         const _setTimeout = setTimeout;
         const timerId = setTimeout(() => {
-          let obj = jumpTargetId(tmp9[3]);
-          obj = { animated: tmp9, highlight: jumpTargetId === scrollToMessageId };
-          obj.scrollIntoView(ref.current, tmp18, obj);
+          let obj = outer2_1(outer2_2[3]);
+          obj = { animated: c2, highlight: jumpTargetId === scrollToMessageId };
+          obj.scrollIntoView(outer1_27.current, c3, obj);
         }, 5);
       } else {
         obj = { animated: tmp9, highlight: jumpTargetId === scrollToMessageId, position: TOP };
-        jumpTargetId(tmp9[3]).scrollTo(closure_27.current, tmp18, obj);
-        const obj2 = jumpTargetId(tmp9[3]);
+        outer1_1(outer1_2[3]).scrollTo(closure_27.current, tmp18, obj);
+        const obj2 = outer1_1(outer1_2[3]);
       }
     }
   }
@@ -244,7 +289,7 @@ export default function useRowManager(arg0) {
     }
     let ANIMATED = obj.jumpType;
     if (ANIMATED === undefined) {
-      ANIMATED = previousRows(closure_2[2]).JumpType.ANIMATED;
+      ANIMATED = outer1_0(outer1_2[2]).JumpType.ANIMATED;
     }
     let focusTargetId = obj.focusTargetId;
     if (focusTargetId === undefined) {
@@ -284,7 +329,7 @@ export default function useRowManager(arg0) {
       const current2 = closure_28.current;
       if (null != startId) {
         if (startId.startId === scrollToMessageId) {
-          const MIDDLE = previousRows(closure_2[3]).ChatScrollPosition.MIDDLE;
+          const MIDDLE = outer1_0(outer1_2[3]).ChatScrollPosition.MIDDLE;
         }
       }
       if (null != arr) {
@@ -300,18 +345,18 @@ export default function useRowManager(arg0) {
           obj.focusTargetId = focusTargetId;
           closure_28.current = true;
           let obj1 = { rows: arr, hasMoreMessagesAfter: closure_5.hasMoreAfter };
-          const tmp26 = callback(closure_2[5]);
-          obj1.isLoadingAtTop = callback3(arr, ref2.current);
-          obj1.scrollData = callback(closure_2[5])(obj);
+          const tmp26 = outer1_1(outer1_2[5]);
+          obj1.isLoadingAtTop = callback2(arr, ref2.current);
+          obj1.scrollData = outer1_1(outer1_2[5])(obj);
           obj1.HACK_iOSForceAnimations = flag3;
           obj1.forceReload = forceReload;
           obj1.isAnimated = isAnimated;
-          callback2(obj1);
+          callback(obj1);
           if (!current2) {
             const obj2 = { channelId: closure_34, areMessagesCached: closure_35 };
             closure_33.finish(obj2);
           }
-          const tmp26Result = callback(closure_2[5])(obj);
+          const tmp26Result = outer1_1(outer1_2[5])(obj);
         }
         let current = closure_28.current;
         if (current) {
@@ -322,7 +367,7 @@ export default function useRowManager(arg0) {
         }
         if (current) {
           const _setTimeout = setTimeout;
-          const timerId = setTimeout(() => callback(), 100);
+          const timerId = setTimeout(() => outer1_39(), 100);
         }
       }
       if (closure_28.current) {
@@ -333,22 +378,22 @@ export default function useRowManager(arg0) {
       if (!closure_28.current) {
         if (null != arr) {
           if (0 === arr.length) {
-            obj1 = callback(closure_2[3]);
+            obj1 = outer1_1(outer1_2[3]);
             obj1.fadeIn(closure_27.current);
           }
         }
       }
       if (null != scrollToMessageId) {
-        if (!callback4(flag7)) {
+        if (!callback3(flag7)) {
           const obj3 = { scrollToMessageId, jumpTargetId, jumpType: ANIMATED, scrollPosition: MIDDLE, minimizeScrolling: flag5, isRescrolling: flag6, hasJumpedToOriginalPost: flag7 };
           scrollToMessageId(obj3);
         }
       }
       if (null != focusTargetId) {
-        const tmp50 = callback5(focusTargetId);
+        const tmp50 = callback4(focusTargetId);
         if (null != tmp50) {
-          callback(closure_2[3]).focus(closure_27.current, tmp50);
-          const obj8 = callback(closure_2[3]);
+          outer1_1(outer1_2[3]).focus(closure_27.current, tmp50);
+          const obj8 = outer1_1(outer1_2[3]);
         }
       }
     }

@@ -1,111 +1,111 @@
 // Module ID: 961
-// Function ID: 10391
+// Function ID: 10392
 // Name: instrumentFetch
-// Dependencies: []
+// Dependencies: [57, 5, 827, 962, 799, 798, 815, 804, 825]
 // Exports: addFetchEndInstrumentationHandler, addFetchInstrumentationHandler
 
 // Module 961 (instrumentFetch)
+import _slicedToArray from "_slicedToArray";
+import asyncGeneratorStep from "module_798";
+
 function instrumentFetch(arg0) {
-  const require = arg0;
+  const _require = arg0;
   let tmp = arguments.length > 1 && undefined !== arguments[1] && arguments[1];
   if (tmp) {
-    tmp = !require(dependencyMap[3]).supportsNativeFetch();
-    const obj = require(dependencyMap[3]);
+    tmp = !_require(962).supportsNativeFetch();
+    let obj = _require(962);
   }
   if (!tmp) {
-    require(dependencyMap[4]).fill(require(dependencyMap[5]).GLOBAL_OBJ, "fetch", (arg0) => () => {
-      const error = new Error();
-      const arg0 = error;
-      const length = arguments.length;
-      const array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
-      }
-      const request = callback(array);
-      let obj = { args: array, fetchData: obj };
-      obj = { method: request.method, url: request.url };
-      obj.startTimestamp = 1000 * arg0(obj[6]).timestampInSeconds();
-      obj.virtualError = error;
-      obj.headers = callback2(array);
-      if (!arg0) {
-        const _Object = Object;
-        arg0(obj[2]).triggerHandlers("fetch", Object.assign({}, obj));
-        const obj4 = arg0(obj[2]);
-      }
-      const obj3 = arg0(obj[6]);
-      return arg0.apply(arg0(obj[5]).GLOBAL_OBJ, array).then(() => {
-        let closure_0 = callback(async (arg0) => {
-          if (obj) {
-            return obj.resume();
-          } else {
-            if (callback) {
-              callback(arg0);
+    _require(799).fill(_require(798).GLOBAL_OBJ, "fetch", (arg0) => {
+      let closure_0 = arg0;
+      return () => {
+        let error = new Error();
+        const length = arguments.length;
+        const array = new Array(length);
+        for (let num = 0; num < length; num = num + 1) {
+          array[num] = arguments[num];
+        }
+        const request = outer2_9(array);
+        obj = { args: array, fetchData: obj };
+        obj = { method: request.method, url: request.url, startTimestamp: 1000 * callback(outer2_1[6]).timestampInSeconds(), virtualError: error, headers: outer2_10(array) };
+        if (!callback) {
+          let _Object = Object;
+          callback(outer2_1[2]).triggerHandlers("fetch", Object.assign({}, obj));
+          let obj4 = callback(outer2_1[2]);
+        }
+        let obj3 = callback(outer2_1[6]);
+        return error.apply(callback(outer2_1[5]).GLOBAL_OBJ, array).then((() => {
+          let closure_0 = outer3_3(async (arg0) => {
+            if (obj) {
+              return obj.resume();
             } else {
-              const _Object = Object;
-              const obj = {};
-              const obj2 = callback(closure_1[2]);
-              obj.endTimestamp = 1000 * callback(closure_1[6]).timestampInSeconds();
-              obj.response = arg0;
-              obj2.triggerHandlers("fetch", Object.assign({}, closure_1, obj));
-              const obj4 = callback(closure_1[6]);
+              if (callback) {
+                callback(arg0);
+              } else {
+                const _Object = Object;
+                obj = {};
+                const obj2 = callback(outer5_1[2]);
+                obj.endTimestamp = 1000 * callback(outer5_1[6]).timestampInSeconds();
+                obj.response = arg0;
+                obj2.triggerHandlers("fetch", Object.assign({}, outer2_1, obj));
+                const obj4 = callback(outer5_1[6]);
+              }
+              return arg0;
             }
-            return arg0;
+          });
+          return function(arg0) {
+            return callback(...arguments);
+          };
+        })(), (error) => {
+          let obj = error(outer3_1[2]);
+          obj = { endTimestamp: 1000 * error(outer3_1[6]).timestampInSeconds(), error };
+          obj.triggerHandlers("fetch", Object.assign({}, obj, obj));
+          const obj3 = error(outer3_1[6]);
+          let isErrorResult = error(outer3_1[7]).isError(error);
+          if (isErrorResult) {
+            isErrorResult = undefined === error.stack;
+          }
+          if (isErrorResult) {
+            error.stack = error.stack;
+            const result = error(outer3_1[4]).addNonEnumerableProperty(error, "framesToPop", 1);
+            const obj5 = error(outer3_1[4]);
+          }
+          const obj4 = error(outer3_1[7]);
+          const client = error(outer3_1[8]).getClient();
+          let prop;
+          if (null != client) {
+            prop = client.getOptions().enhanceFetchErrorMessages;
+          }
+          let str2 = "always";
+          if (null != prop) {
+            str2 = prop;
+          }
+          if (false !== str2) {
+            const _TypeError = TypeError;
+            if (error instanceof TypeError) {
+              const _URL = URL;
+              const uRL = new URL(obj.fetchData.url);
+              const host = uRL.host;
+              if ("always" === str2) {
+                const _HermesInternal = HermesInternal;
+                error.message = "" + error.message + " (" + host + ")";
+              } else {
+                const result1 = error(outer3_1[4]).addNonEnumerableProperty(error, "__sentry_fetch_url_host__", host);
+                const obj8 = error(outer3_1[4]);
+              }
+            }
           }
         });
-        return function(arg0) {
-          return callback(...arguments);
-        };
-      }(), (error) => {
-        let obj = error(obj[2]);
-        obj = {};
-        obj.endTimestamp = 1000 * error(obj[6]).timestampInSeconds();
-        obj.error = error;
-        obj.triggerHandlers("fetch", Object.assign({}, obj, obj));
-        const obj3 = error(obj[6]);
-        let isErrorResult = error(obj[7]).isError(error);
-        if (isErrorResult) {
-          isErrorResult = undefined === error.stack;
-        }
-        if (isErrorResult) {
-          error.stack = error.stack;
-          const result = error(obj[4]).addNonEnumerableProperty(error, "framesToPop", 1);
-          const obj5 = error(obj[4]);
-        }
-        const obj4 = error(obj[7]);
-        const client = error(obj[8]).getClient();
-        let prop;
-        if (null != client) {
-          prop = client.getOptions().enhanceFetchErrorMessages;
-        }
-        let str2 = "always";
-        if (null != prop) {
-          str2 = prop;
-        }
-        if (false !== str2) {
-          const _TypeError = TypeError;
-          if (error instanceof TypeError) {
-            const _URL = URL;
-            const uRL = new URL(obj.fetchData.url);
-            const host = uRL.host;
-            if ("always" === str2) {
-              const _HermesInternal = HermesInternal;
-              error.message = "" + error.message + " (" + host + ")";
-            } else {
-              const result1 = error(obj[4]).addNonEnumerableProperty(error, "__sentry_fetch_url_host__", host);
-              const obj8 = error(obj[4]);
-            }
-          }
-        }
-      });
+      };
     });
-    const obj2 = require(dependencyMap[4]);
+    let obj2 = _require(799);
   }
 }
-async function _resolveResponse(body, arg1, arg2) {
-  body = undefined;
-  if (null != body) {
-    if (body.body) {
-      body = body.body;
+async function _resolveResponse(arg0, arg1, arg2) {
+  let body;
+  if (null != arg0) {
+    if (arg0.body) {
+      body = arg0.body;
       const reader = body.getReader();
       const _setTimeout = setTimeout;
       let flag = true;
@@ -152,12 +152,12 @@ async function _resolveResponse(body, arg1, arg2) {
   }
 }
 function streamHandler(clone) {
-  const require = clone;
-  !function resolveResponse(cloneResult, arg1) {
-    return callback(...arguments);
-  }(clone.clone(), () => {
-    let obj = arg0(closure_1[2]);
-    obj = { endTimestamp: 1000 * arg0(closure_1[6]).timestampInSeconds(), response: arg0 };
+  let closure_0 = clone;
+  !(function resolveResponse(cloneResult, arg1) {
+    return outer1_5(...arguments);
+  })(clone.clone(), () => {
+    let obj = clone(outer1_1[2]);
+    obj = { endTimestamp: 1000 * clone(outer1_1[6]).timestampInSeconds(), response: clone };
     obj.triggerHandlers("fetch-body-resolved", obj);
   });
 }
@@ -187,9 +187,9 @@ function getUrlFromResource(url) {
 }
 function parseFetchArgs(arg0) {
   if (0 === arg0.length) {
-    return {};
+    return { method: "GET", url: "" };
   } else if (2 === arg0.length) {
-    const tmp6 = callback(arg0, 2);
+    const tmp6 = _slicedToArray(arg0, 2);
     const first = tmp6[0];
     let obj = { url: getUrlFromResource(first) };
     if (hasProp(tmp6[1], "method")) {
@@ -206,7 +206,7 @@ function parseFetchArgs(arg0) {
           const str7 = String(first.method);
         }
       }
-      const obj3 = require(dependencyMap[7]);
+      obj3 = require(804) /* isBuiltin */;
     }
     obj.method = str6;
     return obj;
@@ -224,7 +224,7 @@ function parseFetchArgs(arg0) {
   }
 }
 function getHeadersFromFetchArgs(arg0) {
-  const tmp = callback(arg0, 2);
+  const tmp = _slicedToArray(arg0, 2);
   const first = tmp[0];
   if ("object" === typeof tmp[1]) {
     if (null !== tmp3) {
@@ -243,23 +243,21 @@ function getHeadersFromFetchArgs(arg0) {
     return headers1;
   }
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const addFetchEndInstrumentationHandler = function addFetchEndInstrumentationHandler(arg0) {
-  require(dependencyMap[2]).addHandler("fetch-body-resolved", arg0);
-  const obj = require(dependencyMap[2]);
-  require(dependencyMap[2]).maybeInstrument("fetch-body-resolved", () => {
-    callback(closure_6);
+  require(827) /* addHandler */.addHandler("fetch-body-resolved", arg0);
+  const obj = require(827) /* addHandler */;
+  require(827) /* addHandler */.maybeInstrument("fetch-body-resolved", () => {
+    outer1_4(outer1_6);
   });
 };
 export const addFetchInstrumentationHandler = function addFetchInstrumentationHandler(arg0, arg1) {
-  const require = arg1;
-  require(dependencyMap[2]).addHandler("fetch", arg0);
-  const obj = require(dependencyMap[2]);
-  require(dependencyMap[2]).maybeInstrument("fetch", () => {
-    callback(undefined, arg1);
+  const _require = arg1;
+  _require(827).addHandler("fetch", arg0);
+  const obj = _require(827);
+  _require(827).maybeInstrument("fetch", () => {
+    outer1_4(undefined, closure_0);
   });
 };
 export { parseFetchArgs };

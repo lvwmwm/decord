@@ -1,22 +1,26 @@
-// Module ID: 12610
-// Function ID: 96916
+// Module ID: 12724
+// Function ID: 99072
 // Name: id
-// Dependencies: []
+// Dependencies: [4143, 1194, 4809, 4202, 653, 4148, 566, 8934, 2]
 // Exports: default
 
-// Module 12610 (id)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_7, RTCConnectionStates: closure_8 } = arg1(dependencyMap[4]));
-const ParticipantTypes = arg1(dependencyMap[5]).ParticipantTypes;
+// Module 12724 (id)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { ParticipantTypes } from "ParticipantTypes";
+
+let closure_7;
+let closure_8;
+let require = arg1;
+({ EMPTY_STRING_SNOWFLAKE_ID: closure_7, RTCConnectionStates: closure_8 } = ME);
 let obj = {};
 obj = { initialized: false, callId: undefined };
 const merged = Object.assign(obj);
 obj = { DISCONNECTED: "disconneted", DISCONNECTING: "disconnecting", CONNECTING: "connecting", RINGING: "ringing", CONNECTED: "connected" };
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
 
 export default function _default() {
   let tmp = arg0;
@@ -25,79 +29,77 @@ export default function _default() {
   if (arg0 === undefined) {
     tmp = closure_7;
   }
-  const arg1 = tmp;
+  const require = tmp;
   if (flag === undefined) {
     flag = false;
   }
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let importDefault;
+  let id;
   let dependencyMap;
-  let participants;
-  const id = id.getId();
-  importDefault = id;
-  let obj = arg1(dependencyMap[6]);
+  let stateFromStores;
+  id = id.getId();
+  let obj = require(566) /* initialize */;
   const items = [closure_5];
   const items1 = [tmp, id];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const call = call.getCall(tmp);
+    const call = outer1_5.getCall(closure_0);
     if (null != call) {
       const ringing = call.ringing;
-      let found = ringing.filter((arg0) => arg0 !== closure_1);
+      let found = ringing.filter((arg0) => arg0 !== outer1_1);
     } else {
       found = [];
     }
-    let initialized = closure_10.initialized;
+    let initialized = outer1_10.initialized;
     if (!initialized) {
       initialized = found.length > 0;
     }
-    closure_10.initialized = initialized;
+    outer1_10.initialized = initialized;
     return found;
   }, items1);
-  participants = participants.getParticipants(tmp);
-  const found = participants.filter((type) => {
-    let tmp = type.type !== constants2.ACTIVITY;
+  const participants = stateFromStores.getParticipants(tmp);
+  let found = participants.filter((type) => {
+    let tmp = type.type !== outer1_9.ACTIVITY;
     if (tmp) {
       tmp = type.user.id !== id;
     }
     return tmp;
   });
-  const tmp3 = importDefault(dependencyMap[7])();
+  const tmp3 = id(8934)();
   dependencyMap = tmp3;
   const items2 = [getRTCConnectionId];
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items2, getRTCConnectionId.getRTCConnectionId, []);
-  participants = stateFromStores;
-  const obj2 = arg1(dependencyMap[6]);
+  stateFromStores = require(566) /* initialize */.useStateFromStores(items2, getRTCConnectionId.getRTCConnectionId, []);
+  const obj2 = require(566) /* initialize */;
   const items3 = [getRTCConnectionId];
   const items4 = [stateFromStores, tmp3, tmp];
-  const stateFromStores1 = arg1(dependencyMap[6]).useStateFromStores(items3, () => {
+  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items3, () => {
     let channelId;
-    if (null != tmp3) {
-      channelId = tmp3.channelId;
+    if (null != _undefined) {
+      channelId = _undefined.channelId;
     }
-    if (channelId === tmp) {
-      closure_10.initialized = true;
-      return constants.RTC_CONNECTED;
+    if (channelId === closure_0) {
+      outer1_10.initialized = true;
+      return outer1_8.RTC_CONNECTED;
     } else {
       let tmp4 = null != stateFromStores;
       if (tmp4) {
         tmp4 = tmp16 === stateFromStores;
       }
       if (!tmp4) {
-        closure_10.initialized = false;
+        outer1_10.initialized = false;
       }
-      closure_10.callId = stateFromStores;
-      const state = state.getState();
-      let initialized = closure_10.initialized;
+      outer1_10.callId = stateFromStores;
+      const state = outer1_6.getState();
+      let initialized = outer1_10.initialized;
       if (!initialized) {
-        let tmp11 = state !== constants.DISCONNECTED;
+        let tmp11 = state !== outer1_8.DISCONNECTED;
         if (tmp11) {
-          tmp11 = state !== constants.RTC_DISCONNECTED;
+          tmp11 = state !== outer1_8.RTC_DISCONNECTED;
         }
         initialized = tmp11;
       }
-      closure_10.initialized = initialized;
+      outer1_10.initialized = initialized;
       return state;
     }
   }, items4);

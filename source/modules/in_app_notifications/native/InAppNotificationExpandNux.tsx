@@ -1,22 +1,21 @@
-// Module ID: 10299
-// Function ID: 79515
+// Module ID: 10312
+// Function ID: 79588
 // Name: getExpandNUXState
-// Dependencies: []
+// Dependencies: [587, 2]
 // Exports: markExpandNUXStateAsShown, resetExpandNUXState
 
-// Module 10299 (getExpandNUXState)
+// Module 10312 (getExpandNUXState)
 function getExpandNUXState() {
-  const Storage = require(dependencyMap[0]).Storage;
-  let value = Storage.get(closure_2);
+  const Storage = require(587) /* Storage */.Storage;
+  let value = Storage.get(inAppNotificationExpandNux);
   if (null == value) {
     value = closure_3;
   }
   return value;
 }
-let closure_2 = "inAppNotificationExpandNux";
-let closure_3 = { "Bool(false)": "%FunctionPrototype%", "Bool(false)": "paddingStart" };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationExpandNux.tsx");
+const inAppNotificationExpandNux = "inAppNotificationExpandNux";
+let closure_3 = { lastShownAtMs: 0, numTimesShown: 0 };
+let result = require("set").fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationExpandNux.tsx");
 
 export const MAX_TIMES_SHOWN = 7;
 export const ONE_DAY_MS = 86400000;
@@ -27,14 +26,14 @@ export const DRAG_HANDLE_BOUNCE_DURATION_MS = 650;
 export { getExpandNUXState };
 export const markExpandNUXStateAsShown = function markExpandNUXStateAsShown() {
   const tmp = getExpandNUXState();
-  const Storage = require(dependencyMap[0]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   const obj = {};
   const merged = Object.assign(tmp);
   obj["numTimesShown"] = tmp.numTimesShown + 1;
   obj["lastShownAtMs"] = Date.now();
-  const result = Storage.set(closure_2, obj);
+  const result = Storage.set(inAppNotificationExpandNux, obj);
 };
 export const resetExpandNUXState = function resetExpandNUXState() {
-  const Storage = require(dependencyMap[0]).Storage;
-  const result = Storage.set(closure_2, closure_3);
+  const Storage = require(587) /* Storage */.Storage;
+  const result = Storage.set(inAppNotificationExpandNux, closure_3);
 };

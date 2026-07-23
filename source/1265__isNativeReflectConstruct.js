@@ -1,10 +1,18 @@
 // Module ID: 1265
-// Function ID: 14283
+// Function ID: 14284
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 31, 1254]
 // Exports: makeReactFormatter
 
 // Module 1265 (_isNativeReflectConstruct)
+import _classCallCheck from "result";
+import _defineProperties from "_isNativeReflectConstruct";
+import "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import { createElement } from "result";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,32 +23,30 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function createReactBuilder(DEFAULT_REACT_RICH_TEXT_ELEMENTS) {
-  const require = DEFAULT_REACT_RICH_TEXT_ELEMENTS;
-  return (FormatBuilder) => {
+  const _require = DEFAULT_REACT_RICH_TEXT_ELEMENTS;
+  return ((FormatBuilder) => {
     function _class() {
       const self = this;
-      callback(this, _class);
-      const obj = callback2(_class);
-      if (callback3()) {
+      outer2_2(this, _class);
+      const obj = outer2_5(_class);
+      if (outer2_9()) {
         const _Reflect = Reflect;
-        let constructResult = Reflect.construct(obj, arguments, callback2(self).constructor);
+        let constructResult = Reflect.construct(obj, arguments, outer2_5(self).constructor);
       } else {
         constructResult = obj(...arguments);
       }
-      const tmp2Result = closure_4(self, constructResult);
+      const tmp2Result = outer2_4(self, constructResult);
       tmp2Result._nodeKey = 0;
       tmp2Result.result = [];
       return tmp2Result;
     }
-    FormatBuilder = _class;
-    callback2(_class, FormatBuilder);
+    outer1_6(_class, FormatBuilder);
     let obj = {
       key: "pushRichTextTag",
       value: function pushRichTextTag(arg0, arg1, arg2) {
         const result = this.result;
-        const tmp = +this._nodeKey;
-        this._nodeKey = tmp + 1;
-        result.push(_class[arg0](arg1, "" + this.context.keyPrefix + ".tag-" + tmp, arg2));
+        this._nodeKey = +this._nodeKey + 1;
+        result.push(_class[arg0](arg1, "" + this.context.keyPrefix + ".tag-" + +this._nodeKey, arg2));
       }
     };
     const items = [obj, , , ];
@@ -73,8 +79,8 @@ function createReactBuilder(DEFAULT_REACT_RICH_TEXT_ELEMENTS) {
         return this.result;
       }
     };
-    return callback(_class, items);
-  }(require(dependencyMap[7]).FormatBuilder);
+    return outer1_3(_class, items);
+  })(_require(1254).FormatBuilder);
 }
 function formatReact(arg0, arg1, arg2) {
   const self = this;
@@ -87,13 +93,6 @@ function formatReact(arg0, arg1, arg2) {
 function makeReactFormatter(DEFAULT_REACT_RICH_TEXT_ELEMENTS) {
   return { format: formatReact, builder: createReactBuilder(DEFAULT_REACT_RICH_TEXT_ELEMENTS) };
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
-let closure_6 = require(dependencyMap[4]);
-let closure_7 = require(dependencyMap[5]);
-const createElement = require(dependencyMap[6]).createElement;
 
 export { formatReact };
 export { makeReactFormatter };
@@ -111,7 +110,7 @@ export const DEFAULT_REACT_RICH_TEXT_ELEMENTS = {
     return <code key={arg1}>{arg0}</code>;
   },
   $link(arg0, key) {
-    return <a href={callback(arg2, 1)[0]} key={arg1}>{arg0}</a>;
+    return <a href={_slicedToArray(arg2, 1)[0]} key={arg1}>{arg0}</a>;
   },
   $p(arg0, key) {
     return <p key={arg1}>{arg0}</p>;

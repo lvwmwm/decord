@@ -1,12 +1,13 @@
 // Module ID: 1491
-// Function ID: 17201
+// Function ID: 17202
 // Name: useRouteCache
-// Dependencies: []
+// Dependencies: [29, 31]
 // Exports: default
 
 // Module 1491 (useRouteCache)
-importDefault(dependencyMap[0]);
-let closure_0 = importAll(dependencyMap[1]);
+import "_objectWithoutProperties";
+import result from "result";
+
 
 export default function useRouteCache(arg0) {
   const memo = React.useMemo(() => {

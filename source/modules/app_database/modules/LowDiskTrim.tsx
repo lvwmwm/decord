@@ -1,28 +1,28 @@
-// Module ID: 6893
-// Function ID: 54889
+// Module ID: 6898
+// Function ID: 54923
 // Name: LowDiskTrim
-// Dependencies: []
+// Dependencies: [6, 7, 6711, 1882, 2]
 
-// Module 6893 (LowDiskTrim)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let tmp2 = () => {
+// Module 6898 (LowDiskTrim)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let tmp2 = (() => {
   class LowDiskTrim {
     constructor() {
-      LowDiskTrim = this;
-      tmp = closure_2(this, LowDiskTrim);
+      self = this;
+      tmp = outer1_2(this, self);
       this.isLowDisk = false;
       this.actions = {
         POST_CONNECTION_OPEN() {
               return self.handlePostConnectionOpen();
             }
       };
-      addChangeListenerResult = closure_4.addChangeListener(() => self.handleFileSystemStoreChanged());
+      addChangeListenerResult = outer1_4.addChangeListener(() => self.handleFileSystemStoreChanged());
       return;
     }
   }
-  const importDefault = LowDiskTrim;
   let obj = {
     key: "handlePostConnectionOpen",
     value() {
@@ -35,17 +35,17 @@ let tmp2 = () => {
     key: "handleFileSystemStoreChanged",
     value() {
       const self = this;
-      const isLowDisk = closure_4.isLowDisk;
+      const isLowDisk = outer1_4.isLowDisk;
       let tmp = isLowDisk;
       if (isLowDisk) {
         tmp = self.isLowDisk !== isLowDisk;
       }
       if (tmp) {
-        const databaseResult = LowDiskTrim(closure_1[3]).database();
+        const databaseResult = LowDiskTrim(outer1_1[3]).database();
         if (null != databaseResult) {
           databaseResult.incrementalVacuum();
         }
-        const obj = LowDiskTrim(closure_1[3]);
+        const obj = LowDiskTrim(outer1_1[3]);
       }
       self.isLowDisk = isLowDisk;
     }
@@ -59,8 +59,8 @@ let tmp2 = () => {
   };
   items[2] = obj;
   return callback(LowDiskTrim, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/app_database/modules/LowDiskTrim.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_database/modules/LowDiskTrim.tsx");
 
 export default tmp2;

@@ -1,37 +1,37 @@
-// Module ID: 10593
-// Function ID: 82662
+// Module ID: 10603
+// Function ID: 82712
 // Name: useWakeLock
-// Dependencies: []
+// Dependencies: [31, 27, 477, 10604, 2]
 // Exports: default
 
-// Module 10593 (useWakeLock)
+// Module 10603 (useWakeLock)
+import result from "result";
+import { NativeModules } from "get ActivityIndicator";
+
+const require = arg1;
 function useWakeLock(VoiceMessageOverlay) {
-  const arg1 = VoiceMessageOverlay;
+  let closure_0 = VoiceMessageOverlay;
   const items = [VoiceMessageOverlay];
   const effect = React.useEffect(() => {
-    const obj = arg0(closure_2[2]);
     if (obj.isAndroid()) {
-      const lock = callback(closure_2[3]).requestLock(arg0);
-      const obj2 = callback(closure_2[3]);
+      const lock = outer1_1(outer1_2[3]).requestLock(VoiceMessageOverlay);
+      let obj2 = outer1_1(outer1_2[3]);
     } else {
-      const ScreenWakeLockManager = obj.ScreenWakeLockManager;
-      const lock1 = ScreenWakeLockManager.requestLock(arg0);
+      let ScreenWakeLockManager = outer1_4.ScreenWakeLockManager;
+      const lock1 = ScreenWakeLockManager.requestLock(VoiceMessageOverlay);
     }
     return () => {
-      const obj = callback(closure_2[2]);
       if (obj.isAndroid()) {
-        callback2(closure_2[3]).releaseLock(callback);
-        const obj2 = callback2(closure_2[3]);
+        outer2_1(outer2_2[3]).releaseLock(outer1_0);
+        const obj2 = outer2_1(outer2_2[3]);
       } else {
-        const ScreenWakeLockManager = obj.ScreenWakeLockManager;
-        ScreenWakeLockManager.releaseLock(callback);
+        const ScreenWakeLockManager = outer2_4.ScreenWakeLockManager;
+        ScreenWakeLockManager.releaseLock(outer1_0);
       }
     };
   }, items);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/device/native/WakeLock.tsx");
+const result = require("set").fileFinishedImporting("modules/device/native/WakeLock.tsx");
 
 export default function WakeLock(wakeLockKey) {
   useWakeLock(wakeLockKey.wakeLockKey);

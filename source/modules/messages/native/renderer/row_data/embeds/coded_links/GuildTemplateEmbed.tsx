@@ -1,28 +1,28 @@
-// Module ID: 12179
-// Function ID: 93648
+// Module ID: 12293
+// Function ID: 95799
 // Name: createGuildTemplateEmbed
-// Dependencies: []
+// Dependencies: [27, 6693, 5720, 6979, 7633, 1212, 7625, 689, 3976, 10953, 10954, 12294, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 12179 (createGuildTemplateEmbed)
-const Image = require(dependencyMap[0]).Image;
-let closure_4 = importDefault(dependencyMap[1]);
-const GuildTemplateStates = require(dependencyMap[2]).GuildTemplateStates;
-const InviteTypes = require(dependencyMap[3]).InviteTypes;
-const _module = require(dependencyMap[12]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/GuildTemplateEmbed.tsx");
+// Module 12293 (createGuildTemplateEmbed)
+import { Image } from "get ActivityIndicator";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
+import { InviteTypes } from "InviteSendStates";
 
-export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, arg1) {
+const result = require("GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/GuildTemplateEmbed.tsx");
+
+export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, closure_2) {
   let baseColors;
   let colors;
-  ({ colors, baseColors } = importDefault(dependencyMap[4])(arg1));
-  const guildTemplate = guildTemplate.getGuildTemplate(code);
+  ({ colors, baseColors } = importDefault(7633)(closure_2));
+  guildTemplate = guildTemplate.getGuildTemplate(code);
   if (null == guildTemplate) {
     return null;
   } else if (guildTemplate.state === GuildTemplateStates.RESOLVING) {
     let obj = {};
-    const intl3 = require(dependencyMap[5]).intl;
-    obj.headerText = intl3.string(require(dependencyMap[5]).t.Xj87Yf).toUpperCase();
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    obj.headerText = intl3.string(require(1212) /* getSystemLocale */.t.Xj87Yf).toUpperCase();
     ({ resolvingGradientEnd: obj4.resolvingGradientEnd, resolvingGradientStart: obj4.resolvingGradientStart } = colors);
     obj.type = InviteTypes.GUILD;
     const merged = Object.assign(baseColors);
@@ -30,44 +30,44 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
   } else if (guildTemplate.state === GuildTemplateStates.EXPIRED) {
     obj = {};
     const merged1 = Object.assign(baseColors);
-    const intl = require(dependencyMap[5]).intl;
-    obj["headerText"] = intl.string(require(dependencyMap[5]).t.C7ZRNw).toUpperCase();
-    let obj1 = require(dependencyMap[6]);
-    obj["titleColor"] = obj1.processColorOrThrow(importDefault(dependencyMap[7]).unsafe_rawColors.RED_400);
-    const intl2 = require(dependencyMap[5]).intl;
-    obj["titleText"] = intl2.string(require(dependencyMap[5]).t.A6MwXE);
-    const str = intl.string(require(dependencyMap[5]).t.C7ZRNw);
-    if (obj3.isThemeDark(arg1)) {
-      let tmp10Result = tmp10(tmp11[9]);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj["headerText"] = intl.string(require(1212) /* getSystemLocale */.t.C7ZRNw).toUpperCase();
+    let obj1 = require(7625) /* processColorOrThrow */;
+    obj["titleColor"] = obj1.processColorOrThrow(importDefault(689).unsafe_rawColors.RED_400);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj["titleText"] = intl2.string(require(1212) /* getSystemLocale */.t.A6MwXE);
+    const str = intl.string(require(1212) /* getSystemLocale */.t.C7ZRNw);
+    if (obj3.isThemeDark(closure_2)) {
+      let tmp10Result = tmp10(10953);
     } else {
-      tmp10Result = tmp10(tmp11[10]);
+      tmp10Result = tmp10(10954);
     }
     obj["thumbnailUrl"] = Image.resolveAssetSource(tmp10Result).uri;
     obj["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;
     obj["type"] = InviteTypes.GUILD;
     return obj;
   } else {
-    const intl4 = require(dependencyMap[5]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
     obj = { usageCount: guildTemplate.usageCount.toString() };
     obj1 = {};
     const merged2 = Object.assign(baseColors);
-    const intl5 = require(dependencyMap[5]).intl;
-    const formatToPlainStringResult = intl4.formatToPlainString(require(dependencyMap[5]).t.L8Awgh, obj);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    const formatToPlainStringResult = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.L8Awgh, obj);
     const str9 = guildTemplate.usageCount;
-    obj1["headerText"] = intl5.string(require(dependencyMap[5]).t.kAvFkO).toUpperCase();
+    obj1["headerText"] = intl5.string(require(1212) /* getSystemLocale */.t.kAvFkO).toUpperCase();
     obj1["headerColor"] = colors.headerColor;
     obj1["titleText"] = guildTemplate.name;
     obj1["titleColor"] = colors.titleColor;
     obj1["subtitle"] = formatToPlainStringResult;
     obj1["subtitleColor"] = colors.subtitleColor;
-    obj1["thumbnailUrl"] = Image.resolveAssetSource(importDefault(dependencyMap[11])).uri;
+    obj1["thumbnailUrl"] = Image.resolveAssetSource(importDefault(12294)).uri;
     obj1["acceptLabelColor"] = colors.acceptLabelGreenColor;
     obj1["acceptLabelBackgroundColor"] = colors.acceptLabelGreenBackgroundColor;
-    const intl6 = require(dependencyMap[5]).intl;
-    obj1["acceptLabelText"] = intl6.string(require(dependencyMap[5]).t.a3Gl+e);
+    const intl6 = require(1212) /* getSystemLocale */.intl;
+    obj1["acceptLabelText"] = intl6.string(require(1212) /* getSystemLocale */.t["a3Gl+e"]);
     obj1["embedCanBeTapped"] = true;
     obj1["type"] = InviteTypes.GUILD;
     return obj1;
   }
-  const tmp = importDefault(dependencyMap[4])(arg1);
+  const tmp = importDefault(7633)(closure_2);
 };

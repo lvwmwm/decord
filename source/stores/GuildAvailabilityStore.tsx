@@ -1,15 +1,24 @@
-// Module ID: 4465
-// Function ID: 39452
+// Module ID: 4469
+// Function ID: 39484
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1838, 3, 566, 686, 2]
 
-// Module 4465 (_isNativeReflectConstruct)
+// Module 4469 (_isNativeReflectConstruct)
+import timestamp from "timestamp";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "_getPrototypeOf";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let timestamp = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return timestamp;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -29,28 +38,21 @@ function handleGuild(guild) {
     return false;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let importDefaultResult = importDefault(dependencyMap[6]);
 importDefaultResult = new importDefaultResult("GuildAvailabilityStore");
-const set = new Set();
-let tmp5 = (Store) => {
+let set = new Set();
+let tmp5 = ((Store) => {
   class GuildAvailabilityStore {
     constructor() {
       self = this;
       tmp = GuildAvailabilityStore(this, GuildAvailabilityStore);
-      obj = closure_3(GuildAvailabilityStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(GuildAvailabilityStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -59,12 +61,11 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GuildAvailabilityStore;
   callback2(GuildAvailabilityStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_5);
+      this.waitFor(outer1_5);
     }
   };
   const items = [obj, , , , ];
@@ -73,7 +74,7 @@ let tmp5 = (Store) => {
     value(arg0) {
       let hasItem = null != arg0;
       if (hasItem) {
-        hasItem = set.has(arg0);
+        hasItem = outer1_7.has(arg0);
       }
       return hasItem;
     }
@@ -82,33 +83,33 @@ let tmp5 = (Store) => {
   obj = {
     key: "totalGuilds",
     get() {
-      return guildCount.getGuildCount() + set.size;
+      return outer1_5.getGuildCount() + outer1_7.size;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "totalUnavailableGuilds",
     get() {
-      return set.size;
+      return outer1_7.size;
     }
   };
   items[4] = {
     key: "unavailableGuilds",
     get() {
-      return Array.from(closure_7);
+      return Array.from(outer1_7);
     }
   };
   return callback(GuildAvailabilityStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "GuildAvailabilityStore";
-tmp5 = new tmp5(importDefault(dependencyMap[8]), {
+tmp5 = new tmp5(require("dispatcher"), {
   CONNECTION_OPEN: handleConnectionOpen,
   OVERLAY_INITIALIZE: handleConnectionOpen,
   GUILD_UNAVAILABLE: function handleGuildUnavailable(guildId) {
     if (set.has(guildId.guildId)) {
       return false;
     } else {
-      const guild = guild.getGuild(guildId.guildId);
+      guild = guild.getGuild(guildId.guildId);
       let str = "???";
       if (tmp4) {
         str = guild.name;
@@ -133,6 +134,6 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
     }
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/GuildAvailabilityStore.tsx");
+let result = set.fileFinishedImporting("stores/GuildAvailabilityStore.tsx");
 
 export default tmp5;

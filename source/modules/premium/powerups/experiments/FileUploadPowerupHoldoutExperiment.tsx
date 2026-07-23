@@ -1,13 +1,13 @@
-// Module ID: 4055
-// Function ID: 33815
+// Module ID: 4057
+// Function ID: 33824
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 4055 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "stable", "Bool(false)": "stable", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/premium/powerups/experiments/FileUploadPowerupHoldoutExperiment.tsx");
+// Module 4057 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-03-file-upload-powerup-holdout", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/FileUploadPowerupHoldoutExperiment.tsx");
 
 export const FileUploadPowerupHoldoutExperiment = apexExperiment;

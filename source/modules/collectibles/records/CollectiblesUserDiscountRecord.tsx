@@ -1,16 +1,13 @@
-// Module ID: 6791
-// Function ID: 53645
+// Module ID: 6796
+// Function ID: 53677
 // Name: CollectiblesUserDiscountRecord
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 6791 (CollectiblesUserDiscountRecord)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 6796 (CollectiblesUserDiscountRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("modules/collectibles/records/CollectiblesUserDiscountRecord.tsx");
-
-export const CollectiblesUserDiscountRecord = () => {
+const tmp2 = (() => {
   class CollectiblesUserDiscountRecord {
     constructor(arg0) {
       tmp = CollectiblesUserDiscountRecord(this, CollectiblesUserDiscountRecord);
@@ -28,7 +25,6 @@ export const CollectiblesUserDiscountRecord = () => {
       return;
     }
   }
-  let closure_0 = CollectiblesUserDiscountRecord;
   const items = [
     {
       key: "fromServer",
@@ -38,4 +34,7 @@ export const CollectiblesUserDiscountRecord = () => {
     }
   ];
   return callback(CollectiblesUserDiscountRecord, null, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/collectibles/records/CollectiblesUserDiscountRecord.tsx");
+
+export const CollectiblesUserDiscountRecord = tmp2;

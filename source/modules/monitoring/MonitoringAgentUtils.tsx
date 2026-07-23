@@ -1,18 +1,17 @@
-// Module ID: 6836
-// Function ID: 54001
+// Module ID: 6841
+// Function ID: 54033
 // Name: addGlobalTag
-// Dependencies: []
+// Dependencies: [650, 2]
 // Exports: addGlobalTag, getGlobalTagsArray
 
-// Module 6836 (addGlobalTag)
-const obj = { design_id: require(dependencyMap[0]).DesignIds.DESIGN_TABS_IA };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/monitoring/MonitoringAgentUtils.tsx");
+// Module 6841 (addGlobalTag)
+const obj = { design_id: require("DesignIds").DesignIds.DESIGN_TABS_IA };
+const result = require("set").fileFinishedImporting("modules/monitoring/MonitoringAgentUtils.tsx");
 
 export const addGlobalTag = function addGlobalTag(arg0, arg1) {
   obj[arg0] = arg1;
 };
 export const getGlobalTagsArray = function getGlobalTagsArray() {
   const keys = Object.keys(obj);
-  return keys.map((arg0) => "" + arg0 + ":" + closure_0[arg0]);
+  return keys.map((arg0) => "" + arg0 + ":" + outer1_0[arg0]);
 };

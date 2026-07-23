@@ -1,10 +1,12 @@
 // Module ID: 917
-// Function ID: 10041
+// Function ID: 10042
 // Name: createSpanName
-// Dependencies: []
+// Dependencies: [77, 916, 816, 918, 914, 919, 825, 920, 842]
 // Exports: buildMcpServerSpanConfig, createMcpNotificationSpan, createMcpOutgoingNotificationSpan
 
 // Module 917 (createSpanName)
+import _defineProperty from "_defineProperty";
+
 function createSpanName(arg0, arg1) {
   let combined = arg0;
   if (arg1) {
@@ -15,17 +17,17 @@ function createSpanName(arg0, arg1) {
 }
 function buildSentryAttributes(request) {
   if ("request" === request) {
-    let MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = require(dependencyMap[1]).MCP_SERVER_OP_VALUE;
-    let MCP_NOTIFICATION_ORIGIN_VALUE = require(dependencyMap[1]).MCP_FUNCTION_ORIGIN_VALUE;
+    let MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = require(916).MCP_SERVER_OP_VALUE;
+    let MCP_NOTIFICATION_ORIGIN_VALUE = require(916).MCP_FUNCTION_ORIGIN_VALUE;
   } else if ("notification-incoming" === request) {
-    MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = require(dependencyMap[1]).MCP_NOTIFICATION_CLIENT_TO_SERVER_OP_VALUE;
-    MCP_NOTIFICATION_ORIGIN_VALUE = require(dependencyMap[1]).MCP_NOTIFICATION_ORIGIN_VALUE;
+    MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = require(916).MCP_NOTIFICATION_CLIENT_TO_SERVER_OP_VALUE;
+    MCP_NOTIFICATION_ORIGIN_VALUE = require(916).MCP_NOTIFICATION_ORIGIN_VALUE;
   } else if ("notification-outgoing" === request) {
-    MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = require(dependencyMap[1]).MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE;
-    MCP_NOTIFICATION_ORIGIN_VALUE = require(dependencyMap[1]).MCP_NOTIFICATION_ORIGIN_VALUE;
+    MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = require(916).MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE;
+    MCP_NOTIFICATION_ORIGIN_VALUE = require(916).MCP_NOTIFICATION_ORIGIN_VALUE;
   }
-  const tmp5 = callback({}, require(dependencyMap[2]).SEMANTIC_ATTRIBUTE_SENTRY_OP, MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE);
-  return callback(callback(callback({}, require(dependencyMap[2]).SEMANTIC_ATTRIBUTE_SENTRY_OP, MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE), require(dependencyMap[2]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, MCP_NOTIFICATION_ORIGIN_VALUE), require(dependencyMap[2]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, require(dependencyMap[1]).MCP_ROUTE_SOURCE_VALUE);
+  const tmp5 = _defineProperty({}, require(816).SEMANTIC_ATTRIBUTE_SENTRY_OP, MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE);
+  return _defineProperty(_defineProperty(_defineProperty({}, require(816).SEMANTIC_ATTRIBUTE_SENTRY_OP, MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE), require(816).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, MCP_NOTIFICATION_ORIGIN_VALUE), require(816).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, require(916).MCP_ROUTE_SOURCE_VALUE);
 }
 function createMcpSpan(arg0) {
   let callback;
@@ -41,7 +43,7 @@ function createMcpSpan(arg0) {
   let tmp = method;
   ({ transport, extra, callback } = arg0);
   if ("request" === type) {
-    let obj = require(dependencyMap[3]);
+    let obj = require(918) /* extractTargetInfo */;
     obj = params;
     if (!params) {
       obj = {};
@@ -49,69 +51,68 @@ function createMcpSpan(arg0) {
     tmp = createSpanName(method, obj.extractTargetInfo(method, obj).target);
     const tmp2 = createSpanName;
   }
-  const transportAttributes = require(dependencyMap[4]).buildTransportAttributes(transport, extra);
-  const obj3 = require(dependencyMap[4]);
-  const tmp6 = callback({}, require(dependencyMap[1]).MCP_METHOD_NAME_ATTRIBUTE, method);
+  const transportAttributes = require(914) /* extractPartyInfo */.buildTransportAttributes(transport, extra);
+  const obj3 = require(914) /* extractPartyInfo */;
+  const tmp6 = _defineProperty({}, require(916).MCP_METHOD_NAME_ATTRIBUTE, method);
   let recordInputs;
   if (null != options) {
     recordInputs = options.recordInputs;
   }
-  const typeSpecificAttributes = require(dependencyMap[5]).buildTypeSpecificAttributes(type, message, params, recordInputs);
+  const typeSpecificAttributes = require(919) /* getNotificationAttributes */.buildTypeSpecificAttributes(type, message, params, recordInputs);
   const merged = Object.assign({}, transportAttributes, tmp6, typeSpecificAttributes, buildSentryAttributes(type));
-  const obj4 = require(dependencyMap[5]);
-  const client = require(dependencyMap[6]).getClient();
+  const obj4 = require(919) /* getNotificationAttributes */;
+  const client = require(825) /* getCurrentScope */.getClient();
   let sendDefaultPii;
   if (null != client) {
     sendDefaultPii = client.getOptions().sendDefaultPii;
   }
-  const obj5 = require(dependencyMap[6]);
+  const obj5 = require(825) /* getCurrentScope */;
   const BooleanResult = Boolean(sendDefaultPii);
-  const result = require(dependencyMap[7]).filterMcpPiiFromSpanData(merged, BooleanResult);
-  const obj7 = require(dependencyMap[7]);
+  const result = require(920) /* set */.filterMcpPiiFromSpanData(merged, BooleanResult);
+  const obj7 = require(920) /* set */;
   obj = { name: tmp, forceTransaction: true, attributes: result };
-  return require(dependencyMap[8]).startSpan(obj, callback);
+  return require(842) /* withActiveSpan */.startSpan(obj, callback);
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const buildMcpServerSpanConfig = function buildMcpServerSpanConfig(message, self, extra, recordInputs) {
+export const buildMcpServerSpanConfig = function buildMcpServerSpanConfig(closure_0, self, closure_1, closure_02) {
   let method;
   let params;
-  ({ method, params } = message);
-  let obj = require(dependencyMap[3]);
+  ({ method, params } = closure_0);
+  let obj = require(918) /* extractTargetInfo */;
   obj = params;
   if (!params) {
     obj = {};
   }
   const tmp = createSpanName;
   const tmpResult = createSpanName(method, obj.extractTargetInfo(method, obj).target);
-  const transportAttributes = require(dependencyMap[4]).buildTransportAttributes(self, extra);
-  const obj3 = require(dependencyMap[4]);
-  const tmp4 = callback({}, require(dependencyMap[1]).MCP_METHOD_NAME_ATTRIBUTE, method);
-  recordInputs = undefined;
-  if (null != recordInputs) {
-    recordInputs = recordInputs.recordInputs;
+  const transportAttributes = require(914) /* extractPartyInfo */.buildTransportAttributes(self, closure_1);
+  const obj3 = require(914) /* extractPartyInfo */;
+  const tmp4 = _defineProperty({}, require(916).MCP_METHOD_NAME_ATTRIBUTE, method);
+  let recordInputs;
+  if (null != closure_02) {
+    recordInputs = closure_02.recordInputs;
   }
-  const typeSpecificAttributes = require(dependencyMap[5]).buildTypeSpecificAttributes("request", message, params, recordInputs);
+  const typeSpecificAttributes = require(919) /* getNotificationAttributes */.buildTypeSpecificAttributes("request", closure_0, params, recordInputs);
   const merged = Object.assign({}, transportAttributes, tmp4, typeSpecificAttributes, buildSentryAttributes("request"));
-  const obj4 = require(dependencyMap[5]);
-  const client = require(dependencyMap[6]).getClient();
+  const obj4 = require(919) /* getNotificationAttributes */;
+  const client = require(825) /* getCurrentScope */.getClient();
   let sendDefaultPii;
   if (null != client) {
     sendDefaultPii = client.getOptions().sendDefaultPii;
   }
-  const obj5 = require(dependencyMap[6]);
+  const obj5 = require(825) /* getCurrentScope */;
   const BooleanResult = Boolean(sendDefaultPii);
   obj = { name: tmpResult };
-  const result = require(dependencyMap[7]).filterMcpPiiFromSpanData(merged, BooleanResult);
-  obj.op = require(dependencyMap[1]).MCP_SERVER_OP_VALUE;
+  const result = require(920) /* set */.filterMcpPiiFromSpanData(merged, BooleanResult);
+  obj.op = require(916).MCP_SERVER_OP_VALUE;
   obj.forceTransaction = true;
   obj.attributes = result;
   return obj;
 };
-export const createMcpNotificationSpan = function createMcpNotificationSpan(message, self, extra, options, callback) {
-  return createMcpSpan({ type: "notification-incoming", message, transport: self, extra, callback, options });
+export const createMcpNotificationSpan = function createMcpNotificationSpan(message, self, extra, closure_0, callback) {
+  return createMcpSpan({ type: "notification-incoming", message, transport: self, extra, callback, options: closure_0 });
 };
-export const createMcpOutgoingNotificationSpan = function createMcpOutgoingNotificationSpan(message, self, self2, callback) {
-  return createMcpSpan({ type: "notification-outgoing", message, transport: self, options: self2, callback });
+export const createMcpOutgoingNotificationSpan = function createMcpOutgoingNotificationSpan(message, self, closure_0, callback) {
+  return createMcpSpan({ type: "notification-outgoing", message, transport: self, options: closure_0, callback });
 };

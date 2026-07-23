@@ -1,14 +1,12 @@
-// Module ID: 7775
-// Function ID: 61747
+// Module ID: 7781
+// Function ID: 61784
 // Name: regExp
-// Dependencies: [29, 27, 4350, 7787]
+// Dependencies: [4052, 7782, 7783, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 7775 (regExp)
-import TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS from "TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS";
-
+// Module 7781 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
-const result = TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS.fileFinishedImporting("modules/experiments/ExperimentEmbedUtils.tsx");
+const result = require("getExperimentVariantsForDevTools").fileFinishedImporting("modules/experiments/ExperimentEmbedUtils.tsx");
 
 export const EXPERIMENT_EMBED_URL_REGEX = regExp;
 export const isExperimentEmbedURL = function isExperimentEmbedURL(target) {
@@ -51,9 +49,9 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
   if (null != experimentServerAssignment) {
     if (null != system) {
       const system2 = system.system;
-      if (require(dependencyMap[0]).ExperimentSystem.LEGACY === system2) {
-        return importDefault(dependencyMap[1]).getExperimentBucketName(experimentServerAssignment.bucket);
-      } else if (require(dependencyMap[0]).ExperimentSystem.APEX === system2) {
+      if (require(4052) /* trackExposureToExperiment */.ExperimentSystem.LEGACY === system2) {
+        return importDefault(7782).getExperimentBucketName(experimentServerAssignment.bucket);
+      } else if (require(4052) /* trackExposureToExperiment */.ExperimentSystem.APEX === system2) {
         const _HermesInternal = HermesInternal;
         return "Variant " + experimentServerAssignment.variantId;
       } else {
@@ -65,6 +63,6 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
   return null;
 };
 export const getExperimentBuckets = function getExperimentBuckets(experiment) {
-  const experimentVariantsForDevTools = require(dependencyMap[2]).getExperimentVariantsForDevTools(experiment);
+  const experimentVariantsForDevTools = require(7783) /* getExperimentVariantsForDevTools */.getExperimentVariantsForDevTools(experiment);
   return experimentVariantsForDevTools.map((id) => ({ id: id.id, label: id.label, value: id.id }));
 };

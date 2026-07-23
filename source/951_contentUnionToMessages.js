@@ -1,9 +1,11 @@
 // Module ID: 951
-// Function ID: 10307
+// Function ID: 10308
 // Name: contentUnionToMessages
-// Dependencies: []
+// Dependencies: [950]
 
 // Module 951 (contentUnionToMessages)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 function contentUnionToMessages(contents, user) {
   let str = "user";
@@ -13,7 +15,6 @@ function contentUnionToMessages(contents, user) {
       str = arguments[1];
     }
   }
-  user = str;
   if ("string" === typeof contents) {
     let obj = { role: str, content: contents };
     const items = [obj];
@@ -21,7 +22,7 @@ function contentUnionToMessages(contents, user) {
   } else {
     const _Array = Array;
     if (Array.isArray(contents)) {
-      flatMapResult = contents.flatMap((arg0) => callback(arg0, str));
+      flatMapResult = contents.flatMap((arg0) => outer1_2(arg0, str));
     } else {
       if ("object" === tmp) {
         if (contents) {
@@ -46,16 +47,16 @@ function contentUnionToMessages(contents, user) {
   return flatMapResult;
 }
 arg5.contentUnionToMessages = contentUnionToMessages;
-arg5.isStreamingMethod = function isStreamingMethod(arr) {
-  return arr.includes("Stream");
+arg5.isStreamingMethod = function isStreamingMethod(closure_0) {
+  return closure_0.includes("Stream");
 };
 arg5.shouldInstrument = function shouldInstrument(str) {
-  const GOOGLE_GENAI_INSTRUMENTED_METHODS = arg1(arg6[0]).GOOGLE_GENAI_INSTRUMENTED_METHODS;
+  const GOOGLE_GENAI_INSTRUMENTED_METHODS = require(950).GOOGLE_GENAI_INSTRUMENTED_METHODS;
   if (GOOGLE_GENAI_INSTRUMENTED_METHODS.includes(str)) {
     return true;
   } else {
     const parts = str.split(".");
-    const GOOGLE_GENAI_INSTRUMENTED_METHODS2 = arg1(arg6[0]).GOOGLE_GENAI_INSTRUMENTED_METHODS;
+    const GOOGLE_GENAI_INSTRUMENTED_METHODS2 = require(950).GOOGLE_GENAI_INSTRUMENTED_METHODS;
     return GOOGLE_GENAI_INSTRUMENTED_METHODS2.includes(parts.pop());
   }
 };

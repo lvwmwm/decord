@@ -1,23 +1,25 @@
-// Module ID: 8210
-// Function ID: 64910
+// Module ID: 8216
+// Function ID: 64947
 // Name: ProfileEffectSample
-// Dependencies: []
+// Dependencies: [27, 8200, 33, 4130, 689, 5085, 8217, 8218, 2]
 // Exports: default
 
-// Module 8210 (ProfileEffectSample)
-const View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[2]);
-({ jsx: closure_3, jsxs: closure_4 } = _module);
-const _module1 = require(dependencyMap[3]);
-let obj = { profileContainer: {} };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
+// Module 8216 (ProfileEffectSample)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let obj = { profileContainer: { position: "absolute", display: "flex", height: "100%", width: "100%" } };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
 obj.profileBackground = obj;
-obj.sampleProfileImage = { aspectRatio: require(dependencyMap[1]).SAMPLE_PROFILE_ASPECT_RATIO };
-const obj1 = { zIndex: null, width: null, backgroundColor: null, flex: null, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
+obj.sampleProfileImage = { aspectRatio: require("SAMPLE_PROFILE_ASPECT_RATIO").SAMPLE_PROFILE_ASPECT_RATIO };
+let obj1 = { position: "absolute", height: "100%", width: "100%", borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
 obj.profileBorder = obj1;
-let closure_5 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[8]);
-const result = _module2.fileFinishedImporting("modules/collectibles/native/ProfileEffectSampleV2.tsx");
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/ProfileEffectSampleV2.tsx");
 
 export default function ProfileEffectSample(hideBackground) {
   let flag = hideBackground.hideBackground;
@@ -34,20 +36,20 @@ export default function ProfileEffectSample(hideBackground) {
   items[1] = profileBackground;
   obj.style = items;
   obj = { style: items1 };
-  const items1 = [tmp.sampleProfileImage];
-  obj = { uri: importDefault(dependencyMap[6]) };
+  items1 = [tmp.sampleProfileImage];
+  obj = { uri: importDefault(8217) };
   obj.source = obj;
   obj.accessible = false;
   obj.resizeMode = "cover";
-  const items2 = [callback(importDefault(dependencyMap[5]), obj), , ];
+  const items2 = [callback(importDefault(5085), obj), , ];
   let tmp5 = !flag;
   if (tmp5) {
     const obj1 = { style: tmp.profileBorder };
     tmp5 = callback(View, obj1);
   }
   items2[1] = tmp5;
-  const obj2 = { style: "<string:4149346306>", value: "<string:295619838>", minimumValue: "<string:20046913>", skuId: hideBackground.item.skuId };
-  items2[2] = callback(importDefault(dependencyMap[7]), obj2);
+  const obj2 = { skuId: hideBackground.item.skuId, bannerAdjustment: 0, useThumbnail: true };
+  items2[2] = callback(importDefault(8218), obj2);
   obj.children = items2;
   return closure_4(View, obj);
 };

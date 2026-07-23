@@ -1,33 +1,35 @@
-// Module ID: 7193
-// Function ID: 57916
+// Module ID: 7198
+// Function ID: 57950
 // Name: useCreateSubscriptionParams
-// Dependencies: []
+// Dependencies: [31, 7199, 491, 2]
 // Exports: default
 
-// Module 7193 (useCreateSubscriptionParams)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/billing/native/subscription/useCreateSubscriptionParams.tsx");
+// Module 7198 (useCreateSubscriptionParams)
+import result from "result";
+
+const require = arg1;
+const result = require("v1").fileFinishedImporting("modules/billing/native/subscription/useCreateSubscriptionParams.tsx");
 
 export default function useCreateSubscriptionParams(arg0, arg1) {
-  arg1 = arg0;
+  let closure_0 = arg0;
   const importDefault = arg1;
-  const tmp = importDefault(dependencyMap[1])();
+  let tmp = importDefault(7199)();
   const dependencyMap = tmp;
-  const items = [arg0, arg1, tmp];
+  let items = [arg0, arg1, tmp];
   return React.useMemo(() => {
     let tmp = null;
-    if (null != arg0) {
+    if (null != lib) {
       tmp = null;
-      if (null != arg1) {
+      if (null != closure_1) {
         tmp = null;
         if (null != tmp) {
-          let obj = { requestIdentifier: arg0(tmp[2]).v4() };
-          obj = { planId: arg0.id, quantity: 1 };
+          let obj = { requestIdentifier: lib(tmp[2]).v4() };
+          obj = { planId: lib.id, quantity: 1 };
           const items = [obj];
           obj.items = items;
-          ({ country: obj.countryCode, currency: obj.currency } = arg1);
+          ({ country: obj.countryCode, currency: obj.currency } = closure_1);
           tmp = obj;
-          const obj2 = arg0(tmp[2]);
+          const obj2 = lib(tmp[2]);
         }
       }
     }

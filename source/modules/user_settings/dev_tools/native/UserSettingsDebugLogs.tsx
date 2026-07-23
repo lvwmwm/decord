@@ -1,59 +1,64 @@
-// Module ID: 14280
-// Function ID: 107889
+// Module ID: 14394
+// Function ID: 110042
 // Name: UserSettingsDebugLogs
-// Dependencies: []
+// Dependencies: [57, 31, 27, 653, 33, 4130, 689, 5781, 1557, 3831, 587, 12, 4126, 5772, 13902, 1212, 14395, 4098, 14396, 7879, 2]
 // Exports: default
 
-// Module 14280 (UserSettingsDebugLogs)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ RefreshControl: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsxs: closure_7, jsx: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.wrap = obj;
-const obj1 = { <string:3645437925>: "<string:1912603085>", <string:1554053987>: true, <string:1672411473>: true, padding: importDefault(dependencyMap[6]).space.PX_16 };
-obj.searchWrap = obj1;
-const tmp3 = arg1(dependencyMap[4]);
-obj.shareButton = { backgroundColor: importDefault(dependencyMap[6]).colors.INPUT_BACKGROUND_DEFAULT, marginLeft: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, height: arg1(dependencyMap[7]).InputHeights.MD, width: arg1(dependencyMap[7]).InputHeights.MD, justifyContent: "center", alignItems: "center" };
-const obj2 = { backgroundColor: importDefault(dependencyMap[6]).colors.INPUT_BACKGROUND_DEFAULT, marginLeft: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, height: arg1(dependencyMap[7]).InputHeights.MD, width: arg1(dependencyMap[7]).InputHeights.MD, justifyContent: "center", alignItems: "center" };
-obj.list = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-const obj3 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-obj.log = { paddingBottom: importDefault(dependencyMap[6]).space.PX_16 };
-obj.code = { fontFamily: arg1(dependencyMap[3]).Fonts.CODE_BOLD };
-let closure_9 = obj.createStyles(obj);
-const obj4 = { paddingBottom: importDefault(dependencyMap[6]).space.PX_16 };
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsDebugLogs.tsx");
+// Module 14394 (UserSettingsDebugLogs)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let require = arg1;
+({ RefreshControl: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ jsxs: closure_7, jsx: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
+_createForOfIteratorHelperLoose.wrap = _createForOfIteratorHelperLoose;
+let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.searchWrap = obj1;
+_createForOfIteratorHelperLoose.shareButton = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, height: require("InputHeights").InputHeights.MD, width: require("InputHeights").InputHeights.MD, justifyContent: "center", alignItems: "center" };
+const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, height: require("InputHeights").InputHeights.MD, width: require("InputHeights").InputHeights.MD, justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.list = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj3 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.log = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.code = { fontFamily: require("ME").Fonts.CODE_BOLD };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsDebugLogs.tsx");
 
 export default function UserSettingsDebugLogs() {
+  let importDefault;
   let tmp4;
-  const tmp = callback3();
-  const arg1 = tmp;
-  [tmp4, closure_1] = callback(React.useState(0), 2);
+  let tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  [tmp4, importDefault] = first(React.useState(0), 2);
   let callback = React.useCallback(() => {
     callback((arg0) => arg0 + 1);
-    callback(callback[9]).open({});
+    outer1_1(callback[9]).open({ content: "Debug logs refreshed", key: "debug-logs-refreshed" });
   }, []);
-  const dependencyMap = callback;
-  const Storage = arg1(dependencyMap[10]).Storage;
+  let Storage = require(callback[10]).Storage;
   let str = "oldest";
-  const value = Storage.get("debug-log-sort-order", "oldest");
+  let value = Storage.get("debug-log-sort-order", "oldest");
   if (null != value) {
     str = value;
   }
-  const tmp7 = callback(React.useState(str), 2);
-  const first = tmp7[0];
-  callback = first;
-  const React = tmp7[1];
+  const tmp7 = first(React.useState(str), 2);
+  first = tmp7[0];
+  React = tmp7[1];
   let closure_5 = React.useCallback((arg0) => {
     const Storage = callback2(arg0)(callback[10]).Storage;
     const result = Storage.set("debug-log-sort-order", arg0);
   }, []);
-  const items = [first, tmp4];
+  let items = [first, tmp4];
   const memo = React.useMemo(() => tmp(callback[11]).getAllForDebugPanel("newest" === first), items);
-  const tmp10 = callback(React.useState(() => {
+  const tmp10 = first(React.useState(() => {
     const Storage = tmp(callback[10]).Storage;
     let str = "";
     const value = Storage.get("debug-log-query", "");
@@ -63,16 +68,15 @@ export default function UserSettingsDebugLogs() {
     return str;
   }), 2);
   const first1 = tmp10[0];
-  const tmp12 = callback(React.useState(memo), 2);
-  const callback2 = tmp12[1];
-  const items1 = [memo, first1];
+  const tmp12 = first(React.useState(memo), 2);
+  callback = tmp12[1];
+  let items1 = [memo, first1];
   const effect = React.useEffect(() => {
     if ("" !== first1) {
       const _setTimeout = setTimeout;
       let tmp = setTimeout(() => {
-        const regExp = new RegExp(closure_7, "i");
-        const callback = regExp;
-        callback2(closure_6.filter((category) => {
+        const regExp = new RegExp(outer1_7, "i");
+        outer1_8(outer1_6.filter((category) => {
           let tmp = null != category.category.match(regExp);
           if (!tmp) {
             tmp = null != category.message.match(regExp);
@@ -80,24 +84,24 @@ export default function UserSettingsDebugLogs() {
           }
           return tmp;
         }));
-        const Storage = callback(closure_2[10]).Storage;
-        const result = Storage.set("debug-log-query", closure_7);
+        const Storage = callback(callback[10]).Storage;
+        const result = Storage.set("debug-log-query", outer1_7);
       }, 300);
       return () => clearTimeout(closure_0);
     } else {
       tmp = callback3;
       callback3(memo);
-      const Storage = tmp(callback[10]).Storage;
-      const result = Storage.set("debug-log-query", first1);
+      let Storage = tmp(callback[10]).Storage;
+      let result = Storage.set("debug-log-query", first1);
     }
   }, items1);
-  const items2 = [tmp];
+  let items2 = [tmp];
   let obj = { style: tmp.wrap };
   obj = { style: tmp.searchWrap };
   const callback1 = React.useCallback((item) => {
     item = item.item;
     let obj = { style: tmp.log };
-    obj = { style: tmp.code };
+    obj = { style: first1.code, variant: "text-xs/normal", color: "text-muted" };
     const items = [new Date(item.time).toISOString(), " ", ];
     const timing = item.timing;
     let str = "";
@@ -108,47 +112,47 @@ export default function UserSettingsDebugLogs() {
     obj.children = items;
     const items1 = [first1(first1(callback[12]).Text, obj), ];
     obj = { style: tmp.code, variant: "text-sm/normal" };
-    const obj1 = { style: first1.code, children: "[" + item.category + "]: " };
+    const obj1 = { style: first1.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
     const items2 = [callback3(first1(callback[12]).Text, obj1), item.message];
     obj.children = items2;
     items1[1] = first1(first1(callback[12]).Text, obj);
     obj.children = items1;
     return first1(memo, obj, item.index);
   }, items2);
-  obj = { "Null": false, "Null": false, onChange: tmp10[1], defaultValue: first1, trailingIcon: arg1(dependencyMap[14]).FiltersHorizontalIcon };
-  const obj1 = {};
-  const intl = arg1(dependencyMap[15]).intl;
-  obj1.accessibilityLabel = intl.string(arg1(dependencyMap[15]).t.+1H47t);
+  obj = { size: "md", placeholder: "Filter (regex)", onChange: tmp10[1], defaultValue: first1, trailingIcon: require(callback[14]).FiltersHorizontalIcon };
+  let obj1 = {};
+  const intl = require(callback[15]).intl;
+  obj1.accessibilityLabel = intl.string(require(callback[15]).t["+1H47t"]);
   obj1.onPress = function onPress() {
     let obj = tmp(callback[16]);
     obj = {
       sortOrder: first,
       onRefresh() {
-        callback2();
-        callback(callback2[17]).hideActionSheet();
+        outer1_2();
+        outer2_1(callback[17]).hideActionSheet();
       },
       onSortOrderChanged(arg0) {
-        callback3(arg0);
-        callback(closure_2[17]).hideActionSheet();
+        outer1_5(arg0);
+        outer2_1(callback[17]).hideActionSheet();
       }
     };
     const result = obj.openUserSettingsDebugLogsFiltersActionSheet(obj);
   };
   obj.trailingPressableProps = obj1;
-  const items3 = [callback2(arg1(dependencyMap[13]).SearchField, obj), ];
-  const tmp3 = callback(React.useState(0), 2);
-  items3[1] = callback2(memo, { style: tmp.shareButton, children: callback2(importDefault(dependencyMap[18]), {}) });
+  const items3 = [callback(require(callback[13]).SearchField, obj), ];
+  const tmp3 = first(React.useState(0), 2);
+  items3[1] = callback(memo, { style: tmp.shareButton, children: callback(importDefault(callback[18]), {}) });
   obj.children = items3;
   const items4 = [first1(memo, obj), ];
   const obj3 = {};
   const obj4 = {};
   const merged = Object.assign(tmp.list);
-  obj4["paddingBottom"] = importDefault(dependencyMap[8])().bottom + importDefault(dependencyMap[6]).space.PX_16;
+  obj4["paddingBottom"] = importDefault(callback[8])().bottom + importDefault(callback[6]).space.PX_16;
   obj3.contentContainerStyle = obj4;
   obj3.data = tmp12[0];
   obj3.renderItem = callback1;
-  obj3.refreshControl = callback2(closure_5, { refreshing: false, onRefresh: callback });
-  items4[1] = callback2(arg1(dependencyMap[19]).FlashList, obj3);
+  obj3.refreshControl = callback(closure_5, { refreshing: false, onRefresh: callback });
+  items4[1] = callback(require(callback[19]).FlashList, obj3);
   obj.children = items4;
   return first1(memo, obj);
 };

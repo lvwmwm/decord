@@ -1,26 +1,25 @@
-// Module ID: 15611
-// Function ID: 119093
+// Module ID: 15728
+// Function ID: 121266
 // Name: FrameWebView
-// Dependencies: [655818752, 655687680, 42795008, 272039936, 669384704]
+// Dependencies: [31, 33, 10606, 10489, 2]
 // Exports: default
 
-// Module 15611 (FrameWebView)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/frames/native/FrameWebView.tsx");
+// Module 15728 (FrameWebView)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/frames/native/FrameWebView.tsx");
 
 export default function FrameWebView(applicationId) {
   applicationId = applicationId.applicationId;
-  const arg1 = applicationId;
   let obj = Object.create(null);
   obj.applicationId = 0;
   const merged = Object.assign(applicationId, obj);
-  obj = arg1(dependencyMap[2]);
+  obj = applicationId(hadInvalidUrlError[2]);
   const hasInvalidUrlErrorState = obj.useHasInvalidUrlErrorState();
   const hasInvalidUrlError = hasInvalidUrlErrorState.hasInvalidUrlError;
-  const importDefault = hasInvalidUrlError;
-  const hadInvalidUrlError = hasInvalidUrlErrorState.hadInvalidUrlError;
-  const dependencyMap = hadInvalidUrlError;
+  hadInvalidUrlError = hasInvalidUrlErrorState.hadInvalidUrlError;
   const items = [hasInvalidUrlError, hadInvalidUrlError, applicationId];
   const effect = React.useEffect(() => {
     let tmp = !hadInvalidUrlError && hasInvalidUrlError;
@@ -49,5 +48,19 @@ export default function FrameWebView(applicationId) {
     applicationId
   };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[2]).BaseActivityWebView, obj);
+  return jsx(applicationId(hadInvalidUrlError[2]).BaseActivityWebView, {
+    hasFrameId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).hasFrameId();
+    },
+    getOrCreateFrameId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).getOrCreateFrameId();
+    },
+    releaseFrameId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).releaseFrameId();
+    },
+    hasInvalidUrlError,
+    setHasInvalidUrlError: hasInvalidUrlErrorState.setHasInvalidUrlError,
+    hadInvalidUrlError,
+    applicationId
+  });
 };

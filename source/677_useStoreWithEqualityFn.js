@@ -1,11 +1,13 @@
 // Module ID: 677
 // Function ID: 8382
 // Name: useStoreWithEqualityFn
-// Dependencies: []
+// Dependencies: [31, 678, 622]
 // Exports: createWithEqualityFn
 
 // Module 677 (useStoreWithEqualityFn)
-function useStoreWithEqualityFn(closure_4, arg1, shallow) {
+import result from "result";
+
+function useStoreWithEqualityFn(createJSONStorage, arg1, shallow) {
   if (arguments.length > 1) {
     if (undefined !== arguments[1]) {
       let tmp = arguments[1];
@@ -14,21 +16,19 @@ function useStoreWithEqualityFn(closure_4, arg1, shallow) {
     if (arguments.length > 2) {
       tmp2 = arguments[2];
     }
-    const obj = require(dependencyMap[1]);
-    const syncExternalStoreWithSelector = obj.useSyncExternalStoreWithSelector(closure_4.subscribe, closure_4.getState, closure_4.getInitialState, tmp, tmp2);
+    const obj = require(678) /* is */;
+    const syncExternalStoreWithSelector = obj.useSyncExternalStoreWithSelector(createJSONStorage.subscribe, createJSONStorage.getState, createJSONStorage.getInitialState, tmp, tmp2);
     const debugValue = closure_2.useDebugValue(syncExternalStoreWithSelector);
     return syncExternalStoreWithSelector;
   }
   tmp = identity;
 }
-let closure_2 = require(dependencyMap[0]);
 function identity(arg0) {
   return arg0;
 }
 function createWithEqualityFnImpl(arg0, arg1) {
-  const require = arg1;
-  const store = require(dependencyMap[2]).createStore(arg0);
-  const dependencyMap = store;
+  const _require = arg1;
+  store = _require(store[2]).createStore(arg0);
   function useBoundStoreWithEqualityFn(arg0) {
     if (arguments.length > 1) {
       if (undefined !== arguments[1]) {
@@ -36,7 +36,7 @@ function createWithEqualityFnImpl(arg0, arg1) {
       }
       return tmp(tmp2, arg0, tmp3);
     }
-    tmp3 = arg1;
+    tmp3 = closure_0;
   }
   const merged = Object.assign(useBoundStoreWithEqualityFn, store);
   return useBoundStoreWithEqualityFn;

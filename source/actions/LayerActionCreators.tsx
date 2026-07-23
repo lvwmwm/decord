@@ -1,21 +1,20 @@
-// Module ID: 6817
-// Function ID: 53773
+// Module ID: 6822
+// Function ID: 53805
 // Name: pushLayer
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: popAllLayers, popLayer, pushLayer
 
-// Module 6817 (pushLayer)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("actions/LayerActionCreators.tsx");
+// Module 6822 (pushLayer)
+const result = require("set").fileFinishedImporting("actions/LayerActionCreators.tsx");
 
 export const pushLayer = function pushLayer(component) {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(686);
   obj = { type: "LAYER_PUSH", component };
   obj.dispatch(obj);
 };
 export const popLayer = function popLayer() {
-  importDefault(dependencyMap[0]).dispatch({ type: "LAYER_POP" });
+  importDefault(686).dispatch({ type: "LAYER_POP" });
 };
 export const popAllLayers = function popAllLayers() {
-  importDefault(dependencyMap[0]).dispatch({ type: "LAYER_POP_ALL" });
+  importDefault(686).dispatch({ type: "LAYER_POP_ALL" });
 };

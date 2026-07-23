@@ -1,82 +1,83 @@
-// Module ID: 12863
-// Function ID: 98291
+// Module ID: 12977
+// Function ID: 100447
 // Name: useThrottledDispatch
-// Dependencies: []
+// Dependencies: [31, 4051, 12978, 22, 686, 566, 2]
 // Exports: useGuildHeaderCounts
 
-// Module 12863 (useThrottledDispatch)
+// Module 12977 (useThrottledDispatch)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function useThrottledDispatch(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
   const items = [arg0, arg1];
-  const memo = React.useMemo(() => arg0(arg2[3]).throttle((count) => {
-    let obj = callback(closure_2[4]);
-    obj = { type: closure_0, count, guildId: callback };
+  memo = memo.useMemo(() => callback(table[3]).throttle((count) => {
+    let obj = callback(table[4]);
+    obj = { type: outer1_0, count, guildId: outer1_1 };
     obj.dispatch(obj);
   }, 3000), items);
-  const React = memo;
   const items1 = [memo];
-  const effect = React.useEffect(() => () => closure_3.cancel(), items1);
+  const effect = memo.useEffect(() => () => outer1_3.cancel(), items1);
   const items2 = [memo, arg2];
-  const effect1 = React.useEffect(() => {
-    if (arg2 > 0) {
-      memo(arg2);
+  const effect1 = memo.useEffect(() => {
+    if (closure_2 > 0) {
+      memo(closure_2);
     }
   }, items2);
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_action_sheet/native/useGuildHeaderCounts.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_action_sheet/native/useGuildHeaderCounts.tsx");
 
 export const useGuildHeaderCounts = function useGuildHeaderCounts(id) {
-  const arg1 = id;
-  const obj = {
-    memberCount: function useMemberCount(id) {
-      const items = [closure_4];
-      callback("GUILD_HEADER_MEMBER_COUNT", id, id(closure_2[5]).useStateFromStores(items, () => {
-        const memberCount = memberCount.getMemberCount(arg0);
+  const _require = id;
+  let obj = {
+    memberCount: (function useMemberCount(id) {
+      const items = [outer1_4];
+      outer1_6("GUILD_HEADER_MEMBER_COUNT", id, id(outer1_2[5]).useStateFromStores(items, () => {
+        const memberCount = outer2_4.getMemberCount(closure_0);
         let num = 0;
         if (null != memberCount) {
           num = memberCount;
         }
         return num;
       }));
-      const obj = id(closure_2[5]);
-      const items1 = [closure_5];
-      return id(closure_2[5]).useStateFromStores(items1, () => memberCount2.getMemberCount(arg0));
-    }(id),
-    onlineCount: function useOnlineCount(id) {
-      const items = [closure_4];
-      callback("GUILD_HEADER_ONLINE_COUNT", id, id(closure_2[5]).useStateFromStores(items, () => {
-        const onlineCount = onlineCount.getOnlineCount(arg0);
+      const obj = id(outer1_2[5]);
+      const items1 = [outer1_5];
+      return id(outer1_2[5]).useStateFromStores(items1, () => outer2_5.getMemberCount(closure_0));
+    })(id),
+    onlineCount: (function useOnlineCount(id) {
+      const items = [outer1_4];
+      outer1_6("GUILD_HEADER_ONLINE_COUNT", id, id(outer1_2[5]).useStateFromStores(items, () => {
+        const onlineCount = outer2_4.getOnlineCount(closure_0);
         let num = 0;
         if (null != onlineCount) {
           num = onlineCount;
         }
         return num;
       }));
-      const obj = id(closure_2[5]);
-      const items1 = [closure_5];
-      return id(closure_2[5]).useStateFromStores(items1, () => onlineCount2.getOnlineCount(arg0));
-    }(id)
+      const obj = id(outer1_2[5]);
+      const items1 = [outer1_5];
+      return id(outer1_2[5]).useStateFromStores(items1, () => outer2_5.getOnlineCount(closure_0));
+    })(id)
   };
-  const tmp = function useMemberCount(id) {
-    const items = [closure_4];
-    callback("GUILD_HEADER_MEMBER_COUNT", id, id(closure_2[5]).useStateFromStores(items, () => {
-      const memberCount = memberCount.getMemberCount(arg0);
+  const tmp = (function useMemberCount(id) {
+    const items = [outer1_4];
+    outer1_6("GUILD_HEADER_MEMBER_COUNT", id, id(outer1_2[5]).useStateFromStores(items, () => {
+      const memberCount = outer2_4.getMemberCount(closure_0);
       let num = 0;
       if (null != memberCount) {
         num = memberCount;
       }
       return num;
     }));
-    const obj = id(closure_2[5]);
-    const items1 = [closure_5];
-    return id(closure_2[5]).useStateFromStores(items1, () => memberCount2.getMemberCount(arg0));
-  }(id);
-  const items = [closure_5];
-  obj.activeChannelsCount = arg1(dependencyMap[5]).useStateFromStores(items, () => activeChannelsCount.getActiveChannelsCount(arg0));
+    const obj = id(outer1_2[5]);
+    const items1 = [outer1_5];
+    return id(outer1_2[5]).useStateFromStores(items1, () => outer2_5.getMemberCount(closure_0));
+  })(id);
+  let items = [closure_5];
+  obj.activeChannelsCount = _require(566).useStateFromStores(items, () => outer1_5.getActiveChannelsCount(closure_0));
   return obj;
 };

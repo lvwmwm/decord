@@ -1,13 +1,14 @@
 // Module ID: 1388
-// Function ID: 16565
+// Function ID: 16566
 // Name: constructInPlace
-// Dependencies: [0, 4294967295, 0, 0, 0]
+// Dependencies: [1389, 44, 1390, 620, 2]
 // Exports: copyConstruct, merge, objectIsPlainRecordOfType, set, tryReuseExistingInPlacePlainRecord
 
 // Module 1388 (constructInPlace)
-import { TypeTag } from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
+import { TypeTag } from "TypeTag";
+import importDefaultResult from "TypeTag";
 
+const require = arg1;
 function constructInPlace(GuildRoleRecordTypeTag, arg1) {
   arg1[TypeTag] = GuildRoleRecordTypeTag;
   return arg1;
@@ -23,21 +24,21 @@ function isValueEqual(getTime, getTime2) {
           if (getTime instanceof Set) {
             const _Set2 = Set;
             if (getTime2 instanceof Set) {
-              let areSetsEqualResult = getTime2(dependencyMap[2]).areSetsEqual(getTime, getTime2);
-              const obj2 = getTime2(dependencyMap[2]);
+              let areSetsEqualResult = require(1390) /* _createForOfIteratorHelperLoose */.areSetsEqual(getTime, getTime2);
+              const obj2 = require(1390) /* _createForOfIteratorHelperLoose */;
             }
           }
           const _Array = Array;
           if (Array.isArray(getTime)) {
             const _Array2 = Array;
             if (Array.isArray(getTime2)) {
-              areSetsEqualResult = getTime2(dependencyMap[3]).areArraysShallowEqual(getTime, getTime2);
-              const obj = getTime2(dependencyMap[3]);
+              areSetsEqualResult = require(620) /* shallowEqual */.areArraysShallowEqual(getTime, getTime2);
+              const obj = require(620) /* shallowEqual */;
             }
           }
           areSetsEqualResult = "object" === typeof getTime && "object" === typeof getTime2;
           if (areSetsEqualResult) {
-            areSetsEqualResult = importDefault(dependencyMap[3])(getTime, getTime2);
+            areSetsEqualResult = importDefault(620)(getTime, getTime2);
           }
         } else {
           const _Date2 = Date;
@@ -66,7 +67,7 @@ function isPlainRecordDataEqual(arg0, arg1) {
     return true;
   }
 }
-const result = require("__exportStarResult1").fileFinishedImporting("lib/PlainRecord.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("lib/PlainRecord.tsx");
 
 export default importDefaultResult;
 export { TypeTag };
@@ -111,7 +112,7 @@ export const merge = function merge(arg0, arg1) {
           tmp6[tmp7] = tmp15;
         }
         tmp3 = tmp6;
-        // continue
+        continue;
       }
       continue;
     }
@@ -125,9 +126,9 @@ export const tryReuseExistingInPlacePlainRecord = function tryReuseExistingInPla
   let tmp = arg1;
   let tmp3 = null == arg1;
   if (!tmp3) {
-    tmp3 = tmp[closure_3] === GuildRoleRecordTypeTag;
+    tmp3 = tmp[TypeTag] === GuildRoleRecordTypeTag;
   }
-  importDefault(dependencyMap[1])(tmp3, "Existing record type does not match the expected type");
+  importDefault(44)(tmp3, "Existing record type does not match the expected type");
   if (null == tmp) {
     constructInPlace(GuildRoleRecordTypeTag, arg2);
     tmp = arg2;
@@ -142,7 +143,7 @@ export const objectIsPlainRecordOfType = function objectIsPlainRecordOfType(arg0
   if (tmp) {
     let tmp4 = TypeTag in arg1;
     if (tmp4) {
-      tmp4 = arg1[closure_3];
+      tmp4 = arg1[TypeTag];
     }
     tmp = tmp4 === arg0;
   }

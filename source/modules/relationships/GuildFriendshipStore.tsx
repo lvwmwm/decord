@@ -1,9 +1,15 @@
-// Module ID: 12533
-// Function ID: 96260
+// Module ID: 12647
+// Function ID: 98416
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5048, 566, 686, 2]
 
-// Module 12533 (_isNativeReflectConstruct)
+// Module 12647 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,9 +19,9 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function getFetchState(guildId) {
+function getFetchState(arg0) {
   let fetchState;
-  if (null != closure_8[guildId]) {
+  if (null != dependencyMap[arg0]) {
     fetchState = tmp.fetchState;
   }
   if (null == fetchState) {
@@ -26,27 +32,22 @@ function getFetchState(guildId) {
 function resetStates() {
   let closure_8 = {};
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };
 let closure_8 = {};
-let closure_9 = 0;
-let tmp2 = (Store) => {
+let c9 = 0;
+let tmp2 = ((Store) => {
   class GuildFriendshipStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GuildFriendshipStore);
-      obj = closure_5(GuildFriendshipStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, GuildFriendshipStore);
+      obj = outer1_5(GuildFriendshipStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -55,30 +56,30 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = GuildFriendshipStore;
   callback2(GuildFriendshipStore, Store);
   let obj = {
     key: "isFetchingFriendsForGuild",
     value(arg0) {
-      return callback4(arg0) === constants.FETCHING;
+      return outer1_11(arg0) === outer1_7.FETCHING;
     }
   };
   const items = [obj, ];
   obj = {
     key: "fetchFriendMembersIfNotFetched",
     value(id1, items) {
-      if (callback4(id1) === constants.NOT_FETCHED) {
-        const obj = { fetchState: constants.FETCHING };
-        closure_8[id1] = obj;
-        const membersById = GuildFriendshipStore(closure_1[5]).requestMembersById(id1, items, false);
-        const obj2 = GuildFriendshipStore(closure_1[5]);
+      if (outer1_11(id1) === outer1_7.NOT_FETCHED) {
+        const obj = { fetchState: outer1_7.FETCHING, foundMembers: 0, notFoundMembers: 0 };
+        outer1_8[id1] = obj;
+        const outer1_9 = items.length;
+        const membersById = GuildFriendshipStore(outer1_1[5]).requestMembersById(id1, items, false);
+        const obj2 = GuildFriendshipStore(outer1_1[5]);
       }
     }
   };
   items[1] = obj;
   return callback(GuildFriendshipStore, items);
-}(importDefault(dependencyMap[6]).Store);
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+})(require("initialize").Store);
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: resetStates,
   LOGOUT: resetStates,
   RELATIONSHIP_ADD: resetStates,
@@ -87,7 +88,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     const first = arg0.chunks[0];
     const guildId = first.guildId;
     if (getFetchState(guildId) === constants.FETCHING) {
-      closure_8[guildId].foundMembers = closure_8[guildId].foundMembers + first.members.length;
+      dependencyMap[guildId].foundMembers = dependencyMap[guildId].foundMembers + first.members.length;
       const notFound = first.notFound;
       let length;
       if (null != notFound) {
@@ -97,13 +98,13 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       if (null != length) {
         num = length;
       }
-      closure_8[guildId].notFoundMembers = closure_8[guildId].notFoundMembers + num;
-      if (closure_8[guildId].foundMembers + closure_8[guildId].notFoundMembers >= closure_9) {
-        closure_8[guildId].fetchState = constants.FETCHED;
+      dependencyMap[guildId].notFoundMembers = dependencyMap[guildId].notFoundMembers + num;
+      if (dependencyMap[guildId].foundMembers + dependencyMap[guildId].notFoundMembers >= c9) {
+        dependencyMap[guildId].fetchState = constants.FETCHED;
       }
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/relationships/GuildFriendshipStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/relationships/GuildFriendshipStore.tsx");
 
 export default tmp2;

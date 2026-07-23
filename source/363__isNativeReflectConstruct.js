@@ -1,9 +1,16 @@
 // Module ID: 363
 // Function ID: 5380
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 358, 347, 354, 357]
 
 // Module 363 (_isNativeReflectConstruct)
+import _assertNativeAnimatedModule from "_assertNativeAnimatedModule";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,43 +21,37 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  const importDefault = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_6(closure_5(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const dependencyMap = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
 
-export default (arg0) => {
+export default ((arg0) => {
   class AnimatedDivision {
     constructor(arg0, arg1, arg2) {
       self = this;
-      tmp = closure_2(this, AnimatedDivision);
+      tmp = outer1_2(this, AnimatedDivision);
       items = [];
       items[0] = arg2;
-      obj = closure_5(AnimatedDivision);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      obj = outer1_5(AnimatedDivision);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -59,9 +60,9 @@ export default (arg0) => {
       tmp7 = 0 === arg1;
       if (!tmp7) {
         tmp8 = AnimatedDivision;
-        tmp9 = closure_1;
+        tmp9 = outer1_1;
         num = 6;
-        tmp10 = arg1 instanceof AnimatedDivision(closure_1[6]) && 0 === arg1.__getValue();
+        tmp10 = arg1 instanceof AnimatedDivision(outer1_1[6]) && 0 === arg1.__getValue();
         tmp7 = tmp10;
       }
       if (tmp7) {
@@ -73,9 +74,9 @@ export default (arg0) => {
       tmp16 = arg0;
       if ("number" === typeof arg0) {
         tmp14 = AnimatedDivision;
-        tmp15 = closure_1;
+        tmp15 = outer1_1;
         num2 = 7;
-        tmp16 = AnimatedDivision(closure_1[7]);
+        tmp16 = AnimatedDivision(outer1_1[7]);
         prototype = tmp16.prototype;
         tmp17 = new.target;
         tmp18 = new.target;
@@ -86,9 +87,9 @@ export default (arg0) => {
       tmp23 = arg1;
       if ("number" === typeof arg1) {
         tmp21 = AnimatedDivision;
-        tmp22 = closure_1;
+        tmp22 = outer1_1;
         num3 = 7;
-        tmp23 = AnimatedDivision(closure_1[7]);
+        tmp23 = AnimatedDivision(outer1_1[7]);
         prototype2 = tmp23.prototype;
         tmp24 = new.target;
         tmp25 = new.target;
@@ -99,7 +100,6 @@ export default (arg0) => {
       return tmp2Result;
     }
   }
-  const importDefault = AnimatedDivision;
   callback2(AnimatedDivision, arg0);
   let obj = {
     key: "__makeNative",
@@ -109,10 +109,10 @@ export default (arg0) => {
       const _b = this._b;
       _b.__makeNative(arg0);
       const items = [arg0];
-      callback4(AnimatedDivision, "__makeNative", this, 3)(items);
+      outer1_9(AnimatedDivision, "__makeNative", this, 3)(items);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "__getValue",
     value: function __getValue() {
@@ -140,7 +140,7 @@ export default (arg0) => {
   obj = {
     key: "interpolate",
     value: function interpolate(arg0) {
-      let tmp = AnimatedDivision(closure_1[8]);
+      let tmp = AnimatedDivision(outer1_1[8]);
       tmp = new tmp(this, arg0);
       return tmp;
     }
@@ -153,7 +153,7 @@ export default (arg0) => {
       _a.__addChild(this);
       const _b = this._b;
       _b.__addChild(this);
-      callback4(AnimatedDivision, "__attach", this, 3)([]);
+      outer1_9(AnimatedDivision, "__attach", this, 3)([]);
     }
   };
   items[4] = {
@@ -163,7 +163,7 @@ export default (arg0) => {
       _a.__removeChild(this);
       const _b = this._b;
       _b.__removeChild(this);
-      callback4(AnimatedDivision, "__detach", this, 3)([]);
+      outer1_9(AnimatedDivision, "__detach", this, 3)([]);
     }
   };
   items[5] = {
@@ -180,4 +180,4 @@ export default (arg0) => {
     }
   };
   return callback(AnimatedDivision, items);
-}(importDefault(dependencyMap[9]));
+})(require("_isNativeReflectConstruct"));

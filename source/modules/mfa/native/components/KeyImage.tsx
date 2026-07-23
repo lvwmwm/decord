@@ -1,18 +1,18 @@
-// Module ID: 13528
-// Function ID: 102628
+// Module ID: 13642
+// Function ID: 104784
 // Name: KeyImage
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 13643, 2]
 // Exports: KeyImage
 
-// Module 13528 (KeyImage)
-const Image = require(dependencyMap[0]).Image;
-const jsx = require(dependencyMap[1]).jsx;
-const _module = require(dependencyMap[2]);
-let closure_4 = _module.createStyles({ icon: {} });
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/mfa/native/components/KeyImage.tsx");
+// Module 13642 (KeyImage)
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ icon: { width: 128, height: 128, marginBottom: 8 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/mfa/native/components/KeyImage.tsx");
 
 export const KeyImage = function KeyImage() {
-  const obj = { source: importDefault(dependencyMap[3]), style: callback().icon };
-  return <Image {...obj} />;
+  const obj = { source: importDefault(13643), style: callback().icon };
+  return <Image source={importDefault(13643)} style={callback().icon} />;
 };

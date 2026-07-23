@@ -1,18 +1,20 @@
-// Module ID: 11175
-// Function ID: 86897
+// Module ID: 11185
+// Function ID: 86947
 // Name: BotsBanner
-// Dependencies: []
+// Dependencies: [31, 33, 11186, 11170, 11181, 1212, 2]
 // Exports: default
 
-// Module 11175 (BotsBanner)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/BotsBanner.tsx");
+// Module 11185 (BotsBanner)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/BotsBanner.tsx");
 
 export default function BotsBanner(context) {
   let firstBotApplication;
   let secondBotApplication;
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(11186) /* _createForOfIteratorHelperLoose */;
   const bannerBots = obj.useBannerBots({ context: context.context });
   ({ firstBotApplication, secondBotApplication } = bannerBots);
   let tmp3 = null;
@@ -20,11 +22,11 @@ export default function BotsBanner(context) {
     tmp3 = null;
     if (null != secondBotApplication) {
       obj = { image: tmp2 };
-      const intl = arg1(dependencyMap[5]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       obj = { firstApplicationName: firstBotApplication.name, secondApplicationName: secondBotApplication.name };
-      obj.text = intl.formatToPlainString(arg1(dependencyMap[5]).t.9SN0xw, obj);
-      tmp3 = jsx(importDefault(dependencyMap[4]), obj);
-      const tmp7 = importDefault(dependencyMap[4]);
+      obj.text = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["9SN0xw"], obj);
+      tmp3 = jsx(importDefault(11181), { firstApplicationName: firstBotApplication.name, secondApplicationName: secondBotApplication.name });
+      const tmp7 = importDefault(11181);
     }
   }
   return tmp3;

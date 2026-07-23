@@ -1,35 +1,44 @@
-// Module ID: 8570
-// Function ID: 68098
+// Module ID: 8577
+// Function ID: 68138
 // Name: memoResult1
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 7632, 33, 4130, 689, 477, 1212, 4126, 4660, 566, 7845, 4098, 8578, 1934, 2]
 
-// Module 8570 (memoResult1)
-const importAllResult = importAll(dependencyMap[0]);
-({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-const GuildTagBadgeSize = arg1(dependencyMap[3]).GuildTagBadgeSize;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-let obj1 = arg1(dependencyMap[5]);
+// Module 8577 (memoResult1)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GuildTagBadgeSize } from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "set";
+import set from "_isNativeReflectConstruct";
+
+let closure_10;
+let closure_4;
+let closure_5;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_STRONG };
+obj = { flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: 4, paddingHorizontal: 4, paddingVertical: 1, columnGap: 2 };
 obj.container = obj;
-obj1 = {};
-const tmp3 = arg1(dependencyMap[4]);
+_createForOfIteratorHelperLoose = {};
 let num = 16;
-if (obj6.isAndroid()) {
+if (set.isAndroid()) {
   num = 14;
 }
-obj1.lineHeight = num;
-const obj6 = arg1(dependencyMap[7]);
+_createForOfIteratorHelperLoose.lineHeight = num;
 let str;
-if (obj7.isAndroid()) {
+if (set.isAndroid()) {
   str = "center";
 }
-obj1.textAlignVertical = str;
-obj1.overflow = "hidden";
-obj.tag = obj1;
-let closure_11 = obj1.createStyles(obj);
+_createForOfIteratorHelperLoose.textAlignVertical = str;
+_createForOfIteratorHelperLoose.overflow = "hidden";
+obj.tag = _createForOfIteratorHelperLoose;
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
   let size;
   let source;
@@ -40,8 +49,8 @@ const memoResult = importAllResult.memo((arg0) => {
   let tmp2 = null;
   if (null != source) {
     let obj = { source };
-    const intl = arg1(dependencyMap[8]).intl;
-    obj.alt = intl.string(arg1(dependencyMap[8]).t.HHYPgJ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.alt = intl.string(require(1212) /* getSystemLocale */.t.HHYPgJ);
     obj = { width: size, height: size };
     obj.style = obj;
     tmp2 = callback(closure_4, obj);
@@ -50,10 +59,13 @@ const memoResult = importAllResult.memo((arg0) => {
 });
 const memoResult1 = importAllResult.memo((textVariant) => {
   let badgeSize;
+  let closure_4;
   let containerStyles;
   let disabled;
+  let importDefault;
   let onPress;
-  ({ containerStyles, guildTag: closure_0, guildBadge: closure_1, onPress, disabled } = textVariant);
+  let require;
+  ({ containerStyles, guildTag: require, guildBadge: importDefault, onPress, disabled } = textVariant);
   if (disabled === undefined) {
     disabled = false;
   }
@@ -61,7 +73,6 @@ const memoResult1 = importAllResult.memo((textVariant) => {
   if (str === undefined) {
     str = "text-xs/semibold";
   }
-  const dependencyMap = str;
   let str2 = textVariant.textColor;
   if (str2 === undefined) {
     str2 = "text-default";
@@ -70,7 +81,7 @@ const memoResult1 = importAllResult.memo((textVariant) => {
   if (badgeSize === undefined) {
     badgeSize = GuildTagBadgeSize.SIZE_12;
   }
-  let closure_6;
+  let c6;
   function renderContent() {
     let obj = {};
     if (null != closure_1) {
@@ -79,48 +90,47 @@ const memoResult1 = importAllResult.memo((textVariant) => {
         obj = { uri: closure_1 };
         obj.source = obj;
         obj.size = badgeSize;
-        let tmp4 = callback2(closure_12, obj);
+        let tmp4 = outer1_8(outer1_12, obj);
       }
       const items = [tmp4, ];
       const obj1 = { variant: "string", color: str2, lineClamp: 1, ellipsizeMode: "tail" };
-      const items1 = [tmp2.tag, closure_4];
+      const items1 = [_undefined.tag, closure_4];
       obj1.style = items1;
-      obj1.children = callback;
-      items[1] = callback2(callback("string"[9]).Text, obj1);
+      obj1.children = closure_0;
+      items[1] = outer1_8(outer1_0("string"[9]).Text, obj1);
       obj.children = items;
       return tmp(tmp2, obj);
     }
     tmp4 = closure_1;
   }
   const tmp2 = callback2();
-  closure_6 = tmp2;
+  c6 = tmp2;
   if (null != onPress) {
     let obj = { onPress };
-    const items = [tmp2.container, containerStyles];
+    let items = [tmp2.container, containerStyles];
     obj.style = items;
     obj.disabled = disabled;
     obj.accessibilityRole = "button";
     obj = { disabled };
     obj.accessibilityState = obj;
     obj.children = renderContent();
-    let tmp5 = callback(arg1(dependencyMap[10]).PressableHighlight, obj);
+    let tmp5 = callback(require(str[10]).PressableHighlight, obj);
   } else {
     obj = {};
-    const items1 = [tmp2.container, containerStyles];
+    let items1 = [tmp2.container, containerStyles];
     obj.style = items1;
     obj.children = renderContent();
     tmp5 = callback(badgeSize, obj);
   }
   return tmp5;
 });
-const obj7 = arg1(dependencyMap[7]);
-const memoResult2 = importAllResult.memo((primaryGuild) => {
+const result = set.fileFinishedImporting("modules/guild_tag/native/GuildTag.tsx");
+
+export default importAllResult.memo((primaryGuild) => {
   let guildId;
   let tag;
   primaryGuild = primaryGuild.primaryGuild;
-  const arg1 = primaryGuild;
   const userId = primaryGuild.userId;
-  const importDefault = userId;
   let flag = primaryGuild.disabledTooltip;
   if (flag === undefined) {
     flag = false;
@@ -129,14 +139,14 @@ const memoResult2 = importAllResult.memo((primaryGuild) => {
   if (SIZE_12 === undefined) {
     SIZE_12 = GuildTagBadgeSize.SIZE_12;
   }
-  let obj = { marginTop: -24, padding: null, paddingRight: 1, alignSelf: "Malaysia" };
+  let obj = { primaryGuild: 0, userId: 0, disabledTooltip: 0, badgeSize: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryGuild, obj);
-  let dependencyMap;
-  const items = [closure_6];
+  guildId = undefined;
+  const items = [_isNativeReflectConstruct];
   const items1 = [userId, primaryGuild];
-  const stateFromStoresObject = arg1(dependencyMap[11]).useStateFromStoresObject(items, () => {
-    const user = user.getUser(userId);
+  const stateFromStoresObject = primaryGuild(guildId[11]).useStateFromStoresObject(items, () => {
+    const user = outer1_6.getUser(userId);
     let primaryGuild;
     if (null != user) {
       primaryGuild = user.primaryGuild;
@@ -147,13 +157,12 @@ const memoResult2 = importAllResult.memo((primaryGuild) => {
     return obj;
   }, items1);
   ({ tag, guildId } = stateFromStoresObject);
-  dependencyMap = guildId;
   [][0] = guildId;
   let tmp7Result = null;
   if (null != guildId) {
     tmp7Result = null;
     if (null != tag) {
-      obj = { guildTag: tag, guildBadge: arg1(dependencyMap[12]).getGuildTagBadgeUrl(guildId, stateFromStoresObject.badge, SIZE_12), badgeSize: SIZE_12 };
+      obj = { guildTag: tag, guildBadge: primaryGuild(guildId[12]).getGuildTagBadgeUrl(guildId, stateFromStoresObject.badge, SIZE_12), badgeSize: SIZE_12 };
       const merged1 = Object.assign(merged);
       let tmp14;
       if (!flag) {
@@ -161,15 +170,12 @@ const memoResult2 = importAllResult.memo((primaryGuild) => {
       }
       obj["onPress"] = tmp14;
       tmp7Result = closure_8(memoResult1, obj);
-      const obj4 = arg1(dependencyMap[12]);
+      const obj4 = primaryGuild(guildId[12]);
       const tmp7 = closure_8;
       const tmp8 = memoResult1;
     }
   }
   return tmp7Result;
 });
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_tag/native/GuildTag.tsx");
-
-export default memoResult2;
 export const GuildTagBadge = memoResult;
 export const BaseGuildTagChiplet = memoResult1;

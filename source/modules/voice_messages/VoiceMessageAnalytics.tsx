@@ -1,18 +1,17 @@
-// Module ID: 11008
-// Function ID: 85660
+// Module ID: 11018
+// Function ID: 85710
 // Name: logVoiceMessagePlaybackStarted
-// Dependencies: [670, 2, 6]
+// Dependencies: [653, 675, 2]
 // Exports: logVoiceMessagePlaybackEnded, logVoiceMessagePlaybackFailed, logVoiceMessagePlaybackStarted
 
-// Module 11008 (logVoiceMessagePlaybackStarted)
-import { AnalyticEvents } from "MessageEmbedTypes";
-import _classCallCheck from "_classCallCheck";
+// Module 11018 (logVoiceMessagePlaybackStarted)
+import { AnalyticEvents } from "ME";
 
-const result = _classCallCheck.fileFinishedImporting("modules/voice_messages/VoiceMessageAnalytics.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_messages/VoiceMessageAnalytics.tsx");
 
 export const VoiceMessageRecordingResult = { SENT: "sent", CANCELLED_DURATION: "cancelled_duration", CANCELLED_USER_REQUESTED: "cancelled_user_requested", CANCELLED_GESTURE_CONFLICT: "cancelled_gesture_conflict", CANCELLED_ON_BACKGROUND: "cancelled_on_background" };
 export const logVoiceMessagePlaybackStarted = function logVoiceMessagePlaybackStarted(messageId, totalDurationSecs, startDurationSecs, id) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = { message_id: messageId, total_duration_secs: totalDurationSecs };
   let tmp = startDurationSecs;
   if (null != totalDurationSecs) {
@@ -23,7 +22,7 @@ export const logVoiceMessagePlaybackStarted = function logVoiceMessagePlaybackSt
   obj.track(AnalyticEvents.VOICE_MESSAGE_PLAYBACK_STARTED, obj);
 };
 export const logVoiceMessagePlaybackEnded = function logVoiceMessagePlaybackEnded(messageId, totalDurationSecs, endDurationSecs, id, durationListeningSecs) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = { message_id: messageId, total_duration_secs: totalDurationSecs };
   let tmp = endDurationSecs;
   if (null != totalDurationSecs) {
@@ -35,7 +34,7 @@ export const logVoiceMessagePlaybackEnded = function logVoiceMessagePlaybackEnde
   obj.track(AnalyticEvents.VOICE_MESSAGE_PLAYBACK_ENDED, obj);
 };
 export const logVoiceMessagePlaybackFailed = function logVoiceMessagePlaybackFailed(messageId, error_message) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = { message_id: messageId, error_message };
   obj.track(AnalyticEvents.VOICE_MESSAGE_PLAYBACK_FAILED, obj);
 };

@@ -1,13 +1,13 @@
-// Module ID: 12085
-// Function ID: 93215
+// Module ID: 12199
+// Function ID: 95366
 // Name: getGuildEventImageURL
-// Dependencies: []
+// Dependencies: [653, 1426, 2]
 // Exports: default
 
-// Module 12085 (getGuildEventImageURL)
-const Endpoints = require(dependencyMap[0]).Endpoints;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/guild_scheduled_events/utils/getGuildEventImage.tsx");
+// Module 12199 (getGuildEventImageURL)
+import { Endpoints } from "ME";
+
+let result = require("set").fileFinishedImporting("modules/guild_scheduled_events/utils/getGuildEventImage.tsx");
 
 export default function getGuildEventImageURL(image, size) {
   let result = size;
@@ -16,11 +16,11 @@ export default function getGuildEventImageURL(image, size) {
   } else {
     if (null == result) {
       const _window = window;
-      result = window.screen.width * require(dependencyMap[1]).getDevicePixelRatio();
-      const obj = require(dependencyMap[1]);
+      result = window.screen.width * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio();
+      const obj = require(1426) /* isAttachmentLadderEnabled */;
     }
     const _window2 = window;
-    const bestMediaProxySize = require(dependencyMap[1]).getBestMediaProxySize(result);
+    const bestMediaProxySize = require(1426) /* isAttachmentLadderEnabled */.getBestMediaProxySize(result);
     if (null != CDN_HOST) {
       const _HermesInternal = HermesInternal;
       let combined = "" + "https:" + "//" + CDN_HOST + "/guild-events/" + image.id + "/" + image.image;

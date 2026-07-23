@@ -1,22 +1,24 @@
 // Module ID: 280
 // Function ID: 4387
 // Name: Button
-// Dependencies: []
+// Dependencies: [29, 31, 33, 281, 44, 112, 289, 253]
 
 // Module 280 (Button)
-let closure_2 = [];
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = importDefault(dependencyMap[3]);
+import _objectWithoutProperties from "_objectWithoutProperties";
+import "result";
+import { jsx } from "jsxProd";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "setStyleAttributePreprocessor";
+
+let closure_2 = ["ref"];
 class Button {
   constructor(arg0) {
-    tmp = closure_3(global, closure_2);
+    tmp = _objectWithoutProperties(global, closure_2);
     ({ accessibilityState, aria-busy: tmp2, aria-checked: tmp3, aria-disabled: tmp4, aria-expanded: tmp5, aria-label: tmp6, aria-selected: tmp7, importantForAccessibility, color, title } = tmp);
     items = [];
-    items[0] = closure_6.button;
+    items[0] = c6.button;
     items1 = [];
-    items1[0] = closure_6.text;
+    items1[0] = c6.text;
     ({ accessibilityLabel, onPress, touchSoundDisabled, hasTVPreferredFocus, nextFocusDown, nextFocusForward, nextFocusLeft, nextFocusRight, nextFocusUp, testID, accessible, accessibilityActions, accessibilityHint, accessibilityLanguage, onAccessibilityAction } = tmp);
     if (color) {
       obj = {};
@@ -82,16 +84,16 @@ class Button {
       merged = Object.assign({}, obj, obj1);
     }
     if (disabled) {
-      tmp17 = closure_6;
-      arr1 = items.push(closure_6.buttonDisabled);
-      tmp19 = closure_6;
-      arr2 = items1.push(closure_6.textDisabled);
+      tmp17 = c6;
+      arr1 = items.push(c6.buttonDisabled);
+      tmp19 = c6;
+      arr2 = items1.push(c6.textDisabled);
     }
-    tmp21 = importDefault(dependencyMap[4])("string" === typeof title, "The title prop of a Button must be a string");
+    tmp21 = require("invariant")("string" === typeof title, "The title prop of a Button must be a string");
     obj2 = { accessible, accessibilityActions, onAccessibilityAction };
     formatted = title.toUpperCase();
     tmp23 = jsx;
-    tmp24 = closure_5;
+    tmp24 = c5;
     if (!tmp6) {
       tmp6 = accessibilityLabel;
     }
@@ -117,17 +119,16 @@ class Button {
     obj2.touchSoundDisabled = touchSoundDisabled;
     obj2.ref = global.ref;
     obj3 = { style: items };
-    tmp25 = importDefault(dependencyMap[5]);
+    tmp25 = require("View");
     obj4 = { style: items1 };
     obj4.disabled = disabled;
     obj4.children = formatted;
-    obj3.children = jsx(importDefault(dependencyMap[6]), obj4);
+    obj3.children = jsx(require("useTextPressability"), obj4);
     obj2.children = jsx(tmp25, obj3);
     return tmp23(tmp24, obj2);
   }
 }
 Button.displayName = "Button";
-const importDefaultResult = importDefault(dependencyMap[7]);
-let closure_6 = importDefaultResult.create({ button: {}, text: Object.assign({}, {}), buttonDisabled: { "Bool(true)": null, "Bool(true)": "RFC1738" }, textDisabled: { color: "#a1a1a1" } });
+let closure_6 = importDefaultResult.create({ button: { elevation: 4, backgroundColor: "#2196F3", borderRadius: 2 }, text: Object.assign({ textAlign: "center", margin: 8 }, { color: "white", fontWeight: "500" }), buttonDisabled: { elevation: 0, backgroundColor: "#dfdfdf" }, textDisabled: { color: "#a1a1a1" } });
 
 export default Button;

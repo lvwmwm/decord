@@ -1,10 +1,12 @@
-// Module ID: 11383
-// Function ID: 88520
+// Module ID: 11393
+// Function ID: 88570
 // Name: formatNumber
-// Dependencies: []
+// Dependencies: [653, 8842, 2]
 // Exports: default, useConnectedUserLimitFormatted
 
-// Module 11383 (formatNumber)
+// Module 11393 (formatNumber)
+import { MAX_STAGE_VOICE_USER_LIMIT as closure_2 } from "ME";
+
 function formatNumber(toFixed) {
   let num = arg1;
   if (arg1 === undefined) {
@@ -33,7 +35,7 @@ function useConnectedUserLimit(arg0) {
   if (considerMaxStageVoiceUserLimit === undefined) {
     considerMaxStageVoiceUserLimit = true;
   }
-  const limit = importDefault(dependencyMap[1])(channel).limit;
+  const limit = importDefault(8842)(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;
@@ -57,9 +59,7 @@ function useConnectedUserLimit(arg0) {
   }
   return num2;
 }
-let closure_2 = require(dependencyMap[0]).MAX_STAGE_VOICE_USER_LIMIT;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/guild_sidebar/useShowConnectedUserLimit.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/useShowConnectedUserLimit.tsx");
 
 export default function useShowConnectedUserLimit(channel) {
   let locked;

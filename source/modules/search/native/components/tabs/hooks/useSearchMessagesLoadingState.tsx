@@ -1,27 +1,30 @@
-// Module ID: 15269
-// Function ID: 115265
+// Module ID: 15386
+// Function ID: 117439
 // Name: useSearchMessagesLoadingState
-// Dependencies: []
+// Dependencies: [5660, 10077, 9103, 15340, 566, 10078, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 15269 (useSearchMessagesLoadingState)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).SEARCH_TABS_TO_SEARCH_QUERY_LIMITS;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessagesLoadingState.tsx");
+// Module 15386 (useSearchMessagesLoadingState)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { SEARCH_TABS_TO_SEARCH_QUERY_LIMITS as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
+
+const require = arg1;
+const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessagesLoadingState.tsx");
 
 export const useSearchMessagesLoadingState = function useSearchMessagesLoadingState(arg0) {
+  let dependencyMap;
   let numColumns;
   let placeholderHeight;
-  ({ searchContext: closure_0, tab: closure_1 } = arg0);
+  let require;
+  ({ searchContext: require, tab: dependencyMap } = arg0);
   ({ placeholderHeight, numColumns } = arg0);
-  let closure_2 = arg1(dependencyMap[3]).useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
-  const obj = arg1(dependencyMap[3]);
-  const items = [closure_3, closure_2];
-  return arg1(dependencyMap[4]).useStateFromStoresObject(items, () => {
-    const searchResultsQuery = searchResultsQuery.getSearchResultsQuery(callback);
-    let obj = callback(closure_1[5]);
-    const searchTabFetchId = obj.getSearchTabFetchId(callback, closure_1, searchResultsQuery);
+  let _isNativeReflectConstruct = require(15340) /* useFullscreenPlaceholderCount */.useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
+  let obj = require(15340) /* useFullscreenPlaceholderCount */;
+  const items = [closure_3, _isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStoresObject(items, () => {
+    let obj = outer1_0(outer1_1[5]);
+    const searchTabFetchId = obj.getSearchTabFetchId(closure_0, closure_1, outer1_3.getSearchResultsQuery(closure_0));
     const isInitialFetchComplete = store.getIsInitialFetchComplete(searchTabFetchId);
     let isFetching = !tmp4;
     if (!!isInitialFetchComplete) {
@@ -29,7 +32,7 @@ export const useSearchMessagesLoadingState = function useSearchMessagesLoadingSt
     }
     obj = { isFirstPageLoading: tmp4, isNextPageLoading: isFetching };
     if (!isInitialFetchComplete) {
-      let num = Math.max(store, closure_4[closure_1]);
+      let num = Math.max(store, outer1_4[closure_1]);
     } else {
       num = 0;
     }

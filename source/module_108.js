@@ -1,7 +1,7 @@
 // Module ID: 108
 // Function ID: 1602
-// Dependencies: []
+// Dependencies: [109]
 
 // Module 108
 
-export default importDefault(dependencyMap[0]);
+export { default } from "module_109";

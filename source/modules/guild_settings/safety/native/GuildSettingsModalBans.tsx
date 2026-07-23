@@ -1,53 +1,68 @@
-// Module ID: 16228
-// Function ID: 125431
+// Module ID: 16345
+// Function ID: 127604
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1838, 1849, 8439, 33, 4130, 689, 566, 8832, 3803, 5045, 5048, 8438, 5165, 1273, 5171, 1212, 5492, 3830, 5497, 5585, 16346, 5772, 8502, 9244, 5448, 2]
 // Exports: default
 
-// Module 16228 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16345 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "NavScrim";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_5;
+let closure_6;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,38 +99,28 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, StyleSheet: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12, flex: 1 };
-obj.containerInner = obj;
-const tmp3 = arg1(dependencyMap[6]);
-obj.searchField = { paddingVertical: importDefault(dependencyMap[8]).space.PX_16 };
-let closure_13 = obj.createStyles(obj);
-const obj1 = { paddingVertical: importDefault(dependencyMap[8]).space.PX_16 };
-const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalBans.tsx");
+({ View: closure_5, StyleSheet: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, flex: 1 };
+_createForOfIteratorHelperLoose.containerInner = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.searchField = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalBans.tsx");
 
 export default function ConnectedGuildSettingsModalBans(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
-  let React;
+  let setting;
   let users;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[9]);
+  let tmp = _createForOfIteratorHelperLoose();
+  let obj = guildId(bans[9]);
   const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId));
-  const importDefault = stateFromStores;
-  let obj1 = arg1(dependencyMap[9]);
+  let stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(guildId));
+  let obj1 = guildId(bans[9]);
   const items1 = [closure_9];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => {
-    const props = props.getProps();
+    const props = outer1_9.getProps();
     const searchQuery = props.searchQuery;
     const obj = { bans: props.bans };
     let str = "";
@@ -126,10 +131,8 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
     obj.bansVersion = props.bansVersion;
     return obj;
   });
-  const bans = stateFromStoresObject.bans;
-  const dependencyMap = bans;
-  const searchQuery = stateFromStoresObject.searchQuery;
-  let closure_3 = searchQuery;
+  bans = stateFromStoresObject.bans;
+  let searchQuery = stateFromStoresObject.searchQuery;
   const flattenResult = closure_6.flatten(guildId.contentContainerStyle);
   let paddingBottom;
   if (null != flattenResult) {
@@ -137,43 +140,42 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
   }
   let num = 0;
   if ("number" === typeof paddingBottom) {
-    num = paddingBottom + importDefault(dependencyMap[8]).space.PX_16;
+    num = paddingBottom + stateFromStores(bans[8]).space.PX_16;
   }
-  const DeveloperMode = arg1(dependencyMap[11]).DeveloperMode;
-  const setting = DeveloperMode.useSetting();
-  React = setting;
+  const DeveloperMode = guildId(bans[11]).DeveloperMode;
+  setting = DeveloperMode.useSetting();
   const items2 = [bans, stateFromStoresObject.bansVersion, searchQuery];
-  const memo = React.useMemo(() => {
+  const memo = setting.useMemo(() => {
     let iter2;
     const users = [];
-    const tmp = callback2(null != bans ? bans : []);
+    const tmp = outer1_14(null != bans ? bans : []);
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_3;
-        let tmp3 = closure_8;
-        let user = closure_8.getUser(closure_3(iter.value, 1)[0]);
+        let tmp2 = searchQuery;
+        let tmp3 = outer1_8;
+        let user = outer1_8.getUser(searchQuery(iter.value, 1)[0]);
         if (null != user) {
-          let tmp19 = closure_3;
-          let tmp7Result = 0 === closure_3.length;
+          let tmp19 = searchQuery;
+          let tmp7Result = 0 === searchQuery.length;
           if (!tmp7Result) {
-            let tmp5 = closure_1;
-            let tmp6 = closure_2;
-            let tmp8 = closure_3;
-            let tmp7 = closure_1(closure_2[12]);
+            let tmp5 = stateFromStores;
+            let tmp6 = bans;
+            let tmp8 = searchQuery;
+            let tmp7 = stateFromStores(bans[12]);
             let str = user.username;
-            let formatted = closure_3.toLowerCase();
+            let formatted = searchQuery.toLowerCase();
             tmp7Result = tmp7(formatted, str.toLowerCase());
           }
           if (!tmp7Result) {
             let tmp14Result = null != user.globalName;
             if (tmp14Result) {
-              let tmp12 = closure_1;
-              let tmp13 = closure_2;
-              let tmp15 = closure_3;
-              let tmp14 = closure_1(closure_2[12]);
+              let tmp12 = stateFromStores;
+              let tmp13 = bans;
+              let tmp15 = searchQuery;
+              let tmp14 = stateFromStores(bans[12]);
               let str2 = user.globalName;
-              let formatted1 = closure_3.toLowerCase();
+              let formatted1 = searchQuery.toLowerCase();
               tmp14Result = tmp14(formatted1, str2.toLowerCase());
             }
             tmp7Result = tmp14Result;
@@ -195,14 +197,14 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
   }, items2);
   users = memo.users;
   const items3 = [guildId];
-  const effect = React.useEffect(() => {
+  const effect = setting.useEffect(() => {
     const guildBansBatch = stateFromStores(bans[13]).fetchGuildBansBatch(guildId, 1000, null);
     return () => {
-      callback(closure_2[14]).setSearchQuery("");
+      stateFromStores(bans[14]).setSearchQuery("");
     };
   }, items3);
   const items4 = [bans, setting, stateFromStores, users];
-  const callback = React.useCallback((arg0, arg1) => {
+  const callback = setting.useCallback((arg0, arg1) => {
     const guildId = tmp;
     let value;
     if (null != bans) {
@@ -218,7 +220,7 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
         id = stateFromStores.id;
       }
       obj.guildId = id;
-      obj.icon = callback(guildId(bans[16]).Avatar, obj);
+      obj.icon = outer1_10(guildId(bans[16]).Avatar, obj);
       let username = tmp.globalName;
       if (null == username) {
         username = tmp.username;
@@ -229,38 +231,38 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
         username = tmp.username;
       }
       obj.subLabel = username;
-      obj.trailing = callback(guildId(bans[17]).TableRowArrow, {});
+      obj.trailing = outer1_10(guildId(bans[17]).TableRowArrow, {});
       obj.onPress = function onPress() {
         if (null != value) {
           let obj = {};
-          const intl4 = tmp(closure_2[18]).intl;
-          obj.label = intl4.string(tmp(closure_2[18]).t.Mp6Z2l);
+          const intl4 = guildId(bans[18]).intl;
+          obj.label = intl4.string(guildId(bans[18]).t.Mp6Z2l);
           obj.isDestructive = true;
           obj.onPress = function onPress() {
-            lib2(closure_2[13]).unbanUser(lib2.id, lib.id);
+            stateFromStores(bans[13]).unbanUser(value.id, outer1_0.id);
           };
           let flag = [obj];
-          if (closure_4) {
+          if (outer1_4) {
             obj = {};
-            const intl = tmp(closure_2[18]).intl;
-            obj.label = intl.string(tmp(closure_2[18]).t./AXYnE);
+            const intl = guildId(bans[18]).intl;
+            obj.label = intl.string(guildId(bans[18]).t["/AXYnE"]);
             obj.onPress = function onPress() {
-              lib(closure_2[19]).copy(lib.id);
-              const obj = lib(closure_2[19]);
-              lib(closure_2[20]).presentIdCopied();
+              guildId(bans[19]).copy(outer1_0.id);
+              const obj = guildId(bans[19]);
+              guildId(bans[20]).presentIdCopied();
             };
             flag.push(obj);
           }
-          let obj1 = tmp(closure_2[21]);
+          let obj1 = guildId(bans[21]);
           obj = { key: "GuildSettingsUnban" };
           obj1 = {};
-          const intl2 = tmp(closure_2[18]).intl;
+          const intl2 = guildId(bans[18]).intl;
           const obj2 = { user: tmp.username };
-          obj1.title = intl2.formatToPlainString(tmp(closure_2[18]).t.XvAG5t, obj2);
-          const string = tmp(closure_2[18]).intl.string;
+          obj1.title = intl2.formatToPlainString(guildId(bans[18]).t.XvAG5t, obj2);
+          const string = guildId(bans[18]).intl.string;
           if (null == value.reason) {
-            const intl3 = tmp(closure_2[18]).intl;
-            let reason = intl3.string(tmp(closure_2[18]).t.t+2Zci);
+            const intl3 = guildId(bans[18]).intl;
+            let reason = intl3.string(guildId(bans[18]).t["t+2Zci"]);
             const _HermesInternal = HermesInternal;
             obj1.subtitle = "" + tmp7 + ": " + reason;
             obj.header = obj1;
@@ -278,40 +280,40 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
   }, items4);
   obj = {};
   if (null == bans) {
-    let tmp16Result = callback(arg1(dependencyMap[22]).SceneLoadingIndicator, {});
+    let tmp16Result = callback(guildId(bans[22]).SceneLoadingIndicator, {});
   } else {
     if ("" === searchQuery) {
       if (0 === users.length) {
-        obj = { Illustration: arg1(dependencyMap[23]).BansEmpty };
-        const intl2 = arg1(dependencyMap[18]).intl;
-        obj.title = intl2.string(arg1(dependencyMap[18]).t.ZEiY1D);
-        const intl3 = arg1(dependencyMap[18]).intl;
-        obj.body = intl3.string(arg1(dependencyMap[18]).t.zfCsAw);
-        tmp16Result = callback(arg1(dependencyMap[16]).EmptyState, obj);
+        obj = { Illustration: guildId(bans[23]).BansEmpty };
+        let intl2 = guildId(bans[18]).intl;
+        obj.title = intl2.string(guildId(bans[18]).t.ZEiY1D);
+        let intl3 = guildId(bans[18]).intl;
+        obj.body = intl3.string(guildId(bans[18]).t.zfCsAw);
+        tmp16Result = callback(guildId(bans[16]).EmptyState, obj);
       }
     }
     obj1 = { style: tmp.containerInner };
-    const obj2 = { style: tmp.searchField };
+    let obj2 = { style: tmp.searchField };
     const obj3 = { size: "md", onChange: tmp13 };
-    obj2.children = callback(arg1(dependencyMap[24]).SearchField, obj3);
+    obj2.children = callback(guildId(bans[24]).SearchField, obj3);
     const items5 = [callback(users, obj2), ];
     if ("" !== searchQuery) {
       if (0 === users.length) {
-        const obj4 = { Illustration: arg1(dependencyMap[25]).NoResults };
-        const intl = arg1(dependencyMap[18]).intl;
-        obj4.body = intl.string(arg1(dependencyMap[18]).t.z3cK5j);
-        let tmp24 = callback(arg1(dependencyMap[16]).EmptyState, obj4);
+        const obj4 = { Illustration: guildId(bans[25]).NoResults };
+        let intl = guildId(bans[18]).intl;
+        obj4.body = intl.string(guildId(bans[18]).t.z3cK5j);
+        let tmp24 = callback(guildId(bans[16]).EmptyState, obj4);
       }
       items5[1] = tmp24;
       obj1.children = items5;
       tmp16Result = tmp16(tmp17, obj1);
     }
     const obj5 = { sections: memo.sections, itemSize: tmp4, estimatedListSize: "windowSize", renderItem: callback, insetEnd: num };
-    tmp24 = callback(importDefault(dependencyMap[26]), obj5);
-    const tmp16 = closure_11;
-    const tmp17 = users;
+    tmp24 = callback(stateFromStores(bans[26]), obj5);
+    tmp16 = closure_11;
+    tmp17 = users;
   }
-  const items6 = [tmp16Result, callback(arg1(dependencyMap[27]).NavScrim, {})];
+  const items6 = [tmp16Result, callback(guildId(bans[27]).NavScrim, {})];
   obj.children = items6;
   return closure_11(closure_12, obj);
 };

@@ -1,9 +1,11 @@
 // Module ID: 968
-// Function ID: 10446
+// Function ID: 10447
 // Name: callFrameToStackFrame
-// Dependencies: []
+// Dependencies: [810, 967]
 
 // Module 968 (callFrameToStackFrame)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.callFrameToStackFrame = function callFrameToStackFrame(location, str) {
   let replaced;
@@ -21,38 +23,40 @@ arg5.callFrameToStackFrame = function callFrameToStackFrame(location, str) {
   const obj = { filename: replaced, module: arg2(replaced) };
   let UNKNOWN_FUNCTION = location.functionName;
   if (!UNKNOWN_FUNCTION) {
-    UNKNOWN_FUNCTION = str(arg6[0]).UNKNOWN_FUNCTION;
+    UNKNOWN_FUNCTION = require(810) /* createStackParser */.UNKNOWN_FUNCTION;
   }
   obj.function = UNKNOWN_FUNCTION;
   obj.colno = sum;
   obj.lineno = sum1;
   let filenameIsInAppResult;
   if (replaced) {
-    filenameIsInAppResult = str(arg6[1]).filenameIsInApp(replaced);
-    const obj2 = str(arg6[1]);
+    filenameIsInAppResult = require(967) /* filenameIsInApp */.filenameIsInApp(replaced);
+    const obj2 = require(967) /* filenameIsInApp */;
   }
   obj.in_app = filenameIsInAppResult;
   return obj;
 };
 arg5.watchdogTimer = function watchdogTimer(arg0, arg1, arg2, arg3) {
-  const arg6 = arg2;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  let closure_2 = arg3;
   let closure_3 = arg0();
-  let closure_4 = false;
-  let closure_5 = true;
+  let c4 = false;
+  let c5 = true;
   const timerId = setInterval(() => {
     const timeMs = navigation.getTimeMs();
-    let tmp2 = false === closure_4;
+    let tmp2 = false === c4;
     if (tmp2) {
-      tmp2 = timeMs > arg1 + arg2;
+      tmp2 = timeMs > closure_0 + closure_1;
     }
     if (tmp2) {
-      closure_4 = true;
-      if (closure_5) {
-        arg3();
+      c4 = true;
+      if (c5) {
+        callback();
       }
     }
-    if (timeMs < arg1 + arg2) {
-      closure_4 = false;
+    if (timeMs < closure_0 + closure_1) {
+      c4 = false;
     }
   }, 20);
   return {

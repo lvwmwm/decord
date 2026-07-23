@@ -1,20 +1,23 @@
-// Module ID: 7717
-// Function ID: 61435
+// Module ID: 7723
+// Function ID: 61472
 // Name: isCrosspost
-// Dependencies: []
+// Dependencies: [653, 1360, 2]
 // Exports: default
 
-// Module 7717 (isCrosspost)
-const _module = require(dependencyMap[0]);
-({ MessageFlags: closure_2, MessageReferenceTypes: closure_3, MessageTypes: closure_4 } = _module);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/messages/isCrosspost.tsx");
+// Module 7723 (isCrosspost)
+import ME from "ME";
+
+let closure_2;
+let closure_3;
+let closure_4;
+({ MessageFlags: closure_2, MessageReferenceTypes: closure_3, MessageTypes: closure_4 } = ME);
+const result = require("set").fileFinishedImporting("modules/messages/isCrosspost.tsx");
 
 export default function isCrosspost(type) {
   let hasFlagResult = type.type === constants3.DEFAULT;
   if (hasFlagResult) {
-    hasFlagResult = require(dependencyMap[1]).hasFlag(type.flags, constants.IS_CROSSPOST);
-    const obj = require(dependencyMap[1]);
+    hasFlagResult = require(1360) /* hasFlag */.hasFlag(type.flags, constants.IS_CROSSPOST);
+    const obj = require(1360) /* hasFlag */;
   }
   if (hasFlagResult) {
     hasFlagResult = null != type.messageReference;

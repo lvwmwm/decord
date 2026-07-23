@@ -1,12 +1,11 @@
-// Module ID: 7072
-// Function ID: 56572
+// Module ID: 7077
+// Function ID: 56606
 // Name: getOverlayMessageAnalyticsLocation
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 7072 (getOverlayMessageAnalyticsLocation)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/overlay/getOverlayMessageAnaylticsLocation.native.tsx");
+// Module 7077 (getOverlayMessageAnalyticsLocation)
+const result = require("set").fileFinishedImporting("modules/overlay/getOverlayMessageAnaylticsLocation.native.tsx");
 
 export default function getOverlayMessageAnalyticsLocation() {
   return null;

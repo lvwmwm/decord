@@ -1,21 +1,23 @@
-// Module ID: 9862
-// Function ID: 76363
+// Module ID: 9869
+// Function ID: 76404
 // Name: useRedactableMediaAttachmentsForMessage
-// Dependencies: []
+// Dependencies: [4349, 624, 9870, 5670, 5675, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 9862 (useRedactableMediaAttachmentsForMessage)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaAttachmentsForMessage.tsx");
+// Module 9869 (useRedactableMediaAttachmentsForMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("useEnabledHarmTypesBitmaskForChannelAndAuthorId").fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaAttachmentsForMessage.tsx");
 
 export const useRedactableMediaAttachmentsForMessage = function useRedactableMediaAttachmentsForMessage(channelId, messageId, attachmentId) {
-  messageId = channelId;
+  const _require = channelId;
   const dependencyMap = messageId;
-  let closure_2 = attachmentId;
-  const items = [closure_2];
-  const stateFromStores = messageId(dependencyMap[1]).useStateFromStores(items, () => arg2.getMessage(arg0, arg1));
-  const obj = messageId(dependencyMap[1]);
-  let closure_3 = messageId(dependencyMap[2]).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  let _isNativeReflectConstruct = attachmentId;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(624).useStateFromStores(items, () => attachmentId.getMessage(closure_0, closure_1));
+  let obj = _require(624);
+  let closure_3 = _require(9870).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -31,16 +33,16 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
     }
     return found;
   }
-  const obj2 = messageId(dependencyMap[2]);
+  const obj2 = _require(9870);
 };
 export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmbedsForMessage(channelId, messageId, embedId) {
-  messageId = channelId;
+  const _require = channelId;
   const dependencyMap = messageId;
-  let closure_2 = embedId;
-  const items = [closure_2];
-  const stateFromStores = messageId(dependencyMap[1]).useStateFromStores(items, () => arg2.getMessage(arg0, arg1));
-  const obj = messageId(dependencyMap[1]);
-  let closure_3 = messageId(dependencyMap[2]).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  let _isNativeReflectConstruct = embedId;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(624).useStateFromStores(items, () => embedId.getMessage(closure_0, closure_1));
+  let obj = _require(624);
+  let closure_3 = _require(9870).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -56,5 +58,5 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
     }
     return found;
   }
-  const obj2 = messageId(dependencyMap[2]);
+  const obj2 = _require(9870);
 };

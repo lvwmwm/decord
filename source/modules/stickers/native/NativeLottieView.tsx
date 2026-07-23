@@ -1,24 +1,27 @@
-// Module ID: 7680
-// Function ID: 61345
+// Module ID: 7686
+// Function ID: 61382
 // Name: NativeLottieView
-// Dependencies: []
+// Dependencies: [31, 27, 33, 477, 7687, 116, 2]
 // Exports: default
 
-// Module 7680 (NativeLottieView)
-const _module = require(dependencyMap[0]);
-({ useEffect: closure_0, useRef: closure_1 } = _module);
-let closure_2 = importDefault(dependencyMap[0]);
-const jsx = require(dependencyMap[2]).jsx;
-const _module1 = require(dependencyMap[3]);
-if (_module1.isAndroid()) {
-  let importDefaultResult = importDefault(dependencyMap[4]);
+// Module 7686 (NativeLottieView)
+import result from "result";
+import closure_2 from "result";
+import { jsx } from "jsxProd";
+import set from "set";
+import set from "jsxProd";
+
+let closure_0;
+let closure_1;
+({ useEffect: closure_0, useRef: closure_1 } = result);
+if (set.isAndroid()) {
+  let importDefaultResult = require("__INTERNAL_VIEW_CONFIG");
 } else {
-  importDefaultResult = require(dependencyMap[1]).requireNativeComponent("NativeLottieNode");
+  importDefaultResult = require("get ActivityIndicator").requireNativeComponent("NativeLottieNode");
 }
-let closure_5 = importDefault(dependencyMap[5])({ supportedCommands: [null] });
+let closure_5 = require("codegenNativeCommands")({ supportedCommands: ["setup"] });
 const obj = { LOOP: 0, [0]: "LOOP", STILL: 1, [1]: "STILL", ONCE: 2, [2]: "ONCE" };
-const _module2 = require(dependencyMap[6]);
-const result = _module2.fileFinishedImporting("modules/stickers/native/NativeLottieView.tsx");
+result = set.fileFinishedImporting("modules/stickers/native/NativeLottieView.tsx");
 
 export default function NativeLottieView(renderMode) {
   let asset;
@@ -40,11 +43,10 @@ export default function NativeLottieView(renderMode) {
     flag = true;
   }
   let ref;
-  let React;
+  let style;
   let jsx;
-  ref = React.useRef(null);
-  let style = { asset, url, width, height, animating: flag, accessibilityLabel: renderMode.accessibilityLabel };
-  React = style;
+  ref = style.useRef(null);
+  style = { asset, url, width, height, animating: flag, accessibilityLabel: renderMode.accessibilityLabel };
   jsx = ref(style);
   LOOP(() => {
     closure_3.current = style;
@@ -68,10 +70,10 @@ export default function NativeLottieView(renderMode) {
       tmp = 0 !== height;
     }
     if (tmp) {
-      closure_5.setup(ref.current, asset, url, width, height, renderMode, animating, accessibilityLabel);
+      outer1_5.setup(ref.current, asset, url, width, height, renderMode, animating, accessibilityLabel);
     }
   }, items);
   style = { width, height, opacity };
-  return <importDefaultResult ref={ref} style={style} />;
+  return <closure_4 ref={ref} style={style} />;
 };
 export const NativeLottieRenderMode = obj;

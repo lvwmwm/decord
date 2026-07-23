@@ -1,24 +1,37 @@
-// Module ID: 14097
-// Function ID: 107037
+// Module ID: 14211
+// Function ID: 109193
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 1212, 10095, 3803, 2]
 
-// Module 14097 (toggle)
-const _module = require(dependencyMap[2]);
-const toggle = _module.createToggle({
+// Module 14211 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.aP91Ud);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.aP91Ud);
   },
-  parent: require(dependencyMap[0]).MobileSetting.APPEARANCE,
-  useValue: require(dependencyMap[3]).SearchResultExactCountEnabled.useSetting,
-  onValueChange: require(dependencyMap[3]).SearchResultExactCountEnabled.updateSetting,
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  useValue: require("explicitContentFromProto").SearchResultExactCountEnabled.useSetting,
+  onValueChange: require("explicitContentFromProto").SearchResultExactCountEnabled.updateSetting,
   useDescription: function useSearchResultExactCountDescription() {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.qx4cha);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.qx4cha);
   }
 });
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ExactSearchResultCountsSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.aP91Ud);
+  },
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  useValue: require("explicitContentFromProto").SearchResultExactCountEnabled.useSetting,
+  onValueChange: require("explicitContentFromProto").SearchResultExactCountEnabled.updateSetting,
+  useDescription: function useSearchResultExactCountDescription() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.qx4cha);
+  }
+};
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/ExactSearchResultCountsSetting.tsx");
 
 export default toggle;

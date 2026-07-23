@@ -1,27 +1,25 @@
-// Module ID: 11613
-// Function ID: 90203
+// Module ID: 11623
+// Function ID: 90252
 // Name: GuildProgressItem
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 11507, 11511, 11510, 6405, 1212, 11624, 2]
 // Exports: default
 
-// Module 11613 (GuildProgressItem)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_4 = arg1(dependencyMap[2]).createStyles({ icon: { "Null": true, "Null": true } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_progress/native/components/GuildProgressItem.tsx");
+// Module 11623 (GuildProgressItem)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ icon: { width: 32, height: 32 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_progress/native/components/GuildProgressItem.tsx");
 
 export default function GuildProgressItem(guild) {
   guild = guild.guild;
-  const arg1 = guild;
-  let obj = arg1(dependencyMap[3]);
+  let obj = guild(completed[3]);
   const iOSCompletionStates = obj.useIOSCompletionStates(guild);
   const numFinished = iOSCompletionStates.numFinished;
-  const importDefault = numFinished;
-  const completed = iOSCompletionStates.completed;
-  const dependencyMap = completed;
+  completed = iOSCompletionStates.completed;
   const totalSteps = iOSCompletionStates.totalSteps;
-  const jsx = totalSteps;
   obj = {
     onPress() {
       if (!completed) {
@@ -33,12 +31,12 @@ export default function GuildProgressItem(guild) {
   };
   obj = {};
   const tmp = callback();
-  const tmp3 = jsx;
-  obj.uri = importDefault(dependencyMap[6]);
+  const tmp3 = totalSteps;
+  obj.uri = numFinished(completed[6]);
   obj.source = obj;
   obj.iconStyle = tmp.icon;
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.title = intl.string(arg1(dependencyMap[7]).t.J2+r16);
+  const intl = guild(completed[7]).intl;
+  obj.title = intl.string(guild(completed[7]).t["J2+r16"]);
   obj.isCompleted = completed;
   let fn;
   if (numFinished > 0) {
@@ -48,5 +46,5 @@ export default function GuildProgressItem(guild) {
   }
   obj.renderEndComponent = fn;
   obj.fullWidth = true;
-  return tmp3(importDefault(dependencyMap[4]), obj);
+  return tmp3(numFinished(completed[4]), obj);
 };

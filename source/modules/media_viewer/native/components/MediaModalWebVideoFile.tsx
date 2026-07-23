@@ -1,47 +1,45 @@
-// Module ID: 8295
-// Function ID: 65498
+// Module ID: 8301
+// Function ID: 65535
 // Name: HTML
-// Dependencies: []
+// Dependencies: [57, 31, 33, 8300, 8284, 8278, 8283, 2]
 // Exports: createWebFileVideoControls
 
-// Module 8295 (HTML)
+// Module 8301 (HTML)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function HTML(arg0) {
   return "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        inset: 0;\n        width: 100%;\n        height: 100%;\n        background-color: #000;\n        object-fit: contain;\n      }\n    </style>\n    <script>" + "\nfunction onReady() {\n  const player = window.player = document.createElement('video');\n  player.controls = false;\n  player.autoplay = false;\n  player.playsInline = true;\n  player.disablePictureInPicture = true;\n  const addEvent = (name, func) => {\n    player.addEventListener(name, (e) => {\n      window.ReactNativeWebView.postMessage(\n        JSON.stringify({type: name, value: func ? func() : undefined})\n      );\n    });\n  };\n  addEvent('error', () => player.error);\n  addEvent('canplay');\n  addEvent('ended');\n  addEvent('pause');\n  addEvent('play');\n  addEvent('stalled');\n  addEvent('durationchange', () => player.duration);\n  addEvent('timeupdate', () => player.currentTime);\n  addEvent('progress', () => {\n    const ranges = player.buffered;\n    let total = 0;\n    for (let i = 0; i < ranges.length; i++) {\n      total += (ranges.end(i) - ranges.start(i));\n    }\n    return total;\n  });\n  player.src = " + JSON.stringify(arg0) + ";\n  document.body.appendChild(player);\n  player.load();\n  window.ReactNativeWebView.postMessage(JSON.stringify({type: 'loaded'}));\n}\nwindow.addEventListener('load', onReady);\n" + "</script>\n  </head>\n  <body>\n  </body>\n</html>\n";
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
 let closure_6 = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT;
 const memoResult = importAllResult.memo((visible) => {
   let controls;
   let source;
   visible = visible.visible;
-  const arg1 = visible;
   ({ source, controls } = visible);
-  const importDefault = controls;
-  let obj = { "Bool(false)": -24, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "Malaysia" };
+  let obj = { visible: 0, style: 0, source: 0, controls: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(visible, obj);
-  let closure_6;
-  let HTML;
-  const tmp3 = callback(importAllResult.useState(arg1(dependencyMap[3]).PlayerState.UNREADY), 2);
-  const first = tmp3[0];
-  const dependencyMap = first;
-  let callback = tmp3[1];
-  const tmp5 = importDefault(dependencyMap[4])(first);
-  const tmp6 = importDefault(dependencyMap[4])(visible);
-  const jsx = tmp6;
   let ref;
+  let mediaPlayerMutedStore;
+  let tmp3 = callback(importAllResult.useState(visible(first[3]).PlayerState.UNREADY), 2);
+  first = tmp3[0];
+  callback = tmp3[1];
+  let tmp5 = controls(first[4])(first);
+  let tmp6 = controls(first[4])(visible);
+  const jsx = tmp6;
+  ref = undefined;
   if (null != controls) {
     let props = controls.props;
     if (null != props) {
       ref = props.ref;
     }
   }
-  closure_6 = ref;
   const effect = importAllResult.useEffect(() => {
     const MediaViewerAnalytics = visible(first[5]).MediaViewerAnalytics;
-    const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({});
+    const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "file", action: "attempted" });
   }, []);
   props = undefined;
   if (null != controls) {
@@ -94,7 +92,7 @@ const memoResult = importAllResult.memo((visible) => {
             let tmp60 = callback(visible(first[3]).PlayerState.ERRORED);
             let num10 = 5;
             let MediaViewerAnalytics = visible(first[5]).MediaViewerAnalytics;
-            let result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ style: false, scaleAmountInPx: false, onLayout: false });
+            let result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "file", action: "errored", error: "unknown" });
           } else {
             let str5 = "ended";
             if ("ended" === type) {
@@ -259,8 +257,7 @@ const memoResult = importAllResult.memo((visible) => {
       }
     }
   }, items);
-  const mediaPlayerMutedStore = arg1(dependencyMap[6]).useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
-  HTML = mediaPlayerMutedStore;
+  mediaPlayerMutedStore = visible(first[6]).useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
   const items1 = [ref, visible, tmp6, tmp5, first, mediaPlayerMutedStore];
   const effect1 = importAllResult.useEffect(() => {
     let current;
@@ -278,7 +275,7 @@ const memoResult = importAllResult.memo((visible) => {
       current.injectJavaScript("window.player.muted = " + JSON.stringify(mediaPlayerMutedStore) + "; true;");
       let tmp11 = visible;
       if (visible) {
-        tmp11 = tmp5 === visible(first[3]).PlayerState.UNREADY;
+        tmp11 = closure_4 === visible(first[3]).PlayerState.UNREADY;
       }
       if (tmp11) {
         tmp11 = first === visible(first[3]).PlayerState.READY;
@@ -289,7 +286,7 @@ const memoResult = importAllResult.memo((visible) => {
       }
       let tmp20 = visible;
       if (visible) {
-        tmp20 = !tmp6;
+        tmp20 = !closure_5;
       }
       if (tmp20) {
         const current3 = ref.current;
@@ -299,39 +296,37 @@ const memoResult = importAllResult.memo((visible) => {
         const current4 = ref.current;
         current4.injectJavaScript("window.player.pause(); true;");
       }
-      const tmp25 = !visible && tmp6;
+      tmp25 = !visible && closure_5;
     }
   }, items1);
-  const obj2 = arg1(dependencyMap[6]);
+  let obj2 = visible(first[6]);
   obj = { ref, style: visible.style };
-  obj = { html: HTML(source.uri), baseUrl: closure_6 };
+  obj = { html: mediaPlayerMutedStore(source.uri), baseUrl: ref };
   obj.source = obj;
-  obj.baseURL = closure_6;
+  obj.baseURL = ref;
   obj.playerState = first;
   obj.onDataReceived = callback;
   obj.javaScriptEnabled = true;
   obj.javaScriptCanOpenWindowsAutomatically = true;
-  const tmp14 = HTML(source.uri);
+  let tmp14 = mediaPlayerMutedStore(source.uri);
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(dependencyMap[3]), obj, source.uri);
+  return jsx(controls(first[3]), { html: mediaPlayerMutedStore(source.uri), baseUrl: ref }, source.uri);
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/media_viewer/native/components/MediaModalWebVideoFile.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/media_viewer/native/components/MediaModalWebVideoFile.tsx");
 
 export default memoResult;
 export const createWebFileVideoControls = function createWebFileVideoControls() {
   function updateProgress() {
-    if (closure_5 > 0) {
+    if (c5 > 0) {
       if (null != callback2) {
-        callback2(closure_6 / closure_5);
+        callback2(c6 / c5);
       }
     }
   }
-  const ref = React.createRef();
-  let closure_3 = ref;
-  const React = 0;
-  let closure_5 = 0;
-  let closure_6 = 0;
-  let obj = {
+  const ref = importAllResult.createRef();
+  let c5 = 0;
+  let c6 = 0;
+  obj = {
     seek(arg0) {
       const current = ref.current;
       if (null != current) {
@@ -352,9 +347,12 @@ export const createWebFileVideoControls = function createWebFileVideoControls() 
       }
     },
     useSubscribe(arg0, arg1, arg2) {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let closure_2 = arg2;
       const layoutEffect = React.useLayoutEffect(() => {
-        if (null != arg0) {
-          arg0(closure_4, closure_5);
+        if (null != callback) {
+          callback(outer1_4, outer1_5);
         }
       }, []);
     },
@@ -364,9 +362,9 @@ export const createWebFileVideoControls = function createWebFileVideoControls() 
     ref,
     onPlayerStateChange(arg0) {
       if (null != closure_1) {
-        let tmp4 = arg0 === callback(closure_2[3]).PlayerState.PAUSED;
+        let tmp4 = arg0 === outer1_0(outer1_2[3]).PlayerState.PAUSED;
         if (!tmp4) {
-          tmp4 = arg0 === callback(closure_2[3]).PlayerState.ENDED;
+          tmp4 = arg0 === outer1_0(outer1_2[3]).PlayerState.ENDED;
         }
         closure_1(tmp4);
         const tmp = closure_1;
@@ -375,13 +373,13 @@ export const createWebFileVideoControls = function createWebFileVideoControls() 
     onCurrentSecond(arg0) {
       let closure_4 = arg0;
       if (null != callback) {
-        callback(closure_4, closure_5);
+        callback(closure_4, c5);
       }
     },
     onDuration(arg0) {
       let closure_5 = arg0;
       if (null != callback) {
-        callback(closure_4, closure_5);
+        callback(c4, closure_5);
       }
       updateProgress();
     },

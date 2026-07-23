@@ -1,12 +1,11 @@
-// Module ID: 8215
-// Function ID: 64946
+// Module ID: 8221
+// Function ID: 64983
 // Name: shouldAnimate
-// Dependencies: []
+// Dependencies: [8222, 2]
 // Exports: calculateProfileEffectHeight, shouldAnimate
 
-// Module 8215 (shouldAnimate)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectUtils.tsx");
+// Module 8221 (shouldAnimate)
+const result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectUtils.tsx");
 
 export const shouldAnimate = function shouldAnimate(start, current) {
   if (current >= start.start) {
@@ -34,5 +33,5 @@ export const shouldAnimate = function shouldAnimate(start, current) {
   }
 };
 export const calculateProfileEffectHeight = function calculateProfileEffectHeight(layerConfig, width) {
-  return width / require(dependencyMap[0]).getAssetWHRatio(layerConfig);
+  return width / require(8222) /* getPositiveValue */.getAssetWHRatio(layerConfig);
 };

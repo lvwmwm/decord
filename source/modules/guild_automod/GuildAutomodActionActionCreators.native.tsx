@@ -1,29 +1,33 @@
-// Module ID: 10996
-// Function ID: 85571
+// Module ID: 11006
+// Function ID: 85621
 // Name: getPromiseableActionHandlers
-// Dependencies: []
+// Dependencies: [31, 11007, 33, 4337, 11011, 1934, 4471, 11014, 2]
 // Exports: getPromiseableActionHandlers, openAutomodProfileQuarantineAlert, openConfirmRemoveMentionRaid, openRaidResolveModal, openSubmitFeedback
 
-// Module 10996 (getPromiseableActionHandlers)
-importAll(dependencyMap[0]);
-({ AutomodActionType: closure_3, SUBMIT_FEEDBACK_MODAL_KEY: closure_4 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_automod/GuildAutomodActionActionCreators.native.tsx");
+// Module 11006 (getPromiseableActionHandlers)
+import "result";
+import AutomodEventType from "AutomodEventType";
+import { jsx } from "jsxProd";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ AutomodActionType: closure_3, SUBMIT_FEEDBACK_MODAL_KEY: closure_4 } = AutomodEventType);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_automod/GuildAutomodActionActionCreators.native.tsx");
 
 export const getPromiseableActionHandlers = function getPromiseableActionHandlers() {
   return { [closure_3.BLOCK_MESSAGE]: null, [closure_3.FLAG_TO_CHANNEL]: null, [closure_3.USER_COMMUNICATION_DISABLED]: null };
 };
 export const openSubmitFeedback = function openSubmitFeedback(messageId, content, decisionId, channel) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(4337);
   obj = {
     onCloseModal() {
-      callback(closure_2[3]).popWithKey(closure_4);
+      outer1_1(outer1_2[3]).popWithKey(outer1_4);
     },
     automodDecision: obj
   };
   obj = { messageId, messageContent: content, decisionId, channel };
-  obj.pushLazy(content(dependencyMap[5])(dependencyMap[4], dependencyMap.paths), obj, closure_4);
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(11011, dependencyMap.paths), obj, closure_4);
 };
 export function openRaidResolveModal() {
 
@@ -32,17 +36,17 @@ export function openConfirmRemoveMentionRaid(arg0) {
 
 }
 export const openAutomodProfileQuarantineAlert = function openAutomodProfileQuarantineAlert(guildId) {
-  const arg1 = guildId;
-  let obj = importDefault(dependencyMap[6]);
+  let closure_0 = guildId;
+  let obj = importDefault(4471);
   obj = {
     importer() {
-      return arg0(paths[5])(paths[7], paths.paths).then((arg0) => {
+      return guildId(outer1_2[5])(outer1_2[7], outer1_2.paths).then((arg0) => {
         let closure_0 = arg0.default;
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
-          obj["guildId"] = closure_0;
-          return callback(closure_0, obj);
+          obj["guildId"] = outer2_0;
+          return outer3_5(closure_0, obj);
         };
       });
     }

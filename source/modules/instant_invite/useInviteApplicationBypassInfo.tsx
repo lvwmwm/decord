@@ -1,22 +1,26 @@
-// Module ID: 16374
-// Function ID: 126353
+// Module ID: 16491
+// Function ID: 128527
 // Name: useInviteApplicationBypassInfo
-// Dependencies: [555417600, 488570880, 250937344, 131072]
+// Dependencies: [3758, 653, 566, 2]
 // Exports: useInviteApplicationBypassInfo
 
-// Module 16374 (useInviteApplicationBypassInfo)
-let closure_2 = importDefault(dependencyMap[0]);
-({ GuildFeatures: closure_3, Permissions: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/instant_invite/useInviteApplicationBypassInfo.tsx");
+// Module 16491 (useInviteApplicationBypassInfo)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ GuildFeatures: closure_3, Permissions: closure_4 } = ME);
+const result = require("initialize").fileFinishedImporting("modules/instant_invite/useInviteApplicationBypassInfo.tsx");
 
 export const useInviteApplicationBypassInfo = function useInviteApplicationBypassInfo(guild) {
-  const arg1 = guild;
-  let obj = arg1(dependencyMap[2]);
-  const items = [closure_2];
+  const _require = guild;
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [guild];
   let tmp2 = null == guild;
-  const stateFromStores = obj.useStateFromStores(items, () => closure_2.can(constants.KICK_MEMBERS, arg0), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_2.can(outer1_4.KICK_MEMBERS, closure_0), items1);
   if (!tmp2) {
     const features = guild.features;
     tmp2 = !features.has(constants.MEMBER_VERIFICATION_MANUAL_APPROVAL);

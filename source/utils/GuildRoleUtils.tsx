@@ -1,53 +1,53 @@
 // Module ID: 1912
-// Function ID: 21569
+// Function ID: 21570
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [21, 665, 1913, 1914, 2]
 // Exports: doesRoleSortHigher, filterRoleDeletes, inviteRoleToDisplayData, sortGuildRoleRecords, sortInviteRoles
 
 // Module 1912 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +58,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -89,8 +89,8 @@ function compareGuildRoles(guildId, id) {
   if (guildId.id === guildId) {
     let num3 = 1;
     if (id.id === guildId) {
-      num3 = importDefault(dependencyMap[0]).compare(guildId.id, id.id);
-      const obj2 = importDefault(dependencyMap[0]);
+      num3 = importDefault(21).compare(guildId.id, id.id);
+      const obj2 = importDefault(21);
     }
     let num = num3;
   } else {
@@ -99,15 +99,14 @@ function compareGuildRoles(guildId, id) {
       if (guildId.position !== id.position) {
         let diff = id.position - guildId.position;
       } else {
-        diff = importDefault(dependencyMap[0]).compare(guildId.id, id.id);
-        const obj = importDefault(dependencyMap[0]);
+        diff = importDefault(21).compare(guildId.id, id.id);
+        const obj = importDefault(21);
       }
     }
   }
   return num;
 }
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("utils/GuildRoleUtils.tsx");
+let result = require("extractColorStringsFromServerColors").fileFinishedImporting("utils/GuildRoleUtils.tsx");
 
 export const sortGuildRoleRecords = function sortGuildRoleRecords(arr) {
   const sorted = arr.sort(compareGuildRoles);
@@ -121,8 +120,8 @@ export const sortInviteRoles = function sortInviteRoles(position, position2) {
   if (position.position !== position2.position) {
     let diff = position2.position - position.position;
   } else {
-    diff = importDefault(dependencyMap[0]).compare(position.id, position2.id);
-    const obj = importDefault(dependencyMap[0]);
+    diff = importDefault(21).compare(position.id, position2.id);
+    const obj = importDefault(21);
   }
   return diff;
 };
@@ -130,14 +129,14 @@ export const inviteRoleToDisplayData = function inviteRoleToDisplayData(id, id) 
   const obj = { id: id.id, name: id.name, guildId: id };
   let int2hexResult = null;
   if (0 !== id.color) {
-    int2hexResult = require(dependencyMap[1]).int2hex(id.color);
-    const obj2 = require(dependencyMap[1]);
+    int2hexResult = require(665) /* pad2 */.int2hex(id.color);
+    const obj2 = require(665) /* pad2 */;
   }
   obj.colorString = int2hexResult;
   let result = null;
   if (null != id.colors) {
-    result = require(dependencyMap[2]).extractColorStringsFromServerColors(id.colors);
-    const obj3 = require(dependencyMap[2]);
+    result = require(1913) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
+    const obj3 = require(1913) /* extractColorStringsFromServerColors */;
   }
   obj.colorStrings = result;
   const icon = id.icon;
@@ -171,28 +170,28 @@ export const filterRoleDeletes = function filterRoleDeletes(id, nullablePartitio
     let obj = {};
     const merged = Object.assign(nullablePartition);
     if (null != items1) {
-      const tmp2 = _createForOfIteratorHelperLoose(items1);
-      let iter = tmp2();
+      const tmp4 = _createForOfIteratorHelperLoose(items1);
+      let iter = tmp4();
       if (!iter.done) {
         do {
           let value = iter.value;
-          delete r1[r2];
-          let iter2 = tmp2();
+          delete tmp[tmp2];
+          let iter2 = tmp4();
           iter = iter2;
           done = iter2.done;
         } while (!done);
       }
     }
-    const tmp4 = _createForOfIteratorHelperLoose(items);
-    let iter3 = tmp4();
+    const tmp6 = _createForOfIteratorHelperLoose(items);
+    let iter3 = tmp6();
     if (!iter3.done) {
       do {
         value = iter3.value;
-        let tmp5 = closure_2;
-        let tmp6 = closure_3;
-        obj = closure_2(closure_3[3]);
+        let tmp7 = importAll;
+        let tmp8 = dependencyMap;
+        obj = importAll(1914);
         obj[value.id] = obj.fromServer(id, value);
-        let iter4 = tmp4();
+        let iter4 = tmp6();
         iter3 = iter4;
         done2 = iter4.done;
       } while (!done2);

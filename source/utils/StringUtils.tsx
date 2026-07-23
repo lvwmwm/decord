@@ -1,13 +1,11 @@
 // Module ID: 1832
-// Function ID: 20034
+// Function ID: 20035
 // Name: isNullOrEmpty
-// Dependencies: [5, 27]
+// Dependencies: [2, 1833]
 // Exports: isNullOrEmpty
 
 // Module 1832 (isNullOrEmpty)
-import asyncGeneratorStep from "asyncGeneratorStep";
-
-const result = asyncGeneratorStep.fileFinishedImporting("utils/StringUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/StringUtils.tsx");
 
 export const isNullOrEmpty = function isNullOrEmpty(application_id) {
   let tmp = null == application_id;
@@ -16,9 +14,9 @@ export const isNullOrEmpty = function isNullOrEmpty(application_id) {
   }
   return tmp;
 };
-export const upperCaseFirstChar = require("get ActivityIndicator").upperCaseFirstChar;
-export const getAcronym = require("get ActivityIndicator").getAcronym;
-export const cssValueToNumber = require("get ActivityIndicator").cssValueToNumber;
-export const stripDiacritics = require("get ActivityIndicator").stripDiacritics;
-export const truncateText = require("get ActivityIndicator").truncateText;
-export const normalize = require("get ActivityIndicator").normalize;
+export const upperCaseFirstChar = require("cssValueToNumber").upperCaseFirstChar;
+export const getAcronym = require("cssValueToNumber").getAcronym;
+export const cssValueToNumber = require("cssValueToNumber").cssValueToNumber;
+export const stripDiacritics = require("cssValueToNumber").stripDiacritics;
+export const truncateText = require("cssValueToNumber").truncateText;
+export const normalize = require("cssValueToNumber").normalize;

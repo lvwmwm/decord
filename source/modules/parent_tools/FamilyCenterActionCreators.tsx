@@ -1,17 +1,25 @@
-// Module ID: 6766
-// Function ID: 53115
+// Module ID: 6771
+// Function ID: 53147
 // Name: maybeFetchCollectiblesForInvoices
-// Dependencies: []
+// Dependencies: [5, 6772, 6770, 653, 6773, 686, 507, 675, 1332, 1282, 1318, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 6766 (maybeFetchCollectiblesForInvoices)
+// Module 6771 (maybeFetchCollectiblesForInvoices)
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FamilyCenterAction } from "items";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function maybeFetchCollectiblesForInvoices() {
   return _maybeFetchCollectiblesForInvoices(...arguments);
 }
-async function _maybeFetchCollectiblesForInvoices(arr, arg1) {
+async function _maybeFetchCollectiblesForInvoices(arg0, arg1) {
   let set;
   set = new Set();
-  const item = arr.forEach((invoice_items) => {
+  const item = arg0.forEach((invoice_items) => {
     if (null != invoice_items.invoice_items) {
       if (invoice_items.invoice_items.length > 0) {
         const first = invoice_items.invoice_items[0];
@@ -21,74 +29,74 @@ async function _maybeFetchCollectiblesForInvoices(arr, arg1) {
       }
     }
   });
-  yield Promise.all(Array.from(set).map((skuId) => set(closure_2[4]).maybeFetchCollectiblesProduct(skuId)));
+  yield Promise.all(Array.from(set).map((skuId) => outer3_0(outer3_2[4]).maybeFetchCollectiblesProduct(skuId)));
 }
 function maybeFetchCollectiblesForGifts() {
   return _maybeFetchCollectiblesForGifts(...arguments);
 }
-async function _maybeFetchCollectiblesForGifts(arr, arg1) {
+async function _maybeFetchCollectiblesForGifts(arg0, arg1) {
   let set;
   set = new Set();
-  const item = arr.forEach((sku_id) => {
+  const item = arg0.forEach((sku_id) => {
     if (null != sku_id.sku_id) {
       set.add(sku_id.sku_id);
     }
   });
-  yield Promise.all(Array.from(set).map((skuId) => set(closure_2[4]).maybeFetchCollectiblesProduct(skuId)));
+  yield Promise.all(Array.from(set).map((skuId) => outer3_0(outer3_2[4]).maybeFetchCollectiblesProduct(skuId)));
 }
-async function _updateLinkForUserId(linked_user_id, link_status, arg2) {
-  const HTTP = callback(closure_2[6]).HTTP;
-  let obj = { url: constants.FAMILY_CENTER_LINKED_USERS, body: obj };
-  obj = { linked_user_id, link_status, rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
-  const obj3 = callback(closure_2[6]);
+async function _updateLinkForUserId(arg0, arg1, arg2) {
+  const HTTP = outer2_0(outer2_2[6]).HTTP;
+  obj = { url: outer2_7.FAMILY_CENTER_LINKED_USERS, body: obj };
+  obj = { linked_user_id: arg0, link_status: arg1, rejectWithError: outer2_0(outer2_2[6]).rejectWithMigratedError() };
+  const obj3 = outer2_0(outer2_2[6]);
   yield HTTP.patch(obj).then((body) => {
     body = body.body;
-    callback(closure_2[5]).dispatch({ type: "FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS", linkedUsers: body });
+    outer3_1(outer3_2[5]).dispatch({ type: "FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS", linkedUsers: body });
     return body;
   });
 }
-async function _removeLinkForUserId(linked_user_id, arg1) {
-  const HTTP = linked_user_id(closure_2[6]).HTTP;
-  let obj = { url: constants.FAMILY_CENTER_LINKED_USERS, body: obj };
-  obj = { linked_user_id, rejectWithError: linked_user_id(closure_2[6]).rejectWithMigratedError() };
-  const obj3 = linked_user_id(closure_2[6]);
+async function _removeLinkForUserId(arg0, arg1) {
+  let closure_0 = arg0;
+  const HTTP = outer2_0(outer2_2[6]).HTTP;
+  obj = { url: outer2_7.FAMILY_CENTER_LINKED_USERS, body: obj };
+  obj = { linked_user_id: arg0, rejectWithError: outer2_0(outer2_2[6]).rejectWithMigratedError() };
+  const obj3 = outer2_0(outer2_2[6]);
   yield HTTP.del(obj).then((body) => {
     body = body.body;
-    let obj = callback(closure_2[5]);
-    obj = { type: "FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS", linkedUsers: body, deletedUserId: body };
+    let obj = outer3_1(outer3_2[5]);
+    obj = { type: "FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS", linkedUsers: body, deletedUserId: closure_0 };
     obj.dispatch(obj);
     return body;
   });
 }
 async function _getLinkCodeForCurrentUser() {
-  const HTTP = callback(closure_2[6]).HTTP;
-  const obj = { url: constants.FAMILY_CENTER_LINK_CODE, rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
+  const HTTP = outer2_0(outer2_2[6]).HTTP;
+  const obj = { url: outer2_7.FAMILY_CENTER_LINK_CODE, rejectWithError: outer2_0(outer2_2[6]).rejectWithMigratedError() };
   const value = HTTP.get(obj);
   yield value.then((body) => {
     body = body.body;
     const link_code = body.link_code;
-    callback(closure_2[5]).dispatch({ type: "FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS", linkCode: link_code, expiresAt: body.expires_at });
+    outer3_1(outer3_2[5]).dispatch({ type: "FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS", linkCode: link_code, expiresAt: body.expires_at });
     return link_code;
   });
 }
 async function _shareIarWithParents() {
-  const HTTP = callback(closure_2[6]).HTTP;
-  yield HTTP.post({ url: constants.FAMILY_CENTER_SHARE_IAR_WITH_PARENTS, rejectWithError: true });
+  const HTTP = outer2_0(outer2_2[6]).HTTP;
+  yield HTTP.post({ url: outer2_7.FAMILY_CENTER_SHARE_IAR_WITH_PARENTS, rejectWithError: true });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const FamilyCenterAction = arg1(dependencyMap[2]).FamilyCenterAction;
-({ AnalyticEvents: closure_6, Endpoints: closure_7 } = arg1(dependencyMap[3]));
-const obj = {
+({ AnalyticEvents: closure_6, Endpoints: closure_7 } = ME);
+let result = require("items").fileFinishedImporting("modules/parent_tools/FamilyCenterActionCreators.tsx");
+
+export default {
   initialPageLoad() {
     return callback(async () => {
       let age_group;
       let linked_users;
       let users;
-      let obj = callback2(closure_2[5]);
+      let obj = outer2_1(outer2_2[5]);
       obj.dispatch({ type: "FAMILY_CENTER_FETCH_START" });
-      const HTTP = callback(closure_2[6]).HTTP;
-      obj = { url: constants.FAMILY_CENTER_TEEN_ACTIVITY_ME, rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
+      const HTTP = outer2_0(outer2_2[6]).HTTP;
+      obj = { url: outer2_7.FAMILY_CENTER_TEEN_ACTIVITY_ME, rejectWithError: outer2_0(outer2_2[6]).rejectWithMigratedError() };
       const body = yield HTTP.get(obj).body;
       const teen_audit_log = body.teen_audit_log;
       obj = {};
@@ -208,79 +216,79 @@ const obj = {
         tmp10 = obj.invoices.length > 0;
       }
       if (tmp10) {
-        yield closure_8(obj.invoices);
+        yield outer2_8(obj.invoices);
       }
       let tmp13 = null != obj.gifts;
       if (tmp13) {
         tmp13 = obj.gifts.length > 0;
       }
       if (tmp13) {
-        yield closure_10(obj.gifts);
+        yield outer2_10(obj.gifts);
       }
-      const obj3 = callback(closure_2[6]);
-      callback2(closure_2[5]).dispatch({ type: "FAMILY_CENTER_INITIAL_LOAD", familyCenterTeenActivity: obj, linkedUsers: linked_users, users, ageGroup: age_group });
+      const obj3 = outer2_0(outer2_2[6]);
+      outer2_1(outer2_2[5]).dispatch({ type: "FAMILY_CENTER_INITIAL_LOAD", familyCenterTeenActivity: obj, linkedUsers: linked_users, users, ageGroup: age_group });
       if (tmp17) {
         const obj1 = { type: "USER_RESTRICTED_SCHEDULE_UPDATE", userId: obj.teenId, restrictedSchedule: body.restricted_schedule };
-        callback2(closure_2[5]).dispatch(obj1);
-        const obj7 = callback2(closure_2[5]);
+        outer2_1(outer2_2[5]).dispatch(obj1);
+        const obj7 = outer2_1(outer2_2[5]);
       }
       return obj;
     })();
   },
   fetchLinkedUsers() {
     return callback(async () => {
-      const HTTP = callback(closure_2[6]).HTTP;
-      let obj = { url: constants.FAMILY_CENTER_LINKED_USERS, rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
+      const HTTP = outer2_0(outer2_2[6]).HTTP;
+      let obj = { url: outer2_7.FAMILY_CENTER_LINKED_USERS, rejectWithError: outer2_0(outer2_2[6]).rejectWithMigratedError() };
       const body = yield HTTP.get(obj).body;
       obj = { linkedUsers: body.linked_users, users: body.users };
-      const obj2 = callback(closure_2[6]);
+      const obj2 = outer2_0(outer2_2[6]);
       obj = { type: "FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS" };
       const merged = Object.assign(obj);
-      callback2(closure_2[5]).dispatch(obj);
+      outer2_1(outer2_2[5]).dispatch(obj);
       return obj;
     })();
   },
   getConnectionPrerequisites(arg0, arg1) {
-    arg1 = arg0;
-    const importDefault = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     return callback(async () => {
-      const HTTP = callback(closure_2[6]).HTTP;
-      let obj = { url: constants.FAMILY_CENTER_CONNECTION_PREREQUISITES, query: obj, rejectWithError: true };
-      obj = { teen_id: callback, link_code: closure_1 };
+      const HTTP = callback(outer2_2[6]).HTTP;
+      obj = { url: outer2_7.FAMILY_CENTER_CONNECTION_PREREQUISITES, query: obj, rejectWithError: true };
+      obj = { teen_id: outer1_0, link_code: outer1_1 };
       return yield HTTP.get(obj).body;
     })();
   },
   setPendingConnection(teenId, linkCode) {
-    let obj = importDefault(dependencyMap[5]);
+    let obj = importDefault(686);
     obj = { type: "FAMILY_CENTER_PENDING_CONNECTION_SET", teenId, linkCode };
     obj.dispatch(obj);
   },
   clearPendingConnection() {
-    importDefault(dependencyMap[5]).dispatch({ type: "FAMILY_CENTER_PENDING_CONNECTION_CLEAR" });
+    importDefault(686).dispatch({ type: "FAMILY_CENTER_PENDING_CONNECTION_CLEAR" });
   },
   requestLink(userId, linkCode) {
-    linkCode = userId;
-    const importDefault = linkCode;
+    let closure_0 = userId;
+    let closure_1 = linkCode;
     return callback(async () => {
-      const HTTP = callback(closure_2[6]).HTTP;
-      let obj = { url: constants.FAMILY_CENTER_LINKED_USERS, body: obj };
-      obj = { recipient_id: callback, code: callback2, rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
+      const HTTP = callback(outer2_2[6]).HTTP;
+      obj = { url: outer2_7.FAMILY_CENTER_LINKED_USERS, body: obj };
+      obj = { recipient_id: outer1_0, code: outer1_1, rejectWithError: callback(outer2_2[6]).rejectWithMigratedError() };
       const body = yield HTTP.post(obj).body;
       obj = { linkedUsers: body.linked_users, users: body.users };
-      const obj3 = callback(closure_2[6]);
+      const obj3 = callback(outer2_2[6]);
       const merged = Object.assign(obj);
-      callback2(closure_2[5]).dispatch({ type: "FAMILY_CENTER_REQUEST_LINK_SUCCESS" });
+      callback2(outer2_2[5]).dispatch({ type: "FAMILY_CENTER_REQUEST_LINK_SUCCESS" });
       return obj;
     })();
   },
   fetchTeenActivity(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     return callback(async () => {
-      let obj = callback2(closure_2[5]);
+      let obj = outer2_1(outer2_2[5]);
       obj.dispatch({ type: "FAMILY_CENTER_FETCH_START" });
-      const result = closure_7.FAMILY_CENTER_TEEN_ACTIVITY(callback);
-      const HTTP = callback(closure_2[6]).HTTP;
-      obj = { url: result, rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
+      const result = outer2_7.FAMILY_CENTER_TEEN_ACTIVITY(outer1_0);
+      const HTTP = callback(outer2_2[6]).HTTP;
+      obj = { url: result, rejectWithError: callback(outer2_2[6]).rejectWithMigratedError() };
       const body = yield HTTP.get(obj).body;
       const teen_audit_log = body.teen_audit_log;
       obj = { teenId: teen_audit_log.teen_user_id, rangeStartId: teen_audit_log.range_start_id, totals: teen_audit_log.totals, actions: teen_audit_log.actions, users: teen_audit_log.users, guilds: teen_audit_log.guilds };
@@ -351,33 +359,33 @@ const obj = {
         invoices = obj.invoices.length > 0;
       }
       if (invoices) {
-        yield closure_8(obj.invoices);
+        yield outer2_8(obj.invoices);
       }
       gifts = obj.gifts;
       if (gifts) {
         gifts = obj.gifts.length > 0;
       }
       if (gifts) {
-        yield closure_10(obj.gifts);
+        yield outer2_10(obj.gifts);
       }
-      const obj3 = callback(closure_2[6]);
-      callback2(closure_2[5]).dispatch({ type: "FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS", familyCenterTeenActivity: obj });
+      const obj3 = callback(outer2_2[6]);
+      outer2_1(outer2_2[5]).dispatch({ type: "FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS", familyCenterTeenActivity: obj });
       if (null != body.restricted_schedule) {
-        const obj1 = { type: "USER_RESTRICTED_SCHEDULE_UPDATE", userId: callback, restrictedSchedule: body.restricted_schedule };
-        callback2(closure_2[5]).dispatch(obj1);
-        const obj6 = callback2(closure_2[5]);
+        const obj1 = { type: "USER_RESTRICTED_SCHEDULE_UPDATE", userId: outer1_0, restrictedSchedule: body.restricted_schedule };
+        outer2_1(outer2_2[5]).dispatch(obj1);
+        const obj6 = outer2_1(outer2_2[5]);
       }
       return obj;
     })();
   },
   fetchMoreTeenActivity(selectedTeenId, arg1, startId, event_id) {
-    arg1 = selectedTeenId;
-    const importDefault = arg1;
-    const dependencyMap = startId;
+    let closure_0 = selectedTeenId;
+    let closure_1 = arg1;
+    let closure_2 = startId;
     const callback = event_id;
     return callback(async () => {
-      const HTTP = callback(closure_2[6]).HTTP;
-      let obj = { url: closure_7.FAMILY_CENTER_TEEN_ACTIVITY_MORE(callback, callback2, closure_2, closure_3), rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
+      const HTTP = callback(507).HTTP;
+      let obj = { url: outer2_7.FAMILY_CENTER_TEEN_ACTIVITY_MORE(outer1_0, outer1_1, outer1_2, outer1_3), rejectWithError: callback(507).rejectWithMigratedError() };
       const teen_audit_log = yield HTTP.get(obj).body.teen_audit_log;
       obj = { teenId: teen_audit_log.teen_user_id, rangeStartId: teen_audit_log.range_start_id, actions: teen_audit_log.actions, users: teen_audit_log.users, guilds: teen_audit_log.guilds };
       let top_user_activities = teen_audit_log.top_user_activities;
@@ -430,78 +438,74 @@ const obj = {
         gifts = [];
       }
       obj.gifts = gifts;
-      const obj2 = callback(closure_2[6]);
-      obj = { action: LoadMore.LoadMore, selected_teen_id: callback, action_display_type: callback2 };
-      callback2(closure_2[7]).track(constants.FAMILY_CENTER_ACTION, obj);
-      const obj4 = callback2(closure_2[7]);
-      callback2(closure_2[5]).dispatch({ type: "FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS", familyCenterTeenActivity: obj });
+      const obj2 = callback(507);
+      obj = { action: outer2_5.LoadMore, selected_teen_id: outer1_0, action_display_type: outer1_1 };
+      callback2(675).track(outer2_6.FAMILY_CENTER_ACTION, obj);
+      const obj4 = callback2(675);
+      callback2(686).dispatch({ type: "FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS", familyCenterTeenActivity: obj });
       return teen_audit_log;
     })();
   },
   selectTab(REQUESTS) {
-    let obj = importDefault(dependencyMap[5]);
+    let obj = importDefault(686);
     obj = { type: "FAMILY_CENTER_HANDLE_TAB_SELECT", tab: REQUESTS };
     obj.dispatch(obj);
   },
   fetchTeenSettingsAndConsents(id) {
-    const arg1 = id;
-    const HTTP = arg1(dependencyMap[6]).HTTP;
-    const obj = { url: closure_7.FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS(id), rejectWithError: arg1(dependencyMap[6]).rejectWithMigratedError() };
+    const _require = id;
+    const HTTP = _require(507).HTTP;
+    let obj = { url: closure_7.FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS(id), rejectWithError: _require(507).rejectWithMigratedError() };
     const value = HTTP.get(obj);
     return value.then((body) => {
       let consents;
       let settings;
       ({ settings, consents } = body.body);
-      let obj = callback(closure_2[5]);
-      obj = { type: "FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS_FETCH_SUCCESS", userId: body, settings, consents };
+      let obj = outer1_1(outer1_2[5]);
+      obj = { type: "FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS_FETCH_SUCCESS", userId: closure_0, settings, consents };
       obj.dispatch(obj);
     });
   },
-  updateTeenSettings(arg0, arg1, arg2) {
-    arg1 = arg0;
-    const importDefault = arg1;
-    const dependencyMap = arg2;
+  updateTeenSettings(arg0, closure_0, arg2) {
+    closure_0 = arg0;
+    let closure_1 = closure_0;
+    let closure_2 = arg2;
     return callback(async () => {
-      let obj = callback(closure_2[8]);
-      const protoFieldClass = obj.getProtoFieldClass(callback(closure_2[9]).PreloadedUserSettings, callback2);
-      const settings = settings.getSettings(callback);
+      let obj = callback(1332);
+      const protoFieldClass = obj.getProtoFieldClass(callback(1282).PreloadedUserSettings, outer1_1);
+      const settings = outer2_4.getSettings(outer1_0);
       let tmp3;
       if (null != settings) {
-        tmp3 = settings[closure_1];
+        tmp3 = settings[outer1_1];
       }
-      let obj1 = callback(closure_2[8]);
-      const modifiedProto = obj1.createModifiedProto(tmp3, closure_2, protoFieldClass, callback(closure_2[9]).PreloadedUserSettings, callback2);
+      let obj1 = callback(1332);
+      const modifiedProto = obj1.createModifiedProto(tmp3, outer1_2, protoFieldClass, callback(1282).PreloadedUserSettings, outer1_1);
       if (null != modifiedProto) {
-        const HTTP = callback(closure_2[6]).HTTP;
-        obj = { url: closure_7.FAMILY_CENTER_TEEN_SETTINGS(callback) };
-        obj = { settings: callback(closure_2[10]).protoToB64(callback(closure_2[9]).PreloadedUserSettings, modifiedProto) };
+        const HTTP = callback(507).HTTP;
+        obj = { url: outer2_7.FAMILY_CENTER_TEEN_SETTINGS(outer1_0) };
+        obj = { settings: callback(1318).protoToB64(callback(1282).PreloadedUserSettings, modifiedProto) };
         obj.body = obj;
-        const obj7 = callback(closure_2[10]);
-        obj.rejectWithError = callback(closure_2[6]).rejectWithMigratedError();
-        const obj8 = callback(closure_2[6]);
-        obj1 = { type: "FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS", userId: callback, settings: yield HTTP.patch(obj).body.settings };
-        callback2(closure_2[5]).dispatch(obj1);
-        const obj3 = callback2(closure_2[5]);
+        const obj7 = callback(1318);
+        obj.rejectWithError = callback(507).rejectWithMigratedError();
+        const obj8 = callback(507);
+        obj1 = { type: "FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS", userId: outer1_0, settings: yield HTTP.patch(obj).body.settings };
+        callback2(686).dispatch(obj1);
+        const obj3 = callback2(686);
       }
     })();
   },
   updateTeenConsents(selectedTeenId, items1, items2) {
-    items1 = selectedTeenId;
-    const HTTP = items1(dependencyMap[6]).HTTP;
-    let obj = { url: closure_7.FAMILY_CENTER_TEEN_CONSENTS(selectedTeenId), body: obj };
-    obj = { grant: items1, revoke: items2, rejectWithError: items1(dependencyMap[6]).rejectWithMigratedError() };
-    const obj3 = items1(dependencyMap[6]);
+    const _require = selectedTeenId;
+    const HTTP = _require(507).HTTP;
+    obj = { url: closure_7.FAMILY_CENTER_TEEN_CONSENTS(selectedTeenId), body: obj };
+    obj = { grant: items1, revoke: items2, rejectWithError: _require(507).rejectWithMigratedError() };
+    const obj3 = _require(507);
     return HTTP.patch(obj).then((body) => {
-      let obj = callback(closure_2[5]);
-      obj = { type: "FAMILY_CENTER_TEEN_CONSENTS_UPDATE_SUCCESS", userId: body, consents: body.body };
+      let obj = outer1_1(outer1_2[5]);
+      obj = { type: "FAMILY_CENTER_TEEN_CONSENTS_UPDATE_SUCCESS", userId: closure_0, consents: body.body };
       obj.dispatch(obj);
     });
   }
 };
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/parent_tools/FamilyCenterActionCreators.tsx");
-
-export default obj;
 export const updateLinkForUserId = function updateLinkForUserId(arg0, ACTIVE) {
   return _updateLinkForUserId(...arguments);
 };

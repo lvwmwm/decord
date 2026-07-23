@@ -1,21 +1,36 @@
-// Module ID: 5625
-// Function ID: 48012
+// Module ID: 5630
+// Function ID: 48039
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: []
+// Dependencies: [5, 1908, 5054, 1348, 1910, 1838, 653, 1355, 5631, 5640, 5611, 5643, 5645, 5607, 5646, 5647, 4041, 5648, 5609, 1327, 5690, 4140, 4321, 2]
 // Exports: default
 
-// Module 5625 (_isAccessibleChannelOrThreadPath)
+// Module 5630 (_isAccessibleChannelOrThreadPath)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import set from "set";
+import set from "_isNativeReflectConstruct";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_9;
+const require = arg1;
 async function _isAccessibleChannelOrThreadPath(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let channelId;
     let guildId;
     ({ guildId, channelId } = arg0);
     yield undefined;
-    const guild = guild.getGuild(guildId);
-    const unsafeMutableRoles = unsafeMutableRoles.getUnsafeMutableRoles(guildId);
+    const guild = outer2_8.getGuild(guildId);
+    const unsafeMutableRoles = outer2_7.getUnsafeMutableRoles(guildId);
     if (null == guild) {
-      if (guildId !== closure_10) {
-        if (channelId !== constants2.GAME_SHOP) {
+      if (guildId !== outer2_10) {
+        if (channelId !== outer2_12.GAME_SHOP) {
           return false;
         }
       }
@@ -23,112 +38,106 @@ async function _isAccessibleChannelOrThreadPath(arg0, arg1) {
     if (null == channelId) {
       return true;
     } else {
-      if (callback3(channelId)) {
-        if (constants2.ROLE_SUBSCRIPTIONS === channelId) {
-          return callback(closure_2[8]).areRoleSubscriptionsVisibleInGuild(guildId, unsafeMutableRoles);
-        } else if (constants2.SERVER_MONETIZATION_ONBOARDING === channelId) {
+      if (outer2_11(channelId)) {
+        if (outer2_12.ROLE_SUBSCRIPTIONS === channelId) {
+          return outer2_0(outer2_2[8]).areRoleSubscriptionsVisibleInGuild(guildId, unsafeMutableRoles);
+        } else if (outer2_12.SERVER_MONETIZATION_ONBOARDING === channelId) {
           let result = null != guild;
           if (result) {
-            result = callback(closure_2[9]).canUserSeeMonetizationOnboarding(guild);
-            const obj12 = callback(closure_2[9]);
+            result = outer2_0(outer2_2[9]).canUserSeeMonetizationOnboarding(guild);
+            const obj13 = outer2_0(outer2_2[9]);
           }
           return result;
-        } else if (constants2.GAME_SHOP === channelId) {
-          let tmp48 = guild;
+        } else if (outer2_12.GAME_SHOP === channelId) {
+          let tmp50 = guild;
           if (null == guild) {
             let obj = { id: guildId, type: "id-only" };
-            tmp48 = obj;
+            tmp50 = obj;
           }
-          return callback(closure_2[10]).hasSocialLayerStorefront(tmp48);
-        } else if (constants2.GUILD_SHOP === channelId) {
-          return callback(closure_2[11]).isGuildShopVisibleInGuild(guild, unsafeMutableRoles);
-        } else if (constants2.MEMBER_APPLICATIONS === channelId) {
-          return callback(closure_2[12]).canReviewGuildMemberApplications(guildId);
-        } else if (constants2.GUILD_HOME === channelId) {
-          return callback(closure_2[13]).canSeeOnboardingHome(guildId);
-        } else if (constants2.CHANNEL_BROWSER === channelId) {
+          return outer2_0(outer2_2[10]).hasSocialLayerStorefront(tmp50);
+        } else if (outer2_12.GUILD_SHOP === channelId) {
+          return outer2_0(outer2_2[11]).isGuildShopVisibleInGuild(guild, unsafeMutableRoles);
+        } else if (outer2_12.MEMBER_APPLICATIONS === channelId) {
+          return outer2_0(outer2_2[12]).canReviewGuildMemberApplications(guildId);
+        } else if (outer2_12.GUILD_HOME === channelId) {
+          return outer2_0(outer2_2[13]).canSeeOnboardingHome(guildId);
+        } else if (outer2_12.CHANNEL_BROWSER === channelId) {
           let hasItem = null != guild;
           if (hasItem) {
             const features3 = guild.features;
-            hasItem = features3.has(constants.COMMUNITY);
+            hasItem = features3.has(outer2_9.COMMUNITY);
           }
           return hasItem;
-        } else if (constants2.GUILD_ONBOARDING === channelId) {
-          return closure_5.shouldShowOnboarding(guildId);
-        } else if (constants2.CUSTOMIZE_COMMUNITY === channelId) {
+        } else if (outer2_12.GUILD_ONBOARDING === channelId) {
+          return outer2_5.shouldShowOnboarding(guildId);
+        } else if (outer2_12.CUSTOMIZE_COMMUNITY === channelId) {
           let hasItem1 = null != guild;
           if (hasItem1) {
             const features2 = guild.features;
-            hasItem1 = features2.has(constants.COMMUNITY);
+            hasItem1 = features2.has(outer2_9.COMMUNITY);
           }
           return hasItem1;
-        } else if (constants2.MEMBER_SAFETY === channelId) {
-          return callback(closure_2[14]).canAccessMemberSafetyPage(guildId);
-        } else if (constants2.GUILD_BOOSTS === channelId) {
+        } else if (outer2_12.MEMBER_SAFETY === channelId) {
+          return outer2_0(outer2_2[14]).canAccessMemberSafetyPage(guildId);
+        } else if (outer2_12.GUILD_BOOSTS === channelId) {
           return true;
-        } else if (constants2.REPORT_TO_MOD === channelId) {
-          let tmp30 = null != guild;
-          if (tmp30) {
-            tmp30 = callback2(closure_2[15])(guild);
+        } else if (outer2_12.REPORT_TO_MOD === channelId) {
+          let tmp32 = null != guild;
+          if (tmp32) {
+            tmp32 = outer2_1(outer2_2[15])(guild);
           }
-          return tmp30;
-        } else if (constants2.GAME_SERVERS === channelId) {
-          let hasItem2 = callback(closure_2[16]).getGameServerEnabled(guildId, "isAccessibleChannelOrThreadPath") && null != guild;
+          return tmp32;
+        } else if (outer2_12.GAME_SERVERS === channelId) {
+          let hasItem2 = outer2_0(outer2_2[16]).getGameServerEnabled(guildId, "isAccessibleChannelOrThreadPath") && null != guild;
           if (hasItem2) {
             const features = guild.features;
-            hasItem2 = features.has(constants.GAME_SERVERS);
+            hasItem2 = features.has(outer2_9.GAME_SERVERS);
           }
           return hasItem2;
-        } else if (constants2.GUILD_OFFICIAL_MESSAGES === channelId) {
-          return callback(closure_2[17]).isGuildOfficialMessagesEnabled(guild, "isAccessibleChannelOrThreadPath");
+        } else if (outer2_12.GUILD_OFFICIAL_MESSAGES === channelId) {
+          return outer2_0(outer2_2[17]).isGuildOfficialMessagesEnabled(guild, "isAccessibleChannelOrThreadPath");
+        } else if (outer2_12.GUILD_SPACE === channelId) {
+          return outer2_0(outer2_2[18]).canUseGuildSpace(guild, "isAccessibleChannelOrThreadPath");
         } else {
-          callback(closure_2[18]).assertNever(channelId);
-          const obj14 = callback(closure_2[18]);
+          outer2_0(outer2_2[19]).assertNever(channelId);
+          const obj15 = outer2_0(outer2_2[19]);
         }
       }
-      const channel = store.getChannel(channelId);
+      const channel = outer2_6.getChannel(channelId);
       let tmp9 = null != channel;
       let tmp10 = channel;
       if (!tmp9) {
-        obj = callback2(closure_2[19]);
+        obj = outer2_1(outer2_2[20]);
         yield obj.loadThread(channelId);
-        let channel1 = store.getChannel(channelId);
+        let channel1 = outer2_6.getChannel(channelId);
         let tmp16 = null == channel1;
         if (tmp16) {
-          tmp16 = guildId === closure_10;
+          tmp16 = guildId === outer2_10;
         }
         if (tmp16) {
-          channel1 = yield callback2(closure_2[20]).openChannel(channelId);
-          const obj2 = callback2(closure_2[20]);
+          channel1 = yield outer2_1(outer2_2[21]).openChannel(channelId);
+          const obj2 = outer2_1(outer2_2[21]);
         }
         tmp9 = null != channel1;
         tmp10 = channel1;
       }
       if (tmp9) {
-        let canViewChannelResult = callback(closure_2[21]).canViewChannel(tmp10);
+        let canViewChannelResult = outer2_0(outer2_2[22]).canViewChannel(tmp10);
         if (!canViewChannelResult) {
-          canViewChannelResult = channelGatedAndVisible.isChannelGatedAndVisible(guildId, channelId);
+          canViewChannelResult = outer2_4.isChannelGatedAndVisible(guildId, channelId);
         }
         tmp9 = canViewChannelResult;
-        const obj3 = callback(closure_2[21]);
+        const obj3 = outer2_0(outer2_2[22]);
       }
       return tmp9;
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ GuildFeatures: closure_9, ME: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-({ isStaticChannelRoute: closure_11, StaticChannelRoute: closure_12 } = arg1(dependencyMap[7]));
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/links/isAccessibleChannelOrThreadPath.tsx");
+({ GuildFeatures: closure_9, ME: closure_10 } = ME);
+({ isStaticChannelRoute: closure_11, StaticChannelRoute: closure_12 } = set);
+let result = set.fileFinishedImporting("modules/links/isAccessibleChannelOrThreadPath.tsx");
 
 export default function isAccessibleChannelOrThreadPath() {
   return _isAccessibleChannelOrThreadPath(...arguments);

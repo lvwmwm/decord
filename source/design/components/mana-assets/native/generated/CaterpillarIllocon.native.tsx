@@ -1,13 +1,13 @@
-// Module ID: 5931
-// Function ID: 49829
+// Module ID: 5936
+// Function ID: 49858
 // Name: CaterpillarIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 5937, 2]
 // Exports: CaterpillarIllocon
 
-// Module 5931 (CaterpillarIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CaterpillarIllocon.native.tsx");
+// Module 5936 (CaterpillarIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CaterpillarIllocon.native.tsx");
 
 export const CaterpillarIllocon = function CaterpillarIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const CaterpillarIllocon = function CaterpillarIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5937) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const CaterpillarIllocon = function CaterpillarIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

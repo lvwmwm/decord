@@ -1,12 +1,13 @@
-// Module ID: 10110
-// Function ID: 78267
+// Module ID: 10118
+// Function ID: 78307
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 10110 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/chat/native/ChatLoadingIndicatorExperiment.tsx");
+// Module 10118 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-01-chat-loading-indicator", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/chat/native/ChatLoadingIndicatorExperiment.tsx");
 
 export const ChatLoadingIndicatorExperiment = apexExperiment;

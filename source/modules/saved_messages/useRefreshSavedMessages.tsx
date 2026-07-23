@@ -1,15 +1,17 @@
-// Module ID: 9910
-// Function ID: 76679
+// Module ID: 9918
+// Function ID: 76724
 // Name: useRefreshSavedMessages
-// Dependencies: []
+// Dependencies: [31, 9913, 2]
 // Exports: default
 
-// Module 9910 (useRefreshSavedMessages)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/saved_messages/useRefreshSavedMessages.tsx");
+// Module 9918 (useRefreshSavedMessages)
+import result from "result";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/saved_messages/useRefreshSavedMessages.tsx");
 
 export default function useRefreshSavedMessages() {
   const effect = React.useEffect(() => {
-    const andUpdateSavedMessages = callback(closure_1[1]).fetchAndUpdateSavedMessages();
+    const andUpdateSavedMessages = outer1_0(outer1_1[1]).fetchAndUpdateSavedMessages();
   }, []);
 };

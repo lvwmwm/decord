@@ -1,79 +1,83 @@
-// Module ID: 9177
-// Function ID: 71897
+// Module ID: 9184
+// Function ID: 71938
 // Name: ChangeEmailCollectReasons
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 9185, 653, 33, 4130, 689, 566, 1456, 675, 668, 7519, 7518, 9186, 4126, 1212, 4543, 2]
 // Exports: default
 
-// Module 9177 (ChangeEmailCollectReasons)
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[1]);
-({ CHANGE_EMAIL_REASONS_ORDER: closure_7, SUSPICIOUS_CHANGE_EMAIL_REASONS: closure_8 } = arg1(dependencyMap[3]));
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const tmp3 = arg1(dependencyMap[3]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOW };
-obj.background = obj;
-const tmp4 = arg1(dependencyMap[5]);
-obj.container = { paddingVertical: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-const obj1 = { paddingVertical: importDefault(dependencyMap[7]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-obj.radioGroup = { paddingTop: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: 38 };
-obj.title = { textAlign: "center" };
-let closure_12 = obj.createStyles(obj);
-const obj2 = { paddingTop: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: 38 };
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/verification/native/components/ChangeEmailCollectReasons.tsx");
+// Module 9184 (ChangeEmailCollectReasons)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ChangeEmailReasons from "ChangeEmailReasons";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_4;
+let closure_5;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+({ CHANGE_EMAIL_REASONS_ORDER: closure_7, SUSPICIOUS_CHANGE_EMAIL_REASONS: closure_8 } = ChangeEmailReasons);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.background = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.container = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj1 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.radioGroup = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: 38 };
+_createForOfIteratorHelperLoose.title = { textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: 38 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/verification/native/components/ChangeEmailCollectReasons.tsx");
 
 export default function ChangeEmailCollectReasons(changeEmailReason) {
   changeEmailReason = changeEmailReason.changeEmailReason;
-  const arg1 = changeEmailReason;
   const setChangeEmailReason = changeEmailReason.setChangeEmailReason;
-  const importDefault = setChangeEmailReason;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = arg1(dependencyMap[9]);
-  const navigation = obj1.useNavigation();
-  const dependencyMap = navigation;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = changeEmailReason(navigation[8]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
+  let obj1 = changeEmailReason(navigation[9]);
+  navigation = obj1.useNavigation();
   const items1 = [navigation, changeEmailReason];
   const items2 = [setChangeEmailReason];
-  const callback = React.useCallback(() => {
+  const callback = callback1.useCallback(() => {
     let obj = setChangeEmailReason(navigation[10]);
     obj = { change_email_reason_enum: changeEmailReason };
-    obj.track(constants.USER_ACCOUNT_EMAIL_CHANGE_REASON_CONTINUE, obj);
+    obj.track(outer1_9.USER_ACCOUNT_EMAIL_CHANGE_REASON_CONTINUE, obj);
     if (null != changeEmailReason) {
-      if (set.has(changeEmailReason)) {
+      if (outer1_8.has(changeEmailReason)) {
         navigation.push(changeEmailReason(navigation[11]).VerificationModalScenes.CHANGE_EMAIL_WARNING);
       }
     }
     navigation.push(changeEmailReason(navigation[11]).VerificationModalScenes.ENTER_EMAIL);
   }, items1);
-  const callback1 = React.useCallback((change_email_reason_enum) => {
+  callback1 = callback1.useCallback((change_email_reason_enum) => {
     let obj = setChangeEmailReason(navigation[10]);
     obj = { change_email_reason_enum };
-    obj.track(constants.USER_ACCOUNT_EMAIL_CHANGE_REASON_SELECTED, obj);
+    obj.track(outer1_9.USER_ACCOUNT_EMAIL_CHANGE_REASON_SELECTED, obj);
     setChangeEmailReason(change_email_reason_enum);
   }, items2);
-  const React = callback1;
   const items3 = [changeEmailReason, callback1];
   let tmp7 = null;
   if (null != stateFromStores) {
-    obj = { "Bool(true)": true, "Bool(true)": true, style: tmp.background };
+    obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: tmp.background };
     obj = { style: tmp.container };
-    obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
-    const intl = arg1(dependencyMap[16]).intl;
-    obj1.children = intl.string(arg1(dependencyMap[16]).t.41NIIh);
-    const items4 = [callback(arg1(dependencyMap[15]).Text, obj1), , ];
+    obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+    const intl = changeEmailReason(navigation[16]).intl;
+    obj1.children = intl.string(changeEmailReason(navigation[16]).t["41NIIh"]);
+    const items4 = [callback(changeEmailReason(navigation[15]).Text, obj1), , ];
     const obj2 = { style: tmp.radioGroup, children: tmp6 };
     items4[1] = callback(closure_4, obj2);
-    const obj3 = { onPress: callback };
-    const intl2 = arg1(dependencyMap[16]).intl;
-    obj3.text = intl2.string(arg1(dependencyMap[16]).t.XiOHRX);
+    const obj3 = { size: "md", variant: "primary", onPress: callback };
+    const intl2 = changeEmailReason(navigation[16]).intl;
+    obj3.text = intl2.string(changeEmailReason(navigation[16]).t.XiOHRX);
     obj3.disabled = null == changeEmailReason;
-    items4[2] = callback(arg1(dependencyMap[17]).Button, obj3);
+    items4[2] = callback(changeEmailReason(navigation[17]).Button, obj3);
     obj.children = items4;
     obj.children = callback2(closure_4, obj);
     tmp7 = callback(closure_5, obj);

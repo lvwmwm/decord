@@ -1,47 +1,51 @@
-// Module ID: 7853
-// Function ID: 62604
+// Module ID: 7859
+// Function ID: 62641
 // Name: useFetchPurchases
-// Dependencies: []
+// Dependencies: [57, 31, 4044, 6790, 624, 6773, 7860, 2]
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases
 
-// Module 7853 (useFetchPurchases)
+// Module 7859 (useFetchPurchases)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function useFetchPurchases(flag) {
   if (flag === undefined) {
     flag = false;
   }
-  const arg1 = flag;
-  let importDefault;
-  let dependencyMap;
-  let callback;
+  let stateFromStores;
+  let isFetching;
+  let fetchPurchasesError;
   let hasPreviouslyFetched;
-  let callback2;
-  let closure_6;
+  let callback;
+  let _isNativeReflectConstruct;
   let closure_7;
-  const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => ref2.hasLoadedExperiments);
-  importDefault = stateFromStores;
-  const obj = arg1(dependencyMap[4]);
+  let items = [_isNativeReflectConstruct];
+  stateFromStores = flag(isFetching[4]).useStateFromStores(items, () => ref2.hasLoadedExperiments);
+  let obj = flag(isFetching[4]);
   const items1 = [closure_7];
-  const isClaiming = callback(arg1(dependencyMap[4]).useStateFromStoresArray(items1, () => {
+  const isClaiming = fetchPurchasesError(flag(isFetching[4]).useStateFromStoresArray(items1, () => {
     const items = [closure_7.isFetching, closure_7.isClaiming, closure_7.fetchError, closure_7.claimError, closure_7.purchases, closure_7.hasPreviouslyFetched];
     return items;
   }), 6);
-  const isFetching = isClaiming[0];
-  dependencyMap = isFetching;
-  const fetchPurchasesError = isClaiming[2];
-  callback = fetchPurchasesError;
+  isFetching = isClaiming[0];
+  fetchPurchasesError = isClaiming[2];
   hasPreviouslyFetched = isClaiming[5];
-  callback2 = callback2(closure_7.hasPreviouslyFetched);
+  callback = callback(closure_7.hasPreviouslyFetched);
   const items2 = [hasPreviouslyFetched];
   hasPreviouslyFetched(() => {
     closure_5.current = hasPreviouslyFetched;
   }, items2);
-  closure_6 = callback2(closure_7.fetchError);
+  _isNativeReflectConstruct = callback(closure_7.fetchError);
   const items3 = [fetchPurchasesError];
   hasPreviouslyFetched(() => {
-    closure_6.current = fetchPurchasesError;
+    _isNativeReflectConstruct.current = fetchPurchasesError;
   }, items3);
-  closure_7 = callback2(closure_7.isFetching);
+  closure_7 = callback(closure_7.isFetching);
   const items4 = [isFetching];
   hasPreviouslyFetched(() => {
     closure_7.current = isFetching;
@@ -96,7 +100,7 @@ function useFetchCollectiblesCategoriesAndPurchases(paymentGateway) {
     countryCode = paymentGateway.countryCode;
   }
   obj.countryCode = countryCode;
-  const tmp2Result = importDefault(dependencyMap[6])(obj, arg1);
+  const tmp2Result = importDefault(7860)(obj, arg1);
   const isFetching = tmp2Result.isFetching;
   let stalePurchasesOK;
   ({ categories, fetchCategoriesError, refreshCategories } = tmp2Result);
@@ -124,12 +128,8 @@ function useFetchCollectiblesCategoriesAndPurchases(paymentGateway) {
   obj.hasPreviouslyFetched = tmp7Result.hasPreviouslyFetched;
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ useEffect: closure_4, useRef: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesCategoriesAndPurchases.tsx");
+({ useEffect: closure_4, useRef: closure_5 } = result);
+result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesCategoriesAndPurchases.tsx");
 
 export default useFetchCollectiblesCategoriesAndPurchases;
 export { useFetchPurchases };

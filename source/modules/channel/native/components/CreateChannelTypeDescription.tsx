@@ -1,28 +1,29 @@
-// Module ID: 8410
-// Function ID: 66996
+// Module ID: 8416
+// Function ID: 67033
 // Name: CreateChannelTypeDescription
-// Dependencies: []
+// Dependencies: [31, 27, 8417, 653, 33, 8418, 5132, 4126, 1212, 2]
 // Exports: default
 
-// Module 8410 (CreateChannelTypeDescription)
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const GuildProfileFetchStatus = arg1(dependencyMap[2]).GuildProfileFetchStatus;
-const ChannelTypes = arg1(dependencyMap[3]).ChannelTypes;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/channel/native/components/CreateChannelTypeDescription.tsx");
+// Module 8416 (CreateChannelTypeDescription)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { GuildProfileFetchStatus } from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel/native/components/CreateChannelTypeDescription.tsx");
 
 export default function CreateChannelTypeDescription(guildId) {
   let fetchGuildProfile;
   let guildProfile;
   guildId = guildId.guildId;
-  let obj = arg1(dependencyMap[5]);
+  let obj = fetchGuildProfile(8418);
   guildProfile = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile);
-  const arg1 = fetchGuildProfile;
   let hasItem = null != guildProfile;
   if (hasItem) {
-    const VISIBLE = arg1(dependencyMap[6]).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = fetchGuildProfile(5132).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = !tmp2;
@@ -39,11 +40,11 @@ export default function CreateChannelTypeDescription(guildId) {
   let tmp9 = null;
   if (tmp6) {
     obj = {};
-    obj = {};
-    const intl = arg1(dependencyMap[8]).intl;
-    obj.children = intl.string(arg1(dependencyMap[8]).t.2Ab4Id);
-    obj.children = jsx(arg1(dependencyMap[7]).Text, obj);
-    tmp9 = <View {...obj} />;
+    obj = { variant: "text-sm/normal", color: "text-subtle" };
+    const intl = fetchGuildProfile(1212).intl;
+    obj.children = intl.string(fetchGuildProfile(1212).t["2Ab4Id"]);
+    obj.children = jsx(fetchGuildProfile(4126).Text, { variant: "text-sm/normal", color: "text-subtle" });
+    tmp9 = <View variant="text-sm/normal" color="text-subtle" />;
   }
   return tmp9;
 };

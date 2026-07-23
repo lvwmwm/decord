@@ -1,15 +1,15 @@
-// Module ID: 4530
-// Function ID: 39784
+// Module ID: 4534
+// Function ID: 39816
 // Name: useVisualEffectViewOverrides
-// Dependencies: []
+// Dependencies: [621, 682, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 4530 (useVisualEffectViewOverrides)
+// Module 4534 (useVisualEffectViewOverrides)
+import keys from "keys";
+
 let closure_2 = {};
-const _module = require(dependencyMap[0]);
-let closure_3 = _module.create(() => closure_2);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
+let closure_3 = keys.create(() => closure_2);
+const result = require("set").fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
 
 export const useVisualEffectViewOverrides = function useVisualEffectViewOverrides() {
   return state();
@@ -18,9 +18,9 @@ export const getVisualEffectViewOverrides = function getVisualEffectViewOverride
   return state.getState();
 };
 export const setVisualEffectViewOverides = function setVisualEffectViewOverides(arg0) {
-  const require = arg0;
-  require(dependencyMap[1]).batchUpdates(() => state.setState(arg0));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_3.setState(closure_0));
 };
 export const clearVisualEffectViewOverrides = function clearVisualEffectViewOverrides() {
-  require(dependencyMap[1]).batchUpdates(() => state.setState(closure_2));
+  require(682) /* batchUpdates */.batchUpdates(() => outer1_3.setState(outer1_2));
 };

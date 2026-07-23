@@ -1,23 +1,24 @@
-// Module ID: 8466
-// Function ID: 67545
+// Module ID: 8472
+// Function ID: 67582
 // Name: _navigateToEvent
-// Dependencies: []
+// Dependencies: [5, 1348, 4202, 3947, 1354, 653, 44, 7477, 7482, 4944, 1198, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 8466 (_navigateToEvent)
+// Module 8472 (_navigateToEvent)
+import ME from "ME";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { GuildScheduledEventEntityTypes as closure_8 } from "GUILD_EVENT_MAX_NAME_LENGTH";
+import { Routes } from "ME";
+
+const require = arg1;
 function _navigateToEvent() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _navigateToEvent = obj;
   return obj(...arguments);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).GuildScheduledEventEntityTypes;
-const Routes = arg1(dependencyMap[5]).Routes;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_scheduled_events/StartEventPlatformUtils.native.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/StartEventPlatformUtils.native.tsx");
 
 export const navigateToEvent = function navigateToEvent(arg0, arg1) {
   return _navigateToEvent(...arguments);

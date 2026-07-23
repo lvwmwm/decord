@@ -1,23 +1,23 @@
 // Module ID: 602
 // Function ID: 7033
 // Name: arrayLikeKeys
-// Dependencies: [335544322, 738197504, 973078528, 989855746]
+// Dependencies: [591, 603, 605, 607, 611, 612]
 
 // Module 602 (arrayLikeKeys)
 
 export default function arrayLikeKeys(obj) {
-  const tmp = require(dependencyMap[0])(obj);
+  const tmp = require(591)(obj);
   let tmp2 = !tmp;
   if (tmp2) {
-    tmp2 = require(dependencyMap[1])(obj);
+    tmp2 = require(603) /* baseIsArguments */(obj);
   }
   let tmp5 = !tmp && !tmp2;
   if (tmp5) {
-    tmp5 = require(dependencyMap[2])(obj);
+    tmp5 = require(605) /* isBuffer */(obj);
   }
   let tmp8 = !tmp && !tmp2 && !tmp5;
   if (tmp8) {
-    tmp8 = require(dependencyMap[3])(obj);
+    tmp8 = require(607)(obj);
   }
   let tmp11 = tmp;
   if (!tmp) {
@@ -31,7 +31,7 @@ export default function arrayLikeKeys(obj) {
   }
   if (tmp11) {
     const _String = String;
-    let items = require(dependencyMap[4])(obj.length, String);
+    let items = require(611) /* baseTimes */(obj.length, String);
   } else {
     items = [];
   }
@@ -39,8 +39,8 @@ export default function arrayLikeKeys(obj) {
     let tmp27 = key10047;
     let tmp17 = !arg1;
     if (tmp17) {
-      let tmp16 = closure_2;
-      tmp17 = !closure_2.call(arg0, key10047);
+      let tmp16 = hasOwnProperty;
+      tmp17 = !hasOwnProperty.call(arg0, key10047);
     }
     if (!tmp17) {
       let tmp18 = tmp11;
@@ -72,9 +72,9 @@ export default function arrayLikeKeys(obj) {
           tmp19 = tmp22;
         }
         if (!tmp19) {
-          let tmp24 = closure_0;
-          let tmp25 = closure_1;
-          tmp19 = closure_0(closure_1[5])(key10047, tmp15);
+          let tmp24 = require;
+          let tmp25 = dependencyMap;
+          tmp19 = require(612) /* isIndex */(key10047, tmp15);
         }
         tmp18 = tmp19;
       }
@@ -84,7 +84,7 @@ export default function arrayLikeKeys(obj) {
       continue;
     } else {
       let arr = items.push(key10047);
-      // continue
+      continue;
     }
     continue;
   }

@@ -1,22 +1,24 @@
-// Module ID: 13886
-// Function ID: 105043
+// Module ID: 14000
+// Function ID: 107199
 // Name: useConnectionBannerHeight
-// Dependencies: []
+// Dependencies: [12612, 13997, 12613, 566, 2]
 // Exports: useConnectionBannerHeight
 
-// Module 13886 (useConnectionBannerHeight)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[0]).ConnectivityIndicatorState;
-const CONNECTION_BANNER_HEIGHT = arg1(dependencyMap[1]).CONNECTION_BANNER_HEIGHT;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useConnectionBannerHeight.tsx");
+// Module 14000 (useConnectionBannerHeight)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ConnectivityIndicatorState as closure_4 } from "_isNativeReflectConstruct";
+import { CONNECTION_BANNER_HEIGHT } from "CONNECTION_BANNER_HEIGHT";
+
+const require = arg1;
+const result = require("apexExperiment").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useConnectionBannerHeight.tsx");
 
 export const useConnectionBannerHeight = function useConnectionBannerHeight() {
   let hidden;
   let timeoutMs;
-  const config = importDefault(dependencyMap[2]).useConfig({ location: "useConnectionBannerHeight" });
+  const config = importDefault(12613).useConfig({ location: "useConnectionBannerHeight" });
   ({ timeoutMs, hidden } = config);
-  arg1(dependencyMap[3]);
-  [][0] = closure_3;
+  require(566) /* initialize */;
+  [][0] = _isNativeReflectConstruct;
   let num = 0;
   if (null != timeoutMs) {
     num = 0;

@@ -1,35 +1,36 @@
-// Module ID: 7456
-// Function ID: 59891
+// Module ID: 7461
+// Function ID: 59925
 // Name: shouldWaitForBlockingModals
-// Dependencies: []
+// Dependencies: [7462, 4808, 686, 2]
 // Exports: addPostConnectionCallback
 
-// Module 7456 (shouldWaitForBlockingModals)
+// Module 7461 (shouldWaitForBlockingModals)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import importDefaultResult from "dispatcher";
+import importDefaultResult1 from "dispatcher";
+import importDefaultResult2 from "dispatcher";
+
 function shouldWaitForBlockingModals() {
   return null != type.getType();
 }
 function processCallbacks() {
   if (!shouldWaitForBlockingModals()) {
     const item = arr.forEach((arg0) => {
-      callback(arg0);
+      outer1_4(arg0);
     });
-    const arr = [];
+    arr = [];
   }
 }
 function handleCallback(arg0) {
-  let closure_0 = arg0;
-  setImmediate(() => arg0());
+  let _isNativeReflectConstruct = arg0;
+  setImmediate(() => callback());
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
 let closure_2 = [];
-const subscription = importDefault(dependencyMap[2]).subscribe("CONNECTION_OPEN", processCallbacks);
-const importDefaultResult = importDefault(dependencyMap[2]);
-const subscription1 = importDefault(dependencyMap[2]).subscribe("CONNECTION_RESUMED", processCallbacks);
-const importDefaultResult1 = importDefault(dependencyMap[2]);
-const subscription2 = importDefault(dependencyMap[2]).subscribe("NUF_COMPLETE", processCallbacks);
-const importDefaultResult2 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/gateway/PostConnectionCallbackStore.tsx");
+const subscription = require("dispatcher").subscribe("CONNECTION_OPEN", processCallbacks);
+const subscription1 = require("dispatcher").subscribe("CONNECTION_RESUMED", processCallbacks);
+const subscription2 = require("dispatcher").subscribe("NUF_COMPLETE", processCallbacks);
+const result = require("dispatcher").fileFinishedImporting("modules/gateway/PostConnectionCallbackStore.tsx");
 
 export const addPostConnectionCallback = function addPostConnectionCallback(arg0) {
   if (connectedOrOverlay.isConnectedOrOverlay()) {

@@ -1,20 +1,23 @@
-// Module ID: 14370
-// Function ID: 108498
+// Module ID: 14484
+// Function ID: 110651
 // Name: FeaturedFirstCardCoachmarkAnchor
-// Dependencies: []
+// Dependencies: [31, 27, 33, 14485, 2]
 // Exports: default
 
-// Module 14370 (FeaturedFirstCardCoachmarkAnchor)
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/native/FeaturedFirstCardCoachmarkAnchor.tsx");
+// Module 14484 (FeaturedFirstCardCoachmarkAnchor)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+
+let closure_4;
+let closure_5;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/FeaturedFirstCardCoachmarkAnchor.tsx");
 
 export default function FeaturedFirstCardCoachmarkAnchor(children) {
   const ref = React.useRef(null);
   const obj = { collapsable: false };
-  const items = [callback(View, { ref, style: { WISHLIST_TOGGLE_PUBLIC: null, TIKTOK: "Clear", subLabel: "absolute", arrow: 0, getReportRaidTypeLabel: 0 }, collapsable: false }), children.children, callback(importDefault(dependencyMap[3]), { anchorRef: ref })];
+  const items = [callback(View, { ref, style: { position: "absolute", top: 0, right: 6, width: 32, height: 32 }, collapsable: false }), children.children, callback(importDefault(14485), { anchorRef: ref })];
   obj.children = items;
   return callback2(View, obj);
 };

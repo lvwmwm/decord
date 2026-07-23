@@ -1,22 +1,22 @@
-// Module ID: 10264
-// Function ID: 79296
+// Module ID: 10276
+// Function ID: 79364
 // Name: usePreviewableMediaText
-// Dependencies: []
+// Dependencies: [31, 10271, 1212, 2]
 // Exports: usePreviewableMediaText
 
-// Module 10264 (usePreviewableMediaText)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/in_app_notifications/native/hooks/usePreviewableMediaText.tsx");
+// Module 10276 (usePreviewableMediaText)
+import result from "result";
+
+const require = arg1;
+const result = require("getSystemLocale").fileFinishedImporting("modules/in_app_notifications/native/hooks/usePreviewableMediaText.tsx");
 
 export const usePreviewableMediaText = function usePreviewableMediaText(previewableMedia) {
   previewableMedia = previewableMedia.previewableMedia;
-  const arg1 = previewableMedia;
   const author = previewableMedia.author;
-  const dependencyMap = author;
   const items = [author, previewableMedia];
   return React.useMemo(() => {
     if (0 === previewableMedia.length) {
-      return { borderRadius: "o", alignItems: "o" };
+      return { text: null, secondaryText: null };
     } else if (1 === previewableMedia.length) {
       const first = previewableMedia[0];
       const type = first.type;
@@ -70,7 +70,7 @@ export const usePreviewableMediaText = function usePreviewableMediaText(previewa
           const obj8 = {};
           const intl14 = previewableMedia(author[2]).intl;
           const obj9 = { username: author.nick };
-          obj8.text = intl14.formatToPlainString(previewableMedia(author[2]).t.ifW/ef, obj9);
+          obj8.text = intl14.formatToPlainString(previewableMedia(author[2]).t["ifW/ef"], obj9);
           obj8.secondaryText = first.media.filename;
           let obj10 = obj8;
         } else {
@@ -85,7 +85,7 @@ export const usePreviewableMediaText = function usePreviewableMediaText(previewa
           const obj11 = {};
           const intl12 = previewableMedia(author[2]).intl;
           const obj12 = { username: author.nick };
-          obj11.text = intl12.formatToPlainString(previewableMedia(author[2]).t.3iI/fs, obj12);
+          obj11.text = intl12.formatToPlainString(previewableMedia(author[2]).t["3iI/fs"], obj12);
           obj11.secondaryText = null;
           let obj13 = obj11;
         } else {
@@ -130,7 +130,7 @@ export const usePreviewableMediaText = function usePreviewableMediaText(previewa
           const obj20 = {};
           const intl6 = previewableMedia(author[2]).intl;
           const obj21 = { username: author.nick };
-          obj20.text = intl6.formatToPlainString(previewableMedia(author[2]).t.7FJeVi, obj21);
+          obj20.text = intl6.formatToPlainString(previewableMedia(author[2]).t["7FJeVi"], obj21);
           obj20.secondaryText = null;
           let obj22 = obj20;
         } else {
@@ -145,7 +145,7 @@ export const usePreviewableMediaText = function usePreviewableMediaText(previewa
       if (null != author) {
         const intl2 = previewableMedia(author[2]).intl;
         const obj23 = { count: length, username: author.nick };
-        let formatResult = intl2.format(previewableMedia(author[2]).t.319zWs, obj23);
+        let formatResult = intl2.format(previewableMedia(author[2]).t["319zWs"], obj23);
       } else {
         const intl = previewableMedia(author[2]).intl;
         obj = { count: length };
@@ -154,11 +154,11 @@ export const usePreviewableMediaText = function usePreviewableMediaText(previewa
       if (null != author) {
         const intl4 = previewableMedia(author[2]).intl;
         const obj24 = { count: length, username: author.nick };
-        let formatResult1 = intl4.format(previewableMedia(author[2]).t.1OSGGk, obj24);
+        let formatResult1 = intl4.format(previewableMedia(author[2]).t["1OSGGk"], obj24);
       } else {
         const intl3 = previewableMedia(author[2]).intl;
         const obj25 = { count: length };
-        formatResult1 = intl3.formatToPlainString(previewableMedia(author[2]).t.8/qgDd, obj25);
+        formatResult1 = intl3.formatToPlainString(previewableMedia(author[2]).t["8/qgDd"], obj25);
       }
       const obj26 = {};
       if (everyResult) {

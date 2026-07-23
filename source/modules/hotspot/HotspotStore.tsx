@@ -1,9 +1,18 @@
-// Module ID: 5596
-// Function ID: 47549
+// Module ID: 5599
+// Function ID: 47572
 // Name: _isNativeReflectConstruct
-// Dependencies: [2684354567, 1342177294, 2550136837, 905969666, 33554434, 4026531840, 1065745, 1435392, 1062144, 470528]
+// Dependencies: [6, 7, 15, 17, 18, 660, 4677, 566, 686, 2]
 
-// Module 5596 (_isNativeReflectConstruct)
+// Module 5599 (_isNativeReflectConstruct)
+import ProcessArgs from "ProcessArgs";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { CONFERENCE_MODE_ENABLED } from "CONFERENCE_MODE_ENABLED";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,27 +22,21 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const CONFERENCE_MODE_ENABLED = arg1(dependencyMap[5]).CONFERENCE_MODE_ENABLED;
-const set = new Set();
+let set = new Set();
 let closure_9 = {};
-let tmp3 = (PersistedStore) => {
+let tmp3 = ((PersistedStore) => {
   class HotspotStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, HotspotStore);
-      obj = closure_5(HotspotStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, HotspotStore);
+      obj = outer1_5(HotspotStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,7 +45,6 @@ let tmp3 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = HotspotStore;
   callback2(HotspotStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -52,9 +54,10 @@ let tmp3 = (PersistedStore) => {
         if (Array.isArray(hiddenHotspots.hiddenHotspots)) {
           const _Set = Set;
           const set = new Set(hiddenHotspots.hiddenHotspots);
+          const outer1_8 = set;
         }
         if (null != hiddenHotspots.hotspotOverrides) {
-          const hotspotOverrides = hiddenHotspots.hotspotOverrides;
+          const outer1_9 = hiddenHotspots.hotspotOverrides;
         }
       }
     }
@@ -69,15 +72,15 @@ let tmp3 = (PersistedStore) => {
       }
       let tmp = !flag;
       if (tmp) {
-        tmp = closure_9[arg0];
+        tmp = outer1_9[arg0];
       }
-      let tmp3 = !closure_7;
+      let tmp3 = !outer1_7;
       if (tmp3) {
-        const ProcessArgs = HotspotStore(closure_1[6]).ProcessArgs;
+        const ProcessArgs = HotspotStore(outer1_1[6]).ProcessArgs;
         let tmp6 = !ProcessArgs.isDisallowPopupsSet();
         if (tmp6) {
           if (!tmp) {
-            tmp = !set.has(arg0);
+            tmp = !outer1_8.has(arg0);
           }
           tmp6 = tmp;
         }
@@ -90,27 +93,27 @@ let tmp3 = (PersistedStore) => {
   obj = {
     key: "hasHiddenHotspot",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_8.has(arg0);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getHotspotOverride",
     value(arg0) {
-      return closure_9[arg0];
+      return outer1_9[arg0];
     }
   };
   items[4] = {
     key: "getState",
     value() {
-      return { hiddenHotspots: closure_8, hotspotOverrides: closure_9 };
+      return { hiddenHotspots: outer1_8, hotspotOverrides: outer1_9 };
     }
   };
   return callback(HotspotStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = "HotspotStore";
 tmp3.persistKey = "hotspots";
-const items = [
+let items = [
   (arg0) => {
     let items = arg0;
     const obj = {};
@@ -123,7 +126,7 @@ const items = [
   }
 ];
 tmp3.migrations = items;
-tmp3 = new tmp3(importDefault(dependencyMap[8]), {
+tmp3 = new tmp3(require("dispatcher"), {
   OVERLAY_INITIALIZE: function handleOverlayInitialize(hiddenHotspots) {
     const set = new Set(hiddenHotspots.hiddenHotspots);
   },
@@ -139,13 +142,13 @@ tmp3 = new tmp3(importDefault(dependencyMap[8]), {
     closure_9[location.location] = location.enabled;
   },
   HOTSPOT_OVERRIDE_CLEAR: function handleClearHotspotOverride(arg0) {
-    if (null == closure_9[arg0.location]) {
+    if (null == table[arg0.location]) {
       return false;
     } else {
-      delete r0[r1];
+      delete tmp[tmp2];
     }
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/hotspot/HotspotStore.tsx");
+let result = set.fileFinishedImporting("modules/hotspot/HotspotStore.tsx");
 
 export default tmp3;

@@ -1,19 +1,37 @@
-// Module ID: 9992
-// Function ID: 77271
+// Module ID: 10000
+// Function ID: 77311
 // Name: useAppplicationRoleConnectionItems
-// Dependencies: []
+// Dependencies: [31, 27, 1921, 1857, 3970, 6856, 653, 1277, 4940, 33, 4130, 689, 4939, 10001, 4814, 1392, 3976, 1273, 10004, 10005, 3834, 10006, 10007, 4099, 5492, 3830, 1212, 8336, 4324, 3827, 4660, 4126, 3842, 566, 6735, 10008, 2]
 // Exports: default
 
-// Module 9992 (useAppplicationRoleConnectionItems)
+// Module 10000 (useAppplicationRoleConnectionItems)
+import importAllResult from "Text";
+import get_ActivityIndicator from "isLinkTrusted";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { MetadataFields } from "OperatorTypes";
+import jsxProd from "initialize";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_4;
+let closure_5;
+const require = arg1;
 class ConnectedUserAccount {
   constructor(arg0) {
     account = global.account;
-    arg1 = account;
     ({ theme, userId } = global);
-    importDefault = userId;
     ({ showMetadata, showInvisibleIcon } = global);
-    dependencyMap = undefined;
-    closure_3 = undefined;
+    type = undefined;
+    c3 = undefined;
     ({ locale, style } = global);
     if (null == showMetadata) {
       showMetadata = true;
@@ -25,29 +43,29 @@ class ConnectedUserAccount {
     }
     createdAtDate = null;
     if (showMetadata) {
-      tmp3 = arg1;
-      tmp4 = dependencyMap;
+      tmp3 = account;
+      tmp4 = type;
       num = 12;
-      obj2 = arg1(dependencyMap[12]);
+      obj2 = require("officialApplicationIds");
       tmp5 = MetadataFields;
-      createdAtDate = obj2.getCreatedAtDate(metadata[closure_13.CREATED_AT], locale);
+      createdAtDate = obj2.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], locale);
     }
     if (showMetadata) {
       type = account.type;
       tmp6 = PlatformTypes;
       if (PlatformTypes.REDDIT === type) {
-        tmp18 = arg1;
-        tmp19 = dependencyMap;
+        tmp18 = account;
+        tmp19 = type;
         num6 = 13;
-        obj7 = arg1(dependencyMap[13]);
+        obj7 = require("_createForOfIteratorHelperLoose");
         redditMetadataItems = obj7.generateRedditMetadataItems(metadata, tmp.metadataItem);
       } else {
         tmp79 = PlatformTypes;
         if (PlatformTypes.STEAM === type) {
-          tmp16 = arg1;
-          tmp17 = dependencyMap;
+          tmp16 = account;
+          tmp17 = type;
           num5 = 13;
-          obj6 = arg1(dependencyMap[13]);
+          obj6 = require("_createForOfIteratorHelperLoose");
           redditMetadataItems = obj6.generateSteamMetadataItems(metadata, tmp.metadataItem);
         } else {
           tmp80 = PlatformTypes;
@@ -58,26 +76,26 @@ class ConnectedUserAccount {
               if (PlatformTypes.TWITTER !== type) {
                 tmp83 = PlatformTypes;
                 if (PlatformTypes.PAYPAL === type) {
-                  tmp10 = arg1;
-                  tmp11 = dependencyMap;
+                  tmp10 = account;
+                  tmp11 = type;
                   num3 = 13;
-                  obj4 = arg1(dependencyMap[13]);
+                  obj4 = require("_createForOfIteratorHelperLoose");
                   redditMetadataItems = obj4.generatePaypalMetadataItems(metadata, tmp.metadataItem);
                 } else {
                   tmp84 = PlatformTypes;
                   if (PlatformTypes.EBAY === type) {
-                    tmp8 = arg1;
-                    tmp9 = dependencyMap;
+                    tmp8 = account;
+                    tmp9 = type;
                     num2 = 13;
-                    obj3 = arg1(dependencyMap[13]);
+                    obj3 = require("_createForOfIteratorHelperLoose");
                     redditMetadataItems = obj3.generateEbayMetadataItems(metadata, tmp.metadataItem);
                   } else {
                     tmp7 = PlatformTypes;
                     if (PlatformTypes.TIKTOK === type) {
-                      tmp85 = arg1;
-                      tmp86 = dependencyMap;
+                      tmp85 = account;
+                      tmp86 = type;
                       num21 = 13;
-                      obj29 = arg1(dependencyMap[13]);
+                      obj29 = require("_createForOfIteratorHelperLoose");
                       redditMetadataItems = obj29.generateTikTokMetadataItems(metadata, tmp.metadataItem);
                     }
                   }
@@ -85,19 +103,19 @@ class ConnectedUserAccount {
               }
             }
           }
-          tmp12 = arg1;
-          tmp13 = dependencyMap;
+          tmp12 = account;
+          tmp13 = type;
           num4 = 13;
-          obj5 = arg1(dependencyMap[13]);
+          obj5 = require("_createForOfIteratorHelperLoose");
           twitterMetadataItems = obj5.generateTwitterMetadataItems(metadata, tmp.metadataItem);
           tmp15 = MetadataFields;
           str = "1";
           redditMetadataItems = twitterMetadataItems;
-          if ("1" === metadata[closure_13.TWITTER_VERIFIED]) {
-            tmp87 = importDefault;
-            tmp88 = dependencyMap;
+          if ("1" === metadata[MetadataFields.TWITTER_VERIFIED]) {
+            tmp87 = userId;
+            tmp88 = type;
             num22 = 14;
-            obj30 = importDefault(dependencyMap[14]);
+            obj30 = require("getPlatformUserUrl");
             tmp89 = PlatformTypes;
             color = obj30.get(PlatformTypes.TWITTER).color;
             redditMetadataItems = twitterMetadataItems;
@@ -105,11 +123,11 @@ class ConnectedUserAccount {
         }
       }
     }
-    obj8 = importDefault(dependencyMap[14]);
+    obj8 = require("getPlatformUserUrl");
     value = obj8.get(account.type);
-    dependencyMap = value;
-    obj10 = arg1(dependencyMap[15]);
-    obj11 = arg1(dependencyMap[16]);
+    type = value;
+    obj10 = require("getAvatarURL");
+    obj11 = require("AccessibilityAnnouncer");
     tmp20 = null == value;
     if (obj11.isThemeDark(theme)) {
       darkPNG = undefined;
@@ -127,38 +145,38 @@ class ConnectedUserAccount {
         platformUserUrl = value.getPlatformUserUrl(account);
       }
     }
-    closure_3 = platformUserUrl;
+    c3 = platformUserUrl;
     if (null != showInvisibleIcon) {
       if (showInvisibleIcon) {
         tmp29 = jsx;
-        tmp30 = arg1;
-        tmp31 = dependencyMap;
+        tmp30 = account;
+        tmp31 = type;
         num9 = 17;
         obj = {};
         obj.style = tmp.connectedAccountOpenHide;
-        tmp32 = importDefault;
+        tmp32 = userId;
         num10 = 18;
-        obj.source = importDefault(dependencyMap[18]);
-        tmp24 = jsx(arg1(dependencyMap[17]).Icon, obj);
+        obj.source = require("registerAsset");
+        tmp24 = jsx(require("Button").Icon, obj);
       }
-      tmp33 = arg1;
-      tmp34 = dependencyMap;
+      tmp33 = account;
+      tmp34 = type;
       num11 = 20;
-      obj14 = arg1(dependencyMap[20]);
-      tmp35 = importDefault;
+      obj14 = require("map");
+      tmp35 = userId;
       num12 = 11;
-      token = obj14.useToken(importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED, theme);
-      obj15 = arg1(dependencyMap[20]);
+      token = obj14.useToken(require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, theme);
+      obj15 = require("map");
       if (null != color) {
         tmp37 = ThemeTypes;
         theme = ThemeTypes.DARK;
       }
-      WHITE = obj15.useToken(importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE, theme);
+      WHITE = obj15.useToken(require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE, theme);
       tmp38 = token;
       if (null != color) {
-        tmp39 = importDefault;
-        tmp40 = dependencyMap;
-        WHITE = importDefault(dependencyMap[11]).unsafe_rawColors.WHITE;
+        tmp39 = userId;
+        tmp40 = type;
+        WHITE = require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE;
         tmp38 = color;
       }
       tmp41 = null;
@@ -168,93 +186,93 @@ class ConnectedUserAccount {
         obj1 = {};
         obj1.style = tmp.verifiedCheckContainer;
         tmp44 = jsx;
-        tmp45 = arg1;
-        tmp46 = dependencyMap;
+        tmp45 = account;
+        tmp46 = type;
         num13 = 17;
         obj2 = {};
         obj2.style = tmp.verifiedCheck;
-        obj2.size = arg1(dependencyMap[17]).Icon.Sizes.REFRESH_SMALL_16;
-        tmp47 = importDefault;
+        obj2.size = require("Button").Icon.Sizes.REFRESH_SMALL_16;
+        tmp47 = userId;
         num14 = 21;
-        obj2.source = importDefault(dependencyMap[21]);
+        obj2.source = require("registerAsset");
         obj2.color = tmp38;
         items = [, ];
-        items[0] = jsx(arg1(dependencyMap[17]).Icon, obj2);
+        items[0] = jsx(require("Button").Icon, obj2);
         tmp48 = jsx;
         obj3 = {};
         obj3.style = tmp.verifiedCheck;
-        obj3.size = arg1(dependencyMap[17]).Icon.Sizes.REFRESH_SMALL_16;
+        obj3.size = require("Button").Icon.Sizes.REFRESH_SMALL_16;
         num15 = 22;
-        obj3.source = importDefault(dependencyMap[22]);
+        obj3.source = require("registerAsset");
         obj3.color = WHITE;
-        items[1] = jsx(arg1(dependencyMap[17]).Icon, obj3);
+        items[1] = jsx(require("Button").Icon, obj3);
         obj1.children = items;
         tmp41 = jsxs(View, obj1);
       }
-      tmp49 = closure_3;
+      tmp49 = c3;
       items1 = [];
       items1[0] = account.name;
       name = undefined;
-      callback = closure_3.useCallback(() => {
-        const result = account(value[23]).triggerHapticFeedback(account(value[23]).HapticFeedbackTypes.IMPACT_LIGHT);
-        const obj = account(value[23]);
-        account(value[24]).copy(account.name);
-        const obj2 = account(value[24]);
-        const result1 = account(value[25]).presentCopiedToClipboard();
+      callback = c3.useCallback(() => {
+        const result = account(_undefined[23]).triggerHapticFeedback(account(_undefined[23]).HapticFeedbackTypes.IMPACT_LIGHT);
+        const obj = account(_undefined[23]);
+        account(_undefined[24]).copy(account.name);
+        const obj2 = account(_undefined[24]);
+        const result1 = account(_undefined[25]).presentCopiedToClipboard();
       }, items1);
-      tmp51 = closure_3;
+      tmp51 = c3;
       if (null != value) {
         name = value.name;
       }
       items2 = [, ];
       items2[0] = name;
       items2[1] = platformUserUrl;
-      tmp54 = closure_3;
+      tmp54 = c3;
       items3 = [, , ];
       items3[0] = account.type;
       items3[1] = platformUserUrl;
       items3[2] = userId;
-      memo = closure_3.useMemo(() => {
+      memo = c3.useMemo(() => {
         if (null != platformUserUrl) {
-          const intl2 = account(value[26]).intl;
-          let stringResult = intl2.string(account(value[26]).t.wuRE8M);
+          const intl2 = account(_undefined[26]).intl;
+          let stringResult = intl2.string(account(_undefined[26]).t.wuRE8M);
         } else {
           let name;
-          const intl = account(value[26]).intl;
+          const intl = account(_undefined[26]).intl;
           const obj = {};
-          if (null != value) {
-            name = value.name;
+          if (null != _undefined) {
+            name = _undefined.name;
           }
           let str = "";
           if (null != name) {
             str = name;
           }
           obj.name = str;
-          stringResult = intl.formatToPlainString(account(value[26]).t.OKzaN3, obj);
+          stringResult = intl.formatToPlainString(account(_undefined[26]).t.OKzaN3, obj);
         }
         return stringResult;
       }, items2);
-      callback1 = closure_3.useCallback(() => {
+      callback1 = c3.useCallback(() => {
         if (null != platformUserUrl) {
-          let obj = account(value[27]);
+          let obj = account(_undefined[27]);
           obj = {
             href: platformUserUrl,
-            trusted: account.type !== constants.DOMAIN,
+            trusted: account.type !== outer1_11.DOMAIN,
             onConfirm() {
-                let obj = lib(closure_2[28]);
-                obj = { platform_type: lib.type, other_user_id: callback };
-                obj.trackWithMetadata(constants.CONNECTED_ACCOUNT_VIEWED, obj);
-                callback(closure_2[29]).openURL(closure_3);
+                let obj = account(4324);
+                obj = { platform_type: outer1_0.type, other_user_id: outer1_1 };
+                obj.trackWithMetadata(outer2_10.CONNECTED_ACCOUNT_VIEWED, obj);
+                userId(3827).openURL(outer1_3);
               }
           };
           obj.handleClick(obj);
         }
       }, items3);
       if (null != platformUserUrl) {
-        tmp56 = arg1;
-        tmp57 = dependencyMap;
+        tmp56 = account;
+        tmp57 = type;
         num16 = 30;
-        PressableOpacity = arg1(dependencyMap[30]).PressableOpacity;
+        PressableOpacity = require("PressableBase").PressableOpacity;
       } else {
         PressableOpacity = Pressable;
       }
@@ -277,20 +295,20 @@ class ConnectedUserAccount {
       obj6 = {};
       obj6.style = tmp.connectedAccount;
       tmp64 = jsx;
-      tmp65 = arg1;
-      tmp66 = dependencyMap;
+      tmp65 = account;
+      tmp66 = type;
       num17 = 17;
       tmp60 = jsx;
       tmp61 = View;
       tmp62 = jsxs;
       tmp63 = View;
       obj7 = {};
-      obj7.size = arg1(dependencyMap[17]).Icon.Sizes.MEDIUM;
+      obj7.size = require("Button").Icon.Sizes.MEDIUM;
       obj7.source = source;
       flag = true;
       obj7.disableColor = true;
       items5 = [, , ];
-      items5[0] = jsx(arg1(dependencyMap[17]).Icon, obj7);
+      items5[0] = jsx(require("Button").Icon, obj7);
       obj8 = {};
       obj8.style = tmp.connectedAccountNameContainer;
       tmp69 = jsxs;
@@ -307,7 +325,7 @@ class ConnectedUserAccount {
       obj10.style = tmp.connectedAccountNameText;
       obj10.children = account.name;
       items6 = [, ];
-      items6[0] = jsx(arg1(dependencyMap[31]).Text, obj10);
+      items6[0] = jsx(require("Text").Text, obj10);
       items6[1] = tmp41;
       obj9.children = items6;
       items7 = [, , ];
@@ -315,18 +333,18 @@ class ConnectedUserAccount {
       tmp72 = null;
       if (null != createdAtDate) {
         tmp73 = jsx;
-        tmp74 = arg1;
-        tmp75 = dependencyMap;
+        tmp74 = account;
+        tmp75 = type;
         obj11 = {};
         str4 = "heading-deprecated-12/medium";
         obj11.variant = "heading-deprecated-12/medium";
         obj11.style = tmp.connectedAccountNameCreatedAtText;
         num19 = 26;
-        intl = arg1(dependencyMap[26]).intl;
+        intl = require("getSystemLocale").intl;
         obj12 = {};
         obj12.date = createdAtDate;
-        obj11.children = intl.format(arg1(dependencyMap[26]).t.9rfonh, obj12);
-        tmp72 = jsx(arg1(dependencyMap[31]).Text, obj11);
+        obj11.children = intl.format(require("getSystemLocale").t["9rfonh"], obj12);
+        tmp72 = jsx(require("Text").Text, obj11);
       }
       items7[1] = tmp72;
       tmp76 = null;
@@ -354,15 +372,15 @@ class ConnectedUserAccount {
     tmp24 = null;
     if (null != platformUserUrl) {
       tmp25 = jsx;
-      tmp26 = arg1;
-      tmp27 = dependencyMap;
+      tmp26 = account;
+      tmp27 = type;
       num7 = 17;
       obj14 = {};
       obj14.style = tmp.connectedAccountOpenLink;
-      tmp28 = importDefault;
+      tmp28 = userId;
       num8 = 19;
-      obj14.source = importDefault(dependencyMap[19]);
-      tmp24 = jsx(arg1(dependencyMap[17]).Icon, obj14);
+      obj14.source = require("registerAsset");
+      tmp24 = jsx(require("Button").Icon, obj14);
     }
     return;
   }
@@ -370,10 +388,9 @@ class ConnectedUserAccount {
 class ConnectedApplicationUserRoleAccount {
   constructor(arg0) {
     applicationRoleConnection = global.applicationRoleConnection;
-    arg1 = applicationRoleConnection;
     tmp = Fragment();
-    importDefault = tmp;
-    obj = arg1(dependencyMap[13]);
+    closure_1 = tmp;
+    obj = require("_createForOfIteratorHelperLoose");
     roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
     obj = { style: items };
     items = [, ];
@@ -384,12 +401,12 @@ class ConnectedApplicationUserRoleAccount {
     tmp3 = View;
     if (null != applicationRoleConnection.platform_name) {
       tmp5 = jsx;
-      tmp6 = arg1;
-      tmp7 = dependencyMap;
+      tmp6 = applicationRoleConnection;
+      tmp7 = closure_2;
       num = 31;
-      obj1 = { cachedAt: "k", edpbxy: "Array" };
+      obj1 = { variant: "eyebrow", color: "interactive-text-default" };
       obj1.children = applicationRoleConnection.platform_name;
-      tmp4 = jsx(arg1(dependencyMap[31]).Text, obj1);
+      tmp4 = jsx(require("Text").Text, obj1);
     }
     items1 = [, , , ];
     items1[0] = tmp4;
@@ -399,12 +416,12 @@ class ConnectedApplicationUserRoleAccount {
     tmp9 = View;
     if (null != applicationRoleConnection.platform_username) {
       tmp11 = jsx;
-      tmp12 = arg1;
-      tmp13 = dependencyMap;
+      tmp12 = applicationRoleConnection;
+      tmp13 = closure_2;
       num2 = 31;
-      obj3 = { cachedAt: null, edpbxy: null };
+      obj3 = { variant: "text-md/semibold", color: "interactive-text-active" };
       obj3.children = applicationRoleConnection.platform_username;
-      tmp10 = jsx(arg1(dependencyMap[31]).Text, obj3);
+      tmp10 = jsx(require("Text").Text, obj3);
     }
     obj2.children = tmp10;
     items1[1] = tmp8(tmp9, obj2);
@@ -424,30 +441,30 @@ class ConnectedApplicationUserRoleAccount {
     items1[2] = tmp14;
     obj5 = { style: { flexDirection: "row" } };
     obj6 = { style: tmp.connectedAccountPoweredByContainer };
-    obj7 = {};
-    intl = arg1(dependencyMap[26]).intl;
+    obj7 = { variant: "text-xs/normal", color: "text-muted" };
+    intl = require("getSystemLocale").intl;
     obj8 = {
       applicationHook() {
             let obj = { style: tmp.connectedAccountPoweredByText };
             let tmp3 = null;
             if (null != applicationRoleConnection.application.bot) {
               obj = { style: tmp.connectedAccountPoweredByAvatar };
-              const prototype = ctor.prototype;
-              const tmp12 = new ctor(applicationRoleConnection.application.bot);
+              const prototype = outer1_7.prototype;
+              const tmp12 = new outer1_7(applicationRoleConnection.application.bot);
               obj.user = tmp12;
-              obj.size = applicationRoleConnection(closure_2[17]).AvatarSizes.SIZE_16;
+              obj.size = applicationRoleConnection(outer1_2[17]).AvatarSizes.SIZE_16;
               obj.guildId = undefined;
-              tmp3 = callback(applicationRoleConnection(closure_2[17]).Avatar, obj);
+              tmp3 = outer1_14(applicationRoleConnection(outer1_2[17]).Avatar, obj);
             }
             const items = [tmp3, ];
-            obj = { cachedAt: true, edpbxy: true, children: applicationRoleConnection.application.name };
-            items[1] = callback(applicationRoleConnection(closure_2[31]).Text, obj);
+            obj = { variant: "text-xs/normal", color: "text-default", children: applicationRoleConnection.application.name };
+            items[1] = outer1_14(applicationRoleConnection(outer1_2[31]).Text, obj);
             obj.children = items;
-            return closure_15(closure_5, obj);
+            return outer1_15(outer1_5, obj);
           }
     };
-    obj7.children = intl.format(arg1(dependencyMap[26]).t.zIT9YA, obj8);
-    obj6.children = jsx(arg1(dependencyMap[31]).Text, obj7);
+    obj7.children = intl.format(require("getSystemLocale").t.zIT9YA, obj8);
+    obj6.children = jsx(require("Text").Text, obj7);
     items2 = [, ];
     items2[0] = jsx(View, obj6);
     items2[1] = jsx(View, { style: { flexGrow: 1 } });
@@ -458,89 +475,82 @@ class ConnectedApplicationUserRoleAccount {
   }
 }
 function useAppplicationRoleConnectionItems(memo) {
-  const importDefault = arg1(closure_2[32]).useThemeContext().theme;
-  const obj = arg1(closure_2[32]);
-  const items = [closure_6];
-  closure_2 = arg1(closure_2[33]).useStateFromStores(items, () => locale.locale);
+  const _require = arg1;
+  const theme = _require(3842).useThemeContext().theme;
+  let obj = _require(3842);
+  const items = [_isNativeReflectConstruct];
+  const dependencyMap = _require(566).useStateFromStores(items, () => outer1_6.locale);
   return memo.map((applicationRoleConnection) => {
-    let obj = { children: callback(closure_19, obj) };
-    obj = { applicationRoleConnection, theme, locale: closure_2, style: arg1 };
-    return callback(React.Fragment, obj, arg1);
+    obj = { children: outer1_14(outer1_19, obj) };
+    obj = { applicationRoleConnection, theme, locale: closure_2, style: closure_0 };
+    return outer1_14(outer1_3.Fragment, obj, arg1);
   });
 }
 function useConnectedAccountItems(arr) {
-  const importDefault = arg2;
-  const dependencyMap = arg1(dependencyMap[32]).useThemeContext().theme;
-  const obj = arg1(dependencyMap[32]);
-  const items = [closure_6];
-  let closure_3 = arg1(dependencyMap[33]).useStateFromStores(items, () => locale.locale);
-  const obj2 = arg1(dependencyMap[33]);
-  let closure_4 = arg1(dependencyMap[34]).usePlatformAllowed({ forUserProfile: true });
+  const _require = arg1;
+  let closure_1 = arg2;
+  theme = _require(theme[32]).useThemeContext().theme;
+  let obj = _require(theme[32]);
+  const items = [_isNativeReflectConstruct];
+  let closure_3 = _require(theme[33]).useStateFromStores(items, () => outer1_6.locale);
+  const obj2 = _require(theme[33]);
+  let closure_4 = _require(theme[34]).usePlatformAllowed({ forUserProfile: true });
   const found = arr.filter((type) => {
-    const value = arg2(theme[14]).get(type.type);
+    const value = callback(theme[14]).get(type.type);
     let tmp2 = null != value;
     if (tmp2) {
-      tmp2 = callback(value);
+      tmp2 = callback2(value);
     }
     return tmp2;
   });
   return found.map((account) => {
-    let obj = { children: callback2(closure_18, obj) };
-    obj = { account, theme, locale: React, userId: arg1, style: arg2 };
-    return callback2(React.Fragment, obj, arg1);
+    obj = { children: outer1_14(outer1_18, obj) };
+    obj = { account, theme, locale: React, userId: closure_0, style: closure_1 };
+    return outer1_14(React.Fragment, obj, arg1);
   });
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[1]);
-({ AnalyticEvents: closure_10, PlatformTypes: closure_11, ThemeTypes: closure_12 } = arg1(dependencyMap[6]));
-const MetadataFields = arg1(dependencyMap[8]).MetadataFields;
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = arg1(dependencyMap[9]));
-let obj1 = arg1(dependencyMap[10]);
-let obj = { connectedAccountContainer: obj, connectedAccount: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, connectedAccountNameContainer: { flexGrow: "<string:2126337>", zIndex: "<string:2097152>" }, connectedAccountName: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
-obj = { paddingHorizontal: 10, paddingVertical: arg1(dependencyMap[7]).FORM_ROW_VERTICAL_PADDING / 2 };
-obj1 = { color: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.connectedAccountNameText = obj1;
-const tmp4 = arg1(dependencyMap[9]);
-obj.connectedAccountNameCreatedAtText = { color: importDefault(dependencyMap[11]).colors.TEXT_SUBTLE };
-const obj2 = { color: importDefault(dependencyMap[11]).colors.TEXT_SUBTLE };
-const items = [{ rotate: "135deg" }];
-obj.connectedAccountOpenLink = { transform: items, tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE };
-const obj4 = { marginVertical: 8, borderRadius: "center", overflow: "underline", flex: null, tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT };
+({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ AnalyticEvents: closure_10, PlatformTypes: closure_11, ThemeTypes: closure_12 } = ME);
+({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
+obj = { connectedAccountContainer: obj, connectedAccount: { flexDirection: "row", alignItems: "center" }, connectedAccountNameContainer: { flex: 1, marginLeft: 8 }, connectedAccountName: { flexDirection: "row", alignItems: "center" } };
+obj = { paddingHorizontal: 10, paddingVertical: require("semanticColor").FORM_ROW_VERTICAL_PADDING / 2 };
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+obj.connectedAccountNameText = _createForOfIteratorHelperLoose;
+obj.connectedAccountNameCreatedAtText = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+let obj3 = { height: 24, width: 24 };
+let items = [{ rotate: "135deg" }];
+obj3.transform = items;
+obj3.tintColor = require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE;
+obj.connectedAccountOpenLink = obj3;
+let obj4 = { alignSelf: "flex-start", margin: 4, height: 16, width: 16, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
 obj.connectedAccountOpenHide = obj4;
-obj.verifiedCheckContainer = { ti: "center", scales: "underline", flexDirection: null };
-obj.verifiedCheck = {};
-obj.connectedAccountChildren = {};
-const obj3 = { transform: items, tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.metadataItem = { color: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.appConnectionNameContainer = { grow: 5, effectDisplayType: "safety_user_sentiment_notice_dismissed_at", es-UY: "message", EdgeRuntime: null };
-const obj5 = { color: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.connectedAccountPoweredByContainer = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[11]).radii.sm, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
+obj.verifiedCheckContainer = { marginLeft: 4, height: 16, width: 16 };
+obj.verifiedCheck = { position: "absolute", left: 0, top: 0 };
+obj.connectedAccountChildren = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", overflow: "hidden" };
+let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+obj.metadataItem = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+obj.appConnectionNameContainer = { flex: 1, flexDirection: "row", alignItems: "center", marginTop: 4 };
+let obj6 = { flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, paddingHorizontal: 8, paddingVertical: 4, marginTop: 12 };
+obj.connectedAccountPoweredByContainer = obj6;
 obj.connectedAccountPoweredByAvatar = { marginRight: 4 };
-obj.connectedAccountPoweredByText = { "Null": "row", "Null": 12, "Null": "space-between" };
-let closure_17 = obj1.createStyles(obj);
+obj.connectedAccountPoweredByText = { marginTop: -4, alignItems: "center", flexDirection: "row" };
+let closure_17 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_18 = importAllResult.memo(ConnectedUserAccount);
 let closure_19 = importAllResult.memo(ConnectedApplicationUserRoleAccount);
 let closure_20 = [];
 let closure_21 = [];
-const obj6 = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[11]).radii.sm, borderColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[36]).fileFinishedImporting("modules/user_profile/native/LegacyUserProfileConnections.tsx");
+let obj5 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/LegacyUserProfileConnections.tsx");
 
 export default function LegacyUserProfileConnections(user) {
-  const arg1 = user.user;
-  let obj = arg1(dependencyMap[33]);
+  user = user.user;
+  let obj = user(566);
   const items = [closure_9];
-  const stateFromStores = obj.useStateFromStores(items, () => userProfile.getUserProfile(user.id));
-  const importDefault = stateFromStores;
-  let obj1 = arg1(dependencyMap[33]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getUserProfile(user.id));
+  let obj1 = user(566);
   const items1 = [closure_8];
   let prop;
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => obj.hidePersonalInformation);
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_8.hidePersonalInformation);
   if (null != stateFromStores) {
     prop = stateFromStores.applicationRoleConnections;
   }
@@ -552,7 +562,7 @@ export default function LegacyUserProfileConnections(user) {
       prop = stateFromStores.applicationRoleConnections;
     }
     if (null == prop) {
-      prop = closure_21;
+      prop = outer1_21;
     }
     return prop;
   }, items2);
@@ -566,7 +576,7 @@ export default function LegacyUserProfileConnections(user) {
       connectedAccounts = stateFromStores.connectedAccounts;
     }
     if (null == connectedAccounts) {
-      connectedAccounts = closure_20;
+      connectedAccounts = outer1_20;
     }
     return connectedAccounts;
   }, items3);
@@ -582,23 +592,23 @@ export default function LegacyUserProfileConnections(user) {
       }
       if (tmp10) {
         obj = {};
-        const intl = arg1(dependencyMap[26]).intl;
-        obj.title = intl.string(arg1(dependencyMap[26]).t.PHjkRE);
+        const intl = user(1212).intl;
+        obj.title = intl.string(user(1212).t.PHjkRE);
         obj.showContainer = true;
         obj.children = arr6;
-        tmp10 = callback(importDefault(dependencyMap[35]), obj);
-        const tmp14 = importDefault(dependencyMap[35]);
+        tmp10 = callback(stateFromStores(10008), obj);
+        const tmp14 = stateFromStores(10008);
       }
       const items4 = [tmp10, ];
       obj1 = {};
-      const intl2 = arg1(dependencyMap[26]).intl;
-      obj1.title = intl2.string(arg1(dependencyMap[26]).t.3fe7U5);
+      const intl2 = user(1212).intl;
+      obj1.title = intl2.string(user(1212).t["3fe7U5"]);
       obj1.showContainer = true;
       obj1.children = tmp8;
-      items4[1] = callback(importDefault(dependencyMap[35]), obj1);
+      items4[1] = callback(stateFromStores(10008), obj1);
       obj.children = items4;
       tmp21Result = closure_15(closure_16, obj);
-      const tmp19 = importDefault(dependencyMap[35]);
+      const tmp19 = stateFromStores(10008);
       const tmp21 = closure_15;
       const tmp22 = closure_16;
     }

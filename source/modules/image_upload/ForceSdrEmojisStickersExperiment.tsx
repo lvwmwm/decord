@@ -1,15 +1,15 @@
 // Module ID: 1826
-// Function ID: 20015
+// Function ID: 20016
 // Name: getForceSdrEmojisStickersConfig
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getForceSdrEmojisStickersConfig
 
 // Module 1826 (getForceSdrEmojisStickersConfig)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": null, "Bool(false)": null, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-let closure_0 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/image_upload/ForceSdrEmojisStickersExperiment.tsx");
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2025-10-force-sdr-emojis-stickers", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/image_upload/ForceSdrEmojisStickersExperiment.tsx");
 
 export const getForceSdrEmojisStickersConfig = function getForceSdrEmojisStickersConfig(location) {
   return config.getConfig({ location: location.location });

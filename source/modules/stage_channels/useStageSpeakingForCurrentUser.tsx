@@ -1,31 +1,33 @@
-// Module ID: 4952
-// Function ID: 42543
+// Module ID: 4955
+// Function ID: 42561
 // Name: useIsStageSpeakingDisabledForCurrentUser
-// Dependencies: []
+// Dependencies: [1348, 3758, 1906, 482, 4347, 3809, 4956, 566, 2]
 // Exports: isStageSpeakingDisabledForCurrentUser, shouldAgeVerifyToSpeakForCurrentUser, useIsStageSpeakingDisabledForCurrentUser, useShouldAgeVerifyToSpeakForCurrentUser, useShouldShowAgeVerificationForEvent, useShouldShowAgeVerificationPopover
 
-// Module 4952 (useIsStageSpeakingDisabledForCurrentUser)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const Permissions = arg1(dependencyMap[3]).Permissions;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/stage_channels/useStageSpeakingForCurrentUser.tsx");
+// Module 4955 (useIsStageSpeakingDisabledForCurrentUser)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { Permissions } from "sum";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/useStageSpeakingForCurrentUser.tsx");
 
 export const useIsStageSpeakingDisabledForCurrentUser = function useIsStageSpeakingDisabledForCurrentUser() {
-  const isVerifiedTeen = arg1(dependencyMap[4]).useIsVerifiedTeen();
-  const obj = arg1(dependencyMap[4]);
-  const obj2 = arg1(dependencyMap[5]);
-  return arg1(dependencyMap[5]).useIsFeatureAgeGated(arg1(dependencyMap[6]).AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeen;
+  const isVerifiedTeen = require(4347) /* isReactiveCheckEnabled */.useIsVerifiedTeen();
+  const obj = require(4347) /* isReactiveCheckEnabled */;
+  const obj2 = require(3809) /* isFeatureAgeGated */;
+  return require(3809) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeen;
 };
 export const isStageSpeakingDisabledForCurrentUser = function isStageSpeakingDisabledForCurrentUser() {
-  const obj = arg1(dependencyMap[4]);
-  const isVerifiedTeenResult = arg1(dependencyMap[4]).isVerifiedTeen();
-  const obj2 = arg1(dependencyMap[5]);
-  return arg1(dependencyMap[5]).isFeatureAgeGated(arg1(dependencyMap[6]).AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeenResult;
+  const obj = require(4347) /* isReactiveCheckEnabled */;
+  const isVerifiedTeenResult = require(4347) /* isReactiveCheckEnabled */.isVerifiedTeen();
+  const obj2 = require(3809) /* isFeatureAgeGated */;
+  return require(3809) /* isFeatureAgeGated */.isFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && isVerifiedTeenResult;
 };
 export const shouldAgeVerifyToSpeakForCurrentUser = function shouldAgeVerifyToSpeakForCurrentUser(id) {
   let channelId = id;
-  const obj = arg1(dependencyMap[4]);
+  const obj = require(4347) /* isReactiveCheckEnabled */;
   if (null == id) {
     channelId = store.getChannelId();
   }
@@ -37,63 +39,61 @@ export const shouldAgeVerifyToSpeakForCurrentUser = function shouldAgeVerifyToSp
   if (canResult) {
     canResult = closure_3.can(Permissions.REQUEST_TO_SPEAK, channel);
   }
-  const isVerifiedAdultResult = arg1(dependencyMap[4]).isVerifiedAdult();
-  const obj2 = arg1(dependencyMap[5]);
-  return arg1(dependencyMap[5]).isFeatureAgeGated(arg1(dependencyMap[6]).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdultResult && canResult;
+  const isVerifiedAdultResult = require(4347) /* isReactiveCheckEnabled */.isVerifiedAdult();
+  const obj2 = require(3809) /* isFeatureAgeGated */;
+  return require(3809) /* isFeatureAgeGated */.isFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdultResult && canResult;
 };
 export const useShouldAgeVerifyToSpeakForCurrentUser = function useShouldAgeVerifyToSpeakForCurrentUser(id) {
   let channelId = id;
   if (null == id) {
     channelId = store.getChannelId();
   }
-  const arg1 = channelId;
-  const items = [closure_3, closure_2];
+  const items = [closure_3, _isNativeReflectConstruct];
   const items1 = [channelId];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => {
+  const stateFromStores = channelId(566).useStateFromStores(items, () => {
     let channel = null;
     if (null != channelId) {
-      channel = channel.getChannel(channelId);
+      channel = outer1_2.getChannel(channelId);
     }
     let canResult = null != channel;
     if (canResult) {
-      canResult = closure_3.can(constants.REQUEST_TO_SPEAK, channel);
+      canResult = outer1_3.can(outer1_5.REQUEST_TO_SPEAK, channel);
     }
     return canResult;
   }, items1);
-  const obj = arg1(dependencyMap[7]);
-  const isVerifiedAdult = arg1(dependencyMap[4]).useIsVerifiedAdult();
-  const obj2 = arg1(dependencyMap[4]);
-  const obj3 = arg1(dependencyMap[5]);
-  return arg1(dependencyMap[5]).useIsFeatureAgeGated(arg1(dependencyMap[6]).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
+  const obj = channelId(566);
+  const isVerifiedAdult = channelId(4347).useIsVerifiedAdult();
+  const obj2 = channelId(4347);
+  const obj3 = channelId(3809);
+  return channelId(3809).useIsFeatureAgeGated(channelId(4956).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
 };
 export const useShouldShowAgeVerificationPopover = function useShouldShowAgeVerificationPopover(id) {
   let channelId = id;
   if (null == id) {
     channelId = store.getChannelId();
   }
-  const arg1 = channelId;
-  const items = [closure_3, closure_2];
+  const items = [closure_3, _isNativeReflectConstruct];
   const items1 = [channelId];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => {
+  const stateFromStores = channelId(566).useStateFromStores(items, () => {
     let channel = null;
     if (null != channelId) {
-      channel = channel.getChannel(channelId);
+      channel = outer1_2.getChannel(channelId);
     }
     let canResult = null != channel;
     if (canResult) {
-      canResult = closure_3.can(constants.REQUEST_TO_SPEAK, channel);
+      canResult = outer1_3.can(outer1_5.REQUEST_TO_SPEAK, channel);
     }
     return canResult;
   }, items1);
-  const obj = arg1(dependencyMap[7]);
-  const isAgeVerified = arg1(dependencyMap[4]).useIsAgeVerified();
-  const obj2 = arg1(dependencyMap[4]);
-  const obj3 = arg1(dependencyMap[5]);
-  return arg1(dependencyMap[5]).useIsFeatureAgeGated(arg1(dependencyMap[6]).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
+  const obj = channelId(566);
+  const isAgeVerified = channelId(4347).useIsAgeVerified();
+  const obj2 = channelId(4347);
+  const obj3 = channelId(3809);
+  return channelId(3809).useIsFeatureAgeGated(channelId(4956).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
 };
 export const useShouldShowAgeVerificationForEvent = function useShouldShowAgeVerificationForEvent() {
-  const isVerifiedAdult = arg1(dependencyMap[4]).useIsVerifiedAdult();
-  const obj = arg1(dependencyMap[4]);
-  const obj2 = arg1(dependencyMap[5]);
-  return arg1(dependencyMap[5]).useIsFeatureAgeGated(arg1(dependencyMap[6]).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult;
+  const isVerifiedAdult = require(4347) /* isReactiveCheckEnabled */.useIsVerifiedAdult();
+  const obj = require(4347) /* isReactiveCheckEnabled */;
+  const obj2 = require(3809) /* isFeatureAgeGated */;
+  return require(3809) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult;
 };

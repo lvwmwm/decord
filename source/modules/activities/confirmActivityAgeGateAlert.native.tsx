@@ -1,48 +1,52 @@
-// Module ID: 10811
-// Function ID: 83979
+// Module ID: 10821
+// Function ID: 84028
 // Name: ConfirmActivityGateContent
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 10822, 4126, 1212, 4470, 1273, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 10811 (ConfirmActivityGateContent)
+// Module 10821 (ConfirmActivityGateContent)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function ConfirmActivityGateContent(children) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.alertContainer };
-  const items = [callback(importDefault(dependencyMap[5]), {}), ];
+  const items = [callback(importDefault(10822), {}), ];
   obj = { style: tmp.alertBodyText, variant: "text-md/normal", children: children.description };
-  items[1] = callback(arg1(dependencyMap[6]).Text, obj);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { alertContainer: {} };
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, color: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.alertBodyText = obj;
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/activities/confirmActivityAgeGateAlert.native.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { alertContainer: { display: "flex", alignItems: "center", padding: 8 } };
+_createForOfIteratorHelperLoose = { fontSize: 16, lineHeight: 24, color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center" };
+_createForOfIteratorHelperLoose.alertBodyText = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/activities/confirmActivityAgeGateAlert.native.tsx");
 
 export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(arg0) {
   let application;
   let onAgree;
   let onDisagree;
   ({ application, onAgree, onDisagree } = arg0);
-  const intl = arg1(dependencyMap[7]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   let obj = { applicationName: application.name };
-  const formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[7]).t.OgmIqy, obj);
+  const formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.OgmIqy, obj);
   obj = {};
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj.title = intl2.string(arg1(dependencyMap[7]).t.SSDPOF);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl2.string(require(1212) /* getSystemLocale */.t.SSDPOF);
   obj.children = callback(ConfirmActivityGateContent, { description: formatToPlainStringResult });
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj.cancelText = intl3.string(arg1(dependencyMap[7]).t.hg1uxn);
-  const intl4 = arg1(dependencyMap[7]).intl;
-  obj.confirmText = intl4.string(arg1(dependencyMap[7]).t.wVq7uo);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.cancelText = intl3.string(require(1212) /* getSystemLocale */.t.hg1uxn);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj.confirmText = intl4.string(require(1212) /* getSystemLocale */.t.wVq7uo);
   obj.onConfirm = onAgree;
   obj.onCancel = onDisagree;
-  obj.confirmColor = arg1(dependencyMap[9]).ButtonColors.RED;
-  return Promise.resolve(importDefault(dependencyMap[8]).show(obj));
+  obj.confirmColor = require(1273) /* Button */.ButtonColors.RED;
+  return Promise.resolve(importDefault(4470).show(obj));
 };

@@ -27,11 +27,11 @@ function concatty(arg0, arg1) {
   return items;
 }
 
-export default function bind(iter, closure_101, queue, bindResult1, bindResult, arg5) {
+export default function bind(iter, c101, queue, bindResult1, bindResult, closure_2) {
   let length;
-  const self = this;
+  let self = this;
   const toString = iter;
-  const max = this;
+  self = this;
   if ("function" === typeof this) {
     if ("[object Function]" === toString.apply(self)) {
       const items = [];
@@ -63,7 +63,7 @@ export default function bind(iter, closure_101, queue, bindResult1, bindResult, 
           str4 = text1;
         } while (num4 < items1.length);
       }
-      const tmp6 = Function("binder", `return function (${str4}){ return binder.apply(this,arguments); }`)(function binder() {
+      let tmp6 = Function("binder", `return function (${str4}){ return binder.apply(this,arguments); }`)(function binder() {
         let self = this;
         const apply = self.apply;
         if (this instanceof tmp6) {
@@ -74,8 +74,8 @@ export default function bind(iter, closure_101, queue, bindResult1, bindResult, 
           }
           return self;
         } else {
-          const tmp6 = arguments;
-          return apply(arg0, tmp6(items, arguments));
+          tmp6 = arguments;
+          return apply(closure_0, tmp6(items, arguments));
         }
       });
       const concatty = tmp6;

@@ -1,6 +1,6 @@
 // Module ID: 1547
-// Function ID: 17573
+// Function ID: 17574
 // Dependencies: []
 
 // Module 1547
-arg5.default = { dark: true, colors: {} };
+arg5.default = { dark: true, colors: { primary: "rgb(10, 132, 255)", background: "rgb(1, 1, 1)", card: "rgb(18, 18, 18)", text: "rgb(229, 229, 231)", border: "rgb(39, 39, 41)", notification: "rgb(255, 69, 58)" } };

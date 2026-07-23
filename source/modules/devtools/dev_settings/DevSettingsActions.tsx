@@ -1,27 +1,29 @@
-// Module ID: 14548
-// Function ID: 109589
+// Module ID: 14662
+// Function ID: 111749
 // Name: toggle
-// Dependencies: []
+// Dependencies: [4129, 686, 2]
 // Exports: clearAll
 
-// Module 14548 (toggle)
+// Module 14662 (toggle)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function toggle(toggle) {
   let tmp = arg1;
   if ("boolean" !== typeof arg1) {
-    tmp = !closure_2.get(toggle);
+    tmp = !_isNativeReflectConstruct.get(toggle);
   }
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(686);
   obj = { type: "DEV_TOOLS_DEV_SETTING_SET", toggle, value: tmp };
   obj.dispatch(obj);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/devtools/dev_settings/DevSettingsActions.tsx");
+const result = require("set").fileFinishedImporting("modules/devtools/dev_settings/DevSettingsActions.tsx");
 
 export { toggle };
 export const clearAll = function clearAll() {
-  for (const key10006 in closure_2.enabled()) {
+  for (const key10006 in _isNativeReflectConstruct.enabled()) {
     let tmp = key10006;
-    let tmp2 = closure_3;
-    let tmp3 = closure_3(key10006, false);
+    let tmp2 = toggle;
+    let tmp3 = toggle(key10006, false);
+    continue;
   }
 };

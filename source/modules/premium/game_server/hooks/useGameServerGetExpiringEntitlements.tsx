@@ -1,20 +1,21 @@
-// Module ID: 11582
-// Function ID: 90033
+// Module ID: 11592
+// Function ID: 90082
 // Name: useGameServerGetExpiringEntitlements
-// Dependencies: []
+// Dependencies: [31, 4038, 566, 11525, 2]
 // Exports: default
 
-// Module 11582 (useGameServerGetExpiringEntitlements)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/game_server/hooks/useGameServerGetExpiringEntitlements.tsx");
+// Module 11592 (useGameServerGetExpiringEntitlements)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/premium/game_server/hooks/useGameServerGetExpiringEntitlements.tsx");
 
 export default function useGameServerGetExpiringEntitlements(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   let entitlements;
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => stateForGuild.getStateForGuild(arg0));
-  const dependencyMap = stateFromStores;
+  let items = [_isNativeReflectConstruct];
+  stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => outer1_3.getStateForGuild(closure_0));
   if (null != stateFromStores) {
     entitlements = stateFromStores.entitlements;
   }
@@ -31,8 +32,8 @@ export default function useGameServerGetExpiringEntitlements(arg0) {
     if (0 === values.length) {
       let items = [];
     } else {
-      items = arg0(stateFromStores[3]).getExpiringGuildEntitlements(values);
-      const obj2 = arg0(stateFromStores[3]);
+      items = callback(stateFromStores[3]).getExpiringGuildEntitlements(values);
+      const obj2 = callback(stateFromStores[3]);
     }
     return items;
   }, items1);

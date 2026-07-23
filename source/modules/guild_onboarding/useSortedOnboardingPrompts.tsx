@@ -1,20 +1,21 @@
-// Module ID: 9966
-// Function ID: 77006
+// Module ID: 9974
+// Function ID: 77046
 // Name: useSortedOnboardingPrompts
-// Dependencies: []
+// Dependencies: [31, 5058, 624, 2]
 // Exports: default
 
-// Module 9966 (useSortedOnboardingPrompts)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_onboarding/useSortedOnboardingPrompts.tsx");
+// Module 9974 (useSortedOnboardingPrompts)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/guild_onboarding/useSortedOnboardingPrompts.tsx");
 
 export default function useSortedOnboardingPrompts(arg0) {
-  const arg1 = arg0;
-  const items = [closure_3];
-  const stateFromStoresArray = arg1(dependencyMap[2]).useStateFromStoresArray(items, () => enabledOnboardingPrompts.getEnabledOnboardingPrompts(arg0));
-  const dependencyMap = stateFromStoresArray;
-  const items1 = [stateFromStoresArray];
+  const _require = arg0;
+  let items = [_isNativeReflectConstruct];
+  stateFromStoresArray = _require(stateFromStoresArray[2]).useStateFromStoresArray(items, () => outer1_3.getEnabledOnboardingPrompts(closure_0));
+  let items1 = [stateFromStoresArray];
   return React.useMemo(() => {
     const items = [];
     const items1 = [];
@@ -25,8 +26,8 @@ export default function useSortedOnboardingPrompts(arg0) {
     let num3 = 0;
     if (0 < stateFromStoresArray.length) {
       do {
-        let tmp = closure_1;
-        let tmp2 = closure_1[num3];
+        let tmp = stateFromStoresArray;
+        let tmp2 = stateFromStoresArray[num3];
         if (tmp2.isNew) {
           let arr = items.push(tmp2);
           let sum = num2;
@@ -42,10 +43,10 @@ export default function useSortedOnboardingPrompts(arg0) {
           sum = num2;
         }
         num3 = num3 + 1;
-        let tmp8 = closure_1;
+        let tmp8 = stateFromStoresArray;
         num2 = sum;
         num = sum;
-      } while (num3 < closure_1.length);
+      } while (num3 < stateFromStoresArray.length);
     }
     const obj = { onboardingPromptsRaw: stateFromStoresArray, newOnboardingPrompts: items, onboardingPromptsWithNewAnswers: items1, newAnswersCount: num, onboardingPrompts: items2.concat(items3) };
     return obj;

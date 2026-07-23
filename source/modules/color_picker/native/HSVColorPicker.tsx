@@ -1,17 +1,21 @@
-// Module ID: 13457
-// Function ID: 102177
+// Module ID: 13571
+// Function ID: 104333
 // Name: HSVColorPicker
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 3991, 13572, 13573, 2]
 // Exports: default
 
-// Module 13457 (HSVColorPicker)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ hsvColorPicker: { alignItems: "center" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/color_picker/native/HSVColorPicker.tsx");
+// Module 13571 (HSVColorPicker)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ hsvColorPicker: { alignItems: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/color_picker/native/HSVColorPicker.tsx");
 
 export default function HSVColorPicker(arg0) {
   let hue;
@@ -28,16 +32,16 @@ export default function HSVColorPicker(arg0) {
   let value;
   ({ hue, saturation, value, onPanUpdate, onPanFinalize } = arg0);
   ({ saturationValuePickerStyle, saturationValueColorBoxStyle, saturationValueColorBoxInnerStyle, saturationValueSelectorStyle, huePickerStyle, hueColorBarInnerStyle, hueSliderStyle } = arg0);
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(3991);
   let sharedValue = obj.useSharedValue(0);
-  let obj1 = arg1(dependencyMap[4]);
+  let obj1 = require(3991);
   let sharedValue1 = obj1.useSharedValue(1);
   const tmp = callback();
-  let sharedValue2 = arg1(dependencyMap[4]).useSharedValue(1);
+  let sharedValue2 = require(3991).useSharedValue(1);
   obj = { style: tmp.hsvColorPicker };
   obj = {};
   let tmp9 = sharedValue;
-  const obj3 = arg1(dependencyMap[4]);
+  const obj3 = require(3991);
   const tmp5 = closure_5;
   const tmp6 = View;
   const tmp7 = closure_4;
@@ -59,10 +63,10 @@ export default function HSVColorPicker(arg0) {
   obj.selectorStyle = saturationValueSelectorStyle;
   obj.onPanUpdate = onPanUpdate;
   obj.onPanFinalize = onPanFinalize;
-  const items = [tmp7(importDefault(dependencyMap[5]), obj), ];
+  const items = [tmp7(importDefault(13572), obj), ];
   obj1 = {};
   const tmp10 = closure_4;
-  const tmp8 = importDefault(dependencyMap[5]);
+  const tmp8 = importDefault(13572);
   if (null != hue) {
     sharedValue = hue;
   }
@@ -72,7 +76,7 @@ export default function HSVColorPicker(arg0) {
   obj1.sliderStyle = hueSliderStyle;
   obj1.onPanUpdate = onPanUpdate;
   obj1.onPanFinalize = onPanFinalize;
-  items[1] = tmp10(importDefault(dependencyMap[6]), obj1);
+  items[1] = tmp10(importDefault(13573), obj1);
   obj.children = items;
   return tmp5(tmp6, obj);
 };

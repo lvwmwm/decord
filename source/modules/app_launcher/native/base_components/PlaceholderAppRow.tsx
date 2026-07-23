@@ -1,23 +1,25 @@
-// Module ID: 11199
-// Function ID: 87237
+// Module ID: 11209
+// Function ID: 87287
 // Name: PlaceholderAppRow
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 11174, 5165, 2]
 // Exports: default
 
-// Module 11199 (PlaceholderAppRow)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
-obj.loadingAppIcon = obj;
-obj.loadingTextPlaceholder = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
-obj.loadingTextPlaceholderSmall = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[4]).radii.lg, alignSelf: "flex-start" };
-let closure_4 = obj.createStyles(obj);
-const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: importDefault(dependencyMap[4]).radii.lg, alignSelf: "flex-start" };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/base_components/PlaceholderAppRow.tsx");
+// Module 11209 (PlaceholderAppRow)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+_createForOfIteratorHelperLoose.loadingAppIcon = _createForOfIteratorHelperLoose;
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, height: 16, marginBottom: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start" };
+_createForOfIteratorHelperLoose.loadingTextPlaceholder = obj1;
+_createForOfIteratorHelperLoose.loadingTextPlaceholderSmall = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start" };
+const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/base_components/PlaceholderAppRow.tsx");
 
 export default function PlaceholderAppRow(isFirstRow) {
   let flag = isFirstRow.isFirstRow;
@@ -28,29 +30,29 @@ export default function PlaceholderAppRow(isFirstRow) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp = callback();
-  let obj = arg1(dependencyMap[5]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(11174) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  let obj1 = arg1(dependencyMap[5]);
+  let obj1 = require(11174) /* usePlaceholderWidth */;
   const placeholderWidth1 = obj1.usePlaceholderWidth(30, 90);
   obj = {};
   obj = { style: tmp.loadingAppIcon };
-  obj.icon = <View {...obj} />;
+  obj.icon = <View style={tmp.loadingAppIcon} />;
   obj1 = {};
   const items = [tmp.loadingTextPlaceholder, { width: "" + placeholderWidth + "%" }];
   obj1.style = items;
-  obj.label = <View {...obj1} />;
+  obj.label = <View />;
   const obj3 = {};
   const items1 = [tmp.loadingTextPlaceholderSmall, ];
   const obj2 = { width: "" + placeholderWidth + "%" };
   items1[1] = { width: "" + placeholderWidth1 + "%" };
   obj3.style = items1;
-  obj.subLabel = <View {...obj3} />;
+  obj.subLabel = <View />;
   obj.subLabelLineClamp = 1;
   obj.start = flag;
   obj.end = flag2;
   obj.onPress = function onPress() {
 
   };
-  return jsx(arg1(dependencyMap[6]).TableRow, obj);
+  return jsx(require(5165) /* TableRowInner */.TableRow, { style: tmp.loadingAppIcon });
 };

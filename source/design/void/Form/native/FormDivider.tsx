@@ -1,30 +1,34 @@
-// Module ID: 7186
-// Function ID: 57858
+// Module ID: 7191
+// Function ID: 57892
 // Name: Divider
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1324, 3842, 5486, 3974, 5164, 2]
 // Exports: default
 
-// Module 7186 (Divider)
+// Module 7191 (Divider)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let DARK;
 let DARKER;
 let LIGHT;
 let MIDNIGHT;
 let Platform;
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, StyleSheet: closure_5, Platform } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-let closure_7 = obj.createStyles((arg0) => {
+let closure_4;
+let closure_5;
+const require = arg1;
+({ View: closure_4, StyleSheet: closure_5, Platform } = get_ActivityIndicator);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = { divider: {} };
-  obj = { marginLeft: 0, height: closure_5.hairlineWidth, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, marginTop: -1 * closure_5.hairlineWidth };
+  obj = { marginLeft: 0, height: closure_5.hairlineWidth, backgroundColor: importDefault(689).colors.BORDER_SUBTLE, marginTop: -1 * closure_5.hairlineWidth };
   obj.dividerOuter = obj;
   obj.dividerHasIcon = { marginLeft: 56 };
   return obj;
 });
-obj = { [LIGHT]: importDefault(dependencyMap[5]).unsafe_rawColors.BLACK, [DARK]: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE, [DARKER]: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE, [MIDNIGHT]: importDefault(dependencyMap[5]).unsafe_rawColors.WHITE };
-({ LIGHT, DARK, DARKER, MIDNIGHT } = arg1(dependencyMap[2]).ThemeTypes);
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("design/void/Form/native/FormDivider.tsx");
+_createForOfIteratorHelperLoose = { [LIGHT]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, [DARK]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, [DARKER]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, [MIDNIGHT]: require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE };
+({ LIGHT, DARK, DARKER, MIDNIGHT } = require("ME").ThemeTypes);
+const result = require("ME").fileFinishedImporting("design/void/Form/native/FormDivider.tsx");
 
 export default function Divider(outer) {
   let flag = outer.outer;
@@ -35,20 +39,19 @@ export default function Divider(outer) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp = callback(importDefault(dependencyMap[6])("FormDivider"));
-  let obj = arg1(dependencyMap[7]);
+  const tmp = callback(importDefault(1324)("FormDivider"));
+  let obj = require(3842) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   const theme = themeContext.theme;
-  const profileThemeValues = arg1(dependencyMap[8]).useProfileThemeValues(theme);
+  const profileThemeValues = require(5486) /* useProfileThemeValues */.useProfileThemeValues(theme);
   let tmp5 = null;
   if (tmp4) {
-    obj = {};
-    obj.backgroundColor = arg1(dependencyMap[9]).hexOpacityToRgba(obj[theme], profileThemeValues.dividerOpacity);
+    obj = { backgroundColor: require(3974) /* hexToRgb */.hexOpacityToRgba(_createForOfIteratorHelperLoose[theme], profileThemeValues.dividerOpacity) };
     tmp5 = obj;
-    const obj4 = arg1(dependencyMap[9]);
+    const obj4 = require(3974) /* hexToRgb */;
   }
   let tmp10Result = null;
-  if (!React.useContext(arg1(dependencyMap[10]).RedesignCompatContext)) {
+  if (!React.useContext(require(5164) /* context */.RedesignCompatContext)) {
     obj = {};
     const items = [flag ? tmp.dividerOuter : tmp.divider, , , ];
     if (flag2) {
@@ -58,10 +61,10 @@ export default function Divider(outer) {
     items[2] = outer.style;
     items[3] = tmp5;
     obj.style = items;
-    tmp10Result = <closure_4 {...obj} />;
+    tmp10Result = <closure_4 />;
     const tmp10 = jsx;
     const tmp11 = closure_4;
   }
   return tmp10Result;
 };
-export const DIVIDER_COLORS = obj;
+export const DIVIDER_COLORS = _createForOfIteratorHelperLoose;

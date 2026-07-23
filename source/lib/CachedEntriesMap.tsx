@@ -1,30 +1,32 @@
-// Module ID: 4159
-// Function ID: 35185
+// Module ID: 4163
+// Function ID: 35217
 // Name: CachedEntriesMap
-// Dependencies: []
+// Dependencies: [6, 7, 1916, 2]
 
-// Module 4159 (CachedEntriesMap)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 4163 (CachedEntriesMap)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class CachedEntriesMap {
     constructor() {
-      CachedEntriesMap = this;
-      tmp = closure_2(this, CachedEntriesMap);
+      self = this;
+      tmp = outer1_2(this, self);
       this.version = 0;
       map = new Map();
       this.data = map;
-      obj = CachedEntriesMap(closure_1[2]);
+      obj = CachedEntriesMap(outer1_1[2]);
       this.cachedValues = obj.cachedFunction(() => {
         const data = self.data;
         return Array.from(data.values());
       });
-      obj2 = CachedEntriesMap(closure_1[2]);
+      obj2 = CachedEntriesMap(outer1_1[2]);
       this.cachedKeys = obj2.cachedFunction(() => {
         const data = self.data;
         return Array.from(data.keys());
       });
-      obj3 = CachedEntriesMap(closure_1[2]);
+      obj3 = CachedEntriesMap(outer1_1[2]);
       this.cachedEntries = obj3.cachedFunction(() => {
         const data = self.data;
         return Array.from(data.entries());
@@ -32,7 +34,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = CachedEntriesMap;
   let obj = {
     key: "keys",
     value() {
@@ -103,7 +104,7 @@ const tmp2 = () => {
     }
   };
   return callback(CachedEntriesMap, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/CachedEntriesMap.tsx");
+})();
+let result = require("areArraysShallowlyEqual").fileFinishedImporting("lib/CachedEntriesMap.tsx");
 
 export default tmp2;

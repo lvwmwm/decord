@@ -1,11 +1,10 @@
-// Module ID: 15552
-// Function ID: 118665
+// Module ID: 15669
+// Function ID: 120838
 // Name: CHANNEL_THEME_COLOR_PALETTE
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 15552 (CHANNEL_THEME_COLOR_PALETTE)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/channel_emoji/ChannelEmojiConstants.tsx");
+// Module 15669 (CHANNEL_THEME_COLOR_PALETTE)
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/channel_emoji/ChannelEmojiConstants.tsx");
 
-export const CHANNEL_THEME_COLOR_PALETTE = [-133955580, -532545535, 67110018, 1375732216, 78424223, -1402986414, -1788784124, 2035418284, 1376037922, 78421198, -1408678574, 2094022916];
+export const CHANNEL_THEME_COLOR_PALETTE = ["#5865F2", "#9B59B6", "#206694", "#3498DB", "#11806A", "#1ABC9C", "#992D22", "#E91E63", "#E74C3C", "#E67E22", "#F1C40F", "#607D8B"];
 export const DEFAULT_CHANNEL_EMOJI_BACKGROUND_COLOR = "#607D8B";

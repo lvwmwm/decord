@@ -1,66 +1,69 @@
-// Module ID: 10064
-// Function ID: 77715
-// Dependencies: []
+// Module ID: 10072
+// Function ID: 77755
+// Dependencies: [5, 57, 31, 27, 1348, 1838, 653, 33, 4130, 689, 566, 5737, 5048, 5713, 1282, 1392, 1212, 5167, 5515, 1387, 4126, 10043, 4543, 2]
 
-// Module 10064
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const JoinGuildSources = arg1(dependencyMap[6]).JoinGuildSources;
-({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let obj1 = arg1(dependencyMap[8]);
-let obj = { container: {}, guildInfoContainer: { 1649697713: "onAnimationFinishCapture", 106012843: "onAnimationFinish" } };
-obj = { borderRadius: importDefault(dependencyMap[9]).radii.sm, marginRight: 16 };
+// Module 10072
+import closure_3 from "_createForOfIteratorHelperLoose";
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import { JoinGuildSources } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+const require = arg1;
+({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
+let obj = { container: { flexDirection: "row", padding: 16, marginVertical: 6, marginHorizontal: 8 }, guildInfoContainer: { flexDirection: "column", flex: 1 } };
+obj = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginRight: 16 };
 obj.guildIcon = obj;
 obj.guildWrapper = { flex: 1 };
-obj.guildDescription = { entryType: "<string:2126337>", raw: "<string:2097152>" };
-obj.memberInfo = {};
-obj1 = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": "relative", "Bool(false)": "100%", borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.GREEN_360 };
-obj.dotOnline = obj1;
-const tmp2 = arg1(dependencyMap[7]);
-obj.dotOffline = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
-obj.headerContainer = {};
-obj.titleContainer = { 1649697713: "REDESIGN_INPUT_CONTROL_ACTIVE_BG", 106012843: "CAN" };
-obj.flex = { backgroundColor: false, borderWidth: false };
-let closure_13 = obj1.createStyles(obj);
-const obj2 = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).unsafe_rawColors.PRIMARY_400 };
+obj.guildDescription = { flexShrink: 1, marginBottom: 8 };
+obj.memberInfo = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
+_createForOfIteratorHelperLoose = { width: 8, height: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginRight: 4, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
+obj.dotOnline = _createForOfIteratorHelperLoose;
+let obj2 = { width: 8, height: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginRight: 4, marginLeft: 16, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_400 };
+obj.dotOffline = obj2;
+obj.headerContainer = { flexDirection: "row", marginBottom: 4, justifyContent: "space-between" };
+obj.titleContainer = { flexDirection: "row", flex: 1 };
+obj.flex = { flex: 1, height: 4 };
+let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   let approximateMemberCount;
   let approximatePresenceCount;
   let description;
   entry = entry.entry;
-  const arg1 = entry;
   let importDefault;
-  let closure_2;
+  let dependencyMap;
   function _handleJoinGuild() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = _handleJoinGuild(tmp);
-    const _handleJoinGuild = obj;
     return obj(...arguments);
   }
   const tmp = callback4();
   ({ description, approximateMemberCount, approximatePresenceCount } = entry);
-  let obj = arg1(closure_2[10]);
+  let obj = entry(566);
   const items = [closure_8];
-  const tmp2 = null != obj.useStateFromStores(items, () => guild.getGuild(entry.guildId));
+  const tmp2 = null != obj.useStateFromStores(items, () => outer1_8.getGuild(entry.guildId));
   importDefault = tmp2;
   const tmp3 = callback(importAllResult.useState(false), 2);
-  closure_2 = tmp3[1];
-  let obj1 = importDefault(closure_2[15]);
+  dependencyMap = tmp3[1];
+  let obj1 = importDefault(1392);
   obj = { id: entry.guildId, icon: entry.icon, size: 40 };
   const guildIconURL = obj1.getGuildIconURL(obj);
   let tmp5;
   if (null != guildIconURL) {
     tmp5 = guildIconURL;
   }
-  const intl = arg1(closure_2[16]).intl;
-  let stringResult = intl.string(arg1(closure_2[16]).t.VJlc0S);
+  const intl = entry(1212).intl;
+  let stringResult = intl.string(entry(1212).t.VJlc0S);
   if (tmp2) {
-    const intl2 = arg1(closure_2[16]).intl;
-    stringResult = intl2.string(arg1(closure_2[16]).t.cqWE2Z);
+    const intl2 = entry(1212).intl;
+    stringResult = intl2.string(entry(1212).t.cqWE2Z);
   }
   obj = { style: tmp.container };
   obj1 = { style: tmp.guildWrapper };
@@ -69,26 +72,26 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   const obj4 = { style: tmp.guildIcon, icon: tmp5 };
   let result;
   if (null == tmp5) {
-    let obj8 = arg1(closure_2[19]);
+    let obj8 = entry(1387);
     result = obj8.fromGuildDirectoryEntry(entry);
   }
   obj4.guild = result;
   obj4.selected = false;
-  const items1 = [callback2(importDefault(closure_2[18]), obj4), ];
+  const items1 = [callback2(importDefault(5515), obj4), ];
   const obj5 = { style: tmp.guildInfoContainer };
-  const obj6 = { 803799044: "<string:20995968>", 1269170180: "ars", 711589892: "<string:310460928>", children: entry.name };
-  const items2 = [callback2(arg1(closure_2[20]).Text, obj6), ];
+  const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: entry.name };
+  const items2 = [callback2(entry(4126).Text, obj6), ];
   const obj7 = { style: tmp.memberInfo };
   let tmp18 = null;
   if (null != approximatePresenceCount) {
     obj8 = {};
     const obj9 = { style: tmp.dotOnline };
     const items3 = [callback2(View, obj9), ];
-    const obj10 = { cachedAt: true, edpbxy: true };
-    const intl3 = arg1(closure_2[16]).intl;
+    const obj10 = { variant: "text-xs/medium", color: "text-default" };
+    const intl3 = entry(1212).intl;
     const obj11 = { membersOnline: approximatePresenceCount };
-    obj10.children = intl3.format(arg1(closure_2[16]).t.LC+S+m, obj11);
-    items3[1] = callback2(arg1(closure_2[20]).Text, obj10);
+    obj10.children = intl3.format(entry(1212).t["LC+S+m"], obj11);
+    items3[1] = callback2(entry(4126).Text, obj10);
     obj8.children = items3;
     tmp18 = callback3(closure_11, obj8);
   }
@@ -98,11 +101,11 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     const obj12 = {};
     const obj13 = { style: tmp.dotOffline };
     const items5 = [callback2(View, obj13), ];
-    const obj14 = { cachedAt: true, edpbxy: true };
-    const intl4 = arg1(closure_2[16]).intl;
+    const obj14 = { variant: "text-xs/medium", color: "text-default" };
+    const intl4 = entry(1212).intl;
     const obj15 = { count: approximateMemberCount };
-    obj14.children = intl4.format(arg1(closure_2[16]).t.zRl6XR, obj15);
-    items5[1] = callback2(arg1(closure_2[20]).Text, obj14);
+    obj14.children = intl4.format(entry(1212).t.zRl6XR, obj15);
+    items5[1] = callback2(entry(4126).Text, obj14);
     obj12.children = items5;
     tmp25 = callback3(closure_11, obj12);
   }
@@ -113,8 +116,8 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   items1[1] = callback3(View, obj5);
   obj3.children = items1;
   const items6 = [callback3(View, obj3), ];
-  const tmp12 = importDefault(closure_2[18]);
-  items6[1] = callback2(View, { children: callback2(importDefault(closure_2[21]), { entry }) });
+  const tmp12 = importDefault(5515);
+  items6[1] = callback2(View, { children: callback2(importDefault(10043), { entry }) });
   obj2.children = items6;
   const items7 = [callback3(View, obj2), , , ];
   let tmp32 = null != description;
@@ -122,8 +125,8 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
     tmp32 = "" !== description;
   }
   if (tmp32) {
-    const obj17 = { -9223372036854775808: 0, 9223372036854775807: 0, 9223372036854775807: 0, 9223372036854775807: 0, style: tmp.guildDescription, children: description };
-    tmp32 = callback2(arg1(closure_2[20]).Text, obj17);
+    const obj17 = { lineClamp: 3, style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: description };
+    tmp32 = callback2(entry(4126).Text, obj17);
   }
   items7[1] = tmp32;
   items7[2] = callback2(View, { style: tmp.flex });
@@ -139,11 +142,11 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   }
   obj19.variant = str2;
   obj19.text = stringResult;
-  items7[3] = callback2(arg1(closure_2[22]).Button, obj19);
+  items7[3] = callback2(entry(4543).Button, obj19);
   obj1.children = items7;
   obj.children = callback3(View, obj1);
-  return callback2(arg1(closure_2[17]).Card, obj);
+  return callback2(entry(5167).Card, obj);
 });
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryRow.tsx");
+let result = require("result").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryRow.tsx");
 
 export default memoResult;

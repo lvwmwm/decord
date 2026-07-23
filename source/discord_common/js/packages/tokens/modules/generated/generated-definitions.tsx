@@ -1,52 +1,54 @@
 // Module ID: 694
 // Function ID: 8503
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 694 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let _createForOfIteratorHelperLoose = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import set from "set";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +59,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      _createForOfIteratorHelperLoose = tmp;
+      closure_0 = tmp;
     }
-    const _arrayLikeToArray = 0;
+    _arrayLikeToArray = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,7 +85,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let _module = {
+let set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -136,22 +138,27 @@ obj = {
     }
   }
 };
-_module = {
+set = {
+  resolve() {
+    return 0.15;
+  }
+};
+set = {
   resolve() {
     return 8;
   }
 };
-_module = {
+set = {
   resolve() {
     return 6;
   }
 };
-_module = {
+set = {
   resolve() {
     return 0.4;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -170,7 +177,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -189,7 +196,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -208,7 +215,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -227,7 +234,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -246,7 +253,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -265,7 +272,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -284,7 +291,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -303,7 +310,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -322,7 +329,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -341,7 +348,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -360,7 +367,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -379,17 +386,17 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 40;
   }
 };
-_module = {
+set = {
   resolve() {
     return 20;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -408,7 +415,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -427,7 +434,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -446,7 +453,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -465,7 +472,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -484,7 +491,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -503,7 +510,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -522,7 +529,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -541,7 +548,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -560,7 +567,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -579,7 +586,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -598,7 +605,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -617,7 +624,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -636,7 +643,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -655,12 +662,12 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return "row";
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -679,7 +686,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -698,12 +705,12 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 32;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -722,7 +729,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -741,7 +748,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -760,7 +767,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -779,12 +786,12 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 288;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -803,7 +810,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -822,7 +829,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -841,12 +848,12 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 4;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -865,7 +872,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -884,7 +891,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -903,7 +910,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -922,7 +929,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -941,7 +948,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -960,7 +967,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -979,7 +986,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -998,7 +1005,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1017,12 +1024,12 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 56;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1041,7 +1048,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1060,12 +1067,12 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 32;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1084,7 +1091,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1103,12 +1110,12 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 12;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1127,7 +1134,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1146,7 +1153,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1165,7 +1172,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1184,12 +1191,12 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 16;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1208,7 +1215,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1227,7 +1234,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1246,12 +1253,12 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 17;
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1270,7 +1277,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1289,7 +1296,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1308,7 +1315,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1327,7 +1334,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1346,7 +1353,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1365,7 +1372,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1384,7 +1391,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1403,7 +1410,7 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve(enabledExperiments) {
     enabledExperiments = enabledExperiments.enabledExperiments;
     if (0 === enabledExperiments.length) {
@@ -1422,47 +1429,46 @@ _module = {
     }
   }
 };
-_module = {
+set = {
   resolve() {
     return 24;
   }
 };
-_module = {
+set = {
   resolve() {
     return 16;
   }
 };
-_module = {
+set = {
   resolve() {
     return 800;
   }
 };
-_module = {
+set = {
   resolve() {
     return 602;
   }
 };
-_module = {
+set = {
   resolve() {
     return 442;
   }
 };
-_module = {
+set = {
   resolve() {
     return 248;
   }
 };
-_module = {
+set = {
   resolve() {
     return 40;
   }
 };
-_module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/tokens/modules/generated/generated-definitions.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/packages/tokens/modules/generated/generated-definitions.tsx");
 
 export const _private = {
   Modules: {
-    button: { BORDER_RADIUS: _module, BORDER_RADIUS_LG: obj },
+    button: { BORDER_RADIUS: set, BORDER_RADIUS_LG: obj },
     channels: {
       NAME_LINE_HEIGHT: obj,
       SPINE_INVERTED_OFFSET_TOP: {
@@ -1760,6 +1766,25 @@ export const _private = {
               return 0;
             }
             return 8;
+          }
+        }
+      },
+      CHANNEL_HEADER_ICON_SIZE: {
+        resolve(enabledExperiments) {
+          enabledExperiments = enabledExperiments.enabledExperiments;
+          if (0 === enabledExperiments.length) {
+            return "md";
+          } else {
+            const tmp2 = _createForOfIteratorHelperLoose(enabledExperiments);
+            let iter = tmp2();
+            if (!iter.done) {
+              while ("mobile-visual-refresh" !== iter.value) {
+                let iter2 = tmp2();
+                iter = iter2;
+              }
+              return "xs";
+            }
+            return "md";
           }
         }
       },
@@ -3041,91 +3066,87 @@ export const _private = {
           }
         }
       },
-      GUILD_FOLDER_COLOR_OPACITY: {
-        resolve() {
-          return 0.15;
-        }
-      },
-      GUILD_FOLDER_PADDING: _module,
-      GUILD_FOLDER_PREVIEW_ICON_MARGIN: _module,
-      GUILD_FOLDER_PREVIEW_OPACITY: _module,
-      GUILD_ITEM_SELECTED_BORDER_RADIUS: _module,
-      HEADER_TITLE_TEXT_STYLE: _module,
-      INPUT_FIELD_BORDER_WIDTH: _module,
-      INPUT_FIELD_PADDING_VERTICAL_SM_IOS: _module,
-      INPUT_FIELD_RADIUS_LG: _module,
-      INPUT_FIELD_RADIUS_MD: _module,
-      INPUT_FIELD_RADIUS_SM: _module,
-      INPUT_FIELD_ROUND_RADIUS: _module,
-      INPUT_FIELD_TEXT_STYLE_LG: _module,
-      INPUT_FIELD_TEXT_STYLE_MD: _module,
-      INPUT_FIELD_TEXT_STYLE_SM: _module,
-      JUMP_TO_PRESENT_BOTTOM_SPACING: _module,
-      JUMP_TO_PRESENT_BUTTON_SIZE: _module,
-      JUMP_TO_PRESENT_ICON_SIZE: _module,
-      JUMP_TO_PRESENT_RIGHT_SPACING: _module,
-      MEDIA_KEYBOARD_BAR_BORDER_RADIUS: _module,
-      MEDIA_KEYBOARD_BAR_BORDER_WIDTH: _module,
-      MEDIA_KEYBOARD_BAR_BUTTONS_MARGIN_HORIZONTAL: _module,
-      MEDIA_KEYBOARD_BAR_GAP: _module,
-      MEDIA_KEYBOARD_BAR_MARGIN_HORIZONTAL: _module,
-      MEDIA_KEYBOARD_BAR_PADDING_HORIZONTAL: _module,
-      MEDIA_KEYBOARD_BUTTON_BORDER_RADIUS: _module,
-      MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE: _module,
-      MEDIA_KEYBOARD_BUTTON_PADDING: _module,
-      MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE: _module,
-      MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT: _module,
-      MEDIA_KEYBOARD_SEND_VERTICAL_INSET: _module,
-      MESSAGES_HEADER_BUTTON_GAP: _module,
-      MESSAGES_HEADER_BUTTON_LAYOUT: _module,
-      MESSAGES_HEADER_PADDING_BOTTOM: _module,
-      MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END: _module,
-      MESSAGES_ITEM_CHANNEL_AVATAR_SIZE: _module,
-      MESSAGES_ITEM_CHANNEL_NAME_TEXT_STYLE: _module,
-      MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM: _module,
-      MOBILE_KEYBOARD_TOP_BORDER_RADIUS: _module,
-      MOBILE_MEDIA_KEYBOARD_TOP_BORDER_RADIUS: _module,
-      PROMO_SHEET_GRAPHIC_MAX_WIDTH: _module,
-      QUEST_DOCK_BORDER_RADIUS: _module,
-      SEGMENTED_CONTROL_BORDER_RADIUS: _module,
-      SETTINGS_PADDING_TOP: _module,
-      SHEET_HANDLE_HEIGHT: _module,
-      SHEET_HANDLE_MARGIN_BOTTOM: _module,
-      SHEET_HANDLE_MARGIN_TOP: _module,
-      SHEET_HANDLE_WIDTH: _module,
-      SHEET_HEADER_PADDING_HORIZONTAL: _module,
-      TABLE_ROW_ARROW_MARGIN_END: _module,
-      TABLE_ROW_ARROW_MARGIN_START: _module,
-      TABLE_ROW_ARROW_WIDTH: _module,
-      TABLE_ROW_BORDER_RADIUS: _module,
-      TABLE_ROW_CONTENT_HEIGHT: _module,
-      TABLE_ROW_DIVIDER_PADDING: _module,
-      TABLE_ROW_GROUP_HELPER_TEXT_STYLE: _module,
-      TABLE_ROW_HEIGHT: _module,
-      TABLE_ROW_ICON_SIZE: _module,
-      TABLE_ROW_LABEL_COLOR: _module,
-      TABLE_ROW_LABEL_TEXT_STYLE: _module,
-      TABLE_ROW_PADDING: _module,
-      TAB_BAR_UNREAD_BADGE_SIZE: _module,
-      TAB_LABEL_MARGIN_TOP: _module,
-      TAB_LABEL_TEXT_STYLE: _module,
-      USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE: _module,
-      USER_ROW_LABEL_LINE_HEIGHT_ANDROID: _module,
-      USER_ROW_LABEL_LINE_HEIGHT_IOS: _module,
-      VOICE_CHANNEL_USER_LIMIT_BORDER_WIDTH: _module,
-      VOICE_MESSAGE_DURATION_LINE_HEIGHT_ANDROID: _module,
-      VOICE_MESSAGE_DURATION_LINE_HEIGHT_IOS: _module,
-      VOICE_MESSAGE_DURATION_TEXT_STYLE: _module,
-      VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL: _module,
-      VOICE_PANEL_CONTROLS_BORDER_RADIUS: _module,
-      VOICE_PANEL_CONTROLS_PADDING: _module,
-      VOICE_PANEL_DISCONNECT_BUTTON_MIN_WIDTH: _module,
-      VOICE_PANEL_GUTTER: _module,
-      VOICE_PANEL_PADDING: _module,
-      VOICE_TILE_BORDER_RADIUS: _module,
-      YOU_BAR_BORDER_RADIUS: _module
+      GUILD_FOLDER_COLOR_OPACITY: set,
+      GUILD_FOLDER_PADDING: set,
+      GUILD_FOLDER_PREVIEW_ICON_MARGIN: set,
+      GUILD_FOLDER_PREVIEW_OPACITY: set,
+      GUILD_ITEM_SELECTED_BORDER_RADIUS: set,
+      HEADER_TITLE_TEXT_STYLE: set,
+      INPUT_FIELD_BORDER_WIDTH: set,
+      INPUT_FIELD_PADDING_VERTICAL_SM_IOS: set,
+      INPUT_FIELD_RADIUS_LG: set,
+      INPUT_FIELD_RADIUS_MD: set,
+      INPUT_FIELD_RADIUS_SM: set,
+      INPUT_FIELD_ROUND_RADIUS: set,
+      INPUT_FIELD_TEXT_STYLE_LG: set,
+      INPUT_FIELD_TEXT_STYLE_MD: set,
+      INPUT_FIELD_TEXT_STYLE_SM: set,
+      JUMP_TO_PRESENT_BOTTOM_SPACING: set,
+      JUMP_TO_PRESENT_BUTTON_SIZE: set,
+      JUMP_TO_PRESENT_ICON_SIZE: set,
+      JUMP_TO_PRESENT_RIGHT_SPACING: set,
+      MEDIA_KEYBOARD_BAR_BORDER_RADIUS: set,
+      MEDIA_KEYBOARD_BAR_BORDER_WIDTH: set,
+      MEDIA_KEYBOARD_BAR_BUTTONS_MARGIN_HORIZONTAL: set,
+      MEDIA_KEYBOARD_BAR_GAP: set,
+      MEDIA_KEYBOARD_BAR_MARGIN_HORIZONTAL: set,
+      MEDIA_KEYBOARD_BAR_PADDING_HORIZONTAL: set,
+      MEDIA_KEYBOARD_BUTTON_BORDER_RADIUS: set,
+      MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE: set,
+      MEDIA_KEYBOARD_BUTTON_PADDING: set,
+      MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE: set,
+      MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT: set,
+      MEDIA_KEYBOARD_SEND_VERTICAL_INSET: set,
+      MESSAGES_HEADER_BUTTON_GAP: set,
+      MESSAGES_HEADER_BUTTON_LAYOUT: set,
+      MESSAGES_HEADER_PADDING_BOTTOM: set,
+      MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END: set,
+      MESSAGES_ITEM_CHANNEL_AVATAR_SIZE: set,
+      MESSAGES_ITEM_CHANNEL_NAME_TEXT_STYLE: set,
+      MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM: set,
+      MOBILE_KEYBOARD_TOP_BORDER_RADIUS: set,
+      MOBILE_MEDIA_KEYBOARD_TOP_BORDER_RADIUS: set,
+      PROMO_SHEET_GRAPHIC_MAX_WIDTH: set,
+      QUEST_DOCK_BORDER_RADIUS: set,
+      SEGMENTED_CONTROL_BORDER_RADIUS: set,
+      SETTINGS_PADDING_TOP: set,
+      SHEET_HANDLE_HEIGHT: set,
+      SHEET_HANDLE_MARGIN_BOTTOM: set,
+      SHEET_HANDLE_MARGIN_TOP: set,
+      SHEET_HANDLE_WIDTH: set,
+      SHEET_HEADER_PADDING_HORIZONTAL: set,
+      TABLE_ROW_ARROW_MARGIN_END: set,
+      TABLE_ROW_ARROW_MARGIN_START: set,
+      TABLE_ROW_ARROW_WIDTH: set,
+      TABLE_ROW_BORDER_RADIUS: set,
+      TABLE_ROW_CONTENT_HEIGHT: set,
+      TABLE_ROW_DIVIDER_PADDING: set,
+      TABLE_ROW_GROUP_HELPER_TEXT_STYLE: set,
+      TABLE_ROW_HEIGHT: set,
+      TABLE_ROW_ICON_SIZE: set,
+      TABLE_ROW_LABEL_COLOR: set,
+      TABLE_ROW_LABEL_TEXT_STYLE: set,
+      TABLE_ROW_PADDING: set,
+      TAB_BAR_UNREAD_BADGE_SIZE: set,
+      TAB_LABEL_MARGIN_TOP: set,
+      TAB_LABEL_TEXT_STYLE: set,
+      USER_PROFILE_ABOUT_ME_HEADING_TEXT_STYLE: set,
+      USER_ROW_LABEL_LINE_HEIGHT_ANDROID: set,
+      USER_ROW_LABEL_LINE_HEIGHT_IOS: set,
+      VOICE_CHANNEL_USER_LIMIT_BORDER_WIDTH: set,
+      VOICE_MESSAGE_DURATION_LINE_HEIGHT_ANDROID: set,
+      VOICE_MESSAGE_DURATION_LINE_HEIGHT_IOS: set,
+      VOICE_MESSAGE_DURATION_TEXT_STYLE: set,
+      VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL: set,
+      VOICE_PANEL_CONTROLS_BORDER_RADIUS: set,
+      VOICE_PANEL_CONTROLS_PADDING: set,
+      VOICE_PANEL_DISCONNECT_BUTTON_MIN_WIDTH: set,
+      VOICE_PANEL_GUTTER: set,
+      VOICE_PANEL_PADDING: set,
+      VOICE_TILE_BORDER_RADIUS: set,
+      YOU_BAR_BORDER_RADIUS: set
     },
-    modal: { HORIZONTAL_PADDING: _module, VERTICAL_PADDING: _module, WIDTH_LARGE: _module, WIDTH_MEDIUM: _module, WIDTH_SMALL: _module },
-    select: { MAX_WIDTH: _module, OPTION_HEIGHT: _module }
+    modal: { HORIZONTAL_PADDING: set, VERTICAL_PADDING: set, WIDTH_LARGE: set, WIDTH_MEDIUM: set, WIDTH_SMALL: set },
+    select: { MAX_WIDTH: set, OPTION_HEIGHT: set }
   }
 };

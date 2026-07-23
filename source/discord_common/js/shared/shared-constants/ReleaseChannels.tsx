@@ -1,20 +1,22 @@
-// Module ID: 6834
-// Function ID: 53999
+// Module ID: 6839
+// Function ID: 54031
 // Name: set
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6834 (set)
-const obj = { WEB_AND_IOS: new Set([]) };
-const set = new Set([]);
-obj.ANDROID = new Set([]);
-const set1 = new Set([]);
-obj.QUEST_VR = new Set([]);
-const set2 = new Set([]);
-obj.OTHER = new Set([0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005078491471976344, 563243781193796.4, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002515774550358467, 744381834632222500000000000000000000000000000000000000000000000000000000000000000000000000000000]);
-const set3 = new Set([0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005078491471976344, 563243781193796.4, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002515774550358467, 744381834632222500000000000000000000000000000000000000000000000000000000000000000000000000000000]);
-obj.ALL = new Set([false, false, false, false, false, false, false, false, false, false, false, false, false]);
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ReleaseChannels.tsx");
+// Module 6839 (set)
+import set from "set";
+
+const obj = {};
+let set = new Set(["canary", "ptb", "stable"]);
+obj.WEB_AND_IOS = set;
+obj.ANDROID = new Set(["betaRelease", "canaryRelease", "googleRelease"]);
+const set1 = new Set(["betaRelease", "canaryRelease", "googleRelease"]);
+obj.QUEST_VR = new Set(["questBetaRelease", "questCanaryRelease", "questProductionRelease"]);
+const set2 = new Set(["questBetaRelease", "questCanaryRelease", "questProductionRelease"]);
+obj.OTHER = new Set(["N/A", "adhoc", "development", "staging"]);
+const set3 = new Set(["N/A", "adhoc", "development", "staging"]);
+obj.ALL = new Set(["N/A", "adhoc", "betaRelease", "canary", "canaryRelease", "development", "googleRelease", "ptb", "questBetaRelease", "questCanaryRelease", "questProductionRelease", "stable", "staging"]);
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ReleaseChannels.tsx");
 
 export const ReleaseChannels = { CANARY_RELEASE: "canaryRelease", BETA_RELEASE: "betaRelease", GOOGLE_RELEASE: "googleRelease", CANARY: "canary", PTB: "ptb", STABLE: "stable", ADHOC: "adhoc", QUEST_CANARY_RELEASE: "questCanaryRelease", QUEST_BETA_RELEASE: "questBetaRelease", QUEST_PRODUCTION_RELEASE: "questProductionRelease", STAGING: "staging", DEVELOPMENT: "development", N_A: "N/A" };
 export const ReleaseChannelsSets = obj;

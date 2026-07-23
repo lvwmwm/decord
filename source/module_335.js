@@ -1,18 +1,19 @@
 // Module ID: 335
 // Function ID: 4969
-// Dependencies: []
+// Dependencies: [31, 33, 336, 253]
 
 // Module 335
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+import "result";
+import { jsx } from "jsxProd";
+
 let prop;
 if (null != global) {
   prop = global.nativeFabricUIManager;
 }
-let closure_3 = importDefault(dependencyMap[3]).create({ container: { display: "contents" } });
+let closure_3 = require("setStyleAttributePreprocessor").create({ container: { display: "contents" } });
 
-export default null != prop ? function LayoutConformance(arg0) {
-  return jsx(importDefault(dependencyMap[2]), Object.assign({}, arg0, { style: container.container }));
-} : function UnimplementedLayoutConformance(children) {
+export default null != prop ? (function LayoutConformance(arg0) {
+  return jsx(importDefault(336), Object.assign({}, arg0, { style: container.container }));
+}) : (function UnimplementedLayoutConformance(children) {
   return children.children;
-};
+});

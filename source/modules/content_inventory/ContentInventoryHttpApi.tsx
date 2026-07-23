@@ -1,38 +1,36 @@
-// Module ID: 16389
-// Function ID: 126569
+// Module ID: 16506
+// Function ID: 128743
 // Name: _getMyContentInventory
-// Dependencies: []
+// Dependencies: [5, 8329, 653, 507, 4029, 686, 1212, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 16389 (_getMyContentInventory)
+// Module 16506 (_getMyContentInventory)
+import dispatcher from "dispatcher";
+import { ContentInventoryFeedKey } from "ContentInventoryFeedKey";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _getMyContentInventory() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getMyContentInventory = obj;
   return obj(...arguments);
 }
 function _getContentInventoryOutbox() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getContentInventoryOutbox = obj;
   return obj(...arguments);
 }
 function _deleteContentInventoryEntryHistory() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _deleteContentInventoryEntryHistory = obj;
   return obj(...arguments);
 }
 function _postTrackToContentInventory() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _postTrackToContentInventory = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const ContentInventoryFeedKey = arg1(dependencyMap[1]).ContentInventoryFeedKey;
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/content_inventory/ContentInventoryHttpApi.tsx");
+const result = require("ME").fileFinishedImporting("modules/content_inventory/ContentInventoryHttpApi.tsx");
 
 export const getMyContentInventory = function getMyContentInventory(arg0) {
   return _getMyContentInventory(...arguments);

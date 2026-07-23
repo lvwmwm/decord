@@ -1,21 +1,21 @@
-// Module ID: 16421
-// Function ID: 126814
+// Module ID: 16538
+// Function ID: 128988
 // Name: AVErrorStreamReconnectingDefinition
-// Dependencies: []
+// Dependencies: [653, 8857, 16528, 4194, 2]
 
-// Module 16421 (AVErrorStreamReconnectingDefinition)
-const ApplicationStreamStates = require(dependencyMap[0]).ApplicationStreamStates;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamReconnecting.tsx");
+// Module 16538 (AVErrorStreamReconnectingDefinition)
+import { ApplicationStreamStates } from "ME";
+
+const result = require("getCommonErrorContext").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamReconnecting.tsx");
 
 export const AVErrorStreamReconnectingDefinition = {
   getActiveErrors(activeStreams) {
     activeStreams = activeStreams.activeStreams;
-    const found = activeStreams.filter((state) => state.state === constants.RECONNECTING);
+    const found = activeStreams.filter((state) => state.state === outer1_2.RECONNECTING);
     return found.map((currentUserActiveStream) => {
-      const obj = { type: callback(closure_1[1]).AVError.STREAM_RECONNECTING };
-      const obj2 = callback(closure_1[2]);
-      const merged = Object.assign(obj2.getStreamErrorContext(callback(closure_1[3]).encodeStreamKey(currentUserActiveStream)));
+      const obj = { type: outer1_0(outer1_1[1]).AVError.STREAM_RECONNECTING };
+      const obj2 = outer1_0(outer1_1[2]);
+      const merged = Object.assign(obj2.getStreamErrorContext(outer1_0(outer1_1[3]).encodeStreamKey(currentUserActiveStream)));
       return obj;
     });
   },

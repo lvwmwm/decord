@@ -1,9 +1,11 @@
 // Module ID: 991
-// Function ID: 10643
+// Function ID: 10644
 // Name: breadcrumbFromObject
-// Dependencies: []
+// Dependencies: [794]
 
 // Module 991 (breadcrumbFromObject)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.DEFAULT_BREADCRUMB_LEVEL = "info";
 arg5.breadcrumbFromObject = function breadcrumbFromObject(type) {
   const obj = {};
@@ -11,8 +13,8 @@ arg5.breadcrumbFromObject = function breadcrumbFromObject(type) {
     obj.type = type.type;
   }
   if ("string" === typeof type.level) {
-    obj.level = arg1(arg6[0]).severityLevelFromString(type.level);
-    const obj2 = arg1(arg6[0]);
+    obj.level = require(794) /* registerSpanErrorInstrumentation */.severityLevelFromString(type.level);
+    const obj2 = require(794) /* registerSpanErrorInstrumentation */;
   }
   if ("string" === typeof type.event_id) {
     obj.event_id = type.event_id;

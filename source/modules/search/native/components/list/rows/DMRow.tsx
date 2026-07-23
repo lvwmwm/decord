@@ -1,9 +1,27 @@
-// Module ID: 15229
-// Function ID: 114978
+// Module ID: 15345
+// Function ID: 117148
 // Name: FriendPresence
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 4122, 4217, 3767, 653, 33, 4130, 689, 4126, 3969, 9063, 566, 8523, 1273, 8423, 12432, 15346, 2]
 
-// Module 15229 (FriendPresence)
+// Module 15345 (FriendPresence)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_6;
+let closure_7;
+const require = arg1;
 function FriendPresence(user) {
   let animate;
   let guildId;
@@ -11,69 +29,55 @@ function FriendPresence(user) {
   user = user.user;
   ({ type, animate, guildId } = user);
   if (type === constants.PENDING_INCOMING) {
-    let obj = { children: arg1(dependencyMap[12]).getUserTag(user) };
-    let tmp5 = callback3(arg1(dependencyMap[11]).Text, obj);
-    const obj3 = arg1(dependencyMap[12]);
+    let obj = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: require(3969) /* conceal */.getUserTag(user) };
+    let tmp5 = callback(require(4126) /* Text */.Text, obj);
+    const obj3 = require(3969) /* conceal */;
   } else {
     obj = { userId: user.id, guildId };
     ({ activityStatusIcon: obj.iconStyle, activityStatusText: obj.textStyle } = tmp);
     obj.emojiSize = 16;
     obj.animate = animate;
-    tmp5 = callback3(importDefault(dependencyMap[13]), obj);
+    tmp5 = callback(importDefault(9063), obj);
   }
   return tmp5;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-({ View: closure_6, ActivityIndicator: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const tmp2 = arg1(dependencyMap[3]);
-({ StatusTypes: closure_11, RelationshipTypes: closure_12 } = arg1(dependencyMap[7]));
-const tmp3 = arg1(dependencyMap[7]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
-const tmp4 = arg1(dependencyMap[8]);
-let obj = { activityStatusIcon: { "Null": "<string:1912602975>", "Null": "height" } };
-obj = { color: importDefault(dependencyMap[10]).colors.TEXT_SUBTLE };
+({ View: closure_6, ActivityIndicator: closure_7 } = get_ActivityIndicator);
+({ StatusTypes: closure_11, RelationshipTypes: closure_12 } = ME);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+let obj = { activityStatusIcon: { width: 14, height: 14 } };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18, fontWeight: "400" };
 obj.activityStatusText = obj;
 obj.tag = { marginLeft: 4 };
 obj.title = { flexDirection: "row" };
-let closure_15 = arg1(dependencyMap[9]).createStyles(obj);
-const obj2 = arg1(dependencyMap[9]);
+let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function DMRow(user) {
   let accessibilityActions;
   let onAccessibilityAction;
   let premiumSince;
+  let stateFromStores1;
   user = user.user;
-  const arg1 = user;
-  ({ nickname: closure_1, premiumSince } = user);
-  const dependencyMap = premiumSince;
+  ({ nickname: stateFromStores1, premiumSince } = user);
   const isOwner = user.isOwner;
-  let callback = isOwner;
   const type = user.type;
-  const callback2 = type;
   const guildId = user.guildId;
   const onPress = user.onPress;
   let trailing = user.trailing;
   let name;
   ({ accessibilityActions, onAccessibilityAction } = user);
-  const tmp = callback4();
-  const tmp2 = callback2(guildId.useState(false), 2);
+  const tmp = callback2();
+  let closure_7 = tmp;
+  let tmp2 = type(guildId.useState(false), 2);
   let closure_8 = tmp2[1];
-  let obj = arg1(dependencyMap[14]);
-  const items = [closure_9];
+  let obj = user(premiumSince[14]);
+  let items = [isMobileOnline];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isMobileOnline: isMobileOnline.isMobileOnline(user.id), isVROnline: isMobileOnline.isVROnline(user.id), status: isMobileOnline.getStatus(user.id) }));
-  const isMobileOnline = stateFromStoresObject.isMobileOnline;
-  closure_9 = isMobileOnline;
+  isMobileOnline = stateFromStoresObject.isMobileOnline;
   const isVROnline = stateFromStoresObject.isVROnline;
-  let closure_10 = isVROnline;
   const status = stateFromStoresObject.status;
   const items1 = [closure_8];
-  const stateFromStores = arg1(dependencyMap[14]).useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
-  const obj2 = arg1(dependencyMap[14]);
-  const items2 = [closure_10];
+  const stateFromStores = user(premiumSince[14]).useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
+  let obj2 = user(premiumSince[14]);
+  const items2 = [isVROnline];
   const fn = () => {
     if (null != stateFromStores1) {
       let nickname = stateFromStores1;
@@ -82,15 +86,14 @@ const memoResult = importAllResult.memo(function DMRow(user) {
     }
     return nickname;
   };
-  const stateFromStores1 = arg1(dependencyMap[14]).useStateFromStores(items2, fn);
-  const importDefault = stateFromStores1;
+  stateFromStores1 = user(premiumSince[14]).useStateFromStores(items2, fn);
   // CreateGeneratorClosureLongIndex (0x67)
   const items3 = [onPress, user.id];
   name = stateFromStores1;
-  callback = importAllResult.useCallback(callback(fn), items3);
+  const callback = guildId.useCallback(isOwner(fn), items3);
   if (null == stateFromStores1) {
-    name = importDefault(dependencyMap[12]).getName(user);
-    const obj4 = importDefault(dependencyMap[12]);
+    name = stateFromStores1(premiumSince[12]).getName(user);
+    let obj4 = stateFromStores1(premiumSince[12]);
   }
   const items4 = [, , , , , ];
   ({ title: arr5[0], tag: arr5[1] } = tmp);
@@ -99,9 +102,9 @@ const memoResult = importAllResult.memo(function DMRow(user) {
   items4[4] = isOwner;
   items4[5] = premiumSince;
   const items5 = [user, status, isMobileOnline, isVROnline, guildId];
-  const memo = importAllResult.useMemo(() => {
+  const memo = guildId.useMemo(() => {
     let obj = { style: tmp.title };
-    obj = { children: name };
+    obj = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
     const items = [name(user(premiumSince[11]).Text, obj), , , ];
     const bot = user.bot;
     if (!bot) {
@@ -135,7 +138,7 @@ const memoResult = importAllResult.memo(function DMRow(user) {
     }
   }, items4);
   const items6 = [user, guildId, type, stateFromStores];
-  const memo1 = importAllResult.useMemo(() => {
+  const memo1 = guildId.useMemo(() => {
     const obj = { user, guildId };
     let tmp2 = null;
     if (status.OFFLINE !== status) {
@@ -149,12 +152,12 @@ const memoResult = importAllResult.memo(function DMRow(user) {
     obj.autoStatusCutout = true;
     return name(user(premiumSince[16]).Avatar, obj);
   }, items5);
-  const memo2 = importAllResult.useMemo(() => {
+  const memo2 = guildId.useMemo(() => {
     let obj = stateFromStores1(premiumSince[12]);
     const userTag = obj.getUserTag(user);
     if (null != userTag) {
       if (!user.isProvisional) {
-        obj = { cachedAt: "y", edpbxy: "isArray", children: userTag };
+        obj = { variant: "text-sm/medium", color: "text-muted", children: userTag };
         let tmp6 = name(user(premiumSince[11]).Text, obj);
       }
       return tmp6;
@@ -162,19 +165,19 @@ const memoResult = importAllResult.memo(function DMRow(user) {
     let tmp7 = null;
     if (null != type) {
       obj = { user, guildId, type, animate: !stateFromStores };
-      tmp7 = name(closure_16, obj);
+      tmp7 = name(outer1_16, obj);
     }
     tmp6 = tmp7;
   }, items6);
   obj = { label: memo, subLabel: memo2, icon: memo1, onPress: callback };
   if (tmp2[0]) {
-    trailing = name(tmp, {});
+    trailing = name(closure_7, {});
   }
   obj.trailing = trailing;
   obj.accessibilityActions = accessibilityActions;
   obj.onAccessibilityAction = onAccessibilityAction;
-  return name(arg1(dependencyMap[19]).SearchListRow, obj);
+  return name(user(premiumSince[19]).SearchListRow, obj);
 });
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/search/native/components/list/rows/DMRow.tsx");
+const result = require("result").fileFinishedImporting("modules/search/native/components/list/rows/DMRow.tsx");
 
 export default memoResult;

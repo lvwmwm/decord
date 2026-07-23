@@ -1,9 +1,16 @@
-// Module ID: 10073
-// Function ID: 77967
+// Module ID: 10081
+// Function ID: 78007
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4351, 566, 686, 2]
 
-// Module 10073 (_isNativeReflectConstruct)
+// Module 10081 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -16,26 +23,21 @@ function _isNativeReflectConstruct() {
 function handleReset() {
   const map = new Map();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const map = new Map();
+let map = new Map();
 let closure_8 = [];
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class SearchRecentMessageStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, SearchRecentMessageStore);
-      obj = closure_5(SearchRecentMessageStore);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      tmp = outer1_2(this, SearchRecentMessageStore);
+      obj = outer1_5(SearchRecentMessageStore);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -44,71 +46,68 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SearchRecentMessageStore;
   callback2(SearchRecentMessageStore, Store);
   const items = [
     {
       key: "getRecentMessageAuthorIds",
       value(arg0) {
-        let value = closure_7.get(arg0);
+        let value = outer1_7.get(arg0);
         if (null == value) {
-          value = closure_8;
+          value = outer1_8;
         }
         return value;
       }
     }
   ];
   return callback(SearchRecentMessageStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "SearchRecentMessageStore";
-tmp3 = new tmp3(importDefault(dependencyMap[7]), {
+tmp3 = new tmp3(require("dispatcher"), {
   SEARCH_MESSAGES_SUCCESS: function handleSearchMessagesSuccess(arg0) {
     let data;
     let guildId;
     ({ guildId, data } = arg0);
-    let closure_0;
-    let dependencyMap;
-    let closure_2;
+    let c0;
+    let items;
+    let set;
     if (null == guildId) {
       return false;
     } else {
-      closure_0 = false;
-      let items = map.get(guildId);
+      c0 = false;
+      items = map.get(guildId);
       if (null == items) {
         items = [];
       }
       items = [];
       HermesBuiltin.arraySpread(items, 0);
-      dependencyMap = items;
       const _Set = Set;
-      const set = new Set(items);
-      closure_2 = set;
-      const item = data.forEach((messages) => {
+      set = new Set(items);
+      let item = data.forEach((messages) => {
         messages = messages.messages;
         const item = messages.forEach((arg0) => {
           let tmp;
           [tmp] = arg0;
-          const messageRecord = callback(arr[5]).createMessageRecord(tmp);
-          let tmp3 = !set.has(messageRecord.author.id);
+          const messageRecord = callback(items[5]).createMessageRecord(tmp);
+          let tmp3 = !outer1_2.has(messageRecord.author.id);
           if (tmp3) {
-            tmp3 = set.size < 15;
+            tmp3 = outer1_2.size < 15;
           }
           if (tmp3) {
-            set.add(messageRecord.author.id);
-            const arr = arr.push(messageRecord.author.id);
-            const callback = true;
+            outer1_2.add(messageRecord.author.id);
+            outer1_1.push(messageRecord.author.id);
+            const outer1_0 = true;
           }
         });
       });
-      if (closure_0) {
+      if (c0) {
         const result = map.set(guildId, items);
       }
-      return closure_0;
+      return c0;
     }
   },
   SEARCH_RECENT_MESSAGES_CLEAR: handleReset,
   CONNECTION_OPEN: handleReset
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/search/SearchRecentMessageStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/search/SearchRecentMessageStore.tsx");
 
 export default tmp3;

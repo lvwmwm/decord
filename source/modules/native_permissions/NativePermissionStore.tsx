@@ -1,9 +1,17 @@
-// Module ID: 4677
-// Function ID: 40757
+// Module ID: 4680
+// Function ID: 40775
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4344, 653, 686, 675, 566, 2]
 
-// Module 4677 (_isNativeReflectConstruct)
+// Module 4680 (_isNativeReflectConstruct)
+import ME from "ME";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { NativePermissionStates } from "NativePermissionStatus";
+import { AnalyticEvents } from "ME";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,54 +21,50 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const NativePermissionStates = arg1(dependencyMap[5]).NativePermissionStates;
-const AnalyticEvents = arg1(dependencyMap[6]).AnalyticEvents;
 let closure_9 = { permissionStates: {} };
-const tmp2 = (DeviceSettingsStore) => {
+let tmp2 = ((DeviceSettingsStore) => {
   class NativePermissionStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, NativePermissionStore);
+      tmp = outer1_2(this, apply);
       items = [, ];
-      items[0] = NativePermissionStore(closure_1[7]);
+      items[0] = NativePermissionStore(outer1_1[7]);
       items[1] = {
         SET_NATIVE_PERMISSION(arg0) {
               return tmp2Result.handleSetNativePermission(arg0);
             }
       };
-      obj = closure_5(NativePermissionStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      obj = outer1_5(apply);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      NativePermissionStore = tmp2Result;
+      apply = tmp2Result;
       return tmp2Result;
     }
   }
-  const importDefault = NativePermissionStore;
   callback2(NativePermissionStore, DeviceSettingsStore);
   let obj = {
     key: "initialize",
     value(arg0) {
-      const tmp = arg0;
+      let tmp = arg0;
+      if (null == arg0) {
+        tmp = outer1_9;
+      }
+      outer1_9 = tmp;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getUserAgnosticState",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[1] = obj;
@@ -69,7 +73,7 @@ const tmp2 = (DeviceSettingsStore) => {
     value(arg0) {
       let tmp2 = null != tmp;
       if (tmp2) {
-        tmp2 = tmp === constants.ACCEPTED;
+        tmp2 = tmp === outer1_7.ACCEPTED;
       }
       return tmp2;
     }
@@ -81,24 +85,24 @@ const tmp2 = (DeviceSettingsStore) => {
       let permissionType;
       let state;
       ({ state, permissionType } = arg0);
-      const permissionStates = closure_9.permissionStates;
+      const permissionStates = outer1_9.permissionStates;
       let NONE = permissionStates[permissionType];
       permissionStates[permissionType] = state;
       if (NONE !== state) {
-        let obj = NativePermissionStore(closure_1[8]);
+        let obj = NativePermissionStore(outer1_1[8]);
         obj = { type: permissionType, action: state };
         if (null == NONE) {
-          NONE = constants.NONE;
+          NONE = outer1_7.NONE;
         }
         obj.previous_action = NONE;
-        obj.track(constants2.PERMISSIONS_ACKED, obj);
+        obj.track(outer1_8.PERMISSIONS_ACKED, obj);
       }
     }
   };
   return callback(NativePermissionStore, items);
-}(importDefault(dependencyMap[9]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp2.displayName = "NativePermissionStore";
 tmp2.persistKey = "NativePermissionsStore";
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/native_permissions/NativePermissionStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/native_permissions/NativePermissionStore.tsx");
 
 export default tmp2;

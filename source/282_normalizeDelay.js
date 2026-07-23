@@ -1,9 +1,13 @@
 // Module ID: 282
 // Function ID: 4410
 // Name: normalizeDelay
-// Dependencies: []
+// Dependencies: [6, 7, 283, 284, 44, 285, 46, 288]
 
 // Module 282 (normalizeDelay)
+import isFabricReactTag from "isFabricReactTag";
+import createSquare from "createSquare";
+
+const require = arg1;
 function normalizeDelay(arg0) {
   let num = 0;
   if (arguments.length > 1) {
@@ -31,9 +35,7 @@ function convertPointerEventToMouseEvent(nativeEvent) {
   nativeEvent = { clientX, clientY, pageX: clientX, pageY: clientY, timestamp: nativeEvent.timeStamp };
   return Object.assign({}, nativeEvent, { nativeEvent });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = Object.freeze({ NOT_RESPONDER: {}, RESPONDER_INACTIVE_PRESS_IN: {}, RESPONDER_INACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_PRESS_IN: {}, RESPONDER_ACTIVE_PRESS_OUT: {}, RESPONDER_ACTIVE_LONG_PRESS_IN: {}, RESPONDER_ACTIVE_LONG_PRESS_OUT: {}, ERROR: {} });
+let closure_5 = Object.freeze({ NOT_RESPONDER: { DELAY: "ERROR", RESPONDER_GRANT: "RESPONDER_INACTIVE_PRESS_IN", RESPONDER_RELEASE: "ERROR", RESPONDER_TERMINATED: "ERROR", ENTER_PRESS_RECT: "ERROR", LEAVE_PRESS_RECT: "ERROR", LONG_PRESS_DETECTED: "ERROR" }, RESPONDER_INACTIVE_PRESS_IN: { DELAY: "RESPONDER_ACTIVE_PRESS_IN", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_INACTIVE_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_INACTIVE_PRESS_OUT", LONG_PRESS_DETECTED: "ERROR" }, RESPONDER_INACTIVE_PRESS_OUT: { DELAY: "RESPONDER_ACTIVE_PRESS_OUT", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_INACTIVE_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_INACTIVE_PRESS_OUT", LONG_PRESS_DETECTED: "ERROR" }, RESPONDER_ACTIVE_PRESS_IN: { DELAY: "ERROR", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_ACTIVE_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_ACTIVE_PRESS_OUT", LONG_PRESS_DETECTED: "RESPONDER_ACTIVE_LONG_PRESS_IN" }, RESPONDER_ACTIVE_PRESS_OUT: { DELAY: "ERROR", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_ACTIVE_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_ACTIVE_PRESS_OUT", LONG_PRESS_DETECTED: "ERROR" }, RESPONDER_ACTIVE_LONG_PRESS_IN: { DELAY: "ERROR", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_ACTIVE_LONG_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_ACTIVE_LONG_PRESS_OUT", LONG_PRESS_DETECTED: "RESPONDER_ACTIVE_LONG_PRESS_IN" }, RESPONDER_ACTIVE_LONG_PRESS_OUT: { DELAY: "ERROR", RESPONDER_GRANT: "ERROR", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "RESPONDER_ACTIVE_LONG_PRESS_IN", LEAVE_PRESS_RECT: "RESPONDER_ACTIVE_LONG_PRESS_OUT", LONG_PRESS_DETECTED: "ERROR" }, ERROR: { DELAY: "NOT_RESPONDER", RESPONDER_GRANT: "RESPONDER_INACTIVE_PRESS_IN", RESPONDER_RELEASE: "NOT_RESPONDER", RESPONDER_TERMINATED: "NOT_RESPONDER", ENTER_PRESS_RECT: "NOT_RESPONDER", LEAVE_PRESS_RECT: "NOT_RESPONDER", LONG_PRESS_DETECTED: "NOT_RESPONDER" } });
 function isActiveSignal(arg0) {
   let tmp = "RESPONDER_ACTIVE_PRESS_IN" === arg0;
   if (!tmp) {
@@ -58,7 +60,7 @@ function isPressInSignal(arg0) {
   }
   return tmp;
 }
-let closure_9 = 10;
+let c9 = 10;
 function getTouchFromPressEvent(nativeEvent) {
   let changedTouches;
   let touches;
@@ -77,11 +79,11 @@ function getTouchFromPressEvent(nativeEvent) {
   nativeEvent = nativeEvent.nativeEvent;
 }
 
-export default () => {
+export default (() => {
   class Pressability {
     constructor(arg0) {
-      Pressability = this;
-      tmp = closure_3(this, Pressability);
+      self = this;
+      tmp = outer1_3(this, self);
       this._eventHandlers = null;
       this._hoverInDelayTimeout = null;
       this._hoverOutDelayTimeout = null;
@@ -118,7 +120,6 @@ export default () => {
       return;
     }
   }
-  const arg1 = Pressability;
   let obj = {
     key: "configure",
     value: function configure(_config) {
@@ -152,7 +153,7 @@ export default () => {
   items[3] = {
     key: "_createEventHandlers",
     value: function _createEventHandlers() {
-      const Pressability = this;
+      const self = this;
       let obj = {
         onBlur(arg0) {
           const onBlur = self._config.onBlur;
@@ -172,25 +173,25 @@ export default () => {
           return null == !self._config.disabled || !self._config.disabled;
         },
         onResponderGrant(persist) {
-          const self = persist;
+          const _self = persist;
           persist.persist();
-          const result = self._cancelPressOutDelayTimeout();
-          self._responderID = persist.currentTarget;
-          self._touchState = "NOT_RESPONDER";
-          self._receiveSignal("RESPONDER_GRANT", persist);
-          const tmp4 = callback2(self._config.delayPressIn);
+          const result = _self._cancelPressOutDelayTimeout();
+          _self._responderID = persist.currentTarget;
+          _self._touchState = "NOT_RESPONDER";
+          _self._receiveSignal("RESPONDER_GRANT", persist);
+          const tmp4 = outer2_11(_self._config.delayPressIn);
           if (tmp4 > 0) {
             const _setTimeout = setTimeout;
-            self._pressDelayTimeout = setTimeout(() => {
-              arg0._receiveSignal("DELAY", arg0);
+            _self._pressDelayTimeout = setTimeout(() => {
+              persist._receiveSignal("DELAY", persist);
             }, tmp4);
           } else {
-            self._receiveSignal("DELAY", persist);
+            _self._receiveSignal("DELAY", persist);
           }
-          self._longPressDelayTimeout = setTimeout(() => {
-            arg0._handleLongPress(arg0);
-          }, callback2(self._config.delayLongPress, 10, 500 - tmp4) + tmp4);
-          return true === self._config.blockNativeResponder;
+          _self._longPressDelayTimeout = setTimeout(() => {
+            persist._handleLongPress(persist);
+          }, outer2_11(_self._config.delayLongPress, 10, 500 - tmp4) + tmp4);
+          return true === _self._config.blockNativeResponder;
         },
         onResponderMove(arg0) {
           const onPressMove = self._config.onPressMove;
@@ -199,14 +200,14 @@ export default () => {
           }
           const _responderRegion = self._responderRegion;
           if (null != _responderRegion) {
-            const tmp15 = callback(arg0);
+            const tmp15 = outer2_10(arg0);
             if (null == tmp15) {
               const result = self._cancelLongPressDelayTimeout();
               self._receiveSignal("LEAVE_PRESS_RECT", arg0);
             } else {
               if (null != self._touchActivatePosition) {
                 const _Math = Math;
-                if (Math.hypot(self._touchActivatePosition.pageX - tmp15.pageX, self._touchActivatePosition.pageY - tmp15.pageY) > closure_9) {
+                if (Math.hypot(self._touchActivatePosition.pageX - tmp15.pageX, self._touchActivatePosition.pageY - tmp15.pageY) > outer2_9) {
                   const result1 = self._cancelLongPressDelayTimeout();
                 }
               }
@@ -262,39 +263,39 @@ export default () => {
         const onHoverOut = _config.onHoverOut;
         if (null != onHoverIn) {
           obj.onPointerEnter = (persist) => {
-            const self = persist;
-            self._isHovered = true;
-            const result = self._cancelHoverOutDelayTimeout();
+            const _self = persist;
+            _self._isHovered = true;
+            const result = _self._cancelHoverOutDelayTimeout();
             if (null != onHoverIn) {
-              const tmp4 = callback2(self._config.delayHoverIn);
+              const tmp4 = outer2_11(_self._config.delayHoverIn);
               if (tmp4 > 0) {
                 persist.persist();
                 const _setTimeout = setTimeout;
-                self._hoverInDelayTimeout = setTimeout(() => {
-                  callback(callback2(arg0));
+                _self._hoverInDelayTimeout = setTimeout(() => {
+                  outer1_1(outer3_12(closure_0));
                 }, tmp4);
               } else {
-                onHoverIn(callback3(persist));
+                onHoverIn(outer2_12(persist));
               }
             }
           };
         }
         if (null != onHoverOut) {
           obj.onPointerLeave = (persist) => {
-            const self = persist;
-            if (self._isHovered) {
-              self._isHovered = false;
-              const result = self._cancelHoverInDelayTimeout();
+            const _self = persist;
+            if (_self._isHovered) {
+              _self._isHovered = false;
+              const result = _self._cancelHoverInDelayTimeout();
               if (null != onHoverOut) {
-                const tmp7 = callback2(self._config.delayHoverOut);
+                const tmp7 = outer2_11(_self._config.delayHoverOut);
                 if (tmp7 > 0) {
                   persist.persist();
                   const _setTimeout = setTimeout;
-                  self._hoverOutDelayTimeout = setTimeout(() => {
-                    callback(callback2(arg0));
+                  _self._hoverOutDelayTimeout = setTimeout(() => {
+                    outer1_2(outer3_12(closure_0));
                   }, tmp7);
                 } else {
-                  onHoverOut(callback3(persist));
+                  onHoverOut(outer2_12(persist));
                 }
               }
             }
@@ -308,17 +309,18 @@ export default () => {
         const _Object2 = Object;
         return Object.assign({}, obj, obj, null);
       }
-      const obj3 = onHoverIn(onHoverOut[2]);
+      obj3 = outer1_1(outer1_2[2]);
     }
   };
   items[4] = {
     key: "_receiveSignal",
     value: function _receiveSignal(arg0, nativeEvent) {
       const self = this;
-      const Pressability = arg0;
+      let closure_0 = arg0;
+      let closure_1 = nativeEvent;
       if (null != nativeEvent.nativeEvent.timestamp) {
-        nativeEvent(closure_2[3]).emitEvent(() => ({ signal: arg0, nativeTimestamp: arg1.nativeEvent.timestamp }));
-        const obj = nativeEvent(closure_2[3]);
+        outer1_1(outer1_2[3]).emitEvent(() => ({ signal: closure_0, nativeTimestamp: nativeEvent.nativeEvent.timestamp }));
+        const obj = outer1_1(outer1_2[3]);
       }
       const _touchState = self._touchState;
       let tmp6 = null == self._responderID;
@@ -334,12 +336,12 @@ export default () => {
         if ("number" === typeof self._responderID) {
           str3 = self._responderID;
         }
-        nativeEvent(closure_2[4])(tmp10, "Pressability: Invalid signal `%s` for state `%s` on responder: %s", arg0, _touchState, str3);
+        outer1_1(outer1_2[4])(tmp10, "Pressability: Invalid signal `%s` for state `%s` on responder: %s", arg0, _touchState, str3);
         if (_touchState !== tmp5) {
           const result = self._performTransitionSideEffects(_touchState, tmp5, arg0, nativeEvent);
           self._touchState = tmp5;
         }
-        const tmp9 = nativeEvent(closure_2[4]);
+        const tmp9 = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -359,10 +361,10 @@ export default () => {
       if (tmp4) {
         tmp4 = "RESPONDER_INACTIVE_PRESS_IN" === arg1;
       }
-      const tmp5 = callback4(_touchState);
+      const tmp5 = outer1_7(_touchState);
       let tmp6 = !tmp5;
       if (!tmp5) {
-        tmp6 = callback4(arg1);
+        tmp6 = outer1_7(arg1);
       }
       if (!tmp4) {
         tmp4 = tmp6;
@@ -370,7 +372,7 @@ export default () => {
       if (tmp4) {
         const result1 = self._measureResponderRegion();
       }
-      if (callback5(_touchState)) {
+      if (outer1_8(_touchState)) {
         if ("LONG_PRESS_DETECTED" === arg2) {
           const onLongPress = self._config.onLongPress;
           if (null != onLongPress) {
@@ -378,13 +380,13 @@ export default () => {
           }
         }
       }
-      const tmp11 = callback3(_touchState);
-      let tmp12 = callback3(arg1);
+      const tmp11 = outer1_6(_touchState);
+      let tmp12 = outer1_6(arg1);
       if (!tmp11) {
         if (tmp12) {
           self._activate(nativeEvent);
         }
-        if (callback5(_touchState)) {
+        if (outer1_8(_touchState)) {
           if ("RESPONDER_RELEASE" === arg2) {
             if (!tmp12) {
               tmp12 = tmp11;
@@ -402,8 +404,8 @@ export default () => {
               }
               if (!tmp21) {
                 if (true !== tmp19) {
-                  callback(closure_2[5]).playTouchSound();
-                  const obj = callback(closure_2[5]);
+                  outer1_1(outer1_2[5]).playTouchSound();
+                  const obj = outer1_1(outer1_2[5]);
                 }
                 onPress(nativeEvent);
               }
@@ -425,7 +427,7 @@ export default () => {
     key: "_activate",
     value: function _activate(nativeEvent) {
       const onPressIn = this._config.onPressIn;
-      const tmp = callback6(nativeEvent);
+      const tmp = outer1_10(nativeEvent);
       this._touchActivatePosition = { pageX: tmp.pageX, pageY: tmp.pageY };
       this._touchActivateTime = Date.now();
       if (null != onPressIn) {
@@ -437,7 +439,7 @@ export default () => {
     key: "_deactivate",
     value: function _deactivate(persist) {
       const self = this;
-      const Pressability = persist;
+      let closure_0 = persist;
       const onPressOut = this._config.onPressOut;
       if (null != onPressOut) {
         const _Date = Date;
@@ -448,18 +450,18 @@ export default () => {
           num = _touchActivateTime;
         }
         const _Math = Math;
-        const diff = callback7(self._config.minPressDuration, 0, 130) - (timestamp - num);
-        const bound = Math.max(diff, callback7(self._config.delayPressOut));
+        const diff = outer1_11(self._config.minPressDuration, 0, 130) - (timestamp - num);
+        const bound = Math.max(diff, outer1_11(self._config.delayPressOut));
         if (bound > 0) {
           persist.persist();
           const _setTimeout = setTimeout;
           self._pressOutDelayTimeout = setTimeout(() => {
-            onPressOut(arg0);
+            onPressOut(closure_0);
           }, bound);
         } else {
           onPressOut(persist);
         }
-        const tmp7 = callback7(self._config.minPressDuration, 0, 130);
+        const tmp7 = outer1_11(self._config.minPressDuration, 0, 130);
       }
       self._touchActivateTime = null;
     }
@@ -470,8 +472,8 @@ export default () => {
       const self = this;
       if (null != this._responderID) {
         if ("number" === typeof self._responderID) {
-          callback(closure_2[6]).measure(self._responderID, self._measureCallback);
-          const obj = callback(closure_2[6]);
+          outer1_1(outer1_2[6]).measure(self._responderID, self._measureCallback);
+          const obj = outer1_1(outer1_2[6]);
         } else {
           const _responderID = self._responderID;
           _responderID.measure(self._measureCallback, true);
@@ -486,9 +488,9 @@ export default () => {
       let left;
       let right;
       let top;
-      const rect = Pressability(closure_2[7]).normalizeRect(this._config.hitSlop);
-      const obj = Pressability(closure_2[7]);
-      const rect2 = Pressability(closure_2[7]).normalizeRect(this._config.pressRectOffset);
+      const rect = Pressability(outer1_2[7]).normalizeRect(this._config.hitSlop);
+      const obj = Pressability(outer1_2[7]);
+      const rect2 = Pressability(outer1_2[7]).normalizeRect(this._config.pressRectOffset);
       ({ bottom, left, right, top } = _responderRegion);
       let tmp = bottom;
       let tmp2 = left;
@@ -567,14 +569,14 @@ export default () => {
   };
   items[10] = {
     key: "_handleLongPress",
-    value: function _handleLongPress(arg0) {
+    value: function _handleLongPress(closure_0) {
       const self = this;
       let tmp = "RESPONDER_ACTIVE_PRESS_IN" !== this._touchState;
       if (tmp) {
         tmp = "RESPONDER_ACTIVE_LONG_PRESS_IN" !== self._touchState;
       }
       if (!tmp) {
-        self._receiveSignal("LONG_PRESS_DETECTED", arg0);
+        self._receiveSignal("LONG_PRESS_DETECTED", closure_0);
       }
     }
   };
@@ -637,9 +639,9 @@ export default () => {
     {
       key: "setLongPressDeactivationDistance",
       value: function setLongPressDeactivationDistance(arg0) {
-
+        const outer1_9 = arg0;
       }
     }
   ];
   return callback(Pressability, items, items1);
-}();
+})();

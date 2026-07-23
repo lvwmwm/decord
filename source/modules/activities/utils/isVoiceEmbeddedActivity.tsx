@@ -1,15 +1,17 @@
-// Module ID: 10428
-// Function ID: 80334
+// Module ID: 10438
+// Function ID: 80384
 // Name: isVoiceEmbeddedActivity
-// Dependencies: []
+// Dependencies: [1194, 1348, 1906, 4146, 669, 2]
 // Exports: default
 
-// Module 10428 (isVoiceEmbeddedActivity)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/utils/isVoiceEmbeddedActivity.tsx");
+// Module 10438 (isVoiceEmbeddedActivity)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/utils/isVoiceEmbeddedActivity.tsx");
 
 export default function isVoiceEmbeddedActivity(channelId) {
   let obj = arg1;
@@ -23,15 +25,15 @@ export default function isVoiceEmbeddedActivity(channelId) {
   const channel = obj.getChannel(channelId);
   let tmp3 = null != channel;
   if (tmp3) {
-    let tmp6 = channel.type === arg1(dependencyMap[4]).ChannelTypes.GUILD_VOICE;
+    let tmp6 = channel.type === require(669) /* set */.ChannelTypes.GUILD_VOICE;
     if (!tmp6) {
       const tmp7 = !channel.isPrivate();
       let tmp8 = !tmp7;
       if (!tmp7) {
         let tmp9 = channel.id === tmp2;
         if (!tmp9) {
-          const voiceStatesForChannel = voiceStatesForChannel.getVoiceStatesForChannel(channel.id);
-          tmp9 = null != voiceStatesForChannel[closure_2.getId(closure_2)];
+          voiceStatesForChannel = voiceStatesForChannel.getVoiceStatesForChannel(channel.id);
+          tmp9 = null != voiceStatesForChannel[id.getId(id)];
         }
         tmp8 = tmp9;
       }

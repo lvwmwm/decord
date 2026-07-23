@@ -1,34 +1,35 @@
 // Module ID: 289
 // Function ID: 4471
 // Name: useTextPressability
-// Dependencies: []
+// Dependencies: [57, 29, 31, 33, 38, 147, 114, 290, 292]
 
 // Module 289 (useTextPressability)
+import _slicedToArray from "_slicedToArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import "result";
+import result from "result";
+import { jsx } from "jsxProd";
+
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function useTextPressability(textPressabilityProps) {
   const onLongPress = textPressabilityProps.onLongPress;
-  const arg1 = onLongPress;
   const onPress = textPressabilityProps.onPress;
-  const importDefault = onPress;
   const onPressIn = textPressabilityProps.onPressIn;
-  const dependencyMap = onPressIn;
   const onPressOut = textPressabilityProps.onPressOut;
-  let closure_3 = onPressOut;
   const onResponderGrant = textPressabilityProps.onResponderGrant;
-  const callback = onResponderGrant;
   const onResponderMove = textPressabilityProps.onResponderMove;
-  let closure_5 = onResponderMove;
   const onResponderRelease = textPressabilityProps.onResponderRelease;
   const onResponderTerminate = textPressabilityProps.onResponderTerminate;
-  const onResponderTerminationRequest = textPressabilityProps.onResponderTerminationRequest;
-  const onStartShouldSetResponder = textPressabilityProps.onStartShouldSetResponder;
-  const jsx = onStartShouldSetResponder;
+  let onResponderTerminationRequest = textPressabilityProps.onResponderTerminationRequest;
+  let onStartShouldSetResponder = textPressabilityProps.onStartShouldSetResponder;
   const pressRetentionOffset = textPressabilityProps.pressRetentionOffset;
-  const NativePressableVirtualText = pressRetentionOffset;
-  const first = callback(onResponderTerminationRequest(false), 2)[0];
-  const NativePressableText = first;
-  const items = [pressRetentionOffset, onLongPress, onPress, onPressIn, onPressOut, textPressabilityProps.suppressHighlighting];
-  const tmp = callback(onResponderTerminationRequest(false), 2);
-  const tmp4 = importDefault(dependencyMap[8])(onResponderTerminate(() => ({ disabled: false, pressRectOffset: pressRetentionOffset, onLongPress, onPress, onPressIn, onPressOut }), items));
+  const first = onResponderGrant(onResponderTerminationRequest(false), 2)[0];
+  let items = [pressRetentionOffset, onLongPress, onPress, onPressIn, onPressOut, textPressabilityProps.suppressHighlighting];
+  const tmp = onResponderGrant(onResponderTerminationRequest(false), 2);
+  const tmp4 = onPress(onPressIn[8])(onResponderTerminate(() => ({ disabled: false, pressRectOffset: pressRetentionOffset, onLongPress, onPress, onPressIn, onPressOut }), items));
   let closure_12 = tmp4;
   const items1 = [tmp4, onResponderGrant, onResponderMove, onResponderRelease, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder];
   const tmp5 = onResponderTerminate(() => {
@@ -37,37 +38,37 @@ function useTextPressability(textPressabilityProps) {
     } else {
       const obj = {
         onResponderGrant(arg0) {
-            closure_12.onResponderGrant(arg0);
-            if (null != callback) {
-              callback(arg0);
+            outer1_12.onResponderGrant(arg0);
+            if (null != outer1_4) {
+              outer1_4(arg0);
             }
           },
         onResponderMove(arg0) {
-            closure_12.onResponderMove(arg0);
-            if (null != callback2) {
-              callback2(arg0);
+            outer1_12.onResponderMove(arg0);
+            if (null != outer1_5) {
+              outer1_5(arg0);
             }
           },
         onResponderRelease(arg0) {
-            closure_12.onResponderRelease(arg0);
-            if (null != callback3) {
-              callback3(arg0);
+            outer1_12.onResponderRelease(arg0);
+            if (null != outer1_6) {
+              outer1_6(arg0);
             }
           },
         onResponderTerminate(arg0) {
-            closure_12.onResponderTerminate(arg0);
-            if (null != callback4) {
-              callback4(arg0);
+            outer1_12.onResponderTerminate(arg0);
+            if (null != outer1_7) {
+              outer1_7(arg0);
             }
           },
         onClick: tmp4.onClick
       };
       if (null == onResponderTerminationRequest) {
-        const onResponderTerminationRequest = tmp4.onResponderTerminationRequest;
+        onResponderTerminationRequest = tmp4.onResponderTerminationRequest;
       }
       obj.onResponderTerminationRequest = onResponderTerminationRequest;
       if (null == onStartShouldSetResponder) {
-        const onStartShouldSetResponder = tmp4.onStartShouldSetResponder;
+        onStartShouldSetResponder = tmp4.onStartShouldSetResponder;
       }
       obj.onStartShouldSetResponder = onStartShouldSetResponder;
     }
@@ -75,20 +76,16 @@ function useTextPressability(textPressabilityProps) {
   let closure_13 = tmp5;
   const items2 = [first, tmp5];
   return onResponderTerminate(() => {
-    const items = [first, tmp5];
+    const items = [first, closure_13];
     return items;
   }, items2);
 }
-let closure_3 = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-importAll(dependencyMap[2]);
-({ useContext: closure_6, useMemo: closure_7, useState: closure_8 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
+let closure_3 = ["ref", "accessible", "accessibilityLabel", "accessibilityState", "allowFontScaling", "aria-busy", "aria-checked", "aria-disabled", "aria-expanded", "aria-label", "aria-selected", "children", "ellipsizeMode", "disabled", "id", "nativeID", "numberOfLines", "onLongPress", "onPress", "onPressIn", "onPressOut", "onResponderGrant", "onResponderMove", "onResponderRelease", "onResponderTerminate", "onResponderTerminationRequest", "onStartShouldSetResponder", "pressRetentionOffset", "selectable", "selectionColor", "suppressHighlighting", "style"];
+({ useContext: closure_6, useMemo: closure_7, useState: closure_8 } = result);
 class TextImpl {
   constructor(arg0) {
     ({ ref, accessible, accessibilityLabel, accessibilityState, allowFontScaling, aria-busy: busy, aria-checked: checked, aria-disabled: disabled, aria-expanded: expanded, aria-label: tmp, aria-selected: selected, children, ellipsizeMode, disabled: disabled2, id, nativeID, numberOfLines, onLongPress, onPress, onPressIn, onPressOut, onResponderGrant, onResponderMove, onResponderRelease, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, pressRetentionOffset, selectable, selectionColor, suppressHighlighting, style } = global);
-    tmp2 = closure_5(global, useTextPressability);
+    tmp2 = c5(global, useTextPressability);
     if (null != tmp) {
       accessibilityLabel = tmp;
     }
@@ -108,10 +105,10 @@ class TextImpl {
         tmp7 = true !== tmp6;
       }
       if (null != selectionColor) {
-        tmp9 = importDefault;
-        tmp10 = dependencyMap;
+        tmp9 = closure_1;
+        tmp10 = closure_2;
         num = 4;
-        tmp8 = importDefault(dependencyMap[4])(selectionColor);
+        tmp8 = require("processColor")(selectionColor);
       }
       tmp11 = null == numberOfLines;
       if (!tmp11) {
@@ -121,10 +118,10 @@ class TextImpl {
       if (!tmp11) {
         numberOfLines = 0;
       }
-      tmp12 = importDefault;
-      tmp13 = dependencyMap;
+      tmp12 = closure_1;
+      tmp13 = closure_2;
       num3 = 5;
-      tmp14 = importDefault(dependencyMap[5])(style);
+      tmp14 = require("flattenStyle")(style);
       tmp15 = style;
       tmp16 = selectable;
       if (null != tmp14) {
@@ -172,10 +169,10 @@ class TextImpl {
         nativeID = id;
       }
       tmp22 = useContext;
-      tmp23 = importDefault;
-      tmp24 = dependencyMap;
+      tmp23 = closure_1;
+      tmp24 = closure_2;
       num4 = 6;
-      if (useContext(importDefault(dependencyMap[6]))) {
+      if (useContext(require("result"))) {
         tmp46 = jsx;
         if (tmp7) {
           tmp51 = NativePressableVirtualText;
@@ -210,8 +207,8 @@ class TextImpl {
           obj3.textPressabilityProps = obj5;
           tmp46Result = tmp46(NativePressableVirtualText, obj3);
         } else {
-          tmp47 = arg1;
-          tmp48 = dependencyMap;
+          tmp47 = closure_0;
+          tmp48 = closure_2;
           num7 = 7;
           tmp49 = globalThis;
           _Object2 = Object;
@@ -226,7 +223,7 @@ class TextImpl {
           obj6.style = tmp15;
           obj6.disabled = disabled2;
           obj6.children = children;
-          tmp46Result = tmp46(arg1(dependencyMap[7]).NativeVirtualText, Object.assign({}, tmp2, obj6));
+          tmp46Result = tmp46(require("NativeText").NativeVirtualText, Object.assign({}, tmp2, obj6));
         }
         return tmp46Result;
       } else {
@@ -300,8 +297,8 @@ class TextImpl {
           obj8.textPressabilityProps = obj10;
           tmp31Result = tmp31(tmp36, obj8);
         } else {
-          tmp32 = arg1;
-          tmp33 = dependencyMap;
+          tmp32 = closure_0;
+          tmp33 = closure_2;
           num5 = 7;
           tmp34 = globalThis;
           obj11 = {};
@@ -323,7 +320,7 @@ class TextImpl {
           obj11.selectionColor = tmp8;
           obj11.style = tmp15;
           obj11.children = children;
-          tmp31Result = tmp31(arg1(dependencyMap[7]).NativeText, Object.assign({}, tmp2, obj11));
+          tmp31Result = tmp31(require("NativeText").NativeText, Object.assign({}, tmp2, obj11));
         }
         if (null == children) {
           return tmp31Result;
@@ -345,23 +342,23 @@ class TextImpl {
                   if ("object" === typeof tmp41) {
                     flag6 = true;
                     iter.return();
-                    // break
+                    break;
                   }
                   if (!flag6) {
                     return tmp31Result;
                   }
                 }
-                // continue
+                continue;
               }
             }
             tmp43 = jsx;
-            tmp44 = importDefault;
-            tmp45 = dependencyMap;
+            tmp44 = closure_1;
+            tmp45 = closure_2;
             obj12 = {};
             flag7 = true;
             obj12.value = true;
             obj12.children = tmp31Result;
-            return jsx(importDefault(dependencyMap[6]), obj12);
+            return jsx(require("result"), obj12);
           }
           str4 = "object";
           if ("object" !== typeof children) {
@@ -411,15 +408,15 @@ function NativePressableVirtualText(ref) {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = callback(useTextPressability(ref.textPressabilityProps), 2);
-  return jsx(arg1(dependencyMap[7]).NativeVirtualText, Object.assign({}, ref.textProps, tmp3, { isHighlighted: tmp2, isPressable: true, ref: ref.ref }));
+  return jsx(require(290) /* NativeText */.NativeVirtualText, Object.assign({}, ref.textProps, tmp3, { isHighlighted: tmp2, isPressable: true, ref: ref.ref }));
 }
 function NativePressableText(ref) {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = callback(useTextPressability(ref.textPressabilityProps), 2);
-  return jsx(arg1(dependencyMap[7]).NativeText, Object.assign({}, ref.textProps, tmp3, { isHighlighted: tmp2, isPressable: true, ref: ref.ref }));
+  return jsx(require(290) /* NativeText */.NativeText, Object.assign({}, ref.textProps, tmp3, { isHighlighted: tmp2, isPressable: true, ref: ref.ref }));
 }
-let closure_12 = {};
-let closure_13 = { accessibilityRole: "en-US", apply: 0, "Null": null, "Null": true };
+let closure_12 = { auto: true, text: true, none: false, contain: true, all: true };
+let closure_13 = { auto: "auto", top: "top", bottom: "bottom", middle: "center" };
 
 export default TextImpl;

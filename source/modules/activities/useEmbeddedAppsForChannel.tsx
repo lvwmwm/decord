@@ -1,53 +1,60 @@
-// Module ID: 11169
-// Function ID: 86864
+// Module ID: 11179
+// Function ID: 86914
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 4217, 1849, 1347, 566, 3748, 5470, 1327, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 11169 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11179 (_createForOfIteratorHelperLoose)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { NO_ACTIVITIES } from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,43 +93,42 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function useEmbeddedApps(arr, arg1) {
   let iter4;
-  arg1 = arr;
+  const _require = arr;
   const importDefault = arg1;
-  const mapped = arr.map((applicationId) => applicationId.applicationId);
-  const tmp2 = importDefault(dependencyMap[6])(mapped);
+  let mapped = arr.map((applicationId) => applicationId.applicationId);
+  let tmp2 = importDefault(5470)(mapped);
   const dependencyMap = tmp2;
   const set = new Set([]);
-  const React = set;
   const tmp3 = _createForOfIteratorHelperLoose(arr);
   let iter = tmp3();
   if (!iter.done) {
     do {
-      let tmp4 = closure_8;
-      let tmp5 = closure_8(iter.value.userIds);
+      let tmp4 = _createForOfIteratorHelperLoose;
+      let tmp5 = _createForOfIteratorHelperLoose(iter.value.userIds);
       let iter2 = tmp5();
       if (!iter2.done) {
         do {
           let addResult = set.add(iter2.value);
           let iter3 = tmp5();
           iter2 = iter3;
-          let done = iter3.done;
+          done = iter3.done;
         } while (!done);
       }
       iter4 = tmp3();
       iter = iter4;
     } while (!iter4.done);
   }
-  const items = [closure_5];
+  let items = [closure_5];
   const items1 = [set];
-  const stateFromStoresArray = arg1(dependencyMap[4]).useStateFromStoresArray(items, () => {
+  const stateFromStoresArray = _require(566).useStateFromStoresArray(items, () => {
     let done;
     const items = [];
-    const tmp = callback(set);
+    const tmp = outer1_8(set);
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_5;
-        let arr = items.push(closure_5.getUser(iter.value));
+        let tmp2 = outer1_5;
+        let arr = items.push(outer1_5.getUser(iter.value));
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -130,33 +136,32 @@ function useEmbeddedApps(arr, arg1) {
     }
     return items;
   }, items1);
-  let closure_4 = stateFromStoresArray;
   const items2 = [arr, tmp2, stateFromStoresArray, arg1];
-  return React.useMemo(() => {
-    const arg0 = new Map();
+  return set.useMemo(() => {
+    const map = new Map();
     const item = stateFromStoresArray.forEach((id) => {
       if (null != id) {
         const result = map.set(id.id, id);
       }
     });
-    const mapped = arg0.map((userIds) => {
+    const mapped = map.map((userIds) => {
       let iter;
       const items = [];
       if (null != items) {
-        const tmp12 = callback(userIds.userIds);
+        const tmp12 = outer2_8(userIds.userIds);
         const iter3 = tmp12();
         let iter2 = iter3;
         if (!iter3.done) {
           do {
-            let tmp2 = closure_0;
-            let value = closure_0.get(iter2.value);
+            let tmp2 = map;
+            let value = map.get(iter2.value);
             let tmp4 = tmp9;
             if (null != value) {
-              let tmp5 = closure_1;
+              let tmp5 = outer1_1;
               tmp4 = tmp9;
-              if (null != closure_1) {
-                let tmp6 = closure_1;
-                let tmp7 = closure_1(value);
+              if (null != outer1_1) {
+                let tmp6 = outer1_1;
+                let tmp7 = outer1_1(value);
                 tmp4 = tmp7;
                 if (null != tmp7) {
                   let arr = items.push(tmp7);
@@ -165,51 +170,46 @@ function useEmbeddedApps(arr, arg1) {
               }
             }
             iter = tmp12();
-            let tmp9 = tmp4;
+            tmp9 = tmp4;
             iter2 = iter;
           } while (!iter.done);
         }
       }
       let tmp10 = null;
-      if (null != closure_2[arg1]) {
+      if (null != outer1_2[arg1]) {
         const obj = { embeddedActivity: userIds, application: tmp, userParticipantAvatarUrls: items };
         tmp10 = obj;
       }
       return tmp10;
     });
-    return mapped.filter(arg0(tmp2[7]).isNotNullish);
+    return mapped.filter(arr(tmp2[7]).isNotNullish);
   }, items2);
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const NO_ACTIVITIES = arg1(dependencyMap[3]).NO_ACTIVITIES;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/activities/useEmbeddedAppsForChannel.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/useEmbeddedAppsForChannel.tsx");
 
 export default function useEmbeddedAppsForChannel(arg0, arg1) {
-  arg1 = arg0;
-  const items = [closure_6];
-  return useEmbeddedApps(arg1(dependencyMap[4]).useStateFromStoresArray(items, () => {
-    if (null != arg0) {
-      if (null != arg0.id) {
-        if ("" !== arg0.id) {
-          let embeddedActivitiesForChannel = embeddedActivitiesForChannel.getEmbeddedActivitiesForChannel(arg0.id);
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose];
+  return useEmbeddedApps(_require(566).useStateFromStoresArray(items, () => {
+    if (null != user) {
+      if (null != user.id) {
+        if ("" !== user.id) {
+          let embeddedActivitiesForChannel = outer1_6.getEmbeddedActivitiesForChannel(user.id);
         }
         return embeddedActivitiesForChannel;
       }
     }
-    embeddedActivitiesForChannel = closure_7;
+    embeddedActivitiesForChannel = outer1_7;
   }), arg1);
 };
 export const useEmbeddedAppsByChannel = function useEmbeddedAppsByChannel(arg0) {
-  const arg1 = arg0;
-  const items = [closure_6];
-  const tmp = useEmbeddedApps(arg1(dependencyMap[4]).useStateFromStores(items, () => {
-    if (null != arg0) {
-      let embeddedActivitiesForGuild = embeddedActivitiesForGuild.getEmbeddedActivitiesForGuild(arg0);
+  const _require = arg0;
+  let items = [_createForOfIteratorHelperLoose];
+  const tmp = useEmbeddedApps(_require(566).useStateFromStores(items, () => {
+    if (null != closure_0) {
+      let embeddedActivitiesForGuild = outer1_6.getEmbeddedActivitiesForGuild(closure_0);
     } else {
-      embeddedActivitiesForGuild = closure_7;
+      embeddedActivitiesForGuild = outer1_7;
     }
     return embeddedActivitiesForGuild;
   }));
@@ -217,9 +217,8 @@ export const useEmbeddedAppsByChannel = function useEmbeddedAppsByChannel(arg0) 
   const items1 = [tmp];
   return React.useMemo(() => {
     const map = new Map();
-    const arg0 = map;
     const item = tmp.forEach((embeddedActivity) => {
-      const embeddedActivityLocationChannelId = map(closure_2[5]).getEmbeddedActivityLocationChannelId(embeddedActivity.embeddedActivity.location);
+      const embeddedActivityLocationChannelId = map(outer2_2[5]).getEmbeddedActivityLocationChannelId(embeddedActivity.embeddedActivity.location);
       if (null != embeddedActivityLocationChannelId) {
         let items = map.get(embeddedActivityLocationChannelId);
         if (null == items) {
@@ -234,13 +233,12 @@ export const useEmbeddedAppsByChannel = function useEmbeddedAppsByChannel(arg0) 
 };
 export { useEmbeddedApps };
 export const useEmbeddedAppsWithPresence = function useEmbeddedAppsWithPresence(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4];
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
   const items1 = [arg0];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     const map = new Map();
-    const arg0 = map;
-    const item = arg0.forEach((embeddedActivity) => {
+    const item = map.forEach((embeddedActivity) => {
       let value;
       if (null != embeddedActivity) {
         const userIds = embeddedActivity.embeddedActivity.userIds;
@@ -249,17 +247,17 @@ export const useEmbeddedAppsWithPresence = function useEmbeddedAppsWithPresence(
       }
       let id;
       if (null != embeddedActivity) {
-        const application = embeddedActivity.application;
+        let application = embeddedActivity.application;
         if (null != application) {
           id = application.id;
         }
       }
       const obj = {};
       const merged = Object.assign(embeddedActivity);
-      obj["presenceActivity"] = closure_4.findActivity(value, (application_id) => {
+      obj["presenceActivity"] = outer2_4.findActivity(value, (application_id) => {
         let id;
-        if (null != application_id) {
-          const application = application_id.application;
+        if (null != embeddedActivity) {
+          const application = embeddedActivity.application;
           if (null != application) {
             id = application.id;
           }
@@ -269,5 +267,5 @@ export const useEmbeddedAppsWithPresence = function useEmbeddedAppsWithPresence(
       const result = map.set(id, obj);
     });
     return map;
-  }, items1, arg1(dependencyMap[4]).statesWillNeverBeEqual);
+  }, items1, _require(566).statesWillNeverBeEqual);
 };

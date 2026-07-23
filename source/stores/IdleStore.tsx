@@ -1,9 +1,21 @@
-// Module ID: 4940
-// Function ID: 42346
+// Module ID: 4943
+// Function ID: 42364
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 653, 4191, 477, 3803, 664, 686, 3741, 4944, 574, 566, 2]
 
-// Module 4940 (_isNativeReflectConstruct)
+// Module 4943 (_isNativeReflectConstruct)
+import closure_3 from "ME";
+import DesktopSources from "DesktopSources";
+import initialize from "initialize";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { SpeakingFlags } from "DesktopSources";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,51 +26,51 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function isSystemIdle() {
-  let tmp = closure_16;
-  if (!closure_16) {
-    tmp = closure_17;
+  let tmp = c16;
+  if (!c16) {
+    tmp = c17;
   }
   if (!tmp) {
-    const obj = arg1(dependencyMap[8]);
-    tmp = arg1(dependencyMap[8]).isAndroid() && closure_18;
-    const tmp4 = arg1(dependencyMap[8]).isAndroid() && closure_18;
+    const obj = require(477) /* set */;
+    tmp = require(477) /* set */.isAndroid() && c18;
+    const tmp4 = require(477) /* set */.isAndroid() && c18;
   }
   return tmp;
 }
 function checkIdleAFK() {
   if (Date.now() - closure_13 <= closure_9) {
     if (!isSystemIdle()) {
-      if (closure_14) {
-        let obj = importDefault(dependencyMap[11]);
-        obj.dispatch({ ao: true, ip: null });
+      if (c14) {
+        let obj = importDefault(686);
+        obj.dispatch({ type: "IDLE", idle: false });
       }
     }
-    const AfkTimeout = arg1(dependencyMap[9]).AfkTimeout;
+    const AfkTimeout = require(3803) /* explicitContentFromProto */.AfkTimeout;
     const setting = AfkTimeout.getSetting();
     if (0 !== setting) {
       if (null == closure_12) {
         const _Date = Date;
         const _Math = Math;
         const diff = Date.now() - closure_13;
-        if (diff <= Math.min(setting * importDefault(dependencyMap[10]).Millis.SECOND, closure_9)) {
+        if (diff <= Math.min(setting * importDefault(664).Millis.SECOND, closure_9)) {
           if (!isSystemIdle()) {
-            if (closure_15) {
-              importDefault(dependencyMap[11]).dispatch({ <string:1741837664>: 112, <string:1741711309>: "center" });
-              const obj4 = importDefault(dependencyMap[11]);
+            if (c15) {
+              importDefault(686).dispatch({ type: "AFK", afk: false });
+              const obj4 = importDefault(686);
             }
           }
         }
       }
     }
-    if (!closure_15) {
-      importDefault(dependencyMap[11]).dispatch({ <string:1741837664>: "3cb840d03313467838d658bbec801fcd", <string:1741711309>: "icon7" });
-      const obj5 = importDefault(dependencyMap[11]);
+    if (!c15) {
+      importDefault(686).dispatch({ type: "AFK", afk: true });
+      const obj5 = importDefault(686);
     }
   }
-  if (!closure_14) {
-    obj = { ao: "png", ip: "axo-id", idleSince: closure_13 };
-    importDefault(dependencyMap[11]).dispatch(obj);
-    const obj2 = importDefault(dependencyMap[11]);
+  if (!c14) {
+    obj = { type: "IDLE", idle: true, idleSince: closure_13 };
+    importDefault(686).dispatch(obj);
+    const obj2 = importDefault(686);
   }
 }
 function handlePowerEvent(arg0) {
@@ -76,66 +88,58 @@ function handleGenericAction(timestamp) {
   }
   let bypassIdleUpdate = tmp;
   if (tmp) {
-    bypassIdleUpdate = timestamp <= closure_13;
+    bypassIdleUpdate = timestamp <= timestamp;
   }
   if (!bypassIdleUpdate) {
     bypassIdleUpdate = timestamp.bypassIdleUpdate;
   }
   if (!bypassIdleUpdate) {
-    let closure_12 = null;
+    let c12 = null;
     if (!tmp) {
       const _Date = Date;
       timestamp = Date.now();
     }
-    closure_13 = timestamp;
     checkIdleAFK();
   }
   return false;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ IDLE_DURATION: closure_9, AppStates: closure_10 } = arg1(dependencyMap[6]));
-const SpeakingFlags = arg1(dependencyMap[7]).SpeakingFlags;
+({ IDLE_DURATION: closure_9, AppStates: closure_10 } = ME);
 let closure_13 = Date.now();
-let closure_14 = false;
-let closure_15 = false;
-let closure_16 = false;
-let closure_17 = false;
-let closure_18 = false;
-if (arg1(dependencyMap[8]).isPlatformEmbedded) {
+let c14 = false;
+let c15 = false;
+let c16 = false;
+let c17 = false;
+let c18 = false;
+if (require("set").isPlatformEmbedded) {
   let powerMonitor;
-  if (null != importDefault(dependencyMap[12])) {
-    powerMonitor = importDefault(dependencyMap[12]).powerMonitor;
+  if (null != require("set")) {
+    powerMonitor = require("set").powerMonitor;
   }
   if (null != powerMonitor) {
     function checkNativeIdle() {
       function handleIdleTime(systemIdleTimeMs) {
         const diff = Date.now() - systemIdleTimeMs;
-        let tmp2 = null == closure_12;
+        let tmp2 = null == outer1_12;
         if (!tmp2) {
-          tmp2 = diff > closure_12;
+          tmp2 = diff > outer1_12;
         }
         if (tmp2) {
           const _Math = Math;
-          closure_13 = Math.max(diff, closure_13);
-          closure_12 = null;
+          outer1_13 = Math.max(diff, outer1_13);
+          outer1_12 = null;
         }
-        callback2();
-        const timerId = setTimeout(closure_24, 10 * callback(closure_2[10]).Millis.SECOND);
+        outer1_21();
+        const timerId = setTimeout(outer1_24, 10 * outer1_1(outer1_2[10]).Millis.SECOND);
       }
       let getSystemIdleTimeMs;
-      if (null != importDefault(dependencyMap[12])) {
-        const powerMonitor = importDefault(dependencyMap[12]).powerMonitor;
+      if (null != importDefault(3741)) {
+        const powerMonitor = importDefault(3741).powerMonitor;
         if (null != powerMonitor) {
           getSystemIdleTimeMs = powerMonitor.getSystemIdleTimeMs;
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = importDefault(dependencyMap[12]).powerMonitor;
+        const powerMonitor2 = importDefault(3741).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(handleIdleTime);
@@ -145,44 +149,44 @@ if (arg1(dependencyMap[8]).isPlatformEmbedded) {
       }
     }
     checkNativeIdle();
-    powerMonitor = importDefault(dependencyMap[12]).powerMonitor;
+    powerMonitor = require("set").powerMonitor;
     powerMonitor.on("resume", () => {
-      let closure_16 = false;
+      let c16 = false;
       handlePowerEvent(false);
     });
-    const powerMonitor2 = importDefault(dependencyMap[12]).powerMonitor;
+    let powerMonitor2 = require("set").powerMonitor;
     powerMonitor2.on("suspend", () => {
-      let closure_16 = true;
+      let c16 = true;
       handlePowerEvent(true);
-      importDefault(dependencyMap[13]).disconnect();
+      importDefault(4944).disconnect();
     });
-    const powerMonitor3 = importDefault(dependencyMap[12]).powerMonitor;
+    const powerMonitor3 = require("set").powerMonitor;
     powerMonitor3.on("lock-screen", () => {
-      let closure_17 = true;
+      let c17 = true;
       handlePowerEvent(true);
     });
-    const powerMonitor4 = importDefault(dependencyMap[12]).powerMonitor;
+    const powerMonitor4 = require("set").powerMonitor;
     powerMonitor4.on("unlock-screen", () => {
-      let closure_17 = false;
+      let c17 = false;
       handlePowerEvent(false);
     });
   }
-  importDefault(dependencyMap[14])(() => {
+  require("debounce")(() => {
     handleGenericAction({});
   }, 500);
-  let tmp12 = (Store) => {
+  let tmp12 = ((Store) => {
     class IdleStore {
       constructor() {
         self = this;
-        tmp = closure_3(this, IdleStore);
-        obj = closure_6(IdleStore);
-        tmp2 = closure_5;
-        if (closure_19()) {
+        tmp = outer1_3(this, IdleStore);
+        obj = outer1_6(IdleStore);
+        tmp2 = outer1_5;
+        if (outer1_19()) {
           tmp6 = globalThis;
           _Reflect = Reflect;
-          tmp7 = closure_6;
+          tmp7 = outer1_6;
           tmp8 = arguments;
-          constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+          constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
         } else {
           tmp3 = arguments;
           tmp4 = arguments;
@@ -191,26 +195,25 @@ if (arg1(dependencyMap[8]).isPlatformEmbedded) {
         return tmp2(self, constructResult);
       }
     }
-    const arg1 = IdleStore;
     callback2(IdleStore, Store);
     let obj = {
       key: "initialize",
       value() {
-        this.waitFor(closure_8);
+        this.waitFor(outer1_8);
       }
     };
     const items = [obj, , , , , ];
     obj = {
       key: "isIdle",
       value() {
-        return closure_14;
+        return outer1_14;
       }
     };
     items[1] = obj;
     obj = {
       key: "isAFK",
       value() {
-        return closure_15;
+        return outer1_15;
       }
     };
     items[2] = obj;
@@ -218,8 +221,8 @@ if (arg1(dependencyMap[8]).isPlatformEmbedded) {
       key: "getIdleSince",
       value() {
         let tmp = null;
-        if (closure_14) {
-          tmp = closure_13;
+        if (outer1_14) {
+          tmp = outer1_13;
         }
         return tmp;
       }
@@ -227,19 +230,19 @@ if (arg1(dependencyMap[8]).isPlatformEmbedded) {
     items[4] = {
       key: "getSystemSuspended",
       value() {
-        return closure_16;
+        return outer1_16;
       }
     };
     items[5] = {
       key: "getSystemLocked",
       value() {
-        return closure_17;
+        return outer1_17;
       }
     };
     return callback(IdleStore, items);
-  }(importDefault(dependencyMap[15]).Store);
+  })(require("initialize").Store);
   tmp12.displayName = "IdleStore";
-  const obj = {
+  let obj = {
     IDLE: function handleIdle(idle) {
         idle = idle.idle;
       },
@@ -258,7 +261,7 @@ if (arg1(dependencyMap[8]).isPlatformEmbedded) {
       },
     APP_STATE_UPDATE: function handleAppStateUpdate(state) {
         let closure_18 = state.state === constants.BACKGROUND;
-        let closure_12 = null;
+        let c12 = null;
         let closure_13 = Date.now();
         checkIdleAFK();
         return false;
@@ -271,8 +274,8 @@ if (arg1(dependencyMap[8]).isPlatformEmbedded) {
     OVERLAY_SET_INPUT_LOCKED: handleGenericAction
   };
   const prototype = tmp12.prototype;
-  tmp12 = new tmp12(importDefault(dependencyMap[11]), obj);
-  const result = arg1(dependencyMap[16]).fileFinishedImporting("stores/IdleStore.tsx");
+  tmp12 = new tmp12(require("dispatcher"), obj);
+  let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/IdleStore.tsx");
   exports.default = tmp12;
 }
-const timerId = setInterval(checkIdleAFK, 30 * importDefault(dependencyMap[10]).Millis.SECOND);
+let timerId = setInterval(checkIdleAFK, 30 * require("set").Millis.SECOND);

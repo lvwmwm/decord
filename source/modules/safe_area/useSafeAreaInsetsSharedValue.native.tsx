@@ -1,15 +1,14 @@
-// Module ID: 10384
-// Function ID: 80072
+// Module ID: 10394
+// Function ID: 80122
 // Name: _arrayLikeToArray
-// Dependencies: [0, 0, 0, 0, 4294967295, 4294967295, 0]
+// Dependencies: [3991, 1557, 10395, 10019, 1570, 1453, 2]
 // Exports: default
 
-// Module 10384 (_arrayLikeToArray)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 10394 (_arrayLikeToArray)
+import module_3991 from "module_3991";
+import useSafeAreaInsets from "useSafeAreaInsets";
+import module_3991 from "module_3991";
+import useSafeAreaInsets from "useSafeAreaInsets";
 
 let done;
 function _arrayLikeToArray(arg0, arg1) {
@@ -25,34 +24,34 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 let obj = {};
 obj = {};
-const merged = Object.assign(__exportStarResult1.getSafeAreaInsets("main"));
-obj.main = __exportStarResult1.makeMutable(obj);
+const merged = Object.assign(useSafeAreaInsets.getSafeAreaInsets("main"));
+obj.main = module_3991.makeMutable(obj);
 obj = {};
-const merged1 = Object.assign(__exportStarResult1.getSafeAreaInsets("share"));
-obj.share = __exportStarResult1.makeMutable(obj);
+const merged1 = Object.assign(useSafeAreaInsets.getSafeAreaInsets("share"));
+obj.share = module_3991.makeMutable(obj);
 function _loop(value) {
-  const require = value;
-  importDefault(dependencyMap[2])((arg0) => {
-    callback(closure_2[3])(closure_3[closure_0], arg0);
+  let closure_0 = value;
+  importDefault(10395)((arg0) => {
+    outer1_1(outer1_2[3])(outer1_3[closure_0], arg0);
   }, value);
 }
-const tmp4 = function _createForOfIteratorHelperLoose(APP_ENTRY_KEYS) {
-  let require = APP_ENTRY_KEYS;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+const tmp4 = (function _createForOfIteratorHelperLoose(APP_ENTRY_KEYS) {
+  let closure_0 = APP_ENTRY_KEYS;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = APP_ENTRY_KEYS[Symbol.iterator];
+    iterable = APP_ENTRY_KEYS[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = APP_ENTRY_KEYS[Symbol.iterator];
+  if (!iterable) {
+    iterable = APP_ENTRY_KEYS[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(APP_ENTRY_KEYS);
+  if (iterable) {
+    const iter = iterable.call(APP_ENTRY_KEYS);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
+    let tmp = iterable;
     if (!Array.isArray(APP_ENTRY_KEYS)) {
       let tmp2;
       if (APP_ENTRY_KEYS) {
@@ -70,7 +69,7 @@ const tmp4 = function _createForOfIteratorHelperLoose(APP_ENTRY_KEYS) {
               if ("Arguments" === name) {
                 let arr = _arrayLikeToArray(APP_ENTRY_KEYS, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
@@ -78,7 +77,7 @@ const tmp4 = function _createForOfIteratorHelperLoose(APP_ENTRY_KEYS) {
           const _Array2 = Array;
           arr = Array.from(APP_ENTRY_KEYS);
           const callResult = toString.call(APP_ENTRY_KEYS);
-          const tmp3 = "Object" === substr && APP_ENTRY_KEYS.constructor;
+          tmp3 = "Object" === substr && APP_ENTRY_KEYS.constructor;
         }
       }
       tmp = tmp2;
@@ -89,21 +88,21 @@ const tmp4 = function _createForOfIteratorHelperLoose(APP_ENTRY_KEYS) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= APP_ENTRY_KEYS.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = APP_ENTRY_KEYS[+closure_1];
       }
       return obj;
     };
   }
-}(require(dependencyMap[4]).APP_ENTRY_KEYS);
+})(require("APP_ENTRY_KEYS").APP_ENTRY_KEYS);
 let iter = tmp4();
 if (!iter.done) {
   do {
@@ -114,23 +113,23 @@ if (!iter.done) {
   } while (!done);
 }
 let closure_4 = { code: "function getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1(appEntryKey='main'){const{safeAreaInsetsSharedValues}=this.__closure;return safeAreaInsetsSharedValues[appEntryKey].get();}" };
-const result = __exportStarResult1.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
-
-export default function useSafeAreaInsetsSharedValue() {
-  const obj = require(dependencyMap[5]);
-  return obj[obj.useAppEntryKey(obj)];
-};
-export const getSafeAreaInsetsWorklet = () => {
-  function getSafeAreaInsetsWorklet() {
+const tmp6 = (() => {
+  export function getSafeAreaInsetsWorklet() {
     let str = arg0;
     if (arg0 === undefined) {
       str = "main";
     }
-    return closure_3[str].get();
+    return outer1_3[str].get();
   }
-  const obj = { safeAreaInsetsSharedValues: obj };
+  obj = { safeAreaInsetsSharedValues: obj };
   getSafeAreaInsetsWorklet.__closure = obj;
   getSafeAreaInsetsWorklet.__workletHash = 5220247127549;
   getSafeAreaInsetsWorklet.__initData = closure_4;
   return getSafeAreaInsetsWorklet;
-}();
+})();
+const result = require("subscribeToSafeAreaInsets").fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
+
+export default function useSafeAreaInsetsSharedValue() {
+  const obj = require(1453) /* context */;
+  return obj[obj.useAppEntryKey(obj)];
+};

@@ -1,36 +1,38 @@
-// Module ID: 14725
-// Function ID: 111060
-// Dependencies: []
+// Module ID: 14840
+// Function ID: 113224
+// Dependencies: [31, 1351, 653, 33, 14838, 1324, 14823, 10190, 566, 14841, 14825, 1212, 14842, 9395, 689, 2]
 
-// Module 14725
-let closure_3 = importDefault(dependencyMap[1]);
-const FAVORITES = arg1(dependencyMap[2]).FAVORITES;
-const jsx = arg1(dependencyMap[3]).jsx;
+// Module 14840
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FAVORITES } from "ME";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
 let closure_6 = {
   onPress() {
-    importDefault(dependencyMap[4])(FAVORITES);
+    importDefault(14838)(FAVORITES);
   }
 };
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function GuildsBarFavorites() {
+const memoResult = require("result").memo(function GuildsBarFavorites() {
   let badge;
   let badge2;
   let cutouts;
   let unread;
-  let obj = arg1(dependencyMap[6]);
-  const tmp = importDefault(dependencyMap[5])("GuildsBarFavorites");
+  let obj = require(14823) /* UnreadIndicator */;
+  const tmp = importDefault(1324)("GuildsBarFavorites");
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
-  const isFavoritesGuildSelected = arg1(dependencyMap[7]).useIsFavoritesGuildSelected();
-  const obj2 = arg1(dependencyMap[7]);
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items, () => favoriteChannels.getFavoriteChannels());
-  const obj3 = arg1(dependencyMap[8]);
-  ({ badge, unread } = importDefault(dependencyMap[9])(stateFromStores));
-  const tmp5 = importDefault(dependencyMap[9])(stateFromStores);
-  ({ badge: badge2, cutouts } = importDefault(dependencyMap[10])({ mentionCount: badge }));
+  const isFavoritesGuildSelected = require(10190) /* computeFavoritesAccess */.useIsFavoritesGuildSelected();
+  const obj2 = require(10190) /* computeFavoritesAccess */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getFavoriteChannels());
+  const obj3 = require(566) /* initialize */;
+  ({ badge, unread } = importDefault(14841)(stateFromStores));
+  const tmp5 = importDefault(14841)(stateFromStores);
+  ({ badge: badge2, cutouts } = importDefault(14825)({ mentionCount: badge }));
   obj = { selected: isFavoritesGuildSelected };
   let tmp9 = !tmp;
-  const tmp6 = importDefault(dependencyMap[10])({ mentionCount: badge });
+  const tmp6 = importDefault(14825)({ mentionCount: badge });
   const tmp7 = jsx;
   if (tmp9) {
     tmp9 = !isFavoritesGuildSelected;
@@ -41,16 +43,16 @@ const memoResult = importAll(dependencyMap[0]).memo(function GuildsBarFavorites(
   obj.cutouts = cutouts;
   obj.overState = undefined;
   obj.config = closure_6;
-  const intl = arg1(dependencyMap[11]).intl;
-  obj.label = intl.string(arg1(dependencyMap[11]).t.wMWyci);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t.wMWyci);
   obj.externalChildren = badge2;
-  obj.expandedChildren = jsx(arg1(dependencyMap[12]).HomeDrawerFavoritesRowExpandedChildren, {});
+  obj.expandedChildren = jsx(require(14842) /* HomeDrawerFavoritesRowExpandedChildren */.HomeDrawerFavoritesRowExpandedChildren, {});
   obj = {};
-  const colors = importDefault(dependencyMap[14]).colors;
+  const colors = importDefault(689).colors;
   obj.color = isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
-  obj.children = jsx(arg1(dependencyMap[13]).StarIcon, obj);
-  return tmp7(importDefault(dependencyMap[6]), obj);
+  obj.children = jsx(require(9395) /* StarIcon */.StarIcon, {});
+  return tmp7(importDefault(14823), obj);
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarFavorites.tsx");
+const result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFavorites.tsx");
 
 export default memoResult;

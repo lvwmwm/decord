@@ -1,11 +1,32 @@
-// Module ID: 7371
-// Function ID: 59448
+// Module ID: 7376
+// Function ID: 59482
 // Name: getHeaderBackground
-// Dependencies: []
+// Dependencies: [57, 5, 31, 27, 1849, 5621, 653, 1851, 33, 689, 4130, 3776, 7165, 7377, 7378, 7162, 7163, 7164, 7166, 7379, 7380, 7381, 7115, 7382, 7383, 7384, 7385, 7386, 7167, 7387, 7388, 7389, 7390, 7391, 7392, 7393, 7170, 7394, 7395, 7396, 7172, 7397, 7398, 7399, 7156, 7203, 7400, 7401, 6647, 6658, 491, 4451, 1456, 566, 44, 5464, 5618, 477, 1273, 4543, 1212, 4126, 7412, 5484, 7413, 7414, 2]
 // Exports: default
 
-// Module 7371 (getHeaderBackground)
+// Module 7376 (getHeaderBackground)
+import set from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import registerAsset from "registerAsset";
+import get_ActivityIndicator from "registerAsset";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { SubscriptionPlanInfo } from "GuildFeatures";
+import jsxProd from "registerAsset";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_16;
+let closure_17;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getHeaderBackground(arg0, arg1) {
   return obj5[arg0][arg1];
 }
@@ -13,7 +34,7 @@ function getPremiumImage(premiumBranding, ACTIVE) {
   return obj11[premiumBranding][ACTIVE];
 }
 function getPremiumImageStyle(premiumBranding, ACTIVE) {
-  return closure_22[premiumBranding][ACTIVE];
+  return table[premiumBranding][ACTIVE];
 }
 function getLogo(arg0, arg1) {
   return obj22[arg0][arg1];
@@ -22,53 +43,53 @@ function getLogoStyle(premiumBranding) {
   return obj28[premiumBranding];
 }
 function getPlanDescriptionStyle(ACTIVE) {
-  return closure_25[ACTIVE];
+  return table2[ACTIVE];
 }
 function handleCancelSubscription() {
   return _handleCancelSubscription(...arguments);
 }
-async function _handleCancelSubscription(isPurchasedViaApple, analyticsLocations, fromStep, arg3) {
-  let obj = callback(closure_2[44]);
-  obj = { subscription: isPurchasedViaApple, analyticsLocations, fromStep, toStep: callback(closure_2[44]).STEP_ANALYTICS_NAMES[closure_0(undefined, closure_2[44]).CancellationFlowSteps.MOBILE_SUBSCRIPTION_MANAGE] };
+async function _handleCancelSubscription(arg0, arg1, arg2, arg3) {
+  let obj = outer2_0(outer2_2[44]);
+  obj = { subscription: arg0, analyticsLocations: arg1, fromStep: arg2, toStep: outer2_0(outer2_2[44]).STEP_ANALYTICS_NAMES[outer2_0(undefined, outer2_2[44]).CancellationFlowSteps.MOBILE_SUBSCRIPTION_MANAGE] };
   const result = obj.trackPremiumSubscriptionCancellationFlowStep(obj);
-  if (null != isPurchasedViaApple) {
-    if (isPurchasedViaApple.isPurchasedViaApple) {
-      yield callback(closure_2[45]).manageSubscription();
-      const obj4 = callback(closure_2[45]);
+  if (null != arg0) {
+    if (arg0.isPurchasedViaApple) {
+      yield outer2_0(outer2_2[45]).manageSubscription();
+      const obj4 = outer2_0(outer2_2[45]);
     }
   }
   if (tmp2) {
-    closure_8.openURL(callback(closure_2[11]).getExternalSubscriptionMethodUrl(isPurchasedViaApple.paymentGateway, "SUBSCRIPTION_MANAGEMENT"));
-    const obj3 = callback(closure_2[11]);
+    outer2_8.openURL(outer2_0(outer2_2[11]).getExternalSubscriptionMethodUrl(arg0.paymentGateway, "SUBSCRIPTION_MANAGEMENT"));
+    const obj3 = outer2_0(outer2_2[11]);
   }
 }
 function onCancelClick(subscription, analyticsLocations) {
-  analyticsLocations = subscription;
+  const _require = subscription;
   const importDefault = analyticsLocations;
-  let obj = analyticsLocations(dependencyMap[44]);
+  let obj = _require(7156);
   const result = obj.trackPremiumSubscriptionCancellationStarted(subscription, analyticsLocations);
   if (obj2.isBoostOnlySubscription(subscription)) {
     let tmp4Result = handleCancelSubscription(subscription, analyticsLocations);
   } else {
     obj = {
       subscription,
-      mode: analyticsLocations(dependencyMap[47]).WhatYouLoseMode.CANCEL,
+      mode: _require(7401).WhatYouLoseMode.CANCEL,
       onContinue(arg0) {
-          return callback(arg0, arg1, arg0);
+          return outer1_32(closure_0, closure_1, arg0);
         }
     };
-    tmp4Result = importDefault(dependencyMap[46])(obj);
-    const tmp4 = importDefault(dependencyMap[46]);
+    tmp4Result = importDefault(7400)(obj);
+    const tmp4 = importDefault(7400);
   }
   return tmp4Result;
 }
-function handleManageSubscription(subscription, closure_3, analyticsLocations) {
+function handleManageSubscription(subscription, set, analyticsLocations) {
   if (subscription.status === constants3.ACCOUNT_HOLD) {
-    closure_8.openURL(closure_3(dependencyMap[11]).getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
-    const obj4 = closure_3(dependencyMap[11]);
+    closure_8.openURL(require(3776) /* _createForOfIteratorHelperLoose */.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
+    const obj4 = require(3776) /* _createForOfIteratorHelperLoose */;
   } else {
-    let obj = closure_3(dependencyMap[48]);
-    obj = { navigation: closure_3 };
+    let obj = require(6647) /* launchPremiumPlanSelect */;
+    obj = { navigation: set };
     obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_PREMIUM };
     obj.analyticsLocation = obj;
     obj.analyticsLocations = analyticsLocations;
@@ -78,42 +99,41 @@ function handleManageSubscription(subscription, closure_3, analyticsLocations) {
 function onResubscribeClick(arg0) {
   return _onResubscribeClick(...arguments);
 }
-async function _onResubscribeClick(isACOM, arg1) {
-  if (isACOM.isACOM) {
+async function _onResubscribeClick(arg0, arg1) {
+  if (arg0.isACOM) {
     let obj = {};
-    const obj3 = callback(closure_2[49]);
-    obj.requestIdentifier = callback(closure_2[50]).v4();
-    obj.subscriptionId = isACOM.id;
+    const obj3 = outer2_0(outer2_2[49]);
+    obj.requestIdentifier = outer2_0(outer2_2[50]).v4();
+    obj.subscriptionId = arg0.id;
     yield obj3.resubscribeGenericSubscription(obj, true);
-    const obj5 = callback(closure_2[50]);
-    yield callback(closure_2[51]).fetchSubscriptions();
-    const obj6 = callback(closure_2[51]);
-  } else if (isACOM.isPurchasedViaApple) {
-    return yield callback(closure_2[45]).manageSubscription();
-  } else if (isACOM.isPurchasedViaGoogle) {
-    obj = callback(closure_2[11]);
-    closure_8.openURL(obj.getExternalSubscriptionMethodUrl(isACOM.paymentGateway, "SUBSCRIPTION_MANAGEMENT"));
+    const obj5 = outer2_0(outer2_2[50]);
+    yield outer2_0(outer2_2[51]).fetchSubscriptions();
+    const obj6 = outer2_0(outer2_2[51]);
+  } else if (arg0.isPurchasedViaApple) {
+    return yield outer2_0(outer2_2[45]).manageSubscription();
+  } else if (arg0.isPurchasedViaGoogle) {
+    obj = outer2_0(outer2_2[11]);
+    outer2_8.openURL(obj.getExternalSubscriptionMethodUrl(arg0.paymentGateway, "SUBSCRIPTION_MANAGEMENT"));
   }
 }
 class PremiumSubscriptionHeader {
   constructor(arg0) {
     subscription = global.subscription;
-    arg1 = subscription;
     ({ renewalInvoicePreview, onClickManagePremiumGuild } = global);
     tmp = jsxs();
-    obj = arg1(closure_2[52]);
-    importDefault = obj.useNavigation();
-    obj2 = arg1(closure_2[53]);
+    obj = require("useNavigation");
+    useNavigation = obj.useNavigation();
+    obj2 = require("initialize");
     items = [];
-    items[0] = closure_10;
+    items[0] = c10;
     stateFromStores = obj2.useStateFromStores(items, () => {
-      const currentUser = currentUser.getCurrentUser();
-      callback(closure_2[54])(null != currentUser, "PremiumSubscriptionHeader: currentUser cannot be undefined");
+      const currentUser = outer1_10.getCurrentUser();
+      callback(table[54])(null != currentUser, "PremiumSubscriptionHeader: currentUser cannot be undefined");
       return currentUser;
     });
-    obj3 = arg1(closure_2[53]);
+    obj3 = require("initialize");
     items1 = [];
-    items1[0] = closure_11;
+    items1[0] = c11;
     stateFromStores1 = obj3.useStateFromStores(items1, () => {
       if (subscription.isOnPlatformMatchingExternalPaymentGateway) {
         if (subscription.isACOM) {
@@ -121,7 +141,7 @@ class PremiumSubscriptionHeader {
         } else {
           if (null != subscription.paymentGatewayPlanId) {
             if ("" !== subscription.paymentGatewayPlanId) {
-              return product.getProduct(subscription.paymentGatewayPlanId);
+              return outer1_11.getProduct(subscription.paymentGatewayPlanId);
             }
           }
           const _Error = Error;
@@ -132,20 +152,20 @@ class PremiumSubscriptionHeader {
         return null;
       }
     });
-    obj4 = importDefault(closure_2[11]);
+    obj4 = require("_createForOfIteratorHelperLoose");
     planIdFromInvoice = obj4.getPlanIdFromInvoice(subscription, renewalInvoicePreview);
-    tmp5 = analyticsLocations(importAll.useState(false), 2);
+    tmp5 = analyticsLocations(registerAsset.useState(false), 2);
     first = tmp5[0];
-    closure_2 = tmp5[1];
-    obj5 = arg1(closure_2[11]);
+    c2 = tmp5[1];
+    obj5 = require("_createForOfIteratorHelperLoose");
     premiumBranding = obj5.getPremiumBranding(subscription);
-    analyticsLocations = importDefault(closure_2[55])().analyticsLocations;
-    if (premiumBranding === arg1(closure_2[11]).Branding.PREMIUM_GUILD) {
-      tmp12 = arg1;
-      tmp13 = closure_2;
-      obj7 = arg1(closure_2[11]);
+    analyticsLocations = require("mergeLocations")().analyticsLocations;
+    if (premiumBranding === require("_createForOfIteratorHelperLoose").Branding.PREMIUM_GUILD) {
+      tmp12 = subscription;
+      tmp13 = c2;
+      obj7 = require("_createForOfIteratorHelperLoose");
       coercedPremiumGuildSubscriptionStatus = obj7.getCoercedPremiumGuildSubscriptionStatus(subscription);
-      obj8 = arg1(closure_2[11]);
+      obj8 = require("_createForOfIteratorHelperLoose");
       obj = {};
       obj.subscription = subscription;
       obj.user = stateFromStores;
@@ -159,25 +179,25 @@ class PremiumSubscriptionHeader {
       premiumGuildHeaderDescription = obj8.getPremiumGuildHeaderDescription(obj);
       statusFromInvoice = coercedPremiumGuildSubscriptionStatus;
     } else {
-      tmp64 = importDefault;
-      tmp65 = closure_2;
-      obj26 = importDefault(closure_2[11]);
+      tmp64 = useNavigation;
+      tmp65 = c2;
+      obj26 = require("_createForOfIteratorHelperLoose");
       statusFromInvoice = obj26.getStatusFromInvoice(subscription, renewalInvoicePreview);
       tmp66 = SubscriptionPlanInfo;
       tmp67 = SubscriptionPlanInfo[planIdFromInvoice];
       num12 = 54;
       formatRateResult = null;
       str7 = "missing subscription planInfo";
-      tmp68 = importDefault(closure_2[54])(null != tmp67, "missing subscription planInfo");
-      obj27 = importDefault(closure_2[11]);
+      tmp68 = require("invariant")(null != tmp67, "missing subscription planInfo");
+      obj27 = require("_createForOfIteratorHelperLoose");
       obj1 = {};
       obj1.subscription = subscription;
       obj1.planId = planIdFromInvoice;
       if (null != stateFromStores1) {
-        tmp8 = arg1;
-        tmp9 = closure_2;
+        tmp8 = subscription;
+        tmp9 = c2;
         num = 56;
-        obj6 = arg1(closure_2[56]);
+        obj6 = require("formatSingleCurrencyPrice");
         formatRateResult = obj6.formatRate(stateFromStores1.priceString, tmp67.interval, tmp67.intervalCount);
       }
       obj1.price = formatRateResult;
@@ -199,10 +219,10 @@ class PremiumSubscriptionHeader {
     }
     tmp22 = !tmp21;
     if (!tmp21) {
-      tmp23 = arg1;
-      tmp24 = closure_2;
+      tmp23 = subscription;
+      tmp24 = c2;
       num2 = 57;
-      obj10 = arg1(closure_2[57]);
+      obj10 = require("set");
       tmp25 = !obj10.isAndroid();
       if (!tmp25) {
         tmp26 = null;
@@ -244,7 +264,7 @@ class PremiumSubscriptionHeader {
     obj7 = {};
     obj7.style = getPlanDescriptionStyle(ACTIVE);
     obj7.children = premiumGuildHeaderDescription;
-    items5[1] = jsx(arg1(closure_2[58]).LegacyText, obj7);
+    items5[1] = jsx(require("Button").LegacyText, obj7);
     obj8 = { style: tmp.buttonContainer };
     tmp33 = null;
     tmp31 = jsxs;
@@ -259,26 +279,26 @@ class PremiumSubscriptionHeader {
           obj9 = {};
           obj9.style = tmp.buttonWrapper;
           tmp36 = jsx;
-          tmp37 = arg1;
-          tmp38 = closure_2;
+          tmp37 = subscription;
+          tmp38 = c2;
           num3 = 59;
           obj10 = {};
-          tmp39 = closure_4;
-          obj10.onPress = closure_4(async () => {
-            callback(true);
-            yield closure_36(closure_0);
-            callback(false);
+          tmp39 = c4;
+          obj10.onPress = c4(async () => {
+            outer1_2(true);
+            yield outer2_36(outer1_0);
+            outer1_2(false);
           });
           str = "primary-overlay";
           obj10.variant = "primary-overlay";
           num4 = 60;
-          intl = arg1(closure_2[60]).intl;
-          obj10.text = intl.string(arg1(closure_2[60]).t.lTCb0c);
+          intl = require("getSystemLocale").intl;
+          obj10.text = intl.string(require("getSystemLocale").t.lTCb0c);
           str2 = "sm";
           obj10.size = "sm";
           obj10.disabled = first;
           obj10.loading = first;
-          obj9.children = jsx(arg1(closure_2[59]).Button, obj10);
+          obj9.children = jsx(require("Button").Button, obj10);
           tmp33 = jsx(View, obj9);
         }
       }
@@ -287,9 +307,9 @@ class PremiumSubscriptionHeader {
     items6[0] = tmp33;
     if (!tmp22) {
       items6[1] = null;
-      tmp52 = arg1;
-      tmp53 = closure_2;
-      obj22 = arg1(closure_2[11]);
+      tmp52 = subscription;
+      tmp53 = c2;
+      obj22 = require("_createForOfIteratorHelperLoose");
       tmp54 = null;
       if (obj22.subscriptionHasPremiumGuildPlan(subscription)) {
         tmp54 = null;
@@ -299,19 +319,19 @@ class PremiumSubscriptionHeader {
           obj11 = {};
           obj11.style = tmp.buttonWrapper;
           tmp57 = jsx;
-          tmp58 = arg1;
-          tmp59 = closure_2;
+          tmp58 = subscription;
+          tmp59 = c2;
           num8 = 59;
           obj12 = {};
           obj12.onPress = onClickManagePremiumGuild;
           str5 = "primary-overlay";
           obj12.variant = "primary-overlay";
           num9 = 60;
-          intl4 = arg1(closure_2[60]).intl;
-          obj12.text = intl4.string(arg1(closure_2[60]).t.gIVkjm);
+          intl4 = require("getSystemLocale").intl;
+          obj12.text = intl4.string(require("getSystemLocale").t.gIVkjm);
           str6 = "sm";
           obj12.size = "sm";
-          obj11.children = jsx(arg1(closure_2[59]).Button, obj12);
+          obj11.children = jsx(require("Button").Button, obj12);
           tmp54 = jsx(View, obj11);
         }
       }
@@ -319,18 +339,18 @@ class PremiumSubscriptionHeader {
       tmp60 = null;
       if (isOnPlatformMatchingExternalPaymentGateway) {
         tmp61 = jsx;
-        tmp62 = arg1;
-        tmp63 = closure_2;
+        tmp62 = subscription;
+        tmp63 = c2;
         num10 = 61;
-        obj13 = {};
+        obj13 = { accessibilityRole: "link", style: null, onPress: null, variant: "text-sm/medium", color: "text-overlay-light" };
         obj13.style = tmp.cancelLink;
         obj13.onPress = function onPress() {
-          return callback2(subscription, analyticsLocations);
+          return outer1_34(subscription, analyticsLocations);
         };
         num11 = 60;
-        intl5 = arg1(closure_2[60]).intl;
-        obj13.children = intl5.string(arg1(closure_2[60]).t.ETE/oC);
-        tmp60 = jsx(arg1(closure_2[61]).Text, obj13);
+        intl5 = require("getSystemLocale").intl;
+        obj13.children = intl5.string(require("getSystemLocale").t["ETE/oC"]);
+        tmp60 = jsx(require("Text").Text, obj13);
       }
       items6[3] = tmp60;
       obj8.children = items6;
@@ -341,157 +361,142 @@ class PremiumSubscriptionHeader {
     } else {
       obj14 = {};
       obj14.style = tmp.buttonWrapper;
-      tmp43 = arg1;
-      tmp44 = closure_2;
+      tmp43 = subscription;
+      tmp44 = c2;
       num5 = 59;
       tmp40 = jsx;
       tmp41 = View;
       tmp42 = jsx;
       obj15 = {};
       obj15.onPress = function onPress() {
-        callback3(subscription, closure_1, analyticsLocations);
+        outer1_35(subscription, closure_1, analyticsLocations);
       };
       str3 = "primary-overlay";
       obj15.variant = "primary-overlay";
       tmp45 = SubscriptionStatusTypes;
       if (subscription.status === SubscriptionStatusTypes.ACCOUNT_HOLD) {
-        tmp49 = arg1;
-        tmp50 = closure_2;
+        tmp49 = subscription;
+        tmp50 = c2;
         num7 = 60;
-        intl3 = arg1(closure_2[60]).intl;
-        stringResult = intl3.string(arg1(closure_2[60]).t.SgX7Ra);
+        intl3 = require("getSystemLocale").intl;
+        stringResult = intl3.string(require("getSystemLocale").t.SgX7Ra);
       } else {
-        tmp46 = arg1;
-        tmp47 = closure_2;
+        tmp46 = subscription;
+        tmp47 = c2;
         num6 = 60;
-        intl2 = arg1(closure_2[60]).intl;
-        stringResult = intl2.string(arg1(closure_2[60]).t.gmVtgF);
+        intl2 = require("getSystemLocale").intl;
+        stringResult = intl2.string(require("getSystemLocale").t.gmVtgF);
       }
       obj15.text = stringResult;
       str4 = "sm";
       obj15.size = "sm";
-      obj15 = tmp42(arg1(closure_2[59]).Button, obj15);
+      obj15 = tmp42(require("Button").Button, obj15);
       obj14.children = obj15;
       tmp40Result = tmp40(tmp41, obj14);
     }
     return;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ Image: closure_6, ImageBackground: closure_7, Linking: closure_8, View: closure_9 } = arg1(dependencyMap[3]));
-let closure_10 = importDefault(dependencyMap[4]);
-let closure_11 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[3]);
-({ AnalyticsPages: closure_12, AnalyticsSections: closure_13, SubscriptionStatusTypes: closure_14, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = arg1(dependencyMap[6]));
-const SubscriptionPlanInfo = arg1(dependencyMap[7]).SubscriptionPlanInfo;
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[8]));
-let obj = { imageTier2: { hideWhenScrolling: 411, autoCapitalize: 134 }, imageTier1: { hideWhenScrolling: "png", autoCapitalize: true }, imageTier0: { hideWhenScrolling: "5dd914546a21d2f37ba762b2209e8ec8", autoCapitalize: "img_bundle_mobile" }, imageBundle: { hideWhenScrolling: "png", autoCapitalize: true }, imagePremiumNonActive: { hideWhenScrolling: "png", autoCapitalize: true }, imagePremiumGuild: {}, imagePremiumGuildNonActive: {}, logoPremiumBundle: { hideWhenScrolling: 51, autoCapitalize: 33 }, logoPremiumTier0: { hideWhenScrolling: null, autoCapitalize: "fffb876f7b3f447f47b0591850317fff" }, logoPremiumTier1: {}, logoPremiumTier2: {}, logoPremiumGuild: {} };
+({ Image: closure_6, ImageBackground: closure_7, Linking: closure_8, View: closure_9 } = get_ActivityIndicator);
+({ AnalyticsPages: closure_12, AnalyticsSections: closure_13, SubscriptionStatusTypes: closure_14, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = ME);
+({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
+let obj = { imageTier2: { height: 37, width: 49 }, imageTier1: { height: 35, width: 49 }, imageTier0: { height: 35, width: 29 }, imageBundle: { height: 35, width: 49 }, imagePremiumNonActive: { height: 36, width: 51 }, imagePremiumGuild: { width: 51, height: 36 }, imagePremiumGuildNonActive: { width: 51, height: 36 }, logoPremiumBundle: { height: 33, width: 205 }, logoPremiumTier0: { height: 32, width: 59 }, logoPremiumTier1: { height: 16, width: 156 }, logoPremiumTier2: { height: 32, width: 78 }, logoPremiumGuild: { height: 17, width: 184 } };
 obj = {};
-obj = { color: importDefault(dependencyMap[9]).unsafe_rawColors.WHITE };
+obj = { fontSize: 14, marginTop: 10, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE };
 obj.price = obj;
-const tmp4 = arg1(dependencyMap[8]);
-obj.priceDark = { color: importDefault(dependencyMap[9]).unsafe_rawColors.BLACK };
-let obj4 = arg1(dependencyMap[10]);
-const obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, header: { padding: 16 }, wumpusImg: { marginRight: 10 }, logoContainer: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
-const obj3 = { -1604222868: null, 1520073042: "24a795d24a7018dbf13e204b38f24588", backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
+let obj1 = { fontSize: 14, marginTop: 10, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK };
+obj.priceDark = obj1;
+let obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, header: { padding: 16 }, wumpusImg: { marginRight: 10 }, logoContainer: { flexDirection: "row", alignItems: "center" } };
+let obj3 = { marginTop: 8, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
 obj2.container = obj3;
-obj2.buttonContainer = { duration: "alrededor de 1 semana", dampingRatio: "alrededor de {{count}} semanas" };
-obj2.buttonWrapper = {};
-obj2.cancelLink = { lottieComponent: "center", PREMIUM_UPSELL_ACTION_SHEET_KEY: 16, display: 20, sv-FI: null };
+obj2.buttonContainer = { marginTop: 8, flexDirection: "row" };
+obj2.buttonWrapper = { alignSelf: "flex-start", flexGrow: 0, flexShrink: 0, marginRight: 8 };
+obj2.cancelLink = { alignSelf: "center", flexGrow: 0, flexShrink: 0, marginLeft: 16 };
 obj2.desktopSubtext = { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
-let closure_18 = obj4.createStyles(obj2);
-obj4 = { ACTIVE: "active", RESUB: "resub", ERROR: "error" };
-const obj5 = {};
-const obj6 = {};
-obj6[obj4.ACTIVE] = importDefault(dependencyMap[12]);
-obj6[obj4.ERROR] = importDefault(dependencyMap[13]);
-obj6[obj4.RESUB] = importDefault(dependencyMap[14]);
-obj5[arg1(dependencyMap[11]).Branding.BUNDLE] = obj6;
-const obj7 = {};
-obj7[obj4.ACTIVE] = importDefault(dependencyMap[15]);
-obj7[obj4.ERROR] = importDefault(dependencyMap[13]);
-obj7[obj4.RESUB] = importDefault(dependencyMap[14]);
-obj5[arg1(dependencyMap[11]).Branding.TIER_0] = obj7;
-const obj8 = {};
-obj8[obj4.ACTIVE] = importDefault(dependencyMap[16]);
-obj8[obj4.ERROR] = importDefault(dependencyMap[13]);
-obj8[obj4.RESUB] = importDefault(dependencyMap[14]);
-obj5[arg1(dependencyMap[11]).Branding.TIER_1] = obj8;
-const obj9 = {};
-obj9[obj4.ACTIVE] = importDefault(dependencyMap[17]);
-obj9[obj4.ERROR] = importDefault(dependencyMap[13]);
-obj9[obj4.RESUB] = importDefault(dependencyMap[14]);
-obj5[arg1(dependencyMap[11]).Branding.TIER_2] = obj9;
-const obj10 = {};
-obj10[obj4.ACTIVE] = importDefault(dependencyMap[18]);
-obj10[obj4.ERROR] = importDefault(dependencyMap[19]);
-obj10[obj4.RESUB] = importDefault(dependencyMap[20]);
-obj5[arg1(dependencyMap[11]).Branding.PREMIUM_GUILD] = obj10;
-const obj11 = {};
-const obj12 = {};
-obj12[obj4.ACTIVE] = importDefault(dependencyMap[21]);
-obj12[obj4.ERROR] = importDefault(dependencyMap[21]);
-obj12[obj4.RESUB] = importDefault(dependencyMap[21]);
-obj11[arg1(dependencyMap[11]).Branding.BUNDLE] = obj12;
-const obj13 = {};
-obj13[obj4.ACTIVE] = importDefault(dependencyMap[22]);
-obj13[obj4.ERROR] = importDefault(dependencyMap[23]);
-obj13[obj4.RESUB] = importDefault(dependencyMap[24]);
-obj11[arg1(dependencyMap[11]).Branding.TIER_0] = obj13;
-const obj14 = {};
-obj14[obj4.ACTIVE] = importDefault(dependencyMap[25]);
-obj14[obj4.ERROR] = importDefault(dependencyMap[26]);
-obj14[obj4.RESUB] = importDefault(dependencyMap[27]);
-obj11[arg1(dependencyMap[11]).Branding.TIER_1] = obj14;
+let closure_18 = _createForOfIteratorHelperLoose.createStyles(obj2);
+_createForOfIteratorHelperLoose = { ACTIVE: "active", RESUB: "resub", ERROR: "error" };
+let obj5 = {};
+let obj6 = {};
+obj6[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj6[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj6[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj5[require("_createForOfIteratorHelperLoose").Branding.BUNDLE] = obj6;
+let obj7 = {};
+obj7[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj7[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj7[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj5[require("_createForOfIteratorHelperLoose").Branding.TIER_0] = obj7;
+let obj8 = {};
+obj8[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj8[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj8[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj5[require("_createForOfIteratorHelperLoose").Branding.TIER_1] = obj8;
+let obj9 = {};
+obj9[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj9[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj9[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj5[require("_createForOfIteratorHelperLoose").Branding.TIER_2] = obj9;
+let obj10 = {};
+obj10[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj10[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj10[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj5[require("_createForOfIteratorHelperLoose").Branding.PREMIUM_GUILD] = obj10;
+let obj11 = {};
+let obj12 = {};
+obj12[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj12[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj12[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj11[require("_createForOfIteratorHelperLoose").Branding.BUNDLE] = obj12;
+let obj13 = {};
+obj13[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj13[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj13[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj11[require("_createForOfIteratorHelperLoose").Branding.TIER_0] = obj13;
+let obj14 = {};
+obj14[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj14[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj14[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj11[require("_createForOfIteratorHelperLoose").Branding.TIER_1] = obj14;
 const obj15 = {};
-obj15[obj4.ACTIVE] = importDefault(dependencyMap[28]);
-obj15[obj4.ERROR] = importDefault(dependencyMap[29]);
-obj15[obj4.RESUB] = importDefault(dependencyMap[30]);
-obj11[arg1(dependencyMap[11]).Branding.TIER_2] = obj15;
+obj15[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj15[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj15[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj11[require("_createForOfIteratorHelperLoose").Branding.TIER_2] = obj15;
 const obj16 = {};
-obj16[obj4.ACTIVE] = importDefault(dependencyMap[31]);
-obj16[obj4.ERROR] = importDefault(dependencyMap[32]);
-obj16[obj4.RESUB] = importDefault(dependencyMap[33]);
-obj11[arg1(dependencyMap[11]).Branding.PREMIUM_GUILD] = obj16;
-let closure_22 = { [arg1(dependencyMap[11]).Branding.BUNDLE]: { [obj4.ACTIVE]: obj.imageBundle, [obj4.ERROR]: obj.imageBundle, [obj4.RESUB]: obj.imageBundle }, [arg1(dependencyMap[11]).Branding.TIER_0]: { [obj4.ACTIVE]: obj.imageTier0, [obj4.ERROR]: obj.imagePremiumNonActive, [obj4.RESUB]: obj.imagePremiumNonActive }, [arg1(dependencyMap[11]).Branding.TIER_1]: { [obj4.ACTIVE]: obj.imageTier1, [obj4.ERROR]: obj.imagePremiumNonActive, [obj4.RESUB]: obj.imagePremiumNonActive }, [arg1(dependencyMap[11]).Branding.TIER_2]: { [obj4.ACTIVE]: obj.imageTier2, [obj4.ERROR]: obj.imagePremiumNonActive, [obj4.RESUB]: obj.imagePremiumNonActive }, [arg1(dependencyMap[11]).Branding.PREMIUM_GUILD]: { [obj4.ACTIVE]: obj.imagePremiumGuild, [obj4.ERROR]: obj.imagePremiumGuildNonActive, [obj4.RESUB]: obj.imagePremiumGuildNonActive } };
+obj16[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj16[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj16[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj11[require("_createForOfIteratorHelperLoose").Branding.PREMIUM_GUILD] = obj16;
+let closure_22 = { [arg1(3776).Branding.BUNDLE]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageBundle, [_createForOfIteratorHelperLoose.ERROR]: obj.imageBundle, [_createForOfIteratorHelperLoose.RESUB]: obj.imageBundle }, [arg1(3776).Branding.TIER_0]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageTier0, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumNonActive }, [arg1(3776).Branding.TIER_1]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageTier1, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumNonActive }, [arg1(3776).Branding.TIER_2]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imageTier2, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumNonActive }, [arg1(3776).Branding.PREMIUM_GUILD]: { [_createForOfIteratorHelperLoose.ACTIVE]: obj.imagePremiumGuild, [_createForOfIteratorHelperLoose.ERROR]: obj.imagePremiumGuildNonActive, [_createForOfIteratorHelperLoose.RESUB]: obj.imagePremiumGuildNonActive } };
 const obj22 = {};
 const obj23 = {};
-obj23[obj4.ACTIVE] = importDefault(dependencyMap[34]);
-obj23[obj4.ERROR] = importDefault(dependencyMap[34]);
-obj23[obj4.RESUB] = importDefault(dependencyMap[35]);
-obj22[arg1(dependencyMap[11]).Branding.BUNDLE] = obj23;
+obj23[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj23[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj23[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj22[require("_createForOfIteratorHelperLoose").Branding.BUNDLE] = obj23;
 const obj24 = {};
-obj24[obj4.ACTIVE] = importDefault(dependencyMap[36]);
-obj24[obj4.ERROR] = importDefault(dependencyMap[36]);
-obj24[obj4.RESUB] = importDefault(dependencyMap[37]);
-obj22[arg1(dependencyMap[11]).Branding.TIER_0] = obj24;
+obj24[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj24[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj24[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj22[require("_createForOfIteratorHelperLoose").Branding.TIER_0] = obj24;
 const obj25 = {};
-obj25[obj4.ACTIVE] = importDefault(dependencyMap[38]);
-obj25[obj4.ERROR] = importDefault(dependencyMap[38]);
-obj25[obj4.RESUB] = importDefault(dependencyMap[39]);
-obj22[arg1(dependencyMap[11]).Branding.TIER_1] = obj25;
-const obj26 = {};
-obj26[obj4.ACTIVE] = importDefault(dependencyMap[40]);
-obj26[obj4.ERROR] = importDefault(dependencyMap[40]);
-obj26[obj4.RESUB] = importDefault(dependencyMap[41]);
-obj22[arg1(dependencyMap[11]).Branding.TIER_2] = obj26;
-const obj27 = {};
-obj27[obj4.ACTIVE] = importDefault(dependencyMap[42]);
-obj27[obj4.ERROR] = importDefault(dependencyMap[42]);
-obj27[obj4.RESUB] = importDefault(dependencyMap[43]);
-obj22[arg1(dependencyMap[11]).Branding.PREMIUM_GUILD] = obj27;
-const obj28 = { [arg1(dependencyMap[11]).Branding.BUNDLE]: obj.logoPremiumBundle, [arg1(dependencyMap[11]).Branding.TIER_0]: obj.logoPremiumTier0, [arg1(dependencyMap[11]).Branding.TIER_1]: obj.logoPremiumTier1, [arg1(dependencyMap[11]).Branding.TIER_2]: obj.logoPremiumTier2, [arg1(dependencyMap[11]).Branding.PREMIUM_GUILD]: obj.logoPremiumGuild };
-let closure_25 = { [obj4.ACTIVE]: obj.price, [obj4.ERROR]: obj.price, [obj4.RESUB]: obj.priceDark };
-const obj1 = { color: importDefault(dependencyMap[9]).unsafe_rawColors.BLACK };
-const obj17 = { [obj4.ACTIVE]: obj.imageBundle, [obj4.ERROR]: obj.imageBundle, [obj4.RESUB]: obj.imageBundle };
-const obj18 = { [obj4.ACTIVE]: obj.imageTier0, [obj4.ERROR]: obj.imagePremiumNonActive, [obj4.RESUB]: obj.imagePremiumNonActive };
-const obj19 = { [obj4.ACTIVE]: obj.imageTier1, [obj4.ERROR]: obj.imagePremiumNonActive, [obj4.RESUB]: obj.imagePremiumNonActive };
-const obj20 = { [obj4.ACTIVE]: obj.imageTier2, [obj4.ERROR]: obj.imagePremiumNonActive, [obj4.RESUB]: obj.imagePremiumNonActive };
-const obj21 = { [obj4.ACTIVE]: obj.imagePremiumGuild, [obj4.ERROR]: obj.imagePremiumGuildNonActive, [obj4.RESUB]: obj.imagePremiumGuildNonActive };
-const result = arg1(dependencyMap[66]).fileFinishedImporting("components_native/premium/PremiumSubscriptionDetails.tsx");
+obj25[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj25[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj25[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj22[require("_createForOfIteratorHelperLoose").Branding.TIER_1] = obj25;
+let obj26 = {};
+obj26[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj26[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj26[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj22[require("_createForOfIteratorHelperLoose").Branding.TIER_2] = obj26;
+let obj27 = {};
+obj27[_createForOfIteratorHelperLoose.ACTIVE] = require("registerAsset");
+obj27[_createForOfIteratorHelperLoose.ERROR] = require("registerAsset");
+obj27[_createForOfIteratorHelperLoose.RESUB] = require("registerAsset");
+obj22[require("_createForOfIteratorHelperLoose").Branding.PREMIUM_GUILD] = obj27;
+const obj28 = { [arg1(3776).Branding.BUNDLE]: obj.logoPremiumBundle, [arg1(3776).Branding.TIER_0]: obj.logoPremiumTier0, [arg1(3776).Branding.TIER_1]: obj.logoPremiumTier1, [arg1(3776).Branding.TIER_2]: obj.logoPremiumTier2, [arg1(3776).Branding.PREMIUM_GUILD]: obj.logoPremiumGuild };
+let closure_25 = { [_createForOfIteratorHelperLoose.ACTIVE]: obj.price, [_createForOfIteratorHelperLoose.ERROR]: obj.price, [_createForOfIteratorHelperLoose.RESUB]: obj.priceDark };
+let result = require("result").fileFinishedImporting("components_native/premium/PremiumSubscriptionDetails.tsx");
 
 export default function PremiumSubscriptionDetails(subscription) {
   let onClickManagePremiumGuild;
@@ -499,37 +504,37 @@ export default function PremiumSubscriptionDetails(subscription) {
   subscription = subscription.subscription;
   ({ style, onClickManagePremiumGuild } = subscription);
   const tmp = callback5();
-  let obj = arg1(dependencyMap[62]);
-  obj = { subscriptionId: subscription.id, renewal: true, analyticsLocations: importDefault(dependencyMap[55])().analyticsLocations, analyticsLocation: importDefault(dependencyMap[63]).PREMIUM_SUBSCRIPTION_DETAILS };
+  let obj = require(7412) /* createSubscriptionInvoicePreview */;
+  obj = { subscriptionId: subscription.id, renewal: true, analyticsLocations: importDefault(5464)().analyticsLocations, analyticsLocation: importDefault(5484).PREMIUM_SUBSCRIPTION_DETAILS };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
   let tmp4Result = null;
   if (null != first) {
     obj = { style };
-    const obj1 = { alignSelf: -1966325487, justifyContent: 863109121, alignItems: 603979776, backgroundColor: 16777216, style: tmp.title };
-    const intl = arg1(dependencyMap[60]).intl;
-    obj1.children = intl.string(arg1(dependencyMap[60]).t.ITurwY);
-    const items = [callback3(arg1(dependencyMap[61]).Text, obj1), , , , ];
+    const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default" };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj1.children = intl.string(require(1212) /* getSystemLocale */.t.ITurwY);
+    const items = [callback3(require(4126) /* Text */.Text, obj1), , , , ];
     let tmp9 = null != subscription.renewalMutations;
     if (tmp9) {
       tmp9 = subscription.status !== constants3.CANCELED;
     }
     if (tmp9) {
       const obj2 = { subscription, renewalMutations: subscription.renewalMutations };
-      tmp9 = callback3(importDefault(dependencyMap[64]), obj2);
+      tmp9 = callback3(importDefault(7413), obj2);
     }
     items[1] = tmp9;
     let tmp15 = subscription.status === constants3.ACCOUNT_HOLD;
     if (tmp15) {
       const obj3 = { subscription };
-      tmp15 = callback3(importDefault(dependencyMap[65]), obj3);
+      tmp15 = callback3(importDefault(7414), obj3);
     }
     items[2] = tmp15;
     const obj4 = { subscription, renewalInvoicePreview: first, onClickManagePremiumGuild };
     items[3] = callback3(PremiumSubscriptionHeader, obj4);
     const obj5 = { style: tmp.desktopSubtext, variant: "text-sm/medium" };
-    const intl2 = arg1(dependencyMap[60]).intl;
-    obj5.children = intl2.string(arg1(dependencyMap[60]).t.MTG+3O);
-    items[4] = callback3(arg1(dependencyMap[61]).Text, obj5);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj5.children = intl2.string(require(1212) /* getSystemLocale */.t["MTG+3O"]);
+    items[4] = callback3(require(4126) /* Text */.Text, obj5);
     obj.children = items;
     tmp4Result = closure_17(closure_9, obj);
     const tmp4 = closure_17;

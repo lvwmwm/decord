@@ -1,32 +1,34 @@
-// Module ID: 12045
-// Function ID: 93047
+// Module ID: 12159
+// Function ID: 95198
 // Name: getAppCrashSource
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 12160, 12161, 12162, 3976, 2]
 // Exports: AppCrash
 
-// Module 12045 (getAppCrashSource)
+// Module 12159 (getAppCrashSource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getAppCrashSource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useAppCrashSource() {
-  return getAppCrashSource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getAppCrashSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/AppCrash.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/AppCrash.tsx");
 
 export { getAppCrashSource };
 export { useAppCrashSource };
@@ -34,5 +36,5 @@ export const AppCrash = function AppCrash(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useAppCrashSource();
-  return <Image {...obj} />;
+  return <Image />;
 };

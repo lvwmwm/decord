@@ -1,12 +1,11 @@
-// Module ID: 6887
-// Function ID: 54733
+// Module ID: 6892
+// Function ID: 54767
 // Name: isCacheEnabled
-// Dependencies: []
+// Dependencies: [2]
 // Exports: isCacheEnabled
 
-// Module 6887 (isCacheEnabled)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/cache/isCacheEnabled.native.tsx");
+// Module 6892 (isCacheEnabled)
+const result = require("set").fileFinishedImporting("modules/cache/isCacheEnabled.native.tsx");
 
 export function isCacheEnabled() {
   return true;

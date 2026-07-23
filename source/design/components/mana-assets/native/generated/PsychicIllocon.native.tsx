@@ -1,12 +1,13 @@
-// Module ID: 6425
-// Function ID: 50570
+// Module ID: 6430
+// Function ID: 50599
 // Name: PsychicIllocon
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: [33, 5085, 6431, 2]
 // Exports: PsychicIllocon
 
-// Module 6425 (PsychicIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/PsychicIllocon.native.tsx");
+// Module 6430 (PsychicIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PsychicIllocon.native.tsx");
 
 export const PsychicIllocon = function PsychicIllocon(size) {
   let accessibilityLabel;
@@ -18,7 +19,7 @@ export const PsychicIllocon = function PsychicIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6431) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -26,5 +27,5 @@ export const PsychicIllocon = function PsychicIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

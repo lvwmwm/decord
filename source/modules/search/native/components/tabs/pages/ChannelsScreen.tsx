@@ -1,60 +1,58 @@
-// Module ID: 15266
-// Function ID: 115234
+// Module ID: 15383
+// Function ID: 117408
 // Name: getVoiceStates
-// Dependencies: [2818572332, 2835349563, 1895825467, 2080374843, 33554491, 1979711488, 7, 6, 31, 11388, 5447, 2, 31, 1921, 9096, 33, 4126, 10068, 5164]
+// Dependencies: [31, 11408, 10077, 9103, 9133, 33, 10078, 566, 14982, 15060, 15337, 1212, 3843, 15340, 10076, 15378, 15333, 15344, 2]
 
-// Module 15266 (getVoiceStates)
-import getCardBackgroundToken from "getCardBackgroundToken";
+// Module 15383 (getVoiceStates)
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import { SearchResultContentEntityTypes as closure_9 } from "SearchEntrypointAnalyticsLocations";
+import { jsx } from "jsxProd";
 
-function getVoiceStates(guildId) {
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+function getVoiceStates(closure_0) {
   let tmp = arg1;
-  if (guildId.isGuildStageVoice()) {
+  if (closure_0.isGuildStageVoice()) {
     tmp = arg2;
   }
-  let tmp2 = tmp[guildId.id];
+  let tmp2 = tmp[closure_0.id];
   if (null == tmp2) {
     tmp2 = closure_6;
   }
   return tmp2;
 }
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ EMPTY_VOICE_STATES: closure_6, SearchListItemTypes: closure_7, CHANNELS_ESTIMATED_ITEM_SIZE: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = arg1(dependencyMap[4]).SearchResultContentEntityTypes;
-const jsx = arg1(dependencyMap[5]).jsx;
-const tmp2 = arg1(dependencyMap[3]);
-const result = getCardBackgroundToken.fileFinishedImporting("modules/search/native/components/tabs/pages/ChannelsScreen.tsx");
-
-export default importAllResult.memo(function ChannelsScreen(searchContext) {
+({ EMPTY_VOICE_STATES: closure_6, SearchListItemTypes: closure_7, CHANNELS_ESTIMATED_ITEM_SIZE: closure_8 } = SearchAutocompleteSelectAnalyticsActions);
+const memoResult = importAllResult.memo(function ChannelsScreen(searchContext) {
   searchContext = searchContext.searchContext;
-  const arg1 = searchContext;
-  let obj = arg1(dependencyMap[6]);
+  let obj = searchContext(stateFromStores[6]);
   const importDefault = obj.getSearchContextId(searchContext);
-  let obj1 = arg1(dependencyMap[7]);
-  const items = [closure_4];
-  const stateFromStores = obj1.useStateFromStores(items, () => tmp3.getTextChannels(closure_1));
-  const dependencyMap = stateFromStores;
-  const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[7]).useStateFromStores(items1, () => tmp3.getVoiceChannels(closure_1));
-  const tmp3 = importDefault(dependencyMap[8])(searchContext.guildId);
-  closure_4 = tmp3;
-  const tmp4 = importDefault(dependencyMap[9])(searchContext.guildId);
+  let obj1 = searchContext(stateFromStores[7]);
+  let items = [_isNativeReflectConstruct];
+  stateFromStores = obj1.useStateFromStores(items, () => tmp3.getTextChannels(closure_1));
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = searchContext(stateFromStores[7]).useStateFromStores(items1, () => tmp3.getVoiceChannels(closure_1));
+  let tmp3 = importDefault(stateFromStores[8])(searchContext.guildId);
+  _isNativeReflectConstruct = tmp3;
+  const tmp4 = importDefault(stateFromStores[9])(searchContext.guildId);
   let closure_5 = tmp4;
-  const obj3 = arg1(dependencyMap[7]);
-  const onPressGuildTextChannel = arg1(dependencyMap[10]).useOnPressGuildTextChannel({ searchContext });
-  const obj4 = arg1(dependencyMap[10]);
-  const onPressGuildVoiceChannel = arg1(dependencyMap[10]).useOnPressGuildVoiceChannel({ searchContext });
-  const obj5 = arg1(dependencyMap[10]);
+  const obj3 = searchContext(stateFromStores[7]);
+  const onPressGuildTextChannel = searchContext(stateFromStores[10]).useOnPressGuildTextChannel({ searchContext });
+  const obj4 = searchContext(stateFromStores[10]);
+  const onPressGuildVoiceChannel = searchContext(stateFromStores[10]).useOnPressGuildVoiceChannel({ searchContext });
+  const obj5 = searchContext(stateFromStores[10]);
   const items2 = [closure_5];
-  const stateFromStores2 = arg1(dependencyMap[7]).useStateFromStores(items2, () => tmp4.isInitialSearchQuery(searchContext));
-  const obj6 = arg1(dependencyMap[7]);
+  const stateFromStores2 = searchContext(stateFromStores[7]).useStateFromStores(items2, () => tmp4.isInitialSearchQuery(searchContext));
+  const obj6 = searchContext(stateFromStores[7]);
   const items3 = [closure_5];
   const items4 = [searchContext];
-  const stateFromStores3 = arg1(dependencyMap[7]).useStateFromStores(items3, () => tmp4.getQueryString(searchContext), items4);
-  let closure_9 = stateFromStores3;
+  const stateFromStores3 = searchContext(stateFromStores[7]).useStateFromStores(items3, () => tmp4.getQueryString(searchContext), items4);
   const items5 = [stateFromStores, stateFromStores1, stateFromStores3];
-  const effect = importAllResult.useEffect(() => {
+  const effect = stateFromStores1.useEffect(() => {
     if ("" !== stateFromStores3.trim()) {
       const sum = stateFromStores.length + stateFromStores1.length;
       if (sum > 0) {
@@ -69,31 +67,26 @@ export default importAllResult.memo(function ChannelsScreen(searchContext) {
       AccessibilityAnnouncer.announce(formatToPlainStringResult);
     }
   }, items5);
-  const obj7 = arg1(dependencyMap[7]);
+  const obj7 = searchContext(stateFromStores[7]);
   obj = { placeholderHeight: stateFromStores2, numColumns: 1 };
-  const fullscreenPlaceholderCount = arg1(dependencyMap[13]).useFullscreenPlaceholderCount(obj);
-  const jsx = fullscreenPlaceholderCount;
+  const fullscreenPlaceholderCount = searchContext(stateFromStores[13]).useFullscreenPlaceholderCount(obj);
   const items6 = [onPressGuildTextChannel, searchContext];
-  const callback = importAllResult.useCallback((channelId, index) => {
+  const callback = stateFromStores1.useCallback((channelId, index) => {
     onPressGuildTextChannel(channelId);
     let obj = callback(stateFromStores[14]);
     obj = { searchContext, channelId, index, entityType: stateFromStores3.CHANNEL };
     const result = obj.trackSearchResultClicked(obj);
   }, items6);
-  const getVoiceStates = callback;
   const items7 = [onPressGuildVoiceChannel, searchContext];
-  const callback1 = importAllResult.useCallback((channelId, index) => {
+  const callback1 = stateFromStores1.useCallback((channelId, index) => {
     onPressGuildVoiceChannel(channelId);
     let obj = callback(stateFromStores[14]);
     obj = { searchContext, channelId, index, entityType: stateFromStores3.CHANNEL };
     const result = obj.trackSearchResultClicked(obj);
   }, items7);
   const items8 = [fullscreenPlaceholderCount, callback, callback1, stateFromStores2, tmp4, stateFromStores, stateFromStores1, tmp3];
-  const memo = importAllResult.useMemo(() => {
-    let tmp3;
-    const items = [];
-    const searchContext = items;
-    let closure_1 = 0;
+  const memo = stateFromStores1.useMemo(() => {
+    let items = [];
     if (stateFromStores.length > 0) {
       let obj = { type: onPressGuildVoiceChannel.SECTION };
       obj = {};
@@ -102,18 +95,17 @@ export default importAllResult.memo(function ChannelsScreen(searchContext) {
       obj.props = obj;
       items.push(obj);
       const item = stateFromStores.forEach((channel) => {
-        let arr = length + arg1;
-        let obj = { type: constants.GUILD_TEXT_CHANNEL, props: obj };
+        const items = length + arg1;
+        obj = { type: onPressGuildVoiceChannel.GUILD_TEXT_CHANNEL, props: obj };
         obj = {
           channel: channel.channel,
           lastMessageId: channel.lastMessageId,
           onPress(arg0) {
-            return callback(arg0, closure_0);
+            return outer2_11(arg0, closure_0);
           }
         };
-        arr = arr.push(obj);
+        items.push(obj);
       });
-      closure_1 = stateFromStores.length;
     }
     if (stateFromStores1.length > 0) {
       const obj1 = { type: onPressGuildVoiceChannel.SECTION };
@@ -122,11 +114,12 @@ export default importAllResult.memo(function ChannelsScreen(searchContext) {
       obj2.title = intl2.string(searchContext(stateFromStores[11]).t.CYnO4s);
       obj1.props = obj2;
       items.push(obj1);
-      const sorted = stateFromStores1.sort(function createSorter(arg0, arg1) {
-        const items = arg0;
+      const sorted = stateFromStores1.sort((function createSorter(_isNativeReflectConstruct, closure_5) {
+        let closure_0 = _isNativeReflectConstruct;
+        let closure_1 = closure_5;
         return (channel, channel2) => {
-          const arr = callback(channel.channel, channel, channel2);
-          const arr2 = callback(channel2.channel, channel, channel2);
+          const arr = callback(channel.channel, closure_0, closure_1);
+          const arr2 = callback(channel2.channel, closure_0, closure_1);
           let num = 1;
           if (arr.length >= arr2.length) {
             let num2 = 0;
@@ -137,26 +130,26 @@ export default importAllResult.memo(function ChannelsScreen(searchContext) {
           }
           return num;
         };
-      }(tmp3, tmp4));
+      })(_isNativeReflectConstruct, closure_5));
       const item1 = sorted.forEach((channel) => {
-        let arr = length + arg1;
-        let obj = { type: constants.GUILD_VOICE_CHANNEL };
+        const items = length + arg1;
+        let obj = { type: onPressGuildVoiceChannel.GUILD_VOICE_CHANNEL };
         obj = { channel: channel.channel };
-        let tmp2 = closure_4[channel.channel.id];
+        let tmp2 = outer1_4[channel.channel.id];
         if (null == tmp2) {
-          tmp2 = closure_6;
+          tmp2 = onPressGuildTextChannel;
         }
         obj.voiceStates = tmp2;
-        let tmp3 = closure_5[channel.channel.id];
+        let tmp3 = outer1_5[channel.channel.id];
         if (null == tmp3) {
-          tmp3 = closure_6;
+          tmp3 = onPressGuildTextChannel;
         }
         obj.speakerVoiceStates = tmp3;
         obj.onPress = function onPress(arg0) {
-          return callback(arg0, closure_0);
+          return outer2_12(arg0, closure_0);
         };
         obj.props = obj;
-        arr = arr.push(obj);
+        items.push(obj);
       });
     }
     if (!stateFromStores2) {
@@ -165,27 +158,30 @@ export default importAllResult.memo(function ChannelsScreen(searchContext) {
         if (0 < fullscreenPlaceholderCount) {
           do {
             obj = {};
-            tmp3 = closure_7;
-            obj.type = closure_7.MESSAGE_PLACEHOLDER;
+            let tmp3 = onPressGuildVoiceChannel;
+            obj.type = onPressGuildVoiceChannel.MESSAGE_PLACEHOLDER;
             let _HermesInternal = HermesInternal;
             obj.key = "message-placeholder-" + num;
             let arr1 = items.push(obj);
             num = num + 1;
-            let tmp5 = closure_10;
-          } while (num < closure_10);
+            let tmp5 = fullscreenPlaceholderCount;
+          } while (num < fullscreenPlaceholderCount);
         }
       }
     }
     return items;
   }, items8);
-  const obj8 = arg1(dependencyMap[13]);
-  const messageTabCountsErrorText = arg1(dependencyMap[15]).useMessageTabCountsErrorText({ searchContext });
+  const obj8 = searchContext(stateFromStores[13]);
+  const messageTabCountsErrorText = searchContext(stateFromStores[15]).useMessageTabCountsErrorText({ searchContext });
   if (null != messageTabCountsErrorText) {
     obj = { text: messageTabCountsErrorText };
-    let tmp18 = jsx(importDefault(dependencyMap[16]), obj);
+    let tmp18 = fullscreenPlaceholderCount(importDefault(stateFromStores[16]), obj);
   } else {
     obj1 = { data: memo };
-    tmp18 = jsx(importDefault(dependencyMap[17]), obj1);
+    tmp18 = fullscreenPlaceholderCount(importDefault(stateFromStores[17]), obj1);
   }
   return tmp18;
 });
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/search/native/components/tabs/pages/ChannelsScreen.tsx");
+
+export default memoResult;

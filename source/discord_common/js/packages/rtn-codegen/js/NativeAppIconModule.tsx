@@ -1,12 +1,12 @@
-// Module ID: 12267
-// Function ID: 94074
+// Module ID: 12381
+// Function ID: 96225
 // Name: enforcing
-// Dependencies: []
+// Dependencies: [27, 2]
 
-// Module 12267 (enforcing)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+// Module 12381 (enforcing)
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAppIconModule");
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAppIconModule.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAppIconModule.tsx");
 
 export default enforcing;

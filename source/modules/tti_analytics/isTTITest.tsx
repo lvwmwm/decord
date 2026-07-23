@@ -1,10 +1,9 @@
-// Module ID: 13209
-// Function ID: 100091
+// Module ID: 13323
+// Function ID: 102247
 // Name: isTTITest
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 13209 (isTTITest)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/tti_analytics/isTTITest.tsx");
+// Module 13323 (isTTITest)
+const result = require("set").fileFinishedImporting("modules/tti_analytics/isTTITest.tsx");
 
 export const isTTITest = false;

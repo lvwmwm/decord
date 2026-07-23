@@ -1,11 +1,13 @@
 // Module ID: 1812
-// Function ID: 19955
+// Function ID: 19956
 // Name: pnpm_helpersTs1
-// Dependencies: []
+// Dependencies: [1582]
 
 // Module 1812 (pnpm_helpersTs1)
+const require = arg1;
+const dependencyMap = arg6;
 /* worklet (recovered source) */ function pnpm_helpersTs1(height,targetKeyboardHeight,offset){const{interpolate}=this.__closure;if(offset===0||targetKeyboardHeight===0){return height;}return interpolate(height,[0,targetKeyboardHeight],[0,Math.max(targetKeyboardHeight-offset,0)]);}
-pnpm_helpersTs1.__closure = { interpolate: arg1(arg6[0]).interpolate };
+pnpm_helpersTs1.__closure = { interpolate: require("cancelAnimation").interpolate };
 pnpm_helpersTs1.__workletHash = 1787304919616;
 pnpm_helpersTs1.__initData = { code: "function pnpm_helpersTs1(height,targetKeyboardHeight,offset){const{interpolate}=this.__closure;if(offset===0||targetKeyboardHeight===0){return height;}return interpolate(height,[0,targetKeyboardHeight],[0,Math.max(targetKeyboardHeight-offset,0)]);}" };
 /* worklet (recovered source) */ function pnpm_helpersTs2(scrollOffset,layoutHeight,contentHeight,inverted=false){const{AT_END_THRESHOLD}=this.__closure;if(inverted){return scrollOffset<=AT_END_THRESHOLD;}return scrollOffset+layoutHeight>=contentHeight-AT_END_THRESHOLD;}

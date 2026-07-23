@@ -1,14 +1,16 @@
 // Module ID: 1098
-// Function ID: 12563
+// Function ID: 12564
 // Name: isSentrySpan
-// Dependencies: []
+// Dependencies: [794]
 
 // Module 1098 (isSentrySpan)
-arg5.isSentrySpan = function isSentrySpan(closure_2) {
-  return closure_2 instanceof arg1(arg6[0]).SentrySpan;
+const require = arg1;
+const dependencyMap = arg6;
+arg5.isSentrySpan = function isSentrySpan(c2) {
+  return c2 instanceof require(794) /* registerSpanErrorInstrumentation */.SentrySpan;
 };
-arg5.isRootSpan = function isRootSpan(activeSpan) {
-  return activeSpan === arg1(arg6[0]).getRootSpan(activeSpan);
+arg5.isRootSpan = function isRootSpan(outer1_0) {
+  return outer1_0 === require(794) /* registerSpanErrorInstrumentation */.getRootSpan(outer1_0);
 };
 arg5.setEndTimeValue = function setEndTimeValue(startInactiveSpanResult, _endTime) {
   startInactiveSpanResult._endTime = _endTime;

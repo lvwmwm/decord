@@ -1,41 +1,42 @@
-// Module ID: 14967
-// Function ID: 112606
+// Module ID: 15083
+// Function ID: 114774
 // Name: useChannelNoticeRows
-// Dependencies: []
+// Dependencies: [57, 31, 11508, 1907, 1838, 1849, 6766, 653, 1345, 15023, 624, 5465, 5467, 15084, 5802, 1334, 3946, 15012, 15085, 2]
 // Exports: default
 
-// Module 14967 (useChannelNoticeRows)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = arg1(dependencyMap[6]).ChannelListChannelNoticeRow;
-const MFALevels = arg1(dependencyMap[7]).MFALevels;
-({ ContentDismissActionType: closure_11, DismissibleContentGroupName: closure_12 } = arg1(dependencyMap[8]));
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/guild_sidebar/native/useChannelNoticeRows.tsx");
+// Module 15083 (useChannelNoticeRows)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import { ChannelListChannelNoticeRow as closure_9 } from "ChannelListGuildActionRow";
+import { MFALevels } from "ME";
+import ContentDismissActionType from "ContentDismissActionType";
+
+let closure_11;
+let closure_12;
+const require = arg1;
+({ ContentDismissActionType: closure_11, DismissibleContentGroupName: closure_12 } = ContentDismissActionType);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_sidebar/native/useChannelNoticeRows.tsx");
 
 export default function useChannelNoticeRows(id) {
   let accountLinkApplication;
   let applicationAccountLinkMarkAsDismissed;
   let startApplicationAccountLinkAuthorization;
-  const arg1 = id;
+  const _require = id;
   id = id.id;
-  const importDefault = id;
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => guildHasLiveChannelNotice.hasProgress(id));
-  const dependencyMap = stateFromStores;
-  const currentUser = currentUser.getCurrentUser();
-  const callback = currentUser;
-  const items1 = [closure_6];
-  const items2 = [currentUser, id.mfaLevel, id];
-  const stateFromStores1 = arg1(dependencyMap[10]).useStateFromStores(items1, () => {
+  let obj = _require(stateFromStores[10]);
+  let items = [guildHasLiveChannelNotice];
+  stateFromStores = obj.useStateFromStores(items, () => guildHasLiveChannelNotice.hasProgress(id));
+  currentUser = currentUser.getCurrentUser();
+  let items1 = [closure_6];
+  let items2 = [currentUser, id.mfaLevel, id];
+  const stateFromStores1 = _require(stateFromStores[10]).useStateFromStores(items1, () => {
     let result = null != currentUser;
     if (result) {
-      result = arg0.mfaLevel === constants2.ELEVATED;
+      result = id.mfaLevel === outer1_10.ELEVATED;
     }
     if (result) {
       result = !currentUser.mfaEnabled;
@@ -45,37 +46,35 @@ export default function useChannelNoticeRows(id) {
     }
     return result;
   }, items2);
-  const React = stateFromStores1;
-  const obj2 = arg1(dependencyMap[10]);
-  const guildHasLiveChannelNotice = arg1(dependencyMap[17]).useGuildHasLiveChannelNotice(id);
-  closure_5 = guildHasLiveChannelNotice;
-  const obj3 = arg1(dependencyMap[17]);
-  const canShowGameClaimCoachmark = arg1(dependencyMap[18]).useCanShowGameClaimCoachmark(id);
-  const obj4 = arg1(dependencyMap[18]);
+  let obj2 = _require(stateFromStores[10]);
+  guildHasLiveChannelNotice = _require(stateFromStores[17]).useGuildHasLiveChannelNotice(id);
+  let obj3 = _require(stateFromStores[17]);
+  const canShowGameClaimCoachmark = _require(stateFromStores[18]).useCanShowGameClaimCoachmark(id);
+  let obj4 = _require(stateFromStores[18]);
   if (canShowGameClaimCoachmark) {
-    const items3 = [arg1(dependencyMap[15]).DismissibleContent.GAME_CLAIM_COACHMARK];
+    let items3 = [_require(stateFromStores[15]).DismissibleContent.GAME_CLAIM_COACHMARK];
     let items4 = items3;
   } else {
     items4 = [];
   }
-  const tmp8 = callback(arg1(dependencyMap[14]).useSelectedSingleUseGuildDismissibleContent(items4, id, constants.CHANNEL_NOTICES, true), 2);
+  const tmp8 = currentUser(_require(stateFromStores[14]).useSelectedSingleUseGuildDismissibleContent(items4, id, constants.CHANNEL_NOTICES, true), 2);
   closure_6 = tmp9;
-  const tmp10 = function useMobileAccountLinkRow(guildId) {
+  const tmp10 = (function useMobileAccountLinkRow(guildId) {
     let canStartAuthorization;
     let fetched;
     let startAuthorization;
     let tmp7;
     let tmp8;
     guildId = guildId.guildId;
-    let id;
+    let hasAlreadyLinked;
     let obj = id(stateFromStores[9]);
     let enabled = obj.useConfig({ location: "useMobileAccountLinkRow" }).enabled;
     const items = [showApplicationAccountLink];
-    const obj2 = guildId(stateFromStores[10]);
+    const obj2 = id(stateFromStores[10]);
     let first = null;
     if (enabled) {
       first = obj2.useStateFromStoresArray(items, () => {
-        const guild = guild.getGuild(guildId);
+        const guild = showApplicationAccountLink.getGuild(guildId);
         let gameApplicationIds;
         if (null != guild) {
           gameApplicationIds = guild.gameApplicationIds;
@@ -86,13 +85,12 @@ export default function useChannelNoticeRows(id) {
         return gameApplicationIds;
       })[0];
     }
-    const tmp2 = id(stateFromStores[12])(guildId(stateFromStores[11]).useApplication(first).data);
-    const hasAlreadyLinked = tmp2.hasAlreadyLinked;
-    id = hasAlreadyLinked;
+    const tmp2 = id(stateFromStores[12])(id(stateFromStores[11]).useApplication(first).data);
+    hasAlreadyLinked = tmp2.hasAlreadyLinked;
     const connectionApp = tmp2.connectionApp;
     ({ fetched, canStartAuthorization, startAuthorization } = tmp2);
-    const obj3 = guildId(stateFromStores[11]);
-    const defaultAuthorizationNotifiers = guildId(stateFromStores[13]).useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked);
+    const obj3 = id(stateFromStores[11]);
+    const defaultAuthorizationNotifiers = id(stateFromStores[13]).useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked);
     if (enabled) {
       enabled = fetched;
     }
@@ -114,44 +112,43 @@ export default function useChannelNoticeRows(id) {
     if (enabled) {
       enabled = null != connectionApp.applicationAccountLinkBenefitConfig.reward_image;
     }
-    const obj4 = guildId(stateFromStores[13]);
+    const obj4 = id(stateFromStores[13]);
     if (enabled) {
-      const items1 = [guildId(stateFromStores[15]).DismissibleContent.MOBILE_ACCOUNT_LINKING_BANNER];
+      const items1 = [id(stateFromStores[15]).DismissibleContent.MOBILE_ACCOUNT_LINKING_BANNER];
       let items2 = items1;
     } else {
       items2 = [];
     }
-    const obj5 = guildId(stateFromStores[14]);
+    const obj5 = id(stateFromStores[14]);
     const items3 = [guildId, hasAlreadyLinked];
-    [tmp7, tmp8] = currentUser(guildId(stateFromStores[14]).useSelectedSingleUseGuildDismissibleContent(items2, guildId, constants3.CHANNEL_NOTICES, true), 2);
+    [tmp7, tmp8] = currentUser(id(stateFromStores[14]).useSelectedSingleUseGuildDismissibleContent(items2, guildId, outer1_12.CHANNEL_NOTICES, true), 2);
     const effect = stateFromStores1.useEffect(() => {
       if (hasAlreadyLinked) {
-        let obj = guildId(closure_2[16]);
-        obj = { dismissAction: constants.INDIRECT_ACTION, guildId, groupName: constants2.CHANNEL_NOTICES };
-        const result = obj.UNSAFE_markSingleUseGuildDismissibleContentAsDismissed(guildId(closure_2[15]).DismissibleContent.MOBILE_ACCOUNT_LINKING_BANNER, guildId, obj);
+        let obj = guildId(stateFromStores[16]);
+        obj = { dismissAction: outer2_11.INDIRECT_ACTION, guildId, groupName: outer2_12.CHANNEL_NOTICES };
+        const result = obj.UNSAFE_markSingleUseGuildDismissibleContentAsDismissed(guildId(stateFromStores[15]).DismissibleContent.MOBILE_ACCOUNT_LINKING_BANNER, guildId, obj);
       }
     }, items3);
     obj = { showApplicationAccountLink: null != tmp7, applicationAccountLinkMarkAsDismissed: tmp8, startApplicationAccountLinkAuthorization: defaultAuthorizationNotifiers, accountLinkApplication: connectionApp };
     return obj;
-  }({ guildId: id });
+  })({ guildId: id });
   const showApplicationAccountLink = tmp10.showApplicationAccountLink;
-  let closure_7 = showApplicationAccountLink;
   obj = {
-    rows: React.useMemo(() => {
-      const items = [constants.SPACER];
-      if (tmp9) {
-        items.push(constants.GAME_CLAIM);
+    rows: stateFromStores1.useMemo(() => {
+      const items = [outer1_9.SPACER];
+      if (closure_6) {
+        items.push(outer1_9.GAME_CLAIM);
       }
       if (showApplicationAccountLink) {
-        items.push(constants.APPLICATION_ACCOUNT_LINK);
+        items.push(outer1_9.APPLICATION_ACCOUNT_LINK);
       }
       if (stateFromStores) {
-        items.push(constants.GUILD_PROGRESS);
+        items.push(outer1_9.GUILD_PROGRESS);
       } else if (stateFromStores1) {
-        items.push(constants.MFA_WARNING);
+        items.push(outer1_9.MFA_WARNING);
       }
       if (guildHasLiveChannelNotice) {
-        items.push(constants.LIVE_CHANNEL_NOTICE);
+        items.push(outer1_9.LIVE_CHANNEL_NOTICE);
       }
       return items;
     }, items5),
@@ -160,7 +157,7 @@ export default function useChannelNoticeRows(id) {
     startApplicationAccountLinkAuthorization,
     accountLinkApplication
   };
-  const items5 = [stateFromStores, stateFromStores1, guildHasLiveChannelNotice, null != tmp8[0], showApplicationAccountLink];
+  items5 = [stateFromStores, stateFromStores1, guildHasLiveChannelNotice, null != tmp8[0], showApplicationAccountLink];
   ({ applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication } = tmp10);
   return obj;
 };

@@ -1,40 +1,39 @@
-// Module ID: 11835
-// Function ID: 91738
+// Module ID: 11845
+// Function ID: 91787
 // Name: useTrackProductCardImpression
-// Dependencies: []
+// Dependencies: [31, 6774, 653, 8666, 566, 8667, 3776, 6786, 675, 2]
 // Exports: useTrackProductCardImpression
 
-// Module 11835 (useTrackProductCardImpression)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/hooks/useTrackProductCardImpression.tsx");
+// Module 11845 (useTrackProductCardImpression)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/collectibles/hooks/useTrackProductCardImpression.tsx");
 
 export const useTrackProductCardImpression = function useTrackProductCardImpression(categoryStoreListingId, mobile_home, hero_block) {
   let str = hero_block;
-  mobile_home = categoryStoreListingId;
+  const _require = categoryStoreListingId;
   const importDefault = mobile_home;
   if (hero_block === undefined) {
     str = "product";
   }
-  const dependencyMap = str;
-  let React;
-  let closure_4;
-  let AnalyticEvents;
+  let collectiblesAnalyticsContext;
+  let stateFromStores;
+  let c5;
   let closure_6;
   let callback;
-  const collectiblesAnalyticsContext = mobile_home(dependencyMap[3]).useCollectiblesAnalyticsContext();
-  React = collectiblesAnalyticsContext;
-  const obj = mobile_home(dependencyMap[3]);
-  const items = [closure_4];
-  const stateFromStores = mobile_home(dependencyMap[4]).useStateFromStores(items, () => stateFromStores.getProduct(arg0));
-  closure_4 = stateFromStores;
-  const obj2 = mobile_home(dependencyMap[4]);
-  const currentUser = mobile_home(dependencyMap[5]).useCurrentUser();
-  const obj3 = mobile_home(dependencyMap[5]);
-  const canUseShopDiscountsResult = importDefault(dependencyMap[6]).canUseShopDiscounts(currentUser);
-  AnalyticEvents = canUseShopDiscountsResult;
-  closure_6 = React.useRef(null);
+  collectiblesAnalyticsContext = _require(str[3]).useCollectiblesAnalyticsContext();
+  let obj = _require(str[3]);
+  const items = [stateFromStores];
+  stateFromStores = _require(str[4]).useStateFromStores(items, () => stateFromStores.getProduct(closure_0));
+  let obj2 = _require(str[4]);
+  const currentUser = _require(str[5]).useCurrentUser();
+  const obj3 = _require(str[5]);
+  const canUseShopDiscountsResult = importDefault(str[6]).canUseShopDiscounts(currentUser);
+  c5 = canUseShopDiscountsResult;
+  closure_6 = collectiblesAnalyticsContext.useRef(null);
   let sessionId;
   if (null != collectiblesAnalyticsContext) {
     sessionId = collectiblesAnalyticsContext.sessionId;
@@ -65,16 +64,16 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
   items1[7] = stateFromStores;
   items1[8] = categoryStoreListingId;
   items1[9] = str;
-  callback = React.useCallback(() => {
+  callback = collectiblesAnalyticsContext.useCallback(() => {
     let priceForCollectiblesProduct = null;
     if (null != stateFromStores) {
-      let obj = arg0(str[7]);
-      priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(stateFromStores, canUseShopDiscountsResult, true);
+      let obj = categoryStoreListingId(str[7]);
+      priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(stateFromStores, _undefined, true);
     }
     let strikeThroughPriceAmountForCollectiblesProduct;
     if (null != stateFromStores) {
-      strikeThroughPriceAmountForCollectiblesProduct = arg0(str[7]).getStrikeThroughPriceAmountForCollectiblesProduct(stateFromStores, canUseShopDiscountsResult, true);
-      const obj2 = arg0(str[7]);
+      strikeThroughPriceAmountForCollectiblesProduct = categoryStoreListingId(str[7]).getStrikeThroughPriceAmountForCollectiblesProduct(stateFromStores, _undefined, true);
+      const obj2 = categoryStoreListingId(str[7]);
     }
     obj = {};
     let sessionId;
@@ -82,13 +81,13 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
       sessionId = collectiblesAnalyticsContext.sessionId;
     }
     obj.collectibles_shop_session_id = sessionId;
-    obj.sku_id = arg0;
+    obj.sku_id = categoryStoreListingId;
     let amount;
     if (null != priceForCollectiblesProduct) {
       amount = priceForCollectiblesProduct.amount;
     }
     obj.display_price = amount;
-    let str;
+    str = undefined;
     if (null != priceForCollectiblesProduct) {
       str = priceForCollectiblesProduct.currency;
       str = str.toString();
@@ -100,7 +99,7 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
       tilePosition = collectiblesAnalyticsContext.tilePosition;
     }
     obj.position = tilePosition;
-    obj.page_type = arg1;
+    obj.page_type = mobile_home;
     let pageCategory;
     if (null != collectiblesAnalyticsContext) {
       pageCategory = collectiblesAnalyticsContext.pageCategory;
@@ -117,18 +116,18 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
       categoryPosition = collectiblesAnalyticsContext.categoryPosition;
     }
     obj.category_position = categoryPosition;
-    arg1(str[8]).track(canUseShopDiscountsResult.COLLECTIBLES_TILE_IMPRESSION, obj);
+    mobile_home(str[8]).track(_undefined.COLLECTIBLES_TILE_IMPRESSION, obj);
   }, items1);
   const items2 = [callback];
   const items3 = [categoryStoreListingId];
-  const handleCardVisibilityChange = React.useCallback((arg0) => {
+  const handleCardVisibilityChange = collectiblesAnalyticsContext.useCallback((arg0) => {
     const current = ref.current;
     if (arg0) {
       if (null === current) {
         const _setTimeout = setTimeout;
         ref.current = setTimeout(() => {
-          callback();
-          closure_6.current = null;
+          outer1_7();
+          outer1_6.current = null;
         }, 1000);
       }
     } else if (null !== current) {
@@ -137,11 +136,11 @@ export const useTrackProductCardImpression = function useTrackProductCardImpress
       ref.current = null;
     }
   }, items2);
-  const effect = React.useEffect(() => () => {
-    if (null !== ref.current) {
+  const effect = collectiblesAnalyticsContext.useEffect(() => () => {
+    if (null !== outer1_6.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(ref.current);
-      ref.current = null;
+      clearTimeout(outer1_6.current);
+      outer1_6.current = null;
     }
   }, items3);
   return { handleCardVisibilityChange };

@@ -1,32 +1,30 @@
-// Module ID: 5730
-// Function ID: 49268
+// Module ID: 5735
+// Function ID: 49295
 // Name: _getGuildIdsToFetchSoundsFor
-// Dependencies: []
+// Dependencies: [31, 1838, 4578, 624, 2]
 // Exports: getGuildIdsToFetchSoundsFor, useGuildIdsToFetchSoundsFor
 
-// Module 5730 (_getGuildIdsToFetchSoundsFor)
+// Module 5735 (_getGuildIdsToFetchSoundsFor)
+import { useMemo } from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function _getGuildIdsToFetchSoundsFor(guildIds, sounds) {
-  const require = sounds;
-  return guildIds.filter((arg0) => null == arg1.get(arg0));
+  let closure_0 = sounds;
+  return guildIds.filter((arg0) => null == sounds.get(arg0));
 }
-const useMemo = require(dependencyMap[0]).useMemo;
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/soundboard/useGuildIdsToFetchSoundsFor.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/soundboard/useGuildIdsToFetchSoundsFor.tsx");
 
 export const useGuildIdsToFetchSoundsFor = function useGuildIdsToFetchSoundsFor() {
-  const items = [closure_3];
-  const stateFromStoresArray = require(dependencyMap[3]).useStateFromStoresArray(items, () => guildIds.getGuildIds());
-  const require = stateFromStoresArray;
-  const obj = require(dependencyMap[3]);
-  const items1 = [closure_4];
-  const stateFromStores = require(dependencyMap[3]).useStateFromStores(items1, () => sounds.getSounds());
-  const dependencyMap = stateFromStores;
+  const items = [_createForOfIteratorHelperLoose];
+  stateFromStoresArray = stateFromStoresArray(stateFromStores[3]).useStateFromStoresArray(items, () => outer1_3.getGuildIds());
+  const obj = stateFromStoresArray(stateFromStores[3]);
+  const items1 = [_isNativeReflectConstruct];
+  stateFromStores = stateFromStoresArray(stateFromStores[3]).useStateFromStores(items1, () => outer1_4.getSounds());
   const items2 = [stateFromStoresArray, stateFromStores];
-  return useMemo(() => callback(stateFromStoresArray, stateFromStores), items2);
+  return useMemo(() => outer1_5(stateFromStoresArray, stateFromStores), items2);
 };
 export const getGuildIdsToFetchSoundsFor = function getGuildIdsToFetchSoundsFor() {
-  const guildIds = guildIds.getGuildIds();
+  guildIds = guildIds.getGuildIds();
   return _getGuildIdsToFetchSoundsFor(guildIds, sounds.getSounds());
 };

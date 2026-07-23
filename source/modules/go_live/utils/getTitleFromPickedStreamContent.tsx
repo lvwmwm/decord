@@ -1,12 +1,11 @@
-// Module ID: 12725
-// Function ID: 97644
+// Module ID: 12839
+// Function ID: 99800
 // Name: getTitleFromPickedStreamContent
-// Dependencies: []
+// Dependencies: [1212, 2]
 // Exports: default
 
-// Module 12725 (getTitleFromPickedStreamContent)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/go_live/utils/getTitleFromPickedStreamContent.tsx");
+// Module 12839 (getTitleFromPickedStreamContent)
+const result = require("set").fileFinishedImporting("modules/go_live/utils/getTitleFromPickedStreamContent.tsx");
 
 export default function getTitleFromPickedStreamContent(windows) {
   if (windows.windows.length > 0) {
@@ -20,8 +19,8 @@ export default function getTitleFromPickedStreamContent(windows) {
   } else {
     joined = null;
     if (windows.displays.length > 0) {
-      const intl = require(dependencyMap[0]).intl;
-      joined = intl.string(require(dependencyMap[0]).t.R4wpLN);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      joined = intl.string(require(1212) /* getSystemLocale */.t.R4wpLN);
     }
   }
   return joined;

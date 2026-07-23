@@ -18,6 +18,7 @@ function flattenStyle(arg0) {
             for (const key10019 in tmp3) {
               let tmp5 = key10019;
               obj[key10019] = tmp3[key10019];
+              continue;
             }
           }
         }

@@ -1,52 +1,59 @@
 // Module ID: 1350
-// Function ID: 16072
+// Function ID: 16073
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 686, 566, 2]
 
 // Module 1350 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import initialize from "initialize";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,18 +99,13 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class GuildMembershipStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, GuildMembershipStore);
+      tmp = outer1_3(this, apply);
       items = [, , ];
-      items[0] = closure_1(closure_2[5]);
+      items[0] = outer1_1(outer1_2[5]);
       items[1] = {
         CACHE_LOADED(arg0) {
               return tmp2Result.handleCacheLoaded(arg0);
@@ -121,25 +123,24 @@ let tmp2 = (Store) => {
               return tmp2Result.handleGuildDelete(arg0);
             }
       };
-      items[2] = GuildMembershipStore(closure_2[5]).DispatchBand.Early;
-      obj = closure_6(GuildMembershipStore);
-      tmp2 = closure_5;
-      if (closure_10()) {
+      items[2] = GuildMembershipStore(outer1_2[5]).DispatchBand.Early;
+      obj = outer1_6(apply);
+      tmp2 = outer1_5;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      GuildMembershipStore = tmp2Result;
+      apply = tmp2Result;
       set = new Set();
       tmp2Result.guildIds = set;
       return tmp2Result;
     }
   }
-  const arg1 = GuildMembershipStore;
   callback2(GuildMembershipStore, Store);
   let obj = {
     key: "allGuildIds",
@@ -147,7 +148,7 @@ let tmp2 = (Store) => {
       return this.guildIds;
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "isMember",
     value(arg0) {
@@ -175,7 +176,7 @@ let tmp2 = (Store) => {
     key: "handleCacheLoadedLazy",
     value(guilds) {
       let done;
-      const tmp = callback4(guilds.guilds);
+      const tmp = outer1_8(guilds.guilds);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -206,8 +207,8 @@ let tmp2 = (Store) => {
     }
   };
   return callback(GuildMembershipStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("stores/GuildMembershipStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GuildMembershipStore.tsx");
 
 export default tmp2;

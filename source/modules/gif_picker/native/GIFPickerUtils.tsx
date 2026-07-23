@@ -1,13 +1,16 @@
-// Module ID: 9575
-// Function ID: 74625
+// Module ID: 9582
+// Function ID: 74666
 // Name: transformFavoriteGifUrl
-// Dependencies: []
+// Dependencies: [31, 653, 1443, 9581, 9583, 1212, 2]
 // Exports: useFavoriteGIFsMobile
 
-// Module 9575 (transformFavoriteGifUrl)
-function transformFavoriteGifUrl(closure_0) {
-  let combined = closure_0;
-  const str = importDefault(dependencyMap[2]).toURLSafe(closure_0);
+// Module 9582 (transformFavoriteGifUrl)
+import result from "result";
+
+const require = arg1;
+function transformFavoriteGifUrl(outer1_0) {
+  let combined = outer1_0;
+  const str = importDefault(1443).toURLSafe(outer1_0);
   if (null != str) {
     if (obj6.isExternalProxiedAttachmentUrl(str)) {
       const formatted = str.pathname.toLowerCase();
@@ -26,9 +29,9 @@ function transformFavoriteGifUrl(closure_0) {
       const result1 = searchParams2.set("animated", "true");
       return str.toString();
     } else {
-      const obj2 = arg1(dependencyMap[3]);
+      const obj2 = require(9581) /* isAttachmentUrl */;
     }
-    const obj6 = arg1(dependencyMap[3]);
+    obj6 = require(9581) /* isAttachmentUrl */;
   }
   if (regex.test(arg1)) {
     const match = regex3.exec(arg1);
@@ -47,27 +50,25 @@ function transformFavoriteGifUrl(closure_0) {
   }
   return combined;
 }
-let closure_3 = importAll(dependencyMap[0]);
-arg1(dependencyMap[1]).GIFPickerResultTypes;
-let closure_5 = /(https?:\/\/)(?!media(?:\d+)?\.)(?:[^.]+\.)*giphy\.com/;
-let closure_6 = /(tenor\.com)/;
-let closure_7 = /-(?:.(?!-))+$/;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/gif_picker/native/GIFPickerUtils.tsx");
+require("ME").GIFPickerResultTypes;
+const re5 = /(https?:\/\/)(?!media(?:\d+)?\.)(?:[^.]+\.)*giphy\.com/;
+const re6 = /(tenor\.com)/;
+const re7 = /-(?:.(?!-))+$/;
+let result = require("isOriginalContentTypeDifferent").fileFinishedImporting("modules/gif_picker/native/GIFPickerUtils.tsx");
 
 export const GIF_HEADER_HEIGHT = 56;
 export const useFavoriteGIFsMobile = function useFavoriteGIFsMobile() {
-  let obj = arg1(dependencyMap[4]);
-  const sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
-  const arg1 = sortedFavoriteGIFs;
+  let obj = sortedFavoriteGIFs(9583);
+  sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
   obj = {
     favorites: sortedFavoriteGIFs,
     favoritesCategory: React.useMemo(() => {
       let tmp;
       if (sortedFavoriteGIFs.length > 0) {
-        const obj = { type: constants.FAVORITES };
-        const intl = sortedFavoriteGIFs(closure_2[5]).intl;
-        obj.name = intl.string(sortedFavoriteGIFs(closure_2[5]).t.k8fFjp);
+        const obj = { type: outer1_4.FAVORITES };
+        const intl = sortedFavoriteGIFs(outer1_2[5]).intl;
+        obj.name = intl.string(sortedFavoriteGIFs(outer1_2[5]).t.k8fFjp);
         obj.src = sortedFavoriteGIFs[0].src;
         obj.format = sortedFavoriteGIFs[0].format;
         tmp = obj;

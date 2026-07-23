@@ -1,14 +1,16 @@
-// Module ID: 7917
-// Function ID: 63119
+// Module ID: 7923
+// Function ID: 63156
 // Name: Future
-// Dependencies: []
+// Dependencies: [7, 6, 2]
 
-// Module 7917 (Future)
-let closure_0 = importDefault(dependencyMap[1]);
+// Module 7923 (Future)
+import _classCallCheck from "_classCallCheck";
+import importDefaultResult from "_defineProperties";
+
 class Future {
   constructor() {
-    closure_0 = this;
-    tmp = closure_0(this, Future);
+    self = this;
+    tmp = self(this, Future);
     promise = new Promise((resolve, reject) => {
       self.resolve = resolve;
       self.reject = reject;
@@ -17,8 +19,7 @@ class Future {
     return;
   }
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const importDefaultResultResult = importDefault(dependencyMap[0])(Future);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/shared/utils/Future.tsx");
+const importDefaultResultResult = require("_defineProperties")(Future);
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/Future.tsx");
 
 export const Future = importDefaultResultResult;

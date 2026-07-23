@@ -1,71 +1,72 @@
-// Module ID: 8940
-// Function ID: 70457
+// Module ID: 8947
+// Function ID: 70498
 // Name: _authorizeLink
-// Dependencies: []
+// Dependencies: [57, 5, 31, 27, 653, 33, 3, 4130, 4938, 8948, 3827, 477, 8943, 4939, 44, 686, 4126, 1212, 5121, 4543, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 8940 (_authorizeLink)
+// Module 8947 (_authorizeLink)
+import _slicedToArray from "_slicedToArray";
+import closure_4 from "jsxProd";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { WebBrowserType } from "ME";
+import jsxProd from "jsxProd";
+import importDefaultResult from "get ActivityIndicator";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_9;
+const require = arg1;
 function _authorizeLink() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback2(tmp);
-  const _authorizeLink = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ Image: closure_6, View: closure_7 } = arg1(dependencyMap[3]));
-const WebBrowserType = arg1(dependencyMap[4]).WebBrowserType;
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let importDefaultResult = importDefault(dependencyMap[6]);
+({ Image: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 importDefaultResult = new importDefaultResult("TwoWayLink");
-const tmp3 = arg1(dependencyMap[5]);
-let closure_12 = arg1(dependencyMap[7]).createStyles({ image: { marginBottom: 32 }, redirect: { marginTop: 8 } });
-const obj = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkPreConnect.tsx");
+let closure_12 = _createForOfIteratorHelperLoose.createStyles({ image: { marginBottom: 32 }, redirect: { marginTop: 8 } });
+const result = require("result").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkPreConnect.tsx");
 
 export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) {
   let body;
+  let _slicedToArray;
   let img;
   let imgStyle;
   let redirectDestination;
   let title;
   let tmp4;
   platformType = platformType.platformType;
-  const arg1 = platformType;
   const onError = platformType.onError;
-  const importDefault = onError;
   const onNext = platformType.onNext;
-  const dependencyMap = onNext;
   ({ imgStyle, redirectDestination } = platformType);
   ({ img, title, body } = platformType);
   const tmp = callback4();
-  let obj = arg1(dependencyMap[12]);
+  let obj = platformType(onNext[12]);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  [tmp4, closure_3] = callback(React.useState(false), 2);
-  const ref = React.useRef(undefined);
-  const callback2 = ref;
+  [tmp4, _slicedToArray] = callback(callback1.useState(false), 2);
+  const ref = callback1.useRef(undefined);
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [onError, platformType];
   const items1 = [platformType, onNext];
-  const callback = React.useCallback(callback2(ref), items);
-  const callback1 = React.useCallback((callbackState) => {
+  callback = callback1.useCallback(ref(ref), items);
+  callback1 = callback1.useCallback((callbackState) => {
     callbackState = callbackState.callbackState;
     if (callbackState === ref.current) {
       const obj = { callbackCode: tmp, callbackState };
       onNext(obj);
     } else {
       const _HermesInternal = HermesInternal;
-      closure_11.warn("" + platformType + " link: received mismatching callback state!");
+      outer1_11.warn("" + platformType + " link: received mismatching callback state!");
     }
   }, items1);
-  const React = callback1;
   const items2 = [callback1];
-  const effect = React.useEffect(() => {
+  const effect = callback1.useEffect(() => {
     const subscription = onError(onNext[15]).subscribe("USER_CONNECTIONS_LINK_CALLBACK", callback1);
     return () => {
-      callback(closure_2[15]).unsubscribe("USER_CONNECTIONS_LINK_CALLBACK", closure_5);
+      onError(onNext[15]).unsubscribe("USER_CONNECTIONS_LINK_CALLBACK", outer1_5);
     };
   }, items2);
   obj = { style: twoWayLinkStyles.container };
@@ -79,30 +80,31 @@ export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) 
   items3[1] = tmp13;
   obj1.style = items3;
   const items4 = [callback3(closure_6, obj1), , , ];
-  const obj2 = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, paddingHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003202169671031755, backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062920633412691296, style: twoWayLinkStyles.title, children: title };
-  items4[1] = callback3(arg1(dependencyMap[16]).Text, obj2);
-  items4[2] = callback3(arg1(dependencyMap[16]).Text, { style: twoWayLinkStyles.body, children: body });
+  const obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header", children: title };
+  items4[1] = callback3(platformType(onNext[16]).Text, obj2);
+  const obj3 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: body };
+  items4[2] = callback3(platformType(onNext[16]).Text, obj3);
   let tmp14 = null != redirectDestination;
   if (tmp14) {
-    const obj4 = { style: tmp.redirect };
-    const intl = arg1(dependencyMap[17]).intl;
+    const obj4 = { style: tmp.redirect, variant: "text-sm/medium", color: "text-default" };
+    const intl = platformType(onNext[17]).intl;
     const obj5 = { redirectUrl: redirectDestination };
-    obj4.children = intl.format(arg1(dependencyMap[17]).t.XhlYYn, obj5);
-    tmp14 = callback3(arg1(dependencyMap[16]).Text, obj4);
+    obj4.children = intl.format(platformType(onNext[17]).t.XhlYYn, obj5);
+    tmp14 = callback3(platformType(onNext[16]).Text, obj4);
   }
   items4[3] = tmp14;
   obj.children = items4;
   const items5 = [closure_10(closure_7, obj), ];
   const obj6 = { bottom: true, style: twoWayLinkStyles.footerContainer };
   const obj7 = { style: twoWayLinkStyles.footerButton };
-  const obj8 = {};
-  const intl2 = arg1(dependencyMap[17]).intl;
-  obj8.text = intl2.string(arg1(dependencyMap[17]).t.3PatSz);
+  const obj8 = { variant: "primary", size: "lg" };
+  const intl2 = platformType(onNext[17]).intl;
+  obj8.text = intl2.string(platformType(onNext[17]).t["3PatSz"]);
   obj8.onPress = callback;
   obj8.loading = tmp4;
-  obj7.children = callback3(arg1(dependencyMap[19]).Button, obj8);
+  obj7.children = callback3(platformType(onNext[19]).Button, obj8);
   obj6.children = callback3(closure_7, obj7);
-  items5[1] = callback3(arg1(dependencyMap[18]).SafeAreaPaddingView, obj6);
+  items5[1] = callback3(platformType(onNext[18]).SafeAreaPaddingView, obj6);
   obj.children = items5;
   return closure_10(closure_7, obj);
 };

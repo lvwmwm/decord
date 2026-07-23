@@ -1,5 +1,5 @@
 // Module ID: 1448
-// Function ID: 16881
+// Function ID: 16882
 // Dependencies: []
 
 // Module 1448
@@ -10,18 +10,18 @@ let closure_0 = {
     if (arg1) {
       let mapped = arr.map((arg0, index) => {
         closure_1.index = index;
-        return index.call(closure_1, arg0);
+        return callback.call(closure_1, arg0);
       });
     } else {
       mapped = arr.slice();
     }
     return mapped;
   },
-  naturalOrder(result, closure_0) {
+  naturalOrder(result, getColorIndex) {
     let num = -1;
-    if (result >= closure_0) {
+    if (result >= getColorIndex) {
       let num2 = 0;
-      if (result > closure_0) {
+      if (result > getColorIndex) {
         num2 = 1;
       }
       num = num2;
@@ -31,10 +31,10 @@ let closure_0 = {
   sum(arr) {
     let closure_0 = arg1;
     let closure_1 = {};
-    return arr.reduce(arg1 ? (arg0, arg1, index) => {
+    return arr.reduce(arg1 ? ((arg0, arg1, index) => {
       closure_1.index = index;
-      return arg0 + arg1.call(closure_1, arg1);
-    } : (arg0, arg1) => arg0 + arg1, 0);
+      return arg0 + callback.call(closure_1, arg1);
+    }) : ((arg0, arg1) => arg0 + arg1), 0);
   },
   max(arg0, arg1) {
     let mapped = arg0;
@@ -45,25 +45,25 @@ let closure_0 = {
   }
 };
 
-export default () => {
-  function getColorIndex(arg0, arg1, arg2) {
-    return (arg0 << 10) + (arg1 << 5) + arg2;
+export default (() => {
+  function getColorIndex(sum1, g1, b1) {
+    return (sum1 << 10) + (g1 << 5) + b1;
   }
   function PQueue(arg0) {
-    const getColorIndex = arg0;
+    let closure_0 = arg0;
     function sort() {
-      const sorted = arr.sort(arg0);
-      let closure_2 = true;
+      const sorted = arr.sort(closure_0);
+      let c2 = true;
     }
     let closure_1 = [];
-    let closure_2 = false;
+    let c2 = false;
     return {
       push(arg0) {
-        let closure_2 = false;
+        let c2 = false;
       },
       peek(arg0) {
         let diff = arg0;
-        if (!closure_2) {
+        if (!c2) {
           sort();
         }
         if (undefined === diff) {
@@ -72,7 +72,7 @@ export default () => {
         return arr[diff];
       },
       pop() {
-        if (!closure_2) {
+        if (!c2) {
           sort();
         }
         return arr.pop();
@@ -84,7 +84,7 @@ export default () => {
         return arr.map(arg0);
       },
       debug() {
-        if (!closure_2) {
+        if (!c2) {
           sort();
         }
         return closure_1;
@@ -112,7 +112,7 @@ export default () => {
         const result = vbox.count() * vbox2.volume();
         const vbox4 = vbox2.vbox;
         const countResult = vbox.count();
-        return closure_0.naturalOrder(result, vbox3.count() * vbox4.volume());
+        return getColorIndex.naturalOrder(result, vbox3.count() * vbox4.volume());
       });
       this.vboxes = tmp;
       return;
@@ -129,10 +129,9 @@ export default () => {
         const items1 = [count.copy()];
         return items1;
       } else {
-        let getColorIndex = 0;
+        let sum8 = 0;
         const items2 = [];
         const items3 = [];
-        const PQueue = items3;
         if (maxResult == sum) {
           sum = count.r1;
           let num11 = 0;
@@ -148,8 +147,8 @@ export default () => {
               let tmp21 = b13;
               if (b13 <= count.b2) {
                 do {
-                  let tmp22 = closure_0;
-                  let num14 = arg0[closure_0(undefined, sum, g13, b13)];
+                  let tmp22 = sum8;
+                  let num14 = arg0[sum8(undefined, sum, g13, b13)];
                   let tmp23 = b13;
                   if (!num14) {
                     num14 = 0;
@@ -166,7 +165,7 @@ export default () => {
               num13 = tmp20;
             }
             let sum3 = num11 + num13;
-            getColorIndex = sum3;
+            sum8 = sum3;
             items2[sum] = sum3;
             sum = sum + 1;
             num11 = sum3;
@@ -187,8 +186,8 @@ export default () => {
               let tmp14 = b12;
               if (b12 <= count.b2) {
                 do {
-                  let tmp15 = closure_0;
-                  let num10 = arg0[closure_0(undefined, r1, g12, b12)];
+                  let tmp15 = sum8;
+                  let num10 = arg0[sum8(undefined, r1, g12, b12)];
                   let tmp16 = b12;
                   if (!num10) {
                     num10 = 0;
@@ -205,7 +204,7 @@ export default () => {
               num9 = tmp13;
             }
             let sum5 = num7 + num9;
-            getColorIndex = sum5;
+            sum8 = sum5;
             items2[g12] = sum5;
             g12 = g12 + 1;
             num7 = sum5;
@@ -226,8 +225,8 @@ export default () => {
               let tmp7 = g1;
               if (g1 <= count.g2) {
                 do {
-                  let tmp8 = closure_0;
-                  let num4 = arg0[closure_0(undefined, sum7, g1, b1)];
+                  let tmp8 = sum8;
+                  let num4 = arg0[sum8(undefined, sum7, g1, b1)];
                   let tmp9 = g1;
                   if (!num4) {
                     num4 = 0;
@@ -243,8 +242,7 @@ export default () => {
               num2 = tmp6;
               num3 = tmp6;
             }
-            let sum8 = num5 + num3;
-            getColorIndex = sum8;
+            sum8 = num5 + num3;
             items2[b1] = sum8;
             b1 = b1 + 1;
             num5 = sum8;
@@ -346,8 +344,8 @@ export default () => {
               let tmp7 = b1;
               if (b1 <= self.b2) {
                 do {
-                  let tmp8 = closure_0;
-                  let num3 = tmp[closure_0(undefined, sum1, g1, b1)];
+                  let tmp8 = getColorIndex;
+                  let num3 = tmp[getColorIndex(undefined, sum1, g1, b1)];
                   let tmp9 = b1;
                   if (!num3) {
                     num3 = 0;
@@ -416,8 +414,8 @@ export default () => {
             let tmp19 = b1;
             if (b1 <= self.b2) {
               do {
-                let tmp20 = closure_0;
-                let num8 = tmp[closure_0(undefined, sum4, g1, b1)];
+                let tmp20 = getColorIndex;
+                let num8 = tmp[getColorIndex(undefined, sum4, g1, b1)];
                 let tmp21 = b1;
                 if (!num8) {
                   num8 = 0;
@@ -535,7 +533,7 @@ export default () => {
           }
           if (tmp6) {
             let color = vboxes.peek(num).color;
-            let tmp = sqrtResult;
+            tmp = sqrtResult;
           }
           num = num + 1;
           tmp2 = color;
@@ -545,7 +543,7 @@ export default () => {
     },
     forcebw() {
       const vboxes = this.vboxes;
-      const sorted = vboxes.sort((color, color2) => closure_0.naturalOrder(closure_0.sum(color.color), closure_0.sum(color2.color)));
+      const sorted = vboxes.sort((color, color2) => getColorIndex.naturalOrder(getColorIndex.sum(color.color), getColorIndex.sum(color2.color)));
       const color = vboxes[0].color;
       let tmp2 = color[0] < 5;
       if (tmp2) {
@@ -555,7 +553,7 @@ export default () => {
         tmp2 = color[2] < 5;
       }
       if (tmp2) {
-        vboxes[0].color = [];
+        vboxes[0].color = [0, 0, 0];
       }
       const diff = vboxes.length - 1;
       const color2 = vboxes[diff].color;
@@ -564,7 +562,7 @@ export default () => {
         tmp4 = color2[2] > 251;
       }
       if (tmp4) {
-        vboxes[diff].color = [null, null, null];
+        vboxes[diff].color = [255, 255, 255];
       }
     }
   };
@@ -572,7 +570,7 @@ export default () => {
     quantize(arr) {
       let sizeResult;
       let sizeResult1;
-      function iter(arr3, arg1, arg2, arg3) {
+      function iter(arr3, arg1, closure_0, closure_1) {
         let tmp7;
         let tmp8;
         let num = 1;
@@ -580,9 +578,9 @@ export default () => {
         while (true) {
           let arr = arr3.pop();
           if (arr.count()) {
-            let tmp4 = callback;
+            let tmp4 = outer1_4;
             let tmp5 = arr1;
-            let tmp6 = callback(arr1, arr);
+            let tmp6 = outer1_4(arr1, arr);
             [tmp7, tmp8] = tmp6;
             if (!tmp7) {
               break;
@@ -590,7 +588,7 @@ export default () => {
               arr = arr3.push(tmp7);
               let sum = num;
               if (tmp8) {
-                let arr1 = arr3.push(tmp8);
+                arr1 = arr3.push(tmp8);
                 sum = num + 1;
               }
               if (sum < arg1) {
@@ -613,12 +611,12 @@ export default () => {
       if (arr.length) {
         if (arg1 >= 2) {
           if (arg1 <= 256) {
-            let arr1 = function getHisto(arr) {
+            let arr1 = (function getHisto(arr) {
               const array = new Array(32768);
               const item = arr.forEach((arg0) => {
-                const callback = arg0[0] >> 3;
+                let closure_0 = arg0[0] >> 3;
                 let closure_1 = arg0[1] >> 3;
-                const tmp = callback(callback, closure_1, arg0[2] >> 3);
+                const tmp = arr1(closure_0, closure_1, arg0[2] >> 3);
                 let num = array[tmp];
                 if (!num) {
                   num = 0;
@@ -626,20 +624,19 @@ export default () => {
                 array[tmp] = num + 1;
               });
               return array;
-            }(arr);
-            const getColorIndex = arr1;
-            const item = arr1.forEach(() => {
+            })(arr);
+            let item = arr1.forEach(() => {
 
             });
             const prototype2 = PQueue.prototype;
-            const arr3 = new PQueue((count, count2) => arr1.naturalOrder(count.count(), count2.count()));
-            arr = arr3.push(function vboxFromPixels(arr, arr1) {
-              let closure_3 = 1000000;
-              let closure_4 = 0;
-              let closure_5 = 1000000;
-              let closure_6 = 0;
-              let closure_7 = 1000000;
-              let closure_8 = 0;
+            const arr3 = new PQueue((count, count2) => getColorIndex.naturalOrder(count.count(), count2.count()));
+            arr = arr3.push((function vboxFromPixels(arr, arr1) {
+              let c3 = 1000000;
+              let c4 = 0;
+              let c5 = 1000000;
+              let c6 = 0;
+              let c7 = 1000000;
+              let c8 = 0;
               const item = arr.forEach((arg0) => {
                 let closure_0 = arg0[0] >> 3;
                 let closure_1 = arg0[1] >> 3;
@@ -660,14 +657,14 @@ export default () => {
                   closure_8 = closure_2;
                 }
               });
-              return new closure_2(closure_3, closure_4, closure_5, closure_6, closure_7, closure_8, arr1);
-            }(arr, arr1));
+              return new outer1_2(c3, c4, c5, c6, c7, c8, arr1);
+            })(arr, arr1));
             iter(arr3, 0.75 * arg1);
             const prototype3 = PQueue.prototype;
             const arr4 = new PQueue((count, count2) => {
               const result = count.count() * count.volume();
               const countResult = count.count();
-              return arr1.naturalOrder(result, count2.count() * count2.volume());
+              return getColorIndex.naturalOrder(result, count2.count() * count2.volume());
             });
             if (arr3.size()) {
               do {
@@ -691,4 +688,4 @@ export default () => {
       return false;
     }
   };
-}().quantize;
+})().quantize;

@@ -1,19 +1,19 @@
-// Module ID: 14223
-// Function ID: 107545
+// Module ID: 14337
+// Function ID: 109701
 // Name: onFriendGamingActivityNotificationSettingsChanged
-// Dependencies: []
+// Dependencies: [3770, 653, 3803, 675, 2]
 // Exports: onFriendGamingActivityNotificationSettingsChanged
 
-// Module 14223 (onFriendGamingActivityNotificationSettingsChanged)
-let closure_3 = require(dependencyMap[0]).NotificationSettingsUpdateType;
-const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/notifications/friend_gaming_activity/FriendGamingActivityNotificationUtils.tsx");
+// Module 14337 (onFriendGamingActivityNotificationSettingsChanged)
+import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
+import { AnalyticEvents } from "ME";
+
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/notifications/friend_gaming_activity/FriendGamingActivityNotificationUtils.tsx");
 
 export const onFriendGamingActivityNotificationSettingsChanged = function onFriendGamingActivityNotificationSettingsChanged(friend_gaming_activity_notifications) {
-  const EnableFriendGamingActivityNotifications = require(dependencyMap[2]).EnableFriendGamingActivityNotifications;
+  const EnableFriendGamingActivityNotifications = require(3803) /* explicitContentFromProto */.EnableFriendGamingActivityNotifications;
   EnableFriendGamingActivityNotifications.updateSetting(friend_gaming_activity_notifications);
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(675);
   obj = { update_type: constants.ACCOUNT, friend_gaming_activity_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

@@ -1,17 +1,19 @@
-// Module ID: 12097
-// Function ID: 93294
+// Module ID: 12211
+// Function ID: 95445
 // Name: CustomActivityLinkRecord
-// Dependencies: []
+// Dependencies: [6, 7, 12212, 7820, 12209, 2]
 
-// Module 12097 (CustomActivityLinkRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 12211 (CustomActivityLinkRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class CustomActivityLinkRecord {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, CustomActivityLinkRecord);
-      obj = CustomActivityLinkRecord(closure_1[2]);
+      tmp = outer1_2(this, CustomActivityLinkRecord);
+      obj = CustomActivityLinkRecord(outer1_1[2]);
       result = obj.decodeCustomActivityLink(arg0.link_id);
       type = undefined;
       if (null != result) {
@@ -37,25 +39,24 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = CustomActivityLinkRecord;
   const items = [
     {
       key: "getAssetURL",
       value() {
         const self = this;
-        if (this.type === CustomActivityLinkRecord(closure_1[2]).CustomLinkType.MANAGED) {
-          let assetImage = CustomActivityLinkRecord(closure_1[3]).getAssetImage(self.applicationId, self.assetId, 512);
-          const obj2 = CustomActivityLinkRecord(closure_1[3]);
-        } else if (self.type === CustomActivityLinkRecord(closure_1[2]).CustomLinkType.QUICK) {
-          assetImage = CustomActivityLinkRecord(closure_1[4]).getQuickLinkImage(self.assetPath);
-          const obj = CustomActivityLinkRecord(closure_1[4]);
+        if (this.type === CustomActivityLinkRecord(outer1_1[2]).CustomLinkType.MANAGED) {
+          let assetImage = CustomActivityLinkRecord(outer1_1[3]).getAssetImage(self.applicationId, self.assetId, 512);
+          const obj2 = CustomActivityLinkRecord(outer1_1[3]);
+        } else if (self.type === CustomActivityLinkRecord(outer1_1[2]).CustomLinkType.QUICK) {
+          assetImage = CustomActivityLinkRecord(outer1_1[4]).getQuickLinkImage(self.assetPath);
+          const obj = CustomActivityLinkRecord(outer1_1[4]);
         }
         return assetImage;
       }
     }
   ];
   return callback(CustomActivityLinkRecord, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/records/CustomActivityLinkRecord.tsx");
+})();
+let result = require("CustomLinkType").fileFinishedImporting("modules/activities/records/CustomActivityLinkRecord.tsx");
 
 export default tmp2;

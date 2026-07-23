@@ -1,9 +1,21 @@
-// Module ID: 4142
-// Function ID: 34850
+// Module ID: 4146
+// Function ID: 34880
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 4147, 653, 4148, 22, 1553, 566, 686, 2]
 
-// Module 4142 (_isNativeReflectConstruct)
+// Module 4146 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_11 from "_isNativeReflectConstruct";
+import { ME } from "ME";
+import { VoicePlatforms } from "ParticipantTypes";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +25,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +78,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -105,14 +117,14 @@ function getRecords(closure_19, channelId) {
   return tmp;
 }
 function clearCall(arg0) {
-  const arg1 = arg0;
-  let obj = closure_16[closure_12];
+  let closure_0 = arg0;
+  let obj = dependencyMap[ME];
   if (null == obj) {
     obj = {};
   }
-  importDefault(dependencyMap[9]).each(obj, (channelId) => {
-    if (channelId.channelId === channelId) {
-      callback(closure_12, arg1, () => null);
+  importDefault(22).each(obj, (channelId) => {
+    if (channelId.channelId === closure_0) {
+      outer1_30(outer1_12, arg1, () => null);
     }
   });
 }
@@ -125,84 +137,85 @@ function getOrCreateUsersWithVideo(guildId) {
   return set;
 }
 function updateVoiceState(guildId, closure_3, arg2) {
-  let tmp = guildId;
-  let tmp4 = guildId;
+  let tmp5 = guildId;
+  let tmp8 = guildId;
   if (null == guildId) {
-    tmp4 = ME;
+    tmp8 = ME;
   }
-  const tmp2Result = getRecords(closure_16, tmp4);
-  const tmp7 = arg2(tmp2Result[closure_3]);
-  if (tmp2Result[closure_3] === tmp7) {
-    const items = [false, tmp7, tmp6];
+  const tmp6Result = getRecords(closure_16, tmp8);
+  const tmp11 = arg2(tmp6Result[closure_3]);
+  if (tmp6Result[closure_3] === tmp11) {
+    const items = [false, tmp11, tmp10];
     let items1 = items;
   } else {
-    if (null != tmp6) {
-      delete r1[r5];
-      if (null != tmp6.channelId) {
-        getRecords(closure_19, tmp6.channelId);
-        delete r8[r5];
-        getRecords(closure_20, tmp6.channelId);
-        delete r8[r5];
+    if (null != tmp10) {
+      delete tmp[tmp2];
+      if (null != tmp10.channelId) {
+        getRecords(closure_19, tmp10.channelId);
+        delete tmp3[tmp2];
+        getRecords(closure_20, tmp10.channelId);
+        delete tmp3[tmp2];
       }
-      if (null != tmp6.sessionId) {
+      if (null != tmp10.sessionId) {
         getRecords(closure_21, closure_3);
-        const sessionId = tmp6.sessionId;
-        delete r9[r8];
+        const sessionId = tmp10.sessionId;
+        delete tmp4[tmp3];
       }
-      let tmp16 = tmp;
-      if (null == tmp) {
-        tmp16 = ME;
+      let tmp20 = tmp5;
+      if (null == tmp5) {
+        tmp20 = ME;
       }
-      const obj = getOrCreateUsersWithVideo(tmp16);
+      const obj = getOrCreateUsersWithVideo(tmp20);
       if (obj.has(closure_3)) {
         const _Set = Set;
         const set = new Set(obj);
         set.delete(closure_3);
         if (0 === set.size) {
-          map.delete(tmp16);
+          map.delete(tmp20);
         } else {
-          const result = map.set(tmp16, set);
+          const result = map.set(tmp20, set);
         }
       }
     }
-    if (null != tmp7) {
-      tmp2Result[closure_3] = tmp7;
-      if (null != tmp7.channelId) {
-        getRecords(closure_19, tmp7.channelId)[closure_3] = tmp7;
-        if (tmp7.selfVideo) {
-          getRecords(closure_20, tmp7.channelId)[closure_3] = tmp7;
-          if (null == tmp) {
-            tmp = ME;
+    if (null != tmp11) {
+      tmp6Result[closure_3] = tmp11;
+      if (null != tmp11.channelId) {
+        getRecords(closure_19, tmp11.channelId)[closure_3] = tmp11;
+        if (tmp11.selfVideo) {
+          getRecords(closure_20, tmp11.channelId)[closure_3] = tmp11;
+          if (null == tmp5) {
+            tmp5 = ME;
           }
-          const obj3 = getOrCreateUsersWithVideo(tmp);
+          const obj3 = getOrCreateUsersWithVideo(tmp5);
           if (!obj3.has(closure_3)) {
             const _Set2 = Set;
             const set1 = new Set(obj3);
             set1.add(closure_3);
-            const result1 = map.set(tmp, set1);
+            const result1 = map.set(tmp5, set1);
           }
         }
       }
-      if (null != tmp7.sessionId) {
-        getRecords(closure_21, closure_3)[tmp7.sessionId] = tmp7;
+      if (null != tmp11.sessionId) {
+        getRecords(closure_21, closure_3)[tmp11.sessionId] = tmp11;
       }
     }
-    items1 = [true, tmp7, tmp6];
+    items1 = [true, tmp11, tmp10];
   }
   return items1;
 }
-function mergeVoiceState(guildId, userId) {
-  return updateVoiceState(guildId, userId.userId, (merge) => {
-    if (null == arg1.channelId) {
+function mergeVoiceState(guildId, value) {
+  let closure_0 = value;
+  return updateVoiceState(guildId, value.userId, (merge) => {
+    if (null == value.channelId) {
       return null;
     } else {
       const obj = {};
-      ({ channelId: obj.channelId, deaf: obj.deaf, mute: obj.mute, requestToSpeakTimestamp: obj.requestToSpeakTimestamp, selfDeaf: obj.selfDeaf, selfMute: obj.selfMute, selfStream: obj.selfStream, selfVideo: obj.selfVideo, sessionId: obj.sessionId, suppress: obj.suppress, userId: obj.userId, discoverable: obj.discoverable, connectedAt: obj.connectedAt } = arg1);
+      ({ channelId: obj.channelId, deaf: obj.deaf, mute: obj.mute, requestToSpeakTimestamp: obj.requestToSpeakTimestamp, selfDeaf: obj.selfDeaf, selfMute: obj.selfMute, selfStream: obj.selfStream, selfVideo: obj.selfVideo, sessionId: obj.sessionId, suppress: obj.suppress, userId: obj.userId, discoverable: obj.discoverable, connectedAt: obj.connectedAt } = value);
       if (null != merge) {
         let mergeResult = merge.merge(obj);
       } else {
-        const prototype = ctor.prototype;
-        mergeResult = new ctor(obj);
+        const prototype = outer1_11.prototype;
+        mergeResult = new outer1_11(obj);
       }
       return mergeResult;
     }
@@ -210,43 +223,33 @@ function mergeVoiceState(guildId, userId) {
 }
 function handleGuildCreateOrDelete(guild) {
   guild = guild.guild;
-  const arg1 = guild;
-  const item = importDefault(dependencyMap[9]).forEach(closure_16[guild.id], (userId) => {
-    callback(guild.id, userId.userId, () => null);
+  const item = importDefault(22).forEach(dependencyMap[guild.id], (userId) => {
+    outer1_30(guild.id, userId.userId, () => null);
   });
-  delete r2[r1];
+  delete tmp2[tmp];
 }
-let closure_5 = importDefault(dependencyMap[0]);
-let closure_6 = importDefault(dependencyMap[1]);
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-const ME = arg1(dependencyMap[7]).ME;
-const VoicePlatforms = arg1(dependencyMap[8]).VoicePlatforms;
-let closure_14 = 0;
-let closure_15 = 0;
+let c14 = 0;
+let c15 = 0;
 let closure_16 = {};
-const set = new Set();
+let set = new Set();
 const map = new Map();
 let closure_19 = {};
 let closure_20 = {};
 let closure_21 = {};
 let closure_22 = {};
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class VoiceStateStore {
     constructor() {
       self = this;
-      tmp = closure_5(this, VoiceStateStore);
-      obj = closure_8(VoiceStateStore);
-      tmp2 = closure_7;
-      if (closure_23()) {
+      tmp = outer1_5(this, VoiceStateStore);
+      obj = outer1_8(VoiceStateStore);
+      tmp2 = outer1_7;
+      if (outer1_23()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_8;
+        tmp7 = outer1_8;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_8(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_8(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -255,19 +258,18 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = VoiceStateStore;
   callback2(VoiceStateStore, Store);
   let obj = {
     key: "getAllVoiceStates",
     value() {
-      return closure_16;
+      return outer1_16;
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "getVoiceStateVersion",
     value() {
-      return closure_15;
+      return outer1_15;
     }
   };
   items[1] = obj;
@@ -276,28 +278,28 @@ let tmp4 = (Store) => {
     value(arg0) {
       let tmp = arg0;
       if (null == arg0) {
-        tmp = closure_12;
+        tmp = outer1_12;
       }
-      return closure_27(closure_16, tmp);
+      return outer1_27(outer1_16, tmp);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getVoiceStatesForChannel",
     value(arg0) {
-      return callback4(closure_19, arg0);
+      return outer1_27(outer1_19, arg0);
     }
   };
   items[4] = {
     key: "getVideoVoiceStatesForChannel",
     value(arg0) {
-      return callback4(closure_20, arg0);
+      return outer1_27(outer1_20, arg0);
     }
   };
   items[5] = {
     key: "getVoiceState",
-    value(guildId) {
-      return this.getVoiceStates(guildId)[arg1];
+    value(closure_0) {
+      return this.getVoiceStates(closure_0)[arg1];
     }
   };
   items[6] = {
@@ -319,9 +321,9 @@ let tmp4 = (Store) => {
     value(arg0) {
       let tmp = arg1;
       if (arg1 === undefined) {
-        tmp = closure_3;
+        tmp = outer1_3;
       }
-      const tmp2 = callback4(closure_19, arg0);
+      const tmp2 = outer1_27(outer1_19, arg0);
       let tmp3;
       if (null != tmp2) {
         tmp3 = tmp2[tmp];
@@ -332,13 +334,13 @@ let tmp4 = (Store) => {
   items[8] = {
     key: "getVoiceStateForUser",
     value(arg0) {
-      return Object.values(callback4(closure_21, arg0))[0];
+      return Object.values(outer1_27(outer1_21, arg0))[0];
     }
   };
   items[9] = {
     key: "getDiscoverableVoiceStateForUser",
     value(arg0) {
-      const values = Object.values(callback4(closure_21, arg0));
+      const values = Object.values(outer1_27(outer1_21, arg0));
       return values.find((discoverable) => false !== discoverable.discoverable);
     }
   };
@@ -348,7 +350,7 @@ let tmp4 = (Store) => {
       let tmp = null;
       if (null != arg1) {
         let tmp4;
-        const tmp6 = callback4(closure_21, arg0);
+        const tmp6 = outer1_27(outer1_21, arg0);
         if (null != tmp6) {
           tmp4 = tmp6[arg1];
         }
@@ -371,13 +373,13 @@ let tmp4 = (Store) => {
   items[12] = {
     key: "getCurrentClientVoiceChannelId",
     value(arg0) {
-      const voiceState = this.getVoiceState(arg0, closure_3);
+      const voiceState = this.getVoiceState(arg0, outer1_3);
       let channelId = null;
       if (null != voiceState) {
         channelId = null;
-        if (null != closure_4) {
+        if (null != outer1_4) {
           channelId = null;
-          if (voiceState.sessionId === closure_4) {
+          if (voiceState.sessionId === outer1_4) {
             channelId = voiceState.channelId;
           }
         }
@@ -388,9 +390,9 @@ let tmp4 = (Store) => {
   items[13] = {
     key: "getUsersWithVideo",
     value(arg0) {
-      let value = closure_18.get(arg0);
+      let value = outer1_18.get(arg0);
       if (null == value) {
-        value = closure_17;
+        value = outer1_17;
       }
       return value;
     }
@@ -398,11 +400,11 @@ let tmp4 = (Store) => {
   items[14] = {
     key: "isCurrentClientInVoiceChannel",
     value() {
-      let tmp = null != closure_4;
+      let tmp = null != outer1_4;
       if (tmp) {
         let tmp5;
-        if (null != closure_21[closure_3]) {
-          tmp5 = tmp4[closure_4];
+        if (null != outer1_21[outer1_3]) {
+          tmp5 = tmp4[outer1_4];
         }
         tmp = null != tmp5;
       }
@@ -415,7 +417,7 @@ let tmp4 = (Store) => {
       let tmp = arg1;
       const self = this;
       if (arg1 === undefined) {
-        tmp = closure_3;
+        tmp = outer1_3;
       }
       if (null == arg0) {
         return false;
@@ -423,11 +425,11 @@ let tmp4 = (Store) => {
         const voiceStateForChannel = self.getVoiceStateForChannel(arg0, tmp);
         let tmp3 = null != voiceStateForChannel;
         if (tmp3) {
-          let tmp5 = tmp !== closure_3;
+          let tmp5 = tmp !== outer1_3;
           if (!tmp5) {
-            let tmp7 = null != closure_4;
+            let tmp7 = null != outer1_4;
             if (tmp7) {
-              tmp7 = voiceStateForChannel.sessionId === closure_4;
+              tmp7 = voiceStateForChannel.sessionId === outer1_4;
             }
             tmp5 = tmp7;
           }
@@ -440,41 +442,41 @@ let tmp4 = (Store) => {
   items[16] = {
     key: "hasVideo",
     value(arg0) {
-      return Object.values(callback4(closure_20, arg0)).length > 0;
+      return Object.values(outer1_27(outer1_20, arg0)).length > 0;
     }
   };
   items[17] = {
     key: "getVoicePlatformForChannel",
     value(arg0, arg1) {
-      let tmp = null != closure_4;
+      let tmp = null != outer1_4;
       if (tmp) {
         let channelId;
-        if (null != closure_21[closure_3]) {
-          if (null != tmp4[closure_4]) {
+        if (null != outer1_21[outer1_3]) {
+          if (null != tmp4[outer1_4]) {
             channelId = tmp7.channelId;
           }
         }
         tmp = channelId;
       }
-      if (arg1 === closure_3) {
+      if (arg1 === outer1_3) {
         if (arg0 === tmp) {
-          VoiceStateStore(closure_2[10]).isMetaQuest() ? closure_13.QUEST : closure_13.MOBILE;
-          const obj = VoiceStateStore(closure_2[10]);
+          VoiceStateStore(outer1_2[10]).isMetaQuest() ? outer1_13.QUEST : outer1_13.MOBILE;
+          const obj = VoiceStateStore(outer1_2[10]);
         }
       }
-      return closure_22[closure_26(undefined, arg1, arg0)];
+      return outer1_22[outer1_26(undefined, arg1, arg0)];
     }
   };
   items[18] = {
     key: "userHasBeenMovedVersion",
     get() {
-      return closure_14;
+      return outer1_14;
     }
   };
   return callback(VoiceStateStore, items);
-}(importDefault(dependencyMap[11]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "VoiceStateStore";
-tmp4 = new tmp4(importDefault(dependencyMap[12]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(user) {
     user = user.user;
     let tmp = null != id;
@@ -488,7 +490,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[12]), {
       let closure_20 = {};
       map.clear();
     }
-    const id = user.id;
+    id = user.id;
     const sessionId = user.sessionId;
     return tmp;
   },
@@ -503,7 +505,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[12]), {
     let sessionId;
     let user;
     let closure_0;
-    let closure_1;
+    let c1;
     let closure_16 = {};
     let closure_19 = {};
     let closure_21 = {};
@@ -517,25 +519,25 @@ tmp4 = new tmp4(importDefault(dependencyMap[12]), {
       let _Object = Object;
       function _loop(arg0) {
         let closure_0 = arg0;
-        callback(closure_0, closure_1, () => new closure_11(arg0));
+        outer1_30(closure_0, c1, () => new outer2_11(closure_0));
       }
       let entries1 = Object.entries(tmp2[1]);
       let num2 = 0;
       if (0 < entries1.length) {
         do {
-          let tmp3 = closure_10;
-          let tmp4 = closure_10(entries1[num2], 2);
-          closure_1 = tmp4[0];
+          let tmp3 = callback3;
+          let tmp4 = callback3(entries1[num2], 2);
+          c1 = tmp4[0];
           let _loopResult = _loop(tmp4[1]);
           num2 = num2 + 1;
-          let length = entries1.length;
+          length = entries1.length;
         } while (num2 < length);
       }
     }
     const id = user.id;
   },
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(channelId) {
-    const arg1 = channelId.channelId;
+    channelId = channelId.channelId;
     return callback3(updateVoiceState(channelId.guildId, closure_3, (set) => {
       let result;
       if (null != set) {
@@ -548,9 +550,9 @@ tmp4 = new tmp4(importDefault(dependencyMap[12]), {
     voiceStates = voiceStates.voiceStates;
     return voiceStates.reduce((arg0, guildId) => {
       let flag = arg0;
-      const tmp = callback(callback2(guildId.guildId, guildId), 3);
+      const tmp = outer1_10(outer1_31(guildId.guildId, guildId), 3);
       if (tmp[0]) {
-        let tmp5 = guildId.sessionId === closure_4;
+        let tmp5 = guildId.sessionId === outer1_4;
         if (tmp5) {
           tmp5 = null != tmp2;
         }
@@ -561,9 +563,9 @@ tmp4 = new tmp4(importDefault(dependencyMap[12]), {
           tmp5 = tmp3.channelId !== tmp2.channelId;
         }
         if (tmp5) {
-          closure_14 = closure_14 + 1;
+          outer1_14 = outer1_14 + 1;
         }
-        closure_15 = closure_15 + 1;
+        outer1_15 = outer1_15 + 1;
         flag = true;
       }
       return flag;
@@ -587,10 +589,10 @@ tmp4 = new tmp4(importDefault(dependencyMap[12]), {
     let flag2 = false;
     if (!iter.done) {
       do {
-        let tmp2 = closure_31;
-        let tmp3 = closure_10;
+        let tmp2 = mergeVoiceState;
+        let tmp3 = callback3;
         if (!flag) {
-          flag = closure_10(closure_31(voiceStates.guildId, iter2.value), 1)[0];
+          flag = callback3(mergeVoiceState(voiceStates.guildId, iter2.value), 1)[0];
         }
         iter3 = tmp();
         iter2 = iter3;
@@ -601,8 +603,8 @@ tmp4 = new tmp4(importDefault(dependencyMap[12]), {
     let iter4 = tmp4();
     if (!iter4.done) {
       do {
-        let tmp5 = closure_30;
-        let tmp6 = closure_30(voiceStates.guildId, iter4.value, () => null);
+        let tmp5 = updateVoiceState;
+        let tmp6 = updateVoiceState(voiceStates.guildId, iter4.value, () => null);
         let iter5 = tmp4();
         iter4 = iter5;
         flag2 = true;
@@ -618,6 +620,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[12]), {
     closure_22[makeParticipantPlatformKey(userId.userId, userId.channelId)] = userId.platform;
   }
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("stores/VoiceStateStore.tsx");
+let result = set.fileFinishedImporting("stores/VoiceStateStore.tsx");
 
 export default tmp4;

@@ -1,42 +1,42 @@
-// Module ID: 14274
-// Function ID: 107870
-// Dependencies: [4294967295, 4294967295, 0, 0, 0, 0, 0]
+// Module ID: 14388
+// Function ID: 110023
+// Dependencies: [14387, 4110, 10095, 1212, 14389, 3803, 2]
 
-// Module 14274
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14388
+import createToggle from "createToggle";
 
-const obj = {
+let obj = {
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.+ynK0W);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["+ynK0W"]);
   },
   parent: null,
-  IconComponent: require("__exportStarResult1").MobilePhoneSettingsIcon,
+  IconComponent: require("MobilePhoneSettingsIcon").MobilePhoneSettingsIcon,
   useTrailing: function useDeviceInfo() {
-    const obj = require(dependencyMap[0]);
-    const clientInfoString = obj.getClientInfoString(require(dependencyMap[1]).getDeviceInfo());
-    const obj2 = require(dependencyMap[1]);
-    const obj3 = require(dependencyMap[0]);
-    return "" + clientInfoString + " (" + obj3.getClientInfoString(require(dependencyMap[1]).getSystemVersion()) + ")";
+    const obj = require(14387) /* getClientInfoString */;
+    const clientInfoString = obj.getClientInfoString(require(4110) /* getSystemVersion */.getDeviceInfo());
+    const obj2 = require(4110) /* getSystemVersion */;
+    const obj3 = require(14387) /* getClientInfoString */;
+    return "" + clientInfoString + " (" + obj3.getClientInfoString(require(4110) /* getSystemVersion */.getSystemVersion()) + ")";
   },
-  usePredicate: require("__exportStarResult1").DeveloperMode.useSetting
+  usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting
 };
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/DeviceInfoSetting.tsx");
-
-export default __exportStarResult1.createStatic({
+const createStaticResult = createToggle.createStatic({
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.+ynK0W);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["+ynK0W"]);
   },
   parent: null,
-  IconComponent: require("__exportStarResult1").MobilePhoneSettingsIcon,
+  IconComponent: require("MobilePhoneSettingsIcon").MobilePhoneSettingsIcon,
   useTrailing: function useDeviceInfo() {
-    const obj = require(dependencyMap[0]);
-    const clientInfoString = obj.getClientInfoString(require(dependencyMap[1]).getDeviceInfo());
-    const obj2 = require(dependencyMap[1]);
-    const obj3 = require(dependencyMap[0]);
-    return "" + clientInfoString + " (" + obj3.getClientInfoString(require(dependencyMap[1]).getSystemVersion()) + ")";
+    const obj = require(14387) /* getClientInfoString */;
+    const clientInfoString = obj.getClientInfoString(require(4110) /* getSystemVersion */.getDeviceInfo());
+    const obj2 = require(4110) /* getSystemVersion */;
+    const obj3 = require(14387) /* getClientInfoString */;
+    return "" + clientInfoString + " (" + obj3.getClientInfoString(require(4110) /* getSystemVersion */.getSystemVersion()) + ")";
   },
-  usePredicate: require("__exportStarResult1").DeveloperMode.useSetting
+  usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting
 });
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DeviceInfoSetting.tsx");
+
+export default createStaticResult;

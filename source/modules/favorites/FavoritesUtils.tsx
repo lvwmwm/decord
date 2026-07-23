@@ -1,10 +1,13 @@
-// Module ID: 5074
-// Function ID: 44162
+// Module ID: 5077
+// Function ID: 44181
 // Name: isFavoritesGuildId
-// Dependencies: [3204448263, 3221225491]
+// Dependencies: [1386, 653, 1212, 2]
 // Exports: canFavoriteChannelType, getFavoritesAwareGuildName
 
-// Module 5074 (isFavoritesGuildId)
+// Module 5077 (isFavoritesGuildId)
+import { FAVORITES_RAW_GUILD_ID } from "date";
+import { FAVORITES } from "ME";
+
 function isFavoritesGuildId(guildId) {
   let tmp = guildId === FAVORITES_RAW_GUILD_ID;
   if (!tmp) {
@@ -12,16 +15,13 @@ function isFavoritesGuildId(guildId) {
   }
   return tmp;
 }
-const FAVORITES_RAW_GUILD_ID = require(dependencyMap[0]).FAVORITES_RAW_GUILD_ID;
-const FAVORITES = require(dependencyMap[1]).FAVORITES;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/favorites/FavoritesUtils.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("modules/favorites/FavoritesUtils.tsx");
 
 export const getFavoritesAwareGuildName = function getFavoritesAwareGuildName(guild) {
   if (null != guild) {
     if (isFavoritesGuildId(guild.id)) {
-      const intl = require(dependencyMap[2]).intl;
-      let name = intl.string(require(dependencyMap[2]).t.wMWyci);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      let name = intl.string(require(1212) /* getSystemLocale */.t.wMWyci);
     } else {
       name = guild.name;
     }

@@ -1,113 +1,119 @@
-// Module ID: 12056
-// Function ID: 93101
+// Module ID: 12170
+// Function ID: 95252
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 1838, 1849, 653, 33, 4130, 689, 5515, 566, 1212, 686, 3830, 5500, 5186, 12171, 4126, 2]
 // Exports: default
 
-// Module 12056 (InstantInviteQRCodeActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ InstantInviteSources: closure_7, RelationshipTypes: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { padding: importDefault(dependencyMap[7]).space.PX_12, gap: importDefault(dependencyMap[7]).space.PX_24 };
-obj.container = obj;
-obj.iconContainer = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
-const obj1 = { padding: importDefault(dependencyMap[7]).space.PX_4, borderRadius: importDefault(dependencyMap[7]).radii.lg + importDefault(dependencyMap[7]).space.PX_4, backgroundColor: importDefault(dependencyMap[7]).colors.WHITE };
-obj.icon = obj1;
-obj.code = { alignSelf: "center" };
-let closure_11 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/instant_invite/native/components/InstantInviteQRCodeActionSheet.tsx");
+// Module 12170 (InstantInviteQRCodeActionSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ InstantInviteSources: closure_7, RelationshipTypes: closure_8 } = ME);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_12, display: "flex", alignItems: "center", justifyContent: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.iconContainer = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center" };
+let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg + require("_createForOfIteratorHelperLoose").space.PX_4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.icon = obj1;
+_createForOfIteratorHelperLoose.code = { alignSelf: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteQRCodeActionSheet.tsx");
 
 export default function InstantInviteQRCodeActionSheet(location) {
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   if (location.location === constants.ADD_FRIENDS_MODAL) {
-    const intl2 = arg1(dependencyMap[10]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[10]).t.VUNqoc);
+    let intl2 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.VUNqoc);
   } else {
-    const intl = arg1(dependencyMap[10]).intl;
-    stringResult = intl.string(arg1(dependencyMap[10]).t.DqE26p);
+    let intl = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1212) /* getSystemLocale */.t.DqE26p);
   }
-  const tmp7 = function useDescription(channel) {
+  const tmp7 = (function useDescription(channel) {
     channel = channel.channel;
-    let obj = callback(closure_2[9]);
-    const items = [closure_6];
-    const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+    let obj = outer1_0(outer1_2[9]);
+    const items = [outer1_6];
+    const stateFromStores = obj.useStateFromStores(items, () => outer2_6.getCurrentUser());
     if (null != channel) {
-      const guild = guild.getGuild(channel.guild_id);
+      const guild = outer1_5.getGuild(channel.guild_id);
       if (null != guild) {
         obj = {};
-        const intl3 = callback(closure_2[10]).intl;
+        const intl3 = outer1_0(outer1_2[10]).intl;
         obj = { name: guild.name };
-        obj.visible = intl3.format(callback(closure_2[10]).t.VK3zyF, obj);
-        const intl4 = callback(closure_2[10]).intl;
+        obj.visible = intl3.format(outer1_0(outer1_2[10]).t.VK3zyF, obj);
+        const intl4 = outer1_0(outer1_2[10]).intl;
         const obj1 = { name: guild.name };
-        obj.plainText = intl4.formatToPlainString(callback(closure_2[10]).t.VK3zyF, obj1);
+        obj.plainText = intl4.formatToPlainString(outer1_0(outer1_2[10]).t.VK3zyF, obj1);
         return obj;
       }
     }
     let tmp4 = null;
-    if (channel.location === constants.ADD_FRIENDS_MODAL) {
+    if (channel.location === outer1_7.ADD_FRIENDS_MODAL) {
       tmp4 = null;
       if (null != stateFromStores) {
         const obj2 = {};
-        const intl = callback(closure_2[10]).intl;
+        const intl = outer1_0(outer1_2[10]).intl;
         const obj3 = { name: stateFromStores.username };
-        obj2.visible = intl.format(callback(closure_2[10]).t.zDGAfl, obj3);
-        const intl2 = callback(closure_2[10]).intl;
+        obj2.visible = intl.format(outer1_0(outer1_2[10]).t.zDGAfl, obj3);
+        const intl2 = outer1_0(outer1_2[10]).intl;
         const obj4 = { name: stateFromStores.username };
-        obj2.plainText = intl2.formatToPlainString(callback(closure_2[10]).t.zDGAfl, obj4);
+        obj2.plainText = intl2.formatToPlainString(outer1_0(outer1_2[10]).t.zDGAfl, obj4);
         tmp4 = obj2;
       }
     }
     return tmp4;
-  }(location);
-  const channel = location.channel;
+  })(location);
+  let channel = location.channel;
   let tmp8 = null;
   if (null != channel) {
     tmp8 = null;
     if (null != store.getGuild(channel.guild_id)) {
-      let obj = { guild: store.getGuild(channel.guild_id), size: arg1(dependencyMap[8]).GuildIconSizes.LARGE };
-      tmp8 = callback(importDefault(dependencyMap[8]), obj);
-      const tmp13 = importDefault(dependencyMap[8]);
+      let obj = { guild: store.getGuild(channel.guild_id), size: require(5515) /* makeSizeStyle */.GuildIconSizes.LARGE };
+      tmp8 = callback(importDefault(5515), obj);
+      const tmp13 = importDefault(5515);
     }
   }
-  function useOnFriendAdded(presentFriendRequestAcceptedToast) {
+  (function useOnFriendAdded(presentFriendRequestAcceptedToast) {
+    let closure_0 = presentFriendRequestAcceptedToast;
     const items = [presentFriendRequestAcceptedToast];
-    const effect = React.useEffect(() => {
+    const effect = outer1_3.useEffect(() => {
       function handleRelationshipAdd(relationship) {
         relationship = relationship.relationship;
-        if (relationship.type === constants.FRIEND) {
+        if (relationship.type === outer3_8.FRIEND) {
           handleRelationshipAdd(relationship.user);
         }
       }
-      const arg0 = handleRelationshipAdd;
-      const subscription = callback(closure_2[11]).subscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
+      const subscription = outer2_1(outer2_2[11]).subscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
       return () => {
-        callback(closure_2[11]).unsubscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
+        outer3_1(outer3_2[11]).unsubscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
       };
     }, items);
-  }(arg1(dependencyMap[12]).presentFriendRequestAcceptedToast);
+  })(require(3830) /* presentAddedFriendToast */.presentFriendRequestAcceptedToast);
   obj = {};
   obj = { title: stringResult };
-  obj.header = callback(arg1(dependencyMap[14]).BottomSheetTitleHeader, obj);
-  const obj1 = { style: tmp.container };
-  const obj2 = {};
-  const obj3 = { text: location.link, size: 240, style: tmp.code };
+  obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  let obj1 = { style: tmp.container };
+  let obj2 = {};
+  let obj3 = { text: location.link, size: 240, style: tmp.code };
   let plainText;
   if (null != tmp7) {
     plainText = tmp7.plainText;
   }
   obj3.accessibilityLabel = plainText;
-  const items = [callback(importDefault(dependencyMap[15]), obj3), ];
+  let items = [callback(importDefault(12171), obj3), ];
   let tmp22 = null != tmp8;
   if (tmp22) {
-    const obj4 = { style: tmp.iconContainer };
+    let obj4 = { style: tmp.iconContainer };
     const obj5 = { style: tmp.icon, children: tmp8 };
     obj4.children = callback(View, obj5);
     tmp22 = callback(View, obj4);
@@ -118,10 +124,10 @@ export default function InstantInviteQRCodeActionSheet(location) {
   let tmp25 = null != tmp7;
   if (tmp25) {
     const obj6 = { variant: "text-md/normal", children: tmp7.visible };
-    tmp25 = callback(arg1(dependencyMap[16]).Text, obj6);
+    tmp25 = callback(require(4126) /* Text */.Text, obj6);
   }
   items1[1] = tmp25;
   obj1.children = items1;
   obj.children = closure_10(View, obj1);
-  return callback(arg1(dependencyMap[13]).ActionSheet, obj);
+  return callback(require(5500) /* ActionSheet */.ActionSheet, obj);
 };

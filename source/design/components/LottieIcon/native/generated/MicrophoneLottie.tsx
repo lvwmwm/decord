@@ -1,18 +1,20 @@
-// Module ID: 12941
-// Function ID: 98593
+// Module ID: 13055
+// Function ID: 100749
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 33, 9791, 13056, 2]
 
-// Module 12941 (items)
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = ["BACKGROUND_SYNC"];
-const items = [{ DeeplinkSource: "isArray", ModalFloatingActionProps: "accessibilityRole", blacklist: "useStateFromStores" }, { DeeplinkSource: 24, ModalFloatingActionProps: 24, blacklist: null }];
-const importAllResult = importAll(dependencyMap[0]);
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
-  const obj = { dotLottie: ref(dependencyMap[3]), ref, layers: closure_3, markers: items };
+// Module 13055 (items)
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_3 = ["I"];
+const items = [{ name: "mute", start: 0, duration: 70 }, { name: "unmute", start: 100, duration: 70 }];
+const forwardRefResult = require("result").forwardRef((arg0, ref) => {
+  const obj = { dotLottie: require(13056) /* registerAsset */, ref, layers: closure_3, markers: items };
   const merged = Object.assign(arg0);
-  return jsx(ref(dependencyMap[2]).LottieIcon, obj);
+  return jsx(require(9791) /* LottieIcon */.LottieIcon, { dotLottie: require(13056) /* registerAsset */, ref, layers: closure_3, markers: items });
 });
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/LottieIcon/native/generated/MicrophoneLottie.tsx");
+const result = require("LottieIcon").fileFinishedImporting("design/components/LottieIcon/native/generated/MicrophoneLottie.tsx");
 
 export const MicrophoneLottie = forwardRefResult;

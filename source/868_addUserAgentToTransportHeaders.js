@@ -1,5 +1,5 @@
 // Module ID: 868
-// Function ID: 9676
+// Function ID: 9677
 // Name: addUserAgentToTransportHeaders
 // Dependencies: []
 
@@ -33,7 +33,7 @@ arg5.addUserAgentToTransportHeaders = function addUserAgentToTransportHeaders(_m
   let obj = {};
   let tmp6 = combined;
   if (combined) {
-    obj = { user-agent: combined };
+    obj = { "user-agent": combined };
     tmp6 = obj;
   }
   const transportOptions = _metadata.transportOptions;

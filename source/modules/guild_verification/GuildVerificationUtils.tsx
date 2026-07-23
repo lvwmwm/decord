@@ -1,14 +1,18 @@
-// Module ID: 12242
-// Function ID: 93910
+// Module ID: 12356
+// Function ID: 96061
 // Name: inviteGuildHasPendingMemberDisabledVerification
-// Dependencies: []
+// Dependencies: [3948, 653, 3950, 1198, 9145, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 12242 (inviteGuildHasPendingMemberDisabledVerification)
-let closure_2 = importDefault(dependencyMap[0]);
-({ GuildFeatures: closure_3, Routes: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_verification/GuildVerificationUtils.tsx");
+// Module 12356 (inviteGuildHasPendingMemberDisabledVerification)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ GuildFeatures: closure_3, Routes: closure_4 } = ME);
+let result = require("isTermsFormField").fileFinishedImporting("modules/guild_verification/GuildVerificationUtils.tsx");
 
 export const inviteGuildHasPendingMemberDisabledVerification = function inviteGuildHasPendingMemberDisabledVerification(guild) {
   const features = guild.features;
@@ -27,12 +31,12 @@ export const inviteGuildHasPendingMemberDisabledVerification = function inviteGu
   return hasItem;
 };
 export const openVerificationModalOrTransitionToApplication = function openVerificationModalOrTransitionToApplication(id) {
-  const request = request.getRequest(id);
+  request = request.getRequest(id);
   if (null != request) {
-    if (request.applicationStatus !== arg1(dependencyMap[2]).GuildJoinRequestApplicationStatuses.STARTED) {
-      arg1(dependencyMap[3]).transitionTo(closure_4.GUILD_MEMBER_VERIFICATION(id));
-      const obj2 = arg1(dependencyMap[3]);
+    if (request.applicationStatus !== require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.STARTED) {
+      require(1198) /* shouldNavigate */.transitionTo(closure_4.GUILD_MEMBER_VERIFICATION(id));
+      const obj2 = require(1198) /* shouldNavigate */;
     }
   }
-  const result = arg1(dependencyMap[4]).openMemberVerificationModal(id);
+  const result = require(9145) /* openMemberVerificationModal */.openMemberVerificationModal(id);
 };

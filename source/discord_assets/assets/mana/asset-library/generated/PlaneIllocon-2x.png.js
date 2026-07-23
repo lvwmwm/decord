@@ -1,11 +1,10 @@
-// Module ID: 6404
-// Function ID: 50539
+// Module ID: 6409
+// Function ID: 50568
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6404 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PlaneIllocon-2x.png.js");
+// Module 6409 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PlaneIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/556354a93fff4b40ee219032a4406e2179e0011c33306df17b9dce7f66273111.png";
 export const metadata = { fileBytes: 602 };

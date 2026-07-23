@@ -1,49 +1,50 @@
-// Module ID: 12569
-// Function ID: 96703
+// Module ID: 12683
+// Function ID: 98859
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1907, 1849, 653, 566, 686, 2]
 
-// Module 12569 (_isNativeReflectConstruct)
+// Module 12683 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { MFALevels } from "ME";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
 function handleUserStoreUpdates() {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
     if (currentUser.mfaEnabled !== mfaEnabled) {
-      const mfaEnabled = currentUser.mfaEnabled;
+      mfaEnabled = currentUser.mfaEnabled;
     }
   }
   return false;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
-const MFALevels = arg1(dependencyMap[7]).MFALevels;
-let closure_8 = null;
-let tmp2 = (Store) => {
+let c8 = null;
+let tmp2 = ((Store) => {
   class GuildMFAWarningStore {
     constructor() {
       self = this;
       tmp = GuildMFAWarningStore(this, GuildMFAWarningStore);
-      obj = closure_3(GuildMFAWarningStore);
-      tmp2 = closure_2;
-      if (closure_9()) {
+      obj = outer1_3(GuildMFAWarningStore);
+      tmp2 = outer1_2;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -52,43 +53,42 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GuildMFAWarningStore;
   callback2(GuildMFAWarningStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_6, closure_5);
-      const items = [closure_6, closure_5];
-      this.syncWith(items, closure_10);
+      this.waitFor(outer1_6, outer1_5);
+      const items = [outer1_6, outer1_5];
+      this.syncWith(items, outer1_10);
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "isVisible",
     value(mfaLevel) {
       let result = null != mfaLevel;
       if (result) {
-        result = mfaLevel.mfaLevel === constants.ELEVATED;
+        result = mfaLevel.mfaLevel === outer1_7.ELEVATED;
       }
       if (result) {
-        result = false === closure_8;
+        result = false === outer1_8;
       }
       if (result) {
-        result = closure_5.hasElevatedPermissions(mfaLevel.id);
+        result = outer1_5.hasElevatedPermissions(mfaLevel.id);
       }
       return result;
     }
   };
   items[1] = obj;
   return callback(GuildMFAWarningStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GuildMFAWarningStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: handleUserStoreUpdates,
   GUILD_UPDATE: function handleGuildPermissionsUpdate() {
     return true;
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("stores/channel_notices/GuildMFAWarningStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/channel_notices/GuildMFAWarningStore.tsx");
 
 export default tmp2;

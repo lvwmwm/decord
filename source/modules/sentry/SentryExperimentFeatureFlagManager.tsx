@@ -1,9 +1,20 @@
-// Module ID: 16463
-// Function ID: 127152
+// Module ID: 16580
+// Function ID: 129326
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 4044, 1188, 3947, 1184, 5078, 2]
 
-// Module 16463 (_isNativeReflectConstruct)
+// Module 16580 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import tmp3 from "AutomaticLifecycleManager";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +24,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,7 +103,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-function isLikelyControl(defaultConfig) {
+function isLikelyControl(defaultConfig, variantId) {
   if (null == defaultConfig) {
     return true;
   } else {
@@ -114,9 +125,9 @@ function flushFlags(items, set) {
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp3 = closure_0;
-      let tmp4 = closure_1;
-      let obj = closure_0(closure_1[8]);
+      let tmp3 = importDefault;
+      let tmp4 = dependencyMap;
+      let obj = importDefault(1184);
       let addFeatureFlagResult = obj.addFeatureFlag(value, true);
       if (null != set) {
         let addResult = set.add(value);
@@ -133,9 +144,9 @@ function syncAllExperimentFlags() {
   let iter = tmp3();
   if (!iter.done) {
     do {
-      let tmp4 = closure_0;
-      let tmp5 = closure_1;
-      let obj = closure_0(closure_1[8]);
+      let tmp4 = importDefault;
+      let tmp5 = dependencyMap;
+      let obj = importDefault(1184);
       let addFeatureFlagResult = obj.addFeatureFlag(iter.value, false);
       let iter2 = tmp3();
       iter = iter2;
@@ -149,8 +160,8 @@ function syncAllExperimentFlags() {
   const items3 = [];
   const items4 = [];
   const items5 = [];
-  const guildId = guildId.getGuildId();
-  const allExperimentAssignments = allExperimentAssignments.getAllExperimentAssignments();
+  guildId = guildId.getGuildId();
+  allExperimentAssignments = allExperimentAssignments.getAllExperimentAssignments();
   for (const key10040 in allExperimentAssignments) {
     let tmp66 = key10040;
     let tmp67 = allExperimentAssignments[key10040];
@@ -172,13 +183,13 @@ function syncAllExperimentFlags() {
         } else {
           let _HermesInternal3 = HermesInternal;
           let arr = items1.push("" + key10040.split(":")[1] + ":" + tmp67);
-          // continue
+          continue;
         }
         continue;
       } else {
         let _HermesInternal = HermesInternal;
         arr = items.push("" + key10040 + ":" + tmp67);
-        // continue
+        continue;
       }
       continue;
     }
@@ -189,11 +200,12 @@ function syncAllExperimentFlags() {
   obj = {};
   for (const key10071 in registeredExperiments1) {
     let tmp68 = key10071;
-    let tmp69 = closure_8;
-    obj[closure_8.getHash(key10071)] = key10071;
+    let tmp69 = store;
+    obj[store.getHash(key10071)] = key10071;
+    continue;
   }
   const evaluatedExperiments = store.getState().evaluatedExperiments;
-  const tmp16 = _createForOfIteratorHelperLoose([false, false]);
+  const tmp16 = _createForOfIteratorHelperLoose(["user", "installation"]);
   const iter3 = tmp16();
   let iter4 = iter3;
   if (!iter3.done) {
@@ -214,18 +226,18 @@ function syncAllExperimentFlags() {
       let tmp34 = tmp24;
       let keys = Object.keys();
       if (keys !== undefined) {
-        let tmp17 = tmp27;
-        let tmp18 = tmp28;
-        let tmp19 = tmp29;
-        let tmp20 = tmp30;
+        tmp17 = tmp27;
+        tmp18 = tmp28;
+        tmp19 = tmp29;
+        tmp20 = tmp30;
         let tmp36 = tmp31;
         let tmp37 = tmp32;
         let tmp38 = tmp33;
         let tmp39 = tmp34;
-        let tmp21 = tmp31;
-        let tmp22 = tmp32;
-        let tmp23 = tmp33;
-        let tmp24 = tmp34;
+        tmp21 = tmp31;
+        tmp22 = tmp32;
+        tmp23 = tmp33;
+        tmp24 = tmp34;
         let tmp40 = keys[tmp2];
         while (tmp40 !== undefined) {
           let tmp70 = tmp40;
@@ -279,9 +291,9 @@ function syncAllExperimentFlags() {
                 } else {
                   let _HermesInternal4 = HermesInternal;
                   let combined = "" + tmp73 + ":" + variantId;
-                  let tmp51 = closure_14;
+                  let tmp51 = isLikelyControl;
                   let arr7 = items4;
-                  if (closure_14(registeredExperiments[tmp73], variantId)) {
+                  if (isLikelyControl(registeredExperiments[tmp73], variantId)) {
                     arr7 = items2;
                   }
                   let arr1 = arr7.push(combined);
@@ -289,7 +301,7 @@ function syncAllExperimentFlags() {
                   tmp44 = tmp73;
                   tmp45 = variantId;
                   tmp46 = combined;
-                  // continue
+                  continue;
                 }
                 continue;
               }
@@ -325,15 +337,15 @@ function syncAllExperimentFlags() {
           } else {
             let _HermesInternal5 = HermesInternal;
             let combined1 = "" + tmp75 + ":" + variantId2;
-            let tmp56 = closure_14;
+            let tmp56 = isLikelyControl;
             let arr8 = items5;
-            if (closure_14(registeredExperiments[tmp75], variantId2)) {
+            if (isLikelyControl(registeredExperiments[tmp75], variantId2)) {
               arr8 = items3;
             }
             let arr2 = arr8.push(combined1);
             let tmp58 = variantId2;
             let tmp59 = combined1;
-            // continue
+            continue;
           }
           continue;
         }
@@ -348,45 +360,8 @@ function syncAllExperimentFlags() {
   flushFlags(items4);
   flushFlags(items5, set);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-const set = new Set();
-let tmp3 = (arg0) => {
-  class SentryExperimentFeatureFlagManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, SentryExperimentFeatureFlagManager);
-      items1 = [...items];
-      obj = closure_5(SentryExperimentFeatureFlagManager);
-      tmp2 = closure_4;
-      if (closure_11()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      map = new Map();
-      result = map.set(closure_7, closure_16);
-      result1 = result.set(closure_8, closure_16);
-      tmp2Result.stores = result1.set(closure_9, closure_16);
-      return tmp2Result;
-    }
-  }
-  const importDefault = SentryExperimentFeatureFlagManager;
-  callback2(SentryExperimentFeatureFlagManager, arg0);
-  return callback(SentryExperimentFeatureFlagManager);
-}(importDefault(dependencyMap[9]));
+let set = new Set();
 tmp3 = new tmp3();
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/sentry/SentryExperimentFeatureFlagManager.tsx");
+let result = set.fileFinishedImporting("modules/sentry/SentryExperimentFeatureFlagManager.tsx");
 
 export default tmp3;

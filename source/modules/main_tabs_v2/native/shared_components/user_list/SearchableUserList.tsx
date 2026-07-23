@@ -1,28 +1,33 @@
-// Module ID: 8812
-// Function ID: 69452
+// Module ID: 8819
+// Function ID: 69493
 // Name: SearchableUserList
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1849, 8818, 33, 4130, 689, 8820, 1327, 8822, 3976, 1212, 8823, 8825, 9892, 4662, 8425, 2]
 // Exports: default
 
-// Module 8812 (SearchableUserList)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-const UserRowModes = arg1(dependencyMap[4]).UserRowModes;
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.searchBarContainer = obj;
-obj.searchBar = { height: undefined, minHeight: 40 };
-const tmp2 = arg1(dependencyMap[5]);
-obj.searchBarRowContainer = { paddingTop: importDefault(dependencyMap[7]).space.PX_8 };
-const obj1 = { paddingTop: importDefault(dependencyMap[7]).space.PX_8 };
-obj.noResults = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-let closure_11 = obj.createStyles(obj);
-const obj2 = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/SearchableUserList.tsx");
+// Module 8819 (SearchableUserList)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { UserRowModes } from "UserRowModes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+_createForOfIteratorHelperLoose.searchBarContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.searchBar = { height: undefined, minHeight: 40 };
+_createForOfIteratorHelperLoose.searchBarRowContainer = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.noResults = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/SearchableUserList.tsx");
 
 export default function SearchableUserList(selectedUserIds) {
   let disableGradient;
@@ -31,22 +36,17 @@ export default function SearchableUserList(selectedUserIds) {
   let headerSize;
   let renderHeader;
   selectedUserIds = selectedUserIds.selectedUserIds;
-  const arg1 = selectedUserIds;
   const disabledUserIds = selectedUserIds.disabledUserIds;
-  const importDefault = disabledUserIds;
   const onSelectUser = selectedUserIds.onSelectUser;
-  const dependencyMap = onSelectUser;
   const handleMessage = selectedUserIds.handleMessage;
-  let callback = handleMessage;
   let actions = selectedUserIds.actions;
   if (actions === undefined) {
     actions = [];
   }
   let ACTIONS = selectedUserIds.rowMode;
   if (ACTIONS === undefined) {
-    ACTIONS = UserRowModes.ACTIONS;
+    ACTIONS = ref.ACTIONS;
   }
-  const React = ACTIONS;
   let flag = selectedUserIds.autoFocusSearch;
   if (flag === undefined) {
     flag = false;
@@ -95,25 +95,24 @@ export default function SearchableUserList(selectedUserIds) {
   if (flag12 === undefined) {
     flag12 = false;
   }
-  let View;
-  let closure_6;
-  let UserRowModes;
+  let c5;
+  let memo;
+  ref = undefined;
   ({ disableGradient, disableStickySections, disableThemedGradient } = selectedUserIds);
-  const tmp2 = callback3();
-  const tmp3 = callback(React.useState(""), 2);
+  const tmp2 = _createForOfIteratorHelperLoose();
+  let tmp3 = handleMessage(ACTIONS.useState(""), 2);
   let obj = { query: str, withGuildMembers: flag2, withAffinitySuggestions: flag3, withAlphabeticalSections: flag4, withFriends: flag5, withGameFriends: flag6, withFriendSuggestions: flag11, withFriendRequests: flag7, withFriendRequestsIncoming: flag8, withFriendRequestsOutgoing: flag9, withFriendRequestsSpam: flag10 };
-  const tmp4 = importDefault(dependencyMap[8])(obj);
-  View = tmp4;
+  const tmp4 = disabledUserIds(onSelectUser[8])(obj);
+  c5 = tmp4;
   const items = [selectedUserIds];
-  const memo = React.useMemo(() => {
+  memo = ACTIONS.useMemo(() => {
     const mapped = null != selectedUserIds ? selectedUserIds : [].map(memo.getUser);
     const found = mapped.filter(selectedUserIds(onSelectUser[9]).isNotNullish);
     return found.map(disabledUserIds(onSelectUser[10]));
   }, items);
-  closure_6 = memo;
   const items1 = [onSelectUser, memo];
   const items2 = [tmp4];
-  callback = React.useCallback((arg0) => {
+  const callback = ACTIONS.useCallback((arg0) => {
     const user = memo.getUser(tmp.id);
     if (null != user) {
       onSelectUser(user);
@@ -123,22 +122,22 @@ export default function SearchableUserList(selectedUserIds) {
       AccessibilityAnnouncer.announce(intl.formatToPlainString(selectedUserIds(onSelectUser[12]).t.srlxB8, obj));
     }
   }, items1);
-  const memo1 = React.useMemo(() => tmp4.map((items) => items.items.length), items2);
+  const memo1 = ACTIONS.useMemo(() => _undefined.map((items) => items.items.length), items2);
   const items3 = [tmp4];
-  const callback1 = React.useCallback((arg0) => {
-    const props = { title: tmp4[arg0].title };
+  const callback1 = ACTIONS.useCallback((arg0) => {
+    const props = { title: _undefined[arg0].title };
     return { type: "section", props };
   }, items3);
   const tmp8 = tmp3[0].trim().length > 0;
   const items4 = [tmp4, disabledUserIds, onSelectUser, handleMessage, ACTIONS, selectedUserIds];
-  const callback2 = React.useCallback((arg0, arg1) => {
+  const callback2 = ACTIONS.useCallback((arg0, arg1) => {
     let firstMatch;
     let user;
-    ({ user, firstMatch } = tmp4[arg0].items[arg1]);
+    ({ user, firstMatch } = _undefined[arg0].items[arg1]);
     let obj = { type: "user" };
     obj = { type: tmp.type, user };
     let tmp3;
-    const diff = tmp4[arg0].items.length - 1;
+    const diff = _undefined[arg0].items.length - 1;
     if (user.username !== firstMatch) {
       tmp3 = firstMatch;
     }
@@ -168,9 +167,8 @@ export default function SearchableUserList(selectedUserIds) {
     obj.props = obj;
     return obj;
   }, items4);
-  const ref = React.useRef(null);
-  UserRowModes = ref;
-  let obj2 = arg1(dependencyMap[13]);
+  ref = ACTIONS.useRef(null);
+  let obj2 = selectedUserIds(onSelectUser[13]);
   obj = {};
   let tmp11;
   if (!tmp8) {
@@ -187,7 +185,7 @@ export default function SearchableUserList(selectedUserIds) {
   const userListActionsProps = obj2.useUserListActionsProps(obj);
   const items5 = [tmp3[0]];
   ({ renderHeader, headerSize } = userListActionsProps);
-  const layoutEffect = React.useLayoutEffect(() => {
+  const layoutEffect = ACTIONS.useLayoutEffect(() => {
     const current = ref.current;
     if (null != current) {
       current.scrollToTop(false);
@@ -202,7 +200,7 @@ export default function SearchableUserList(selectedUserIds) {
   }
   if (someResult) {
     obj = { ref, sections: memo1, getItemProps: callback2, getSectionProps: callback1, renderListHeader: renderHeader, listHeaderSize: headerSize, insetEnd: 12, disableStickySections, disableThemedGradient };
-    let tmp17Result = tmp17(arg1(dependencyMap[14]).UsersFastList, obj);
+    let tmp17Result = tmp17(selectedUserIds(onSelectUser[14]).UsersFastList, obj);
   } else {
     const obj1 = {};
     if (tmp16) {
@@ -220,27 +218,27 @@ export default function SearchableUserList(selectedUserIds) {
     } else {
       obj1.style = noResults;
       obj2 = {};
-      const intl = arg1(dependencyMap[12]).intl;
-      obj2.title = intl.string(arg1(dependencyMap[12]).t.V6nAfF);
+      let intl = selectedUserIds(onSelectUser[12]).intl;
+      obj2.title = intl.string(selectedUserIds(onSelectUser[12]).t.V6nAfF);
       const obj3 = { actions };
       let prop2;
       if (flag5) {
         prop2 = tmp2.searchBarRowContainer;
       }
       obj3.style = prop2;
-      obj2.children = callback2(arg1(dependencyMap[13]).UserFlashListActions, obj3);
-      obj1.children = callback2(importDefault(dependencyMap[15]), obj2);
+      obj2.children = callback(selectedUserIds(onSelectUser[13]).UserFlashListActions, obj3);
+      obj1.children = callback(disabledUserIds(onSelectUser[15]), obj2);
       tmp25 = obj1;
-      const tmp22 = importDefault(dependencyMap[15]);
+      const tmp22 = disabledUserIds(onSelectUser[15]);
     }
-    tmp17Result = tmp17(View, tmp25);
-    const tmp18 = View;
+    tmp17Result = tmp17(c5, tmp25);
+    const tmp18 = c5;
   }
   const obj4 = {};
   let tmp32 = !disableGradient;
   if (tmp32) {
     const obj5 = { absolute: true };
-    tmp32 = callback2(importDefault(dependencyMap[16]), obj5);
+    tmp32 = callback(disabledUserIds(onSelectUser[16]), obj5);
   }
   const items7 = [tmp32, , ];
   let tmp37Result = null;
@@ -253,10 +251,10 @@ export default function SearchableUserList(selectedUserIds) {
         flag = someResult;
       }
       obj7.autoFocus = flag;
-      obj6.children = callback2(importDefault(dependencyMap[17]), obj7);
-      tmp37Result = tmp37(View, obj6);
-      const tmp38 = View;
-      const tmp41 = importDefault(dependencyMap[17]);
+      obj6.children = callback(disabledUserIds(onSelectUser[17]), obj7);
+      tmp37Result = tmp37(c5, obj6);
+      const tmp38 = c5;
+      const tmp41 = disabledUserIds(onSelectUser[17]);
     }
   }
   items7[1] = tmp37Result;

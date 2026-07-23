@@ -1,24 +1,24 @@
-// Module ID: 13729
-// Function ID: 103855
+// Module ID: 13843
+// Function ID: 106011
 // Name: AuthorizedAppScreen
-// Dependencies: []
+// Dependencies: [31, 33, 6653, 1456, 13844, 2]
 // Exports: default
 
-// Module 13729 (AuthorizedAppScreen)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppScreen.tsx");
+// Module 13843 (AuthorizedAppScreen)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("useSettingNavigationRoute").fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppScreen.tsx");
 
 export default function AuthorizedAppScreen() {
-  let obj = arg1(dependencyMap[2]);
-  const settingNavigationRoute = obj.useSettingNavigationRoute();
-  const arg1 = settingNavigationRoute;
-  const stackNavigation = arg1(dependencyMap[3]).useStackNavigation();
-  const importDefault = stackNavigation;
+  let obj = settingNavigationRoute(6653);
+  settingNavigationRoute = obj.useSettingNavigationRoute();
+  const stackNavigation = settingNavigationRoute(1456).useStackNavigation();
   const items = [stackNavigation, settingNavigationRoute.params.oauth2Token.application.name];
   const layoutEffect = React.useLayoutEffect(() => {
     stackNavigation.setOptions({ title: settingNavigationRoute.params.oauth2Token.application.name, headerShown: true });
   }, items);
   obj = { oauth2Token: settingNavigationRoute.params.oauth2Token };
-  return jsx(importDefault(dependencyMap[4]), obj);
+  return jsx(stackNavigation(13844), { oauth2Token: settingNavigationRoute.params.oauth2Token });
 };

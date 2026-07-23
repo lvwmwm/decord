@@ -1,35 +1,37 @@
-// Module ID: 15734
-// Function ID: 120351
+// Module ID: 15851
+// Function ID: 122524
 // Name: useConsoleConnectingInfo
-// Dependencies: []
+// Dependencies: [4144, 4145, 8934, 624, 15852, 9054, 15853, 15854, 2]
 // Exports: default
 
-// Module 15734 (useConsoleConnectingInfo)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/voice_panel/native/hooks/useConsoleConnectingInfo.tsx");
+// Module 15851 (useConsoleConnectingInfo)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+let require = arg1;
+const result = require("useVoiceStateForRemoteSession").fileFinishedImporting("modules/voice_panel/native/hooks/useConsoleConnectingInfo.tsx");
 
 export default function useConsoleConnectingInfo(arg0) {
-  const tmp = importDefault(dependencyMap[2])();
-  const arg1 = tmp;
+  const tmp = importDefault(8934)();
+  const require = tmp;
   let channelId;
   if (null != tmp) {
     channelId = tmp.channelId;
   }
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
+  let obj = require(624) /* defaultAreStatesEqual */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getAwaitingRemoteSessionInfo());
   const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => {
+  const stateFromStores1 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items1, () => {
     let sessionId;
-    if (null != sessionById) {
+    if (null != outer1_4) {
       sessionId = tmp.sessionId;
     }
     let str = "";
     if (null != sessionId) {
       str = sessionId;
     }
-    return sessionById.getSessionById(str);
+    return outer1_4.getSessionById(str);
   });
   let type;
   if (null != stateFromStores) {
@@ -48,7 +50,7 @@ export default function useConsoleConnectingInfo(arg0) {
   }
   obj = {};
   let channelId1;
-  const obj2 = arg1(dependencyMap[3]);
+  const obj2 = require(624) /* defaultAreStatesEqual */;
   if (null != stateFromStores) {
     channelId1 = stateFromStores.channelId;
   }
@@ -58,10 +60,10 @@ export default function useConsoleConnectingInfo(arg0) {
     channelId2 = stateFromStores.channelId;
   }
   obj.isConnectingOrConnectedToConsole = channelId2 === arg0 || channelId === arg0;
-  obj.icon = importDefault(dependencyMap[5])(str);
-  const tmp8 = importDefault(dependencyMap[4])(stateFromStores);
-  obj.text = arg1(dependencyMap[6]).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
-  obj.color = importDefault(dependencyMap[7])(str);
+  obj.icon = importDefault(9054)(str);
+  const tmp8 = importDefault(15852)(stateFromStores);
+  obj.text = require(15853) /* getConsoleConnectingText */.getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
+  obj.color = importDefault(15854)(str);
   obj.displayCancel = tmp8;
   return obj;
 };

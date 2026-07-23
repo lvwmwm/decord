@@ -1,21 +1,23 @@
-// Module ID: 4268
-// Function ID: 37356
+// Module ID: 4272
+// Function ID: 37388
 // Name: filterParsedVideoCodecs
-// Dependencies: []
+// Dependencies: [4191, 2]
 // Exports: codecNameToPayloadName, filterVideoCodecs, getExperimentCodecs
 
-// Module 4268 (filterParsedVideoCodecs)
+// Module 4272 (filterParsedVideoCodecs)
+import { ExperimentFlags } from "DesktopSources";
+
 function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodecs, flag) {
-  const ExperimentFlags = parseNativeCodecsResult;
+  let closure_0 = parseNativeCodecsResult;
   if (flag === undefined) {
     flag = false;
   }
   let items;
-  let filterParsedVideoCodecs;
+  let set;
   const combined = experimentCodecs.concat(items);
   items = [];
   const item = combined.forEach((encode) => {
-    const found = encode.find((name) => name.name === name.name);
+    const found = encode.find((name) => encode.name === name.name);
     if (null != found) {
       const obj = {};
       ({ name: obj.name, encode } = found);
@@ -29,8 +31,7 @@ function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodecs, flag
   });
   if (flag) {
     const _Set = Set;
-    const set = new Set(items.map((name) => name.name));
-    filterParsedVideoCodecs = set;
+    set = new Set(items.map((name) => name.name));
     const item1 = parseNativeCodecsResult.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: name.name, encode: false, decode: name.decode };
@@ -54,10 +55,8 @@ function parseNativeCodecs(arg0) {
     return obj;
   });
 }
-const ExperimentFlags = require(dependencyMap[0]).ExperimentFlags;
-const items = [{}, { "Bool(false)": "text-md/medium", "Bool(false)": "text-default", "Bool(false)": "\u2022" }];
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/utils/VideoCodecUtils.tsx");
+let items = [{ name: "H264", encode: true, decode: true }, { name: "VP8", encode: true, decode: true }];
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/utils/VideoCodecUtils.tsx");
 
 export { filterParsedVideoCodecs };
 export const getExperimentCodecs = function getExperimentCodecs(experimentFlags) {

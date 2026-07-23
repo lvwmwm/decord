@@ -1,16 +1,23 @@
-// Module ID: 13909
-// Function ID: 105192
+// Module ID: 14023
+// Function ID: 107348
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 3840, 4066, 4554, 5085, 14024, 14025, 2]
 // Exports: default
 
-// Module 13909 (items)
-importAll(dependencyMap[0]);
-({ View: closure_3, StyleSheet: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp4 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles((arg0) => {
+// Module 14023 (items)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ View: closure_3, StyleSheet: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
   obj = {};
   const merged = Object.assign(closure_4.absoluteFillObject);
@@ -61,11 +68,10 @@ let closure_7 = arg1(dependencyMap[3]).createStyles((arg0) => {
   obj.solidBackground = {};
   return obj;
 });
-const items = [null, null];
+let items = ["#292252FF", "#1E1F2200"];
 const substr = items.slice();
 let closure_9 = substr.reverse();
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/quests/native/QuestModalContentCloudBackground.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/quests/native/QuestModalContentCloudBackground.tsx");
 
 export default function QuestModalContentCloudBackground(align) {
   let imgStyle;
@@ -82,14 +88,14 @@ export default function QuestModalContentCloudBackground(align) {
     str2 = resizeMode;
   }
   const tmp = callback("bottom" === str);
-  let obj = arg1(dependencyMap[4]);
-  let obj1 = arg1(dependencyMap[5]);
+  let obj = require(3840) /* isThemeLight */;
+  let obj1 = require(4066) /* useTheme */;
   const isThemeDarkResult = obj.isThemeDark(obj1.useTheme());
   obj = { style: items };
-  const items = [tmp.wrapper, style];
+  items = [tmp.wrapper, style];
   if (isThemeDarkResult) {
     obj = { colors: "top" === str ? items : closure_9, style: tmp.gradient };
-    tmp5(importDefault(dependencyMap[6]), obj);
+    tmp5(importDefault(4554), obj);
   } else {
     obj1 = { style: tmp.solidBackground };
     const items1 = [tmp5(closure_3, obj1), ];
@@ -97,13 +103,13 @@ export default function QuestModalContentCloudBackground(align) {
     const items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
     obj2.style = items2;
     if (isThemeDarkResult) {
-      let tmp16 = tmp15[8];
+      let tmp16 = 14024;
     } else {
-      tmp16 = tmp15[9];
+      tmp16 = 14025;
     }
     obj2.source = importDefault(tmp16);
     obj2.resizeMode = str2;
-    items1[1] = closure_5(importDefault(dependencyMap[7]), obj2);
+    items1[1] = closure_5(importDefault(5085), obj2);
     obj.children = items1;
     return tmp3(tmp4, obj);
   }

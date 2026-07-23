@@ -1,18 +1,19 @@
 // Module ID: 20
 // Function ID: 263
 // Name: AppStartPerformance
-// Dependencies: []
+// Dependencies: [5, 6, 7, 2]
 
 // Module 20 (AppStartPerformance)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
+import asyncGeneratorStep from "asyncGeneratorStep";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 let fn = globalThis.__getTotalRequireTime;
 if (null == fn) {
   fn = () => 0;
 }
 let closure_4 = "undefined" !== typeof performance;
-let tmp2 = () => {
+let tmp2 = (() => {
   class AppStartPerformance {
     constructor() {
       tmp = AppStartPerformance(this, AppStartPerformance);
@@ -28,13 +29,12 @@ let tmp2 = () => {
       return;
     }
   }
-  let closure_1 = AppStartPerformance;
   let obj = {
     key: "isTracing",
     get() {
       const self = this;
-      let tmp = !closure_4;
-      if (closure_4) {
+      let tmp = !outer1_4;
+      if (outer1_4) {
         tmp = !self.isTracing_;
       }
       let tmp2 = !tmp;
@@ -51,7 +51,7 @@ let tmp2 = () => {
       return tmp2;
     }
   };
-  const items = [obj, , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , ];
   obj = {
     key: "endTime",
     get() {
@@ -118,7 +118,7 @@ let tmp2 = () => {
     key: "addImportLogDetail",
     value() {
       const self = this;
-      const tmp = callback2();
+      const tmp = outer1_3();
       if (tmp - this.lastImportDuration > 25) {
         const _Math = Math;
         self.addDetail("JS Imports", `${Math.ceil(tmp)}ms`);
@@ -129,9 +129,8 @@ let tmp2 = () => {
   items[6] = {
     key: "markWithDelta",
     value(arg0, arg1) {
-      const tmp = this.logs[this.logs.length - 1];
       let diff;
-      if (null != tmp) {
+      if (null != this.logs[this.logs.length - 1]) {
         if (null != tmp.timestamp) {
           const _Date = Date;
           diff = Date.now() - tmp.timestamp;
@@ -218,7 +217,7 @@ let tmp2 = () => {
     }
   };
   const obj8 = { key: "timeAsync" };
-  const callback = callback(async function(arg0, arg1, arg2) {
+  callback = callback(async function(arg0, arg1, arg2) {
     const self = this;
     if (self.isTracing) {
       const _HermesInternal = HermesInternal;
@@ -245,8 +244,8 @@ let tmp2 = () => {
     }
   };
   return callback2(AppStartPerformance, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/app-start-performance/AppStartPerformance.tsx");
+const result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/app-start-performance/AppStartPerformance.tsx");
 
 export default tmp2;

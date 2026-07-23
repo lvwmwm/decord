@@ -1,16 +1,20 @@
-// Module ID: 6712
-// Function ID: 52178
+// Module ID: 6717
+// Function ID: 52210
 // Name: isLimitedChannel
-// Dependencies: []
+// Dependencies: [1348, 4051, 653, 2]
 // Exports: isLimitedChannelId
 
-// Module 6712 (isLimitedChannel)
+// Module 6717 (isLimitedChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+
 function isLimitedChannel(basicChannel) {
   let guild_id;
   if (null != basicChannel) {
     guild_id = basicChannel.guild_id;
   }
-  const memberCount = memberCount.getMemberCount(guild_id);
+  memberCount = memberCount.getMemberCount(guild_id);
   let num = 0;
   if (null != memberCount) {
     num = memberCount;
@@ -27,10 +31,7 @@ function isLimitedChannel(basicChannel) {
   }
   return tmp4;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const ChannelTypes = arg1(dependencyMap[2]).ChannelTypes;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/app_database/modules/messages/isLimitedChannel.tsx");
+const result = require("ME").fileFinishedImporting("modules/app_database/modules/messages/isLimitedChannel.tsx");
 
 export const LIMITED_GUILD_MEMBER_THRESHOLD = 10000;
 export { isLimitedChannel };

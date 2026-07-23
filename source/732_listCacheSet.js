@@ -1,14 +1,14 @@
 // Module ID: 732
-// Function ID: 8767
+// Function ID: 8768
 // Name: listCacheSet
-// Dependencies: []
+// Dependencies: [728]
 
 // Module 732 (listCacheSet)
 
 export default function listCacheSet(arg0, arg1) {
   const self = this;
   const __data__ = this.__data__;
-  const tmp = require(dependencyMap[0])(__data__, arg0);
+  const tmp = require(728) /* assocIndexOf */(__data__, arg0);
   if (tmp < 0) {
     self.size = self.size + 1;
     const items = [arg0, arg1];

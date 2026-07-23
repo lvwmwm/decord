@@ -1,28 +1,30 @@
-// Module ID: 15048
-// Function ID: 113302
+// Module ID: 15163
+// Function ID: 115471
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 15048 (ForYouRecentActivitySectionHeader)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { marginTop: importDefault(dependencyMap[4]).space.PX_8, marginBottom: importDefault(dependencyMap[4]).space.PX_8, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_24 };
-obj.container = obj;
-obj.textHeader = { marginTop: importDefault(dependencyMap[4]).space.PX_8 };
-let closure_4 = obj.createStyles(obj);
-const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_8 };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/notification_center/native/ForYouRecentActivitySectionHeader.tsx");
+// Module 15163 (ForYouRecentActivitySectionHeader)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.textHeader = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouRecentActivitySectionHeader.tsx");
 
 export const ForYouRecentActivitySectionHeader = function ForYouRecentActivitySectionHeader() {
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
-  obj = { @braintree/uuid: true, @braintree/browser-detection/is-android: true, @braintree/browser-detection/is-chrome: true, @braintree/browser-detection/is-chrome-os: true, style: tmp.textHeader };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.children = intl.string(arg1(dependencyMap[6]).t.yM9Krm);
-  obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
-  return <View {...obj} />;
+  obj = { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.yM9Krm);
+  obj.children = jsx(require(4126) /* Text */.Text, { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header" });
+  return <View style={tmp.textHeader} color="text-muted" variant="text-sm/semibold" accessibilityRole="header" />;
 };

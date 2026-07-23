@@ -1,17 +1,22 @@
-// Module ID: 9574
-// Function ID: 74605
+// Module ID: 9581
+// Function ID: 74646
 // Name: isAttachmentUrl
-// Dependencies: []
+// Dependencies: [5, 653, 664, 4161, 1443, 507, 2]
 // Exports: isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9574 (isAttachmentUrl)
+// Module 9581 (isAttachmentUrl)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import set from "set";
+
+const require = arg1;
 function isAttachmentUrl(toURLSafeResult) {
-  const arg1 = toURLSafeResult;
+  let closure_0 = toURLSafeResult;
   const hasItem = set1.has(toURLSafeResult.hostname);
   let someResult = !tmp2;
   if (!!hasItem) {
     someResult = arr.some((arg0) => {
-      const pathname = arg0.pathname;
+      const pathname = toURLSafeResult.pathname;
       return pathname.startsWith(arg0);
     });
   }
@@ -27,7 +32,7 @@ function getSignedAttachmentExpiration(searchParams) {
   const parsed = parseInt(str, 16);
   let result;
   if (!isNaN(parsed)) {
-    result = parsed * importDefault(dependencyMap[2]).Millis.SECOND;
+    result = parsed * importDefault(664).Millis.SECOND;
   }
   return result;
 }
@@ -41,7 +46,7 @@ function shouldRefreshAttachmentUrl(toURLSafeResult) {
   return tmp2;
 }
 function isAttachmentExpired(url) {
-  const toURLSafeResult = importDefault(dependencyMap[4]).toURLSafe(url.url);
+  const toURLSafeResult = importDefault(1443).toURLSafe(url.url);
   let tmp2 = null != toURLSafeResult;
   if (tmp2) {
     tmp2 = shouldRefreshAttachmentUrl(toURLSafeResult);
@@ -52,7 +57,7 @@ function isEmbedMediaExpiredAttachment(image) {
   if (null == image) {
     return false;
   } else {
-    const toURLSafeResult = importDefault(dependencyMap[4]).toURLSafe(image.url);
+    const toURLSafeResult = importDefault(1443).toURLSafe(image.url);
     let tmp4 = null != toURLSafeResult;
     if (tmp4) {
       const tmp6 = !isAttachmentUrl(toURLSafeResult);
@@ -83,23 +88,19 @@ function embedHasExpiredAttachmentUrl(image) {
 function _refreshAttachmentUrl() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _refreshAttachmentUrl = obj;
   return obj(...arguments);
 }
 function _maybeRefreshAttachmentUrl() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _maybeRefreshAttachmentUrl = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const set = new Set([]);
-const HOUR = importDefault(dependencyMap[2]).Millis.HOUR;
-const items = [window.GLOBAL_ENV.CDN_HOST, ];
+let set = new Set(["/attachments/", "/ephemeral-attachments/"]);
+const HOUR = require("set").Millis.HOUR;
+let items = [window.GLOBAL_ENV.CDN_HOST, ];
 let substr;
 if (null != window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) {
-  substr = require("module_2");
+  substr = require("set");
 }
 items[1] = substr;
 const mapped = items.map(function getHostWithoutPort(arg0) {
@@ -110,19 +111,19 @@ const mapped = items.map(function getHostWithoutPort(arg0) {
   return first;
 });
 const set1 = new Set(mapped.filter(Boolean));
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/messages/SignedAttachmentLinkUtils.tsx");
+let result = set.fileFinishedImporting("modules/messages/SignedAttachmentLinkUtils.tsx");
 
 export { isAttachmentUrl };
 export const isExternalProxiedAttachmentUrl = function isExternalProxiedAttachmentUrl(toURLSafeResult) {
-  return arg1(dependencyMap[3]).isImageProxyURL(toURLSafeResult);
+  return require(4161) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
 };
 export const removeSignedUrlParameters = function removeSignedUrlParameters(toURLSafeResult) {
   let length;
-  toURLSafeResult = importDefault(dependencyMap[4]).toURLSafe(toURLSafeResult);
+  toURLSafeResult = importDefault(1443).toURLSafe(toURLSafeResult);
   if (null == toURLSafeResult) {
     return toURLSafeResult;
   } else {
-    const items = ["sh", "zsh", "basic"];
+    const items = ["ex", "is", "hm"];
     let num = 0;
     if (0 < items.length) {
       do {
@@ -134,7 +135,7 @@ export const removeSignedUrlParameters = function removeSignedUrlParameters(toUR
     }
     return toURLSafeResult;
   }
-  const obj = importDefault(dependencyMap[4]);
+  const obj = importDefault(1443);
 };
 export { getSignedAttachmentExpiration };
 export const messageHasExpiredAttachmentUrl = function messageHasExpiredAttachmentUrl(attachments) {

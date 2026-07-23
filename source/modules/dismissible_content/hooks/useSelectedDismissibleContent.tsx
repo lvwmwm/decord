@@ -1,12 +1,14 @@
-// Module ID: 5797
-// Function ID: 49569
+// Module ID: 5802
+// Function ID: 49598
 // Name: useSelectedDismissibleContent
-// Dependencies: []
+// Dependencies: [57, 5803, 5805, 2]
 // Exports: useSelectedDismissibleContent, useSelectedSingleUseGuildDismissibleContent, useSelectedSnowflakeBoundDismissibleContent, useSelectedSnowflakeBoundGuildDismissibleContent, useSelectedTimeRecurringDismissibleContent, useSelectedTimeRecurringGuildDismissibleContent, useSelectedTimeRecurringSnowflakeBoundDismissibleContent, useSelectedVersionedDismissibleContent
 
-// Module 5797 (useSelectedDismissibleContent)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/dismissible_content/hooks/useSelectedDismissibleContent.tsx");
+// Module 5802 (useSelectedDismissibleContent)
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
+const result = require("useSelectedDismissibleContentShared").fileFinishedImporting("modules/dismissible_content/hooks/useSelectedDismissibleContent.tsx");
 
 export const useSelectedDismissibleContent = function useSelectedDismissibleContent(items, APP_LAUNCHER_ONBOARDING, bypassAutoDismiss) {
   let tmp2;
@@ -15,10 +17,10 @@ export const useSelectedDismissibleContent = function useSelectedDismissibleCont
   if (bypassAutoDismiss === undefined) {
     flag = false;
   }
-  const obj = APP_LAUNCHER_ONBOARDING(dependencyMap[1]);
-  [tmp2, tmp3] = callback(APP_LAUNCHER_ONBOARDING(dependencyMap[1]).useGetDismissibleContent(items, APP_LAUNCHER_ONBOARDING), 2);
-  const tmp = callback(APP_LAUNCHER_ONBOARDING(dependencyMap[1]).useGetDismissibleContent(items, APP_LAUNCHER_ONBOARDING), 2);
-  const selectedDismissibleContentShared = APP_LAUNCHER_ONBOARDING(dependencyMap[2]).useSelectedDismissibleContentShared(tmp2, tmp3, flag);
+  const obj = require(5803) /* useGetVisibleContent */;
+  [tmp2, tmp3] = callback(require(5803) /* useGetVisibleContent */.useGetDismissibleContent(items, APP_LAUNCHER_ONBOARDING), 2);
+  const tmp = callback(require(5803) /* useGetVisibleContent */.useGetDismissibleContent(items, APP_LAUNCHER_ONBOARDING), 2);
+  const selectedDismissibleContentShared = require(5805) /* useSelectedDismissibleContentShared */.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   items = [tmp2, tmp3];
   return items;
 };
@@ -28,10 +30,10 @@ export const useSelectedSingleUseGuildDismissibleContent = function useSelectedS
   if (flag === undefined) {
     flag = false;
   }
-  const obj = guildId(dependencyMap[1]);
-  [tmp2, tmp3] = callback(guildId(dependencyMap[1]).useGetSingleUseGuildDismissibleContent_UNSAFE(items2, guildId, CHANNEL_NOTICES), 2);
-  const tmp = callback(guildId(dependencyMap[1]).useGetSingleUseGuildDismissibleContent_UNSAFE(items2, guildId, CHANNEL_NOTICES), 2);
-  const selectedDismissibleContentShared = guildId(dependencyMap[2]).useSelectedDismissibleContentShared(tmp2, tmp3, flag, guildId);
+  const obj = require(5803) /* useGetVisibleContent */;
+  [tmp2, tmp3] = callback(require(5803) /* useGetVisibleContent */.useGetSingleUseGuildDismissibleContent_UNSAFE(items2, guildId, CHANNEL_NOTICES), 2);
+  const tmp = callback(require(5803) /* useGetVisibleContent */.useGetSingleUseGuildDismissibleContent_UNSAFE(items2, guildId, CHANNEL_NOTICES), 2);
+  const selectedDismissibleContentShared = require(5805) /* useSelectedDismissibleContentShared */.useSelectedDismissibleContentShared(tmp2, tmp3, flag, guildId);
   const items = [tmp2, tmp3];
   return items;
 };
@@ -42,10 +44,10 @@ export const useSelectedVersionedDismissibleContent = function useSelectedVersio
   if (bypassAutoDismiss === undefined) {
     flag = false;
   }
-  const obj = latestVersion(dependencyMap[1]);
-  [tmp2, tmp3] = callback(latestVersion(dependencyMap[1]).useGetVersionedDismissibleContent(COLLECTIBLES_SHOP_ENTRY_MARKETING, latestVersion, groupName), 2);
-  const tmp = callback(latestVersion(dependencyMap[1]).useGetVersionedDismissibleContent(COLLECTIBLES_SHOP_ENTRY_MARKETING, latestVersion, groupName), 2);
-  const selectedDismissibleContentShared = latestVersion(dependencyMap[2]).useSelectedDismissibleContentShared(tmp2, tmp3, flag);
+  const obj = require(5803) /* useGetVisibleContent */;
+  [tmp2, tmp3] = callback(require(5803) /* useGetVisibleContent */.useGetVersionedDismissibleContent(COLLECTIBLES_SHOP_ENTRY_MARKETING, latestVersion, groupName), 2);
+  const tmp = callback(require(5803) /* useGetVisibleContent */.useGetVersionedDismissibleContent(COLLECTIBLES_SHOP_ENTRY_MARKETING, latestVersion, groupName), 2);
+  const selectedDismissibleContentShared = require(5805) /* useSelectedDismissibleContentShared */.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   const items = [tmp2, tmp3];
   return items;
 };
@@ -56,10 +58,10 @@ export const useSelectedTimeRecurringDismissibleContent = function useSelectedTi
   if (bypassAutoDismiss === undefined) {
     flag = false;
   }
-  const obj = closure_11(dependencyMap[1]);
-  [tmp2, tmp3] = callback(closure_11(dependencyMap[1]).useGetTimeRecurringDismissibleContent(prop, closure_11, groupName), 2);
-  const tmp = callback(closure_11(dependencyMap[1]).useGetTimeRecurringDismissibleContent(prop, closure_11, groupName), 2);
-  const selectedDismissibleContentShared = closure_11(dependencyMap[2]).useSelectedDismissibleContentShared(tmp2, tmp3, flag);
+  const obj = require(5803) /* useGetVisibleContent */;
+  [tmp2, tmp3] = callback(require(5803) /* useGetVisibleContent */.useGetTimeRecurringDismissibleContent(prop, closure_11, groupName), 2);
+  const tmp = callback(require(5803) /* useGetVisibleContent */.useGetTimeRecurringDismissibleContent(prop, closure_11, groupName), 2);
+  const selectedDismissibleContentShared = require(5805) /* useSelectedDismissibleContentShared */.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   const items = [tmp2, tmp3];
   return items;
 };
@@ -70,10 +72,10 @@ export const useSelectedSnowflakeBoundDismissibleContent = function useSelectedS
   if (bypassAutoDismiss === undefined) {
     flag = false;
   }
-  const obj = newSnowflakeId(dependencyMap[1]);
-  [tmp2, tmp3] = callback(newSnowflakeId(dependencyMap[1]).useGetSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName), 2);
-  const tmp = callback(newSnowflakeId(dependencyMap[1]).useGetSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName), 2);
-  const selectedDismissibleContentShared = newSnowflakeId(dependencyMap[2]).useSelectedDismissibleContentShared(tmp2, tmp3, flag);
+  const obj = require(5803) /* useGetVisibleContent */;
+  [tmp2, tmp3] = callback(require(5803) /* useGetVisibleContent */.useGetSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName), 2);
+  const tmp = callback(require(5803) /* useGetVisibleContent */.useGetSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName), 2);
+  const selectedDismissibleContentShared = require(5805) /* useSelectedDismissibleContentShared */.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   const items = [tmp2, tmp3];
   return items;
 };
@@ -83,10 +85,10 @@ export const useSelectedSnowflakeBoundGuildDismissibleContent = function useSele
   if (flag === undefined) {
     flag = false;
   }
-  const obj = id(dependencyMap[1]);
-  [tmp2, tmp3] = callback(id(dependencyMap[1]).useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(prop, newSnowflakeId, id, GUILD_HEADER_TOOLTIPS), 2);
-  const tmp = callback(id(dependencyMap[1]).useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(prop, newSnowflakeId, id, GUILD_HEADER_TOOLTIPS), 2);
-  const selectedDismissibleContentShared = id(dependencyMap[2]).useSelectedDismissibleContentShared(tmp2, tmp3, flag, id);
+  const obj = require(5803) /* useGetVisibleContent */;
+  [tmp2, tmp3] = callback(require(5803) /* useGetVisibleContent */.useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(prop, newSnowflakeId, id, GUILD_HEADER_TOOLTIPS), 2);
+  const tmp = callback(require(5803) /* useGetVisibleContent */.useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(prop, newSnowflakeId, id, GUILD_HEADER_TOOLTIPS), 2);
+  const selectedDismissibleContentShared = require(5805) /* useSelectedDismissibleContentShared */.useSelectedDismissibleContentShared(tmp2, tmp3, flag, id);
   const items = [tmp2, tmp3];
   return items;
 };
@@ -97,20 +99,20 @@ export const useSelectedTimeRecurringSnowflakeBoundDismissibleContent = function
   if (bypassAutoDismiss === undefined) {
     flag = false;
   }
-  const obj = newSnowflakeId(dependencyMap[1]);
-  [tmp2, tmp3] = callback(newSnowflakeId(dependencyMap[1]).useGetTimeRecurringSnowflakeBoundDismissibleContent(contentType, timeRecurringConfig, newSnowflakeId, groupName), 2);
-  const tmp = callback(newSnowflakeId(dependencyMap[1]).useGetTimeRecurringSnowflakeBoundDismissibleContent(contentType, timeRecurringConfig, newSnowflakeId, groupName), 2);
-  const selectedDismissibleContentShared = newSnowflakeId(dependencyMap[2]).useSelectedDismissibleContentShared(tmp2, tmp3, flag);
+  const obj = require(5803) /* useGetVisibleContent */;
+  [tmp2, tmp3] = callback(require(5803) /* useGetVisibleContent */.useGetTimeRecurringSnowflakeBoundDismissibleContent(contentType, timeRecurringConfig, newSnowflakeId, groupName), 2);
+  const tmp = callback(require(5803) /* useGetVisibleContent */.useGetTimeRecurringSnowflakeBoundDismissibleContent(contentType, timeRecurringConfig, newSnowflakeId, groupName), 2);
+  const selectedDismissibleContentShared = require(5805) /* useSelectedDismissibleContentShared */.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   const items = [tmp2, tmp3];
   return items;
 };
 export const useSelectedTimeRecurringGuildDismissibleContent = function useSelectedTimeRecurringGuildDismissibleContent(prop, id, closure_16, GUILD_HEADER_TOOLTIPS) {
   let tmp2;
   let tmp3;
-  const obj = id(dependencyMap[1]);
-  [tmp2, tmp3] = callback(id(dependencyMap[1]).useGetTimeRecurringGuildDismissibleContent_UNSAFE(prop, id, closure_16, GUILD_HEADER_TOOLTIPS), 2);
-  const tmp = callback(id(dependencyMap[1]).useGetTimeRecurringGuildDismissibleContent_UNSAFE(prop, id, closure_16, GUILD_HEADER_TOOLTIPS), 2);
-  const selectedDismissibleContentShared = id(dependencyMap[2]).useSelectedDismissibleContentShared(tmp2, tmp3, false, id);
+  const obj = require(5803) /* useGetVisibleContent */;
+  [tmp2, tmp3] = callback(require(5803) /* useGetVisibleContent */.useGetTimeRecurringGuildDismissibleContent_UNSAFE(prop, id, closure_16, GUILD_HEADER_TOOLTIPS), 2);
+  const tmp = callback(require(5803) /* useGetVisibleContent */.useGetTimeRecurringGuildDismissibleContent_UNSAFE(prop, id, closure_16, GUILD_HEADER_TOOLTIPS), 2);
+  const selectedDismissibleContentShared = require(5805) /* useSelectedDismissibleContentShared */.useSelectedDismissibleContentShared(tmp2, tmp3, false, id);
   const items = [tmp2, tmp3];
   return items;
 };

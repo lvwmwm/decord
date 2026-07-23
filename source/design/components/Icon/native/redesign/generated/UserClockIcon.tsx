@@ -1,25 +1,26 @@
-// Module ID: 12038
-// Function ID: 93020
+// Module ID: 12152
+// Function ID: 95171
 // Name: UserClockIcon
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 33, 689, 3833, 12153, 2]
 // Exports: UserClockIcon
 
-// Module 12038 (UserClockIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 12152 (UserClockIcon)
+import "result";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/UserClockIcon.tsx");
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/UserClockIcon.tsx");
 
 export const UserClockIcon = function UserClockIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(12153) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(12153) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

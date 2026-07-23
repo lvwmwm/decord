@@ -1,5 +1,5 @@
 // Module ID: 1442
-// Function ID: 16791
+// Function ID: 16792
 // Name: stringifyPrimitive
 // Dependencies: []
 
@@ -43,11 +43,11 @@ export default (arg0, arg1, arg2, arg3) => {
   if ("object" === typeof arg0) {
     const _Object = Object;
     const keys = Object.keys(tmp);
-    const mapped = keys.map((arg0) => {
+    let mapped = keys.map((arg0) => {
       const sum = encodeURIComponent(_undefined(arg0)) + str2;
-      const _undefined = sum;
+      _undefined = sum;
       if (Array.isArray(_undefined[arg0])) {
-        const mapped = _undefined[arg0].map((arg0) => sum + encodeURIComponent(sum(arg0)));
+        const mapped = _undefined[arg0].map((arg0) => closure_0 + encodeURIComponent(sum(arg0)));
         let joined = mapped.join(str);
         const arr = _undefined[arg0];
       } else {
@@ -62,9 +62,9 @@ export default (arg0, arg1, arg2, arg3) => {
   } else {
     str3 = "";
     if (arg3) {
-      const _encodeURIComponent = encodeURIComponent;
+      let _encodeURIComponent = encodeURIComponent;
       const _encodeURIComponent2 = encodeURIComponent;
-      const sum = encodeURIComponent(stringifyPrimitive(arg3)) + str2;
+      let sum = encodeURIComponent(stringifyPrimitive(arg3)) + str2;
       str3 = sum + encodeURIComponent(stringifyPrimitive(tmp));
     }
   }

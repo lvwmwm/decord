@@ -1,9 +1,16 @@
-// Module ID: 12568
-// Function ID: 96690
+// Module ID: 12682
+// Function ID: 98846
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 587, 566, 686, 2]
 
-// Module 12568 (_isNativeReflectConstruct)
+// Module 12682 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,27 +20,22 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = null;
-let closure_8 = null;
-let closure_9 = null;
-let tmp2 = (Store) => {
+let c7 = null;
+let c8 = null;
+let c9 = null;
+let tmp2 = ((Store) => {
   class MaintenanceStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, MaintenanceStore);
-      obj = closure_5(MaintenanceStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, MaintenanceStore);
+      obj = outer1_5(MaintenanceStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,20 +44,19 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = MaintenanceStore;
   callback2(MaintenanceStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const Storage = MaintenanceStore(closure_1[5]).Storage;
-      let closure_9 = Storage.get("MaintenanceStore");
+      const Storage = MaintenanceStore(outer1_1[5]).Storage;
+      const outer1_9 = Storage.get("MaintenanceStore");
     }
   };
   const items = [obj, , ];
   obj = {
     key: "getIncident",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[1] = obj;
@@ -63,22 +64,22 @@ let tmp2 = (Store) => {
     key: "getScheduledMaintenance",
     value() {
       let scheduled_until;
-      if (null != closure_8) {
-        scheduled_until = closure_8.scheduled_until;
+      if (null != outer1_8) {
+        scheduled_until = outer1_8.scheduled_until;
       }
       if (null == scheduled_until) {
         let scheduled_for;
-        if (null != closure_8) {
-          scheduled_for = closure_8.scheduled_for;
+        if (null != outer1_8) {
+          scheduled_for = outer1_8.scheduled_for;
         }
         scheduled_until = scheduled_for;
       }
       let tmp3 = null;
-      if (null != closure_8) {
+      if (null != outer1_8) {
         tmp3 = null;
-        if (closure_8.id !== closure_9) {
+        if (outer1_8.id !== outer1_9) {
           if (null == scheduled_until) {
-            tmp3 = closure_8;
+            tmp3 = outer1_8;
           } else {
             const _Date = Date;
             const _Date2 = Date;
@@ -93,11 +94,11 @@ let tmp2 = (Store) => {
   };
   items[2] = obj;
   return callback(MaintenanceStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "MaintenanceStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_7 = null;
+    let c7 = null;
   },
   STATUS_PAGE_INCIDENT: function handleIncident(incident) {
     incident = incident.incident;
@@ -106,15 +107,15 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     maintenance = maintenance.maintenance;
   },
   STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: function handleScheduledMaintenanceAck() {
-    if (null == id) {
+    if (null == _null) {
       return false;
     } else {
-      const id2 = id.id;
-      const Storage = arg1(dependencyMap[5]).Storage;
-      const result = Storage.set("MaintenanceStore", id2);
+      const id = _null.id;
+      const Storage = require(587) /* Storage */.Storage;
+      const result = Storage.set("MaintenanceStore", id);
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("stores/StatusPageStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/StatusPageStore.tsx");
 
 export default tmp2;

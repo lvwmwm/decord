@@ -1,24 +1,25 @@
-// Module ID: 10806
-// Function ID: 83920
+// Module ID: 10816
+// Function ID: 83969
 // Name: _getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: []
+// Dependencies: [5, 4167, 4153, 1348, 10486, 10510, 10817, 2]
 // Exports: default
 
-// Module 10806 (_getCachedOrFetchActivityApplicationForLaunch)
+// Module 10816 (_getCachedOrFetchActivityApplicationForLaunch)
+import getShelfItemData from "getShelfItemData";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import closure_6 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _getCachedOrFetchActivityApplicationForLaunch() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getCachedOrFetchActivityApplicationForLaunch = obj;
   return obj(...arguments);
 }
 function isUsableApplicationRecord(embeddedActivityConfig) {
   return null != embeddedActivityConfig && null != embeddedActivityConfig.embeddedActivityConfig;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/activities/utils/getCachedOrFetchActivityApplicationForLaunch.tsx");
+const result = require("_callSuper").fileFinishedImporting("modules/activities/utils/getCachedOrFetchActivityApplicationForLaunch.tsx");
 
 export default function getCachedOrFetchActivityApplicationForLaunch() {
   return _getCachedOrFetchActivityApplicationForLaunch(...arguments);

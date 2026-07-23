@@ -1,53 +1,65 @@
-// Module ID: 15631
-// Function ID: 119334
+// Module ID: 15748
+// Function ID: 121507
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 1838, 3758, 1849, 4578, 4579, 1851, 4585, 4022, 15749, 566, 3776, 15750, 8402, 15751, 2]
 // Exports: default, useSearchCategories
 
-// Module 15631 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15748 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME";
+import { PremiumTypes } from "GuildFeatures";
+
+let closure_10;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +70,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -89,7 +101,7 @@ function createSoundItems(items1, sortSoundsFn) {
   if (null != sortSoundsFn) {
     arr = sortSoundsFn(items1);
   }
-  return arr.map((sound, index) => ({ type: callback(closure_2[8]).SoundboardSoundItemType.SOUND, sound, index }));
+  return arr.map((sound, index) => ({ type: outer1_0(outer1_2[8]).SoundboardSoundItemType.SOUND, sound, index }));
 }
 function _addSectionForPotentialSoundIds(sectionType) {
   let allSounds;
@@ -97,15 +109,13 @@ function _addSectionForPotentialSoundIds(sectionType) {
   let potentialSoundIdsForSection;
   let sections;
   ({ sections, allSounds, potentialSoundIdsForSection } = sectionType);
-  const arg1 = potentialSoundIdsForSection;
   sectionType = sectionType.sectionType;
   let obj = {};
-  const importDefault = obj;
   let items = [...sectionType.guildIds, closure_9];
   for (let num = 0; num < items.length; num = num + 1) {
     function _loop(soundId) {
       const potentialSoundIdsForSection = soundId;
-      if (null != potentialSoundIdsForSection.find((arg0) => arg0 === arg0.soundId)) {
+      if (null != potentialSoundIdsForSection.find((arg0) => arg0 === soundId.soundId)) {
         obj[soundId.soundId] = soundId;
       }
     }
@@ -121,7 +131,7 @@ function _addSectionForPotentialSoundIds(sectionType) {
         let _loopResult = _loop(iter.value);
         let iter2 = tmpResult();
         iter = iter2;
-        let done = iter2.done;
+        done = iter2.done;
       } while (!done);
     }
   }
@@ -152,27 +162,19 @@ function addDefaultSection(arr, get) {
   if (null == value) {
     value = closure_10;
   }
-  let obj = { key: get(dependencyMap[8]).SoundboardSoundGridSectionType.DEFAULTS };
-  obj = { type: get(dependencyMap[8]).SoundboardSoundGridSectionType.DEFAULTS };
+  let obj = { key: require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS };
+  obj = { type: require(4585) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.DEFAULTS };
   obj.categoryInfo = obj;
-  obj.items = createSoundItems(value, get(dependencyMap[10]).sortSoundsOldestToNewestCreationDate);
+  obj.items = createSoundItems(value, require(15749) /* sortSoundsOldestToNewestCreationDate */.sortSoundsOldestToNewestCreationDate);
   arr.push(obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ DEFAULT_SOUND_GUILD_ID: closure_9, EMPTY_SOUND_LIST: closure_10 } = arg1(dependencyMap[6]));
-const PremiumTypes = arg1(dependencyMap[7]).PremiumTypes;
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/soundboard/useSoundGrid.tsx");
+({ DEFAULT_SOUND_GUILD_ID: closure_9, EMPTY_SOUND_LIST: closure_10 } = MAX_LENGTH_SOUND_NAME);
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/soundboard/useSoundGrid.tsx");
 
 export default function useSoundGrid(guild_id, location) {
   let obj = location;
   let flag = arg2;
-  location = guild_id;
+  const _require = guild_id;
   if (location === undefined) {
     obj = {};
   }
@@ -180,93 +182,84 @@ export default function useSoundGrid(guild_id, location) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const importDefault = flag2;
   if (flag === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
   let callback;
-  let React;
-  let closure_5;
-  let closure_6;
-  let closure_7;
-  let closure_8;
+  let first;
+  let c5;
+  let c6;
+  let c7;
+  let soundOrganizer;
   let sortedGuildIdsForSoundboard;
   let stateFromStoresArray;
   let PremiumTypes;
-  let _createForOfIteratorHelperLoose;
-  let _arrayLikeToArray;
-  let createSoundItems;
-  let _addSectionForPotentialSoundIds;
-  const items = [closure_7];
-  const stateFromStores = location(dependencyMap[11]).useStateFromStores(items, () => tmp7.getCurrentUser());
-  const obj2 = location(dependencyMap[11]);
-  const isPremiumResult = importDefault(dependencyMap[12]).isPremium(stateFromStores, PremiumTypes.TIER_2);
+  let stateFromStores1;
+  let stateFromStores2;
+  let memo;
+  let enabled;
+  let items = [c7];
+  const stateFromStores = _require(flag[11]).useStateFromStores(items, () => _undefined3.getCurrentUser());
+  let obj2 = _require(flag[11]);
+  const isPremiumResult = flag2(flag[12]).isPremium(stateFromStores, PremiumTypes.TIER_2);
   callback = isPremiumResult;
-  const obj3 = importDefault(dependencyMap[12]);
-  const items1 = [closure_8];
-  const tmp3 = callback(location(dependencyMap[11]).useStateFromStoresArray(items1, () => {
+  let obj3 = flag2(flag[12]);
+  let items1 = [soundOrganizer];
+  const tmp3 = callback(_require(flag[11]).useStateFromStoresArray(items1, () => {
     const items = [soundOrganizer.getSounds(), soundOrganizer.getFavorites(), soundOrganizer.getFrequentlyUsedSoundIds(), soundOrganizer.isFetching()];
     return items;
   }), 4);
-  const first = tmp3[0];
-  React = first;
-  closure_5 = tmp5;
-  closure_6 = tmp6;
-  closure_7 = tmp7;
-  const obj4 = location(dependencyMap[11]);
-  const soundOrganizer = location(dependencyMap[10]).useSoundOrganizer();
-  closure_8 = soundOrganizer;
-  const obj5 = location(dependencyMap[10]);
-  sortedGuildIdsForSoundboard = location(dependencyMap[13]).useSortedGuildIdsForSoundboard(guild_id, false);
-  const obj6 = location(dependencyMap[13]);
-  const items2 = [closure_5];
-  stateFromStoresArray = location(dependencyMap[11]).useStateFromStoresArray(items2, () => {
+  first = tmp3[0];
+  c5 = tmp5;
+  c6 = tmp6;
+  c7 = tmp7;
+  let obj4 = _require(flag[11]);
+  soundOrganizer = _require(flag[10]).useSoundOrganizer();
+  let obj5 = _require(flag[10]);
+  sortedGuildIdsForSoundboard = _require(flag[13]).useSortedGuildIdsForSoundboard(guild_id, false);
+  let obj6 = _require(flag[13]);
+  const items2 = [c5];
+  stateFromStoresArray = _require(flag[11]).useStateFromStoresArray(items2, () => {
     const items = [];
-    const arg0 = items;
     const item = sortedGuildIdsForSoundboard.forEach((guildId) => {
-      const guild = guild.getGuild(guildId);
+      guild = guild.getGuild(guildId);
       if (null != guild) {
         items.push(guild);
       }
     });
     return items;
   });
-  const obj7 = location(dependencyMap[11]);
-  const result = importDefault(dependencyMap[12]).canUseSoundboardEverywhere(stateFromStores);
+  let obj7 = _require(flag[11]);
+  const result = flag2(flag[12]).canUseSoundboardEverywhere(stateFromStores);
   PremiumTypes = result;
-  const obj8 = importDefault(dependencyMap[12]);
-  const items3 = [closure_5];
-  const stateFromStores1 = location(dependencyMap[11]).useStateFromStores(items3, () => {
+  let obj8 = flag2(flag[12]);
+  const items3 = [c5];
+  stateFromStores1 = _require(flag[11]).useStateFromStores(items3, () => {
     let guild_id;
-    if (null != arg0) {
-      guild_id = arg0.guild_id;
+    if (null != guild_id) {
+      guild_id = guild_id.guild_id;
     }
-    return tmp5.getGuild(guild_id);
+    return _undefined.getGuild(guild_id);
   });
-  _createForOfIteratorHelperLoose = stateFromStores1;
-  const obj9 = location(dependencyMap[11]);
-  const items4 = [closure_6];
+  let obj9 = _require(flag[11]);
+  const items4 = [c6];
   const items5 = [stateFromStores1];
-  const stateFromStores2 = location(dependencyMap[11]).useStateFromStores(items4, () => arg0(flag[14]).getManageResourcePermissions(stateFromStores1).canCreateExpressions, items5);
-  _arrayLikeToArray = stateFromStores2;
+  stateFromStores2 = _require(flag[11]).useStateFromStores(items4, () => guild_id(flag[14]).getManageResourcePermissions(stateFromStores1).canCreateExpressions, items5);
   const items6 = [tmp3[2], tmp3[1]];
-  const memo = React.useMemo(() => {
-    const found = tmp6.filter((arg0) => !set.has(arg0));
+  memo = first.useMemo(() => {
+    const found = _undefined2.filter((arg0) => !outer1_5.has(arg0));
     return found.slice(0, 3);
   }, items6);
-  createSoundItems = memo;
-  const obj10 = location(dependencyMap[11]);
+  const obj10 = _require(flag[11]);
   obj = {};
   let str = "useSoundGridNoFrequentlyUsed";
   if (memo.length > 0) {
     str = "useSoundGrid";
   }
   obj.location = str;
-  const enabled = importDefault(dependencyMap[15]).useConfig(obj).enabled;
-  _addSectionForPotentialSoundIds = enabled;
+  enabled = flag2(flag[15]).useConfig(obj).enabled;
   const items7 = [sortedGuildIdsForSoundboard, first, tmp3[1], enabled, stateFromStores1, stateFromStores2, flag2, result, stateFromStoresArray, flag, tmp3[3], isPremiumResult, soundOrganizer, memo];
-  return React.useMemo(() => {
+  return first.useMemo(() => {
     let allSounds;
     let allSounds2;
     let currentGuildHasAddPermissions;
@@ -277,24 +270,24 @@ export default function useSoundGrid(guild_id, location) {
     let sections;
     let sortSoundsFn;
     let sortSoundsFn2;
-    const guild_id = 0;
-    let closure_1 = 0;
+    let c0 = 0;
+    let c1 = 0;
     const items = [];
     if (flag) {
-      callback(items, first);
+      outer1_16(items, first);
       let obj = { categories: items };
       let value = first.get(sortedGuildIdsForSoundboard);
       if (null == value) {
         value = stateFromStoresArray;
       }
       obj.availableSounds = value;
-      obj.isFetching = tmp7;
-      obj.soundCounts = { -900297605: "spring", -766416799: 0.4, 2129155287: 1 };
+      obj.isFetching = c7;
+      obj.soundCounts = { favoriteSoundCount: 0, unlockedCustomSoundCount: 0, lockedCustomSoundCount: 0 };
       let obj8 = obj;
     } else {
       obj = { sections: items, guildIds: sortedGuildIdsForSoundboard, allSounds: first };
       const _Array = Array;
-      obj.potentialSoundIdsForSection = Array.from(tmp5);
+      obj.potentialSoundIdsForSection = Array.from(_undefined);
       obj.sectionType = guild_id(flag[8]).SoundboardSoundGridSectionType.FAVORITES;
       obj.sortSoundsFn = guild_id(flag[10]).sortSoundsOldestToNewestCreationDate;
       enabled(obj);
@@ -307,7 +300,7 @@ export default function useSoundGrid(guild_id, location) {
         enabled(obj);
       }
       if (undefined !== stateFromStores1) {
-        const obj1 = { currentGuildHasAddPermissions: stateFromStores2, allSounds: first, filterOutEmptyCurrentGuild: closure_1, sortSoundsFn: soundOrganizer };
+        const obj1 = { currentGuildHasAddPermissions: stateFromStores2, allSounds: first, filterOutEmptyCurrentGuild: c1, sortSoundsFn: soundOrganizer };
         ({ allSounds: allSounds2, filterOutEmptyCurrentGuild, currentGuildHasAddPermissions, sortSoundsFn: sortSoundsFn2 } = obj1);
         value = allSounds2.get(stateFromStores1.id);
         if (null == value) {
@@ -331,10 +324,10 @@ export default function useSoundGrid(guild_id, location) {
           obj3.items = arr2;
           items.push(obj3);
         }
-        const tmp24 = !(value.length < obj2.getMaxSoundboardSlots(stateFromStores1) && currentGuildHasAddPermissions) && 0 !== arr2.length || filterOutEmptyCurrentGuild;
+        tmp24 = !(value.length < obj2.getMaxSoundboardSlots(stateFromStores1) && currentGuildHasAddPermissions) && 0 !== arr2.length || filterOutEmptyCurrentGuild;
       }
-      if (!result) {
-        callback(items, first);
+      if (!c11) {
+        outer1_16(items, first);
       }
       const obj5 = { sections: items, guilds: stateFromStoresArray };
       let id;
@@ -343,7 +336,7 @@ export default function useSoundGrid(guild_id, location) {
       }
       obj5.currentGuildId = id;
       obj5.allSounds = first;
-      obj5.hasNitro = isPremiumResult;
+      obj5.hasNitro = c3;
       obj5.sortSoundsFn = soundOrganizer;
       ({ sections, allSounds } = obj5);
       ({ currentGuildId, hasNitro, sortSoundsFn } = obj5);
@@ -354,7 +347,7 @@ export default function useSoundGrid(guild_id, location) {
         do {
           value = iter2.value;
           if (value.id !== currentGuildId) {
-            let tmp76 = closure_14;
+            let tmp76 = memo;
             let value1 = allSounds.get(value.id);
             let items1 = value1;
             if (null == value1) {
@@ -366,9 +359,9 @@ export default function useSoundGrid(guild_id, location) {
             if (tmp76Result.length > 0) {
               let obj6 = {};
               let obj7 = {};
-              let tmp47 = closure_0;
-              let tmp48 = closure_2;
-              obj7.type = closure_0(closure_2[8]).SoundboardSoundGridSectionType.GUILD;
+              let tmp47 = guild_id;
+              let tmp48 = flag;
+              obj7.type = guild_id(flag[8]).SoundboardSoundGridSectionType.GUILD;
               obj7.guild = value;
               obj7.isNitroLocked = !hasNitro;
               obj6.categoryInfo = obj7;
@@ -383,15 +376,15 @@ export default function useSoundGrid(guild_id, location) {
           iter2 = iter3;
         } while (!iter3.done);
       }
-      if (result) {
-        callback(items, first);
+      if (c11) {
+        outer1_16(items, first);
       }
       const item = items.forEach((categoryInfo) => {
-        if (categoryInfo.categoryInfo.type === v0(closure_2[8]).SoundboardSoundGridSectionType.GUILD) {
+        if (categoryInfo.categoryInfo.type === v0(flag[8]).SoundboardSoundGridSectionType.GUILD) {
           if (categoryInfo.categoryInfo.isNitroLocked) {
             closure_1 = closure_1 + categoryInfo.items.length;
           } else {
-            const v0 = v0 + categoryInfo.items.length;
+            v0 = v0 + categoryInfo.items.length;
           }
         }
       });
@@ -399,28 +392,28 @@ export default function useSoundGrid(guild_id, location) {
       const _Array2 = Array;
       arr2 = Array.from(first.values());
       obj8.availableSounds = arr2.flat();
-      obj8.isFetching = flag;
-      const obj9 = { favoriteSoundCount: tmp5.size, unlockedCustomSoundCount: guild_id, lockedCustomSoundCount: closure_1 };
+      obj8.isFetching = c7;
+      const obj9 = { favoriteSoundCount: _undefined.size, unlockedCustomSoundCount: c0, lockedCustomSoundCount: c1 };
       obj8.soundCounts = obj9;
     }
     return obj8;
   }, items7);
 };
 export const useSearchCategories = function useSearchCategories(categories, arg1, arg2) {
-  arg1 = categories;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
-  const items = [categories, arg2.length, arg1];
+  let closure_0 = categories;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  let items = [categories, arg2.length, arg1];
   return React.useMemo(() => {
-    if (arg2.length > 0) {
-      let obj = { key: arg0(arg2[8]).SoundboardSoundGridSectionType.SEARCH };
-      obj = { type: arg0(arg2[8]).SoundboardSoundGridSectionType.SEARCH };
+    if (length.length > 0) {
+      let obj = { key: categories(length[8]).SoundboardSoundGridSectionType.SEARCH };
+      obj = { type: categories(length[8]).SoundboardSoundGridSectionType.SEARCH };
       obj.categoryInfo = obj;
-      obj.items = callback(arg1);
+      obj.items = outer1_14(closure_1);
       const items = [obj];
       let tmp = items;
     } else {
-      tmp = arg0;
+      tmp = categories;
     }
     return tmp;
   }, items);

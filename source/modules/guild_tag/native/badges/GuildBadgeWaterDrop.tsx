@@ -1,17 +1,21 @@
-// Module ID: 12812
-// Function ID: 98146
+// Module ID: 12926
+// Function ID: 100302
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 33, 12924, 8018, 2]
 // Exports: GuildBadgeWaterDrop
 
-// Module 12812 (items)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [false, false, false];
-let closure_5 = [false, false, false];
-const items = [{ accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "y", s: "MessagesDataHeader" }];
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeWaterDrop.tsx");
+// Module 12926 (items)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+let closure_4 = ["#4282d8", "#0abbff", "#ffffff"];
+let closure_5 = [0.1, 0.32, 1];
+let items = [{ base: 3, tint: 1 }, { base: 3, tint: 1 }, { base: 10, tint: 1 }];
+const result = require("getTransformedBadgeColors").fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeWaterDrop.tsx");
 
 export const GuildBadgeWaterDrop = function GuildBadgeWaterDrop(primaryTintColor) {
   let num = primaryTintColor.width;
@@ -22,10 +26,10 @@ export const GuildBadgeWaterDrop = function GuildBadgeWaterDrop(primaryTintColor
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
+  let obj = { width: 0, height: 0, primaryTintColor: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryTintColor, obj);
-  let obj1 = arg1(dependencyMap[2]);
+  let obj1 = require(12924) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_4, primaryTintColor: primaryTintColor.primaryTintColor, primaryTintLuminances: closure_5, primaryLuminanceWeights: items };
   const primaryColorsTransformed = obj1.getTransformedBadgeColors(obj).primaryColorsTransformed;
   obj = {};
@@ -35,7 +39,7 @@ export const GuildBadgeWaterDrop = function GuildBadgeWaterDrop(primaryTintColor
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
   obj1 = { d: "M13 6V5h-1V4h-1V3h-1V2H9V1H7v1H6v1H5v1H4v1H3v1H2v2H1v5h1v1h2v1h8v-1h2v-1h1V8h-1V6h-1Z", fill: primaryColorsTransformed[1] };
-  const items = [callback(arg1(dependencyMap[3]).Path, obj1), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": null, "Bool(true)": null }), callback(arg1(dependencyMap[3]).Path, { d: "M4 14v1h8v-1H4Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": null, "Bool(true)": null }), callback(arg1(dependencyMap[3]).Path, { d: "M7 1v1h2V1H7Z", fill: primaryColorsTransformed[2] }), callback(arg1(dependencyMap[3]).Path, { "Null": "gradient.mid", "Null": 0.12, "Null": "*0.5" }), callback(arg1(dependencyMap[3]).Path, { d: "M6 2v1h1V2H6ZM5 3v1h1V3H5ZM6 4v1h1V4H6ZM4 4v1h1V4H4ZM3 5v1h1V5H3ZM2 6v2h1V6H2ZM1 8v2h1V8H1Z", fill: primaryColorsTransformed[2] }), callback(arg1(dependencyMap[3]).Path, { d: "M12 5v1h1V5h-1ZM13 6v2h1V6h-1ZM14 8v4h-1v1h-1v1h2v-1h1V8h-1ZM2 14h2v-1H2v1Z", fill: primaryColorsTransformed[0] })];
+  items = [callback(require(8018) /* inlineStyles */.Path, obj1), callback(require(8018) /* inlineStyles */.Path, { d: "M7 0v1h2V0H7ZM6 1v1h1V1H6ZM9 1v1h1V1H9ZM10 2v1h1V2h-1ZM11 3v1h1V3h-1ZM12 4v1h1V4h-1ZM13 5v1h1V5h-1ZM14 6v2h1V6h-1ZM1 6v2h1V6H1ZM0 8v5h1V8H0ZM15 8v5h1V8h-1ZM5 2v1h1V2H5ZM4 3v1h1V3H4ZM3 4v1h1V4H3ZM2 5v1h1V5H2ZM1 13v1h1v-1H1ZM14 13v1h1v-1h-1ZM4 15v1h8v-1H4Z", fill: "#000" }), callback(require(8018) /* inlineStyles */.Path, { d: "M4 14v1h8v-1H4Z", fill: primaryColorsTransformed[0] }), callback(require(8018) /* inlineStyles */.Path, { d: "M2 14v1h2v-1H2ZM14 15v-1h-2v1h2Z", fill: "#000" }), callback(require(8018) /* inlineStyles */.Path, { d: "M7 1v1h2V1H7Z", fill: primaryColorsTransformed[2] }), callback(require(8018) /* inlineStyles */.Path, { opacity: 0.5, d: "M11 8V7h-1V6H9V5H7v1H6v1H5v1H4v3h1v1h6v-1h1V8h-1Z", fill: "#fff" }), callback(require(8018) /* inlineStyles */.Path, { d: "M6 2v1h1V2H6ZM5 3v1h1V3H5ZM6 4v1h1V4H6ZM4 4v1h1V4H4ZM3 5v1h1V5H3ZM2 6v2h1V6H2ZM1 8v2h1V8H1Z", fill: primaryColorsTransformed[2] }), callback(require(8018) /* inlineStyles */.Path, { d: "M12 5v1h1V5h-1ZM13 6v2h1V6h-1ZM14 8v4h-1v1h-1v1h2v-1h1V8h-1ZM2 14h2v-1H2v1Z", fill: primaryColorsTransformed[0] })];
   obj["children"] = items;
-  return callback2(arg1(dependencyMap[3]).Svg, obj);
+  return callback2(require(8018) /* inlineStyles */.Svg, obj);
 };

@@ -1,21 +1,25 @@
 // Module ID: 1560
-// Function ID: 17607
-// Dependencies: []
+// Function ID: 17608
+// Dependencies: [1561, 1564, 1566, 1568]
 
 // Module 1560
-for (const key10015 in arg1(arg6[0])) {
+for (const key10015 in require("useSafeAreaInsets")) {
   let tmp2 = key10015;
-  arg5[key10015] = arg1(arg6[0])[key10015];
+  arg5[key10015] = require("useSafeAreaInsets")[key10015];
+  continue;
 }
-for (const key10020 in arg1(arg6[1])) {
+for (const key10020 in require("SafeAreaView")) {
   let tmp3 = key10020;
-  arg5[key10020] = arg1(arg6[1])[key10020];
+  arg5[key10020] = require("SafeAreaView")[key10020];
+  continue;
 }
-for (const key10025 in arg1(arg6[2])) {
+for (const key10025 in require("initialWindowMetrics")) {
   let tmp4 = key10025;
-  arg5[key10025] = arg1(arg6[2])[key10025];
+  arg5[key10025] = require("initialWindowMetrics")[key10025];
+  continue;
 }
-for (const key10030 in arg1(arg6[3])) {
+for (const key10030 in require("module_1568")) {
   let tmp5 = key10030;
-  arg5[key10030] = arg1(arg6[3])[key10030];
+  arg5[key10030] = require("module_1568")[key10030];
+  continue;
 }

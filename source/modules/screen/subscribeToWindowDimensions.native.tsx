@@ -1,21 +1,21 @@
-// Module ID: 11100
-// Function ID: 86377
+// Module ID: 11110
+// Function ID: 86427
 // Name: subscribeToWindowDimensions
-// Dependencies: [0, 0]
+// Dependencies: [1451, 2]
 // Exports: default
 
-// Module 11100 (subscribeToWindowDimensions)
-import __exportStarResult1 from "__exportStarResult1";
+// Module 11110 (subscribeToWindowDimensions)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/screen/subscribeToWindowDimensions.native.tsx");
+const result = require("set").fileFinishedImporting("modules/screen/subscribeToWindowDimensions.native.tsx");
 
 export default function subscribeToWindowDimensions(arg0) {
   let str = arg1;
-  let __exportStarResult1 = arg0;
+  let _createForOfIteratorHelperLoose = arg0;
   if (arg1 === undefined) {
     str = "main";
   }
-  return __exportStarResult1.subscribe((arg0) => {
-    arg0(arg0.byAppEntry[closure_1].windowDimensions, arg0.byAppEntry[closure_1].windowDimensionsIgnoringKeyboard);
+  return _createForOfIteratorHelperLoose.subscribe((arg0) => {
+    callback(arg0.byAppEntry[str].windowDimensions, arg0.byAppEntry[str].windowDimensionsIgnoringKeyboard);
   });
 };

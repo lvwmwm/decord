@@ -1,119 +1,122 @@
-// Module ID: 10024
-// Function ID: 77444
+// Module ID: 10032
+// Function ID: 77484
 // Name: DefaultState
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1838, 10033, 653, 33, 4130, 689, 10036, 4126, 1212, 1273, 566, 10037, 10038, 1557, 10072, 10073, 5087, 5771, 10046, 10030, 675, 2]
 // Exports: default
 
-// Module 10024 (DefaultState)
-import ArrayResult from "module_20";
+// Module 10032 (DefaultState)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ArrayResult from "module_5771";
 
+let closure_12;
+let closure_13;
+let closure_6;
+let closure_7;
+let closure_8;
+let require = arg1;
 function DefaultState() {
-  const tmp = callback4();
-  const arg1 = tmp;
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
   let obj = { style: tmp.emptyWrapper };
-  obj = { style: tmp.emptyStateImage, source: importDefault(dependencyMap[9]) };
-  const items = [callback2(closure_7, obj), ];
-  obj = { style: tmp.emptyStateText };
-  const intl = arg1(dependencyMap[11]).intl;
-  obj.children = intl.format(arg1(dependencyMap[11]).t.aYLd8O, {
+  obj = { style: tmp.emptyStateImage, source: importDefault(10036) };
+  const items = [callback(closure_7, obj), ];
+  obj = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.format(require(1212) /* getSystemLocale */.t.aYLd8O, {
     protipHook(children) {
-      return callback(tmp(closure_3[12]).LegacyText, { style: tmp.proTip, children }, "protip");
+      return outer1_12(tmp(outer1_3[12]).LegacyText, { style: tmp.proTip, children }, "protip");
     }
   });
-  items[1] = callback2(arg1(dependencyMap[10]).Text, obj);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
-  return callback3(closure_6, obj);
+  return callback2(closure_6, obj);
 }
 function EmptyState(channel) {
   channel = channel.channel;
-  const arg1 = channel;
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[13]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = channel(566);
   const items = [closure_9];
-  const importDefault = obj.useStateFromStores(items, () => guild.getGuild(channel.getGuildId()));
-  let obj1 = arg1(dependencyMap[14]);
+  const importDefault = obj.useStateFromStores(items, () => outer1_9.getGuild(channel.getGuildId()));
+  let obj1 = channel(10037);
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
-  const intl = arg1(dependencyMap[11]).intl;
+  const intl = channel(1212).intl;
   if (canCreateOrAddGuildInDirectory) {
     obj = {
       addServerHook() {
-          let obj = lib(closure_3[15]);
+          let obj = lib(outer1_3[15]);
           obj = { directoryGuildName: lib.name, directoryGuildId: lib.id, directoryChannelId: channel.id };
           obj.open(obj);
         }
     };
-    let formatResult = intl.format(tmp3(tmp4[11]).t.ZxNVMy, obj);
+    let formatResult = intl.format(tmp3(1212).t.ZxNVMy, obj);
   } else {
-    formatResult = intl.string(tmp3(tmp4[11]).t.vYyEnv);
+    formatResult = intl.string(tmp3(1212).t.vYyEnv);
   }
   obj = { style: tmp.emptyWrapper };
-  obj1 = { style: tmp.emptyStateImage, source: importDefault(dependencyMap[9]) };
-  const items1 = [callback2(closure_7, obj1), , ];
-  const obj2 = { "Null": "auto", "Null": 1, alignItems: 16, style: tmp.emptyStateTitle };
-  const intl2 = arg1(dependencyMap[11]).intl;
-  obj2.children = intl2.string(arg1(dependencyMap[11]).t.6HXiuE);
-  items1[1] = callback2(arg1(dependencyMap[10]).Text, obj2);
-  const obj3 = { style: tmp.emptyStateText, children: formatResult };
-  items1[2] = callback2(arg1(dependencyMap[10]).Text, obj3);
+  obj1 = { style: tmp.emptyStateImage, source: importDefault(10036) };
+  const items1 = [callback(closure_7, obj1), , ];
+  const obj2 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary" };
+  const intl2 = channel(1212).intl;
+  obj2.children = intl2.string(channel(1212).t["6HXiuE"]);
+  items1[1] = callback(channel(4126).Text, obj2);
+  const obj3 = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult };
+  items1[2] = callback(channel(4126).Text, obj3);
   obj.children = items1;
-  return callback3(closure_6, obj);
+  return callback2(closure_6, obj);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-({ View: closure_6, Image: closure_7, FlatList: closure_8 } = arg1(dependencyMap[2]));
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = importDefault(dependencyMap[4]);
-const tmp3 = arg1(dependencyMap[5]);
-const AnalyticEvents = tmp3.AnalyticEvents;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = { flex: { backgroundColor: false, borderWidth: false }, fauxHeader: { paddingHorizontal: 0 } };
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW, borderRadius: false };
-obj.scrollContainer = obj;
-obj.emptyWrapper = { onPressEdit: null, borderTopLeftRadius: 50, borderTopRightRadius: 101, overflow: 0 };
-obj.emptyStateImage = { marginBottom: 24 };
-obj.emptyStateText = { textAlign: "center" };
-obj.emptyStateTitle = { value: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000676009517133676, on: 131072.0007038191 };
-const tmp4 = arg1(dependencyMap[6]);
-obj.proTip = { fontFamily: tmp3.Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[8]).unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
-let closure_14 = obj.createStyles(obj);
-const obj1 = { fontFamily: tmp3.Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[8]).unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
-let closure_15 = require("module_20").fill(null);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearch.tsx");
+({ View: closure_6, Image: closure_7, FlatList: closure_8 } = get_ActivityIndicator);
+const AnalyticEvents = ME.AnalyticEvents;
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = { flex: { flex: 1, height: "100%" }, fauxHeader: { paddingHorizontal: 0 } };
+_createForOfIteratorHelperLoose = { flex: 1, width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.scrollContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.emptyWrapper = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: 16 };
+_createForOfIteratorHelperLoose.emptyStateImage = { marginBottom: 24 };
+_createForOfIteratorHelperLoose.emptyStateText = { textAlign: "center" };
+_createForOfIteratorHelperLoose.emptyStateTitle = { marginBottom: 4, textAlign: "center" };
+_createForOfIteratorHelperLoose.proTip = { fontFamily: ME.Fonts.PRIMARY_BOLD, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { fontFamily: ME.Fonts.PRIMARY_BOLD, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
+let closure_15 = require("module_5771").fill(null);
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearch.tsx");
 
 export default function GuildDirectorySearch(channel) {
   channel = channel.channel;
-  const arg1 = channel;
-  const tmp = callback4();
-  const tmp2 = callback(React.useState(false), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = searchResults(React.useState(false), 2);
   const importDefault = tmp2[1];
-  const tmp3 = callback(React.useState(""), 2);
+  const tmp3 = searchResults(React.useState(""), 2);
   let closure_2 = tmp3[0];
-  let obj = arg1(dependencyMap[13]);
-  const items = [closure_10];
+  let obj = channel(searchFetching[13]);
+  const items = [_isNativeReflectConstruct];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const searchState = store.getSearchState(channel.id);
-    return { searchFetching: searchState.fetching, searchResults: store.getSearchResults(channel.id, searchState.mostRecentQuery) };
+    const searchState = outer1_10.getSearchState(channel.id);
+    return { searchFetching: searchState.fetching, searchResults: outer1_10.getSearchResults(channel.id, searchState.mostRecentQuery) };
   });
-  const searchFetching = stateFromStoresObject.searchFetching;
-  const dependencyMap = searchFetching;
-  const callback = searchResults;
-  const items1 = [stateFromStoresObject.searchResults, searchFetching];
+  searchFetching = stateFromStoresObject.searchFetching;
+  searchResults = stateFromStoresObject.searchResults;
+  const items1 = [searchResults, searchFetching];
   let memo = React.useMemo(() => {
     let combined = searchResults;
     if (searchFetching) {
-      combined = searchResults.concat(closure_15);
+      combined = searchResults.concat(outer1_15);
     }
     return combined;
   }, items1);
-  let bottom = importDefault(dependencyMap[16])().bottom;
+  let bottom = importDefault(searchFetching[16])().bottom;
   if (!tmp2[0]) {
     obj = { style: tmp.flex };
     obj = { style: tmp.fauxHeader };
     const obj1 = {};
-    const intl = arg1(dependencyMap[11]).intl;
-    obj1.placeholder = intl.string(arg1(dependencyMap[11]).t.nL2wKD);
+    const intl = channel(searchFetching[11]).intl;
+    obj1.placeholder = intl.string(channel(searchFetching[11]).t.nL2wKD);
     obj1.onChange = tmp3[1];
     obj1.onClose = function onClose() {
       lib(searchFetching[21]).clearDirectorySearch(channel.id);
@@ -125,24 +128,24 @@ export default function GuildDirectorySearch(channel) {
         let obj = lib(searchFetching[21]);
         const result = obj.searchDirectoryEntries(channel.id, lib);
         obj = { directory_channel_id: channel.id, directory_guild_id: channel.getGuildId() };
-        callback(searchFetching[23]).track(constants.GUILD_DIRECTORY_SEARCH, obj);
+        callback(searchFetching[23]).track(outer1_11.GUILD_DIRECTORY_SEARCH, obj);
         if (null != result) {
-          result.then(() => callback(true));
+          result.then(() => outer1_1(true));
         } else {
           callback(true);
         }
         const obj2 = callback(searchFetching[23]);
       }
     };
-    obj.children = callback2(importDefault(dependencyMap[20]), obj1);
-    const items2 = [callback2(arg1(dependencyMap[19]).FauxHeader, obj), tmp5];
+    obj.children = callback(importDefault(searchFetching[20]), obj1);
+    const items2 = [callback(channel(searchFetching[19]).FauxHeader, obj), tmp5];
     obj.children = items2;
-    return callback3(closure_6, obj);
+    return callback2(closure_6, obj);
   } else {
     if (0 === searchResults.length) {
       if (!searchFetching) {
-        const obj2 = { channel };
-        let tmp8 = callback2(EmptyState, obj2);
+        let obj2 = { channel };
+        let tmp8 = callback(EmptyState, obj2);
       }
     }
     const obj3 = {
@@ -151,9 +154,9 @@ export default function GuildDirectorySearch(channel) {
           item = item.item;
           if (null != item) {
             const obj = { entry: item };
-            let tmp4 = callback2(callback(searchFetching[17]), obj);
+            let tmp4 = outer1_12(callback(searchFetching[17]), obj);
           } else {
-            tmp4 = callback2(callback(searchFetching[18]), {});
+            tmp4 = outer1_12(callback(searchFetching[18]), {});
           }
           return tmp4;
         },
@@ -166,7 +169,7 @@ export default function GuildDirectorySearch(channel) {
           return guildId;
         },
       ListEmptyComponent() {
-          return callback2(closure_17, { channel });
+          return outer1_12(outer1_17, { channel });
         }
     };
     const obj4 = { right: 0 };
@@ -176,6 +179,6 @@ export default function GuildDirectorySearch(channel) {
     bottom = bottom + 16;
     memo.paddingBottom = bottom;
     obj3.contentContainerStyle = memo;
-    tmp8 = callback2(closure_8, obj3);
+    tmp8 = callback(closure_8, obj3);
   }
 };

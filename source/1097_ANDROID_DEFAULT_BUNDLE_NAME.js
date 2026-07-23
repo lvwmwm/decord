@@ -1,28 +1,29 @@
 // Module ID: 1097
-// Function ID: 12560
+// Function ID: 12561
 // Name: ANDROID_DEFAULT_BUNDLE_NAME
-// Dependencies: []
+// Dependencies: [27, 794, 978]
 // Exports: createReactNativeRewriteFrames
 
 // Module 1097 (ANDROID_DEFAULT_BUNDLE_NAME)
-const Platform = require(dependencyMap[0]).Platform;
+import { Platform } from "get ActivityIndicator";
+
 
 export const ANDROID_DEFAULT_BUNDLE_NAME = "app:///index.android.bundle";
 export const IOS_DEFAULT_BUNDLE_NAME = "app:///main.jsbundle";
 export const createReactNativeRewriteFrames = function createReactNativeRewriteFrames() {
-  let obj = require(dependencyMap[1]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   obj = {
     iteratee(platform) {
       if ("java" !== platform.platform) {
         if ("cocoa" !== platform.platform) {
           if (platform.filename) {
-            delete r0.abs_path;
+            delete tmp.abs_path;
             const str = platform.filename;
             const str3 = platform.filename.replace(/^file:\/\//, "");
             platform.filename = platform.filename.replace(/^file:\/\//, "").replace(/^address at /, "").replace(/^.*\/[^.]+(\.app|CodePush|.*(?=\/))/, "");
             if ("[native code]" !== platform.filename) {
               if ("native" !== platform.filename) {
-                let isHermesEnabledResult = callback(closure_1[2]).isHermesEnabled();
+                let isHermesEnabledResult = outer1_0(outer1_1[2]).isHermesEnabled();
                 if (isHermesEnabledResult) {
                   isHermesEnabledResult = 1 === platform.lineno;
                 }
@@ -32,12 +33,12 @@ export const createReactNativeRewriteFrames = function createReactNativeRewriteF
                 if (isHermesEnabledResult) {
                   platform.colno = platform.colno + 1;
                 }
-                const obj3 = callback(closure_1[2]);
+                const obj3 = outer1_0(outer1_1[2]);
                 if (obj.isExpo()) {
                   platform.filename = "app:///index.android.bundle";
                   return platform;
                 } else {
-                  callback(closure_1[2]).isExpo();
+                  outer1_0(outer1_1[2]).isExpo();
                   if ("/InternalBytecode.js" === platform.filename) {
                     platform.in_app = false;
                   }
@@ -52,7 +53,7 @@ export const createReactNativeRewriteFrames = function createReactNativeRewriteF
                   platform.filename = combined;
                   return platform;
                 }
-                const obj = callback(closure_1[2]);
+                obj = outer1_0(outer1_1[2]);
               }
             }
             return platform;

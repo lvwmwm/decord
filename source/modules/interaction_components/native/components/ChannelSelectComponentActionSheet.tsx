@@ -1,19 +1,22 @@
-// Module ID: 10962
-// Function ID: 85264
+// Module ID: 10972
+// Function ID: 85313
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: []
+// Dependencies: [31, 1348, 1838, 33, 7802, 10969, 10967, 7804, 1273, 8450, 2]
 // Exports: default
 
-// Module 10962 (ChannelSelectComponentActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/interaction_components/native/components/ChannelSelectComponentActionSheet.tsx");
+// Module 10972 (ChannelSelectComponentActionSheet)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/interaction_components/native/components/ChannelSelectComponentActionSheet.tsx");
 
 export default function ChannelSelectComponentActionSheet(guildId) {
   let allowEmpty;
   let channelId;
+  let result;
   let containerId;
   let isSelected;
   let labelComponent;
@@ -24,31 +27,28 @@ export default function ChannelSelectComponentActionSheet(guildId) {
   let selectionActionComponent;
   let setQuery;
   ({ selectionActionComponent, channelId } = guildId);
-  const arg1 = channelId;
   guildId = guildId.guildId;
-  const importDefault = guildId;
   const channelTypes = selectionActionComponent.channelTypes;
-  const dependencyMap = channelTypes;
   const items = [channelId, channelTypes];
   ({ labelComponent, containerId, onSubmit, allowEmpty } = guildId);
   const callback = React.useCallback((arg0) => channelId(channelTypes[4]).queryChannels(arg0, channelId, channelTypes), items);
-  const tmp2 = importDefault(dependencyMap[5])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
-  ({ selectedOptions, submitSelection: closure_3 } = tmp2);
+  const tmp2 = guildId(channelTypes[5])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
+  ({ selectedOptions, submitSelection: result } = tmp2);
   ({ options, isSelected, onPressOptionItem, setQuery } = tmp2);
-  return jsx(importDefault(dependencyMap[6]), {
+  return jsx(guildId(channelTypes[6]), {
     onPressOptionItem,
     renderIcon(value) {
-      const channel = store.getChannel(value.value);
+      const channel = outer1_4.getChannel(value.value);
       if (null == channel) {
         return null;
       } else {
-        const guild = guild.getGuild(guildId);
+        const guild = outer1_5.getGuild(guildId);
         let obj = channelId(channelTypes[7]);
         const channelIconData = obj.getChannelIconData(channel, guild);
         let tmp8 = null != channelIconData;
         if (tmp8) {
           obj = { source: channelIconData };
-          tmp8 = callback2(channelId(channelTypes[8]).Icon, obj);
+          tmp8 = outer1_6(channelId(channelTypes[8]).Icon, obj);
         }
         return tmp8;
       }
@@ -64,7 +64,7 @@ export default function ChannelSelectComponentActionSheet(guildId) {
     },
     onQueryChange: setQuery,
     itemAccessibilityLabel(value) {
-      const channel = store.getChannel(value.value);
+      const channel = outer1_4.getChannel(value.value);
       if (null != channel) {
         const obj = { channel };
         return guildId(channelTypes[9])(obj);

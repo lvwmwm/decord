@@ -1,15 +1,15 @@
 // Module ID: 1558
-// Function ID: 17604
-// Dependencies: []
+// Function ID: 17605
+// Dependencies: [1559, 621, 2]
 
 // Module 1558
-let obj = { safeAreaInsets: require(dependencyMap[0]).INITIAL_SAFE_AREA_INSETS };
-const _module = require(dependencyMap[1]);
-obj = _module.create(() => {
+import keys from "keys";
+
+let obj = { safeAreaInsets: require("EMPTY_SAFE_AREA_INSETS").INITIAL_SAFE_AREA_INSETS };
+obj = keys.create(() => {
   const byAppEntry = { main: obj, share: obj };
   return { byAppEntry };
 });
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/safe_area/SafeAreaStore.native.tsx");
+const result = require("set").fileFinishedImporting("modules/safe_area/SafeAreaStore.native.tsx");
 
 export default obj;

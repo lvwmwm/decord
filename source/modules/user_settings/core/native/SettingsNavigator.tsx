@@ -1,41 +1,47 @@
-// Module ID: 15470
-// Function ID: 117983
+// Module ID: 15587
+// Function ID: 120157
 // Name: LeftAlignedHeaderTitle
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1921, 13552, 653, 33, 9113, 4130, 689, 4126, 1457, 12382, 15588, 5793, 624, 5464, 5484, 13555, 6707, 10631, 14575, 5519, 13084, 3834, 4660, 1212, 15130, 15589, 13556, 5121, 15590, 44, 2]
 
-// Module 15470 (LeftAlignedHeaderTitle)
-function LeftAlignedHeaderTitle(children) {
-  const tmp = callback4();
-  return callback2(arg1(dependencyMap[10]).Heading, { style: callback4().headerContainer, children: children.title });
+// Module 15587 (LeftAlignedHeaderTitle)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "getOverviewSettings";
+import { View } from "IconWithBadge";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import zustandStore from "zustandStore";
+import ME from "ME";
+import jsxProd from "set";
+import createNativeStackNavigator from "createNativeStackNavigator";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_8;
+let closure_9;
+let require = arg1;
+function LeftAlignedHeaderTitle(title) {
+  const obj = { lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: callback4().headerContainer, children: title.title };
+  return callback2(require(4126) /* Text */.Heading, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ AnalyticsPages: closure_8, UserSettingsSections: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
-let obj1 = arg1(dependencyMap[7]);
-let closure_12 = obj1.createNativeStackNavigator();
-let obj2 = arg1(dependencyMap[8]);
+({ AnalyticsPages: closure_8, UserSettingsSections: closure_9 } = ME);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
 let obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.statusBarSpacer = obj;
-obj1 = { width: "100%", paddingHorizontal: importDefault(dependencyMap[9]).space.PX_8, marginTop: importDefault(dependencyMap[9]).space.PX_8 };
-obj.headerContainer = obj1;
-obj2 = { borderRadius: importDefault(dependencyMap[9]).radii.round, marginTop: importDefault(dependencyMap[9]).space.PX_8 };
-obj.backIcon = obj2;
-let closure_13 = obj2.createStyles(obj);
-const tmp3 = arg1(dependencyMap[6]);
+createNativeStackNavigator = { width: "100%", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj.headerContainer = createNativeStackNavigator;
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj.backIcon = _createForOfIteratorHelperLoose;
+let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
   let beforeRemove;
   let transitionStart;
   const tmp = callback4();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[11]);
+  const require = tmp;
+  let obj = require(params[11]);
   const route = obj.useRoute();
-  let params = route.params;
+  params = route.params;
   let screen;
   if (null != params) {
     screen = params.screen;
@@ -43,13 +49,11 @@ const memoResult = importAllResult.memo(() => {
   if (null == screen) {
     screen = constants.OVERVIEW;
   }
-  const importDefault = screen;
   const params2 = route.params;
   params = undefined;
   if (null != params2) {
     params = params2.params;
   }
-  const dependencyMap = params;
   const params3 = route.params;
   let onClose;
   if (null != params3) {
@@ -60,68 +64,69 @@ const memoResult = importAllResult.memo(() => {
     tmp7 = onClose;
   }
   const callback = tmp7;
-  let obj1 = arg1(dependencyMap[11]);
-  const React = obj1.useNavigation();
-  let obj2 = arg1(dependencyMap[12]);
-  const commonTriggerPoint = obj2.useCommonTriggerPoint(arg1(dependencyMap[13]).OpenUserSettingsTriggerPoint);
+  let obj1 = require(params[11]);
+  const importAllResult = obj1.useNavigation();
+  let obj2 = require(params[12]);
+  const commonTriggerPoint = obj2.useCommonTriggerPoint(require(params[13]).OpenUserSettingsTriggerPoint);
   const items = [screen];
-  const effect = React.useEffect(() => {
+  const effect = importAllResult.useEffect(() => {
     let obj = tmp(params[14]);
     obj = { destinationPane: screen, source: obj };
     obj = { page: constants.USER_SETTINGS };
     const result = obj.trackUserSettingsPaneViewed(obj);
   }, items);
   const items1 = [tmp7];
-  const effect1 = React.useEffect(() => () => {
-    if (null != callback) {
-      callback();
+  const effect1 = importAllResult.useEffect(() => () => {
+    if (null != outer1_3) {
+      outer1_3();
     }
   }, items1);
-  let obj3 = arg1(dependencyMap[15]);
-  const items2 = [closure_6];
+  let obj3 = require(params[15]);
+  const items2 = [obj];
   const stateFromStores = obj3.useStateFromStores(items2, () => obj.locale);
-  let closure_5 = callback(React.useState(false), 2)[1];
+  let closure_5 = callback(importAllResult.useState(false), 2)[1];
   const items3 = [stateFromStores];
-  const layoutEffect = React.useLayoutEffect(() => {
+  const layoutEffect = importAllResult.useLayoutEffect(() => {
     callback((arg0) => !arg0);
   }, items3);
-  const memo = React.useMemo(() => tmp(params[18]).getSettingScreens(), []);
-  const layoutEffect1 = React.useLayoutEffect(() => tmp(params[19]).trackAppUIViewed(), []);
-  let obj4 = arg1(dependencyMap[20]);
+  const memo = importAllResult.useMemo(() => tmp(params[18]).getSettingScreens(), []);
+  const layoutEffect1 = importAllResult.useLayoutEffect(() => tmp(params[19]).trackAppUIViewed(), []);
+  let obj4 = require(params[20]);
   const globalStatusIndicatorState = obj4.useGlobalStatusIndicatorState();
-  const effect2 = React.useEffect(() => screen(params[21]).validate(), []);
-  const tmp13 = importDefault(dependencyMap[16]);
-  const accessibilityNativeStackOptions = arg1(dependencyMap[22]).useAccessibilityNativeStackOptions();
-  const obj6 = arg1(dependencyMap[22]);
-  const accessibilityNativeStackFocusTracking = arg1(dependencyMap[23]).useAccessibilityNativeStackFocusTracking();
+  const effect2 = importAllResult.useEffect(() => screen(params[21]).validate(), []);
+  const tmp13 = screen(params[16]);
+  const accessibilityNativeStackOptions = require(params[22]).useAccessibilityNativeStackOptions();
+  const obj6 = require(params[22]);
+  const accessibilityNativeStackFocusTracking = require(params[23]).useAccessibilityNativeStackFocusTracking();
   obj = {};
   ({ beforeRemove, transitionStart } = accessibilityNativeStackFocusTracking);
-  const obj7 = arg1(dependencyMap[23]);
-  obj.backgroundColor = arg1(dependencyMap[24]).useToken(importDefault(dependencyMap[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  const obj7 = require(params[23]);
+  obj.backgroundColor = require(params[24]).useToken(screen(params[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND);
   obj.borderTopWidth = 1;
-  const obj9 = arg1(dependencyMap[24]);
-  obj.borderTopColor = arg1(dependencyMap[24]).useToken(importDefault(dependencyMap[9]).colors.BORDER_SUBTLE);
-  closure_6 = obj;
+  const obj9 = require(params[24]);
+  obj.borderTopColor = require(params[24]).useToken(screen(params[9]).colors.BORDER_SUBTLE);
   const items4 = [tmp.backIcon];
-  let closure_7 = React.useCallback((arg0) => () => {
-    let obj = { collapsable: false };
-    obj = {
-      771441095: "isArray",
-      743571460: "constructor",
-      1109851690: "apply",
-      onPress() {
-        return navigation.goBack();
-      }
+  let zustandStore = importAllResult.useCallback((arg0) => {
+    let closure_0 = arg0;
+    return () => {
+      let obj = { collapsable: false };
+      obj = {
+        onPress() {
+          return outer1_0.goBack();
+        },
+        accessible: true,
+        accessibilityRole: "button"
+      };
+      const intl = lib(params[26]).intl;
+      obj.accessibilityLabel = intl.string(lib(params[26]).t["13/7kX"]);
+      obj.hitSlop = lib(params[27]).BACK_ICON_WITH_BADGE_HIT_SLOP;
+      obj = { style: lib.backIcon, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: outer2_10(lib(params[27]).SettingsLeftIconWithBadge, { navigation: lib }) };
+      obj.children = outer2_10(closure_5, obj);
+      obj.children = outer2_10(lib(params[25]).PressableOpacity, obj);
+      return outer2_10(closure_5, obj);
     };
-    const intl = arg0(closure_2[26]).intl;
-    obj.accessibilityLabel = intl.string(arg0(closure_2[26]).t.13/7kX);
-    obj.hitSlop = arg0(closure_2[27]).BACK_ICON_WITH_BADGE_HIT_SLOP;
-    obj = { style: arg0.backIcon, children: callback(arg0(closure_2[27]).SettingsLeftIconWithBadge, obj1) };
-    obj.children = callback(closure_5, obj);
-    obj.children = callback(arg0(closure_2[25]).PressableOpacity, obj);
-    return callback(closure_5, obj);
   }, items4);
-  const memo1 = React.useMemo(() => ({
+  const memo1 = importAllResult.useMemo(() => ({
     transitionEnd(data) {
       let isActive = data.data.closing;
       const state = store.getState();
@@ -137,7 +142,7 @@ const memoResult = importAllResult.memo(() => {
       }
     }
   }), []);
-  let closure_8 = React.useMemo(() => ({
+  let closure_8 = importAllResult.useMemo(() => ({
     transitionEnd(data) {
       let closing = data.data.closing;
       if (closing) {
@@ -149,10 +154,10 @@ const memoResult = importAllResult.memo(() => {
       }
     }
   }), []);
-  const obj10 = arg1(dependencyMap[24]);
-  const autoSettingsSearchSessionAnalytics = arg1(dependencyMap[28]).useAutoSettingsSearchSessionAnalytics();
-  obj = { value: tmp13(importDefault(dependencyMap[17]).USER_SETTINGS).analyticsLocations };
-  const items5 = [callback2(importDefault(dependencyMap[29]), {}), ];
+  const obj10 = require(params[24]);
+  const autoSettingsSearchSessionAnalytics = require(params[28]).useAutoSettingsSearchSessionAnalytics();
+  obj = { value: tmp13(screen(params[17]).USER_SETTINGS).analyticsLocations };
+  const items5 = [callback2(screen(params[29]), {}), ];
   obj1 = {
     top: globalStatusIndicatorState.isVisible,
     style: tmp.statusBarSpacer,
@@ -165,10 +170,12 @@ const memoResult = importAllResult.memo(() => {
   };
   obj2 = { id: "settings-navigator" };
   obj3 = {
+    fullScreenGestureEnabled: true,
     headerTitle(children) {
-      return callback3(closure_14, { title: children.children });
+      return outer1_10(outer1_14, { title: children.children });
     },
-    UNSTABLE_headerInsets: { -9223372036854775808: true, -9223372036854775808: true }
+    headerTitleAlign: "center",
+    UNSTABLE_headerInsets: { left: false, right: false }
   };
   const merged = Object.assign(accessibilityNativeStackOptions);
   obj2.screenOptions = obj3;
@@ -179,7 +186,7 @@ const memoResult = importAllResult.memo(() => {
     options(navigation) {
       const obj = {};
       const intl = tmp(params[26]).intl;
-      obj.title = intl.string(tmp(params[26]).t.3D5yo/);
+      obj.title = intl.string(tmp(params[26]).t["3D5yo/"]);
       obj.headerLeft = callback2(navigation.navigation);
       obj.headerBackVisible = false;
       obj.headerShadowVisible = false;
@@ -192,20 +199,20 @@ const memoResult = importAllResult.memo(() => {
     }
   };
   const items6 = [
-    callback2(closure_12.Screen, obj4),
+    callback2(createNativeStackNavigator.Screen, obj4),
     memo.map((arg0) => {
       let tmp;
       let tmp2;
       [tmp, tmp2] = arg0;
-      const obj = {
+      let obj = {
         name: tmp2.route,
         options(navigation) {
           const obj = {};
           let headerShadowVisible;
-          obj.title = callback(closure_2[18]).getSettingTitle(callback);
-          obj.headerLeft = callback2(navigation.navigation);
+          obj.title = callback(params[18]).getSettingTitle(callback);
+          obj.headerLeft = outer1_7(navigation.navigation);
           obj.headerBackVisible = false;
-          obj.contentStyle = closure_6;
+          obj.contentStyle = outer1_6;
           const navigationOptions = component.navigationOptions;
           if (null != navigationOptions) {
             headerShadowVisible = navigationOptions.headerShadowVisible;
@@ -214,8 +221,8 @@ const memoResult = importAllResult.memo(() => {
           return obj;
         },
         getComponent() {
-          const component = component.getComponent();
-          component(closure_2[32])(null != component, "[Settings Navigator] Invalid component for setting: " + closure_0);
+          component = component.getComponent();
+          screen(params[32])(null != component, "[Settings Navigator] Invalid component for setting: " + closure_0);
           return component;
         }
       };
@@ -225,15 +232,15 @@ const memoResult = importAllResult.memo(() => {
       }
       obj.initialParams = tmp4;
       obj.listeners = closure_8;
-      return closure_10(Screen.Screen, obj, tmp);
+      return outer1_10(outer1_12.Screen, obj, tmp);
     })
   ];
   obj2.children = items6;
-  obj1.children = callback3(closure_12.Navigator, obj2);
-  items5[1] = callback2(arg1(dependencyMap[30]).SafeAreaPaddingView, obj1);
+  obj1.children = callback3(createNativeStackNavigator.Navigator, obj2);
+  items5[1] = callback2(require(params[30]).SafeAreaPaddingView, obj1);
   obj.children = items5;
-  return callback3(arg1(dependencyMap[16]).AnalyticsLocationProvider, obj);
+  return callback3(require(params[16]).AnalyticsLocationProvider, obj);
 });
-const result = arg1(dependencyMap[33]).fileFinishedImporting("modules/user_settings/core/native/SettingsNavigator.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/core/native/SettingsNavigator.tsx");
 
 export default memoResult;

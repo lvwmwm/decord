@@ -1,10 +1,9 @@
-// Module ID: 8264
-// Function ID: 65211
+// Module ID: 8270
+// Function ID: 65248
 // Name: LEGACY_BADGE_ID_MAP
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8264 (LEGACY_BADGE_ID_MAP)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/LegacyBadgeIdMap.tsx");
+// Module 8270 (LEGACY_BADGE_ID_MAP)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/LegacyBadgeIdMap.tsx");
 
-export const LEGACY_BADGE_ID_MAP = { style: "2026-05-android-rnv-http-engine", animating: "user", color: "2026-03-browser-inverted-wants", size: "tiktok", width: "errored", height: "tiktok", borderRadius: "attempted", marginLeft: "white", flex: "large", shadowColor: "file", shadowOpacity: "attempted", shadowOffset: "file", shadowRadius: "errored", attachment: "unknown", shouldObscureSpoiler: "recommendedGuilds", enabledContentHarmTypeFlags: null, -1420402084: 50, 1659689164: false, 877725800: "2026-04-icymi-staff-only", -504212883: "user", 140626117: "2026-05-ios-video-stabilization", 1388394065: "2026-03-icymi-staff-debugging-utility", -1958309976: "user", -1886219692: "2024-06_rtc_pacer__simulcast", -2126212207: "RTC Pacer & Golive Simulcast", 1584882009: "2026-03-icymi-desktop", -1336102199: "user", -1884901721: "2025-10-vad-before-processing", 1729400743: "2026-06-mobile-media-viewer-share", -1363562821: "user", -1606840399: "2025-09-agc2-v2", -1366285152: "short", -1366446431: "2-digit", -229557663: "absolute", 1454072481: 0 };
+export const LEGACY_BADGE_ID_MAP = { staff: 22, staff_hidden: 22, staff_personal: 22, premium: 1, premium_tenure_1_month_v2: 1, premium_tenure_3_month_v2: 1, premium_tenure_6_month_v2: 1, premium_tenure_12_month_v2: 1, premium_tenure_24_month_v2: 1, premium_tenure_36_month_v2: 1, premium_tenure_60_month_v2: 1, premium_tenure_72_month_v2: 1, partner: 2, certified_moderator: 3, hypesquad: 4, hypesquad_house_1: 5, hypesquad_house_2: 6, hypesquad_house_3: 7, bug_hunter_level_1: 8, bug_hunter_level_2: 9, verified_developer: 10, early_supporter: 11, guild_booster_lvl1: 12, guild_booster_lvl2: 12, guild_booster_lvl3: 12, guild_booster_lvl4: 12, guild_booster_lvl5: 12, guild_booster_lvl6: 12, guild_booster_lvl7: 12, guild_booster_lvl8: 12, guild_booster_lvl9: 12, legacy_username: 13, quest_completed: 14, april_fools_2026: 15, orb_profile_badge: 16 };

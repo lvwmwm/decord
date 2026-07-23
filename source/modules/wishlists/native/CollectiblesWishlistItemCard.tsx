@@ -1,55 +1,52 @@
-// Module ID: 9745
-// Function ID: 75832
+// Module ID: 9752
+// Function ID: 75873
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 6778, 9753, 33, 8669, 566, 8668, 8672, 1876, 8673, 2]
 // Exports: default
 
-// Module 9745 (CollectiblesWishlistItemCard)
-import __exportStarResult1 from "__exportStarResult1";
-import { transformSKUToCollectiblesItem as closure_4 } from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 9752 (CollectiblesWishlistItemCard)
+import result from "result";
+import { transformSKUToCollectiblesItem as closure_4 } from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/wishlists/native/CollectiblesWishlistItemCard.tsx");
 
 export default function CollectiblesWishlistItemCard(sku) {
   sku = sku.sku;
-  const arg1 = sku;
   let flag = sku.isOwned;
   if (flag === undefined) {
     flag = false;
   }
   const wishlistOwnerId = sku.wishlistOwnerId;
-  const importDefault = wishlistOwnerId;
   const size = sku.size;
-  const dependencyMap = size;
-  let obj = { "Null": false, "Null": false, "Null": false, "Null": false, gap: false };
+  let obj = { sku: 0, isOwned: 0, source: 0, wishlistOwnerId: 0, size: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(sku, obj);
-  let React;
-  const isProfileFrameGiftingEnabled = arg1(dependencyMap[4]).useIsProfileFrameGiftingEnabled("CollectiblesWishlistItemCard");
-  const obj2 = arg1(dependencyMap[4]);
-  const items = [closure_5];
+  let memo;
+  const isProfileFrameGiftingEnabled = sku(size[4]).useIsProfileFrameGiftingEnabled("CollectiblesWishlistItemCard");
+  const obj2 = sku(size[4]);
+  const items = [_isNativeReflectConstruct];
   const items1 = [sku.id, wishlistOwnerId];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => {
+  const stateFromStores = sku(size[5]).useStateFromStores(items, () => {
     let hasSentGiftResult = null != wishlistOwnerId;
     if (hasSentGiftResult) {
-      hasSentGiftResult = closure_5.hasSentGift(sku.id, wishlistOwnerId);
+      hasSentGiftResult = outer1_5.hasSentGift(sku.id, wishlistOwnerId);
     }
     return hasSentGiftResult;
   }, items1);
-  const obj3 = arg1(dependencyMap[5]);
+  const obj3 = sku(size[5]);
   const items2 = [sku];
-  const productNameAndTypeFromSku = arg1(dependencyMap[6]).getProductNameAndTypeFromSku(sku);
-  const memo = React.useMemo(() => callback(sku), items2);
-  React = memo;
+  const productNameAndTypeFromSku = sku(size[6]).getProductNameAndTypeFromSku(sku);
+  memo = memo.useMemo(() => outer1_4(sku), items2);
   const items3 = [memo, size];
   let type;
-  const callback = React.useCallback(() => {
+  const callback = memo.useCallback(() => {
     let tmp = null;
     if (null != memo) {
       const obj = { collectiblesItemData: memo, size };
-      tmp = callback2(sku(size[7]).CollectiblesPreview, obj);
+      tmp = outer1_6(sku(size[7]).CollectiblesPreview, obj);
     }
     return tmp;
   }, items3);
@@ -57,13 +54,13 @@ export default function CollectiblesWishlistItemCard(sku) {
     type = memo.type;
   }
   if ("single" === type) {
-    if (memo.item.type === arg1(dependencyMap[8]).CollectiblesItemType.PROFILE_FRAME) {
+    if (memo.item.type === sku(size[8]).CollectiblesItemType.PROFILE_FRAME) {
       let tmp12Result = null;
     }
     return tmp12Result;
   }
   obj = { accessibilityLabel: productNameAndTypeFromSku, renderPreview: callback, source: sku.source };
-  const obj4 = arg1(dependencyMap[6]);
+  const obj4 = sku(size[6]);
   const tmp12 = jsx;
   if (!flag) {
     flag = stateFromStores;
@@ -71,5 +68,5 @@ export default function CollectiblesWishlistItemCard(sku) {
   obj.isOwned = flag;
   obj.size = size;
   const merged1 = Object.assign(merged);
-  tmp12Result = tmp12(importDefault(dependencyMap[9]), obj);
+  tmp12Result = tmp12(wishlistOwnerId(size[9]), obj);
 };

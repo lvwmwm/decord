@@ -1,30 +1,32 @@
-// Module ID: 7598
-// Function ID: 60854
+// Module ID: 7604
+// Function ID: 60891
 // Name: getReportMenu
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [5, 31, 4129, 653, 7483, 507, 7603, 7488, 686, 44, 7601, 4324, 2]
 // Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, useTrackSettingsUpsellsAction, verifyUnauthenticatedReport
 
-// Module 7598 (getReportMenu)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { SafetyToastType } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 7604 (getReportMenu)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import result from "result";
+import closure_5 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { SafetyToastType } from "SafetyToastType";
 
+let closure_6;
+let closure_7;
+const require = arg1;
 function getReportMenu(name, arg1) {
   return _getReportMenu(...arguments);
 }
-async function _getReportMenu(arg0, variant, arg2) {
-  const HTTP = callback(closure_2[5]).HTTP;
-  let obj = { url: closure_7.GET_REPORT_MENU(callback2(arg0)) };
-  variant = undefined;
-  if (null != variant) {
-    variant = variant.variant;
+async function _getReportMenu(arg0, arg1, arg2) {
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  let obj = { url: outer2_7.GET_REPORT_MENU(outer2_20(arg0)) };
+  let variant;
+  if (null != arg1) {
+    variant = arg1.variant;
   }
   let tmp3;
   if (null != variant) {
-    obj = { variant: variant.variant };
+    obj = { variant: arg1.variant };
     tmp3 = obj;
   }
   obj.query = tmp3;
@@ -37,16 +39,16 @@ async function _getReportMenu(arg0, variant, arg2) {
   }
   return body;
 }
-async function _getReportMenuForModeratorReport(arg0, variant, arg2) {
-  const HTTP = callback(closure_2[5]).HTTP;
-  let obj = { url: closure_7.GET_REPORT_MENU(callback2(arg0)) };
-  variant = undefined;
-  if (null != variant) {
-    variant = variant.variant;
+async function _getReportMenuForModeratorReport(arg0, arg1, arg2) {
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  let obj = { url: outer2_7.GET_REPORT_MENU(outer2_21(arg0)) };
+  let variant;
+  if (null != arg1) {
+    variant = arg1.variant;
   }
   let tmp3;
   if (null != variant) {
-    obj = { variant: variant.variant };
+    obj = { variant: arg1.variant };
     tmp3 = obj;
   }
   obj.query = tmp3;
@@ -59,16 +61,16 @@ async function _getReportMenuForModeratorReport(arg0, variant, arg2) {
   }
   return body;
 }
-async function _getUnauthenticatedReportMenu(arg0, variant, arg2) {
-  const HTTP = callback(closure_2[5]).HTTP;
-  let obj = { url: closure_7.GET_UNAUTHENTICATED_REPORT_MENU(callback2(arg0)) };
-  variant = undefined;
-  if (null != variant) {
-    variant = variant.variant;
+async function _getUnauthenticatedReportMenu(arg0, arg1, arg2) {
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  let obj = { url: outer2_7.GET_UNAUTHENTICATED_REPORT_MENU(outer2_19(arg0)) };
+  let variant;
+  if (null != arg1) {
+    variant = arg1.variant;
   }
   let tmp3;
   if (null != variant) {
-    obj = { variant: variant.variant };
+    obj = { variant: arg1.variant };
     tmp3 = obj;
   }
   obj.query = tmp3;
@@ -82,12 +84,12 @@ async function _getUnauthenticatedReportMenu(arg0, variant, arg2) {
   return body;
 }
 async function _submitHeadlessReport(arg0, arg1, arg2) {
-  const tmp2 = yield closure_9(arg0, arg1);
-  const HTTP = callback(closure_2[5]).HTTP;
-  let obj = { url: closure_7.SUBMIT_REPORT_MENU(callback2(arg0)), body: callback3(tmp2, arg0, items1), rejectWithError: false };
+  const tmp2 = yield outer2_9(arg0, arg1);
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  let obj = { url: outer2_7.SUBMIT_REPORT_MENU(outer2_20(arg0)), body: outer2_23(tmp2, arg0, items1), rejectWithError: false };
   obj = { nodeRef: tmp2.root_node_id, destination: items };
-  const items = [2060509169, tmp2.success_node_id];
-  const items1 = [obj];
+  items = ["", tmp2.success_node_id];
+  items1 = [obj];
   yield HTTP.post(obj);
 }
 function clientCacheBucket(email) {
@@ -105,52 +107,52 @@ function clientCacheBucket(email) {
   }
   return num3 >>> 0.toString(36);
 }
-async function _verifyUnauthenticatedReport(name, email, code, arg3) {
-  const HTTP = callback(closure_2[5]).HTTP;
-  let obj = { url: closure_7.VERIFY_UNAUTHENTICATED_REPORT(name), body: obj, rejectWithError: false };
-  obj = { name, email, code };
+async function _verifyUnauthenticatedReport(arg0, arg1, arg2, arg3) {
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  obj = { url: outer2_7.VERIFY_UNAUTHENTICATED_REPORT(arg0), body: obj, rejectWithError: false };
+  obj = { name: arg0, email: arg1, code: arg2 };
   return yield HTTP.post(obj).body;
 }
 async function _getDsaExperiment() {
-  const HTTP = callback(closure_2[5]).HTTP;
-  return yield HTTP.get({ url: constants.DSA_EXPERIMENT_UNAUTHENTICATED, rejectWithError: false });
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  return yield HTTP.get({ url: outer2_7.DSA_EXPERIMENT_UNAUTHENTICATED, rejectWithError: false });
 }
 async function _fetchUrfCapabilities() {
-  const HTTP = callback(closure_2[5]).HTTP;
-  return yield HTTP.get({ url: constants.DSA_CAPABILITIES, rejectWithError: false });
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  return yield HTTP.get({ url: outer2_7.DSA_CAPABILITIES, rejectWithError: false });
 }
-async function _submitReportSecondLook(token, arg1) {
-  const HTTP = callback(closure_2[5]).HTTP;
-  let obj = { url: constants.SUBMIT_REPORT_SECOND_LOOK, body: obj, rejectWithError: false };
-  obj = { token };
+async function _submitReportSecondLook(arg0, arg1) {
+  const HTTP = outer2_0(outer2_2[5]).HTTP;
+  obj = { url: outer2_7.SUBMIT_REPORT_SECOND_LOOK, body: obj, rejectWithError: false };
+  obj = { token: arg0 };
   return yield HTTP.post(obj).body;
 }
 function getUnauthenticatedReportNameSafely(name) {
   name = name.name;
-  const values = Object.values(arg1(dependencyMap[10]).UnauthenticatedReportNames);
+  const values = Object.values(require(7601) /* ReportNames */.UnauthenticatedReportNames);
   const hasItem = values.includes(name);
-  importDefault(dependencyMap[9])(hasItem, "Invalid report type " + name.name);
+  importDefault(44)(hasItem, "Invalid report type " + name.name);
   return name;
 }
 function getReportNameSafely(name) {
   name = name.name;
-  const values = Object.values(arg1(dependencyMap[10]).ReportNames);
+  const values = Object.values(require(7601) /* ReportNames */.ReportNames);
   const hasItem = values.includes(name);
-  importDefault(dependencyMap[9])(hasItem, "Invalid report type " + name.name);
+  importDefault(44)(hasItem, "Invalid report type " + name.name);
   return name;
 }
 function getModeratorReportNameSafely(name) {
   name = name.name;
-  const values = Object.values(arg1(dependencyMap[10]).ModeratorReportNames);
+  const values = Object.values(require(7601) /* ReportNames */.ModeratorReportNames);
   const hasItem = values.includes(name);
-  importDefault(dependencyMap[9])(hasItem, "Invalid report type " + name.name);
+  importDefault(44)(hasItem, "Invalid report type " + name.name);
   return name;
 }
 function getModeratorReportEndpointSafely(name) {
-  const REPORT_TO_MOD = arg1(dependencyMap[6]).ReportMenuTypeSets.REPORT_TO_MOD;
+  const REPORT_TO_MOD = require(7603) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
   const hasItem = REPORT_TO_MOD.has(name.name);
-  importDefault(dependencyMap[9])(hasItem, "Invalid report type " + name.name);
-  if (name.name === arg1(dependencyMap[10]).ModeratorReportNames.MESSAGE) {
+  importDefault(44)(hasItem, "Invalid report type " + name.name);
+  if (name.name === require(7601) /* ReportNames */.ModeratorReportNames.MESSAGE) {
     return closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id);
   } else {
     const _Error = Error;
@@ -158,7 +160,7 @@ function getModeratorReportEndpointSafely(name) {
     const error = new Error("Invalid report type " + name.name);
     throw error;
   }
-  const tmp = importDefault(dependencyMap[9]);
+  const tmp = importDefault(44);
 }
 function genSubmitData(language, name, arr, arg3) {
   let channelId;
@@ -205,30 +207,30 @@ function genSubmitData(language, name, arr, arg3) {
     })));
     return obj;
   }, {});
-  if (name.name !== name(dependencyMap[10]).ReportNames.MESSAGE) {
-    if (name.name !== name(dependencyMap[10]).ReportNames.FIRST_DM) {
-      if (name.name !== name(dependencyMap[10]).ReportNames.GUILD) {
-        if (name.name !== name(dependencyMap[10]).ReportNames.GUILD_DISCOVERY) {
-          if (name.name === name(dependencyMap[10]).ReportNames.GUILD_DIRECTORY_ENTRY) {
+  if (name.name !== require(7601) /* ReportNames */.ReportNames.MESSAGE) {
+    if (name.name !== require(7601) /* ReportNames */.ReportNames.FIRST_DM) {
+      if (name.name !== require(7601) /* ReportNames */.ReportNames.GUILD) {
+        if (name.name !== require(7601) /* ReportNames */.ReportNames.GUILD_DISCOVERY) {
+          if (name.name === require(7601) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
             obj = {};
             ({ guildId, channelId } = name.record);
-            const merged = Object.assign(obj);
-            const merged1 = Object.assign(obj);
+            let merged = Object.assign(obj);
+            let merged1 = Object.assign(obj);
             obj["name"] = name.name;
             obj["channel_id"] = channelId;
             obj["guild_id"] = guildId;
             return obj;
-          } else if (name.name === name(dependencyMap[10]).ReportNames.STAGE_CHANNEL) {
+          } else if (name.name === require(7601) /* ReportNames */.ReportNames.STAGE_CHANNEL) {
             const obj1 = {};
             ({ id: id2, guild_id: guild_id2, channel_id } = name.record);
-            const merged2 = Object.assign(obj);
+            let merged2 = Object.assign(obj);
             const merged3 = Object.assign(obj);
             obj1["name"] = name.name;
             obj1["channel_id"] = channel_id;
             obj1["guild_id"] = guild_id2;
             obj1["stage_instance_id"] = id2;
             return obj1;
-          } else if (name.name === name(dependencyMap[10]).ReportNames.GUILD_SCHEDULED_EVENT) {
+          } else if (name.name === require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
             const obj2 = {};
             ({ id, guild_id } = name.record);
             const merged4 = Object.assign(obj);
@@ -238,7 +240,7 @@ function genSubmitData(language, name, arr, arg3) {
             obj2["guild_scheduled_event_id"] = id;
             return obj2;
           } else {
-            if (name.name === name(dependencyMap[10]).ReportNames.USER) {
+            if (name.name === require(7601) /* ReportNames */.ReportNames.USER) {
               const obj3 = {};
               const merged6 = Object.assign(obj);
               const merged7 = Object.assign(obj);
@@ -246,7 +248,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj3["user_id"] = name.record.id;
               obj3["guild_id"] = name.contextualGuildId;
               let tmp3 = obj3;
-            } else if (name.name === name(dependencyMap[10]).UnauthenticatedReportNames.USER) {
+            } else if (name.name === require(7601) /* ReportNames */.UnauthenticatedReportNames.USER) {
               const obj4 = {};
               const merged8 = Object.assign(obj);
               const merged9 = Object.assign(obj);
@@ -255,7 +257,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj4["guild_id"] = name.contextualGuildId;
               obj4["email_token"] = arg3;
               tmp3 = obj4;
-            } else if (name.name === name(dependencyMap[10]).UnauthenticatedReportNames.MESSAGE) {
+            } else if (name.name === require(7601) /* ReportNames */.UnauthenticatedReportNames.MESSAGE) {
               const obj5 = {};
               const merged10 = Object.assign(obj);
               const merged11 = Object.assign(obj);
@@ -263,7 +265,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj5["message_id"] = name.record.id;
               obj5["email_token"] = arg3;
               tmp3 = obj5;
-            } else if (name.name === name(dependencyMap[10]).UnauthenticatedReportNames.GUILD) {
+            } else if (name.name === require(7601) /* ReportNames */.UnauthenticatedReportNames.GUILD) {
               const obj6 = {};
               const merged12 = Object.assign(obj);
               const merged13 = Object.assign(obj);
@@ -271,7 +273,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj6["guild_id"] = name.record.id;
               obj6["email_token"] = arg3;
               tmp3 = obj6;
-            } else if (name.name === name(dependencyMap[10]).ReportNames.APPLICATION) {
+            } else if (name.name === require(7601) /* ReportNames */.ReportNames.APPLICATION) {
               const obj7 = {};
               const merged14 = Object.assign(obj);
               const merged15 = Object.assign(obj);
@@ -281,7 +283,7 @@ function genSubmitData(language, name, arr, arg3) {
               obj7["channel_id"] = name.contextualChannelId;
               obj7["entrypoint"] = name.entrypoint;
               tmp3 = obj7;
-            } else if (name.name === name(dependencyMap[10]).ReportNames.WIDGET) {
+            } else if (name.name === require(7601) /* ReportNames */.ReportNames.WIDGET) {
               const obj8 = {};
               const merged16 = Object.assign(obj);
               const merged17 = Object.assign(obj);
@@ -291,7 +293,7 @@ function genSubmitData(language, name, arr, arg3) {
               tmp3 = obj8;
             } else {
               tmp3 = null;
-              if (name.name === name(dependencyMap[10]).UnauthenticatedReportNames.MEDIA_TAKEDOWN) {
+              if (name.name === require(7601) /* ReportNames */.UnauthenticatedReportNames.MEDIA_TAKEDOWN) {
                 const obj9 = {};
                 const merged18 = Object.assign(obj);
                 const merged19 = Object.assign(obj);
@@ -321,8 +323,8 @@ function genSubmitData(language, name, arr, arg3) {
   obj11["message_id"] = id3;
   return obj11;
 }
-({ AnalyticEvents: closure_6, Endpoints: closure_7 } = __exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/in_app_reports/ReportUtils.tsx");
+({ AnalyticEvents: closure_6, Endpoints: closure_7 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/in_app_reports/ReportUtils.tsx");
 
 export { getReportMenu };
 export const getReportMenuForModeratorReport = function getReportMenuForModeratorReport(name, arg1) {
@@ -338,10 +340,10 @@ export const submitReport = function submitReport(language, name, arr) {
   if (store.get("iar_skip_api_report_submit")) {
     let resolved = Promise.resolve();
   } else {
-    const REPORT_TO_MOD = name(dependencyMap[6]).ReportMenuTypeSets.REPORT_TO_MOD;
+    const REPORT_TO_MOD = require(7603) /* set */.ReportMenuTypeSets.REPORT_TO_MOD;
     if (REPORT_TO_MOD.has(name.name)) {
-      resolved = function submitModeratorReport(language, name, arr) {
-        const tmp = function genModeratorSubmitdata(language, name, arr) {
+      resolved = (function submitModeratorReport(language, name, arr) {
+        const tmp = (function genModeratorSubmitdata(language, name, arr) {
           let channel_id;
           let id;
           language = language.language;
@@ -379,11 +381,11 @@ export const submitReport = function submitReport(language, name, arr) {
             })));
             return obj;
           }, {});
-          if (name.name === tmp(closure_2[10]).ModeratorReportNames.MESSAGE) {
+          if (name.name === outer2_0(outer2_2[10]).ModeratorReportNames.MESSAGE) {
             obj = {};
             ({ channel_id, id } = name.record);
-            const merged = Object.assign(obj);
-            const merged1 = Object.assign(obj);
+            let merged = Object.assign(obj);
+            let merged1 = Object.assign(obj);
             obj["name"] = name.name;
             obj["channel_id"] = channel_id;
             obj["message_id"] = id;
@@ -391,12 +393,13 @@ export const submitReport = function submitReport(language, name, arr) {
           } else {
             return null;
           }
-        }(language, name, arr);
-        const HTTP = tmp(closure_2[5]).HTTP;
-        const obj = { url: callback(name), body: tmp, rejectWithError: false };
-        return HTTP.post({ url: callback(name), body: tmp, rejectWithError: false }).then((arg0) => {
-          let obj = callback(closure_2[7]);
-          obj.showSuccessToast(constants.REPORT_TO_MOD_SUCCESS);
+        })(language, name, arr);
+        let closure_0 = tmp;
+        const HTTP = outer1_0(outer1_2[5]).HTTP;
+        let obj = { url: outer1_22(name), body: tmp, rejectWithError: false };
+        return HTTP.post({ url: outer1_22(name), body: tmp, rejectWithError: false }).then((arg0) => {
+          let obj = outer2_1(outer2_2[7]);
+          obj.showSuccessToast(outer2_8.REPORT_TO_MOD_SUCCESS);
           let channel_id;
           if (null != tmp) {
             channel_id = tmp.channel_id;
@@ -412,15 +415,15 @@ export const submitReport = function submitReport(language, name, arr) {
           if (tmp4) {
             obj = { type: "REPORT_TO_MOD_REPORT_MESSAGE_SUCCESS" };
             ({ channel_id: obj3.channelId, message_id: obj3.messageId } = tmp);
-            callback(closure_2[8]).dispatch(obj);
-            const obj2 = callback(closure_2[8]);
+            outer2_1(outer2_2[8]).dispatch(obj);
+            const obj2 = outer2_1(outer2_2[8]);
           }
           return arg0;
         });
-      }(language, name, arr);
+      })(language, name, arr);
     } else {
-      const HTTP = name(dependencyMap[5]).HTTP;
-      const obj = { url: closure_7.SUBMIT_REPORT_MENU(getReportNameSafely(name)), body: genSubmitData(language, name, arr), rejectWithError: false };
+      let HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+      let obj = { url: closure_7.SUBMIT_REPORT_MENU(getReportNameSafely(name)), body: genSubmitData(language, name, arr), rejectWithError: false };
       resolved = HTTP.post(obj);
     }
   }
@@ -430,13 +433,13 @@ export const submitUnauthenticatedReport = function submitUnauthenticatedReport(
   if (store.get("iar_skip_api_report_submit")) {
     return Promise.resolve();
   } else {
-    const HTTP = name(dependencyMap[5]).HTTP;
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     const obj = { url: closure_7.SUBMIT_UNAUTHENTICATED_REPORT_MENU(getUnauthenticatedReportNameSafely(name)), body: genSubmitData(language, name, arr, arg3), rejectWithError: true };
     return HTTP.post(obj);
   }
 };
 export const sendUnauthenticatedReportPincode = function sendUnauthenticatedReportPincode(name, email) {
-  const HTTP = email(dependencyMap[5]).HTTP;
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   const obj = {};
   const result = closure_7.SEND_UNAUTHENTICATED_REPORT_PINCODE(name);
   obj.url = "" + result + "?b=" + clientCacheBucket(email);
@@ -461,40 +464,40 @@ export { getUnauthenticatedReportNameSafely };
 export { getReportNameSafely };
 export { getModeratorReportNameSafely };
 export { getModeratorReportEndpointSafely };
-export const trackCloseReportModalAnalytics = function trackCloseReportModalAnalytics(closure_0, closure_12, first) {
-  let obj = importDefault(dependencyMap[11]);
-  obj = { report_type: closure_0.name, report_id: first, navigation_history: closure_12 };
-  if (closure_0.name === closure_12(dependencyMap[10]).ReportNames.MESSAGE) {
+export const trackCloseReportModalAnalytics = function trackCloseReportModalAnalytics(closure_0, c12, first) {
+  let obj = importDefault(4324);
+  obj = { report_type: closure_0.name, report_id: first, navigation_history: c12 };
+  if (closure_0.name === require(7601) /* ReportNames */.ReportNames.MESSAGE) {
     let id = closure_0.record.id;
   }
   obj.message_id = id;
   id = undefined;
-  if (closure_0.name === closure_12(dependencyMap[10]).ReportNames.STAGE_CHANNEL) {
+  if (closure_0.name === require(7601) /* ReportNames */.ReportNames.STAGE_CHANNEL) {
     id = closure_0.record.id;
   }
   obj.stage_instance_id = id;
   let id1;
-  if (closure_0.name === closure_12(dependencyMap[10]).ReportNames.GUILD_SCHEDULED_EVENT) {
+  if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
     id1 = closure_0.record.id;
   }
   obj.guild_scheduled_event_id = id1;
-  if (closure_0.name !== closure_12(dependencyMap[10]).ReportNames.GUILD) {
-    if (closure_0.name !== closure_12(dependencyMap[10]).ReportNames.GUILD_DISCOVERY) {
-      if (closure_0.name === closure_12(dependencyMap[10]).ReportNames.GUILD_DIRECTORY_ENTRY) {
+  if (closure_0.name !== require(7601) /* ReportNames */.ReportNames.GUILD) {
+    if (closure_0.name !== require(7601) /* ReportNames */.ReportNames.GUILD_DISCOVERY) {
+      if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
         let id2 = closure_0.record.guildId;
-      } else if (closure_0.name === closure_12(dependencyMap[10]).ReportNames.GUILD_SCHEDULED_EVENT) {
+      } else if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
         id2 = closure_0.record.guild_id;
       }
     }
     obj.guild_id = id2;
-    if (closure_0.name === closure_12(dependencyMap[10]).ReportNames.GUILD_SCHEDULED_EVENT) {
+    if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_SCHEDULED_EVENT) {
       let channelId = closure_0.record.channel_id;
-    } else if (closure_0.name === closure_12(dependencyMap[10]).ReportNames.GUILD_DIRECTORY_ENTRY) {
+    } else if (closure_0.name === require(7601) /* ReportNames */.ReportNames.GUILD_DIRECTORY_ENTRY) {
       channelId = closure_0.record.channelId;
     }
     obj.channel_id = channelId;
     id2 = undefined;
-    if (closure_0.name === closure_12(dependencyMap[10]).ReportNames.APPLICATION) {
+    if (closure_0.name === require(7601) /* ReportNames */.ReportNames.APPLICATION) {
       id2 = closure_0.record.id;
     }
     obj.application_id = id2;
@@ -503,7 +506,7 @@ export const trackCloseReportModalAnalytics = function trackCloseReportModalAnal
   id2 = closure_0.record.id;
 };
 export const showInAppReportsFeedbackModal = function showInAppReportsFeedbackModal(closure_0, first) {
-  let obj = importDefault(dependencyMap[8]);
+  let obj = importDefault(686);
   obj = { type: "IN_APP_REPORTS_SHOW_FEEDBACK", reportId: first, reportType: closure_0.name };
   obj.dispatch(obj);
 };
@@ -663,13 +666,16 @@ export const areRequiredElementsUnfilled = function areRequiredElementsUnfilled(
 };
 export const TrackIarSettingsUpsellsActionType = { SETTINGS_UPSELLS_VIEWED: "SETTINGS_UPSELLS_VIEWED", SETTINGS_UPSELLS_APPLY_CLICKED: "SETTINGS_UPSELLS_APPLY_CLICKED", SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED: "SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED" };
 export const useTrackSettingsUpsellsAction = function useTrackSettingsUpsellsAction(reportType, reportSubType, reportId) {
-  reportSubType = reportType;
-  const importDefault = reportSubType;
-  const dependencyMap = reportId;
+  let closure_0 = reportType;
+  let closure_1 = reportSubType;
+  let closure_2 = reportId;
   const items = [reportId, reportType, reportSubType];
-  return React.useCallback((arg0) => (action) => {
-    let obj = callback(closure_2[11]);
-    obj = { report_id: closure_2, report_type: action.name, report_subtype: callback, settings_upsells_type: action, action };
-    obj.trackWithMetadata(constants.IAR_SETTINGS_UPSELLS_ACTION, obj);
+  return React.useCallback((arg0) => {
+    let closure_0 = arg0;
+    return (action) => {
+      let obj = callback(table[11]);
+      obj = { report_id: outer1_2, report_type: name.name, report_subtype: outer1_1, settings_upsells_type: name, action };
+      obj.trackWithMetadata(outer2_6.IAR_SETTINGS_UPSELLS_ACTION, obj);
+    };
   }, items);
 };

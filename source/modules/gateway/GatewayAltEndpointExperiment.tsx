@@ -1,16 +1,17 @@
-// Module ID: 13360
-// Function ID: 101620
+// Module ID: 13474
+// Function ID: 103776
 // Name: USE_ALT_GATEWAY_KEY
-// Dependencies: []
+// Dependencies: [1428, 2, 13475]
 // Exports: useShouldUseAltGateway
 
-// Module 13360 (USE_ALT_GATEWAY_KEY)
-const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: { enableAltGateway: false }, variations: { [1]: { enableAltGateway: false }, [2]: { enableAltGateway: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/gateway/GatewayAltEndpointExperiment.tsx");
+// Module 13474 (USE_ALT_GATEWAY_KEY)
+import ApexExperiment from "ApexExperiment";
 
-export const USE_ALT_GATEWAY_KEY = require(dependencyMap[2]).USE_ALT_GATEWAY_KEY;
+const obj = { name: "2026-07-aws-gateway", kind: "user", defaultConfig: { enableAltGateway: false }, variations: { [1]: { enableAltGateway: false }, [2]: { enableAltGateway: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("USE_ALT_GATEWAY_KEY").fileFinishedImporting("modules/gateway/GatewayAltEndpointExperiment.tsx");
+
+export const USE_ALT_GATEWAY_KEY = require("USE_ALT_GATEWAY_KEY").USE_ALT_GATEWAY_KEY;
 export const useShouldUseAltGateway = function useShouldUseAltGateway(App) {
   return closure_0.useConfig({ location: App }).enableAltGateway;
 };

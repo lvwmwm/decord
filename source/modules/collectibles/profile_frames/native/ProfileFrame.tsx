@@ -1,26 +1,33 @@
-// Module ID: 8250
-// Function ID: 65099
+// Module ID: 8256
+// Function ID: 65136
 // Name: ProfileFrameLayer
-// Dependencies: []
+// Dependencies: [31, 27, 8243, 8257, 5512, 33, 4130, 8258, 5085, 8255, 8259, 2]
 // Exports: default
 
-// Module 8250 (ProfileFrameLayer)
+// Module 8256 (ProfileFrameLayer)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { useFramePreviewOverrideStore as closure_4 } from "_createForOfIteratorHelperLoose";
+import PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO";
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let StyleSheet;
+let closure_3;
+let closure_5;
+let closure_6;
 function ProfileFrameLayer(skuId) {
   let containerHeight;
   let containerWidth;
   const layer = skuId.layer;
-  const importDefault = layer;
   const overflowTop = skuId.overflowTop;
-  const dependencyMap = overflowTop;
   const overflowBottom = skuId.overflowBottom;
-  const React = overflowBottom;
   const overflowHorizontal = skuId.overflowHorizontal;
   ({ containerWidth, containerHeight } = skuId);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   const sum = containerWidth + 2 * overflowHorizontal;
-  let closure_4 = sum;
-  const tmp3 = importDefault(dependencyMap[7])({ skuId: skuId.skuId, layer, width: sum });
+  const tmp3 = layer(overflowTop[7])({ skuId: skuId.skuId, layer, width: sum });
   const assetUrl = tmp3.assetUrl;
   const imageHeight = tmp3.imageHeight;
   const items = [, , , , , ];
@@ -28,8 +35,8 @@ function ProfileFrameLayer(skuId) {
   items[3] = overflowTop;
   items[4] = overflowBottom;
   items[5] = overflowHorizontal;
-  const memo = React.useMemo(() => {
-    let obj = { left: -overflowHorizontal, right: -overflowHorizontal, zIndex: imageHeight[closure_0.order] };
+  const memo = overflowBottom.useMemo(() => {
+    let obj = { left: -overflowHorizontal, right: -overflowHorizontal, zIndex: imageHeight[layer.order] };
     const type = layer.type;
     if ("staple" === type) {
       obj = {};
@@ -88,11 +95,11 @@ function ProfileFrameLayer(skuId) {
               const _Array = Array;
               obj = { length: Math.ceil(containerHeight / imageHeight) };
               obj.children = Array.from(obj, (arg0, arg1) => {
-                let obj = { source: obj, resizeMode: "cover", width: sum, height: imageHeight };
+                obj = { source: obj, resizeMode: "cover", width: closure_4, height: imageHeight };
                 obj = { uri: assetUrl };
-                return callback(layer(overflowTop[8]), obj, arg1);
+                return outer1_8(layer(overflowTop[8]), obj, arg1);
               });
-              return <overflowHorizontal {...obj} />;
+              return <overflowHorizontal length={Math.ceil(containerHeight / imageHeight)} />;
             }
           }
           return null;
@@ -100,14 +107,14 @@ function ProfileFrameLayer(skuId) {
           obj = {};
           const items2 = [tmp.layer, memo];
           obj.style = items2;
-          const obj1 = {};
+          let obj1 = {};
           const obj2 = { uri: assetUrl };
           obj1.source = obj2;
           obj1.resizeMode = "cover";
           obj1.width = sum;
           obj1.height = imageHeight;
-          obj.children = jsx(importDefault(dependencyMap[8]), obj1);
-          return <overflowHorizontal {...obj} />;
+          obj.children = jsx(layer(overflowTop[8]), {});
+          return <overflowHorizontal />;
         }
       }
     }
@@ -115,34 +122,35 @@ function ProfileFrameLayer(skuId) {
   return null;
 }
 function LiveProfileFrame(frame) {
+  let c6;
+  let c7;
+  let c8;
+  let result;
   let profileThemeType;
   frame = frame.frame;
-  const importDefault = frame;
   const containerWidth = frame.containerWidth;
-  const dependencyMap = containerWidth;
-  ({ containerHeight: closure_2, profileThemeType } = frame);
+  ({ containerHeight: result, profileThemeType } = frame);
   const frameOrder = frame.frameOrder;
-  let closure_4 = frameOrder;
   const filterLayer = frame.filterLayer;
-  let closure_6;
-  let closure_7;
+  c6 = undefined;
+  c7 = undefined;
   let jsx;
   const items = [frame.layers, frameOrder, profileThemeType, filterLayer];
   const memo = React.useMemo(() => {
     const layers = frame.layers;
     return layers.filter((order) => {
-      let tmp = null == closure_4;
+      let tmp = null == outer1_4;
       if (!tmp) {
-        tmp = closure_4 === order.order;
+        tmp = outer1_4 === order.order;
       }
       if (tmp) {
-        let tmp4 = null != callback;
+        let tmp4 = null != outer1_5;
         if (tmp4) {
-          tmp4 = !callback(order);
+          tmp4 = !outer1_5(order);
         }
         let tmp6 = !tmp4;
         if (!tmp4) {
-          let tmp9 = closure_3 === constants.PREVIEW;
+          let tmp9 = outer1_3 === constants.PREVIEW;
           if (!tmp9) {
             let tmp10 = "top" === order.anchor;
             if (tmp10) {
@@ -159,46 +167,39 @@ function LiveProfileFrame(frame) {
   }, items);
   if (0 !== memo.length) {
     if (0 !== containerWidth) {
-      ({ overflowTop: closure_6, overflowBottom: closure_7, overflowHorizontal: closure_8 } = importDefault(dependencyMap[9])(frame, containerWidth));
-      const obj = { style: tmp.container, children: memo.map((id) => _undefined(closure_10, { skuId: frame.skuId, layer: id, overflowTop: closure_6, overflowBottom: closure_7, overflowHorizontal: _undefined, containerWidth, containerHeight: closure_2 }, id.id)) };
-      return <profileThemeType {...obj} />;
+      ({ overflowTop: c6, overflowBottom: c7, overflowHorizontal: c8 } = frame(containerWidth[9])(frame, containerWidth));
+      const obj = { style: tmp.container, children: memo.map((id) => _undefined(outer1_10, { skuId: frame.skuId, layer: id, overflowTop: c6, overflowBottom: c7, overflowHorizontal: _undefined, containerWidth, containerHeight: result }, id.id)) };
+      return <profileThemeType style={tmp.container}>{memo.map((id) => _undefined(outer1_10, { skuId: frame.skuId, layer: id, overflowTop: c6, overflowBottom: c7, overflowHorizontal: _undefined, containerWidth, containerHeight: result }, id.id))}</profileThemeType>;
     }
   }
   return null;
 }
-let closure_2 = importAll(dependencyMap[0]);
-({ View: closure_3, StyleSheet } = arg1(dependencyMap[1]));
-let closure_4 = arg1(dependencyMap[2]).useFramePreviewOverrideStore;
-const tmp2 = arg1(dependencyMap[1]);
-({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: closure_5, PROFILE_FRAME_Z_INDEX: closure_6 } = arg1(dependencyMap[3]));
-const UserProfileThemeTypes = arg1(dependencyMap[4]).UserProfileThemeTypes;
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = {};
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj["pointerEvents"] = "none";
-obj.container = obj;
-const obj1 = {};
-const merged1 = Object.assign(StyleSheet.absoluteFillObject);
+({ View: closure_3, StyleSheet } = get_ActivityIndicator);
+({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: closure_5, PROFILE_FRAME_Z_INDEX: closure_6 } = PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+_createForOfIteratorHelperLoose["pointerEvents"] = "none";
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = {};
+let merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj1["alignItems"] = "center";
 obj1["overflow"] = "hidden";
-obj.layer = obj1;
-let closure_9 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrame.tsx");
+_createForOfIteratorHelperLoose.layer = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrame.tsx");
 
 export default function ProfileFrame(arg0) {
   const tmp = callback((override) => override.override);
   if (null != tmp) {
     let obj = { override: tmp };
     const merged = Object.assign(arg0);
-    let tmp7 = jsx(importDefault(dependencyMap[10]), obj);
-    const tmp11 = importDefault(dependencyMap[10]);
+    let tmp7 = jsx(importDefault(8259), { override: tmp });
+    const tmp11 = importDefault(8259);
   } else {
     obj = {};
     const merged1 = Object.assign(arg0);
-    tmp7 = <LiveProfileFrame {...obj} />;
+    tmp7 = <LiveProfileFrame />;
   }
   return tmp7;
 };

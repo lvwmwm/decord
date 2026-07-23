@@ -1,31 +1,32 @@
-// Module ID: 14879
-// Function ID: 112067
+// Module ID: 14995
+// Function ID: 114235
 // Name: PreviewOverlay
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 3978, 14996, 4066, 4554, 2]
 // Exports: default
 
-// Module 14879 (PreviewOverlay)
+// Module 14995 (PreviewOverlay)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function PreviewOverlay() {
-  return <View pointerEvents="none" style={callback().previewOverlay}>{jsx(importDefault(dependencyMap[6]), {})}</View>;
+  return <View pointerEvents="none" style={_createForOfIteratorHelperLoose().previewOverlay}>{jsx(importDefault(14996), {})}</View>;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
-obj.previewArt = obj;
-obj.previewOverlay = { -9223372036854775808: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, -9223372036854775808: null };
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_themes/native/GuildThemePreviewArt.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { position: "relative", width: 256, aspectRatio: 1.5705521472392638, overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.previewArt = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.previewOverlay = { position: "absolute", top: 7.314, left: 7.461, width: 259.862, height: 154.514 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_themes/native/GuildThemePreviewArt.tsx");
 
 export default function GuildThemePreviewArt(themeSettings) {
   themeSettings = themeSettings.themeSettings;
-  const arg1 = themeSettings;
-  const tmp2 = importDefault(dependencyMap[7])();
-  const importDefault = tmp2;
-  const items = [themeSettings, tmp2];
-  const memo = React.useMemo(() => function getGradientConfig(themeSettings, theme) {
+  const tmp2 = importDefault(4066)();
+  importDefault = tmp2;
+  let items = [themeSettings, tmp2];
+  const memo = React.useMemo(() => (function getGradientConfig(themeSettings, closure_1) {
     if (null == themeSettings) {
       return null;
     } else {
@@ -35,7 +36,7 @@ export default function GuildThemePreviewArt(themeSettings) {
         if (null != first) {
           let obj = {};
           const items = [];
-          HermesBuiltin.arraySpread(callback(closure_2[5]).getSingleColorGuildThemeGradientColors(first, theme), 0);
+          HermesBuiltin.arraySpread(themeSettings(outer2_2[5]).getSingleColorGuildThemeGradientColors(first, closure_1), 0);
           obj.colors = items;
           const gradientAngle = customUserThemeSettings.gradientAngle;
           let num5 = 0;
@@ -46,10 +47,10 @@ export default function GuildThemePreviewArt(themeSettings) {
           return obj;
         }
       }
-      obj = callback(closure_2[5]);
+      obj = themeSettings(outer2_2[5]);
       const guildThemePreset = obj.getGuildThemePreset(themeSettings.presetId);
       if (null != guildThemePreset) {
-        const guildThemePresetAppearance = callback(closure_2[5]).getGuildThemePresetAppearance(guildThemePreset, theme);
+        const guildThemePresetAppearance = themeSettings(outer2_2[5]).getGuildThemePresetAppearance(guildThemePreset, closure_1);
         obj = {};
         const colors = guildThemePresetAppearance.colors;
         obj.colors = colors.map((hex) => hex.hex);
@@ -61,11 +62,11 @@ export default function GuildThemePreviewArt(themeSettings) {
         return null;
       }
     }
-  }(themeSettings, tmp2), items);
-  const items1 = [callback().previewArt, themeSettings.style];
+  })(themeSettings, closure_1), items);
+  const items1 = [_createForOfIteratorHelperLoose().previewArt, themeSettings.style];
   if (null == memo) {
     let obj = { style: items1, children: <PreviewOverlay /> };
-    let tmp10 = <View {...obj} />;
+    let tmp10 = <View style={items1}><PreviewOverlay /></View>;
   } else {
     obj = {};
     ({ colors: obj.colors, locations: obj.locations } = memo);
@@ -73,8 +74,8 @@ export default function GuildThemePreviewArt(themeSettings) {
     obj.angle = memo.angle;
     obj.style = items1;
     obj.children = <PreviewOverlay />;
-    tmp10 = jsx(importDefault(dependencyMap[8]), obj);
-    const tmp7 = importDefault(dependencyMap[8]);
+    tmp10 = jsx(importDefault(4554), {});
+    const tmp7 = importDefault(4554);
   }
   return tmp10;
 };

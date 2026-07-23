@@ -1,31 +1,30 @@
-// Module ID: 13725
-// Function ID: 103825
+// Module ID: 13839
+// Function ID: 105981
 // Name: _addRestrictedScheduleRule
-// Dependencies: []
+// Dependencies: [5, 653, 507, 686, 2]
 // Exports: addRestrictedScheduleRule, deleteRestrictedScheduleRule, updateRestrictedScheduleRule
 
-// Module 13725 (_addRestrictedScheduleRule)
+// Module 13839 (_addRestrictedScheduleRule)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _addRestrictedScheduleRule() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _addRestrictedScheduleRule = obj;
   return obj(...arguments);
 }
 function _updateRestrictedScheduleRule() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _updateRestrictedScheduleRule = obj;
   return obj(...arguments);
 }
 function _deleteRestrictedScheduleRule() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _deleteRestrictedScheduleRule = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/parent_tools/RestrictedScheduleActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/RestrictedScheduleActionCreators.tsx");
 
 export const addRestrictedScheduleRule = function addRestrictedScheduleRule(arg0, arg1) {
   return _addRestrictedScheduleRule(...arguments);

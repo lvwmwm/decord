@@ -1,13 +1,14 @@
 // Module ID: 1055
-// Function ID: 11306
+// Function ID: 11307
 // Name: linkedErrorsIntegration
-// Dependencies: []
+// Dependencies: [794, 1007]
 
 // Module 1055 (linkedErrorsIntegration)
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
 
-export const linkedErrorsIntegration = _module.defineIntegration(function _linkedErrorsIntegration() {
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const linkedErrorsIntegration = registerSpanErrorInstrumentation.defineIntegration(function _linkedErrorsIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       let first = arguments[0];
@@ -18,7 +19,7 @@ export const linkedErrorsIntegration = _module.defineIntegration(function _linke
       name: "LinkedErrors",
       preprocessEvent(arg0, arg1, getOptions) {
           const options = getOptions.getOptions();
-          const result = callback(closure_1[0]).applyAggregateErrorsToEvent(callback(closure_1[1]).exceptionFromError, options.stackParser, closure_1, callback, arg0, arg1);
+          const result = callback(794).applyAggregateErrorsToEvent(callback(1007).exceptionFromError, options.stackParser, dependencyMap, callback, arg0, arg1);
         }
     };
     return obj;

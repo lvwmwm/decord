@@ -1,21 +1,23 @@
-// Module ID: 16164
-// Function ID: 124578
+// Module ID: 16281
+// Function ID: 126751
 // Name: GuildSettingsServerTagPickerCell
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 3848, 2]
 // Exports: default
 
-// Module 16164 (GuildSettingsServerTagPickerCell)
-importAll(dependencyMap[0]);
-const Pressable = arg1(dependencyMap[1]).Pressable;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Bool(true)": "isArray", "Bool(true)": "constructor", 324103777: "apply", 1369596274: "isArray", borderRadius: importDefault(dependencyMap[4]).radii.md, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
-obj.cell = obj;
-obj.cellSelected = { borderColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_500 };
-let closure_4 = obj.createStyles(obj);
-const obj1 = { borderColor: importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_500 };
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPickerCell.tsx");
+// Module 16281 (GuildSettingsServerTagPickerCell)
+import "result";
+import { Pressable } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.md, borderWidth: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
+_createForOfIteratorHelperLoose.cell = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.cellSelected = { borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500 };
+const result = require("jsxProd").fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPickerCell.tsx");
 
 export default function GuildSettingsServerTagPickerCell(accessibilityLabel) {
   let accessibilityRole;
@@ -28,8 +30,8 @@ export default function GuildSettingsServerTagPickerCell(accessibilityLabel) {
     accessibilityRole = "radio";
   }
   ({ onPress, children } = accessibilityLabel);
-  const tmp = callback();
-  let obj = arg1(dependencyMap[5]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(3848) /* useCheckboxA11yNative */;
   obj = { selected };
   let radioA11yNative = obj.useRadioA11yNative(obj);
   if ("button" === accessibilityRole) {
@@ -50,5 +52,5 @@ export default function GuildSettingsServerTagPickerCell(accessibilityLabel) {
   items[2] = { width: size, height: size };
   obj2.style = items;
   obj2.children = children;
-  return <Pressable {...obj2} />;
+  return <Pressable />;
 };

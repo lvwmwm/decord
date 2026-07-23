@@ -1,13 +1,15 @@
 // Module ID: 1160
-// Function ID: 13201
+// Function ID: 13202
 // Name: createReleaseFromGlobalReleaseConstants
-// Dependencies: []
+// Dependencies: [793, 978]
 
 // Module 1160 (createReleaseFromGlobalReleaseConstants)
+const require = arg1;
+const dependencyMap = arg6;
 function createReleaseFromGlobalReleaseConstants() {
   let name;
   let version;
-  const SENTRY_RELEASE = arg1(arg6[0]).RN_GLOBAL_OBJ.SENTRY_RELEASE;
+  const SENTRY_RELEASE = require(793) /* RN_GLOBAL_OBJ */.RN_GLOBAL_OBJ.SENTRY_RELEASE;
   if (SENTRY_RELEASE) {
     ({ name, version } = SENTRY_RELEASE);
     if (name) {
@@ -23,5 +25,5 @@ arg5.getDefaultRelease = function getDefaultRelease() {
   if (!obj.notWeb()) {
     return createReleaseFromGlobalReleaseConstants();
   }
-  const obj = arg1(arg6[1]);
+  obj = require(978) /* isHermesEnabled */;
 };

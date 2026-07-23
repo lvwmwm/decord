@@ -1,9 +1,30 @@
-// Module ID: 16435
-// Function ID: 126927
+// Module ID: 16552
+// Function ID: 129101
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 1838, 3758, 3767, 1906, 1849, 653, 16553, 16554, 4320, 11953, 1392, 1327, 3969, 5078, 2]
 
-// Module 16435 (_isNativeReflectConstruct)
+// Module 16552 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import computeDefaultGroupDmNameFromUserIds from "computeDefaultGroupDmNameFromUserIds";
+import getAvatarURL from "getAvatarURL";
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
+import _slicedToArray from "_slicedToArray";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_createForOfIteratorHelperLoose";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import ME from "ME";
+import tmp3 from "AutomaticLifecycleManager";
+
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +34,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +87,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,13 +114,13 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function indexingEnabled() {
-  let obj = importDefault(dependencyMap[13]);
-  obj = { autoTrackExposure: true, disable: !importDefault(dependencyMap[14]).hasSearch() };
+  let obj = importDefault(16553);
+  obj = { autoTrackExposure: true, disable: !importDefault(16554).hasSearch() };
   return obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).searchEnabled;
 }
 function clearEnabled() {
-  let obj = importDefault(dependencyMap[13]);
-  obj = { autoTrackExposure: true, disable: !importDefault(dependencyMap[14]).hasSearch() };
+  let obj = importDefault(16553);
+  obj = { autoTrackExposure: true, disable: !importDefault(16554).hasSearch() };
   return obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).clearEnabled;
 }
 function handleRelativeURL(channelIconURL) {
@@ -116,34 +137,33 @@ function handleRelativeURL(channelIconURL) {
     sum = channelIconURL;
   }
 }
-function makeSearchItem(isGuildVocal, name) {
-  let flag = arg2;
-  if (arg2 === undefined) {
+function makeSearchItem(value, guild, flag) {
+  if (flag === undefined) {
     flag = false;
   }
-  let obj = name(dependencyMap[15]);
-  const channelName = obj.computeChannelName(isGuildVocal, closure_14, closure_12, true);
-  const channelName1 = name(dependencyMap[15]).computeChannelName(isGuildVocal, closure_14, closure_12, false);
+  let obj = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+  const channelName = obj.computeChannelName(value, closure_14, closure_12, true);
+  const channelName1 = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(value, closure_14, closure_12, false);
   const items = [];
   const items1 = [channelName, channelName1];
   const items2 = [];
-  if (isGuildVocal.isGuildVocal()) {
+  if (value.isGuildVocal()) {
     const _HermesInternal = HermesInternal;
     items1.push("!" + channelName1);
   }
-  const channel = authStore.getChannel(isGuildVocal.parent_id);
+  const channel = authStore.getChannel(value.parent_id);
   if (null != channel) {
-    const obj3 = name(dependencyMap[15]);
+    const obj3 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
     const channelName2 = obj3.computeChannelName(channel, closure_14, closure_12, true);
-    const obj4 = name(dependencyMap[15]);
+    const obj4 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
     const channelName3 = obj4.computeChannelName(channel, closure_14, closure_12, false);
     items2.push(channelName2);
     items2.push(channelName3);
     items.push(channelName2);
   }
-  if (null != name) {
-    items2.push(name.name);
-    items.push(name.name);
+  if (null != guild) {
+    items2.push(guild.name);
+    items.push(guild.name);
   }
   let str2 = "";
   if (items.length > 0) {
@@ -152,20 +172,20 @@ function makeSearchItem(isGuildVocal, name) {
   }
   const sum = channelName + str2;
   let id;
-  if (null != name) {
-    id = name.id;
+  if (null != guild) {
+    id = guild.id;
   }
   if (null == id) {
     id = closure_15;
   }
-  const CHANNELResult = closure_19.CHANNEL(id, isGuildVocal.id);
+  const CHANNELResult = closure_19.CHANNEL(id, value.id);
   obj = { id: CHANNELResult, relatedUniqueIdentifier: CHANNELResult, type: "url", title: sum, displayName: sum };
-  const obj2 = name(dependencyMap[15]);
-  obj.thumbnailURL = handleRelativeURL(name(dependencyMap[16]).getChannelIconURL(isGuildVocal, 128, false));
-  if (isGuildVocal.type === constants.DM) {
-    let OTHER_CHANNEL = constants3.DM;
+  const obj2 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+  obj.thumbnailURL = handleRelativeURL(require(11953) /* getChannelIconURL */.getChannelIconURL(value, 128, false));
+  if (value.type === constants.DM) {
+    let OTHER_CHANNEL = constants4.DM;
   } else {
-    OTHER_CHANNEL = constants3.OTHER_CHANNEL;
+    OTHER_CHANNEL = constants4.OTHER_CHANNEL;
   }
   obj.rankingHint = OTHER_CHANNEL;
   obj.keywords = items2;
@@ -173,41 +193,40 @@ function makeSearchItem(isGuildVocal, name) {
   obj.isUpdate = flag;
   return obj;
 }
-function getGuildThumbnail(id) {
+function getGuildThumbnail(guild) {
   let tmp;
-  if (null != id) {
-    let obj = importDefault(dependencyMap[17]);
+  if (null != guild) {
+    let obj = importDefault(1392);
     obj = {};
-    ({ id: obj2.id, icon: obj2.icon } = id);
+    ({ id: obj2.id, icon: obj2.icon } = guild);
     obj.size = 128;
     tmp = handleRelativeURL(obj.getGuildIconURL(obj));
   }
   return tmp;
 }
-function makeGuildDomain(id) {
+function makeGuildDomain(id, flag) {
   let iter2;
-  let flag = arg1;
-  if (arg1 === undefined) {
+  if (flag === undefined) {
     flag = false;
   }
   const CHANNELResult = closure_19.CHANNEL(id.id);
   let obj = { id: CHANNELResult, relatedUniqueIdentifier: CHANNELResult, type: "url", title: id.name, displayName: id.name };
   const items = ["*" + id.name];
   obj.alternateNames = items;
-  obj.rankingHint = constants3.GUILD;
+  obj.rankingHint = constants4.GUILD;
   const items1 = [obj];
   const mutableGuildChannelsForGuild = authStore.getMutableGuildChannelsForGuild(id.id);
   for (const key10029 in mutableGuildChannelsForGuild) {
     let tmp11 = key10029;
     let tmp12 = mutableGuildChannelsForGuild[key10029];
     let tmp13 = closure_11;
-    let tmp14 = closure_18;
-    if (!closure_11.can(closure_18.VIEW_CHANNEL, tmp12)) {
+    let tmp14 = constants3;
+    if (!closure_11.can(constants3.VIEW_CHANNEL, tmp12)) {
       continue;
     } else {
-      let tmp4 = closure_27;
-      let arr = items1.push(closure_27(tmp12, arg0, flag));
-      // continue
+      let tmp4 = makeSearchItem;
+      let arr = items1.push(makeSearchItem(tmp12, arg0, flag));
+      continue;
     }
     continue;
   }
@@ -217,10 +236,10 @@ function makeGuildDomain(id) {
     do {
       let value = iter.value;
       let tmp7 = closure_11;
-      let tmp8 = closure_18;
-      if (closure_11.can(closure_18.VIEW_CHANNEL, value)) {
-        let tmp9 = closure_27;
-        arr = items1.push(closure_27(value, id, flag));
+      let tmp8 = constants3;
+      if (closure_11.can(constants3.VIEW_CHANNEL, value)) {
+        let tmp9 = makeSearchItem;
+        arr = items1.push(makeSearchItem(value, id, flag));
       }
       iter2 = tmp6();
       iter = iter2;
@@ -244,39 +263,39 @@ function getChannelKeywords(channel) {
   if (channel.type === constants.DM) {
     const recipients = channel.recipients;
     const mapped = recipients.map(getUser.getUser);
-    const first = callback3(mapped.filter(arg1(dependencyMap[18]).isNotNullish), 1)[0];
+    const first = callback3(mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish), 1)[0];
     if (null != first) {
-      const globalName = importDefault(dependencyMap[19]).getGlobalName(first);
+      const globalName = importDefault(3969).getGlobalName(first);
       if (null != globalName) {
         items.push(globalName);
       }
       items.push(first.username);
       items.push(`@${tmp23.username}`);
-      const nickname = nickname.getNickname(first.id);
+      nickname = nickname.getNickname(first.id);
       if (null != nickname) {
         items.push(nickname);
       }
-      const obj2 = importDefault(dependencyMap[19]);
-      const name = importDefault(dependencyMap[19]).getName(first);
+      const obj2 = importDefault(3969);
+      const name = importDefault(3969).getName(first);
       if (null != name) {
         items.push(name);
       }
-      const obj = importDefault(dependencyMap[19]);
+      const obj = importDefault(3969);
     }
   }
   return items;
 }
 function setChannelActivity(channelId) {
-  let obj = importDefault(dependencyMap[13]);
-  obj = { autoTrackExposure: true, disable: !importDefault(dependencyMap[14]).hasUserActivity() };
+  let obj = importDefault(16553);
+  obj = { autoTrackExposure: true, disable: !importDefault(16554).hasUserActivity() };
   if (obj.getCurrentConfig({ location: "NativeIntentsManager" }, obj).activityEnabled) {
     let channel;
     if (null != channelId) {
       channel = authStore.getChannel(channelId);
     }
     if (null != channel) {
-      const guild = guild.getGuild(channel.guild_id);
-      const obj5 = arg1(dependencyMap[15]);
+      const guild = store.getGuild(channel.guild_id);
+      const obj5 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
       const channelName = obj5.computeChannelName(channel, closure_14, closure_12, true);
       let str2 = "";
       if (null != guild) {
@@ -301,11 +320,11 @@ function setChannelActivity(channelId) {
       obj.keywords = items1;
       obj.displayName = sum;
       obj.type = "com.discord.view-channel";
-      importDefault(dependencyMap[14]).setActivity(obj);
-      const obj7 = importDefault(dependencyMap[14]);
+      importDefault(16554).setActivity(obj);
+      const obj7 = importDefault(16554);
     } else {
-      importDefault(dependencyMap[14]).resignActivity();
-      const obj4 = importDefault(dependencyMap[14]);
+      importDefault(16554).resignActivity();
+      const obj4 = importDefault(16554);
     }
   }
 }
@@ -329,10 +348,10 @@ function indexChannelUpdates(items) {
       do {
         let value = iter2.value;
         let tmp5 = closure_11;
-        let tmp6 = closure_18;
-        if (closure_11.can(closure_18.VIEW_CHANNEL, value)) {
-          let tmp8 = closure_10;
-          let guild = closure_10.getGuild(value.guild_id);
+        let tmp6 = constants3;
+        if (closure_11.can(constants3.VIEW_CHANNEL, value)) {
+          let tmp8 = store;
+          let guild = store.getGuild(value.guild_id);
           let id;
           if (null != guild) {
             id = guild.id;
@@ -341,8 +360,8 @@ function indexChannelUpdates(items) {
           if (null == id) {
             tmp11 = closure_15;
           }
-          let tmp12 = closure_27;
-          let tmp13 = closure_27(value, guild, true);
+          let tmp12 = makeSearchItem;
+          let tmp13 = makeSearchItem(value, guild, true);
           let arr3 = obj[tmp11];
           if (null != arr3) {
             let arr = arr3.push(tmp13);
@@ -352,9 +371,9 @@ function indexChannelUpdates(items) {
             let tmp25 = tmp13;
             let tmp26 = arr3;
           } else {
-            let tmp14 = closure_28;
+            let tmp14 = getGuildThumbnail;
             let items2 = [tmp13];
-            obj = { id: tmp11, items: items2, defaultThumbnailURL: closure_28(guild) };
+            obj = { id: tmp11, items: items2, defaultThumbnailURL: getGuildThumbnail(guild) };
             arr = items.push(obj);
             obj[tmp11] = items2;
             let tmp16 = id;
@@ -371,196 +390,18 @@ function indexChannelUpdates(items) {
       } while (!iter3.done);
     }
     if (items.length > 0) {
-      importDefault(dependencyMap[14]).indexDomains(items);
-      const obj3 = importDefault(dependencyMap[14]);
+      importDefault(16554).indexDomains(items);
+      const obj3 = importDefault(16554);
     }
     if (items1.length > 0) {
-      importDefault(dependencyMap[14]).deleteSearchItems(items1);
-      const obj4 = importDefault(dependencyMap[14]);
+      importDefault(16554).deleteSearchItems(items1);
+      const obj4 = importDefault(16554);
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-({ ME: closure_15, ChannelTypes: closure_16, Links: closure_17, Permissions: closure_18, Routes: closure_19 } = arg1(dependencyMap[12]));
+({ ME: closure_15, ChannelTypes: closure_16, Links: closure_17, Permissions: closure_18, Routes: closure_19 } = ME);
 let closure_20 = { GUILD: 100, [100]: "GUILD", DM: 75, [75]: "DM", OTHER_CHANNEL: 50, [50]: "OTHER_CHANNEL" };
-let tmp3 = (arg0) => {
-  class NativeIntentsManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, NativeIntentsManager);
-      items1 = [...items];
-      obj = closure_6(NativeIntentsManager);
-      tmp2 = closure_5;
-      if (closure_21()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.actions = { POST_CONNECTION_OPEN: tmp2Result.handleInit, LOGOUT: tmp2Result.handleLogout, CHANNEL_SELECT: tmp2Result.handleChannelSelect, CHANNEL_CREATE: tmp2Result.handleChannelCreate, CHANNEL_DELETE: tmp2Result.handleChannelDelete, CHANNEL_UPDATES: tmp2Result.handleChannelUpdates, GUILD_CREATE: tmp2Result.handleGuildCreateOrUpdate, GUILD_UPDATE: tmp2Result.handleGuildCreateOrUpdate, GUILD_DELETE: tmp2Result.handleGuildDelete, RELATIONSHIP_ADD: tmp2Result.handleRelationshipChange, RELATIONSHIP_REMOVE: tmp2Result.handleRelationshipChange, RELATIONSHIP_UPDATE: tmp2Result.handleRelationshipChange, THREAD_CREATE: tmp2Result.handleChannelCreate, THREAD_DELETE: tmp2Result.handleChannelDelete, THREAD_UPDATE: tmp2Result.handleThreadUpdate, USER_UPDATE: tmp2Result.handleUserUpdate };
-      return tmp2Result;
-    }
-  }
-  const arg1 = NativeIntentsManager;
-  callback2(NativeIntentsManager, arg0);
-  let obj = {
-    key: "handleInit",
-    value() {
-      callback10(currentlySelectedChannelId.getCurrentlySelectedChannelId());
-      if (callback6()) {
-        callback(closure_2[14]).clearSearchIndex();
-        const obj = callback(closure_2[14]);
-      }
-      if (callback5()) {
-        function initializeIndex() {
-          if (callback2()) {
-            const guildsArray = guildsArray.getGuildsArray();
-            const mapped = guildsArray.map((arg0) => callback(arg0));
-            const items = [];
-            const mutablePrivateChannels = mutablePrivateChannels.getMutablePrivateChannels();
-            for (const key10015 in mutablePrivateChannels) {
-              let tmp10 = key10015;
-              let tmp11 = closure_27;
-              let arr = items.push(closure_27(mutablePrivateChannels[key10015]));
-            }
-            const obj = { id: closure_15, items };
-            mapped.push(obj);
-            callback(closure_2[14]).indexDomains(mapped);
-            const obj2 = callback(closure_2[14]);
-          }
-        }();
-      }
-    }
-  };
-  const items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "handleLogout",
-    value() {
-      if (callback6()) {
-        callback(closure_2[14]).clearSearchIndex();
-        const obj = callback(closure_2[14]);
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "handleChannelSelect",
-    value(channelId) {
-      callback10(channelId.channelId);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "handleChannelCreate",
-    value(channel) {
-      channel = channel.channel;
-      if (callback5()) {
-        if (closure_11.can(constants.VIEW_CHANNEL, channel)) {
-          const guild = store.getGuild(channel.guild_id);
-          if (null != guild) {
-            let obj = callback(closure_2[14]);
-            obj = {};
-            let id;
-            if (null != guild) {
-              id = guild.id;
-            }
-            if (null == id) {
-              id = closure_15;
-            }
-            obj.id = id;
-            const items = [callback7(channel, guild)];
-            obj.items = items;
-            obj.defaultThumbnailURL = callback8(guild);
-            const items1 = [obj];
-            obj.indexDomains(items1);
-            const tmp7 = callback8(guild);
-          }
-        }
-      }
-    }
-  };
-  items[4] = {
-    key: "handleChannelDelete",
-    value(channel) {
-      if (callback5()) {
-        const items = [channel.channel.id];
-        callback(closure_2[14]).deleteSearchItems(items);
-        const obj = callback(closure_2[14]);
-      }
-    }
-  };
-  items[5] = {
-    key: "handleChannelUpdates",
-    value(channels) {
-      callback12(channels.channels);
-    }
-  };
-  items[6] = {
-    key: "handleGuildCreateOrUpdate",
-    value(guild) {
-      guild = guild.guild;
-      if (callback5()) {
-        guild = store.getGuild(guild.id);
-        if (null != guild) {
-          const items = [callback9(guild, "GUILD_UPDATE" === guild.type)];
-          callback(closure_2[14]).indexDomains(items);
-          const obj2 = callback(closure_2[14]);
-        } else {
-          const items1 = [guild.id];
-          callback(closure_2[14]).deleteSearchDomains(items1);
-          const obj = callback(closure_2[14]);
-        }
-      }
-    }
-  };
-  items[7] = {
-    key: "handleGuildDelete",
-    value(guild) {
-      if (callback5()) {
-        const items = [guild.guild.id];
-        callback(closure_2[14]).deleteSearchDomains(items);
-        const obj = callback(closure_2[14]);
-      }
-    }
-  };
-  items[8] = {
-    key: "handleThreadUpdate",
-    value(channel) {
-      const items = [channel.channel];
-      callback12(items);
-    }
-  };
-  items[9] = {
-    key: "handleUserUpdate",
-    value(user) {
-      callback11(user.user.id);
-    }
-  };
-  items[10] = {
-    key: "handleRelationshipChange",
-    value(relationship) {
-      callback11(relationship.relationship.id);
-    }
-  };
-  return callback(NativeIntentsManager, items);
-}(importDefault(dependencyMap[20]));
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[12]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/native_intents/NativeIntentsManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/native_intents/NativeIntentsManager.tsx");
 
 export default tmp3;

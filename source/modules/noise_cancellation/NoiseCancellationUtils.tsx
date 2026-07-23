@@ -1,23 +1,25 @@
-// Module ID: 10714
-// Function ID: 83402
+// Module ID: 10724
+// Function ID: 83451
 // Name: getNoiseCancellationDeferredToSystem
-// Dependencies: []
+// Dependencies: [4177, 10725, 566, 2]
 // Exports: useNoiseCancellationDeferredToSystem
 
-// Module 10714 (getNoiseCancellationDeferredToSystem)
+// Module 10724 (getNoiseCancellationDeferredToSystem)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getNoiseCancellationDeferredToSystem(arg0) {
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = closure_3;
+    obj = _isNativeReflectConstruct;
   }
   const systemMicrophoneMode = obj.getSystemMicrophoneMode();
-  return !importDefault(dependencyMap[1])(true, systemMicrophoneMode);
+  return !importDefault(10725)(true, systemMicrophoneMode);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/noise_cancellation/NoiseCancellationUtils.tsx");
+const result = require("initialize").fileFinishedImporting("modules/noise_cancellation/NoiseCancellationUtils.tsx");
 
 export { getNoiseCancellationDeferredToSystem };
 export const useNoiseCancellationDeferredToSystem = function useNoiseCancellationDeferredToSystem() {
-  const items = [closure_3];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => callback(closure_3));
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_4(outer1_3));
 };

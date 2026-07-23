@@ -1,54 +1,78 @@
-// Module ID: 14521
-// Function ID: 109325
+// Module ID: 14635
+// Function ID: 111485
 // Name: handleNewUserOnboarding
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 4808, 1850, 1921, 1278, 1280, 1849, 6960, 653, 11734, 1851, 10134, 1281, 33, 4130, 689, 11781, 686, 11733, 7955, 13370, 1331, 1334, 3946, 4337, 14636, 1934, 10146, 13684, 13686, 10312, 1557, 566, 3803, 14652, 5503, 5504, 13508, 1273, 14156, 3976, 14215, 14653, 9106, 1212, 5165, 14253, 5171, 9210, 14392, 14654, 9218, 12623, 1184, 1844, 2]
 // Exports: default
 
-// Module 14521 (handleNewUserOnboarding)
+// Module 14635 (handleNewUserOnboarding)
+import isBlockedDomain from "isBlockedDomain";
+import module_13684 from "module_13684";
+import { ScrollView } from "module_4337";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import { ThemeTypes } from "ME";
+import { NewUserTypes } from "NewUserTypes";
+import GuildFeatures from "GuildFeatures";
+import { VIBING_WUMPUS_MODAL_KEY } from "LOCATION_CONTEXT_MOBILE";
+import { SystemThemeState } from "SystemThemeState";
+import jsxProd from "getExpandNUXState";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_16;
+let closure_17;
+let closure_20;
+let closure_21;
+const require = arg1;
 function handleNewUserOnboarding() {
-  arg1(dependencyMap[19]).setNewUser(NewUserTypes.ORGANIC_REGISTERED);
-  const obj = arg1(dependencyMap[19]);
-  importDefault(dependencyMap[20]).wait(arg1(dependencyMap[21]).startOnboarding);
+  require(11781) /* setNewUser */.setNewUser(NewUserTypes.ORGANIC_REGISTERED);
+  const obj = require(11781) /* setNewUser */;
+  importDefault(686).wait(require(11733) /* _startContactSyncForDiscoverability */.startOnboarding);
 }
 function handleThemeChange(arg0) {
-  importDefault(dependencyMap[22]).updateTheme(arg0 ? ThemeTypes.LIGHT : ThemeTypes.DARK);
+  importDefault(7955).updateTheme(arg0 ? ThemeTypes.LIGHT : ThemeTypes.DARK);
 }
 function handleReducedMotionChange(arg0) {
   let str = "no-preference";
   if (arg0) {
     str = "reduce";
   }
-  const result = arg1(dependencyMap[23]).setPrefersReducedMotion(str);
+  const result = require(13370) /* setFontSize */.setPrefersReducedMotion(str);
 }
 function handleLaunchWelcomeReset() {
-  const result = arg1(dependencyMap[24]).removeDismissedContent(arg1(dependencyMap[25]).DismissibleContent.SEEN_LAUNCH_WELCOME);
-  const obj = arg1(dependencyMap[24]);
-  const result1 = arg1(dependencyMap[26]).UNSAFE_markDismissibleContentAsDismissed(arg1(dependencyMap[25]).DismissibleContent.SEEN_OLD_DESIGN);
+  const result = require(1331) /* _createForOfIteratorHelperLoose */.removeDismissedContent(require(1334) /* DismissibleContent */.DismissibleContent.SEEN_LAUNCH_WELCOME);
+  const obj = require(1331) /* _createForOfIteratorHelperLoose */;
+  const result1 = require(3946) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.SEEN_OLD_DESIGN);
 }
 function showVibingWumpus() {
-  let obj = importDefault(dependencyMap[27]);
+  let obj = importDefault(4337);
   obj = {
     onClose() {
 
     }
   };
-  obj.pushLazy(arg1(dependencyMap[29])(dependencyMap[30], dependencyMap.paths), obj, VIBING_WUMPUS_MODAL_KEY);
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(10146, dependencyMap.paths), obj, VIBING_WUMPUS_MODAL_KEY);
 }
 function handleResetDoubleTapState() {
-  const result = arg1(dependencyMap[24]).removeDismissedContent(arg1(dependencyMap[25]).DismissibleContent.DOUBLE_TAP_TO_REACT_UPSELL);
-  const obj = arg1(dependencyMap[24]);
-  const result1 = arg1(dependencyMap[24]).removeDismissedContent(arg1(dependencyMap[25]).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER);
-  const obj2 = arg1(dependencyMap[24]);
-  const result2 = arg1(dependencyMap[24]).removeDismissedContent(arg1(dependencyMap[25]).DismissibleContent.DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
-  const PreloadedUserSettingsActionCreators = arg1(dependencyMap[24]).PreloadedUserSettingsActionCreators;
+  const result = require(1331) /* _createForOfIteratorHelperLoose */.removeDismissedContent(require(1334) /* DismissibleContent */.DismissibleContent.DOUBLE_TAP_TO_REACT_UPSELL);
+  const obj = require(1331) /* _createForOfIteratorHelperLoose */;
+  const result1 = require(1331) /* _createForOfIteratorHelperLoose */.removeDismissedContent(require(1334) /* DismissibleContent */.DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER);
+  const obj2 = require(1331) /* _createForOfIteratorHelperLoose */;
+  const result2 = require(1331) /* _createForOfIteratorHelperLoose */.removeDismissedContent(require(1334) /* DismissibleContent */.DismissibleContent.DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
+  const PreloadedUserSettingsActionCreators = require(1331) /* _createForOfIteratorHelperLoose */.PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("textAndImages", (arg0) => {
     arg0.defaultReactionEmoji = undefined;
-  }, arg1(dependencyMap[24]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+  }, require(1331) /* _createForOfIteratorHelperLoose */.UserSettingsDelay.INFREQUENT_USER_ACTION);
 }
 function launchTotpSetupSuccess() {
-  let arr = importDefault(dependencyMap[27]);
+  let arr = importDefault(4337);
   arr = arr.pop();
-  const items = [arg1(dependencyMap[29])(dependencyMap[31], dependencyMap.paths), arg1(dependencyMap[29])(dependencyMap[32], dependencyMap.paths)];
+  const items = [require(1934) /* maybeLoadBundle */(13684, dependencyMap.paths), require(1934) /* maybeLoadBundle */(13686, dependencyMap.paths)];
   Promise.all(items).then((arg0) => {
     const iter = arg0[Symbol.iterator]();
     let nextResult;
@@ -70,40 +94,22 @@ function launchTotpSetupSuccess() {
   });
 }
 function handleResetInAppNotificationExpandNux() {
-  const result = arg1(dependencyMap[24]).removeDismissedContent(arg1(dependencyMap[25]).DismissibleContent.IN_APP_NOTIFICATION_EXPAND_NUX);
-  const obj = arg1(dependencyMap[24]);
-  arg1(dependencyMap[33]).resetExpandNUXState();
+  const result = require(1331) /* _createForOfIteratorHelperLoose */.removeDismissedContent(require(1334) /* DismissibleContent */.DismissibleContent.IN_APP_NOTIFICATION_EXPAND_NUX);
+  const obj = require(1331) /* _createForOfIteratorHelperLoose */;
+  require(10312) /* getExpandNUXState */.resetExpandNUXState();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const ScrollView = arg1(dependencyMap[2]).ScrollView;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-const ThemeTypes = arg1(dependencyMap[11]).ThemeTypes;
-const NewUserTypes = arg1(dependencyMap[12]).NewUserTypes;
-({ PREMIUM_TYPE_OVERRIDE_OPTIONS: closure_16, UNSELECTED_PREMIUM_TYPE_OVERRIDE: closure_17 } = arg1(dependencyMap[13]));
-const VIBING_WUMPUS_MODAL_KEY = arg1(dependencyMap[14]).VIBING_WUMPUS_MODAL_KEY;
-const SystemThemeState = arg1(dependencyMap[15]).SystemThemeState;
-const tmp2 = arg1(dependencyMap[13]);
-({ jsx: closure_20, jsxs: closure_21 } = arg1(dependencyMap[16]));
-let obj = arg1(dependencyMap[17]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[18]).colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[16]);
-obj.content = { padding: importDefault(dependencyMap[18]).space.PX_16 };
-let closure_22 = obj.createStyles(obj);
+({ PREMIUM_TYPE_OVERRIDE_OPTIONS: closure_16, UNSELECTED_PREMIUM_TYPE_OVERRIDE: closure_17 } = GuildFeatures);
+({ jsx: closure_20, jsxs: closure_21 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.content = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 function launchMFA() {
-  let arr = importDefault(dependencyMap[27]);
+  let arr = importDefault(4337);
   arr = arr.pop();
-  arg1(dependencyMap[29])(dependencyMap[28], dependencyMap.paths).then((openMFAModal) => {
-    const items = [{ _oneway: -0.00000000000000000000000000002525509996304542, lj: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002804265348448446 }, { type: "totp" }, { type: "backup" }, { type: "sms" }, { type: "password" }];
+  require(1934) /* maybeLoadBundle */(14636, dependencyMap.paths).then((openMFAModal) => {
+    const items = [{ type: "webauthn", challenge: "{}" }, { type: "totp" }, { type: "backup" }, { type: "sms" }, { type: "password" }];
     openMFAModal.openMFAModal({ ticket: "ticket", methods: items }, () => {
 
     }, () => {
@@ -111,58 +117,55 @@ function launchMFA() {
     });
   });
 }
-const obj1 = { padding: importDefault(dependencyMap[18]).space.PX_16 };
-const result = arg1(dependencyMap[58]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsQuickActionsScreen.tsx");
+let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsQuickActionsScreen.tsx");
 
 export default function DevToolsQuickActionsScreen() {
   let locale;
   let usingSystemTheme;
-  const tmp = callback4();
-  let obj = arg1(closure_2[35]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = locale(566);
   const items = [closure_10, closure_9, closure_11, closure_13];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ theme: theme.theme, usingSystemTheme: useSystemTheme.useSystemTheme === constants.ON, locale: locale.locale, showDevWidget: showDevWidget.showDevWidget }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ theme: outer1_10.theme, usingSystemTheme: outer1_11.useSystemTheme === outer1_19.ON, locale: outer1_9.locale, showDevWidget: outer1_13.showDevWidget }));
   ({ usingSystemTheme, locale } = stateFromStoresObject);
-  const arg1 = locale;
   const showDevWidget = stateFromStoresObject.showDevWidget;
-  const importDefault = showDevWidget;
-  let obj1 = arg1(closure_2[35]);
+  let obj1 = locale(566);
   const items1 = [closure_12];
-  closure_2 = obj1.useStateFromStores(items1, () => currentUser.getCurrentUser());
-  let obj2 = arg1(closure_2[35]);
+  const dependencyMap = obj1.useStateFromStores(items1, () => outer1_12.getCurrentUser());
+  let obj2 = locale(566);
   const items2 = [closure_8];
-  const callback = obj2.useStateFromStores(items2, () => premiumTypeOverride.getPremiumTypeOverride());
+  const callback = obj2.useStateFromStores(items2, () => outer1_8.getPremiumTypeOverride());
   const tmp4 = callback(React.useState(false), 2);
-  const React = tmp4[1];
-  const IgnoreProfileSpeedbumpDisabled = arg1(closure_2[36]).IgnoreProfileSpeedbumpDisabled;
+  React = tmp4[1];
+  let IgnoreProfileSpeedbumpDisabled = locale(3803).IgnoreProfileSpeedbumpDisabled;
   const setting = IgnoreProfileSpeedbumpDisabled.useSetting();
-  const ScrollView = setting;
-  let obj3 = arg1(closure_2[35]);
-  const items3 = [closure_6];
+  let obj3 = locale(566);
+  const items3 = [_isNativeReflectConstruct];
   [][0] = locale;
-  const stateFromStores = obj3.useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
+  const stateFromStores = obj3.useStateFromStores(items3, () => outer1_6.useReducedMotion);
   if (tmp4[0]) {
-    return callback2(arg1(closure_2[37]).default, {});
+    return callback2(locale(14652).default, {});
   } else {
     obj = { style: tmp.container };
     const items4 = [tmp.content, ];
     obj = { paddingBottom: tmp.content.padding + tmp2.bottom };
     items4[1] = obj;
     obj.contentContainerStyle = items4;
-    obj1 = { -9223372036854775808: -995136142772518700000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000266521088137603 };
+    obj1 = { title: "General", hasIcons: false };
     obj2 = {
       label: "Show Dev Widget",
       value: showDevWidget,
       onValueChange() {
-          let obj = locale(closure_2[40]);
+          let obj = locale(13508);
           obj = { showDevWidget: !showDevWidget };
           return obj.updateDevToolsSettings(obj);
         }
     };
-    obj1.children = callback2(arg1(closure_2[39]).TableSwitchRow, obj2);
-    const items5 = [callback2(arg1(closure_2[38]).TableRowGroup, obj1), , , , , , , , ];
-    obj3 = { size: importDefault(closure_2[18]).space.PX_16 };
-    items5[1] = callback2(arg1(closure_2[41]).Spacer, obj3);
-    const obj4 = { -9223372036854775808: null, 9223372036854775807: true };
+    obj1.children = callback2(locale(5504).TableSwitchRow, obj2);
+    const items5 = [callback2(locale(5503).TableRowGroup, obj1), , , , , , , , ];
+    obj3 = { size: showDevWidget(689).space.PX_16 };
+    items5[1] = callback2(locale(1273).Spacer, obj3);
+    const obj4 = { title: "Appearance", hasIcons: true };
     const obj5 = {};
     let str2 = "Light Theme";
     if (usingSystemTheme) {
@@ -170,20 +173,20 @@ export default function DevToolsQuickActionsScreen() {
     }
     obj5.label = str2;
     obj5.disabled = usingSystemTheme;
-    obj5.icon = callback2(arg1(closure_2[42]).ThemeLightIcon, {});
-    let obj11 = arg1(closure_2[43]);
+    obj5.icon = callback2(locale(14156).ThemeLightIcon, {});
+    let obj11 = locale(3976);
     obj5.value = obj11.isThemeLight(stateFromStoresObject.theme);
     obj5.onValueChange = handleThemeChange;
-    const items6 = [callback2(arg1(closure_2[39]).TableSwitchRow, obj5), ];
-    const obj6 = { label: "Reduced Motion", icon: callback2(arg1(closure_2[44]).AccessibilityIcon, {}), value: stateFromStores, onValueChange: handleReducedMotionChange };
-    items6[1] = callback2(arg1(closure_2[39]).TableSwitchRow, obj6);
+    const items6 = [callback2(locale(5504).TableSwitchRow, obj5), ];
+    const obj6 = { label: "Reduced Motion", icon: callback2(locale(14215).AccessibilityIcon, {}), value: stateFromStores, onValueChange: handleReducedMotionChange };
+    items6[1] = callback2(locale(5504).TableSwitchRow, obj6);
     obj4.children = items6;
-    items5[2] = callback3(arg1(closure_2[38]).TableRowGroup, obj4);
-    const obj7 = { size: importDefault(closure_2[18]).space.PX_16 };
-    items5[3] = callback2(arg1(closure_2[41]).Spacer, obj7);
+    items5[2] = callback3(locale(5503).TableRowGroup, obj4);
+    const obj7 = { size: showDevWidget(689).space.PX_16 };
+    items5[3] = callback2(locale(1273).Spacer, obj7);
     const obj8 = {
-      -9223372036854775808: "isArray",
-      9223372036854775807: "value",
+      title: "Override Client-Side Premium Type",
+      hasIcons: true,
       children: closure_16.map((arg0) => {
           let label;
           let value;
@@ -191,21 +194,21 @@ export default function DevToolsQuickActionsScreen() {
           const locale = value;
           const obj = {
             onValueChange(arg0) {
-              const result = value(closure_2[45]).updateClientPremiumTypeOverride(arg0 ? value : closure_17, closure_2);
+              const result = locale(table[45]).updateClientPremiumTypeOverride(arg0 ? closure_0 : outer2_17, outer1_2);
             },
             label,
-            icon: callback2(locale(closure_2[46]).PencilIcon, {}),
-            value: value === closure_3
+            icon: outer1_20(locale(9106).PencilIcon, {}),
+            value: value === isBlockedDomain
           };
-          return callback2(locale(closure_2[39]).TableSwitchRow, obj, label);
+          return outer1_20(locale(5504).TableSwitchRow, obj, label);
         })
     };
-    items5[4] = callback2(arg1(closure_2[38]).TableRowGroup, obj8);
-    const obj9 = { size: importDefault(closure_2[18]).space.PX_16 };
-    items5[5] = callback2(arg1(closure_2[41]).Spacer, obj9);
+    items5[4] = callback2(locale(5503).TableRowGroup, obj8);
+    const obj9 = { size: showDevWidget(689).space.PX_16 };
+    items5[5] = callback2(locale(1273).Spacer, obj9);
     const obj10 = {};
-    const intl = arg1(closure_2[47]).intl;
-    obj10.title = intl.string(arg1(closure_2[47]).t.Aojq+L);
+    const intl = locale(1212).intl;
+    obj10.title = intl.string(locale(1212).t["Aojq+L"]);
     obj10.hasIcons = true;
     obj11 = {};
     let str4 = "Change to en-US";
@@ -215,108 +218,108 @@ export default function DevToolsQuickActionsScreen() {
     obj11.label = str4;
     obj11.subLabel = "Toggle to a non-english locale for change log testing, etc.";
     obj11.onPress = tmp7;
-    obj11.icon = callback2(arg1(closure_2[49]).LanguageIcon, {});
-    obj11.trailing = callback2(arg1(closure_2[50]).TableRowArrow, {});
-    const items7 = [callback2(arg1(closure_2[48]).TableRow, obj11), , , , , , , , , , ];
-    const obj12 = { onPress: handleResetDoubleTapState, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
-    items7[1] = callback2(arg1(closure_2[48]).TableRow, obj12);
-    const obj13 = { onPress: handleResetInAppNotificationExpandNux, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
-    items7[2] = callback2(arg1(closure_2[48]).TableRow, obj13);
+    obj11.icon = callback2(locale(14253).LanguageIcon, {});
+    obj11.trailing = callback2(locale(5171).TableRowArrow, {});
+    const items7 = [callback2(locale(5165).TableRow, obj11), , , , , , , , , , ];
+    const obj12 = { label: "Reset Double Tap Emoji State", subLabel: "Clears double tap emoji and resets dismissible content.", onPress: handleResetDoubleTapState, icon: callback2(locale(9210).KeyIcon, {}), trailing: callback2(locale(5171).TableRowArrow, {}) };
+    items7[1] = callback2(locale(5165).TableRow, obj12);
+    const obj13 = { label: "Reset In App Notif Expand NUX", subLabel: "Resets in app notification expand NUX dismissible content.", onPress: handleResetInAppNotificationExpandNux, icon: callback2(locale(9210).KeyIcon, {}), trailing: callback2(locale(5171).TableRowArrow, {}) };
+    items7[2] = callback2(locale(5165).TableRow, obj13);
     const obj14 = {};
-    const intl2 = arg1(closure_2[47]).intl;
-    obj14.label = intl2.string(arg1(closure_2[47]).t.yoWDXU);
+    const intl2 = locale(1212).intl;
+    obj14.label = intl2.string(locale(1212).t.yoWDXU);
     obj14.subLabel = "Dismisses dev tools when launching.";
     obj14.onPress = handleNewUserOnboarding;
-    obj14.icon = callback2(arg1(closure_2[52]).WrenchIcon, {});
-    obj14.trailing = callback2(arg1(closure_2[50]).TableRowArrow, {});
-    items7[3] = callback2(arg1(closure_2[48]).TableRow, obj14);
-    const obj15 = { onPress: launchMFA, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
-    items7[4] = callback2(arg1(closure_2[48]).TableRow, obj15);
-    const obj16 = { onPress: launchTotpSetupSuccess, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
-    items7[5] = callback2(arg1(closure_2[48]).TableRow, obj16);
-    const obj17 = { onPress: handleLaunchWelcomeReset, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
-    items7[6] = callback2(arg1(closure_2[48]).TableRow, obj17);
-    const obj18 = { onPress: showVibingWumpus, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
-    items7[7] = callback2(arg1(closure_2[48]).TableRow, obj18);
-    const obj19 = { label: "Test captcha", onPress: arg1(closure_2[53]).showCaptchaTestModal, icon: callback2(arg1(closure_2[51]).KeyIcon, {}), trailing: callback2(arg1(closure_2[50]).TableRowArrow, {}) };
-    items7[8] = callback2(arg1(closure_2[48]).TableRow, obj19);
+    obj14.icon = callback2(locale(14392).WrenchIcon, {});
+    obj14.trailing = callback2(locale(5171).TableRowArrow, {});
+    items7[3] = callback2(locale(5165).TableRow, obj14);
+    const obj15 = { label: "Launch MFA Challenge Modal", subLabel: "Dismisses dev tools when launching.", onPress: launchMFA, icon: callback2(locale(9210).KeyIcon, {}), trailing: callback2(locale(5171).TableRowArrow, {}) };
+    items7[4] = callback2(locale(5165).TableRow, obj15);
+    const obj16 = { label: "Show TOTP Setup Success", subLabel: "Dismisses dev tools when launching.", onPress: launchTotpSetupSuccess, icon: callback2(locale(9210).KeyIcon, {}), trailing: callback2(locale(5171).TableRowArrow, {}) };
+    items7[5] = callback2(locale(5165).TableRow, obj16);
+    const obj17 = { label: "Reset Launch Welcome", subLabel: "Resets launch welcome NUX flag, requires an app restart to take effect.", onPress: handleLaunchWelcomeReset, icon: callback2(locale(9210).KeyIcon, {}), trailing: callback2(locale(5171).TableRowArrow, {}) };
+    items7[6] = callback2(locale(5165).TableRow, obj17);
+    const obj18 = { label: "Launch Vibing Wumpus", subLabel: "Vibe with the one and only", onPress: showVibingWumpus, icon: callback2(locale(9210).KeyIcon, {}), trailing: callback2(locale(5171).TableRowArrow, {}) };
+    items7[7] = callback2(locale(5165).TableRow, obj18);
+    const obj19 = { label: "Test captcha", onPress: locale(14654).showCaptchaTestModal, icon: callback2(locale(9210).KeyIcon, {}), trailing: callback2(locale(5171).TableRowArrow, {}) };
+    items7[8] = callback2(locale(5165).TableRow, obj19);
     const obj20 = {
-      icon: callback2(arg1(closure_2[54]).EyeSlashIcon, {}),
+      label: "Ignored Profile Speedbump Suppression",
+      subLabel: "Suppresses the speedbump for ignored profiles.",
+      icon: callback2(locale(9218).EyeSlashIcon, {}),
       value: setting,
       onValueChange() {
-          const IgnoreProfileSpeedbumpDisabled = locale(closure_2[36]).IgnoreProfileSpeedbumpDisabled;
+          const IgnoreProfileSpeedbumpDisabled = locale(3803).IgnoreProfileSpeedbumpDisabled;
           return IgnoreProfileSpeedbumpDisabled.updateSetting(!setting);
         }
     };
-    items7[9] = callback2(arg1(closure_2[39]).TableSwitchRow, obj20);
-    const obj21 = { onPress: importDefault(closure_2[55]), icon: callback2(arg1(closure_2[52]).WrenchIcon, {}) };
-    items7[10] = callback2(arg1(closure_2[48]).TableRow, obj21);
+    items7[9] = callback2(locale(5504).TableSwitchRow, obj20);
+    const obj21 = { label: "Show App Rating Modal", subLabel: "Attempts to show the app rating modal -- this may not visually show anything on debug builds or if your device has already been shown the modal recently.", onPress: showDevWidget(12623), icon: callback2(locale(14392).WrenchIcon, {}) };
+    items7[10] = callback2(locale(5165).TableRow, obj21);
     obj10.children = items7;
-    items5[6] = callback3(arg1(closure_2[38]).TableRowGroup, obj10);
-    const obj22 = { size: importDefault(closure_2[18]).space.PX_16 };
-    items5[7] = callback2(arg1(closure_2[41]).Spacer, obj22);
-    const obj23 = {};
+    items5[6] = callback3(locale(5503).TableRowGroup, obj10);
+    const obj22 = { size: showDevWidget(689).space.PX_16 };
+    items5[7] = callback2(locale(1273).Spacer, obj22);
+    const obj23 = { title: "Crash Actions", hasIcons: true };
     const obj24 = {
-      icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
+      icon: callback2(locale(14392).WrenchIcon, {}),
       label: "Force Native Crash",
       onPress() {
-          return showDevWidget(closure_2[56]).crash();
+          return showDevWidget(1184).crash();
         }
     };
-    const items8 = [callback2(arg1(closure_2[48]).TableRow, obj24), , , , , ];
+    const items8 = [callback2(locale(5165).TableRow, obj24), , , , , ];
     const obj25 = {
-      icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
+      icon: callback2(locale(14392).WrenchIcon, {}),
       label: "Force JS Crash",
       onPress() {
           const error = new Error("Force JS Crash");
           throw error;
         }
     };
-    items8[1] = callback2(arg1(closure_2[48]).TableRow, obj25);
+    items8[1] = callback2(locale(5165).TableRow, obj25);
     const obj26 = {
-      icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
+      icon: callback2(locale(14392).WrenchIcon, {}),
       label: "Force JS Boundary Crash",
       onPress() {
           callback(true);
         }
     };
-    items8[2] = callback2(arg1(closure_2[48]).TableRow, obj26);
+    items8[2] = callback2(locale(5165).TableRow, obj26);
     const obj27 = {
-      icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
+      icon: callback2(locale(14392).WrenchIcon, {}),
       label: "Force libdiscore Crash",
       onPress() {
-          locale(closure_2[57]).crash();
+          locale(1844).crash();
         }
     };
-    items8[3] = callback2(arg1(closure_2[48]).TableRow, obj27);
+    items8[3] = callback2(locale(5165).TableRow, obj27);
     const obj28 = {
-      label: true,
-      accessible: true,
-      set: true,
-      icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
+      icon: callback2(locale(14392).WrenchIcon, {}),
+      label: "Force libdiscore Store Crash",
+      subLabel: "Dispatches LIBDISCORE_SIMULATE_CRASH to NoteStore",
       onPress() {
-          showDevWidget(closure_2[20]).dispatch({ type: "LIBDISCORE_SIMULATE_CRASH" });
+          showDevWidget(686).dispatch({ type: "LIBDISCORE_SIMULATE_CRASH" });
         }
     };
-    items8[4] = callback2(arg1(closure_2[48]).TableRow, obj28);
+    items8[4] = callback2(locale(5165).TableRow, obj28);
     const obj29 = {
-      label: null,
-      accessible: null,
-      set: null,
-      icon: callback2(arg1(closure_2[52]).WrenchIcon, {}),
+      icon: callback2(locale(14392).WrenchIcon, {}),
+      label: "Force libdiscore Store Error",
+      subLabel: "Dispatches LIBDISCORE_SIMULATE_STORE_ERROR with socket reset",
       onPress() {
-          const socket2 = socket.getSocket();
-          const obj = showDevWidget(closure_2[20]);
-          showDevWidget(closure_2[20]).dispatch({ type: "LIBDISCORE_SIMULATE_STORE_ERROR" }).catch((error) => {
+          const socket = outer1_7.getSocket();
+          const obj = showDevWidget(686);
+          showDevWidget(686).dispatch({ type: "LIBDISCORE_SIMULATE_STORE_ERROR" }).catch((error) => {
             const result = closure_0.resetSocketOnDispatchError({ error, action: "LIBDISCORE_SIMULATE_STORE_ERROR" });
           });
         }
     };
-    items8[5] = callback2(arg1(closure_2[48]).TableRow, obj29);
+    items8[5] = callback2(locale(5165).TableRow, obj29);
     obj23.children = items8;
-    items5[8] = callback3(arg1(closure_2[38]).TableRowGroup, obj23);
+    items5[8] = callback3(locale(5503).TableRowGroup, obj23);
     obj.children = items5;
-    return callback3(ScrollView, obj);
+    return callback3(setting, obj);
   }
-  const tmp2 = importDefault(closure_2[34])();
+  tmp2 = showDevWidget(1557)();
 };

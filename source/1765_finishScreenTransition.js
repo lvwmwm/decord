@@ -1,10 +1,10 @@
 // Module ID: 1765
-// Function ID: 19684
+// Function ID: 19685
 // Name: finishScreenTransition
-// Dependencies: []
+// Dependencies: [1766, 1770]
 
 // Module 1765 (finishScreenTransition)
 
-export const finishScreenTransition = require(dependencyMap[0]).finishScreenTransition;
-export const startScreenTransition = require(dependencyMap[0]).startScreenTransition;
-export const ScreenTransition = require(dependencyMap[1]).ScreenTransition;
+export const finishScreenTransition = require("startScreenTransition").finishScreenTransition;
+export const startScreenTransition = require("startScreenTransition").startScreenTransition;
+export const ScreenTransition = require("pnpm_presetsTs1").ScreenTransition;

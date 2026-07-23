@@ -1,10 +1,13 @@
 // Module ID: 1094
-// Function ID: 12549
+// Function ID: 12550
 // Name: isValidProfile
-// Dependencies: []
+// Dependencies: [65, 794, 978, 1095]
 // Exports: addProfilesToEnvelope, createHermesProfilingEvent, enrichCombinedProfileWithEventContext, findProfiledTransactionsFromEnvelope
 
 // Module 1094 (isValidProfile)
+import _toConsumableArray from "_toConsumableArray";
+
+const require = arg1;
 function isValidProfile(profile) {
   return profile.samples.length > 1;
 }
@@ -12,7 +15,7 @@ function enrichAndroidProfileWithEventContext(profile_id, build_id, contexts) {
   let obj = {};
   obj = {};
   const merged = Object.assign({}, build_id);
-  obj.images = build_id(dependencyMap[3]).getDebugMetadata();
+  obj.images = require(1095) /* getDebugMetadata */.getDebugMetadata();
   obj.debug_meta = obj;
   obj.build_id = build_id.build_id || "";
   obj.device_cpu_frequencies = [];
@@ -139,8 +142,8 @@ function enrichAndroidProfileWithEventContext(profile_id, build_id, contexts) {
   obj.device_physical_memory_bytes = str6;
   let environment = contexts.environment;
   if (!environment) {
-    environment = build_id(dependencyMap[2]).getDefaultEnvironment();
-    const obj4 = build_id(dependencyMap[2]);
+    environment = require(978) /* isHermesEnabled */.getDefaultEnvironment();
+    const obj4 = require(978) /* isHermesEnabled */;
   }
   obj.environment = environment;
   obj.profile_id = profile_id;
@@ -180,42 +183,36 @@ function enrichAndroidProfileWithEventContext(profile_id, build_id, contexts) {
   obj.version_code = contexts.dist || "";
   return Object.assign(merged, obj);
 }
-let closure_2 = importDefault(dependencyMap[0]);
 
 export { isValidProfile };
 export const findProfiledTransactionsFromEnvelope = function findProfiledTransactionsFromEnvelope(arg0) {
   const items = [];
-  const arg1 = items;
-  arg1(dependencyMap[1]).forEachEnvelopeItem(arg0, (arg0, arg1) => {
+  items(794).forEachEnvelopeItem(arg0, (arg0, arg1) => {
     if ("transaction" === arg1) {
-      let num = 1;
-      if (1 < arg0.length) {
-        do {
-          let contexts = arg0[num].contexts;
-          let trace;
-          if (null !== contexts) {
-            if (undefined !== contexts) {
-              trace = contexts.trace;
-            }
+      for (let num = 1; num < arg0.length; num = num + 1) {
+        let contexts = arg0[num].contexts;
+        let trace;
+        if (null !== contexts) {
+          if (undefined !== contexts) {
+            trace = contexts.trace;
           }
-          let data;
-          if (null !== trace) {
-            if (undefined !== trace) {
-              data = trace.data;
-            }
+        }
+        let data;
+        if (null !== trace) {
+          if (undefined !== trace) {
+            data = trace.data;
           }
-          let profile_id;
-          if (null !== data) {
-            if (undefined !== data) {
-              profile_id = data.profile_id;
-            }
+        }
+        let profile_id;
+        if (null !== data) {
+          if (undefined !== data) {
+            profile_id = data.profile_id;
           }
-          if (profile_id) {
-            let tmp5 = closure_0;
-            let arr = closure_0.push(arg0[num]);
-          }
-          num = num + 1;
-        } while (num < arg0.length);
+        }
+        if (profile_id) {
+          let tmp5 = items;
+          let arr = items.push(arg0[num]);
+        }
       }
     }
   });
@@ -244,7 +241,7 @@ export const enrichCombinedProfileWithEventContext = function enrichCombinedProf
           str = "";
         }
         const _Object = Object;
-        let obj = { event_id: profile_id, runtime: { 0: 0.00000000000000000000000000000021085317840568576, -9223372036854775808: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003180443702627252 } };
+        let obj = { event_id: profile_id, runtime: { name: "hermes", version: "" } };
         let _Date = Date;
         const merged = Object.assign({}, value);
         if (contexts.start_timestamp) {
@@ -260,8 +257,8 @@ export const enrichCombinedProfileWithEventContext = function enrichCombinedProf
         obj.release = contexts.release || "";
         let environment = contexts.environment;
         if (!environment) {
-          environment = value(dependencyMap[2]).getDefaultEnvironment();
-          const obj4 = value(dependencyMap[2]);
+          environment = require(978) /* isHermesEnabled */.getDefaultEnvironment();
+          const obj4 = require(978) /* isHermesEnabled */;
         }
         obj.environment = environment;
         obj = {};
@@ -418,7 +415,7 @@ export const enrichCombinedProfileWithEventContext = function enrichCombinedProf
         const items = [];
         const debug_meta = value.debug_meta;
         let images;
-        const obj9 = value(dependencyMap[3]);
+        const obj9 = require(1095) /* getDebugMetadata */;
         const tmp23 = callback;
         if (null !== debug_meta) {
           if (undefined !== debug_meta) {
@@ -428,7 +425,7 @@ export const enrichCombinedProfileWithEventContext = function enrichCombinedProf
         if (!images) {
           images = [];
         }
-        obj2.images = items.concat(callback(value(dependencyMap[3]).getDebugMetadata()), tmp23(images));
+        obj2.images = items.concat(callback(require(1095) /* getDebugMetadata */.getDebugMetadata()), tmp23(images));
         obj.debug_meta = obj2;
         return Object.assign(merged, obj);
       }
@@ -438,8 +435,7 @@ export const enrichCombinedProfileWithEventContext = function enrichCombinedProf
 };
 export { enrichAndroidProfileWithEventContext };
 export const createHermesProfilingEvent = function createHermesProfilingEvent(result1) {
-  let obj = { profile: result1, transaction: obj };
-  obj = { active_thread_id: result1.active_thread_id };
+  const obj = { platform: "javascript", version: "1", profile: result1, transaction: { active_thread_id: result1.active_thread_id } };
   return obj;
 };
 export const addProfilesToEnvelope = function addProfilesToEnvelope(arg0, arg1) {
@@ -451,7 +447,7 @@ export const addProfilesToEnvelope = function addProfilesToEnvelope(arg0, arg1) 
       let obj = { type: "profile" };
       let items = [obj, tmp4];
       arr = arr.push(items);
-      // continue
+      continue;
     }
     return arg0;
   } else {

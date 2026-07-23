@@ -1,23 +1,25 @@
 // Module ID: 815
-// Function ID: 9124
+// Function ID: 9125
 // Name: dateTimestampInSeconds
-// Dependencies: []
+// Dependencies: [808, 798]
 
 // Module 815 (dateTimestampInSeconds)
+const require = arg1;
+const dependencyMap = arg6;
 function dateTimestampInSeconds() {
-  return arg1(arg6[0]).safeDateNow() / 1000;
+  return require(808) /* withRandomSafeContext */.safeDateNow() / 1000;
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let closure_3 = null;
+let c3 = null;
 arg5.browserPerformanceTimeOrigin = function browserPerformanceTimeOrigin() {
   if (null === closure_3) {
-    closure_3 = function getBrowserTimeOrigin() {
-      const _performance = _performance(closure_1[1]).GLOBAL_OBJ.performance;
+    closure_3 = (function getBrowserTimeOrigin() {
+      const _performance = outer1_0(outer1_1[1]).GLOBAL_OBJ.performance;
       if (null != _performance) {
         if (_performance.now) {
-          const result = _performance(closure_1[0]).withRandomSafeContext(() => _performance.now());
-          const obj = _performance(closure_1[0]);
-          const safeDateNowResult = _performance(closure_1[0]).safeDateNow();
+          const result = outer1_0(outer1_1[0]).withRandomSafeContext(() => _performance.now());
+          const obj = outer1_0(outer1_1[0]);
+          const safeDateNowResult = outer1_0(outer1_1[0]).safeDateNow();
           const timeOrigin = _performance.timeOrigin;
           if ("number" === typeof timeOrigin) {
             const _Math = Math;
@@ -38,25 +40,28 @@ arg5.browserPerformanceTimeOrigin = function browserPerformanceTimeOrigin() {
           return navigationStart;
         }
       }
-    }();
+    })();
   }
   return closure_3;
 };
 arg5.dateTimestampInSeconds = dateTimestampInSeconds;
 arg5.timestampInSeconds = function timestampInSeconds() {
-  if (null == tmp) {
-    const tmp = function createUnixTimestampInSecondsFunc() {
-      const _performance = _performance(timeOrigin[1]).GLOBAL_OBJ.performance;
+  if (null != closure_2) {
+    let tmp = closure_2;
+  } else {
+    tmp = (function createUnixTimestampInSecondsFunc() {
+      const _performance = outer1_0(outer1_1[1]).GLOBAL_OBJ.performance;
       if (null != _performance) {
         if (_performance.now) {
           if (_performance.timeOrigin) {
             const timeOrigin = _performance.timeOrigin;
-            return () => (timeOrigin + _performance(timeOrigin[0]).withRandomSafeContext(() => closure_0.now())) / 1000;
+            return () => (timeOrigin + outer2_0(outer2_1[0]).withRandomSafeContext(() => outer1_0.now())) / 1000;
           }
         }
       }
-      return closure_4;
-    }();
+      return outer1_4;
+    })();
+    closure_2 = tmp;
   }
   return tmp();
 };

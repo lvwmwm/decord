@@ -1,53 +1,57 @@
-// Module ID: 4472
-// Function ID: 39539
+// Module ID: 4476
+// Function ID: 39571
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 33, 2]
 // Exports: TransitionItem
 
-// Module 4472 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4476 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let _slicedToArray = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _slicedToArray = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (result >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        result = tmp3 + 1;
+        obj.value = length[+result];
       }
       return obj;
     };
@@ -90,131 +94,125 @@ function wrapChildrenDefault(arg0) {
 class TransitionGroup {
   constructor(arg0) {
     items = global.items;
-    importDefault = items;
     renderItem = global.renderItem;
-    importAll = renderItem;
     getItemKey = global.getItemKey;
-    jsx = getItemKey;
     wrapChildren = global.wrapChildren;
     if (wrapChildren === undefined) {
-      wrapChildren = wrapChildrenDefault;
+      wrapChildren = useRef;
     }
     lazyCleanUpDelay = global.lazyCleanUpDelay;
-    jsx = lazyCleanUpDelay;
-    closure_4 = undefined;
-    closure_5 = undefined;
-    _arrayLikeToArray = undefined;
-    wrapChildrenDefault = undefined;
-    closure_4 = require("module_4294967295");
-    layoutEffect = importAll.useLayoutEffect(() => {
+    c4 = undefined;
+    c5 = undefined;
+    useRef = undefined;
+    useRef = undefined;
+    c4 = require("module_4294967295");
+    layoutEffect = renderItem.useLayoutEffect(() => {
       if (-1 !== ref.current) {
         const _clearTimeout = clearTimeout;
         clearTimeout(ref.current);
       }
     }, []);
-    closure_5 = importDefault(importAll.useState(closure_4), 2)[1];
-    _arrayLikeToArray = importAll.useRef(null);
+    c5 = items(renderItem.useState(c4), 2)[1];
+    useRef = renderItem.useRef(null);
     items = [, , , ];
     items[0] = items;
     items[1] = getItemKey;
     items[2] = renderItem;
     items[3] = lazyCleanUpDelay;
-    memo = importAll.useMemo(() => {
+    memo = renderItem.useMemo(() => {
       let done;
       let iter4;
-      const current = ref2.current;
+      let current = ref2.current;
       let keys;
       if (null != current) {
         keys = current.keys();
       }
       const set = new Set(keys);
-      const items = set;
       const map = new Map(ref2.current);
-      const renderItem = map;
       function _loop() {
-        const tmp = callback(callback);
-        const value = map.get(tmp);
+        const tmp = outer1_2(closure_2);
+        let value = map.get(tmp);
         if (null == value) {
-          if (null != ref.current) {
-            let MOUNTED = constants.ENTERED;
+          if (null != outer1_6.current) {
+            let MOUNTED = lazyCleanUpDelay.ENTERED;
           } else {
-            MOUNTED = constants.MOUNTED;
+            MOUNTED = lazyCleanUpDelay.MOUNTED;
           }
           function _cleanUp() {
-            const current = ref2.current;
+            const current = outer2_6.current;
             let value;
             if (null != current) {
-              value = current.get(tmp);
+              value = current.get(_slicedToArray);
             }
             if (null != value) {
-              if (value.state === constants.YEETED) {
-                const current2 = ref2.current;
+              if (value.state === lazyCleanUpDelay.YEETED) {
+                const current2 = outer2_6.current;
                 if (null != current2) {
-                  current2.delete(tmp);
+                  current2.delete(_slicedToArray);
                 }
-                if (null != constants) {
+                if (null != outer2_3) {
                   const _clearTimeout = clearTimeout;
-                  clearTimeout(ref.current);
+                  clearTimeout(outer2_4.current);
                   const _setTimeout = setTimeout;
-                  ref.current = setTimeout(() => callback({}), constants);
+                  outer2_4.current = setTimeout(() => outer3_5({}), outer2_3);
                 } else {
-                  callback({});
+                  outer2_5({});
                 }
               }
             }
           }
-          let obj = { item: callback, children: map(tmp, callback, MOUNTED, _cleanUp), state: MOUNTED, cleanUp: _cleanUp, renderItem: map };
+          let obj = { item: closure_2, children: map(tmp, closure_2, MOUNTED, _cleanUp), state: MOUNTED, cleanUp: _cleanUp, renderItem: map };
         } else {
-          if (value.item === callback) {
+          if (value.item === closure_2) {
             if (value.renderItem === map) {
               let tmp5 = value;
             }
             const result = map.set(tmp, tmp5);
             set.delete(tmp);
           }
-          if (value.state === constants.YEETED) {
-            let state = constants.ENTERED;
+          if (value.state === lazyCleanUpDelay.YEETED) {
+            let state = lazyCleanUpDelay.ENTERED;
           } else {
             state = value.state;
           }
-          obj = { item: callback, children: map(tmp, callback, state, value.cleanUp), state, cleanUp: value.cleanUp, renderItem: map };
+          obj = { item: closure_2, children: map(tmp, closure_2, state, value.cleanUp), state, cleanUp: value.cleanUp, renderItem: map };
           tmp5 = obj;
         }
       }
-      const tmp3 = callback(items);
+      const tmp3 = callback(set);
       let iter = tmp3();
       if (!iter.done) {
         do {
-          closure_2 = iter.value;
+          let getItemKey = iter.value;
           let _loopResult = _loop();
           let iter2 = tmp3();
           iter = iter2;
           done = iter2.done;
         } while (!done);
       }
-      const tmp5 = callback(set);
+      let tmp5 = callback(set);
       let iter3 = tmp5();
       if (!iter3.done) {
         do {
           let value = iter3.value;
           value = map.get(value);
           if (null != value) {
-            let tmp15 = closure_3;
-            if (value.state === closure_3.YEETED) {
-              let tmp7 = closure_1;
-              if (value.renderItem === closure_1) {
+            let tmp15 = lazyCleanUpDelay;
+            if (value.state === lazyCleanUpDelay.YEETED) {
+              let tmp7 = map;
+              if (value.renderItem === map) {
                 let result = map.set(value, value);
               }
             }
             let obj = { item: value.item };
-            let tmp9 = closure_1;
-            let tmp10 = closure_3;
+            let tmp9 = map;
+            let tmp10 = lazyCleanUpDelay;
             let tmp11 = value;
-            obj.children = closure_1(value, value.item, closure_3.YEETED, value.cleanUp);
-            let tmp12 = closure_3;
-            obj.state = closure_3.YEETED;
+            obj.children = map(value, value.item, lazyCleanUpDelay.YEETED, value.cleanUp);
+            let tmp12 = lazyCleanUpDelay;
+            obj.state = lazyCleanUpDelay.YEETED;
             obj.cleanUp = value.cleanUp;
-            obj.renderItem = closure_1;
+            obj.renderItem = map;
             if (null != obj.children) {
               let result1 = map.set(value, obj);
             } else {
@@ -227,13 +225,13 @@ class TransitionGroup {
       }
       return map;
     }, items);
-    wrapChildrenDefault = memo;
+    useRef = memo;
     items1 = [];
     items1[0] = memo;
-    insertionEffect = importAll.useInsertionEffect(() => {
+    insertionEffect = renderItem.useInsertionEffect(() => {
       closure_6.current = memo;
       return () => {
-        const current = ref.current;
+        const current = outer1_6.current;
         let clearResult;
         if (null != current) {
           clearResult = current.clear();
@@ -242,12 +240,12 @@ class TransitionGroup {
       };
     }, items1);
     items2 = [];
-    tmp4 = closure_5(memo);
+    tmp4 = c5(memo);
     iter = tmp4();
     if (!iter.done) {
       do {
-        tmp5 = closure_0;
-        arr = items2.push(closure_0(iter.value, 2)[1].children);
+        tmp5 = items;
+        arr = items2.push(items(iter.value, 2)[1].children);
         iter2 = tmp4();
         iter = iter2;
         done = iter2.done;
@@ -263,19 +261,15 @@ class TransitionGroup {
 function getSingleItemKey() {
   return "key";
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const obj = { MOUNTED: 0, [0]: "MOUNTED", ENTERED: 1, [1]: "ENTERED", YEETED: 2, [2]: "YEETED" };
+let obj = { MOUNTED: 0, [0]: "MOUNTED", ENTERED: 1, [1]: "ENTERED", YEETED: 2, [2]: "YEETED" };
 let closure_4 = {};
-const result = arg1(dependencyMap[3]).fileFinishedImporting("design/components/TransitionGroup/TransitionGroup.tsx");
+let result = require("jsxProd").fileFinishedImporting("design/components/TransitionGroup/TransitionGroup.tsx");
 
 export const TransitionStates = obj;
 export { TransitionGroup };
 export const TransitionItem = function TransitionItem(item) {
   item = item.item;
-  let closure_0 = item;
-  const items = [item];
+  let items = [item];
   return <TransitionGroup items={React.useMemo(() => {
     if (null != item) {
       const items = [item];

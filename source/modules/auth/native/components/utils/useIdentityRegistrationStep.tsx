@@ -1,68 +1,75 @@
-// Module ID: 14626
-// Function ID: 110285
+// Module ID: 14741
+// Function ID: 112449
 // Name: useIdentityRegistrationStep
-// Dependencies: []
+// Dependencies: [5, 57, 31, 14731, 14732, 653, 1456, 14729, 1212, 14742, 9446, 9200, 14739, 668, 14730, 9215, 9209, 8342, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 14626 (useIdentityRegistrationStep)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ setRegistrationErrors: closure_6, updateRegistrationOptions: closure_7, useRegistrationUIStore: closure_8 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-({ authStateToRegisterTransitionStep: closure_9, RegisterTransitionSteps: closure_10, RegistrationTransitionActionTypes: closure_11 } = arg1(dependencyMap[4]));
-const AbortCodes = arg1(dependencyMap[5]).AbortCodes;
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/auth/native/components/utils/useIdentityRegistrationStep.tsx");
+// Module 14741 (useIdentityRegistrationStep)
+import ME from "ME";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import useRegistrationUIStore from "useRegistrationUIStore";
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
+import { AbortCodes } from "ME";
+
+let closure_10;
+let closure_11;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ setRegistrationErrors: closure_6, updateRegistrationOptions: closure_7, useRegistrationUIStore: closure_8 } = useRegistrationUIStore);
+({ authStateToRegisterTransitionStep: closure_9, RegisterTransitionSteps: closure_10, RegistrationTransitionActionTypes: closure_11 } = RegistrationTransitionActionTypes);
+const result = require("result").fileFinishedImporting("modules/auth/native/components/utils/useIdentityRegistrationStep.tsx");
 
 export const useIdentityRegistrationStep = function useIdentityRegistrationStep(REGISTER_IDENTITY, inputMode) {
-  inputMode = REGISTER_IDENTITY;
+  const _require = REGISTER_IDENTITY;
   const importDefault = inputMode;
-  let obj = inputMode(dependencyMap[6]);
-  const navigation = obj.useNavigation();
-  const dependencyMap = navigation;
-  const context = React.useContext(inputMode(dependencyMap[7]).TrackRegistrationContext);
-  let closure_3 = context;
-  const tmp3 = callback(React.useState(""), 2);
-  const first = tmp3[0];
-  let callback = first;
-  const React = React.useRef("");
-  const tmp5 = callback(React.useState(""), 2);
+  let obj = _require(navigation[6]);
+  navigation = obj.useNavigation();
+  const context = React.useContext(_require(navigation[7]).TrackRegistrationContext);
+  const tmp3 = first(React.useState(""), 2);
+  first = tmp3[0];
+  React = React.useRef("");
+  const tmp5 = first(React.useState(""), 2);
   const first1 = tmp5[0];
   let closure_7 = tmp5[1];
-  callback = React.useCallback((arg0, current) => {
+  let callback = React.useCallback((arg0, current) => {
     callback(arg0);
-    closure_5.current = current;
+    result.current = current;
   }, []);
-  const tmp8 = tmp8((errors) => errors.errors);
+  const tmp8 = callback((errors) => errors.errors);
+  callback = tmp8;
   const items = [tmp8];
   const memo = React.useMemo(() => {
-    const intl = arg0(navigation[8]).intl;
-    return intl.string(arg0(navigation[8]).t.F8UYVY);
+    const intl = REGISTER_IDENTITY(navigation[8]).intl;
+    return intl.string(REGISTER_IDENTITY(navigation[8]).t.F8UYVY);
   }, items);
   const items1 = [REGISTER_IDENTITY, first1, context, navigation];
-  const callback1 = React.useCallback(() => {
+  const callback1 = React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = context(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items1);
-  if (inputMode === inputMode(dependencyMap[15]).PhoneOrEmailSelectorForceMode.PHONE) {
-    let tmp13 = importDefault(dependencyMap[16])("phone", tmp8);
+  })(), items1);
+  if (inputMode === _require(navigation[15]).PhoneOrEmailSelectorForceMode.PHONE) {
+    let tmp13 = importDefault(navigation[16])("phone", tmp8);
   } else {
-    tmp13 = importDefault(dependencyMap[16])("email", tmp8);
+    tmp13 = importDefault(navigation[16])("email", tmp8);
   }
+  let closure_9 = tmp13;
   const items2 = [inputMode, first1, first, tmp13];
   const items3 = [first];
   const memo1 = React.useMemo(() => {
-    const tmp = arg1 === arg0(navigation[15]).PhoneOrEmailSelectorForceMode.PHONE ? first1 : first;
+    const tmp = closure_1 === REGISTER_IDENTITY(navigation[15]).PhoneOrEmailSelectorForceMode.PHONE ? first1 : first;
     let tmp2 = null == tmp;
     if (!tmp2) {
       tmp2 = "" === tmp;
     }
     if (!tmp2) {
-      tmp2 = null != tmp13;
+      tmp2 = null != closure_9;
     }
     return tmp2;
   }, items2);
@@ -78,8 +85,8 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
     validateEmail: React.useCallback(() => {
       let stringResult = null;
       if (!obj.isEmail(first)) {
-        const intl = arg0(navigation[8]).intl;
-        stringResult = intl.string(arg0(navigation[8]).t.nr0MVZ);
+        const intl = REGISTER_IDENTITY(navigation[8]).intl;
+        stringResult = intl.string(REGISTER_IDENTITY(navigation[8]).t.nr0MVZ);
       }
       return stringResult;
     }, items3)

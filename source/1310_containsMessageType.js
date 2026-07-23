@@ -1,9 +1,11 @@
 // Module ID: 1310
-// Function ID: 15251
+// Function ID: 15252
 // Name: containsMessageType
-// Dependencies: []
+// Dependencies: [1295]
 
 // Module 1310 (containsMessageType)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.containsMessageType = function containsMessageType(arg0) {
-  return null != arg0[closure_0(undefined, closure_1[0]).MESSAGE_TYPE];
+  return null != arg0[require(undefined, 1295).MESSAGE_TYPE];
 };

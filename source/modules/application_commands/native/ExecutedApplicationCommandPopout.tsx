@@ -1,53 +1,80 @@
-// Module ID: 9488
-// Function ID: 73932
+// Module ID: 9495
+// Function ID: 73973
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 1910, 1838, 4349, 3767, 1849, 7920, 4566, 653, 1455, 4567, 33, 4130, 689, 1881, 1273, 4098, 8492, 3969, 4126, 4320, 1212, 5464, 566, 5085, 1395, 5167, 477, 9496, 3830, 5165, 1555, 6755, 4541, 5503, 5484, 7799, 5187, 2]
 // Exports: default
 
-// Module 9488 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 9495 (_createForOfIteratorHelperLoose)
+import presentAddedFriendToast from "presentAddedFriendToast";
+import get_ActivityIndicator from "ensureAvatarSource";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME";
+import ME from "ME";
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+import MENTION_SENTINEL from "MENTION_SENTINEL";
+import jsxProd from "KeyboardTypes";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_15;
+let closure_16;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_5;
+let closure_6;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +85,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -91,39 +118,38 @@ function getCommandOptionComponents(option) {
   let guild;
   let messageId;
   let styles;
-  const arg1 = iter;
+  const iter = option.option;
   let channel = option.channel;
-  const importDefault = channel;
   ({ guild, commandOptionSpec, styles } = option);
-  const importAll = styles;
   function getUserComponent(user, styles) {
-    const obj = {
+    let obj = {
       style: styles.commandOptionMentionText,
       onPress() {
-        let obj = lib(closure_3[18]);
+        let obj = channel(outer2_3[18]);
         obj.hideActionSheet();
-        obj = { userId: arg0.id };
+        obj = { userId: user.id };
         let id;
-        if (null != lib) {
-          id = lib.id;
+        if (null != outer1_1) {
+          id = outer1_1.id;
         }
         obj.channelId = id;
-        lib(closure_3[19])(obj);
+        channel(outer2_3[19])(obj);
       }
     };
-    const items = [closure_20, channel(closure_3[20]).getUserTag(user, { decoration: "never" })];
+    const items = [outer1_20, channel(outer1_3[20]).getUserTag(user, { decoration: "never" })];
     obj.children = items;
-    return callback2(user(closure_3[17]).LegacyText, obj, "optionValue-" + user.name);
+    return outer1_22(user(outer1_3[17]).LegacyText, obj, "optionValue-" + user.name);
   }
   function getRoleComponent(role) {
-    const items = [closure_20, role.name];
-    return callback2(iter(closure_3[17]).LegacyText, { style: styles.commandOptionMentionText, children: items }, "optionValue-" + iter.name);
+    const items = [outer1_20, role.name];
+    return outer1_22(iter(outer1_3[17]).LegacyText, { style: styles.commandOptionMentionText, children: items }, "optionValue-" + iter.name);
   }
   function getCommandValueText(intl) {
-    return callback(iter(closure_3[21]).Text, { children: intl }, "optionValue-" + iter.name);
+    const obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl };
+    return outer1_21(iter(outer1_3[21]).Text, obj, "optionValue-" + iter.name);
   }
   const text = `${option.parentOptionName} ${iter.name}`;
-  const items = [];
+  let items = [];
   let name_localized;
   ({ messageId, analyticsLocations } = option);
   if (null != commandOptionSpec) {
@@ -132,7 +158,7 @@ function getCommandOptionComponents(option) {
   if (null == name_localized) {
     name_localized = iter.name;
   }
-  if (null != option.option.value) {
+  if (null != iter.value) {
     const _HermesInternal2 = HermesInternal;
     let str = ":";
     let combined = " " + name_localized + ":";
@@ -140,31 +166,31 @@ function getCommandOptionComponents(option) {
     const _HermesInternal = HermesInternal;
     combined = " " + name_localized;
   }
-  if (option.option.type !== arg1(dependencyMap[16]).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (iter.type !== arg1(dependencyMap[16]).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (iter.type !== iter(1881).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (iter.type !== iter(1881).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       if (null != iter.value) {
         const type = iter.type;
-        if (arg1(dependencyMap[16]).ApplicationCommandOptionType.USER === type) {
+        if (iter(1881).ApplicationCommandOptionType.USER === type) {
           const user = authStore.getUser(iter.value.toString());
           let userComponent = null;
           if (null != user) {
             userComponent = getUserComponent(user, styles);
           }
           const str5 = iter.value;
-        } else if (arg1(dependencyMap[16]).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (iter(1881).ApplicationCommandOptionType.CHANNEL === type) {
           channel = store.getChannel(iter.value.toString());
           userComponent = null;
           if (null != channel) {
             let obj = { style: styles.commandOptionMentionText };
             const items1 = [closure_18, ];
-            let obj1 = arg1(dependencyMap[22]);
+            let obj1 = iter(4320);
             items1[1] = obj1.computeChannelName(channel, authStore, closure_11);
             obj.children = items1;
             const _HermesInternal3 = HermesInternal;
-            userComponent = callback2(arg1(dependencyMap[17]).LegacyText, obj, "optionValue-" + iter.name);
+            userComponent = callback2(iter(1273).LegacyText, obj, "optionValue-" + iter.name);
           }
           const str3 = iter.value;
-        } else if (arg1(dependencyMap[16]).ApplicationCommandOptionType.ROLE === type) {
+        } else if (iter(1881).ApplicationCommandOptionType.ROLE === type) {
           let value = iter.value;
           let role;
           if (null != guild) {
@@ -174,7 +200,7 @@ function getCommandOptionComponents(option) {
           if (null != role) {
             userComponent = getRoleComponent(role);
           }
-        } else if (arg1(dependencyMap[16]).ApplicationCommandOptionType.MENTIONABLE === type) {
+        } else if (iter(1881).ApplicationCommandOptionType.MENTIONABLE === type) {
           str = iter.value.toString();
           let role1;
           if (null != guild) {
@@ -192,9 +218,9 @@ function getCommandOptionComponents(option) {
           const str2 = iter.value;
         } else {
           userComponent = null;
-          if (arg1(dependencyMap[16]).ApplicationCommandOptionType.ATTACHMENT === type) {
-            const intl = arg1(dependencyMap[23]).intl;
-            userComponent = getCommandValueText(intl.string(arg1(dependencyMap[23]).t.nONJVc));
+          if (iter(1881).ApplicationCommandOptionType.ATTACHMENT === type) {
+            const intl = iter(1212).intl;
+            userComponent = getCommandValueText(intl.string(iter(1212).t.nONJVc));
           }
         }
         let str6 = true;
@@ -229,7 +255,7 @@ function getCommandOptionComponents(option) {
         }
         obj.children = combined + str6;
         const _HermesInternal4 = HermesInternal;
-        const items2 = [callback(arg1(dependencyMap[17]).LegacyText, obj, "optionKey-" + iter.name), userComponent];
+        const items2 = [callback(iter(1273).LegacyText, obj, "optionKey-" + iter.name), userComponent];
         obj.children = items2;
         items.push(callback2(React.Fragment, obj, text));
         const tmp31 = callback2;
@@ -240,10 +266,10 @@ function getCommandOptionComponents(option) {
   }
   obj1 = {};
   const obj2 = { children: combined };
-  obj1.children = callback(arg1(dependencyMap[17]).LegacyText, obj2, "optionKey-" + option.option.name);
+  obj1.children = callback(iter(1273).LegacyText, obj2, "optionKey-" + iter.name);
   items.push(callback(React.Fragment, obj1, text));
   let tmp39 = items;
-  if (null != option.option.options) {
+  if (null != iter.options) {
     let options;
     if (null != commandOptionSpec) {
       options = commandOptionSpec.options;
@@ -258,34 +284,34 @@ function getCommandOptionComponents(option) {
     if (!iter2.done) {
       do {
         value = iter2.value;
-        let tmp43 = closure_27;
+        let tmp43 = getCommandOptionComponents;
         let obj3 = { option: value, channel, guild, messageId, parentOptionName: text, commandOptionSpec: fromEntriesResult[value.name], styles, analyticsLocations };
-        combined1 = combined1.concat(closure_27(obj3));
+        combined1 = combined1.concat(getCommandOptionComponents(obj3));
         let iter3 = tmp42();
         iter2 = iter3;
         tmp39 = combined1;
         done = iter3.done;
       } while (!done);
     }
-    const fromEntriesResult = Object.fromEntries(options.map((name) => {
+    fromEntriesResult = Object.fromEntries(options.map((name) => {
       const items = [name.name, name];
       return items;
     }));
   }
   return tmp39;
 }
-function getCommandCopyText(name, arg1, id, name_localized) {
+function getCommandCopyText(value, arg1, id, name_localized) {
   let done;
-  arg1 = name;
-  const items = [];
+  const _require = value;
+  let items = [];
   name_localized = undefined;
   if (null != name_localized) {
     name_localized = name_localized.name_localized;
   }
   if (null == name_localized) {
-    name_localized = name.name;
+    name_localized = value.name;
   }
-  if (null != name.value) {
+  if (null != value.value) {
     const _HermesInternal2 = HermesInternal;
     let combined = "" + name_localized + ":";
   } else {
@@ -293,30 +319,30 @@ function getCommandCopyText(name, arg1, id, name_localized) {
     let str = "";
     combined = "" + name_localized;
   }
-  if (name.type !== arg1(dependencyMap[16]).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (name.type !== arg1(dependencyMap[16]).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (value.type !== _require(1881).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (value.type !== _require(1881).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       let sum = null;
-      if (null != name.value) {
-        const type = name.type;
-        if (arg1(dependencyMap[16]).ApplicationCommandOptionType.USER === type) {
-          const user = authStore.getUser(name.value.toString());
+      if (null != value.value) {
+        const type = value.type;
+        if (_require(1881).ApplicationCommandOptionType.USER === type) {
+          const user = authStore.getUser(value.value.toString());
           sum = null;
           if (null != user) {
             let obj = { decoration: "never" };
-            sum = closure_20 + importDefault(dependencyMap[20]).getUserTag(user, obj);
-            const obj4 = importDefault(dependencyMap[20]);
+            sum = closure_20 + importDefault(3969).getUserTag(user, obj);
+            const obj4 = importDefault(3969);
           }
-          const str6 = name.value;
-        } else if (arg1(dependencyMap[16]).ApplicationCommandOptionType.CHANNEL === type) {
-          const channel = store.getChannel(name.value.toString());
+          const str6 = value.value;
+        } else if (_require(1881).ApplicationCommandOptionType.CHANNEL === type) {
+          const channel = store.getChannel(value.value.toString());
           sum = null;
           if (null != channel) {
-            sum = closure_18 + arg1(dependencyMap[22]).computeChannelName(channel, authStore, closure_11);
-            const obj3 = arg1(dependencyMap[22]);
+            sum = closure_18 + _require(4320).computeChannelName(channel, authStore, closure_11);
+            const obj3 = _require(4320);
           }
-          const str5 = name.value;
-        } else if (arg1(dependencyMap[16]).ApplicationCommandOptionType.ROLE === type) {
-          let value = name.value;
+          const str5 = value.value;
+        } else if (_require(1881).ApplicationCommandOptionType.ROLE === type) {
+          value = value.value;
           let role;
           if (null != id) {
             role = store2.getRole(id.id, tmp16);
@@ -327,8 +353,8 @@ function getCommandCopyText(name, arg1, id, name_localized) {
           }
         } else {
           sum = null;
-          if (arg1(dependencyMap[16]).ApplicationCommandOptionType.MENTIONABLE === type) {
-            str = name.value.toString();
+          if (_require(1881).ApplicationCommandOptionType.MENTIONABLE === type) {
+            str = value.value.toString();
             let role1;
             if (null != id) {
               role1 = store2.getRole(id.id, str);
@@ -339,12 +365,12 @@ function getCommandCopyText(name, arg1, id, name_localized) {
               const user1 = authStore.getUser(str);
               sum = null;
               if (null != user1) {
-                obj = importDefault(dependencyMap[20]);
+                obj = importDefault(3969);
                 obj = { decoration: "never" };
                 sum = closure_20 + obj.getUserTag(user1, obj);
               }
             }
-            const str8 = name.value;
+            const str8 = value.value;
           }
         }
       }
@@ -357,14 +383,14 @@ function getCommandCopyText(name, arg1, id, name_localized) {
           }
         }
         if (null != found) {
-          name = found.name_localized;
+          let name = found.name_localized;
           if (null == name) {
             name = found.name;
           }
           sum = name;
         } else {
           const _String = String;
-          sum = String(name.value);
+          sum = String(value.value);
         }
       }
       items.push(combined + sum);
@@ -373,7 +399,7 @@ function getCommandCopyText(name, arg1, id, name_localized) {
   }
   items.push(combined);
   let tmp36 = items;
-  if (null != name.options) {
+  if (null != value.options) {
     let options;
     if (null != name_localized) {
       options = name_localized.options;
@@ -381,25 +407,25 @@ function getCommandCopyText(name, arg1, id, name_localized) {
     if (null == options) {
       options = [];
     }
-    const tmp39 = _createForOfIteratorHelperLoose(name.options);
+    const tmp39 = _createForOfIteratorHelperLoose(value.options);
     let iter = tmp39();
     let combined1 = items;
     tmp36 = items;
     if (!iter.done) {
       do {
         value = iter.value;
-        let tmp40 = closure_28;
+        let tmp40 = getCommandCopyText;
         let tmp41 = value;
         let tmp42 = arg1;
         let tmp43 = id;
-        combined1 = combined1.concat(closure_28(value, arg1, id, fromEntriesResult[value.name]));
+        combined1 = combined1.concat(getCommandCopyText(value, arg1, id, fromEntriesResult[value.name]));
         let iter2 = tmp39();
         iter = iter2;
         tmp36 = combined1;
         done = iter2.done;
       } while (!done);
     }
-    const fromEntriesResult = Object.fromEntries(options.map((name) => {
+    fromEntriesResult = Object.fromEntries(options.map((name) => {
       const items = [name.name, name];
       return items;
     }));
@@ -407,20 +433,21 @@ function getCommandCopyText(name, arg1, id, name_localized) {
   return tmp36;
 }
 function CommandContentContainer(channelId) {
+  let presentAddedFriendToast;
+  let closure_5;
   let data;
+  let importAll;
+  let importDefault;
   let messageId;
   channelId = channelId.channelId;
-  const arg1 = channelId;
-  ({ author: closure_1, applicationUser: closure_2, data } = channelId);
-  const dependencyMap = data;
-  ({ guildId: closure_4, messageType: closure_5, messageId } = channelId);
-  let closure_11;
-  const tmp = callback3();
-  let closure_7 = tmp;
-  const analyticsLocations = importDefault(dependencyMap[24])().analyticsLocations;
-  let closure_8 = analyticsLocations;
-  let obj = arg1(dependencyMap[25]);
-  const items = [closure_7, closure_9];
+  ({ author: importDefault, applicationUser: importAll, data } = channelId);
+  ({ guildId: presentAddedFriendToast, messageType: closure_5, messageId } = channelId);
+  let name_localized;
+  let tmp = _createForOfIteratorHelperLoose();
+  let _isNativeReflectConstruct = tmp;
+  const analyticsLocations = importDefault(data[24])().analyticsLocations;
+  let obj = channelId(data[25]);
+  let items = [_isNativeReflectConstruct, channel];
   const items1 = [channelId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const channel = tmp.getChannel(channelId);
@@ -432,54 +459,51 @@ function CommandContentContainer(channelId) {
     obj.guild = channel.getGuild(guild_id);
     return obj;
   }, items1);
-  const channel = stateFromStoresObject.channel;
-  closure_9 = channel;
+  channel = stateFromStoresObject.channel;
   const guild = stateFromStoresObject.guild;
-  let closure_10 = guild;
-  const application_command = data.application_command;
-  let name_localized;
+  let application_command = data.application_command;
+  name_localized = undefined;
   if (null != application_command) {
     name_localized = application_command.name_localized;
   }
   if (null == name_localized) {
     name_localized = data.name;
   }
-  closure_11 = name_localized;
-  const intl = arg1(dependencyMap[23]).intl;
+  const intl = channelId(data[23]).intl;
   obj = {
     userHook() {
       let obj = {};
-      const items = [closure_21.commandUserText, ];
+      const items = [outer1_21.commandUserText, ];
       obj = {};
-      let color = lib.colorString;
+      let color = closure_1.colorString;
       if (null == color) {
         color = tmp.commandText.color;
       }
       obj.color = color;
       items[1] = obj;
       obj.style = items;
-      obj.children = lib.nick;
-      return closure_21(channelId(data[17]).LegacyText, obj, "user");
+      obj.children = closure_1.nick;
+      return outer1_21(channelId(data[17]).LegacyText, obj, "user");
     },
     commandHook() {
       const obj = { variant: "text-sm/semibold" };
-      if (closure_5 === constants.CHAT_INPUT_COMMAND) {
+      if (closure_5 === outer1_15.CHAT_INPUT_COMMAND) {
         const _HermesInternal = HermesInternal;
-        let combined = "" + closure_19 + name_localized;
+        let combined = "" + outer1_19 + name_localized;
       } else {
         combined = name_localized;
       }
       obj.children = combined;
-      return closure_21(channelId(data[21]).Text, obj, "command");
+      return outer1_21(channelId(data[21]).Text, obj, "command");
     },
     applicationHook() {
       let obj = { style: tmp.applicationNameText, variant: "text-sm/semibold" };
       obj = { style: tmp.applicationIcon };
-      const tmp = lib(data[26]);
-      obj.source = channelId(data[27]).ensureAvatarSource(avatarSource.getAvatarSource(closure_4));
-      const items = [callback(tmp, obj, "icon-" + avatarSource.id), ` ${closure_2.username}`];
+      tmp = outer1_1(data[26]);
+      obj.source = channelId(data[27]).ensureAvatarSource(avatarSource.getAvatarSource(presentAddedFriendToast));
+      const items = [outer1_21(tmp, obj, "icon-" + avatarSource.id), ` ${closure_2.username}`];
       obj.children = items;
-      return callback2(channelId(data[21]).Text, obj, "application");
+      return outer1_22(channelId(data[21]).Text, obj, "application");
     }
   };
   const items2 = [channel, guild, messageId, , , , , , ];
@@ -489,8 +513,8 @@ function CommandContentContainer(channelId) {
   items2[8] = analyticsLocations;
   const memo = React.useMemo(() => {
     let done;
-    let obj = { children: `/${closure_11}` };
-    const items = [callback(channelId(data[17]).LegacyText, obj, "integrationName-" + data.name)];
+    let obj = { children: `/${name_localized}` };
+    let items = [outer1_21(channelId(data[17]).LegacyText, obj, "integrationName-" + data.name)];
     let tmp = items;
     if (null != data.options) {
       const application_command = data.application_command;
@@ -501,35 +525,35 @@ function CommandContentContainer(channelId) {
       if (null == options) {
         options = [];
       }
-      const tmp5 = callback3(data.options);
+      const tmp5 = outer1_25(data.options);
       let iter = tmp5();
       let combined = items;
       tmp = items;
       if (!iter.done) {
         do {
           let value = iter.value;
-          let tmp6 = closure_27;
+          let tmp6 = outer1_27;
           obj = { option: value };
-          let tmp7 = closure_9;
-          obj.channel = closure_9;
-          let tmp8 = closure_10;
-          obj.guild = closure_10;
-          let tmp9 = closure_6;
-          obj.messageId = closure_6;
+          let tmp7 = channel;
+          obj.channel = channel;
+          let tmp8 = guild;
+          obj.guild = guild;
+          let tmp9 = messageId;
+          obj.messageId = messageId;
           obj.parentOptionName = "";
           obj.commandOptionSpec = fromEntriesResult[value.name];
-          let tmp10 = closure_7;
-          obj.styles = closure_7;
-          let tmp11 = closure_8;
-          obj.analyticsLocations = closure_8;
-          combined = combined.concat(closure_27(obj));
+          let tmp10 = _isNativeReflectConstruct;
+          obj.styles = _isNativeReflectConstruct;
+          let tmp11 = analyticsLocations;
+          obj.analyticsLocations = analyticsLocations;
+          combined = combined.concat(outer1_27(obj));
           let iter2 = tmp5();
           iter = iter2;
           tmp = combined;
           done = iter2.done;
         } while (!done);
       }
-      const fromEntriesResult = Object.fromEntries(options.map((name) => {
+      fromEntriesResult = Object.fromEntries(options.map((name) => {
         const items = [name.name, name];
         return items;
       }));
@@ -537,42 +561,39 @@ function CommandContentContainer(channelId) {
     return tmp;
   }, items2);
   obj = {};
-  const formatResult = intl.format(arg1(dependencyMap[23]).t.sj/RT9, obj);
-  const items3 = [callback(arg1(dependencyMap[21]).Text, { style: tmp.commandText, children: intl.format(arg1(dependencyMap[23]).t.sj/RT9, obj) }, "commandName-" + data.name), callback(arg1(dependencyMap[21]).Text, { style: tmp.commandOptionText, children: memo }, "commandOption-" + data.name)];
+  const obj1 = { style: tmp.commandText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl.format(channelId(data[23]).t["sj/RT9"], obj) };
+  const items3 = [callback(channelId(data[21]).Text, obj1, "commandName-" + data.name), ];
+  const obj2 = { style: tmp.commandOptionText, variant: "text-md/medium", color: "text-default", children: memo };
+  items3[1] = callback(channelId(data[21]).Text, obj2, "commandOption-" + data.name);
   obj.children = items3;
-  return callback2(arg1(dependencyMap[28]).Card, obj);
+  return callback2(channelId(data[28]).Card, obj);
 }
 function CommandActionsContainer(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const chatInputRef = channelId.chatInputRef;
-  const importDefault = chatInputRef;
   const data = channelId.data;
-  const importAll = data;
-  let dependencyMap;
-  let React;
+  let channel;
+  let guild;
   let closure_5;
-  const options = data.options;
+  let options = data.options;
   const tmp = null != options && options.some((type) => type.type === channelId(channel[16]).ApplicationCommandOptionType.ATTACHMENT);
-  let obj = arg1(dependencyMap[25]);
-  const items = [closure_7, closure_9];
-  const items1 = [channelId];
+  let obj = channelId(channel[25]);
+  let items = [_isNativeReflectConstruct, closure_9];
+  let items1 = [channelId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const channel = channel.getChannel(channelId);
+    const channel = outer1_7.getChannel(channelId);
     const obj = { channel };
     let guild_id;
     if (null != channel) {
       guild_id = channel.guild_id;
     }
-    obj.guild = guild.getGuild(guild_id);
+    obj.guild = outer1_9.getGuild(guild_id);
     return obj;
   }, items1);
-  const channel = stateFromStoresObject.channel;
-  dependencyMap = channel;
-  const guild = stateFromStoresObject.guild;
-  React = guild;
-  const items2 = [data, channel, guild];
-  closure_5 = React.useCallback(() => {
+  channel = stateFromStoresObject.channel;
+  guild = stateFromStoresObject.guild;
+  let items2 = [data, channel, guild];
+  closure_5 = guild.useCallback(() => {
     let done;
     const application_command = data.application_command;
     let name_localized;
@@ -582,7 +603,7 @@ function CommandActionsContainer(channelId) {
     if (null == name_localized) {
       name_localized = data.name;
     }
-    const items = [closure_19 + name_localized];
+    let items = [outer1_19 + name_localized];
     let obj = items;
     if (null != data.options) {
       const application_command2 = data.application_command;
@@ -593,25 +614,25 @@ function CommandActionsContainer(channelId) {
       if (null == options) {
         options = [];
       }
-      const tmp6 = callback3(data.options);
+      const tmp6 = outer1_25(data.options);
       let iter = tmp6();
       let combined = items;
       obj = items;
       if (!iter.done) {
         do {
           let value = iter.value;
-          let tmp7 = closure_28;
-          let tmp8 = closure_3;
-          let tmp9 = closure_4;
+          let tmp7 = outer1_28;
+          let tmp8 = channel;
+          let tmp9 = guild;
           let tmp10 = value;
-          combined = combined.concat(closure_28(value, closure_3, closure_4, fromEntriesResult[value.name]));
+          combined = combined.concat(outer1_28(value, channel, guild, fromEntriesResult[value.name]));
           let iter2 = tmp6();
           iter = iter2;
           obj = combined;
           done = iter2.done;
         } while (!done);
       }
-      const fromEntriesResult = Object.fromEntries(options.map((name) => {
+      fromEntriesResult = Object.fromEntries(options.map((name) => {
         const items = [name.name, name];
         return items;
       }));
@@ -624,7 +645,7 @@ function CommandActionsContainer(channelId) {
         const obj4 = chatInputRef(channel[30]);
       }
     } else {
-      const DCDClipboardManager = DCDClipboardManager.DCDClipboardManager;
+      const DCDClipboardManager = outer1_6.DCDClipboardManager;
       const _JSON = JSON;
       const json1 = JSON.stringify(data);
       const result1 = DCDClipboardManager.setItem(json1, "application/x-discord-interaction-data", obj.join(" "));
@@ -635,26 +656,26 @@ function CommandActionsContainer(channelId) {
       const items1 = [channelId(channel[16]).ApplicationCommandType.CHAT];
       obj.commandTypes = items1;
       const obj1 = { allowFetch: true };
-      const query = closure_13.query(obj, obj, obj1);
+      const query = outer1_13.query(obj, obj, obj1);
     }
-    const obj3 = channelId(channel[29]);
+    obj3 = channelId(channel[29]);
     channelId(channel[31]).presentCommandCopied();
   }, items2);
   const items3 = [];
   if (tmp2) {
     obj = {};
-    const intl = arg1(dependencyMap[23]).intl;
-    obj.label = intl.string(arg1(dependencyMap[23]).t.42H+Nb);
+    const intl = channelId(channel[23]).intl;
+    obj.label = intl.string(channelId(channel[23]).t["42H+Nb"]);
     obj.onPress = function onPress() {
       chatInputRef(channel[18]).hideActionSheet();
       callback();
     };
-    items3.push(callback(arg1(dependencyMap[32]).TableRow, obj));
+    items3.push(callback(channelId(channel[32]).TableRow, obj));
   }
   if (null != chatInputRef) {
     obj = {};
-    const intl2 = arg1(dependencyMap[23]).intl;
-    obj.label = intl2.string(arg1(dependencyMap[23]).t.lNWC7s);
+    const intl2 = channelId(channel[23]).intl;
+    obj.label = intl2.string(channelId(channel[23]).t.lNWC7s);
     obj.onPress = function onPress() {
       let obj = chatInputRef(channel[18]);
       obj.hideActionSheet();
@@ -681,10 +702,10 @@ function CommandActionsContainer(channelId) {
             }
             if (!tmp19) {
               obj = { type: channelId(channel[33]).KeyboardTypes.APP_LAUNCHER };
-              obj = { initialRouteName: constants.COMMAND_VIEW, analyticsLocation: channelId(channel[34]).ApplicationCommandTriggerLocations.RECALL };
+              obj = { initialRouteName: outer1_17.COMMAND_VIEW, analyticsLocation: channelId(channel[34]).ApplicationCommandTriggerLocations.RECALL };
               let obj1 = {};
-              const sum = data.id + closure_14;
-              obj1.commandId = sum + items1.join(closure_14);
+              const sum = data.id + outer1_14;
+              obj1.commandId = sum + items1.join(outer1_14);
               obj1.prefilledOptions = options;
               obj.preSelectedCommand = obj1;
               obj.context = obj;
@@ -701,7 +722,7 @@ function CommandActionsContainer(channelId) {
       }
       if (!tmp6) {
         const obj2 = { type: channelId(channel[33]).KeyboardTypes.APP_LAUNCHER };
-        const obj3 = { initialRouteName: constants.COMMAND_VIEW, analyticsLocation: channelId(channel[34]).ApplicationCommandTriggerLocations.RECALL };
+        const obj3 = { initialRouteName: outer1_17.COMMAND_VIEW, analyticsLocation: channelId(channel[34]).ApplicationCommandTriggerLocations.RECALL };
         ({ id: obj5.commandId, options: obj5.prefilledOptions } = data);
         obj3.preSelectedCommand = {};
         obj2.context = obj3;
@@ -709,49 +730,33 @@ function CommandActionsContainer(channelId) {
         const obj4 = {};
       }
     };
-    items3.push(callback(arg1(dependencyMap[32]).TableRow, obj));
+    items3.push(callback(channelId(channel[32]).TableRow, obj));
   }
   let tmp12 = null;
   if (0 !== items3.length) {
-    const obj1 = { spacing: 8 };
-    const obj2 = { cachedAt: true, edpbxy: true };
-    const intl3 = arg1(dependencyMap[23]).intl;
-    obj2.children = intl3.string(arg1(dependencyMap[23]).t.3eF5/L);
-    const items4 = [callback(arg1(dependencyMap[21]).Text, obj2), ];
-    const obj3 = { hasIcons: false, children: items3.map((children) => callback2(guild.Fragment, { children }, arg1)) };
-    items4[1] = callback(arg1(dependencyMap[36]).TableRowGroup, obj3);
+    let obj1 = { spacing: 8 };
+    let obj2 = { variant: "text-sm/semibold", color: "text-subtle" };
+    const intl3 = channelId(channel[23]).intl;
+    obj2.children = intl3.string(channelId(channel[23]).t["3eF5/L"]);
+    const items4 = [callback(channelId(channel[21]).Text, obj2), ];
+    let obj3 = { hasIcons: false, children: items3.map((children) => outer1_21(guild.Fragment, { children }, arg1)) };
+    items4[1] = callback(channelId(channel[36]).TableRowGroup, obj3);
     obj1.children = items4;
-    tmp12 = callback2(arg1(dependencyMap[35]).Stack, obj1);
+    tmp12 = callback2(channelId(channel[35]).Stack, obj1);
   }
   return tmp12;
 }
-let closure_4 = importAll(dependencyMap[0]);
-({ ActivityIndicator: closure_5, NativeModules: closure_6 } = arg1(dependencyMap[1]));
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]);
-let closure_13 = importDefault(dependencyMap[8]);
-const SUB_COMMAND_KEY_SEPARATOR = arg1(dependencyMap[9]).SUB_COMMAND_KEY_SEPARATOR;
-const tmp3 = arg1(dependencyMap[10]);
-({ MessageTypes: closure_15, WHITESPACE_RE: closure_16 } = tmp3);
-const AppLauncherRouteName = arg1(dependencyMap[11]).AppLauncherRouteName;
-const tmp2 = arg1(dependencyMap[1]);
-({ CHANNEL_SENTINEL: closure_18, COMMAND_SENTINEL: closure_19, MENTION_SENTINEL: closure_20 } = arg1(dependencyMap[12]));
-const tmp4 = arg1(dependencyMap[12]);
-({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = arg1(dependencyMap[13]));
-let obj = arg1(dependencyMap[14]);
-obj = { container: {}, activityIndicator: { padding: 16 }, commandUserText: obj, applicationIcon: {}, applicationNameText: { textAlignVertical: "center" }, commandOptionText: { marginTop: 12 } };
-obj = { fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
-const tmp5 = arg1(dependencyMap[13]);
-obj.commandOptionMentionText = { color: importDefault(dependencyMap[15]).colors.BACKGROUND_BRAND };
-const obj1 = { color: importDefault(dependencyMap[15]).colors.BACKGROUND_BRAND };
-obj.commandText = { fontSize: 16, color: importDefault(dependencyMap[15]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-let closure_24 = obj.createStyles(obj);
-const obj2 = { fontSize: 16, color: importDefault(dependencyMap[15]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const result = arg1(dependencyMap[40]).fileFinishedImporting("modules/application_commands/native/ExecutedApplicationCommandPopout.tsx");
+({ ActivityIndicator: closure_5, NativeModules: closure_6 } = get_ActivityIndicator);
+({ MessageTypes: closure_15, WHITESPACE_RE: closure_16 } = ME);
+({ CHANNEL_SENTINEL: closure_18, COMMAND_SENTINEL: closure_19, MENTION_SENTINEL: closure_20 } = MENTION_SENTINEL);
+({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { paddingVertical: 8, paddingHorizontal: 16, gap: 16 }, activityIndicator: { padding: 16 }, commandUserText: _createForOfIteratorHelperLoose, applicationIcon: { width: 18, height: 18, borderRadius: 9, alignSelf: "center" }, applicationNameText: { textAlignVertical: "center" }, commandOptionText: { marginTop: 12 } };
+_createForOfIteratorHelperLoose = { fontFamily: ME.Fonts.PRIMARY_SEMIBOLD, commandOptionMentionText: { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND } };
+let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose.commandText = { fontSize: 16, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { fontSize: 16, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/application_commands/native/ExecutedApplicationCommandPopout.tsx");
 
 export default function ExecutedCommandPopout(channelId) {
   let applicationUser;
@@ -761,15 +766,12 @@ export default function ExecutedCommandPopout(channelId) {
   let messageType;
   let user;
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const messageId = channelId.messageId;
-  const importDefault = messageId;
   ({ user, chatInputRef, author, applicationUser, guildId, messageType } = channelId);
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[25]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = channelId(566);
   const items = [closure_10];
-  const stateFromStores = obj.useStateFromStores(items, () => message.getMessage(channelId, messageId));
-  const importAll = stateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getMessage(channelId, messageId));
   const items1 = [channelId, messageId, ];
   let interactionData;
   if (null != stateFromStores) {
@@ -787,7 +789,7 @@ export default function ExecutedCommandPopout(channelId) {
       if (null != stateFromStores) {
         type = stateFromStores.interactionData.type;
       }
-      let tmp9 = type === channelId(closure_3[16]).ApplicationCommandType.CHAT;
+      let tmp9 = type === channelId(outer1_3[16]).ApplicationCommandType.CHAT;
       if (tmp9) {
         let application_command;
         if (null != stateFromStores) {
@@ -798,11 +800,11 @@ export default function ExecutedCommandPopout(channelId) {
       tmp3 = tmp9;
     }
     if (tmp3) {
-      const messageInteractionData = stateFromStores(closure_3[38]).fetchMessageInteractionData(channelId, messageId);
-      const obj = stateFromStores(closure_3[38]);
+      const messageInteractionData = stateFromStores(outer1_3[38]).fetchMessageInteractionData(channelId, messageId);
+      const obj = stateFromStores(outer1_3[38]);
     }
   }, items1);
-  obj = { value: importDefault(dependencyMap[24])(importDefault(dependencyMap[37]).EXECUTED_COMMAND).analyticsLocations };
+  obj = { value: messageId(5464)(messageId(5484).EXECUTED_COMMAND).analyticsLocations };
   obj = { startExpanded: true, bodyStyles: tmp.container };
   let interactionData1;
   if (null != stateFromStores) {
@@ -838,6 +840,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp13Result = callback(closure_5, obj4);
   }
   obj.children = tmp13Result;
-  obj.children = callback(arg1(dependencyMap[39]).BottomSheet, obj);
-  return callback(arg1(dependencyMap[24]).AnalyticsLocationProvider, obj);
+  obj.children = callback(channelId(5187).BottomSheet, obj);
+  return callback(channelId(5464).AnalyticsLocationProvider, obj);
 };

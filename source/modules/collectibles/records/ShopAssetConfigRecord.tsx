@@ -1,16 +1,13 @@
-// Module ID: 6782
-// Function ID: 53558
+// Module ID: 6787
+// Function ID: 53590
 // Name: AssetDisplayConfigRecord
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 6782 (AssetDisplayConfigRecord)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 6787 (AssetDisplayConfigRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("modules/collectibles/records/ShopAssetConfigRecord.tsx");
-
-export const AssetDisplayConfigRecord = () => {
+const tmp2 = (() => {
   class AssetDisplayConfigRecord {
     constructor(arg0) {
       tmp = AssetDisplayConfigRecord(this, AssetDisplayConfigRecord);
@@ -18,7 +15,6 @@ export const AssetDisplayConfigRecord = () => {
       return;
     }
   }
-  let closure_0 = AssetDisplayConfigRecord;
   let obj = {
     key: "toDesktopStyles",
     value() {
@@ -65,4 +61,7 @@ export const AssetDisplayConfigRecord = () => {
   };
   const items1 = [obj];
   return callback(AssetDisplayConfigRecord, items, items1);
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/collectibles/records/ShopAssetConfigRecord.tsx");
+
+export const AssetDisplayConfigRecord = tmp2;

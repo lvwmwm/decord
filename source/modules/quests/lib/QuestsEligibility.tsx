@@ -1,14 +1,12 @@
-// Module ID: 10455
-// Function ID: 80939
+// Module ID: 10465
+// Function ID: 80989
 // Name: getIsEligibleForQuests
-// Dependencies: [6, 7]
+// Dependencies: [1553, 2]
 // Exports: getIsEligibleForQuests
 
-// Module 10455 (getIsEligibleForQuests)
-import _defineProperties from "_defineProperties";
-
-const result = _defineProperties.fileFinishedImporting("modules/quests/lib/QuestsEligibility.tsx");
+// Module 10465 (getIsEligibleForQuests)
+const result = require("set").fileFinishedImporting("modules/quests/lib/QuestsEligibility.tsx");
 
 export const getIsEligibleForQuests = function getIsEligibleForQuests() {
-  return !require(dependencyMap[0]).isMetaQuest();
+  return !require(1553) /* isMetaQuest */.isMetaQuest();
 };

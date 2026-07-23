@@ -1,22 +1,21 @@
-// Module ID: 16498
-// Function ID: 127392
+// Module ID: 16615
+// Function ID: 129566
 // Name: installRNGHMountReactionsBridge
-// Dependencies: []
+// Dependencies: [16616, 2]
 // Exports: installRNGHMountReactionsBridge
 
-// Module 16498 (installRNGHMountReactionsBridge)
-let closure_3 = false;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/gesture_handlers/native/RNGHMountReactionsBridge.native.tsx");
+// Module 16615 (installRNGHMountReactionsBridge)
+let c3 = false;
+const result = require("set").fileFinishedImporting("modules/gesture_handlers/native/RNGHMountReactionsBridge.native.tsx");
 
 export const installRNGHMountReactionsBridge = function installRNGHMountReactionsBridge() {
-  if (!closure_3) {
-    const RNGHMountReactionsEffectExperiment = require(dependencyMap[0]).RNGHMountReactionsEffectExperiment;
+  if (!c3) {
+    const RNGHMountReactionsEffectExperiment = require(16616) /* RNGHMountReactionsEffectExperiment */.RNGHMountReactionsEffectExperiment;
     const obj = { location: "rngh-mount-reactions" };
     global.__DISCORD_RNGH_USE_LAYOUT_EFFECT__ = RNGHMountReactionsEffectExperiment.getConfig(obj).useLayoutEffect;
     global.__DISCORD_RNGH_ON_STALE_MOUNT__ = () => {
 
     };
-    closure_3 = true;
+    c3 = true;
   }
 };

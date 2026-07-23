@@ -1,58 +1,62 @@
-// Module ID: 14928
-// Function ID: 112397
+// Module ID: 15044
+// Function ID: 114565
 // Name: GuildPowerupsProgressBar
-// Dependencies: []
+// Dependencies: [31, 27, 15045, 1838, 33, 689, 3991, 4554, 4130, 624, 15046, 15047, 4131, 11512, 5484, 1212, 2230, 8372, 4126, 5514, 2]
 // Exports: default
 
-// Module 14928 (GuildPowerupsProgressBar)
-let closure_3 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const View = tmp2.View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let closure_9 = [];
-const result = 2 * importDefault(dependencyMap[5]).space.PX_4;
-const tmp3 = arg1(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[6]).createAnimatedComponent(importDefault(dependencyMap[7]));
-let obj1 = arg1(dependencyMap[8]);
+// Module 15044 (GuildPowerupsProgressBar)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import jsxProd from "jsxProd";
+import LinearGradient from "LinearGradient";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+const View = get_ActivityIndicator.View;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = ["rgba(255, 115, 250, 0.4)", "rgba(255, 115, 250, 0.1)"];
+let result = 2 * require("_createForOfIteratorHelperLoose").space.PX_4;
 let obj = {};
-obj = { paddingVertical: importDefault(dependencyMap[5]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16 };
+obj = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
 obj.container = obj;
-obj1 = { height: 30, borderRadius: importDefault(dependencyMap[5]).radii.round, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL, justifyContent: "center" };
-obj.track = obj1;
-const obj2 = {};
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
+_createForOfIteratorHelperLoose = { height: 30, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, justifyContent: "center" };
+obj.track = _createForOfIteratorHelperLoose;
+let obj2 = {};
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
 obj2["padding"] = 2;
 obj.fillContainer = obj2;
-const obj3 = { "Bool(true)": "r", "Bool(true)": "POLL_ATTACHMENT_FOLDER", "Bool(true)": "Array", "Bool(true)": "startAnimation", "Bool(true)": "p", "Bool(true)": "isArray", borderRadius: importDefault(dependencyMap[5]).radii.round };
+let obj3 = { height: "100%", minWidth: 26, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, borderWidth: 1, borderColor: "rgba(255, 115, 250, 0.2)", overflow: "hidden" };
 obj.fill = obj3;
-obj.fillShadow = { shadowOffset: {} };
-const obj4 = { "Null": "<string:3435973836>", "Null": "<string:1903247380>", "Null": "r", paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
-obj.textContainer = obj4;
-obj.rightContent = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-let closure_11 = obj1.createStyles(obj);
+let obj4 = { shadowColor: "rgba(0, 0, 0, 0.14)", shadowOffset: { width: 0, height: 1 }, shadowOpacity: 1, shadowRadius: 4, elevation: 2 };
+obj.fillShadow = obj4;
+let obj5 = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+obj.textContainer = obj5;
+obj.rightContent = { flexDirection: "row", alignItems: "center" };
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_12 = { code: "function GuildPowerupsProgressBarTsx1(){const{animatedFillPercent,animatedFillOpacity}=this.__closure;return{width:animatedFillPercent.get()+\"%\",opacity:animatedFillOpacity.get()};}" };
-const importDefaultResult = importDefault(dependencyMap[6]);
-const result1 = arg1(dependencyMap[20]).fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsProgressBar.tsx");
+let result1 = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsProgressBar.tsx");
 
 export default function GuildPowerupsProgressBar(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
-  let dependencyMap;
-  let React;
-  let View;
-  let closure_5;
+  let num;
+  let num2;
+  let sharedValue;
+  let sharedValue1;
   const tmp = callback3();
-  let obj = arg1(dependencyMap[9]);
+  let obj = guildId(num[9]);
   const items = [closure_6];
   const items1 = [guildId];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId), items1);
-  const tmp3 = importDefault(dependencyMap[10])(stateFromStores);
-  let obj1 = arg1(dependencyMap[9]);
-  const items2 = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(guildId), items1);
+  const tmp3 = stateFromStores1(num[10])(stateFromStores);
+  let obj1 = guildId(num[9]);
+  const items2 = [sharedValue1];
   const items3 = [guildId];
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => {
+  stateFromStores1 = obj1.useStateFromStores(items2, () => {
     const countForGuild = sharedValue1.getCountForGuild(guildId);
     let num = 0;
     if (null != countForGuild) {
@@ -60,55 +64,50 @@ export default function GuildPowerupsProgressBar(guildId) {
     }
     return num;
   }, items3);
-  const importDefault = stateFromStores1;
   let prop;
   if (null != stateFromStores) {
     prop = stateFromStores.premiumSubscriberCount;
   }
-  let num = 0;
+  num = 0;
   if (null != prop) {
     num = prop;
   }
-  dependencyMap = num;
   const items4 = [guildId, stateFromStores1, num];
-  const effect = React.useEffect(() => {
+  const effect = num2.useEffect(() => {
     if (stateFromStores1 !== num) {
       const result = guildId(11[11]).updateGuildPremiumSubscriptionCount(guildId, num);
       const obj = guildId(11[11]);
     }
   }, items4);
-  let num2 = 0;
+  num2 = 0;
   if (tmp3 > 0) {
     const _Math = Math;
     num2 = Math.min(stateFromStores1 / tmp3 * 100, 100);
   }
-  React = num2;
-  let obj2 = arg1(dependencyMap[6]);
-  const sharedValue = obj2.useSharedValue(num2);
-  View = sharedValue;
-  let obj3 = arg1(dependencyMap[6]);
+  let obj2 = guildId(num[6]);
+  sharedValue = obj2.useSharedValue(num2);
+  let obj3 = guildId(num[6]);
   let num4 = 0;
   if (num2 > 0) {
     num4 = 1;
   }
-  const sharedValue1 = obj3.useSharedValue(num4);
-  closure_5 = sharedValue1;
+  sharedValue1 = obj3.useSharedValue(num4);
   const items5 = [sharedValue, sharedValue1, num2];
-  const effect1 = React.useEffect(() => {
+  const effect1 = num2.useEffect(() => {
     const result = sharedValue.set(guildId(num[12]).withTiming(num2, { duration: 500 }));
-    const obj = guildId(num[12]);
-    let num = 0;
+    let obj = guildId(num[12]);
+    num = 0;
     if (num2 > 0) {
       num = 1;
     }
     const result1 = sharedValue1.set(guildId(num[12]).withTiming(num, { duration: 500 }));
     return () => {
-      callback(closure_2[6]).cancelAnimation(closure_4);
-      const obj = callback(closure_2[6]);
-      callback(closure_2[6]).cancelAnimation(closure_5);
+      guildId(num[6]).cancelAnimation(outer1_4);
+      const obj = guildId(num[6]);
+      guildId(num[6]).cancelAnimation(outer1_5);
     };
   }, items5);
-  let obj4 = arg1(dependencyMap[6]);
+  let obj4 = guildId(num[6]);
   const fn = function v() {
     return { width: "" + sharedValue.get() + "%", opacity: sharedValue1.get() };
   };
@@ -117,54 +116,54 @@ export default function GuildPowerupsProgressBar(guildId) {
   fn.__initData = closure_12;
   const items6 = [guildId];
   const animatedStyle = obj4.useAnimatedStyle(fn);
-  const callback = React.useCallback(() => {
+  const callback = num2.useCallback(() => {
     const obj = { guildId, analyticsLocation: stateFromStores1(num[14]).GUILD_BOOSTING_SIDEBAR_DISPLAY };
     stateFromStores1(num[13])(obj);
   }, items6);
   if (stateFromStores1 >= tmp3) {
-    const intl2 = arg1(dependencyMap[15]).intl;
+    const intl2 = guildId(num[15]).intl;
     obj = { appliedBoostCount: stateFromStores1 };
-    let formatToPlainStringResult = intl2.formatToPlainString(importDefault(dependencyMap[16]).Ehpq+7, obj);
+    let formatToPlainStringResult = intl2.formatToPlainString(stateFromStores1(num[16])["Ehpq+7"], obj);
   } else {
-    const intl = arg1(dependencyMap[15]).intl;
+    const intl = guildId(num[15]).intl;
     obj = { appliedBoostCount: stateFromStores1, maxBoostCount: tmp3 };
-    formatToPlainStringResult = intl.formatToPlainString(importDefault(dependencyMap[16])./rbPDs, obj);
+    formatToPlainStringResult = intl.formatToPlainString(stateFromStores1(num[16])["/rbPDs"], obj);
   }
   obj1 = { accessibilityRole: "button" };
-  const intl3 = arg1(dependencyMap[15]).intl;
-  obj1.accessibilityLabel = intl3.string(importDefault(dependencyMap[16]).NI6Ihe);
+  const intl3 = guildId(num[15]).intl;
+  obj1.accessibilityLabel = intl3.string(stateFromStores1(num[16]).NI6Ihe);
   obj1.onPress = callback;
   obj1.style = tmp.container;
   obj2 = { style: tmp.track };
-  obj3 = { style: tmp.fillContainer, children: callback(closure_10, obj4) };
+  obj3 = { style: tmp.fillContainer, children: callback(LinearGradient, obj4) };
   obj4 = { style: items7, colors: closure_9, useAngle: true, angle: 270 };
-  const items7 = [, , ];
+  items7 = [, , ];
   ({ fill: arr8[0], fillShadow: arr8[1] } = tmp);
   items7[2] = animatedStyle;
-  const items8 = [callback(View, obj3), ];
+  const items8 = [callback(sharedValue, obj3), ];
   const obj5 = { style: tmp.textContainer };
-  const obj6 = {};
+  const obj6 = { variant: "text-xs/semibold", color: "text-default" };
   if (num >= tmp3) {
-    const intl5 = arg1(dependencyMap[15]).intl;
+    const intl5 = guildId(num[15]).intl;
     const _HermesInternal = HermesInternal;
-    let combined = "" + intl5.string(importDefault(dependencyMap[16]).NI6Ihe) + " \u{1F389}";
+    let combined = "" + intl5.string(stateFromStores1(num[16]).NI6Ihe) + " \u{1F389}";
   } else {
-    const intl4 = arg1(dependencyMap[15]).intl;
-    combined = intl4.string(importDefault(dependencyMap[16]).NI6Ihe);
+    const intl4 = guildId(num[15]).intl;
+    combined = intl4.string(stateFromStores1(num[16]).NI6Ihe);
   }
   obj6.children = combined;
-  const items9 = [callback(arg1(dependencyMap[18]).Text, obj6), ];
+  const items9 = [callback(guildId(num[18]).Text, obj6), ];
   const obj7 = { style: tmp.rightContent };
-  const obj8 = { style: { opacity: 0.7 }, children: formatToPlainStringResult };
-  const items10 = [callback(arg1(dependencyMap[18]).Text, obj8), ];
-  const obj9 = { size: "sm", color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
-  items10[1] = callback(arg1(dependencyMap[19]).ChevronSmallRightIcon, obj9);
+  const obj8 = { variant: "text-xs/semibold", color: "text-default", style: { opacity: 0.7 }, children: formatToPlainStringResult };
+  const items10 = [callback(guildId(num[18]).Text, obj8), ];
+  const obj9 = { size: "sm", color: stateFromStores1(num[5]).colors.TEXT_DEFAULT };
+  items10[1] = callback(guildId(num[19]).ChevronSmallRightIcon, obj9);
   obj7.children = items10;
-  items9[1] = callback2(View, obj7);
+  items9[1] = callback2(sharedValue, obj7);
   obj5.children = items9;
-  items8[1] = callback2(View, obj5);
+  items8[1] = callback2(sharedValue, obj5);
   obj2.children = items8;
-  obj1.children = callback2(View, obj2);
-  return callback(arg1(dependencyMap[17]).PressableScale, obj1);
+  obj1.children = callback2(sharedValue, obj2);
+  return callback(guildId(num[17]).PressableScale, obj1);
 };
 export const BOOST_PROGRESS_BAR_HEIGHT = result + 30;

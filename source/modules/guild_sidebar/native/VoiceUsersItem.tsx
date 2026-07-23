@@ -1,16 +1,17 @@
-// Module ID: 14863
-// Function ID: 111991
+// Module ID: 14979
+// Function ID: 114159
 // Name: VoiceUsersItem
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 2]
 // Exports: default
 
-// Module 14863 (VoiceUsersItem)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_2 = arg1(dependencyMap[3]).createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { 0: "auto.db.supabase.auth", 9223372036854775807: "Portugu\u00EAs", 0: "Portuguese", 9223372036854775807: "pt-PT" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_sidebar/native/VoiceUsersItem.tsx");
+// Module 14979 (VoiceUsersItem)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2 = _createForOfIteratorHelperLoose.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsersItem.tsx");
 
 export default function VoiceUsersItem(collapsed) {
   let voiceStatesCollapsed = collapsed.collapsed;
@@ -27,5 +28,5 @@ export default function VoiceUsersItem(collapsed) {
   items[1] = voiceStatesCollapsed;
   obj.style = items;
   obj.children = collapsed.children;
-  return <View {...obj} />;
+  return <View />;
 };

@@ -1,45 +1,47 @@
-// Module ID: 16018
-// Function ID: 122902
+// Module ID: 16135
+// Function ID: 125075
 // Name: ConnectGuardianModal
-// Dependencies: []
+// Dependencies: [31, 27, 653, 6770, 33, 4130, 689, 1557, 16136, 675, 5586, 4126, 1212, 2198, 5459, 13784, 4543, 2]
 // Exports: default
 
-// Module 16018 (ConnectGuardianModal)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const FamilyCenterAction = arg1(dependencyMap[3]).FamilyCenterAction;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.centered = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-obj.header = { marginBottom: importDefault(dependencyMap[6]).space.PX_40 };
-const obj2 = { marginBottom: importDefault(dependencyMap[6]).space.PX_40 };
-obj.title = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, marginBottom: importDefault(dependencyMap[6]).space.PX_8, textAlign: "center" };
-const obj3 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, marginBottom: importDefault(dependencyMap[6]).space.PX_8, textAlign: "center" };
-obj.description = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, textAlign: "center" };
-obj.cardSection = { alignItems: "center" };
-const obj4 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, textAlign: "center" };
-obj.scanPrompt = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, marginBottom: importDefault(dependencyMap[6]).space.PX_24, textAlign: "center" };
-obj.grow = { flexGrow: 1 };
-const obj5 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, marginBottom: importDefault(dependencyMap[6]).space.PX_24, textAlign: "center" };
-obj.footer = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-let closure_9 = obj.createStyles(obj);
-const obj6 = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/nuf/native/components/ConnectGuardianModal.tsx");
+// Module 16135 (ConnectGuardianModal)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { AnalyticEvents } from "ME";
+import { FamilyCenterAction } from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.centered = obj1;
+_createForOfIteratorHelperLoose.header = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_40 };
+let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_40 };
+_createForOfIteratorHelperLoose.title = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+let obj3 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+_createForOfIteratorHelperLoose.description = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
+_createForOfIteratorHelperLoose.cardSection = { alignItems: "center" };
+let obj4 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
+_createForOfIteratorHelperLoose.scanPrompt = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
+_createForOfIteratorHelperLoose.grow = { flexGrow: 1 };
+let obj5 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
+_createForOfIteratorHelperLoose.footer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj6 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("ME").fileFinishedImporting("modules/nuf/native/components/ConnectGuardianModal.tsx");
 
 export default function ConnectGuardianModal(route) {
   const onComplete = route.route.params.onComplete;
-  const arg1 = onComplete;
-  const tmp = callback3();
-  let obj = arg1(closure_2[8]);
+  let tmp = _createForOfIteratorHelperLoose();
+  let obj = onComplete(16136);
   const connectGuardianGate = obj.useConnectGuardianGate();
-  const importDefault = connectGuardianGate;
-  closure_2 = React.useRef(false);
+  const dependencyMap = React.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
   const effect = React.useEffect(() => {
     let current = "error" !== connectGuardianGate.state;
@@ -49,10 +51,8 @@ export default function ConnectGuardianModal(route) {
     if (!current) {
       ref.current = true;
       let obj = connectGuardianGate(ref[9]);
-      obj = {};
-      obj.action = obj.NufConsentGateLinkCodeError;
-      obj.source = "NUF Connect Guardian";
-      obj.track(constants.FAMILY_CENTER_ACTION, obj);
+      obj = { action: outer1_6.NufConsentGateLinkCodeError, source: "NUF Connect Guardian" };
+      obj.track(outer1_5.FAMILY_CENTER_ACTION, obj);
       if (null != onComplete) {
         onComplete(true);
       }
@@ -63,42 +63,42 @@ export default function ConnectGuardianModal(route) {
     const items1 = [, ];
     ({ container: arr2[0], centered: arr2[1] } = tmp);
     obj.style = items1;
-    obj.children = callback(arg1(closure_2[10]).ActivityIndicator, {});
+    obj.children = callback(onComplete(5586).ActivityIndicator, {});
     let tmp8 = callback(View, obj);
   } else {
     obj = { style: tmp.container };
     const obj1 = { style: tmp.header };
-    const obj2 = { style: tmp.title };
-    const intl = arg1(closure_2[12]).intl;
-    obj2.children = intl.string(importDefault(closure_2[13]).ITlV6p);
-    const items2 = [callback(arg1(closure_2[11]).Text, obj2), ];
-    const obj3 = { style: tmp.description };
-    const intl2 = arg1(closure_2[12]).intl;
+    const obj2 = { style: tmp.title, variant: "heading-xl/bold", color: "text-default" };
+    const intl = onComplete(1212).intl;
+    obj2.children = intl.string(connectGuardianGate(2198).ITlV6p);
+    const items2 = [callback(onComplete(4126).Text, obj2), ];
+    const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-muted" };
+    const intl2 = onComplete(1212).intl;
     const obj4 = { link: "https://support.discord.com/hc/articles/14155060633623" };
-    obj3.children = intl2.format(importDefault(closure_2[13]).F4GT2S, obj4);
-    items2[1] = callback(arg1(closure_2[14]).TextWithIOSLinkWorkaround, obj3);
+    obj3.children = intl2.format(connectGuardianGate(2198).F4GT2S, obj4);
+    items2[1] = callback(onComplete(5459).TextWithIOSLinkWorkaround, obj3);
     obj1.children = items2;
     const items3 = [callback2(View, obj1), , , ];
     const obj5 = { style: tmp.cardSection };
-    const obj6 = { "Null": "<string:1895908587>", "Null": "r", alignItems: "<string:44592193>", style: tmp.scanPrompt };
-    const intl3 = arg1(closure_2[12]).intl;
-    obj6.children = intl3.string(importDefault(closure_2[13]).Mi60fm);
-    const items4 = [callback(arg1(closure_2[11]).Text, obj6), ];
+    const obj6 = { style: tmp.scanPrompt, variant: "text-md/semibold", color: "text-default" };
+    const intl3 = onComplete(1212).intl;
+    obj6.children = intl3.string(connectGuardianGate(2198).Mi60fm);
+    const items4 = [callback(onComplete(4126).Text, obj6), ];
     const obj7 = { shareActions: "compact" };
     ({ linkCode: obj10.linkCode, expiresAt: obj10.expiresAt, refresh: obj10.onRefresh } = connectGuardianGate);
-    items4[1] = callback(arg1(closure_2[15]).ConnectGuardianCard, obj7);
+    items4[1] = callback(onComplete(13784).ConnectGuardianCard, obj7);
     obj5.children = items4;
     items3[1] = callback2(View, obj5);
     const obj8 = { style: tmp.grow };
     items3[2] = callback(View, obj8);
     const obj9 = {};
     const items5 = [tmp.footer, ];
-    const obj10 = { paddingBottom: importDefault(closure_2[7])().bottom + importDefault(closure_2[6]).space.PX_16 };
+    const obj10 = { paddingBottom: connectGuardianGate(1557)().bottom + connectGuardianGate(689).space.PX_16 };
     items5[1] = obj10;
     obj9.style = items5;
-    const obj11 = {};
-    const intl4 = arg1(closure_2[12]).intl;
-    obj11.text = intl4.string(arg1(closure_2[12]).t.3PatSz);
+    const obj11 = { variant: "primary", size: "lg" };
+    const intl4 = onComplete(1212).intl;
+    obj11.text = intl4.string(onComplete(1212).t["3PatSz"]);
     obj11.onPress = function onPress() {
       let tmp;
       if (null != onComplete) {
@@ -106,7 +106,7 @@ export default function ConnectGuardianModal(route) {
       }
       return tmp;
     };
-    obj9.children = callback(arg1(closure_2[16]).Button, obj11);
+    obj9.children = callback(onComplete(4543).Button, obj11);
     items3[3] = callback(View, obj9);
     obj.children = items3;
     tmp8 = callback2(View, obj);

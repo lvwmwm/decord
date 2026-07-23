@@ -1,10 +1,13 @@
 // Module ID: 796
-// Function ID: 8961
+// Function ID: 8962
 // Name: convertSpanLinksForEnvelope
-// Dependencies: []
+// Dependencies: [77, 29, 797, 806, 811, 815, 816, 817, 799, 802, 818, 821, 825, 801]
 // Exports: addChildSpanToSpan, getActiveSpan, getRootSpan, getSpanDescendants, removeChildSpanFromSpan, showSpanDropWarning, spanToTraceContext, spanToTraceHeader, spanToTraceparentHeader, spanToTransactionTraceContext, updateSpanName
 
 // Module 796 (convertSpanLinksForEnvelope)
+import _defineProperty from "_defineProperty";
+import _objectWithoutProperties from "_objectWithoutProperties";
+
 function convertSpanLinksForEnvelope(_links) {
   let mapped;
   if (_links) {
@@ -15,7 +18,7 @@ function convertSpanLinksForEnvelope(_links) {
         let traceId;
         const context = attributes.context;
         ({ spanId, traceId, traceFlags } = context);
-        return Object.assign({ span_id: spanId, trace_id: traceId, sampled: 1 === traceFlags, attributes: attributes.attributes }, callback(context, closure_4));
+        return Object.assign({ span_id: spanId, trace_id: traceId, sampled: 1 === traceFlags, attributes: attributes.attributes }, outer1_3(context, outer1_4));
       });
     }
   }
@@ -33,8 +36,8 @@ function spanTimeInputToSeconds(getTime) {
       if (getTime instanceof Date) {
         sum = ensureTimestampInSeconds(getTime.getTime());
       } else {
-        sum = require(dependencyMap[5]).timestampInSeconds();
-        const obj = require(dependencyMap[5]);
+        sum = require(815) /* dateTimestampInSeconds */.timestampInSeconds();
+        const obj = require(815) /* dateTimestampInSeconds */;
       }
     }
   }
@@ -79,13 +82,13 @@ function spanToJSON(getSpanJSON) {
       obj.start_timestamp = spanTimeInputToSeconds(startTime);
       obj.timestamp = spanTimeInputToSeconds(endTime) || undefined;
       obj.status = getStatusMessage(status);
-      obj.op = attributes[closure_0(undefined, closure_1[6]).SEMANTIC_ATTRIBUTE_SENTRY_OP];
-      obj.origin = attributes[closure_0(undefined, closure_1[6]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN];
+      obj.op = attributes[require(undefined, 816).SEMANTIC_ATTRIBUTE_SENTRY_OP];
+      obj.origin = attributes[require(undefined, 816).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN];
       obj.links = convertSpanLinksForEnvelope(links);
       return obj;
     }
     const spanContextResult = getSpanJSON.spanContext();
-    const tmp = getSpanJSON.attributes && getSpanJSON.startTime && getSpanJSON.name && getSpanJSON.endTime && getSpanJSON.status;
+    tmp = getSpanJSON.attributes && getSpanJSON.startTime && getSpanJSON.name && getSpanJSON.endTime && getSpanJSON.status;
   }
 }
 function spanIsSampled(spanContext) {
@@ -93,9 +96,9 @@ function spanIsSampled(spanContext) {
 }
 function getStatusMessage(code) {
   if (code) {
-    if (code.code !== require(dependencyMap[7]).SPAN_STATUS_UNSET) {
+    if (code.code !== require(817) /* getSpanStatusFromHttpCode */.SPAN_STATUS_UNSET) {
       let str = "ok";
-      if (code.code !== require(dependencyMap[7]).SPAN_STATUS_OK) {
+      if (code.code !== require(817) /* getSpanStatusFromHttpCode */.SPAN_STATUS_OK) {
         str = code.message || "internal_error";
         const tmp5 = code.message || "internal_error";
       }
@@ -103,16 +106,14 @@ function getStatusMessage(code) {
     }
   }
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = ["<string:1736114179>", "<string:1430519811>", "<string:3472884940>"];
+let closure_4 = ["spanId", "traceId", "traceFlags"];
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_5 = false;
+let c5 = false;
 
 export const TRACE_FLAG_NONE = 0;
 export const TRACE_FLAG_SAMPLED = 1;
 export const addChildSpanToSpan = function addChildSpanToSpan(_sentryRootSpan) {
-  const result = require(dependencyMap[8]).addNonEnumerableProperty(arg1, "_sentryRootSpan", _sentryRootSpan._sentryRootSpan || _sentryRootSpan);
+  const result = require(799) /* addNonEnumerableProperty */.addNonEnumerableProperty(arg1, "_sentryRootSpan", _sentryRootSpan._sentryRootSpan || _sentryRootSpan);
   if (_sentryRootSpan._sentryChildSpans) {
     const _sentryChildSpans = _sentryRootSpan._sentryChildSpans;
     _sentryChildSpans.add(arg1);
@@ -120,21 +121,21 @@ export const addChildSpanToSpan = function addChildSpanToSpan(_sentryRootSpan) {
     const _Set = Set;
     const items = [arg1];
     const set = new Set(items);
-    const result1 = require(dependencyMap[8]).addNonEnumerableProperty(_sentryRootSpan, "_sentryChildSpans", set);
-    const obj2 = require(dependencyMap[8]);
+    const result1 = require(799) /* addNonEnumerableProperty */.addNonEnumerableProperty(_sentryRootSpan, "_sentryChildSpans", set);
+    const obj2 = require(799) /* addNonEnumerableProperty */;
   }
 };
 export { convertSpanLinksForEnvelope };
 export const getActiveSpan = function getActiveSpan() {
-  const mainCarrier = require(dependencyMap[9]).getMainCarrier();
-  const obj = require(dependencyMap[9]);
-  const asyncContextStrategy = require(dependencyMap[10]).getAsyncContextStrategy(mainCarrier);
+  const mainCarrier = require(802) /* getSentryCarrier */.getMainCarrier();
+  const obj = require(802) /* getSentryCarrier */;
+  const asyncContextStrategy = require(818) /* getAsyncContextStrategy */.getAsyncContextStrategy(mainCarrier);
   if (asyncContextStrategy.getActiveSpan) {
     let activeSpan = asyncContextStrategy.getActiveSpan();
   } else {
-    const obj4 = require(dependencyMap[11]);
-    activeSpan = obj4._getSpanForScope(require(dependencyMap[12]).getCurrentScope());
-    const obj5 = require(dependencyMap[12]);
+    const obj4 = require(821) /* _getSpanForScope */;
+    activeSpan = obj4._getSpanForScope(require(825) /* getCurrentScope */.getCurrentScope());
+    const obj5 = require(825) /* getCurrentScope */;
   }
   return activeSpan;
 };
@@ -143,11 +144,10 @@ export const getRootSpan = function getRootSpan(_sentryRootSpan) {
 };
 export const getSpanDescendants = function getSpanDescendants(arg0) {
   const set = new Set();
-  const require = set;
   function addSpanChildren(arg0) {
     let tmp = arg0;
     if (!set.has(arg0)) {
-      if (callback(tmp)) {
+      if (outer1_10(tmp)) {
         set.add(tmp);
         if (tmp._sentryChildSpans) {
           const _Array = Array;
@@ -160,7 +160,6 @@ export const getSpanDescendants = function getSpanDescendants(arg0) {
       }
     }
   }
-  const dependencyMap = addSpanChildren;
   addSpanChildren(arg0);
   return Array.from(set);
 };
@@ -172,12 +171,12 @@ export const removeChildSpanFromSpan = function removeChildSpanFromSpan(_sentryC
   }
 };
 export const showSpanDropWarning = function showSpanDropWarning() {
-  if (!closure_5) {
-    require(dependencyMap[13]).consoleSandbox(() => {
+  if (!c5) {
+    require(801) /* consoleSandbox */.consoleSandbox(() => {
       console.warn("[Sentry] Returning null from `beforeSendSpan` is disallowed. To drop certain spans, configure the respective integrations directly or use `ignoreSpans`.");
     });
-    closure_5 = true;
-    const obj = require(dependencyMap[13]);
+    c5 = true;
+    const obj = require(801) /* consoleSandbox */;
   }
 };
 export { spanIsSampled };
@@ -192,7 +191,7 @@ export const spanToTraceContext = function spanToTraceContext(spanContext) {
   if (!isRemote) {
     parent_span_id = spanToJSON(spanContext).parent_span_id;
   }
-  let obj = require(dependencyMap[2]);
+  let obj = require(797) /* unwrapScopeFromWeakRef */;
   const scope = obj.getCapturedScopesOnSpan(spanContext).scope;
   obj = { parent_span_id };
   if (isRemote) {
@@ -201,8 +200,8 @@ export const spanToTraceContext = function spanToTraceContext(spanContext) {
       propagationSpanId = scope.getPropagationContext().propagationSpanId;
     }
     if (!propagationSpanId) {
-      propagationSpanId = require(dependencyMap[3]).generateSpanId();
-      const obj3 = require(dependencyMap[3]);
+      propagationSpanId = require(806) /* generateSpanId */.generateSpanId();
+      const obj3 = require(806) /* generateSpanId */;
     }
     spanId = propagationSpanId;
   }
@@ -216,7 +215,7 @@ export const spanToTraceHeader = function spanToTraceHeader(spanContext) {
   ({ traceId, spanId } = spanContext.spanContext());
   const spanContextResult = spanContext.spanContext();
   const tmp2 = spanIsSampled(spanContext);
-  return require(dependencyMap[4]).generateSentryTraceHeader(traceId, spanId, tmp2);
+  return require(811) /* extractTraceparentData */.generateSentryTraceHeader(traceId, spanId, tmp2);
 };
 export const spanToTraceparentHeader = function spanToTraceparentHeader(span) {
   let spanId;
@@ -224,7 +223,7 @@ export const spanToTraceparentHeader = function spanToTraceparentHeader(span) {
   ({ traceId, spanId } = span.spanContext());
   const spanContextResult = span.spanContext();
   const tmp2 = spanIsSampled(span);
-  return require(dependencyMap[4]).generateTraceparentHeader(traceId, spanId, tmp2);
+  return require(811) /* extractTraceparentData */.generateTraceparentHeader(traceId, spanId, tmp2);
 };
 export const spanToTransactionTraceContext = function spanToTransactionTraceContext(spanContext) {
   let spanId;
@@ -235,5 +234,5 @@ export const spanToTransactionTraceContext = function spanToTransactionTraceCont
 };
 export const updateSpanName = function updateSpanName(updateName) {
   updateName.updateName(arg1);
-  updateName.setAttributes(callback(callback({}, require(dependencyMap[6]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "custom"), require(dependencyMap[6]).SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME, arg1));
+  updateName.setAttributes(_defineProperty(_defineProperty({}, require(816).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "custom"), require(816).SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME, arg1));
 };

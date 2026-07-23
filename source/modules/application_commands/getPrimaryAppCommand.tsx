@@ -1,38 +1,46 @@
-// Module ID: 10820
-// Function ID: 84022
+// Module ID: 10830
+// Function ID: 84071
 // Name: _getPrimaryAppCommand
-// Dependencies: []
+// Dependencies: [5, 31, 1348, 7920, 1881, 7928, 7924, 8180, 2]
 // Exports: default, useIsPrimaryAppCommandUsableInAppDM
 
-// Module 10820 (_getPrimaryAppCommand)
+// Module 10830 (_getPrimaryAppCommand)
+import ScoreMethod from "ScoreMethod";
+import result from "result";
+import closure_4 from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function _getPrimaryAppCommand() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getPrimaryAppCommand = obj;
   return obj(...arguments);
 }
-function queryForPrimaryAppCommand(closure_0, id) {
+function queryForPrimaryAppCommand(outer1_0, id) {
   let obj = {};
-  const items = [id(dependencyMap[4]).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+  const items = [require(1881) /* PermissionOverwriteType */.ApplicationCommandType.PRIMARY_ENTRY_POINT];
   obj.commandTypes = items;
-  obj = { borderColor: 1, borderWidth: "center", GifAutoPlay: "center", effectDisplayType: 64, nativeFrames: 16, scoreMethod: id(dependencyMap[5]).ScoreMethod.COMMAND_ONLY, applicationId: id };
-  return closure_7.query(closure_0, obj, obj).commands[0];
+  obj = { placeholderCount: 1, scoreMethod: require(7928) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
+  return closure_7.query(outer1_0, obj, obj).commands[0];
 }
 function useGetPrimaryAppCommand(context, applicationId) {
-  const tmp = useQueryForPrimaryAppCommand(context, applicationId);
+  let closure_0 = applicationId;
+  let tmp = useQueryForPrimaryAppCommand(context, applicationId);
   const loading = tmp.loading;
-  const dependencyMap = loading;
   const first = tmp.commands[0];
-  let closure_2 = tmp3;
+  let ScoreMethod = tmp3;
   const items = [applicationId, null != first, loading];
   const effect = React.useEffect(() => {
-    let tmp = tmp3;
-    if (!tmp3) {
+    let tmp = ScoreMethod;
+    if (!ScoreMethod) {
       tmp = loading;
     }
     if (!tmp) {
-      let obj = arg1(loading[6]);
-      obj = { type: "application", applicationId: arg1 };
+      let obj = applicationId(loading[6]);
+      obj = { type: "application", applicationId };
       const applicationCommandIndex = obj.requestApplicationCommandIndex(obj);
     }
   }, items);
@@ -40,7 +48,7 @@ function useGetPrimaryAppCommand(context, applicationId) {
 }
 function useQueryForPrimaryAppCommand(context, applicationId) {
   let obj = { commandTypes: items };
-  obj = { borderColor: 1, borderWidth: "center", GifAutoPlay: "center", effectDisplayType: 64, nativeFrames: 16, scoreMethod: applicationId(dependencyMap[5]).ScoreMethod.COMMAND_ONLY, applicationId };
+  obj = { placeholderCount: 1, scoreMethod: require(7928) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
   return callback2(context, obj, obj);
 }
 function isPrimaryAppCommandUsableInAppDM(integration_types) {
@@ -50,12 +58,12 @@ function isPrimaryAppCommandUsableInAppDM(integration_types) {
     let hasItem = null != integration_types.integration_types;
     if (hasItem) {
       integration_types = integration_types.integration_types;
-      hasItem = integration_types.includes(arg1(dependencyMap[7]).ApplicationIntegrationType.USER_INSTALL);
+      hasItem = integration_types.includes(require(8180) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
     }
     let hasItem1 = null != integration_types.contexts;
     if (hasItem1) {
       const contexts = integration_types.contexts;
-      hasItem1 = contexts.includes(arg1(dependencyMap[4]).InteractionContextType.BOT_DM);
+      hasItem1 = contexts.includes(require(1881) /* PermissionOverwriteType */.InteractionContextType.BOT_DM);
     }
     if (hasItem) {
       hasItem = hasItem1;
@@ -63,15 +71,10 @@ function isPrimaryAppCommandUsableInAppDM(integration_types) {
     return hasItem;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-({ getOrFetchApplicationCommandIndexForTarget: closure_5, useQueryState: closure_6 } = arg1(dependencyMap[3]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = "no primary app command for application";
-const items = [arg1(dependencyMap[4]).ApplicationCommandType.PRIMARY_ENTRY_POINT];
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/application_commands/getPrimaryAppCommand.tsx");
+({ getOrFetchApplicationCommandIndexForTarget: closure_5, useQueryState: closure_6 } = _isNativeReflectConstruct);
+let c8 = "no primary app command for application";
+let items = [require("PermissionOverwriteType").ApplicationCommandType.PRIMARY_ENTRY_POINT];
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/application_commands/getPrimaryAppCommand.tsx");
 
 export default function getPrimaryAppCommand() {
   return _getPrimaryAppCommand(...arguments);

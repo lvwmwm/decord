@@ -1,13 +1,14 @@
 // Module ID: 1270
-// Function ID: 14334
+// Function ID: 14335
 // Name: MessageLoader
-// Dependencies: []
+// Dependencies: [57, 6, 7, 1269]
 // Exports: createLoader, loadAllMessagesInLocale, waitForAllDefaultIntlMessagesLoaded
 
 // Module 1270 (MessageLoader)
-let closure_3 = require(dependencyMap[0]);
-let closure_4 = require(dependencyMap[1]);
-let closure_5 = require(dependencyMap[2]);
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 let fn = this;
 if (this) {
   fn = this.__awaiter;
@@ -15,63 +16,64 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    const require = arg0;
-    const module = arg1;
-    let dependencyMap = arg2;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     let closure_3 = arg3;
     if (!arg2) {
-      dependencyMap = Promise;
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;
   };
 }
-const tmp2 = () => {
+let tmp2 = (() => {
   class MessageLoader {
     constructor(arg0, arg1) {
-      MessageLoader = this;
-      tmp = closure_4(this, MessageLoader);
+      self = this;
+      tmp = outer1_4(this, self);
       this.messages = {};
       this.localeImportMap = arg0;
       this.supportedLocales = Object.keys(arg0);
@@ -80,15 +82,15 @@ const tmp2 = () => {
       this._parseCache = {};
       set = new Set();
       this._subscribers = set;
-      internalIntlMessage = new MessageLoader(closure_2[3]).InternalIntlMessage([], this.defaultLocale);
+      internalIntlMessage = new MessageLoader(outer1_2[3]).InternalIntlMessage([], this.defaultLocale);
       this.fallbackMessage = internalIntlMessage;
-      if (closure_1.hot) {
+      if (outer1_1.hot) {
         _loop = function _loop(arg0) {
-          const self = arg0;
-          const hot = hot.hot;
-          hot.accept(hot, () => callback(arg0, undefined, undefined, function*() {
+          let closure_0 = arg0;
+          const hot = outer2_1.hot;
+          hot.accept(closure_1, () => outer3_6(closure_0, undefined, undefined, function*() {
             const self = this;
-            yield self._loadLocale(closure_0);
+            yield self._loadLocale(outer2_0);
             self._parseCache = {};
           }));
         };
@@ -101,18 +103,17 @@ const tmp2 = () => {
         num3 = 1;
         tmp8 = tmp6;
         while (tmp6 !== undefined) {
-          tmp9 = closure_3;
-          tmp10 = closure_3(tmp7, 2);
+          tmp9 = outer1_3;
+          tmp10 = outer1_3(tmp7, 2);
           closure_1 = tmp10[1];
           tmp11 = _loop;
           _loopResult = _loop(tmp10[0]);
-          // continue
+          continue;
         }
       }
       return;
     }
   }
-  const require = MessageLoader;
   let obj = {
     key: "withDebugValues",
     value: function withDebugValues(_debugKeyMap, _localeFileMap) {
@@ -194,9 +195,8 @@ const tmp2 = () => {
     key: "getMessageValue",
     value: function getMessageValue(arg0, defaultLocale) {
       const self = this;
-      const tmp = this._parseCache[defaultLocale];
       let tmp2;
-      if (null !== tmp) {
+      if (null !== this._parseCache[defaultLocale]) {
         if (undefined !== tmp) {
           tmp2 = tmp[arg0];
         }
@@ -205,7 +205,7 @@ const tmp2 = () => {
         return tmp2;
       } else if (null != self.messages[defaultLocale]) {
         if (null != self.messages[defaultLocale][arg0]) {
-          const InternalIntlMessage = MessageLoader(closure_2[3]).InternalIntlMessage;
+          const InternalIntlMessage = MessageLoader(outer1_2[3]).InternalIntlMessage;
           const prototype = InternalIntlMessage.prototype;
           const internalIntlMessage = new InternalIntlMessage(tmp4, defaultLocale);
           const _parseCache = self._parseCache;
@@ -228,46 +228,46 @@ const tmp2 = () => {
   };
   items[4] = {
     key: "_loadLocale",
-    value: function _loadLocale(closure_0) {
-      const MessageLoader = closure_0;
-      return callback3(this, undefined, undefined, function*() {
+    value: function _loadLocale(outer2_0) {
+      let closure_0 = outer2_0;
+      return outer1_6(this, undefined, undefined, function*() {
         const self = this;
-        if (null == self.messages[closure_0]) {
+        if (null == self.messages[outer1_0]) {
           let current;
-          if (null !== self._localeLoadingPromises[closure_0]) {
+          if (null !== self._localeLoadingPromises[outer1_0]) {
             if (undefined !== tmp21) {
               current = tmp21.current;
             }
           }
           if (null == current) {
-            if (null != self.localeImportMap[closure_0]) {
+            if (null != self.localeImportMap[outer1_0]) {
               const localeImportMap = self.localeImportMap;
-              const tmp13 = localeImportMap[closure_0]();
+              const tmp13 = localeImportMap[outer1_0]();
               let initialized;
-              if (null !== self._localeLoadingPromises[closure_0]) {
+              if (null !== self._localeLoadingPromises[outer1_0]) {
                 if (undefined !== tmp14) {
                   initialized = tmp14.initialized;
                 }
               }
               let obj = { initialized: null !== initialized && undefined !== initialized && initialized, current: tmp13 };
-              self._localeLoadingPromises[closure_0] = obj;
-              self.messages[closure_0] = yield tmp13.default;
+              self._localeLoadingPromises[outer1_0] = obj;
+              self.messages[outer1_0] = yield tmp13.default;
               obj = { initialized: true, current: undefined };
-              self._localeLoadingPromises[closure_0] = obj;
+              self._localeLoadingPromises[outer1_0] = obj;
               self.emitChange();
               const tmp16 = null !== initialized && undefined !== initialized && initialized;
-              const tmp17 = closure_0;
+              const tmp17 = outer1_0;
             } else {
               const supportedLocales = self.supportedLocales;
-              if (supportedLocales.includes(closure_0)) {
+              if (supportedLocales.includes(outer1_0)) {
                 const _Error = Error;
                 const _HermesInternal = HermesInternal;
-                const error = new Error("Requested to load locale " + closure_0 + ", which should be supported, but no source for translation data was provided.");
+                const error = new Error("Requested to load locale " + outer1_0 + ", which should be supported, but no source for translation data was provided.");
                 throw error;
               }
             }
           } else {
-            if (null !== self._localeLoadingPromises[closure_0]) {
+            if (null !== self._localeLoadingPromises[outer1_0]) {
               if (undefined !== tmp3) {
                 current = tmp3.current;
               }
@@ -285,28 +285,28 @@ const tmp2 = () => {
       const values = _subscribers.values();
       for (const item10007 of values) {
         let item10007Result = item10007();
+        continue;
       }
     }
   };
   items[6] = {
     key: "onChange",
     value: function onChange(arg0) {
-      const MessageLoader = arg0;
+      let closure_0 = arg0;
       const self = this;
-      const _subscribers = this._subscribers;
+      let _subscribers = this._subscribers;
       _subscribers.add(arg0);
       return () => {
         const _subscribers = self._subscribers;
-        return _subscribers.delete(arg0);
+        return _subscribers.delete(closure_0);
       };
     }
   };
   items[7] = {
     key: "isLocaleLoading",
     value: function isLocaleLoading(defaultLocale) {
-      const tmp = this._localeLoadingPromises[defaultLocale];
       let current;
-      if (null !== tmp) {
+      if (null !== this._localeLoadingPromises[defaultLocale]) {
         if (undefined !== tmp) {
           current = tmp.current;
         }
@@ -317,7 +317,6 @@ const tmp2 = () => {
   items[8] = {
     key: "isLocaleLoaded",
     value: function isLocaleLoaded(currentLocale) {
-      const tmp2 = this._localeLoadingPromises[currentLocale];
       let tmp3 = null != tmp2;
       if (tmp3) {
         tmp3 = 0 != tmp2.initialized;
@@ -331,57 +330,59 @@ const tmp2 = () => {
   };
   items[9] = {
     key: "waitForLocaleLoaded",
-    value: function waitForLocaleLoaded(defaultLocale, closure_1) {
-      return callback3(this, arguments, undefined, function(arg0) {
+    value: function waitForLocaleLoaded(defaultLocale, outer1_1) {
+      return outer1_6(this, arguments, undefined, function(arg0) {
+        let closure_0 = arg0;
         const self = this;
         let closure_2 = arguments.length > 1 && undefined !== arguments[1] && arguments[1];
-        return function*() {
-          if (null == closure_1._localeLoadingPromises[closure_0]) {
-            return closure_1._loadLocale(closure_0);
+        return (function*() {
+          if (null == outer1_1._localeLoadingPromises[outer1_0]) {
+            return outer1_1._loadLocale(outer1_0);
           } else {
             let initialized = tmp.initialized;
             if (initialized) {
-              initialized = !closure_2;
+              initialized = !outer1_2;
             }
             return initialized ? undefined : yield tmp.current;
           }
-        }();
+        })();
       });
     }
   };
   items[10] = {
     key: "waitForDefaultLocale",
     value: function waitForDefaultLocale() {
-      return callback3(this, arguments, undefined, function() {
+      return outer1_6(this, arguments, undefined, function() {
         const self = this;
         let closure_1 = arguments.length > 0 && undefined !== arguments[0] && arguments[0];
-        return function*() {
+        return (function*() {
           if (obj) {
             return obj.resume();
           } else {
-            return closure_0.waitForLocaleLoaded(closure_0.defaultLocale, closure_1);
+            return outer1_0.waitForLocaleLoaded(outer1_0.defaultLocale, outer1_1);
           }
-        }();
+        })();
       });
     }
   };
-  return callback(MessageLoader, items);
-}();
+  return _defineProperties(MessageLoader, items);
+})();
+let closure_7 = tmp2;
 let closure_8 = [];
 
-export const loadAllMessagesInLocale = function loadAllMessagesInLocale(arg0) {
-  const require = arg0;
+export const loadAllMessagesInLocale = function loadAllMessagesInLocale(outer1_0) {
+  let closure_0 = outer1_0;
   return fn(this, undefined, undefined, function*() {
-    yield Promise.all(closure_8.map((_loadLocale) => _loadLocale._loadLocale(closure_0)));
+    yield Promise.all(outer2_8.map((_loadLocale) => _loadLocale._loadLocale(outer2_0)));
   });
 };
 export const waitForAllDefaultIntlMessagesLoaded = function waitForAllDefaultIntlMessagesLoaded() {
   return fn(this, undefined, undefined, function*() {
-    yield Promise.all(closure_8.map((waitForDefaultLocale) => waitForDefaultLocale.waitForDefaultLocale()));
+    yield Promise.all(outer2_8.map((waitForDefaultLocale) => waitForDefaultLocale.waitForDefaultLocale()));
   });
 };
 export const createLoader = function createLoader(arg0, arg1) {
-  const tmp = new tmp2(arg0, arg1);
+  const tmp = new closure_7(arg0, arg1);
   return tmp;
 };
 export const MessageLoader = tmp2;

@@ -1,40 +1,41 @@
-// Module ID: 9281
-// Function ID: 72518
+// Module ID: 9288
+// Function ID: 72559
 // Name: ConversationNavigatorHeader
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 33, 4130, 689, 566, 4320, 9122, 2]
 // Exports: default
 
-// Module 9281 (ConversationNavigatorHeader)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles((arg0) => {
+// Module 9288 (ConversationNavigatorHeader)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
+  obj = { flex: 1, paddingVertical: importDefault(689).space.PX_16, paddingRight: null, alignItems: "center", justifyContent: "center" };
   let num = 0;
   if (!arg0) {
-    num = importDefault(dependencyMap[5]).space.PX_64;
+    num = importDefault(689).space.PX_64;
   }
   obj.paddingRight = num;
   obj.container = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorHeader.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorHeader.tsx");
 
 export default function ConversationNavigatorHeader(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   let flag = channelId.hasRightAction;
   if (flag === undefined) {
     flag = false;
   }
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_4];
+  let obj = channelId(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [channelId];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId), items1);
-  const tmp3 = importDefault(dependencyMap[7])(stateFromStores, true);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(channelId), items1);
+  const tmp3 = importDefault(4320)(stateFromStores, true);
   obj = { style: callback(flag).container };
   obj = { title: channelId.title };
   let tmp6;
@@ -44,6 +45,6 @@ export default function ConversationNavigatorHeader(channelId) {
   obj.subtitle = tmp6;
   obj.variant = "heading-lg/semibold";
   obj.subtitleColor = "text-muted";
-  obj.children = jsx(arg1(dependencyMap[8]).GenericHeaderTitle, obj);
-  return <View {...obj} />;
+  obj.children = jsx(channelId(9122).GenericHeaderTitle, { title: channelId.title });
+  return <View title={arg0.title} />;
 };

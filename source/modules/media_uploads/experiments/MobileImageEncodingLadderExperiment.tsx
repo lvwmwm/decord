@@ -1,14 +1,15 @@
-// Module ID: 4700
-// Function ID: 40920
+// Module ID: 4703
+// Function ID: 40938
 // Name: getMobileImageEncodingLadderConfig
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getMobileImageEncodingLadderConfig
 
-// Module 4700 (getMobileImageEncodingLadderConfig)
-const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: { useImageEncodingLadder: false }, variations: { [0]: { useImageEncodingLadder: false }, [1]: { useImageEncodingLadder: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_uploads/experiments/MobileImageEncodingLadderExperiment.tsx");
+// Module 4703 (getMobileImageEncodingLadderConfig)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-01-image-optimized-encoding-ladder", kind: "user", defaultConfig: { useImageEncodingLadder: false }, variations: { [0]: { useImageEncodingLadder: false }, [1]: { useImageEncodingLadder: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_uploads/experiments/MobileImageEncodingLadderExperiment.tsx");
 
 export const getMobileImageEncodingLadderConfig = function getMobileImageEncodingLadderConfig(location) {
   return config.getConfig({ location: location.location });

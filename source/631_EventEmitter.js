@@ -173,7 +173,8 @@ function arrayClone(items1, length) {
   return array;
 }
 function eventTargetAgnosticAddListener(on, arg1, arg2, once) {
-  const ReflectApply = arg1;
+  let closure_0 = on;
+  let closure_1 = arg1;
   let closure_2 = arg2;
   let closure_3 = once;
   if ("function" === typeof on.on) {
@@ -188,12 +189,11 @@ function eventTargetAgnosticAddListener(on, arg1, arg2, once) {
     throw typeError;
   } else {
     function wrapListener(arg0) {
-      if (arg3.once) {
-        const removed = arg0.removeEventListener(arg1, wrapListener);
+      if (once.once) {
+        const removed = on.removeEventListener(closure_1, wrapListener);
       }
-      arg2(arg0);
+      callback(arg0);
     }
-    const EventEmitter = wrapListener;
     const listener = on.addEventListener(arg1, wrapListener);
   }
 }
@@ -349,7 +349,7 @@ if (_Reflect) {
       }
       removeListener(arg0, arg1) {
         self = this;
-        tmp = checkListener(require);
+        tmp3 = checkListener(require);
         _events = this._events;
         if (undefined === _events) {
           return self;
@@ -368,7 +368,7 @@ if (_Reflect) {
                   num5 = 0;
                   num = -1;
                   if (diff >= 0) {
-                    tmp2 = diff;
+                    tmp4 = diff;
                     while (arr[diff] !== require) {
                       if (arr[diff].listener === require) {
                         break;
@@ -415,12 +415,12 @@ if (_Reflect) {
             self._eventsCount = diff1;
             num2 = 0;
             if (0 == diff1) {
-              tmp10 = globalThis;
+              tmp12 = globalThis;
               _Object = Object;
-              tmp11 = null;
+              tmp13 = null;
               self._events = Object.create(null);
             } else {
-              delete r3[r4];
+              delete tmp[tmp2];
               if (_events.removeListener) {
                 listener2 = arr.listener;
                 if (!listener2) {
@@ -442,40 +442,40 @@ if (_Reflect) {
         } else if (undefined === _events.removeListener) {
           num3 = 0;
           if (0 === arguments.length) {
-            tmp12 = globalThis;
+            tmp14 = globalThis;
             _Object4 = Object;
-            tmp13 = null;
+            tmp15 = null;
             self._events = Object.create(null);
             self._eventsCount = 0;
           } else if (undefined !== _events[global]) {
             diff = self._eventsCount - 1;
             self._eventsCount = diff;
             if (0 == diff) {
-              tmp10 = globalThis;
+              tmp12 = globalThis;
               _Object3 = Object;
-              tmp11 = null;
+              tmp13 = null;
               self._events = Object.create(null);
             } else {
-              delete r2[r3];
+              delete tmp[tmp2];
             }
           }
           return self;
         } else {
           num4 = 0;
           if (0 === arguments.length) {
-            tmp4 = globalThis;
+            tmp6 = globalThis;
             _Object = Object;
             keys = Object.keys(_events);
             str2 = "removeListener";
             for (let num2 = 0; num2 < keys.length; num2 = num2 + 1) {
-              tmp5 = keys[num2];
-              if ("removeListener" !== tmp5) {
-                removeAllListenersResult = self.removeAllListeners(tmp5);
+              tmp7 = keys[num2];
+              if ("removeListener" !== tmp7) {
+                removeAllListenersResult = self.removeAllListeners(tmp7);
               }
             }
             removeAllListenersResult1 = self.removeAllListeners("removeListener");
             _Object2 = Object;
-            tmp8 = null;
+            tmp10 = null;
             self._events = Object.create(null);
             self._eventsCount = 0;
             return self;
@@ -523,31 +523,35 @@ if (_Reflect) {
         return items;
       }
     }
+    let closure_0 = tmp2;
     const _Number = Number;
-    let closure_2 = Number.isNaN || function NumberIsNaN(arg0) {
+    let closure_2 = Number.isNaN || (function NumberIsNaN(arg0) {
       return arg0 != arg0;
-    };
+    });
     module.exports = EventEmitter;
     module.exports.once = function once(arg0, arg1) {
-      const ReflectApply = arg1;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       return new Promise((arg0, arg1) => {
+        const on = arg0;
+        let closure_1 = arg1;
         function errorListener(arg0) {
-          arg0.removeListener(arg1, resolver);
-          arg1(arg0);
+          lib.removeListener(callback, resolver);
+          callback(arg0);
         }
         function resolver() {
-          if ("function" === typeof arg0.removeListener) {
-            arg0.removeListener("error", errorListener);
+          if ("function" === typeof lib.removeListener) {
+            lib.removeListener("error", errorListener);
           }
           const slice = [].slice;
-          arg0(slice.call(arguments));
+          lib(slice.call(arguments));
         }
         let obj = { once: true };
-        callback(arg0, arg1, resolver, obj);
-        if ("error" !== arg1) {
+        outer1_13(on, closure_1, resolver, obj);
+        if ("error" !== closure_1) {
           obj = { once: true };
-          if ("function" === typeof arg0.on) {
-            callback(tmp2, "error", errorListener, obj);
+          if ("function" === typeof on.on) {
+            outer1_13(tmp2, "error", errorListener, obj);
           }
         }
       });
@@ -556,9 +560,9 @@ if (_Reflect) {
     EventEmitter.prototype._events = undefined;
     EventEmitter.prototype._eventsCount = 0;
     EventEmitter.prototype._maxListeners = undefined;
-    let closure_3 = 10;
-    const _Object2 = Object;
-    const obj = {};
+    let c3 = 10;
+    let _Object2 = Object;
+    let obj = {};
     class ReflectApply {
       constructor(arg0, arg1, arg2) {
         apply = Function.prototype.apply;
@@ -566,7 +570,7 @@ if (_Reflect) {
       }
     }
     obj.get = function get() {
-      return closure_3;
+      return c3;
     };
     obj.set = function set(arg0) {
       if ("number" === typeof arg0) {
@@ -584,13 +588,13 @@ if (_Reflect) {
     EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
     EventEmitter.prototype.listenerCount = listenerCount;
   }
-  const _Object = Object;
-  const tmp2 = Object.getOwnPropertySymbols ? function ReflectOwnKeys(arr) {
+  let _Object = Object;
+  tmp2 = Object.getOwnPropertySymbols ? (function ReflectOwnKeys(arr) {
     const ownPropertyNames = Object.getOwnPropertyNames(arr);
     return ownPropertyNames.concat(Object.getOwnPropertySymbols(arr));
-  } : function ReflectOwnKeys(arr) {
+  }) : (function ReflectOwnKeys(arr) {
     return Object.getOwnPropertyNames(arr);
-  };
+  });
 }
 class ReflectApply {
   constructor(arg0, arg1, arg2) {

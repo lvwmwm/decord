@@ -1,56 +1,64 @@
-// Module ID: 8132
-// Function ID: 64364
+// Module ID: 8138
+// Function ID: 64401
 // Name: PremiumFeatureList
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 7495, 2]
 // Exports: default
 
-// Module 8132 (PremiumFeatureList)
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { item: { NavScrim: 1280442367, _sentRequests: -756835, KIDS: -720897, textInputRef: 65535, APRIL_FOOLS_2026_COACHMARK: 1912668160 } };
-obj = {};
-const tmp2 = arg1(dependencyMap[3]);
-const merged = Object.assign(importDefault(dependencyMap[5])(arg1(dependencyMap[2]).Fonts.PRIMARY_NORMAL, importDefault(dependencyMap[6]).colors.TEXT_DEFAULT, 14));
-obj.label = obj;
-const importDefaultResult = importDefault(dependencyMap[5]);
-obj.iconMargin = { marginEnd: importDefault(dependencyMap[6]).space.PX_16 };
-let closure_6 = obj.createStyles(obj);
-const obj1 = { marginEnd: importDefault(dependencyMap[6]).space.PX_16 };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("components_native/premium/PremiumFeatureList.tsx");
+// Module 8138 (PremiumFeatureList)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { item: { backgroundColor: "transparent", paddingHorizontal: 0, paddingVertical: 8, flexDirection: "row", alignItems: "center" } };
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_NORMAL, require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, 14));
+_createForOfIteratorHelperLoose.label = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.iconMargin = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("ME").fileFinishedImporting("components_native/premium/PremiumFeatureList.tsx");
 
 export default function PremiumFeatureList(style) {
+  let View;
+  let result;
+  let dependencyMap;
   let features;
-  ({ features, separator: closure_0, iconStyle: closure_1, labelStyle: closure_2, rowStyle: closure_3 } = style);
-  const callback = callback2();
+  let require;
+  ({ features, separator: require, iconStyle: dependencyMap, labelStyle: result, rowStyle: View } = style);
+  const callback = _createForOfIteratorHelperLoose();
   const found = features.filter((hidden) => !hidden.hidden);
   return callback(View, {
     style: style.style,
     children: found.map((color) => {
       let obj = {};
       obj = { style: items };
-      const items = [lib.item, closure_3];
+      items = [lib.item, closure_3];
       obj = { size: "md", color: color.color, style: items1 };
-      const items1 = [lib.iconMargin, closure_1];
+      items1 = [lib.iconMargin, closure_1];
       const items2 = [lib(color.IconComponent, obj), ];
-      const items3 = [lib.label, React];
-      items2[1] = lib(callback(closure_1[7]).FormRow.Label, { numberOfLines: 2, style: items3, text: color.label });
+      const items3 = [lib.label, result];
+      items2[1] = lib(outer1_0(outer1_1[7]).FormRow.Label, { numberOfLines: 2, style: items3, text: color.label });
       obj.children = items2;
-      const items4 = [callback2(closure_3, obj, arg1), ];
+      const items4 = [outer1_5(outer1_3, obj, arg1), ];
       let tmp2 = null;
-      if (null != callback) {
+      if (null != closure_0) {
         tmp2 = null;
-        if ("" !== callback) {
+        if ("" !== closure_0) {
           tmp2 = null;
           if (color.renderSeparatorBelow) {
-            tmp2 = callback;
+            tmp2 = closure_0;
           }
         }
       }
       items4[1] = tmp2;
       obj.children = items4;
-      return callback2(React.Fragment, obj, arg1);
+      return outer1_5(outer1_2.Fragment, obj, arg1);
     })
   });
 };

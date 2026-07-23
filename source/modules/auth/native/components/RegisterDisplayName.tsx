@@ -1,53 +1,70 @@
-// Module ID: 14637
-// Function ID: 110357
+// Module ID: 14752
+// Function ID: 112521
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 13665, 14731, 14732, 33, 4130, 689, 1212, 9197, 1456, 14729, 14747, 14730, 668, 14746, 14749, 13666, 5788, 9209, 9219, 7512, 4543, 5587, 2]
 // Exports: default
 
-// Module 14637 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 14752 (_createForOfIteratorHelperLoose)
+import closure_3 from "useRegistrationUIStore";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import useRegistrationUIStore from "useRegistrationUIStore";
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,51 +101,41 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_7 = importDefault(dependencyMap[4]);
-({ updateRegistrationOptions: closure_8, useRegistrationUIStore: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-({ RegisterTransitionSteps: closure_10, RegistrationTransitionActionTypes: closure_11 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { marginTop: importDefault(dependencyMap[9]).space.PX_24 };
-obj.globalName = obj;
-const tmp4 = arg1(dependencyMap[7]);
-obj.button = { marginTop: importDefault(dependencyMap[9]).space.PX_24 };
-obj.page = { flex: 1 };
-let closure_14 = obj.createStyles(obj);
-let closure_15 = [];
-let closure_16 = [];
-const obj1 = { marginTop: importDefault(dependencyMap[9]).space.PX_24 };
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/auth/native/components/RegisterDisplayName.tsx");
+({ updateRegistrationOptions: closure_8, useRegistrationUIStore: closure_9 } = useRegistrationUIStore);
+({ RegisterTransitionSteps: closure_10, RegistrationTransitionActionTypes: closure_11 } = RegistrationTransitionActionTypes);
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.globalName = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.button = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.page = { flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let closure_15 = ["discord", "hypesquad", "snowsgiving", "system message", "system mesage", "sustem mesage", "sustem message"];
+let closure_16 = ["everyone", "here"];
+let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+const result = require("result").fileFinishedImporting("modules/auth/native/components/RegisterDisplayName.tsx");
 
 export default function RegisterDisplayName() {
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[12]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
-  let obj1 = React;
-  const tmp7 = callback(React.useState(false), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = navigation(str[12]);
+  navigation = obj.useNavigation();
+  let obj1 = callback;
+  const tmp7 = context(callback.useState(false), 2);
   const importDefault = tmp7[1];
-  const tmp4 = importDefault(dependencyMap[11])();
-  const tmp9 = callback(React.useState(() => {
-    const globalName = state.getState().registrationOptions.globalName;
+  const tmp4 = importDefault(str[11])();
+  const tmp9 = context(callback.useState(() => {
+    const globalName = outer1_9.getState().registrationOptions.globalName;
     let str = "";
     if (null != globalName) {
       str = globalName;
     }
     return str;
   }), 2);
-  const dependencyMap = str;
+  str = tmp9[0];
   let closure_3 = tmp9[1];
-  if (closure_16.includes(tmp9[0])) {
-    const intl2 = arg1(dependencyMap[10]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[10]).t.WeJZyy);
+  if (closure_16.includes(str)) {
+    const intl2 = navigation(str[10]).intl;
+    let stringResult = intl2.string(navigation(str[10]).t.WeJZyy);
   } else {
     const tmp12 = _createForOfIteratorHelperLoose(closure_15);
     let iter = tmp12();
@@ -138,56 +145,54 @@ export default function RegisterDisplayName() {
         let iter2 = tmp12();
         iter = iter2;
       }
-      const intl = arg1(dependencyMap[10]).intl;
-      stringResult = intl.string(arg1(dependencyMap[10]).t.WeJZyy);
+      let intl = navigation(str[10]).intl;
+      stringResult = intl.string(navigation(str[10]).t.WeJZyy);
     }
   }
-  const context = obj1.useContext(tmp5(tmp3[13]).TrackRegistrationContext);
-  let callback = context;
+  context = obj1.useContext(tmp5(tmp3[13]).TrackRegistrationContext);
   let tmp2Result = tmp2(tmp3[14]);
-  const tmp8 = callback2((errors) => errors.errors);
-  tmp2Result(arg1(dependencyMap[15]).getPreviousRegistrationTransitionStep(arg1(dependencyMap[16]).AuthStates.REGISTER_DISPLAY_NAME));
+  const tmp8 = callback((errors) => errors.errors);
+  tmp2Result(navigation(str[15]).getPreviousRegistrationTransitionStep(navigation(str[16]).AuthStates.REGISTER_DISPLAY_NAME));
   tmp2Result = tmp2(tmp3[17]);
-  tmp2Result(arg1(dependencyMap[16]).AuthStates.REGISTER_DISPLAY_NAME);
+  tmp2Result(navigation(str[16]).AuthStates.REGISTER_DISPLAY_NAME);
   const items = [context];
   const effect = obj1.useEffect(() => {
-    context({ step: constants.ACCOUNT_DISPLAY_NAME, actionType: constants2.VIEWED });
+    context({ step: outer1_10.ACCOUNT_DISPLAY_NAME, actionType: outer1_11.VIEWED });
   }, items);
   const ref = obj1.useRef(null);
-  importDefault(dependencyMap[18])({ inputRef: ref });
+  importDefault(str[18])({ inputRef: ref });
   const items1 = [navigation, context];
-  callback = obj1.useCallback(() => {
+  callback = obj1.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = callback(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items1);
-  const React = callback;
+  })(), items1);
   const items2 = [callback, navigation];
   const layoutEffect = obj1.useLayoutEffect(() => {
     navigation.setOptions({
       headerRight() {
         const obj = {};
-        const intl = callback(closure_2[10]).intl;
-        obj.text = intl.string(callback(closure_2[10]).t.5Wxrcd);
+        const intl = navigation(str[10]).intl;
+        obj.text = intl.string(navigation(str[10]).t["5Wxrcd"]);
         obj.onPress = function onPress() {
-          return callback(null);
+          return outer2_5(null);
         };
-        return callback2(callback(closure_2[20]).HeaderActionButton, obj);
+        return outer2_12(navigation(str[20]).HeaderActionButton, obj);
       }
     });
   }, items2);
-  const tmp29 = importDefault(dependencyMap[21])("global_name", tmp8);
+  const tmp29 = importDefault(str[21])("global_name", tmp8);
   let tmp30 = stringResult;
   if (null != tmp29) {
     tmp30 = tmp29;
   }
   obj = {};
   const tmp31 = closure_13;
-  const tmp5Result = arg1(dependencyMap[15]);
-  const intl3 = arg1(dependencyMap[10]).intl;
-  obj.headerText = intl3.string(arg1(dependencyMap[10]).t.LYIh7j);
+  const tmp5Result = navigation(str[15]);
+  const intl3 = navigation(str[10]).intl;
+  obj.headerText = intl3.string(navigation(str[10]).t.LYIh7j);
   obj = { style: tmp.globalName };
   obj1 = {
     ref,
@@ -203,21 +208,21 @@ export default function RegisterDisplayName() {
     textContentType: "nickname",
     errorMessage: tmp30
   };
-  const intl4 = arg1(dependencyMap[10]).intl;
-  obj1.label = intl4.string(arg1(dependencyMap[10]).t.9AjdkD);
+  const intl4 = navigation(str[10]).intl;
+  obj1.label = intl4.string(navigation(str[10]).t["9AjdkD"]);
   let stringResult1;
   if (null == tmp30) {
-    const intl5 = arg1(dependencyMap[10]).intl;
-    stringResult1 = intl5.string(arg1(dependencyMap[10]).t.fbKwSs);
+    const intl5 = navigation(str[10]).intl;
+    stringResult1 = intl5.string(navigation(str[10]).t.fbKwSs);
   }
   obj1.description = stringResult1;
   obj1.isClearable = true;
-  obj.children = callback3(arg1(dependencyMap[23]).TextInput, obj1);
-  const items3 = [callback3(View, obj), ];
+  obj.children = callback2(navigation(str[23]).TextInput, obj1);
+  const items3 = [callback2(View, obj), ];
   const obj2 = { style: tmp.button };
   const obj3 = { size: "lg", loading: tmp7[0] };
-  const intl6 = arg1(dependencyMap[10]).intl;
-  obj3.text = intl6.string(arg1(dependencyMap[10]).t.PDTjLN);
+  const intl6 = navigation(str[10]).intl;
+  obj3.text = intl6.string(navigation(str[10]).t.PDTjLN);
   obj3.onPress = function onPress() {
     return callback(str);
   };
@@ -226,14 +231,14 @@ export default function RegisterDisplayName() {
     tmp40 = "" === str.trim();
   }
   obj3.disabled = tmp40;
-  obj2.children = callback3(arg1(dependencyMap[24]).Button, obj3);
-  items3[1] = callback3(View, obj2);
+  obj2.children = callback2(navigation(str[24]).Button, obj3);
+  items3[1] = callback2(View, obj2);
   obj.children = items3;
-  const tmp31Result = tmp31(importDefault(dependencyMap[22]), obj);
+  const tmp31Result = tmp31(importDefault(str[22]), obj);
   let tmp42 = tmp31Result;
   if (!tmp4) {
     const obj4 = { style: tmp.page, children: tmp31Result };
-    tmp42 = callback3(importDefault(dependencyMap[25]), obj4);
+    tmp42 = callback2(importDefault(str[25]), obj4);
   }
   return tmp42;
 };

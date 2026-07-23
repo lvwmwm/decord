@@ -1,45 +1,49 @@
-// Module ID: 7572
-// Function ID: 60584
+// Module ID: 7578
+// Function ID: 60621
 // Name: handleDismiss
-// Dependencies: []
+// Dependencies: [31, 27, 1353, 4947, 1354, 33, 4130, 689, 4098, 1273, 566, 7579, 5085, 7580, 4126, 1212, 7495, 7581, 7582, 7583, 7584, 4543, 2]
 // Exports: default
 
-// Module 7572 (handleDismiss)
+// Module 7578 (handleDismiss)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { STAGE_AUDIENCE_NOTICE_SHEET_KEY as closure_5 } from "MAX_STAGE_TOPIC_LENGTH";
+import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function handleDismiss() {
-  importDefault(dependencyMap[8]).hideActionSheet(closure_5);
+  importDefault(4098).hideActionSheet(closure_5);
 }
 function BulletIcon(source) {
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.headerBulletIconContainer };
-  obj = { source: source.source, size: arg1(dependencyMap[9]).Icon.Sizes.MEDIUM, style: tmp.headerBulletIconComponent };
-  obj.children = callback(arg1(dependencyMap[9]).Icon, obj);
+  obj = { source: source.source, size: require(1273) /* Button */.Icon.Sizes.MEDIUM, style: tmp.headerBulletIconComponent };
+  obj.children = callback(require(1273) /* Button */.Icon, obj);
   return callback(View, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).STAGE_AUDIENCE_NOTICE_SHEET_KEY;
-let closure_6 = arg1(dependencyMap[4]).GuildScheduledEventPrivacyLevel;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = { container: { padding: 16 }, header: { "Null": 52881784.83212474, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 }, headerImage: {}, headerTitle: {} };
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
-obj.headerBulletIconContainer = obj;
-const tmp3 = arg1(dependencyMap[5]);
-obj.headerBulletIconComponent = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.headerBulletList = {};
-obj.headerBullet = { lineHeight: 20 };
-obj.startButton = { marginTop: 0 };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/stage_channels/native/components/StageAudienceNotificationSheet.tsx");
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { padding: 16 }, header: { alignItems: "center", paddingVertical: 16 }, headerImage: {}, headerTitle: { marginTop: 16, marginBottom: 8 } };
+_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", height: 40, width: 40, borderRadius: 20, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.headerBulletIconContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerBulletIconComponent = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.headerBulletList = { flexDirection: "column", alignItems: "flex-start" };
+_createForOfIteratorHelperLoose.headerBullet = { lineHeight: 20 };
+_createForOfIteratorHelperLoose.startButton = { marginTop: 0 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/native/components/StageAudienceNotificationSheet.tsx");
 
 export default function StageAudienceNotificationSheet(channelId) {
-  const arg1 = channelId.channelId;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => stageInstanceByChannel.getStageInstanceByChannel(channelId));
+  channelId = channelId.channelId;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = channelId(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getStageInstanceByChannel(channelId));
   let privacy_level;
   if (null != stateFromStores) {
     privacy_level = stateFromStores.privacy_level;
@@ -49,51 +53,51 @@ export default function StageAudienceNotificationSheet(channelId) {
   const obj1 = { style: tmp.header };
   const obj2 = {};
   const tmp4 = callback;
-  const tmp5 = importDefault(dependencyMap[11]);
+  const tmp5 = importDefault(7579);
   const tmp7 = View;
   const tmp8 = View;
-  obj2.source = importDefault(dependencyMap[13]);
+  obj2.source = importDefault(7580);
   obj2.style = tmp.headerImage;
-  const items1 = [callback(importDefault(dependencyMap[12]), obj2), , ];
-  const obj3 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.headerTitle };
-  const intl = arg1(dependencyMap[15]).intl;
-  obj3.children = intl.string(arg1(dependencyMap[15]).t.UVuXCs);
-  items1[1] = callback(arg1(dependencyMap[14]).Text, obj3);
+  const items1 = [callback(importDefault(5085), obj2), , ];
+  const obj3 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+  const intl = channelId(1212).intl;
+  obj3.children = intl.string(channelId(1212).t.UVuXCs);
+  items1[1] = callback(channelId(4126).Text, obj3);
   const obj4 = { style: tmp.headerBulletList };
   const obj5 = {};
-  const obj6 = { source: importDefault(dependencyMap[17]) };
+  const obj6 = { source: importDefault(7581) };
   obj5.leading = callback(BulletIcon, obj6);
-  const obj7 = { style: tmp.headerBullet };
-  const intl2 = arg1(dependencyMap[15]).intl;
-  obj7.children = intl2.string(arg1(dependencyMap[15]).t.sBDfo6);
-  obj5.label = callback(arg1(dependencyMap[14]).Text, obj7);
-  const items2 = [callback(arg1(dependencyMap[16]).FormRow, obj5), , , ];
+  const obj7 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default" };
+  const intl2 = channelId(1212).intl;
+  obj7.children = intl2.string(channelId(1212).t.sBDfo6);
+  obj5.label = callback(channelId(4126).Text, obj7);
+  const items2 = [callback(channelId(7495).FormRow, obj5), , , ];
   const obj8 = {};
-  const obj9 = { source: importDefault(dependencyMap[18]) };
+  const obj9 = { source: importDefault(7582) };
   obj8.leading = callback(BulletIcon, obj9);
-  const obj10 = { style: tmp.headerBullet };
-  const intl3 = arg1(dependencyMap[15]).intl;
-  obj10.children = intl3.string(arg1(dependencyMap[15]).t.x58YtH);
-  obj8.label = callback(arg1(dependencyMap[14]).Text, obj10);
-  items2[1] = callback(arg1(dependencyMap[16]).FormRow, obj8);
+  const obj10 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default" };
+  const intl3 = channelId(1212).intl;
+  obj10.children = intl3.string(channelId(1212).t.x58YtH);
+  obj8.label = callback(channelId(4126).Text, obj10);
+  items2[1] = callback(channelId(7495).FormRow, obj8);
   const obj11 = {};
-  const obj12 = { source: importDefault(dependencyMap[19]) };
+  const obj12 = { source: importDefault(7583) };
   obj11.leading = callback(BulletIcon, obj12);
-  const obj13 = { style: tmp.headerBullet };
-  const intl4 = arg1(dependencyMap[15]).intl;
-  obj13.children = intl4.string(arg1(dependencyMap[15]).t.XtVqla);
-  obj11.label = callback(arg1(dependencyMap[14]).Text, obj13);
-  items2[2] = callback(arg1(dependencyMap[16]).FormRow, obj11);
+  const obj13 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default" };
+  const intl4 = channelId(1212).intl;
+  obj13.children = intl4.string(channelId(1212).t.XtVqla);
+  obj11.label = callback(channelId(4126).Text, obj13);
+  items2[2] = callback(channelId(7495).FormRow, obj11);
   let tmp11 = null;
   if (privacy_level === constants.PUBLIC) {
     const obj14 = {};
-    const obj15 = { source: importDefault(dependencyMap[20]) };
+    const obj15 = { source: importDefault(7584) };
     obj14.leading = callback(BulletIcon, obj15);
-    const obj16 = { style: tmp.headerBullet };
-    const intl6 = arg1(dependencyMap[15]).intl;
-    obj16.children = intl6.string(arg1(dependencyMap[15]).t.nDsbJg);
-    obj14.label = callback(arg1(dependencyMap[14]).Text, obj16);
-    tmp11 = callback(arg1(dependencyMap[16]).FormRow, obj14);
+    const obj16 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default" };
+    const intl6 = channelId(1212).intl;
+    obj16.children = intl6.string(channelId(1212).t.nDsbJg);
+    obj14.label = callback(channelId(4126).Text, obj16);
+    tmp11 = callback(channelId(7495).FormRow, obj14);
   }
   items2[3] = tmp11;
   obj4.children = items2;
@@ -102,10 +106,10 @@ export default function StageAudienceNotificationSheet(channelId) {
   const items3 = [closure_8(tmp8, obj1), ];
   const obj17 = { style: tmp.startButton };
   const obj18 = {};
-  const intl5 = arg1(dependencyMap[15]).intl;
-  obj18.text = intl5.string(arg1(dependencyMap[15]).t.obLqZ8);
+  const intl5 = channelId(1212).intl;
+  obj18.text = intl5.string(channelId(1212).t.obLqZ8);
   obj18.onPress = handleDismiss;
-  obj17.children = callback(arg1(dependencyMap[21]).Button, obj18);
+  obj17.children = callback(channelId(4543).Button, obj18);
   items3[1] = callback(View, obj17);
   obj.children = items3;
   obj.children = closure_8(tmp7, obj);

@@ -4,6 +4,6 @@
 
 // Module 549
 
-export default Number.isNaN || function isNaN(arg0) {
+export default Number.isNaN || (function isNaN(arg0) {
   return arg0 != arg0;
-};
+});

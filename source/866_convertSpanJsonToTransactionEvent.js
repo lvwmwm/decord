@@ -1,11 +1,12 @@
 // Module ID: 866
-// Function ID: 9656
+// Function ID: 9657
 // Name: convertSpanJsonToTransactionEvent
-// Dependencies: []
+// Dependencies: [77, 816]
 // Exports: convertSpanJsonToTransactionEvent, convertTransactionEventToSpanJson
 
 // Module 866 (convertSpanJsonToTransactionEvent)
-let closure_2 = require(dependencyMap[0]);
+import _defineProperty from "_defineProperty";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const convertSpanJsonToTransactionEvent = function convertSpanJsonToTransactionEvent(beforeSendSpanResult) {
@@ -16,11 +17,11 @@ export const convertSpanJsonToTransactionEvent = function convertSpanJsonToTrans
   obj = { trace_id: beforeSendSpanResult.trace_id, span_id: beforeSendSpanResult.span_id, parent_span_id: beforeSendSpanResult.parent_span_id, op: beforeSendSpanResult.op, status: beforeSendSpanResult.status, origin: beforeSendSpanResult.origin };
   ({ data, profile_id } = beforeSendSpanResult);
   if (profile_id) {
-    profile_id = callback({}, require(dependencyMap[1]).SEMANTIC_ATTRIBUTE_PROFILE_ID, beforeSendSpanResult.profile_id);
+    profile_id = _defineProperty({}, require(816).SEMANTIC_ATTRIBUTE_PROFILE_ID, beforeSendSpanResult.profile_id);
   }
   let exclusive_time = beforeSendSpanResult.exclusive_time;
   if (exclusive_time) {
-    exclusive_time = callback({}, require(dependencyMap[1]).SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME, beforeSendSpanResult.exclusive_time);
+    exclusive_time = _defineProperty({}, require(816).SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME, beforeSendSpanResult.exclusive_time);
   }
   obj.data = Object.assign({}, data, profile_id, exclusive_time);
   obj.trace = obj;
@@ -76,12 +77,12 @@ export const convertTransactionEventToSpanJson = function convertTransactionEven
   obj.origin = origin;
   let tmp;
   if (null != data) {
-    tmp = data[closure_0(undefined, closure_1[1]).SEMANTIC_ATTRIBUTE_PROFILE_ID];
+    tmp = data[require(undefined, 816).SEMANTIC_ATTRIBUTE_PROFILE_ID];
   }
   obj.profile_id = tmp;
   let tmp4;
   if (null != data) {
-    tmp4 = data[closure_0(undefined, closure_1[1]).SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME];
+    tmp4 = data[require(undefined, 816).SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME];
   }
   obj.exclusive_time = tmp4;
   obj.measurements = contexts.measurements;

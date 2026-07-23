@@ -1,24 +1,31 @@
-// Module ID: 5164
-// Function ID: 44954
+// Module ID: 5167
+// Function ID: 44973
 // Name: getCardBackgroundToken
-// Dependencies: [338821120, 131072, 527892480, 452984832, 553648128, 503316480, 973078544, 989855764, 33554452, 1962934272, 31, 33, 4126, 1273, 2]
+// Dependencies: [29, 31, 27, 33, 3991, 689, 5127, 4130, 1324, 3834, 477, 4542, 4546, 5168, 2]
 
-// Module 5164 (getCardBackgroundToken)
-import result2 from "result2";
+// Module 5167 (getCardBackgroundToken)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
 
+const require = arg1;
 function getCardBackgroundToken(arg0) {
   if ("primary" === arg0) {
-    return arg1(dependencyMap[6]).CARD_PRIMARY_BG;
+    return require(5127) /* createCardBackgroundToken */.CARD_PRIMARY_BG;
   } else if ("secondary" === arg0) {
-    return importDefault(dependencyMap[5]).colors.CARD_SECONDARY_BACKGROUND_DEFAULT;
+    return importDefault(689).colors.CARD_SECONDARY_BACKGROUND_DEFAULT;
   } else if ("muted" === arg0) {
-    return importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_MUTED;
+    return importDefault(689).colors.BACKGROUND_MOD_MUTED;
   } else if ("transparent" === arg0) {
-    return importDefault(dependencyMap[5]).unsafe_rawColors.TRANSPARENT;
+    return importDefault(689).unsafe_rawColors.TRANSPARENT;
   } else if ("control-secondary" === arg0) {
-    return importDefault(dependencyMap[5]).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT;
+    return importDefault(689).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT;
   } else if ("surface-high" === arg0) {
-    return importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH;
+    return importDefault(689).colors.BACKGROUND_SURFACE_HIGH;
   }
 }
 class Card {
@@ -43,26 +50,26 @@ class Card {
     if (str3 === undefined) {
       str3 = "primary";
     }
-    obj = { 400888199: false, 2091392542: false, 1572233113: false, 160579: false, 65536: false };
+    obj = { start: 0, end: 0, shadow: 0, border: 0, variant: 0 };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
-    tmp3 = importDefault(dependencyMap[8])("Card");
-    obj2 = arg1(dependencyMap[9]);
-    token = obj2.useToken(importDefault(dependencyMap[5]).modules.mobile.CARD_DEFAULT_RADIUS);
+    tmp3 = require("useIsMobileVisualRefreshExperimentEnabled")("Card");
+    obj2 = require("map");
+    token = obj2.useToken(require("_createForOfIteratorHelperLoose").modules.mobile.CARD_DEFAULT_RADIUS);
     radius = merged.radius;
     if (null != radius) {
       token = radius;
     }
-    tmp5 = f44965(flag, flag2, str3, str, str2, token);
+    tmp5 = f44984(flag, flag2, str3, str, str2, token);
     items = [, , ];
     ({ spacing: arr[0], card: arr[1] } = tmp5);
     items[2] = merged.style;
     if ("onPress" in merged) {
       if (null != merged.onPress) {
         accessibilityRole = merged.accessibilityRole;
-        tmp7 = closure_4;
+        tmp7 = _objectWithoutProperties;
         tmp8 = PressableCard;
-        tmp9 = closure_4(merged, PressableCard);
+        tmp9 = _objectWithoutProperties(merged, PressableCard);
         obj = {};
         str4 = "button";
         tmp10 = jsx;
@@ -97,15 +104,15 @@ class Card {
 }
 function PressableCard(start) {
   if (obj.isAndroid()) {
-    let tmp = function PressableCardAndroid(start) {
+    let tmp = (function PressableCardAndroid(start) {
       start = start.start;
       const end = start.end;
       const radius = start.radius;
-      let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+      let obj = { children: 0, start: 0, end: 0, radius: 0, isRefreshEnabled: 0 };
       Object.setPrototypeOf(null);
       const merged = Object.assign(start, obj);
       const items = [start, end, radius];
-      const memo = React.useMemo(() => {
+      const memo = outer1_5.useMemo(() => {
         const obj = {};
         if (start) {
           let num = radius;
@@ -118,10 +125,10 @@ function PressableCard(start) {
       obj = { androidRippleConfig: memo };
       const merged1 = Object.assign(merged);
       obj["children"] = start.children;
-      return callback(start(radius[13]).AnimatedPressableHighlight, obj);
-    }(start);
+      return outer1_7(outer1_0(outer1_2[13]).AnimatedPressableHighlight, obj);
+    })(start);
   } else {
-    tmp = function PressableCardiOS(onPressIn) {
+    tmp = (function PressableCardiOS(onPressIn) {
       let children;
       let end;
       let isRefreshEnabled;
@@ -132,48 +139,48 @@ function PressableCard(start) {
       onPressIn = onPressIn.onPressIn;
       const onPressOut = onPressIn.onPressOut;
       ({ radius, start, end } = onPressIn);
-      let obj = {};
+      let obj = { children: 0, style: 0, variant: 0, onPressIn: 0, onPressOut: 0, isRefreshEnabled: 0, radius: 0, start: 0, end: 0 };
       ({ children, style, variant, isRefreshEnabled } = onPressIn);
       Object.setPrototypeOf(null);
       const merged = Object.assign(onPressIn, obj);
-      const sharedValue = onPressIn(sharedValue[4]).useSharedValue(0);
-      const items = [sharedValue, onPressIn];
+      const sharedValue = outer1_0(outer1_2[4]).useSharedValue(0);
+      let items = [sharedValue, onPressIn];
       const items1 = [sharedValue, onPressOut];
-      const callback = React.useCallback((arg0) => {
+      const callback = outer1_5.useCallback((arg0) => {
         const result = sharedValue.set(1);
         if (null != onPressIn) {
           onPressIn(arg0);
         }
       }, items);
-      const callback1 = React.useCallback((arg0) => {
+      const callback1 = outer1_5.useCallback((arg0) => {
         const result = sharedValue.set(0);
         if (null != onPressOut) {
           onPressOut(arg0);
         }
       }, items1);
-      const tmp6 = callback2(variant, isRefreshEnabled);
+      const tmp6 = outer1_9(variant, isRefreshEnabled);
       const backgroundColor = tmp6.backgroundColor;
       const backgroundColorPressed = tmp6.backgroundColorPressed;
-      const obj2 = onPressIn(sharedValue[4]);
+      let obj2 = outer1_0(outer1_2[4]);
       class B {
         constructor() {
           obj = {};
-          obj2 = onPressIn(closure_2[11]);
-          obj3 = onPressIn(closure_2[4]);
+          obj2 = outer2_0(outer2_2[11]);
+          obj3 = outer2_0(outer2_2[4]);
           items = [, ];
           items[0] = backgroundColor;
           items[1] = backgroundColorPressed;
-          interpolateColorResult = obj3.interpolateColor(closure_2.get(), [77601039, 1612144654], items);
-          obj.backgroundColor = obj2.withSpring(interpolateColorResult, onPressIn(closure_2[12]).ON_PRESS_SPRING, "animate-always");
+          interpolateColorResult = obj3.interpolateColor(closure_2.get(), [0, 1], items);
+          obj.backgroundColor = obj2.withSpring(interpolateColorResult, outer2_0(outer2_2[12]).ON_PRESS_SPRING, "animate-always");
           return obj;
         }
       }
-      obj = { withSpring: onPressIn(sharedValue[11]).withSpring, interpolateColor: onPressIn(sharedValue[4]).interpolateColor, pressed: sharedValue, backgroundColor, backgroundColorPressed, ON_PRESS_SPRING: onPressIn(sharedValue[12]).ON_PRESS_SPRING };
+      obj = { withSpring: outer1_0(outer1_2[11]).withSpring, interpolateColor: outer1_0(outer1_2[4]).interpolateColor, pressed: sharedValue, backgroundColor, backgroundColorPressed, ON_PRESS_SPRING: outer1_0(outer1_2[12]).ON_PRESS_SPRING };
       B.__closure = obj;
       B.__workletHash = 14943431549291;
-      B.__initData = closure_11;
+      B.__initData = outer1_11;
       obj = {};
-      const animatedStyle = onPressIn(sharedValue[4]).useAnimatedStyle(B);
+      const animatedStyle = outer1_0(outer1_2[4]).useAnimatedStyle(B);
       const merged1 = Object.assign(merged);
       obj["onPressIn"] = callback;
       obj["onPressOut"] = callback1;
@@ -181,20 +188,15 @@ function PressableCard(start) {
       obj["style"] = items2;
       obj["unstable_pressDelay"] = 130;
       obj["children"] = children;
-      return callback(closure_8, obj);
-    }(start);
+      return outer1_7(outer1_8, obj);
+    })(start);
   }
   return tmp;
 }
-let closure_3 = ["getFullFormatter"];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-const View = tmp2.View;
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_8 = importDefault(dependencyMap[4]).createAnimatedComponent(tmp2.Pressable);
-const importDefaultResult = importDefault(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[7]).createStyleProperties((arg0) => {
+let closure_3 = ["accessibilityRole"];
+const View = get_ActivityIndicator.View;
+let closure_8 = require("module_3991").createAnimatedComponent(get_ActivityIndicator.Pressable);
+let closure_9 = _createForOfIteratorHelperLoose.createStyleProperties((arg0) => {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -203,13 +205,13 @@ let closure_9 = arg1(dependencyMap[7]).createStyleProperties((arg0) => {
     flag = false;
   }
   if ("primary" === arg0) {
-    let BACKGROUND_BASE_LOW = arg1(dependencyMap[6]).CARD_PRIMARY_PRESSED_BG;
+    let BACKGROUND_BASE_LOW = require(5127) /* createCardBackgroundToken */.CARD_PRIMARY_PRESSED_BG;
   } else if ("secondary" === arg0) {
-    BACKGROUND_BASE_LOW = importDefault(dependencyMap[5]).colors.CARD_SECONDARY_BACKGROUND_ACTIVE;
+    BACKGROUND_BASE_LOW = importDefault(689).colors.CARD_SECONDARY_BACKGROUND_ACTIVE;
   } else if ("muted" === arg0) {
-    BACKGROUND_BASE_LOW = importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE;
+    BACKGROUND_BASE_LOW = importDefault(689).colors.BACKGROUND_MOD_SUBTLE;
   } else if ("transparent" === arg0) {
-    const tmp6 = importDefault(dependencyMap[5]);
+    const tmp6 = importDefault(689);
     if (flag) {
       let TRANSPARENT = tmp6.colors.BACKGROUND_MOD_SUBTLE;
     } else {
@@ -217,26 +219,25 @@ let closure_9 = arg1(dependencyMap[7]).createStyleProperties((arg0) => {
     }
     BACKGROUND_BASE_LOW = TRANSPARENT;
   } else if ("control-secondary" === arg0) {
-    BACKGROUND_BASE_LOW = importDefault(dependencyMap[5]).colors.CONTROL_SECONDARY_BACKGROUND_ACTIVE;
+    BACKGROUND_BASE_LOW = importDefault(689).colors.CONTROL_SECONDARY_BACKGROUND_ACTIVE;
   } else if ("surface-high" === arg0) {
-    BACKGROUND_BASE_LOW = importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW;
+    BACKGROUND_BASE_LOW = importDefault(689).colors.BACKGROUND_BASE_LOW;
   }
   const obj = { backgroundColor: getCardBackgroundToken(arg0), backgroundColorPressed: BACKGROUND_BASE_LOW };
   return obj;
 });
-const obj2 = arg1(dependencyMap[7]);
-let closure_10 = arg1(dependencyMap[7]).createStyles((arg0, arg1, arg2, arg3, arg4, arg5) => {
+let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2, arg3, arg4, arg5) => {
   const tmp = getCardBackgroundToken(arg2);
   let BORDER_SUBTLE = null;
   if ("none" !== arg4) {
     if ("subtle" === arg4) {
-      BORDER_SUBTLE = importDefault(dependencyMap[5]).colors.BORDER_SUBTLE;
+      BORDER_SUBTLE = importDefault(689).colors.BORDER_SUBTLE;
     } else if ("strong" === arg4) {
-      BORDER_SUBTLE = importDefault(dependencyMap[5]).colors.BORDER_STRONG;
+      BORDER_SUBTLE = importDefault(689).colors.BORDER_STRONG;
     } else if ("faint" === arg4) {
-      BORDER_SUBTLE = importDefault(dependencyMap[5]).colors.BORDER_MUTED;
+      BORDER_SUBTLE = importDefault(689).colors.BORDER_MUTED;
     } else if ("control-secondary" === arg4) {
-      BORDER_SUBTLE = importDefault(dependencyMap[5]).colors.CONTROL_SECONDARY_BORDER_DEFAULT;
+      BORDER_SUBTLE = importDefault(689).colors.CONTROL_SECONDARY_BORDER_DEFAULT;
     }
   }
   let tmp11 = tmp;
@@ -245,7 +246,7 @@ let closure_10 = arg1(dependencyMap[7]).createStyles((arg0, arg1, arg2, arg3, ar
   }
   let obj = {};
   obj = {};
-  const merged = Object.assign(arg1(dependencyMap[6]).createCardShadowToken(arg3));
+  const merged = Object.assign(require(5127) /* createCardBackgroundToken */.createCardShadowToken(arg3));
   let tmp13;
   if (arg0) {
     tmp13 = arg5;
@@ -278,7 +279,7 @@ let closure_10 = arg1(dependencyMap[7]).createStyles((arg0, arg1, arg2, arg3, ar
   return obj;
 });
 let closure_11 = { code: "function CardNativeTsx1(){const{withSpring,interpolateColor,pressed,backgroundColor,backgroundColorPressed,ON_PRESS_SPRING}=this.__closure;const pressedColor=withSpring(interpolateColor(pressed.get(),[0,1],[backgroundColor,backgroundColorPressed]),ON_PRESS_SPRING,'animate-always');return{backgroundColor:pressedColor};}" };
-const result = result2.fileFinishedImporting("design/components/Card/native/Card.native.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Card/native/Card.native.tsx");
 
 export { Card };
 export const InternalCard = Card;

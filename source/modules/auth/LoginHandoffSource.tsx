@@ -1,20 +1,20 @@
-// Module ID: 5691
-// Function ID: 49016
+// Module ID: 5696
+// Function ID: 49043
 // Name: LoginHandoffSource
-// Dependencies: []
+// Dependencies: [1355, 662, 4321, 4985, 2]
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 5691 (LoginHandoffSource)
-const StaticChannelRoute = require(dependencyMap[0]).StaticChannelRoute;
-const UserSettingsPath = require(dependencyMap[1]).UserSettingsPath;
-const obj = { ROLE_SUBSCRIPTION: "role_subscription", ROLE_SUBSCRIPTION_SETTING: "role_subscription_setting" };
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/auth/LoginHandoffSource.tsx");
+// Module 5696 (LoginHandoffSource)
+import { StaticChannelRoute } from "set";
+import { UserSettingsPath } from "MAX_FAVORITES";
+
+let obj = { ROLE_SUBSCRIPTION: "role_subscription", ROLE_SUBSCRIPTION_SETTING: "role_subscription_setting" };
+const result = require("canViewChannel").fileFinishedImporting("modules/auth/LoginHandoffSource.tsx");
 
 export const LoginHandoffSource = obj;
 export const getLoginHandoffSourceFromRedirectTo = function getLoginHandoffSourceFromRedirectTo(arg0) {
   const str = decodeURIComponent(arg0);
-  const obj = require(dependencyMap[2]);
+  const obj = require(4321) /* canViewChannel */;
   const tryParseChannelPathResult = obj.tryParseChannelPath(str);
   if (null != tryParseChannelPathResult) {
     if (tryParseChannelPathResult.channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {

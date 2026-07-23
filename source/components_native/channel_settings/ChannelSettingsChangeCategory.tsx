@@ -1,10 +1,31 @@
-// Module ID: 15420
-// Function ID: 117652
+// Module ID: 15537
+// Function ID: 119826
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 830, 6, 7, 15, 17, 18, 31, 1348, 5070, 1838, 3758, 3767, 1849, 653, 33, 4130, 689, 5071, 11455, 3763, 5048, 4470, 1212, 4320, 5165, 5503, 7495, 4541, 4126, 3842, 566, 1456, 44, 2]
 // Exports: default
 
-// Module 15420 (_isNativeReflectConstruct)
+// Module 15537 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import _toArray from "_toArray";
+import _inherits from "_inherits";
+import result from "result";
+import closure_8 from "jsxProd";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import getFlattenedChannelList from "getFlattenedChannelList";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_createForOfIteratorHelperLoose";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+import jsxProd from "invariant";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "initialize";
+
+let closure_18;
+let closure_19;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,64 +35,47 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = importDefault(dependencyMap[12]);
-let closure_16 = importDefault(dependencyMap[13]);
-const Permissions = arg1(dependencyMap[14]).Permissions;
-const importAllResult = importAll(dependencyMap[7]);
-({ jsx: closure_18, jsxs: closure_19 } = arg1(dependencyMap[15]));
-let obj = arg1(dependencyMap[16]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[17]).colors.BACKGROUND_BASE_LOWER, paddingTop: importDefault(dependencyMap[17]).space.PX_16 };
-obj.screenContainer = obj;
-const tmp3 = arg1(dependencyMap[15]);
-obj.stackPadding = { paddingHorizontal: importDefault(dependencyMap[17]).modules.mobile.TABLE_ROW_PADDING };
-let closure_20 = obj.createLegacyClassComponentStyles(obj);
-const tmp4 = (Component) => {
+({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.screenContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.stackPadding = { paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+let tmp4 = ((Component) => {
   class ChannelSettingsChangeCategory {
     constructor(arg0) {
       self = this;
-      tmp = closure_6(this, ChannelSettingsChangeCategory);
+      tmp = outer1_6(this, getGuildId);
       items = [];
       items[0] = Component;
-      obj = closure_9(ChannelSettingsChangeCategory);
-      tmp2 = closure_8;
-      if (closure_22()) {
+      obj = outer1_9(getGuildId);
+      tmp2 = outer1_8;
+      if (outer1_22()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_9;
-        constructResult = Reflect.construct(obj, items, closure_9(self).constructor);
+        tmp5 = outer1_9;
+        constructResult = Reflect.construct(obj, items, outer1_9(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
       channel = Component.channel;
-      ChannelSettingsChangeCategory = closure_13.getGuild(channel.getGuildId());
+      getGuildId = outer1_13.getGuild(channel.getGuildId());
       channel2 = Component.channel;
       obj = {};
-      categories = closure_12.getCategories(channel2.getGuildId());
-      obj.category = closure_11.getChannel(Component.channel.parent_id);
+      categories = outer1_12.getCategories(channel2.getGuildId());
+      obj.category = outer1_11.getChannel(Component.channel.parent_id);
       _categories = categories._categories;
       mapped = _categories.map((channel) => channel.channel);
       obj.categories = mapped.filter((id) => {
         let canResult = "null" === id.id;
         if (canResult) {
-          canResult = closure_14.can(constants.MANAGE_CHANNELS, closure_0);
+          canResult = outer2_14.can(outer2_17.MANAGE_CHANNELS, closure_0);
         }
         if (!canResult) {
-          let canResult1 = closure_14.can(constants.MANAGE_CHANNELS, id);
+          let canResult1 = outer2_14.can(outer2_17.MANAGE_CHANNELS, id);
           if (canResult1) {
-            canResult1 = closure_14.can(constants.VIEW_CHANNEL, id);
+            canResult1 = outer2_14.can(outer2_17.VIEW_CHANNEL, id);
           }
           canResult = canResult1;
         }
@@ -82,7 +86,6 @@ const tmp4 = (Component) => {
       return tmp2Result;
     }
   }
-  const arg1 = ChannelSettingsChangeCategory;
   callback2(ChannelSettingsChangeCategory, Component);
   let obj = {
     key: "shouldComponentUpdate",
@@ -90,42 +93,42 @@ const tmp4 = (Component) => {
       return !this.state.submitting;
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "handleSetCategory",
     value(channelId) {
       const self = this;
-      let ChannelSettingsChangeCategory = channelId;
+      let closure_0 = channelId;
       function saveUpdates() {
         if (null == guildId) {
           const _Error = Error;
           const error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
           throw error;
         } else {
-          const obj = channel(channel[21]);
-          return channel(channel[21]).batchChannelUpdate(guildId, result).then(() => arr.pop());
+          const obj = outer2_1(outer2_3[21]);
+          return outer2_1(outer2_3[21]).batchChannelUpdate(guildId, result).then(() => outer1_2.pop());
         }
       }
       const props = this.props;
       let channel = props.channel;
       const navigation = props.navigation;
-      channel = store.getChannel(channelId);
+      channel = outer1_11.getChannel(channelId);
       const guildId = channel.getGuildId();
       if (null == guildId) {
         const _Error2 = Error;
-        const error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
+        let error = new Error("ChannelSettingsChangeCategory.handleSetCategory: Invalid guild_id");
         throw error;
       } else {
         let tmp3 = null;
         if ("null" !== channelId) {
           tmp3 = channelId;
         }
-        ChannelSettingsChangeCategory = tmp3;
-        const categories = store2.getCategories(channel.getGuildId());
-        let arr = channel(channel[18])(categories._categories, categories, (channel) => channel.channel.type === channel.type);
+        closure_0 = tmp3;
+        const categories = outer1_12.getCategories(channel.getGuildId());
+        let arr = outer1_1(outer1_3[18])(categories._categories, categories, (channel) => channel.channel.type === channel.type);
         const found = arr.find((channel) => channel.channel.id === channel.id);
         if (null == found) {
-          const _Error = Error;
+          let _Error = Error;
           const error1 = new Error("ChannelSettingsChangeCategory.handleSetCategory: Could not find original channel.");
           throw error1;
         } else {
@@ -149,10 +152,10 @@ const tmp4 = (Component) => {
             }
             return tmp;
           });
-          const _String = String;
+          let _String = String;
           arr = obj[String(undefined, tmp3)].push(found);
           const arr3 = obj[String(undefined, tmp3)];
-          const tmp32 = channel(channel[18])(categories._categories, obj);
+          const tmp32 = outer1_1(outer1_3[18])(categories._categories, obj);
           obj = {
             oldOrdering: arr,
             newOrdering: tmp32,
@@ -163,12 +166,13 @@ const tmp4 = (Component) => {
                   return channel.channel.position;
                 }
           };
-          const result = ChannelSettingsChangeCategory(channel[19]).calculatePositionDeltas(obj);
+          const result = ChannelSettingsChangeCategory(outer1_3[19]).calculatePositionDeltas(obj);
           if (result.length > 0) {
             const found1 = result.find((id) => {
               let flag = id.id === channel.id;
               if (flag) {
-                id.parent_id = tmp3;
+                id.parent_id = closure_0;
+                let _inherits = id;
                 flag = true;
               }
               return flag;
@@ -177,36 +181,36 @@ const tmp4 = (Component) => {
             obj = { id: channel.id, parent_id: tmp3 };
             arr = result.push(obj);
           }
-          let obj1 = navigation(channel[20]);
+          let obj1 = outer1_2(outer1_3[20]);
           let closure_8 = obj1.areChannelsLocked(channel, channel);
-          const obj6 = ChannelSettingsChangeCategory(channel[19]);
-          let closure_9 = navigation(channel[20]).areChannelsLocked(channel, store.getChannel(channel.parent_id));
+          const obj6 = ChannelSettingsChangeCategory(outer1_3[19]);
+          let closure_9 = outer1_2(outer1_3[20]).areChannelsLocked(channel, outer1_11.getChannel(channel.parent_id));
           obj1 = { submitting: true };
           self.setState(obj1, () => {
             if (null != channel) {
               if (closure_9) {
                 if (!closure_8) {
-                  let obj = channel(channel[22]);
+                  let obj = outer2_1(outer2_3[22]);
                   obj = {};
-                  const intl = tmp3(channel[23]).intl;
-                  obj.title = intl.string(channel(channel[23]).t.YWMtRe);
-                  const intl2 = tmp3(channel[23]).intl;
+                  const intl = ChannelSettingsChangeCategory(outer2_3[23]).intl;
+                  obj.title = intl.string(ChannelSettingsChangeCategory(outer2_3[23]).t.YWMtRe);
+                  const intl2 = ChannelSettingsChangeCategory(outer2_3[23]).intl;
                   obj = {};
-                  const obj4 = channel(channel[24]);
-                  obj.channelName = obj4.computeChannelName(channel, closure_16, closure_15, true);
-                  obj.categoryName = channel(channel[24]).computeChannelName(channel, closure_16, closure_15);
-                  obj.body = intl2.format(channel(channel[23]).t.iKW+jY, obj);
-                  const intl3 = tmp3(channel[23]).intl;
-                  obj.confirmText = intl3.string(channel(channel[23]).t.eW8Gy4);
-                  const intl4 = tmp3(channel[23]).intl;
-                  obj.cancelText = intl4.string(channel(channel[23]).t.s4uM3b);
+                  const obj4 = ChannelSettingsChangeCategory(outer2_3[24]);
+                  obj.channelName = obj4.computeChannelName(channel, outer2_16, outer2_15, true);
+                  obj.categoryName = ChannelSettingsChangeCategory(outer2_3[24]).computeChannelName(channel, outer2_16, outer2_15);
+                  obj.body = intl2.format(ChannelSettingsChangeCategory(outer2_3[23]).t["iKW+jY"], obj);
+                  const intl3 = ChannelSettingsChangeCategory(outer2_3[23]).intl;
+                  obj.confirmText = intl3.string(ChannelSettingsChangeCategory(outer2_3[23]).t.eW8Gy4);
+                  const intl4 = ChannelSettingsChangeCategory(outer2_3[23]).intl;
+                  obj.cancelText = intl4.string(ChannelSettingsChangeCategory(outer2_3[23]).t.s4uM3b);
                   obj.onConfirm = function onConfirm() {
-                    closure_6.lock_permissions = true;
-                    callback();
+                    outer1_6.lock_permissions = true;
+                    outer1_10();
                   };
                   obj.onCancel = saveUpdates;
                   obj.show(obj);
-                  const obj5 = channel(channel[24]);
+                  const obj5 = ChannelSettingsChangeCategory(outer2_3[24]);
                 }
               }
             }
@@ -220,11 +224,12 @@ const tmp4 = (Component) => {
   obj = {
     key: "renderCategory",
     value(label) {
-      const ChannelSettingsChangeCategory = this;
-      return callback5(ChannelSettingsChangeCategory(closure_3[25]).TableRow, {
+      const self = this;
+      let closure_1 = label;
+      return outer1_18(ChannelSettingsChangeCategory(outer1_3[25]).TableRow, {
         label: label.name,
         onPress() {
-          return self.handleSetCategory(arg0.id);
+          return self.handleSetCategory(label.id);
         }
       }, label.id);
     }
@@ -234,7 +239,7 @@ const tmp4 = (Component) => {
     key: "renderCategories",
     value() {
       const self = this;
-      let arr = callback2(this.state.categories);
+      let arr = outer1_5(this.state.categories);
       const substr = arr.slice(0);
       const category = this.state.category;
       if (null != category) {
@@ -251,7 +256,7 @@ const tmp4 = (Component) => {
       let tmp4 = null;
       if (mapped.length > 0) {
         const obj = { hasIcons: false, children: mapped };
-        tmp4 = callback5(ChannelSettingsChangeCategory(closure_3[26]).TableRowGroup, obj);
+        tmp4 = outer1_18(ChannelSettingsChangeCategory(outer1_3[26]).TableRowGroup, obj);
       }
       return tmp4;
     }
@@ -259,25 +264,25 @@ const tmp4 = (Component) => {
   items[4] = {
     key: "render",
     value() {
-      const self = this;
-      const ChannelSettingsChangeCategory = this;
+      let self = this;
+      self = this;
       const category = this.state.category;
-      const first = callback(this.state.categories, 1)[0];
-      const tmp2 = callback6(this.context);
+      const first = outer1_4(this.state.categories, 1)[0];
+      const tmp2 = outer1_20(this.context);
       let obj = { style: tmp2.screenContainer };
-      obj = { style: tmp2.stackPadding, spacing: first(closure_3[17]).space.PX_24 };
-      obj = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0 };
-      const intl = ChannelSettingsChangeCategory(closure_3[23]).intl;
+      obj = { style: tmp2.stackPadding, spacing: outer1_1(outer1_3[17]).space.PX_24 };
+      obj = { variant: "text-md/medium", color: "text-muted" };
+      const intl = ChannelSettingsChangeCategory(outer1_3[23]).intl;
       const obj1 = {};
       if (null != category) {
         let name = category.name;
       } else {
-        const intl2 = ChannelSettingsChangeCategory(closure_3[23]).intl;
-        name = intl2.string(ChannelSettingsChangeCategory(closure_3[23]).t.GSfOoo);
+        const intl2 = ChannelSettingsChangeCategory(outer1_3[23]).intl;
+        name = intl2.string(ChannelSettingsChangeCategory(outer1_3[23]).t.GSfOoo);
       }
       obj1.categoryName = name;
-      obj.children = intl.formatToPlainString(ChannelSettingsChangeCategory(closure_3[23]).t.OqccVl, obj1);
-      const items = [callback5(ChannelSettingsChangeCategory(closure_3[29]).Text, obj), , ];
+      obj.children = intl.formatToPlainString(ChannelSettingsChangeCategory(outer1_3[23]).t.OqccVl, obj1);
+      const items = [outer1_18(ChannelSettingsChangeCategory(outer1_3[29]).Text, obj), , ];
       let tmp7 = null;
       if (null != first) {
         tmp7 = null;
@@ -291,30 +296,31 @@ const tmp4 = (Component) => {
                       return self.handleSetCategory(first.id);
                     }
             };
-            obj2.children = callback5(ChannelSettingsChangeCategory(closure_3[25]).TableRow, obj3, first.id);
-            tmp7 = callback5(ChannelSettingsChangeCategory(closure_3[26]).TableRowGroup, obj2);
+            obj2.children = outer1_18(ChannelSettingsChangeCategory(outer1_3[25]).TableRow, obj3, first.id);
+            tmp7 = outer1_18(ChannelSettingsChangeCategory(outer1_3[26]).TableRowGroup, obj2);
           }
         }
       }
       items[1] = tmp7;
       items[2] = self.renderCategories();
       obj.children = items;
-      obj.children = closure_19(ChannelSettingsChangeCategory(closure_3[28]).Stack, obj);
-      return callback5(ChannelSettingsChangeCategory(closure_3[27]).Form, obj);
+      obj.children = outer1_19(ChannelSettingsChangeCategory(outer1_3[28]).Stack, obj);
+      return outer1_18(ChannelSettingsChangeCategory(outer1_3[27]).Form, obj);
     }
   };
   return callback(ChannelSettingsChangeCategory, items);
-}(importAllResult.Component);
-tmp4.contextType = arg1(dependencyMap[30]).ThemeContext;
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[17]).modules.mobile.TABLE_ROW_PADDING };
-const result = arg1(dependencyMap[34]).fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeCategory.tsx");
+})(importAllResult.Component);
+let closure_21 = tmp4;
+tmp4.contextType = require("ManaContext").ThemeContext;
+let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
+let result = require("_classCallCheck").fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeCategory.tsx");
 
 export default function ConnectedChannelSettingsChangeCategory(channelId) {
-  const arg1 = channelId.channelId;
-  const items = [closure_11];
-  const channel = arg1(dependencyMap[31]).useStateFromStores(items, () => channel.getChannel(channelId));
-  const obj = arg1(dependencyMap[31]);
-  const navigation = arg1(dependencyMap[32]).useNavigation();
-  importDefault(dependencyMap[33])(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
-  return callback3(tmp4, { channel, navigation });
+  channelId = channelId.channelId;
+  const items = [_isNativeReflectConstruct];
+  const channel = channelId(566).useStateFromStores(items, () => outer1_11.getChannel(channelId));
+  const obj = channelId(566);
+  const navigation = channelId(1456).useNavigation();
+  importDefault(44)(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
+  return callback3(closure_21, { channel, navigation });
 };

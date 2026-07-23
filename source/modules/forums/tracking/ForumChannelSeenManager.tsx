@@ -1,10 +1,17 @@
-// Module ID: 9134
-// Function ID: 71601
+// Module ID: 9141
+// Function ID: 71642
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 9142, 9140, 7009, 7011, 2]
 // Exports: markForumPostItemAsSeen, markForumPostItemAsUnseen
 
-// Module 9134 (_isNativeReflectConstruct)
+// Module 9141 (_isNativeReflectConstruct)
+import trackForumChannelSeenBatch from "trackForumChannelSeenBatch";
+import markAnalyticsFeedItemSeen from "markAnalyticsFeedItemSeen";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,37 +22,32 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getForumPostSeenManagerId(parent_id) {
-  return "" + arg1(dependencyMap[5]).AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id;
+  return "" + require(9142) /* _createForOfIteratorHelperLoose */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = (AnalyticsFeedItemSeenManager) => {
+let tmp2 = ((AnalyticsFeedItemSeenManager) => {
   class ForumChannelSeenManager {
     constructor(arg0) {
       self = this;
       channelId = AnalyticsFeedItemSeenManager.channelId;
       ({ guildId, windowId, isPaused } = AnalyticsFeedItemSeenManager);
-      tmp = closure_3(this, ForumChannelSeenManager);
-      obj = { windowId, isPaused, id: closure_8(channelId) };
+      tmp = outer1_3(this, apply);
+      obj = { windowId, isPaused, id: outer1_8(channelId) };
       items = [];
       items[0] = obj;
-      obj2 = closure_5(ForumChannelSeenManager);
-      tmp2 = closure_4;
-      if (closure_7()) {
+      obj2 = outer1_5(apply);
+      tmp2 = outer1_4;
+      if (outer1_7()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj2, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj2, items, outer1_5(self).constructor);
       } else {
         constructResult = obj2.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      ForumChannelSeenManager = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.createFlushSeenItemsFunction = (arg0) => {
-        const tmp2Result = { guildId: tmp2Result.guildId, channelId: tmp2Result.channelId, sessionId: tmp2Result.sessionId, trackedFeedItems: tmp2Result.trackedFeedItems, isForcedFlush: null != arg0 };
+        obj = { guildId: obj.guildId, channelId: obj.channelId, sessionId: obj.sessionId, trackedFeedItems: obj.trackedFeedItems, isForcedFlush: null != arg0 };
         return () => {
           let channelId;
           let guildId;
@@ -58,7 +60,7 @@ const tmp2 = (AnalyticsFeedItemSeenManager) => {
           const keys = Object.keys(trackedFeedItems);
           for (let num = 0; num < keys.length; num = num + 1) {
             let tmp = keys[num];
-            let obj = trackedFeedItems[tmp];
+            obj = trackedFeedItems[tmp];
             let seenTimeDestructive = obj.computeSeenTimeDestructive(isForcedFlush);
             if (seenTimeDestructive > 0) {
               let arr = items.push(tmp);
@@ -67,29 +69,28 @@ const tmp2 = (AnalyticsFeedItemSeenManager) => {
           }
           if (0 !== items.length) {
             obj = { guildId, channelId, sessionId, postIds: items, additionalTimes: items1 };
-            const result = obj(closure_1[7]).trackForumChannelSeenBatch(obj);
-            const obj2 = obj(closure_1[7]);
+            const result = ForumChannelSeenManager(outer3_1[7]).trackForumChannelSeenBatch(obj);
+            const obj2 = ForumChannelSeenManager(outer3_1[7]);
           }
         };
       };
       tmp2Result.guildId = guildId;
       tmp2Result.channelId = channelId;
-      obj3 = ForumChannelSeenManager(closure_1[8]);
+      obj3 = ForumChannelSeenManager(outer1_1[8]);
       tmp2Result.sessionId = obj3.getForumChannelSessionId(channelId);
       return tmp2Result;
     }
   }
-  const arg1 = ForumChannelSeenManager;
   callback2(ForumChannelSeenManager, AnalyticsFeedItemSeenManager);
   return callback(ForumChannelSeenManager);
-}(arg1(dependencyMap[5]).AnalyticsFeedItemSeenManager);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/forums/tracking/ForumChannelSeenManager.tsx");
+})(require("_createForOfIteratorHelperLoose").AnalyticsFeedItemSeenManager);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forums/tracking/ForumChannelSeenManager.tsx");
 
 export default tmp2;
 export { getForumPostSeenManagerId };
 export const markForumPostItemAsSeen = function markForumPostItemAsSeen(parent_id, item, timestampMillis) {
-  const result = item(dependencyMap[6]).markAnalyticsFeedItemSeen(getForumPostSeenManagerId(parent_id), item, timestampMillis);
+  const result = require(9140) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemSeen(getForumPostSeenManagerId(parent_id), item, timestampMillis);
 };
 export const markForumPostItemAsUnseen = function markForumPostItemAsUnseen(parent_id, item, timestampMillis) {
-  const result = item(dependencyMap[6]).markAnalyticsFeedItemUnseen(getForumPostSeenManagerId(parent_id), item, timestampMillis);
+  const result = require(9140) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemUnseen(getForumPostSeenManagerId(parent_id), item, timestampMillis);
 };

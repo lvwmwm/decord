@@ -1,22 +1,22 @@
-// Module ID: 3905
-// Function ID: 32308
+// Module ID: 3907
+// Function ID: 32313
 // Name: useRivePlayback
-// Dependencies: []
+// Dependencies: [31, 27, 2]
 // Exports: useRivePlayback
 
-// Module 3905 (useRivePlayback)
-let closure_0 = importAll(dependencyMap[0]);
-const AppState = arg1(dependencyMap[1]).AppState;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/useRivePlayback.tsx");
+// Module 3907 (useRivePlayback)
+import result from "result";
+import { AppState } from "get ActivityIndicator";
+
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/useRivePlayback.tsx");
 
 export const useRivePlayback = function useRivePlayback(riveViewRef, isReady) {
   const React = riveViewRef;
   isReady = isReady.isReady;
-  const AppState = isReady;
   const appStatePlaybackEnabled = isReady.appStatePlaybackEnabled;
   const shouldShortLoopForReducedMotion = isReady.shouldShortLoopForReducedMotion;
   let closure_4 = React.useRef(false);
-  let closure_5 = React.useRef("background" === AppState.currentState);
+  let closure_5 = React.useRef("background" === isReady.currentState);
   let closure_6 = React.useRef(false);
   let closure_7 = React.useRef(null);
   let closure_8 = React.useRef(false);
@@ -24,7 +24,7 @@ export const useRivePlayback = function useRivePlayback(riveViewRef, isReady) {
   const effect = React.useEffect(() => {
     closure_9.current = true;
     return () => {
-      closure_9.current = false;
+      outer1_9.current = false;
     };
   }, []);
   const callback = React.useCallback(() => {
@@ -37,8 +37,8 @@ export const useRivePlayback = function useRivePlayback(riveViewRef, isReady) {
   const items = [callback, riveViewRef];
   const pause = React.useCallback(() => {
     callback();
-    if (null != arg0) {
-      arg0.pause();
+    if (null != result) {
+      result.pause();
     }
     closure_4.current = false;
   }, items);
@@ -47,13 +47,13 @@ export const useRivePlayback = function useRivePlayback(riveViewRef, isReady) {
     callback();
     if (shouldShortLoopForReducedMotion) {
       const _setTimeout = setTimeout;
-      closure_7.current = setTimeout(() => callback(), 5000);
+      closure_7.current = setTimeout(() => outer1_11(), 5000);
     }
   }, items1);
   const items2 = [riveViewRef, callback2];
   const play = React.useCallback(() => {
-    if (null != arg0) {
-      arg0.play();
+    if (null != result) {
+      result.play();
     }
     closure_4.current = true;
     callback2();
@@ -65,18 +65,18 @@ export const useRivePlayback = function useRivePlayback(riveViewRef, isReady) {
       ref2.current = true;
       const _queueMicrotask = queueMicrotask;
       queueMicrotask(() => {
-        closure_8.current = false;
-        if (ref2.current) {
-          if (closure_2) {
-            if (ref.current) {
-              closure_6.current = true;
+        outer1_8.current = false;
+        if (outer1_9.current) {
+          if (outer1_2) {
+            if (outer1_5.current) {
+              outer1_6.current = true;
             }
           }
-          if (null != closure_0) {
-            closure_0.playIfNeeded();
+          if (null != outer1_0) {
+            outer1_0.playIfNeeded();
           }
-          closure_4.current = true;
-          callback();
+          outer1_4.current = true;
+          outer1_12();
         }
       });
     }
@@ -96,30 +96,30 @@ export const useRivePlayback = function useRivePlayback(riveViewRef, isReady) {
   const items6 = [appStatePlaybackEnabled, isReady, play, pause];
   const effect3 = React.useEffect(() => {
     if (appStatePlaybackEnabled) {
-      let closure_0 = isReady.addEventListener("change", (arg0) => {
+      let result = isReady.addEventListener("change", (arg0) => {
         if ("background" === arg0) {
-          closure_5.current = true;
-          let current2 = closure_1;
-          if (closure_1) {
-            current2 = ref.current;
+          outer1_5.current = true;
+          let current2 = outer1_1;
+          if (outer1_1) {
+            current2 = outer1_4.current;
           }
           if (current2) {
-            ref2.current = true;
-            callback();
+            outer1_6.current = true;
+            outer1_11();
           }
         } else if ("active" === arg0) {
-          closure_5.current = false;
-          let current = closure_1;
-          if (closure_1) {
-            current = ref2.current;
+          outer1_5.current = false;
+          let current = outer1_1;
+          if (outer1_1) {
+            current = outer1_6.current;
           }
           if (current) {
-            ref2.current = false;
-            callback2();
+            outer1_6.current = false;
+            outer1_13();
           }
         }
       });
-      return () => closure_0.remove();
+      return () => result.remove();
     }
   }, items6);
   return { play, pause, playIfNeeded };

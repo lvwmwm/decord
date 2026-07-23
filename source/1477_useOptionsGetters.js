@@ -1,31 +1,30 @@
 // Module ID: 1477
-// Function ID: 17161
+// Function ID: 17162
 // Name: useOptionsGetters
-// Dependencies: []
+// Dependencies: [31, 1478, 1470]
 // Exports: default
 
 // Module 1477 (useOptionsGetters)
-let closure_2 = importAll(dependencyMap[0]);
+import result from "result";
+
 
 export default function useOptionsGetters(key) {
-  const importDefault = key;
+  key = key.key;
   const options = key.options;
-  const dependencyMap = options;
   const navigation = key.navigation;
-  const React = navigation;
-  let closure_3 = React.useRef(options);
-  let closure_4 = React.useRef({});
-  const onOptionsChange = React.useContext(importDefault(dependencyMap[1])).onOptionsChange;
-  const addOptionsGetter = React.useContext(importDefault(dependencyMap[2])).addOptionsGetter;
+  let closure_3 = navigation.useRef(options);
+  let closure_4 = navigation.useRef({});
+  const onOptionsChange = navigation.useContext(key(options[1])).onOptionsChange;
+  const addOptionsGetter = navigation.useContext(key(options[2])).addOptionsGetter;
   const items = [navigation, onOptionsChange];
-  const callback = React.useCallback(() => {
+  const callback = navigation.useCallback(() => {
     let isFocusedResult;
     if (null != navigation) {
       isFocusedResult = navigation.isFocused();
     }
     let tmp3 = null == isFocusedResult || isFocusedResult;
     if (tmp3) {
-      tmp3 = !Object.keys(ref2.current).length;
+      tmp3 = !Object.keys(closure_4.current).length;
     }
     if (tmp3) {
       let current = ref.current;
@@ -37,7 +36,7 @@ export default function useOptionsGetters(key) {
     }
   }, items);
   const items1 = [navigation, options, callback];
-  const effect = React.useEffect(() => {
+  const effect = navigation.useEffect(() => {
     closure_3.current = options;
     let addListenerResult;
     callback();
@@ -46,7 +45,7 @@ export default function useOptionsGetters(key) {
     }
     return addListenerResult;
   }, items1);
-  const callback1 = React.useCallback(() => {
+  const callback1 = navigation.useCallback(() => {
     for (const key10007 in closure_4.current) {
       let tmp6 = key10007;
       let tmp7 = closure_4;
@@ -75,7 +74,7 @@ export default function useOptionsGetters(key) {
     return null;
   }, []);
   const items2 = [navigation, callback1];
-  const callback2 = React.useCallback(() => {
+  const callback2 = navigation.useCallback(() => {
     let isFocusedResult;
     if (null != navigation) {
       isFocusedResult = navigation.isFocused();
@@ -91,8 +90,8 @@ export default function useOptionsGetters(key) {
     }
     return current;
   }, items2);
-  const items3 = [callback2, addOptionsGetter, key.key];
-  const effect1 = React.useEffect(() => {
+  const items3 = [callback2, addOptionsGetter, key];
+  const effect1 = navigation.useEffect(() => {
     let tmp;
     if (null != addOptionsGetter) {
       tmp = addOptionsGetter(key, callback2);
@@ -101,12 +100,13 @@ export default function useOptionsGetters(key) {
   }, items3);
   const items4 = [callback];
   return {
-    addOptionsGetter: React.useCallback((arg0, arg1) => {
-      ref2.current[arg0] = arg1;
+    addOptionsGetter: navigation.useCallback((arg0, arg1) => {
+      let closure_0 = arg0;
+      closure_4.current[arg0] = arg1;
       callback();
       return () => {
-        delete r2[r1];
-        callback();
+        delete tmp2[tmp];
+        outer1_7();
       };
     }, items4),
     getCurrentOptions: callback2

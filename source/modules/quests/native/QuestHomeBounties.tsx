@@ -1,39 +1,51 @@
-// Module ID: 13851
-// Function ID: 104665
+// Module ID: 13965
+// Function ID: 106821
 // Name: EmptyState
-// Dependencies: []
+// Dependencies: [57, 31, 27, 6941, 4976, 1345, 33, 689, 13966, 4130, 10925, 1212, 5807, 4126, 5459, 13963, 1334, 5802, 686, 13967, 4099, 6959, 6969, 4979, 13905, 5584, 9449, 9450, 9451, 6970, 13979, 10929, 7879, 13980, 10464, 566, 13983, 2]
 
-// Module 13851 (EmptyState)
+// Module 13965 (EmptyState)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "_createForOfIteratorHelperLoose";
+import { View } from "emitClickEventWithCreative";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import { BountyCarouselEmptyStateReason as closure_7 } from "QuestsExperimentLocations";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function EmptyState(reason) {
   reason = reason.reason;
   const tmp = callback4();
-  let obj = arg1(dependencyMap[10]);
+  let obj = require(10925) /* useTrackQuestEventWithImpression */;
   const bountyCarouselEmptyStateAnalytics = obj.useBountyCarouselEmptyStateAnalytics(reason);
   if (reason === constants.COMPLETED) {
-    const intl2 = arg1(dependencyMap[11]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[11]).t.O2hRaZ);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.O2hRaZ);
   } else {
-    const intl = arg1(dependencyMap[11]).intl;
-    stringResult = intl.string(arg1(dependencyMap[11]).t.TKuW8z);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1212) /* getSystemLocale */.t.TKuW8z);
   }
   if (reason === constants.COMPLETED) {
-    let ReqPds = arg1(dependencyMap[11]).t.D/790X;
+    let ReqPds = require(1212) /* getSystemLocale */.t["D/790X"];
   } else {
-    ReqPds = arg1(dependencyMap[11]).t.ReqPds;
+    ReqPds = require(1212) /* getSystemLocale */.t.ReqPds;
   }
   obj = { style: tmp.emptyState };
-  const items = [callback2(arg1(dependencyMap[12]).BountiesPosterIllocon, { size: 32 }), ];
+  const items = [callback2(require(5807) /* AccountAgeTier10LargeBadge */.BountiesPosterIllocon, { size: 32 }), ];
   obj = { style: tmp.emptyStateText };
-  const obj1 = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum", children: stringResult };
-  const items1 = [callback2(arg1(dependencyMap[13]).Text, obj1), ];
-  const obj2 = { cachedAt: "center", edpbxy: "center" };
-  const intl3 = arg1(dependencyMap[11]).intl;
+  const obj1 = { variant: "text-sm/semibold", color: "text-default", children: stringResult };
+  const items1 = [callback2(require(4126) /* Text */.Text, obj1), ];
+  const obj2 = { variant: "text-xs/medium", color: "text-muted" };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
   obj2.children = intl3.format(ReqPds, {
     onClickLearnMore() {
-      callback(closure_2[15])();
+      outer1_1(outer1_2[15])();
     }
   });
-  items1[1] = callback2(arg1(dependencyMap[14]).TextWithIOSLinkWorkaround, obj2);
+  items1[1] = callback2(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj2);
   obj.children = items1;
   items[1] = callback3(View, obj);
   obj.children = items;
@@ -54,61 +66,56 @@ function QuestHomeBountiesCarousel(bounties) {
   let orbShopProducts;
   let showOrbShopPlaceholderCarousel;
   bounties = bounties.bounties;
-  const arg1 = bounties;
   ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel } = bounties);
   if (showOrbShopPlaceholderCarousel === undefined) {
     showOrbShopPlaceholderCarousel = false;
   }
-  let importDefault;
-  let dependencyMap;
+  let ref;
+  let first;
   let callback;
-  let importAllResult;
+  let first1;
   let closure_5;
-  let closure_6;
+  let first2;
   let closure_7;
   let closure_8;
   let callback2;
   let closure_10;
-  let PX_16;
+  callback = undefined;
   let closure_12;
   let closure_13;
   let callback4;
   let closure_15;
-  let getSnapIndex;
-  let ItemSeparator;
-  let keyExtractor;
-  const tmp = callback4();
+  let callback6;
+  let callback7;
+  let isInView;
+  let tmp = callback4();
   let tmp2 = obtainableOrbRewards > 0;
   if (tmp2) {
-    tmp2 = orbShopProducts.length >= arg1(dependencyMap[19]).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-    const tmp5 = orbShopProducts.length >= arg1(dependencyMap[19]).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    tmp2 = orbShopProducts.length >= bounties(first[19]).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    const tmp5 = orbShopProducts.length >= bounties(first[19]).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
   }
   let tmp6 = null;
-  const ref = importAllResult.useRef(null);
-  importDefault = ref;
-  const tmp8 = callback(importAllResult.useState(0), 2);
-  const first = tmp8[0];
-  dependencyMap = first;
+  ref = first1.useRef(null);
+  let tmp8 = callback(first1.useState(0), 2);
+  first = tmp8[0];
   callback = tmp8[1];
-  const tmp10 = callback(importAllResult.useState(0), 2);
-  const first1 = tmp10[0];
-  importAllResult = first1;
+  const tmp10 = callback(first1.useState(0), 2);
+  first1 = tmp10[0];
   closure_5 = tmp10[1];
-  const tmp12 = callback(importAllResult.useState(false), 2);
-  const first2 = tmp12[0];
-  closure_6 = first2;
+  const tmp12 = callback(first1.useState(false), 2);
+  first2 = tmp12[0];
   closure_7 = tmp12[1];
-  closure_8 = importAllResult.useRef(null);
-  callback2 = importAllResult.useRef(false);
-  closure_10 = importAllResult.useRef({ parent: { scrollX: 0 }, children: {}, axis: "horizontal" });
-  callback = importAllResult.useCallback((arg0) => {
+  closure_8 = first1.useRef(null);
+  callback2 = first1.useRef(false);
+  closure_10 = first1.useRef({ parent: { scrollX: 0 }, children: {}, axis: "horizontal" });
+  callback = first1.useCallback((arg0) => {
     if (null != arg0) {
       const _Object2 = Object;
       if (Object.hasOwn(closure_10.current.children, arg0)) {
         if (!tmp8) {
           obj2.calculateVisibility();
         }
-        const tmp8 = null == closure_10.current.children[arg0] || null == closure_10.current.children[arg0].calculateVisibility;
+        tmp8 = null == closure_10.current.children[arg0] || null == closure_10.current.children[arg0].calculateVisibility;
       }
     } else {
       const _Object = Object;
@@ -122,29 +129,28 @@ function QuestHomeBountiesCarousel(bounties) {
       }
     }
   }, []);
-  PX_16 = callback;
   const items = [callback];
   const items1 = [bounties.length];
-  const callback1 = importAllResult.useCallback((nativeEvent) => {
+  const callback1 = first1.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
     closure_10.current.parent.layout = nativeEvent.nativeEvent.layout;
     callback();
   }, items);
   const items2 = [first];
-  const memo = importAllResult.useMemo(() => {
+  const memo = first1.useMemo(() => {
     const array = new Array(bounties.length);
     return array.fill(0).map((arg0, arg1) => arg1 * closure_13);
   }, items1);
-  callback2 = importAllResult.useCallback(() => {
+  callback2 = first1.useCallback(() => {
     let obj = {};
     obj = { width: Math.max(0, first - bounties(first[8]).CARD_WIDTH - callback) };
     obj.style = obj;
     return callback4(closure_5, obj);
   }, items2);
-  closure_12 = importAllResult.useRef(first1);
-  closure_13 = importAllResult.useRef(null);
+  closure_12 = first1.useRef(first1);
+  closure_13 = first1.useRef(null);
   const items3 = [callback];
-  const callback3 = importAllResult.useCallback((nativeEvent) => {
+  const callback3 = first1.useCallback((nativeEvent) => {
     const tmp = callback6(nativeEvent);
     if (tmp !== ref.current) {
       ref.current = tmp;
@@ -163,10 +169,10 @@ function QuestHomeBountiesCarousel(bounties) {
     closure_10.current.parent.scrollX = nativeEvent.nativeEvent.contentOffset.x;
     callback();
   }, items3);
-  callback4 = importAllResult.useRef(false);
-  closure_15 = importAllResult.useRef(null);
+  callback4 = first1.useRef(false);
+  closure_15 = first1.useRef(null);
   const items4 = [first1];
-  callback4 = importAllResult.useCallback(() => {
+  callback4 = first1.useCallback(() => {
     closure_14.current = false;
     if (null != closure_15.current) {
       const _clearTimeout = clearTimeout;
@@ -174,7 +180,7 @@ function QuestHomeBountiesCarousel(bounties) {
       closure_15.current = null;
     }
   }, []);
-  const callback5 = importAllResult.useCallback((arg0) => {
+  const callback5 = first1.useCallback((arg0) => {
     const tmp = callback6(arg0);
     closure_14.current = false;
     if (tmp !== first1) {
@@ -194,54 +200,53 @@ function QuestHomeBountiesCarousel(bounties) {
       const obj2 = bounties(first[21]);
     }
   }, items4);
-  const callback6 = importAllResult.useCallback((arg0) => {
-    const bounties = arg0;
+  callback6 = first1.useCallback((arg0) => {
+    let closure_0 = arg0;
     if (null != closure_15.current) {
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_15.current);
       closure_15.current = null;
     }
     closure_15.current = setTimeout(() => {
-      closure_14.current = true;
-      const current = ref.current;
+      outer1_14.current = true;
+      const current = outer1_1.current;
       if (null != current) {
-        const obj = { offset: arg0 * closure_13, animated: true };
+        const obj = { offset: closure_0 * closure_13, animated: true };
         current.scrollToOffset(obj);
       }
-      closure_15.current = null;
+      outer1_15.current = null;
     }, 350);
   }, []);
-  getSnapIndex = callback6;
-  const effect = importAllResult.useEffect(() => () => {
-    if (null != ref.current) {
+  const effect = first1.useEffect(() => () => {
+    if (null != outer1_15.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(ref.current);
-      ref.current = null;
+      clearTimeout(outer1_15.current);
+      outer1_15.current = null;
     }
   }, []);
   const items5 = [bounties, first1, callback6];
-  const effect1 = importAllResult.useEffect(() => {
+  const effect1 = first1.useEffect(() => {
     function handleModalClose(key) {
-      if (key.key === handleModalClose(findIndexResult1[24]).BOUNTIES_MODAL_KEY) {
-        callback2(false);
-        const current = ref.current;
-        const handleModalClose = current;
-        ref.current = null;
+      if (key.key === bounties(first[24]).BOUNTIES_MODAL_KEY) {
+        outer1_7(false);
+        const current = outer1_8.current;
+        outer1_8.current = null;
         if (null != current) {
-          let isBountyCompletedResult = bountyCompleted.isBountyCompleted(current);
+          let isBountyCompletedResult = first2.isBountyCompleted(current);
           if (isBountyCompletedResult) {
-            isBountyCompletedResult = !ref2.current;
+            isBountyCompletedResult = !outer1_9.current;
           }
-          ref2.current = false;
+          outer1_9.current = false;
           const findIndexResult = handleModalClose.findIndex((id) => id.id === current);
+          let closure_1 = findIndexResult;
           if (-1 !== findIndexResult) {
             const findIndexResult1 = handleModalClose.findIndex((id) => {
-              let tmp = arg1 > closure_4;
+              let tmp = arg1 > outer2_4;
               if (tmp) {
-                tmp = arg1 > findIndexResult;
+                tmp = arg1 > closure_1;
               }
               if (tmp) {
-                tmp = !bountyCompleted.isBountyCompleted(id.id);
+                tmp = !first2.isBountyCompleted(id.id);
               }
               return tmp;
             });
@@ -249,25 +254,24 @@ function QuestHomeBountiesCarousel(bounties) {
               isBountyCompletedResult = -1 !== findIndexResult1;
             }
             if (isBountyCompletedResult) {
-              isBountyCompletedResult = findIndexResult1 <= closure_4 + 3;
+              isBountyCompletedResult = findIndexResult1 <= outer1_4 + 3;
             }
             if (isBountyCompletedResult) {
-              handleModalClose(findIndexResult1[25]).runAfterInteractions(() => {
-                callback(findIndexResult1);
+              bounties(first[25]).runAfterInteractions(() => {
+                outer2_16(findIndexResult1);
               });
-              const obj = handleModalClose(findIndexResult1[25]);
+              const obj = bounties(first[25]);
             }
           }
         }
       }
     }
-    const bounties = handleModalClose;
     const subscription = ref(first[18]).subscribe("MODAL_POP", handleModalClose);
     return () => {
-      callback(closure_2[18]).unsubscribe("MODAL_POP", handleModalClose);
+      ref(first[18]).unsubscribe("MODAL_POP", handleModalClose);
     };
   }, items5);
-  const callback7 = importAllResult.useCallback((bountyId, questContentPosition) => {
+  callback7 = first1.useCallback((bountyId, questContentPosition) => {
     let obj = bounties(first[26]);
     if (obj.shouldMigrateToAdAnalyticsInterface(bounties(first[26]).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_home_bounties")) {
       let tmpResult = tmp(tmp2[27]);
@@ -284,15 +288,12 @@ function QuestHomeBountiesCarousel(bounties) {
     const obj6 = ref(first[24]);
     obj6.showModal({ bountyId: bountyId.id, sourceQuestContent: bounties(first[23]).QuestContent.QUEST_HOME_MOBILE_CAROUSEL });
   }, []);
-  ItemSeparator = callback7;
-  const tmp25 = importDefault(dependencyMap[30])();
-  const isInView = tmp25.isInView;
-  keyExtractor = isInView;
+  const tmp25 = ref(first[30])();
+  isInView = tmp25.isInView;
   const items6 = [first1, callback7, isInView, first2];
   const items7 = [bounties, callback];
-  const callback8 = importAllResult.useCallback((item) => {
+  const callback8 = first1.useCallback((item) => {
     item = item.item;
-    const bounties = item;
     const index = item.index;
     const obj = {
       adContentId: item.id,
@@ -304,64 +305,57 @@ function QuestHomeBountiesCarousel(bounties) {
       sourceQuestContent: bounties(first[23]).QuestContent.QUEST_HOME_MOBILE_CAROUSEL,
       overrideVisibility: !!isInView,
       children() {
-        return callback(index(closure_2[8]), { bounty: item, index, isActive: index === closure_4, isModalVisible: closure_6, onPress: closure_17 });
+        return callback(ref(first[8]), { bounty: item, index, isActive: index === outer1_4, isModalVisible: outer1_6, onPress: outer1_17 });
       }
     };
     return closure_9(bounties(first[31]).QuestContentImpressionTrackerNative, obj, item.id);
   }, items6);
   const items8 = [isInView, first1, first2];
-  const callback9 = importAllResult.useCallback((arg0) => {
-    const bounties = arg0;
-    const obj = {};
-    const merged = Object.assign(arg0);
+  const callback9 = first1.useCallback((arg0) => {
+    let closure_0 = arg0;
+    let obj = {};
+    let merged = Object.assign(arg0);
     obj["onLayout"] = function onLayout(nativeEvent) {
-      if (null != nativeEvent[closure_0.index]) {
+      if (null != closure_0[closure_0.index]) {
         const obj = {};
-        const merged = Object.assign(ref.current.children[tmp.id]);
+        const merged = Object.assign(outer1_10.current.children[tmp.id]);
         obj["layout"] = nativeEvent.nativeEvent.layout;
-        ref.current.children[tmp.id] = obj;
-        callback(tmp.id);
+        outer1_10.current.children[tmp.id] = obj;
+        outer1_11(tmp.id);
       }
-      nativeEvent.onLayout(nativeEvent);
+      closure_0.onLayout(nativeEvent);
     };
     return callback4(closure_5, obj);
   }, items7);
   let obj = { style: tmp.container };
   obj = { ref: tmp25.containerRef, onLayout: callback1 };
-  const memo1 = importAllResult.useMemo(() => ({ isInView, activeIndex: first1, isModalVisible: first2 }), items8);
-  obj = { ref, horizontal: true, data: bounties, renderItem: callback8, keyExtractor, contentContainerStyle: tmp.listContentContainer, snapToOffsets: memo, snapToEnd: false, decelerationRate: "fast", showsHorizontalScrollIndicator: false, ItemSeparatorComponent: ItemSeparator, ListFooterComponent: callback2, onScroll: callback3, onScrollBeginDrag: callback4, onMomentumScrollEnd: callback5, scrollEventThrottle: 16, extraData: memo1, CellRendererComponent: callback9 };
-  obj.children = callback2(arg1(dependencyMap[32]).FlashList, obj);
+  const memo1 = first1.useMemo(() => ({ isInView, activeIndex: first1, isModalVisible: first2 }), items8);
+  obj = { ref, horizontal: true, data: bounties, renderItem: callback8, keyExtractor: isInView, contentContainerStyle: tmp.listContentContainer, snapToOffsets: memo, snapToEnd: false, decelerationRate: "fast", showsHorizontalScrollIndicator: false, ItemSeparatorComponent: callback7, ListFooterComponent: callback2, onScroll: callback3, onScrollBeginDrag: callback4, onMomentumScrollEnd: callback5, scrollEventThrottle: 16, extraData: memo1, CellRendererComponent: callback9 };
+  obj.children = callback2(bounties(first[32]).FlashList, obj);
   const items9 = [callback2(closure_5, obj), ];
   if (tmp2) {
     const obj1 = { orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel };
-    tmp6 = callback2(importDefault(dependencyMap[33]), obj1);
+    tmp6 = callback2(ref(first[33]), obj1);
   }
   items9[1] = tmp6;
   obj.children = items9;
   return closure_10(closure_5, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).BountyCarouselEmptyStateReason;
-const ContentDismissActionType = arg1(dependencyMap[5]).ContentDismissActionType;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
-let PX_16 = importDefault(dependencyMap[7]).space.PX_16;
-PX_16 = importDefault(dependencyMap[7]).space.PX_16;
-let closure_13 = arg1(dependencyMap[8]).CARD_WIDTH + PX_16;
-const tmp2 = arg1(dependencyMap[6]);
-let closure_14 = arg1(dependencyMap[9]).createStyles(() => {
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let PX_16 = require("_createForOfIteratorHelperLoose").space.PX_16;
+PX_16 = require("_createForOfIteratorHelperLoose").space.PX_16;
+let closure_13 = require("CARD_WIDTH").CARD_WIDTH + PX_16;
+let closure_14 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { marginBottom: importDefault(dependencyMap[7]).space.PX_48 };
+  obj = { marginBottom: importDefault(689).space.PX_48 };
   obj.container = obj;
   obj = { paddingLeft: PX_16 };
   obj.listContentContainer = obj;
-  obj.emptyState = { gap: importDefault(dependencyMap[7]).space.PX_12, borderColor: importDefault(dependencyMap[7]).colors.BORDER_MUTED, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.lg, overflow: "hidden", paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingVertical: 14, marginHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-  obj.emptyStateText = { 1515479866: -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 741818958: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
+  const obj1 = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_12, borderWidth: 1, borderColor: importDefault(689).colors.BORDER_MUTED, backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(689).radii.lg, overflow: "hidden", paddingHorizontal: importDefault(689).space.PX_16, paddingVertical: 14, marginHorizontal: importDefault(689).space.PX_16 };
+  obj.emptyState = obj1;
+  obj.emptyStateText = { flex: 1, gap: 2 };
   return obj;
 });
-const obj2 = arg1(dependencyMap[9]);
 const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
   let obtainableOrbRewards;
   let orbShopProducts;
@@ -371,51 +365,50 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
   if (showOrbShopPlaceholderCarousel === undefined) {
     showOrbShopPlaceholderCarousel = false;
   }
-  let obj = arg1(dependencyMap[34]);
+  let obj = require(10464) /* _createForOfIteratorHelperLoose */;
   const questHomeBounties = obj.useQuestHomeBounties().questHomeBounties;
   const tmp = callback4();
-  function useBountiesNux(arg0) {
+  (function useBountiesNux(arg0) {
     if (arg0) {
-      const items = [first(closure_2[16]).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
+      const items = [outer1_0(outer1_2[16]).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
       let items1 = items;
     } else {
       items1 = [];
     }
-    const tmp3 = callback(first(closure_2[17]).useSelectedDismissibleContent(items1), 2);
+    const tmp3 = outer1_3(outer1_0(outer1_2[17]).useSelectedDismissibleContent(items1), 2);
     const first = tmp3[0];
-    const tmp5 = tmp3[1];
-    closure_2 = React.useRef(false);
+    let closure_1 = tmp5;
+    let closure_2 = outer1_4.useRef(false);
     const items2 = [first];
-    const effect = React.useEffect(() => {
-      let current = first !== first(ref[16]).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET;
+    const effect = outer1_4.useEffect(() => {
+      let current = first !== outer2_0(outer2_2[16]).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET;
       if (!current) {
         current = ref.current;
       }
       if (!current) {
         ref.current = true;
-        const tmp5 = tmp5(ref[15])();
+        outer2_1(outer2_2[15])();
       }
     }, items2);
-    const items3 = [first, tmp5];
-    const effect1 = React.useEffect(() => {
+    const items3 = [first, tmp3[1]];
+    const effect1 = outer1_4.useEffect(() => {
       function handleHide(key) {
-        if (key.key === handleHide(closure_2[15]).PROMO_SHEET_KEY) {
-          callback(constants.USER_DISMISS);
+        if (key.key === outer3_0(outer3_2[15]).PROMO_SHEET_KEY) {
+          outer1_1(outer3_8.USER_DISMISS);
         }
       }
-      const first = handleHide;
-      if (first === first(closure_2[16]).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET) {
-        const subscription = tmp5(closure_2[18]).subscribe("HIDE_ACTION_SHEET", handleHide);
+      if (handleHide === outer2_0(outer2_2[16]).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET) {
+        const subscription = outer2_1(outer2_2[18]).subscribe("HIDE_ACTION_SHEET", handleHide);
         return () => {
-          callback(closure_2[18]).unsubscribe("HIDE_ACTION_SHEET", handleHide);
+          outer3_1(outer3_2[18]).unsubscribe("HIDE_ACTION_SHEET", handleHide);
         };
       }
     }, items3);
-  }(questHomeBounties.length > 0);
+  })(questHomeBounties.length > 0);
   let tmp3 = 0 === questHomeBounties.length;
-  let obj1 = arg1(dependencyMap[35]);
-  const items = [closure_6];
-  const stateFromStores = obj1.useStateFromStores(items, () => closure_6.areAllBountiesCompleted());
+  let obj1 = require(566) /* initialize */;
+  let items = [closure_6];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.areAllBountiesCompleted());
   let tmp5 = !tmp3;
   if (!tmp3) {
     tmp5 = !stateFromStores;
@@ -424,19 +417,19 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
     tmp5 = obtainableOrbRewards > 0;
   }
   if (tmp5) {
-    tmp5 = orbShopProducts.length >= arg1(dependencyMap[19]).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-    const tmp8 = orbShopProducts.length >= arg1(dependencyMap[19]).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    tmp5 = orbShopProducts.length >= require(13967) /* _createForOfIteratorHelperLoose */.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    const tmp8 = orbShopProducts.length >= require(13967) /* _createForOfIteratorHelperLoose */.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
   }
   if (!tmp3) {
     if (!stateFromStores) {
       if (verticalScrollEnabled) {
         obj = { style: tmp.container };
         obj = { bounties: questHomeBounties };
-        const items1 = [callback2(importDefault(dependencyMap[36]), obj), ];
+        let items1 = [callback2(importDefault(13983), obj), ];
         let tmp17 = null;
         if (tmp5) {
           obj1 = { orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel };
-          tmp17 = callback2(importDefault(dependencyMap[33]), obj1);
+          tmp17 = callback2(importDefault(13980), obj1);
         }
         items1[1] = tmp17;
         obj.children = items1;
@@ -457,8 +450,8 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
       tmp3 = stateFromStores;
     }
     obj4.isEmptyOrCompleted = tmp3;
-    let tmp23Result = tmp23(importDefault(dependencyMap[36]), obj4);
-    const tmp28 = importDefault(dependencyMap[36]);
+    let tmp23Result = tmp23(importDefault(13983), obj4);
+    const tmp28 = importDefault(13983);
   } else {
     const obj5 = { reason: tmp3 ? closure_7.EMPTY : closure_7.COMPLETED };
     tmp23Result = tmp23(EmptyState, obj5);
@@ -466,6 +459,6 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
   obj3.children = tmp23Result;
   callback2(View, obj3);
 });
-const result = arg1(dependencyMap[37]).fileFinishedImporting("modules/quests/native/QuestHomeBounties.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/QuestHomeBounties.tsx");
 
 export default memoResult;

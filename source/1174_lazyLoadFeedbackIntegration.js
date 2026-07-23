@@ -1,33 +1,35 @@
 // Module ID: 1174
-// Function ID: 13376
+// Function ID: 13377
 // Name: lazyLoadFeedbackIntegration
-// Dependencies: []
+// Dependencies: [794, 1109]
 
 // Module 1174 (lazyLoadFeedbackIntegration)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.lazyLoadFeedbackIntegration = function lazyLoadFeedbackIntegration() {
-  const client = arg1(arg6[0]).getClient();
+  const client = require(794) /* registerSpanErrorInstrumentation */.getClient();
   let integrationByName;
   if (null !== client) {
     if (undefined !== client) {
-      integrationByName = client.getIntegrationByName(arg1(arg6[1]).MOBILE_FEEDBACK_INTEGRATION_NAME);
+      integrationByName = client.getIntegrationByName(require(1109) /* _getClientIntegration */.MOBILE_FEEDBACK_INTEGRATION_NAME);
     }
   }
   if (!integrationByName) {
-    const client1 = arg1(arg6[0]).getClient();
+    const client1 = require(794) /* registerSpanErrorInstrumentation */.getClient();
     integrationByName = null === client1;
-    const obj4 = arg1(arg6[0]);
+    const obj4 = require(794) /* registerSpanErrorInstrumentation */;
   }
   if (!integrationByName) {
     integrationByName = undefined === obj3;
   }
   if (!integrationByName) {
-    obj3.addIntegration(arg1(arg6[1]).feedbackIntegration());
-    const obj5 = arg1(arg6[1]);
+    obj3.addIntegration(require(1109) /* _getClientIntegration */.feedbackIntegration());
+    const obj5 = require(1109) /* _getClientIntegration */;
   }
 };
 arg5.AUTO_INJECT_FEEDBACK_INTEGRATION_NAME = "AutoInjectMobileFeedback";
 arg5.lazyLoadAutoInjectFeedbackIntegration = function lazyLoadAutoInjectFeedbackIntegration() {
-  let obj = arg1(arg6[0]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   const client = obj.getClient();
   let integrationByName;
   if (null !== client) {
@@ -36,9 +38,9 @@ arg5.lazyLoadAutoInjectFeedbackIntegration = function lazyLoadAutoInjectFeedback
     }
   }
   if (!integrationByName) {
-    const client1 = arg1(arg6[0]).getClient();
+    const client1 = require(794) /* registerSpanErrorInstrumentation */.getClient();
     integrationByName = null === client1;
-    const obj4 = arg1(arg6[0]);
+    const obj4 = require(794) /* registerSpanErrorInstrumentation */;
   }
   if (!integrationByName) {
     integrationByName = undefined === obj3;
@@ -50,7 +52,7 @@ arg5.lazyLoadAutoInjectFeedbackIntegration = function lazyLoadAutoInjectFeedback
 };
 arg5.AUTO_INJECT_FEEDBACK_BUTTON_INTEGRATION_NAME = "AutoInjectMobileFeedbackButton";
 arg5.lazyLoadAutoInjectFeedbackButtonIntegration = function lazyLoadAutoInjectFeedbackButtonIntegration() {
-  let obj = arg1(arg6[0]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   const client = obj.getClient();
   let integrationByName;
   if (null !== client) {
@@ -59,9 +61,9 @@ arg5.lazyLoadAutoInjectFeedbackButtonIntegration = function lazyLoadAutoInjectFe
     }
   }
   if (!integrationByName) {
-    const client1 = arg1(arg6[0]).getClient();
+    const client1 = require(794) /* registerSpanErrorInstrumentation */.getClient();
     integrationByName = null === client1;
-    const obj4 = arg1(arg6[0]);
+    const obj4 = require(794) /* registerSpanErrorInstrumentation */;
   }
   if (!integrationByName) {
     integrationByName = undefined === obj3;
@@ -73,7 +75,7 @@ arg5.lazyLoadAutoInjectFeedbackButtonIntegration = function lazyLoadAutoInjectFe
 };
 arg5.AUTO_INJECT_SCREENSHOT_BUTTON_INTEGRATION_NAME = "AutoInjectMobileScreenshotButton";
 arg5.lazyLoadAutoInjectScreenshotButtonIntegration = function lazyLoadAutoInjectScreenshotButtonIntegration() {
-  let obj = arg1(arg6[0]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   const client = obj.getClient();
   let integrationByName;
   if (null !== client) {
@@ -82,9 +84,9 @@ arg5.lazyLoadAutoInjectScreenshotButtonIntegration = function lazyLoadAutoInject
     }
   }
   if (!integrationByName) {
-    const client1 = arg1(arg6[0]).getClient();
+    const client1 = require(794) /* registerSpanErrorInstrumentation */.getClient();
     integrationByName = null === client1;
-    const obj4 = arg1(arg6[0]);
+    const obj4 = require(794) /* registerSpanErrorInstrumentation */;
   }
   if (!integrationByName) {
     integrationByName = undefined === obj3;

@@ -1,48 +1,55 @@
-// Module ID: 13253
-// Function ID: 100539
-// Dependencies: []
+// Module ID: 13367
+// Function ID: 102695
+// Dependencies: [5, 27, 4122, 653, 1281, 13368, 686, 675, 13371, 10019, 13369, 3972, 3976, 2]
 
-// Module 13253
-let closure_3 = importDefault(dependencyMap[0]);
-({ AccessibilityInfo: closure_4, Appearance: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const SystemTheme = arg1(dependencyMap[4]).SystemTheme;
-const obj = {
+// Module 13367
+import toggleFeature from "toggleFeature";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { SystemTheme } from "SystemThemeState";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ AccessibilityInfo: closure_4, Appearance: closure_5 } = get_ActivityIndicator);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/a11y/native/AccessibilityManager.tsx");
+
+export default {
   init() {
-    const arg1 = this;
-    importDefault(dependencyMap[5]).init();
+    const self = this;
+    importDefault(13368).init();
     this.updateNativeColors();
     this.updateMotionSettings();
-    closure_6.addChangeListener(this.updateNativeColors);
-    closure_6.addChangeListener(this.updateMotionSettings);
-    const obj = importDefault(dependencyMap[5]);
-    const subscription = importDefault(dependencyMap[6]).subscribe("CONNECTION_OPEN", this.updateMotionSettings);
+    _isNativeReflectConstruct.addChangeListener(this.updateNativeColors);
+    _isNativeReflectConstruct.addChangeListener(this.updateMotionSettings);
+    let obj = importDefault(13368);
+    const subscription = importDefault(686).subscribe("CONNECTION_OPEN", this.updateMotionSettings);
     closure_5.addChangeListener(this.updateSystemAppearance);
     const listener = closure_4.addEventListener("screenReaderChanged", (arg0) => {
       const result = self.updateScreenReaderEnabled(arg0);
     });
-    const obj2 = importDefault(dependencyMap[6]);
-    const subscription1 = importDefault(dependencyMap[6]).subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
-      let obj = callback(closure_2[7]);
-      obj = { colorblind_enabled: colorblindMode.colorblindMode };
-      obj.track(constants.LOCAL_SETTINGS_UPDATED, obj);
+    const obj2 = importDefault(686);
+    const subscription1 = importDefault(686).subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
+      let obj = outer1_1(outer1_2[7]);
+      obj = { colorblind_enabled: outer1_6.colorblindMode };
+      obj.track(outer1_7.LOCAL_SETTINGS_UPDATED, obj);
     });
-    const result = this.startAnnouncementQueue();
+    let result = this.startAnnouncementQueue();
   },
   updateNativeColors() {
-    arg1(dependencyMap[8]).updateSaturation(closure_6.saturation);
+    require(13371) /* updateSaturation */.updateSaturation(_isNativeReflectConstruct.saturation);
   },
   updateMotionSettings() {
-    importDefault(dependencyMap[9])(arg1(dependencyMap[10]).accessibilityPreferencesSharedValue, { reduceMotion: closure_6.useReducedMotion, prefersCrossfades: closure_6.systemPrefersCrossfades });
+    importDefault(10019)(require(13369) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { reduceMotion: _isNativeReflectConstruct.useReducedMotion, prefersCrossfades: _isNativeReflectConstruct.systemPrefersCrossfades });
   },
   checkScreenreaderEnabled() {
-    const arg1 = this;
+    const self = this;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
   updateScreenReaderEnabled(screenReaderEnabled) {
-    importDefault(dependencyMap[9])(arg1(dependencyMap[10]).accessibilityPreferencesSharedValue, { screenReaderEnabled });
+    importDefault(10019)(require(13369) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { screenReaderEnabled });
   },
   updateSystemAppearance(colorScheme) {
     let DARK = SystemTheme.NO_PREFERENCE;
@@ -52,18 +59,18 @@ const obj = {
     } else if ("dark" === colorScheme) {
       DARK = SystemTheme.DARK;
     }
-    arg1(dependencyMap[11]).setSystemTheme(DARK);
+    require(3972) /* setSystemTheme */.setSystemTheme(DARK);
   },
   startAnnouncementQueue() {
-    const arg1 = new Set();
+    const set = new Set();
     const listener = closure_4.addEventListener("announcementFinished", (success) => {
       if (!success.success) {
         if (!set.has(success.announcement)) {
           set.add(success.announcement);
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
-            const AccessibilityAnnouncer = arg0(closure_2[12]).AccessibilityAnnouncer;
-            AccessibilityAnnouncer.announce(arg0.announcement);
+            const AccessibilityAnnouncer = set(outer2_2[12]).AccessibilityAnnouncer;
+            AccessibilityAnnouncer.announce(success.announcement);
           }, 150);
         }
       }
@@ -71,7 +78,3 @@ const obj = {
     });
   }
 };
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/a11y/native/AccessibilityManager.tsx");
-
-export default obj;

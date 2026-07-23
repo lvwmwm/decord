@@ -1,5 +1,5 @@
 // Module ID: 1252
-// Function ID: 14091
+// Function ID: 14092
 // Name: resolveFormatConfigOptions
 // Dependencies: []
 
@@ -18,4 +18,4 @@ arg5.resolveFormatConfigOptions = function resolveFormatConfigOptions(list, form
     return format;
   }
 };
-arg5.DEFAULT_FORMAT_CONFIG = { duration: {}, list: {}, relativeTime: {}, number: { integer: { maximumFractionDigits: 0 }, currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { "Bool(true)": "message", "Bool(true)": "absolute", "Bool(true)": "100%" }, medium: { "Bool(true)": "log", "Bool(true)": "info", "Bool(true)": "warn" }, long: { "Bool(true)": "transparent", "Bool(true)": 1, "Bool(true)": "solid" }, full: {} }, time: { short: { -17117184: "message", 0: "absolute" }, medium: {}, long: {}, full: {} } };
+arg5.DEFAULT_FORMAT_CONFIG = { duration: {}, list: {}, relativeTime: {}, number: { integer: { maximumFractionDigits: 0 }, currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { month: "numeric", day: "numeric", year: "2-digit" }, medium: { month: "short", day: "numeric", year: "numeric" }, long: { month: "long", day: "numeric", year: "numeric" }, full: { weekday: "long", month: "long", day: "numeric", year: "numeric" } }, time: { short: { hour: "numeric", minute: "numeric" }, medium: { hour: "numeric", minute: "numeric", second: "numeric" }, long: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" }, full: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" } } };

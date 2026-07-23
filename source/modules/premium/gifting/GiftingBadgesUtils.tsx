@@ -1,14 +1,14 @@
-// Module ID: 12390
-// Function ID: 94715
+// Module ID: 12504
+// Function ID: 96871
 // Name: getGiftingBadgeProgressPercent
-// Dependencies: []
+// Dependencies: [8268, 1849, 8776, 12505, 566, 3946, 1334, 2]
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
-// Module 12390 (getGiftingBadgeProgressPercent)
-let closure_2 = require(dependencyMap[0]).getSingleRequirementThreshold;
-let closure_3 = importDefault(dependencyMap[1]);
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/premium/gifting/GiftingBadgesUtils.tsx");
+// Module 12504 (getGiftingBadgeProgressPercent)
+import { getSingleRequirementThreshold as closure_2 } from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let result = require("apexExperiment").fileFinishedImporting("modules/premium/gifting/GiftingBadgesUtils.tsx");
 
 export const getGiftingBadgeProgressPercent = function getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier) {
   const tmp = callback(currentTier);
@@ -29,10 +29,10 @@ export const getGiftingBadgeProgressPercent = function getGiftingBadgeProgressPe
   return Math.min(Math.max(num3, 0), 100);
 };
 export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(dependencyMap[2]).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(8776) /* apexExperiment */.GiftingBadgeExperiment;
   let obj = { location };
   const enabled = GiftingBadgeExperiment.useConfig(obj).enabled;
-  const GiftingBadgeDesktopExperiment = require(dependencyMap[3]).GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = require(12505) /* apexExperiment */.GiftingBadgeDesktopExperiment;
   obj = {};
   let str = "-DISABLED";
   if (enabled) {
@@ -42,12 +42,12 @@ export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDeskt
   return GiftingBadgeDesktopExperiment.useConfig(obj).enabled && enabled;
 };
 export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(dependencyMap[2]).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(8776) /* apexExperiment */.GiftingBadgeExperiment;
   let obj = { location };
   const tmp = !GiftingBadgeExperiment.getConfig(obj).enabled;
   let enabled = !tmp;
   if (!tmp) {
-    const GiftingBadgeDesktopExperiment = require(dependencyMap[3]).GiftingBadgeDesktopExperiment;
+    const GiftingBadgeDesktopExperiment = require(12505) /* apexExperiment */.GiftingBadgeDesktopExperiment;
     obj = { location };
     enabled = GiftingBadgeDesktopExperiment.getConfig(obj).enabled;
   }
@@ -55,9 +55,9 @@ export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDeskt
 };
 export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleToShowGiftingBadgeCoachmark(location) {
   const _location = location.location;
-  const GiftingBadgeExperiment = require(dependencyMap[2]).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(8776) /* apexExperiment */.GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: _location }).enabled;
-  const GiftingBadgeDesktopExperiment = require(dependencyMap[3]).GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = require(12505) /* apexExperiment */.GiftingBadgeDesktopExperiment;
   const obj = {};
   let str = "-DISABLED";
   if ("web" === location.platform) {
@@ -72,17 +72,17 @@ export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleTo
     }
     tmp2 = enabled2;
   }
-  const items = [closure_3];
-  const stateFromStores = require(dependencyMap[4]).useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => {
+    const currentUser = outer1_3.getCurrentUser();
     let hasHadPremiumResult;
     if (null != currentUser) {
       hasHadPremiumResult = currentUser.hasHadPremium();
     }
     return null != hasHadPremiumResult && hasHadPremiumResult;
   });
-  const obj2 = require(dependencyMap[4]);
-  const result = require(dependencyMap[5]).useIsDismissibleContentDismissed_UNSAFE(require(dependencyMap[6]).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
+  const obj2 = require(566) /* initialize */;
+  const result = require(3946) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1334) /* DismissibleContent */.DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
   if (tmp2) {
     tmp2 = stateFromStores;
   }

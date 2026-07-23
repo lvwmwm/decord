@@ -1,54 +1,58 @@
-// Module ID: 13559
-// Function ID: 102838
+// Module ID: 13673
+// Function ID: 104994
 // Name: SettingsAgeGroupHeader
-// Dependencies: []
+// Dependencies: [31, 27, 7662, 653, 33, 4130, 689, 7536, 1920, 4126, 1212, 2716, 10095, 13550, 2]
 // Exports: default
 
-// Module 13559 (SettingsAgeGroupHeader)
+// Module 13673 (SettingsAgeGroupHeader)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { MobileSetting } from "MobileSetting";
+import { HelpdeskArticles } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function SettingsAgeGroupHeader() {
-  let obj = { style: callback3().headerContainer };
+  let obj = { style: _createForOfIteratorHelperLoose().headerContainer };
   const callback = React.useCallback(() => {
-    const obj = callback(closure_2[7]);
-    obj.openUrl(callback(closure_2[8]).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+    const obj = outer1_1(outer1_2[7]);
+    obj.openUrl(outer1_1(outer1_2[8]).getArticleURL(outer1_6.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
-  obj = { cachedAt: true, edpbxy: true };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.children = intl.string(importDefault(dependencyMap[11]).PY4MA0);
-  const items = [callback(arg1(dependencyMap[9]).Text, obj), ];
-  obj = {};
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj.children = intl2.format(importDefault(dependencyMap[11]).1DN29p, { handleOnHelpUrlHook: callback });
-  items[1] = callback(arg1(dependencyMap[9]).Text, obj);
+  obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(importDefault(2716).PY4MA0);
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  obj = { variant: "text-sm/normal", color: "text-default" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl2.format(importDefault(2716)["1DN29p"], { handleOnHelpUrlHook: callback });
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const MobileSetting = arg1(dependencyMap[2]).MobileSetting;
-const HelpdeskArticles = arg1(dependencyMap[3]).HelpdeskArticles;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { gap: importDefault(dependencyMap[6]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, paddingTop: importDefault(dependencyMap[6]).space.PX_16 };
-obj.headerContainer = obj;
-let closure_9 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupScreen.tsx");
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { gap: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.headerContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupScreen.tsx");
 
 export default function SettingsAgeGroupScreen() {
   const node = React.useMemo(() => {
-    let obj = callback(closure_2[12]);
+    let obj = outer1_0(outer1_2[12]);
     obj = {};
     obj = {};
-    const intl = callback(closure_2[10]).intl;
-    obj.label = intl.string(callback2(closure_2[11]).5Mi5TE);
+    const intl = outer1_0(outer1_2[10]).intl;
+    obj.label = intl.string(outer1_1(outer1_2[11])["5Mi5TE"]);
     const items = [, ];
-    ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1] } = closure_5);
+    ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1] } = outer1_5);
     obj.settings = items;
     const items1 = [obj];
     obj.sections = items1;
-    obj.ListHeaderComponent = closure_10;
+    obj.ListHeaderComponent = outer1_10;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(dependencyMap[13]), { node });
+  return callback(importDefault(13550), { node });
 };

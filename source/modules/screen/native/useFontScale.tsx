@@ -1,13 +1,15 @@
-// Module ID: 4545
-// Function ID: 39863
+// Module ID: 4549
+// Function ID: 39895
 // Name: getFontScale
-// Dependencies: []
+// Dependencies: [31, 1451, 1453, 2]
 // Exports: getFontScale, useFontScale
 
-// Module 4545 (getFontScale)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/screen/native/useFontScale.tsx");
+// Module 4549 (getFontScale)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("context").fileFinishedImporting("modules/screen/native/useFontScale.tsx");
 
 export const getFontScale = function getFontScale() {
   let str = arg0;
@@ -17,8 +19,7 @@ export const getFontScale = function getFontScale() {
   return state.getState().byAppEntry[str].fontScale;
 };
 export const useFontScale = function useFontScale() {
-  const appEntryKey = arg1(dependencyMap[2]).useAppEntryKey();
-  const arg1 = appEntryKey;
+  appEntryKey = appEntryKey(1453).useAppEntryKey();
   const items = [appEntryKey];
-  return state(React.useCallback((arg0) => arg0.byAppEntry[closure_0].fontScale, items));
+  return state(React.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
 };

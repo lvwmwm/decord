@@ -1,77 +1,84 @@
-// Module ID: 15192
-// Function ID: 114581
+// Module ID: 15308
+// Function ID: 116751
 // Name: ApplicationStatusIcon
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 3950, 4091, 5776, 15309, 4126, 1212, 15305, 3800, 2]
 
-// Module 15192 (ApplicationStatusIcon)
+// Module 15308 (ApplicationStatusIcon)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let require = arg1;
 function ApplicationStatusIcon(status) {
   status = status.status;
-  if (arg1(dependencyMap[5]).GuildJoinRequestApplicationStatuses.APPROVED === status) {
-    let obj = { size: "sm", color: importDefault(dependencyMap[4]).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: importDefault(dependencyMap[4]).colors.STATUS_POSITIVE_TEXT };
-    return callback(arg1(dependencyMap[6]).CircleCheckIcon, obj);
-  } else if (arg1(dependencyMap[5]).GuildJoinRequestApplicationStatuses.REJECTED === status) {
-    obj = { size: "sm", color: importDefault(dependencyMap[4]).colors.ICON_FEEDBACK_CRITICAL, secondaryColor: importDefault(dependencyMap[4]).colors.WHITE };
-    return callback(arg1(dependencyMap[7]).CircleXIcon, obj);
+  if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED === status) {
+    let obj = { size: "sm", color: importDefault(689).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: importDefault(689).colors.STATUS_POSITIVE_TEXT };
+    return callback(require(4091) /* CircleCheckIcon */.CircleCheckIcon, obj);
+  } else if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED === status) {
+    obj = { size: "sm", color: importDefault(689).colors.ICON_FEEDBACK_CRITICAL, secondaryColor: importDefault(689).colors.WHITE };
+    return callback(require(5776) /* CircleXIcon */.CircleXIcon, obj);
   } else {
     return null;
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ Pressable: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[2]));
-let obj1 = arg1(dependencyMap[3]);
-let obj = { label: {} };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.md };
+({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
+let obj = { label: { marginHorizontal: 16, marginBottom: 8 } };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginHorizontal: 16, marginBottom: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
 obj.container = obj;
-obj.row = { "Bool(false)": null, "Bool(false)": "210c1b00e626925954729db07b85fa94", "Bool(false)": "ic_polls", "Bool(false)": "png" };
-obj1 = { "Null": 0, "Null": "#dfdfdf", backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-obj.divider = obj1;
-let closure_9 = obj1.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
+obj.row = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 16 };
+_createForOfIteratorHelperLoose = { width: "100%", height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+obj.divider = _createForOfIteratorHelperLoose;
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
   let guildId;
   let selectedJoinRequestId;
   let userId;
   ({ guildId, userId, selectedJoinRequestId } = arg0);
-  const tmp = callback3();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[8]);
+  let tmp = callback3();
+  const require = tmp;
+  let obj = require(15309) /* useOtherGuildJoinRequestsForUser */;
   const otherGuildJoinRequestsForUser = obj.useOtherGuildJoinRequestsForUser({ guildId, userId, selectedJoinRequestId });
   let tmp2 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {
     obj = {};
-    obj = { cachedAt: true, edpbxy: true, style: tmp.label };
-    const intl = arg1(dependencyMap[10]).intl;
-    obj.children = intl.string(arg1(dependencyMap[10]).t.hxa+G3);
-    const items = [callback(arg1(dependencyMap[9]).Text, obj), ];
-    const obj1 = {
+    obj = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.children = intl.string(require(1212) /* getSystemLocale */.t["hxa+G3"]);
+    let items = [callback(require(4126) /* Text */.Text, obj), ];
+    let obj1 = {
       style: tmp.container,
       children: otherGuildJoinRequestsForUser.map((createdAt) => {
           let tmp = createdAt;
           let obj = {};
           let tmp2 = arg1 > 0;
-          tmp = callback2;
+          tmp = outer1_7;
           if (tmp2) {
             obj = { style: tmp.divider };
-            tmp2 = callback(closure_5, obj);
+            tmp2 = outer1_6(outer1_5, obj);
           }
           const items = [tmp2, ];
           obj = {
             accessibilityRole: "button",
             style: tmp.row,
             onPress() {
-              return callback(closure_2[11])(arg0);
+              return outer2_1(outer2_2[11])(closure_0);
             }
           };
-          const obj1 = {};
-          const obj5 = tmp(closure_2[12]);
+          const obj1 = { variant: "text-sm/normal", color: "text-default" };
+          const obj5 = tmp(outer1_2[12]);
           obj1.children = obj5.dateFormat(new Date(createdAt.createdAt), "LL");
-          const items1 = [callback(tmp(closure_2[9]).Text, obj1), callback(closure_10, { status: createdAt.applicationStatus })];
+          const items1 = [outer1_6(tmp(outer1_2[9]).Text, obj1), outer1_6(outer1_10, { status: createdAt.applicationStatus })];
           obj.children = items1;
-          items[1] = callback2(closure_4, obj);
+          items[1] = outer1_7(outer1_4, obj);
           obj.children = items;
-          return tmp(React.Fragment, obj, createdAt.joinRequestId);
+          return tmp(outer1_3.Fragment, obj, createdAt.joinRequestId);
         })
     };
     items[1] = callback(closure_5, obj1);
@@ -80,6 +87,6 @@ const memoResult = importAllResult.memo((arg0) => {
   }
   return tmp2;
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestOtherApplications.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestOtherApplications.tsx");
 
 export default memoResult;

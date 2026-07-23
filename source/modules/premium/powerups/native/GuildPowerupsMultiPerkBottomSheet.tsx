@@ -1,30 +1,37 @@
-// Module ID: 11570
-// Function ID: 89998
+// Module ID: 11580
+// Function ID: 90047
 // Name: GuildPowerupsMultiPerkCard
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 689, 666, 3840, 4066, 11545, 11531, 11528, 11552, 11581, 11553, 11567, 11568, 11572, 11556, 1273, 1212, 4126, 11557, 4543, 2230, 1557, 11582, 5187, 5189, 11585, 11578, 2]
 // Exports: default
 
-// Module 11570 (GuildPowerupsMultiPerkCard)
+// Module 11580 (GuildPowerupsMultiPerkCard)
+import { View } from "GuildPowerupsSectionHeader";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
 function GuildPowerupsMultiPerkCard(arg0) {
   let forceStaticImage;
   let guildId;
   let isNewPerk;
   let powerup;
   ({ guildId, powerup, isNewPerk, forceStaticImage } = arg0);
-  let obj = require(closure_2[5]);
-  const tmp = callback2(obj.isThemeLight(importDefault(closure_2[6])()));
-  const tmp2 = importDefault(closure_2[7])(guildId);
-  const tmp3 = importDefault(closure_2[8])(guildId, powerup);
-  let obj1 = require(closure_2[10]);
-  const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp3, importDefault(closure_2[9])(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet"));
-  let obj2 = require(closure_2[8]);
+  let obj = require(3840) /* isThemeLight */;
+  const tmp = callback2(obj.isThemeLight(onActivate(4066)()));
+  const tmp2 = onActivate(11545)(guildId);
+  const tmp3 = onActivate(11531)(guildId, powerup);
+  let obj1 = require(11552) /* useCalculatePowerupCardStatus */;
+  const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp3, onActivate(11528)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet"));
+  let obj2 = require(11531) /* usePowerupsActiveStatuses */;
   const result = obj2.isPowerupActiveStatusActive(tmp3);
-  const require = result;
-  const tmp7 = importDefault(closure_2[12])(powerup, true, forceStaticImage);
-  const disabled = importDefault(closure_2[13])(guildId, powerup, result).disabled;
-  const tmp8 = importDefault(closure_2[14])(guildId, powerup);
-  const importDefault = tmp8.onActivate;
-  closure_2 = importDefault(closure_2[15])(guildId, powerup);
+  require = result;
+  const tmp7 = onActivate(11553)(powerup, true, forceStaticImage);
+  const disabled = onActivate(11567)(guildId, powerup, result).disabled;
+  const tmp8 = onActivate(11568)(guildId, powerup);
+  onActivate = tmp8.onActivate;
+  const dependencyMap = onActivate(11572)(guildId, powerup);
   obj = {};
   const items = [tmp.container, ];
   let disabled2 = disabled;
@@ -60,7 +67,7 @@ function GuildPowerupsMultiPerkCard(arg0) {
   const tmp11 = closure_5;
   const tmp12 = View;
   const tmp16 = callback;
-  const tmp4 = importDefault(closure_2[9])(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet");
+  const tmp4 = onActivate(11528)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet");
   const tmp9 = closure_5;
   if (null != tmp7) {
     str = tmp7;
@@ -68,31 +75,31 @@ function GuildPowerupsMultiPerkCard(arg0) {
   obj1.imageUrl = str;
   obj1.isAnimated = !forceStaticImage;
   obj1.style = tmp.image;
-  const items2 = [tmp16(importDefault(closure_2[16]), obj1), ];
+  const items2 = [tmp16(onActivate(11556), obj1), ];
   if (isNewPerk) {
     obj2 = {};
-    const intl = require(closure_2[18]).intl;
-    obj2.text = intl.string(require(closure_2[18]).t.y2b7CA);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj2.text = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
     obj2.style = tmp.badge;
-    isNewPerk = callback(require(closure_2[17]).TextBadge, obj2);
+    isNewPerk = callback(require(1273) /* Button */.TextBadge, obj2);
   }
   items2[1] = isNewPerk;
   obj.children = items2;
   const items3 = [tmp11(tmp12, obj), ];
   const obj3 = { style: tmp.bodyContainer };
   const obj4 = { style: tmp.titleContainer };
-  const tmp17 = importDefault(closure_2[16]);
+  const tmp17 = onActivate(11556);
   const tmp21 = closure_5;
   const tmp22 = View;
   const tmp23 = closure_5;
   const tmp24 = View;
-  const items4 = [callback(require(closure_2[19]).Text, { variant: "heading-md/semibold", color: importDefault(closure_2[11])(result).textColor, children: powerup.title }), ];
+  const items4 = [callback(require(4126) /* Text */.Text, { variant: "heading-md/semibold", color: onActivate(11581)(result).textColor, children: powerup.title }), ];
   if (null != calculatePowerupCardStatus) {
     const obj6 = { status: calculatePowerupCardStatus };
-    let tmp28 = callback(require(closure_2[20]).GuildPowerupCardFooterStatus, obj6);
+    let tmp28 = callback(require(11557) /* GuildPowerupCardFooterActive */.GuildPowerupCardFooterStatus, obj6);
   } else {
     const obj7 = { cost: powerup.cost };
-    tmp28 = callback(require(closure_2[20]).GuildPowerupCardFooterCost, obj7);
+    tmp28 = callback(require(11557) /* GuildPowerupCardFooterActive */.GuildPowerupCardFooterCost, obj7);
   }
   items4[1] = tmp28;
   obj4.children = items4;
@@ -110,104 +117,99 @@ function GuildPowerupsMultiPerkCard(arg0) {
       str2 = "secondary";
     }
     obj8.variant = str2;
-    const intl2 = require(closure_2[18]).intl;
-    const tmp39 = importDefault(closure_2[22]);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    const tmp39 = onActivate(2230);
     obj8.text = intl2.string(result ? tmp39.TZsu1U : tmp39.gSxlHf);
     obj8.onPress = function onPress() {
-      if (result) {
+      if (closure_0) {
         callback();
       } else {
         onActivate();
       }
     };
-    callback(require(closure_2[21]).Button, obj8);
+    callback(require(4543) /* Button */.Button, obj8);
     const tmp32 = callback;
   }
 }
-const View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = _module);
-const _module1 = require(dependencyMap[2]);
-let closure_6 = _module1.createStyles((arg0) => {
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { gap: importDefault(dependencyMap[3]).space.PX_8 };
+  obj = { gap: importDefault(689).space.PX_8 };
   obj.container = obj;
-  obj = { gap: importDefault(dependencyMap[3]).space.PX_24, marginHorizontal: importDefault(dependencyMap[3]).space.PX_16 };
+  obj = { gap: importDefault(689).space.PX_24, marginHorizontal: importDefault(689).space.PX_16 };
   obj.cardsContainer = obj;
-  obj.titleContainer = { 9223372036854775807: 1929380725, 9223372036854775807: 2030044021 };
-  obj.bodyContainer = {};
-  const obj1 = { borderRadius: importDefault(dependencyMap[3]).radii.md, borderWidth: 1, borderColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_MUTED, borderStyle: "solid" };
+  obj.titleContainer = { flexDirection: "column", gap: 4 };
+  obj.bodyContainer = { justifyContent: "space-between", alignItems: "center", flexDirection: "row" };
+  const obj1 = { borderRadius: importDefault(689).radii.md, borderWidth: 1, borderColor: importDefault(689).colors.BACKGROUND_MOD_MUTED, borderStyle: "solid" };
   let str = "#ffffff";
   if (arg0) {
     str = "#000000";
   }
-  const tmp = importDefault(dependencyMap[4]);
-  const tmpResult = importDefault(dependencyMap[4])(str);
-  obj1.backgroundColor = importDefault(dependencyMap[4])(str).alpha(0.04).hex();
+  const tmp = importDefault(666);
+  const tmpResult = importDefault(666)(str);
+  obj1.backgroundColor = importDefault(666)(str).alpha(0.04).hex();
   obj.imageContainer = obj1;
   const obj2 = {};
-  const alphaResult = importDefault(dependencyMap[4])(str).alpha(0.04);
-  const tmp2 = importDefault(dependencyMap[4]);
-  const tmp2Result = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.GREEN_360);
-  obj2.borderColor = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.GREEN_360).alpha(0.35).hex();
+  const alphaResult = importDefault(666)(str).alpha(0.04);
+  const tmp2 = importDefault(666);
+  const tmp2Result = importDefault(666)(importDefault(689).unsafe_rawColors.GREEN_360);
+  obj2.borderColor = importDefault(666)(importDefault(689).unsafe_rawColors.GREEN_360).alpha(0.35).hex();
   obj.imageContainerActive = obj2;
   const obj3 = {};
-  const alphaResult1 = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.GREEN_360).alpha(0.35);
-  const tmp3 = importDefault(dependencyMap[4]);
-  const tmp3Result = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.YELLOW_300);
-  obj3.borderColor = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+  const alphaResult1 = importDefault(666)(importDefault(689).unsafe_rawColors.GREEN_360).alpha(0.35);
+  const tmp3 = importDefault(666);
+  const tmp3Result = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300);
+  obj3.borderColor = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
   obj.imageContainerExpiring = obj3;
   const obj4 = {};
-  const alphaResult2 = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.YELLOW_300).alpha(0.35);
-  const tmp4 = importDefault(dependencyMap[4]);
-  const tmp4Result = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.YELLOW_300);
-  obj4.borderColor = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+  const alphaResult2 = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300).alpha(0.35);
+  const tmp4 = importDefault(666);
+  const tmp4Result = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300);
+  obj4.borderColor = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
   obj.imageContainerRemoving = obj4;
-  obj.image = {};
+  obj.image = { width: "75%", height: 180, resizeMode: "contain" };
   obj.disabled = { opacity: 0.5 };
-  const alphaResult3 = importDefault(dependencyMap[4])(importDefault(dependencyMap[3]).unsafe_rawColors.YELLOW_300).alpha(0.35);
-  obj.badge = { position: "absolute", top: importDefault(dependencyMap[3]).space.PX_8, right: importDefault(dependencyMap[3]).space.PX_8 };
+  const alphaResult3 = importDefault(666)(importDefault(689).unsafe_rawColors.YELLOW_300).alpha(0.35);
+  obj.badge = { position: "absolute", top: importDefault(689).space.PX_8, right: importDefault(689).space.PX_8 };
   return obj;
 });
-const _module2 = require(dependencyMap[2]);
 let obj = {};
-obj = { gap: importDefault(dependencyMap[3]).space.PX_24, marginHorizontal: importDefault(dependencyMap[3]).space.PX_16 };
+obj = { gap: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
 obj.cardsContainer = obj;
-obj.disabledReasonContainer = { marginHorizontal: importDefault(dependencyMap[3]).space.PX_16, marginBottom: importDefault(dependencyMap[3]).space.PX_16 };
-let closure_7 = _module2.createStyles(obj);
-const _module3 = require(dependencyMap[29]);
-const result = _module3.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsMultiPerkBottomSheet.tsx");
+obj.disabledReasonContainer = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj1 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsMultiPerkBottomSheet.tsx");
 
 export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
   guildId = guildId.guildId;
-  const require = guildId;
   const listing = guildId.listing;
   const tmp = callback3();
-  const tmp2 = importDefault(dependencyMap[24])(guildId, listing);
-  const importDefault = tmp2;
+  const tmp2 = importDefault(11582)(guildId, listing);
+  importDefault = tmp2;
   let tmp4Result = null;
   if (null != tmp2) {
-    let obj = { openDisableCommunication: null, freezeEnabled: null, onDismiss: guildId.onDismiss };
+    let obj = { scrollable: true, startExpanded: true, onDismiss: guildId.onDismiss };
     obj = {};
-    obj = { paddingBottom: importDefault(dependencyMap[23])().bottom };
+    obj = { paddingBottom: importDefault(1557)().bottom };
     obj.contentContainerStyle = obj;
     ({ title: obj4.title, description: obj4.description } = tmp2);
-    const items = [callback(importDefault(dependencyMap[27]), {}), , ];
+    const items = [callback(importDefault(11585), {}), , ];
     let tmp10 = null != tmp2.disabledReason;
     if (tmp10) {
       const obj2 = { style: tmp.disabledReasonContainer };
       const obj3 = { text: tmp2.disabledReason };
-      obj2.children = callback(importDefault(dependencyMap[28]), obj3);
+      obj2.children = callback(importDefault(11578), obj3);
       tmp10 = callback(View, obj2);
     }
     items[1] = tmp10;
     const obj4 = { style: tmp.cardsContainer };
     const powerups = listing.powerups;
-    obj4.children = powerups.map((powerup) => callback(closure_8, { guildId, powerup, forceStaticImage: tmp2.forceStaticImages }, powerup.skuId));
+    obj4.children = powerups.map((powerup) => outer1_4(outer1_8, { guildId, powerup, forceStaticImage: tmp2.forceStaticImages }, powerup.skuId));
     items[2] = callback(View, obj4);
     obj.children = items;
-    obj.children = closure_5(require(dependencyMap[26]).BottomSheetScrollView, obj);
-    tmp4Result = callback(require(dependencyMap[25]).BottomSheet, obj);
+    obj.children = closure_5(guildId(5189).BottomSheetScrollView, obj);
+    tmp4Result = callback(guildId(5187).BottomSheet, obj);
     const obj1 = {};
     const tmp4 = callback;
     const tmp7 = closure_5;

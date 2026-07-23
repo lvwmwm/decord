@@ -1,50 +1,51 @@
-// Module ID: 16264
-// Function ID: 125656
+// Module ID: 16381
+// Function ID: 127830
 // Name: EligibilityActionSheet
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 653, 33, 4130, 4098, 8438, 5796, 16382, 5187, 4126, 1212, 16386, 2]
 // Exports: default
 
-// Module 16264 (EligibilityActionSheet)
-import closure_3 from "__exportStarResult1";
-import { UserSettingsSections } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 16381 (EligibilityActionSheet)
+import result from "result";
+import { UserSettingsSections } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
-let closure_7 = __exportStarResult1.createStyles({ container: { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 }, title: {} });
-const result = __exportStarResult1.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/EligibilityActionSheet.tsx");
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, paddingHorizontal: 0 }, title: { marginHorizontal: 24, marginTop: 16 } });
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/EligibilityActionSheet.tsx");
 
 export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   onRequireModeratorMFAClick = onRequireModeratorMFAClick.onRequireModeratorMFAClick;
-  const arg1 = onRequireModeratorMFAClick;
   const tmp = callback3();
   const items = [onRequireModeratorMFAClick];
   const memo = React.useMemo(() => {
     const actions = {
       onEnableMFAClick() {
-        let obj = callback2(closure_2[4]);
+        let obj = outer2_1(outer2_2[4]);
         obj.hideActionSheet("EligibilityActionSheet");
-        callback2(closure_2[5]).close();
-        const obj2 = callback2(closure_2[5]);
-        obj = { screen: constants.ACCOUNT };
-        callback(closure_2[6]).openUserSettings(obj);
+        outer2_1(outer2_2[5]).close();
+        const obj2 = outer2_1(outer2_2[5]);
+        obj = { screen: outer2_4.ACCOUNT };
+        onRequireModeratorMFAClick(outer2_2[6]).openUserSettings(obj);
       },
       onRequireModeratorMFAClick() {
-        callback2(closure_2[4]).hideActionSheet("EligibilityActionSheet");
-        callback();
+        outer2_1(outer2_2[4]).hideActionSheet("EligibilityActionSheet");
+        outer1_0();
       }
     };
     return { actions, sortedByIneligible: true };
   }, items);
   let obj = { startExpanded: true };
-  obj = { "Null": -43.296, "Null": 4, alignItems: "score", style: tmp.title };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.children = intl.string(arg1(dependencyMap[10]).t.3s47iN);
-  const items1 = [callback(arg1(dependencyMap[9]).Heading, obj), ];
-  obj = { style: tmp.container, items: importDefault(dependencyMap[7])(onRequireModeratorMFAClick.eligibility, memo) };
-  items1[1] = callback(importDefault(dependencyMap[11]), obj);
+  obj = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
+  const intl = onRequireModeratorMFAClick(1212).intl;
+  obj.children = intl.string(onRequireModeratorMFAClick(1212).t["3s47iN"]);
+  const items1 = [callback(onRequireModeratorMFAClick(4126).Heading, obj), ];
+  obj = { style: tmp.container, items: importDefault(16382)(onRequireModeratorMFAClick.eligibility, memo) };
+  items1[1] = callback(importDefault(16386), obj);
   obj.children = items1;
-  return callback2(arg1(dependencyMap[8]).BottomSheet, obj);
+  return callback2(onRequireModeratorMFAClick(5187).BottomSheet, obj);
 };
 export const ELIGIBILITY_ACTION_SHEET_KEY = "EligibilityActionSheet";

@@ -1,110 +1,110 @@
-// Module ID: 13604
-// Function ID: 103074
+// Module ID: 13718
+// Function ID: 105230
 // Name: items
-// Dependencies: [0, 0, 4294967295, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 4294967295]
+// Dependencies: [31, 27, 1849, 33, 4130, 689, 6828, 13719, 13720, 3809, 4956, 4347, 13721, 2]
 // Exports: default
 
-// Module 13604 (items)
-import closure_2 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13718 (items)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-let closure_4 = importDefault(dependencyMap[2]);
-__exportStarResult1 = {};
-__exportStarResult1 = { marginHorizontal: require("__exportStarResult1").space.PX_16, marginTop: require("__exportStarResult1").space.PX_16 };
-__exportStarResult1.noticeContainer = __exportStarResult1;
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.noticeContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 const obj1 = {};
-const items = [{ order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") }, , ];
-const obj2 = { order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") };
+let items = [{ order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") }, , ];
+let obj2 = { order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") };
 items[1] = {
   order: 300,
   predicate() {
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
     if (null != currentUser) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
     return false === nsfwAllowed;
   },
-  Component: require("__exportStarResult1").SensitiveContentFiltersTeenNotice
+  Component: require("SensitiveContentFiltersTeenNotice").SensitiveContentFiltersTeenNotice
 };
 const obj3 = {
   order: 300,
   predicate() {
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
     if (null != currentUser) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
     return false === nsfwAllowed;
   },
-  Component: require("__exportStarResult1").SensitiveContentFiltersTeenNotice
+  Component: require("SensitiveContentFiltersTeenNotice").SensitiveContentFiltersTeenNotice
 };
 items[2] = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = arg1(dependencyMap[9]).isFeatureAgeGated(arg1(dependencyMap[10]).AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3809) /* isFeatureAgeGated */.isFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !arg1(dependencyMap[11]).isAgeVerified();
-      const obj2 = arg1(dependencyMap[11]);
+      isFeatureAgeGatedResult = !require(4347) /* isReactiveCheckEnabled */.isAgeVerified();
+      const obj2 = require(4347) /* isReactiveCheckEnabled */;
     }
     return isFeatureAgeGatedResult;
   },
-  Component: require("__exportStarResult1")
+  Component: require("AgeConfirmationNotice")
 };
 obj1.SENSITIVE_CONTENT_FILTERS = items;
 const obj4 = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = arg1(dependencyMap[9]).isFeatureAgeGated(arg1(dependencyMap[10]).AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3809) /* isFeatureAgeGated */.isFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !arg1(dependencyMap[11]).isAgeVerified();
-      const obj2 = arg1(dependencyMap[11]);
+      isFeatureAgeGatedResult = !require(4347) /* isReactiveCheckEnabled */.isAgeVerified();
+      const obj2 = require(4347) /* isReactiveCheckEnabled */;
     }
     return isFeatureAgeGatedResult;
   },
-  Component: require("__exportStarResult1")
+  Component: require("AgeConfirmationNotice")
 };
-const items1 = [{ order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") }, ];
-const obj5 = { order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") };
+const items1 = [{ order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") }, ];
+const obj5 = { order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") };
 items1[1] = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = arg1(dependencyMap[9]).isFeatureAgeGated(arg1(dependencyMap[10]).AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3809) /* isFeatureAgeGated */.isFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !arg1(dependencyMap[11]).isAgeVerified();
-      const obj2 = arg1(dependencyMap[11]);
+      isFeatureAgeGatedResult = !require(4347) /* isReactiveCheckEnabled */.isAgeVerified();
+      const obj2 = require(4347) /* isReactiveCheckEnabled */;
     }
     return isFeatureAgeGatedResult;
   },
-  Component: require("__exportStarResult1")
+  Component: require("AgeConfirmationNotice")
 };
 obj1.CONTENT_AND_SOCIAL = items1;
 const obj6 = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = arg1(dependencyMap[9]).isFeatureAgeGated(arg1(dependencyMap[10]).AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3809) /* isFeatureAgeGated */.isFeatureAgeGated(require(4956) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !arg1(dependencyMap[11]).isAgeVerified();
-      const obj2 = arg1(dependencyMap[11]);
+      isFeatureAgeGatedResult = !require(4347) /* isReactiveCheckEnabled */.isAgeVerified();
+      const obj2 = require(4347) /* isReactiveCheckEnabled */;
     }
     return isFeatureAgeGatedResult;
   },
-  Component: require("__exportStarResult1")
+  Component: require("AgeConfirmationNotice")
 };
-const items2 = [{ order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") }];
+const items2 = [{ order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") }];
 obj1.DATA_AND_PRIVACY = items2;
-const obj7 = { order: 100, predicate: arg1(dependencyMap[6]).isParentallyControlled, Component: require("__exportStarResult1") };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
+const obj7 = { order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
 
 export default function SettingsScreenNotices(screen) {
   screen = screen.screen;
-  const arg1 = screen;
   const items = [screen];
   const memo = React.useMemo(() => {
-    const found = closure_7[closure_0].filter((predicate) => predicate.predicate());
+    const found = outer1_7[screen].filter((predicate) => predicate.predicate());
     const sorted = found.sort((order, order2) => order.order - order2.order);
     const mapped = sorted.map((Component) => Component.Component);
     let first = null;
@@ -116,7 +116,7 @@ export default function SettingsScreenNotices(screen) {
   let tmp3 = null;
   if (null != memo) {
     const obj = { style: tmp.noticeContainer, children: <memo key={screen} /> };
-    tmp3 = <View {...obj} />;
+    tmp3 = <View style={tmp.noticeContainer}><memo key={screen} /></View>;
   }
   return tmp3;
 };

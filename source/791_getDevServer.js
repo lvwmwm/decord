@@ -1,11 +1,13 @@
 // Module ID: 791
-// Function ID: 8937
+// Function ID: 8938
 // Name: getDevServer
-// Dependencies: []
+// Dependencies: [792, 794, 973]
 
 // Module 791 (getDevServer)
+const require = arg1;
+const dependencyMap = arg6;
 function getDevServer() {
-  const Devtools = arg1(arg6[2]).ReactNativeLibraries.Devtools;
+  const Devtools = require(973) /* reactNativeVersion */.ReactNativeLibraries.Devtools;
   let devServer;
   if (null !== Devtools) {
     if (undefined !== obj) {
@@ -21,67 +23,71 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    arg1 = arg0;
-    const arg6 = arg1;
-    const getDevServer = arg3;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;
   };
 }
 arg5.fetchSourceContext = function fetchSourceContext(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return fn(this, undefined, undefined, function*() {
     if (obj) {
       return obj.resume();
     } else {
       const promise = new Promise((arg0) => {
-        let obj = arg0(stealthXhr[0]);
+        const callback = arg0;
+        let obj = callback(outer3_1[0]);
         const stealthXhr = obj.createStealthXhr();
         if (stealthXhr) {
-          const tmp6 = callback();
+          const tmp6 = outer3_3();
           let combined;
           if (tmp6) {
             const _HermesInternal = HermesInternal;
@@ -90,13 +96,13 @@ arg5.fetchSourceContext = function fetchSourceContext(arg0) {
           if (combined) {
             stealthXhr.open("POST", tmp9, true);
             stealthXhr.setRequestHeader("Content-Type", "application/json");
-            const _JSON = JSON;
-            obj = { stack: arg0 };
+            let _JSON = JSON;
+            obj = { stack: outer2_0 };
             stealthXhr.send(JSON.stringify(obj));
             stealthXhr.onreadystatechange = () => {
-              if (stealthXhr.readyState === arg0(stealthXhr[0]).XHR_READYSTATE_DONE) {
+              if (stealthXhr.readyState === callback(outer4_1[0]).XHR_READYSTATE_DONE) {
                 if (200 !== stealthXhr.status) {
-                  arg0(arg0);
+                  callback(outer3_0);
                 }
                 const _JSON = JSON;
                 const parsed = JSON.parse(stealthXhr.responseText);
@@ -104,20 +110,20 @@ arg5.fetchSourceContext = function fetchSourceContext(arg0) {
                 if (Array.isArray(parsed.stack)) {
                   tmp8(parsed.stack);
                 } else {
-                  tmp8(arg0);
+                  tmp8(outer3_0);
                 }
               }
             };
             stealthXhr.onerror = () => {
-              arg0(arg0);
+              callback(outer3_0);
             };
           } else {
-            const debug = arg0(stealthXhr[1]).debug;
+            const debug = callback(outer3_1[1]).debug;
             debug.error("Could not fetch source context. No dev server URL found.");
-            tmp(arg0);
+            tmp(outer2_0);
           }
         } else {
-          tmp(arg0);
+          tmp(outer2_0);
         }
       });
       return promise;
@@ -125,8 +131,8 @@ arg5.fetchSourceContext = function fetchSourceContext(arg0) {
   });
 };
 arg5.parseErrorStack = function parseErrorStack(arg0) {
-  if (arg1(arg6[2]).ReactNativeLibraries.Devtools) {
-    const Devtools = arg1(arg6[2]).ReactNativeLibraries.Devtools;
+  if (require(973) /* reactNativeVersion */.ReactNativeLibraries.Devtools) {
+    const Devtools = require(973) /* reactNativeVersion */.ReactNativeLibraries.Devtools;
     return Devtools.parseErrorStack(arg0);
   } else {
     const _Error = Error;
@@ -135,8 +141,8 @@ arg5.parseErrorStack = function parseErrorStack(arg0) {
   }
 };
 arg5.symbolicateStackTrace = function symbolicateStackTrace(arg0, arg1) {
-  if (arg1(arg6[2]).ReactNativeLibraries.Devtools) {
-    const Devtools = arg1(arg6[2]).ReactNativeLibraries.Devtools;
+  if (require(973) /* reactNativeVersion */.ReactNativeLibraries.Devtools) {
+    const Devtools = require(973) /* reactNativeVersion */.ReactNativeLibraries.Devtools;
     return Devtools.symbolicateStackTrace(arg0, arg1);
   } else {
     const _Error = Error;

@@ -1,22 +1,21 @@
-// Module ID: 5142
-// Function ID: 44839
+// Module ID: 5145
+// Function ID: 44858
 // Name: decideFileExtension
-// Dependencies: []
+// Dependencies: [1443, 2]
 // Exports: decideFileExtension
 
-// Module 5142 (decideFileExtension)
-let closure_2 = {};
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/media/FileExtensionUtils.tsx");
+// Module 5145 (decideFileExtension)
+let closure_2 = { "image/avif": "avif", "image/gif": "gif", "image/heic": "heic", "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "video/mp4": "mp4", "video/quicktime": "mov", "video/webm": "webm" };
+const result = require("set").fileFinishedImporting("modules/media/FileExtensionUtils.tsx");
 
-export const decideFileExtension = function decideFileExtension(closure_0, closure_1, arg2) {
+export const decideFileExtension = function decideFileExtension(outer1_0, outer1_1, arg2) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
   let tmp;
   if (flag) {
-    const toURLSafeResult = importDefault(dependencyMap[0]).toURLSafe(closure_0);
+    const toURLSafeResult = importDefault(1443).toURLSafe(outer1_0);
     let formatted;
     if (null != toURLSafeResult) {
       const searchParams = toURLSafeResult.searchParams;
@@ -36,14 +35,14 @@ export const decideFileExtension = function decideFileExtension(closure_0, closu
       }
     }
     tmp = tmp7;
-    const obj = importDefault(dependencyMap[0]);
+    const obj = importDefault(1443);
   }
   if (null == tmp) {
     let tmp8;
-    if (null != closure_1) {
-      const str6 = closure_1.toLowerCase();
+    if (null != outer1_1) {
+      const str6 = outer1_1.toLowerCase();
       if (obj2.test(str6)) {
-        tmp8 = closure_2[str6];
+        tmp8 = table[str6];
         if (null == tmp8) {
           const tmp10 = str6.split("/")[1];
           let str8 = "jpg";
@@ -57,12 +56,12 @@ export const decideFileExtension = function decideFileExtension(closure_0, closu
           tmp8 = str8;
         }
       }
-      const obj2 = /^(image|video)\//;
+      obj2 = /^(image|video)\//;
     }
     tmp = tmp8;
   }
   if (null == tmp) {
-    const toURLSafeResult1 = importDefault(dependencyMap[0]).toURLSafe(closure_0);
+    const toURLSafeResult1 = importDefault(1443).toURLSafe(outer1_0);
     let tmp14;
     if (null != toURLSafeResult1) {
       let formatted1;
@@ -84,7 +83,7 @@ export const decideFileExtension = function decideFileExtension(closure_0, closu
       tmp14 = tmp13;
     }
     tmp = tmp14;
-    const obj3 = importDefault(dependencyMap[0]);
+    const obj3 = importDefault(1443);
   }
   return tmp;
 };

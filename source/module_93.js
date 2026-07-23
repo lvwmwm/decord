@@ -10,6 +10,6 @@ export default {
     return arr.push(arg0);
   },
   getAssetByID(source) {
-    return closure_0[source - 1];
+    return arr[source - 1];
   }
 };

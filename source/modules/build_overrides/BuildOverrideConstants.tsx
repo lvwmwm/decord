@@ -1,15 +1,14 @@
-// Module ID: 4045
-// Function ID: 33743
+// Module ID: 4047
+// Function ID: 33752
 // Name: BUILD_OVERRIDE_TARGET_NAMES
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4045 (BUILD_OVERRIDE_TARGET_NAMES)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/build_overrides/BuildOverrideConstants.tsx");
-const items = [{ "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000300988666350632, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130375421427825, "Bool(false)": 995167074993651500000000000000000000000000000000000000000000000000000000000000000000000 }, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true }, { "Bool(false)": true, "Bool(false)": "/assets/design/components/Icon/native/redesign/generated/images", "Bool(false)": 24 }, { "Bool(false)": null, "Bool(false)": "4c483b0c9e54993ee793f71f5dfd0dd4", "Bool(false)": "SendMessageIcon" }, {}, {}];
-const items1 = [{}, { "Bool(false)": "GAME_CLAIM_NOTICE_MARGIN_BOTTOM", "Bool(false)": "DownloadIcon", "Bool(false)": "png" }, { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, { "Bool(false)": true, "Bool(false)": true, "Bool(false)": false }, {}];
+// Module 4047 (BUILD_OVERRIDE_TARGET_NAMES)
+const result = require("set").fileFinishedImporting("modules/build_overrides/BuildOverrideConstants.tsx");
+const items = [{ id: "1hr", value: 3600, label: "1 Hour" }, { id: "1day", value: 86400, label: "1 Day" }, { id: "3days", value: 259200, label: "3 Days" }, { id: "1week", value: 604800, label: "1 Week" }, { id: "2weeks", value: 1209600, label: "2 Weeks" }, { id: "3weeks", value: 1814400, label: "3 Weeks" }, { id: "1month", value: 2628000, label: "1 Month" }];
+const items1 = [{ id: "all", value: "all", label: "All" }, { id: "canary", value: "canary", label: "Canary" }, { id: "ptb", value: "ptb", label: "PTB" }, { id: "stable", value: "stable", label: "Stable" }, { id: "staging", value: "staging", label: "Staging" }];
 
-export const BUILD_OVERRIDE_TARGET_NAMES = {};
+export const BUILD_OVERRIDE_TARGET_NAMES = { discord_marketing: "Discord Marketing", discord_web: "Discord Web", discord_ios: "Discord iOS", discord_android: "Discord Android", discord_developers: "Discord Developers" };
 export const BUILD_OVERRIDE_EXPIRATION_OPTIONS = items;
 export const BUILD_OVERRIDE_RELEASE_CHANNEL_OPTIONS = items1;
 export const BUILD_OVERRIDE_COOKIE_NAME = "buildOverride";

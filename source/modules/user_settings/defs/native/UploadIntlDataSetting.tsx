@@ -1,38 +1,41 @@
-// Module ID: 14258
-// Function ID: 107725
+// Module ID: 14372
+// Function ID: 109878
 // Name: _serializeIntlData
-// Dependencies: []
+// Dependencies: [5, 27, 653, 33, 621, 682, 1554, 1215, 1249, 1212, 477, 507, 3831, 4086, 10095, 13544, 13745, 2]
 
-// Module 14258 (_serializeIntlData)
+// Module 14372 (_serializeIntlData)
+import batchUpdates from "batchUpdates";
+import { ActivityIndicator } from "get ActivityIndicator";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import keys from "keys";
+import createToggle from "createToggle";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function _serializeIntlData() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _serializeIntlData = obj;
   return obj(...arguments);
 }
 function _handleUploadIntlDataSettingPress() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleUploadIntlDataSettingPress = obj;
   return obj(...arguments);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
-({ DebugLogCategory: closure_6, Endpoints: closure_7 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-let closure_9 = obj.create(() => ({ "Bool(true)": true, "Bool(true)": true }));
-const tmp2 = arg1(dependencyMap[2]);
-obj = {
+({ DebugLogCategory: closure_6, Endpoints: closure_7 } = ME);
+let closure_9 = keys.create(() => ({ isDisabled: false, isUploading: false }));
+keys = {
   useTitle() {
     return "Upload i18n data";
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[15]).FileUpIcon,
+  IconComponent: require("FileUpIcon").FileUpIcon,
   onPress: function handleUploadIntlDataSettingPress() {
     return _handleUploadIntlDataSettingPress(...arguments);
   },
-  usePredicate: arg1(dependencyMap[16]).useStaffOrDeveloperSettingPredicate,
+  usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
   useTrailing: function useUploadIntlDataTrailing() {
     let tmp = null;
     if (callback2().isUploading) {
@@ -44,8 +47,7 @@ obj = {
     return callback2().isDisabled;
   }
 };
-const pressable = arg1(dependencyMap[14]).createPressable(obj);
-const obj2 = arg1(dependencyMap[14]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_settings/defs/native/UploadIntlDataSetting.tsx");
+keys = createToggle.createPressable(keys);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/UploadIntlDataSetting.tsx");
 
-export default pressable;
+export default keys;

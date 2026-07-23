@@ -1,35 +1,37 @@
-// Module ID: 14713
-// Function ID: 111012
+// Module ID: 14828
+// Function ID: 113176
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4973, 3950, 14829, 14830, 14831, 11388, 5085, 2]
 // Exports: default
 
-// Module 14713 (GuildsBarGuildJoinRequestBadge)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-obj.badgeImageContainer = obj;
-const obj1 = { hideWhenScrolling: null, autoCapitalize: null, opacity: arg1(dependencyMap[5]).DARK_1_LIGHT_08 };
-obj.badgeImage = obj1;
-let closure_5 = obj.createStyles(obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
+// Module 14828 (GuildsBarGuildJoinRequestBadge)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+_createForOfIteratorHelperLoose.badgeImageContainer = _createForOfIteratorHelperLoose;
+const obj1 = { height: 16, width: 16, opacity: require("result").DARK_1_LIGHT_08 };
+_createForOfIteratorHelperLoose.badgeImage = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
 
 export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
   joinRequestState = joinRequestState.joinRequestState;
-  const tmp = callback();
-  if (arg1(dependencyMap[6]).GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp6 = importDefault(dependencyMap[7]);
-  } else if (arg1(dependencyMap[6]).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp6 = importDefault(dependencyMap[8]);
-  } else if (arg1(dependencyMap[6]).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp6 = importDefault(dependencyMap[9]);
+  const tmp = _createForOfIteratorHelperLoose();
+  if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
+    let tmp6 = importDefault(14829);
+  } else if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp6 = importDefault(14830);
+  } else if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp6 = importDefault(14831);
   } else {
     tmp6 = null;
-    if (arg1(dependencyMap[6]).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp6 = importDefault(dependencyMap[10]);
+    if (require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp6 = importDefault(11388);
     }
   }
   let tmp15 = null;
@@ -38,8 +40,8 @@ export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
     const items = [tmp.badgeImageContainer, joinRequestState.style];
     obj.style = items;
     obj = { source: tmp6, style: tmp.badgeImage };
-    obj.children = jsx(importDefault(dependencyMap[11]), obj);
-    tmp15 = <View {...obj} />;
+    obj.children = jsx(importDefault(5085), { source: tmp6, style: tmp.badgeImage });
+    tmp15 = <View source={tmp6} style={tmp.badgeImage} />;
   }
   return tmp15;
 };

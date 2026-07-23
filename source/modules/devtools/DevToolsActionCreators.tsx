@@ -1,17 +1,18 @@
-// Module ID: 13394
-// Function ID: 101837
+// Module ID: 13508
+// Function ID: 103993
 // Name: updateDevToolsSettings
-// Dependencies: [989855765, 469762074, 33554448]
+// Dependencies: [6960, 686, 2]
 // Exports: clearAnalyticsLog, openDevTools, toggleDisplayDevTools
 
-// Module 13394 (updateDevToolsSettings)
+// Module 13508 (updateDevToolsSettings)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function updateDevToolsSettings(settings) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(686);
   obj = { type: "DEV_TOOLS_SETTINGS_UPDATE", settings };
   obj.dispatch(obj);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/devtools/DevToolsActionCreators.tsx");
+const result = require("set").fileFinishedImporting("modules/devtools/DevToolsActionCreators.tsx");
 
 export { updateDevToolsSettings };
 export const toggleDisplayDevTools = function toggleDisplayDevTools() {
@@ -21,5 +22,5 @@ export const openDevTools = function openDevTools(lastOpenTabId, lastOpenSubTabI
   updateDevToolsSettings({ displayTools: true, lastOpenTabId, lastOpenSubTabId });
 };
 export const clearAnalyticsLog = function clearAnalyticsLog() {
-  importDefault(dependencyMap[1]).dispatch({ type: "ANALYTICS_LOG_CLEAR" });
+  importDefault(686).dispatch({ type: "ANALYTICS_LOG_CLEAR" });
 };

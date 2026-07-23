@@ -1,30 +1,38 @@
-// Module ID: 13301
-// Function ID: 101005
+// Module ID: 13415
+// Function ID: 103161
 // Name: AM_HARMONY_PRD_APPLICATION_ID
-// Dependencies: []
+// Dependencies: [5, 4812, 4033, 653, 4155, 482, 10499, 10501, 4814, 10496, 686, 1207, 8970, 4938, 2]
 
-// Module 13301 (AM_HARMONY_PRD_APPLICATION_ID)
+// Module 13415 (AM_HARMONY_PRD_APPLICATION_ID)
+import importDefaultResult from "sum";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
+import ME from "ME";
+import items3 from "items3";
+import sum from "sum";
+import set from "RPC_SCOPE_CONFIG";
+
 let AM_HARMONY_PRD_APPLICATION_ID;
 let AM_HARMONY_STG_APPLICATION_ID;
 let RPCCommands;
 let RPC_AUTHENTICATED_SCOPE;
 let RPC_SCOPE_CONFIG;
-const importDefaultResult = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-({ RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-({ AnalyticsLocations: closure_6, ComponentActions: closure_7, PlatformTypes: closure_8 } = arg1(dependencyMap[3]));
-const tmp4 = arg1(dependencyMap[3]);
-({ AM_HARMONY_PRD_APPLICATION_ID, AM_HARMONY_STG_APPLICATION_ID } = arg1(dependencyMap[4]));
-const tmp5 = arg1(dependencyMap[4]);
-({ RPCCommands, RPCErrors: closure_9 } = arg1(dependencyMap[5]));
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
+({ AnalyticsLocations: closure_6, ComponentActions: closure_7, PlatformTypes: closure_8 } = ME);
+({ AM_HARMONY_PRD_APPLICATION_ID, AM_HARMONY_STG_APPLICATION_ID } = items3);
+({ RPCCommands, RPCErrors: closure_9 } = sum);
 const items = [AM_HARMONY_PRD_APPLICATION_ID, AM_HARMONY_STG_APPLICATION_ID];
-const set = new Set(items);
-let obj = { [RPCCommands.GET_PROVIDER_ACCESS_TOKEN]: obj };
+let set = new Set(items);
+obj = { [RPCCommands.GET_PROVIDER_ACCESS_TOKEN]: obj };
 obj = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items1 },
   validation(string) {
-    let obj = importDefault(dependencyMap[6])(string);
+    let obj = importDefault(10499)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.provider = string.string().required();
@@ -36,63 +44,61 @@ obj = {
     let socket;
     ({ socket, args } = arg0);
     const provider = args.provider;
-    const arg1 = provider;
-    const importDefault = args.connection_redirect;
-    let obj = arg1(dependencyMap[7]);
+    const connection_redirect = args.connection_redirect;
+    let obj = provider(10501);
     const result = obj.validatePostMessageTransport(socket.transport);
-    let obj1 = arg1(dependencyMap[7]);
+    let obj1 = provider(10501);
     const validateApplicationResult = obj1.validateApplication(socket.application);
-    const value = importDefault(dependencyMap[8]).get(provider);
+    const value = connection_redirect(4814).get(provider);
     const dependencyMap = value;
     if (null == value) {
-      let tmp29 = importDefault(dependencyMap[9]);
+      let tmp29 = connection_redirect(10496);
       obj = { errorCode: constants2.INVALID_PROVIDER };
       const _HermesInternal = HermesInternal;
       const prototype4 = tmp29.prototype;
       tmp29 = new tmp29(obj, "Platform not found for provider \"" + provider + "\"");
       throw tmp29;
     } else if (provider !== constants.AMAZON_MUSIC) {
-      let tmp20 = importDefault(dependencyMap[9]);
+      let tmp20 = connection_redirect(10496);
       obj = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
       const prototype3 = tmp20.prototype;
       tmp20 = new tmp20(obj, "Command not available for this application");
       throw tmp20;
     } else if (set.has(validateApplicationResult)) {
-      const promise = new Promise(() => {
+      const promise = new Promise((() => {
         // CreateGeneratorClosureLongIndex (0x67)
-        let closure_0 = callback(tmp);
+        let closure_0 = outer1_4(tmp);
         return function() {
           return callback(...arguments);
         };
-      }());
+      })());
       return promise;
     } else {
-      let tmp6 = importDefault(dependencyMap[9]);
+      let tmp6 = connection_redirect(10496);
       obj1 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
       const prototype = tmp6.prototype;
       tmp6 = new tmp6(obj1, "Command not available for this application");
       throw tmp6;
     }
-    const obj3 = importDefault(dependencyMap[8]);
+    const obj3 = connection_redirect(4814);
   }
 };
-const items1 = [RPC_AUTHENTICATED_SCOPE];
+items1 = [RPC_AUTHENTICATED_SCOPE];
 obj = { scope: { [RPC_SCOPE_CONFIG.ANY]: items2 }, validation };
-const items2 = [RPC_AUTHENTICATED_SCOPE];
-function validation(string) {
-  let obj = importDefault(dependencyMap[6])(string);
+items2 = [RPC_AUTHENTICATED_SCOPE];
+validation = function validation(string) {
+  let obj = importDefault(10499)(string);
   obj = {};
   const requiredResult = obj.required();
   obj.provider = string.string().required();
   return requiredResult.keys(obj);
-}
+};
 // CreateGeneratorClosureLongIndex (0x67)
 let closure_3 = importDefaultResult(validation);
 obj.handler = function() {
   return callback(...arguments);
 };
 obj[RPCCommands.MAYBE_GET_PROVIDER_ACCESS_TOKEN] = obj;
-const tmp6 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/rpc/server/commands/providers.tsx");
+let result = set.fileFinishedImporting("modules/rpc/server/commands/providers.tsx");
 
 export default obj;

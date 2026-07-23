@@ -1,13 +1,13 @@
-// Module ID: 6511
-// Function ID: 50699
+// Module ID: 6516
+// Function ID: 50728
 // Name: SmokeIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6517, 2]
 // Exports: SmokeIllocon
 
-// Module 6511 (SmokeIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SmokeIllocon.native.tsx");
+// Module 6516 (SmokeIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SmokeIllocon.native.tsx");
 
 export const SmokeIllocon = function SmokeIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const SmokeIllocon = function SmokeIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6517) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const SmokeIllocon = function SmokeIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

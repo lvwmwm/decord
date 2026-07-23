@@ -1,21 +1,23 @@
-// Module ID: 11756
-// Function ID: 91287
-// Dependencies: []
+// Module ID: 11766
+// Function ID: 91336
+// Dependencies: [5, 653, 4942, 480, 1361, 507, 686, 2]
 
-// Module 11756
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("actions/HubActionCreators.tsx");
+// Module 11766
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
+const result = require("makeRequest").fileFinishedImporting("actions/HubActionCreators.tsx");
 
 export default {
   signup(email, school) {
-    let obj = importDefault(dependencyMap[2]);
+    let obj = importDefault(4942);
     obj = { url: Endpoints.HUB_WAITLIST_SIGNUP, body: obj };
     obj = {
       email,
       school,
       trackedActionData: {
-        event: school(dependencyMap[3]).NetworkActionNames.HUB_WAITLIST_SIGNUP,
+        event: require(480) /* isThrottled */.NetworkActionNames.HUB_WAITLIST_SIGNUP,
         properties(body) {
           let email_domain;
           if (null != body) {
@@ -29,14 +31,14 @@ export default {
             const parts = email_domain.split(".");
             flag = -1 !== parts.indexOf("edu");
           }
-          let obj = callback(closure_2[4]);
+          let obj = outer1_0(outer1_2[4]);
           obj = { is_edu_email: flag };
           return obj.exact(obj);
         }
       }
     };
     const obj1 = {
-      event: school(dependencyMap[3]).NetworkActionNames.HUB_WAITLIST_SIGNUP,
+      event: require(480) /* isThrottled */.NetworkActionNames.HUB_WAITLIST_SIGNUP,
       properties(body) {
         let email_domain;
         if (null != body) {
@@ -50,30 +52,30 @@ export default {
           const parts = email_domain.split(".");
           flag = -1 !== parts.indexOf("edu");
         }
-        let obj = callback(closure_2[4]);
+        let obj = outer1_0(outer1_2[4]);
         obj = { is_edu_email: flag };
         return obj.exact(obj);
       }
     };
-    obj.rejectWithError = school(dependencyMap[5]).rejectWithMigratedError();
+    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return obj.post(obj);
   },
   sendVerificationEmail(arg0, arg1, id) {
-    arg1 = arg0;
-    const importDefault = arg1;
-    const dependencyMap = id;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = id;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
   verify(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
   verifyCode(arg0, arg1, arg2) {
-    arg1 = arg0;
-    const importDefault = arg1;
-    const dependencyMap = arg2;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   }

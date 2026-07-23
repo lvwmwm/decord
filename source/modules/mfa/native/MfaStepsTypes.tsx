@@ -1,10 +1,9 @@
-// Module ID: 14525
-// Function ID: 109387
+// Module ID: 14639
+// Function ID: 111547
 // Name: MfaScreens
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 14525 (MfaScreens)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/mfa/native/MfaStepsTypes.tsx");
+// Module 14639 (MfaScreens)
+const result = require("set").fileFinishedImporting("modules/mfa/native/MfaStepsTypes.tsx");
 
 export const MfaScreens = { BACKUP: "backup", PASSWORD: "password", SELECT: "select", SMS: "sms", TOTP: "totp", WEBAUTHN: "webauthn" };

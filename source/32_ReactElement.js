@@ -83,10 +83,10 @@ function getElementKey(value, arg1) {
   if ("object" === typeof value) {
     if (null !== value) {
       if (null != value.key) {
-        let str = function escape(str) {
-          let closure_0 = {};
-          return "$" + str.replace(/[=:]/g, (arg0) => closure_0[arg0]);
-        }("" + value.key);
+        let str = (function escape(str) {
+          let closure_0 = { "=": "=0", ":": "=2" };
+          return "$" + str.replace(/[=:]/g, (arg0) => table[arg0]);
+        })("" + value.key);
       }
       return str;
     }
@@ -134,7 +134,7 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
     element = arg4(tmp);
     let str17 = arg3;
     if ("" === arg3) {
-      str17 = `.${closure_18(tmp, 0)}`;
+      str17 = `.${getElementKey(tmp, 0)}`;
     }
     if (isArray(element)) {
       let str22 = "";
@@ -170,14 +170,14 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
       let num3 = 0;
       if (0 < tmp.length) {
         do {
-          let tmp31 = closure_20;
+          let tmp31 = mapIntoArray;
           let tmp32 = tmp[num6];
-          let tmp33 = closure_18;
+          let tmp33 = getElementKey;
           let tmp34 = tmp32;
           let tmp35 = items;
           let tmp36 = arg2;
           let tmp37 = arg4;
-          num5 = num5 + closure_20(tmp32, items, arg2, str6 + closure_18(tmp32, num6), arg4);
+          num5 = num5 + mapIntoArray(tmp32, items, arg2, str6 + getElementKey(tmp32, num6), arg4);
           num6 = num6 + 1;
           num3 = num5;
           length = tmp.length;
@@ -188,16 +188,16 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
       if (!tmp4) {
         tmp14 = null;
         if ("object" === typeof tmp) {
-          @@iterator = iterator;
+          iterable = iterator;
           if (iterator) {
-            @@iterator = tmp[closure_7];
+            iterable = tmp[iterator];
           }
-          if (!Symbol_iterator) {
-            @@iterator = tmp[Symbol.iterator];
+          if (!iterable) {
+            iterable = tmp[Symbol.iterator];
           }
           let tmp16 = null;
-          if ("function" === typeof Symbol_iterator) {
-            tmp16 = Symbol_iterator;
+          if ("function" === typeof iterable) {
+            tmp16 = iterable;
           }
           tmp14 = tmp16;
         }
@@ -221,7 +221,8 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
         num3 = 0;
         if ("object" === tmp2) {
           if ("function" === typeof tmp.then) {
-            return mapIntoArray(function resolveThenable(status) {
+            return mapIntoArray((function resolveThenable(status) {
+              let closure_0 = status;
               status = status.status;
               if ("fulfilled" === status) {
                 return status.value;
@@ -229,18 +230,18 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
                 throw status.reason;
               } else {
                 if ("string" === typeof status.status) {
-                  status.then(closure_19, closure_19);
+                  status.then(outer1_19, outer1_19);
                 } else {
                   status.status = "pending";
                   status.then((value) => {
-                    if ("pending" === value.status) {
-                      value.status = "fulfilled";
-                      value.value = value;
+                    if ("pending" === status.status) {
+                      status.status = "fulfilled";
+                      status.value = value;
                     }
                   }, (reason) => {
-                    if ("pending" === reason.status) {
-                      reason.status = "rejected";
-                      reason.reason = reason;
+                    if ("pending" === status.status) {
+                      status.status = "rejected";
+                      status.reason = reason;
                     }
                   });
                 }
@@ -253,7 +254,7 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
                   throw status;
                 }
               }
-            }(tmp), items, arg2, arg3, arg4);
+            })(tmp), items, arg2, arg3, arg4);
           } else {
             const _String = String;
             let StringResult = String(tmp);
@@ -277,10 +278,10 @@ function mapChildren(element, arg1, arg2) {
     return element;
   } else {
     const items = [];
-    let closure_2 = 0;
+    let c2 = 0;
     mapIntoArray(element, items, "", "", (arg0) => {
       let closure_2 = tmp + 1;
-      return arg1.call(arg2, arg0, +closure_2);
+      return callback.call(closure_1, arg0, +closure_2);
     });
     return items;
   }
@@ -290,22 +291,22 @@ function lazyInitializer(_status) {
   if (-1 === _status._status) {
     const _resultResult = _status._result();
     _resultResult.then((_result) => {
-      let tmp = 0 !== _result._status;
+      let tmp = 0 !== _status._status;
       if (tmp) {
-        tmp = -1 !== _result._status;
+        tmp = -1 !== _status._status;
       }
       if (!tmp) {
-        _result._status = 1;
-        _result._result = _result;
+        _status._status = 1;
+        _status._result = _result;
       }
     }, (_result) => {
-      let tmp = 0 !== _result._status;
+      let tmp = 0 !== _status._status;
       if (tmp) {
-        tmp = -1 !== _result._status;
+        tmp = -1 !== _status._status;
       }
       if (!tmp) {
-        _result._status = 2;
-        _result._result = _result;
+        _status._status = 2;
+        _status._result = _result;
       }
     });
     if (-1 === _status._status) {
@@ -354,14 +355,14 @@ PureComponent.prototype = componentDummy;
 componentDummy.constructor = PureComponent;
 let obj = assign(componentDummy, Component.prototype);
 componentDummy.isPureReactComponent = true;
-obj = { "Null": 1, "Null": "100%", "Null": "absolute", "Null": 0, "Null": 0 };
-let closure_14 = /\/+/g;
-let closure_15 = "function" === typeof reportError ? reportError : (message) => {
+obj = { H: null, A: null, T: null, S: null, V: null };
+const re14 = /\/+/g;
+let closure_15 = "function" === typeof reportError ? reportError : ((message) => {
   if ("object" === typeof window) {
     const _window = window;
     if ("function" === typeof window.ErrorEvent) {
       const _window2 = window;
-      const obj = {};
+      const obj = { bubbles: true, cancelable: true };
       if ("object" === typeof message) {
         if (null !== message) {
           if ("string" === typeof message.message) {
@@ -388,21 +389,21 @@ let closure_15 = "function" === typeof reportError ? reportError : (message) => 
       process.emit("uncaughtException", message);
     }
   }
-};
+});
 arg5.Children = {
   map: mapChildren,
   forEach(element) {
     let closure_0 = arg1;
     mapChildren(element, function() {
-      arg1(...arguments);
+      callback(...arguments);
     }, arg2);
   },
   count(element) {
-    let closure_0 = 0;
+    let c0 = 0;
     mapChildren(element, () => {
       closure_0 = closure_0 + 1;
     });
-    return closure_0;
+    return c0;
   },
   toArray(element) {
     return mapChildren(element, (arg0) => arg0) || [];
@@ -431,7 +432,7 @@ obj.c = function c(arg0) {
 arg5.__COMPILER_RUNTIME = obj;
 arg5.cache = (arg0) => {
   let closure_0 = arg0;
-  return () => arg0(...arguments);
+  return () => callback(...arguments);
 };
 arg5.cloneElement = (props, ref, children) => {
   if (null == props) {
@@ -461,7 +462,7 @@ arg5.cloneElement = (props, ref, children) => {
             continue;
           } else {
             tmp17[tmp5] = ref[tmp5];
-            // continue
+            continue;
           }
           continue;
         }
@@ -486,7 +487,7 @@ arg5.cloneElement = (props, ref, children) => {
   }
 };
 arg5.createContext = (_currentValue) => {
-  let obj = { KIDS: 30, textInputRef: 300, _monthsRegex: 68, standardDeviation: 68, MAX_GROUP_DM_STAFF_PARTICIPANTS: "absolute", č: "50%", $$typeof: closure_3, _currentValue, _currentValue2: _currentValue };
+  let obj = { $$typeof: closure_3, _currentValue, _currentValue2: _currentValue, _threadCount: 0, Provider: null, Consumer: null };
   obj.Provider = obj;
   obj = { $$typeof: closure_2, _context: obj };
   obj.Consumer = obj;
@@ -512,7 +513,7 @@ arg5.createElement = (defaultProps, key, children) => {
           continue;
         } else {
           obj[tmp6] = key[tmp6];
-          // continue
+          continue;
         }
         continue;
       }
@@ -544,7 +545,7 @@ arg5.createElement = (defaultProps, key, children) => {
             continue;
           } else {
             obj[tmp14] = defaultProps[tmp14];
-            // continue
+            continue;
           }
           continue;
         }
@@ -557,7 +558,7 @@ arg5.createRef = () => ({ current: null });
 arg5.forwardRef = (render) => ({ $$typeof: closure_4, render });
 arg5.isValidElement = isValidElement;
 arg5.lazy = (_result) => {
-  let obj = { $$typeof: closure_6, _payload: obj, _init: lazyInitializer };
+  obj = { $$typeof: closure_6, _payload: obj, _init: lazyInitializer };
   obj = { _status: -1, _result };
   return obj;
 };

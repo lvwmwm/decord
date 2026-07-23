@@ -1,20 +1,20 @@
 // Module ID: 2298
-// Function ID: 23002
+// Function ID: 23003
 // Name: messagesProxy
-// Dependencies: []
+// Dependencies: [1215, 2299, 1250, 2]
 
 // Module 2298 (messagesProxy)
-const _module = require(dependencyMap[2]);
-const loader = _module.createLoader({
+import module_1250 from "module_1250";
+import module_1250 from "module_1250";
+
+const loader = module_1250.createLoader({
   () => {
-    const jsonAsset = require(dependencyMap[0]).loadJsonAsset(require(dependencyMap[1]));
+    const jsonAsset = require(1215) /* loadJsonAsset */.loadJsonAsset(require(2299) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
-const _module1 = require(dependencyMap[2]);
-const messagesProxy = _module1.makeMessagesProxy(loader);
-const _module2 = require(dependencyMap[3]);
-const result = _module2.fileFinishedImporting("modules/report_to_mod/ReportToMod.messages.js");
+const messagesProxy = module_1250.makeMessagesProxy(loader);
+const result = require("module_1250").fileFinishedImporting("modules/report_to_mod/ReportToMod.messages.js");
 
 export default messagesProxy;
 export const messagesLoader = loader;

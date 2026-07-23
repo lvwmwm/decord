@@ -1,14 +1,14 @@
-// Module ID: 11682
-// Function ID: 90650
+// Module ID: 11692
+// Function ID: 90699
 // Name: getClass
-// Dependencies: []
+// Dependencies: [1832, 2]
 // Exports: getClass
 
-// Module 11682 (getClass)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/StylesheetUtils.tsx");
+// Module 11692 (getClass)
+const result = require("set").fileFinishedImporting("utils/StylesheetUtils.tsx");
 
 export const getClass = function getClass(button, button, size, arg3) {
   const substr = [...arguments].slice();
-  return null != button["" + button + substr.reduce(substr, (arg0, arg1) => arg0 + callback(closure_1[0]).upperCaseFirstChar(arg1), "")] ? button["" + button + substr.reduce(substr, (arg0, arg1) => arg0 + callback(closure_1[0]).upperCaseFirstChar(arg1), "")] : undefined;
+  const tmp = button["" + button + substr.reduce(substr, (arg0, arg1) => arg0 + outer1_0(outer1_1[0]).upperCaseFirstChar(arg1), "")];
+  return null != tmp ? tmp : undefined;
 };

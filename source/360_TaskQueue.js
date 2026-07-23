@@ -1,16 +1,18 @@
 // Module ID: 360
 // Function ID: 5337
 // Name: TaskQueue
-// Dependencies: []
+// Dependencies: [6, 7, 44]
 
 // Module 360 (TaskQueue)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export default () => {
+const require = arg1;
+
+export default (() => {
   class TaskQueue {
     constructor(arg0) {
-      tmp = closure_2(this, TaskQueue);
+      tmp = outer1_2(this, TaskQueue);
       this._onMoreTasks = arg0.onMoreTasks;
       items = [];
       items[0] = { tasks: [], popable: false };
@@ -18,18 +20,17 @@ export default () => {
       return;
     }
   }
-  const arg1 = TaskQueue;
   let obj = {
     key: "enqueue",
     value: function enqueue(arg0) {
       this._getCurrentQueue().push(arg0);
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "enqueueTasks",
     value: function enqueueTasks(closure_1) {
-      const TaskQueue = this;
+      const self = this;
       const item = closure_1.forEach((arg0) => self.enqueue(arg0));
     }
   };
@@ -37,11 +38,11 @@ export default () => {
   obj = {
     key: "cancelTasks",
     value: function cancelTasks(closure_1) {
-      const TaskQueue = closure_1;
+      let closure_0 = closure_1;
       const _queueStack = this._queueStack;
       const mapped = _queueStack.map((tasks) => {
         tasks = tasks.tasks;
-        return Object.assign({}, tasks, { tasks: tasks.filter((arg0) => -1 === closure_0.indexOf(arg0)) });
+        return Object.assign({}, tasks, { tasks: tasks.filter((arg0) => -1 === outer1_0.indexOf(arg0)) });
       });
       this._queueStack = mapped.filter((tasks) => {
         let tmp = tasks.tasks.length > 0;
@@ -77,10 +78,10 @@ export default () => {
           }
         }
         const _JSON = JSON;
-        TaskQueue(closure_1[2])("function" === typeof arr, `Expected Function, SimpleTask, or PromiseTask, but got:
+        TaskQueue(outer1_1[2])("function" === typeof arr, `Expected Function, SimpleTask, or PromiseTask, but got:
       ${JSON.stringify(obj, null, 2)}`);
         arr();
-        const tmp8 = TaskQueue(closure_1[2]);
+        const tmp8 = TaskQueue(outer1_1[2]);
       }
     }
   };
@@ -88,8 +89,7 @@ export default () => {
     key: "_getCurrentQueue",
     value: function _getCurrentQueue() {
       const self = this;
-      const tmp = this._queueStack[this._queueStack.length - 1];
-      if (tmp.popable) {
+      if (this._queueStack[this._queueStack.length - 1].popable) {
         if (0 === tmp.tasks.length) {
           if (self._queueStack.length > 1) {
             const _queueStack = self._queueStack;
@@ -105,24 +105,25 @@ export default () => {
   items[6] = {
     key: "_genPromise",
     value: function _genPromise(arr) {
-      const TaskQueue = arr;
+      let closure_0 = arr;
       const self = this;
       const _queueStack = this._queueStack;
       _queueStack.push({ tasks: [], popable: false });
-      let closure_2 = this._queueStack[this._queueStack.length - 1];
+      let _classCallCheck = this._queueStack[this._queueStack.length - 1];
       const genResult = arr.gen();
       arr.gen().then(() => {
-        closure_2.popable = true;
+        _classCallCheck.popable = true;
         if (self.hasTasksToProcess()) {
           self._onMoreTasks();
         }
       }).catch((arg0) => {
-        const timerId = setTimeout((self) => {
-          self.message = "TaskQueue: Error resolving Promise in task " + self.name + ": " + self.message;
-          throw self;
+        let closure_0 = arg0;
+        const timerId = setTimeout(() => {
+          closure_0.message = "TaskQueue: Error resolving Promise in task " + closure_0.name + ": " + closure_0.message;
+          throw closure_0;
         }, 0);
       });
     }
   };
   return callback(TaskQueue, items);
-}();
+})();

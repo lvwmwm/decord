@@ -1,28 +1,34 @@
-// Module ID: 8191
-// Function ID: 64771
+// Module ID: 8197
+// Function ID: 64808
 // Name: redeemGiftCode
-// Dependencies: []
+// Dependencies: [5, 653, 6656, 7227, 686, 507, 675, 4029, 4337, 8198, 1934, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 8191 (redeemGiftCode)
+// Module 8197 (redeemGiftCode)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function redeemGiftCode(arg0) {
   return _redeemGiftCode(...arguments);
 }
 async function _redeemGiftCode(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let code;
     let onError;
     let onRedeemed;
     let options;
     ({ code, options } = arg0);
     if (options === undefined) {
-      options = closure_6;
+      options = outer2_6;
     }
     ({ onRedeemed, onError } = arg0);
     yield undefined;
-    let obj = callback(closure_2[2]);
+    let obj = outer2_0(outer2_2[2]);
     if (obj.getIsPaymentsBlocked()) {
-      callback2(closure_2[3])();
+      outer2_1(outer2_2[3])();
     } else {
       const channelId = options.channelId;
       let tmp3 = null;
@@ -34,11 +40,11 @@ async function _redeemGiftCode(arg0, arg1) {
       if (undefined !== paymentSource) {
         tmp5 = paymentSource;
       }
-      let obj1 = callback2(closure_2[4]);
+      let obj1 = outer2_1(outer2_2[4]);
       obj = { type: "GIFT_CODE_REDEEM", code };
       obj1.dispatch(obj);
-      const HTTP = callback(closure_2[5]).HTTP;
-      obj = { url: closure_4.GIFT_CODE_REDEEM(code) };
+      const HTTP = outer2_0(outer2_2[5]).HTTP;
+      obj = { url: outer2_4.GIFT_CODE_REDEEM(code) };
       obj1 = { channel_id: tmp3 };
       let id;
       if (null != tmp5) {
@@ -50,30 +56,28 @@ async function _redeemGiftCode(arg0, arg1) {
       obj.rejectWithError = false;
       const tmp17 = yield HTTP.post(obj);
       const obj2 = { type: "GIFT_CODE_REDEEM_SUCCESS", code };
-      callback2(closure_2[4]).dispatch(obj2);
-      const obj6 = callback2(closure_2[4]);
+      outer2_1(outer2_2[4]).dispatch(obj2);
+      const obj6 = outer2_1(outer2_2[4]);
       const obj3 = { type: "gift_accept" };
-      callback2(closure_2[6]).track(constants.OPEN_MODAL, obj3);
+      outer2_1(outer2_2[6]).track(outer2_5.OPEN_MODAL, obj3);
       if (null != onRedeemed) {
         onRedeemed();
       }
       const obj4 = { code, entitlement: tmp17 };
       return obj4;
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 function openGiftCodeRedeemModal(code) {
-  let obj = importDefault(dependencyMap[8]);
+  let obj = importDefault(4337);
   obj = { code };
-  obj.pushLazy(arg1(dependencyMap[10])(dependencyMap[9], dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(8198, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ Endpoints: closure_4, AnalyticEvents: closure_5 } = arg1(dependencyMap[1]));
+({ Endpoints: closure_4, AnalyticEvents: closure_5 } = ME);
 let closure_6 = Object.freeze({});
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("actions/native/GiftCodeActionCreators.tsx");
+const result = require("items").fileFinishedImporting("actions/native/GiftCodeActionCreators.tsx");
 
 export default { redeemGiftCode, openGiftCodeRedeemModal };
 export { redeemGiftCode };

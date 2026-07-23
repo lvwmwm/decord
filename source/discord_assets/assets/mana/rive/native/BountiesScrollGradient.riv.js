@@ -1,11 +1,10 @@
-// Module ID: 3910
-// Function ID: 32338
+// Module ID: 3912
+// Function ID: 32343
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 3910 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/rive/native/BountiesScrollGradient.riv.js");
+// Module 3912 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/BountiesScrollGradient.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/e2271d5ae1d3ff605e7efedd077e751dfb4c90694f1b730f12713c54486a2b35.riv";
 export const metadata = { fileBytes: 1261 };

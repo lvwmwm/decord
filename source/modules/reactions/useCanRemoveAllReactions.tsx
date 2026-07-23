@@ -1,21 +1,22 @@
-// Module ID: 9425
-// Function ID: 73369
+// Module ID: 9432
+// Function ID: 73410
 // Name: useCanRemoveAllReactions
-// Dependencies: []
+// Dependencies: [3758, 653, 5650, 566, 2]
 // Exports: default
 
-// Module 9425 (useCanRemoveAllReactions)
-let closure_2 = importDefault(dependencyMap[0]);
-const Permissions = arg1(dependencyMap[1]).Permissions;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/reactions/useCanRemoveAllReactions.tsx");
+// Module 9432 (useCanRemoveAllReactions)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
+const result = require("useCanStartPublicThread").fileFinishedImporting("modules/reactions/useCanRemoveAllReactions.tsx");
 
 export default function useCanRemoveAllReactions(stateFromStores) {
-  const arg1 = stateFromStores;
-  const isActiveChannelOrUnarchivableThread = arg1(dependencyMap[2]).useIsActiveChannelOrUnarchivableThread(stateFromStores);
-  const dependencyMap = isActiveChannelOrUnarchivableThread;
-  const obj = arg1(dependencyMap[2]);
-  const items = [closure_2];
+  const _require = stateFromStores;
+  isActiveChannelOrUnarchivableThread = _require(isActiveChannelOrUnarchivableThread[2]).useIsActiveChannelOrUnarchivableThread(stateFromStores);
+  const obj = _require(isActiveChannelOrUnarchivableThread[2]);
+  const items = [_isNativeReflectConstruct];
   const items1 = [stateFromStores, isActiveChannelOrUnarchivableThread];
-  const obj2 = arg1(dependencyMap[3]);
-  return null != stateFromStores && arg1(dependencyMap[3]).useStateFromStores(items, () => closure_2.can(constants.MANAGE_MESSAGES, arg0) && isActiveChannelOrUnarchivableThread, items1);
+  const obj2 = _require(isActiveChannelOrUnarchivableThread[3]);
+  return null != stateFromStores && _require(isActiveChannelOrUnarchivableThread[3]).useStateFromStores(items, () => outer1_2.can(outer1_3.MANAGE_MESSAGES, closure_0) && isActiveChannelOrUnarchivableThread, items1);
 };

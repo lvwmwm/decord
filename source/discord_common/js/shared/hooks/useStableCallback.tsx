@@ -1,18 +1,19 @@
-// Module ID: 8386
-// Function ID: 66756
+// Module ID: 8392
+// Function ID: 66793
 // Name: useStableCallback
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: default
 
-// Module 8386 (useStableCallback)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/shared/hooks/useStableCallback.tsx");
+// Module 8392 (useStableCallback)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/hooks/useStableCallback.tsx");
 
 export default function useStableCallback(arg0) {
   const React = arg0;
   let closure_1 = React.useRef(arg0);
   const insertionEffect = React.useInsertionEffect(() => {
-    closure_1.current = arg0;
+    closure_1.current = result;
   });
   return React.useCallback((arg0) => {
     const items = [...HermesBuiltin.copyRestArgs()];

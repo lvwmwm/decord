@@ -1,12 +1,14 @@
 // Module ID: 1533
-// Function ID: 17512
+// Function ID: 17513
 // Name: getStateFromParams
-// Dependencies: []
+// Dependencies: [31, 27, 1459, 1534, 1535]
 // Exports: default
 
 // Module 1533 (getStateFromParams)
-let closure_3 = importAll(dependencyMap[0]);
-const Platform = arg1(dependencyMap[1]).Platform;
+import result from "result";
+import { Platform } from "get ActivityIndicator";
+
+const require = arg1;
 function getStateFromParams(params) {
   if (null != params) {
     if (params.state) {
@@ -33,18 +35,17 @@ function getStateFromParams(params) {
 
 export default function useLinkProps(to) {
   to = to.to;
-  const arg1 = to;
-  const importDefault = to.action;
-  closure_2 = React.useContext(arg1(closure_2[2]).NavigationContainerRefContext);
-  const React = React.useContext(arg1(closure_2[2]).NavigationHelpersContext);
-  const options = React.useContext(importDefault(closure_2[3])).options;
-  const getStateFromParams = importDefault(closure_2[4])();
+  const action = to.action;
+  const dependencyMap = React.useContext(to(1459).NavigationContainerRefContext);
+  React = React.useContext(to(1459).NavigationHelpersContext);
+  const options = React.useContext(action(1534)).options;
+  const getStateFromParams = action(1535)();
   let getPathFromState;
   if (null != options) {
     getPathFromState = options.getPathFromState;
   }
   if (null == getPathFromState) {
-    getPathFromState = arg1(closure_2[2]).getPathFromState;
+    getPathFromState = to(1459).getPathFromState;
   }
   let obj = {};
   let pathFromState = to;
@@ -66,8 +67,8 @@ export default function useLinkProps(to) {
   obj.onPress = function onPress(defaultPrevented) {
     if (!defaultPrevented) {
       if (action) {
-        if (closure_3) {
-          closure_3.dispatch(action);
+        if (result) {
+          result.dispatch(action);
         } else if (closure_2) {
           closure_2.dispatch(action);
         } else {

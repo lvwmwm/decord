@@ -1,15 +1,24 @@
-// Module ID: 5051
-// Function ID: 43721
+// Module ID: 5054
+// Function ID: 43739
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 566, 686, 2]
 
-// Module 5051 (_isNativeReflectConstruct)
+// Module 5054 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -21,28 +30,23 @@ function isOnboarding(arg0) {
   }
   return hasItem;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-({ ME: closure_5, FAVORITES: closure_6 } = arg1(dependencyMap[5]));
+({ ME: closure_5, FAVORITES: closure_6 } = ME);
 let obj = { STARTED: "started", READY: "ready", COMPLETED: "completed", NOT_APPLICABLE: "not_applicable" };
 let closure_8 = {};
 let closure_9 = {};
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class GuildOnboardingStore {
     constructor() {
       self = this;
       tmp = GuildOnboardingStore(this, GuildOnboardingStore);
-      obj = closure_3(GuildOnboardingStore);
-      tmp2 = closure_2;
-      if (closure_10()) {
+      obj = outer1_3(GuildOnboardingStore);
+      tmp2 = outer1_2;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -51,17 +55,16 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GuildOnboardingStore;
   callback2(GuildOnboardingStore, Store);
   let obj = {
     key: "shouldShowOnboarding",
     value(arg0) {
-      let tmp = arg0 !== closure_5;
+      let tmp = arg0 !== outer1_5;
       if (tmp) {
-        tmp = arg0 !== closure_6;
+        tmp = arg0 !== outer1_6;
       }
       if (tmp) {
-        tmp = callback3(closure_8[arg0]);
+        tmp = outer1_11(outer1_8[arg0]);
       }
       return tmp;
     }
@@ -70,15 +73,15 @@ let tmp3 = (Store) => {
   obj = {
     key: "getOnboardingStatus",
     value(arg0) {
-      return closure_8[arg0];
+      return outer1_8[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "resetOnboardingStatus",
     value(arg0) {
-      closure_8[arg0] = constants.STARTED;
-      closure_9[arg0] = "cover";
+      outer1_8[arg0] = outer1_7.STARTED;
+      outer1_9[arg0] = "cover";
     }
   };
   items[2] = obj;
@@ -86,14 +89,14 @@ let tmp3 = (Store) => {
     key: "getCurrentOnboardingStep",
     value(arg0) {
       let str = "cover";
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         str = tmp;
       }
       return str;
     }
   };
   return callback(GuildOnboardingStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "GuildOnboardingStore";
 obj = {
   LOGOUT: function handleReset() {
@@ -102,18 +105,18 @@ obj = {
   },
   GUILD_DELETE: function handleDelete(guild) {
     guild = guild.guild;
-    delete r3[r2];
-    delete r1[r0];
+    delete tmp4[tmp3];
+    delete tmp2[tmp];
   },
   GUILD_ONBOARDING_START: function handleOnboardingStart(guildId) {
     closure_8[guildId.guildId] = obj.STARTED;
   },
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: function handlePromptsFetchSuccess(guildId) {
     guildId = guildId.guildId;
-    if (closure_8[guildId] !== obj.STARTED) {
+    if (table[guildId] !== obj.STARTED) {
       return false;
     } else {
-      closure_8[guildId] = tmp ? obj.READY : obj.NOT_APPLICABLE;
+      table[guildId] = tmp ? obj.READY : obj.NOT_APPLICABLE;
     }
   },
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: function handlePromptsFetchFailure(guildId) {
@@ -129,9 +132,8 @@ obj = {
     let closure_9 = {};
   }
 };
-tmp3 = new tmp3(importDefault(dependencyMap[7]), obj);
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_onboarding/GuildOnboardingStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingStore.tsx");
 
 export default tmp3;
 export const GuildOnboardingStatus = obj;

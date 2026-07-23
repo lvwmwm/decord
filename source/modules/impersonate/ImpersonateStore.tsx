@@ -1,9 +1,20 @@
 // Module ID: 1909
-// Function ID: 21496
+// Function ID: 21497
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1910, 1838, 653, 662, 21, 1915, 1360, 1916, 566, 686, 2]
 
 // Module 1909 (_isNativeReflectConstruct)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_createForOfIteratorHelperLoose";
+import { GuildSettingsSections } from "ME";
+import { ChannelNotificationSettingsFlags as closure_12 } from "MAX_FAVORITES";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,29 +24,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const GuildSettingsSections = arg1(dependencyMap[7]).GuildSettingsSections;
-let closure_12 = arg1(dependencyMap[8]).ChannelNotificationSettingsFlags;
 let closure_13 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class ImpersonateStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, ImpersonateStore);
-      obj = closure_7(ImpersonateStore);
-      tmp2 = closure_6;
-      if (closure_14()) {
+      tmp = outer1_4(this, ImpersonateStore);
+      obj = outer1_7(ImpersonateStore);
+      tmp2 = outer1_6;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -44,19 +46,18 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ImpersonateStore;
   callback2(ImpersonateStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_10, closure_9);
+      this.waitFor(outer1_10, outer1_9);
     }
   };
   const items = [obj, , , , , , , , , , , , , , , ];
   obj = {
     key: "hasViewingRoles",
     value() {
-      return !ImpersonateStore(closure_3[12]).isPlainObjectEmpty(closure_13);
+      return !ImpersonateStore(outer1_3[12]).isPlainObjectEmpty(outer1_13);
     }
   };
   items[1] = obj;
@@ -65,7 +66,7 @@ let tmp2 = (Store) => {
     value(arg0) {
       let tmp = null != arg0;
       if (tmp) {
-        tmp = null != closure_13[arg0];
+        tmp = null != outer1_13[arg0];
       }
       return tmp;
     }
@@ -75,7 +76,7 @@ let tmp2 = (Store) => {
     key: "getViewingRoles",
     value(arg0) {
       let roles;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         roles = tmp.roles;
       }
       return roles;
@@ -87,7 +88,7 @@ let tmp2 = (Store) => {
       let tmp = null;
       if (null != arg0) {
         let timestamp;
-        if (null != closure_13[arg0]) {
+        if (null != outer1_13[arg0]) {
           timestamp = tmp3.timestamp;
         }
         tmp = timestamp;
@@ -98,17 +99,17 @@ let tmp2 = (Store) => {
   items[5] = {
     key: "getData",
     value(arg0) {
-      return closure_13[arg0];
+      return outer1_13[arg0];
     }
   };
   items[6] = {
     key: "isFullServerPreview",
     value(arg0) {
       let type;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         type = tmp.type;
       }
-      return type === ImpersonateStore(closure_3[10]).ImpersonateType.NEW_MEMBER;
+      return type === ImpersonateStore(outer1_3[10]).ImpersonateType.NEW_MEMBER;
     }
   };
   items[7] = {
@@ -116,7 +117,7 @@ let tmp2 = (Store) => {
     value(arg0) {
       let optInEnabled = null != tmp;
       if (optInEnabled) {
-        optInEnabled = tmp.type === ImpersonateStore(closure_3[10]).ImpersonateType.NEW_MEMBER;
+        optInEnabled = tmp.type === ImpersonateStore(outer1_3[10]).ImpersonateType.NEW_MEMBER;
       }
       if (optInEnabled) {
         optInEnabled = tmp.optInEnabled;
@@ -129,7 +130,7 @@ let tmp2 = (Store) => {
     value(arg0) {
       let onboardingEnabled = null != tmp;
       if (onboardingEnabled) {
-        onboardingEnabled = tmp.type === ImpersonateStore(closure_3[10]).ImpersonateType.NEW_MEMBER;
+        onboardingEnabled = tmp.type === ImpersonateStore(outer1_3[10]).ImpersonateType.NEW_MEMBER;
       }
       if (onboardingEnabled) {
         onboardingEnabled = tmp.onboardingEnabled;
@@ -141,9 +142,9 @@ let tmp2 = (Store) => {
     key: "getViewingChannels",
     value(arg0) {
       let optInChannels = null;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         optInChannels = null;
-        if (tmp.type === ImpersonateStore(closure_3[10]).ImpersonateType.NEW_MEMBER) {
+        if (tmp.type === ImpersonateStore(outer1_3[10]).ImpersonateType.NEW_MEMBER) {
           optInChannels = tmp.optInChannels;
         }
       }
@@ -154,9 +155,9 @@ let tmp2 = (Store) => {
     key: "getOnboardingResponses",
     value(arg0) {
       let onboardingResponses = null;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         onboardingResponses = null;
-        if (tmp.type === ImpersonateStore(closure_3[10]).ImpersonateType.NEW_MEMBER) {
+        if (tmp.type === ImpersonateStore(outer1_3[10]).ImpersonateType.NEW_MEMBER) {
           onboardingResponses = tmp.onboardingResponses;
         }
       }
@@ -167,9 +168,9 @@ let tmp2 = (Store) => {
     key: "getMemberOptions",
     value(arg0) {
       let memberOptions = null;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         memberOptions = null;
-        if (tmp.type === ImpersonateStore(closure_3[10]).ImpersonateType.NEW_MEMBER) {
+        if (tmp.type === ImpersonateStore(outer1_3[10]).ImpersonateType.NEW_MEMBER) {
           memberOptions = tmp.memberOptions;
         }
       }
@@ -193,10 +194,10 @@ let tmp2 = (Store) => {
       let tmp = null != arg0;
       if (tmp) {
         let type;
-        if (null != closure_13[arg0]) {
+        if (null != outer1_13[arg0]) {
           type = tmp3.type;
         }
-        tmp = type === ImpersonateStore(closure_3[10]).ImpersonateType.SERVER_SHOP;
+        tmp = type === ImpersonateStore(outer1_3[10]).ImpersonateType.SERVER_SHOP;
       }
       return tmp;
     }
@@ -208,7 +209,7 @@ let tmp2 = (Store) => {
         return null;
       } else {
         let type = null;
-        if (null != closure_13[arg0]) {
+        if (null != outer1_13[arg0]) {
           type = tmp2.type;
         }
         return type;
@@ -219,17 +220,17 @@ let tmp2 = (Store) => {
     key: "getBackNavigationSection",
     value(arg0) {
       if (null == arg0) {
-        return constants.ROLES;
-      } else if (null == closure_13[arg0]) {
-        return constants.ROLES;
+        return outer1_11.ROLES;
+      } else if (null == outer1_13[arg0]) {
+        return outer1_11.ROLES;
       } else {
         const type = tmp10.type;
-        if (ImpersonateStore(closure_3[10]).ImpersonateType.ROLES !== type) {
-          if (ImpersonateStore(closure_3[10]).ImpersonateType.SERVER_SHOP !== type) {
-            if (ImpersonateStore(closure_3[10]).ImpersonateType.NEW_MEMBER === type) {
-              return constants.ONBOARDING;
+        if (ImpersonateStore(outer1_3[10]).ImpersonateType.ROLES !== type) {
+          if (ImpersonateStore(outer1_3[10]).ImpersonateType.SERVER_SHOP !== type) {
+            if (ImpersonateStore(outer1_3[10]).ImpersonateType.NEW_MEMBER === type) {
+              return outer1_11.ONBOARDING;
             } else {
-              return constants.ROLES;
+              return outer1_11.ROLES;
             }
           }
         }
@@ -238,63 +239,61 @@ let tmp2 = (Store) => {
     }
   };
   return callback(ImpersonateStore, items);
-}(importDefault(dependencyMap[13]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "ImpersonateStore";
-tmp2 = new tmp2(importDefault(dependencyMap[14]), {
+tmp2 = new tmp2(require("dispatcher"), {
   IMPERSONATE_UPDATE: function handleImpersonateUpdate(arg0) {
     let data;
     let guildId;
     ({ guildId, data } = arg0);
-    let obj = importDefault(dependencyMap[9]);
+    let obj = importDefault(21);
     const result = obj.castGuildIdAsEveryoneGuildRoleId(guildId);
-    delete r5[r2];
+    delete tmp2[tmp];
     obj = {};
     const merged = Object.assign(data);
     obj["timestamp"] = Date.now();
     closure_13[guildId] = obj;
   },
   IMPERSONATE_STOP: function handleImpersonateStop(arg0) {
-    if (null == closure_13[arg0.guildId]) {
+    if (null == dependencyMap[arg0.guildId]) {
       return false;
     } else {
-      delete r0[r1];
+      delete tmp[tmp2];
     }
   },
   GUILD_ROLE_DELETE: function handleGuildRoleDelete(arg0) {
     let guildId;
     let roleId;
     ({ guildId, roleId } = arg0);
-    if (null == closure_13[guildId]) {
+    if (null == dependencyMap[guildId]) {
       return false;
     } else {
-      const roles = closure_13[guildId].roles;
-      delete r0[r1];
+      const roles = dependencyMap[guildId].roles;
+      delete tmp[tmp2];
     }
   },
   USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: function handleUserGuildSettingsChannelUpdateBulk(arg0) {
     let guildId;
     let overrides;
     ({ guildId, overrides } = arg0);
-    const arg1 = overrides;
-    let importDefault;
+    let optInChannels;
     if (null != guildId) {
-      if (null != closure_13[guildId]) {
-        if (null != closure_13[guildId]) {
-          if (tmp9.type === arg1(dependencyMap[10]).ImpersonateType.NEW_MEMBER) {
-            let optInChannels = tmp9.optInChannels;
+      if (null != dependencyMap[guildId]) {
+        if (null != dependencyMap[guildId]) {
+          if (tmp9.type === overrides(1915).ImpersonateType.NEW_MEMBER) {
+            optInChannels = tmp9.optInChannels;
             if (null == optInChannels) {
               const _Set = Set;
               optInChannels = new Set();
             }
-            importDefault = optInChannels;
-            const keys = importDefault(dependencyMap[9]).keys(overrides);
+            const keys = optInChannels(21).keys(overrides);
             const item = keys.forEach((arg0) => {
               const flags = overrides[arg0].flags;
               let num = 0;
               if (null != flags) {
                 num = flags;
               }
-              if (obj.hasFlag(num, constants.OPT_IN_ENABLED)) {
+              if (obj.hasFlag(num, outer1_12.OPT_IN_ENABLED)) {
                 obj2.add(arg0);
               } else {
                 obj2.delete(arg0);
@@ -314,17 +313,16 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
     let optionId;
     let removedOptionIds;
     ({ guildId, optionId, removedOptionIds } = arg0);
-    let arg1;
+    let onboardingResponses;
     if (null != guildId) {
-      if (null != closure_13[guildId]) {
-        if (null != closure_13[guildId]) {
-          if (tmp11.type === arg1(dependencyMap[10]).ImpersonateType.NEW_MEMBER) {
-            let onboardingResponses = tmp11.onboardingResponses;
+      if (null != dependencyMap[guildId]) {
+        if (null != dependencyMap[guildId]) {
+          if (tmp11.type === onboardingResponses(1915).ImpersonateType.NEW_MEMBER) {
+            onboardingResponses = tmp11.onboardingResponses;
             if (null == onboardingResponses) {
               const _Set = Set;
               onboardingResponses = new Set();
             }
-            arg1 = onboardingResponses;
             let tmp5 = null != removedOptionIds;
             if (tmp5) {
               tmp5 = removedOptionIds.length > 0;
@@ -350,7 +348,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
     let flags;
     let roles;
     guildId = guildId.guildId;
-    const arg1 = guildId;
     ({ roles, flags } = guildId);
     if (null == guildId) {
       return false;
@@ -359,7 +356,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
       if (flag) {
         if (null != roles) {
           tmp2.roles = roles.reduce((arg0, arg1) => {
-            const role = role.getRole(guildId, arg1);
+            const role = outer1_9.getRole(guildId, arg1);
             if (null != role) {
               arg0[arg1] = role;
             }
@@ -368,7 +365,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
         }
         let tmp3 = null != flags;
         if (tmp3) {
-          tmp3 = tmp2.type === arg1(dependencyMap[10]).ImpersonateType.NEW_MEMBER;
+          tmp3 = tmp2.type === guildId(1915).ImpersonateType.NEW_MEMBER;
         }
         flag = true;
         if (tmp3) {
@@ -380,6 +377,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[14]), {
     }
   }
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/impersonate/ImpersonateStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/impersonate/ImpersonateStore.tsx");
 
 export default tmp2;

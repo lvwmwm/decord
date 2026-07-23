@@ -1,13 +1,14 @@
 // Module ID: 1807
-// Function ID: 19932
+// Function ID: 19933
 // Name: context
-// Dependencies: []
+// Dependencies: [31]
 // Exports: useToolbarContext
 
 // Module 1807 (context)
-const _module = require(dependencyMap[0]);
-const useContext = _module.useContext;
-const context = _module.createContext(undefined);
+import result from "result";
+
+const useContext = result.useContext;
+const context = result.createContext(undefined);
 
 export const ToolbarContext = context;
 export const useToolbarContext = function useToolbarContext() {

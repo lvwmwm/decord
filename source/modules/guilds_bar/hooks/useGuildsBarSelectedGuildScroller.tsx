@@ -1,38 +1,39 @@
-// Module ID: 14773
-// Function ID: 111350
+// Module ID: 14889
+// Function ID: 113518
 // Name: useGuildsBarSelectedGuildScroller
-// Dependencies: []
+// Dependencies: [31, 3947, 2]
 // Exports: default
 
-// Module 14773 (useGuildsBarSelectedGuildScroller)
-let closure_0 = importAll(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/guilds_bar/hooks/useGuildsBarSelectedGuildScroller.tsx");
+// Module 14889 (useGuildsBarSelectedGuildScroller)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/guilds_bar/hooks/useGuildsBarSelectedGuildScroller.tsx");
 
 export default function useGuildsBarSelectedGuildScroller(arg0) {
   const React = arg0;
   const items = [arg0];
   const effect = React.useEffect(() => {
     function handleSelectedGuildChange() {
-      const guildId = handleSelectedGuildChange.getGuildId();
-      if (guildId !== closure_0) {
+      const guildId = outer2_1.getGuildId();
+      if (guildId !== c0) {
         let tmp3 = null;
         if (null != guildId) {
           tmp3 = guildId;
         }
-        closure_0 = tmp3;
+        c0 = tmp3;
         let tmp5 = null;
         if (null != guildId) {
           tmp5 = guildId;
         }
-        closure_0(tmp5, false);
-        const tmp4 = closure_0;
+        c0(tmp5, false);
+        const tmp4 = c0;
       }
     }
-    let closure_0 = null;
-    handleSelectedGuildChange.addChangeListener(handleSelectedGuildChange);
+    let c0 = null;
+    outer1_1.addChangeListener(handleSelectedGuildChange);
     return () => {
-      handleSelectedGuildChange.removeChangeListener(handleSelectedGuildChange);
+      outer2_1.removeChangeListener(handleSelectedGuildChange);
     };
   }, items);
 };

@@ -1,17 +1,16 @@
-// Module ID: 15839
-// Function ID: 121087
+// Module ID: 15956
+// Function ID: 123260
 // Name: updateDynamicSuperProperties
-// Dependencies: []
+// Dependencies: [6697, 480, 9456, 2]
 // Exports: updateDynamicSuperProperties
 
-// Module 15839 (updateDynamicSuperProperties)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/analytics/updateDynamicSuperProperties.tsx");
+// Module 15956 (updateDynamicSuperProperties)
+let result = require("canUIRequestGatewaySocket").fileFinishedImporting("modules/analytics/updateDynamicSuperProperties.tsx");
 
 export const updateDynamicSuperProperties = function updateDynamicSuperProperties() {
-  let obj = require(dependencyMap[0]);
+  let obj = require(6697) /* stopAnalyticsHeartbeat */;
   const activeSessionUnsafe = obj.getActiveSessionUnsafe();
-  const superProperties = require(dependencyMap[1]).getSuperProperties();
+  const superProperties = require(480) /* isThrottled */.getSuperProperties();
   obj = {};
   let uuid;
   if (null != activeSessionUnsafe) {
@@ -24,8 +23,8 @@ export const updateDynamicSuperProperties = function updateDynamicSuperPropertie
   if (uuid !== prop) {
     obj.client_heartbeat_session_id = uuid;
   }
-  const obj2 = require(dependencyMap[1]);
-  const state = importDefault(dependencyMap[2]).getState();
+  const obj2 = require(480) /* isThrottled */;
+  const state = importDefault(9456).getState();
   let client_app_state;
   if (null != superProperties) {
     client_app_state = superProperties.client_app_state;
@@ -34,7 +33,7 @@ export const updateDynamicSuperProperties = function updateDynamicSuperPropertie
     obj.client_app_state = state;
   }
   if (Object.keys(obj).length > 0) {
-    const result = require(dependencyMap[1]).extendSuperProperties(obj);
-    const obj5 = require(dependencyMap[1]);
+    const result = require(480) /* isThrottled */.extendSuperProperties(obj);
+    const obj5 = require(480) /* isThrottled */;
   }
 };

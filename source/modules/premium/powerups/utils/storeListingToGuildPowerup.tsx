@@ -1,16 +1,18 @@
-// Module ID: 11512
-// Function ID: 89706
+// Module ID: 11522
+// Function ID: 89756
 // Name: storeListingToGuildPowerup
-// Dependencies: []
+// Dependencies: [1851, 4018, 1852, 2]
 // Exports: default
 
-// Module 11512 (storeListingToGuildPowerup)
-const _module = require(dependencyMap[0]);
-({ DEFAULT_SOUND_SLOTS: closure_0, DEFAULT_STICKER_SLOTS: closure_1 } = _module);
-const GuildPowerupType = require(dependencyMap[1]).GuildPowerupType;
-const DEFAULT_EMOJI_SLOTS = require(dependencyMap[2]).DEFAULT_EMOJI_SLOTS;
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/premium/powerups/utils/storeListingToGuildPowerup.tsx");
+// Module 11522 (storeListingToGuildPowerup)
+import GuildFeatures from "GuildFeatures";
+import { GuildPowerupType } from "BoostedGuildTiers";
+import { DEFAULT_EMOJI_SLOTS } from "set";
+
+let closure_0;
+let closure_1;
+({ DEFAULT_SOUND_SLOTS: closure_0, DEFAULT_STICKER_SLOTS: closure_1 } = GuildFeatures);
+const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/storeListingToGuildPowerup.tsx");
 
 export default function storeListingToGuildPowerup(arr, powerup_metadata) {
   powerup_metadata = powerup_metadata.powerup_metadata;
@@ -73,7 +75,7 @@ export default function storeListingToGuildPowerup(arr, powerup_metadata) {
           let sum = DEFAULT_EMOJI_SLOTS + guild_features.additional_emoji_slots;
           let sum1 = dependent_sku_id + guild_features.additional_sound_slots;
           let sum2 = closure_1 + guild_features.additional_sticker_slots;
-          let dependent_sku_id = powerup_metadata.sku.dependent_sku_id;
+          dependent_sku_id = powerup_metadata.sku.dependent_sku_id;
           let tmp37 = sum;
           let tmp38 = sum1;
           let tmp39 = sum2;

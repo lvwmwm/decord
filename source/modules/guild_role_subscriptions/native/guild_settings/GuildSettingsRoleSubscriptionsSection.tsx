@@ -1,77 +1,85 @@
-// Module ID: 16098
-// Function ID: 123752
+// Module ID: 16215
+// Function ID: 125925
 // Name: HasCreatedListingsSection
-// Dependencies: []
+// Dependencies: [31, 1391, 1849, 653, 33, 566, 5503, 1212, 5165, 16216, 16217, 16218, 16219, 5641, 2]
 // Exports: default
 
-// Module 16098 (HasCreatedListingsSection)
+// Module 16215 (HasCreatedListingsSection)
+import "result";
+import { isGuildOwner } from "isGuildOwner";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function HasCreatedListingsSection(arg0) {
-  ({ guild: closure_0, pushScreen: closure_1 } = arg0);
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_4];
-  let stateFromStores = obj.useStateFromStores(items, () => callback2(closure_0, currentUser.getCurrentUser()));
+  let importDefault;
+  let require;
+  ({ guild: require, pushScreen: importDefault } = arg0);
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  let stateFromStores = obj.useStateFromStores(items, () => outer1_3(closure_0, outer1_4.getCurrentUser()));
   obj = {};
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.title = intl.string(arg1(dependencyMap[7]).t.KzCF/6);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["KzCF/6"]);
   obj.hasIcons = true;
   obj = {};
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj.label = intl2.string(arg1(dependencyMap[7]).t./CfKoD);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl2.string(require(1212) /* getSystemLocale */.t["/CfKoD"]);
   obj.arrow = true;
-  const obj1 = { source: importDefault(dependencyMap[9]) };
-  obj.icon = callback(arg1(dependencyMap[8]).TableRow.Icon, obj1);
+  const obj1 = { source: importDefault(16216) };
+  obj.icon = callback(require(5165) /* TableRowInner */.TableRow.Icon, obj1);
   obj.onPress = function onPress() {
-    return callback(constants.ROLE_SUBSCRIPTIONS_BASIC);
+    return callback(outer1_6.ROLE_SUBSCRIPTIONS_BASIC);
   };
-  const items1 = [callback(arg1(dependencyMap[8]).TableRow, obj, "guild-role-subscriptions-basic"), , , ];
+  const items1 = [callback(require(5165) /* TableRowInner */.TableRow, obj, "guild-role-subscriptions-basic"), , , ];
   const obj2 = {};
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj2.label = intl3.string(arg1(dependencyMap[7]).t.pXbGYc);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj2.label = intl3.string(require(1212) /* getSystemLocale */.t.pXbGYc);
   obj2.arrow = true;
-  const obj3 = { source: importDefault(dependencyMap[10]) };
-  obj2.icon = callback(arg1(dependencyMap[8]).TableRow.Icon, obj3);
+  const obj3 = { source: importDefault(16217) };
+  obj2.icon = callback(require(5165) /* TableRowInner */.TableRow.Icon, obj3);
   obj2.onPress = function onPress() {
-    return callback(constants.ROLE_SUBSCRIPTIONS_TIERS);
+    return callback(outer1_6.ROLE_SUBSCRIPTIONS_TIERS);
   };
-  items1[1] = callback(arg1(dependencyMap[8]).TableRow, obj2, "guild-role-subscriptions-tiers");
+  items1[1] = callback(require(5165) /* TableRowInner */.TableRow, obj2, "guild-role-subscriptions-tiers");
   if (stateFromStores) {
     const obj4 = {};
-    const intl4 = arg1(dependencyMap[7]).intl;
-    obj4.label = intl4.string(arg1(dependencyMap[7]).t.p2Rsdl);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    obj4.label = intl4.string(require(1212) /* getSystemLocale */.t.p2Rsdl);
     obj4.arrow = true;
-    const obj5 = { source: importDefault(dependencyMap[11]) };
-    obj4.icon = callback(arg1(dependencyMap[8]).TableRow.Icon, obj5);
+    const obj5 = { source: importDefault(16218) };
+    obj4.icon = callback(require(5165) /* TableRowInner */.TableRow.Icon, obj5);
     obj4.onPress = function onPress() {
-      return callback(constants.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
+      return callback(outer1_6.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
     };
-    stateFromStores = callback(arg1(dependencyMap[8]).TableRow, obj4, "guild-role-subscriptions-payments");
+    stateFromStores = callback(require(5165) /* TableRowInner */.TableRow, obj4, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
   const obj6 = {};
-  const intl5 = arg1(dependencyMap[7]).intl;
-  obj6.label = intl5.string(arg1(dependencyMap[7]).t.C5Dbwn);
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj6.label = intl5.string(require(1212) /* getSystemLocale */.t.C5Dbwn);
   obj6.arrow = true;
-  const obj7 = { source: importDefault(dependencyMap[12]) };
-  obj6.icon = callback(arg1(dependencyMap[8]).TableRow.Icon, obj7);
+  const obj7 = { source: importDefault(16219) };
+  obj6.icon = callback(require(5165) /* TableRowInner */.TableRow.Icon, obj7);
   obj6.onPress = function onPress() {
-    return callback(constants.ROLE_SUBSCRIPTIONS_EMOJIS);
+    return callback(outer1_6.ROLE_SUBSCRIPTIONS_EMOJIS);
   };
-  items1[3] = callback(arg1(dependencyMap[8]).TableRow, obj6, "guild-role-subscriptions-emojis");
+  items1[3] = callback(require(5165) /* TableRowInner */.TableRow, obj6, "guild-role-subscriptions-emojis");
   obj.children = items1;
-  return closure_8(arg1(dependencyMap[6]).TableRowGroup, obj);
+  return closure_8(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
-importAll(dependencyMap[0]);
-const isGuildOwner = arg1(dependencyMap[1]).isGuildOwner;
-let closure_4 = importDefault(dependencyMap[2]);
-({ GuildFeatures: closure_5, GuildSettingsSections: closure_6 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp4 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsSection.tsx");
+({ GuildFeatures: closure_5, GuildSettingsSections: closure_6 } = ME);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsSection.tsx");
 
 export default function GuildSettingsRoleSubscriptionsSection(guild) {
   guild = guild.guild;
-  let obj = arg1(dependencyMap[13]);
+  let obj = require(5641) /* canSeeGuildRoleSubscriptionSettingsContent */;
   let tmp = null;
   if (obj.useCanSeeGuildRoleSubscriptionSettings(guild)) {
     const features = guild.features;

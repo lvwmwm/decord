@@ -1,29 +1,29 @@
-// Module ID: 11733
-// Function ID: 91154
+// Module ID: 11743
+// Function ID: 91203
 // Name: setSendState
-// Dependencies: []
+// Dependencies: [621, 682, 2]
 // Exports: setSendState
 
-// Module 11733 (setSendState)
-const _module = require(dependencyMap[0]);
-const obj = _module.create(() => ({}));
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/instant_invite/InstantInviteSendStateStore.tsx");
+// Module 11743 (setSendState)
+import keys from "keys";
+
+let obj = keys.create(() => ({}));
+const result = require("set").fileFinishedImporting("modules/instant_invite/InstantInviteSendStateStore.tsx");
 
 export const setSendState = function setSendState(arg0, arg1, arg2) {
-  const require = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
   let obj = arg2;
   const state = obj.getState();
-  obj = require(dependencyMap[1]);
+  obj = _require(682);
   obj.batchUpdates(() => {
     let obj = {};
-    const merged = Object.assign(closure_3);
+    const merged = Object.assign(table);
     obj = {};
-    const merged1 = Object.assign(closure_3[closure_0]);
-    obj[arg1] = arg2;
-    obj[arg0] = obj;
-    arg2.setState(obj);
+    const merged1 = Object.assign(table[closure_0]);
+    obj[closure_1] = state;
+    obj[closure_0] = obj;
+    state.setState(obj);
   });
 };
 export const useInstantInviteSendStates = obj;

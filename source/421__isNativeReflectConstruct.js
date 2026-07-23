@@ -1,9 +1,21 @@
 // Module ID: 421
 // Function ID: 5899
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 282, 262, 112, 253]
 
 // Module 421 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import closure_6 from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importAllResult from "result";
+import { cloneElement } from "result";
+import jsxProd from "jsxProd";
+
+let closure_12;
+let closure_13;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,22 +25,14 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = [];
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const importAllResult = importAll(dependencyMap[6]);
-const cloneElement = arg1(dependencyMap[6]).cloneElement;
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
-let closure_14 = (Component) => {
+let closure_2 = ["onBlur", "onFocus"];
+let closure_3 = ["ref"];
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+let closure_14 = ((Component) => {
   class TouchableHighlightImpl {
     constructor() {
       self = this;
-      tmp = closure_5(this, TouchableHighlightImpl);
+      tmp = outer1_5(this, TouchableHighlightImpl);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -36,22 +40,22 @@ let closure_14 = (Component) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_8(TouchableHighlightImpl);
-      tmp4 = closure_7;
-      if (closure_15()) {
+      obj = outer1_8(TouchableHighlightImpl);
+      tmp4 = outer1_7;
+      if (outer1_15()) {
         items1 = combined;
         if (!combined) {
           items1 = [];
         }
-        tmp6 = closure_8;
-        constructResult = Reflect.construct(obj, items1, closure_8(self).constructor);
+        tmp6 = outer1_8;
+        constructResult = Reflect.construct(obj, items1, outer1_8(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
       tmp4Result = tmp4(self, constructResult);
       tmp4Result._isMounted = false;
       obj = {};
-      tmp7 = TouchableHighlightImpl(closure_1[8]);
+      tmp7 = TouchableHighlightImpl(outer1_1[8]);
       tmp7 = new tmp7(tmp4Result._createPressabilityConfig());
       obj.pressability = tmp7;
       _createExtraStylesResult = null;
@@ -63,13 +67,12 @@ let closure_14 = (Component) => {
       return tmp4Result;
     }
   }
-  const importDefault = TouchableHighlightImpl;
   callback3(TouchableHighlightImpl, Component);
   let obj = {
     key: "_createPressabilityConfig",
     value: function _createPressabilityConfig() {
-      const self = this;
-      const TouchableHighlightImpl = this;
+      let self = this;
+      self = this;
       const obj = { cancelable: !this.props.rejectResponderTermination };
       if (null != this.props.disabled) {
         let disabled = self.props.disabled;
@@ -88,7 +91,7 @@ let closure_14 = (Component) => {
       obj.pressRectOffset = self.props.pressRetentionOffset;
       obj.android_disableSound = self.props.touchSoundDisabled;
       obj.onBlur = function onBlur(arg0) {
-        if (self(closure_1[9]).isTV) {
+        if (TouchableHighlightImpl(outer2_1[9]).isTV) {
           self._hideUnderlay();
         }
         if (null != self.props.onBlur) {
@@ -97,7 +100,7 @@ let closure_14 = (Component) => {
         }
       };
       obj.onFocus = function onFocus(arg0) {
-        if (self(closure_1[9]).isTV) {
+        if (TouchableHighlightImpl(outer2_1[9]).isTV) {
           self._showUnderlay();
         }
         if (null != self.props.onFocus) {
@@ -111,7 +114,7 @@ let closure_14 = (Component) => {
           const _clearTimeout = clearTimeout;
           clearTimeout(self._hideTimeout);
         }
-        if (!self(closure_1[9]).isTV) {
+        if (!TouchableHighlightImpl(outer2_1[9]).isTV) {
           self._showUnderlay();
           const delayPressOut = self.props.delayPressOut;
           let num = 0;
@@ -119,7 +122,7 @@ let closure_14 = (Component) => {
             num = delayPressOut;
           }
           self._hideTimeout = setTimeout(() => {
-            closure_0._hideUnderlay();
+            outer1_0._hideUnderlay();
           }, num);
           const tmp4 = self;
         }
@@ -152,7 +155,7 @@ let closure_14 = (Component) => {
       return obj;
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "_createExtraStyles",
     value: function _createExtraStyles() {
@@ -224,7 +227,7 @@ let closure_14 = (Component) => {
       let onBlur;
       let onFocus;
       const self = this;
-      const Children = React.Children;
+      const Children = outer1_10.Children;
       const onlyResult = Children.only(this.props.children);
       const pressability = this.state.pressability;
       const eventHandlers = pressability.getEventHandlers();
@@ -237,55 +240,55 @@ let closure_14 = (Component) => {
         accessibilityState = self.props.accessibilityState;
       }
       obj = {};
-      aria-valuemax = self.props.aria-valuemax;
+      aria_valuemax = self.props["aria-valuemax"];
       if (null == aria_valuemax) {
         const accessibilityValue = self.props.accessibilityValue;
         let max;
         if (null != accessibilityValue) {
           max = accessibilityValue.max;
         }
-        aria-valuemax = max;
+        aria_valuemax = max;
       }
       obj.max = aria_valuemax;
-      aria-valuemin = self.props.aria-valuemin;
+      aria_valuemin = self.props["aria-valuemin"];
       if (null == aria_valuemin) {
         const accessibilityValue2 = self.props.accessibilityValue;
         let min;
         if (null != accessibilityValue2) {
           min = accessibilityValue2.min;
         }
-        aria-valuemin = min;
+        aria_valuemin = min;
       }
       obj.min = aria_valuemin;
-      aria-valuenow = self.props.aria-valuenow;
+      aria_valuenow = self.props["aria-valuenow"];
       if (null == aria_valuenow) {
         const accessibilityValue3 = self.props.accessibilityValue;
         let now;
         if (null != accessibilityValue3) {
           now = accessibilityValue3.now;
         }
-        aria-valuenow = now;
+        aria_valuenow = now;
       }
       obj.now = aria_valuenow;
-      aria-valuetext = self.props.aria-valuetext;
+      aria_valuetext = self.props["aria-valuetext"];
       if (null == aria_valuetext) {
         const accessibilityValue4 = self.props.accessibilityValue;
         let text;
         if (null != accessibilityValue4) {
           text = accessibilityValue4.text;
         }
-        aria-valuetext = text;
+        aria_valuetext = text;
       }
       obj.text = aria_valuetext;
       let str = "none";
-      if ("off" !== self.props.aria-live) {
-        let accessibilityLiveRegion = self.props.aria-live;
+      if ("off" !== self.props["aria-live"]) {
+        let accessibilityLiveRegion = self.props["aria-live"];
         if (null == accessibilityLiveRegion) {
           accessibilityLiveRegion = self.props.accessibilityLiveRegion;
         }
         str = accessibilityLiveRegion;
       }
-      let accessibilityLabel = self.props.aria-label;
+      let accessibilityLabel = self.props["aria-label"];
       if (null == accessibilityLabel) {
         accessibilityLabel = self.props.accessibilityLabel;
       }
@@ -294,30 +297,30 @@ let closure_14 = (Component) => {
       obj.accessibilityActions = self.props.accessibilityActions;
       obj.onAccessibilityAction = self.props.onAccessibilityAction;
       let str2 = "no-hide-descendants";
-      const tmp3 = callback(eventHandlers, closure_2);
-      const tmp9 = closure_13;
-      if (true !== self.props.aria-hidden) {
+      const tmp3 = outer1_4(eventHandlers, outer1_2);
+      const tmp9 = outer1_13;
+      if (true !== self.props["aria-hidden"]) {
         str2 = self.props.importantForAccessibility;
       }
       obj.importantForAccessibility = str2;
-      let accessibilityViewIsModal = self.props.aria-modal;
+      let accessibilityViewIsModal = self.props["aria-modal"];
       if (null == accessibilityViewIsModal) {
         accessibilityViewIsModal = self.props.accessibilityViewIsModal;
       }
       obj.accessibilityViewIsModal = accessibilityViewIsModal;
       obj.accessibilityLiveRegion = str;
-      let accessibilityElementsHidden = self.props.aria-hidden;
+      let accessibilityElementsHidden = self.props["aria-hidden"];
       if (null == accessibilityElementsHidden) {
         accessibilityElementsHidden = self.props.accessibilityElementsHidden;
       }
       obj.accessibilityElementsHidden = accessibilityElementsHidden;
-      const tmp10 = TouchableHighlightImpl(closure_1[10]);
+      const tmp10 = TouchableHighlightImpl(outer1_1[10]);
       const extraStyles = self.state.extraStyles;
       let underlay;
       if (null != extraStyles) {
         underlay = extraStyles.underlay;
       }
-      obj.style = TouchableHighlightImpl(closure_1[11]).compose(self.props.style, underlay);
+      obj.style = TouchableHighlightImpl(outer1_1[11]).compose(self.props.style, underlay);
       obj.onLayout = self.props.onLayout;
       obj.hitSlop = self.props.hitSlop;
       obj.hasTVPreferredFocus = self.props.hasTVPreferredFocus;
@@ -336,14 +339,14 @@ let closure_14 = (Component) => {
       obj.ref = self.props.hostRef;
       const obj1 = {};
       const obj2 = {};
-      const obj4 = TouchableHighlightImpl(closure_1[11]);
-      const tmp12 = closure_11;
+      const obj4 = TouchableHighlightImpl(outer1_1[11]);
+      const tmp12 = outer1_11;
       const extraStyles2 = self.state.extraStyles;
       let child;
       if (null != extraStyles2) {
         child = extraStyles2.child;
       }
-      obj2.style = TouchableHighlightImpl(closure_1[11]).compose(onlyResult.props.style, child);
+      obj2.style = TouchableHighlightImpl(outer1_1[11]).compose(onlyResult.props.style, child);
       const items = [tmp12(onlyResult, obj2), null];
       obj1.children = items;
       return tmp9(tmp10, Object.assign(obj, tmp3, obj1));
@@ -378,10 +381,10 @@ let closure_14 = (Component) => {
     }
   };
   return callback2(TouchableHighlightImpl, items);
-}(importAllResult.Component);
+})(importAllResult.Component);
 class TouchableHighlight {
   constructor(arg0) {
-    return jsx(f5903, Object.assign({}, closure_4(global, _isNativeReflectConstruct), { hostRef: global.ref }));
+    return jsx(f5903, Object.assign({}, _objectWithoutProperties(global, _isNativeReflectConstruct), { hostRef: global.ref }));
   }
 }
 TouchableHighlight.displayName = "TouchableHighlight";

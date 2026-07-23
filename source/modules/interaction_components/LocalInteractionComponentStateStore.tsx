@@ -1,15 +1,24 @@
-// Module ID: 7789
-// Function ID: 62182
+// Module ID: 7795
+// Function ID: 62219
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 7796, 566, 686, 2]
 
-// Module 7789 (_isNativeReflectConstruct)
+// Module 7795 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importDefaultResult from "_isNativeReflectConstruct";
+import importDefaultResult1 from "_isNativeReflectConstruct";
+import importDefaultResult2 from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -32,31 +41,23 @@ function deleteStatesForMessageId(id) {
   importDefaultResult.delete(id);
   closure_6 = closure_6 + 1;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult(196606);
-let closure_6 = 0;
-let importDefaultResult1 = importDefault(dependencyMap[5]);
+let c6 = 0;
 importDefaultResult1 = new importDefaultResult1(196606);
-let importDefaultResult2 = importDefault(dependencyMap[5]);
 importDefaultResult2 = new importDefaultResult2(196606);
-let tmp8 = (Store) => {
+let tmp8 = ((Store) => {
   class LocalInteractionComponentStateStore {
     constructor() {
       self = this;
       tmp = LocalInteractionComponentStateStore(this, LocalInteractionComponentStateStore);
-      obj = closure_3(LocalInteractionComponentStateStore);
-      tmp2 = closure_2;
-      if (closure_9()) {
+      obj = outer1_3(LocalInteractionComponentStateStore);
+      tmp2 = outer1_2;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -65,26 +66,25 @@ let tmp8 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = LocalInteractionComponentStateStore;
   callback2(LocalInteractionComponentStateStore, Store);
   let obj = {
     key: "getInteractionComponentStates",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   const items = [obj, , ];
   obj = {
     key: "getInteractionComponentStateVersion",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[1] = obj;
   obj = {
     key: "getInteractionComponentState",
     value(arg0, arg1) {
-      let value = closure_5.get(arg0);
+      let value = outer1_5.get(arg0);
       let tmp = null;
       if (null != value) {
         value = value.get(arg1);
@@ -99,9 +99,9 @@ let tmp8 = (Store) => {
   };
   items[2] = obj;
   return callback(LocalInteractionComponentStateStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp8.displayName = "LocalInteractionComponentStateStore";
-tmp8 = new tmp8(importDefault(dependencyMap[7]), {
+tmp8 = new tmp8(require("dispatcher"), {
   LOGOUT: function handleInit() {
     importDefaultResult.clear();
     importDefaultResult1.clear();
@@ -182,6 +182,6 @@ tmp8 = new tmp8(importDefault(dependencyMap[7]), {
     closure_6 = closure_6 + 1;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/interaction_components/LocalInteractionComponentStateStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/interaction_components/LocalInteractionComponentStateStore.tsx");
 
 export default tmp8;

@@ -1,43 +1,45 @@
-// Module ID: 10743
-// Function ID: 83491
+// Module ID: 10753
+// Function ID: 83540
 // Name: SingleScreenshare
-// Dependencies: []
+// Dependencies: [31, 10210, 33, 4130, 689, 4559, 10754, 4323, 2]
 // Exports: default
 
-// Module 10743 (SingleScreenshare)
-importAll(dependencyMap[0]);
-({ resetFocus: closure_2, toggleFocus: closure_3 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BLACK };
-obj.stageStreamContainer = obj;
-let closure_5 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/video_calls/native/components/SingleScreenshare.tsx");
+// Module 10753 (SingleScreenshare)
+import "result";
+import resetFocusTimer from "resetFocusTimer";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2;
+let closure_3;
+({ resetFocus: closure_2, toggleFocus: closure_3 } = resetFocusTimer);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
+_createForOfIteratorHelperLoose.stageStreamContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/SingleScreenshare.tsx");
 
 export default function SingleScreenshare(channel) {
   channel = channel.channel;
-  const importDefault = channel;
-  importDefault(dependencyMap[5])(() => {
-    callback();
+  channel(4559)(() => {
+    outer1_2();
   });
   const obj = {
     participant: channel.participant,
     onSingleTap() {
-      callback2();
+      outer1_3();
     },
     onDoubleTap() {
-      callback();
-      const participant = channel(closure_1[7]).selectParticipant(channel.id, null);
+      outer1_2();
+      const participant = channel(outer1_1[7]).selectParticipant(channel.id, null);
     }
   };
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   const tmp3 = jsx;
   let stageStreamContainer;
   if (channel.isGuildStageVoice()) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj.containerStyle = stageStreamContainer;
-  return tmp3(importDefault(dependencyMap[6]), obj);
+  return tmp3(channel(10754), obj);
 };

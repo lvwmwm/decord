@@ -1,15 +1,25 @@
-// Module ID: 4935
-// Function ID: 42266
+// Module ID: 4938
+// Function ID: 42284
 // Name: callback
-// Dependencies: []
+// Dependencies: [5, 4812, 653, 3, 507, 686, 675, 4939, 4942, 480, 2]
 
-// Module 4935 (callback)
+// Module 4938 (callback)
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import importDefaultResult from "timestamp";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function callback(arg0, arg1) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
-  const HTTP = arg1(dependencyMap[4]).HTTP;
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   let obj = { url: closure_6.CONNECTIONS_CALLBACK(arg0) };
   obj = {};
   const merged = Object.assign(arg1);
@@ -17,74 +27,83 @@ function callback(arg0, arg1) {
   obj["friend_sync"] = set.has(arg0);
   obj.body = obj;
   obj.oldFormErrors = true;
-  obj.rejectWithError = arg1(dependencyMap[4]).rejectWithMigratedError();
+  obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
   return HTTP.post(obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ AbortCodes: closure_5, Endpoints: closure_6, FRIEND_SYNC_PLATFORM_TYPES: closure_7, AnalyticEvents: closure_8 } = arg1(dependencyMap[2]));
-let importDefaultResult = importDefault(dependencyMap[3]);
+({ AbortCodes: closure_5, Endpoints: closure_6, FRIEND_SYNC_PLATFORM_TYPES: closure_7, AnalyticEvents: closure_8 } = ME);
 importDefaultResult = new importDefaultResult("ConnectedAccounts");
-const obj = {
+let result = require("ME").fileFinishedImporting("actions/ConnectedAccountsActionCreators.tsx");
+
+export default {
   fetch() {
-    const HTTP = arg1(dependencyMap[4]).HTTP;
-    const obj = { y: null, isArray: null, accessible: null, url: closure_6.CONNECTIONS };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    let obj = { url: closure_6.CONNECTIONS, oldFormErrors: true, rejectWithError: true };
     const value = HTTP.get(obj);
-    return value.then((accounts) => {
-      let obj = callback(closure_2[5]);
-      obj = { accounts: accounts.body };
+    return value.then((body) => {
+      let obj = outer1_1(outer1_2[5]);
+      obj = { type: "USER_CONNECTIONS_UPDATE", local: true, accounts: body.body };
       return obj.dispatch(obj);
-    }, () => callback(closure_2[5]).dispatch({ accounts: [] }));
+    }, () => {
+      let obj = outer1_1(outer1_2[5]);
+      obj = { type: "USER_CONNECTIONS_UPDATE", local: true, accounts: [] };
+      return obj.dispatch(obj);
+    });
   },
   authorize(arg0) {
+    let dispatcher;
+    let _isNativeReflectConstruct;
+    let closure_5;
+    let closure_6;
+    let dependencyMap;
+    let importDefault;
     let obj = arg1;
-    const arg1 = arg0;
+    let closure_0 = arg0;
     if (arg1 === undefined) {
       obj = {};
     }
-    ({ location: closure_1, twoWayLinkType: closure_2, userCode: closure_3, twoWayLink: closure_4, successRedirect: closure_5, handle: closure_6 } = obj);
+    ({ location: importDefault, twoWayLinkType: dependencyMap, userCode: dispatcher, twoWayLink: _isNativeReflectConstruct, successRedirect: closure_5, handle: closure_6 } = obj);
     return callback(async () => {
-      let obj = callback2(closure_2[6]);
-      obj = { platform_type: callback, location: callback2 };
-      obj.track(constants.CONNECTED_ACCOUNT_INITIATED, obj);
-      const result = closure_6.CONNECTIONS_AUTHORIZE(callback);
+      let obj = outer2_1(outer2_2[6]);
+      obj = { platform_type: outer1_0, location: outer1_1 };
+      obj.track(outer2_8.CONNECTED_ACCOUNT_INITIATED, obj);
+      const result = outer2_6.CONNECTIONS_AUTHORIZE(outer1_0);
       const str = new URLSearchParams();
-      if (null != closure_3) {
-        str.append("two_way_user_code", closure_3);
+      if (null != outer1_3) {
+        str.append("two_way_user_code", outer1_3);
       }
-      if (null != closure_5) {
-        str.append("success_redirect", closure_5);
+      if (null != outer1_5) {
+        str.append("success_redirect", outer1_5);
       }
-      if (null != closure_2) {
-        str.append("two_way_link_type", closure_2);
+      if (null != outer1_2) {
+        str.append("two_way_link_type", outer1_2);
         str.append("two_way_link", "true");
-      } else if (null != closure_4) {
+      } else if (null != outer1_4) {
         const _String = String;
-        str.append("two_way_link", String(closure_4));
+        str.append("two_way_link", String(outer1_4));
       }
-      if (null != closure_6) {
-        str.append("handle", closure_6);
+      if (null != outer1_6) {
+        str.append("handle", outer1_6);
       }
       const text = `${tmp2}?${str.toString()}`;
-      const HTTP = callback(closure_2[4]).HTTP;
-      obj = { url: text, oldFormErrors: true, rejectWithError: callback(closure_2[4]).rejectWithMigratedError() };
+      const HTTP = callback(outer2_2[4]).HTTP;
+      obj = { url: text, oldFormErrors: true, rejectWithError: callback(outer2_2[4]).rejectWithMigratedError() };
       const tmp16 = yield HTTP.get(obj);
-      const obj4 = callback(closure_2[4]);
+      const obj4 = callback(outer2_2[4]);
       const url = tmp16.body.url;
       let str9 = "";
       if (null != url) {
         str9 = url;
       }
-      const state = callback(closure_2[7]).getCallbackParamsFromURL(str9).state;
+      const state = callback(outer2_2[7]).getCallbackParamsFromURL(str9).state;
       if (null != state) {
-        const result1 = closure_4.addPendingAuthorizedState(state);
+        const result1 = outer2_4.addPendingAuthorizedState(state);
       }
       return tmp16;
     })();
   },
   callback,
   connect(arg0, arg1, name, location, friend_sync) {
-    let obj = importDefault(dependencyMap[8]);
+    let obj = importDefault(4942);
     obj = { url: closure_6.CONNECTION(arg0, arg1) };
     obj = { name };
     friend_sync = undefined;
@@ -98,21 +117,21 @@ const obj = {
     obj.body = obj;
     obj.context = { location };
     obj.oldFormErrors = true;
-    const obj2 = { event: arg1(dependencyMap[9]).NetworkActionNames.USER_CONNECTIONS_UPDATE, properties: { name, friend_sync: set.has(arg0) } };
+    const obj2 = { event: require(480) /* isThrottled */.NetworkActionNames.USER_CONNECTIONS_UPDATE, properties: { name, friend_sync: set.has(arg0) } };
     obj.trackedActionData = obj2;
     const obj1 = { location };
     const obj3 = { name, friend_sync: set.has(arg0) };
-    obj.rejectWithError = arg1(dependencyMap[4]).rejectWithMigratedError();
+    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return obj.put(obj);
   },
   disconnect(arg0, arg1) {
-    const HTTP = arg1(dependencyMap[4]).HTTP;
-    const obj = { url: closure_6.CONNECTION(arg0, arg1), oldFormErrors: true, rejectWithError: arg1(dependencyMap[4]).rejectWithMigratedError() };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    const obj = { url: closure_6.CONNECTION(arg0, arg1), oldFormErrors: true, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
     return HTTP.del(obj);
   },
   refresh(arg0, arg1) {
-    const HTTP = arg1(dependencyMap[4]).HTTP;
-    const obj = { url: closure_6.CONNECTION_REFRESH(arg0, arg1), oldFormErrors: true, rejectWithError: arg1(dependencyMap[4]).rejectWithMigratedError() };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    const obj = { url: closure_6.CONNECTION_REFRESH(arg0, arg1), oldFormErrors: true, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
     return HTTP.post(obj);
   },
   setVisibility(type, id, inProgressVisibility) {
@@ -128,92 +147,92 @@ const obj = {
     return this.update(type, id, { show_activity });
   },
   update(arg0, arg1, body) {
-    let obj = importDefault(dependencyMap[8]);
+    let obj = importDefault(4942);
     obj = { url: closure_6.CONNECTION(arg0, arg1), body, oldFormErrors: true };
-    obj = { event: arg1(dependencyMap[9]).NetworkActionNames.USER_CONNECTIONS_UPDATE };
+    obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_CONNECTIONS_UPDATE };
     const merged = Object.assign(body);
     obj.properties = {};
     obj.trackedActionData = obj;
-    obj.rejectWithError = arg1(dependencyMap[4]).rejectWithMigratedError();
+    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return obj.patch(obj);
   },
   joinServer(id, arg1) {
-    arg1 = id;
+    const _require = id;
     const importDefault = arg1;
-    let obj = importDefault(dependencyMap[5]);
-    obj = { integrationId: id };
+    let obj = importDefault(686);
+    obj = { type: "USER_CONNECTIONS_INTEGRATION_JOINING", integrationId: id, joining: true };
     obj.dispatch(obj);
-    const HTTP = arg1(dependencyMap[4]).HTTP;
-    obj = { url: closure_6.INTEGRATION_JOIN(id), oldFormErrors: true, rejectWithError: arg1(dependencyMap[4]).rejectWithMigratedError() };
+    const HTTP = _require(507).HTTP;
+    obj = { url: closure_6.INTEGRATION_JOIN(id), oldFormErrors: true, rejectWithError: _require(507).rejectWithMigratedError() };
     HTTP.post(obj, (ok) => {
-      let obj = arg1(closure_2[5]);
-      obj = { "Null": 0.5, "Null": "M15 6h-1v2h1V6Z", "Null": true, integrationId: ok };
+      let obj = callback(outer1_2[5]);
+      obj = { type: "USER_CONNECTIONS_INTEGRATION_JOINING", integrationId: closure_0, joining: false };
       obj.dispatch(obj);
       if (!ok.ok) {
-        obj = { type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR", integrationId: ok };
+        obj = { type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR", integrationId: closure_0 };
         let message;
         if (!ok.hasErr) {
           message = ok.body.message;
         }
         obj.error = message;
-        arg1(closure_2[5]).dispatch(obj);
-        if (null != arg1) {
-          arg1();
+        callback(outer1_2[5]).dispatch(obj);
+        if (null != callback) {
+          callback();
         }
-        const obj3 = arg1(closure_2[5]);
+        const obj3 = callback(outer1_2[5]);
       }
     });
   },
   refreshAccessToken(type, id) {
-    id = type;
-    const importDefault = id;
+    let closure_0 = type;
+    let closure_1 = id;
     return callback(async () => {
-      const HTTP = callback(closure_2[4]).HTTP;
-      let obj = { url: closure_6.CONNECTION_ACCESS_TOKEN(callback, callback2), oldFormErrors: true, rejectWithError: callback(closure_2[4]).rejectWithMigratedError() };
+      const HTTP = callback(outer2_2[4]).HTTP;
+      let obj = { url: outer2_6.CONNECTION_ACCESS_TOKEN(outer1_0, outer1_1), oldFormErrors: true, rejectWithError: callback(outer2_2[4]).rejectWithMigratedError() };
       const access_token = yield HTTP.get(obj).body.access_token;
-      const obj2 = callback(closure_2[4]);
-      obj = { type: "USER_CONNECTION_UPDATE", platformType: callback, id: callback2, accessToken: access_token };
-      callback2(closure_2[5]).dispatch(obj);
+      const obj2 = callback(outer2_2[4]);
+      obj = { type: "USER_CONNECTION_UPDATE", platformType: outer1_0, id: outer1_1, accessToken: access_token };
+      callback2(outer2_2[5]).dispatch(obj);
       return access_token;
     })();
   },
   linkDispatchAuthCallback(arg0, arg1) {
-    const HTTP = arg1(dependencyMap[4]).HTTP;
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     let obj = { url: closure_6.CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK(arg0) };
     obj = {};
     const merged = Object.assign(arg1);
     obj.body = obj;
     obj.oldFormErrors = true;
-    obj.rejectWithError = arg1(dependencyMap[4]).rejectWithMigratedError();
+    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return HTTP.post(obj);
   },
   completeTwoWayLink(arg0, location, arg2, arg3) {
-    location = arg0;
-    const importDefault = location;
-    const dependencyMap = arg2;
+    let closure_0 = arg0;
+    let closure_1 = location;
+    let closure_2 = arg2;
     const callback = arg3;
-    let closure_4 = arg4;
+    let _isNativeReflectConstruct = arg4;
     return callback(async () => {
-      if (null != closure_1) {
-        let obj = callback(closure_2[7]);
-        const callbackParamsFromURL = obj.getCallbackParamsFromURL(closure_1);
+      if (null != outer1_1) {
+        let obj = callback(table[7]);
+        const callbackParamsFromURL = obj.getCallbackParamsFromURL(outer1_1);
         const error = callbackParamsFromURL.error;
         if (null == error) {
-          obj = { code: closure_2, state: closure_3, two_way_link_code: tmp7, token_redirect_uri: closure_4 };
-          return yield closure_10(closure_0, obj);
+          obj = { code: outer1_2, state: outer1_3, two_way_link_code: tmp7, token_redirect_uri: outer1_4 };
+          return yield outer2_10(outer1_0, obj);
         } else {
           obj = { error, errorDescription: tmp8 };
-          closure_9.error("Two-way link: missing authorize code", obj);
+          outer2_9.error("Two-way link: missing authorize code", obj);
         }
       } else {
-        closure_9.error("Two-way link: missing authorize location");
+        outer2_9.error("Two-way link: missing authorize location");
       }
     })();
   },
   sessionHandoff(arg0, state, code, openid_params, iss) {
-    const HTTP = state(dependencyMap[4]).HTTP;
-    let obj = { url: closure_6.CONNECTIONS_SESSION_HANDOFF(arg0), body: obj, oldFormErrors: true };
-    obj = { state, code, openid_params, iss, rejectWithError: state(dependencyMap[4]).rejectWithMigratedError() };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: closure_6.CONNECTIONS_SESSION_HANDOFF(arg0), body: obj, oldFormErrors: true };
+    obj = { state, code, openid_params, iss, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
     return HTTP.post(obj);
   },
   getHandoffStatus(arg0, state) {
@@ -221,12 +240,8 @@ const obj = {
     str.append("state", state);
     const result = closure_6.CONNECTIONS_SESSION_HANDOFF(arg0);
     const url = "" + result + "?" + str.toString();
-    const HTTP = state(dependencyMap[4]).HTTP;
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     const body = { state };
     return HTTP.get({ url, body, rejectWithError: true });
   }
 };
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("actions/ConnectedAccountsActionCreators.tsx");
-
-export default obj;

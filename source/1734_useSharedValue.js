@@ -1,20 +1,24 @@
 // Module ID: 1734
-// Function ID: 19446
+// Function ID: 19447
 // Name: useSharedValue
-// Dependencies: []
+// Dependencies: [57, 31, 1626, 1654]
 // Exports: useSharedValue
 
 // Module 1734 (useSharedValue)
-let closure_2 = importDefault(dependencyMap[0]);
-({ useEffect: closure_3, useState: closure_4 } = arg1(dependencyMap[1]));
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ useEffect: closure_3, useState: closure_4 } = result);
 
 export const useSharedValue = function useSharedValue(UNDETERMINED) {
-  const arg1 = UNDETERMINED;
-  const first = callback(callback3(() => arg0(first[2]).makeMutable(arg0)), 1)[0];
-  const dependencyMap = first;
+  let closure_0 = UNDETERMINED;
+  const first = callback(callback3(() => UNDETERMINED(first[2]).makeMutable(UNDETERMINED)), 1)[0];
   const items = [first];
   callback2(() => () => {
-    callback(closure_1[3]).cancelAnimation(closure_1);
+    callback(first[3]).cancelAnimation(outer1_1);
   }, items);
   return first;
 };

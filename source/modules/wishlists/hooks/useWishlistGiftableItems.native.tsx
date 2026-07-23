@@ -1,25 +1,27 @@
-// Module ID: 8686
-// Function ID: 68847
+// Module ID: 8693
+// Function ID: 68887
 // Name: set
-// Dependencies: []
+// Dependencies: [31, 653, 2]
 // Exports: useWishlistGiftableItems
 
-// Module 8686 (set)
-let closure_0 = importAll(dependencyMap[0]);
-const items = [, , ];
-({ COLLECTIBLES: arr[0], PREMIUM: arr[1], SOCIAL_LAYER_GAME_ITEM: arr[2] } = arg1(dependencyMap[1]).SKUProductLines);
-const set = new Set(items);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/wishlists/hooks/useWishlistGiftableItems.native.tsx");
+// Module 8693 (set)
+import result from "result";
+import set from "set";
+
+let items = [, , ];
+({ COLLECTIBLES: arr[0], PREMIUM: arr[1], SOCIAL_LAYER_GAME_ITEM: arr[2] } = require("ME").SKUProductLines);
+let set = new Set(items);
+const result = set.fileFinishedImporting("modules/wishlists/hooks/useWishlistGiftableItems.native.tsx");
 
 export const GIFTABLE_PRODUCT_LINES = set;
 export const useWishlistGiftableItems = function useWishlistGiftableItems(wishlist) {
   const React = wishlist;
-  const items = [wishlist];
+  let items = [wishlist];
   return React.useMemo(() => {
     let found;
-    if (null != arg0) {
-      const items = arg0.items;
-      found = items.filter((skuProductLine) => set.has(skuProductLine.skuProductLine) && !skuProductLine.isOwned);
+    if (null != wishlist) {
+      const items = wishlist.items;
+      found = items.filter((skuProductLine) => outer2_1.has(skuProductLine.skuProductLine) && !skuProductLine.isOwned);
     }
     if (null == found) {
       found = [];

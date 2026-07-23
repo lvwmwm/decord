@@ -1,12 +1,11 @@
-// Module ID: 6744
-// Function ID: 52498
+// Module ID: 6749
+// Function ID: 52530
 // Name: AutomodAlertActionType
-// Dependencies: []
+// Dependencies: [2]
 // Exports: parseAlertActionsExecution
 
-// Module 6744 (AutomodAlertActionType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild_automod/AutomodAlert.tsx");
+// Module 6749 (AutomodAlertActionType)
+const result = require("set").fileFinishedImporting("modules/guild_automod/AutomodAlert.tsx");
 
 export const AutomodAlertActionType = { SET_COMPLETED: 1, [1]: "SET_COMPLETED", UNSET_COMPLETED: 2, [2]: "UNSET_COMPLETED", DELETE_USER_MESSAGE: 3, [3]: "DELETE_USER_MESSAGE", SUBMIT_FEEDBACK: 4, [4]: "SUBMIT_FEEDBACK" };
 export const parseAlertActionsExecution = function parseAlertActionsExecution(arg0) {
@@ -34,7 +33,7 @@ export const parseAlertActionsExecution = function parseAlertActionsExecution(ar
             parsed.actions[actionType].actionType = actionType;
           });
           tmp4 = parsed;
-          // break
+          break;
         }
       }
       return tmp4;

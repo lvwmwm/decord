@@ -1,12 +1,11 @@
-// Module ID: 10917
-// Function ID: 84904
+// Module ID: 10927
+// Function ID: 84953
 // Name: createGameSheetHook
-// Dependencies: []
+// Dependencies: [2]
 // Exports: createGameSheetHook
 
-// Module 10917 (createGameSheetHook)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/quests/SponsoredQuestUtils.native.tsx");
+// Module 10927 (createGameSheetHook)
+const result = require("set").fileFinishedImporting("modules/quests/SponsoredQuestUtils.native.tsx");
 
 export const createGameSheetHook = function createGameSheetHook(arg0) {
   let applications;

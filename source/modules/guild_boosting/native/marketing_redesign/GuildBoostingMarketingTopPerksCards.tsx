@@ -1,116 +1,108 @@
-// Module ID: 12421
-// Function ID: 94858
+// Module ID: 12535
+// Function ID: 97014
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 33, 4130, 689, 1212, 12536, 5453, 12537, 12538, 4126, 11597, 2]
 // Exports: default
 
-// Module 12421 (items)
-importAll(dependencyMap[0]);
-({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = importDefault(dependencyMap[2]);
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { wrapper: { marginTop: 50 }, heading: { value: -1102997407, on: 2080375278 }, scrollerContent: {} };
-obj = { 1146159108: "user", -1601084480: "2026-03-video-quest-player-refactor", -1910779653: "user", 5601034: "2026-04-composed-quest-player", -514518152: "user", 1987576153: "2026-04-mobile-quest-orb-reward-modal-cta-priority", 913874296: "user", 1009741928: "2026-03-mobile-quest-home-red-dot-notification", 592933481: "user", -1727229131: "2026-05-quest-home-tile-redesign", backgroundColor: importDefault(dependencyMap[5]).colors.CARD_BACKGROUND_DEFAULT, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.card = obj;
-const tmp4 = arg1(dependencyMap[3]);
-obj.cardGraphic = { borderRadius: importDefault(dependencyMap[5]).radii.xs };
-obj.cardLast = { marginRight: 0 };
-obj.cardHeading = { value: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000676009517133676, on: 131072.0007038191 };
-obj.cardBody = { textAlign: "center" };
-let closure_8 = obj.createStyles(obj);
-const items = [
+// Module 12535 (items)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_6;
+let closure_7;
+let require = arg1;
+({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { wrapper: { marginTop: 50 }, heading: { marginBottom: 20, textAlign: "center" }, scrollerContent: { alignItems: "stretch", flexDirection: "row", justifyContent: "center", minWidth: "100%", paddingHorizontal: 16, paddingBottom: 16 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 16, padding: 24, width: 324 };
+_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
+const obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, height: 128, marginBottom: 16, overflow: "hidden", width: 211 };
+_createForOfIteratorHelperLoose.cardGraphic = obj1;
+_createForOfIteratorHelperLoose.cardLast = { marginRight: 0 };
+_createForOfIteratorHelperLoose.cardHeading = { marginBottom: 4, textAlign: "center" };
+_createForOfIteratorHelperLoose.cardBody = { textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let items = [
   {
     getHeadingCopy() {
-      const intl = arg1(dependencyMap[6]).intl;
-      return intl.string(arg1(dependencyMap[6]).t.y4ft4D);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.y4ft4D);
     },
     getBodyCopy() {
-      const intl = arg1(dependencyMap[6]).intl;
-      return intl.string(arg1(dependencyMap[6]).t.HTvLGu);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.HTvLGu);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(dependencyMap[7]) });
+      return callback(closure_3, { style, source: importDefault(12536) });
     }
   },
   {
     getHeadingCopy() {
-      const intl = arg1(dependencyMap[6]).intl;
-      return intl.string(arg1(dependencyMap[6]).t.PbAyub);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.PbAyub);
     },
     getBodyCopy() {
-      const intl = arg1(dependencyMap[6]).intl;
-      return intl.string(arg1(dependencyMap[6]).t.wOYbTv);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: arg1(dependencyMap[9]), autoPlay: !useReducedMotion.useReducedMotion, style };
-      return callback(importDefault(dependencyMap[8]), obj);
+      const obj = { source: require(12537) /* items1 */, autoPlay: !useReducedMotion.useReducedMotion, style };
+      return callback(importDefault(5453), obj);
     }
   },
   {
     getHeadingCopy() {
-      const intl = arg1(dependencyMap[6]).intl;
-      return intl.string(arg1(dependencyMap[6]).t./bX4Jn);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t["/bX4Jn"]);
     },
     getBodyCopy() {
-      const intl = arg1(dependencyMap[6]).intl;
-      return intl.string(arg1(dependencyMap[6]).t.yCjoUC);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.yCjoUC);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(dependencyMap[10]) });
+      return callback(closure_3, { style, source: importDefault(12538) });
     }
   }
 ];
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.xs };
-const obj2 = {
-  getHeadingCopy() {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t.y4ft4D);
-  },
-  getBodyCopy() {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t.HTvLGu);
-  },
-  getGraphic(style) {
-    return callback(closure_3, { style, source: importDefault(dependencyMap[7]) });
-  }
-};
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
 
 export default function GuildBoostingMarketingTopPerksCards() {
-  const tmp = callback3();
-  const arg1 = tmp;
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
   let obj = { style: tmp.wrapper };
-  obj = { style: tmp.heading };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.children = intl.string(arg1(dependencyMap[6]).t.aGdB3E);
-  const items = [callback(arg1(dependencyMap[11]).Text, obj), ];
+  obj = { style: tmp.heading, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.aGdB3E);
+  let items = [callback(require(4126) /* Text */.Text, obj), ];
   obj = {
-    "Null": "sparkle Outlines 9",
-    "Null": 1,
-    "Null": null,
     itemCount: items.length,
+    cardWidth: 324,
+    cardMarginRight: 16,
     contentContainerStyle: tmp.scrollerContent,
     children: items.map((getGraphic) => {
       let obj = {};
       const items = [tmp.card, ];
-      let cardLast = arg1 === length.length - 1;
+      let cardLast = arg1 === outer1_9.length - 1;
       if (cardLast) {
         cardLast = tmp.cardLast;
       }
       items[1] = cardLast;
       obj.style = items;
-      const items1 = [getGraphic.getGraphic(closure_7.cardGraphic), , ];
-      obj = { "Null": false, "Null": 0, alignItems: 4, style: closure_7.cardHeading, children: getGraphic.getHeadingCopy() };
-      items1[1] = callback(closure_7(closure_2[11]).Text, obj);
-      obj = { "Null": 1, "Null": "tail", alignItems: null, style: closure_7.cardBody, children: getGraphic.getBodyCopy() };
-      items1[2] = callback(closure_7(closure_2[11]).Text, obj);
+      const items1 = [getGraphic.getGraphic(outer1_7.cardGraphic), , ];
+      obj = { style: outer1_7.cardHeading, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: getGraphic.getHeadingCopy() };
+      items1[1] = outer1_6(outer1_7(outer1_2[11]).Text, obj);
+      obj = { style: outer1_7.cardBody, variant: "text-sm/normal", color: "text-default", children: getGraphic.getBodyCopy() };
+      items1[2] = outer1_6(outer1_7(outer1_2[11]).Text, obj);
       obj.children = items1;
-      return closure_7(closure_4, obj, arg1);
+      return outer1_7(outer1_4, obj, arg1);
     })
   };
-  items[1] = callback(arg1(dependencyMap[12]).MarketingCardsScroller, obj);
+  items[1] = callback(require(11597) /* getClampedIndex */.MarketingCardsScroller, obj);
   obj.children = items;
   return callback2(closure_4, obj);
 };

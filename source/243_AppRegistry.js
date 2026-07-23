@@ -1,16 +1,17 @@
 // Module ID: 243
 // Function ID: 3270
 // Name: AppRegistry
-// Dependencies: []
+// Dependencies: [244, 236]
 
 // Module 243 (AppRegistry)
-importAll(dependencyMap[0]).registerComponent("LogBox", () => function NoOp() {
+import importAllResult from "registerComponent";
+
+require("registerComponent").registerComponent("LogBox", () => function NoOp() {
   return null;
 });
-global.RN$AppRegistry = importAll(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[0]);
-global.RN$SurfaceRegistry = { renderSurface: importAll(dependencyMap[0]).runApplication, setSurfaceProps: importAll(dependencyMap[0]).setSurfaceProps };
-const obj = { renderSurface: importAll(dependencyMap[0]).runApplication, setSurfaceProps: importAll(dependencyMap[0]).setSurfaceProps };
-importDefault(dependencyMap[1])("AppRegistry", importAll(dependencyMap[0]));
+global.RN$AppRegistry = require("registerComponent");
+global.RN$SurfaceRegistry = { renderSurface: require("registerComponent").runApplication, setSurfaceProps: require("registerComponent").setSurfaceProps };
+const obj = { renderSurface: require("registerComponent").runApplication, setSurfaceProps: require("registerComponent").setSurfaceProps };
+require("MessageQueue")("AppRegistry", require("registerComponent"));
 
-export const AppRegistry = importAll(dependencyMap[0]);
+export const AppRegistry = require("registerComponent");

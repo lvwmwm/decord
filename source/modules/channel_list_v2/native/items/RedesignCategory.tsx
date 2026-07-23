@@ -1,10 +1,26 @@
-// Module ID: 14849
-// Function ID: 111891
+// Module ID: 14965
+// Function ID: 114059
 // Name: renderCategoryItem
-// Dependencies: []
+// Dependencies: [31, 27, 6763, 5076, 4325, 10260, 33, 4130, 477, 4126, 4660, 689, 8525, 9979, 9099, 1324, 566, 4320, 5072, 1212, 5498, 9980, 5776, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory
 
-// Module 14849 (renderCategoryItem)
+// Module 14965 (renderCategoryItem)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import hairlineWidth from "hairlineWidth";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_8;
+let closure_9;
+const require = arg1;
 function renderCategoryItem(arg0) {
   let accessibilityState;
   let icon;
@@ -42,7 +58,7 @@ function renderCategoryItem(arg0) {
   items[1] = obj;
   let tmp3Result = name;
   if ("string" === typeof name) {
-    obj = { UP_RIGHT: 0.931, DOWN_RIGHT: 0, UP_LEFT: null, DOWN_LEFT: 1 };
+    obj = { experimental_useNativeText: true, variant: "text-sm/semibold", color: null, lineClamp: 1 };
     let str = "text-subtle";
     if (muted) {
       str = "text-muted";
@@ -50,7 +66,7 @@ function renderCategoryItem(arg0) {
     obj.color = str;
     obj.style = styles.categoryText;
     obj.children = name;
-    tmp3Result = callback(arg1(dependencyMap[9]).Text, obj);
+    tmp3Result = callback(require(4126) /* Text */.Text, obj);
     const tmp3 = callback;
   }
   let tmp6 = null;
@@ -86,7 +102,7 @@ function renderCategoryItem(arg0) {
     }
     return tmp18;
   }
-  tmp18 = callback(arg1(dependencyMap[10]).PressableHighlight, { accessibilityRole: "header", accessibilityState, onPress, onLongPress, style: items, children: tmp9Result });
+  tmp18 = callback(require(4660) /* PressableBase */.PressableHighlight, { accessibilityRole: "header", accessibilityState, onPress, onLongPress, style: items, children: tmp9Result });
 }
 function renderCollapsibleCategoryItem(collapsed) {
   collapsed = collapsed.collapsed;
@@ -94,48 +110,41 @@ function renderCollapsibleCategoryItem(collapsed) {
   obj.collapsed = 0;
   obj.isRefreshEnabled = 0;
   const merged = Object.assign(collapsed, obj);
-  const colors = importDefault(dependencyMap[11]).colors;
+  const colors = importDefault(689).colors;
   obj = {};
   const merged1 = Object.assign(merged);
-  obj["icon"] = callback(arg1(dependencyMap[12]).ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? obj : obj1 });
+  obj["icon"] = callback(require(8525) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? _createForOfIteratorHelperLoose : obj1 });
   obj = { expanded: !collapsed };
   obj["accessibilityState"] = obj;
   obj["isRefreshEnabled"] = collapsed.isRefreshEnabled;
   return renderCategoryItem(obj);
 }
 function useCategoryPressEvents(id, collapsed) {
-  collapsed = id;
-  const importDefault = collapsed;
+  let closure_0 = id;
+  let closure_1 = collapsed;
   const items = [id, collapsed];
   const items1 = [id];
   return {
     onPress: React.useCallback(() => {
-      const obj = arg0(closure_2[13]);
-      if (arg1) {
-        obj.categoryExpand(arg0);
+      const obj = id(outer1_2[13]);
+      if (closure_1) {
+        obj.categoryExpand(id);
       } else {
-        obj.categoryCollapse(arg0);
+        obj.categoryCollapse(id);
       }
     }, items),
-    onLongPress: React.useCallback(() => arg0(closure_2[14]).openChannelLongPressActionSheet(arg0), items1)
+    onLongPress: React.useCallback(() => id(outer1_2[14]).openChannelLongPressActionSheet(id), items1)
   };
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ CATEGORY_MARGIN_BOTTOM: closure_8, CATEGORY_MARGIN_TOP: closure_9, CATEGORY_VERTICAL_PADDING: closure_10 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-const styles = obj.createStyles(() => {
+({ CATEGORY_MARGIN_BOTTOM: closure_8, CATEGORY_MARGIN_TOP: closure_9, CATEGORY_VERTICAL_PADDING: closure_10 } = hairlineWidth);
+({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = jsxProd);
+const styles = _createForOfIteratorHelperLoose.createStyles(() => {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
-  let obj = { categoryWrapper: obj };
-  obj = { EMOJI_PICKER_EMOJI_CLICKED: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004199297784429531, display: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000339131540112926, useFramePreviewOverrideStore: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001447439992483183, GuildEventShareAction: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010511712973401546, useCustomBackgroundGradient: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010511712949619592, paddingVertical: closure_10 };
+  obj = { categoryWrapper: obj };
+  obj = { display: "flex", flexDirection: "row", alignItems: "center", paddingVertical: closure_10, paddingRight: 16 };
   obj = {};
   const obj1 = {};
   if (flag) {
@@ -165,15 +174,14 @@ const styles = obj.createStyles(() => {
   obj.iconWrapperStyles = {};
   return obj;
 });
-obj = { createStyles: "%FunctionPrototype%", guild_id: "paddingStart" };
-obj = {};
-const merged = Object.assign(obj);
-const items = [{ rotate: "-90deg" }];
-obj["transform"] = items;
-const obj1 = {};
-const merged1 = Object.assign(obj);
-const tmp3 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/channel_list_v2/native/items/RedesignCategory.tsx");
+_createForOfIteratorHelperLoose = { flexShrink: 0, flexGrow: 0 };
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = Object.assign(_createForOfIteratorHelperLoose);
+let items = [{ rotate: "-90deg" }];
+_createForOfIteratorHelperLoose["transform"] = items;
+let obj1 = {};
+_createForOfIteratorHelperLoose = Object.assign(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/items/RedesignCategory.tsx");
 
 export const useCategoryStyles = styles;
 export { renderCategoryItem };
@@ -182,30 +190,27 @@ export const CategoryChannel = function CategoryChannel(channel) {
   let onLongPress;
   let onPress;
   channel = channel.channel;
-  const arg1 = channel;
-  const tmp = importDefault(dependencyMap[15])("CategoryChannel");
-  let obj = arg1(dependencyMap[16]);
+  const tmp = importDefault(1324)("CategoryChannel");
+  let obj = channel(566);
   const items = [closure_6, closure_7];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ collapsed: collapsed.isCollapsed(channel.id), muted: channelMuted.isChannelMuted(channel.getGuildId(), channel.id) }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ collapsed: outer1_6.isCollapsed(channel.id), muted: outer1_7.isChannelMuted(channel.getGuildId(), channel.id) }));
   const collapsed = stateFromStoresObject.collapsed;
   const tmp2 = styles(tmp);
-  obj = { name: importDefault(dependencyMap[17])(channel), muted: stateFromStoresObject.muted, collapsed, onPress, onLongPress, withMarginTop: channel.withMarginTop, styles: tmp2, isRefreshEnabled: tmp };
+  obj = { name: importDefault(4320)(channel), muted: stateFromStoresObject.muted, collapsed, onPress, onLongPress, withMarginTop: channel.withMarginTop, styles: tmp2, isRefreshEnabled: tmp };
   ({ onPress, onLongPress } = useCategoryPressEvents(channel.id, collapsed));
   return renderCollapsibleCategoryItem(obj);
 };
 export const RecentlyActiveCategory = function RecentlyActiveCategory(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
-  const tmp = importDefault(dependencyMap[15])("RecentlyActiveCategory");
-  let obj = arg1(dependencyMap[16]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => collapsed.isCollapsed(guildId));
-  const importDefault = stateFromStores;
+  const tmp = stateFromStores(1324)("RecentlyActiveCategory");
+  let obj = guildId(566);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_5.isCollapsed(guildId));
   const items1 = [guildId, stateFromStores];
   obj = {};
-  const callback = React.useCallback(() => guildId(closure_2[18]).setRecentlyActiveCollapsed(guildId, !stateFromStores), items1);
-  const intl = arg1(dependencyMap[19]).intl;
-  obj.name = intl.string(arg1(dependencyMap[19]).t.uZyspD);
+  const callback = React.useCallback(() => guildId(outer1_2[18]).setRecentlyActiveCollapsed(guildId, !stateFromStores), items1);
+  const intl = guildId(1212).intl;
+  obj.name = intl.string(guildId(1212).t.uZyspD);
   obj.collapsed = stateFromStores;
   obj.onPress = callback;
   obj.withMarginTop = guildId.withMarginTop;
@@ -215,28 +220,26 @@ export const RecentlyActiveCategory = function RecentlyActiveCategory(guildId) {
 };
 export const SuggestedCategory = function SuggestedCategory(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const channelIds = guildId.channelIds;
-  const importDefault = channelIds;
-  const tmp = importDefault(dependencyMap[15])("SuggestedCategory");
-  const items = [guildId, channelIds];
-  const obj = {};
+  const tmp = channelIds(1324)("SuggestedCategory");
+  let items = [guildId, channelIds];
+  let obj = {};
   const callback = React.useCallback(() => {
-    let obj = guildId(closure_2[20]);
-    obj = { 0: "r", 9223372036854775807: "ru-UA", 9223372036854775807: "Array" };
+    let obj = guildId(outer1_2[20]);
+    obj = { key: "REDESIGN_SUGGESTED_CHANNELS_CLEAR", options: null, hasIcons: true };
     obj = {};
-    const intl = guildId(closure_2[19]).intl;
-    obj.label = intl.string(guildId(closure_2[19]).t.VkKicb);
+    const intl = guildId(outer1_2[19]).intl;
+    obj.label = intl.string(guildId(outer1_2[19]).t.VkKicb);
     obj.onPress = function onPress() {
-      callback(closure_2[21]).clearRecentChannels(callback, closure_1);
+      guildId(outer2_2[21]).clearRecentChannels(outer1_0, outer1_1);
     };
-    obj.IconComponent = guildId(closure_2[22]).CircleXIcon;
+    obj.IconComponent = guildId(outer1_2[22]).CircleXIcon;
     const items = [obj];
     obj.options = items;
     const result = obj.showSimpleActionSheet(obj);
   }, items);
-  const intl = arg1(dependencyMap[19]).intl;
-  obj.name = intl.string(arg1(dependencyMap[19]).t.HbJ7eD);
+  let intl = guildId(1212).intl;
+  obj.name = intl.string(guildId(1212).t.HbJ7eD);
   obj.onPress = callback;
   obj.withMarginTop = guildId.withMarginTop;
   obj.styles = styles(tmp);

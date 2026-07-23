@@ -1,54 +1,63 @@
-// Module ID: 8409
-// Function ID: 66979
+// Module ID: 8415
+// Function ID: 67016
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 1838, 5058, 5059, 653, 5057, 5065, 483, 4470, 1212, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8409 (_createForOfIteratorHelperLoose)
+// Module 8415 (_createForOfIteratorHelperLoose)
+import fetchOnboardingPrompts from "fetchOnboardingPrompts";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { NUM_DEFAULT_CHATTABLE_CHANNELS_MIN as closure_7 } from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+
 let GuildSettingsSections;
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -59,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -88,7 +97,6 @@ function _arrayLikeToArray(arg0, arg1) {
 function _isDefaultChannelThresholdMetAfterDelete() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _isDefaultChannelThresholdMetAfterDelete = obj;
   return obj(...arguments);
 }
 function isChattableChannelThresholdMetAfterChannelChange() {
@@ -97,22 +105,15 @@ function isChattableChannelThresholdMetAfterChannelChange() {
 function _isChattableChannelThresholdMetAfterChannelChange() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _isChattableChannelThresholdMetAfterChannelChange = obj;
   return obj(...arguments);
 }
 function _checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _checkChattableChannelThresholdMetAfterChannelPermissionDeny = obj;
   return obj(...arguments);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).NUM_DEFAULT_CHATTABLE_CHANNELS_MIN;
-({ GuildFeatures: closure_8, GuildSettingsSections, Permissions: closure_9 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_onboarding/DefaultChannelThresholdUtils.tsx");
+({ GuildFeatures: closure_8, GuildSettingsSections, Permissions: closure_9 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/DefaultChannelThresholdUtils.tsx");
 
 export const isDefaultChannelThresholdMetAfterDelete = function isDefaultChannelThresholdMetAfterDelete(guildId, id) {
   return _isDefaultChannelThresholdMetAfterDelete(...arguments);

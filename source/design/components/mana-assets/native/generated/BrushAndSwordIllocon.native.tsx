@@ -1,12 +1,13 @@
-// Module ID: 5909
-// Function ID: 49796
+// Module ID: 5914
+// Function ID: 49825
 // Name: BrushAndSwordIllocon
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: [33, 5085, 5915, 2]
 // Exports: BrushAndSwordIllocon
 
-// Module 5909 (BrushAndSwordIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/BrushAndSwordIllocon.native.tsx");
+// Module 5914 (BrushAndSwordIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BrushAndSwordIllocon.native.tsx");
 
 export const BrushAndSwordIllocon = function BrushAndSwordIllocon(size) {
   let accessibilityLabel;
@@ -18,7 +19,7 @@ export const BrushAndSwordIllocon = function BrushAndSwordIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5915) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -26,5 +27,5 @@ export const BrushAndSwordIllocon = function BrushAndSwordIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

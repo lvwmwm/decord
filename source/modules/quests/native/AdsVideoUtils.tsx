@@ -1,13 +1,12 @@
-// Module ID: 13817
-// Function ID: 104502
+// Module ID: 13931
+// Function ID: 106658
 // Name: items
-// Dependencies: []
+// Dependencies: [477, 2]
 // Exports: isSourceError
 
-// Module 13817 (items)
+// Module 13931 (items)
 const items = [-1000, -1003, -1004, -1008];
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/quests/native/AdsVideoUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/native/AdsVideoUtils.tsx");
 
 export const isSourceError = function isSourceError(error) {
   if (null != error) {
@@ -23,7 +22,7 @@ export const isSourceError = function isSourceError(error) {
     }
     let tmp4 = !tmp7;
   } else {
-    const tmp3 = !require(dependencyMap[0]).isIOS();
+    const tmp3 = !require(477) /* set */.isIOS();
     tmp4 = !tmp3;
     if (!tmp3) {
       let hasItem = null != code;
@@ -32,7 +31,7 @@ export const isSourceError = function isSourceError(error) {
       }
       tmp4 = hasItem;
     }
-    const obj2 = require(dependencyMap[0]);
+    const obj2 = require(477) /* set */;
   }
   return tmp4;
 };

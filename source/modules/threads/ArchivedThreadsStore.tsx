@@ -1,9 +1,21 @@
-// Module ID: 7003
-// Function ID: 56091
+// Module ID: 7008
+// Function ID: 56125
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 1352, 1348, 4142, 3760, 1357, 7009, 22, 1359, 21, 5684, 566, 686, 2]
 
-// Module 7003 (_isNativeReflectConstruct)
+// Module 7008 (_isNativeReflectConstruct)
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getForumPostReadStates from "getForumPostReadStates";
+import dispatcher from "dispatcher";
+import set from "set";
+import _slicedToArray from "_slicedToArray";
+import { ALL_CHANNEL_TYPES } from "_callSuper";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +25,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +78,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -108,7 +120,7 @@ function listKey(channelId, sortOrder, tagFilter, tagSetting) {
   }
 }
 function getSortValue(channel, sortOrder) {
-  if (sortOrder === sortOrder(dependencyMap[10]).ThreadSortOrder.LATEST_ACTIVITY) {
+  if (sortOrder === require(1357) /* set */.ThreadSortOrder.LATEST_ACTIVITY) {
     let id = closure_11.lastMessageId(channel.id);
   } else {
     id = channel.id;
@@ -116,30 +128,32 @@ function getSortValue(channel, sortOrder) {
   return id;
 }
 function resortListState(value) {
+  let _callSuper;
+  let dependencyMap;
+  let importDefault;
   const sortOrder = value.sortOrder;
-  const arg1 = sortOrder;
-  ({ tagFilter: closure_1, tagSetting: closure_2, hasMore: closure_3 } = value);
+  ({ tagFilter: importDefault, tagSetting: dependencyMap, hasMore: _callSuper } = value);
   const channel = store.getChannel(value.threads[value.threads.length - 1]);
   let tmp2 = null;
   if (null != channel) {
     tmp2 = getSortValue(channel, sortOrder);
   }
-  let closure_4 = tmp2;
-  const tmp4 = importDefault(dependencyMap[12]);
-  const found = importDefault(dependencyMap[12])(store.getAllThreadsForParent(value.channelId)).filter((isArchivedThread) => isArchivedThread.isArchivedThread());
+  let _isNativeReflectConstruct = tmp2;
+  const tmp4 = importDefault(22);
+  const found = importDefault(22)(store.getAllThreadsForParent(value.channelId)).filter((isArchivedThread) => isArchivedThread.isArchivedThread());
   const found1 = found.filter((appliedTags) => {
-    if (0 !== lib.size) {
-      if (sortOrder(closure_2[13]).ThreadSearchTagSetting.MATCH_SOME === closure_2) {
+    if (0 !== closure_1.size) {
+      if (sortOrder(outer1_2[13]).ThreadSearchTagSetting.MATCH_SOME === closure_2) {
         const appliedTags2 = appliedTags.appliedTags;
         let someResult;
         if (null != appliedTags2) {
-          someResult = appliedTags2.some((arg0) => set.has(arg0));
+          someResult = appliedTags2.some((arg0) => outer1_1.has(arg0));
         }
         if (true !== someResult) {
           return false;
         }
-      } else if (sortOrder(closure_2[13]).ThreadSearchTagSetting.MATCH_ALL === tmp14) {
-        const tmp21 = callback(lib.values());
+      } else if (sortOrder(outer1_2[13]).ThreadSearchTagSetting.MATCH_ALL === tmp14) {
+        const tmp21 = outer1_16(closure_1.values());
         let iter2 = tmp21();
         if (!iter2.done) {
           while (true) {
@@ -158,18 +172,18 @@ function resortListState(value) {
           return false;
         }
       }
-      const tmp14 = closure_2;
+      tmp14 = closure_2;
     }
-    if (closure_3) {
-      if (null != tmp2) {
+    if (_callSuper) {
+      if (null != _isNativeReflectConstruct) {
         let tmp7 = null;
         if (null != appliedTags) {
-          tmp7 = callback2(appliedTags, sortOrder);
+          tmp7 = outer1_19(appliedTags, sortOrder);
         }
         let tmp10 = null != tmp7;
         if (tmp10) {
-          tmp10 = lib(closure_2[14]).compare(tmp7, tmp2) >= 0;
-          const obj = lib(closure_2[14]);
+          tmp10 = outer1_1(outer1_2[14]).compare(tmp7, _isNativeReflectConstruct) >= 0;
+          const obj = outer1_1(outer1_2[14]);
         }
         return tmp10;
       }
@@ -177,38 +191,28 @@ function resortListState(value) {
     return true;
   });
   const sorted = found1.sort((arg0, arg1) => {
-    const obj = lib(closure_2[14]);
-    return obj.compare(callback2(arg0, sortOrder), callback2(arg1, sortOrder));
+    const obj = outer1_1(outer1_2[14]);
+    return obj.compare(outer1_19(arg0, sortOrder), outer1_19(arg1, sortOrder));
   });
   const mapped = sorted.map((id) => id.id);
-  const tmp4Result = importDefault(dependencyMap[12])(store.getAllThreadsForParent(value.channelId));
+  const tmp4Result = importDefault(22)(store.getAllThreadsForParent(value.channelId));
   value.threads = mapped.reverse().value();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const ALL_CHANNEL_TYPES = arg1(dependencyMap[6]).ALL_CHANNEL_TYPES;
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
 const map = new Map();
 let closure_14 = [];
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class ArchivedThreadsStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, ArchivedThreadsStore);
-      obj = closure_6(ArchivedThreadsStore);
-      tmp2 = closure_5;
-      if (closure_15()) {
+      tmp = outer1_3(this, ArchivedThreadsStore);
+      obj = outer1_6(ArchivedThreadsStore);
+      tmp2 = outer1_5;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -217,19 +221,18 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ArchivedThreadsStore;
   callback2(ArchivedThreadsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_10, closure_12, closure_11);
+      this.waitFor(outer1_10, outer1_12, outer1_11);
     }
   };
   const items = [obj, , , , , ];
   obj = {
     key: "getCanLoadMore",
     value(arg0, arg1, arg2, arg3) {
-      const value = store.get(callback4(arg0, arg1, arg2, arg3));
+      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
       let tmp2 = null != value;
       if (tmp2) {
         tmp2 = value.hasMore && !value.loading && !value.failed;
@@ -242,7 +245,7 @@ let tmp3 = (Store) => {
   obj = {
     key: "getNextOffset",
     value(arg0, arg1, arg2, arg3) {
-      const value = store.get(callback4(arg0, arg1, arg2, arg3));
+      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
       let nextOffset;
       if (null != value) {
         nextOffset = value.nextOffset;
@@ -258,7 +261,7 @@ let tmp3 = (Store) => {
   items[3] = {
     key: "getIsInitialLoad",
     value(arg0, arg1, arg2, arg3) {
-      const value = store.get(callback4(arg0, arg1, arg2, arg3));
+      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
       let isInitialLoad;
       if (null != value) {
         isInitialLoad = value.isInitialLoad;
@@ -269,7 +272,7 @@ let tmp3 = (Store) => {
   items[4] = {
     key: "isLoading",
     value(arg0, arg1, arg2, arg3) {
-      const value = store.get(callback4(arg0, arg1, arg2, arg3));
+      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
       let loading;
       if (null != value) {
         loading = value.loading;
@@ -280,28 +283,29 @@ let tmp3 = (Store) => {
   items[5] = {
     key: "getThreads",
     value(arg0, arg1, arg2, arg3) {
-      const value = store.get(callback4(arg0, arg1, arg2, arg3));
+      const value = outer1_13.get(outer1_18(arg0, arg1, arg2, arg3));
       let threads;
       if (null != value) {
         threads = value.threads;
       }
       if (null == threads) {
-        threads = closure_14;
+        threads = outer1_14;
       }
       return threads;
     }
   };
   return callback(ArchivedThreadsStore, items);
-}(importDefault(dependencyMap[16]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "ArchivedThreadsStore";
-tmp3 = new tmp3(importDefault(dependencyMap[17]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function resetAll() {
     map.clear();
   },
   THREAD_DELETE: function handleThreadDelete(channel) {
-    if (!function removeThreadIdFromAllLists(id) {
+    if (!(function removeThreadIdFromAllLists(id) {
       let iter3;
-      const tmp = callback(closure_13.values());
+      let closure_0 = id;
+      const tmp = outer1_16(outer1_13.values());
       const iter = tmp();
       let iter2 = iter;
       let flag = false;
@@ -312,7 +316,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
           let threads = value.threads;
           if (threads.indexOf(id) >= 0) {
             let threads1 = value.threads;
-            value.threads = threads1.filter((arg0) => arg0 !== arg0);
+            value.threads = threads1.filter((arg0) => arg0 !== closure_0);
             flag = true;
           }
           iter3 = tmp();
@@ -321,14 +325,13 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
         } while (!iter3.done);
       }
       return flag2;
-    }(channel.channel.id)) {
+    })(channel.channel.id)) {
       return false;
     }
   },
   THREAD_UPDATE: function handleThreadUpdate(channel) {
     let iter3;
     channel = channel.channel;
-    const arg1 = channel;
     if (obj.isForumPostPinned(channel.id)) {
       const tmp3 = _createForOfIteratorHelperLoose(map.values());
       const iter = tmp3();
@@ -358,7 +361,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     } else {
       return false;
     }
-    const obj = arg1(dependencyMap[15]);
+    obj = channel(5684);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     let iter3;
@@ -369,11 +372,11 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     let flag2 = false;
     if (!iter.done) {
       do {
-        let tmp2 = closure_8;
-        let tmp3 = closure_8(iter2.value, 2);
+        let tmp2 = callback3;
+        let tmp3 = callback3(iter2.value, 2);
         if (tmp3[1].channelId === channel.channel.id) {
-          let tmp5 = closure_13;
-          let deleteResult = closure_13.delete(tmp4);
+          let tmp5 = map;
+          let deleteResult = map.delete(tmp4);
           flag = true;
         }
         iter3 = tmp();
@@ -398,13 +401,13 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     let iter = tmp4();
     if (!iter.done) {
       do {
-        let tmp5 = closure_8;
-        let tmp6 = closure_8(iter.value, 2);
+        let tmp5 = callback3;
+        let tmp6 = callback3(iter.value, 2);
         [tmp7, tmp8] = tmp6;
         let tmp9 = tmp7 !== tmp3 && tmp8.channelId === tagFilter.channelId && tmp8.failed;
         if (tmp9) {
-          let tmp10 = closure_13;
-          let deleteResult = closure_13.delete(tmp7);
+          let tmp10 = map;
+          let deleteResult = map.delete(tmp7);
         }
         iter2 = tmp4();
         iter = iter2;
@@ -412,7 +415,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     }
     const value = map.get(tmp3);
     if (null == value) {
-      const obj = { threads: [] };
+      const obj = { loading: false, isInitialLoad: true, hasMore: false, failed: false, threads: [], nextOffset: 0 };
       ({ channelId: obj.channelId, sortOrder: obj.sortOrder } = tagFilter);
       obj.tagFilter = tagFilter;
       obj.tagSetting = tagFilter.tagSetting;
@@ -441,7 +444,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
             break;
           }
         }
-        const tmp20 = callback3(iter3.value, 2);
+        tmp20 = callback3(iter3.value, 2);
       }
     }
   },
@@ -457,12 +460,12 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
       return false;
     } else {
       let threads = tagFilter.threads;
-      const found = threads.filter((type) => set.has(type.type));
+      const found = threads.filter((type) => outer1_9.has(type.type));
       threads = value.threads;
       value.threads = threads.concat(found.map((id) => id.id));
       const channel = store.getChannel(value.channelId);
       if (tmp4) {
-        let obj = arg1(dependencyMap[11]);
+        let obj = require(7009) /* trackForumChannelSeenBatch */;
         obj = {};
         ({ guild_id: obj2.guildId, id: obj2.channelId } = channel);
         obj.numArchivedThreads = value.threads.length;
@@ -507,8 +510,8 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
         let value = iter2.value;
         let tmp2 = null != channelId.channelId && value.channelId !== channelId.channelId;
         if (!tmp2) {
-          let tmp3 = closure_20;
-          let tmp4 = closure_20(value);
+          let tmp3 = resortListState;
+          let tmp4 = resortListState(value);
           flag = true;
         }
         iter3 = tmp();
@@ -519,7 +522,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[17]), {
     return flag2 ? undefined : false;
   }
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/threads/ArchivedThreadsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/threads/ArchivedThreadsStore.tsx");
 
 export default tmp3;
 export const PAGE_SIZE = 25;

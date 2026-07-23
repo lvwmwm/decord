@@ -1,13 +1,13 @@
-// Module ID: 6399
-// Function ID: 50531
+// Module ID: 6404
+// Function ID: 50560
 // Name: PencilIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6405, 2]
 // Exports: PencilIllocon
 
-// Module 6399 (PencilIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PencilIllocon.native.tsx");
+// Module 6404 (PencilIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PencilIllocon.native.tsx");
 
 export const PencilIllocon = function PencilIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const PencilIllocon = function PencilIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6405) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const PencilIllocon = function PencilIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

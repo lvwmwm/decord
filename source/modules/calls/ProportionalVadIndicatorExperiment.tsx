@@ -1,9 +1,10 @@
-// Module ID: 4950
-// Function ID: 42515
-// Dependencies: []
+// Module ID: 4953
+// Function ID: 42533
+// Dependencies: [1325, 2]
 
-// Module 4950
-const tmp2 = importDefault(dependencyMap[0])({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true }, [2]: { <string:1741645776>: null, <string:2053072846>: null }, [3]: {}, [4]: {} } });
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/calls/ProportionalVadIndicatorExperiment.tsx");
+// Module 4953
+const obj = { kind: "user", name: "2025-12-proportional-vad-indicator", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true }, [2]: { enabled: true, disableUI: true }, [3]: { enabled: true, disableUI: true, swallowVolumeOnlySpeakingEvents: true }, [4]: { enabled: true, disableUI: true, dontEmitVolumeOnlySpeakingEvents: true } } };
+const tmp2 = require("getUnitId")(obj);
+const result = require("set").fileFinishedImporting("modules/calls/ProportionalVadIndicatorExperiment.tsx");
 
 export default tmp2;

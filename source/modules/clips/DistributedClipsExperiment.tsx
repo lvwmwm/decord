@@ -1,12 +1,13 @@
-// Module ID: 4193
-// Function ID: 36048
+// Module ID: 4197
+// Function ID: 36080
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 4193 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enableDistributedClips: false }, variations: { [1]: { enableDistributedClips: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/clips/DistributedClipsExperiment.tsx");
+// Module 4197 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-05-distributed-clips", defaultConfig: { enableDistributedClips: false }, variations: { [1]: { enableDistributedClips: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/clips/DistributedClipsExperiment.tsx");
 
 export default apexExperiment;

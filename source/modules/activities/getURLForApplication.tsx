@@ -1,10 +1,13 @@
-// Module ID: 10471
-// Function ID: 81088
+// Module ID: 10481
+// Function ID: 81138
 // Name: getNonTestModeUrlForApplication
-// Dependencies: []
+// Dependencies: [7372, 7370, 2]
 // Exports: default
 
-// Module 10471 (getNonTestModeUrlForApplication)
+// Module 10481 (getNonTestModeUrlForApplication)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+
 function getNonTestModeUrlForApplication(arg0) {
   let combined = null;
   if (null != ACTIVITY_APPLICATION_HOST) {
@@ -24,15 +27,13 @@ function isUsingDevShelfActivityUrlOverride() {
   }
   return useActivityUrlOverride;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/getURLForApplication.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/getURLForApplication.tsx");
 
 export default function getURLForApplication(arg0) {
   if (isUsingDevShelfActivityUrlOverride()) {
     let testModeOriginURL = store.getState().activityUrlOverride;
-  } else if (closure_0.inTestModeForEmbeddedApplication(arg0)) {
-    testModeOriginURL = closure_0.testModeOriginURL;
+  } else if (_isNativeReflectConstruct.inTestModeForEmbeddedApplication(arg0)) {
+    testModeOriginURL = _isNativeReflectConstruct.testModeOriginURL;
   } else {
     testModeOriginURL = getNonTestModeUrlForApplication(arg0);
   }

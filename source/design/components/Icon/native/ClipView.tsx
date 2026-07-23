@@ -1,18 +1,28 @@
-// Module ID: 7867
-// Function ID: 62668
+// Module ID: 7873
+// Function ID: 62705
 // Name: SolidCutout
-// Dependencies: []
+// Dependencies: [31, 27, 33, 3834, 7874, 7875, 3991, 2]
 // Exports: default
 
-// Module 7867 (SolidCutout)
+// Module 7873 (SolidCutout)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import animatedComponent from "__INTERNAL_VIEW_CONFIG";
+import importDefaultResult from "module_3991";
+
 let StyleSheet;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 function SolidCutout(arg0) {
   let backgroundColor;
   let cutout;
   ({ backgroundColor, cutout } = arg0);
   const style = [closure_9.solidCutout];
   if (cutout.shape === obj.Circle) {
-    let obj = { backgroundColor, borderRadius: cutout.size / 2 };
+    obj = { backgroundColor, borderRadius: cutout.size / 2 };
     ({ size: obj.height, size: obj.width, x: obj.left, y: obj.top } = cutout);
     style.push(obj);
   } else {
@@ -29,79 +39,66 @@ function SolidCutout(arg0) {
       style.push(obj);
     }
   }
-  return callback(closure_3, { style });
+  return callback(closure_4, { style });
 }
 function SolidCutoutOverlay(arg0) {
   let cutouts;
-  ({ backgroundColor: closure_0, cutouts } = arg0);
-  return callback(closure_3, { pointerEvents: "none", style: closure_9.solidCutoutContainer, children: cutouts.map((cutout) => callback(closure_10, { backgroundColor: closure_0, cutout }, arg1)) });
+  let require;
+  ({ backgroundColor: require, cutouts } = arg0);
+  return callback(closure_4, { pointerEvents: "none", style: closure_9.solidCutoutContainer, children: cutouts.map((cutout) => outer1_5(outer1_10, { backgroundColor: closure_0, cutout }, arg1)) });
 }
 function TokenSolidCutoutOverlay(arg0) {
   let backgroundColor;
   let cutouts;
   ({ backgroundColor, cutouts } = arg0);
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(3834) /* map */;
   obj = { backgroundColor: obj.useToken(backgroundColor), cutouts };
   return callback(SolidCutoutOverlay, obj);
 }
-let closure_2 = importAll(dependencyMap[0]);
-let obj = arg1(dependencyMap[1]);
-({ StyleSheet, View: closure_3 } = obj);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-obj = { Circle: "circle", RoundedRect: "rounded-rect" };
-const tmp2 = arg1(dependencyMap[2]);
-if (obj3.isFabric()) {
-  let importDefaultResult = importDefault(dependencyMap[4]);
-} else {
-  importDefaultResult = obj.requireNativeComponent("ClipView");
-}
+({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let obj = { Circle: "circle", RoundedRect: "rounded-rect" };
 let closure_8 = [];
-obj = { solidClipView: { overflow: "hidden" } };
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj.solidCutoutContainer = {};
+obj = {};
+obj = {};
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+obj.solidCutoutContainer = obj;
 obj.solidCutout = { position: "absolute" };
 const styles = StyleSheet.create(obj);
-const obj1 = {};
-const obj3 = arg1(dependencyMap[3]);
-const animatedComponent = importDefault(dependencyMap[7]).createAnimatedComponent(importDefaultResult);
-const importDefaultResult1 = importDefault(dependencyMap[7]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Icon/native/ClipView.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/ClipView.tsx");
 
-export default function ClipView(children) {
-  let borderRadius;
-  let cutouts;
+export default function ClipView(cutouts) {
+  let children;
   let style;
-  ({ cutouts, borderRadius, style } = children);
-  let obj = { <string:1433821625>: -24, <string:601591618>: null, <string:2578917896>: 1, <string:4032912200>: "Malaysia" };
+  cutouts = cutouts.cutouts;
+  let obj = { children: 0, cutouts: 0, style: 0 };
+  ({ children, style } = cutouts);
   Object.setPrototypeOf(null);
-  const merged = Object.assign(children, obj);
-  const context = React.useContext(arg1(dependencyMap[6]).CutoutBackgroundContext);
-  let tmp4 = style;
-  let tmp5 = cutouts;
-  let tmp6 = null;
+  const merged = Object.assign(cutouts, obj);
+  const context = React.useContext(require(7874) /* context */.CutoutBackgroundContext);
+  let tmp4 = cutouts;
+  let tmp5 = null;
   if (null != context) {
-    const items = [style, closure_9.solidClipView];
-    if (null != borderRadius) {
-      obj = { borderRadius };
-      items.push(obj);
+    let tmp7 = null != cutouts;
+    if (tmp7) {
+      tmp7 = cutouts.length > 0;
     }
-    tmp4 = items;
-    tmp5 = tmp9;
-    tmp6 = null;
-    if (tmp10) {
+    if (!tmp7) {
+      tmp5 = null;
+      tmp4 = tmp6;
+    } else {
       obj = { backgroundColor: context, cutouts };
       callback("string" === typeof context ? SolidCutoutOverlay : TokenSolidCutoutOverlay, obj);
     }
-    const tmp10 = null != cutouts && cutouts.length > 0;
+    tmp6 = closure_8;
   }
-  const obj1 = {};
+  obj = {};
   const merged1 = Object.assign(merged);
-  obj1["borderRadius"] = borderRadius;
-  obj1["cutouts"] = tmp5;
-  obj1["style"] = tmp4;
-  const items1 = [children.children, tmp6];
-  obj1["children"] = items1;
-  return callback2(importDefaultResult, obj1);
+  obj["cutouts"] = tmp4;
+  obj["style"] = style;
+  const items = [children, tmp5];
+  obj["children"] = items;
+  return callback2(importDefault(7875), obj);
 };
 export const ClipViewAnimated = animatedComponent;
 export const CutoutShape = obj;

@@ -1,26 +1,34 @@
-// Module ID: 5774
-// Function ID: 49428
+// Module ID: 5779
+// Function ID: 49455
 // Name: estimateAttachmentWidth
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 5513, 4126, 1324, 5780, 2]
 // Exports: useInputAttachments
 
-// Module 5774 (estimateAttachmentWidth)
+// Module 5779 (estimateAttachmentWidth)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
 let Platform;
+let closure_5;
+let closure_6;
+const require = arg1;
 function estimateAttachmentWidth(arg0, arg1) {
   let num = 0;
   if (null != arg0) {
-    num = arg1(dependencyMap[4]).ICON_SIZE.xs + arg1;
+    num = require(5513) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
   }
   return num;
 }
 function renderInputAttachment(leadingIcon, leadingText, text) {
   if (null != leadingIcon) {
-    let tmp = jsx(leadingIcon, { "Bool(false)": 2676, "Bool(false)": 12800 });
+    let tmp = jsx(leadingIcon, { size: "xs", color: "input-icon-default" });
   } else {
     tmp = null;
     if (null != leadingText) {
       const obj = { variant: "text-md/normal", style: text, children: leadingText };
-      tmp = jsx(leadingText(dependencyMap[5]).Text, obj);
+      tmp = jsx(require(4126) /* Text */.Text, { variant: "text-md/normal", style: text, children: leadingText });
     }
   }
   return tmp;
@@ -28,8 +36,7 @@ function renderInputAttachment(leadingIcon, leadingText, text) {
 class InputAttachmentContainer {
   constructor(arg0) {
     ({ content, style } = global);
-    arg1 = style;
-    ({ setWidth: closure_1, pressableProps } = global);
+    ({ setWidth, pressableProps } = global);
     if (null == content) {
       return null;
     } else {
@@ -77,12 +84,8 @@ class InputAttachmentContainer {
     return;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ Platform, Pressable: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Input/native/useInputAttachments.native.tsx");
+({ Platform, Pressable: closure_5, View: closure_6 } = get_ActivityIndicator);
+const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Input/native/useInputAttachments.native.tsx");
 
 export { estimateAttachmentWidth };
 export { renderInputAttachment };
@@ -92,14 +95,11 @@ export const useInputAttachments = function useInputAttachments(size, leading) {
   let leadingText;
   let trailingIcon;
   let trailingText;
-  let obj = leading(dependencyMap[7]);
-  obj = { size: size.size, hasLeadingIcon: null != size.leadingIcon, isRefreshEnabled: importDefault(dependencyMap[6])("useInputAttachments") };
-  const inputStyles = obj.useInputStyles(obj);
-  leading = inputStyles;
-  const leadingIcon = size.leadingIcon;
-  const importDefault = leadingIcon;
+  let obj = inputStyles(trailingIcon[7]);
+  obj = { size: size.size, hasLeadingIcon: null != size.leadingIcon, isRefreshEnabled: leadingIcon(trailingIcon[6])("useInputAttachments") };
+  inputStyles = obj.useInputStyles(obj);
+  leadingIcon = size.leadingIcon;
   ({ leadingPressableProps, trailingIcon } = size);
-  const dependencyMap = trailingIcon;
   let trailingPressableProps = size.trailingPressableProps;
   leading = undefined;
   ({ leadingText, trailingText } = size);
@@ -132,9 +132,9 @@ export const useInputAttachments = function useInputAttachments(size, leading) {
       if (null == trailing1) {
         let trailingIcon2 = inputStyles.trailingText;
       }
-      const tmp11 = callback(React.useState(() => callback(leadingIcon, inputStyles.leadingIcon.paddingStart + inputStyles.leadingIcon.paddingEnd)), 2);
+      const tmp11 = callback(React.useState(() => outer1_8(leadingIcon, inputStyles.leadingIcon.paddingStart + inputStyles.leadingIcon.paddingEnd)), 2);
       const first = tmp11[0];
-      const tmp13 = callback(React.useState(() => callback(trailingIcon, inputStyles.trailingIcon.paddingStart + inputStyles.trailingIcon.paddingEnd)), 2);
+      const tmp13 = callback(React.useState(() => outer1_8(trailingIcon, inputStyles.trailingIcon.paddingStart + inputStyles.trailingIcon.paddingEnd)), 2);
       const first1 = tmp13[0];
       obj = {};
       const obj1 = { content: leading, setWidth: tmp11[1] };
@@ -147,7 +147,7 @@ export const useInputAttachments = function useInputAttachments(size, leading) {
       }
       obj1.pressableProps = leadingPressableProps;
       obj1.style = leadingIcon2;
-      obj.leading = <InputAttachmentContainer {...obj1} />;
+      obj.leading = <InputAttachmentContainer content={leading} setWidth={tmp11[1]} />;
       const obj2 = { content: trailing, setWidth: tmp13[1] };
       let prop1;
       if (null != leading) {
@@ -158,7 +158,7 @@ export const useInputAttachments = function useInputAttachments(size, leading) {
       }
       obj2.pressableProps = trailingPressableProps;
       obj2.style = trailingIcon2;
-      obj.trailing = <InputAttachmentContainer {...obj2} />;
+      obj.trailing = <InputAttachmentContainer content={trailing} setWidth={tmp13[1]} />;
       const obj3 = {};
       let diff;
       if (0 !== first) {

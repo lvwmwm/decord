@@ -1,38 +1,38 @@
-// Module ID: 8718
-// Function ID: 69010
+// Module ID: 8725
+// Function ID: 69051
 // Name: fetchVirtualCurrencyBalance
-// Dependencies: []
+// Dependencies: [5, 4175, 653, 3, 686, 507, 4029, 7369, 1184, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 8718 (fetchVirtualCurrencyBalance)
+// Module 8725 (fetchVirtualCurrencyBalance)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import importDefaultResult from "timestamp";
+
+const require = arg1;
 function fetchVirtualCurrencyBalance() {
   return _fetchVirtualCurrencyBalance(...arguments);
 }
 function _fetchVirtualCurrencyBalance() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchVirtualCurrencyBalance = obj;
   return obj(...arguments);
 }
 function _redeemVirtualCurrencyForSKU() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _redeemVirtualCurrencyForSKU = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-let importDefaultResult = importDefault(dependencyMap[3]);
 importDefaultResult = new importDefaultResult("VirtualCurrencyActionCreators");
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/virtual_currency/VirtualCurrencyActionCreators.tsx");
+const result = require("ME").fileFinishedImporting("modules/virtual_currency/VirtualCurrencyActionCreators.tsx");
 
 export { fetchVirtualCurrencyBalance };
 export const redeemVirtualCurrencyForSKU = function redeemVirtualCurrencyForSKU(arg0) {
   return _redeemVirtualCurrencyForSKU(...arguments);
 };
 export const setBalancePillOverlay = function setBalancePillOverlay(balancePillOverlay) {
-  let obj = importDefault(dependencyMap[4]);
+  let obj = importDefault(686);
   obj = { type: "VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY", balancePillOverlay };
   return obj.dispatch(obj);
 };

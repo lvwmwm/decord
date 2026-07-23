@@ -1,9 +1,11 @@
 // Module ID: 897
-// Function ID: 9861
+// Function ID: 9862
 // Name: _shouldDropEvent
-// Dependencies: []
+// Dependencies: [800, 801, 863, 810]
 
 // Module 897 (_shouldDropEvent)
+import setupIntegration from "setupIntegration";
+
 function _shouldDropEvent(message, message2) {
   let tmp2 = !tmp;
   if (!!message2) {
@@ -61,9 +63,9 @@ function _shouldDropEvent(message, message2) {
   return tmp2;
 }
 function _isSameStacktrace(arg0, arg1) {
-  const framesFromEvent = require(dependencyMap[3]).getFramesFromEvent(arg0);
-  const obj = require(dependencyMap[3]);
-  const framesFromEvent1 = require(dependencyMap[3]).getFramesFromEvent(arg1);
+  const framesFromEvent = require(810) /* createStackParser */.getFramesFromEvent(arg0);
+  const obj = require(810) /* createStackParser */;
+  const framesFromEvent1 = require(810) /* createStackParser */.getFramesFromEvent(arg1);
   if (!framesFromEvent) {
     if (!framesFromEvent1) {
       return true;
@@ -119,22 +121,22 @@ function _getExceptionFromEvent(exception) {
   return first;
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[2]);
 
 export { _shouldDropEvent };
-export const dedupeIntegration = _module.defineIntegration(function _dedupeIntegration() {
+export const dedupeIntegration = setupIntegration.defineIntegration(function _dedupeIntegration() {
   return {
     name: "Dedupe",
     processEvent(type) {
-      const tmp = type;
       if (type.type) {
         return type;
-      } else if (callback(tmp, tmp)) {
-        if (tmp(closure_1[0]).DEBUG_BUILD) {
-          const debug = tmp(closure_1[1]).debug;
+      } else if (outer1_2(tmp, closure_0)) {
+        if (outer1_0(outer1_1[0]).DEBUG_BUILD) {
+          const debug = outer1_0(outer1_1[1]).debug;
           debug.warn("Event dropped due to being a duplicate of previously captured event.");
         }
         return null;
+      } else {
+        closure_0 = tmp;
       }
     }
   };

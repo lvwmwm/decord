@@ -1,15 +1,15 @@
-// Module ID: 10380
-// Function ID: 80056
-// Dependencies: [578158592, 131072, 1148452864, 1157627909]
+// Module ID: 10390
+// Function ID: 80106
+// Dependencies: [10391, 10392, 10401, 2]
 
-// Module 10380
-const _module = require(dependencyMap[0]);
-if (_module.isAnimatedAndroidKeyboard()) {
-  let importDefaultResult = importDefault(dependencyMap[1]);
+// Module 10390
+import apexExperiment from "apexExperiment";
+
+if (apexExperiment.isAnimatedAndroidKeyboard()) {
+  let importDefaultResult = require("ChatViewWrapperAnimatedKeyboard");
 } else {
-  importDefaultResult = importDefault(dependencyMap[2]);
+  importDefaultResult = require("ChatViewWrapperBase");
 }
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/chat/native/ChatViewWrapper.tsx");
+const result = require("ChatViewWrapperBase").fileFinishedImporting("modules/chat/native/ChatViewWrapper.tsx");
 
 export default importDefaultResult;

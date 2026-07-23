@@ -1,7 +1,7 @@
 // Module ID: 1100
-// Function ID: 12569
+// Function ID: 12570
 // Name: mapSamples
-// Dependencies: []
+// Dependencies: [1099, 794, 1096]
 // Exports: convertToSentryProfile
 
 // Module 1100 (mapSamples)
@@ -37,7 +37,7 @@ function mapSamples(samples) {
         if (result >= tmp2) {
           let tmp25 = require;
           let tmp26 = dependencyMap;
-          let debug2 = require(dependencyMap[1]).debug;
+          let debug2 = require(794) /* registerSpanErrorInstrumentation */.debug;
           let tmp27 = result;
           let tmp28 = tmp;
           let _HermesInternal = HermesInternal;
@@ -46,7 +46,7 @@ function mapSamples(samples) {
           let str4 = "ns.";
           let warnResult = debug2.warn("[Profiling] Sample has elapsed time since start " + obj6 + "ns greater than the max elapsed time " + tmp2 + "ns.");
           iter.return();
-          // break
+          break;
         } else {
           let tmp21 = items;
           obj = {};
@@ -55,13 +55,13 @@ function mapSamples(samples) {
           let tmp23 = result;
           obj.elapsed_since_start_ns = obj6.toFixed(0);
           let arr = items.push(obj);
-          // continue
+          continue;
         }
         obj = { samples: items, hermesStacks: set1, jsThreads: set };
         return obj;
       }
     } else {
-      const debug = require(dependencyMap[1]).debug;
+      const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
       debug.warn("[Profiling] No samples found in profile.");
       obj1 = { samples: items };
       obj1.hermesStacks = obj1;
@@ -82,7 +82,7 @@ function parseHermesJSStackFrame(category) {
   } else {
     if (undefined !== category.funcVirtAddr) {
       if (undefined !== category.offset) {
-        const obj1 = { function: category.name, abs_path: require(dependencyMap[2]).DEFAULT_BUNDLE_NAME, lineno: 1 };
+        const obj1 = { function: category.name, abs_path: require(1096) /* DEFAULT_BUNDLE_NAME */.DEFAULT_BUNDLE_NAME, lineno: 1 };
         const _Number3 = Number;
         const _Number4 = Number;
         obj1.colno = Number(category.funcVirtAddr) + Number(category.offset) + 1;
@@ -100,7 +100,7 @@ function parseHermesJSStackFrame(category) {
       name = category.name;
     }
     obj.function = name;
-    obj.abs_path = require(dependencyMap[2]).DEFAULT_BUNDLE_NAME;
+    obj.abs_path = require(1096) /* DEFAULT_BUNDLE_NAME */.DEFAULT_BUNDLE_NAME;
     let NumberResult1;
     if (undefined !== category.line) {
       const _Number = Number;
@@ -116,14 +116,14 @@ function parseHermesJSStackFrame(category) {
     return obj;
   }
 }
-let closure_2 = 1000000 * require(dependencyMap[0]).MAX_PROFILE_DURATION_MS;
+let closure_2 = 1000000 * require("module_1099").MAX_PROFILE_DURATION_MS;
 
 export const convertToSentryProfile = function convertToSentryProfile(hermesProfile) {
   let hermesStacks;
   let jsThreads;
   let samples;
   if (0 === hermesProfile.samples.length) {
-    const debug2 = require(dependencyMap[1]).debug;
+    const debug2 = require(794) /* registerSpanErrorInstrumentation */.debug;
     debug2.warn("[Profiling] No samples found in profile.");
     return null;
   } else {
@@ -145,10 +145,10 @@ export const convertToSentryProfile = function convertToSentryProfile(hermesProf
         } else {
           let _Number = Number;
           let result = map.set(Number(key10009), items.length);
-          let tmp4 = closure_4;
-          let arr = items.push(closure_4(tmp));
+          let tmp4 = parseHermesJSStackFrame;
+          let arr = items.push(parseHermesJSStackFrame(tmp));
           let tmp6 = tmp;
-          // continue
+          continue;
         }
         continue;
       }
@@ -183,7 +183,7 @@ export const convertToSentryProfile = function convertToSentryProfile(hermesProf
           let tmp23 = tmp29;
           let tmp24 = tmp7[tmp29];
           let tmp25 = tmp24;
-          let parent;
+          parent = undefined;
           if (null !== tmp24) {
             let tmp27 = tmp24;
             if (undefined !== tmp25) {
@@ -197,7 +197,7 @@ export const convertToSentryProfile = function convertToSentryProfile(hermesProf
       let tmp30 = items1;
       let tmp31 = items2;
       let arr1 = items1.push(items2);
-      // continue
+      continue;
     }
     obj = { stacks: items1, hermesStackToSentryStackMap: map1 };
     const hermesStackToSentryStackMap = obj.hermesStackToSentryStackMap;
@@ -210,7 +210,7 @@ export const convertToSentryProfile = function convertToSentryProfile(hermesProf
       if (undefined === value) {
         let tmp42 = require;
         let tmp43 = dependencyMap;
-        let debug = require(dependencyMap[1]).debug;
+        let debug = require(794) /* registerSpanErrorInstrumentation */.debug;
         let tmp44 = nextResult1;
         let _HermesInternal = HermesInternal;
         let errorResult = debug.error("[Profiling] Hermes Stack ID " + tmp36.stack_id + " not found when mapping to Sentry Stack ID.");
@@ -220,18 +220,19 @@ export const convertToSentryProfile = function convertToSentryProfile(hermesProf
         let tmp41 = value;
         tmp36.stack_id = tmp39;
       }
-      // continue
+      continue;
     }
     obj = {};
     for (const item10103 of jsThreads) {
       let tmp47 = obj;
-      obj[item10103] = { "Null": -41871550653754550000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -4925261528119275000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      obj[item10103] = { name: "JavaScriptThread", priority: 1 };
+      continue;
     }
     obj1 = { samples, frames: obj.frames, stacks: obj.stacks, thread_metadata: obj };
     const _Object = Object;
-    const obj3 = map1;
+    obj3 = map1;
     const tmp55 = mapSamples(hermesProfile.samples);
-    const tmp7 = stackFrames;
+    tmp7 = stackFrames;
     obj1.active_thread_id = Object.keys(obj)[0] || "0";
     return obj1;
   }

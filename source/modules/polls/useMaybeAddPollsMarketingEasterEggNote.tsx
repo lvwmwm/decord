@@ -1,23 +1,25 @@
-// Module ID: 9383
-// Function ID: 73158
+// Module ID: 9390
+// Function ID: 73199
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: []
+// Dependencies: [1921, 566, 1212, 2]
 // Exports: default
 
-// Module 9383 (useMaybeAddPollsMarketingEasterEggNote)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx");
+// Module 9390 (useMaybeAddPollsMarketingEasterEggNote)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("getSystemLocale").fileFinishedImporting("modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx");
 
 export default function useMaybeAddPollsMarketingEasterEggNote(emojiName) {
-  arg1(dependencyMap[1]);
-  [][0] = closure_2;
+  require(566) /* initialize */;
+  [][0] = _isNativeReflectConstruct;
   let formatToPlainStringResult = emojiName;
   if (":pizza:" === emojiName) {
     formatToPlainStringResult = emojiName;
     if (tmp2) {
-      const intl = arg1(dependencyMap[2]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       const obj = { emojiName };
-      formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[2]).t.1knDPI, obj);
+      formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["1knDPI"], obj);
     }
   }
   return formatToPlainStringResult;

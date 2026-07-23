@@ -1,22 +1,22 @@
 // Module ID: 1304
-// Function ID: 15221
+// Function ID: 15222
 // Name: ReflectionBinaryReader
-// Dependencies: []
+// Dependencies: [57, 6, 7, 1288, 1297, 1305, 1302]
 
 // Module 1304 (ReflectionBinaryReader)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "reflectionLongConvert";
+import _defineProperties from "_defineProperties";
 
-export const ReflectionBinaryReader = () => {
+
+export const ReflectionBinaryReader = (() => {
   class ReflectionBinaryReader {
     constructor(arg0) {
-      tmp = closure_3(this, ReflectionBinaryReader);
+      tmp = outer1_3(this, ReflectionBinaryReader);
       this.info = arg0;
       return;
     }
   }
-  const require = ReflectionBinaryReader;
   let obj = {
     key: "prepare",
     value: function prepare() {
@@ -35,7 +35,7 @@ export const ReflectionBinaryReader = () => {
       }
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "read",
     value: function read(len, arg1, readUnknownField) {
@@ -53,8 +53,8 @@ export const ReflectionBinaryReader = () => {
       }
       if (len.pos < len) {
         while (true) {
-          let tmp11 = callback;
-          let tmp12 = callback(len.tag(), 2);
+          let tmp11 = outer1_2;
+          let tmp12 = outer1_2(len.tag(), 2);
           [tmp13, tmp14] = tmp12;
           let fieldNoToField = self.fieldNoToField;
           let value = fieldNoToField.get(tmp13);
@@ -115,8 +115,8 @@ export const ReflectionBinaryReader = () => {
                   tmp29 = tmp9;
                   tmp30 = tmp10;
                   if ("map" === kind) {
-                    let tmp56 = callback;
-                    let tmp57 = callback(self.mapEntry(value, len, readUnknownField), 2);
+                    let tmp56 = outer1_2;
+                    let tmp57 = outer1_2(self.mapEntry(value, len, readUnknownField), 2);
                     tmp38[localName][tmp57[0]] = tmp57[1];
                     tmp22 = tmp38;
                     tmp23 = repeat;
@@ -133,8 +133,8 @@ export const ReflectionBinaryReader = () => {
             }
             if ("enum" == value.kind) {
               let tmp44 = ReflectionBinaryReader;
-              let tmp45 = closure_1;
-              let T = ReflectionBinaryReader(closure_1[4]).ScalarType.INT32;
+              let tmp45 = outer1_1;
+              let T = ReflectionBinaryReader(outer1_1[4]).ScalarType.INT32;
             } else {
               T = value.T;
             }
@@ -144,14 +144,14 @@ export const ReflectionBinaryReader = () => {
             if (repeat) {
               let arr1 = tmp38[localName];
               let tmp46 = ReflectionBinaryReader;
-              let tmp47 = closure_1;
-              if (tmp14 == ReflectionBinaryReader(closure_1[3]).WireType.LengthDelimited) {
+              let tmp47 = outer1_1;
+              if (tmp14 == ReflectionBinaryReader(outer1_1[3]).WireType.LengthDelimited) {
                 let tmp48 = ReflectionBinaryReader;
-                let tmp49 = closure_1;
-                if (T != ReflectionBinaryReader(closure_1[4]).ScalarType.STRING) {
+                let tmp49 = outer1_1;
+                if (T != ReflectionBinaryReader(outer1_1[4]).ScalarType.STRING) {
                   let tmp50 = ReflectionBinaryReader;
-                  let tmp51 = closure_1;
-                  if (T != ReflectionBinaryReader(closure_1[4]).ScalarType.BYTES) {
+                  let tmp51 = outer1_1;
+                  if (T != ReflectionBinaryReader(outer1_1[4]).ScalarType.BYTES) {
                     let sum = len.uint32() + len.pos;
                     tmp22 = tmp38;
                     tmp23 = repeat;
@@ -174,7 +174,7 @@ export const ReflectionBinaryReader = () => {
                         tmp28 = sum;
                         tmp29 = tmp9;
                         tmp30 = tmp10;
-                        let pos = len.pos;
+                        pos = len.pos;
                       } while (pos < sum);
                     }
                   }
@@ -221,8 +221,8 @@ export const ReflectionBinaryReader = () => {
                 let onRead = readUnknownField;
                 if (true === readUnknownField) {
                   let tmp15 = ReflectionBinaryReader;
-                  let tmp16 = closure_1;
-                  onRead = ReflectionBinaryReader(closure_1[3]).UnknownFieldHandler.onRead;
+                  let tmp16 = outer1_1;
+                  onRead = ReflectionBinaryReader(outer1_1[3]).UnknownFieldHandler.onRead;
                 }
                 let tmp17 = arg1;
                 let tmp18 = tmp13;
@@ -241,15 +241,15 @@ export const ReflectionBinaryReader = () => {
               }
             }
           }
-          let tmp2 = tmp22;
-          let tmp3 = tmp23;
-          let tmp4 = tmp24;
-          let tmp5 = tmp25;
-          let tmp6 = tmp26;
-          let tmp7 = tmp27;
-          let tmp8 = tmp28;
-          let tmp9 = tmp29;
-          let tmp10 = tmp30;
+          tmp2 = tmp22;
+          tmp3 = tmp23;
+          tmp4 = tmp24;
+          tmp5 = tmp25;
+          tmp6 = tmp26;
+          tmp7 = tmp27;
+          tmp8 = tmp28;
+          tmp9 = tmp29;
+          tmp10 = tmp30;
         }
         const _Error = Error;
         const _HermesInternal = HermesInternal;
@@ -269,7 +269,7 @@ export const ReflectionBinaryReader = () => {
       let tmp4;
       let tmp5;
       if (pos.pos < sum) {
-        [tmp8, tmp9] = callback(pos.tag(), 2);
+        [tmp8, tmp9] = outer1_2(pos.tag(), 2);
         while (1 !== tmp8) {
           if (2 === tmp8) {
             let kind = V.V.kind;
@@ -289,8 +289,8 @@ export const ReflectionBinaryReader = () => {
                 tmp17 = tmp2;
               }
             }
-            let tmp2 = tmp17;
-            let tmp3 = scalarResult;
+            tmp2 = tmp17;
+            tmp3 = scalarResult;
             tmp4 = tmp17;
             tmp5 = scalarResult;
           } else {
@@ -310,29 +310,29 @@ export const ReflectionBinaryReader = () => {
             throw error;
           }
         }
-        if (V.K == ReflectionBinaryReader(closure_1[4]).ScalarType.BOOL) {
+        if (V.K == ReflectionBinaryReader(outer1_1[4]).ScalarType.BOOL) {
           str = pos.bool().toString();
           const str5 = pos.bool();
         } else {
-          str = self.scalar(pos, V.K, ReflectionBinaryReader(closure_1[4]).LongType.STRING);
+          str = self.scalar(pos, V.K, ReflectionBinaryReader(outer1_1[4]).LongType.STRING);
         }
-        const tmp7 = callback(pos.tag(), 2);
+        const tmp7 = outer1_2(pos.tag(), 2);
       }
       if (undefined === tmp4) {
-        const str6 = ReflectionBinaryReader(closure_1[5]).reflectionScalarDefault(V.K);
+        const str6 = ReflectionBinaryReader(outer1_1[5]).reflectionScalarDefault(V.K);
         let str1 = str6;
-        if (V.K == ReflectionBinaryReader(closure_1[4]).ScalarType.BOOL) {
+        if (V.K == ReflectionBinaryReader(outer1_1[4]).ScalarType.BOOL) {
           str1 = str6.toString();
         }
         tmp4 = str1;
-        const obj = ReflectionBinaryReader(closure_1[5]);
+        const obj = ReflectionBinaryReader(outer1_1[5]);
       }
       let num2 = tmp5;
       if (undefined === tmp5) {
         const kind2 = V.V.kind;
         if ("scalar" === kind2) {
-          num2 = ReflectionBinaryReader(closure_1[5]).reflectionScalarDefault(V.V.T, V.V.L);
-          const obj3 = ReflectionBinaryReader(closure_1[5]);
+          num2 = ReflectionBinaryReader(outer1_1[5]).reflectionScalarDefault(V.V.T, V.V.L);
+          const obj3 = ReflectionBinaryReader(outer1_1[5]);
         } else if ("enum" === kind2) {
           num2 = 0;
         } else {
@@ -352,38 +352,38 @@ export const ReflectionBinaryReader = () => {
   items[3] = {
     key: "scalar",
     value: function scalar(int32, arg1, STRING) {
-      if (ReflectionBinaryReader(closure_1[4]).ScalarType.INT32 === arg1) {
+      if (ReflectionBinaryReader(outer1_1[4]).ScalarType.INT32 === arg1) {
         return int32.int32();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.STRING === arg1) {
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.STRING === arg1) {
         return int32.string();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.BOOL === arg1) {
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.BOOL === arg1) {
         return int32.bool();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.DOUBLE === arg1) {
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.DOUBLE === arg1) {
         return int32.double();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.FLOAT === arg1) {
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.FLOAT === arg1) {
         return int32.float();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.INT64 === arg1) {
-        return ReflectionBinaryReader(closure_1[6]).reflectionLongConvert(int32.int64(), STRING);
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.UINT64 === arg1) {
-        return ReflectionBinaryReader(closure_1[6]).reflectionLongConvert(int32.uint64(), STRING);
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.FIXED64 === arg1) {
-        return ReflectionBinaryReader(closure_1[6]).reflectionLongConvert(int32.fixed64(), STRING);
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.FIXED32 === arg1) {
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.INT64 === arg1) {
+        return ReflectionBinaryReader(outer1_1[6]).reflectionLongConvert(int32.int64(), STRING);
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.UINT64 === arg1) {
+        return ReflectionBinaryReader(outer1_1[6]).reflectionLongConvert(int32.uint64(), STRING);
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.FIXED64 === arg1) {
+        return ReflectionBinaryReader(outer1_1[6]).reflectionLongConvert(int32.fixed64(), STRING);
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.FIXED32 === arg1) {
         return int32.fixed32();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.BYTES === arg1) {
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.BYTES === arg1) {
         return int32.bytes();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.UINT32 === arg1) {
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.UINT32 === arg1) {
         return int32.uint32();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.SFIXED32 === arg1) {
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.SFIXED32 === arg1) {
         return int32.sfixed32();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.SFIXED64 === arg1) {
-        return ReflectionBinaryReader(closure_1[6]).reflectionLongConvert(int32.sfixed64(), STRING);
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.SINT32 === arg1) {
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.SFIXED64 === arg1) {
+        return ReflectionBinaryReader(outer1_1[6]).reflectionLongConvert(int32.sfixed64(), STRING);
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.SINT32 === arg1) {
         return int32.sint32();
-      } else if (ReflectionBinaryReader(closure_1[4]).ScalarType.SINT64 === arg1) {
-        return ReflectionBinaryReader(closure_1[6]).reflectionLongConvert(int32.sint64(), STRING);
+      } else if (ReflectionBinaryReader(outer1_1[4]).ScalarType.SINT64 === arg1) {
+        return ReflectionBinaryReader(outer1_1[6]).reflectionLongConvert(int32.sint64(), STRING);
       }
     }
   };
-  return callback(ReflectionBinaryReader, items);
-}();
+  return _defineProperties(ReflectionBinaryReader, items);
+})();

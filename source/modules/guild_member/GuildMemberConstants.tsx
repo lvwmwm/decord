@@ -1,10 +1,9 @@
-// Module ID: 3744
-// Function ID: 28584
+// Module ID: 3746
+// Function ID: 28589
 // Name: GuildMemberFlags
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 3744 (GuildMemberFlags)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild_member/GuildMemberConstants.tsx");
+// Module 3746 (GuildMemberFlags)
+const result = require("set").fileFinishedImporting("modules/guild_member/GuildMemberConstants.tsx");
 
 export const GuildMemberFlags = { DID_REJOIN: 1, [1]: "DID_REJOIN", COMPLETED_ONBOARDING: 2, [2]: "COMPLETED_ONBOARDING", BYPASSES_VERIFICATION: 4, [4]: "BYPASSES_VERIFICATION", STARTED_ONBOARDING: 8, [8]: "STARTED_ONBOARDING", IS_GUEST: 16, [16]: "IS_GUEST", STARTED_HOME_ACTIONS: 32, [32]: "STARTED_HOME_ACTIONS", COMPLETED_HOME_ACTIONS: 64, [64]: "COMPLETED_HOME_ACTIONS", AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME: 128, [128]: "AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME", AUTOMOD_QUARANTINED_BIO: 256, [256]: "AUTOMOD_QUARANTINED_BIO", DM_SETTINGS_UPSELL_ACKNOWLEDGED: 512, [512]: "DM_SETTINGS_UPSELL_ACKNOWLEDGED", AUTOMOD_QUARANTINED_SERVER_TAG: 1024, [1024]: "AUTOMOD_QUARANTINED_SERVER_TAG" };

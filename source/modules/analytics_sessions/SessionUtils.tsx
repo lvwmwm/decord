@@ -1,17 +1,17 @@
-// Module ID: 6700
-// Function ID: 51888
+// Module ID: 6705
+// Function ID: 51920
 // Name: result
-// Dependencies: []
+// Dependencies: [664, 2]
 // Exports: isSessionExpired, timestampOrZero
 
-// Module 6700 (result)
-const result = 30 * importDefault(dependencyMap[0]).Millis.MINUTE;
-const result1 = arg1(dependencyMap[1]).fileFinishedImporting("modules/analytics_sessions/SessionUtils.tsx");
+// Module 6705 (result)
+const result = 30 * require("set").Millis.MINUTE;
+const result1 = require("set").fileFinishedImporting("modules/analytics_sessions/SessionUtils.tsx");
 
 export const SESSION_IDLE_TIMEOUT_MILLIS = result;
 export const CLIENT_SESSION_STORAGE_VERSION = 1;
 export const isSessionExpired = function isSessionExpired(lastUsedTimestamp) {
-  const sum = result + lastUsedTimestamp.lastUsedTimestamp;
+  const sum = closure_0 + lastUsedTimestamp.lastUsedTimestamp;
   return sum - Date.now() <= 0;
 };
 export const timestampOrZero = function timestampOrZero(arg0) {

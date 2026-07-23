@@ -1,16 +1,17 @@
 // Module ID: 1527
-// Function ID: 17490
+// Function ID: 17491
 // Name: useNavigationContainerRef
-// Dependencies: []
+// Dependencies: [31, 1474]
 // Exports: default
 
 // Module 1527 (useNavigationContainerRef)
-let closure_2 = importAll(dependencyMap[0]);
+import result from "result";
+
 
 export default function useNavigationContainerRef() {
   const ref = React.useRef(null);
   if (null == ref.current) {
-    ref.current = importDefault(dependencyMap[1])();
+    ref.current = importDefault(1474)();
   }
   return ref.current;
 };

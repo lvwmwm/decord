@@ -1,19 +1,22 @@
-// Module ID: 12187
-// Function ID: 93673
+// Module ID: 12301
+// Function ID: 95824
 // Name: getJoinOrStartButtonState
-// Dependencies: []
+// Dependencies: [31, 1212, 7918, 10520, 2]
 // Exports: useJoinOrStartButtonState
 
-// Module 12187 (getJoinOrStartButtonState)
+// Module 12301 (getJoinOrStartButtonState)
+import result from "result";
+
+const require = arg1;
 function getJoinOrStartButtonState(channel) {
   let currentEmbeddedActivity;
   let embeddedActivity;
   let joinability;
   ({ embeddedActivity, joinability, currentEmbeddedActivity } = channel);
   let obj = { disabled: false, isJoinAction: !tmp };
-  const intl = arg1(dependencyMap[1]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[1]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if (null == embeddedActivity) {
     let stringResult = string(t.RscU7I);
   } else {
@@ -21,7 +24,7 @@ function getJoinOrStartButtonState(channel) {
   }
   obj.text = stringResult;
   obj.tooltip = undefined;
-  let obj1 = arg1(dependencyMap[2]);
+  let obj1 = require(7918) /* isActivityInTextSupportedForChannel */;
   const result = obj1.isActivitiesInTextEnabled(channel.channel);
   if (null != embeddedActivity) {
     if (null != currentEmbeddedActivity) {
@@ -29,8 +32,8 @@ function getJoinOrStartButtonState(channel) {
         obj = {};
         const merged = Object.assign(obj);
         obj["disabled"] = true;
-        const intl10 = arg1(dependencyMap[1]).intl;
-        obj["text"] = intl10.string(arg1(dependencyMap[1]).t.DPfdsq);
+        const intl10 = require(1212) /* getSystemLocale */.intl;
+        obj["text"] = intl10.string(require(1212) /* getSystemLocale */.t.DPfdsq);
         obj["tooltip"] = undefined;
         return obj;
       }
@@ -42,35 +45,35 @@ function getJoinOrStartButtonState(channel) {
     obj["disabled"] = !result;
     let stringResult1;
     if (!result) {
-      const intl9 = arg1(dependencyMap[1]).intl;
-      stringResult1 = intl9.string(arg1(dependencyMap[1]).t.f41E1g);
+      const intl9 = require(1212) /* getSystemLocale */.intl;
+      stringResult1 = intl9.string(require(1212) /* getSystemLocale */.t.f41E1g);
     }
     obj["tooltip"] = stringResult1;
     return obj;
   } else {
     if (null != joinability) {
-      if (joinability !== arg1(dependencyMap[3]).EmbeddedActivityJoinability.CAN_JOIN) {
-        if (arg1(dependencyMap[3]).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
-          const intl8 = arg1(dependencyMap[1]).intl;
-          let stringResult2 = intl8.string(arg1(dependencyMap[1]).t.hHGrWz);
-        } else if (arg1(dependencyMap[3]).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
-          const intl7 = arg1(dependencyMap[1]).intl;
-          stringResult2 = intl7.string(arg1(dependencyMap[1]).t.4WuFRE);
-        } else if (arg1(dependencyMap[3]).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
-          const intl6 = arg1(dependencyMap[1]).intl;
-          stringResult2 = intl6.string(arg1(dependencyMap[1]).t.uGDCcw);
-        } else if (arg1(dependencyMap[3]).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
-          const intl5 = arg1(dependencyMap[1]).intl;
-          stringResult2 = intl5.string(arg1(dependencyMap[1]).t.UXoQTp);
-        } else if (arg1(dependencyMap[3]).EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
-          const intl4 = arg1(dependencyMap[1]).intl;
-          stringResult2 = intl4.string(arg1(dependencyMap[1]).t.rZfiNq);
-        } else if (arg1(dependencyMap[3]).EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
-          const intl3 = arg1(dependencyMap[1]).intl;
-          stringResult2 = intl3.string(arg1(dependencyMap[1]).t.w5SAps);
+      if (joinability !== require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN) {
+        if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
+          const intl8 = require(1212) /* getSystemLocale */.intl;
+          let stringResult2 = intl8.string(require(1212) /* getSystemLocale */.t.hHGrWz);
+        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
+          const intl7 = require(1212) /* getSystemLocale */.intl;
+          stringResult2 = intl7.string(require(1212) /* getSystemLocale */.t["4WuFRE"]);
+        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
+          const intl6 = require(1212) /* getSystemLocale */.intl;
+          stringResult2 = intl6.string(require(1212) /* getSystemLocale */.t.uGDCcw);
+        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
+          const intl5 = require(1212) /* getSystemLocale */.intl;
+          stringResult2 = intl5.string(require(1212) /* getSystemLocale */.t.UXoQTp);
+        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
+          const intl4 = require(1212) /* getSystemLocale */.intl;
+          stringResult2 = intl4.string(require(1212) /* getSystemLocale */.t.rZfiNq);
+        } else if (require(10520) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
+          const intl3 = require(1212) /* getSystemLocale */.intl;
+          stringResult2 = intl3.string(require(1212) /* getSystemLocale */.t.w5SAps);
         } else {
-          const intl2 = arg1(dependencyMap[1]).intl;
-          stringResult2 = intl2.string(arg1(dependencyMap[1]).t.Etp6uI);
+          const intl2 = require(1212) /* getSystemLocale */.intl;
+          stringResult2 = intl2.string(require(1212) /* getSystemLocale */.t.Etp6uI);
         }
         obj1 = {};
         const merged2 = Object.assign(obj);
@@ -82,20 +85,15 @@ function getJoinOrStartButtonState(channel) {
     return obj;
   }
 }
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/messages/EmbeddedApplicationInstanceUtils.tsx");
+let result = require("isActivityInTextSupportedForChannel").fileFinishedImporting("modules/messages/EmbeddedApplicationInstanceUtils.tsx");
 
 export const EmbedStates = { ACTIVE: 0, [0]: "ACTIVE", ENDED: 1, [1]: "ENDED" };
 export const useJoinOrStartButtonState = function useJoinOrStartButtonState(embeddedActivity) {
   embeddedActivity = embeddedActivity.embeddedActivity;
-  const arg1 = embeddedActivity;
   const joinability = embeddedActivity.joinability;
-  const dependencyMap = joinability;
   const currentEmbeddedActivity = embeddedActivity.currentEmbeddedActivity;
-  const React = currentEmbeddedActivity;
   const channel = embeddedActivity.channel;
-  const getJoinOrStartButtonState = channel;
   const items = [embeddedActivity, joinability, currentEmbeddedActivity, channel];
-  return React.useMemo(() => channel({ embeddedActivity, joinability, currentEmbeddedActivity, channel }), items);
+  return currentEmbeddedActivity.useMemo(() => channel({ embeddedActivity, joinability, currentEmbeddedActivity, channel }), items);
 };
 export { getJoinOrStartButtonState };

@@ -1,21 +1,25 @@
-// Module ID: 10541
-// Function ID: 82371
+// Module ID: 10551
+// Function ID: 82421
 // Name: getCutoutCenterX
-// Dependencies: []
+// Dependencies: [31, 33, 8018, 2]
 // Exports: default, getBadgeLeft, getBadgeTop
 
-// Module 10541 (getCutoutCenterX)
+// Module 10551 (getCutoutCenterX)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function getCutoutCenterX(circleRadius, cutoutPositionInDegrees) {
   return circleRadius + circleRadius * Math.sin(cutoutPositionInDegrees * closure_5);
 }
 function getCutoutCenterY(circleRadius, cutoutPositionInDegrees) {
   return circleRadius - circleRadius * Math.cos(cutoutPositionInDegrees * closure_5);
 }
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
 let closure_5 = Math.PI / 180;
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/voice_panel/native/shared/CircleWithCutoutUtils.tsx");
+let result = require("inlineStyles").fileFinishedImporting("modules/voice_panel/native/shared/CircleWithCutoutUtils.tsx");
 
 export default function CircleWithCutout(arg0) {
   let circleFillColor;
@@ -32,19 +36,19 @@ export default function CircleWithCutout(arg0) {
   const tmp4 = callback2;
   obj = {};
   obj = { id: "mask" };
-  const items = [callback(arg1(dependencyMap[2]).Rect, { width: result, height: result, fill: "white" }), callback(arg1(dependencyMap[2]).Circle, { cx: tmp2, cy: tmp3, r: cutoutRadius, fill: "black" })];
+  const items = [callback(require(8018) /* inlineStyles */.Rect, { width: result, height: result, fill: "white" }), callback(require(8018) /* inlineStyles */.Circle, { cx: tmp2, cy: tmp3, r: cutoutRadius, fill: "black" })];
   obj.children = items;
-  obj.children = callback2(arg1(dependencyMap[2]).Mask, obj);
-  const items1 = [callback(arg1(dependencyMap[2]).Defs, obj), ];
+  obj.children = callback2(require(8018) /* inlineStyles */.Mask, obj);
+  const items1 = [callback(require(8018) /* inlineStyles */.Defs, obj), ];
   const obj1 = { cx: circleRadius, cy: circleRadius, r: circleRadius, fill: circleFillColor };
   let str;
   if (enableCutout) {
     str = "url(#mask)";
   }
   obj1.mask = str;
-  items1[1] = callback(arg1(dependencyMap[2]).Circle, obj1);
+  items1[1] = callback(require(8018) /* inlineStyles */.Circle, obj1);
   obj.children = items1;
-  return tmp4(importDefault(dependencyMap[2]), obj);
+  return tmp4(importDefault(8018), obj);
 };
 export const getBadgeTop = function getBadgeTop(badgeRadius, buttonRadius, cutoutPositionInDegrees) {
   return getCutoutCenterY(buttonRadius, cutoutPositionInDegrees) - badgeRadius;

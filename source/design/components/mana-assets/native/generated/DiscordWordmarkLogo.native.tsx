@@ -1,14 +1,14 @@
-// Module ID: 6007
-// Function ID: 49943
+// Module ID: 6012
+// Function ID: 49972
 // Name: DiscordWordmarkLogo
-// Dependencies: []
+// Dependencies: [27, 33, 689, 3834, 6013, 2]
 // Exports: DiscordWordmarkLogo
 
-// Module 6007 (DiscordWordmarkLogo)
-const Image = require(dependencyMap[0]).Image;
-const jsx = require(dependencyMap[1]).jsx;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DiscordWordmarkLogo.native.tsx");
+// Module 6012 (DiscordWordmarkLogo)
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/mana-assets/native/generated/DiscordWordmarkLogo.native.tsx");
 
 export const DiscordWordmarkLogo = function DiscordWordmarkLogo(color) {
   let accessibilityLabel;
@@ -17,7 +17,7 @@ export const DiscordWordmarkLogo = function DiscordWordmarkLogo(color) {
   let ICON_STRONG = color.color;
   ({ accessible, accessibilityLabel, resizeMode } = color);
   if (ICON_STRONG === undefined) {
-    ICON_STRONG = importDefault(dependencyMap[2]).colors.ICON_STRONG;
+    ICON_STRONG = importDefault(689).colors.ICON_STRONG;
   }
   let num2 = color.width;
   if (num2 === undefined) {
@@ -31,7 +31,7 @@ export const DiscordWordmarkLogo = function DiscordWordmarkLogo(color) {
   if (num4 === undefined) {
     num4 = 1;
   }
-  let obj = require(dependencyMap[3]);
+  let obj = require(3834) /* map */;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
     obj = { tintColor: token };
@@ -46,12 +46,12 @@ export const DiscordWordmarkLogo = function DiscordWordmarkLogo(color) {
       tmp5 = obj;
     }
   }
-  const obj1 = { fadeDuration: 0, source: { uri: importDefault(dependencyMap[4]) } };
+  const obj1 = { fadeDuration: 0, source: { uri: importDefault(6013) } };
   const obj3 = { width: num2 * num4, height: num3 * num4 };
   const items = [obj3, tmp5];
   obj1.style = items;
   obj1.accessible = accessible;
   obj1.accessibilityLabel = accessibilityLabel;
   obj1.resizeMode = resizeMode;
-  return <Image {...obj1} />;
+  return <Image fadeDuration={0} source={{ uri: importDefault(6013) }} />;
 };

@@ -4,17 +4,17 @@
 // Dependencies: []
 
 // Module 185 (parse)
-let closure_0 = /^\s*at (.*?) ?\(((?:file|https?|blob|chrome-extension|native|eval|webpack|rsc|<anonymous>|\/|[a-z]:\\|\\\\).*?)(?::(\d+))?(?::(\d+))?\)?\s*$/i;
-let closure_1 = /\((\S*)(?::(\d+))(?::(\d+))\)/;
-let closure_2 = /^\s*at (?:((?:\[object object\])?.+) )?\(?((?:file|ms-appx|https?|webpack|rsc|blob):.*?):(\d+)(?::(\d+))?\)?\s*$/i;
-let closure_3 = /^\s*(.*?)(?:\((.*?)\))?(?:^|@)((?:file|https?|blob|chrome|webpack|rsc|resource|\[native).*?|[^@]*bundle)(?::(\d+))?(?::(\d+))?\s*$/i;
-let closure_4 = /(\S+) line (\d+)(?: > eval line \d+)* > eval/i;
-let closure_5 = /^\s*(?:([^@]*)(?:\((.*?)\))?@)?(\S.*?):(\d+)(?::(\d+))?\s*$/i;
-let closure_6 = /^\s*at (?:((?:\[object object\])?[^\\/]+(?: \[as \S+\])?) )?\(?(.*?):(\d+)(?::(\d+))?\)?\s*$/i;
+const re0 = /^\s*at (.*?) ?\(((?:file|https?|blob|chrome-extension|native|eval|webpack|rsc|<anonymous>|\/|[a-z]:\\|\\\\).*?)(?::(\d+))?(?::(\d+))?\)?\s*$/i;
+const re1 = /\((\S*)(?::(\d+))(?::(\d+))\)/;
+const re2 = /^\s*at (?:((?:\[object object\])?.+) )?\(?((?:file|ms-appx|https?|webpack|rsc|blob):.*?):(\d+)(?::(\d+))?\)?\s*$/i;
+const re3 = /^\s*(.*?)(?:\((.*?)\))?(?:^|@)((?:file|https?|blob|chrome|webpack|rsc|resource|\[native).*?|[^@]*bundle)(?::(\d+))?(?::(\d+))?\s*$/i;
+const re4 = /(\S+) line (\d+)(?: > eval line \d+)* > eval/i;
+const re5 = /^\s*(?:([^@]*)(?:\((.*?)\))?@)?(\S.*?):(\d+)(?::(\d+))?\s*$/i;
+const re6 = /^\s*at (?:((?:\[object object\])?[^\\/]+(?: \[as \S+\])?) )?\(?(.*?):(\d+)(?::(\d+))?\)?\s*$/i;
 arg5.parse = function parse(str) {
-  const parts = str.split("\n");
+  let parts = str.split("\n");
   return parts.reduce((arr) => {
-    const match = regex.exec(arg1);
+    const match = outer1_0.exec(arg1);
     let tmp2 = null;
     if (match) {
       let tmp3 = match[2];
@@ -27,7 +27,7 @@ arg5.parse = function parse(str) {
         tmp4 = 0 === match[2].indexOf("eval");
         const arr2 = match[2];
       }
-      const match1 = regex2.exec(match[2]);
+      const match1 = outer1_1.exec(match[2]);
       if (tmp4) {
         tmp4 = null != match1;
       }
@@ -63,7 +63,7 @@ arg5.parse = function parse(str) {
       tmp2 = obj;
     }
     if (!tmp2) {
-      const match2 = regex3.exec(arg1);
+      const match2 = outer1_2.exec(arg1);
       let tmp12 = null;
       if (match2) {
         obj = { file: match2[2], methodName: match2[1] || "<unknown>", arguments: [], lineNumber: +match2[3] };
@@ -77,7 +77,7 @@ arg5.parse = function parse(str) {
       tmp2 = tmp12;
     }
     if (!tmp2) {
-      const match3 = regex4.exec(arg1);
+      const match3 = outer1_3.exec(arg1);
       let tmp16 = null;
       if (match3) {
         let tmp17 = match3[3];
@@ -85,7 +85,7 @@ arg5.parse = function parse(str) {
           tmp17 = match3[3].indexOf(" > eval") > -1;
           const arr5 = match3[3];
         }
-        const match4 = regex5.exec(match3[3]);
+        const match4 = outer1_4.exec(match3[3]);
         if (tmp17) {
           tmp17 = null != match4;
         }
@@ -117,7 +117,7 @@ arg5.parse = function parse(str) {
       tmp2 = tmp16;
     }
     if (!tmp2) {
-      const match5 = regex7.exec(arg1);
+      const match5 = outer1_6.exec(arg1);
       let tmp24 = null;
       if (match5) {
         const obj1 = { file: match5[2], methodName: match5[1] || "<unknown>", arguments: [], lineNumber: +match5[3] };
@@ -131,7 +131,7 @@ arg5.parse = function parse(str) {
       tmp2 = tmp24;
     }
     if (!tmp2) {
-      const match6 = regex6.exec(arg1);
+      const match6 = outer1_5.exec(arg1);
       let tmp28 = null;
       if (match6) {
         const obj2 = { file: match6[3], methodName: match6[1] || "<unknown>", arguments: [], lineNumber: +match6[4] };

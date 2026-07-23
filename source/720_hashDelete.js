@@ -1,5 +1,5 @@
 // Module ID: 720
-// Function ID: 8744
+// Function ID: 8745
 // Name: hashDelete
 // Dependencies: []
 
@@ -10,7 +10,7 @@ export default function hashDelete(arg0) {
   const hasItem = this.has(arg0);
   if (hasItem) {
     const __data__ = self.__data__;
-    delete r1[r3];
+    delete tmp[tmp2];
   }
   let num = 0;
   if (hasItem) {

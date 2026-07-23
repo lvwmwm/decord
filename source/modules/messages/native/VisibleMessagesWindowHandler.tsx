@@ -1,9 +1,13 @@
-// Module ID: 10377
-// Function ID: 80045
+// Module ID: 10387
+// Function ID: 80095
 // Name: getRowMessageId
-// Dependencies: []
+// Dependencies: [7, 6, 7622, 2]
 
-// Module 10377 (getRowMessageId)
+// Module 10387 (getRowMessageId)
+import _classCallCheck from "_classCallCheck";
+import { RowType } from "Changeset";
+import importDefaultResult from "_defineProperties";
+
 function getRowMessageId(rowType) {
   if (null != rowType) {
     if ("rowType" in rowType) {
@@ -20,12 +24,10 @@ function getRowMessageId(rowType) {
     }
   }
 }
-let closure_0 = importDefault(dependencyMap[1]);
-const RowType = arg1(dependencyMap[2]).RowType;
 class VisibleMessagesWindowHandler {
   constructor() {
-    closure_0 = this;
-    tmp = closure_0(this, VisibleMessagesWindowHandler);
+    self = this;
+    tmp = self(this, VisibleMessagesWindowHandler);
     this.data = null;
     this.callback = null;
     this.setCallback = (callback) => {
@@ -49,7 +51,7 @@ class VisibleMessagesWindowHandler {
           let diff = firstVisibleMessageRowIndex;
           tmp2 = null;
           if (firstVisibleMessageRowIndex >= 0) {
-            tmp2 = callback(rows[diff]);
+            tmp2 = outer1_2(rows[diff]);
             while (null == tmp2) {
               diff = diff - 1;
               tmp2 = null;
@@ -64,7 +66,7 @@ class VisibleMessagesWindowHandler {
           let sum = lastVisibleMessageRowIndex;
           tmp4 = null;
           if (lastVisibleMessageRowIndex < rows.length) {
-            tmp4 = callback(rows[sum]);
+            tmp4 = outer1_2(rows[sum]);
             while (null == tmp4) {
               sum = sum + 1;
               tmp4 = null;
@@ -82,7 +84,7 @@ class VisibleMessagesWindowHandler {
             let sum1 = firstVisibleMessageRowIndex + Math.floor((lastVisibleMessageRowIndex - firstVisibleMessageRowIndex) / 2);
             tmp7 = null;
             if (sum1 < rows.length) {
-              tmp7 = callback(rows[sum1]);
+              tmp7 = outer1_2(rows[sum1]);
               while (null == tmp7) {
                 sum1 = sum1 + 1;
                 tmp7 = null;
@@ -101,8 +103,7 @@ class VisibleMessagesWindowHandler {
     return;
   }
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const importDefaultResultResult = importDefault(dependencyMap[0])(VisibleMessagesWindowHandler);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/messages/native/VisibleMessagesWindowHandler.tsx");
+const importDefaultResultResult = require("_defineProperties")(VisibleMessagesWindowHandler);
+const result = require("Changeset").fileFinishedImporting("modules/messages/native/VisibleMessagesWindowHandler.tsx");
 
 export default importDefaultResultResult;

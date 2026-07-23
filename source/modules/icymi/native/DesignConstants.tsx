@@ -1,10 +1,9 @@
-// Module ID: 15102
-// Function ID: 113829
+// Module ID: 15217
+// Function ID: 115998
 // Name: ITEM_PADDING
-// Dependencies: []
+// Dependencies: [689, 2]
 
-// Module 15102 (ITEM_PADDING)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/icymi/native/DesignConstants.tsx");
+// Module 15217 (ITEM_PADDING)
+const result = require("set").fileFinishedImporting("modules/icymi/native/DesignConstants.tsx");
 
-export const ITEM_PADDING = importDefault(dependencyMap[0]).space.PX_12;
+export const ITEM_PADDING = require("_createForOfIteratorHelperLoose").space.PX_12;

@@ -1,8 +1,8 @@
 // Module ID: 177
 // Function ID: 2583
 // Name: NativeIdleCallbacksCxx
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 177 (NativeIdleCallbacksCxx)
 
-export default importAll(dependencyMap[0]).getEnforcing("NativeIdleCallbacksCxx");
+export default require("requireModule").getEnforcing("NativeIdleCallbacksCxx");

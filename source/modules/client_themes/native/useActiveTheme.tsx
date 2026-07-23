@@ -1,21 +1,29 @@
-// Module ID: 8824
-// Function ID: 69570
+// Module ID: 8831
+// Function ID: 69611
 // Name: useActiveThemeType
-// Dependencies: []
+// Dependencies: [1280, 3942, 1322, 1281, 566, 3980, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 8824 (useActiveThemeType)
+// Module 8831 (useActiveThemeType)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import SystemThemeState from "SystemThemeState";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function useActiveThemeType() {
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => closure_5.hasCustomTheme());
-  const obj = arg1(dependencyMap[4]);
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.hasCustomTheme());
+  const obj = require(566) /* initialize */;
   const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items1, () => null != gradientPreset.gradientPreset);
-  const tmp3 = importDefault(dependencyMap[5])();
-  const obj2 = arg1(dependencyMap[4]);
-  const items2 = [closure_3];
+  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => null != outer1_4.gradientPreset);
+  const tmp3 = importDefault(3980)();
+  const obj2 = require(566) /* initialize */;
+  const items2 = [_isNativeReflectConstruct];
   let type;
-  const stateFromStores2 = arg1(dependencyMap[4]).useStateFromStores(items2, () => useSystemTheme.useSystemTheme);
+  const stateFromStores2 = require(566) /* initialize */.useStateFromStores(items2, () => outer1_3.useSystemTheme);
   if (null != tmp3) {
     type = tmp3.type;
   }
@@ -40,12 +48,8 @@ function useActiveThemeType() {
   }
   return DEFAULT;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ SystemThemeState: closure_6, ActiveThemeType: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/client_themes/native/useActiveTheme.tsx");
+({ SystemThemeState: closure_6, ActiveThemeType: closure_7 } = SystemThemeState);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/client_themes/native/useActiveTheme.tsx");
 
 export const useIsCustomThemeActive = function useIsCustomThemeActive() {
   return useActiveThemeType() === constants2.CUSTOM;

@@ -1,57 +1,83 @@
-// Module ID: 15062
-// Function ID: 113362
+// Module ID: 15177
+// Function ID: 115531
 // Name: SettingsButton
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 1194, 1838, 8318, 8306, 15178, 1345, 33, 4130, 689, 15179, 7771, 13902, 8321, 4098, 15181, 1934, 4086, 15192, 4126, 1212, 8133, 5121, 4662, 3941, 4660, 15128, 15130, 5119, 8320, 1450, 1557, 1457, 6707, 566, 15118, 15212, 15215, 5803, 1334, 15202, 1456, 7087, 9914, 9533, 13990, 669, 15216, 15222, 15227, 15240, 15241, 15242, 15243, 15244, 15245, 15246, 15247, 8829, 15248, 7879, 477, 10025, 3977, 15249, 15180, 3842, 2]
 // Exports: ICYMITab
 
-// Module 15062 (SettingsButton)
+// Module 15177 (SettingsButton)
+import CutoutGuildBanner from "CutoutGuildBanner";
+import importAllResult from "XSmallIcon";
+import get_ActivityIndicator from "colorToHex";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { NUM_GUILDS_EXTENDED_ONBOARDING as closure_12 } from "NUM_GUILDS_EXTENDED_ONBOARDING";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "useWindowDimensions";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createICYMIStyles from "createICYMIStyles";
+
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_5;
+let closure_6;
+let require = arg1;
 function SettingsButton() {
-  const obj = {
-    icon: callback2(arg1(dependencyMap[15]).FiltersHorizontalIcon, { size: "sm" }),
+  let obj = {
+    accessibilityLabel: "button",
+    variant: "tertiary",
+    size: "sm",
+    icon: callback(require(13902) /* FiltersHorizontalIcon */.FiltersHorizontalIcon, { size: "sm" }),
     onPress() {
-      callback2(paths[16]).itemInteracted("filters_button", "filters_button", "press_info_button");
-      const obj = callback2(paths[16]);
-      callback2(paths[16]).feedPageActioned({ actionParameters: {} });
-      const obj2 = callback2(paths[16]);
-      callback2(paths[17]).openLazy(callback(paths[19])(paths[18], paths.paths), "ICYMISettingsActionSheet", {});
+      outer1_1(outer1_2[16]).itemInteracted("filters_button", "filters_button", "press_info_button");
+      const obj = outer1_1(outer1_2[16]);
+      outer1_1(outer1_2[16]).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "settings_button", actionIntentType: "open", actionDestinationType: null } });
+      const obj2 = outer1_1(outer1_2[16]);
+      outer1_1(outer1_2[17]).openLazy(outer1_0(outer1_2[19])(outer1_2[18], outer1_2.paths), "ICYMISettingsActionSheet", {});
     }
   };
-  return callback2(arg1(dependencyMap[14]).IconButton, obj);
+  return callback(require(7771) /* IconButton */.IconButton, obj);
 }
 function InfoButton() {
-  const obj = {
-    icon: callback2(arg1(dependencyMap[20]).CircleInformationIcon, { size: "sm" }),
+  let obj = {
+    accessibilityLabel: "button",
+    variant: "tertiary",
+    size: "sm",
+    icon: callback(require(4086) /* CircleInformationIcon */.CircleInformationIcon, { size: "sm" }),
     onPress() {
-      callback2(closure_2[16]).itemInteracted("info_button", "info_button", "press_info_button");
-      const obj = callback2(closure_2[16]);
-      callback2(closure_2[16]).feedPageActioned({ actionParameters: {} });
-      const obj2 = callback2(closure_2[16]);
-      callback(closure_2[21]).pushICYMIInfoModal({ extendedOnboarding: true });
+      outer1_1(outer1_2[16]).itemInteracted("info_button", "info_button", "press_info_button");
+      const obj = outer1_1(outer1_2[16]);
+      outer1_1(outer1_2[16]).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "info_button", actionIntentType: "open", actionDestinationType: null } });
+      const obj2 = outer1_1(outer1_2[16]);
+      outer1_0(outer1_2[21]).pushICYMIInfoModal({ extendedOnboarding: true });
     }
   };
-  return callback2(arg1(dependencyMap[14]).IconButton, obj);
+  return callback(require(7771) /* IconButton */.IconButton, obj);
 }
 function ICYMIHeaderTextWrapper() {
-  const tmp = callback5();
-  return callback2(closure_5, {
-    style: callback5().headerText,
+  const tmp = callback4();
+  return callback(closure_5, {
+    style: callback4().headerText,
     children: importAllResult.useMemo(() => {
       let obj = {};
-      obj = { "Null": null, "Null": "hidden", "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images" };
-      const intl = callback(closure_2[23]).intl;
-      obj.children = intl.string(callback(closure_2[23]).t.SY4sdZ);
-      const items = [callback2(callback(closure_2[22]).Text, obj), ];
-      obj = { style: { marginTop: 4 } };
-      const intl2 = callback(closure_2[23]).intl;
-      obj.children = intl2.string(callback(closure_2[23]).t.Ac2OZA);
-      items[1] = callback2(callback(closure_2[22]).Text, obj);
+      obj = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header" };
+      const intl = outer1_0(outer1_2[23]).intl;
+      obj.children = intl.string(outer1_0(outer1_2[23]).t.SY4sdZ);
+      const items = [outer1_14(outer1_0(outer1_2[22]).Text, obj), ];
+      obj = { color: "text-brand", variant: "text-xs/bold", style: { marginTop: 4 } };
+      const intl2 = outer1_0(outer1_2[23]).intl;
+      obj.children = intl2.string(outer1_0(outer1_2[23]).t.Ac2OZA);
+      items[1] = outer1_14(outer1_0(outer1_2[22]).Text, obj);
       obj.children = items;
-      return callback3(closure_15, obj);
+      return outer1_16(outer1_15, obj);
     }, [])
   });
 }
 function handleEndReached() {
-  arg1(dependencyMap[32]).hydrateNextPage();
+  require(8320) /* generateHydrationId */.hydrateNextPage();
 }
 function ICYMI(inNestedNavigator) {
   let data;
@@ -64,56 +90,51 @@ function ICYMI(inNestedNavigator) {
   let viewabilityConfigCallbackPairs;
   let visibleItemIds;
   let width;
-  const tmp = callback5();
-  ({ height, width } = importDefault(dependencyMap[33])());
-  let obj = arg1(dependencyMap[35]);
-  const isFocused = obj.useIsFocused();
-  const arg1 = isFocused;
-  const layoutEffect = importAllResult.useLayoutEffect(() => {
+  const tmp = callback4();
+  ({ height, width } = stateFromStores(visibleItemIds[33])());
+  let obj = isFocused(visibleItemIds[35]);
+  isFocused = obj.useIsFocused();
+  const layoutEffect = handleOnRefresh.useLayoutEffect(() => {
     isFocused(visibleItemIds[36]).trackAppUIViewed();
   });
-  let obj1 = arg1(dependencyMap[37]);
-  const items = [closure_7];
-  const stateFromStores = obj1.useStateFromStores(items, () => stateFromStores2.useReducedMotion);
-  const importDefault = stateFromStores;
-  let obj2 = arg1(dependencyMap[37]);
+  let obj1 = isFocused(visibleItemIds[37]);
+  const items = [stateFromStores2];
+  stateFromStores = obj1.useStateFromStores(items, () => stateFromStores2.useReducedMotion);
+  let obj2 = isFocused(visibleItemIds[37]);
   const items1 = [closure_11];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => lib.notificationItem(), []);
   const items2 = [isFocused];
-  const effect = importAllResult.useEffect(() => {
+  const effect = handleOnRefresh.useEffect(() => {
     stateFromStores(visibleItemIds[16]).setTabFocused(isFocused);
   }, items2);
-  let obj3 = arg1(dependencyMap[39]);
-  const sharedICYMILogic = obj3.useSharedICYMILogic({ showDot: importDefault(dependencyMap[38])().showDot, notificationItem: stateFromStores1 });
+  let obj3 = isFocused(visibleItemIds[39]);
+  const sharedICYMILogic = obj3.useSharedICYMILogic({ showDot: stateFromStores(visibleItemIds[38])().showDot, notificationItem: stateFromStores1 });
   ({ loading, visibleItemIds } = sharedICYMILogic);
-  const dependencyMap = visibleItemIds;
   const endVisible = sharedICYMILogic.endVisible;
-  let callback = endVisible;
   ({ isRefreshing, handleOnRefresh } = sharedICYMILogic);
   ({ data, version, stickyHeaderIndices, viewabilityConfigCallbackPairs } = sharedICYMILogic);
-  let obj4 = arg1(dependencyMap[40]);
+  let obj4 = isFocused(visibleItemIds[40]);
   const iCYMIEmptyLoadingAnalytics = obj4.useICYMIEmptyLoadingAnalytics(loading, isFocused);
-  let obj5 = arg1(dependencyMap[41]);
-  const items3 = [arg1(dependencyMap[42]).DismissibleContent.ICYMI_ALPHA_UPSELL];
-  const tmp10 = callback(obj5.useGetDismissibleContent(items3), 2);
+  let obj5 = isFocused(visibleItemIds[41]);
+  const items3 = [isFocused(visibleItemIds[42]).DismissibleContent.ICYMI_ALPHA_UPSELL];
+  const tmp10 = endVisible(obj5.useGetDismissibleContent(items3), 2);
   const first = tmp10[0];
   let num = 1;
-  const tmp12 = tmp10[1];
-  let obj6 = arg1(dependencyMap[37]);
-  const items4 = [closure_9];
-  const stateFromStores2 = obj6.useStateFromStores(items4, () => ref1.getGuildCount());
-  closure_7 = stateFromStores2;
-  const items5 = [first, tmp12, stateFromStores2];
-  const effect1 = importAllResult.useEffect(() => {
+  let closure_6 = tmp12;
+  let obj6 = isFocused(visibleItemIds[37]);
+  const items4 = [ref1];
+  stateFromStores2 = obj6.useStateFromStores(items4, () => ref1.getGuildCount());
+  const items5 = [first, tmp10[1], stateFromStores2];
+  const effect1 = handleOnRefresh.useEffect(() => {
     if (null != first) {
       let obj = isFocused(visibleItemIds[21]);
-      obj = { extendedOnboarding: stateFromStores2 <= closure_12 };
+      obj = { extendedOnboarding: stateFromStores2 <= outer1_12 };
       obj.pushICYMIInfoModal(obj);
-      tmp12(constants.USER_DISMISS);
+      tmp12(outer1_13.USER_DISMISS);
     }
   }, items5);
   const items6 = [endVisible];
-  const effect2 = importAllResult.useEffect(() => {
+  const effect2 = handleOnRefresh.useEffect(() => {
     let hasOpenedEnoughTimesResult = endVisible;
     if (endVisible) {
       hasOpenedEnoughTimesResult = lib.hasOpenedEnoughTimes();
@@ -124,7 +145,6 @@ function ICYMI(inNestedNavigator) {
     }
   }, items6);
   const ref = handleOnRefresh.useRef(null);
-  let closure_8 = ref;
   obj = {
     scrollToTop() {
       const current = ref.current;
@@ -134,23 +154,21 @@ function ICYMI(inNestedNavigator) {
       }
     }
   };
-  const ref1 = handleOnRefresh.useRef(obj);
-  closure_9 = ref1;
-  const tmp2 = importDefault(dependencyMap[33])();
-  const scrollToTop = arg1(dependencyMap[35]).useScrollToTop(ref1);
-  const obj9 = arg1(dependencyMap[35]);
-  const items7 = [closure_10];
-  const stateFromStores3 = arg1(dependencyMap[37]).useStateFromStores(items7, () => stateFromStores3.getDoubleTapBehavior());
-  closure_10 = stateFromStores3;
-  const obj10 = arg1(dependencyMap[37]);
-  const items8 = [stateFromStores3, arg1(dependencyMap[44]).useNavigation(), stateFromStores];
-  const effect3 = importAllResult.useEffect(() => {
+  ref1 = handleOnRefresh.useRef(obj);
+  const tmp2 = stateFromStores(visibleItemIds[33])();
+  const scrollToTop = isFocused(visibleItemIds[35]).useScrollToTop(ref1);
+  const obj9 = isFocused(visibleItemIds[35]);
+  const items7 = [stateFromStores3];
+  stateFromStores3 = isFocused(visibleItemIds[37]).useStateFromStores(items7, () => stateFromStores3.getDoubleTapBehavior());
+  const obj10 = isFocused(visibleItemIds[37]);
+  const items8 = [stateFromStores3, isFocused(visibleItemIds[44]).useNavigation(), stateFromStores];
+  const effect3 = handleOnRefresh.useEffect(() => {
     if (stateFromStores3 === isFocused(visibleItemIds[45]).GravityICYMIDoubleTapBehavior.DEFAULT) {
       let obj = {
         scrollToTop() {
-            const current = ref.current;
+            const current = outer1_8.current;
             if (null != current) {
-              const obj = { offset: 0, animated: !closure_1 };
+              const obj = { offset: 0, animated: !outer1_1 };
               current.scrollToOffset(obj);
             }
           }
@@ -159,97 +177,94 @@ function ICYMI(inNestedNavigator) {
     } else {
       obj = {
         scrollToTop() {
-            let obj = callback2(paths[46]);
-            obj = { presentation: "modal" };
-            obj.pushLazy(callback(paths[19])(paths[47], paths.paths), {}, "for-later-modal", obj);
+            isFocused(visibleItemIds[46]).showForLaterModal(isFocused(visibleItemIds[47]).SavedMessageSortTypes.BOOKMARK);
           }
       };
       ref1.current = obj;
     }
   }, items8);
   const items9 = [ref, stateFromStores];
-  closure_11 = importAllResult.useCallback(() => {
+  closure_11 = handleOnRefresh.useCallback(() => {
     const current = ref.current;
     if (null != current) {
       const obj = { offset: 0, animated: !stateFromStores };
       current.scrollToOffset(obj);
     }
   }, items9);
-  const obj11 = arg1(dependencyMap[44]);
+  const obj11 = isFocused(visibleItemIds[44]);
   const items10 = [visibleItemIds, endVisible];
-  const mobileQuestDockHeight = arg1(dependencyMap[48]).useMobileQuestDockHeight();
-  callback = importAllResult.useCallback((item) => {
+  const mobileQuestDockHeight = isFocused(visibleItemIds[48]).useMobileQuestDockHeight();
+  const callback = handleOnRefresh.useCallback((item) => {
     item = item.item;
-    const isFocused = item;
     const kind = item.data.kind;
     if ("message" === kind) {
       if (item.channelType === isFocused(visibleItemIds[49]).ChannelTypes.GUILD_ANNOUNCEMENT) {
         let obj = { unread: item.unread, message: item.data.message, visible: null != visibleItemIds.find((item) => item.item.id === item.id) };
-        let tmp41 = callback(stateFromStores(visibleItemIds[50]), obj);
+        let tmp41 = outer1_14(stateFromStores(visibleItemIds[50]), obj);
         const tmp45 = stateFromStores(visibleItemIds[50]);
       } else {
         obj = { message: item.data.message, messageContext: item.data.messageContext, visible: null != visibleItemIds.find((item) => item.item.id === item.id) };
-        tmp41 = callback(stateFromStores(visibleItemIds[51]), obj);
+        tmp41 = outer1_14(stateFromStores(visibleItemIds[51]), obj);
         const tmp38 = stateFromStores(visibleItemIds[51]);
       }
     } else {
       if ("contentInventory" === kind) {
         const obj1 = { visible: null != visibleItemIds.find((item) => item.item.id === item.id), content: item.data.content };
-        let tmp7 = callback(stateFromStores(visibleItemIds[52]), obj1);
+        let tmp7 = outer1_14(stateFromStores(visibleItemIds[52]), obj1);
         const tmp30 = stateFromStores(visibleItemIds[52]);
       } else if ("loading" === kind) {
-        return callback(isFocused(visibleItemIds[53]).ICYMILoading, {});
+        return outer1_14(isFocused(visibleItemIds[53]).ICYMILoading, {});
       } else if ("bottomLoading" === kind) {
-        return callback(isFocused(visibleItemIds[54]).ICYMIBottomLoading, {});
+        return outer1_14(isFocused(visibleItemIds[54]).ICYMIBottomLoading, {});
       } else if ("end" === kind) {
         const obj2 = { visible: endVisible };
-        return callback(stateFromStores(visibleItemIds[55]), obj2);
+        return outer1_14(stateFromStores(visibleItemIds[55]), obj2);
       } else if ("guildEvent" === kind) {
         const obj3 = { eventId: item.data.eventId };
-        tmp7 = callback(stateFromStores(visibleItemIds[56]), obj3);
+        tmp7 = outer1_14(stateFromStores(visibleItemIds[56]), obj3);
       } else if ("recommendedGuilds" === kind) {
-        tmp7 = callback(isFocused(visibleItemIds[57]).ICYMIServerRecommendationRow, {});
+        tmp7 = outer1_14(isFocused(visibleItemIds[57]).ICYMIServerRecommendationRow, {});
       } else if ("icymiHeader" === kind) {
-        return callback(stateFromStores(visibleItemIds[58]), {});
+        return outer1_14(stateFromStores(visibleItemIds[58]), {});
       } else if ("forumThread" === kind) {
         obj = { message: item.data.message, channel: item.data.threadChannel, visible: null != visibleItemIds.find((item) => item.item.id === item.id) };
-        tmp7 = callback(isFocused(visibleItemIds[59]).ICYMIForumThreadRow, obj);
+        tmp7 = outer1_14(isFocused(visibleItemIds[59]).ICYMIForumThreadRow, obj);
       } else {
         return null;
       }
       const obj4 = { itemId: item.id, children: tmp7 };
-      return callback(isFocused(visibleItemIds[60]).CardHeightMeasurer, obj4);
+      return outer1_14(isFocused(visibleItemIds[60]).CardHeightMeasurer, obj4);
     }
   }, items10);
-  const memo = importAllResult.useMemo(() => ({ backgroundColor: "transparent" }), []);
-  const obj12 = arg1(dependencyMap[48]);
-  const clientThemesOverride = arg1(dependencyMap[61]).useClientThemesOverride();
-  const obj13 = arg1(dependencyMap[61]);
+  const memo = handleOnRefresh.useMemo(() => ({ backgroundColor: "transparent" }), []);
+  const obj12 = isFocused(visibleItemIds[48]);
+  const clientThemesOverride = isFocused(visibleItemIds[61]).useClientThemesOverride();
+  const obj13 = isFocused(visibleItemIds[61]);
   const items11 = [closure_11];
   obj = { style: items12 };
-  const items12 = [, ];
+  items12 = [, ];
   ({ containerInPanels: arr13[0], containerBackground: arr13[1] } = tmp);
-  const stateFromStores4 = arg1(dependencyMap[37]).useStateFromStores(items11, () => lib.hasNewContent(), []);
-  const items13 = [callback2(closure_19, { inNestedNavigator: inNestedNavigator.inNestedNavigator }), ];
+  const stateFromStores4 = isFocused(visibleItemIds[37]).useStateFromStores(items11, () => lib.hasNewContent(), []);
+  const items13 = [callback(closure_19, { inNestedNavigator: inNestedNavigator.inNestedNavigator }), ];
   obj1 = { style: items14 };
-  const items14 = [tmp.flashListWrapper, , ];
-  obj2 = { height: height - importDefault(dependencyMap[34])().top - 32 - 24 - mobileQuestDockHeight, width, marginHorizontal: "auto" };
+  items14 = [tmp.flashListWrapper, , ];
+  obj2 = { height: height - stateFromStores(visibleItemIds[34])().top - 32 - 24 - mobileQuestDockHeight, width, marginHorizontal: "auto" };
   items14[1] = obj2;
   items14[2] = clientThemesOverride;
   obj3 = {
     onPress() {
       stateFromStores(visibleItemIds[16]).itemInteracted("refresh_button", "refresh_button", "press_refresh_button");
       const obj = stateFromStores(visibleItemIds[16]);
-      stateFromStores(visibleItemIds[16]).feedPageActioned({ actionParameters: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } });
+      stateFromStores(visibleItemIds[16]).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "new_content_pill", actionIntentType: "refresh", actionDestinationType: null } });
       handleOnRefresh();
       lib();
     },
     isRefreshing
   };
-  const items15 = [callback2(importDefault(dependencyMap[62]), obj3), , ];
+  const items15 = [callback(stateFromStores(visibleItemIds[62]), obj3), , ];
   obj4 = { ref, scrollEnabled: !loading, extraData: { endVisible }, contentContainerStyle: memo };
-  const intl = arg1(dependencyMap[23]).intl;
-  obj4.accessibilityLabel = intl.string(arg1(dependencyMap[23]).t.OIgYlQ);
+  const intl = isFocused(visibleItemIds[23]).intl;
+  obj4.accessibilityLabel = intl.string(isFocused(visibleItemIds[23]).t.OIgYlQ);
   obj4.data = data;
   obj4.refreshing = isRefreshing;
   obj5 = { onRefresh: handleOnRefresh, refreshing: isRefreshing, tintColor: tmp.refreshing.color };
@@ -260,29 +275,29 @@ function ICYMI(inNestedNavigator) {
   }
   obj6.opacity = num2;
   obj5.style = obj6;
-  obj4.refreshControl = callback2(tmp12, obj5);
+  obj4.refreshControl = callback(closure_6, obj5);
   obj4.onEndReachedThreshold = 3;
   obj4.onEndReached = handleEndReached;
   obj4.keyExtractor = keyExtractor;
   obj4.renderItem = callback;
-  obj4.getItemType = arg1(dependencyMap[32]).itemToType;
-  const obj14 = arg1(dependencyMap[37]);
+  obj4.getItemType = isFocused(visibleItemIds[32]).itemToType;
+  const obj14 = isFocused(visibleItemIds[37]);
   const tmp26 = closure_16;
   const tmp27 = first;
   const tmp28 = closure_16;
   const tmp29 = first;
-  const tmp30 = callback2;
-  const tmp31 = callback2;
-  const tmp32 = tmp12;
-  arg1(dependencyMap[64]).isAndroid();
+  let tmp30 = callback;
+  const tmp31 = callback;
+  const tmp32 = closure_6;
+  isFocused(visibleItemIds[64]).isAndroid();
   obj4.drawDistance = 100;
   obj4.stickyHeaderIndices = stickyHeaderIndices;
   obj4.viewabilityConfigCallbackPairs = viewabilityConfigCallbackPairs;
   if (!loading) {
     num = version;
   }
-  items15[1] = tmp30(arg1(dependencyMap[63]).FlashList, obj4, "Version-" + num);
-  items15[2] = callback2(arg1(dependencyMap[65]).TTIFirstContentfulPaint, { label: "icymi" });
+  items15[1] = tmp30(isFocused(visibleItemIds[63]).FlashList, obj4, "Version-" + num);
+  items15[2] = callback(isFocused(visibleItemIds[65]).TTIFirstContentfulPaint, { label: "icymi" });
   obj1.children = items15;
   items13[1] = tmp28(tmp29, obj1);
   obj.children = items13;
@@ -291,107 +306,95 @@ function ICYMI(inNestedNavigator) {
 function keyExtractor(id) {
   return id.id;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ View: closure_5, RefreshControl: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = arg1(dependencyMap[8]).NUM_GUILDS_EXTENDED_ONBOARDING;
-const ContentDismissActionType = arg1(dependencyMap[9]).ContentDismissActionType;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = arg1(dependencyMap[10]));
-const tmp3 = arg1(dependencyMap[10]);
-let closure_17 = arg1(dependencyMap[11]).createStyles((paddingTop) => {
+({ View: closure_5, RefreshControl: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
+let closure_17 = _createForOfIteratorHelperLoose.createStyles((paddingTop) => {
   let obj = {};
-  obj = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: importDefault(dependencyMap[12]).space.PX_8, overflow: "hidden", flex: 1, paddingTop };
+  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: importDefault(689).space.PX_8, overflow: "hidden", flex: 1, paddingTop };
   obj.containerOuterTablet = obj;
   return obj;
 });
-const obj2 = arg1(dependencyMap[11]);
-let closure_18 = arg1(dependencyMap[13]).createICYMIStyles((margin) => {
-  let obj = { container: { gap: true, alignItems: true, justifyContent: true } };
-  obj = { -9223372036854775808: 1899409233, -9223372036854775808: -1, 0: 1922297169, -9223372036854775808: 24, borderTopLeftRadius: importDefault(dependencyMap[12]).radii.sm, borderTopRightRadius: importDefault(dependencyMap[12]).radii.sm };
+let closure_18 = createICYMIStyles.createICYMIStyles((margin) => {
+  let obj = { container: { flex: 1, flexShrink: 1, flexGrow: 1 } };
+  obj = { flex: 1, flexShrink: 1, flexGrow: 1, overflow: "hidden", borderTopLeftRadius: importDefault(689).radii.sm, borderTopRightRadius: importDefault(689).radii.sm };
   obj.containerInPanels = obj;
-  obj = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
+  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
   obj.containerBackground = obj;
-  const obj1 = { "Null": "isArray", "Null": "EXPRESSION_PICKER_EXPRESSION_FOCUS", "Null": "isArray", backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
+  const obj1 = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, minHeight: 2, flex: 1 };
   obj.flashListWrapper = obj1;
-  obj.refreshing = { color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj3 = { <string:1817292641>: null, <string:1398563427>: null, <string:2376753235>: null, <string:1627653640>: null, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOW };
+  obj.refreshing = { color: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj3 = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW, position: "relative", overflow: "hidden", width: "100%" };
   obj.header = obj3;
-  obj.headerLeft = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-  const obj2 = { color: importDefault(dependencyMap[12]).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.headerClose = { marginRight: importDefault(dependencyMap[12]).space.PX_16, height: importDefault(dependencyMap[12]).space.PX_32, width: importDefault(dependencyMap[12]).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(dependencyMap[12]).radii.lg };
-  obj.headerTitle = { marginHorizontal: margin.margin };
-  obj.headerText = { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null };
-  const obj6 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[12]).space.PX_12 };
+  obj.headerLeft = { flexDirection: "row", alignItems: "center" };
+  const obj2 = { color: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj.headerClose = { marginRight: importDefault(689).space.PX_16, height: importDefault(689).space.PX_32, width: importDefault(689).space.PX_32, alignItems: "center", justifyContent: "center", borderRadius: importDefault(689).radii.lg };
+  const obj5 = { height: 56, marginHorizontal: margin.margin, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+  obj.headerTitle = obj5;
+  obj.headerText = { flexDirection: "row", alignItems: "center", gap: 4 };
+  const obj6 = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_12 };
   obj.headerActions = obj6;
-  const obj7 = { hideWhenScrolling: null, autoCapitalize: null, borderRadius: importDefault(dependencyMap[12]).radii.round };
+  const obj7 = { height: 18, width: 18, borderRadius: importDefault(689).radii.round };
   obj.notificationBadge = obj7;
-  const obj8 = { "Null": "<string:3942646034>", "Null": "<string:3355444267>", paddingTop: importDefault(dependencyMap[12]).space.PX_96 };
+  const obj8 = { flex: 1, justifyContent: "center", paddingTop: importDefault(689).space.PX_96 };
   obj.loading = obj8;
-  const obj9 = { "Bool(false)": "sync", "Bool(false)": "GAME_CLAIM_NOTICE_MARGIN_BOTTOM", "Bool(false)": "MedalIcon", "Bool(false)": "png", "Bool(false)": "SETTINGS_PREMIUM_MANAGE_PLAN", "Bool(false)": "allowSparse", backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
+  const obj9 = { position: "absolute", bottom: 0, left: 0, right: 0, backgroundColor: importDefault(689).colors.BORDER_SUBTLE, height: 1 };
   obj.headerBorder = obj9;
   return obj;
 });
 let closure_19 = importAllResult.memo((inNestedNavigator) => {
   inNestedNavigator = inNestedNavigator.inNestedNavigator;
-  const tmp = callback5();
-  const tmp2 = importDefault(dependencyMap[24])();
+  const tmp = callback4();
+  const tmp2 = importDefault(8133)();
   let obj = { top: !tmp2, style: tmp.header };
-  obj = {};
-  obj = { dark: arg1(dependencyMap[27]).OverlayOpacity.LEVEL_7, light: arg1(dependencyMap[27]).OverlayOpacity.LEVEL_8 };
+  obj = { absolute: true, wide: true, tall: true, mix: true };
+  obj = { dark: require(3941) /* colorToHex */.OverlayOpacity.LEVEL_7, light: require(3941) /* colorToHex */.OverlayOpacity.LEVEL_8 };
   obj.mixAmount = obj;
-  const items = [callback2(importDefault(dependencyMap[26]), obj), , ];
+  const items = [callback(importDefault(4662), obj), , ];
   const obj1 = { style: tmp.headerTitle };
   const obj2 = { style: tmp.headerLeft };
   if (!tmp2) {
     if (!inNestedNavigator) {
-      const items1 = [null, callback2(ICYMIHeaderTextWrapper, {})];
+      const items1 = [null, callback(ICYMIHeaderTextWrapper, {})];
       obj2.children = items1;
       const items2 = [tmp7(tmp8, obj2), ];
       const obj3 = { style: tmp.headerActions };
-      const items3 = [callback2(InfoButton, {}), callback2(SettingsButton, {})];
+      const items3 = [callback(InfoButton, {}), callback(SettingsButton, {})];
       obj3.children = items3;
-      items2[1] = callback3(closure_5, obj3);
+      items2[1] = callback2(closure_5, obj3);
       obj1.children = items2;
       items[1] = tmp5(tmp6, obj1);
       const obj4 = { style: tmp.headerBorder };
-      items[2] = callback2(closure_5, obj4);
+      items[2] = callback(closure_5, obj4);
       obj.children = items;
-      return callback3(arg1(dependencyMap[25]).SafeAreaPaddingView, obj);
+      return callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
     }
   }
   const obj5 = { style: tmp.headerClose };
-  const intl = arg1(dependencyMap[23]).intl;
-  obj5.accessibilityLabel = intl.string(arg1(dependencyMap[23]).t.13/7kX);
-  obj5.onPress = arg1(dependencyMap[29]).goBack;
-  let LeftBackIconWithBadge = arg1;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj5.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
+  obj5.onPress = require(15128) /* goBack */.goBack;
+  let LeftBackIconWithBadge = require;
   if (inNestedNavigator) {
-    LeftBackIconWithBadge = LeftBackIconWithBadge(tmp12[30]).LeftBackIconWithBadge;
+    LeftBackIconWithBadge = LeftBackIconWithBadge(15130).LeftBackIconWithBadge;
     const obj6 = { includeNotificationsCount: true };
     let tmp11Result = tmp11(LeftBackIconWithBadge, obj6);
   } else {
     const obj7 = { color: "interactive-text-default" };
-    tmp11Result = tmp11(LeftBackIconWithBadge(tmp12[31]).XSmallIcon, obj7);
+    tmp11Result = tmp11(LeftBackIconWithBadge(5119).XSmallIcon, obj7);
   }
   obj5.children = tmp11Result;
-  callback2(arg1(dependencyMap[28]).PressableOpacity, obj5);
+  callback(require(4660) /* PressableBase */.PressableOpacity, obj5);
 });
-const obj3 = arg1(dependencyMap[13]);
-const result = arg1(dependencyMap[70]).fileFinishedImporting("modules/icymi/native/ICYMI.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/icymi/native/ICYMI.tsx");
 
 export const ICYMITab = function ICYMITab(route) {
   route = route.route;
   let importDefault;
-  let obj = arg1(dependencyMap[37]);
+  let obj = require(566) /* initialize */;
   const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  const tmp3 = importDefault(dependencyMap[24])();
-  const arg1 = tmp3;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getId());
+  const tmp3 = importDefault(8133)();
+  require = tmp3;
   let inNestedNavigator;
   if (null != route) {
     const params = route.params;
@@ -399,13 +402,13 @@ export const ICYMITab = function ICYMITab(route) {
       inNestedNavigator = params.inNestedNavigator;
     }
   }
-  const tmp5 = callback4(importDefault(dependencyMap[34])().top);
+  const tmp5 = callback3(importDefault(1557)().top);
   importDefault = tmp5;
   const items1 = [tmp3, tmp5.containerOuterTablet];
   const memo = importAllResult.useMemo(() => {
     let containerOuterTablet;
-    if (tmp3) {
-      containerOuterTablet = tmp5.containerOuterTablet;
+    if (closure_0) {
+      containerOuterTablet = _undefined.containerOuterTablet;
     }
     return containerOuterTablet;
   }, items1);
@@ -415,8 +418,8 @@ export const ICYMITab = function ICYMITab(route) {
     Fragment = importAllResult.Fragment;
   }
   obj = {};
-  const tmp = importDefault(dependencyMap[66])();
-  const tmp8 = callback2;
+  const tmp = importDefault(3977)();
+  const tmp8 = callback;
   obj = {};
   const obj1 = {};
   if (tmp3) {
@@ -426,13 +429,13 @@ export const ICYMITab = function ICYMITab(route) {
     obj3 = {};
   }
   const merged = Object.assign(obj3);
-  const items2 = [callback2(importDefault(dependencyMap[26]), { absolute: true }), ];
+  const items2 = [callback(importDefault(4662), { absolute: true }), ];
   const obj4 = { gradient: tmp };
   const obj5 = { inNestedNavigator };
-  obj4.children = callback2(ICYMI, obj5, "" + stateFromStores);
-  items2[1] = callback2(arg1(dependencyMap[69]).ThemeContextProvider, obj4);
+  obj4.children = callback(ICYMI, obj5, "" + stateFromStores);
+  items2[1] = callback(require(3842) /* ManaContext */.ThemeContextProvider, obj4);
   obj1["children"] = items2;
   obj.children = closure_16(Fragment, obj1);
-  obj.children = callback2(arg1(dependencyMap[68]).ICYMIContextProvider, obj);
-  return tmp8(importDefault(dependencyMap[67]), obj);
+  obj.children = callback(require(15180) /* useICYMIContextConstructor */.ICYMIContextProvider, obj);
+  return tmp8(importDefault(15249), obj);
 };

@@ -1,20 +1,22 @@
-// Module ID: 13363
-// Function ID: 101645
+// Module ID: 13477
+// Function ID: 103801
 // Name: DiscordGestureHandlerRootView
-// Dependencies: []
+// Dependencies: [31, 27, 33, 13478, 5217, 2]
 // Exports: default
 
-// Module 13363 (DiscordGestureHandlerRootView)
-importAll(dependencyMap[0]);
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 13477 (DiscordGestureHandlerRootView)
+import "result";
+import { StyleSheet } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const styles = StyleSheet.create({ flex: { flex: 1 } });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/gesture_handler/native/DiscordGestureHandlerRootView.android.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/gesture_handler/native/DiscordGestureHandlerRootView.android.tsx");
 
 export default function DiscordGestureHandlerRootView(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);
-  const obj = { style: styles.flex, children: jsx(arg1(dependencyMap[4]).GestureHandlerRootView, { style, children }) };
-  return jsx(importDefault(dependencyMap[3]), obj);
+  const obj = { style: styles.flex, children: jsx(require(5217) /* Directions */.GestureHandlerRootView, { style, children }) };
+  return jsx(importDefault(13478), { style: styles.flex, children: jsx(require(5217) /* Directions */.GestureHandlerRootView, { style, children }) });
 };

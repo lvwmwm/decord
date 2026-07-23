@@ -1,9 +1,17 @@
-// Module ID: 12729
-// Function ID: 97656
+// Module ID: 12843
+// Function ID: 99812
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 44, 5135, 566, 686, 675, 1934, 2]
 
-// Module 12729 (_isNativeReflectConstruct)
+// Module 12843 (_isNativeReflectConstruct)
+import getWindowId from "getWindowId";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,32 +25,27 @@ function getWindowIdState(windowId) {
   let value = map.get(windowId);
   if (null == value) {
     const hasItem = set.has(windowId);
-    const obj = { windowSize: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } };
+    const obj = { isElementFullscreen: false, focused: false, windowSize: { width: 0, height: 0 }, visible: false };
     value = obj;
   }
   return value;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = null;
+let c8 = null;
 const map = new Map();
-const set = new Set();
-let tmp4 = (Store) => {
+let set = new Set();
+let tmp4 = ((Store) => {
   class WindowStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, WindowStore);
-      obj = closure_6(WindowStore);
-      tmp2 = closure_5;
-      if (closure_11()) {
+      tmp = outer1_3(this, WindowStore);
+      obj = outer1_6(WindowStore);
+      tmp2 = outer1_5;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -51,17 +54,16 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = WindowStore;
   callback2(WindowStore, Store);
   let obj = {
     key: "isFocused",
     value() {
       let mainWindowId = arg0;
       if (arg0 === undefined) {
-        mainWindowId = WindowStore(closure_2[6]).getMainWindowId();
-        const obj = WindowStore(closure_2[6]);
+        mainWindowId = WindowStore(outer1_2[6]).getMainWindowId();
+        const obj = WindowStore(outer1_2[6]);
       }
-      return callback4(mainWindowId).focused;
+      return outer1_12(mainWindowId).focused;
     }
   };
   const items = [obj, , , , , , ];
@@ -77,29 +79,29 @@ let tmp4 = (Store) => {
     value() {
       let mainWindowId = arg0;
       if (arg0 === undefined) {
-        mainWindowId = WindowStore(closure_2[6]).getMainWindowId();
-        const obj = WindowStore(closure_2[6]);
+        mainWindowId = WindowStore(outer1_2[6]).getMainWindowId();
+        const obj = WindowStore(outer1_2[6]);
       }
-      return callback4(mainWindowId).visible;
+      return outer1_12(mainWindowId).visible;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getFocusedWindowId",
     value() {
-      let closure_0 = null;
-      const item = closure_9.forEach((focused) => {
+      let c0 = null;
+      const item = outer1_9.forEach((focused) => {
         if (focused.focused) {
           let closure_0 = arg1;
         }
       });
-      return closure_0;
+      return c0;
     }
   };
   items[4] = {
     key: "getLastFocusedWindowId",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[5] = {
@@ -107,10 +109,10 @@ let tmp4 = (Store) => {
     value() {
       let mainWindowId = arg0;
       if (arg0 === undefined) {
-        mainWindowId = WindowStore(closure_2[6]).getMainWindowId();
-        const obj = WindowStore(closure_2[6]);
+        mainWindowId = WindowStore(outer1_2[6]).getMainWindowId();
+        const obj = WindowStore(outer1_2[6]);
       }
-      return callback4(mainWindowId).isElementFullscreen;
+      return outer1_12(mainWindowId).isElementFullscreen;
     }
   };
   items[6] = {
@@ -118,20 +120,20 @@ let tmp4 = (Store) => {
     value() {
       let mainWindowId = arg0;
       if (arg0 === undefined) {
-        mainWindowId = WindowStore(closure_2[6]).getMainWindowId();
-        const obj = WindowStore(closure_2[6]);
+        mainWindowId = WindowStore(outer1_2[6]).getMainWindowId();
+        const obj = WindowStore(outer1_2[6]);
       }
-      return callback4(mainWindowId).windowSize;
+      return outer1_12(mainWindowId).windowSize;
     }
   };
   return callback(WindowStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "WindowStore";
-tmp4 = new tmp4(importDefault(dependencyMap[8]), {
+tmp4 = new tmp4(require("dispatcher"), {
   WINDOW_INIT: function handleWindowInit(isElementFullscreen) {
-    importDefault(dependencyMap[5])(!map.has(isElementFullscreen.windowId), "Window initialized multiple times");
+    importDefault(44)(!map.has(isElementFullscreen.windowId), "Window initialized multiple times");
     const focused = isElementFullscreen.focused;
-    let obj = { windowSize: obj, isElementFullscreen: isElementFullscreen.isElementFullscreen, focused, visible: isElementFullscreen.visible };
+    obj = { windowSize: obj, isElementFullscreen: isElementFullscreen.isElementFullscreen, focused, visible: isElementFullscreen.visible };
     obj = { width: isElementFullscreen.width, height: isElementFullscreen.height };
     const result = map.set(isElementFullscreen.windowId, obj);
     if (focused) {
@@ -183,8 +185,8 @@ tmp4 = new tmp4(importDefault(dependencyMap[8]), {
   WINDOW_UNLOAD: function handleWindowUnload(windowId) {
     set.add(windowId.windowId);
     map.delete(windowId.windowId);
-    if (closure_8 === windowId.windowId) {
-      closure_8 = null;
+    if (c8 === windowId.windowId) {
+      c8 = null;
     }
     return true;
   },
@@ -201,86 +203,11 @@ tmp4 = new tmp4(importDefault(dependencyMap[8]), {
     return flag;
   }
 });
-arg1(dependencyMap[10])(dependencyMap[9], dependencyMap.paths).then((addExtraAnalyticsDecorator) => {
+require("expandLocation").then((addExtraAnalyticsDecorator) => {
   const result = addExtraAnalyticsDecorator.addExtraAnalyticsDecorator(() => {
 
   });
 });
-const obj = {
-  WINDOW_INIT: function handleWindowInit(isElementFullscreen) {
-    importDefault(dependencyMap[5])(!map.has(isElementFullscreen.windowId), "Window initialized multiple times");
-    const focused = isElementFullscreen.focused;
-    let obj = { windowSize: obj, isElementFullscreen: isElementFullscreen.isElementFullscreen, focused, visible: isElementFullscreen.visible };
-    obj = { width: isElementFullscreen.width, height: isElementFullscreen.height };
-    const result = map.set(isElementFullscreen.windowId, obj);
-    if (focused) {
-      const windowId = isElementFullscreen.windowId;
-    }
-    return true;
-  },
-  WINDOW_FULLSCREEN_CHANGE: function handleWindowFullscreenChange(windowId) {
-    const tmp = getWindowIdState(windowId.windowId);
-    let flag = tmp.isElementFullscreen !== windowId.isElementFullscreen;
-    if (flag) {
-      const obj = {};
-      const merged = Object.assign(tmp);
-      obj["isElementFullscreen"] = windowId.isElementFullscreen;
-      const result = map.set(windowId.windowId, obj);
-      flag = true;
-    }
-    return flag;
-  },
-  WINDOW_FOCUS: function handleWindowFocus(windowId) {
-    const tmp = getWindowIdState(windowId.windowId);
-    let flag = tmp.focused !== windowId.focused;
-    if (flag) {
-      if (windowId.focused) {
-        windowId = windowId.windowId;
-      }
-      const obj = {};
-      const merged = Object.assign(tmp);
-      obj["focused"] = windowId.focused;
-      const result = map.set(windowId.windowId, obj);
-      flag = true;
-    }
-    return flag;
-  },
-  WINDOW_RESIZED: function handleWindowResize(windowId) {
-    const tmp = getWindowIdState(windowId.windowId);
-    let flag = tmp.windowSize.width !== windowId.width || tmp.windowSize.height !== windowId.height;
-    if (flag) {
-      let obj = {};
-      const merged = Object.assign(tmp);
-      obj = {};
-      ({ width: obj2.width, height: obj2.height } = windowId);
-      obj["windowSize"] = obj;
-      const result = map.set(windowId.windowId, obj);
-      flag = true;
-    }
-    return flag;
-  },
-  WINDOW_UNLOAD: function handleWindowUnload(windowId) {
-    set.add(windowId.windowId);
-    map.delete(windowId.windowId);
-    if (closure_8 === windowId.windowId) {
-      closure_8 = null;
-    }
-    return true;
-  },
-  WINDOW_VISIBILITY_CHANGE: function handleWindowVisibilityChange(windowId) {
-    const tmp = getWindowIdState(windowId.windowId);
-    let flag = tmp.visible !== windowId.visible;
-    if (flag) {
-      const obj = {};
-      const merged = Object.assign(tmp);
-      obj["visible"] = windowId.visible;
-      const result = map.set(windowId.windowId, obj);
-      flag = true;
-    }
-    return flag;
-  }
-};
-const promise = arg1(dependencyMap[10])(dependencyMap[9], dependencyMap.paths);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("stores/web/WindowStore.tsx");
+let result = set.fileFinishedImporting("stores/web/WindowStore.tsx");
 
 export default tmp4;

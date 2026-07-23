@@ -1,26 +1,28 @@
-// Module ID: 14784
-// Function ID: 111443
+// Module ID: 14900
+// Function ID: 113611
 // Name: useCallA11yState
-// Dependencies: []
+// Dependencies: [1194, 4809, 566, 2]
 // Exports: default
 
-// Module 14784 (useCallA11yState)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/calls/useCallA11yState.tsx");
+// Module 14900 (useCallA11yState)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/calls/useCallA11yState.tsx");
 
 export default function useCallA11yState(arg0) {
-  const arg1 = arg0;
-  const items = [closure_3, closure_2];
-  return arg1(dependencyMap[2]).useStateFromStoresObject(items, () => {
-    const call = closure_3.getCall(arg0);
-    const id = id.getId();
+  const _require = arg0;
+  const items = [closure_3, _isNativeReflectConstruct];
+  return _require(566).useStateFromStoresObject(items, () => {
+    const call = outer1_3.getCall(closure_0);
+    const id = outer1_2.getId();
     let hasItem = null != call && null != id;
     if (hasItem) {
       const ringing = call.ringing;
       hasItem = ringing.includes(id);
     }
-    const obj = { isIncomingCall: hasItem, isOngoingCall: closure_3.isCallActive(arg0) && !hasItem };
+    const obj = { isIncomingCall: hasItem, isOngoingCall: outer1_3.isCallActive(closure_0) && !hasItem };
     return obj;
   });
 };

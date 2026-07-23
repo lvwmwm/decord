@@ -1,14 +1,16 @@
-// Module ID: 12901
-// Function ID: 98467
+// Module ID: 13015
+// Function ID: 100623
 // Name: getAnimatedTypingTranslateX
-// Dependencies: []
+// Dependencies: [1274, 13016, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 12901 (getAnimatedTypingTranslateX)
-const _module = require(dependencyMap[0]);
-({ STATUS_PADDING: closure_2, StatusSizes: closure_3 } = _module);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("design/void/Status/native/StatusUtils.tsx");
+// Module 13015 (getAnimatedTypingTranslateX)
+import STATUS_PADDING from "STATUS_PADDING";
+
+let closure_2;
+let closure_3;
+({ STATUS_PADDING: closure_2, StatusSizes: closure_3 } = STATUS_PADDING);
+const result = require("set").fileFinishedImporting("design/void/Status/native/StatusUtils.tsx");
 
 export const getAnimatedTypingTranslateX = function getAnimatedTypingTranslateX(width) {
   return width / 2 - 6;
@@ -18,7 +20,7 @@ export const getMobileStatusContainerRect = function getMobileStatusContainerRec
   return { width: sum, height: 1.4 * sum, cornerRadius: sum / 4 };
 };
 export const getVRStatusContainerRect = function getVRStatusContainerRect(arg0) {
-  const size = importDefault(dependencyMap[1])(arg0, false, true);
+  const size = importDefault(13016)(arg0, false, true);
   return { width: size.width, height: size.height, cornerRadius: size.borderRadius };
 };
 export const getStatusTypingDimensions = function getStatusTypingDimensions(arg0) {

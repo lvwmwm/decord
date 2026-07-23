@@ -1,27 +1,30 @@
-// Module ID: 13707
-// Function ID: 103705
+// Module ID: 13821
+// Function ID: 105861
 // Name: FamilyCenterLinkRow
-// Dependencies: []
+// Dependencies: [31, 27, 6770, 33, 4130, 13822, 13823, 2]
 // Exports: default
 
-// Module 13707 (FamilyCenterLinkRow)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const UserLinkStatus = arg1(dependencyMap[2]).UserLinkStatus;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[4]).createStyles({ actionContainer: {} });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkRow.tsx");
+// Module 13821 (FamilyCenterLinkRow)
+import "result";
+import { View } from "get ActivityIndicator";
+import { UserLinkStatus } from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ actionContainer: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", height: "100%" } });
+const result = require("items").fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkRow.tsx");
 
 export default function FamilyCenterLinkRow(children) {
   const otherUser = children.otherUser;
   let obj = { userId: otherUser.id };
   const tmp = callback3();
   obj = { otherUser, status: UserLinkStatus.PENDING };
-  const items = [callback(importDefault(dependencyMap[6]), obj), ];
+  const items = [callback(importDefault(13823), obj), ];
   obj = { style: tmp.actionContainer, children: children.actions };
   items[1] = callback(View, obj);
   obj.children = items;
-  return callback2(importDefault(dependencyMap[5]), obj);
+  return callback2(importDefault(13822), obj);
 };

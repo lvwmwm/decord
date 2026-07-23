@@ -1,10 +1,12 @@
 // Module ID: 914
-// Function ID: 10022
+// Function ID: 10023
 // Name: extractPartyInfo
-// Dependencies: []
+// Dependencies: [77, 912, 915, 916]
 // Exports: buildClientAttributesFromInfo, buildServerAttributesFromInfo, buildTransportAttributes, extractSessionDataFromInitializeRequest, extractSessionDataFromInitializeResponse
 
 // Module 914 (extractPartyInfo)
+import _defineProperty from "_defineProperty";
+
 function extractPartyInfo(clientInfo) {
   const obj = {};
   if (obj2.isValidContentItem(clientInfo)) {
@@ -21,22 +23,22 @@ function extractPartyInfo(clientInfo) {
   return obj;
 }
 function getClientAttributes(transport) {
-  let obj = require(dependencyMap[2]);
+  let obj = require(915) /* weakMap */;
   const clientInfoForTransport = obj.getClientInfoForTransport(transport);
   obj = {};
   if (tmp2) {
-    obj.mcp.client.name = clientInfoForTransport.name;
+    obj["mcp.client.name"] = clientInfoForTransport.name;
   }
   if (tmp3) {
-    obj.mcp.client.title = clientInfoForTransport.title;
+    obj["mcp.client.title"] = clientInfoForTransport.title;
   }
   if (tmp4) {
-    obj.mcp.client.version = clientInfoForTransport.version;
+    obj["mcp.client.version"] = clientInfoForTransport.version;
   }
   return obj;
 }
 function getServerAttributes(transport) {
-  let obj = require(dependencyMap[2]);
+  let obj = require(915) /* weakMap */;
   const sessionDataForTransport = obj.getSessionDataForTransport(transport);
   let serverInfo;
   if (null != sessionDataForTransport) {
@@ -44,13 +46,13 @@ function getServerAttributes(transport) {
   }
   obj = {};
   if (tmp3) {
-    obj[require(dependencyMap[3]).MCP_SERVER_NAME_ATTRIBUTE] = serverInfo.name;
+    obj[require(916).MCP_SERVER_NAME_ATTRIBUTE] = serverInfo.name;
   }
   if (tmp6) {
-    obj[require(dependencyMap[3]).MCP_SERVER_TITLE_ATTRIBUTE] = serverInfo.title;
+    obj[require(916).MCP_SERVER_TITLE_ATTRIBUTE] = serverInfo.title;
   }
   if (tmp9) {
-    obj[require(dependencyMap[3]).MCP_SERVER_VERSION_ATTRIBUTE] = serverInfo.version;
+    obj[require(916).MCP_SERVER_VERSION_ATTRIBUTE] = serverInfo.version;
   }
   return obj;
 }
@@ -152,34 +154,33 @@ function getTransportTypes(transport) {
       return obj;
     }
   }
-  return { backgroundColor: "isArrayBuffer", borderColor: "onMomentumEnd" };
+  return { mcpTransport: "unknown", networkTransport: "unknown" };
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const buildClientAttributesFromInfo = function buildClientAttributesFromInfo(clientInfo) {
   const obj = {};
   if (tmp) {
-    obj.mcp.client.name = clientInfo.name;
+    obj["mcp.client.name"] = clientInfo.name;
   }
   if (tmp2) {
-    obj.mcp.client.title = clientInfo.title;
+    obj["mcp.client.title"] = clientInfo.title;
   }
   if (tmp3) {
-    obj.mcp.client.version = clientInfo.version;
+    obj["mcp.client.version"] = clientInfo.version;
   }
   return obj;
 };
 export const buildServerAttributesFromInfo = function buildServerAttributesFromInfo(serverInfo) {
   const obj = {};
   if (tmp) {
-    obj[require(dependencyMap[3]).MCP_SERVER_NAME_ATTRIBUTE] = serverInfo.name;
+    obj[require(916).MCP_SERVER_NAME_ATTRIBUTE] = serverInfo.name;
   }
   if (tmp4) {
-    obj[require(dependencyMap[3]).MCP_SERVER_TITLE_ATTRIBUTE] = serverInfo.title;
+    obj[require(916).MCP_SERVER_TITLE_ATTRIBUTE] = serverInfo.title;
   }
   if (tmp7) {
-    obj[require(dependencyMap[3]).MCP_SERVER_VERSION_ATTRIBUTE] = serverInfo.version;
+    obj[require(916).MCP_SERVER_VERSION_ATTRIBUTE] = serverInfo.version;
   }
   return obj;
 };
@@ -201,27 +202,27 @@ export const buildTransportAttributes = function buildTransportAttributes(transp
   const tmp3 = getTransportTypes(transport);
   const tmp4 = getClientAttributes(transport);
   const tmp5 = getServerAttributes(transport);
-  const protocolVersionForTransport = require(dependencyMap[2]).getProtocolVersionForTransport(transport);
+  const protocolVersionForTransport = require(915) /* weakMap */.getProtocolVersionForTransport(transport);
   let tmp7 = sessionId;
   if (sessionId) {
-    tmp7 = callback({}, require(dependencyMap[3]).MCP_SESSION_ID_ATTRIBUTE, sessionId);
+    tmp7 = _defineProperty({}, require(916).MCP_SESSION_ID_ATTRIBUTE, sessionId);
   }
   let address = obj.address;
   if (address) {
-    address = callback({}, require(dependencyMap[3]).CLIENT_ADDRESS_ATTRIBUTE, obj.address);
+    address = _defineProperty({}, require(916).CLIENT_ADDRESS_ATTRIBUTE, obj.address);
   }
   let port = obj.port;
   if (port) {
-    port = callback({}, require(dependencyMap[3]).CLIENT_PORT_ATTRIBUTE, obj.port);
+    port = _defineProperty({}, require(916).CLIENT_PORT_ATTRIBUTE, obj.port);
   }
-  const obj2 = require(dependencyMap[2]);
-  const tmp17 = callback({}, require(dependencyMap[3]).MCP_TRANSPORT_ATTRIBUTE, mcpTransport);
-  const tmp18 = callback(callback({}, require(dependencyMap[3]).MCP_TRANSPORT_ATTRIBUTE, mcpTransport), require(dependencyMap[3]).NETWORK_TRANSPORT_ATTRIBUTE, networkTransport);
+  const obj2 = require(915) /* weakMap */;
+  const tmp17 = _defineProperty({}, require(916).MCP_TRANSPORT_ATTRIBUTE, mcpTransport);
+  const tmp18 = _defineProperty(_defineProperty({}, require(916).MCP_TRANSPORT_ATTRIBUTE, mcpTransport), require(916).NETWORK_TRANSPORT_ATTRIBUTE, networkTransport);
   let tmp20 = protocolVersionForTransport;
   if (protocolVersionForTransport) {
-    tmp20 = callback({}, require(dependencyMap[3]).MCP_PROTOCOL_VERSION_ATTRIBUTE, protocolVersionForTransport);
+    tmp20 = _defineProperty({}, require(916).MCP_PROTOCOL_VERSION_ATTRIBUTE, protocolVersionForTransport);
   }
-  return Object.assign({}, tmp7, address, port, callback(callback(callback({}, require(dependencyMap[3]).MCP_TRANSPORT_ATTRIBUTE, mcpTransport), require(dependencyMap[3]).NETWORK_TRANSPORT_ATTRIBUTE, networkTransport), require(dependencyMap[3]).NETWORK_PROTOCOL_VERSION_ATTRIBUTE, "2.0"), tmp20, tmp4, tmp5);
+  return Object.assign({}, tmp7, address, port, _defineProperty(_defineProperty(_defineProperty({}, require(916).MCP_TRANSPORT_ATTRIBUTE, mcpTransport), require(916).NETWORK_TRANSPORT_ATTRIBUTE, networkTransport), require(916).NETWORK_PROTOCOL_VERSION_ATTRIBUTE, "2.0"), tmp20, tmp4, tmp5);
 };
 export { extractClientInfo };
 export const extractSessionDataFromInitializeRequest = function extractSessionDataFromInitializeRequest(params) {

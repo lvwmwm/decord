@@ -1,11 +1,10 @@
 // Module ID: 1881
-// Function ID: 20963
+// Function ID: 20964
 // Name: PermissionOverwriteType
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 1881 (PermissionOverwriteType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("flow/Server.tsx");
+const result = require("set").fileFinishedImporting("flow/Server.tsx");
 
 export const PermissionOverwriteType = { ROLE: 0, [0]: "ROLE", MEMBER: 1, [1]: "MEMBER" };
 export const GuildBoostUpsellType = { FIRST_BOOSTER: 0, [0]: "FIRST_BOOSTER" };

@@ -1,5 +1,5 @@
 // Module ID: 3684
-// Function ID: 28056
+// Function ID: 28059
 // Name: prop
 // Dependencies: []
 
@@ -10,14 +10,14 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { accessibilityHint: 120, legacyCompat_selected: 80, legacyCompat_onPress: "center", eventTarget: "r" }, narrow: {}, short: { accessibilityHint: 21.599999999999998, legacyCompat_selected: 21.599999999999998, legacyCompat_onPress: null, eventTarget: null } };
+    obj = { long: { end: "{0} \u03BA\u03B1\u03B9 {1}", middle: "{0}, {1}", pair: "{0} \u03BA\u03B1\u03B9 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u03BA\u03B1\u03B9 {1}", middle: "{0}, {1}", pair: "{0} \u03BA\u03B1\u03B9 {1}", start: "{0}, {1}" } };
     obj.conjunction = obj;
-    const obj1 = { long: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 }, narrow: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 }, short: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 } };
+    const obj1 = { long: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" }, short: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" } };
     obj.disjunction = obj1;
-    const obj2 = { long: {}, narrow: {}, short: {} };
+    const obj2 = { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
     obj.unit = obj2;
     obj.data = obj;
-    obj.locale = "en";
+    obj.locale = "el";
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { accessibilityHint: 120, legacyCompat_selected: 80, legacyCompat_onPress: "center", eventTarget: "r" }, narrow: {}, short: { accessibilityHint: 21.599999999999998, legacyCompat_selected: 21.599999999999998, legacyCompat_onPress: null, eventTarget: null } }, disjunction: { long: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 }, narrow: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 }, short: { accessibilityHint: -352059390, legacyCompat_selected: -352845822, legacyCompat_onPress: -352059390, eventTarget: 1090584578 } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "en" });
+prop.push({ data: { conjunction: { long: { end: "{0} \u03BA\u03B1\u03B9 {1}", middle: "{0}, {1}", pair: "{0} \u03BA\u03B1\u03B9 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u03BA\u03B1\u03B9 {1}", middle: "{0}, {1}", pair: "{0} \u03BA\u03B1\u03B9 {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" }, short: { end: "{0} \u03AE {1}", middle: "{0}, {1}", pair: "{0} \u03AE {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "el" });

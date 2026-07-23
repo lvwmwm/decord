@@ -1,57 +1,56 @@
-// Module ID: 4357
-// Function ID: 38661
+// Module ID: 4361
+// Function ID: 38693
 // Name: useDisplayNameStyles
-// Dependencies: []
+// Dependencies: [31, 1917, 1849, 4362, 566, 4364, 2]
 // Exports: default
 
-// Module 4357 (useDisplayNameStyles)
-const useContext = require(dependencyMap[0]).useContext;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStyles.tsx");
+// Module 4361 (useDisplayNameStyles)
+import { useContext } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStyles.tsx");
 
 export default function useDisplayNameStyles() {
   let guildId;
   let ignoreDisabledStylesSetting;
   let pendingDisplayNameStyles;
+  let require;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  ({ userId: closure_0, guildId } = obj);
-  let importDefault = guildId;
+  ({ userId: require, guildId } = obj);
   ({ pendingDisplayNameStyles, ignoreDisabledStylesSetting } = obj);
   if (ignoreDisabledStylesSetting === undefined) {
     ignoreDisabledStylesSetting = false;
   }
-  let dependencyMap;
-  const displayNameStylesEnabled = require(dependencyMap[3]).useDisplayNameStylesEnabled({ location: "useDisplayNameStyles" });
-  const obj2 = require(dependencyMap[3]);
+  let stateFromStores;
+  const displayNameStylesEnabled = require(stateFromStores[3]).useDisplayNameStylesEnabled({ location: "useDisplayNameStyles" });
+  const obj2 = require(stateFromStores[3]);
   const items = [closure_5];
-  const stateFromStores = require(dependencyMap[4]).useStateFromStores(items, () => {
+  stateFromStores = require(stateFromStores[4]).useStateFromStores(items, () => {
     if (null != closure_0) {
-      let user = authStore.getUser(closure_0);
+      let user = outer1_5.getUser(closure_0);
     } else {
-      user = authStore.getCurrentUser();
+      user = outer1_5.getCurrentUser();
     }
     return user;
   });
-  dependencyMap = stateFromStores;
-  const tmp3 = useContext(importDefault(dependencyMap[5]));
+  const tmp3 = useContext(guildId(stateFromStores[5]));
   let tmp4 = null;
   if (null == guildId) {
-    importDefault = tmp3;
+    guildId = tmp3;
     guildId = tmp3;
   }
-  const obj3 = require(dependencyMap[4]);
-  const items1 = [closure_4];
-  const stateFromStores1 = require(dependencyMap[4]).useStateFromStores(items1, () => {
+  const obj3 = require(stateFromStores[4]);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = require(stateFromStores[4]).useStateFromStores(items1, () => {
     let member = null;
-    if (null != tmp3) {
+    if (null != guildId) {
       member = null;
       if (null != stateFromStores) {
-        member = member.getMember(tmp3, stateFromStores.id);
+        member = outer1_4.getMember(guildId, stateFromStores.id);
       }
     }
     return member;

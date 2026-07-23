@@ -1,14 +1,13 @@
-// Module ID: 5855
-// Function ID: 49715
+// Module ID: 5860
+// Function ID: 49744
 // Name: AppleIllocon
-// Dependencies: [131072, 561250304, 3657433088, 19]
+// Dependencies: [33, 5085, 5861, 2]
 // Exports: AppleIllocon
 
-// Module 5855 (AppleIllocon)
-import _setPrototypeOf from "_setPrototypeOf";
+// Module 5860 (AppleIllocon)
+import { jsx } from "jsxProd";
 
-const jsx = require(dependencyMap[0]).jsx;
-const result = _setPrototypeOf.fileFinishedImporting("design/components/mana-assets/native/generated/AppleIllocon.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AppleIllocon.native.tsx");
 
 export const AppleIllocon = function AppleIllocon(size) {
   let accessibilityLabel;
@@ -20,7 +19,7 @@ export const AppleIllocon = function AppleIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5861) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -28,5 +27,5 @@ export const AppleIllocon = function AppleIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

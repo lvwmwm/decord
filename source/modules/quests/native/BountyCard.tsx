@@ -1,119 +1,124 @@
-// Module ID: 13852
-// Function ID: 104704
+// Module ID: 13966
+// Function ID: 106860
 // Name: CARD_WIDTH
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 6941, 33, 4130, 689, 478, 566, 9458, 3834, 5167, 8148, 5085, 8524, 4126, 1212, 4543, 4091, 2]
 
-// Module 13852 (CARD_WIDTH)
+// Module 13966 (CARD_WIDTH)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import isWindows from "isWindows";
+import isWindows from "isWindows";
+import isWindows from "isWindows";
+
+let closure_10;
+let closure_11;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 let num = 0;
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ AppState: closure_5, StyleSheet: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
-const tmp3 = arg1(dependencyMap[5]);
-let closure_12 = arg1(dependencyMap[6]).createStyles(() => {
+({ AppState: closure_5, StyleSheet: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+let closure_12 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { gap: importDefault(dependencyMap[7]).space.PX_12 };
+  obj = { gap: importDefault(689).space.PX_12 };
   obj.tile = obj;
-  obj.card = { 1474810466: "CommandListSortOrder", 1933289605: "be", -1601899626: "CALL_TILE_POPOUT", -1311149912: "be" };
+  obj.card = { width: 188, height: 313, overflow: "hidden", padding: 0 };
   obj = {};
   const merged = Object.assign(closure_6.absoluteFillObject);
   obj.cardImage = obj;
   const merged1 = Object.assign(closure_6.absoluteFillObject);
   obj.previewVideo = {};
-  obj.badge = { position: "absolute", top: importDefault(dependencyMap[7]).space.PX_12, left: importDefault(dependencyMap[7]).space.PX_12, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.round, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8, paddingVertical: importDefault(dependencyMap[7]).space.PX_4, color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
-  const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_4 };
+  obj.badge = { position: "absolute", top: importDefault(689).space.PX_12, left: importDefault(689).space.PX_12, backgroundColor: importDefault(689).colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT, borderRadius: importDefault(689).radii.round, paddingHorizontal: importDefault(689).space.PX_8, paddingVertical: importDefault(689).space.PX_4, color: importDefault(689).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
+  const obj3 = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_4 };
   obj.badgeContent = obj3;
   const obj1 = {};
-  const obj2 = { position: "absolute", top: importDefault(dependencyMap[7]).space.PX_12, left: importDefault(dependencyMap[7]).space.PX_12, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.round, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8, paddingVertical: importDefault(dependencyMap[7]).space.PX_4, color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
-  obj.badgeText = { textTransform: "uppercase", color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
-  const obj4 = { textTransform: "uppercase", color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
-  obj.startButton = { position: "absolute", bottom: importDefault(dependencyMap[7]).space.PX_8, left: importDefault(dependencyMap[7]).space.PX_8, right: importDefault(dependencyMap[7]).space.PX_8 };
-  obj.cardFooter = { "Null": "category", "Null": "String", "Null": "Array" };
-  const obj6 = { -2108412530: "text-lg/normal", -266912356: "text-default", 1638363508: true, gap: importDefault(dependencyMap[7]).space.PX_4 };
+  const obj2 = { position: "absolute", top: importDefault(689).space.PX_12, left: importDefault(689).space.PX_12, backgroundColor: importDefault(689).colors.CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT, borderRadius: importDefault(689).radii.round, paddingHorizontal: importDefault(689).space.PX_8, paddingVertical: importDefault(689).space.PX_4, color: importDefault(689).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
+  obj.badgeText = { textTransform: "uppercase", color: importDefault(689).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
+  const obj4 = { textTransform: "uppercase", color: importDefault(689).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
+  obj.startButton = { position: "absolute", bottom: importDefault(689).space.PX_8, left: importDefault(689).space.PX_8, right: importDefault(689).space.PX_8 };
+  obj.cardFooter = { flexDirection: "column", alignItems: "flex-start", maxWidth: 188 };
+  const obj6 = { flexDirection: "row", gap: importDefault(689).space.PX_4, alignItems: "center" };
   obj.advertiserRow = obj6;
   obj.advertiserName = { flexShrink: 1 };
-  obj.advertiserIcon = { revealed: 705839377, flexDirection: 410124290 };
+  obj.advertiserIcon = { flexShrink: 0, opacity: 0.7 };
   return obj;
 });
-const obj2 = arg1(dependencyMap[6]);
-if (obj3.isAndroid()) {
+if (isWindows.isAndroid()) {
   num = 150;
 }
-const obj3 = arg1(dependencyMap[8]);
-let closure_14 = arg1(dependencyMap[8]).isAndroid();
-const obj4 = arg1(dependencyMap[8]);
-let closure_15 = arg1(dependencyMap[8]).isAndroid();
-const obj5 = arg1(dependencyMap[8]);
+isWindows = isWindows.isAndroid();
+isWindows = isWindows.isAndroid();
 const memoResult = importAllResult.memo((bounty) => {
+  let c10;
+  let c4;
   let tmp11;
   let tmp14;
   let tmp15;
   let tmp33;
   bounty = bounty.bounty;
-  const arg1 = bounty;
   const index = bounty.index;
-  const importDefault = index;
   const isActive = bounty.isActive;
-  const dependencyMap = isActive;
   const onPress = bounty.onPress;
-  let callback = onPress;
-  let React;
-  tmp15 = undefined;
+  let currentState;
   let first;
-  let tmp18;
-  let closure_8;
+  let c7;
+  let _isNativeReflectConstruct;
   let closure_9;
-  let callback2;
-  let tmp36;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[9]);
+  let callback;
+  let c11;
+  let tmp = callback2();
+  let obj = bounty(isActive[9]);
   const items = [closure_9];
   const stateFromStores = obj.useStateFromStores(items, () => ref.isBountyCompleted(bounty.id));
   const items1 = [onPress, bounty, index];
-  callback = React.useCallback(() => {
+  callback = importAllResult.useCallback(() => {
     onPress(bounty, index);
   }, items1);
   const videoPreview = bounty.videoPreview;
   let scaledImageUrl = null;
   if (null != bounty.imagePreview) {
-    let obj1 = arg1(dependencyMap[10]);
-    obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, assetUrl: bounty.imagePreview };
+    let obj1 = bounty(isActive[10]);
+    obj = { assetUrl: bounty.imagePreview, width: 188, height: 313 };
     scaledImageUrl = obj1.getScaledImageUrl(obj);
   }
   if (tmp7) {
-    let obj3 = arg1(dependencyMap[10]);
-    obj = { 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: false, assetUrl: videoPreview };
+    let obj3 = bounty(isActive[10]);
+    obj = { assetUrl: videoPreview, width: 188, height: 313 };
     scaledImageUrl = obj3.getScaledFirstFrameImageUrl(obj);
   }
-  [tmp11, closure_4] = callback(React.useState(false), 2);
-  const callback1 = React.useCallback(() => {
+  [tmp11, c4] = onPress(undefined.useState(false), 2);
+  const callback1 = importAllResult.useCallback(() => {
     _undefined(true);
   }, []);
-  const tmp10 = callback(React.useState(false), 2);
-  const tmp7 = null == scaledImageUrl && null != videoPreview;
-  [tmp14, tmp15] = callback(React.useState(false), 2);
-  const tmp16 = callback(React.useState(false), 2);
+  const tmp10 = onPress(undefined.useState(false), 2);
+  tmp7 = null == scaledImageUrl && null != videoPreview;
+  [tmp14, tmp15] = onPress(undefined.useState(false), 2);
+  currentState = tmp15;
+  const tmp16 = onPress(undefined.useState(false), 2);
   first = tmp16[0];
-  tmp18 = tmp16[1];
-  let obj5 = arg1(dependencyMap[9]);
-  const items2 = [closure_8];
-  const stateFromStores1 = obj5.useStateFromStores(items2, () => closure_8.useReducedMotion);
-  let obj6 = arg1(dependencyMap[11]);
-  const token = obj6.useToken(importDefault(dependencyMap[7]).modules.mobile.BOUNTY_TILE_BORDER_RADIUS);
-  closure_8 = React.useRef(null);
-  callback2 = React.useCallback(() => {
-    if (null != closure_8.current) {
+  c7 = tmp18;
+  let obj5 = bounty(isActive[9]);
+  const items2 = [_isNativeReflectConstruct];
+  const stateFromStores1 = obj5.useStateFromStores(items2, () => _isNativeReflectConstruct.useReducedMotion);
+  let obj6 = bounty(isActive[11]);
+  const token = obj6.useToken(index(isActive[7]).modules.mobile.BOUNTY_TILE_BORDER_RADIUS);
+  _isNativeReflectConstruct = importAllResult.useRef(null);
+  callback2 = importAllResult.useCallback(() => {
+    if (null != _isNativeReflectConstruct.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(closure_8.current);
+      clearTimeout(_isNativeReflectConstruct.current);
     }
-    closure_8.current = setTimeout(() => {
-      callback(true);
-    }, closure_13);
+    _isNativeReflectConstruct.current = setTimeout(() => {
+      outer1_5(true);
+    }, outer1_13);
   }, []);
-  const tmp22 = callback(React.useState(isActive), 2);
+  const tmp22 = onPress(undefined.useState(isActive), 2);
   if (isActive !== tmp22[0]) {
     tmp22[1](isActive);
     if (isActive) {
@@ -127,31 +132,31 @@ const memoResult = importAllResult.memo((bounty) => {
       if (first) {
         tmp18(false);
       }
-    } else if (closure_14) {
+    } else if (isWindows) {
       tmp18(true);
     }
   }
-  closure_9 = React.useRef(null);
+  closure_9 = importAllResult.useRef(null);
   const items3 = [first];
-  const effect = React.useEffect(() => {
+  const effect = importAllResult.useEffect(() => {
     if (first) {
       const _setTimeout = setTimeout;
       closure_9.current = setTimeout(() => {
-        callback2(false);
-        callback(false);
-        closure_9.current = null;
+        outer1_7(false);
+        outer1_5(false);
+        outer1_9.current = null;
       }, 150);
     }
     return () => {
-      if (null != ref.current) {
+      if (null != outer1_9.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(ref.current);
-        ref.current = null;
+        clearTimeout(outer1_9.current);
+        outer1_9.current = null;
       }
     };
   }, items3);
   const items4 = [isActive];
-  const effect1 = React.useEffect(() => {
+  const effect1 = importAllResult.useEffect(() => {
     let tmp = isActive;
     if (isActive) {
       tmp = null != ref.current;
@@ -163,26 +168,26 @@ const memoResult = importAllResult.memo((bounty) => {
     }
     let tmp9 = isActive;
     if (!isActive) {
-      tmp9 = null == closure_8.current;
+      tmp9 = null == _isNativeReflectConstruct.current;
     }
     if (!tmp9) {
       const _clearTimeout2 = clearTimeout;
-      clearTimeout(closure_8.current);
-      closure_8.current = null;
+      clearTimeout(_isNativeReflectConstruct.current);
+      _isNativeReflectConstruct.current = null;
     }
   }, items4);
-  const effect2 = React.useEffect(() => () => {
-    if (null != ref.current) {
+  const effect2 = importAllResult.useEffect(() => () => {
+    if (null != outer1_8.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(ref.current);
-      ref.current = null;
+      clearTimeout(outer1_8.current);
+      outer1_8.current = null;
     }
   }, []);
-  const tmp13 = callback(React.useState(false), 2);
-  [tmp33, closure_10] = callback(React.useState("active" === tmp15.currentState), 2);
-  const effect3 = React.useEffect(() => {
-    let closure_0 = tmp15.addEventListener("change", (arg0) => {
-      callback("active" === arg0);
+  const tmp13 = onPress(undefined.useState(false), 2);
+  [tmp33, c10] = onPress(undefined.useState("active" === currentState.currentState), 2);
+  const effect3 = importAllResult.useEffect(() => {
+    let closure_0 = _undefined2.addEventListener("change", (arg0) => {
+      outer1_10("active" === arg0);
     });
     return () => {
       closure_0.remove();
@@ -198,11 +203,11 @@ const memoResult = importAllResult.memo((bounty) => {
   if (tmp40Result) {
     tmp40Result = tmp11;
   }
-  let isModalVisible = closure_15;
-  if (closure_15) {
+  let isModalVisible = isWindows;
+  if (isWindows) {
     isModalVisible = bounty.isModalVisible;
   }
-  tmp36 = !isModalVisible;
+  let tmp36 = !isModalVisible;
   if (tmp36) {
     if (first) {
       first = !isActive;
@@ -215,12 +220,13 @@ const memoResult = importAllResult.memo((bounty) => {
   if (tmp36) {
     tmp36 = tmp14;
   }
+  c11 = tmp36;
   const items5 = [tmp36];
   obj1 = { style: tmp.tile };
-  const memo = React.useMemo(() => {
+  const memo = importAllResult.useMemo(() => {
     const obj = {};
     let num = 1;
-    if (tmp36) {
+    if (c11) {
       num = 0;
     }
     obj.opacity = num;
@@ -228,7 +234,7 @@ const memoResult = importAllResult.memo((bounty) => {
   }, items5);
   const obj2 = { style: tmp.card, radius: token, onPress: callback, android_ripple: { color: "transparent" } };
   if (tmp40Result) {
-    obj3 = { "Bool(false)": "<string:2152857601>", "Bool(false)": "<string:1106114184>", "Bool(false)": "2026-07-ad-recheck-interval-experiment", "Bool(false)": "<string:1376909153>", "Bool(false)": "<string:2849545615>", "Bool(false)": "<string:1933179985>", "Bool(false)": "Array", "Bool(false)": "Array", "Bool(false)": "Array", "Bool(false)": true, onReadyForDisplay: callback2 };
+    obj3 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", onReadyForDisplay: callback2, source: null, style: null, resizeMode: "cover", repeat: true, muted: true, disableFocus: true };
     const obj4 = { uri: videoPreview };
     obj3.source = obj4;
     obj3.style = tmp.previewVideo;
@@ -237,81 +243,81 @@ const memoResult = importAllResult.memo((bounty) => {
       tmp44 = stateFromStores1;
     }
     obj3.paused = tmp44;
-    tmp40Result = callback2(importDefault(dependencyMap[13]), obj3);
-    const tmp40 = callback2;
-    const tmp43 = importDefault(dependencyMap[13]);
+    tmp40Result = callback(index(isActive[13]), obj3);
+    const tmp40 = callback;
+    const tmp43 = index(isActive[13]);
   }
   const items6 = [tmp40Result, , , ];
   obj5 = { style: items7, onLoad: callback1 };
-  const items7 = [tmp.cardImage, memo];
+  items7 = [tmp.cardImage, memo];
   obj6 = {};
   let tmp47;
-  const tmp32 = callback(React.useState("active" === tmp15.currentState), 2);
-  const tmp39 = tmp18;
-  const tmp45 = callback2;
+  const tmp32 = onPress(undefined.useState("active" === currentState.currentState), 2);
+  const tmp39 = c7;
+  const tmp45 = callback;
   if (null != scaledImageUrl) {
     tmp47 = scaledImageUrl;
   }
   obj6.uri = tmp47;
   obj5.source = obj6;
   obj5.resizeMode = "cover";
-  items6[1] = tmp45(importDefault(dependencyMap[14]), obj5);
+  items6[1] = tmp45(index(isActive[14]), obj5);
   const obj7 = { style: tmp.badge };
   const obj8 = { style: tmp.badgeContent };
   let tmp51 = stateFromStores;
   if (stateFromStores) {
-    const obj9 = { size: "xxs", color: importDefault(dependencyMap[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
-    tmp51 = callback2(arg1(dependencyMap[15]).CheckmarkSmallBoldIcon, obj9);
+    const obj9 = { size: "xxs", color: index(isActive[7]).colors.CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT };
+    tmp51 = callback(bounty(isActive[15]).CheckmarkSmallBoldIcon, obj9);
   }
   const items8 = [tmp51, ];
   const obj10 = { variant: "text-xs/bold", style: tmp.badgeText };
-  const intl = arg1(dependencyMap[17]).intl;
-  const t = arg1(dependencyMap[17]).t;
-  obj10.children = intl.string(stateFromStores ? t.vlGTLf : t.fFIJ/9);
-  items8[1] = callback2(arg1(dependencyMap[16]).Text, obj10);
+  const intl = bounty(isActive[17]).intl;
+  const t = bounty(isActive[17]).t;
+  obj10.children = intl.string(stateFromStores ? t.vlGTLf : t["fFIJ/9"]);
+  items8[1] = callback(bounty(isActive[16]).Text, obj10);
   obj8.children = items8;
-  obj7.children = tmp36(tmp18, obj8);
-  items6[2] = callback2(tmp18, obj7);
+  obj7.children = c11(c7, obj8);
+  items6[2] = callback(c7, obj7);
   const obj11 = { style: tmp.startButton };
   const obj12 = { variant: "secondary-overlay" };
-  const intl2 = arg1(dependencyMap[17]).intl;
+  const intl2 = bounty(isActive[17]).intl;
   const string = intl2.string;
-  const t2 = arg1(dependencyMap[17]).t;
+  const t2 = bounty(isActive[17]).t;
   if (stateFromStores) {
-    let stringResult = string(t2.9UtZAY);
+    let stringResult = string(t2["9UtZAY"]);
   } else {
     stringResult = string(t2.LhlgY9);
   }
   obj12.text = stringResult;
   obj12.onPress = callback;
-  obj11.children = callback2(arg1(dependencyMap[18]).Button, obj12);
-  items6[3] = callback2(tmp18, obj11);
+  obj11.children = callback(bounty(isActive[18]).Button, obj12);
+  items6[3] = callback(c7, obj11);
   obj2.children = items6;
-  const items9 = [tmp36(arg1(dependencyMap[12]).Card, obj2), ];
+  const items9 = [c11(bounty(isActive[12]).Card, obj2), ];
   const obj13 = { style: tmp.cardFooter };
   const obj14 = { style: tmp.advertiserRow };
-  const obj15 = { 803799044: true, 1269170180: true, 711589892: true, style: tmp.advertiserName };
+  const obj15 = { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, style: tmp.advertiserName };
   const advertiserName = bounty.advertiserName;
   let str2 = "";
   if (null != advertiserName) {
     str2 = advertiserName;
   }
   obj15.children = str2;
-  const items10 = [callback2(arg1(dependencyMap[16]).Text, obj15), ];
-  const obj16 = { size: "xxs", style: tmp.advertiserIcon, color: importDefault(dependencyMap[7]).colors.ICON_SUBTLE };
-  items10[1] = callback2(arg1(dependencyMap[19]).CircleCheckIcon, obj16);
+  const items10 = [callback(bounty(isActive[16]).Text, obj15), ];
+  const obj16 = { size: "xxs", style: tmp.advertiserIcon, color: index(isActive[7]).colors.ICON_SUBTLE };
+  items10[1] = callback(bounty(isActive[19]).CircleCheckIcon, obj16);
   obj14.children = items10;
-  const items11 = [tmp36(tmp18, obj14), ];
-  const obj17 = { cachedAt: "y", edpbxy: "isArray" };
-  const intl3 = arg1(dependencyMap[17]).intl;
-  obj17.children = intl3.string(arg1(dependencyMap[17]).t.o6FLcF);
-  items11[1] = callback2(arg1(dependencyMap[16]).Text, obj17);
+  const items11 = [c11(c7, obj14), ];
+  const obj17 = { variant: "text-sm/medium", color: "text-muted" };
+  const intl3 = bounty(isActive[17]).intl;
+  obj17.children = intl3.string(bounty(isActive[17]).t.o6FLcF);
+  items11[1] = callback(bounty(isActive[16]).Text, obj17);
   obj13.children = items11;
-  items9[1] = tmp36(tmp18, obj13);
+  items9[1] = c11(c7, obj13);
   obj1.children = items9;
-  return tmp36(tmp39, obj1);
+  return c11(tmp39, obj1);
 });
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/quests/native/BountyCard.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/BountyCard.tsx");
 
 export default memoResult;
 export const CARD_WIDTH = 188;

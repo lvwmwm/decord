@@ -1,14 +1,15 @@
-// Module ID: 8329
-// Function ID: 66022
+// Module ID: 8335
+// Function ID: 66059
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getMobileMediaViewerShareExperimentEnabled
 
-// Module 8329 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_viewer/native/MobileMediaViewerShareExperiment.tsx");
+// Module 8335 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-06-mobile-media-viewer-share", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/MobileMediaViewerShareExperiment.tsx");
 
 export const MobileMediaViewerShareExperiment = apexExperiment;
 export const getMobileMediaViewerShareExperimentEnabled = function getMobileMediaViewerShareExperimentEnabled(shareMediaSource) {

@@ -1,35 +1,36 @@
-// Module ID: 10598
-// Function ID: 82719
+// Module ID: 10608
+// Function ID: 82769
 // Name: getStableSafeAreaInsets
-// Dependencies: []
+// Dependencies: [57, 31, 1453, 477, 1569, 1557, 10395, 2]
 // Exports: default
 
-// Module 10598 (getStableSafeAreaInsets)
+// Module 10608 (getStableSafeAreaInsets)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
 function getStableSafeAreaInsets(DEFAULT_APP_ENTRY_KEY) {
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
-    DEFAULT_APP_ENTRY_KEY = arg1(dependencyMap[2]).DEFAULT_APP_ENTRY_KEY;
+    DEFAULT_APP_ENTRY_KEY = require(1453) /* context */.DEFAULT_APP_ENTRY_KEY;
   }
   if (obj.isAndroid()) {
-    let stableSafeAreaInsets = importDefault(dependencyMap[4]).getStableSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
-    const obj3 = importDefault(dependencyMap[4]);
+    let stableSafeAreaInsets = importDefault(1569).getStableSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
+    const obj3 = importDefault(1569);
   } else {
-    stableSafeAreaInsets = arg1(dependencyMap[5]).getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
-    const obj2 = arg1(dependencyMap[5]);
+    stableSafeAreaInsets = require(1557) /* useSafeAreaInsets */.getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
+    const obj2 = require(1557) /* useSafeAreaInsets */;
   }
   return stableSafeAreaInsets;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/safe_area/useStableSafeAreaInsets.native.tsx");
+const result = require("context").fileFinishedImporting("modules/safe_area/useStableSafeAreaInsets.native.tsx");
 
 export default function useStableSafeAreaInsets() {
-  const appEntryKey = arg1(dependencyMap[2]).useAppEntryKey();
-  const arg1 = appEntryKey;
-  const tmp2 = callback(React.useState(() => callback2(appEntryKey)), 2);
+  appEntryKey = appEntryKey(1453).useAppEntryKey();
+  const tmp2 = callback(React.useState(() => outer1_5(appEntryKey)), 2);
   let closure_1 = tmp2[1];
   const items = [appEntryKey];
-  const effect = React.useEffect(() => callback(closure_2[6])(() => {
-    callback(callback2(closure_0));
+  const effect = React.useEffect(() => callback(outer1_2[6])(() => {
+    outer1_1(outer2_5(outer1_0));
   }, appEntryKey), items);
   return tmp2[0];
 };

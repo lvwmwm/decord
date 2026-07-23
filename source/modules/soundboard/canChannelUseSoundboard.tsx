@@ -1,10 +1,18 @@
-// Module ID: 5765
-// Function ID: 49395
+// Module ID: 5770
+// Function ID: 49422
 // Name: canChannelUseSoundboard
-// Dependencies: []
+// Dependencies: [1348, 3758, 1906, 653, 566, 2]
 // Exports: canSelectedVoiceChannelUseSoundboard, useCanChannelUseSoundboard
 
-// Module 5765 (canChannelUseSoundboard)
+// Module 5770 (canChannelUseSoundboard)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function canChannelUseSoundboard(channel) {
   if (null == channel) {
     return false;
@@ -19,20 +27,16 @@ function canChannelUseSoundboard(channel) {
     }
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-({ ChannelTypesSets: closure_5, Permissions: closure_6 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/soundboard/canChannelUseSoundboard.tsx");
+({ ChannelTypesSets: closure_5, Permissions: closure_6 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/soundboard/canChannelUseSoundboard.tsx");
 
 export default canChannelUseSoundboard;
 export const canSelectedVoiceChannelUseSoundboard = function canSelectedVoiceChannelUseSoundboard() {
   return canChannelUseSoundboard(channel.getChannel(voiceChannelId.getVoiceChannelId()));
 };
 export const useCanChannelUseSoundboard = function useCanChannelUseSoundboard(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const items = [closure_3];
   const items1 = [arg0];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => callback(arg0), items1);
+  return _require(566).useStateFromStores(items, () => outer1_7(closure_0), items1);
 };

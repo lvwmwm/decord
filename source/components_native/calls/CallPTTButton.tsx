@@ -1,33 +1,36 @@
-// Module ID: 10374
-// Function ID: 80013
+// Module ID: 10384
+// Function ID: 80063
 // Name: CallPTTButtonLooks
-// Dependencies: []
+// Dependencies: [57, 31, 1348, 4177, 4202, 653, 33, 4130, 689, 3974, 566, 10367, 10215, 10385, 5217, 3991, 1273, 1212, 2]
 
-// Module 10374 (CallPTTButtonLooks)
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const InputModes = arg1(dependencyMap[5]).InputModes;
-const jsx = arg1(dependencyMap[6]).jsx;
+// Module 10384 (CallPTTButtonLooks)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { InputModes } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+
+const require = arg1;
 let obj = { BRAND: "brand", BLUR: "blur" };
-let obj2 = arg1(dependencyMap[7]);
 obj = { button: { margin: 13 } };
-const obj1 = { borderRadius: importDefault(dependencyMap[8]).radii.xs, overflow: "hidden", backgroundColor: arg1(dependencyMap[9]).hexWithOpacity(importDefault(dependencyMap[8]).unsafe_rawColors.WHITE, 0.24) };
+let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
+obj1.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 0.24);
 obj.container = obj1;
 obj.buttonBlur = { backgroundColor: "transparent" };
-obj2 = {};
-const obj6 = arg1(dependencyMap[9]);
-obj2.backgroundColor = arg1(dependencyMap[9]).hexWithOpacity(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK, 0.6);
-obj.buttonBlurPressed = obj2;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, 0.6);
+obj.buttonBlurPressed = _createForOfIteratorHelperLoose;
 obj.textStyle = { fontSize: 16 };
-const obj8 = arg1(dependencyMap[9]);
-obj.brandButtonContainer = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
-let closure_11 = obj2.createStyles(obj);
+obj.brandButtonContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_12 = { code: "function CallPTTButtonTsx1(){const{runOnJS,setDragging}=this.__closure;runOnJS(setDragging)(false);}" };
 let closure_13 = { code: "function CallPTTButtonTsx2(){const{runOnJS,setDragging,setPressed,setIsSwipeToChatDisabled}=this.__closure;runOnJS(setDragging)(true);runOnJS(setPressed)(false);if(setIsSwipeToChatDisabled!=null){runOnJS(setIsSwipeToChatDisabled)(false);}}" };
-const obj3 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
 const memoResult = importAllResult.memo((look) => {
   let sendCallback;
   let style;
@@ -36,35 +39,31 @@ const memoResult = importAllResult.memo((look) => {
     BRAND = obj.BRAND;
   }
   ({ style, sendCallback } = look);
-  const arg1 = sendCallback;
-  const importDefault = stopCallback;
-  let dependencyMap;
-  let callback;
+  const stopCallback = look.stopCallback;
+  let stateFromStores1;
+  let first;
   let importAllResult;
-  let closure_5;
-  let closure_6;
-  let closure_7;
-  let InputModes;
-  let onTouchStart = callback2();
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => tmp10.getMode());
-  let obj1 = arg1(dependencyMap[10]);
-  const items1 = [closure_7];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => ref.getChannelId());
-  dependencyMap = stateFromStores1;
-  let obj2 = arg1(dependencyMap[10]);
-  const items2 = [closure_5];
+  let first1;
+  let c6;
+  let ref;
+  let prop;
+  let onTouchStart = callback();
+  obj = sendCallback(stateFromStores1[10]);
+  const items = [c6];
+  const stateFromStores = obj.useStateFromStores(items, () => _undefined2.getMode());
+  let obj1 = sendCallback(stateFromStores1[10]);
+  const items1 = [ref];
+  stateFromStores1 = obj1.useStateFromStores(items1, () => ref.getChannelId());
+  let obj2 = sendCallback(stateFromStores1[10]);
+  const items2 = [first1];
   const items3 = [stateFromStores1];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => first1.getChannel(stateFromStores1), items3);
-  const tmp5 = callback(importAllResult.useState(false), 2);
-  const first = tmp5[0];
-  callback = first;
+  const tmp5 = first(importAllResult.useState(false), 2);
+  first = tmp5[0];
   importAllResult = tmp7;
-  const tmp8 = callback(importAllResult.useState(false), 2);
-  const first1 = tmp8[0];
-  closure_5 = first1;
-  closure_6 = tmp10;
+  const tmp8 = first(importAllResult.useState(false), 2);
+  first1 = tmp8[0];
+  c6 = tmp10;
   let isGuildStageVoiceResult;
   if (null != stateFromStores2) {
     isGuildStageVoiceResult = stateFromStores2.isGuildStageVoice();
@@ -72,16 +71,14 @@ const memoResult = importAllResult.memo((look) => {
   if (isGuildStageVoiceResult) {
     isGuildStageVoiceResult = !tmp4;
   }
-  const ref = importAllResult.useRef(false);
-  closure_7 = ref;
-  const tmp4 = importDefault(dependencyMap[11])(stateFromStores1);
-  const voiceChatNavigationContext = arg1(dependencyMap[12]).useVoiceChatNavigationContext();
-  let prop;
+  ref = importAllResult.useRef(false);
+  tmp4 = stopCallback(stateFromStores1[11])(stateFromStores1);
+  const voiceChatNavigationContext = sendCallback(stateFromStores1[12]).useVoiceChatNavigationContext();
+  prop = undefined;
   if (null != voiceChatNavigationContext) {
     prop = voiceChatNavigationContext.setIsSwipeToChatDisabled;
   }
-  InputModes = prop;
-  const items4 = [ref, first, first1, sendCallback, look.stopCallback];
+  const items4 = [ref, first, first1, sendCallback, stopCallback];
   const effect = importAllResult.useEffect(() => {
     let tmp = first;
     if (!first) {
@@ -101,25 +98,25 @@ const memoResult = importAllResult.memo((look) => {
     ref.current = tmp;
   }, items4);
   obj1 = 14;
-  const Gesture = arg1(dependencyMap[14]).Gesture;
-  const obj5 = arg1(dependencyMap[12]);
+  const Gesture = sendCallback(stateFromStores1[14]).Gesture;
+  const obj5 = sendCallback(stateFromStores1[12]);
   class G {
     constructor() {
-      obj = sendCallback(f80016[15]);
-      tmp = obj.runOnJS(closure_6)(true);
-      obj2 = sendCallback(f80016[15]);
-      tmp2 = obj2.runOnJS(closure_4)(false);
+      obj = sendCallback(f80066[15]);
+      tmp = obj.runOnJS(c6)(true);
+      obj2 = sendCallback(f80066[15]);
+      tmp2 = obj2.runOnJS(c4)(false);
       if (null != setIsSwipeToChatDisabled) {
         tmp3 = sendCallback;
-        tmp4 = f80016;
-        obj3 = sendCallback(f80016[15]);
+        tmp4 = f80066;
+        obj3 = sendCallback(f80066[15]);
         tmp5 = setIsSwipeToChatDisabled;
         tmp6 = obj3.runOnJS(setIsSwipeToChatDisabled)(false);
       }
       return;
     }
   }
-  obj = { runOnJS: arg1(dependencyMap[15]).runOnJS, setDragging: tmp10, setPressed: tmp7 };
+  obj = { runOnJS: sendCallback(stateFromStores1[15]).runOnJS, setDragging: tmp10, setPressed: tmp7 };
   let num = 15;
   obj.setIsSwipeToChatDisabled = prop;
   G.__closure = obj;
@@ -128,12 +125,12 @@ const memoResult = importAllResult.memo((look) => {
   const PanResult = Gesture.Pan();
   class F {
     constructor() {
-      obj = sendCallback(f80016[15]);
-      tmp = obj.runOnJS(closure_6)(false);
+      obj = sendCallback(f80066[15]);
+      tmp = obj.runOnJS(c6)(false);
       return;
     }
   }
-  obj = { runOnJS: arg1(dependencyMap[15]).runOnJS, setDragging: tmp10 };
+  obj = { runOnJS: sendCallback(stateFromStores1[15]).runOnJS, setDragging: tmp10 };
   F.__closure = obj;
   F.__workletHash = 8439106360958;
   F.__initData = closure_12;
@@ -141,7 +138,7 @@ const memoResult = importAllResult.memo((look) => {
   let tmp16 = null;
   if (null != stateFromStores1) {
     tmp16 = null;
-    if (InputModes.VOICE_ACTIVITY !== stateFromStores) {
+    if (prop.VOICE_ACTIVITY !== stateFromStores) {
       tmp16 = null;
       if (!isGuildStageVoiceResult) {
         if (BRAND === obj.BRAND) {
@@ -162,35 +159,35 @@ const memoResult = importAllResult.memo((look) => {
         }
         obj1 = { gesture: Button };
         obj2 = { style: items7 };
-        Button = arg1(dependencyMap[16]).Button;
-        const obj3 = { style: buttonBlurPressed, textStyle: onTouchStart.textStyle };
-        style = arg1(dependencyMap[17]).intl;
-        obj3.text = style.string(arg1(dependencyMap[17]).t.Q8gkVL);
+        Button = sendCallback(stateFromStores1[16]).Button;
+        let obj3 = { style: buttonBlurPressed, textStyle: onTouchStart.textStyle };
+        style = sendCallback(stateFromStores1[17]).intl;
+        obj3.text = style.string(sendCallback(stateFromStores1[17]).t.Q8gkVL);
         onTouchStart = function onTouchStart() {
-          tmp7(true);
-          tmp10(false);
+          _undefined(true);
+          _undefined2(false);
           if (null != prop) {
             prop(true);
           }
         };
         obj3.onTouchStart = onTouchStart;
         obj3.onTouchEnd = function onTouchEnd(nativeEvent) {
-          tmp7(false);
+          _undefined(false);
           if (null != prop) {
             prop(false);
           }
         };
         obj3.darkenOnPress = true;
-        obj2.children = <Button {...obj3} />;
-        num = jsx(importDefault(dependencyMap[num]).View, obj2);
+        obj2.children = <Button style={buttonBlurPressed} textStyle={onTouchStart.textStyle} />;
+        num = jsx(stopCallback(stateFromStores1[num]).View, { style: items7 });
         obj1.children = num;
-        jsx(arg1(dependencyMap[obj1]).GestureDetector, obj1);
+        jsx(sendCallback(stateFromStores1[obj1]).GestureDetector, { gesture: Button });
       }
     }
   }
   return tmp16;
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("components_native/calls/CallPTTButton.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/calls/CallPTTButton.tsx");
 
 export default memoResult;
 export const CallPTTButtonLooks = obj;

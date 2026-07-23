@@ -1,15 +1,17 @@
-// Module ID: 13986
-// Function ID: 106262
+// Module ID: 14100
+// Function ID: 108418
 // Name: useActiveGuildSubscriptions
-// Dependencies: []
+// Dependencies: [31, 3782, 14094, 14095, 566, 4451, 2]
 // Exports: default
 
-// Module 13986 (useActiveGuildSubscriptions)
-let closure_4 = importAll(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[2]).UserGuildRoleSubscriptionRelationship;
+// Module 14100 (useActiveGuildSubscriptions)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { UserGuildRoleSubscriptionRelationship as closure_6 } from "MAX_SUBSCRIPTION_TIERS";
+
+const require = arg1;
 let closure_7 = [];
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_role_subscriptions/useActiveGuildSubscriptions.tsx");
+const result = require("MAX_SUBSCRIPTION_TIERS").fileFinishedImporting("modules/guild_role_subscriptions/useActiveGuildSubscriptions.tsx");
 
 export default function useActiveGuildSubscriptions() {
   let obj = arg0;
@@ -20,22 +22,21 @@ export default function useActiveGuildSubscriptions() {
   if (flag === undefined) {
     flag = false;
   }
-  const arg1 = flag;
   let importDefault;
   let closure_2;
-  const tmp = importDefault(dependencyMap[3])() === constants.SUBSCRIBED;
+  const tmp = importDefault(14095)() === constants.SUBSCRIBED;
   importDefault = tmp;
-  const items = [closure_5];
-  let stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => store.getActiveGuildSubscriptions());
+  const items = [_isNativeReflectConstruct];
+  let stateFromStores = flag(566).useStateFromStores(items, () => outer1_5.getActiveGuildSubscriptions());
   closure_2 = React.useRef(false);
   const items1 = [flag, tmp];
   const effect = React.useEffect(() => {
     let ensureFresh;
     let hasRoleSubscriptions;
-    const obj = { ensureFresh: flag, hasRoleSubscriptions: tmp, hasFetched: ref.current };
+    const obj = { ensureFresh: flag, hasRoleSubscriptions: c1, hasFetched: ref.current };
     const hasFetched = obj.hasFetched;
     ({ ensureFresh, hasRoleSubscriptions } = obj);
-    const activeGuildSubscriptions = store.getActiveGuildSubscriptions();
+    const activeGuildSubscriptions = outer1_5.getActiveGuildSubscriptions();
     let length;
     if (null != activeGuildSubscriptions) {
       length = activeGuildSubscriptions.length;
@@ -52,14 +53,14 @@ export default function useActiveGuildSubscriptions() {
     if (!tmp3) {
       let tmp5 = !hasFetched;
       if (tmp5) {
-        tmp5 = !store.hasFetchedSubscriptions();
+        tmp5 = !outer1_5.hasFetchedSubscriptions();
       }
       tmp3 = tmp5;
     }
     if (tmp3) {
       ref.current = true;
-      const subscriptions = ref(closure_3[5]).fetchSubscriptions();
-      const obj2 = ref(closure_3[5]);
+      const subscriptions = ref(outer1_3[5]).fetchSubscriptions();
+      const obj2 = ref(outer1_3[5]);
     }
   }, items1);
   if (null == stateFromStores) {

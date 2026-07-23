@@ -1,9 +1,27 @@
-// Module ID: 6826
-// Function ID: 53873
+// Module ID: 6831
+// Function ID: 53905
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 3767, 1906, 1849, 6832, 6833, 1362, 21, 4351, 6834, 1327, 3769, 566, 686, 2]
 
-// Module 6826 (_isNativeReflectConstruct)
+// Module 6831 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import mapConversationModeration from "mapConversationModeration";
+import getReactionEmojiName from "getReactionEmojiName";
+import initialize from "initialize";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import CONVERSATION_COLORS from "CONVERSATION_COLORS";
+import importDefaultResult from "priv";
+
+let closure_14;
+let closure_15;
+let closure_16;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +31,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +84,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -191,9 +209,9 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
         let iter = tmp4();
         if (!iter.done) {
           do {
-            let tmp5 = closure_0;
-            let tmp6 = closure_2;
-            let obj = closure_0(closure_2[14]);
+            let tmp5 = require;
+            let tmp6 = dependencyMap;
+            let obj = require(4351) /* createMinimalMessageRecord */;
             let messageRecord = obj.createMessageRecord(iter.value);
             let arr = items1.push(messageRecord);
             let messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
@@ -220,10 +238,10 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
             let messageMetadataByMessageId3 = peekResult.messageMetadataByMessageId;
             if (null == messageMetadataByMessageId3.get(value.id)) {
               let messageMetadataByMessageId4 = peekResult.messageMetadataByMessageId;
-              obj = { "Bool(false)": "o", "Bool(false)": "o" };
-              let tmp13 = closure_0;
-              let tmp14 = closure_2;
-              let obj4 = closure_0(closure_2[14]);
+              obj = { conversationId: null, moderationLabel: null };
+              let tmp13 = require;
+              let tmp14 = dependencyMap;
+              let obj4 = require(4351) /* createMinimalMessageRecord */;
               obj.message = obj4.createMessageRecord(value);
               let result1 = messageMetadataByMessageId4.set(value.id, obj);
             }
@@ -236,7 +254,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
   }
 }
 function replaceHydratedMessage(peekResult, value, messageId, message) {
-  value = messageId;
+  let closure_0 = messageId;
   value.message = message;
   value = null;
   if (null != value.conversationId) {
@@ -249,7 +267,7 @@ function replaceHydratedMessage(peekResult, value, messageId, message) {
   }
   if (null != hydratedMessages) {
     hydratedMessages = value.hydratedMessages;
-    const findIndexResult = hydratedMessages.findIndex((id) => id.id === arg2);
+    const findIndexResult = hydratedMessages.findIndex((id) => id.id === closure_0);
     if (-1 !== findIndexResult) {
       const hydratedMessages1 = value.hydratedMessages;
       const substr = hydratedMessages1.slice();
@@ -293,11 +311,12 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      const obj = arg1(dependencyMap[17]);
+      obj = require(3769) /* getReactionEmojiName */;
     }
   }
 }
 function removeHydratedMessage(channelId, id) {
+  let closure_0 = id;
   const peekResult = importDefaultResult.peek(channelId);
   if (null == peekResult) {
     return false;
@@ -316,7 +335,7 @@ function removeHydratedMessage(channelId, id) {
       }
       if (null != hydratedMessages) {
         const hydratedMessages1 = value.hydratedMessages;
-        value.hydratedMessages = hydratedMessages1.filter((id) => id.id !== arg1);
+        value.hydratedMessages = hydratedMessages1.filter((id) => id.id !== closure_0);
       }
     }
     const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
@@ -334,37 +353,24 @@ function evictChannel(id) {
   }
   return hasItem;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-const tmp2 = arg1(dependencyMap[11]);
-({ CONVERSATION_COLORS: closure_14, CONVERSATION_FEEDBACK_RATINGS_CACHE_MAX: closure_15, MAX_CONVERSATIONS_PER_CHANNEL: closure_16 } = tmp2);
-let importDefaultResult = importDefault(dependencyMap[12]);
-let obj = { max: tmp2.MAX_CHANNELS_WITH_CONVERSATIONS, dispose: cleanupChannelSideState };
+({ CONVERSATION_COLORS: closure_14, CONVERSATION_FEEDBACK_RATINGS_CACHE_MAX: closure_15, MAX_CONVERSATIONS_PER_CHANNEL: closure_16 } = CONVERSATION_COLORS);
+let obj = { max: CONVERSATION_COLORS.MAX_CHANNELS_WITH_CONVERSATIONS, dispose: cleanupChannelSideState };
 importDefaultResult = new importDefaultResult(obj);
-const map = new Map();
-const map1 = new Map();
-let tmp7 = (Store) => {
+let map = new Map();
+let map1 = new Map();
+let tmp7 = ((Store) => {
   class ConversationsStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, ConversationsStore);
-      obj = closure_6(ConversationsStore);
-      tmp2 = closure_5;
-      if (closure_20()) {
+      tmp = outer1_3(this, ConversationsStore);
+      obj = outer1_6(ConversationsStore);
+      tmp2 = outer1_5;
+      if (outer1_20()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -373,26 +379,25 @@ let tmp7 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ConversationsStore;
   callback2(ConversationsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_9, closure_13, closure_10, closure_11, closure_12);
+      this.waitFor(outer1_8, outer1_9, outer1_13, outer1_10, outer1_11, outer1_12);
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , ];
   obj = {
     key: "hasChannelData",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_17.has(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "getChannelConversations",
     value(arg0) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let conversations = null;
       if (null != peekResult) {
         conversations = peekResult.conversations;
@@ -404,7 +409,7 @@ let tmp7 = (Store) => {
   items[3] = {
     key: "getConversationForMessage",
     value(arg0, arg1) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let conversationId;
       if (null != peekResult) {
         const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
@@ -423,7 +428,7 @@ let tmp7 = (Store) => {
   items[4] = {
     key: "getMessageMetadata",
     value(arg0, arg1) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let value;
       if (null != peekResult) {
         const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
@@ -454,7 +459,7 @@ let tmp7 = (Store) => {
   items[6] = {
     key: "getConversationMetadata",
     value(arg0, arg1) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let value;
       if (null != peekResult) {
         const conversationMetadataById = peekResult.conversationMetadataById;
@@ -470,7 +475,7 @@ let tmp7 = (Store) => {
   items[7] = {
     key: "getEdgeMarker",
     value(arg0, arg1) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       if (null == peekResult) {
         return null;
       }
@@ -479,13 +484,13 @@ let tmp7 = (Store) => {
   items[8] = {
     key: "isPendingFetch",
     value(arg0) {
-      return map.has(arg0);
+      return outer1_18.has(arg0);
     }
   };
   items[9] = {
     key: "isListFetchPending",
     value(arg0, arg1) {
-      const value = map.get(arg0);
+      const value = outer1_18.get(arg0);
       let hasItem;
       if (null != value) {
         hasItem = value.has(arg1);
@@ -496,7 +501,7 @@ let tmp7 = (Store) => {
   items[10] = {
     key: "getSelectedConversationId",
     value(arg0) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let prop;
       if (null != peekResult) {
         prop = peekResult.selectedConversationId;
@@ -511,7 +516,7 @@ let tmp7 = (Store) => {
   items[11] = {
     key: "getSelectedConversation",
     value(arg0) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let prop;
       if (null != peekResult) {
         prop = peekResult.selectedConversationId;
@@ -538,7 +543,7 @@ let tmp7 = (Store) => {
   items[12] = {
     key: "getConversationColor",
     value(arg0, arg1) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let tmp2 = null;
       if (null != peekResult) {
         const conversationMetadataById = peekResult.conversationMetadataById;
@@ -559,7 +564,7 @@ let tmp7 = (Store) => {
   items[13] = {
     key: "getHydratedMessages",
     value(arg0, arg1) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let hydratedMessages;
       if (null != peekResult) {
         const conversationMetadataById = peekResult.conversationMetadataById;
@@ -578,7 +583,7 @@ let tmp7 = (Store) => {
   items[14] = {
     key: "getHydratedMessageById",
     value(arg0, arg1) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let message;
       if (null != peekResult) {
         const messageMetadataByMessageId = peekResult.messageMetadataByMessageId;
@@ -597,7 +602,7 @@ let tmp7 = (Store) => {
   items[15] = {
     key: "isConversationFetchPending",
     value(arg0, arg1) {
-      const value = closure_19.get(arg0);
+      const value = outer1_19.get(arg0);
       let tmp = null != value;
       if (tmp) {
         tmp = 0 !== value.size;
@@ -615,7 +620,7 @@ let tmp7 = (Store) => {
   items[16] = {
     key: "getConversationFeedbackRating",
     value(arg0, arg1) {
-      const peekResult = set.peek(arg0);
+      const peekResult = outer1_17.peek(arg0);
       let value;
       if (null != peekResult) {
         const recentFeedbackRatingsByConversationId = peekResult.recentFeedbackRatingsByConversationId;
@@ -629,7 +634,7 @@ let tmp7 = (Store) => {
     }
   };
   return callback(ConversationsStore, items);
-}(importDefault(dependencyMap[18]).Store);
+})(require("initialize").Store);
 tmp7.displayName = "ConversationsStore";
 obj = {
   CONVERSATION_FETCH_START: function handleConversationFetchStart(conversationId) {
@@ -694,10 +699,10 @@ obj = {
     let iter2;
     let rawConversations;
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
-    let arg1;
+    let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(arg1(dependencyMap[15]).mapConversation);
-      const found = mapped.filter(arg1(dependencyMap[16]).isNotNullish);
+      const mapped = rawConversations.map(set(6834).mapConversation);
+      const found = mapped.filter(set(1327).isNotNullish);
       const peekResult = importDefaultResult.peek(channelId);
       if (isJump) {
         let prop;
@@ -708,7 +713,7 @@ obj = {
         if (null != prop) {
           let conversation;
           if (null != peekResult) {
-            const conversationMetadataById = peekResult.conversationMetadataById;
+            let conversationMetadataById = peekResult.conversationMetadataById;
             let value = conversationMetadataById.get(prop);
             if (null != value) {
               conversation = value.conversation;
@@ -717,7 +722,7 @@ obj = {
           tmp8 = conversation;
         }
         if (null != tmp8) {
-          const items = [tmp8];
+          let items = [tmp8];
           let items1 = items;
         } else {
           items1 = [];
@@ -755,8 +760,7 @@ obj = {
           tmp15 = tmp17;
         }
         const _Set = Set;
-        const set = new Set(conversations.map((id) => id.id));
-        arg1 = set;
+        set = new Set(conversations.map((id) => id.id));
         let timestamp = tmp15;
         if (tmp23) {
           let tmp30 = tmp29;
@@ -767,11 +771,11 @@ obj = {
             const _Date3 = Date;
             timestamp = Date.now();
           }
-          const arr5 = function mergeConversations(conversations, found) {
+          const arr5 = (function mergeConversations(conversations, found) {
             let done;
             let done2;
             const map = new Map();
-            const tmp = callback2(conversations);
+            const tmp = outer1_21(conversations);
             let iter = tmp();
             if (!iter.done) {
               do {
@@ -782,7 +786,7 @@ obj = {
                 done = iter2.done;
               } while (!done);
             }
-            const tmp3 = callback2(found);
+            const tmp3 = outer1_21(found);
             let iter3 = tmp3();
             if (!iter3.done) {
               do {
@@ -794,9 +798,9 @@ obj = {
               } while (!done2);
             }
             const arr = Array.from(map.values());
-            const sorted = arr.sort((startMessageId, startMessageId2) => callback(closure_2[13]).compare(startMessageId.startMessageId, startMessageId2.startMessageId));
+            const sorted = arr.sort((startMessageId, startMessageId2) => outer2_1(outer2_2[13]).compare(startMessageId.startMessageId, startMessageId2.startMessageId));
             return arr;
-          }(conversations, found);
+          })(conversations, found);
           let substr = arr5;
           let tmp33 = timestamp1;
           let tmp34 = timestamp;
@@ -810,20 +814,21 @@ obj = {
               tmp33 = timestamp1;
               tmp34 = null;
             } else {
-              const tmp35 = function clampAnchorWindowStart(arr5, anchor) {
+              let tmp35 = (function clampAnchorWindowStart(arr5, anchor) {
+                let closure_0 = anchor;
                 if (null == anchor) {
                   return 0;
                 } else {
-                  let length = arr5.findIndex((startMessageId) => callback(closure_2[13]).compare(startMessageId.startMessageId, arg1) >= 0);
+                  let length = arr5.findIndex((startMessageId) => outer2_1(outer2_2[13]).compare(startMessageId.startMessageId, closure_0) >= 0);
                   if (-1 === length) {
                     length = arr5.length;
                   }
                   const _Math = Math;
                   const _Math2 = Math;
                   const _Math3 = Math;
-                  return Math.max(0, Math.min(length - Math.floor(closure_16 / 2), arr5.length - closure_16));
+                  return Math.max(0, Math.min(length - Math.floor(outer1_16 / 2), arr5.length - outer1_16));
                 }
-              }(arr5, anchor);
+              })(arr5, anchor);
               let tmp36 = timestamp1;
               if (tmp35 > 0) {
                 tmp36 = null;
@@ -837,7 +842,7 @@ obj = {
               tmp33 = tmp36;
             }
           }
-          const tmp42 = function buildChannelData(channelId, substr, peekResult) {
+          let tmp42 = (function buildChannelData(channelId, substr, peekResult) {
             let iter9;
             let guildId;
             if (null != peekResult) {
@@ -852,7 +857,7 @@ obj = {
               guildId = guildId1;
             }
             if (null == guildId) {
-              const channel = channel.getChannel(channelId);
+              const channel = outer1_9.getChannel(channelId);
               let guild_id;
               if (null != channel) {
                 guild_id = channel.guild_id;
@@ -873,7 +878,7 @@ obj = {
             if (null != colorIndex) {
               num2 = colorIndex;
             }
-            const tmp10 = callback2(substr);
+            const tmp10 = outer1_21(substr);
             const iter = tmp10();
             let tmp11 = num2;
             let iter2 = iter;
@@ -892,10 +897,10 @@ obj = {
                 }
                 let sum = tmp11;
                 if (null == color) {
-                  let tmp21 = closure_14;
+                  let tmp21 = outer1_14;
                   let tmp22 = +tmp11;
                   sum = tmp22 + 1;
-                  color = closure_14[tmp22 % closure_14.length];
+                  color = outer1_14[tmp22 % outer1_14.length];
                 }
                 let hydratedMessages;
                 if (null != value) {
@@ -921,8 +926,8 @@ obj = {
                   let tmp32 = new.target;
                   let map2 = new Map();
                   let tmp33 = map2;
-                  let tmp34 = closure_21;
-                  let tmp35 = closure_21(value.moderation.flaggedMessageDetails);
+                  let tmp34 = outer1_21;
+                  let tmp35 = outer1_21(value.moderation.flaggedMessageDetails);
                   let iter3 = tmp35();
                   let iter4 = iter3;
                   tmp28 = map2;
@@ -940,7 +945,7 @@ obj = {
                         let items = [value];
                         let result1 = map2.set(value.messageId, items);
                       }
-                      let iter5 = tmp35();
+                      iter5 = tmp35();
                       iter4 = iter5;
                       tmp28 = map2;
                       let tmp40 = iter5;
@@ -950,8 +955,8 @@ obj = {
                     } while (!iter5.done);
                   }
                 }
-                let tmp42 = closure_21;
-                let tmp43 = closure_21(value.messageIds);
+                let tmp42 = outer1_21;
+                let tmp43 = outer1_21(value.messageIds);
                 let iter6 = tmp43();
                 let iter7 = iter6;
                 let tmp44 = tmp14;
@@ -979,7 +984,7 @@ obj = {
                     }
                     let tmp51Result = null;
                     if (hasItem) {
-                      let tmp51 = closure_25;
+                      let tmp51 = outer1_25;
                       let value4 = tmp28.get(value2);
                       let items1 = value4;
                       if (null == value4) {
@@ -1040,24 +1045,24 @@ obj = {
                         tmp46 = value5;
                       }
                     }
-                    let iter8 = tmp43();
+                    iter8 = tmp43();
                     iter7 = iter8;
                     let tmp65 = moderationLabel1;
                     let tmp66 = message;
-                    let tmp14 = tmp44;
-                    let tmp15 = tmp45;
+                    tmp14 = tmp44;
+                    tmp15 = tmp45;
                     let tmp67 = value2;
                     let tmp68 = value3;
                     let tmp69 = tmp51Result;
                     let tmp70 = message_id;
-                    let tmp16 = tmp46;
+                    tmp16 = tmp46;
                   } while (!iter8.done);
                 }
                 iter9 = tmp10();
                 iter2 = iter9;
                 tmp11 = sum;
-                let tmp12 = tmp29;
-                let tmp13 = tmp30;
+                tmp12 = tmp29;
+                tmp13 = tmp30;
                 tmp17 = sum;
               } while (!iter9.done);
             }
@@ -1066,8 +1071,8 @@ obj = {
               prop = peekResult.recentFeedbackRatingsByConversationId;
             }
             if (null == prop) {
-              const tmp74 = callback(closure_2[12]);
-              const obj1 = { max: closure_15 };
+              const tmp74 = outer1_1(outer1_2[12]);
+              const obj1 = { max: outer1_15 };
               const prototype2 = tmp74.prototype;
               prop = new tmp74(obj1);
             }
@@ -1082,7 +1087,7 @@ obj = {
             let tmp81 = null;
             if (null != tmp80) {
               tmp81 = null;
-              if (substr.some((id) => id.id === tmp80)) {
+              if (substr.some((id) => id.id === closure_0)) {
                 tmp81 = tmp80;
               }
             }
@@ -1108,14 +1113,14 @@ obj = {
             obj2.selectedConversationId = tmp81;
             obj2.colorIndex = tmp17;
             return obj2;
-          }(channelId, substr, peekResult);
+          })(channelId, substr, peekResult);
           tmp42.reachedOldest = tmp33;
           tmp42.reachedNewest = tmp34;
           if (null != peekResult) {
             const _Object = Object;
             const merged = Object.assign(peekResult, tmp42);
           } else {
-            const result = importDefaultResult.set(channelId, tmp42);
+            let result = importDefaultResult.set(channelId, tmp42);
           }
           const tmp47 = _createForOfIteratorHelperLoose(rawConversations);
           let iter = tmp47();
@@ -1123,10 +1128,10 @@ obj = {
             do {
               value = iter.value;
               if (null != value.messages) {
-                let tmp48 = closure_26;
+                let tmp48 = processHydratedMessages;
                 let tmp49 = channelId;
                 let tmp50 = fullyHydrated;
-                let tmp51 = closure_26(channelId, value.id, value.messages, fullyHydrated);
+                let tmp51 = processHydratedMessages(channelId, value.id, value.messages, fullyHydrated);
               }
               iter2 = tmp47();
               iter = iter2;
@@ -1144,7 +1149,7 @@ obj = {
             timestamp2 = Date.now();
           }
         }
-        const tmp23 = found.some((id) => !set.has(id.id)) || null == anchor;
+        tmp23 = found.some((id) => !set.has(id.id)) || null == anchor;
       }
     } else {
       return false;
@@ -1183,16 +1188,16 @@ obj = {
     if (!iter.done) {
       do {
         let value = iter2.value;
-        let tmp2 = closure_17;
-        let peekResult = closure_17.peek(value);
+        let tmp2 = importDefaultResult;
+        let peekResult = importDefaultResult.peek(value);
         let guildId;
         if (null != peekResult) {
           guildId = peekResult.guildId;
         }
         let tmp5 = guildId === guild.id;
         if (tmp5) {
-          let tmp6 = closure_30;
-          tmp5 = closure_30(value);
+          let tmp6 = evictChannel;
+          tmp5 = evictChannel(value);
         }
         if (tmp5) {
           flag2 = true;
@@ -1285,9 +1290,9 @@ obj = {
           }
           let flag = null != message;
           if (flag) {
-            replaceHydratedMessage(peekResult, value, id, arg1(dependencyMap[14]).updateMessageRecord(value.message, message));
+            replaceHydratedMessage(peekResult, value, id, require(4351) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message));
             flag = true;
-            const obj = arg1(dependencyMap[14]);
+            const obj = require(4351) /* createMinimalMessageRecord */;
           }
           return flag;
         }
@@ -1372,8 +1377,8 @@ obj = {
     let flag2 = false;
     if (!iter.done) {
       do {
-        let tmp3 = closure_28;
-        if (closure_28(tmp, iter2.value)) {
+        let tmp3 = removeHydratedMessage;
+        if (removeHydratedMessage(tmp, iter2.value)) {
           flag = true;
         }
         iter3 = tmp2();
@@ -1389,7 +1394,7 @@ obj = {
     map1.clear();
   }
 };
-tmp7 = new tmp7(importDefault(dependencyMap[19]), obj);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/conversations/ConversationsStore.tsx");
+tmp7 = new tmp7(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/conversations/ConversationsStore.tsx");
 
 export default tmp7;

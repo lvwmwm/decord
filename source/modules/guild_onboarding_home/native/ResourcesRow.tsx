@@ -1,42 +1,45 @@
-// Module ID: 15169
-// Function ID: 114394
+// Module ID: 15284
+// Function ID: 116563
 // Name: ResourcesRow
-// Dependencies: []
+// Dependencies: [31, 27, 15285, 33, 4130, 689, 15286, 11383, 4098, 15287, 1934, 4660, 4126, 1212, 2]
 // Exports: default
 
-// Module 15169 (ResourcesRow)
-importAll(dependencyMap[0]);
-const ScrollView = arg1(dependencyMap[1]).ScrollView;
-let closure_4 = arg1(dependencyMap[2]).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: {} };
-obj = { accessible: -935339437381959400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, onPress: 0.00000000000000000000000000000000000000000000000000000000000004667253313593581, has: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020096735338359966, scales: "isArray", description: "key", flexDirection: "Array", paddingRight: "LIGHT", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[5]).radii.round };
-obj.channelItem = obj;
-let closure_7 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_onboarding_home/native/ResourcesRow.tsx");
+// Module 15284 (ResourcesRow)
+import "result";
+import { ScrollView } from "get ActivityIndicator";
+import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { display: "flex", flexDirection: "row", paddingBottom: 8, marginBottom: 16 } };
+_createForOfIteratorHelperLoose = { display: "flex", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, marginLeft: 8, paddingVertical: 8, paddingHorizontal: 12 };
+_createForOfIteratorHelperLoose.channelItem = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ONBOARDING_HOME_RESOURCES_SHEET_KEY").fileFinishedImporting("modules/guild_onboarding_home/native/ResourcesRow.tsx");
 
 export default function ResourcesRow(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  const arr = importDefault(dependencyMap[6])(guildId);
+  const arr = importDefault(15286)(guildId);
   let obj = { horizontal: true, style: tmp.container };
   const substr = arr.slice(0, 2);
   const items = [
-    substr.map((children) => {
-      const guildId = children;
+    substr.map((title) => {
+      let closure_0 = title;
       let obj = {
         style: tmp.channelItem,
         onPress() {
-          const homeResourceChannel = arg0(closure_2[7]).selectHomeResourceChannel(arg0, arg0.channelId);
+          const homeResourceChannel = guildId(outer2_2[7]).selectHomeResourceChannel(title, title.channelId);
         }
       };
-      obj = { children: children.title };
-      obj.children = callback(guildId(closure_2[12]).Text, obj);
-      return callback(guildId(closure_2[11]).PressableOpacity, obj, children.channelId);
+      obj = { variant: "text-md/medium", color: "text-default", children: title.title };
+      obj.children = outer1_5(guildId(outer1_2[12]).Text, obj);
+      return outer1_5(guildId(outer1_2[11]).PressableOpacity, obj, title.channelId);
     }),
 
   ];
@@ -45,17 +48,17 @@ export default function ResourcesRow(guildId) {
     obj = {
       style: tmp.channelItem,
       onPress() {
-          let obj = tmp(paths[8]);
+          let obj = tmp(outer1_2[8]);
           obj = { guildId };
-          obj.openLazy(guildId(paths[10])(paths[9], paths.paths), closure_4, obj);
+          obj.openLazy(guildId(outer1_2[10])(outer1_2[9], outer1_2.paths), outer1_4, obj);
         }
     };
-    obj = {};
-    const intl = arg1(dependencyMap[13]).intl;
+    obj = { variant: "text-md/medium", color: "text-default" };
+    const intl = guildId(1212).intl;
     const obj1 = { count: arr.length - 2 };
-    obj.children = intl.format(arg1(dependencyMap[13]).t.F6iMs4, obj1);
-    obj.children = callback(arg1(dependencyMap[12]).Text, obj);
-    tmp5 = callback(arg1(dependencyMap[11]).PressableOpacity, obj);
+    obj.children = intl.format(guildId(1212).t.F6iMs4, obj1);
+    obj.children = callback(guildId(4126).Text, obj);
+    tmp5 = callback(guildId(4660).PressableOpacity, obj);
   }
   items[1] = tmp5;
   obj.children = items;

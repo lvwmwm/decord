@@ -1,53 +1,69 @@
-// Module ID: 8182
-// Function ID: 64620
+// Module ID: 8188
+// Function ID: 64657
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 4991, 5039, 1348, 1907, 1917, 1910, 1838, 3758, 3767, 1849, 653, 1852, 6927, 4320, 21, 4974, 3771, 3775, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 8182 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8188 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+import { EmojiIntention } from "set";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +74,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -91,20 +107,20 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
   }
   const allowUsers = obj.allowUsers;
   const allowRoles = obj.allowRoles;
-  const first = arr[0];
+  let first = arr[0];
   if ("@" === first) {
-    return function resolveUserOrRole(arr, source, id, arg3, arg4) {
-      const tmp = callback(arr.slice(1).split("#", 2), 2);
+    return (function resolveUserOrRole(arr, source, id, arg3, arg4) {
+      let tmp = outer1_3(arr.slice(1).split("#", 2), 2);
       const first = tmp[0];
-      const tmp3 = tmp[1];
+      let closure_1 = tmp3;
       let guild = null;
       if (null != source) {
-        guild = guild.getGuild(source);
+        guild = outer1_11.getGuild(source);
       }
       if (arg4) {
         if (null == tmp3) {
           if (null != guild) {
-            const tmp8 = callback2(sortedRoles.getSortedRoles(guild.id));
+            const tmp8 = outer1_17(outer1_10.getSortedRoles(guild.id));
             const iter = tmp8();
             let iter2 = iter;
             if (!iter.done) {
@@ -125,7 +141,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
       if (arg3) {
         let channel = null;
         if (null != id) {
-          channel = channel.getChannel(id);
+          channel = outer1_6.getChannel(id);
         }
         if (null == channel) {
           return null;
@@ -133,21 +149,21 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
           if (channel.isPrivate()) {
             let recipients = channel.recipients;
           } else {
-            const members = members.getMembers(source);
+            const members = outer1_9.getMembers(source);
             recipients = members.map((userId) => userId.userId);
           }
-          const mapped = recipients.map((arg0) => user.getUser(arg0));
+          const mapped = recipients.map((arg0) => outer2_14.getUser(arg0));
           const found = mapped.filter((arg0) => {
             let tmp = undefined !== arg0;
             if (tmp) {
-              tmp = callback(first, tmp3, arg0);
+              tmp = outer2_20(first, closure_1, arg0);
             }
             return tmp;
           });
           if (1 === found.length) {
             const first1 = found[0];
             obj = { requireExact: true };
-            if (callback3(first, tmp3, first1, obj)) {
+            if (outer1_20(first, tmp3, first1, obj)) {
               const obj1 = { type: "userMention", userId: first1.id };
               const obj2 = { text: "" };
               const items1 = [obj2];
@@ -158,13 +174,13 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
         }
       }
       return null;
-    }(arr, source, id, tmp, tmp2);
+    })(arr, source, id, tmp, tmp2);
   } else if (":" === first) {
-    const EMOJI_NAME_RE = importDefault(dependencyMap[17]).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3771).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(arr);
     let tmp47 = null;
     if (null != match) {
-      const disambiguatedEmojiContext = disambiguatedEmojiContext.getDisambiguatedEmojiContext(source);
+      disambiguatedEmojiContext = disambiguatedEmojiContext.getDisambiguatedEmojiContext(source);
       const customEmoji = disambiguatedEmojiContext.getCustomEmoji();
       let obj2 = customEmoji.get(match[1]);
       let channel = null;
@@ -190,7 +206,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
           const _HermesInternal = HermesInternal;
           const combined = ":" + obj2.name + ":";
         }
-        const obj17 = importDefault(dependencyMap[18]);
+        obj17 = importDefault(3775);
       }
     }
     return tmp47;
@@ -200,16 +216,16 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
       if (arr.length > 3) {
         if ("\"" === arr[1]) {
           if ("\"" === arr[arr.length - 1]) {
-            obj1 = source(dependencyMap[14]);
+            obj1 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
             let unescapeChannelNameResult = obj1.unescapeChannelName(arr.slice(2, arr.length - 1));
           }
           const textChannelNameDisambiguations = store.getTextChannelNameDisambiguations(source);
-          let obj3 = importDefault(dependencyMap[15]);
+          let obj3 = importDefault(21);
           const tmp13 = _createForOfIteratorHelperLoose(obj3.keys(textChannelNameDisambiguations));
-          const iter = tmp13();
+          let iter = tmp13();
           let iter2 = iter;
           if (iter.done) {
-            const tmp17 = _createForOfIteratorHelperLoose(source(dependencyMap[16]).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+            const tmp17 = _createForOfIteratorHelperLoose(require(4974) /* _createForOfIteratorHelperLoose */.COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
             const iter4 = tmp17();
             let iter5 = iter4;
             if (!iter4.done) {
@@ -229,9 +245,9 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
                   if (!iter15.done) {
                     while (true) {
                       channel = iter7.value.channel;
-                      let tmp21 = source;
+                      let tmp21 = require;
                       let tmp22 = dependencyMap;
-                      let obj6 = source(dependencyMap[14]);
+                      let obj6 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
                       let tmp23 = closure_14;
                       let tmp24 = closure_13;
                       if (obj6.computeChannelName(channel, closure_14, closure_13) !== unescapeChannelNameResult) {
@@ -264,12 +280,12 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
                   }
                 }
                 let iter8 = tmp17();
-                let tmp18 = tmp20;
+                tmp18 = tmp20;
                 iter5 = iter8;
               }
             }
-            const activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(source);
-            const tmp34 = _createForOfIteratorHelperLoose(importDefault(dependencyMap[15]).keys(activeJoinedThreadsForGuild));
+            activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(source);
+            const tmp34 = _createForOfIteratorHelperLoose(importDefault(21).keys(activeJoinedThreadsForGuild));
             const iter9 = tmp34();
             let iter10 = iter9;
             tmp4 = null;
@@ -279,7 +295,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
                 let tmp35 = _createForOfIteratorHelperLoose;
                 let tmp36 = importDefault;
                 let tmp37 = dependencyMap;
-                let obj10 = importDefault(dependencyMap[15]);
+                let obj10 = importDefault(21);
                 let tmp38 = _createForOfIteratorHelperLoose(obj10.keys(activeJoinedThreadsForGuild[value1]));
                 let iter11 = tmp38();
                 let iter12 = iter11;
@@ -289,9 +305,9 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
                   tmp4 = null;
                 } else {
                   let channel2 = activeJoinedThreadsForGuild[value1][iter12.value].channel;
-                  let tmp39 = source;
+                  let tmp39 = require;
                   let tmp40 = dependencyMap;
-                  let obj11 = source(dependencyMap[14]);
+                  let obj11 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
                   let tmp41 = closure_14;
                   let tmp42 = closure_13;
                   while (obj11.computeChannelName(channel2, closure_14, closure_13) !== unescapeChannelNameResult) {
@@ -313,7 +329,7 @@ function resolvePlaintextInlineVoid(arr, source, id, intention) {
                 }
               }
             }
-            const obj9 = importDefault(dependencyMap[15]);
+            const obj9 = importDefault(21);
           } else {
             obj2 = iter2.value;
             while (textChannelNameDisambiguations[obj2].name !== unescapeChannelNameResult) {
@@ -363,29 +379,15 @@ function matchesUser(arg0, arg1, username) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[4]).GUILD_SELECTABLE_CHANNELS_KEY;
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-let closure_14 = importDefault(dependencyMap[10]);
-const Permissions = arg1(dependencyMap[11]).Permissions;
-const EmojiIntention = arg1(dependencyMap[12]).EmojiIntention;
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/channel_text_area/PlaintextResolvers.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_text_area/PlaintextResolvers.tsx");
 
 export { resolvePlaintextInlineVoid };
 export const resolveApplicationCommandOption = function resolveApplicationCommandOption(text, source, id, intention) {
   const tmp = resolvePlaintextInlineVoid(text, source, id, intention);
   let voidToOptionValueResult = null;
   if (null != tmp) {
-    voidToOptionValueResult = source(dependencyMap[13]).voidToOptionValue(tmp);
-    const obj = source(dependencyMap[13]);
+    voidToOptionValueResult = require(6927) /* toRichValue */.voidToOptionValue(tmp);
+    const obj = require(6927) /* toRichValue */;
   }
   return voidToOptionValueResult;
 };

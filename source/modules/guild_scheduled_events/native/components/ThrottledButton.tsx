@@ -1,36 +1,40 @@
-// Module ID: 12086
-// Function ID: 93217
+// Module ID: 12200
+// Function ID: 95368
 // Name: useThrottledActionHandler
-// Dependencies: []
+// Dependencies: [31, 33, 4543, 2]
 // Exports: default
 
-// Module 12086 (useThrottledActionHandler)
+// Module 12200 (useThrottledActionHandler)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function useThrottledActionHandler(throttleMs) {
   let num = throttleMs;
   if (throttleMs === undefined) {
     num = 500;
   }
-  const arg1 = num;
   let closure_1;
   closure_1 = React.useRef(null);
-  const effect = React.useEffect(() => () => clearTimeout(ref.current), []);
-  return (arg0) => (arg0) => {
-    let tmp = null != arg0;
-    if (tmp) {
-      tmp = null === ref.current;
-    }
-    if (tmp) {
-      arg0(arg0);
-      const _setTimeout = setTimeout;
-      ref.current = setTimeout(() => {
-        closure_1.current = null;
-      }, arg0);
-    }
+  const effect = React.useEffect(() => () => clearTimeout(outer1_1.current), []);
+  return (arg0) => {
+    let closure_0 = arg0;
+    return (arg0) => {
+      let tmp = null != callback;
+      if (tmp) {
+        tmp = null === outer1_1.current;
+      }
+      if (tmp) {
+        callback(arg0);
+        const _setTimeout = setTimeout;
+        outer1_1.current = setTimeout(() => {
+          outer2_1.current = null;
+        }, callback);
+      }
+    };
   };
 }
-let closure_2 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_scheduled_events/native/components/ThrottledButton.tsx");
+const result = require("Button").fileFinishedImporting("modules/guild_scheduled_events/native/components/ThrottledButton.tsx");
 
 export default function ThrottledButton(throttleMs) {
   let onPress;
@@ -41,7 +45,7 @@ export default function ThrottledButton(throttleMs) {
   if (num === undefined) {
     num = 500;
   }
-  let obj = { "Null": -24, "Null": null, "Null": 1, "Null": "Malaysia" };
+  let obj = { onPress: 0, onPressIn: 0, onPressOut: 0, throttleMs: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(throttleMs, obj);
   const tmp3 = useThrottledActionHandler(num);
@@ -50,6 +54,6 @@ export default function ThrottledButton(throttleMs) {
   obj["onPress"] = tmp3(onPress);
   obj["onPressIn"] = tmp3(onPressIn);
   obj["onPressOut"] = tmp3(onPressOut);
-  return jsx(arg1(dependencyMap[2]).Button, obj);
+  return jsx(require(4543) /* Button */.Button, {});
 };
 export { useThrottledActionHandler };

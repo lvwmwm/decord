@@ -1,14 +1,15 @@
-// Module ID: 14230
-// Function ID: 107566
+// Module ID: 14344
+// Function ID: 109722
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isEligibleForUpcomingServerEventNotifications, useUpcomingServerEventExperiment
 
-// Module 14230 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true }, [3]: { showSettingsToggle: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/notifications/upcoming_server_event/UpcomingServerEventExperiment.tsx");
+// Module 14344 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-04-upcoming-server-event", defaultConfig: { showSettingsToggle: false }, variations: { [1]: { showSettingsToggle: true }, [2]: { showSettingsToggle: true }, [3]: { showSettingsToggle: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/notifications/upcoming_server_event/UpcomingServerEventExperiment.tsx");
 
 export default apexExperiment;
 export const useUpcomingServerEventExperiment = function useUpcomingServerEventExperiment(tabsV2Settings) {

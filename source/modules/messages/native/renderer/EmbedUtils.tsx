@@ -1,14 +1,16 @@
-// Module ID: 7629
-// Function ID: 61139
+// Module ID: 7635
+// Function ID: 61176
 // Name: frozen
-// Dependencies: []
+// Dependencies: [27, 2]
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
-// Module 7629 (frozen)
-const Image = require(dependencyMap[0]).Image;
-const frozen = Object.freeze(new Set([]));
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/EmbedUtils.tsx");
+// Module 7635 (frozen)
+import { Image } from "get ActivityIndicator";
+import set from "set";
+
+let set = new Set(["YouTube", "TikTok"]);
+const frozen = Object.freeze(set);
+const result = set.fileFinishedImporting("modules/messages/native/renderer/EmbedUtils.tsx");
 
 export const getAssetUriForEmbed = function getAssetUriForEmbed(Image) {
   return Image.resolveAssetSource(Image).uri;

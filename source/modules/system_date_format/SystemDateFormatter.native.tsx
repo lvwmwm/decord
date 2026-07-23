@@ -1,16 +1,16 @@
-// Module ID: 3815
-// Function ID: 31713
+// Module ID: 3817
+// Function ID: 31718
 // Name: __DiscordCreateDateFormatter
-// Dependencies: []
+// Dependencies: [27, 477, 3818, 2]
 // Exports: supportsSystemDateFormatter
 
-// Module 3815 (__DiscordCreateDateFormatter)
+// Module 3817 (__DiscordCreateDateFormatter)
 if (null != global.__DiscordCreateDateFormatter) {
   let __DiscordCreateDateFormatter = global.__DiscordCreateDateFormatter;
 } else {
-  const _module = require(dependencyMap[1]);
+  const _module = require("set");
   if (_module.isAndroid()) {
-    let DateFormatUtils = importDefault(dependencyMap[2]);
+    let DateFormatUtils = require("enforcing");
   } else {
     DateFormatUtils = tmp2.DateFormatUtils;
   }
@@ -26,10 +26,9 @@ if (null != global.__DiscordCreateDateFormatter) {
     }
   }
 }
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/system_date_format/SystemDateFormatter.native.tsx");
+const result = require("enforcing").fileFinishedImporting("modules/system_date_format/SystemDateFormatter.native.tsx");
 
 export const makeFormatter = __DiscordCreateDateFormatter;
 export const supportsSystemDateFormatter = function supportsSystemDateFormatter() {
-  return require(dependencyMap[1]).isIOS();
+  return require(477) /* set */.isIOS();
 };

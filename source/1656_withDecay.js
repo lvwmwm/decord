@@ -1,8 +1,8 @@
 // Module ID: 1656
-// Function ID: 18401
+// Function ID: 18402
 // Name: withDecay
-// Dependencies: []
+// Dependencies: [1657]
 
 // Module 1656 (withDecay)
 
-export const withDecay = require(dependencyMap[0]).withDecay;
+export const withDecay = require("validateConfig").withDecay;

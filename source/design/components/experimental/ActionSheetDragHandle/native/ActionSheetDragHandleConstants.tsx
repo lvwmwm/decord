@@ -1,13 +1,13 @@
-// Module ID: 8367
-// Function ID: 66698
+// Module ID: 8373
+// Function ID: 66735
 // Name: PX_4
-// Dependencies: []
+// Dependencies: [689, 2]
 
-// Module 8367 (PX_4)
-const PX_4 = importDefault(dependencyMap[0]).space.PX_4;
-const PX_8 = importDefault(dependencyMap[0]).space.PX_8;
+// Module 8373 (PX_4)
+const PX_4 = require("_createForOfIteratorHelperLoose").space.PX_4;
+const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
 const sum = 2 * PX_8 + PX_4;
-const result = arg1(dependencyMap[1]).fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandleConstants.tsx");
+const result = require("set").fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandleConstants.tsx");
 
 export const DRAG_HANDLE_BAR_HEIGHT = PX_4;
 export const DRAG_HANDLE_PADDING = PX_8;

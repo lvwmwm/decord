@@ -1,10 +1,17 @@
-// Module ID: 10216
-// Function ID: 78946
+// Module ID: 10228
+// Function ID: 79018
 // Name: computeThreadNotificationSetting
-// Dependencies: []
+// Dependencies: [1348, 4325, 3760, 1211, 653, 1360, 566, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 10216 (computeThreadNotificationSetting)
+// Module 10228 (computeThreadNotificationSetting)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { ThreadMemberFlags } from "AbortCodes";
+import { UserNotificationSettings } from "ME";
+
+const require = arg1;
 function computeThreadNotificationSetting(channel) {
   let obj = arg1;
   let obj2 = arg2;
@@ -16,7 +23,7 @@ function computeThreadNotificationSetting(channel) {
     obj2 = closure_3;
   }
   if (obj3 === undefined) {
-    obj3 = closure_2;
+    obj3 = _isNativeReflectConstruct;
   }
   const flagsResult = obj.flags(channel.id);
   if (null == flagsResult) {
@@ -48,24 +55,19 @@ function computeThreadNotificationSetting(channel) {
             return ALL_MESSAGES;
           }
         }
-        const obj5 = arg1(dependencyMap[5]);
+        obj5 = require(1360) /* hasFlag */;
       }
-      const obj4 = arg1(dependencyMap[5]);
+      obj4 = require(1360) /* hasFlag */;
     }
-    const obj6 = arg1(dependencyMap[5]);
+    obj6 = require(1360) /* hasFlag */;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const ThreadMemberFlags = arg1(dependencyMap[3]).ThreadMemberFlags;
-const UserNotificationSettings = arg1(dependencyMap[4]).UserNotificationSettings;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/threads/ThreadNotificationSettings.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/threads/ThreadNotificationSettings.tsx");
 
 export { computeThreadNotificationSetting };
 export const useThreadNotificationSetting = function useThreadNotificationSetting(channel) {
-  const arg1 = channel;
-  const items = [closure_4, closure_3, closure_2];
+  const _require = channel;
+  const items = [closure_4, closure_3, _isNativeReflectConstruct];
   const items1 = [channel];
-  return arg1(dependencyMap[6]).useStateFromStores(items, () => callback(arg0), items1);
+  return _require(566).useStateFromStores(items, () => outer1_7(closure_0), items1);
 };

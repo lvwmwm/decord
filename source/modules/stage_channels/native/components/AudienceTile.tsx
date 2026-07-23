@@ -1,13 +1,22 @@
-// Module ID: 10786
-// Function ID: 83768
+// Module ID: 10796
+// Function ID: 83817
 // Name: RaisedHandIcon
-// Dependencies: []
+// Dependencies: [31, 27, 1917, 33, 4130, 689, 4314, 1273, 7583, 1450, 566, 4957, 4319, 5217, 1212, 7477, 10778, 3976, 10797, 2]
 
-// Module 10786 (RaisedHandIcon)
+// Module 10796 (RaisedHandIcon)
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function RaisedHandIcon(rtsState) {
   const tmp = styles();
-  let activeBackground = rtsState.rtsState === arg1(dependencyMap[6]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-  const unsafe_rawColors = importDefault(dependencyMap[5]).unsafe_rawColors;
+  let activeBackground = rtsState.rtsState === require(4314) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   let obj = {};
   const items = [tmp.raisedHandContainer, ];
   if (activeBackground) {
@@ -15,52 +24,44 @@ function RaisedHandIcon(rtsState) {
   }
   items[1] = activeBackground;
   obj.style = items;
-  obj = { style: tmp.raisedHand, source: importDefault(dependencyMap[8]), color: activeBackground ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_800 };
-  obj.children = callback(arg1(dependencyMap[7]).Icon, obj);
+  obj = { style: tmp.raisedHand, source: importDefault(7583), color: activeBackground ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_800 };
+  obj.children = callback(require(1273) /* Button */.Icon, obj);
   return callback(View, obj);
 }
 function getTileWidthStyle(arg0) {
   return (arg0 - 46) / 4;
 }
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj1 = arg1(dependencyMap[4]);
-let obj = { touchableContainer: { overflow: "visible" }, container: { alignItems: "center" }, avatarContainer: { "Bool(false)": 1107296966, "Bool(false)": 83081, "Bool(false)": 152244, "Bool(false)": 21293378 } };
-obj = { borderColor: importDefault(dependencyMap[5]).unsafe_rawColors.PRIMARY_800, backgroundColor: importDefault(dependencyMap[5]).colors.WHITE };
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let obj = { touchableContainer: { overflow: "visible" }, container: { alignItems: "center" }, avatarContainer: { position: "relative", padding: 8, paddingTop: 0, paddingBottom: 4 } };
+obj = { position: "absolute", top: -8, right: 0, height: 24, width: 24, alignItems: "center", justifyContent: "center", borderRadius: 12, borderWidth: 2, borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_800, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
 obj.raisedHandContainer = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_360 };
-obj.activeBackground = obj1;
-obj.raisedHand = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
-obj.nameplateContainer = {};
-const tmp2 = arg1(dependencyMap[3]);
-obj.usernameText = { fontSize: 14, color: importDefault(dependencyMap[5]).colors.WHITE };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
+obj.activeBackground = _createForOfIteratorHelperLoose;
+obj.raisedHand = { height: 13, width: 13, alignItems: "center", justifyContent: "center", resizeMode: "contain" };
+obj.nameplateContainer = { flexDirection: "row", alignItems: "center", justifyContent: "center" };
+obj.usernameText = { fontSize: 14, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
 obj.faded = { opacity: 0.5 };
-const styles = obj1.createStyles(obj);
-const obj2 = { fontSize: 14, color: importDefault(dependencyMap[5]).colors.WHITE };
+const styles = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj2 = { fontSize: 14, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
 const memoResult = importAllResult.memo((channel) => {
   let blocked;
   let ignored;
   let rtsState;
   channel = channel.channel;
-  const arg1 = channel;
   const participant = channel.participant;
   const user = participant.user;
-  const importDefault = user;
   ({ rtsState, blocked, ignored } = participant);
   const theme = channel.theme;
-  const tmp = styles();
-  const tmp2 = getTileWidthStyle(importDefault(dependencyMap[9])().width);
-  const guildId = channel.getGuildId();
-  const dependencyMap = guildId;
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_4];
+  let tmp = styles();
+  const tmp2 = getTileWidthStyle(user(guildId[9])().width);
+  guildId = channel.getGuildId();
+  let obj = channel(guildId[10]);
+  const items = [_isNativeReflectConstruct];
   const items1 = [guildId, user.id];
   let stateFromStores = obj.useStateFromStores(items, () => {
     let tmp = null != guildId;
     if (tmp) {
-      const member = member.getMember(guildId, user.id);
+      const member = outer1_4.getMember(guildId, user.id);
       let premiumSince;
       if (null != member) {
         premiumSince = member.premiumSince;
@@ -69,17 +70,17 @@ const memoResult = importAllResult.memo((channel) => {
     }
     return Boolean(tmp);
   }, items1);
-  let obj1 = arg1(dependencyMap[11]);
+  let obj1 = channel(guildId[11]);
   let result = obj1.isRequestedToSpeakAll(rtsState);
-  let obj2 = importDefault(dependencyMap[12]);
+  let obj2 = user(guildId[12]);
   const name = obj2.getName(guildId, channel.id, user);
   let tmp7 = blocked;
   if (!blocked) {
     tmp7 = ignored;
   }
   obj = {};
-  const intl = arg1(dependencyMap[14]).intl;
-  obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[14]).t.QLMGhv, { name });
+  const intl = channel(guildId[14]).intl;
+  obj.accessibilityLabel = intl.formatToPlainString(channel(guildId[14]).t.QLMGhv, { name });
   const items2 = [, , ];
   ({ touchableContainer: arr3[0], container: arr3[1] } = tmp);
   items2[2] = { width: tmp2 };
@@ -97,13 +98,13 @@ const memoResult = importAllResult.memo((channel) => {
     tmp11 = guildId;
   }
   obj1.guildId = tmp11;
-  obj1.size = arg1(dependencyMap[7]).AvatarSizes.LARGE;
+  obj1.size = channel(guildId[7]).AvatarSizes.LARGE;
   let faded = tmp7;
   if (tmp7) {
     faded = tmp.faded;
   }
   obj1.style = faded;
-  const items3 = [callback(arg1(dependencyMap[7]).CutoutableAvatarImage, obj1), ];
+  const items3 = [callback(channel(guildId[7]).CutoutableAvatarImage, obj1), ];
   if (result) {
     obj2 = { rtsState };
     result = callback(RaisedHandIcon, obj2);
@@ -112,13 +113,13 @@ const memoResult = importAllResult.memo((channel) => {
   obj.children = items3;
   const items4 = [closure_6(View, obj), ];
   const obj3 = { style: items5 };
-  const items5 = [tmp.nameplateContainer];
+  items5 = [tmp.nameplateContainer];
   if (blocked) {
-    blocked = callback(arg1(dependencyMap[16]).BlockedStatus, {});
+    blocked = callback(channel(guildId[16]).BlockedStatus, {});
   }
   const items6 = [blocked, , , ];
   if (ignored) {
-    ignored = callback(arg1(dependencyMap[16]).IgnoredStatus, {});
+    ignored = callback(channel(guildId[16]).IgnoredStatus, {});
   }
   items6[1] = ignored;
   const obj4 = {};
@@ -145,25 +146,25 @@ const memoResult = importAllResult.memo((channel) => {
     obj4.style = items7;
     obj4.numberOfLines = 1;
     obj4.children = name;
-    items6[2] = callback(arg1(dependencyMap[7]).LegacyText, obj4);
+    items6[2] = callback(channel(guildId[7]).LegacyText, obj4);
     if (stateFromStores) {
-      const obj6 = { source: importDefault(dependencyMap[18]), size: arg1(dependencyMap[7]).Icon.Sizes.SMALL, color: importDefault(dependencyMap[5]).unsafe_rawColors.GUILD_BOOSTING_PINK };
-      stateFromStores = callback(arg1(dependencyMap[7]).Icon, obj6);
+      const obj6 = { source: user(guildId[18]), size: channel(guildId[7]).Icon.Sizes.SMALL, color: user(guildId[5]).unsafe_rawColors.GUILD_BOOSTING_PINK };
+      stateFromStores = callback(channel(guildId[7]).Icon, obj6);
     }
     items6[3] = stateFromStores;
     obj3.children = items6;
     items4[1] = closure_6(View, obj3);
     obj.children = items4;
-    return tmp8(arg1(dependencyMap[13]).Pressable, obj);
+    return tmp8(channel(guildId[13]).Pressable, obj);
   } else {
     const obj7 = {};
-    const obj12 = arg1(dependencyMap[17]);
-    const unsafe_rawColors = importDefault(dependencyMap[5]).unsafe_rawColors;
-    obj7.color = arg1(dependencyMap[17]).isThemeDark(theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
-    const isThemeDarkResult = arg1(dependencyMap[17]).isThemeDark(theme);
+    const obj12 = channel(guildId[17]);
+    const unsafe_rawColors = user(guildId[5]).unsafe_rawColors;
+    obj7.color = channel(guildId[17]).isThemeDark(theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
+    const isThemeDarkResult = channel(guildId[17]).isThemeDark(theme);
   }
 });
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/stage_channels/native/components/AudienceTile.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/native/components/AudienceTile.tsx");
 
 export default memoResult;
 export const useAudienceTileStyles = styles;

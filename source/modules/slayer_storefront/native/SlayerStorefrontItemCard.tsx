@@ -1,59 +1,60 @@
-// Module ID: 8206
-// Function ID: 64886
+// Module ID: 8212
+// Function ID: 64923
 // Name: SlayerStorefrontItemCard
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5611, 8213, 6784, 5085, 4554, 2]
 // Exports: default
 
-// Module 8206 (SlayerStorefrontItemCard)
-let closure_3 = importAll(dependencyMap[0]);
-({ ImageBackground: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { 0: "r", 0: "DISMISSIBLE_CONTENT_SHOWN", 9223372036854775807: "OVERLAY", 0: "y", 9223372036854775807: "CONNECTIONS_STEP", 9223372036854775807: "unignoreUser", 9223372036854775807: "Array", borderRadius: importDefault(dependencyMap[4]).radii.md, shadowOffset: {} };
-obj.cardContainer = obj;
-obj.cardImageBackground = {};
-obj.cardImage = {};
-let closure_7 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontItemCard.tsx");
+// Module 8212 (SlayerStorefrontItemCard)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ ImageBackground: closure_4, View: closure_5 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, overflow: "hidden", shadowColor: "#000", shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 8 };
+_createForOfIteratorHelperLoose.cardContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.cardImageBackground = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.cardImage = { width: "100%", height: "100%", resizeMode: "cover" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontItemCard.tsx");
 
 export default function SlayerStorefrontItemCard(sku) {
   sku = sku.sku;
-  const arg1 = sku;
   let num = sku.size;
   if (num === undefined) {
     num = 220;
   }
-  let importDefault;
-  let dependencyMap;
-  let cardImage = callback();
+  let bound;
+  let dominantColorFromImage;
+  let cardImage = _createForOfIteratorHelperLoose();
   let size = num;
   if ("object" !== typeof num) {
     let obj = { width: num, height: num };
     size = obj;
   }
-  const bound = Math.max(size.width, size.height);
-  importDefault = bound;
-  const items = [sku, bound];
+  bound = Math.max(size.width, size.height);
+  let items = [sku, bound];
   let str = React.useMemo(() => {
     let obj = sku(dominantColorFromImage[5]);
     obj = { size: bound };
     return obj.getCardImageURL(sku, obj);
   }, items);
-  const items1 = [sku, bound];
+  let items1 = [sku, bound];
   let str2 = React.useMemo(() => {
     let obj = sku(dominantColorFromImage[5]);
     obj = { size: bound };
     return obj.getCardBackgroundImageURL(sku, obj);
   }, items1);
-  let obj1 = arg1(dependencyMap[6]);
+  let obj1 = sku(dominantColorFromImage[6]);
   str = undefined;
   if (null != str) {
     str = str.toString();
   }
-  const dominantColorFromImage = obj1.useDominantColorFromImage(str);
-  dependencyMap = dominantColorFromImage;
+  dominantColorFromImage = obj1.useDominantColorFromImage(str);
   [][0] = dominantColorFromImage;
   let tmp5 = null;
   if (null != sku) {
@@ -74,23 +75,23 @@ export default function SlayerStorefrontItemCard(sku) {
         obj2.source = obj3;
         cardImage = cardImage.cardImage;
         obj2.style = cardImage;
-        obj.children = jsx(importDefault(dependencyMap[8]), obj2);
-        let tmp13 = <closure_4 {...obj} />;
-        const tmp12 = importDefault(dependencyMap[8]);
+        obj.children = jsx(bound(dominantColorFromImage[8]), {});
+        let tmp13 = <closure_4 />;
+        const tmp12 = bound(dominantColorFromImage[8]);
       } else {
-        const obj4 = { colors: tmp4, start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: { 0: "<string:2491613185>", 0: "<string:2941583362>" }, style: cardImage.cardImageBackground };
-        const obj5 = {};
+        const obj4 = { colors: tmp4, start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: cardImage.cardImageBackground };
+        let obj5 = {};
         const obj6 = {};
-        const tmp18 = importDefault(dependencyMap[9]);
+        const tmp18 = bound(dominantColorFromImage[9]);
         obj6.uri = str.toString();
         obj5.source = obj6;
         obj5.style = cardImage.cardImage;
-        obj4.children = jsx(importDefault(dependencyMap[8]), obj5);
-        tmp13 = <tmp18 {...obj4} />;
-        const tmp19 = importDefault(dependencyMap[8]);
+        obj4.children = jsx(bound(dominantColorFromImage[8]), {});
+        tmp13 = <tmp18 colors={tmp4} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={cardImage.cardImageBackground} />;
+        const tmp19 = bound(dominantColorFromImage[8]);
       }
       obj.children = tmp13;
-      <closure_5 {...obj} />;
+      <closure_5 />;
       const tmp6 = jsx;
       const tmp7 = closure_5;
     }

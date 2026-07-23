@@ -1,20 +1,22 @@
-// Module ID: 10128
-// Function ID: 78414
+// Module ID: 10136
+// Function ID: 78454
 // Name: useLastChannelMessage
-// Dependencies: []
+// Dependencies: [4349, 566, 2]
 // Exports: useLastChannelMessage
 
-// Module 10128 (useLastChannelMessage)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useLastChannelMessage.tsx");
+// Module 10136 (useLastChannelMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useLastChannelMessage.tsx");
 
 export const useLastChannelMessage = function useLastChannelMessage(channelId) {
-  const arg1 = channelId;
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => {
-    let lastNonCurrentUserMessage = authStore.getLastNonCurrentUserMessage(arg0);
+  const _require = channelId;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
+    let lastNonCurrentUserMessage = outer1_2.getLastNonCurrentUserMessage(closure_0);
     if (null == lastNonCurrentUserMessage) {
-      lastNonCurrentUserMessage = authStore.getLastMessage(arg0);
+      lastNonCurrentUserMessage = outer1_2.getLastMessage(closure_0);
     }
     return lastNonCurrentUserMessage;
   });

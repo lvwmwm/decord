@@ -1,49 +1,63 @@
 // Module ID: 5434
-// Function ID: 46523
+// Function ID: 46535
 // Name: memo
-// Dependencies: []
+// Dependencies: [29, 31, 27, 33, 5194, 5435, 5190]
 
 // Module 5434 (memo)
-let forwardRef;
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+let closure_4;
+let closure_5;
+let closure_6;
 let memo;
-let closure_2 = [1631314769, -1784718911];
-let closure_3 = importDefault(dependencyMap[0]);
-({ useCallback: closure_4, useEffect: closure_5, memo, forwardRef } = arg1(dependencyMap[1]));
-importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const memoResult = memo(forwardRef((onFocus, ref) => {
-  onFocus = onFocus.onFocus;
-  ref = onFocus;
-  const onBlur = onFocus.onBlur;
-  const dependencyMap = onBlur;
-  let obj = ref(dependencyMap[3]);
-  const shouldHandleKeyboardEvents = obj.useBottomSheetInternal().shouldHandleKeyboardEvents;
-  let closure_2 = shouldHandleKeyboardEvents;
-  const items = [onFocus, shouldHandleKeyboardEvents];
-  const items1 = [onBlur, shouldHandleKeyboardEvents];
-  const tmp = callback(onFocus, closure_2);
-  const items2 = [shouldHandleKeyboardEvents];
-  const tmp2 = callback2((arg0) => {
-    shouldHandleKeyboardEvents.value = true;
-    if (onFocus) {
-      onFocus(arg0);
-    }
+const require = arg1;
+let closure_2 = ["focusHook", "enableFooterMarginAdjustment", "onLayout", "style", "children"];
+({ useEffect: closure_4, useCallback: closure_5, useMemo: closure_6, memo } = result);
+const memoResult = memo(function BottomSheetViewComponent(focusHook) {
+  let children;
+  let style;
+  focusHook = focusHook.focusHook;
+  if (undefined === focusHook) {
+    focusHook = animatedContentHeight;
+  }
+  const enableFooterMarginAdjustment = focusHook.enableFooterMarginAdjustment;
+  let onLayout = focusHook.onLayout;
+  ({ style, children } = focusHook);
+  const tmp = undefined !== enableFooterMarginAdjustment && enableFooterMarginAdjustment;
+  const tmp2 = enableDynamicSizing(focusHook, animatedScrollableType);
+  const bottomSheetInternal = onLayout(animatedScrollableContentOffsetY[4]).useBottomSheetInternal();
+  animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
+  animatedScrollableType = bottomSheetInternal.animatedScrollableType;
+  enableDynamicSizing = bottomSheetInternal.enableDynamicSizing;
+  animatedContentHeight = bottomSheetInternal.animatedContentHeight;
+  const obj = onLayout(animatedScrollableContentOffsetY[4]);
+  const bottomSheetContentContainerStyle = onLayout(animatedScrollableContentOffsetY[4]).useBottomSheetContentContainerStyle(tmp, style);
+  let items = [bottomSheetContentContainerStyle];
+  const items1 = [animatedScrollableContentOffsetY, animatedScrollableType];
+  style = callback(() => {
+    const items = [bottomSheetContentContainerStyle, onLayout(animatedScrollableContentOffsetY[5]).styles.container];
+    return items;
   }, items);
-  callback3(() => () => {
-    closure_2.value = false;
+  const items2 = [onLayout, animatedContentHeight, enableDynamicSizing];
+  const obj2 = onLayout(animatedScrollableContentOffsetY[4]);
+  onLayout = bottomSheetContentContainerStyle((nativeEvent) => {
+    if (enableDynamicSizing) {
+      const result = animatedContentHeight.set(nativeEvent.nativeEvent.layout.height);
+    }
+    if (onLayout) {
+      onLayout(nativeEvent);
+    }
   }, items2);
-  obj = {
-    ref,
-    onFocus: tmp2,
-    onBlur: callback2((arg0) => {
-      shouldHandleKeyboardEvents.value = false;
-      if (onBlur) {
-        onBlur(arg0);
-      }
-    }, items1)
-  };
-  return jsx(ref(dependencyMap[4]).TextInput, Object.assign(obj, tmp));
-}));
-memoResult.displayName = "BottomSheetTextInput";
+  focusHook(bottomSheetContentContainerStyle(() => {
+    animatedScrollableContentOffsetY.value = 0;
+    animatedScrollableType.value = onLayout(animatedScrollableContentOffsetY[6]).SCROLLABLE_TYPE.VIEW;
+  }, items1));
+  return <View {...Object.assign({}, tmp2, { onLayout, style, children })} />;
+});
+memoResult.displayName = "BottomSheetView";
 
 export default memoResult;

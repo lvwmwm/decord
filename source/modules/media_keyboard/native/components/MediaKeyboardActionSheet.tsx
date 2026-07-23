@@ -1,15 +1,17 @@
-// Module ID: 9647
-// Function ID: 75177
+// Module ID: 9654
+// Function ID: 75218
 // Name: MediaKeyboardActionSheet
-// Dependencies: []
+// Dependencies: [31, 1552, 653, 33, 3991, 1212, 9655, 9657, 9659, 4099, 4100, 675, 4559, 9661, 4644, 5187, 1553, 9662, 2]
 // Exports: default
 
-// Module 9647 (MediaKeyboardActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).MediaPickerActionSheetEngagedActions;
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardActionSheet.tsx");
+// Module 9654 (MediaKeyboardActionSheet)
+import result from "result";
+import { MediaPickerActionSheetEngagedActions as closure_4 } from "DRAG_HANDLE";
+import { AnalyticEvents } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("ME").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardActionSheet.tsx");
 
 export default function MediaKeyboardActionSheet(onAttachPress) {
   let allowCamera;
@@ -24,19 +26,14 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
   let onPressItem;
   let uploadLimit;
   onAttachPress = onAttachPress.onAttachPress;
-  const arg1 = onAttachPress;
   const onViewAll = onAttachPress.onViewAll;
-  const importDefault = onViewAll;
   const onClose = onAttachPress.onClose;
-  const dependencyMap = onClose;
   const onBack = onAttachPress.onBack;
-  const React = onBack;
   ({ channel, draftType, uploadLimit, disableWhenReachedLimit, includedUploadIds, extensions, allowCamera, onPressCamera, onPressItem, onLongPressItem, onManageLimited } = onAttachPress);
-  let obj = arg1(dependencyMap[4]);
+  let obj = onAttachPress(onClose[4]);
   const sharedValue = obj.useSharedValue(-1);
-  let closure_4 = sharedValue;
-  const items = [onAttachPress];
-  const memo = React.useMemo(() => {
+  let items = [onAttachPress];
+  const memo = onBack.useMemo(() => {
     let obj = {};
     const intl = onAttachPress(onClose[5]).intl;
     obj.text = intl.string(onAttachPress(onClose[5]).t.RgIi2B);
@@ -48,42 +45,42 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
     const items = [obj, ];
     obj = {};
     const intl2 = onAttachPress(onClose[5]).intl;
-    obj.text = intl2.string(onAttachPress(onClose[5]).t.8Hvr3+);
+    obj.text = intl2.string(onAttachPress(onClose[5]).t["8Hvr3+"]);
     obj.IconComponent = onAttachPress(onClose[7]).AttachmentIcon;
     obj.onPress = onAttachPress;
     obj.disabled = false;
     items[1] = obj;
     return items;
   }, items);
-  const AnalyticEvents = memo;
   const items1 = [sharedValue, onBack];
-  const callback = React.useCallback(() => callback2(onViewAll(onClose[8]), { animatedIndex: sharedValue, onPress: onBack }), items1);
+  const callback = onBack.useCallback(() => callback2(onViewAll(onClose[8]), { animatedIndex: sharedValue, onPress: onBack }), items1);
   const items2 = [onClose];
-  const callback1 = React.useCallback(() => {
+  const callback1 = onBack.useCallback(() => {
     let obj = onAttachPress(onClose[9]);
     const result = obj.triggerHapticFeedback(onViewAll(onClose[10]).IMPACT_LIGHT);
     obj = { action: sharedValue.FULLY_EXPANDED };
     onViewAll(onClose[11]).track(memo.MEDIA_PICKER_ACTION_SHEET_ENGAGED, obj);
   }, []);
-  const callback2 = React.useCallback(() => {
+  const callback2 = onBack.useCallback(() => {
     if (null != onClose) {
       onClose();
     }
   }, items2);
-  const jsx = callback2;
-  importDefault(dependencyMap[12])(() => () => {
+  onViewAll(onClose[12])(() => () => {
     let tmp;
-    if (null != callback) {
-      tmp = callback();
+    if (null != outer1_6) {
+      tmp = outer1_6();
     }
     return tmp;
   });
   const items3 = [onViewAll, memo];
-  const memo1 = React.useMemo(() => {
+  const memo1 = onBack.useMemo(() => {
     let obj = {
+      canPostPolls: false,
       onHeightChange() {
 
-      }
+      },
+      uploadDisabled: false
     };
     obj = {};
     const intl = onAttachPress(onClose[5]).intl;
@@ -91,10 +88,10 @@ export default function MediaKeyboardActionSheet(onAttachPress) {
     obj.IconComponent = onAttachPress(onClose[14]).ImageIcon;
     obj.onPress = onViewAll;
     obj.disabled = false;
-    const items = [obj, ...closure_5];
+    const items = [obj, ...memo];
     obj.overflowButtons = items;
     return callback2(onViewAll(onClose[13]), obj);
   }, items3);
-  obj = { handleComponent: callback, scrollable: true, startExpanded: arg1(dependencyMap[16]).isMetaQuest(), onExpand: callback1, onDismiss: callback2, animatedIndex: sharedValue, footer: memo1, children: jsx(importDefault(dependencyMap[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit }) };
-  return jsx(arg1(dependencyMap[15]).BottomSheet, obj);
+  obj = { handleComponent: callback, scrollable: true, startExpanded: onAttachPress(onClose[16]).isMetaQuest(), onExpand: callback1, onDismiss: callback2, animatedIndex: sharedValue, footer: memo1, children: callback2(onViewAll(onClose[17]), { channel, draftType, onPressCamera, onAttachPress, onPressItem, onLongPressItem, onViewAll, onManageLimited, includedUploadIds, extensions, allowCamera, uploadLimit, disableWhenReachedLimit }) };
+  return callback2(onAttachPress(onClose[15]).BottomSheet, obj);
 };

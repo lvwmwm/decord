@@ -1,25 +1,27 @@
-// Module ID: 15643
-// Function ID: 119434
+// Module ID: 15760
+// Function ID: 121607
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1557, 668, 9380, 7951, 2]
 // Exports: default
 
-// Module 15643 (PremiumSoundboardFeatureUpsell)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles((arg0) => {
+// Module 15760 (PremiumSoundboardFeatureUpsell)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { bottom: arg0 + importDefault(dependencyMap[4]).space.PX_12, marginHorizontal: importDefault(dependencyMap[4]).space.PX_12 };
+  obj = { position: "absolute", bottom: arg0 + importDefault(689).space.PX_12, left: 0, right: 0, marginHorizontal: importDefault(689).space.PX_12 };
   obj.container = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumSoundboardFeatureUpsell.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumSoundboardFeatureUpsell.tsx");
 
 export default function PremiumSoundboardFeatureUpsell(shouldShow) {
-  let obj = { style: callback(arg1(dependencyMap[6]).EXPRESSION_FOOTER_HEIGHT + importDefault(dependencyMap[5])().bottom).container };
-  obj = { shouldShow: shouldShow.shouldShow, featureName: arg1(dependencyMap[8]).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE };
-  obj.children = jsx(importDefault(dependencyMap[7]), obj);
-  return <View {...obj} />;
+  let obj = { style: callback(require(668) /* keys */.EXPRESSION_FOOTER_HEIGHT + importDefault(1557)().bottom).container };
+  obj = { shouldShow: shouldShow.shouldShow, featureName: require(7951) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE };
+  obj.children = jsx(importDefault(9380), { shouldShow: shouldShow.shouldShow, featureName: require(7951) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE });
+  return <View shouldShow={arg0.shouldShow} featureName={require(7951) /* EntitlementFeatureNames */.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE} />;
 };

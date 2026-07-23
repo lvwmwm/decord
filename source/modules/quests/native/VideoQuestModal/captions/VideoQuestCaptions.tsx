@@ -1,48 +1,47 @@
-// Module ID: 13927
-// Function ID: 105857
+// Module ID: 14041
+// Function ID: 108013
 // Name: VideoQuestCaptions
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 666, 14042, 14044, 4533, 4126, 2]
 // Exports: VideoQuestCaptions
 
-// Module 13927 (VideoQuestCaptions)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { bottom: importDefault(dependencyMap[4]).space.PX_32, left: importDefault(dependencyMap[4]).space.PX_16, right: importDefault(dependencyMap[4]).space.PX_16 };
-obj.container = obj;
-const obj1 = {};
-const importDefaultResult = importDefault(dependencyMap[5]);
-const importDefaultResultResult = importDefault(dependencyMap[5])(importDefault(dependencyMap[4]).unsafe_rawColors.BLACK);
-obj1.backgroundColor = importDefault(dependencyMap[5])(importDefault(dependencyMap[4]).unsafe_rawColors.BLACK).alpha(0.35).hex();
-obj1.padding = importDefault(dependencyMap[4]).space.PX_8;
-obj1.borderRadius = importDefault(dependencyMap[4]).radii.sm;
+// Module 14041 (VideoQuestCaptions)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "t";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { position: "absolute", bottom: require("_createForOfIteratorHelperLoose").space.PX_32, left: require("_createForOfIteratorHelperLoose").space.PX_16, right: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", justifyContent: "flex-end" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = {};
+const importDefaultResultResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK);
+obj1.backgroundColor = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK).alpha(0.35).hex();
+obj1.padding = require("_createForOfIteratorHelperLoose").space.PX_8;
+obj1.borderRadius = require("_createForOfIteratorHelperLoose").radii.sm;
 obj1.overflow = "hidden";
-obj.captionBox = obj1;
-const alphaResult = importDefault(dependencyMap[5])(importDefault(dependencyMap[4]).unsafe_rawColors.BLACK).alpha(0.35);
-obj.captionText = { color: importDefault(dependencyMap[4]).colors.WHITE, textAlign: "center" };
-let closure_6 = obj.createStyles(obj);
-const obj2 = { color: importDefault(dependencyMap[4]).colors.WHITE, textAlign: "center" };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VideoQuestCaptions.tsx");
+_createForOfIteratorHelperLoose.captionBox = obj1;
+const alphaResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK).alpha(0.35);
+_createForOfIteratorHelperLoose.captionText = { color: require("_createForOfIteratorHelperLoose").colors.WHITE, textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj2 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE, textAlign: "center" };
+const result = require("jsxProd").fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VideoQuestCaptions.tsx");
 
 export const VideoQuestCaptions = function VideoQuestCaptions(currentTime) {
   let quest;
   let style;
   currentTime = currentTime.currentTime;
-  const arg1 = currentTime;
   let flag = currentTime.visible;
   ({ quest, style } = currentTime);
   if (flag === undefined) {
     flag = true;
   }
-  const importDefault = flag;
-  let dependencyMap;
-  const tmp = callback();
-  let obj = arg1(dependencyMap[6]);
+  let captions;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = currentTime(captions[6]);
   const videoQuestCaptions = obj.useVideoQuestCaptions(quest);
-  const captions = videoQuestCaptions.captions;
-  dependencyMap = captions;
+  captions = videoQuestCaptions.captions;
   const items = [captions, currentTime, flag];
   const memo = React.useMemo(() => {
     let findActiveCaptionResult = null;
@@ -59,15 +58,15 @@ export const VideoQuestCaptions = function VideoQuestCaptions(currentTime) {
   if ("success" === videoQuestCaptions.status) {
     tmp4 = null;
     if (null != memo) {
-      obj = {};
+      obj = { style: null, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", accessible: false };
       const items1 = [tmp.container, style];
       obj.style = items1;
-      obj = { style: tmp.captionBox };
+      obj = { style: tmp.captionBox, blurTheme: "dark", blurStyle: "default", blurAmount: 0.2 };
       const obj1 = { variant: "heading-sm/medium", style: tmp.captionText, children: memo.text };
-      obj.children = jsx(arg1(dependencyMap[9]).Text, obj1);
-      obj.children = jsx(importDefault(dependencyMap[8]), obj);
-      tmp4 = <View {...obj} />;
-      const tmp9 = importDefault(dependencyMap[8]);
+      obj.children = jsx(currentTime(captions[9]).Text, { variant: "heading-sm/medium", style: tmp.captionText, children: memo.text });
+      obj.children = jsx(flag(captions[8]), { style: tmp.captionBox, blurTheme: "dark", blurStyle: "default", blurAmount: 0.2 });
+      tmp4 = <View style={tmp.captionBox} blurTheme="dark" blurStyle="default" blurAmount={0.2} />;
+      const tmp9 = flag(captions[8]);
     }
   }
   return tmp4;

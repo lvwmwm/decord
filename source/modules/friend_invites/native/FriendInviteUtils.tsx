@@ -1,32 +1,34 @@
-// Module ID: 15861
-// Function ID: 121359
+// Module ID: 15978
+// Function ID: 123532
 // Name: handleInviteAccepted
-// Dependencies: []
+// Dependencies: [1348, 3767, 7460, 3831, 1212, 10332, 686, 10886, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 15861 (handleInviteAccepted)
+// Module 15978 (handleInviteAccepted)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function handleInviteAccepted() {
-  importDefault(dependencyMap[6]).wait(() => callback(closure_2[7])());
+  importDefault(686).wait(() => outer1_1(outer1_2[7])());
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/friend_invites/native/FriendInviteUtils.tsx");
+let result = require("generateAcceptInviteOptions").fileFinishedImporting("modules/friend_invites/native/FriendInviteUtils.tsx");
 
 export const DEFAULT_EXPIRATION_DAYS = 7;
 export const DEFAULT_EXPIRATION_USES = 5;
 export const revokeAllFriendInvites = function revokeAllFriendInvites() {
-  const obj = importDefault(dependencyMap[2]);
-  importDefault(dependencyMap[2]).revokeFriendInvites().then(() => {
-    let obj = callback2(closure_2[3]);
+  let obj = importDefault(7460);
+  importDefault(7460).revokeFriendInvites().then(() => {
+    let obj = outer1_1(outer1_2[3]);
     obj = { key: "TOAST_FRIEND_INVITES_REVOKED" };
-    const intl = callback(closure_2[4]).intl;
-    obj.content = intl.string(callback(closure_2[4]).t.jSHEOQ);
-    obj.icon = callback2(closure_2[5]);
+    const intl = outer1_0(outer1_2[4]).intl;
+    obj.content = intl.string(outer1_0(outer1_2[4]).t.jSHEOQ);
+    obj.icon = outer1_1(outer1_2[5]);
     obj.open(obj);
   });
 };
 export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
-  context = invite;
+  let closure_0 = invite;
   if (tmp) {
     let dMFromUserId = null;
     if (friend.isFriend(invite.inviter.id)) {
@@ -34,29 +36,29 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
     }
     if (null != dMFromUserId) {
       let obj = { forceTransition: true };
-      importDefault(dependencyMap[2]).transitionToInvite(invite, obj);
+      importDefault(7460).transitionToInvite(invite, obj);
       handleInviteAccepted();
-      const obj3 = importDefault(dependencyMap[2]);
+      const obj3 = importDefault(7460);
     } else {
-      obj = importDefault(dependencyMap[2]);
+      obj = importDefault(7460);
       obj = {
         inviteKey: invite.code,
         context,
         callback() {
-              let obj = callback(closure_2[3]);
+              let obj = outer1_1(outer1_2[3]);
               obj = { key: "FRIEND_INVITE_ACCEPT_CONFIRMATION" };
-              const intl = arg0(closure_2[4]).intl;
+              const intl = invite(outer1_2[4]).intl;
               obj = {};
-              const inviter = arg0.inviter;
+              const inviter = invite.inviter;
               let username;
               if (null != inviter) {
                 username = inviter.username;
               }
               obj.username = username;
-              obj.content = intl.formatToPlainString(arg0(closure_2[4]).t.st2dcs, obj);
-              obj.icon = callback(closure_2[5]);
+              obj.content = intl.formatToPlainString(invite(outer1_2[4]).t.st2dcs, obj);
+              obj.icon = outer1_1(outer1_2[5]);
               obj.open(obj);
-              callback2();
+              outer1_5();
             }
       };
       const result = obj.acceptInviteAndTransitionToInviteChannel(obj);

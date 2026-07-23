@@ -1,13 +1,13 @@
-// Module ID: 6287
-// Function ID: 50363
+// Module ID: 6292
+// Function ID: 50392
 // Name: MapleIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6293, 2]
 // Exports: MapleIllocon
 
-// Module 6287 (MapleIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/MapleIllocon.native.tsx");
+// Module 6292 (MapleIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MapleIllocon.native.tsx");
 
 export const MapleIllocon = function MapleIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const MapleIllocon = function MapleIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6293) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const MapleIllocon = function MapleIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

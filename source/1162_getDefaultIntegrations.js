@@ -1,77 +1,79 @@
 // Module ID: 1162
-// Function ID: 13206
+// Function ID: 13207
 // Name: getDefaultIntegrations
-// Dependencies: []
+// Dependencies: [978, 788, 1000, 1163]
 
 // Module 1162 (getDefaultIntegrations)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.getDefaultIntegrations = function getDefaultIntegrations(patchGlobalPromise) {
   const items = [];
-  let obj = arg1(arg6[0]);
+  let obj = require(978) /* isHermesEnabled */;
   const push = items.push;
-  const obj2 = arg1(arg6[1]);
+  const obj2 = require(788) /* debugSymbolicatorIntegration */;
   if (notWebResult) {
     obj = { patchGlobalPromise: patchGlobalPromise.patchGlobalPromise };
     push(obj2.reactNativeErrorHandlersIntegration(obj));
-    let tmp2Result = tmp2(tmp3[1]);
+    let tmp2Result = tmp2(788);
     items.push(tmp2Result.nativeLinkedErrorsIntegration());
   } else {
     push(obj2.browserApiErrorsIntegration());
-    tmp2Result = tmp2(tmp3[1]);
+    tmp2Result = tmp2(788);
     items.push(tmp2Result.browserGlobalHandlersIntegration());
-    items.push(tmp2(tmp3[1]).browserLinkedErrorsIntegration());
+    items.push(tmp2(788).browserLinkedErrorsIntegration());
     if (patchGlobalPromise.enableAutoSessionTracking) {
-      items.push(arg1(arg6[2]).browserSessionIntegration());
-      const obj5 = arg1(arg6[2]);
+      items.push(require(1000) /* keys */.browserSessionIntegration());
+      const obj5 = require(1000) /* keys */;
     }
-    const tmp2Result1 = tmp2(tmp3[1]);
+    const tmp2Result1 = tmp2(788);
   }
-  const notWebResult = obj.notWeb();
-  items.push(arg1(arg6[1]).inboundFiltersIntegration());
-  const obj8 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).functionToStringIntegration());
-  const obj9 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).breadcrumbsIntegration());
-  const obj10 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).dedupeIntegration());
-  const obj11 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).httpContextIntegration());
-  const obj12 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).nativeReleaseIntegration());
-  const obj13 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).eventOriginIntegration());
-  const obj14 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).sdkInfoIntegration());
-  const obj15 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).reactNativeInfoIntegration());
-  const obj16 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).createReactNativeRewriteFrames());
+  notWebResult = obj.notWeb();
+  items.push(require(788) /* debugSymbolicatorIntegration */.inboundFiltersIntegration());
+  const obj8 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.functionToStringIntegration());
+  const obj9 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.breadcrumbsIntegration());
+  const obj10 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.dedupeIntegration());
+  const obj11 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.httpContextIntegration());
+  const obj12 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.nativeReleaseIntegration());
+  const obj13 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.eventOriginIntegration());
+  const obj14 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.sdkInfoIntegration());
+  const obj15 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.reactNativeInfoIntegration());
+  const obj16 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.createReactNativeRewriteFrames());
   if (patchGlobalPromise.enableNative) {
-    items.push(arg1(arg6[1]).deviceContextIntegration());
-    const obj18 = arg1(arg6[1]);
-    items.push(arg1(arg6[1]).modulesLoaderIntegration());
+    items.push(require(788) /* debugSymbolicatorIntegration */.deviceContextIntegration());
+    const obj18 = require(788) /* debugSymbolicatorIntegration */;
+    items.push(require(788) /* debugSymbolicatorIntegration */.modulesLoaderIntegration());
     let enableLogs = patchGlobalPromise.enableLogs;
     if (enableLogs) {
       enableLogs = "native" !== patchGlobalPromise.logsOrigin;
     }
     if (enableLogs) {
-      items.push(arg1(arg6[1]).logEnricherIntegration());
-      const obj20 = arg1(arg6[1]);
-      items.push(arg1(arg6[2]).consoleLoggingIntegration());
-      const obj21 = arg1(arg6[2]);
+      items.push(require(788) /* debugSymbolicatorIntegration */.logEnricherIntegration());
+      const obj20 = require(788) /* debugSymbolicatorIntegration */;
+      items.push(require(1000) /* keys */.consoleLoggingIntegration());
+      const obj21 = require(1000) /* keys */;
     }
     if (patchGlobalPromise.attachScreenshot) {
-      items.push(arg1(arg6[1]).screenshotIntegration());
-      const obj22 = arg1(arg6[1]);
+      items.push(require(788) /* debugSymbolicatorIntegration */.screenshotIntegration());
+      const obj22 = require(788) /* debugSymbolicatorIntegration */;
     }
     if (patchGlobalPromise.attachViewHierarchy) {
-      items.push(arg1(arg6[1]).viewHierarchyIntegration());
-      const obj23 = arg1(arg6[1]);
+      items.push(require(788) /* debugSymbolicatorIntegration */.viewHierarchyIntegration());
+      const obj23 = require(788) /* debugSymbolicatorIntegration */;
     }
     if ("number" === typeof patchGlobalPromise.profilesSampleRate) {
-      items.push(arg1(arg6[1]).hermesProfilingIntegration());
-      const obj24 = arg1(arg6[1]);
+      items.push(require(788) /* debugSymbolicatorIntegration */.hermesProfilingIntegration());
+      const obj24 = require(788) /* debugSymbolicatorIntegration */;
     }
-    const obj19 = arg1(arg6[1]);
+    const obj19 = require(788) /* debugSymbolicatorIntegration */;
   }
   let tmp39 = "number" === typeof patchGlobalPromise.tracesSampleRate;
   if (!tmp39) {
@@ -85,10 +87,10 @@ arg5.getDefaultIntegrations = function getDefaultIntegrations(patchGlobalPromise
     enableNative = patchGlobalPromise.enableNative;
   }
   if (enableNative) {
-    items.push(arg1(arg6[1]).appStartIntegration());
-    const obj25 = arg1(arg6[1]);
+    items.push(require(788) /* debugSymbolicatorIntegration */.appStartIntegration());
+    const obj25 = require(788) /* debugSymbolicatorIntegration */;
   }
-  const obj17 = arg1(arg6[1]);
+  const obj17 = require(788) /* debugSymbolicatorIntegration */;
   let enableNative2 = tmp39;
   if (tmp39) {
     enableNative2 = patchGlobalPromise.enableNativeFramesTracking;
@@ -96,7 +98,7 @@ arg5.getDefaultIntegrations = function getDefaultIntegrations(patchGlobalPromise
   if (enableNative2) {
     enableNative2 = patchGlobalPromise.enableNative;
   }
-  const nativeFramesIntegrations = arg1(arg6[1]).createNativeFramesIntegrations(enableNative2);
+  const nativeFramesIntegrations = require(788) /* debugSymbolicatorIntegration */.createNativeFramesIntegrations(enableNative2);
   if (nativeFramesIntegrations) {
     items.push(nativeFramesIntegrations);
   }
@@ -105,45 +107,45 @@ arg5.getDefaultIntegrations = function getDefaultIntegrations(patchGlobalPromise
     enableStallTracking = patchGlobalPromise.enableStallTracking;
   }
   if (enableStallTracking) {
-    items.push(arg1(arg6[1]).stallTrackingIntegration());
-    const obj27 = arg1(arg6[1]);
+    items.push(require(788) /* debugSymbolicatorIntegration */.stallTrackingIntegration());
+    const obj27 = require(788) /* debugSymbolicatorIntegration */;
   }
   let enableUserInteractionTracing = tmp39;
   if (tmp39) {
     enableUserInteractionTracing = patchGlobalPromise.enableUserInteractionTracing;
   }
   if (enableUserInteractionTracing) {
-    items.push(arg1(arg6[1]).userInteractionIntegration());
-    const obj28 = arg1(arg6[1]);
+    items.push(require(788) /* debugSymbolicatorIntegration */.userInteractionIntegration());
+    const obj28 = require(788) /* debugSymbolicatorIntegration */;
   }
   let enableAutoPerformanceTracing = tmp39;
   if (tmp39) {
     enableAutoPerformanceTracing = patchGlobalPromise.enableAutoPerformanceTracing;
   }
   if (enableAutoPerformanceTracing) {
-    items.push(arg1(arg6[1]).appRegistryIntegration());
-    const obj29 = arg1(arg6[1]);
-    items.push(arg1(arg6[3]).reactNativeTracingIntegration());
-    const obj30 = arg1(arg6[3]);
+    items.push(require(788) /* debugSymbolicatorIntegration */.appRegistryIntegration());
+    const obj29 = require(788) /* debugSymbolicatorIntegration */;
+    items.push(require(1163) /* reactNativeTracingIntegration */.reactNativeTracingIntegration());
+    const obj30 = require(1163) /* reactNativeTracingIntegration */;
   }
   if (tmp39) {
-    items.push(arg1(arg6[1]).timeToDisplayIntegration());
-    const obj31 = arg1(arg6[1]);
+    items.push(require(788) /* debugSymbolicatorIntegration */.timeToDisplayIntegration());
+    const obj31 = require(788) /* debugSymbolicatorIntegration */;
   }
   if (patchGlobalPromise.enableCaptureFailedRequests) {
-    items.push(arg1(arg6[1]).httpClientIntegration());
-    const obj32 = arg1(arg6[1]);
+    items.push(require(788) /* debugSymbolicatorIntegration */.httpClientIntegration());
+    const obj32 = require(788) /* debugSymbolicatorIntegration */;
   }
-  const obj26 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).expoContextIntegration());
+  const obj26 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.expoContextIntegration());
   if (patchGlobalPromise.spotlight) {
     let spotlight;
     if ("string" === typeof patchGlobalPromise.spotlight) {
       spotlight = patchGlobalPromise.spotlight;
     }
     obj = { sidecarUrl: spotlight };
-    items.push(arg1(arg6[1]).spotlightIntegration(obj));
-    const obj34 = arg1(arg6[1]);
+    items.push(require(788) /* debugSymbolicatorIntegration */.spotlightIntegration(obj));
+    const obj34 = require(788) /* debugSymbolicatorIntegration */;
   }
   let notWebResult1 = "number" === typeof patchGlobalPromise.replaysOnErrorSampleRate || "number" === typeof patchGlobalPromise.replaysSessionSampleRate;
   let tmp67 = patchGlobalPromise._experiments && "number" === typeof patchGlobalPromise._experiments.replaysOnErrorSampleRate;
@@ -177,14 +179,14 @@ arg5.getDefaultIntegrations = function getDefaultIntegrations(patchGlobalPromise
     notWebResult1 = tmp67;
   }
   if (notWebResult1) {
-    notWebResult1 = arg1(arg6[0]).notWeb();
-    const obj36 = arg1(arg6[0]);
+    notWebResult1 = require(978) /* isHermesEnabled */.notWeb();
+    const obj36 = require(978) /* isHermesEnabled */;
   }
   if (notWebResult1) {
-    items.push(arg1(arg6[1]).mobileReplayIntegration());
-    const obj37 = arg1(arg6[1]);
+    items.push(require(788) /* debugSymbolicatorIntegration */.mobileReplayIntegration());
+    const obj37 = require(788) /* debugSymbolicatorIntegration */;
   }
-  const obj33 = arg1(arg6[1]);
-  items.push(arg1(arg6[1]).primitiveTagIntegration());
+  const obj33 = require(788) /* debugSymbolicatorIntegration */;
+  items.push(require(788) /* debugSymbolicatorIntegration */.primitiveTagIntegration());
   return items;
 };

@@ -1,27 +1,29 @@
 // Module ID: 1036
-// Function ID: 11168
+// Function ID: 11169
 // Name: onHidden
-// Dependencies: []
+// Dependencies: [1015, 1017]
 
 // Module 1036 (onHidden)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.onHidden = function onHidden(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   function onHiddenOrPageHide(type) {
     let tmp = "pagehide" !== type.type;
     if (tmp) {
       let visibilityState;
-      const _document = type(closure_1[0]).WINDOW.document;
+      const _document = callback(outer1_1[0]).WINDOW.document;
       if (null != _document) {
         visibilityState = _document.visibilityState;
       }
       tmp = "hidden" !== visibilityState;
     }
     if (!tmp) {
-      type(type);
+      callback(type);
     }
   }
-  arg1(arg6[1]).addPageListener("visibilitychange", onHiddenOrPageHide, { color: null, date: null });
-  const obj = arg1(arg6[1]);
-  arg1(arg6[1]).addPageListener("pagehide", onHiddenOrPageHide, { color: null, date: null });
+  _require(1017).addPageListener("visibilitychange", onHiddenOrPageHide, { capture: true, once: true });
+  const obj = _require(1017);
+  _require(1017).addPageListener("pagehide", onHiddenOrPageHide, { capture: true, once: true });
 };

@@ -1,31 +1,31 @@
-// Module ID: 7759
-// Function ID: 61616
+// Module ID: 7765
+// Function ID: 61653
 // Name: importDefaultResult1
-// Dependencies: []
+// Dependencies: [653, 664, 1362, 4120, 7766, 7779, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 7759 (importDefaultResult1)
-const MessageTypes = require(dependencyMap[0]).MessageTypes;
-let obj = { maxAge: 15 * importDefault(dependencyMap[1]).Millis.MINUTE };
-let importDefaultResult = importDefault(dependencyMap[2]);
+// Module 7765 (importDefaultResult1)
+import { MessageTypes } from "ME";
+import importDefaultResult from "priv";
+import importDefaultResult1 from "priv";
+import importDefaultResult2 from "priv";
+import importDefaultResult3 from "priv";
+
+let obj = { max: Infinity, maxAge: 15 * require("set").Millis.MINUTE, updateAgeOnGet: true };
 importDefaultResult = new importDefaultResult(obj);
-let importDefaultResult1 = importDefault(dependencyMap[2]);
 importDefaultResult1 = new importDefaultResult1(obj);
-let importDefaultResult2 = importDefault(dependencyMap[2]);
 obj = {};
-const merged = Object.assign(obj);
+let merged = Object.assign(obj);
 obj["updateAgeOnGet"] = false;
 importDefaultResult2 = new importDefaultResult2(obj);
-let importDefaultResult3 = importDefault(dependencyMap[2]);
 importDefaultResult3 = new importDefaultResult3(obj);
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/MarkupParsers.tsx");
+let result = require("priv").fileFinishedImporting("modules/messages/native/renderer/MarkupParsers.tsx");
 
 export const parseEmbedTitleMarkup = function parseEmbedTitleMarkup(rawName, closure_0) {
   const combined = "" + rawName + "-" + closure_0;
   let value = importDefaultResult.get(combined);
   if (null == value) {
-    let obj = importDefault(dependencyMap[3]);
+    let obj = importDefault(4120);
     obj = { channelId: closure_0 };
     const parseEmbedTitleToASTResult = obj.parseEmbedTitleToAST(rawName, true, obj);
     const result = importDefaultResult.set(combined, parseEmbedTitleToASTResult);
@@ -37,7 +37,7 @@ export const parseEmbedTitleMarkupWithoutLinks = function parseEmbedTitleMarkupW
   const combined = "" + arg0 + "-" + channelId + "-nolinks";
   let value = importDefaultResult1.get(combined);
   if (null == value) {
-    let obj = importDefault(dependencyMap[3]);
+    let obj = importDefault(4120);
     obj = { channelId };
     const result = obj.parseEmbedTitleWithoutLinksToAST(arg0, true, obj);
     const result1 = importDefaultResult1.set(combined, result);
@@ -70,10 +70,10 @@ export const parseEmbedDescriptionMarkup = function parseEmbedDescriptionMarkup(
     while (keys[tmp] !== undefined) {
       let tmp10 = tmp6;
       replaced = replaced.replaceAll(tmp6, replaceMap[tmp6]);
-      // continue
+      continue;
     }
   }
-  const obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, channelId };
+  const obj = { channelId, allowGameMentions: true, allowLinks: true, allowEmojiLinks: true };
   let tmp7 = !isField;
   if (tmp7) {
     tmp7 = showListsAndHeaders;
@@ -81,7 +81,7 @@ export const parseEmbedDescriptionMarkup = function parseEmbedDescriptionMarkup(
   obj.allowHeading = tmp7;
   obj.allowList = showListsAndHeaders;
   obj.previewLinkTarget = showMaskedLinks;
-  const parseToASTResult = importDefault(dependencyMap[3]).parseToAST(tmp4, true, obj);
+  const parseToASTResult = importDefault(4120).parseToAST(tmp4, true, obj);
   const result = importDefaultResult2.set(combined, parseToASTResult);
   return parseToASTResult;
 };
@@ -110,7 +110,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   }
   if (message.type !== MessageTypes.CHANGELOG) {
     let obj = {};
-    let obj1 = require(dependencyMap[5]);
+    let obj1 = require(7779) /* getInitialParserStateFromMessage */;
     obj = { contentMessage: message2, hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowGameMentions: true };
     let tmp5 = flag2;
     if (!flag2) {
@@ -128,11 +128,11 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
     obj["isInlineReplyPreview"] = flag;
     result = importDefaultResult3.set(message, obj);
   }
-  obj = {};
-  const obj5 = importDefault(dependencyMap[3]);
+  obj = { content: null, isInlineReplyPreview: false, hasSpoilerEmbeds: false, hasBailedAst: false };
+  const obj5 = importDefault(4120);
   obj1 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag };
   flag = flag2;
-  const obj6 = require(dependencyMap[4]);
+  const obj6 = require(7766) /* LHeading */;
   if (!flag2) {
     flag = flag3;
   }
@@ -143,7 +143,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   obj1.allowList = flag2;
   obj1.allowLinks = flag4;
   obj1.previewLinkTarget = flag4;
-  obj.content = obj5.astParserFor(require(dependencyMap[4]).changelogRules(message.changelogId, true))(message.content, false, obj1);
+  obj.content = obj5.astParserFor(require(7766) /* LHeading */.changelogRules(message.changelogId, true))(message.content, false, obj1);
   flag4 = importDefaultResult3;
   const result1 = importDefaultResult3.set(message, obj);
 };

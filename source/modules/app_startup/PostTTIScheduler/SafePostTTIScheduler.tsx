@@ -1,26 +1,25 @@
-// Module ID: 6904
-// Function ID: 55021
+// Module ID: 6909
+// Function ID: 55055
 // Name: waitSafelyForPostTTI
-// Dependencies: []
+// Dependencies: [6910, 2]
 // Exports: waitSafelyForPostTTI
 
-// Module 6904 (waitSafelyForPostTTI)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx");
+// Module 6909 (waitSafelyForPostTTI)
+const result = require("set").fileFinishedImporting("modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx");
 
 export const waitSafelyForPostTTI = function waitSafelyForPostTTI(arg0) {
   let num = arg0;
   if (arg0 === undefined) {
     num = 4000;
   }
-  const require = num;
   return new Promise((arg0) => {
+    let closure_0 = arg0;
     const timeout = setTimeout(() => {
-      arg0();
-    }, num);
-    arg0(timeout[0]).schedulePostTTIEvent(() => {
+      callback();
+    }, closure_0);
+    num(outer1_1[0]).schedulePostTTIEvent(() => {
       clearTimeout(closure_1);
-      arg0();
+      callback();
     });
   });
 };

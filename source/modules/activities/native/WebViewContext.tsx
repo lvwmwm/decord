@@ -1,25 +1,27 @@
-// Module ID: 10597
-// Function ID: 82716
+// Module ID: 10607
+// Function ID: 82766
 // Name: context
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 2]
 // Exports: WebViewContextProvider
 
-// Module 10597 (context)
-import context from "module_0";
+// Module 10607 (context)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import context from "_slicedToArray";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-let closure_0 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[4]).createStyles({ placeholderWebView: {} });
-const obj2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/native/WebViewContext.tsx");
+let closure_3;
+let closure_4;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ placeholderWebView: { width: 2, height: 2, position: "absolute", opacity: 0 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/activities/native/WebViewContext.tsx");
 
 export const WebViewContext = context;
 export const WebViewContextProvider = function WebViewContextProvider(children) {
   const tmp2 = callback(importAllResult.useState(0), 2);
-  const callback = tmp3;
+  callback = tmp3;
   const items = [tmp2[1]];
   let obj = { value: tmp2[0] };
   obj = {

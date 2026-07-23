@@ -1,9 +1,16 @@
 // Module ID: 354
 // Function ID: 5227
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 355, 44, 39, 38, 348, 357]
 
 // Module 354 (_isNativeReflectConstruct)
+import closure_2 from "A";
+import invariant from "invariant";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,43 +21,44 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  const importDefault = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_6(closure_5(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const dependencyMap = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
 function createNumericInterpolation(extrapolateLeft) {
+  let dependencyMap;
   let easing;
-  ({ outputRange: closure_0, inputRange: closure_1, easing } = extrapolateLeft);
+  let importDefault;
+  ({ outputRange: importDefault, inputRange: dependencyMap, easing } = extrapolateLeft);
   if (!easing) {
-    easing = importDefault(dependencyMap[6]).linear;
+    easing = importDefault(355).linear;
   }
-  let closure_2 = easing;
-  extrapolateLeft = "extend";
+  let extrapolate = "extend";
   if (undefined !== extrapolateLeft.extrapolateLeft) {
-    extrapolateLeft = extrapolateLeft.extrapolateLeft;
+    extrapolate = extrapolateLeft.extrapolateLeft;
   } else if (undefined !== extrapolateLeft.extrapolate) {
-    extrapolateLeft = extrapolateLeft.extrapolate;
+    extrapolate = extrapolateLeft.extrapolate;
   }
-  let extrapolateRight = "extend";
+  extrapolate = "extend";
   if (undefined !== extrapolateLeft.extrapolateRight) {
-    extrapolateRight = extrapolateLeft.extrapolateRight;
+    extrapolate = extrapolateLeft.extrapolateRight;
   } else if (undefined !== extrapolateLeft.extrapolate) {
-    extrapolateRight = extrapolateLeft.extrapolate;
+    extrapolate = extrapolateLeft.extrapolate;
   }
   return (arg0) => {
-    callback(length[7])("number" === typeof arg0, "Cannot interpolation an input which is not a number");
+    outer1_0(outer1_1[7])("number" === typeof arg0, "Cannot interpolation an input which is not a number");
     let num = 1;
     if (1 < length.length - 1) {
       let num2 = 1;
@@ -69,7 +77,7 @@ function createNumericInterpolation(extrapolateLeft) {
     }
     const diff = num - 1;
     const sum1 = diff + 1;
-    let tmp8 = callback[sum1];
+    let tmp8 = dependencyMap[sum1];
     let tmp12 = arg0;
     if (arg0 >= length[diff]) {
       let tmp14 = tmp12;
@@ -122,12 +130,12 @@ function createNumericInterpolation(extrapolateLeft) {
   };
 }
 function mapStringToNumericComponents(str) {
-  const tmp = importDefault(dependencyMap[8])(str);
+  const tmp = importDefault(39)(str);
   let tmp3 = null == tmp;
   if (!tmp3) {
     tmp3 = "object" !== typeof tmp;
   }
-  importDefault(dependencyMap[7])(tmp3, "PlatformColors are not supported");
+  importDefault(44)(tmp3, "PlatformColors are not supported");
   if ("number" === typeof tmp) {
     let obj = { isColor: true };
     let num3 = tmp;
@@ -151,42 +159,36 @@ function mapStringToNumericComponents(str) {
         let _parseFloat = parseFloat;
         arr = items1.push(parseFloat(match1[0]));
         num = match1.index + match1[0].length;
-        let tmp7 = closure_8;
-        match1 = closure_8.exec(str);
+        let tmp7 = regex;
+        match1 = regex.exec(str);
         num2 = num;
       } while (null != match1);
     }
-    importDefault(dependencyMap[7])(items1.length > 0, "outputRange must contain color or value with numeric component");
+    importDefault(44)(items1.length > 0, "outputRange must contain color or value with numeric component");
     if (num2 < str.length) {
       items1.push(str.substring(num2, str.length));
     }
     obj = { isColor: false, components: items1 };
     return obj;
   }
-  const tmp2 = importDefault(dependencyMap[7]);
+  const tmp2 = importDefault(44);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = /[+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?/g;
+const re8 = /[+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?/g;
 
-export default (arg0) => {
+export default ((arg0) => {
   class AnimatedInterpolation {
     constructor(arg0, arg1) {
       self = this;
-      tmp = closure_2(this, AnimatedInterpolation);
+      tmp = outer1_2(this, AnimatedInterpolation);
       items = [];
       items[0] = arg1;
-      obj = closure_5(AnimatedInterpolation);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      obj = outer1_5(AnimatedInterpolation);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -196,7 +198,6 @@ export default (arg0) => {
       return tmp2Result;
     }
   }
-  const importDefault = AnimatedInterpolation;
   callback2(AnimatedInterpolation, arg0);
   let obj = {
     key: "_getInterpolation",
@@ -206,10 +207,11 @@ export default (arg0) => {
         const _config = self._config;
         if (_config.outputRange) {
           if ("string" === typeof _config.outputRange[0]) {
-            self._interpolation = function createStringInterpolation(_config) {
-              _config(mapped[7])(_config.outputRange.length >= 2, "Bad output range");
+            self._interpolation = (function createStringInterpolation(_config) {
+              let closure_0 = _config;
+              AnimatedInterpolation(outer2_1[7])(_config.outputRange.length >= 2, "Bad output range");
               const outputRange = _config.outputRange;
-              const mapped = outputRange.map(closure_12);
+              let mapped = outputRange.map(outer2_12);
               const isColor = mapped[0].isColor;
               const mapped1 = mapped.map((components) => {
                 components = components.components;
@@ -221,13 +223,14 @@ export default (arg0) => {
                 return found;
               });
               const first = mapped1[0];
-              let closure_4 = first.map((arg0, arg1) => {
-                arg0 = arg1;
-                return callback(Object.assign({}, arg0, { outputRange: mapped1.map((arg0) => arg0[closure_0]) }));
+              let _possibleConstructorReturn = first.map((arg0, arg1) => {
+                let closure_0 = arg1;
+                return outer3_11(Object.assign({}, closure_0, { outputRange: mapped1.map((arg0) => arg0[closure_0]) }));
               });
-              return isColor ? (arg0) => {
-                const mapped = closure_4.map((arg0, arg1) => {
-                  const tmp = arg0(arg0);
+              return isColor ? ((arg0) => {
+                let closure_0 = arg0;
+                const mapped = _possibleConstructorReturn.map((arg0, arg1) => {
+                  const tmp = arg0(closure_0);
                   if (arg1 < 3) {
                     const _Math2 = Math;
                     let rounded = Math.round(tmp);
@@ -238,36 +241,37 @@ export default (arg0) => {
                   return rounded;
                 });
                 return "rgba(" + mapped[0] + ", " + mapped[1] + ", " + mapped[2] + ", " + mapped[3] + ")";
-              } : (arg0) => {
-                let closure_1 = closure_4.map((arg0) => arg0(arg0));
-                let closure_2 = 0;
-                const components = closure_1[0].components;
-                const mapped = components.map((arg0) => {
+              }) : ((arg0) => {
+                let closure_0 = arg0;
+                let mapped = _possibleConstructorReturn.map((arg0) => arg0(closure_0));
+                let c2 = 0;
+                const components = mapped[0].components;
+                mapped = components.map((arg0) => {
                   let tmp = arg0;
                   if ("number" === typeof arg0) {
                     let closure_2 = tmp4 + 1;
-                    tmp = closure_1[tmp4];
+                    tmp = table[tmp4];
                   }
                   return tmp;
                 });
                 return mapped.join("");
-              };
-            }(_config);
+              });
+            })(_config);
           }
         }
-        self._interpolation = callback5(_config);
+        self._interpolation = outer1_11(_config);
       }
       return self._interpolation;
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "__makeNative",
     value: function __makeNative(arg0) {
       const _parent = this._parent;
       _parent.__makeNative(arg0);
       const items = [arg0];
-      callback4(AnimatedInterpolation, "__makeNative", this, 3)(items);
+      outer1_10(AnimatedInterpolation, "__makeNative", this, 3)(items);
     }
   };
   items[1] = obj;
@@ -276,7 +280,7 @@ export default (arg0) => {
     value: function __getValue() {
       const _parent = this._parent;
       const __getValueResult = _parent.__getValue();
-      AnimatedInterpolation(closure_1[7])("number" === typeof __getValueResult, "Cannot interpolate an input which is not a number.");
+      AnimatedInterpolation(outer1_1[7])("number" === typeof __getValueResult, "Cannot interpolate an input which is not a number.");
       return this._getInterpolation()(__getValueResult);
     }
   };
@@ -292,7 +296,7 @@ export default (arg0) => {
     value: function __attach() {
       const _parent = this._parent;
       _parent.__addChild(this);
-      callback4(AnimatedInterpolation, "__attach", this, 3)([]);
+      outer1_10(AnimatedInterpolation, "__attach", this, 3)([]);
     }
   };
   items[5] = {
@@ -300,7 +304,7 @@ export default (arg0) => {
     value: function __detach() {
       const _parent = this._parent;
       _parent.__removeChild(this);
-      callback4(AnimatedInterpolation, "__detach", this, 3)([]);
+      outer1_10(AnimatedInterpolation, "__detach", this, 3)([]);
     }
   };
   items[6] = {
@@ -308,24 +312,24 @@ export default (arg0) => {
     value: function __getNativeConfig() {
       const self = this;
       const outputRange = this._config.outputRange;
-      let closure_0 = null;
+      let c0 = null;
       let mapped = outputRange;
       if ("string" === typeof outputRange[0]) {
         mapped = outputRange.map((arg0) => {
-          const tmp = _null(closure_1[9])(arg0);
+          const tmp = AnimatedInterpolation(outer2_1[9])(arg0);
           if ("number" === typeof tmp) {
-            const _null = "color";
+            const color = "color";
             let transformDataTypeResult = tmp;
           } else {
-            transformDataTypeResult = _null(closure_1[10]).transformDataType(arg0);
-            const obj = _null(closure_1[10]);
+            transformDataTypeResult = AnimatedInterpolation(outer2_1[10]).transformDataType(arg0);
+            const obj = AnimatedInterpolation(outer2_1[10]);
           }
           return transformDataTypeResult;
         });
       }
-      const obj = { inputRange: self._config.inputRange, outputRange: mapped, outputType: closure_0, extrapolateLeft: self._config.extrapolateLeft || self._config.extrapolate || "extend", extrapolateRight: self._config.extrapolateRight || self._config.extrapolate || "extend", type: "interpolation", debugID: self.__getDebugID() };
+      let obj = { inputRange: self._config.inputRange, outputRange: mapped, outputType: c0, extrapolateLeft: self._config.extrapolateLeft || self._config.extrapolate || "extend", extrapolateRight: self._config.extrapolateRight || self._config.extrapolate || "extend", type: "interpolation", debugID: self.__getDebugID() };
       return obj;
     }
   };
   return callback(AnimatedInterpolation, items);
-}(importDefault(dependencyMap[11]));
+})(require("_isNativeReflectConstruct"));

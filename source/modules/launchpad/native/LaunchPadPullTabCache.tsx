@@ -1,99 +1,100 @@
-// Module ID: 15526
-// Function ID: 118459
+// Module ID: 15643
+// Function ID: 120632
 // Name: getLaunchPadPullTabPositionCached
-// Dependencies: [0, 0, 0, 4294967295, 0, 0]
+// Dependencies: [10451, 587, 477, 4684, 1450, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, persistLaunchPadPullTabPosition
 
-// Module 15526 (getLaunchPadPullTabPositionCached)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15643 (getLaunchPadPullTabPositionCached)
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
 
+let closure_3;
+let closure_4;
+let closure_5;
 function getLaunchPadPullTabPositionCached() {
-  const Storage = require(dependencyMap[1]).Storage;
-  let value = Storage.get(closure_6);
+  const Storage = require(587) /* Storage */.Storage;
+  let value = Storage.get(LAUNCH_PAD_PULL_TAB_POSITION_CACHE_KEY);
   if (null == value) {
     value = closure_4;
   }
   return value;
 }
 function setLaunchPadPullTabPositionCached(arg0) {
-  const Storage = require(dependencyMap[1]).Storage;
-  const result = Storage.set(closure_6, arg0);
+  const Storage = require(587) /* Storage */.Storage;
+  const result = Storage.set(LAUNCH_PAD_PULL_TAB_POSITION_CACHE_KEY, arg0);
 }
 function setLaunchPadPullTabExclusionRect() {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = getLaunchPadPullTabPositionCached();
   }
-  let obj = require(dependencyMap[2]);
+  let obj = require(477) /* set */;
   if (obj.isAndroid()) {
-    const diff = require(dependencyMap[4]).getWindowDimensions().width - closure_5;
-    const obj2 = require(dependencyMap[4]);
-    const width = require(dependencyMap[4]).getWindowDimensions().width;
+    const diff = require(1450) /* useWindowDimensions */.getWindowDimensions().width - closure_5;
+    const obj2 = require(1450) /* useWindowDimensions */;
+    const width = require(1450) /* useWindowDimensions */.getWindowDimensions().width;
     const sum = tmp + closure_3;
     let left;
-    if (null != _undefined) {
-      left = _undefined.left;
+    if (null != obj) {
+      left = obj.left;
     }
     let tmp11 = left === diff;
     if (tmp11) {
       let right;
-      if (null != _undefined) {
-        right = _undefined.right;
+      if (null != obj) {
+        right = obj.right;
       }
       tmp11 = right === width;
     }
     if (tmp11) {
       let top;
-      if (null != _undefined) {
-        top = _undefined.top;
+      if (null != obj) {
+        top = obj.top;
       }
       tmp11 = top === tmp;
     }
     if (tmp11) {
       let bottom;
-      if (null != _undefined) {
-        bottom = _undefined.bottom;
+      if (null != obj) {
+        bottom = obj.bottom;
       }
       tmp11 = bottom === sum;
     }
     if (!tmp11) {
       obj = { left: diff, right: width, top: tmp, bottom: sum };
-      const _undefined = obj;
-      const items = [_undefined];
-      const result = importDefault(dependencyMap[3]).setSystemGestureExclusionRects(items);
-      const obj5 = importDefault(dependencyMap[3]);
+      const items = [obj];
+      const result = importDefault(4684).setSystemGestureExclusionRects(items);
+      const obj5 = importDefault(4684);
     }
-    const obj3 = require(dependencyMap[4]);
+    const obj3 = require(1450) /* useWindowDimensions */;
   }
 }
-({ LAUNCH_PAD_PULL_TAB_HEIGHT: closure_3, LAUNCH_PAD_PULL_TAB_INITIAL_POSITION: closure_4, LAUNCH_PAD_PULL_TAB_WIDTH: closure_5 } = __exportStarResult1);
-let closure_6 = "LAUNCH_PAD_PULL_TAB_POSITION_CACHE_KEY";
-let closure_7 = 0;
-let closure_8;
-const result = __exportStarResult1.fileFinishedImporting("modules/launchpad/native/LaunchPadPullTabCache.tsx");
+({ LAUNCH_PAD_PULL_TAB_HEIGHT: closure_3, LAUNCH_PAD_PULL_TAB_INITIAL_POSITION: closure_4, LAUNCH_PAD_PULL_TAB_WIDTH: closure_5 } = LAUNCH_PAD_SPRING_CONFIG);
+const LAUNCH_PAD_PULL_TAB_POSITION_CACHE_KEY = "LAUNCH_PAD_PULL_TAB_POSITION_CACHE_KEY";
+let c7 = 0;
+let c8;
+let result = require("set").fileFinishedImporting("modules/launchpad/native/LaunchPadPullTabCache.tsx");
 
 export { getLaunchPadPullTabPositionCached };
 export { setLaunchPadPullTabPositionCached };
 export const persistLaunchPadPullTabPosition = function persistLaunchPadPullTabPosition(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   clearTimeout(timeout);
-  const timeout = setTimeout(() => {
-    callback(arg0);
-    if (null != closure_8) {
-      callback2(arg0);
+  timeout = setTimeout(() => {
+    outer1_10(closure_0);
+    if (null != outer1_8) {
+      outer1_11(closure_0);
     }
   }, 300);
 };
 export const clearLaunchPadPullTabExclusionRect = function clearLaunchPadPullTabExclusionRect() {
-  let isAndroidResult = require(dependencyMap[2]).isAndroid();
+  let isAndroidResult = require(477) /* set */.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = null != closure_8;
+    isAndroidResult = null != c8;
   }
   if (isAndroidResult) {
-    closure_8 = undefined;
-    const result = importDefault(dependencyMap[3]).setSystemGestureExclusionRects([]);
-    const obj2 = importDefault(dependencyMap[3]);
+    c8 = undefined;
+    const result = importDefault(4684).setSystemGestureExclusionRects([]);
+    const obj2 = importDefault(4684);
   }
 };
 export { setLaunchPadPullTabExclusionRect };

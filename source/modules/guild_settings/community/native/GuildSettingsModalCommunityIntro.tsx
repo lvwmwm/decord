@@ -1,169 +1,190 @@
-// Module ID: 16234
-// Function ID: 125482
+// Module ID: 16351
+// Function ID: 127655
 // Name: FeatureCard
-// Dependencies: []
+// Dependencies: [31, 27, 1838, 3758, 8439, 653, 33, 4130, 689, 9597, 1212, 4126, 15147, 4086, 1456, 566, 686, 8438, 16352, 5459, 1920, 4543, 16356, 3830, 5448, 2]
 // Exports: default
 
-// Module 16234 (FeatureCard)
+// Module 16351 (FeatureCard)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 function FeatureCard(arg0) {
   let body;
   let header;
   let icon;
   ({ icon, header, body } = arg0);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.featureCard };
   obj = { style: tmp.featureIcon, children: icon() };
   const items = [callback(closure_4, obj), ];
   obj = { style: tmp.featureDescription };
-  const items1 = [callback(arg1(dependencyMap[10]).Heading, { children: header }), callback(arg1(dependencyMap[10]).Text, { children: body })];
+  const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header };
+  const items1 = [callback(require(4126) /* Text */.Heading, obj1), ];
+  const obj2 = { variant: "text-sm/medium", color: "text-default", children: body };
+  items1[1] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items1;
   items[1] = callback2(closure_4, obj);
   obj.children = items;
   return callback2(closure_4, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, Image: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[1]));
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[1]);
-({ HelpdeskArticles: closure_9, GuildFeatures: closure_10, GuildSettingsSections: closure_11, Permissions: closure_12 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
-({ jsx: closure_13, jsxs: closure_14, Fragment: closure_15 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: {}, body: { memo: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 }, details: { "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 }, headerImage: { width: "100%" }, features: { y: true, channelId: true } };
-obj = { -1403896991: "isArray", 1655493804: "constructor", -61778846: "Date", -71801854: "isArray", -865743786: "isArray", -1604069199: "isArray", 1687845201: "category", backgroundColor: importDefault(dependencyMap[7]).colors.CARD_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.featureCard = obj;
-const obj1 = { "Null": "0b8a6fa235bbde823695fe5cdeccf7e4", "Null": "channel_setup_light", "Null": "png", "Null": true, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_STRONG };
-obj.featureIcon = obj1;
-obj.featureDescription = { "Null": true, "Null": true };
-let closure_16 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/guild_settings/community/native/GuildSettingsModalCommunityIntro.tsx");
+({ View: closure_4, Image: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ HelpdeskArticles: closure_10, GuildFeatures: closure_11, GuildSettingsSections: closure_12, Permissions: closure_13 } = ME);
+({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", marginBottom: 24 }, details: { textAlign: "center", marginTop: 24 }, headerImage: { width: "100%" }, features: { marginTop: 32, marginBottom: 32 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT, flex: 1, flexDirection: "row", padding: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginTop: 8, alignItems: "flex-start" };
+_createForOfIteratorHelperLoose.featureCard = _createForOfIteratorHelperLoose;
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: 40, marginRight: 16, padding: 8 };
+_createForOfIteratorHelperLoose.featureIcon = obj1;
+_createForOfIteratorHelperLoose.featureDescription = { overflow: "hidden", flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_settings/community/native/GuildSettingsModalCommunityIntro.tsx");
 
 export default function GuildSettingsModalCommunityIntro(contentContainerStyle) {
   let onClose;
-  ({ guildId: closure_0, onClose } = contentContainerStyle);
-  const importDefault = onClose;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[13]);
-  const navigation = obj.useNavigation();
-  const dependencyMap = navigation;
-  let obj1 = arg1(dependencyMap[14]);
+  let require;
+  ({ guildId: require, onClose } = contentContainerStyle);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(navigation[14]);
+  navigation = obj.useNavigation();
+  let obj1 = require(navigation[15]);
   const items = [closure_7];
-  const stateFromStores = obj1.useStateFromStores(items, () => guild.getGuild(closure_0));
-  const React = stateFromStores;
-  let obj2 = arg1(dependencyMap[14]);
-  const items1 = [closure_8];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_7.getGuild(closure_0));
+  let obj2 = require(navigation[15]);
+  const items1 = [_isNativeReflectConstruct];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     let canResult = null != stateFromStores;
     if (canResult) {
-      canResult = closure_8.can(constants3.ADMINISTRATOR, stateFromStores);
+      canResult = outer1_8.can(outer1_13.ADMINISTRATOR, stateFromStores);
     }
     return canResult;
   });
-  const items2 = [stateFromStores, navigation, onClose];
-  const effect = React.useEffect(() => {
-    let hasItem = null != stateFromStores;
+  let obj3 = require(navigation[15]);
+  const items2 = [closure_9];
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => outer1_9.isSubmitting());
+  const items3 = [stateFromStores, stateFromStores2, navigation, onClose];
+  const effect = stateFromStores.useEffect(() => {
+    let hasItem = !stateFromStores2;
+    if (hasItem) {
+      hasItem = null != stateFromStores;
+    }
     if (hasItem) {
       const features = stateFromStores.features;
-      hasItem = features.has(constants.COMMUNITY);
+      hasItem = features.has(outer1_11.COMMUNITY);
     }
     if (hasItem) {
-      let obj = onClose(navigation[15]);
-      obj.wait(() => callback(closure_2[16]).setSection(constants.COMMUNITY));
+      let obj = onClose(navigation[16]);
+      obj.wait(() => onClose(navigation[17]).setSection(outer2_12.COMMUNITY));
       obj = { onClose };
-      const replaced = navigation.replace(constants2.COMMUNITY, obj);
+      const replaced = navigation.replace(outer1_12.COMMUNITY, obj);
     }
-  }, items2);
-  let obj3 = arg1(dependencyMap[17]);
+  }, items3);
+  let obj4 = require(navigation[18]);
   obj = {};
-  obj = { style: tmp.container, contentContainerStyle: items3 };
-  const items3 = [tmp.contentPadding, contentContainerStyle.contentContainerStyle];
-  obj1 = { resizeMode: "contain", source: obj3.useIntroHeaderSource(), style: tmp.headerImage };
-  const items4 = [callback(closure_5, obj1), , , , , ];
-  obj2 = { style: tmp.header };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj2.children = intl.string(arg1(dependencyMap[9]).t.M/gBcA);
-  items4[1] = callback(arg1(dependencyMap[10]).Heading, obj2);
-  obj3 = { style: tmp.body };
-  const intl2 = arg1(dependencyMap[9]).intl;
-  const obj4 = {};
-  let obj10 = importDefault(dependencyMap[19]);
-  obj4.helpdeskArticle = obj10.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES);
-  obj3.children = intl2.format(arg1(dependencyMap[9]).t.52EgsM, obj4);
-  items4[2] = callback(arg1(dependencyMap[18]).TextWithIOSLinkWorkaround, obj3);
+  obj = { style: tmp.container, contentContainerStyle: items4 };
+  items4 = [tmp.contentPadding, contentContainerStyle.contentContainerStyle];
+  obj1 = { resizeMode: "contain", source: obj4.useIntroHeaderSource(), style: tmp.headerImage };
+  const items5 = [callback(stateFromStores2, obj1), , , , , ];
+  obj2 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+  const intl = require(navigation[10]).intl;
+  obj2.children = intl.string(require(navigation[10]).t["M/gBcA"]);
+  items5[1] = callback(require(navigation[11]).Heading, obj2);
+  obj3 = { style: tmp.body, variant: "text-md/medium", color: "text-default" };
+  const intl2 = require(navigation[10]).intl;
+  obj4 = {};
+  let obj11 = onClose(navigation[20]);
+  obj4.helpdeskArticle = obj11.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES);
+  obj3.children = intl2.format(require(navigation[10]).t["52EgsM"], obj4);
+  items5[2] = callback(require(navigation[19]).TextWithIOSLinkWorkaround, obj3);
   const obj5 = {};
-  const intl3 = arg1(dependencyMap[9]).intl;
-  obj5.text = intl3.string(arg1(dependencyMap[9]).t.LhlgY9);
+  const intl3 = require(navigation[10]).intl;
+  obj5.text = intl3.string(require(navigation[10]).t.LhlgY9);
   obj5.onPress = function onPress() {
     if (stateFromStores1) {
-      onClose(navigation[21]).open();
-      const obj2 = onClose(navigation[21]);
+      onClose(navigation[22]).open();
+      const obj2 = onClose(navigation[22]);
     } else {
-      callback(navigation[22]).communityAdminOnly();
-      const obj = callback(navigation[22]);
+      outer1_0(navigation[23]).communityAdminOnly();
+      const obj = outer1_0(navigation[23]);
     }
   };
   obj5.disabled = !stateFromStores1;
-  items4[3] = callback(arg1(dependencyMap[20]).Button, obj5);
-  const obj6 = { style: tmp.details };
-  const intl4 = arg1(dependencyMap[9]).intl;
-  obj6.children = intl4.string(arg1(dependencyMap[9]).t.HgTI2N);
-  items4[4] = callback(arg1(dependencyMap[10]).Text, obj6);
+  items5[3] = callback(require(navigation[21]).Button, obj5);
+  const obj6 = { style: tmp.details, variant: "text-sm/medium", color: "text-default" };
+  const intl4 = require(navigation[10]).intl;
+  obj6.children = intl4.string(require(navigation[10]).t.HgTI2N);
+  items5[4] = callback(require(navigation[11]).Text, obj6);
   const obj7 = { style: tmp.features };
   const obj8 = {
     icon() {
-      const obj = { color: onClose(navigation[7]).unsafe_rawColors.GREEN_360 };
-      return callback2(callback(navigation[8]).AnalyticsIcon, obj);
+      const obj = { color: onClose(navigation[8]).unsafe_rawColors.GREEN_360 };
+      return outer1_14(outer1_0(navigation[9]).AnalyticsIcon, obj);
     }
   };
-  const intl5 = arg1(dependencyMap[9]).intl;
-  obj8.header = intl5.string(arg1(dependencyMap[9]).t.oVQF2y);
-  const intl6 = arg1(dependencyMap[9]).intl;
-  obj8.body = intl6.format(arg1(dependencyMap[9]).t.A6G7ak, {
+  const intl5 = require(navigation[10]).intl;
+  obj8.header = intl5.string(require(navigation[10]).t.oVQF2y);
+  const intl6 = require(navigation[10]).intl;
+  obj8.body = intl6.format(require(navigation[10]).t.A6G7ak, {
     featureHook(children) {
-      const obj = { cachedAt: true, edpbxy: true, children };
-      return callback2(callback(navigation[10]).Text, obj, arg1);
+      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      return outer1_14(outer1_0(navigation[11]).Text, obj, arg1);
     }
   });
-  const items5 = [obj8, , ];
-  obj10 = {
+  const items6 = [obj8, , ];
+  const obj10 = {
     icon() {
-      const obj = { color: onClose(navigation[7]).unsafe_rawColors.YELLOW_300 };
-      return callback2(callback(navigation[11]).LightbulbIcon, obj);
+      const obj = { color: onClose(navigation[8]).unsafe_rawColors.YELLOW_300 };
+      return outer1_14(outer1_0(navigation[12]).LightbulbIcon, obj);
     }
   };
-  const intl7 = arg1(dependencyMap[9]).intl;
-  obj10.header = intl7.string(arg1(dependencyMap[9]).t.0rJl9y);
-  const intl8 = arg1(dependencyMap[9]).intl;
-  obj10.body = intl8.format(arg1(dependencyMap[9]).t.XsCNky, {
+  const intl7 = require(navigation[10]).intl;
+  obj10.header = intl7.string(require(navigation[10]).t["0rJl9y"]);
+  const intl8 = require(navigation[10]).intl;
+  obj11 = {
     infoHook() {
       return null;
     },
     featureHook(children) {
-      const obj = { cachedAt: true, edpbxy: true, children };
-      return callback2(callback(navigation[10]).Text, obj, arg1);
-    }
-  });
-  items5[1] = obj10;
-  const obj12 = {
-    icon() {
-      const obj = { color: onClose(navigation[7]).unsafe_rawColors.PLATFORM_PARTNER };
-      return callback2(callback(navigation[12]).CircleInformationIcon, obj);
+      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      return outer1_14(outer1_0(navigation[11]).Text, obj, arg1);
     }
   };
-  const intl9 = arg1(dependencyMap[9]).intl;
-  obj12.header = intl9.string(arg1(dependencyMap[9]).t.W2kLJC);
-  const intl10 = arg1(dependencyMap[9]).intl;
-  obj12.body = intl10.string(arg1(dependencyMap[9]).t.hyNkHz);
-  items5[2] = obj12;
-  obj7.children = items5.map((arg0, arg1) => {
+  obj10.body = intl8.format(require(navigation[10]).t.XsCNky, obj11);
+  items6[1] = obj10;
+  const obj12 = {
+    icon() {
+      const obj = { color: onClose(navigation[8]).unsafe_rawColors.PLATFORM_PARTNER };
+      return outer1_14(outer1_0(navigation[13]).CircleInformationIcon, obj);
+    }
+  };
+  const intl9 = require(navigation[10]).intl;
+  obj12.header = intl9.string(require(navigation[10]).t.W2kLJC);
+  const intl10 = require(navigation[10]).intl;
+  obj12.body = intl10.string(require(navigation[10]).t.hyNkHz);
+  items6[2] = obj12;
+  obj7.children = items6.map((arg0, arg1) => {
     const merged = Object.assign(arg0);
-    return callback2(closure_17, {}, arg1);
+    return outer1_14(outer1_18, {}, arg1);
   });
-  items4[5] = callback(stateFromStores1, obj7);
-  obj.children = items4;
-  const items6 = [callback2(closure_6, obj), callback(arg1(dependencyMap[23]).NavScrim, {})];
-  obj.children = items6;
-  return callback2(closure_15, obj);
+  items5[5] = callback(stateFromStores1, obj7);
+  obj.children = items5;
+  const items7 = [callback2(closure_6, obj), callback(require(navigation[24]).NavScrim, {})];
+  obj.children = items7;
+  return callback2(closure_16, obj);
 };

@@ -1,26 +1,26 @@
-// Module ID: 14416
-// Function ID: 108735
+// Module ID: 14530
+// Function ID: 110888
 // Name: GUILD_SELECT_ALL_SERVERS_OPTION_ID
-// Dependencies: []
+// Dependencies: [621, 2]
 // Exports: getSelectedGuildId, setSelectedGuildId
 
-// Module 14416 (GUILD_SELECT_ALL_SERVERS_OPTION_ID)
+// Module 14530 (GUILD_SELECT_ALL_SERVERS_OPTION_ID)
+import keys from "keys";
+
 let closure_0 = { selectedGuildId: "0" };
-const _module = require(dependencyMap[0]);
-const obj = _module.create((arg0) => {
+let obj = keys.create((arg0) => {
   let closure_0 = arg0;
   const obj = {};
   const merged = Object.assign(closure_0);
   obj["setSelectedGuildId"] = function setSelectedGuildId(selectedGuildId) {
-    selectedGuildId({ selectedGuildId });
+    callback({ selectedGuildId });
   };
   obj["reset"] = function reset() {
-    arg0(arg0);
+    callback(callback);
   };
   return obj;
 });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/user_settings/privacy_and_safety/UserSettingsSafetySelectedGuildStore.tsx");
+const result = require("set").fileFinishedImporting("modules/user_settings/privacy_and_safety/UserSettingsSafetySelectedGuildStore.tsx");
 
 export const GUILD_SELECT_ALL_SERVERS_OPTION_ID = "0";
 export const useUserSafetySettingsSelectedGuildStore = obj;

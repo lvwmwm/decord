@@ -1,16 +1,22 @@
-// Module ID: 13640
-// Function ID: 103327
+// Module ID: 13754
+// Function ID: 105483
 // Name: getPermissiveness
-// Dependencies: []
+// Dependencies: [5042, 4051, 1838, 4970, 1282, 5793, 1212, 3803, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getProfileToActivityUpsellStrings, getUpsellStrings, sortGuildIdsByFrecency
 
-// Module 13640 (getPermissiveness)
+// Module 13754 (getPermissiveness)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getPermissiveness(setting) {
-  if (arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF === setting) {
+  if (require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF === setting) {
     return 2;
-  } else if (arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS === setting) {
+  } else if (require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS === setting) {
     return 1;
-  } else if (arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON === setting) {
+  } else if (require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON === setting) {
     return 0;
   } else {
     return -1;
@@ -19,7 +25,7 @@ function getPermissiveness(setting) {
 function profileVisibilityToActivityRestriction(NumberResult) {
   let ACTIVITY_STATUS_OFF = map.get(NumberResult);
   if (null == ACTIVITY_STATUS_OFF) {
-    ACTIVITY_STATUS_OFF = arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
+    ACTIVITY_STATUS_OFF = require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
   }
   return ACTIVITY_STATUS_OFF;
 }
@@ -36,15 +42,14 @@ function computeAffectedGuilds(setting, NumberResult) {
         } else {
           EXPANDING = obj.EXPANDING;
         }
-        NumberResult = EXPANDING;
-        let obj = NumberResult(sanitizedActivityRestrictedGuilds[5]);
-        const sanitizedActivityRestrictedGuilds = obj.getSanitizedActivityRestrictedGuilds();
-        const flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
-        if (setting !== NumberResult(sanitizedActivityRestrictedGuilds[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {
-          if (setting !== NumberResult(sanitizedActivityRestrictedGuilds[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
-            if (setting !== NumberResult(sanitizedActivityRestrictedGuilds[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON) {
+        obj = EXPANDING(5793);
+        const dependencyMap = obj.getSanitizedActivityRestrictedGuilds();
+        flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+        if (setting !== EXPANDING(1282).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {
+          if (setting !== EXPANDING(1282).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
+            if (setting !== EXPANDING(1282).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON) {
               let str3 = "all";
-              if (setting === NumberResult(sanitizedActivityRestrictedGuilds[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
+              if (setting === EXPANDING(1282).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
                 str3 = "all";
               }
               let str = str3;
@@ -56,18 +61,17 @@ function computeAffectedGuilds(setting, NumberResult) {
         } else {
           str = "large_only";
         }
-        let closure_2 = str;
         const found = flattenedGuildIds.filter((guildId) => {
-          if (null == store.getGuild(guildId)) {
+          if (null == outer1_4.getGuild(guildId)) {
             return false;
           } else {
             const hasItem = set.has(guildId);
-            if (EXPANDING === constants.RESTRICTING) {
+            if (EXPANDING === outer1_6.RESTRICTING) {
               if (hasItem) {
                 return false;
               }
             }
-            if (EXPANDING === constants.EXPANDING) {
+            if (EXPANDING === outer1_6.EXPANDING) {
               if (!hasItem) {
                 return false;
               }
@@ -75,9 +79,9 @@ function computeAffectedGuilds(setting, NumberResult) {
             if ("all" === "all") {
               return true;
             } else {
-              const memberCount = memberCount.getMemberCount(guildId);
+              const memberCount = outer1_3.getMemberCount(guildId);
               if (null == memberCount) {
-                let tmp7 = EXPANDING === constants.RESTRICTING;
+                let tmp7 = EXPANDING === outer1_6.RESTRICTING;
               } else if ("large_only" === str) {
                 tmp7 = memberCount > 200;
               } else {
@@ -90,8 +94,8 @@ function computeAffectedGuilds(setting, NumberResult) {
         let tmp20 = null;
         if (0 !== found.length) {
           const sorted = found.sort((guildId, guildId) => {
-            const guild = store.getGuild(guildId);
-            const guild1 = store.getGuild(guildId);
+            const guild = outer1_4.getGuild(guildId);
+            const guild1 = outer1_4.getGuild(guildId);
             let joinedAt;
             if (null != guild) {
               joinedAt = guild.joinedAt;
@@ -138,47 +142,43 @@ function computeAffectedGuilds(setting, NumberResult) {
   }
 }
 function getProfileVisibilitySettingName(NumberResult) {
-  if (arg1(dependencyMap[4]).ProfileVisibility.FRIENDS_AND_ALL_GUILDS === NumberResult) {
-    const intl3 = arg1(dependencyMap[6]).intl;
-    return intl3.string(arg1(dependencyMap[6]).t.Boxc8R).toLowerCase();
-  } else if (arg1(dependencyMap[4]).ProfileVisibility.FRIENDS_AND_SMALL_GUILDS === NumberResult) {
-    const intl2 = arg1(dependencyMap[6]).intl;
-    return intl2.string(arg1(dependencyMap[6]).t.YOIKBt).toLowerCase();
-  } else if (arg1(dependencyMap[4]).ProfileVisibility.FRIENDS_ONLY === NumberResult) {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t.u0nlJv).toLowerCase();
+  if (require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_AND_ALL_GUILDS === NumberResult) {
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.Boxc8R).toLowerCase();
+  } else if (require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_AND_SMALL_GUILDS === NumberResult) {
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.YOIKBt).toLowerCase();
+  } else if (require(1282) /* _callSuper */.ProfileVisibility.FRIENDS_ONLY === NumberResult) {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.u0nlJv).toLowerCase();
   } else {
     return "";
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const obj = { RESTRICTING: "restricting", EXPANDING: "expanding" };
-const items = [arg1(dependencyMap[4]).ProfileVisibility.FRIENDS_AND_ALL_GUILDS, arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF];
-const items1 = [items, , ];
-const items2 = [arg1(dependencyMap[4]).ProfileVisibility.FRIENDS_AND_SMALL_GUILDS, arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS];
+let obj = { RESTRICTING: "restricting", EXPANDING: "expanding" };
+let items = [require("_callSuper").ProfileVisibility.FRIENDS_AND_ALL_GUILDS, require("_callSuper").GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF];
+let items1 = [items, , ];
+let items2 = [require("_callSuper").ProfileVisibility.FRIENDS_AND_SMALL_GUILDS, require("_callSuper").GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS];
 items1[1] = items2;
-const items3 = [arg1(dependencyMap[4]).ProfileVisibility.FRIENDS_ONLY, arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON];
+const items3 = [require("_callSuper").ProfileVisibility.FRIENDS_ONLY, require("_callSuper").GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON];
 items1[2] = items3;
 const map = new Map(items1);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/activity_privacy/ActivityPrivacyUpsellUtils.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/activity_privacy/ActivityPrivacyUpsellUtils.tsx");
 
 export const ChangeDirection = obj;
 export { getPermissiveness };
 export { profileVisibilityToActivityRestriction };
 export { computeAffectedGuilds };
 export const getActivityRestrictionSettingName = function getActivityRestrictionSettingName(NumberResult) {
-  if (arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF === NumberResult) {
-    const intl3 = arg1(dependencyMap[6]).intl;
-    return intl3.string(arg1(dependencyMap[6]).t.FzgQna).toLowerCase();
-  } else if (arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS === NumberResult) {
-    const intl2 = arg1(dependencyMap[6]).intl;
-    return intl2.string(arg1(dependencyMap[6]).t.1hvuGH).toLowerCase();
-  } else if (arg1(dependencyMap[4]).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON === NumberResult) {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t.fQc5la).toLowerCase();
+  if (require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF === NumberResult) {
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.FzgQna).toLowerCase();
+  } else if (require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS === NumberResult) {
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t["1hvuGH"]).toLowerCase();
+  } else if (require(1282) /* _callSuper */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON === NumberResult) {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.fQc5la).toLowerCase();
   } else {
     return "";
   }
@@ -186,41 +186,41 @@ export const getActivityRestrictionSettingName = function getActivityRestriction
 export { getProfileVisibilitySettingName };
 export const getProfileToActivityUpsellStrings = function getProfileToActivityUpsellStrings(arg0, settingName) {
   let obj = {};
-  const intl = settingName(dependencyMap[6]).intl;
-  const t = settingName(dependencyMap[6]).t;
-  obj.title = intl.string(arg0 ? t.eYDA7D : t.9jYwjo);
-  const intl2 = settingName(dependencyMap[6]).intl;
-  const t2 = settingName(dependencyMap[6]).t;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const t = require(1212) /* getSystemLocale */.t;
+  obj.title = intl.string(arg0 ? t.eYDA7D : t["9jYwjo"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  const t2 = require(1212) /* getSystemLocale */.t;
   obj = { settingName };
-  obj.subtitle = intl2.format(arg0 ? t2.c5/jDc : t2.ajzh8S, obj);
-  const intl3 = settingName(dependencyMap[6]).intl;
-  const t3 = settingName(dependencyMap[6]).t;
-  obj.confirmText = intl3.string(arg0 ? t3.6uPZV1 : t3.a9PIyD);
-  const intl4 = settingName(dependencyMap[6]).intl;
-  const t4 = settingName(dependencyMap[6]).t;
-  obj.toastContent = intl4.string(arg0 ? t4.AdpgML : t4.Q7E+QF);
+  obj.subtitle = intl2.format(arg0 ? t2["c5/jDc"] : t2.ajzh8S, obj);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  const t3 = require(1212) /* getSystemLocale */.t;
+  obj.confirmText = intl3.string(arg0 ? t3["6uPZV1"] : t3.a9PIyD);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  const t4 = require(1212) /* getSystemLocale */.t;
+  obj.toastContent = intl4.string(arg0 ? t4.AdpgML : t4["Q7E+QF"]);
   return obj;
 };
 export const getUpsellStrings = function getUpsellStrings(arg0, settingName) {
   let obj = {};
-  const intl = settingName(dependencyMap[6]).intl;
-  const t = settingName(dependencyMap[6]).t;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const t = require(1212) /* getSystemLocale */.t;
   obj.title = intl.string(arg0 ? t.jRx1Aa : t.S0Y0bh);
-  const intl2 = settingName(dependencyMap[6]).intl;
-  const t2 = settingName(dependencyMap[6]).t;
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  const t2 = require(1212) /* getSystemLocale */.t;
   obj = { settingName };
   obj.subtitle = intl2.format(arg0 ? t2.Fs96LO : t2.GcoYX8, obj);
-  const intl3 = settingName(dependencyMap[6]).intl;
-  const t3 = settingName(dependencyMap[6]).t;
-  obj.confirmText = intl3.string(arg0 ? t3.4DM5HJ : t3.WRrDtI);
-  const intl4 = settingName(dependencyMap[6]).intl;
-  const t4 = settingName(dependencyMap[6]).t;
-  obj.toastContent = intl4.string(arg0 ? t4.AdpgML : t4.Q7E+QF);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  const t3 = require(1212) /* getSystemLocale */.t;
+  obj.confirmText = intl3.string(arg0 ? t3["4DM5HJ"] : t3.WRrDtI);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  const t4 = require(1212) /* getSystemLocale */.t;
+  obj.toastContent = intl4.string(arg0 ? t4.AdpgML : t4["Q7E+QF"]);
   return obj;
 };
 export const computeProfileToActivityUpsell = function computeProfileToActivityUpsell(setting, NumberResult) {
   const tmp = profileVisibilityToActivityRestriction(NumberResult);
-  const DefaultGuildsActivityRestrictedV2 = NumberResult(dependencyMap[7]).DefaultGuildsActivityRestrictedV2;
+  const DefaultGuildsActivityRestrictedV2 = require(3803) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
   setting = DefaultGuildsActivityRestrictedV2.getSetting();
   if (setting === tmp) {
     return null;
@@ -241,27 +241,26 @@ export const computeProfileToActivityUpsell = function computeProfileToActivityU
         return obj;
       }
     }
-    const tmp8 = getPermissiveness(setting);
+    tmp8 = getPermissiveness(setting);
   }
 };
 export const sortGuildIdsByFrecency = function sortGuildIdsByFrecency(guildIds) {
   const items = [...guildIds];
   return items.sort((arg0, arg1) => {
-    const scoreWithoutFetchingLatest = store.getScoreWithoutFetchingLatest(arg1);
-    return scoreWithoutFetchingLatest - store.getScoreWithoutFetchingLatest(arg0);
+    const scoreWithoutFetchingLatest = outer1_2.getScoreWithoutFetchingLatest(arg1);
+    return scoreWithoutFetchingLatest - outer1_2.getScoreWithoutFetchingLatest(arg0);
   });
 };
 export const applyBulkGuildRestrictionChange = function applyBulkGuildRestrictionChange(direction, affectedGuildIds) {
-  const obj = affectedGuildIds(dependencyMap[5]);
+  const obj = set(5793);
   const sanitizedActivityRestrictedGuilds = obj.getSanitizedActivityRestrictedGuilds();
-  const set = new Set(affectedGuildIds);
-  affectedGuildIds = set;
+  set = new Set(affectedGuildIds);
   if (direction === obj.RESTRICTING) {
     const _Set = Set;
     const items = [];
     HermesBuiltin.arraySpread(tmp3, HermesBuiltin.arraySpread(sanitizedActivityRestrictedGuilds, 0));
     const set1 = new Set(items);
-    const ActivityRestrictedGuilds2 = affectedGuildIds(dependencyMap[7]).ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds2 = set(3803).ActivityRestrictedGuilds;
     const items1 = [];
     HermesBuiltin.arraySpread(set1, 0);
     ActivityRestrictedGuilds2.updateSetting(items1);
@@ -269,7 +268,7 @@ export const applyBulkGuildRestrictionChange = function applyBulkGuildRestrictio
     const items2 = [];
     HermesBuiltin.arraySpread(sanitizedActivityRestrictedGuilds, 0);
     const found = items2.filter((arg0) => !set.has(arg0));
-    const ActivityRestrictedGuilds = affectedGuildIds(dependencyMap[7]).ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = set(3803).ActivityRestrictedGuilds;
     ActivityRestrictedGuilds.updateSetting(found);
   }
 };

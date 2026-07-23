@@ -1,76 +1,82 @@
-// Module ID: 15661
-// Function ID: 119637
-// Dependencies: []
+// Module ID: 15778
+// Function ID: 121810
+// Dependencies: [57, 31, 4143, 10015, 10013, 4148, 33, 10014, 682, 477, 574, 3991, 9423, 9757, 10537, 2]
 
-// Module 15661
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const VoicePanelModes = arg1(dependencyMap[3]).VoicePanelModes;
-const VoicePanelControlsModes = arg1(dependencyMap[4]).VoicePanelControlsModes;
-const ParticipantTypes = arg1(dependencyMap[5]).ParticipantTypes;
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
+// Module 15778
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { VoicePanelModes } from "VoicePanelModes";
+import { VoicePanelControlsModes } from "VoicePanelControlsModes";
+import { ParticipantTypes } from "ParticipantTypes";
+import jsxProd from "jsxProd";
+
+let closure_10;
+let closure_11;
+let closure_9;
+const require = arg1;
+({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
 let closure_12 = { code: "function VoicePanelSystemUIManagerTsx1(){const{focused,mode,controlsSpecs,windowDimensions}=this.__closure;var _focused$get;return{focusedId:(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id,mode:mode.get(),controlsMode:controlsSpecs.get().mode,landscape:windowDimensions.get().landscape};}" };
 let closure_13 = { code: "function VoicePanelSystemUIManagerTsx2(props,previous){const{cheapWorkletShallowEqual,runOnJS,handleStateChange}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(handleStateChange)(props);}" };
-const tmp2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo(function VoicePanelSystemUIManager() {
+  let VoicePanelControlsModes;
+  let _isNativeReflectConstruct;
   let tmp3;
   let tmp6;
-  const context = importAllResult.useContext(importDefault(dependencyMap[7]));
+  const context = windowDimensions.useContext(channelId(mode[7]));
   const focused = context.focused;
-  const arg1 = focused;
-  const channelId = context.channelId;
-  const importDefault = channelId;
-  const mode = context.mode;
-  const dependencyMap = mode;
+  channelId = context.channelId;
+  mode = context.mode;
   const controlsSpecs = context.controlsSpecs;
-  const callback = controlsSpecs;
-  const windowDimensions = context.windowDimensions;
-  [tmp3, closure_5] = callback(windowDimensions.useState(true), 2);
-  const tmp4 = callback(windowDimensions.useState(true), 2);
+  windowDimensions = context.windowDimensions;
+  [tmp3, _isNativeReflectConstruct] = controlsSpecs(windowDimensions.useState(true), 2);
+  let tmp4 = controlsSpecs(windowDimensions.useState(true), 2);
   let closure_6 = tmp4[1];
-  const tmp2 = callback(windowDimensions.useState(true), 2);
-  [tmp6, closure_7] = callback(windowDimensions.useState(false), 2);
-  const tmp7 = callback(windowDimensions.useState(false), 2);
+  const tmp2 = controlsSpecs(windowDimensions.useState(true), 2);
+  [tmp6, VoicePanelControlsModes] = controlsSpecs(windowDimensions.useState(false), 2);
+  const tmp7 = controlsSpecs(windowDimensions.useState(false), 2);
   let closure_8 = tmp7[1];
   const items = [channelId];
-  const memo = importAllResult.useMemo(() => {
+  const memo = windowDimensions.useMemo(() => {
     function updateState(arg0) {
-      ({ focusedId: closure_0, mode: closure_1, controlsMode: closure_2, landscape: closure_3 } = arg0);
-      lib(updateState[8]).batchUpdates(() => {
-        lib(closure_1 !== lib.PIP);
+      let c1;
+      let closure_0;
+      let _slicedToArray;
+      let updateState;
+      ({ focusedId: closure_0, mode: c1, controlsMode: updateState, landscape: _slicedToArray } = arg0);
+      focused(mode[8]).batchUpdates(() => {
+        outer2_6(closure_1 !== constants.PIP);
         let tmp4 = !tmp3;
-        if (null == callback) {
-          tmp4 = !closure_3;
+        if (null == closure_0) {
+          tmp4 = !_slicedToArray;
         }
         if (!tmp4) {
           tmp4 = tmp2;
         }
-        participant(tmp4);
+        outer2_5(tmp4);
         let participant;
-        if (null != callback) {
-          participant = participant.getParticipant(closure_1, callback);
+        if (null != closure_0) {
+          participant = outer3_5.getParticipant(c1, closure_0);
         }
         let type;
         if (null != participant) {
           type = participant.type;
         }
-        const tmp13 = !callback(closure_2[9]).isIOS();
+        const tmp13 = !focused(mode[9]).isIOS();
         let tmp14 = !tmp13;
         if (!tmp13) {
           tmp14 = tmp12;
         }
-        lib2(tmp14);
+        outer2_8(tmp14);
         let tmp17 = !tmp4;
         if (!tmp4) {
           tmp17 = !tmp14;
         }
-        constants(tmp17);
+        outer2_7(tmp17);
       });
     }
-    const mode = updateState;
     let closure_0 = channelId(mode[10])(updateState, 500, { maxWait: 2000 });
-    let channelId;
+    let c1;
     return {
       cancelPendingDebounce(arg0, arg1) {
         lib.cancel();
@@ -89,8 +95,8 @@ const memoResult = importAllResult.memo(function VoicePanelSystemUIManager() {
   const cancelPendingDebounce = memo.cancelPendingDebounce;
   const handleStateChange = memo.handleStateChange;
   const items1 = [cancelPendingDebounce];
-  const effect = importAllResult.useEffect(() => () => callback(), items1);
-  let obj = arg1(dependencyMap[11]);
+  const effect = windowDimensions.useEffect(() => () => outer1_9(), items1);
+  let obj = focused(mode[11]);
   const fn = function v() {
     const obj = {};
     const value = focused.get();
@@ -117,7 +123,7 @@ const memoResult = importAllResult.memo(function VoicePanelSystemUIManager() {
       const obj2 = focused(mode[11]);
     }
   };
-  obj = { cheapWorkletShallowEqual: arg1(dependencyMap[12]).cheapWorkletShallowEqual, runOnJS: arg1(dependencyMap[11]).runOnJS, handleStateChange };
+  obj = { cheapWorkletShallowEqual: focused(mode[12]).cheapWorkletShallowEqual, runOnJS: focused(mode[11]).runOnJS, handleStateChange };
   fn2.__closure = obj;
   fn2.__workletHash = 3592680244658;
   fn2.__initData = closure_13;
@@ -126,12 +132,12 @@ const memoResult = importAllResult.memo(function VoicePanelSystemUIManager() {
   let tmp13 = null;
   if (tmp4[0]) {
     const obj1 = { hidden: !tmp3, barStyle: "light-content" };
-    tmp13 = cancelPendingDebounce(importDefault(dependencyMap[13]), obj1);
+    tmp13 = cancelPendingDebounce(channelId(mode[13]), obj1);
   }
-  const items2 = [tmp13, cancelPendingDebounce(importDefault(dependencyMap[14]), { prefersHidden: tmp6, prefersDeferringSystemGestures: tmp7[0] })];
+  const items2 = [tmp13, cancelPendingDebounce(channelId(mode[14]), { prefersHidden: tmp6, prefersDeferringSystemGestures: tmp7[0] })];
   obj.children = items2;
   return closure_11(handleStateChange, obj);
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/voice_panel/native/VoicePanelSystemUIManager.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/VoicePanelSystemUIManager.tsx");
 
 export default memoResult;

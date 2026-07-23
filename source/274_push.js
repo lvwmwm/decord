@@ -113,13 +113,13 @@ function advanceTimers(arg0) {
   }
 }
 function handleTimeout(arg0) {
-  let closure_11 = false;
+  let c11 = false;
   advanceTimers(arg0);
-  if (!closure_10) {
+  if (!c10) {
     if (null !== peek(closure_4)) {
-      closure_10 = true;
-      if (!closure_17) {
-        closure_17 = true;
+      c10 = true;
+      if (!c17) {
+        c17 = true;
         schedulePerformWorkUntilDeadline();
       }
     } else {
@@ -131,27 +131,27 @@ function handleTimeout(arg0) {
   }
 }
 function shouldYieldToHost() {
-  let tmp = closure_12;
-  if (!closure_12) {
-    tmp = 5 <= getCurrentTime() - closure_19;
+  let tmp = c12;
+  if (!c12) {
+    tmp = 5 <= getCurrentTime() - c19;
   }
   return tmp;
 }
 function performWorkUntilDeadline() {
-  let closure_17;
+  let c17;
   let tmp18Result;
-  let closure_12 = false;
-  if (closure_17) {
+  let c12 = false;
+  if (c17) {
     const tmp2 = getCurrentTime();
     let tmp3 = tmp2;
-    let closure_19 = tmp2;
-    let closure_10 = false;
-    if (closure_11) {
-      closure_11 = false;
-      _clearTimeout(closure_18);
-      closure_18 = -1;
+    let c19 = tmp2;
+    let c10 = false;
+    if (c11) {
+      c11 = false;
+      _clearTimeout(c18);
+      c18 = -1;
     }
-    let closure_9 = true;
+    let c9 = true;
     advanceTimers(tmp3);
     const tmp14 = peek(closure_4);
     let _null = tmp14;
@@ -206,20 +206,20 @@ function performWorkUntilDeadline() {
               _null = null;
               let tmp56 = tmp8;
               priorityLevel = tmp8;
-              closure_9 = false;
+              c9 = false;
               let tmp57 = flag3;
               if (flag3) {
                 let tmp58 = schedulePerformWorkUntilDeadline;
                 let tmp59 = schedulePerformWorkUntilDeadline();
               } else {
-                closure_17 = false;
+                c17 = false;
               }
             }
           }
         }
         _null.callback = tmp18Result;
         advanceTimers(tmp3);
-        let flag3 = true;
+        flag3 = true;
       }
     }
     if (null !== _null) {
@@ -234,9 +234,9 @@ function performWorkUntilDeadline() {
   }
 }
 function requestHostTimeout(handleTimeout, arg1) {
-  const getCurrentTime = handleTimeout;
+  let closure_0 = handleTimeout;
   let closure_18 = _setTimeout(() => {
-    arg0(arg0());
+    handleTimeout(handleTimeout());
   }, arg1);
 }
 function throwNotImplemented() {
@@ -255,14 +255,14 @@ if ("object" === typeof performance) {
   let closure_4 = [];
   let closure_5 = [];
   let num = 1;
-  let closure_6 = 1;
-  let closure_7 = null;
+  let c6 = 1;
+  let c7 = null;
   let num2 = 3;
-  let closure_8 = 3;
-  let closure_9 = false;
-  let closure_10 = false;
-  let closure_11 = false;
-  let closure_12 = false;
+  let c8 = 3;
+  let c9 = false;
+  let c10 = false;
+  let c11 = false;
+  let c12 = false;
   let _setTimeout = setTimeout;
   _setTimeout = null;
   if ("function" === typeof setTimeout) {
@@ -278,9 +278,9 @@ if ("object" === typeof performance) {
   if ("undefined" !== typeof setImmediate) {
     _setImmediate = setImmediate;
   }
-  let closure_17 = false;
-  let closure_18 = -1;
-  let closure_19 = -1;
+  let c17 = false;
+  let c18 = -1;
+  let c19 = -1;
   if ("function" === typeof _setImmediate) {
     function schedulePerformWorkUntilDeadline() {
       _setImmediate(performWorkUntilDeadline);
@@ -359,11 +359,10 @@ if ("object" === typeof performance) {
           tmp20 = obj === peek(closure_5);
         }
         if (tmp20) {
-          if (closure_11) {
-            _clearTimeout(closure_18);
-            closure_18 = num2;
+          if (c11) {
+            _clearTimeout(num2);
           } else {
-            closure_11 = true;
+            c11 = true;
           }
           num2 = requestHostTimeout;
           tmp2 = requestHostTimeout(handleTimeout, tmp2 - tmp);
@@ -371,14 +370,14 @@ if ("object" === typeof performance) {
       } else {
         obj.sortIndex = sum1;
         push(closure_4, obj);
-        let tmp10 = closure_10;
-        if (!closure_10) {
-          tmp10 = closure_9;
+        let tmp10 = c10;
+        if (!c10) {
+          tmp10 = c9;
         }
         if (!tmp10) {
-          closure_10 = true;
-          if (!closure_17) {
-            closure_17 = true;
+          c10 = true;
+          if (!c17) {
+            c17 = true;
             schedulePerformWorkUntilDeadline();
           }
         }
@@ -397,7 +396,7 @@ if ("object" === typeof performance) {
     let unstable_getCurrentPriorityLevel$1 = globalThis.nativeRuntimeScheduler.unstable_getCurrentPriorityLevel;
   } else {
     unstable_getCurrentPriorityLevel$1 = function unstable_getCurrentPriorityLevel$1() {
-      return closure_8;
+      return c8;
     };
   }
   if ("undefined" !== typeof globalThis.nativeRuntimeScheduler) {
@@ -407,7 +406,7 @@ if ("object" === typeof performance) {
     let requestPaint = globalThis.nativeRuntimeScheduler.unstable_requestPaint;
   } else {
     requestPaint = function requestPaint() {
-      let closure_12 = true;
+      let c12 = true;
     };
   }
   if ("undefined" !== typeof globalThis.nativeRuntimeScheduler) {

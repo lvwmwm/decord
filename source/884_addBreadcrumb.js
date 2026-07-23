@@ -1,14 +1,17 @@
 // Module ID: 884
-// Function ID: 9785
+// Function ID: 9786
 // Name: addBreadcrumb
-// Dependencies: []
+// Dependencies: [825, 815, 801]
 
 // Module 884 (addBreadcrumb)
+const require = arg1;
+let dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.addBreadcrumb = function addBreadcrumb(arg0, arg1) {
-  let obj = arg1(arg6[0]);
+  const _require = arg1;
+  let obj = _require(825);
   const client = obj.getClient();
-  const isolationScope = arg1(arg6[0]).getIsolationScope();
+  const isolationScope = _require(825).getIsolationScope();
   if (client) {
     const options = client.getOptions();
     const beforeBreadcrumb = options.beforeBreadcrumb;
@@ -16,7 +19,7 @@ arg5.addBreadcrumb = function addBreadcrumb(arg0, arg1) {
     if (undefined !== beforeBreadcrumb) {
       tmp3 = beforeBreadcrumb;
     }
-    const arg6 = tmp3;
+    const dependencyMap = tmp3;
     const maxBreadcrumbs = options.maxBreadcrumbs;
     let num = 100;
     if (undefined !== maxBreadcrumbs) {
@@ -24,11 +27,11 @@ arg5.addBreadcrumb = function addBreadcrumb(arg0, arg1) {
     }
     if (num > 0) {
       const _Object = Object;
-      obj = { timestamp: arg1(arg6[1]).dateTimestampInSeconds() };
+      obj = { timestamp: _require(815).dateTimestampInSeconds() };
       let merged = Object.assign(obj, arg0);
       if (tmp3) {
-        merged = arg1(arg6[2]).consoleSandbox(() => tmp3(merged, arg1));
-        const obj5 = arg1(arg6[2]);
+        merged = _require(801).consoleSandbox(() => tmp3(merged, closure_0));
+        const obj5 = _require(801);
       }
       if (null !== merged) {
         if (client.emit) {
@@ -36,7 +39,7 @@ arg5.addBreadcrumb = function addBreadcrumb(arg0, arg1) {
         }
         isolationScope.addBreadcrumb(merged, num);
       }
-      const obj6 = arg1(arg6[1]);
+      const obj6 = _require(815);
     }
   }
 };

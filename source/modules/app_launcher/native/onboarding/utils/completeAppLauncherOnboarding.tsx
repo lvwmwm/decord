@@ -1,19 +1,18 @@
-// Module ID: 11156
-// Function ID: 86776
+// Module ID: 11166
+// Function ID: 86826
 // Name: completeAppLauncherOnboarding
-// Dependencies: []
+// Dependencies: [3946, 1334, 2]
 // Exports: default
 
-// Module 11156 (completeAppLauncherOnboarding)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/app_launcher/native/onboarding/utils/completeAppLauncherOnboarding.tsx");
+// Module 11166 (completeAppLauncherOnboarding)
+let result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/utils/completeAppLauncherOnboarding.tsx");
 
 export default function completeAppLauncherOnboarding(dismissAction) {
-  let obj = require(dependencyMap[0]);
+  let obj = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
   obj = { dismissAction };
-  const result = obj.UNSAFE_markDismissibleContentAsDismissed(require(dependencyMap[1]).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
+  const result = obj.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
   obj = { dismissAction };
-  const result1 = require(dependencyMap[0]).UNSAFE_markDismissibleContentAsDismissed(require(dependencyMap[1]).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, obj);
-  const obj3 = require(dependencyMap[0]);
-  const result2 = require(dependencyMap[0]).UNSAFE_markDismissibleContentAsDismissed(require(dependencyMap[1]).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, { dismissAction });
+  const result1 = require(3946) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, obj);
+  const obj3 = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
+  const result2 = require(3946) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, { dismissAction });
 };

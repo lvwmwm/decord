@@ -1,27 +1,29 @@
-// Module ID: 15319
-// Function ID: 116511
+// Module ID: 15436
+// Function ID: 118685
 // Name: getIncomingFriendRequestCount
-// Dependencies: []
+// Dependencies: [57, 6901, 3767, 566, 2]
 // Exports: getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 15319 (getIncomingFriendRequestCount)
+// Module 15436 (getIncomingFriendRequestCount)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getIncomingFriendRequestCount(items) {
   const tmp = callback(items, 2);
   const first = tmp[0];
   const pendingCount = first.getPendingCount();
   return pendingCount + tmp[1].getPendingIncomingCount();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");
 
 export { getIncomingFriendRequestCount };
 export const useIncomingFriendRequestCount = function useIncomingFriendRequestCount() {
-  const items = [closure_4, closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const items = [closure_4, closure_3];
-    return callback(items);
+  let items = [closure_4, _isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const items = [outer1_4, outer1_3];
+    return outer1_5(items);
   });
 };
 export const getOutgoingFriendRequestCount = function getOutgoingFriendRequestCount(items1) {

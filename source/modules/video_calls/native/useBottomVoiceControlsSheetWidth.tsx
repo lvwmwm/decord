@@ -1,17 +1,19 @@
-// Module ID: 10540
-// Function ID: 82369
+// Module ID: 10550
+// Function ID: 82419
 // Name: useBottomVoiceControlsSheetWidth
-// Dependencies: []
+// Dependencies: [10211, 1450, 2]
 // Exports: default
 
-// Module 10540 (useBottomVoiceControlsSheetWidth)
-const _module = require(dependencyMap[0]);
-({ BOX_MODE_ACTIONSHEET_WIDTH: closure_2, BOX_MODE_THRESHOLD_WIDTH: closure_3 } = _module);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/video_calls/native/useBottomVoiceControlsSheetWidth.tsx");
+// Module 10550 (useBottomVoiceControlsSheetWidth)
+import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
+
+let closure_2;
+let closure_3;
+({ BOX_MODE_ACTIONSHEET_WIDTH: closure_2, BOX_MODE_THRESHOLD_WIDTH: closure_3 } = BOX_MODE_ACTIONSHEET_WIDTH);
+const result = require("set").fileFinishedImporting("modules/video_calls/native/useBottomVoiceControlsSheetWidth.tsx");
 
 export default function useBottomVoiceControlsSheetWidth() {
-  let width = importDefault(dependencyMap[1])().width;
+  let width = importDefault(1450)().width;
   if (width > closure_3) {
     width = closure_2;
   }

@@ -1,11 +1,16 @@
 // Module ID: 899
-// Function ID: 9873
+// Function ID: 9874
 // Name: generateIteratee
-// Dependencies: []
+// Dependencies: [863, 798, 900]
 
 // Module 899 (generateIteratee)
+import setupIntegration from "setupIntegration";
+
 function generateIteratee(arg0) {
-  ({ isBrowser: closure_0, root: closure_1, prefix: closure_2 } = arg0);
+  let dependencyMap;
+  let generateIteratee;
+  let require;
+  ({ isBrowser: require, root: dependencyMap, prefix: generateIteratee } = arg0);
   return (filename) => {
     if (filename.filename) {
       let isMatch = /^[a-zA-Z]:\\/.test(filename.filename);
@@ -18,7 +23,7 @@ function generateIteratee(arg0) {
         }
         isMatch = hasItem;
       }
-      if (callback) {
+      if (closure_0) {
         if (closure_1) {
           filename = filename.filename;
           if (0 === filename.indexOf(closure_1)) {
@@ -32,7 +37,7 @@ function generateIteratee(arg0) {
         } else {
           replaced = str3;
         }
-        const obj2 = callback(closure_1[2]);
+        const obj2 = outer1_0(outer1_1[2]);
         if (closure_1) {
           let relativeResult = obj2.relative(closure_1, replaced);
         } else {
@@ -48,10 +53,9 @@ function generateIteratee(arg0) {
   };
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
 
 export { generateIteratee };
-export const rewriteFramesIntegration = _module.defineIntegration(() => {
+export const rewriteFramesIntegration = setupIntegration.defineIntegration(() => {
   let prefix;
   let root;
   if (arguments.length > 0) {
@@ -62,16 +66,15 @@ export const rewriteFramesIntegration = _module.defineIntegration(() => {
     if (!prefix) {
       prefix = "app:///";
     }
-    let _window = "window" in require(dependencyMap[1]).GLOBAL_OBJ;
+    let _window = "window" in iteratee(798).GLOBAL_OBJ;
     if (_window) {
-      _window = require(dependencyMap[1]).GLOBAL_OBJ.window;
+      _window = iteratee(798).GLOBAL_OBJ.window;
     }
-    let iteratee = first.iteratee;
+    iteratee = first.iteratee;
     if (!iteratee) {
       let obj = { isBrowser: _window, root, prefix };
       iteratee = generateIteratee(obj);
     }
-    const require = iteratee;
     obj = {
       name: "RewriteFrames",
       processEvent(exception) {
@@ -82,7 +85,7 @@ export const rewriteFramesIntegration = _module.defineIntegration(() => {
           }
           let tmp2 = exception;
           if (exception) {
-            tmp2 = function _processExceptionsEvent(exception) {
+            tmp2 = (function _processExceptionsEvent(exception) {
               let obj = {};
               obj = {
                 values: values.map((stacktrace) => {
@@ -95,7 +98,7 @@ export const rewriteFramesIntegration = _module.defineIntegration(() => {
                     if (null != stacktrace2) {
                       const frames = stacktrace2.frames;
                       if (null != frames) {
-                        mapped = frames.map((arg0) => callback(arg0));
+                        mapped = frames.map((arg0) => outer3_0(arg0));
                       }
                     }
                     obj.frames = mapped;
@@ -105,10 +108,10 @@ export const rewriteFramesIntegration = _module.defineIntegration(() => {
                   return Object.assign({}, stacktrace, stacktrace);
                 })
               };
-              const values = exception.exception.values;
+              values = exception.exception.values;
               obj.exception = Object.assign({}, exception.exception, obj);
               return Object.assign({}, exception, obj);
-            }(exception);
+            })(exception);
           }
           return tmp2;
         }

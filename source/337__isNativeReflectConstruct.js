@@ -1,9 +1,21 @@
 // Module ID: 337
 // Function ID: 4974
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 77, 6, 7, 15, 17, 18, 31, 33, 338, 303, 340, 112, 252, 404, 253]
 
 // Module 337 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import importDefaultResult from "_defineProperty";
+import _inherits from "_inherits";
+import result from "result";
+import setStyleAttributePreprocessor from "setStyleAttributePreprocessor";
+import _getPrototypeOf from "_getPrototypeOf";
+import closure_9 from "_inherits";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+import { default as _default } from "I18nManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,46 +27,37 @@ function _isNativeReflectConstruct() {
 }
 class Wrapper {
   constructor(arg0) {
-    return jsx(Component, Object.assign({}, closure_4(global, _isNativeReflectConstruct), { modalRef: global.ref }));
+    return jsx(Component, Object.assign({}, _objectWithoutProperties(global, _isNativeReflectConstruct), { modalRef: global.ref }));
   }
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-const importDefaultResult = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const jsx = arg1(dependencyMap[8]).jsx;
-let closure_11 = 0;
-const tmp4 = (Component) => {
+let closure_3 = ["ref"];
+let c11 = 0;
+const tmp4 = ((Component) => {
   class Modal {
     constructor(arg0) {
       self = this;
-      tmp = closure_5(this, Modal);
+      tmp = outer1_5(this, Modal);
       items = [];
       items[0] = Component;
-      obj = closure_8(Modal);
-      tmp2 = closure_7;
-      if (closure_14()) {
+      obj = outer1_8(Modal);
+      tmp2 = outer1_7;
+      if (outer1_14()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_8;
-        constructResult = Reflect.construct(obj, items, closure_8(self).constructor);
+        tmp5 = outer1_8;
+        constructResult = Reflect.construct(obj, items, outer1_8(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp7 = +closure_11;
-      closure_11 = tmp7 + 1;
+      tmp7 = +outer1_11;
+      outer1_11 = tmp7 + 1;
       tmp2Result._identifier = tmp7;
       obj = { isRendered: true === Component.visible };
       tmp2Result.state = obj;
       return tmp2Result;
     }
   }
-  const arg1 = Modal;
   callback3(Modal, Component);
   let obj = {
     key: "componentDidMount",
@@ -62,7 +65,7 @@ const tmp4 = (Component) => {
 
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
@@ -133,7 +136,7 @@ const tmp4 = (Component) => {
           statusBarTranslucent: self.props.statusBarTranslucent,
           navigationBarTranslucent: self.props.navigationBarTranslucent,
           identifier: self._identifier,
-          style: closure_13.modal,
+          style: outer1_13.modal,
           onStartShouldSetResponder: self._shouldSetResponder,
           supportedOrientations: self.props.supportedOrientations,
           onOrientationChange: self.props.onOrientationChange,
@@ -143,14 +146,14 @@ const tmp4 = (Component) => {
         obj = {};
         const obj1 = { value: null };
         const obj2 = {};
-        const items = [closure_13.container, obj];
+        const items = [outer1_13.container, obj];
         obj2.style = items;
         obj2.collapsable = false;
         obj2.children = self.props.children;
-        obj1.children = callback4(Modal(closure_2[12]).default, obj2);
-        obj.children = callback4(Modal(closure_2[11]).default.Context.Provider, obj1);
-        obj.children = callback4(callback(closure_2[10]).VirtualizedListContextResetter, obj);
-        return callback4(callback(closure_2[9]), obj);
+        obj1.children = outer1_10(Modal(outer1_2[12]).default, obj2);
+        obj.children = outer1_10(Modal(outer1_2[11]).default.Context.Provider, obj1);
+        obj.children = outer1_10(outer1_1(outer1_2[10]).VirtualizedListContextResetter, obj);
+        return outer1_10(outer1_1(outer1_2[9]), obj);
       } else {
         return null;
       }
@@ -163,18 +166,17 @@ const tmp4 = (Component) => {
     }
   };
   return callback2(Modal, items);
-}(importAll(dependencyMap[7]).Component);
-tmp4.defaultProps = { "Null": "<string:1040334421>", "Null": "<string:1040334338>" };
-tmp4.contextType = arg1(dependencyMap[13]).RootTagContext;
-const importAllResult = importAll(dependencyMap[7]);
+})(require("result").Component);
+let closure_12 = tmp4;
+tmp4.defaultProps = { visible: true, hardwareAccelerated: false };
+tmp4.contextType = require("RootTagContext").RootTagContext;
 let str = "left";
 if (_default.getConstants().isRTL) {
   str = "right";
 }
-const _default = arg1(dependencyMap[14]).default;
-const obj = { modal: { position: "absolute" }, container: importDefaultResult(importDefaultResult(importDefaultResult({}, str, 0), "top", 0), "flex", 1) };
-let closure_13 = arg1(dependencyMap[15]).default.create(obj);
+let obj = { modal: { position: "absolute" }, container: importDefaultResult(importDefaultResult(importDefaultResult({}, str, 0), "top", 0), "flex", 1) };
+let closure_13 = require("setStyleAttributePreprocessor").default.create(obj);
 Wrapper.displayName = "Modal";
-Wrapper.Context = importDefault(dependencyMap[10]).VirtualizedListContextResetter;
+Wrapper.Context = require("get VirtualizedList").VirtualizedListContextResetter;
 
 export default Wrapper;

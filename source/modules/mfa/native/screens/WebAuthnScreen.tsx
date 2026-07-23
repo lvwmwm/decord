@@ -1,25 +1,32 @@
-// Module ID: 14527
-// Function ID: 109394
+// Module ID: 14641
+// Function ID: 111554
 // Name: AndroidAuthRadioGroup
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 1212, 1273, 477, 507, 9203, 14642, 13642, 9201, 14645, 2]
 // Exports: default
 
-// Module 14527 (AndroidAuthRadioGroup)
+// Module 14641 (AndroidAuthRadioGroup)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { NativeModules } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function AndroidAuthRadioGroup(setAuthenticator) {
   let authenticatorSelection;
   let inProgress;
-  const arg1 = setAuthenticator.setAuthenticator;
+  setAuthenticator = setAuthenticator.setAuthenticator;
   ({ authenticatorSelection, inProgress } = setAuthenticator);
   let obj = { value: obj1.ANDROID_PASSKEY };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.name = intl.string(arg1(dependencyMap[6]).t.PVVXRI);
+  const intl = setAuthenticator(1212).intl;
+  obj.name = intl.string(setAuthenticator(1212).t.PVVXRI);
   const items = [obj, ];
   obj = { value: obj1.AUTHENTICATE };
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj.name = intl2.string(arg1(dependencyMap[6]).t.TKop3X);
+  const intl2 = setAuthenticator(1212).intl;
+  obj.name = intl2.string(setAuthenticator(1212).t.TKop3X);
   items[1] = obj;
   obj = {
-    style: callback2().radioItem,
+    style: _createForOfIteratorHelperLoose().radioItem,
     options: items,
     onChange(value) {
       return setAuthenticator(value.value);
@@ -28,74 +35,75 @@ function AndroidAuthRadioGroup(setAuthenticator) {
     disabled: inProgress,
     withSpacing: true
   };
-  return jsx(arg1(dependencyMap[7]).RadioGroup, obj);
+  return jsx(setAuthenticator(1273).RadioGroup, {
+    style: _createForOfIteratorHelperLoose().radioItem,
+    options: items,
+    onChange(value) {
+      return setAuthenticator(value.value);
+    },
+    value: authenticatorSelection,
+    disabled: inProgress,
+    withSpacing: true
+  });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const NativeModules = arg1(dependencyMap[2]).NativeModules;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.md };
-obj.radioItem = obj;
-let closure_6 = obj.createStyles(obj);
-const obj1 = { AUTHENTICATE: 0, [0]: "AUTHENTICATE", ANDROID_PASSKEY: 1, [1]: "ANDROID_PASSKEY" };
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+_createForOfIteratorHelperLoose.radioItem = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { AUTHENTICATE: 0, [0]: "AUTHENTICATE", ANDROID_PASSKEY: 1, [1]: "ANDROID_PASSKEY" };
 let closure_8 = { [obj1.AUTHENTICATE]: NativeModules.DCDSecurityKeyManager.authenticate, [obj1.ANDROID_PASSKEY]: NativeModules.DCDSecurityKeyManager.authenticatePasskey };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/mfa/native/screens/WebAuthnScreen.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/mfa/native/screens/WebAuthnScreen.tsx");
 
 export default function WebAuthnScreen(arg0) {
+  let c4;
   let finish;
   let mfaChallenge;
   let tmp9;
   ({ mfaChallenge, finish } = arg0);
-  const arg1 = finish;
-  let callback;
+  let first1;
   let React;
-  let jsx;
-  let closure_6;
-  const tmp2 = callback(React.useState(false), 2);
+  let challenge;
+  let memo;
+  const tmp2 = first1(React.useState(false), 2);
   let first = tmp2[0];
   const importDefault = tmp2[1];
-  const tmp4 = callback(React.useState(undefined), 2);
-  let closure_2 = tmp4[1];
-  let obj = arg1(closure_2[8]);
-  const tmp6 = callback(React.useState(obj.isAndroid() ? obj1.ANDROID_PASSKEY : obj1.AUTHENTICATE), 2);
-  const first1 = tmp6[0];
-  callback = first1;
-  [tmp9, closure_4] = callback(React.useState(false), 2);
+  const tmp4 = first1(React.useState(undefined), 2);
+  const dependencyMap = tmp4[1];
+  let obj = finish(477);
+  const tmp6 = first1(React.useState(obj.isAndroid() ? obj1.ANDROID_PASSKEY : obj1.AUTHENTICATE), 2);
+  first1 = tmp6[0];
+  [tmp9, c4] = first1(React.useState(false), 2);
   const methods = mfaChallenge.methods;
-  const challenge = methods.find((type) => "webauthn" === type.type).challenge;
-  jsx = challenge;
+  challenge = methods.find((type) => "webauthn" === type.type).challenge;
   const items = [first1];
-  const memo = React.useMemo(() => closure_8[closure_3], items);
-  closure_6 = memo;
+  memo = React.useMemo(() => outer1_8[first1], items);
   const items1 = [memo, challenge, finish];
-  callback = React.useCallback(() => {
+  const callback = React.useCallback(() => {
     callback2(undefined);
     callback(true);
     const promise = memo(challenge);
-    const nextPromise = memo(challenge).then((data) => callback({ mfaType: "webauthn", data }));
-    const nextPromise1 = memo(challenge).then((data) => callback({ mfaType: "webauthn", data })).then(() => callback4(true));
-    memo(challenge).then((data) => callback({ mfaType: "webauthn", data })).then(() => callback4(true)).catch((message) => {
-      if (message instanceof callback(callback3[9]).HTTPResponseError) {
-        const intl = callback(callback3[6]).intl;
-        callback3(intl.string(callback(callback3[6]).t.xSCvBf));
+    const nextPromise = memo(challenge).then((data) => outer1_0({ mfaType: "webauthn", data }));
+    const nextPromise1 = memo(challenge).then((data) => outer1_0({ mfaType: "webauthn", data })).then(() => outer1_4(true));
+    memo(challenge).then((data) => outer1_0({ mfaType: "webauthn", data })).then(() => outer1_4(true)).catch((message) => {
+      if (message instanceof finish(507).HTTPResponseError) {
+        const intl = finish(1212).intl;
+        outer1_2(intl.string(finish(1212).t.xSCvBf));
       } else {
-        const result = callback(callback3[10]).captureWebAuthnException(message, {});
-        callback3(message.message);
-        const obj = callback(callback3[10]);
+        const result = finish(9203).captureWebAuthnException(message, {});
+        outer1_2(message.message);
+        const obj = finish(9203);
       }
-    }).finally(() => callback2(false));
+    }).finally(() => outer1_1(false));
   }, items1);
   obj = {};
-  const tmp12 = jsx;
-  const tmp8 = callback(React.useState(false), 2);
-  const intl = arg1(closure_2[6]).intl;
-  obj.headerText = intl.string(arg1(closure_2[6]).t.saHocI);
-  const intl2 = arg1(closure_2[6]).intl;
-  obj.subtitle = intl2.string(arg1(closure_2[6]).t.YpMrqM);
-  obj.headerImage = jsx(arg1(closure_2[12]).KeyImage, {});
-  let shouldDisplayAndroidFidoSelector = importDefault(closure_2[13]).shouldDisplayAndroidFidoSelector;
+  const tmp12 = challenge;
+  const tmp8 = first1(React.useState(false), 2);
+  let intl = finish(1212).intl;
+  obj.headerText = intl.string(finish(1212).t.saHocI);
+  const intl2 = finish(1212).intl;
+  obj.subtitle = intl2.string(finish(1212).t.YpMrqM);
+  obj.headerImage = challenge(finish(13642).KeyImage, {});
+  let shouldDisplayAndroidFidoSelector = importDefault(9201).shouldDisplayAndroidFidoSelector;
   if (shouldDisplayAndroidFidoSelector) {
     obj = { authenticatorSelection: first1, setAuthenticator: tmp6[1] };
     let tmp16 = first;
@@ -103,16 +111,16 @@ export default function WebAuthnScreen(arg0) {
       tmp16 = tmp9;
     }
     obj.inProgress = tmp16;
-    shouldDisplayAndroidFidoSelector = <AndroidAuthRadioGroup {...obj} />;
-    const tmp14 = jsx;
+    shouldDisplayAndroidFidoSelector = challenge(AndroidAuthRadioGroup, obj);
+    const tmp14 = challenge;
     const tmp15 = AndroidAuthRadioGroup;
   }
   obj.content = shouldDisplayAndroidFidoSelector;
-  const obj1 = { variant: "primary" };
-  const tmp13 = importDefault(closure_2[11]);
-  const tmp17 = jsx;
-  const intl3 = arg1(closure_2[6]).intl;
-  obj1.text = intl3.string(arg1(closure_2[6]).t.Xr3Eks);
+  obj1 = { variant: "primary" };
+  const tmp13 = importDefault(14642);
+  const tmp17 = challenge;
+  const intl3 = finish(1212).intl;
+  obj1.text = intl3.string(finish(1212).t.Xr3Eks);
   let tmp19 = first;
   if (!first) {
     tmp19 = tmp9;
@@ -123,7 +131,7 @@ export default function WebAuthnScreen(arg0) {
   }
   obj1.disabled = first;
   obj1.onPress = callback;
-  obj.submit = tmp17(importDefault(closure_2[14]), obj1);
+  obj.submit = tmp17(importDefault(14645), obj1);
   obj.screenProps = { mfaChallenge, finish };
   obj.mfaMethod = "webauthn";
   obj.error = tmp4[0];

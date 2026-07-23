@@ -1,13 +1,13 @@
-// Module ID: 6597
-// Function ID: 50828
+// Module ID: 6602
+// Function ID: 50857
 // Name: TrophyIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6603, 2]
 // Exports: TrophyIllocon
 
-// Module 6597 (TrophyIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/TrophyIllocon.native.tsx");
+// Module 6602 (TrophyIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TrophyIllocon.native.tsx");
 
 export const TrophyIllocon = function TrophyIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const TrophyIllocon = function TrophyIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6603) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const TrophyIllocon = function TrophyIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

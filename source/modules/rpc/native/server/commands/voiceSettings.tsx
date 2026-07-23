@@ -1,20 +1,19 @@
-// Module ID: 13326
-// Function ID: 101219
+// Module ID: 13440
+// Function ID: 103375
 // Name: items
-// Dependencies: []
+// Dependencies: [4033, 653, 8310, 10500, 2]
 
-// Module 13326 (items)
+// Module 13440 (items)
 let obj = {};
 obj = {};
 obj = {};
-const items = [require(dependencyMap[2]).OAuth2Scopes.RPC, require(dependencyMap[2]).OAuth2Scopes.RPC_VOICE_READ];
-obj[require(dependencyMap[0]).RPC_SCOPE_CONFIG.ANY] = items;
+const items = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_VOICE_READ];
+obj[require("RPC_SCOPE_CONFIG").RPC_SCOPE_CONFIG.ANY] = items;
 obj.scope = obj;
 obj.handler = function handler() {
-  return require(dependencyMap[3]).getDeprecatedVoiceSettings();
+  return require(10500) /* validateSocketClient */.getDeprecatedVoiceSettings();
 };
-obj[require(dependencyMap[1]).RPCCommands.GET_VOICE_SETTINGS] = obj;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/rpc/native/server/commands/voiceSettings.tsx");
+obj[require("ME").RPCCommands.GET_VOICE_SETTINGS] = obj;
+const result = require("set").fileFinishedImporting("modules/rpc/native/server/commands/voiceSettings.tsx");
 
 export default obj;

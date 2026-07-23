@@ -1,55 +1,55 @@
-// Module ID: 12041
-// Function ID: 93028
+// Module ID: 12155
+// Function ID: 95179
 // Name: CoachmarkImage
-// Dependencies: []
+// Dependencies: [31, 27, 1345, 33, 4130, 12156, 1212, 8563, 2]
 // Exports: default
 
-// Module 12041 (CoachmarkImage)
+// Module 12155 (CoachmarkImage)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function CoachmarkImage() {
   const tmp = callback();
   let obj = { style: tmp.imageContainer };
   obj = {};
-  obj = { uri: importDefault(dependencyMap[5]) };
+  obj = { uri: importDefault(12156) };
   obj.source = obj;
   obj.style = tmp.image;
-  obj.children = <closure_5 {...obj} />;
-  return <closure_4 {...obj} />;
+  obj.children = <closure_5 uri={importDefault(12156)} />;
+  return <closure_4 uri={importDefault(12156)} />;
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
-const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[1]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ imageContainer: { <string:3596066964>: null, <string:3638417373>: null }, image: { "Null": true, "Null": true } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_profile/native/WishlistViewerCoachmark.tsx");
+({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" }, image: { width: 160, height: 106 } });
+const result = require("ContentDismissActionType").fileFinishedImporting("modules/user_profile/native/WishlistViewerCoachmark.tsx");
 
 export default function WishlistViewerCoachmark(isVisible) {
   isVisible = isVisible.isVisible;
-  const arg1 = isVisible;
   const markAsDismissed = isVisible.markAsDismissed;
-  const importDefault = markAsDismissed;
   const onViewWishlist = isVisible.onViewWishlist;
-  const dependencyMap = onViewWishlist;
   const items = [onViewWishlist];
-  const callback = React.useCallback(() => {
+  callback = callback.useCallback(() => {
     onViewWishlist();
   }, items);
-  const React = callback;
   const items1 = [isVisible, markAsDismissed, callback];
-  const memo = React.useMemo(() => {
+  const memo = callback.useMemo(() => {
     const obj = {};
     const intl = isVisible(onViewWishlist[6]).intl;
-    obj.title = intl.string(isVisible(onViewWishlist[6]).t.+b6iUl);
+    obj.title = intl.string(isVisible(onViewWishlist[6]).t["+b6iUl"]);
     const intl2 = isVisible(onViewWishlist[6]).intl;
     obj.description = intl2.string(isVisible(onViewWishlist[6]).t.Howsng);
     obj.position = "bottom";
     obj.visible = isVisible;
     obj.onDismiss = function onDismiss() {
-      return callback(constants.USER_DISMISS);
+      return outer1_1(outer2_6.USER_DISMISS);
     };
     obj.renderImgComponent = function renderImgComponent() {
-      return callback2(closure_9, {});
+      return outer2_7(outer2_9, {});
     };
     const intl3 = isVisible(onViewWishlist[6]).intl;
     obj.buttonLabel = intl3.string(isVisible(onViewWishlist[6]).t.TxBQzD);
@@ -57,6 +57,6 @@ export default function WishlistViewerCoachmark(isVisible) {
     obj.onButtonPress = callback;
     return obj;
   }, items1);
-  const coachmark = arg1(dependencyMap[7]).useCoachmark(isVisible.anchorRef, memo);
+  const coachmark = isVisible(onViewWishlist[7]).useCoachmark(isVisible.anchorRef, memo);
   return null;
 };

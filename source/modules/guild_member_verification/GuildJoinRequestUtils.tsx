@@ -1,26 +1,25 @@
-// Module ID: 3947
-// Function ID: 32616
+// Module ID: 3949
+// Function ID: 32621
 // Name: isActionedApplicationStatus
-// Dependencies: []
+// Dependencies: [3950, 2]
 // Exports: isActionedAndNotAcked, isApprovedAndAcked, isSubmittedApplicationStatus
 
-// Module 3947 (isActionedApplicationStatus)
+// Module 3949 (isActionedApplicationStatus)
 function isActionedApplicationStatus(applicationStatus) {
-  let tmp = applicationStatus === require(dependencyMap[0]).GuildJoinRequestApplicationStatuses.APPROVED;
+  let tmp = applicationStatus === require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED;
   if (!tmp) {
-    tmp = applicationStatus === require(dependencyMap[0]).GuildJoinRequestApplicationStatuses.REJECTED;
+    tmp = applicationStatus === require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.REJECTED;
   }
   return tmp;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestUtils.tsx");
 
 export { isActionedApplicationStatus };
 export const isSubmittedApplicationStatus = function isSubmittedApplicationStatus(applicationStatus) {
-  return applicationStatus === require(dependencyMap[0]).GuildJoinRequestApplicationStatuses.SUBMITTED;
+  return applicationStatus === require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED;
 };
 export const isApprovedAndAcked = function isApprovedAndAcked(applicationStatus) {
-  let tmp = applicationStatus.applicationStatus === require(dependencyMap[0]).GuildJoinRequestApplicationStatuses.APPROVED;
+  let tmp = applicationStatus.applicationStatus === require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.APPROVED;
   if (tmp) {
     tmp = null != applicationStatus.lastSeen;
   }

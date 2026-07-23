@@ -1,38 +1,43 @@
-// Module ID: 16330
-// Function ID: 125994
+// Module ID: 16447
+// Function ID: 128168
 // Name: resetImperatively
-// Dependencies: []
+// Dependencies: [677, 682, 3743, 2]
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 16330 (resetImperatively)
+// Module 16447 (resetImperatively)
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+
 let closure_2 = Object.freeze({ name: "", emojiId: undefined, emojiName: undefined, description: undefined, refId: undefined });
-const _module = require(dependencyMap[0]);
-let closure_3 = _module.createWithEqualityFn((arg0) => {
-  const require = arg0;
+let closure_3 = useStoreWithEqualityFn.createWithEqualityFn((arg0) => {
+  let closure_0 = arg0;
   const obj = {};
   const merged = Object.assign(closure_2);
   obj["setEmojiId"] = function setEmojiId(emoji_id) {
-    emoji_id(closure_1[1]).batchUpdates(() => arg0({ emojiId: arg0 }));
+    const callback = emoji_id;
+    callback(outer1_1[1]).batchUpdates(() => emoji_id({ emojiId: emoji_id }));
   };
   obj["setEmojiName"] = function setEmojiName(emoji_name) {
-    emoji_name(closure_1[1]).batchUpdates(() => arg0({ emojiName: arg0 }));
+    const callback = emoji_name;
+    callback(outer1_1[1]).batchUpdates(() => emoji_name({ emojiName: emoji_name }));
   };
   obj["setName"] = function setName(arg0) {
-    arg0(closure_1[1]).batchUpdates(() => arg0({ name: arg0 }));
+    const callback = arg0;
+    callback(outer1_1[1]).batchUpdates(() => callback({ name: callback }));
   };
   obj["setDescription"] = function setDescription(description) {
-    description(closure_1[1]).batchUpdates(() => arg0({ description: arg0 }));
+    const callback = description;
+    callback(outer1_1[1]).batchUpdates(() => description({ description }));
   };
   obj["setRefId"] = function setRefId(ref_id) {
-    ref_id(closure_1[1]).batchUpdates(() => arg0({ refId: arg0 }));
+    const callback = ref_id;
+    callback(outer1_1[1]).batchUpdates(() => callback({ refId: callback }));
   };
   obj["reset"] = function reset() {
-    arg0(closure_1[1]).batchUpdates(() => callback(closure_2));
+    callback(outer1_1[1]).batchUpdates(() => outer1_0(outer2_2));
   };
   return obj;
 });
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModalStateStore.tsx");
+const result = require("isIterable").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModalStateStore.tsx");
 
 export const resetImperatively = function resetImperatively() {
   const state = store.getState();
@@ -62,33 +67,33 @@ export const useDescriptionState = function useDescriptionState() {
     const items = [, ];
     ({ description: arr[0], setDescription: arr[1] } = arg0);
     return items;
-  }, require(dependencyMap[2]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };
 export const useEmojiIdState = function useEmojiIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiId: arr[0], setEmojiId: arr[1] } = arg0);
     return items;
-  }, require(dependencyMap[2]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };
 export const useEmojiNameState = function useEmojiNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiName: arr[0], setEmojiName: arr[1] } = arg0);
     return items;
-  }, require(dependencyMap[2]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };
 export const useNameState = function useNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ name: arr[0], setName: arr[1] } = arg0);
     return items;
-  }, require(dependencyMap[2]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };
 export const useRefIdState = function useRefIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ refId: arr[0], setRefId: arr[1] } = arg0);
     return items;
-  }, require(dependencyMap[2]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };

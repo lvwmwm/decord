@@ -1,21 +1,21 @@
-// Module ID: 12181
-// Function ID: 93651
+// Module ID: 12295
+// Function ID: 95802
 // Name: createBuildOverrideEmbed
-// Dependencies: []
+// Dependencies: [27, 10440, 6979, 7633, 10939, 12296, 1554, 1212, 7625, 689, 3976, 10953, 10954, 12294, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 12181 (createBuildOverrideEmbed)
-const Image = require(dependencyMap[0]).Image;
-let closure_5 = importDefault(dependencyMap[1]);
-const State = require(dependencyMap[1]).State;
-const InviteTypes = require(dependencyMap[2]).InviteTypes;
-const _module = require(dependencyMap[14]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/BuildOverrideEmbed.tsx");
+// Module 12295 (createBuildOverrideEmbed)
+import { Image } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { State } from "_isNativeReflectConstruct";
+import { InviteTypes } from "InviteSendStates";
 
-export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, arg1) {
+const result = require("InviteSendStates").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/BuildOverrideEmbed.tsx");
+
+export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, closure_2) {
   let baseColors;
   let colors;
-  ({ colors, baseColors } = importDefault(dependencyMap[3])(arg1));
+  ({ colors, baseColors } = importDefault(7633)(closure_2));
   const currentBuildOverride = store.getCurrentBuildOverride();
   const buildOverride = store.getBuildOverride(code);
   if (buildOverride.state === State.Resolving) {
@@ -30,7 +30,8 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     if (null != override2) {
       const targetBuildOverride = override2.targetBuildOverride;
       if (null != targetBuildOverride) {
-        if (null != targetBuildOverride[closure_0(undefined, closure_3[4]).DEVICE_FIELD]) {
+        const tmp7 = targetBuildOverride[require(undefined, 10939) /* setBuildOverrideForBranch */.DEVICE_FIELD];
+        if (null != tmp7) {
           id = tmp7.id;
         }
       }
@@ -40,14 +41,15 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
       const overrides = currentBuildOverride.overrides;
       let id1;
       if (null != overrides) {
-        if (null != overrides[closure_0(undefined, closure_3[4]).DEVICE_FIELD]) {
+        const tmp12 = overrides[require(undefined, 10939) /* setBuildOverrideForBranch */.DEVICE_FIELD];
+        if (null != tmp12) {
           id1 = tmp12.id;
         }
       }
       tmp8 = id === id1;
     }
-    obj = importAll(dependencyMap[6]);
-    const tmp15Result = importDefault(dependencyMap[5])(buildOverride.override, [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016798304201565856, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009336992387569061], obj.getConstants().Version);
+    obj = importAll(1554);
+    const tmp15Result = importDefault(12296)(buildOverride.override, ["discord_ios", "discord_android"], obj.getConstants().Version);
     if (currentBuildOverride.state !== State.Invalid) {
       if (buildOverride.state !== State.Invalid) {
         if (null != buildOverride.override) {
@@ -55,38 +57,39 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
             if (tmp15Result.valid) {
               obj = {};
               const merged1 = Object.assign(baseColors);
-              const intl3 = require(dependencyMap[7]).intl;
-              obj["headerText"] = intl3.string(require(dependencyMap[7]).t.Wj3LW4).toLocaleUpperCase();
+              const intl3 = require(1212) /* getSystemLocale */.intl;
+              obj["headerText"] = intl3.string(require(1212) /* getSystemLocale */.t.Wj3LW4).toLocaleUpperCase();
               obj["headerColor"] = colors.headerColor;
-              const intl4 = require(dependencyMap[7]).intl;
+              const intl4 = require(1212) /* getSystemLocale */.intl;
               const override = buildOverride.override;
               let type;
               if (null != override) {
                 const targetBuildOverride2 = override.targetBuildOverride;
                 if (null != targetBuildOverride2) {
-                  if (null != targetBuildOverride2[closure_0(undefined, closure_3[4]).DEVICE_FIELD]) {
+                  const tmp44 = targetBuildOverride2[require(undefined, 10939) /* setBuildOverrideForBranch */.DEVICE_FIELD];
+                  if (null != tmp44) {
                     type = tmp44.type;
                   }
                 }
               }
               if ("branch" === type) {
-                let RCYGot = require(dependencyMap[7]).t.p9TwTG;
+                let RCYGot = require(1212) /* getSystemLocale */.t.p9TwTG;
               } else {
-                RCYGot = require(dependencyMap[7]).t.RCYGot;
+                RCYGot = require(1212) /* getSystemLocale */.t.RCYGot;
               }
               obj["titleText"] = intl4.string(RCYGot);
               obj["titleColor"] = colors.titleColor;
               obj["subtitle"] = id;
               obj["subtitleColor"] = colors.subtitleColor;
-              obj["thumbnailUrl"] = Image.resolveAssetSource(importDefault(dependencyMap[13])).uri;
+              obj["thumbnailUrl"] = Image.resolveAssetSource(importDefault(12294)).uri;
               let str17 = "primary";
               if (tmp8) {
                 str17 = "destructive";
               }
               obj["acceptButtonVariant"] = str17;
-              const intl5 = require(dependencyMap[7]).intl;
+              const intl5 = require(1212) /* getSystemLocale */.intl;
               const string = intl5.string;
-              let str19 = require(dependencyMap[7]).t;
+              let str19 = require(1212) /* getSystemLocale */.t;
               if (tmp8) {
                 let stringResult1 = string(str19.tX4xrt);
               } else {
@@ -97,7 +100,7 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
               obj["canBeAccepted"] = true;
               str19 = "type";
               obj["type"] = InviteTypes.GUILD;
-              const stringResult = intl3.string(require(dependencyMap[7]).t.Wj3LW4);
+              const stringResult = intl3.string(require(1212) /* getSystemLocale */.t.Wj3LW4);
             }
           }
         }
@@ -105,14 +108,14 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     }
     const obj1 = {};
     const merged2 = Object.assign(baseColors);
-    const intl = require(dependencyMap[7]).intl;
-    const tmp15 = importDefault(dependencyMap[5]);
-    obj1["headerText"] = intl.string(require(dependencyMap[7]).t.d34xi4).toLocaleUpperCase();
-    const stringResult2 = intl.string(require(dependencyMap[7]).t.d34xi4);
-    obj1["titleColor"] = require(dependencyMap[8]).processColorOrThrow(importDefault(dependencyMap[9]).unsafe_rawColors.RED_400);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    const tmp15 = importDefault(12296);
+    obj1["headerText"] = intl.string(require(1212) /* getSystemLocale */.t.d34xi4).toLocaleUpperCase();
+    const stringResult2 = intl.string(require(1212) /* getSystemLocale */.t.d34xi4);
+    obj1["titleColor"] = require(7625) /* processColorOrThrow */.processColorOrThrow(importDefault(689).unsafe_rawColors.RED_400);
     if (tmp15Result.valid) {
-      const intl2 = require(dependencyMap[7]).intl;
-      let reason = intl2.string(require(dependencyMap[7]).t.ODXApH);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      let reason = intl2.string(require(1212) /* getSystemLocale */.t.ODXApH);
     } else {
       reason = tmp15Result.reason;
     }
@@ -123,16 +126,16 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
       subtitleColor = colors.subtitleColor;
     }
     obj1["subtitleColor"] = subtitleColor;
-    const obj4 = require(dependencyMap[8]);
-    if (obj5.isThemeDark(arg1)) {
-      let tmp32Result = tmp32(tmp33[11]);
+    const obj4 = require(7625) /* processColorOrThrow */;
+    if (obj5.isThemeDark(closure_2)) {
+      let tmp32Result = tmp32(10953);
     } else {
-      tmp32Result = tmp32(tmp33[12]);
+      tmp32Result = tmp32(10954);
     }
     obj1["thumbnailUrl"] = Image.resolveAssetSource(tmp32Result).uri;
     obj1["thumbnailBackgroundColor"] = colors.thumbnailBackgroundColor;
     obj1["type"] = InviteTypes.GUILD;
     return obj1;
   }
-  const tmp = importDefault(dependencyMap[3])(arg1);
+  const tmp = importDefault(7633)(closure_2);
 };

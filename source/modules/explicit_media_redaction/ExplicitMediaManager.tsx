@@ -1,9 +1,28 @@
-// Module ID: 6838
-// Function ID: 54006
+// Module ID: 6843
+// Function ID: 54038
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 6830, 1194, 5659, 1348, 4349, 1906, 3947, 6844, 653, 662, 6835, 5670, 5673, 5675, 686, 6845, 6837, 6842, 6846, 6847, 21, 4351, 4291, 5078, 2]
 
-// Module 6838 (_isNativeReflectConstruct)
+// Module 6843 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import timeoutAttachmentsAndEmbedsForMessage from "timeoutAttachmentsAndEmbedsForMessage";
+import ContentHarmType from "ContentHarmType";
+import ContentHarmTypeChannel from "ContentHarmTypeChannel";
+import closure_8 from "_isNativeReflectConstruct";
+import { ReferencedMessageState } from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import { MessageTypesWithLazyLoadedReferences as closure_17 } from "ME";
+import { UserSettingsTypes } from "MAX_FAVORITES";
+import tmp2 from "AutomaticLifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -26,10 +45,10 @@ function resetManager() {
 function maybeCancelTimeout(message, UPDATE) {
   if (null != message.id) {
     if (null != message.channel_id) {
-      const tmp2 = createCompositeKey(message);
-      if (null != closure_19[tmp2]) {
-        function handleMediaScanCompleteReporting(attachments, UPDATE, setAt) {
-          if (UPDATE === callback(closure_2[15]).TimeoutCancelSource.UPDATE) {
+      const tmp4 = createCompositeKey(message);
+      if (null != dependencyMap[tmp4]) {
+        (function handleMediaScanCompleteReporting(attachments, UPDATE, setAt) {
+          if (UPDATE === outer1_0(outer1_2[15]).TimeoutCancelSource.UPDATE) {
             attachments = attachments.attachments;
             if (null == attachments) {
               attachments = [];
@@ -39,16 +58,16 @@ function maybeCancelTimeout(message, UPDATE) {
               embeds = [];
             }
             const found = attachments.filter((media) => {
-              let obj = callback(closure_2[16]);
-              obj = { type: callback(closure_2[18]).ObscuredMediaTypes.Attachment, media };
-              return obj.isMediaFlaggedForHarmType(callback(closure_2[17]).ContentHarmType.EXPLICIT, obj);
+              let obj = outer2_0(outer2_2[16]);
+              obj = { type: outer2_0(outer2_2[18]).ObscuredMediaTypes.Attachment, media };
+              return obj.isMediaFlaggedForHarmType(outer2_0(outer2_2[17]).ContentHarmType.EXPLICIT, obj);
             });
             const found1 = embeds.filter((media) => {
-              let obj = callback(closure_2[16]);
-              obj = { type: callback(closure_2[18]).ObscuredMediaTypes.Embed, media };
-              return obj.isMediaFlaggedForHarmType(callback(closure_2[17]).ContentHarmType.EXPLICIT, obj);
+              let obj = outer2_0(outer2_2[16]);
+              obj = { type: outer2_0(outer2_2[18]).ObscuredMediaTypes.Embed, media };
+              return obj.isMediaFlaggedForHarmType(outer2_0(outer2_2[17]).ContentHarmType.EXPLICIT, obj);
             });
-            let obj = callback(closure_2[15]);
+            let obj = outer1_0(outer1_2[15]);
             obj = {};
             ({ id: obj2.messageId, channel_id: obj2.channelId } = attachments);
             obj.numOfAttachments = attachments.length;
@@ -57,11 +76,11 @@ function maybeCancelTimeout(message, UPDATE) {
             obj.numOfExplicitEmbeds = found1.length;
             const result = obj.trackExplicitMediaScanComplete(obj);
           }
-          callback(closure_2[15]).trackScanTiming(setAt, UPDATE);
-        }(message, UPDATE, closure_19[tmp2].setAt);
+          outer1_0(outer1_2[15]).trackScanTiming(setAt, UPDATE);
+        })(message, UPDATE, dependencyMap[tmp4].setAt);
         const _clearTimeout = clearTimeout;
-        clearTimeout(closure_19[tmp2].timeout);
-        delete r0[r1];
+        clearTimeout(dependencyMap[tmp4].timeout);
+        delete tmp[tmp2];
         return true;
       } else {
         return false;
@@ -72,7 +91,7 @@ function maybeCancelTimeout(message, UPDATE) {
 }
 function sendForScanning(found1, arg1) {
   if (0 !== found1.length) {
-    const obj = arg1(dependencyMap[20]);
+    const obj = require(6845) /* reportFalsePositive */;
     if (arg1) {
       const result = obj.sendMultiChannelMessagesForScanning(found1);
     } else {
@@ -81,7 +100,7 @@ function sendForScanning(found1, arg1) {
   }
 }
 function withoutScheduledTimeout(arg0) {
-  return null == closure_19[closure_21(undefined, arg0)];
+  return null == dependencyMap[createCompositeKey(undefined, arg0)];
 }
 function handleUnscannedMessages(messagesPendingScan, isMessageUpdate) {
   let obj = isMessageUpdate;
@@ -94,22 +113,21 @@ function handleUnscannedMessages(messagesPendingScan, isMessageUpdate) {
   if (null != isMessageUpdate) {
     if (isMessageUpdate.isMessageUpdate) {
       const found = messagesPendingScan.filter((message) => {
-        let result = found1(closure_2[16]).isEligibleForScanning(message);
+        let result = found1(outer1_2[16]).isEligibleForScanning(message);
         if (result) {
-          result = found1(closure_2[16]).hasUnscannedMedia(message);
-          const obj2 = found1(closure_2[16]);
+          result = found1(outer1_2[16]).hasUnscannedMedia(message);
+          const obj2 = found1(outer1_2[16]);
         }
         return result;
       });
       let found1 = found.filter(withoutScheduledTimeout);
     }
-    isMessageUpdate = found1;
     const item = found1.forEach((arg0) => {
-      const found1 = arg0;
-      const tmp = callback(arg0);
-      if (null == closure_19[tmp]) {
-        let obj = tmp(closure_2[21]);
-        obj = { name: found1(closure_2[22]).MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE };
+      let closure_0 = arg0;
+      const tmp = outer1_21(arg0);
+      if (null == outer1_19[tmp]) {
+        let obj = tmp(outer1_2[21]);
+        obj = { name: found1(outer1_2[22]).MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE };
         obj.increment(obj);
         obj = {};
         const _Date = Date;
@@ -118,26 +136,26 @@ function handleUnscannedMessages(messagesPendingScan, isMessageUpdate) {
         obj.timeout = setTimeout(() => {
           let attachmentIds;
           let embedIds;
-          if (callback2(arg0, arg0(closure_2[15]).TimeoutCancelSource.TIMEOUT)) {
-            const message = message.getMessage(tmp.channel_id, tmp.id);
+          if (outer2_23(closure_0, found1(outer2_2[15]).TimeoutCancelSource.TIMEOUT)) {
+            const message = outer2_13.getMessage(tmp.channel_id, tmp.id);
             if (null != message) {
-              let obj = arg0(closure_2[16]);
+              let obj = found1(outer2_2[16]);
               const unscannedMediaIds = obj.getUnscannedMediaIds(message);
               ({ attachmentIds, embedIds } = unscannedMediaIds);
               obj = {};
               ({ channel_id: obj3.channelId, id: obj3.messageId } = tmp);
               obj.attachmentIds = attachmentIds;
               obj.embedIds = embedIds;
-              const result = arg0(closure_2[15]).trackScanningTimedOut(obj);
-              const obj2 = arg0(closure_2[15]);
+              const result = found1(outer2_2[15]).trackScanningTimedOut(obj);
+              const obj2 = found1(outer2_2[15]);
             }
             obj = { type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT" };
             ({ id: obj5.messageId, channel_id: obj5.channelId } = tmp);
-            callback(closure_2[19]).dispatch(obj);
-            const obj4 = callback(closure_2[19]);
+            callback(outer2_2[19]).dispatch(obj);
+            const obj4 = callback(outer2_2[19]);
           }
         }, 3000);
-        closure_19[tmp] = obj;
+        outer1_19[tmp] = obj;
       }
     });
     if (!tmp) {
@@ -147,29 +165,27 @@ function handleUnscannedMessages(messagesPendingScan, isMessageUpdate) {
     }
     const importDefault = tmp;
     if (tmp2) {
-      const _setTimeout = setTimeout;
+      let _setTimeout = setTimeout;
       const _Math = Math;
       const timerId = setTimeout(() => {
-
+        outer1_24(found1.filter((arg0) => null != outer2_19[outer2_21(undefined, arg0)]), closure_1);
       }, 800 * Math.random());
     } else {
       sendForScanning(found1, tmp);
     }
   }
-  const found2 = messagesPendingScan.filter((components) => found1(closure_2[16]).isEligibleForScanning(components));
+  const found2 = messagesPendingScan.filter((components) => found1(outer1_2[16]).isEligibleForScanning(components));
   found1 = found2.filter(withoutScheduledTimeout);
 }
 function aggregateExplicitMediaCounts(arr) {
   const channelLookup = {};
-  const arg1 = channelLookup;
   const messageLookup = {};
-  const importDefault = messageLookup;
   const item = arr.forEach((channel_id) => {
     if (null == channelLookup[channel_id.channel_id]) {
-      channelLookup[channel_id.channel_id] = { y: -24, SEARCH_OPENED: null, y: 1, onDeactivate: "Malaysia" };
+      channelLookup[channel_id.channel_id] = { numOfAttachments: 0, numOfAttachmentsPendingScan: 0, numOfEmbeds: 0, numOfEmbedsPendingScan: 0 };
     }
     if (null == messageLookup[channel_id.id]) {
-      const obj = { channelId: channel_id.channel_id };
+      let obj = { channelId: channel_id.channel_id, numOfAttachments: 0, numOfSelfHarmAttachments: 0, numOfGoreAttachments: 0, numOfExplicitAttachments: 0, numOfEmbeds: 0, numOfSelfHarmEmbeds: 0, numOfGoreEmbeds: 0, numOfExplicitEmbeds: 0 };
       messageLookup[channel_id.id] = obj;
     }
     const attachments = channel_id.attachments;
@@ -190,7 +206,7 @@ function aggregateExplicitMediaCounts(arr) {
     if (null != length1) {
       num2 = length1;
     }
-    const unscannedMediaIds = channelLookup(closure_2[16]).getUnscannedMediaIds(channel_id);
+    const unscannedMediaIds = channelLookup(outer1_2[16]).getUnscannedMediaIds(channel_id);
     channelLookup[channel_id.channel_id].numOfAttachments = channelLookup[channel_id.channel_id].numOfAttachments + num;
     channelLookup[channel_id.channel_id].numOfEmbeds = channelLookup[channel_id.channel_id].numOfEmbeds + num2;
     channelLookup[channel_id.channel_id].numOfAttachmentsPendingScan = channelLookup[channel_id.channel_id].numOfAttachmentsPendingScan + unscannedMediaIds.attachmentIds.length;
@@ -201,9 +217,9 @@ function aggregateExplicitMediaCounts(arr) {
     let length2;
     if (null != attachments1) {
       length2 = attachments1.filter((media) => {
-        let obj = callback(closure_2[16]);
-        obj = { type: callback(closure_2[18]).ObscuredMediaTypes.Attachment, media };
-        return obj.isMediaFlaggedForHarmType(callback(closure_2[17]).ContentHarmType.EXPLICIT, obj);
+        let obj = channelLookup(outer2_2[16]);
+        obj = { type: channelLookup(outer2_2[18]).ObscuredMediaTypes.Attachment, media };
+        return obj.isMediaFlaggedForHarmType(channelLookup(outer2_2[17]).ContentHarmType.EXPLICIT, obj);
       }).length;
     }
     let num3 = 0;
@@ -215,9 +231,9 @@ function aggregateExplicitMediaCounts(arr) {
     let length3;
     if (null != embeds1) {
       length3 = embeds1.filter((media) => {
-        let obj = callback(closure_2[16]);
-        obj = { type: callback(closure_2[18]).ObscuredMediaTypes.Embed, media };
-        return obj.isMediaFlaggedForHarmType(callback(closure_2[17]).ContentHarmType.EXPLICIT, obj);
+        let obj = channelLookup(outer2_2[16]);
+        obj = { type: channelLookup(outer2_2[18]).ObscuredMediaTypes.Embed, media };
+        return obj.isMediaFlaggedForHarmType(channelLookup(outer2_2[17]).ContentHarmType.EXPLICIT, obj);
       }).length;
     }
     let num4 = 0;
@@ -229,9 +245,9 @@ function aggregateExplicitMediaCounts(arr) {
     let length4;
     if (null != attachments2) {
       length4 = attachments2.filter((media) => {
-        let obj = callback(closure_2[16]);
-        obj = { type: callback(closure_2[18]).ObscuredMediaTypes.Attachment, media };
-        return obj.isMediaFlaggedForHarmType(callback(closure_2[17]).ContentHarmType.GORE, obj);
+        let obj = channelLookup(outer2_2[16]);
+        obj = { type: channelLookup(outer2_2[18]).ObscuredMediaTypes.Attachment, media };
+        return obj.isMediaFlaggedForHarmType(channelLookup(outer2_2[17]).ContentHarmType.GORE, obj);
       }).length;
     }
     let num5 = 0;
@@ -243,9 +259,9 @@ function aggregateExplicitMediaCounts(arr) {
     let length5;
     if (null != embeds2) {
       length5 = embeds2.filter((media) => {
-        let obj = callback(closure_2[16]);
-        obj = { type: callback(closure_2[18]).ObscuredMediaTypes.Embed, media };
-        return obj.isMediaFlaggedForHarmType(callback(closure_2[17]).ContentHarmType.GORE, obj);
+        let obj = channelLookup(outer2_2[16]);
+        obj = { type: channelLookup(outer2_2[18]).ObscuredMediaTypes.Embed, media };
+        return obj.isMediaFlaggedForHarmType(channelLookup(outer2_2[17]).ContentHarmType.GORE, obj);
       }).length;
     }
     let num6 = 0;
@@ -257,9 +273,9 @@ function aggregateExplicitMediaCounts(arr) {
     let length6;
     if (null != attachments3) {
       length6 = attachments3.filter((media) => {
-        let obj = callback(closure_2[16]);
-        obj = { type: callback(closure_2[18]).ObscuredMediaTypes.Attachment, media };
-        return obj.isMediaFlaggedForHarmType(callback(closure_2[17]).ContentHarmType.SELF_HARM, obj);
+        let obj = channelLookup(outer2_2[16]);
+        obj = { type: channelLookup(outer2_2[18]).ObscuredMediaTypes.Attachment, media };
+        return obj.isMediaFlaggedForHarmType(channelLookup(outer2_2[17]).ContentHarmType.SELF_HARM, obj);
       }).length;
     }
     let num7 = 0;
@@ -271,9 +287,9 @@ function aggregateExplicitMediaCounts(arr) {
     let length7;
     if (null != embeds3) {
       length7 = embeds3.filter((media) => {
-        let obj = callback(closure_2[16]);
-        obj = { type: callback(closure_2[18]).ObscuredMediaTypes.Embed, media };
-        return obj.isMediaFlaggedForHarmType(callback(closure_2[17]).ContentHarmType.SELF_HARM, obj);
+        let obj = channelLookup(outer2_2[16]);
+        obj = { type: channelLookup(outer2_2[18]).ObscuredMediaTypes.Embed, media };
+        return obj.isMediaFlaggedForHarmType(channelLookup(outer2_2[17]).ContentHarmType.SELF_HARM, obj);
       }).length;
     }
     let num8 = 0;
@@ -287,10 +303,10 @@ function aggregateExplicitMediaCounts(arr) {
 function processMessagesFromAction(firstMessages, isMessageUpdate) {
   let attributesByChannelId;
   let attributesByMessageId;
-  const tmp = function getScanningAttributesForMessages(arr) {
+  const tmp = (function getScanningAttributesForMessages(arr) {
     const found = arr.filter((message) => {
-      let result = callback(closure_2[23]).hasAttachmentsEmbedsComponentsOrSnapshots(message);
-      const obj = callback(closure_2[23]);
+      let result = outer2_0(outer2_2[23]).hasAttachmentsEmbedsComponentsOrSnapshots(message);
+      const obj = outer2_0(outer2_2[23]);
       if (result) {
         result = 0 !== obj2.getEnabledHarmTypesForMessage(message);
       }
@@ -304,9 +320,9 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
               if (0 !== obj2.getEnabledHarmTypesForMessage(referenced_message.referenced_message)) {
                 return referenced_message.referenced_message;
               }
-              const obj2 = callback(closure_2[16]);
+              obj2 = outer2_0(outer2_2[16]);
             }
-            const obj = callback(closure_2[23]);
+            obj = outer2_0(outer2_2[23]);
           }
         }
       }
@@ -318,29 +334,29 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
       HermesBuiltin.arraySpread(found1, HermesBuiltin.arraySpread(found, 0));
       tmp2 = items;
     }
-    const arr4 = callback2(closure_2[24])(tmp2, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
-    const found2 = arr4.filter((message) => callback(closure_2[16]).hasUnscannedMedia(message));
-    const tmp9 = callback3(arr4);
+    const arr4 = outer1_1(outer1_2[24])(tmp2, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+    const found2 = arr4.filter((message) => outer2_0(outer2_2[16]).hasUnscannedMedia(message));
+    const tmp9 = outer1_27(arr4);
     return { messagesPendingScan: found2, attributesByMessageId: tmp9.messageLookup, attributesByChannelId: tmp9.channelLookup };
-  }(firstMessages);
+  })(firstMessages);
   const messagesPendingScan = tmp.messagesPendingScan;
   ({ attributesByChannelId, attributesByMessageId } = tmp);
-  const entries = importDefault(dependencyMap[25]).entries(attributesByChannelId);
+  const entries = importDefault(21).entries(attributesByChannelId);
   const item = entries.forEach((arg0) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = arg0;
-    let obj = callback(closure_2[15]);
+    let obj = outer1_0(outer1_2[15]);
     obj = { channelId: tmp, numOfAttachments: tmp2.numOfAttachments, numOfAttachmentsPendingScan: tmp2.numOfAttachmentsPendingScan, numOfEmbeds: tmp2.numOfEmbeds, numOfEmbedsPendingScan: tmp2.numOfEmbedsPendingScan };
     const result = obj.trackExplicitMediaRedactableMessagedLoaded(obj);
   });
-  const obj = importDefault(dependencyMap[25]);
-  const entries1 = importDefault(dependencyMap[25]).entries(attributesByMessageId);
+  let obj = importDefault(21);
+  const entries1 = importDefault(21).entries(attributesByMessageId);
   const item1 = entries1.forEach((arg0) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = arg0;
-    let obj = callback(closure_2[15]);
+    let obj = outer1_0(outer1_2[15]);
     obj = { messageId: tmp, channelId: tmp2.channelId, numOfAttachments: tmp2.numOfAttachments, numOfGoreAttachments: tmp2.numOfGoreAttachments, numOfExplicitAttachments: tmp2.numOfExplicitAttachments, numOfSelfHarmAttachments: tmp2.numOfSelfHarmAttachments, numOfEmbeds: tmp2.numOfEmbeds, numOfGoreEmbeds: tmp2.numOfGoreEmbeds, numOfExplicitEmbeds: tmp2.numOfExplicitEmbeds, numOfSelfHarmEmbeds: tmp2.numOfSelfHarmEmbeds };
     const result = obj.trackRedactableMessageLoaded(obj);
   });
@@ -354,28 +370,28 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
 function processChannelMessagesFromAction(messages) {
   let attributesByChannelId;
   let attributesByMessageId;
-  const tmp = function getScanningAttributesForChannelMessages(arr) {
+  const tmp = (function getScanningAttributesForChannelMessages(arr) {
     const found = arr.filter((message) => {
-      let result = callback(closure_2[23]).hasAttachmentsEmbedsComponentsOrSnapshots(message);
+      let result = outer2_0(outer2_2[23]).hasAttachmentsEmbedsComponentsOrSnapshots(message);
       if (result) {
-        result = 0 !== callback(closure_2[16]).getEnabledHarmTypesForMessage(message);
-        const obj2 = callback(closure_2[16]);
+        result = 0 !== outer2_0(outer2_2[16]).getEnabledHarmTypesForMessage(message);
+        const obj2 = outer2_0(outer2_2[16]);
       }
       return result;
     });
     const mapped = arr.map((type) => {
-      if (set.has(type.type)) {
+      if (outer2_17.has(type.type)) {
         if (null != type.messageReference) {
-          const messageByReference = messageByReference.getMessageByReference(type.messageReference);
-          if (messageByReference.state === constants.LOADED) {
+          const messageByReference = outer2_8.getMessageByReference(type.messageReference);
+          if (messageByReference.state === outer2_9.LOADED) {
             if (null != messageByReference.message) {
               if (obj.hasAttachmentsEmbedsComponentsOrSnapshots(messageByReference.message)) {
                 if (0 !== obj2.getEnabledHarmTypesForMessage(messageByReference.message)) {
                   return messageByReference.message;
                 }
-                const obj2 = callback(closure_2[16]);
+                obj2 = outer2_0(outer2_2[16]);
               }
-              const obj = callback(closure_2[23]);
+              obj = outer2_0(outer2_2[23]);
             }
           }
         }
@@ -388,29 +404,29 @@ function processChannelMessagesFromAction(messages) {
       HermesBuiltin.arraySpread(found1, HermesBuiltin.arraySpread(found, 0));
       tmp2 = items;
     }
-    const arr4 = callback2(closure_2[24])(tmp2, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
-    const found2 = arr4.filter((message) => callback(closure_2[16]).hasUnscannedMedia(message));
-    const tmp9 = callback3(arr4);
+    const arr4 = outer1_1(outer1_2[24])(tmp2, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+    const found2 = arr4.filter((message) => outer2_0(outer2_2[16]).hasUnscannedMedia(message));
+    const tmp9 = outer1_27(arr4);
     return { messagesPendingScan: found2, attributesByChannelId: tmp9.channelLookup, attributesByMessageId: tmp9.messageLookup };
-  }(messages);
+  })(messages);
   const messagesPendingScan = tmp.messagesPendingScan;
   ({ attributesByChannelId, attributesByMessageId } = tmp);
-  const entries = importDefault(dependencyMap[25]).entries(attributesByChannelId);
+  const entries = importDefault(21).entries(attributesByChannelId);
   const item = entries.forEach((arg0) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = arg0;
-    let obj = callback(closure_2[15]);
+    let obj = outer1_0(outer1_2[15]);
     obj = { channelId: tmp, numOfAttachments: tmp2.numOfAttachments, numOfAttachmentsPendingScan: tmp2.numOfAttachmentsPendingScan, numOfEmbeds: tmp2.numOfEmbeds, numOfEmbedsPendingScan: tmp2.numOfEmbedsPendingScan };
     const result = obj.trackExplicitMediaRedactableMessagedLoaded(obj);
   });
-  const obj = importDefault(dependencyMap[25]);
-  const entries1 = importDefault(dependencyMap[25]).entries(attributesByMessageId);
+  let obj = importDefault(21);
+  const entries1 = importDefault(21).entries(attributesByMessageId);
   const item1 = entries1.forEach((arg0) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = arg0;
-    let obj = callback(closure_2[15]);
+    let obj = outer1_0(outer1_2[15]);
     obj = { messageId: tmp, channelId: tmp2.channelId, numOfAttachments: tmp2.numOfAttachments, numOfGoreAttachments: tmp2.numOfGoreAttachments, numOfSelfHarmAttachments: tmp2.numOfSelfHarmAttachments, numOfExplicitAttachments: tmp2.numOfExplicitAttachments, numOfEmbeds: tmp2.numOfEmbeds, numOfGoreEmbeds: tmp2.numOfGoreEmbeds, numOfExplicitEmbeds: tmp2.numOfExplicitEmbeds, numOfSelfHarmEmbeds: tmp2.numOfSelfHarmEmbeds };
     const result = obj.trackRedactableMessageLoaded(obj);
   });
@@ -428,7 +444,7 @@ function handleMessageUpdate(message) {
       if (obj7.getChannelIdAndAuthorIdFromMessage(message).authorId !== store.getId()) {
         if (null == message.embeds) {
           if (null == message.attachments) {
-            let obj = arg1(dependencyMap[15]);
+            let obj = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */;
             if (!obj.hasMessageSnapshotsWithAttachmentsOrEmbeds(message)) {
               return false;
             }
@@ -449,7 +465,7 @@ function handleMessageUpdate(message) {
             if (!obj2.hasMessageSnapshotsWithAttachmentsOrEmbeds(message)) {
               return false;
             }
-            const obj2 = arg1(dependencyMap[15]);
+            obj2 = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */;
           }
         }
         if (!obj3.hasUnscannedMedia(message)) {
@@ -459,7 +475,7 @@ function handleMessageUpdate(message) {
           }
           if (null == message) {
             const message1 = message.getMessage(message.channel_id, message.id);
-            let message2;
+            message2 = undefined;
             if (null != message1) {
               message2 = message1.message;
             }
@@ -467,12 +483,12 @@ function handleMessageUpdate(message) {
           }
           let hasUnscannedMediaResult = null == message;
           if (!hasUnscannedMediaResult) {
-            const obj4 = arg1(dependencyMap[16]);
-            hasUnscannedMediaResult = obj4.hasUnscannedMedia(arg1(dependencyMap[26]).updateMessageRecord(message, message));
-            const obj5 = arg1(dependencyMap[26]);
+            const obj4 = require(5670) /* _createForOfIteratorHelperLoose */;
+            hasUnscannedMediaResult = obj4.hasUnscannedMedia(require(4351) /* createMinimalMessageRecord */.updateMessageRecord(message, message));
+            const obj5 = require(4351) /* createMinimalMessageRecord */;
           }
           if (!hasUnscannedMediaResult) {
-            maybeCancelTimeout(message, arg1(dependencyMap[15]).TimeoutCancelSource.UPDATE);
+            maybeCancelTimeout(message, require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.TimeoutCancelSource.UPDATE);
           }
         }
         const channelId = store4.getChannelId();
@@ -490,7 +506,7 @@ function handleMessageUpdate(message) {
         }
         return tmp28;
       }
-      const obj7 = arg1(dependencyMap[16]);
+      obj7 = require(5670) /* _createForOfIteratorHelperLoose */;
     }
   }
   return false;
@@ -505,7 +521,7 @@ function handleMessageCreate(optimistic) {
         if (obj2.getChannelIdAndAuthorIdFromMessage(message).authorId !== store.getId()) {
           channelId = store4.getChannelId();
           const currentSidebarChannelId = store2.getCurrentSidebarChannelId(channelId);
-          const channel = channel.getChannel(channelId);
+          channel = channel.getChannel(channelId);
           if (channelId !== channelId) {
             if (channelId !== currentSidebarChannelId) {
               return false;
@@ -536,7 +552,7 @@ function handleMessageCreate(optimistic) {
           obj.jitter = tmp3;
           return processMessagesFromAction(items, obj);
         }
-        const obj2 = arg1(dependencyMap[16]);
+        obj2 = require(5670) /* _createForOfIteratorHelperLoose */;
       }
     }
   }
@@ -560,12 +576,12 @@ function handleMessagesLoad(arg0) {
 }
 function handleSearchMessagesSuccess(data) {
   data = data.data;
-  let closure_0 = false;
+  let c0 = false;
   const item = data.forEach((messages) => {
-    const tmp = callback(closure_2[27])(messages.messages);
-    closure_0 = callback2(callback(closure_2[24])(callback(closure_2[27])(messages.messages), (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id)) || closure_0;
+    const tmp = outer1_1(outer1_2[27])(messages.messages);
+    c0 = outer1_28(outer1_1(outer1_2[24])(outer1_1(outer1_2[27])(messages.messages), (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id)) || c0;
   });
-  return closure_0;
+  return c0;
 }
 function handleLoadPinnedMessages(pins) {
   pins = pins.pins;
@@ -573,14 +589,13 @@ function handleLoadPinnedMessages(pins) {
 }
 function handleForumPostsLoad(threads) {
   threads = threads.threads;
-  const arg1 = threads;
   let tmp2 = null != threads;
   if (tmp2) {
     let tmp4 = store5.getGuildId() === tmp;
     if (tmp4) {
-      const keys = importDefault(dependencyMap[25]).keys(threads);
+      const keys = importDefault(21).keys(threads);
       tmp4 = processMessagesFromAction(keys.map((arg0) => threads[arg0].first_message));
-      const obj = importDefault(dependencyMap[25]);
+      const obj = importDefault(21);
     }
     tmp2 = tmp4;
   }
@@ -649,52 +664,9 @@ function maybeScanMessagesForChannelId(channelId) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const ReferencedMessageState = arg1(dependencyMap[5]).ReferencedMessageState;
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-let closure_14 = importDefault(dependencyMap[10]);
-let closure_15 = importDefault(dependencyMap[11]);
-let closure_16 = importDefault(dependencyMap[12]);
-let closure_17 = arg1(dependencyMap[13]).MessageTypesWithLazyLoadedReferences;
-const UserSettingsTypes = arg1(dependencyMap[14]).UserSettingsTypes;
 let closure_19 = {};
-let tmp2 = (arg0) => {
-  class ExplicitMediaManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_4(this, ExplicitMediaManager);
-      items1 = [...items];
-      obj = closure_6(ExplicitMediaManager);
-      tmp2 = closure_5;
-      if (closure_20()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = { LOAD_MESSAGES_SUCCESS: closure_32, LOAD_FORUM_POSTS: closure_35, LOAD_THREADS_SUCCESS: closure_36, LOAD_ARCHIVED_THREADS_SUCCESS: closure_36, SIDEBAR_VIEW_CHANNEL: closure_37, MESSAGE_CREATE: closure_31, MESSAGE_UPDATE: closure_30, LOGOUT: closure_22, SEARCH_MESSAGES_SUCCESS: closure_33, MOD_VIEW_SEARCH_MESSAGES_SUCCESS: closure_33, CHANNEL_SELECT: closure_38, LOAD_PINNED_MESSAGES_SUCCESS: closure_34, USER_SETTINGS_PROTO_UPDATE: closure_39, CHANNEL_RTC_UPDATE_CHAT_OPEN: closure_40 };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const arg1 = ExplicitMediaManager;
-  callback2(ExplicitMediaManager, arg0);
-  return callback(ExplicitMediaManager);
-}(importDefault(dependencyMap[28]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManager.tsx");
 
 export default tmp2;
 export const MESSAGE_SCAN_TIMEOUT = 3000;

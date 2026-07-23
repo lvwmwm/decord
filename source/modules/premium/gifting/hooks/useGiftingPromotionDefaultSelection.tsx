@@ -1,12 +1,11 @@
-// Module ID: 9756
-// Function ID: 75903
+// Module ID: 9763
+// Function ID: 75944
 // Name: useGiftingPromotionDefaultSelectionV2
-// Dependencies: []
+// Dependencies: [2]
 // Exports: useGiftingPromotionDefaultSelectionV2
 
-// Module 9756 (useGiftingPromotionDefaultSelectionV2)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/premium/gifting/hooks/useGiftingPromotionDefaultSelection.tsx");
+// Module 9763 (useGiftingPromotionDefaultSelectionV2)
+const result = require("set").fileFinishedImporting("modules/premium/gifting/hooks/useGiftingPromotionDefaultSelection.tsx");
 
 export const useGiftingPromotionDefaultSelectionV2 = function useGiftingPromotionDefaultSelectionV2(claimableRewards, selectedGiftingPromotionReward) {
   let first = selectedGiftingPromotionReward;

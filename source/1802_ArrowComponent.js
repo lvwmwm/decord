@@ -1,39 +1,44 @@
 // Module ID: 1802
-// Function ID: 19916
+// Function ID: 19917
 // Name: ArrowComponent
-// Dependencies: []
+// Dependencies: [31, 27, 33, 1776]
 // Exports: default
 
 // Module 1802 (ArrowComponent)
+import "result";
+import { useMemo } from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+
 let StyleSheet;
-importDefault(dependencyMap[0]);
-const useMemo = arg1(dependencyMap[0]).useMemo;
-({ Animated: closure_3, StyleSheet, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = { "Bool(false)": 2030829571, "Bool(false)": 2030829571, "Bool(false)": 2030829571 };
-obj = { "Bool(true)": -226820093, "Bool(true)": -226820094, "Bool(true)": -226820094, "Bool(true)": -226820094, "Bool(true)": -226820094 };
-obj = { arrowUpContainer: obj, arrowDownContainer: Object.assign({}, obj, { transform: items }), arrow: {}, arrowLeftLine: Object.assign({}, obj, { transform: items1, left: -0.5 }), arrowRightLine: Object.assign({}, obj, { transform: items2, left: -5.5 }) };
-const items = [{ rotate: "180deg" }];
-const items1 = [{ rotate: "-45deg" }];
-const items2 = [{ rotate: "45deg" }];
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ Animated: closure_3, StyleSheet, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let obj = { width: 13, height: 2, borderRadius: 1 };
+obj = { marginHorizontal: 5, width: 30, height: 30, justifyContent: "center", alignItems: "center" };
+obj = { arrowUpContainer: obj, arrowDownContainer: Object.assign({}, obj, { transform: items }), arrow: { width: 20, height: 20, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, arrowLeftLine: Object.assign({}, obj, { transform: items1, left: -0.5 }), arrowRightLine: Object.assign({}, obj, { transform: items2, left: -5.5 }) };
+items = [{ rotate: "180deg" }];
+items1 = [{ rotate: "-45deg" }];
+items2 = [{ rotate: "45deg" }];
 const styles = StyleSheet.create(obj);
 
 export default function ArrowComponent(disabled) {
   disabled = disabled.disabled;
-  const arg1 = disabled;
   const theme = disabled.theme;
-  const dependencyMap = theme;
-  let obj = arg1(dependencyMap[3]);
+  let obj = disabled(theme[3]);
   const keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
-  const useMemo = keyboardState;
-  const items = [disabled, theme, keyboardState];
-  const tmp2 = useMemo(() => ({ backgroundColor: disabled ? theme[closure_2].disabled : theme[closure_2].primary }), items);
+  let items = [disabled, theme, keyboardState];
+  const tmp2 = keyboardState(() => ({ backgroundColor: disabled ? theme[keyboardState].disabled : theme[keyboardState].primary }), items);
+  const RN = tmp2;
   const items1 = [tmp2];
   const items2 = [tmp2];
   obj = {};
-  const tmp3 = useMemo(() => {
-    const items = [closure_7.arrowLeftLine, tmp2];
+  const tmp3 = keyboardState(() => {
+    const items = [outer1_7.arrowLeftLine, closure_3];
     return items;
   }, items1);
   if ("next" === disabled.type) {
@@ -44,10 +49,10 @@ export default function ArrowComponent(disabled) {
   obj.style = arrowUpContainer;
   obj = { style: closure_7.arrow };
   const items3 = [
-    callback(tmp2.View, { style: tmp3 }),
-    callback(tmp2.View, {
-      style: useMemo(() => {
-        const items = [closure_7.arrowRightLine, tmp2];
+    callback(RN.View, { style: tmp3 }),
+    callback(RN.View, {
+      style: keyboardState(() => {
+        const items = [outer1_7.arrowRightLine, closure_3];
         return items;
       }, items2)
     })

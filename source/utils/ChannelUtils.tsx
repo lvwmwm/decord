@@ -1,53 +1,75 @@
-// Module ID: 4308
-// Function ID: 37748
+// Module ID: 4312
+// Function ID: 37780
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1352, 1348, 1907, 3758, 1906, 4203, 653, 1851, 3763, 483, 1881, 4313, 4314, 1212, 3969, 4315, 21, 2, 4322]
 // Exports: channelTypeString, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4308 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4312 (_createForOfIteratorHelperLoose)
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { BoostedGuildFeatures } from "GuildFeatures";
+
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_4;
+let closure_5;
+let closure_6;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +80,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,14 +114,14 @@ function isTypeOrCategory(channelType, closure_21) {
   return tmp;
 }
 function allowChannelAccess(id, channelType, MEMBER) {
-  const NONE = importAll(dependencyMap[8]).NONE;
+  const NONE = importAll(3763).NONE;
   let tmp = callback(channelType);
   if (!tmp) {
     tmp = channelType === closure_22;
   }
   let addResult = NONE;
   if (tmp) {
-    let obj = importAll(dependencyMap[9]);
+    let obj = importAll(483);
     addResult = obj.add(NONE, constants.VIEW_CHANNEL);
   }
   let tmp7 = isTypeOrCategory(channelType, closure_21);
@@ -108,33 +130,35 @@ function allowChannelAccess(id, channelType, MEMBER) {
   }
   let addResult2 = addResult;
   if (tmp7) {
-    const obj2 = importAll(dependencyMap[9]);
-    const addResult1 = importAll(dependencyMap[9]).add(addResult, constants.VIEW_CHANNEL);
-    addResult2 = importAll(dependencyMap[9]).add(addResult1, constants.CONNECT);
-    const obj3 = importAll(dependencyMap[9]);
+    const obj2 = importAll(483);
+    const addResult1 = importAll(483).add(addResult, constants.VIEW_CHANNEL);
+    addResult2 = importAll(483).add(addResult1, constants.CONNECT);
+    const obj3 = importAll(483);
   }
-  obj = { id, type: MEMBER, deny: importAll(dependencyMap[8]).NONE, allow: addResult2 };
+  obj = { id, type: MEMBER, deny: importAll(3763).NONE, allow: addResult2 };
   return obj;
 }
 function computeSummarizedVoiceStates(arg0) {
   let channels;
-  ({ channels, selectedChannelId: closure_0, selectedVoiceChannelId: closure_1, voiceStates: closure_2 } = arg0);
+  let importAll;
+  let importDefault;
+  let require;
+  ({ channels, selectedChannelId: require, selectedVoiceChannelId: importDefault, voiceStates: importAll } = arg0);
   const items = [];
-  const dependencyMap = items;
-  const item = channels.forEach((id) => {
+  let item = channels.forEach((id) => {
     if (id.id !== closure_1) {
       if (id.id !== closure_0) {
-        if (null != closure_2[id.id]) {
+        if (null != table[id.id]) {
           const forEach = arr.forEach;
           if (id.isGuildStageVoice()) {
             const item = forEach((voiceState) => {
-              const audienceRequestToSpeakState = callback(arr[12]).getAudienceRequestToSpeakState(voiceState.voiceState);
-              if (audienceRequestToSpeakState === callback(arr[12]).RequestToSpeakStates.ON_STAGE) {
-                const arr = arr.push(voiceState);
+              const audienceRequestToSpeakState = outer2_0(items[12]).getAudienceRequestToSpeakState(voiceState.voiceState);
+              if (audienceRequestToSpeakState === outer2_0(items[12]).RequestToSpeakStates.ON_STAGE) {
+                outer1_3.push(voiceState);
               }
             });
           } else {
-            const item1 = forEach((arg0) => arr.push(arg0));
+            const item1 = forEach((arg0) => outer1_3.push(arg0));
           }
         }
       }
@@ -164,26 +188,17 @@ function getChannelThreadPermalink(guildId, id, id2, id2) {
   }
   combined = getChannelPermalink(guildId, id, id2);
 }
-const _module = require(dependencyMap[0]);
-({ isGuildSelectableChannelType: closure_4, TEXT_CHANNEL_TYPES: closure_5, THREAD_CHANNEL_TYPES: closure_6 } = _module);
-let closure_7 = importDefault(dependencyMap[1]);
-let closure_8 = importDefault(dependencyMap[2]);
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = importDefault(dependencyMap[4]);
-let closure_11 = importDefault(dependencyMap[5]);
-const _module1 = require(dependencyMap[6]);
-const ChannelTypes = _module1.ChannelTypes;
-({ Permissions: closure_13, GuildFeatures: closure_14, BoostedGuildTiers: closure_15, BITRATE_MAX: closure_16, BITRATE_DEFAULT: closure_17, Routes: closure_18, AnalyticsPages: closure_19 } = _module1);
-const BoostedGuildFeatures = require(dependencyMap[7]).BoostedGuildFeatures;
+({ isGuildSelectableChannelType: closure_4, TEXT_CHANNEL_TYPES: closure_5, THREAD_CHANNEL_TYPES: closure_6 } = _callSuper);
+const ChannelTypes = ME.ChannelTypes;
+({ Permissions: closure_13, GuildFeatures: closure_14, BoostedGuildTiers: closure_15, BITRATE_MAX: closure_16, BITRATE_DEFAULT: closure_17, Routes: closure_18, AnalyticsPages: closure_19 } = ME);
 ({ GUILD_VOICE: closure_21, GUILD_CATEGORY: closure_22, GUILD_STAGE_VOICE: closure_23 } = ChannelTypes);
-const _module2 = require(dependencyMap[17]);
-const result = _module2.fileFinishedImporting("utils/ChannelUtils.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/ChannelUtils.tsx");
 
 export const denyChannelAccessForNonPaidUsers = function denyChannelAccessForNonPaidUsers(id) {
   if (arg1 === ChannelTypes.GUILD_STAGE_VOICE) {
-    let obj = importAll(dependencyMap[9]);
-    obj = { id, type: require(dependencyMap[10]).PermissionOverwriteType.ROLE, allow: importAll(dependencyMap[8]).NONE };
-    obj.deny = obj.add(importAll(dependencyMap[8]).NONE, constants.CONNECT);
+    let obj = importAll(483);
+    obj = { id, type: require(1881) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, allow: importAll(3763).NONE };
+    obj.deny = obj.add(importAll(3763).NONE, constants.CONNECT);
     return obj;
   } else {
     const _Error = Error;
@@ -195,51 +210,50 @@ export const denyChannelAccessForNonPaidUsers = function denyChannelAccessForNon
 export { allowChannelAccess };
 export const permissionOverwritesForRoles = function permissionOverwritesForRoles(guildId, channelType, arr, arg3) {
   let flag = arg3;
-  const require = channelType;
+  const _require = channelType;
   if (arg3 === undefined) {
     flag = false;
   }
   const items = [];
-  const importDefault = items;
   if (tmp) {
-    const NONE = importAll(dependencyMap[8]).NONE;
+    const NONE = importAll(3763).NONE;
     let tmp6 = callback(channelType);
     if (!tmp6) {
       tmp6 = channelType === closure_22;
     }
     let addResult = NONE;
     if (tmp6) {
-      let obj = importAll(dependencyMap[9]);
+      let obj = importAll(483);
       addResult = obj.add(NONE, constants.VIEW_CHANNEL);
     }
     let addResult2 = addResult;
     if (isTypeOrCategory(channelType, closure_21)) {
-      const obj2 = importAll(dependencyMap[9]);
-      const addResult1 = importAll(dependencyMap[9]).add(addResult, constants.VIEW_CHANNEL);
-      addResult2 = importAll(dependencyMap[9]).add(addResult1, constants.CONNECT);
-      const obj3 = importAll(dependencyMap[9]);
+      const obj2 = importAll(483);
+      const addResult1 = importAll(483).add(addResult, constants.VIEW_CHANNEL);
+      addResult2 = importAll(483).add(addResult1, constants.CONNECT);
+      const obj3 = importAll(483);
     }
-    obj = { id: guildId, type: require(dependencyMap[10]).PermissionOverwriteType.ROLE, allow: importAll(dependencyMap[8]).NONE, deny: addResult2 };
+    obj = { id: guildId, type: _require(1881).PermissionOverwriteType.ROLE, allow: importAll(3763).NONE, deny: addResult2 };
     items.push(obj);
   }
   const item = arr.forEach((arg0) => {
-    items.push(callback(arg0, arg1, arg1(closure_3[10]).PermissionOverwriteType.ROLE));
+    items.push(outer1_27(arg0, channelType, channelType(outer1_3[10]).PermissionOverwriteType.ROLE));
   });
   return items;
 };
 export const permissionOverwriteForUser = function permissionOverwriteForUser(id, channelType) {
-  return allowChannelAccess(id, channelType, require(dependencyMap[10]).PermissionOverwriteType.MEMBER);
+  return allowChannelAccess(id, channelType, require(1881) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER);
 };
 export const permissionOverwriteForRole = function permissionOverwriteForRole(id, channelType) {
-  return allowChannelAccess(id, channelType, require(dependencyMap[10]).PermissionOverwriteType.ROLE);
+  return allowChannelAccess(id, channelType, require(1881) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE);
 };
 export const permissionOverwritesForAnnouncement = function permissionOverwritesForAnnouncement(id) {
-  const items = [{ id, type: require(dependencyMap[10]).PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: importAll(dependencyMap[8]).NONE }];
+  const items = [{ id, type: require(1881) /* PermissionOverwriteType */.PermissionOverwriteType.ROLE, deny: constants.SEND_MESSAGES, allow: importAll(3763).NONE }];
   return items;
 };
-export const isChannelFull = function isChannelFull(channel, closure_11, closure_9) {
+export const isChannelFull = function isChannelFull(channel, stateFromStores3, stateFromStores1) {
   const guildId = channel.getGuildId();
-  const guild = closure_9.getGuild(guildId);
+  const guild = stateFromStores1.getGuild(guildId);
   let maxVideoChannelUsers;
   if (null != guild) {
     maxVideoChannelUsers = guild.maxVideoChannelUsers;
@@ -265,10 +279,10 @@ export const isChannelFull = function isChannelFull(channel, closure_11, closure
   if (channel.type === closure_23) {
     let tmp11 = null != guildId;
     if (tmp11) {
-      let hasVideoResult = closure_11.hasVideo(channel.id);
+      let hasVideoResult = stateFromStores3.hasVideo(channel.id);
       if (!hasVideoResult) {
-        hasVideoResult = require(dependencyMap[11]).hasStream(voiceStatesForChannel);
-        const obj = require(dependencyMap[11]);
+        hasVideoResult = require(4313) /* hasStream */.hasStream(voiceStatesForChannel);
+        const obj = require(4313) /* hasStream */;
       }
       tmp11 = hasVideoResult;
     }
@@ -280,7 +294,7 @@ export const isChannelFull = function isChannelFull(channel, closure_11, closure
     }
     let tmp10 = tmp11;
   } else {
-    tmp10 = null != guildId && closure_11.hasVideo(channel.id);
+    tmp10 = null != guildId && stateFromStores3.hasVideo(channel.id);
     if (tmp10) {
       tmp10 = num2 > 0;
     }
@@ -301,7 +315,7 @@ export const isChannelFull = function isChannelFull(channel, closure_11, closure
   }
   return tmp10;
 };
-export const sanitizeGuildTextChannelName = importDefault(dependencyMap[18]);
+export const sanitizeGuildTextChannelName = require("sanitizeGuildTextChannelName");
 export const getBitrateLimit = function getBitrateLimit(guild, channel) {
   if (channel.isGuildStageVoice()) {
     let bound = closure_17;
@@ -310,7 +324,7 @@ export const getBitrateLimit = function getBitrateLimit(guild, channel) {
   } else {
     const features = guild.features;
     if (features.has(constants2.VIP_REGIONS)) {
-      let bitrate = BoostedGuildFeatures[closure_15.TIER_3].limits.bitrate;
+      let bitrate = BoostedGuildFeatures[TIER_3.TIER_3].limits.bitrate;
     } else {
       bitrate = closure_16;
     }
@@ -322,7 +336,7 @@ export { computeSummarizedVoiceStates };
 export const computeSummarizedVoiceUsers = function computeSummarizedVoiceUsers(channels) {
   return computeSummarizedVoiceStates({ channels: channels.channels, selectedChannelId: channels.selectedChannelId, selectedVoiceChannelId: channels.selectedVoiceChannelId, voiceStates: channels.voiceStates }).map((user) => user.user);
 };
-export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stateFromStores, arg2) {
+export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stateFromStores, closure_1) {
   const tmp = _createForOfIteratorHelperLoose(channels);
   const iter = tmp();
   let iter2 = iter;
@@ -332,7 +346,7 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
       let tmp4 = tmp2;
       let tmp5 = tmp3;
       if (value.id !== stateFromStores) {
-        let tmp13 = arg2[value.id];
+        let tmp13 = closure_1[value.id];
         let tmp14 = tmp13;
         tmp4 = tmp2;
         tmp5 = tmp3;
@@ -351,9 +365,9 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
             if (!iter3.done) {
               let tmp9 = require;
               let tmp10 = dependencyMap;
-              let obj = require(dependencyMap[12]);
+              let obj = require(4314) /* getAudienceRequestToSpeakState */;
               let audienceRequestToSpeakState = obj.getAudienceRequestToSpeakState(iter4.value.voiceState);
-              while (audienceRequestToSpeakState !== require(dependencyMap[12]).RequestToSpeakStates.ON_STAGE) {
+              while (audienceRequestToSpeakState !== require(4314) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE) {
                 let iter5 = tmp7();
                 iter4 = iter5;
                 let tmp12 = tmp13;
@@ -368,8 +382,8 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
         }
       }
       let iter6 = tmp();
-      let tmp2 = tmp4;
-      let tmp3 = tmp5;
+      tmp2 = tmp4;
+      tmp3 = tmp5;
       iter2 = iter6;
     }
   }
@@ -378,45 +392,45 @@ export const isAnyVoiceStateStage = function isAnyVoiceStateStage(channels, stat
 export const channelTypeString = function channelTypeString(channel) {
   const type = channel.type;
   if (ChannelTypes.DM === type) {
-    const intl10 = require(dependencyMap[13]).intl;
-    return intl10.string(require(dependencyMap[13]).t.jN2DfZ);
+    const intl10 = require(1212) /* getSystemLocale */.intl;
+    return intl10.string(require(1212) /* getSystemLocale */.t.jN2DfZ);
   } else if (ChannelTypes.GROUP_DM === type) {
-    const intl9 = require(dependencyMap[13]).intl;
-    return intl9.string(require(dependencyMap[13]).t.e5y+gm);
+    const intl9 = require(1212) /* getSystemLocale */.intl;
+    return intl9.string(require(1212) /* getSystemLocale */.t["e5y+gm"]);
   } else if (ChannelTypes.GUILD_TEXT === type) {
-    const intl8 = require(dependencyMap[13]).intl;
-    return intl8.string(require(dependencyMap[13]).t.Pnajj0);
+    const intl8 = require(1212) /* getSystemLocale */.intl;
+    return intl8.string(require(1212) /* getSystemLocale */.t.Pnajj0);
   } else if (ChannelTypes.GUILD_FORUM === type) {
-    const intl7 = require(dependencyMap[13]).intl;
-    return intl7.string(require(dependencyMap[13]).t.GbryDd);
+    const intl7 = require(1212) /* getSystemLocale */.intl;
+    return intl7.string(require(1212) /* getSystemLocale */.t.GbryDd);
   } else if (ChannelTypes.GUILD_MEDIA === type) {
-    const intl6 = require(dependencyMap[13]).intl;
-    return intl6.string(require(dependencyMap[13]).t.seKITE);
+    const intl6 = require(1212) /* getSystemLocale */.intl;
+    return intl6.string(require(1212) /* getSystemLocale */.t.seKITE);
   } else if (ChannelTypes.GUILD_VOICE === type) {
-    const intl5 = require(dependencyMap[13]).intl;
-    return intl5.string(require(dependencyMap[13]).t.BVZqJl);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    return intl5.string(require(1212) /* getSystemLocale */.t.BVZqJl);
   } else if (ChannelTypes.GUILD_STAGE_VOICE === type) {
-    const intl4 = require(dependencyMap[13]).intl;
-    return intl4.string(require(dependencyMap[13]).t.EErMzA);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(require(1212) /* getSystemLocale */.t.EErMzA);
   } else if (ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    const intl3 = require(dependencyMap[13]).intl;
-    return intl3.string(require(dependencyMap[13]).t.l1dkSD);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.l1dkSD);
   } else if (ChannelTypes.GUILD_STORE === type) {
-    const intl2 = require(dependencyMap[13]).intl;
-    return intl2.string(require(dependencyMap[13]).t.P1/Erq);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t["P1/Erq"]);
   } else if (ChannelTypes.GUILD_CATEGORY === type) {
-    const intl = require(dependencyMap[13]).intl;
-    return intl.string(require(dependencyMap[13]).t.vHCZwr);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.vHCZwr);
   } else {
     return null;
   }
 };
-export const getPrivateChannelUserTagsString = function getPrivateChannelUserTagsString(recipients, closure_7) {
+export const getPrivateChannelUserTagsString = function getPrivateChannelUserTagsString(recipients, outer1_7) {
   let iter;
   if (null == recipients) {
     return null;
   } else {
-    const currentUser = closure_7.getCurrentUser();
+    const currentUser = outer1_7.getCurrentUser();
     let id;
     if (null != currentUser) {
       id = currentUser.id;
@@ -432,7 +446,7 @@ export const getPrivateChannelUserTagsString = function getPrivateChannelUserTag
         do {
           let value = iter2.value;
           if (id !== value) {
-            let user = closure_7.getUser(value);
+            let user = outer1_7.getUser(value);
             let tmp3 = user;
             if (null != user) {
               let arr = items.push(user);
@@ -448,7 +462,7 @@ export const getPrivateChannelUserTagsString = function getPrivateChannelUserTag
       } else {
         const substr = items.slice(0, 2);
         const mapped = substr.map((isProvisional) => {
-          const obj = callback(closure_3[14]);
+          const obj = outer1_1(outer1_3[14]);
           if (isProvisional.isProvisional) {
             let name = obj.getName(isProvisional);
           } else {
@@ -456,9 +470,9 @@ export const getPrivateChannelUserTagsString = function getPrivateChannelUserTag
           }
           return name;
         });
-        const intl = require(dependencyMap[13]).intl;
-        const obj = { users: items.length, user1: mapped[0], user2: mapped[1], extras: items.length - mapped.length };
-        return intl.formatToPlainString(require(dependencyMap[13]).t.BXG0Eh, obj);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        let obj = { users: items.length, user1: mapped[0], user2: mapped[1], extras: items.length - mapped.length };
+        return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.BXG0Eh, obj);
       }
     }
   }
@@ -543,7 +557,7 @@ export const getMentionIconType = function getMentionIconType(channel) {
   }
 };
 export const previousTextChannelRouteForGuild = function previousTextChannelRouteForGuild(arg0) {
-  const channel = channel.getChannel(lastSelectedChannelId.getLastSelectedChannelId());
+  channel = channel.getChannel(lastSelectedChannelId.getLastSelectedChannelId());
   if (null != channel) {
     if (channel.getGuildId() === arg0) {
       if (channel.type === ChannelTypes.GUILD_TEXT) {
@@ -552,7 +566,7 @@ export const previousTextChannelRouteForGuild = function previousTextChannelRout
       return closure_18.CHANNEL(arg0, id);
     }
   }
-  const defaultChannel = defaultChannel.getDefaultChannel(arg0);
+  defaultChannel = defaultChannel.getDefaultChannel(arg0);
   id = null;
   if (null != defaultChannel) {
     id = defaultChannel.id;
@@ -565,8 +579,8 @@ export const getChannelLinkToCopy = function getChannelLinkToCopy(channel, chann
   const guildId = channel.getGuildId();
   if (null != channel1) {
     if (obj.canUseMediaPostEmbed(guildId, channel1)) {
-      tmp = getChannelThreadPermalink(guildId, channel1.id, channel.id, importDefault(dependencyMap[16]).castChannelIdAsMessageId(channel.id));
-      const obj2 = importDefault(dependencyMap[16]);
+      tmp = getChannelThreadPermalink(guildId, channel1.id, channel.id, importDefault(21).castChannelIdAsMessageId(channel.id));
+      const obj2 = importDefault(21);
     }
     return tmp;
   }

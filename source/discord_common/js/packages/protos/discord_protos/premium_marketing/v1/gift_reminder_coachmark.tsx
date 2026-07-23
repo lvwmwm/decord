@@ -1,9 +1,17 @@
-// Module ID: 7145
-// Function ID: 57618
+// Module ID: 7150
+// Function ID: 57652
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 7145, 7136, 1284, 2]
 
-// Module 7145 (_isNativeReflectConstruct)
+// Module 7150 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,68 +21,61 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let tmp2 = (MessageType) => {
+let tmp2 = ((MessageType) => {
   class GiftReminderCoachmark$Type {
     constructor() {
       self = this;
-      tmp = closure_3(this, GiftReminderCoachmark$Type);
+      tmp = outer1_3(this, GiftReminderCoachmark$Type);
       items = [, , , , , ];
-      items[0] = {};
-      items[1] = {};
-      items[2] = {};
-      items[3] = {
-        T() {
-              return callback(closure_1[6]).ThemeAwareAsset;
-            }
-      };
-      obj = { -111020099: "message", 1351895378: 0, 1456955659: 61.05 };
+      items[0] = { no: 1, name: "header", kind: "scalar", T: 9 };
+      items[1] = { no: 2, name: "body", kind: "scalar", T: 9 };
+      items[2] = { no: 3, name: "asset_url", kind: "scalar", T: 9 };
+      obj = { no: 4, name: "asset", kind: "message" };
       obj.T = function T() {
-        return callback(closure_1[7]).LocalizedString;
+        return GiftReminderCoachmark$Type(outer2_1[6]).ThemeAwareAsset;
+      };
+      items[3] = obj;
+      obj = { no: 5, name: "header_localized", kind: "message" };
+      obj.T = function T() {
+        return GiftReminderCoachmark$Type(outer2_1[7]).LocalizedString;
       };
       items[4] = obj;
-      obj = { -111020099: "startLocalAudioRecording", 1351895378: "isArray", 1456955659: "dispatchFrameUrl" };
-      obj.T = function T() {
-        return callback(closure_1[7]).LocalizedString;
+      obj1 = { no: 6, name: "body_localized", kind: "message" };
+      obj1.T = function T() {
+        return GiftReminderCoachmark$Type(outer2_1[7]).LocalizedString;
       };
-      items[5] = obj;
-      items1 = ["<string:4256394999>"];
+      items[5] = obj1;
+      items1 = ["discord_protos.premium_marketing.v1.GiftReminderCoachmark"];
       items1[1] = items;
-      obj3 = closure_6(GiftReminderCoachmark$Type);
-      tmp2 = closure_5;
-      if (closure_8()) {
+      obj4 = outer1_6(GiftReminderCoachmark$Type);
+      tmp2 = outer1_5;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj3, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj4, items1, outer1_6(self).constructor);
       } else {
-        constructResult = obj3.apply(self, items1);
+        constructResult = obj4.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GiftReminderCoachmark$Type;
   callback2(GiftReminderCoachmark$Type, MessageType);
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { "Bool(true)": "french", key: true, style: "/assets/.cache/intl/aW50bA==" };
+      let obj = { header: "", body: "", assetUrl: "" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, GiftReminderCoachmark$Type(closure_1[8]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, GiftReminderCoachmark$Type(outer1_1[8]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = GiftReminderCoachmark$Type(closure_1[8]).reflectionMergePartial(this, obj, arr);
-        const obj3 = GiftReminderCoachmark$Type(closure_1[8]);
+        const result = GiftReminderCoachmark$Type(outer1_1[8]).reflectionMergePartial(this, obj, arr);
+        const obj3 = GiftReminderCoachmark$Type(outer1_1[8]);
       }
       return obj;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "internalBinaryRead",
     value(pos, arg1, readUnknownField) {
@@ -87,8 +88,8 @@ let tmp2 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.header = pos.string();
@@ -104,8 +105,8 @@ let tmp2 = (MessageType) => {
           tmp11 = tmp4;
         } else if (4 === tmp7) {
           let tmp36 = GiftReminderCoachmark$Type;
-          let tmp37 = closure_1;
-          let ThemeAwareAsset = GiftReminderCoachmark$Type(closure_1[6]).ThemeAwareAsset;
+          let tmp37 = outer1_1;
+          let ThemeAwareAsset = GiftReminderCoachmark$Type(outer1_1[6]).ThemeAwareAsset;
           let tmp38 = ThemeAwareAsset;
           let tmp39 = pos;
           let tmp40 = readUnknownField;
@@ -114,8 +115,8 @@ let tmp2 = (MessageType) => {
           tmp11 = tmp4;
         } else if (5 === tmp7) {
           let tmp31 = GiftReminderCoachmark$Type;
-          let tmp32 = closure_1;
-          let LocalizedString2 = GiftReminderCoachmark$Type(closure_1[7]).LocalizedString;
+          let tmp32 = outer1_1;
+          let LocalizedString2 = GiftReminderCoachmark$Type(outer1_1[7]).LocalizedString;
           let tmp33 = LocalizedString2;
           let tmp34 = pos;
           let tmp35 = readUnknownField;
@@ -124,8 +125,8 @@ let tmp2 = (MessageType) => {
           tmp11 = tmp4;
         } else if (6 === tmp7) {
           let tmp26 = GiftReminderCoachmark$Type;
-          let tmp27 = closure_1;
-          let LocalizedString = GiftReminderCoachmark$Type(closure_1[7]).LocalizedString;
+          let tmp27 = outer1_1;
+          let LocalizedString = GiftReminderCoachmark$Type(outer1_1[7]).LocalizedString;
           let tmp28 = LocalizedString;
           let tmp29 = pos;
           let tmp30 = readUnknownField;
@@ -158,8 +159,8 @@ let tmp2 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = GiftReminderCoachmark$Type;
-                let tmp13 = closure_1;
-                onRead = GiftReminderCoachmark$Type(closure_1[8]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = GiftReminderCoachmark$Type(outer1_1[8]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -171,8 +172,8 @@ let tmp2 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -182,39 +183,39 @@ let tmp2 = (MessageType) => {
     key: "internalBinaryWrite",
     value(header, tag, writeUnknownFields) {
       if ("" !== header.header) {
-        tag.tag(1, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited).string(header.header);
-        const tagResult = tag.tag(1, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited);
+        tag.tag(1, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited).string(header.header);
+        const tagResult = tag.tag(1, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited);
       }
       if ("" !== header.body) {
-        tag.tag(2, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited).string(header.body);
-        const tagResult1 = tag.tag(2, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited);
+        tag.tag(2, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited).string(header.body);
+        const tagResult1 = tag.tag(2, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited);
       }
       if ("" !== header.assetUrl) {
-        tag.tag(3, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited).string(header.assetUrl);
-        const tagResult2 = tag.tag(3, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited);
+        tag.tag(3, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited).string(header.assetUrl);
+        const tagResult2 = tag.tag(3, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited);
       }
       if (header.asset) {
-        const ThemeAwareAsset = GiftReminderCoachmark$Type(closure_1[6]).ThemeAwareAsset;
-        const tagResult3 = tag.tag(4, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited);
-        const joined = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(4, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(4, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const ThemeAwareAsset = GiftReminderCoachmark$Type(outer1_1[6]).ThemeAwareAsset;
+        const tagResult3 = tag.tag(4, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited);
+        const joined = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(4, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(header.asset, tag.tag(4, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       if (header.headerLocalized) {
-        const LocalizedString = GiftReminderCoachmark$Type(closure_1[7]).LocalizedString;
-        const tagResult4 = tag.tag(5, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited);
-        const joined1 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(5, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult1 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(5, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const LocalizedString = GiftReminderCoachmark$Type(outer1_1[7]).LocalizedString;
+        const tagResult4 = tag.tag(5, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited);
+        const joined1 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(5, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult1 = LocalizedString.internalBinaryWrite(header.headerLocalized, tag.tag(5, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       if (header.bodyLocalized) {
-        const LocalizedString2 = GiftReminderCoachmark$Type(closure_1[7]).LocalizedString;
-        const tagResult5 = tag.tag(6, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited);
-        const joined2 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(6, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult2 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(6, GiftReminderCoachmark$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const LocalizedString2 = GiftReminderCoachmark$Type(outer1_1[7]).LocalizedString;
+        const tagResult5 = tag.tag(6, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited);
+        const joined2 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(6, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult2 = LocalizedString2.internalBinaryWrite(header.bodyLocalized, tag.tag(6, GiftReminderCoachmark$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = GiftReminderCoachmark$Type(closure_1[8]).UnknownFieldHandler.onWrite;
+          onWrite = GiftReminderCoachmark$Type(outer1_1[8]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, header, tag);
@@ -224,8 +225,8 @@ let tmp2 = (MessageType) => {
   };
   items[2] = obj;
   return callback(GiftReminderCoachmark$Type, items);
-}(arg1(dependencyMap[8]).MessageType);
+})(require("module_1284").MessageType);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[9]).fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/gift_reminder_coachmark.tsx");
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/gift_reminder_coachmark.tsx");
 
 export const GiftReminderCoachmark = tmp2;

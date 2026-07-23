@@ -1,30 +1,46 @@
-// Module ID: 10631
-// Function ID: 82990
+// Module ID: 10641
+// Function ID: 83040
 // Name: FocusedControlsExpanded
-// Dependencies: []
+// Dependencies: [57, 31, 27, 10210, 10211, 653, 33, 477, 4130, 689, 5052, 1273, 1557, 3991, 10642, 668, 1212, 5446, 3946, 1334, 4131, 5217, 9585, 1450, 10550, 1207, 3842, 4533, 3976, 10384, 2]
 // Exports: default
 
-// Module 10631 (FocusedControlsExpanded)
+// Module 10641 (FocusedControlsExpanded)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "getIOSBlurEffect";
+import resetFocusTimer from "resetFocusTimer";
+import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_10;
+let closure_11;
+let closure_13;
+let closure_14;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function FocusedControlsExpanded(children) {
   const availableHeight = children.availableHeight;
-  const arg1 = availableHeight;
   const positionY = children.positionY;
-  const importDefault = positionY;
-  const bottom = importDefault(dependencyMap[12])().bottom;
-  const dependencyMap = bottom;
-  const tmp2 = callback2(React.useState(false), 2);
-  const first = tmp2[0];
-  const callback2 = first;
-  const React = tmp2[1];
+  bottom = positionY(bottom[12])().bottom;
+  const tmp2 = first(React.useState(false), 2);
+  first = tmp2[0];
+  React = tmp2[1];
   const items = [availableHeight, bottom, first];
   const callback = React.useCallback((nativeEvent) => {
     if (nativeEvent.nativeEvent.layout.height > availableHeight - bottom !== first) {
       callback(tmp);
     }
   }, items);
-  let obj = arg1(dependencyMap[13]);
+  let obj = availableHeight(bottom[13]);
   const fn = function _() {
-    const bound = Math.min(-1 * positionY.get() / closure_15, 1);
+    const bound = Math.min(-1 * positionY.get() / outer1_15, 1);
     const obj = { opacity: bound };
     let str = "auto";
     if (0 === bound) {
@@ -33,41 +49,40 @@ function FocusedControlsExpanded(children) {
     obj.pointerEvents = str;
     return obj;
   };
-  obj = { positionY, EXPANDED_DRAWER_SHOW_POSITION: closure_15 };
+  obj = { positionY, EXPANDED_DRAWER_SHOW_POSITION: c15 };
   fn.__closure = obj;
   fn.__workletHash = 10567472250823;
   fn.__initData = closure_21;
   obj = { style: { height: availableHeight } };
   const obj1 = { scrollEnabled: first };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const items1 = [callback4().expandedControlsContainer, animatedStyle];
-  obj1.children = callback3(importDefault(dependencyMap[13]).View, { style: items1, onLayout: callback, children: children.expandedControls });
-  obj.children = callback3(closure_7, obj1);
-  return callback3(closure_5, obj);
+  const items1 = [_createForOfIteratorHelperLoose().expandedControlsContainer, animatedStyle];
+  obj1.children = callback2(positionY(bottom[13]).View, { style: items1, onLayout: callback, children: children.expandedControls });
+  obj.children = callback2(closure_7, obj1);
+  return callback2(closure_5, obj);
 }
 function FocusedControlsBottomDrawerTooltip(positionY) {
   positionY = positionY.positionY;
-  const arg1 = positionY;
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[14]);
-  const canShowTooltip = obj.useCanShowTooltip(arg1(dependencyMap[15]).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  arg1(dependencyMap[13]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = positionY(10642);
+  const canShowTooltip = obj.useCanShowTooltip(positionY(668).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
+  positionY(3991);
   const fn = function o() {
-    return { opacity: 1 - Math.min(-1 * positionY.get() / closure_15, 1) };
+    return { opacity: 1 - Math.min(-1 * positionY.get() / outer1_15, 1) };
   };
-  obj = { positionY, EXPANDED_DRAWER_SHOW_POSITION: closure_15 };
+  obj = { positionY, EXPANDED_DRAWER_SHOW_POSITION: c15 };
   fn.__closure = obj;
   fn.__workletHash = 4429631762525;
   fn.__initData = closure_22;
   let tmp5 = null;
   if (canShowTooltip) {
     obj = { style: tmp4 };
-    const obj1 = { style: tmp.tooltipStyle, arrowPosition: arg1(dependencyMap[11]).TooltipArrowPositions.CENTER, arrowDirection: arg1(dependencyMap[11]).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4 };
+    const obj1 = { style: tmp.tooltipStyle, arrowPosition: positionY(1273).TooltipArrowPositions.CENTER, arrowDirection: positionY(1273).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4 };
     ({ containerStyle: obj4.containerStyle, labelStyle: obj4.labelStyle } = tmp);
-    const intl = arg1(dependencyMap[16]).intl;
-    obj1.label = intl.string(arg1(dependencyMap[16]).t.zYzy2i);
-    obj.children = callback3(arg1(dependencyMap[11]).Tooltip, obj1);
-    tmp5 = callback3(importDefault(dependencyMap[13]).View, obj);
+    const intl = positionY(1212).intl;
+    obj1.label = intl.string(positionY(1212).t.zYzy2i);
+    obj.children = callback2(positionY(1273).Tooltip, obj1);
+    tmp5 = callback2(importDefault(3991).View, obj);
   }
   return tmp5;
 }
@@ -75,74 +90,70 @@ function FocusedControlsAboveActionBarView(positionY) {
   let isExpanded;
   let onPressHeader;
   positionY = positionY.positionY;
-  const arg1 = positionY;
   const offsetY = positionY.offsetY;
-  const importDefault = offsetY;
   const aboveActionBar = positionY.aboveActionBar;
   ({ onPressHeader, isExpanded } = positionY);
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[13]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = positionY(3991);
   const fn = function _() {
-    return { opacity: 2 - Math.max(Math.abs(positionY.get()) / (offsetY / 3 - closure_15), 0) };
+    return { opacity: 2 - Math.max(Math.abs(positionY.get()) / (offsetY / 3 - outer1_15), 0) };
   };
-  obj = { offsetY, EXPANDED_DRAWER_SHOW_POSITION: closure_15, positionY };
+  obj = { offsetY, EXPANDED_DRAWER_SHOW_POSITION: c15, positionY };
   fn.__closure = obj;
   fn.__workletHash = 5042367101380;
   fn.__initData = closure_23;
-  obj = { onPress: onPressHeader, accessibilityState: { expanded: isExpanded } };
+  obj = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded } };
   const obj1 = { style: tmp.aboveActionBarContainer };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const items = [callback3(FocusedControlsBottomDrawerTooltip, { positionY }), callback3(arg1(dependencyMap[17]).ActionSheetHeaderBar, {}), ];
+  const items = [callback2(FocusedControlsBottomDrawerTooltip, { positionY }), callback2(positionY(5446).ActionSheetHeaderBar, {}), ];
   let tmp7 = null != aboveActionBar;
   if (tmp7) {
     const obj2 = {};
     const items1 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
     obj2.style = items1;
     obj2.children = aboveActionBar;
-    tmp7 = callback3(importDefault(dependencyMap[13]).View, obj2);
+    tmp7 = callback2(offsetY(3991).View, obj2);
   }
   items[2] = tmp7;
   obj1.children = items;
   obj.children = closure_14(closure_5, obj1);
-  return callback3(closure_6, obj);
+  return callback2(closure_6, obj);
 }
 class FocusedControlsBottomDrawer {
   constructor(arg0) {
     ({ actionBarControlsHeight, reveal } = global);
-    arg1 = reveal;
-    importDefault = global.onDrawerClose;
-    closure_5 = undefined;
-    closure_6 = undefined;
-    closure_7 = undefined;
-    clearFocusTimer = undefined;
-    closure_9 = undefined;
+    onDrawerClose = global.onDrawerClose;
+    c5 = undefined;
+    c6 = undefined;
+    c7 = undefined;
+    Math = undefined;
+    c9 = undefined;
     ({ children, expandedControls, aboveActionBar, onDrawerOpen } = global);
-    tmp = closure_18();
-    tmp2 = importDefault(dependencyMap[12])();
+    tmp = c18();
+    tmp2 = require("useSafeAreaInsets")();
     ({ bottom, right } = tmp2);
-    dependencyMap = right;
     top = tmp2.top;
-    size = importDefault(dependencyMap[23])();
+    size = require("useWindowDimensions")();
     height = size.height;
     tmp3 = size.width > BOX_MODE_THRESHOLD_WIDTH;
-    closure_3 = tmp3;
-    tmp4 = importDefault(dependencyMap[24])();
-    importAll = tmp4;
+    c3 = tmp3;
+    tmp4 = require("useBottomVoiceControlsSheetWidth")();
+    result = tmp4;
     bound = height;
     if (tmp3) {
       tmp6 = globalThis;
       _Math = Math;
-      tmp7 = closure_11;
-      bound = Math.min(closure_11, height);
+      tmp7 = c11;
+      bound = Math.min(c11, height);
     }
-    closure_5 = bound;
+    c5 = bound;
     sum = actionBarControlsHeight;
     if (!tmp3) {
       sum = actionBarControlsHeight + bottom;
     }
-    closure_6 = sum;
+    c6 = sum;
     diff = bound - sum;
-    closure_7 = diff;
+    c7 = diff;
     diff1 = bound - sum;
     if (tmp3) {
       tmp13 = EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y;
@@ -165,16 +176,15 @@ class FocusedControlsBottomDrawer {
           },
       onOpen: onDrawerOpen
     };
-    tmp14 = closure_3(function useDrawerGesture(controlMaxHeight) {
+    tmp14 = c3((function useDrawerGesture(controlMaxHeight) {
+      let bound;
+      let result;
       controlMaxHeight = controlMaxHeight.controlMaxHeight;
-      const reveal = controlMaxHeight;
       const isLandscapeMode = controlMaxHeight.isLandscapeMode;
-      const onDrawerClose = isLandscapeMode;
       const portraitOffsetY = controlMaxHeight.portraitOffsetY;
-      const right = portraitOffsetY;
       const landscapeOffsetY = controlMaxHeight.landscapeOffsetY;
-      ({ onClose: closure_4, onOpen: closure_5 } = controlMaxHeight);
-      let sum;
+      ({ onClose: result, onOpen: bound } = controlMaxHeight);
+      let first;
       let closure_7;
       let callback;
       function handleOpen() {
@@ -194,13 +204,11 @@ class FocusedControlsBottomDrawer {
           callback();
         }
       }
-      const tmp = landscapeOffsetY(tmp4.useState(false), 2);
-      let first = tmp[0];
-      sum = first;
+      let tmp = tmp3(tmp4.useState(false), 2);
+      first = tmp[0];
       closure_7 = tmp[1];
       let obj = reveal(right[13]);
       const sharedValue = obj.useSharedValue(0);
-      first = sharedValue;
       class O {
         constructor() {
           tmp = controlMaxHeight;
@@ -216,18 +224,16 @@ class FocusedControlsBottomDrawer {
       }
       O.__closure = { isLandscapeMode, controlMaxHeight, landscapeOffsetY, portraitOffsetY };
       O.__workletHash = 13346503100323;
-      O.__initData = closure_24;
+      O.__initData = outer1_24;
       const derivedValue = reveal(right[13]).useDerivedValue(O);
-      const obj2 = reveal(right[13]);
-      const tmp16 = derivedValue;
-      const tmp3 = landscapeOffsetY;
+      let obj2 = reveal(right[13]);
       const sharedValue1 = reveal(right[13]).useSharedValue(0);
-      const obj3 = reveal(right[13]);
+      let obj3 = reveal(right[13]);
       const sharedValue2 = reveal(right[13]).useSharedValue(false);
       const obj4 = reveal(right[13]);
       const sharedValue3 = reveal(right[13]).useSharedValue(0);
       callback = tmp4.useCallback(() => {
-        const result = controlMaxHeight(portraitOffsetY[18]).UNSAFE_markDismissibleContentAsDismissed(controlMaxHeight(portraitOffsetY[19]).DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE);
+        const result = reveal(right[18]).UNSAFE_markDismissibleContentAsDismissed(reveal(right[19]).DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE);
       }, []);
       const items = [sharedValue, derivedValue, callback];
       const callback1 = tmp4.useCallback(() => {
@@ -236,12 +242,12 @@ class FocusedControlsBottomDrawer {
         if (!tmp) {
           num = -derivedValue.get();
         }
-        const result = sharedValue.set(controlMaxHeight(portraitOffsetY[20]).withTiming(num, closure_19));
+        const result = sharedValue.set(reveal(right[20]).withTiming(num, outer2_19));
         if (tmp) {
           derivedValue();
           callback();
         } else {
-          sharedValue();
+          first();
         }
         callback3(!tmp);
       }, items);
@@ -249,8 +255,8 @@ class FocusedControlsBottomDrawer {
       const obj5 = reveal(right[13]);
       class M {
         constructor() {
-          obj = controlMaxHeight(portraitOffsetY[13]);
-          tmp = obj.runOnJS(closure_8)();
+          obj = reveal(right[13]);
+          tmp = obj.runOnJS(Math)();
           result = controlMaxHeight.set(0 !== closure_8.get());
           result1 = portraitOffsetY.set(0);
           value = null != closure_8.get();
@@ -259,8 +265,8 @@ class FocusedControlsBottomDrawer {
             value = controlMaxHeight.get();
           }
           if (!value) {
-            tmp6 = closure_10;
-            result2 = closure_10.set(0);
+            tmp6 = c10;
+            result2 = c10.set(0);
           }
           return;
         }
@@ -268,16 +274,16 @@ class FocusedControlsBottomDrawer {
       obj = { runOnJS: reveal(right[13]).runOnJS, clearFocusTimer: first, drawerOpen: sharedValue2, positionY: sharedValue, CLOSE_DRAWER_POSITION: 0, velocity: sharedValue3, startY: sharedValue1 };
       M.__closure = obj;
       M.__workletHash = 9674965708496;
-      M.__initData = closure_27;
+      M.__initData = outer1_27;
       const PanResult = Gesture.Pan();
       class N {
         constructor(arg0) {
           result = portraitOffsetY.set(controlMaxHeight.velocityY);
           result1 = -1 * closure_8.get();
           if (result1 <= landscapeOffsetY.get() + 16) {
-            tmp4 = closure_10;
+            tmp4 = c10;
             tmp3 = closure_8;
-            value = closure_10.get();
+            value = c10.get();
             tmp6 = null;
             num = 0;
             if (null != value) {
@@ -290,28 +296,28 @@ class FocusedControlsBottomDrawer {
       }
       N.__closure = { velocity: sharedValue3, positionY: sharedValue, maxHeight: derivedValue, startY: sharedValue1 };
       N.__workletHash = 16755118181071;
-      N.__initData = closure_26;
+      N.__initData = outer1_26;
       const onStartResult = Gesture.Pan().onStart(M);
       class H {
         constructor() {
           openDrawer = function openDrawer() {
-            callback(closure_2[13]).runOnJS(closure_14)();
-            const result = store2.set(-closure_9.get());
-            const obj = callback(closure_2[13]);
-            const result1 = store.set(callback(closure_2[20]).withTiming(store2.get(), closure_19));
-            const result2 = store3.set(true);
-            const obj2 = callback(closure_2[20]);
-            const obj3 = callback(closure_2[13]);
-            callback(closure_2[13]).runOnJS(callback2(closure_2[22]).acknowledgeTooltip)(callback(closure_2[15]).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS);
+            reveal(right[13]).runOnJS(outer1_14)();
+            const result = outer1_10.set(-outer1_9.get());
+            const obj = reveal(right[13]);
+            const result1 = outer1_8.set(reveal(right[20]).withTiming(outer1_10.get(), outer3_19));
+            const result2 = outer1_11.set(true);
+            const obj2 = reveal(right[20]);
+            const obj3 = reveal(right[13]);
+            reveal(right[13]).runOnJS(onDrawerClose(right[22]).acknowledgeTooltip)(reveal(right[15]).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS);
           };
           closeDrawer = function closeDrawer() {
-            const result = store2.set(0);
-            const result1 = store.set(callback(closure_2[20]).withTiming(0, closure_20));
-            const result2 = store3.set(false);
-            const obj = callback(closure_2[20]);
-            callback(closure_2[13]).runOnJS(closure_9)();
-            const obj2 = callback(closure_2[13]);
-            callback(closure_2[13]).runOnJS(closure_15)();
+            const result = outer1_10.set(0);
+            const result1 = outer1_8.set(reveal(right[20]).withTiming(0, outer3_20));
+            const result2 = outer1_11.set(false);
+            const obj = reveal(right[20]);
+            reveal(right[13]).runOnJS(c9)();
+            const obj2 = reveal(right[13]);
+            reveal(right[13]).runOnJS(outer1_15)();
           };
           value = controlMaxHeight.get();
           result = -1 * closure_8.get();
@@ -347,41 +353,41 @@ class FocusedControlsBottomDrawer {
           return;
         }
       }
-      obj = { drawerOpen: sharedValue2, positionY: sharedValue, maxHeight: derivedValue, velocity: sharedValue3, MIN_GESTURE_TRIGGER_VELOCITY: 500, CLOSE_DRAWER_POSITION: 0, runOnJS: reveal(right[13]).runOnJS, handleOpen, startY: sharedValue1, withTiming: reveal(right[20]).withTiming, TIMING_CONFIG: closure_19, TooltipActionCreators: onDrawerClose(right[22]), TooltipNames: reveal(right[15]).TooltipNames, TIMING_CONFIG_EXIT: closure_20, resetFocusTimer: tmp16, handleClose };
+      obj = { drawerOpen: sharedValue2, positionY: sharedValue, maxHeight: derivedValue, velocity: sharedValue3, MIN_GESTURE_TRIGGER_VELOCITY: 500, CLOSE_DRAWER_POSITION: 0, runOnJS: reveal(right[13]).runOnJS, handleOpen, startY: sharedValue1, withTiming: reveal(right[20]).withTiming, TIMING_CONFIG: outer1_19, TooltipActionCreators: onDrawerClose(right[22]), TooltipNames: reveal(right[15]).TooltipNames, TIMING_CONFIG_EXIT: outer1_20, resetFocusTimer: c9, handleClose };
       H.__closure = obj;
       H.__workletHash = 6790759206787;
-      H.__initData = closure_25;
+      H.__initData = outer1_25;
       const items1 = [sharedValue, Gesture.Pan().onStart(M).onUpdate(N).onEnd(H), callback1, first];
       return items1;
-    }(obj), 4);
+    })(obj), 4);
     first = tmp14[0];
-    clearFocusTimer = first;
+    Math = first;
     tmp16 = tmp14[2];
-    closure_9 = tmp16;
-    obj2 = arg1(dependencyMap[13]);
+    c9 = tmp16;
+    obj2 = require("module_3991");
     fn = function f() {
       let num = 0;
       if (!reveal) {
-        num = sum;
+        num = c6;
       }
-      let obj = { height: bound };
+      let obj = { position: "absolute", height: bound, overflow: "hidden" };
       let num2 = 0;
-      if (tmp3) {
+      if (_slicedToArray) {
         num2 = 16;
       }
       obj.bottom = num2;
       let num3 = 0;
-      if (tmp3) {
+      if (_slicedToArray) {
         num3 = 16 + right;
       }
       obj.right = num3;
       let num5 = 0;
-      if (tmp3) {
+      if (_slicedToArray) {
         num5 = 8;
       }
       obj.borderRadius = num5;
-      obj.width = tmp4;
-      obj = { translateY: reveal(right[20]).withTiming(num, closure_19) };
+      obj.width = result;
+      obj = { translateY: reveal(right[20]).withTiming(num, outer1_19) };
       const items = [obj];
       obj.transform = items;
       return obj;
@@ -392,45 +398,44 @@ class FocusedControlsBottomDrawer {
     obj.isLandscapeMode = tmp3;
     obj.safeAreaRight = right;
     obj.sheetWidth = tmp4;
-    obj.withTiming = arg1(dependencyMap[20]).withTiming;
-    obj.TIMING_CONFIG = closure_19;
+    obj.withTiming = require("withTiming").withTiming;
+    obj.TIMING_CONFIG = c19;
     fn.__closure = obj;
     fn.__workletHash = 608185354082;
-    fn.__initData = closure_28;
+    fn.__initData = c28;
     items = [, ];
     items[0] = tmp3;
     items[1] = first;
     animatedStyle = obj2.useAnimatedStyle(fn);
-    effect = importAll.useEffect(() => {
-      const result = first.set(reveal(right[20]).withTiming(0, closure_20));
+    effect = result.useEffect(() => {
+      const result = first.set(reveal(right[20]).withTiming(0, outer1_20));
     }, items);
     items1 = [, ];
     items1[0] = reveal;
     items1[1] = first;
-    effect1 = importAll.useEffect(() => {
+    effect1 = result.useEffect(() => {
       if (reveal) {
         const result = first.set(0);
       }
     }, items1);
     items2 = [];
     items2[0] = first;
-    effect2 = importAll.useEffect(() => {
-      function handleSelectActivity(arg0) {
-        const result = closure_8.set(handleSelectActivity(closure_2[20]).withTiming(0, closure_20));
+    effect2 = result.useEffect(() => {
+      function handleSelectActivity() {
+        const result = outer1_8.set(reveal(right[20]).withTiming(0, outer2_20));
       }
-      const reveal = handleSelectActivity;
-      const ComponentDispatch = reveal(right[25]).ComponentDispatch;
-      const subscription = ComponentDispatch.subscribe(constants.SELECT_ACTIVITY, handleSelectActivity);
+      let ComponentDispatch = reveal(right[25]).ComponentDispatch;
+      const subscription = ComponentDispatch.subscribe(outer1_12.SELECT_ACTIVITY, handleSelectActivity);
       return () => {
-        const ComponentDispatch = handleSelectActivity(closure_2[25]).ComponentDispatch;
-        ComponentDispatch.unsubscribe(constants.SELECT_ACTIVITY, handleSelectActivity);
+        const ComponentDispatch = reveal(right[25]).ComponentDispatch;
+        ComponentDispatch.unsubscribe(outer2_12.SELECT_ACTIVITY, handleSelectActivity);
       };
     }, items2);
-    obj4 = arg1(dependencyMap[13]);
+    obj4 = require("module_3991");
     class Z {
       constructor() {
-        obj = { height: closure_5 };
-        obj = { translateY: closure_7 + Math.get() };
+        obj = { height: c5 };
+        obj = { translateY: c7 + Math.get() };
         items = [];
         items[0] = obj;
         obj.transform = items;
@@ -443,19 +448,19 @@ class FocusedControlsBottomDrawer {
     obj1.positionY = first;
     Z.__closure = obj1;
     Z.__workletHash = 4471821639301;
-    Z.__initData = closure_29;
+    Z.__initData = c29;
     items3 = [];
     items3[0] = tmp16;
     animatedStyle1 = obj4.useAnimatedStyle(Z);
-    effect3 = importAll.useEffect(() => {
-      const ComponentDispatch = reveal(right[25]).ComponentDispatch;
-      const subscription = ComponentDispatch.subscribe(constants.TOGGLE_CALL_CONTROL_DRAWER, tmp16);
+    effect3 = result.useEffect(() => {
+      let ComponentDispatch = reveal(right[25]).ComponentDispatch;
+      const subscription = ComponentDispatch.subscribe(outer1_12.TOGGLE_CALL_CONTROL_DRAWER, c9);
       return () => {
-        const ComponentDispatch = callback(closure_2[25]).ComponentDispatch;
-        ComponentDispatch.unsubscribe(constants.TOGGLE_CALL_CONTROL_DRAWER, closure_9);
+        const ComponentDispatch = reveal(right[25]).ComponentDispatch;
+        ComponentDispatch.unsubscribe(outer2_12.TOGGLE_CALL_CONTROL_DRAWER, outer1_9);
       };
     }, items3);
-    obj6 = arg1(dependencyMap[26]);
+    obj6 = require("ManaContext");
     theme = obj6.useThemeContext().theme;
     tmp23 = jsx;
     obj2 = { style: animatedStyle, pointerEvents: "box-none" };
@@ -470,8 +475,8 @@ class FocusedControlsBottomDrawer {
     obj5 = { blurTheme: theme };
     items5 = [, ];
     items5[0] = tmp.visualEffectView;
-    tmp27 = importDefault(dependencyMap[27]);
-    obj11 = arg1(dependencyMap[28]);
+    tmp27 = require("getIOSBlurEffect");
+    obj11 = require("AccessibilityAnnouncer");
     prop = null;
     if (obj11.isThemeLight(theme)) {
       prop = tmp.visualEffectViewBackground;
@@ -487,23 +492,17 @@ class FocusedControlsBottomDrawer {
     obj6.positionY = first;
     items6[3] = jsx(FocusedControlsExpanded, obj6);
     obj4.children = items6;
-    obj3.children = tmp25(importDefault(dependencyMap[13]).View, obj4);
-    obj2.children = tmp24(arg1(dependencyMap[21]).GestureDetector, obj3);
-    return tmp23(importDefault(dependencyMap[13]).View, obj2);
+    obj3.children = tmp25(require("module_3991").View, obj4);
+    obj2.children = tmp24(require("Directions").GestureDetector, obj3);
+    return tmp23(require("module_3991").View, obj2);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-({ View: closure_5, TouchableWithoutFeedback: closure_6, ScrollView: closure_7 } = tmp2);
-({ clearFocusTimer: closure_8, resetFocusTimer: closure_9 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-({ BOX_MODE_THRESHOLD_WIDTH: closure_10, BOX_MODE_ACTIONSHEET_HEIGHT: closure_11 } = arg1(dependencyMap[4]));
-const tmp5 = arg1(dependencyMap[5]);
-const ComponentActions = tmp5.ComponentActions;
-const tmp4 = arg1(dependencyMap[4]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[6]));
-let closure_15 = 20;
+({ View: closure_5, TouchableWithoutFeedback: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
+({ clearFocusTimer: closure_8, resetFocusTimer: closure_9 } = resetFocusTimer);
+({ BOX_MODE_THRESHOLD_WIDTH: closure_10, BOX_MODE_ACTIONSHEET_HEIGHT: closure_11 } = BOX_MODE_ACTIONSHEET_WIDTH);
+const ComponentActions = ME.ComponentActions;
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+let c15 = 20;
 function EXTENDED_CONTROLS_OFFSET_Y(top) {
   const sum = top + 54;
   let num = 16;
@@ -515,29 +514,26 @@ function EXTENDED_CONTROLS_OFFSET_Y(top) {
 function EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y(top) {
   return top + 54 + 12;
 }
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { <string:80590080>: 131420590, <string:80590336>: -1717986767, <string:80597504>: -644245095, <string:80624128>: 94527, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-obj.bottomDrawerContainer = obj;
-const obj1 = {};
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
-obj1["borderRadius"] = importDefault(dependencyMap[9]).radii.sm;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { position: "absolute", left: 0, right: 0, bottom: 0, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.bottomDrawerContainer = _createForOfIteratorHelperLoose;
+let obj1 = {};
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
+obj1["borderRadius"] = require("_createForOfIteratorHelperLoose").radii.sm;
 obj1["overflow"] = "hidden";
-obj.visualEffectView = obj1;
-obj.visualEffectViewBackground = { backgroundColor: "rgba(0, 0, 0, .15)" };
-obj.expandedControlsContainer = { marginHorizontal: 16 };
-obj.aboveActionBarContainer = {};
-obj.aboveActionBarChildrenContainer = { -656831359: "<string:1912602980>", 1390021337: "toString", -742727557: "toString", alignItems: "<string:1237991937>" };
-obj.ptbButton = { registerAsset: "<string:3206807554>", category: "<string:4132503554>", alignItems: "<string:745603565>" };
-obj.tooltipStyle = { "Null": null, "Null": null, "Null": null };
-obj.containerStyle = { "Bool(false)": "Array", "Bool(false)": "isArray" };
-const obj2 = {};
-const tmp6 = arg1(dependencyMap[6]);
-const merged1 = Object.assign(importDefault(dependencyMap[10])(tmp5.Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[9]).unsafe_rawColors.WHITE, 12, { uppercase: true }));
-obj.labelStyle = obj2;
-let closure_18 = obj.createStyles(obj);
-const obj4 = { easing: arg1(dependencyMap[11]).STANDARD_EASING, duration: 250 };
-const obj5 = { easing: arg1(dependencyMap[11]).STANDARD_EASING, duration: 400 };
+_createForOfIteratorHelperLoose.visualEffectView = obj1;
+_createForOfIteratorHelperLoose.visualEffectViewBackground = { backgroundColor: "rgba(0, 0, 0, .15)" };
+_createForOfIteratorHelperLoose.expandedControlsContainer = { marginHorizontal: 16 };
+_createForOfIteratorHelperLoose.aboveActionBarContainer = { position: "absolute", left: 0, right: 0, top: -32, paddingTop: 4, paddingBottom: 8 };
+_createForOfIteratorHelperLoose.aboveActionBarChildrenContainer = { position: "absolute", left: 16, right: 16, top: -64 };
+_createForOfIteratorHelperLoose.ptbButton = { margin: 0, marginHorizontal: 16, marginBottom: 8 };
+_createForOfIteratorHelperLoose.tooltipStyle = { alignSelf: "center", position: "absolute", top: -28 };
+_createForOfIteratorHelperLoose.containerStyle = { paddingHorizontal: 8, paddingVertical: 4 };
+const merged1 = Object.assign(require("createTextStyle")(ME.Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 12, { uppercase: true }));
+_createForOfIteratorHelperLoose.labelStyle = {};
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { easing: require("Button").STANDARD_EASING, duration: 250 };
+let obj5 = { easing: require("Button").STANDARD_EASING, duration: 400 };
 let closure_21 = { code: "function FocusedControlsBottomControlsTsx1(){const{positionY,EXPANDED_DRAWER_SHOW_POSITION}=this.__closure;const opacity=Math.min(positionY.get()*-1/EXPANDED_DRAWER_SHOW_POSITION,1);return{opacity:opacity,pointerEvents:opacity===0?'none':'auto'};}" };
 let closure_22 = { code: "function FocusedControlsBottomControlsTsx2(){const{positionY,EXPANDED_DRAWER_SHOW_POSITION}=this.__closure;return{opacity:1-Math.min(positionY.get()*-1/EXPANDED_DRAWER_SHOW_POSITION,1)};}" };
 let closure_23 = { code: "function FocusedControlsBottomControlsTsx3(){const{offsetY,EXPANDED_DRAWER_SHOW_POSITION,positionY}=this.__closure;const maxHeightRange=offsetY/3-EXPANDED_DRAWER_SHOW_POSITION;const opacity=2-Math.max(Math.abs(positionY.get())/maxHeightRange,0);return{opacity:opacity};}" };
@@ -547,9 +543,9 @@ let closure_26 = { code: "function FocusedControlsBottomControlsTsx6(event){cons
 let closure_27 = { code: "function FocusedControlsBottomControlsTsx7(){const{runOnJS,clearFocusTimer,drawerOpen,positionY,CLOSE_DRAWER_POSITION,velocity,startY}=this.__closure;runOnJS(clearFocusTimer)();drawerOpen.set(positionY.get()!==CLOSE_DRAWER_POSITION);velocity.set(0);if(positionY.get()==null||!drawerOpen.get()){startY.set(0);}}" };
 let closure_28 = { code: "function FocusedControlsBottomControlsTsx8(){const{reveal,controlHeightWithOffset,sheetHeight,isLandscapeMode,safeAreaRight,sheetWidth,withTiming,TIMING_CONFIG}=this.__closure;const revealOffset=reveal?0:controlHeightWithOffset;return{position:'absolute',height:sheetHeight,overflow:'hidden',bottom:isLandscapeMode?16:0,right:isLandscapeMode?16+safeAreaRight:0,borderRadius:isLandscapeMode?8:0,width:sheetWidth,transform:[{translateY:withTiming(revealOffset,TIMING_CONFIG)}]};}" };
 let closure_29 = { code: "function FocusedControlsBottomControlsTsx9(){const{sheetHeight,offsetY,positionY}=this.__closure;return{height:sheetHeight,transform:[{translateY:offsetY+positionY.get()}]};}" };
-const importDefaultResult = importDefault(dependencyMap[10]);
-const obj3 = { uppercase: true };
-const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/video_calls/native/components/FocusedControlsBottomControls.tsx");
+let obj2 = {};
+let obj3 = { uppercase: true };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/video_calls/native/components/FocusedControlsBottomControls.tsx");
 
 export default function FocusedControlsBottomControls(omitPTT) {
   let actionBar;
@@ -563,9 +559,9 @@ export default function FocusedControlsBottomControls(omitPTT) {
   if (flag === undefined) {
     flag = false;
   }
-  let callback;
-  const tmp2 = callback2(React.useState(0), 2);
-  callback = tmp2[1];
+  let _require;
+  const tmp2 = callback(React.useState(0), 2);
+  _require = tmp2[1];
   let obj = { aboveActionBar: children, actionBarControlsHeight: tmp2[0], expandedControls, reveal, onDrawerClose, onDrawerOpen: omitPTT.onDrawerOpen };
   obj = {
     onLayout: React.useCallback((nativeEvent) => {
@@ -575,14 +571,14 @@ export default function FocusedControlsBottomControls(omitPTT) {
   const items = [header, actionBar, ];
   let tmp7 = null;
   if (!flag) {
-    obj = { look: callback(dependencyMap[29]).CallPTTButtonLooks.BLUR, style: tmp.ptbButton, sendCallback: closure_8, stopCallback: closure_9 };
-    tmp7 = callback3(importDefault(dependencyMap[29]), obj);
-    const tmp11 = importDefault(dependencyMap[29]);
+    obj = { look: _require(10384).CallPTTButtonLooks.BLUR, style: tmp.ptbButton, sendCallback: closure_8, stopCallback: closure_9 };
+    tmp7 = callback2(importDefault(10384), obj);
+    const tmp11 = importDefault(10384);
   }
   items[2] = tmp7;
   obj.children = items;
   obj.children = closure_14(closure_5, obj);
-  return callback3(FocusedControlsBottomDrawer, obj);
+  return callback2(FocusedControlsBottomDrawer, obj);
 };
 export const FOCUSED_CONTROLS_HEADER_HEIGHT = 54;
 export { FocusedControlsBottomDrawer };

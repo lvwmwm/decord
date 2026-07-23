@@ -1,18 +1,19 @@
-// Module ID: 11157
-// Function ID: 86778
-// Dependencies: []
+// Module ID: 11167
+// Function ID: 86828
+// Dependencies: [31, 27, 9313, 33, 4130, 689, 11168, 2]
 
-// Module 11157
-const View = arg1(dependencyMap[1]).View;
-let closure_3 = arg1(dependencyMap[2]).useBestActiveChatInputContainerHeight;
-const jsx = arg1(dependencyMap[3]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 11167
+import { View } from "get ActivityIndicator";
+import { useBestActiveChatInputContainerHeight as closure_3 } from "getChatInputContainerHeight";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
 let obj = {};
-obj = { lastUsedCommandId: null, lastUsedTimeMs: null, alignItems: null, flexDirection: null, gap: null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SCRIM };
+obj = { opacity: 1, width: "100%", position: "absolute", left: 0, top: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM };
 obj.container = obj;
-let closure_5 = arg1(dependencyMap[4]).createStyles(obj);
-const obj2 = arg1(dependencyMap[4]);
-const memoResult = importAllResult.memo((visibleContent) => {
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo((visibleContent) => {
   let bottomOffset;
   let context;
   visibleContent = visibleContent.visibleContent;
@@ -25,11 +26,11 @@ const memoResult = importAllResult.memo((visibleContent) => {
     items[1] = obj;
     obj.style = items;
     obj = { context, visibleContent };
-    obj.children = jsx(importDefault(dependencyMap[6]), obj);
-    tmp3 = <View {...obj} />;
+    obj.children = jsx(importDefault(11168), { context, visibleContent });
+    tmp3 = <View context={context} visibleContent={visibleContent} />;
   }
   return tmp3;
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingLayer.tsx");
+const result = require("getChatInputContainerHeight").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherOnboardingLayer.tsx");
 
 export default memoResult;

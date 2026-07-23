@@ -1,19 +1,23 @@
-// Module ID: 4707
-// Function ID: 40958
+// Module ID: 4710
+// Function ID: 40976
 // Name: _getDetectedFileSize
-// Dependencies: []
+// Dependencies: [5, 2]
 // Exports: getDetectedFileSize
 
-// Module 4707 (_getDetectedFileSize)
-async function _getDetectedFileSize(size, arg1) {
-  if (size.size > 0) {
-    return size.size;
+// Module 4710 (_getDetectedFileSize)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
+async function _getDetectedFileSize(arg0, arg1) {
+  let asyncGeneratorStep = arg0;
+  if (arg0.size > 0) {
+    return arg0.size;
   } else {
-    return yield new Promise((data) => {
+    return yield new Promise((asyncGeneratorStep) => {
+      let closure_1 = arg1;
       const fileReader = new FileReader();
       const timeout = setTimeout(() => {
         const error = new Error("File read timeout");
-        arg1(error);
+        callback2(error);
       }, 10000);
       fileReader.onload = (target) => {
         clearTimeout(closure_2);
@@ -23,24 +27,23 @@ async function _getDetectedFileSize(size, arg1) {
           result = target.result;
         }
         if (result instanceof ArrayBuffer) {
-          target(result.byteLength);
+          callback(result.byteLength);
         } else {
           const _Error = Error;
           const error = new Error("Unexpected FileReader result type");
-          arg1(error);
+          callback2(error);
         }
       };
       fileReader.onerror = () => {
         clearTimeout(closure_2);
         const error = new Error("Could not read file");
-        arg1(error);
+        callback2(error);
       };
-      const asArrayBuffer = fileReader.readAsArrayBuffer(data);
+      const asArrayBuffer = fileReader.readAsArrayBuffer(asyncGeneratorStep);
     });
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/media_uploads/DetectedFileSize.tsx");
+let result = require("set").fileFinishedImporting("modules/media_uploads/DetectedFileSize.tsx");
 
 export const getDetectedFileSize = function getDetectedFileSize() {
   return _getDetectedFileSize(...arguments);

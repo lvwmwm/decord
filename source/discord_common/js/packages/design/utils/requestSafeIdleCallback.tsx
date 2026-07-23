@@ -1,14 +1,14 @@
 // Module ID: 673
 // Function ID: 8277
 // Name: setOriginWindow
-// Dependencies: []
+// Dependencies: [674, 2]
 // Exports: requestSafeIdleCallback, setOriginWindow
 
 // Module 673 (setOriginWindow)
-const _module = require(dependencyMap[0]);
-const globalObject = _module.getGlobalObject();
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("../discord_common/js/packages/design/utils/requestSafeIdleCallback.tsx");
+import getGlobalObject from "getGlobalObject";
+
+getGlobalObject = getGlobalObject.getGlobalObject();
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/utils/requestSafeIdleCallback.tsx");
 
 export function setOriginWindow(arg0) {
   let closure_0 = arg0;
@@ -19,16 +19,16 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
   if (undefined !== closure_0) {
     if (null != obj.requestIdleCallback) {
       if (null != obj.cancelIdleCallback) {
-        let closure_2 = false;
+        let c2 = false;
         let timeout2 = null;
         function runOnce() {
-          if (!closure_2) {
-            closure_2 = true;
-            if (null != closure_3) {
-              closure_1.clearTimeout(closure_3);
-              closure_3 = null;
+          if (!c2) {
+            c2 = true;
+            if (null != c3) {
+              closure_1.clearTimeout(c3);
+              c3 = null;
             }
-            arg0();
+            callback();
           }
         }
         let closure_5 = obj.requestIdleCallback(runOnce, timeout);
@@ -41,16 +41,16 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
           num = timeout;
         }
         timeout2 = obj.setTimeout(() => {
-          if (!closure_2) {
+          if (!c2) {
             closure_1.cancelIdleCallback(closure_5);
           }
           runOnce();
         }, num);
         return () => {
           closure_1.cancelIdleCallback(closure_5);
-          if (null != closure_3) {
-            closure_1.clearTimeout(closure_3);
-            closure_3 = null;
+          if (null != c3) {
+            closure_1.clearTimeout(c3);
+            c3 = null;
           }
         };
       }

@@ -1,29 +1,31 @@
-// Module ID: 16296
-// Function ID: 125761
+// Module ID: 16413
+// Function ID: 127935
 // Name: GuildSubscriptionEnableMonetization
-// Dependencies: []
+// Dependencies: [31, 1838, 33, 566, 16375, 15261, 1212, 2]
 // Exports: default
 
-// Module 16296 (GuildSubscriptionEnableMonetization)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEnableMonetization.tsx");
+// Module 16413 (GuildSubscriptionEnableMonetization)
+import "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEnableMonetization.tsx");
 
 export default function GuildSubscriptionEnableMonetization(guildId) {
-  const arg1 = guildId.guildId;
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_3];
-  if (null == obj.useStateFromStores(items, () => guild.getGuild(guildId))) {
-    let tmp4 = jsx(importDefault(dependencyMap[4]), {});
+  guildId = guildId.guildId;
+  let obj = guildId(566);
+  const items = [_createForOfIteratorHelperLoose];
+  if (null == obj.useStateFromStores(items, () => outer1_3.getGuild(guildId))) {
+    let tmp4 = jsx(importDefault(16375), {});
   } else {
     obj = { brightTitle: true };
-    const intl = arg1(dependencyMap[6]).intl;
-    obj.title = intl.string(arg1(dependencyMap[6]).t.KeeWp0);
-    const intl2 = arg1(dependencyMap[6]).intl;
-    obj.description = intl2.string(arg1(dependencyMap[6]).t.tJLG+L);
-    tmp4 = jsx(importDefault(dependencyMap[5]), obj);
-    const tmp8 = importDefault(dependencyMap[5]);
+    const intl = guildId(1212).intl;
+    obj.title = intl.string(guildId(1212).t.KeeWp0);
+    const intl2 = guildId(1212).intl;
+    obj.description = intl2.string(guildId(1212).t["tJLG+L"]);
+    tmp4 = jsx(importDefault(15261), { brightTitle: true });
+    const tmp8 = importDefault(15261);
   }
   return tmp4;
 };

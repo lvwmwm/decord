@@ -1,14 +1,14 @@
-// Module ID: 7844
-// Function ID: 62563
+// Module ID: 7850
+// Function ID: 62600
 // Name: UploadTypes
-// Dependencies: []
+// Dependencies: [7851, 2]
 
-// Module 7844 (UploadTypes)
-const BACKGROUND_REPLACEMENT_SIZE = require(dependencyMap[0]).BACKGROUND_REPLACEMENT_SIZE;
+// Module 7850 (UploadTypes)
+import { BACKGROUND_REPLACEMENT_SIZE } from "VideoFilterType";
+
 const result = BACKGROUND_REPLACEMENT_SIZE.width / BACKGROUND_REPLACEMENT_SIZE.height;
 const result1 = 432 / result;
-const _module = require(dependencyMap[1]);
-const result2 = _module.fileFinishedImporting("modules/image_cropping/web/ImageCroppingConstants.tsx");
+const result2 = require("set").fileFinishedImporting("modules/image_cropping/web/ImageCroppingConstants.tsx");
 
 export const UploadTypes = { AVATAR: "AVATAR", BANNER: "BANNER", GUILD_BANNER: "GUILD_BANNER", VIDEO_BACKGROUND: "VIDEO_BACKGROUND", SCHEDULED_EVENT_IMAGE: "SCHEDULED_EVENT_IMAGE", HOME_HEADER: "HOME_HEADER", AVATAR_DECORATION: "AVATAR_DECORATION", GUILD_ICON: "GUILD_ICON" };
 export const EDITING_CONTAINER_WIDTH = 432;

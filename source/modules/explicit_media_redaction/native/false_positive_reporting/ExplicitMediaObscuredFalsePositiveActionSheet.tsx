@@ -1,29 +1,27 @@
-// Module ID: 9861
-// Function ID: 76355
+// Module ID: 9868
+// Function ID: 76396
 // Name: ExplicitMediaObscuredFalsePositiveActionSheet
-// Dependencies: []
+// Dependencies: [31, 6836, 33, 9869, 8146, 8147, 6845, 4098, 6835, 2]
 // Exports: default
 
-// Module 9861 (ExplicitMediaObscuredFalsePositiveActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaObscuredFalsePositiveActionSheet.tsx");
+// Module 9868 (ExplicitMediaObscuredFalsePositiveActionSheet)
+import result from "result";
+import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaObscuredFalsePositiveActionSheet.tsx");
 
 export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId) {
   let attachmentId;
   let embedId;
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const messageId = channelId.messageId;
-  const importDefault = messageId;
   ({ attachmentId, embedId } = channelId);
-  let obj = arg1(dependencyMap[3]);
-  const redactableMediaAttachmentsForMessage = obj.useRedactableMediaAttachmentsForMessage(channelId, messageId, attachmentId);
-  const dependencyMap = redactableMediaAttachmentsForMessage;
-  const redactableMediaEmbedsForMessage = arg1(dependencyMap[3]).useRedactableMediaEmbedsForMessage(channelId, messageId, embedId);
-  const React = redactableMediaEmbedsForMessage;
-  const obj2 = arg1(dependencyMap[3]);
+  let obj = channelId(redactableMediaAttachmentsForMessage[3]);
+  redactableMediaAttachmentsForMessage = obj.useRedactableMediaAttachmentsForMessage(channelId, messageId, attachmentId);
+  const redactableMediaEmbedsForMessage = channelId(redactableMediaAttachmentsForMessage[3]).useRedactableMediaEmbedsForMessage(channelId, messageId, embedId);
+  const obj2 = channelId(redactableMediaAttachmentsForMessage[3]);
   obj = {
     onSuccess() {
       return channelId(redactableMediaAttachmentsForMessage[5]).handleSuccess(reportFalsePositive);
@@ -46,9 +44,8 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
       return channelId(redactableMediaAttachmentsForMessage[6]).reportFalsePositive(channelId, messageId, mapped, mapped1);
     }
   };
-  const explicitMediaActions = arg1(dependencyMap[4]).useExplicitMediaActions(obj);
+  const explicitMediaActions = channelId(redactableMediaAttachmentsForMessage[4]).useExplicitMediaActions(obj);
   const reportFalsePositive = explicitMediaActions.reportFalsePositive;
-  let closure_4 = reportFalsePositive;
   let length;
   if (null != redactableMediaAttachmentsForMessage) {
     length = redactableMediaAttachmentsForMessage.length;
@@ -70,11 +67,11 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
     tmp3 = num2 > 0;
   }
   if (!tmp3) {
-    importDefault(dependencyMap[7]).hideActionSheet();
-    const obj5 = importDefault(dependencyMap[7]);
+    messageId(redactableMediaAttachmentsForMessage[7]).hideActionSheet();
+    const obj5 = messageId(redactableMediaAttachmentsForMessage[7]);
   }
   const items = [reportFalsePositive];
-  const callback = React.useCallback(() => {
+  const callback = redactableMediaEmbedsForMessage.useCallback(() => {
     reportFalsePositive();
   }, items);
   obj = { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading };
@@ -89,6 +86,6 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
   }
   obj.embedPreview = first1;
   obj.onConfirmPress = callback;
-  obj.analyticsContext = arg1(dependencyMap[8]).TrackMediaRedactionContext.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW;
-  return jsx(arg1(dependencyMap[5]).ExplicitMediaFalsePositiveActionSheet, obj);
+  obj.analyticsContext = channelId(redactableMediaAttachmentsForMessage[8]).TrackMediaRedactionContext.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW;
+  return jsx(channelId(redactableMediaAttachmentsForMessage[5]).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading });
 };

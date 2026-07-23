@@ -1,20 +1,20 @@
-// Module ID: 8760
-// Function ID: 69265
+// Module ID: 8767
+// Function ID: 69306
 // Name: useVirtualCurrencyData
-// Dependencies: []
+// Dependencies: [31, 6785, 8722, 2]
 // Exports: useVirtualCurrencyData
 
-// Module 8760 (useVirtualCurrencyData)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/native/hooks/useVirtualCurrencyData.tsx");
+// Module 8767 (useVirtualCurrencyData)
+import result from "result";
+
+const require = arg1;
+const result = require("module_8722").fileFinishedImporting("modules/collectibles/native/hooks/useVirtualCurrencyData.tsx");
 
 export const useVirtualCurrencyData = function useVirtualCurrencyData(product, canUseShopDiscountsResult) {
-  let obj = canUseShopDiscountsResult(dependencyMap[1]);
+  let obj = productOrbPrice(balance[1]);
   obj = { product, hasShopDiscount: canUseShopDiscountsResult };
-  const productOrbPrice = obj.getProductOrbPrice(obj);
-  canUseShopDiscountsResult = productOrbPrice;
-  const balance = canUseShopDiscountsResult(dependencyMap[2]).useFetchVirtualCurrencyBalance().balance;
-  const dependencyMap = balance;
+  productOrbPrice = obj.getProductOrbPrice(obj);
+  balance = productOrbPrice(balance[2]).useFetchVirtualCurrencyBalance().balance;
   const items = [productOrbPrice, balance];
   obj = {
     price: productOrbPrice,

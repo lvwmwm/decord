@@ -1,7 +1,7 @@
 // Module ID: 1848
-// Function ID: 20266
+// Function ID: 20267
 // Name: setTimeout
-// Dependencies: []
+// Dependencies: [1846, 2]
 // Exports: keepAliveWorkaround, registerTimerPolyfills, setTimersMonitorCallback
 
 // Module 1848 (setTimeout)
@@ -32,8 +32,17 @@ function clearTimeout(arg0) {
     closure_3.clear(arg0);
   }
 }
-const LIBDISCORE_JSI = require(dependencyMap[0]).typedGlobal.LIBDISCORE_JSI;
-let closure_1 = null;
+const LIBDISCORE_JSI = require("typedGlobal").typedGlobal.LIBDISCORE_JSI;
+let c1 = null;
+const obj = {
+  slowExecutionThresholdMillis: 500,
+  delayedExecutionThresholdMillis: 5000,
+  onSlowTimer(arg0, arg1, arg2, arg3) {
+    if (null != _null) {
+      _null(arg0, arg1, arg2, arg3);
+    }
+  }
+};
 const map = new Map();
 let closure_3 = LIBDISCORE_JSI.makeTimerManager(function expirationCallback(arg0, arg1) {
   const value = map.get(arg0);
@@ -43,15 +52,8 @@ let closure_3 = LIBDISCORE_JSI.makeTimerManager(function expirationCallback(arg0
     }
     value();
   }
-}, {
-  onSlowTimer(arg0, arg1, arg2, arg3) {
-    if (null != _null) {
-      _null(arg0, arg1, arg2, arg3);
-    }
-  }
-});
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/timers.tsx");
+}, obj);
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/timers.tsx");
 
 export function setTimersMonitorCallback(onTimersDelayCallback) {
   let closure_1 = onTimersDelayCallback;

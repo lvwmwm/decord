@@ -1,34 +1,41 @@
-// Module ID: 5686
-// Function ID: 48963
+// Module ID: 5691
+// Function ID: 48990
 // Name: performRoleSubscriptionUpsellRedirect
-// Dependencies: []
+// Dependencies: [5, 653, 1355, 5692, 1934, 3, 2]
 
-// Module 5686 (performRoleSubscriptionUpsellRedirect)
+// Module 5691 (performRoleSubscriptionUpsellRedirect)
+import timestamp from "timestamp";
+import ME from "ME";
+import { StaticChannelRoute } from "set";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function performRoleSubscriptionUpsellRedirect(guildId) {
   return _performRoleSubscriptionUpsellRedirect(...arguments);
 }
 async function _performRoleSubscriptionUpsellRedirect(arg0, arg1) {
-  const CHANNELResult = closure_5.CHANNEL(arg0, constants.ROLE_SUBSCRIPTIONS);
-  yield yield closure_0(closure_2[4])(closure_2[3], closure_2.paths).default.redirectWithHandoffToken(CHANNELResult, { forceExternalBrowser: true });
+  const CHANNELResult = outer2_5.CHANNEL(arg0, outer2_6.ROLE_SUBSCRIPTIONS);
+  yield yield outer2_0(outer2_2[4])(outer2_2[3], outer2_2.paths).default.redirectWithHandoffToken(CHANNELResult, { forceExternalBrowser: true });
   return true;
 }
 async function _performRoleSubscriptionTeamCreationRedirect() {
-  yield closure_11(closure_4.DEVELOPER_PORTAL_TEAMS);
+  yield outer2_11(outer2_4.DEVELOPER_PORTAL_TEAMS);
 }
 async function _performRoleSubscriptionEditPayoutRedirect(arg0, arg1) {
-  yield closure_11(closure_4.DEVELOPER_PORTAL_EDIT_PAYOUTS(arg0));
+  yield outer2_11(outer2_4.DEVELOPER_PORTAL_EDIT_PAYOUTS(arg0));
 }
 function performDeveloperPortalRedirectWithTokenHandoff() {
   return _performDeveloperPortalRedirectWithTokenHandoff(...arguments);
 }
-async function _performDeveloperPortalRedirectWithTokenHandoff(DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, arg1) {
-  yield yield closure_0(closure_2[4])(closure_2[3], closure_2.paths).default.redirectDeveloperPortalWithHandoffToken(DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
+async function _performDeveloperPortalRedirectWithTokenHandoff(arg0, arg1) {
+  yield yield outer2_0(outer2_2[4])(outer2_2[3], outer2_2.paths).default.redirectDeveloperPortalWithHandoffToken(arg0);
   return true;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ RelativeMarketingURLs: closure_4, Routes: closure_5 } = arg1(dependencyMap[1]));
-const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;
-const obj = {
+({ RelativeMarketingURLs: closure_4, Routes: closure_5 } = ME);
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/mobile_web_purchase/RoleSubscriptionsLinkingUtil.tsx");
+
+export default {
   performRoleSubscriptionUpsellRedirect,
   performRoleSubscriptionTeamCreationRedirect() {
     return _performRoleSubscriptionTeamCreationRedirect(...arguments);
@@ -47,7 +54,3 @@ const obj = {
     resolved = Promise.resolve(false);
   }
 };
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_role_subscriptions/native/mobile_web_purchase/RoleSubscriptionsLinkingUtil.tsx");
-
-export default obj;

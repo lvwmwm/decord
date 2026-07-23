@@ -1,10 +1,20 @@
-// Module ID: 3981
-// Function ID: 33068
+// Module ID: 3983
+// Function ID: 33073
 // Name: wrapRouteForRootNavigator
-// Dependencies: []
+// Dependencies: [57, 1194, 3951, 1906, 653, 3, 3984, 1198, 3952, 3965, 3987, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState
 
-// Module 3981 (wrapRouteForRootNavigator)
+// Module 3983 (wrapRouteForRootNavigator)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import ME from "ME";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+let closure_6;
+let closure_7;
+let require = arg1;
 function wrapRouteForRootNavigator(items) {
   items = [{ name: "main", state: { routes: items, index: items.length - 1 } }];
   return items;
@@ -20,7 +30,7 @@ function getInitialGuildState(closure_6, channelId, flag2, flag) {
   if (null != channelId) {
     tmp3 = channelId;
   }
-  let obj = channelId(dependencyMap[6]);
+  let obj = require(3984) /* useChatLayout */;
   const isChatLockedOpen = obj.getChatLayout().isChatLockedOpen;
   if (flag2) {
     if (null != tmp3) {
@@ -70,23 +80,23 @@ function computeInitialNavigationStateWithoutLogging() {
   let channelId;
   let guildId;
   if (null != token.getToken()) {
-    let obj3 = arg1(dependencyMap[7]);
+    let obj3 = require(1198) /* shouldNavigate */;
     const _location = obj3.getHistory().location;
-    let obj4 = arg1(dependencyMap[8]);
+    let obj4 = require(3952) /* matchPath */;
     let obj = {};
-    const RouteParam = arg1(dependencyMap[9]).RouteParam;
-    const RouteParam2 = arg1(dependencyMap[9]).RouteParam;
+    const RouteParam = require(3965) /* isPseudoGuildId */.RouteParam;
+    const RouteParam2 = require(3965) /* isPseudoGuildId */.RouteParam;
     obj = { optional: true };
     obj.path = closure_7.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(obj), ":messageId?");
     let matchPathResult = obj4.matchPath(_location.pathname, obj);
-    const MobileHomeDrawerExperiment = arg1(dependencyMap[10]).MobileHomeDrawerExperiment;
+    const MobileHomeDrawerExperiment = require(3987) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
     const obj1 = { location: "app-start" };
     const tmp6 = MobileHomeDrawerExperiment.getConfig(obj1).landOnHome && null == matchPathResult;
     if (null == matchPathResult) {
-      let obj8 = arg1(dependencyMap[8]);
+      let obj8 = require(3952) /* matchPath */;
       const obj2 = {};
-      const RouteParam3 = arg1(dependencyMap[9]).RouteParam;
-      const RouteParam4 = arg1(dependencyMap[9]).RouteParam;
+      const RouteParam3 = require(3965) /* isPseudoGuildId */.RouteParam;
+      const RouteParam4 = require(3965) /* isPseudoGuildId */.RouteParam;
       obj3 = { optional: true };
       obj2.path = closure_7.CHANNEL(RouteParam3.guildId(), RouteParam4.channelId(obj3), ":messageId?");
       matchPathResult = obj8.matchPath(lastNonVoiceRoute.lastNonVoiceRoute, obj2);
@@ -144,19 +154,13 @@ function computeInitialNavigationStateWithoutLogging() {
     return items3;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-({ ME: closure_6, Routes: closure_7 } = arg1(dependencyMap[4]));
-let importDefaultResult = importDefault(dependencyMap[5]);
+({ ME: closure_6, Routes: closure_7 } = ME);
 importDefaultResult = new importDefaultResult("getInitialNavigationState");
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/main_tabs_v2/native/getInitialNavigationState.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/getInitialNavigationState.tsx");
 
 export default function getInitialNavigationState(arr) {
   const tmp = computeInitialNavigationStateWithoutLogging()[1];
-  const arg1 = tmp;
+  const require = tmp;
   if (null != arr) {
     const item = arr.forEach((arg0) => {
       const routes = tmp.routes;

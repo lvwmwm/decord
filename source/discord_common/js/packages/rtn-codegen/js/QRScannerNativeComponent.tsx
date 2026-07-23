@@ -1,18 +1,18 @@
-// Module ID: 12762
-// Function ID: 97857
+// Module ID: 12876
+// Function ID: 100013
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [110, 42, 2]
 
-// Module 12762 (__INTERNAL_VIEW_CONFIG)
+// Module 12876 (__INTERNAL_VIEW_CONFIG)
+import weakSet from "weakSet";
+import get from "get";
+
 let obj = { uiViewClassName: "DCDQRScanner", directEventTypes: { topQRCodeFound: { registrationName: "onQRCodeFound" } } };
 obj = {};
-const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ onQRCodeFound: true }));
+const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onQRCodeFound: true }));
 obj.validAttributes = obj;
-const _module1 = require(dependencyMap[1]);
-const value = _module1.get("DCDQRScanner", () => obj);
-const _module2 = require(dependencyMap[2]);
-const result = _module2.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/QRScannerNativeComponent.tsx");
+const value = get.get("DCDQRScanner", () => obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/QRScannerNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

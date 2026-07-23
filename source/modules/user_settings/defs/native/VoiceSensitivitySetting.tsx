@@ -1,79 +1,87 @@
-// Module ID: 14025
-// Function ID: 106657
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Module ID: 14139
+// Function ID: 108813
+// Dependencies: [27, 4177, 7662, 33, 4130, 566, 10714, 8843, 10095, 1212, 2]
 
-// Module 14025
-import { View } from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14139
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createToggle from "createToggle";
 
-let closure_6 = __exportStarResult1.createStyles({ slider: { marginTop: 8 } });
-const obj = {
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ slider: { marginTop: 8 } });
+let obj = {
   useTitle() {
-    const intl = require(dependencyMap[9]).intl;
-    return intl.string(require(dependencyMap[9]).t.sqUm+k);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["sqUm+k"]);
   },
-  parent: require("__exportStarResult1").MobileSetting.VOICE,
+  parent: require("MobileSetting").MobileSetting.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
     let vadAutoThreshold;
     let vadThreshold;
-    let obj = require(dependencyMap[5]);
-    const items = [closure_4];
-    const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
-    const require = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(dependencyMap[6]), obj) };
+    let obj = inputMode(566);
+    const items = [_isNativeReflectConstruct];
+    const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: outer1_4.getMode(), vadThreshold: outer1_4.getModeOptions().threshold, vadAutoThreshold: outer1_4.getModeOptions().autoThreshold }));
+    inputMode = stateFromStoresObject.inputMode;
+    obj = { style: callback().slider, children: jsx(importDefault(10714), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,
       threshold: vadThreshold,
       onThresholdChange(threshold) {
-        let obj = callback(closure_2[7]);
+        let obj = outer1_1(outer1_2[7]);
         obj = { threshold };
         return obj.setMode(inputMode, obj);
       }
     };
-    return <View {...obj} />;
+    return <View auto={vadAutoThreshold} threshold={vadThreshold} onThresholdChange={function onThresholdChange(threshold) {
+      let obj = outer1_1(outer1_2[7]);
+      obj = { threshold };
+      return obj.setMode(inputMode, obj);
+    }} />;
   },
   useSearchTerms() {
-    const intl = require(dependencyMap[9]).intl;
-    const items = [intl.string(require(dependencyMap[9]).t.nuFtHH)];
+    const intl = require(1212) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1212) /* getSystemLocale */.t.nuFtHH)];
     return items;
   }
 };
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/VoiceSensitivitySetting.tsx");
-
-export default __exportStarResult1.createStatic({
+const createStaticResult = createToggle.createStatic({
   useTitle() {
-    const intl = require(dependencyMap[9]).intl;
-    return intl.string(require(dependencyMap[9]).t.sqUm+k);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["sqUm+k"]);
   },
-  parent: require("__exportStarResult1").MobileSetting.VOICE,
+  parent: require("MobileSetting").MobileSetting.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
     let vadAutoThreshold;
     let vadThreshold;
-    let obj = require(dependencyMap[5]);
-    const items = [closure_4];
-    const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
-    const require = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(dependencyMap[6]), obj) };
+    let obj = inputMode(566);
+    const items = [_isNativeReflectConstruct];
+    const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: outer1_4.getMode(), vadThreshold: outer1_4.getModeOptions().threshold, vadAutoThreshold: outer1_4.getModeOptions().autoThreshold }));
+    inputMode = stateFromStoresObject.inputMode;
+    obj = { style: callback().slider, children: jsx(importDefault(10714), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,
       threshold: vadThreshold,
       onThresholdChange(threshold) {
-        let obj = callback(closure_2[7]);
+        let obj = outer1_1(outer1_2[7]);
         obj = { threshold };
         return obj.setMode(inputMode, obj);
       }
     };
-    return <View {...obj} />;
+    return <View auto={vadAutoThreshold} threshold={vadThreshold} onThresholdChange={function onThresholdChange(threshold) {
+      let obj = outer1_1(outer1_2[7]);
+      obj = { threshold };
+      return obj.setMode(inputMode, obj);
+    }} />;
   },
   useSearchTerms() {
-    const intl = require(dependencyMap[9]).intl;
-    const items = [intl.string(require(dependencyMap[9]).t.nuFtHH)];
+    const intl = require(1212) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1212) /* getSystemLocale */.t.nuFtHH)];
     return items;
   }
 });
+const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/VoiceSensitivitySetting.tsx");
+
+export default createStaticResult;

@@ -1,12 +1,17 @@
-// Module ID: 5605
-// Function ID: 47661
+// Module ID: 5608
+// Function ID: 47684
 // Name: _getIsNewMember
-// Dependencies: []
+// Dependencies: [1909, 1917, 3746, 1360, 664, 566, 2]
 // Exports: default, getIsNewMember
 
-// Module 5605 (_getIsNewMember)
-function _getIsNewMember(guildId, closure_4, closure_3) {
-  if (closure_3.isFullServerPreview(guildId)) {
+// Module 5608 (_getIsNewMember)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { GuildMemberFlags } from "GuildMemberFlags";
+
+const require = arg1;
+function _getIsNewMember(guildId, closure_4, _isNativeReflectConstruct) {
+  if (_isNativeReflectConstruct.isFullServerPreview(guildId)) {
     return true;
   } else {
     const selfMember = closure_4.getSelfMember(guildId);
@@ -21,30 +26,27 @@ function _getIsNewMember(guildId, closure_4, closure_3) {
         if (null != flags) {
           num2 = flags;
         }
-        let tmp6 = !closure_4(dependencyMap[3]).hasFlag(num2, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
+        let tmp6 = !require(1360) /* hasFlag */.hasFlag(num2, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
         if (tmp6) {
           const _Date = Date;
           const timestamp = Date.now();
           const diff = timestamp - selfMemberJoinedAt.getTime();
-          tmp6 = diff < importDefault(dependencyMap[4]).Millis.WEEK;
+          tmp6 = diff < importDefault(664).Millis.WEEK;
         }
         tmp12 = tmp6;
-        const obj = closure_4(dependencyMap[3]);
+        const obj = require(1360) /* hasFlag */;
       }
       return tmp12;
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const GuildMemberFlags = arg1(dependencyMap[2]).GuildMemberFlags;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");
+const result = require("GuildMemberFlags").fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");
 
 export default function useIsNewMember(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4, closure_3];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => callback(arg0, closure_4, closure_3));
+  const _require = arg0;
+  const items = [closure_4, _isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => outer1_6(closure_0, outer1_4, outer1_3));
 };
 export const getIsNewMember = function getIsNewMember(guildId) {
-  return _getIsNewMember(guildId, closure_4, closure_3);
+  return _getIsNewMember(guildId, closure_4, _isNativeReflectConstruct);
 };

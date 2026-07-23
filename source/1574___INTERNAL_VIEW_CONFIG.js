@@ -1,11 +1,12 @@
 // Module ID: 1574
-// Function ID: 17643
+// Function ID: 17644
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42]
 
 // Module 1574 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "KeyboardGestureArea", validAttributes: {} };
-const _module = require(dependencyMap[0]);
+import get from "get";
 
-export default _module.get("KeyboardGestureArea", () => obj);
+const obj = { uiViewClassName: "KeyboardGestureArea", validAttributes: { interpolator: true, showOnSwipeUp: true, enableSwipeToDismiss: true, offset: true, textInputNativeID: true } };
+
+export default get.get("KeyboardGestureArea", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

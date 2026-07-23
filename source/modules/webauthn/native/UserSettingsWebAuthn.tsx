@@ -1,18 +1,21 @@
-// Module ID: 13512
-// Function ID: 102523
+// Module ID: 13626
+// Function ID: 104679
 // Name: UserSettingsWebAuthn
-// Dependencies: []
+// Dependencies: [31, 13624, 33, 13627, 5519, 2]
 // Exports: default
 
-// Module 13512 (UserSettingsWebAuthn)
-let closure_2 = importAll(dependencyMap[0]);
-const WebAuthnScreens = arg1(dependencyMap[1]).WebAuthnScreens;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/webauthn/native/UserSettingsWebAuthn.tsx");
+// Module 13626 (UserSettingsWebAuthn)
+import result from "result";
+import { WebAuthnScreens } from "WebAuthnScreens";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/webauthn/native/UserSettingsWebAuthn.tsx");
 
 export default function UserSettingsWebAuthn(showNav) {
   let initialRouteName;
-  ({ navigation: closure_0, initialRouteName } = showNav);
+  let require;
+  ({ navigation: require, initialRouteName } = showNav);
   if (initialRouteName === undefined) {
     initialRouteName = WebAuthnScreens.INIT;
   }
@@ -20,8 +23,7 @@ export default function UserSettingsWebAuthn(showNav) {
   if (flag === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(flag[3]);
   const screens = obj.getScreens({ isModal: false });
   const layoutEffect = React.useLayoutEffect(() => {
     options.setOptions({ headerShown: flag });
@@ -31,5 +33,5 @@ export default function UserSettingsWebAuthn(showNav) {
   const items = [obj];
   obj.initialRouteStack = items;
   obj.useContainer = false;
-  return jsx(arg1(dependencyMap[4]).Navigator, obj);
+  return jsx(require(flag[4]).Navigator, { name: initialRouteName });
 };

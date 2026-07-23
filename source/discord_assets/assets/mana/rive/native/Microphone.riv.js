@@ -1,11 +1,10 @@
-// Module ID: 3928
-// Function ID: 32427
+// Module ID: 3930
+// Function ID: 32432
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 3928 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/rive/native/Microphone.riv.js");
+// Module 3930 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/Microphone.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/818bb06d7022850d954c2e172aa62febbe92fe9eb927d92a4bfa25c2c6fa65f1.riv";
 export const metadata = { fileBytes: 12514 };

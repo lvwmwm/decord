@@ -1,39 +1,43 @@
-// Module ID: 15440
-// Function ID: 117817
+// Module ID: 15557
+// Function ID: 119991
 // Name: MessageRequestsNavigator
-// Dependencies: []
+// Dependencies: [31, 27, 33, 9113, 4130, 689, 5519, 6707, 1557, 9122, 1212, 10161, 15558, 15577, 15578, 2]
 // Exports: default
 
-// Module 15440 (MessageRequestsNavigator)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-let closure_7 = obj.createNativeStackNavigator();
-let obj1 = arg1(dependencyMap[4]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-obj.container = obj;
-obj1 = { isArray: null, surrogates: "c7e2eadc5cd55417a6c70f428f65fac7", withSpring: "SlashIcon", backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.header = obj1;
-let closure_8 = obj1.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/main_tabs_v2/native/message_requests/MessageRequestsNavigator.tsx");
+// Module 15557 (MessageRequestsNavigator)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import createNativeStackNavigator from "createNativeStackNavigator";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
+createNativeStackNavigator = {};
+createNativeStackNavigator = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+createNativeStackNavigator.container = createNativeStackNavigator;
+_createForOfIteratorHelperLoose = { borderBottomWidth: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
+createNativeStackNavigator.header = _createForOfIteratorHelperLoose;
+createNativeStackNavigator = _createForOfIteratorHelperLoose.createStyles(createNativeStackNavigator);
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/message_requests/MessageRequestsNavigator.tsx");
 
 export default function MessageRequestsNavigator() {
   let Navigator;
   let Screen;
-  const tmp = callback3();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[6]);
+  const tmp = createNativeStackNavigator();
+  const require = tmp;
+  let obj = require(5519) /* NavigationStack */;
   const importDefault = obj.useAccessibilityNativeStackOptions();
-  const layoutEffect = React.useLayoutEffect(() => tmp(closure_2[7]).trackAppUIViewed(), []);
-  const rect = importDefault(dependencyMap[8])();
+  const layoutEffect = React.useLayoutEffect(() => tmp(outer1_2[7]).trackAppUIViewed(), []);
+  const rect = importDefault(1557)();
   obj = { style: items };
-  const items = [tmp.container, { paddingLeft: rect.left, paddingRight: rect.right }];
+  items = [tmp.container, { paddingLeft: rect.left, paddingRight: rect.right }];
   obj = {
     screenOptions(navigation) {
-      const obj = {
+      let obj = {
         headerStyle: tmp.header,
         headerShadowVisible: false,
         headerTitle(children) {
@@ -42,46 +46,46 @@ export default function MessageRequestsNavigator() {
           const merged = Object.assign(children, obj);
           obj = { title: children.children };
           const merged1 = Object.assign(merged);
-          return callback2(callback(closure_2[9]).GenericHeaderTitle, obj);
+          return outer2_5(callback(outer2_2[9]).GenericHeaderTitle, obj);
         },
         headerTitleAlign: "center",
-        headerLeft: tmp(closure_2[9]).getRenderModalCloseImage(navigation.navigation)
+        headerLeft: tmp(outer1_2[9]).getRenderModalCloseImage(navigation.navigation)
       };
-      const merged = Object.assign(closure_1);
+      let merged = Object.assign(closure_1);
       return obj;
     }
   };
   const obj1 = { name: "root" };
   const obj2 = {};
-  ({ Navigator, Screen } = closure_7);
-  const intl = arg1(dependencyMap[10]).intl;
-  obj2.title = intl.string(arg1(dependencyMap[10]).t.e7GWjQ);
-  const merged = Object.assign(importDefault(dependencyMap[11])());
+  ({ Navigator, Screen } = createNativeStackNavigator);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj2.title = intl.string(require(1212) /* getSystemLocale */.t.e7GWjQ);
+  let merged = Object.assign(importDefault(10161)());
   obj1.options = obj2;
   obj1.getComponent = function getComponent() {
-    return tmp(closure_2[12]).default;
+    return tmp(outer1_2[12]).default;
   };
   const items1 = [callback(Screen, obj1), , ];
   const obj3 = { name: "spam" };
   const obj4 = {};
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj4.title = intl2.string(arg1(dependencyMap[10]).t.ulKXHp);
-  const merged1 = Object.assign(importDefault(dependencyMap[11])());
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj4.title = intl2.string(require(1212) /* getSystemLocale */.t.ulKXHp);
+  let merged1 = Object.assign(importDefault(10161)());
   obj3.options = obj4;
   obj3.getComponent = function getComponent() {
-    return tmp(closure_2[13]).default;
+    return tmp(outer1_2[13]).default;
   };
-  items1[1] = callback(closure_7.Screen, obj3);
+  items1[1] = callback(createNativeStackNavigator.Screen, obj3);
   const obj5 = { name: "preview" };
   const obj6 = {};
-  const intl3 = arg1(dependencyMap[10]).intl;
-  obj6.title = intl3.string(arg1(dependencyMap[10]).t.iilwGH);
-  const merged2 = Object.assign(importDefault(dependencyMap[11])());
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj6.title = intl3.string(require(1212) /* getSystemLocale */.t.iilwGH);
+  const merged2 = Object.assign(importDefault(10161)());
   obj5.options = obj6;
   obj5.getComponent = function getComponent() {
-    return tmp(closure_2[14]).default;
+    return tmp(outer1_2[14]).default;
   };
-  items1[2] = callback(closure_7.Screen, obj5);
+  items1[2] = callback(createNativeStackNavigator.Screen, obj5);
   obj.children = items1;
   obj.children = callback2(Navigator, obj);
   return callback(View, obj);

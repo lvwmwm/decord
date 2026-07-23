@@ -1,30 +1,31 @@
-// Module ID: 4154
-// Function ID: 35110
+// Module ID: 4158
+// Function ID: 35142
 // Name: getIsValorantSocialSDKEnabled
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getIsValorantSocialSDKEnabled
 
-// Module 4154 (getIsValorantSocialSDKEnabled)
+// Module 4158 (getIsValorantSocialSDKEnabled)
+import ApexExperiment from "ApexExperiment";
+import ApexExperiment from "ApexExperiment";
+import ApexExperiment from "ApexExperiment";
+
 let obj = { [0]: { enabled: false }, [1]: { enabled: true } };
 obj = { enabled: false };
-const _module = require(dependencyMap[0]);
-obj = { y: null, DateToSystemTimezoneSetter: null };
+obj = { name: "2026-04-valorant-social-sdk", kind: "user" };
 obj.defaultConfig = obj;
 obj.variations = obj;
-let closure_0 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[0]);
-const obj1 = { y: "optional", DateToSystemTimezoneSetter: false, defaultConfig: obj, variations: obj };
-let closure_1 = _module1.createApexExperiment(obj1);
-const _module2 = require(dependencyMap[0]);
-let closure_2 = _module2.createApexExperiment({ defaultConfig: obj, variations: obj });
-const _module3 = require(dependencyMap[1]);
-const result = _module3.fileFinishedImporting("modules/application_account_linking/experiments/valorantSocialSDKExperiment.tsx");
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj1 = { name: "2026-05-valorant-social-sdk-us--canada", kind: "user", defaultConfig: obj, variations: obj };
+let closure_1 = ApexExperiment.createApexExperiment(obj1);
+const obj2 = { name: "2026-05-valorant-social-sdk-all-regions", kind: "user", defaultConfig: obj, variations: obj };
+let closure_2 = ApexExperiment.createApexExperiment(obj2);
+const result = require("set").fileFinishedImporting("modules/application_account_linking/experiments/valorantSocialSDKExperiment.tsx");
 
 export const getIsValorantSocialSDKEnabled = function getIsValorantSocialSDKEnabled(arg0) {
-  const config = config.getConfig(arg0);
+  config = config.getConfig(arg0);
   const config1 = config2.getConfig(arg0);
   let enabled = config.enabled;
-  const config2 = config3.getConfig(arg0);
+  config2 = config3.getConfig(arg0);
   if (!enabled) {
     enabled = config1.enabled;
   }

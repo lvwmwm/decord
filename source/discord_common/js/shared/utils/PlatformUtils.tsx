@@ -1,12 +1,12 @@
 // Module ID: 478
 // Function ID: 6168
 // Name: isWindows
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getNativePlatform, getNewUpdaterPlatformName, getOS, getPlatform, getPlatformName, isAndroid, isAndroidChrome, isAndroidWeb, isIOS, isLinux, isMac, isMacWeb, isWeb, platformPrefersDeepLink, platformSupportsActivityJoin
 
 // Module 478 (isWindows)
 function isWindows() {
-  return /^win/.test(closure_1);
+  return /^win/.test(android);
 }
 function isDesktop() {
   return isWindows() || false;
@@ -19,9 +19,8 @@ function isOculusWeb() {
   return null != match;
 }
 const obj = { WINDOWS: "WINDOWS", OSX: "OSX", LINUX: "LINUX", WEB: "WEB" };
-let closure_1 = "android";
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/utils/PlatformUtils.tsx");
+const android = "android";
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/PlatformUtils.tsx");
 
 export const PlatformTypes = obj;
 export const isPlatformEmbedded = true;
@@ -84,15 +83,15 @@ export const getPlatform = function getPlatform() {
   return isWindows() ? obj.WINDOWS : obj.WEB;
 };
 export function getPlatformName() {
-  return closure_1;
+  return android;
 }
 export function getNativePlatform() {
-  if ("ios" !== closure_1) {
+  if ("ios" !== android) {
     if ("android" !== tmp) {
       return "web";
     }
   }
-  return closure_1;
+  return android;
 }
 export const getOS = function getOS() {
   return "android";

@@ -1,9 +1,17 @@
 // Module ID: 1279
-// Function ID: 14436
+// Function ID: 14437
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 566, 587, 22, 686, 2]
 
 // Module 1279 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import Storage from "Storage";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { UserSettingsSections } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,26 +21,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const UserSettingsSections = arg1(dependencyMap[5]).UserSettingsSections;
 let closure_9 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class SelectivelySyncedUserSettingsStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, SelectivelySyncedUserSettingsStore);
-      obj = closure_6(SelectivelySyncedUserSettingsStore);
-      tmp2 = closure_5;
-      if (closure_10()) {
+      tmp = outer1_3(this, SelectivelySyncedUserSettingsStore);
+      obj = outer1_6(SelectivelySyncedUserSettingsStore);
+      tmp2 = outer1_5;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,7 +43,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SelectivelySyncedUserSettingsStore;
   callback2(SelectivelySyncedUserSettingsStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -50,13 +51,14 @@ let tmp2 = (PersistedStore) => {
       if (null == arg0) {
         obj = {};
       }
+      const outer1_9 = obj;
     }
   };
   const items = [obj, , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[1] = obj;
@@ -64,7 +66,7 @@ let tmp2 = (PersistedStore) => {
     key: "shouldSync",
     value(arg0) {
       let shouldSync;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         shouldSync = tmp.shouldSync;
       }
       return false !== shouldSync;
@@ -74,7 +76,7 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getTextSettings",
     value() {
-      const text = closure_9.text;
+      const text = outer1_9.text;
       let settings;
       if (null != text) {
         settings = text.settings;
@@ -85,7 +87,7 @@ let tmp2 = (PersistedStore) => {
   items[4] = {
     key: "getAppearanceSettings",
     value() {
-      const appearance = closure_9.appearance;
+      const appearance = outer1_9.appearance;
       let settings;
       if (null != appearance) {
         settings = appearance.settings;
@@ -94,33 +96,33 @@ let tmp2 = (PersistedStore) => {
     }
   };
   return callback(SelectivelySyncedUserSettingsStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "SelectivelySyncedUserSettingsStore";
 tmp2.persistKey = "SelectivelySyncedUserSettingsStore";
-const items = [
+let items = [
   () => {
-    const Storage = arg1(dependencyMap[7]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     let obj = Storage.get("UserSettingsSync");
     if (null == obj) {
       obj = {};
     }
-    const Storage2 = arg1(dependencyMap[7]).Storage;
+    const Storage2 = require(587) /* Storage */.Storage;
     let value = Storage2.get("UserSettingsStore");
     if (null == value) {
       value = {};
     }
-    const Storage3 = arg1(dependencyMap[7]).Storage;
+    const Storage3 = require(587) /* Storage */.Storage;
     Storage3.remove("UserSettingsSync");
     obj = {};
-    if (false === obj[closure_8.TEXT]) {
-      const obj1 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, ["r", "isArray", "toString", "c", "r", "isArray", "l", "ddd"]) };
+    if (false === obj[UserSettingsSections.TEXT]) {
+      const obj1 = { shouldSync: false, settings: importDefault(22).pick(value, ["inlineAttachmentMedia", "inlineEmbedMedia", "renderEmbeds", "renderReactions", "animateEmoji", "animateStickers", "gifAutoPlay", "defaultReactionEmoji"]) };
       obj.text = obj1;
-      const obj5 = importDefault(dependencyMap[8]);
+      const obj5 = importDefault(22);
     }
-    if (false === obj[closure_8.APPEARANCE]) {
-      const obj2 = { shouldSync: false, settings: importDefault(dependencyMap[8]).pick(value, ["discord_protos.discord_users.v1.SwipeRightToLeftMode", "discord_protos.discord_users.v1.CustomUserThemeSettings", "discord_protos.discord_users.v1.ClientThemeSettings"]) };
+    if (false === obj[UserSettingsSections.APPEARANCE]) {
+      const obj2 = { shouldSync: false, settings: importDefault(22).pick(value, ["theme", "clientThemeSettings", "developerMode"]) };
       obj.appearance = obj2;
-      const obj7 = importDefault(dependencyMap[8]);
+      const obj7 = importDefault(22);
     }
     return obj;
   },
@@ -150,54 +152,54 @@ const items = [
   }
 ];
 tmp2.migrations = items;
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: function handleSelectivelySyncedUserSettingsUpdate(changes) {
     let settings;
     let shouldSync;
     changes = changes.changes;
     for (const key10009 in changes) {
-      let tmp12 = key10009;
+      let tmp14 = key10009;
       ({ shouldSync, settings } = changes[key10009]);
       if (true !== shouldSync) {
         if (false === shouldSync) {
-          let tmp2 = closure_9;
+          let tmp4 = dependencyMap;
           let obj = { shouldSync };
           shouldSync = {};
           obj.settings = shouldSync;
-          closure_9[key10009] = obj;
+          dependencyMap[key10009] = obj;
         }
-        let tmp3 = closure_9;
-        let tmp4 = closure_9[key10009];
+        let tmp5 = dependencyMap;
+        let tmp6 = dependencyMap[key10009];
         shouldSync = undefined;
-        if (null != tmp4) {
-          shouldSync = tmp4.shouldSync;
+        if (null != tmp6) {
+          shouldSync = tmp6.shouldSync;
         }
-        let tmp6 = tmp4;
+        let tmp8 = tmp6;
         if (false !== shouldSync) {
           continue;
         } else {
-          let tmp7 = settings;
-          let tmp8 = tmp4;
+          let tmp9 = settings;
+          let tmp10 = tmp6;
           let keys = Object.keys();
           if (keys === undefined) {
             continue;
           } else {
-            let tmp10 = tmp4;
-            let tmp11 = keys[shouldSync];
-            while (tmp11 !== undefined) {
-              let tmp13 = tmp11;
-              let tmp14 = closure_9;
-              closure_9[key10009].settings[tmp11] = settings[tmp11];
-              // continue
+            let tmp12 = tmp6;
+            let tmp13 = keys[shouldSync];
+            while (tmp13 !== undefined) {
+              let tmp15 = tmp13;
+              let tmp16 = dependencyMap;
+              dependencyMap[key10009].settings[tmp13] = settings[tmp13];
+              continue;
             }
           }
           continue;
         }
         continue;
       } else {
-        let tmp = closure_9;
-        delete r1[r8];
-        // continue
+        let tmp3 = dependencyMap;
+        delete tmp[tmp2];
+        continue;
       }
       continue;
     }
@@ -206,6 +208,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     let closure_9 = {};
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/SelectivelySyncedUserSettingsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/SelectivelySyncedUserSettingsStore.tsx");
 
 export default tmp2;

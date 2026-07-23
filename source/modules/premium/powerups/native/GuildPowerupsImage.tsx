@@ -1,17 +1,17 @@
-// Module ID: 11546
-// Function ID: 89903
+// Module ID: 11556
+// Function ID: 89952
 // Name: GuildPowerupsImage
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [4122, 33, 4130, 566, 478, 7876, 5085, 2]
 // Exports: default
 
-// Module 11546 (GuildPowerupsImage)
-import closure_3 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 11556 (GuildPowerupsImage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-let closure_5 = __exportStarResult1.createStyles({ image: {} });
-const result = __exportStarResult1.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ image: { width: "75%", height: "100%", alignSelf: "center", resizeMode: "contain" } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
 
 export default function GuildPowerupsImage(style) {
   let imageUrl;
@@ -22,9 +22,9 @@ export default function GuildPowerupsImage(style) {
   }
   style = style.style;
   const tmp = callback();
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.useReducedMotion);
   if (obj2.isAndroid()) {
     if (isAnimated) {
       if (!stateFromStores) {
@@ -32,11 +32,11 @@ export default function GuildPowerupsImage(style) {
         const items1 = [tmp.image, style];
         obj.style = items1;
         obj.url = imageUrl;
-        let tmp6 = jsx(importDefault(dependencyMap[5]), obj);
+        let tmp6 = jsx(importDefault(7876), {});
       }
       return tmp6;
     }
   }
   const items2 = [tmp.image, style];
-  tmp6 = jsx(importDefault(dependencyMap[6]), { style: items2, source: { uri: imageUrl } });
+  tmp6 = jsx(importDefault(5085), { style: items2, source: { uri: imageUrl } });
 };

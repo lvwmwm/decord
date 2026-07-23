@@ -1,14 +1,15 @@
 // Module ID: 1386
-// Function ID: 16543
+// Function ID: 16544
 // Name: date
-// Dependencies: []
+// Dependencies: [1387, 2]
 
 // Module 1386 (date)
-const _module = require(dependencyMap[0]);
-const obj = { joinedAt: new Date() };
-const result = _module.constructFromPartialGuildRecord(obj);
-const _module1 = require(dependencyMap[1]);
-const result1 = _module1.fileFinishedImporting("modules/favorites/FavoritesConstants.tsx");
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields";
+
+const obj = { id: "373", name: "Favorites", description: "The place for all your favorite channels!", joinedAt: new Date(), maxMembers: 500000 };
+const result = fromGuildPropertiesWithAdditionalFields.constructFromPartialGuildRecord(obj);
+const date = new Date();
+const result1 = require("set").fileFinishedImporting("modules/favorites/FavoritesConstants.tsx");
 
 export const FAVORITES_RAW_GUILD_ID = "373";
 export const FAVORITES_GUILD_RECORD = result;

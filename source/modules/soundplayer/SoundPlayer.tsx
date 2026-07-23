@@ -1,41 +1,67 @@
-// Module ID: 15490
-// Function ID: 118147
+// Module ID: 15607
+// Function ID: 120321
 // Name: useSound
-// Dependencies: []
+// Dependencies: [31, 1347, 10479, 4144, 1352, 4149, 1194, 1348, 1838, 4177, 10220, 4202, 1906, 4952, 4146, 4203, 653, 33, 566, 10246, 4314, 4194, 3748, 1327, 2]
 // Exports: default
 
-// Module 15490 (useSound)
+// Module 15607 (useSound)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { NO_ACTIVITIES } from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_7 } from "_callSuper";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import closure_17 from "_isNativeReflectConstruct";
+import closure_18 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_24;
+const require = arg1;
 function useSound(items, arg1, arg2) {
-  arg1 = items;
-  const dependencyMap = arg1;
+  let closure_0 = items;
+  let closure_1 = arg1;
   const React = arg2;
   const effect = React.useEffect(() => {
-    const items = arg1();
-    const batchedStoreListener = new items(arg1[18]).BatchedStoreListener(items, () => {
+    const items = batchedStoreListener();
+    batchedStoreListener = new items(table[18]).BatchedStoreListener(items, () => {
       const tmp = batchedStoreListener();
-      const tmp2 = callback2(callback, tmp);
+      const tmp2 = outer1_2(callback, tmp);
       let isSoundDisabledResult = null == tmp2;
       if (!isSoundDisabledResult) {
-        isSoundDisabledResult = soundDisabled.isSoundDisabled(tmp2);
+        isSoundDisabledResult = outer2_13.isSoundDisabled(tmp2);
       }
       if (!isSoundDisabledResult) {
         let num2 = 0.4;
-        if (null != closure_3) {
-          num2 = closure_3;
+        if (null != outer1_3) {
+          num2 = outer1_3;
         }
         callback(batchedStoreListener[19]).playSound(tmp2, num2);
         const obj = callback(batchedStoreListener[19]);
       }
-      const callback = tmp;
+      callback = tmp;
     });
-    const arg1 = batchedStoreListener;
     batchedStoreListener.attach("useSound");
     return () => batchedStoreListener.detach();
   });
 }
 function MuteDeafen() {
   const items = [closure_12, closure_15];
-  useSound(items, () => ({ inVoiceChannel: null != voiceChannelId.getVoiceChannelId(), selfMute: closure_12.isSelfMute(), selfDeaf: closure_12.isSelfDeaf(), audioPermissionReady: closure_12.isNativeAudioPermissionReady(), shouldSkipMuteUnmuteSound: closure_12.shouldSkipMuteUnmuteSound() }), (selfDeaf) => {
+  useSound(items, () => ({ inVoiceChannel: null != outer1_15.getVoiceChannelId(), selfMute: outer1_12.isSelfMute(), selfDeaf: outer1_12.isSelfDeaf(), audioPermissionReady: outer1_12.isNativeAudioPermissionReady(), shouldSkipMuteUnmuteSound: outer1_12.shouldSkipMuteUnmuteSound() }), (selfDeaf) => {
     let inVoiceChannel;
     let selfMute;
     ({ inVoiceChannel, selfMute, selfDeaf } = arg1);
@@ -49,7 +75,7 @@ function MuteDeafen() {
       } else if (tmp) {
         if (selfDeaf.selfMute !== selfMute) {
           if (tmp2) {
-            const result = closure_12.notifyMuteUnmuteSoundWasSkipped();
+            const result = outer1_12.notifyMuteUnmuteSoundWasSkipped();
           } else {
             let str = "unmute";
             if (selfMute) {
@@ -64,7 +90,7 @@ function MuteDeafen() {
 }
 function Camera() {
   const items = [closure_12, closure_15];
-  useSound(items, () => ({ videoEnabled: videoEnabled.isVideoEnabled(), inVoiceChannel: null != voiceChannelId.getVoiceChannelId() }), (videoEnabled, videoEnabled2) => {
+  useSound(items, () => ({ videoEnabled: outer1_12.isVideoEnabled(), inVoiceChannel: null != outer1_15.getVoiceChannelId() }), (videoEnabled, videoEnabled2) => {
     videoEnabled = videoEnabled2.videoEnabled;
     if (videoEnabled.videoEnabled !== videoEnabled) {
       if (videoEnabled.inVoiceChannel) {
@@ -83,7 +109,7 @@ function Camera() {
 function RTCConnect() {
   const items = [closure_10, closure_14, closure_15, closure_6];
   useSound(items, () => {
-    const channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
+    const channel = outer1_10.getChannel(outer1_15.getVoiceChannelId());
     let type;
     if (null != channel) {
       type = channel.type;
@@ -92,19 +118,19 @@ function RTCConnect() {
     if (null != channel) {
       guildId = channel.getGuildId();
     }
-    const wasEverRtcConnected = store2.getWasEverRtcConnected();
-    const state = store2.getState();
-    const obj = { channelType: type, guildId, connected: state === constants.RTC_CONNECTED };
+    const wasEverRtcConnected = outer1_14.getWasEverRtcConnected();
+    const state = outer1_14.getState();
+    const obj = { channelType: type, guildId, connected: state === outer1_21.RTC_CONNECTED };
     let tmp5 = !wasEverRtcConnected;
     if (tmp5) {
-      tmp5 = state !== constants.DISCONNECTED;
+      tmp5 = state !== outer1_21.DISCONNECTED;
     }
     if (!tmp5) {
-      tmp5 = state === constants.RTC_CONNECTED;
+      tmp5 = state === outer1_21.RTC_CONNECTED;
     }
     obj.connectHasStarted = tmp5;
-    obj.awaitingRemote = null != store.getAwaitingRemoteSessionInfo();
-    obj.connectedRemote = null != store.getRemoteSessionId();
+    obj.awaitingRemote = null != outer1_6.getAwaitingRemoteSessionInfo();
+    obj.connectedRemote = null != outer1_6.getRemoteSessionId();
     return obj;
   }, (channelType) => {
     let connectedRemote;
@@ -127,9 +153,9 @@ function RTCConnect() {
 }
 function Speaking() {
   const items = [closure_16];
-  useSound(items, () => currentUserPTTActive.isCurrentUserPTTActive(), (arg0, arg1) => {
+  useSound(items, () => outer1_16.isCurrentUserPTTActive(), (arg0, arg1) => {
     if (arg0 !== arg1) {
-      if (closure_12.getMode() === constants.PUSH_TO_TALK) {
+      if (outer1_12.getMode() === outer1_19.PUSH_TO_TALK) {
         if (!isSelfMuteResult) {
           let str = "ptt_stop";
           if (arg1) {
@@ -138,16 +164,16 @@ function Speaking() {
           return str;
         }
       }
-      const isSelfMuteResult = closure_12.isSelfMute();
+      isSelfMuteResult = outer1_12.isSelfMute();
     }
   });
   return null;
 }
 function SelfMutedTemporarily() {
   const items = [closure_12];
-  useSound(items, () => closure_12.isSelfMutedTemporarily(), (arg0, arg1) => {
+  useSound(items, () => outer1_12.isSelfMutedTemporarily(), (arg0, arg1) => {
     if (arg0 !== arg1) {
-      if (closure_12.getMode() === constants.VOICE_ACTIVITY) {
+      if (outer1_12.getMode() === outer1_19.VOICE_ACTIVITY) {
         if (!isSelfMuteResult) {
           let str = "ptt_start";
           if (arg1) {
@@ -156,16 +182,16 @@ function SelfMutedTemporarily() {
           return str;
         }
       }
-      const isSelfMuteResult = closure_12.isSelfMute();
+      isSelfMuteResult = outer1_12.isSelfMute();
     }
   });
   return null;
 }
 function PriorityVAD() {
   const items = [closure_16];
-  useSound(items, () => currentUserPrioritySpeaker.isCurrentUserPrioritySpeaker(), (arg0, arg1) => {
+  useSound(items, () => outer1_16.isCurrentUserPrioritySpeaker(), (arg0, arg1) => {
     if (arg0 !== arg1) {
-      if (closure_12.getMode() === constants.VOICE_ACTIVITY) {
+      if (outer1_12.getMode() === outer1_19.VOICE_ACTIVITY) {
         if (!isSelfMuteResult) {
           let str = "ptt_stop";
           if (arg1) {
@@ -174,14 +200,14 @@ function PriorityVAD() {
           return str;
         }
       }
-      const isSelfMuteResult = closure_12.isSelfMute();
+      isSelfMuteResult = outer1_12.isSelfMute();
     }
   });
   return null;
 }
 function UserHasBeenMoved() {
   const items = [closure_17];
-  useSound(items, () => obj.userHasBeenMovedVersion, (arg0, arg1) => {
+  useSound(items, () => outer1_17.userHasBeenMovedVersion, (arg0, arg1) => {
     if (arg0 !== arg1) {
       return "user_moved";
     }
@@ -191,16 +217,16 @@ function UserHasBeenMoved() {
 function UserInvitedToSpeak() {
   const items = [closure_15, closure_17];
   useSound(items, () => {
-    const voiceChannelId = voiceChannelId.getVoiceChannelId();
+    const voiceChannelId = outer1_15.getVoiceChannelId();
     if (null == voiceChannelId) {
-      return callback(closure_1[20]).RequestToSpeakStates.NONE;
+      return outer1_0(outer1_1[20]).RequestToSpeakStates.NONE;
     } else {
-      const voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(voiceChannelId);
-      return callback(closure_1[20]).getAudienceRequestToSpeakState(voiceStateForChannel);
+      const voiceStateForChannel = outer1_17.getVoiceStateForChannel(voiceChannelId);
+      return outer1_0(outer1_1[20]).getAudienceRequestToSpeakState(voiceStateForChannel);
     }
   }, (arg0, arg1) => {
     if (arg0 !== arg1) {
-      if (arg1 === callback(closure_1[20]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
+      if (arg1 === outer1_0(outer1_1[20]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
         return "reconnect";
       }
     }
@@ -208,26 +234,26 @@ function UserInvitedToSpeak() {
   return null;
 }
 function VoiceChannel() {
-  const items = [closure_15, closure_8, closure_9, closure_17, closure_10];
+  let items = [closure_15, closure_8, closure_9, closure_17, closure_10];
   useSound(items, () => {
-    const voiceChannelId = voiceChannelId.getVoiceChannelId();
-    const id = id.getId();
+    const voiceChannelId = outer1_15.getVoiceChannelId();
+    const id = outer1_9.getId();
     const items = [];
-    const allActiveStreams = authStore.getAllActiveStreams();
+    const allActiveStreams = outer1_8.getAllActiveStreams();
     let type;
     let diff;
     let mapped = items;
     if (null != voiceChannelId) {
-      const channel = store.getChannel(voiceChannelId);
+      const channel = outer1_10.getChannel(voiceChannelId);
       mapped = items;
       if (null != channel) {
-        const result = closure_18.countVoiceStatesForChannel(channel.id);
+        const result = outer1_18.countVoiceStatesForChannel(channel.id);
         let num = 0;
-        if (inChannel.isInChannel(channel.id)) {
+        if (outer1_17.isInChannel(channel.id)) {
           num = 1;
         }
         diff = result - num;
-        const allApplicationStreamsForChannel = authStore.getAllApplicationStreamsForChannel(channel.id);
+        const allApplicationStreamsForChannel = outer1_8.getAllApplicationStreamsForChannel(channel.id);
         mapped = allApplicationStreamsForChannel.map((ownerId) => ownerId.ownerId);
         type = channel.type;
       }
@@ -235,21 +261,21 @@ function VoiceChannel() {
     if (1 === allActiveStreams.length) {
       let first = allActiveStreams[0];
     } else {
-      first = authStore.getCurrentUserActiveStream();
+      first = outer1_8.getCurrentUserActiveStream();
     }
     let state;
     if (null != first) {
       state = first.state;
     }
-    if (state === constants.CONNECTING) {
+    if (state === outer1_20.CONNECTING) {
       first = null;
     }
     let tmp15 = null;
     let num3 = 0;
     if (null != first) {
-      let obj = id(closure_1[21]);
+      let obj = outer1_0(outer1_1[21]);
       const encodeStreamKeyResult = obj.encodeStreamKey(first);
-      const viewerIds = authStore.getViewerIds(encodeStreamKeyResult);
+      const viewerIds = outer1_8.getViewerIds(encodeStreamKeyResult);
       num3 = viewerIds.filter((arg0) => arg0 !== id).length;
       tmp15 = encodeStreamKeyResult;
     }
@@ -257,29 +283,31 @@ function VoiceChannel() {
     return obj;
   }, (voiceChannelId) => {
     let channelType;
+    let result;
     let singleActiveStreamKey;
     let singleActiveStreamViewerCount;
     let streamingUserIds;
     let voiceChannelUserCount;
+    let closure_0 = voiceChannelId;
     ({ channelType, voiceChannelId, voiceChannelUserCount, streamingUserIds } = arg1);
-    ({ singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId: closure_2 } = arg1);
-    let closure_3;
+    ({ singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId: result } = arg1);
+    let _createForOfIteratorHelperLoose;
     if (voiceChannelId.voiceChannelId === voiceChannelId) {
       if (null != voiceChannelId) {
-        const channel = store.getChannel(voiceChannelId);
+        const channel = outer1_10.getChannel(voiceChannelId);
         let flag = false;
         if (null != channel) {
           const guildId = channel.getGuildId();
           flag = false;
           if (null != guildId) {
-            const guild = guild.getGuild(guildId);
+            const guild = outer1_11.getGuild(guildId);
             flag = null != guild && guild.afkChannelId === channel.id;
             const tmp4 = null != guild && guild.afkChannelId === channel.id;
           }
         }
         if (!flag) {
           const allActiveStreams = voiceChannelId.allActiveStreams;
-          closure_3 = allActiveStreams.map((ownerId) => ownerId.ownerId);
+          _createForOfIteratorHelperLoose = allActiveStreams.map((ownerId) => ownerId.ownerId);
           const streamingUserIds2 = voiceChannelId.streamingUserIds;
           let str = "stream_started";
           if (!someResult) {
@@ -327,44 +355,45 @@ function VoiceChannel() {
   return null;
 }
 function ActivitySounds() {
-  const items = [closure_15, closure_3, closure_5, closure_9];
+  const items = [closure_15, _createForOfIteratorHelperLoose, _isNativeReflectConstruct, closure_9];
   useSound(items, () => {
-    const voiceChannelId = store2.getVoiceChannelId();
-    const channelId = store2.getChannelId();
-    const connectedActivityLocation = store.getConnectedActivityLocation();
-    let obj = callback(closure_1[22]);
+    const voiceChannelId = outer1_15.getVoiceChannelId();
+    const channelId = outer1_15.getChannelId();
+    const connectedActivityLocation = outer1_3.getConnectedActivityLocation();
+    let obj = outer1_0(outer1_1[22]);
     const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(connectedActivityLocation);
-    const id = id.getId();
+    const id = outer1_9.getId();
     if (obj2.isNotNullish(channelId)) {
-      let embeddedActivitiesForChannel = store.getEmbeddedActivitiesForChannel(channelId);
+      let embeddedActivitiesForChannel = outer1_3.getEmbeddedActivitiesForChannel(channelId);
     } else {
-      embeddedActivitiesForChannel = closure_4;
+      embeddedActivitiesForChannel = outer1_4;
     }
-    const obj2 = callback(closure_1[23]);
+    obj2 = outer1_0(outer1_1[23]);
     if (obj3.isNotNullish(voiceChannelId)) {
-      let embeddedActivitiesForChannel1 = store.getEmbeddedActivitiesForChannel(voiceChannelId);
+      let embeddedActivitiesForChannel1 = outer1_3.getEmbeddedActivitiesForChannel(voiceChannelId);
     } else {
-      embeddedActivitiesForChannel1 = closure_4;
+      embeddedActivitiesForChannel1 = outer1_4;
     }
     obj = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel };
-    const obj3 = callback(closure_1[23]);
+    obj3 = outer1_0(outer1_1[23]);
     if (obj5.isNotNullish(embeddedActivityLocationChannelId)) {
-      let embeddedActivitiesForChannel2 = store.getEmbeddedActivitiesForChannel(embeddedActivityLocationChannelId);
+      let embeddedActivitiesForChannel2 = outer1_3.getEmbeddedActivitiesForChannel(embeddedActivityLocationChannelId);
     } else {
-      embeddedActivitiesForChannel2 = closure_4;
+      embeddedActivitiesForChannel2 = outer1_4;
     }
     obj.connectedChannelActivities = embeddedActivitiesForChannel2;
-    const obj5 = callback(closure_1[23]);
+    obj5 = outer1_0(outer1_1[23]);
     let selfEmbeddedActivityForLocation = null;
     if (obj6.isNotNullish(connectedActivityLocation)) {
-      selfEmbeddedActivityForLocation = store.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
+      selfEmbeddedActivityForLocation = outer1_3.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
     }
     obj.userConnectedActivity = selfEmbeddedActivityForLocation;
     obj.voiceChannelActivities = embeddedActivitiesForChannel1;
-    obj.connectedFrame = connectedFrame.getConnectedFrame();
+    obj.connectedFrame = outer1_5.getConnectedFrame();
     return obj;
   }, (voiceChannelActivities) => {
     let channelActivities;
+    let closure_0;
     let connectedActivityLocation;
     let connectedChannelActivities;
     let connectedFrame;
@@ -396,8 +425,8 @@ function ActivitySounds() {
       });
       let isNotNullishResult = voiceChannelActivities.voiceChannelActivities.length < voiceChannelActivities.length;
       if (isNotNullishResult) {
-        isNotNullishResult = callback(userConnectedActivity[23]).isNotNullish(voiceChannelActivities.voiceChannelId);
-        const obj2 = callback(userConnectedActivity[23]);
+        isNotNullishResult = outer1_0(outer1_1[23]).isNotNullish(voiceChannelActivities.voiceChannelId);
+        const obj2 = outer1_0(outer1_1[23]);
       }
       let str2;
       if (isNotNullishResult) {
@@ -405,16 +434,16 @@ function ActivitySounds() {
       }
       let isNotNullishResult1 = undefined === found1;
       if (isNotNullishResult1) {
-        isNotNullishResult1 = callback(userConnectedActivity[23]).isNotNullish(found);
-        const obj3 = callback(userConnectedActivity[23]);
+        isNotNullishResult1 = outer1_0(outer1_1[23]).isNotNullish(found);
+        const obj3 = outer1_0(outer1_1[23]);
       }
       if (isNotNullishResult1) {
         str2 = "activity_end";
       }
       let isNotNullishResult2 = undefined === found;
       if (isNotNullishResult2) {
-        isNotNullishResult2 = callback(userConnectedActivity[23]).isNotNullish(found1);
-        const obj4 = callback(userConnectedActivity[23]);
+        isNotNullishResult2 = outer1_0(outer1_1[23]).isNotNullish(found1);
+        const obj4 = outer1_0(outer1_1[23]);
       }
       if (isNotNullishResult2) {
         isNotNullishResult2 = found1.userIds.size > 1;
@@ -422,10 +451,10 @@ function ActivitySounds() {
       if (isNotNullishResult2) {
         str2 = "activity_user_join";
       }
-      let isNotNullishResult3 = callback(userConnectedActivity[23]).isNotNullish(found1);
+      let isNotNullishResult3 = outer1_0(outer1_1[23]).isNotNullish(found1);
       if (isNotNullishResult3) {
-        isNotNullishResult3 = callback(userConnectedActivity[23]).isNotNullish(found);
-        const obj6 = callback(userConnectedActivity[23]);
+        isNotNullishResult3 = outer1_0(outer1_1[23]).isNotNullish(found);
+        const obj6 = outer1_0(outer1_1[23]);
       }
       str = str2;
       if (isNotNullishResult3) {
@@ -437,7 +466,7 @@ function ActivitySounds() {
         }
         str = str2;
       }
-      const obj5 = callback(userConnectedActivity[23]);
+      const obj5 = outer1_0(outer1_1[23]);
     }
     let str3 = str;
     if (!someResult) {
@@ -447,16 +476,16 @@ function ActivitySounds() {
       const userConnectedActivity2 = voiceChannelActivities.userConnectedActivity;
       let isNotNullishResult4 = null == userConnectedActivity;
       if (isNotNullishResult4) {
-        isNotNullishResult4 = callback(userConnectedActivity[23]).isNotNullish(userConnectedActivity2);
-        const obj7 = callback(userConnectedActivity[23]);
+        isNotNullishResult4 = outer1_0(outer1_1[23]).isNotNullish(userConnectedActivity2);
+        const obj7 = outer1_0(outer1_1[23]);
       }
       if (isNotNullishResult4) {
         str = "activity_end";
       }
-      let isNotNullishResult5 = callback(userConnectedActivity[23]).isNotNullish(userConnectedActivity);
+      let isNotNullishResult5 = outer1_0(outer1_1[23]).isNotNullish(userConnectedActivity);
       if (isNotNullishResult5) {
-        isNotNullishResult5 = callback(userConnectedActivity[23]).isNotNullish(userConnectedActivity2);
-        const obj9 = callback(userConnectedActivity[23]);
+        isNotNullishResult5 = outer1_0(outer1_1[23]).isNotNullish(userConnectedActivity2);
+        const obj9 = outer1_0(outer1_1[23]);
       }
       str3 = str;
       if (isNotNullishResult5) {
@@ -468,8 +497,8 @@ function ActivitySounds() {
         }
         str3 = str;
       }
-      const obj8 = callback(userConnectedActivity[23]);
-      const tmp18 = voiceChannelActivities.connectedChannelActivities.length < connectedChannelActivities.length && voiceChannelActivities.channelActivities.length < channelActivities.length;
+      const obj8 = outer1_0(outer1_1[23]);
+      tmp18 = voiceChannelActivities.connectedChannelActivities.length < connectedChannelActivities.length && voiceChannelActivities.channelActivities.length < channelActivities.length;
     }
     let tmp28 = null != str3;
     if (!tmp28) {
@@ -492,7 +521,7 @@ function ActivitySounds() {
             tmp31 = str7;
           }
           let str6 = tmp31;
-          const tmp30 = null != userConnectedActivity && null != voiceChannelActivities.userConnectedActivity;
+          tmp30 = null != userConnectedActivity && null != voiceChannelActivities.userConnectedActivity;
         } else {
           str6 = "activity_end";
         }
@@ -514,7 +543,7 @@ function ActivitySounds() {
           str4 = "activity_end";
         }
         let str8 = str4;
-        const tmp35 = null != voiceChannelActivities.connectedFrame && null == connectedFrame;
+        tmp35 = null != voiceChannelActivities.connectedFrame && null == connectedFrame;
       } else {
         str8 = "activity_launch";
       }
@@ -524,28 +553,9 @@ function ActivitySounds() {
   });
   return null;
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const NO_ACTIVITIES = arg1(dependencyMap[1]).NO_ACTIVITIES;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).SILENT_JOIN_LEAVE_CHANNEL_TYPES;
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = importDefault(dependencyMap[12]);
-let closure_16 = importDefault(dependencyMap[13]);
-let closure_17 = importDefault(dependencyMap[14]);
-let closure_18 = importDefault(dependencyMap[15]);
-({ InputModes: closure_19, ApplicationStreamStates: closure_20, RTCConnectionStates: closure_21 } = arg1(dependencyMap[16]));
-const tmp2 = arg1(dependencyMap[16]);
-({ jsx: closure_22, Fragment: closure_23, jsxs: closure_24 } = arg1(dependencyMap[17]));
-const tmp3 = arg1(dependencyMap[17]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/soundplayer/SoundPlayer.tsx");
+({ InputModes: closure_19, ApplicationStreamStates: closure_20, RTCConnectionStates: closure_21 } = ME);
+({ jsx: closure_22, Fragment: closure_23, jsxs: closure_24 } = jsxProd);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/soundplayer/SoundPlayer.tsx");
 
 export default function SoundPlayer() {
   const obj = {};

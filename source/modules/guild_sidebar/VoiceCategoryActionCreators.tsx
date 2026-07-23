@@ -1,20 +1,19 @@
-// Module ID: 14909
-// Function ID: 112318
+// Module ID: 15025
+// Function ID: 114486
 // Name: voiceCategoryExpand
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: voiceCategoryCollapse, voiceCategoryExpand
 
-// Module 14909 (voiceCategoryExpand)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_sidebar/VoiceCategoryActionCreators.tsx");
+// Module 15025 (voiceCategoryExpand)
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/VoiceCategoryActionCreators.tsx");
 
 export const voiceCategoryExpand = function voiceCategoryExpand(guildId) {
-  let obj = importDefault(dependencyMap[0]);
-  obj = { alignItems: "3d29cd3c4119682699352e67ac4d7192", justifyContent: "fi.messages.3d29cd3c4119682699352e67ac4d7192.compiled.messages", getUserTrialOffer: "jsona", guildId };
+  let obj = importDefault(686);
+  obj = { type: "VOICE_CATEGORY_EXPAND", guildId, expand: true };
   obj.dispatch(obj);
 };
 export const voiceCategoryCollapse = function voiceCategoryCollapse(guildId) {
-  let obj = importDefault(dependencyMap[0]);
-  obj = { guildId };
+  let obj = importDefault(686);
+  obj = { type: "VOICE_CATEGORY_COLLAPSE", guildId, expand: false };
   obj.dispatch(obj);
 };

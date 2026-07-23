@@ -1,39 +1,39 @@
-// Module ID: 9290
-// Function ID: 72578
+// Module ID: 9297
+// Function ID: 72619
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1212, 9298, 9273, 9275, 3830, 9300, 9302, 7771, 8968, 2]
 // Exports: default
 
-// Module 9290 (ConversationNavigatorMoreMenu)
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_12 };
-obj.container = obj;
-let closure_5 = obj.createStyles(obj);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorMoreMenu.tsx");
+// Module 9297 (ConversationNavigatorMoreMenu)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("jsxProd").fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorMoreMenu.tsx");
 
 export default function ConversationNavigatorMoreMenu(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const conversationId = channelId.conversationId;
-  const dependencyMap = conversationId;
-  const React = callback();
-  const items = [channelId, conversationId];
+  const React = _createForOfIteratorHelperLoose();
+  let items = [channelId, conversationId];
   const memo = React.useMemo(() => {
     let obj = {};
     const intl = channelId(conversationId[5]).intl;
-    obj.label = intl.string(channelId(conversationId[5]).t.7iRs51);
+    obj.label = intl.string(channelId(conversationId[5]).t["7iRs51"]);
     obj.IconComponent = channelId(conversationId[6]).ThumbsUpIcon;
     obj.action = function action() {
-      let obj = callback(closure_1[7]);
-      const result = obj.setConversationFeedbackRating(callback, closure_1, "up");
-      const ConversationsAnalytics = callback(closure_1[8]).ConversationsAnalytics;
-      obj = { channelId: callback, conversationId: closure_1, isThumbsUp: true, isFocusMode: true };
+      let obj = channelId(conversationId[7]);
+      const result = obj.setConversationFeedbackRating(outer1_0, outer1_1, "up");
+      const ConversationsAnalytics = channelId(conversationId[8]).ConversationsAnalytics;
+      obj = { channelId: outer1_0, conversationId: outer1_1, isThumbsUp: true, isFocusMode: true };
       ConversationsAnalytics.trackThumbsClicked(obj);
-      callback(closure_1[9]).presentFeedbackSent();
+      channelId(conversationId[9]).presentFeedbackSent();
     };
     const items = [obj, ];
     obj = {};
@@ -41,17 +41,17 @@ export default function ConversationNavigatorMoreMenu(channelId) {
     obj.label = intl2.string(channelId(conversationId[5]).t.uNGhdg);
     obj.IconComponent = channelId(conversationId[10]).ThumbsDownIcon;
     obj.action = function action() {
-      let obj = callback(closure_1[7]);
-      const result = obj.setConversationFeedbackRating(callback, closure_1, "down");
-      const ConversationsAnalytics = callback(closure_1[8]).ConversationsAnalytics;
-      obj = { channelId: callback, conversationId: closure_1, isThumbsUp: false, isFocusMode: true };
+      let obj = channelId(conversationId[7]);
+      const result = obj.setConversationFeedbackRating(outer1_0, outer1_1, "down");
+      const ConversationsAnalytics = channelId(conversationId[8]).ConversationsAnalytics;
+      obj = { channelId: outer1_0, conversationId: outer1_1, isThumbsUp: false, isFocusMode: true };
       ConversationsAnalytics.trackThumbsClicked(obj);
-      callback(closure_1[9]).presentFeedbackSent();
+      channelId(conversationId[9]).presentFeedbackSent();
     };
     items[1] = obj;
     return items;
   }, items);
-  return jsx(arg1(dependencyMap[11]).ContextMenu, {
+  return jsx(channelId(conversationId[11]).ContextMenu, {
     items: memo,
     children(ref) {
       let obj = Object.create(null);
@@ -63,10 +63,10 @@ export default function ConversationNavigatorMoreMenu(channelId) {
       obj["size"] = "sm";
       obj["variant"] = "tertiary";
       const intl = channelId(conversationId[5]).intl;
-      obj["accessibilityLabel"] = intl.string(channelId(conversationId[5]).t.6Ic4Ev);
-      obj["icon"] = callback(channelId(conversationId[13]).MoreHorizontalIcon, { size: "sm" });
-      obj.children = callback(channelId(conversationId[12]).IconButton, obj);
-      return callback(closure_3, obj);
+      obj["accessibilityLabel"] = intl.string(channelId(conversationId[5]).t["6Ic4Ev"]);
+      obj["icon"] = outer1_4(channelId(conversationId[13]).MoreHorizontalIcon, { size: "sm" });
+      obj.children = outer1_4(channelId(conversationId[12]).IconButton, obj);
+      return outer1_4(outer1_3, obj);
     }
   });
 };

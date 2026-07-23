@@ -1,23 +1,25 @@
-// Module ID: 13333
-// Function ID: 101282
+// Module ID: 13447
+// Function ID: 103438
 // Name: createVoiceSettingsEventHandlers
-// Dependencies: []
+// Dependencies: [4033, 653, 8310, 22, 2]
 // Exports: default
 
-// Module 13333 (createVoiceSettingsEventHandlers)
-const _module = require(dependencyMap[0]);
-({ RPC_SCOPE_CONFIG: closure_3, RPC_LOCAL_SCOPE: closure_4 } = _module);
-const RPCEvents = require(dependencyMap[1]).RPCEvents;
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/rpc/server/events/VoiceSettingsEventsFactory.tsx");
+// Module 13447 (createVoiceSettingsEventHandlers)
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
+import { RPCEvents } from "ME";
+
+let closure_3;
+let closure_4;
+({ RPC_SCOPE_CONFIG: closure_3, RPC_LOCAL_SCOPE: closure_4 } = RPC_SCOPE_CONFIG);
+const result = require("set").fileFinishedImporting("modules/rpc/server/events/VoiceSettingsEventsFactory.tsx");
 
 export default function createVoiceSettingsEventHandlers(arg0, arg1) {
-  const require = arg0;
-  const importDefault = arg1;
+  const _require = arg0;
+  let closure_1 = arg1;
   let obj = {};
   obj = {};
   obj = {};
-  const items = [require(dependencyMap[2]).OAuth2Scopes.RPC, require(dependencyMap[2]).OAuth2Scopes.RPC_VOICE_READ];
+  const items = [_require(8310).OAuth2Scopes.RPC, _require(8310).OAuth2Scopes.RPC_VOICE_READ];
   obj[constants.ANY] = items;
   obj.scope = obj;
   obj.handler = function handler() {
@@ -25,7 +27,7 @@ export default function createVoiceSettingsEventHandlers(arg0, arg1) {
       let dispatch;
       let prevState;
       ({ prevState, dispatch } = arg0);
-      const tmp = callback();
+      const tmp = outer1_0();
       if (!obj.isEqual(tmp, prevState)) {
         dispatch(tmp);
       }
@@ -42,7 +44,7 @@ export default function createVoiceSettingsEventHandlers(arg0, arg1) {
         if (null == socket.application.id) {
           return prevState;
         } else {
-          const tmp4 = callback(socket.application.id);
+          const tmp4 = outer1_1(socket.application.id);
           if (!obj.isEqual(tmp4, prevState)) {
             tmp(tmp4);
           }

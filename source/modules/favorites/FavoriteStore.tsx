@@ -1,9 +1,22 @@
 // Module ID: 1351
-// Function ID: 16095
+// Function ID: 16096
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1316, 1352, 1386, 653, 22, 1282, 566, 686, 2]
 
 // Module 1351 (_isNativeReflectConstruct)
+import _callSuper from "_callSuper";
+import date from "date";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { createChannelRecord } from "_callSuper";
+import { FAVORITES_UNCATEGORIZED_PARENT_ID as closure_9 } from "date";
+import ME from "ME";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -49,6 +62,7 @@ function initializeFromUserSettings() {
       }
       obj.parentId = parentId;
       obj[key10011] = obj;
+      continue;
     }
   }
   value = undefined;
@@ -58,50 +72,41 @@ function initializeFromUserSettings() {
     }
   }
   if (null == value) {
-    value = !arg1(dependencyMap[9]).isEmpty(obj);
-    const obj2 = arg1(dependencyMap[9]);
+    value = !require(22) /* apply */.isEmpty(obj);
+    const obj2 = require(22) /* apply */;
   }
-  let flag = closure_13 !== tmp2;
+  let flag = c13 !== tmp2;
   if (!flag) {
-    flag = closure_14 !== value;
+    flag = c14 !== value;
   }
   if (!flag) {
-    flag = !arg1(dependencyMap[9]).isEqual(closure_12, obj);
-    const obj3 = arg1(dependencyMap[9]);
+    flag = !require(22) /* apply */.isEqual(obj, obj);
+    const obj3 = require(22) /* apply */;
   }
   if (flag) {
-    closure_13 = tmp2;
-    closure_14 = value;
-    closure_12 = obj;
+    c13 = tmp2;
+    c14 = value;
     flag = true;
   }
   return flag;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const createChannelRecord = arg1(dependencyMap[6]).createChannelRecord;
-let closure_9 = arg1(dependencyMap[7]).FAVORITES_UNCATEGORIZED_PARENT_ID;
-({ ChannelTypes: closure_10, FAVORITES: closure_11 } = arg1(dependencyMap[8]));
+({ ChannelTypes: closure_10, FAVORITES: closure_11 } = ME);
 let closure_12 = {};
-let closure_13 = false;
-let closure_14 = false;
-let tmp3 = (Store) => {
+let c13 = false;
+let c14 = false;
+let tmp3 = ((Store) => {
   class FavoriteStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, FavoriteStore);
-      obj = closure_5(FavoriteStore);
-      tmp2 = closure_4;
-      if (closure_15()) {
+      tmp = outer1_2(this, FavoriteStore);
+      obj = outer1_5(FavoriteStore);
+      tmp2 = outer1_4;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -110,36 +115,35 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = FavoriteStore;
   callback2(FavoriteStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
-      callback4();
-      const items = [closure_7];
-      this.syncWith(items, callback4);
+      this.waitFor(outer1_7);
+      outer1_16();
+      const items = [outer1_7];
+      this.syncWith(items, outer1_16);
     }
   };
-  const items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , ];
   obj = {
     key: "getFavoriteChannels",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[1] = obj;
   obj = {
     key: "favoriteGuildMuted",
     get() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "favoriteGuildEnabled",
     get() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[4] = {
@@ -147,7 +151,7 @@ let tmp3 = (Store) => {
     value(arg0) {
       let tmp = null != arg0;
       if (tmp) {
-        tmp = null != closure_12[arg0];
+        tmp = null != outer1_12[arg0];
       }
       return tmp;
     }
@@ -156,7 +160,7 @@ let tmp3 = (Store) => {
     key: "getFavorite",
     value(arg0) {
       if (null != arg0) {
-        return closure_12[arg0];
+        return outer1_12[arg0];
       }
     }
   };
@@ -165,21 +169,21 @@ let tmp3 = (Store) => {
     value(arg0) {
       let nickname;
       let tmp = null;
-      if (arg0 in closure_12) {
+      if (arg0 in outer1_12) {
         tmp = null;
-        if (closure_12[arg0].type === FavoriteStore(closure_1[10]).FavoriteChannelType.CATEGORY) {
+        if (outer1_12[arg0].type === FavoriteStore(outer1_1[10]).FavoriteChannelType.CATEGORY) {
           const obj = {};
-          ({ id: obj.id, nickname } = closure_12[arg0]);
+          ({ id: obj.id, nickname } = outer1_12[arg0]);
           let str = "";
           if (null != nickname) {
             str = nickname;
           }
           obj.name = str;
-          obj.type = constants.GUILD_CATEGORY;
-          obj.position = closure_12[arg0].order;
-          obj.guild_id = closure_11;
-          tmp = closure_8(obj);
-          const tmp7 = closure_8;
+          obj.type = outer1_10.GUILD_CATEGORY;
+          obj.position = outer1_12[arg0].order;
+          obj.guild_id = outer1_11;
+          tmp = outer1_8(obj);
+          const tmp7 = outer1_8;
         }
       }
       return tmp;
@@ -209,14 +213,13 @@ let tmp3 = (Store) => {
   items[9] = {
     key: "hasStoredFavorites",
     value() {
-      return !FavoriteStore(closure_1[9]).isEmpty(this.getFavoriteChannels());
+      return !FavoriteStore(outer1_1[9]).isEmpty(this.getFavoriteChannels());
     }
   };
   return callback(FavoriteStore, items);
-}(importDefault(dependencyMap[11]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "FavoriteStore";
-tmp3 = new tmp3(importDefault(dependencyMap[12]), {});
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/favorites/FavoriteStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), {});
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/favorites/FavoriteStore.tsx");
 
 export default tmp3;

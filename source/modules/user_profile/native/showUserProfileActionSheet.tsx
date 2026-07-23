@@ -1,47 +1,49 @@
-// Module ID: 8486
-// Function ID: 67767
+// Module ID: 8492
+// Function ID: 67804
 // Name: getUserProfileActionSheetKey
-// Dependencies: []
+// Dependencies: [5, 7461, 3767, 1849, 1934, 3803, 8493, 4098, 8498, 2]
 // Exports: getUserProfileBlockedSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8486 (getUserProfileActionSheetKey)
+// Module 8492 (getUserProfileActionSheetKey)
+import explicitContentFromProto from "explicitContentFromProto";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getUserProfileActionSheetKey(userId) {
   return "UserProfile" + userId;
 }
 function getUserProfileIgnoredSpeedBumpActionSheetKey(userId) {
   return "UserProfileIgnoredSpeedBump" + userId;
 }
-function showUserProfileActionSheet(ignoreBlockedSpeedBump) {
+function showUserProfileActionSheet(isPreviewingChanges, arg1) {
   const timestamp = Date.now();
-  const IgnoreProfileSpeedbumpDisabled = arg1(dependencyMap[5]).IgnoreProfileSpeedbumpDisabled;
-  if (!ignoreBlockedSpeedBump.ignoreBlockedSpeedBump) {
-    const isBlockedResult = closure_5.isBlocked(ignoreBlockedSpeedBump.userId);
-    const isIgnoredResult = closure_5.isIgnored(ignoreBlockedSpeedBump.userId);
+  const IgnoreProfileSpeedbumpDisabled = require(3803) /* explicitContentFromProto */.IgnoreProfileSpeedbumpDisabled;
+  if (!isPreviewingChanges.ignoreBlockedSpeedBump) {
+    const isBlockedResult = _isNativeReflectConstruct.isBlocked(isPreviewingChanges.userId);
+    const isIgnoredResult = _isNativeReflectConstruct.isIgnored(isPreviewingChanges.userId);
     if (isIgnoredResult) {
-      let obj = importDefault(dependencyMap[7]);
+      let obj = importDefault(4098);
       obj = {};
-      const tmp9 = arg1(dependencyMap[4])(dependencyMap[6], dependencyMap.paths);
-      const merged = Object.assign(ignoreBlockedSpeedBump);
+      const tmp9 = require(1934) /* maybeLoadBundle */(8493, dependencyMap.paths);
+      const merged = Object.assign(isPreviewingChanges);
       let str = "ignore";
       if (isBlockedResult) {
         str = "block";
       }
       obj["speedBumpType"] = str;
       obj["openedAt"] = timestamp;
-      obj.openLazy(tmp9, getUserProfileIgnoredSpeedBumpActionSheetKey(ignoreBlockedSpeedBump.userId), obj);
+      obj.openLazy(tmp9, getUserProfileIgnoredSpeedBumpActionSheetKey(isPreviewingChanges.userId), obj);
     }
   }
-  const tmp17 = arg1(dependencyMap[4])(dependencyMap[8], dependencyMap.paths);
-  const obj3 = importDefault(dependencyMap[7]);
+  const tmp17 = require(1934) /* maybeLoadBundle */(8498, dependencyMap.paths);
+  const obj3 = importDefault(4098);
   obj = {};
-  const merged1 = Object.assign(ignoreBlockedSpeedBump);
+  const merged1 = Object.assign(isPreviewingChanges);
   obj["openedAt"] = timestamp;
-  obj3.openLazy(tmp17, getUserProfileActionSheetKey(ignoreBlockedSpeedBump.userId), obj, "replaceAll");
+  obj3.openLazy(tmp17, getUserProfileActionSheetKey(isPreviewingChanges.userId), obj, "replaceAll");
 }
-let closure_3 = importDefault(dependencyMap[0]);
-arg1(dependencyMap[1]).addPostConnectionCallback;
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
+require("shouldWaitForBlockingModals").addPostConnectionCallback;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
 
 export default showUserProfileActionSheet;
 export { getUserProfileActionSheetKey };
@@ -50,7 +52,7 @@ export const getUserProfileBlockedSpeedBumpActionSheetKey = function getUserProf
 };
 export { getUserProfileIgnoredSpeedBumpActionSheetKey };
 export const showUserProfileActionSheetPostConnection = function showUserProfileActionSheetPostConnection(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   // CreateGeneratorClosureLongIndex (0x67)
   addPostConnectionCallback(callback(tmp));
 };

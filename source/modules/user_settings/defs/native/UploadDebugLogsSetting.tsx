@@ -1,28 +1,30 @@
-// Module ID: 14257
-// Function ID: 107702
+// Module ID: 14371
+// Function ID: 109855
 // Name: _handleUploadDebugLogSettingPress
-// Dependencies: []
+// Dependencies: [5, 27, 653, 33, 621, 682, 477, 10324, 3831, 4086, 1212, 10095, 2]
 
-// Module 14257 (_handleUploadDebugLogSettingPress)
+// Module 14371 (_handleUploadDebugLogSettingPress)
+import batchUpdates from "batchUpdates";
+import { ActivityIndicator } from "get ActivityIndicator";
+import { DebugLogCategory } from "ME";
+import { jsx } from "jsxProd";
+import keys from "keys";
+import createToggle from "createToggle";
+
+const require = arg1;
 function _handleUploadDebugLogSettingPress() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleUploadDebugLogSettingPress = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
-const DebugLogCategory = arg1(dependencyMap[2]).DebugLogCategory;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-let closure_7 = obj.create(() => ({ "Bool(true)": true, "Bool(true)": true }));
-obj = {
+let closure_7 = keys.create(() => ({ isDisabled: false, isUploading: false }));
+keys = {
   useTitle() {
-    const intl = arg1(dependencyMap[10]).intl;
-    return intl.string(arg1(dependencyMap[10]).t.aY1OH2);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.aY1OH2);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[9]).CircleInformationIcon,
+  IconComponent: require("CircleInformationIcon").CircleInformationIcon,
   onPress: function handleUploadDebugLogSettingPress() {
     return _handleUploadDebugLogSettingPress(...arguments);
   },
@@ -37,8 +39,7 @@ obj = {
     return callback2().isDisabled;
   }
 };
-const pressable = arg1(dependencyMap[11]).createPressable(obj);
-const obj2 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/defs/native/UploadDebugLogsSetting.tsx");
+keys = createToggle.createPressable(keys);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/UploadDebugLogsSetting.tsx");
 
-export default pressable;
+export default keys;

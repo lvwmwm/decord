@@ -1,18 +1,18 @@
-// Module ID: 15538
-// Function ID: 118608
-// Dependencies: [31, 27, 10248, 4322, 33, 4126, 15542, 4545]
+// Module ID: 15655
+// Function ID: 120781
+// Dependencies: [57, 31, 27, 33, 491, 8018, 11954, 2]
 
-// Module 15538
-import module_31 from "module_31";
-import importAllResult from "get ActivityIndicator";
-import { Image } from "hairlineWidth";
-import ReadStateTypes from "ReadStateTypes";
-import getFontScale from "getFontScale";
+// Module 15655
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { Image } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
 
-({ jsx: closure_6, jsxs: closure_7 } = ReadStateTypes);
-const result = getFontScale.fileFinishedImporting("modules/launchpad/native/shared/CutoutImage.tsx");
-
-export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+const memoResult = importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
   let imageBackgroundColor;
   let imageBorderRadius;
   let imageSize;
@@ -71,7 +71,6 @@ export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
     imageBorderRadius = imageSize / 2;
   }
   ({ imageBackgroundColor, imageTintColor } = cutoutTopLeftSize);
-  const arg1 = imageTintColor;
   let str = cutoutTopLeftSize.clipInnerAmount;
   if (str === undefined) {
     str = 0;
@@ -83,7 +82,7 @@ export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
   const borderStroke = cutoutTopLeftSize.borderStroke;
   let importDefault;
   let str2 = 4;
-  let obj = arg1(dependencyMap[4]);
+  let obj = imageTintColor(491);
   const tmp = callback(importAllResult.useState(obj.v4()), 2);
   const first = tmp[0];
   importDefault = tmp[1];
@@ -93,7 +92,7 @@ export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
   }
   let v4Result;
   if (num14 > 0) {
-    let obj1 = arg1(dependencyMap[str2]);
+    let obj1 = imageTintColor(dependencyMap[str2]);
     v4Result = obj1.v4();
   }
   if (null != v4Result) {
@@ -101,13 +100,13 @@ export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
     const combined1 = "url(#" + v4Result + ")";
   }
   const items = [imageTintColor];
-  const callback = importAllResult.useCallback(() => {
-    callback(imageTintColor(closure_2[4]).v4());
+  callback = importAllResult.useCallback(() => {
+    callback(imageTintColor(outer1_2[4]).v4());
   }, []);
   const layoutEffect = importAllResult.useLayoutEffect(() => {
     if (null != imageTintColor) {
-      callback(imageTintColor(closure_2[4]).v4());
-      const obj = imageTintColor(closure_2[4]);
+      callback(imageTintColor(outer1_2[4]).v4());
+      const obj = imageTintColor(outer1_2[4]);
     }
   }, items);
   obj = { style: cutoutTopLeftSize.style, height: imageSize, width: imageSize };
@@ -115,48 +114,48 @@ export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
   obj1 = { width: imageSize, height: imageSize, id: first };
   if (imageBorderRadius === imageSize / 2) {
     const obj2 = { cx: imageSize / 2, cy: imageSize / 2, r: imageSize / 2, fill: "white" };
-    let tmp17 = callback2(arg1(dependencyMap[5]).Circle, obj2);
+    let tmp17 = callback2(imageTintColor(8018).Circle, obj2);
   } else {
-    const obj3 = { 0: "%FunctionPrototype%", 0: "paddingStart", width: imageSize, height: imageSize, rx: imageBorderRadius, ry: imageBorderRadius, fill: "white" };
-    tmp17 = callback2(arg1(dependencyMap[5]).Rect, obj3);
+    const obj3 = { x: 0, y: 0, width: imageSize, height: imageSize, rx: imageBorderRadius, ry: imageBorderRadius, fill: "white" };
+    tmp17 = callback2(imageTintColor(8018).Rect, obj3);
   }
   const items1 = [tmp17, , , , , ];
   let tmp21 = null;
   if (num > 0) {
     const obj4 = { cx: num2, cy: num3, r: num, fill: "black" };
-    tmp21 = callback2(arg1(dependencyMap[5]).Circle, obj4);
+    tmp21 = callback2(imageTintColor(8018).Circle, obj4);
   }
   items1[1] = tmp21;
   let tmp25 = null;
   if (num4 > 0) {
     const obj5 = { cx: imageSize - num5, cy: num6, r: num4, fill: "black" };
-    tmp25 = callback2(arg1(dependencyMap[5]).Circle, obj5);
+    tmp25 = callback2(imageTintColor(8018).Circle, obj5);
   }
   items1[2] = tmp25;
   let tmp29 = null;
   if (num7 > 0) {
     const obj6 = { cx: num8, cy: imageSize - num9, r: num7, fill: "black" };
-    tmp29 = callback2(arg1(dependencyMap[5]).Circle, obj6);
+    tmp29 = callback2(imageTintColor(8018).Circle, obj6);
   }
   items1[3] = tmp29;
   let tmp33 = null;
   if (num10 > 0) {
     const obj7 = { cx: imageSize - num11, cy: imageSize - num12, r: num10, fill: "black" };
-    tmp33 = callback2(arg1(dependencyMap[5]).Circle, obj7);
+    tmp33 = callback2(imageTintColor(8018).Circle, obj7);
   }
   items1[4] = tmp33;
   if (str <= 0) {
     items1[5] = null;
     obj1.children = items1;
-    const items2 = [tmp12(arg1(dependencyMap[5]).Mask, obj1), ];
+    const items2 = [tmp12(imageTintColor(8018).Mask, obj1), ];
     if (null == v4Result) {
       items2[1] = null;
       obj.children = items2;
-      const items3 = [tmp12(arg1(dependencyMap[5]).Defs, obj), , , ];
+      const items3 = [tmp12(imageTintColor(8018).Defs, obj), , , ];
       let tmp57 = null;
       if (null != imageBackgroundColor) {
         const obj8 = { height: imageSize, width: imageSize, fill: imageBackgroundColor, mask: combined, clipPath: combined1 };
-        tmp57 = callback2(arg1(dependencyMap[5]).Rect, obj8);
+        tmp57 = callback2(imageTintColor(8018).Rect, obj8);
       }
       items3[1] = tmp57;
       if (null == imageSource) {
@@ -164,15 +163,15 @@ export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
         let tmp72 = null;
         if (null != borderStroke) {
           const obj9 = { height: imageSize, width: imageSize, fill: "transparent", stroke: cutoutTopLeftSize.borderStrokeColor, strokeWidth: 2 * borderStroke, mask: combined, clipPath: combined1, rx: imageBorderRadius, ry: imageBorderRadius };
-          tmp72 = callback2(arg1(dependencyMap[5]).Rect, obj9);
+          tmp72 = callback2(imageTintColor(8018).Rect, obj9);
         }
         items3[3] = tmp72;
         obj.children = items3;
         return tmp12(tmp13, obj);
       } else {
         if ("number" !== typeof imageSource) {
-          const obj10 = { height: imageSize, width: imageSize, href: importDefault(dependencyMap[6])(imageSource), mask: combined, clipPath: combined1 };
-          let tmp66 = callback2(arg1(dependencyMap[5]).Image, obj10);
+          const obj10 = { height: imageSize, width: imageSize, href: importDefault(11954)(imageSource), mask: combined, clipPath: combined1 };
+          let tmp66 = callback2(imageTintColor(8018).Image, obj10);
         }
         const obj11 = { height: imageSize, width: imageSize, mask: combined, clipPath: combined1 };
         const obj12 = {};
@@ -181,7 +180,7 @@ export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
         obj12.source = imageSource;
         obj12.onLoad = callback;
         obj11.children = callback2(Image, obj12);
-        tmp66 = callback2(arg1(dependencyMap[5]).ForeignObject, obj11);
+        tmp66 = callback2(imageTintColor(8018).ForeignObject, obj11);
       }
     } else {
       const obj14 = { id: v4Result };
@@ -189,22 +188,25 @@ export default importAllResult.memo(function CutoutImage(cutoutTopLeftSize) {
         const obj15 = { cx: imageSize / 2, cy: imageSize / 2, r: imageSize / str2 };
         str2 = "white";
         obj15.fill = "white";
-        let tmp52 = callback2(arg1(dependencyMap[5]).Circle, obj15);
+        let tmp52 = callback2(imageTintColor(8018).Circle, obj15);
       } else {
         const obj16 = { x: num14, y: num14, width: imageSize - 2 * num14, height: imageSize - 2 * num14, rx: imageBorderRadius * ((imageSize - 2 * num14) / imageSize), ry: imageBorderRadius * ((imageSize - 2 * num14) / imageSize), fill: "white" };
-        tmp52 = callback2(arg1(dependencyMap[5]).Rect, obj16);
+        tmp52 = callback2(imageTintColor(8018).Rect, obj16);
       }
       obj14.children = tmp52;
-      callback2(arg1(dependencyMap[5]).ClipPath, obj14);
+      callback2(imageTintColor(8018).ClipPath, obj14);
       const tmp46 = callback2;
     }
   } else if (imageBorderRadius === imageSize / 2) {
     const obj17 = { cx: imageSize / 2, cy: imageSize / 2, r: str / 2 };
     str = "black";
     obj17.fill = "black";
-    let tmp40 = callback2(arg1(dependencyMap[5]).Circle, obj17);
+    let tmp40 = callback2(imageTintColor(8018).Circle, obj17);
   } else {
     const obj18 = { x: (imageSize - `black`) / 2, y: (imageSize - `black`) / 2, width: str, height: str, rx: imageBorderRadius * (`black` / imageSize), ry: imageBorderRadius * (`black` / imageSize), fill: "black" };
-    tmp40 = callback2(arg1(dependencyMap[5]).Rect, obj18);
+    tmp40 = callback2(imageTintColor(8018).Rect, obj18);
   }
 });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/launchpad/native/shared/CutoutImage.tsx");
+
+export default memoResult;

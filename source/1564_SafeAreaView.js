@@ -1,23 +1,23 @@
 // Module ID: 1564
-// Function ID: 17623
+// Function ID: 17624
 // Name: SafeAreaView
-// Dependencies: []
+// Dependencies: [29, 31, 33, 1565]
 
 // Module 1564 (SafeAreaView)
-let closure_2 = [false];
-let closure_3 = importDefault(dependencyMap[0]);
-const useMemo = arg1(dependencyMap[1]).useMemo;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = { useManaTypeConsolidationExperiment: 0.00000000000000000000000000000000000000000000000000000000000004667253313268209, notification_center_id: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000355745086480259, bdt: -625777451929953900000000000000000000000000000000000000000000000000000000000000000000000000000, animatedContainerHeight: 0.00000000000000000000000000000000000000000000000000000000000004665177423924698 };
+import _objectWithoutProperties from "_objectWithoutProperties";
+import { useMemo } from "result";
+import { jsx } from "jsxProd";
 
-export const SafeAreaView = importAll(dependencyMap[1]).forwardRef((edges, ref) => {
+let closure_2 = ["edges"];
+let closure_6 = { top: "additive", left: "additive", bottom: "additive", right: "additive" };
+
+export const SafeAreaView = require("result").forwardRef((edges, ref) => {
   edges = edges.edges;
-  const importDefault = edges;
   const items = [edges];
-  const tmp = callback(edges, closure_2);
-  const tmp2 = useMemo(() => {
+  let tmp = callback(edges, closure_2);
+  let tmp2 = useMemo(() => {
     if (null == edges) {
-      return closure_6;
+      return outer1_6;
     } else {
       const _Array = Array;
       if (Array.isArray(edges)) {
@@ -56,10 +56,10 @@ export const SafeAreaView = importAll(dependencyMap[1]).forwardRef((edges, ref) 
       return obj;
     }
   }, items);
-  const obj = {
+  let obj = {
     edges: useMemo(() => {
       if (null == edges) {
-        return closure_6;
+        return outer1_6;
       } else {
         const _Array = Array;
         if (Array.isArray(edges)) {
@@ -100,5 +100,5 @@ export const SafeAreaView = importAll(dependencyMap[1]).forwardRef((edges, ref) 
     }, items),
     ref
   };
-  return jsx(importDefault(dependencyMap[3]), Object.assign({}, tmp, obj));
+  return jsx(edges(1565), Object.assign({}, tmp, obj));
 });

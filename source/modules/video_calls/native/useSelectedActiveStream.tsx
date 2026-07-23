@@ -1,22 +1,24 @@
-// Module ID: 12608
-// Function ID: 96904
+// Module ID: 12722
+// Function ID: 99060
 // Name: useSelectedActiveStream
-// Dependencies: []
+// Dependencies: [4143, 4149, 566, 2]
 // Exports: default
 
-// Module 12608 (useSelectedActiveStream)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/video_calls/native/useSelectedActiveStream.tsx");
+// Module 12722 (useSelectedActiveStream)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/video_calls/native/useSelectedActiveStream.tsx");
 
 export default function useSelectedActiveStream(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2, closure_3];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const selectedParticipantId = selectedParticipantId.getSelectedParticipantId(arg0.id);
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct, closure_3];
+  return _require(566).useStateFromStores(items, () => {
+    const selectedParticipantId = outer1_2.getSelectedParticipantId(id.id);
     let activeStreamForStreamKey = null;
     if (null != selectedParticipantId) {
-      activeStreamForStreamKey = activeStreamForStreamKey.getActiveStreamForStreamKey(selectedParticipantId);
+      activeStreamForStreamKey = outer1_3.getActiveStreamForStreamKey(selectedParticipantId);
     }
     return activeStreamForStreamKey;
   });

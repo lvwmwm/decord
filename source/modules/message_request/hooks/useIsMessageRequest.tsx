@@ -1,29 +1,31 @@
-// Module ID: 10395
-// Function ID: 80124
+// Module ID: 10405
+// Function ID: 80174
 // Name: useIsMessageRequest
-// Dependencies: []
+// Dependencies: [5604, 5605, 566, 2]
 // Exports: useIsEitherTypeOfMessageRequest, useIsMessageRequest
 
-// Module 10395 (useIsMessageRequest)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/message_request/hooks/useIsMessageRequest.tsx");
+// Module 10405 (useIsMessageRequest)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/message_request/hooks/useIsMessageRequest.tsx");
 
 export const useIsMessageRequest = function useIsMessageRequest(id) {
-  const arg1 = id;
-  const items = [closure_2];
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
   const items1 = [id];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => messageRequest.isMessageRequest(arg0), items1);
+  return _require(566).useStateFromStores(items, () => outer1_2.isMessageRequest(closure_0), items1);
 };
 export const useIsEitherTypeOfMessageRequest = function useIsEitherTypeOfMessageRequest(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2, closure_3];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    let tmp = null != arg0;
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct, closure_3];
+  return _require(566).useStateFromStores(items, () => {
+    let tmp = null != closure_0;
     if (tmp) {
-      let isMessageRequestResult = messageRequest.isMessageRequest(arg0);
+      let isMessageRequestResult = outer1_2.isMessageRequest(closure_0);
       if (!isMessageRequestResult) {
-        isMessageRequestResult = spam.isSpam(arg0);
+        isMessageRequestResult = outer1_3.isSpam(closure_0);
       }
       tmp = isMessageRequestResult;
     }

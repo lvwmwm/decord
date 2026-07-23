@@ -1,31 +1,32 @@
-// Module ID: 7124
-// Function ID: 57254
+// Module ID: 7129
+// Function ID: 57288
 // Name: useIsEligibleForBogoOffer
-// Dependencies: []
+// Dependencies: [31, 3782, 7130, 1851, 566, 6686, 7126, 6656, 6679, 2]
 // Exports: useIsEligibleForBogoOffer
 
-// Module 7124 (useIsEligibleForBogoOffer)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const PremiumTypes = arg1(dependencyMap[3]).PremiumTypes;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/native/hooks/useIsEligibleForBogoOffer.android.tsx");
+// Module 7129 (useIsEligibleForBogoOffer)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { PremiumTypes } from "GuildFeatures";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/hooks/useIsEligibleForBogoOffer.android.tsx");
 
 export const useIsEligibleForBogoOffer = function useIsEligibleForBogoOffer() {
   const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => activeBogoRewardPromotion.getActiveBogoRewardPromotion());
-  const obj = arg1(dependencyMap[4]);
-  const items1 = [closure_3];
-  const stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
-  const obj2 = arg1(dependencyMap[4]);
-  const premiumTrialOffer = arg1(dependencyMap[5]).usePremiumTrialOffer();
-  const obj4 = arg1(dependencyMap[5]);
-  const premiumDiscountOffer = arg1(dependencyMap[6]).usePremiumDiscountOffer();
-  const obj5 = arg1(dependencyMap[6]);
-  const isPaymentsBlocked = arg1(dependencyMap[7]).useIsPaymentsBlocked();
-  const obj6 = arg1(dependencyMap[7]);
-  const forceUpdate = arg1(dependencyMap[8]).useForceUpdate();
-  const arg1 = forceUpdate;
+  const stateFromStores = forceUpdate(566).useStateFromStores(items, () => outer1_4.getActiveBogoRewardPromotion());
+  const obj = forceUpdate(566);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = forceUpdate(566).useStateFromStores(items1, () => outer1_3.getPremiumTypeSubscription());
+  const obj2 = forceUpdate(566);
+  const premiumTrialOffer = forceUpdate(6686).usePremiumTrialOffer();
+  const obj4 = forceUpdate(6686);
+  const premiumDiscountOffer = forceUpdate(7126).usePremiumDiscountOffer();
+  const obj5 = forceUpdate(7126);
+  const isPaymentsBlocked = forceUpdate(6656).useIsPaymentsBlocked();
+  const obj6 = forceUpdate(6656);
+  forceUpdate = forceUpdate(6679).useForceUpdate();
   let valueOfResult = null;
   if (null != stateFromStores) {
     const endDate = stateFromStores.endDate;
@@ -34,12 +35,12 @@ export const useIsEligibleForBogoOffer = function useIsEligibleForBogoOffer() {
   const dependencyMap = valueOfResult;
   const items2 = [valueOfResult, forceUpdate];
   const effect = React.useEffect(() => {
-    if (null != valueOfResult) {
+    if (null != closure_1) {
       const _Date = Date;
-      const diff = valueOfResult - Date.now();
+      const diff = closure_1 - Date.now();
       if (diff > 0) {
         const _setTimeout = setTimeout;
-        const timeout = setTimeout(timeout, diff);
+        timeout = setTimeout(timeout, diff);
         return () => clearTimeout(closure_0);
       }
     }

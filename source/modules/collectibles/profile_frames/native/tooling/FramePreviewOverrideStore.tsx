@@ -1,52 +1,61 @@
-// Module ID: 8237
-// Function ID: 65034
+// Module ID: 8243
+// Function ID: 65071
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 27, 8244, 3, 8245, 1247, 8246, 8250, 621, 2]
 
-// Module 8237 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8243 (_createForOfIteratorHelperLoose)
+import enforcing from "enforcing";
+import { Image } from "get ActivityIndicator";
+import OVERRIDE_DIR from "OVERRIDE_DIR";
+import importDefaultResult from "timestamp";
+import keys from "keys";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,21 +93,23 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function measure(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return new Promise((arg0, arg1) => {
-    const size = size.getSize(arg0, (width, height) => width({ width, height }), (arg0) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    const size = outer1_4.getSize(closure_0, (width, height) => callback({ width, height }), (arg0) => {
       let error = arg0;
       if (!(arg0 instanceof Error)) {
         const _Error = Error;
         const _String = String;
         error = new Error(String(arg0));
       }
-      return arg1(error);
+      return closure_1(error);
     });
   });
 }
 async function _readManifest() {
-  const tmp = yield callback(closure_2[4]).readFile("documents", "" + closure_6 + "/" + closure_5, "utf8");
+  const tmp = yield outer2_0(outer2_2[4]).readFile("documents", "" + outer2_6 + "/" + outer2_5, "utf8");
   let parsed = null;
   if (null != tmp) {
     const _JSON = JSON;
@@ -106,29 +117,29 @@ async function _readManifest() {
   }
   return parsed;
 }
-async function _buildOverride(layers, arg1) {
+async function _buildOverride(arg0, arg1) {
   let errorType;
   let filename;
   let folder;
   let parsed;
-  if (Array.isArray(layers.layers)) {
-    let obj = callback2(closure_2[5]);
+  if (Array.isArray(arg0.layers)) {
+    let obj = outer2_1(outer2_2[5]);
     const _HermesInternal = HermesInternal;
-    const combined = "file://" + obj.getConstants().DocumentsDirPath + "/" + closure_6;
+    const combined = "file://" + obj.getConstants().DocumentsDirPath + "/" + outer2_6;
     const items = [];
     obj = {};
     const items1 = [];
-    const tmp10 = callback3(layers.layers);
+    const tmp10 = outer2_9(arg0.layers);
     const iter = tmp10();
     let iter2 = iter;
     if (!iter.done) {
       ({ folder, filename } = iter2.value);
-      let obj2 = callback(closure_2[6]);
+      let obj2 = outer2_0(outer2_2[6]);
       ({ parsed, errorType } = obj2.parseLayerFilename(filename));
       while (null != parsed) {
-        let tmp34 = callback;
-        let tmp35 = closure_2;
-        let tmp36 = callback(closure_2[6]).FOLDER_ORDER_MAP[folder];
+        let tmp34 = outer2_0;
+        let tmp35 = outer2_2;
+        let tmp36 = outer2_0(outer2_2[6]).FOLDER_ORDER_MAP[folder];
         let _HermesInternal4 = HermesInternal;
         let combined1 = "override-" + tmp36 + "-" + parsed.index;
         let _HermesInternal5 = HermesInternal;
@@ -141,8 +152,8 @@ async function _buildOverride(layers, arg1) {
         let combined2 = "" + combined + "/" + folder + "/" + filename;
         obj = { id: combined1, type: parsed.type, order: tmp36 };
         ({ anchor: obj7.anchor, responsive: obj7.responsive } = parsed);
-        let tmp42 = closure_11;
-        let size = yield closure_11(combined2);
+        let tmp42 = outer2_11;
+        let size = yield outer2_11(combined2);
         let obj1 = { layer: obj, order: tmp36, index: parsed.index };
         let arr = items.push(obj1);
         obj2 = { uri: combined2 };
@@ -159,7 +170,7 @@ async function _buildOverride(layers, arg1) {
       }
       let str7 = "invalid";
       if (null != errorType) {
-        str7 = callback(closure_2[6]).PARSE_ERROR_LABELS[errorType];
+        str7 = outer2_0(outer2_2[6]).PARSE_ERROR_LABELS[errorType];
       }
       const _Error2 = Error;
       const _HermesInternal2 = HermesInternal;
@@ -171,13 +182,13 @@ async function _buildOverride(layers, arg1) {
       const error1 = new Error("Frame has no valid layers.");
       throw error1;
     } else {
-      const sorted = items.sort(callback(closure_2[6]).compareLayerFiles);
-      const profileFrameDimensions = callback(closure_2[7]).computeProfileFrameDimensions(items1);
-      const obj4 = { frameKey: layers.frameKey };
+      const sorted = items.sort(outer2_0(outer2_2[6]).compareLayerFiles);
+      const profileFrameDimensions = outer2_0(outer2_2[7]).computeProfileFrameDimensions(items1);
+      const obj4 = { frameKey: arg0.frameKey };
       let combined3 = null;
-      if (null != layers.preview) {
+      if (null != arg0.preview) {
         const _HermesInternal3 = HermesInternal;
-        combined3 = "" + combined + "/" + layers.preview;
+        combined3 = "" + combined + "/" + arg0.preview;
       }
       obj4.previewUri = combined3;
       obj4.layers = items.map((layer) => layer.layer);
@@ -191,49 +202,46 @@ async function _buildOverride(layers, arg1) {
     throw error2;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-({ MANIFEST_NAME: closure_5, OVERRIDE_DIR: closure_6 } = arg1(dependencyMap[2]));
-let importDefaultResult = importDefault(dependencyMap[3]);
+({ MANIFEST_NAME: closure_5, OVERRIDE_DIR: closure_6 } = OVERRIDE_DIR);
 importDefaultResult = new importDefaultResult("FramePreviewOverrideStore");
-let closure_8 = 0;
-let obj = arg1(dependencyMap[8]);
-obj = obj.create((arg0) => {
-  const arg1 = arg0;
-  const obj = { "Null": true, "Null": true, "Null": true };
+let c8 = 0;
+keys = keys.create((arg0) => {
+  let closure_0 = arg0;
+  let obj = { override: null, status: "idle", error: null };
   let closure_1 = callback(async () => {
     function isStale() {
-      return sum !== sum;
+      return closure_0 !== outer3_8;
     }
-    const sum = sum + 1;
-    sum({ "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023534382790983078, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045861640054744 });
-    const tmp3 = yield function readManifest() {
-      return callback(...arguments);
-    }();
+    const sum = outer2_8 + 1;
+    outer2_8 = sum;
+    let closure_0 = sum;
+    outer1_0({ status: "loading", error: null });
+    const tmp3 = yield (function readManifest() {
+      return outer3_12(...arguments);
+    })();
     if (!isStale()) {
       if (null == tmp3) {
-        sum({ "Null": "50acfdf084b8dccbfa3fd235ea0ab8ff", "Null": "PauseIcon" });
+        outer1_0({ status: "error", error: "No frame on device. Ask Cap to push one (or run pushFrameOverride.mjs)." });
       } else {
-        const tmp5 = yield function buildOverride(arg0) {
-          return callback2(...arguments);
-        }(tmp3);
+        const tmp5 = yield (function buildOverride(arg0) {
+          return outer3_13(...arguments);
+        })(tmp3);
         if (!isStale()) {
-          const obj = { "Null": true, "Null": true, "Null": true, override: tmp5 };
-          sum(obj);
+          const obj = { override: tmp5, status: "idle", error: null };
+          outer1_0(obj);
         }
       }
     }
   });
   obj.loadFromDevice = function() {
-    return callback(...arguments);
+    return callback2(...arguments);
   };
   obj.clear = function clear() {
-    closure_8 = closure_8 + 1;
-    arg0({ "Null": true, "Null": true, "Null": true });
+    outer1_8 = outer1_8 + 1;
+    callback({ override: null, status: "idle", error: null });
   };
   return obj;
 });
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FramePreviewOverrideStore.tsx");
+const result = require("OVERRIDE_DIR").fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FramePreviewOverrideStore.tsx");
 
-export const useFramePreviewOverrideStore = obj;
+export const useFramePreviewOverrideStore = keys;

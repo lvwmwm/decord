@@ -1,49 +1,51 @@
-// Module ID: 13336
-// Function ID: 101343
+// Module ID: 13450
+// Function ID: 103499
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 7, 6, 15, 17, 18, 4173, 1906, 4574, 3, 13347, 13348, 10234, 5728, 13349, 2, 4173, 4576, 3801, 2, 6, 7, 15, 17, 18, 1194, 4173, 686, 4526, 2, 6, 7, 15, 17, 18, 27, 4120, 1906]
+// Dependencies: [15, 17, 18, 6, 7, 1348, 1907, 1838, 4177, 3758, 4202, 3767, 4952, 1849, 4146, 10710, 653, 13451, 13452, 13453, 13454, 7607, 12716, 13455, 13456, 7594, 1212, 13457, 10721, 3994, 6999, 4320, 4974, 675, 4324, 63, 4530, 2]
 
-// Module 13336 (_isNativeReflectConstruct)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import closure_4 from "_defineProperties";
-import closure_5 from "_classCallCheck";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import closure_7 from "_getPrototypeOf";
-import closure_8 from "_inherits";
+// Module 13450 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "registerAsset";
+import closure_5 from "registerAsset";
+import closure_6 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
 import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+import closure_10 from "_createForOfIteratorHelperLoose";
 import importDefaultResult from "_isNativeReflectConstruct";
-import timestamp from "timestamp";
-import importDefaultResult1 from "getVolumeForSound";
-import getSoundboardSoundURL from "getSoundboardSoundURL";
-import createSound from "createSound";
-import _fetchDefaultSoundsFromApi2 from "_fetchDefaultSoundsFromApi2";
+import closure_12 from "_isNativeReflectConstruct";
+import importDefaultResult1 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
 import importDefaultResult2 from "_isNativeReflectConstruct";
-import closure_18 from "result2";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import perceptualToAmplitude from "perceptualToAmplitude";
-import explicitContentFromProto from "explicitContentFromProto";
-import result2 from "result2";
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { intl } from "_isNativeReflectConstruct";
-import { intl as intl2 } from "_isNativeReflectConstruct";
-import { intl as intl3 } from "_isNativeReflectConstruct";
-import { intl as intl4 } from "_isNativeReflectConstruct";
-import { intl as intl5 } from "_isNativeReflectConstruct";
-import { intl as intl6 } from "_isNativeReflectConstruct";
-import { intl as intl7 } from "_isNativeReflectConstruct";
-import { intl as intl8 } from "_isNativeReflectConstruct";
-import { intl as intl9 } from "_isNativeReflectConstruct";
-import { intl as intl10 } from "_isNativeReflectConstruct";
-import { intl as intl11 } from "_isNativeReflectConstruct";
-import tmp17 from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_18 from "_isNativeReflectConstruct";
+import ME from "ME";
+import registerAsset from "registerAsset";
+import registerAsset from "registerAsset";
+import registerAsset from "registerAsset";
+import registerAsset from "registerAsset";
+import registerAsset from "registerAsset";
+import registerAsset from "registerAsset";
+import registerAsset from "registerAsset";
+import registerAsset from "registerAsset";
+import registerAsset from "registerAsset";
+import { intl } from "getSystemLocale";
+import { intl as intl2 } from "getSystemLocale";
+import { intl as intl3 } from "getSystemLocale";
+import { intl as intl4 } from "getSystemLocale";
+import { intl as intl5 } from "getSystemLocale";
+import { intl as intl6 } from "getSystemLocale";
+import { intl as intl7 } from "getSystemLocale";
+import { intl as intl8 } from "getSystemLocale";
+import { intl as intl9 } from "getSystemLocale";
+import { intl as intl10 } from "getSystemLocale";
+import { intl as intl11 } from "getSystemLocale";
+import tmp17 from "LifecycleManager";
 
+let closure_19;
+let closure_20;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -53,49 +55,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -106,16 +108,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -132,72 +134,72 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-({ AnalyticEvents: closure_19, Permissions: closure_20 } = _isNativeReflectConstruct);
-const items = [importDefaultResult2, importDefaultResult1, importDefaultResult];
+({ AnalyticEvents: closure_19, Permissions: closure_20 } = ME);
+let items = [importDefaultResult2, importDefaultResult1, importDefaultResult];
 let closure_22 = { DISABLED: 0, [0]: "DISABLED", NOT_SHOWING: 1, [1]: "NOT_SHOWING", WAITING_FOR_SERVICE: 2, [2]: "WAITING_FOR_SERVICE", SHOWING: 3, [3]: "SHOWING" };
-const obj = {};
-obj.useSpeaker = intl.string(require("_isNativeReflectConstruct").t.CVxXDM);
-obj.mute = intl2.string(require("_isNativeReflectConstruct").t.w4m945);
-obj.disconnectFromVoice = intl3.string(require("_isNativeReflectConstruct").t./lEZpt);
-obj.getInvite = intl4.string(require("_isNativeReflectConstruct").t.JYzIWe);
-obj.switchChannels = intl5.string(require("_isNativeReflectConstruct").t.zJvWqU);
-obj.openDiscord = intl6.string(require("_isNativeReflectConstruct").t.G/Ez6p);
-obj.inviteLinkCopied = intl7.string(require("_isNativeReflectConstruct").t.OhctG7);
-obj.channelSelect = intl8.string(require("_isNativeReflectConstruct").t.r2ptsz);
-obj.closeWindow = intl9.string(require("_isNativeReflectConstruct").t.gaifwY);
-obj.searchChannels = intl10.string(require("_isNativeReflectConstruct").t.wM7uRI);
-obj.noResults = intl11.string(require("_isNativeReflectConstruct").t.wk3qsA);
-let tmp15 = () => {
+let obj = {};
+obj.useSpeaker = intl.string(require("getSystemLocale").t.CVxXDM);
+obj.mute = intl2.string(require("getSystemLocale").t.w4m945);
+obj.disconnectFromVoice = intl3.string(require("getSystemLocale").t["/lEZpt"]);
+obj.getInvite = intl4.string(require("getSystemLocale").t.JYzIWe);
+obj.switchChannels = intl5.string(require("getSystemLocale").t.zJvWqU);
+obj.openDiscord = intl6.string(require("getSystemLocale").t["G/Ez6p"]);
+obj.inviteLinkCopied = intl7.string(require("getSystemLocale").t.OhctG7);
+obj.channelSelect = intl8.string(require("getSystemLocale").t.r2ptsz);
+obj.closeWindow = intl9.string(require("getSystemLocale").t.gaifwY);
+obj.searchChannels = intl10.string(require("getSystemLocale").t.wM7uRI);
+obj.noResults = intl11.string(require("getSystemLocale").t.wk3qsA);
+let tmp15 = (() => {
   class MobileVoiceOverlayManager {
     constructor() {
-      MobileVoiceOverlayManager = this;
-      tmp = _possibleConstructorReturn(this, MobileVoiceOverlayManager);
+      self = this;
+      tmp = outer1_6(this, self);
       this.currentVoiceChannelId = null;
       this.trashedVoiceChannelId = null;
-      this.overlayState = closure_22.DISABLED;
+      this.overlayState = outer1_22.DISABLED;
       this.channelSelectorResults = [];
       this.layoutTrashedSubscription = null;
       this.channelQueryUpdateSubscription = null;
       this.isBatchedBridgeInitialized = false;
       this.handleMobileVoiceOverlayStoreUpdate = () => {
-        if (enabled.getEnabled()) {
+        if (outer2_18.getEnabled()) {
           obj.handleOverlayEnable();
         } else {
           const result = obj.unsubscribeFromVoiceStateStoreUpdates();
           const result1 = obj.unsubscribeFromNativeEvents();
-          obj.overlayState = constants3.DISABLED;
+          obj.overlayState = outer2_22.DISABLED;
           if (obj.isOverlayShowing()) {
-            if (null != callback(closure_2[27])) {
-              callback(closure_2[27]).hideOverlay();
-              const obj2 = callback(closure_2[27]);
+            if (null != outer2_1(outer2_2[27])) {
+              outer2_1(outer2_2[27]).hideOverlay();
+              const obj2 = outer2_1(outer2_2[27]);
             }
           }
         }
       };
       this.handleOverlayEnable = () => {
         function handleEnableFail() {
-          callback(closure_2[28]).setEnabled(false);
-          handleEnableFail.overlayState = constants.DISABLED;
+          outer3_1(outer3_2[28]).setEnabled(false);
+          handleEnableFail.overlayState = outer3_22.DISABLED;
         }
-        if (null != callback(closure_2[27])) {
-          const obj = callback(closure_2[27]);
-          const enableOverlayResult = callback(closure_2[27]).enableOverlay();
-          callback(closure_2[27]).enableOverlay().then((arg0) => {
+        if (null != outer2_1(outer2_2[27])) {
+          const obj = outer2_1(outer2_2[27]);
+          const enableOverlayResult = outer2_1(outer2_2[27]).enableOverlay();
+          outer2_1(outer2_2[27]).enableOverlay().then((arg0) => {
             if (arg0) {
               const result = handleEnableFail.subscribeToVoiceStateStoreUpdates();
               const result1 = handleEnableFail.subscribeToNativeEvents();
-              handleEnableFail.overlayState = constants.NOT_SHOWING;
+              handleEnableFail.overlayState = outer3_22.NOT_SHOWING;
             } else {
               handleEnableFail();
             }
           }).catch(() => {
             handleEnableFail();
           });
-          const nextPromise = callback(closure_2[27]).enableOverlay().then((arg0) => {
+          const nextPromise = outer2_1(outer2_2[27]).enableOverlay().then((arg0) => {
             if (arg0) {
               const result = handleEnableFail.subscribeToVoiceStateStoreUpdates();
               const result1 = handleEnableFail.subscribeToNativeEvents();
-              handleEnableFail.overlayState = constants.NOT_SHOWING;
+              handleEnableFail.overlayState = outer3_22.NOT_SHOWING;
             } else {
               handleEnableFail();
             }
@@ -206,25 +208,25 @@ let tmp15 = () => {
       };
       this.subscribeToVoiceStateStoreUpdates = () => {
         if (!self.isSubscribedToVoiceStateStoreUpdates()) {
-          const item = closure_21.forEach((addChangeListener) => {
-            addChangeListener.addChangeListener(obj.handleOverlayUIStoreUpdate);
+          const item = outer2_21.forEach((addChangeListener) => {
+            addChangeListener.addChangeListener(outer1_0.handleOverlayUIStoreUpdate);
           });
         }
       };
       this.unsubscribeFromVoiceStateStoreUpdates = () => {
         if (self.isSubscribedToVoiceStateStoreUpdates()) {
-          const item = closure_21.forEach((removeChangeListener) => {
-            removeChangeListener.removeChangeListener(obj.handleOverlayUIStoreUpdate);
+          const item = outer2_21.forEach((removeChangeListener) => {
+            removeChangeListener.removeChangeListener(outer1_0.handleOverlayUIStoreUpdate);
           });
         }
       };
-      this.isSubscribedToVoiceStateStoreUpdates = () => null != closure_21.find((_changeCallbacks) => _changeCallbacks._changeCallbacks.has(obj.handleOverlayUIStoreUpdate));
+      this.isSubscribedToVoiceStateStoreUpdates = () => null != outer2_21.find((_changeCallbacks) => _changeCallbacks._changeCallbacks.has(outer1_0.handleOverlayUIStoreUpdate));
       this.subscribeToNativeEvents = () => {
         if (obj.isFabric()) {
-          self.layoutTrashedSubscription = callback(closure_2[27]).onLayoutTrashed(self.handleLayoutTrashed);
-          const obj2 = callback(closure_2[27]);
-          self.channelQueryUpdateSubscription = callback(closure_2[27]).onChannelQueryUpdate(self.handleChannelQueryUpdate);
-          const obj3 = callback(closure_2[27]);
+          self.layoutTrashedSubscription = outer2_1(outer2_2[27]).onLayoutTrashed(self.handleLayoutTrashed);
+          const obj2 = outer2_1(outer2_2[27]);
+          self.channelQueryUpdateSubscription = outer2_1(outer2_2[27]).onChannelQueryUpdate(self.handleChannelQueryUpdate);
+          const obj3 = outer2_1(outer2_2[27]);
         }
       };
       this.unsubscribeFromNativeEvents = () => {
@@ -240,7 +242,7 @@ let tmp15 = () => {
         }
       };
       this.handleOverlayUIStoreUpdate = () => {
-        if (self.overlayState !== constants3.DISABLED) {
+        if (self.overlayState !== outer2_22.DISABLED) {
           const currentVoiceChannelId = self.getVoiceConnectedGuildAndChannel().currentVoiceChannelId;
           if (currentVoiceChannelId !== self.currentVoiceChannelId) {
             self.currentVoiceChannelId = currentVoiceChannelId;
@@ -249,17 +251,17 @@ let tmp15 = () => {
           if (null != currentVoiceChannelId) {
             if (currentVoiceChannelId !== self.trashedVoiceChannelId) {
               const overlayState = self.overlayState;
-              if (constants3.WAITING_FOR_SERVICE !== overlayState) {
-                if (constants3.NOT_SHOWING === overlayState) {
-                  const result = callback(closure_2[30]).isForegroundServiceRunning((arg0) => {
+              if (outer2_22.WAITING_FOR_SERVICE !== overlayState) {
+                if (outer2_22.NOT_SHOWING === overlayState) {
+                  const result = outer2_1(outer2_2[30]).isForegroundServiceRunning((arg0) => {
                     if (arg0) {
                       obj.showOverlay();
                     } else {
-                      obj.overlayState = constants.NOT_SHOWING;
+                      obj.overlayState = outer3_22.NOT_SHOWING;
                     }
                   });
-                  self.overlayState = constants3.WAITING_FOR_SERVICE;
-                } else if (constants3.SHOWING === overlayState) {
+                  self.overlayState = outer2_22.WAITING_FOR_SERVICE;
+                } else if (outer2_22.SHOWING === overlayState) {
                   self.updateOverlayUI();
                 } else {
                   const overlayState2 = self.overlayState;
@@ -275,7 +277,7 @@ let tmp15 = () => {
       this.updateOverlayUI = () => {
         let currentGuildId;
         let currentVoiceChannelId;
-        const currentUser = authStore.getCurrentUser();
+        const currentUser = outer2_16.getCurrentUser();
         let id;
         if (null != currentUser) {
           id = currentUser.id;
@@ -283,16 +285,16 @@ let tmp15 = () => {
         if (null != id) {
           const voiceConnectedGuildAndChannel = self.getVoiceConnectedGuildAndChannel();
           ({ currentGuildId, currentVoiceChannelId } = voiceConnectedGuildAndChannel);
-          const channel = store.getChannel(currentVoiceChannelId);
+          const channel = outer2_8.getChannel(currentVoiceChannelId);
           if (null != currentVoiceChannelId) {
             if (null != channel) {
               const overlayUser = self.getOverlayUser(id);
               if (null != overlayUser) {
                 const _Object = Object;
-                const keys = Object.keys(voiceStatesForChannel.getVoiceStatesForChannel(currentVoiceChannelId));
+                const keys = Object.keys(outer2_17.getVoiceStatesForChannel(currentVoiceChannelId));
                 let tmp5 = overlayUser;
                 if (!overlayUser.speaking) {
-                  const tmp4 = callback2(keys);
+                  const tmp4 = outer2_27(keys);
                   let iter = tmp4();
                   tmp5 = null;
                   if (!iter.done) {
@@ -352,20 +354,20 @@ let tmp15 = () => {
                       }
                     }
                     num = num + 1;
-                    let tmp9 = tmp11;
+                    tmp9 = tmp11;
                     if (num >= keys.length) {
                       break;
                     }
                   }
                 }
-                if (self.overlayState !== constants3.SHOWING) {
+                if (self.overlayState !== outer2_22.SHOWING) {
                   const result = self.refreshChannelSelectorResults("");
                 }
                 self.currentVoiceChannelId = currentVoiceChannelId;
-                if (null != callback(closure_2[27])) {
-                  let obj = callback(closure_2[27]);
-                  obj = { users: items, channelName: self(closure_2[31]).computeChannelName(channel, authStore, getSoundboardSoundURL) };
-                  const guild = guild.getGuild(currentGuildId);
+                if (null != outer2_1(outer2_2[27])) {
+                  let obj = outer2_1(outer2_2[27]);
+                  obj = { users: items, channelName: MobileVoiceOverlayManager(outer2_2[31]).computeChannelName(channel, outer2_16, outer2_14) };
+                  const guild = outer2_10.getGuild(currentGuildId);
                   let name;
                   if (null != guild) {
                     name = guild.name;
@@ -378,13 +380,13 @@ let tmp15 = () => {
                   obj.guildId = currentGuildId;
                   obj.channelId = currentVoiceChannelId;
                   obj.extraUsers = keys.length - items.length;
-                  obj.deafened = closure_11.isSelfDeaf();
-                  obj.muted = closure_11.isSelfMute();
-                  obj.connectionQuality = store2.getQuality();
-                  obj.canGenerateInvite = timestamp.can(constants2.CREATE_INSTANT_INVITE, channel);
+                  obj.deafened = outer2_11.isSelfDeaf();
+                  obj.muted = outer2_11.isSelfMute();
+                  obj.connectionQuality = outer2_13.getQuality();
+                  obj.canGenerateInvite = outer2_12.can(outer2_20.CREATE_INSTANT_INVITE, channel);
                   obj.channelSelectorResults = self.channelSelectorResults;
                   obj.setData(obj);
-                  const obj3 = self(closure_2[31]);
+                  const obj3 = MobileVoiceOverlayManager(outer2_2[31]);
                 }
               }
             }
@@ -393,13 +395,13 @@ let tmp15 = () => {
       };
       this.getVoiceConnectedGuildAndChannel = () => {
         const obj = {};
-        const guildId = store2.getGuildId();
+        const guildId = outer2_13.getGuildId();
         let tmp2 = null;
         if (null != guildId) {
           tmp2 = guildId;
         }
         obj.currentGuildId = tmp2;
-        const channelId = store2.getChannelId();
+        const channelId = outer2_13.getChannelId();
         let tmp4 = null;
         if (null != channelId) {
           tmp4 = channelId;
@@ -412,22 +414,22 @@ let tmp15 = () => {
         if (0 === query.length) {
           currentGuildId = self.getVoiceConnectedGuildAndChannel().currentGuildId;
         }
-        let obj = callback(closure_2[32]);
+        let obj = outer2_1(outer2_2[32]);
         obj = {
           query,
           guildId: currentGuildId,
           limit: 15,
           fuzzy: true,
           filter(id) {
-            return id.id !== lib.currentVoiceChannelId && !id.isGuildStageVoice();
+            return id.id !== outer1_0.currentVoiceChannelId && !id.isGuildStageVoice();
           },
-          type: closure_9,
+          type: outer2_9,
           allowEmptyQueries: true
         };
         self.channelSelectorResults = obj.queryChannels(obj).map((record) => {
           record = record.record;
-          const obj = { channelId: record.id, guildId: record.guild_id, channelName: lib(closure_2[31]).computeChannelName(record, _fetchDefaultSoundsFromApi2, getSoundboardSoundURL) };
-          const guild = guild.getGuild(record.guild_id);
+          const obj = { channelId: record.id, guildId: record.guild_id, channelName: MobileVoiceOverlayManager(outer3_2[31]).computeChannelName(record, outer3_16, outer3_14) };
+          const guild = outer3_10.getGuild(record.guild_id);
           let name;
           if (null != guild) {
             name = guild.name;
@@ -438,10 +440,10 @@ let tmp15 = () => {
             str2 = name;
           }
           obj.guildName = str2;
-          const channel = channel.getChannel(record.parent_id);
+          const channel = outer3_8.getChannel(record.parent_id);
           if (null != channel) {
-            str = lib(closure_2[31]).computeChannelName(channel, _fetchDefaultSoundsFromApi2, getSoundboardSoundURL);
-            const obj3 = lib(closure_2[31]);
+            str = MobileVoiceOverlayManager(outer3_2[31]).computeChannelName(channel, outer3_16, outer3_14);
+            const obj3 = MobileVoiceOverlayManager(outer3_2[31]);
           }
           obj.categoryName = str;
           return obj;
@@ -449,45 +451,45 @@ let tmp15 = () => {
       };
       this.showOverlay = () => {
         const voiceConnectedGuildAndChannel = self.getVoiceConnectedGuildAndChannel();
-        const channel = store.getChannel(voiceConnectedGuildAndChannel.currentVoiceChannelId);
-        const rTCConnectionId = store2.getRTCConnectionId();
-        let obj = callback(closure_2[33]);
+        const channel = outer2_8.getChannel(voiceConnectedGuildAndChannel.currentVoiceChannelId);
+        const rTCConnectionId = outer2_13.getRTCConnectionId();
+        let obj = outer2_1(outer2_2[33]);
         obj = { type: "voice", rtc_connection_id: rTCConnectionId };
-        const merged = Object.assign(self(closure_2[34]).collectChannelAnalyticsMetadata(channel));
-        const obj3 = self(closure_2[34]);
-        const merged1 = Object.assign(self(closure_2[34]).collectGuildAnalyticsMetadata(voiceConnectedGuildAndChannel.currentGuildId));
-        obj.track(constants.MOBILE_OVERLAY_OPENED, obj);
-        if (null != callback(closure_2[27])) {
-          callback(closure_2[27]).showOverlay(closure_23);
-          const obj5 = callback(closure_2[27]);
+        const merged = Object.assign(MobileVoiceOverlayManager(outer2_2[34]).collectChannelAnalyticsMetadata(channel));
+        const obj3 = MobileVoiceOverlayManager(outer2_2[34]);
+        const merged1 = Object.assign(MobileVoiceOverlayManager(outer2_2[34]).collectGuildAnalyticsMetadata(voiceConnectedGuildAndChannel.currentGuildId));
+        obj.track(outer2_19.MOBILE_OVERLAY_OPENED, obj);
+        if (null != outer2_1(outer2_2[27])) {
+          outer2_1(outer2_2[27]).showOverlay(outer2_23);
+          const obj5 = outer2_1(outer2_2[27]);
         }
         self.updateOverlayUI();
-        self.overlayState = constants3.SHOWING;
+        self.overlayState = outer2_22.SHOWING;
       };
       this.hideOverlay = () => {
-        const rTCConnectionId = store2.getRTCConnectionId();
-        callback(closure_2[33]).track(constants.MOBILE_OVERLAY_CLOSED, { type: "voice", rtc_connection_id: rTCConnectionId });
-        const obj = callback(closure_2[33]);
-        callback(closure_2[33]).track(constants.MOBILE_OVERLAY_CLOSED, {});
-        if (null != callback(closure_2[27])) {
-          callback(closure_2[27]).hideOverlay();
-          const obj3 = callback(closure_2[27]);
+        const rTCConnectionId = outer2_13.getRTCConnectionId();
+        outer2_1(outer2_2[33]).track(outer2_19.MOBILE_OVERLAY_CLOSED, { type: "voice", rtc_connection_id: rTCConnectionId });
+        const obj = outer2_1(outer2_2[33]);
+        outer2_1(outer2_2[33]).track(outer2_19.MOBILE_OVERLAY_CLOSED, {});
+        if (null != outer2_1(outer2_2[27])) {
+          outer2_1(outer2_2[27]).hideOverlay();
+          const obj3 = outer2_1(outer2_2[27]);
         }
-        self.overlayState = constants3.NOT_SHOWING;
+        self.overlayState = outer2_22.NOT_SHOWING;
       };
       this.isOverlayShowing = () => {
-        let tmp = self.overlayState === constants3.SHOWING;
+        let tmp = self.overlayState === outer2_22.SHOWING;
         if (!tmp) {
-          tmp = self.overlayState === constants3.WAITING_FOR_SERVICE;
+          tmp = self.overlayState === outer2_22.WAITING_FOR_SERVICE;
         }
         return tmp;
       };
       this.getOverlayUser = (userId) => {
-        const user = authStore.getUser(userId);
+        const user = outer2_16.getUser(userId);
         if (null == user) {
           return null;
         } else {
-          const obj = { userId, avatar: user.avatar, speaking: speaking.isSpeaking(userId), discriminator: user.discriminator };
+          const obj = { userId, avatar: user.avatar, speaking: outer2_15.isSpeaking(userId), discriminator: user.discriminator };
           return obj;
         }
       };
@@ -502,47 +504,46 @@ let tmp15 = () => {
       return;
     }
   }
-  const arg1 = MobileVoiceOverlayManager;
   let obj = {
     key: "initialize",
     value() {
       const self = this;
-      const obj = MobileVoiceOverlayManager(closure_2[29]);
+      const obj = MobileVoiceOverlayManager(outer1_2[29]);
       if (!tmp) {
-        const prototype = ctor.prototype;
-        const tmp8 = new ctor(self);
-        const result = callback(closure_2[35]).registerCallableModule("MobileVoiceOverlayManager", tmp8);
+        const prototype = outer1_25.prototype;
+        const tmp8 = new outer1_25(self);
+        const result = outer1_1(outer1_2[35]).registerCallableModule("MobileVoiceOverlayManager", tmp8);
         self.isBatchedBridgeInitialized = true;
-        const obj2 = callback(closure_2[35]);
+        const obj2 = outer1_1(outer1_2[35]);
       }
-      if (closure_18.getEnabled()) {
+      if (outer1_18.getEnabled()) {
         self.handleOverlayEnable();
       }
-      closure_18.addChangeListener(self.handleMobileVoiceOverlayStoreUpdate);
+      outer1_18.addChangeListener(self.handleMobileVoiceOverlayStoreUpdate);
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "terminate",
     value() {
-      closure_18.removeChangeListener(this.handleMobileVoiceOverlayStoreUpdate);
+      outer1_18.removeChangeListener(this.handleMobileVoiceOverlayStoreUpdate);
       const result = this.unsubscribeFromVoiceStateStoreUpdates();
       const result1 = this.unsubscribeFromNativeEvents();
     }
   };
   items[1] = obj;
   return callback2(MobileVoiceOverlayManager, items);
-}();
+})();
 tmp15 = new tmp15();
-let closure_25 = () => {
+let closure_24 = tmp15;
+let closure_25 = (() => {
   class NativeCallableInterface {
     constructor(arg0) {
-      tmp = _possibleConstructorReturn(this, NativeCallableInterface);
+      tmp = outer1_6(this, NativeCallableInterface);
       this.manager = arg0;
       return;
     }
   }
-  const arg1 = NativeCallableInterface;
   let obj = {
     key: "onLayoutTrashed",
     value() {
@@ -560,8 +561,8 @@ let closure_25 = () => {
   };
   items[1] = obj;
   return callback2(NativeCallableInterface, items);
-}();
+})();
 tmp17 = new tmp17();
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/voice_overlay/native/MobileVoiceOverlayLifecycleManager.android.tsx");
+let result = require("_inherits").fileFinishedImporting("modules/voice_overlay/native/MobileVoiceOverlayLifecycleManager.android.tsx");
 
 export default tmp17;

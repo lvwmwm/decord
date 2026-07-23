@@ -1,53 +1,61 @@
-// Module ID: 8448
-// Function ID: 67404
+// Module ID: 8454
+// Function ID: 67441
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 1907, 1838, 3758, 653, 566, 8402, 2]
 // Exports: default
 
-// Module 8448 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8454 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GUILD_VOCAL_CHANNELS_KEY } from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_6 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,40 +92,34 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const GUILD_VOCAL_CHANNELS_KEY = arg1(dependencyMap[1]).GUILD_VOCAL_CHANNELS_KEY;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const Permissions = arg1(dependencyMap[4]).Permissions;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_scheduled_events/useCanCreateAnEvent.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_scheduled_events/useCanCreateAnEvent.tsx");
 
 export default function useCanCreateAnEvent(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_5, closure_3, closure_6];
+  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct, closure_6];
   const items1 = [arg0, arg1];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
-    if (!closure_6.can(constants.ADMINISTRATOR, guild)) {
-      if (!closure_6.can(constants.CREATE_EVENTS, guild)) {
-        const tmp8 = callback2(channels.getChannels(arg0)[closure_4]);
+  return _require(566).useStateFromStores(items, () => {
+    const guild = outer1_5.getGuild(callback);
+    if (!outer1_6.can(outer1_7.ADMINISTRATOR, guild)) {
+      if (!outer1_6.can(outer1_7.CREATE_EVENTS, guild)) {
+        const tmp8 = outer1_8(outer1_3.getChannels(callback)[outer1_4]);
         let iter = tmp8();
         if (!iter.done) {
           while (true) {
             let channel = iter.value.channel;
-            let tmp10 = arg1;
-            if (null == arg1) {
-              let tmp12 = arg0;
-              let tmp13 = arg1;
-              let obj = arg0(arg1[6]);
-              let tmp14 = callback;
-              let tmp15 = closure_6;
-              if (closure_6.can(callback(obj.attachChannelPermissions(channel), 1)[0], channel)) {
+            let tmp10 = table;
+            if (null == table) {
+              let tmp12 = callback;
+              let tmp13 = table;
+              let obj = callback(table[6]);
+              let tmp14 = outer1_2;
+              let tmp15 = outer1_6;
+              if (outer1_6.can(outer1_2(obj.attachChannelPermissions(channel), 1)[0], channel)) {
                 break;
               }
             } else {
-              let tmp11 = arg1;
+              let tmp11 = table;
             }
             let iter2 = tmp8();
             iter = iter2;

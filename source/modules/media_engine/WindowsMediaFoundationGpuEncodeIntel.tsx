@@ -1,14 +1,15 @@
-// Module ID: 12708
-// Function ID: 97496
+// Module ID: 12822
+// Function ID: 99652
 // Name: getWmfGpuEncodeIntel
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getWmfGpuEncodeIntel
 
-// Module 12708 (getWmfGpuEncodeIntel)
-const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/WindowsMediaFoundationGpuEncodeIntel.tsx");
+// Module 12822 (getWmfGpuEncodeIntel)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-01-wmf-gpu-encode-intel", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/WindowsMediaFoundationGpuEncodeIntel.tsx");
 
 export const getWmfGpuEncodeIntel = function getWmfGpuEncodeIntel(MediaEngineStore) {
   return config.getConfig({ location: MediaEngineStore });

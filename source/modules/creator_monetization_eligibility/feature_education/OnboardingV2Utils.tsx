@@ -1,29 +1,28 @@
-// Module ID: 14959
-// Function ID: 112580
+// Module ID: 15075
+// Function ID: 114748
 // Name: items
-// Dependencies: []
+// Dependencies: [1391, 1838, 1849, 653, 566, 5641, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 14959 (items)
-const isGuildOwner = require(dependencyMap[0]).isGuildOwner;
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const items = [, , , , ];
-({ CREATOR_MONETIZABLE_PROVISIONAL: arr[0], CREATOR_MONETIZABLE: arr[1], CREATOR_MONETIZABLE_WHITEGLOVE: arr[2], CREATOR_MONETIZABLE_DISABLED: arr[3], CREATOR_MONETIZABLE_RESTRICTED: arr[4] } = require(dependencyMap[3]).GuildFeatures);
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/creator_monetization_eligibility/feature_education/OnboardingV2Utils.tsx");
+// Module 15075 (items)
+import { isGuildOwner } from "isGuildOwner";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let items = [, , , , ];
+({ CREATOR_MONETIZABLE_PROVISIONAL: arr[0], CREATOR_MONETIZABLE: arr[1], CREATOR_MONETIZABLE_WHITEGLOVE: arr[2], CREATOR_MONETIZABLE_DISABLED: arr[3], CREATOR_MONETIZABLE_RESTRICTED: arr[4] } = require("ME").GuildFeatures);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/creator_monetization_eligibility/feature_education/OnboardingV2Utils.tsx");
 
 export const useCanSeeCreatorMonetizationOnboardingV2Upsell = function useCanSeeCreatorMonetizationOnboardingV2Upsell(id) {
-  const require = id;
-  const items = [closure_3];
-  const stateFromStores = require(dependencyMap[4]).useStateFromStores(items, () => guild.getGuild(arg0));
-  const dependencyMap = stateFromStores;
-  const obj = require(dependencyMap[4]);
-  const items1 = [closure_4];
-  const stateFromStores1 = require(dependencyMap[4]).useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const obj2 = require(dependencyMap[4]);
-  const guildRoleSubscriptionSettingsVisibility = require(dependencyMap[5]).useGuildRoleSubscriptionSettingsVisibility(stateFromStores);
-  let tmp4 = guildRoleSubscriptionSettingsVisibility === require(dependencyMap[5]).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
+  const _require = id;
+  const items = [_createForOfIteratorHelperLoose];
+  stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => outer1_3.getGuild(closure_0));
+  const obj = _require(stateFromStores[4]);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = _require(stateFromStores[4]).useStateFromStores(items1, () => outer1_4.getCurrentUser());
+  const obj2 = _require(stateFromStores[4]);
+  const guildRoleSubscriptionSettingsVisibility = _require(stateFromStores[5]).useGuildRoleSubscriptionSettingsVisibility(stateFromStores);
+  let tmp4 = guildRoleSubscriptionSettingsVisibility === _require(stateFromStores[5]).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
   if (null == stateFromStores) {
     return false;
   } else {
@@ -36,21 +35,20 @@ export const useCanSeeCreatorMonetizationOnboardingV2Upsell = function useCanSee
     }
     return tmp4;
   }
-  const obj3 = require(dependencyMap[5]);
+  const obj3 = _require(stateFromStores[5]);
 };
 export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreatorMonetizationOnboardingV2Upsell(guildId) {
-  const guild = guild.getGuild(guildId);
-  const require = guild;
+  guild = guild.getGuild(guildId);
   if (null == guild) {
     return false;
   } else {
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     if (null == currentUser) {
       return false;
     } else {
-      const guildRoleSubscriptionSettingsVisibility = require(dependencyMap[5]).getGuildRoleSubscriptionSettingsVisibility(guild);
-      let tmp5 = guildRoleSubscriptionSettingsVisibility === require(dependencyMap[5]).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
-      const obj = require(dependencyMap[5]);
+      const guildRoleSubscriptionSettingsVisibility = guild(5641).getGuildRoleSubscriptionSettingsVisibility(guild);
+      let tmp5 = guildRoleSubscriptionSettingsVisibility === guild(5641).GuildRoleSubscriptionSettingsVisibility.VISIBLE;
+      const obj = guild(5641);
       const tmp7 = isGuildOwner(guild, currentUser);
       if (tmp5) {
         tmp5 = tmp7;

@@ -1,9 +1,24 @@
-// Module ID: 16033
-// Function ID: 123030
+// Module ID: 16150
+// Function ID: 125203
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 3823, 6769, 13770, 6770, 653, 13771, 4098, 16151, 1934, 16153, 5078, 2]
 
-// Module 16033 (_isNativeReflectConstruct)
+// Module 16150 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import items from "items";
+import { AppStates } from "ME";
+import tmp3 from "AutomaticLifecycleManager";
+
+let closure_11;
+let closure_12;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,9 +30,9 @@ function _isNativeReflectConstruct() {
 }
 function hasActiveParentLink(arr) {
   return arr.some((link_status) => {
-    let tmp = link_status.link_status === constants.ACTIVE;
+    let tmp = link_status.link_status === outer1_11.ACTIVE;
     if (tmp) {
-      tmp = link_status.link_type === constants2.PARENT;
+      tmp = link_status.link_type === outer1_12.PARENT;
     }
     return tmp;
   });
@@ -31,7 +46,7 @@ function maybePresentModal(warning) {
   if (null != warning) {
     const surfaces = warning.surfaces;
     if (null != surfaces) {
-      hasItem = surfaces.includes(arg1(dependencyMap[10]).ParentalConsentWarningSurface.MODAL);
+      hasItem = surfaces.includes(require(13771) /* frozen */.ParentalConsentWarningSurface.MODAL);
     }
   }
   let tmp5 = true === hasItem && null != daysRemaining;
@@ -49,9 +64,9 @@ function maybePresentModal(warning) {
     tmp5 = !open.isOpen();
   }
   if (tmp5) {
-    let obj = importDefault(dependencyMap[11]);
+    let obj = importDefault(4098);
     obj = { daysRemaining };
-    obj.openLazy(arg1(dependencyMap[13])(dependencyMap[12], dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    obj.openLazy(require(1934) /* maybeLoadBundle */(16151, dependencyMap.paths), "ParentalConsentWarningModal", obj);
   }
 }
 function maybePresentFromCache() {
@@ -59,90 +74,8 @@ function maybePresentFromCache() {
     maybePresentModal(closure_10.getWarning());
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-({ UserLinkStatus: closure_11, UserLinkType: closure_12 } = arg1(dependencyMap[8]));
-const AppStates = arg1(dependencyMap[9]).AppStates;
-let tmp3 = (arg0) => {
-  class ParentalConsentWarningManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_4(this, ParentalConsentWarningManager);
-      items1 = [...items];
-      obj = closure_6(ParentalConsentWarningManager);
-      tmp2 = closure_5;
-      if (closure_15()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.actions = {
-        PARENTAL_CONSENT_WARNING_FETCH_SUCCESS(warning) {
-              callback3(warning.warning);
-            },
-        POST_CONNECTION_OPEN() {
-              let closure_14 = callback2(Object.values(linkedUsers.getLinkedUsers()));
-              callback(closure_2[14]).maybeFetchWarning();
-              callback4();
-            },
-        APP_STATE_UPDATE(state) {
-              if (state.state === constants.ACTIVE) {
-                callback(closure_2[14]).maybeFetchWarning();
-                callback4();
-                const obj = callback(closure_2[14]);
-              }
-            },
-        CURRENT_USER_UPDATE(user) {
-              user = user.user;
-              if (undefined !== user.linked_users) {
-                const tmp15 = callback2(user.linked_users);
-                if (tmp) {
-                  if (tmp15) {
-                    const warning = warning.getWarning();
-                    let hasItem;
-                    if (null != warning) {
-                      const surfaces = warning.surfaces;
-                      if (null != surfaces) {
-                        hasItem = surfaces.includes(callback(closure_2[10]).ParentalConsentWarningSurface.BANNER);
-                      }
-                    }
-                    if (true === hasItem) {
-                      callback(closure_2[14]).forceFetchWarning();
-                      const obj2 = callback(closure_2[14]);
-                    }
-                  } else {
-                    callback(closure_2[14]).forceFetchWarning();
-                    const obj = callback(closure_2[14]);
-                  }
-                }
-                const tmp = undefined !== tmp15 && tmp15 !== tmp15;
-              }
-            },
-        LOGOUT() {
-              let closure_14;
-              callback(closure_2[14]).resetFetchState();
-            }
-      };
-      return tmp2Result;
-    }
-  }
-  const arg1 = ParentalConsentWarningManager;
-  callback2(ParentalConsentWarningManager, arg0);
-  return callback(ParentalConsentWarningManager);
-}(importDefault(dependencyMap[15]));
+({ UserLinkStatus: closure_11, UserLinkType: closure_12 } = items);
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningManager.tsx");
 
 export default tmp3;

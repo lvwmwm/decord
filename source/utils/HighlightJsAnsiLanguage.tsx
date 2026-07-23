@@ -1,53 +1,53 @@
-// Module ID: 4123
-// Function ID: 34304
+// Module ID: 4125
+// Function ID: 34313
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 4123 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4125 (_createForOfIteratorHelperLoose)
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -60,14 +60,14 @@ function _createForOfIteratorHelperLoose(@@iterator) {
     if (tmp) {
       closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,35 +84,36 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-function makeAnsiRuleCategory(arg0, arg1, arg2, arg3) {
-  let closure_0 = arg0;
-  const items = [-1140850158];
+function makeAnsiRuleCategory(background, closure_0, arg2, arg3) {
+  closure_0 = background;
+  const items = ["0"];
   HermesBuiltin.arraySpread(arg2, 1);
-  let closure_1 = items;
   if (arg3) {
     const push = items.push;
     const _Object = Object;
     const items1 = [];
-    HermesBuiltin.arraySpread(Object.keys(arg1), 0);
+    HermesBuiltin.arraySpread(Object.keys(closure_0), 0);
     HermesBuiltin.apply(items1, items);
   }
-  const entries = Object.entries(arg1);
+  const entries = Object.entries(closure_0);
   return entries.map((arg0) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = arg0;
-    return function makeAnsiRule(arg0, arg1, arg2, items) {
+    return (function makeAnsiRule(closure_0, arg1, arg2, items) {
+      closure_0 = arg2;
+      let closure_1 = items;
       return {
-        className: "ansi-" + arg0 + "-" + arg1,
+        className: "ansi-" + closure_0 + "-" + arg1,
         endsParent: true,
-        begin: closure_4,
+        begin: outer2_4,
         (arg0, data) => {
           let iter2;
           const parts = arg0[1].split(";");
           if (undefined === data.data.isOn) {
             data.data.isOn = false;
           }
-          const tmp2 = callback(parts);
+          const tmp2 = outer3_5(parts);
           let iter = tmp2();
           if (!iter.done) {
             do {
@@ -121,8 +122,8 @@ function makeAnsiRuleCategory(arg0, arg1, arg2, arg3) {
               if (value === closure_0) {
                 data.data.isOn = true;
               } else {
-                let tmp4 = closure_1;
-                if (closure_1.includes(value)) {
+                let tmp4 = items;
+                if (items.includes(value)) {
                   data.data.isOn = false;
                 }
               }
@@ -135,22 +136,22 @@ function makeAnsiRuleCategory(arg0, arg1, arg2, arg3) {
           }
         }
       };
-    }(arg0, tmp2, tmp, items);
+    })(closure_0, tmp2, tmp, items);
   });
 }
-let closure_0 = { "Bool(true)": "<string:1358955197>", "Bool(true)": "<string:1931543558>" };
-let closure_1 = { "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null, "Bool(true)": null };
-let closure_2 = { 792434375: null, 79248961: null, 1227707392: null, -2105366619: null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
-const tmp2 = /\x1B\[(\d+(?:[:;]\d+)*)m/;
+let closure_0 = { 1: "bold", 4: "underline" };
+let closure_1 = { 30: "black", 31: "red", 32: "green", 33: "yellow", 34: "blue", 35: "magenta", 36: "cyan", 37: "white" };
+let closure_2 = { 40: "black", 41: "red", 42: "green", 43: "yellow", 44: "blue", 45: "magenta", 46: "cyan", 47: "white" };
+let tmp2 = /\x1B\[(\d+(?:[:;]\d+)*)m/;
+let closure_3 = tmp2;
 const regExp = new RegExp("(?=" + tmp2.source + ")");
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/HighlightJsAnsiLanguage.tsx");
+const result = require("set").fileFinishedImporting("utils/HighlightJsAnsiLanguage.tsx");
 
 export default function highlightJsAnsiLanguage() {
   let length;
-  const items = [...closure_7("foreground", closure_1, [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003770625841432059, 1410880087704264000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000], true), ...closure_7("background", closure_2, [null, null], true), ...closure_7("style", closure_0, [], false), obj];
+  const items = [...makeAnsiRuleCategory("foreground", closure_1, ["38", "39"], true), ...makeAnsiRuleCategory("background", closure_2, ["48", "49"], true), ...makeAnsiRuleCategory("style", closure_0, [], false), obj];
   let num = 0;
-  let obj = { className: "ansi-control-sequence", begin: tmp2, starts: obj };
+  obj = { className: "ansi-control-sequence", begin: closure_3, starts: obj };
   obj = { end: regExp, endsParent: true };
   if (0 < items.length) {
     do {

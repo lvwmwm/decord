@@ -1,35 +1,36 @@
-// Module ID: 10257
-// Function ID: 79271
+// Module ID: 10269
+// Function ID: 79339
 // Name: Timestamp
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 10270, 1273, 3831, 2]
 // Exports: default
 
-// Module 10257 (Timestamp)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { color: importDefault(dependencyMap[3]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[3]).colors.BORDER_SUBTLE };
-obj.timestamp = obj;
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/markup/Timestamp.native.tsx");
+// Module 10269 (Timestamp)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.timestamp = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/markup/Timestamp.native.tsx");
 
 export default function Timestamp(node) {
   node = node.node;
-  const arg1 = node;
   let style = node.style;
-  const tmp = callback();
-  const obj = {};
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = {};
   const timestamp = tmp.timestamp;
   if (null != timestamp) {
     style = timestamp;
   }
   obj.style = style;
   obj.onPress = function onPress() {
-    let obj = callback(closure_2[6]);
+    let obj = outer1_1(outer1_2[6]);
     obj = { key: "TIMESTAMP", content: node.full };
     obj.open(obj);
   };
-  obj.children = importDefault(dependencyMap[4])(node);
-  return jsx(arg1(dependencyMap[5]).LegacyText, obj);
+  obj.children = importDefault(10270)(node);
+  return jsx(node(1273).LegacyText, {});
 };

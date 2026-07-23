@@ -1,13 +1,13 @@
-// Module ID: 6303
-// Function ID: 50387
+// Module ID: 6308
+// Function ID: 50416
 // Name: MushroomSpotIllustration
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 6309, 2]
 // Exports: MushroomSpotIllustration
 
-// Module 6303 (MushroomSpotIllustration)
-import { jsx } from "__exportStarResult1";
+// Module 6308 (MushroomSpotIllustration)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MushroomSpotIllustration.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MushroomSpotIllustration.native.tsx");
 
 export const MushroomSpotIllustration = function MushroomSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const MushroomSpotIllustration = function MushroomSpotIllustration(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6309) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const MushroomSpotIllustration = function MushroomSpotIllustration(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

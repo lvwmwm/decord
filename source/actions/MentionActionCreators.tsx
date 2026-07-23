@@ -1,12 +1,14 @@
-// Module ID: 15019
-// Function ID: 113074
-// Dependencies: []
+// Module ID: 15135
+// Function ID: 115244
+// Dependencies: [653, 686, 507, 2]
 
-// Module 15019
-const _module = require(dependencyMap[0]);
-({ Endpoints: closure_3, MAX_MENTIONS_PER_FETCH: closure_4 } = _module);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("actions/MentionActionCreators.tsx");
+// Module 15135
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+({ Endpoints: closure_3, MAX_MENTIONS_PER_FETCH: closure_4 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/MentionActionCreators.tsx");
 
 export default {
   setGuildFilter(arg0) {
@@ -14,19 +16,18 @@ export default {
     let guildFilter;
     let roleFilter;
     ({ guildFilter, roleFilter, everyoneFilter } = arg0);
-    importDefault(dependencyMap[1]).dispatch({ type: "SET_RECENT_MENTIONS_FILTER", guildFilter, roleFilter, everyoneFilter });
+    importDefault(686).dispatch({ type: "SET_RECENT_MENTIONS_FILTER", guildFilter, roleFilter, everyoneFilter });
   },
   clearMentions() {
-    importDefault(dependencyMap[1]).dispatch({ type: "CLEAR_MENTIONS" });
+    importDefault(686).dispatch({ type: "CLEAR_MENTIONS" });
   },
   truncateMentions(size) {
-    let obj = importDefault(dependencyMap[1]);
+    let obj = importDefault(686);
     obj = { type: "TRUNCATE_MENTIONS", size };
     obj.dispatch(obj);
   },
   fetchRecentMentions(before) {
     before = before.before;
-    const require = before;
     let limit = before.limit;
     if (limit === undefined) {
       limit = closure_4;
@@ -43,31 +44,31 @@ export default {
     if (flag2 === undefined) {
       flag2 = true;
     }
-    let obj = importDefault(dependencyMap[1]);
+    let obj = importDefault(686);
     obj = { type: "LOAD_RECENT_MENTIONS", guildId };
     obj.dispatch(obj);
-    const HTTP = require(dependencyMap[2]).HTTP;
-    obj = { applicationCommands: "jsx", isEncryptionAvailable: "r", flexGrow: "isArray", flexShrink: "accessibilityRole", alignSelf: "track", url: closure_3.MENTIONS };
+    const HTTP = before(507).HTTP;
+    obj = { url: closure_3.MENTIONS, query: null, retries: 2, oldFormErrors: true, rejectWithError: true };
     const obj1 = { before, limit, guild_id: guildId, roles: flag, everyone: flag2, feature: before.feature };
     obj.query = obj1;
     const value = HTTP.get(obj);
     return value.then((body) => {
       body = body.body;
-      let obj = callback(closure_2[1]);
-      obj = { type: "LOAD_RECENT_MENTIONS_SUCCESS", messages: body, isAfter: null != before, hasMoreAfter: body.length >= closure_4 };
+      let obj = outer1_1(outer1_2[1]);
+      obj = { type: "LOAD_RECENT_MENTIONS_SUCCESS", messages: body, isAfter: null != before, hasMoreAfter: body.length >= outer1_4 };
       obj.dispatch(obj);
     }, () => {
-      callback(closure_2[1]).dispatch({ type: "LOAD_RECENT_MENTIONS_FAILURE" });
+      outer1_1(outer1_2[1]).dispatch({ type: "LOAD_RECENT_MENTIONS_FAILURE" });
     });
   },
   deleteRecentMention(id) {
-    const HTTP = require(dependencyMap[2]).HTTP;
-    let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, url: closure_3.MENTIONS_MESSAGE_ID(id) };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    let obj = { url: closure_3.MENTIONS_MESSAGE_ID(id), retries: 2, oldFormErrors: true, rejectWithError: true };
     HTTP.del(obj);
     obj = { type: "RECENT_MENTION_DELETE", id };
-    importDefault(dependencyMap[1]).dispatch(obj);
+    importDefault(686).dispatch(obj);
   },
   setRecentMentionsStale() {
-    importDefault(dependencyMap[1]).dispatch({ type: "SET_RECENT_MENTIONS_STALE" });
+    importDefault(686).dispatch({ type: "SET_RECENT_MENTIONS_STALE" });
   }
 };

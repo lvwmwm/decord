@@ -1,24 +1,25 @@
-// Module ID: 11986
-// Function ID: 92649
+// Module ID: 12105
+// Function ID: 94837
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: []
+// Dependencies: [31, 3767, 1849, 566, 11986, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 11986 (useUserProfileGameFriendApplicationIds)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
+// Module 12105 (useUserProfileGameFriendApplicationIds)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
 let closure_5 = [];
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/game_relationships/hooks/useUserProfileGameFriendApplicationIds.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_relationships/hooks/useUserProfileGameFriendApplicationIds.tsx");
 
 export const useUserProfileGameFriendApplicationIds = function useUserProfileGameFriendApplicationIds(userId) {
   userId = userId.userId;
-  const arg1 = userId;
-  const items = [closure_3, closure_4];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    let isFriendResult = friend.isFriend(userId);
+  const items = [_isNativeReflectConstruct, closure_4];
+  stateFromStores = userId(stateFromStores[3]).useStateFromStores(items, () => {
+    let isFriendResult = outer1_3.isFriend(userId);
     if (!isFriendResult) {
-      const user = user.getUser(userId);
+      const user = outer1_4.getUser(userId);
       let isProvisional;
       if (null != user) {
         isProvisional = user.isProvisional;
@@ -27,14 +28,12 @@ export const useUserProfileGameFriendApplicationIds = function useUserProfileGam
     }
     return isFriendResult;
   });
-  const dependencyMap = stateFromStores;
-  const obj = arg1(dependencyMap[3]);
-  const gameFriendsForUser = arg1(dependencyMap[4]).useGameFriendsForUser(userId);
-  const React = gameFriendsForUser;
+  const obj = userId(stateFromStores[3]);
+  const gameFriendsForUser = userId(stateFromStores[4]).useGameFriendsForUser(userId);
   const items1 = [gameFriendsForUser, stateFromStores];
-  return React.useMemo(() => {
+  return gameFriendsForUser.useMemo(() => {
     if (stateFromStores) {
-      let mapped = closure_5;
+      let mapped = outer1_5;
     } else {
       mapped = gameFriendsForUser.map((applicationId) => applicationId.applicationId);
     }

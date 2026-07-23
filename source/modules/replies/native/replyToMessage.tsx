@@ -1,15 +1,17 @@
-// Module ID: 9864
-// Function ID: 76382
+// Module ID: 9871
+// Function ID: 76423
 // Name: longPressMessageHandleReply
-// Dependencies: []
+// Dependencies: [6923, 1849, 6922, 653, 675, 9542, 6691, 9544, 4324, 2]
 // Exports: default
 
-// Module 9864 (longPressMessageHandleReply)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/replies/native/replyToMessage.tsx");
+// Module 9871 (longPressMessageHandleReply)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/replies/native/replyToMessage.tsx");
 
 export default function longPressMessageHandleReply(arg0) {
   let actionSource;
@@ -21,21 +23,21 @@ export default function longPressMessageHandleReply(arg0) {
   if (invertible === undefined) {
     invertible = false;
   }
-  const editingMessage = editingMessage.getEditingMessage(channel.id);
+  editingMessage = editingMessage.getEditingMessage(channel.id);
   if (null != editingMessage) {
     const currentUser = authStore.getCurrentUser();
     let obj = { message_id: message.id };
     ({ id: obj13.channel_id, guild_id: obj13.guild_id } = channel);
     obj.context_action = "edit";
-    const obj12 = importDefault(dependencyMap[4]);
-    obj.reason = arg1(dependencyMap[5]).getContextBarCancelReason("edit", actionSource);
+    const obj12 = importDefault(675);
+    obj.reason = require(9542) /* getContextBarCancelReason */.getContextBarCancelReason("edit", actionSource);
     obj.is_own_message = null != currentUser && currentUser.id === editingMessage.author.id;
     obj12.track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-    const obj14 = arg1(dependencyMap[5]);
+    const obj14 = require(9542) /* getContextBarCancelReason */;
   }
-  obj = importDefault(dependencyMap[6]);
+  obj = importDefault(6691);
   obj.endEditMessage(channel.id);
-  const pendingReply = pendingReply.getPendingReply(channel.id);
+  pendingReply = pendingReply.getPendingReply(channel.id);
   if (invertible) {
     if ("message_swipe" === actionSource) {
       if (null != pendingReply) {
@@ -50,9 +52,9 @@ export default function longPressMessageHandleReply(arg0) {
             tmp18 = currentUser1.id === pendingReply.message.author.id;
           }
           obj.is_own_message = tmp18;
-          importDefault(dependencyMap[4]).track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-          const obj8 = importDefault(dependencyMap[4]);
-          arg1(dependencyMap[7]).deletePendingReply(channel.id);
+          importDefault(675).track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
+          const obj8 = importDefault(675);
+          require(9544) /* createPendingReply */.deletePendingReply(channel.id);
           let text;
           if (null != chatInputRef) {
             const current2 = chatInputRef.current;
@@ -71,21 +73,21 @@ export default function longPressMessageHandleReply(arg0) {
               obj11.dismissKeyboard();
             }
           }
-          const obj10 = arg1(dependencyMap[7]);
+          const obj10 = require(9544) /* createPendingReply */;
         }
       }
     }
   }
-  let obj1 = importDefault(dependencyMap[4]);
+  let obj1 = importDefault(675);
   obj1 = { source: actionSource };
-  const merged = Object.assign(arg1(dependencyMap[8]).collectGuildAnalyticsMetadata(channel.guild_id));
-  const obj4 = arg1(dependencyMap[8]);
-  const merged1 = Object.assign(arg1(dependencyMap[8]).collectChannelAnalyticsMetadata(channel));
+  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(channel.guild_id));
+  const obj4 = require(4324) /* _createForOfIteratorHelperLoose */;
+  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channel));
   obj1.track(AnalyticEvents.REPLY_MESSAGE_STARTED, obj1);
   const currentUser2 = authStore.getCurrentUser();
-  const obj5 = arg1(dependencyMap[8]);
+  const obj5 = require(4324) /* _createForOfIteratorHelperLoose */;
   const tmp9 = !channel.isDM() && null != currentUser2 && message.author.id !== currentUser2.id;
-  const pendingReply1 = arg1(dependencyMap[7]).createPendingReply({ message, channel, shouldMention: tmp9, source: actionSource });
+  const pendingReply1 = require(9544) /* createPendingReply */.createPendingReply({ message, channel, shouldMention: tmp9, source: actionSource });
   let tmp11 = null == chatInputRef;
   if (!tmp11) {
     const current = chatInputRef.current;

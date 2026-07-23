@@ -1,52 +1,61 @@
-// Module ID: 13003
-// Function ID: 98912
+// Module ID: 13117
+// Function ID: 101068
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 15, 17, 18, 13118, 13115, 13119, 675, 13120, 2]
 
-// Module 13003 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 13117 (_createForOfIteratorHelperLoose)
+import _inherits from "_inherits";
+import apexExperiment from "apexExperiment";
+import TelemetryChannel from "TelemetryChannel";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import closure_8 from "_inherits";
+import tmp2 from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,76 +101,9 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = {};
-let closure_10 = {};
-let tmp2 = (arg0) => {
-  class ZoomedInTelemetryImpl {
-    constructor() {
-      self = this;
-      tmp = closure_4(this, ZoomedInTelemetryImpl);
-      items = [, ];
-      items[0] = ZoomedInTelemetryImpl(closure_2[7]);
-      items1 = [];
-      items1[0] = closure_0(closure_2[7]).TelemetryChannel.ZOOMED;
-      items[1] = items1;
-      obj = closure_7(ZoomedInTelemetryImpl);
-      tmp2 = closure_6;
-      if (closure_13()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items, closure_7(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  const importDefault = ZoomedInTelemetryImpl;
-  callback3(ZoomedInTelemetryImpl, arg0);
-  let obj = {
-    key: "shouldRun",
-    value() {
-      return callback(closure_2[6]).isZoomedExperimentEnabled();
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "getBudget",
-    value(arg0) {
-      return "backlog" === arg0 ? closure_10 : closure_9;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getAckedEndOffsetStorageKey",
-    value() {
-      return "telemetry_ring_zoomed_acked_end_offset_v1";
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getExportBatchSize",
-    value() {
-      return 250;
-    }
-  };
-  const obj2 = { key: "exportEntries" };
-  // CreateGeneratorClosureLongIndex (0x67)
-  let closure_0 = callback(tmp);
-  obj2.value = function exportEntries(substr, arg1) {
-    return callback(...arguments);
-  };
-  items[4] = obj2;
-  return callback2(ZoomedInTelemetryImpl, items);
-}(importDefault(dependencyMap[10]));
+let closure_9 = { type: "ROWS", limit: 250 };
+let closure_10 = { type: "ROWS", limit: 10000 };
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInTelemetry.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInTelemetry.tsx");
 
 export default tmp2;

@@ -1,15 +1,15 @@
-// Module ID: 7550
-// Function ID: 60436
+// Module ID: 7556
+// Function ID: 60473
 // Name: useIsAgeVerificationIncodeEnabled
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isAgeVerificationIncodeEnabled, useIsAgeVerificationIncodeEnabled
 
-// Module 7550 (useIsAgeVerificationIncodeEnabled)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "<string:4132503553>", "Bool(false)": "<string:1631654381>", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/age_assurance/AgeVerificationIncodeExperiment.tsx");
+// Module 7556 (useIsAgeVerificationIncodeEnabled)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-06-age-verification-incode", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/age_assurance/AgeVerificationIncodeExperiment.tsx");
 
 export const useIsAgeVerificationIncodeEnabled = function useIsAgeVerificationIncodeEnabled(location) {
   return closure_0.useConfig({ location }).enabled;

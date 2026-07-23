@@ -1,32 +1,36 @@
-// Module ID: 15625
-// Function ID: 119303
+// Module ID: 15742
+// Function ID: 121476
 // Name: useInviteMembersCallback
-// Dependencies: []
+// Dependencies: [31, 1348, 653, 3981, 8481, 2]
 // Exports: useInviteMembersCallback
 
-// Module 15625 (useInviteMembersCallback)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ AnalyticsPages: closure_4, InstantInviteSources: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/voice_panel/native/hooks/useInviteMembersCallback.tsx");
+// Module 15742 (useInviteMembersCallback)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ AnalyticsPages: closure_4, InstantInviteSources: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/voice_panel/native/hooks/useInviteMembersCallback.tsx");
 
 export const useInviteMembersCallback = function useInviteMembersCallback(channelId) {
-  const arg1 = channelId;
+  let closure_0 = channelId;
   const items = [channelId];
   return React.useCallback(() => {
-    let id = channel.getChannel(arg0);
+    let id = outer1_3.getChannel(closure_0);
     if (null == id) {
       return null;
     } else {
-      let tmpResult = closure_1;
+      let tmpResult = outer1_1;
       if (id.isPrivate()) {
         tmpResult = tmp(tmpResult[3]);
         id = id.id;
-        let navigateToNewGroupDMResult = tmpResult.navigateToNewGroupDM(id, constants.CHANNEL_CALL);
+        let navigateToNewGroupDMResult = tmpResult.navigateToNewGroupDM(id, outer1_4.CHANNEL_CALL);
       } else {
         tmpResult = tmp(tmpResult[4]);
-        const obj = { source: constants2.VOICE_CHANNEL };
+        const obj = { source: outer1_5.VOICE_CHANNEL };
         navigateToNewGroupDMResult = tmpResult.showInstantInviteActionSheet(id, obj);
       }
     }

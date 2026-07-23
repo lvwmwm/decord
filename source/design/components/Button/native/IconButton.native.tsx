@@ -1,15 +1,20 @@
-// Module ID: 7765
-// Function ID: 61694
+// Module ID: 7771
+// Function ID: 61731
 // Name: IconButton
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 4550, 7772, 4126, 2]
 
-// Module 7765 (IconButton)
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-let closure_5 = arg1(dependencyMap[2]).createStyles((arg0) => {
+// Module 7771 (IconButton)
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { paddingBottom: importDefault(dependencyMap[3]).space.PX_4, gap: importDefault(dependencyMap[3]).space.PX_8, alignItems: "center", alignSelf: "center" };
+  obj = { paddingBottom: importDefault(689).space.PX_4, gap: importDefault(689).space.PX_8, alignItems: "center", alignSelf: "center" };
   let num = 0;
   if (arg0) {
     num = 1;
@@ -19,14 +24,13 @@ let closure_5 = arg1(dependencyMap[2]).createStyles((arg0) => {
   obj.label = { textAlign: "center" };
   return obj;
 });
-const obj2 = arg1(dependencyMap[2]);
-const forwardRefResult = importAllResult.forwardRef((grow, ref) => {
+const forwardRefResult = require("result").forwardRef((grow, ref) => {
   let accessibilityHint;
   let accessibilityLabel;
   let label;
   let maxFontSizeMultiplier;
   ({ label, accessibilityLabel, maxFontSizeMultiplier, accessibilityHint } = grow);
-  let obj = { "Null": false, "Null": false, "Null": false, "Null": false, "Null": false };
+  let obj = { label: 0, grow: 0, accessibilityLabel: 0, maxFontSizeMultiplier: 0, accessibilityHint: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(grow, obj);
   const tmp3 = callback3(grow.grow);
@@ -42,21 +46,21 @@ const forwardRefResult = importAllResult.forwardRef((grow, ref) => {
     obj["accessibilityLabel"] = "";
     obj["size"] = "lg";
     obj["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
-    const items = [callback(ref(dependencyMap[5]).BaseIconButton, obj), ];
-    const obj1 = { "Null": "construct", "Null": "y", alignItems: "isArray", style: tmp3.label, maxFontSizeMultiplier, children: label };
-    items[1] = callback(ref(dependencyMap[6]).Text, obj1);
+    const items = [callback(require(7772) /* BaseIconButton */.BaseIconButton, obj), ];
+    const obj1 = { style: tmp3.label, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
+    items[1] = callback(require(4126) /* Text */.Text, obj1);
     obj["children"] = items;
-    let tmp10 = callback2(ref(dependencyMap[4]).BaseButton, obj);
+    let tmp10 = callback2(require(4550) /* BaseButton */.BaseButton, obj);
   } else {
     const obj2 = { ref };
     const merged3 = Object.assign(merged);
     obj2["accessibilityLabel"] = accessibilityLabel;
     obj2["accessibilityHint"] = accessibilityHint;
     obj2["maxFontSizeMultiplier"] = maxFontSizeMultiplier;
-    tmp10 = callback(ref(dependencyMap[5]).BaseIconButton, obj2);
+    tmp10 = callback(require(7772) /* BaseIconButton */.BaseIconButton, obj2);
   }
   return tmp10;
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/Button/native/IconButton.native.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Button/native/IconButton.native.tsx");
 
 export const IconButton = forwardRefResult;

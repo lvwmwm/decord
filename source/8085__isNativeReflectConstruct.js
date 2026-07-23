@@ -1,9 +1,18 @@
 // Module ID: 8085
-// Function ID: 64119
+// Function ID: 64126
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8086, 8042]
 
 // Module 8085 (_isNativeReflectConstruct)
+import jsxProd from "jsxProd";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import "result";
+import { jsx } from "jsxProd";
+import tmp3 from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,61 +22,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-importAll(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (arg0) => {
-  class Line {
-    constructor() {
-      self = this;
-      tmp = closure_3(this, Line);
-      obj = closure_6(Line);
-      tmp2 = closure_5;
-      if (closure_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = closure_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  const arg1 = Line;
-  callback2(Line, arg0);
-  const items = [
-    {
-      key: "render",
-      value: function render() {
-        let x1;
-        let x2;
-        let y1;
-        let y2;
-        const Line = this;
-        const props = this.props;
-        ({ x1, y1, x2, y2 } = props);
-        let obj = Line(closure_2[7]);
-        const merged = Object.assign({}, obj.extract(this, props), { x1, y1, x2, y2 });
-        obj = {
-          ref(arg0) {
-            return self.refMethod(arg0);
-          }
-        };
-        return callback4(callback(closure_2[8]), Object.assign(obj, merged));
-      }
-    }
-  ];
-  return callback(Line, items);
-}(importDefault(dependencyMap[9]));
-tmp3.displayName = "Line";
-tmp3.defaultProps = { 1098444449: -24, 57723639: null, 1397186890: 1, 1596917277: "Malaysia" };
+tmp3.displayName = "Filter";
+tmp3.defaultProps = { x: "-10%", y: "-10%", width: "120%", height: "120%", filterUnits: "objectBoundingBox", primitiveUnits: "userSpaceOnUse" };
 
 export default tmp3;

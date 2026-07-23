@@ -1,17 +1,21 @@
-// Module ID: 7613
-// Function ID: 61023
+// Module ID: 7619
+// Function ID: 61060
 // Name: TextElement
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 4562, 4126, 2]
 // Exports: default
 
-// Module 7613 (TextElement)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ container: { __workletHash: null, ind: null }, header: { marginBottom: 8 }, body: { marginBottom: 16 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextElement.tsx");
+// Module 7619 (TextElement)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { marginBottom: 16, paddingHorizontal: 16 }, header: { marginBottom: 8 }, body: { marginBottom: 16 } });
+const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextElement.tsx");
 
 export default function TextElement(element) {
   let body;
@@ -19,21 +23,21 @@ export default function TextElement(element) {
   const data = element.element.data;
   ({ header, body } = data);
   const tmp = callback2();
-  let obj = importAll(dependencyMap[4]);
+  let obj = importAll(4562);
   let tmp2 = null;
   if (data.is_localized) {
     if (null != header) {
       obj = { style: tmp.container };
       let tmp6 = null != header;
       if (tmp6) {
-        obj = { "Null": "781324642736144424", "Null": null, alignItems: "Cheerful Choco preens against window", style: tmp.header, children: header };
-        tmp6 = callback(arg1(dependencyMap[5]).Text, obj);
+        obj = { style: tmp.header, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: header };
+        tmp6 = callback(require(4126) /* Text */.Text, obj);
       }
       const items = [tmp6, ];
       let tmp10 = null != body;
       if (tmp10) {
         const obj1 = { style: tmp.body, variant: "text-md/medium", children: ref.current(body) };
-        tmp10 = callback(arg1(dependencyMap[5]).Text, obj1);
+        tmp10 = callback(require(4126) /* Text */.Text, obj1);
       }
       items[1] = tmp10;
       obj.children = items;

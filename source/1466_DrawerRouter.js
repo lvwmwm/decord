@@ -1,14 +1,16 @@
 // Module ID: 1466
-// Function ID: 17013
+// Function ID: 17014
 // Name: DrawerRouter
-// Dependencies: []
+// Dependencies: [65, 29, 1467, 1465]
 // Exports: default
 
 // Module 1466 (DrawerRouter)
-let closure_3 = ["android"];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const merged = Object.assign({}, arg1(dependencyMap[2]).TabActions, {
+import _toConsumableArray from "_toConsumableArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
+
+const require = arg1;
+let closure_3 = ["defaultStatus"];
+let merged = Object.assign({}, require("getRouteHistory").TabActions, {
   openDrawer() {
     return { type: "OPEN_DRAWER" };
   },
@@ -26,18 +28,17 @@ export default function DrawerRouter(defaultStatus) {
   if (undefined !== defaultStatus) {
     str = defaultStatus;
   }
-  const arg1 = str;
-  const tmp2 = importDefault(isDrawerInHistory[2])(closeDrawer(defaultStatus, addDrawerToHistory));
-  const importDefault = tmp2;
-  function isDrawerInHistory(history) {
+  let tmp2 = importDefault(isDrawerInHistory[2])(closeDrawer(defaultStatus, addDrawerToHistory));
+  importDefault = tmp2;
+  isDrawerInHistory = function isDrawerInHistory(history) {
     history = history.history;
     let someResult;
     if (null != history) {
       someResult = history.some((type) => "drawer" === type.type);
     }
     return Boolean(someResult);
-  }
-  function addDrawerToHistory(history) {
+  };
+  addDrawerToHistory = function addDrawerToHistory(history) {
     let merged = history;
     if (!isDrawerInHistory(history)) {
       let obj = {};
@@ -54,7 +55,7 @@ export default function DrawerRouter(defaultStatus) {
       const tmp4 = removeDrawerFromHistory(history.history);
     }
     return merged;
-  }
+  };
   function removeDrawerFromHistory(history) {
     let merged = history;
     if (isDrawerInHistory(history)) {
@@ -66,19 +67,19 @@ export default function DrawerRouter(defaultStatus) {
     }
     return merged;
   }
-  function closeDrawer(defaultStatus, addDrawerToHistory) {
+  closeDrawer = function closeDrawer(defaultStatus, addDrawerToHistory) {
     if ("open" === str) {
       let tmp2 = addDrawerToHistory(defaultStatus);
     } else {
       tmp2 = removeDrawerFromHistory(defaultStatus);
     }
     return tmp2;
-  }
+  };
   return Object.assign({}, tmp2, {
     type: "drawer",
     getInitialState(routeNames) {
       let obj = { routeNames: routeNames.routeNames, routeParamList: routeNames.routeParamList, routeGetIdList: routeNames.routeGetIdList };
-      obj = { 9223372036854775807: -0.00000000000000012231511720279715, 9223372036854775807: true, 9223372036854775807: true, default: str };
+      obj = { default: str, stale: false, type: "drawer" };
       const initialState = tmp2.getInitialState(obj);
       obj.key = "drawer-" + str(isDrawerInHistory[3]).nanoid();
       return Object.assign({}, initialState, obj);

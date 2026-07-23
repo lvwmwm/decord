@@ -1,20 +1,19 @@
-// Module ID: 8173
-// Function ID: 64526
+// Module ID: 8179
+// Function ID: 64563
 // Name: isAgeRestrictedContentClassification
-// Dependencies: []
+// Dependencies: [6867, 6869, 2]
 // Exports: isAgeRestrictedContentClassification
 
-// Module 8173 (isAgeRestrictedContentClassification)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/content_classification/utils.tsx");
+// Module 8179 (isAgeRestrictedContentClassification)
+let result = require("set").fileFinishedImporting("modules/content_classification/utils.tsx");
 
 export const isAgeRestrictedContentClassification = function isAgeRestrictedContentClassification(contentClassification) {
   let tmp = null != contentClassification;
   if (tmp) {
-    let obj = require(dependencyMap[0]);
-    obj = { type: require(dependencyMap[0]).ContentClassificationVariant.MINIMAL, data: contentClassification };
+    let obj = require(6867) /* _createForOfIteratorHelperLoose */;
+    obj = { type: require(6867) /* _createForOfIteratorHelperLoose */.ContentClassificationVariant.MINIMAL, data: contentClassification };
     const result = obj.contentClassificationToAgeRestriction(obj);
-    tmp = result === require(dependencyMap[1]).AgeRestrictionStatus.ADULT;
+    tmp = result === require(6869) /* AgeRestrictionStatus */.AgeRestrictionStatus.ADULT;
   }
   return tmp;
 };

@@ -1,16 +1,16 @@
-// Module ID: 16291
-// Function ID: 125744
+// Module ID: 16408
+// Function ID: 127918
 // Name: useIsCreatorMonetizationRequestRejected
-// Dependencies: []
+// Dependencies: [16377, 1212, 2]
 // Exports: default
 
-// Module 16291 (useIsCreatorMonetizationRequestRejected)
-let closure_2 = require(dependencyMap[0]).CreatorMonetizationApplicationState;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationRequestRejected.tsx");
+// Module 16408 (useIsCreatorMonetizationRequestRejected)
+import { CreatorMonetizationApplicationState as closure_2 } from "CreatorMonetizationApplicationState";
+
+const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationRequestRejected.tsx");
 
 export default function useIsCreatorMonetizationRequestRejected(latestRequest) {
-  const obj = {};
+  let obj = {};
   let state;
   if (null != latestRequest) {
     latestRequest = latestRequest.latestRequest;
@@ -26,7 +26,7 @@ export default function useIsCreatorMonetizationRequestRejected(latestRequest) {
       can_reapply_at = rejection.can_reapply_at;
     }
   }
-  obj.requestCooldownDuration = function getRequestCooldown(can_reapply_at) {
+  obj.requestCooldownDuration = (function getRequestCooldown(can_reapply_at) {
     function roundByInterval(arg0) {
       return Math.round(rounded / arg0);
     }
@@ -41,30 +41,30 @@ export default function useIsCreatorMonetizationRequestRejected(latestRequest) {
           const _Math = Math;
           const rounded = Math.round((parsed - timestamp) / 60000);
           if (rounded >= 43200) {
-            const intl5 = rounded(closure_1[1]).intl;
+            const intl5 = outer1_0(outer1_1[1]).intl;
             let obj = { months: roundByInterval(43200) };
-            let formatToPlainStringResult = intl5.formatToPlainString(rounded(closure_1[1]).t.kridzK, obj);
+            let formatToPlainStringResult = intl5.formatToPlainString(outer1_0(outer1_1[1]).t.kridzK, obj);
           } else if (rounded >= 10080) {
-            const intl4 = rounded(closure_1[1]).intl;
+            const intl4 = outer1_0(outer1_1[1]).intl;
             obj = { weeks: roundByInterval(10080) };
-            formatToPlainStringResult = intl4.formatToPlainString(rounded(closure_1[1]).t.EmoBD2, obj);
+            formatToPlainStringResult = intl4.formatToPlainString(outer1_0(outer1_1[1]).t.EmoBD2, obj);
           } else if (rounded >= 1440) {
-            const intl3 = rounded(closure_1[1]).intl;
+            const intl3 = outer1_0(outer1_1[1]).intl;
             const obj1 = { days: roundByInterval(1440) };
-            formatToPlainStringResult = intl3.formatToPlainString(rounded(closure_1[1]).t.k2UNz+, obj1);
+            formatToPlainStringResult = intl3.formatToPlainString(outer1_0(outer1_1[1]).t["k2UNz+"], obj1);
           } else if (rounded >= 60) {
-            const intl2 = rounded(closure_1[1]).intl;
+            const intl2 = outer1_0(outer1_1[1]).intl;
             const obj2 = { hours: roundByInterval(60) };
-            formatToPlainStringResult = intl2.formatToPlainString(rounded(closure_1[1]).t.xCjYxK, obj2);
+            formatToPlainStringResult = intl2.formatToPlainString(outer1_0(outer1_1[1]).t.xCjYxK, obj2);
           } else {
-            const intl = rounded(closure_1[1]).intl;
+            const intl = outer1_0(outer1_1[1]).intl;
             obj = { minutes: rounded };
-            formatToPlainStringResult = intl.formatToPlainString(rounded(closure_1[1]).t.iXLF9W, obj);
+            formatToPlainStringResult = intl.formatToPlainString(outer1_0(outer1_1[1]).t.iXLF9W, obj);
           }
           return formatToPlainStringResult;
         }
       }
     }
-  }(can_reapply_at);
+  })(can_reapply_at);
   return obj;
 };

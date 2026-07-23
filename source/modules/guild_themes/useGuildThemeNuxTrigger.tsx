@@ -1,35 +1,35 @@
-// Module ID: 14881
-// Function ID: 112076
+// Module ID: 14997
+// Function ID: 114244
 // Name: useGuildThemeNuxTrigger
-// Dependencies: []
+// Dependencies: [57, 31, 1345, 4012, 5802, 1334, 2]
 // Exports: default
 
-// Module 14881 (useGuildThemeNuxTrigger)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).DismissibleContentGroupName;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_themes/useGuildThemeNuxTrigger.tsx");
+// Module 14997 (useGuildThemeNuxTrigger)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { DismissibleContentGroupName as closure_4 } from "ContentDismissActionType";
+
+const require = arg1;
+const result = require("ContentDismissActionType").fileFinishedImporting("modules/guild_themes/useGuildThemeNuxTrigger.tsx");
 
 export default function useGuildThemeNuxTrigger(guildId, isNuxOpen) {
-  isNuxOpen = guildId;
+  const _require = guildId;
   isNuxOpen = isNuxOpen.isNuxOpen;
-  const dependencyMap = isNuxOpen;
   const openNux = isNuxOpen.openNux;
-  const callback = openNux;
   let React;
   let constants;
   let closure_5;
-  const enabledGuildThemeForGuildId = isNuxOpen(dependencyMap[3]).useEnabledGuildThemeForGuildId(guildId, "GuildThemeNuxTrigger");
-  const obj = isNuxOpen(dependencyMap[3]);
+  const enabledGuildThemeForGuildId = _require(isNuxOpen[3]).useEnabledGuildThemeForGuildId(guildId, "GuildThemeNuxTrigger");
+  const obj = _require(isNuxOpen[3]);
   if (null != enabledGuildThemeForGuildId) {
-    const items = [isNuxOpen(dependencyMap[5]).DismissibleContent.GUILD_THEME_NUX];
+    const items = [_require(isNuxOpen[5]).DismissibleContent.GUILD_THEME_NUX];
     let items1 = items;
   } else {
     items1 = [];
   }
-  const tmp4 = callback(isNuxOpen(dependencyMap[4]).useSelectedDismissibleContent(items1, constants.GUILD_THEME_NUX), 2);
+  const tmp4 = openNux(_require(isNuxOpen[4]).useSelectedDismissibleContent(items1, constants.GUILD_THEME_NUX), 2);
   React = tmp5;
-  const tmp6 = tmp4[0] === isNuxOpen(dependencyMap[5]).DismissibleContent.GUILD_THEME_NUX;
+  const tmp6 = tmp4[0] === _require(isNuxOpen[5]).DismissibleContent.GUILD_THEME_NUX;
   constants = tmp6;
   closure_5 = React.useRef(false);
   const items2 = [guildId];
@@ -38,24 +38,24 @@ export default function useGuildThemeNuxTrigger(guildId, isNuxOpen) {
   }, items2);
   const items3 = [tmp6, isNuxOpen, guildId, tmp4[1], openNux];
   const effect1 = React.useEffect(() => {
-    if (tmp6) {
+    if (c4) {
       if (!isNuxOpen) {
         if (!ref.current) {
           const _setTimeout = setTimeout;
           const timeout = setTimeout(() => {
-            closure_5.current = true;
-            let closure_0 = false;
-            const resolved = Promise.resolve(callback({
+            outer1_5.current = true;
+            let c0 = false;
+            const resolved = Promise.resolve(outer1_2({
               guildId: closure_0,
               markAsDismissed(arg0) {
-                if (!closure_0) {
-                  closure_0 = true;
-                  callback(arg0, true);
+                if (!c0) {
+                  c0 = true;
+                  outer2_3(arg0, true);
                 }
               }
             }));
             resolved.catch(() => {
-              closure_5.current = false;
+              outer2_5.current = false;
             });
           }, 2000);
           return () => clearTimeout(closure_0);

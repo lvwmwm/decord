@@ -1,9 +1,20 @@
-// Module ID: 12507
-// Function ID: 95834
+// Module ID: 12621
+// Function ID: 97990
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4044, 1188, 1906, 653, 12622, 4206, 12623, 3982, 3981, 5784, 12625, 668, 587, 675, 566, 686, 2]
 
-// Module 12507 (_isNativeReflectConstruct)
+// Module 12621 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import getFirstInstallTimeMillis from "getFirstInstallTimeMillis";
+import Storage from "Storage";
+import expandLocation from "expandLocation";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,15 +26,15 @@ function _isNativeReflectConstruct() {
 }
 function recordRequestRevision(arg0) {
   closure_14.revision = 1;
-  const Storage = arg1(dependencyMap[17]).Storage;
-  const result = Storage.set(closure_13, closure_14);
+  const Storage = require(587) /* Storage */.Storage;
+  const result = Storage.set(RequestReviewStore, closure_14);
 }
 function delayShowReviewRequestModal() {
   cancelExistingTimeout();
-  const RequestReviewNoTTIExperiment = arg1(dependencyMap[9]).RequestReviewNoTTIExperiment;
+  const RequestReviewNoTTIExperiment = require(12622) /* apexExperiment */.RequestReviewNoTTIExperiment;
   let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
-  let tmp2 = closure_15;
-  if (closure_15) {
+  let tmp2 = c15;
+  if (c15) {
     if (!skipTTICheck) {
       let tmp4 = undefined !== closure_12;
       if (tmp4) {
@@ -35,73 +46,64 @@ function delayShowReviewRequestModal() {
   }
   if (tmp2) {
     const _setTimeout = setTimeout;
-    const timeout = setTimeout(showReviewRequestModal, arg1(dependencyMap[10]).MS_PER_MINUTE);
+    const timeout = setTimeout(showReviewRequestModal, require(4206) /* sleep */.MS_PER_MINUTE);
   }
 }
 function showReviewRequestModal() {
-  let obj = arg1(dependencyMap[12]);
+  let obj = require(3982) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   obj = {};
   let tmp = null != rootNavigationRef && rootNavigationRef.isReady();
   if (tmp) {
-    tmp = null != arg1(dependencyMap[13]).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
-    const obj4 = arg1(dependencyMap[13]);
+    tmp = null != require(3981) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
+    const obj4 = require(3981) /* _createForOfIteratorHelperLoose */;
   }
   obj.isViewingChat = tmp;
-  obj.isKeyboardOpen = arg1(dependencyMap[14]).getKeyboardIsOpen();
+  obj.isKeyboardOpen = require(5784) /* getKeyboardIsOpen */.getKeyboardIsOpen();
   obj.isInVoice = null != voiceChannelId.getVoiceChannelId();
   if (obj.isViewingChat) {
     if (!obj.isKeyboardOpen) {
       if (!obj.isInVoice) {
-        importDefault(dependencyMap[18]).track(AnalyticEvents.REVIEW_REQUEST_SHOW_ATTEMPTED);
+        importDefault(675).track(AnalyticEvents.REVIEW_REQUEST_SHOW_ATTEMPTED);
         recordRequestRevision(1);
-        importDefault(dependencyMap[11])();
-        let closure_15 = false;
-        const obj6 = importDefault(dependencyMap[18]);
+        importDefault(12623)();
+        let c15 = false;
+        const obj6 = importDefault(675);
       }
     }
   }
-  const obj5 = arg1(dependencyMap[14]);
+  const obj5 = require(5784) /* getKeyboardIsOpen */;
   obj = { is_keyboard_open: obj.isKeyboardOpen, is_in_voice: obj.isInVoice, is_viewing_chat: obj.isViewingChat };
-  importDefault(dependencyMap[18]).track(AnalyticEvents.REVIEW_REQUEST_DEFERRED, obj);
+  importDefault(675).track(AnalyticEvents.REVIEW_REQUEST_DEFERRED, obj);
   delayShowReviewRequestModal();
 }
 function handleConnectionClosedOrInterrupted() {
   cancelExistingTimeout();
 }
 function cancelExistingTimeout() {
-  if (-1 !== closure_16) {
+  if (-1 !== c16) {
     const _clearTimeout = clearTimeout;
-    clearTimeout(closure_16);
-    closure_16 = -1;
+    clearTimeout(c16);
+    c16 = -1;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const AnalyticEvents = arg1(dependencyMap[8]).AnalyticEvents;
-let closure_13 = "RequestReviewStore";
+const RequestReviewStore = "RequestReviewStore";
 let closure_14 = { revision: 0 };
-let closure_15 = false;
-let closure_16 = -1;
-let tmp2 = (Store) => {
+let c15 = false;
+let c16 = -1;
+let tmp2 = ((Store) => {
   class RequestReviewStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, RequestReviewStore);
-      obj = closure_6(RequestReviewStore);
-      tmp2 = closure_5;
-      if (closure_17()) {
+      tmp = outer1_3(this, RequestReviewStore);
+      obj = outer1_6(RequestReviewStore);
+      tmp2 = outer1_5;
+      if (outer1_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -110,40 +112,40 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = RequestReviewStore;
   callback2(RequestReviewStore, Store);
   const items = [
     {
       key: "initialize",
       value() {
         const self = this;
-        const Storage = RequestReviewStore(closure_2[17]).Storage;
-        let value = Storage.get(closure_13);
+        const Storage = RequestReviewStore(outer1_2[17]).Storage;
+        let value = Storage.get(outer1_13);
         if (null == value) {
           const obj = { revision: 0 };
           value = obj;
         }
-        self.waitFor(closure_9, closure_8, closure_10);
+        const outer1_14 = value;
+        self.waitFor(outer1_9, outer1_8, outer1_10);
       }
     }
   ];
   return callback(RequestReviewStore, items);
-}(importDefault(dependencyMap[19]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "RequestReviewStore";
-tmp2 = new tmp2(importDefault(dependencyMap[20]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     guilds = guilds.guilds;
     let obj = {};
-    obj = { from: "authed", unit: arg1(dependencyMap[10]).TimeUnits.DAYS };
-    obj.isInstallOldEnough = arg1(dependencyMap[15]).getFirstInstallTimeElapsed(obj) >= 10;
+    obj = { from: "authed", unit: require(4206) /* sleep */.TimeUnits.DAYS };
+    obj.isInstallOldEnough = require(12625) /* getFirstInstallTimeMillis */.getFirstInstallTimeElapsed(obj) >= 10;
     obj.isInLargeEnoughGuild = guilds.some((member_count) => member_count.member_count >= 5);
     obj.isAccountVerified = true === guilds.user.verified;
     obj.isNewRevision = revision.revision < 1;
     if (obj.isNewRevision) {
       obj = { is_hfu: true };
       ({ isInstallOldEnough: obj5.is_install_old_enough, isInLargeEnoughGuild: obj5.is_in_large_enough_guild, isAccountVerified: obj5.is_account_verified } = obj);
-      importDefault(dependencyMap[18]).track(AnalyticEvents.REVIEW_REQUEST_ELIGIBILITY_CHECKED, obj);
-      const obj4 = importDefault(dependencyMap[18]);
+      importDefault(675).track(AnalyticEvents.REVIEW_REQUEST_ELIGIBILITY_CHECKED, obj);
+      const obj4 = importDefault(675);
     }
     let closure_15 = obj.isInstallOldEnough && obj.isAccountVerified && obj.isInLargeEnoughGuild && obj.isNewRevision;
     delayShowReviewRequestModal();
@@ -158,13 +160,13 @@ tmp2 = new tmp2(importDefault(dependencyMap[20]), {
     delayShowReviewRequestModal();
   },
   APP_STATE_UPDATE: function handleAppStateUpdate(state) {
-    if (state.state === arg1(dependencyMap[16]).AppStates.ACTIVE) {
+    if (state.state === require(668) /* keys */.AppStates.ACTIVE) {
       delayShowReviewRequestModal();
     } else {
       cancelExistingTimeout();
     }
   }
 });
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/feedback/native/RequestReviewStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/feedback/native/RequestReviewStore.tsx");
 
 export default tmp2;

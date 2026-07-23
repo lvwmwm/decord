@@ -1,42 +1,46 @@
-// Module ID: 12334
-// Function ID: 94440
+// Module ID: 12448
+// Function ID: 96591
 // Name: NitroCreditEducationActionSheet
-// Dependencies: []
+// Dependencies: [27, 653, 33, 4130, 689, 5187, 7507, 4126, 5459, 1212, 1920, 2]
 // Exports: default
 
-// Module 12334 (NitroCreditEducationActionSheet)
-const View = require(dependencyMap[0]).View;
-const HelpdeskArticles = require(dependencyMap[1]).HelpdeskArticles;
-const _module = require(dependencyMap[2]);
-({ jsx: closure_5, jsxs: closure_6 } = _module);
-const _module1 = require(dependencyMap[3]);
-let obj = { container: { "Null": "<string:343015425>", "Null": "<string:335544320>" } };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+// Module 12448 (NitroCreditEducationActionSheet)
+import { View } from "get ActivityIndicator";
+import { HelpdeskArticles } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let obj = { container: { marginTop: 32, marginHorizontal: 30 } };
+obj = { flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginBottom: 12 };
 obj.aboutContainer = obj;
 obj.warningIcon = { margin: 16 };
-obj.aboutTextContainer = { 0: "max", 9223372036854775807: "media", 0: "message" };
-obj.helpdeskText = { memo: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 };
-let closure_7 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[11]);
-const result = _module2.fileFinishedImporting("modules/premium/fractional/native/NitroCreditEducationActionSheet.tsx");
+obj.aboutTextContainer = { justifyContent: "center", flex: 1, marginRight: 30 };
+obj.helpdeskText = { textAlign: "center", marginBottom: 24 };
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("jsxProd").fileFinishedImporting("modules/premium/fractional/native/NitroCreditEducationActionSheet.tsx");
 
-export default function NitroCreditEducationActionSheet(children) {
+export default function NitroCreditEducationActionSheet(aboutText) {
   const tmp = callback3();
   let obj = {};
   obj = { style: tmp.container };
   obj = { style: tmp.aboutContainer };
-  const items = [callback(require(dependencyMap[6]).CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), callback(View, { style: tmp.aboutTextContainer, children: callback(require(dependencyMap[7]).Text, { children: children.aboutText }) })];
+  const items = [callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), ];
+  const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText.aboutText };
+  items[1] = callback(View, { style: tmp.aboutTextContainer, children: callback(require(4126) /* Text */.Text, obj3) });
   obj.children = items;
   const items1 = [callback2(View, obj), ];
-  const obj3 = { style: tmp.helpdeskText };
-  const intl = require(dependencyMap[9]).intl;
-  const obj4 = {};
+  const obj4 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const obj5 = {};
   const obj1 = { size: "lg", style: tmp.warningIcon };
-  const obj2 = { style: tmp.aboutTextContainer, children: callback(require(dependencyMap[7]).Text, { children: children.aboutText }) };
-  obj4.helpCenterLink = importDefault(dependencyMap[10]).getArticleURL(HelpdeskArticles.FRACTIONAL_PREMIUM_ABOUT);
-  obj3.children = intl.format(require(dependencyMap[9]).t.bg3jBj, obj4);
-  items1[1] = callback(require(dependencyMap[8]).TextWithIOSLinkWorkaround, obj3);
+  const obj2 = { style: tmp.aboutTextContainer, children: callback(require(4126) /* Text */.Text, obj3) };
+  obj5.helpCenterLink = importDefault(1920).getArticleURL(HelpdeskArticles.FRACTIONAL_PREMIUM_ABOUT);
+  obj4.children = intl.format(require(1212) /* getSystemLocale */.t.bg3jBj, obj5);
+  items1[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj4);
   obj.children = items1;
   obj.children = callback2(View, obj);
-  return callback(require(dependencyMap[5]).BottomSheet, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };

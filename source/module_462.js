@@ -1,7 +1,7 @@
 // Module ID: 462
 // Function ID: 6135
-// Dependencies: []
+// Dependencies: [463]
 
 // Module 462
 
-export default require(dependencyMap[0]).default;
+export { default as default } from "module_463";

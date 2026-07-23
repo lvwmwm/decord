@@ -1,18 +1,20 @@
-// Module ID: 14646
-// Function ID: 110447
+// Module ID: 14761
+// Function ID: 112611
 // Name: statesAreEqual
-// Dependencies: []
+// Dependencies: [31, 1194, 33, 22, 1456, 9197, 566, 5590, 14638, 478, 689, 2]
 // Exports: default
 
-// Module 14646 (statesAreEqual)
+// Module 14761 (statesAreEqual)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function statesAreEqual(arg0, arg1) {
-  return importDefault(dependencyMap[3]).isEqual(arg0, arg1);
+  return importDefault(22).isEqual(arg0, arg1);
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = {};
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/auth/native/components/MFA.tsx");
+let closure_6 = { flex: 1, position: "relative" };
+const result = require("jsxProd").fileFinishedImporting("modules/auth/native/components/MFA.tsx");
 
 export default function ConnectedMFA() {
   let inContainer;
@@ -22,24 +24,22 @@ export default function ConnectedMFA() {
     obj = {};
   }
   ({ inContainer, isMultiAccount } = obj);
-  const arg1 = isMultiAccount;
-  let importDefault;
-  let obj1 = arg1(dependencyMap[4]);
-  const navigation = obj1.useNavigation();
-  importDefault = navigation;
+  let navigation;
+  let obj1 = isMultiAccount(1456);
+  navigation = obj1.useNavigation();
   if (inContainer) {
-    inContainer = importDefault(dependencyMap[5])();
+    inContainer = navigation(9197)();
   }
-  const items = [closure_4];
+  const items = [_isNativeReflectConstruct];
   const items1 = [isMultiAccount];
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items, () => ({ ticket: store.getMFATicket(), methods: store.getMFAMethods() }), [], statesAreEqual);
+  const stateFromStores = isMultiAccount(566).useStateFromStores(items, () => ({ ticket: outer1_4.getMFATicket(), methods: outer1_4.getMFAMethods() }), [], statesAreEqual);
   const items2 = [navigation];
   const callback = React.useCallback((arg0) => {
     let data;
     let mfaType;
     let ticket;
     ({ mfaType, data, ticket } = arg0);
-    let obj = navigation(closure_2[7]);
+    let obj = navigation(outer1_2[7]);
     obj = { code: data, ticket, mfaType, isMultiAccount };
     return obj.loginMFAv2(obj);
   }, items1);
@@ -61,18 +61,18 @@ export default function ConnectedMFA() {
     obj.headerLeftContainerStyle = undefined;
     let tmp14;
     if (inContainer) {
-      obj = { paddingRight: importDefault(dependencyMap[10]).space.PX_16, paddingTop: importDefault(dependencyMap[10]).space.PX_12, marginLeft: 0 };
+      obj = { paddingRight: navigation(689).space.PX_16, paddingTop: navigation(689).space.PX_12, marginLeft: 0 };
       tmp14 = obj;
     }
     obj.headerRightContainerStyle = tmp14;
-    return jsx(arg1(dependencyMap[8]).MFAModal, obj);
+    return jsx(isMultiAccount(14638).MFAModal, obj);
   } else {
     obj1 = {};
-    const obj6 = arg1(dependencyMap[9]);
-    let space = importDefault(dependencyMap[10]).space;
-    obj1.paddingLeft = arg1(dependencyMap[9]).isAndroid() ? space.PX_8 : space.PX_16;
-    space = importDefault;
-    obj1.paddingTop = importDefault(dependencyMap[10]).space.PX_12;
-    const isAndroidResult = arg1(dependencyMap[9]).isAndroid();
+    const obj6 = isMultiAccount(478);
+    let space = navigation(689).space;
+    obj1.paddingLeft = isMultiAccount(478).isAndroid() ? space.PX_8 : space.PX_16;
+    space = navigation;
+    obj1.paddingTop = navigation(689).space.PX_12;
+    const isAndroidResult = isMultiAccount(478).isAndroid();
   }
 };

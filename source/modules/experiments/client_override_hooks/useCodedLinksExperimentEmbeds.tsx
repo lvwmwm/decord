@@ -1,14 +1,21 @@
-// Module ID: 10450
-// Function ID: 80689
+// Module ID: 10460
+// Function ID: 80739
 // Name: canSeeExperimentEmbeds
-// Dependencies: []
+// Dependencies: [57, 31, 1849, 4044, 1188, 566, 10461, 10462, 2]
 // Exports: useCodedLinksExperimentEmbeds
 
-// Module 10450 (canSeeExperimentEmbeds)
+// Module 10460 (canSeeExperimentEmbeds)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+
+let require = arg1;
 function canSeeExperimentEmbeds() {
   let tmp = arg0;
   if (arg0 === undefined) {
-    const items = [closure_4];
+    const items = [_isNativeReflectConstruct];
     tmp = items;
   }
   const first = callback(tmp, 1)[0];
@@ -28,86 +35,76 @@ function canSeeExperimentEmbeds() {
   return isStaffResult;
 }
 function useCanSeeExperimentEmbeds() {
-  const items = [closure_4];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => {
-    const items = [closure_4];
-    return callback(items);
+  let items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const items = [outer1_4];
+    return outer1_13(items);
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = {};
 let closure_8 = {};
 let closure_9 = {};
 let closure_10 = {};
 let closure_11 = {};
 let closure_12 = { legacyExperiments: {}, legacyOverridesInfo: {}, apexExperiments: {}, apexOverridesInfo: {} };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/experiments/client_override_hooks/useCodedLinksExperimentEmbeds.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/client_override_hooks/useCodedLinksExperimentEmbeds.tsx");
 
 export { canSeeExperimentEmbeds };
 export { useCanSeeExperimentEmbeds };
 export const useCodedLinksExperimentEmbeds = function useCodedLinksExperimentEmbeds() {
-  const tmp = useCanSeeExperimentEmbeds();
-  const arg1 = tmp;
-  const items = [closure_5];
-  const stateFromStoresObject = arg1(dependencyMap[5]).useStateFromStoresObject(items, () => {
-    if (tmp) {
+  let tmp = useCanSeeExperimentEmbeds();
+  const require = tmp;
+  const items = [stateFromStores2];
+  stateFromStoresObject = require(stateFromStoresObject[5]).useStateFromStoresObject(items, () => {
+    if (closure_0) {
       let registeredExperiments = stateFromStores2.getRegisteredExperiments();
     } else {
-      registeredExperiments = closure_7;
+      registeredExperiments = outer1_7;
     }
     return registeredExperiments;
   });
-  const dependencyMap = stateFromStoresObject;
-  const obj = arg1(dependencyMap[5]);
-  const items1 = [closure_5];
-  const stateFromStoresObject1 = arg1(dependencyMap[5]).useStateFromStoresObject(items1, () => {
-    if (tmp) {
+  let obj = require(stateFromStoresObject[5]);
+  const items1 = [stateFromStores2];
+  const stateFromStoresObject1 = require(stateFromStoresObject[5]).useStateFromStoresObject(items1, () => {
+    if (closure_0) {
       let allExperimentOverrideDescriptors = stateFromStores2.getAllExperimentOverrideDescriptors();
     } else {
-      allExperimentOverrideDescriptors = closure_8;
+      allExperimentOverrideDescriptors = outer1_8;
     }
     return allExperimentOverrideDescriptors;
   });
-  let closure_2 = stateFromStoresObject1;
-  const obj2 = arg1(dependencyMap[5]);
+  let obj2 = require(stateFromStoresObject[5]);
   const items2 = [closure_6];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items2, () => {
-    if (tmp) {
-      let experimentsMetadata = store.getExperimentsMetadata();
+  const stateFromStores = require(stateFromStoresObject[5]).useStateFromStores(items2, () => {
+    if (closure_0) {
+      let experimentsMetadata = outer1_6.getExperimentsMetadata();
     } else {
-      experimentsMetadata = closure_9;
+      experimentsMetadata = outer1_9;
     }
     return experimentsMetadata;
   });
-  const React = stateFromStores;
-  const obj3 = arg1(dependencyMap[5]);
+  let obj3 = require(stateFromStoresObject[5]);
   const items3 = [closure_6];
-  const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items3, () => {
-    if (tmp) {
-      let registeredExperiments = store.getRegisteredExperiments();
+  const stateFromStores1 = require(stateFromStoresObject[5]).useStateFromStores(items3, () => {
+    if (closure_0) {
+      let registeredExperiments = outer1_6.getRegisteredExperiments();
     } else {
-      registeredExperiments = closure_10;
+      registeredExperiments = outer1_10;
     }
     return registeredExperiments;
   });
-  let closure_4 = stateFromStores1;
-  const obj4 = arg1(dependencyMap[5]);
+  let obj4 = require(stateFromStoresObject[5]);
   const items4 = [closure_6];
-  const stateFromStores2 = arg1(dependencyMap[5]).useStateFromStores(items4, () => {
-    if (tmp) {
-      let clientOverrides = store.getClientOverrides();
+  stateFromStores2 = require(stateFromStoresObject[5]).useStateFromStores(items4, () => {
+    if (closure_0) {
+      let clientOverrides = outer1_6.getClientOverrides();
     } else {
-      clientOverrides = closure_11;
+      clientOverrides = outer1_11;
     }
     return clientOverrides;
   });
-  closure_5 = stateFromStores2;
   const items5 = [tmp, stateFromStoresObject, stateFromStoresObject1, stateFromStores, stateFromStores1, stateFromStores2];
-  return React.useMemo(() => {
+  return stateFromStores.useMemo(() => {
     if (tmp) {
       const obj = { legacyExperiments: tmp(stateFromStoresObject[6]).parseRegisteredExperiments(stateFromStoresObject) };
       const obj2 = tmp(stateFromStoresObject[6]);
@@ -116,10 +113,10 @@ export const useCodedLinksExperimentEmbeds = function useCodedLinksExperimentEmb
       obj.apexExperiments = tmp(stateFromStoresObject[7]).mergeApexExperiments(stateFromStores, stateFromStores1);
       const obj4 = tmp(stateFromStoresObject[7]);
       obj.apexOverridesInfo = tmp(stateFromStoresObject[7]).getApexExperimentOverridesInfo(stateFromStores2);
-      let tmp = obj;
+      tmp = obj;
       const obj5 = tmp(stateFromStoresObject[7]);
     } else {
-      tmp = closure_12;
+      tmp = outer1_12;
     }
     return tmp;
   }, items5);

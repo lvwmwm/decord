@@ -1,15 +1,14 @@
-// Module ID: 9572
-// Function ID: 74597
+// Module ID: 9579
+// Function ID: 74638
 // Name: items
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getProviderForRequest, isValidGifProvider
 
-// Module 9572 (items)
-const items = [];
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("types/GifProvider.tsx");
+// Module 9579 (items)
+const items = ["tenor", "giphy", "klipy"];
+const result = require("set").fileFinishedImporting("types/GifProvider.tsx");
 
-export const DEFAULT_GIF_PROVIDER_CONFIG = {};
+export const DEFAULT_GIF_PROVIDER_CONFIG = { enabled: false, sendProviderToAPI: false, fallbackProvider: "tenor" };
 export const VALID_GIF_PROVIDERS = items;
 export const isValidGifProvider = function isValidGifProvider(arg0) {
   return items.includes(arg0);

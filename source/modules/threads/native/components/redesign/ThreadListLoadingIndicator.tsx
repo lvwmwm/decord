@@ -1,16 +1,17 @@
-// Module ID: 15283
-// Function ID: 115370
-// Dependencies: []
+// Module ID: 15400
+// Function ID: 117544
+// Dependencies: [31, 33, 4130, 10582, 2]
 
-// Module 15283
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[2]).createStyles({ spinner: { "Null": true, "Null": true } });
-const obj2 = arg1(dependencyMap[2]);
-const memoResult = importAllResult.memo(() => {
+// Module 15400
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_3 = _createForOfIteratorHelperLoose.createStyles({ spinner: { width: 32, height: 32 } });
+const memoResult = require("result").memo(() => {
   const tmp = callback();
-  return jsx(importDefault(dependencyMap[3]), { style: callback().spinner, animate: true });
+  return jsx(importDefault(10582), { style: callback().spinner, animate: true });
 });
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/threads/native/components/redesign/ThreadListLoadingIndicator.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/threads/native/components/redesign/ThreadListLoadingIndicator.tsx");
 
 export default memoResult;

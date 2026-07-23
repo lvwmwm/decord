@@ -1,17 +1,16 @@
-// Module ID: 7956
-// Function ID: 63494
+// Module ID: 7962
+// Function ID: 63531
 // Name: FreemiumAppIconIds
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 7956 (FreemiumAppIconIds)
+// Module 7962 (FreemiumAppIconIds)
 let obj = { DEFAULT: "AppIcon" };
 obj = { BRAND_DARK: "BrandDarkIcon", BRAND_INVERTED: "BrandInvertedIcon", MATTE_LIGHT: "MatteLightIcon", MATTE_DARK: "MatteDarkIcon", PASTEL: "PastelIcon", PIRATE: "PirateIcon", CAMO: "CamoIcon", SUNSET: "SunsetIcon", GALAXY: "GalaxyIcon", Y2K: "Y2KIcon", CHERRY_BLOSSOM: "CherryBlossomIcon", BEANIE: "BeanieIcon", GAMING: "GamingIcon", CIRCUIT: "CircuitIcon", HOLO_WAVES: "HoloWavesIcon", BLUSH: "BlushIcon", ANGRY: "AngryIcon", MANGA: "MangaIcon", CONTROLLER: "ControllerIcon", MUSHROOM: "MushroomIcon", BLURPLE_TWILIGHT: "BlurpleTwilightIcon", IN_RAINBOWS: "InRainbowsIcon", COLOR_WAVE: "ColorWaveIcon", MIDNIGHT_PRISM: "MidnightPrismIcon" };
 obj = { DRIP: "DripIcon", SLIMY: "SlimyIcon", ZOMBIE: "ZombieIcon", CLYDE_STEIN: "ClydeSteinIcon" };
 const merged = Object.assign(obj);
 const merged1 = Object.assign(obj);
 const merged2 = Object.assign(obj);
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/app_icons/AppIconTypes.tsx");
+const result = require("set").fileFinishedImporting("modules/app_icons/AppIconTypes.tsx");
 
 export const FreemiumAppIconIds = obj;
 export const PremiumAppIconIds = obj;

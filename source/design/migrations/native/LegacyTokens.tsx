@@ -1,395 +1,398 @@
-// Module ID: 4970
-// Function ID: 42783
+// Module ID: 4973
+// Function ID: 42801
 // Name: result
-// Dependencies: []
+// Dependencies: [27, 4130, 3976, 689, 3974, 2]
 
-// Module 4970 (result)
-const Platform = require(dependencyMap[0]).Platform;
-const _module = require(dependencyMap[1]);
-const result = _module.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.PRIMARY_230;
+// Module 4973 (result)
+import { Platform } from "get ActivityIndicator";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const result = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.PRIMARY_230;
 });
-const _module1 = require(dependencyMap[1]);
-const result1 = _module1.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_660;
+const result1 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_660;
 });
-const _module2 = require(dependencyMap[1]);
-const result2 = _module2.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.BLACK : unsafe_rawColors.PRIMARY_100;
+const result2 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BLACK : unsafe_rawColors.PRIMARY_100;
 });
-const _module3 = require(dependencyMap[1]);
-const result3 = _module3.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_400;
+const result3 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_400;
 });
-const _module4 = require(dependencyMap[1]);
-const result4 = _module4.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_600;
+const result4 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_600;
 });
-const _module5 = require(dependencyMap[1]);
-const result5 = _module5.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.PRIMARY_100;
+const result5 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.PRIMARY_100;
 });
-const _module6 = require(dependencyMap[1]);
-const result6 = _module6.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.BLACK;
+const result6 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.BLACK;
 });
-const _module7 = require(dependencyMap[1]);
-const result7 = _module7.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_700 : unsafe_rawColors.PRIMARY_100;
+const result7 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_700 : unsafe_rawColors.PRIMARY_100;
 });
-const _module8 = require(dependencyMap[1]);
-const result8 = _module8.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_500;
+const result8 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_500;
 });
-const _module9 = require(dependencyMap[1]);
-const result9 = _module9.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
+const result9 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
 });
-const _module10 = require(dependencyMap[1]);
-const result10 = _module10.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_100;
+const result10 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_100;
 });
-const _module11 = require(dependencyMap[1]);
-const result11 = _module11.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_430;
+const result11 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_430;
 });
-const _module12 = require(dependencyMap[1]);
-const result12 = _module12.experimental_createToken((primaryColor) => {
+const result12 = _createForOfIteratorHelperLoose.experimental_createToken((primaryColor) => {
   if (null == primaryColor.primaryColor) {
-    let PROFILE_GRADIENT_ROLE_PILL_BORDER = importDefault(dependencyMap[3]).colors.BORDER_SUBTLE;
+    let PROFILE_GRADIENT_ROLE_PILL_BORDER = importDefault(689).colors.BORDER_SUBTLE;
   } else {
-    PROFILE_GRADIENT_ROLE_PILL_BORDER = importDefault(dependencyMap[3]).colors.PROFILE_GRADIENT_ROLE_PILL_BORDER;
+    PROFILE_GRADIENT_ROLE_PILL_BORDER = importDefault(689).colors.PROFILE_GRADIENT_ROLE_PILL_BORDER;
   }
   return PROFILE_GRADIENT_ROLE_PILL_BORDER;
 });
-const _module13 = require(dependencyMap[1]);
-const result13 = _module13.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_260 : unsafe_rawColors.BRAND_200;
+const result13 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_260 : unsafe_rawColors.BRAND_200;
 });
-const _module14 = require(dependencyMap[1]);
-const result14 = _module14.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_700 : unsafe_rawColors.PRIMARY_260;
+const result14 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_700 : unsafe_rawColors.PRIMARY_260;
 });
-const _module15 = require(dependencyMap[1]);
-const result15 = _module15.experimental_createToken((theme) => {
+const result15 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
-    let PRIMARY_160 = require(dependencyMap[4]).hexWithOpacity(importDefault(dependencyMap[3]).unsafe_rawColors.WHITE, 0.25);
-    const obj2 = require(dependencyMap[4]);
+    let PRIMARY_160 = require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.WHITE, 0.25);
+    const obj2 = require(3974) /* hexToRgb */;
   } else {
-    PRIMARY_160 = importDefault(dependencyMap[3]).unsafe_rawColors.PRIMARY_160;
+    PRIMARY_160 = importDefault(689).unsafe_rawColors.PRIMARY_160;
   }
   return PRIMARY_160;
 });
-const _module16 = require(dependencyMap[1]);
-const result16 = _module16.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.GUILD_BOOSTING_PINK;
+const result16 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.GUILD_BOOSTING_PINK;
 });
-const _module17 = require(dependencyMap[1]);
-const result17 = _module17.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_360 : unsafe_rawColors.PRIMARY_400;
+const result17 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_360 : unsafe_rawColors.PRIMARY_400;
 });
-const _module18 = require(dependencyMap[1]);
-const result18 = _module18.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.WHITE;
+const result18 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.WHITE;
 });
-const _module19 = require(dependencyMap[1]);
-const result19 = _module19.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
+const result19 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
-const _module20 = require(dependencyMap[1]);
-const result20 = _module20.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_400 : unsafe_rawColors.PRIMARY_360;
+const result20 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_400 : unsafe_rawColors.PRIMARY_360;
 });
-const _module21 = require(dependencyMap[1]);
-const result21 = _module21.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_330 : unsafe_rawColors.BRAND_530;
+const result21 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_330 : unsafe_rawColors.BRAND_530;
 });
-const _module22 = require(dependencyMap[1]);
-const result22 = _module22.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.BLACK : unsafe_rawColors.PRIMARY_400;
+const result22 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BLACK : unsafe_rawColors.PRIMARY_400;
 });
-const _module23 = require(dependencyMap[1]);
-const result23 = _module23.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_700 : unsafe_rawColors.WHITE;
+const result23 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_700 : unsafe_rawColors.WHITE;
 });
-const _module24 = require(dependencyMap[1]);
-const result24 = _module24.experimental_createToken((theme) => {
+const result24 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
-    let BACKGROUND_BASE_LOW = require(dependencyMap[4]).hexWithOpacity(importDefault(dependencyMap[3]).unsafe_rawColors.WHITE, 0.24);
-    const obj2 = require(dependencyMap[4]);
+    let BACKGROUND_BASE_LOW = require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.WHITE, 0.24);
+    const obj2 = require(3974) /* hexToRgb */;
   } else {
-    BACKGROUND_BASE_LOW = importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOW;
+    BACKGROUND_BASE_LOW = importDefault(689).colors.BACKGROUND_BASE_LOW;
   }
   return BACKGROUND_BASE_LOW;
 });
-const _module25 = require(dependencyMap[1]);
-const result25 = _module25.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_600 : unsafe_rawColors.WHITE;
+const result25 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_600 : unsafe_rawColors.WHITE;
 });
-const _module26 = require(dependencyMap[1]);
-const result26 = _module26.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PLATFORM_PLAYSTATION;
+const result26 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PLATFORM_PLAYSTATION;
 });
-const _module27 = require(dependencyMap[1]);
-const result27 = _module27.experimental_createToken((theme) => {
+const result27 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
-    let WHITE = require(dependencyMap[4]).hexWithOpacity(importDefault(dependencyMap[3]).unsafe_rawColors.WHITE, 0.24);
-    const obj2 = require(dependencyMap[4]);
+    let WHITE = require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.WHITE, 0.24);
+    const obj2 = require(3974) /* hexToRgb */;
   } else {
-    WHITE = importDefault(dependencyMap[3]).unsafe_rawColors.WHITE;
+    WHITE = importDefault(689).unsafe_rawColors.WHITE;
   }
   return WHITE;
 });
-const _module28 = require(dependencyMap[1]);
-const result28 = _module28.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.RED_500 : unsafe_rawColors.RED_400;
+const result28 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.RED_500 : unsafe_rawColors.RED_400;
 });
-const _module29 = require(dependencyMap[1]);
-const result29 = _module29.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.RED_400 : unsafe_rawColors.RED_360;
+const result29 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.RED_400 : unsafe_rawColors.RED_360;
 });
-const _module30 = require(dependencyMap[1]);
-const result30 = _module30.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_700 : unsafe_rawColors.PRIMARY_230;
+const result30 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_700 : unsafe_rawColors.PRIMARY_230;
 });
-const _module31 = require(dependencyMap[1]);
-const result31 = _module31.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_800 : unsafe_rawColors.PRIMARY_200;
+const result31 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_800 : unsafe_rawColors.PRIMARY_200;
 });
-const _module32 = require(dependencyMap[1]);
-const result32 = _module32.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.YELLOW_460 : unsafe_rawColors.YELLOW_200;
+const result32 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.YELLOW_460 : unsafe_rawColors.YELLOW_200;
 });
-const _module33 = require(dependencyMap[1]);
-const result33 = _module33.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_400 : unsafe_rawColors.PRIMARY_300;
+const result33 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_400 : unsafe_rawColors.PRIMARY_300;
 });
-const _module34 = require(dependencyMap[1]);
-const result34 = _module34.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
+const result34 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
 });
-const _module35 = require(dependencyMap[1]);
-const result35 = _module35.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_200 : unsafe_rawColors.PRIMARY_400;
+const result35 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_200 : unsafe_rawColors.PRIMARY_400;
 });
-const _module36 = require(dependencyMap[1]);
-const result36 = _module36.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
+const result36 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
 });
-const _module37 = require(dependencyMap[1]);
-const result37 = _module37.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_330 : unsafe_rawColors.PRIMARY_460;
+const result37 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_330 : unsafe_rawColors.PRIMARY_460;
 });
-const _module38 = require(dependencyMap[1]);
-const result38 = _module38.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_200;
+const result38 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_200;
 });
-const _module39 = require(dependencyMap[1]);
-const result39 = _module39.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_230;
+const result39 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_230;
 });
-const _module40 = require(dependencyMap[1]);
-const result40 = _module40.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_600 : unsafe_rawColors.PRIMARY_130;
+const result40 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_600 : unsafe_rawColors.PRIMARY_130;
 });
-const _module41 = require(dependencyMap[1]);
-const result41 = _module41.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_660 : unsafe_rawColors.PRIMARY_130;
+const result41 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_660 : unsafe_rawColors.PRIMARY_130;
 });
-const _module42 = require(dependencyMap[1]);
-const result42 = _module42.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_800 : unsafe_rawColors.PRIMARY_300;
+const result42 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_800 : unsafe_rawColors.PRIMARY_300;
 });
-const _module43 = require(dependencyMap[1]);
-const result43 = _module43.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_660 : unsafe_rawColors.PRIMARY_300;
+const result43 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_660 : unsafe_rawColors.PRIMARY_300;
 });
-const _module44 = require(dependencyMap[1]);
-const result44 = _module44.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.TRANSPARENT;
+const result44 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.TRANSPARENT;
 });
-const _module45 = require(dependencyMap[1]);
-const result45 = _module45.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.TRANSPARENT : unsafe_rawColors.WHITE;
+const result45 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.TRANSPARENT : unsafe_rawColors.WHITE;
 });
-const _module46 = require(dependencyMap[1]);
-const result46 = _module46.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
-  return require(dependencyMap[2]).isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.PRIMARY_160;
+const result46 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  return require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_630 : unsafe_rawColors.PRIMARY_160;
 });
-const _module47 = require(dependencyMap[1]);
-const result47 = _module47.experimental_createToken((theme) => {
+const result47 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let str = "#dee0e4";
   if (obj.isThemeDark(theme.theme)) {
     str = "#393c42";
   }
   return str;
 });
-const _module48 = require(dependencyMap[1]);
-const result48 = _module48.experimental_createToken((theme) => {
+const result48 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let num = 1;
   if (obj.isThemeDark(theme.theme)) {
     num = 0;
   }
   return num;
 });
-const _module49 = require(dependencyMap[1]);
-const result49 = _module49.experimental_createToken((theme) => {
+const result49 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let num = 0.8;
   if (obj.isThemeDark(theme.theme)) {
     num = 1;
   }
   return num;
 });
-const _module50 = require(dependencyMap[1]);
-const result50 = _module50.experimental_createToken((theme) => {
+const result50 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let num = 0.4;
   if (obj.isThemeDark(theme.theme)) {
     num = 1;
   }
   return num;
 });
-const _module51 = require(dependencyMap[1]);
-const result51 = _module51.experimental_createToken((theme) => {
+const result51 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let num = 0.2;
   if (obj.isThemeDark(theme.theme)) {
     num = 0.3;
   }
   return num;
 });
-const _module52 = require(dependencyMap[1]);
-const result52 = _module52.experimental_createToken((theme) => {
+const result52 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let num = 0.16;
   if (obj.isThemeDark(theme.theme)) {
     num = 0.24;
   }
   return num;
 });
-const _module53 = require(dependencyMap[1]);
-const result53 = _module53.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
+const result53 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   if (isThemeDarkResult) {
     const PRIMARY_200 = unsafe_rawColors.PRIMARY_200;
   } else {
     const PRIMARY_500 = unsafe_rawColors.PRIMARY_500;
   }
 });
-const _module54 = require(dependencyMap[1]);
-const result54 = _module54.experimental_createToken((theme) => {
+const result54 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let str = "rgba(0, 0, 0, 0.16)";
   if (obj.isThemeDark(theme.theme)) {
     str = "rgba(0, 0, 0, 0.24)";
   }
   return str;
 });
-const _module55 = require(dependencyMap[1]);
-const result55 = _module55.experimental_createToken((theme) => {
+const result55 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let str = "rgba(106, 116, 128, 0.16)";
   if (obj.isThemeDark(theme.theme)) {
     str = "rgba(79, 84, 92, 0.4)";
   }
   return str;
 });
-const _module56 = require(dependencyMap[1]);
-const result56 = _module56.experimental_createToken((theme) => {
+const result56 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   let str = "rgba(106, 116, 128, 0.16)";
   if (obj.isThemeDark(theme.theme)) {
     str = "rgba(79, 84, 92, 0.4)";
   }
   return str;
 });
-const _module57 = require(dependencyMap[1]);
-const result57 = _module57.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const isThemeDarkResult = require(dependencyMap[2]).isThemeDark(theme.theme);
-  const hexWithOpacity = require(dependencyMap[4]).hexWithOpacity;
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
+const result57 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const isThemeDarkResult = require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme);
+  const hexWithOpacity = require(3974) /* hexToRgb */.hexWithOpacity;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   if (isThemeDarkResult) {
     let hexWithOpacityResult = hexWithOpacity(unsafe_rawColors.PRIMARY_100, 0.5);
   } else {
@@ -397,12 +400,11 @@ const result57 = _module57.experimental_createToken((theme) => {
   }
   return hexWithOpacityResult;
 });
-const _module58 = require(dependencyMap[1]);
-const result58 = _module58.experimental_createToken((theme) => {
-  const obj = require(dependencyMap[2]);
-  const isThemeDarkResult = require(dependencyMap[2]).isThemeDark(theme.theme);
-  const hexWithOpacity = require(dependencyMap[4]).hexWithOpacity;
-  const unsafe_rawColors = importDefault(dependencyMap[3]).unsafe_rawColors;
+const result58 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
+  const obj = require(3976) /* AccessibilityAnnouncer */;
+  const isThemeDarkResult = require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme.theme);
+  const hexWithOpacity = require(3974) /* hexToRgb */.hexWithOpacity;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
   if (isThemeDarkResult) {
     let hexWithOpacityResult = hexWithOpacity(unsafe_rawColors.PRIMARY_500, 0.5);
   } else {
@@ -410,18 +412,16 @@ const result58 = _module58.experimental_createToken((theme) => {
   }
   return hexWithOpacityResult;
 });
-const _module59 = require(dependencyMap[1]);
-const result59 = _module59.experimental_createToken((theme) => {
+const result59 = _createForOfIteratorHelperLoose.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
-    let PRIMARY_500 = importDefault(dependencyMap[3]).unsafe_rawColors.PRIMARY_500;
+    let PRIMARY_500 = importDefault(689).unsafe_rawColors.PRIMARY_500;
   } else {
-    PRIMARY_500 = require(dependencyMap[4]).hexWithOpacity(importDefault(dependencyMap[3]).unsafe_rawColors.PRIMARY_500, 0.3);
-    const obj2 = require(dependencyMap[4]);
+    PRIMARY_500 = require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.PRIMARY_500, 0.3);
+    const obj2 = require(3974) /* hexToRgb */;
   }
   return PRIMARY_500;
 });
-const _module60 = require(dependencyMap[5]);
-const result60 = _module60.fileFinishedImporting("design/migrations/native/LegacyTokens.tsx");
+const result60 = require("AccessibilityAnnouncer").fileFinishedImporting("design/migrations/native/LegacyTokens.tsx");
 
 export const DARK_PRIMARY_630_LIGHT_PRIMARY_230 = result;
 export const DARK_WHITE_500_LIGHT_PRIMARY_660 = result1;

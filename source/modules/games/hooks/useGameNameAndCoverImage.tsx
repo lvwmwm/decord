@@ -1,15 +1,15 @@
-// Module ID: 11980
-// Function ID: 92633
+// Module ID: 11992
+// Function ID: 92687
 // Name: useGameNameAndCoverImage
-// Dependencies: [0, 0, 0]
+// Dependencies: [6865, 1212, 2]
 // Exports: default
 
-// Module 11980 (useGameNameAndCoverImage)
-const result = require("__exportStarResult1").fileFinishedImporting("modules/games/hooks/useGameNameAndCoverImage.tsx");
+// Module 11992 (useGameNameAndCoverImage)
+const result = require("set").fileFinishedImporting("modules/games/hooks/useGameNameAndCoverImage.tsx");
 
 export default function useGameNameAndCoverImage(arg0, arg1, arg2) {
   let stringResult = arg1;
-  let obj = require(dependencyMap[0]);
+  let obj = require(6865) /* importDefaultResult1 */;
   const game = obj.useGame(arg0);
   const data = game.data;
   obj = {};
@@ -26,8 +26,8 @@ export default function useGameNameAndCoverImage(arg0, arg1, arg2) {
     stringResult = name;
   }
   if (null == stringResult) {
-    const intl = require(dependencyMap[1]).intl;
-    stringResult = intl.string(require(dependencyMap[1]).t.GIWFlF);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1212) /* getSystemLocale */.t.GIWFlF);
   }
   obj.gameName = stringResult;
   obj.isLoading = game.isLoading;

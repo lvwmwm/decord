@@ -1,51 +1,47 @@
-// Module ID: 8768
-// Function ID: 69308
+// Module ID: 8775
+// Function ID: 69349
 // Name: CollectiblesShopGiftModal
-// Dependencies: []
+// Dependencies: [31, 6774, 653, 33, 8776, 8271, 8265, 566, 5464, 5484, 1832, 6773, 3789, 8777, 1212, 8778, 11813, 11816, 2]
 // Exports: default
 
-// Module 8768 (CollectiblesShopGiftModal)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = arg1(dependencyMap[2]).COLLECTIBLES_APPLICATION_ID;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/collectibles/native/CollectiblesShopGiftModal.tsx");
+// Module 8775 (CollectiblesShopGiftModal)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { COLLECTIBLES_APPLICATION_ID as closure_5 } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/collectibles/native/CollectiblesShopGiftModal.tsx");
 
 export default function CollectiblesShopGiftModal(skuId) {
   let analyticsLocations;
   let onGiftModalDismiss;
   skuId = skuId.skuId;
-  const arg1 = skuId;
   ({ analyticsLocations, onGiftModalDismiss } = skuId);
-  const importDefault = onGiftModalDismiss;
   const giftingOrigin = skuId.giftingOrigin;
-  const dependencyMap = giftingOrigin;
-  let closure_5;
-  const GiftingBadgeExperiment = arg1(dependencyMap[4]).GiftingBadgeExperiment;
+  skuId = undefined;
+  const GiftingBadgeExperiment = skuId(giftingOrigin[4]).GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: "CollectiblesShopGiftModal" }).enabled;
-  const React = enabled;
   const items = [enabled];
-  const effect = React.useEffect(() => {
+  const effect = enabled.useEffect(() => {
     if (enabled) {
       const badge = skuId(giftingOrigin[5]).fetchBadge(skuId(giftingOrigin[6]).BadgeId.GIFTING);
       const obj = skuId(giftingOrigin[5]);
     }
   }, items);
-  let obj = arg1(dependencyMap[7]);
-  const items1 = [closure_4];
+  let obj = skuId(giftingOrigin[7]);
+  const items1 = [skuId2];
   const items2 = [skuId];
-  let skuId2 = obj.useStateFromStores(items1, () => skuId2.getProduct(skuId), items2);
-  closure_4 = skuId2;
+  skuId2 = obj.useStateFromStores(items1, () => skuId2.getProduct(skuId), items2);
   const items3 = [];
-  const tmp2 = importDefault(dependencyMap[8]);
-  items3[HermesBuiltin.arraySpread(analyticsLocations, 0)] = importDefault(dependencyMap[9]).COLLECTIBLES_MOBILE_GIFT_MODAL;
+  const tmp2 = onGiftModalDismiss(giftingOrigin[8]);
+  items3[HermesBuiltin.arraySpread(analyticsLocations, 0)] = onGiftModalDismiss(giftingOrigin[9]).COLLECTIBLES_MOBILE_GIFT_MODAL;
   skuId = undefined;
   if (null != skuId2) {
     skuId = skuId2.skuId;
   }
-  closure_5 = skuId;
   const items4 = [skuId];
-  let renderProductDetails = React.useCallback((arg0) => {
+  let renderProductDetails = enabled.useCallback((arg0) => {
     if (obj.isNullOrEmpty(skuId)) {
       let resolved = Promise.resolve(false);
     } else {
@@ -57,13 +53,13 @@ export default function CollectiblesShopGiftModal(skuId) {
   if (null == skuId2) {
     return null;
   } else {
-    let tmp8 = importDefault;
+    let tmp8 = onGiftModalDismiss;
     if (obj2.isCollectibleGiftingSupported()) {
       tmp8 = tmp8(tmp9[15]);
       obj = {};
       skuId2 = skuId2.skuId;
       obj.skuId = skuId2;
-      obj.applicationId = closure_5;
+      obj.applicationId = skuId;
       obj.analyticsLocations = tmp2(items3).analyticsLocations;
       obj.lockedRecipientUser = skuId.lockedRecipientUser;
       obj.onGiftModalDismiss = onGiftModalDismiss;
@@ -73,7 +69,7 @@ export default function CollectiblesShopGiftModal(skuId) {
         let isValidRecipient;
         let recipientUser;
         ({ recipientUser, isValidRecipient } = arg0);
-        return callback(onGiftModalDismiss(giftingOrigin[16]), { product: skuId2, recipientUser, isValidRecipient, isGift: true });
+        return outer1_6(onGiftModalDismiss(giftingOrigin[16]), { product: skuId2, recipientUser, isValidRecipient, isGift: true });
       };
       obj.renderProductDetails = renderProductDetails;
       obj.renderPurchaseSection = function renderPurchaseSection(arg0) {
@@ -81,16 +77,16 @@ export default function CollectiblesShopGiftModal(skuId) {
         let giftOptions;
         let isPurchaseDisabled;
         ({ isPurchaseDisabled, giftOptions, baseAnalyticsFields } = arg0);
-        return callback(onGiftModalDismiss(giftingOrigin[17]), { product: skuId2, isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin, onGiftModalDismiss });
+        return outer1_6(onGiftModalDismiss(giftingOrigin[17]), { product: skuId2, isPurchaseDisabled, giftOptions, baseAnalyticsFields, giftingOrigin, onGiftModalDismiss });
       };
       let tmp7Result = tmp7(tmp8, obj);
     } else {
       obj = { onDismiss: onGiftModalDismiss };
-      const intl = arg1(tmp9[14]).intl;
-      obj.title = intl.string(arg1(tmp9[14]).t.JCFN/y);
+      const intl = skuId(tmp9[14]).intl;
+      obj.title = intl.string(skuId(tmp9[14]).t["JCFN/y"]);
       tmp7Result = tmp7(tmp8(tmp9[13]), obj);
       const tmp8Result = tmp8(tmp9[13]);
     }
-    const obj2 = arg1(dependencyMap[12]);
+    obj2 = skuId(giftingOrigin[12]);
   }
 };

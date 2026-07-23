@@ -1,12 +1,12 @@
 // Module ID: 3547
-// Function ID: 27599
+// Function ID: 27565
 // Name: _typeof
-// Dependencies: []
+// Dependencies: [3517, 3515]
 
 // Module 3547 (_typeof)
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
-    const _Symbol = Symbol;
+    let _Symbol = Symbol;
     if ("symbol" === typeof Symbol.iterator) {
       function _typeof(arg0) {
         return typeof arg0;
@@ -42,16 +42,16 @@ function _defineProperties(arg0, arg1) {
   }
 }
 function _setPrototypeOf(arg0, arg1) {
-  const tmp = Object.setPrototypeOf || function _setPrototypeOf(arg0, arg1) {
+  const tmp = Object.setPrototypeOf || (function _setPrototypeOf(arg0, arg1) {
     arg0.__proto__ = arg1;
     return arg0;
-  };
+  });
   const _setPrototypeOf = tmp;
   return tmp(arg0, arg1);
 }
 function _createSuper(arg0) {
-  const require = arg0;
-  let closure_1 = function _isNativeReflectConstruct() {
+  let closure_0 = arg0;
+  let closure_1 = (function _isNativeReflectConstruct() {
     if ("undefined" !== typeof Reflect) {
       const _Reflect3 = Reflect;
       if (Reflect.construct) {
@@ -75,22 +75,22 @@ function _createSuper(arg0) {
       }
     }
     return false;
-  }();
+  })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = callback3(arg0);
+    const obj = outer1_7(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, callback3(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      callback2(self);
+      outer1_6(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== callback(constructResult)) {
+      if ("object" !== outer1_2(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -108,7 +108,7 @@ function _assertThisInitialized(arg0) {
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
-    const _Object = Object;
+    let _Object = Object;
     let _getPrototypeOf = Object.getPrototypeOf;
   } else {
     _getPrototypeOf = function _getPrototypeOf(arg0) {
@@ -125,7 +125,7 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { value, enumerable: true, configurable: true, writable: true };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
@@ -133,10 +133,10 @@ function _defineProperty(arg0, arg1, value) {
   return arg0;
 }
 
-export const ISOTimezoneParser = (Parser) => {
-  class ISOTimezoneParser {
+export const FractionOfSecondParser = ((Parser) => {
+  class FractionOfSecondParser {
     constructor() {
-      if (this instanceof ISOTimezoneParser) {
+      if (this instanceof FractionOfSecondParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -148,21 +148,21 @@ export const ISOTimezoneParser = (Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = closure_8;
-        tmp12 = closure_6;
+        tmp11 = outer1_8;
+        tmp12 = outer1_6;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = closure_6(applyResult);
+        tmp16 = outer1_6(applyResult);
         str2 = "priority";
-        num2 = 10;
-        tmp17 = closure_8(applyResult, "priority", 10);
-        tmp18 = closure_6(applyResult);
+        num2 = 30;
+        tmp17 = outer1_8(applyResult, "priority", 30);
+        tmp18 = outer1_6(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_8(applyResult, "incompatibleTokens", ["Y", "R", "q"]);
+        tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -176,11 +176,10 @@ export const ISOTimezoneParser = (Parser) => {
       }
     }
   }
-  const dependencyMap = ISOTimezoneParser;
   if ("function" !== typeof Parser) {
-    class ISOTimezoneParser {
+    class FractionOfSecondParser {
       constructor() {
-        if (this instanceof ISOTimezoneParser) {
+        if (this instanceof FractionOfSecondParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -192,21 +191,21 @@ export const ISOTimezoneParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 10;
-          tmp17 = closure_8(applyResult, "priority", 10);
-          tmp18 = closure_6(applyResult);
+          num2 = 30;
+          tmp17 = outer1_8(applyResult, "priority", 30);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", ["Y", "R", "q"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -225,12 +224,12 @@ export const ISOTimezoneParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { "": null, children: null, "": null, value: ISOTimezoneParser };
-  ISOTimezoneParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: FractionOfSecondParser, writable: true, configurable: true };
+  FractionOfSecondParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class ISOTimezoneParser {
+    class FractionOfSecondParser {
       constructor() {
-        if (this instanceof ISOTimezoneParser) {
+        if (this instanceof FractionOfSecondParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -242,21 +241,21 @@ export const ISOTimezoneParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_8;
-          tmp12 = closure_6;
+          tmp11 = outer1_8;
+          tmp12 = outer1_6;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_6(applyResult);
+          tmp16 = outer1_6(applyResult);
           str2 = "priority";
-          num2 = 10;
-          tmp17 = closure_8(applyResult, "priority", 10);
-          tmp18 = closure_6(applyResult);
+          num2 = 30;
+          tmp17 = outer1_8(applyResult, "priority", 30);
+          tmp18 = outer1_6(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_8(applyResult, "incompatibleTokens", ["Y", "R", "q"]);
+          tmp19 = outer1_8(applyResult, "incompatibleTokens", ["t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -270,38 +269,27 @@ export const ISOTimezoneParser = (Parser) => {
         }
       }
     }
-    _setPrototypeOf(ISOTimezoneParser, Parser);
+    _setPrototypeOf(FractionOfSecondParser, Parser);
   }
-  let closure_0 = _createSuper(ISOTimezoneParser);
+  let closure_0 = _createSuper(FractionOfSecondParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1) {
-      if ("x" === arg1) {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.basicOptionalMinutes, arg0);
-      } else if ("xx" === arg1) {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.basic, arg0);
-      } else if ("xxxx" === arg1) {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.basicOptionalSeconds, arg0);
-      } else if ("xxxxx" === arg1) {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.extendedOptionalSeconds, arg0);
-      } else {
-        return callback(ISOTimezoneParser[0]).parseTimezonePattern(callback(ISOTimezoneParser[1]).timezonePatterns.extended, arg0);
-      }
+      const callback = arg1;
+      return callback(FractionOfSecondParser[0]).mapValue(callback(FractionOfSecondParser[0]).parseNDigits(arg1.length, arg0), function valueCallback(arg0) {
+        return Math.floor(arg0 * Math.pow(10, 3 - length.length));
+      });
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "set",
-    value: function set(getTime, timestampIsSet) {
-      let date = getTime;
-      if (!timestampIsSet.timestampIsSet) {
-        const _Date = Date;
-        date = new Date(getTime.getTime() - arg2);
-      }
-      return date;
+    value: function set(setUTCMilliseconds) {
+      setUTCMilliseconds.setUTCMilliseconds(arg2);
+      return setUTCMilliseconds;
     }
   };
   items[1] = obj;
-  _defineProperties(ISOTimezoneParser.prototype, items);
-  return ISOTimezoneParser;
-}(require(dependencyMap[2]).Parser);
+  _defineProperties(FractionOfSecondParser.prototype, items);
+  return FractionOfSecondParser;
+})(require("_defineProperties").Parser);

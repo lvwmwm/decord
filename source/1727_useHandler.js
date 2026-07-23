@@ -1,12 +1,15 @@
 // Module ID: 1727
-// Function ID: 19375
+// Function ID: 19376
 // Name: useHandler
-// Dependencies: []
+// Dependencies: [31, 1612, 1607, 1593, 1728, 1585]
 // Exports: useHandler
 
 // Module 1727 (useHandler)
-const _module = require(dependencyMap[0]);
-({ useEffect: closure_2, useRef: closure_3 } = _module);
+import result from "result";
+
+let closure_2;
+let closure_3;
+({ useEffect: closure_2, useRef: closure_3 } = result);
 
 export const useHandler = function useHandler(handler, items10) {
   let context;
@@ -14,28 +17,28 @@ export const useHandler = function useHandler(handler, items10) {
   const tmp = callback2(null);
   const require = tmp;
   if (null === tmp.current) {
-    let obj = require(dependencyMap[1]);
+    let obj = require(1612) /* isPlainJSObject */;
     obj = {};
     obj.context = obj.makeShareable({});
     obj.savedDependencies = [];
     tmp.current = obj;
   }
   callback(() => () => {
-    closure_0.current = null;
+    outer1_0.current = null;
   }, []);
   ({ context, savedDependencies } = tmp.current);
   for (const key10026 in arg0) {
     let tmp15 = key10026;
-    let tmp16 = closure_0;
-    let tmp17 = closure_1;
-    let obj8 = closure_0(closure_1[2]);
+    let tmp16 = require;
+    let tmp17 = dependencyMap;
+    let obj8 = require(1607) /* isWorkletFunction */;
     if (obj8.isWorkletFunction(arg0[key10026])) {
       continue;
     } else {
-      let tmp5 = closure_0;
-      let tmp6 = closure_1;
+      let tmp5 = require;
+      let tmp6 = dependencyMap;
       let num2 = 3;
-      let ReanimatedError = closure_0(closure_1[3]).ReanimatedError;
+      let ReanimatedError = require(1593) /* processStack */.ReanimatedError;
       let prototype = ReanimatedError.prototype;
       let tmp7 = new.target;
       let str = "Passed a function that is not a worklet. Please provide a worklet function.";
@@ -45,15 +48,15 @@ export const useHandler = function useHandler(handler, items10) {
       throw reanimatedError;
     }
   }
-  const dependencies = require(dependencyMap[4]).buildDependencies(items10, handler);
-  const obj3 = require(dependencyMap[4]);
+  const dependencies = require(1728) /* buildWorkletsHash */.buildDependencies(items10, handler);
+  const obj3 = require(1728) /* buildWorkletsHash */;
   tmp.current.savedDependencies = dependencies;
-  obj = { context, doDependenciesDiffer: !require(dependencyMap[4]).areDependenciesEqual(dependencies, savedDependencies) };
-  const obj4 = require(dependencyMap[4]);
-  let isWebResult = require(dependencyMap[5]).isWeb();
+  obj = { context, doDependenciesDiffer: !require(1728) /* buildWorkletsHash */.areDependenciesEqual(dependencies, savedDependencies) };
+  const obj4 = require(1728) /* buildWorkletsHash */;
+  let isWebResult = require(1585) /* isJest */.isWeb();
   if (!isWebResult) {
-    isWebResult = require(dependencyMap[5]).isJest();
-    const obj7 = require(dependencyMap[5]);
+    isWebResult = require(1585) /* isJest */.isJest();
+    const obj7 = require(1585) /* isJest */;
   }
   obj.useWeb = isWebResult;
   return obj;

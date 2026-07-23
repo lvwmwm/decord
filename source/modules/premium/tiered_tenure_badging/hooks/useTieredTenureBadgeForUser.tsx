@@ -1,20 +1,22 @@
-// Module ID: 8552
-// Function ID: 67994
+// Module ID: 8558
+// Function ID: 68031
 // Name: useTieredTenureBadgeForUser
-// Dependencies: []
+// Dependencies: [6856, 566, 6877, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 8552 (useTieredTenureBadgeForUser)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTieredTenureBadgeForUser.tsx");
+// Module 8558 (useTieredTenureBadgeForUser)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("getTieredTenureBadgeData").fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTieredTenureBadgeForUser.tsx");
 
 export const useTieredTenureBadgeForUser = function useTieredTenureBadgeForUser(id) {
-  const arg1 = id;
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => {
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
     let userProfile = null;
-    if (null != arg0) {
-      userProfile = userProfile.getUserProfile(arg0);
+    if (null != closure_0) {
+      userProfile = outer1_2.getUserProfile(closure_0);
     }
     if (null != userProfile) {
       const premiumSince = userProfile.premiumSince;
@@ -31,10 +33,10 @@ export const useTieredTenureBadgeForUser = function useTieredTenureBadgeForUser(
         }
         if (!tmp5) {
           const item = arr.forEach((id) => {
-            const tieredTenureBadge = tieredTenureBadge(closure_1[2]).getTieredTenureBadge(id.id);
+            const tieredTenureBadge = callback(outer2_1[2]).getTieredTenureBadge(id.id);
           });
         }
-        tmp4 = arg0;
+        tmp4 = closure_0;
       }
     }
     return tmp4;

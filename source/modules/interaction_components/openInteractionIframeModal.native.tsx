@@ -1,19 +1,20 @@
-// Module ID: 15966
-// Function ID: 122459
+// Module ID: 16083
+// Function ID: 124632
 // Name: _openInteractionIframeModal
-// Dependencies: []
+// Dependencies: [5, 16084, 4337, 16085, 1934, 2]
 // Exports: default
 
-// Module 15966 (_openInteractionIframeModal)
+// Module 16083 (_openInteractionIframeModal)
+import set from "set";
+import { INTERACTION_IFRAME_MODAL_KEY as closure_4 } from "INTERACTION_IFRAME_MODAL_KEY";
+
+const require = arg1;
 function _openInteractionIframeModal() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _openInteractionIframeModal = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).INTERACTION_IFRAME_MODAL_KEY;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/interaction_components/openInteractionIframeModal.native.tsx");
+const result = require("module_4337").fileFinishedImporting("modules/interaction_components/openInteractionIframeModal.native.tsx");
 
 export default function openInteractionIframeModal() {
   return _openInteractionIframeModal(...arguments);

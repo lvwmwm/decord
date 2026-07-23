@@ -1,23 +1,23 @@
-// Module ID: 11148
-// Function ID: 86694
+// Module ID: 11158
+// Function ID: 86744
 // Name: useActivityApplications
-// Dependencies: []
+// Dependencies: [31, 11159, 10486, 2]
 // Exports: useActivityApplications
 
-// Module 11148 (useActivityApplications)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useActivityApplications.tsx");
+// Module 11158 (useActivityApplications)
+import result from "result";
+
+const require = arg1;
+const result = require("_runPrimaryAppCommandOrJoinEmbeddedActivity").fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useActivityApplications.tsx");
 
 export const useActivityApplications = function useActivityApplications(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const fetchesShelf = guildId.fetchesShelf;
-  const importDefault = fetchesShelf;
   const items = [fetchesShelf, guildId];
-  const mapped = importDefault(dependencyMap[1])({ guildId }).map((application) => application.application);
+  const mapped = fetchesShelf(11159)({ guildId }).map((application) => application.application);
   const effect = React.useEffect(() => {
     if (fetchesShelf) {
-      let obj = guildId(closure_2[2]);
+      let obj = guildId(outer1_2[2]);
       obj = { guildId };
       const shelf = obj.fetchShelf(obj);
     }

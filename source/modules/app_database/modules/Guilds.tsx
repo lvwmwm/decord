@@ -1,52 +1,62 @@
-// Module ID: 6888
-// Function ID: 54735
+// Module ID: 6893
+// Function ID: 54769
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 1391, 1194, 1917, 1910, 1838, 3, 1882, 1912, 1914, 1387, 2]
 
-// Module 6888 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6893 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import { updateJoinedAt } from "isGuildOwner";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "isGuildOwner";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +67,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,21 +93,12 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const updateJoinedAt = arg1(dependencyMap[3]).updateJoinedAt;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let importDefaultResult = importDefault(dependencyMap[8]);
 importDefaultResult = new importDefaultResult("Guilds");
-let tmp4 = () => {
+let tmp4 = (() => {
   class Guilds {
     constructor() {
-      f54754 = this;
-      tmp = closure_4(this, Guilds);
+      self = this;
+      tmp = outer1_4(this, Guilds);
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {
               return self.handleBackgroundSync(arg0, arg1);
@@ -133,25 +134,24 @@ let tmp4 = () => {
       return;
     }
   }
-  const dependencyMap = Guilds;
   let obj = { key: "getAsync" };
   let closure_1 = callback(async (arg0) => {
     const nowResult = performance.now();
-    const obj = callback(closure_2[9]);
-    const arr = yield callback(closure_2[9]).guilds(arg0).getMany();
-    closure_11.verbose("loaded in " + performance.now() - nowResult + "ms (guilds: " + arr.length + ")");
+    const obj = callback(Guilds[9]);
+    const arr = yield callback(Guilds[9]).guilds(arg0).getMany();
+    outer2_11.verbose("loaded in " + performance.now() - nowResult + "ms (guilds: " + arr.length + ")");
     return arr;
   });
   obj.value = function getAsync() {
     return callback2(...arguments);
   };
-  const items = [obj, , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , ];
   obj = { key: "getOneAsync" };
   let closure_0 = callback(async (arg0, arg1) => {
-    const obj = callback(closure_2[9]);
-    return yield callback(closure_2[9]).guilds(arg0).get(arg1);
+    const obj = callback(Guilds[9]);
+    return yield callback(Guilds[9]).guilds(arg0).get(arg1);
   });
-  obj.value = function getOneAsync(arg0, guildId) {
+  obj.value = function getOneAsync(closure_0, guildId) {
     return callback(...arguments);
   };
   items[1] = obj;
@@ -160,7 +160,7 @@ let tmp4 = () => {
     value(guilds) {
       let iter3;
       const self = this;
-      const tmp = callback5(guilds.guilds);
+      const tmp = outer1_12(guilds.guilds);
       const iter = tmp();
       let iter2 = iter;
       if (!iter.done) {
@@ -168,41 +168,41 @@ let tmp4 = () => {
           let putResult = iter2.value;
           let tmp3 = tmp2;
           if ("unavailable" !== putResult.data_mode) {
-            let tmp18 = closure_10;
-            let guild = closure_10.getGuild(putResult.id);
+            let tmp18 = outer1_10;
+            let guild = outer1_10.getGuild(putResult.id);
             tmp3 = tmp2;
             let tmp20 = guild;
             if (null != guild) {
-              let tmp21 = closure_9;
-              let unsafeMutableRoles = closure_9.getUnsafeMutableRoles(putResult.id);
+              let tmp21 = outer1_9;
+              let unsafeMutableRoles = outer1_9.getUnsafeMutableRoles(putResult.id);
               if ("partial" === putResult.data_mode) {
-                let tmp7 = closure_1;
-                let tmp8 = closure_2;
-                let obj2 = closure_1(closure_2[10]);
+                let tmp7 = callback2;
+                let tmp8 = Guilds;
+                let obj2 = callback2(Guilds[10]);
                 let tmp9 = obj2;
                 let tmp10 = unsafeMutableRoles;
                 let filterRoleDeletesResult = obj2.filterRoleDeletes(putResult.id, unsafeMutableRoles, putResult.partial_updates.roles, putResult.partial_updates.deleted_role_ids);
               } else {
-                let tmp4 = closure_1;
-                let tmp5 = closure_2;
-                let obj = closure_1(closure_2[11]);
+                let tmp4 = callback2;
+                let tmp5 = Guilds;
+                let obj = callback2(Guilds[11]);
                 filterRoleDeletesResult = obj.fromServerArray(putResult.id, putResult.roles);
               }
-              let tmp11 = closure_1;
-              let tmp12 = closure_2;
-              let obj3 = closure_1(closure_2[12]);
-              let obj4 = closure_1(closure_2[12]);
+              let tmp11 = callback2;
+              let tmp12 = Guilds;
+              let obj3 = callback2(Guilds[12]);
+              let obj4 = callback2(Guilds[12]);
               let fromBackgroundSyncResult = obj4.fromBackgroundSync(putResult, guild);
-              let obj5 = closure_1(closure_2[11]);
-              let tmp15 = closure_8;
+              let obj5 = callback2(Guilds[11]);
+              let tmp15 = outer1_8;
               let result = obj5.toSerializedPartition(filterRoleDeletesResult);
-              putResult = self.put(obj3.attachSerializedData(fromBackgroundSyncResult, result, closure_8.getSelfMember(putResult.id)), arg1);
+              putResult = self.put(obj3.attachSerializedData(fromBackgroundSyncResult, result, outer1_8.getSelfMember(putResult.id)), arg1);
               let tmp16 = guild;
               let tmp17 = unsafeMutableRoles;
             }
           }
           iter3 = tmp();
-          let tmp2 = tmp3;
+          tmp2 = tmp3;
           iter2 = iter3;
         } while (!iter3.done);
       }
@@ -217,7 +217,7 @@ let tmp4 = () => {
       const items = [...unavailableGuilds.unavailableGuilds];
       const obj = callback(Guilds[9]);
       callback(Guilds[9]).guildsTransaction(arg1).deleteAllExcept(items);
-      const tmp2 = callback5(unavailableGuilds.guilds);
+      const tmp2 = outer1_12(unavailableGuilds.guilds);
       let iter = tmp2();
       if (!iter.done) {
         do {
@@ -238,13 +238,13 @@ let tmp4 = () => {
   items[5] = {
     key: "handleGuildUpdate",
     value(guild) {
-      guild = store4.getGuild(guild.guild.id);
+      guild = outer1_10.getGuild(guild.guild.id);
       const obj = callback2(Guilds[12]);
       const fromGuildResult = callback2(Guilds[12]).fromGuild(guild.guild, guild);
       const obj2 = callback2(Guilds[12]);
       const obj3 = callback2(Guilds[11]);
       const result = obj3.toSerializedPartition(callback2(Guilds[11]).fromServerArray(guild.guild.id, guild.guild.roles));
-      this.put(obj2.attachSerializedData(fromGuildResult, result, store2.getSelfMember(guild.guild.id)), arg1);
+      this.put(obj2.attachSerializedData(fromGuildResult, result, outer1_8.getSelfMember(guild.guild.id)), arg1);
     }
   };
   items[6] = {
@@ -257,8 +257,8 @@ let tmp4 = () => {
     key: "handleGuildRoleChange",
     value(guildId) {
       const self = this;
-      const guild = store4.getGuild(guildId.guildId);
-      const unsafeMutableRoles = store3.getUnsafeMutableRoles(guildId.guildId);
+      const guild = outer1_10.getGuild(guildId.guildId);
+      const unsafeMutableRoles = outer1_9.getUnsafeMutableRoles(guildId.guildId);
       if (null != guild) {
         let obj = callback2(Guilds[12]);
         obj = {};
@@ -266,7 +266,7 @@ let tmp4 = () => {
         const obj2 = callback2(Guilds[11]);
         obj[guildId.role.id] = callback2(Guilds[11]).fromServer(guildId.guildId, guildId.role);
         const result = obj2.toSerializedPartition(obj);
-        self.put(obj.attachSerializedData(guild, result, store2.getSelfMember(guildId.guildId)), arg1);
+        self.put(obj.attachSerializedData(guild, result, outer1_8.getSelfMember(guildId.guildId)), arg1);
         const obj4 = callback2(Guilds[11]);
       }
     }
@@ -276,23 +276,23 @@ let tmp4 = () => {
     value(guildId) {
       const self = this;
       let closure_0 = guildId;
-      const guild = store4.getGuild(guildId.guildId);
+      const guild = outer1_10.getGuild(guildId.guildId);
       if (null != guild) {
         let obj = {};
-        const merged = Object.assign(store3.getUnsafeMutableRoles(guildId.guildId));
+        const merged = Object.assign(outer1_9.getUnsafeMutableRoles(guildId.guildId));
         const roleId = guildId.roleId;
-        delete r8[r5];
-        const selfMember = store2.getSelfMember(guildId.guildId);
-        let tmp5 = selfMember;
+        delete tmp2[tmp];
+        const selfMember = outer1_8.getSelfMember(guildId.guildId);
+        let tmp7 = selfMember;
         if (null != selfMember) {
           obj = {};
           const merged1 = Object.assign(selfMember);
           const roles = selfMember.roles;
-          obj["roles"] = roles.filter((arg0) => arg0 !== arg0.roleId);
-          tmp5 = obj;
+          obj["roles"] = roles.filter((arg0) => arg0 !== guildId.roleId);
+          tmp7 = obj;
         }
         const obj2 = callback2(Guilds[12]);
-        self.put(obj2.attachSerializedData(guild, callback2(Guilds[11]).toSerializedPartition(obj), tmp5), arg1);
+        self.put(obj2.attachSerializedData(guild, callback2(Guilds[11]).toSerializedPartition(obj), tmp7), arg1);
         const obj3 = callback2(Guilds[11]);
       }
     }
@@ -302,13 +302,13 @@ let tmp4 = () => {
     value(joinedAt) {
       const self = this;
       if (null != joinedAt.joinedAt) {
-        if (joinedAt.user.id === store.getId()) {
-          const guild = store4.getGuild(joinedAt.guildId);
+        if (joinedAt.user.id === outer1_7.getId()) {
+          const guild = outer1_10.getGuild(joinedAt.guildId);
           if (null != guild) {
             const obj = callback2(Guilds[12]);
-            const tmp7 = callback4(guild, joinedAt.joinedAt);
-            const result = callback2(Guilds[11]).toSerializedPartition(store3.getUnsafeMutableRoles(guild.id));
-            self.put(obj.attachSerializedData(tmp7, result, store2.getSelfMember(guild.id)), arg1);
+            const tmp7 = outer1_6(guild, joinedAt.joinedAt);
+            const result = callback2(Guilds[11]).toSerializedPartition(outer1_9.getUnsafeMutableRoles(guild.id));
+            self.put(obj.attachSerializedData(tmp7, result, outer1_8.getSelfMember(guild.id)), arg1);
             const obj2 = callback2(Guilds[11]);
           }
         }
@@ -319,12 +319,12 @@ let tmp4 = () => {
     key: "handleGuildMemberUpdate",
     value(user) {
       const self = this;
-      if (user.user.id === store.getId()) {
-        const guild = store4.getGuild(user.guildId);
+      if (user.user.id === outer1_7.getId()) {
+        const guild = outer1_10.getGuild(user.guildId);
         if (null != guild) {
           let obj = callback2(Guilds[12]);
           obj = { roles: user.roles, userId: user.user.id };
-          self.put(obj.attachSerializedData(guild, callback2(Guilds[11]).toSerializedPartition(store3.getUnsafeMutableRoles(guild.id)), obj), arg1);
+          self.put(obj.attachSerializedData(guild, callback2(Guilds[11]).toSerializedPartition(outer1_9.getUnsafeMutableRoles(guild.id)), obj), arg1);
           const obj2 = callback2(Guilds[11]);
         }
       }
@@ -343,12 +343,12 @@ let tmp4 = () => {
       let roles;
       const self = this;
       members = members.members;
-      const found = members.find((user) => user.user.id === id.getId());
-      const guild = store4.getGuild(members.id);
+      const found = members.find((user) => user.user.id === outer2_7.getId());
+      const guild = outer1_10.getGuild(members.id);
       if (null != members.properties) {
         let obj = callback2(Guilds[11]);
         ({ id, roles } = members);
-        const fromSyncOperationResult = obj.fromSyncOperation(id, roles, store3.getUnsafeMutableRoles(members.id));
+        const fromSyncOperationResult = obj.fromSyncOperation(id, roles, outer1_9.getUnsafeMutableRoles(members.id));
         const obj2 = callback2(Guilds[12]);
         const obj3 = callback2(Guilds[12]);
         const fromServerResult = callback2(Guilds[12]).fromServer(members, guild);
@@ -378,8 +378,8 @@ let tmp4 = () => {
     }
   };
   return callback2(Guilds, items);
-}();
+})();
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_database/modules/Guilds.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/Guilds.tsx");
 
 export default tmp4;

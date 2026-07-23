@@ -1,31 +1,32 @@
-// Module ID: 14878
-// Function ID: 112065
+// Module ID: 14994
+// Function ID: 114233
 // Name: GuildThemeNuxPreviewGraphic
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 14995, 2]
 // Exports: default
 
-// Module 14878 (GuildThemeNuxPreviewGraphic)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { display: "isArray", sv-FI: "y", is_pip_mode: "title", isAgeRestrictedClassificationReference: "r", marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
-obj.container = obj;
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_themes/native/GuildThemeNuxPreviewGraphic.tsx");
+// Module 14994 (GuildThemeNuxPreviewGraphic)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: "100%", aspectRatio: 1.7777777777777777, alignItems: "center", justifyContent: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_themes/native/GuildThemeNuxPreviewGraphic.tsx");
 
 export default function GuildThemeNuxPreviewGraphic(arg0) {
   let isPersonal;
   let themeSettings;
   ({ themeSettings, isPersonal } = arg0);
-  let obj = { y: "BG_GRADIENT_NEON_NIGHTS_3", getRow: 100, style: callback().container };
+  let obj = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", style: _createForOfIteratorHelperLoose().container };
   obj = {};
   let tmp4 = null;
   if (!isPersonal) {
     tmp4 = themeSettings;
   }
   obj.themeSettings = tmp4;
-  obj.children = jsx(importDefault(dependencyMap[5]), obj);
-  return <View {...obj} />;
+  obj.children = jsx(importDefault(14995), {});
+  return <View />;
 };

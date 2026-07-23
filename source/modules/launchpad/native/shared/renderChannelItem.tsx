@@ -1,43 +1,47 @@
-// Module ID: 15555
-// Function ID: 118673
+// Module ID: 15672
+// Function ID: 120846
 // Name: LaunchpadChannelIcon
-// Dependencies: []
+// Dependencies: [31, 27, 1838, 3767, 1849, 4326, 33, 8450, 4130, 689, 15659, 566, 5515, 11311, 6884, 15661, 9096, 15664, 4320, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 15555 (LaunchpadChannelIcon)
+// Module 15672 (LaunchpadChannelIcon)
+import "result";
+import { View } from "get ActivityIndicator";
+import closure_4 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { UnreadSetting } from "ReadStateTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_8;
+let closure_9;
+const require = arg1;
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   const tmp = callback3();
-  let obj = arg1(dependencyMap[11]);
+  let obj = channel(566);
   const items = [closure_4];
   obj = {};
   obj = { style: tmp.guildBadgeIcon };
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(channel.guild_id));
-  const tmp2 = importDefault(dependencyMap[10])();
-  obj.children = callback(importDefault(dependencyMap[12]), { guild: stateFromStores, size: importDefault(dependencyMap[10])().icon.guildBadgeIconSize });
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
+  const tmp2 = importDefault(15659)();
+  obj.children = callback(importDefault(5515), { guild: stateFromStores, size: importDefault(15659)().icon.guildBadgeIconSize });
   const items1 = [callback(View, obj), ];
-  const obj2 = { count: "y", __closure: "ars", done: "isArray", channel };
-  items1[1] = callback(arg1(dependencyMap[13]).ChannelIcon, obj2);
+  const obj2 = { channel, size: "sm", wrapperSize: 32 };
+  items1[1] = callback(channel(11311).ChannelIcon, obj2);
   obj.children = items1;
   return callback2(closure_9, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const UnreadSetting = arg1(dependencyMap[5]).UnreadSetting;
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[8]).createStyles(() => {
+({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { GIFT_INFO_OPTIONS_MISSING: "hidden", EmptyServerSettingsEmoji: 2.18, editId: "rgba(151, 151, 159, 0.24)", focused: null, selectionStart: "solid", selectionEnd: null, OptInChannelBanner: "hidden", borderColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
+  obj = { position: "absolute", zIndex: 1, bottom: -4, right: -4, borderColor: importDefault(689).colors.BACKGROUND_BASE_LOW, borderWidth: 2, borderRadius: 6 };
   obj.guildBadgeIcon = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/launchpad/native/shared/renderChannelItem.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/launchpad/native/shared/renderChannelItem.tsx");
 
 export default function renderChannelItem(unread) {
   let channel;
@@ -86,20 +90,20 @@ export default function renderChannelItem(unread) {
   if (null != latestMessageTimestamp) {
     relativeTimestamp = null;
     if (!flag3) {
-      let obj = arg1(dependencyMap[14]);
+      let obj = require(6884) /* getRelativeTimestamp */;
       relativeTimestamp = obj.getRelativeTimestamp(latestMessageTimestamp);
     }
   }
-  const tmp5 = importDefault(dependencyMap[10])();
+  const tmp5 = importDefault(15659)();
   obj = {};
   const items = [unreadBadge, , , ];
   obj = {};
-  const obj1 = { FPS_15: "shapes", getImageSourcesFromImageProps: "Symbol", numpad 4: "accessibilityRole", useIsWindowSmall: "Reflect", maskRemainder: "HTTP", overflow: "Reflect", borderRadius: importDefault(dependencyMap[9]).radii.round, width: tmp5.icon.wrapper.size, height: tmp5.icon.wrapper.size };
+  const obj1 = { position: "relative", borderRadius: importDefault(689).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0, width: tmp5.icon.wrapper.size, height: tmp5.icon.wrapper.size };
   const merged = Object.assign(tmp5.icon.margin);
   obj.style = obj1;
   if (channel.isGroupDM()) {
     const obj2 = { channel, size: tmp5.icon.avatarSize };
-    let tmp12Result = tmp12(importDefault(dependencyMap[16]), obj2);
+    let tmp12Result = tmp12(importDefault(9096), obj2);
   } else {
     const obj3 = { channel };
     tmp12Result = tmp12(LaunchpadChannelIcon, obj3);
@@ -108,13 +112,13 @@ export default function renderChannelItem(unread) {
   items[1] = callback(View, obj);
   const obj4 = {};
   const tmp10 = View;
-  const tmp6 = importDefault(dependencyMap[15]);
+  const tmp6 = importDefault(15661);
   const tmp7 = closure_10;
   const tmp8 = closure_9;
   const tmp9 = callback;
   if (null == channelName) {
-    channelName = arg1(dependencyMap[18]).computeChannelName(channel, closure_6, closure_5);
-    const obj8 = arg1(dependencyMap[18]);
+    channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, closure_6, _isNativeReflectConstruct);
+    const obj8 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
   }
   obj4.name = channelName;
   obj4.subtitle = subtitle;
@@ -131,7 +135,7 @@ export default function renderChannelItem(unread) {
   obj4.mentionBadge = mentionBadge;
   obj4.isSubscriptionGated = isSubscriptionGated;
   obj4.needSubscriptionToAccess = flag4;
-  items[2] = importDefault(dependencyMap[17])(obj4);
+  items[2] = importDefault(15664)(obj4);
   let tmp22 = null;
   if (null != end) {
     const obj5 = {};
@@ -150,8 +154,8 @@ export const getChannelAccessibilityProps = function getChannelAccessibilityProp
   let mentionCount;
   let unread;
   let voiceStates;
-  const obj = { marginBottom: null, borderWidth: null };
+  const obj = { accessible: true, accessibilityRole: "button" };
   ({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount } = arg0);
-  obj.accessibilityLabel = importDefault(dependencyMap[7])({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount });
+  obj.accessibilityLabel = importDefault(8450)({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount });
   return obj;
 };

@@ -1,38 +1,38 @@
-// Module ID: 13782
-// Function ID: 104126
+// Module ID: 13896
+// Function ID: 106282
 // Name: route
-// Dependencies: []
+// Dependencies: [653, 10095, 1212, 10465, 13897, 13899, 6963, 4981, 2]
 
-// Module 13782 (route)
-const _module = require(dependencyMap[1]);
-let obj = {
+// Module 13896 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.JALI2K);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.JALI2K);
   },
   usePredicate() {
-    return require(dependencyMap[3]).getIsEligibleForQuests();
+    return require(10465) /* getIsEligibleForQuests */.getIsEligibleForQuests();
   },
   parent: null,
-  IconComponent: require(dependencyMap[4]).QuestsIcon,
+  IconComponent: require("QuestsIcon").QuestsIcon,
   screen: obj,
   usePreNavigationAction() {
     return () => {
-      let obj = callback(closure_1[6]);
-      obj = { fromContent: callback(closure_1[7]).QuestContent.USER_SETTINGS };
+      let obj = outer1_0(outer1_1[6]);
+      obj = { fromContent: outer1_0(outer1_1[7]).QuestContent.USER_SETTINGS };
       const result = obj.setQuestHomeUtmContext(obj);
       return true;
     };
   }
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.QUESTS,
+  route: require("ME").UserSettingsSections.QUESTS,
   getComponent() {
-    return require(dependencyMap[5]).default;
+    return require(13899) /* parseSortMethod */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[8]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/QuestHomeSetting.tsx");
+const route = createToggle.createRoute(obj);
+let result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/QuestHomeSetting.tsx");
 
 export default route;

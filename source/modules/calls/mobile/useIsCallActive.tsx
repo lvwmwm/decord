@@ -1,42 +1,42 @@
-// Module ID: 7662
-// Function ID: 61258
+// Module ID: 7668
+// Function ID: 61295
 // Name: checkIsCallActive
-// Dependencies: [4134731776, 4076863517, 33554446, 1996488704, 6]
+// Dependencies: [4809, 4143, 4148, 566, 2]
 // Exports: default, useIsCallActiveNullable
 
-// Module 7662 (checkIsCallActive)
-import _classCallCheck from "_classCallCheck";
+// Module 7668 (checkIsCallActive)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { ParticipantTypes } from "ParticipantTypes";
 
+const require = arg1;
 function checkIsCallActive(channelId, id) {
   let isCallActiveResult = callActive.isCallActive(channelId, id);
   if (isCallActiveResult) {
-    const participants = participants.getParticipants(channelId);
-    isCallActiveResult = participants.some((type) => type.type === constants.USER && !type.ringing);
+    participants = participants.getParticipants(channelId);
+    isCallActiveResult = participants.some((type) => type.type === outer1_4.USER && !type.ringing);
   }
   return isCallActiveResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const ParticipantTypes = arg1(dependencyMap[2]).ParticipantTypes;
-const result = _classCallCheck.fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
+const result = require("ParticipantTypes").fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
 
 export default function useIsCallActive(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_2, closure_3];
+  const items = [_isNativeReflectConstruct, closure_3];
   const items1 = [arg0, arg1];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => callback(arg0, arg1), items1);
+  return _require(566).useStateFromStores(items, () => outer1_5(closure_0, closure_1), items1);
 };
 export { checkIsCallActive };
 export const useIsCallActiveNullable = function useIsCallActiveNullable(id) {
-  const arg1 = id;
+  const _require = id;
   const dependencyMap = arg1;
-  const items = [closure_2, closure_3];
+  const items = [_isNativeReflectConstruct, closure_3];
   const items1 = [id, arg1];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    let tmp = null != arg0;
+  return _require(566).useStateFromStores(items, () => {
+    let tmp = null != closure_0;
     if (tmp) {
-      tmp = callback(arg0, arg1);
+      tmp = outer1_5(closure_0, closure_1);
     }
     return tmp;
   }, items1);

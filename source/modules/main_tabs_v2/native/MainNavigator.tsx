@@ -1,70 +1,86 @@
-// Module ID: 14611
-// Function ID: 110098
+// Module ID: 14726
+// Function ID: 112262
 // Name: getAuthComponent
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1194, 14727, 653, 33, 4130, 477, 4110, 13085, 14728, 14729, 14787, 15425, 15430, 15433, 15470, 15494, 9286, 15548, 15551, 15555, 15557, 15586, 15591, 3989, 1454, 1555, 4324, 9122, 15592, 15638, 624, 10537, 3984, 5519, 10856, 15486, 15641, 15679, 10635, 15681, 10161, 2]
 
-// Module 14611 (getAuthComponent)
+// Module 14726 (getAuthComponent)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "BurstReactionAnimationContainer";
+import { View } from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { StackNavigationAnimationSettings as closure_7 } from "StackNavigationAnimationSettings";
+import ME from "ME";
+import jsxProd from "defaultAreStatesEqual";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "get ActivityIndicator";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_8;
+let closure_9;
+let require = arg1;
 function getAuthComponent() {
-  return arg1(dependencyMap[12]).default;
+  return require(14729) /* getInitialAuthScreen */.default;
 }
 function getTabsComponent() {
-  return arg1(dependencyMap[13]).default;
+  return require(14787).default;
 }
 function getChannelComponent() {
   return View;
 }
 function WrappedAutoAnalytics() {
-  return callback2(arg1(dependencyMap[14]).default, {});
+  return callback2(require(15425) /* _isNativeReflectConstruct */.default, {});
 }
 function getMemberVerificationComponent() {
-  return arg1(dependencyMap[15]).default;
+  return require(15430) /* Loading */.default;
 }
 function getFriendsNavigatorComponent() {
-  return arg1(dependencyMap[16]).default;
+  return require(15433) /* RequestsSettingsModalButton */.default;
 }
 function getYouComponent() {
-  return arg1(dependencyMap[17]).default;
+  return require(15470).default;
 }
 function getChannelDetailsComponent() {
-  return arg1(dependencyMap[18]).default;
+  return require(15494) /* ConnectedCreateThreadHeaderButton */.default;
 }
 function getConversationsComponent() {
-  return arg1(dependencyMap[19]).default;
+  return require(9286) /* HeaderWithBorder */.default;
 }
 function getSearchComponent() {
-  return arg1(dependencyMap[20]).default;
+  return require(15548).default;
 }
 function getContextMenuCommandNavigatorComponent() {
-  return arg1(dependencyMap[21]).default;
+  return require(15551) /* ContextMenuCommandNavigator */.default;
 }
 function getModalComponent() {
-  return arg1(dependencyMap[22]).default;
+  return require(15555) /* Modal */.default;
 }
 function getMessageRequestsComponent() {
-  return arg1(dependencyMap[23]).default;
+  return require(15557) /* MessageRequestsNavigator */.default;
 }
 function getSettingsComponent() {
-  return arg1(dependencyMap[24]).default;
+  return require(15586) /* Settings */.default;
 }
 function getAccountStanding() {
-  return arg1(dependencyMap[25]).default;
+  return require(15591) /* SuspendedUserSafetyHubPage */.default;
 }
 function getChannelScreen() {
   let animation = arg0;
   if (arg0 === undefined) {
     animation = closure_7.animation;
   }
-  const arg1 = animation;
-  let obj = {
+  obj = {
     name: "channel",
     listeners: obj,
     options(arg0) {
       let navigation;
       let route;
-      const obj = { headerShown: true, header: animation(closure_2[30]).renderHeader };
+      const obj = { headerShown: true, header: animation(outer1_2[30]).renderHeader };
       ({ navigation, route } = arg0);
-      const merged = Object.assign(animation(closure_2[30]).getDefaultChannelStackHeaderProps(navigation, route));
-      const merged1 = Object.assign(closure_7);
+      const merged = Object.assign(animation(outer1_2[30]).getDefaultChannelStackHeaderProps(navigation, route));
+      const merged1 = Object.assign(outer1_7);
       obj["animation"] = animation;
       return obj;
     },
@@ -72,11 +88,11 @@ function getChannelScreen() {
   };
   obj = {
     beforeRemove(data) {
-      let obj = animation(closure_2[26]);
+      let obj = animation(outer1_2[26]);
       if (null != obj.getBestActiveInput()) {
-        obj = { type: animation(closure_2[28]).KeyboardTypes.SYSTEM };
-        animation(closure_2[27]).setKeyboardType(obj);
-        const obj2 = animation(closure_2[27]);
+        obj = { type: animation(outer1_2[28]).KeyboardTypes.SYSTEM };
+        animation(outer1_2[27]).setKeyboardType(obj);
+        const obj2 = animation(outer1_2[27]);
       }
       data = data.data;
       let type;
@@ -88,90 +104,79 @@ function getChannelScreen() {
       }
       obj = {};
       if ("GO_BACK" === type) {
-        let SWIPE = constants2.BACK_BUTTON;
+        let SWIPE = outer1_9.BACK_BUTTON;
       } else {
-        SWIPE = constants2.SWIPE;
+        SWIPE = outer1_9.SWIPE;
       }
       obj.source = SWIPE;
-      callback(closure_2[29]).trackWithMetadata(constants.CHANNEL_BACK_NAVIGATED, obj);
+      outer1_1(outer1_2[29]).trackWithMetadata(outer1_8.CHANNEL_BACK_NAVIGATED, obj);
     }
   };
   return callback2(Screen.Screen, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).StackNavigationAnimationSettings;
-({ AnalyticEvents: closure_8, DrawerSourceTypes: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-let closure_13 = arg1(dependencyMap[7]).createStyles({ flex: { flex: 1 } });
-const obj2 = arg1(dependencyMap[7]);
-let isIOSResult = arg1(dependencyMap[8]).isIOS();
-if (isIOSResult) {
-  isIOSResult = arg1(dependencyMap[9]).getSystemVersionMajor() <= 15;
-  const obj4 = arg1(dependencyMap[9]);
+({ AnalyticEvents: closure_8, DrawerSourceTypes: closure_9 } = ME);
+({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
+let closure_13 = _createForOfIteratorHelperLoose.createStyles({ flex: { flex: 1 } });
+set = set.isIOS();
+if (set) {
+  set = require("getSystemVersion").getSystemVersionMajor() <= 15;
+  let obj4 = require("getSystemVersion");
 }
-let closure_15 = importDefault(dependencyMap[10])();
-let closure_16 = importDefault(dependencyMap[11])();
+let closure_15 = require("useAccessibilityPatchedDescriptors")();
+let closure_16 = require("navigatorFactory")();
 let closure_17 = Object.freeze({ animation: "none" });
-const obj3 = arg1(dependencyMap[8]);
-const memoResult = importAllResult.memo(function StackNavigator() {
-  const tmp = callback3();
-  const arg1 = tmp;
-  const screenReaderEnabled = arg1(dependencyMap[31]).useScreenReaderEnabled();
-  const obj = arg1(dependencyMap[31]);
-  const appKeyCommands = arg1(dependencyMap[31]).useAppKeyCommands();
-  importDefault(dependencyMap[32])();
-  const obj2 = arg1(dependencyMap[31]);
-  const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[33]).useStateFromStores(items, () => null != accessibilityNativeStackOptions.getSessionId());
-  const importDefault = stateFromStores;
-  const tmp6 = callback(importAllResult.useState(closure_7.animation), 2);
-  const first = tmp6[0];
-  const dependencyMap = first;
-  const callback = tmp6[1];
-  const obj3 = arg1(dependencyMap[33]);
-  const homeIndicatorStore = arg1(dependencyMap[34]).useHomeIndicatorStore((autoHideHomeIndicator) => autoHideHomeIndicator.autoHideHomeIndicator);
-  const isChatBesideChannelList = importDefault(dependencyMap[35])().isChatBesideChannelList;
-  const View = isChatBesideChannelList;
-  const obj4 = arg1(dependencyMap[34]);
-  const accessibilityNativeStackOptions = arg1(dependencyMap[36]).useAccessibilityNativeStackOptions();
-  closure_6 = accessibilityNativeStackOptions;
-  const items1 = [tmp, stateFromStores, homeIndicatorStore, accessibilityNativeStackOptions, first, isChatBesideChannelList];
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/MainNavigator.tsx");
+
+export default importAllResult.memo(function StackNavigator() {
+  let tmp = callback3();
+  const require = tmp;
+  const screenReaderEnabled = require(first[31]).useScreenReaderEnabled();
+  let obj = require(first[31]);
+  const appKeyCommands = require(first[31]).useAppKeyCommands();
+  stateFromStores(first[32])();
+  let obj2 = require(first[31]);
+  let items = [accessibilityNativeStackOptions];
+  stateFromStores = require(first[33]).useStateFromStores(items, () => null != accessibilityNativeStackOptions.getSessionId());
+  let tmp6 = callback(homeIndicatorStore.useState(closure_7.animation), 2);
+  first = tmp6[0];
+  callback = tmp6[1];
+  let obj3 = require(first[33]);
+  homeIndicatorStore = require(first[34]).useHomeIndicatorStore((autoHideHomeIndicator) => autoHideHomeIndicator.autoHideHomeIndicator);
+  const isChatBesideChannelList = stateFromStores(first[35])().isChatBesideChannelList;
+  let obj4 = require(first[34]);
+  accessibilityNativeStackOptions = require(first[36]).useAccessibilityNativeStackOptions();
+  let items1 = [tmp, stateFromStores, homeIndicatorStore, accessibilityNativeStackOptions, first, isChatBesideChannelList];
   return homeIndicatorStore.useMemo(() => {
-    let obj = { profile: callback(first[37]).Profiles.MainNavigator };
-    obj = { style: tmp.flex };
-    const tmp2 = stateFromStores(first[37]);
+    let obj = { profile: outer1_10(first[37]).Profiles.MainNavigator };
+    obj = { style: outer1_10.flex, nativeID: "mainNavigator", collapsableChildren: false };
+    let tmp2 = stateFromStores(first[37]);
     obj = {};
-    const tmp4 = stateFromStores(first[38]);
-    const tmp5 = callback;
-    const obj1 = {};
+    let tmp4 = stateFromStores(first[38]);
+    const tmp5 = outer1_10;
+    let obj1 = {};
     const tmp6 = stateFromStores(first[39]);
-    const tmp7 = callback;
+    let tmp7 = outer1_10;
     const obj2 = {};
     let tmp10 = null;
     const tmp8 = stateFromStores(first[40]);
     if (stateFromStores) {
-      tmp10 = callback(closure_21, {});
+      tmp10 = outer1_10(outer1_21, {});
     }
-    const items = [tmp10, ];
-    const obj3 = {};
-    const tmp13 = callback;
+    let items = [tmp10, ];
+    let obj3 = {};
+    const tmp13 = outer1_10;
     const tmp9 = stateFromStores(first[41]);
-    obj3.profile = callback(first[37]).Profiles.StackNavigator;
+    obj3.profile = outer1_10(first[37]).Profiles.StackNavigator;
     const obj4 = {
       id: "root",
       screenOptions() {
-        return { headerShown: false, autoHideHomeIndicator: closure_4 };
+        return { headerShown: false, autoHideHomeIndicator: outer1_4 };
       }
     };
-    const items1 = [
-      callback(closure_15.Screen, {
+    let items1 = [
+      outer1_10(outer1_15.Screen, {
         name: "main",
-        options: closure_17,
+        options: outer1_17,
         children() {
           let obj = {};
           obj = {
@@ -179,41 +184,41 @@ const memoResult = importAllResult.memo(function StackNavigator() {
             screenOptions(navigation) {
               const obj = {};
               let str;
-              if (closure_14) {
+              if (outer3_14) {
                 str = "default";
               }
               obj.orientation = str;
               obj.headerShown = false;
-              const merged = Object.assign(callback(closure_2[30]).getDefaultStackHeaderProps(navigation.navigation));
-              const merged1 = Object.assign(closure_7);
+              const merged = Object.assign(callback(first[30]).getDefaultStackHeaderProps(navigation.navigation));
+              const merged1 = Object.assign(outer3_7);
               return obj;
             }
           };
-          obj = { name: "tabs", getComponent: closure_19, options: closure_17 };
-          const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { LIST_FOOTER: "companion_remote_auth", mortar_board: false } }), ];
+          obj = { name: "tabs", getComponent: outer2_19, options: outer2_17 };
+          const items = [outer2_10(outer2_16.Screen, obj), outer2_10(outer2_16.Screen, { name: "member-verification", getComponent: outer2_22, options: { presentation: "transparentModal", animation: "slide_from_bottom" } }), ];
           let animation;
-          if (null != animation) {
-            animation = animation.animation;
+          if (null != outer1_6) {
+            animation = outer1_6.animation;
           }
           if (null == animation) {
-            animation = closure_2;
+            animation = outer1_2;
           }
-          items[2] = closure_33(animation);
+          items[2] = outer2_33(animation);
           obj.children = items;
-          const items1 = [closure_11(closure_16.Navigator, obj), callback(closure_2[42]).APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO];
+          const items1 = [outer2_11(outer2_16.Navigator, obj), callback(first[42]).APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO];
           obj.children = items1;
-          return closure_11(closure_12, obj);
+          return outer2_11(outer2_12, obj);
         }
       }),
-      callback(closure_15.Screen, { name: "search", getComponent: closure_27 }),
-      callback(closure_15.Screen, {
+      outer1_10(outer1_15.Screen, { name: "search", getComponent: outer1_27 }),
+      outer1_10(outer1_15.Screen, {
         name: "conversations",
-        getComponent: closure_26,
+        getComponent: outer1_26,
         options() {
-          return callback2(closure_2[43])();
+          return stateFromStores(first[43])();
         }
       }),
-      callback(closure_15.Screen, { name: "auth", getComponent: closure_18, options: closure_17 }),
+      outer1_10(outer1_15.Screen, { name: "auth", getComponent: outer1_18, options: outer1_17 }),
     ,
     ,
     ,
@@ -223,32 +228,32 @@ const memoResult = importAllResult.memo(function StackNavigator() {
     ,
 
     ];
-    const obj9 = { name: "account-standing", getComponent: closure_32 };
-    const merged = Object.assign(closure_17);
-    obj9.options = { 9223372036854775807: "<string:41043179>", 0: "<string:16777216>" };
-    items1[4] = callback(closure_15.Screen, obj9);
-    items1[5] = callback(closure_15.Screen, {
+    const obj9 = { name: "account-standing", getComponent: outer1_32 };
+    let merged = Object.assign(outer1_17);
+    obj9.options = { presentation: "fullScreenModal", gestureEnabled: false };
+    items1[4] = outer1_10(outer1_15.Screen, obj9);
+    items1[5] = outer1_10(outer1_15.Screen, {
       name: "you",
       options() {
         let obj = {};
-        let obj1 = callback(closure_2[9]);
+        let obj1 = callback(first[9]);
         if (obj1.isIpadOS()) {
           obj = { presentation: "modal" };
           let tmp4 = obj;
         } else {
           if (obj3.isAndroid()) {
-            if (closure_5) {
+            if (outer1_5) {
               obj = { presentation: "transparentModal" };
               tmp4 = obj;
             }
           }
-          const obj3 = callback(closure_2[8]);
+          obj3 = callback(first[8]);
         }
-        const merged = Object.assign(callback2(closure_2[43])(tmp4));
-        const tmp = callback2(closure_2[43]);
+        const merged = Object.assign(stateFromStores(first[43])(tmp4));
+        const tmp = stateFromStores(first[43]);
         let tmp7;
         if (obj6.isAndroid()) {
-          if (closure_5) {
+          if (outer1_5) {
             obj1 = { backgroundColor: "transparent" };
             tmp7 = obj1;
           }
@@ -257,7 +262,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
         obj["animation"] = "slide_from_bottom";
         return obj;
       },
-      getComponent: closure_24
+      getComponent: outer1_24
     });
     const obj12 = {
       name: "friends",
@@ -278,7 +283,7 @@ const memoResult = importAllResult.memo(function StackNavigator() {
           str = presentation;
         }
         obj.presentation = str;
-        const merged = Object.assign(callback2(closure_2[43])(obj));
+        const merged = Object.assign(stateFromStores(first[43])(obj));
         const params3 = route.params;
         let presentation1;
         if (null != params3) {
@@ -296,19 +301,19 @@ const memoResult = importAllResult.memo(function StackNavigator() {
     let fn;
     if (!obj16.isAndroid()) {
       fn = () => {
-        callback3("none");
-        const timerId = setTimeout(() => callback(animation.animation), duration.duration);
+        outer1_3("none");
+        const timerId = setTimeout(() => outer2_3(outer3_7.animation), outer2_7.duration);
       };
     }
     obj13.beforeRemove = fn;
     obj12.listeners = obj13;
-    obj12.getComponent = closure_23;
-    items1[6] = callback(closure_15.Screen, obj12);
-    items1[7] = callback(closure_15.Screen, {
+    obj12.getComponent = outer1_23;
+    items1[6] = outer1_10(outer1_15.Screen, obj12);
+    items1[7] = outer1_10(outer1_15.Screen, {
       name: "settings",
       options() {
         let obj = {};
-        const tmp = callback2(closure_2[43]);
+        const tmp = stateFromStores(first[43]);
         let tmp2;
         if (obj2.isIpadOS()) {
           obj = { presentation: "modal" };
@@ -319,40 +324,40 @@ const memoResult = importAllResult.memo(function StackNavigator() {
         obj["fullScreenGestureEnabled"] = true;
         return obj;
       },
-      getComponent: closure_31
+      getComponent: outer1_31
     });
-    items1[8] = callback(closure_15.Screen, {
+    items1[8] = outer1_10(outer1_15.Screen, {
       name: "sidebar",
-      getComponent: closure_25,
+      getComponent: outer1_25,
       options() {
-        return callback2(closure_2[43])({ lockOrientation: false });
+        return stateFromStores(first[43])({ lockOrientation: false });
       }
     });
-    obj16 = { name: "message-requests", options: stateFromStores(first[43])(), getComponent: closure_30 };
-    items1[9] = callback(closure_15.Screen, obj16);
-    const obj10 = { 9223372036854775807: "<string:41043179>", 0: "<string:16777216>" };
+    obj16 = { name: "message-requests", options: stateFromStores(first[43])(), getComponent: outer1_30 };
+    items1[9] = outer1_10(outer1_15.Screen, obj16);
+    const obj10 = { presentation: "fullScreenModal", gestureEnabled: false };
     const obj11 = {
       name: "you",
       options() {
         let obj = {};
-        let obj1 = callback(closure_2[9]);
+        let obj1 = callback(first[9]);
         if (obj1.isIpadOS()) {
           obj = { presentation: "modal" };
           let tmp4 = obj;
         } else {
           if (obj3.isAndroid()) {
-            if (closure_5) {
+            if (outer1_5) {
               obj = { presentation: "transparentModal" };
               tmp4 = obj;
             }
           }
-          const obj3 = callback(closure_2[8]);
+          obj3 = callback(first[8]);
         }
-        const merged = Object.assign(callback2(closure_2[43])(tmp4));
-        const tmp = callback2(closure_2[43]);
+        const merged = Object.assign(stateFromStores(first[43])(tmp4));
+        const tmp = stateFromStores(first[43]);
         let tmp7;
         if (obj6.isAndroid()) {
-          if (closure_5) {
+          if (outer1_5) {
             obj1 = { backgroundColor: "transparent" };
             tmp7 = obj1;
           }
@@ -361,13 +366,13 @@ const memoResult = importAllResult.memo(function StackNavigator() {
         obj["animation"] = "slide_from_bottom";
         return obj;
       },
-      getComponent: closure_24
+      getComponent: outer1_24
     };
     const obj14 = {
       name: "settings",
       options() {
         let obj = {};
-        const tmp = callback2(closure_2[43]);
+        const tmp = stateFromStores(first[43]);
         let tmp2;
         if (obj2.isIpadOS()) {
           obj = { presentation: "modal" };
@@ -378,18 +383,18 @@ const memoResult = importAllResult.memo(function StackNavigator() {
         obj["fullScreenGestureEnabled"] = true;
         return obj;
       },
-      getComponent: closure_31
+      getComponent: outer1_31
     };
     const obj15 = {
       name: "sidebar",
-      getComponent: closure_25,
+      getComponent: outer1_25,
       options() {
-        return callback2(closure_2[43])({ lockOrientation: false });
+        return stateFromStores(first[43])({ lockOrientation: false });
       }
     };
     const obj5 = {
       name: "main",
-      options: closure_17,
+      options: outer1_17,
       children() {
         let obj = {};
         obj = {
@@ -397,46 +402,46 @@ const memoResult = importAllResult.memo(function StackNavigator() {
           screenOptions(navigation) {
             const obj = {};
             let str;
-            if (closure_14) {
+            if (outer3_14) {
               str = "default";
             }
             obj.orientation = str;
             obj.headerShown = false;
-            const merged = Object.assign(callback(closure_2[30]).getDefaultStackHeaderProps(navigation.navigation));
-            const merged1 = Object.assign(closure_7);
+            const merged = Object.assign(callback(first[30]).getDefaultStackHeaderProps(navigation.navigation));
+            const merged1 = Object.assign(outer3_7);
             return obj;
           }
         };
-        obj = { name: "tabs", getComponent: closure_19, options: closure_17 };
-        const items = [callback4(closure_16.Screen, obj), callback4(closure_16.Screen, { name: "member-verification", getComponent: closure_22, options: { LIST_FOOTER: "companion_remote_auth", mortar_board: false } }), ];
+        obj = { name: "tabs", getComponent: outer2_19, options: outer2_17 };
+        const items = [outer2_10(outer2_16.Screen, obj), outer2_10(outer2_16.Screen, { name: "member-verification", getComponent: outer2_22, options: { presentation: "transparentModal", animation: "slide_from_bottom" } }), ];
         let animation;
-        if (null != animation) {
-          animation = animation.animation;
+        if (null != outer1_6) {
+          animation = outer1_6.animation;
         }
         if (null == animation) {
-          animation = closure_2;
+          animation = outer1_2;
         }
-        items[2] = closure_33(animation);
+        items[2] = outer2_33(animation);
         obj.children = items;
-        const items1 = [closure_11(closure_16.Navigator, obj), callback(closure_2[42]).APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO];
+        const items1 = [outer2_11(outer2_16.Navigator, obj), callback(first[42]).APP_EXTRA_COMPONENTS_VOICE_AND_VIDEO];
         obj.children = items1;
-        return closure_11(closure_12, obj);
+        return outer2_11(outer2_12, obj);
       }
     };
-    const obj6 = { name: "search", getComponent: closure_27 };
+    const obj6 = { name: "search", getComponent: outer1_27 };
     const obj7 = {
       name: "conversations",
-      getComponent: closure_26,
+      getComponent: outer1_26,
       options() {
-        return callback2(closure_2[43])();
+        return stateFromStores(first[43])();
       }
     };
-    const obj8 = { name: "auth", getComponent: closure_18, options: closure_17 };
+    const obj8 = { name: "auth", getComponent: outer1_18, options: outer1_17 };
     const tmp14 = stateFromStores(first[37]);
-    const tmp15 = closure_11;
-    const tmp17 = callback;
-    items1[10] = callback(closure_15.Screen, { name: "context-menu-commands", options: stateFromStores(first[43])(), getComponent: closure_28 });
-    items1[11] = callback(closure_15.Screen, {
+    const tmp15 = outer1_11;
+    const tmp17 = outer1_10;
+    items1[10] = outer1_10(outer1_15.Screen, { name: "context-menu-commands", options: stateFromStores(first[43])(), getComponent: outer1_28 });
+    items1[11] = outer1_10(outer1_15.Screen, {
       name: "modal",
       options(route) {
         route = route.route;
@@ -457,25 +462,22 @@ const memoResult = importAllResult.memo(function StackNavigator() {
           }
         }
         obj.presentation = str2;
-        const merged = Object.assign(callback2(closure_2[43])(obj));
+        const merged = Object.assign(stateFromStores(first[43])(obj));
         return obj;
       },
-      getComponent: closure_29
+      getComponent: outer1_29
     });
     obj4.children = items1;
-    obj3.children = tmp15(closure_15.Navigator, obj4);
+    obj3.children = tmp15(outer1_15.Navigator, obj4);
     items[1] = tmp13(tmp14, obj3);
     obj2.children = items;
-    obj1.children = closure_11(tmp9, obj2);
+    obj1.children = outer1_11(tmp9, obj2);
     obj.children = tmp7(tmp8, obj1);
-    const items2 = [tmp5(tmp6, obj), callback(first[42]).APP_EXTRA_COMPONENTS, callback(first[42]).APP_EXTRA_COMPONENTS_NEVER_FREEZE, callback(first[42]).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
+    const items2 = [tmp5(tmp6, obj), outer1_10(first[42]).APP_EXTRA_COMPONENTS, outer1_10(first[42]).APP_EXTRA_COMPONENTS_NEVER_FREEZE, outer1_10(first[42]).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
     obj.children = items2;
-    obj.children = closure_11(tmp4, obj);
-    return callback(tmp2, obj);
+    obj.children = outer1_11(tmp4, obj);
+    return outer1_10(tmp2, obj);
   }, items1);
 });
-const result = arg1(dependencyMap[44]).fileFinishedImporting("modules/main_tabs_v2/native/MainNavigator.tsx");
-
-export default memoResult;
 export const MAIN_NAVIGATOR_ID = "mainNavigator";
 export { getChannelScreen };

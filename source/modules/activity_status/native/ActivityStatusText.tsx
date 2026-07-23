@@ -1,15 +1,17 @@
-// Module ID: 9065
-// Function ID: 71151
+// Module ID: 9072
+// Function ID: 71192
 // Name: ActivityStatusText
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 4126, 2]
 // Exports: default
 
-// Module 9065 (ActivityStatusText)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_3 = arg1(dependencyMap[2]).createStyles({ text: { flexShrink: 1 } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/activity_status/native/ActivityStatusText.tsx");
+// Module 9072 (ActivityStatusText)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_3 = _createForOfIteratorHelperLoose.createStyles({ text: { flexShrink: 1 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/activity_status/native/ActivityStatusText.tsx");
 
 export default function ActivityStatusText(variant) {
   let children;
@@ -19,7 +21,7 @@ export default function ActivityStatusText(variant) {
   if (str === undefined) {
     str = "text-xs/medium";
   }
-  let obj = { 2091263096: "spring", 846891779: 0.4, 846665006: 1 };
+  let obj = { children: 0, style: 0, variant: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(variant, obj);
   obj = { variant: str, color: "text-muted" };
@@ -28,5 +30,5 @@ export default function ActivityStatusText(variant) {
   obj.lineClamp = 1;
   const merged1 = Object.assign(merged);
   obj["children"] = children;
-  return jsx(arg1(dependencyMap[3]).Text, obj);
+  return jsx(require(4126) /* Text */.Text, { variant: str, color: "text-muted" });
 };

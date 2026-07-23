@@ -1,18 +1,18 @@
-// Module ID: 10019
-// Function ID: 77429
+// Module ID: 10027
+// Function ID: 77469
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [110, 42, 2]
 
-// Module 10019 (__INTERNAL_VIEW_CONFIG)
+// Module 10027 (__INTERNAL_VIEW_CONFIG)
+import weakSet from "weakSet";
+import get from "get";
+
 let obj = { uiViewClassName: "DCDTTIMeasurementView", directEventTypes: { topMeasurement: { registrationName: "onMeasurement" } } };
 obj = {};
-const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ onMeasurement: true }));
+const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onMeasurement: true }));
 obj.validAttributes = obj;
-const _module1 = require(dependencyMap[1]);
-const value = _module1.get("DCDTTIMeasurementView", () => obj);
-const _module2 = require(dependencyMap[2]);
-const result = _module2.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/TTIMeasurementNativeComponent.tsx");
+const value = get.get("DCDTTIMeasurementView", () => obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/TTIMeasurementNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

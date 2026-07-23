@@ -1,63 +1,66 @@
-// Module ID: 5629
-// Function ID: 48035
+// Module ID: 5634
+// Function ID: 48062
 // Name: useCreatorMonetizationRestrictions
-// Dependencies: []
+// Dependencies: [31, 3752, 1838, 653, 5635, 5636, 566, 3751, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 5629 (useCreatorMonetizationRestrictions)
+// Module 5634 (useCreatorMonetizationRestrictions)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 function useCreatorMonetizationRestrictions(has) {
-  const arg1 = has;
-  const tmp = importDefault(dependencyMap[4])();
-  const importDefault = tmp;
+  const _require = has;
+  const tmp = importDefault(5635)();
+  importDefault = tmp;
   const items = [has, tmp];
-  const effect = React.useEffect((self) => {
-    let hasItem = null != self;
+  const effect = React.useEffect(() => {
+    let hasItem = null != has;
     if (hasItem) {
-      const features = self.features;
-      hasItem = features.has(constants2.CREATOR_MONETIZABLE_RESTRICTED);
+      const features = has.features;
+      hasItem = features.has(outer1_9.CREATOR_MONETIZABLE_RESTRICTED);
     }
     if (hasItem) {
-      hasItem = store.getMonetizationRestrictionsFetchState(self.id) === constants.NOT_FETCHED;
+      hasItem = outer1_5.getMonetizationRestrictionsFetchState(has.id) === outer1_6.NOT_FETCHED;
     }
     if (hasItem) {
-      let obj = id(closure_3[5]);
-      obj = { signal: tmp };
-      const monetizationRestrictions = obj.fetchMonetizationRestrictions(self.id, obj);
+      let obj = id(outer1_3[5]);
+      obj = { signal: closure_1 };
+      const monetizationRestrictions = obj.fetchMonetizationRestrictions(has.id, obj);
     }
   }, items);
   let id;
   if (null != has) {
     id = has.id;
   }
-  const importAll = id;
-  const obj = {};
-  const items1 = [closure_5];
-  obj.restrictions = arg1(dependencyMap[6]).useStateFromStoresArray(items1, () => {
-    let monetizationRestrictions = store.getMonetizationRestrictions(null != id ? id : closure_8);
+  let obj = {};
+  const items1 = [_isNativeReflectConstruct];
+  obj.restrictions = _require(566).useStateFromStoresArray(items1, () => {
+    let monetizationRestrictions = outer1_5.getMonetizationRestrictions(null != id ? id : outer1_8);
     if (null == monetizationRestrictions) {
       monetizationRestrictions = [];
     }
     return monetizationRestrictions;
   });
-  const obj2 = arg1(dependencyMap[6]);
-  const items2 = [closure_5];
-  obj.restrictionsLoading = arg1(dependencyMap[6]).useStateFromStores(items2, () => store.getMonetizationRestrictionsFetchState(null != id ? id : closure_8) === constants.FETCHING);
+  const obj2 = _require(566);
+  const items2 = [_isNativeReflectConstruct];
+  obj.restrictionsLoading = _require(566).useStateFromStores(items2, () => outer1_5.getMonetizationRestrictionsFetchState(null != id ? id : outer1_8) === outer1_6.FETCHING);
   return obj;
 }
-let closure_4 = importAll(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const FetchState = arg1(dependencyMap[1]).FetchState;
-let closure_7 = importDefault(dependencyMap[2]);
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_8, GuildFeatures: closure_9 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsHooks.tsx");
+({ EMPTY_STRING_SNOWFLAKE_ID: closure_8, GuildFeatures: closure_9 } = ME);
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsHooks.tsx");
 
 export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuildPurchaseEntryPoints(id2) {
-  const arg1 = id2;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_7];
+  const _require = id2;
+  let obj = _require(566);
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [id2];
-  let has = obj.useStateFromStores(items, () => guild.getGuild(arg0), items1);
+  let has = obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1);
   const tmp = useCreatorMonetizationRestrictions(has);
   const restrictionsLoading = tmp.restrictionsLoading;
   obj = {};
@@ -97,16 +100,16 @@ export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuild
     tmp2 = tmp2 == hasItem3 || hasItem3;
     let result = tmp2;
   } else {
-    result = arg1(dependencyMap[7]).isRestrictedFromShowingGuildPurchaseEntryPoints(tmp.restrictions);
-    const obj3 = arg1(dependencyMap[7]);
+    result = _require(3751).isRestrictedFromShowingGuildPurchaseEntryPoints(tmp.restrictions);
+    const obj3 = _require(3751);
   }
 };
 export const useShouldRestrictUpdatingCreatorMonetizationSettings = function useShouldRestrictUpdatingCreatorMonetizationSettings(guildId) {
-  const arg1 = guildId;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_7];
+  const _require = guildId;
+  let obj = _require(566);
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [guildId];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(arg0), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1);
   const restrictionsLoading = useCreatorMonetizationRestrictions(stateFromStores).restrictionsLoading;
   if (restrictionsLoading) {
     let hasItem;
@@ -117,8 +120,8 @@ export const useShouldRestrictUpdatingCreatorMonetizationSettings = function use
     let result = null == hasItem || hasItem;
     const tmp10 = null == hasItem || hasItem;
   } else {
-    result = arg1(dependencyMap[7]).isRestrictedFromUpdatingCreatorMonetizationSettings(tmp3);
-    const obj2 = arg1(dependencyMap[7]);
+    result = _require(3751).isRestrictedFromUpdatingCreatorMonetizationSettings(tmp3);
+    const obj2 = _require(3751);
   }
   let tmp11 = null == stateFromStores;
   if (!tmp11) {
@@ -138,14 +141,14 @@ export const useShouldRestrictUpdatingCreatorMonetizationSettings = function use
 export const useIsMonetizationReapplicationDisabled = function useIsMonetizationReapplicationDisabled(id2) {
   let restrictions;
   let restrictionsLoading;
-  const arg1 = id2;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_7];
+  const _require = id2;
+  let obj = _require(566);
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [id2];
   obj = {};
-  ({ restrictions, restrictionsLoading } = useCreatorMonetizationRestrictions(obj.useStateFromStores(items, () => guild.getGuild(arg0), items1)));
-  const tmp = useCreatorMonetizationRestrictions(obj.useStateFromStores(items, () => guild.getGuild(arg0), items1));
-  obj.isMonetizationReapplicationDisabled = arg1(dependencyMap[7]).isRestrictedFromMonetizationReapplication(restrictions);
+  ({ restrictions, restrictionsLoading } = useCreatorMonetizationRestrictions(obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1)));
+  const tmp = useCreatorMonetizationRestrictions(obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0), items1));
+  obj.isMonetizationReapplicationDisabled = _require(3751).isRestrictedFromMonetizationReapplication(restrictions);
   obj.restrictionsLoading = restrictionsLoading;
   return obj;
 };

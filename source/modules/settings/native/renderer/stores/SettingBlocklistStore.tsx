@@ -1,14 +1,13 @@
-// Module ID: 13439
-// Function ID: 102007
+// Module ID: 13553
+// Function ID: 104163
 // Name: zustandStore
-// Dependencies: []
+// Dependencies: [3998, 2]
 
-// Module 13439 (zustandStore)
-const zustandStore = require(dependencyMap[0]).createZustandStore(() => {
+// Module 13553 (zustandStore)
+const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => {
   const obj = { blocklist: new Set() };
   return obj;
 });
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/settings/native/renderer/stores/SettingBlocklistStore.tsx");
+const result = require("set").fileFinishedImporting("modules/settings/native/renderer/stores/SettingBlocklistStore.tsx");
 
 export default zustandStore;

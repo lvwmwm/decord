@@ -1,37 +1,51 @@
-// Module ID: 13793
-// Function ID: 104244
+// Module ID: 13907
+// Function ID: 106400
 // Name: ItemSeparator
-// Dependencies: []
+// Dependencies: [57, 31, 27, 6941, 4976, 653, 1345, 33, 478, 689, 4130, 3991, 1450, 1557, 13908, 10464, 10839, 10840, 566, 13910, 13911, 491, 6969, 6959, 13913, 13914, 9444, 6970, 4981, 10474, 13905, 13915, 13944, 13945, 13946, 10929, 13947, 7879, 4554, 13951, 13952, 3854, 13958, 2]
 // Exports: default
 
-// Module 13793 (ItemSeparator)
+// Module 13907 (ItemSeparator)
+import _slicedToArray from "_slicedToArray";
+import BountiesScrollVideoItemInner from "BountiesScrollVideoItemInner";
+import get_ActivityIndicator from "AdCreativeType";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import QuestsExperimentLocations from "QuestsExperimentLocations";
+import { AnalyticEvents } from "ME";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "BountiesScrollRecapFooter";
+import isWindows from "isWindows";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function ItemSeparator(trailingItem) {
   let tmp = null;
   if (null != trailingItem.trailingItem) {
     let obj = {};
     obj = { height: PX_8 };
     obj.style = obj;
-    tmp = callback2(closure_6, obj);
+    tmp = callback(closure_6, obj);
   }
   return tmp;
 }
 function BountiesRecapPullZone(height) {
   const style = { height: height.height };
-  return callback2(closure_6, { style });
+  return callback(closure_6, { style });
 }
 function BountiesScrollVideoItemContainer(index) {
   let children;
   let style;
   index = index.index;
-  const arg1 = index;
   const slotHeight = index.slotHeight;
-  const importDefault = slotHeight;
   const scrollY = index.scrollY;
-  const dependencyMap = scrollY;
   const isPeekEnabled = index.isPeekEnabled;
-  let closure_3 = isPeekEnabled;
   ({ style, children } = index);
-  let obj = arg1(dependencyMap[11]);
+  let obj = index(scrollY[11]);
   const fn = function c() {
     const result = (scrollY.get() - index * slotHeight) / slotHeight;
     const absolute = Math.abs(result);
@@ -46,11 +60,11 @@ function BountiesScrollVideoItemContainer(index) {
       }
     }
     const obj = {};
-    const items = [, , num];
-    obj.opacity = index(scrollY[11]).interpolate(absolute, ["minForce", "maxForce", "feedbackOnActivation"], items, index(scrollY[11]).Extrapolation.CLAMP);
+    const items = [1, 1, num];
+    obj.opacity = index(scrollY[11]).interpolate(absolute, [0, 0.3, 1], items, index(scrollY[11]).Extrapolation.CLAMP);
     return obj;
   };
-  obj = { scrollY, index, slotHeight, isPeekEnabled, PEEK_OPACITY: 0.8, interpolate: arg1(dependencyMap[11]).interpolate, FADE_DEADBAND: 0.3, Extrapolation: arg1(dependencyMap[11]).Extrapolation };
+  obj = { scrollY, index, slotHeight, isPeekEnabled, PEEK_OPACITY: 0.8, interpolate: index(scrollY[11]).interpolate, FADE_DEADBAND: 0.3, Extrapolation: index(scrollY[11]).Extrapolation };
   fn.__closure = obj;
   fn.__workletHash = 6532652233494;
   fn.__initData = closure_24;
@@ -58,11 +72,12 @@ function BountiesScrollVideoItemContainer(index) {
   style = [, ];
   style[0] = style;
   style[1] = animatedStyle;
-  return callback2(importDefault(dependencyMap[11]).View, { style, children });
+  return callback(slotHeight(scrollY[11]).View, { style, children });
 }
 function BountiesModalContentScrollInner(arg0) {
   let peekActive;
   let progress;
+  let require;
   let showProgressRing;
   let sourceQuestContent;
   let tmp26;
@@ -70,19 +85,18 @@ function BountiesModalContentScrollInner(arg0) {
   let tmp29;
   let tmp30;
   let visible;
-  ({ initialBountyId: closure_0, sourceQuestContent } = arg0);
-  const importDefault = sourceQuestContent;
-  let closure_37;
-  let closure_38;
-  let closure_39;
+  ({ initialBountyId: require, sourceQuestContent } = arg0);
+  let c37;
+  let c38;
+  let memo2;
   let closure_40;
   let closure_41;
-  let closure_42;
-  let closure_43;
-  let ItemSeparator;
-  let BountiesRecapPullZone;
-  let BountiesScrollVideoItemContainer;
-  let BountiesModalContentScrollInner;
+  let peekScale;
+  let cancel;
+  let dismissOnClose;
+  let takeDidAutoScroll;
+  let onPlaybackTimeChange;
+  let onEndCardVisible;
   let pauseCountdown;
   let resumeCountdown;
   let memo3;
@@ -92,23 +106,20 @@ function BountiesModalContentScrollInner(arg0) {
   let closure_54;
   let memo7;
   let derivedValue;
-  let tmp = callback3();
+  let tmp = callback2();
   const dependencyMap = tmp;
-  const height = importDefault(dependencyMap[12])().height;
-  let callback = height;
+  let height = sourceQuestContent(1450)().height;
   const ref = React.useRef(null);
-  const tmp3 = callback(React.useState(arg1(dependencyMap[14]).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
-  const React = tmp3[1];
-  callback = React.useCallback((nativeEvent) => {
+  const tmp3 = height(React.useState(require(13908) /* BountiesScrollPromptFooter */.BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
+  React = tmp3[1];
+  let callback = React.useCallback((nativeEvent) => {
     React(Math.ceil(nativeEvent.nativeEvent.layout.height));
   }, []);
-  const tmp5 = function useBountiesScrollVideoLayout(footerHeight) {
+  const tmp5 = (function useBountiesScrollVideoLayout(footerHeight) {
     footerHeight = footerHeight.footerHeight;
     const size = sourceQuestContent(tmp[12])();
     const width = size.width;
-    const sourceQuestContent = width;
     let height = size.height;
-    let tmp = height;
     tmp = sourceQuestContent(tmp[13])();
     height = tmp;
     const items = [width, height, , , , ];
@@ -117,20 +128,21 @@ function BountiesModalContentScrollInner(arg0) {
     return React.useMemo(() => {
       const diff = width - tmp.left - tmp.right;
       const diff1 = height - tmp.top - footerHeight;
-      let result = diff / closure_16;
+      let result = diff / diff;
       let result1 = diff;
       if (result > diff1) {
-        result1 = diff1 * closure_16;
+        result1 = diff1 * diff;
         result = diff1;
       }
       const obj = { top: tmp.top, left: Math.floor(tmp.left + (diff - result1) / 2), width: Math.floor(result1), height: Math.floor(result) };
       return obj;
     }, items);
-  }({ footerHeight: tmp3[0] });
-  let obj = arg1(dependencyMap[15]);
+  })({ footerHeight: tmp3[0] });
+  const absoluteFill = tmp5;
+  let obj = require(10464) /* _createForOfIteratorHelperLoose */;
   const questHomeBounties = obj.useQuestHomeBounties().questHomeBounties;
-  const first = callback(React.useState(() => {
-    const findIndexResult = questHomeBounties.findIndex((id) => id.id === closure_0);
+  const first = height(React.useState(() => {
+    const findIndexResult = questHomeBounties.findIndex((id) => id.id === outer1_0);
     if (findIndexResult <= 0) {
       let items = questHomeBounties;
     } else {
@@ -140,38 +152,31 @@ function BountiesModalContentScrollInner(arg0) {
     }
     return items;
   }), 1)[0];
-  let closure_7 = first;
-  let obj1 = arg1(dependencyMap[16]);
+  let obj1 = require(10839) /* useBountiesExperience */;
   const bountiesExperience = obj1.useBountiesExperience(ownedByVerticalScrollExperiment.VIDEO_MODAL_MOBILE);
   const orbAmount = bountiesExperience.orbAmount;
-  const ownedByVerticalScrollExperiment = bountiesExperience.ownedByVerticalScrollExperiment;
+  ownedByVerticalScrollExperiment = bountiesExperience.ownedByVerticalScrollExperiment;
   const rewardTimerSeconds = bountiesExperience.rewardTimerSeconds;
-  const AnalyticEvents = rewardTimerSeconds;
   const scrollAffordanceVariant = bountiesExperience.scrollAffordanceVariant;
-  const ContentDismissActionType = ownedByVerticalScrollExperiment;
-  const tmp7 = "auto" === scrollAffordanceVariant;
-  let obj2 = arg1(dependencyMap[17]);
-  const result = obj2.shouldUseScrollIndicatorOverlay(scrollAffordanceVariant);
-  let obj3 = arg1(dependencyMap[18]);
-  const items = [closure_7];
+  callback = tmp7;
+  let obj2 = require(10840) /* shouldUseScrollIndicatorOverlay */;
+  let result = obj2.shouldUseScrollIndicatorOverlay(scrollAffordanceVariant);
+  let obj3 = require(566) /* initialize */;
+  let items = [first];
   const items1 = [first, orbAmount];
   const stateFromStores = obj3.useStateFromStores(items, () => first.getCompletedBountyCount(first) * orbAmount, items1);
   const first1 = first[0];
-  let obj4 = arg1(dependencyMap[18]);
-  const items2 = [closure_7];
+  let obj4 = require(566) /* initialize */;
+  const items2 = [first];
   const items3 = [first1, rewardTimerSeconds];
   const height2 = tmp5.height;
-  let closure_14 = height2;
-  const sum = height2 + PX_8;
-  let closure_15 = sum;
-  const diff = first.length - 1;
-  let closure_16 = diff;
-  const PX_8 = tmp14;
-  let closure_18 = height2;
-  const result1 = diff * sum;
-  let closure_19 = result1;
-  const sum1 = result1 + height2;
-  let closure_20 = sum1;
+  let sum = height2 + PX_8;
+  let c15 = sum;
+  let diff = first.length - 1;
+  let c16 = diff;
+  PX_8 = tmp14;
+  let result1 = diff * sum;
+  let sum1 = result1 + height2;
   const items4 = [sum1, result1, height2];
   const stateFromStores1 = obj4.useStateFromStores(items2, () => {
     if (null == first1) {
@@ -186,54 +191,43 @@ function BountiesModalContentScrollInner(arg0) {
     }
   }, items3);
   const memo = React.useMemo(() => ({ lastBounty: result1, fullRecap: sum1, revealHeight: height2 }), items4);
-  let obj5 = arg1(dependencyMap[19]);
+  let obj5 = require(13910) /* getRevealProgress */;
   const handleRecapMomentumEnd = obj5.useBountiesRecapScroll({ listRef: ref, enabled: tmp14, offsets: memo }).handleRecapMomentumEnd;
-  let closure_21 = handleRecapMomentumEnd;
   const items5 = [first, sum1, stateFromStores > 0, sum];
   const memo1 = React.useMemo(() => {
-    const mapped = first.map((arg0, arg1) => arg1 * closure_15);
-    if (tmp14) {
+    const mapped = first.map((arg0, arg1) => arg1 * outer1_15);
+    if (closure_17) {
       mapped.push(sum1);
     }
     return mapped;
   }, items5);
-  const tmp19 = callback(React.useState(false), 2);
+  const tmp19 = height(React.useState(false), 2);
   const first2 = tmp19[0];
-  let closure_22 = first2;
-  callback3 = tmp21;
-  const tmp22 = callback(React.useState(false), 2);
+  callback2 = tmp21;
+  const tmp22 = height(React.useState(false), 2);
   const first3 = tmp22[0];
-  let closure_24 = first3;
   let closure_25 = tmp24;
-  [tmp26, tmp27] = callback(React.useState(true), 2);
+  [tmp26, tmp27] = height(React.useState(true), 2);
   let closure_26 = tmp27;
-  const tmp25 = callback(React.useState(true), 2);
-  [tmp29, tmp30] = callback(React.useState(false), 2);
+  const tmp25 = height(React.useState(true), 2);
+  [tmp29, tmp30] = height(React.useState(false), 2);
   let closure_27 = tmp30;
-  const tmp31 = callback(React.useState(0), 2);
+  const tmp31 = height(React.useState(0), 2);
   const first4 = tmp31[0];
-  let closure_28 = first4;
   let closure_29 = tmp31[1];
-  let obj6 = arg1(dependencyMap[11]);
+  let obj6 = require(3991);
   const sharedValue = obj6.useSharedValue(false);
-  let closure_30 = sharedValue;
-  let obj7 = arg1(dependencyMap[11]);
+  let obj7 = require(3991);
   const sharedValue1 = obj7.useSharedValue(false);
-  let closure_31 = sharedValue1;
-  let obj8 = arg1(dependencyMap[11]);
+  let obj8 = require(3991);
   const sharedValue2 = obj8.useSharedValue(0);
-  let closure_32 = sharedValue2;
-  let obj9 = arg1(dependencyMap[20]);
+  let obj9 = require(13911) /* useBountySwipeUpNux */;
   obj = { isEligible: first.length > 1, location: ownedByVerticalScrollExperiment.VIDEO_MODAL_MOBILE };
   const bountySwipeUpNux = obj9.useBountySwipeUpNux(obj);
   const hasSingleUseSwipeUpNux = bountySwipeUpNux.hasSingleUseSwipeUpNux;
-  let closure_33 = hasSingleUseSwipeUpNux;
   const dismissSingleUseSwipeUpNux = bountySwipeUpNux.dismissSingleUseSwipeUpNux;
-  let closure_34 = dismissSingleUseSwipeUpNux;
   const hasRecurringSwipeUpNux = bountySwipeUpNux.hasRecurringSwipeUpNux;
-  let closure_35 = hasRecurringSwipeUpNux;
   const dismissRecurringSwipeUpNux = bountySwipeUpNux.dismissRecurringSwipeUpNux;
-  let closure_36 = dismissRecurringSwipeUpNux;
   let tmp39 = tmp38;
   if (0 === first4) {
     tmp39 = hasSingleUseSwipeUpNux;
@@ -241,14 +235,13 @@ function BountiesModalContentScrollInner(arg0) {
   if (tmp39) {
     tmp39 = stateFromStores1;
   }
-  closure_37 = tmp40;
+  c37 = tmp40;
   let tmp41 = result;
   if (result) {
     tmp41 = hasRecurringSwipeUpNux;
   }
-  closure_38 = tmp41;
-  const memo2 = React.useMemo(() => callback(tmp[21]).v4(), []);
-  closure_39 = memo2;
+  c38 = tmp41;
+  memo2 = React.useMemo(() => outer1_0(tmp[21]).v4(), []);
   closure_40 = React.useRef(0);
   closure_41 = React.useRef(0);
   const effect = React.useEffect(() => {
@@ -256,16 +249,16 @@ function BountiesModalContentScrollInner(arg0) {
   }, []);
   const items6 = [first4, memo2];
   const callback1 = React.useCallback((arg0) => {
-    if (arg0 === callback(tmp[22]).VerticalScrollingDirection.DOWN) {
-      let obj = callback(tmp[23]);
+    if (arg0 === outer1_0(tmp[22]).VerticalScrollingDirection.DOWN) {
+      let obj = outer1_0(tmp[23]);
       obj = { verticalScrollingPosition: first4, scrollSessionId: memo2 };
       const result = obj.trackBountyAutoScrollDismissed(obj);
     }
   }, items6);
-  let obj11 = arg1(dependencyMap[24]);
+  let obj11 = require(13913) /* set */;
   obj = { listRef: ref };
   let tmp45 = tmp7;
-  if (tmp7) {
+  if ("auto" === scrollAffordanceVariant) {
     tmp45 = first4 < diff;
   }
   obj.enabled = tmp45;
@@ -290,18 +283,12 @@ function BountiesModalContentScrollInner(arg0) {
   obj.slotHeight = sum;
   obj.onCountdownCancelled = callback1;
   const bountiesAutoScroll = obj11.useBountiesAutoScroll(obj);
-  const peekScale = bountiesAutoScroll.peekScale;
-  closure_42 = peekScale;
-  const cancel = bountiesAutoScroll.cancel;
-  closure_43 = cancel;
-  const dismissOnClose = bountiesAutoScroll.dismissOnClose;
-  ItemSeparator = dismissOnClose;
-  const takeDidAutoScroll = bountiesAutoScroll.takeDidAutoScroll;
-  BountiesRecapPullZone = takeDidAutoScroll;
-  const onPlaybackTimeChange = bountiesAutoScroll.onPlaybackTimeChange;
-  BountiesScrollVideoItemContainer = onPlaybackTimeChange;
-  const onEndCardVisible = bountiesAutoScroll.onEndCardVisible;
-  BountiesModalContentScrollInner = onEndCardVisible;
+  peekScale = bountiesAutoScroll.peekScale;
+  cancel = bountiesAutoScroll.cancel;
+  dismissOnClose = bountiesAutoScroll.dismissOnClose;
+  takeDidAutoScroll = bountiesAutoScroll.takeDidAutoScroll;
+  onPlaybackTimeChange = bountiesAutoScroll.onPlaybackTimeChange;
+  onEndCardVisible = bountiesAutoScroll.onEndCardVisible;
   pauseCountdown = bountiesAutoScroll.pauseCountdown;
   resumeCountdown = bountiesAutoScroll.resumeCountdown;
   const items7 = [onEndCardVisible, onPlaybackTimeChange, pauseCountdown, resumeCountdown];
@@ -311,7 +298,7 @@ function BountiesModalContentScrollInner(arg0) {
   callback2 = React.useCallback((current) => {
     let MANUAL = arg1;
     if (arg1 === undefined) {
-      MANUAL = callback(tmp[22]).BountyScrollingType.MANUAL;
+      MANUAL = outer1_0(tmp[22]).BountyScrollingType.MANUAL;
     }
     current = ref2.current;
     if (current !== current) {
@@ -322,23 +309,23 @@ function BountiesModalContentScrollInner(arg0) {
       const diff = timestamp - ref.current;
       let result = { scrollingType: MANUAL };
       if (current > current) {
-        let UP = callback(tmp[22]).VerticalScrollingDirection.DOWN;
+        let UP = outer1_0(tmp[22]).VerticalScrollingDirection.DOWN;
       } else {
-        UP = callback(tmp[22]).VerticalScrollingDirection.UP;
+        UP = outer1_0(tmp[22]).VerticalScrollingDirection.UP;
       }
       result.scrollingDirection = UP;
       result.verticalScrollingPosition = current;
       result.scrollSessionId = memo2;
       result.timeWatchedPreScrollMs = diff;
-      result = callback(tmp[23]).trackBountyVerticalScroll(result);
-      const obj2 = callback(tmp[23]);
+      result = outer1_0(tmp[23]).trackBountyVerticalScroll(result);
+      const obj2 = outer1_0(tmp[23]);
     }
   }, items8);
   const items9 = [takeDidAutoScroll, callback2, first4, hasSingleUseSwipeUpNux, hasRecurringSwipeUpNux, dismissSingleUseSwipeUpNux, dismissRecurringSwipeUpNux];
   callback3 = React.useCallback((arg0) => {
     const tmp = takeDidAutoScroll();
-    callback2(arg0);
-    const BountyScrollingType = callback(tmp[22]).BountyScrollingType;
+    callback(arg0);
+    const BountyScrollingType = outer1_0(tmp[22]).BountyScrollingType;
     callback2(arg0, tmp ? BountyScrollingType.AUTO : BountyScrollingType.MANUAL);
     if (tmp5) {
       if (hasSingleUseSwipeUpNux) {
@@ -348,21 +335,21 @@ function BountiesModalContentScrollInner(arg0) {
       }
     }
   }, items9);
-  let obj13 = arg1(dependencyMap[25]);
+  let obj13 = require(13914) /* getRecapOrbCountFromPullProgress */;
   closure_53 = obj13.useBountiesRecapOrbCount({ scrollY: sharedValue2, lastBountyScrollOffset: result1, recapRevealHeight: height2, targetOrbAmount: stateFromStores, enabled: tmp14 });
   const items10 = [first, first4];
   const effect1 = React.useEffect(() => {
-    if (null != first[closure_28]) {
+    if (null != first[first4]) {
       const items = [tmp.id];
-      callback(tmp[26]).markAdContentSeen(callback(tmp[27]).AdCreativeType.BOUNTY, items);
-      const obj = callback(tmp[26]);
+      outer1_0(tmp[26]).markAdContentSeen(outer1_0(tmp[27]).AdCreativeType.BOUNTY, items);
+      const obj = outer1_0(tmp[26]);
     }
   }, items10);
   const items11 = [first, first4, dismissOnClose, rewardTimerSeconds, sourceQuestContent];
   const items12 = [sourceQuestContent];
   const callback4 = React.useCallback(() => {
     const tmp = dismissOnClose();
-    if (null != first[closure_28]) {
+    if (null != first[first4]) {
       const bountyVideoProgress = first.getBountyVideoProgress(tmp2.id);
       let maxTimestampSec;
       if (null != bountyVideoProgress) {
@@ -381,47 +368,47 @@ function BountiesModalContentScrollInner(arg0) {
         num2 = duration;
       }
       const result = 1000 * rewardTimerSeconds;
-      let obj = callback(tmp[23]);
-      obj = { adContentId: tmp2.id, adCreativeType: callback(tmp[27]).AdCreativeType.BOUNTY, event: rewardTimerSeconds.AD_VIDEO_MODAL_CLOSED };
-      obj = { content_name: callback(tmp[22]).getQuestContentName(callback(tmp[28]).QuestContent.VIDEO_MODAL_MOBILE), content_id: callback(tmp[28]).QuestContent.VIDEO_MODAL_MOBILE };
-      const obj4 = callback(tmp[22]);
-      obj.video_progress = callback(tmp[29]).formatVideoProgressRatio(num, num2);
+      let obj = outer1_0(tmp[23]);
+      obj = { adContentId: tmp2.id, adCreativeType: outer1_0(tmp[27]).AdCreativeType.BOUNTY, event: rewardTimerSeconds.AD_VIDEO_MODAL_CLOSED };
+      obj = { content_name: outer1_0(tmp[22]).getQuestContentName(outer1_0(tmp[28]).QuestContent.VIDEO_MODAL_MOBILE), content_id: outer1_0(tmp[28]).QuestContent.VIDEO_MODAL_MOBILE };
+      const obj4 = outer1_0(tmp[22]);
+      obj.video_progress = outer1_0(tmp[29]).formatVideoProgressRatio(num, num2);
       obj.threshold_met = 1000 * num >= result;
       obj.reward_timer_seconds = result / 1000;
       obj.properties = obj;
       obj.sourceQuestContent = sourceQuestContent;
       obj.trackAdContentEvent(obj);
-      const obj5 = callback(tmp[29]);
+      const obj5 = outer1_0(tmp[29]);
     }
     sourceQuestContent(tmp[30]).hideModal();
   }, items11);
   closure_54 = React.useCallback(() => {
-    let obj = callback(tmp[23]);
-    obj = { adContentId: orbAmount, adCreativeType: callback(tmp[27]).AdCreativeType.BOUNTY, event: rewardTimerSeconds.AD_VIDEO_MODAL_CLOSED };
-    obj = { content_name: callback(tmp[22]).getQuestContentName(callback(tmp[28]).QuestContent.BOUNTIES_END_INTERSTITIAL), content_id: callback(tmp[28]).QuestContent.BOUNTIES_END_INTERSTITIAL };
+    let obj = outer1_0(tmp[23]);
+    obj = { adContentId: orbAmount, adCreativeType: outer1_0(tmp[27]).AdCreativeType.BOUNTY, event: rewardTimerSeconds.AD_VIDEO_MODAL_CLOSED };
+    obj = { content_name: outer1_0(tmp[22]).getQuestContentName(outer1_0(tmp[28]).QuestContent.BOUNTIES_END_INTERSTITIAL), content_id: outer1_0(tmp[28]).QuestContent.BOUNTIES_END_INTERSTITIAL };
     obj.properties = obj;
     obj.sourceQuestContent = sourceQuestContent;
     obj.trackAdContentEvent(obj);
-    const obj4 = callback(tmp[22]);
+    const obj4 = outer1_0(tmp[22]);
     sourceQuestContent(tmp[30]).hideModal();
   }, items12);
-  let obj14 = arg1(dependencyMap[11]);
+  let obj14 = require(3991);
   obj1 = { onScroll: xt, onBeginDrag: mt };
-  function xt(contentOffset) {
+  xt = function xt(contentOffset) {
     const result = sharedValue2.set(contentOffset.contentOffset.y);
     if (sharedValue1.get()) {
       const result1 = sharedValue.set(first2(contentOffset));
     }
-  }
-  obj2 = { scrollY: sharedValue2, isDraggingSharedValue: sharedValue1, isScrollingInBoundsSharedValue: sharedValue, isScrollEventInBounds: closure_22 };
+  };
+  obj2 = { scrollY: sharedValue2, isDraggingSharedValue: sharedValue1, isScrollingInBoundsSharedValue: sharedValue, isScrollEventInBounds: first2 };
   xt.__closure = obj2;
   xt.__workletHash = 7942598540397;
   xt.__initData = closure_25;
-  function mt(arg0) {
+  mt = function mt(arg0) {
     const result = sharedValue1.set(true);
     const result1 = sharedValue.set(first2(arg0));
-  }
-  obj3 = { isDraggingSharedValue: sharedValue1, isScrollingInBoundsSharedValue: sharedValue, isScrollEventInBounds: closure_22 };
+  };
+  obj3 = { isDraggingSharedValue: sharedValue1, isScrollingInBoundsSharedValue: sharedValue, isScrollEventInBounds: first2 };
   mt.__closure = obj3;
   mt.__workletHash = 14039038912528;
   mt.__initData = closure_26;
@@ -429,16 +416,16 @@ function BountiesModalContentScrollInner(arg0) {
     constructor(arg0) {
       if (arg0.contentOffset.y < 0) {
         tmp3 = initialBountyId;
-        tmp4 = closure_2;
+        tmp4 = outer1_2;
         num2 = 22;
-        UP = initialBountyId(closure_2[22]).VerticalScrollingDirection.DOWN;
+        UP = initialBountyId(outer1_2[22]).VerticalScrollingDirection.DOWN;
       } else {
         tmp = initialBountyId;
-        tmp2 = closure_2;
+        tmp2 = outer1_2;
         num = 22;
-        UP = initialBountyId(closure_2[22]).VerticalScrollingDirection.UP;
+        UP = initialBountyId(outer1_2[22]).VerticalScrollingDirection.UP;
       }
-      obj = initialBountyId(closure_2[11]);
+      obj = initialBountyId(outer1_2[11]);
       tmp5 = obj.runOnJS(cancel)(UP);
       result = closure_31.set(false);
       if (!height) {
@@ -448,7 +435,7 @@ function BountiesModalContentScrollInner(arg0) {
       return;
     }
   }
-  obj4 = { VerticalScrollingDirection: arg1(dependencyMap[22]).VerticalScrollingDirection, runOnJS: arg1(dependencyMap[11]).runOnJS, cancelScrollAffordance: cancel, isDraggingSharedValue: sharedValue1, IS_ANDROID: closure_14, isScrollingInBoundsSharedValue: sharedValue };
+  obj4 = { VerticalScrollingDirection: require(6969) /* getQuestContentName */.VerticalScrollingDirection, runOnJS: require(3991).runOnJS, cancelScrollAffordance: cancel, isDraggingSharedValue: sharedValue1, IS_ANDROID: height2, isScrollingInBoundsSharedValue: sharedValue };
   Tt.__closure = obj4;
   Tt.__workletHash = 10752087179842;
   Tt.__initData = closure_27;
@@ -457,9 +444,9 @@ function BountiesModalContentScrollInner(arg0) {
     constructor(arg0) {
       if (closure_17) {
         tmp = initialBountyId;
-        tmp2 = closure_2;
+        tmp2 = outer1_2;
         num = 11;
-        obj = initialBountyId(closure_2[11]);
+        obj = initialBountyId(outer1_2[11]);
         tmp3 = handleRecapMomentumEnd;
         tmp4 = arg0;
         tmp5 = obj.runOnJS(handleRecapMomentumEnd)(arg0);
@@ -468,32 +455,32 @@ function BountiesModalContentScrollInner(arg0) {
       return;
     }
   }
-  obj5 = { showRecapPullZone: tmp14, runOnJS: arg1(dependencyMap[11]).runOnJS, handleRecapMomentumEnd, isScrollingInBoundsSharedValue: sharedValue };
+  obj5 = { showRecapPullZone: tmp14, runOnJS: require(3991).runOnJS, handleRecapMomentumEnd, isScrollingInBoundsSharedValue: sharedValue };
   Bt.__closure = obj5;
   Bt.__workletHash = 13684210320337;
-  Bt.__initData = closure_28;
+  Bt.__initData = first4;
   obj1.onMomentumEnd = Bt;
-  const tmp28 = callback(React.useState(false), 2);
+  const tmp28 = height(React.useState(false), 2);
   const tmp36 = first.length > 1;
-  let obj20 = arg1(dependencyMap[11]);
+  let obj20 = require(3991);
   function wt() {
-    return Math.min(Math.max(Math.round(sharedValue2.get() / sum), 0), diff);
+    return Math.min(Math.max(Math.round(sharedValue2.get() / closure_15), 0), closure_16);
   }
   wt.__closure = { scrollY: sharedValue2, slotHeight: sum, lastBountyIndex: diff };
   wt.__workletHash = 14048843158960;
   wt.__initData = closure_29;
   function yt(arg0, arg1) {
     if (arg0 !== arg1) {
-      callback(callback[11]).runOnJS(callback3)(arg0);
-      const obj = callback(callback[11]);
+      outer1_0(outer1_0[11]).runOnJS(callback3)(arg0);
+      const obj = outer1_0(outer1_0[11]);
     }
   }
-  obj6 = { runOnJS: arg1(dependencyMap[11]).runOnJS, commitSwipe: callback3 };
+  obj6 = { runOnJS: require(3991).runOnJS, commitSwipe: callback3 };
   yt.__closure = obj6;
   yt.__workletHash = 14015091539518;
-  yt.__initData = closure_30;
+  yt.__initData = sharedValue;
   const animatedReaction = obj20.useAnimatedReaction(wt, yt);
-  let obj22 = arg1(dependencyMap[11]);
+  let obj22 = require(3991);
   class Nt {
     constructor() {
       tmp = closure_17;
@@ -501,37 +488,37 @@ function BountiesModalContentScrollInner(arg0) {
         tmp2 = closure_32;
         tmp4 = closure_19;
         tmp5 = initialBountyId;
-        tmp6 = closure_2;
+        tmp6 = outer1_2;
         num = 19;
         value = closure_32.get();
-        tmp = value >= closure_19 - initialBountyId(closure_2[19]).RECAP_SNAP_EPSILON;
+        tmp = value >= closure_19 - initialBountyId(outer1_2[19]).RECAP_SNAP_EPSILON;
       }
       return tmp;
     }
   }
-  obj7 = { showRecapPullZone: tmp14, scrollY: sharedValue2, lastBountyScrollOffset: result1, RECAP_SNAP_EPSILON: arg1(dependencyMap[19]).RECAP_SNAP_EPSILON };
+  obj7 = { showRecapPullZone: tmp14, scrollY: sharedValue2, lastBountyScrollOffset: result1, RECAP_SNAP_EPSILON: require(13910) /* getRevealProgress */.RECAP_SNAP_EPSILON };
   Nt.__closure = obj7;
   Nt.__workletHash = 6584708256992;
-  Nt.__initData = closure_31;
+  Nt.__initData = sharedValue1;
   class Mt {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
         tmp = initialBountyId;
-        tmp2 = closure_2;
+        tmp2 = outer1_2;
         num = 11;
-        obj = initialBountyId(closure_2[11]);
+        obj = initialBountyId(outer1_2[11]);
         tmp3 = closure_27;
         tmp4 = obj.runOnJS(closure_27)(arg0);
       }
       return;
     }
   }
-  obj8 = { runOnJS: arg1(dependencyMap[11]).runOnJS, setShowRecapFooter: tmp30 };
+  obj8 = { runOnJS: require(3991).runOnJS, setShowRecapFooter: tmp30 };
   Mt.__closure = obj8;
   Mt.__workletHash = 10788669301891;
-  Mt.__initData = closure_32;
+  Mt.__initData = sharedValue2;
   const animatedReaction1 = obj22.useAnimatedReaction(Nt, Mt);
-  let obj25 = arg1(dependencyMap[11]);
+  let obj25 = require(3991);
   class Vt {
     constructor() {
       tmp = closure_17;
@@ -545,19 +532,19 @@ function BountiesModalContentScrollInner(arg0) {
   }
   Vt.__closure = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue2, lastBountyScrollOffset: result1 };
   Vt.__workletHash = 6186370630693;
-  Vt.__initData = closure_33;
+  Vt.__initData = hasSingleUseSwipeUpNux;
   function bt(arg0, arg1) {
     if (arg0 !== arg1) {
-      callback(callback[11]).runOnJS(tmp21)(arg0);
-      const obj = callback(callback[11]);
+      outer1_0(outer1_0[11]).runOnJS(closure_23)(arg0);
+      const obj = outer1_0(outer1_0[11]);
     }
   }
-  obj9 = { runOnJS: arg1(dependencyMap[11]).runOnJS, setIsRecapPageRevealed: tmp21 };
+  obj9 = { runOnJS: require(3991).runOnJS, setIsRecapPageRevealed: tmp21 };
   bt.__closure = obj9;
   bt.__workletHash = 12713474352874;
-  bt.__initData = closure_34;
+  bt.__initData = dismissSingleUseSwipeUpNux;
   const animatedReaction2 = obj25.useAnimatedReaction(Vt, bt);
-  let obj27 = arg1(dependencyMap[11]);
+  let obj27 = require(3991);
   class Ht {
     constructor() {
       tmp = closure_17;
@@ -565,34 +552,34 @@ function BountiesModalContentScrollInner(arg0) {
         tmp2 = closure_32;
         tmp4 = closure_20;
         tmp5 = initialBountyId;
-        tmp6 = closure_2;
+        tmp6 = outer1_2;
         num = 19;
         value = closure_32.get();
-        tmp = value >= closure_20 - initialBountyId(closure_2[19]).RECAP_SNAP_EPSILON;
+        tmp = value >= closure_20 - initialBountyId(outer1_2[19]).RECAP_SNAP_EPSILON;
       }
       return tmp;
     }
   }
   const animatedScrollHandler = obj14.useAnimatedScrollHandler(obj1);
-  Ht.__closure = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue2, fullRecapScrollOffset: sum1, RECAP_SNAP_EPSILON: arg1(dependencyMap[19]).RECAP_SNAP_EPSILON };
+  Ht.__closure = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue2, fullRecapScrollOffset: sum1, RECAP_SNAP_EPSILON: require(13910) /* getRevealProgress */.RECAP_SNAP_EPSILON };
   Ht.__workletHash = 5669564400667;
-  Ht.__initData = closure_35;
+  Ht.__initData = hasRecurringSwipeUpNux;
   function kt(arg0, arg1) {
     if (arg0 !== arg1) {
-      callback(callback[11]).runOnJS(tmp24)(arg0);
-      const obj = callback(callback[11]);
+      outer1_0(outer1_0[11]).runOnJS(closure_25)(arg0);
+      const obj = outer1_0(outer1_0[11]);
     }
   }
-  obj11 = { runOnJS: arg1(dependencyMap[11]).runOnJS, setIsRecapPageOnTop: tmp24 };
+  obj11 = { runOnJS: require(3991).runOnJS, setIsRecapPageOnTop: tmp24 };
   kt.__closure = obj11;
   kt.__workletHash = 8102193741774;
-  kt.__initData = closure_36;
+  kt.__initData = dismissRecurringSwipeUpNux;
   const animatedReaction3 = obj27.useAnimatedReaction(Ht, kt);
   const items13 = [height2, stateFromStores > 0];
   const items14 = [tmp.listWrapper, tmp5];
   const memo4 = React.useMemo(() => {
     let tmp = null;
-    if (tmp14) {
+    if (closure_17) {
       const obj = { height: height2 };
       tmp = tmp7(takeDidAutoScroll, obj);
     }
@@ -626,8 +613,8 @@ function BountiesModalContentScrollInner(arg0) {
   const memo9 = React.useMemo(() => {
     const items = [tmp.autoScrollIndicator, ];
     const obj = {};
-    const sum = tmp5.top + callback(tmp[24]).AUTO_SCROLL_PEEK_TOP_OFFSET;
-    const sum1 = sum + tmp5.height * callback(tmp[24]).AUTO_SCROLL_PEEK_SCALE;
+    const sum = tmp5.top + outer1_0(tmp[24]).AUTO_SCROLL_PEEK_TOP_OFFSET;
+    const sum1 = sum + tmp5.height * outer1_0(tmp[24]).AUTO_SCROLL_PEEK_SCALE;
     obj.top = sum1 + sourceQuestContent(tmp[9]).space.PX_32;
     ({ left: obj.left, width: obj.width } = tmp5);
     items[1] = obj;
@@ -636,7 +623,7 @@ function BountiesModalContentScrollInner(arg0) {
   const memo10 = React.useMemo(() => {
     const items = [tmp.recapPage, ];
     let obj = { top: tmp5.top, left: tmp5.left, width: tmp5.width, height: height - tmp5.top };
-    let tmp = null;
+    tmp = null;
     if (first3) {
       obj = { zIndex: sum };
       tmp = obj;
@@ -645,52 +632,52 @@ function BountiesModalContentScrollInner(arg0) {
     items[1] = obj;
     return items;
   }, items19);
-  let obj30 = arg1(dependencyMap[11]);
+  let obj30 = require(3991);
   class Jt {
     constructor() {
-      obj = initialBountyId(closure_2[19]);
+      obj = initialBountyId(outer1_2[19]);
       return obj.getRevealProgress(closure_32.get(), closure_19, height);
     }
   }
-  const obj10 = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue2, fullRecapScrollOffset: sum1, RECAP_SNAP_EPSILON: arg1(dependencyMap[19]).RECAP_SNAP_EPSILON };
-  Jt.__closure = { getRevealProgress: arg1(dependencyMap[19]).getRevealProgress, scrollY: sharedValue2, lastBountyScrollOffset: result1, recapRevealHeight: height2 };
+  const obj10 = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue2, fullRecapScrollOffset: sum1, RECAP_SNAP_EPSILON: require(13910) /* getRevealProgress */.RECAP_SNAP_EPSILON };
+  Jt.__closure = { getRevealProgress: require(13910) /* getRevealProgress */.getRevealProgress, scrollY: sharedValue2, lastBountyScrollOffset: result1, recapRevealHeight: height2 };
   Jt.__workletHash = 8427964721554;
-  Jt.__initData = closure_37;
+  Jt.__initData = c37;
   derivedValue = obj30.useDerivedValue(Jt);
-  let obj32 = arg1(dependencyMap[11]);
+  let obj32 = require(3991);
   class Ut {
     constructor() {
       obj = {};
-      obj2 = initialBountyId(closure_2[11]);
+      obj2 = initialBountyId(outer1_2[11]);
       value = runOnJS.get();
-      obj.opacity = obj2.interpolate(value, [77601039, 1612144654], [77601039, 1612144654], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj2.interpolate(value, [0, 1], [0, 1], initialBountyId(outer1_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
-  obj13 = { interpolate: arg1(dependencyMap[11]).interpolate, recapPullProgress: derivedValue, Extrapolation: arg1(dependencyMap[11]).Extrapolation };
+  obj13 = { interpolate: require(3991).interpolate, recapPullProgress: derivedValue, Extrapolation: require(3991).Extrapolation };
   Ut.__closure = obj13;
   Ut.__workletHash = 1497321349449;
-  Ut.__initData = closure_38;
+  Ut.__initData = c38;
   const animatedStyle = obj32.useAnimatedStyle(Ut);
-  const obj12 = { getRevealProgress: arg1(dependencyMap[19]).getRevealProgress, scrollY: sharedValue2, lastBountyScrollOffset: result1, recapRevealHeight: height2 };
+  const obj12 = { getRevealProgress: require(13910) /* getRevealProgress */.getRevealProgress, scrollY: sharedValue2, lastBountyScrollOffset: result1, recapRevealHeight: height2 };
   class Gt {
     constructor() {
       obj = {};
-      obj2 = initialBountyId(closure_2[11]);
+      obj2 = initialBountyId(outer1_2[11]);
       value = runOnJS.get();
       items = [, ];
-      items[0] = closure_19;
-      items[1] = closure_20;
-      obj.opacity = obj2.interpolate(value, items, [true, true], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      items[0] = outer1_19;
+      items[1] = outer1_20;
+      obj.opacity = obj2.interpolate(value, items, [1, 0], initialBountyId(outer1_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
-  obj14 = { interpolate: arg1(dependencyMap[11]).interpolate, recapPullProgress: derivedValue, FOOTER_FADE_START_PROGRESS: closure_19, FOOTER_FADE_END_PROGRESS: closure_20, Extrapolation: arg1(dependencyMap[11]).Extrapolation };
+  obj14 = { interpolate: require(3991).interpolate, recapPullProgress: derivedValue, FOOTER_FADE_START_PROGRESS: result1, FOOTER_FADE_END_PROGRESS: sum1, Extrapolation: require(3991).Extrapolation };
   Gt.__closure = obj14;
   Gt.__workletHash = 3685190194249;
-  Gt.__initData = closure_39;
-  const animatedStyle1 = arg1(dependencyMap[11]).useAnimatedStyle(Gt);
-  const obj35 = arg1(dependencyMap[11]);
+  Gt.__initData = memo2;
+  const animatedStyle1 = require(3991).useAnimatedStyle(Gt);
+  const obj35 = require(3991);
   class Qt {
     constructor() {
       if (closure_32.get() >= closure_19 - closure_15 / 2) {
@@ -698,25 +685,25 @@ function BountiesModalContentScrollInner(arg0) {
         value = runOnJS.get();
       } else {
         tmp = initialBountyId;
-        tmp2 = closure_2;
+        tmp2 = outer1_2;
         num = 19;
-        obj = initialBountyId(closure_2[19]);
+        obj = initialBountyId(outer1_2[19]);
         tmp3 = closure_32;
         tmp4 = height;
         num2 = 0;
         value = obj.getRevealProgress(closure_32.get(), 0, height);
       }
       obj = {};
-      obj3 = initialBountyId(closure_2[11]);
+      obj3 = initialBountyId(outer1_2[11]);
       items = [, ];
-      items[0] = closure_19;
-      items[1] = closure_20;
-      obj.opacity = obj3.interpolate(value, items, [true, true], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      items[0] = outer1_19;
+      items[1] = outer1_20;
+      obj.opacity = obj3.interpolate(value, items, [1, 0], initialBountyId(outer1_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
-  const obj37 = arg1(dependencyMap[11]);
-  Qt.__closure = { scrollY: sharedValue2, lastBountyScrollOffset: result1, slotHeight: sum, recapPullProgress: derivedValue, getRevealProgress: arg1(dependencyMap[19]).getRevealProgress, recapRevealHeight: height2, interpolate: arg1(dependencyMap[11]).interpolate, FOOTER_FADE_START_PROGRESS: closure_19, FOOTER_FADE_END_PROGRESS: closure_20, Extrapolation: arg1(dependencyMap[11]).Extrapolation };
+  const obj37 = require(3991);
+  Qt.__closure = { scrollY: sharedValue2, lastBountyScrollOffset: result1, slotHeight: sum, recapPullProgress: derivedValue, getRevealProgress: require(13910) /* getRevealProgress */.getRevealProgress, recapRevealHeight: height2, interpolate: require(3991).interpolate, FOOTER_FADE_START_PROGRESS: result1, FOOTER_FADE_END_PROGRESS: sum1, Extrapolation: require(3991).Extrapolation };
   Qt.__workletHash = 15092194442650;
   Qt.__initData = closure_40;
   const items20 = [tmp.peekGradient, , , , ];
@@ -726,45 +713,45 @@ function BountiesModalContentScrollInner(arg0) {
     const items = [tmp.peekGradient, { left: tmp5.left, width: tmp5.width, top: tmp5.top + tmp5.height, bottom: 0 }];
     return items;
   }, items20);
-  const obj15 = { scrollY: sharedValue2, lastBountyScrollOffset: result1, slotHeight: sum, recapPullProgress: derivedValue, getRevealProgress: arg1(dependencyMap[19]).getRevealProgress, recapRevealHeight: height2, interpolate: arg1(dependencyMap[11]).interpolate, FOOTER_FADE_START_PROGRESS: closure_19, FOOTER_FADE_END_PROGRESS: closure_20, Extrapolation: arg1(dependencyMap[11]).Extrapolation };
+  const obj15 = { scrollY: sharedValue2, lastBountyScrollOffset: result1, slotHeight: sum, recapPullProgress: derivedValue, getRevealProgress: require(13910) /* getRevealProgress */.getRevealProgress, recapRevealHeight: height2, interpolate: require(3991).interpolate, FOOTER_FADE_START_PROGRESS: result1, FOOTER_FADE_END_PROGRESS: sum1, Extrapolation: require(3991).Extrapolation };
   class Zt {
     constructor() {
       obj = {};
-      obj2 = initialBountyId(closure_2[11]);
+      obj2 = initialBountyId(outer1_2[11]);
       value = closure_32.get();
-      items = [0.229];
+      items = [0];
       items[1] = closure_15;
-      obj.opacity = obj2.interpolate(value, items, [true, true], initialBountyId(closure_2[11]).Extrapolation.CLAMP);
+      obj.opacity = obj2.interpolate(value, items, [1, 0], initialBountyId(outer1_2[11]).Extrapolation.CLAMP);
       return obj;
     }
   }
-  const obj39 = arg1(dependencyMap[11]);
-  Zt.__closure = { interpolate: arg1(dependencyMap[11]).interpolate, scrollY: sharedValue2, slotHeight: sum, Extrapolation: arg1(dependencyMap[11]).Extrapolation };
+  const obj39 = require(3991);
+  Zt.__closure = { interpolate: require(3991).interpolate, scrollY: sharedValue2, slotHeight: sum, Extrapolation: require(3991).Extrapolation };
   Zt.__workletHash = 5908400559291;
   Zt.__initData = closure_41;
   const animatedStyle3 = obj39.useAnimatedStyle(Zt);
-  const obj16 = { interpolate: arg1(dependencyMap[11]).interpolate, scrollY: sharedValue2, slotHeight: sum, Extrapolation: arg1(dependencyMap[11]).Extrapolation };
+  const obj16 = { interpolate: require(3991).interpolate, scrollY: sharedValue2, slotHeight: sum, Extrapolation: require(3991).Extrapolation };
   class Wt {
     constructor() {
-      return runOnJS.get() < closure_20;
+      return runOnJS.get() < outer1_20;
     }
   }
-  Wt.__closure = { recapPullProgress: derivedValue, FOOTER_FADE_END_PROGRESS: closure_20 };
+  Wt.__closure = { recapPullProgress: derivedValue, FOOTER_FADE_END_PROGRESS: sum1 };
   Wt.__workletHash = 547045699209;
-  Wt.__initData = closure_42;
+  Wt.__initData = peekScale;
   function zt(arg0, arg1) {
     if (arg0 !== arg1) {
-      callback(callback[11]).runOnJS(tmp27)(arg0);
-      const obj = callback(callback[11]);
+      outer1_0(outer1_0[11]).runOnJS(closure_26)(arg0);
+      const obj = outer1_0(outer1_0[11]);
     }
   }
-  const obj17 = { recapPullProgress: derivedValue, FOOTER_FADE_END_PROGRESS: closure_20 };
-  const obj41 = arg1(dependencyMap[11]);
-  zt.__closure = { runOnJS: arg1(dependencyMap[11]).runOnJS, setIsCloseButtonPressable: tmp27 };
+  const obj17 = { recapPullProgress: derivedValue, FOOTER_FADE_END_PROGRESS: sum1 };
+  const obj41 = require(3991);
+  zt.__closure = { runOnJS: require(3991).runOnJS, setIsCloseButtonPressable: tmp27 };
   zt.__workletHash = 6290671204687;
-  zt.__initData = closure_43;
+  zt.__initData = cancel;
   const animatedReaction4 = obj41.useAnimatedReaction(Wt, zt);
-  const items21 = [sum, sharedValue2, memo7, "peek" === scrollAffordanceVariant && hasRecurringSwipeUpNux, tmp7, peekScale, sourceQuestContent, , , , , , , , , , ];
+  const items21 = [sum, sharedValue2, memo7, "peek" === scrollAffordanceVariant && hasRecurringSwipeUpNux, "auto" === scrollAffordanceVariant, peekScale, sourceQuestContent, , , , , , , , , , ];
   ({ width: arr23[7], height: arr23[8] } = tmp5);
   items21[9] = first4;
   items21[10] = first2;
@@ -777,7 +764,7 @@ function BountiesModalContentScrollInner(arg0) {
   const items22 = [first4, first2, first3, , , , , , , ];
   ({ width: arr24[3], height: arr24[4] } = tmp5);
   items22[5] = "peek" === scrollAffordanceVariant && hasRecurringSwipeUpNux;
-  items22[6] = tmp7;
+  items22[6] = "auto" === scrollAffordanceVariant;
   items22[7] = tmp41;
   items22[8] = ownedByVerticalScrollExperiment;
   items22[9] = ownedByVerticalScrollExperiment;
@@ -794,47 +781,47 @@ function BountiesModalContentScrollInner(arg0) {
       flag = tmp2;
       const tmp = first4;
     }
-    let obj = { index, slotHeight: sum, scrollY: sharedValue2, style: memo7, isPeekEnabled: tmp40 };
+    let obj = { index, slotHeight: closure_15, scrollY: sharedValue2, style: memo7, isPeekEnabled: c37 };
     obj = { bounty: item, sourceQuestContent, width: tmp5.width, height: tmp5.height, index, isActive: index === first4, isRecapPageRevealed: first2, isRecapPageOnTop: first3, isScrollingInBoundsSharedValue: sharedValue };
-    let tmp7 = tmp41;
-    if (tmp41) {
+    let tmp7 = c38;
+    if (c38) {
       tmp7 = 0 === index;
     }
     obj.isScrollIndicatorOverlayEnabled = tmp7;
     obj.shouldLoadHls = flag;
     let tmp8;
-    if (tmp7) {
+    if (closure_12) {
       tmp8 = memo3;
     }
     obj.scrollAffordance = tmp8;
     let tmp9;
     if (index === first4) {
-      if (tmp7) {
+      if (closure_12) {
         tmp9 = peekScale;
       }
     }
     obj.peekScale = tmp9;
     obj.softDownloadCapsEnabled = ownedByVerticalScrollExperiment;
-    obj.children = tmp7(callback(tmp[31]).BountiesScrollVideoItem, obj, item.id);
-    return tmp7(onPlaybackTimeChange, obj);
+    obj.children = closure_12(outer1_0(tmp[31]).BountiesScrollVideoItem, obj, item.id);
+    return closure_12(onPlaybackTimeChange, obj);
   }, items21);
   [][0] = height2;
-  const memo12 = React.useMemo(() => ({ activeIndex: first4, isRecapPageRevealed: first2, isRecapPageOnTop: first3, width: tmp5.width, height: tmp5.height, isPeekEnabled: tmp40, isAutoScrollEnabled: tmp7, canShowScrollIndicatorOverlay: tmp41, ownedByVerticalScrollExperiment, isSoftCapPreload: ownedByVerticalScrollExperiment }), items22);
+  const memo12 = React.useMemo(() => ({ activeIndex: first4, isRecapPageRevealed: first2, isRecapPageOnTop: first3, width: tmp5.width, height: tmp5.height, isPeekEnabled: c37, isAutoScrollEnabled: closure_12, canShowScrollIndicatorOverlay: c38, ownedByVerticalScrollExperiment, isSoftCapPreload: ownedByVerticalScrollExperiment }), items22);
   if (0 === first.length) {
     return null;
   } else {
     if (tmp39) {
-      let tmp77 = tmp7(importDefault(dependencyMap[32]), {});
+      let tmp77 = callback(sourceQuestContent(13944), {});
     } else {
       tmp77 = null;
       if (tmp29) {
         const obj19 = { orbAmount: stateFromStores };
-        tmp77 = tmp7(arg1(dependencyMap[33]).BountiesScrollRecapFooter, obj19);
+        tmp77 = callback(require(13945) /* BountiesScrollRecapFooter */.BountiesScrollRecapFooter, obj19);
       }
     }
     obj20 = { style: tmp.root };
     const obj21 = { active: peekActive };
-    const items23 = [tmp7(importDefault(dependencyMap[34]), obj21), , , , , , ];
+    const items23 = [callback(sourceQuestContent(13946), obj21), , , , , , ];
     let tmp90Result = null;
     if (tmp14) {
       obj22 = {};
@@ -847,21 +834,21 @@ function BountiesModalContentScrollInner(arg0) {
       obj22.pointerEvents = str2;
       const obj23 = {
         adContentId: orbAmount,
-        adCreativeType: arg1(dependencyMap[27]).AdCreativeType.BOUNTY,
-        questContent: arg1(dependencyMap[28]).QuestContent.BOUNTIES_END_INTERSTITIAL,
+        adCreativeType: require(6970) /* AdCreativeType */.AdCreativeType.BOUNTY,
+        questContent: require(4981) /* set */.QuestContent.BOUNTIES_END_INTERSTITIAL,
         overrideVisibility: first3,
         sourceQuestContent,
         children() {
-              return tmp7(callback(tmp[36]).BountiesScrollRecapPage, { orbAmount: closure_53, onClose: closure_54, style: { flex: 1 } });
+              return tmp7(outer1_0(tmp[36]).BountiesScrollRecapPage, { orbAmount: closure_53, onClose: closure_54, style: { flex: 1 } });
             }
       };
-      obj22.children = tmp7(arg1(dependencyMap[35]).QuestContentImpressionTrackerNative, obj23);
-      tmp90Result = tmp7(importDefault(dependencyMap[11]).View, obj22);
-      const tmp90 = tmp7;
+      obj22.children = callback(require(10929) /* _createForOfIteratorHelperLoose */.QuestContentImpressionTrackerNative, obj23);
+      tmp90Result = callback(sourceQuestContent(3991).View, obj22);
+      const tmp90 = callback;
     }
     items23[1] = tmp90Result;
     const obj24 = { style: memo5 };
-    tmp = arg1;
+    tmp = require;
     tmp = dependencyMap;
     obj25 = {
       ref,
@@ -873,8 +860,8 @@ function BountiesModalContentScrollInner(arg0) {
       extraData: memo12,
       overrideItemLayout: tmp76
     };
-    tmp = ItemSeparator;
-    obj25.ItemSeparatorComponent = ItemSeparator;
+    tmp = dismissOnClose;
+    obj25.ItemSeparatorComponent = dismissOnClose;
     obj25.ListFooterComponent = memo4;
     obj25.snapToOffsets = memo1;
     obj25.snapToEnd = false;
@@ -884,32 +871,32 @@ function BountiesModalContentScrollInner(arg0) {
     obj25.onScroll = animatedScrollHandler;
     obj25.scrollEventThrottle = 16;
     obj25.contentContainerStyle = memo6;
-    obj24.children = tmp7(arg1(dependencyMap[37]).AnimatedFlashList, obj25);
-    items23[2] = tmp7(questHomeBounties, obj24);
+    obj24.children = callback(require(7879) /* defaultMVCPConfig */.AnimatedFlashList, obj25);
+    items23[2] = callback(questHomeBounties, obj24);
     tmp = null;
     if (tmp40) {
       tmp = null;
       if (first.length > 1) {
-        tmp = tmp7;
-        tmp = importDefault;
+        tmp = callback;
+        tmp = sourceQuestContent;
         tmp = dependencyMap;
         const obj26 = { pointerEvents: "none" };
         const items25 = [memo11, animatedStyle3];
         obj26.style = items25;
-        tmp = tmp7;
+        tmp = callback;
         obj27 = {};
-        tmp = closure_18;
-        obj27.colors = closure_18;
-        tmp = tmp5;
-        obj27.style = tmp5.absoluteFill;
-        obj26.children = tmp7(importDefault(dependencyMap[38]), obj27);
-        tmp = tmp7(importDefault(dependencyMap[11]).View, obj26);
+        tmp = height2;
+        obj27.colors = height2;
+        tmp = absoluteFill;
+        obj27.style = absoluteFill.absoluteFill;
+        obj26.children = callback(sourceQuestContent(4554), obj27);
+        tmp = callback(sourceQuestContent(3991).View, obj26);
       }
     }
     items23[3] = tmp;
-    tmp = importDefault;
+    tmp = sourceQuestContent;
     tmp = dependencyMap;
-    tmp = tmp7;
+    tmp = callback;
     const obj28 = {};
     const items26 = [memo8, animatedStyle1];
     obj28.style = items26;
@@ -920,67 +907,59 @@ function BountiesModalContentScrollInner(arg0) {
     obj28.pointerEvents = str5;
     tmp = null;
     if (tmp26) {
-      tmp = tmp7;
-      tmp = importDefault;
+      tmp = callback;
+      tmp = sourceQuestContent;
       tmp = dependencyMap;
       const obj29 = { onPress: callback4 };
-      tmp = tmp7(importDefault(dependencyMap[39]), obj29);
+      tmp = callback(sourceQuestContent(13951), obj29);
     }
     obj28.children = tmp;
-    items23[4] = tmp(importDefault(dependencyMap[11]).View, obj28);
+    items23[4] = tmp(sourceQuestContent(3991).View, obj28);
     tmp = null;
     if (visible) {
-      tmp = tmp7;
+      tmp = callback;
       tmp = questHomeBounties;
       obj30 = { style: memo9, pointerEvents: "none" };
-      tmp = tmp7;
-      tmp = importDefault;
+      tmp = callback;
+      tmp = sourceQuestContent;
       tmp = dependencyMap;
       const obj31 = { progress, showProgressRing };
-      obj30.children = tmp7(importDefault(dependencyMap[40]), obj31);
-      tmp = tmp7(questHomeBounties, obj30);
+      obj30.children = callback(sourceQuestContent(13952), obj31);
+      tmp = callback(questHomeBounties, obj30);
     }
     items23[5] = tmp;
-    tmp = importDefault;
+    tmp = sourceQuestContent;
     tmp = dependencyMap;
-    tmp = tmp7;
+    tmp = callback;
     obj32 = {};
-    tmp = importDefault(dependencyMap[14]);
+    tmp = sourceQuestContent(13908);
     if (!tmp39) {
       tmp39 = tmp29;
     }
     obj32.visible = tmp39;
     obj32.onContentLayout = callback;
-    tmp = closure_15;
-    obj32.zIndex = closure_15;
+    tmp = c15;
+    obj32.zIndex = c15;
     obj32.opacityStyle = animatedStyle2;
     obj32.children = tmp77;
     items23[6] = tmp(tmp, obj32);
     obj20.children = items23;
     return first1(questHomeBounties, obj20);
   }
-  const obj18 = { runOnJS: arg1(dependencyMap[11]).runOnJS, setIsCloseButtonPressable: tmp27 };
+  const obj18 = { runOnJS: require(3991).runOnJS, setIsCloseButtonPressable: tmp27 };
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ StyleSheet: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[2]);
-({ DEFAULT_PLACEHOLDER_ENTRYPOINT_BOUNTY_ID: closure_8, QuestsExperimentLocations: closure_9 } = arg1(dependencyMap[4]));
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-const ContentDismissActionType = arg1(dependencyMap[6]).ContentDismissActionType;
-const tmp3 = arg1(dependencyMap[4]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
-const tmp4 = arg1(dependencyMap[7]);
-let closure_14 = arg1(dependencyMap[8]).isAndroid();
-let closure_15 = 3;
-let closure_16 = 0.5625;
-const PX_8 = importDefault(dependencyMap[9]).space.PX_8;
-let closure_18 = ["isArray", "<string:2104688640>"];
-let closure_19 = 0.05;
-let closure_20 = 0.1;
+({ StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ DEFAULT_PLACEHOLDER_ENTRYPOINT_BOUNTY_ID: closure_8, QuestsExperimentLocations: closure_9 } = QuestsExperimentLocations);
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+isWindows = isWindows.isAndroid();
+let c15 = 3;
+let c16 = 0.5625;
+let PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
+let closure_18 = ["rgba(0,0,0,0)", "rgba(0,0,0,0.75)"];
+let c19 = 0.05;
+let c20 = 0.1;
 let closure_21 = { code: "function isScrollEventInBounds_BountiesModalContentScrollTsx1(event){const maxOffset=Math.max(0,event.contentSize.height-event.layoutMeasurement.height);return event.contentOffset.y>=0&&event.contentOffset.y<=maxOffset;}" };
-let closure_22 = () => {
+let closure_22 = (() => {
   function isScrollEventInBounds(contentOffset) {
     return contentOffset.contentOffset.y >= 0 && contentOffset.contentOffset.y <= tmp;
   }
@@ -988,12 +967,11 @@ let closure_22 = () => {
   isScrollEventInBounds.__workletHash = 14148486927190;
   isScrollEventInBounds.__initData = closure_21;
   return isScrollEventInBounds;
-}();
-const obj = arg1(dependencyMap[8]);
-let closure_23 = arg1(dependencyMap[10]).createStyles(() => {
-  const closeButton = { position: "absolute", zIndex: closure_15 };
-  const autoScrollIndicator = { zIndex: closure_15 };
-  return { root: { flex: 1 }, recapPage: { 0: 40, 0: 40 }, listWrapper: { maxWidth: 0.0000000000000000000000000004291403324839674, accessible: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012367174144191476, importantForAccessibility: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001452617606585215 }, closeButton, peekGradient: { 0: 131072.00119260637, 0: 9517670400.235872 }, autoScrollIndicator };
+})();
+let closure_23 = _createForOfIteratorHelperLoose.createStyles(() => {
+  const closeButton = { position: "absolute", zIndex: c15 };
+  const autoScrollIndicator = { position: "absolute", zIndex: c15, alignItems: "center" };
+  return { root: { flex: 1 }, recapPage: { position: "absolute", zIndex: 0 }, listWrapper: { position: "absolute", zIndex: 1, overflow: "hidden" }, closeButton, peekGradient: { position: "absolute", zIndex: 2 }, autoScrollIndicator };
 });
 let closure_24 = { code: "function BountiesModalContentScrollTsx2(){const{scrollY,index,slotHeight,isPeekEnabled,PEEK_OPACITY,interpolate,FADE_DEADBAND,Extrapolation}=this.__closure;const signedDistance=(scrollY.get()-index*slotHeight)/slotHeight;const distance=Math.abs(signedDistance);const peekOpacity=isPeekEnabled&&signedDistance<0&&index===1?PEEK_OPACITY:0;const opacity=interpolate(distance,[0,FADE_DEADBAND,1],[1,1,peekOpacity],Extrapolation.CLAMP);return{opacity:opacity};}" };
 let closure_25 = { code: "function BountiesModalContentScrollTsx3(event){const{scrollY,isDraggingSharedValue,isScrollingInBoundsSharedValue,isScrollEventInBounds}=this.__closure;scrollY.set(event.contentOffset.y);if(isDraggingSharedValue.get()){isScrollingInBoundsSharedValue.set(isScrollEventInBounds(event));}}" };
@@ -1015,13 +993,12 @@ let closure_40 = { code: "function BountiesModalContentScrollTsx18(){const{scrol
 let closure_41 = { code: "function BountiesModalContentScrollTsx19(){const{interpolate,scrollY,slotHeight,Extrapolation}=this.__closure;return{opacity:interpolate(scrollY.get(),[0,slotHeight],[1,0],Extrapolation.CLAMP)};}" };
 let closure_42 = { code: "function BountiesModalContentScrollTsx20(){const{recapPullProgress,FOOTER_FADE_END_PROGRESS}=this.__closure;return recapPullProgress.get()<FOOTER_FADE_END_PROGRESS;}" };
 let closure_43 = { code: "function BountiesModalContentScrollTsx21(pressable,previousPressable){const{runOnJS,setIsCloseButtonPressable}=this.__closure;if(pressable!==previousPressable){runOnJS(setIsCloseButtonPressable)(pressable);}}" };
-const obj2 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[43]).fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalContentScroll.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalContentScroll.tsx");
 
 export default function BountiesModalContentScroll(arg0) {
   let bountyId;
   let sourceQuestContent;
   ({ bountyId, sourceQuestContent } = arg0);
-  const obj = { theme: arg1(dependencyMap[42]).ThemeTypes.DARKER, children: callback2(BountiesModalContentScrollInner, { initialBountyId: bountyId, sourceQuestContent }) };
-  return callback2(arg1(dependencyMap[41]).ThemeContextProvider, obj);
+  const obj = { theme: require(13958) /* items */.ThemeTypes.DARKER, children: callback(BountiesModalContentScrollInner, { initialBountyId: bountyId, sourceQuestContent }) };
+  return callback(require(3854) /* ThemeContextProvider */.ThemeContextProvider, obj);
 };

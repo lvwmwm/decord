@@ -1,10 +1,9 @@
-// Module ID: 6741
-// Function ID: 52495
+// Module ID: 6746
+// Function ID: 52527
 // Name: AutomodDecisionOutcomeEmbedKeys
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6741 (AutomodDecisionOutcomeEmbedKeys)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodDecisionOutcomeEmbedKeys.tsx");
+// Module 6746 (AutomodDecisionOutcomeEmbedKeys)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodDecisionOutcomeEmbedKeys.tsx");
 
 export const AutomodDecisionOutcomeEmbedKeys = { BLOCKED: "blocked", FLAGGED: "flagged" };

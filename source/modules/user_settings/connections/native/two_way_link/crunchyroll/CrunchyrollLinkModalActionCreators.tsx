@@ -1,18 +1,17 @@
-// Module ID: 8981
-// Function ID: 70771
-// Dependencies: []
+// Module ID: 8988
+// Function ID: 70812
+// Dependencies: [4337, 8989, 1934, 2]
 
-// Module 8981
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkModalActionCreators.tsx");
+// Module 8988
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkModalActionCreators.tsx");
 
 export default {
   showModal(locationStack) {
-    let obj = importDefault(dependencyMap[0]);
+    let obj = importDefault(4337);
     obj = { locationStack };
-    obj.pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), obj, "USER_SETTINGS_CONNECTIONS_CRUNCHYROLL_LINK_MODAL_KEY");
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(8989, dependencyMap.paths), obj, "USER_SETTINGS_CONNECTIONS_CRUNCHYROLL_LINK_MODAL_KEY");
   },
   hideModal() {
-    importDefault(dependencyMap[0]).popWithKey("USER_SETTINGS_CONNECTIONS_CRUNCHYROLL_LINK_MODAL_KEY");
+    importDefault(4337).popWithKey("USER_SETTINGS_CONNECTIONS_CRUNCHYROLL_LINK_MODAL_KEY");
   }
 };

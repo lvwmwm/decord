@@ -1,31 +1,33 @@
-// Module ID: 9917
-// Function ID: 76741
-// Dependencies: []
+// Module ID: 9925
+// Function ID: 76781
+// Dependencies: [57, 31, 27, 33, 4130, 689, 3712, 1820, 1212, 4098, 8389, 1934, 5094, 9122, 477, 5087, 4660, 4126, 2]
 
-// Module 9917
-let closure_4 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj1 = arg1(dependencyMap[4]);
+// Module 9925
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER };
+obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
 obj.modal = obj;
-obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingTop: importDefault(dependencyMap[5]).space.PX_8 };
-obj.headerContainer = obj1;
-obj.container = { label: false, subLabel: false, disabled: false };
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj.headerContainer = _createForOfIteratorHelperLoose;
+obj.container = { paddingHorizontal: 16, paddingTop: 24, gap: 24 };
 obj.formHeader = { marginBottom: 8 };
-const obj2 = { "Bool(false)": "Array", "Bool(false)": "isArray", borderRadius: importDefault(dependencyMap[5]).radii.lg, backgroundColor: importDefault(dependencyMap[5]).colors.INPUT_BACKGROUND_DEFAULT };
+let obj2 = { paddingHorizontal: 16, paddingVertical: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT };
 obj.inputContainer = obj2;
-let closure_9 = obj1.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((onClose) => {
   onClose = onClose.onClose;
-  const arg1 = onClose;
   const createReminder = onClose.createReminder;
-  const importDefault = createReminder;
-  let importAll;
-  let closure_3;
+  let first;
+  let dependencyMap;
   function handleOpenDatePicker(mode) {
     let obj = first(paths[7]);
     const result = obj.dismissGlobalKeyboard();
@@ -46,12 +48,11 @@ const memoResult = importAllResult.memo((onClose) => {
     obj2.openLazy(tmp7, "DatePicker", obj);
   }
   const tmp = callback4();
-  const tmp2 = callback(handleOpenDatePicker.useState(() => createReminder(closure_3[6])()), 2);
-  const first = tmp2[0];
-  importAll = first;
-  closure_3 = tmp2[1];
+  const tmp2 = callback(handleOpenDatePicker.useState(() => createReminder(paths[6])()), 2);
+  first = tmp2[0];
+  dependencyMap = tmp2[1];
   const items = [createReminder, first, onClose];
-  const callback = handleOpenDatePicker.useCallback(() => {
+  callback = handleOpenDatePicker.useCallback(() => {
     createReminder(first.toDate());
     onClose();
   }, items);
@@ -60,66 +61,66 @@ const memoResult = importAllResult.memo((onClose) => {
   let obj = { style: tmp.modal };
   obj = { style: tmp.headerContainer };
   const obj1 = {};
-  const intl = arg1(closure_3[8]).intl;
-  obj1.title = intl.string(arg1(closure_3[8]).t.VKsXpY);
+  let intl = onClose(1212).intl;
+  obj1.title = intl.string(onClose(1212).t.VKsXpY);
   obj1.headerTitle = function headerTitle() {
     const obj = {};
-    const intl = onClose(closure_3[8]).intl;
-    obj.title = intl.string(onClose(closure_3[8]).t.VKsXpY);
-    return callback(onClose(closure_3[13]).GenericHeaderTitle, obj);
+    const intl = onClose(paths[8]).intl;
+    obj.title = intl.string(onClose(paths[8]).t.VKsXpY);
+    return outer1_7(onClose(paths[13]).GenericHeaderTitle, obj);
   };
   obj1.headerTitleAlign = "center";
-  let obj4 = arg1(closure_3[14]);
+  let obj4 = onClose(477);
   let num;
   if (obj4.isIOS()) {
     num = 0;
   }
   obj1.headerStatusBarHeight = num;
-  let obj5 = arg1(closure_3[15]);
+  let obj5 = onClose(5087);
   obj1.headerLeft = obj5.getHeaderCloseButton(onClose);
   obj1.headerRight = function headerRight() {
-    let obj = { accessibilityRole: "button", onPress: closure_4 };
-    obj = {};
-    const intl = onClose(closure_3[8]).intl;
-    obj.children = intl.string(onClose(closure_3[8]).t.R3BPH+);
-    obj.children = callback(onClose(closure_3[17]).Text, obj);
-    return callback(onClose(closure_3[16]).PressableOpacity, obj);
+    let obj = { accessibilityRole: "button", onPress: _slicedToArray };
+    obj = { variant: "text-md/semibold", color: "control-brand-foreground" };
+    const intl = onClose(paths[8]).intl;
+    obj.children = intl.string(onClose(paths[8]).t["R3BPH+"]);
+    obj.children = outer1_7(onClose(paths[17]).Text, obj);
+    return outer1_7(onClose(paths[16]).PressableOpacity, obj);
   };
-  obj.children = callback2(arg1(closure_3[12]).Header, obj1);
+  obj.children = callback2(onClose(5094).Header, obj1);
   const items1 = [callback2(View, obj), ];
-  const obj2 = { style: tmp.container };
+  let obj2 = { style: tmp.container };
   const obj3 = {};
-  obj4 = { "Null": "THROUGHLINE_URL", "Null": "isArray", alignItems: "isArray", style: tmp.formHeader };
-  const intl2 = arg1(closure_3[8]).intl;
-  obj4.children = intl2.string(arg1(closure_3[8]).t.pSZKvM);
-  const items2 = [callback2(arg1(closure_3[17]).Text, obj4), ];
+  obj4 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle" };
+  let intl2 = onClose(1212).intl;
+  obj4.children = intl2.string(onClose(1212).t.pSZKvM);
+  const items2 = [callback2(onClose(4126).Text, obj4), ];
   obj5 = { accessibilityRole: "button" };
-  const intl3 = arg1(closure_3[8]).intl;
-  obj5.accessibilityLabel = intl3.string(arg1(closure_3[8]).t.pSZKvM);
+  const intl3 = onClose(1212).intl;
+  obj5.accessibilityLabel = intl3.string(onClose(1212).t.pSZKvM);
   obj5.accessibilityValue = { text: formatResult };
   obj5.onPress = function onPress() {
     handleOpenDatePicker("date");
   };
   obj5.style = tmp.inputContainer;
-  obj5.children = callback2(arg1(closure_3[17]).Text, { variant: "text-md/medium", children: formatResult });
-  items2[1] = callback2(arg1(closure_3[16]).PressableOpacity, obj5);
+  obj5.children = callback2(onClose(4126).Text, { variant: "text-md/medium", children: formatResult });
+  items2[1] = callback2(onClose(4660).PressableOpacity, obj5);
   obj3.children = items2;
   const items3 = [callback3(View, obj3), ];
   const obj6 = {};
-  const obj7 = { "Null": "THROUGHLINE_URL", "Null": "isArray", alignItems: "isArray", style: tmp.formHeader };
-  const intl4 = arg1(closure_3[8]).intl;
-  obj7.children = intl4.string(arg1(closure_3[8]).t.GOmEb8);
-  const items4 = [callback2(arg1(closure_3[17]).Text, obj7), ];
+  const obj7 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle" };
+  const intl4 = onClose(1212).intl;
+  obj7.children = intl4.string(onClose(1212).t.GOmEb8);
+  const items4 = [callback2(onClose(4126).Text, obj7), ];
   const obj8 = { accessibilityRole: "button" };
-  const intl5 = arg1(closure_3[8]).intl;
-  obj8.accessibilityLabel = intl5.string(arg1(closure_3[8]).t.pSZKvM);
+  const intl5 = onClose(1212).intl;
+  obj8.accessibilityLabel = intl5.string(onClose(1212).t.pSZKvM);
   obj8.accessibilityValue = { text: formatResult1 };
   obj8.onPress = function onPress() {
     handleOpenDatePicker("time");
   };
   obj8.style = tmp.inputContainer;
-  obj8.children = callback2(arg1(closure_3[17]).Text, { variant: "text-md/medium", children: formatResult1 });
-  items4[1] = callback2(arg1(closure_3[16]).PressableOpacity, obj8);
+  obj8.children = callback2(onClose(4126).Text, { variant: "text-md/medium", children: formatResult1 });
+  items4[1] = callback2(onClose(4660).PressableOpacity, obj8);
   obj6.children = items4;
   items3[1] = callback3(View, obj6);
   obj2.children = items3;
@@ -127,6 +128,6 @@ const memoResult = importAllResult.memo((onClose) => {
   obj.children = items1;
   return callback3(View, obj);
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/saved_messages/message_reminders/native/MessageRemindersCustomDurationModal.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/saved_messages/message_reminders/native/MessageRemindersCustomDurationModal.tsx");
 
 export default memoResult;

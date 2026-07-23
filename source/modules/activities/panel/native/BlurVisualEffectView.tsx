@@ -1,22 +1,24 @@
-// Module ID: 15590
-// Function ID: 118959
-// Dependencies: []
+// Module ID: 15707
+// Function ID: 121132
+// Dependencies: [31, 27, 33, 3974, 689, 3834, 4533, 2]
 
-// Module 15590
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_5 = arg1(dependencyMap[3]).hexWithOpacity(importDefault(dependencyMap[4]).unsafe_rawColors.BLACK, 0.24);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(() => {
-  let obj = arg1(dependencyMap[5]);
-  const token = obj.useToken(importDefault(dependencyMap[4]).colors.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK, "dark");
-  obj = { "Null": "c67b491c21edfc140b968b3afa5e6528", "Null": "ic_video_disabled", defaultSpeakerForGuildCall: "png", defaultSpeakerForDMCall: 16, borderRadius: 16, padding: 8, style: StyleSheet.absoluteFill };
-  const tmp2 = importDefault(dependencyMap[6]);
-  obj.blurTintRgba = arg1(dependencyMap[3]).hexToRgbaString(closure_5);
+// Module 15707
+import { StyleSheet } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import hexToRgb from "hexToRgb";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_5 = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, 0.24);
+const memoResult = require("result").memo(() => {
+  let obj = require(3834) /* map */;
+  const token = obj.useToken(importDefault(689).colors.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK, "dark");
+  obj = { style: StyleSheet.absoluteFill, blurStyle: "default", blurTintRgba: null, android_fallbackColor: null, blurAmount: 0.24, blurTheme: "dark" };
+  const tmp2 = importDefault(4533);
+  obj.blurTintRgba = require(3974) /* hexToRgb */.hexToRgbaString(closure_5);
   obj.android_fallbackColor = token;
-  return <tmp2 {...obj} />;
+  return <tmp2 style={StyleSheet.absoluteFill} blurStyle="default" blurTintRgba={null} android_fallbackColor={null} blurAmount={0.24} blurTheme="dark" />;
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/activities/panel/native/BlurVisualEffectView.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/activities/panel/native/BlurVisualEffectView.tsx");
 
 export default memoResult;

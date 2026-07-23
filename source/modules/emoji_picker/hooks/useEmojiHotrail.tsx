@@ -1,10 +1,13 @@
-// Module ID: 9328
-// Function ID: 72917
+// Module ID: 9335
+// Function ID: 72958
 // Name: getEmojiHotrail
-// Dependencies: []
+// Dependencies: [31, 4995, 2]
 // Exports: default
 
-// Module 9328 (getEmojiHotrail)
+// Module 9335 (getEmojiHotrail)
+import result from "result";
+import { EMOJI_ROW_SIZE } from "EmojiCategoryTypes";
+
 function getEmojiHotrail(arg0) {
   let newlyAddedEmojis;
   let rowSize;
@@ -16,13 +19,11 @@ function getEmojiHotrail(arg0) {
   const substr = topEmojis.slice(0, rowSize - newlyAddedEmojis.length);
   return { visibleTopEmojis: substr, visibleNewlyAddedEmojis: newlyAddedEmojis, allEmojis: substr.concat(newlyAddedEmojis) };
 }
-let closure_0 = importAll(dependencyMap[0]);
-const EMOJI_ROW_SIZE = arg1(dependencyMap[1]).EMOJI_ROW_SIZE;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/emoji_picker/hooks/useEmojiHotrail.tsx");
+const result = require("set").fileFinishedImporting("modules/emoji_picker/hooks/useEmojiHotrail.tsx");
 
 export default function useEmojiHotrail(arg0) {
   const React = arg0;
   const items = [arg0];
-  return React.useMemo(() => callback(arg0), items);
+  return React.useMemo(() => outer1_2(result), items);
 };
 export { getEmojiHotrail };

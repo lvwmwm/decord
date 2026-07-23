@@ -1,10 +1,15 @@
-// Module ID: 8293
-// Function ID: 65473
+// Module ID: 8299
+// Function ID: 65510
 // Name: getReadablePlayerError
-// Dependencies: []
+// Dependencies: [57, 31, 33, 8300, 8284, 8278, 8282, 8283, 2]
 // Exports: createTiktokVideoControls
 
-// Module 8293 (getReadablePlayerError)
+// Module 8299 (getReadablePlayerError)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getReadablePlayerError(arg0) {
   if ("1" === arg0) {
     return "MEDIA_ERR_ABORTED";
@@ -26,45 +31,36 @@ function postMessage(current) {
     current.injectJavaScript("\n    window.postMessage(" + tmp2 + ", '*')\n  ");
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = { "": true, intl: true, body: true, ref: true };
-const obj = { -1: arg1(dependencyMap[3]).PlayerState.UNSTARTED, [0]: arg1(dependencyMap[3]).PlayerState.ENDED, [1]: arg1(dependencyMap[3]).PlayerState.PLAYING, [2]: arg1(dependencyMap[3]).PlayerState.PAUSED, [3]: arg1(dependencyMap[3]).PlayerState.BUFFERING };
+let closure_6 = { controls: 0, enable_music_info: 0, enable_timestamp: 0, utm_source: "discord.gg" };
+let obj = { "-1": require("PlayerState").PlayerState.UNSTARTED, [0]: require("PlayerState").PlayerState.ENDED, [1]: require("PlayerState").PlayerState.PLAYING, [2]: require("PlayerState").PlayerState.PAUSED, [3]: require("PlayerState").PlayerState.BUFFERING };
 const memoResult = importAllResult.memo((visible) => {
   visible = visible.visible;
-  const arg1 = visible;
   const source = visible.source;
-  const importDefault = source;
   const controls = visible.controls;
-  const dependencyMap = controls;
-  let obj = { "Bool(false)": -24, "Bool(false)": null, "Bool(false)": 1, "Bool(false)": "Malaysia" };
+  let obj = { visible: 0, style: 0, source: 0, controls: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(visible, obj);
-  obj = undefined;
-  let getReadablePlayerError;
-  const tmp3 = callback(React.useState(arg1(dependencyMap[3]).PlayerState.UNREADY), 2);
-  const first = tmp3[0];
-  let callback = first;
-  const React = tmp3[1];
-  const tmp5 = importDefault(dependencyMap[4])(first);
-  const jsx = tmp5;
-  const tmp6 = importDefault(dependencyMap[4])(visible);
-  let closure_6 = tmp6;
   let ref;
+  let mediaPlayerMutedStore;
+  let tmp3 = first(importAllResult.useState(visible(controls[3]).PlayerState.UNREADY), 2);
+  first = tmp3[0];
+  const tmp5 = source(controls[4])(first);
+  const jsx = tmp5;
+  const tmp6 = source(controls[4])(visible);
+  let closure_6 = tmp6;
+  ref = undefined;
   if (null != controls) {
     let props = controls.props;
     if (null != props) {
       ref = props.ref;
     }
   }
-  obj = ref;
   props = undefined;
   if (null != controls) {
     props = controls.props;
   }
   const items = [props];
-  callback = React.useCallback((arg0) => {
+  const callback = importAllResult.useCallback((arg0) => {
     const iter = JSON.parse(arg0);
     const type = iter.type;
     if ("onPlayerReady" === type) {
@@ -85,7 +81,7 @@ const memoResult = importAllResult.memo((visible) => {
     } else if ("onError" === type) {
       callback(visible(controls[3]).PlayerState.ERRORED);
       const MediaViewerAnalytics = visible(controls[5]).MediaViewerAnalytics;
-      let obj = { error: mediaPlayerMutedStore(iter.value) };
+      let obj = { platform: "tiktok", action: "errored", error: mediaPlayerMutedStore(iter.value) };
       const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted(obj);
     } else if ("onCurrentTime" === type) {
       let tmp3 = null == controls;
@@ -116,10 +112,9 @@ const memoResult = importAllResult.memo((visible) => {
       const obj5 = visible(controls[6]);
     }
   }, items);
-  const mediaPlayerMutedStore = arg1(dependencyMap[7]).useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
-  getReadablePlayerError = mediaPlayerMutedStore;
+  mediaPlayerMutedStore = visible(controls[7]).useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
   const items1 = [ref, visible, tmp6, tmp5, first, mediaPlayerMutedStore];
-  const effect = React.useEffect(() => {
+  const effect = importAllResult.useEffect(() => {
     let current;
     if (null != ref) {
       current = ref.current;
@@ -131,31 +126,31 @@ const memoResult = importAllResult.memo((visible) => {
     if (tmp3) {
       let tmp7 = visible;
       if (visible) {
-        tmp7 = tmp5 === visible(controls[3]).PlayerState.UNREADY;
+        tmp7 = closure_5 === visible(controls[3]).PlayerState.UNREADY;
       }
       if (tmp7) {
         tmp7 = first === visible(controls[3]).PlayerState.READY;
       }
       if (tmp7) {
         let obj = { type: "play" };
-        callback2(ref, obj);
+        outer1_9(ref, obj);
       }
       let tmp17 = visible;
       if (visible) {
-        tmp17 = !tmp6;
+        tmp17 = !closure_6;
       }
       if (tmp17) {
         obj = { type: "play" };
-        callback2(ref, obj);
+        outer1_9(ref, obj);
       }
       if (tmp23) {
         obj = { type: "pause" };
-        callback2(ref, obj);
+        outer1_9(ref, obj);
       }
       if (first === visible(controls[3]).PlayerState.ENDED) {
-        callback2(ref, { "Null": null, "Null": null });
+        outer1_9(ref, { type: "seekTo", value: 0 });
         const obj1 = { type: "play" };
-        callback2(ref, obj1);
+        outer1_9(ref, obj1);
       }
       const obj2 = {};
       let str5 = "unMute";
@@ -163,21 +158,20 @@ const memoResult = importAllResult.memo((visible) => {
         str5 = "mute";
       }
       obj2.type = str5;
-      callback2(ref, obj2);
-      const tmp23 = !visible && tmp6;
-      const tmp35 = callback2;
+      outer1_9(ref, obj2);
+      tmp23 = !visible && closure_6;
+      const tmp35 = outer1_9;
       const tmp36 = ref;
     }
   }, items1);
-  const effect1 = React.useEffect(() => {
+  const effect1 = importAllResult.useEffect(() => {
     const MediaViewerAnalytics = visible(controls[5]).MediaViewerAnalytics;
-    const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({});
+    const result = MediaViewerAnalytics.trackMessageEmbedsActionCompleted({ platform: "tiktok", action: "attempted" });
   }, []);
   const items2 = [source.uri];
-  const memo = React.useMemo(() => {
+  const memo = importAllResult.useMemo(() => {
     const str = new URL(source.uri);
-    const visible = str;
-    const entries = Object.entries(tmp6);
+    const entries = Object.entries(closure_6);
     const item = entries.forEach((arg0) => {
       let str;
       let tmp;
@@ -189,7 +183,7 @@ const memoResult = importAllResult.memo((visible) => {
   }, items2);
   obj = { ref, style: visible.style };
   obj = {};
-  const obj2 = arg1(dependencyMap[7]);
+  let obj2 = visible(controls[7]);
   const merged1 = Object.assign(source);
   obj["uri"] = memo;
   obj.source = obj;
@@ -198,20 +192,18 @@ const memoResult = importAllResult.memo((visible) => {
   obj.onDataReceived = callback;
   obj.playerState = first;
   const merged2 = Object.assign(merged);
-  return jsx(importDefault(dependencyMap[3]), obj);
+  return jsx(source(controls[3]), {});
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/media_viewer/native/components/MediaModalTiktok.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/media_viewer/native/components/MediaModalTiktok.tsx");
 
 export default memoResult;
 export const createTiktokVideoControls = function createTiktokVideoControls() {
-  const ref = React.createRef();
-  const dependencyMap = ref;
-  let closure_3 = 0;
-  const React = 0;
-  let closure_5 = false;
-  let obj = {
+  const ref = importAllResult.createRef();
+  let c3 = 0;
+  let c5 = false;
+  obj = {
     seek(value) {
-      callback2(ref, { type: "seekTo", value });
+      outer1_9(ref, { type: "seekTo", value });
     },
     pause(arg0) {
       if (closure_5 !== arg0) {
@@ -222,18 +214,20 @@ export const createTiktokVideoControls = function createTiktokVideoControls() {
           str = "pause";
         }
         obj.type = str;
-        closure_9(ref, obj);
-        const tmp = closure_9;
+        outer1_9(ref, obj);
+        const tmp = outer1_9;
         const tmp2 = ref;
       }
     },
     useSubscribe(arg0, arg1, arg2) {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       const layoutEffect = React.useLayoutEffect(() => {
-        if (null != arg0) {
-          arg0(closure_3, closure_4);
+        if (null != callback) {
+          callback(outer1_3, outer1_4);
         }
-        if (null != arg1) {
-          arg1(closure_5);
+        if (null != callback2) {
+          callback2(outer1_5);
         }
       }, []);
     },
@@ -243,24 +237,24 @@ export const createTiktokVideoControls = function createTiktokVideoControls() {
     ref,
     onPlayerStateChange(arg0) {
       if (null != closure_1) {
-        let tmp4 = arg0 === callback(ref[3]).PlayerState.PAUSED;
+        let tmp4 = arg0 === outer1_0(ref[3]).PlayerState.PAUSED;
         if (!tmp4) {
-          tmp4 = arg0 === callback(ref[3]).PlayerState.ENDED;
+          tmp4 = arg0 === outer1_0(ref[3]).PlayerState.ENDED;
         }
         closure_1(tmp4);
         const tmp = closure_1;
       }
     },
     onCurrentSecond(arg0) {
-      let closure_3 = arg0;
+      let _slicedToArray = arg0;
       if (null != callback) {
-        callback(closure_3, closure_4);
+        callback(_slicedToArray, c4);
       }
     },
     onDuration(arg0) {
       let closure_4 = arg0;
       if (null != callback) {
-        callback(closure_3, closure_4);
+        callback(c3, closure_4);
       }
     }
   };

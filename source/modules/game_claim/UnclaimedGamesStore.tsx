@@ -1,37 +1,38 @@
-// Module ID: 14905
-// Function ID: 112289
+// Module ID: 15021
+// Function ID: 114457
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 14905 (_isNativeReflectConstruct)
+// Module 15021 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = null;
-let tmp2 = (Store) => {
+let c5 = null;
+let tmp2 = ((Store) => {
   class UnclaimedGamesStore {
     constructor() {
       self = this;
       tmp = UnclaimedGamesStore(this, UnclaimedGamesStore);
-      obj = closure_3(UnclaimedGamesStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(UnclaimedGamesStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,20 +41,19 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = UnclaimedGamesStore;
   callback2(UnclaimedGamesStore, Store);
   let obj = {
     key: "getMap",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getUnclaimedGameIdsForGuild",
     value(arg0) {
       let items;
-      if (null != closure_5) {
+      if (null != outer1_5) {
         items = tmp[arg0];
       }
       if (null == items) {
@@ -67,7 +67,7 @@ let tmp2 = (Store) => {
     key: "hasUnclaimedGames",
     value(arg0) {
       let tmp2;
-      if (null != closure_5) {
+      if (null != outer1_5) {
         tmp2 = tmp[arg0];
       }
       let tmp4 = null != tmp2;
@@ -81,14 +81,14 @@ let tmp2 = (Store) => {
   items[3] = {
     key: "getGuildIdsWithUnclaimedGames",
     value() {
-      if (null == closure_5) {
+      if (null == outer1_5) {
         return [];
       } else {
-        let closure_0 = closure_5;
+        let dispatcher = outer1_5;
         const _Object = Object;
-        const keys = Object.keys(closure_5);
+        const keys = Object.keys(outer1_5);
         return keys.filter((arg0) => {
-          let items = closure_0[arg0];
+          let items = table[arg0];
           if (null == items) {
             items = [];
           }
@@ -98,16 +98,16 @@ let tmp2 = (Store) => {
     }
   };
   return callback(UnclaimedGamesStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "UnclaimedGamesStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   LOGOUT: function handleLogout() {
-    let closure_5 = null;
+    let c5 = null;
   },
   UNCLAIMED_GAMES_FETCH_SUCCESS: function handleFetchSuccess(guildIdToGameIds) {
     guildIdToGameIds = guildIdToGameIds.guildIdToGameIds;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/game_claim/UnclaimedGamesStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/game_claim/UnclaimedGamesStore.tsx");
 
 export default tmp2;

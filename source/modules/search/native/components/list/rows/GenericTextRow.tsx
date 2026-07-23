@@ -1,14 +1,16 @@
-// Module ID: 15258
-// Function ID: 115163
-// Dependencies: []
+// Module ID: 15374
+// Function ID: 117333
+// Dependencies: [5, 31, 27, 33, 4130, 4126, 15346, 2]
 
-// Module 15258
-let closure_2 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles({ title: { flexDirection: "row" }, container: { padding: 10 } });
-const obj2 = arg1(dependencyMap[4]);
+// Module 15374
+import Text from "Text";
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let require = arg1;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ title: { flexDirection: "row" }, container: { padding: 10 } });
 const memoResult = importAllResult.memo(function GenericTextRow(text) {
   let accessibilityActions;
   let icon;
@@ -16,30 +18,29 @@ const memoResult = importAllResult.memo(function GenericTextRow(text) {
   let onPress;
   let trailing;
   text = text.text;
-  const arg1 = text;
+  const require = text;
   ({ icon, onPress } = text);
-  const dependencyMap = onPress;
   ({ trailing, accessibilityActions, onAccessibilityAction } = text);
   const tmp2 = callback2();
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [onPress, text];
   let obj = { style: tmp2.title };
-  const callback = importAllResult.useCallback(callback(tmp), items);
-  obj = { style: tmp2.container, children: text };
-  obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
+  callback = importAllResult.useCallback(callback(tmp), items);
+  obj = { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp2.container, children: text };
+  obj.children = jsx(require(onPress[5]).Text, { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp2.container, children: text });
   obj = {};
   let tmp6 = null != icon;
   if (tmp6) {
-    tmp6 = <icon Bool(false)="%JSONStringify%" Bool(false)="isArrayBuffer" />;
+    tmp6 = <icon size="sm" color="mobile-text-heading-primary" />;
   }
   obj.icon = tmp6;
-  obj.label = <View {...obj} />;
+  obj.label = <View />;
   obj.onPress = callback;
   obj.trailing = trailing;
   obj.accessibilityActions = accessibilityActions;
   obj.onAccessibilityAction = onAccessibilityAction;
-  return jsx(arg1(dependencyMap[6]).SearchListRow, obj);
+  return jsx(require(onPress[6]).SearchListRow, {});
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/search/native/components/list/rows/GenericTextRow.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/search/native/components/list/rows/GenericTextRow.tsx");
 
 export default memoResult;

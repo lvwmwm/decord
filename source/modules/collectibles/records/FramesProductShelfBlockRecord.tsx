@@ -1,17 +1,19 @@
-// Module ID: 6807
-// Function ID: 53707
+// Module ID: 6812
+// Function ID: 53739
 // Name: FramesProductShelfBlockRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6806, 2]
 
-// Module 6807 (FramesProductShelfBlockRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 6812 (FramesProductShelfBlockRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class FramesProductShelfBlockRecord {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, FramesProductShelfBlockRecord);
-      this.type = FramesProductShelfBlockRecord(closure_1[2]).ShopBlockType.FRAMES_PRODUCT_SHELF;
+      tmp = outer1_2(this, FramesProductShelfBlockRecord);
+      this.type = FramesProductShelfBlockRecord(outer1_1[2]).ShopBlockType.FRAMES_PRODUCT_SHELF;
       ({ title: this.title, category_sku_id: this.categorySkuId, category_store_listing_id: this.categoryStoreListingId, ranked_sku_ids } = arg0);
       if (null == ranked_sku_ids) {
         ranked_sku_ids = [];
@@ -31,7 +33,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = FramesProductShelfBlockRecord;
   const items = [
     {
       key: "fromServer",
@@ -41,7 +42,7 @@ const tmp2 = () => {
     }
   ];
   return callback(FramesProductShelfBlockRecord, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/records/FramesProductShelfBlockRecord.tsx");
+})();
+const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/FramesProductShelfBlockRecord.tsx");
 
 export const FramesProductShelfBlockRecord = tmp2;

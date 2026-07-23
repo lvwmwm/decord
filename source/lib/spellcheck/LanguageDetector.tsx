@@ -1,15 +1,16 @@
-// Module ID: 5138
-// Function ID: 44567
+// Module ID: 5141
+// Function ID: 44586
 // Name: LanguageDetector
-// Dependencies: [89260032, 330629120, 131072, 528220160]
+// Dependencies: [6, 7, 5142, 2]
 
-// Module 5138 (LanguageDetector)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 5141 (LanguageDetector)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const tmp2 = (() => {
   class LanguageDetector {
     constructor(arg0, arg1) {
-      tmp = closure_2(this, LanguageDetector);
+      tmp = outer1_2(this, LanguageDetector);
       this._shouldProcess = false;
       this._processing = false;
       this._minimumTimeRemaining = 5;
@@ -20,7 +21,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const importDefault = LanguageDetector;
   let obj = {
     key: "language",
     get() {
@@ -45,40 +45,43 @@ const tmp2 = () => {
   obj = {
     key: "process",
     value(arg0) {
-      const LanguageDetector = this;
+      const self = this;
+      let closure_1 = arg0;
       if (!this._processing) {
         tmp._processing = true;
         requestIdleCallback((timeRemaining) => {
-          const self = timeRemaining;
-          if (timeRemaining.timeRemaining() <= self._minimumTimeRemaining) {
-            self._processEnd();
+          const _self = timeRemaining;
+          if (timeRemaining.timeRemaining() <= _self._minimumTimeRemaining) {
+            _self._processEnd();
           } else {
             if (arr.length > 256) {
-              const arr = arr.slice(0, 256);
+              arr = arr.slice(0, 256);
             }
-            function detectLanguage(closure_1, _languageHint) {
+            (function detectLanguage(closure_1, _languageHint) {
+              let closure_0 = closure_1;
               closure_1 = _languageHint;
-              const obj = closure_1(closure_1[2]);
-              return closure_1(closure_1[2]).ensureModule("discord_spellcheck").then(() => {
-                const arg0 = arg0(arg1[2]).requireModule("discord_spellcheck").cld;
-                const obj = arg0(arg1[2]);
+              let obj = LanguageDetector(outer3_1[2]);
+              return LanguageDetector(outer3_1[2]).ensureModule("discord_spellcheck").then(() => {
+                let cld = LanguageDetector(outer4_1[2]).requireModule("discord_spellcheck").cld;
+                const obj = LanguageDetector(outer4_1[2]);
                 return new Promise(() => { ... });
               });
-            }(arr, self._languageHint).then((language) => {
-              language.language = language;
-              language._processEnd(language.didTimeout);
-            }, (self) => {
-              self._processEnd(self.didTimeout);
+            })(arr, _self._languageHint).then((language) => {
+              timeRemaining.language = language;
+              timeRemaining._processEnd(timeRemaining.didTimeout);
+            }, () => {
+              timeRemaining._processEnd(timeRemaining.didTimeout);
             });
-            const promise = function detectLanguage(closure_1, _languageHint) {
+            const promise = (function detectLanguage(closure_1, _languageHint) {
+              let closure_0 = closure_1;
               closure_1 = _languageHint;
-              const obj = closure_1(closure_1[2]);
-              return closure_1(closure_1[2]).ensureModule("discord_spellcheck").then(() => {
-                const arg0 = arg0(arg1[2]).requireModule("discord_spellcheck").cld;
-                const obj = arg0(arg1[2]);
+              let obj = LanguageDetector(outer3_1[2]);
+              return LanguageDetector(outer3_1[2]).ensureModule("discord_spellcheck").then(() => {
+                let cld = LanguageDetector(outer4_1[2]).requireModule("discord_spellcheck").cld;
+                const obj = LanguageDetector(outer4_1[2]);
                 return new Promise(() => { ... });
               });
-            }(arr, self._languageHint);
+            })(arr, _self._languageHint);
           }
         });
       }
@@ -100,7 +103,7 @@ const tmp2 = () => {
     }
   };
   return callback(LanguageDetector, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/spellcheck/LanguageDetector.tsx");
+})();
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("lib/spellcheck/LanguageDetector.tsx");
 
 export default tmp2;

@@ -1,73 +1,89 @@
-// Module ID: 11745
-// Function ID: 91238
+// Module ID: 11755
+// Function ID: 91287
 // Name: InviteErrorBase
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 3976, 4066, 11756, 11757, 11758, 1212, 4126, 4543, 1392, 1273, 11759, 5515, 5459, 1920, 2]
 // Exports: default
 
-// Module 11745 (InviteErrorBase)
+// Module 11755 (InviteErrorBase)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function InviteErrorBase(invite) {
   let inviteError;
-  ({ onPressClose: closure_0, inviteError } = invite);
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[6]);
-  if (obj.isThemeDark(importDefault(dependencyMap[7])())) {
-    let tmp4 = tmp3[8];
+  let require;
+  ({ onPressClose: require, inviteError } = invite);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(3976) /* AccessibilityAnnouncer */;
+  if (obj.isThemeDark(importDefault(4066)())) {
+    let tmp4 = 11756;
   } else {
-    tmp4 = tmp3[9];
+    tmp4 = 11757;
   }
-  let obj1 = arg1(dependencyMap[10]);
+  let obj1 = require(11758) /* getDescriptiveInviteError */;
   let code;
   if (null != inviteError) {
     code = inviteError.code;
   }
   const descriptiveInviteError = obj1.getDescriptiveInviteError(code);
   if (invite.invite.state === constants3.BANNED) {
-    const intl2 = arg1(dependencyMap[11]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[11]).t.GzD/aa);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["GzD/aa"]);
   } else {
     stringResult = undefined;
     if (null != descriptiveInviteError) {
       stringResult = descriptiveInviteError.description;
     }
     if (null == stringResult) {
-      const intl = arg1(dependencyMap[11]).intl;
-      stringResult = intl.string(arg1(dependencyMap[11]).t.FWkU6P);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl.string(require(1212) /* getSystemLocale */.t.FWkU6P);
     }
   }
   obj = {};
   obj = { style: tmp.expiredImage, source: importDefault(tmp4) };
   const items = [callback(closure_3, obj), , , ];
-  obj1 = { style: tmp.expiredTitle };
+  obj1 = { style: tmp.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
   let title;
   if (null != descriptiveInviteError) {
     title = descriptiveInviteError.title;
   }
   if (null == title) {
-    const intl3 = arg1(dependencyMap[11]).intl;
-    title = intl3.string(arg1(dependencyMap[11]).t.u9zxnX);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    title = intl3.string(require(1212) /* getSystemLocale */.t.u9zxnX);
   }
   obj1.children = title;
-  items[1] = callback(arg1(dependencyMap[12]).Text, obj1);
-  const obj2 = { style: tmp.expiredBody, children: stringResult };
-  items[2] = callback(arg1(dependencyMap[12]).Text, obj2);
-  const obj3 = {};
-  const intl4 = arg1(dependencyMap[11]).intl;
-  obj3.text = intl4.string(arg1(dependencyMap[11]).t.wcqOoF);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  const obj2 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
+  items[2] = callback(require(4126) /* Text */.Text, obj2);
+  const obj3 = { variant: "primary", size: "lg" };
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj3.text = intl4.string(require(1212) /* getSystemLocale */.t.wcqOoF);
   obj3.onPress = function handlePressClose() {
     callback();
   };
-  items[3] = callback(arg1(dependencyMap[13]).Button, obj3);
+  items[3] = callback(require(4543) /* Button */.Button, obj3);
   obj.children = items;
   return closure_10(closure_9, obj);
 }
 function InviteDisabledError(onPressClose) {
-  const arg1 = onPressClose.onPressClose;
-  const tmp = callback3();
+  onPressClose = onPressClose.onPressClose;
+  const tmp = _createForOfIteratorHelperLoose();
   const guild = onPressClose.invite.guild;
   if (null == guild) {
     return null;
   } else {
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(1392);
     obj = {};
     ({ id: obj2.id, icon: obj2.icon } = guild);
     obj.size = 64;
@@ -75,51 +91,46 @@ function InviteDisabledError(onPressClose) {
     obj = {};
     const obj1 = { style: tmp.disabledView };
     const guildIconURL = obj.getGuildIconURL(obj);
-    const obj2 = { style: tmp.disabledPauseIcon, source: importDefault(dependencyMap[16]) };
-    const items = [callback(arg1(dependencyMap[15]).Icon, obj2), ];
-    const obj3 = { style: tmp.guildIcon, icon: guildIconURL, size: arg1(dependencyMap[17]).GuildIconSizes.XLARGE };
-    items[1] = callback(importDefault(dependencyMap[17]), obj3);
+    const obj2 = { style: tmp.disabledPauseIcon, source: importDefault(11759) };
+    const items = [callback(onPressClose(1273).Icon, obj2), ];
+    const obj3 = { style: tmp.guildIcon, icon: guildIconURL, size: onPressClose(5515).GuildIconSizes.XLARGE };
+    items[1] = callback(importDefault(5515), obj3);
     obj1.children = items;
     const items1 = [callback2(closure_4, obj1), , , ];
-    const obj4 = { "Null": 1906134097, "Null": 0, alignItems: 28929, style: tmp.disabledTitle };
-    const intl = arg1(dependencyMap[11]).intl;
-    obj4.children = intl.string(arg1(dependencyMap[11]).t.jlLX2Z);
-    items1[1] = callback(arg1(dependencyMap[12]).Text, obj4);
-    const obj5 = { "Null": null, "Null": 1, alignItems: 1, style: tmp.disabledBody };
-    const intl2 = arg1(dependencyMap[11]).intl;
+    const obj4 = { style: tmp.disabledTitle, variant: "heading-xl/semibold", color: "text-feedback-critical" };
+    const intl = onPressClose(1212).intl;
+    obj4.children = intl.string(onPressClose(1212).t.jlLX2Z);
+    items1[1] = callback(onPressClose(4126).Text, obj4);
+    const obj5 = { style: tmp.disabledBody, variant: "text-md/normal", color: "text-default" };
+    const intl2 = onPressClose(1212).intl;
     const obj6 = {};
-    const tmp11 = importDefault(dependencyMap[17]);
-    obj6.articleLink = importDefault(dependencyMap[19]).getArticleURL(constants2.INVITE_DISABLED);
-    obj5.children = intl2.format(arg1(dependencyMap[11]).t.RXSeLl, obj6);
-    items1[2] = callback(arg1(dependencyMap[18]).TextWithIOSLinkWorkaround, obj5);
-    const obj7 = {};
-    const intl3 = arg1(dependencyMap[11]).intl;
-    obj7.text = intl3.string(arg1(dependencyMap[11]).t.yD/zkn);
+    const tmp11 = importDefault(5515);
+    obj6.articleLink = importDefault(1920).getArticleURL(constants2.INVITE_DISABLED);
+    obj5.children = intl2.format(onPressClose(1212).t.RXSeLl, obj6);
+    items1[2] = callback(onPressClose(5459).TextWithIOSLinkWorkaround, obj5);
+    const obj7 = { variant: "primary", size: "lg" };
+    const intl3 = onPressClose(1212).intl;
+    obj7.text = intl3.string(onPressClose(1212).t["yD/zkn"]);
     obj7.onPress = function handlePressClose() {
       onPressClose();
     };
-    items1[3] = callback(arg1(dependencyMap[13]).Button, obj7);
+    items1[3] = callback(onPressClose(4543).Button, obj7);
     obj.children = items1;
     return callback2(closure_9, obj);
   }
 }
-importAll(dependencyMap[0]);
-({ Image: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ AbortCodes: closure_5, HelpdeskArticles: closure_6, InviteStates: closure_7 } = arg1(dependencyMap[2]));
-const tmp4 = arg1(dependencyMap[2]);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { expiredImage: { y: true, channelId: true }, expiredTitle: { 1927661619: null, -229505374: null, 1627791265: null }, expiredBody: { "Bool(false)": "defineProperty", "Bool(false)": "includes" }, disabledView: { "Bool(false)": null, "Bool(false)": null } };
-obj = { 976442257: "keys", -314972670: "disabled", -2091808671: "names", 478307844: "paths", 2126648843: "httpServerLocation", tintColor: importDefault(dependencyMap[5]).colors.WHITE };
-obj.disabledPauseIcon = obj;
-const tmp5 = arg1(dependencyMap[3]);
-obj.guildIcon = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.disabledTitle = {};
-obj.disabledBody = { memo: 52881784.83212474, accessibilityRole: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
-let closure_11 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.lg };
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/accept_invite/native/InviteError.tsx");
+({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ AbortCodes: closure_5, HelpdeskArticles: closure_6, InviteStates: closure_7 } = ME);
+({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = { expiredImage: { marginTop: 32, marginBottom: 32 }, expiredTitle: { marginBottom: 8, backgroundColor: "transparent", textAlign: "center" }, expiredBody: { backgroundColor: "transparent", marginBottom: 24 }, disabledView: { justifyContent: "center", alignItems: "center" } };
+_createForOfIteratorHelperLoose = { position: "absolute", alignSelf: "center", tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE, width: 42, height: 42 };
+_createForOfIteratorHelperLoose.disabledPauseIcon = _createForOfIteratorHelperLoose;
+let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, opacity: 0.2, zIndex: -999 };
+_createForOfIteratorHelperLoose.guildIcon = obj1;
+_createForOfIteratorHelperLoose.disabledTitle = { marginTop: 16, marginBottom: 8, textAlign: "center" };
+_createForOfIteratorHelperLoose.disabledBody = { textAlign: "center", marginBottom: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/accept_invite/native/InviteError.tsx");
 
 export default function InviteError(inviteError) {
   inviteError = inviteError.inviteError;

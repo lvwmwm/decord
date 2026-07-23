@@ -1,38 +1,37 @@
-// Module ID: 9104
-// Function ID: 71343
+// Module ID: 9111
+// Function ID: 71384
 // Name: maybeShowDiscardChangesAlert
-// Dependencies: []
+// Dependencies: [4471, 1212, 2]
 // Exports: default, showDiscardChangesAlert
 
-// Module 9104 (maybeShowDiscardChangesAlert)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/user_settings/profiles/native/maybeShowDiscardChangesAlert.tsx");
+// Module 9111 (maybeShowDiscardChangesAlert)
+const result = require("set").fileFinishedImporting("modules/user_settings/profiles/native/maybeShowDiscardChangesAlert.tsx");
 
 export default function maybeShowDiscardChangesAlert(onHasEdits) {
   let onConfirm;
-  ({ resetPending: closure_0, onConfirm } = onHasEdits);
-  const importDefault = onConfirm;
+  let require;
+  ({ resetPending: require, onConfirm } = onHasEdits);
   onHasEdits = onHasEdits.onHasEdits;
   if (onHasEdits.hasEdits) {
     if (null != onHasEdits) {
       onHasEdits();
     }
-    let obj = importDefault(dependencyMap[0]);
+    let obj = onConfirm(4471);
     obj = {};
-    const intl = require(dependencyMap[1]).intl;
-    obj.title = intl.string(require(dependencyMap[1]).t.pvRCSu);
-    const intl2 = require(dependencyMap[1]).intl;
-    obj.body = intl2.string(require(dependencyMap[1]).t.DRi46S);
-    const intl3 = require(dependencyMap[1]).intl;
-    obj.confirmText = intl3.string(require(dependencyMap[1]).t.6GQDFu);
-    const intl4 = require(dependencyMap[1]).intl;
-    obj.cancelText = intl4.string(require(dependencyMap[1]).t.DmDzZB);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.title = intl.string(require(1212) /* getSystemLocale */.t.pvRCSu);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj.body = intl2.string(require(1212) /* getSystemLocale */.t.DRi46S);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    obj.confirmText = intl3.string(require(1212) /* getSystemLocale */.t["6GQDFu"]);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    obj.cancelText = intl4.string(require(1212) /* getSystemLocale */.t.DmDzZB);
     obj.onConfirm = function onConfirm() {
       callback();
       onConfirm();
     };
     obj.onCancel = function onCancel() {
-      onConfirm(closure_2[0]).close();
+      onConfirm(outer1_2[0]).close();
     };
     let showResult = obj.show(obj);
   } else {
@@ -44,16 +43,16 @@ export const showDiscardChangesAlert = function showDiscardChangesAlert(arg0) {
   let onCancel;
   let onConfirm;
   ({ onConfirm, onCancel } = arg0);
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(4471);
   obj = {};
-  const intl = require(dependencyMap[1]).intl;
-  obj.title = intl.string(require(dependencyMap[1]).t.pvRCSu);
-  const intl2 = require(dependencyMap[1]).intl;
-  obj.body = intl2.string(require(dependencyMap[1]).t.DRi46S);
-  const intl3 = require(dependencyMap[1]).intl;
-  obj.confirmText = intl3.string(require(dependencyMap[1]).t.6GQDFu);
-  const intl4 = require(dependencyMap[1]).intl;
-  obj.cancelText = intl4.string(require(dependencyMap[1]).t.DmDzZB);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.pvRCSu);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.DRi46S);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.confirmText = intl3.string(require(1212) /* getSystemLocale */.t["6GQDFu"]);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj.cancelText = intl4.string(require(1212) /* getSystemLocale */.t.DmDzZB);
   obj.onConfirm = onConfirm;
   obj.onCancel = onCancel;
   return obj.show(obj);

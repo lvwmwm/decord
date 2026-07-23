@@ -1,39 +1,41 @@
-// Module ID: 14297
-// Function ID: 107984
+// Module ID: 14411
+// Function ID: 110137
 // Name: pressable
-// Dependencies: []
+// Dependencies: [13327, 33, 12913, 566, 3712, 13745, 4080, 13509, 10095, 2]
 
-// Module 14297 (pressable)
-let closure_4 = importDefault(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[8]);
-obj = {
+// Module 14411 (pressable)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
     return "Internal Build Update";
   },
   parent: null,
   IconComponent: function InstallNativeUpdateIcon() {
-    const items = [closure_4];
-    if (obj.useStateFromStores(items, () => null !== closure_4.latestFetchedBuild().newBuild)) {
-      let RefreshIcon = tmp2(tmp3[6]).DownloadIcon;
+    const items = [_isNativeReflectConstruct];
+    if (obj.useStateFromStores(items, () => null !== outer1_4.latestFetchedBuild().newBuild)) {
+      let RefreshIcon = tmp2(4080).DownloadIcon;
     } else {
-      RefreshIcon = tmp2(tmp3[7]).RefreshIcon;
+      RefreshIcon = tmp2(13509).RefreshIcon;
     }
     return <RefreshIcon />;
   },
   useDescription: function useInternalBuildUpdateDescription() {
-    const items = [closure_4];
-    const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => {
-      const newBuild = closure_4.latestFetchedBuild().newBuild;
+    const items = [_isNativeReflectConstruct];
+    const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => {
+      const newBuild = outer1_4.latestFetchedBuild().newBuild;
       let build;
       if (null != newBuild) {
         build = newBuild.build;
       }
       return build;
     });
-    const obj = arg1(dependencyMap[3]);
-    const items1 = [closure_4];
-    const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => closure_4.latestFetchedBuild().lastCheck);
+    const obj = require(566) /* initialize */;
+    const items1 = [_isNativeReflectConstruct];
+    const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_4.latestFetchedBuild().lastCheck);
     if (null != stateFromStores) {
       const _HermesInternal2 = HermesInternal;
       let str = "Open build " + stateFromStores + " installer in a browser";
@@ -41,28 +43,28 @@ obj = {
       str = "Never refreshed";
       if (null != stateFromStores1) {
         const _HermesInternal = HermesInternal;
-        str = "Last refreshed " + importDefault(dependencyMap[4])(stateFromStores1).fromNow();
-        const obj3 = importDefault(dependencyMap[4])(stateFromStores1);
+        str = "Last refreshed " + importDefault(3712)(stateFromStores1).fromNow();
+        const obj3 = importDefault(3712)(stateFromStores1);
       }
     }
     return str;
   },
   usePredicate: function useHasInternalBuildUpdateSetting() {
-    const obj = arg1(dependencyMap[5]);
-    return closure_4.hasUpdatesConfigured && arg1(dependencyMap[5]).useStaffOrDeveloperSettingPredicate();
+    const obj = require(13745) /* useStaffOrDeveloperSettingPredicate */;
+    return _isNativeReflectConstruct.hasUpdatesConfigured && require(13745) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
   },
   onPress: function handleInstallNativeUpdateSettingPress() {
-    const newBuild = closure_4.latestFetchedBuild().newBuild;
+    const newBuild = _isNativeReflectConstruct.latestFetchedBuild().newBuild;
     if (null !== newBuild) {
-      importAll(dependencyMap[2]).openBuildInstaller(newBuild);
-      const obj = importAll(dependencyMap[2]);
+      importAll(12913).openBuildInstaller(newBuild);
+      const obj = importAll(12913);
     } else {
-      closure_4.checkForNewerBuild();
+      _isNativeReflectConstruct.checkForNewerBuild();
     }
   },
   withArrow: true
 };
-const pressable = obj.createPressable(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/defs/native/InternalBuildUpdateSetting.tsx");
+createToggle = createToggle.createPressable(createToggle);
+const result = require("_checkForNewerBuild").fileFinishedImporting("modules/user_settings/defs/native/InternalBuildUpdateSetting.tsx");
 
-export default pressable;
+export default createToggle;

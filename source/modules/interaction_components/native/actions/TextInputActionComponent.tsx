@@ -1,12 +1,15 @@
-// Module ID: 15959
-// Function ID: 122392
-// Dependencies: []
+// Module ID: 16076
+// Function ID: 124565
+// Dependencies: [57, 31, 33, 7794, 16073, 1881, 5773, 7510, 7505, 2]
 
-// Module 15959
-let closure_2 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 16076
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo((type) => {
+  let _slicedToArray;
   let executeStateUpdate;
   let label;
   let maxLength;
@@ -15,30 +18,31 @@ const memoResult = importAllResult.memo((type) => {
   let style;
   let value;
   type = type.type;
-  const arg1 = type;
   ({ style, label, value } = type);
   const dependencyMap = value;
   ({ placeholder, required, maxLength } = type);
-  let obj = arg1(dependencyMap[3]);
+  let obj = type(7794);
   let tmp;
   if (null != value) {
     obj = { type, value };
     tmp = obj;
   }
   const componentState = obj.useComponentState(type, tmp);
-  ({ state: closure_2, executeStateUpdate } = componentState);
+  ({ state: _slicedToArray, executeStateUpdate } = componentState);
   const error = componentState.error;
-  let obj2 = arg1(dependencyMap[4]);
+  let obj2 = type(16073);
   const isFirstTextInputInModal = obj2.useIsFirstTextInputInModal(type.id);
   obj = { placeholder, maxLength };
   let str = "default";
-  const state = importAllResult.useState(() => {
+  const state = executeStateUpdate.useState(() => {
     let type;
-    if (null != closure_2) {
-      type = closure_2.type;
+    if (null != _slicedToArray) {
+      type = _slicedToArray.type;
     }
     if (type === type) {
-      const value = closure_2.value;
+      let value = _slicedToArray.value;
+    } else {
+      value = closure_1;
     }
     return value;
   });
@@ -51,22 +55,22 @@ const memoResult = importAllResult.memo((type) => {
   obj.onChange = executeStateUpdate.useCallback((value) => executeStateUpdate({ type, value }), items);
   obj.autoFocus = isFirstTextInputInModal;
   obj.isClearable = true;
-  if (arg1(dependencyMap[5]).TextInputComponentStyle.SMALL === style) {
+  if (type(1881).TextInputComponentStyle.SMALL === style) {
     const obj1 = {};
     const merged = Object.assign(obj);
-    let tmp7 = jsx(arg1(dependencyMap[6]).TextField, obj1);
-  } else if (arg1(dependencyMap[5]).TextInputComponentStyle.PARAGRAPH === style) {
+    let tmp7 = jsx(type(5773).TextField, {});
+  } else if (type(1881).TextInputComponentStyle.PARAGRAPH === style) {
     obj2 = {};
     const merged1 = Object.assign(obj);
-    tmp7 = jsx(arg1(dependencyMap[7]).TextAreaField, obj2);
+    tmp7 = jsx(type(7510).TextAreaField, {});
   }
   let tmp20 = tmp7;
   if (null != label) {
     const obj3 = { label, required, errorMessage: error, children: tmp7 };
-    tmp20 = jsx(arg1(dependencyMap[8]).Input, obj3);
+    tmp20 = jsx(type(7505).Input, { label, required, errorMessage: error, children: tmp7 });
   }
   return tmp20;
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/interaction_components/native/actions/TextInputActionComponent.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/interaction_components/native/actions/TextInputActionComponent.tsx");
 
 export default memoResult;

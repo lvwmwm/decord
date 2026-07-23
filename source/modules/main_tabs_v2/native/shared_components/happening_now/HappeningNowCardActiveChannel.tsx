@@ -1,93 +1,95 @@
-// Module ID: 14836
-// Function ID: 111803
-// Dependencies: []
+// Module ID: 14952
+// Function ID: 113971
+// Dependencies: [31, 27, 12631, 1348, 11108, 1849, 14183, 653, 33, 4130, 566, 21, 1327, 22, 14951, 675, 1198, 4320, 1212, 4593, 14184, 14945, 2]
 
-// Module 14836
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const MAX_STORED_MESSAGES = arg1(dependencyMap[2]).MAX_STORED_MESSAGES;
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).HappeningNowCardTrackingType;
-({ AnalyticEvents: closure_11, Routes: closure_12 } = arg1(dependencyMap[7]));
-const tmp2 = arg1(dependencyMap[7]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
-const tmp3 = arg1(dependencyMap[8]);
-let closure_15 = arg1(dependencyMap[9]).createStyles({ content: { <string:3024947456>: "<string:1229062147>", <string:757573325>: "<string:2751464179>", <string:2068908129>: "<string:1107297092>" }, avatarsWrapper: { marginBottom: 2 } });
-const obj2 = arg1(dependencyMap[9]);
+// Module 14952
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { MAX_STORED_MESSAGES } from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { HappeningNowCardTrackingType as closure_10 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+const require = arg1;
+({ AnalyticEvents: closure_11, Routes: closure_12 } = ME);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+let closure_15 = _createForOfIteratorHelperLoose.createStyles({ content: { flexShrink: 1, marginLeft: 4, gap: 2 }, avatarsWrapper: { marginBottom: 2 } });
 const memoResult = importAllResult.memo((index) => {
   index = index.index;
-  const arg1 = index;
   const guildId = index.guildId;
-  const importDefault = guildId;
   const channelId = index.channelId;
-  const dependencyMap = channelId;
   let flag = index.panelVariant;
   if (flag === undefined) {
     flag = false;
   }
-  let importAllResult;
+  let stateFromStoresArray;
   const tmp = callback3();
-  let obj = arg1(dependencyMap[10]);
+  let obj = index(channelId[10]);
   const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId));
-  let obj1 = arg1(dependencyMap[10]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getChannel(channelId));
+  let obj1 = index(channelId[10]);
   const items1 = [closure_8, closure_9];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => {
-    const keys = guildId(channelId[11]).keys(typingUsers.getTypingUsers(channelId));
-    const mapped = keys.map((arg0) => user.getUser(arg0));
+    const keys = guildId(channelId[11]).keys(outer1_8.getTypingUsers(channelId));
+    const mapped = keys.map((arg0) => outer2_9.getUser(arg0));
     return mapped.filter(index(channelId[12]).isNotNullish)[0];
   });
-  let obj2 = arg1(dependencyMap[10]);
-  const items2 = [closure_5];
-  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, () => {
-    let channelMessageData = channelMessageData.getChannelMessageData(channelId);
+  let obj2 = index(channelId[10]);
+  const items2 = [_isNativeReflectConstruct];
+  stateFromStoresArray = obj2.useStateFromStoresArray(items2, () => {
+    let channelMessageData = outer1_5.getChannelMessageData(channelId);
     if (null == channelMessageData) {
       channelMessageData = [];
     }
     return channelMessageData;
   });
-  importAllResult = stateFromStoresArray;
   const items3 = [stateFromStoresArray];
-  const memo = importAllResult.useMemo(() => {
+  const memo = stateFromStoresArray.useMemo(() => {
     const obj = guildId(channelId[13]);
     const arr = guildId(channelId[13]);
     return obj.uniq(guildId(channelId[13]).map(stateFromStoresArray, "userId")).filter(index(channelId[12]).isNotNullish);
   }, items3);
-  let obj3 = arg1(dependencyMap[14]);
+  let obj3 = index(channelId[14]);
   const ensureHydratedUsers = obj3.useEnsureHydratedUsers(guildId, memo);
-  let obj4 = arg1(dependencyMap[10]);
+  let obj4 = index(channelId[10]);
   const items4 = [closure_9];
   const stateFromStoresArray1 = obj4.useStateFromStoresArray(items4, () => {
     const obj = guildId(channelId[13]);
     const arr = guildId(channelId[13]);
-    const mapped = obj.uniq(guildId(channelId[13]).map(stateFromStoresArray, "userId")).map((arg0) => user.getUser(arg0));
+    const mapped = obj.uniq(guildId(channelId[13]).map(stateFromStoresArray, "userId")).map((arg0) => outer2_9.getUser(arg0));
     return mapped.filter(index(channelId[12]).isNotNullish);
   });
   const items5 = [channelId, index, guildId];
-  const callback = importAllResult.useCallback(() => {
+  const callback = stateFromStoresArray.useCallback(() => {
     let obj = guildId(channelId[15]);
-    obj = { order: index, guild_id: guildId, type: constants.ACTIVE_CHANNEL_CARD, destination_channel_id: channelId };
-    obj.track(constants2.ACTIVITY_CARD_CLICKED, obj);
-    index(channelId[16]).transitionTo(closure_12.CHANNEL(guildId, channelId));
+    obj = { order: index, guild_id: guildId, type: outer1_10.ACTIVE_CHANNEL_CARD, destination_channel_id: channelId };
+    obj.track(outer1_11.ACTIVITY_CARD_CLICKED, obj);
+    index(channelId[16]).transitionTo(outer1_12.CHANNEL(guildId, channelId));
   }, items5);
   if (null == stateFromStores) {
     return null;
   } else {
     if (stateFromStoresArray.length < MAX_STORED_MESSAGES) {
-      const intl2 = arg1(dependencyMap[18]).intl;
+      const intl2 = index(channelId[18]).intl;
       obj = { count: stateFromStoresArray.length };
-      let formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[18]).t.VdpclX, obj);
+      let formatToPlainStringResult = intl2.formatToPlainString(index(channelId[18]).t.VdpclX, obj);
     } else {
-      const intl = arg1(dependencyMap[18]).intl;
-      formatToPlainStringResult = intl.string(arg1(dependencyMap[18]).t.LCutYV);
+      const intl = index(channelId[18]).intl;
+      formatToPlainStringResult = intl.string(index(channelId[18]).t.LCutYV);
     }
-    const channelIconComponent = arg1(dependencyMap[19]).getChannelIconComponent(stateFromStores);
+    const channelIconComponent = index(channelId[19]).getChannelIconComponent(stateFromStores);
     obj = { onPress: callback };
     let str = "medium";
-    const obj7 = arg1(dependencyMap[19]);
+    const obj7 = index(channelId[19]);
     const tmp16 = callback;
     if (index.fullwidth) {
       str = "full";
@@ -98,17 +100,17 @@ const memoResult = importAllResult.memo((index) => {
     obj1 = { style: tmp.content };
     obj2 = { style: tmp.avatarsWrapper };
     obj3 = { isTyping: null != stateFromStores1, userLimit: 3, users: stateFromStoresArray1, userCount: stateFromStoresArray1.length, guildId };
-    obj2.children = callback(arg1(dependencyMap[21]).HappeningNowAvatarStack, obj3);
+    obj2.children = callback(index(channelId[21]).HappeningNowAvatarStack, obj3);
     const items6 = [callback(View, obj2), , ];
     obj4 = { noMargin: stateFromStoresArray1.length > 0, children: formatToPlainStringResult };
-    items6[1] = callback(arg1(dependencyMap[20]).HappeningNowCardHeader, obj4);
+    items6[1] = callback(index(channelId[20]).HappeningNowCardHeader, obj4);
     const obj5 = { children: tmp7 };
-    items6[2] = callback(arg1(dependencyMap[20]).HappeningNowCardSubtitle, obj5);
+    items6[2] = callback(index(channelId[20]).HappeningNowCardSubtitle, obj5);
     obj1.children = items6;
     obj.children = callback2(View, obj1);
-    return tmp16(importDefault(dependencyMap[20]), obj);
+    return tmp16(guildId(channelId[20]), obj);
   }
 });
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActiveChannel.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActiveChannel.tsx");
 
 export default memoResult;

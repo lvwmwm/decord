@@ -1,40 +1,42 @@
-// Module ID: 15846
-// Function ID: 121116
+// Module ID: 15963
+// Function ID: 123289
 // Name: useCaptchaModalEffects
-// Dependencies: []
+// Dependencies: [31, 653, 4559, 9446, 675, 2]
 // Exports: default
 
-// Module 15846 (useCaptchaModalEffects)
-let closure_3 = importAll(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/captcha/useCaptchaModalEffects.tsx");
+// Module 15963 (useCaptchaModalEffects)
+import result from "result";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+const result = require("useMountLayoutEffect").fileFinishedImporting("modules/captcha/useCaptchaModalEffects.tsx");
 
 export default function useCaptchaModalEffects(arg0) {
   let analyticsType;
-  ({ onReject: closure_0, analyticsType } = arg0);
+  let require;
+  ({ onReject: require, analyticsType } = arg0);
   if (analyticsType === undefined) {
     analyticsType = "Guild Join Captcha";
   }
-  const importDefault = analyticsType;
-  let closure_2;
-  closure_2 = React.useRef(true);
-  importDefault(closure_2[2])(() => () => {
-    if (ref.current) {
-      if (null != callback) {
-        callback(callback(ref[3]).CaptchaError.CANCEL);
+  let dependencyMap;
+  dependencyMap = React.useRef(true);
+  analyticsType(4559)(() => () => {
+    if (outer1_2.current) {
+      if (null != outer1_0) {
+        outer1_0(outer2_0(table[3]).CaptchaError.CANCEL);
       }
     }
   });
   const items = [analyticsType];
   const effect = React.useEffect(() => {
-    let obj = analyticsType(closure_2[4]);
+    let obj = analyticsType(table[4]);
     obj = { type: analyticsType };
-    obj.track(constants.OPEN_MODAL, obj);
+    obj.track(outer1_4.OPEN_MODAL, obj);
     return () => {
-      if (ref.current) {
-        let obj = callback(ref[4]);
-        obj = { type: callback };
-        obj.track(constants.MODAL_DISMISSED, obj);
+      if (outer1_2.current) {
+        let obj = analyticsType(table[4]);
+        obj = { type: outer1_1 };
+        obj.track(outer2_4.MODAL_DISMISSED, obj);
       }
     };
   }, items);

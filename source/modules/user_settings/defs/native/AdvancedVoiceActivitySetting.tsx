@@ -1,37 +1,39 @@
-// Module ID: 14035
-// Function ID: 106717
+// Module ID: 14149
+// Function ID: 108873
 // Name: toggle
-// Dependencies: []
+// Dependencies: [4177, 7662, 566, 8843, 1212, 10095, 2]
 
-// Module 14035 (toggle)
-let closure_3 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[5]);
-obj = {
+// Module 14149 (toggle)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.string(arg1(dependencyMap[4]).t.BbESsg);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.BbESsg);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.VOICE,
+  parent: require("MobileSetting").MobileSetting.VOICE,
   useValue: function useAdvancedVoiceActivitySettingValue() {
-    const items = [closure_3];
-    return arg1(dependencyMap[2]).useStateFromStores(items, () => modeOptions.getModeOptions().vadUseKrisp);
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getModeOptions().vadUseKrisp);
   },
   onValueChange: function onAdvancedVoiceActivitySettingValueChange(vadUseKrisp) {
-    const mode = mode.getMode();
-    let obj = importDefault(dependencyMap[3]);
+    mode = mode.getMode();
+    let obj = importDefault(8843);
     obj = { vadUseKrisp };
     obj.setMode(mode, obj);
   },
   useDescription: function useAdvancedVoiceActivitySettingDescription() {
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.string(arg1(dependencyMap[4]).t.LoOB1F);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.LoOB1F);
   },
   usePredicate: function useHasAdvancedVoiceActivitySetting() {
-    const items = [closure_3];
-    return arg1(dependencyMap[2]).useStateFromStores(items, () => advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported());
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isAdvancedVoiceActivitySupported());
   }
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/AdvancedVoiceActivitySetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/AdvancedVoiceActivitySetting.tsx");
 
-export default toggle;
+export default createToggle;

@@ -1,52 +1,56 @@
-// Module ID: 14466
-// Function ID: 108997
+// Module ID: 14580
+// Function ID: 111150
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 5045, 14581, 2]
 
-// Module 14466 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 14580 (_createForOfIteratorHelperLoose)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +61,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,13 +87,11 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+let tmp2 = (() => {
   class SettingSearchManager {
     constructor(arg0) {
-      SettingSearchManager = this;
-      tmp = closure_3(this, SettingSearchManager);
+      self = this;
+      tmp = outer1_3(this, self);
       this.terms = arg0;
       map = new Map();
       this.cache = map;
@@ -102,44 +104,43 @@ const tmp2 = () => {
         [tmp, arr] = arg0;
         let set;
         const items = [];
-        const self = items;
         const items1 = [];
         set = new Set();
-        const item = arr.forEach((toLocaleLowerCase) => {
+        let item = arr.forEach((toLocaleLowerCase) => {
           items.push(toLocaleLowerCase.toLocaleLowerCase());
           if (toLocaleLowerCase.includes(" ")) {
             const parts = toLocaleLowerCase.split(/\s+/);
             const item = parts.forEach((toLocaleLowerCase) => {
               const toLocaleLowerCaseResult = toLocaleLowerCase.toLocaleLowerCase();
-              if (!set.has(toLocaleLowerCaseResult)) {
-                const arr = arr.push(toLocaleLowerCaseResult);
-                set.add(toLocaleLowerCaseResult);
+              if (!outer1_2.has(toLocaleLowerCaseResult)) {
+                outer1_1.push(toLocaleLowerCaseResult);
+                outer1_2.add(toLocaleLowerCaseResult);
               }
             });
           }
         });
-        const preprocessed = self.preprocessed;
+        const preprocessed = items.preprocessed;
         const items2 = [tmp, { normalizedSearchTerms: items, normalizedTokens: items1 }];
       });
       return;
     }
   }
-  const arg1 = SettingSearchManager;
   let obj = {
     key: "search",
     value(arg0) {
-      const SettingSearchManager = this;
+      const self = this;
+      let closure_1 = arg0;
       return new Promise((arg0) => {
-        arg0(self.getMatchingSettings(arg0));
+        arg0(self.getMatchingSettings(closure_1));
       });
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "getMatchingSettings",
     value(arg0) {
       const self = this;
-      const SettingSearchManager = arg0;
+      let closure_0 = arg0;
       const cache = this.cache;
       const value = cache.get(arg0);
       if (null != value) {
@@ -151,17 +152,17 @@ const tmp2 = () => {
           let tmp;
           let tmp2;
           [tmp, tmp2] = arg0;
-          const tmp3 = callback(tmp2);
+          const tmp3 = outer2_5(tmp2);
           let iter = tmp3();
           if (!iter.done) {
-            const formatted = arg0.toLowerCase();
+            const formatted = closure_0.toLowerCase();
             while (!tmp6(formatted, str.toLowerCase())) {
               let iter2 = tmp3();
               iter = iter2;
             }
             items.push(tmp);
-            const str = iter.value;
-            const tmp6 = items(closure_2[2]);
+            str = iter.value;
+            tmp6 = outer2_1(outer2_2[2]);
           }
         });
         const cache2 = self.cache;
@@ -188,31 +189,31 @@ const tmp2 = () => {
         } else {
           const items = [];
           const preprocessed = self.preprocessed;
-          const item = preprocessed.forEach((arg0) => {
+          let item = preprocessed.forEach((arg0) => {
             let tmp;
             [tmp, ] = arg0;
-            let closure_0 = 0;
-            if (arr.some((arg0) => arg0 === closure_0)) {
-              closure_0 = 1;
-            } else if (obj.some((str) => str.startsWith(closure_0))) {
-              closure_0 = 0.95;
+            let c0 = 0;
+            if (arr.some((arg0) => arg0 === c0)) {
+              c0 = 1;
+            } else if (obj.some((str) => str.startsWith(c0))) {
+              c0 = 0.95;
             } else {
               const item = arr.forEach((arg0) => {
-                const result = v095(closure_2[3]).calculateJaroWinklerSimilarity(v095, arg0);
+                const result = SettingSearchManager(outer3_2[3]).calculateJaroWinklerSimilarity(c0, arg0);
                 let num = 0;
                 if (result >= 0.8) {
                   num = result;
                 }
-                const v095 = Math.max(v095, num);
+                closure_0 = Math.max(closure_0, num);
               });
             }
-            if (closure_0 > 0) {
-              const obj = { setting: tmp, score: closure_0 };
-              const arr = items.push(obj);
+            if (c0 > 0) {
+              obj = { setting: tmp, score: c0 };
+              arr = items.push(obj);
             }
           });
           const cacheScored2 = self.cacheScored;
-          const result = cacheScored2.set(toLocaleLowerCaseResult, items);
+          let result = cacheScored2.set(toLocaleLowerCaseResult, items);
           return items;
         }
       }
@@ -220,7 +221,7 @@ const tmp2 = () => {
   };
   items[2] = obj;
   return callback(SettingSearchManager, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/UserSettingSearchManager.tsx");
+})();
+let result = require("fuzzysearch").fileFinishedImporting("modules/user_settings/UserSettingSearchManager.tsx");
 
 export default tmp2;

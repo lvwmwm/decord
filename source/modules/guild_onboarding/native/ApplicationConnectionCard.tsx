@@ -1,29 +1,28 @@
-// Module ID: 5460
-// Function ID: 46650
+// Module ID: 5463
+// Function ID: 46669
 // Name: ApplicationConnectionCard
-// Dependencies: []
+// Dependencies: [31, 4167, 653, 33, 566, 5464, 5465, 1212, 5467, 5474, 675, 4324, 5479, 2]
 // Exports: default
 
-// Module 5460 (ApplicationConnectionCard)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_onboarding/native/ApplicationConnectionCard.tsx");
+// Module 5463 (ApplicationConnectionCard)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("ME").fileFinishedImporting("modules/guild_onboarding/native/ApplicationConnectionCard.tsx");
 
 export default function ApplicationConnectionCard(connection) {
   let canStartAuthorization;
   let fetched;
   let hasAlreadyLinked;
   connection = connection.connection;
-  const arg1 = connection;
   const guildId = connection.guildId;
-  const importDefault = guildId;
   const _location = connection.location;
-  const dependencyMap = _location;
-  let AnalyticEvents;
-  let obj = arg1(dependencyMap[4]);
-  const items = [closure_4];
+  let startAuthorization;
+  let obj = connection(_location[4]);
+  const items = [analyticsLocations];
   const items1 = [connection.application_id];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let application = null;
@@ -32,11 +31,9 @@ export default function ApplicationConnectionCard(connection) {
     }
     return application;
   }, items1);
-  const React = stateFromStores;
-  const analyticsLocations = importDefault(dependencyMap[5])(_location).analyticsLocations;
-  closure_4 = analyticsLocations;
+  analyticsLocations = guildId(_location[5])(_location).analyticsLocations;
   const items2 = [stateFromStores, connection.application_id];
-  const effect = React.useEffect(() => {
+  const effect = stateFromStores.useEffect(() => {
     let result = null != stateFromStores;
     if (!result) {
       result = null == connection.application_id;
@@ -60,17 +57,16 @@ export default function ApplicationConnectionCard(connection) {
     name = stateFromStores.name;
   }
   if (null == name) {
-    const intl = arg1(dependencyMap[7]).intl;
-    name = intl.string(arg1(dependencyMap[7]).t.cgPbaZ);
+    const intl = connection(_location[7]).intl;
+    name = intl.string(connection(_location[7]).t.cgPbaZ);
   }
-  const tmp6 = importDefault(dependencyMap[8])(stateFromStores);
-  const startAuthorization = tmp6.startAuthorization;
-  AnalyticEvents = startAuthorization;
+  const tmp6 = guildId(_location[8])(stateFromStores);
+  startAuthorization = tmp6.startAuthorization;
   ({ hasAlreadyLinked, canStartAuthorization, fetched } = tmp6);
-  obj = { game: stateFromStores, size: arg1(dependencyMap[9]).GameIconSizes.SMALL };
+  obj = { game: stateFromStores, size: connection(_location[9]).GameIconSizes.SMALL };
   const items3 = [startAuthorization, guildId, connection.application_id, _location, analyticsLocations];
-  const tmp7 = importDefault(dependencyMap[9]);
-  const callback = React.useCallback(() => {
+  const tmp7 = guildId(_location[9]);
+  const callback = stateFromStores.useCallback(() => {
     let obj = guildId(_location[10]);
     obj = {};
     const merged = Object.assign(connection(_location[11]).collectGuildAnalyticsMetadata(guildId));
@@ -87,10 +83,10 @@ export default function ApplicationConnectionCard(connection) {
     startAuthorization(obj);
   }, items3);
   obj = { displayName: name, description: connection.description };
-  obj.icon = jsx(importDefault(dependencyMap[9]), obj);
+  obj.icon = jsx(guildId(_location[9]), { displayName: name, description: connection.description });
   obj.isLoading = !fetched;
   obj.isConnected = hasAlreadyLinked;
   obj.canConnect = canStartAuthorization;
   obj.onConnect = callback;
-  return jsx(importDefault(dependencyMap[12]), obj);
+  return jsx(guildId(_location[12]), { displayName: name, description: connection.description });
 };

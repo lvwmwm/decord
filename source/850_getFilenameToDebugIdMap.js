@@ -1,13 +1,15 @@
 // Module ID: 850
-// Function ID: 9488
+// Function ID: 9489
 // Name: getFilenameToDebugIdMap
-// Dependencies: []
+// Dependencies: [798, 810]
 
 // Module 850 (getFilenameToDebugIdMap)
+const require = arg1;
+const dependencyMap = arg6;
 function getFilenameToDebugIdMap(arg0) {
-  const arg1 = arg0;
-  const _sentryDebugIds = arg1(arg6[0]).GLOBAL_OBJ._sentryDebugIds;
-  const _debugIds = arg1(arg6[0]).GLOBAL_OBJ._debugIds;
+  const _require = arg0;
+  const _sentryDebugIds = _require(798).GLOBAL_OBJ._sentryDebugIds;
+  const _debugIds = _require(798).GLOBAL_OBJ._debugIds;
   if (!_sentryDebugIds) {
     if (!_debugIds) {
       return {};
@@ -32,7 +34,7 @@ function getFilenameToDebugIdMap(arg0) {
       }
     }
   }
-  let length = keys.length;
+  length = keys.length;
   length = keys1.length;
   closure_5 = {};
   if (!closure_2) {
@@ -71,15 +73,15 @@ function getFilenameToDebugIdMap(arg0) {
               items[1] = tmp40;
               closure_2[tmp38] = items;
             }
-            // continue
+            continue;
           }
         }
       }
       let tmp8 = tmp40;
       if (tmp40) {
-        let tmp9 = keys;
+        let tmp9 = callback;
         let tmp10 = nextResult;
-        let arr = keys(tmp38);
+        let arr = callback(tmp38);
         let diff = arr.length - 1;
         let tmp13 = diff;
         if (diff >= 0) {
@@ -134,10 +136,10 @@ arg5.getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1
     const iter = arg1[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tmp7 = arg1;
-      let tmp8 = arg6;
+      let tmp7 = require;
+      let tmp8 = dependencyMap;
       let tmp6 = nextResult;
-      let obj = arg1(arg6[1]);
+      let obj = require(810) /* createStackParser */;
       let result = obj.normalizeStackTracePath(nextResult);
       let tmp10 = result;
       let tmp11 = result;
@@ -156,7 +158,7 @@ arg5.getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1
         obj.debug_id = tmp2[tmp10];
         let arr = items.push(obj);
       }
-      // continue
+      continue;
     }
     return items;
   } else {

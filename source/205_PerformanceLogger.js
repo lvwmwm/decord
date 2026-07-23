@@ -1,12 +1,13 @@
 // Module ID: 205
 // Function ID: 2896
 // Name: PerformanceLogger
-// Dependencies: []
+// Dependencies: [6, 7]
 // Exports: default
 
 // Module 205 (PerformanceLogger)
-let closure_1 = importDefault(dependencyMap[0]);
-let closure_2 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 let fn = global.nativeQPLTimestamp;
 if (null == fn) {
   fn = () => {
@@ -14,10 +15,10 @@ if (null == fn) {
     return _performance.now();
   };
 }
-let closure_4 = () => {
+let closure_4 = (() => {
   class PerformanceLogger {
     constructor() {
-      tmp = closure_1(this, PerformanceLogger);
+      tmp = outer1_1(this, PerformanceLogger);
       this._timespans = {};
       this._extras = {};
       this._points = {};
@@ -26,7 +27,6 @@ let closure_4 = () => {
       return;
     }
   }
-  const global = PerformanceLogger;
   let obj = {
     key: "addTimespan",
     value: function addTimespan(arg0, arg1, endTime, startExtras, endExtras) {
@@ -69,18 +69,18 @@ let closure_4 = () => {
     value: function clearCompleted() {
       const self = this;
       for (const key10005 in this._timespans) {
-        let tmp2 = key10005;
-        let tmp3 = self._timespans[key10005];
+        let tmp4 = key10005;
+        let tmp5 = self._timespans[key10005];
         let totalTime;
-        if (null != tmp3) {
-          totalTime = tmp3.totalTime;
+        if (null != tmp5) {
+          totalTime = tmp5.totalTime;
         }
         if (null == totalTime) {
           continue;
         } else {
           let _timespans = self._timespans;
-          delete r8[r9];
-          // continue
+          delete tmp[tmp2];
+          continue;
         }
         continue;
       }
@@ -97,7 +97,7 @@ let closure_4 = () => {
   items[5] = {
     key: "currentTimestamp",
     value: function currentTimestamp() {
-      return callback2();
+      return outer1_3();
     }
   };
   items[6] = {
@@ -162,13 +162,13 @@ let closure_4 = () => {
           }
         }
       }
-      tmp = callback2();
+      tmp = outer1_3();
     }
   };
   items[14] = {
     key: "removeExtra",
     value: function removeExtra(arg0) {
-      delete r1[r2];
+      delete tmp[tmp2];
       return this._extras[arg0];
     }
   };
@@ -202,7 +202,7 @@ let closure_4 = () => {
           self._timespans[_perfKey] = obj;
         }
       }
-      tmp = callback2();
+      tmp = outer1_3();
     }
   };
   items[17] = {
@@ -237,11 +237,11 @@ let closure_4 = () => {
           }
         }
       }
-      tmp = callback2();
+      tmp = outer1_3();
     }
   };
   return callback(PerformanceLogger, items);
-}();
+})();
 
 export default function createPerformanceLogger() {
   return new closure_4();

@@ -1,60 +1,59 @@
-// Module ID: 11458
-// Function ID: 89278
+// Module ID: 11468
+// Function ID: 89328
 // Name: useChangelogRenderedAnalytics
-// Dependencies: []
+// Dependencies: [31, 1921, 4142, 4141, 653, 11469, 566, 8340, 7768, 675, 2]
 // Exports: default
 
-// Module 11458 (useChangelogRenderedAnalytics)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/changelog/useChangelogRenderedAnalytics.tsx");
+// Module 11468 (useChangelogRenderedAnalytics)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/changelog/useChangelogRenderedAnalytics.tsx");
 
 export default function useChangelogRenderedAnalytics(arg0) {
-  const arg1 = arg0;
-  const tmp = importDefault(dependencyMap[5])(arg0);
-  const importDefault = tmp;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items, () => tmp4.locale);
-  const dependencyMap = stateFromStores;
-  const obj = arg1(dependencyMap[6]);
-  const items1 = [closure_6];
+  const _require = arg0;
+  let tmp = importDefault(stateFromStores[5])(arg0);
+  importDefault = tmp;
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = _require(stateFromStores[6]).useStateFromStores(items, () => tmp4.locale);
+  let obj = _require(stateFromStores[6]);
+  const items1 = [stateFromStores2];
   const items2 = [tmp, stateFromStores];
-  const stateFromStores1 = arg1(dependencyMap[6]).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(stateFromStores[6]).useStateFromStores(items1, () => {
     let str = "";
-    if (null != stateFromStores2) {
-      str = tmp;
+    if (null != closure_1) {
+      str = closure_1;
     }
     return stateFromStores2.getChangelog(str, stateFromStores);
   }, items2);
-  const React = stateFromStores1;
-  const tmp4 = importDefault(dependencyMap[7])(arg0);
-  closure_4 = tmp4;
+  const tmp4 = importDefault(stateFromStores[7])(arg0);
+  _isNativeReflectConstruct = tmp4;
   let timestamp = null;
   if (tmp4) {
-    const _Date = Date;
+    let _Date = Date;
     timestamp = Date.now();
   }
-  let closure_5 = React.useRef(timestamp);
-  const obj2 = arg1(dependencyMap[6]);
+  let closure_5 = stateFromStores1.useRef(timestamp);
+  const obj2 = _require(stateFromStores[6]);
   const items3 = [closure_5];
   const items4 = [arg0];
-  const stateFromStores2 = arg1(dependencyMap[6]).useStateFromStores(items3, () => ref.getUnreadCount(arg0), items4);
-  closure_6 = stateFromStores2;
-  let closure_7 = React.useRef(stateFromStores2);
-  const effect = React.useEffect(() => {
+  stateFromStores2 = _require(stateFromStores[6]).useStateFromStores(items3, () => ref.getUnreadCount(closure_0), items4);
+  let closure_7 = stateFromStores1.useRef(stateFromStores2);
+  const effect = stateFromStores1.useEffect(() => {
     closure_7.current = stateFromStores2;
   });
   const items5 = [tmp4];
-  const effect1 = React.useEffect(() => {
+  const effect1 = stateFromStores1.useEffect(() => {
     closure_5.current = Date.now();
   }, items5);
   const items6 = [tmp, stateFromStores, tmp4];
-  const effect2 = React.useEffect(() => {
-    let tmp = tmp4;
-    if (tmp4) {
+  const effect2 = stateFromStores1.useEffect(() => {
+    let tmp = _isNativeReflectConstruct;
+    if (_isNativeReflectConstruct) {
       tmp = null != tmp;
     }
     if (tmp) {
@@ -63,9 +62,9 @@ export default function useChangelogRenderedAnalytics(arg0) {
     }
   }, items6);
   const items7 = [tmp4, stateFromStores1];
-  const effect3 = React.useEffect(() => {
-    let tmp = tmp4;
-    if (tmp4) {
+  const effect3 = stateFromStores1.useEffect(() => {
+    let tmp = _isNativeReflectConstruct;
+    if (_isNativeReflectConstruct) {
       tmp = null != stateFromStores1;
     }
     if (tmp) {
@@ -78,27 +77,27 @@ export default function useChangelogRenderedAnalytics(arg0) {
     }
   }, items7);
   const items8 = [tmp4, stateFromStores1];
-  const effect4 = React.useEffect(() => {
-    const arg0 = ref.current;
+  const effect4 = stateFromStores1.useEffect(() => {
+    const current = ref.current;
     return () => {
-      let tmp = closure_4;
-      if (closure_4) {
-        tmp = null != closure_3;
+      let tmp = outer1_4;
+      if (outer1_4) {
+        tmp = null != outer1_3;
       }
       if (tmp) {
         tmp = null != current;
       }
       if (tmp) {
-        let obj = callback(closure_2[9]);
+        let obj = callback(stateFromStores[9]);
         obj = {};
         const _Math = Math;
         const _Date = Date;
         obj.seconds_open = Math.round((Date.now() - current) / 1000);
         const _HermesInternal = HermesInternal;
-        obj.change_log_id = "" + closure_3.date + ":" + closure_3.revision;
-        obj.unread_count = ref.current;
-        obj.track(ref.CHANGE_LOG_CLOSED, obj);
-        closure_5.current = 0;
+        obj.change_log_id = "" + outer1_3.date + ":" + outer1_3.revision;
+        obj.unread_count = outer1_7.current;
+        obj.track(constants.CHANGE_LOG_CLOSED, obj);
+        outer1_5.current = 0;
       }
     };
   }, items8);

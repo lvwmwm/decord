@@ -1,15 +1,16 @@
-// Module ID: 6788
-// Function ID: 53625
+// Module ID: 6793
+// Function ID: 53657
 // Name: StorefrontCollectionRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6794, 6787, 6795, 2]
 
-// Module 6788 (StorefrontCollectionRecord)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const AssetDisplayConfigRecord = arg1(dependencyMap[3]).AssetDisplayConfigRecord;
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = () => {
+// Module 6793 (StorefrontCollectionRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AssetDisplayConfigRecord } from "AssetDisplayConfigRecord";
+import StorefrontProductRecord from "StorefrontProductRecord";
+
+const tmp2 = (() => {
   class StorefrontCollectionRecord {
     constructor(arg0) {
       tmp = StorefrontCollectionRecord(this, StorefrontCollectionRecord);
@@ -17,7 +18,6 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = StorefrontCollectionRecord;
   const items = [
     {
       key: "fromServer",
@@ -28,7 +28,7 @@ const tmp2 = () => {
         let unpublished_at;
         let updated_at;
         ({ created_at, updated_at, unpublished_at, unpublish_settings, tenant_metadata } = application_id);
-        let obj = { ref: "Text", ddd: "resizeMode", tag: "from", ip: "Array", has: "isArray", accessibilityRole: "braintreemasterpasslanding" };
+        let obj = { application_id: 0, created_at: 0, updated_at: 0, unpublished_at: 0, unpublish_settings: 0, tenant_metadata: 0 };
         Object.setPrototypeOf(null);
         const merged = Object.assign(application_id, obj);
         let tmp3 = StorefrontCollectionRecord;
@@ -36,7 +36,7 @@ const tmp2 = () => {
         const merged1 = Object.assign(merged);
         obj["applicationId"] = application_id.application_id;
         const products = merged.products;
-        obj["products"] = products.map(fromServer.fromServer);
+        obj["products"] = products.map(outer1_4.fromServer);
         obj["createdAt"] = new Date(created_at);
         const date = new Date(created_at);
         obj["updatedAt"] = new Date(updated_at);
@@ -58,19 +58,19 @@ const tmp2 = () => {
         obj["willUnpublishAt"] = date3;
         let fromServerResult;
         if (null != tenant_metadata.collectibles.styles) {
-          fromServerResult = closure_2.fromServer(tenant_metadata.collectibles.styles);
+          fromServerResult = outer1_2.fromServer(tenant_metadata.collectibles.styles);
         }
         obj["styles"] = fromServerResult;
         obj["bannerTextColor"] = tenant_metadata.collectibles.banner_text_color;
         obj["heroRanking"] = tenant_metadata.collectibles.hero_ranking;
         let fromServerResult1;
         if (null != tenant_metadata.collectibles.hero_display_config) {
-          fromServerResult1 = closure_3.fromServer(tenant_metadata.collectibles.hero_display_config);
+          fromServerResult1 = outer1_3.fromServer(tenant_metadata.collectibles.hero_display_config);
         }
         obj["heroDisplayConfig"] = fromServerResult1;
         let fromServerResult2;
         if (null != tenant_metadata.collectibles.hero_logo_display_config) {
-          fromServerResult2 = closure_3.fromServer(tenant_metadata.collectibles.hero_logo_display_config);
+          fromServerResult2 = outer1_3.fromServer(tenant_metadata.collectibles.hero_logo_display_config);
         }
         obj["heroLogoDisplayConfig"] = fromServerResult2;
         obj["heroUrl"] = tenant_metadata.collectibles.hero_url;
@@ -107,7 +107,7 @@ const tmp2 = () => {
     }
   ];
   return callback(StorefrontCollectionRecord, null, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/storefront/records/StorefrontCollectionRecord.tsx");
+})();
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/storefront/records/StorefrontCollectionRecord.tsx");
 
 export default tmp2;

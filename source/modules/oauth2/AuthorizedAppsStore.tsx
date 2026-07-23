@@ -1,9 +1,20 @@
-// Module ID: 5063
-// Function ID: 43942
+// Module ID: 5066
+// Function ID: 43960
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 5067, 4349, 1327, 566, 686, 2]
 
-// Module 5063 (_isNativeReflectConstruct)
+// Module 5066 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +24,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,14 +104,13 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function recomputeFromAppTokens() {
-  const items = [...closure_12.values()];
-  let closure_13 = items;
+  const items = [...map.values()];
   let closure_14 = items.filter((application) => null == application.application.parent_id);
 }
 function updateFetchStates(FETCHED, applicationIds) {
   let done;
   if (null == applicationIds) {
-    const NOT_FETCHED = FETCHED;
+    let closure_15 = FETCHED;
     map1.clear();
     closure_17 = closure_17 + 1;
   } else {
@@ -108,8 +118,8 @@ function updateFetchStates(FETCHED, applicationIds) {
     let iter = tmp2();
     if (!iter.done) {
       do {
-        let tmp3 = closure_16;
-        let result = closure_16.set(iter.value, FETCHED);
+        let tmp3 = map1;
+        let result = map1.set(iter.value, FETCHED);
         let iter2 = tmp2();
         iter = iter2;
         done = iter2.done;
@@ -118,35 +128,26 @@ function updateFetchStates(FETCHED, applicationIds) {
     closure_17 = closure_17 + 1;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
-const map = new Map();
+let map = new Map();
 let closure_13 = [];
 let closure_14 = [];
-const NOT_FETCHED = obj.NOT_FETCHED;
+let NOT_FETCHED = obj.NOT_FETCHED;
 const map1 = new Map();
-let closure_17 = 0;
-let tmp4 = (Store) => {
+let c17 = 0;
+let tmp4 = ((Store) => {
   class AuthorizedAppsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, AuthorizedAppsStore);
-      obj = closure_5(AuthorizedAppsStore);
-      tmp2 = closure_4;
-      if (closure_18()) {
+      tmp = outer1_2(this, AuthorizedAppsStore);
+      obj = outer1_5(AuthorizedAppsStore);
+      tmp2 = outer1_4;
+      if (outer1_18()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -155,12 +156,11 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = AuthorizedAppsStore;
   callback2(AuthorizedAppsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_9, closure_10);
+      this.waitFor(outer1_8, outer1_9, outer1_10);
     }
   };
   const items = [obj, , , , , , ];
@@ -169,7 +169,7 @@ let tmp4 = (Store) => {
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        const value = closure_12.get(arg0);
+        const value = outer1_12.get(arg0);
         let tmp4 = null;
         if (null != value) {
           tmp4 = value;
@@ -183,45 +183,45 @@ let tmp4 = (Store) => {
   obj = {
     key: "getNewestTokens",
     value() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getNewestTokensForNonChildrenApplications",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[4] = {
     key: "getFetchState",
     value() {
-      return closure_15;
+      return outer1_15;
     }
   };
   items[5] = {
     key: "getFetchStateForApplication",
     value(arg0) {
-      if (closure_15 !== constants.FETCHING) {
-        if (closure_15 !== constants.FETCHED) {
-          let value = closure_16.get(arg0);
+      if (outer1_15 !== outer1_11.FETCHING) {
+        if (outer1_15 !== outer1_11.FETCHED) {
+          let value = outer1_16.get(arg0);
           if (null == value) {
-            value = closure_15;
+            value = outer1_15;
           }
         }
         return value;
       }
-      value = closure_15;
+      value = outer1_15;
     }
   };
   items[6] = {
     key: "getApplicationFetchStateVersion",
     value() {
-      return closure_17;
+      return outer1_17;
     }
   };
   return callback(AuthorizedAppsStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "AuthorizedAppsStore";
 obj = {
   USER_AUTHORIZED_APPS_REQUEST: function handleUserAuthorizedAppsRequest(request) {
@@ -229,6 +229,32 @@ obj = {
       updateFetchStates(obj.FETCHING);
     } else {
       updateFetchStates(obj.FETCHING, request.request.applicationIds);
+    }
+  },
+  USER_AUTHORIZED_APPS_REQUEST_CANCELLED: function handleUserAuthorizedAppsRequestCancelled(applicationIds) {
+    let iter3;
+    const tmp = _createForOfIteratorHelperLoose(applicationIds.applicationIds);
+    const iter = tmp();
+    let iter2 = iter;
+    let flag = false;
+    let flag2 = false;
+    if (!iter.done) {
+      do {
+        let value = iter2.value;
+        let tmp2 = map1;
+        let tmp3 = obj;
+        if (map1.get(value) === obj.FETCHING) {
+          let tmp4 = map1;
+          let deleteResult = map1.delete(value);
+          flag = true;
+        }
+        iter3 = tmp();
+        iter2 = iter3;
+        flag2 = flag;
+      } while (!iter3.done);
+    }
+    if (flag2) {
+      closure_17 = closure_17 + 1;
     }
   },
   USER_AUTHORIZED_APPS_REQUEST_FAILED: function handleUserAuthorizedAppsRequestFailed(request) {
@@ -247,7 +273,7 @@ obj = {
       const _Map = Map;
       const _Object3 = Object;
       const entries = Object.entries(isFullFetch.tokens);
-      const map = new Map(entries.filter(arg1(dependencyMap[9]).isObjectEntryNotNullish));
+      const map = new Map(entries.filter(require(1327) /* isDiscordFrontendDevelopment */.isObjectEntryNotNullish));
       recomputeFromAppTokens();
     } else {
       const _Object = Object;
@@ -293,8 +319,8 @@ obj = {
     closure_17 = closure_17 + 1;
   }
 };
-tmp4 = new tmp4(importDefault(dependencyMap[11]), obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/oauth2/AuthorizedAppsStore.tsx");
+tmp4 = new tmp4(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/oauth2/AuthorizedAppsStore.tsx");
 
 export default tmp4;
 export const FetchState = obj;

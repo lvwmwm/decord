@@ -1,21 +1,25 @@
-// Module ID: 8625
-// Function ID: 68346
+// Module ID: 8632
+// Function ID: 68386
 // Name: GameProfileRankPill
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 8633, 4126, 1212, 2]
 // Exports: default
 
-// Module 8625 (GameProfileRankPill)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: {} };
-obj = { flexDirection: "row", backgroundColor: importDefault(dependencyMap[4]).colors.WHITE, borderRadius: importDefault(dependencyMap[4]).radii.round, paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, alignItems: "center", gap: importDefault(dependencyMap[4]).space.PX_4 };
-const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
-obj.gameRankPill = obj;
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/game_profile/native/components/GameProfileRankPill.tsx");
+// Module 8632 (GameProfileRankPill)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flex: 1, flexDirection: "row", alignItems: "flex-end" } };
+_createForOfIteratorHelperLoose = { flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
+_createForOfIteratorHelperLoose.gameRankPill = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/game_profile/native/components/GameProfileRankPill.tsx");
 
 export default function GameProfileRankPill(arg0) {
   let compact;
@@ -24,15 +28,15 @@ export default function GameProfileRankPill(arg0) {
   if (compact === undefined) {
     compact = false;
   }
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   obj = { style: tmp.gameRankPill };
-  obj = { size: "xxs", color: importDefault(dependencyMap[4]).colors.BLACK };
-  const items = [callback(arg1(dependencyMap[5]).TrophyIcon, obj), ];
-  const obj1 = { cachedAt: -8364227942806830000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, edpbxy: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011321089135097987 };
-  const intl = arg1(dependencyMap[7]).intl;
+  obj = { size: "xxs", color: importDefault(689).colors.BLACK };
+  const items = [callback(require(8633) /* TrophyIcon */.TrophyIcon, obj), ];
+  const obj1 = { variant: "text-xs/bold", color: "text-overlay-dark" };
+  const intl = require(1212) /* getSystemLocale */.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = arg1(dependencyMap[7]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if (compact) {
     const obj2 = { rank };
     let str = formatToPlainString(t.UA6RoE, obj2);
@@ -41,7 +45,7 @@ export default function GameProfileRankPill(arg0) {
     str = formatToPlainString(t.ehZXlZ, obj3);
   }
   obj1.children = str.toUpperCase();
-  items[1] = callback(arg1(dependencyMap[6]).Text, obj1);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items;
   obj.children = closure_5(View, obj);
   return callback(View, obj);

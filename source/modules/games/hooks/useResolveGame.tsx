@@ -1,28 +1,26 @@
-// Module ID: 8586
-// Function ID: 68170
+// Module ID: 8593
+// Function ID: 68210
 // Name: useResolveGame
-// Dependencies: [31, 8597, 8598, 8600]
+// Dependencies: [31, 5470, 6865, 2]
 // Exports: default
 
-// Module 8586 (useResolveGame)
-import module_31 from "module_31";
-import useXboxGamePassStoreUrl from "useXboxGamePassStoreUrl";
+// Module 8593 (useResolveGame)
+import result from "result";
 
-const result = useXboxGamePassStoreUrl.fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
+const require = arg1;
+const result = require("importDefaultResult1").fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
 
 export default function useResolveGame(arg0) {
   let applicationId;
   let gameId;
   ({ applicationId, gameId } = arg0);
-  const arg1 = gameId;
-  let dependencyMap;
-  let obj = arg1(dependencyMap[1]);
+  let getOrFetchApplication;
+  let obj = gameId(getOrFetchApplication[1]);
   let tmp;
   if (null == gameId) {
     tmp = applicationId;
   }
-  const getOrFetchApplication = obj.useGetOrFetchApplication(tmp);
-  dependencyMap = getOrFetchApplication;
+  getOrFetchApplication = obj.useGetOrFetchApplication(tmp);
   const items = [gameId, getOrFetchApplication];
   const memo = React.useMemo(() => {
     if (null != gameId) {
@@ -35,7 +33,7 @@ export default function useResolveGame(arg0) {
     }
     return canonicalGameId;
   }, items);
-  const game = arg1(dependencyMap[2]).useGame(memo);
+  const game = gameId(getOrFetchApplication[2]).useGame(memo);
   const data = game.data;
   obj = { gameId: memo };
   let tmp5 = null;

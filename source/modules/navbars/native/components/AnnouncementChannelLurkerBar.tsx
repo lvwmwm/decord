@@ -1,46 +1,50 @@
-// Module ID: 10359
-// Function ID: 79954
+// Module ID: 10369
+// Function ID: 80004
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 4543, 10370, 2]
 
-// Module 10359 (AnnouncementChannelLurkerBar)
+// Module 10369 (AnnouncementChannelLurkerBar)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 class AnnouncementChannelLurkerBar {
   constructor(arg0) {
-    arg1 = global.channel;
-    tmp = closure_5();
+    channel = global.channel;
+    tmp = c5();
     obj = { style: tmp.wrapper };
-    obj = { style: tmp.text };
-    intl = arg1(dependencyMap[6]).intl;
-    obj.children = intl.string(arg1(dependencyMap[6]).t.Hl0Mqh);
+    obj = { style: null, variant: "text-sm/medium", color: "mobile-text-heading-primary" };
+    obj.style = tmp.text;
+    intl = require("getSystemLocale").intl;
+    obj.children = intl.string(require("getSystemLocale").t.Hl0Mqh);
     items = [, ];
-    items[0] = jsx(arg1(dependencyMap[5]).Text, obj);
-    obj1 = {
-      onPress() {
-            const guildId = channel.getGuildId();
-            if (null != guildId) {
-              const result = channel(closure_1[8]).showChannelFollowingActionSheet(channel.id, guildId);
-              const obj = channel(closure_1[8]);
-            }
-          }
+    items[0] = jsx(require("Text").Text, obj);
+    obj1 = { onPress: null, text: null, size: "sm", variant: "secondary", grow: true };
+    obj1.onPress = function onPress() {
+      const guildId = channel.getGuildId();
+      if (null != guildId) {
+        const result = channel(outer1_1[8]).showChannelFollowingActionSheet(channel.id, guildId);
+        const obj = channel(outer1_1[8]);
+      }
     };
-    intl2 = arg1(dependencyMap[6]).intl;
-    obj1.text = intl2.string(arg1(dependencyMap[6]).t.4z5PU1);
-    items[1] = jsx(arg1(dependencyMap[7]).Button, obj1);
+    intl2 = require("getSystemLocale").intl;
+    obj1.text = intl2.string(require("getSystemLocale").t["4z5PU1"]);
+    items[1] = jsx(require("Button").Button, obj1);
     obj.children = items;
     return jsxs(View, obj);
   }
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
-obj.wrapper = obj;
-obj.text = {};
-let closure_5 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/navbars/native/components/AnnouncementChannelLurkerBar.tsx");
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 };
+_createForOfIteratorHelperLoose.wrapper = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.text = { textAlign: "center", marginBottom: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("jsxProd").fileFinishedImporting("modules/navbars/native/components/AnnouncementChannelLurkerBar.tsx");
 
 export default AnnouncementChannelLurkerBar;
 export { AnnouncementChannelLurkerBar };

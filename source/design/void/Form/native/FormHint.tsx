@@ -1,21 +1,23 @@
-// Module ID: 7497
-// Function ID: 60130
+// Module ID: 7502
+// Function ID: 60164
 // Name: FormHint
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5164, 4126, 1273, 2]
 // Exports: default
 
-// Module 7497 (FormHint)
-let closure_2 = importAll(dependencyMap[0]);
-const Platform = arg1(dependencyMap[1]).Platform;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { padding: "surrogates", flex: null, color: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
-obj.formHintText = obj;
-obj.redesignHorizontalPadding = { paddingHorizontal: 12 };
-obj.horizonatalPadding = { paddingHorizontal: 16 };
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/void/Form/native/FormHint.tsx");
+// Module 7502 (FormHint)
+import result from "result";
+import { Platform } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { fontSize: 14, marginBottom: 0, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose.formHintText = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.redesignHorizontalPadding = { paddingHorizontal: 12 };
+_createForOfIteratorHelperLoose.horizonatalPadding = { paddingHorizontal: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormHint.tsx");
 
 export default function FormHint(inset) {
   let children;
@@ -25,9 +27,9 @@ export default function FormHint(inset) {
     flag = false;
   }
   ({ style, children } = inset);
-  const tmp = callback();
-  if (React.useContext(arg1(dependencyMap[5]).RedesignCompatContext)) {
-    let obj = { cachedAt: "y", edpbxy: "isArray" };
+  const tmp = _createForOfIteratorHelperLoose();
+  if (React.useContext(require(5164) /* context */.RedesignCompatContext)) {
+    let obj = { variant: "text-sm/medium", color: "text-muted" };
     let redesignHorizontalPadding = !flag;
     if (redesignHorizontalPadding) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;
@@ -35,7 +37,7 @@ export default function FormHint(inset) {
     const items = [redesignHorizontalPadding, style];
     obj.style = items;
     obj.children = children;
-    let tmp2Result = tmp2(tmp3(tmp4[6]).Text, obj);
+    let tmp2Result = tmp2(tmp3(4126).Text, obj);
   } else {
     obj = {};
     const items1 = [tmp.formHintText, , ];
@@ -47,7 +49,7 @@ export default function FormHint(inset) {
     items1[2] = style;
     obj.style = items1;
     obj.children = children;
-    tmp2Result = tmp2(tmp3(tmp4[7]).LegacyText, obj);
+    tmp2Result = tmp2(tmp3(1273).LegacyText, obj);
   }
   return tmp2Result;
 };

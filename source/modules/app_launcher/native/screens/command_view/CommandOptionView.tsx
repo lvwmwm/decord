@@ -1,31 +1,40 @@
-// Module ID: 11273
-// Function ID: 87740
+// Module ID: 11283
+// Function ID: 87790
 // Name: set
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 33, 1881, 4130, 689, 566, 3991, 11284, 11285, 4126, 11286, 1273, 9631, 2]
 // Exports: default
 
-// Module 11273 (set)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-const items = [arg1(dependencyMap[4]).ApplicationCommandOptionType.STRING, arg1(dependencyMap[4]).ApplicationCommandOptionType.INTEGER, arg1(dependencyMap[4]).ApplicationCommandOptionType.ATTACHMENT, arg1(dependencyMap[4]).ApplicationCommandOptionType.BOOLEAN, arg1(dependencyMap[4]).ApplicationCommandOptionType.MENTIONABLE, arg1(dependencyMap[4]).ApplicationCommandOptionType.USER, arg1(dependencyMap[4]).ApplicationCommandOptionType.ROLE, arg1(dependencyMap[4]).ApplicationCommandOptionType.CHANNEL, arg1(dependencyMap[4]).ApplicationCommandOptionType.NUMBER];
-const set = new Set(items);
-let obj = arg1(dependencyMap[5]);
-obj = { optionDescription: { marginTop: 4 }, optionErrorContainer: { 9223372036854775807: "safety_user_sentiment_notice_dismissed_at", 9223372036854775807: "message", 0: null } };
-obj = { tintColor: importDefault(dependencyMap[6]).colors.ICON_FEEDBACK_CRITICAL };
-obj.optionErrorIcon = obj;
-obj.labelText = { marginBottom: 8 };
-let closure_8 = obj.createStyles(obj);
-const items1 = [arg1(dependencyMap[4]).ApplicationCommandOptionType.STRING, arg1(dependencyMap[4]).ApplicationCommandOptionType.INTEGER, arg1(dependencyMap[4]).ApplicationCommandOptionType.NUMBER];
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/app_launcher/native/screens/command_view/CommandOptionView.tsx");
+// Module 11283 (set)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "_isNativeReflectConstruct";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let items = [require("PermissionOverwriteType").ApplicationCommandOptionType.STRING, require("PermissionOverwriteType").ApplicationCommandOptionType.INTEGER, require("PermissionOverwriteType").ApplicationCommandOptionType.ATTACHMENT, require("PermissionOverwriteType").ApplicationCommandOptionType.BOOLEAN, require("PermissionOverwriteType").ApplicationCommandOptionType.MENTIONABLE, require("PermissionOverwriteType").ApplicationCommandOptionType.USER, require("PermissionOverwriteType").ApplicationCommandOptionType.ROLE, require("PermissionOverwriteType").ApplicationCommandOptionType.CHANNEL, require("PermissionOverwriteType").ApplicationCommandOptionType.NUMBER];
+let set = new Set(items);
+_createForOfIteratorHelperLoose = { optionDescription: { marginTop: 4 }, optionErrorContainer: { flexDirection: "row", alignItems: "center", marginTop: 4 } };
+_createForOfIteratorHelperLoose = { marginRight: 4, tintColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_CRITICAL, alignItems: "center" };
+_createForOfIteratorHelperLoose.optionErrorIcon = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.labelText = { marginBottom: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let items1 = [require("PermissionOverwriteType").ApplicationCommandOptionType.STRING, require("PermissionOverwriteType").ApplicationCommandOptionType.INTEGER, require("PermissionOverwriteType").ApplicationCommandOptionType.NUMBER];
+const result = set.fileFinishedImporting("modules/app_launcher/native/screens/command_view/CommandOptionView.tsx");
 
 export default function CommandOptionView(option) {
+  let View;
   let autoFocusType;
   let channel;
+  let _isNativeReflectConstruct;
   let command;
+  let dependencyMap;
   let editedOptions;
+  let importDefault;
   let isPreSelectedOption;
   let onDismiss;
   let onEndEditing;
@@ -35,24 +44,23 @@ export default function CommandOptionView(option) {
   let optionValues;
   let style;
   option = option.option;
-  const arg1 = option;
-  ({ editedOptions, onOptionViewLayout: closure_1, onPressOption: closure_2, onPressAttachmentOption: closure_3, optionValidationResults, setFocusedOption: closure_4 } = option);
+  ({ editedOptions, onOptionViewLayout: importDefault, onPressOption: dependencyMap, onPressAttachmentOption: View, optionValidationResults, setFocusedOption: _isNativeReflectConstruct } = option);
   ({ style, autoFocusType, onDismiss, onStartEditing, onEndEditing, onOptionValueChange, channel, command, optionValues, isPreSelectedOption } = option);
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => lib.useReducedMotion);
-  const ReduceMotion = arg1(dependencyMap[8]).ReduceMotion;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = option(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
+  const ReduceMotion = option(3991).ReduceMotion;
   const tmp3 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  let obj1 = arg1(dependencyMap[9]);
+  let obj1 = option(11284);
   const optionEnteringAnimation = obj1.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   if (set.has(option.type)) {
     if (option.required || isPreSelectedOption) {
       fn = (arg0) => arg0();
     }
-    const FadeOut = arg1(dependencyMap[8]).FadeOut;
-    const FadeInUp = arg1(dependencyMap[8]).FadeInUp;
+    const FadeOut = option(3991).FadeOut;
+    const FadeInUp = option(3991).FadeInUp;
     obj = {};
     obj = { translateY: -10 };
     const items1 = [obj];
@@ -73,8 +81,8 @@ export default function CommandOptionView(option) {
     const obj3 = {
       collapsable: false,
       entering: optionEnteringAnimation.EnteringAnimation,
-      exiting: arg1(dependencyMap[9]).ExitingAnimation,
-      layout: arg1(dependencyMap[9]).LayoutAnimation,
+      exiting: option(11284).ExitingAnimation,
+      layout: option(11284).LayoutAnimation,
       onLayout(arg0) {
           callback(arg0, option);
         }
@@ -82,8 +90,8 @@ export default function CommandOptionView(option) {
     const obj4 = { collapsable: false, style };
     let tmp23 = hasItem1;
     if (hasItem1) {
-      const obj5 = { "Null": "THROUGHLINE_URL", "Null": "isArray", alignItems: "isArray", style: tmp.labelText, children: option.displayName };
-      tmp23 = callback(arg1(dependencyMap[11]).Text, obj5);
+      const obj5 = { style: tmp.labelText, variant: "text-sm/semibold", color: "text-subtle", children: option.displayName };
+      tmp23 = callback(option(4126).Text, obj5);
     }
     const items2 = [tmp23, , , ];
     const obj6 = {
@@ -93,7 +101,7 @@ export default function CommandOptionView(option) {
       onDismiss,
       onOptionValueChange,
       onFocus() {
-          return lib(option);
+          return callback4(option);
         },
       onPress() {
           return callback2(option);
@@ -107,24 +115,24 @@ export default function CommandOptionView(option) {
       optionValues,
       hasError: hasItem
     };
-    items2[1] = callback(importDefault(dependencyMap[12]), obj6);
-    const obj7 = { style: tmp.optionDescription, children: option.displayDescription };
-    items2[2] = callback(arg1(dependencyMap[11]).Text, obj7);
+    items2[1] = callback(importDefault(11286), obj6);
+    const obj7 = { style: tmp.optionDescription, variant: "text-xs/medium", color: "text-muted", children: option.displayDescription };
+    items2[2] = callback(option(4126).Text, obj7);
     if (hasItem) {
       const obj8 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer };
-      const obj9 = { style: tmp.optionErrorIcon, source: importDefault(dependencyMap[14]), size: arg1(dependencyMap[13]).IconSizes.REFRESH_SMALL_16 };
-      const items3 = [callback(arg1(dependencyMap[13]).Icon, obj9), ];
-      const obj10 = { children: optionValidationResults[option.name].error };
-      items3[1] = callback(arg1(dependencyMap[11]).Text, obj10);
+      const obj9 = { style: tmp.optionErrorIcon, source: importDefault(9631), size: option(1273).IconSizes.REFRESH_SMALL_16 };
+      const items3 = [callback(option(1273).Icon, obj9), ];
+      const obj10 = { variant: "text-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
+      items3[1] = callback(option(4126).Text, obj10);
       obj8.children = items3;
-      hasItem = callback2(importDefault(dependencyMap[8]).View, obj8);
+      hasItem = callback2(importDefault(3991).View, obj8);
     }
     items2[3] = hasItem;
     obj4.children = items2;
     obj3.children = callback2(View, obj4);
-    obj2.children = callback(importDefault(dependencyMap[8]).View, obj3);
-    obj1.children = callback(arg1(dependencyMap[10]).AwaitAnimationContext, obj2);
-    return callback(arg1(dependencyMap[8]).LayoutAnimationConfig, obj1);
+    obj2.children = callback(importDefault(3991).View, obj3);
+    obj1.children = callback(option(11285).AwaitAnimationContext, obj2);
+    return callback(option(3991).LayoutAnimationConfig, obj1);
   } else {
     return null;
   }

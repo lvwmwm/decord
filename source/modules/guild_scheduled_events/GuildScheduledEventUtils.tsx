@@ -1,23 +1,26 @@
-// Module ID: 8451
-// Function ID: 67463
+// Module ID: 8457
+// Function ID: 67500
 // Name: getNextShownUpcomingEventNoticeType
-// Dependencies: [0, 4294967295, 0, 0]
+// Dependencies: [1354, 3712, 21, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 8451 (getNextShownUpcomingEventNoticeType)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 8457 (getNextShownUpcomingEventNoticeType)
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
 
-({ UpcomingGuildEventNoticeTypes: closure_2, NEW_EVENT_WINDOW_MILLISECONDS: closure_3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: closure_4, ACKED_RECENTLY_WINDOW_DAYS: closure_5 } = __exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
+let closure_2;
+let closure_3;
+let closure_4;
+let closure_5;
+({ UpcomingGuildEventNoticeTypes: closure_2, NEW_EVENT_WINDOW_MILLISECONDS: closure_3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: closure_4, ACKED_RECENTLY_WINDOW_DAYS: closure_5 } = GUILD_EVENT_MAX_NAME_LENGTH);
+const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
 
 export const getNextShownUpcomingEventNoticeType = function getNextShownUpcomingEventNoticeType(guildScheduledEvent, arg1, arg2, arg3) {
-  let obj = importDefault(dependencyMap[1])();
+  let obj = importDefault(3712)();
   const time = new Date(guildScheduledEvent.scheduled_start_time).getTime();
   obj = { start: time - closure_4, end: time };
   if (obj.isBetween(obj.start, obj.end)) {
     if (null != arg1) {
-      const obj5 = importDefault(dependencyMap[1])(arg1);
+      const obj5 = importDefault(3712)(arg1);
       const isBetweenResult = obj5.isBetween(obj.start, obj.end);
       let EVENT_STARTING_SOON;
       if (!isBetweenResult) {
@@ -30,7 +33,7 @@ export const getNextShownUpcomingEventNoticeType = function getNextShownUpcoming
       return constants.EVENT_STARTING_SOON;
     }
   } else {
-    const extractTimestampResult = importDefault(dependencyMap[2]).extractTimestamp(guildScheduledEvent.id);
+    const extractTimestampResult = importDefault(21).extractTimestamp(guildScheduledEvent.id);
     let tmp6 = extractTimestampResult;
     if (null != arg2) {
       tmp6 = arg2;

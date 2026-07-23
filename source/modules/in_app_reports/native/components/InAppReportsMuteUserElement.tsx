@@ -1,35 +1,32 @@
-// Module ID: 12224
-// Function ID: 93828
+// Module ID: 12338
+// Function ID: 95979
 // Name: MuteUserElement
-// Dependencies: []
+// Dependencies: [57, 31, 1348, 653, 662, 33, 566, 4319, 10282, 4324, 7488, 12335, 1212, 10202, 2]
 // Exports: default
 
-// Module 12224 (MuteUserElement)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const MuteUntilSeconds = arg1(dependencyMap[4]).MuteUntilSeconds;
-const jsx = arg1(dependencyMap[5]).jsx;
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMuteUserElement.tsx");
+// Module 12338 (MuteUserElement)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { MuteUntilSeconds } from "MAX_FAVORITES";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMuteUserElement.tsx");
 
 export default function MuteUserElement(user) {
   user = user.user;
-  const arg1 = user;
   const channelId = user.channelId;
-  const importDefault = channelId;
   const reportId = user.reportId;
-  const dependencyMap = reportId;
   let dMFromUserId;
   dMFromUserId = dMFromUserId.getDMFromUserId(user.id);
-  const callback = dMFromUserId;
-  let obj = arg1(dependencyMap[6]);
+  let obj = user(reportId[6]);
   const items = [dMFromUserId];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId), items1);
-  const React = stateFromStores;
   const items2 = [stateFromStores, user];
-  const memo = React.useMemo(() => {
+  const memo = stateFromStores.useMemo(() => {
     let guild_id;
     if (null != stateFromStores) {
       guild_id = stateFromStores.guild_id;
@@ -41,30 +38,30 @@ export default function MuteUserElement(user) {
     return channelId(reportId[7]).getName(guild_id, id, user);
   }, items2);
   const items3 = [dMFromUserId];
-  const muted = React.useMemo(() => user(reportId[8]).getMuteSettings(dMFromUserId), items3).muted;
+  const muted = stateFromStores.useMemo(() => user(reportId[8]).getMuteSettings(dMFromUserId), items3).muted;
   let tmp5 = null != muted;
   if (tmp5) {
     tmp5 = muted;
   }
-  const tmp6 = callback(React.useState(tmp5), 2);
+  const tmp6 = dMFromUserId(stateFromStores.useState(tmp5), 2);
   dMFromUserId = tmp6[1];
   const items4 = [dMFromUserId, channelId, user, reportId];
   let tmp8 = null;
   if (null != user) {
     obj = {};
-    const intl = arg1(dependencyMap[12]).intl;
+    const intl = user(reportId[12]).intl;
     obj = { username: memo };
-    obj.title = intl.formatToPlainString(arg1(dependencyMap[12]).t.TRp5wR, obj);
-    const intl2 = arg1(dependencyMap[12]).intl;
+    obj.title = intl.formatToPlainString(user(reportId[12]).t.TRp5wR, obj);
+    const intl2 = user(reportId[12]).intl;
     const obj1 = { username: memo };
-    obj.disabledTitle = intl2.formatToPlainString(arg1(dependencyMap[12]).t.raALhx, obj1);
-    const intl3 = arg1(dependencyMap[12]).intl;
-    obj.description = intl3.string(arg1(dependencyMap[12]).t.yM/+AJ);
+    obj.disabledTitle = intl2.formatToPlainString(user(reportId[12]).t.raALhx, obj1);
+    const intl3 = user(reportId[12]).intl;
+    obj.description = intl3.string(user(reportId[12]).t["yM/+AJ"]);
     obj.disabled = tmp6[0];
     obj.onPress = tmp7;
-    obj.icon = jsx(arg1(dependencyMap[13]).BellSlashIcon, {});
-    tmp8 = jsx(importDefault(dependencyMap[11]), obj);
-    const tmp12 = importDefault(dependencyMap[11]);
+    obj.icon = jsx(user(reportId[13]).BellSlashIcon, {});
+    tmp8 = jsx(channelId(reportId[11]), { username: memo });
+    const tmp12 = channelId(reportId[11]);
   }
   return tmp8;
 };

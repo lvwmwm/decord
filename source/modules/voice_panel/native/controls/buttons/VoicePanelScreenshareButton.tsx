@@ -1,56 +1,57 @@
-// Module ID: 15760
-// Function ID: 120488
+// Module ID: 15877
+// Function ID: 122661
 // Name: MobilePhoneShareIcon
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 653, 33, 1553, 11565, 15878, 4130, 689, 10014, 15861, 566, 44, 10689, 675, 1324, 15862, 1212, 5517, 2]
 // Exports: default
 
-// Module 15760 (MobilePhoneShareIcon)
-let closure_3 = importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-let closure_5 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-if (obj.isMetaQuest()) {
-  let MobilePhoneShareIcon = arg1(dependencyMap[6]).ScreenArrowIcon;
+// Module 15877 (MobilePhoneShareIcon)
+import result from "result";
+import { Image } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import isMetaQuest from "isMetaQuest";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+if (isMetaQuest.isMetaQuest()) {
+  let MobilePhoneShareIcon = require("ScreenArrowIcon").ScreenArrowIcon;
 } else {
-  MobilePhoneShareIcon = arg1(dependencyMap[7]).MobilePhoneShareIcon;
+  MobilePhoneShareIcon = require("MobilePhoneShareIcon").MobilePhoneShareIcon;
 }
-const tmp2 = arg1(dependencyMap[4]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[9]).radii.round };
-obj.circle = obj;
-obj.iconContainer = { 9223372036854775807: true, 9223372036854775807: "/assets/.cache/intl/ZGVzaWdu", -9223372036854775808: null, 9223372036854775807: "89c1f821400ffcc75deeeab8c6315a88", -9223372036854775808: "pt-BR.messages.89c1f821400ffcc75deeeab8c6315a88.compiled.messages" };
-obj.icon = {};
-let closure_10 = arg1(dependencyMap[8]).createStyles(obj);
-const obj2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelScreenshareButton.tsx");
+isMetaQuest = {};
+isMetaQuest = { width: "100%", height: "100%", borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+isMetaQuest.circle = isMetaQuest;
+isMetaQuest.iconContainer = { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" };
+isMetaQuest.icon = { width: 24, height: 24 };
+isMetaQuest = _createForOfIteratorHelperLoose.createStyles(isMetaQuest);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelScreenshareButton.tsx");
 
 export default function ScreenshareButton(arg0) {
   let props;
   let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
-  const arg1 = React.useContext(importDefault(dependencyMap[10])).channelId;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[11]);
+  const channelId = onPress.useContext(isActive(isFeatureEnabled[10])).channelId;
+  const tmp = isMetaQuest();
+  let obj = channelId(isFeatureEnabled[11]);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  let obj1 = arg1(dependencyMap[12]);
-  const items = [closure_5];
-  const stateFromStores = obj1.useStateFromStores(items, () => channel.getChannel(channelId));
-  importDefault(dependencyMap[13])(null != stateFromStores, "null channel in VoicePanelScreenshareButton");
-  const tmp5 = importDefault(dependencyMap[14])(stateFromStores);
-  const isActive = tmp5.isActive;
-  const importDefault = isActive;
-  const isFeatureEnabled = tmp5.isFeatureEnabled;
-  const dependencyMap = isFeatureEnabled;
-  const onPress = tmp5.onPress;
-  const React = onPress;
+  let obj1 = channelId(isFeatureEnabled[12]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getChannel(channelId));
+  isActive(isFeatureEnabled[13])(null != stateFromStores, "null channel in VoicePanelScreenshareButton");
+  const tmp5 = isActive(isFeatureEnabled[14])(stateFromStores);
+  isActive = tmp5.isActive;
+  isFeatureEnabled = tmp5.isFeatureEnabled;
+  onPress = tmp5.onPress;
   const items1 = [isActive, isFeatureEnabled, onPress];
-  const callback = React.useCallback(() => {
+  const callback = onPress.useCallback(() => {
     if (isFeatureEnabled) {
       let obj = isActive(isFeatureEnabled[15]);
       obj = { source: "connected button", was_active: isActive };
-      obj.track(constants.VOICE_PANEL_SCREENSHARE_BUTTON_TAPPED, obj);
+      obj.track(outer1_6.VOICE_PANEL_SCREENSHARE_BUTTON_TAPPED, obj);
       onPress();
     }
   }, items1);
@@ -68,11 +69,11 @@ export default function ScreenshareButton(arg0) {
     color = voicePanelButtonStyles.iconFillSelected.color;
   }
   obj = { onPress: callback, disabled: tmp7, props };
-  const tmp8 = importDefault(dependencyMap[16])("ScreenshareButton");
+  const tmp8 = isActive(isFeatureEnabled[16])("ScreenshareButton");
   const tmp9 = closure_8;
-  const intl = arg1(dependencyMap[18]).intl;
+  const intl = channelId(isFeatureEnabled[18]).intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[18]).t;
+  const t = channelId(isFeatureEnabled[18]).t;
   if (isActive) {
     let stringResult = string(t.CpkXwZ);
   } else {
@@ -87,9 +88,9 @@ export default function ScreenshareButton(arg0) {
   const items2 = [tmp.circle, ];
   obj = { backgroundColor };
   items2[1] = obj;
-  const items3 = [callback(importDefault(dependencyMap[19]), { style: items2 }), ];
+  const items3 = [callback(isActive(isFeatureEnabled[19]), { style: items2 }), ];
   obj1 = { style: tmp.iconContainer };
-  const tmp10 = importDefault(dependencyMap[17]);
+  const tmp10 = isActive(isFeatureEnabled[17]);
   const tmp13 = callback;
   if (tmp8) {
     const obj2 = { color };
@@ -103,7 +104,7 @@ export default function ScreenshareButton(arg0) {
     tmp15Result = tmp15(Image, obj3);
   }
   obj1.children = tmp15Result;
-  items3[1] = tmp13(importDefault(dependencyMap[19]), obj1);
+  items3[1] = tmp13(isActive(isFeatureEnabled[19]), obj1);
   obj.children = items3;
   return tmp9(tmp10, obj);
 };

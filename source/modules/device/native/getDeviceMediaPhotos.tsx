@@ -1,15 +1,15 @@
-// Module ID: 9657
-// Function ID: 75246
+// Module ID: 9664
+// Function ID: 75287
 // Name: getDeviceMediaPhotos
-// Dependencies: []
+// Dependencies: [27, 3, 1184, 477, 9665, 2]
 // Exports: default
 
-// Module 9657 (getDeviceMediaPhotos)
-const NativeModules = require(dependencyMap[0]).NativeModules;
-let importDefaultResult = importDefault(dependencyMap[1]);
+// Module 9664 (getDeviceMediaPhotos)
+import { NativeModules } from "get ActivityIndicator";
+import importDefaultResult from "set";
+
 importDefaultResult = new importDefaultResult("DeviceMedia.tsx");
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/device/native/getDeviceMediaPhotos.tsx");
+const result = require("isNonEmptyString").fileFinishedImporting("modules/device/native/getDeviceMediaPhotos.tsx");
 
 export default function getDeviceMediaPhotos(arg0) {
   let batchSize;
@@ -23,16 +23,16 @@ export default function getDeviceMediaPhotos(arg0) {
   ({ endCursor, lastAssetIndex, lastNodeImageUri } = arg0);
   if (onError === undefined) {
     onError = function u(arg0) {
-      closure_4.log("CameraRollUtils -- Failed to get photos with error " + arg0);
-      callback(closure_2[2]).captureException(arg0, { tags: { source: "DEVICE_MEDIA" } });
+      outer1_4.log("CameraRollUtils -- Failed to get photos with error " + arg0);
+      outer1_1(outer1_2[2]).captureException(arg0, { tags: { source: "DEVICE_MEDIA" } });
     };
   }
-  let obj = require(dependencyMap[3]);
+  let obj = require(477) /* set */;
   if (obj.isIOS()) {
-    if (null != importDefault(dependencyMap[4])) {
-      obj = { <string:3981552443>: null, <string:1710973345>: null, <string:2976115943>: null, first: batchSize, after: endCursor, extensions };
-      const photos = importDefault(dependencyMap[4]).getPhotos(obj);
-      const obj3 = importDefault(dependencyMap[4]);
+    if (null != importDefault(9665)) {
+      obj = { first: batchSize, groupTypes: "Recents", assetType: "All", after: endCursor, extensions };
+      const photos = importDefault(9665).getPhotos(obj);
+      const obj3 = importDefault(9665);
       photos.then(onFetched).catch(onError);
       const nextPromise = photos.then(onFetched);
     }

@@ -1,53 +1,60 @@
-// Module ID: 3820
-// Function ID: 31742
+// Module ID: 3822
+// Function ID: 31747
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 27, 3823, 653, 3, 3824, 3826, 3827, 3828, 3829, 3830, 1212, 4096, 477, 4098, 1445, 4111, 12857, 2]
 // Exports: default
 
-// Module 3820 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 3822 (_createForOfIteratorHelperLoose)
+import module_3824 from "module_3824";
+import { Linking } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { WebBrowserType } from "ME";
+import importDefaultResult from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,10 +99,11 @@ function sanitizeURLPart(str) {
   return replaced;
 }
 async function _handleURL(arg0, arg1, arg2) {
-  const fn = function*(arg0, arg1) {
+  let iter = (function*(arg0, arg1) {
     let obj = arg2;
     let tmp = arg0;
-    let formatResult = arg0;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     if (obj === undefined) {
       obj = {};
     }
@@ -108,61 +116,61 @@ async function _handleURL(arg0, arg1, arg2) {
       flag2 = false;
     }
     function openInBrowser() {
-      if (null != obj.sanitizeUrl(formatResult)) {
-        let SAFARI = constants.SAFARI;
-        if (formatResult.startsWith("https:")) {
-          const browserManagerSelectedBrowser = formatResult(flag2[12]).getBrowserManagerSelectedBrowser();
+      if (null != obj.sanitizeUrl(closure_0)) {
+        let SAFARI = outer3_6.SAFARI;
+        if (closure_0.startsWith("https:")) {
+          const browserManagerSelectedBrowser = outer3_0(outer3_2[12]).getBrowserManagerSelectedBrowser();
           let tmp11 = browserManagerSelectedBrowser;
-          if (null != arg1) {
-            tmp11 = arg1;
+          if (null != closure_1) {
+            tmp11 = closure_1;
           }
           let tmp12 = flag2;
           if (flag2) {
-            tmp12 = tmp11 === constants.IN_APP;
+            tmp12 = tmp11 === outer3_6.IN_APP;
           }
           SAFARI = tmp11;
           if (tmp12) {
-            if (browserManagerSelectedBrowser !== constants.IN_APP) {
+            if (browserManagerSelectedBrowser !== outer3_6.IN_APP) {
               SAFARI = browserManagerSelectedBrowser;
             } else {
-              formatResult(flag2[13]).isIOS() ? constants.SAFARI : constants.CHROME;
-              const obj4 = formatResult(flag2[13]);
+              outer3_0(outer3_2[13]).isIOS() ? outer3_6.SAFARI : outer3_6.CHROME;
+              const obj4 = outer3_0(outer3_2[13]);
             }
           }
-          const obj3 = formatResult(flag2[12]);
+          const obj3 = outer3_0(outer3_2[12]);
         }
-        if (constants.IN_APP === SAFARI) {
-          const result = formatResult(flag2[12]).browserManagerOpenUrl(formatResult, constants.IN_APP);
+        if (outer3_6.IN_APP === SAFARI) {
+          const result = outer3_0(outer3_2[12]).browserManagerOpenUrl(closure_0, outer3_6.IN_APP);
           result.catch(() => {
-            const intl = callback(closure_2[11]).intl;
-            callback(closure_2[10]).presentFailedToast("" + intl.string(callback(closure_2[11]).t.HryVrx) + " " + callback);
+            const intl = outer4_0(outer4_2[11]).intl;
+            outer4_0(outer4_2[10]).presentFailedToast("" + intl.string(outer4_0(outer4_2[11]).t.HryVrx) + " " + outer1_0);
           });
-          const obj7 = formatResult(flag2[12]);
-          let isIOSResult = formatResult(flag2[13]).isIOS();
+          const obj7 = outer3_0(outer3_2[12]);
+          let isIOSResult = outer3_0(outer3_2[13]).isIOS();
           if (isIOSResult) {
-            isIOSResult = open.isOpen();
+            isIOSResult = outer3_5.isOpen();
           }
           if (isIOSResult) {
-            arg1(flag2[14]).hideAllActionSheets();
-            const obj9 = arg1(flag2[14]);
+            outer3_1(outer3_2[14]).hideAllActionSheets();
+            const obj9 = outer3_1(outer3_2[14]);
           }
-          const obj8 = formatResult(flag2[13]);
-        } else if (constants.CHROME === SAFARI) {
-          const result1 = formatResult(flag2[12]).browserManagerOpenUrl(formatResult, constants.CHROME);
+          const obj8 = outer3_0(outer3_2[13]);
+        } else if (outer3_6.CHROME === SAFARI) {
+          const result1 = outer3_0(outer3_2[12]).browserManagerOpenUrl(closure_0, outer3_6.CHROME);
           result1.catch(() => {
-            const intl = callback(closure_2[11]).intl;
-            callback(closure_2[10]).presentFailedToast("" + intl.string(callback(closure_2[11]).t.HryVrx) + " " + callback);
+            const intl = outer4_0(outer4_2[11]).intl;
+            outer4_0(outer4_2[10]).presentFailedToast("" + intl.string(outer4_0(outer4_2[11]).t.HryVrx) + " " + outer1_0);
           });
-          const obj6 = formatResult(flag2[12]);
+          const obj6 = outer3_0(outer3_2[12]);
         } else {
-          const SAFARI2 = constants.SAFARI;
-          const result2 = formatResult(flag2[12]).browserManagerOpenUrl(formatResult, constants.SAFARI);
-          const obj5 = formatResult(flag2[12]);
+          const SAFARI2 = outer3_6.SAFARI;
+          const result2 = outer3_0(outer3_2[12]).browserManagerOpenUrl(closure_0, outer3_6.SAFARI);
+          const obj5 = outer3_0(outer3_2[12]);
         }
       } else {
-        const intl = formatResult(flag2[11]).intl;
-        formatResult(flag2[10]).presentFailedToast(intl.string(formatResult(flag2[11]).t.XiqzAp));
-        const obj2 = formatResult(flag2[10]);
+        let intl = outer3_0(outer3_2[11]).intl;
+        outer3_0(outer3_2[10]).presentFailedToast(intl.string(outer3_0(outer3_2[11]).t.XiqzAp));
+        const obj2 = outer3_0(outer3_2[10]);
       }
     }
     yield undefined;
@@ -172,39 +180,42 @@ async function _handleURL(arg0, arg1, arg2) {
       if (!obj2.test(tmp)) {
         const text = `https://${tmp}`;
         tmp = text;
-        formatResult = text;
+        closure_0 = text;
       }
       if (obj3.test(tmp)) {
-        const parsed = arg1(flag2[15]).parse(tmp);
-        parsed.pathname = callback(parsed.pathname);
-        parsed.search = callback(parsed.search);
-        parsed.hash = callback(parsed.hash);
-        const obj4 = arg1(flag2[15]);
-        formatResult = arg1(flag2[15]).format(parsed);
+        const parsed = outer2_1(outer2_2[15]).parse(tmp);
+        parsed.pathname = outer2_10(parsed.pathname);
+        parsed.search = outer2_10(parsed.search);
+        parsed.hash = outer2_10(parsed.hash);
+        let obj4 = outer2_1(outer2_2[15]);
+        const formatResult = outer2_1(outer2_2[15]).format(parsed);
         tmp = formatResult;
-        const obj5 = arg1(flag2[15]);
+        closure_0 = formatResult;
+        let obj5 = outer2_1(outer2_2[15]);
       }
-      obj = { payload: arg1(flag2[16])(tmp).payload, safe: true };
-      if (!arg1(flag2[17])(obj)) {
+      obj = { payload: outer2_1(outer2_2[16])(tmp).payload, safe: true };
+      if (!outer2_1(outer2_2[17])(obj)) {
         if (flag) {
-          if (!yield function tryHandleUniversalLink(arg0) {
-            return new Promise((arg0) => {
-              const result = callback(closure_2[5]).tryOpenUrlAsUniversalLink(arg0);
-              const obj = callback(closure_2[5]);
+          if (!yield (function tryHandleUniversalLink(arg0) {
+            let closure_0 = arg0;
+            return new Promise((closure_0) => {
+              const result = outer4_1(outer4_2[5]).tryOpenUrlAsUniversalLink(closure_0);
+              const obj = outer4_1(outer4_2[5]);
               result.then(() => {
-                closure_7.info("Universal link opened successfully.");
-                arg0(true);
+                outer5_7.info("Universal link opened successfully.");
+                callback(true);
               }).catch(() => {
-                closure_7.info("URL is not a handled universal link.");
-                arg0(false);
+                outer5_7.info("URL is not a handled universal link.");
+                callback(false);
               });
             });
-          }(tmp)) {
-            if (!yield function tryHandleCustomScheme(arg0) {
+          })(tmp)) {
+            if (!yield (function tryHandleCustomScheme(arg0) {
               let iter2;
               let protocol;
               let regex;
-              const tmp = callback(arg0(flag2[6]).LINKING_SCHEMAS_VALUES);
+              let closure_0 = arg0;
+              const tmp = outer3_8(outer3_0(outer3_2[6]).LINKING_SCHEMAS_VALUES);
               let iter = tmp();
               let tmp2 = arg0;
               let arr = arg0;
@@ -234,48 +245,50 @@ async function _handleURL(arg0, arg1, arg2) {
               }
               if ("http" !== first) {
                 if ("https" !== first) {
-                  closure_7.info("tryHandleCustomScheme", arr);
-                  let promise = new Promise((arg0) => {
-                    const obj = callback(closure_2[5]);
-                    const tryOpenSchemeResult = callback(closure_2[5]).tryOpenScheme(arg0);
-                    callback(closure_2[5]).tryOpenScheme(arg0).then(() => {
-                      closure_7.info("Custom scheme opened successfully.");
-                      arg0(true);
+                  outer3_7.info("tryHandleCustomScheme", arr);
+                  let promise = new Promise((closure_0) => {
+                    const obj = outer4_1(outer4_2[5]);
+                    const tryOpenSchemeResult = outer4_1(outer4_2[5]).tryOpenScheme(closure_0);
+                    outer4_1(outer4_2[5]).tryOpenScheme(closure_0).then(() => {
+                      outer5_7.info("Custom scheme opened successfully.");
+                      callback(true);
                     }).catch(() => {
-                      closure_7.info("Custom scheme failed to open.");
-                      arg0(false);
+                      outer5_7.info("Custom scheme failed to open.");
+                      callback(false);
                     });
                   });
                 }
                 return promise;
               }
               promise = new Promise((arg0) => {
-                closure_7.info("URL is not a custom scheme.");
+                outer4_7.info("URL is not a custom scheme.");
                 arg0(false);
               });
-            }(tmp)) {
-              if (!yield function tryHandleWhitelistedURL(arg0) {
+            })(tmp)) {
+              if (!yield (function tryHandleWhitelistedURL(arg0) {
                 let _loopResult;
+                let closure_0 = arg0;
                 function _loop(protocol) {
+                  let closure_0 = protocol;
                   let num = 0;
-                  if (null !== regex.exec(protocol)) {
-                    const obj = {};
-                    const promise = new Promise((closure_12) => {
-                      const canOpenURLResult = closure_4.canOpenURL(closure_12);
-                      closure_4.canOpenURL(closure_12).then(() => { ... }).catch(() => { ... });
+                  if (null !== regex.exec(closure_0)) {
+                    let obj = {};
+                    const promise = new Promise((closure_0) => {
+                      const canOpenURLResult = outer5_4.canOpenURL(closure_0);
+                      outer5_4.canOpenURL(closure_0).then(() => { ... }).catch(() => { ... });
                     });
                     obj.v = promise;
                     num = obj;
                   }
                   return num;
                 }
-                const tmp = callback(arg0(flag2[8]).LINKING_WHITELIST_VALUES);
+                const tmp = outer3_8(outer3_0(outer3_2[8]).LINKING_WHITELIST_VALUES);
                 const iter = tmp();
                 let iter2 = iter;
                 if (!iter.done) {
                   while (true) {
                     let value = iter2.value;
-                    let arg1 = value.regex;
+                    let regex = value.regex;
                     _loopResult = _loop(value.protocol);
                     if (0 !== _loopResult) {
                       if (_loopResult) {
@@ -288,30 +301,25 @@ async function _handleURL(arg0, arg1, arg2) {
                   return _loopResult.v;
                 }
                 return new Promise((arg0) => {
-                  closure_7.info("URL is not whitelisted.");
+                  outer4_7.info("URL is not whitelisted.");
                   arg0(false);
                 });
-              }(tmp)) {
+              })(tmp)) {
                 openInBrowser();
               }
             }
           }
         }
       }
-      const obj2 = /^[a-zA-Z0-9+-.]+:/;
-      const obj3 = /^https?:/i;
+      obj2 = /^[a-zA-Z0-9+-.]+:/;
+      obj3 = /^https?:/i;
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Linking = arg1(dependencyMap[1]).Linking;
-let closure_5 = importDefault(dependencyMap[2]);
-const WebBrowserType = arg1(dependencyMap[3]).WebBrowserType;
-let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("handleURL");
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/links/native/handleURL.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/links/native/handleURL.tsx");
 
 export default function handleURL(arg0, arg1) {
   return _handleURL(...arguments);

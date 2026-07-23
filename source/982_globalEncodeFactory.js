@@ -1,21 +1,23 @@
 // Module ID: 982
-// Function ID: 10625
+// Function ID: 10626
 // Name: globalEncodeFactory
-// Dependencies: []
+// Dependencies: [981, 793, 983]
 
 // Module 982 (globalEncodeFactory)
+const require = arg1;
+const dependencyMap = arg6;
 function globalEncodeFactory(TextEncoder) {
-  const arg1 = TextEncoder;
-  return (arg0) => new arg0().encode(arg0);
+  let closure_0 = TextEncoder;
+  return (arg0) => new closure_0().encode(arg0);
 }
 function encodePolyfill(arg0) {
-  const uint8Array = new Uint8Array(arg1(arg6[2]).utf8ToBytes(arg0));
+  const uint8Array = new Uint8Array(require(983) /* utf8ToBytes */.utf8ToBytes(arg0));
   return uint8Array;
 }
 arg5.useEncodePolyfill = function useEncodePolyfill() {
-  const sentryCarrier = arg1(arg6[0]).getSentryCarrier();
-  if (arg1(arg6[1]).RN_GLOBAL_OBJ.TextEncoder) {
-    sentryCarrier.encodePolyfill = globalEncodeFactory(arg1(arg6[1]).RN_GLOBAL_OBJ.TextEncoder);
+  const sentryCarrier = require(981) /* getSentryCarrier */.getSentryCarrier();
+  if (require(793) /* RN_GLOBAL_OBJ */.RN_GLOBAL_OBJ.TextEncoder) {
+    sentryCarrier.encodePolyfill = globalEncodeFactory(require(793) /* RN_GLOBAL_OBJ */.RN_GLOBAL_OBJ.TextEncoder);
   } else {
     sentryCarrier.encodePolyfill = encodePolyfill;
   }

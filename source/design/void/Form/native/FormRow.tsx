@@ -1,27 +1,33 @@
-// Module ID: 5155
-// Function ID: 44923
+// Module ID: 5158
+// Function ID: 44942
 // Name: renderCustom
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5159, 5164, 5165, 5177, 5178, 4660, 5179, 5180, 5183, 5184, 5185, 2]
 
-// Module 5155 (renderCustom)
+// Module 5158 (renderCustom)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let Platform;
-function renderCustom(label) {
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+function renderCustom(icon) {
   let tmp = null;
-  if (null != label) {
-    let tmp3 = label;
-    if (!importAllResult.isValidElement(label)) {
-      tmp3 = callback(label, {});
+  if (null != icon) {
+    let tmp3 = icon;
+    if (!importAllResult.isValidElement(icon)) {
+      tmp3 = callback(icon, {});
     }
     tmp = tmp3;
   }
   return tmp;
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ Platform, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles(() => {
+({ Platform, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(() => {
   function getPadding(arg0) {
     let num = arg0;
     if (arg0 === undefined) {
@@ -31,34 +37,29 @@ let closure_7 = arg1(dependencyMap[3]).createStyles(() => {
     return { paddingHorizontal, paddingVertical: paddingHorizontal };
   }
   let obj = {};
-  obj = {};
+  obj = { flexDirection: "row", justifyContent: "flex-start", alignItems: "center" };
   const merged = Object.assign(getPadding());
   obj.container = obj;
-  obj.label = { ao: "tax", __d: "targetFrames", __closure: "png" };
-  obj.leading = {};
-  obj.trailing = { "Bool(true)": "soundboard_picker_collapsed_sections", "Bool(true)": "scalar", "Bool(true)": 2, "Bool(true)": 9 };
+  obj.label = { flexShrink: 1, flexGrow: 1, flexBasis: "30%" };
+  obj.leading = { flexGrow: 0, marginRight: 16 };
+  obj.trailing = { marginLeft: "auto", paddingLeft: 16, textAlign: "right", flexShrink: 0 };
   obj.disabled = { opacity: 0.5 };
-  obj = { borderColor: importDefault(dependencyMap[4]).colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
+  obj = { borderColor: importDefault(689).colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
   const merged1 = Object.assign(getPadding(-2));
   obj.error = obj;
   return obj;
 });
-const obj = {};
-const obj2 = arg1(dependencyMap[3]);
-obj.Arrow = importDefault(dependencyMap[11]);
-obj.Label = importDefault(dependencyMap[8]);
-obj.SubLabel = importDefault(dependencyMap[9]);
-obj.Radio = importDefault(dependencyMap[12]);
-obj.Checkbox = importDefault(dependencyMap[13]);
-obj.Checkmark = importDefault(dependencyMap[14]);
-obj.Icon = importDefault(dependencyMap[15]);
-const merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
+let obj = { Arrow: require("FormArrow"), Label: require("FormLabel"), SubLabel: require("FormSubLabel"), Radio: require("FormRadio"), Checkbox: require("FormCheckbox"), Checkmark: require("RowCheckmark"), Icon: require("FormIcon") };
+let merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
   let DEPRECATED_style;
   let accessibilityActions;
   let accessibilityHint;
   let accessibilityLabel;
   let accessibilityRole;
   let accessibilityState;
+  let closure_5;
+  let closure_6;
+  let closure_7;
   let delayLongPress;
   let numberOfLines;
   let onAccessibilityAction;
@@ -69,11 +70,8 @@ const merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
   let style;
   let subLabel;
   label = label.label;
-  ref = label;
   const leading = label.leading;
-  const importDefault = leading;
   ({ onPress, onLongPress, DEPRECATED_style, subLabel } = label);
-  const dependencyMap = subLabel;
   const trailing = label.trailing;
   let flag = label.disabled;
   if (flag === undefined) {
@@ -96,19 +94,19 @@ const merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
   if (flag4 === undefined) {
     flag4 = false;
   }
-  let renderCustom;
+  let callback3;
   function renderInnerView() {
     if ("function" !== typeof label) {
       if (!trailing.isValidElement(label)) {
-        let obj = { numberOfLines, text: label, style: callback };
-        let tmp9 = callback(leading(subLabel[8]), obj);
+        let obj = { numberOfLines, text: label, style: closure_5 };
+        let tmp9 = outer1_5(leading(subLabel[8]), obj);
       }
       if ("function" !== typeof subLabel) {
         if (!trailing.isValidElement(subLabel)) {
           let tmp14 = null;
           if (null != subLabel) {
             obj = { text: subLabel, numberOfLines };
-            tmp14 = callback(leading(subLabel[9]), obj);
+            tmp14 = outer1_5(leading(subLabel[9]), obj);
           }
         }
         if ("function" !== typeof leading) {
@@ -123,72 +121,72 @@ const merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
             let tmp38 = null;
             if (null != leading) {
               const obj1 = {};
-              const items = [tmp.leading, closure_7];
+              const items = [_undefined.leading, closure_7];
               obj1.style = items;
               obj1.children = tmp25;
-              tmp38 = callback(numberOfLines, obj1);
+              tmp38 = outer1_5(numberOfLines, obj1);
             }
             const items1 = [tmp38, , ];
-            const obj2 = { style: tmp.label };
+            const obj2 = { style: _undefined.label };
             const items2 = [tmp9, tmp14];
             obj2.children = items2;
-            items1[1] = callback2(numberOfLines, obj2);
+            items1[1] = outer1_6(numberOfLines, obj2);
             let tmp47 = null;
             if (null != trailing) {
               const obj3 = {};
-              const items3 = [tmp.trailing, callback2];
+              const items3 = [_undefined.trailing, closure_6];
               obj3.style = items3;
               obj3.children = tmp31;
-              tmp47 = callback(numberOfLines, obj3);
+              tmp47 = outer1_5(numberOfLines, obj3);
             }
             items1[2] = tmp47;
             obj.children = items1;
-            return callback2(trailing.Fragment, obj);
+            return outer1_6(trailing.Fragment, obj);
           }
-          tmp31 = tmp(trailing);
+          tmp31 = _undefined(trailing);
         }
-        tmp25 = tmp(leading);
+        tmp25 = _undefined(leading);
       }
-      tmp14 = tmp(subLabel);
+      tmp14 = _undefined(subLabel);
     }
-    tmp9 = tmp(label);
+    tmp9 = _undefined(label);
   }
   const tmp = callback2();
-  renderCustom = tmp;
-  if (trailing.useContext(ref(dependencyMap[6]).RedesignCompatContext)) {
+  callback3 = tmp;
+  if (trailing.useContext(label(subLabel[6]).RedesignCompatContext)) {
     if ("function" === typeof label) {
-      let tmp15 = renderCustom(label);
+      let tmp15 = callback3(label);
     } else {
       tmp15 = label;
     }
     if ("function" !== typeof subLabel) {
-      if (!importAllResult.isValidElement(subLabel)) {
+      if (!trailing.isValidElement(subLabel)) {
         let tmp18 = null;
         if (null != subLabel) {
           tmp18 = subLabel;
         }
       }
       if ("function" === typeof leading) {
-        let tmp21 = renderCustom(leading);
+        let tmp21 = callback3(leading);
       } else {
         tmp21 = leading;
       }
       if ("function" === typeof trailing) {
-        let tmp24 = renderCustom(trailing);
+        let tmp24 = callback3(trailing);
       } else {
         tmp24 = trailing;
       }
       let obj = { variant: label.variant, start, end: flag4, label: tmp15, subLabel: tmp18, icon: tmp21, trailing: tmp24, disabled: flag, accessible: flag3, accessibilityLabel, accessibilityHint, accessibilityRole, accessibilityState, accessibilityActions, onAccessibilityAction, onAccessibilityTap, labelLineClamp: numberOfLines, delayLongPress, onPress, onLongPress };
-      return callback(ref(dependencyMap[7]).TableRow, obj);
+      return callback(label(subLabel[7]).TableRow, obj);
     }
-    tmp18 = renderCustom(subLabel);
+    tmp18 = callback3(subLabel);
   } else {
     obj = { disabled: flag };
     const merged = Object.assign(accessibilityState);
     if (null == onPress) {
       if (null == onLongPress) {
         obj = { ref };
-        const items = [tmp.container, DEPRECATED_style, style, , ];
+        let items = [tmp.container, DEPRECATED_style, style, , ];
         let error = flag2;
         if (flag2) {
           error = tmp.error;
@@ -215,8 +213,8 @@ const merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
       }
       return tmp8Result;
     }
-    const obj1 = { ref };
-    const items1 = [tmp.container, DEPRECATED_style, style, , ];
+    let obj1 = { ref };
+    let items1 = [tmp.container, DEPRECATED_style, style, , ];
     if (flag2) {
       flag2 = tmp.error;
     }
@@ -253,12 +251,12 @@ const merged = Object.assign({}, importAllResult.forwardRef((label, ref) => {
     obj1.onPressOut = label.onPressOut;
     obj1.delayLongPress = delayLongPress;
     let num2;
-    if (importAllResult.useContext(ref(dependencyMap[5]).FormContext).isForm) {
+    if (trailing.useContext(label(subLabel[5]).FormContext).isForm) {
       num2 = 130;
     }
     obj1.unstable_pressDelay = num2;
     obj1.children = renderInnerView();
-    tmp8Result = callback(ref(dependencyMap[10]).PressableHighlight, obj1);
+    tmp8Result = callback(label(subLabel[10]).PressableHighlight, obj1);
     const tmp8 = callback;
   }
 }), obj);
@@ -269,6 +267,9 @@ const forwardRefResult = importAllResult.forwardRef((label, ref) => {
   let accessibilityLabel;
   let accessibilityRole;
   let accessibilityState;
+  let closure_5;
+  let closure_6;
+  let closure_7;
   let delayLongPress;
   let numberOfLines;
   let onAccessibilityAction;
@@ -279,11 +280,8 @@ const forwardRefResult = importAllResult.forwardRef((label, ref) => {
   let style;
   let subLabel;
   label = label.label;
-  ref = label;
   const leading = label.leading;
-  const importDefault = leading;
   ({ onPress, onLongPress, DEPRECATED_style, subLabel } = label);
-  const dependencyMap = subLabel;
   const trailing = label.trailing;
   let flag = label.disabled;
   if (flag === undefined) {
@@ -306,19 +304,19 @@ const forwardRefResult = importAllResult.forwardRef((label, ref) => {
   if (flag4 === undefined) {
     flag4 = false;
   }
-  let renderCustom;
+  let callback3;
   function renderInnerView() {
     if ("function" !== typeof label) {
       if (!trailing.isValidElement(label)) {
-        let obj = { numberOfLines, text: label, style: callback };
-        let tmp9 = callback(leading(subLabel[8]), obj);
+        let obj = { numberOfLines, text: label, style: closure_5 };
+        let tmp9 = outer1_5(leading(subLabel[8]), obj);
       }
       if ("function" !== typeof subLabel) {
         if (!trailing.isValidElement(subLabel)) {
           let tmp14 = null;
           if (null != subLabel) {
             obj = { text: subLabel, numberOfLines };
-            tmp14 = callback(leading(subLabel[9]), obj);
+            tmp14 = outer1_5(leading(subLabel[9]), obj);
           }
         }
         if ("function" !== typeof leading) {
@@ -333,72 +331,72 @@ const forwardRefResult = importAllResult.forwardRef((label, ref) => {
             let tmp38 = null;
             if (null != leading) {
               const obj1 = {};
-              const items = [tmp.leading, closure_7];
+              const items = [_undefined.leading, closure_7];
               obj1.style = items;
               obj1.children = tmp25;
-              tmp38 = callback(numberOfLines, obj1);
+              tmp38 = outer1_5(numberOfLines, obj1);
             }
             const items1 = [tmp38, , ];
-            const obj2 = { style: tmp.label };
+            const obj2 = { style: _undefined.label };
             const items2 = [tmp9, tmp14];
             obj2.children = items2;
-            items1[1] = callback2(numberOfLines, obj2);
+            items1[1] = outer1_6(numberOfLines, obj2);
             let tmp47 = null;
             if (null != trailing) {
               const obj3 = {};
-              const items3 = [tmp.trailing, callback2];
+              const items3 = [_undefined.trailing, closure_6];
               obj3.style = items3;
               obj3.children = tmp31;
-              tmp47 = callback(numberOfLines, obj3);
+              tmp47 = outer1_5(numberOfLines, obj3);
             }
             items1[2] = tmp47;
             obj.children = items1;
-            return callback2(trailing.Fragment, obj);
+            return outer1_6(trailing.Fragment, obj);
           }
-          tmp31 = tmp(trailing);
+          tmp31 = _undefined(trailing);
         }
-        tmp25 = tmp(leading);
+        tmp25 = _undefined(leading);
       }
-      tmp14 = tmp(subLabel);
+      tmp14 = _undefined(subLabel);
     }
-    tmp9 = tmp(label);
+    tmp9 = _undefined(label);
   }
   const tmp = callback2();
-  renderCustom = tmp;
-  if (trailing.useContext(ref(dependencyMap[6]).RedesignCompatContext)) {
+  callback3 = tmp;
+  if (trailing.useContext(label(subLabel[6]).RedesignCompatContext)) {
     if ("function" === typeof label) {
-      let tmp15 = renderCustom(label);
+      let tmp15 = callback3(label);
     } else {
       tmp15 = label;
     }
     if ("function" !== typeof subLabel) {
-      if (!importAllResult.isValidElement(subLabel)) {
+      if (!trailing.isValidElement(subLabel)) {
         let tmp18 = null;
         if (null != subLabel) {
           tmp18 = subLabel;
         }
       }
       if ("function" === typeof leading) {
-        let tmp21 = renderCustom(leading);
+        let tmp21 = callback3(leading);
       } else {
         tmp21 = leading;
       }
       if ("function" === typeof trailing) {
-        let tmp24 = renderCustom(trailing);
+        let tmp24 = callback3(trailing);
       } else {
         tmp24 = trailing;
       }
       let obj = { variant: label.variant, start, end: flag4, label: tmp15, subLabel: tmp18, icon: tmp21, trailing: tmp24, disabled: flag, accessible: flag3, accessibilityLabel, accessibilityHint, accessibilityRole, accessibilityState, accessibilityActions, onAccessibilityAction, onAccessibilityTap, labelLineClamp: numberOfLines, delayLongPress, onPress, onLongPress };
-      return callback(ref(dependencyMap[7]).TableRow, obj);
+      return callback(label(subLabel[7]).TableRow, obj);
     }
-    tmp18 = renderCustom(subLabel);
+    tmp18 = callback3(subLabel);
   } else {
     obj = { disabled: flag };
     const merged = Object.assign(accessibilityState);
     if (null == onPress) {
       if (null == onLongPress) {
         obj = { ref };
-        const items = [tmp.container, DEPRECATED_style, style, , ];
+        let items = [tmp.container, DEPRECATED_style, style, , ];
         let error = flag2;
         if (flag2) {
           error = tmp.error;
@@ -425,8 +423,8 @@ const forwardRefResult = importAllResult.forwardRef((label, ref) => {
       }
       return tmp8Result;
     }
-    const obj1 = { ref };
-    const items1 = [tmp.container, DEPRECATED_style, style, , ];
+    let obj1 = { ref };
+    let items1 = [tmp.container, DEPRECATED_style, style, , ];
     if (flag2) {
       flag2 = tmp.error;
     }
@@ -463,15 +461,15 @@ const forwardRefResult = importAllResult.forwardRef((label, ref) => {
     obj1.onPressOut = label.onPressOut;
     obj1.delayLongPress = delayLongPress;
     let num2;
-    if (importAllResult.useContext(ref(dependencyMap[5]).FormContext).isForm) {
+    if (trailing.useContext(label(subLabel[5]).FormContext).isForm) {
       num2 = 130;
     }
     obj1.unstable_pressDelay = num2;
     obj1.children = renderInnerView();
-    tmp8Result = callback(ref(dependencyMap[10]).PressableHighlight, obj1);
+    tmp8Result = callback(label(subLabel[10]).PressableHighlight, obj1);
     const tmp8 = callback;
   }
 });
-const result = arg1(dependencyMap[16]).fileFinishedImporting("design/void/Form/native/FormRow.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormRow.tsx");
 
 export default merged;

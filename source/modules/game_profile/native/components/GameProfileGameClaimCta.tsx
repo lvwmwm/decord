@@ -1,33 +1,34 @@
-// Module ID: 11858
-// Function ID: 91828
+// Module ID: 11870
+// Function ID: 91881
 // Name: GameProfileGameClaimCta
-// Dependencies: []
+// Dependencies: [5, 31, 653, 33, 8600, 5692, 1881, 4543, 1212, 2]
 // Exports: default
 
-// Module 11858 (GameProfileGameClaimCta)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const RelativeMarketingURLs = arg1(dependencyMap[2]).RelativeMarketingURLs;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/game_profile/native/components/GameProfileGameClaimCta.tsx");
+// Module 11870 (GameProfileGameClaimCta)
+import createHandoffTokenWithLoadingModal from "createHandoffTokenWithLoadingModal";
+import result from "result";
+import { RelativeMarketingURLs } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/game_profile/native/components/GameProfileGameClaimCta.tsx");
 
 export default function GameProfileGameClaimCta(trackAction) {
   trackAction = trackAction.trackAction;
-  const arg1 = trackAction;
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [trackAction];
   const linkedApplications = trackAction.game.linkedApplications;
   let someResult;
-  const callback = React.useCallback(callback(tmp), items);
+  callback = React.useCallback(callback(tmp), items);
   if (null != linkedApplications) {
-    someResult = linkedApplications.some((type) => type.type === trackAction(closure_2[6]).GameLinkTypes.OFFICIAL);
+    someResult = linkedApplications.some((type) => type.type === trackAction(outer1_2[6]).GameLinkTypes.OFFICIAL);
   }
   if (null == someResult) {
-    const obj = {};
-    const intl = arg1(dependencyMap[8]).intl;
-    obj.text = intl.string(arg1(dependencyMap[8]).t.mqg+to);
+    const obj = { variant: "secondary", size: "md" };
+    const intl = trackAction(1212).intl;
+    obj.text = intl.string(trackAction(1212).t["mqg+to"]);
     obj.onPress = callback;
-    let tmp4 = jsx(arg1(dependencyMap[7]).Button, obj);
+    let tmp4 = jsx(trackAction(4543).Button, { variant: "secondary", size: "md" });
   } else {
     tmp4 = null;
   }

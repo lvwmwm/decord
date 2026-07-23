@@ -1,11 +1,20 @@
-// Module ID: 7839
-// Function ID: 62503
+// Module ID: 7845
+// Function ID: 62540
 // Name: getUserPrimaryGuild
-// Dependencies: []
+// Dependencies: [1917, 1838, 1849, 7632, 653, 566, 3764, 2]
 // Exports: getGuildTagBadgeUrl, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 7839 (getUserPrimaryGuild)
+// Module 7845 (getUserPrimaryGuild)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_isNativeReflectConstruct";
+import items from "items";
+import { GuildFeatures } from "ME";
+
 let GuildTagBadgeMediaProxySizes;
+let closure_5;
+let closure_6;
+const require = arg1;
 function getUserPrimaryGuild(primaryGuild) {
   if (null != primaryGuild) {
     if (primaryGuild.identityEnabled) {
@@ -15,13 +24,8 @@ function getUserPrimaryGuild(primaryGuild) {
     return {};
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-({ GuildTagBadgeMediaProxySizes, GuildTagBadgeMediaProxySizesMobile: closure_5, GuildTagBadgeSize: closure_6 } = arg1(dependencyMap[3]));
-const GuildFeatures = arg1(dependencyMap[4]).GuildFeatures;
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_tag/GuildTagUtils.tsx");
+({ GuildTagBadgeMediaProxySizes, GuildTagBadgeMediaProxySizesMobile: closure_5, GuildTagBadgeSize: closure_6 } = items);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_tag/GuildTagUtils.tsx");
 
 export const guildHasTag = function guildHasTag(guild) {
   let tag;
@@ -45,18 +49,18 @@ export const getGuildTagBadgeUrl = function getGuildTagBadgeUrl(guildId, badge, 
     const _window = window;
     if (null != CDN_HOST) {
       const _HermesInternal = HermesInternal;
-      return "https://" + CDN_HOST + "/clan-badges/" + guildId + "/" + badge + ".png?size=" + closure_5[SIZE_12];
+      return "https://" + CDN_HOST + "/clan-badges/" + guildId + "/" + badge + ".png?size=" + table[SIZE_12];
     }
   }
 };
 export { getUserPrimaryGuild };
 export const useUserPrimaryGuild = function useUserPrimaryGuild(arg0) {
   let tmp = arg0;
-  const arg1 = arg0;
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_3];
+  const _require = arg0;
+  let obj = _require(566);
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [arg0];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(arg0), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuild(closure_0), items1);
   if (null != arg0) {
     let tmp3 = stateFromStores;
     if (null != stateFromStores) {
@@ -89,19 +93,19 @@ export const useUserPrimaryGuild = function useUserPrimaryGuild(arg0) {
 };
 export const useShouldDisplayGuildTag = function useShouldDisplayGuildTag(arg0, arg1, arg2) {
   let tmp = arg2;
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
   const items = [closure_4];
   const items1 = [arg0];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => user.getUser(arg0), items1);
-  const obj = arg1(dependencyMap[5]);
-  const items2 = [closure_2];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_4.getUser(closure_0), items1);
+  const obj = _require(566);
+  const items2 = [_isNativeReflectConstruct];
   const items3 = [arg1, arg0];
-  const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items2, () => {
-    if (null != arg1) {
-      if (null != arg0) {
-        const member = member.getMember(arg1, arg0);
-        return arg0(arg1[6]).hasAutomodQuarantinedProfile(member);
+  const stateFromStores1 = _require(566).useStateFromStores(items2, () => {
+    if (null != table) {
+      if (null != callback) {
+        const member = outer1_2.getMember(table, callback);
+        return callback(table[6]).hasAutomodQuarantinedProfile(member);
       }
     }
     return null;
@@ -118,7 +122,7 @@ export const useShouldDisplayGuildTag = function useShouldDisplayGuildTag(arg0, 
 };
 export const shouldDisplayGuildTag = function shouldDisplayGuildTag(id, merged) {
   let tmp = arg2;
-  const user = user.getUser(id);
+  user = user.getUser(id);
   if (undefined === arg2) {
     let primaryGuild;
     if (null != user) {
@@ -131,8 +135,8 @@ export const shouldDisplayGuildTag = function shouldDisplayGuildTag(id, merged) 
   if (tmp7) {
     let result = null != merged && null != id;
     if (result) {
-      result = merged(dependencyMap[6]).hasAutomodQuarantinedProfile(member.getMember(merged, id));
-      const obj = merged(dependencyMap[6]);
+      result = require(3764) /* getAutomodQuarantinedProfileFlags */.hasAutomodQuarantinedProfile(member.getMember(merged, id));
+      const obj = require(3764) /* getAutomodQuarantinedProfileFlags */;
     }
     tmp7 = !result;
   }

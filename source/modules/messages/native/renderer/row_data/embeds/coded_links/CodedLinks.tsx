@@ -1,10 +1,16 @@
-// Module ID: 12167
-// Function ID: 93603
+// Module ID: 12281
+// Function ID: 95754
 // Name: canSeeDevLinks
-// Dependencies: []
+// Dependencies: [57, 3759, 1838, 1849, 6931, 11084, 4119, 12282, 12283, 12293, 12295, 12288, 12297, 12290, 10460, 10952, 7791, 10854, 12298, 1327, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 12167 (canSeeDevLinks)
+// Module 12281 (canSeeDevLinks)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function canSeeDevLinks() {
   const currentUser = authStore.getCurrentUser();
   let isStaffResult;
@@ -28,16 +34,12 @@ function canSeeDevLinks() {
   }
   return isStaffResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx");
 
 export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
-  message2 = message;
-  const dependencyMap = channel;
-  let closure_2 = forcedTheme;
+  let closure_0 = message;
+  let closure_1 = channel;
+  let _slicedToArray = forcedTheme;
   if (null != message.author) {
     if (0 !== message2.codedLinks.length) {
       const currentUser = authStore.getCurrentUser();
@@ -51,28 +53,28 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
         let type;
         let url;
         ({ type, code, url } = arg0);
-        let obj = arg0(arg2[4]);
+        let obj = message(6931);
         if (obj.isApplicationCodedLink(type)) {
-          if (null == arg2) {
+          if (null == dependencyMap) {
             return null;
           } else {
-            let appLinkGateResult = arg0;
-            appLinkGateResult = arg2;
+            let appLinkGateResult = message;
+            appLinkGateResult = dependencyMap;
             if (obj28.isApplicationCodedLinkMobileSupported(type)) {
-              const applicationCodedLinkData = arg0(arg2[4]).getApplicationCodedLinkData(type, code, url);
+              const applicationCodedLinkData = message(6931).getApplicationCodedLinkData(type, code, url);
               if (null == applicationCodedLinkData) {
                 return null;
               } else {
-                appLinkGateResult = arg0;
-                appLinkGateResult = arg2;
+                appLinkGateResult = message;
+                appLinkGateResult = dependencyMap;
                 obj = { appId: applicationCodedLinkData.applicationId };
-                appLinkGateResult = arg2;
-                obj.channel = arg2;
-                appLinkGateResult = arg0;
-                obj.message = arg0;
-                appLinkGateResult = arg3;
-                obj.theme = arg3;
-                appLinkGateResult = arg0(arg2[5]).getAppLinkGateResult(obj);
+                appLinkGateResult = dependencyMap;
+                obj.channel = dependencyMap;
+                appLinkGateResult = message;
+                obj.message = message;
+                appLinkGateResult = callback;
+                obj.theme = callback;
+                appLinkGateResult = message(11084).getAppLinkGateResult(obj);
                 if ("unavailable" === appLinkGateResult.state) {
                   return null;
                 } else if ("blocked" === appLinkGateResult.state) {
@@ -80,76 +82,76 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                 } else {
                   const app = appLinkGateResult.app;
                   const type2 = applicationCodedLinkData.type;
-                  appLinkGateResult = arg0;
-                  appLinkGateResult = arg2;
-                  if (arg0(arg2[6]).CodedLinkType.ACTIVITY_BOOKMARK === type2) {
-                    obj = { theme: arg3, embedUrl: url, message: arg0, app, params: applicationCodedLinkData.params };
-                    return arg0(arg2[7]).createActivityMessageEmbed(obj);
+                  appLinkGateResult = message;
+                  appLinkGateResult = dependencyMap;
+                  if (message(4119).CodedLinkType.ACTIVITY_BOOKMARK === type2) {
+                    obj = { theme: callback, embedUrl: url, message, app, params: applicationCodedLinkData.params };
+                    return message(12282).createActivityMessageEmbed(obj);
                   } else {
-                    appLinkGateResult = arg0;
-                    appLinkGateResult = arg2;
-                    if (arg0(arg2[6]).CodedLinkType.APP_DIRECTORY_PROFILE !== type2) {
-                      if (arg0(arg2[6]).CodedLinkType.APP_OAUTH2_LINK !== type2) {
+                    appLinkGateResult = message;
+                    appLinkGateResult = dependencyMap;
+                    if (message(4119).CodedLinkType.APP_DIRECTORY_PROFILE !== type2) {
+                      if (message(4119).CodedLinkType.APP_OAUTH2_LINK !== type2) {
                         return null;
                       }
                     }
-                    let obj1 = { theme: arg3, embedUrl: url, message: arg0, app };
-                    return arg0(arg2[5]).createAppMessageEmbed(obj1);
+                    let obj1 = { theme: callback, embedUrl: url, message, app };
+                    return message(11084).createAppMessageEmbed(obj1);
                   }
                 }
-                const obj29 = arg0(arg2[5]);
+                const obj29 = message(11084);
               }
-              const obj23 = arg0(arg2[4]);
+              const obj23 = message(6931);
             } else {
               return null;
             }
-            const obj28 = arg0(arg2[4]);
+            obj28 = message(6931);
           }
         } else {
-          appLinkGateResult = arg0;
-          if (arg0(arg2[6]).CodedLinkType.INVITE === type) {
-            return arg0(arg2[8]).createInviteEmbed(arg0, code, arg3);
-          } else if (arg0(arg2[6]).CodedLinkType.TEMPLATE === type) {
-            return arg0(arg2[9]).createGuildTemplateEmbed(code, arg3);
-          } else if (arg0(arg2[6]).CodedLinkType.BUILD_OVERRIDE === type) {
-            return arg0(arg2[10]).createBuildOverrideEmbed(code, arg3);
-          } else if (arg0(arg2[6]).CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
+          appLinkGateResult = message;
+          if (message(4119).CodedLinkType.INVITE === type) {
+            return message(12283).createInviteEmbed(message, code, callback);
+          } else if (message(4119).CodedLinkType.TEMPLATE === type) {
+            return message(12293).createGuildTemplateEmbed(code, callback);
+          } else if (message(4119).CodedLinkType.BUILD_OVERRIDE === type) {
+            return message(12295).createBuildOverrideEmbed(code, callback);
+          } else if (message(4119).CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
             let buildOverrideEmbed = null;
-            if (callback()) {
-              buildOverrideEmbed = arg0(arg2[10]).createBuildOverrideEmbed(code, arg3);
-              const obj19 = arg0(arg2[10]);
+            if (outer1_6()) {
+              buildOverrideEmbed = message(12295).createBuildOverrideEmbed(code, callback);
+              const obj19 = message(12295);
             }
             return buildOverrideEmbed;
-          } else if (arg0(arg2[6]).CodedLinkType.EVENT === type) {
-            return arg0(arg2[11]).createGuildScheduledEventLinkEmbed(code, arg3);
-          } else if (arg0(arg2[6]).CodedLinkType.CHANNEL_LINK === type) {
-            return arg0(arg2[12]).createVoiceChannelLinkEmbed(code, arg3);
-          } else if (arg0(arg2[6]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
-            let obj2 = { theme: arg3, inviteCode: code };
-            return arg0(arg2[13]).createEmbeddedActivityInviteEmbed(obj2);
-          } else if (arg0(arg2[6]).CodedLinkType.EXPERIMENT === type) {
+          } else if (message(4119).CodedLinkType.EVENT === type) {
+            return message(12288).createGuildScheduledEventLinkEmbed(code, callback);
+          } else if (message(4119).CodedLinkType.CHANNEL_LINK === type) {
+            return message(12297).createVoiceChannelLinkEmbed(code, callback);
+          } else if (message(4119).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
+            let obj2 = { theme: callback, inviteCode: code };
+            return message(12290).createEmbeddedActivityInviteEmbed(obj2);
+          } else if (message(4119).CodedLinkType.EXPERIMENT === type) {
             let experimentEmbed = null;
             if (obj13.canSeeExperimentEmbeds()) {
-              experimentEmbed = arg0(arg2[15]).createExperimentEmbed(url, arg3);
-              const obj14 = arg0(arg2[15]);
+              experimentEmbed = message(10952).createExperimentEmbed(url, callback);
+              const obj14 = message(10952);
             }
             return experimentEmbed;
           } else {
-            if (arg0(arg2[6]).CodedLinkType.GUILD_PRODUCT !== type) {
-              if (arg0(arg2[6]).CodedLinkType.SERVER_SHOP !== type) {
-                if (arg0(arg2[6]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                  appLinkGateResult = arg2;
-                  if (arg0(arg2[6]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                    appLinkGateResult = arg0;
-                    appLinkGateResult = arg2;
-                    if (arg0(arg2[6]).CodedLinkType.QUESTS_EMBED === type) {
-                      obj2 = arg0(arg2[18]);
-                      const obj3 = { theme: arg3, questId: code, currentUser: closure_3 };
+            if (message(4119).CodedLinkType.GUILD_PRODUCT !== type) {
+              if (message(4119).CodedLinkType.SERVER_SHOP !== type) {
+                if (message(4119).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                  appLinkGateResult = dependencyMap;
+                  if (message(4119).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                    appLinkGateResult = message;
+                    appLinkGateResult = dependencyMap;
+                    if (message(4119).CodedLinkType.QUESTS_EMBED === type) {
+                      obj2 = message(12298);
+                      const obj3 = { theme: callback, questId: code, currentUser: _isNativeReflectConstruct };
                       return obj2.createQuestsEmbed(obj3);
                     } else {
-                      if (arg0(arg2[6]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
-                        if (arg0(arg2[6]).CodedLinkType.GAME_PROFILE !== type) {
-                          obj1 = arg0(arg2[19]);
+                      if (message(4119).CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                        if (message(4119).CodedLinkType.GAME_PROFILE !== type) {
+                          obj1 = message(1327);
                           return obj1.assertNever(type);
                         }
                       }
@@ -157,24 +159,24 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                     }
                   }
                 }
-                let obj4 = arg0(arg2[16]);
+                let obj4 = message(7791);
                 obj4 = { location: "create_coded_link_embeds" };
                 if (obj4.getIsEligibleForSocialLayerStorefrontMobilePurchasing(obj4)) {
-                  if (type === arg0(arg2[6]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
-                    [tmp28, tmp29] = arg3(code.split("-"), 2);
-                    const tmp27 = arg3(code.split("-"), 2);
+                  if (type === message(4119).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+                    [tmp28, tmp29] = callback(code.split("-"), 2);
+                    const tmp27 = callback(code.split("-"), 2);
                     const obj5 = { skuId: tmp28 };
                     let obj6 = { type: "application", applicationId: tmp29 };
                     obj5.guildOrApplication = obj6;
-                    obj5.theme = arg3;
-                    return arg0(arg2[17]).createSocialLayerStorefrontProductDetailsEmbed(obj5);
+                    obj5.theme = callback;
+                    return message(10854).createSocialLayerStorefrontProductDetailsEmbed(obj5);
                   } else {
-                    [tmp21, tmp22] = arg3(code.split("-"), 2);
-                    obj6 = arg0(arg2[17]);
+                    [tmp21, tmp22] = callback(code.split("-"), 2);
+                    obj6 = message(10854);
                     const obj7 = { skuId: tmp21 };
                     const obj8 = { type: "guild", guildId: tmp22 };
                     obj7.guildOrApplication = obj8;
-                    obj7.theme = arg3;
+                    obj7.theme = callback;
                     return obj6.createSocialLayerStorefrontProductDetailsEmbed(obj7);
                   }
                 } else {

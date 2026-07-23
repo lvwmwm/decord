@@ -1,24 +1,37 @@
-// Module ID: 14452
-// Function ID: 108919
+// Module ID: 14566
+// Function ID: 111072
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 2332, 3803, 2]
 
-// Module 14452 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14566 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(importDefault(dependencyMap[3]).WhdCGP);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2332).WhdCGP);
   },
   useDescription() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(importDefault(dependencyMap[3]).UQ9RHJ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2332).UQ9RHJ);
   },
-  parent: require(dependencyMap[0]).MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: require(dependencyMap[4]).ShowCurrentGame.useSetting,
-  onValueChange: require(dependencyMap[4]).ShowCurrentGame.updateSetting
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: require("explicitContentFromProto").ShowCurrentGame.useSetting,
+  onValueChange: require("explicitContentFromProto").ShowCurrentGame.updateSetting
 });
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ActivityPrivacyShareMyActivitySetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2332).WhdCGP);
+  },
+  useDescription() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2332).UQ9RHJ);
+  },
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: require("explicitContentFromProto").ShowCurrentGame.useSetting,
+  onValueChange: require("explicitContentFromProto").ShowCurrentGame.updateSetting
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ActivityPrivacyShareMyActivitySetting.tsx");
 
 export default toggle;

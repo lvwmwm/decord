@@ -1,53 +1,64 @@
-// Module ID: 8477
-// Function ID: 67649
+// Module ID: 8483
+// Function ID: 67686
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1347, 1348, 1917, 4142, 3767, 1849, 5603, 653, 6979, 4974, 8484, 1212, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8477 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8483 (_createForOfIteratorHelperLoose)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+import { InviteTargetTypes } from "InviteSendStates";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +69,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -197,8 +208,8 @@ function addDmUsers(arg0) {
         }
         let iter3 = tmp();
         num = sum;
-        let tmp2 = tmp6;
-        let tmp3 = tmp7;
+        tmp2 = tmp6;
+        tmp3 = tmp7;
         iter2 = iter3;
         if (iter3.done) {
           break;
@@ -210,33 +221,24 @@ function addDmUsers(arg0) {
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const ChannelTypes = arg1(dependencyMap[7]).ChannelTypes;
-const InviteTargetTypes = arg1(dependencyMap[8]).InviteTargetTypes;
 let obj = { GROUP_DM: "GROUP_DM", DM: "DM", FRIEND: "FRIEND", CHANNEL: "CHANNEL" };
-let closure_13 = { [arg1(dependencyMap[10]).INVITE_OPTIONS_30_MINUTES.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_HOUR.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_6_HOURS.value]: { "Bool(false)": true, "Bool(false)": true }, [arg1(dependencyMap[10]).INVITE_OPTIONS_12_HOURS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_1_DAY.value]: { "Bool(false)": "collapsed_in_inbox", "Bool(false)": "scalar" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_7_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS.value]: { "Bool(false)": "png", "Bool(false)": "heading-xl/bold" }, [arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS.value]: {}, [arg1(dependencyMap[10]).INVITE_OPTIONS_FOREVER.value]: { "Bool(false)": true, "Bool(false)": true } };
-const items = [arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS, arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS, arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS];
+let closure_13 = { [arg1(8484).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [arg1(8484).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [arg1(8484).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [arg1(8484).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [arg1(8484).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [arg1(8484).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [arg1(8484).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [arg1(8484).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [arg1(8484).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [arg1(8484).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
+let items = [require("makeOption").INVITE_OPTIONS_14_DAYS, require("makeOption").INVITE_OPTIONS_30_DAYS, require("makeOption").INVITE_OPTIONS_60_DAYS];
 obj = {
   getMaxAgeOptionByValue(maxAge) {
-    const arg1 = maxAge;
-    const items = [...closure_14];
-    return items.find((value) => value.value === value) || null;
+    let closure_0 = maxAge;
+    items = [...items];
+    return items.find((value) => value.value === closure_0) || null;
   },
   getMaxAgeOptions(arg0) {
-    const arg1 = arg0;
-    const MAX_AGE_OPTIONS = arg1(dependencyMap[10]).MAX_AGE_OPTIONS;
+    const _require = arg0;
+    const MAX_AGE_OPTIONS = _require(8484).MAX_AGE_OPTIONS;
     return MAX_AGE_OPTIONS.filter((value) => {
-      let tmp = !closure_14.includes(value);
+      let tmp = !outer1_14.includes(value);
       if (!tmp) {
         let hasItem;
-        if (null != value) {
-          const includeExperimentalValues = value.includeExperimentalValues;
+        if (null != obj) {
+          const includeExperimentalValues = obj.includeExperimentalValues;
           if (null != includeExperimentalValues) {
             if (null != includeExperimentalValues.includes) {
               hasItem = includeExperimentalValues.includes(value.value);
@@ -248,27 +250,27 @@ obj = {
       return tmp;
     });
   },
-  getMaxUsesOptions: arg1(dependencyMap[10]).MAX_USES_OPTIONS,
-  INVITE_OPTIONS_FOREVER: arg1(dependencyMap[10]).INVITE_OPTIONS_FOREVER,
-  INVITE_OPTIONS_1_DAY: arg1(dependencyMap[10]).INVITE_OPTIONS_1_DAY,
-  INVITE_OPTIONS_7_DAYS: arg1(dependencyMap[10]).INVITE_OPTIONS_7_DAYS,
-  INVITE_OPTIONS_14_DAYS: arg1(dependencyMap[10]).INVITE_OPTIONS_14_DAYS,
-  INVITE_OPTIONS_30_DAYS: arg1(dependencyMap[10]).INVITE_OPTIONS_30_DAYS,
-  INVITE_OPTIONS_60_DAYS: arg1(dependencyMap[10]).INVITE_OPTIONS_60_DAYS,
-  INVITE_OPTIONS_12_HOURS: arg1(dependencyMap[10]).INVITE_OPTIONS_12_HOURS,
-  INVITE_OPTIONS_6_HOURS: arg1(dependencyMap[10]).INVITE_OPTIONS_6_HOURS,
-  INVITE_OPTIONS_8_HOURS: arg1(dependencyMap[10]).INVITE_OPTIONS_8_HOURS,
-  INVITE_OPTIONS_1_HOUR: arg1(dependencyMap[10]).INVITE_OPTIONS_1_HOUR,
-  INVITE_OPTIONS_30_MINUTES: arg1(dependencyMap[10]).INVITE_OPTIONS_30_MINUTES,
-  INVITE_OPTIONS_UNLIMITED: arg1(dependencyMap[10]).INVITE_OPTIONS_UNLIMITED,
-  INVITE_OPTIONS_ONCE: arg1(dependencyMap[10]).INVITE_OPTIONS_ONCE,
-  INVITE_OPTIONS_5_TIMES: arg1(dependencyMap[10]).INVITE_OPTIONS_5_TIMES,
-  INVITE_OPTIONS_10_TIMES: arg1(dependencyMap[10]).INVITE_OPTIONS_10_TIMES,
-  INVITE_OPTIONS_25_TIMES: arg1(dependencyMap[10]).INVITE_OPTIONS_25_TIMES,
-  INVITE_OPTIONS_50_TIMES: arg1(dependencyMap[10]).INVITE_OPTIONS_50_TIMES,
-  INVITE_OPTIONS_100_TIMES: arg1(dependencyMap[10]).INVITE_OPTIONS_100_TIMES
+  getMaxUsesOptions: require("makeOption").MAX_USES_OPTIONS,
+  INVITE_OPTIONS_FOREVER: require("makeOption").INVITE_OPTIONS_FOREVER,
+  INVITE_OPTIONS_1_DAY: require("makeOption").INVITE_OPTIONS_1_DAY,
+  INVITE_OPTIONS_7_DAYS: require("makeOption").INVITE_OPTIONS_7_DAYS,
+  INVITE_OPTIONS_14_DAYS: require("makeOption").INVITE_OPTIONS_14_DAYS,
+  INVITE_OPTIONS_30_DAYS: require("makeOption").INVITE_OPTIONS_30_DAYS,
+  INVITE_OPTIONS_60_DAYS: require("makeOption").INVITE_OPTIONS_60_DAYS,
+  INVITE_OPTIONS_12_HOURS: require("makeOption").INVITE_OPTIONS_12_HOURS,
+  INVITE_OPTIONS_6_HOURS: require("makeOption").INVITE_OPTIONS_6_HOURS,
+  INVITE_OPTIONS_8_HOURS: require("makeOption").INVITE_OPTIONS_8_HOURS,
+  INVITE_OPTIONS_1_HOUR: require("makeOption").INVITE_OPTIONS_1_HOUR,
+  INVITE_OPTIONS_30_MINUTES: require("makeOption").INVITE_OPTIONS_30_MINUTES,
+  INVITE_OPTIONS_UNLIMITED: require("makeOption").INVITE_OPTIONS_UNLIMITED,
+  INVITE_OPTIONS_ONCE: require("makeOption").INVITE_OPTIONS_ONCE,
+  INVITE_OPTIONS_5_TIMES: require("makeOption").INVITE_OPTIONS_5_TIMES,
+  INVITE_OPTIONS_10_TIMES: require("makeOption").INVITE_OPTIONS_10_TIMES,
+  INVITE_OPTIONS_25_TIMES: require("makeOption").INVITE_OPTIONS_25_TIMES,
+  INVITE_OPTIONS_50_TIMES: require("makeOption").INVITE_OPTIONS_50_TIMES,
+  INVITE_OPTIONS_100_TIMES: require("makeOption").INVITE_OPTIONS_100_TIMES
 };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("utils/InstantInviteUtils.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/InstantInviteUtils.tsx");
 
 export default obj;
 export const RowTypes = obj;
@@ -299,7 +301,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
   ({ suggestedChannelIds, maxRowsWithoutQuery, omitGuildId } = arg0);
   const set = new Set();
   rows = [];
-  counts = { tooltipX: false, tooltipY: false, adjustmentX: false, display: false, flexDirection: false };
+  counts = { numFriends: 0, numDms: 0, numGroupDms: 0, numGuildMembers: 0, numChannels: 0 };
   if ("" === query) {
     let obj = { omitUserIds, maxRowsWithoutQuery, omitGuildId, shownUserIds: set, rows, counts };
     if (inviteTargetType === InviteTargetTypes.EMBEDDED_APPLICATION) {
@@ -390,7 +392,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
             }
           }
           let iter3 = tmp68();
-          let tmp37 = tmp29;
+          tmp37 = tmp29;
           iter4 = iter3;
           if (iter3.done) {
             break;
@@ -442,7 +444,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
           }
         }
         let iter7 = tmp46();
-        let tmp47 = tmp48;
+        tmp47 = tmp48;
         iter6 = iter7;
         if (iter7.done) {
           break;
@@ -455,24 +457,28 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       const obj8 = {};
       const merged4 = Object.assign(obj7);
       obj8["inviteTargetType"] = inviteTargetType;
-      function addQueriedChannels(inviteTargetType) {
+      (function addQueriedChannels(inviteTargetType) {
+        let closure_0;
+        let closure_1;
         ({ rows: closure_0, counts: closure_1 } = inviteTargetType);
-        if (inviteTargetType.inviteTargetType === constants.EMBEDDED_APPLICATION) {
-          let obj = callback(closure_2[9]);
+        if (inviteTargetType.inviteTargetType === outer1_11.EMBEDDED_APPLICATION) {
+          let obj = outer1_1(outer1_2[9]);
           obj = { query: tmp, limit: 3, guildId: undefined };
           const item = obj.queryChannels(obj).forEach((item) => {
             numChannels.numChannels = numChannels.numChannels + 1;
           });
           const queryChannelsResult = obj.queryChannels(obj);
         }
-      }(obj8);
+      })(obj8);
     }
     const obj9 = {};
     const merged5 = Object.assign(obj7);
     obj9["omitUserIds"] = omitUserIds;
     obj9["shownUserIds"] = set;
     obj9["suggestedUserIds"] = suggestedUserIds;
-    function addQueriedSuggestedUsers(suggestedUserIds) {
+    (function addQueriedSuggestedUsers(suggestedUserIds) {
+      let closure_0;
+      let closure_1;
       let iter;
       let omitUserIds;
       let shownUserIds;
@@ -480,7 +486,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       suggestedUserIds = suggestedUserIds.suggestedUserIds;
       if (null != suggestedUserIds) {
         const items = [];
-        const tmp11 = callback2(suggestedUserIds);
+        const tmp11 = outer1_15(suggestedUserIds);
         const iter3 = tmp11();
         let iter2 = iter3;
         if (!iter3.done) {
@@ -490,8 +496,8 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
             if (!omitUserIds.has(value)) {
               tmp2 = tmp6;
               if (!shownUserIds.has(value)) {
-                let tmp3 = closure_8;
-                let user = closure_8.getUser(value);
+                let tmp3 = outer1_8;
+                let user = outer1_8.getUser(value);
                 tmp2 = user;
                 if (null != user) {
                   let arr = items.push(user);
@@ -500,11 +506,11 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
               }
             }
             iter = tmp11();
-            let tmp6 = tmp2;
+            tmp6 = tmp2;
             iter2 = iter;
           } while (!iter.done);
         }
-        let obj = callback(shownUserIds[9]);
+        let obj = outer1_1(outer1_2[9]);
         obj = { query: tmp, members: items, limit: 10 };
         const item = obj.queryMemberList(obj).forEach((record) => {
           record = record.record;
@@ -513,48 +519,59 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
         });
         const queryMemberListResult = obj.queryMemberList(obj);
       }
-    }(obj9);
+    })(obj9);
     const obj10 = {};
     const merged6 = Object.assign(obj7);
     obj10["omitUserIds"] = omitUserIds;
     obj10["shownUserIds"] = set;
-    function addQueriedDmUsers(query) {
-      ({ omitUserIds: closure_0, shownUserIds: closure_1, rows: closure_2, counts: closure_3 } = query);
-      const obj = callback(closure_2[9]);
-      const item = callback(closure_2[9]).queryDMUsers({ query: query.query, limit: 50 }).forEach((record) => {
+    (function addQueriedDmUsers(query) {
+      let closure_0;
+      let closure_1;
+      let closure_2;
+      let _createForOfIteratorHelperLoose;
+      ({ omitUserIds: closure_0, shownUserIds: closure_1, rows: closure_2, counts: _createForOfIteratorHelperLoose } = query);
+      let obj = outer1_1(outer1_2[9]);
+      const item = outer1_1(outer1_2[9]).queryDMUsers({ query: query.query, limit: 50 }).forEach((record) => {
         record = record.record;
         if (!set.has(record.id)) {
           if (!set2.has(record.id)) {
-            const dMFromUserId = dMFromUserId.getDMFromUserId(record.id);
+            const dMFromUserId = outer2_4.getDMFromUserId(record.id);
             let tmp5 = null != dMFromUserId;
             if (tmp5) {
-              tmp5 = null != closure_6.lastMessageId(dMFromUserId);
+              tmp5 = null != outer2_6.lastMessageId(dMFromUserId);
             }
             if (tmp5) {
               set2.add(record.id);
-              const obj = { type: constants.DM, item: record, isSuggested: false, score: record.score };
-              const arr = arr.push(obj);
+              const obj = { type: outer2_12.DM, item: record, isSuggested: false, score: record.score };
+              arr = arr.push(obj);
               numDms.numDms = numDms.numDms + 1;
             }
           }
         }
       });
-    }(obj10);
-    function addQueriedGroupDms(query) {
+    })(obj10);
+    (function addQueriedGroupDms(query) {
+      let closure_0;
+      let closure_1;
       ({ rows: closure_0, counts: closure_1 } = query);
-      const obj = callback(closure_2[9]);
-      const item = callback(closure_2[9]).queryGroupDMs({ query: query.query }).forEach((item) => {
+      let obj = outer1_1(outer1_2[9]);
+      obj = { query: query.query, limit: 50, fuzzy: false };
+      const item = obj.queryGroupDMs(obj).forEach((item) => {
         numGroupDms.numGroupDms = numGroupDms.numGroupDms + 1;
       });
-    }(obj7);
+    })(obj7);
     const obj11 = {};
     const merged7 = Object.assign(obj7);
     obj11["omitUserIds"] = omitUserIds;
     obj11["shownUserIds"] = set;
-    function addQueriedFriends(query) {
-      ({ rows: closure_0, counts: closure_1, omitUserIds: closure_2, shownUserIds: closure_3 } = query);
-      let obj = callback(closure_2[9]);
-      obj = { padding: 8589934862.125008, alignItems: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000288181882437125, justifyContent: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032593855370027, query: query.query };
+    (function addQueriedFriends(query) {
+      let closure_0;
+      let closure_1;
+      let closure_2;
+      let _createForOfIteratorHelperLoose;
+      ({ rows: closure_0, counts: closure_1, omitUserIds: closure_2, shownUserIds: _createForOfIteratorHelperLoose } = query);
+      let obj = outer1_1(outer1_2[9]);
+      obj = { query: query.query, limit: 500, _fuzzy: false };
       const item = obj.queryFriends(obj).forEach((record) => {
         record = record.record;
         let hasItem = set.has(record.id);
@@ -563,12 +580,12 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
         }
         if (!hasItem) {
           set2.add(record.id);
-          const obj = { type: constants.FRIEND, item: record, isSuggested: false, score: record.score };
-          const arr = arr.push(obj);
+          const obj = { type: outer2_12.FRIEND, item: record, isSuggested: false, score: record.score };
+          arr = arr.push(obj);
           numFriends.numFriends = numFriends.numFriends + 1;
         }
       });
-    }(obj11);
+    })(obj11);
   }
   return { rows, counts };
 };
@@ -657,8 +674,8 @@ export const getMostRecentDMedUser = function getMostRecentDMedUser(set, id) {
         }
       }
       let iter3 = tmp();
-      let tmp2 = tmp5;
-      let tmp3 = tmp6;
+      tmp2 = tmp5;
+      tmp3 = tmp6;
       iter2 = iter3;
     }
     return user;
@@ -688,21 +705,21 @@ export const getUsersAlreadyJoined = function getUsersAlreadyJoined(channel) {
 };
 export const maxAgeString = function maxAgeString(maxAge, maxUses) {
   const parsed = parseInt(maxUses, 10);
-  const value = closure_13[maxAge].value;
-  const type = closure_13[maxAge].type;
+  const value = dependencyMap[maxAge].value;
+  const type = dependencyMap[maxAge].type;
   if ("minutes" === type) {
-    const intl4 = maxUses(dependencyMap[11]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
     if (tmp2) {
-      let stringResult = intl4.string(tmp12(tmp13[11]).t./WbTXD);
+      let stringResult = intl4.string(tmp12(1212).t["/WbTXD"]);
     } else {
       let obj = { numUses: parsed };
-      stringResult = intl4.formatToPlainString(tmp12(tmp13[11]).t.eDRWJK, obj);
+      stringResult = intl4.formatToPlainString(tmp12(1212).t.eDRWJK, obj);
     }
     return stringResult;
   } else if ("hours" === type) {
-    const intl3 = maxUses(dependencyMap[11]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString2 = intl3.formatToPlainString;
-    const t2 = maxUses(dependencyMap[11]).t;
+    const t2 = require(1212) /* getSystemLocale */.t;
     if (tmp2) {
       obj = { numHours: value };
       let formatToPlainString2Result = formatToPlainString2(t2.ZVdJMy, obj);
@@ -712,9 +729,9 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
     }
     return formatToPlainString2Result;
   } else if ("days" === type) {
-    const intl2 = maxUses(dependencyMap[11]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const t = maxUses(dependencyMap[11]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (tmp2) {
       const obj2 = { numDays: value };
       let formatToPlainStringResult = formatToPlainString(t.T96qss, obj2);
@@ -724,12 +741,12 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
     }
     return formatToPlainStringResult;
   } else if ("never" === type) {
-    const intl = maxUses(dependencyMap[11]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     if (tmp2) {
-      let stringResult1 = intl.string(tmp3(tmp4[11]).t.QrHBnC);
+      let stringResult1 = intl.string(tmp3(1212).t.QrHBnC);
     } else {
       obj = { numUses: parsed };
-      stringResult1 = intl.formatToPlainString(tmp3(tmp4[11]).t.yJnTxI, obj);
+      stringResult1 = intl.formatToPlainString(tmp3(1212).t.yJnTxI, obj);
     }
     return stringResult1;
   } else {
@@ -738,28 +755,28 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
 };
 export const urgentShareMessageString = function urgentShareMessageString(arg0, link) {
   if (null == arg0) {
-    const intl5 = link(dependencyMap[11]).intl;
+    const intl5 = require(1212) /* getSystemLocale */.intl;
     let obj = { link };
-    return intl5.formatToPlainString(link(dependencyMap[11]).t.RHbY6K, obj);
+    return intl5.formatToPlainString(require(1212) /* getSystemLocale */.t.RHbY6K, obj);
   } else {
-    const value = closure_13[arg0].value;
-    const type = closure_13[arg0].type;
+    const value = dependencyMap[arg0].value;
+    const type = dependencyMap[arg0].type;
     if ("minutes" === type) {
-      const intl4 = link(dependencyMap[11]).intl;
+      const intl4 = require(1212) /* getSystemLocale */.intl;
       obj = { numMinutes: value, link };
-      return intl4.formatToPlainString(link(dependencyMap[11]).t.N3VHkw, obj);
+      return intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.N3VHkw, obj);
     } else if ("hours" === type) {
-      const intl3 = link(dependencyMap[11]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       const obj1 = { numHours: value, link };
-      return intl3.formatToPlainString(link(dependencyMap[11]).t.3d9BlG, obj1);
+      return intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["3d9BlG"], obj1);
     } else if ("days" === type) {
-      const intl2 = link(dependencyMap[11]).intl;
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       const obj2 = { numDays: value, link };
-      return intl2.formatToPlainString(link(dependencyMap[11]).t.gLIlkb, obj2);
+      return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.gLIlkb, obj2);
     } else {
-      const intl = link(dependencyMap[11]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       obj = { link };
-      return intl.formatToPlainString(link(dependencyMap[11]).t.RHbY6K, obj);
+      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.RHbY6K, obj);
     }
   }
 };

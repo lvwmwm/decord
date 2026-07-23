@@ -1,17 +1,22 @@
-// Module ID: 4615
-// Function ID: 40252
+// Module ID: 4619
+// Function ID: 40284
 // Name: shouldShowMembershipVerificationGate
-// Dependencies: []
+// Dependencies: [1917, 1838, 1849, 4620, 566, 2]
 // Exports: useShowMemberVerificationGate
 
-// Module 4615 (shouldShowMembershipVerificationGate)
+// Module 4619 (shouldShowMembershipVerificationGate)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function shouldShowMembershipVerificationGate(guildId, items) {
   let obj;
   let obj2;
   let obj3;
   let tmp = items;
   if (items === undefined) {
-    items = [closure_3, closure_4, closure_2];
+    items = [_createForOfIteratorHelperLoose, closure_4, _isNativeReflectConstruct];
     tmp = items;
   }
   [obj, obj2, obj3] = tmp;
@@ -31,27 +36,24 @@ function shouldShowMembershipVerificationGate(guildId, items) {
       const tmp9 = null != isPending && isPending;
     }
     if (flag) {
-      flag = items(dependencyMap[3]).guildHasVerificationGate(guild);
-      const obj4 = items(dependencyMap[3]);
+      flag = require(4620) /* isValidFormResponse */.guildHasVerificationGate(guild);
+      const obj4 = require(4620) /* isValidFormResponse */;
     }
     return flag;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_member_verification/hooks/useShowMemberVerificationGate.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_member_verification/hooks/useShowMemberVerificationGate.tsx");
 
 export { shouldShowMembershipVerificationGate };
 export const useShowMemberVerificationGate = function useShowMemberVerificationGate(guild_id) {
-  const arg1 = guild_id;
-  const items = [closure_3, closure_4, closure_2];
+  const _require = guild_id;
+  let items = [_createForOfIteratorHelperLoose, closure_4, _isNativeReflectConstruct];
   const items1 = [guild_id];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
-    let tmp = null != arg0;
+  return _require(566).useStateFromStores(items, () => {
+    let tmp = null != closure_0;
     if (tmp) {
-      const items = [closure_3, closure_4, closure_2];
-      tmp = callback(arg0, items);
+      const items = [outer1_3, outer1_4, outer1_2];
+      tmp = outer1_5(closure_0, items);
     }
     return tmp;
   }, items1);

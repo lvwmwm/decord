@@ -1,41 +1,44 @@
-// Module ID: 15349
-// Function ID: 116887
+// Module ID: 15466
+// Function ID: 119061
 // Name: handleConfirm
-// Dependencies: []
+// Dependencies: [5, 31, 33, 8923, 4475, 1212, 4475, 2]
 // Exports: default
 
-// Module 15349 (handleConfirm)
+// Module 15466 (handleConfirm)
+import getSystemLocale from "getSystemLocale";
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function handleConfirm() {
   return _handleConfirm(...arguments);
 }
 function _handleConfirm() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleConfirm = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ClearAllIncomingRequestsAlertModal.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/ClearAllIncomingRequestsAlertModal.tsx");
 
 export default function ClearAllIncomingRequestsAlertModal(incomingRequestCount) {
   let obj = {};
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.title = intl.string(arg1(dependencyMap[5]).t.z2pFjo);
-  const intl2 = arg1(dependencyMap[5]).intl;
-  obj.content = intl2.formatToPlainString(arg1(dependencyMap[5]).t.0nTvEw, { incomingRequestCount: incomingRequestCount.incomingRequestCount });
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.z2pFjo);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["0nTvEw"], { incomingRequestCount: incomingRequestCount.incomingRequestCount });
   obj = {};
   obj = { variant: "destructive", onPress: handleConfirm };
-  const intl3 = arg1(dependencyMap[5]).intl;
-  obj.text = intl3.string(arg1(dependencyMap[5]).t.cY+Oob);
-  const items = [callback2(arg1(dependencyMap[4]).AlertActionButton, obj, "confirm"), ];
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl3.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
+  const items = [callback2(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary" };
-  const intl4 = arg1(dependencyMap[5]).intl;
-  obj1.text = intl4.string(arg1(dependencyMap[5]).t.ETE/oC);
-  items[1] = callback2(arg1(dependencyMap[4]).AlertActionButton, obj1, "cancel");
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj1.text = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
+  items[1] = callback2(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
   obj.children = items;
-  obj.actions = callback3(arg1(dependencyMap[6]).AlertActions, obj);
-  return callback2(arg1(dependencyMap[4]).AlertModal, obj);
+  obj.actions = callback3(require(4475) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback2(require(4475) /* getAlertModalItemKey */.AlertModal, obj);
 };

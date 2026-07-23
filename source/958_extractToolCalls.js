@@ -1,11 +1,11 @@
 // Module ID: 958
-// Function ID: 10376
+// Function ID: 10377
 // Name: extractToolCalls
-// Dependencies: [57, 27, 978]
+// Dependencies: [65, 934, 954]
 // Exports: extractToolsFromCompiledGraph, setResponseAttributes
 
 // Module 958 (extractToolCalls)
-import _slicedToArray from "_slicedToArray";
+import _toConsumableArray from "_toConsumableArray";
 
 function extractToolCalls(substr) {
   if (substr) {
@@ -30,13 +30,13 @@ function extractToolCalls(substr) {
             if (isArray) {
               let tmp9 = items;
               let push = items.push;
-              let tmp10 = _slicedToArray;
+              let tmp10 = _toConsumableArray;
               let tmp11 = tool_calls;
-              let applyResult = push.apply(items, _slicedToArray(tmp6));
+              let applyResult = push.apply(items, _toConsumableArray(tmp6));
             }
           }
         }
-        // continue
+        continue;
       }
       let tmp14 = null;
       if (items.length > 0) {
@@ -47,10 +47,10 @@ function extractToolCalls(substr) {
   }
   return null;
 }
-function extractTokenUsageFromMessage(usage_metadata) {
-  if (usage_metadata.usage_metadata) {
-    if ("object" === typeof usage_metadata.usage_metadata) {
-      usage_metadata = usage_metadata.usage_metadata;
+function extractTokenUsageFromMessage(item10057) {
+  if (item10057.usage_metadata) {
+    if ("object" === typeof item10057.usage_metadata) {
+      const usage_metadata = item10057.usage_metadata;
       let num6 = 0;
       if ("number" === typeof usage_metadata.input_tokens) {
         num6 = usage_metadata.input_tokens;
@@ -70,12 +70,12 @@ function extractTokenUsageFromMessage(usage_metadata) {
   let num = 0;
   let num2 = 0;
   let num3 = 0;
-  if (usage_metadata.response_metadata) {
+  if (item10057.response_metadata) {
     num = 0;
     num2 = 0;
     num3 = 0;
-    if ("object" === typeof usage_metadata.response_metadata) {
-      const response_metadata = usage_metadata.response_metadata;
+    if ("object" === typeof item10057.response_metadata) {
+      const response_metadata = item10057.response_metadata;
       num = 0;
       num2 = 0;
       num3 = 0;
@@ -108,16 +108,16 @@ function extractTokenUsageFromMessage(usage_metadata) {
   obj = { inputTokens: num, outputTokens: num2, totalTokens: num3 };
   return obj;
 }
-function extractModelMetadata(setAttribute, response_metadata) {
-  if (response_metadata.response_metadata) {
-    if ("object" === typeof response_metadata.response_metadata) {
-      response_metadata = response_metadata.response_metadata;
+function extractModelMetadata(setAttribute, item10057) {
+  if (item10057.response_metadata) {
+    if ("object" === typeof item10057.response_metadata) {
+      const response_metadata = item10057.response_metadata;
       let model_name = response_metadata.model_name;
       if (model_name) {
         model_name = "string" === typeof response_metadata.model_name;
       }
       if (model_name) {
-        const attr = setAttribute.setAttribute(require(dependencyMap[1]).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, response_metadata.model_name);
+        const attr = setAttribute.setAttribute(require(934).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, response_metadata.model_name);
       }
       let finish_reason = response_metadata.finish_reason;
       if (finish_reason) {
@@ -125,7 +125,7 @@ function extractModelMetadata(setAttribute, response_metadata) {
       }
       if (finish_reason) {
         const items = [response_metadata.finish_reason];
-        const attr1 = setAttribute.setAttribute(require(dependencyMap[1]).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, items);
+        const attr1 = setAttribute.setAttribute(require(934).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, items);
       }
     }
   }
@@ -224,37 +224,38 @@ export const setResponseAttributes = function setResponseAttributes(setAttribute
         const tmp38 = extractToolCalls(substr);
         if (tmp38) {
           const _JSON = JSON;
-          const attr = setAttribute.setAttribute(require(dependencyMap[1]).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(tmp38));
+          const attr = setAttribute.setAttribute(require(934).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(tmp38));
         }
-        const result = require(dependencyMap[2]).normalizeLangChainMessages(substr);
+        const result = require(954) /* asString */.normalizeLangChainMessages(substr);
         const _JSON2 = JSON;
-        const attr1 = setAttribute.setAttribute(require(dependencyMap[1]).GEN_AI_RESPONSE_TEXT_ATTRIBUTE, JSON.stringify(result));
+        const attr1 = setAttribute.setAttribute(require(934).GEN_AI_RESPONSE_TEXT_ATTRIBUTE, JSON.stringify(result));
         let num6 = 0;
         let num7 = 0;
         let num8 = 0;
         for (const item10057 of substr) {
-          let tmp14 = closure_4;
-          let tmp15 = closure_4(item10057);
+          let tmp14 = extractTokenUsageFromMessage;
+          let tmp15 = extractTokenUsageFromMessage(item10057);
           let tmp16 = num6;
           num6 = num6 + tmp15.inputTokens;
           let tmp17 = num7;
           num7 = num7 + tmp15.outputTokens;
           let tmp18 = num8;
           num8 = num8 + tmp15.totalTokens;
-          let tmp19 = closure_5;
+          let tmp19 = extractModelMetadata;
           let tmp20 = arg0;
-          let tmp21 = closure_5(arg0, item10057);
+          let tmp21 = extractModelMetadata(arg0, item10057);
+          continue;
         }
         if (num6 > 0) {
-          const attr2 = setAttribute.setAttribute(require(dependencyMap[1]).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE, num6);
+          const attr2 = setAttribute.setAttribute(require(934).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE, num6);
         }
         if (num7 > 0) {
-          const attr3 = setAttribute.setAttribute(require(dependencyMap[1]).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE, num7);
+          const attr3 = setAttribute.setAttribute(require(934).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE, num7);
         }
         if (num8 > 0) {
-          const attr4 = setAttribute.setAttribute(require(dependencyMap[1]).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE, num8);
+          const attr4 = setAttribute.setAttribute(require(934).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE, num8);
         }
-        const obj = require(dependencyMap[2]);
+        const obj = require(954) /* asString */;
       }
     }
   }

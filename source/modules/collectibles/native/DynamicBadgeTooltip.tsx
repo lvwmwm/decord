@@ -1,15 +1,17 @@
-// Module ID: 8737
-// Function ID: 69107
+// Module ID: 8744
+// Function ID: 69148
 // Name: DynamicBadgeTooltip
-// Dependencies: []
+// Dependencies: [57, 31, 33, 1212, 8564, 4660, 2]
 // Exports: DynamicBadgeTooltip
 
-// Module 8737 (DynamicBadgeTooltip)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = {};
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/collectibles/native/DynamicBadgeTooltip.tsx");
+// Module 8744 (DynamicBadgeTooltip)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let closure_5 = { top: 14, bottom: 14, left: 14, right: 14 };
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/DynamicBadgeTooltip.tsx");
 
 export const DynamicBadgeTooltip = function DynamicBadgeTooltip(tooltipPosition) {
   let accessibilityLabel;
@@ -19,32 +21,29 @@ export const DynamicBadgeTooltip = function DynamicBadgeTooltip(tooltipPosition)
   if (str === undefined) {
     str = "bottom";
   }
-  const arg1 = str;
-  let dependencyMap;
+  let first;
   let callback;
   let React;
-  let jsx;
+  callback = undefined;
   const ref = React.useRef(null);
   const tmp2 = callback(React.useState(false), 2);
-  const first = tmp2[0];
-  dependencyMap = first;
+  first = tmp2[0];
   callback = tmp2[1];
-  const intl = arg1(dependencyMap[3]).intl;
-  const stringResult = intl.string(arg1(dependencyMap[3]).t.dCou7i);
+  const intl = str(first[3]).intl;
+  const stringResult = intl.string(str(first[3]).t.dCou7i);
   React = stringResult;
   callback = React.useCallback(() => {
     callback(false);
   }, []);
-  jsx = callback;
   const items = [str, stringResult, first, callback];
-  const memo = React.useMemo(() => ({ position: str, label: stringResult, visible: first, onPress: callback }), items);
-  let obj = arg1(dependencyMap[4]);
+  const memo = React.useMemo(() => ({ position: str, label: c3, visible: first, onPress: callback }), items);
+  let obj = str(first[4]);
   const tooltip = obj.useTooltip(ref, memo);
   const items1 = [first];
   const effect = React.useEffect(() => {
     if (first) {
       const _setTimeout = setTimeout;
-      const timeout = setTimeout(() => callback(false), 2500);
+      const timeout = setTimeout(() => outer1_2(false), 2500);
       return () => clearTimeout(closure_0);
     }
   }, items1);
@@ -52,5 +51,5 @@ export const DynamicBadgeTooltip = function DynamicBadgeTooltip(tooltipPosition)
     callback((arg0) => !arg0);
   }, []);
   obj = { ref, onPress: callback1, hitSlop: closure_5, accessibilityRole: "button", accessibilityLabel, accessibilityHint: stringResult, children };
-  return jsx(arg1(dependencyMap[5]).PressableOpacity, obj);
+  return callback(str(first[5]).PressableOpacity, obj);
 };

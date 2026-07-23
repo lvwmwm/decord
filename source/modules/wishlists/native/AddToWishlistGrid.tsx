@@ -1,33 +1,39 @@
-// Module ID: 12019
-// Function ID: 92878
+// Module ID: 12133
+// Function ID: 95029
 // Name: AddToWishlistGrid
-// Dependencies: []
+// Dependencies: [31, 27, 5512, 33, 4130, 12132, 12134, 2]
 // Exports: default
 
-// Module 12019 (AddToWishlistGrid)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_5 = arg1(dependencyMap[4]).createStyles({ itemsContainer: { gap: arg1(dependencyMap[2]).WISHLIST_SUGGESTION_CARD_GAP } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/wishlists/native/AddToWishlistGrid.tsx");
+// Module 12133 (AddToWishlistGrid)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = { flexDirection: "row", flexWrap: "wrap", gap: require("ARBITRARY_LARGE_OFFSET").WISHLIST_SUGGESTION_CARD_GAP, justifyContent: "flex-start" };
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ itemsContainer: _createForOfIteratorHelperLoose });
+const result = require("ARBITRARY_LARGE_OFFSET").fileFinishedImporting("modules/wishlists/native/AddToWishlistGrid.tsx");
 
 export default function AddToWishlistGrid(arg0) {
+  let dependencyMap;
+  let importDefault;
   let items;
-  ({ items, wishlist: closure_0, analyticsLocations: closure_1, cardSize: closure_2 } = arg0);
+  let require;
+  ({ items, wishlist: require, analyticsLocations: importDefault, cardSize: dependencyMap } = arg0);
   return <View style={callback().itemsContainer}>{items.map((itemSource, positionInSection) => {
     const sku = itemSource.sku;
-    let obj = { newValue: obj };
+    obj = { newValue: obj };
     obj = { positionInSection, skuId: sku.id, itemSource: itemSource.itemSource, productLine: sku.productLine };
     obj = { sku };
     let id;
-    if (null != lib) {
-      id = lib.id;
+    if (null != id) {
+      id = id.id;
     }
     obj.wishlistId = id;
-    obj.analyticsLocations = callback;
+    obj.analyticsLocations = closure_1;
     obj.size = closure_2;
-    obj.children = closure_4(callback(closure_2[6]), obj);
-    return closure_4(lib(closure_2[5]).WishlistAnalyticsProvider, obj, sku.id);
+    obj.children = outer1_4(outer1_1(outer1_2[6]), obj);
+    return outer1_4(outer1_0(outer1_2[5]).WishlistAnalyticsProvider, obj, sku.id);
   })}</View>;
 };

@@ -1,16 +1,16 @@
-// Module ID: 14629
-// Function ID: 110324
+// Module ID: 14744
+// Function ID: 112488
 // Name: trackAgeGateSubmitted
-// Dependencies: []
+// Dependencies: [653, 675, 3712, 2]
 // Exports: default
 
-// Module 14629 (trackAgeGateSubmitted)
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");
+// Module 14744 (trackAgeGateSubmitted)
+import { AnalyticEvents } from "ME";
+
+const result = require("t").fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");
 
 export default function trackAgeGateSubmitted(format, section) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = {};
   let formatResult = null;
   if (obj3.diff(format, "years") < 18) {

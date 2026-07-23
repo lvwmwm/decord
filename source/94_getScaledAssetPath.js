@@ -1,32 +1,33 @@
 // Module ID: 94
 // Function ID: 1532
 // Name: getScaledAssetPath
-// Dependencies: []
+// Dependencies: [6, 7, 95, 96, 106, 44]
 
 // Module 94 (getScaledAssetPath)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
 function getScaledAssetPath(scales) {
-  const obj = arg1(dependencyMap[2]);
-  const _default = arg1(dependencyMap[3]).default;
+  const obj = require(95) /* pickScale */;
+  const _default = require(96) /* PixelRatio */.default;
   let str = "";
   if (1 !== pickScaleResult) {
     str = `${"@" + tmp}x`;
   }
-  const pickScaleResult = obj.pickScale(scales.scales, arg1(dependencyMap[3]).default.get());
-  return arg1(dependencyMap[4]).getBasePath(scales) + "/" + scales.name + str + "." + scales.type;
+  pickScaleResult = obj.pickScale(scales.scales, require(96) /* PixelRatio */.default.get());
+  return require(106) /* getBasePath */.getBasePath(scales) + "/" + scales.name + str + "." + scales.type;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+const tmp2 = (() => {
   class AssetSourceResolver {
     constructor(arg0, arg1, arg2) {
-      tmp = closure_2(this, AssetSourceResolver);
+      tmp = outer1_2(this, AssetSourceResolver);
       this.serverUrl = arg0;
       this.jsbundleUrl = arg1;
       this.asset = arg2;
       return;
     }
   }
-  const arg1 = AssetSourceResolver;
   let obj = {
     key: "isLoadedFromServer",
     value: function isLoadedFromServer() {
@@ -95,7 +96,7 @@ const tmp2 = () => {
         const _JSON2 = JSON;
         const text1 = `${`Don't know how to get asset via provided resolver: ${resolver}`}
       Asset: ${JSON.stringify(self.asset, null, "\t")}`;
-        const error = new Error(text1 + "\nPossible resolvers are:" + JSON.stringify(["r", "isArray"], null, "\t"));
+        const error = new Error(text1 + "\nPossible resolvers are:" + JSON.stringify(["android", "generic"], null, "\t"));
         throw error;
       }
     }
@@ -105,15 +106,15 @@ const tmp2 = () => {
     value: function assetServerURL() {
       let fromSource;
       let serverUrl;
-      AssetSourceResolver(closure_1[5])(null != this.serverUrl, "need server to load from");
+      AssetSourceResolver(outer1_1[5])(null != this.serverUrl, "need server to load from");
       ({ fromSource, serverUrl } = this);
-      return fromSource(serverUrl + callback2(this.asset) + "?platform=android&hash=" + this.asset.hash);
+      return fromSource(serverUrl + outer1_4(this.asset) + "?platform=android&hash=" + this.asset.hash);
     }
   };
   items[5] = {
     key: "scaledAssetPath",
     value: function scaledAssetPath() {
-      return this.fromSource(callback2(this.asset));
+      return this.fromSource(outer1_4(this.asset));
     }
   };
   items[6] = {
@@ -125,14 +126,14 @@ const tmp2 = () => {
       if (null != jsbundleUrl) {
         str = jsbundleUrl;
       }
-      return self.fromSource(str + callback2(self.asset).replace(/\.\.\//g, "_"));
+      return self.fromSource(str + outer1_4(self.asset).replace(/\.\.\//g, "_"));
     }
   };
   items[7] = {
     key: "resourceIdentifierWithoutScale",
     value: function resourceIdentifierWithoutScale() {
-      AssetSourceResolver(closure_1[5])(true, "resource identifiers work on Android");
-      return this.fromSource(AssetSourceResolver(closure_1[4]).getAndroidResourceIdentifier(this.asset));
+      AssetSourceResolver(outer1_1[5])(true, "resource identifiers work on Android");
+      return this.fromSource(AssetSourceResolver(outer1_1[4]).getAndroidResourceIdentifier(this.asset));
     }
   };
   items[8] = {
@@ -145,25 +146,25 @@ const tmp2 = () => {
         str = jsbundleUrl;
       }
       const asset = self.asset;
-      const obj = AssetSourceResolver(closure_1[2]);
-      obj.pickScale(asset.scales, AssetSourceResolver(closure_1[3]).default.get());
-      const obj2 = AssetSourceResolver(closure_1[4]);
+      const obj = AssetSourceResolver(outer1_1[2]);
+      obj.pickScale(asset.scales, AssetSourceResolver(outer1_1[3]).default.get());
+      const obj2 = AssetSourceResolver(outer1_1[4]);
       const text = `${obj2.getAndroidResourceFolderName(asset, tmp)}/`;
-      const _default = AssetSourceResolver(closure_1[3]).default;
-      return self.fromSource(str + (`${obj2.getAndroidResourceFolderName(asset, tmp)}/` + AssetSourceResolver(closure_1[4]).getAndroidResourceIdentifier(asset) + "." + asset.type));
+      const _default = AssetSourceResolver(outer1_1[3]).default;
+      return self.fromSource(str + (`${obj2.getAndroidResourceFolderName(asset, tmp)}/` + AssetSourceResolver(outer1_1[4]).getAndroidResourceIdentifier(asset) + "." + asset.type));
     }
   };
   items[9] = {
     key: "fromSource",
     value: function fromSource(uri) {
       const obj = { __packager_asset: true, width: this.asset.width, height: this.asset.height, uri };
-      const obj2 = AssetSourceResolver(closure_1[2]);
-      obj.scale = obj2.pickScale(this.asset.scales, AssetSourceResolver(closure_1[3]).default.get());
+      const obj2 = AssetSourceResolver(outer1_1[2]);
+      obj.scale = obj2.pickScale(this.asset.scales, AssetSourceResolver(outer1_1[3]).default.get());
       return obj;
     }
   };
   return callback(AssetSourceResolver, items);
-}();
-tmp2.pickScale = arg1(dependencyMap[2]).pickScale;
+})();
+tmp2.pickScale = require("pickScale").pickScale;
 
 export default tmp2;

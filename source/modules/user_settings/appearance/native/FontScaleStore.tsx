@@ -1,22 +1,23 @@
-// Module ID: 14038
-// Function ID: 106741
+// Module ID: 14152
+// Function ID: 108897
 // Name: customFontScale
-// Dependencies: []
+// Dependencies: [477, 9890, 677, 2]
 
-// Module 14038 (customFontScale)
-const _module = require(dependencyMap[0]);
-if (_module.isAndroid()) {
-  let customFontScale = importDefault(dependencyMap[1]).getCustomFontScale();
-  const importDefaultResult = importDefault(dependencyMap[1]);
+// Module 14152 (customFontScale)
+import set from "set";
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+import set from "useStoreWithEqualityFn";
+
+if (set.isAndroid()) {
+  let customFontScale = require("enforcing").getCustomFontScale();
+  const importDefaultResult = require("enforcing");
 } else {
-  customFontScale = {};
+  customFontScale = { fontScale: 1, isClassicChatFontScaleEnabled: false };
 }
 const obj = {};
 ({ fontScale: obj4.persistedFontScale, isClassicChatFontScaleEnabled: obj4.persistedIsClassicChatFontScaleEnabled, fontScale: obj4.fontScale, isClassicChatFontScaleEnabled: obj4.isClassicChatFontScaleEnabled } = customFontScale);
-const _module1 = require(dependencyMap[2]);
-const withEqualityFn = _module1.createWithEqualityFn(() => obj);
-const _module2 = require(dependencyMap[3]);
-const result = _module2.fileFinishedImporting("modules/user_settings/appearance/native/FontScaleStore.tsx");
+const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn(() => obj);
+const result = set.fileFinishedImporting("modules/user_settings/appearance/native/FontScaleStore.tsx");
 
 export const DEFAULT_FONT_SCALE_STORE_STATE = obj;
 export const useFontScaleStore = withEqualityFn;

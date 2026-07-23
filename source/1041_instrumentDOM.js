@@ -1,21 +1,23 @@
 // Module ID: 1041
-// Function ID: 11193
+// Function ID: 11194
 // Name: instrumentDOM
-// Dependencies: []
+// Dependencies: [794, 1015]
 
 // Module 1041 (instrumentDOM)
+let require = arg1;
+const dependencyMap = arg6;
 function instrumentDOM() {
-  if (arg1(arg6[1]).WINDOW.document) {
-    const bindResult = arg1(arg6[0]).triggerHandlers.bind(null, "dom");
-    const arg1 = bindResult;
-    const tmp6 = makeDOMEventHandler(bindResult, true);
-    const _document = arg1(arg6[1]).WINDOW.document;
+  if (require(1015) /* WINDOW */.WINDOW.document) {
+    const bindResult = require(794) /* registerSpanErrorInstrumentation */.triggerHandlers.bind(null, "dom");
+    require = bindResult;
+    let tmp6 = makeDOMEventHandler(bindResult, true);
+    const _document = require(1015) /* WINDOW */.WINDOW.document;
     const listener = _document.addEventListener("click", tmp6, false);
-    const _document2 = arg1(arg6[1]).WINDOW.document;
+    const _document2 = require(1015) /* WINDOW */.WINDOW.document;
     const listener1 = _document2.addEventListener("keypress", tmp6, false);
-    const items = [];
+    const items = ["EventTarget", "Node"];
     const item = items.forEach((arg0) => {
-      const tmp = bindResult(closure_1[1]).WINDOW[arg0];
+      const tmp = bindResult(outer1_1[1]).WINDOW[arg0];
       let prototype;
       if (null != tmp) {
         prototype = tmp.prototype;
@@ -25,62 +27,68 @@ function instrumentDOM() {
         hasOwnPropertyResult = prototype.hasOwnProperty("addEventListener");
       }
       if (hasOwnPropertyResult) {
-        bindResult(closure_1[0]).fill(prototype, "addEventListener", (arg0) => function(arg0, arg1, arg2) {
-          const self = this;
-          if ("click" === arg0) {
-            const __sentry_instrumentation_handlers__ = self.__sentry_instrumentation_handlers__;
-            let obj = __sentry_instrumentation_handlers__;
-            if (!__sentry_instrumentation_handlers__) {
-              obj = {};
-            }
-            self.__sentry_instrumentation_handlers__ = obj;
-            let tmp6 = tmp5;
-            if (!obj[tmp]) {
-              obj = { refCount: 0 };
-              tmp6 = obj;
-            }
-            obj[tmp] = tmp6;
-            if (!tmp6.handler) {
-              const tmp10 = callback(arg0);
-              tmp7.handler = tmp10;
-              arg0.call(self, tmp, tmp10, arg2);
-            }
-            tmp6.refCount = tmp6.refCount + 1;
-          }
-          arg0.call(self, arg0, arg1, arg2);
-        });
-        const obj = bindResult(closure_1[0]);
-        bindResult(closure_1[0]).fill(prototype, "removeEventListener", (arg0) => function(arg0, arg1, arg2) {
-          const self = this;
-          if ("click" === arg0) {
-            const __sentry_instrumentation_handlers__ = self.__sentry_instrumentation_handlers__;
-            let obj = __sentry_instrumentation_handlers__;
-            if (!__sentry_instrumentation_handlers__) {
-              obj = {};
-            }
-            if (obj[tmp]) {
-              tmp7.refCount = tmp7.refCount - 1;
-              if (tmp7.refCount <= 0) {
-                arg0.call(self, arg0, tmp6.handler, arg2);
-                tmp6.handler = undefined;
-                delete r4[r6];
+        bindResult(outer1_1[0]).fill(prototype, "addEventListener", (arg0) => {
+          let closure_0 = arg0;
+          return function(arg0, arg1, arg2) {
+            const self = this;
+            if ("click" === arg0) {
+              const __sentry_instrumentation_handlers__ = self.__sentry_instrumentation_handlers__;
+              let obj = __sentry_instrumentation_handlers__;
+              if (!__sentry_instrumentation_handlers__) {
+                obj = {};
               }
-              const _Object = Object;
-              if (0 === Object.keys(tmp3).length) {
-                delete r5.__sentry_instrumentation_handlers__;
+              self.__sentry_instrumentation_handlers__ = obj;
+              let tmp6 = tmp5;
+              if (!obj[tmp]) {
+                obj = { refCount: 0 };
+                tmp6 = obj;
+              }
+              obj[tmp] = tmp6;
+              if (!tmp6.handler) {
+                const tmp10 = outer3_6(outer2_0);
+                tmp7.handler = tmp10;
+                callback.call(self, tmp, tmp10, arg2);
+              }
+              tmp6.refCount = tmp6.refCount + 1;
+            }
+            callback.call(self, arg0, arg1, arg2);
+          };
+        });
+        let obj = bindResult(outer1_1[0]);
+        bindResult(outer1_1[0]).fill(prototype, "removeEventListener", (arg0) => {
+          let closure_0 = arg0;
+          return function(arg0, arg1, arg2) {
+            const self = this;
+            if ("click" === arg0) {
+              const __sentry_instrumentation_handlers__ = self.__sentry_instrumentation_handlers__;
+              let obj = __sentry_instrumentation_handlers__;
+              if (!__sentry_instrumentation_handlers__) {
+                obj = {};
+              }
+              if (obj[tmp4]) {
+                tmp10.refCount = tmp10.refCount - 1;
+                if (tmp10.refCount <= 0) {
+                  callback.call(self, arg0, tmp9.handler, arg2);
+                  tmp9.handler = undefined;
+                  delete tmp[tmp3];
+                }
+                const _Object = Object;
+                if (0 === Object.keys(tmp6).length) {
+                  delete tmp2.__sentry_instrumentation_handlers__;
+                }
               }
             }
-          }
-          arg0.call(self, arg0, arg1, arg2);
+            callback.call(self, arg0, arg1, arg2);
+          };
         });
-        const obj2 = bindResult(closure_1[0]);
+        const obj2 = bindResult(outer1_1[0]);
       }
     });
-    const triggerHandlers = arg1(arg6[0]).triggerHandlers;
+    const triggerHandlers = require(794) /* registerSpanErrorInstrumentation */.triggerHandlers;
   }
 }
 function makeDOMEventHandler(bindResult, arg1) {
-  arg1 = bindResult;
+  let closure_0 = bindResult;
   let closure_1 = arguments.length > 1 && undefined !== arguments[1] && arguments[1];
   return (_sentryCaptured) => {
     if (_sentryCaptured) {
@@ -107,13 +115,13 @@ function makeDOMEventHandler(bindResult, arg1) {
               tmp4 = tmp5;
             }
             tmp2 = tmp4;
-            // break
+            break;
           }
           if (!tmp2) {
-            let tmp6 = _sentryCaptured;
-            let tmp7 = closure_1;
+            let tmp6 = bindResult;
+            let tmp7 = dependencyMap;
             let num = 0;
-            let obj = _sentryCaptured(closure_1[0]);
+            let obj = bindResult(794);
             let str4 = "_sentryCaptured";
             let flag = true;
             let result = obj.addNonEnumerableProperty(_sentryCaptured, "_sentryCaptured", true);
@@ -122,10 +130,10 @@ function makeDOMEventHandler(bindResult, arg1) {
               tmp9 = !target._sentryId;
             }
             if (tmp9) {
-              let tmp10 = _sentryCaptured;
-              let tmp11 = closure_1;
-              let obj2 = _sentryCaptured(closure_1[0]);
-              let obj3 = _sentryCaptured(closure_1[0]);
+              let tmp10 = bindResult;
+              let tmp11 = dependencyMap;
+              let obj2 = bindResult(794);
+              let obj3 = bindResult(794);
               let str5 = "_sentryId";
               let result1 = obj2.addNonEnumerableProperty(target, "_sentryId", obj3.uuid4());
             }
@@ -133,13 +141,13 @@ function makeDOMEventHandler(bindResult, arg1) {
             if ("keypress" !== _sentryCaptured.type) {
               str6 = _sentryCaptured.type;
             }
-            let tmp14 = type;
+            let tmp14 = outer1_3;
             let flag2 = false;
-            if (_sentryCaptured.type === type) {
+            if (_sentryCaptured.type === outer1_3) {
               let tmp15 = _sentryCaptured;
               if (tmp13.target) {
-                let tmp16 = _sentryId;
-                if (_sentryCaptured.target._sentryId === _sentryId) {
+                let tmp16 = outer1_4;
+                if (_sentryCaptured.target._sentryId === outer1_4) {
                   flag2 = true;
                 }
               }
@@ -149,30 +157,31 @@ function makeDOMEventHandler(bindResult, arg1) {
               if (flag2) {
                 break;
               } else {
-                let tmp17 = _sentryCaptured;
+                let tmp17 = bindResult;
                 obj = { event: _sentryCaptured, name: str6 };
-                let tmp18 = closure_1;
-                obj.global = closure_1;
-                let tmp19 = _sentryCaptured(obj);
-                let type = _sentryCaptured.type;
+                let tmp18 = dependencyMap;
+                obj.global = dependencyMap;
+                let tmp19 = bindResult(obj);
+                outer1_3 = _sentryCaptured.type;
                 let _sentryId;
                 if (target) {
                   _sentryId = target._sentryId;
                 }
-                // break
+                outer1_4 = _sentryId;
+                break;
               }
               let tmp21 = globalThis;
               let _clearTimeout = clearTimeout;
-              let tmp22 = timeout;
-              let clearTimeoutResult = clearTimeout(timeout);
-              let tmp24 = _sentryCaptured;
-              let tmp25 = closure_1;
+              let tmp22 = outer1_2;
+              let clearTimeoutResult = clearTimeout(outer1_2);
+              let tmp24 = bindResult;
+              let tmp25 = dependencyMap;
               let num2 = 1;
-              let WINDOW = _sentryCaptured(closure_1[1]).WINDOW;
+              let WINDOW = bindResult(1015).WINDOW;
               let num3 = 1000;
-              let timeout = WINDOW.setTimeout(() => {
-                let closure_4;
-                let closure_3;
+              outer1_2 = WINDOW.setTimeout(() => {
+                let outer2_4;
+                let outer2_3;
               }, 1000);
             }
           }
@@ -183,8 +192,8 @@ function makeDOMEventHandler(bindResult, arg1) {
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.addClickKeypressInstrumentationHandler = function addClickKeypressInstrumentationHandler(arg0) {
-  arg1(arg6[0]).addHandler("dom", arg0);
-  const obj = arg1(arg6[0]);
-  arg1(arg6[0]).maybeInstrument("dom", instrumentDOM);
+  require(794) /* registerSpanErrorInstrumentation */.addHandler("dom", arg0);
+  const obj = require(794) /* registerSpanErrorInstrumentation */;
+  require(794) /* registerSpanErrorInstrumentation */.maybeInstrument("dom", instrumentDOM);
 };
 arg5.instrumentDOM = instrumentDOM;

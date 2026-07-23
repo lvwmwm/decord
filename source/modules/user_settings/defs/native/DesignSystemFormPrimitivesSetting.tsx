@@ -1,25 +1,25 @@
-// Module ID: 14350
-// Function ID: 108354
+// Module ID: 14464
+// Function ID: 110507
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14465, 2]
 
-// Module 14350 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14464 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Form Primitives";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_FORM_PRIMITIVES,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_FORM_PRIMITIVES,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14465) /* Radio */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemFormPrimitivesSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemFormPrimitivesSetting.tsx");
 
 export default route;

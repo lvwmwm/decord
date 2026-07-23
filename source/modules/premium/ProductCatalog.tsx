@@ -1,13 +1,27 @@
-// Module ID: 12873
-// Function ID: 98360
+// Module ID: 12987
+// Function ID: 100516
 // Name: _isNativeReflectConstruct
-// Dependencies: [357564416, 131072, 528023552, 452984832, 3791650816, 553648129, 503316480, 2969567248, 3170893826, 1744830481, 33554461, 2046820352, 31, 27, 653, 33]
+// Dependencies: [7, 6, 16, 15, 17, 18, 1851, 3, 12988, 7951, 7996, 12989, 1867, 12990, 1865, 2]
 // Exports: canUserUse
 
-// Module 12873 (_isNativeReflectConstruct)
-import module_33 from "module_33";
+// Module 12987 (_isNativeReflectConstruct)
+import timestamp from "timestamp";
+import closure_4 from "GuildFeatures";
+import _assertThisInitialized from "_assertThisInitialized";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import GuildFeatures from "GuildFeatures";
+import importDefaultResult from "_possibleConstructorReturn";
+import tmp5 from "PremiumSKUFeature";
+import importDefaultResult1 from "PremiumSKUFeature";
+import importDefaultResult2 from "SKUListing";
+import importDefaultResult3 from "SKUListing";
+import importDefaultResult4 from "SKUListing";
 
 let PremiumSubscriptionSKUs;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,106 +31,44 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ PremiumSubscriptionSKUs, PremiumTypeToActivePremiumSubscriptionSKU: closure_9 } = arg1(dependencyMap[6]));
-let importDefaultResult = importDefault(dependencyMap[7]);
+({ PremiumSubscriptionSKUs, PremiumTypeToActivePremiumSubscriptionSKU: closure_9 } = GuildFeatures);
 importDefaultResult = new importDefaultResult("ProductCatalog.tsx");
-let tmp5 = (arg0) => {
-  class ProductCatalogFeature {
-    constructor(arg0, arg1) {
-      self = this;
-      tmp = closure_4(this, ProductCatalogFeature);
-      items = [, , ];
-      items[0] = arg0;
-      items[1] = (premiumType) => {
-        let flag = false;
-        if (null != premiumType) {
-          flag = false;
-          if (null != tmp2.premiumType) {
-            if (null == closure_9[tmp2.premiumType]) {
-              const _HermesInternal2 = HermesInternal;
-              closure_10.warn("Cannot find the corresponding SKU to the user's premium type " + premiumType.premiumType);
-              flag = false;
-            } else {
-              if (null == closure_11[tmp7]) {
-                const _HermesInternal = HermesInternal;
-                closure_10.warn("Cannot find the corresponding product catalog entry to the user's SKU " + tmp7 + " and premium type " + tmp2.premiumType);
-                let flag2 = false;
-              } else {
-                const skuFeatures = tmp10.skuFeatures;
-                flag2 = skuFeatures.includes(tmp);
-              }
-              flag = flag2;
-            }
-          }
-        }
-        return flag;
-      };
-      items[2] = arg1;
-      obj = closure_7(ProductCatalogFeature);
-      tmp2 = closure_6;
-      if (closure_16()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items, closure_7(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      ProductCatalogFeature = tmp2Result;
-      return tmp2Result;
-    }
-  }
-  const arg1 = ProductCatalogFeature;
-  callback2(ProductCatalogFeature, arg0);
-  return callback(ProductCatalogFeature);
-}(importDefault(dependencyMap[8]));
-tmp5 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.ANIMATED_EMOJIS);
-tmp5 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.EMOJIS_EVERYWHERE);
-const tmp51 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.STICKERS_EVERYWHERE);
-const tmp52 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE);
-const tmp53 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.CUSTOM_CALL_SOUNDS);
-const tmp54 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.PREMIUM_VOICE_FILTERS);
-const tmp55 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.ANIMATED_AVATAR);
-const tmp56 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.CUSTOM_DISCRIMINATOR);
-const tmp57 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.PREMIUM_GUILD_MEMBER_PROFILE);
+tmp5 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.ANIMATED_EMOJIS);
+tmp5 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.EMOJIS_EVERYWHERE);
+const tmp51 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.STICKERS_EVERYWHERE);
+const tmp52 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE);
+const tmp53 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.CUSTOM_CALL_SOUNDS);
+const tmp54 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.PREMIUM_VOICE_FILTERS);
+const tmp55 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.ANIMATED_AVATAR);
+const tmp56 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.CUSTOM_DISCRIMINATOR);
+const tmp57 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.PREMIUM_GUILD_MEMBER_PROFILE);
 const tmp58 = new tmp5("profileBadges");
-const tmp59 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration");
+const tmp59 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration");
 const tmp510 = new tmp5("collectibles");
 const tmp511 = new tmp5("appIcons");
-const tmp512 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.CLIENT_THEMES);
+const tmp512 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.CLIENT_THEMES);
 const tmp513 = new tmp5("boostDiscount");
 const tmp514 = new tmp5("freeBoosts");
-const tmp515 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.STREAM_MID_QUALITY);
-const tmp516 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.STREAM_HIGH_QUALITY);
-const tmp517 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.CUSTOM_NOTIFICATION_SOUNDS);
+const tmp515 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.STREAM_MID_QUALITY);
+const tmp516 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.STREAM_HIGH_QUALITY);
+const tmp517 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.CUSTOM_NOTIFICATION_SOUNDS);
 const tmp518 = new tmp5("fancyVoiceChannelReactions");
 const tmp519 = new tmp5("installPremiumApplications");
 const tmp520 = new tmp5("redeemPremiumPerks");
-const tmp521 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.VIDEO_FILTER_ASSETS);
-let importDefaultResult1 = importDefault(dependencyMap[8]);
-importDefaultResult1 = new importDefaultResult1(arg1(dependencyMap[9]).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE, arg1(dependencyMap[10]).getUserMaxFileSize);
-const tmp522 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.INCREASED_GUILD_LIMIT);
-const tmp523 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.INCREASED_MESSAGE_LENGTH);
+const tmp521 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.VIDEO_FILTER_ASSETS);
+importDefaultResult1 = new importDefaultResult1(require("EntitlementFeatureNames").EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE, require("getUserMaxFileSize").getUserMaxFileSize);
+const tmp522 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.INCREASED_GUILD_LIMIT);
+const tmp523 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.INCREASED_MESSAGE_LENGTH);
 const tmp524 = new tmp5("increasedVideoUploadQuality");
 const tmp525 = new tmp5("uploadLargeFiles");
-const tmp526 = new tmp5(arg1(dependencyMap[9]).EntitlementFeatureNames.QUEST_ORB_MULTIPLIER);
-const obj = {};
-let importDefaultResult2 = importDefault(dependencyMap[11]);
-const items = [tmp5, tmp5, tmp51, tmp58, tmp521, tmp524, tmp525, tmp511];
+const tmp526 = new tmp5(require("EntitlementFeatureNames").EntitlementFeatureNames.QUEST_ORB_MULTIPLIER);
+let obj = {};
+let items = [tmp5, tmp5, tmp51, tmp58, tmp521, tmp524, tmp525, tmp511];
 importDefaultResult2 = new importDefaultResult2(PremiumSubscriptionSKUs.TIER_0, items);
 obj[PremiumSubscriptionSKUs.TIER_0] = importDefaultResult2;
-let importDefaultResult3 = importDefault(dependencyMap[11]);
 const items1 = [tmp5, tmp5, tmp55, tmp56, tmp58, tmp513, tmp515, tmp518, tmp524, tmp525, tmp511];
 importDefaultResult3 = new importDefaultResult3(PremiumSubscriptionSKUs.TIER_1, items1);
 obj[PremiumSubscriptionSKUs.TIER_1] = importDefaultResult3;
-let importDefaultResult4 = importDefault(dependencyMap[11]);
 const items2 = [tmp5, tmp5, tmp51, tmp52, tmp53, tmp55, tmp56, tmp57, tmp58, tmp59, tmp512, tmp513, tmp514, tmp515, tmp516, tmp518, tmp519, tmp520, tmp521, tmp522, tmp523, tmp524, tmp525, tmp511, tmp510, tmp517, tmp54, tmp526];
 importDefaultResult4 = new importDefaultResult4(PremiumSubscriptionSKUs.TIER_2, items2);
 obj[PremiumSubscriptionSKUs.TIER_2] = importDefaultResult4;
@@ -124,56 +76,56 @@ const frozen = Object.freeze(obj);
 const items3 = [tmp513, tmp514];
 const items4 = [tmp526];
 let closure_14 = [];
-const items5 = [tmp5, require("module_31").Perk.ANIMATED_EMOJIS];
+const items5 = [tmp5, require("_callSuper").Perk.ANIMATED_EMOJIS];
 const items6 = [items5, , , , , , , , , , , , , , , , , , , , , , , ];
-const items7 = [tmp5, require("module_31").Perk.EMOJIS_EVERYWHERE];
+const items7 = [tmp5, require("_callSuper").Perk.EMOJIS_EVERYWHERE];
 items6[1] = items7;
-const items8 = [tmp51, require("module_31").Perk.STICKERS_EVERYWHERE];
+const items8 = [tmp51, require("_callSuper").Perk.STICKERS_EVERYWHERE];
 items6[2] = items8;
-const items9 = [tmp52, require("module_31").Perk.SOUNDBOARD_EVERYWHERE];
+const items9 = [tmp52, require("_callSuper").Perk.SOUNDBOARD_EVERYWHERE];
 items6[3] = items9;
-const items10 = [tmp53, require("module_31").Perk.CUSTOM_CALL_SOUNDS];
+const items10 = [tmp53, require("_callSuper").Perk.CUSTOM_CALL_SOUNDS];
 items6[4] = items10;
-const items11 = [tmp54, require("module_31").Perk.PREMIUM_VOICE_FILTERS];
+const items11 = [tmp54, require("_callSuper").Perk.PREMIUM_VOICE_FILTERS];
 items6[5] = items11;
-const items12 = [tmp55, require("module_31").Perk.ANIMATED_AVATAR];
+const items12 = [tmp55, require("_callSuper").Perk.ANIMATED_AVATAR];
 items6[6] = items12;
-const items13 = [tmp56, require("module_31").Perk.CUSTOM_DISCRIMINATOR];
+const items13 = [tmp56, require("_callSuper").Perk.CUSTOM_DISCRIMINATOR];
 items6[7] = items13;
-const items14 = [tmp57, require("module_31").Perk.PREMIUM_GUILD_MEMBER_PROFILE];
+const items14 = [tmp57, require("_callSuper").Perk.PREMIUM_GUILD_MEMBER_PROFILE];
 items6[8] = items14;
-const items15 = [tmp59, require("module_31").Perk.PROFILE_PREMIUM_FEATURES];
+const items15 = [tmp59, require("_callSuper").Perk.PROFILE_PREMIUM_FEATURES];
 items6[9] = items15;
-const items16 = [tmp510, require("module_31").Perk.PREMIUM_COLLECTIBLES];
+const items16 = [tmp510, require("_callSuper").Perk.PREMIUM_COLLECTIBLES];
 items6[10] = items16;
-const items17 = [tmp512, require("module_31").Perk.CLIENT_THEMES];
+const items17 = [tmp512, require("_callSuper").Perk.CLIENT_THEMES];
 items6[11] = items17;
-const items18 = [tmp515, require("module_31").Perk.STREAM_MID_QUALITY];
+const items18 = [tmp515, require("_callSuper").Perk.STREAM_MID_QUALITY];
 items6[12] = items18;
-const items19 = [tmp516, require("module_31").Perk.STREAM_HIGH_QUALITY];
+const items19 = [tmp516, require("_callSuper").Perk.STREAM_HIGH_QUALITY];
 items6[13] = items19;
-const items20 = [tmp521, require("module_31").Perk.VIDEO_FILTER_ASSETS];
+const items20 = [tmp521, require("_callSuper").Perk.VIDEO_FILTER_ASSETS];
 items6[14] = items20;
-const items21 = [tmp522, require("module_31").Perk.INCREASED_GUILD_LIMIT];
+const items21 = [tmp522, require("_callSuper").Perk.INCREASED_GUILD_LIMIT];
 items6[15] = items21;
-const items22 = [tmp523, require("module_31").Perk.INCREASED_MESSAGE_LENGTH];
+const items22 = [tmp523, require("_callSuper").Perk.INCREASED_MESSAGE_LENGTH];
 items6[16] = items22;
-const items23 = [tmp525, require("module_31").Perk.INCREASED_FILE_UPLOAD_SIZE];
+const items23 = [tmp525, require("_callSuper").Perk.INCREASED_FILE_UPLOAD_SIZE];
 items6[17] = items23;
-const items24 = [tmp58, require("module_31").Perk.PROFILE_BADGES];
+const items24 = [tmp58, require("_callSuper").Perk.PROFILE_BADGES];
 items6[18] = items24;
-const items25 = [tmp511, require("module_31").Perk.APP_ICONS];
+const items25 = [tmp511, require("_callSuper").Perk.APP_ICONS];
 items6[19] = items25;
-const items26 = [tmp513, require("module_31").Perk.BOOST_DISCOUNT];
+const items26 = [tmp513, require("_callSuper").Perk.BOOST_DISCOUNT];
 items6[20] = items26;
-const items27 = [tmp514, require("module_31").Perk.FREE_BOOSTS];
+const items27 = [tmp514, require("_callSuper").Perk.FREE_BOOSTS];
 items6[21] = items27;
-const items28 = [tmp519, require("module_31").Perk.INSTALL_PREMIUM_APPLICATIONS];
+const items28 = [tmp519, require("_callSuper").Perk.INSTALL_PREMIUM_APPLICATIONS];
 items6[22] = items28;
-const items29 = [tmp524, require("module_31").Perk.INCREASED_VIDEO_UPLOAD_QUALITY];
+const items29 = [tmp524, require("_callSuper").Perk.INCREASED_VIDEO_UPLOAD_QUALITY];
 items6[23] = items29;
 const map = new Map(items6);
-const result = module_33.fileFinishedImporting("modules/premium/ProductCatalog.tsx");
+let result = require("_assertThisInitialized").fileFinishedImporting("modules/premium/ProductCatalog.tsx");
 
 export const ANIMATED_EMOJIS = tmp5;
 export const EMOJIS_EVERYWHERE = tmp5;
@@ -232,17 +184,17 @@ export const canUserUse = function canUserUse(ANIMATED_AVATAR, isPremiumWithFrac
       perks = isPremiumWithFractionalPremiumOnly.perks;
     }
     if (null != perks) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(12990);
       obj = { location: "product_catalog_can_user_use" };
       const config = obj.getConfig(obj);
-      if (config !== isPremiumWithFractionalPremiumOnly(dependencyMap[13]).DenormalizedPerksReadConfig.CONTROL) {
+      if (config !== require(12990) /* apexExperiment */.DenormalizedPerksReadConfig.CONTROL) {
         let featureValue = ANIMATED_AVATAR.getFeatureValue(isPremiumWithFractionalPremiumOnly);
         let perks1;
         if (null != isPremiumWithFractionalPremiumOnly) {
           perks1 = isPremiumWithFractionalPremiumOnly.perks;
         }
-        const obj3 = isPremiumWithFractionalPremiumOnly(dependencyMap[14]);
-        if (config === isPremiumWithFractionalPremiumOnly(dependencyMap[13]).DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
+        const obj3 = require(1865) /* parseServerPerkConfigKind */;
+        if (config === require(12990) /* apexExperiment */.DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
           featureValue = hasPerkResult;
         }
         return featureValue;

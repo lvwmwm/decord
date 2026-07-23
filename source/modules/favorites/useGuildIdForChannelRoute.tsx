@@ -1,18 +1,20 @@
-// Module ID: 4135
-// Function ID: 34369
+// Module ID: 4139
+// Function ID: 34399
 // Name: useGuildIdForChannelRoute
-// Dependencies: []
+// Dependencies: [3947, 1351, 653, 566, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 4135 (useGuildIdForChannelRoute)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const FAVORITES = arg1(dependencyMap[2]).FAVORITES;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/favorites/useGuildIdForChannelRoute.tsx");
+// Module 4139 (useGuildIdForChannelRoute)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { FAVORITES } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/favorites/useGuildIdForChannelRoute.tsx");
 
 export default function useGuildIdForChannelRoute(getGuildId) {
-  const items = [closure_2];
-  let stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => guildId.getGuildId());
+  const items = [_isNativeReflectConstruct];
+  let stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getGuildId());
   if (null == stateFromStores) {
     stateFromStores = getGuildId.getGuildId();
   }
@@ -20,7 +22,7 @@ export default function useGuildIdForChannelRoute(getGuildId) {
 };
 export const getGuildIdForGenericRedirect = function getGuildIdForGenericRedirect(channel) {
   if (guildId.getGuildId() !== FAVORITES) {
-    let guildId = channel.getGuildId();
+    guildId = channel.getGuildId();
   } else if (closure_3.isFavorite(channel.id)) {
     guildId = FAVORITES;
   } else {

@@ -1,21 +1,25 @@
-// Module ID: 4549
-// Function ID: 39885
+// Module ID: 4553
+// Function ID: 39917
 // Name: useShineEffectStyles
-// Dependencies: []
+// Dependencies: [57, 31, 33, 4548, 666, 3976, 3991, 4131, 4130, 2]
 // Exports: ButtonShine
 
-// Module 4549 (useShineEffectStyles)
+// Module 4553 (useShineEffectStyles)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function useShineEffectStyles(width, variant) {
-  variant = width;
-  let obj = variant(dependencyMap[3]);
+  const _require = width;
+  let obj = _require(4548);
   const buttonTextColorStyles = obj.useButtonTextColorStyles(variant);
-  let obj1 = importDefault(dependencyMap[4])(buttonTextColorStyles.color);
+  let obj1 = enabled(666)(buttonTextColorStyles.color);
   const hexResult = obj1.alpha(0.1).hex();
-  const enabled = React.useContext(variant(dependencyMap[5]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const importDefault = enabled;
+  enabled = React.useContext(_require(3976).AccessibilityPreferencesContext).reducedMotion.enabled;
   const alphaResult = obj1.alpha(0.1);
   const fn = function o() {
-    if (null == arg0) {
+    if (null == width) {
       let obj = {};
       obj = { translateX: -120 };
       const items = [obj];
@@ -25,48 +29,45 @@ function useShineEffectStyles(width, variant) {
       let obj1 = {};
       let obj2 = {};
       if (enabled) {
-        obj2.translateX = (arg0 - 56) / 2;
+        obj2.translateX = (width - 56) / 2;
         const items1 = [obj2];
         obj1.transform = items1;
         tmp5 = obj1;
       } else {
-        obj = arg0(closure_2[6]);
-        obj1 = arg0(closure_2[6]);
-        obj2 = arg0(closure_2[7]);
+        obj = width(outer1_2[6]);
+        obj1 = width(outer1_2[6]);
+        obj2 = width(outer1_2[7]);
         const obj3 = { duration: 0 };
-        let obj4 = arg0(closure_2[6]);
+        let obj4 = width(outer1_2[6]);
         const withTimingResult = obj2.withTiming(-120, obj3, "animate-always");
         obj4 = { duration: 2000 };
-        obj2.translateX = obj.withRepeat(obj1.withSequence(withTimingResult, obj4.withDelay(750, arg0(closure_2[7]).withTiming(arg0 + 120, obj4, "animate-always"))), -1);
+        obj2.translateX = obj.withRepeat(obj1.withSequence(withTimingResult, obj4.withDelay(750, width(outer1_2[7]).withTiming(width + 120, obj4, "animate-always"))), -1);
         const items2 = [obj2];
         obj1.transform = items2;
         tmp5 = obj1;
-        const obj6 = arg0(closure_2[7]);
+        const obj6 = width(outer1_2[7]);
       }
     }
     return tmp5;
   };
-  obj = { width, SHINE_OFFSCREEN_OFFSET: 120, useReducedMotion: enabled, SHINE_WIDTH: 56, withRepeat: variant(dependencyMap[6]).withRepeat, withSequence: variant(dependencyMap[6]).withSequence, withTiming: variant(dependencyMap[7]).withTiming, withDelay: variant(dependencyMap[6]).withDelay, SHINE_INITIAL_ANIMATION_DELAY: 750, SHINE_ANIMATION_DURATION: 2000 };
+  obj = { width, SHINE_OFFSCREEN_OFFSET: 120, useReducedMotion: enabled, SHINE_WIDTH: 56, withRepeat: _require(3991).withRepeat, withSequence: _require(3991).withSequence, withTiming: _require(4131).withTiming, withDelay: _require(3991).withDelay, SHINE_INITIAL_ANIMATION_DELAY: 750, SHINE_ANIMATION_DURATION: 2000 };
   fn.__closure = obj;
   fn.__workletHash = 15814138938406;
   fn.__initData = closure_6;
   obj = {};
-  const animatedStyle = variant(dependencyMap[6]).useAnimatedStyle(fn);
-  const obj4 = variant(dependencyMap[6]);
-  obj1 = { <string:972816388>: null, <string:1067515908>: "\u{1F9D4}\u200D\u2640\uFE0F", <string:2346385412>: true, <string:959578116>: 13.1, <string:1498480644>: 69, <string:2488943158>: null };
-  const items = [{ rotate: "30deg" }];
+  const animatedStyle = _require(3991).useAnimatedStyle(fn);
+  let obj4 = _require(3991);
+  obj1 = { width: 56, height: "500%", transform: null, backgroundColor: null, top: "-100%", alignItems: "center" };
+  let items = [{ rotate: "30deg" }];
   obj1.transform = items;
   obj1.backgroundColor = hexResult;
-  const obj2 = { "Null": "column", "Null": "flex-end", backgroundColor: hexResult };
-  obj.shineStyles = variant(dependencyMap[8]).createStyles({ shineContainer: {}, shine: obj1, shineInner: obj2 })();
+  let obj2 = { width: 16, height: "100%", backgroundColor: hexResult };
+  obj.shineStyles = _require(4130).createStyles({ shineContainer: { width: "100%", height: "200%", position: "absolute", overflow: "hidden" }, shine: obj1, shineInner: obj2 })();
   obj.shineAnimatedStyle = animatedStyle;
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
 let closure_6 = { code: "function ButtonShineNativeTsx1(){const{width,SHINE_OFFSCREEN_OFFSET,useReducedMotion,SHINE_WIDTH,withRepeat,withSequence,withTiming,withDelay,SHINE_INITIAL_ANIMATION_DELAY,SHINE_ANIMATION_DURATION}=this.__closure;if(width==null){return{transform:[{translateX:-SHINE_OFFSCREEN_OFFSET}]};}if(useReducedMotion){const centerOffset=(width-SHINE_WIDTH)/2;return{transform:[{translateX:centerOffset}]};}return{transform:[{translateX:withRepeat(withSequence(withTiming(-SHINE_OFFSCREEN_OFFSET,{duration:0},'animate-always'),withDelay(SHINE_INITIAL_ANIMATION_DELAY,withTiming(width+SHINE_OFFSCREEN_OFFSET,{duration:SHINE_ANIMATION_DURATION},'animate-always'))),-1)}]};}" };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/Button/native/ButtonShine.native.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Button/native/ButtonShine.native.tsx");
 
 export { useShineEffectStyles };
 export const ButtonShine = function ButtonShine(variant) {
@@ -80,10 +81,10 @@ export const ButtonShine = function ButtonShine(variant) {
     },
     style: items
   };
-  const items = [shineStyles.shineContainer, tmp2.shineAnimatedStyle];
+  items = [shineStyles.shineContainer, tmp2.shineAnimatedStyle];
   obj = { style: shineStyles.shine };
   obj = { style: shineStyles.shineInner };
-  obj.children = jsx(importDefault(dependencyMap[6]).View, obj);
-  obj.children = jsx(importDefault(dependencyMap[6]).View, obj);
-  return jsx(importDefault(dependencyMap[6]).View, obj);
+  obj.children = jsx(importDefault(3991).View, { style: shineStyles.shineInner });
+  obj.children = jsx(importDefault(3991).View, { style: shineStyles.shineInner });
+  return jsx(importDefault(3991).View, { style: shineStyles.shineInner });
 };

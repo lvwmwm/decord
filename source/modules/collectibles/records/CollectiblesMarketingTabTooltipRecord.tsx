@@ -1,21 +1,22 @@
-// Module ID: 6797
-// Function ID: 53667
+// Module ID: 6802
+// Function ID: 53699
 // Name: CollectiblesMarketingTabTooltipRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6799, 2]
 
-// Module 6797 (CollectiblesMarketingTabTooltipRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 6802 (CollectiblesMarketingTabTooltipRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class CollectiblesMarketingTabTooltipRecord {
     constructor(arg0) {
-      tmp = closure_2(this, CollectiblesMarketingTabTooltipRecord);
-      this.type = CollectiblesMarketingTabTooltipRecord(closure_1[2]).CollectiblesMarketingType.TAB_TOOLTIP;
+      tmp = outer1_2(this, CollectiblesMarketingTabTooltipRecord);
+      this.type = CollectiblesMarketingTabTooltipRecord(outer1_1[2]).CollectiblesMarketingType.TAB_TOOLTIP;
       ({ title: this.title, body: this.body, asset: this.asset, dismissibleContent: this.dismissibleContent, version: this.version, refTargetBackground: this.refTargetBackground, badgeIcon: this.badgeIcon, badgeText: this.badgeText, showHoverGradient: this.showHoverGradient } = arg0);
       return;
     }
   }
-  const arg1 = CollectiblesMarketingTabTooltipRecord;
   const items = [
     {
       key: "fromServer",
@@ -32,7 +33,7 @@ const tmp2 = () => {
     }
   ];
   return callback(CollectiblesMarketingTabTooltipRecord, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingTabTooltipRecord.tsx");
+})();
+const result = require("CollectiblesMarketingType").fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingTabTooltipRecord.tsx");
 
 export default tmp2;

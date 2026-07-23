@@ -1,22 +1,24 @@
-// Module ID: 11985
-// Function ID: 92646
+// Module ID: 12104
+// Function ID: 94834
 // Name: useIsGameFriends
-// Dependencies: []
+// Dependencies: [57, 6901, 653, 566, 4964, 2]
 // Exports: useIsGameFriends
 
-// Module 11985 (useIsGameFriends)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const RelationshipTypes = arg1(dependencyMap[2]).RelationshipTypes;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/game_relationships/hooks/useIsGameFriends.tsx");
+// Module 12104 (useIsGameFriends)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { RelationshipTypes } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/game_relationships/hooks/useIsGameFriends.tsx");
 
 export const useIsGameFriends = function useIsGameFriends(id) {
-  const arg1 = id;
-  const items = [closure_3];
+  const _require = id;
+  let items = [_isNativeReflectConstruct];
   const items1 = [id];
-  return callback(arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const gameRelationshipsForUserByType = authStore.getGameRelationshipsForUserByType(arg0, constants.FRIEND);
-    const items = [gameRelationshipsForUserByType.length > 0, authStore.getGameRelationshipsVersion()];
+  return callback(_require(566).useStateFromStores(items, () => {
+    const gameRelationshipsForUserByType = outer1_3.getGameRelationshipsForUserByType(closure_0, outer1_4.FRIEND);
+    const items = [gameRelationshipsForUserByType.length > 0, outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, arg1(dependencyMap[4]).isVersionEqual), 1)[0];
+  }, items1, _require(4964).isVersionEqual), 1)[0];
 };

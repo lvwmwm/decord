@@ -1,10 +1,10 @@
-// Module ID: 7845
-// Function ID: 62564
+// Module ID: 7851
+// Function ID: 62601
 // Name: VideoFilterType
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 7845 (VideoFilterType)
-const obj = { OPTION_1: 0, [0]: "OPTION_1", OPTION_2: 1, [1]: "OPTION_2", OPTION_3: 2, [2]: "OPTION_3", OPTION_4: 3, [3]: "OPTION_4", OPTION_7: 7, [7]: "OPTION_7", OPTION_8: 8, [8]: "OPTION_8", OPTION_9: 9, [9]: "OPTION_9", OPTION_10: 10, [10]: "OPTION_10" };
+// Module 7851 (VideoFilterType)
+let obj = { OPTION_1: 0, [0]: "OPTION_1", OPTION_2: 1, [1]: "OPTION_2", OPTION_3: 2, [2]: "OPTION_3", OPTION_4: 3, [3]: "OPTION_4", OPTION_7: 7, [7]: "OPTION_7", OPTION_8: 8, [8]: "OPTION_8", OPTION_9: 9, [9]: "OPTION_9", OPTION_10: 10, [10]: "OPTION_10" };
 const items = [, , , ];
 ({ OPTION_7: arr[0], OPTION_8: arr[1], OPTION_9: arr[2], OPTION_10: arr[3] } = obj);
 const items1 = [, , , , , , , ];
@@ -15,13 +15,12 @@ const reduced = items1.reduce((arg0, arg1, arg2) => {
   obj[arg1] = arg2;
   return obj;
 }, {});
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/video_backgrounds/VideoBackgroundConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/video_backgrounds/VideoBackgroundConstants.tsx");
 
 export const VideoFilterType = { BACKGROUND: 0, [0]: "BACKGROUND" };
 export const DefaultVideoBackground = obj;
 export const ANIMATED_DEFAULT_VIDEO_BACKGROUNDS = items;
 export const DEFAULT_VIDEO_BACKGROUND_SORT = reduced;
 export const BLUR_BACKGROUND_OPTION = "blur";
-export const BACKGROUND_REPLACEMENT_SIZE = { "Null": -1454790327, "Null": 486609040 };
+export const BACKGROUND_REPLACEMENT_SIZE = { width: 1280, height: 720 };
 export const MAX_BACKGROUND_IMAGE_UPLOAD_FILESIZE_BYTES = 10485760;

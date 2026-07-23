@@ -1,16 +1,18 @@
-// Module ID: 15271
-// Function ID: 115276
+// Module ID: 15388
+// Function ID: 117450
 // Name: SearchFetchPendingManager
-// Dependencies: []
+// Dependencies: [7, 6, 31, 11398, 5450, 2]
 // Exports: useSearchFetchPendingManager
 
-// Module 15271 (SearchFetchPendingManager)
-let closure_2 = importDefault(dependencyMap[1]);
-let closure_3 = importAll(dependencyMap[2]);
+// Module 15388 (SearchFetchPendingManager)
+import _classCallCheck from "_classCallCheck";
+import result from "result";
+import importDefaultResult from "_defineProperties";
+
 class SearchFetchPendingManager {
   constructor() {
-    importDefault = this;
-    tmp = closure_2(this, SearchFetchPendingManager);
+    self = this;
+    tmp = c2(this, SearchFetchPendingManager);
     set = new Set();
     this.pending = set;
     this.add = (arg0) => {
@@ -30,7 +32,7 @@ class SearchFetchPendingManager {
         if (obj.fetchNextMessages(searchContext, tab)) {
           self.remove(tab);
         }
-        const obj = self(closure_1[3]);
+        obj = self(outer1_1[3]);
       }
     };
     this.reset = () => {
@@ -39,18 +41,17 @@ class SearchFetchPendingManager {
     return;
   }
 }
-let closure_4 = importDefault(dependencyMap[0])(SearchFetchPendingManager);
-const importDefaultResult = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchFetchPendingManager.tsx");
+let closure_4 = require("_defineProperties")(SearchFetchPendingManager);
+const result = require("result").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchFetchPendingManager.tsx");
 
 export const useSearchFetchPendingManager = function useSearchFetchPendingManager(searchContext) {
   const importDefault = searchContext;
-  const tmp = importDefault(dependencyMap[4])(() => new closure_4());
+  const tmp = importDefault(5450)(() => new outer1_4());
   const dependencyMap = tmp;
   const items = [searchContext, tmp];
-  const effect = React.useEffect(() => arg0(tmp[3]).subscribeTextInputValue(arg0, (arg0, arg1) => {
+  const effect = React.useEffect(() => searchContext(tmp[3]).subscribeTextInputValue(searchContext, (arg0, arg1) => {
     if (arg1 !== arg0) {
-      navigation.reset();
+      outer1_1.reset();
     }
   }), items);
   return tmp;

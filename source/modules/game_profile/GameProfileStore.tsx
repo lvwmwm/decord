@@ -1,23 +1,24 @@
-// Module ID: 8589
-// Function ID: 68203
+// Module ID: 8596
+// Function ID: 68243
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 8589 (_isNativeReflectConstruct)
+// Module 8596 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = {};
 let closure_6 = {};
 let closure_7 = {};
@@ -25,20 +26,20 @@ let closure_8 = {};
 let closure_9 = {};
 let closure_10 = {};
 let closure_11 = {};
-let closure_12 = null;
-let tmp2 = (Store) => {
+let c12 = null;
+let tmp2 = ((Store) => {
   class GameProfileStore {
     constructor() {
       self = this;
       tmp = GameProfileStore(this, GameProfileStore);
-      obj = closure_3(GameProfileStore);
-      tmp2 = closure_2;
-      if (closure_13()) {
+      obj = outer1_3(GameProfileStore);
+      tmp2 = outer1_2;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -47,63 +48,62 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GameProfileStore;
   callback2(GameProfileStore, Store);
   let obj = {
     key: "getSimilarGames",
     value(arg0) {
-      return closure_5[arg0];
+      return outer1_5[arg0];
     }
   };
   const items = [obj, , , , , , , ];
   obj = {
     key: "getShopCollectionSkuIds",
     value(arg0) {
-      return closure_6[arg0];
+      return outer1_6[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "hasShopCollectionBeenFetched",
     value(arg0) {
-      return null != closure_7[arg0] && closure_7[arg0];
+      return null != outer1_7[arg0] && outer1_7[arg0];
     }
   };
   items[2] = obj;
   items[3] = {
     key: "isShopCollectionFetching",
     value(arg0) {
-      return null != closure_8[arg0] && closure_8[arg0];
+      return null != outer1_8[arg0] && outer1_8[arg0];
     }
   };
   items[4] = {
     key: "getAnnouncements",
     value(arg0) {
-      return closure_9[arg0];
+      return outer1_9[arg0];
     }
   };
   items[5] = {
     key: "hasAnnouncementsBeenFetched",
     value(arg0) {
-      return null != closure_10[arg0] && closure_10[arg0];
+      return null != outer1_10[arg0] && outer1_10[arg0];
     }
   };
   items[6] = {
     key: "isAnnouncementsFetching",
     value(arg0) {
-      return null != closure_11[arg0] && closure_11[arg0];
+      return null != outer1_11[arg0] && outer1_11[arg0];
     }
   };
   items[7] = {
     key: "getPendingReturn",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   return callback(GameProfileStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GameProfileStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function handleGetSimilarGamesSuccess(gameId) {
     closure_5[gameId.gameId] = gameId.games;
   },
@@ -159,17 +159,17 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
         }
       }
     }
-    const _null = { gameId, channelId, initialScrollOffset };
+    _null = { gameId, channelId, initialScrollOffset };
   },
   GAME_PROFILE_CLEAR_PENDING_RETURN: function handleClearPendingReturn(arg0) {
     if (null != _null) {
       if (_null.gameId === tmp) {
-        const _null = null;
+        _null = null;
       }
     }
     return false;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/game_profile/GameProfileStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/game_profile/GameProfileStore.tsx");
 
 export default tmp2;

@@ -1,10 +1,25 @@
-// Module ID: 14306
-// Function ID: 108028
+// Module ID: 14420
+// Function ID: 110181
 // Name: ExampleButton
-// Dependencies: []
+// Dependencies: [57, 31, 27, 3943, 33, 14421, 4543, 14422, 7771, 5792, 12196, 13077, 10203, 7638, 8875, 4130, 689, 1456, 4098, 14423, 1934, 4541, 4126, 9670, 12187, 12192, 12194, 12193, 12191, 12190, 4965, 3842, 665, 4554, 5167, 4662, 8379, 2]
 // Exports: default
 
-// Module 14306 (ExampleButton)
+// Module 14420 (ExampleButton)
+import _slicedToArray from "_slicedToArray";
+import ManaContext from "ManaContext";
+import get_ActivityIndicator from "registerAsset";
+import items1 from "items1";
+import jsxProd from "LinearGradient";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+let require = arg1;
 function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;
@@ -15,15 +30,14 @@ function ExampleButton(arg0) {
   let text;
   let variant;
   ({ variant, text, grow } = arg0);
-  const tmp = importDefault(closure_2[5])();
+  const tmp = importDefault(14421)();
   const enableLoadingState = tmp.enableLoadingState;
-  const arg1 = enableLoadingState;
   ({ buttonScale, buttonSize, iconPosition, showIcon, showDisabled } = tmp);
-  const importDefault = React.useRef(null);
+  importDefault = React.useRef(null);
   const tmp2 = callback(React.useState(false), 2);
-  closure_2 = tmp2[1];
+  const dependencyMap = tmp2[1];
   const items = [enableLoadingState];
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     if (enableLoadingState) {
       if (null != ref.current) {
         const _clearTimeout = clearTimeout;
@@ -32,14 +46,14 @@ function ExampleButton(arg0) {
       callback(true);
       const _setTimeout = setTimeout;
       ref.current = setTimeout(() => {
-        callback(false);
+        outer1_2(false);
       }, 5000);
     }
   }, items);
   const callback1 = React.useCallback(() => {
     callback(true);
     closure_1.current = setTimeout(() => {
-      callback(false);
+      outer1_2(false);
     }, 5000);
   }, []);
   const obj = { disabled: showDisabled, onPress: callback, onLongPress: callback1, loading: tmp2[0], variant };
@@ -55,12 +69,12 @@ function ExampleButton(arg0) {
   obj.size = buttonSize;
   let tmp6;
   if (showIcon) {
-    tmp6 = importDefault(closure_2[7]);
+    tmp6 = importDefault(14422);
   }
   obj.icon = tmp6;
   obj.iconPosition = iconPosition;
   obj.scaleAmountInPx = buttonScale;
-  return closure_9(arg1(closure_2[6]).Button, obj);
+  return closure_9(enableLoadingState(4543).Button, obj);
 }
 function ExampleIconButton(arg0) {
   let buttonSize;
@@ -71,18 +85,17 @@ function ExampleIconButton(arg0) {
   if (showLabel === undefined) {
     showLabel = false;
   }
-  let arg1;
+  let enableLoadingState;
   let importDefault;
-  let closure_2;
+  let dependencyMap;
   let callback;
-  const tmp = importDefault(closure_2[5])();
-  const enableLoadingState = tmp.enableLoadingState;
-  arg1 = enableLoadingState;
+  const tmp = importDefault(14421)();
+  enableLoadingState = tmp.enableLoadingState;
   ({ buttonSize, showDisabled } = tmp);
   importDefault = React.useRef(null);
   const tmp2 = callback(React.useState(false), 2);
   const first = tmp2[0];
-  closure_2 = tmp2[1];
+  dependencyMap = tmp2[1];
   const items = [enableLoadingState];
   callback = React.useCallback(() => {
     if (enableLoadingState) {
@@ -93,7 +106,7 @@ function ExampleIconButton(arg0) {
       callback(true);
       const _setTimeout = setTimeout;
       ref.current = setTimeout(() => {
-        callback(false);
+        outer1_2(false);
       }, 5000);
     }
   }, items);
@@ -110,7 +123,7 @@ function ExampleIconButton(arg0) {
     obj.grow = true;
     obj.loading = first;
     obj.variant = variant;
-    obj.icon = importDefault(closure_2[9]);
+    obj.icon = importDefault(5792);
     let tmp7 = obj;
   } else {
     obj.onPress = function onPress() {
@@ -124,10 +137,10 @@ function ExampleIconButton(arg0) {
     obj.loading = first;
     obj.variant = variant;
     obj.size = buttonSize;
-    obj.icon = importDefault(closure_2[9]);
+    obj.icon = importDefault(5792);
     tmp7 = obj;
   }
-  return closure_9(arg1(closure_2[8]).IconButton, tmp7);
+  return closure_9(enableLoadingState(7771).IconButton, tmp7);
 }
 function ExampleImageButton(arg0) {
   let buttonSize;
@@ -139,18 +152,17 @@ function ExampleImageButton(arg0) {
   if (showLabel === undefined) {
     showLabel = false;
   }
-  let arg1;
+  let enableLoadingState;
   let importDefault;
-  let closure_2;
+  let dependencyMap;
   let callback;
-  const tmp = importDefault(closure_2[5])();
-  const enableLoadingState = tmp.enableLoadingState;
-  arg1 = enableLoadingState;
+  const tmp = importDefault(14421)();
+  enableLoadingState = tmp.enableLoadingState;
   ({ buttonSize, showDisabled } = tmp);
   importDefault = React.useRef(null);
   const tmp2 = callback(React.useState(false), 2);
   const first = tmp2[0];
-  closure_2 = tmp2[1];
+  dependencyMap = tmp2[1];
   const items = [enableLoadingState];
   callback = React.useCallback(() => {
     if (enableLoadingState) {
@@ -161,7 +173,7 @@ function ExampleImageButton(arg0) {
       callback(true);
       const _setTimeout = setTimeout;
       ref.current = setTimeout(() => {
-        callback(false);
+        outer1_2(false);
       }, 5000);
     }
   }, items);
@@ -185,18 +197,17 @@ function ExampleImageButton(arg0) {
     obj.image = image;
     tmp5 = obj;
   }
-  return closure_9(arg1(closure_2[10]).ImageButton, tmp5);
+  return closure_9(enableLoadingState(12196).ImageButton, tmp5);
 }
 function ExampleToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  const arg1 = first;
   const importDefault = tmp[1];
-  let obj = arg1(dependencyMap[11]);
+  let obj = first(13077);
   obj = {};
-  obj = { text: "Unfollow", icon: importDefault(dependencyMap[12]) };
+  obj = { text: "Unfollow", icon: importDefault(10203) };
   obj.on = obj;
-  obj.off = { text: "Follow", icon: importDefault(dependencyMap[13]) };
+  obj.off = { text: "Follow", icon: importDefault(7638) };
   const toggleButtonProps = obj.useToggleButtonProps(obj, first);
   const obj2 = {};
   const merged = Object.assign(toggleButtonProps);
@@ -205,18 +216,17 @@ function ExampleToggleButton() {
   };
   obj2["variant"] = "secondary";
   obj2["size"] = "md";
-  return callback2(arg1(dependencyMap[6]).Button, obj2);
+  return callback2(first(4543).Button, obj2);
 }
 function ExampleIconToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  const arg1 = first;
   const importDefault = tmp[1];
-  let obj = arg1(dependencyMap[11]);
+  let obj = first(13077);
   obj = {};
-  obj = { icon: importDefault(dependencyMap[14]) };
+  obj = { variant: "destructive", accessibilityLabel: "Mute", icon: importDefault(8875) };
   obj.on = obj;
-  const obj1 = { space: 1107296694, fill: 135807, icon: importDefault(dependencyMap[14]) };
+  const obj1 = { variant: "secondary", accessibilityLabel: "Mute", icon: importDefault(8875) };
   obj.off = obj1;
   const toggleIconButtonProps = obj.useToggleIconButtonProps(obj, first);
   const obj2 = {};
@@ -225,44 +235,38 @@ function ExampleIconToggleButton() {
     callback(!first);
   };
   obj2["size"] = "md";
-  return callback2(arg1(dependencyMap[8]).IconButton, obj2);
+  return callback2(first(7771).IconButton, obj2);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ LIGHT_BACKGROUND_GRADIENT_PRESETS: closure_7, DARK_BACKGROUND_GRADIENT_PRESETS: closure_8 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = arg1(dependencyMap[4]));
-let closure_12 = [null, null, null];
-let closure_13 = [];
-let closure_14 = [];
-let closure_15 = ["FI"];
-let closure_16 = [true, "key"];
-let obj = arg1(dependencyMap[15]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[16]).space.PX_16 };
-obj.container = obj;
-const tmp4 = arg1(dependencyMap[4]);
-obj.buttonContainer = { paddingHorizontal: importDefault(dependencyMap[16]).space.PX_16, paddingVertical: importDefault(dependencyMap[16]).space.PX_8 };
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[16]).space.PX_16, paddingVertical: importDefault(dependencyMap[16]).space.PX_8 };
-obj.overlayButtonContainer = { backgroundColor: importDefault(dependencyMap[16]).unsafe_rawColors.BG_GRADIENT_CHROMA_GLOW_1, paddingVertical: importDefault(dependencyMap[16]).space.PX_48 };
-let closure_17 = obj.createStyles(obj);
-const obj2 = { backgroundColor: importDefault(dependencyMap[16]).unsafe_rawColors.BG_GRADIENT_CHROMA_GLOW_1, paddingVertical: importDefault(dependencyMap[16]).space.PX_48 };
-const result = arg1(dependencyMap[37]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemButton.tsx");
+({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ LIGHT_BACKGROUND_GRADIENT_PRESETS: closure_7, DARK_BACKGROUND_GRADIENT_PRESETS: closure_8 } = items1);
+({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
+let closure_12 = ["primary", "secondary", "tertiary"];
+let closure_13 = ["primary-overlay", "secondary-overlay"];
+let closure_14 = ["destructive", "active"];
+let closure_15 = ["expressive"];
+let closure_16 = ["experimental_premium-primary", "experimental_premium-secondary"];
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.buttonContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.overlayButtonContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BG_GRADIENT_CHROMA_GLOW_1, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_48 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BG_GRADIENT_CHROMA_GLOW_1, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_48 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemButton.tsx");
 
 export default function UserSettingsDesignSystemButton() {
-  const tmp = callback4();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[17]);
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  let obj = require(1456) /* useNavigation */;
   const navigation = obj.useNavigation();
   const importDefault = React.useCallback(() => {
-    callback(paths[18]).openLazy(tmp(paths[20])(paths[19], paths.paths), "UserSettingsDesignSystemButtonActionSheet");
+    callback(outer1_2[18]).openLazy(tmp(outer1_2[20])(outer1_2[19], outer1_2.paths), "UserSettingsDesignSystemButtonActionSheet");
   }, []);
   obj = {
     headerRight() {
-      const obj = { subLabel: "text-lg/bold", disabled: "Mixed Buttons Example", value: "text-md/medium", label: "text-subtle", description: "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout.", onPress: callback, icon: callback(closure_2[9]) };
-      return callback2(tmp(closure_2[8]).IconButton, obj);
+      const obj = { onPress: callback, icon: callback(outer1_2[9]), size: "sm", variant: "secondary", accessibilityLabel: "Settings" };
+      return outer1_9(tmp(outer1_2[8]).IconButton, obj);
     }
   };
   navigation.setOptions(obj);
@@ -270,496 +274,495 @@ export default function UserSettingsDesignSystemButton() {
   const obj1 = {};
   const obj2 = { spacing: 24 };
   const obj3 = {};
-  const obj4 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: -486538734, <string:1446667417>: 1107296769 }) };
-  const items = [
-    callback2(arg1(dependencyMap[21]).Stack, obj4),
+  const obj4 = { style: tmp.container, children: callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Hierarchical buttons" }) };
+  let items = [
+    callback2(require(4541) /* Stack */.Stack, obj4),
     callback2(closure_5, {
       children: closure_12.map((variant) => {
-        let obj = { style: tmp.buttonContainer, children: callback2(closure_18, obj) };
+        obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
         obj = { variant };
-        return callback2(closure_5, obj, variant);
+        return outer1_9(outer1_5, obj, variant);
       })
     })
   ];
   obj3.children = items;
-  const items1 = [callback3(arg1(dependencyMap[21]).Stack, obj3), , , , , , , , , , , , , , , , , , , ];
+  const items1 = [callback3(require(4541) /* Stack */.Stack, obj3), , , , , , , , , , , , , , , , , , , ];
   const obj6 = {};
-  const obj7 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: null, <string:1446667417>: null }) };
-  const items2 = [callback2(arg1(dependencyMap[21]).Stack, obj7), ];
+  const obj7 = { style: tmp.container, children: callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Sentiment buttons" }) };
+  const items2 = [callback2(require(4541) /* Stack */.Stack, obj7), ];
   const obj5 = {
     children: closure_12.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   };
   items2[1] = callback2(closure_5, {
     children: closure_14.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   });
   obj6.children = items2;
-  items1[1] = callback3(arg1(dependencyMap[21]).Stack, obj6);
+  items1[1] = callback3(require(4541) /* Stack */.Stack, obj6);
   const obj9 = {};
-  const obj10 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: 2097152530, <string:1446667417>: 1358954790 }) };
-  const items3 = [callback2(arg1(dependencyMap[21]).Stack, obj10), ];
+  const obj10 = { style: tmp.container, children: callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Expressive buttons" }) };
+  const items3 = [callback2(require(4541) /* Stack */.Stack, obj10), ];
   const obj8 = {
     children: closure_14.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   };
   items3[1] = callback2(closure_5, {
     children: closure_15.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   });
   obj9.children = items3;
-  items1[2] = callback3(arg1(dependencyMap[21]).Stack, obj9);
+  items1[2] = callback3(require(4541) /* Stack */.Stack, obj9);
   const obj12 = {};
-  const obj13 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: false, <string:1446667417>: false }) };
-  const items4 = [callback2(arg1(dependencyMap[21]).Stack, obj13), ];
+  const obj13 = { style: tmp.container, children: callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Experimental premium buttons" }) };
+  const items4 = [callback2(require(4541) /* Stack */.Stack, obj13), ];
   const obj11 = {
     children: closure_15.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   };
   items4[1] = callback2(closure_5, {
     children: closure_16.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   });
   obj12.children = items4;
-  items1[3] = callback3(arg1(dependencyMap[21]).Stack, obj12);
+  items1[3] = callback3(require(4541) /* Stack */.Stack, obj12);
   const obj15 = {};
   const obj16 = { style: tmp.container };
-  const items5 = [callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: false, <string:1446667417>: false }), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: true, <string:1446667417>: true })];
+  const items5 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Overlay buttons" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "Overlay buttons are meant to be used overlayed on top of an image or background color. They do not change colors with the theme." })];
   obj16.children = items5;
-  const items6 = [callback3(arg1(dependencyMap[21]).Stack, obj16), ];
+  const items6 = [callback3(require(4541) /* Stack */.Stack, obj16), ];
   const obj14 = {
     children: closure_16.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_18, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_18, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   };
   items6[1] = callback2(closure_5, {
     children: closure_13.map((variant) => {
-      let obj = { style: items, children: callback2(closure_18, obj) };
-      const items = [, ];
-      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = tmp);
+      obj = { style: items, children: outer1_9(outer1_18, obj) };
+      items = [, ];
+      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = closure_0);
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   });
   obj15.children = items6;
-  items1[4] = callback3(arg1(dependencyMap[21]).Stack, obj15);
+  items1[4] = callback3(require(4541) /* Stack */.Stack, obj15);
   const obj18 = {};
   const obj19 = { style: tmp.container };
-  const items7 = [callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: false, <string:1446667417>: false }), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: true, <string:1446667417>: true })];
+  const items7 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Custom color icons" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "If a button needs to have an icon which has its own custom color, then create your own Button.Icon to pass as the icon prop." })];
   obj19.children = items7;
-  const items8 = [callback3(arg1(dependencyMap[21]).Stack, obj19), ];
+  const items8 = [callback3(require(4541) /* Stack */.Stack, obj19), ];
   const obj20 = {};
   const obj21 = { style: tmp.buttonContainer };
   const obj22 = {
-    "Bool(true)": "stack",
-    "Bool(true)": false,
-    "Bool(true)": true,
-    "Bool(true)": "/assets/images/native/empties",
     onPress() {
 
-    }
+    },
+    variant: "secondary",
+    text: "Button with a custom color icon",
+    size: "md"
   };
-  const obj23 = { source: importDefault(dependencyMap[23]) };
-  obj22.icon = callback2(arg1(dependencyMap[6]).Button.Icon, obj23);
-  obj21.children = callback2(arg1(dependencyMap[6]).Button, obj22);
+  const obj23 = { source: importDefault(9670) };
+  obj22.icon = callback2(require(4543) /* Button */.Button.Icon, obj23);
+  obj21.children = callback2(require(4543) /* Button */.Button, obj22);
   const items9 = [callback2(closure_5, obj21), ];
   const obj24 = { style: tmp.buttonContainer };
   const obj25 = {
-    "Bool(true)": "wumpus-snowglobe 43",
-    "Bool(true)": 2,
-    "Bool(true)": 1,
-    "Bool(true)": null,
     onPress() {
 
-    }
+    },
+    variant: "secondary",
+    text: "Button with a entity variant icon",
+    size: "md"
   };
-  const obj26 = { variant: "entity", source: importDefault(dependencyMap[24]) };
-  obj25.icon = callback2(arg1(dependencyMap[6]).Button.Icon, obj26);
-  obj24.children = callback2(arg1(dependencyMap[6]).Button, obj25);
+  const obj26 = { variant: "entity", source: importDefault(12187) };
+  obj25.icon = callback2(require(4543) /* Button */.Button.Icon, obj26);
+  obj24.children = callback2(require(4543) /* Button */.Button, obj25);
   items9[1] = callback2(closure_5, obj24);
   obj20.children = items9;
   items8[1] = callback3(closure_5, obj20);
   obj18.children = items8;
-  items1[5] = callback3(arg1(dependencyMap[21]).Stack, obj18);
+  items1[5] = callback3(require(4541) /* Stack */.Stack, obj18);
   const obj27 = {};
-  const obj28 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: "<string:2125060135>", <string:1446667417>: "<string:668094760>" }) };
-  const items10 = [callback2(arg1(dependencyMap[21]).Stack, obj28), ];
+  const obj28 = { style: tmp.container, children: callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Buttons with various text lengths" }) };
+  const items10 = [callback2(require(4541) /* Stack */.Stack, obj28), ];
   const obj29 = {};
   const obj30 = { style: tmp.buttonContainer };
   const obj31 = {
-    "Bool(true)": 8,
-    "Bool(true)": false,
-    "Bool(true)": "start",
-    "Bool(true)": false,
     onPress() {
 
     },
-    icon: importDefault(dependencyMap[23])
+    variant: "secondary",
+    text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
+    size: "md",
+    icon: importDefault(9670)
   };
-  obj30.children = callback2(arg1(dependencyMap[6]).Button, obj31);
+  obj30.children = callback2(require(4543) /* Button */.Button, obj31);
   const items11 = [callback2(closure_5, obj30), , , ];
   const obj32 = { style: tmp.buttonContainer };
   const obj33 = {
-    emoji: 8,
-    action: false,
-    onAction: "start",
-    disclaimer: false,
-    title: false,
-    noScroll: true,
     onPress() {
 
     },
-    icon: importDefault(dependencyMap[23])
+    variant: "secondary",
+    text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
+    size: "md",
+    icon: importDefault(9670),
+    iconPosition: "end"
   };
-  obj32.children = callback2(arg1(dependencyMap[6]).Button, obj33);
+  obj32.children = callback2(require(4543) /* Button */.Button, obj33);
   items11[1] = callback2(closure_5, obj32);
   const obj17 = {
     children: closure_13.map((variant) => {
-      let obj = { style: items, children: callback2(closure_18, obj) };
-      const items = [, ];
-      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = tmp);
+      obj = { style: items, children: outer1_9(outer1_18, obj) };
+      items = [, ];
+      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = closure_0);
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   };
   const obj35 = {
-    "Bool(true)": 8,
-    "Bool(true)": false,
-    "Bool(true)": "start",
-    "Bool(true)": false,
     onPress() {
 
-    }
+    },
+    variant: "secondary",
+    text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
+    size: "md"
   };
-  items11[2] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(arg1(dependencyMap[6]).Button, obj35) });
-  const obj34 = { style: tmp.buttonContainer, children: callback2(arg1(dependencyMap[6]).Button, obj35) };
-  items11[3] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(arg1(dependencyMap[6]).Button, obj37) });
+  items11[2] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(require(4543) /* Button */.Button, obj35) });
+  const obj34 = { style: tmp.buttonContainer, children: callback2(require(4543) /* Button */.Button, obj35) };
+  const obj37 = {
+    onPress() {
+
+    },
+    variant: "secondary",
+    text: "A",
+    size: "md"
+  };
+  items11[3] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(require(4543) /* Button */.Button, obj37) });
   obj29.children = items11;
   items10[1] = callback3(closure_5, obj29);
   obj27.children = items10;
-  items1[6] = callback3(arg1(dependencyMap[21]).Stack, obj27);
+  items1[6] = callback3(require(4541) /* Stack */.Stack, obj27);
   const obj38 = {};
   const obj39 = { style: tmp.container };
-  const items12 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, {})];
+  const items12 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Toggling button states" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "Use the useToggleButtonProps hook or the useToggleIconButtonProps hook to toggle a button between two states." }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "This hook changes the button presentation and adds some important accessibility attributes for a toggle button." })];
   obj39.children = items12;
-  const items13 = [callback3(arg1(dependencyMap[21]).Stack, obj39), ];
+  const items13 = [callback3(require(4541) /* Stack */.Stack, obj39), ];
   const obj40 = {};
-  const obj36 = { style: tmp.buttonContainer, children: callback2(arg1(dependencyMap[6]).Button, obj37) };
+  const obj36 = { style: tmp.buttonContainer, children: callback2(require(4543) /* Button */.Button, obj37) };
   const items14 = [callback2(closure_5, { style: tmp.buttonContainer, children: callback2(ExampleToggleButton, {}) }), ];
   const obj41 = { style: tmp.buttonContainer, children: callback2(ExampleToggleButton, {}) };
   items14[1] = callback2(closure_5, { style: tmp.buttonContainer, children: callback2(ExampleIconToggleButton, {}) });
   obj40.children = items14;
   items13[1] = callback3(closure_5, obj40);
   obj38.children = items13;
-  items1[7] = callback3(arg1(dependencyMap[21]).Stack, obj38);
+  items1[7] = callback3(require(4541) /* Stack */.Stack, obj38);
   const obj43 = {};
   const obj44 = { style: tmp.container };
-  const items15 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: "Array", <string:1446667417>: "isArray" }), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: false, <string:1446667417>: false })];
+  const items15 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Hierarchical icon buttons" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "While the primary variants of IconButton are supported, these should be used very rarely." }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "An icon button usually has a secondary function and should use the secondary variants." })];
   obj44.children = items15;
-  const items16 = [callback3(arg1(dependencyMap[21]).Stack, obj44), ];
+  const items16 = [callback3(require(4541) /* Stack */.Stack, obj44), ];
   const obj42 = { style: tmp.buttonContainer, children: callback2(ExampleIconToggleButton, {}) };
   items16[1] = callback2(closure_5, {
     children: closure_12.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_19, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_19, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   });
   obj43.children = items16;
-  items1[8] = callback3(arg1(dependencyMap[21]).Stack, obj43);
+  items1[8] = callback3(require(4541) /* Stack */.Stack, obj43);
   const obj46 = {};
-  const obj47 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: false, <string:1446667417>: false }) };
-  const items17 = [callback2(arg1(dependencyMap[21]).Stack, obj47), ];
+  const obj47 = { style: tmp.container, children: callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Sentiment icon buttons" }) };
+  const items17 = [callback2(require(4541) /* Stack */.Stack, obj47), ];
   const obj45 = {
     children: closure_12.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_19, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_19, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   };
   items17[1] = callback2(closure_5, {
     children: closure_14.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_19, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_19, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   });
   obj46.children = items17;
-  items1[9] = callback3(arg1(dependencyMap[21]).Stack, obj46);
+  items1[9] = callback3(require(4541) /* Stack */.Stack, obj46);
   const obj49 = {};
-  const obj50 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: false, <string:1446667417>: false }) };
-  const items18 = [callback2(arg1(dependencyMap[21]).Stack, obj50), ];
+  const obj50 = { style: tmp.container, children: callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Overlay icon buttons" }) };
+  const items18 = [callback2(require(4541) /* Stack */.Stack, obj50), ];
   const obj48 = {
     children: closure_14.map((variant) => {
-      let obj = { style: tmp.buttonContainer, children: callback2(closure_19, obj) };
+      obj = { style: tmp.buttonContainer, children: outer1_9(outer1_19, obj) };
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   };
   items18[1] = callback2(closure_5, {
     children: closure_13.map((variant) => {
-      let obj = { style: items, children: callback2(closure_19, obj) };
-      const items = [, ];
-      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = tmp);
+      obj = { style: items, children: outer1_9(outer1_19, obj) };
+      items = [, ];
+      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = closure_0);
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   });
   obj49.children = items18;
-  items1[10] = callback3(arg1(dependencyMap[21]).Stack, obj49);
+  items1[10] = callback3(require(4541) /* Stack */.Stack, obj49);
   const obj52 = {};
   const obj53 = { style: tmp.container };
-  const items19 = [callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: false, <string:1446667417>: false }), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: false, <string:1446667417>: false })];
+  const items19 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Image buttons" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "Image buttons are rereserved for more branded buttons, like social media sharing buttons." })];
   obj53.children = items19;
-  const items20 = [callback3(arg1(dependencyMap[21]).Stack, obj53), ];
+  const items20 = [callback3(require(4541) /* Stack */.Stack, obj53), ];
   const obj54 = {};
   const obj55 = { style: items21 };
-  const items21 = [tmp.buttonContainer];
+  items21 = [tmp.buttonContainer];
   const obj51 = {
     children: closure_13.map((variant) => {
-      let obj = { style: items, children: callback2(closure_19, obj) };
-      const items = [, ];
-      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = tmp);
+      obj = { style: items, children: outer1_9(outer1_19, obj) };
+      items = [, ];
+      ({ buttonContainer: arr[0], overlayButtonContainer: arr[1] } = closure_0);
       obj = { variant };
-      return callback2(closure_5, obj, variant);
+      return outer1_9(outer1_5, obj, variant);
     })
   };
-  obj55.children = callback2(ExampleImageButton, { image: importDefault(dependencyMap[25]), label: "Telegram" });
+  obj55.children = callback2(ExampleImageButton, { image: importDefault(12192), label: "Telegram" });
   const items22 = [callback2(closure_5, obj55), , ];
   const obj57 = { style: items23 };
-  const items23 = [tmp.buttonContainer];
-  const obj56 = { image: importDefault(dependencyMap[25]), label: "Telegram" };
-  obj57.children = callback2(ExampleImageButton, { image: importDefault(dependencyMap[26]), label: "WhatsApp" });
+  items23 = [tmp.buttonContainer];
+  const obj56 = { image: importDefault(12192), label: "Telegram" };
+  obj57.children = callback2(ExampleImageButton, { image: importDefault(12194), label: "WhatsApp" });
   items22[1] = callback2(closure_5, obj57);
   const obj59 = { style: items24 };
-  const items24 = [tmp.buttonContainer];
-  const obj58 = { image: importDefault(dependencyMap[26]), label: "WhatsApp" };
-  obj59.children = callback2(ExampleImageButton, { image: importDefault(dependencyMap[27]), label: "Twitter" });
+  items24 = [tmp.buttonContainer];
+  const obj58 = { image: importDefault(12194), label: "WhatsApp" };
+  obj59.children = callback2(ExampleImageButton, { image: importDefault(12193), label: "Twitter" });
   items22[2] = callback2(closure_5, obj59);
   obj54.children = items22;
   items20[1] = callback3(closure_5, obj54);
   obj52.children = items20;
-  items1[11] = callback3(arg1(dependencyMap[21]).Stack, obj52);
+  items1[11] = callback3(require(4541) /* Stack */.Stack, obj52);
   const obj61 = { spacing: 24 };
   const obj62 = { style: tmp.container };
-  const items25 = [callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: "Array", <string:1446667417>: "isArray" }), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: true, <string:1446667417>: true }), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: null, <string:1446667417>: null })];
+  const items25 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "IconButton with a label" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "Icon buttons with a label require a different combination of props and will only appear in the 'lg' size." }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "It is highly recommended that a list of these buttons appear wrapped in a ScrollView, so that they will horizontally scroll when there are many buttons, when the text is longer through internationalization, or the text is larger through OS font size settings." })];
   obj62.children = items25;
-  const items26 = [callback3(arg1(dependencyMap[21]).Stack, obj62), , ];
+  const items26 = [callback3(require(4541) /* Stack */.Stack, obj62), , ];
   const obj63 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj64 = { "Null": "absolute", "Null": 8, style: tmp.buttonContainer, children: closure_12.map((variant) => callback2(closure_19, { variant, showLabel: true }, variant)) };
-  obj63.children = callback2(arg1(dependencyMap[21]).Stack, obj64);
+  const obj64 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: closure_12.map((variant) => outer1_9(outer1_19, { variant, showLabel: true }, variant)) };
+  obj63.children = callback2(require(4541) /* Stack */.Stack, obj64);
   items26[1] = callback2(closure_6, obj63);
   const obj65 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj66 = { "Null": "absolute", "Null": 8, style: tmp.buttonContainer };
+  const obj66 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
   const obj67 = {
-    9223372036854775807: "Text & Images",
-    9223372036854775807: "Automatically play GIFs when possible",
-    -9223372036854775808: true,
-    0: null,
-    icon: importDefault(dependencyMap[9]),
+    variant: "secondary",
+    icon: importDefault(5792),
+    label: "Supercalifragilisticexpialidocious",
+    grow: true,
     onPress() {
 
     }
   };
-  const items27 = [callback2(arg1(dependencyMap[8]).IconButton, obj67), , ];
+  const items27 = [callback2(require(7771) /* IconButton */.IconButton, obj67), , ];
   const obj68 = {
-    9223372036854775807: "Text & Images",
-    9223372036854775807: "Automatically play GIFs when possible",
-    -9223372036854775808: true,
-    0: null,
-    icon: importDefault(dependencyMap[9]),
+    variant: "secondary",
+    icon: importDefault(5792),
+    label: "Supercalifragilisticexpialidocious",
+    grow: true,
     onPress() {
 
     }
   };
-  items27[1] = callback2(arg1(dependencyMap[8]).IconButton, obj68);
+  items27[1] = callback2(require(7771) /* IconButton */.IconButton, obj68);
   const obj69 = {
-    9223372036854775807: "Text & Images",
-    9223372036854775807: "Automatically play GIFs when possible",
-    -9223372036854775808: true,
-    0: null,
-    icon: importDefault(dependencyMap[9]),
+    variant: "secondary",
+    icon: importDefault(5792),
+    label: "Supercalifragilisticexpialidocious",
+    grow: true,
     onPress() {
 
     }
   };
-  items27[2] = callback2(arg1(dependencyMap[8]).IconButton, obj69);
+  items27[2] = callback2(require(7771) /* IconButton */.IconButton, obj69);
   obj66.children = items27;
-  obj65.children = callback3(arg1(dependencyMap[21]).Stack, obj66);
+  obj65.children = callback3(require(4541) /* Stack */.Stack, obj66);
   items26[2] = callback2(closure_6, obj65);
   obj61.children = items26;
-  items1[12] = callback3(arg1(dependencyMap[21]).Stack, obj61);
+  items1[12] = callback3(require(4541) /* Stack */.Stack, obj61);
   const obj70 = { spacing: 24 };
-  const obj71 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: "<string:1606877186>", <string:1446667417>: "<string:2135097345>" }) };
-  const items28 = [callback2(arg1(dependencyMap[21]).Stack, obj71), , ];
+  const obj71 = { style: tmp.container, children: callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "ImageButton with a label" }) };
+  const items28 = [callback2(require(4541) /* Stack */.Stack, obj71), , ];
   const obj72 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj73 = { "Null": "absolute", "Null": 8, style: tmp.buttonContainer };
-  const obj74 = { image: importDefault(dependencyMap[28]) };
+  const obj73 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
+  const obj74 = { image: importDefault(12191), label: "Label", showLabel: true };
   const items29 = [callback2(ExampleImageButton, obj74), , ];
-  const obj60 = { image: importDefault(dependencyMap[27]), label: "Twitter" };
-  items29[1] = callback2(ExampleImageButton, { image: importDefault(dependencyMap[24]) });
-  const obj75 = { image: importDefault(dependencyMap[24]) };
-  items29[2] = callback2(ExampleImageButton, { image: importDefault(dependencyMap[29]) });
+  const obj75 = { image: importDefault(12187), label: "Label", showLabel: true };
+  items29[1] = callback2(ExampleImageButton, obj75);
+  const obj76 = { image: importDefault(12190), label: "Label", showLabel: true };
+  items29[2] = callback2(ExampleImageButton, obj76);
   obj73.children = items29;
-  obj72.children = callback3(arg1(dependencyMap[21]).Stack, obj73);
+  obj72.children = callback3(require(4541) /* Stack */.Stack, obj73);
   items28[1] = callback2(closure_6, obj72);
   const obj77 = { horizontal: true, contentContainerStyle: { minWidth: "100%" } };
-  const obj78 = { "Null": "absolute", "Null": 8, style: tmp.buttonContainer };
-  const obj79 = { image: importDefault(dependencyMap[25]) };
+  const obj78 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer };
+  const obj79 = { image: importDefault(12192), label: "Supercalifragilisticexpialidocious", showLabel: true };
   const items30 = [callback2(ExampleImageButton, obj79), , ];
-  const obj76 = { image: importDefault(dependencyMap[29]) };
-  items30[1] = callback2(ExampleImageButton, { image: importDefault(dependencyMap[26]) });
-  const obj80 = { image: importDefault(dependencyMap[26]) };
-  items30[2] = callback2(ExampleImageButton, { image: importDefault(dependencyMap[27]) });
+  const obj80 = { image: importDefault(12194), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  items30[1] = callback2(ExampleImageButton, obj80);
+  const obj81 = { image: importDefault(12193), label: "Supercalifragilisticexpialidocious", showLabel: true };
+  items30[2] = callback2(ExampleImageButton, obj81);
   obj78.children = items30;
-  obj77.children = callback3(arg1(dependencyMap[21]).Stack, obj78);
+  obj77.children = callback3(require(4541) /* Stack */.Stack, obj78);
   items28[2] = callback2(closure_6, obj77);
   obj70.children = items28;
-  items1[13] = callback3(arg1(dependencyMap[21]).Stack, obj70);
+  items1[13] = callback3(require(4541) /* Stack */.Stack, obj70);
   const obj82 = { spacing: 24 };
-  const obj83 = { style: tmp.container, children: callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: true, <string:1446667417>: true }) };
-  const items31 = [callback2(arg1(dependencyMap[21]).Stack, obj83), ];
+  const obj83 = { style: tmp.container, children: callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Mixing buttons" }) };
+  const items31 = [callback2(require(4541) /* Stack */.Stack, obj83), ];
   const obj84 = { direction: "horizontal", style: tmp.container };
-  const items32 = [callback2(ExampleButton, { "Bool(true)": "r", "Bool(true)": "maxMediaHeight", "Bool(true)": "Array" }), callback2(ExampleIconButton, { variant: "secondary" })];
+  const items32 = [callback2(ExampleButton, { variant: "secondary", text: "Search", grow: true }), callback2(ExampleIconButton, { variant: "secondary" })];
   obj84.children = items32;
-  items31[1] = callback3(arg1(dependencyMap[30]).ButtonGroup, obj84);
+  items31[1] = callback3(require(4965) /* ButtonGroup */.ButtonGroup, obj84);
   obj82.children = items31;
-  items1[14] = callback3(arg1(dependencyMap[21]).Stack, obj82);
+  items1[14] = callback3(require(4541) /* Stack */.Stack, obj82);
   const obj85 = {};
   const obj86 = { style: tmp.container };
-  const items33 = [callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: true, <string:1446667417>: true }), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: null, <string:1446667417>: null })];
+  const items33 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Light Profile Themes" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light profile theme" })];
   obj86.children = items33;
-  const items34 = [callback3(arg1(dependencyMap[21]).Stack, obj86), ];
+  const items34 = [callback3(require(4541) /* Stack */.Stack, obj86), ];
   const obj87 = { theme: "light" };
-  let obj91 = arg1(dependencyMap[32]);
+  let obj91 = require(665) /* pad2 */;
   obj87.primaryColor = obj91.hex2int("#ffae70");
-  let obj92 = arg1(dependencyMap[32]);
+  let obj92 = require(665) /* pad2 */;
   obj87.secondaryColor = obj92.hex2int("#cc2300");
-  const obj88 = { style: { padding: 16 }, start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {}, colors: [null, null] };
-  const obj81 = { image: importDefault(dependencyMap[27]) };
+  const obj88 = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#ffae70", "#cc2300"] };
+  const obj60 = { image: importDefault(12193), label: "Twitter" };
   const obj89 = {};
   const obj90 = { spacing: 16 };
-  const items35 = [closure_12.map((variant) => callback2(closure_18, { variant }, variant)), closure_14.map((variant) => callback2(closure_18, { variant }, variant))];
+  const items35 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];
   obj90.children = items35;
-  obj89.children = callback3(arg1(dependencyMap[21]).Stack, obj90);
-  obj88.children = callback2(arg1(dependencyMap[34]).Card, obj89);
-  obj87.children = callback2(importDefault(dependencyMap[33]), obj88);
-  items34[1] = callback2(arg1(dependencyMap[31]).ThemeContextProvider, obj87);
+  obj89.children = callback3(require(4541) /* Stack */.Stack, obj90);
+  obj88.children = callback2(require(5167) /* getCardBackgroundToken */.Card, obj89);
+  obj87.children = callback2(importDefault(4554), obj88);
+  items34[1] = callback2(require(3842) /* ManaContext */.ThemeContextProvider, obj87);
   obj85.children = items34;
-  items1[15] = callback3(arg1(dependencyMap[21]).Stack, obj85);
+  items1[15] = callback3(require(4541) /* Stack */.Stack, obj85);
   obj91 = {};
   obj92 = { style: tmp.container };
-  const items36 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, {})];
+  const items36 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Dark Profile Themes" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark profile theme" })];
   obj92.children = items36;
-  const items37 = [callback3(arg1(dependencyMap[21]).Stack, obj92), ];
+  const items37 = [callback3(require(4541) /* Stack */.Stack, obj92), ];
   const obj93 = { theme: "dark" };
-  obj = arg1(dependencyMap[32]);
+  obj = require(665) /* pad2 */;
   obj93.primaryColor = obj.hex2int("#490000");
-  obj = arg1(dependencyMap[32]);
+  obj = require(665) /* pad2 */;
   obj93.secondaryColor = obj.hex2int("#cc2300");
-  obj = { style: { padding: 16 }, start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {}, colors: [true, true] };
-  const tmp3 = importDefault(dependencyMap[33]);
+  obj = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: ["#490000", "#cc2300"] };
+  const tmp3 = importDefault(4554);
   obj = {};
   obj = { spacing: 16 };
-  const items38 = [closure_12.map((variant) => callback2(closure_18, { variant }, variant)), closure_14.map((variant) => callback2(closure_18, { variant }, variant))];
+  const items38 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];
   obj.children = items38;
-  obj.children = callback3(arg1(dependencyMap[21]).Stack, obj);
-  obj.children = callback2(arg1(dependencyMap[34]).Card, obj);
-  obj93.children = callback2(importDefault(dependencyMap[33]), obj);
-  items37[1] = callback2(arg1(dependencyMap[31]).ThemeContextProvider, obj93);
+  obj.children = callback3(require(4541) /* Stack */.Stack, obj);
+  obj.children = callback2(require(5167) /* getCardBackgroundToken */.Card, obj);
+  obj93.children = callback2(importDefault(4554), obj);
+  items37[1] = callback2(require(3842) /* ManaContext */.ThemeContextProvider, obj93);
   obj91.children = items37;
-  items1[16] = callback3(arg1(dependencyMap[21]).Stack, obj91);
+  items1[16] = callback3(require(4541) /* Stack */.Stack, obj91);
   obj = {};
   obj = { style: tmp.container };
-  const items39 = [callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: null, <string:1446667417>: null }), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: "text-subtle", <string:1446667417>: "By default, stacks buttons vertically. This is best for buttons with text." })];
+  const items39 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Light Client Theme" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light client theme" })];
   obj.children = items39;
-  const items40 = [callback3(arg1(dependencyMap[21]).Stack, obj), ];
-  obj = { theme: closure_7[0].theme, gradient: closure_7[0] };
-  obj = arg1(dependencyMap[31]);
-  obj.flags = obj.setThemeFlag(0, arg1(dependencyMap[31]).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
-  obj = { style: { "Bool(true)": "Agree", "Bool(true)": "primary" } };
-  obj = { absolute: true, gradient: closure_7[0] };
-  const items41 = [callback2(arg1(dependencyMap[35]).Gradient, obj), ];
+  const items40 = [callback3(require(4541) /* Stack */.Stack, obj), ];
+  obj = { theme: 57.theme, gradient: 57 };
+  obj = require(3842) /* ManaContext */;
+  obj.flags = obj.setThemeFlag(0, require(3842) /* ManaContext */.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
+  obj = { style: { position: "relative", padding: 16 } };
+  obj = { absolute: true, gradient: 57 };
+  const items41 = [callback2(require(4662) /* getThemeMixColor */.Gradient, obj), ];
   obj = {};
-  obj = { isArray: null, memo: null, string: null };
-  obj = arg1(dependencyMap[31]);
+  obj = { backgroundColor: null, padding: 16, borderRadius: 16 };
+  obj = require(3842) /* ManaContext */;
   obj.backgroundColor = obj.setColorOpacity("white", 0.7);
   obj.style = obj;
   obj = { spacing: 16 };
-  const items42 = [closure_12.map((variant) => callback2(closure_18, { variant }, variant)), closure_14.map((variant) => callback2(closure_18, { variant }, variant))];
+  const items42 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];
   obj.children = items42;
-  obj.children = callback3(arg1(dependencyMap[21]).Stack, obj);
+  obj.children = callback3(require(4541) /* Stack */.Stack, obj);
   items41[1] = callback2(closure_5, obj);
   obj.children = items41;
   obj.children = callback3(closure_5, obj);
-  items40[1] = callback2(arg1(dependencyMap[31]).ThemeContextProvider, obj);
+  items40[1] = callback2(require(3842) /* ManaContext */.ThemeContextProvider, obj);
   obj.children = items40;
-  items1[17] = callback3(arg1(dependencyMap[21]).Stack, obj);
+  items1[17] = callback3(require(4541) /* Stack */.Stack, obj);
   obj = {};
   obj = { style: tmp.container };
-  const items43 = [callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: null, <string:1446667417>: "Primary Row Button" }), callback2(arg1(dependencyMap[22]).Text, {})];
+  const items43 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Dark Client Theme" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark client theme" })];
   obj.children = items43;
-  const items44 = [callback3(arg1(dependencyMap[21]).Stack, obj), ];
-  obj = { theme: closure_8[0].theme, gradient: closure_8[0] };
-  obj = arg1(dependencyMap[31]);
-  obj.flags = obj.setThemeFlag(0, arg1(dependencyMap[31]).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
-  obj = { style: { "Bool(true)": "Agree", "Bool(true)": "primary" } };
-  obj = { absolute: true, gradient: closure_8[0] };
-  const items45 = [callback2(arg1(dependencyMap[35]).Gradient, obj), ];
+  const items44 = [callback3(require(4541) /* Stack */.Stack, obj), ];
+  obj = { theme: 57.theme, gradient: 57 };
+  obj = require(3842) /* ManaContext */;
+  obj.flags = obj.setThemeFlag(0, require(3842) /* ManaContext */.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
+  obj = { style: { position: "relative", padding: 16 } };
+  obj = { absolute: true, gradient: 57 };
+  const items45 = [callback2(require(4662) /* getThemeMixColor */.Gradient, obj), ];
   obj = {};
-  obj = { isArray: null, memo: null, string: null };
-  obj = arg1(dependencyMap[31]);
+  obj = { backgroundColor: null, padding: 16, borderRadius: 16 };
+  obj = require(3842) /* ManaContext */;
   obj.backgroundColor = obj.setColorOpacity("black", 0.7);
   obj.style = obj;
   obj = { spacing: 16 };
-  const items46 = [closure_12.map((variant) => callback2(closure_18, { variant }, variant)), closure_14.map((variant) => callback2(closure_18, { variant }, variant))];
+  const items46 = [closure_12.map((variant) => outer1_9(outer1_18, { variant }, variant)), closure_14.map((variant) => outer1_9(outer1_18, { variant }, variant))];
   obj.children = items46;
-  obj.children = callback3(arg1(dependencyMap[21]).Stack, obj);
+  obj.children = callback3(require(4541) /* Stack */.Stack, obj);
   items45[1] = callback2(closure_5, obj);
   obj.children = items45;
   obj.children = callback3(closure_5, obj);
-  items44[1] = callback2(arg1(dependencyMap[31]).ThemeContextProvider, obj);
+  items44[1] = callback2(require(3842) /* ManaContext */.ThemeContextProvider, obj);
   obj.children = items44;
-  items1[18] = callback3(arg1(dependencyMap[21]).Stack, obj);
+  items1[18] = callback3(require(4541) /* Stack */.Stack, obj);
   obj = {};
   obj = { style: tmp.container };
-  const items47 = [callback2(arg1(dependencyMap[22]).Text, {}), callback2(arg1(dependencyMap[22]).Text, { <string:2807142664>: 1375732116, <string:1446667417>: -1445451650 })];
+  const items47 = [callback2(require(4126) /* Text */.Text, { variant: "heading-lg/bold", children: "Floating Action Button" }), callback2(require(4126) /* Text */.Text, { variant: "text-sm/normal", children: "An ever-present icon button, giving the most important call to action in a compact way." })];
   obj.children = items47;
-  const items48 = [callback3(arg1(dependencyMap[21]).Stack, obj), callback2(closure_5, { style: { padding: 48 } })];
+  const items48 = [callback3(require(4541) /* Stack */.Stack, obj), callback2(closure_5, { style: { padding: 48 } })];
   obj.children = items48;
-  items1[19] = callback3(arg1(dependencyMap[21]).Stack, obj);
+  items1[19] = callback3(require(4541) /* Stack */.Stack, obj);
   obj2.children = items1;
-  obj1.children = callback3(arg1(dependencyMap[21]).Stack, obj2);
+  obj1.children = callback3(require(4541) /* Stack */.Stack, obj2);
   const items49 = [callback2(closure_6, obj1), ];
   obj = {
-    icon: importDefault(dependencyMap[9]),
+    icon: importDefault(5792),
     onPress() {
 
     },
     positionBottom: 32,
     accessibilityLabel: "Floating Action Button"
   };
-  items49[1] = callback2(arg1(dependencyMap[36]).FloatingActionButton, obj);
+  items49[1] = callback2(require(8379) /* styles */.FloatingActionButton, obj);
   obj.children = items49;
   return callback3(closure_11, obj);
 };

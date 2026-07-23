@@ -1,32 +1,33 @@
-// Module ID: 12714
-// Function ID: 97613
+// Module ID: 12828
+// Function ID: 99769
 // Name: modKey
-// Dependencies: []
+// Dependencies: [477, 2]
 
-// Module 12714 (modKey)
-const _module = require(dependencyMap[0]);
-if (_module.isMac()) {
+// Module 12828 (modKey)
+import set from "set";
+import set from "set";
+import set from "set";
+import set from "set";
+
+if (set.isMac()) {
   let str = "cmd";
 } else {
-  const _module1 = require(dependencyMap[0]);
+  const _module1 = require("set");
   str = "ctrl";
 }
-const _module2 = require(dependencyMap[0]);
-if (_module2.isMac()) {
+if (set.isMac()) {
   let str2 = "opt";
 } else {
-  const _module3 = require(dependencyMap[0]);
+  const _module3 = require("set");
   str2 = "alt";
 }
-const _module4 = require(dependencyMap[0]);
-if (_module4.isMac()) {
+if (set.isMac()) {
   let str3 = "return";
 } else {
-  const _module5 = require(dependencyMap[0]);
+  const _module5 = require("set");
   str3 = "enter";
 }
-const _module6 = require(dependencyMap[1]);
-const result = _module6.fileFinishedImporting("lib/KeybindModKeys.tsx");
+const result = set.fileFinishedImporting("lib/KeybindModKeys.tsx");
 
 export const modKey = str;
 export const altKey = str2;

@@ -1,35 +1,46 @@
-// Module ID: 16371
-// Function ID: 126322
+// Module ID: 16488
+// Function ID: 128496
 // Name: AdvancedInstantInviteScreen
-// Dependencies: []
+// Dependencies: [57, 31, 1348, 8482, 1838, 3758, 653, 33, 4130, 689, 1456, 566, 44, 22, 16489, 8488, 4470, 1212, 4559, 686, 5788, 7495, 16490, 8483, 480, 5087, 5519, 2]
 // Exports: default
 
-// Module 16371 (AdvancedInstantInviteScreen)
+// Module 16488 (AdvancedInstantInviteScreen)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function AdvancedInstantInviteScreen() {
   let channel;
   let guild;
   let inviteSettings;
   let settings;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[10]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
-  const items = [closure_5, closure_6, closure_7];
-  const stateFromStoresObject = arg1(dependencyMap[11]).useStateFromStoresObject(items, () => {
-    const pendingSettings = store.getPendingSettings();
+  let tmp = _createForOfIteratorHelperLoose();
+  let obj = navigation(1456);
+  navigation = obj.useNavigation();
+  const items = [_isNativeReflectConstruct, closure_6, closure_7];
+  const stateFromStoresObject = navigation(566).useStateFromStoresObject(items, () => {
+    const pendingSettings = outer1_6.getPendingSettings();
     let guildId;
     channel(tmp8[12])(null != pendingSettings, "Received null pending invite settings");
-    const inviteSettings = store.getInviteSettings();
+    const inviteSettings = outer1_6.getInviteSettings();
     channel(tmp8[12])(null != inviteSettings, "Received null invite settings");
-    const channel = channel.getChannel(pendingSettings.channelId);
+    channel = outer1_5.getChannel(pendingSettings.channelId);
     if (null != channel) {
       guildId = channel.getGuildId();
     }
-    const obj = { settings: pendingSettings, inviteSettings, channel, guild: guild.getGuild(guildId) };
+    const obj = { settings: pendingSettings, inviteSettings, channel, guild: outer1_7.getGuild(guildId) };
     return obj;
   });
   ({ settings, channel } = stateFromStoresObject);
-  const importDefault = channel;
   ({ inviteSettings, guild } = stateFromStoresObject);
   const tmp4 = callback(React.useState(channel), 2);
   const first = tmp4[0];
@@ -40,13 +51,13 @@ function AdvancedInstantInviteScreen() {
   if (tmp6) {
     tmp4[1](channel);
   }
-  const obj2 = arg1(dependencyMap[11]);
-  const tmp8 = !arg1(dependencyMap[13]).isEqual(settings, inviteSettings);
+  let obj2 = navigation(566);
+  const tmp8 = !navigation(22).isEqual(settings, inviteSettings);
   const dependencyMap = tmp8;
   const items1 = [channel];
   const effect = React.useEffect(() => {
     if (null == channel) {
-      const guildId = store.getGuildId();
+      const guildId = outer1_6.getGuildId();
       let invitableChannelForGuild = null;
       if (null != guildId) {
         let obj = navigation(tmp8[14]);
@@ -68,14 +79,14 @@ function AdvancedInstantInviteScreen() {
       }
     }
   }, items1);
-  const obj3 = arg1(dependencyMap[13]);
-  const unmountEffect = arg1(dependencyMap[18]).useUnmountEffect(() => {
+  let obj3 = navigation(22);
+  const unmountEffect = navigation(4559).useUnmountEffect(() => {
     channel(tmp8[19]).wait(channel(tmp8[15]).resetSettings);
   });
   const items2 = [channel];
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     if (null != channel) {
-      if (closure_8.can(constants.CREATE_INSTANT_INVITE, channel)) {
+      if (outer1_8.can(outer1_10.CREATE_INSTANT_INVITE, channel)) {
         const invite = channel(tmp8[15]).createInvite("IOS Regenerate");
         const obj3 = channel(tmp8[15]);
         channel(tmp8[15]).close();
@@ -96,11 +107,11 @@ function AdvancedInstantInviteScreen() {
     navigation.setOptions({
       headerRight() {
         let tmp;
-        if (closure_2) {
-          const obj = { onPress: closure_3 };
-          const intl = callback(closure_2[17]).intl;
-          obj.text = intl.string(callback(closure_2[17]).t.R3BPH+);
-          tmp = callback2(callback(closure_2[20]).HeaderActionButton, obj);
+        if (outer1_2) {
+          const obj = { onPress: outer1_3 };
+          const intl = navigation(1212).intl;
+          obj.text = intl.string(navigation(1212).t["R3BPH+"]);
+          tmp = outer2_11(navigation(5788).HeaderActionButton, obj);
         }
         return tmp;
       }
@@ -133,47 +144,38 @@ function AdvancedInstantInviteScreen() {
   }, []);
   obj = { contentContainerStyle: tmp.formContainer };
   obj = { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses };
-  const obj4 = arg1(dependencyMap[18]);
-  obj.maxUsesOptions = importDefault(dependencyMap[23]).getMaxUsesOptions;
+  let obj4 = navigation(4559);
+  obj.maxUsesOptions = channel(8483).getMaxUsesOptions;
   ({ temporary: obj6.temporary, flags: obj6.flags, roleIds: obj6.roleIds } = settings);
   obj.onChangeMaxAge = callback2;
   obj.onChangeMaxUses = callback1;
   obj.onChangeTemporary = callback3;
   obj.onChangeFlags = callback4;
   obj.onChangeRoleIds = callback5;
-  obj.children = jsx(importDefault(dependencyMap[22]), obj);
-  return jsx(arg1(dependencyMap[21]).Form, obj);
+  obj.children = jsx(channel(16490), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
+  return jsx(navigation(7495).Form, { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ InviteModalScenes: closure_9, Permissions: closure_10 } = arg1(dependencyMap[6]));
-const jsx = arg1(dependencyMap[7]).jsx;
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { paddingTop: importDefault(dependencyMap[9]).space.PX_16, paddingBottom: importDefault(dependencyMap[9]).space.PX_32 };
-obj.formContainer = obj;
-const tmp2 = arg1(dependencyMap[6]);
-obj.formContent = { paddingHorizontal: importDefault(dependencyMap[9]).modules.mobile.TABLE_ROW_PADDING };
-let closure_12 = obj.createStyles(obj);
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[9]).modules.mobile.TABLE_ROW_PADDING };
-const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/guild_invite/native/InviteSettingsModal.tsx");
+({ InviteModalScenes: closure_9, Permissions: closure_10 } = ME);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_32 };
+_createForOfIteratorHelperLoose.formContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.formContent = { paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_invite/native/InviteSettingsModal.tsx");
 
 export default function InviteSettingsModal() {
-  const memo = React.useMemo(() => function getScreens() {
+  const memo = React.useMemo(() => (function getScreens() {
     let obj = {};
-    obj = { impressionName: callback(closure_2[24]).ImpressionNames.GUILD_INVITE_LINK_SETTINGS };
-    const intl = callback(closure_2[17]).intl;
-    obj.title = intl.string(callback(closure_2[17]).t.Yx4IiC);
-    obj.headerLeft = callback(closure_2[25]).getHeaderCloseButton(callback2(closure_2[15]).close);
+    obj = { impressionName: outer2_0(outer2_2[24]).ImpressionNames.GUILD_INVITE_LINK_SETTINGS };
+    const intl = outer2_0(outer2_2[17]).intl;
+    obj.title = intl.string(outer2_0(outer2_2[17]).t.Yx4IiC);
+    obj.headerLeft = outer2_0(outer2_2[25]).getHeaderCloseButton(outer2_1(outer2_2[15]).close);
     obj.render = function render() {
-      return callback(closure_13, {});
+      return outer3_11(outer3_13, {});
     };
-    obj[constants.ADVANCED] = obj;
+    obj[outer2_9.ADVANCED] = obj;
     return obj;
-  }(), []);
-  return jsx(arg1(dependencyMap[26]).Navigator, { screens: memo, initialRouteName: constants.ADVANCED });
+  })(), []);
+  return jsx(require(5519) /* NavigationStack */.Navigator, { screens: memo, initialRouteName: constants.ADVANCED });
 };

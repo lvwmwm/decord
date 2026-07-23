@@ -1,53 +1,53 @@
-// Module ID: 4560
-// Function ID: 39959
+// Module ID: 4564
+// Function ID: 39991
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 4560 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let _createForOfIteratorHelperLoose = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4564 (_createForOfIteratorHelperLoose)
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +58,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      _createForOfIteratorHelperLoose = tmp;
+      closure_0 = tmp;
     }
-    const _arrayLikeToArray = 0;
+    _arrayLikeToArray = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,8 +84,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/markup/combineMarkupRules.tsx");
+const result = require("set").fileFinishedImporting("modules/markup/combineMarkupRules.tsx");
 
 export default function combineMarkupRules(arg0) {
   let iter3;
@@ -100,7 +99,7 @@ export default function combineMarkupRules(arg0) {
       let tmp5 = tmp3;
       let keys = Object.keys();
       if (keys !== undefined) {
-        let tmp3 = tmp5;
+        tmp3 = tmp5;
         let tmp7 = keys[tmp];
         while (tmp7 !== undefined) {
           tmp5 = tmp7;
@@ -117,7 +116,7 @@ export default function combineMarkupRules(arg0) {
             tmp10 = obj;
           }
           obj[tmp5] = tmp10;
-          // continue
+          continue;
         }
       }
       iter3 = tmp2();

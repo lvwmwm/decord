@@ -1,35 +1,39 @@
-// Module ID: 4939
-// Function ID: 42336
+// Module ID: 4942
+// Function ID: 42354
 // Name: makeRequest
-// Dependencies: []
+// Dependencies: [29, 675, 507, 2]
 
-// Module 4939 (makeRequest)
+// Module 4942 (makeRequest)
+import _objectWithoutProperties from "_objectWithoutProperties";
+
+const require = arg1;
 function makeRequest(arg0, trackedActionData, request_method) {
-  trackedActionData = arg0;
-  const dependencyMap = trackedActionData.trackedActionData;
-  const tmp = callback(trackedActionData, closure_2);
+  let closure_0 = arg0;
+  trackedActionData = trackedActionData.trackedActionData;
+  const tmp = obj(trackedActionData, closure_2);
   closure_2 = tmp;
-  const callback = { url: tmp.url, request_method };
+  obj = { url: tmp.url, request_method };
   return new Promise((arg0, arg1) => {
-    const trackedActionData = arg1;
-    const promise = arg0(tmp);
-    arg0(tmp).then((status, self) => {
-      let properties = self.properties;
-      if ("function" === typeof self.properties) {
-        properties = self.properties(status);
+    const callback = arg0;
+    let closure_1 = arg1;
+    const promise = callback(closure_2);
+    callback(closure_2).then((status) => {
+      let properties = lib.properties;
+      if ("function" === typeof lib.properties) {
+        properties = lib.properties(status);
       }
-      let obj = status(self[1]);
+      let obj = callback(trackedActionData[1]);
       obj = { status_code: status.status };
-      const merged = Object.assign(closure_3);
+      const merged = Object.assign(outer1_3);
       const merged1 = Object.assign(properties);
-      obj.trackNetworkAction(self.event, obj);
-      status(status);
-    }).catch((status, self) => {
-      let properties = self.properties;
-      if ("function" === typeof self.properties) {
-        properties = self.properties(status);
+      obj.trackNetworkAction(lib.event, obj);
+      callback(status);
+    }).catch((status) => {
+      let properties = lib.properties;
+      if ("function" === typeof lib.properties) {
+        properties = lib.properties(status);
       }
-      let obj = status(self[1]);
+      let obj = callback(trackedActionData[1]);
       obj = { status_code: status.status };
       const body = status.body;
       let code;
@@ -43,31 +47,30 @@ function makeRequest(arg0, trackedActionData, request_method) {
         message = body2.message;
       }
       obj.error_message = message;
-      const merged = Object.assign(closure_3);
+      const merged = Object.assign(outer1_3);
       const merged1 = Object.assign(properties);
-      obj.trackNetworkAction(self.event, obj);
-      self(status);
+      obj.trackNetworkAction(lib.event, obj);
+      lib(status);
     });
   });
 }
-let closure_2 = ["turkey"];
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("utils/TrackedHTTPUtils.tsx");
+let closure_2 = ["trackedActionData"];
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/TrackedHTTPUtils.tsx");
 
 export default {
   get(arg0) {
-    return makeRequest(arg1(dependencyMap[2]).HTTP.get, arg0, "get");
+    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.get, arg0, "get");
   },
   post(sendMessageOptionsForReply, responseHandler) {
-    return makeRequest(responseHandler(dependencyMap[2]).HTTP.post, sendMessageOptionsForReply, "post");
+    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.post, sendMessageOptionsForReply, "post");
   },
   put(arg0) {
-    return makeRequest(arg1(dependencyMap[2]).HTTP.put, arg0, "put");
+    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.put, arg0, "put");
   },
   patch(arg0) {
-    return makeRequest(arg1(dependencyMap[2]).HTTP.patch, arg0, "patch");
+    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.patch, arg0, "patch");
   },
   delete: function del(arg0) {
-    return makeRequest(arg1(dependencyMap[2]).HTTP.del, arg0, "del");
+    return makeRequest(require(507) /* _isNativeReflectConstruct */.HTTP.del, arg0, "del");
   }
 };

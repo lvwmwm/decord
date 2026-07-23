@@ -1,18 +1,19 @@
-// Module ID: 7891
-// Function ID: 62827
+// Module ID: 7897
+// Function ID: 62864
 // Name: createUploaderAttachments
-// Dependencies: [33554437, 1946157056, 4325]
+// Dependencies: [7622, 4317, 7807, 1212, 4664, 2]
 // Exports: default
 
-// Module 7891 (createUploaderAttachments)
-const AttachmentType = require(dependencyMap[0]).AttachmentType;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/transformUploaderAttachments.tsx");
+// Module 7897 (createUploaderAttachments)
+import { AttachmentType } from "Changeset";
+
+const result = require("getContentScanVersionFromMedia").fileFinishedImporting("modules/messages/native/renderer/transformUploaderAttachments.tsx");
 
 export default function createUploaderAttachments(uploaderFile) {
+  let AttachmentType;
+  let dependencyMap;
   uploaderFile = uploaderFile.uploaderFile;
-  const require = uploaderFile;
-  ({ isFailedMessage: closure_1, shouldInlineAttachmentMedia: closure_2 } = uploaderFile);
+  ({ isFailedMessage: dependencyMap, shouldInlineAttachmentMedia: AttachmentType } = uploaderFile);
   const items = uploaderFile.items;
   let mapped;
   if (null != items) {
@@ -29,13 +30,13 @@ export default function createUploaderAttachments(uploaderFile) {
       if (null != originalUri) {
         tmp = originalUri;
       }
-      let obj = uploaderFile(closure_1[1]);
+      let obj = uploaderFile(outer1_1[1]);
       const isImageFileResult = obj.isImageFile(str2);
-      const isVideoFileResult = uploaderFile(closure_1[1]).isVideoFile(str2);
-      const obj2 = uploaderFile(closure_1[1]);
+      const isVideoFileResult = uploaderFile(outer1_1[1]).isVideoFile(str2);
+      const obj2 = uploaderFile(outer1_1[1]);
       const progress = item.progress;
       let num = 0;
-      const obj3 = uploaderFile(closure_1[1]);
+      const obj3 = uploaderFile(outer1_1[1]);
       if (null != progress) {
         num = progress;
       }
@@ -61,8 +62,8 @@ export default function createUploaderAttachments(uploaderFile) {
         tmp7 = tmp;
       }
       obj.videoUrl = tmp7;
-      const isAudioFileResult = uploaderFile(closure_1[1]).isAudioFile(str2);
-      const merged = Object.assign(uploaderFile(closure_1[2]).getAttachmentObscurityDefaults());
+      const isAudioFileResult = uploaderFile(outer1_1[1]).isAudioFile(str2);
+      const merged = Object.assign(uploaderFile(outer1_1[2]).getAttachmentObscurityDefaults());
       obj["filename"] = str2;
       if (null != item.size) {
         str = item.size.toString();
@@ -86,20 +87,20 @@ export default function createUploaderAttachments(uploaderFile) {
         }
       }
       obj["height"] = num6;
-      const intl = uploaderFile(closure_1[3]).intl;
+      const intl = uploaderFile(outer1_1[3]).intl;
       const string = intl.string;
-      const t = uploaderFile(closure_1[3]).t;
+      const t = uploaderFile(outer1_1[3]).t;
       if (isVideoFileResult) {
-        let stringResult = string(t.BEWw/7);
+        let stringResult = string(t["BEWw/7"]);
       } else {
         stringResult = string(t.IPzNKE);
       }
       obj["hint"] = stringResult;
-      const intl2 = uploaderFile(closure_1[3]).intl;
+      const intl2 = uploaderFile(outer1_1[3]).intl;
       const string2 = intl2.string;
-      const t2 = uploaderFile(closure_1[3]).t;
+      const t2 = uploaderFile(outer1_1[3]).t;
       if (isVideoFileResult) {
-        let string2Result = string2(t2./SCpvi);
+        let string2Result = string2(t2["/SCpvi"]);
       } else {
         string2Result = string2(t2.fKyfca);
       }
@@ -122,7 +123,7 @@ export default function createUploaderAttachments(uploaderFile) {
       obj["durationSecs"] = item.durationSecs;
       obj["waveform"] = item.waveform;
       let uniqueId;
-      if (filename instanceof uploaderFile(closure_1[4]).CloudUpload) {
+      if (filename instanceof uploaderFile(outer1_1[4]).CloudUpload) {
         uniqueId = filename.uniqueId;
       }
       obj["id"] = uniqueId;

@@ -1,15 +1,18 @@
-// Module ID: 7898
-// Function ID: 62899
+// Module ID: 7904
+// Function ID: 62936
 // Name: buildPlatformPollResources
-// Dependencies: []
+// Dependencies: [22, 7905, 4130, 689, 7635, 5181, 5506, 1395, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 7898 (buildPlatformPollResources)
-let closure_3 = importDefault(dependencyMap[0]).mapValues(arg1(dependencyMap[1]).pollStyleSets, (arg0) => {
-  const arg1 = arg0;
-  let closure_1 = arg1(dependencyMap[2]).createNativeStyleProperties((arg0) => {
-    const tmp = arg0(callback(closure_2[3]), arg0);
-    return callback(closure_2[0]).pickBy(tmp, (arg0) => {
+// Module 7904 (buildPlatformPollResources)
+import importDefaultResult from "apply";
+
+const require = arg1;
+let closure_3 = require("apply").mapValues(require("normal").pollStyleSets, (arg0) => {
+  const _require = arg0;
+  let closure_1 = _require(4130).createNativeStyleProperties((arg0) => {
+    const tmp = callback(callback2(outer1_2[3]), arg0);
+    return callback2(outer1_2[0]).pickBy(tmp, (arg0) => {
       let tmp2 = "number" !== tmp;
       if (tmp2) {
         tmp2 = "boolean" !== tmp;
@@ -18,11 +21,11 @@ let closure_3 = importDefault(dependencyMap[0]).mapValues(arg1(dependencyMap[1])
     });
   });
   return (arg0, arg1) => {
-    let obj = callback(closure_2[0]);
-    const tmp = arg0(callback(closure_2[3]), arg1);
+    let obj = callback2(outer1_2[0]);
+    const tmp = callback(callback2(outer1_2[3]), arg1);
     obj = {};
-    const merged = Object.assign(callback(arg0, arg1));
-    const merged1 = Object.assign(obj.pickBy(arg0(callback(closure_2[3]), arg1), (arg0) => {
+    const merged = Object.assign(callback2(arg0, arg1));
+    const merged1 = Object.assign(obj.pickBy(callback(callback2(outer1_2[3]), arg1), (arg0) => {
       let tmp2 = "number" === tmp;
       if (!tmp2) {
         tmp2 = "boolean" === tmp;
@@ -32,19 +35,18 @@ let closure_3 = importDefault(dependencyMap[0]).mapValues(arg1(dependencyMap[1])
     return obj;
   };
 });
-const importDefaultResult = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/polls/chat/buildPlatformPollResources.native.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/polls/chat/buildPlatformPollResources.native.tsx");
 
 export const buildPlatformPollResources = function buildPlatformPollResources(theme, layoutType) {
-  layoutType = theme;
+  const _require = theme;
   const importDefault = layoutType;
-  const obj = { styles: importDefault(dependencyMap[0]).mapValues(closure_3, (arg0) => arg0(arg0, arg1)) };
-  const obj2 = importDefault(dependencyMap[0]);
-  obj.selectedIcon = layoutType(dependencyMap[4]).getAssetUriForEmbed(importDefault(dependencyMap[5]));
-  const obj3 = layoutType(dependencyMap[4]);
-  obj.checkmarkIcon = layoutType(dependencyMap[4]).getAssetUriForEmbed(importDefault(dependencyMap[6]));
+  const obj = { styles: importDefault(22).mapValues(closure_3, (arg0) => arg0(closure_0, closure_1)) };
+  const obj2 = importDefault(22);
+  obj.selectedIcon = _require(7635).getAssetUriForEmbed(importDefault(5181));
+  const obj3 = _require(7635);
+  obj.checkmarkIcon = _require(7635).getAssetUriForEmbed(importDefault(5506));
   return obj;
 };
 export const getAvatarUrl = function getAvatarUrl(currentUser, guildId) {
-  return guildId(dependencyMap[7]).ensureAvatarSource(currentUser.getAvatarSource(guildId, false)).uri;
+  return require(1395) /* ensureAvatarSource */.ensureAvatarSource(currentUser.getAvatarSource(guildId, false)).uri;
 };

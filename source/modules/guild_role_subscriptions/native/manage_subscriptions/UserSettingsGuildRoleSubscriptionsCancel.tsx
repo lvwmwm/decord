@@ -1,73 +1,84 @@
-// Module ID: 14001
-// Function ID: 106400
+// Module ID: 14115
+// Function ID: 108556
 // Name: WhatYouLose
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 3782, 33, 4130, 689, 14116, 3712, 1212, 5515, 1273, 4126, 14106, 5085, 14124, 5464, 5484, 8002, 4471, 4451, 3830, 3798, 4543, 14112, 14101, 14125, 14126, 566, 2]
 // Exports: default
 
-// Module 14001 (WhatYouLose)
+// Module 14115 (WhatYouLose)
+import closure_4 from "jsxProd";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "FastAssetImage";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_7;
+let closure_8;
+const require = arg1;
 function WhatYouLose(subscription) {
   let guild;
   let listingId;
   ({ listingId, guild } = subscription);
-  const tmp = callback6();
-  let obj = importAll(dependencyMap[8]);
-  let obj1 = importAll(dependencyMap[8]);
-  let obj2 = importAll(dependencyMap[8]);
-  let obj3 = importAll(dependencyMap[8]);
-  let obj4 = importDefault(dependencyMap[9])(subscription.subscription.currentPeriodEnd);
-  const intl = arg1(dependencyMap[10]).intl;
-  const formatResult = obj4.format(closure_12);
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj = { numEmojis: callback2(obj.useTierEmojiIds(listingId, guild.id), 1)[0].size, numChannels: callback2(obj1.useChannelBenefits(listingId), 1)[0].length, numIntangibles: callback2(obj2.useIntangibleBenefits(listingId), 1)[0].length };
+  const tmp = callback4();
+  let obj = importAll(14116);
+  let obj1 = importAll(14116);
+  let obj2 = importAll(14116);
+  let obj3 = importAll(14116);
+  let obj4 = importDefault(3712)(subscription.subscription.currentPeriodEnd);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  const formatResult = obj4.format(c12);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj = { numEmojis: callback(obj.useTierEmojiIds(listingId, guild.id), 1)[0].size, numChannels: callback(obj1.useChannelBenefits(listingId), 1)[0].length, numIntangibles: callback(obj2.useIntangibleBenefits(listingId), 1)[0].length };
   obj = { style: tmp.container };
   obj1 = { style: tmp.header };
-  const formatResult1 = intl.format(arg1(dependencyMap[10]).t.EtAXzC, { subscriptionEndDate: obj4.format(closure_12) });
-  const items = [callback3(importDefault(dependencyMap[11]), { guild }), callback3(arg1(dependencyMap[12]).Spacer, { size: 16 }), ];
+  const formatResult1 = intl.format(require(1212) /* getSystemLocale */.t.EtAXzC, { subscriptionEndDate: obj4.format(c12) });
+  const items = [callback2(importDefault(5515), { guild }), callback2(require(1273) /* Button */.Spacer, { size: 16 }), ];
   obj2 = {};
-  obj3 = { cachedAt: null, edpbxy: null };
-  obj3.children = callback2(obj3.useName(listingId), 1)[0];
-  const items1 = [callback3(arg1(dependencyMap[13]).Text, obj3), callback3(arg1(dependencyMap[12]).Spacer, { size: 2 }), ];
-  obj4 = { children: guild.name };
-  items1[2] = callback3(arg1(dependencyMap[13]).Text, obj4);
+  obj3 = { variant: "text-md/semibold", color: "interactive-text-active" };
+  obj3.children = callback(obj3.useName(listingId), 1)[0];
+  const items1 = [callback2(require(4126) /* Text */.Text, obj3), callback2(require(1273) /* Button */.Spacer, { size: 2 }), ];
+  obj4 = { variant: "text-sm/medium", color: "interactive-text-default", children: guild.name };
+  items1[2] = callback2(require(4126) /* Text */.Text, obj4);
   obj2.children = items1;
-  items[2] = callback4(closure_7, obj2);
+  items[2] = callback3(closure_7, obj2);
   obj1.children = items;
-  const items2 = [callback4(closure_7, obj1), callback3(importDefault(dependencyMap[14]), { style: { marginVertical: 16 } }), , , , , ];
-  const obj5 = { cachedAt: null, edpbxy: null };
-  const intl3 = arg1(dependencyMap[10]).intl;
-  obj5.children = intl3.string(arg1(dependencyMap[10]).t.9SgXmT);
-  items2[2] = callback3(arg1(dependencyMap[13]).Text, obj5);
-  items2[3] = callback3(arg1(dependencyMap[12]).Spacer, { size: 12 });
+  const items2 = [callback3(closure_7, obj1), callback2(importDefault(14106), { style: { marginVertical: 16 } }), , , , , ];
+  const obj5 = { variant: "text-md/semibold", color: "interactive-text-active" };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj5.children = intl3.string(require(1212) /* getSystemLocale */.t["9SgXmT"]);
+  items2[2] = callback2(require(4126) /* Text */.Text, obj5);
+  items2[3] = callback2(require(1273) /* Button */.Spacer, { size: 12 });
+  const obj6 = { variant: "text-sm/normal", color: "text-default" };
   const items3 = [formatResult1, "\n"];
-  items2[4] = callback4(arg1(dependencyMap[13]).Text, { children: items3 });
-  items2[5] = callback3(arg1(dependencyMap[13]).Text, { children: intl2.formatToPlainString(arg1(dependencyMap[10]).t.OVlNGT, obj) });
-  const obj6 = {};
-  const formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[10]).t.OVlNGT, obj);
-  obj6.source = importDefault(dependencyMap[16]);
-  obj6.style = tmp.cactus;
-  items2[6] = callback3(importDefault(dependencyMap[15]), obj6);
+  obj6.children = items3;
+  items2[4] = callback3(require(4126) /* Text */.Text, obj6);
+  const obj7 = { variant: "text-sm/medium", color: "text-default", children: intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.OVlNGT, obj) };
+  items2[5] = callback2(require(4126) /* Text */.Text, obj7);
+  const obj8 = {};
+  const formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.OVlNGT, obj);
+  obj8.source = importDefault(14124);
+  obj8.style = tmp.cactus;
+  items2[6] = callback2(importDefault(5085), obj8);
   obj.children = items2;
-  return callback4(closure_7, obj);
+  return callback3(closure_7, obj);
 }
 function CancelSubscriptionButtonFooter(guild) {
   guild = guild.guild;
-  const arg1 = guild;
   const subscription = guild.subscription;
-  const importDefault = subscription;
   const onClose = guild.onClose;
-  const importAll = onClose;
-  const tmp3 = callback2(React.useState(false), 2);
+  const tmp3 = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
   let first = tmp3[0];
-  let closure_3 = tmp3[1];
-  const tmp2 = callback5();
-  const analyticsLocations = importDefault(closure_3[17])(importDefault(closure_3[18]).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
-  let callback = analyticsLocations;
-  let obj = importDefault(closure_3[19]);
-  let cancelSubscription = obj.useCancelSubscription(subscription.id, subscription.isACOM);
+  const dependencyMap = tmp3[1];
+  const tmp2 = _createForOfIteratorHelperLoose();
+  const analyticsLocations = subscription(5464)(subscription(5484).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
+  let obj = subscription(8002);
+  cancelSubscription = obj.useCancelSubscription(subscription.id, subscription.isACOM);
   cancelSubscription = cancelSubscription.cancelSubscription;
-  const callback2 = cancelSubscription;
-  let isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;
-  const React = isPurchasedViaAppleGeneric;
+  isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [guild.name, , , , , , , ];
   ({ currentPeriodEnd: arr[1], id: arr[2], isPurchasedViaDesktop: arr[3] } = subscription);
@@ -76,7 +87,7 @@ function CancelSubscriptionButtonFooter(guild) {
   items[6] = cancelSubscription;
   items[7] = analyticsLocations;
   obj = { style: tmp2.footer };
-  callback = React.useCallback(callback(tmp), items);
+  const callback = isPurchasedViaAppleGeneric.useCallback(analyticsLocations(tmp), items);
   obj = { variant: "destructive" };
   if (!first) {
     if (isPurchasedViaAppleGeneric) {
@@ -85,19 +96,19 @@ function CancelSubscriptionButtonFooter(guild) {
     first = isPurchasedViaAppleGeneric;
   }
   obj.loading = first;
-  const intl = arg1(closure_3[10]).intl;
-  obj.text = intl.string(arg1(closure_3[10]).t.cM1H0K);
+  const intl = guild(1212).intl;
+  obj.text = intl.string(guild(1212).t.cM1H0K);
   obj.onPress = callback;
-  obj.children = closure_10(arg1(closure_3[24]).Button, obj);
+  obj.children = closure_10(guild(4543).Button, obj);
   return closure_10(closure_7, obj);
 }
 function Content(subscription) {
   let guild;
   let listing;
   subscription = subscription.subscription;
-  const tmp = callback5();
-  ({ listing, guild } = importDefault(dependencyMap[25])(subscription));
-  let obj = arg1(dependencyMap[26]);
+  const tmp = _createForOfIteratorHelperLoose();
+  ({ listing, guild } = importDefault(14112)(subscription));
+  let obj = require(14101) /* _createForOfIteratorHelperLoose */;
   let id;
   if (null != guild) {
     id = guild.id;
@@ -117,66 +128,56 @@ function Content(subscription) {
       obj = { style: tmp.container };
       obj = {};
       const obj1 = { style: tmp.heroImage, asset: tmp6 };
-      const items = [callback3(importDefault(dependencyMap[27]), obj1), ];
+      const items = [callback2(importDefault(14125), obj1), ];
       const obj2 = { style: tmp.body };
       const obj3 = { guild, listingId: listing.id, subscription };
-      const items1 = [callback3(WhatYouLose, obj3), , , , ];
+      const items1 = [callback2(WhatYouLose, obj3), , , , ];
       const obj4 = { size: 24 };
-      items1[1] = callback3(arg1(dependencyMap[12]).Spacer, obj4);
-      const obj5 = { cachedAt: "<string:191316381>", edpbxy: "<string:3094478849>" };
+      items1[1] = callback2(require(1273) /* Button */.Spacer, obj4);
+      const obj5 = { variant: "text-sm/bold", color: "text-default" };
       const obj6 = { textTransform: "uppercase" };
       obj5.style = obj6;
-      const intl = arg1(dependencyMap[10]).intl;
-      obj5.children = intl.string(arg1(dependencyMap[10]).t.xyvN8p);
-      items1[2] = callback3(arg1(dependencyMap[13]).Text, obj5);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj5.children = intl.string(require(1212) /* getSystemLocale */.t.xyvN8p);
+      items1[2] = callback2(require(4126) /* Text */.Text, obj5);
       const obj7 = { size: 16 };
-      items1[3] = callback3(arg1(dependencyMap[12]).Spacer, obj7);
+      items1[3] = callback2(require(1273) /* Button */.Spacer, obj7);
       const obj8 = { listingId: listing.id, guildId: guild.id };
-      items1[4] = callback3(importAll(dependencyMap[28]).Content, obj8);
+      items1[4] = callback2(importAll(14126).Content, obj8);
       obj2.children = items1;
-      items[1] = callback4(closure_7, obj2);
+      items[1] = callback3(closure_7, obj2);
       obj.children = items;
-      const items2 = [callback4(closure_8, obj), ];
+      const items2 = [callback3(closure_8, obj), ];
       const obj9 = { guild, subscription, onClose: subscription.onClose };
-      items2[1] = callback3(CancelSubscriptionButtonFooter, obj9);
+      items2[1] = callback2(CancelSubscriptionButtonFooter, obj9);
       obj.children = items2;
-      tmp7 = callback4(closure_7, obj);
+      tmp7 = callback3(closure_7, obj);
     }
   }
   return tmp7;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-({ View: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
-let closure_12 = "M/DD/YY";
-let obj = arg1(dependencyMap[6]);
-obj = { container: { flex: 1 }, body: {}, heroImage: { height: undefined } };
-obj = { gap: "97335968179b868ec33c96b39450902f", flexDirection: "img_premium_canvas_mobile", alignItems: "png", borderTopColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.footer = obj;
-let closure_13 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[5]);
-const obj1 = {};
-const obj4 = arg1(dependencyMap[6]);
-obj1.container = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.md, paddingVertical: 12, paddingHorizontal: 16 };
-obj1.header = { marginLeft: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013132815383737633, marginVertical: 203722238426496480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-obj1.cactus = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
-let closure_14 = obj4.createStyles(obj1);
-const obj2 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.md, paddingVertical: 12, paddingHorizontal: 16 };
-const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/UserSettingsGuildRoleSubscriptionsCancel.tsx");
+({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+let c12 = "M/DD/YY";
+_createForOfIteratorHelperLoose = { container: { flex: 1 }, body: { marginVertical: 24, marginHorizontal: 16 }, heroImage: _createForOfIteratorHelperLoose };
+_createForOfIteratorHelperLoose = { width: "100%", height: undefined, aspectRatio: 2.5684931506849313 };
+let obj1 = { borderTopColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER, borderTopWidth: 1, padding: 16 };
+_createForOfIteratorHelperLoose.footer = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { container: { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingVertical: 12, paddingHorizontal: 16 }, header: { flex: 1, flexDirection: "row" }, cactus: { width: 99, position: "absolute", right: 16, bottom: 12 } };
+let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj2);
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, paddingVertical: 12, paddingHorizontal: 16 };
+const result = require("result").fileFinishedImporting("modules/guild_role_subscriptions/native/manage_subscriptions/UserSettingsGuildRoleSubscriptionsCancel.tsx");
 
 export default function UserSettingsGuildRoleSubscriptionsCancel(subscriptionId) {
-  const arg1 = subscriptionId.subscriptionId;
-  let obj = arg1(dependencyMap[29]);
-  const items = [closure_9];
-  const stateFromStores = obj.useStateFromStores(items, () => subscriptionById.getSubscriptionById(subscriptionId));
+  subscriptionId = subscriptionId.subscriptionId;
+  let obj = subscriptionId(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getSubscriptionById(subscriptionId));
   let tmp2 = null;
   if (null != stateFromStores) {
     obj = { subscription: stateFromStores, onClose: subscriptionId.onClose };
-    tmp2 = callback3(Content, obj);
+    tmp2 = callback2(Content, obj);
   }
   return tmp2;
 };

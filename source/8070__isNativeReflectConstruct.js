@@ -1,9 +1,19 @@
 // Module ID: 8070
-// Function ID: 64016
+// Function ID: 64023
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8071, 8056, 8057]
 
 // Module 8070 (_isNativeReflectConstruct)
+import jsxProd from "jsxProd";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import "result";
+import { jsx } from "jsxProd";
+import tmp3 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,57 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = (arg0) => {
-  class FeMergeNode {
-    constructor() {
-      self = this;
-      tmp = FeMergeNode(this, FeMergeNode);
-      length = arguments.length;
-      array = new Array(length);
-      for (let num = 0; num < length; num = num + 1) {
-        array[num] = arguments[num];
-      }
-      items = [];
-      combined = items.concat(array);
-      obj = closure_3(FeMergeNode);
-      tmp3 = closure_2;
-      if (closure_5()) {
-        if (!combined) {
-          combined = [];
-        }
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, combined, closure_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, combined);
-      }
-      tmp3Result = tmp3(self, constructResult);
-      FeMergeNode = tmp3Result;
-      tmp3Result.setNativeProps = () => {
-        const parent = tmp3Result.props.parent;
-        if (parent) {
-          parent.forceUpdate();
-        }
-      };
-      return tmp3Result;
-    }
-  }
-  let closure_0 = FeMergeNode;
-  callback2(FeMergeNode, arg0);
-  const items = [
-    {
-      key: "render",
-      value: function render() {
-        return null;
-      }
-    }
-  ];
-  return callback(FeMergeNode, items);
-}(importDefault(dependencyMap[5]));
-tmp2.displayName = "FeMergeNode";
+tmp3.displayName = "FeOffset";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps, { dx: 0, dy: 0 });
 
-export default tmp2;
+export default tmp3;

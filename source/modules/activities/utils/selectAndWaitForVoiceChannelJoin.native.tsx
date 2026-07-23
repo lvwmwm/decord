@@ -1,10 +1,19 @@
-// Module ID: 10815
-// Function ID: 83990
+// Module ID: 10825
+// Function ID: 84039
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [5, 7, 6, 15, 17, 18, 162, 1906, 4944, 2]
 // Exports: default
 
-// Module 10815 (_isNativeReflectConstruct)
+// Module 10825 (_isNativeReflectConstruct)
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _wrapNativeSuper from "_wrapNativeSuper";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import closure_7 from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import importDefaultResult from "_wrapNativeSuper";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,29 +26,21 @@ function _isNativeReflectConstruct() {
 function _selectAndWaitForVoiceChannelJoin() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _selectAndWaitForVoiceChannelJoin = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[7]);
-let closure_9 = (arg0) => {
+let closure_9 = ((arg0) => {
   class JoinTimeoutError {
     constructor() {
       self = this;
-      tmp = closure_4(this, JoinTimeoutError);
-      obj = closure_6(JoinTimeoutError);
-      tmp2 = closure_5;
-      if (closure_10()) {
+      tmp = outer1_4(this, JoinTimeoutError);
+      obj = outer1_6(JoinTimeoutError);
+      tmp2 = outer1_5;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -48,12 +49,10 @@ let closure_9 = (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = JoinTimeoutError;
   callback3(JoinTimeoutError, arg0);
   return callback2(JoinTimeoutError);
-}(importDefault(dependencyMap[6])(Error));
-const importDefaultResult = importDefault(dependencyMap[6]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/activities/utils/selectAndWaitForVoiceChannelJoin.native.tsx");
+})(require("_wrapNativeSuper")(Error));
+let result = require("_classCallCheck").fileFinishedImporting("modules/activities/utils/selectAndWaitForVoiceChannelJoin.native.tsx");
 
 export default function selectAndWaitForVoiceChannelJoin() {
   return _selectAndWaitForVoiceChannelJoin(...arguments);

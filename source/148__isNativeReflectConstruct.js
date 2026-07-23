@@ -1,9 +1,16 @@
 // Module ID: 148
 // Function ID: 2359
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 140, 135, 138, 134]
 
 // Module 148 (_isNativeReflectConstruct)
+import getRendererProxy from "getRendererProxy";
+import getRawNativeDOMForTests from "getRawNativeDOMForTests";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +20,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
 
-export default (arg0) => {
+export default ((arg0) => {
   class ReadOnlyCharacterData {
     constructor() {
       self = this;
-      tmp = closure_3(this, ReadOnlyCharacterData);
-      obj = closure_6(ReadOnlyCharacterData);
-      tmp2 = closure_5;
-      if (closure_8()) {
+      tmp = outer1_3(this, ReadOnlyCharacterData);
+      obj = outer1_6(ReadOnlyCharacterData);
+      tmp2 = outer1_5;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,30 +42,29 @@ export default (arg0) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ReadOnlyCharacterData;
   callback2(ReadOnlyCharacterData, arg0);
   let obj = {
     key: "nextElementSibling",
     get() {
-      return ReadOnlyCharacterData(closure_2[5]).getElementSibling(this, "next");
+      return ReadOnlyCharacterData(outer1_2[5]).getElementSibling(this, "next");
     }
   };
   const items = [obj, , , , , , ];
   obj = {
     key: "previousElementSibling",
     get() {
-      return ReadOnlyCharacterData(closure_2[5]).getElementSibling(this, "previous");
+      return ReadOnlyCharacterData(outer1_2[5]).getElementSibling(this, "previous");
     }
   };
   items[1] = obj;
   obj = {
     key: "data",
     get() {
-      const nativeTextReference = ReadOnlyCharacterData(closure_2[6]).getNativeTextReference(this);
+      const nativeTextReference = ReadOnlyCharacterData(outer1_2[6]).getNativeTextReference(this);
       let str = "";
       if (null != nativeTextReference) {
-        str = callback(closure_2[7]).getTextContent(nativeTextReference);
-        const obj2 = callback(closure_2[7]);
+        str = outer1_1(outer1_2[7]).getTextContent(nativeTextReference);
+        const obj2 = outer1_1(outer1_2[7]);
       }
       return str;
     }
@@ -111,4 +112,4 @@ export default (arg0) => {
     }
   };
   return callback(ReadOnlyCharacterData, items);
-}(importDefault(dependencyMap[8]));
+})(require("getChildNodes"));

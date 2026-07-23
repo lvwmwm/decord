@@ -1,9 +1,16 @@
-// Module ID: 10081
-// Function ID: 78071
+// Module ID: 10089
+// Function ID: 78111
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 10087, 10088, 2]
 
-// Module 10081 (_isNativeReflectConstruct)
+// Module 10089 (_isNativeReflectConstruct)
+import AbstractSearchFetchManager from "AbstractSearchFetchManager";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,24 +20,19 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let tmp2 = (AbstractSearchFetchManager) => {
+let tmp2 = ((AbstractSearchFetchManager) => {
   class SearchFetchManager {
     constructor() {
       self = this;
-      tmp = closure_2(this, SearchFetchManager);
-      obj = closure_5(SearchFetchManager);
-      tmp2 = closure_4;
-      if (closure_7()) {
+      tmp = outer1_2(this, SearchFetchManager);
+      obj = outer1_5(SearchFetchManager);
+      tmp2 = outer1_4;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -39,7 +41,6 @@ let tmp2 = (AbstractSearchFetchManager) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SearchFetchManager;
   callback2(SearchFetchManager, AbstractSearchFetchManager);
   const items = [
     {
@@ -50,15 +51,15 @@ let tmp2 = (AbstractSearchFetchManager) => {
         let searchType;
         ({ id, searchType, searchQuery } = arg0);
         this.cancel(id);
-        const searchFetcherImpl = new SearchFetchManager(closure_1[5]).SearchFetcherImpl(id, searchType, searchQuery);
+        const searchFetcherImpl = new SearchFetchManager(outer1_1[5]).SearchFetcherImpl(id, searchType, searchQuery);
         const result = this.set(id, searchFetcherImpl);
         return searchFetcherImpl;
       }
     }
   ];
   return callback(SearchFetchManager, items);
-}(arg1(dependencyMap[6]).AbstractSearchFetchManager);
+})(require("AbstractSearchFetchManager").AbstractSearchFetchManager);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/search/managers/SearchFetchManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/search/managers/SearchFetchManager.tsx");
 
 export default tmp2;

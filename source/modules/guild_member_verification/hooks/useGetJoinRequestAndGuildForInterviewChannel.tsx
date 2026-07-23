@@ -1,71 +1,70 @@
-// Module ID: 11655
-// Function ID: 90411
+// Module ID: 11665
+// Function ID: 90460
 // Name: useGetJoinRequestAndGuildForInterviewChannel
-// Dependencies: []
+// Dependencies: [57, 31, 1838, 3758, 6692, 3948, 653, 21, 566, 9160, 2]
 // Exports: default
 
-// Module 11655 (useGetJoinRequestAndGuildForInterviewChannel)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const Permissions = arg1(dependencyMap[6]).Permissions;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestAndGuildForInterviewChannel.tsx");
+// Module 11665 (useGetJoinRequestAndGuildForInterviewChannel)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestAndGuildForInterviewChannel.tsx");
 
 export default function useGetJoinRequestAndGuildForInterviewChannel(id) {
+  let require;
   let tmp2;
-  [tmp2, closure_0] = callback(React.useState(false), 2);
-  const tmp3 = callback(React.useState(false), 2);
+  [tmp2, require] = castResult(joinRequest.useState(false), 2);
+  const tmp3 = castResult(joinRequest.useState(false), 2);
   const first = tmp3[0];
-  const importDefault = first;
-  let closure_2 = tmp3[1];
-  const tmp = callback(React.useState(false), 2);
-  const castResult = importDefault(closure_2[7]).cast(id);
-  const callback = castResult;
-  const obj = importDefault(closure_2[7]);
-  const items = [closure_7, closure_8, closure_5, closure_6];
-  const stateFromStoresObject = arg1(closure_2[8]).useStateFromStoresObject(items, () => {
-    const request = request.getRequest(castResult);
+  const dependencyMap = tmp3[1];
+  const tmp = castResult(joinRequest.useState(false), 2);
+  castResult = first(21).cast(id);
+  let obj = first(21);
+  const items = [closure_7, closure_8, joinRequestGuild, _isNativeReflectConstruct];
+  const stateFromStoresObject = require(566) /* initialize */.useStateFromStoresObject(items, () => {
+    const request = outer1_7.getRequest(_slicedToArray);
     if (null == request) {
-      return {};
+      return { joinRequest: null, isModmin: false, guild: null };
     } else {
       let guild = joinRequestGuild.getGuild(request.guildId);
       if (null == guild) {
-        guild = joinRequestGuild.getJoinRequestGuild(request.guildId);
+        guild = outer1_8.getJoinRequestGuild(request.guildId);
       }
       const obj = { joinRequest: request };
       let canResult = null != guild;
       if (canResult) {
-        canResult = closure_6.can(constants.KICK_MEMBERS, guild);
+        canResult = outer1_6.can(outer1_9.KICK_MEMBERS, guild);
       }
       obj.isModmin = canResult;
       obj.guild = guild;
       return obj;
     }
   });
-  const joinRequest = stateFromStoresObject.joinRequest;
-  const React = joinRequest;
-  const joinRequestGuild = stateFromStoresObject.guild;
-  closure_5 = joinRequestGuild;
+  joinRequest = stateFromStoresObject.joinRequest;
+  joinRequestGuild = stateFromStoresObject.guild;
   const items1 = [joinRequestGuild, first];
-  const effect = React.useEffect(() => {
+  const effect = joinRequest.useEffect(() => {
     if (!tmp) {
-      callback2(true);
-      const requestToJoinGuilds = first(callback2[9]).fetchRequestToJoinGuilds();
-      const obj = first(callback2[9]);
+      dependencyMap(true);
+      const requestToJoinGuilds = first(9160).fetchRequestToJoinGuilds();
+      const obj = first(9160);
     }
   }, items1);
   const items2 = [joinRequest, castResult];
-  const effect1 = React.useEffect(() => {
+  const effect1 = joinRequest.useEffect(() => {
     if (null == joinRequest) {
       callback(true);
-      const joinRequestForInterview = first(closure_2[9]).fetchJoinRequestForInterview(castResult);
+      const joinRequestForInterview = first(9160).fetchJoinRequestForInterview(_slicedToArray);
       joinRequestForInterview.finally(() => {
-        callback(false);
+        outer1_0(false);
       });
-      const obj = first(closure_2[9]);
+      const obj = first(9160);
     }
   }, items2);
   return { loading, joinRequest, joinRequestGuild };

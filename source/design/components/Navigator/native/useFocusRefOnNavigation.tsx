@@ -1,30 +1,29 @@
-// Module ID: 14634
-// Function ID: 110349
+// Module ID: 14749
+// Function ID: 112513
 // Name: useFocusRefOnNavigation
-// Dependencies: []
+// Dependencies: [31, 1457, 5584, 2]
 // Exports: default
 
-// Module 14634 (useFocusRefOnNavigation)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("design/components/Navigator/native/useFocusRefOnNavigation.tsx");
+// Module 14749 (useFocusRefOnNavigation)
+import result from "result";
+
+const require = arg1;
+const result = require("runAfterInteractions").fileFinishedImporting("design/components/Navigator/native/useFocusRefOnNavigation.tsx");
 
 export default function useFocusRefOnNavigation(inputRef) {
   inputRef = inputRef.inputRef;
-  const arg1 = inputRef;
   let flag = inputRef.enabled;
   if (flag === undefined) {
     flag = true;
   }
-  const dependencyMap = flag;
-  let React;
-  const isFocused = arg1(dependencyMap[1]).useIsFocused();
-  React = isFocused;
+  let isFocused;
+  isFocused = inputRef(flag[1]).useIsFocused();
   const items = [flag, inputRef, isFocused];
-  const effect = React.useEffect(() => {
-    const inputRef = inputRef(flag[2]).runAfterInteractions(() => {
-      let tmp = closure_1;
-      if (closure_1) {
-        tmp = closure_2;
+  const effect = isFocused.useEffect(() => {
+    let closure_0 = inputRef(flag[2]).runAfterInteractions(() => {
+      let tmp = outer1_1;
+      if (outer1_1) {
+        tmp = outer1_2;
       }
       if (tmp) {
         const current = ref.current;

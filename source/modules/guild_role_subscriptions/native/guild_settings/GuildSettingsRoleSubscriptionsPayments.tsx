@@ -1,19 +1,21 @@
-// Module ID: 16356
-// Function ID: 126178
-// Dependencies: []
+// Module ID: 16473
+// Function ID: 128352
+// Dependencies: [31, 33, 15261, 1212, 2]
 
-// Module 16356
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef(() => {
+// Module 16473
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const forwardRefResult = require("result").forwardRef(() => {
   const obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.title = intl.string(arg1(dependencyMap[3]).t.qAMb9K);
-  const intl2 = arg1(dependencyMap[3]).intl;
-  obj.description = intl2.string(arg1(dependencyMap[3]).t.pRuzXJ);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.qAMb9K);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl2.string(require(1212) /* getSystemLocale */.t.pRuzXJ);
   obj.brightTitle = true;
-  return jsx(importDefault(dependencyMap[2]), obj);
+  return jsx(importDefault(15261), {});
 });
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsPayments.tsx");
+const result = require("UnavailableNotice").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsPayments.tsx");
 
 export default forwardRefResult;

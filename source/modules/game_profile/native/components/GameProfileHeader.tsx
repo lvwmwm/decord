@@ -1,59 +1,61 @@
-// Module ID: 8623
-// Function ID: 68329
+// Module ID: 8630
+// Function ID: 68369
 // Name: GameProfileHeader
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 3991, 8631, 4554, 8632, 4126, 2]
 // Exports: default
 
-// Module 8623 (GameProfileHeader)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.artHero = { bottom: -importDefault(dependencyMap[5]).space.PX_80 };
-obj.artHeroImage = { GifAutoPlay: "89c1f821400ffcc75deeeab8c6315a88", lavender: "pt-BR.messages.89c1f821400ffcc75deeeab8c6315a88.compiled.messages", useShouldShowWishlistInDMGifting: "jsona" };
-obj.artHeroGradient = {};
-const obj2 = { "Null": "png", "Null": true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", "Null": 24, "Null": 24, "Null": null, "Null": "e8a96141e48bf46350215d4dadeaaebc", "Null": "ExperimentalGameControllerLinkIcon", paddingTop: importDefault(dependencyMap[5]).space.PX_32, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, gap: importDefault(dependencyMap[5]).space.PX_12 };
-obj.headerContent = obj2;
-const obj1 = { bottom: -importDefault(dependencyMap[5]).space.PX_80 };
-const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_LOW);
-obj.shadowContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-const obj4 = { borderColor: "concat", justifyContent: "isArray", alignItems: "isArray", overflow: "isArray", style: "Text", borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.coverContainer = obj4;
-const obj3 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.iconContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.image = {};
-obj.titleContainer = { Text: null, applicationId: null, message: null };
-const obj5 = { borderRadius: importDefault(dependencyMap[5]).radii.sm, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.textShadow = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" }, textShadowRadius: 1 };
-let closure_9 = obj.createStyles(obj);
+// Module 8630 (GameProfileHeader)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ View: closure_5, Image: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { width: "100%", position: "absolute", top: 0, bottom: -require("_createForOfIteratorHelperLoose").space.PX_80, left: 0, right: 0 };
+_createForOfIteratorHelperLoose.artHero = obj1;
+_createForOfIteratorHelperLoose.artHeroImage = { height: "100%", width: "100%", resizeMode: "cover" };
+_createForOfIteratorHelperLoose.artHeroGradient = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
+let obj2 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_32, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: 520, alignSelf: "center", width: "100%" };
+_createForOfIteratorHelperLoose.headerContent = obj2;
+const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
+_createForOfIteratorHelperLoose.shadowContainer = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+const obj4 = { width: 85, height: 114, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
+_createForOfIteratorHelperLoose.coverContainer = obj4;
+let obj5 = { width: 85, height: 85, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
+_createForOfIteratorHelperLoose.iconContainer = obj5;
+_createForOfIteratorHelperLoose.image = { width: "100%", height: "100%" };
+_createForOfIteratorHelperLoose.titleContainer = { flex: 1, flexDirection: "column", alignItems: "flex-start" };
+let obj3 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.textShadow = { textShadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_10 = { code: "function GameProfileHeaderTsx1(){const{effectiveScrollY}=this.__closure;return{top:-Math.max(0,-effectiveScrollY.get())};}" };
-const obj6 = { textShadowColor: importDefault(dependencyMap[5]).colors.BLACK, textShadowOffset: { "Null": "%FunctionPrototype%", "Null": "paddingStart" }, textShadowRadius: 1 };
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/game_profile/native/components/GameProfileHeader.tsx");
+let obj6 = { textShadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 1 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/game_profile/native/components/GameProfileHeader.tsx");
 
 export default function GameProfileHeader(game) {
   let onHeightMeasured;
   let scrollY;
   game = game.game;
-  const arg1 = game;
   ({ scrollY, onHeightMeasured } = game);
-  const importDefault = onHeightMeasured;
-  let callback;
-  const tmp = callback3();
-  const first = callback(React.useState(() => Math.random()), 1)[0];
-  const dependencyMap = first;
-  let obj = arg1(dependencyMap[6]);
-  let sharedValue = obj.useSharedValue(0);
+  let sharedValue;
+  const tmp = _createForOfIteratorHelperLoose();
+  const first = sharedValue(React.useState(() => Math.random()), 1)[0];
+  let obj = game(first[6]);
+  sharedValue = obj.useSharedValue(0);
   if (null != scrollY) {
     sharedValue = scrollY;
   }
-  callback = sharedValue;
-  let obj1 = arg1(dependencyMap[6]);
+  let obj1 = game(first[6]);
   const fn = function x() {
     return { top: -Math.max(0, -sharedValue.get()) };
   };
@@ -69,7 +71,7 @@ export default function GameProfileHeader(game) {
   let joined;
   if (null != game) {
     const genres = game.genres;
-    const mapped = genres.map(arg1(dependencyMap[7]).getGenreText);
+    const mapped = genres.map(game(first[7]).getGenreText);
     joined = mapped.join(", ");
   }
   let l30Rank;
@@ -92,7 +94,7 @@ export default function GameProfileHeader(game) {
         tmp6 = null;
         if (game.screenshotUrls.length > 0) {
           const _Math = Math;
-          tmp6 = game.screenshotUrls[Math.floor(Math, closure_2 * closure_0.screenshotUrls.length)];
+          tmp6 = game.screenshotUrls[Math.floor(Math, first * game.screenshotUrls.length)];
         }
       }
       bannerURL = tmp6;
@@ -125,20 +127,20 @@ export default function GameProfileHeader(game) {
     }, items3)
   };
   obj1 = { style: items4 };
-  const items4 = [tmp.artHero, animatedStyle];
+  items4 = [tmp.artHero, animatedStyle];
   let tmp15 = null != memo;
   if (tmp15) {
     const obj2 = {};
     const obj3 = { uri: memo };
     obj2.source = obj3;
     obj2.style = tmp.artHeroImage;
-    tmp15 = callback2(closure_6, obj2);
+    tmp15 = callback(closure_6, obj2);
   }
   const items5 = [tmp15, ];
-  const items6 = [843081088, tmp.container.backgroundColor];
-  items5[1] = callback2(importDefault(dependencyMap[8]), { colors: items6, style: tmp.artHeroGradient });
+  const items6 = ["rgba(0,0,0,0.3)", tmp.container.backgroundColor];
+  items5[1] = callback(onHeightMeasured(first[8]), { colors: items6, style: tmp.artHeroGradient });
   obj1.children = items5;
-  const items7 = [closure_8(importDefault(dependencyMap[6]).View, obj1), ];
+  const items7 = [closure_8(onHeightMeasured(first[6]).View, obj1), ];
   const obj5 = { style: tmp.headerContent };
   const obj6 = { style: tmp.shadowContainer };
   if (null != memo1) {
@@ -147,7 +149,7 @@ export default function GameProfileHeader(game) {
     const obj9 = { uri: memo1 };
     obj8.source = obj9;
     obj8.style = tmp.image;
-    obj7.children = callback2(closure_6, obj8);
+    obj7.children = callback(closure_6, obj8);
     let obj10 = obj7;
   } else {
     obj10 = { style: tmp.iconContainer };
@@ -157,27 +159,27 @@ export default function GameProfileHeader(game) {
       const obj12 = { uri: memo2 };
       obj11.source = obj12;
       obj11.style = tmp.image;
-      tmp21 = callback2(closure_6, obj11);
+      tmp21 = callback(closure_6, obj11);
     }
     obj10.children = tmp21;
   }
-  obj6.children = callback2(closure_5, obj10);
-  const items8 = [callback2(closure_5, obj6), ];
+  obj6.children = callback(closure_5, obj10);
+  const items8 = [callback(closure_5, obj6), ];
   const obj13 = { style: tmp.titleContainer };
   let tmp28 = null != l30Rank;
   if (tmp28) {
     const obj14 = { rank: l30Rank };
-    tmp28 = callback2(importDefault(dependencyMap[9]), obj14);
+    tmp28 = callback(onHeightMeasured(first[9]), obj14);
   }
   const items9 = [tmp28, , ];
-  const obj15 = { style: tmp.textShadow, children: name };
-  items9[1] = callback2(arg1(dependencyMap[10]).Text, obj15);
+  const obj15 = { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: name };
+  items9[1] = callback(game(first[10]).Text, obj15);
   let tmp32 = null;
   if (null != joined) {
     tmp32 = null;
     if ("" !== joined) {
-      const obj16 = { 803799044: "position", 1269170180: "scalar", 711589892: 13, style: tmp.textShadow, children: joined };
-      tmp32 = callback2(arg1(dependencyMap[10]).Text, obj16);
+      const obj16 = { variant: "text-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
+      tmp32 = callback(game(first[10]).Text, obj16);
     }
   }
   items9[2] = tmp32;

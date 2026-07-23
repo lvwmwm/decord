@@ -1,32 +1,48 @@
-// Module ID: 10006
-// Function ID: 77339
+// Module ID: 10014
+// Function ID: 77379
 // Name: dismissPanel
-// Dependencies: []
+// Dependencies: [31, 10015, 10013, 10016, 7590, 10017, 1559, 2]
 
-// Module 10006 (dismissPanel)
+// Module 10014 (dismissPanel)
+import { VoicePanelModes } from "VoicePanelModes";
+import VoicePanelControlsModes from "VoicePanelControlsModes";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import importDefaultResult from "_createForOfIteratorHelperLoose";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import createFakeSharedValue from "createFakeSharedValue";
+import set from "VoicePanelControlsModes";
+
 let CONTROLS_HEIGHT;
 let VoicePanelControlsModes;
-const VoicePanelModes = arg1(dependencyMap[1]).VoicePanelModes;
-const importAllResult = importAll(dependencyMap[0]);
-({ CONTROLS_HEIGHT, VoicePanelControlsModes } = arg1(dependencyMap[2]));
+({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsModes);
 let obj = { channelId: "context-not-initialized", channelType: undefined };
-const tmp2 = arg1(dependencyMap[2]);
-obj.connected = arg1(dependencyMap[4]).createFakeSharedValue(false);
-const obj3 = arg1(dependencyMap[4]);
-obj.contentDimensions = arg1(dependencyMap[4]).createFakeSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
-const obj4 = arg1(dependencyMap[4]);
+obj.connected = createFakeSharedValue.createFakeSharedValue(false);
+obj.contentDimensions = createFakeSharedValue.createFakeSharedValue({ width: 0, height: 0 });
 obj = { mode: VoicePanelControlsModes.FLOATING_DEFAULT, locked: false, height: CONTROLS_HEIGHT, pushToTalk: false };
-obj.controlsSpecs = arg1(dependencyMap[4]).createFakeSharedValue(obj);
+obj.controlsSpecs = createFakeSharedValue.createFakeSharedValue(obj);
 obj.dismissPanel = function dismissPanel() {
   const error = new Error("VoicePanelContextType.Provider.dismissDrawer: not called within a context provider");
   throw error;
 };
 obj.dismissToPIPGestureRef = { current: undefined };
-const obj5 = arg1(dependencyMap[4]);
-obj.dragScrolling = arg1(dependencyMap[4]).createFakeSharedValue(false);
-const obj7 = arg1(dependencyMap[4]);
-obj.focused = arg1(dependencyMap[4]).createFakeSharedValue(null);
-obj.generateStateLocker = function generateStateLocker(arg0) {
+obj.dragScrolling = createFakeSharedValue.createFakeSharedValue(false);
+obj.focused = createFakeSharedValue.createFakeSharedValue(null);
+obj.generateStateLocker = function generateStateLocker(closure_0) {
   const error = new Error("VoicePanelContextType.Provider.generateStateLocker: not called within a context provider");
   throw error;
 };
@@ -36,25 +52,17 @@ obj.hideControls = function hideControls() {
   throw error;
 };
 obj.isCall = false;
-const obj8 = arg1(dependencyMap[4]);
-obj.isFocusedVideoZoomed = arg1(dependencyMap[4]).createFakeSharedValue(false);
-let importDefaultResult = importDefault(dependencyMap[5]);
+obj.isFocusedVideoZoomed = createFakeSharedValue.createFakeSharedValue(false);
 importDefaultResult = new importDefaultResult("invalid");
 obj.layoutManager = importDefaultResult;
-const obj9 = arg1(dependencyMap[4]);
-obj.mode = arg1(dependencyMap[4]).createFakeSharedValue(VoicePanelModes.PANEL);
-const obj10 = arg1(dependencyMap[4]);
-obj.morphablePanelMode = arg1(dependencyMap[4]).createFakeSharedValue(arg1(dependencyMap[3]).MorphablePanelModes.PANEL);
-const obj11 = arg1(dependencyMap[4]);
-obj.mountedCards = new Set();
-const set = new Set();
-obj.pipAvoidanceSpecs = arg1(dependencyMap[4]).createFakeSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
-const obj12 = arg1(dependencyMap[4]);
-obj.preJoinContentSize = require("module_0");
-const obj13 = arg1(dependencyMap[4]);
-obj.safeArea = arg1(dependencyMap[4]).createFakeSharedValue(arg1(dependencyMap[6]).EMPTY_SAFE_AREA_INSETS);
-const obj14 = arg1(dependencyMap[4]);
-obj.scrollPosition = require("module_0");
+obj.mode = createFakeSharedValue.createFakeSharedValue(VoicePanelModes.PANEL);
+obj.morphablePanelMode = createFakeSharedValue.createFakeSharedValue(require("MIN_PAN_GESTURE_MOVE").MorphablePanelModes.PANEL);
+let set = new Set();
+obj.mountedCards = set;
+obj.pipAvoidanceSpecs = createFakeSharedValue.createFakeSharedValue({ top: 0, bottom: 0 });
+obj.preJoinContentSize = require("result");
+obj.safeArea = createFakeSharedValue.createFakeSharedValue(require("EMPTY_SAFE_AREA_INSETS").EMPTY_SAFE_AREA_INSETS);
+obj.scrollPosition = require("result");
 obj.setControlsMode = function setControlsMode() {
   const error = new Error("VoicePanelContextType.Provider.setControlsMode: not called within a context provider");
   throw error;
@@ -75,26 +83,19 @@ obj.setShowFloatingCTA = function setShowFloatingCTA(BAD_CONNECTION) {
   const error = new Error("VoicePanelContextType.Provider.showFloatingCTA: not called within a context provider");
   throw error;
 };
-obj.showControls = function showControls(arg0) {
+obj.showControls = function showControls() {
   const error = new Error("VoicePanelContextType.Provider.showControls: not called within a context provider");
   throw error;
 };
-const obj15 = arg1(dependencyMap[4]);
-obj.showFloatingCTA = arg1(dependencyMap[4]).createFakeSharedValue(null);
+obj.showFloatingCTA = createFakeSharedValue.createFakeSharedValue(null);
 obj.streamOutputSinkStack = {};
-const obj16 = arg1(dependencyMap[4]);
-obj.windowDimensions = arg1(dependencyMap[4]).createFakeSharedValue({});
-const obj17 = arg1(dependencyMap[4]);
-const obj1 = { <string:1654717400>: true, <string:1655395932>: true, <string:1162977531>: true, <string:1446666757>: true, <string:1636042321>: true, <string:1895911739>: true, <string:1621778771>: true, mode: VoicePanelModes.PANEL };
-obj.wrapperDimensions = arg1(dependencyMap[4]).createFakeSharedValue(obj1);
-const obj18 = arg1(dependencyMap[4]);
-obj.useReducedMotion = arg1(dependencyMap[4]).createFakeSharedValue(false);
-const obj20 = arg1(dependencyMap[4]);
-obj.wrapperOffset = arg1(dependencyMap[4]).createFakeSharedValue({ progressViewOffset: true, refreshing: true, id: true });
-const obj21 = arg1(dependencyMap[4]);
-obj.panelCardStillInPIP = arg1(dependencyMap[4]).createFakeSharedValue(false);
-const context = importAllResult.createContext(obj);
-const obj22 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/voice_panel/native/VoicePanelStateContext.tsx");
+obj.windowDimensions = createFakeSharedValue.createFakeSharedValue({ width: 0, height: 0, landscape: false });
+const obj1 = { drawerWidth: 0, drawerHeight: 0, drawerX: 0, drawerY: 0, pipX: 0, pipY: 0, animated: true, mode: VoicePanelModes.PANEL };
+obj.wrapperDimensions = createFakeSharedValue.createFakeSharedValue(obj1);
+obj.useReducedMotion = createFakeSharedValue.createFakeSharedValue(false);
+obj.wrapperOffset = createFakeSharedValue.createFakeSharedValue({ gestureActive: false, x: 0, y: 0 });
+obj.panelCardStillInPIP = createFakeSharedValue.createFakeSharedValue(false);
+const context = require("result").createContext(obj);
+const result = set.fileFinishedImporting("modules/voice_panel/native/VoicePanelStateContext.tsx");
 
 export default context;

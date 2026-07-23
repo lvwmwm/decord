@@ -1,13 +1,15 @@
-// Module ID: 7070
-// Function ID: 56530
+// Module ID: 7075
+// Function ID: 56564
 // Name: getScreenshakeLocationName
-// Dependencies: [0, 0, 0, 0, 4294967295]
+// Dependencies: [6921, 653, 22, 675, 2]
 
-// Module 7070 (getScreenshakeLocationName)
-import { AnalyticEvents } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
+// Module 7075 (getScreenshakeLocationName)
+import ConfettiLocation from "ConfettiLocation";
+import { AnalyticEvents } from "ME";
+import importDefaultResult from "apply";
 
+let closure_2;
+let closure_3;
 function getScreenshakeLocationName(arg0) {
   if (constants.CHAT_INPUT === arg0) {
     return "chat_input";
@@ -29,7 +31,7 @@ function getConfettiLocationName(arg0) {
   }
 }
 function getListOfEnabledLocations(confettiEnabledLocations, getConfettiLocationName) {
-  const importDefault = getConfettiLocationName;
+  let closure_0 = getConfettiLocationName;
   const entries = Object.entries(confettiEnabledLocations);
   const found = entries.filter((arg0) => {
     let tmp;
@@ -39,14 +41,11 @@ function getListOfEnabledLocations(confettiEnabledLocations, getConfettiLocation
   return found.map((arg0) => {
     let tmp;
     [tmp] = arg0;
-    return arg1(Number.parseInt(tmp));
+    return getConfettiLocationName(Number.parseInt(tmp));
   });
 }
-({ ShakeLocation: closure_2, ConfettiLocation: closure_3 } = require("__exportStarResult1"));
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/poggermode/trackPoggermodeSettingsUpdated.tsx");
-
-export default require("__exportStarResult1").throttle((arg0) => {
+({ ShakeLocation: closure_2, ConfettiLocation: closure_3 } = ConfettiLocation);
+const throttleResult = require("apply").throttle((arg0) => {
   let combosEnabled;
   let combosRequiredCount;
   let confettiCount;
@@ -58,7 +57,10 @@ export default require("__exportStarResult1").throttle((arg0) => {
   let screenshakeEnabledLocations;
   let shakeIntensity;
   ({ enabled, combosEnabled, combosRequiredCount, screenshakeEnabled, shakeIntensity, screenshakeEnabledLocations, confettiEnabled, confettiSize, confettiCount, confettiEnabledLocations } = arg0);
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(675);
   obj = { enabled, combos_enabled: combosEnabled, combos_required_count: combosRequiredCount, screenshake_enabled: screenshakeEnabled, shake_intensity: shakeIntensity, screenshake_enabled_locations: getListOfEnabledLocations(screenshakeEnabledLocations, getScreenshakeLocationName), confetti_enabled: confettiEnabled, confetti_size: confettiSize, confetti_count: confettiCount, confetti_enabled_locations: getListOfEnabledLocations(confettiEnabledLocations, getConfettiLocationName) };
   obj.track(AnalyticEvents.POGGERMODE_SETTINGS_UPDATED, obj);
 }, 5000);
+const result = require("apply").fileFinishedImporting("modules/poggermode/trackPoggermodeSettingsUpdated.tsx");
+
+export default throttleResult;

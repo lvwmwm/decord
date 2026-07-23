@@ -1,19 +1,19 @@
-// Module ID: 10463
-// Function ID: 81018
+// Module ID: 10473
+// Function ID: 81068
 // Name: _isNativeReflectConstruct
-// Dependencies: [5, 4142, 10474, 10475, 2, 653, 1207, 2, 5, 686]
+// Dependencies: [6, 7, 15, 17, 18, 653, 477, 668, 5078, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 10463 (_isNativeReflectConstruct)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closeVoicePanels from "closeVoicePanels";
-import _launchFrame from "_launchFrame";
-import result2 from "result2";
+// Module 10473 (_isNativeReflectConstruct)
+import set from "set";
+import keys from "keys";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
 import { AnalyticEvents } from "ME";
-import tmp2 from "asyncGeneratorStep";
-import dispatcher from "dispatcher";
+import tmp2 from "AutomaticLifecycleManager";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -23,16 +23,16 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_8 = null;
-let closure_9 = null;
+let c8 = null;
+let c9 = null;
 tmp2 = new tmp2();
-const result = dispatcher.fileFinishedImporting("modules/quests/native/AppStoreOverlayTelemetryManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/quests/native/AppStoreOverlayTelemetryManager.tsx");
 
 export default tmp2;
 export function setAppStoreOverlayOpen(arg0) {
   let closure_8 = arg0;
 }
 export function clearAppStoreOverlayOpen() {
-  let closure_8 = null;
-  let closure_9 = null;
+  let c8 = null;
+  let c9 = null;
 }

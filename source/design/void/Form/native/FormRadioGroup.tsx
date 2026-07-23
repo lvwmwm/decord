@@ -1,15 +1,19 @@
-// Module ID: 7516
-// Function ID: 60204
+// Module ID: 7521
+// Function ID: 60238
 // Name: FormRadioGroup
-// Dependencies: []
+// Dependencies: [31, 27, 33, 5164, 7519, 7190, 2]
 // Exports: default
 
-// Module 7516 (FormRadioGroup)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("design/void/Form/native/FormRadioGroup.tsx");
+// Module 7521 (FormRadioGroup)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormRadioGroup.tsx");
 
 export default function FormRadioGroup(arg0) {
   let accessibilityLabel;
@@ -20,15 +24,15 @@ export default function FormRadioGroup(arg0) {
   let title;
   let value;
   ({ title, children, hint } = arg0);
-  let obj = { -9223372036854775808: "ThreadLockIcon", 9223372036854775807: "png", 0: true, 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images", 9223372036854775807: 24, -9223372036854775808: 24, 9223372036854775807: null };
+  let obj = { title: 0, hasIcons: 0, accessibilityLabel: 0, children: 0, value: 0, hint: 0, icon: 0 };
   ({ hasIcons, accessibilityLabel, value, icon } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
-  if (React.useContext(arg1(dependencyMap[3]).RedesignCompatContext)) {
-    obj = { style: {} };
+  if (React.useContext(require(5164) /* context */.RedesignCompatContext)) {
+    obj = { style: { marginBottom: 24, marginHorizontal: 12 } };
     obj = {};
     const obj1 = { defaultValue: value, hasIcons, title, accessibilityLabel, children };
-    obj.children = callback(arg1(dependencyMap[4]).TableRadioGroup, obj1);
+    obj.children = callback(require(7519) /* context */.TableRadioGroup, obj1);
     const items = [callback(View, obj), ];
     let tmp16 = null;
     if (null != hint) {
@@ -47,8 +51,8 @@ export default function FormRadioGroup(arg0) {
     const obj4 = { title, accessibilityRole: "radiogroup", accessibilityLabel: title, hint, icon };
     const merged1 = Object.assign(merged);
     obj4["children"] = children;
-    tmp11Result = callback(importDefault(dependencyMap[5]), obj4);
-    const tmp6 = importDefault(dependencyMap[5]);
+    tmp11Result = callback(importDefault(7190), obj4);
+    const tmp6 = importDefault(7190);
   }
   return tmp11Result;
 };

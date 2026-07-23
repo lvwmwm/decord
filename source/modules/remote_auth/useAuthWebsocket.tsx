@@ -1,29 +1,32 @@
-// Module ID: 14659
-// Function ID: 110515
+// Module ID: 14774
+// Function ID: 112679
 // Name: useAuthWebsocket
-// Dependencies: []
+// Dependencies: [5, 57, 31, 653, 3, 14773, 561, 8391, 12567, 14775, 1207, 507, 5590, 14777, 2]
 // Exports: useAuthWebsocket
 
-// Module 14659 (useAuthWebsocket)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ ComponentActions: closure_6, Endpoints: closure_7 } = arg1(dependencyMap[3]));
-let importDefaultResult = importDefault(dependencyMap[4]);
+// Module 14774 (useAuthWebsocket)
+import RemoteAuthStep from "RemoteAuthStep";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import ME from "ME";
+import importDefaultResult from "ME";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ ComponentActions: closure_6, Endpoints: closure_7 } = ME);
 importDefaultResult = new importDefaultResult("useAuthWebsocket");
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/remote_auth/useAuthWebsocket.tsx");
+const result = require("result").fileFinishedImporting("modules/remote_auth/useAuthWebsocket.tsx");
 
 export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
   let flag = arg2;
-  arg1 = callback;
+  const _require = callback;
   const importDefault = arg1;
   if (arg2 === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
-  let closure_3;
-  callback = undefined;
+  let RemoteAuthStep;
+  let first;
   let React;
   let state;
   let closure_7;
@@ -31,51 +34,50 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
   let memo;
   let cancel;
   callback = undefined;
-  const tmp = callback(React.useState(0), 2);
-  closure_3 = tmp[1];
-  const tmp2 = callback(React.useState(false), 2);
-  const first = tmp2[0];
-  callback = first;
+  let tmp = first(React.useState(0), 2);
+  RemoteAuthStep = tmp[1];
+  const tmp2 = first(React.useState(false), 2);
+  first = tmp2[0];
   React = tmp4;
-  const tmp5 = callback(React.useState({ step: arg1(dependencyMap[5]).RemoteAuthStep.INITIALIZING }), 2);
+  const tmp5 = first(React.useState({ step: _require(flag[5]).RemoteAuthStep.INITIALIZING }), 2);
   state = tmp5[0];
   closure_7 = tmp5[1];
   closure_8 = React.useRef(null);
   memo = React.useMemo(() => {
-    let tmp = arg1(flag[6]);
+    let tmp = callback2(flag[6]);
     tmp = new tmp(1500, 30000);
     return tmp;
   }, []);
-  cancel = importDefault(dependencyMap[7])(() => {
-    callback2({ step: arg0(flag[5]).RemoteAuthStep.INITIALIZING });
-    if (arg1) {
-      callback((arg0) => arg0 + 1);
+  cancel = importDefault(flag[7])(() => {
+    callback4({ step: callback(flag[5]).RemoteAuthStep.INITIALIZING });
+    if (closure_1) {
+      callback3((arg0) => arg0 + 1);
     } else {
-      closure_8.info("document is not visible, will defer reconnection when document becomes visible.");
-      tmp4(true);
+      logger.info("document is not visible, will defer reconnection when document becomes visible.");
+      _undefined(true);
     }
   });
   const items = [cancel, memo];
   callback = React.useCallback(() => {
-    closure_8.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session.");
-    callback2({ step: arg0(flag[5]).RemoteAuthStep.INITIALIZING });
+    logger.error("Could not complete Remote Auth login, trying to restart with a new Remote Auth session.");
+    callback4({ step: callback(flag[5]).RemoteAuthStep.INITIALIZING });
     if (!memo.pending) {
       memo.fail(cancel);
     }
   }, items);
   const items1 = [state, arg1, first, tmp2[1]];
   const effect = React.useEffect(() => {
-    let tmp = arg1;
-    if (arg1) {
+    let tmp = closure_1;
+    if (closure_1) {
       tmp = first;
     }
     if (tmp) {
-      tmp = state.step === arg0(flag[5]).RemoteAuthStep.INITIALIZING;
+      tmp = state.step === callback(flag[5]).RemoteAuthStep.INITIALIZING;
     }
     if (tmp) {
-      closure_8.info("reconnecting, now that document is visible");
-      tmp4(false);
-      callback((arg0) => arg0 + 1);
+      logger.info("reconnecting, now that document is visible");
+      _undefined(false);
+      callback3((arg0) => arg0 + 1);
     }
   }, items1);
   const items2 = [cancel, callback, tmp[0], memo, callback, flag];
@@ -87,8 +89,8 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
       return info.info(_fmt(arg0));
     }
     function getKeyPair() {
-      if (null != closure_2) {
-        return closure_2;
+      if (null != c2) {
+        return c2;
       } else {
         const _Error = Error;
         const error = new Error("No key pair set");
@@ -96,8 +98,8 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
       }
     }
     function doHeartbeat() {
-      if (closure_6) {
-        closure_6 = false;
+      if (c6) {
+        c6 = false;
         const _JSON = JSON;
         const obj = { op: "heartbeat" };
         obj2.send(JSON.stringify(obj));
@@ -110,11 +112,9 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
     function onmessage(arg0) {
       return _onmessage(...arguments);
     }
-    const callback = onmessage;
     function _onmessage() {
       // CreateGeneratorClosureLongIndex (0x67)
       const obj = _null(tmp);
-      const _onmessage = obj;
       return obj(...arguments);
     }
     function onopen() {
@@ -123,7 +123,6 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
     function _onopen() {
       // CreateGeneratorClosureLongIndex (0x67)
       const obj = _null(tmp);
-      const _onopen = obj;
       return obj(...arguments);
     }
     function onclose(code) {
@@ -141,14 +140,13 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
       const _HermesInternal = HermesInternal;
       combined1 = "wss:" + combined;
     }
-    const obj2 = arg1(closure_2[8])(combined1);
-    const arg1 = obj2;
-    info.info("[0ms] connecting to " + combined1);
-    closure_2 = null;
-    let closure_3 = null;
-    let closure_4 = null;
-    let closure_5 = null;
-    let closure_6 = true;
+    const obj2 = callback2(flag[8])(combined1);
+    logger.info("[0ms] connecting to " + combined1);
+    let c2 = null;
+    let c3 = null;
+    let c4 = null;
+    let c5 = null;
+    let c6 = true;
     const listener = obj2.addEventListener("open", onopen);
     const listener1 = obj2.addEventListener("message", onmessage);
     const listener2 = obj2.addEventListener("close", onclose);
@@ -161,14 +159,14 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
       const removed3 = obj2.removeEventListener("error", onerror);
       obj2.close(1000);
       getKeyPair.cancel();
-      obj2(closure_2[9]).release();
-      if (null != closure_5) {
+      obj2(flag[9]).release();
+      if (null != c5) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(closure_5);
+        clearTimeout(c5);
       }
-      if (null != closure_4) {
+      if (null != c4) {
         const _clearInterval = clearInterval;
-        clearInterval(closure_4);
+        clearInterval(c4);
       }
     };
   }, items2);

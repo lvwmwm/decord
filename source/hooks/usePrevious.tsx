@@ -1,20 +1,22 @@
-// Module ID: 8278
-// Function ID: 65365
+// Module ID: 8284
+// Function ID: 65402
 // Name: usePrevious
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: default, usePreviousWhen
 
-// Module 8278 (usePrevious)
-const _module = require(dependencyMap[0]);
-({ useRef: closure_0, useEffect: closure_1 } = _module);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("hooks/usePrevious.tsx");
+// Module 8284 (usePrevious)
+import result from "result";
+
+({ useRef: closure_0, useEffect: closure_1 } = result);
+result = require("set").fileFinishedImporting("hooks/usePrevious.tsx");
 
 export default function usePrevious(arg0) {
-  const tmp = arg0(null);
+  const callback = arg0;
+  const tmp = callback(null);
+  const callback2 = tmp;
   const items = [arg0];
-  tmp(() => {
-    tmp.current = arg0;
+  callback2(() => {
+    closure_1.current = closure_0;
   }, items);
   return tmp.current;
 };
@@ -22,10 +24,11 @@ export const usePreviousWhen = function usePreviousWhen(value) {
   value = value.value;
   const shouldUpdate = value.shouldUpdate;
   const tmp = value(null);
+  let closure_2 = tmp;
   const items = [value, shouldUpdate];
   shouldUpdate(() => {
     if (shouldUpdate) {
-      tmp.current = value;
+      closure_2.current = closure_0;
     }
   }, items);
   return tmp.current;

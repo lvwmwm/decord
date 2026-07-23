@@ -1,53 +1,61 @@
-// Module ID: 6643
-// Function ID: 51012
+// Module ID: 6648
+// Function ID: 51041
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 1851, 5624, 3776, 2]
 // Exports: getModifySubscriptionItemsForProduct, getPremiumBundlesWithPredicate, getProductIdFromSubscription, getProductIdsForBothIntervals, productsHaveSamePerks, shouldAlwaysExcludeFromPlanSelect
 
-// Module 6643 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6648 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import GuildFeatures from "GuildFeatures";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,12 +93,12 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getPremiumBundleWithPredicate(arg0) {
-  const values = Object.values(arg1(dependencyMap[2]).AppStorePremiumProductIdsToPremiumBundledItems);
+  const values = Object.values(require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems);
   return values.find(arg0);
 }
 function getPremiumBundledItemsFromProductId(productId) {
-  if (productId in arg1(dependencyMap[2]).AppStorePremiumProductIdsToPremiumBundledItems) {
-    return arg1(dependencyMap[2]).AppStorePremiumProductIdsToPremiumBundledItems[productId];
+  if (productId in require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems) {
+    return require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems[productId];
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -99,12 +107,12 @@ function getPremiumBundledItemsFromProductId(productId) {
   }
 }
 function getToggledIntervalProduct(productIdFromSubscription) {
-  const tmp = getPremiumBundledItemsFromProductId(productIdFromSubscription);
-  const arg1 = tmp;
+  let tmp = getPremiumBundledItemsFromProductId(productIdFromSubscription);
+  const require = tmp;
   let tmp2 = null;
   if (tmp.premiumTier !== TIER_1.TIER_1) {
     const tmp4 = getPremiumBundleWithPredicate((numPremiumGuild) => {
-      let tmp = numPremiumGuild.numPremiumGuild === tmp.numPremiumGuild;
+      tmp = numPremiumGuild.numPremiumGuild === tmp.numPremiumGuild;
       if (tmp) {
         tmp = numPremiumGuild.premiumTier === tmp.premiumTier;
       }
@@ -127,7 +135,7 @@ function getToggledIntervalProduct(productIdFromSubscription) {
 function isValidBundleProductId(productIdFromSubscription) {
   let tmp = null != productIdFromSubscription;
   if (tmp) {
-    tmp = productIdFromSubscription in arg1(dependencyMap[2]).AppStorePremiumProductIdsToPremiumBundledItems;
+    tmp = productIdFromSubscription in require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems;
   }
   return tmp;
 }
@@ -218,7 +226,7 @@ function planQuantityMapsEqual(size, size2) {
   }
 }
 function getProductIdFromSubscriptionItems(subscriptionItemsForProduct) {
-  const keys = Object.keys(arg1(dependencyMap[2]).AppStorePremiumProductIdsToPremiumBundledItems);
+  const keys = Object.keys(require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems);
   let num = 0;
   if (0 < keys.length) {
     while (!planQuantityMapsEqual(tmp, aggregateQuantitiesByPlanId(getSubscriptionItemsForProduct(keys[num])))) {
@@ -229,13 +237,11 @@ function getProductIdFromSubscriptionItems(subscriptionItemsForProduct) {
   const error = new Error("No App Store bundled product matches the subscription items");
   throw error;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ PREMIUM_GUILD_SUBSCRIPTION_PLANS: closure_3, PremiumTypes: closure_4, SubscriptionIntervalTypes: closure_5, SubscriptionPlans: closure_6 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/native/PremiumBundledPlansUtils.tsx");
+({ PREMIUM_GUILD_SUBSCRIPTION_PLANS: closure_3, PremiumTypes: closure_4, SubscriptionIntervalTypes: closure_5, SubscriptionPlans: closure_6 } = GuildFeatures);
+let result = require("SubscriptionPlans").fileFinishedImporting("modules/premium/native/PremiumBundledPlansUtils.tsx");
 
 export const getPremiumBundlesWithPredicate = function getPremiumBundlesWithPredicate(predicate) {
-  const values = Object.values(arg1(dependencyMap[2]).AppStorePremiumProductIdsToPremiumBundledItems);
+  const values = Object.values(require(5624) /* SubscriptionPlans */.AppStorePremiumProductIdsToPremiumBundledItems);
   return values.filter(predicate);
 };
 export { getPremiumBundleWithPredicate };
@@ -260,24 +266,24 @@ export const getProductIdsForBothIntervals = function getProductIdsForBothInterv
   }
   return obj;
 };
-export const productsHaveSamePerks = function productsHaveSamePerks(productId, closure_7) {
+export const productsHaveSamePerks = function productsHaveSamePerks(productId, outer1_7) {
   if (isValidBundleProductId(productId)) {
-    if (isValidBundleProductId(closure_7)) {
+    if (isValidBundleProductId(outer1_7)) {
       if (null != productId) {
-        if (null != closure_7) {
-          if (productId === closure_7) {
+        if (null != outer1_7) {
+          if (productId === outer1_7) {
             return true;
           } else {
             const tmp4 = getPremiumBundledItemsFromProductId(productId);
-            const tmp5 = getPremiumBundledItemsFromProductId(closure_7);
+            const tmp5 = getPremiumBundledItemsFromProductId(outer1_7);
             return tmp4.numPremiumGuild === tmp5.numPremiumGuild && tmp4.premiumTier === tmp5.premiumTier;
           }
         }
       }
-      return productId === closure_7;
+      return productId === outer1_7;
     }
   }
-  return productId === closure_7;
+  return productId === outer1_7;
 };
 export { isValidBundleProductId };
 export const shouldAlwaysExcludeFromPlanSelect = function shouldAlwaysExcludeFromPlanSelect(isDeprecated) {
@@ -289,19 +295,18 @@ export const shouldAlwaysExcludeFromPlanSelect = function shouldAlwaysExcludeFro
 };
 export { getSubscriptionItemsForProduct };
 export const getModifySubscriptionItemsForProduct = function getModifySubscriptionItemsForProduct(productId, subscription) {
-  const tmp = getPremiumBundledItemsFromProductId(productId);
+  let tmp = getPremiumBundledItemsFromProductId(productId);
   if (null != tmp.premiumTier) {
     if (obj.isBoostOnlySubscription(subscription)) {
-      const itemsWithUpsertedPremiumPlanId = subscription(dependencyMap[3]).getItemsWithUpsertedPremiumPlanId(subscription, tmp.basePlanId);
+      const itemsWithUpsertedPremiumPlanId = found(3776).getItemsWithUpsertedPremiumPlanId(subscription, tmp.basePlanId);
       const reversed = itemsWithUpsertedPremiumPlanId.reverse();
       const additionalPlans = tmp.additionalPlans;
-      const found = additionalPlans.find((planId) => set.has(planId.planId));
-      subscription = found;
+      found = additionalPlans.find((planId) => outer1_3.has(planId.planId));
       let mapped = reversed;
       if (null != found) {
         mapped = reversed.map((planId) => {
           let tmp = planId;
-          if (set.has(planId.planId)) {
+          if (outer1_3.has(planId.planId)) {
             const obj = {};
             const merged = Object.assign(planId);
             obj["planId"] = found.planId;
@@ -313,7 +318,7 @@ export const getModifySubscriptionItemsForProduct = function getModifySubscripti
       }
       return mapped;
     }
-    const obj = subscription(dependencyMap[3]);
+    obj = found(3776);
   }
   return getSubscriptionItemsForProduct(productId);
 };

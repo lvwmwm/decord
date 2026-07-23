@@ -1,9 +1,19 @@
 // Module ID: 302
 // Function ID: 4559
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 79, 303, 44, 112, 253, 318, 146]
 
 // Module 302 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import jsxProd from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -20,40 +30,32 @@ function numColumnsOrDefault(arg0) {
   }
   return num;
 }
-let closure_4 = ["HapticFeedbackTypes", "renderHeader", "renderHeader", "tagSize"];
-let closure_5 = importDefault(dependencyMap[0]);
-let closure_6 = importDefault(dependencyMap[1]);
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-const importAllResult = importAll(dependencyMap[6]);
-const jsx = arg1(dependencyMap[7]).jsx;
-const tmp3 = (PureComponent) => {
+let closure_4 = ["numColumns", "columnWrapperStyle", "removeClippedSubviews", "strictMode"];
+let tmp3 = ((PureComponent) => {
   class FlatList {
     constructor(arg0) {
       self = this;
-      tmp = closure_6(this, FlatList);
+      tmp = outer1_6(this, apply);
       items = [];
       items[0] = PureComponent;
-      obj = closure_9(FlatList);
-      tmp2 = closure_8;
-      if (closure_14()) {
+      obj = outer1_9(apply);
+      tmp2 = outer1_8;
+      if (outer1_14()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_9;
-        constructResult = Reflect.construct(obj, items, closure_9(self).constructor);
+        tmp5 = outer1_9;
+        constructResult = Reflect.construct(obj, items, outer1_9(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      FlatList = tmp2Result;
+      apply = tmp2Result;
       tmp2Result._virtualizedListPairs = [];
       tmp2Result._captureRef = (_listRef) => {
-        tmp2Result._listRef = _listRef;
+        closure_0._listRef = _listRef;
       };
       tmp2Result._getItem = (arg0, arg1) => {
-        const tmp = callback(tmp2Result.props.numColumns);
+        const tmp = outer2_15(tmp2Result.props.numColumns);
         if (tmp > 1) {
           const items = [];
           for (let num = 0; num < tmp; num = num + 1) {
@@ -71,7 +73,7 @@ const tmp3 = (PureComponent) => {
         if (null != arg0) {
           const _Object = Object;
           if ("number" === typeof Object(arg0).length) {
-            const tmp4 = callback(tmp2Result.props.numColumns);
+            const tmp4 = outer2_15(tmp2Result.props.numColumns);
             if (tmp4 > 1) {
               const _Math = Math;
               let length = Math.ceil(arg0.length / tmp4);
@@ -84,62 +86,68 @@ const tmp3 = (PureComponent) => {
         return 0;
       };
       tmp2Result._keyExtractor = (arr) => {
-        const tmp = callback(tmp2Result.props.numColumns);
+        const tmp = outer2_15(arg1.props.numColumns);
+        let closure_1 = tmp;
         let keyExtractor = tmp2Result.props.keyExtractor;
         if (null == keyExtractor) {
-          keyExtractor = tmp(closure_3[9]).keyExtractor;
+          keyExtractor = outer2_1(outer2_3[9]).keyExtractor;
         }
         if (tmp > 1) {
           const _Array = Array;
-          tmp2Result(closure_3[10])(Array.isArray(arr), "FlatList: Encountered internal consistency error, expected each item to consist of an array with 1-%s columns; instead, received a single item.", tmp);
-          const mapped = arr.map((arg0, arg1) => keyExtractor(arg0, arg1 * tmp + arg1));
+          FlatList(outer2_3[10])(Array.isArray(arr), "FlatList: Encountered internal consistency error, expected each item to consist of an array with 1-%s columns; instead, received a single item.", tmp);
+          const mapped = arr.map((arg0, arg1) => keyExtractor(arg0, closure_0 * closure_1 + arg1));
           let joined = mapped.join(":");
-          const tmp7 = tmp2Result(closure_3[10]);
+          const tmp7 = FlatList(outer2_3[10]);
         } else {
           joined = keyExtractor(arr, arg1);
         }
         return joined;
       };
       tmp2Result._renderer = (arg0, arg1, arg2, arg3, arg4) => {
-        let closure_3 = callback(arg3);
+        let closure_0 = arg0;
+        let closure_1 = arg1;
+        let closure_2 = arg2;
+        let closure_3 = outer2_15(arg3);
         function render(arg0) {
-          if (arg0) {
+          if (closure_0) {
             const _Object = Object;
-            let tmp2 = callback(arg0, Object.assign({}, arg0));
+            let tmp2 = outer3_12(closure_0, Object.assign({}, arg0));
           } else {
             tmp2 = null;
-            if (arg1) {
-              tmp2 = arg1(arg0);
+            if (callback) {
+              tmp2 = callback(arg0);
             }
           }
           return tmp2;
         }
         function renderProp(arg0) {
+          let closure_1;
           let item;
+          let closure_0 = arg0;
           if (closure_3 > 1) {
             ({ item, index: closure_1 } = arg0);
             const _Array = Array;
-            arg0(closure_3[10])(Array.isArray(item), "Expected array of items with numColumns > 1");
-            const obj = {};
-            const tmp4 = arg0(closure_3[10]);
-            const tmp9 = arg1(closure_3[11]);
-            obj.style = arg0(closure_3[12]).default.compose(row.row, arg2);
+            FlatList(outer3_3[10])(Array.isArray(item), "Expected array of items with numColumns > 1");
+            let obj = {};
+            const tmp4 = FlatList(outer3_3[10]);
+            const tmp9 = outer3_1(outer3_3[11]);
+            obj.style = FlatList(outer3_3[12]).default.compose(outer3_13.row, closure_2);
             obj.children = item.map((item) => {
-              let obj = { item, index: closure_1 * closure_3 + arg1, separators: item.separators };
-              const tmp = callback(obj);
+              let obj = { item, index: closure_1 * outer1_3 + arg1, separators: separators.separators };
+              const tmp = outer1_4(obj);
               let tmp2 = null;
               if (null != tmp) {
                 obj = { children: tmp };
-                tmp2 = callback2(React.Fragment, obj, arg1);
+                tmp2 = outer4_12(outer4_11.Fragment, obj, arg1);
               }
               return tmp2;
             });
-            return callback(tmp9, obj);
+            return outer3_12(tmp9, obj);
           } else {
             return render(arg0);
           }
         }
-        const obj = {};
+        let obj = {};
         if (arg0) {
           obj.ListItemComponent = renderProp;
           let tmp = obj;
@@ -149,7 +157,7 @@ const tmp3 = (PureComponent) => {
         }
         return tmp;
       };
-      tmp2Result._memoizedRenderer = closure_1(closure_3[13])(tmp2Result._renderer);
+      tmp2Result._memoizedRenderer = outer1_1(outer1_3[13])(tmp2Result._renderer);
       _checkPropsResult = tmp2Result._checkProps(tmp2Result.props);
       props = tmp2Result.props;
       if (tmp2Result.props.viewabilityConfigCallbackPairs) {
@@ -160,7 +168,7 @@ const tmp3 = (PureComponent) => {
         obj = {};
         obj.viewabilityConfig = tmp2Result.props.viewabilityConfig;
         obj.onViewableItemsChanged = tmp2Result._createOnViewableItemsChanged(() => {
-          tmp2Result(closure_3[10])(tmp2Result.props.onViewableItemsChanged, "Changing the nullability of onViewableItemsChanged is not supported. Once a function or null is supplied that cannot be changed.");
+          FlatList(outer2_3[10])(tmp2Result.props.onViewableItemsChanged, "Changing the nullability of onViewableItemsChanged is not supported. Once a function or null is supplied that cannot be changed.");
           const props = tmp2Result.props;
           const onViewableItemsChanged = props.onViewableItemsChanged;
           return onViewableItemsChanged(...arguments);
@@ -170,7 +178,6 @@ const tmp3 = (PureComponent) => {
       return tmp2Result;
     }
   }
-  const arg1 = FlatList;
   callback2(FlatList, PureComponent);
   let obj = {
     key: "scrollToEnd",
@@ -181,7 +188,7 @@ const tmp3 = (PureComponent) => {
       }
     }
   };
-  const items = [obj, , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , ];
   obj = {
     key: "scrollToIndex",
     value: function scrollToIndex(arg0) {
@@ -268,11 +275,11 @@ const tmp3 = (PureComponent) => {
   items[10] = {
     key: "componentDidUpdate",
     value: function componentDidUpdate(numColumns) {
-      FlatList(closure_3[10])(numColumns.numColumns === this.props.numColumns, "Changing numColumns on the fly is not supported. Change the key prop on FlatList when changing the number of columns to force a fresh render of the component.");
-      FlatList(closure_3[10])(null == numColumns.onViewableItemsChanged === (null == this.props.onViewableItemsChanged), "Changing onViewableItemsChanged nullability on the fly is not supported");
-      const tmp3 = FlatList(closure_3[10]);
-      tmp3(!FlatList(closure_3[14]).default(numColumns.viewabilityConfig, this.props.viewabilityConfig), "Changing viewabilityConfig on the fly is not supported");
-      FlatList(closure_3[10])(numColumns.viewabilityConfigCallbackPairs === this.props.viewabilityConfigCallbackPairs, "Changing viewabilityConfigCallbackPairs on the fly is not supported");
+      FlatList(outer1_3[10])(numColumns.numColumns === this.props.numColumns, "Changing numColumns on the fly is not supported. Change the key prop on FlatList when changing the number of columns to force a fresh render of the component.");
+      FlatList(outer1_3[10])(null == numColumns.onViewableItemsChanged === (null == this.props.onViewableItemsChanged), "Changing onViewableItemsChanged nullability on the fly is not supported");
+      const tmp3 = FlatList(outer1_3[10]);
+      tmp3(!FlatList(outer1_3[14]).default(numColumns.viewabilityConfig, this.props.viewabilityConfig), "Changing viewabilityConfig on the fly is not supported");
+      FlatList(outer1_3[10])(numColumns.viewabilityConfigCallbackPairs === this.props.viewabilityConfigCallbackPairs, "Changing viewabilityConfigCallbackPairs on the fly is not supported");
       this._checkProps(this.props);
     }
   };
@@ -287,60 +294,59 @@ const tmp3 = (PureComponent) => {
       onViewableItemsChanged = onViewableItemsChanged.onViewableItemsChanged;
       ({ getItem, getItemCount, horizontal, columnWrapperStyle, viewabilityConfigCallbackPairs } = onViewableItemsChanged);
       let tmp3 = !getItem;
-      const tmp = callback7(this.props.numColumns);
+      const tmp = outer1_15(this.props.numColumns);
       if (tmp3) {
         tmp3 = !getItemCount;
       }
-      FlatList(closure_3[10])(tmp3, "FlatList does not support custom data formats.");
+      FlatList(outer1_3[10])(tmp3, "FlatList does not support custom data formats.");
       if (tmp > 1) {
-        FlatList(closure_3[10])(!horizontal, "numColumns does not support horizontal.");
+        FlatList(outer1_3[10])(!horizontal, "numColumns does not support horizontal.");
       } else {
-        FlatList(closure_3[10])(!columnWrapperStyle, "columnWrapperStyle not supported for single column lists");
+        FlatList(outer1_3[10])(!columnWrapperStyle, "columnWrapperStyle not supported for single column lists");
       }
-      const tmp2 = FlatList(closure_3[10]);
+      const tmp2 = FlatList(outer1_3[10]);
       if (onViewableItemsChanged) {
         onViewableItemsChanged = viewabilityConfigCallbackPairs;
       }
-      FlatList(closure_3[10])(!onViewableItemsChanged, "FlatList does not support setting both onViewableItemsChanged and viewabilityConfigCallbackPairs.");
+      FlatList(outer1_3[10])(!onViewableItemsChanged, "FlatList does not support setting both onViewableItemsChanged and viewabilityConfigCallbackPairs.");
     }
   };
   items[12] = {
     key: "_pushMultiColumnViewable",
     value: function _pushMultiColumnViewable(items, item) {
-      const FlatList = items;
-      let closure_2 = callback7(this.props.numColumns);
+      let closure_0 = items;
+      let closure_1 = item;
+      let closure_2 = outer1_15(this.props.numColumns);
       let keyExtractor = this.props.keyExtractor;
       if (null == keyExtractor) {
-        keyExtractor = item(keyExtractor[9]).keyExtractor;
+        keyExtractor = outer1_1(outer1_3[9]).keyExtractor;
       }
       item = item.item;
       const item1 = item.forEach((item) => {
-        item(keyExtractor[10])(null != arg1.index, "Missing index!");
-        const sum = arg1.index * closure_2 + arg1;
-        item.push(Object.assign({}, arg1, { item, key: keyExtractor(item, sum), index: sum }));
+        FlatList(outer2_3[10])(null != item.index, "Missing index!");
+        const sum = item.index * closure_2 + arg1;
+        items.push(Object.assign({}, item, { item, key: keyExtractor(item, sum), index: sum }));
       });
     }
   };
   items[13] = {
     key: "_createOnViewableItemsChanged",
     value: function _createOnViewableItemsChanged(onViewableItemsChanged) {
-      const FlatList = onViewableItemsChanged;
+      let closure_0 = onViewableItemsChanged;
       const self = this;
       return (viewableItems) => {
-        if (viewableItems) {
+        if (items) {
           if (tmp > 1) {
-            const items = [];
-            viewableItems = items;
+            items = [];
             const items1 = [];
-            const self = items1;
             viewableItems = viewableItems.viewableItems;
             const item = viewableItems.forEach((item) => items1._pushMultiColumnViewable(items1, item));
             const changed = viewableItems.changed;
             const item1 = changed.forEach((item) => items1._pushMultiColumnViewable(items, item));
             const obj = { viewableItems: items1, changed: items };
-            viewableItems(obj);
+            items(obj);
           } else {
-            viewableItems(viewableItems);
+            items(viewableItems);
           }
         }
       };
@@ -358,16 +364,16 @@ const tmp3 = (PureComponent) => {
       ({ numColumns, columnWrapperStyle, removeClippedSubviews, strictMode } = props);
       const obj = { getItem: self._getItem, getItemCount: self._getItemCount, keyExtractor: self._keyExtractor, ref: self._captureRef, viewabilityConfigCallbackPairs: self._virtualizedListPairs };
       const tmp = undefined !== strictMode && strictMode;
-      const tmp2 = callback3(props, closure_4);
+      const tmp2 = outer1_5(props, outer1_4);
       const tmp3 = undefined !== strictMode && strictMode ? self._memoizedRenderer : self._renderer;
-      const tmp4 = closure_12;
-      const result = callback2(closure_3[8]).shouldUseRemoveClippedSubviewsAsDefaultOnIOS();
+      const tmp4 = outer1_12;
+      const result = outer1_2(outer1_3[8]).shouldUseRemoveClippedSubviewsAsDefaultOnIOS();
       obj.removeClippedSubviews = null == removeClippedSubviews || removeClippedSubviews;
-      return tmp4(callback(closure_3[9]).VirtualizedList, Object.assign({}, tmp2, obj, tmp3(self.props.ListItemComponent, self.props.renderItem, columnWrapperStyle, numColumns, self.props.extraData)));
+      return tmp4(outer1_1(outer1_3[9]).VirtualizedList, Object.assign({}, tmp2, obj, tmp3(self.props.ListItemComponent, self.props.renderItem, columnWrapperStyle, numColumns, self.props.extraData)));
     }
   };
   return callback(FlatList, items);
-}(importAllResult.PureComponent);
-let closure_13 = arg1(dependencyMap[12]).default.create({ row: { flexDirection: "row" } });
+})(importAllResult.PureComponent);
+let closure_13 = require("setStyleAttributePreprocessor").default.create({ row: { flexDirection: "row" } });
 
 export default tmp3;

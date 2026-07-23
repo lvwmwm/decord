@@ -1,24 +1,26 @@
-// Module ID: 10751
-// Function ID: 83533
+// Module ID: 10761
+// Function ID: 83582
 // Name: useMyCurrentStageChannelRole
-// Dependencies: []
+// Dependencies: [1194, 1906, 4954, 566, 2]
 // Exports: default
 
-// Module 10751 (useMyCurrentStageChannelRole)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannelRole.tsx");
+// Module 10761 (useMyCurrentStageChannelRole)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannelRole.tsx");
 
 export default function useMyCurrentStageChannelRole(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2, closure_3, closure_4];
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct, closure_3, closure_4];
   const items1 = [arg0];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const id = id.getId();
+  return _require(566).useStateFromStores(items, () => {
+    const id = outer1_2.getId();
     let permissionsForUser = null;
-    if (voiceChannelId.getVoiceChannelId() === arg0) {
-      permissionsForUser = permissionsForUser.getPermissionsForUser(id, arg0);
+    if (outer1_3.getVoiceChannelId() === closure_0) {
+      permissionsForUser = outer1_4.getPermissionsForUser(id, closure_0);
     }
     return permissionsForUser;
   }, items1);

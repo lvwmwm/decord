@@ -1,10 +1,13 @@
-// Module ID: 5619
-// Function ID: 47975
+// Module ID: 5624
+// Function ID: 48002
 // Name: SubscriptionPlans
-// Dependencies: []
+// Dependencies: [1851, 1553, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 5619 (SubscriptionPlans)
+// Module 5624 (SubscriptionPlans)
+import GuildFeatures from "GuildFeatures";
+import isMetaQuest from "isMetaQuest";
+
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;
 let PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
 let PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID;
@@ -16,15 +19,13 @@ let PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID;
 let PremiumTypes;
 let SubscriptionIntervalTypes;
 let SubscriptionPlans;
-const _module = require(dependencyMap[0]);
-({ PremiumTypes, SubscriptionIntervalTypes, SubscriptionPlans } = _module);
-({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID, PREMIUM_TIER_2_REFERRAL_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID } = _module);
-const frozen = Object.freeze({});
+({ PremiumTypes, SubscriptionIntervalTypes, SubscriptionPlans } = GuildFeatures);
+({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID, PREMIUM_TIER_2_REFERRAL_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID } = GuildFeatures);
+const frozen = Object.freeze({ PREMIUM_GIFT_MONTH_TIER_0: "premium_month_tier_0.2", PREMIUM_GIFT_YEAR_TIER_0: "premium_year_tier_0", PREMIUM_GIFT_MONTH_TIER_1: "premium_month_tier_1", PREMIUM_GIFT_YEAR_TIER_1: "premium_year_tier_1", PREMIUM_GIFT_MONTH_TIER_2: "premium_month_tier_2", PREMIUM_GIFT_YEAR_TIER_2: "premium_year_tier_2", PREMIUM_TIER_2_MONTHLY: "premium_tier_2_monthly", PREMIUM_TIER_2_YEARLY: "premium_tier_2_yearly", PREMIUM_TIER_1_MONTHLY: "premium_tier_1_monthly", PREMIUM_TIER_1_YEARLY: "premium_tier_1_yearly", PREMIUM_TIER_0_MONTHLY: "premium_tier_0_month", PREMIUM_TIER_0_YEARLY: "premium_tier_0_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY: "premium_tier_2_premium_guild_1_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY: "premium_tier_2_premium_guild_1_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_2_MONTHLY: "premium_tier_2_premium_guild_2_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_2_YEARLY: "premium_tier_2_premium_guild_2_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_3_MONTHLY: "premium_tier_2_premium_guild_3_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_3_YEARLY: "premium_tier_2_premium_guild_3_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_5_MONTHLY: "premium_tier_2_premium_guild_5_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_5_YEARLY: "premium_tier_2_premium_guild_5_yearly", PREMIUM_TIER_2_PREMIUM_GUILD_10_MONTHLY: "premium_tier_2_premium_guild_10_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_13_MONTHLY: "premium_tier_2_premium_guild_13_monthly", PREMIUM_TIER_2_PREMIUM_GUILD_28_MONTHLY: "premium_tier_2_premium_guild_28_monthly", PREMIUM_TIER_1_PREMIUM_GUILD_1_MONTHLY: "premium_tier_1_premium_guild_1_monthly", PREMIUM_TIER_1_PREMIUM_GUILD_1_YEARLY: "premium_tier_1_premium_guild_1_yearly", PREMIUM_GUILD_1_MONTHLY: "premium_guild_1_monthly", PREMIUM_GUILD_2_MONTHLY: "premium_guild_2_monthly" });
 const items = [, , , , , ];
 ({ PREMIUM_GIFT_MONTH_TIER_0: arr[0], PREMIUM_GIFT_YEAR_TIER_0: arr[1], PREMIUM_GIFT_MONTH_TIER_1: arr[2], PREMIUM_GIFT_YEAR_TIER_1: arr[3], PREMIUM_GIFT_MONTH_TIER_2: arr[4], PREMIUM_GIFT_YEAR_TIER_2: arr[5] } = frozen);
-const _module1 = require(dependencyMap[1]);
 const PREMIUM_TIER_2_MONTHLY = frozen.PREMIUM_TIER_2_MONTHLY;
-if (_module1.isMetaQuest()) {
+if (isMetaQuest.isMetaQuest()) {
   const items1 = [PREMIUM_TIER_2_MONTHLY, , , ];
   ({ PREMIUM_TIER_2_YEARLY: arr3[1], PREMIUM_TIER_0_MONTHLY: arr3[2], PREMIUM_TIER_0_YEARLY: arr3[3] } = frozen);
   let items2 = items1;
@@ -50,8 +51,7 @@ const items15 = [{ quantity: 1, planId: SubscriptionPlans.PREMIUM_YEAR_GUILD }];
 const items16 = [{ quantity: 1, planId: SubscriptionPlans.PREMIUM_MONTH_GUILD }];
 const items17 = [{ quantity: 2, planId: SubscriptionPlans.PREMIUM_MONTH_GUILD }];
 const frozen1 = Object.freeze(obj);
-const _module2 = require(dependencyMap[2]);
-const result = _module2.fileFinishedImporting("modules/premium/native/ProductIds.android.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/native/ProductIds.android.tsx");
 
 export const ProductIds = frozen;
 export const GenericProductIds = [];

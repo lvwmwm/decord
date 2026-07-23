@@ -1,40 +1,42 @@
 // Module ID: 132
 // Function ID: 2172
 // Name: HTMLCollection
-// Dependencies: []
+// Dependencies: [6, 7, 99, 100, 131, 129]
 // Exports: createHTMLCollection
 
 // Module 132 (HTMLCollection)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3])("length");
-const tmp2 = () => {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import setPlatformObject from "setPlatformObject";
+
+const require = arg1;
+let closure_5 = require("_classPrivateFieldKey")("length");
+const tmp2 = (() => {
   class HTMLCollection {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, HTMLCollection);
-      definePropertyResult = Object.defineProperty(this, closure_5, { writable: true, value: undefined });
+      tmp = outer1_2(this, HTMLCollection);
+      definePropertyResult = Object.defineProperty(this, outer1_5, { writable: true, value: undefined });
       num = 0;
       if (0 < arg0.length) {
         do {
           _Object = Object;
-          obj = { onDownloadProgress: 300000, GUILD_TAG_AVAILABLE_COACHMARK_V2: false, _setupIntegrations: 30, blurTargetViewNativeId: 2 };
+          obj = { value: null, enumerable: true, configurable: false, writable: false };
           obj.value = arg0[num];
           definePropertyResult1 = Object.defineProperty(self, num, obj);
           num = num + 1;
           length = arg0.length;
         } while (num < length);
       }
-      closure_4(self, closure_5)[closure_5] = arg0.length;
+      outer1_4(self, outer1_5)[outer1_5] = arg0.length;
       return;
     }
   }
-  const arg1 = HTMLCollection;
   let obj = {
     key: "length",
     get() {
-      return callback2(this, closure_5)[closure_5];
+      return outer1_4(this, outer1_5)[outer1_5];
     }
   };
   const items = [obj, , , ];
@@ -43,7 +45,7 @@ const tmp2 = () => {
     value: function item(arg0) {
       const self = this;
       if (arg0 >= 0) {
-        if (arg0 < callback2(self, closure_5)[closure_5]) {
+        if (arg0 < outer1_4(self, outer1_5)[outer1_5]) {
           return self[arg0];
         }
       }
@@ -61,14 +63,15 @@ const tmp2 = () => {
   items[3] = {
     key: Symbol.iterator,
     value() {
-      return HTMLCollection(closure_1[4]).createValueIterator(this);
+      return HTMLCollection(outer1_1[4]).createValueIterator(this);
     }
   };
   return callback(HTMLCollection, items);
-}();
-arg1(dependencyMap[5]).setPlatformObject(tmp2);
+})();
+let closure_6 = tmp2;
+setPlatformObject.setPlatformObject(tmp2);
 
 export default tmp2;
 export const createHTMLCollection = function createHTMLCollection(items) {
-  return new tmp2(items);
+  return new closure_6(items);
 };

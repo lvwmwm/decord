@@ -1,41 +1,46 @@
-// Module ID: 5733
-// Function ID: 49301
+// Module ID: 5738
+// Function ID: 49328
 // Name: trackSearchStart
-// Dependencies: [4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295]
+// Dependencies: [4991, 653, 574, 675, 3771, 5045, 5739, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 5733 (trackSearchStart)
+// Module 5738 (trackSearchStart)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function trackSearchStart(location_stack, channel_id) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(675);
   obj = { channel_id, search_type: constants2.SOUNDBOARD, location_stack };
   obj.track(constants.SEARCH_STARTED, obj);
 }
 function trackSearchResultViewed(total_results, location_stack, channel_id, query) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(675);
   obj = { search_type: constants2.SOUNDBOARD, channel_id, query, total_results: total_results.length, location_stack };
   obj.track(constants.SEARCH_RESULT_VIEWED, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ AnalyticEvents: closure_4, SearchTypes: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2])(trackSearchStart, 350);
-let closure_7 = importDefault(dependencyMap[2])(trackSearchResultViewed, 350);
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/soundboard/searchSounds.tsx");
+({ AnalyticEvents: closure_4, SearchTypes: closure_5 } = ME);
+let closure_6 = require("debounce")(trackSearchStart, 350);
+let closure_7 = require("debounce")(trackSearchResultViewed, 350);
+let result = require("debounce").fileFinishedImporting("modules/soundboard/searchSounds.tsx");
 
 export { trackSearchStart };
 export { trackSearchResultViewed };
 export const searchSounds = function searchSounds(arg0, availableSounds, stateFromStores, channel) {
-  availableSounds = arg0;
-  const importDefault = stateFromStores;
-  const dependencyMap = channel;
-  let closure_3 = arg4;
+  let closure_0 = arg0;
+  let closure_1 = stateFromStores;
+  let closure_2 = channel;
+  let _isNativeReflectConstruct = arg4;
   let closure_4 = availableSounds.reduce((arg0, soundId) => {
     let id;
-    if (null != arg3) {
-      id = arg3.id;
+    if (null != id) {
+      id = id.id;
     }
-    closure_6(arg4, id);
-    arg0[soundId.soundId] = function getScore(id, name, currentUser, channel) {
+    outer1_6(_isNativeReflectConstruct, id);
+    arg0[soundId.soundId] = (function getScore(id, name, closure_1, closure_2) {
+      const callback = id;
       name = name.name;
       const toLocaleLowerCaseResult = name.toLocaleLowerCase();
       let customEmojiById = null;
@@ -44,13 +49,13 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
       }
       let result = null;
       if (null != name.emojiName) {
-        result = callback(closure_2[4]).convertSurrogateToName(name.emojiName, false);
-        const obj2 = callback(closure_2[4]);
+        result = callback2(3771).convertSurrogateToName(name.emojiName, false);
+        const obj2 = callback2(3771);
       }
       let byName = null;
       if (null != result) {
-        byName = callback(closure_2[4]).getByName(result);
-        const obj3 = callback(closure_2[4]);
+        byName = callback2(3771).getByName(result);
+        const obj3 = callback2(3771);
       }
       if (null != customEmojiById) {
         const items = [customEmojiById.name];
@@ -77,7 +82,7 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
         sum1 = sum + 6;
       }
       let sum2 = sum1;
-      if (names.some((str) => str.startsWith(str))) {
+      if (names.some((str) => str.startsWith(closure_0))) {
         sum2 = sum1 + 5;
       }
       let sum3 = sum2;
@@ -85,7 +90,7 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
         sum3 = sum2 + 4;
       }
       let sum4 = sum3;
-      if (names.some((str) => str.endsWith(str))) {
+      if (names.some((str) => str.endsWith(closure_0))) {
         sum4 = sum3 + 3;
       }
       const name2 = name.name;
@@ -94,24 +99,24 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
         sum5 = sum4 + 2;
       }
       let sum6 = sum5;
-      if (names.some((arg0) => callback(closure_2[5])(arg0, arg0))) {
+      if (names.some((arg0) => callback(table[5])(closure_0, arg0))) {
         sum6 = sum5 + 1;
       }
       let result1 = sum6 > 0;
       if (result1) {
-        result1 = id(closure_2[6]).canUseSoundboardSound(currentUser, name, channel);
-        const obj4 = id(closure_2[6]);
+        result1 = callback(5739).canUseSoundboardSound(closure_1, name, closure_2);
+        const obj4 = callback(5739);
       }
       let sum7 = sum6;
       if (result1) {
         sum7 = sum6 + 100;
       }
       return sum7;
-    }(arg0.toLocaleLowerCase(), soundId, arg2, arg3);
+    })(closure_0.toLocaleLowerCase(), soundId, closure_1, id);
     return arg0;
   }, {});
-  const found = availableSounds.filter((arg0) => closure_4[arg0.soundId] > 0);
-  const sorted = found.sort((arg0, arg1) => closure_4[arg1.soundId] - closure_4[arg0.soundId]);
+  const found = availableSounds.filter((arg0) => dependencyMap[arg0.soundId] > 0);
+  const sorted = found.sort((arg0, arg1) => dependencyMap[arg1.soundId] - dependencyMap[arg0.soundId]);
   let id;
   if (null != channel) {
     id = channel.id;

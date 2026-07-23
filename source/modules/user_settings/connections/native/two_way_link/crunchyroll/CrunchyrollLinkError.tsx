@@ -1,26 +1,27 @@
-// Module ID: 8991
-// Function ID: 70807
+// Module ID: 8998
+// Function ID: 70848
 // Name: CrunchyrollLinkDiscordError
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 8990, 33, 1456, 8984, 8985, 1212, 2]
 // Exports: default
 
-// Module 8991 (CrunchyrollLinkDiscordError)
-import "__exportStarResult1";
-import { CrunchyrollLinkModalScenes as closure_2 } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 8998 (CrunchyrollLinkDiscordError)
+import "result";
+import { CrunchyrollLinkModalScenes as closure_2 } from "CrunchyrollLinkModalScenes";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkError.tsx");
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkError.tsx");
 
 export default function CrunchyrollLinkDiscordError(onClose) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(1456) /* useNavigation */;
   const navigation = obj.useNavigation();
-  const connectRetry = arg1(dependencyMap[4]).useConnectRetry(navigation, constants.PRE_CONNECT);
+  const connectRetry = require(8984) /* useConnectRetry */.useConnectRetry(navigation, constants.PRE_CONNECT);
   obj = {};
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.title = intl.string(arg1(dependencyMap[6]).t.8YK70c);
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[6]).t.moyYLf);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["8YK70c"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.moyYLf);
   obj.onClose = onClose.onClose;
   obj.onRetry = connectRetry;
-  return jsx(arg1(dependencyMap[5]).TwoWayLinkError, obj);
+  return jsx(require(8985) /* TwoWayLinkError */.TwoWayLinkError, {});
 };

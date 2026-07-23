@@ -1,37 +1,41 @@
-// Module ID: 12789
-// Function ID: 97975
+// Module ID: 12903
+// Function ID: 100131
 // Name: LockedIcon
-// Dependencies: []
+// Dependencies: [31, 653, 33, 4130, 5052, 689, 1273, 12904, 10681, 12905, 8474, 2]
 // Exports: default
 
-// Module 12789 (LockedIcon)
+// Module 12903 (LockedIcon)
+import "result";
+import { Fonts } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+import importDefaultResult1 from "createTextStyle";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function LockedIcon() {
-  const obj = { size: arg1(dependencyMap[6]).Icon.Sizes.MEDIUM, source: importDefault(dependencyMap[7]) };
-  return callback(arg1(dependencyMap[6]).Icon, obj);
+  const obj = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: importDefault(12904) };
+  return callback(require(1273) /* Button */.Icon, obj);
 }
 function DropdownIcon() {
   const obj = { style: { transform: items } };
-  const items = [{ rotate: "90deg" }];
-  obj.size = arg1(dependencyMap[6]).Icon.Sizes.MEDIUM;
-  obj.source = importDefault(dependencyMap[8]);
-  return callback(arg1(dependencyMap[6]).Icon, obj);
+  items = [{ rotate: "90deg" }];
+  obj.size = require(1273) /* Button */.Icon.Sizes.MEDIUM;
+  obj.source = importDefault(10681);
+  return callback(require(1273) /* Button */.Icon, obj);
 }
-importAll(dependencyMap[0]);
-const Fonts = arg1(dependencyMap[1]).Fonts;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { width: true, marginHorizontal: true }, content: { "Bool(false)": null, "Bool(false)": null } };
-obj = {};
-const tmp3 = arg1(dependencyMap[2]);
-const merged = Object.assign(importDefault(dependencyMap[4])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[5]).colors.TEXT_MUTED, 16));
-obj.placeholder = obj;
-const importDefaultResult = importDefault(dependencyMap[4]);
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { alignItems: "center", flexDirection: "row" }, content: { marginStart: 8, flexGrow: 1 } };
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, 16));
+_createForOfIteratorHelperLoose.placeholder = _createForOfIteratorHelperLoose;
 const obj1 = {};
-const merged1 = Object.assign(importDefault(dependencyMap[4])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[5]).colors.TEXT_DEFAULT, 16));
-obj.text = obj1;
-const styles = obj.createStyles(obj);
-const importDefaultResult1 = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormDropdown.tsx");
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, 16));
+_createForOfIteratorHelperLoose.text = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormDropdown.tsx");
 
 export default function FormDropdown(arg0) {
   let disabled;
@@ -41,10 +45,10 @@ export default function FormDropdown(arg0) {
   let placeholder;
   ({ disabled, label, placeholder } = arg0);
   ({ leading, onPress } = arg0);
-  const tmp = styles();
-  const tmp2 = importDefault(dependencyMap[9])();
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = importDefault(12905)();
   let obj = { style: items, accessibilityRole: "spinbutton", disabled };
-  const items = [tmp.container, tmp2.dropdownInput];
+  items = [tmp.container, tmp2.dropdownInput];
   let tmp6;
   const tmp3 = callback(disabled ? LockedIcon : DropdownIcon, {});
   const tmp4 = closure_4;
@@ -54,14 +58,14 @@ export default function FormDropdown(arg0) {
   obj.onPress = tmp6;
   const items1 = [leading, , ];
   obj = { style: items2 };
-  const items2 = [tmp.content, null != label ? tmp.text : tmp.placeholder];
+  items2 = [tmp.content, null != label ? tmp.text : tmp.placeholder];
   if (null != label) {
     placeholder = label;
   }
   obj.children = placeholder;
-  items1[1] = callback(arg1(dependencyMap[6]).LegacyText, obj);
+  items1[1] = callback(require(1273) /* Button */.LegacyText, obj);
   items1[2] = tmp3;
   obj.children = items1;
-  return tmp4(importDefault(dependencyMap[10]), obj);
+  return tmp4(importDefault(8474), obj);
 };
-export const useFormDropdownStyles = styles;
+export const useFormDropdownStyles = _createForOfIteratorHelperLoose;

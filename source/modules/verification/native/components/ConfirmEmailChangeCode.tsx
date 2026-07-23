@@ -1,31 +1,31 @@
-// Module ID: 9186
-// Function ID: 71944
+// Module ID: 9193
+// Function ID: 71985
 // Name: ConfirmEmailChangeCode
-// Dependencies: []
+// Dependencies: [5, 31, 9183, 33, 1456, 668, 9194, 9191, 1212, 2]
 // Exports: default
 
-// Module 9186 (ConfirmEmailChangeCode)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const setEmailToken = arg1(dependencyMap[2]).setEmailToken;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
+// Module 9193 (ConfirmEmailChangeCode)
+import keys from "keys";
+import result from "result";
+import { setEmailToken } from "setChangeEmailError";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("setChangeEmailError").fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
 
 export default function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  const arg1 = isChangeEmail;
-  let obj = arg1(dependencyMap[4]);
+  let obj = isChangeEmail(1456);
   const navigation = obj.useNavigation();
-  const importDefault = navigation;
   const items = [isChangeEmail, navigation];
   const callback = React.useCallback((arg0) => {
     let tmp2 = null;
     if (null != arg0) {
       tmp2 = arg0;
     }
-    closure_5(tmp2);
+    outer1_5(tmp2);
     const push = navigation.push;
-    const VerificationModalScenes = isChangeEmail(closure_2[5]).VerificationModalScenes;
+    const VerificationModalScenes = isChangeEmail(outer1_2[5]).VerificationModalScenes;
     if (isChangeEmail) {
       push(VerificationModalScenes.CHANGE_EMAIL_COLLECT_REASONS);
     } else {
@@ -33,20 +33,29 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
     }
   }, items);
   obj = {
-    onFormSubmit: () => {
+    onFormSubmit: (() => {
       // CreateGeneratorClosureLongIndex (0x67)
-      let closure_0 = callback(tmp);
+      let closure_0 = outer1_3(tmp);
       return function() {
         return callback(...arguments);
       };
-    }(),
+    })(),
     onSuccess: callback
   };
   // CreateGeneratorClosureLongIndex (0x67)
   obj.onResend = callback(tmp);
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.headerText = intl.string(arg1(dependencyMap[8]).t.2x/2Uo);
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj.confirmButtonText = intl2.string(arg1(dependencyMap[8]).t.PDTjLN);
-  return jsx(importDefault(dependencyMap[6]), obj);
+  const intl = isChangeEmail(1212).intl;
+  obj.headerText = intl.string(isChangeEmail(1212).t["2x/2Uo"]);
+  const intl2 = isChangeEmail(1212).intl;
+  obj.confirmButtonText = intl2.string(isChangeEmail(1212).t.PDTjLN);
+  return jsx(navigation(9194), {
+    onFormSubmit: (() => {
+      // CreateGeneratorClosureLongIndex (0x67)
+      let closure_0 = outer1_3(tmp);
+      return function() {
+        return callback(...arguments);
+      };
+    })(),
+    onSuccess: callback
+  });
 };

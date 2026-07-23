@@ -1,9 +1,17 @@
-// Module ID: 10469
-// Function ID: 81063
+// Module ID: 10479
+// Function ID: 81113
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 10480, 10226, 10481, 566, 686, 2]
 
-// Module 10469 (_isNativeReflectConstruct)
+// Module 10479 (_isNativeReflectConstruct)
+import ActivityPanelModes from "ActivityPanelModes";
+import getNonTestModeUrlForApplication from "getNonTestModeUrlForApplication";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { FrameLayoutModes } from "FrameLayoutModes";
+import { ActivityPanelModes } from "ActivityPanelModes";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,31 +21,24 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const FrameLayoutModes = arg1(dependencyMap[5]).FrameLayoutModes;
-const ActivityPanelModes = arg1(dependencyMap[6]).ActivityPanelModes;
-let closure_9 = null;
+let c9 = null;
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
-let tmp6 = (Store) => {
+let tmp6 = ((Store) => {
   class FramesStoreClass {
     constructor() {
       self = this;
-      tmp = closure_2(this, FramesStoreClass);
-      obj = closure_5(FramesStoreClass);
-      tmp2 = closure_4;
-      if (closure_14()) {
+      tmp = outer1_2(this, FramesStoreClass);
+      obj = outer1_5(FramesStoreClass);
+      tmp2 = outer1_4;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -46,12 +47,11 @@ let tmp6 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = FramesStoreClass;
   callback2(FramesStoreClass, Store);
   let obj = {
     key: "getConnectedFrame",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   const items = [obj, , , , , , , ];
@@ -59,8 +59,8 @@ let tmp6 = (Store) => {
     key: "getFrameLayoutMode",
     value() {
       let layoutMode;
-      if (null != closure_9) {
-        layoutMode = closure_9.layoutMode;
+      if (null != outer1_9) {
+        layoutMode = outer1_9.layoutMode;
       }
       return layoutMode;
     }
@@ -70,11 +70,11 @@ let tmp6 = (Store) => {
     key: "getActivityPanelMode",
     value() {
       let activityPanelMode;
-      if (null != closure_9) {
-        activityPanelMode = closure_9.activityPanelMode;
+      if (null != outer1_9) {
+        activityPanelMode = outer1_9.activityPanelMode;
       }
       if (null == activityPanelMode) {
-        activityPanelMode = constants.DISCONNECTED;
+        activityPanelMode = outer1_8.DISCONNECTED;
       }
       return activityPanelMode;
     }
@@ -83,18 +83,18 @@ let tmp6 = (Store) => {
   items[3] = {
     key: "isFrameActive",
     value() {
-      return null != closure_9;
+      return null != outer1_9;
     }
   };
   items[4] = {
     key: "isLaunchingFrame",
     value(arg0) {
       if (null != arg0) {
-        const value = closure_10.get(arg0);
+        const value = outer1_10.get(arg0);
         let tmp2 = null != value && value;
         const tmp5 = null != value && value;
       } else {
-        tmp2 = closure_10.size > 0;
+        tmp2 = outer1_10.size > 0;
       }
       return tmp2;
     }
@@ -102,20 +102,20 @@ let tmp6 = (Store) => {
   items[5] = {
     key: "isProxyTicketRefreshing",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_11.has(arg0);
     }
   };
   items[6] = {
     key: "getOrientationLockStateForApp",
     value(arg0) {
-      return closure_12.get(arg0);
+      return outer1_12.get(arg0);
     }
   };
   items[7] = {
     key: "getPipOrientationLockStateForApp",
     value(applicationId) {
       const self = this;
-      let orientationLockStateForApp = closure_13.get(applicationId);
+      let orientationLockStateForApp = outer1_13.get(applicationId);
       if (null == orientationLockStateForApp) {
         orientationLockStateForApp = self.getOrientationLockStateForApp(applicationId);
       }
@@ -123,15 +123,18 @@ let tmp6 = (Store) => {
     }
   };
   return callback(FramesStoreClass, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp6.displayName = "FramesStore";
-tmp6 = new tmp6(importDefault(dependencyMap[9]), {
+tmp6 = new tmp6(require("dispatcher"), {
   FRAME_LAUNCH_START: function handleFrameLaunchStart(applicationId) {
     const result = map.set(applicationId.applicationId, true);
   },
   FRAME_LAUNCH: function handleFrameLaunch(applicationId) {
+    let channelId;
+    let proxyTicket;
     applicationId = applicationId.applicationId;
-    const tmp = importDefault(dependencyMap[7])(applicationId);
+    ({ proxyTicket, channelId } = applicationId);
+    const tmp = importDefault(10481)(applicationId);
     if (null != tmp) {
       map.delete(applicationId);
       const obj = { applicationId, url: tmp };
@@ -139,8 +142,8 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
       obj.connectedSince = Date.now();
       obj.layoutMode = FrameLayoutModes.FOCUSED;
       obj.activityPanelMode = ActivityPanelModes.PANEL;
-      obj.proxyTicket = applicationId.proxyTicket;
-      let closure_9 = obj;
+      obj.proxyTicket = proxyTicket;
+      obj.channelId = channelId;
     } else {
       map.delete(applicationId);
     }
@@ -154,7 +157,7 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
       applicationId = _null.applicationId;
     }
     if (applicationId === applicationId.applicationId) {
-      const _null = null;
+      _null = null;
     }
   },
   FRAME_UPDATE_LAYOUT_MODE: function handleFrameUpdateLayoutMode(arg0) {
@@ -162,22 +165,20 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
     let layoutMode;
     applicationId = undefined;
     ({ applicationId, layoutMode } = arg0);
-    if (null != _null) {
-      applicationId = _null.applicationId;
+    if (null != obj) {
+      applicationId = obj.applicationId;
     }
     if (applicationId === applicationId) {
-      const obj = {};
-      const merged = Object.assign(_null);
+      obj = {};
+      const merged = Object.assign(obj);
       obj["layoutMode"] = layoutMode;
-      const _null = obj;
     }
   },
   FRAME_SET_PANEL_MODE: function handleSetPanelMode(arg0) {
-    if (null != closure_9) {
-      const obj = {};
-      const merged = Object.assign(closure_9);
+    if (null != obj) {
+      obj = {};
+      const merged = Object.assign(obj);
       obj["activityPanelMode"] = tmp;
-      closure_9 = obj;
     }
   },
   FRAME_SET_ORIENTATION_LOCK_STATE: function handleOrientationLockState(arg0) {
@@ -209,25 +210,23 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
     let proxyTicket;
     applicationId = undefined;
     ({ applicationId, proxyTicket } = arg0);
-    if (null != _null) {
-      applicationId = _null.applicationId;
+    if (null != obj) {
+      applicationId = obj.applicationId;
     }
     if (applicationId === applicationId) {
-      const obj = {};
-      const merged = Object.assign(_null);
+      obj = {};
+      const merged = Object.assign(obj);
       obj["proxyTicket"] = proxyTicket;
-      const _null = obj;
     }
   },
   CHANNEL_SELECT: function handleChannelSelect() {
-    let tmp = null != _null;
+    let tmp = null != obj;
     if (tmp) {
-      let flag = _null.layoutMode !== FrameLayoutModes.PIP;
+      let flag = obj.layoutMode !== FrameLayoutModes.PIP;
       if (flag) {
-        const obj = {};
-        const merged = Object.assign(_null);
+        obj = {};
+        const merged = Object.assign(obj);
         obj["layoutMode"] = FrameLayoutModes.PIP;
-        const _null = obj;
         flag = true;
       }
       tmp = flag;
@@ -235,6 +234,6 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
     return tmp;
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/frames/FramesStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/frames/FramesStore.tsx");
 
 export default tmp6;

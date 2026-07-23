@@ -1,10 +1,15 @@
-// Module ID: 8343
-// Function ID: 66457
+// Module ID: 8349
+// Function ID: 66494
 // Name: _getLocationFromEvent
-// Dependencies: []
+// Dependencies: [1348, 1354, 2]
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 8343 (_getLocationFromEvent)
+// Module 8349 (_getLocationFromEvent)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
+
+let closure_1;
+let closure_2;
 function _getLocationFromEvent(entityType, entityMetadata) {
   let tmp = entityType === constants.EXTERNAL;
   if (tmp) {
@@ -19,10 +24,8 @@ function _getLocationFromEvent(entityType, entityMetadata) {
   }
   return _location;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-({ GuildScheduledEventEntityTypes: closure_1, EntityChannelTypes: closure_2 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/guild_scheduled_events/utils/EntityUtils.tsx");
+({ GuildScheduledEventEntityTypes: closure_1, EntityChannelTypes: closure_2 } = GUILD_EVENT_MAX_NAME_LENGTH);
+const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/utils/EntityUtils.tsx");
 
 export const getChannelFromEvent = function getChannelFromEvent(entity_type) {
   let tmp2 = entity_type.entity_type in closure_2;
@@ -31,7 +34,7 @@ export const getChannelFromEvent = function getChannelFromEvent(entity_type) {
   }
   let tmp4;
   if (tmp2) {
-    const channel = channel.getChannel(entity_type.channel_id);
+    channel = channel.getChannel(entity_type.channel_id);
     let tmp8;
     if (null != channel) {
       tmp8 = channel;
@@ -48,7 +51,7 @@ export const getLocationFromEventData = function getLocationFromEventData(guildE
 };
 export const getChannelTypeFromEntity = function getChannelTypeFromEntity(entityType) {
   if (entityType === constants.VOICE) {
-    const tmp2 = closure_2[entityType];
+    const tmp2 = table[entityType];
   }
   return tmp2;
 };

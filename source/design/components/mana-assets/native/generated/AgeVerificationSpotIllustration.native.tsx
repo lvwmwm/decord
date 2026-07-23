@@ -1,13 +1,13 @@
-// Module ID: 5847
-// Function ID: 49703
+// Module ID: 5852
+// Function ID: 49732
 // Name: AgeVerificationSpotIllustration
-// Dependencies: [131072, 561250304, 3657433088, 4160749587]
+// Dependencies: [33, 5085, 5853, 2]
 // Exports: AgeVerificationSpotIllustration
 
-// Module 5847 (AgeVerificationSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AgeVerificationSpotIllustration.native.tsx");
+// Module 5852 (AgeVerificationSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AgeVerificationSpotIllustration.native.tsx");
 
 export const AgeVerificationSpotIllustration = function AgeVerificationSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const AgeVerificationSpotIllustration = function AgeVerificationSpotIllus
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5853) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const AgeVerificationSpotIllustration = function AgeVerificationSpotIllus
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

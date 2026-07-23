@@ -1,12 +1,11 @@
-// Module ID: 9095
-// Function ID: 71320
+// Module ID: 9102
+// Function ID: 71361
 // Name: ChannelDetailsNavigatorScreens
-// Dependencies: []
+// Dependencies: [9103, 2]
 
-// Module 9095 (ChannelDetailsNavigatorScreens)
-const sum = require(dependencyMap[0]).SEARCH_BAR_HEIGHT + 40;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsConstants.tsx");
+// Module 9102 (ChannelDetailsNavigatorScreens)
+const sum = require("SearchAutocompleteSelectAnalyticsActions").SEARCH_BAR_HEIGHT + 40;
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsConstants.tsx");
 
 export const ChannelDetailsNavigatorScreens = { DETAILS: "root", MUTE: "mute", THREADS: "threads", SETTINGS: "settings", PINNED_MESSAGES: "pinned-messages" };
 export const ChannelDetailsButtonTypes = { SEARCH: "search", MUTE: "mute", THREADS: "threads", SETTINGS: "settings", MORE: "more" };
@@ -17,5 +16,5 @@ export const CHANNEL_DETAILS_SEARCH_HEIGHT = sum;
 export const BUTTON_DEFAULT_HEIGHT = 120;
 export const CHANNEL_TOPIC_LINE_CLAMP = 3;
 export const DESCRIPTION_HORIZONTAL_MARGIN = 24;
-export const SPRING_CHANNEL_DETAILS = {};
-export const SPRING_CHANNEL_HEADER = {};
+export const SPRING_CHANNEL_DETAILS = { mass: 1, damping: 30, stiffness: 300 };
+export const SPRING_CHANNEL_HEADER = { mass: 1, damping: 80, stiffness: 1280 };

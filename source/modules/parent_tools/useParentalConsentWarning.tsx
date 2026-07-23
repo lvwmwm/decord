@@ -1,14 +1,16 @@
-// Module ID: 13655
-// Function ID: 103439
+// Module ID: 13769
+// Function ID: 105595
 // Name: useParentalConsentWarning
-// Dependencies: []
+// Dependencies: [13770, 566, 2]
 // Exports: useParentalConsentWarning
 
-// Module 13655 (useParentalConsentWarning)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/parent_tools/useParentalConsentWarning.tsx");
+// Module 13769 (useParentalConsentWarning)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/parent_tools/useParentalConsentWarning.tsx");
 
 export const useParentalConsentWarning = function useParentalConsentWarning() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => warning.getWarning());
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getWarning());
 };

@@ -1,28 +1,28 @@
-// Module ID: 14437
-// Function ID: 108850
+// Module ID: 14551
+// Function ID: 111003
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 1212, 4639, 14552, 2]
 
-// Module 14437 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14551 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.Hj/But);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["Hj/But"]);
   },
-  IconComponent: require(dependencyMap[4]).ImageWarningIcon,
-  parent: require(dependencyMap[0]).MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  IconComponent: require("ImageWarningIcon").ImageWarningIcon,
+  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   screen: obj,
   unsearchable: true
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
+  route: require("ME").UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   getComponent() {
-    return require(dependencyMap[5]).default;
+    return require(14552) /* UserSettingsSensitiveContentFilters */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsSensitiveContentFilterSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsSensitiveContentFilterSetting.tsx");
 
 export default route;

@@ -1,7 +1,7 @@
 // Module ID: 7
 // Function ID: 141
 // Name: _defineProperties
-// Dependencies: []
+// Dependencies: [8]
 
 // Module 7 (_defineProperties)
 function _defineProperties(arg0, arg1) {
@@ -15,7 +15,7 @@ function _defineProperties(arg0, arg1) {
     let _Object = Object;
     let tmp2 = require;
     let tmp3 = dependencyMap;
-    let definePropertyResult = Object.defineProperty(arg0, require(dependencyMap[0])(tmp.key), tmp);
+    let definePropertyResult = Object.defineProperty(arg0, require(8) /* toPropertyKey */(tmp.key), tmp);
   }
 }
 

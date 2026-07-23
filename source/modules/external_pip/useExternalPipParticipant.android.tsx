@@ -1,61 +1,62 @@
-// Module ID: 15570
-// Function ID: 118788
+// Module ID: 15687
+// Function ID: 120961
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [57, 31, 4143, 1194, 4177, 4202, 4148, 566, 2]
 // Exports: default
 
-// Module 15570 (_createForOfIteratorHelperLoose)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import { ParticipantTypes } from "__exportStarResult1";
+// Module 15687 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { ParticipantTypes } from "ParticipantTypes";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +67,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,20 +94,18 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function useSelectedParticipant(channelId) {
+  let result;
   let tmp3;
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const focusedParticipantStreamId = channelId.focusedParticipantStreamId;
-  const dependencyMap = focusedParticipantStreamId;
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => id.getId());
-  const callback = stateFromStores;
-  const obj = arg1(dependencyMap[7]);
-  [tmp3, closure_3] = callback(React.useState(0), 2);
-  const tmp2 = callback(React.useState(0), 2);
-  const items1 = [closure_4];
+  const stateFromStores = channelId(focusedParticipantStreamId[7]).useStateFromStores(items, () => outer1_5.getId());
+  let obj = channelId(focusedParticipantStreamId[7]);
+  [tmp3, result] = stateFromStores(React.useState(0), 2);
+  let tmp2 = stateFromStores(React.useState(0), 2);
+  const items1 = [stateFromStoresObject];
   const items2 = [channelId, focusedParticipantStreamId, stateFromStores, tmp3];
-  const stateFromStoresObject = arg1(dependencyMap[7]).useStateFromStoresObject(items1, () => {
+  stateFromStoresObject = channelId(focusedParticipantStreamId[7]).useStateFromStoresObject(items1, () => {
     let tmp16;
     let tmp17;
     let tmp18;
@@ -117,15 +116,15 @@ function useSelectedParticipant(channelId) {
         const participants = stateFromStoresObject.getParticipants(channelId);
         let flag = false;
         if (3 >= participants.length) {
-          const tmp2 = callback(participants);
+          const tmp2 = outer1_9(participants);
           const iter = tmp2();
           let iter2 = iter;
           flag = true;
           if (!iter.done) {
             while (true) {
               let value = iter2.value;
-              let tmp3 = constants;
-              if (value.type === constants.ACTIVITY) {
+              let tmp3 = outer1_8;
+              if (value.type === outer1_8.ACTIVITY) {
                 let iter3 = tmp2();
                 iter2 = iter3;
                 flag = true;
@@ -148,7 +147,7 @@ function useSelectedParticipant(channelId) {
             }
           }
         }
-        const tmp7 = callback(participants);
+        const tmp7 = outer1_9(participants);
         const iter4 = tmp7();
         let iter5 = iter4;
         let tmp15;
@@ -157,9 +156,9 @@ function useSelectedParticipant(channelId) {
             value = iter5.value;
             let tmp19 = tmp14;
             if (!flag) {
-              let tmp20 = constants;
+              let tmp20 = outer1_8;
               tmp19 = tmp14;
-              if (value.type === constants.USER) {
+              if (value.type === outer1_8.USER) {
                 let user2 = value.user;
                 let id1;
                 if (null != user2) {
@@ -173,15 +172,15 @@ function useSelectedParticipant(channelId) {
                 let tmp26 = tmp11;
                 let tmp27 = tmp12;
                 let tmp28 = tmp13;
-                let tmp14 = user2;
+                tmp14 = user2;
               }
               let iter6 = tmp7();
-              let tmp8 = tmp23;
-              let tmp9 = tmp24;
-              let tmp10 = tmp25;
-              let tmp11 = tmp26;
-              let tmp12 = tmp27;
-              let tmp13 = tmp28;
+              tmp8 = tmp23;
+              tmp9 = tmp24;
+              tmp10 = tmp25;
+              tmp11 = tmp26;
+              tmp12 = tmp27;
+              tmp13 = tmp28;
               iter5 = iter6;
               tmp15 = tmp25;
               tmp16 = tmp26;
@@ -192,8 +191,8 @@ function useSelectedParticipant(channelId) {
               }
             }
             let type = value.type;
-            let tmp29 = constants;
-            if (constants.USER === type) {
+            let tmp29 = outer1_8;
+            if (outer1_8.USER === type) {
               let tmp32 = (value.speaking || timestamp - value.lastSpoke < 1000) && null == tmp10;
               if (tmp32) {
                 tmp10 = value;
@@ -229,7 +228,7 @@ function useSelectedParticipant(channelId) {
                 tmp14 = tmp19;
               }
             } else {
-              let tmp30 = constants;
+              let tmp30 = outer1_8;
               tmp23 = tmp8;
               tmp24 = tmp9;
               tmp25 = tmp10;
@@ -237,7 +236,7 @@ function useSelectedParticipant(channelId) {
               tmp27 = tmp12;
               tmp28 = tmp13;
               tmp14 = tmp19;
-              if (constants.STREAM === type) {
+              if (outer1_8.STREAM === type) {
                 let tmp31 = null == tmp12 && null != value.streamId;
                 tmp23 = tmp8;
                 tmp24 = tmp9;
@@ -317,13 +316,12 @@ function useSelectedParticipant(channelId) {
     }
     return { selectedParticipantSpeaking: false, selectedParticipantUserId: undefined, selectedStreamId: undefined };
   }, items2);
-  closure_4 = stateFromStoresObject;
   const items3 = [stateFromStoresObject.selectedParticipantSpeaking];
   const effect = React.useEffect(() => {
     if (stateFromStoresObject.selectedParticipantSpeaking) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        callback((arg0) => arg0 + 1);
+        outer1_3((arg0) => arg0 + 1);
       }, 3000);
       return () => {
         clearTimeout(closure_0);
@@ -332,7 +330,7 @@ function useSelectedParticipant(channelId) {
   }, items3);
   return stateFromStoresObject;
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
 
 export default function useExternalPipParticipant() {
   let focusedParticipantType;
@@ -340,29 +338,29 @@ export default function useExternalPipParticipant() {
   let selectedParticipantSpeaking;
   let selectedParticipantUserId;
   let selectedStreamId;
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => channelId.getChannelId());
+  let obj = require(566) /* initialize */;
+  let items = [closure_7];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getChannelId());
   let tmp2;
   if (null != stateFromStores) {
     tmp2 = stateFromStores;
   }
   obj = { channelId: tmp2 };
-  const tmp3 = function useFocusedParticipant(channelId) {
+  const tmp3 = (function useFocusedParticipant(channelId) {
     channelId = channelId.channelId;
-    let closure_1 = React.useRef(undefined);
-    let __exportStarResult1 = React.useRef(undefined);
-    const items = [closure_4];
-    return channelId(closure_1[7]).useStateFromStoresObject(items, () => {
+    let closure_1 = outer1_3.useRef(undefined);
+    let _slicedToArray = outer1_3.useRef(undefined);
+    const items = [outer1_4];
+    return outer1_0(outer1_1[7]).useStateFromStoresObject(items, () => {
       let selectedParticipantId = null;
       if (null != channelId) {
-        selectedParticipantId = store.getSelectedParticipantId(channelId);
+        selectedParticipantId = outer2_4.getSelectedParticipantId(channelId);
       }
       let tmp4 = null;
       if (null != selectedParticipantId) {
         tmp4 = null;
         if (null != channelId) {
-          const participant = store.getParticipant(channelId, selectedParticipantId);
+          const participant = outer2_4.getParticipant(channelId, selectedParticipantId);
           tmp4 = null;
           if (null != participant) {
             tmp4 = participant;
@@ -396,7 +394,7 @@ export default function useExternalPipParticipant() {
           type1 = tmp4.type;
         }
         let tmp16;
-        if (type1 !== constants.ACTIVITY) {
+        if (type1 !== outer2_8.ACTIVITY) {
           let streamId;
           if (null != tmp4) {
             streamId = tmp4.streamId;
@@ -411,7 +409,7 @@ export default function useExternalPipParticipant() {
           type2 = tmp4.type;
         }
         let tmp20;
-        if (type2 !== constants.ACTIVITY) {
+        if (type2 !== outer2_8.ACTIVITY) {
           let id2;
           if (null != tmp4) {
             const user = tmp4.user;
@@ -436,7 +434,7 @@ export default function useExternalPipParticipant() {
       }
       return obj;
     });
-  }(obj);
+  })(obj);
   const focusedParticipantStreamId = tmp3.focusedParticipantStreamId;
   obj = { channelId: tmp2, focusedParticipantStreamId };
   ({ focusedParticipantUserId, focusedParticipantType } = tmp3);
@@ -452,21 +450,21 @@ export default function useExternalPipParticipant() {
     selectedParticipantUserId = focusedParticipantUserId;
   }
   const obj1 = { selectedParticipantStreamId: tmp5 };
-  function useSetHasActiveVideoOutputSink(selectedParticipantStreamId) {
+  (function useSetHasActiveVideoOutputSink(selectedParticipantStreamId) {
     selectedParticipantStreamId = selectedParticipantStreamId.selectedParticipantStreamId;
     const items = [selectedParticipantStreamId];
-    const effect = React.useEffect(() => {
+    const effect = outer1_3.useEffect(() => {
       if (null != closure_0) {
-        let closure_1 = "useExternalPipParticipant";
-        const mediaEngine = mediaEngine.getMediaEngine();
-        mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, true, closure_1));
+        const useExternalPipParticipant = "useExternalPipParticipant";
+        let mediaEngine = outer2_6.getMediaEngine();
+        mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, true, useExternalPipParticipant));
         return () => {
-          const mediaEngine = mediaEngine.getMediaEngine();
-          mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(closure_0, false, closure_1));
+          const mediaEngine = outer3_6.getMediaEngine();
+          mediaEngine.eachConnection((setHasActiveVideoOutputSink) => setHasActiveVideoOutputSink.setHasActiveVideoOutputSink(outer1_0, false, outer1_1));
         };
       }
     }, items);
-  }(obj1);
+  })(obj1);
   const obj2 = { channelId: tmp2, selectedParticipantStreamId: tmp5, selectedParticipantUserId, selectedParticipantSpeaking, focusedParticipantType };
   return obj2;
 };

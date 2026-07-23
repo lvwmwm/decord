@@ -1,11 +1,13 @@
 // Module ID: 1659
-// Function ID: 18414
+// Function ID: 18415
 // Name: rubberBandDecay
-// Dependencies: []
+// Dependencies: [1658]
 
 // Module 1659 (rubberBandDecay)
+const require = arg1;
+const dependencyMap = arg6;
 let closure_2 = { code: "function rubberBandDecay_Pnpm_rubberBandDecayTs1(animation,now,config){const{SLOPE_FACTOR,DERIVATIVE_EPS,VELOCITY_EPS}=this.__closure;const{lastTimestamp:lastTimestamp,startTimestamp:startTimestamp,current:current,velocity:velocity}=animation;const deltaTime=Math.min(Math.max(now-lastTimestamp,0),64);const clampIndex=Math.abs(current-config.clamp[0])<Math.abs(current-config.clamp[1])?0:1;let derivative=0;if(current<config.clamp[0]||current>config.clamp[1]){derivative=current-config.clamp[clampIndex];}const v=velocity*Math.exp(-(1-config.deceleration)*(now-startTimestamp)*SLOPE_FACTOR)-derivative*config.rubberBandFactor;if(Math.abs(derivative)>DERIVATIVE_EPS){animation.springActive=true;}else if(animation.springActive){animation.current=config.clamp[clampIndex];return true;}else if(Math.abs(v)<VELOCITY_EPS){return true;}animation.current=current+v*config.velocityFactor*deltaTime/1000;animation.velocity=v;animation.lastTimestamp=now;return false;}" };
-arg5.rubberBandDecay = () => {
+arg5.rubberBandDecay = (() => {
   function rubberBandDecay(current, lastTimestamp, deceleration) {
     let startTimestamp;
     let velocity;
@@ -22,7 +24,7 @@ arg5.rubberBandDecay = () => {
       num2 = current - deceleration.clamp[num];
     }
     const result = -1 - deceleration.deceleration * (lastTimestamp - startTimestamp);
-    const diff = velocity * Math.exp(result * callback(closure_1[0]).SLOPE_FACTOR) - num2 * deceleration.rubberBandFactor;
+    const diff = velocity * Math.exp(result * outer1_0(outer1_1[0]).SLOPE_FACTOR) - num2 * deceleration.rubberBandFactor;
     if (Math.abs(num2) > 0.1) {
       current.springActive = true;
     } else if (current.springActive) {
@@ -31,7 +33,7 @@ arg5.rubberBandDecay = () => {
     } else {
       const _Math = Math;
       const absolute1 = Math.abs(diff);
-      if (absolute1 < callback(closure_1[0]).VELOCITY_EPS) {
+      if (absolute1 < outer1_0(outer1_1[0]).VELOCITY_EPS) {
         return true;
       }
     }
@@ -40,8 +42,8 @@ arg5.rubberBandDecay = () => {
     current.lastTimestamp = lastTimestamp;
     return false;
   }
-  rubberBandDecay.__closure = { SLOPE_FACTOR: arg1(arg6[0]).SLOPE_FACTOR, DERIVATIVE_EPS: 0.1, VELOCITY_EPS: arg1(arg6[0]).VELOCITY_EPS };
+  rubberBandDecay.__closure = { SLOPE_FACTOR: require(1658) /* VELOCITY_EPS */.SLOPE_FACTOR, DERIVATIVE_EPS: 0.1, VELOCITY_EPS: require(1658) /* VELOCITY_EPS */.VELOCITY_EPS };
   rubberBandDecay.__workletHash = 1153024330944;
   rubberBandDecay.__initData = closure_2;
   return rubberBandDecay;
-}();
+})();

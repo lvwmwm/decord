@@ -1,36 +1,37 @@
-// Module ID: 4675
-// Function ID: 40735
+// Module ID: 4678
+// Function ID: 40753
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4679, 2]
 
-// Module 4675 (_isNativeReflectConstruct)
+// Module 4678 (_isNativeReflectConstruct)
+import set from "set";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return set;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let tmp2 = (NativePermissionBaseUtils) => {
+let tmp2 = ((NativePermissionBaseUtils) => {
   class NativePermissionDesktopNullUtils {
     constructor() {
       self = this;
       tmp = NativePermissionDesktopNullUtils(this, NativePermissionDesktopNullUtils);
-      obj = closure_3(NativePermissionDesktopNullUtils);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      obj = outer1_3(NativePermissionDesktopNullUtils);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -39,7 +40,6 @@ let tmp2 = (NativePermissionBaseUtils) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = NativePermissionDesktopNullUtils;
   callback2(NativePermissionDesktopNullUtils, NativePermissionBaseUtils);
   let obj = {
     key: "requestPermissionCore",
@@ -75,8 +75,8 @@ let tmp2 = (NativePermissionBaseUtils) => {
     }
   };
   return callback(NativePermissionDesktopNullUtils, items);
-}(arg1(dependencyMap[5]).NativePermissionBaseUtils);
+})(require("NativePermissionBaseUtils").NativePermissionBaseUtils);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/native_permissions/NativePermissionUtils.null.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/native_permissions/NativePermissionUtils.null.tsx");
 
 export default tmp2;

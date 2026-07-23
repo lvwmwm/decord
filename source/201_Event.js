@@ -1,26 +1,29 @@
 // Module ID: 201
 // Function ID: 2859
 // Name: Event
-// Dependencies: []
+// Dependencies: [6, 7, 202, 129]
 
 // Module 201 (Event)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import setPlatformObject from "setPlatformObject";
+
+const require = arg1;
+const tmp2 = (() => {
   class Event {
     constructor(arg0, arg1) {
       self = this;
-      tmp = closure_2(this, Event);
+      tmp = outer1_2(this, Event);
       this._defaultPrevented = false;
       this._timeStamp = performance.now();
-      this[Event(closure_1[2]).COMPOSED_PATH_KEY] = [];
-      this[Event(closure_1[2]).CURRENT_TARGET_KEY] = null;
-      this[Event(closure_1[2]).EVENT_PHASE_KEY] = Event.NONE;
-      this[Event(closure_1[2]).IN_PASSIVE_LISTENER_FLAG_KEY] = false;
-      this[Event(closure_1[2]).IS_TRUSTED_KEY] = false;
-      this[Event(closure_1[2]).STOP_IMMEDIATE_PROPAGATION_FLAG_KEY] = false;
-      this[Event(closure_1[2]).STOP_PROPAGATION_FLAG_KEY] = false;
-      this[Event(closure_1[2]).TARGET_KEY] = null;
+      this[Event(outer1_1[2]).COMPOSED_PATH_KEY] = [];
+      this[Event(outer1_1[2]).CURRENT_TARGET_KEY] = null;
+      this[Event(outer1_1[2]).EVENT_PHASE_KEY] = Event.NONE;
+      this[Event(outer1_1[2]).IN_PASSIVE_LISTENER_FLAG_KEY] = false;
+      this[Event(outer1_1[2]).IS_TRUSTED_KEY] = false;
+      this[Event(outer1_1[2]).STOP_IMMEDIATE_PROPAGATION_FLAG_KEY] = false;
+      this[Event(outer1_1[2]).STOP_PROPAGATION_FLAG_KEY] = false;
+      this[Event(outer1_1[2]).TARGET_KEY] = null;
       if (arguments.length < 1) {
         _TypeError2 = TypeError;
         prototype2 = TypeError.prototype;
@@ -70,7 +73,6 @@ const tmp2 = () => {
       }
     }
   }
-  const arg1 = Event;
   let obj = {
     key: "bubbles",
     get() {
@@ -95,7 +97,7 @@ const tmp2 = () => {
   items[3] = {
     key: "currentTarget",
     get() {
-      return Event(closure_1[2]).getCurrentTarget(this);
+      return Event(outer1_1[2]).getCurrentTarget(this);
     }
   };
   items[4] = {
@@ -107,19 +109,19 @@ const tmp2 = () => {
   items[5] = {
     key: "eventPhase",
     get() {
-      return Event(closure_1[2]).getEventPhase(this);
+      return Event(outer1_1[2]).getEventPhase(this);
     }
   };
   items[6] = {
     key: "isTrusted",
     get() {
-      return Event(closure_1[2]).getIsTrusted(this);
+      return Event(outer1_1[2]).getIsTrusted(this);
     }
   };
   items[7] = {
     key: "target",
     get() {
-      return Event(closure_1[2]).getTarget(this);
+      return Event(outer1_1[2]).getTarget(this);
     }
   };
   items[8] = {
@@ -137,7 +139,7 @@ const tmp2 = () => {
   items[10] = {
     key: "composedPath",
     value: function composedPath() {
-      const composedPath = Event(closure_1[2]).getComposedPath(this);
+      const composedPath = Event(outer1_1[2]).getComposedPath(this);
       return composedPath.slice();
     }
   };
@@ -154,34 +156,34 @@ const tmp2 = () => {
         } else {
           self._defaultPrevented = true;
         }
-        const obj = Event(closure_1[2]);
+        obj = Event(outer1_1[2]);
       }
     }
   };
   items[12] = {
     key: "stopImmediatePropagation",
     value: function stopImmediatePropagation() {
-      const result = Event(closure_1[2]).setStopPropagationFlag(this, true);
-      const obj = Event(closure_1[2]);
-      const result1 = Event(closure_1[2]).setStopImmediatePropagationFlag(this, true);
+      const result = Event(outer1_1[2]).setStopPropagationFlag(this, true);
+      const obj = Event(outer1_1[2]);
+      const result1 = Event(outer1_1[2]).setStopImmediatePropagationFlag(this, true);
     }
   };
   items[13] = {
     key: "stopPropagation",
     value: function stopPropagation() {
-      const result = Event(closure_1[2]).setStopPropagationFlag(this, true);
+      const result = Event(outer1_1[2]).setStopPropagationFlag(this, true);
     }
   };
   return callback(Event, items);
-}();
-Object.defineProperty(tmp2, "NONE", {});
-Object.defineProperty(tmp2.prototype, "NONE", {});
-Object.defineProperty(tmp2, "CAPTURING_PHASE", { "": null, category: null });
-Object.defineProperty(tmp2.prototype, "CAPTURING_PHASE", { "": null, category: null });
-Object.defineProperty(tmp2, "AT_TARGET", {});
-Object.defineProperty(tmp2.prototype, "AT_TARGET", {});
-Object.defineProperty(tmp2, "BUBBLING_PHASE", {});
-Object.defineProperty(tmp2.prototype, "BUBBLING_PHASE", {});
-arg1(dependencyMap[3]).setPlatformObject(tmp2);
+})();
+Object.defineProperty(tmp2, "NONE", { enumerable: true, value: 0 });
+Object.defineProperty(tmp2.prototype, "NONE", { enumerable: true, value: 0 });
+Object.defineProperty(tmp2, "CAPTURING_PHASE", { enumerable: true, value: 1 });
+Object.defineProperty(tmp2.prototype, "CAPTURING_PHASE", { enumerable: true, value: 1 });
+Object.defineProperty(tmp2, "AT_TARGET", { enumerable: true, value: 2 });
+Object.defineProperty(tmp2.prototype, "AT_TARGET", { enumerable: true, value: 2 });
+Object.defineProperty(tmp2, "BUBBLING_PHASE", { enumerable: true, value: 3 });
+Object.defineProperty(tmp2.prototype, "BUBBLING_PHASE", { enumerable: true, value: 3 });
+setPlatformObject.setPlatformObject(tmp2);
 
 export default tmp2;

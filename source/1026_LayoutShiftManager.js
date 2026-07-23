@@ -1,14 +1,15 @@
 // Module ID: 1026
-// Function ID: 11081
+// Function ID: 11082
 // Name: LayoutShiftManager
-// Dependencies: []
+// Dependencies: [6, 7]
 
 // Module 1026 (LayoutShiftManager)
-let closure_0 = require(dependencyMap[0]);
-let closure_1 = require(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const LayoutShiftManager = () => {
+export const LayoutShiftManager = (() => {
   class LayoutShiftManager {
     constructor() {
       tmp = LayoutShiftManager(this, LayoutShiftManager);
@@ -19,14 +20,13 @@ export const LayoutShiftManager = () => {
       return;
     }
   }
-  let closure_0 = LayoutShiftManager;
   let obj = {
     key: "__init",
     value: function __init() {
       this._sessionValue = 0;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "__init2",
     value: function __init2() {
@@ -64,5 +64,5 @@ export const LayoutShiftManager = () => {
     }
   };
   items[2] = obj;
-  return callback(LayoutShiftManager, items);
-}();
+  return _defineProperties(LayoutShiftManager, items);
+})();

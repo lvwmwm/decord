@@ -1,5 +1,5 @@
 // Module ID: 900
-// Function ID: 9881
+// Function ID: 9882
 // Name: normalizeArray
 // Dependencies: []
 
@@ -177,7 +177,7 @@ function isAbsolute(str) {
   return "/" === str.charAt(0);
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let closure_0 = /^(\S+:\\|\/?)([\s\S]*?)((?:\.{1,2}|[^/\\]+?|)(\.[^./\\]*|))(?:[/\\]*)$/;
+const re0 = /^(\S+:\\|\/?)([\s\S]*?)((?:\.{1,2}|[^/\\]+?|)(\.[^./\\]*|))(?:[/\\]*)$/;
 arg5.basename = function basename(arg0, arg1) {
   const arr = splitPath(arg0)[2] || "";
   let tmp = arg1;

@@ -1,17 +1,18 @@
-// Module ID: 13011
-// Function ID: 99006
+// Module ID: 13125
+// Function ID: 101162
 // Name: IGNORE_ANALYTICS_BREADCRUMB_EVENTS
-// Dependencies: []
+// Dependencies: [2]
 // Exports: filterThrottle
 
-// Module 13011 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/errors/CommonSentryInitUtils.tsx");
+// Module 13125 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
+const result = require("set").fileFinishedImporting("modules/errors/CommonSentryInitUtils.tsx");
 
-export const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = [-1526726280, 1358954882, 759252559, 1358954953, 541282754, 526778372, -918159356, -112132095, 526795118, -1907228668, false, false, false];
+export const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = ["notification_clicked", "experiment_user_triggered", "experiment_dm_triggered", "experiment_guild_triggered", "device_event", "react_soft_exception", "network_capabilities_changed", "foreground_service", "app_lifecycle", "ui_lifecycle", "touch_event", "http_request", "websocket_message_received"];
 export const filterThrottle = function filterThrottle(arg0) {
+  let closure_0;
+  let closure_1;
   ({ maxBudgetMinute: closure_0, maxBudgetHour: closure_1 } = arg0);
-  let closure_2 = { minute: {}, hour: {} };
+  let closure_2 = { minute: { slot: 0, budgetUsed: 0 }, hour: { slot: 0, budgetUsed: 0 } };
   return () => {
     const timestamp = Date.now();
     const rounded = Math.round(timestamp / 1000 / 60);

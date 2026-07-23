@@ -1,46 +1,48 @@
-// Module ID: 12976
-// Function ID: 98693
+// Module ID: 13090
+// Function ID: 100849
 // Name: Slider
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4099, 4100, 7523, 2]
 // Exports: Slider
 
-// Module 12976 (Slider)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true }, slider: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.REDESIGN_INPUT_CONTROL_SELECTED };
-obj.minimumTrackTintColor = obj;
-const tmp2 = arg1(dependencyMap[2]);
-obj.maximumTrackTintColor = { backgroundColor: importDefault(dependencyMap[4]).colors.SLIDER_TRACK_BACKGROUND };
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.SLIDER_TRACK_BACKGROUND };
-obj.startIcon = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
-const obj2 = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
-obj.endIcon = { marginLeft: importDefault(dependencyMap[4]).space.PX_8 };
-let closure_7 = obj.createStyles(obj);
-const obj3 = { marginLeft: importDefault(dependencyMap[4]).space.PX_8 };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Slider/native/Slider.native.tsx");
+// Module 13090 (Slider)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flex: 1, flexDirection: "row", alignItems: "center" }, slider: { flex: 1 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_INPUT_CONTROL_SELECTED };
+_createForOfIteratorHelperLoose.minimumTrackTintColor = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.maximumTrackTintColor = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.SLIDER_TRACK_BACKGROUND };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.SLIDER_TRACK_BACKGROUND };
+_createForOfIteratorHelperLoose.startIcon = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj2 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.endIcon = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj3 = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let result = require("jsxProd").fileFinishedImporting("design/components/Slider/native/Slider.native.tsx");
 
 export const Slider = function Slider(step) {
   let endIcon;
   let onValueChange;
   let startIcon;
   ({ startIcon, endIcon, onValueChange } = step);
-  const arg1 = onValueChange;
   step = step.step;
-  const importDefault = step;
-  let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
+  let obj = { startIcon: 0, endIcon: 0, style: 0, onValueChange: 0, step: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(step, obj);
-  const tmp3 = callback2();
+  const tmp3 = _createForOfIteratorHelperLoose();
   const items = [step, onValueChange];
   obj = { style: tmp3.container };
   let tmp7 = null;
   const callback = React.useCallback((arg0) => {
     if (null != step) {
-      const result = onValueChange(closure_2[5]).triggerHapticFeedback(step(closure_2[6]).IMPACT_LIGHT);
-      const obj = onValueChange(closure_2[5]);
+      const result = onValueChange(outer1_2[5]).triggerHapticFeedback(step(outer1_2[6]).IMPACT_LIGHT);
+      const obj = onValueChange(outer1_2[5]);
     }
     if (null != onValueChange) {
       onValueChange(arg0);
@@ -60,7 +62,7 @@ export const Slider = function Slider(step) {
   obj1["minimumTrackTintColor"] = tmp3.minimumTrackTintColor.backgroundColor;
   obj1["maximumTrackTintColor"] = tmp3.maximumTrackTintColor.backgroundColor;
   obj1["tapToSeek"] = true;
-  items1[1] = callback(importDefault(dependencyMap[7]), obj1);
+  items1[1] = callback(step(7523), obj1);
   let tmp12 = null;
   if (null != endIcon) {
     const obj2 = { style: tmp3.endIcon, children: endIcon };

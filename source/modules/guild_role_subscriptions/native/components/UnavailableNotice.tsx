@@ -1,40 +1,44 @@
-// Module ID: 15146
-// Function ID: 114285
+// Module ID: 15261
+// Function ID: 116454
 // Name: UnavailableNotice
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5085, 15067, 4126, 2]
 // Exports: default
 
-// Module 15146 (UnavailableNotice)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.brightTitle = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.unavailableContainer = { justifyContent: "center" };
-obj.unavailableInfo = { <string:3596066964>: null, <string:3638417373>: null };
-obj.unavailableDescription = {};
-obj.joinCtaTitle = {};
-let closure_6 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/UnavailableNotice.tsx");
+// Module 15261 (UnavailableNotice)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.brightTitle = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+_createForOfIteratorHelperLoose.unavailableContainer = { justifyContent: "center" };
+_createForOfIteratorHelperLoose.unavailableInfo = { alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.unavailableDescription = { marginTop: 8, marginHorizontal: 16, textAlign: "center" };
+_createForOfIteratorHelperLoose.joinCtaTitle = { alignSelf: "center", marginTop: 16, paddingHorizontal: 24, textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/UnavailableNotice.tsx");
 
 export default function UnavailableNotice(brightTitle) {
   let description;
   let title;
   brightTitle = brightTitle.brightTitle;
   ({ title, description } = brightTitle);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items };
-  const items = [, ];
+  items = [, ];
   ({ container: arr[0], unavailableContainer: arr[1] } = tmp);
   obj = { style: tmp.unavailableInfo };
-  obj = { source: importDefault(dependencyMap[6]) };
-  const items1 = [callback(importDefault(dependencyMap[5]), obj), , ];
-  const obj1 = {};
+  obj = { source: importDefault(15067) };
+  const items1 = [callback(importDefault(5085), obj), , ];
+  const obj1 = { variant: "heading-lg/extrabold", color: "text-default" };
   const items2 = [tmp.joinCtaTitle, ];
   if (brightTitle) {
     brightTitle = tmp.brightTitle;
@@ -42,8 +46,9 @@ export default function UnavailableNotice(brightTitle) {
   items2[1] = brightTitle;
   obj1.style = items2;
   obj1.children = title;
-  items1[1] = callback(arg1(dependencyMap[7]).Text, obj1);
-  items1[2] = callback(arg1(dependencyMap[7]).Text, { style: tmp.unavailableDescription, children: description });
+  items1[1] = callback(require(4126) /* Text */.Text, obj1);
+  const obj2 = { style: tmp.unavailableDescription, variant: "text-sm/medium", color: "text-default", children: description };
+  items1[2] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items1;
   obj.children = closure_5(View, obj);
   return callback(View, obj);

@@ -1,27 +1,31 @@
-// Module ID: 13981
-// Function ID: 106240
+// Module ID: 14095
+// Function ID: 108396
 // Name: getUserRoleSubscriptionRelationship
-// Dependencies: []
+// Dependencies: [4992, 14094, 566, 2]
 // Exports: default
 
-// Module 13981 (getUserRoleSubscriptionRelationship)
+// Module 14095 (getUserRoleSubscriptionRelationship)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { UserGuildRoleSubscriptionRelationship as closure_3 } from "MAX_SUBSCRIPTION_TIERS";
+
+const require = arg1;
 function getUserRoleSubscriptionRelationship() {
   let obj;
   let tmp = arg0;
   if (arg0 === undefined) {
-    const items = [closure_2];
+    const items = [_isNativeReflectConstruct];
     tmp = items;
   }
   [obj] = tmp;
-  let closure_1;
+  let c1;
   const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
-  closure_1 = false;
+  c1 = false;
   const item = guildIdsWithPurchasableRoles.forEach((arg0) => {
     if (userSubscriptionRoles.getUserSubscriptionRoles(arg0).size > 0) {
-      let closure_1 = true;
+      let c1 = true;
     }
   });
-  if (closure_1) {
+  if (c1) {
     let IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
   } else if (0 === guildIdsWithPurchasableRoles.size) {
     IN_SUBSCRIPTION_SERVER = constants.NONE;
@@ -30,15 +34,13 @@ function getUserRoleSubscriptionRelationship() {
   }
   return IN_SUBSCRIPTION_SERVER;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[1]).UserGuildRoleSubscriptionRelationship;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_role_subscriptions/useUserRoleSubscriptionRelationship.tsx");
+const result = require("initialize").fileFinishedImporting("modules/guild_role_subscriptions/useUserRoleSubscriptionRelationship.tsx");
 
 export default function useUserRoleSubscriptionRelationship() {
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const items = [closure_2];
-    return callback(items);
+  let items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const items = [outer1_2];
+    return outer1_4(items);
   });
 };
 export { getUserRoleSubscriptionRelationship };

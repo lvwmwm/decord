@@ -1,47 +1,52 @@
-// Module ID: 9851
-// Function ID: 76270
+// Module ID: 9858
+// Function ID: 76311
 // Name: AvailableForumTag
-// Dependencies: []
+// Dependencies: [31, 4991, 1852, 33, 4130, 689, 566, 9645, 8372, 5151, 1392, 4126, 2]
 // Exports: default
 
-// Module 9851 (AvailableForumTag)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[2]).EMOJI_URL_BASE_SIZE;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { 1449366625: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040439468851276, 105995435: 37442662124804074000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 131072.00119209295, "Null": -0.0000000000000000019220782303981922, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032842137145942, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000065187710698453, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003911262643526144, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001513052729734563, "Null": 0.0000000000000000000000000000000000000000024910381827976072, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018700106487324, "Null": -0.0000000000000000000000000017165655764753322, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-obj.pill = obj;
-const tmp2 = arg1(dependencyMap[3]);
-obj.pillSelected = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderWidth: 1 };
-obj.pillDisabled = { opacity: 0.6 };
-obj.emoji = {};
-obj.imageEmoji = { hideWhenScrolling: null, autoCapitalize: null };
-obj.textEmoji = {};
-let closure_8 = obj.createStyles(obj);
-const obj1 = { borderColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND, borderWidth: 1 };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/forums/native/AvailableForumTag.tsx");
+// Module 9858 (AvailableForumTag)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { EMOJI_URL_BASE_SIZE } from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 12, borderRadius: 20, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, margin: 6, borderWidth: 2, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, overflow: "hidden", height: 32 };
+_createForOfIteratorHelperLoose.pill = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.pillSelected = { borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderWidth: 1 };
+_createForOfIteratorHelperLoose.pillDisabled = { opacity: 0.6 };
+_createForOfIteratorHelperLoose.emoji = { height: 18, width: 18, marginRight: 4, display: "flex", alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.imageEmoji = { height: 16, width: 16 };
+_createForOfIteratorHelperLoose.textEmoji = { fontSize: 14, lineHeight: 20 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderWidth: 1 };
+const result = require("set").fileFinishedImporting("modules/forums/native/AvailableForumTag.tsx");
 
 export default function AvailableForumTag(tag) {
+  let EMOJI_URL_BASE_SIZE;
+  let closure_6;
+  let closure_7;
   let disabled;
+  let importDefault;
   tag = tag.tag;
-  const arg1 = tag;
-  ({ onPress: closure_1, disabled } = tag);
-  const dependencyMap = disabled;
+  ({ onPress: importDefault, disabled } = tag);
   const selected = tag.selected;
-  const React = selected;
   function handlePress() {
     if (!disabled) {
       callback(tag);
     }
   }
-  const tmp = callback2();
-  let closure_4 = tmp;
-  ({ name: closure_5, emojiId: closure_6, emojiName: closure_7 } = tag);
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_4];
-  const callback2 = obj.useStateFromStores(items, () => {
+  const tmp = _createForOfIteratorHelperLoose();
+  let _isNativeReflectConstruct = tmp;
+  ({ name: EMOJI_URL_BASE_SIZE, emojiId: closure_6, emojiName: closure_7 } = tag);
+  let obj = tag(disabled[6]);
+  let items = [_isNativeReflectConstruct];
+  _createForOfIteratorHelperLoose = obj.useStateFromStores(items, () => {
     let usableCustomEmojiById = null;
     if (null != closure_6) {
       usableCustomEmojiById = tmp.getUsableCustomEmojiById(closure_6);
@@ -49,7 +54,7 @@ export default function AvailableForumTag(tag) {
     return usableCustomEmojiById;
   });
   const items1 = [disabled, selected, tmp];
-  let closure_9 = React.useMemo(() => {
+  let closure_9 = selected.useMemo(() => {
     const items = [];
     items.push(tmp.pill);
     if (selected) {
@@ -76,13 +81,13 @@ export default function AvailableForumTag(tag) {
       }
       if (tmp7Result) {
         const obj1 = {};
-        ({ emoji: obj3.style, textEmoji: obj3.textEmojiStyle, imageEmoji: obj3.fastImageStyle } = tmp);
+        ({ emoji: obj3.style, textEmoji: obj3.textEmojiStyle, imageEmoji: obj3.fastImageStyle } = _isNativeReflectConstruct);
         let emojiURL;
         if (null != closure_8) {
-          let obj3 = callback(disabled[10]);
+          let obj3 = outer1_1(disabled[10]);
           const obj2 = {};
           ({ id: obj5.id, animated: obj5.animated } = closure_8);
-          obj2.size = closure_5;
+          obj2.size = outer1_5;
           emojiURL = obj3.getEmojiURL(obj2);
         }
         obj1.src = emojiURL;
@@ -91,16 +96,16 @@ export default function AvailableForumTag(tag) {
           str = closure_7;
         }
         obj1.name = str;
-        tmp7Result = callback2(callback(disabled[9]), obj1);
-        const tmp10 = callback(disabled[9]);
-        const tmp7 = callback2;
+        tmp7Result = outer1_6(outer1_1(disabled[9]), obj1);
+        const tmp10 = outer1_1(disabled[9]);
+        const tmp7 = outer1_6;
       }
       const items = [tmp7Result, ];
-      obj3 = { cachedAt: true, edpbxy: true, children: closure_5 };
-      items[1] = callback2(tag(disabled[11]).Text, obj3);
+      obj3 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: closure_5 };
+      items[1] = outer1_6(tag(disabled[11]).Text, obj3);
       obj["children"] = items;
-      return closure_7(tag(disabled[8]).PressableScale, obj);
+      return outer1_7(tag(disabled[8]).PressableScale, obj);
     }
   };
-  return callback(importDefault(dependencyMap[7]), obj);
+  return callback(importDefault(disabled[7]), obj);
 };

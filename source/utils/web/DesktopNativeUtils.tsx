@@ -1,52 +1,58 @@
-// Module ID: 5139
-// Function ID: 44582
+// Module ID: 5142
+// Function ID: 44601
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 5, 653, 44, 4062, 477, 587, 5143, 4164, 4, 5144, 5145, 1443, 507, 4192, 2]
 
-// Module 5139 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5142 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import closure_4 from "set";
+import { NativeFeatures } from "ME";
+import set from "ME";
+
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,11 +98,11 @@ function getFileData() {
   return _getFileData(...arguments);
 }
 async function _getFileData(arg0, arg1) {
-  const request = new Request(arg0, { 0: 30, 0: 30 });
+  const request = new Request(arg0, { method: "GET", mode: "cors" });
   const obj = yield fetch(request);
-  callback(closure_2[3])(200 === obj.status, "Data fetch unsuccessful");
+  outer2_1(outer2_2[3])(200 === obj.status, "Data fetch unsuccessful");
   const tmp3 = yield obj.arrayBuffer();
-  callback(closure_2[3])(null != tmp3, "Data is null");
+  outer2_1(outer2_2[3])(null != tmp3, "Data is null");
   return tmp3;
 }
 function getImageData(arg0, arg1, width, height) {
@@ -150,7 +156,7 @@ function normalizeRunningGame(id) {
   obj.windowHandle = tmp3;
   let UNKNOWN = id.fullscreenType;
   if (null == UNKNOWN) {
-    UNKNOWN = arg1(dependencyMap[4]).RunningProcessFullscreenType.UNKNOWN;
+    UNKNOWN = require(4062) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
   }
   obj.fullscreenType = UNKNOWN;
   const isLauncher = id.isLauncher;
@@ -159,45 +165,42 @@ function normalizeRunningGame(id) {
   return obj;
 }
 function backwardCompatSend(APP_ASYNC_INDEX_TSX_LOADED) {
-  const obj = arg1(dependencyMap[5]);
+  const obj = require(477) /* set */;
   if (obj.isDesktop()) {
     obj.sendIPC(APP_ASYNC_INDEX_TSX_LOADED);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const NativeFeatures = arg1(dependencyMap[2]).NativeFeatures;
-const set = new Set(["horizontal", "renderItem", "data", "extraData"]);
-const set1 = new Set(["horizontal", "renderItem", "data", "extraData", "onLoad", "CellRendererComponent", "overrideProps", "refreshing", "onRefresh"]);
+let set = new Set(["jpg", "jpeg", "jfif", "png"]);
+const set1 = new Set(["jpg", "jpeg", "jfif", "png", "webp", "gif", "tiff", "bmp", "avif"]);
 let closure_9 = null;
 let buildNumber = null;
 let moduleVersions = null;
 let closure_12 = {};
-let closure_13 = false;
+let c13 = false;
 let closure_14 = {};
 if (null != DiscordNative) {
-  const app = DiscordNative.app;
-  const parts = app.getVersion().split(".");
+  let app = DiscordNative.app;
+  let parts = app.getVersion().split(".");
   closure_9 = parts.map((replaced) => parseInt(replaced));
   const app2 = DiscordNative.app;
   moduleVersions = app2.getModuleVersions();
   const app3 = DiscordNative.app;
   buildNumber = app3.getBuildNumber();
-  const str = app.getVersion();
+  let str = app.getVersion();
 }
-new Set(["style", "stickyHeaderIndices", "maintainVisibleContentPosition", "onCommitLayoutEffect", "onChangeStickyIndex", "stickyHeaderConfig"]);
-let closure_15 = false;
-let closure_16 = null;
-let closure_17 = "lastImageSaveDirectory";
-let closure_18 = /[<>:"/\\|?*@]/g;
-let closure_19 = /(\.[a-zA-Z0-9]+):[^.]*$/;
-let closure_20 = /(\.[a-zA-Z0-9]+)%3A.+$/;
-let closure_21 = /[^a-zA-Z0-9]/g;
-let closure_22 = /\.[^.]*$/;
+new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]);
+let c15 = false;
+let c16 = null;
+const lastImageSaveDirectory = "lastImageSaveDirectory";
+const re18 = /[<>:"/\\|?*@]/g;
+const re19 = /(\.[a-zA-Z0-9]+):[^.]*$/;
+const re20 = /(\.[a-zA-Z0-9]+)%3A.+$/;
+const re21 = /[^a-zA-Z0-9]/g;
+const re22 = /\.[^.]*$/;
 let obj = { SAVED: "saved", CANCELED: "canceled", ERRORED: "errored" };
 obj = {
   requireModule(arg0) {
-    if (closure_13) {
+    if (c13) {
       if (closure_14.hasOwnProperty(arg0)) {
         if (null != closure_14[arg0]) {
           return closure_14[arg0];
@@ -206,13 +209,13 @@ obj = {
     }
     const nativeModules = DiscordNative.nativeModules;
     const requireModuleResult = nativeModules.requireModule(arg0);
-    if (closure_13) {
+    if (c13) {
       closure_14[arg0] = requireModuleResult;
     }
     return requireModuleResult;
   },
   ensureModule(discord_voice) {
-    if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+    if (require(477) /* set */.isPlatformEmbedded) {
       const nativeModules = DiscordNative.nativeModules;
       let ensureModuleResult = nativeModules.ensureModule(discord_voice);
     } else {
@@ -229,11 +232,11 @@ obj.getCrashReporterMetadata = function getCrashReporterMetadata() {
   return crashReporter.getMetadata();
 };
 obj.getSetting = function getSetting(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  return callback3(async () => {
-    const settings = settings.settings;
-    return yield settings.get(closure_0, closure_1);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return callback2(async () => {
+    const settings = outer2_6.settings;
+    return yield settings.get(outer1_0, outer1_1);
   })();
 };
 obj.beforeUnload = function beforeUnload() {
@@ -247,7 +250,7 @@ obj.beforeUnload = function beforeUnload() {
     } else {
       let tmp2 = requireModuleResult;
       reset = requireModuleResult.reset;
-      // break
+      break;
     }
     if (reset) {
       let tmp3 = requireModuleResult;
@@ -278,13 +281,13 @@ obj.beforeUnload = function beforeUnload() {
     let tmp14 = window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
     let tmp15 = tmp14;
     if (tmp14) {
-      let tmp16 = arg1;
+      let tmp16 = require;
       let tmp17 = dependencyMap;
       let num = 6;
-      let Storage = arg1(dependencyMap[6]).Storage;
+      let Storage = require(587) /* Storage */.Storage;
       let num2 = 7;
       let flag = true;
-      tmp15 = true !== Storage.get(arg1(dependencyMap[7]).DOMAIN_MIGRATION_SUCCESS_KEY);
+      tmp15 = true !== Storage.get(require(5143) /* DomainMigrationEventType */.DOMAIN_MIGRATION_SUCCESS_KEY);
     }
     let supportsFeatureResult = tmp15;
     if (tmp15) {
@@ -294,10 +297,10 @@ obj.beforeUnload = function beforeUnload() {
     if (supportsFeatureResult) {
       let tmp20 = DiscordNative;
       let userDataCache = DiscordNative.userDataCache;
-      let tmp21 = arg1;
+      let tmp21 = require;
       let tmp22 = dependencyMap;
       let num3 = 6;
-      let Storage2 = arg1(dependencyMap[6]).Storage;
+      let Storage2 = require(587) /* Storage */.Storage;
       let cacheUserDataResult = userDataCache.cacheUserData(Storage2.stringify());
     }
   }
@@ -325,7 +328,7 @@ obj.inputEventUnregister = function inputEventUnregister(replaced) {
 };
 obj.setOnInputEventCallback = function setOnInputEventCallback(arg0) {
   const self = this;
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     const discordUtils = self.getDiscordUtils();
     discordUtils.inputWatchAll(arg0);
   }
@@ -335,16 +338,16 @@ obj.setFocused = function setFocused(arg0) {
   discordUtils.inputSetFocused(arg0);
 };
 obj.setObservedGamesCallback = function setObservedGamesCallback(mapped, normalizeCallback) {
-  normalizeCallback = arg2;
+  let closure_0 = arg2;
   normalizeCallback = function normalizeCallback(arr) {
-    return arg2(arr.map((arg0) => callback(arg0, closure_2)));
+    return callback(arr.map((arg0) => outer2_31(arg0, outer1_2)));
   };
   let closure_12 = {};
-  let closure_1 = 0;
+  let c1 = 0;
   const discordUtils = this.getDiscordUtils();
   mapped = mapped.map((id) => {
-    const sum = closure_1 + 1;
-    closure_1 = sum;
+    const sum = c1 + 1;
+    c1 = sum;
     if (null != id.id) {
       closure_12[sum] = id.id;
     }
@@ -377,17 +380,17 @@ obj.setProcessObserverCollectExecutableFingerprint = function setProcessObserver
   }
 };
 obj.getExecutableFingerprintForProcess = function getExecutableFingerprintForProcess(arg0) {
-  const arg1 = this;
-  const importDefault = arg0;
+  const self = this;
+  let closure_1 = arg0;
   return new Promise((arg0) => {
-    const self = arg0;
-    const discordUtils = self.getDiscordUtils();
+    const _self = arg0;
+    const discordUtils = _self.getDiscordUtils();
     let prop;
     if (null != discordUtils) {
       prop = discordUtils.getExecutableFingerprintForProcess;
     }
     if (null != prop) {
-      prop(arg0, (arg0) => {
+      prop(closure_1, (arg0) => {
         let tmp2 = null;
         if (null != arg0) {
           tmp2 = null;
@@ -395,7 +398,7 @@ obj.getExecutableFingerprintForProcess = function getExecutableFingerprintForPro
             tmp2 = arg0;
           }
         }
-        return arg0(tmp2);
+        return closure_0(tmp2);
       });
     } else {
       arg0(null);
@@ -403,12 +406,12 @@ obj.getExecutableFingerprintForProcess = function getExecutableFingerprintForPro
   });
 };
 obj.setGameDetectionCallback = function setGameDetectionCallback(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const discordUtils = this.getDiscordUtils();
   if (null != discordUtils.setGameDetectionCallback) {
     setGameDetectionCallback.call(discordUtils, (arr, arr2) => {
-      const mapped = arr.map((arg0) => callback(arg0));
-      return arr(mapped, arr2.map((arg0) => callback(arg0)));
+      const mapped = arr.map((arg0) => outer2_31(arg0));
+      return callback(mapped, arr2.map((arg0) => outer2_31(arg0)));
     });
   }
 };
@@ -433,10 +436,10 @@ obj.checkForRobloxSubgameUpdate = function checkForRobloxSubgameUpdate() {
   }
 };
 obj.setCandidateGamesCallback = function setCandidateGamesCallback(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const discordUtils = this.getDiscordUtils();
   const result = discordUtils.setCandidateGamesCallback((arr) => {
-    arr(arr.map((arg0) => callback(arg0)));
+    callback(arr.map((arg0) => outer2_31(arg0)));
   });
 };
 obj.clearCandidateGamesCallback = function clearCandidateGamesCallback() {
@@ -454,13 +457,13 @@ obj.setGameCandidateOverrides = function setGameCandidateOverrides(arr) {
   }));
 };
 obj.setObserverDebugCallback = function setObserverDebugCallback(arg0, NONE, arg2) {
-  NONE = arg0;
+  let closure_0 = arg0;
   const discordUtils = this.getDiscordUtils();
-  const result = discordUtils.setObserverDebugCallback((arg0) => arg0(arg0), NONE, arg2);
+  const result = discordUtils.setObserverDebugCallback((arg0) => callback(arg0), NONE, arg2);
 };
 obj.clearObserverDebugCallback = function clearObserverDebugCallback() {
   const discordUtils = this.getDiscordUtils();
-  const result = discordUtils.setObserverDebugCallback(null, arg1(dependencyMap[8]).GameDetectionDebugLevel.NONE, 0);
+  const result = discordUtils.setObserverDebugCallback(null, require(4164) /* _isNativeReflectConstruct */.GameDetectionDebugLevel.NONE, 0);
 };
 obj.shouldDisplayNotifications = function shouldDisplayNotifications() {
   const discordUtils = this.getDiscordUtils();
@@ -468,26 +471,26 @@ obj.shouldDisplayNotifications = function shouldDisplayNotifications() {
 };
 obj.getVoiceEngine = function getVoiceEngine() {
   const requireModuleResult = this.requireModule("discord_voice");
-  const arg1 = requireModuleResult;
-  if (!closure_15) {
-    arg1(dependencyMap[9]).setNativeLogFn((arg0, arg1, arg2) => {
-      requireModuleResult.consoleLog(arg1, "[" + arg0 + "] " + arg2);
+  const require = requireModuleResult;
+  if (!c15) {
+    require(4) /* log */.setNativeLogFn((arg0, arg1, arg2) => {
+      closure_0.consoleLog(arg1, "[" + arg0 + "] " + arg2);
     });
-    const obj = arg1(dependencyMap[9]);
+    const obj = require(4) /* log */;
   }
-  closure_15 = true;
+  c15 = true;
   return requireModuleResult;
 };
 obj.getDiscordUtils = function getDiscordUtils() {
   const self = this;
-  if (!closure_15) {
+  if (!c15) {
     const voiceEngine = self.getVoiceEngine();
   }
   self.requireModule("discord_utils");
 };
 obj.isSystemDarkMode = function isSystemDarkMode() {
   const self = this;
-  const tmp = !arg1(dependencyMap[5]).isWindows();
+  const tmp = !require(477) /* set */.isWindows();
   let tmp2 = !tmp;
   if (!tmp) {
     const discordUtils = self.getDiscordUtils();
@@ -509,7 +512,7 @@ obj.getDiscordIsElevated = function getDiscordIsElevated() {
     if (null != self.getDiscordUtils().getDiscordIsElevated) {
       if (null === discordIsElevated) {
         const discordUtils = self.getDiscordUtils();
-        const discordIsElevated = discordUtils.getDiscordIsElevated();
+        discordIsElevated = discordUtils.getDiscordIsElevated();
       }
       tmp = discordIsElevated;
     }
@@ -540,7 +543,7 @@ obj.setBadge = function setBadge(arg0) {
     dock.setBadge(str2);
   } else {
     if ("win32" === obj3.getPlatformName()) {
-      self.sendIPC(arg1(dependencyMap[10]).IPCEvents.APP_BADGE_SET, arg0);
+      self.sendIPC(require(5144) /* IPCEvents */.IPCEvents.APP_BADGE_SET, arg0);
     } else {
       if ("linux" === obj2.getPlatformName()) {
         const app = DiscordNative.app;
@@ -550,51 +553,50 @@ obj.setBadge = function setBadge(arg0) {
         }
         app.setBadgeCount(num);
       }
-      const obj2 = arg1(dependencyMap[5]);
+      obj2 = require(477) /* set */;
     }
-    const obj3 = arg1(dependencyMap[5]);
+    obj3 = require(477) /* set */;
   }
 };
 obj.setSystemTrayIcon = function setSystemTrayIcon(arg0) {
   const self = this;
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
-    self.sendIPC(arg1(dependencyMap[10]).IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
+  if (require(477) /* set */.isPlatformEmbedded) {
+    self.sendIPC(require(5144) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
   }
 };
 obj.setThumbarButtons = function setThumbarButtons(arg0, self) {
   self = this;
-  if (self(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     const thumbar = DiscordNative.thumbar;
     if (!tmp3) {
       thumbar.setThumbarButtons(arg0, self.isSystemDarkMode());
     }
-    const tmp3 = null == thumbar || null == thumbar.setThumbarButtons;
+    tmp3 = null == thumbar || null == thumbar.setThumbarButtons;
   }
 };
 obj.bounceDock = function bounceDock(arg0) {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
-    const app = DiscordNative.app;
-    const arg1 = app;
+  if (app(477).isPlatformEmbedded) {
+    app = DiscordNative.app;
     if (null != app.dock) {
-      const dock = app.dock;
+      let dock = app.dock;
       let closure_1 = dock.bounce(arg0);
-      return callback3(async () => {
-        const dock = dock.dock;
-        dock.cancelBounce(yield closure_1);
+      return callback2(async () => {
+        const dock = outer1_0.dock;
+        dock.cancelBounce(yield outer1_1);
       });
     }
   }
 };
 obj.setSystemTrayApplications = function setSystemTrayApplications(arg0) {
   const self = this;
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
-    self.sendIPC(arg1(dependencyMap[10]).IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
+  if (require(477) /* set */.isPlatformEmbedded) {
+    self.sendIPC(require(5144) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
   }
 };
 Object.defineProperty(obj, "architecture", {
   get: () => {
     let str = "";
-    if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+    if (require(477) /* set */.isPlatformEmbedded) {
       str = DiscordNative.process.arch;
     }
     return str;
@@ -604,7 +606,7 @@ Object.defineProperty(obj, "architecture", {
 Object.defineProperty(obj, "releaseChannel", {
   get: () => {
     let str = "";
-    if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+    if (require(477) /* set */.isPlatformEmbedded) {
       const app = DiscordNative.app;
       str = app.getReleaseChannel();
     }
@@ -617,7 +619,7 @@ Object.defineProperty(obj, "buildNumber", { get: () => closure_10, set: undefine
 Object.defineProperty(obj, "moduleVersions", { get: () => closure_11, set: undefined });
 Object.defineProperty(obj, "parsedOSRelease", {
   get: () => {
-    if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+    if (require(477) /* set */.isPlatformEmbedded) {
       const parts = DiscordNative.os.release.split(".");
       let mapped = parts.map((replaced) => parseInt(replaced, 10));
       const str = DiscordNative.os.release;
@@ -629,44 +631,44 @@ Object.defineProperty(obj, "parsedOSRelease", {
   set: undefined
 });
 obj.copy = function copy(arg0) {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     const clipboard = DiscordNative.clipboard;
     clipboard.copy(arg0);
   }
 };
-obj.copyImage = function copyImage(arg0, closure_1) {
-  closure_1 = arg0;
-  const importDefault = closure_1;
-  return callback3(async () => {
-    callback2(closure_2[3])(callback(closure_2[5]).isPlatformEmbedded, "Copy image method called outside native app");
-    callback2(closure_2[3])("function" === typeof closure_6.clipboard.copyImage, "Copy image not supported");
-    const tmp = callback2(closure_2[3]);
-    const tmp4 = yield closure_30(closure_0);
-    const decideFileExtensionResult = callback(closure_2[11]).decideFileExtension(callback, callback2);
+obj.copyImage = function copyImage(arg0, combined) {
+  let closure_0 = arg0;
+  let closure_1 = combined;
+  return callback2(async () => {
+    callback2(outer2_2[3])(callback(outer2_2[5]).isPlatformEmbedded, "Copy image method called outside native app");
+    callback2(outer2_2[3])("function" === typeof outer2_6.clipboard.copyImage, "Copy image not supported");
+    const tmp = callback2(outer2_2[3]);
+    const tmp4 = yield outer2_30(outer1_0);
+    const decideFileExtensionResult = callback(outer2_2[11]).decideFileExtension(outer1_0, outer1_1);
     if (null != decideFileExtensionResult) {
-      if (set.has(decideFileExtensionResult)) {
+      if (outer2_7.has(decideFileExtensionResult)) {
         const _HermesInternal = HermesInternal;
         let combined = "image." + decideFileExtensionResult;
       }
-      const clipboard = closure_6.clipboard;
+      const clipboard = outer2_6.clipboard;
       const _Buffer = Buffer;
       clipboard.copyImage(Buffer.from(tmp4), combined);
     }
-    combined = callback;
+    combined = outer1_0;
   })();
 };
 obj.copyImageBlob = function copyImageBlob(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  return callback3(async () => {
-    const clipboard = clipboard.clipboard;
-    clipboard.copyImage(Buffer.from(yield closure_0.arrayBuffer()), closure_1);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return callback2(async () => {
+    const clipboard = outer2_6.clipboard;
+    clipboard.copyImage(Buffer.from(yield outer1_0.arrayBuffer()), outer1_1);
   })();
 };
-obj.canSaveImage = function canSaveImage(closure_0, closure_1) {
-  if (null != closure_0) {
-    if (closure_1(dependencyMap[5]).isPlatformEmbedded) {
-      const decideFileExtensionResult = closure_1(dependencyMap[11]).decideFileExtension(closure_0, closure_1);
+obj.canSaveImage = function canSaveImage(outer1_0, outer1_1) {
+  if (null != outer1_0) {
+    if (require(477) /* set */.isPlatformEmbedded) {
+      const decideFileExtensionResult = require(5145) /* decideFileExtension */.decideFileExtension(outer1_0, outer1_1);
       let hasItem = null == decideFileExtensionResult;
       if (!hasItem) {
         hasItem = set1.has(decideFileExtensionResult);
@@ -677,15 +679,15 @@ obj.canSaveImage = function canSaveImage(closure_0, closure_1) {
   return false;
 };
 obj.saveImage = function saveImage(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
-  return callback3(async () => {
-    callback2(closure_2[3])(callback(closure_2[5]).isPlatformEmbedded, "Save image method called outside native app");
-    const tmp = callback2(closure_2[3]);
-    const toURLSafeResult = callback2(closure_2[12]).toURLSafe(callback);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  return callback2(async () => {
+    callback2(44)(callback(477).isPlatformEmbedded, "Save image method called outside native app");
+    const tmp = callback2(44);
+    const toURLSafeResult = callback2(1443).toURLSafe(outer1_0);
     if (null == toURLSafeResult) {
-      return constants.ERRORED;
+      return outer2_23.ERRORED;
     } else {
       const parts = toURLSafeResult.pathname.split("/");
       const arr = parts.pop();
@@ -693,20 +695,20 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
       if (null != arr) {
         str = arr;
       }
-      let str2 = callback3(str);
+      let str2 = outer2_27(str);
       const searchParams = toURLSafeResult.searchParams;
       const str4 = searchParams.get("format");
       if (null != str4) {
-        const formatted = str4.replace(closure_21, "").toLowerCase();
+        const formatted = str4.replace(outer2_21, "").toLowerCase();
         if (formatted.length > 0) {
           const _HermesInternal2 = HermesInternal;
-          str2 = "" + str2.replace(closure_22, "") + "." + formatted;
+          str2 = "" + str2.replace(outer2_22, "") + "." + formatted;
         }
-        const str9 = str4.replace(closure_21, "");
+        const str9 = str4.replace(outer2_21, "");
       } else if (!str2.includes(".")) {
-        let decideFileExtensionResult = callback(closure_2[11]).decideFileExtension(callback, callback2);
+        let decideFileExtensionResult = callback(5145).decideFileExtension(outer1_0, outer1_1);
         if (null == decideFileExtensionResult) {
-          decideFileExtensionResult = closure_2;
+          decideFileExtensionResult = outer1_2;
         }
         let str6 = "png";
         if (null != decideFileExtensionResult) {
@@ -714,27 +716,27 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
         }
         const _HermesInternal = HermesInternal;
         str2 = "" + str2 + "." + str6;
-        const obj2 = callback(closure_2[11]);
+        const obj2 = callback(5145);
       }
       const _Buffer = Buffer;
-      const fromResult = Buffer.from(yield closure_30(closure_0));
-      const Storage = callback(closure_2[6]).Storage;
-      const value = Storage.get(closure_17);
-      if ("function" === typeof closure_6.fileManager.saveWithDialog2) {
-        const fileManager2 = closure_6.fileManager;
+      const fromResult = Buffer.from(yield outer2_30(outer1_0));
+      const Storage = callback(587).Storage;
+      const value = Storage.get(outer2_17);
+      if ("function" === typeof outer2_6.fileManager.saveWithDialog2) {
+        const fileManager2 = outer2_6.fileManager;
         if (null != tmp26) {
           const tmp37 = tmp26;
         }
         const tmp38 = yield fileManager2.saveWithDialog2(fromResult, str2, tmp37);
         if (null == tmp38) {
-          return constants.ERRORED;
+          return outer2_23.ERRORED;
         } else if (tmp38.canceledByUser) {
-          return constants.CANCELED;
+          return outer2_23.CANCELED;
         } else {
           let directory = tmp38.directory;
         }
       } else {
-        const fileManager = closure_6.fileManager;
+        const fileManager = outer2_6.fileManager;
         if (null != tmp26) {
           const tmp32 = tmp26;
         }
@@ -742,29 +744,29 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
       }
       if (null != directory) {
         if ("" !== directory) {
-          const Storage2 = callback(closure_2[6]).Storage;
-          const result = Storage2.set(closure_17, directory);
-          let ERRORED = constants.SAVED;
+          const Storage2 = callback(587).Storage;
+          const result = Storage2.set(outer2_17, directory);
+          let ERRORED = outer2_23.SAVED;
         }
         return ERRORED;
       }
-      ERRORED = constants.ERRORED;
+      ERRORED = outer2_23.ERRORED;
       const str14 = toURLSafeResult.pathname;
     }
   })();
 };
 obj.saveFile = function saveFile(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  return callback3(async () => {
-    callback2(closure_2[3])(callback(closure_2[5]).isPlatformEmbedded, "Save file method called outside native app");
-    const tmp = callback2(closure_2[3]);
-    const toURLSafeResult = callback2(closure_2[12]).toURLSafe(callback);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return callback2(async () => {
+    callback2(outer2_2[3])(callback(outer2_2[5]).isPlatformEmbedded, "Save file method called outside native app");
+    const tmp = callback2(outer2_2[3]);
+    const toURLSafeResult = callback2(outer2_2[12]).toURLSafe(outer1_0);
     if (null == toURLSafeResult) {
       return null;
     } else {
-      if (null != callback2) {
-        let arr = callback2;
+      if (null != outer1_1) {
+        let arr = outer1_1;
       } else {
         const parts = toURLSafeResult.pathname.split("/");
         arr = parts.pop();
@@ -775,32 +777,32 @@ obj.saveFile = function saveFile(arg0, arg1) {
         str3 = arr;
       }
       let tmp6 = str3;
-      if (null == callback2) {
-        tmp6 = callback3(str3);
+      if (null == outer1_1) {
+        tmp6 = outer2_27(str3);
       }
       const _Buffer = Buffer;
-      const fileManager = fileManager.fileManager;
-      const tmp12 = yield fileManager.saveWithDialog(Buffer.from(yield closure_28(closure_0)), tmp6, undefined);
+      const fileManager = outer2_6.fileManager;
+      const tmp12 = yield fileManager.saveWithDialog(Buffer.from(yield outer2_28(outer1_0)), tmp6, undefined);
       let tmp13 = null;
       if (null != tmp12) {
         tmp13 = tmp12;
       }
       return tmp13;
     }
-    const obj = callback2(closure_2[12]);
+    const obj = callback2(outer2_2[12]);
   })();
 };
 obj.downloadMLModelFile = function downloadMLModelFile(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
-  return callback3(async () => {
-    callback2(closure_2[3])(callback(closure_2[5]).isPlatformEmbedded, "Download ML model file method called outside native app");
-    const tmp = callback2(closure_2[3]);
-    const obj = callback2(closure_2[12]);
-    callback2(closure_2[3])(callback2(closure_2[12]).toURLSafe(callback), "Could not download ML model, fileSrc was not a valid path");
-    const fileManager = fileManager.fileManager;
-    return yield fileManager.maybeDownloadMLModelFile(closure_0, closure_1, closure_2);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  return callback2(async () => {
+    callback2(44)(callback(477).isPlatformEmbedded, "Download ML model file method called outside native app");
+    const tmp = callback2(44);
+    const obj = callback2(1443);
+    callback2(44)(callback2(1443).toURLSafe(outer1_0), "Could not download ML model, fileSrc was not a valid path");
+    const fileManager = outer2_6.fileManager;
+    return yield fileManager.maybeDownloadMLModelFile(outer1_0, outer1_1, outer1_2);
   })();
 };
 obj.stopMLModelDownloads = function stopMLModelDownloads() {
@@ -810,48 +812,48 @@ obj.stopMLModelDownloads = function stopMLModelDownloads() {
 obj.canCheckMLModelFilesExist = function canCheckMLModelFilesExist() {
   return "function" === typeof DiscordNative.fileManager.checkMLModelFilesExist;
 };
-obj.checkMLModelFilesExist = function checkMLModelFilesExist(arg0) {
-  const arg1 = arg0;
-  return callback3(async () => {
-    const fileManager = fileManager.fileManager;
-    return yield fileManager.checkMLModelFilesExist(closure_0);
+obj.checkMLModelFilesExist = function checkMLModelFilesExist(outer1_0) {
+  let closure_0 = outer1_0;
+  return callback2(async () => {
+    const fileManager = outer2_6.fileManager;
+    return yield fileManager.checkMLModelFilesExist(outer1_0);
   })();
 };
-obj.cleanupUnusedMLModelFiles = function cleanupUnusedMLModelFiles(arg0) {
-  const arg1 = arg0;
-  return callback3(async () => {
-    const fileManager = fileManager.fileManager;
-    return yield fileManager.cleanupUnusedMLModelFiles(closure_0);
+obj.cleanupUnusedMLModelFiles = function cleanupUnusedMLModelFiles(outer1_0) {
+  let closure_0 = outer1_0;
+  return callback2(async () => {
+    const fileManager = outer2_6.fileManager;
+    return yield fileManager.cleanupUnusedMLModelFiles(outer1_0);
   })();
 };
 obj.downloadClipsFile = function downloadClipsFile(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
-  return callback3(async () => {
-    callback2(closure_2[3])(callback(closure_2[5]).isPlatformEmbedded, "Download clips file method called outside native app");
-    const tmp = callback2(closure_2[3]);
-    const obj = callback2(closure_2[12]);
-    callback2(closure_2[3])(callback2(closure_2[12]).toURLSafe(callback), "Could not download clips file, fileSrc was not a valid path");
-    const fileManager = fileManager.fileManager;
-    return yield fileManager.maybeDownloadClipsFile(closure_0, closure_1, closure_2);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  return callback2(async () => {
+    callback2(44)(callback(477).isPlatformEmbedded, "Download clips file method called outside native app");
+    const tmp = callback2(44);
+    const obj = callback2(1443);
+    callback2(44)(callback2(1443).toURLSafe(outer1_0), "Could not download clips file, fileSrc was not a valid path");
+    const fileManager = outer2_6.fileManager;
+    return yield fileManager.maybeDownloadClipsFile(outer1_0, outer1_1, outer1_2);
   })();
 };
 obj.canCheckClipsFilesExist = function canCheckClipsFilesExist() {
   return "function" === typeof DiscordNative.fileManager.checkClipsFilesExist;
 };
-obj.checkClipsFilesExist = function checkClipsFilesExist(arg0) {
-  const arg1 = arg0;
-  return callback3(async () => {
-    const fileManager = fileManager.fileManager;
-    return yield fileManager.checkClipsFilesExist(closure_0);
+obj.checkClipsFilesExist = function checkClipsFilesExist(outer1_0) {
+  let closure_0 = outer1_0;
+  return callback2(async () => {
+    const fileManager = outer2_6.fileManager;
+    return yield fileManager.checkClipsFilesExist(outer1_0);
   })();
 };
-obj.cleanupUnusedClipsFiles = function cleanupUnusedClipsFiles(arg0) {
-  const arg1 = arg0;
-  return callback3(async () => {
-    const fileManager = fileManager.fileManager;
-    return yield fileManager.cleanupUnusedClipsFiles(closure_0);
+obj.cleanupUnusedClipsFiles = function cleanupUnusedClipsFiles(outer1_0) {
+  let closure_0 = outer1_0;
+  return callback2(async () => {
+    const fileManager = outer2_6.fileManager;
+    return yield fileManager.cleanupUnusedClipsFiles(outer1_0);
   })();
 };
 obj.getClipsDataDirSync = function getClipsDataDirSync() {
@@ -865,28 +867,28 @@ obj.getClipsSentryDirSync = function getClipsSentryDirSync() {
   }
 };
 obj.downloadOpenH264 = function downloadOpenH264(arg0, arg1, arg2, arg3) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
-  let closure_3 = arg3;
-  return callback3(async () => {
-    callback2(closure_2[3])(callback(closure_2[5]).isPlatformEmbedded, "Download OpenH264 file method called outside native app");
-    const tmp = callback2(closure_2[3]);
-    const obj = callback2(closure_2[12]);
-    callback2(closure_2[3])(callback2(closure_2[12]).toURLSafe(callback), "Could not download OpenH264, fileSrc was not a valid path");
-    const fileManager = fileManager.fileManager;
-    return yield fileManager.maybeDownloadOpenH264(closure_0, closure_1, closure_2, closure_3);
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  let _slicedToArray = arg3;
+  return callback2(async () => {
+    callback2(44)(callback(477).isPlatformEmbedded, "Download OpenH264 file method called outside native app");
+    const tmp = callback2(44);
+    const obj = callback2(1443);
+    callback2(44)(callback2(1443).toURLSafe(outer1_0), "Could not download OpenH264, fileSrc was not a valid path");
+    const fileManager = outer2_6.fileManager;
+    return yield fileManager.maybeDownloadOpenH264(outer1_0, outer1_1, outer1_2, outer1_3);
   })();
 };
 obj.cleanupUnusedOpenH264Files = function cleanupUnusedOpenH264Files(items) {
-  const arg1 = items;
-  return callback3(async () => {
-    const fileManager = fileManager.fileManager;
-    return yield fileManager.cleanupUnusedOpenH264Files(closure_0);
+  let closure_0 = items;
+  return callback2(async () => {
+    const fileManager = outer2_6.fileManager;
+    return yield fileManager.cleanupUnusedOpenH264Files(outer1_0);
   })();
 };
 obj.getOpenH264LibraryPath = function getOpenH264LibraryPath() {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     let openH264LibraryPathSync;
     if (null != DiscordNative.fileManager.getOpenH264LibraryPathSync) {
       const fileManager = DiscordNative.fileManager;
@@ -895,19 +897,19 @@ obj.getOpenH264LibraryPath = function getOpenH264LibraryPath() {
     return openH264LibraryPathSync;
   }
 };
-obj.canCopyImage = function canCopyImage(closure_0) {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+obj.canCopyImage = function canCopyImage(outer1_0) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     if ("function" !== typeof DiscordNative.clipboard.copyImage) {
       return false;
     } else {
       if (null != tmp) {
-        const decideFileExtensionResult = arg1(dependencyMap[11]).decideFileExtension(tmp, undefined);
+        const decideFileExtensionResult = require(5145) /* decideFileExtension */.decideFileExtension(tmp, undefined);
         if (null != decideFileExtensionResult) {
           if (!set.has(decideFileExtensionResult)) {
             return false;
           }
         }
-        const obj = arg1(dependencyMap[11]);
+        const obj = require(5145) /* decideFileExtension */;
       }
       return true;
     }
@@ -916,27 +918,27 @@ obj.canCopyImage = function canCopyImage(closure_0) {
   }
 };
 obj.cut = function cut() {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     const clipboard = DiscordNative.clipboard;
     clipboard.cut();
   }
 };
 obj.paste = function paste() {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     const clipboard = DiscordNative.clipboard;
     clipboard.paste();
   }
 };
 obj.readClipboard = function readClipboard() {
   let str = "";
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     const clipboard = DiscordNative.clipboard;
     str = clipboard.read();
   }
   return str;
 };
 obj.clipboardHasMixedContent = function clipboardHasMixedContent() {
-  const tmp = !arg1(dependencyMap[5]).isPlatformEmbedded;
+  const tmp = !require(477) /* set */.isPlatformEmbedded;
   let tmp2 = !tmp;
   if (!tmp) {
     let hasMixedContentResult;
@@ -978,7 +980,7 @@ obj.sendIPC = function sendIPC(APP_BADGE_SET, arg1) {
   ipc.send.apply(items);
 };
 obj.isIPCReady = function isIPCReady() {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     let ipc;
     if (null != DiscordNative) {
       ipc = DiscordNative.ipc;
@@ -998,22 +1000,20 @@ obj.waitForIPCReady = function waitForIPCReady() {
   if (arg0 === undefined) {
     num = 5000;
   }
-  const arg1 = num;
   if (_window === undefined) {
     _window = window;
   }
-  const importDefault = _window;
-  const dependencyMap = this;
-  return callback3(async () => {
+  const self = this;
+  return callback2(async () => {
     const timestamp = Date.now();
-    if (Date.now() - timestamp < closure_0) {
-      while (!iPCReady.isIPCReady()) {
+    if (Date.now() - timestamp < outer1_0) {
+      while (!outer1_2.isIPCReady()) {
         let _Promise = Promise;
         let tmp3 = new.target;
         let tmp4 = new.target;
-        let tmp5 = yield new Promise((loop) => closure_1.requestAnimationFrame(loop));
+        let tmp5 = yield new Promise((loop) => outer2_1.requestAnimationFrame(loop));
         let _Date = Date;
-        let tmp6 = closure_0;
+        let tmp6 = outer1_0;
       }
       return true;
     }
@@ -1024,22 +1024,22 @@ obj.flashFrame = function flashFrame(arg0) {
   const _window = DiscordNative.window;
   _window.flashFrame(arg0);
 };
-obj.webAuthnRegister = function webAuthnRegister(arg0) {
-  const arg1 = arg0;
-  return callback3(async () => {
-    const nativeModules = closure_6.nativeModules;
+obj.webAuthnRegister = function webAuthnRegister(outer1_0) {
+  let closure_0 = outer1_0;
+  return callback2(async () => {
+    const nativeModules = outer2_6.nativeModules;
     yield nativeModules.ensureModule("discord_webauthn");
-    const webAuthn = closure_6.webAuthn;
-    return yield webAuthn.webAuthnRegister(closure_0);
+    const webAuthn = outer2_6.webAuthn;
+    return yield webAuthn.webAuthnRegister(outer1_0);
   })();
 };
-obj.webAuthnAuthenticate = function webAuthnAuthenticate(arg0) {
-  const arg1 = arg0;
-  return callback3(async () => {
-    const nativeModules = closure_6.nativeModules;
+obj.webAuthnAuthenticate = function webAuthnAuthenticate(outer1_0) {
+  let closure_0 = outer1_0;
+  return callback2(async () => {
+    const nativeModules = outer2_6.nativeModules;
     yield nativeModules.ensureModule("discord_webauthn");
-    const webAuthn = closure_6.webAuthn;
-    return yield webAuthn.webAuthnAuthenticate(closure_0);
+    const webAuthn = outer2_6.webAuthn;
+    return yield webAuthn.webAuthnAuthenticate(outer1_0);
   })();
 };
 obj.minimize = function minimize(arg0) {
@@ -1062,8 +1062,8 @@ obj.focus = function focus(arg0) {
   }
   let isWindowsResult = flag;
   if (flag) {
-    isWindowsResult = arg1(dependencyMap[5]).isWindows();
-    const obj = arg1(dependencyMap[5]);
+    isWindowsResult = require(477) /* set */.isWindows();
+    const obj = require(477) /* set */;
   }
   if (isWindowsResult) {
     self.minimize(null);
@@ -1072,7 +1072,7 @@ obj.focus = function focus(arg0) {
   _window.focus(flag, arg0);
 };
 obj.blur = function blur() {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     if (null != DiscordNative.window.blur) {
       const _window = DiscordNative.window;
       _window.blur();
@@ -1089,7 +1089,7 @@ obj.close = function close(arg0) {
   _window.close(arg0);
 };
 obj.clearNavigationHistory = function clearNavigationHistory() {
-  backwardCompatSend(arg1(dependencyMap[10]).IPCEvents.NAVIGATION_HISTORY_CLEAR);
+  backwardCompatSend(require(5144) /* IPCEvents */.IPCEvents.NAVIGATION_HISTORY_CLEAR);
 };
 obj.setAlwaysOnTop = function setAlwaysOnTop(arg0, arg1) {
   if ("function" === typeof DiscordNative.window.setAlwaysOnTop) {
@@ -1097,13 +1097,13 @@ obj.setAlwaysOnTop = function setAlwaysOnTop(arg0, arg1) {
     _window.setAlwaysOnTop(arg0, arg1);
   }
 };
-obj.isAlwaysOnTop = function isAlwaysOnTop(arg0) {
-  const arg1 = arg0;
-  return callback3(async () => {
+obj.isAlwaysOnTop = function isAlwaysOnTop(outer1_0) {
+  let closure_0 = outer1_0;
+  return callback2(async () => {
     let flag = false;
-    if ("function" === typeof closure_6.window.isAlwaysOnTop) {
-      const _window = closure_6.window;
-      flag = yield _window.isAlwaysOnTop(closure_0);
+    if ("function" === typeof outer2_6.window.isAlwaysOnTop) {
+      const _window = outer2_6.window;
+      flag = yield _window.isAlwaysOnTop(outer1_0);
     }
     return flag;
   })();
@@ -1136,15 +1136,15 @@ obj.setMinimumSize = function setMinimumSize(arg0, arg1) {
 };
 obj.setTrafficLightPosition = function setTrafficLightPosition(arg0) {
   const self = this;
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     if ("darwin" === obj.getPlatformName()) {
-      self.sendIPC(arg1(dependencyMap[10]).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
+      self.sendIPC(require(5144) /* IPCEvents */.IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
     }
-    const obj = arg1(dependencyMap[5]);
+    obj = require(477) /* set */;
   }
 };
 obj.purgeMemory = function purgeMemory() {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     const processUtils = DiscordNative.processUtils;
     processUtils.purgeMemory();
   }
@@ -1158,7 +1158,7 @@ obj.triggerJSException = function triggerJSException(arg0) {
   crashReporter.triggerJSException(arg0);
 };
 obj.flushDNSCache = function flushDNSCache() {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     const processUtils = DiscordNative.processUtils;
     processUtils.flushDNSCache();
   }
@@ -1168,7 +1168,7 @@ obj.supportsFeature = function supportsFeature(VIDEO) {
   return features.supports(VIDEO);
 };
 obj.getEnableHardwareAcceleration = function getEnableHardwareAcceleration() {
-  let enableHardwareAcceleration = !arg1(dependencyMap[5]).isPlatformEmbedded;
+  let enableHardwareAcceleration = !require(477) /* set */.isPlatformEmbedded;
   if (!enableHardwareAcceleration) {
     const gpuSettings = DiscordNative.gpuSettings;
     enableHardwareAcceleration = gpuSettings.getEnableHardwareAcceleration();
@@ -1197,16 +1197,16 @@ obj.setChromiumSwitches = function setChromiumSwitches(arg0) {
   gpuSettings.setChromiumSwitches(arg0);
 };
 obj.getOpenOnStart = function getOpenOnStart() {
-  return callback3(async () => {
-    if (null != closure_6.app.getOpenOnStart) {
-      const app = closure_6.app;
+  return callback2(async () => {
+    if (null != outer2_6.app.getOpenOnStart) {
+      const app = outer2_6.app;
       const openOnStart = app.getOpenOnStart();
     }
     const tmp3 = yield openOnStart;
     if (null != tmp3) {
       return tmp3;
     } else {
-      const settings = closure_6.settings;
+      const settings = outer2_6.settings;
       const tmp5 = yield settings.get("OPEN_ON_STARTUP", true);
       return tmp5;
     }
@@ -1224,7 +1224,7 @@ obj.getGPUDriverVersions = function getGPUDriverVersions() {
   gPUDriverVersions = Promise.resolve(Object.freeze({}));
 };
 obj.setZoomFactor = function setZoomFactor(arg0) {
-  const tmp = !arg1(dependencyMap[5]).isPlatformEmbedded;
+  const tmp = !require(477) /* set */.isPlatformEmbedded;
   let flag = !tmp;
   if (!tmp) {
     const _window = DiscordNative.window;
@@ -1322,7 +1322,7 @@ obj.getDesktopSourceFromPid = function getDesktopSourceFromPid(arg0) {
         if (null != windowHandleFromPid) {
           joined = null;
           if (0 !== windowHandleFromPid.length) {
-            const items = [true, windowHandleFromPid, "0"];
+            const items = ["window", windowHandleFromPid, "0"];
             joined = items.join(":");
           }
         }
@@ -1437,9 +1437,9 @@ obj.startCPUProfiling = function startCPUProfiling(arg0) {
   return startCPUProfilingResult;
 };
 obj.stopCPUProfiling = function stopCPUProfiling() {
-  const arg1 = this;
-  return callback3(async () => {
-    const stopCPUProfiling = discordUtils.getDiscordUtils().stopCPUProfiling;
+  const self = this;
+  return callback2(async () => {
+    const stopCPUProfiling = outer1_0.getDiscordUtils().stopCPUProfiling;
     if (null != stopCPUProfiling) {
       const stopCPUProfilingResult = stopCPUProfiling();
     }
@@ -1472,18 +1472,20 @@ obj.showOpenDialog = function showOpenDialog(properties) {
 };
 obj.flushStorageData = function flushStorageData(arg0) {
   let _Promise = Promise;
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
-    const prototype = _Promise.prototype;
+  if (require(477) /* set */.isPlatformEmbedded) {
+    let prototype = _Promise.prototype;
     _Promise = new _Promise((arg0, arg1) => {
-      if (null != closure_6.processUtils.flushStorageData) {
-        const processUtils = closure_6.processUtils;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      if (null != outer1_6.processUtils.flushStorageData) {
+        const processUtils = outer1_6.processUtils;
         processUtils.flushStorageData((arg0) => {
           if (null != arg0) {
             const _Error = Error;
             const error = new Error(arg0);
-            let tmp2 = arg1(error);
+            let tmp2 = callback2(error);
           } else {
-            tmp2 = arg0();
+            tmp2 = callback();
           }
           return tmp2;
         });
@@ -1498,18 +1500,20 @@ obj.flushStorageData = function flushStorageData(arg0) {
 };
 obj.flushCookies = function flushCookies() {
   let _Promise = Promise;
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
-    const prototype = _Promise.prototype;
+  if (require(477) /* set */.isPlatformEmbedded) {
+    let prototype = _Promise.prototype;
     _Promise = new _Promise((arg0, arg1) => {
-      if (null != closure_6.processUtils.flushCookies) {
-        const processUtils = closure_6.processUtils;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      if (null != outer1_6.processUtils.flushCookies) {
+        const processUtils = outer1_6.processUtils;
         processUtils.flushCookies((arg0) => {
           if (null != arg0) {
             const _Error = Error;
             const error = new Error(arg0);
-            let tmp2 = arg1(error);
+            let tmp2 = callback2(error);
           } else {
-            tmp2 = arg0();
+            tmp2 = callback();
           }
           return tmp2;
         });
@@ -1523,7 +1527,7 @@ obj.flushCookies = function flushCookies() {
   return _Promise;
 };
 obj.setCrashInformation = function setCrashInformation(arg0, arg1) {
-  let isPlatformEmbedded = arg1(dependencyMap[5]).isPlatformEmbedded;
+  let isPlatformEmbedded = require(477) /* set */.isPlatformEmbedded;
   if (isPlatformEmbedded) {
     let setCrashInformation;
     if (null != DiscordNative) {
@@ -1541,7 +1545,7 @@ obj.setCrashInformation = function setCrashInformation(arg0, arg1) {
 };
 obj.blockDisplaySleep = function blockDisplaySleep() {
   let blockDisplaySleepResult = null;
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     blockDisplaySleepResult = null;
     if (null != DiscordNative.powerSaveBlocker) {
       const powerSaveBlocker = DiscordNative.powerSaveBlocker;
@@ -1551,7 +1555,7 @@ obj.blockDisplaySleep = function blockDisplaySleep() {
   return blockDisplaySleepResult;
 };
 obj.unblockDisplaySleep = function unblockDisplaySleep(arg0) {
-  let isPlatformEmbedded = arg1(dependencyMap[5]).isPlatformEmbedded;
+  let isPlatformEmbedded = require(477) /* set */.isPlatformEmbedded;
   if (isPlatformEmbedded) {
     isPlatformEmbedded = null != DiscordNative.powerSaveBlocker;
   }
@@ -1561,7 +1565,7 @@ obj.unblockDisplaySleep = function unblockDisplaySleep(arg0) {
   }
 };
 obj.cleanupDisplaySleep = function cleanupDisplaySleep() {
-  let isPlatformEmbedded = arg1(dependencyMap[5]).isPlatformEmbedded;
+  let isPlatformEmbedded = require(477) /* set */.isPlatformEmbedded;
   if (isPlatformEmbedded) {
     isPlatformEmbedded = null != DiscordNative.powerSaveBlocker;
   }
@@ -1571,27 +1575,27 @@ obj.cleanupDisplaySleep = function cleanupDisplaySleep() {
   }
 };
 obj.relaunch = function relaunch() {
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     const app = DiscordNative.app;
     app.relaunch();
   }
 };
 obj.makeChunkedRequest = function makeChunkedRequest(closure_0, array, arg2, arg3) {
   let chunkInterval;
-  let obj = callback(dependencyMap[13]);
-  const callback = "" + obj.getAPIBaseURL() + closure_0;
-  if (callback(dependencyMap[5]).isPlatformEmbedded) {
+  let dependencyMap;
+  let importDefault;
+  let obj = _require(507);
+  _require = "" + obj.getAPIBaseURL() + closure_0;
+  if (_require(477).isPlatformEmbedded) {
     if (null == DiscordNative.http) {
       const _Error2 = Error;
-      const error = new Error("HTTP module not available");
+      let error = new Error("HTTP module not available");
       return Promise.reject(error);
     } else {
-      obj = { "Bool(true)": null, "Bool(true)": "b845947570ae5a0cc8ded11809e80b37", "Bool(true)": "ic_loading_emoji_light" };
+      obj = { maxBps: 8000, chunkInterval: 50, contentType: "application/json" };
       const merged = Object.assign(arg2);
-      ({ method: closure_1, token: closure_2, chunkInterval } = obj);
-      let closure_3 = chunkInterval;
+      ({ method: importDefault, token: dependencyMap, chunkInterval } = obj);
       const contentType = obj.contentType;
-      let closure_4 = contentType;
       let json = array;
       if ("application/json" === contentType) {
         const _JSON = JSON;
@@ -1602,24 +1606,24 @@ obj.makeChunkedRequest = function makeChunkedRequest(closure_0, array, arg2, arg
       const rounded = Math.ceil(json.length / result);
       const _Array = Array;
       array = new Array(rounded);
-      const NativeFeatures = array;
       for (let num2 = 0; num2 < rounded; num2 = num2 + 1) {
         let result1 = num2 * result;
         array[num2] = json.substring(result1, result1 + result);
       }
       const promise = new Promise((closure_0) => {
-        if (null != closure_6.http) {
-          const http = closure_6.http;
-          const obj = { method: arg1, chunkInterval, contentType, token: closure_2 };
+        let closure_1 = arg1;
+        if (null != outer1_6.http) {
+          const http = outer1_6.http;
+          const obj = { method: closure_1, chunkInterval, contentType, token: closure_2 };
           const chunkedRequest = http.makeChunkedRequest(closure_0, array, obj, (arg0, status) => {
             if (null != arg0) {
-              let tmp3 = status(arg0);
+              let tmp3 = callback2(arg0);
             } else if (status.status >= 400) {
               const _Error = Error;
               const error = new Error(status.body);
-              tmp3 = status(error);
+              tmp3 = callback2(error);
             } else {
-              arg0(status);
+              callback(status);
             }
             return tmp3;
           });
@@ -1628,14 +1632,14 @@ obj.makeChunkedRequest = function makeChunkedRequest(closure_0, array, arg2, arg
       return promise;
     }
   } else {
-    const _Error = Error;
+    let _Error = Error;
     const error1 = new Error("Not embedded!");
     return Promise.reject(error1);
   }
 };
 obj.submitLiveCrashReport = function submitLiveCrashReport(arg0) {
   const self = this;
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(477) /* set */;
   if (obj.isWindows()) {
     if (null != self.getDiscordUtils().submitLiveCrashReport) {
       const crashReporterMetadata = self.getCrashReporterMetadata();
@@ -1664,7 +1668,7 @@ obj.crash = function crash(arg0) {
   return flag;
 };
 obj.setApplicationBackgroundColor = function setApplicationBackgroundColor(arg0) {
-  this.sendIPC(arg1(dependencyMap[10]).IPCEvents.SETTINGS_UPDATE_BACKGROUND_COLOR, arg0);
+  this.sendIPC(require(5144) /* IPCEvents */.IPCEvents.SETTINGS_UPDATE_BACKGROUND_COLOR, arg0);
 };
 obj.initializeExitHook = function initializeExitHook() {
   const initializeExitHook = this.getDiscordUtils().initializeExitHook;
@@ -1685,9 +1689,9 @@ obj.pollQueueMetrics = function pollQueueMetrics(arg0) {
   }
 };
 obj.asyncify = function asyncify(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return new Promise((arg0) => {
-    arg0(arg0);
+    callback(arg0);
   });
 };
 obj.IsGameDisplayModeUpdateSupported = function IsGameDisplayModeUpdateSupported() {
@@ -1729,7 +1733,7 @@ obj.GetWindowFullscreenTypeByPid = function GetWindowFullscreenTypeByPid(arg0, a
     UNKNOWN = windowFullscreenTypeByPid;
   }
   if (null == UNKNOWN) {
-    UNKNOWN = arg1(dependencyMap[4]).RunningProcessFullscreenType.UNKNOWN;
+    UNKNOWN = require(4062) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
   }
   return UNKNOWN;
 };
@@ -1741,7 +1745,7 @@ obj.GetWindowFullscreenTypeExtraByPid = function GetWindowFullscreenTypeExtraByP
     }
     return windowFullscreenTypeExtraByPid;
   }
-  windowFullscreenTypeExtraByPid = { quns: arg1(dependencyMap[4]).QueryUserNotificationState.QUNS_UNKNOWN };
+  windowFullscreenTypeExtraByPid = { quns: require(4062) /* GuildThemeSourcePreference */.QueryUserNotificationState.QUNS_UNKNOWN };
 };
 obj.SetGPUBoostEnabledByPid = function SetGPUBoostEnabledByPid(arg0, arg1) {
   const setGPUBoostEnabledByPid = this.getDiscordUtils().setGPUBoostEnabledByPid;
@@ -1760,31 +1764,32 @@ obj.SetSystemServicePerformanceMonitorEnabled = function SetSystemServicePerform
   return result;
 };
 obj.GetSystemServicePerformanceMonitorSnapshot = function GetSystemServicePerformanceMonitorSnapshot(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const getSystemServicePerformanceMonitorSnapshot = this.getDiscordUtils().getSystemServicePerformanceMonitorSnapshot;
-  const dependencyMap = getSystemServicePerformanceMonitorSnapshot;
   if (null == getSystemServicePerformanceMonitorSnapshot) {
-    const SystemServiceNotAvailableError = arg1(dependencyMap[14]).SystemServiceNotAvailableError;
+    const SystemServiceNotAvailableError = _require(getSystemServicePerformanceMonitorSnapshot[14]).SystemServiceNotAvailableError;
     const prototype3 = SystemServiceNotAvailableError.prototype;
     const systemServiceNotAvailableError = new SystemServiceNotAvailableError();
     return Promise.reject(systemServiceNotAvailableError);
   } else {
     let promise = new Promise((arg0, arg1) => {
-      arg0 = arg1;
+      let closure_0 = arg1;
       const timeout = setTimeout(() => {
         const error = new Error("Timed out waiting for performance snapshot");
-        return arg1(error);
+        return callback(error);
       }, 1000);
     });
     promise = new Promise((arg0, arg1) => {
-      getSystemServicePerformanceMonitorSnapshot(arg0, (arg0) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      getSystemServicePerformanceMonitorSnapshot(closure_0, (arg0) => {
         if ("null" !== arg0) {
           const _JSON = JSON;
-          arg0(JSON.parse(arg0));
+          callback(JSON.parse(arg0));
         } else {
           const _Error = Error;
           const error = new Error("Performance snapshot not available");
-          arg1(error);
+          callback2(error);
         }
       });
     });
@@ -1892,7 +1897,7 @@ obj.isModuleVersionAtLeast = function isModuleVersionAtLeast(arg0, stable) {
   let tmp8;
   let tmp9;
   const self = this;
-  const items = [...null != closure_9 ? closure_9 : []];
+  const items = [...null != closure_9 ? closure_9 : [0, 0, 0]];
   const moduleVersions = self.moduleVersions;
   let tmp2;
   if (null != moduleVersions) {
@@ -1910,7 +1915,7 @@ obj.isModuleVersionAtLeast = function isModuleVersionAtLeast(arg0, stable) {
   const tmp5 = _createForOfIteratorHelperLoose(items.entries());
   let iter = tmp5();
   if (!iter.done) {
-    [tmp8, tmp9] = callback2(iter.value, 2);
+    [tmp8, tmp9] = callback(iter.value, 2);
     while (tmp9 <= stable[tmp8]) {
       if (tmp9 < stable[tmp8]) {
         let flag = false;
@@ -1929,7 +1934,7 @@ obj.fetchRiotGamesLiveClientData = function fetchRiotGamesLiveClientData(arg0) {
   if (arg1 === undefined) {
     obj = {};
   }
-  if (arg1(dependencyMap[5]).isPlatformEmbedded) {
+  if (require(477) /* set */.isPlatformEmbedded) {
     if (null == DiscordNative.riotGames) {
       const _Error2 = Error;
       const error = new Error("Riot Games module not available");
@@ -1949,7 +1954,7 @@ obj.appViewed = function appViewed() {
   if (obj.isDesktop()) {
     const _performance = performance;
     performance.mark("app_viewed");
-    self.sendIPC(arg1(dependencyMap[10]).IPCEvents.APP_VIEWED);
+    self.sendIPC(require(5144) /* IPCEvents */.IPCEvents.APP_VIEWED);
   }
 };
 obj.appFirstRenderAfterReadyPayload = function appFirstRenderAfterReadyPayload(arg0) {
@@ -1957,25 +1962,25 @@ obj.appFirstRenderAfterReadyPayload = function appFirstRenderAfterReadyPayload(a
   if (obj.isDesktop()) {
     const _performance = performance;
     performance.mark("app_first_render_after_ready_payload");
-    self.sendIPC(arg1(dependencyMap[10]).IPCEvents.APP_FIRST_RENDER_AFTER_READY_PAYLOAD, arg0);
+    self.sendIPC(require(5144) /* IPCEvents */.IPCEvents.APP_FIRST_RENDER_AFTER_READY_PAYLOAD, arg0);
   }
 };
 obj.appLoaded = function appLoaded() {
-  backwardCompatSend(arg1(dependencyMap[10]).IPCEvents.APP_LOADED);
+  backwardCompatSend(require(5144) /* IPCEvents */.IPCEvents.APP_LOADED);
 };
 obj.indexLoadedAsync = function indexLoadedAsync() {
-  backwardCompatSend(arg1(dependencyMap[10]).IPCEvents.APP_ASYNC_INDEX_TSX_LOADED);
+  backwardCompatSend(require(5144) /* IPCEvents */.IPCEvents.APP_ASYNC_INDEX_TSX_LOADED);
 };
 obj.setUseRequireModuleCache = function setUseRequireModuleCache(arg0) {
   let closure_13 = arg0;
 };
 obj.GetSystemGpuStats = function GetSystemGpuStats(arg0) {
-  const arg1 = arg0;
-  const importDefault = this;
-  return callback3(async () => {
-    if (callback(closure_2[5]).isPlatformEmbedded) {
-      yield closure_1.ensureModule("discord_media");
-      const requireModuleResult = closure_1.requireModule("discord_media");
+  let closure_0 = arg0;
+  const self = this;
+  return callback2(async () => {
+    if (callback(outer2_2[5]).isPlatformEmbedded) {
+      yield outer1_1.ensureModule("discord_media");
+      const requireModuleResult = outer1_1.requireModule("discord_media");
       let getGpuStats;
       if (null != requireModuleResult) {
         getGpuStats = requireModuleResult.getGpuStats;
@@ -1983,7 +1988,7 @@ obj.GetSystemGpuStats = function GetSystemGpuStats(arg0) {
       if (null == getGpuStats) {
         let items = [];
       } else {
-        const gpuStats = requireModuleResult.getGpuStats(callback);
+        const gpuStats = requireModuleResult.getGpuStats(outer1_0);
         items = gpuStats.catch(() => []);
       }
       return items;
@@ -1992,7 +1997,7 @@ obj.GetSystemGpuStats = function GetSystemGpuStats(arg0) {
     }
   })();
 };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("utils/web/DesktopNativeUtils.tsx");
+let result = set.fileFinishedImporting("utils/web/DesktopNativeUtils.tsx");
 
 export default obj;
 export const SaveImageResult = obj;

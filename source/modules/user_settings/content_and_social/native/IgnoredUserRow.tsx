@@ -1,20 +1,24 @@
-// Module ID: 13598
-// Function ID: 103045
+// Module ID: 13712
+// Function ID: 105201
 // Name: handleUnignoreUser
-// Dependencies: []
+// Dependencies: [31, 1849, 33, 8923, 5464, 5165, 1273, 1212, 8492, 4543, 566, 2]
 // Exports: default
 
-// Module 13598 (handleUnignoreUser)
-function handleUnignoreUser(closure_3) {
-  importDefault(dependencyMap[3]).unignoreUser(closure_3, "ignored-users-list-mobile");
+// Module 13712 (handleUnignoreUser)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+function handleUnignoreUser(id) {
+  importDefault(8923).unignoreUser(id, "ignored-users-list-mobile");
 }
 function IgnoredUserRow(userRecord) {
   userRecord = userRecord.userRecord;
-  const arg1 = userRecord;
-  const importDefault = importDefault(dependencyMap[4])().analyticsLocations;
-  let obj = {};
-  obj = { source: userRecord.getAvatarSource(undefined), size: arg1(dependencyMap[6]).AvatarSizes.REFRESH_MEDIUM_32 };
-  obj.icon = jsx(arg1(dependencyMap[6]).Avatar, obj);
+  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
+  let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button" };
+  obj = { source: userRecord.getAvatarSource(undefined), size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 };
+  obj.icon = jsx(userRecord(1273).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 });
   let tmp2 = null != userRecord;
   if (tmp2) {
     let username = userRecord.globalName;
@@ -38,41 +42,38 @@ function IgnoredUserRow(userRecord) {
   }
   obj.subLabel = tmp4;
   obj = { name: "unignore" };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.label = intl.string(arg1(dependencyMap[7]).t.8wXU9B);
+  const intl = userRecord(1212).intl;
+  obj.label = intl.string(userRecord(1212).t["8wXU9B"]);
   const items = [obj];
   obj.accessibilityActions = items;
   obj.onAccessibilityAction = function onAccessibilityAction(nativeEvent) {
     if ("unignore" === nativeEvent.nativeEvent.actionName) {
-      callback(userRecord.id);
+      outer1_5(userRecord.id);
     }
   };
   obj.onPress = function onPress() {
-    return analyticsLocations(closure_2[8])({ userId: userRecord.id, sourceAnalyticsLocations: analyticsLocations });
+    return analyticsLocations(outer1_2[8])({ userId: userRecord.id, sourceAnalyticsLocations: analyticsLocations });
   };
-  const obj1 = {};
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj1.text = intl2.string(arg1(dependencyMap[7]).t.3GZE6a);
+  const obj1 = { size: "sm", variant: "secondary" };
+  const intl2 = userRecord(1212).intl;
+  obj1.text = intl2.string(userRecord(1212).t["3GZE6a"]);
   obj1.onPress = function onPress() {
-    callback(userRecord.id);
+    outer1_5(userRecord.id);
   };
-  obj.trailing = jsx(arg1(dependencyMap[9]).Button, obj1);
-  return jsx(arg1(dependencyMap[5]).TableRow, obj);
+  obj.trailing = jsx(userRecord(4543).Button, { size: "sm", variant: "secondary" });
+  return jsx(userRecord(5165).TableRow, { name: "unignore" });
 }
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUserRow.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUserRow.tsx");
 
 export default function ConnectedIgnoredUserRow(userId) {
-  const arg1 = userId.userId;
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => user.getUser(userId));
+  userId = userId.userId;
+  let obj = userId(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getUser(userId));
   let tmp2 = null;
   if (null != stateFromStores) {
     obj = { userRecord: stateFromStores };
-    tmp2 = <IgnoredUserRow {...obj} />;
+    tmp2 = <IgnoredUserRow userRecord={stateFromStores} />;
   }
   return tmp2;
 };

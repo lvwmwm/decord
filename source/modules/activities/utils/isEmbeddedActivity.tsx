@@ -1,14 +1,14 @@
-// Module ID: 6977
-// Function ID: 55761
+// Module ID: 6982
+// Function ID: 55795
 // Name: isEmbeddedActivity
-// Dependencies: []
+// Dependencies: [653, 5689, 2]
 // Exports: default
 
-// Module 6977 (isEmbeddedActivity)
-const ActivityFlags = require(dependencyMap[0]).ActivityFlags;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/activities/utils/isEmbeddedActivity.tsx");
+// Module 6982 (isEmbeddedActivity)
+import { ActivityFlags } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/activities/utils/isEmbeddedActivity.tsx");
 
 export default function isEmbeddedActivity(arg0) {
-  return importDefault(dependencyMap[1])(arg0, ActivityFlags.EMBEDDED);
+  return importDefault(5689)(arg0, ActivityFlags.EMBEDDED);
 };

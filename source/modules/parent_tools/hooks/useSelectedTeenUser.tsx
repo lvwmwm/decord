@@ -1,51 +1,52 @@
-// Module ID: 13682
-// Function ID: 103567
+// Module ID: 13796
+// Function ID: 105723
 // Name: useSelectedTeenUser
-// Dependencies: []
+// Dependencies: [1849, 6772, 6769, 7124, 624, 2]
 // Exports: useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 13682 (useSelectedTeenUser)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeenUser.tsx");
+// Module 13796 (useSelectedTeenUser)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeenUser.tsx");
 
 export const useSelectedTeenUser = function useSelectedTeenUser() {
-  const callback = importDefault(dependencyMap[3])();
-  const items = [closure_5, closure_3];
-  return callback(dependencyMap[4]).useStateFromStores(items, () => {
+  const _require = importDefault(7124)();
+  const items = [closure_5, _isNativeReflectConstruct];
+  return _require(624).useStateFromStores(items, () => {
     if (true !== closure_0) {
-      return authStore.getCurrentUser();
+      return outer1_3.getCurrentUser();
     } else {
-      const selectedTeenId = selectedTeenId.getSelectedTeenId();
+      const selectedTeenId = outer1_5.getSelectedTeenId();
       let user;
       if (null !== selectedTeenId) {
-        user = authStore.getUser(selectedTeenId);
+        user = outer1_3.getUser(selectedTeenId);
       }
       return user;
     }
   });
 };
 export const useTeenUserForId = function useTeenUserForId(gifterUserId) {
-  const arg1 = gifterUserId;
-  const items = [closure_3];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
-    const user = user.getUser(arg0);
+  const _require = gifterUserId;
+  const items = [_isNativeReflectConstruct];
+  return _require(624).useStateFromStores(items, () => {
+    const user = outer1_3.getUser(closure_0);
     return null != user ? user : undefined;
   });
 };
 export const useShouldLoadSettingsForSelectedTeenUser = function useShouldLoadSettingsForSelectedTeenUser() {
-  const selectedTeenId = selectedTeenId.getSelectedTeenId();
-  const arg1 = selectedTeenId;
+  selectedTeenId = selectedTeenId.getSelectedTeenId();
   const items = [closure_4];
-  const stateFromStoresObject = arg1(dependencyMap[4]).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = selectedTeenId(624).useStateFromStoresObject(items, () => {
     const obj = {};
     let hasSettingsForUserResult = null != selectedTeenId;
     if (hasSettingsForUserResult) {
-      hasSettingsForUserResult = closure_4.hasSettingsForUser(selectedTeenId);
+      hasSettingsForUserResult = outer1_4.hasSettingsForUser(selectedTeenId);
     }
     obj.hasLoadedSettings = hasSettingsForUserResult;
-    obj.isLoading = closure_4.isLoading;
+    obj.isLoading = outer1_4.isLoading;
     return obj;
   });
   let tmp4 = null !== selectedTeenId;

@@ -1,34 +1,36 @@
-// Module ID: 13589
-// Function ID: 103007
+// Module ID: 13703
+// Function ID: 105163
 // Name: route
-// Dependencies: [890699776, 79429632, 335413248, 270270464, 360448000, 891158528, 37093376, 131072, 3899981824]
+// Dependencies: [3767, 7662, 653, 566, 1212, 10095, 10424, 13704, 2]
 
-// Module 13589 (route)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[5]);
-obj = {
+// Module 13703 (route)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.string(arg1(dependencyMap[4]).t.PFOUKW);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.PFOUKW);
   },
   useDescription: function useAccountBlockedUsersSettingDescription() {
-    const items = [closure_2];
-    const numberOfBlockedUsers = arg1(dependencyMap[3]).useStateFromStores(items, () => "" + blockedIDs.getBlockedIDs().length);
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.format(arg1(dependencyMap[4]).t.r91W/h, { numberOfBlockedUsers });
+    const items = [_isNativeReflectConstruct];
+    const numberOfBlockedUsers = require(566) /* initialize */.useStateFromStores(items, () => "" + outer1_2.getBlockedIDs().length);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.format(require(1212) /* getSystemLocale */.t["r91W/h"], { numberOfBlockedUsers });
   },
-  IconComponent: arg1(dependencyMap[6]).DenyIcon,
-  parent: arg1(dependencyMap[1]).MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
-  screen: obj
+  IconComponent: require("DenyIcon").DenyIcon,
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[2]).UserSettingsSections.BLOCKED_USERS_V2,
+createToggle = {
+  route: require("ME").UserSettingsSections.BLOCKED_USERS_V2,
   getComponent() {
-    return arg1(dependencyMap[7]).default;
+    return require(13704) /* BlockedUsersList */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/defs/native/AccountBlockedUsersSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AccountBlockedUsersSetting.tsx");
 
-export default route;
-export const AccountBlockedUsersSettingV2 = route;
+export default createToggle;
+export const AccountBlockedUsersSettingV2 = createToggle;

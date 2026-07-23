@@ -1,52 +1,57 @@
-// Module ID: 6746
-// Function ID: 52504
+// Module ID: 6751
+// Function ID: 52536
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 57, 6752, 4276, 21, 3747, 3764, 2]
 
-// Module 6746 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6751 (_createForOfIteratorHelperLoose)
+import isCommunicationDisabled from "isCommunicationDisabled";
+import getAutomodQuarantinedProfileFlags from "getAutomodQuarantinedProfileFlags";
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,7 +89,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getDefaultSearchState() {
-  const obj = { selectedRoleIds: new Set(), selectedJoinDateOption: { <string:3023162607>: true, <string:2937120107>: true, <string:2781144925>: true }, selectedAccountAgeOption: { <string:3023162607>: true, <string:2937120107>: true, <string:2781144925>: true }, selectedJoinSourceType: undefined, selectedSourceInviteCode: undefined, selectedSort: undefined };
+  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: undefined, selectedSourceInviteCode: undefined, selectedSort: undefined };
   return obj;
 }
 function hasStringMatch(str, str2) {
@@ -95,21 +100,17 @@ function hasStringMatch(str, str2) {
   }
   return hasItem;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
 let closure_6 = Object.freeze(getDefaultSearchState());
-const tmp2 = () => {
+let tmp2 = (() => {
   class GuildMemberSafetySearch {
     constructor(arg0) {
-      tmp = closure_3(this, GuildMemberSafetySearch);
+      tmp = outer1_3(this, GuildMemberSafetySearch);
       this.guildId = arg0;
-      this._searchState = closure_9();
+      this._searchState = outer1_9();
       this.hasDefaultQuery = true;
       return;
     }
   }
-  const arg1 = GuildMemberSafetySearch;
   let obj = {
     key: "requiresUsernameMatch",
     get() {
@@ -120,7 +121,7 @@ const tmp2 = () => {
   obj = {
     key: "reset",
     value() {
-      this._searchState = callback5();
+      this._searchState = outer1_9();
       this.hasDefaultQuery = true;
     }
   };
@@ -131,7 +132,7 @@ const tmp2 = () => {
       const merged = Object.assign(this._searchState);
       const merged1 = Object.assign(arg0);
       this._searchState = {};
-      this.hasDefaultQuery = callback(closure_2[4])(this._searchState, closure_6);
+      this.hasDefaultQuery = outer1_1(outer1_2[4])(this._searchState, outer1_6);
       return true;
     }
   };
@@ -142,7 +143,7 @@ const tmp2 = () => {
       const self = this;
       let flag = !this.hasDefaultQuery;
       if (flag) {
-        self._searchState = callback5();
+        self._searchState = outer1_9();
         self.hasDefaultQuery = true;
         flag = true;
       }
@@ -175,26 +176,26 @@ const tmp2 = () => {
       if (tmp) {
         let flag = false;
         if ("" !== query.trim()) {
-          const tmp46 = callback3(GuildMemberSafetySearch(closure_2[3]).splitQuery(query), 2);
+          const tmp46 = outer1_5(GuildMemberSafetySearch(outer1_2[3]).splitQuery(query), 2);
           const first = tmp46[0];
-          const tmp49 = callback4(tmp46[1]);
+          const tmp49 = outer1_7(tmp46[1]);
           let iter7 = tmp49();
           if (iter7.done) {
-            const tmp3 = callback4(first);
+            const tmp3 = outer1_7(first);
             let iter = tmp3();
             if (iter.done) {
               flag = false;
               if (null != user.user) {
                 ({ globalName, username } = user.user);
-                const tmp7 = callback4(first);
+                const tmp7 = outer1_7(first);
                 let iter3 = tmp7();
                 if (iter3.done) {
-                  const tmp10 = callback4(first);
+                  const tmp10 = outer1_7(first);
                   let iter5 = tmp10();
                   flag = false;
                   if (!iter5.done) {
                     flag = true;
-                    while (!callback6(globalName, iter5.value)) {
+                    while (!outer1_10(globalName, iter5.value)) {
                       let iter6 = tmp10();
                       iter5 = iter6;
                       flag = false;
@@ -205,7 +206,7 @@ const tmp2 = () => {
                   }
                 } else {
                   flag = true;
-                  while (!callback6(username, iter3.value)) {
+                  while (!outer1_10(username, iter3.value)) {
                     let iter4 = tmp7();
                     iter3 = iter4;
                     break;
@@ -214,7 +215,7 @@ const tmp2 = () => {
               }
             } else {
               flag = true;
-              while (!callback6(user.nick, iter.value)) {
+              while (!outer1_10(user.nick, iter.value)) {
                 let iter2 = tmp3();
                 iter = iter2;
                 break;
@@ -228,7 +229,7 @@ const tmp2 = () => {
               break;
             }
           }
-          const obj5 = GuildMemberSafetySearch(closure_2[3]);
+          const obj5 = GuildMemberSafetySearch(outer1_2[3]);
         }
         tmp = !flag;
       }
@@ -236,18 +237,19 @@ const tmp2 = () => {
       if (!tmp) {
         let tmp13 = selectedRoleIds.size > 0;
         if (tmp13) {
-          tmp13 = !function hasSelectedRole(user, selectedRoleIds) {
+          tmp13 = !(function hasSelectedRole(user, selectedRoleIds) {
+            let closure_0 = user;
             let everyResult = 0 !== selectedRoleIds.size;
             if (everyResult) {
               const _Array = Array;
               everyResult = Array.from(selectedRoleIds).every((arg0) => {
-                const roles = arg0.roles;
+                const roles = user.roles;
                 return roles.includes(arg0);
               });
               const arr = Array.from(selectedRoleIds);
             }
             return everyResult;
-          }(user, selectedRoleIds);
+          })(user, selectedRoleIds);
         }
         let tmp14 = !tmp13;
         if (!tmp13) {
@@ -257,15 +259,15 @@ const tmp2 = () => {
             if (!(null != selectedJoinDateOption.beforeDate && user.joinedAtTimestamp > selectedJoinDateOption.beforeDate)) {
               let tmp20 = null != selectedAccountAgeOption.afterDate;
               if (tmp20) {
-                tmp20 = callback(closure_2[5]).extractTimestamp(user.userId) < selectedAccountAgeOption.afterDate;
-                const obj = callback(closure_2[5]);
+                tmp20 = outer1_1(outer1_2[5]).extractTimestamp(user.userId) < selectedAccountAgeOption.afterDate;
+                const obj = outer1_1(outer1_2[5]);
               }
               let tmp23 = !tmp20;
               if (!tmp20) {
                 let tmp24 = null != selectedAccountAgeOption.beforeDate;
                 if (tmp24) {
-                  tmp24 = callback(closure_2[5]).extractTimestamp(user.userId) > selectedAccountAgeOption.beforeDate;
-                  const obj2 = callback(closure_2[5]);
+                  tmp24 = outer1_1(outer1_2[5]).extractTimestamp(user.userId) > selectedAccountAgeOption.beforeDate;
+                  const obj2 = outer1_1(outer1_2[5]);
                 }
                 let tmp27 = !tmp24;
                 if (!tmp24) {
@@ -289,8 +291,8 @@ const tmp2 = () => {
                         if (!requireUnusualDmActivity || !user.hasUnusualDmActivity) {
                           let tmp34 = !requireCommunicationDisabled;
                           if (!tmp34) {
-                            tmp34 = !GuildMemberSafetySearch(closure_2[6]).isMemberCommunicationDisabled(user);
-                            const obj3 = GuildMemberSafetySearch(closure_2[6]);
+                            tmp34 = !GuildMemberSafetySearch(outer1_2[6]).isMemberCommunicationDisabled(user);
+                            const obj3 = GuildMemberSafetySearch(outer1_2[6]);
                           }
                           let tmp37 = !tmp34;
                           if (tmp34) {
@@ -298,8 +300,8 @@ const tmp2 = () => {
                             if (!requireUnusualAccountActivity || !user.hasUnusualAccountActivity) {
                               let tmp40 = !requireUsernameQuarantined;
                               if (!tmp40) {
-                                tmp40 = !GuildMemberSafetySearch(closure_2[7]).hasAutomodQuarantinedProfile(user);
-                                const obj4 = GuildMemberSafetySearch(closure_2[7]);
+                                tmp40 = !GuildMemberSafetySearch(outer1_2[7]).hasAutomodQuarantinedProfile(user);
+                                const obj4 = GuildMemberSafetySearch(outer1_2[7]);
                               }
                               tmp39 = !tmp40;
                             }
@@ -329,8 +331,8 @@ const tmp2 = () => {
     }
   };
   return callback(GuildMemberSafetySearch, items);
-}();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearch.tsx");
+})();
+const result = require("_slicedToArray").fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearch.tsx");
 
 export { getDefaultSearchState };
 export const GuildMemberSafetySearch = tmp2;

@@ -1,53 +1,55 @@
 // Module ID: 1903
-// Function ID: 21364
+// Function ID: 21365
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 483, 2]
 // Exports: deserializeChannel, deserializeChannelEntries
 
 // Module 1903 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importAll = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import _slicedToArray from "_slicedToArray";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importAll = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -96,12 +98,13 @@ function deserializeChannels(arg0) {
         for (const key10012 in permissionOverwrites_) {
           let tmp3 = key10012;
           let tmp4 = permissionOverwrites_[key10012];
-          let tmp5 = closure_0;
-          let tmp6 = closure_1;
-          let obj = closure_0(closure_1[1]);
+          let tmp5 = importAll;
+          let tmp6 = dependencyMap;
+          let obj = importAll(483);
           tmp4.allow = obj.deserialize(tmp4.allow);
-          let obj2 = closure_0(closure_1[1]);
+          let obj2 = importAll(483);
           tmp4.deny = obj2.deserialize(tmp4.deny);
+          continue;
         }
       }
       iter2 = tmp();
@@ -109,8 +112,7 @@ function deserializeChannels(arg0) {
     } while (!iter2.done);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/cache/deserializeChannels.tsx");
+const result = require("set").fileFinishedImporting("modules/cache/deserializeChannels.tsx");
 
 export default deserializeChannels;
 export const deserializeChannelEntries = function deserializeChannelEntries(guildChannels) {
@@ -119,11 +121,11 @@ export const deserializeChannelEntries = function deserializeChannelEntries(guil
   let iter = tmp();
   if (!iter.done) {
     do {
-      let tmp2 = closure_2;
-      let tmp3 = closure_2(iter.value, 2);
+      let tmp2 = callback;
+      let tmp3 = callback(iter.value, 2);
       let first = tmp3[0];
-      let tmp5 = closure_5;
-      let tmp6 = closure_5(tmp3[1]);
+      let tmp5 = deserializeChannels;
+      let tmp6 = deserializeChannels(tmp3[1]);
       let iter2 = tmp();
       iter = iter2;
       done = iter2.done;
@@ -136,12 +138,13 @@ export const deserializeChannel = function deserializeChannel(permissionOverwrit
     for (const key10007 in permissionOverwrites_) {
       let tmp2 = key10007;
       let tmp3 = permissionOverwrites_[key10007];
-      let tmp4 = closure_0;
-      let tmp5 = closure_1;
-      let obj = closure_0(closure_1[1]);
+      let tmp4 = importAll;
+      let tmp5 = dependencyMap;
+      let obj = importAll(483);
       tmp3.allow = obj.deserialize(tmp3.allow);
-      let obj2 = closure_0(closure_1[1]);
+      let obj2 = importAll(483);
       tmp3.deny = obj2.deserialize(tmp3.deny);
+      continue;
     }
   }
   return permissionOverwrites_;

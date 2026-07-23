@@ -1,5 +1,5 @@
 // Module ID: 937
-// Function ID: 10140
+// Function ID: 10141
 // Name: truncateTextByBytes
 // Dependencies: []
 
@@ -17,8 +17,8 @@ function truncateTextByBytes(content, diff) {
         let _Math = Math;
         let rounded = Math.floor((num4 + length) / 2);
         let substr = content.slice(0, rounded);
-        let tmp4 = closure_0;
-        if (closure_0(substr) <= diff) {
+        let tmp4 = utf8Bytes;
+        if (utf8Bytes(substr) <= diff) {
           num4 = rounded + 1;
           diff = length;
           str = substr;
@@ -174,10 +174,10 @@ function truncateSingleMessage(content, arg1) {
       }
       if (!tmp3) {
         if (isPartsMessage(content)) {
-          let items = function truncatePartsMessage(parts, arg1) {
+          let items = (function truncatePartsMessage(parts, arg1) {
             parts = parts.parts;
-            let obj = { parts: parts.map((arg0) => callback(arg0, "")) };
-            const diff = arg1 - callback(Object.assign({}, parts, obj));
+            let obj = { parts: parts.map((arg0) => outer2_6(arg0, "")) };
+            const diff = arg1 - outer1_1(Object.assign({}, parts, obj));
             let diff1 = diff;
             if (diff <= 0) {
               return [];
@@ -185,11 +185,11 @@ function truncateSingleMessage(content, arg1) {
               const items = [];
               for (const item10024 of parts) {
                 let tmp21 = item10024;
-                let tmp22 = closure_5;
-                let tmp23 = closure_5(item10024);
-                let tmp25 = closure_0;
+                let tmp22 = outer1_5;
+                let tmp23 = outer1_5(item10024);
+                let tmp25 = outer1_0;
                 let tmp24 = tmp23;
-                let tmp26 = closure_0(tmp23);
+                let tmp26 = outer1_0(tmp23);
                 let tmp28 = diff1;
                 if (tmp26 <= diff1) {
                   let tmp14 = items;
@@ -198,26 +198,26 @@ function truncateSingleMessage(content, arg1) {
                   let tmp17 = diff1;
                   let tmp18 = tmp26;
                   diff1 = diff1 - tmp27;
-                  // continue
+                  continue;
                 } else {
                   let tmp3 = items;
                   if (0 === items.length) {
-                    let tmp4 = closure_4;
+                    let tmp4 = outer1_4;
                     let tmp5 = tmp23;
                     let tmp6 = diff1;
-                    let tmp7 = closure_4(tmp24, diff1);
+                    let tmp7 = outer1_4(tmp24, diff1);
                     if (tmp7) {
                       let tmp9 = items;
-                      let tmp10 = closure_6;
+                      let tmp10 = outer1_6;
                       let tmp11 = item10024;
                       let tmp12 = tmp7;
-                      arr = items.push(closure_6(tmp21, tmp8));
+                      arr = items.push(outer1_6(tmp21, tmp8));
                     }
                     obj3.return();
-                    // break
+                    break;
                   } else {
                     obj3.return();
-                    // break
+                    break;
                   }
                   break;
                 }
@@ -232,14 +232,14 @@ function truncateSingleMessage(content, arg1) {
                 return items1;
               }
             }
-          }(content, 20000);
+          })(content, 20000);
         } else {
           items = [];
         }
       }
-      const _Object = Object;
+      let _Object = Object;
       let obj = { content: "" };
-      const diff = 20000 - jsonBytes(Object.assign({}, content, obj));
+      let diff = 20000 - jsonBytes(Object.assign({}, content, obj));
       if (diff <= 0) {
         let items1 = [];
       } else {
@@ -258,20 +258,20 @@ function stripInlineMediaFromSingleMessage(source) {
   }
   if (hasInlineData(source)) {
     const _Object = Object;
-    const obj = { data: closure_2 };
+    const obj = { data: c2 };
     tmp2.inlineData = Object.assign({}, source.inlineData, obj);
   }
-  const iter = closure_3[Symbol.iterator]();
+  const iter = dependencyMap[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp9 = merged;
     if ("string" === typeof tmp2[nextResult]) {
       let tmp10 = merged;
       let tmp11 = nextResult;
-      let tmp12 = closure_2;
-      tmp2[tmp8] = closure_2;
+      let tmp12 = c2;
+      tmp2[tmp8] = c2;
     }
-    // continue
+    continue;
   }
   return merged;
 }
@@ -297,49 +297,49 @@ function stripInlineMediaFromMessages(arr) {
       }
       if (isArray) {
         const _Object2 = Object;
-        let obj = { content: callback4(tmp.content) };
+        let obj = { content: outer1_12(tmp.content) };
         let merged = Object.assign({}, tmp, obj);
       } else {
         let tmp6 = "content" in tmp;
         if (tmp6) {
-          tmp6 = callback(tmp.content);
+          tmp6 = outer1_7(tmp.content);
         }
         if (tmp6) {
           const _Object = Object;
-          obj = { content: callback3(tmp.content) };
+          obj = { content: outer1_11(tmp.content) };
           merged = Object.assign({}, tmp, obj);
         }
       }
       let merged1 = merged;
-      if (callback2(tmp)) {
+      if (outer1_9(tmp)) {
         let tmp16 = tmp;
         if (null != merged) {
           tmp16 = merged;
         }
-        obj = { parts: callback4(tmp.parts) };
+        obj = { parts: outer1_12(tmp.parts) };
         merged1 = Object.assign({}, tmp16, obj);
       }
-      if (callback(merged1)) {
-        let tmp20 = callback3(merged1);
+      if (outer1_7(merged1)) {
+        let tmp20 = outer1_11(merged1);
       } else {
         tmp20 = merged1;
-        if (callback(tmp)) {
-          tmp20 = callback3(tmp);
+        if (outer1_7(tmp)) {
+          tmp20 = outer1_11(tmp);
         }
       }
     }
   });
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-function utf8Bytes(content) {
+function utf8Bytes(substr) {
   const textEncoder = new TextEncoder();
-  return textEncoder.encode(content).length;
+  return textEncoder.encode(substr).length;
 }
 function jsonBytes(arr) {
   return utf8Bytes(JSON.stringify(arr));
 }
-let closure_2 = "[Filtered]";
-let closure_3 = [];
+let c2 = "[Filtered]";
+let closure_3 = ["image_url", "data", "content", "b64_json", "result", "uri"];
 arg5.DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT = 20000;
 arg5.truncateGenAiMessages = function truncateGenAiMessages(arr) {
   let tmp = arr;

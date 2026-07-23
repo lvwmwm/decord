@@ -1,20 +1,20 @@
-// Module ID: 15632
-// Function ID: 119357
+// Module ID: 15749
+// Function ID: 121530
 // Name: sortSoundsOldestToNewestCreationDate
-// Dependencies: []
+// Dependencies: [21, 2]
 // Exports: useSoundOrganizer
 
-// Module 15632 (sortSoundsOldestToNewestCreationDate)
+// Module 15749 (sortSoundsOldestToNewestCreationDate)
 function sortSoundsOldestToNewestCreationDate(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  const items = [...arg0];
-  const sorted = items.sort((soundId, soundId2) => callback(closure_1[0]).compare(soundId.soundId, soundId2.soundId));
+  let items = [...arg0];
+  const sorted = items.sort((soundId, soundId2) => outer1_0(outer1_1[0]).compare(soundId.soundId, soundId2.soundId));
   let tmp2 = sorted;
   if (flag) {
-    tmp2 = function _positionUnavailableSoundsAtEnd(sorted) {
+    tmp2 = (function _positionUnavailableSoundsAtEnd(sorted) {
       const items = [...sorted];
       return items.sort((available, available2) => {
         if (!available.available) {
@@ -31,12 +31,11 @@ function sortSoundsOldestToNewestCreationDate(arg0) {
         }
         return num;
       });
-    }(sorted);
+    })(sorted);
   }
   return tmp2;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/soundboard/useSoundOrganizer.tsx");
+const result = require("set").fileFinishedImporting("modules/soundboard/useSoundOrganizer.tsx");
 
 export { sortSoundsOldestToNewestCreationDate };
 export function useSoundOrganizer() {

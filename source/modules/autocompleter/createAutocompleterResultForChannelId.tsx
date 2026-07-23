@@ -1,23 +1,25 @@
-// Module ID: 7100
-// Function ID: 57094
+// Module ID: 7105
+// Function ID: 57128
 // Name: createAutocompleterResultForChannelId
-// Dependencies: []
+// Dependencies: [1348, 3767, 1849, 5043, 653, 4320, 2]
 // Exports: default
 
-// Module 7100 (createAutocompleterResultForChannelId)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-arg1(dependencyMap[3]).AutocompleterResultTypes;
-const ChannelTypes = arg1(dependencyMap[4]).ChannelTypes;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/autocompleter/createAutocompleterResultForChannelId.tsx");
+// Module 7105 (createAutocompleterResultForChannelId)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
 
-export default function createAutocompleterResultForChannelId(channelId, arg1, closure_11, closure_12) {
+const require = arg1;
+require("HeaderRecord").AutocompleterResultTypes;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/autocompleter/createAutocompleterResultForChannelId.tsx");
+
+export default function createAutocompleterResultForChannelId(channelId, arg1, closure_14, closure_7) {
   let obj = arg1;
-  let obj1 = closure_11;
-  let tmp = closure_12;
+  let obj1 = closure_14;
+  let tmp = closure_7;
   if (arg1 === undefined) {
-    obj = closure_2;
+    obj = _isNativeReflectConstruct;
   }
   if (obj1 === undefined) {
     obj1 = closure_4;
@@ -29,7 +31,7 @@ export default function createAutocompleterResultForChannelId(channelId, arg1, c
   if (null == channel) {
     return null;
   } else {
-    const channelName = arg1(dependencyMap[5]).computeChannelName(channel, obj1, tmp);
+    const channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(channel, obj1, tmp);
     const type = channel.type;
     if (ChannelTypes.DM === type) {
       const user = obj1.getUser(channel.getRecipientId());
@@ -52,6 +54,6 @@ export default function createAutocompleterResultForChannelId(channelId, arg1, c
       const obj2 = { type: AutocompleterResultTypes.VOICE_CHANNEL, record: channel, score: 0, comparator: channelName };
       return obj2;
     }
-    const obj8 = arg1(dependencyMap[5]);
+    const obj8 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
   }
 };

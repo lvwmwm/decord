@@ -1,16 +1,15 @@
-// Module ID: 10723
-// Function ID: 83429
+// Module ID: 10733
+// Function ID: 83478
 // Name: NOOP
-// Dependencies: []
+// Dependencies: [8836, 2]
 // Exports: createDeafHandler, createMuteHandler
 
-// Module 10723 (NOOP)
+// Module 10733 (NOOP)
 function NOOP() {
 
 }
-const obj = { SERVER_MUTE: 0, [0]: "SERVER_MUTE", SUPPRESS: 1, [1]: "SUPPRESS", SELF_MUTE: 2, [2]: "SELF_MUTE", NONE: 3, [3]: "NONE" };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/video_calls/native/VoiceActionUtils.tsx");
+let obj = { SERVER_MUTE: 0, [0]: "SERVER_MUTE", SUPPRESS: 1, [1]: "SUPPRESS", SELF_MUTE: 2, [2]: "SELF_MUTE", NONE: 3, [3]: "NONE" };
+const result = require("set").fileFinishedImporting("modules/video_calls/native/VoiceActionUtils.tsx");
 
 export const DominantMuteState = obj;
 export const createMuteHandler = function createMuteHandler(muteStates, stateFromStores) {
@@ -25,23 +24,23 @@ export const createMuteHandler = function createMuteHandler(muteStates, stateFro
   if (flag) {
     let showServerMuteAlert = NOOP;
   } else {
-    showServerMuteAlert = require(dependencyMap[0]).handleToggleSelfMute;
+    showServerMuteAlert = require(8836) /* _handleToggleVideo */.handleToggleSelfMute;
   }
   if (muteStates.suppress) {
-    showServerMuteAlert = require(dependencyMap[0]).showSuppressedAlert;
+    showServerMuteAlert = require(8836) /* _handleToggleVideo */.showSuppressedAlert;
     SERVER_MUTE = obj.SUPPRESS;
   }
   if (muteStates.mute) {
-    showServerMuteAlert = require(dependencyMap[0]).showServerMuteAlert;
+    showServerMuteAlert = require(8836) /* _handleToggleVideo */.showServerMuteAlert;
     SERVER_MUTE = obj.SERVER_MUTE;
   }
-  const obj = { mute: tmp10, onPress: showServerMuteAlert, dominantMuteState: SERVER_MUTE };
+  obj = { mute: tmp10, onPress: showServerMuteAlert, dominantMuteState: SERVER_MUTE };
   return obj;
 };
 export const createDeafHandler = function createDeafHandler(deafStates) {
-  let showServerDeafenAlert = require(dependencyMap[0]).handleToggleSelfDeaf;
+  let showServerDeafenAlert = require(8836) /* _handleToggleVideo */.handleToggleSelfDeaf;
   if (deafStates.deaf) {
-    showServerDeafenAlert = require(dependencyMap[0]).showServerDeafenAlert;
+    showServerDeafenAlert = require(8836) /* _handleToggleVideo */.showServerDeafenAlert;
   }
   const obj = { deaf: tmp3, onPress: showServerDeafenAlert };
   return obj;

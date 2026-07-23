@@ -1,53 +1,63 @@
-// Module ID: 6773
-// Function ID: 53346
+// Module ID: 6778
+// Function ID: 53378
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6779, 1874, 6780, 6781, 6782, 653, 1876, 2]
 // Exports: createCollectiblesItemsFromServerResponse
 
-// Module 6773 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6778 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,21 +94,15 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-({ SKUProductLines: closure_7, SKUTypes: closure_8 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/collectibles/records/CollectiblesItemRecord.tsx");
-function transformSKUToCollectiblesItem(productLine) {
+({ SKUProductLines: closure_7, SKUTypes: closure_8 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/records/CollectiblesItemRecord.tsx");
+function transformSKUToCollectiblesItem(value) {
   let effects;
   let iter2;
-  if (productLine.productLine === constants.COLLECTIBLES) {
-    if (productLine.type === constants2.BUNDLE) {
+  if (value.productLine === constants.COLLECTIBLES) {
+    if (value.type === constants2.BUNDLE) {
       const items = [];
-      let bundledSkus = productLine.bundledSkus;
+      let bundledSkus = value.bundledSkus;
       if (null == bundledSkus) {
         bundledSkus = [];
       }
@@ -106,8 +110,8 @@ function transformSKUToCollectiblesItem(productLine) {
       let iter = tmp30Result();
       if (!iter.done) {
         do {
-          let tmp33 = closure_11;
-          let tmp34 = closure_11(iter.value);
+          let tmp33 = transformSKUToCollectiblesItem;
+          let tmp34 = transformSKUToCollectiblesItem(iter.value);
           let type;
           if (null != tmp34) {
             type = tmp34.type;
@@ -121,7 +125,7 @@ function transformSKUToCollectiblesItem(productLine) {
       }
       if (0 !== items.length) {
         let obj = { type: "bundle", items };
-        const previewAssetPaths = productLine.previewAssetPaths;
+        const previewAssetPaths = value.previewAssetPaths;
         let tmp37;
         if (null != previewAssetPaths) {
           tmp37 = previewAssetPaths;
@@ -131,7 +135,7 @@ function transformSKUToCollectiblesItem(productLine) {
       }
       const tmp30 = _createForOfIteratorHelperLoose;
     } else {
-      const tenantMetadata = productLine.tenantMetadata;
+      const tenantMetadata = value.tenantMetadata;
       let collectibles;
       if (null != tenantMetadata) {
         collectibles = tenantMetadata.collectibles;
@@ -142,26 +146,26 @@ function transformSKUToCollectiblesItem(productLine) {
       }
       if (null != item) {
         type = item.type;
-        if (arg1(dependencyMap[6]).CollectiblesItemType.AVATAR_DECORATION === type) {
+        if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
           obj = { type: "single" };
-          const obj1 = { skuId: productLine.id };
+          const obj1 = { skuId: value.id };
           ({ type: obj8.type, asset: obj8.asset, label: obj8.label } = item);
           const prototype4 = ctor.prototype;
           const tmp28 = new ctor(obj1);
           obj.item = tmp28;
           return obj;
-        } else if (arg1(dependencyMap[6]).CollectiblesItemType.NAMEPLATE === type) {
+        } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
           const obj2 = { type: "single" };
-          const obj3 = { skuId: productLine.id };
+          const obj3 = { skuId: value.id };
           ({ type: obj6.type, asset: obj6.asset, label: obj6.label, palette: obj6.palette } = item);
           const prototype3 = ctor2.prototype;
           const tmp22 = new ctor2(obj3);
           obj2.item = tmp22;
           return obj2;
-        } else if (arg1(dependencyMap[6]).CollectiblesItemType.PROFILE_EFFECT === type) {
+        } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
           const obj4 = { type: "single" };
           let tmp12 = closure_4;
-          const obj5 = { skuId: productLine.id };
+          const obj5 = { skuId: value.id };
           ({ type: obj4.type, title: obj4.title, description: obj4.description, thumbnailPreviewSrc: obj4.thumbnailPreviewSrc, reducedMotionSrc: obj4.reducedMotionSrc, effects } = item);
           if (null == effects) {
             effects = [];
@@ -172,9 +176,9 @@ function transformSKUToCollectiblesItem(productLine) {
           tmp12 = new tmp12(obj5);
           obj4.item = tmp12;
           return obj4;
-        } else if (arg1(dependencyMap[6]).CollectiblesItemType.PROFILE_FRAME === type) {
+        } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
           obj = { type: "single" };
-          const obj6 = { skuId: productLine.id };
+          const obj6 = { skuId: value.id };
           ({ type: obj2.type, label: obj2.label, layers: obj2.layers, innerWidth: obj2.innerWidth, overflowTop: obj2.overflowTop, overflowBottom: obj2.overflowBottom, overflowHorizontal: obj2.overflowHorizontal } = item);
           const prototype = ctor3.prototype;
           const tmp10 = new ctor3(obj6);
@@ -192,16 +196,16 @@ export const createCollectiblesItemsFromServerResponse = function createCollecti
   } else {
     items = arr.reduce((arr, type) => {
       type = type.type;
-      if (callback(closure_1[6]).CollectiblesItemType.AVATAR_DECORATION === type) {
-        arr.push(closure_2.fromServer(type));
-      } else if (callback(closure_1[6]).CollectiblesItemType.NAMEPLATE === type) {
-        arr.push(closure_3.fromServer(type));
-      } else if (callback(closure_1[6]).CollectiblesItemType.PROFILE_EFFECT === type) {
-        arr.push(closure_4.fromServer(type));
-      } else if (callback(closure_1[6]).CollectiblesItemType.PROFILE_FRAME === type) {
-        arr.push(closure_5.fromServer(type));
+      if (outer1_0(outer1_1[6]).CollectiblesItemType.AVATAR_DECORATION === type) {
+        arr.push(outer1_2.fromServer(type));
+      } else if (outer1_0(outer1_1[6]).CollectiblesItemType.NAMEPLATE === type) {
+        arr.push(outer1_3.fromServer(type));
+      } else if (outer1_0(outer1_1[6]).CollectiblesItemType.PROFILE_EFFECT === type) {
+        arr.push(outer1_4.fromServer(type));
+      } else if (outer1_0(outer1_1[6]).CollectiblesItemType.PROFILE_FRAME === type) {
+        arr.push(outer1_5.fromServer(type));
       } else {
-        arr.push(closure_6.fromServer(type));
+        arr.push(outer1_6.fromServer(type));
       }
       return arr;
     }, []);

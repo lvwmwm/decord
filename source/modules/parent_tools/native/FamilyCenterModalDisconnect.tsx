@@ -1,76 +1,83 @@
-// Module ID: 13710
-// Function ID: 103712
+// Module ID: 13824
+// Function ID: 105868
 // Name: FamilyCenterModalDisconnectScreen
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4337, 3969, 7123, 3830, 1212, 11061, 11064, 2198, 7572, 7573, 13825, 7607, 4126, 13777, 4541, 9021, 11071, 4965, 4543, 5087, 11073, 2]
 // Exports: default
 
-// Module 13710 (FamilyCenterModalDisconnectScreen)
+// Module 13824 (FamilyCenterModalDisconnectScreen)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function FamilyCenterModalDisconnectScreen(otherUser) {
+  let dependencyMap;
   let tmp8;
   otherUser = otherUser.otherUser;
-  const arg1 = otherUser;
-  const tmp = callback4();
-  let callback = React.useCallback(() => {
-    let arr = callback(closure_2[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  const callback = isDisconnectLoading.useCallback(() => {
+    let arr = callback(outer1_2[6]);
     arr = arr.pop();
   }, []);
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(3969);
   const name = obj.useName(otherUser);
-  let obj1 = arg1(dependencyMap[8]);
+  let obj1 = otherUser(7123);
   let requiresParentalConsent = obj1.useRequiresParentalConsent(otherUser.id);
-  const tmp5 = callback(React.useState(false), 2);
+  const tmp5 = disconnectLinkRequest(isDisconnectLoading.useState(false), 2);
   const first = tmp5[0];
-  const importDefault = tmp5[1];
-  [tmp8, closure_2] = callback(React.useState(false), 2);
-  const callback1 = React.useCallback(() => {
-    const intl = otherUser(callback2[10]).intl;
-    otherUser(callback2[9]).presentFailedToast(intl.string(otherUser(callback2[10]).t.R0RpRX));
+  importDefault = tmp5[1];
+  [tmp8, dependencyMap] = disconnectLinkRequest(isDisconnectLoading.useState(false), 2);
+  const callback1 = isDisconnectLoading.useCallback(() => {
+    const intl = otherUser(outer1_2[10]).intl;
+    otherUser(outer1_2[9]).presentFailedToast(intl.string(otherUser(outer1_2[10]).t.R0RpRX));
     callback(false);
     callback2(false);
   }, []);
-  let obj2 = arg1(dependencyMap[11]);
+  let obj2 = otherUser(11061);
   const familyCenterActions = obj2.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
-  const disconnectLinkRequest = familyCenterActions.disconnectLinkRequest;
-  callback = disconnectLinkRequest;
-  const isDisconnectLoading = familyCenterActions.isDisconnectLoading;
-  const React = isDisconnectLoading;
-  let obj3 = arg1(dependencyMap[12]);
-  const intl = arg1(dependencyMap[10]).intl;
-  const tmp7 = callback(React.useState(false), 2);
-  const intl2 = arg1(dependencyMap[10]).intl;
-  const ageSpecificText = obj3.useAgeSpecificText(intl.format(importDefault(dependencyMap[13]).F2lccv, { username: name }), intl2.string(importDefault(dependencyMap[13]).WH+Gba));
-  let obj4 = arg1(dependencyMap[12]);
-  const intl3 = arg1(dependencyMap[10]).intl;
-  const formatResult = intl.format(importDefault(dependencyMap[13]).F2lccv, { username: name });
-  const intl4 = arg1(dependencyMap[10]).intl;
-  const ageSpecificText1 = obj4.useAgeSpecificText(intl3.string(importDefault(dependencyMap[13]).hOEHFn), intl4.format(importDefault(dependencyMap[13]).Or6hgl, { username: name }));
-  let obj5 = arg1(dependencyMap[12]);
-  const intl5 = arg1(dependencyMap[10]).intl;
-  const stringResult = intl3.string(importDefault(dependencyMap[13]).hOEHFn);
-  const intl6 = arg1(dependencyMap[10]).intl;
-  const ageSpecificText2 = obj5.useAgeSpecificText(intl5.format(importDefault(dependencyMap[13]).XyRW4c, { username: name }), intl6.format(importDefault(dependencyMap[13]).PlrZal, { username: name }));
-  let obj6 = arg1(dependencyMap[12]);
-  const intl7 = arg1(dependencyMap[10]).intl;
-  const formatResult1 = intl5.format(importDefault(dependencyMap[13]).XyRW4c, { username: name });
-  const intl8 = arg1(dependencyMap[10]).intl;
-  const ageSpecificText3 = obj6.useAgeSpecificText(intl7.string(importDefault(dependencyMap[13]).eiABQz), intl8.string(importDefault(dependencyMap[13]).PGQBnk));
-  let obj7 = arg1(dependencyMap[12]);
-  const intl9 = arg1(dependencyMap[10]).intl;
-  const stringResult1 = intl7.string(importDefault(dependencyMap[13]).eiABQz);
-  const intl10 = arg1(dependencyMap[10]).intl;
+  disconnectLinkRequest = familyCenterActions.disconnectLinkRequest;
+  isDisconnectLoading = familyCenterActions.isDisconnectLoading;
+  let obj3 = otherUser(11064);
+  let intl = otherUser(1212).intl;
+  const tmp7 = disconnectLinkRequest(isDisconnectLoading.useState(false), 2);
+  const intl2 = otherUser(1212).intl;
+  const ageSpecificText = obj3.useAgeSpecificText(intl.format(importDefault(2198).F2lccv, { username: name }), intl2.string(importDefault(2198)["WH+Gba"]));
+  let obj4 = otherUser(11064);
+  const intl3 = otherUser(1212).intl;
+  const formatResult = intl.format(importDefault(2198).F2lccv, { username: name });
+  const intl4 = otherUser(1212).intl;
+  const ageSpecificText1 = obj4.useAgeSpecificText(intl3.string(importDefault(2198).hOEHFn), intl4.format(importDefault(2198).Or6hgl, { username: name }));
+  let obj5 = otherUser(11064);
+  const intl5 = otherUser(1212).intl;
+  const stringResult = intl3.string(importDefault(2198).hOEHFn);
+  const intl6 = otherUser(1212).intl;
+  const ageSpecificText2 = obj5.useAgeSpecificText(intl5.format(importDefault(2198).XyRW4c, { username: name }), intl6.format(importDefault(2198).PlrZal, { username: name }));
+  let obj6 = otherUser(11064);
+  const intl7 = otherUser(1212).intl;
+  const formatResult1 = intl5.format(importDefault(2198).XyRW4c, { username: name });
+  const intl8 = otherUser(1212).intl;
+  const ageSpecificText3 = obj6.useAgeSpecificText(intl7.string(importDefault(2198).eiABQz), intl8.string(importDefault(2198).PGQBnk));
+  let obj7 = otherUser(11064);
+  const intl9 = otherUser(1212).intl;
+  const stringResult1 = intl7.string(importDefault(2198).eiABQz);
+  const intl10 = otherUser(1212).intl;
   const items = [disconnectLinkRequest, otherUser.id];
-  const ageSpecificText4 = obj7.useAgeSpecificText(intl9.string(importDefault(dependencyMap[13]).sCbKs4), intl10.string(importDefault(dependencyMap[13]).0ki7+P));
+  const ageSpecificText4 = obj7.useAgeSpecificText(intl9.string(importDefault(2198).sCbKs4), intl10.string(importDefault(2198)["0ki7+P"]));
   const items1 = [isDisconnectLoading];
-  const callback2 = React.useCallback(() => {
+  const callback2 = isDisconnectLoading.useCallback(() => {
     disconnectLinkRequest(otherUser.id);
   }, items);
   const items2 = [isDisconnectLoading];
-  const callback3 = React.useCallback((arg0) => {
+  const callback3 = isDisconnectLoading.useCallback((arg0) => {
     if (!isDisconnectLoading) {
       callback(arg0);
     }
   }, items1);
-  const callback4 = React.useCallback((arg0) => {
+  const callback4 = isDisconnectLoading.useCallback((arg0) => {
     if (!isDisconnectLoading) {
       callback2(arg0);
     }
@@ -79,32 +86,32 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   obj = {};
   obj1 = { style: tmp.header };
   obj2 = { otherUser };
-  const stringResult2 = intl9.string(importDefault(dependencyMap[13]).sCbKs4);
-  const tmp24 = callback3;
-  const tmp25 = callback3;
-  obj2.iconSrc = importDefault(dependencyMap[17]);
-  const items3 = [callback2(importDefault(dependencyMap[16]), obj2), , ];
+  const stringResult2 = intl9.string(importDefault(2198).sCbKs4);
+  const tmp24 = callback2;
+  const tmp25 = callback2;
+  obj2.iconSrc = importDefault(7607);
+  const items3 = [callback(importDefault(13825), obj2), , ];
   obj3 = { style: tmp.title, variant: "text-lg/bold" };
-  const intl11 = arg1(dependencyMap[10]).intl;
-  obj3.children = intl11.format(importDefault(dependencyMap[13]).o0JXuK, { username: name });
-  items3[1] = callback2(arg1(dependencyMap[18]).Text, obj3);
-  obj4 = { "Null": "absolute", "Null": "100%", alignItems: 440, style: tmp.subtitle, children: ageSpecificText };
-  items3[2] = callback2(arg1(dependencyMap[18]).Text, obj4);
+  const intl11 = otherUser(1212).intl;
+  obj3.children = intl11.format(importDefault(2198).o0JXuK, { username: name });
+  items3[1] = callback(otherUser(4126).Text, obj3);
+  obj4 = { style: tmp.subtitle, variant: "text-sm/bold", color: "text-default", children: ageSpecificText };
+  items3[2] = callback(otherUser(4126).Text, obj4);
   obj1.children = items3;
-  const items4 = [callback3(View, obj1), , , ];
+  const items4 = [callback2(View, obj1), , , ];
   if (requiresParentalConsent) {
     obj5 = { style: tmp.warning, text: ageSpecificText1 };
-    requiresParentalConsent = callback2(importDefault(dependencyMap[19]), obj5);
+    requiresParentalConsent = callback(importDefault(13777), obj5);
   }
   items4[1] = requiresParentalConsent;
-  obj6 = { "Null": null, "Null": 1, alignItems: 1, style: tmp.body, children: ageSpecificText2 };
-  items4[2] = callback2(arg1(dependencyMap[18]).Text, obj6);
-  obj7 = { spacing: importDefault(dependencyMap[5]).space.PX_12 };
-  const items5 = [callback2(arg1(dependencyMap[21]).Checkbox, { label: ageSpecificText3, checked: first, onToggle: callback3 }), callback2(arg1(dependencyMap[21]).Checkbox, { label: ageSpecificText4, checked: tmp8, onToggle: callback4 })];
+  obj6 = { style: tmp.body, variant: "text-md/normal", color: "text-default", children: ageSpecificText2 };
+  items4[2] = callback(otherUser(4126).Text, obj6);
+  obj7 = { spacing: importDefault(689).space.PX_12 };
+  const items5 = [callback(otherUser(9021).Checkbox, { label: ageSpecificText3, checked: first, onToggle: callback3 }), callback(otherUser(9021).Checkbox, { label: ageSpecificText4, checked: tmp8, onToggle: callback4 })];
   obj7.children = items5;
-  items4[3] = callback3(arg1(dependencyMap[20]).Stack, obj7);
+  items4[3] = callback2(otherUser(4541).Stack, obj7);
   obj.children = items4;
-  const items6 = [tmp25(arg1(dependencyMap[15]).ModalContent, obj), ];
+  const items6 = [tmp25(otherUser(7573).ModalContent, obj), ];
   const obj8 = {};
   const obj9 = {};
   const obj10 = { variant: "destructive" };
@@ -117,62 +124,57 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   }
   obj10.disabled = tmp33;
   obj10.loading = isDisconnectLoading;
-  const intl12 = arg1(dependencyMap[10]).intl;
-  obj10.text = intl12.string(importDefault(dependencyMap[13]).c5L+sl);
+  const intl12 = otherUser(1212).intl;
+  obj10.text = intl12.string(importDefault(2198)["c5L+sl"]);
   obj10.onPress = callback2;
-  const items7 = [callback2(arg1(dependencyMap[24]).Button, obj10), ];
+  const items7 = [callback(otherUser(4543).Button, obj10), ];
   const obj11 = { variant: "tertiary" };
-  const intl13 = arg1(dependencyMap[10]).intl;
-  obj11.text = intl13.string(arg1(dependencyMap[10]).t.3ilveh);
-  obj11.onPress = importDefault(dependencyMap[6]).pop;
-  items7[1] = callback2(arg1(dependencyMap[24]).Button, obj11);
+  const intl13 = otherUser(1212).intl;
+  obj11.text = intl13.string(otherUser(1212).t["3ilveh"]);
+  obj11.onPress = importDefault(4337).pop;
+  items7[1] = callback(otherUser(4543).Button, obj11);
   obj9.children = items7;
-  obj8.children = callback3(arg1(dependencyMap[23]).ButtonGroup, obj9);
-  items6[1] = callback2(arg1(dependencyMap[22]).ModalFooter, obj8);
+  obj8.children = callback2(otherUser(4965).ButtonGroup, obj9);
+  items6[1] = callback(otherUser(11071).ModalFooter, obj8);
   obj.children = items6;
-  return tmp24(arg1(dependencyMap[14]).ModalScreen, obj);
+  return tmp24(otherUser(7572).ModalScreen, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
-obj.header = obj;
-const tmp2 = arg1(dependencyMap[3]);
-obj.title = { marginTop: importDefault(dependencyMap[5]).space.PX_24, textAlign: "center" };
-const obj1 = { marginTop: importDefault(dependencyMap[5]).space.PX_24, textAlign: "center" };
-obj.subtitle = { marginTop: importDefault(dependencyMap[5]).space.PX_8, textAlign: "center" };
-const obj2 = { marginTop: importDefault(dependencyMap[5]).space.PX_8, textAlign: "center" };
-obj.warning = { marginBottom: importDefault(dependencyMap[5]).space.PX_12 };
-const obj3 = { marginBottom: importDefault(dependencyMap[5]).space.PX_12 };
-obj.body = { marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
-let closure_8 = obj.createStyles(obj);
-const obj4 = { marginBottom: importDefault(dependencyMap[5]).space.PX_24 };
-const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterModalDisconnect.tsx");
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.title = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
+let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, textAlign: "center" };
+_createForOfIteratorHelperLoose.subtitle = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+_createForOfIteratorHelperLoose.warning = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
+let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.body = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/parent_tools/native/FamilyCenterModalDisconnect.tsx");
 
 export default function FamilyCenterModalDisconnect(otherUser) {
   otherUser = otherUser.otherUser;
-  const arg1 = otherUser;
   const items = [otherUser];
-  const memo = React.useMemo(() => function getScreens(otherUser) {
+  const memo = React.useMemo(() => (function getScreens(otherUser) {
+    let closure_0 = otherUser;
     let obj = {};
     obj = {
       headerShown: true,
-      headerLeft: otherUser(closure_2[25]).getHeaderCloseButton(callback(closure_2[6]).pop),
+      headerLeft: otherUser(outer2_2[25]).getHeaderCloseButton(outer2_1(outer2_2[6]).pop),
       headerTitle() {
         return null;
       },
       render() {
-        return callback(closure_9, { otherUser: arg0 });
+        return outer3_6(outer3_9, { otherUser: closure_0 });
       }
     };
     obj.DISCONNECT = obj;
     return obj;
-  }(otherUser), items);
-  const obj = { initialRouteName: "DISCONNECT", screens: memo };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.headerBackTitle = intl.string(arg1(dependencyMap[10]).t.13/7kX);
-  return callback2(arg1(dependencyMap[26]).Modal, obj);
+  })(otherUser), items);
+  let obj = { initialRouteName: "DISCONNECT", screens: memo };
+  const intl = otherUser(1212).intl;
+  obj.headerBackTitle = intl.string(otherUser(1212).t["13/7kX"]);
+  return callback(otherUser(11073).Modal, obj);
 };

@@ -1,12 +1,13 @@
 // Module ID: 1923
-// Function ID: 21778
-// Dependencies: []
+// Function ID: 21779
+// Dependencies: [1924, 1925, 1927, 1928, 1930]
 
 // Module 1923
-const result = _interopRequireDefault(require(dependencyMap[0]));
-const result1 = _interopRequireDefault(require(dependencyMap[1]));
-const result2 = _interopRequireDefault(require(dependencyMap[2]));
-const result3 = _interopRequireDefault(require(dependencyMap[3]));
+import result from "result";
+import result1 from "result1";
+import result1 from "result1";
+import result2 from "result2";
 
-export default { code: "en-US", formatDistance: result.default, formatLong: result1.default, formatRelative: result2.default, localize: result3.default, match: require(dependencyMap[4]), options: {} };
+
+export default { code: "en-US", formatDistance: result.default, formatLong: result1.default, formatRelative: result1.default, localize: result2.default, match: require("result3"), options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };
 export default exports.default;

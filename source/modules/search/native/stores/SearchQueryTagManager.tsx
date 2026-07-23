@@ -1,20 +1,21 @@
-// Module ID: 10082
-// Function ID: 78078
+// Module ID: 10090
+// Function ID: 78118
 // Name: isPrefix
-// Dependencies: []
+// Dependencies: [6, 7, 9103, 9133, 2]
 
-// Module 10082 (isPrefix)
+// Module 10090 (isPrefix)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import { SearchQueryTagTypes } from "SearchAutocompleteSelectAnalyticsActions";
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
+
 function isPrefix(type) {
   return type.type === SearchQueryTagTypes.PREFIX;
 }
 function isComplete(type) {
   return type.type === SearchQueryTagTypes.COMPLETE;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const SearchQueryTagTypes = arg1(dependencyMap[2]).SearchQueryTagTypes;
-const SearchFilterAddLocations = arg1(dependencyMap[3]).SearchFilterAddLocations;
-const tmp2 = () => {
+let tmp2 = (() => {
   class SearchQueryTagManager {
     constructor() {
       tmp = SearchQueryTagManager(this, SearchQueryTagManager);
@@ -27,17 +28,15 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = SearchQueryTagManager;
   let obj = {
     key: "markChanged",
     value() {
       const set = new Set();
-      const SearchQueryTagManager = set;
       const set1 = new Set();
       const tags = this.tags;
       const item = tags.forEach((text) => {
         set.add(text.text);
-        let tmp2 = callback(text);
+        let tmp2 = outer2_5(text);
         if (tmp2) {
           tmp2 = null != text.channelId;
         }
@@ -50,21 +49,22 @@ const tmp2 = () => {
       this.version = this.version + 1;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , ];
   obj = {
     key: "mergeTag",
     value(location, channelId) {
-      const SearchQueryTagManager = location;
+      let _classCallCheck = location;
+      let _defineProperties = channelId;
       const tags = this.tags;
       const items = [
         ...tags.filter((arg0) => {
-          let tmp = arg0 !== arg0;
+          let tmp = arg0 !== _classCallCheck;
           if (tmp) {
-            tmp = arg0 !== arg1;
+            tmp = arg0 !== _defineProperties;
           }
           return tmp;
         }),
-        { type: constants.COMPLETE, text: "" + location.text + " " + channelId.text, location: location.location, searchTokenType: location.searchTokenType, channelId: channelId.channelId, userId: channelId.userId }
+        { type: outer1_2.COMPLETE, text: "" + location.text + " " + channelId.text, location: location.location, searchTokenType: location.searchTokenType, channelId: channelId.channelId, userId: channelId.userId }
       ];
       this.tags = items;
     }
@@ -73,12 +73,13 @@ const tmp2 = () => {
   obj = {
     key: "replaceTag",
     value(arg0, arg1) {
-      const SearchQueryTagManager = arg0;
+      let _classCallCheck = arg0;
+      let _defineProperties = arg1;
       const tags = this.tags;
       this.tags = tags.map((arg0) => {
         let tmp = arg0;
-        if (arg0 === arg0) {
-          tmp = arg1;
+        if (arg0 === _classCallCheck) {
+          tmp = _defineProperties;
         }
         return tmp;
       });
@@ -101,13 +102,13 @@ const tmp2 = () => {
   items[5] = {
     key: "getUserIds",
     value(arg0) {
-      const SearchQueryTagManager = arg0;
+      let _classCallCheck = arg0;
       const set = new Set();
       const tags = this.tags;
       const item = tags.forEach((userId) => {
-        if (callback(userId)) {
+        if (outer2_5(userId)) {
           userId = userId.userId;
-          let tmp2 = userId.searchTokenType === userId;
+          let tmp2 = userId.searchTokenType === _classCallCheck;
           if (tmp2) {
             tmp2 = null != userId;
           }
@@ -123,7 +124,7 @@ const tmp2 = () => {
     key: "isChannelTagsOnly",
     value() {
       const tags = this.tags;
-      const found = tags.filter(closure_5);
+      const found = tags.filter(outer1_5);
       return found.every((channelId) => null != channelId.channelId);
     }
   };
@@ -131,8 +132,8 @@ const tmp2 = () => {
     key: "hasUserAddedTags",
     value() {
       const tags = this.tags;
-      const found = tags.filter(closure_5);
-      return found.some((location) => location.location !== constants.CLIENT_AUTO_ADD);
+      const found = tags.filter(outer1_5);
+      return found.some((location) => location.location !== outer2_3.CLIENT_AUTO_ADD);
     }
   };
   items[8] = {
@@ -144,10 +145,9 @@ const tmp2 = () => {
   items[9] = {
     key: "getPrefixTag",
     value() {
-      const tmp = this.tags[this.tags.length - 1];
-      if (null != tmp) {
+      if (null != this.tags[this.tags.length - 1]) {
         let tmp3;
-        if (callback(tmp)) {
+        if (outer1_4(tmp)) {
           tmp3 = tmp;
         }
         return tmp3;
@@ -174,10 +174,9 @@ const tmp2 = () => {
       if (arg0 === undefined) {
         flag = false;
       }
-      const SearchQueryTagManager = flag;
       const tags = this.tags;
       const found = tags.filter((arg0) => {
-        const tmp = callback(arg0);
+        const tmp = outer2_4(arg0);
         let tmp2 = !tmp;
         if (tmp) {
           tmp2 = flag;
@@ -198,18 +197,18 @@ const tmp2 = () => {
     value(type) {
       const self = this;
       if (!this.exists(type)) {
-        if (callback(type)) {
+        if (outer1_4(type)) {
           if (null != tmp) {
-            if (callback(tmp)) {
+            if (outer1_4(tmp)) {
               self.replaceTag(tmp, type);
             }
             self.markChanged();
             self.mergeTag(tmp, type);
           }
         }
-        let tmp9 = callback(type);
+        let tmp9 = outer1_4(type);
         if (!tmp9) {
-          tmp9 = callback2(type);
+          tmp9 = outer1_5(type);
         }
         if (tmp9) {
           const items = [];
@@ -225,21 +224,21 @@ const tmp2 = () => {
     key: "removeAnyPrefixTags",
     value() {
       const tags = this.tags;
-      this.tags = tags.filter((arg0) => !callback(arg0));
+      this.tags = tags.filter((arg0) => !outer2_4(arg0));
       this.markChanged();
     }
   };
   items[15] = {
     key: "removeAtIndex",
     value(arg0) {
-      let closure_0 = this.tags[arg0];
+      let _classCallCheck = this.tags[arg0];
       const tags = this.tags;
-      this.tags = tags.filter((arg0) => arg0 !== closure_0);
+      this.tags = tags.filter((arg0) => arg0 !== _classCallCheck);
       this.markChanged();
     }
   };
   return callback(SearchQueryTagManager, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/search/native/stores/SearchQueryTagManager.tsx");
+})();
+const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/stores/SearchQueryTagManager.tsx");
 
 export default tmp2;

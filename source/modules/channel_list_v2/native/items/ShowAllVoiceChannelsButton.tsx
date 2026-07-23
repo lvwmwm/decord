@@ -1,61 +1,60 @@
-// Module ID: 14908
-// Function ID: 112313
-// Dependencies: []
+// Module ID: 15024
+// Function ID: 114481
+// Dependencies: [31, 6765, 33, 566, 15025, 1450, 4543, 1212, 4658, 2]
 
-// Module 14908
-const importAllResult = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 15024
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo((guildId) => {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const section = guildId.section;
-  const dependencyMap = section;
   const listRef = guildId.listRef;
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores.isVoiceCategoryCollapsed(guildId));
-  closure_3 = stateFromStores;
+  let obj = guildId(section[3]);
+  const items = [stateFromStores];
+  stateFromStores = obj.useStateFromStores(items, () => stateFromStores.isVoiceCategoryCollapsed(guildId));
   const items1 = [stateFromStores, guildId, section, listRef];
   const callback = listRef.useCallback(() => {
-    const obj = guildId(section[4]);
+    let obj = guildId(section[4]);
     if (stateFromStores) {
       obj.voiceCategoryExpand(guildId);
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const current = ref.current;
+        const current = outer1_2.current;
         if (null != current) {
-          const obj = { category: true, backgroundColor: true, height: true, section: closure_1 };
+          const obj = { animated: false, section: outer1_1, item: 0 };
           const _Math = Math;
-          obj.paddingStart = Math.round(0.3 * callback(closure_1[5]).getWindowDimensions().height);
+          obj.paddingStart = Math.round(0.3 * guildId(section[5]).getWindowDimensions().height);
           current.scrollToLocation(obj);
-          const obj2 = callback(closure_1[5]);
+          const obj2 = guildId(section[5]);
         }
       }, 0);
     } else {
       const result = obj.voiceCategoryCollapse(guildId);
-      const current = listRef.current;
+      let current = listRef.current;
       if (null != current) {
         current.scrollToTop(false);
       }
     }
   }, items1);
   obj = {};
-  const intl = arg1(dependencyMap[7]).intl;
+  const intl = guildId(section[7]).intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[7]).t;
+  const t = guildId(section[7]).t;
   if (stateFromStores) {
-    let stringResult = string(t./eB9Bg);
+    let stringResult = string(t["/eB9Bg"]);
   } else {
     stringResult = string(t.Q2gPWl);
   }
   obj.text = stringResult;
-  obj.icon = jsx(arg1(dependencyMap[8]).VoiceNormalIcon, { size: "sm" });
+  obj.icon = jsx(guildId(section[8]).VoiceNormalIcon, { size: "sm" });
   obj.onPress = callback;
   obj.variant = "secondary";
   obj.size = "sm";
-  return jsx(arg1(dependencyMap[6]).Button, obj);
+  return jsx(guildId(section[6]).Button, {});
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/channel_list_v2/native/items/ShowAllVoiceChannelsButton.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/items/ShowAllVoiceChannelsButton.tsx");
 
 export default memoResult;

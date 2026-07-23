@@ -1,12 +1,17 @@
-// Module ID: 13900
-// Function ID: 105092
+// Module ID: 14014
+// Function ID: 107248
 // Name: maybeRefreshAd
-// Dependencies: []
+// Dependencies: [31, 6942, 664, 10465, 9456, 9444, 6957, 566, 14015, 6940, 2]
 // Exports: default
 
-// Module 13900 (maybeRefreshAd)
+// Module 14014 (maybeRefreshAd)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let closure_3;
+let closure_4;
 function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, callerSource) {
-  let obj = require(dependencyMap[3]);
+  let obj = require(10465) /* getIsEligibleForQuests */;
   let isEligibleForQuests = obj.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     let tmp3 = null != fetchedAt;
@@ -19,59 +24,55 @@ function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, callerSource) {
   }
   if (isEligibleForQuests) {
     if ("active" === obj2.getState()) {
-      if (!closure_5.isFetchingQuestToDeliverByPlacement(MOBILE_HOME_DOCK_AREA)) {
-        let enableNewRequestBehavior = closure_5.canRefreshAd(MOBILE_HOME_DOCK_AREA);
+      if (!_isNativeReflectConstruct.isFetchingQuestToDeliverByPlacement(MOBILE_HOME_DOCK_AREA)) {
+        let enableNewRequestBehavior = _isNativeReflectConstruct.canRefreshAd(MOBILE_HOME_DOCK_AREA);
         if (enableNewRequestBehavior) {
           obj = { location: "maybeRefreshAd" };
-          enableNewRequestBehavior = importDefault(dependencyMap[6]).getConfig(obj).enableNewRequestBehavior;
-          const obj3 = importDefault(dependencyMap[6]);
+          enableNewRequestBehavior = importDefault(6957).getConfig(obj).enableNewRequestBehavior;
+          const obj3 = importDefault(6957);
         }
         if (enableNewRequestBehavior) {
-          const currentQuests = require(dependencyMap[5]).fetchCurrentQuests();
-          const obj5 = require(dependencyMap[5]);
-          const questToDeliver = require(dependencyMap[5]).fetchQuestToDeliver(MOBILE_HOME_DOCK_AREA, callerSource);
-          const obj6 = require(dependencyMap[5]);
+          const currentQuests = require(9444) /* _manuallyStartConsoleQuest */.fetchCurrentQuests();
+          const obj5 = require(9444) /* _manuallyStartConsoleQuest */;
+          const questToDeliver = require(9444) /* _manuallyStartConsoleQuest */.fetchQuestToDeliver(MOBILE_HOME_DOCK_AREA, callerSource);
+          const obj6 = require(9444) /* _manuallyStartConsoleQuest */;
         }
       }
     } else if (null != fetchedAt) {
-      require(dependencyMap[5]).clearQuestAdDecision(MOBILE_HOME_DOCK_AREA, fetchedAt.ttlMillis);
-      const obj7 = require(dependencyMap[5]);
+      require(9444) /* _manuallyStartConsoleQuest */.clearQuestAdDecision(MOBILE_HOME_DOCK_AREA, fetchedAt.ttlMillis);
+      const obj7 = require(9444) /* _manuallyStartConsoleQuest */;
     }
-    const obj2 = importDefault(dependencyMap[4]);
+    obj2 = importDefault(9456);
   }
 }
-const _module = require(dependencyMap[0]);
-({ useEffect: closure_3, useRef: closure_4 } = _module);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = 10 * importDefault(dependencyMap[2]).Millis.MINUTE;
-let closure_7 = 30 * importDefault(dependencyMap[2]).Millis.SECOND;
-const _module1 = require(dependencyMap[10]);
-const result = _module1.fileFinishedImporting("modules/quests/useQuestForPlacement.tsx");
+({ useEffect: closure_3, useRef: closure_4 } = result);
+let closure_6 = 10 * require("set").Millis.MINUTE;
+let closure_7 = 30 * require("set").Millis.SECOND;
+result = require("set").fileFinishedImporting("modules/quests/useQuestForPlacement.tsx");
 
 export default function useQuestForAdPlacement(arg0) {
-  const require = arg0;
+  const _require = arg0;
   const importDefault = callback(null);
-  const items = [closure_5];
-  const stateFromStores = require(dependencyMap[7]).useStateFromStores(items, () => {
-    const questAdDecisionByPlacement = closure_5.questAdDecisionByPlacement;
-    const value = questAdDecisionByPlacement.get(arg0);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = _require(stateFromStores[7]).useStateFromStores(items, () => {
+    const questAdDecisionByPlacement = outer1_5.questAdDecisionByPlacement;
+    const value = questAdDecisionByPlacement.get(closure_0);
     let tmp2 = null;
     if (null != value) {
       tmp2 = value;
     }
     return tmp2;
   });
-  const dependencyMap = stateFromStores;
-  const obj = require(dependencyMap[7]);
-  const items1 = [closure_5];
-  const stateFromStores1 = require(dependencyMap[7]).useStateFromStores(items1, () => {
+  const obj = _require(stateFromStores[7]);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = _require(stateFromStores[7]).useStateFromStores(items1, () => {
     let questId;
     if (null != stateFromStores) {
       questId = stateFromStores.questId;
     }
     let tmp3 = null;
     if (null != questId) {
-      const quests = closure_5.quests;
+      const quests = outer1_5.quests;
       const value = quests.get(stateFromStores.questId);
       tmp3 = null;
       if (null != value) {
@@ -80,25 +81,25 @@ export default function useQuestForAdPlacement(arg0) {
     }
     return tmp3;
   });
-  const obj2 = require(dependencyMap[7]);
-  const enableFastAdRecheck = importDefault(dependencyMap[8]).useConfig({ location: "useQuestForAdPlacement" }).enableFastAdRecheck;
+  const obj2 = _require(stateFromStores[7]);
+  const enableFastAdRecheck = importDefault(stateFromStores[8]).useConfig({ location: "useQuestForAdPlacement" }).enableFastAdRecheck;
   const items2 = [stateFromStores, arg0, enableFastAdRecheck];
   enableFastAdRecheck(() => {
     if (null != ref.current) {
-      const _clearInterval = clearInterval;
+      let _clearInterval = clearInterval;
       clearInterval(ref.current);
     }
-    callback(stateFromStores, arg0, "questBar-open");
+    outer1_8(stateFromStores, current, "questBar-open");
     ref.current = setInterval(() => {
-      const questAdDecisionByPlacement = obj.questAdDecisionByPlacement;
+      const questAdDecisionByPlacement = outer2_5.questAdDecisionByPlacement;
       const value = questAdDecisionByPlacement.get(current);
       let tmp3 = null;
       if (null != value) {
         tmp3 = value;
       }
-      closure_8(tmp3, current, "questBar-interval");
-    }, enableFastAdRecheck ? closure_7 : closure_6);
-    const arg0 = ref.current;
+      outer2_8(tmp3, current, "questBar-interval");
+    }, enableFastAdRecheck ? outer1_7 : outer1_6);
+    current = ref.current;
     return () => {
       if (null != current) {
         const _clearInterval = clearInterval;
@@ -112,7 +113,7 @@ export default function useQuestForAdPlacement(arg0) {
     if (!obj4.isQuestExpired(stateFromStores1)) {
       tmp4 = stateFromStores1;
     }
-    const obj4 = require(dependencyMap[9]);
+    obj4 = _require(stateFromStores[9]);
   }
   return tmp4;
 };

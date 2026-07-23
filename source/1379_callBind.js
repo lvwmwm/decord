@@ -1,24 +1,24 @@
 // Module ID: 1379
-// Function ID: 16526
+// Function ID: 16527
 // Name: callBind
-// Dependencies: []
+// Dependencies: [528, 1380, 541, 1383]
 
 // Module 1379 (callBind)
-if (require(dependencyMap[2])) {
+if (require("module_541")) {
   const obj = {};
-  const _module = require(dependencyMap[2]);
-  obj.value = require(dependencyMap[3]);
+  const _module = require("module_541");
+  obj.value = require("applyBind");
   _module(module.exports, "apply", obj);
 } else {
-  module.exports.apply = require(dependencyMap[3]);
+  module.exports.apply = require("applyBind");
 }
 
 export default function callBind(arg0) {
   let num = 0;
   const diff = arg0.length - (arguments.length - 1);
-  const tmp = require(dependencyMap[0])(arguments);
+  const tmp = require(528) /* callBindBasic */(arguments);
   if (diff > 0) {
     num = diff;
   }
-  return require(dependencyMap[1])(tmp, 1 + num, true);
+  return require(1380) /* setFunctionLength */(tmp, 1 + num, true);
 };

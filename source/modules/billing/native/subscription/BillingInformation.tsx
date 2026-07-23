@@ -1,13 +1,15 @@
-// Module ID: 7412
-// Function ID: 59578
+// Module ID: 7417
+// Function ID: 59612
 // Name: getBillingInformationStringNative
-// Dependencies: []
+// Dependencies: [5, 653, 3776, 478, 1212, 7203, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 7412 (getBillingInformationStringNative)
-let closure_2 = importDefault(dependencyMap[0]);
-const SubscriptionStatusTypes = arg1(dependencyMap[1]).SubscriptionStatusTypes;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/billing/native/subscription/BillingInformation.tsx");
+// Module 7417 (getBillingInformationStringNative)
+import serializePurchaseResponse from "serializePurchaseResponse";
+import { SubscriptionStatusTypes } from "ME";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/billing/native/subscription/BillingInformation.tsx");
 
 export const getBillingInformationStringNative = function getBillingInformationStringNative(subscription, first, first1, flag, fractionalPremiumInfo) {
   let tmp = first1;
@@ -17,23 +19,23 @@ export const getBillingInformationStringNative = function getBillingInformationS
   if (flag === undefined) {
     flag = false;
   }
-  let callback;
-  let obj = callback(dependencyMap[2]);
+  let _require;
+  let obj = _require(3776);
   let billingInformationString = obj.getBillingInformationString(subscription, first, tmp, flag, fractionalPremiumInfo);
-  let tmp3 = callback(dependencyMap[3]).isIOS() && subscription.isPurchasedViaApple;
+  let tmp3 = _require(478).isIOS() && subscription.isPurchasedViaApple;
   if (tmp3) {
     tmp3 = subscription.status === SubscriptionStatusTypes.ACTIVE;
   }
   if (tmp3) {
-    const intl = callback(dependencyMap[4]).intl;
+    const intl = _require(1212).intl;
     obj = { renewalDate: first.subscriptionPeriodStart };
-    callback = callback2(async () => {
-      yield callback(closure_1[5]).manageSubscription();
+    _require = callback(async () => {
+      yield callback(outer2_1[5]).manageSubscription();
     });
     obj.onSubscriptionManagementClick = function() {
       return callback(...arguments);
     };
-    billingInformationString = intl.format(callback(dependencyMap[4]).t.gknRR3, obj);
+    billingInformationString = intl.format(_require(1212).t.gknRR3, obj);
   }
   return billingInformationString;
 };

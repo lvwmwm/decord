@@ -1,20 +1,29 @@
-// Module ID: 14214
-// Function ID: 107518
+// Module ID: 14328
+// Function ID: 109674
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 3803, 14329, 2]
 
-// Module 14214 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14328 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.FEFn90);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.FEFn90);
   },
-  parent: require(dependencyMap[0]).MobileSetting.NOTIFICATIONS,
-  useValue: require(dependencyMap[3]).StreamNotificationsEnabled.useSetting,
-  onValueChange: require(dependencyMap[4]).onGoLiveNotificationSettingsChanged
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  useValue: require("explicitContentFromProto").StreamNotificationsEnabled.useSetting,
+  onValueChange: require("onGoLiveNotificationSettingsChanged").onGoLiveNotificationSettingsChanged
 });
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/FriendStreamNotificationsSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.FEFn90);
+  },
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  useValue: require("explicitContentFromProto").StreamNotificationsEnabled.useSetting,
+  onValueChange: require("onGoLiveNotificationSettingsChanged").onGoLiveNotificationSettingsChanged
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/FriendStreamNotificationsSetting.tsx");
 
 export default toggle;

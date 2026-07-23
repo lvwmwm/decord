@@ -1,38 +1,43 @@
-// Module ID: 16431
-// Function ID: 126876
+// Module ID: 16548
+// Function ID: 129050
 // Name: StreamFullAlert
-// Dependencies: []
+// Dependencies: [31, 27, 33, 8857, 1212, 4561, 4126, 16549, 2]
 // Exports: default
 
-// Module 16431 (StreamFullAlert)
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let closure_6 = { image: { 1817312097: null, 1386242432: null }, body: { marginTop: 16 } };
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("components_native/calls/stream/StreamFullAlert.tsx");
+// Module 16548 (StreamFullAlert)
+import "result";
+import { Image } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = { image: { alignSelf: "center", marginTop: 32 }, body: { marginTop: 16 } };
+const result = require("jsxProd").fileFinishedImporting("components_native/calls/stream/StreamFullAlert.tsx");
 
 export default function StreamFullAlert(arg0) {
-  let obj = arg1(dependencyMap[3]);
-  const errorInfo = obj.getErrorInfo(arg1(dependencyMap[3]).AVError.STREAM_FULL);
+  let obj = require(8857) /* validateUniqueErrorCodes */;
+  const errorInfo = obj.getErrorInfo(require(8857) /* validateUniqueErrorCodes */.AVError.STREAM_FULL);
   let errorCode;
   if (null != errorInfo) {
     errorCode = errorInfo.errorCode;
   }
-  const intl = arg1(dependencyMap[4]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { errorCode };
   obj = {};
-  const formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[4]).t.ejOT95, obj);
+  const formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.ejOT95, obj);
   const merged = Object.assign(arg0);
-  const intl2 = arg1(dependencyMap[4]).intl;
-  obj["title"] = intl2.string(arg1(dependencyMap[4]).t.GzjdO5);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj["title"] = intl2.string(require(1212) /* getSystemLocale */.t.GzjdO5);
   const obj1 = { variant: "text-md/normal", style: closure_6.body };
-  const intl3 = arg1(dependencyMap[4]).intl;
-  obj1.children = intl3.string(arg1(dependencyMap[4]).t.VVZDBL);
-  const items = [callback(arg1(dependencyMap[6]).Text, obj1), callback(arg1(dependencyMap[6]).Text, { style: closure_6.body, children: formatToPlainStringResult }), ];
-  const obj2 = { style: closure_6.body, children: formatToPlainStringResult };
-  const tmp4 = importDefault(dependencyMap[5]);
-  items[2] = callback(Image, { source: importDefault(dependencyMap[7]), style: closure_6.image });
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl3.string(require(1212) /* getSystemLocale */.t.VVZDBL);
+  const items = [callback(require(4126) /* Text */.Text, obj1), , ];
+  const obj2 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult };
+  items[1] = callback(require(4126) /* Text */.Text, obj2);
+  const tmp4 = importDefault(4561);
+  items[2] = callback(Image, { source: importDefault(16549), style: closure_6.image });
   obj["children"] = items;
   return callback2(tmp4, obj);
 };

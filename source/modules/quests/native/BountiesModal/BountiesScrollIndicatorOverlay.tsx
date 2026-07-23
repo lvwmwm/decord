@@ -1,22 +1,27 @@
-// Module ID: 13821
-// Function ID: 104525
+// Module ID: 13935
+// Function ID: 106681
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4134, 4130, 689, 3991, 4131, 4554, 13936, 4126, 1212, 2]
 // Exports: default
 
-// Module 13821 (BountiesScrollIndicatorOverlay)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const StyleSheet = arg1(dependencyMap[2]).StyleSheet;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = [];
-let closure_9 = 5000 + arg1(dependencyMap[4]).timingSlowDuration;
-const tmp2 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[5]).createStyles(() => {
+// Module 13935 (BountiesScrollIndicatorOverlay)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { StyleSheet } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = ["rgba(0,0,0,0)", "rgba(0,0,0,0.7)", "rgba(0,0,0,1)"];
+let closure_9 = 5000 + require("timingNone").timingSlowDuration;
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { borderWidth: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004102311393742396, flexGrow: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018762540838196867, flexShrink: -580597358112736700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, position: -4428125393977591500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, inset: 52685824, alignItems: -258260480, justifyContent: 1960443906, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
+  obj = { position: "absolute", left: 0, right: 0, bottom: 0, height: "45%", alignItems: "center", justifyContent: "center", paddingHorizontal: importDefault(689).space.PX_16 };
   obj.scrollIndicator = obj;
-  obj = { <string:1396400561>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002068948543545838, <string:2215036979>: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002123919702242834, <string:1481808505>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000165953341616224, <string:1384818697>: -63616978924313130000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1667542970>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000391439515314819, <string:1389933036>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000999526626516054, gap: importDefault(dependencyMap[6]).space.PX_8 };
+  obj = { position: "absolute", bottom: 124, left: 0, right: 0, alignItems: "center", justifyContent: "flex-start", gap: importDefault(689).space.PX_8 };
   obj.scrollIndicatorContent = obj;
   obj.scrollIndicatorText = { textAlign: "center" };
   return obj;
@@ -25,22 +30,18 @@ let closure_11 = { code: "function BountiesScrollIndicatorOverlayTsx1(){const{wi
 let closure_12 = { code: "function BountiesScrollIndicatorOverlayTsx2(){const{runOnJS,animationCallbackJSThread}=this.__closure;runOnJS(animationCallbackJSThread)();}" };
 let closure_13 = { code: "function BountiesScrollIndicatorOverlayTsx3(){const{withTiming,visible,isEndCardVisible,isActive,timingStandard,timingSlow}=this.__closure;return{opacity:withTiming(visible&&!isEndCardVisible?1:0,isEndCardVisible||!isActive?timingStandard:timingSlow)};}" };
 let closure_14 = { code: "function BountiesScrollIndicatorOverlayTsx4(){const{withTiming,visible,timingStandard}=this.__closure;return{transform:[{scale:withTiming(visible?1:0.9,timingStandard)}]};}" };
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollIndicatorOverlay.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollIndicatorOverlay.tsx");
 
 export default function BountiesScrollIndicatorOverlay(isActive) {
   isActive = isActive.isActive;
-  const arg1 = isActive;
-  const isEndCardVisible = isActive.isEndCardVisible;
-  const importDefault = isEndCardVisible;
-  let React;
-  const tmp = callback4();
-  const visible = function useAnimationTiming(enabled) {
+  let isEndCardVisible = isActive.isEndCardVisible;
+  let callback;
+  let tmp = callback4();
+  const visible = (function useAnimationTiming(enabled) {
     enabled = enabled.enabled;
-    const isActive = enabled;
     const tmp = tmp3(callback.useState(true), 2);
     const isEndCardVisible = tmp2;
-    const tmp3 = tmp3(callback.useState(enabled), 2);
+    tmp3 = tmp3(callback.useState(enabled), 2);
     if (enabled !== tmp3[0]) {
       tmp3[1](enabled);
       if (enabled) {
@@ -50,15 +51,15 @@ export default function BountiesScrollIndicatorOverlay(isActive) {
     const items = [enabled];
     const effect = callback.useEffect(() => {
       if (enabled) {
-        function scheduleNext(arg0) {
-          let timeout = arg0;
+        function scheduleNext(closure_0) {
+          let timeout = closure_0;
           let num = 5000;
-          if (!arg0) {
-            num = closure_9;
+          if (!closure_0) {
+            num = outer3_9;
           }
           timeout = setTimeout(() => {
-            callback(closure_0);
-            callback(!closure_0);
+            scheduleNext(closure_0);
+            outer1_1(!closure_0);
           }, num);
         }
         scheduleNext(false);
@@ -71,22 +72,20 @@ export default function BountiesScrollIndicatorOverlay(isActive) {
     }
     obj.visible = enabled;
     return obj;
-  }({ enabled: isActive }).visible;
-  const dependencyMap = visible;
-  const tmp2 = callback(React.useState(visible), 2);
-  let callback = tmp3;
-  const tmp4 = callback(React.useState(visible), 2);
+  })({ enabled: isActive }).visible;
+  const tmp2 = callback(callback.useState(visible), 2);
+  callback = tmp3;
+  const tmp4 = callback(callback.useState(visible), 2);
   if (visible !== tmp4[0]) {
     tmp4[1](visible);
     if (visible) {
       tmp3(true);
     }
   }
-  callback = React.useCallback(() => {
+  callback = callback.useCallback(() => {
     tmp3(false);
   }, []);
-  React = callback;
-  let obj = arg1(dependencyMap[7]);
+  let obj = isActive(visible[7]);
   class B {
     constructor() {
       obj = {};
@@ -98,22 +97,22 @@ export default function BountiesScrollIndicatorOverlay(isActive) {
       tmp = isActive(visible[4]);
       tmp2 = isActive ? tmp.timingSlow : tmp.timingStandard;
       fn = function t() {
-        callback(closure_2[7]).runOnJS(closure_4)();
+        isActive(visible[7]).runOnJS(outer1_4)();
       };
-      obj = { runOnJS: isActive(visible[7]).runOnJS, animationCallbackJSThread: closure_4 };
+      obj = { runOnJS: isActive(visible[7]).runOnJS, animationCallbackJSThread: c4 };
       fn.__closure = obj;
       fn.__workletHash = 7847207274031;
-      fn.__initData = closure_12;
+      fn.__initData = outer1_12;
       obj.opacity = obj2.withTiming(num, tmp2, "respect-motion-settings", fn);
       return obj;
     }
   }
-  obj = { withTiming: arg1(dependencyMap[8]).withTiming, visible, isActive, timingSlow: arg1(dependencyMap[4]).timingSlow, timingStandard: arg1(dependencyMap[4]).timingStandard, runOnJS: arg1(dependencyMap[7]).runOnJS, animationCallbackJSThread: callback };
+  obj = { withTiming: isActive(visible[8]).withTiming, visible, isActive, timingSlow: isActive(visible[4]).timingSlow, timingStandard: isActive(visible[4]).timingStandard, runOnJS: isActive(visible[7]).runOnJS, animationCallbackJSThread: callback };
   B.__closure = obj;
   B.__workletHash = 22957586567;
   B.__initData = closure_11;
   const animatedStyle = obj.useAnimatedStyle(B);
-  let obj2 = arg1(dependencyMap[7]);
+  let obj2 = isActive(visible[7]);
   class E {
     constructor() {
       obj = {};
@@ -141,13 +140,13 @@ export default function BountiesScrollIndicatorOverlay(isActive) {
       return;
     }
   }
-  obj = { withTiming: arg1(dependencyMap[8]).withTiming, visible, isEndCardVisible, isActive, timingStandard: arg1(dependencyMap[4]).timingStandard, timingSlow: arg1(dependencyMap[4]).timingSlow };
+  obj = { withTiming: isActive(visible[8]).withTiming, visible, isEndCardVisible, isActive, timingStandard: isActive(visible[4]).timingStandard, timingSlow: isActive(visible[4]).timingSlow };
   E.__closure = obj;
   E.__workletHash = 4256710479074;
   E.__initData = closure_13;
   const animatedStyle1 = obj2.useAnimatedStyle(E);
-  let obj4 = arg1(dependencyMap[7]);
-  const fn = function j() {
+  let obj4 = isActive(visible[7]);
+  let fn = function j() {
     let obj = {};
     obj = {};
     let num = 0.9;
@@ -159,28 +158,28 @@ export default function BountiesScrollIndicatorOverlay(isActive) {
     obj.transform = items;
     return obj;
   };
-  fn.__closure = { withTiming: arg1(dependencyMap[8]).withTiming, visible, timingStandard: arg1(dependencyMap[4]).timingStandard };
+  fn.__closure = { withTiming: isActive(visible[8]).withTiming, visible, timingStandard: isActive(visible[4]).timingStandard };
   fn.__workletHash = 4041303236067;
   fn.__initData = closure_14;
   const animatedStyle2 = obj4.useAnimatedStyle(fn);
   obj2 = { style: items, pointerEvents: "none" };
-  const items = [tmp.scrollIndicator, isActive.opacityStyle];
+  items = [tmp.scrollIndicator, isActive.opacityStyle];
   const obj3 = { style: items1 };
-  const items1 = [StyleSheet.absoluteFill, animatedStyle1];
+  items1 = [StyleSheet.absoluteFill, animatedStyle1];
   obj4 = { colors: closure_8, style: StyleSheet.absoluteFill };
-  obj3.children = callback2(importDefault(dependencyMap[9]), obj4);
-  const items2 = [callback2(importDefault(dependencyMap[7]).View, obj3), ];
+  obj3.children = callback2(isEndCardVisible(visible[9]), obj4);
+  const items2 = [callback2(isEndCardVisible(visible[7]).View, obj3), ];
   const obj5 = { style: items3 };
-  const items3 = [tmp.scrollIndicatorContent, ];
+  items3 = [tmp.scrollIndicatorContent, ];
   const items4 = [animatedStyle, animatedStyle2];
   items3[1] = items4;
-  const items5 = [callback2(importDefault(dependencyMap[10]), { visible, isFadingInContent: tmp2[0] }), ];
-  const obj6 = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum", style: tmp.scrollIndicatorText };
-  const intl = arg1(dependencyMap[12]).intl;
-  obj6.children = intl.string(arg1(dependencyMap[12]).t.eafsh4);
-  items5[1] = callback2(arg1(dependencyMap[11]).Text, obj6);
+  const items5 = [callback2(isEndCardVisible(visible[10]), { visible, isFadingInContent: tmp2[0] }), ];
+  const obj6 = { variant: "text-sm/semibold", color: "text-default", style: tmp.scrollIndicatorText };
+  const intl = isActive(visible[12]).intl;
+  obj6.children = intl.string(isActive(visible[12]).t.eafsh4);
+  items5[1] = callback2(isActive(visible[11]).Text, obj6);
   obj5.children = items5;
-  items2[1] = callback3(importDefault(dependencyMap[7]).View, obj5);
+  items2[1] = callback3(isEndCardVisible(visible[7]).View, obj5);
   obj2.children = items2;
-  return callback3(importDefault(dependencyMap[7]).View, obj2);
+  return callback3(isEndCardVisible(visible[7]).View, obj2);
 };

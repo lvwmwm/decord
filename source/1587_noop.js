@@ -1,10 +1,11 @@
 // Module ID: 1587
-// Function ID: 17712
+// Function ID: 17713
 // Name: noop
-// Dependencies: []
+// Dependencies: [27]
 
 // Module 1587 (noop)
-const LogBox = require(dependencyMap[0]).LogBox;
+import { LogBox } from "get ActivityIndicator";
+
 let noop;
 if (null != LogBox) {
   const addLog = LogBox.addLog;

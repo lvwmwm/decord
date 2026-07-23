@@ -1,38 +1,45 @@
-// Module ID: 10656
-// Function ID: 83161
+// Module ID: 10666
+// Function ID: 83211
 // Name: ChannelCallNavigatorIcon
-// Dependencies: []
+// Dependencies: [31, 27, 10210, 653, 33, 4130, 689, 4660, 3976, 4533, 1273, 2]
 // Exports: default
 
-// Module 10656 (ChannelCallNavigatorIcon)
-importAll(dependencyMap[0]);
-({ View: closure_3, StyleSheet: closure_4 } = arg1(dependencyMap[1]));
-const resetFocusTimer = arg1(dependencyMap[2]).resetFocusTimer;
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { pressableContainer: { marginHorizontal: 4 } };
-obj = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.pressable = obj;
-const tmp4 = arg1(dependencyMap[4]);
-obj.container = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-const obj2 = { GuildRoleSubscriptionTierDetailsTab: 64, STREAMS: 64, fontFamily: arg1(dependencyMap[3]).Fonts.PRIMARY_SEMIBOLD, color: importDefault(dependencyMap[6]).colors.WHITE };
-obj.text = obj2;
-obj.disabled = { opacity: 0.5 };
-const obj1 = { borderRadius: importDefault(dependencyMap[6]).radii.lg, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-obj.iconColor = { color: importDefault(dependencyMap[6]).colors.ICON_SUBTLE };
-let closure_8 = obj.createStyles(obj);
-const obj3 = { color: importDefault(dependencyMap[6]).colors.ICON_SUBTLE };
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/video_calls/native/components/ChannelCallNavigatorIcon.tsx");
+// Module 10666 (ChannelCallNavigatorIcon)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { resetFocusTimer } from "resetFocusTimer";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_3, StyleSheet: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { pressableContainer: { marginHorizontal: 4 } };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose.pressable = _createForOfIteratorHelperLoose;
+let obj1 = { flexDirection: "row", height: 32, width: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", justifyContent: "center", overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.container = obj1;
+let obj2 = { marginLeft: 4, fontSize: 14, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.text = obj2;
+_createForOfIteratorHelperLoose.disabled = { opacity: 0.5 };
+_createForOfIteratorHelperLoose.iconColor = { color: require("_createForOfIteratorHelperLoose").colors.ICON_SUBTLE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.ICON_SUBTLE };
+const result = require("resetFocusTimer").fileFinishedImporting("modules/video_calls/native/components/ChannelCallNavigatorIcon.tsx");
 
 export default function ChannelCallNavigatorIcon(disableBackground) {
   let accessibilityLabel;
   let children;
   let disabled;
   let membersCount;
+  let require;
   let source;
   let theme;
-  ({ onPress: closure_0, membersCount, disabled, theme } = disableBackground);
+  ({ onPress: require, membersCount, disabled, theme } = disableBackground);
   ({ source, accessibilityLabel, children } = disableBackground);
   if (theme === undefined) {
     theme = "dark";
@@ -42,7 +49,7 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
     flag = true;
   }
   const IconComponent = disableBackground.IconComponent;
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.pressableContainer };
   obj = {
     accessibilityRole: "button",
@@ -50,8 +57,8 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
     disabled,
     style: tmp.pressable,
     onPress() {
-      if (null != callback2) {
-        callback2();
+      if (null != outer1_5) {
+        outer1_5();
       }
       callback();
     }
@@ -63,13 +70,13 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
   }
   items[2] = disabled;
   obj.style = items;
-  let obj3 = arg1(dependencyMap[8]);
+  let obj3 = require(3976) /* AccessibilityAnnouncer */;
   let tmp5 = null;
   if (obj3.isThemeDark(theme)) {
     tmp5 = null;
     if (!flag) {
       const obj1 = { blurTheme: "dark", style: absoluteFill.absoluteFill };
-      tmp5 = callback(importDefault(dependencyMap[9]), obj1);
+      tmp5 = callback(importDefault(4533), obj1);
     }
   }
   const items1 = [tmp5, , ];
@@ -77,8 +84,8 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
     const obj2 = { color: tmp.iconColor.color, size: "sm" };
     let tmp13 = callback(IconComponent, obj2);
   } else {
-    obj3 = { source, color: tmp.iconColor.color, size: arg1(dependencyMap[10]).Icon.Sizes.SMALL_20 };
-    tmp13 = callback(arg1(dependencyMap[10]).Icon, obj3);
+    obj3 = { source, color: tmp.iconColor.color, size: require(1273) /* Button */.Icon.Sizes.SMALL_20 };
+    tmp13 = callback(require(1273) /* Button */.Icon, obj3);
   }
   items1[1] = tmp13;
   let tmp15 = null != membersCount;
@@ -87,12 +94,12 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
   }
   if (tmp15) {
     const obj4 = { style: tmp.text, children: membersCount };
-    tmp15 = callback(arg1(dependencyMap[10]).LegacyText, obj4);
+    tmp15 = callback(require(1273) /* Button */.LegacyText, obj4);
   }
   items1[2] = tmp15;
   obj.children = items1;
   const items2 = [closure_7(closure_3, obj), children];
   obj.children = items2;
-  obj.children = closure_7(arg1(dependencyMap[7]).PressableOpacity, obj);
+  obj.children = closure_7(require(4660) /* PressableBase */.PressableOpacity, obj);
   return callback(closure_3, obj);
 };

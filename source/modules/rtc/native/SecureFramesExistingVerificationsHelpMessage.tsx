@@ -1,35 +1,35 @@
-// Module ID: 8902
-// Function ID: 70275
+// Module ID: 8909
+// Function ID: 70316
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 8910, 1273, 1212, 2]
 // Exports: default
 
-// Module 8902 (SecureFramesExistingVerificationsHelpMessage)
-const View = require(dependencyMap[0]).View;
-const jsx = require(dependencyMap[1]).jsx;
-const _module = require(dependencyMap[2]);
-let closure_4 = _module.createStyles({ container: { width: "100%" } });
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/rtc/native/SecureFramesExistingVerificationsHelpMessage.tsx");
+// Module 8909 (SecureFramesExistingVerificationsHelpMessage)
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ container: { width: "100%" } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/rtc/native/SecureFramesExistingVerificationsHelpMessage.tsx");
 
 export default function SecureFramesExistingVerificationsHelpMessage(arg0) {
   let style;
   let userId;
   let userKey;
   ({ style, userId, userKey } = arg0);
-  let obj = require(dependencyMap[3]);
+  let obj = require(8910) /* useSecureFramesUserVerifiedKeysCount */;
   const secureFramesUserVerifiedKeysCount = obj.useSecureFramesUserVerifiedKeysCount({ userId, keyToOmit: userKey });
   let tmp3 = null;
   if (0 !== secureFramesUserVerifiedKeysCount) {
     obj = {};
     const items = [tmp.container, style];
     obj.style = items;
-    obj = { messageType: require(dependencyMap[4]).HelpMessageTypes.INFO };
-    const intl = require(dependencyMap[5]).intl;
+    obj = { messageType: require(1273) /* Button */.HelpMessageTypes.INFO };
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj1 = { count: secureFramesUserVerifiedKeysCount };
-    obj.children = intl.format(require(dependencyMap[5]).t.uZDkz0, obj1);
-    obj.children = jsx(require(dependencyMap[4]).HelpMessage, obj);
-    tmp3 = <View {...obj} />;
+    obj.children = intl.format(require(1212) /* getSystemLocale */.t.uZDkz0, obj1);
+    obj.children = jsx(require(1273) /* Button */.HelpMessage, { messageType: require(1273) /* Button */.HelpMessageTypes.INFO });
+    tmp3 = <View messageType={require(1273) /* Button */.HelpMessageTypes.INFO} />;
   }
   return tmp3;
 };

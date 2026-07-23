@@ -1,21 +1,22 @@
-// Module ID: 11306
-// Function ID: 87980
+// Module ID: 11316
+// Function ID: 88030
 // Name: getAppDMApplication
-// Dependencies: []
+// Dependencies: [4167, 6856, 1849, 2]
 // Exports: getAppDMApplication
 
-// Module 11306 (getAppDMApplication)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/app_dms/getAppDMApplication.tsx");
+// Module 11316 (getAppDMApplication)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_dms/getAppDMApplication.tsx");
 
 export const getAppDMApplication = function getAppDMApplication(channel) {
   let recipientId;
   if (channel.isPrivate()) {
     recipientId = channel.getRecipientId();
   }
-  const user = user.getUser(recipientId);
+  user = user.getUser(recipientId);
   let bot;
   if (null != user) {
     bot = user.bot;
@@ -27,7 +28,7 @@ export const getAppDMApplication = function getAppDMApplication(channel) {
   const appIdForBotUserId = authStore.getAppIdForBotUserId(tmp4);
   let tmp6;
   if (null != tmp4) {
-    const userProfile = userProfile.getUserProfile(tmp4);
+    userProfile = userProfile.getUserProfile(tmp4);
     let id;
     if (null != userProfile) {
       const application = userProfile.application;

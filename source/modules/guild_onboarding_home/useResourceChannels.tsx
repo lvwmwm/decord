@@ -1,19 +1,21 @@
-// Module ID: 15171
-// Function ID: 114400
+// Module ID: 15286
+// Function ID: 116569
 // Name: useResourceChannels
-// Dependencies: []
+// Dependencies: [1348, 4333, 624, 2]
 // Exports: default
 
-// Module 15171 (useResourceChannels)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_onboarding_home/useResourceChannels.tsx");
+// Module 15286 (useResourceChannels)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/guild_onboarding_home/useResourceChannels.tsx");
 
 export default function useResourceChannels(arg0) {
-  const arg1 = arg0;
-  const items = [closure_3, closure_2];
-  return arg1(dependencyMap[2]).useStateFromStoresArray(items, () => {
-    const resourceChannels = resourceChannels.getResourceChannels(arg0);
-    return resourceChannels.filter((channelId) => null != channel.getChannel(channelId.channelId));
+  const _require = arg0;
+  const items = [closure_3, _isNativeReflectConstruct];
+  return _require(624).useStateFromStoresArray(items, () => {
+    const resourceChannels = outer1_3.getResourceChannels(closure_0);
+    return resourceChannels.filter((channelId) => null != outer2_2.getChannel(channelId.channelId));
   });
 };

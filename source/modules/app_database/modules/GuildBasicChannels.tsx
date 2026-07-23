@@ -1,52 +1,68 @@
-// Module ID: 6886
-// Function ID: 54677
+// Module ID: 6891
+// Function ID: 54711
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 5, 6, 7, 4808, 1352, 1194, 1348, 1910, 1838, 3758, 1349, 3, 1882, 6892, 483, 3766, 2]
 
-// Module 6886 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6891 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { createChannelRecordFromServer as closure_9 } from "_callSuper";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { ChannelLoader } from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_14 from "_createForOfIteratorHelperLoose";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "_defineProperties";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -91,26 +107,12 @@ function hasBasicChannelChanged(type, type2) {
   }
   return tmp;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createChannelRecordFromServer;
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-const ChannelLoader = arg1(dependencyMap[7]).ChannelLoader;
-let closure_13 = importDefault(dependencyMap[8]);
-let closure_14 = importDefault(dependencyMap[9]);
-let closure_15 = importDefault(dependencyMap[10]);
-let closure_16 = importDefault(dependencyMap[11]);
-let importDefaultResult = importDefault(dependencyMap[12]);
 importDefaultResult = new importDefaultResult("GuildBasicChannels");
-let tmp4 = () => {
+let tmp4 = (() => {
   class GuildBasicChannels {
     constructor() {
-      f54708 = this;
-      tmp = closure_6(this, GuildBasicChannels);
+      self = this;
+      tmp = outer1_6(this, GuildBasicChannels);
       this.synced = null;
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {
@@ -153,28 +155,27 @@ let tmp4 = () => {
       return;
     }
   }
-  const importAll = GuildBasicChannels;
   let obj = { key: "getAsync" };
   let closure_1 = callback(async function(arg0) {
     let iter2;
     let set;
-    let obj = callback(closure_3[13]);
+    let obj = callback(outer2_3[13]);
     const nowResult = performance.now();
     const items = [obj.basicChannels(arg0).getKvEntries(), ];
     const basicChannelsResult = obj.basicChannels(arg0);
-    const obj3 = callback(closure_3[13]);
-    items[1] = callback(closure_3[13]).syncedBasicChannels(arg0).getKvEntries();
-    const tmp3 = callback2(yield Promise.all(items), 2);
+    const obj3 = callback(outer2_3[13]);
+    items[1] = callback(outer2_3[13]).syncedBasicChannels(arg0).getKvEntries();
+    const tmp3 = outer2_4(yield Promise.all(items), 2);
     const first = tmp3[0];
     const diff = performance.now() - nowResult;
     const items1 = [];
     const items2 = [];
-    const tmp5 = callback3(tmp3[1]);
+    const tmp5 = outer2_18(tmp3[1]);
     let iter = tmp5();
     if (!iter.done) {
       do {
-        let tmp6 = closure_4;
-        let tmp7 = closure_4(iter.value, 2);
+        let tmp6 = outer2_4;
+        let tmp7 = outer2_4(iter.value, 2);
         let arr5 = items2;
         if (tmp7[1]) {
           arr5 = items1;
@@ -185,10 +186,10 @@ let tmp4 = () => {
       } while (!iter2.done);
     }
     const items3 = [items1, items2];
-    const tmp2Result = callback2(items3, 2);
+    const tmp2Result = outer2_4(items3, 2);
     set = new Set(tmp2Result[0]);
     this.synced = set;
-    closure_17.verbose("loaded in " + diff + "ms (guilds: " + first.length + ", synced: " + set.size + " unsynced: " + tmp2Result[1].length + ")");
+    outer2_17.verbose("loaded in " + diff + "ms (guilds: " + first.length + ", synced: " + set.size + " unsynced: " + tmp2Result[1].length + ")");
     obj = {
       all: first,
       stale: arr7,
@@ -203,42 +204,42 @@ let tmp4 = () => {
   obj.value = function getAsync() {
     return callback2(...arguments);
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "handleChannelCreate",
-    value(channel, value) {
+    value(channel, closure_0) {
       const self = this;
       if (null != channel.channel.guild_id) {
-        self.unsync(channel.channel.guild_id, value);
+        self.unsync(channel.channel.guild_id, closure_0);
       }
     }
   };
   items[1] = obj;
   obj = {
     key: "handleChannelDelete",
-    value(channel, value) {
+    value(channel, closure_0) {
       const self = this;
       if (null != channel.channel.guild_id) {
-        self.unsync(channel.channel.guild_id, value);
+        self.unsync(channel.channel.guild_id, closure_0);
       }
     }
   };
   items[2] = obj;
   items[3] = {
     key: "handleChannelUpdates",
-    value(channels, value) {
+    value(channels, closure_0) {
       let iter2;
       const self = this;
       channels = channels.channels;
-      const tmp = callback4(channels.filter((guild_id) => null != guild_id.guild_id));
+      const tmp = outer1_18(channels.filter((guild_id) => null != guild_id.guild_id));
       let iter = tmp();
       if (!iter.done) {
         do {
-          value = iter.value;
-          let tmp2 = closure_20;
-          let tmp3 = closure_11;
-          if (closure_20(closure_11.getBasicChannel(value.id), value)) {
-            let unsyncResult = self.unsync(value.guild_id, value);
+          let value = iter.value;
+          let tmp2 = outer1_20;
+          let tmp3 = outer1_11;
+          if (outer1_20(outer1_11.getBasicChannel(value.id), value)) {
+            let unsyncResult = self.unsync(value.guild_id, closure_0);
           }
           iter2 = tmp();
           iter = iter2;
@@ -251,9 +252,9 @@ let tmp4 = () => {
     value(guilds) {
       let done;
       let closure_0 = arg1;
-      let closure_1 = this;
+      const self = this;
       function _loop(value) {
-        const arg1 = value;
+        let closure_0 = value;
         const data_mode = value.data_mode;
         if ("unavailable" !== data_mode) {
           if ("partial" === data_mode) {
@@ -261,7 +262,7 @@ let tmp4 = () => {
             const channels = value.partial_updates.channels;
             let mapped;
             if (null != channels) {
-              mapped = channels.map((arg0) => callback(arg0, arg0.id));
+              mapped = channels.map((arg0) => outer3_9(arg0, value.id));
             }
             if (null == mapped) {
               mapped = [];
@@ -270,14 +271,14 @@ let tmp4 = () => {
             if (null == deleted_channel_ids) {
               deleted_channel_ids = [];
             }
-            self.onGuildUpdate(id, mapped, deleted_channel_ids, arg1);
+            self.onGuildUpdate(id, mapped, deleted_channel_ids, closure_0);
             const tmp4 = self;
           } else {
-            self.onGuildSync(value.id, arg1);
+            self.onGuildSync(value.id, closure_0);
           }
         }
       }
-      const tmp = callback4(guilds.guilds);
+      const tmp = outer1_18(guilds.guilds);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -294,7 +295,7 @@ let tmp4 = () => {
     value: function handleConnectionOpen(guilds) {
       let done;
       const self = this;
-      const tmp = callback4(guilds.guilds);
+      const tmp = outer1_18(guilds.guilds);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -310,40 +311,42 @@ let tmp4 = () => {
   let closure_0 = callback(async function() {
     const self = this;
     let closure_2;
-    let databaseResult;
-    closure_2 = closure_8.lastTimeConnectedChanged();
-    databaseResult = self(databaseResult[13]).database();
+    let c3;
+    closure_2 = outer2_8.lastTimeConnectedChanged();
+    const databaseResult = callback2(outer2_3[13]).database();
+    c3 = databaseResult;
     if (null != self.synced) {
       if (null != databaseResult) {
         if (obj2.isCacheEnabled()) {
-          const guildIds = guildIds.getGuildIds();
-          const _HermesInternal = HermesInternal;
-          closure_17.verbose("scheduling basic_channel optimstic writes (guilds: " + guildIds.filter((arg0) => {
+          const guildIds = outer2_14.getGuildIds();
+          let _HermesInternal = HermesInternal;
+          outer2_17.verbose("scheduling basic_channel optimstic writes (guilds: " + guildIds.filter((arg0) => {
             const synced = self.synced;
             return !synced.has(arg0);
           }).length + ")");
           function* _loop2(value) {
-            if (null != lib.synced) {
-              if (closure_3 === obj.database()) {
-                if (closure_2 === closure_8.lastTimeConnectedChanged()) {
-                  const synced = lib.synced;
+            let closure_0 = value;
+            if (null != outer1_1.synced) {
+              if (outer1_3 === obj.database()) {
+                if (outer1_2 === outer4_8.lastTimeConnectedChanged()) {
+                  const synced = outer1_1.synced;
                   if (synced.has(tmp)) {
                     return 1;
                   } else {
                     const _HermesInternal = HermesInternal;
-                    closure_17.verbose("optimstically writing basic_channels (guild: " + tmp + ")");
+                    outer4_17.verbose("optimstically writing basic_channels (guild: " + tmp + ")");
                     const items = [tmp];
-                    yield closure_12.loadGuildIds(items);
-                    yield closure_3.transaction((arg0) => closure_1.syncOne(arg0, arg0), "handlePostConnectionOpen");
+                    yield outer4_12.loadGuildIds(items);
+                    yield outer1_3.transaction((arg0) => outer2_1.syncOne(closure_0, arg0), "handlePostConnectionOpen");
                     yield new Promise((arg0) => setTimeout(arg0, 1000));
                   }
                 }
               }
-              const obj = lib(closure_3[13]);
+              obj = callback(outer4_3[13]);
             }
             return 0;
           }
-          const tmp7 = callback(guildIds);
+          const tmp7 = outer2_18(guildIds);
           const iter = tmp7();
           let iter2 = iter;
           if (!iter.done) {
@@ -372,8 +375,6 @@ let tmp4 = () => {
                     iter2 = iter5;
                     if (iter5.done) {
                       break;
-                    } else {
-                      // continue label0
                     }
                   }
                   break;
@@ -383,7 +384,7 @@ let tmp4 = () => {
             const tmp9 = _loop2(iter2.value)[Symbol.iterator]();
           }
         }
-        const obj2 = self(databaseResult[14]);
+        obj2 = callback(outer2_3[14]);
       }
     }
   });
@@ -399,23 +400,23 @@ let tmp4 = () => {
   };
   items[8] = {
     key: "handleOneGuildCreate",
-    value: function handleOneGuildCreate(arg0, value) {
+    value: function handleOneGuildCreate(arg0, closure_0) {
       let channels;
       let id;
       const self = this;
       ({ id, channels } = arg0);
       const op = channels.op;
       if ("full_sync" === op) {
-        self.onGuildSync(id, value);
+        self.onGuildSync(id, closure_0);
       } else if ("update" === op) {
-        self.onGuildUpdate(id, channels.writes, channels.deletes, value);
+        self.onGuildUpdate(id, channels.writes, channels.deletes, closure_0);
       }
     }
   };
   items[9] = {
     key: "handleGuildUpdate",
-    value: function handleGuildUpdate(guild, value) {
-      this.unsync(guild.guild.id, value);
+    value: function handleGuildUpdate(guild, closure_0) {
+      this.unsync(guild.guild.id, closure_0);
     }
   };
   items[10] = {
@@ -429,27 +430,27 @@ let tmp4 = () => {
   };
   items[11] = {
     key: "handleGuildRoleUpdate",
-    value: function handleGuildRoleUpdate(role, value) {
+    value: function handleGuildRoleUpdate(role, closure_0) {
       const self = this;
       role = role.role;
-      role = role.getRole(role.guildId, role.id);
+      role = outer1_13.getRole(role.guildId, role.id);
       let equalsResult = null != role;
       if (equalsResult) {
-        const obj = GuildBasicChannels(closure_3[15]);
-        equalsResult = obj.equals(GuildBasicChannels(closure_3[15]).deserialize(role.permissions), role.permissions);
-        const obj2 = GuildBasicChannels(closure_3[15]);
+        const obj = GuildBasicChannels(outer1_3[15]);
+        equalsResult = obj.equals(GuildBasicChannels(outer1_3[15]).deserialize(role.permissions), role.permissions);
+        const obj2 = GuildBasicChannels(outer1_3[15]);
       }
       if (!equalsResult) {
-        self.unsync(role.guildId, value);
+        self.unsync(role.guildId, closure_0);
       }
     }
   };
   items[12] = {
     key: "handleGuildMemberUpdate",
-    value: function handleGuildMemberUpdate(user, value) {
+    value: function handleGuildMemberUpdate(user, closure_0) {
       const self = this;
-      if (user.user.id === id.getId()) {
-        self.unsync(user.guildId, value);
+      if (user.user.id === outer1_10.getId()) {
+        self.unsync(user.guildId, closure_0);
       }
     }
   };
@@ -467,43 +468,43 @@ let tmp4 = () => {
   };
   items[15] = {
     key: "onGuildUpdate",
-    value: function onGuildUpdate(id, mapped, deleted_channel_ids, value) {
+    value: function onGuildUpdate(id, mapped, deleted_channel_ids, closure_0) {
       const self = this;
       if (tmp) {
-        self.unsync(id, value);
+        self.unsync(id, closure_0);
       }
     }
   };
   items[16] = {
     key: "onGuildSync",
-    value: function onGuildSync(id, value) {
-      this.unsync(id, value);
+    value: function onGuildSync(id, closure_0) {
+      this.unsync(id, closure_0);
     }
   };
   items[17] = {
     key: "delete",
-    value: function _delete(guild_id, value) {
-      this.unsync(guild_id, value);
-      const result = callback2(closure_3[13]).basicChannelsTransaction(value);
+    value: function _delete(guild_id, closure_0) {
+      this.unsync(guild_id, closure_0);
+      const result = callback2(outer1_3[13]).basicChannelsTransaction(closure_0);
       result.delete(guild_id);
-      const obj = callback2(closure_3[13]);
-      const result1 = callback2(closure_3[13]).syncedBasicChannelsTransaction(value);
+      const obj = callback2(outer1_3[13]);
+      const result1 = callback2(outer1_3[13]).syncedBasicChannelsTransaction(closure_0);
       result1.delete(guild_id);
     }
   };
   items[18] = {
     key: "unsync",
-    value: function unsync(guild_id, value) {
+    value: function unsync(guild_id, closure_0) {
       const synced = this.synced;
       if (null != synced) {
         synced.delete(guild_id);
       }
-      const result = callback2(closure_3[13]).basicChannelsTransaction(value);
+      const result = callback2(outer1_3[13]).basicChannelsTransaction(closure_0);
       result.delete(guild_id);
-      const obj = callback2(closure_3[13]);
-      const result1 = callback2(closure_3[13]).syncedBasicChannelsTransaction(value);
+      const obj = callback2(outer1_3[13]);
+      const result1 = callback2(outer1_3[13]).syncedBasicChannelsTransaction(closure_0);
       result1.put(guild_id, false);
-      closure_16.invalidate(guild_id);
+      outer1_16.invalidate(guild_id);
     }
   };
   items[19] = {
@@ -511,9 +512,9 @@ let tmp4 = () => {
     value: function sync(arg0) {
       let iter2;
       const self = this;
-      closure_17.verbose("Starting to write all basic channels");
-      const obj = {};
-      const tmp3 = callback4(store.getGuildIds());
+      outer1_17.verbose("Starting to write all basic channels");
+      const obj = { written: 0, skipped: 0 };
+      const tmp3 = outer1_18(outer1_14.getGuildIds());
       let iter = tmp3();
       if (!iter.done) {
         do {
@@ -526,45 +527,45 @@ let tmp4 = () => {
           iter = iter2;
         } while (!iter2.done);
       }
-      closure_17.verbose("" + obj.written + " basic_channel guilds submitted (took: " + performance.now() - performance.now() + "ms, skipped: " + obj.skipped + " guilds)");
+      outer1_17.verbose("" + obj.written + " basic_channel guilds submitted (took: " + performance.now() - performance.now() + "ms, skipped: " + obj.skipped + " guilds)");
     }
   };
   items[20] = {
     key: "syncOne",
-    value: function syncOne(value, arg1) {
+    value: function syncOne(closure_0, arg1) {
       const self = this;
-      let tmp = null == store.getGuild(value);
+      let tmp = null == outer1_14.getGuild(closure_0);
       if (!tmp) {
         const synced = self.synced;
-        tmp = null != synced && synced.has(value);
-        const tmp2 = null != synced && synced.has(value);
+        tmp = null != synced && synced.has(closure_0);
+        const tmp2 = null != synced && synced.has(closure_0);
       }
       let flag = !tmp;
       if (flag) {
         const synced2 = self.synced;
         if (null != synced2) {
-          synced2.add(value);
+          synced2.add(closure_0);
         }
-        const result = callback2(closure_3[13]).basicChannelsTransaction(arg1);
-        result.put(value, function computeBasicChannels(value) {
-          const values = Object.values(mutableGuildChannelsForGuild.getMutableGuildChannelsForGuild(value));
+        const result = callback2(outer1_3[13]).basicChannelsTransaction(arg1);
+        result.put(closure_0, (function computeBasicChannels(closure_0) {
+          const values = Object.values(outer2_11.getMutableGuildChannelsForGuild(closure_0));
           return values.map((id) => {
-            const obj = { id: id.id, type: id.type, guild_id: id.guild_id, parent_id: id.parent_id, basicPermissions: callback(closure_3[16]).asBasicFlag(closure_15.computePermissions(id)) };
+            const obj = { id: id.id, type: id.type, guild_id: id.guild_id, parent_id: id.parent_id, basicPermissions: callback(outer3_3[16]).asBasicFlag(outer3_15.computePermissions(id)) };
             return obj;
           });
-        }(value));
-        const obj = callback2(closure_3[13]);
-        const result1 = callback2(closure_3[13]).syncedBasicChannelsTransaction(arg1);
-        result1.put(value, true);
+        })(closure_0));
+        let obj = callback2(outer1_3[13]);
+        const result1 = callback2(outer1_3[13]).syncedBasicChannelsTransaction(arg1);
+        result1.put(closure_0, true);
         flag = true;
-        const obj3 = callback2(closure_3[13]);
+        const obj3 = callback2(outer1_3[13]);
       }
       return flag;
     }
   };
   return callback2(GuildBasicChannels, items);
-}();
+})();
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/app_database/modules/GuildBasicChannels.tsx");
+let result = require("_classCallCheck").fileFinishedImporting("modules/app_database/modules/GuildBasicChannels.tsx");
 
 export default tmp4;

@@ -1,21 +1,27 @@
-// Module ID: 9051
-// Function ID: 71082
+// Module ID: 9058
+// Function ID: 71123
 // Name: showRequestFailedAlert
-// Dependencies: []
+// Dependencies: [5, 653, 4029, 4470, 1212, 507, 3976, 2]
 
-// Module 9051 (showRequestFailedAlert)
+// Module 9058 (showRequestFailedAlert)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function showRequestFailedAlert(arg0) {
-  const aPIError = new arg1(dependencyMap[2]).APIError(arg0);
+  const aPIError = new require(4029) /* V6OrEarlierAPIError */.APIError(arg0);
   let anyErrorMessage = aPIError.getAnyErrorMessage();
   const obj = {};
-  const intl = arg1(dependencyMap[4]).intl;
-  obj.title = intl.string(arg1(dependencyMap[4]).t.328j/I);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["328j/I"]);
   if (null == anyErrorMessage) {
-    const intl2 = arg1(dependencyMap[4]).intl;
-    anyErrorMessage = intl2.string(arg1(dependencyMap[4]).t.fEptJP);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    anyErrorMessage = intl2.string(require(1212) /* getSystemLocale */.t.fEptJP);
   }
   obj.body = anyErrorMessage;
-  importDefault(dependencyMap[3]).show(obj);
+  importDefault(4470).show(obj);
 }
 function deleteGameRelationship() {
   return _deleteGameRelationship(...arguments);
@@ -23,51 +29,49 @@ function deleteGameRelationship() {
 function _deleteGameRelationship() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _deleteGameRelationship = obj;
   return obj(...arguments);
 }
 function _removeGameFriend() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _removeGameFriend = obj;
   return obj(...arguments);
 }
 function _cancelGameFriendRequest() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _cancelGameFriendRequest = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ Endpoints: closure_4, RelationshipTypes: closure_5 } = arg1(dependencyMap[1]));
-const obj = {
+({ Endpoints: closure_4, RelationshipTypes: closure_5 } = ME);
+const result = require("V6OrEarlierAPIError").fileFinishedImporting("modules/game_relationships/GameRelationshipActionCreators.tsx");
+
+export default {
   removeGameFriend(arg0) {
     return _removeGameFriend(...arguments);
   },
   acceptGameFriendRequest(userId) {
-    return function addGameRelationship(onSuccess) {
+    return (function addGameRelationship(onSuccess) {
       let applicationId;
       let type;
       let userId;
       onSuccess = onSuccess.onSuccess;
       ({ userId, applicationId, type } = onSuccess);
-      const HTTP = onSuccess(closure_2[5]).HTTP;
-      const obj = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type }, oldFormErrors: true, rejectWithError: false };
-      const putResult = HTTP.put({ url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type }, oldFormErrors: true, rejectWithError: false });
-      return HTTP.put({ url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type }, oldFormErrors: true, rejectWithError: false }).then(() => {
+      const HTTP = outer1_0(outer1_2[5]).HTTP;
+      const obj = { url: outer1_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type }, oldFormErrors: true, rejectWithError: false };
+      const putResult = HTTP.put({ url: outer1_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type }, oldFormErrors: true, rejectWithError: false });
+      return HTTP.put({ url: outer1_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type }, oldFormErrors: true, rejectWithError: false }).then(() => {
         onSuccess();
       }).catch((arg0) => {
-        callback(arg0);
+        outer2_6(arg0);
         return Promise.reject(arg0);
       });
-    }({
+    })({
       userId: userId.userId,
       applicationId: userId.applicationId,
       type: constants.FRIEND,
       onSuccess() {
-        const AccessibilityAnnouncer = callback(closure_2[6]).AccessibilityAnnouncer;
-        const intl = callback(closure_2[4]).intl;
-        AccessibilityAnnouncer.announce(intl.string(callback(closure_2[4]).t.taJiuc));
+        const AccessibilityAnnouncer = outer1_0(outer1_2[6]).AccessibilityAnnouncer;
+        const intl = outer1_0(outer1_2[4]).intl;
+        AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_2[4]).t.taJiuc));
       }
     });
   },
@@ -75,7 +79,3 @@ const obj = {
     return _cancelGameFriendRequest(...arguments);
   }
 };
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/game_relationships/GameRelationshipActionCreators.tsx");
-
-export default obj;

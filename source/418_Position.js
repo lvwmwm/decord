@@ -1,7 +1,7 @@
 // Module ID: 418
 // Function ID: 5885
 // Name: Position
-// Dependencies: []
+// Dependencies: [419]
 
 // Module 418 (Position)
 class Position {
@@ -16,6 +16,6 @@ class Position {
     return;
   }
 }
-importDefault(dependencyMap[0]).addPoolingTo(Position, importDefault(dependencyMap[0]).twoArgumentPooler);
+require("oneArgumentPooler").addPoolingTo(Position, require("oneArgumentPooler").twoArgumentPooler);
 
 export default Position;

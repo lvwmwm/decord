@@ -1,38 +1,39 @@
-// Module ID: 9346
-// Function ID: 73006
+// Module ID: 9353
+// Function ID: 73047
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: []
+// Dependencies: [31, 1838, 1355, 33, 7942, 1212, 1450, 566, 5048, 4561, 9354, 7960, 2]
 // Exports: default
 
-// Module 9346 (RoleSubscriptionEmojiUpsellAlert)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_role_subscriptions/native/emoji_upsell/RoleSubscriptionEmojiUpsellAlert.tsx");
+// Module 9353 (RoleSubscriptionEmojiUpsellAlert)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { StaticChannelRoute } from "set";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/emoji_upsell/RoleSubscriptionEmojiUpsellAlert.tsx");
 
 export default function RoleSubscriptionEmojiUpsellAlert(arg0) {
   let onClose;
-  ({ guildId: closure_0, onClose } = arg0);
-  const importDefault = onClose;
+  let require;
+  ({ guildId: require, onClose } = arg0);
   function handleConfirm() {
-    const result = onClose(stateFromStores[8]).transitionToGuildSync(closure_0, undefined, constants.ROLE_SUBSCRIPTIONS);
+    const result = onClose(stateFromStores[8]).transitionToGuildSync(closure_0, undefined, outer1_5.ROLE_SUBSCRIPTIONS);
     if (null != onClose) {
       onClose();
     }
   }
-  const size = importDefault(dependencyMap[6])();
+  const size = onClose(stateFromStores[6])();
   const diff = Math.min(0.9 * Math.min(size.width, size.height), 500) - 32;
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  let obj = require(stateFromStores[7]);
+  const items = [_createForOfIteratorHelperLoose];
+  stateFromStores = obj.useStateFromStores(items, () => {
     let guild = null;
     if (null != closure_0) {
-      guild = guild.getGuild(closure_0);
+      guild = outer1_4.getGuild(closure_0);
     }
     return guild;
   });
-  const dependencyMap = stateFromStores;
   let name;
   if (null != stateFromStores) {
     name = stateFromStores.name;
@@ -44,23 +45,23 @@ export default function RoleSubscriptionEmojiUpsellAlert(arg0) {
       name = stateFromStores.name;
     }
     let obj = { image: onClose(stateFromStores[4]) };
-    const intl = callback(stateFromStores[5]).intl;
-    obj.title = intl.string(callback(stateFromStores[5]).t.cBjkcx);
-    const intl2 = callback(stateFromStores[5]).intl;
+    const intl = outer1_0(stateFromStores[5]).intl;
+    obj.title = intl.string(outer1_0(stateFromStores[5]).t.cBjkcx);
+    const intl2 = outer1_0(stateFromStores[5]).intl;
     obj = { serverName: name };
-    obj.description = intl2.formatToPlainString(callback(stateFromStores[5]).t.h0u/Hi, obj);
+    obj.description = intl2.formatToPlainString(outer1_0(stateFromStores[5]).t["h0u/Hi"], obj);
     return obj;
   }, items1);
   obj = {};
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.cancelText = intl.string(arg1(dependencyMap[5]).t.cpT0Cq);
+  let intl = require(stateFromStores[5]).intl;
+  obj.cancelText = intl.string(require(stateFromStores[5]).t.cpT0Cq);
   obj.onClose = onClose;
   obj.renderConfirmButton = function renderConfirmButton() {
     const obj = { onPress: handleConfirm };
-    const intl = callback(stateFromStores[5]).intl;
-    obj.text = intl.string(callback(stateFromStores[5]).t.p8FG1D);
-    return callback2(callback(stateFromStores[10]).CreatorRevenueButton, obj);
+    const intl = outer1_0(stateFromStores[5]).intl;
+    obj.text = intl.string(outer1_0(stateFromStores[5]).t.p8FG1D);
+    return outer1_6(outer1_0(stateFromStores[10]).CreatorRevenueButton, obj);
   };
-  obj.children = jsx(arg1(dependencyMap[11]).PremiumUpsellItem, { alertWidth: diff, upsellItem: memo });
-  return jsx(importDefault(dependencyMap[9]), obj);
+  obj.children = jsx(require(stateFromStores[11]).PremiumUpsellItem, { alertWidth: diff, upsellItem: memo });
+  return jsx(onClose(stateFromStores[9]), {});
 };

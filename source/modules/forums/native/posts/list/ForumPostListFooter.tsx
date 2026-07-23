@@ -1,39 +1,44 @@
-// Module ID: 11140
-// Function ID: 86655
+// Module ID: 11150
+// Function ID: 86705
 // Name: ForumPostListFooter
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 11107, 11142, 11143, 10430, 2]
 // Exports: default
 
-// Module 11140 (ForumPostListFooter)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const AnalyticsObjects = arg1(dependencyMap[2]).AnalyticsObjects;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { footer: { "Bool(true)": "text-sm/normal", "Bool(true)": "text-link", "Bool(true)": true, "Bool(true)": "/assets/design/components/Icon/native/redesign/generated/images" } };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.dot = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/forums/native/posts/list/ForumPostListFooter.tsx");
+// Module 11150 (ForumPostListFooter)
+import "result";
+import { View } from "get ActivityIndicator";
+import { AnalyticsObjects } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { footer: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start" } };
+_createForOfIteratorHelperLoose = { height: 4, width: 4, borderRadius: 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginHorizontal: 8 };
+_createForOfIteratorHelperLoose.dot = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/forums/native/posts/list/ForumPostListFooter.tsx");
 
 export default function ForumPostListFooter(parentChannel) {
   let firstMessage;
   let hasUnreads;
   let thread;
   ({ thread, firstMessage, hasUnreads } = parentChannel);
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(11107) /* useTypingUserIds */;
   const typingUserIds = obj.useTypingUserIds(thread.id);
   let tmp2 = typingUserIds.length > 0;
   obj = { style: tmp.footer };
-  const items = [callback(importDefault(dependencyMap[7]), { thread, hasUnreads }), , ];
+  const items = [callback(importDefault(11142), { thread, hasUnreads }), , ];
   if (tmp2) {
     obj = {};
     const obj1 = { style: tmp.dot };
     const items1 = [callback(View, obj1), ];
     const obj2 = { thread, typingUserIds, hasUnreads };
-    items1[1] = callback(importDefault(dependencyMap[8]), obj2);
+    items1[1] = callback(importDefault(11143), obj2);
     obj.children = items1;
     tmp2 = callback2(closure_6, obj);
   }
@@ -41,7 +46,7 @@ export default function ForumPostListFooter(parentChannel) {
   let tmp11 = null != firstMessage;
   if (tmp11) {
     const obj3 = { thread, firstMessage, parentChannel: parentChannel.parentChannel, locationAnalyticsObject: AnalyticsObjects.FORUM_LIST_ITEM_FOOTER };
-    tmp11 = callback(arg1(dependencyMap[9]).MostCommonForumPostReaction, obj3);
+    tmp11 = callback(require(10430) /* MaxForumPostReactions */.MostCommonForumPostReaction, obj3);
   }
   items[2] = tmp11;
   obj.children = items;

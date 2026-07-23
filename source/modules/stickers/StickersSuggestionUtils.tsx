@@ -1,17 +1,16 @@
-// Module ID: 4798
-// Function ID: 41710
+// Module ID: 4801
+// Function ID: 41728
 // Name: removePunctuation
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getQueriesFromUserInput
 
-// Module 4798 (removePunctuation)
+// Module 4801 (removePunctuation)
 function removePunctuation(str) {
   return str.replace(closure_0, "").replace(closure_1, " ");
 }
-let closure_0 = /(!|\.|;|,|-|—|–|\?|"|')/g;
-let closure_1 = /(\n|\t|\s)/g;
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/stickers/StickersSuggestionUtils.tsx");
+const re0 = /(!|\.|;|,|-|—|–|\?|"|')/g;
+const re1 = /(\n|\t|\s)/g;
+const result = require("set").fileFinishedImporting("modules/stickers/StickersSuggestionUtils.tsx");
 
 export { removePunctuation };
 export const getQueriesFromUserInput = function getQueriesFromUserInput(arg0) {

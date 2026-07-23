@@ -1,28 +1,29 @@
-// Module ID: 14865
-// Function ID: 111996
+// Module ID: 14981
+// Function ID: 114164
 // Name: RedesignVoiceUserSummary
-// Dependencies: []
+// Dependencies: [31, 1906, 33, 14982, 566, 4312, 14980, 2]
 // Exports: default
 
-// Module 14865 (RedesignVoiceUserSummary)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/channel_list_v2/native/items/RedesignVoiceUserSummary.tsx");
+// Module 14981 (RedesignVoiceUserSummary)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/items/RedesignVoiceUserSummary.tsx");
 
 export default function RedesignVoiceUserSummary(channels) {
   channels = channels.channels;
-  const arg1 = channels;
   const guildId = channels.guildId;
-  const tmp = importDefault(dependencyMap[3])(guildId);
-  const importDefault = tmp;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => voiceChannelId.getVoiceChannelId());
-  const dependencyMap = stateFromStores;
+  const tmp = importDefault(stateFromStores[3])(guildId);
+  importDefault = tmp;
+  let obj = channels(stateFromStores[4]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_4.getVoiceChannelId());
   const items1 = [channels, stateFromStores, tmp];
-  const stageIcon = React.useMemo(() => channels(stateFromStores[5]).isAnyVoiceStateStage(channels, stateFromStores, tmp), items1);
-  const obj = arg1(dependencyMap[4]);
-  const summarizedVoiceUsers = arg1(dependencyMap[5]).computeSummarizedVoiceUsers({ channels, selectedChannelId: undefined, selectedVoiceChannelId: stateFromStores, voiceStates: tmp });
-  const users = summarizedVoiceUsers.filter((arg0) => null != arg0);
-  return jsx(importDefault(dependencyMap[6]), { users, guildId, stageIcon });
+  const memo = React.useMemo(() => channels(stateFromStores[5]).isAnyVoiceStateStage(channels, stateFromStores, closure_1), items1);
+  const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers({ channels, selectedChannelId: undefined, selectedVoiceChannelId: stateFromStores, voiceStates: tmp });
+  const found = summarizedVoiceUsers.filter((arg0) => null != arg0);
+  obj = { users: found, max: 8, renderIcon: true, guildId, stageIcon: memo };
+  return jsx(importDefault(stateFromStores[6]), { users: found, max: 8, renderIcon: true, guildId, stageIcon: memo });
 };

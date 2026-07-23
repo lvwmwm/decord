@@ -1,12 +1,11 @@
 // Module ID: 1330
-// Function ID: 15573
+// Function ID: 15574
 // Name: updateBackgroundColor
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
 // Module 1330 (updateBackgroundColor)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/themes/updateBackgroundColor.native.tsx");
+const result = require("set").fileFinishedImporting("modules/themes/updateBackgroundColor.native.tsx");
 
 export default function updateBackgroundColor() {
 

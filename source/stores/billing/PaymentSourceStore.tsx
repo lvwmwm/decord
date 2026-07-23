@@ -1,61 +1,68 @@
-// Module ID: 3777
-// Function ID: 29277
+// Module ID: 3779
+// Function ID: 29282
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 3780, 566, 686, 2]
 
-// Module 3777 (_isNativeReflectConstruct)
+// Module 3779 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _callSuper from "_callSuper";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let initialize = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      initialize = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (dispatcher >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        dispatcher = tmp3 + 1;
+        obj.value = length[+dispatcher];
       }
       return obj;
     };
@@ -95,40 +102,33 @@ function _arrayLikeToArray(arg0, arg1) {
 function handlePaymentSourceUpdate(paymentSource) {
   paymentSource = paymentSource.paymentSource;
   const obj = {};
-  const merged = Object.assign(closure_6);
+  const merged = Object.assign(obj);
   obj[paymentSource.id] = paymentSource;
-  closure_6 = obj;
   let isDefault = paymentSource.isDefault;
   if (!isDefault) {
     const _Object = Object;
-    isDefault = 1 === Object.keys(closure_6).length;
+    isDefault = 1 === Object.keys(obj).length;
   }
   if (isDefault) {
     const id = paymentSource.id;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
 let closure_6 = {};
-let closure_7 = null;
-let closure_8 = false;
-let tmp2 = (Store) => {
+let c7 = null;
+let c8 = false;
+let tmp2 = ((Store) => {
   class PaymentSourceStore {
     constructor() {
       self = this;
       tmp = PaymentSourceStore(this, PaymentSourceStore);
-      obj = closure_3(PaymentSourceStore);
-      tmp2 = closure_2;
-      if (closure_9()) {
+      obj = outer1_3(PaymentSourceStore);
+      tmp2 = outer1_2;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -137,26 +137,25 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = PaymentSourceStore;
   callback2(PaymentSourceStore, Store);
   let obj = {
     key: "paymentSources",
     get() {
-      return closure_6;
+      return outer1_6;
     }
   };
   const items = [obj, , , , , , ];
   obj = {
     key: "paymentSourceIds",
     get() {
-      return Object.keys(closure_6);
+      return Object.keys(outer1_6);
     }
   };
   items[1] = obj;
   obj = {
     key: "defaultPaymentSourceId",
     get() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[2] = obj;
@@ -164,8 +163,8 @@ let tmp2 = (Store) => {
     key: "defaultPaymentSource",
     get() {
       let tmp = null;
-      if (null != closure_7) {
-        tmp = closure_6[closure_7];
+      if (null != outer1_7) {
+        tmp = outer1_6[outer1_7];
       }
       return tmp;
     }
@@ -173,7 +172,7 @@ let tmp2 = (Store) => {
   items[4] = {
     key: "hasFetchedPaymentSources",
     get() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[5] = {
@@ -190,13 +189,13 @@ let tmp2 = (Store) => {
   items[6] = {
     key: "getPaymentSource",
     value(arg0) {
-      return closure_6[arg0];
+      return outer1_6[arg0];
     }
   };
   return callback(PaymentSourceStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "PaymentSourceStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: handlePaymentSourceUpdate,
   BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: handlePaymentSourceUpdate,
   BILLING_PAYMENT_SOURCE_FETCH_SUCCESS: handlePaymentSourceUpdate,
@@ -211,10 +210,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       do {
         let value = iter.value;
         let tmp2 = closure_6;
-        let tmp3 = closure_5;
-        closure_6[value.id] = closure_5.createFromServer(value);
+        let tmp3 = _callSuper;
+        closure_6[value.id] = _callSuper.createFromServer(value);
         if (value.default) {
-          closure_7 = value.id;
+          id = value.id;
         }
         iter2 = tmp();
         iter = iter2;
@@ -227,28 +226,27 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     if (tmp4) {
       id = paymentSources[0].id;
     }
-    let closure_8 = true;
+    let c8 = true;
   },
   BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: function handlePaymentSourceRemove(id) {
-    const merged = Object.assign(closure_6);
-    closure_6 = {};
-    delete r0[r2];
-    if (closure_7 === id.id) {
+    const obj = {};
+    const merged = Object.assign(obj);
+    delete tmp[tmp2];
+    if (first === id.id) {
       const _Object = Object;
-      const keys = Object.keys(closure_6);
-      let first = null;
+      const keys = Object.keys(obj);
+      first = null;
       if (0 !== keys.length) {
         first = keys[0];
       }
-      closure_7 = first;
     }
   },
   LOGOUT: function handleLogout() {
     let closure_6 = {};
-    let closure_7 = null;
-    let closure_8 = false;
+    let c7 = null;
+    let c8 = false;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("stores/billing/PaymentSourceStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/billing/PaymentSourceStore.tsx");
 
 export default tmp2;

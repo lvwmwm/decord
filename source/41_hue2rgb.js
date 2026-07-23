@@ -64,7 +64,7 @@ function call() {
   }
   return "\\(\\s*(" + array.join(")\\s*,?\\s*(") + ")\\s*\\)";
 }
-function callModern() {
+function callModern(arg0, arg1, arg2) {
   const length = arguments.length;
   const array = new Array(length);
   for (let num = 0; num < length; num = num + 1) {
@@ -148,9 +148,9 @@ export default function normalizeColor(arg0) {
     return null;
   } else {
     if (undefined === obj) {
-      const text = `${closure_4("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+")}|`;
-      const text1 = `${`${closure_4("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+")}|`}${commaSeparatedCall("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+")}|${closure_6("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+")}`;
-      const obj = {};
+      const text = `${call("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+")}|`;
+      const text1 = `${`${call("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+")}|`}${commaSeparatedCall("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+")}|${callWithSlashSeparator("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+")}`;
+      obj = {};
       const _RegExp = RegExp;
       const regExp = new RegExp("rgb(" + text1 + ")");
       obj.rgb = regExp;
@@ -165,8 +165,8 @@ export default function normalizeColor(arg0) {
       const regExp3 = new RegExp("hsla(" + commaSeparatedCall("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+") + "|" + callWithSlashSeparator("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+") + ")");
       obj.hsla = regExp3;
       const _RegExp5 = RegExp;
-      const text2 = `hwb(${closure_5("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+%")}`;
-      const regExp4 = new RegExp(`hwb(${closure_5("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+%")}` + "|" + callWithSlashSeparator("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+") + ")");
+      const text2 = `hwb(${callModern("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+%")}`;
+      const regExp4 = new RegExp(`hwb(${callModern("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+%")}` + "|" + callWithSlashSeparator("[-+]?\\d*\\.?\\d+", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+%", "[-+]?\\d*\\.?\\d+") + ")");
       tmp = regExp4;
       obj.hwb = regExp4;
       obj.hex3 = /^#([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/;

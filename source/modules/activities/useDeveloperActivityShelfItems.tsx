@@ -1,33 +1,32 @@
-// Module ID: 11152
-// Function ID: 86734
+// Module ID: 11162
+// Function ID: 86784
 // Name: useDeveloperActivityShelfItems
-// Dependencies: []
+// Dependencies: [31, 7370, 4155, 566, 2]
 // Exports: useDeveloperActivityShelfItems
 
-// Module 11152 (useDeveloperActivityShelfItems)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).DEFAULT_EMBEDDED_ACTIVITY_CONFIG;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/activities/useDeveloperActivityShelfItems.tsx");
+// Module 11162 (useDeveloperActivityShelfItems)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { DEFAULT_EMBEDDED_ACTIVITY_CONFIG as closure_4 } from "items3";
+
+const require = arg1;
+const result = require("items3").fileFinishedImporting("modules/activities/useDeveloperActivityShelfItems.tsx");
 
 export const useDeveloperActivityShelfItems = function useDeveloperActivityShelfItems() {
-  const items = [closure_3];
-  const stateFromStoresObject = arg1(dependencyMap[3]).useStateFromStoresObject(items, () => ({ isEnabled: store.getIsEnabled(), lastUsedObject: store.getLastUsedObject() }), []);
-  const isEnabled = stateFromStoresObject.isEnabled;
-  const arg1 = isEnabled;
-  const lastUsedObject = stateFromStoresObject.lastUsedObject;
-  const dependencyMap = lastUsedObject;
-  const obj = arg1(dependencyMap[3]);
-  const items1 = [closure_3];
-  const stateFromStoresArray = arg1(dependencyMap[3]).useStateFromStoresArray(items1, () => store.getDeveloperShelfItems(), []);
-  const React = stateFromStoresArray;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = isEnabled(lastUsedObject[3]).useStateFromStoresObject(items, () => ({ isEnabled: outer1_3.getIsEnabled(), lastUsedObject: outer1_3.getLastUsedObject() }), []);
+  isEnabled = stateFromStoresObject.isEnabled;
+  lastUsedObject = stateFromStoresObject.lastUsedObject;
+  let obj = isEnabled(lastUsedObject[3]);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStoresArray = isEnabled(lastUsedObject[3]).useStateFromStoresArray(items1, () => outer1_3.getDeveloperShelfItems(), []);
   const items2 = [stateFromStoresArray, isEnabled, lastUsedObject];
-  return React.useMemo(() => {
+  return stateFromStoresArray.useMemo(() => {
     if (isEnabled) {
       const mapped = stateFromStoresArray.map((application) => {
         let obj = { application };
         obj = {};
-        const merged = Object.assign(closure_4);
+        const merged = Object.assign(outer2_4);
         const merged1 = Object.assign(application.embeddedActivityConfig);
         obj["application_id"] = application.id;
         obj.activity = obj;
@@ -35,7 +34,7 @@ export const useDeveloperActivityShelfItems = function useDeveloperActivityShelf
       });
       let sorted = mapped.sort((arg0, arg1) => {
         let num = 1;
-        if (null != closure_1[arg0.application.id]) {
+        if (null != outer1_1[arg0.application.id]) {
           let num2 = -1;
           if (null != tmp2) {
             num2 = tmp2 - tmp;

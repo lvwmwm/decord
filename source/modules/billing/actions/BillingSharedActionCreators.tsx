@@ -1,35 +1,43 @@
-// Module ID: 4448
-// Function ID: 39070
+// Module ID: 4452
+// Function ID: 39102
 // Name: _validatePaymentSourceBillingAddress
-// Dependencies: []
+// Dependencies: [5, 3780, 4453, 653, 507, 3798, 686, 1212, 675, 4029, 3791, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 4448 (_validatePaymentSourceBillingAddress)
-async function _validatePaymentSourceBillingAddress(name, arg1) {
-  const HTTP = callback(closure_2[4]).HTTP;
-  let obj = { url: constants.BILLING_PAYMENT_SOURCES_VALIDATE_BILLING_ADDRESS, body: { billing_address: obj }, rejectWithError: false };
-  obj = { name: name.name, line_1: name.line1, line_2: name.line2, city: name.city, state: name.state, postal_code: name.postalCode, country: name.country, email: name.email };
+// Module 4452 (_validatePaymentSourceBillingAddress)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import { StripeErrorTypes } from "StripeErrorTypes";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+async function _validatePaymentSourceBillingAddress(arg0, arg1) {
+  const HTTP = outer2_0(outer2_2[4]).HTTP;
+  obj = { url: outer2_7.BILLING_PAYMENT_SOURCES_VALIDATE_BILLING_ADDRESS, body: { billing_address: obj }, rejectWithError: false };
+  obj = { name: arg0.name, line_1: arg0.line1, line_2: arg0.line2, city: arg0.city, state: arg0.state, postal_code: arg0.postalCode, country: arg0.country, email: arg0.email };
   return yield HTTP.post(obj).body.token;
 }
-async function _popupBridgeState(paymentSourceType, arg1) {
-  const HTTP = callback(closure_2[4]).HTTP;
-  let obj = { y: null, isArray: null, accessible: null, url: closure_7.BILLING_POPUP_BRIDGE(paymentSourceType) };
+async function _popupBridgeState(arg0, arg1) {
+  const HTTP = outer2_0(outer2_2[4]).HTTP;
+  let obj = { url: outer2_7.BILLING_POPUP_BRIDGE(arg0), oldFormErrors: true, rejectWithError: true };
   const state = yield HTTP.post(obj).body.state;
-  obj = { type: "BILLING_POPUP_BRIDGE_STATE_UPDATE", state, paymentSourceType };
-  callback2(closure_2[6]).dispatch(obj);
+  obj = { type: "BILLING_POPUP_BRIDGE_STATE_UPDATE", state, paymentSourceType: arg0 };
+  outer2_1(outer2_2[6]).dispatch(obj);
   return state;
 }
 async function _createPaymentSource(arg0, arg1, arg2, arg3, arg4) {
-  const fn = function*(payment_gateway, token, name, analyticsLocation) {
+  let iter = (function*(payment_gateway, token, name, analyticsLocation) {
     let flag = arg4;
     if (flag === undefined) {
       flag = false;
     }
     yield undefined;
-    let obj = callback2(closure_2[6]);
+    let obj = outer2_1(outer2_2[6]);
     obj.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
-    const HTTP = callback(closure_2[4]).HTTP;
-    obj = { url: constants.BILLING_PAYMENT_SOURCES, query: obj };
+    const HTTP = outer2_0(outer2_2[4]).HTTP;
+    obj = { url: outer2_7.BILLING_PAYMENT_SOURCES, query: obj };
     obj = { location: analyticsLocation.analyticsLocation };
     const obj1 = { payment_gateway, token, billing_address: obj2, billing_address_token: analyticsLocation.billingAddressToken, bank: analyticsLocation.bank };
     let tmp3;
@@ -42,19 +50,15 @@ async function _createPaymentSource(arg0, arg1, arg2, arg3, arg4) {
     obj1.default = flag;
     obj.body = obj1;
     obj.rejectWithError = false;
-    const fromServer = closure_4.createFromServer(yield HTTP.post(obj).body);
-    callback2(closure_2[6]).dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_SUCCESS", paymentSource: fromServer });
+    const fromServer = outer2_4.createFromServer(yield HTTP.post(obj).body);
+    outer2_1(outer2_2[6]).dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_SUCCESS", paymentSource: fromServer });
     return fromServer;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const StripeErrorTypes = arg1(dependencyMap[2]).StripeErrorTypes;
-({ AnalyticEvents: closure_6, Endpoints: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/billing/actions/BillingSharedActionCreators.tsx");
+({ AnalyticEvents: closure_6, Endpoints: closure_7 } = ME);
+let result = require("StripeErrorTypes").fileFinishedImporting("modules/billing/actions/BillingSharedActionCreators.tsx");
 
 export const validatePaymentSourceBillingAddress = function validatePaymentSourceBillingAddress(email) {
   return _validatePaymentSourceBillingAddress(...arguments);
@@ -67,8 +71,8 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     flag = true;
   }
   if (stringResult === undefined) {
-    const intl = flag(dependencyMap[7]).intl;
-    stringResult = intl.string(flag(dependencyMap[7]).t.khEaRI);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1212) /* getSystemLocale */.t.khEaRI);
   }
   if (obj === undefined) {
     obj = {};
@@ -87,7 +91,7 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     }
     obj.payment_source_type = type;
     if ("card_error" === message.type) {
-      let obj3 = importDefault(dependencyMap[8]);
+      let obj3 = importDefault(675);
       obj = {};
       const merged = Object.assign(obj);
       const _Error = Error;
@@ -96,14 +100,14 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
       obj3.track(constants.PAYMENT_SOURCE_CREATION_FAILED, obj);
       flag = false;
     }
-    const BillingError2 = flag(dependencyMap[9]).BillingError;
+    const BillingError2 = require(4029) /* V6OrEarlierAPIError */.BillingError;
     const prototype3 = BillingError2.prototype;
     let billingError2 = new BillingError2(combined);
     let flag2 = flag;
     let tmp13 = obj;
   } else {
     const obj1 = {};
-    const BillingError = flag(dependencyMap[9]).BillingError;
+    const BillingError = require(4029) /* V6OrEarlierAPIError */.BillingError;
     let tmp6 = message;
     if ("string" === typeof message) {
       tmp6 = stringResult;
@@ -121,7 +125,7 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     }
   }
   const obj2 = { type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError2 };
-  importDefault(dependencyMap[6]).dispatch(obj2);
+  importDefault(686).dispatch(obj2);
   if ("string" !== typeof message) {
     message = billingError2.message;
   }
@@ -133,8 +137,8 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     const merged2 = Object.assign(tmp13);
     const merged3 = Object.assign(obj.extra);
     obj3["extra"] = obj4;
-    const result = flag(dependencyMap[10]).captureBillingException(error1, obj3);
-    const obj8 = flag(dependencyMap[10]);
+    const result = require(3791) /* _createGatewayCheckoutContext */.captureBillingException(error1, obj3);
+    const obj8 = require(3791) /* _createGatewayCheckoutContext */;
   }
   return error1;
 };

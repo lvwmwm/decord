@@ -1,10 +1,21 @@
-// Module ID: 8629
-// Function ID: 68382
+// Module ID: 8636
+// Function ID: 68422
 // Name: SteamReviewRow
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 8597, 3827, 8637, 8638, 8600, 1212, 8609, 4126, 4164, 8639, 8645, 8605, 8606, 2]
 // Exports: default
 
-// Module 8629 (SteamReviewRow)
+// Module 8636 (SteamReviewRow)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function SteamReviewRow(url) {
   let isRecentRating;
   let rating;
@@ -12,17 +23,15 @@ function SteamReviewRow(url) {
   let title;
   let trackAction;
   url = url.url;
-  const arg1 = url;
   ({ showBorderBottom, trackAction } = url);
-  const importDefault = trackAction;
   const ratingCount = url.ratingCount;
   ({ title, rating, isRecentRating } = url);
-  const tmp = callback3();
-  const tmp2Result = importDefault(dependencyMap[5])(importDefault(dependencyMap[6]).openURL);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2Result = trackAction(8597)(trackAction(3827).openURL);
   const dependencyMap = tmp2Result;
-  let obj = arg1(dependencyMap[7]);
+  let obj = url(8637);
   const result = obj.calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating);
-  let obj1 = arg1(dependencyMap[8]);
+  let obj1 = url(8638);
   const items = [tmp2Result, url, trackAction];
   const steamReviewScoreDescriptionColor = obj1.getSteamReviewScoreDescriptionColor(result);
   obj = {
@@ -32,8 +41,8 @@ function SteamReviewRow(url) {
     }, items),
     accessibilityRole: "link"
   };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.YNC5Di);
+  const intl = url(1212).intl;
+  obj.accessibilityLabel = intl.string(url(1212).t.YNC5Di);
   const items1 = [tmp.reviewRow, ];
   if (showBorderBottom) {
     showBorderBottom = tmp.reviewRowNotLast;
@@ -41,34 +50,36 @@ function SteamReviewRow(url) {
   items1[1] = showBorderBottom;
   obj.style = items1;
   obj = { style: tmp.steamNameContainer };
-  obj1 = { size: "sm", color: importDefault(dependencyMap[4]).colors.ICON_STRONG };
-  const items2 = [callback(arg1(dependencyMap[11]).SteamNeutralIcon, obj1), callback(arg1(dependencyMap[12]).Text, { children: title })];
+  obj1 = { size: "sm", color: trackAction(689).colors.ICON_STRONG };
+  const items2 = [callback(url(8609).SteamNeutralIcon, obj1), ];
+  const obj2 = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: title };
+  items2[1] = callback(url(4126).Text, obj2);
   obj.children = items2;
   const items3 = [callback2(closure_4, obj), ];
-  const obj2 = { style: tmp.steamRatingContainer };
-  const obj3 = { variant: "text-sm/medium", color: steamReviewScoreDescriptionColor };
-  const tmp2 = importDefault(dependencyMap[5]);
+  const obj3 = { style: tmp.steamRatingContainer };
+  const obj4 = { variant: "text-sm/medium", color: steamReviewScoreDescriptionColor };
+  const tmp2 = trackAction(8597);
   const tmp6 = callback2;
   const tmp7 = closure_5;
   const tmp8 = callback2;
   const tmp9 = closure_4;
-  obj3.children = arg1(dependencyMap[8]).getSteamReviewScoreDescriptionIntl(result);
-  const items4 = [callback(arg1(dependencyMap[12]).Text, obj3), ];
+  obj4.children = url(8638).getSteamReviewScoreDescriptionIntl(result);
+  const items4 = [callback(url(4126).Text, obj4), ];
   let tmp10 = null != ratingCount;
   if (tmp10) {
-    tmp10 = result !== arg1(dependencyMap[13]).SteamReviewScoreDescription.NO_USER_REVIEWS;
+    tmp10 = result !== url(4164).SteamReviewScoreDescription.NO_USER_REVIEWS;
   }
   if (tmp10) {
-    const obj4 = { cachedAt: true, edpbxy: true };
-    const intl2 = arg1(dependencyMap[10]).intl;
-    const obj5 = { rating_count: ratingCount.toLocaleString() };
-    obj4.children = intl2.format(arg1(dependencyMap[10]).t.sgIoin, obj5).toString();
-    tmp10 = callback(arg1(dependencyMap[12]).Text, obj4);
-    const str = intl2.format(arg1(dependencyMap[10]).t.sgIoin, obj5);
+    const obj5 = { variant: "text-sm/medium", color: "text-subtle" };
+    const intl2 = url(1212).intl;
+    const obj6 = { rating_count: ratingCount.toLocaleString() };
+    obj5.children = intl2.format(url(1212).t.sgIoin, obj6).toString();
+    tmp10 = callback(url(4126).Text, obj5);
+    const str = intl2.format(url(1212).t.sgIoin, obj6);
   }
   items4[1] = tmp10;
-  obj2.children = items4;
-  items3[1] = tmp8(tmp9, obj2);
+  obj3.children = items4;
+  items3[1] = tmp8(tmp9, obj3);
   obj.children = items3;
   return tmp6(tmp7, obj);
 }
@@ -78,11 +89,9 @@ function OpenCriticReview(url) {
   let tier;
   let topCriticRating;
   url = url.url;
-  const arg1 = url;
   const trackAction = url.trackAction;
-  const importDefault = trackAction;
   let dependencyMap;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const reviews = url.game.reviews;
   let opencritic;
   if (null != reviews) {
@@ -102,40 +111,40 @@ function OpenCriticReview(url) {
   if (null != topCriticRatingCount) {
     num = topCriticRatingCount;
   }
-  const tmp3Result = importDefault(dependencyMap[5])(importDefault(dependencyMap[6]).openURL);
+  const tmp3Result = trackAction(8597)(trackAction(3827).openURL);
   dependencyMap = tmp3Result;
   const items = [tmp3Result, url, trackAction];
   let str = "";
   const callback = React.useCallback(() => {
-    trackAction(url(tmp3Result[9]).GameProfileTrackActionActions.OpenCriticReviews);
-    tmp3Result(url);
+    trackAction(url(_undefined[9]).GameProfileTrackActionActions.OpenCriticReviews);
+    _undefined(url);
   }, items);
   if (null != tier) {
-    let obj1 = arg1(dependencyMap[14]);
+    let obj1 = url(8639);
     str = obj1.getOpenCriticTierText(tier);
   }
   if (null != tier) {
-    let obj3 = arg1(dependencyMap[14]);
+    let obj3 = url(8639);
     let openCriticCircleRatingColor = obj3.getOpenCriticCircleRatingColor(tier);
   } else {
-    openCriticCircleRatingColor = { "Bool(true)": "Normal", "Bool(true)": true };
+    openCriticCircleRatingColor = { foregroundColor: "", backgroundColor: "" };
   }
   obj = { onPress: callback, accessibilityRole: "link" };
   ({ foregroundColor, backgroundColor } = openCriticCircleRatingColor);
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.aLNBAw);
+  const intl = url(1212).intl;
+  obj.accessibilityLabel = intl.string(url(1212).t.aLNBAw);
   obj.style = tmp.reviewRow;
-  obj = {};
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj.children = intl2.string(arg1(dependencyMap[10]).t.UxvER+);
-  const items1 = [callback(arg1(dependencyMap[12]).Text, obj), ];
+  obj = { variant: "heading-sm/medium", color: "mobile-text-heading-primary" };
+  const intl2 = url(1212).intl;
+  obj.children = intl2.string(url(1212).t["UxvER+"]);
+  const items1 = [callback(url(4126).Text, obj), ];
   obj1 = { style: tmp.opencriticRightContainer };
   let tmp14 = null;
   if (null != tier) {
     const obj2 = { style: tmp.opencriticTopCriticContainer, accessibilityLabel: str, accessibilityRole: "image" };
     obj3 = {};
     const obj4 = {};
-    let obj10 = arg1(dependencyMap[14]);
+    let obj10 = url(8639);
     obj4.uri = obj10.getOpenCriticTierImage(tier);
     obj3.source = obj4;
     obj3.style = tmp.opencriticTopCriticImage;
@@ -156,16 +165,16 @@ function OpenCriticReview(url) {
         const obj6 = { backgroundColor };
         items3[1] = obj6;
         obj5.style = items3;
-        const intl3 = arg1(dependencyMap[10]).intl;
-        obj5.accessibilityLabel = intl3.string(arg1(dependencyMap[10]).t.Ub4YR1);
+        const intl3 = url(1212).intl;
+        obj5.accessibilityLabel = intl3.string(url(1212).t.Ub4YR1);
         obj5.accessibilityRole = "image";
         const obj7 = { rating: num2, strokeColor: foregroundColor, size: 32 };
-        const items4 = [callback(importDefault(dependencyMap[15]), obj7), ];
+        const items4 = [callback(trackAction(8645), obj7), ];
         const obj8 = { style: tmp.opencriticTopCriticRatingContainer };
-        const obj9 = { cachedAt: "absolute", edpbxy: -3 };
+        const obj9 = { variant: "text-xs/bold", color: "text-overlay-light" };
         const _Math = Math;
         obj9.children = Math.floor(num2);
-        obj8.children = callback(arg1(dependencyMap[12]).Text, obj9);
+        obj8.children = callback(url(4126).Text, obj9);
         items4[1] = callback(closure_4, obj8);
         obj5.children = items4;
         tmp21 = callback2(closure_4, obj5);
@@ -176,11 +185,11 @@ function OpenCriticReview(url) {
   if (num2 <= 0) {
     let tmp32 = null;
     if (null == tier) {
-      obj10 = { variant: "text-xs/medium", color: arg1(dependencyMap[8]).getSteamReviewScoreDescriptionColor(arg1(dependencyMap[13]).SteamReviewScoreDescription.NO_USER_REVIEWS) };
-      const intl4 = arg1(dependencyMap[10]).intl;
-      obj10.children = intl4.string(arg1(dependencyMap[10]).t.0xYzpO);
-      tmp32 = callback(arg1(dependencyMap[12]).Text, obj10);
-      const obj18 = arg1(dependencyMap[8]);
+      obj10 = { variant: "text-xs/medium", color: url(8638).getSteamReviewScoreDescriptionColor(url(4164).SteamReviewScoreDescription.NO_USER_REVIEWS) };
+      const intl4 = url(1212).intl;
+      obj10.children = intl4.string(url(1212).t["0xYzpO"]);
+      tmp32 = callback(url(4126).Text, obj10);
+      const obj18 = url(8638);
     }
   } else {
     tmp32 = null;
@@ -191,42 +200,38 @@ function OpenCriticReview(url) {
   obj.children = items1;
   return callback2(closure_5, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, Pressable: closure_5, Image: closure_6 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { gap: importDefault(dependencyMap[4]).space.PX_8 };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.headerText = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8 };
-obj.reviewContainer = { borderRadius: importDefault(dependencyMap[4]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, overflow: "hidden" };
-const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.lg, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, overflow: "hidden" };
-obj.reviewRow = { padding: importDefault(dependencyMap[4]).space.PX_12 };
-const obj3 = { padding: importDefault(dependencyMap[4]).space.PX_12 };
-obj.reviewRowNotLast = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
-const obj5 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[4]).space.PX_8 };
-obj.steamNameContainer = obj5;
-const obj4 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE };
-obj.steamRatingContainer = { paddingLeft: importDefault(dependencyMap[4]).space.PX_32, gap: importDefault(dependencyMap[4]).space.PX_4 };
-const obj7 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[4]).space.PX_12 };
-obj.opencriticRightContainer = obj7;
-const obj6 = { paddingLeft: importDefault(dependencyMap[4]).space.PX_32, gap: importDefault(dependencyMap[4]).space.PX_4 };
-obj.opencriticTopCriticContainer = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
-obj.opencriticTopCriticImage = { "Null": true, "Null": true };
-obj.opencriticTopCriticRatingContainer = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000304209316664174, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011747791549251514, "Null": 9126805506, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001564950676549964, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000543230925073, "Null": 16381034594465807000000000000000000000000000000000000000000000000000000000000000000, "Null": true };
-let closure_9 = obj.createStyles(obj);
-const obj8 = { borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/game_profile/native/components/GameProfileReviews.tsx");
+({ View: closure_4, Pressable: closure_5, Image: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerText = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.reviewContainer = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, overflow: "hidden" };
+let obj3 = { height: 56, flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.reviewRow = obj3;
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, overflow: "hidden" };
+_createForOfIteratorHelperLoose.reviewRowNotLast = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+let obj5 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.steamNameContainer = obj5;
+let obj6 = { flexDirection: "row", alignItems: "flex-end", flexShrink: 1, paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_32, gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.steamRatingContainer = obj6;
+let obj7 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.opencriticRightContainer = obj7;
+let obj8 = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.opencriticTopCriticContainer = obj8;
+_createForOfIteratorHelperLoose.opencriticTopCriticImage = { width: 32, height: 32 };
+_createForOfIteratorHelperLoose.opencriticTopCriticRatingContainer = { position: "absolute", top: 0, left: 1, right: 0, bottom: 0, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+let result = require("jsxProd").fileFinishedImporting("modules/game_profile/native/components/GameProfileReviews.tsx");
 
 export default function GameProfileReviews(arg0) {
   let game;
   let trackAction;
   ({ game, trackAction } = arg0);
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[16]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(8605) /* buildSteamStoreUrl */;
   let id;
   if (null != game) {
     id = game.id;
@@ -238,13 +243,13 @@ export default function GameProfileReviews(arg0) {
   if (null == game) {
     return null;
   } else {
-    const tmp4 = game.steamReleaseStatus !== arg1(dependencyMap[17]).SteamReleaseStatus.RETIRED_ABANDONED && null != steamWebsiteUrl;
+    const tmp4 = game.steamReleaseStatus !== require(8606) /* SteamReleaseStatus */.SteamReleaseStatus.RETIRED_ABANDONED && null != steamWebsiteUrl;
     const reviews = game.reviews;
     let steam;
     if (null != reviews) {
       steam = reviews.steam;
     }
-    const calculateSteamReviewScoreDescription = arg1(dependencyMap[7]).calculateSteamReviewScoreDescription;
+    const calculateSteamReviewScoreDescription = require(8637) /* calculateSteamReviewScoreDescription */.calculateSteamReviewScoreDescription;
     if (null != steam) {
       let recentRating = steam.recentRating;
     }
@@ -253,9 +258,9 @@ export default function GameProfileReviews(arg0) {
     }
     let tmp10 = tmp4;
     if (tmp4) {
-      tmp10 = tmp9 !== arg1(dependencyMap[13]).SteamReviewScoreDescription.NO_USER_REVIEWS;
+      tmp10 = tmp9 !== require(4164) /* _isNativeReflectConstruct */.SteamReviewScoreDescription.NO_USER_REVIEWS;
     }
-    let obj1 = arg1(dependencyMap[8]);
+    let obj1 = require(8638) /* getSteamReviewScoreDescriptionColor */;
     const result = obj1.canShowLocalizedSteamReview(steam);
     if (result) {
       let localizedRating;
@@ -275,7 +280,7 @@ export default function GameProfileReviews(arg0) {
     } else if (!tmp18) {
       ratingCount = steam.ratingCount;
     }
-    const t = arg1(dependencyMap[10]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     const reviews2 = game.reviews;
     let opencritic;
     if (null != reviews2) {
@@ -288,10 +293,10 @@ export default function GameProfileReviews(arg0) {
       return tmp26Result;
     }
     obj = { style: tmp.container };
-    obj = { cachedAt: "polite", edpbxy: "column", style: tmp.headerText };
-    const intl = arg1(dependencyMap[10]).intl;
-    obj.children = intl.string(arg1(dependencyMap[10]).t.GaAQXP);
-    const items = [callback(arg1(dependencyMap[12]).Text, obj), ];
+    obj = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.children = intl.string(require(1212) /* getSystemLocale */.t.GaAQXP);
+    const items = [callback(require(4126) /* Text */.Text, obj), ];
     obj1 = { style: tmp.reviewContainer };
     let tmp34Result = null;
     if (tmp10) {
@@ -304,8 +309,8 @@ export default function GameProfileReviews(arg0) {
         }
         obj2.showBorderBottom = tmp36;
         obj2.trackAction = trackAction;
-        const intl2 = arg1(dependencyMap[10]).intl;
-        obj2.title = intl2.string(arg1(dependencyMap[10]).t.MQGNsN);
+        const intl2 = require(1212) /* getSystemLocale */.intl;
+        obj2.title = intl2.string(require(1212) /* getSystemLocale */.t.MQGNsN);
         recentRating = undefined;
         if (null != steam) {
           recentRating = steam.recentRating;
@@ -328,7 +333,7 @@ export default function GameProfileReviews(arg0) {
       tmp41 = null;
       if (null != steamWebsiteUrl) {
         const obj3 = { url: steamWebsiteUrl, showBorderBottom: tmp24, trackAction };
-        const intl3 = arg1(dependencyMap[10]).intl;
+        const intl3 = require(1212) /* getSystemLocale */.intl;
         obj3.title = intl3.string(tmp22);
         obj3.rating = rating;
         obj3.ratingCount = ratingCount;
@@ -350,11 +355,11 @@ export default function GameProfileReviews(arg0) {
     items[1] = closure_8(closure_4, obj1);
     obj.children = items;
     tmp26Result = closure_8(closure_4, obj);
-    const tmp22 = result ? t.aWb+V4 : t.8e4LiB;
+    tmp22 = result ? t["aWb+V4"] : t["8e4LiB"];
     const tmp26 = closure_8;
     const tmp27 = closure_4;
     const tmp31 = closure_8;
     const tmp32 = closure_4;
-    const tmp8 = arg1(dependencyMap[7]);
+    const tmp8 = require(8637) /* calculateSteamReviewScoreDescription */;
   }
 };

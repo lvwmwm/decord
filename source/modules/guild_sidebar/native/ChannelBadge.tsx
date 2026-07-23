@@ -1,17 +1,19 @@
-// Module ID: 14936
-// Function ID: 112442
+// Module ID: 15052
+// Function ID: 114610
 // Name: ChannelBadge
-// Dependencies: []
+// Dependencies: [31, 27, 1921, 33, 4130, 624, 15053, 11395, 4126, 1827, 2]
 // Exports: default
 
-// Module 14936 (ChannelBadge)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles(() => ({ channelInfoContainer: { paddingStart: 4 } }));
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_sidebar/native/ChannelBadge.tsx");
+// Module 15052 (ChannelBadge)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(() => ({ channelInfoContainer: { paddingStart: 4 } }));
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_sidebar/native/ChannelBadge.tsx");
 
 export default function ChannelBadge(arg0) {
   let isMentionLowImportance;
@@ -22,21 +24,21 @@ export default function ChannelBadge(arg0) {
   ({ mentionCount, postsWithUnreadsCount, muted } = arg0);
   ({ isMentionLowImportance, isNewChannel } = arg0);
   const tmp = callback();
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
+  let obj = require(624) /* defaultAreStatesEqual */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.locale);
   if (null != mentionCount) {
     if (mentionCount > 0) {
       obj = { style: tmp.channelInfoContainer };
       obj = { mentionsCount: mentionCount, isMentionLowImportance };
-      obj.children = jsx(importDefault(dependencyMap[6]), obj);
-      let tmp3 = <View {...obj} />;
+      obj.children = jsx(importDefault(15053), { mentionsCount: mentionCount, isMentionLowImportance });
+      let tmp3 = <View mentionsCount={mentionCount} isMentionLowImportance={isMentionLowImportance} />;
     }
     return tmp3;
   }
   if (isNewChannel) {
-    const obj1 = { style: tmp.channelInfoContainer, children: jsx(importDefault(dependencyMap[7]), {}) };
-    tmp3 = <View {...obj1} />;
+    const obj1 = { style: tmp.channelInfoContainer, children: jsx(importDefault(11395), {}) };
+    tmp3 = <View style={tmp.channelInfoContainer}>{jsx(importDefault(11395), {})}</View>;
   } else {
     tmp3 = null;
     if (null != muted) {
@@ -47,11 +49,11 @@ export default function ChannelBadge(arg0) {
           tmp3 = null;
           if (postsWithUnreadsCount > 0) {
             const obj2 = { style: tmp.channelInfoContainer };
-            let obj3 = { cachedAt: 15, edpbxy: "center" };
-            obj3 = arg1(dependencyMap[9]);
+            let obj3 = { variant: "text-xs/semibold", color: "text-muted" };
+            obj3 = require(1827) /* shortenAndLocalizeNumber */;
             obj3.children = obj3.humanizeValue(postsWithUnreadsCount, stateFromStores);
-            obj2.children = jsx(arg1(dependencyMap[8]).Text, obj3);
-            tmp3 = <View {...obj2} />;
+            obj2.children = jsx(require(4126) /* Text */.Text, obj3);
+            tmp3 = <View style={tmp.channelInfoContainer} />;
           }
         }
       }

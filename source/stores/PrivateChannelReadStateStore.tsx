@@ -1,9 +1,22 @@
-// Module ID: 12564
-// Function ID: 96595
+// Module ID: 12678
+// Function ID: 98751
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1352, 1348, 4142, 1906, 5603, 1916, 566, 686, 2]
 
-// Module 12564 (_isNativeReflectConstruct)
+// Module 12678 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { isPrivate } from "_callSuper";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +26,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +79,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,14 +106,13 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function rebuildUnreads() {
-  const privateChannelIds = privateChannelIds.getPrivateChannelIds();
-  const found = privateChannelIds.filter((arg0) => mentionCount.getMentionCount(arg0) > 0);
+  privateChannelIds = privateChannelIds.getPrivateChannelIds();
+  const found = privateChannelIds.filter((arg0) => outer1_9.getMentionCount(arg0) > 0);
   if (found.length > 20) {
     found.length = 20;
   }
-  let flag = !arg1(dependencyMap[10]).areArraysShallowlyEqual(found, closure_12);
+  let flag = !require(1916) /* areArraysShallowlyEqual */.areArraysShallowlyEqual(found, found);
   if (flag) {
-    closure_12 = found;
     const _Set = Set;
     const set = new Set(found);
     flag = true;
@@ -122,31 +134,21 @@ function handleGenericUpdate(channelId) {
   }
   return tmp4;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const isPrivate = arg1(dependencyMap[5]).isPrivate;
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
 let closure_12 = [];
-const set = new Set();
-let tmp3 = (Store) => {
+let set = new Set();
+let tmp3 = ((Store) => {
   class PrivateChannelReadStateStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, PrivateChannelReadStateStore);
-      obj = closure_5(PrivateChannelReadStateStore);
-      tmp2 = closure_4;
-      if (closure_14()) {
+      tmp = outer1_2(this, PrivateChannelReadStateStore);
+      obj = outer1_5(PrivateChannelReadStateStore);
+      tmp2 = outer1_4;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -155,26 +157,25 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = PrivateChannelReadStateStore;
   callback2(PrivateChannelReadStateStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_11, closure_8, closure_10, closure_9);
+      this.waitFor(outer1_11, outer1_8, outer1_10, outer1_9);
     }
   };
   const items = [obj, ];
   obj = {
     key: "getUnreadPrivateChannelIds",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[1] = obj;
   return callback(PrivateChannelReadStateStore, items);
-}(importDefault(dependencyMap[11]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "PrivateChannelReadStateStore";
-tmp3 = new tmp3(importDefault(dependencyMap[12]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: handleConnectionOpen,
   OVERLAY_INITIALIZE: handleConnectionOpen,
   MESSAGE_CREATE: handleGenericUpdate,
@@ -232,12 +233,12 @@ tmp3 = new tmp3(importDefault(dependencyMap[12]), {
     let flag2 = false;
     if (!iter.done) {
       do {
-        let tmp2 = closure_8;
-        let channel = closure_8.getChannel(iter2.value.id);
+        let tmp2 = store;
+        let channel = store.getChannel(iter2.value.id);
         let tmp4 = null != channel;
         if (tmp4) {
-          let tmp5 = closure_7;
-          tmp4 = closure_7(channel.type);
+          let tmp5 = isPrivate;
+          tmp4 = isPrivate(channel.type);
         }
         if (tmp4) {
           flag = true;
@@ -254,6 +255,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[12]), {
     return tmp6;
   }
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("stores/PrivateChannelReadStateStore.tsx");
+let result = set.fileFinishedImporting("stores/PrivateChannelReadStateStore.tsx");
 
 export default tmp3;

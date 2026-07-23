@@ -1,12 +1,11 @@
-// Module ID: 9202
-// Function ID: 72058
+// Module ID: 9209
+// Function ID: 72099
 // Name: getError
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 9202 (getError)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/auth/native/getError.tsx");
+// Module 9209 (getError)
+const result = require("set").fileFinishedImporting("modules/auth/native/getError.tsx");
 
 export default function getError(arg0, arg1) {
   let tmp2 = null;

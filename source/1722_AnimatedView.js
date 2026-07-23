@@ -1,9 +1,10 @@
 // Module ID: 1722
-// Function ID: 19367
+// Function ID: 19368
 // Name: AnimatedView
-// Dependencies: []
+// Dependencies: [27, 1616]
 
 // Module 1722 (AnimatedView)
-const _module = require(dependencyMap[1]);
+import createAnimatedComponent from "createAnimatedComponent";
 
-export const AnimatedView = _module.createAnimatedComponent(require(dependencyMap[0]).View);
+
+export const AnimatedView = createAnimatedComponent.createAnimatedComponent(require("get ActivityIndicator").View);

@@ -1,45 +1,48 @@
-// Module ID: 8554
-// Function ID: 68006
+// Module ID: 8561
+// Function ID: 68046
 // Name: OrbsBadgeCoachmarkImg
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 8562, 1212, 3982, 8563, 2]
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 8554 (OrbsBadgeCoachmarkImg)
+// Module 8561 (OrbsBadgeCoachmarkImg)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function OrbsBadgeCoachmarkImg() {
   const tmp = callback();
   let obj = { style: tmp.coachmarkImageContainer };
   obj = {};
-  obj = { uri: importDefault(dependencyMap[4]) };
+  obj = { uri: importDefault(8562) };
   obj.source = obj;
   obj.style = tmp.coachmarkImage;
-  obj.children = <closure_5 {...obj} />;
-  return <closure_4 {...obj} />;
+  obj.children = <closure_5 uri={importDefault(8562)} />;
+  return <closure_4 uri={importDefault(8562)} />;
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const tmp2 = arg1(dependencyMap[1]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ coachmarkImageContainer: { <string:3596066964>: null, <string:3638417373>: null }, coachmarkImage: {}, coachmarkDescription: { marginBottom: -10 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/collectibles/native/OrbsBadgeCoachmark.tsx");
+({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 80, height: 80 }, coachmarkDescription: { marginBottom: -10 } });
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/OrbsBadgeCoachmark.tsx");
 
 export default function OrbsBadgeCoachmark(badgeRef) {
   let obj = Object.create(null);
   obj.badgeRef = 0;
   const merged = Object.assign(badgeRef, obj);
-  obj = arg1(dependencyMap[7]);
+  obj = require(8563) /* useCoachmark */;
   const coachmark = obj.useCoachmark(badgeRef.badgeRef, merged);
   return null;
 };
 export const useOrbsBadgeCoachmark = function useOrbsBadgeCoachmark(disabled) {
   disabled = disabled.disabled;
-  const arg1 = disabled;
   const tmp = callback();
   const importDefault = tmp;
   const items = [disabled, tmp.coachmarkDescription];
   let tmp3 = null;
   if (!disabled) {
-    const obj = { props: tmp2 };
+    let obj = { props: tmp2 };
     tmp3 = obj;
   }
   return tmp3;

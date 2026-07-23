@@ -1,30 +1,33 @@
-// Module ID: 8126
-// Function ID: 64354
+// Module ID: 8132
+// Function ID: 64391
 // Name: PremiumFeaturesWumpus
-// Dependencies: []
+// Dependencies: [31, 1851, 33, 4130, 8133, 7115, 8134, 8135, 8136, 8137, 7117, 5085, 2]
 // Exports: default
 
-// Module 8126 (PremiumFeaturesWumpus)
-let closure_2 = importAll(dependencyMap[0]);
-const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const items = [{ scaleX: -1 }];
-let closure_7 = arg1(dependencyMap[3]).createStyles({ clouds: {}, wumpus: {}, wumpusLeft: { transform: items } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesWumpus.tsx");
+// Module 8132 (PremiumFeaturesWumpus)
+import result from "result";
+import { PremiumTypes } from "GuildFeatures";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+let items = [{ scaleX: -1 }];
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ clouds: { position: "absolute", top: 0, right: 0 }, wumpus: { position: "absolute", top: 22, right: 22, height: 90 }, wumpusLeft: { transform: items } });
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesWumpus.tsx");
 
 export default function PremiumFeaturesWumpus(premiumType) {
   let cloudsImageSource;
   let wumpusImageSource;
   premiumType = premiumType.premiumType;
-  const importDefault = premiumType;
   const tmp = callback2();
-  const tmp2 = importDefault(dependencyMap[4])();
+  const tmp2 = premiumType(8133)();
   const dependencyMap = tmp2;
   const items = [premiumType, tmp2];
   const memo = React.useMemo(() => {
-    if (premiumType === TIER_0.TIER_0) {
+    if (premiumType === outer1_3.TIER_0) {
       let obj = { wumpusImageSource: premiumType(tmp2[5]) };
       if (tmp2) {
         let tmp12 = tmp11[6];
@@ -46,7 +49,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   let obj = {};
   ({ wumpusImageSource, cloudsImageSource } = memo);
   obj = { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource };
-  const items1 = [callback(importDefault(dependencyMap[11]), obj), ];
+  const items1 = [callback(premiumType(5085), obj), ];
   obj = {};
   const items2 = [tmp.wumpus, , ];
   let wumpusLeft = premiumType === PremiumTypes.TIER_0;
@@ -58,7 +61,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   obj.style = items2;
   obj.resizeMode = "contain";
   obj.source = wumpusImageSource;
-  items1[1] = callback(importDefault(dependencyMap[11]), obj);
+  items1[1] = callback(premiumType(5085), obj);
   obj.children = items1;
   return closure_6(closure_5, obj);
 };

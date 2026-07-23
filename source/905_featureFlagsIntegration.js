@@ -1,20 +1,21 @@
 // Module ID: 905
-// Function ID: 9948
+// Function ID: 9949
 // Name: featureFlagsIntegration
-// Dependencies: []
+// Dependencies: [863, 906]
 
 // Module 905 (featureFlagsIntegration)
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
+import setupIntegration from "setupIntegration";
 
-export const featureFlagsIntegration = _module.defineIntegration(() => ({
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const featureFlagsIntegration = setupIntegration.defineIntegration(() => ({
   name: "FeatureFlags",
   processEvent(contexts) {
-    return callback(closure_1[1])._INTERNAL_copyFlagsFromScopeToEvent(contexts);
+    return outer1_0(outer1_1[1])._INTERNAL_copyFlagsFromScopeToEvent(contexts);
   },
   addFeatureFlag(first, value) {
-    const result = callback(closure_1[1])._INTERNAL_insertFlagToScope(first, value);
-    const obj = callback(closure_1[1]);
-    const result1 = callback(closure_1[1])._INTERNAL_addFeatureFlagToActiveSpan(first, value);
+    const result = outer1_0(outer1_1[1])._INTERNAL_insertFlagToScope(first, value);
+    const obj = outer1_0(outer1_1[1]);
+    const result1 = outer1_0(outer1_1[1])._INTERNAL_addFeatureFlagToActiveSpan(first, value);
   }
 }));

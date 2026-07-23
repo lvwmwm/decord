@@ -1,52 +1,61 @@
-// Module ID: 16504
-// Function ID: 127419
+// Module ID: 16621
+// Function ID: 129593
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 15903, 4044, 7461, 1194, 1348, 1838, 3, 3988, 10330, 16092, 686, 6917, 1554, 675, 5590, 7460, 4138, 14400, 1284, 2]
 
-// Module 16504 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16621 (_createForOfIteratorHelperLoose)
+import importDefaultResult from "_isNativeReflectConstruct";
+import { applicationReady } from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult1 from "shouldWaitForBlockingModals";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,12 +95,12 @@ function _arrayLikeToArray(arg0, arg1) {
 function sendReply(success, message, arg2) {
   const merged = Object.assign(arg2);
   const json = JSON.stringify({ type: "response", status: success, message });
-  importDefault(dependencyMap[8]).logToDevice(json);
+  importDefault(3988).logToDevice(json);
 }
 function sendStatus(message) {
   importDefaultResult1.log(message);
   const json = JSON.stringify({ type: "status", message });
-  importDefault(dependencyMap[8]).logToDevice(json);
+  importDefault(3988).logToDevice(json);
 }
 function getErrorDetails(arr) {
   let done2;
@@ -102,9 +111,9 @@ function getErrorDetails(arr) {
       let prototypeOf = arr;
       if (null != arr) {
         do {
-          let tmp = closure_13;
+          let tmp = _createForOfIteratorHelperLoose;
           let _Object = Object;
-          let tmp2 = closure_13(Object.getOwnPropertyNames(prototypeOf));
+          let tmp2 = _createForOfIteratorHelperLoose(Object.getOwnPropertyNames(prototypeOf));
           let iter = tmp2();
           let tmp3 = prototypeOf;
           if (!iter.done) {
@@ -112,7 +121,7 @@ function getErrorDetails(arr) {
               let addResult = set.add(iter.value);
               let iter2 = tmp2();
               iter = iter2;
-              let done = iter2.done;
+              done = iter2.done;
             } while (!done);
           }
           let _Object2 = Object;
@@ -142,7 +151,6 @@ function setupTTITest() {
 function _setupTTITest() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = importDefaultResult(tmp);
-  const _setupTTITest = obj;
   return obj(...arguments);
 }
 function apiLogin() {
@@ -151,87 +159,79 @@ function apiLogin() {
 function _apiLogin() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = importDefaultResult(tmp);
-  const _apiLogin = obj;
   return obj(...arguments);
 }
 function subscribeOnce(subscribe) {
-  const arg1 = subscribe;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
+  let closure_0 = subscribe;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
   function handler(arg0) {
-    arg0.unsubscribe(arg1, handler);
-    return arg2(arg0);
+    subscribe.unsubscribe(closure_1, handler);
+    return callback(arg0);
   }
   return subscribe.subscribe(arg1, handler);
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const applicationReady = arg1(dependencyMap[1]).applicationReady;
-let closure_5 = importDefault(dependencyMap[2]);
-arg1(dependencyMap[3]).addPostConnectionCallback;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let importDefaultResult1 = importDefault(dependencyMap[7]);
+require("shouldWaitForBlockingModals").addPostConnectionCallback;
 importDefaultResult1 = new importDefaultResult1("TTITestAction");
-const obj = {
-  setup-test: setupTTITest,
+let obj = {
+  "setup-test": setupTTITest,
   ping() {
     const json = JSON.stringify({ type: "pong" });
-    importDefault(dependencyMap[8]).logToDevice(json);
+    importDefault(3988).logToDevice(json);
   },
   () => {
-    const result = arg1(dependencyMap[9]).resetComponentProfiler();
+    const result = require(10330) /* formatString */.resetComponentProfiler();
     sendReply("success", "reset-component-profiler");
   },
   () => {
-    const result = arg1(dependencyMap[9]).pauseComponentProfiler();
+    const result = require(10330) /* formatString */.pauseComponentProfiler();
     sendReply("success", "pause-component-profiler");
   },
   () => {
-    const result = arg1(dependencyMap[9]).resumeComponentProfiler();
+    const result = require(10330) /* formatString */.resumeComponentProfiler();
     sendReply("success", "resume-component-profiler");
   },
   () => {
-    const obj = { stats: arg1(dependencyMap[9]).dumpStats() };
+    const obj = { stats: require(10330) /* formatString */.dumpStats() };
     sendReply("success", "dump-component-profiler-stats", obj);
   },
   () => {
     const obj = {};
     let report;
-    if (null != importDefault(dependencyMap[10])) {
-      report = importDefault(dependencyMap[10]).requestReport();
-      const obj2 = importDefault(dependencyMap[10]);
+    if (null != importDefault(16092)) {
+      report = importDefault(16092).requestReport();
+      const obj2 = importDefault(16092);
     }
     obj.report = report;
     sendReply("success", "dump-jank-stats", obj);
   },
   (multiplier) => {
-    if (null != importDefault(dependencyMap[10])) {
-      const result = importDefault(dependencyMap[10]).setJankHeuristicMultiplier(multiplier.multiplier);
-      const obj = importDefault(dependencyMap[10]);
+    if (null != importDefault(16092)) {
+      const result = importDefault(16092).setJankHeuristicMultiplier(multiplier.multiplier);
+      const obj = importDefault(16092);
     }
     sendReply("success", "set-jank-multiplier");
   },
   () => {
-    if (null != importDefault(dependencyMap[10])) {
-      importDefault(dependencyMap[10]).startTracking();
-      const obj = importDefault(dependencyMap[10]);
+    if (null != importDefault(16092)) {
+      importDefault(16092).startTracking();
+      const obj = importDefault(16092);
     }
     sendReply("success", "start-jank-stats");
   },
   (action) => {
-    importDefault(dependencyMap[11]).dispatch(action.action);
+    importDefault(686).dispatch(action.action);
     sendReply("success", "flux-dispatch");
   },
   () => {
     sendReply("success", "get-token", { token: token.getToken() });
   },
-  get-resource-usage: fn
+  "get-resource-usage": fn
 };
-const fn = () => {
-  const obj = { cumulativeCPU: importDefault(dependencyMap[12]).getCumulativeCPUUsage() };
-  const obj2 = importDefault(dependencyMap[12]);
-  obj.currentMemoryUsage = importDefault(dependencyMap[12]).getCurrentMemoryUsageKB();
+fn = () => {
+  const obj = { cumulativeCPU: importDefault(6917).getCumulativeCPUUsage() };
+  const obj2 = importDefault(6917);
+  obj.currentMemoryUsage = importDefault(6917).getCurrentMemoryUsageKB();
   sendReply("success", "get-resource-usage", obj);
 };
 // CreateGeneratorClosureLongIndex (0x67)
@@ -239,12 +239,12 @@ let closure_10 = importDefaultResult(fn);
 obj.backchannel = function() {
   return callback(...arguments);
 };
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/headless_tasks/android/TTITestAction.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/headless_tasks/android/TTITestAction.tsx");
 
-export default () => {
+export default (() => {
   // CreateGeneratorClosureLongIndex (0x67)
   let closure_0 = importDefaultResult(tmp);
   return function(arg0) {
     return callback(...arguments);
   };
-}();
+})();

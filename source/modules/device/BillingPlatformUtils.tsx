@@ -1,27 +1,26 @@
-// Module ID: 3787
-// Function ID: 29531
+// Module ID: 3789
+// Function ID: 29536
 // Name: isPremiumGiftingSupported
-// Dependencies: []
+// Dependencies: [1553, 477, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported
 
-// Module 3787 (isPremiumGiftingSupported)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/device/BillingPlatformUtils.tsx");
+// Module 3789 (isPremiumGiftingSupported)
+const result = require("set").fileFinishedImporting("modules/device/BillingPlatformUtils.tsx");
 
 export const isPremiumGiftingSupported = function isPremiumGiftingSupported() {
-  return !require(dependencyMap[0]).isMetaQuest();
+  return !require(1553) /* isMetaQuest */.isMetaQuest();
 };
 export const isGooglePlayBillingSupported = function isGooglePlayBillingSupported() {
-  let isAndroidResult = require(dependencyMap[1]).isAndroid();
+  let isAndroidResult = require(477) /* set */.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = !require(dependencyMap[0]).isMetaQuest();
-    const obj2 = require(dependencyMap[0]);
+    isAndroidResult = !require(1553) /* isMetaQuest */.isMetaQuest();
+    const obj2 = require(1553) /* isMetaQuest */;
   }
   return isAndroidResult;
 };
 export const isCollectibleGiftingSupported = function isCollectibleGiftingSupported() {
-  return !require(dependencyMap[0]).isMetaQuest();
+  return !require(1553) /* isMetaQuest */.isMetaQuest();
 };
 export const isSocialLayerStorefrontGiftingSupported = function isSocialLayerStorefrontGiftingSupported() {
-  return !require(dependencyMap[0]).isMetaQuest();
+  return !require(1553) /* isMetaQuest */.isMetaQuest();
 };

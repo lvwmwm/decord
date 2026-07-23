@@ -1,31 +1,32 @@
-// Module ID: 12374
-// Function ID: 94630
+// Module ID: 12488
+// Function ID: 96786
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: []
+// Dependencies: [31, 3712, 3800, 2]
 // Exports: default
 
-// Module 12374 (useOutboundPromotionRedemptionEndDate)
+// Module 12488 (useOutboundPromotionRedemptionEndDate)
+import result from "result";
 import module_30 from "module_30";
+import importDefaultResult from "t";
 
-let closure_3 = importAll(dependencyMap[0]);
-const importDefaultResult = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/hooks/useOutboundPromotionRedemptionEndDate.tsx");
+const require = arg1;
+const result = require("resetCache").fileFinishedImporting("modules/premium/hooks/useOutboundPromotionRedemptionEndDate.tsx");
 
 export default function useOutboundPromotionRedemptionEndDate(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   const items = [arg0, arg1];
-  return React.useMemo((self) => {
-    self(closure_2[2]);
-    if (arg1) {
-      if (null != self.outboundRedemptionEndDate) {
-        let addResult = arg1(closure_2[1])(self.outboundRedemptionEndDate);
+  return React.useMemo(() => {
+    lib(outer1_2[2]);
+    if (callback) {
+      if (null != lib.outboundRedemptionEndDate) {
+        let addResult = callback(outer1_2[1])(lib.outboundRedemptionEndDate);
       } else {
-        addResult = arg1(closure_2[1])(self.endDate).add(module_30);
-        const obj = arg1(closure_2[1])(self.endDate);
+        addResult = callback(outer1_2[1])(lib.endDate).add(outer1_4);
+        const obj = callback(outer1_2[1])(lib.endDate);
       }
     } else {
-      return tmp2(arg1(closure_2[1])(self.endDate), "LL");
+      return tmp2(callback(outer1_2[1])(lib.endDate), "LL");
     }
   }, items);
 };

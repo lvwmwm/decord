@@ -1,16 +1,13 @@
 // Module ID: 561
 // Function ID: 6784
 // Name: Backoff
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
 // Module 561 (Backoff)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("../discord_common/js/packages/backoff/Backoff.tsx");
-
-export default () => {
+const tmp2 = (() => {
   class Backoff {
     constructor() {
       num = arg0;
@@ -47,7 +44,6 @@ export default () => {
       }
     }
   }
-  let closure_0 = Backoff;
   let obj = {
     key: "fails",
     get() {
@@ -81,8 +77,9 @@ export default () => {
     key: "fail",
     value(_callback) {
       let _current = arg1;
-      const self = this;
-      const Backoff = this;
+      let self = this;
+      self = this;
+      let _defineProperties = _callback;
       this._fails = this._fails + 1;
       const result = 2 * this._current;
       let result1 = result;
@@ -107,8 +104,8 @@ export default () => {
         self._callback = _callback;
         const _setTimeout = setTimeout;
         self._timeoutId = setTimeout(() => {
-          if (null != arg0) {
-            arg0();
+          if (null != _callback) {
+            _callback();
           }
           self.cancel();
         }, _current);
@@ -129,4 +126,7 @@ export default () => {
     }
   };
   return callback(Backoff, items);
-}();
+})();
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/backoff/Backoff.tsx");
+
+export default tmp2;

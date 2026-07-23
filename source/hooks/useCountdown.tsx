@@ -1,18 +1,17 @@
-// Module ID: 6673
-// Function ID: 51393
+// Module ID: 6678
+// Function ID: 51425
 // Name: useCountdown
-// Dependencies: []
+// Dependencies: [31, 3800, 6679, 6684, 2]
 // Exports: default
 
-// Module 6673 (useCountdown)
-require(dependencyMap[0]).useCallback;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("hooks/useCountdown.tsx");
+// Module 6678 (useCountdown)
+require("result").useCallback;
+const result = require("useForceUpdate").fileFinishedImporting("hooks/useCountdown.tsx");
 
-export default function useCountdown(expiresAt) {
+export default function useCountdown(closure_0) {
   let num = arg1;
   let flag = arg3;
-  const require = expiresAt;
+  const _require = closure_0;
   if (arg1 === undefined) {
     num = 1000;
   }
@@ -20,27 +19,25 @@ export default function useCountdown(expiresAt) {
   if (flag === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
-  let useCallback;
-  const obj = require(dependencyMap[1]);
-  const diffAsUnitsResult = require(dependencyMap[1]).diffAsUnits(Date.now(), expiresAt);
-  const forceUpdate = require(dependencyMap[2]).useForceUpdate();
-  useCallback = forceUpdate;
-  const items = [expiresAt, flag, forceUpdate, arg2];
-  const obj2 = require(dependencyMap[2]);
+  let forceUpdate;
+  const obj = _require(flag[1]);
+  let diffAsUnitsResult = _require(flag[1]).diffAsUnits(Date.now(), closure_0);
+  forceUpdate = _require(flag[2]).useForceUpdate();
+  const items = [closure_0, flag, forceUpdate, arg2];
+  const obj2 = _require(flag[2]);
   let tmp5 = null;
-  const tmp3 = useCallback(() => {
-    const diffAsUnitsResult = arg0(flag[1]).diffAsUnits(Date.now(), arg0);
+  const tmp3 = forceUpdate(() => {
+    const diffAsUnitsResult = callback(flag[1]).diffAsUnits(Date.now(), callback);
     if (!tmp2) {
       forceUpdate();
-      if (null != arg2) {
-        arg2();
+      if (null != callback2) {
+        callback2();
       }
     }
   }, items);
   if (!flag) {
     tmp5 = num;
   }
-  importDefault(dependencyMap[3])(tmp3, tmp5);
+  importDefault(flag[3])(tmp3, tmp5);
   return diffAsUnitsResult;
 };

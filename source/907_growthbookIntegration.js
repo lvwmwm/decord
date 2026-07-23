@@ -1,11 +1,13 @@
 // Module ID: 907
-// Function ID: 9959
+// Function ID: 9960
 // Name: growthbookIntegration
-// Dependencies: []
+// Dependencies: [863, 799, 906]
 
 // Module 907 (growthbookIntegration)
+import setupIntegration from "setupIntegration";
+
 function _wrapAndCaptureBooleanResult(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   return function() {
     const length = arguments.length;
     const array = new Array(length);
@@ -13,40 +15,39 @@ function _wrapAndCaptureBooleanResult(arg0) {
       array[num] = arguments[num];
     }
     const first = array[0];
-    const applyResult = arg0.apply(this, array);
+    const applyResult = callback.apply(this, array);
     let tmp4 = "string" === typeof first;
     if (tmp4) {
       tmp4 = "boolean" === typeof applyResult;
     }
     if (tmp4) {
-      const result = arg0(closure_1[2])._INTERNAL_insertFlagToScope(first, applyResult);
-      const obj = arg0(closure_1[2]);
-      const result1 = arg0(closure_1[2])._INTERNAL_addFeatureFlagToActiveSpan(first, applyResult);
-      const obj2 = arg0(closure_1[2]);
+      const result = callback(outer1_1[2])._INTERNAL_insertFlagToScope(first, applyResult);
+      const obj = callback(outer1_1[2]);
+      const result1 = callback(outer1_1[2])._INTERNAL_addFeatureFlagToActiveSpan(first, applyResult);
+      const obj2 = callback(outer1_1[2]);
     }
     return applyResult;
   };
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
 
-export const growthbookIntegration = _module.defineIntegration((growthbookClass) => {
-  const require = growthbookClass.growthbookClass;
+export const growthbookIntegration = setupIntegration.defineIntegration((growthbookClass) => {
+  growthbookClass = growthbookClass.growthbookClass;
   return {
     name: "GrowthBook",
     setupOnce() {
       const prototype = growthbookClass.prototype;
       if ("function" === typeof prototype.isOn) {
-        growthbookClass(closure_1[1]).fill(prototype, "isOn", closure_2);
-        const obj = growthbookClass(closure_1[1]);
+        growthbookClass(outer1_1[1]).fill(prototype, "isOn", outer1_2);
+        const obj = growthbookClass(outer1_1[1]);
       }
       if ("function" === typeof prototype.getFeatureValue) {
-        growthbookClass(closure_1[1]).fill(prototype, "getFeatureValue", closure_2);
-        const obj2 = growthbookClass(closure_1[1]);
+        growthbookClass(outer1_1[1]).fill(prototype, "getFeatureValue", outer1_2);
+        const obj2 = growthbookClass(outer1_1[1]);
       }
     },
     processEvent(contexts) {
-      return growthbookClass(closure_1[2])._INTERNAL_copyFlagsFromScopeToEvent(contexts);
+      return growthbookClass(outer1_1[2])._INTERNAL_copyFlagsFromScopeToEvent(contexts);
     }
   };
 });

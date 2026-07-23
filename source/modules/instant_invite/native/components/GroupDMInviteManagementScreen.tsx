@@ -1,35 +1,48 @@
-// Module ID: 10159
-// Function ID: 78548
+// Module ID: 10167
+// Function ID: 78588
 // Name: GroupDMInviteManagement
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 7464, 7597, 653, 33, 4130, 4559, 507, 22, 689, 10168, 5585, 1273, 10186, 10187, 1212, 5087, 480, 5519, 2]
 
-// Module 10159 (GroupDMInviteManagement)
+// Module 10167 (GroupDMInviteManagement)
+import closure_3 from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_8 from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let Platform;
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_9;
+const require = arg1;
 function GroupDMInviteManagement(channelId) {
-  const arg1 = channelId.channelId;
+  channelId = channelId.channelId;
   const tmp2 = callback(importAllResult.useState([]), 2);
   const first = tmp2[0];
-  const importDefault = first;
-  let closure_2 = tmp2[1];
+  const dependencyMap = tmp2[1];
   const tmp3 = callback(importAllResult.useState(true), 2);
   let closure_3 = tmp3[1];
-  importDefault(closure_2[9])(() => {
+  first(4559)(() => {
     function _fetchInvites() {
       // CreateGeneratorClosureLongIndex (0x67)
       const obj = callback(tmp);
-      const _fetchInvites = obj;
       return obj(...arguments);
     }
-    function fetchInvites() {
+    (function fetchInvites() {
       return _fetchInvites(...arguments);
-    }().catch(() => {
-      callback(false);
+    })().catch(() => {
+      outer1_3(false);
     });
   });
   const tmp5 = callback(importAllResult.useState(21), 2);
-  let callback = tmp5[1];
+  callback = tmp5[1];
   const items = [first];
-  const memo = importAllResult.useMemo(() => first(closure_2[11]).sortBy(first, (inviter) => {
+  const memo = importAllResult.useMemo(() => first(22).sortBy(first, (inviter) => {
     inviter = inviter.inviter;
     let formatted;
     if (null != inviter) {
@@ -49,53 +62,43 @@ function GroupDMInviteManagement(channelId) {
   [][0] = first;
   callback = importAllResult.useCallback((code) => code.code, []);
   if (tmp3[0]) {
-    let tmp12 = jsx(arg1(closure_2[14]).SceneLoadingIndicator, {});
+    let tmp12 = jsx(channelId(5585).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
-    let obj = { lightSource: importDefault(closure_2[16]), darkSource: importDefault(closure_2[17]) };
-    const intl = arg1(closure_2[18]).intl;
-    obj.title = intl.string(arg1(closure_2[18]).t.+nLJkZ);
-    const intl2 = arg1(closure_2[18]).intl;
-    obj.body = intl2.string(arg1(closure_2[18]).t.F53CAc);
-    tmp12 = jsx(arg1(closure_2[15]).EmptyState, obj);
+    let obj = { lightSource: first(10186), darkSource: first(10187) };
+    const intl = channelId(1212).intl;
+    obj.title = intl.string(channelId(1212).t["+nLJkZ"]);
+    const intl2 = channelId(1212).intl;
+    obj.body = intl2.string(channelId(1212).t.F53CAc);
+    tmp12 = jsx(channelId(1273).EmptyState, { lightSource: first(10186), darkSource: first(10187) });
   } else {
     obj = { style: tmp.list, data: memo, keyExtractor: callback, renderItem: tmp9, initialNumToRender: 10, windowSize: tmp5[0] };
-    tmp12 = <closure_7 {...obj} />;
+    tmp12 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp9} initialNumToRender={10} windowSize={tmp5[0]} />;
   }
   return tmp12;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-({ Platform, View: closure_6, FlatList: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = importDefault(dependencyMap[4]);
-arg1(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[3]);
-({ ChannelSettingsSections: closure_9, Endpoints: closure_10 } = arg1(dependencyMap[6]));
-const jsx = arg1(dependencyMap[7]).jsx;
-const tmp4 = arg1(dependencyMap[6]);
-let closure_12 = arg1(dependencyMap[8]).createStyles({ list: { paddingTop: 8 } });
-const obj2 = arg1(dependencyMap[8]);
+({ Platform, View: closure_6, FlatList: closure_7 } = get_ActivityIndicator);
+({ ChannelSettingsSections: closure_9, Endpoints: closure_10 } = ME);
+let closure_12 = _createForOfIteratorHelperLoose.createStyles({ list: { paddingTop: 8 } });
 const memoResult = importAllResult.memo(function GroupDMInviteManagementScreen(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const onClose = channelId.onClose;
-  const importDefault = onClose;
   const items = [channelId, onClose];
-  const memo = importAllResult.useMemo(() => function getScreens(channelId, onClose) {
+  const memo = importAllResult.useMemo(() => (function getScreens(channelId, onClose) {
+    let closure_0 = channelId;
     let obj = {};
     obj = {};
-    const intl = channelId(closure_2[18]).intl;
-    obj.title = intl.string(channelId(closure_2[18]).t.OQ9MKu);
-    obj.headerLeft = channelId(closure_2[19]).getHeaderCloseButton(onClose);
+    const intl = channelId(outer2_2[18]).intl;
+    obj.title = intl.string(channelId(outer2_2[18]).t.OQ9MKu);
+    obj.headerLeft = channelId(outer2_2[19]).getHeaderCloseButton(onClose);
     obj.render = function render() {
-      return callback(closure_13, { channelId: arg0 });
+      return outer3_11(outer3_13, { channelId: closure_0 });
     };
-    obj.impressionName = channelId(closure_2[20]).ImpressionNames.GDM_SETTINGS_INVITES;
-    obj[constants.INSTANT_INVITES_MANAGEMENT] = obj;
+    obj.impressionName = channelId(outer2_2[20]).ImpressionNames.GDM_SETTINGS_INVITES;
+    obj[outer2_9.INSTANT_INVITES_MANAGEMENT] = obj;
     return obj;
-  }(channelId, onClose), items);
-  return jsx(arg1(dependencyMap[21]).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  })(channelId, onClose), items);
+  return jsx(channelId(5519).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 });
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
+const result = require("result").fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
 
 export default memoResult;

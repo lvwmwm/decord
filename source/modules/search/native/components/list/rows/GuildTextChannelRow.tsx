@@ -1,48 +1,47 @@
-// Module ID: 15241
-// Function ID: 115058
-// Dependencies: []
+// Module ID: 15357
+// Function ID: 117228
+// Dependencies: [31, 9103, 33, 21, 15350, 10078, 15353, 2]
 
-// Module 15241
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).CHANNEL_LIST_SEARCH_LAYOUT;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 15357
+import importAllResult from "result";
+import { CHANNEL_LIST_SEARCH_LAYOUT as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo(function GuildTextChannelRow(channel) {
   let lastMessageId;
   let onPress;
   channel = channel.channel;
-  const arg1 = channel;
   ({ lastMessageId, onPress } = channel);
-  const importDefault = onPress;
-  let obj = { defaultIcon: -24, TD: null, MAX_STAGE_TOPIC_LENGTH: 1, USD: "Malaysia" };
+  let obj = { channel: 0, trailing: 0, lastMessageId: 0, onPress: 0 };
   let extractTimestampResult = null;
   Object.setPrototypeOf(null);
   const merged = Object.assign(channel, obj);
-  let closure_4;
+  let c4;
   const id = channel.id;
-  const dependencyMap = id;
   const guild_id = channel.guild_id;
   if (null != lastMessageId) {
-    extractTimestampResult = importDefault(dependencyMap[3]).extractTimestamp(lastMessageId);
-    const obj2 = importDefault(dependencyMap[3]);
+    extractTimestampResult = onPress(id[3]).extractTimestamp(lastMessageId);
+    const obj2 = onPress(id[3]);
   }
-  closure_4 = extractTimestampResult;
+  c4 = extractTimestampResult;
   const items = [id, guild_id, extractTimestampResult];
   const items1 = [channel.id, onPress];
-  const memo = importAllResult.useMemo(() => {
+  const memo = guild_id.useMemo(() => {
     let obj = channel(id[4]);
     obj = {};
     let channelActiveAgoTimestamp = null;
-    if (null != extractTimestampResult) {
-      channelActiveAgoTimestamp = channel(id[5]).getChannelActiveAgoTimestamp(extractTimestampResult);
+    if (null != c4) {
+      channelActiveAgoTimestamp = channel(id[5]).getChannelActiveAgoTimestamp(c4);
       const obj3 = channel(id[5]);
     }
     obj.subtitle = channelActiveAgoTimestamp;
-    obj.layout = extractTimestampResult;
+    obj.layout = c4;
     obj.channelId = id;
     obj.guildId = guild_id;
     return obj.renderChannelSubtitle(obj);
   }, items);
-  const callback = importAllResult.useCallback(() => {
+  const callback = guild_id.useCallback(() => {
     onPress(channel.id);
   }, items1);
   obj = {};
@@ -51,8 +50,8 @@ const memoResult = importAllResult.memo(function GuildTextChannelRow(channel) {
   obj["channel"] = channel;
   obj["trailing"] = channel.trailing;
   obj["onPress"] = callback;
-  return jsx(importDefault(dependencyMap[6]), obj);
+  return jsx(onPress(id[6]), {});
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/search/native/components/list/rows/GuildTextChannelRow.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/list/rows/GuildTextChannelRow.tsx");
 
 export default memoResult;

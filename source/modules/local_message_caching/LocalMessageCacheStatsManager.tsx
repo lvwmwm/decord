@@ -1,9 +1,19 @@
-// Module ID: 16462
-// Function ID: 127144
+// Module ID: 16579
+// Function ID: 129318
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 653, 6720, 675, 5078, 2]
 
-// Module 16462 (_isNativeReflectConstruct)
+// Module 16579 (_isNativeReflectConstruct)
+import expandLocation from "expandLocation";
+import makeLogKey from "makeLogKey";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import ME from "ME";
+import tmp3 from "AutomaticLifecycleManager";
+
+let closure_7;
+let closure_8;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -45,54 +55,21 @@ function makeLogLine(channelId) {
 function handleAppStateUpdate(state) {
   if (state.state === constants2.BACKGROUND) {
     const _Array = Array;
-    const fetchLogs = importDefault(dependencyMap[6]).fetchLogs;
+    const fetchLogs = importDefault(6720).fetchLogs;
     const mapped = Array.from(fetchLogs.values()).map(makeLogLine);
-    let obj = importDefault(dependencyMap[7]);
-    obj = { num_channels_fetch_started: importDefault(dependencyMap[6]).channelsFetchStarted.size, num_channels_local_cached: importDefault(dependencyMap[6]).channelsFetchedWithLocalMessages.size, num_channels_fetched_network: importDefault(dependencyMap[6]).channelsFetchedNetwork.size };
-    const sum = closure_9 + 1;
-    closure_9 = sum;
+    let obj = importDefault(675);
+    obj = { num_channels_fetch_started: importDefault(6720).channelsFetchStarted.size, num_channels_local_cached: importDefault(6720).channelsFetchedWithLocalMessages.size, num_channels_fetched_network: importDefault(6720).channelsFetchedNetwork.size };
+    const sum = c9 + 1;
+    c9 = sum;
     obj.num_times_backgrounded = sum;
     obj.fetch_entries = mapped;
     obj.track(constants.CACHE_STATS_RECORDED, obj);
     const arr = Array.from(fetchLogs.values());
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-({ AnalyticEvents: closure_7, AppStates: closure_8 } = arg1(dependencyMap[5]));
-let closure_9 = 0;
-let tmp3 = (arg0) => {
-  class LocalMessageCacheStatsManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, LocalMessageCacheStatsManager);
-      items1 = [...items];
-      obj = closure_5(LocalMessageCacheStatsManager);
-      tmp2 = closure_4;
-      if (closure_10()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = { APP_STATE_UPDATE: closure_12 };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const importDefault = LocalMessageCacheStatsManager;
-  callback2(LocalMessageCacheStatsManager, arg0);
-  return callback(LocalMessageCacheStatsManager);
-}(importDefault(dependencyMap[8]));
+({ AnalyticEvents: closure_7, AppStates: closure_8 } = ME);
+let c9 = 0;
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/local_message_caching/LocalMessageCacheStatsManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/local_message_caching/LocalMessageCacheStatsManager.tsx");
 
 export default tmp3;

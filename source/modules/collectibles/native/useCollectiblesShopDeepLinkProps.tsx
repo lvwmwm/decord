@@ -1,26 +1,23 @@
-// Module ID: 14363
-// Function ID: 108451
+// Module ID: 14477
+// Function ID: 110604
 // Name: useCollectiblesShopDeepLinkProps
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 6774, 6791, 566, 6785, 2]
 // Exports: useCollectiblesShopDeepLinkProps
 
-// Module 14363 (useCollectiblesShopDeepLinkProps)
-import { useMemo } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+// Module 14477 (useCollectiblesShopDeepLinkProps)
+import { useMemo } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
 
 let closure_5 = {};
-const result = require("__exportStarResult1").fileFinishedImporting("modules/collectibles/native/useCollectiblesShopDeepLinkProps.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/useCollectiblesShopDeepLinkProps.tsx");
 
 export const useCollectiblesShopDeepLinkProps = function useCollectiblesShopDeepLinkProps(categories) {
   categories = categories.categories;
-  const require = categories;
   const products = categories.products;
-  const dependencyMap = products;
-  const items = [__exportStarResult1, closure_4];
-  const stateFromStoresObject = require(dependencyMap[3]).useStateFromStoresObject(items, () => {
+  const items = [initialBaseProductSkuId, initialVariantIndex];
+  const stateFromStoresObject = categories(products[3]).useStateFromStoresObject(items, () => {
     const initialProductSkuId = initialVariantIndex.initialProductSkuId;
-    const categories = initialProductSkuId;
     const product = initialBaseProductSkuId.getProduct(initialProductSkuId);
     let skuId = initialProductSkuId;
     let num = 0;
@@ -56,31 +53,28 @@ export const useCollectiblesShopDeepLinkProps = function useCollectiblesShopDeep
     return obj;
   });
   const initialCategorySkuId = stateFromStoresObject.initialCategorySkuId;
-  const useMemo = initialCategorySkuId;
-  const initialBaseProductSkuId = stateFromStoresObject.initialBaseProductSkuId;
-  __exportStarResult1 = initialBaseProductSkuId;
-  const initialVariantIndex = stateFromStoresObject.initialVariantIndex;
-  closure_4 = initialVariantIndex;
+  initialBaseProductSkuId = stateFromStoresObject.initialBaseProductSkuId;
+  initialVariantIndex = stateFromStoresObject.initialVariantIndex;
   const items1 = [initialBaseProductSkuId, initialVariantIndex, initialCategorySkuId, products, categories];
-  return useMemo(() => {
+  return initialCategorySkuId(() => {
     if (null != initialBaseProductSkuId) {
       if (null != initialCategorySkuId) {
         let obj = { initialProductSkuId: initialBaseProductSkuId, initialVariantIndex, initialCategorySkuId };
         let bound;
         if (null != products) {
           const _Math = Math;
-          bound = Math.max(0, products.findIndex((skuId) => skuId.skuId === __exportStarResult1));
+          bound = Math.max(0, products.findIndex((skuId) => skuId.skuId === outer1_3));
         }
         obj.productIndex = bound;
         let bound1;
         if (null != categories) {
           const _Math2 = Math;
-          bound1 = Math.max(0, categories.findIndex((skuId) => skuId.skuId === closure_2));
+          bound1 = Math.max(0, categories.findIndex((skuId) => skuId.skuId === outer1_2));
         }
         obj.categoryIndex = bound1;
       }
       return obj;
     }
-    obj = closure_5;
+    obj = outer1_5;
   }, items1);
 };

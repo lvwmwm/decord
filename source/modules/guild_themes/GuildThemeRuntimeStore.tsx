@@ -1,9 +1,20 @@
-// Module ID: 4014
-// Function ID: 33374
+// Module ID: 4016
+// Function ID: 33383
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4017, 1838, 3947, 653, 4021, 1837, 22, 566, 686, 2]
 
-// Module 4014 (_isNativeReflectConstruct)
+// Module 4016 (_isNativeReflectConstruct)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import closure_9 from "_isNativeReflectConstruct";
+import { GuildFeatures } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -28,32 +39,31 @@ function readGuildTheme(id) {
   if (null != guild) {
     guildTheme = guild.guildTheme;
   }
-  return arg1(dependencyMap[10]).cloneGuildTheme(guildTheme);
+  return require(1837) /* cloneCustomUserThemeSettings */.cloneGuildTheme(guildTheme);
 }
 function clearSelectedGuildThemeSnapshot() {
-  let flag = null != closure_11;
+  let flag = null != c11;
   if (flag) {
-    closure_11 = null;
+    c11 = null;
     flag = true;
   }
   return flag;
 }
 function setSelectedGuildThemeSnapshot(guildId, cloneGuildThemeResult, hasThemeFeature) {
   guildId = undefined;
-  if (null != _null) {
-    guildId = _null.guildId;
+  if (null != obj) {
+    guildId = obj.guildId;
   }
   let flag = guildId !== guildId;
   if (!flag) {
-    let obj = cloneGuildThemeResult(dependencyMap[11]);
-    flag = !obj.isEqual(_null.guildTheme, cloneGuildThemeResult);
+    obj = require(22) /* apply */;
+    flag = !obj.isEqual(obj.guildTheme, cloneGuildThemeResult);
   }
   if (!flag) {
-    flag = _null.hasThemeFeature !== hasThemeFeature;
+    flag = obj.hasThemeFeature !== hasThemeFeature;
   }
   if (flag) {
     obj = { guildId, guildTheme: cloneGuildThemeResult, hasThemeFeature };
-    const _null = obj;
     flag = true;
   }
   return flag;
@@ -90,14 +100,14 @@ function handleSavedGuildTheme(guildId) {
   guildId = guildId.guildId;
   let tmp = guildId === store2.getGuildId();
   if (tmp) {
-    const obj = arg1(dependencyMap[10]);
-    tmp = setSelectedGuildThemeSnapshot(guildId, arg1(dependencyMap[10]).cloneGuildTheme(guildId.guildTheme), guildHasThemeFeature(guildId));
-    const cloneGuildThemeResult = arg1(dependencyMap[10]).cloneGuildTheme(guildId.guildTheme);
+    const obj = require(1837) /* cloneCustomUserThemeSettings */;
+    tmp = setSelectedGuildThemeSnapshot(guildId, require(1837) /* cloneCustomUserThemeSettings */.cloneGuildTheme(guildId.guildTheme), guildHasThemeFeature(guildId));
+    const cloneGuildThemeResult = require(1837) /* cloneCustomUserThemeSettings */.cloneGuildTheme(guildId.guildTheme);
   }
   return tmp;
 }
 function syncSnapshotOnFeatureTransition(id) {
-  if (null != closure_11) {
+  if (null != c11) {
     if (id === tmp.guildId) {
       const tmp13 = guildHasThemeFeature(id);
       if (tmp13 === tmp.hasThemeFeature) {
@@ -105,12 +115,12 @@ function syncSnapshotOnFeatureTransition(id) {
       } else {
         let tmp9 = !tmp13;
         if (tmp13) {
-          const stateForGuild = stateForGuild.getStateForGuild(id);
+          stateForGuild = stateForGuild.getStateForGuild(id);
           let tmp4;
           if (null != stateForGuild) {
             const unlockedPowerups = stateForGuild.unlockedPowerups;
             if (null != unlockedPowerups) {
-              tmp4 = unlockedPowerups[closure_0(undefined, closure_1[9]).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+              tmp4 = unlockedPowerups[require(undefined, 4021) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_GUILD_THEME_SKU_ID];
             }
           }
           let tmp7 = null != tmp4;
@@ -135,30 +145,21 @@ function syncSnapshotOnFeatureTransition(id) {
   }
   return false;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-const GuildFeatures = arg1(dependencyMap[8]).GuildFeatures;
-let closure_11 = null;
-let closure_12 = null;
-let tmp2 = (Store) => {
+let c11 = null;
+let c12 = null;
+let tmp2 = ((Store) => {
   class GuildThemeRuntimeStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GuildThemeRuntimeStore);
-      obj = closure_5(GuildThemeRuntimeStore);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, GuildThemeRuntimeStore);
+      obj = outer1_5(GuildThemeRuntimeStore);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -167,12 +168,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildThemeRuntimeStore;
   callback2(GuildThemeRuntimeStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, closure_8, closure_9);
+      this.waitFor(outer1_7, outer1_8, outer1_9);
     }
   };
   const items = [obj, ];
@@ -180,14 +180,14 @@ let tmp2 = (Store) => {
     key: "getGuildThemeSnapshot",
     value(arg0) {
       let tmp = null;
-      if (arg0 !== closure_12) {
+      if (arg0 !== outer1_12) {
         let guildId;
-        if (null != closure_11) {
-          guildId = closure_11.guildId;
+        if (null != outer1_11) {
+          guildId = outer1_11.guildId;
         }
         let guildTheme;
         if (arg0 === guildId) {
-          guildTheme = closure_11.guildTheme;
+          guildTheme = outer1_11.guildTheme;
         }
         tmp = guildTheme;
       }
@@ -196,9 +196,9 @@ let tmp2 = (Store) => {
   };
   items[1] = obj;
   return callback(GuildThemeRuntimeStore, items);
-}(importDefault(dependencyMap[12]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GuildThemeRuntimeStore";
-tmp2 = new tmp2(importDefault(dependencyMap[13]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CACHE_LOADED: snapshotSelectedGuild,
   CACHE_LOADED_LAZY: snapshotSelectedGuild,
   CHANNEL_SELECT: function handleChannelSelect(guildId) {
@@ -226,13 +226,13 @@ tmp2 = new tmp2(importDefault(dependencyMap[13]), {
   },
   GUILD_UPDATE: function handleGuildUpdate(guild) {
     guild = guild.guild;
-    let tmp = guild.id !== closure_12;
+    let tmp = guild.id !== c12;
     if (!tmp) {
       tmp = guildHasThemeFeature(guild.id);
     }
     let flag = false;
     if (!tmp) {
-      closure_12 = null;
+      c12 = null;
       flag = true;
     }
     if (syncSnapshotOnFeatureTransition(guild.id)) {
@@ -242,12 +242,12 @@ tmp2 = new tmp2(importDefault(dependencyMap[13]), {
   },
   GUILD_POWERUP_ENTITLEMENTS_CREATE: function handleThemePowerupAdded(entitlements) {
     entitlements = entitlements.entitlements;
-    let tmp = closure_12 === entitlements.guildId;
+    let tmp = c12 === entitlements.guildId;
     if (tmp) {
-      const tmp2 = !entitlements.some((sku_id) => sku_id.sku_id === callback(closure_1[9]).GUILD_POWERUP_GUILD_THEME_SKU_ID);
+      const tmp2 = !entitlements.some((sku_id) => sku_id.sku_id === outer1_0(outer1_1[9]).GUILD_POWERUP_GUILD_THEME_SKU_ID);
       let flag = !tmp2;
       if (!tmp2) {
-        closure_12 = null;
+        c12 = null;
         flag = true;
       }
       tmp = flag;
@@ -258,7 +258,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[13]), {
     let entitlements;
     let guildId;
     ({ guildId, entitlements } = arg0);
-    const tmp = !entitlements.some((sku_id) => sku_id.sku_id === callback(closure_1[9]).GUILD_POWERUP_GUILD_THEME_SKU_ID);
+    const tmp = !entitlements.some((sku_id) => sku_id.sku_id === outer1_0(outer1_1[9]).GUILD_POWERUP_GUILD_THEME_SKU_ID);
     let tmp2 = !tmp;
     if (!tmp) {
       guildId = undefined;
@@ -267,10 +267,9 @@ tmp2 = new tmp2(importDefault(dependencyMap[13]), {
       }
       let flag = guildId === guildId;
       if (flag) {
-        flag = closure_12 !== guildId;
+        flag = guildId !== guildId;
       }
       if (flag) {
-        closure_12 = guildId;
         flag = true;
       }
       tmp2 = flag;
@@ -281,10 +280,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[13]), {
   GUILD_THEME_PREVIEW_SAVE_SUCCESS: handleSavedGuildTheme,
   OVERLAY_INITIALIZE: snapshotSelectedGuild,
   LOGOUT: function handleConnectionReset() {
-    let closure_12 = null;
-    return clearSelectedGuildThemeSnapshot() || null != closure_12;
+    let c12 = null;
+    return clearSelectedGuildThemeSnapshot() || null != c12;
   }
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_themes/GuildThemeRuntimeStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_themes/GuildThemeRuntimeStore.tsx");
 
 export default tmp2;

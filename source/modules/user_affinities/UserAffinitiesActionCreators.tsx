@@ -1,15 +1,19 @@
-// Module ID: 8814
-// Function ID: 69524
+// Module ID: 8821
+// Function ID: 69565
 // Name: fetchUserAffinitiesV2
-// Dependencies: []
+// Dependencies: [5592, 6902, 653, 686, 507, 2]
 // Exports: fetchUserAffinitiesV2
 
-// Module 8814 (fetchUserAffinitiesV2)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ Endpoints: closure_5, Consents: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_affinities/UserAffinitiesActionCreators.tsx");
+// Module 8821 (fetchUserAffinitiesV2)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ Endpoints: closure_5, Consents: closure_6 } = ME);
+const result = require("ME").fileFinishedImporting("modules/user_affinities/UserAffinitiesActionCreators.tsx");
 
 export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
   let flag = arg0;
@@ -17,11 +21,11 @@ export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
     flag = true;
   }
   if (closure_4.shouldFetch()) {
-    if (closure_3.hasConsented(constants.PERSONALIZATION)) {
-      let obj = importDefault(dependencyMap[3]);
+    if (_isNativeReflectConstruct.hasConsented(constants.PERSONALIZATION)) {
+      let obj = importDefault(686);
       obj = { type: "LOAD_USER_AFFINITIES_V2" };
       obj.dispatch(obj);
-      const HTTP = arg1(dependencyMap[4]).HTTP;
+      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
       obj = { url: USER_AFFINITIES_V2.USER_AFFINITIES_V2 };
       let num3 = 0;
       if (flag) {
@@ -32,7 +36,7 @@ export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
       obj.rejectWithError = false;
       const value = HTTP.get(obj);
       let nextPromise = value.then((body) => {
-        let obj = callback(closure_2[3]);
+        let obj = outer1_1(outer1_2[3]);
         obj = {
           type: "LOAD_USER_AFFINITIES_V2_SUCCESS",
           affineUsers: user_affinities.map((otherUserId) => {
@@ -88,10 +92,10 @@ export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
             return obj;
           })
         };
-        const user_affinities = body.body.user_affinities;
+        user_affinities = body.body.user_affinities;
         obj.dispatch(obj);
       }, () => {
-        callback(closure_2[3]).dispatch({ type: "LOAD_USER_AFFINITIES_V2_FAILURE" });
+        outer1_1(outer1_2[3]).dispatch({ type: "LOAD_USER_AFFINITIES_V2_FAILURE" });
       });
     }
     return nextPromise;

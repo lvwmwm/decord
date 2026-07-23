@@ -1,31 +1,33 @@
-// Module ID: 8846
-// Function ID: 69837
+// Module ID: 8853
+// Function ID: 69878
 // Name: getOptionFromSettingsFiltered
-// Dependencies: []
+// Dependencies: [31, 1316, 1849, 8850, 3776, 566, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 8846 (getOptionFromSettingsFiltered)
+// Module 8853 (getOptionFromSettingsFiltered)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getOptionFromSettingsFiltered(prop, id) {
-  const videoBackgroundOptionFromProto = id(dependencyMap[3]).getVideoBackgroundOptionFromProto(prop, id.id);
-  const obj = id(dependencyMap[3]);
+  const videoBackgroundOptionFromProto = require(8850) /* isCustomBackgroundOption */.getVideoBackgroundOptionFromProto(prop, id.id);
+  const obj = require(8850) /* isCustomBackgroundOption */;
   if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
     if ("number" !== typeof videoBackgroundOptionFromProto) {
       let tmp7 = videoBackgroundOptionFromProto;
     } else {
       tmp7 = null;
-      const obj4 = id(dependencyMap[3]);
+      const obj4 = require(8850) /* isCustomBackgroundOption */;
     }
     let tmp4 = tmp7;
   } else {
     tmp4 = null;
-    const obj3 = importDefault(dependencyMap[4]);
+    const obj3 = importDefault(3776);
   }
   return tmp4;
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
 
 export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgroundOption(currentUser) {
   const voiceAndVideo = settings.settings.voiceAndVideo;
@@ -37,22 +39,20 @@ export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgro
 };
 export const useLastUsedVideoBackgroundOption = function useLastUsedVideoBackgroundOption() {
   let prop;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => settings.settings);
-  const obj = arg1(dependencyMap[5]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = stateFromStores1(566).useStateFromStores(items, () => outer1_4.settings);
+  const obj = stateFromStores1(566);
   const items1 = [closure_5];
-  const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const arg1 = stateFromStores1;
+  stateFromStores1 = stateFromStores1(566).useStateFromStores(items1, () => outer1_5.getCurrentUser());
   const voiceAndVideo = stateFromStores.voiceAndVideo;
   if (null != voiceAndVideo) {
     prop = voiceAndVideo.videoBackgroundFilterDesktop;
   }
-  const importDefault = prop;
   const items2 = [prop, stateFromStores1];
   return React.useMemo(() => {
     let tmp = null;
     if (null != stateFromStores1) {
-      tmp = callback(prop, stateFromStores1);
+      tmp = outer1_6(prop, stateFromStores1);
     }
     return tmp;
   }, items2);

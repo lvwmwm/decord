@@ -1,24 +1,25 @@
-// Module ID: 12874
-// Function ID: 98368
+// Module ID: 12988
+// Function ID: 100524
 // Name: PremiumSKUFeature
-// Dependencies: []
+// Dependencies: [7, 6, 2]
 
-// Module 12874 (PremiumSKUFeature)
-let closure_0 = importDefault(dependencyMap[1]);
+// Module 12988 (PremiumSKUFeature)
+import _classCallCheck from "_classCallCheck";
+import importDefaultResult from "_defineProperties";
+
 class PremiumSKUFeature {
   constructor(arg0, arg1, arg2) {
-    tmp = closure_0(this, PremiumSKUFeature);
+    tmp = c0(this, PremiumSKUFeature);
     this.name = global;
     this.description = importDefault;
     this.getFeatureValue = arg1;
-    obj = { "Null": "HTTP", "Null": "Date", "Null": "HTTP" };
+    obj = { value: null, configurable: false, writable: false };
     obj.value = arg1;
     definePropertyResult = Object.defineProperty(this, "getFeatureValue", obj);
     return;
   }
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const importDefaultResultResult = importDefault(dependencyMap[0])(PremiumSKUFeature);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/premium/PremiumSKUFeature.tsx");
+const importDefaultResultResult = require("_defineProperties")(PremiumSKUFeature);
+const result = require("set").fileFinishedImporting("modules/premium/PremiumSKUFeature.tsx");
 
 export default importDefaultResultResult;

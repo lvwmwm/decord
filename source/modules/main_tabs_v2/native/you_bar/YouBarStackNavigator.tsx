@@ -1,37 +1,44 @@
-// Module ID: 14682
-// Function ID: 110694
+// Module ID: 14797
+// Function ID: 112858
 // Name: getGuildsComponent
-// Dependencies: []
+// Dependencies: [31, 27, 1906, 3947, 8772, 33, 9113, 14798, 15128, 15176, 566, 15250, 8322, 5519, 5449, 2]
 
-// Module 14682 (getGuildsComponent)
+// Module 14797 (getGuildsComponent)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
+import jsxProd from "jsxProd";
+import createNativeStackNavigator from "createNativeStackNavigator";
+
+let closure_10;
+let closure_11;
+let closure_4;
+let closure_5;
+let closure_9;
+let require = arg1;
 function getGuildsComponent() {
-  return arg1(dependencyMap[7]).default;
+  return require(14798).default;
 }
 function getNotificationsComponent() {
-  return arg1(dependencyMap[8]).ThemedNotifications;
+  return require(15128) /* goBack */.ThemedNotifications;
 }
 function getICYMIComponent() {
-  return arg1(dependencyMap[9]).default;
+  return require(15176) /* ICYMINavigator */.default;
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-const YouBarNavigatorScreens = arg1(dependencyMap[4]).YouBarNavigatorScreens;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
-const tmp3 = arg1(dependencyMap[5]);
-let closure_12 = arg1(dependencyMap[6]).createNativeStackNavigator();
-const obj2 = arg1(dependencyMap[6]);
+({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
+createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
 const memoResult = importAllResult.memo(function YouBarStackNavigator() {
-  const tmp = function useInitialGuildParams() {
-    const ref = React.useRef(undefined);
+  const tmp = (function useInitialGuildParams() {
+    const ref = outer1_3.useRef(undefined);
     let obj = tmp(accessibilityNativeStackOptions[10]);
-    const items = [closure_7];
-    const stateFromStores = obj.useStateFromStores(items, () => guildId.getGuildId());
+    const items = [outer1_7];
+    const stateFromStores = obj.useStateFromStores(items, () => outer2_7.getGuildId());
     if (tmp3) {
       obj = { guildId: stateFromStores };
-      const channelId = channelId.getChannelId(stateFromStores);
+      const channelId = outer1_6.getChannelId(stateFromStores);
       let tmp6;
       if (null != channelId) {
         tmp6 = channelId;
@@ -40,16 +47,14 @@ const memoResult = importAllResult.memo(function YouBarStackNavigator() {
       ref.current = obj;
     }
     return ref.current;
-  }();
-  const arg1 = tmp;
-  importDefault(dependencyMap[11])();
-  let obj = arg1(dependencyMap[12]);
-  const iCYMIEnabled = obj.useICYMIEnabled("TabsNavigator");
-  const importDefault = iCYMIEnabled;
-  let obj1 = arg1(dependencyMap[13]);
-  const accessibilityNativeStackOptions = obj1.useAccessibilityNativeStackOptions();
-  const dependencyMap = accessibilityNativeStackOptions;
-  const items = [accessibilityNativeStackOptions];
+  })();
+  const require = tmp;
+  iCYMIEnabled(accessibilityNativeStackOptions[11])();
+  let obj = require(accessibilityNativeStackOptions[12]);
+  iCYMIEnabled = obj.useICYMIEnabled("TabsNavigator");
+  let obj1 = require(accessibilityNativeStackOptions[13]);
+  accessibilityNativeStackOptions = obj1.useAccessibilityNativeStackOptions();
+  let items = [accessibilityNativeStackOptions];
   obj = { style: absoluteFillObject.absoluteFillObject };
   const memo = importAllResult.useMemo(() => {
     const obj = {};
@@ -65,43 +70,43 @@ const memoResult = importAllResult.memo(function YouBarStackNavigator() {
   obj1.children = importAllResult.useMemo(() => {
     let obj = {};
     obj = {
-      name: constants.GUILDS,
-      initialParams: tmp,
-      getComponent: closure_13,
+      name: outer1_8.GUILDS,
+      initialParams: closure_0,
+      getComponent: outer1_13,
       options() {
-        const merged = Object.assign(closure_2);
+        const merged = Object.assign(outer1_2);
         return {};
       }
     };
-    const items = [callback(closure_12.Screen, obj), , ];
+    const items = [outer1_9(outer1_12.Screen, obj), , ];
     let tmp3 = null;
     if (iCYMIEnabled) {
       obj = {
-        name: constants.ICYMI,
-        getComponent: closure_15,
+        name: outer1_8.ICYMI,
+        getComponent: outer1_15,
         options() {
-            const merged = Object.assign(closure_2);
+            const merged = Object.assign(outer1_2);
             return {};
           }
       };
-      tmp3 = callback(closure_12.Screen, obj);
+      tmp3 = outer1_9(outer1_12.Screen, obj);
     }
     items[1] = tmp3;
-    items[2] = callback(closure_12.Screen, {
-      name: constants.NOTIFICATIONS,
-      getComponent: closure_14,
+    items[2] = outer1_9(outer1_12.Screen, {
+      name: outer1_8.NOTIFICATIONS,
+      getComponent: outer1_14,
       options() {
-        const merged = Object.assign(closure_2);
+        const merged = Object.assign(outer1_2);
         return {};
       }
     });
     obj.children = items;
-    return closure_11(closure_10, obj);
+    return outer1_11(outer1_10, obj);
   }, items1);
-  obj.children = callback(Navigator.Navigator, obj1);
-  obj.children = callback(arg1(dependencyMap[14]).LayerScope, obj);
+  obj.children = callback(createNativeStackNavigator.Navigator, obj1);
+  obj.children = callback(require(accessibilityNativeStackOptions[14]).LayerScope, obj);
   return callback(closure_5, obj);
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarStackNavigator.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarStackNavigator.tsx");
 
 export default memoResult;

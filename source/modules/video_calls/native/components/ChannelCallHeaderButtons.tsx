@@ -1,57 +1,60 @@
-// Module ID: 10752
-// Function ID: 83536
+// Module ID: 10762
+// Function ID: 83585
 // Name: CameraButton
-// Dependencies: []
+// Dependencies: [31, 4177, 33, 566, 10666, 1212, 10763, 8843, 10212, 10213, 10764, 4323, 2]
 // Exports: CameraButton, GridButton
 
-// Module 10752 (CameraButton)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/video_calls/native/components/ChannelCallHeaderButtons.tsx");
+// Module 10762 (CameraButton)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/ChannelCallHeaderButtons.tsx");
 
 export const CameraButton = function CameraButton() {
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_3];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isVideoEnabled: store.isVideoEnabled(), videoDeviceId: store.getVideoDeviceId(), videoDevices: store.getVideoDevices() }));
-  ({ videoDeviceId: closure_0, videoDevices: closure_1 } = stateFromStoresObject);
+  let importDefault;
+  let require;
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isVideoEnabled: outer1_3.isVideoEnabled(), videoDeviceId: outer1_3.getVideoDeviceId(), videoDevices: outer1_3.getVideoDevices() }));
+  ({ videoDeviceId: require, videoDevices: importDefault } = stateFromStoresObject);
   let tmp2 = null;
   if (stateFromStoresObject.isVideoEnabled) {
     obj = {};
-    const intl = arg1(dependencyMap[5]).intl;
-    obj.accessibilityLabel = intl.string(arg1(dependencyMap[5]).t.t9eQ/g);
-    obj.source = importDefault(dependencyMap[6]);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["t9eQ/g"]);
+    obj.source = importDefault(10763);
     obj.onPress = function onPress() {
-      const keys = Object.keys(callback);
-      const found = keys.find((arg0) => arg0 !== closure_0);
+      const keys = Object.keys(closure_1);
+      const found = keys.find((arg0) => arg0 !== outer1_0);
       if (null != found) {
-        callback(closure_2[7]).setVideoDevice(found);
-        const obj = callback(closure_2[7]);
+        outer1_1(outer1_2[7]).setVideoDevice(found);
+        const obj = outer1_1(outer1_2[7]);
       }
     };
     obj.disableBackground = true;
-    tmp2 = jsx(importDefault(dependencyMap[4]), obj);
-    const tmp6 = importDefault(dependencyMap[4]);
+    tmp2 = jsx(importDefault(10666), {});
+    const tmp6 = importDefault(10666);
   }
   return tmp2;
 };
 export const GridButton = function GridButton(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   let tmp2 = null;
-  if (null != importDefault(dependencyMap[9])(channel)) {
+  if (null != importDefault(10213)(channel)) {
     tmp2 = null;
     if (!tmp) {
       const obj = {};
-      const intl = arg1(dependencyMap[5]).intl;
-      obj.accessibilityLabel = intl.string(arg1(dependencyMap[5]).t.HK4JIu);
-      obj.source = importDefault(dependencyMap[10]);
+      const intl = channel(1212).intl;
+      obj.accessibilityLabel = intl.string(channel(1212).t.HK4JIu);
+      obj.source = importDefault(10764);
       obj.onPress = function onPress() {
-        return callback(closure_2[11]).selectParticipant(channel.id, null);
+        return outer1_1(outer1_2[11]).selectParticipant(channel.id, null);
       };
       obj.disableBackground = true;
-      tmp2 = jsx(importDefault(dependencyMap[4]), obj);
-      const tmp6 = importDefault(dependencyMap[4]);
+      tmp2 = jsx(importDefault(10666), {});
+      const tmp6 = importDefault(10666);
     }
   }
   return tmp2;

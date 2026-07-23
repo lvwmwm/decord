@@ -1,24 +1,37 @@
-// Module ID: 14028
-// Function ID: 106678
+// Module ID: 14142
+// Function ID: 108834
 // Name: volumeSlider
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 5739, 5733, 5484, 2]
 
-// Module 14028 (volumeSlider)
-const _module = require(dependencyMap[1]);
-const volumeSlider = _module.createVolumeSlider({
+// Module 14142 (volumeSlider)
+import createToggle from "createToggle";
+
+const volumeSlider = createToggle.createVolumeSlider({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.kbFsAD);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.kbFsAD);
   },
-  parent: require(dependencyMap[0]).MobileSetting.VOICE,
+  parent: require("MobileSetting").MobileSetting.VOICE,
   maximum: 100,
-  useValue: require(dependencyMap[3]).getAmplitudinalSoundboardVolume,
+  useValue: require("hasPermissionToPlaySound").getAmplitudinalSoundboardVolume,
   onValueChange(volume) {
-    const items = [importDefault(dependencyMap[5]).USER_SETTINGS];
-    return require(dependencyMap[4]).updateUserSoundboardVolume(volume, items);
+    const items = [importDefault(5484).USER_SETTINGS];
+    return require(5733) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
   }
 });
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/SoundboardVolumeSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.kbFsAD);
+  },
+  parent: require("MobileSetting").MobileSetting.VOICE,
+  maximum: 100,
+  useValue: require("hasPermissionToPlaySound").getAmplitudinalSoundboardVolume,
+  onValueChange(volume) {
+    const items = [importDefault(5484).USER_SETTINGS];
+    return require(5733) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
+  }
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/SoundboardVolumeSetting.tsx");
 
 export default volumeSlider;

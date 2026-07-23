@@ -1,13 +1,13 @@
-// Module ID: 8438
-// Function ID: 67341
+// Module ID: 8444
+// Function ID: 67378
 // Name: getDefaultGuildSettingsSection
-// Dependencies: []
+// Dependencies: [653, 2]
 // Exports: getDefaultGuildSettingsSection
 
-// Module 8438 (getDefaultGuildSettingsSection)
-const GuildSettingsSections = require(dependencyMap[0]).GuildSettingsSections;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_settings/utils/getDefaultGuildSettingsSection.tsx");
+// Module 8444 (getDefaultGuildSettingsSection)
+import { GuildSettingsSections } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/guild_settings/utils/getDefaultGuildSettingsSection.tsx");
 
 export const getDefaultGuildSettingsSection = function getDefaultGuildSettingsSection() {
   return GuildSettingsSections.PROFILE;

@@ -1,24 +1,34 @@
-// Module ID: 7860
-// Function ID: 62642
+// Module ID: 7866
+// Function ID: 62679
 // Name: EditCollectibleListItem
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 655, 33, 4130, 689, 4660, 4099, 4100, 1273, 7867, 4126, 1212, 5464, 6773, 4098, 7868, 7869, 566, 3776, 7857, 6786, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 7860 (EditCollectibleListItem)
+// Module 7866 (EditCollectibleListItem)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { CollectiblesMobileShopScreen as closure_6 } from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 class EditCollectibleListItem {
   constructor(arg0) {
-    ({ size, isSelected, onPress: closure_0, accessibilityRole } = global);
+    ({ size, isSelected, onPress, accessibilityRole } = global);
     ({ children, style, onLongPress, accessibilityLabel } = global);
     if (accessibilityRole === undefined) {
       accessibilityRole = "button";
     }
-    tmp = closure_9();
+    tmp = c9();
     tmp2 = jsx;
     obj = {
       style: tmp.pressable,
       disabled: isSelected,
       onPress() {
-            const result = callback(closure_2[8]).triggerHapticFeedback(callback2(closure_2[9]).IMPACT_LIGHT);
+            const result = outer1_0(outer1_2[8]).triggerHapticFeedback(outer1_1(outer1_2[9]).IMPACT_LIGHT);
             callback();
           },
       onLongPress
@@ -41,79 +51,71 @@ class EditCollectibleListItem {
     obj.style = items;
     obj.children = children;
     obj.children = tmp3(tmp4, obj);
-    return tmp2(arg1(dependencyMap[7]).PressableOpacity, obj);
+    return tmp2(require("PressableBase").PressableOpacity, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).CollectiblesMobileShopScreen;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { marginTop: 10, borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.pressable = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.item = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-const obj1 = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.selected = { borderColor: importDefault(dependencyMap[6]).colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
-obj.optionCell = { "Bool(false)": null, "Bool(false)": null };
-obj.optionCellText = { marginTop: 4 };
-obj.newIcon = {};
-obj.lockIcon = { convertShortcutToName: "remove", hasUnreadMessages: null, CreatorMonetizationRestrictions: "secondaryButton" };
-let closure_9 = obj.createStyles(obj);
-const obj2 = { borderColor: importDefault(dependencyMap[6]).colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/collectibles/native/CollectiblesEditUserProfileListItems.tsx");
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: 10, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.pressable = _createForOfIteratorHelperLoose;
+let obj1 = { borderWidth: 2, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.item = obj1;
+_createForOfIteratorHelperLoose.selected = { borderColor: require("_createForOfIteratorHelperLoose").colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
+_createForOfIteratorHelperLoose.optionCell = { justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.optionCellText = { marginTop: 4 };
+_createForOfIteratorHelperLoose.newIcon = { position: "absolute", top: -12, right: 5 };
+_createForOfIteratorHelperLoose.lockIcon = { position: "absolute", top: -12, right: -10 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj2 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/CollectiblesEditUserProfileListItems.tsx");
 
 export { EditCollectibleListItem };
 export const EditCollectiblesListItemNone = function EditCollectiblesListItemNone(asDefault) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.optionCell };
   const merged = Object.assign(asDefault);
-  obj = { source: importDefault(dependencyMap[11]), size: arg1(dependencyMap[10]).IconSizes.LARGE };
-  const items = [callback(arg1(dependencyMap[10]).Icon, obj), ];
-  obj = { style: tmp.optionCellText };
-  const intl = arg1(dependencyMap[13]).intl;
+  obj = { source: importDefault(7867), size: require(1273) /* Button */.IconSizes.LARGE };
+  const items = [callback(require(1273) /* Button */.Icon, obj), ];
+  obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.optionCellText };
+  const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[13]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if (asDefault.asDefault) {
     let stringResult = string(t.CHf9iJ);
   } else {
     stringResult = string(t.PoWNfe);
   }
   obj.children = stringResult;
-  items[1] = callback(arg1(dependencyMap[12]).Text, obj);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj["children"] = items;
   return closure_8(EditCollectibleListItem, obj);
 };
 export const EditCollectiblesListItemShop = function EditCollectiblesListItemShop(analyticsSource) {
   analyticsSource = analyticsSource.analyticsSource;
-  const arg1 = analyticsSource;
   let obj = Object.create(null);
   obj.analyticsSource = 0;
   const merged = Object.assign(analyticsSource, obj);
-  const tmp3 = callback3();
-  const analyticsLocations = importDefault(dependencyMap[14])(analyticsSource).analyticsLocations;
-  const importDefault = analyticsLocations;
+  const tmp3 = _createForOfIteratorHelperLoose();
+  analyticsLocations = analyticsLocations(5464)(analyticsSource).analyticsLocations;
   const items = [analyticsLocations, analyticsSource];
   obj = {
     style: tmp3.optionCell,
     isSelected: false,
     onPress: React.useCallback(() => {
-      let obj = analyticsSource(closure_2[15]);
-      obj = { analyticsLocations, analyticsSource, screen: constants.FEATURED_PAGE };
+      let obj = analyticsSource(outer1_2[15]);
+      obj = { analyticsLocations, analyticsSource, screen: outer1_6.FEATURED_PAGE };
       const result = obj.openCollectiblesShopMobile(obj);
-      analyticsLocations(closure_2[16]).hideActionSheet();
+      analyticsLocations(outer1_2[16]).hideActionSheet();
     }, items)
   };
   const merged1 = Object.assign(merged);
-  obj = { source: importDefault(dependencyMap[17]), size: arg1(dependencyMap[10]).IconSizes.LARGE };
-  const items1 = [callback(arg1(dependencyMap[10]).Icon, obj), , ];
-  const obj1 = { style: tmp3.optionCellText };
-  const intl = arg1(dependencyMap[13]).intl;
-  obj1.children = intl.string(arg1(dependencyMap[13]).t.pWG4ze);
-  items1[1] = callback(arg1(dependencyMap[12]).Text, obj1);
-  items1[2] = callback(arg1(dependencyMap[18]).NewBadge, { style: tmp3.newIcon });
+  obj = { source: analyticsLocations(7868), size: analyticsSource(1273).IconSizes.LARGE };
+  const items1 = [callback(analyticsSource(1273).Icon, obj), , ];
+  const obj1 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp3.optionCellText };
+  const intl = analyticsSource(1212).intl;
+  obj1.children = intl.string(analyticsSource(1212).t.pWG4ze);
+  items1[1] = callback(analyticsSource(4126).Text, obj1);
+  items1[2] = callback(analyticsSource(7869).NewBadge, { style: tmp3.newIcon });
   obj["children"] = items1;
   return callback2(EditCollectibleListItem, obj);
 };
@@ -122,24 +124,24 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   let isSelected;
   let isTryItOut;
   skuId = skuId.skuId;
-  let obj = { onSwipeableCloseStartDrag: -24, didSelfVote: null, isExpired: 1, NBSP: "Malaysia" };
+  let obj = { isSelected: 0, isTryItOut: 0, skuId: 0, children: 0 };
   ({ isSelected, isTryItOut, children } = skuId);
   Object.setPrototypeOf(null);
   const merged = Object.assign(skuId, obj);
-  const tmp3 = callback3();
-  let obj1 = arg1(dependencyMap[19]);
-  const items = [closure_5];
-  const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj3 = importDefault(dependencyMap[20]);
-  const tmp6 = importDefault(dependencyMap[21])(skuId);
+  const tmp3 = _createForOfIteratorHelperLoose();
+  let obj1 = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getCurrentUser());
+  const obj3 = importDefault(3776);
+  const tmp6 = importDefault(7857)(skuId);
   const purchase = tmp6.purchase;
-  const canUseCollectiblesResult = importDefault(dependencyMap[20]).canUseCollectibles(stateFromStores);
-  const isProductNewResult = arg1(dependencyMap[22]).isProductNew(skuId);
-  const obj4 = arg1(dependencyMap[22]);
-  let result = arg1(dependencyMap[22]).isPremiumCollectiblesProduct(tmp6.product);
+  const canUseCollectiblesResult = importDefault(3776).canUseCollectibles(stateFromStores);
+  const isProductNewResult = require(6786) /* getPriceForCollectiblesProduct */.isProductNew(skuId);
+  const obj4 = require(6786) /* getPriceForCollectiblesProduct */;
+  let result = require(6786) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesProduct(tmp6.product);
   if (!result) {
-    result = arg1(dependencyMap[22]).isPremiumCollectiblesPurchase(purchase);
-    const obj6 = arg1(dependencyMap[22]);
+    result = require(6786) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesPurchase(purchase);
+    const obj6 = require(6786) /* getPriceForCollectiblesProduct */;
   }
   obj = { isSelected };
   const merged1 = Object.assign(merged);
@@ -147,7 +149,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   if (null == purchase) {
     if (!result) {
       obj = { style: tmp3.lockIcon, isNew: isProductNewResult };
-      let tmp17 = callback(arg1(dependencyMap[18]).LockBadge, obj);
+      let tmp17 = callback(require(7869) /* NewBadge */.LockBadge, obj);
     }
     items1[1] = tmp17;
     obj["children"] = items1;
@@ -159,7 +161,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
     if (!isTryItOut) {
       if (null == purchase) {
         obj1 = { style: tmp3.lockIcon, isNew: isProductNewResult };
-        tmp18 = callback(arg1(dependencyMap[18]).PremiumBadge, obj1);
+        tmp18 = callback(require(7869) /* NewBadge */.PremiumBadge, obj1);
       } else {
         tmp18 = null;
       }

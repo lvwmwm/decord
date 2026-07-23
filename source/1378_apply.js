@@ -1,5 +1,5 @@
 // Module ID: 1378
-// Function ID: 16517
+// Function ID: 16518
 // Name: apply
 // Dependencies: []
 
@@ -14,7 +14,7 @@ if (apply) {
   apply = Reflect.apply;
 }
 let tmp2 = apply;
-let closure_3 = apply;
+let c3 = apply;
 if ("function" === typeof apply) {
   const _Object = Object;
   if ("function" === typeof Object.defineProperty) {
@@ -31,7 +31,7 @@ if ("function" === typeof apply) {
     }, null, definePropertyResult);
   }
   while (true) {
-    let closure_4 = /^\s*class\b/;
+    let re4 = /^\s*class\b/;
     function isES6ClassFunction(arg0) {
       return regex.test(toString.call(arg0));
     }
@@ -53,7 +53,7 @@ if ("function" === typeof apply) {
     } else {
       let _Symbol2 = Symbol;
       toStringTag = Symbol.toStringTag;
-      // break
+      break;
     }
     let items = [];
     let num = 1;
@@ -94,7 +94,7 @@ if ("function" === typeof apply) {
       }
     }
     let tmp10 = module;
-    module.exports = tmp2 ? function isCallable(arg0) {
+    module.exports = tmp2 ? (function isCallable(arg0) {
       if (isDocumentDotAll(arg0)) {
         return true;
       } else if (tmp) {
@@ -103,7 +103,7 @@ if ("function" === typeof apply) {
             return false;
           }
         }
-        _null(tmp, null, definePropertyResult);
+        _null(tmp, null, closure_0);
         while (true) {
           let tmp10 = isES6ClassFunction;
           let tmp11 = arg0;
@@ -114,14 +114,14 @@ if ("function" === typeof apply) {
           } else {
             let tmp14 = tryFunctionToStr;
             tmp13 = tryFunctionToStr(arg0);
-            // break
+            break;
           }
           return tmp13;
         }
       } else {
         return false;
       }
-    } : function isCallable(arg0) {
+    }) : (function isCallable(arg0) {
       if (isDocumentDotAll(arg0)) {
         return true;
       } else if (arg0) {
@@ -153,8 +153,8 @@ if ("function" === typeof apply) {
       } else {
         return false;
       }
-    };
+    });
   }
 }
 tmp2 = null;
-closure_3 = null;
+c3 = null;

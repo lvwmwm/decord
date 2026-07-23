@@ -1,85 +1,99 @@
 // Module ID: 5269
-// Function ID: 45462
+// Function ID: 45433
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5256]
 
 // Module 5269 (_isNativeReflectConstruct)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _classCallCheck = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _classCallCheck;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = { code: "function changeEventCalculator_Pnpm_rotationGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={rotationChange:current.rotation};}else{changePayload={rotationChange:current.rotation-previous.rotation};}return{...current,...changePayload};}" };
-let closure_7 = () => {
-  function changeEventCalculator(rotation, rotation2) {
-    if (undefined === rotation2) {
-      let obj = { rotationChange: rotation.rotation };
-    } else {
-      obj = { rotationChange: rotation.rotation - rotation2.rotation };
-    }
-    return Object.assign({}, rotation, obj);
-  }
-  changeEventCalculator.__closure = {};
-  changeEventCalculator.__workletHash = 11988645380499;
-  changeEventCalculator.__initData = closure_6;
-  return changeEventCalculator;
-}();
 
-export const RotationGesture = (ContinousBaseGesture) => {
-  class RotationGesture {
+export const TapGesture = ((BaseGesture) => {
+  class TapGesture {
     constructor() {
       self = this;
-      tmp = RotationGesture(this, RotationGesture);
-      obj = closure_3(RotationGesture);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      tmp = TapGesture(this, TapGesture);
+      obj = outer1_3(TapGesture);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, [], closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, [], outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.handlerName = "RotationGestureHandler";
+      tmp2Result.config = {};
+      tmp2Result.handlerName = "TapGestureHandler";
+      result = tmp2Result.shouldCancelWhenOutside(true);
       return tmp2Result;
     }
   }
-  let closure_0 = RotationGesture;
-  callback2(RotationGesture, ContinousBaseGesture);
-  const items = [
-    {
-      key: "onChange",
-      value: function onChange(arg0) {
-        this.handlers.changeEventCalculator = closure_7;
-        const items = [arg0];
-        return function _superPropGet(RotationGesture, onChange, arg2, arg3) {
-          let prototype = RotationGesture;
-          if (1) {
-            prototype = RotationGesture.prototype;
-          }
-          const tmpResult = closure_4(closure_3(prototype), "onChange", arg2);
-          let fn = tmpResult;
-          if (2) {
-            fn = tmpResult;
-            if ("function" === typeof tmpResult) {
-              fn = (arg0) => tmpResult.apply(arg2, arg0);
-            }
-          }
-          return fn;
-        }(RotationGesture, "onChange", this, 3)(items);
-      }
+  callback2(TapGesture, BaseGesture);
+  let obj = {
+    key: "minPointers",
+    value: function minPointers(minPointers) {
+      this.config.minPointers = minPointers;
+      return this;
     }
-  ];
-  return callback(RotationGesture, items);
-}(arg1(dependencyMap[6]).ContinousBaseGesture);
+  };
+  const items = [obj, , , , , , ];
+  obj = {
+    key: "numberOfTaps",
+    value: function numberOfTaps(numberOfTaps) {
+      this.config.numberOfTaps = numberOfTaps;
+      return this;
+    }
+  };
+  items[1] = obj;
+  obj = {
+    key: "maxDistance",
+    value: function maxDistance(maxDist) {
+      this.config.maxDist = maxDist;
+      return this;
+    }
+  };
+  items[2] = obj;
+  items[3] = {
+    key: "maxDuration",
+    value: function maxDuration(maxDurationMs) {
+      this.config.maxDurationMs = maxDurationMs;
+      return this;
+    }
+  };
+  items[4] = {
+    key: "maxDelay",
+    value: function maxDelay(maxDelayMs) {
+      this.config.maxDelayMs = maxDelayMs;
+      return this;
+    }
+  };
+  items[5] = {
+    key: "maxDeltaX",
+    value: function maxDeltaX(maxDeltaX) {
+      this.config.maxDeltaX = maxDeltaX;
+      return this;
+    }
+  };
+  items[6] = {
+    key: "maxDeltaY",
+    value: function maxDeltaY(maxDeltaY) {
+      this.config.maxDeltaY = maxDeltaY;
+      return this;
+    }
+  };
+  return callback(TapGesture, items);
+})(require("_callSuper").BaseGesture);

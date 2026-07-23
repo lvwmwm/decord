@@ -1,16 +1,17 @@
-// Module ID: 10715
-// Function ID: 83406
+// Module ID: 10725
+// Function ID: 83455
 // Name: set
-// Dependencies: []
+// Dependencies: [477, 10726, 2]
 // Exports: default
 
-// Module 10715 (set)
-const set = new Set(["disableStaticBackground", "EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE"]);
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/noise_cancellation/getEffectiveNoiseCancellation.tsx");
+// Module 10725 (set)
+import set from "set";
+
+let set = new Set(["voice_isolation", "wide_spectrum"]);
+const result = set.fileFinishedImporting("modules/noise_cancellation/getEffectiveNoiseCancellation.tsx");
 
 export default function getEffectiveNoiseCancellation(arg0, arg1) {
-  let obj = require(dependencyMap[0]);
+  let obj = require(477) /* set */;
   if (!obj.isIOS()) {
     if (!obj2.isMac()) {
       let tmp3 = arg0;
@@ -20,16 +21,16 @@ export default function getEffectiveNoiseCancellation(arg0, arg1) {
           tmp5 = "" === arg1;
         }
         if (!tmp5) {
-          tmp5 = !require(dependencyMap[0]).isWindows();
-          const obj3 = require(dependencyMap[0]);
+          tmp5 = !require(477) /* set */.isWindows();
+          const obj3 = require(477) /* set */;
         }
         if (!tmp5) {
           tmp5 = arg1 !== "deep_noise_suppression";
         }
         if (!tmp5) {
           obj = { location: "setNoiseCancellation" };
-          tmp5 = !require(dependencyMap[1]).getWindowsAudioEffectsExperimentConfig(obj).preferSystemEffects;
-          const obj4 = require(dependencyMap[1]);
+          tmp5 = !require(10726) /* getWindowsAudioEffectsExperimentConfig */.getWindowsAudioEffectsExperimentConfig(obj).preferSystemEffects;
+          const obj4 = require(10726) /* getWindowsAudioEffectsExperimentConfig */;
         }
         if (tmp5) {
           tmp5 = arg0;

@@ -1,14 +1,14 @@
 // Module ID: 1828
-// Function ID: 20022
+// Function ID: 20023
 // Name: parseAvatarDecorationData
-// Dependencies: []
+// Dependencies: [1829, 22, 2]
 // Exports: hasGlobalDefaultAvatarDecoration, isEqualAvatarDecoration
 
 // Module 1828 (parseAvatarDecorationData)
 function parseAvatarDecorationData(avatarDecoration) {
   if ("object" === typeof avatarDecoration) {
     if (null != avatarDecoration) {
-      let obj = require(dependencyMap[0]);
+      let obj = require(1829) /* parseSkuIdFromServerData */;
       const result = obj.parseSkuIdFromServerData(avatarDecoration);
       if (null == result) {
         return null;
@@ -54,15 +54,14 @@ function isAvatarDecorationExpired(avatarDecoration) {
   }
   return tmp2;
 }
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/collectibles/avatar_decorations/AvatarDecorationUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/avatar_decorations/AvatarDecorationUtils.tsx");
 
 export { parseAvatarDecorationData };
 export { isAvatarDecorationExpired };
 export const isEqualAvatarDecoration = function isEqualAvatarDecoration(avatarDecoration, avatarDecoration) {
   if (null != avatarDecoration) {
     if (null != avatarDecoration) {
-      const obj = require(dependencyMap[1]);
+      const obj = require(22) /* apply */;
       let isEqualResult = obj.isEqual(parseAvatarDecorationData(avatarDecoration), parseAvatarDecorationData(avatarDecoration));
       const tmp4 = parseAvatarDecorationData(avatarDecoration);
     }

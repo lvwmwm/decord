@@ -1,40 +1,43 @@
 // Module ID: 145
 // Function ID: 2345
 // Name: defaultDiffer
-// Dependencies: []
+// Dependencies: [146, 147]
 
 // Module 145 (defaultDiffer)
+const module = arg2;
+const dependencyMap = arg6;
 function defaultDiffer(arg0, arg1) {
   let tmp = "object" !== typeof arg1;
   if (!tmp) {
     tmp = null === arg1;
   }
   if (!tmp) {
-    tmp = arg2(arg6[0])(arg0, arg1, closure_5);
+    tmp = module(146)(arg0, arg1, closure_5);
   }
   return tmp;
 }
 function restoreDeletedValuesInNestedArray(arg0, arg1, arg2) {
+  let c4;
   if (Array.isArray(arg1)) {
     let diff = tmp11 - 1;
     if (+arg1.length) {
-      if (closure_4 > 0) {
+      if (c4 > 0) {
         restoreDeletedValuesInNestedArray(arg0, arg1[diff], arg2);
         diff = tmp16 - 1;
         while (+diff) {
-          let tmp17 = closure_4;
-          if (closure_4 <= 0) {
+          let tmp17 = c4;
+          if (c4 <= 0) {
             break;
           }
         }
       }
     }
   } else if (arg1) {
-    if (closure_4 > 0) {
-      for (const key10009 in closure_3) {
+    if (c4 > 0) {
+      for (const key10009 in c3) {
         let tmp19 = key10009;
-        let tmp20 = closure_3;
-        if (!closure_3[key10009]) {
+        let tmp20 = _null;
+        if (!_null[key10009]) {
           continue;
         } else {
           let tmp2 = arg1[key10009];
@@ -63,13 +66,13 @@ function restoreDeletedValuesInNestedArray(arg0, arg1, arg2) {
                 }
                 arg0[key10009] = processResult;
               }
-              let tmp7 = closure_3;
-              closure_3[key10009] = false;
-              let tmp8 = closure_4;
-              closure_4 = closure_4 - 1;
+              let tmp7 = _null;
+              _null[key10009] = false;
+              let tmp8 = c4;
+              c4 = c4 - 1;
               let tmp9 = tmp2;
               let tmp10 = obj;
-              // continue
+              continue;
             }
             continue;
           }
@@ -108,7 +111,7 @@ function diffNestedProperty(arg0, arg1, arg2, arg3) {
   if (!Array.isArray(arr)) {
     const _Array3 = Array;
     const isArray = Array.isArray(arr);
-    const tmp15 = arg2(arg6[1]);
+    const tmp15 = module(147);
     if (isArray) {
       let tmp12Result = tmp12(tmp, tmp15(arr), arg2, arg3);
     } else {
@@ -124,10 +127,10 @@ function diffNestedProperty(arg0, arg1, arg2, arg3) {
   let tmp25 = tmp;
   if (0 < tmp23) {
     do {
-      let tmp26 = closure_8;
+      let tmp26 = diffNestedProperty;
       let tmp27 = tmp24;
       let tmp28 = arg3;
-      tmp24 = closure_8(tmp24, arr[num3], arg2[num3], arg3);
+      tmp24 = diffNestedProperty(tmp24, arr[num3], arg2[num3], arg3);
       num3 = num3 + 1;
       tmp25 = tmp24;
       num2 = num3;
@@ -139,8 +142,8 @@ function diffNestedProperty(arg0, arg1, arg2, arg3) {
   let sum1 = num2;
   if (num2 < arr.length) {
     do {
-      let tmp33 = closure_9;
-      tmp29 = closure_9(tmp29, arr[sum], arg3);
+      let tmp33 = clearNestedProperty;
+      tmp29 = clearNestedProperty(tmp29, arr[sum], arg3);
       sum = sum + 1;
       tmp31 = tmp29;
       sum1 = sum;
@@ -154,8 +157,8 @@ function diffNestedProperty(arg0, arg1, arg2, arg3) {
       arr = arg2[sum1];
       let tmp35 = tmp34;
       if (arr) {
-        let tmp36 = closure_11;
-        tmp35 = closure_11(tmp34, arr, arg3);
+        let tmp36 = addNestedProperty;
+        tmp35 = addNestedProperty(tmp34, arr, arg3);
       }
       sum1 = sum1 + 1;
       tmp34 = tmp35;
@@ -174,8 +177,8 @@ function clearNestedProperty(arg0, arg1, arg2) {
       let tmp8 = arg0;
       if (0 < arg1.length) {
         do {
-          let tmp9 = closure_9;
-          tmp7 = closure_9(tmp7, arg1[num], arg2);
+          let tmp9 = clearNestedProperty;
+          tmp7 = clearNestedProperty(tmp7, arg1[num], arg2);
           num = num + 1;
           tmp8 = tmp7;
           length = arg1.length;
@@ -231,10 +234,10 @@ function diffProperties(arg0, arg1, arg2, arg3) {
           tmp15 = tmp16;
           tmp12 = null;
         }
-        let tmp17 = closure_3;
-        if (closure_3) {
-          let tmp18 = closure_3;
-          closure_3[tmp10] = false;
+        let tmp17 = _null;
+        if (_null) {
+          let tmp18 = _null;
+          _null[tmp10] = false;
         }
         if (tmp9) {
           if (undefined !== tmp9[tmp10]) {
@@ -244,7 +247,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
               tmp3 = obj4;
               let tmp44 = tmp12;
               tmp4 = tmp15;
-              // continue
+              continue;
             } else {
               if ("function" === typeof obj4.diff) {
                 let processResult = tmp12;
@@ -256,7 +259,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
                 tmp3 = obj4;
                 let tmp43 = tmp12;
                 tmp4 = tmp15;
-                // continue
+                continue;
               } else {
                 tmp2 = tmp9;
                 tmp3 = obj4;
@@ -294,13 +297,13 @@ function diffProperties(arg0, arg1, arg2, arg3) {
               tmp3 = obj4;
               let tmp40 = tmp12;
               tmp4 = tmp15;
-              // continue
+              continue;
             }
             continue;
           } else {
             if ("function" !== typeof obj4.diff) {
               if ("function" !== typeof obj4.process) {
-                closure_3 = null;
+                _null = null;
                 let closure_4 = 0;
                 let tmp20 = diffNestedProperty;
                 let tmp21 = tmp9;
@@ -319,12 +322,12 @@ function diffProperties(arg0, arg1, arg2, arg3) {
                 } else {
                   let tmp29 = restoreDeletedValuesInNestedArray;
                   let tmp30 = restoreDeletedValuesInNestedArray(tmp25, tmp12, obj4);
-                  closure_3 = null;
+                  _null = null;
                   tmp2 = tmp25;
                   tmp3 = obj4;
                   let tmp31 = tmp12;
                   tmp4 = tmp15;
-                  // continue
+                  continue;
                 }
                 continue;
               }
@@ -346,7 +349,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
               let tmp36 = tmp12;
               tmp4 = tmp15;
               let tmp37 = processResult1;
-              // continue
+              continue;
             } else {
               if ("function" === typeof obj4.diff) {
                 let diffResult = obj4.diff(tmp15, tmp12);
@@ -413,15 +416,15 @@ function diffProperties(arg0, arg1, arg2, arg3) {
               tmp58 = obj;
             }
             obj[tmp50] = null;
-            let tmp59 = closure_3;
-            if (!closure_3) {
-              closure_3 = {};
+            let tmp59 = _null;
+            if (!_null) {
+              _null = {};
             }
-            let tmp60 = closure_3;
+            let tmp60 = _null;
             tmp57 = tmp58;
-            if (!closure_3[tmp50]) {
-              let tmp61 = closure_3;
-              closure_3[tmp50] = true;
+            if (!_null[tmp50]) {
+              let tmp61 = _null;
+              _null[tmp50] = true;
               let tmp62 = closure_4;
               closure_4 = closure_4 + 1;
               tmp57 = tmp58;
@@ -430,7 +433,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
         }
         tmp7 = tmp49;
         tmp6 = tmp52;
-        // continue
+        continue;
       }
       continue;
     }
@@ -445,8 +448,8 @@ function addNestedProperty(arg0, arg1, arg2) {
     let tmp13 = arg0;
     if (0 < arg1.length) {
       do {
-        let tmp14 = closure_11;
-        tmp12 = closure_11(tmp12, arg1[num], arg2);
+        let tmp14 = addNestedProperty;
+        tmp12 = addNestedProperty(tmp12, arg1[num], arg2);
         num = num + 1;
         tmp13 = tmp12;
         length = arg1.length;
@@ -488,7 +491,7 @@ function addNestedProperty(arg0, arg1, arg2) {
             let tmp10 = addNestedProperty;
             obj = addNestedProperty(tmp6, tmp16, obj2);
             let tmp11 = processResult;
-            // continue
+            continue;
           } else {
             obj = tmp6;
             if (!tmp6) {
@@ -496,7 +499,7 @@ function addNestedProperty(arg0, arg1, arg2) {
             }
             obj[tmp7] = processResult;
             let tmp9 = processResult;
-            // continue
+            continue;
           }
           continue;
         }
@@ -507,8 +510,8 @@ function addNestedProperty(arg0, arg1, arg2) {
   }
 }
 let closure_2 = {};
-let closure_3 = null;
-let closure_4 = 0;
+let c3 = null;
+let c4 = 0;
 let closure_5 = { unsafelyIgnoreFunctions: true };
 arg5.create = function create(arg0, arg1) {
   return addNestedProperty(null, arg0, arg1);

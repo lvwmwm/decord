@@ -1,57 +1,56 @@
-// Module ID: 10038
-// Function ID: 77575
+// Module ID: 10046
+// Function ID: 77615
 // Name: _addDirectoryGuildEntry
-// Dependencies: []
+// Dependencies: [5, 10033, 10035, 653, 574, 686, 507, 4942, 480, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 10038 (_addDirectoryGuildEntry)
+// Module 10046 (_addDirectoryGuildEntry)
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { DirectoryEntryCategories } from "DirectoryEntryTypes";
+import { Endpoints } from "ME";
+import importDefaultResult from "debounce";
+import importDefaultResult1 from "debounce";
+import importDefaultResult2 from "debounce";
+
+const require = arg1;
 function _addDirectoryGuildEntry() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _addDirectoryGuildEntry = obj;
   return obj(...arguments);
 }
 function _updateDirectoryEntry() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _updateDirectoryEntry = obj;
   return obj(...arguments);
 }
 function _fetchGuildEntriesForIds() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchGuildEntriesForIds = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const DirectoryEntryCategories = arg1(dependencyMap[2]).DirectoryEntryCategories;
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const importDefaultResult = importDefault(dependencyMap[4]);
-const importDefaultResultResult = importDefault(dependencyMap[4])(() => {
+const importDefaultResultResult = require("debounce")((() => {
   // CreateGeneratorClosureLongIndex (0x67)
   let closure_0 = callback(tmp);
   return function() {
     return callback(...arguments);
   };
-}(), 200);
-const importDefaultResult1 = importDefault(dependencyMap[4]);
-const importDefaultResult1Result = importDefault(dependencyMap[4])(() => {
+})(), 200);
+const importDefaultResult1Result = require("debounce")((() => {
   // CreateGeneratorClosureLongIndex (0x67)
   let closure_0 = callback(tmp);
   return function() {
     return callback(...arguments);
   };
-}(), 200);
-const importDefaultResult2 = importDefault(dependencyMap[4]);
-const importDefaultResult2Result = importDefault(dependencyMap[4])(() => {
+})(), 200);
+const importDefaultResult2Result = require("debounce")((() => {
   // CreateGeneratorClosureLongIndex (0x67)
   let closure_0 = callback(tmp);
   return function() {
     return callback(...arguments);
   };
-}(), 200);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/directory_channels/GuildDirectoryActionCreators.tsx");
+})(), 200);
+const result = require("DirectoryEntryTypes").fileFinishedImporting("modules/directory_channels/GuildDirectoryActionCreators.tsx");
 
 export const fetchDirectoryEntries = importDefaultResultResult;
 export const fetchDirectoryCounts = importDefaultResult1Result;
@@ -59,17 +58,17 @@ export const addDirectoryGuildEntry = function addDirectoryGuildEntry(directoryC
   return _addDirectoryGuildEntry(...arguments);
 };
 export const removeDirectoryGuildEntry = function removeDirectoryGuildEntry(channelId, guildId) {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(4942);
   obj = { url: Endpoints.DIRECTORY_CHANNEL_ENTRY(channelId, guildId) };
-  obj = { event: guildId(dependencyMap[8]).NetworkActionNames.DIRECTORY_GUILD_ENTRY_DELETE, properties: obj1 };
+  obj = { event: require(480) /* isThrottled */.NetworkActionNames.DIRECTORY_GUILD_ENTRY_DELETE, properties: obj1 };
   obj.trackedActionData = obj;
   obj.rejectWithError = true;
   obj.delete(obj);
-  importDefault(dependencyMap[5]).dispatch({ type: "GUILD_DIRECTORY_ENTRY_DELETE", channelId, guildId });
+  importDefault(686).dispatch({ type: "GUILD_DIRECTORY_ENTRY_DELETE", channelId, guildId });
 };
 export const searchDirectoryEntries = importDefaultResult2Result;
 export const clearDirectorySearch = function clearDirectorySearch(id) {
-  let obj = importDefault(dependencyMap[5]);
+  let obj = importDefault(686);
   obj = { type: "GUILD_DIRECTORY_SEARCH_CLEAR", channelId: id };
   obj.dispatch(obj);
 };
@@ -77,7 +76,7 @@ export const updateDirectoryEntry = function updateDirectoryEntry(channelId, gui
   return _updateDirectoryEntry(...arguments);
 };
 export const selectDirectoryCategory = function selectDirectoryCategory(id, value) {
-  let obj = importDefault(dependencyMap[5]);
+  let obj = importDefault(686);
   obj = { type: "GUILD_DIRECTORY_CATEGORY_SELECT", channelId: id, categoryId: value };
   obj.dispatch(obj);
 };

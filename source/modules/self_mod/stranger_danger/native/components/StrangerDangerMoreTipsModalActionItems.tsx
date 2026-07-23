@@ -1,47 +1,40 @@
-// Module ID: 10413
-// Function ID: 80240
+// Module ID: 10423
+// Function ID: 80290
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [0, 0, 0, 0, 0, 0, 4294967295, 0, 0]
+// Dependencies: [57, 31, 3767, 1849, 9101, 33, 566, 3969, 10131, 8923, 1212, 8738, 9218, 10424, 5503, 10425, 2]
 // Exports: default
 
-// Module 10413 (StrangerDangerMoreTipsModalActionItems)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import { SafetyWarningTypes } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 10423 (StrangerDangerMoreTipsModalActionItems)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
 
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerMoreTipsModalActionItems.tsx");
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerMoreTipsModalActionItems.tsx");
 
 export default function StrangerDangerMoreTipsModalActionItems(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const warningId = channelId.warningId;
-  const importDefault = warningId;
   const senderId = channelId.senderId;
-  const dependencyMap = senderId;
   const onBlockPressed = channelId.onBlockPressed;
-  let callback = onBlockPressed;
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_6];
+  let obj = channelId(senderId[6]);
+  let items = [isBlocked];
   const items1 = [senderId];
   const stateFromStores = obj.useStateFromStores(items, () => isBlocked.getUser(senderId), items1);
-  const React = stateFromStores;
   const items2 = [stateFromStores];
-  const memo = React.useMemo(() => warningId(senderId[7]).getName(stateFromStores), items2);
-  let closure_5 = memo;
-  const items3 = [closure_5];
+  const memo = stateFromStores.useMemo(() => warningId(senderId[7]).getName(stateFromStores), items2);
+  const items3 = [memo];
   const items4 = [senderId];
-  const stateFromStoresObject = arg1(dependencyMap[6]).useStateFromStoresObject(items3, () => ({ isIgnored: memo.isIgnored(senderId), isBlocked: memo.isBlocked(senderId) }), items4);
-  const isBlocked = stateFromStoresObject.isBlocked;
-  closure_6 = isBlocked;
-  const tmp4 = callback(React.useState(stateFromStoresObject.isIgnored), 2);
+  const stateFromStoresObject = channelId(senderId[6]).useStateFromStoresObject(items3, () => ({ isIgnored: memo.isIgnored(senderId), isBlocked: memo.isBlocked(senderId) }), items4);
+  isBlocked = stateFromStoresObject.isBlocked;
+  const tmp4 = onBlockPressed(stateFromStores.useState(stateFromStoresObject.isIgnored), 2);
   const first = tmp4[0];
-  const SafetyWarningTypes = first;
   const jsx = tmp6;
   const items5 = [channelId, warningId, senderId, tmp4[1]];
-  callback = React.useCallback(() => {
+  const callback = stateFromStores.useCallback(() => {
     let obj = channelId(senderId[8]);
     obj = { channelId, warningId, senderId, warningType: first.STRANGER_DANGER, cta: channelId(senderId[8]).CtaEventTypes.USER_MODAL_IGNORE };
     obj.trackCtaEvent(obj);
@@ -49,7 +42,7 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
     tmp6(true);
   }, items5);
   const items6 = [channelId, warningId, senderId, tmp4[1]];
-  const callback1 = React.useCallback(() => {
+  const callback1 = stateFromStores.useCallback(() => {
     let obj = channelId(senderId[8]);
     obj = { channelId, warningId, senderId, warningType: first.STRANGER_DANGER, cta: channelId(senderId[8]).CtaEventTypes.USER_MODAL_UNIGNORE };
     obj.trackCtaEvent(obj);
@@ -57,7 +50,7 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
     tmp6(false);
   }, items6);
   const items7 = [first, isBlocked, memo, callback, callback1, onBlockPressed];
-  const memo1 = React.useMemo(() => {
+  const memo1 = stateFromStores.useMemo(() => {
     let obj = {};
     const intl = channelId(senderId[10]).intl;
     const formatToPlainString = intl.formatToPlainString;
@@ -94,7 +87,7 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
       let formatToPlainString2Result = formatToPlainString2(t2.bluEjH, obj2);
     } else {
       const obj3 = { username: memo };
-      formatToPlainString2Result = formatToPlainString2(t2.gc/wxc, obj3);
+      formatToPlainString2Result = formatToPlainString2(t2["gc/wxc"], obj3);
     }
     obj1.title = formatToPlainString2Result;
     let stringResult1;
@@ -120,5 +113,14 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
       return tmp6(stateFromStores.Fragment, obj, arg1);
     })
   };
-  return jsx(arg1(dependencyMap[14]).TableRowGroup, obj);
+  return jsx(channelId(senderId[14]).TableRowGroup, {
+    hasIcons: true,
+    children: memo1.map((arg0, arg1) => {
+      let obj = {};
+      obj = {};
+      const merged = Object.assign(arg0);
+      obj.children = tmp6(warningId(senderId[15]), obj);
+      return tmp6(stateFromStores.Fragment, obj, arg1);
+    })
+  });
 };

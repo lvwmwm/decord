@@ -1,10 +1,10 @@
-// Module ID: 4175
-// Function ID: 35813
+// Module ID: 4179
+// Function ID: 35845
 // Name: assertInjected
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getOpenH264LibraryPath, getVoiceEngine, inject, setProcessPriority, supported, supportsFeature
 
-// Module 4175 (assertInjected)
+// Module 4179 (assertInjected)
 function assertInjected() {
   if (null == closure_0) {
     const _Error = Error;
@@ -12,11 +12,10 @@ function assertInjected() {
     throw error;
   }
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/media-engine/native/inject.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/inject.tsx");
 
 export function inject(arg0) {
-
+  let closure_0 = arg0;
 }
 export const supported = function supported() {
   assertInjected();
@@ -33,7 +32,7 @@ export const setProcessPriority = function setProcessPriority(arg0) {
 export const getVoiceEngine = function getVoiceEngine() {
   assertInjected();
   if (null == voiceEngine) {
-    const voiceEngine = uiStore.getVoiceEngine();
+    voiceEngine = uiStore.getVoiceEngine();
   }
   return voiceEngine;
 };

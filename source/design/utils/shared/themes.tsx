@@ -1,13 +1,13 @@
-// Module ID: 3838
-// Function ID: 32009
+// Module ID: 3840
+// Function ID: 32014
 // Name: isThemeLight
-// Dependencies: []
+// Dependencies: [482, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 3838 (isThemeLight)
-const ThemeTypes = require(dependencyMap[0]).ThemeTypes;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("design/utils/shared/themes.tsx");
+// Module 3840 (isThemeLight)
+import { ThemeTypes } from "sum";
+
+const result = require("set").fileFinishedImporting("design/utils/shared/themes.tsx");
 
 export const isThemeLight = function isThemeLight(arg0) {
   return arg0 === ThemeTypes.LIGHT;

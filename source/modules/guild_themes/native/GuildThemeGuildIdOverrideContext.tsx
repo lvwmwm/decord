@@ -1,11 +1,12 @@
-// Module ID: 4009
-// Function ID: 33281
+// Module ID: 4011
+// Function ID: 33286
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 2]
 
-// Module 4009 (context)
-const context = importAll(dependencyMap[0]).createContext(undefined);
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/guild_themes/native/GuildThemeGuildIdOverrideContext.tsx");
+// Module 4011 (context)
+import importAllResult from "result";
+
+const context = require("result").createContext(undefined);
+const result = require("set").fileFinishedImporting("modules/guild_themes/native/GuildThemeGuildIdOverrideContext.tsx");
 
 export default context;

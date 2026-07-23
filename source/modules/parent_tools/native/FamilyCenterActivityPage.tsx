@@ -1,45 +1,52 @@
-// Module ID: 13661
-// Function ID: 103477
+// Module ID: 13775
+// Function ID: 105633
 // Name: FamilyCenterActivityPage
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 7123, 5121, 13776, 13778, 13788, 11063, 13792, 2]
 // Exports: default
 
-// Module 13661 (FamilyCenterActivityPage)
-importAll(dependencyMap[0]);
-({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { scrollView: { flex: 1 } };
-obj = { marginTop: importDefault(dependencyMap[4]).space.PX_8 };
-obj.dataConfirmation = obj;
-const tmp4 = arg1(dependencyMap[2]);
-obj.container = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, paddingBottom: importDefault(dependencyMap[4]).space.PX_16 };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, paddingBottom: importDefault(dependencyMap[4]).space.PX_16 };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityPage.tsx");
+// Module 13775 (FamilyCenterActivityPage)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { scrollView: { flex: 1 } };
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.dataConfirmation = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.container = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityPage.tsx");
 
 export default function FamilyCenterActivityPage() {
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[5]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(7123) /* useUserIdsForLinkStatus */;
   obj = { style: tmp.scrollView };
   const activeLinkUserIds = obj.useActiveLinkUserIds();
   obj = { bottom: true };
   const obj1 = { style: tmp.container };
-  const items = [callback(importDefault(dependencyMap[7]), {}), ];
+  const items = [callback(importDefault(13776), {}), ];
   if (0 === activeLinkUserIds.length) {
     const obj2 = {};
-    const items1 = [callback(importDefault(dependencyMap[8]), {}), callback(importDefault(dependencyMap[9]), {}), ];
-    const obj3 = { style: tmp.dataConfirmation, children: callback(importDefault(dependencyMap[10]), {}) };
+    const items1 = [callback(importDefault(13778), {}), callback(importDefault(13788), {}), ];
+    const obj3 = { style: tmp.dataConfirmation, children: callback(importDefault(11063), {}) };
     items1[2] = callback(closure_3, obj3);
     obj2.children = items1;
     let tmp9 = callback2(closure_6, obj2);
   } else {
-    tmp9 = callback(importDefault(dependencyMap[11]), {});
+    tmp9 = callback(importDefault(13792), {});
   }
   items[1] = tmp9;
   obj1.children = items;
   obj.children = callback2(closure_3, obj1);
-  obj.children = callback(arg1(dependencyMap[6]).SafeAreaPaddingView, obj);
+  obj.children = callback(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
   return callback(closure_4, obj);
 };

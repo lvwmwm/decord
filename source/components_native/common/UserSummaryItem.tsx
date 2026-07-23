@@ -1,26 +1,26 @@
-// Module ID: 9986
-// Function ID: 77230
+// Module ID: 9994
+// Function ID: 77270
 // Name: UserSummaryItem
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 27, 1917, 33, 4130, 689, 1273, 566, 1392, 4319, 1212, 4126, 2]
 // Exports: default
 
-// Module 9986 (UserSummaryItem)
-import "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 9994 (UserSummaryItem)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-__exportStarResult1 = { container: { flexDirection: "row" }, names: { id: null, parent_id: null } };
-__exportStarResult1 = { id: null, parent_id: null, color: require("__exportStarResult1").colors.TEXT_SUBTLE };
-__exportStarResult1.namesLegacy = __exportStarResult1;
-const obj1 = { resizeMode: "jsx", left: "r", has: "isArray", backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWEST };
-__exportStarResult1.plusCountContainer = obj1;
-__exportStarResult1.cutout = { marginRight: -4 };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const obj2 = { direction: require("__exportStarResult1").CutoutDirection.RIGHT };
-const result = __exportStarResult1.fileFinishedImporting("components_native/common/UserSummaryItem.tsx");
+const require = arg1;
+_createForOfIteratorHelperLoose = { container: { flexDirection: "row" }, names: { marginStart: 4, paddingRight: 1 } };
+_createForOfIteratorHelperLoose = { marginStart: 4, paddingRight: 1, color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+_createForOfIteratorHelperLoose.namesLegacy = _createForOfIteratorHelperLoose;
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, marginStart: 2, alignItems: "center" };
+_createForOfIteratorHelperLoose.plusCountContainer = obj1;
+_createForOfIteratorHelperLoose.cutout = { marginRight: -4 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { direction: require("Button").CutoutDirection.RIGHT };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/common/UserSummaryItem.tsx");
 
 export default function UserSummaryItem(users) {
   let avatarSize;
@@ -37,93 +37,86 @@ export default function UserSummaryItem(users) {
     max = 3;
   }
   users = users.users;
-  const arg1 = users;
   let renderedUsers = users.renderedUsers;
   if (renderedUsers === undefined) {
     renderedUsers = [];
   }
-  const importDefault = renderedUsers;
   ({ withNames, guildId } = users);
-  const dependencyMap = guildId;
   ({ avatarSize, channelId } = users);
   if (avatarSize === undefined) {
-    avatarSize = arg1(dependencyMap[6]).AvatarSizes.XXSMALL;
+    avatarSize = users(guildId[6]).AvatarSizes.XXSMALL;
   }
-  const View = avatarSize;
   ({ cutout, withPlusCount } = users);
   if (cutout === undefined) {
-    cutout = obj2;
+    cutout = bound;
   }
-  let closure_4 = cutout;
-  const jsx = users.cutoutStyle;
-  let __exportStarResult1;
-  let obj2;
+  const cutoutStyle = users.cutoutStyle;
+  let _createForOfIteratorHelperLoose;
+  bound = undefined;
   let closure_8;
   let items1;
-  let closure_10;
-  const tmp3 = __exportStarResult1();
-  __exportStarResult1 = tmp3;
-  const tmp4 = renderedUsers.length > 0 ? renderedUsers.length : users.length;
-  const bound = Math.min(tmp4, max);
-  obj2 = bound;
+  let c10;
+  const tmp3 = _createForOfIteratorHelperLoose();
+  _createForOfIteratorHelperLoose = tmp3;
+  let tmp4 = renderedUsers.length > 0 ? renderedUsers.length : users.length;
+  bound = Math.min(tmp4, max);
   closure_8 = {};
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_4];
+  let obj = users(guildId[7]);
+  let items = [cutout];
   const stateFromStores = obj.useStateFromStores(items, () => users.forEach((id) => {
     if (tmp) {
-      closure_8[id.id] = member.getMember(closure_2, id.id);
+      outer1_8[id.id] = cutout.getMember(outer1_2, id.id);
     }
   }));
   if (0 === bound) {
     return null;
   } else {
     items1 = [];
-    closure_10 = 0;
+    c10 = 0;
     let num2 = 0;
     if (0 < bound) {
       do {
-        let tmp7 = function _loop() {
-          if (0 === lib.length) {
+        let tmp7 = (function _loop() {
+          if (0 === length.length) {
             const users = tmp8;
             let id;
-            if (null != users[closure_10]) {
+            if (null != users[c10]) {
               id = tmp8.id;
             }
             if (null == id) {
               const _HermesInternal = HermesInternal;
-              id = "@" + closure_10;
+              id = "@" + c10;
             }
-            let obj = lib(guildId[8]);
+            let obj = renderedUsers(guildId[8]);
             let fn = obj.makeSource(null);
-            if (null != users[closure_10]) {
-              const lib = closure_8[tmp8.id];
+            if (null != users[c10]) {
               fn = function o(animate) {
                 let flag = animate;
                 if (animate === undefined) {
                   flag = false;
                 }
-                let avatarURL = tmp8.getAvatarURL(closure_2, tmp8(closure_2[6]).AVATAR_SIZE_MAP[closure_3], flag);
+                let avatarURL = tmp8.getAvatarURL(outer1_2, users(guildId[6]).AVATAR_SIZE_MAP[outer1_3], flag);
                 let avatar;
-                if (null != lib) {
-                  avatar = lib.avatar;
+                if (null != user) {
+                  avatar = user.avatar;
                 }
                 let tmp4 = avatarURL;
                 if (null != avatar) {
-                  const guildMemberAvatarURL = lib(closure_2[8]).getGuildMemberAvatarURL(lib, flag);
+                  const guildMemberAvatarURL = renderedUsers(guildId[8]).getGuildMemberAvatarURL(user, flag);
                   if (null != guildMemberAvatarURL) {
                     avatarURL = guildMemberAvatarURL;
                   }
                   tmp4 = avatarURL;
-                  const obj = lib(closure_2[8]);
+                  const obj = renderedUsers(guildId[8]);
                 }
-                return lib(closure_2[8]).makeSource(tmp4);
+                return renderedUsers(guildId[8]).makeSource(tmp4);
               };
             }
             const push = items1.push;
             const CutoutableAvatarImage = users(guildId[6]).CutoutableAvatarImage;
             if (tmp) {
               obj = { size: avatarSize, source: fn };
-              const items = [tmp3.cutout, cutoutStyle];
+              const items = [_undefined.cutout, cutoutStyle];
               obj.style = items;
               obj.cutout = cutout;
               push(tmp17(CutoutableAvatarImage, obj, id));
@@ -132,14 +125,14 @@ export default function UserSummaryItem(users) {
               push(tmp17(CutoutableAvatarImage, obj, id));
             }
           } else {
-            items1.push(lib[closure_10]);
+            items1.push(length[c10]);
           }
-        }();
+        })();
         num2 = num2 + 1;
-        closure_10 = num2;
+        c10 = num2;
       } while (num2 < bound);
     }
-    let obj1 = importDefault(dependencyMap[9]);
+    let obj1 = renderedUsers(guildId[9]);
     const name = obj1.getName(guildId, channelId, users[0]);
     let tmp11 = withNames;
     if (withNames) {
@@ -147,9 +140,9 @@ export default function UserSummaryItem(users) {
     }
     let formatToPlainStringResult = name;
     if (tmp11) {
-      const intl = arg1(dependencyMap[10]).intl;
+      const intl = users(guildId[10]).intl;
       obj = { name, count: users.length - 1 };
-      formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[10]).t.GhkJ21, obj);
+      formatToPlainStringResult = intl.formatToPlainString(users(guildId[10]).t.GhkJ21, obj);
     }
     if (withNames) {
       if (null != users[0]) {
@@ -161,14 +154,14 @@ export default function UserSummaryItem(users) {
           obj.style = items2;
           obj.lineClamp = 1;
           obj.children = formatToPlainStringResult;
-          items1.push(jsx(arg1(dependencyMap[11]).Text, obj, combined));
+          items1.push(cutoutStyle(users(guildId[11]).Text, obj, combined));
         } else {
           obj1 = {};
           const items3 = [tmp3.namesLegacy, namesStyle];
           obj1.style = items3;
           obj1.numberOfLines = 1;
           obj1.children = formatToPlainStringResult;
-          items1.push(jsx(arg1(dependencyMap[6]).LegacyText, obj1, combined));
+          items1.push(cutoutStyle(users(guildId[6]).LegacyText, obj1, combined));
         }
       }
     }
@@ -176,22 +169,22 @@ export default function UserSummaryItem(users) {
       if (withPlusCount) {
         items1.pop();
         const text = `+${tmp4 + 1 - max}`;
-        const tmp28 = arg1(dependencyMap[6]).AVATAR_SIZE_MAP[avatarSize];
-        obj2 = {};
+        const tmp28 = users(guildId[6]).AVATAR_SIZE_MAP[avatarSize];
+        const obj2 = {};
         const items4 = [tmp3.plusCountContainer, ];
         const obj3 = { borderRadius: tmp28, width: tmp28, height: tmp28, padding: tmp28 / 8 };
         items4[1] = obj3;
         obj2.style = items4;
-        const obj4 = { cachedAt: null, edpbxy: "0fef0a9d83d27dc691bf77b0bdae0680", children: text };
-        obj2.children = jsx(arg1(dependencyMap[11]).Text, obj4);
-        const _HermesInternal = HermesInternal;
-        items1.push(<View key={"plus-" + `+${tmp4 + 1 - max}`} {...obj2} />);
+        const obj4 = { variant: "text-xs/normal", color: "mobile-text-heading-primary", children: text };
+        obj2.children = cutoutStyle(users(guildId[11]).Text, obj4);
+        let _HermesInternal = HermesInternal;
+        items1.push(cutoutStyle(avatarSize, obj2, "plus-" + `+${tmp4 + 1 - max}`));
       }
     }
     const obj5 = {};
     const items5 = [users.style, tmp3.container];
     obj5.style = items5;
     obj5.children = items1;
-    return <View {...obj5} />;
+    return cutoutStyle(avatarSize, obj5);
   }
 };

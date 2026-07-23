@@ -1,15 +1,17 @@
-// Module ID: 5148
-// Function ID: 44905
+// Module ID: 5151
+// Function ID: 44924
 // Name: Emoji
-// Dependencies: []
+// Dependencies: [31, 27, 1278, 33, 477, 3775, 1273, 5085, 3976, 5152, 5153, 2]
 // Exports: default
 
-// Module 5148 (Emoji)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/emojis/native/Emoji.tsx");
+// Module 5151 (Emoji)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/emojis/native/Emoji.tsx");
 
 export default function Emoji(arg0) {
   let adjustsFontSizeToFit;
@@ -21,12 +23,12 @@ export default function Emoji(arg0) {
   let textEmojiStyle;
   ({ src, name } = arg0);
   ({ style, textEmojiStyle, fastImageStyle, forceTextEmoji, adjustsFontSizeToFit } = arg0);
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(477) /* set */;
   let uRL = src;
   if (obj.isAndroid()) {
     uRL = src;
     if (null == src) {
-      let obj1 = importDefault(dependencyMap[5]);
+      let obj1 = importDefault(3775);
       uRL = obj1.getURL(name);
     }
   }
@@ -36,21 +38,21 @@ export default function Emoji(arg0) {
       if ("" !== uRL) {
         obj = { resizeMode: "contain", style: fastImageStyle };
         const tmp10 = jsx;
-        const tmp13 = importDefault(dependencyMap[7]);
+        const tmp13 = importDefault(5085);
         if (obj6.isThemeDark(theme.theme)) {
-          let tmp16Result = tmp16(tmp17[9]);
+          let tmp16Result = tmp16(5152);
         } else {
-          tmp16Result = tmp16(tmp17[10]);
+          tmp16Result = tmp16(5153);
         }
         obj.placeholder = tmp16Result;
         obj1 = { uri: uRL };
         obj.source = obj1;
         let tmp10Result = tmp10(tmp13, obj);
-        const obj6 = arg1(dependencyMap[8]);
+        obj6 = require(3976) /* AccessibilityAnnouncer */;
       }
       obj.children = tmp10Result;
       return tmp5(tmp6, obj);
     }
   }
-  tmp10Result = jsx(arg1(dependencyMap[6]).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
+  tmp10Result = jsx(require(1273) /* Button */.LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
 };

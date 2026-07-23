@@ -1,26 +1,27 @@
-// Module ID: 13568
-// Function ID: 102887
+// Module ID: 13682
+// Function ID: 105043
 // Name: route
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [7662, 653, 10095, 1212, 9233, 2]
 
-// Module 13568 (route)
-let obj = {
+// Module 13682 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.7qKDrE);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["7qKDrE"]);
   },
-  parent: require("__exportStarResult1").MobileSetting.ACCOUNT,
+  parent: require("MobileSetting").MobileSetting.ACCOUNT,
   unsearchable: true,
   screen: obj
 };
 obj = {
-  route: require("__exportStarResult1").UserSettingsSections.ACCOUNT_CONFIRM_PASSWORD,
+  route: require("ME").UserSettingsSections.ACCOUNT_CONFIRM_PASSWORD,
   getComponent() {
-    return require(dependencyMap[4]).UserSettingsConfirmPasswordWrapped;
+    return require(9233) /* UserSettingsConfirmPasswordWrapped */.UserSettingsConfirmPasswordWrapped;
   }
 };
-const route = require("__exportStarResult1").createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AccountConfirmPasswordSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AccountConfirmPasswordSetting.tsx");
 
 export default route;

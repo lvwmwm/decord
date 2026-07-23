@@ -1,19 +1,15 @@
-// Module ID: 12535
-// Function ID: 96303
+// Module ID: 12649
+// Function ID: 98459
 // Name: NetworkTtlCache
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 12535 (NetworkTtlCache)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 12649 (NetworkTtlCache)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
 let closure_2 = { IDLE: "idle", LOADING: "loading", SUCCESS: "success", ERROR: "error" };
-const obj = { IDLE: "idle", LOADING: "loading", VALID: "valid", STALE: "stale", ERROR: "error" };
-const result = items.fileFinishedImporting("lib/NetworkTtlCache.tsx");
-
-export const NetworkTtlCacheStatus = obj;
-export const NetworkTtlCache = () => {
+let obj = { IDLE: "idle", LOADING: "loading", VALID: "valid", STALE: "stale", ERROR: "error" };
+let tmp2 = (() => {
   class NetworkTtlCache {
     constructor() {
       obj = arg0;
@@ -24,7 +20,7 @@ export const NetworkTtlCache = () => {
       tmp = NetworkTtlCache(self, NetworkTtlCache);
       tmp2 = null;
       self.value = null;
-      self.fetchState = closure_2.IDLE;
+      self.fetchState = outer1_2.IDLE;
       self.fetchedAt = null;
       ttlMs = obj.ttlMs;
       if (null != ttlMs) {
@@ -34,7 +30,6 @@ export const NetworkTtlCache = () => {
       return;
     }
   }
-  let closure_0 = NetworkTtlCache;
   let obj = {
     key: "setTtl",
     value(ttlMs) {
@@ -45,7 +40,7 @@ export const NetworkTtlCache = () => {
   obj = {
     key: "setLoading",
     value() {
-      this.fetchState = constants.LOADING;
+      this.fetchState = outer1_2.LOADING;
     }
   };
   items[1] = obj;
@@ -53,7 +48,7 @@ export const NetworkTtlCache = () => {
     key: "setValue",
     value(value) {
       this.value = value;
-      this.fetchState = constants.SUCCESS;
+      this.fetchState = outer1_2.SUCCESS;
       this.fetchedAt = Date.now();
     }
   };
@@ -61,14 +56,14 @@ export const NetworkTtlCache = () => {
   items[3] = {
     key: "setError",
     value() {
-      this.fetchState = constants.ERROR;
+      this.fetchState = outer1_2.ERROR;
     }
   };
   items[4] = {
     key: "clear",
     value() {
       this.value = null;
-      this.fetchState = constants.IDLE;
+      this.fetchState = outer1_2.IDLE;
       this.fetchedAt = null;
     }
   };
@@ -116,10 +111,10 @@ export const NetworkTtlCache = () => {
     key: "shouldFetch",
     value() {
       const self = this;
-      let tmp = this.fetchState !== constants.LOADING;
+      let tmp = this.fetchState !== outer1_2.LOADING;
       if (tmp) {
-        tmp = self.fetchState === constants.IDLE || self.isExpired();
-        const tmp3 = self.fetchState === constants.IDLE || self.isExpired();
+        tmp = self.fetchState === outer1_2.IDLE || self.isExpired();
+        const tmp3 = self.fetchState === outer1_2.IDLE || self.isExpired();
       }
       return tmp;
     }
@@ -127,20 +122,20 @@ export const NetworkTtlCache = () => {
   items[11] = {
     key: "isLoading",
     value() {
-      return this.fetchState === constants.LOADING;
+      return this.fetchState === outer1_2.LOADING;
     }
   };
   items[12] = {
     key: "isValid",
     value() {
       const self = this;
-      return this.fetchState === constants.SUCCESS && !self.isExpired();
+      return this.fetchState === outer1_2.SUCCESS && !self.isExpired();
     }
   };
   items[13] = {
     key: "isError",
     value() {
-      return this.fetchState === constants.ERROR;
+      return this.fetchState === outer1_2.ERROR;
     }
   };
   items[14] = {
@@ -148,14 +143,14 @@ export const NetworkTtlCache = () => {
     value() {
       const self = this;
       const fetchState = this.fetchState;
-      if (constants.IDLE === fetchState) {
-        return constants2.IDLE;
-      } else if (constants.LOADING === fetchState) {
-        return constants2.LOADING;
-      } else if (constants.ERROR === fetchState) {
-        return constants2.ERROR;
-      } else if (constants.SUCCESS === fetchState) {
-        return self.isExpired() ? constants2.STALE : constants2.VALID;
+      if (outer1_2.IDLE === fetchState) {
+        return outer1_3.IDLE;
+      } else if (outer1_2.LOADING === fetchState) {
+        return outer1_3.LOADING;
+      } else if (outer1_2.ERROR === fetchState) {
+        return outer1_3.ERROR;
+      } else if (outer1_2.SUCCESS === fetchState) {
+        return self.isExpired() ? outer1_3.STALE : outer1_3.VALID;
       }
     }
   };
@@ -187,9 +182,13 @@ export const NetworkTtlCache = () => {
       const self = this;
       if (null != arg0) {
         ({ value: self.value, fetchedAt: self.fetchedAt } = arg0);
-        self.fetchState = constants.SUCCESS;
+        self.fetchState = outer1_2.SUCCESS;
       }
     }
   };
   return callback(NetworkTtlCache, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("lib/NetworkTtlCache.tsx");
+
+export const NetworkTtlCacheStatus = obj;
+export const NetworkTtlCache = tmp2;

@@ -1,20 +1,27 @@
-// Module ID: 11022
-// Function ID: 85803
+// Module ID: 11032
+// Function ID: 85853
 // Name: _getSafetyHubData
-// Dependencies: []
+// Dependencies: [5, 1194, 11026, 7544, 653, 686, 507, 4317, 7543, 2]
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification
 
-// Module 11022 (_getSafetyHubData)
+// Module 11032 (_getSafetyHubData)
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import SafetyHubLinks from "SafetyHubLinks";
+import { Endpoints } from "ME";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function _getSafetyHubData() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getSafetyHubData = obj;
   return obj(...arguments);
 }
 function _getSafetyHubDataForClassification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getSafetyHubDataForClassification = obj;
   return obj(...arguments);
 }
 function _setClassificationFlaggedContent(flagged_content) {
@@ -24,10 +31,10 @@ function _setClassificationFlaggedContent(flagged_content) {
       const attachments = first.attachments;
       first.attachments = attachments.filter((filename) => {
         filename = filename.filename;
-        let isImageFileResult = callback(closure_2[7]).isImageFile(filename);
+        let isImageFileResult = outer1_0(outer1_2[7]).isImageFile(filename);
         if (!isImageFileResult) {
-          isImageFileResult = callback(closure_2[7]).isVideoFile(filename);
-          const obj2 = callback(closure_2[7]);
+          isImageFileResult = outer1_0(outer1_2[7]).isVideoFile(filename);
+          const obj2 = outer1_0(outer1_2[7]);
         }
         return isImageFileResult;
       });
@@ -37,20 +44,18 @@ function _setClassificationFlaggedContent(flagged_content) {
         items = [first];
       }
       flagged_content.flagged_content = items;
-      const obj = arg1(dependencyMap[8]);
+      obj = require(7543) /* parseMessageEmbedForProps */;
     }
   }
 }
 function _requestReview() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _requestReview = obj;
   return obj(...arguments);
 }
 function _requestSuspendedUserAgeVerification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _requestSuspendedUserAgeVerification = obj;
   return obj(...arguments);
 }
 function checkSuspendedUserAgeVerification() {
@@ -59,21 +64,15 @@ function checkSuspendedUserAgeVerification() {
 function _checkSuspendedUserAgeVerification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _checkSuspendedUserAgeVerification = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ AGE_CHECK_POLL_INTERVAL_MS: closure_6, AGE_CHECK_MAX_POLL_ATTEMPTS: closure_7 } = arg1(dependencyMap[3]));
-const Endpoints = arg1(dependencyMap[4]).Endpoints;
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/safety_hub/SafetyHubActionCreators.tsx");
+({ AGE_CHECK_POLL_INTERVAL_MS: closure_6, AGE_CHECK_MAX_POLL_ATTEMPTS: closure_7 } = SafetyHubLinks);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/safety_hub/SafetyHubActionCreators.tsx");
 
 export const getSafetyHubData = function getSafetyHubData() {
   return _getSafetyHubData(...arguments);
 };
-export const getSafetyHubDataForClassification = function getSafetyHubDataForClassification(arg0) {
+export const getSafetyHubDataForClassification = function getSafetyHubDataForClassification(closure_0) {
   return _getSafetyHubDataForClassification(...arguments);
 };
 export const requestReview = function requestReview(arg0, arg1, arg2) {

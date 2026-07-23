@@ -1,17 +1,22 @@
 // Module ID: 1670
-// Function ID: 18551
+// Function ID: 18552
 // Name: addPxToTransform
-// Dependencies: []
+// Dependencies: [77, 29, 57, 1640, 1669, 1638, 1671, 1672, 1673, 1674, 1675, 1676]
 // Exports: TransitionGenerator, createAnimationWithInitialValues, createCustomKeyFrameAnimation
 
 // Module 1670 (addPxToTransform)
+import _defineProperty from "_defineProperty";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
 function addPxToTransform(transform) {
   return transform.map((arg0) => {
     const obj = {};
     const entries = Object.entries(arg0);
     while (tmp2 !== undefined) {
-      let tmp4 = callback;
-      let tmp5 = callback(tmp3, 2);
+      let tmp4 = outer1_5;
+      let tmp5 = outer1_5(tmp3, 2);
       let first = tmp5[0];
       let obj3 = first;
       let tmp6 = tmp5[1];
@@ -23,7 +28,7 @@ function addPxToTransform(transform) {
           let tmp14 = tmp6;
           let _HermesInternal = HermesInternal;
           obj[obj3] = "" + tmp6 + "px";
-          // continue
+          continue;
         }
       } else {
         let tmp7 = first;
@@ -40,38 +45,36 @@ function generateNextCustomKeyframeName() {
   let closure_6 = tmp + 1;
   return "REA" + +closure_6;
 }
-let closure_2 = [false];
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = 0;
+let closure_2 = ["transform"];
+let c6 = 0;
 
 export const createCustomKeyFrameAnimation = function createCustomKeyFrameAnimation(definitions) {
   const values = Object.values(definitions);
   for (const item10009 of values) {
-    let tmp2 = item10009;
+    let tmp3 = item10009;
     if (item10009.transform) {
-      let tmp3 = item10009;
-      let tmp4 = closure_7;
-      tmp2.transform = closure_7(tmp2.transform);
+      let tmp4 = item10009;
+      let tmp5 = addPxToTransform;
+      tmp3.transform = addPxToTransform(tmp3.transform);
     }
+    continue;
   }
-  const obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, style: definitions, name: generateNextCustomKeyframeName() };
+  const obj = { name: generateNextCustomKeyframeName(), style: definitions, duration: -1 };
   const keys = Object.keys(definitions);
   for (let num = 1; num < keys.length; num = num + 1) {
-    let tmp5 = definitions[keys[num]];
-    if (tmp5.easing) {
-      definitions[keys[num - 1]].easing = tmp5.easing;
-      delete r2.easing;
+    let tmp6 = definitions[keys[num]];
+    if (tmp6.easing) {
+      definitions[keys[num - 1]].easing = tmp6.easing;
+      delete tmp.easing;
     }
   }
-  const result = arg1(dependencyMap[3]).convertAnimationObjectToKeyframes(obj);
-  const obj2 = arg1(dependencyMap[3]);
-  arg1(dependencyMap[4]).insertWebAnimation(obj.name, result);
+  const result = require(1640) /* convertAnimationObjectToKeyframes */.convertAnimationObjectToKeyframes(obj);
+  const obj2 = require(1640) /* convertAnimationObjectToKeyframes */;
+  require(1669) /* findDescendantWithExitingAnimation */.insertWebAnimation(obj.name, result);
   return obj.name;
 };
 export const createAnimationWithInitialValues = function createAnimationWithInitialValues(presetName, initialValues) {
-  const structuredCloneResult = structuredClone(initialValues(dependencyMap[5]).AnimationsData[presetName].style);
+  const structuredCloneResult = structuredClone(require(1638) /* TransitionType */.AnimationsData[presetName].style);
   const first = structuredCloneResult[0];
   const transform = initialValues.transform;
   if (transform) {
@@ -87,28 +90,31 @@ export const createAnimationWithInitialValues = function createAnimationWithInit
         let entries = Object.entries(tmp11);
         let tmp14 = entries;
         for (const item10042 of entries) {
-          let tmp15 = closure_5;
-          let tmp16 = closure_5(item10042, 2);
+          let tmp15 = callback2;
+          let tmp16 = callback2(item10042, 2);
           let tmp17 = map;
           let result = obj.set(tmp16[0], tmp16[1]);
+          continue;
         }
-        // continue
+        continue;
       }
       for (const item10055 of tmp5) {
         let _Object2 = Object;
         let entries1 = Object.entries(item10055);
         let tmp21 = entries1;
         for (const item10062 of entries1) {
-          let tmp22 = closure_5;
-          let tmp23 = closure_5(item10062, 2);
+          let tmp22 = callback2;
+          let tmp23 = callback2(item10062, 2);
           let tmp24 = map;
           let result1 = obj.set(tmp23[0], tmp23[1]);
+          continue;
         }
+        continue;
       }
       const _Array = Array;
       first.transform = Array.from(obj, (arg0) => {
-        const tmp = callback2(arg0, 2);
-        return callback({}, tmp[0], tmp[1]);
+        const tmp = outer1_5(arg0, 2);
+        return outer1_3({}, tmp[0], tmp[1]);
       });
     } else {
       first.transform = tmp5;
@@ -116,44 +122,44 @@ export const createAnimationWithInitialValues = function createAnimationWithInit
   }
   structuredCloneResult[0] = Object.assign({}, structuredCloneResult[0], callback(initialValues, closure_2));
   const tmp27 = generateNextCustomKeyframeName();
-  obj = { name: tmp27, style: structuredCloneResult, duration: initialValues(dependencyMap[5]).AnimationsData[presetName].duration };
+  obj = { name: tmp27, style: structuredCloneResult, duration: require(1638) /* TransitionType */.AnimationsData[presetName].duration };
   const tmp3 = callback(initialValues, closure_2);
-  const result2 = initialValues(dependencyMap[3]).convertAnimationObjectToKeyframes(obj);
-  const obj3 = initialValues(dependencyMap[3]);
-  initialValues(dependencyMap[4]).insertWebAnimation(tmp27, result2);
+  const result2 = require(1640) /* convertAnimationObjectToKeyframes */.convertAnimationObjectToKeyframes(obj);
+  const obj3 = require(1640) /* convertAnimationObjectToKeyframes */;
+  require(1669) /* findDescendantWithExitingAnimation */.insertWebAnimation(tmp27, result2);
   return tmp27;
 };
 export const TransitionGenerator = function TransitionGenerator(ENTRY_EXIT, easingY) {
   const tmp = generateNextCustomKeyframeName();
-  if (easingY(dependencyMap[5]).TransitionType.LINEAR === ENTRY_EXIT) {
-    let firstKeyframeObj = easingY(dependencyMap[6]).LinearTransition(tmp, easingY);
-    const obj7 = easingY(dependencyMap[6]);
-  } else if (easingY(dependencyMap[5]).TransitionType.SEQUENCED === ENTRY_EXIT) {
-    firstKeyframeObj = easingY(dependencyMap[7]).SequencedTransition(tmp, easingY);
-    const obj6 = easingY(dependencyMap[7]);
-  } else if (easingY(dependencyMap[5]).TransitionType.FADING === ENTRY_EXIT) {
-    firstKeyframeObj = easingY(dependencyMap[8]).FadingTransition(tmp, easingY);
-    const obj5 = easingY(dependencyMap[8]);
-  } else if (easingY(dependencyMap[5]).TransitionType.JUMPING === ENTRY_EXIT) {
-    firstKeyframeObj = easingY(dependencyMap[9]).JumpingTransition(tmp, easingY);
-    const obj4 = easingY(dependencyMap[9]);
-  } else if (easingY(dependencyMap[5]).TransitionType.CURVED === ENTRY_EXIT) {
+  if (require(1638) /* TransitionType */.TransitionType.LINEAR === ENTRY_EXIT) {
+    let firstKeyframeObj = require(1671) /* LinearTransition */.LinearTransition(tmp, easingY);
+    const obj7 = require(1671) /* LinearTransition */;
+  } else if (require(1638) /* TransitionType */.TransitionType.SEQUENCED === ENTRY_EXIT) {
+    firstKeyframeObj = require(1672) /* SequencedTransition */.SequencedTransition(tmp, easingY);
+    const obj6 = require(1672) /* SequencedTransition */;
+  } else if (require(1638) /* TransitionType */.TransitionType.FADING === ENTRY_EXIT) {
+    firstKeyframeObj = require(1673) /* FadingTransition */.FadingTransition(tmp, easingY);
+    const obj5 = require(1673) /* FadingTransition */;
+  } else if (require(1638) /* TransitionType */.TransitionType.JUMPING === ENTRY_EXIT) {
+    firstKeyframeObj = require(1674) /* JumpingTransition */.JumpingTransition(tmp, easingY);
+    const obj4 = require(1674) /* JumpingTransition */;
+  } else if (require(1638) /* TransitionType */.TransitionType.CURVED === ENTRY_EXIT) {
     const tmp6 = generateNextCustomKeyframeName();
-    let obj = easingY(dependencyMap[10]);
+    let obj = require(1675) /* showChildren */;
     const CurvedTransitionResult = obj.CurvedTransition(tmp, tmp6, easingY);
     firstKeyframeObj = CurvedTransitionResult.firstKeyframeObj;
-    const result = easingY(dependencyMap[3]).convertAnimationObjectToKeyframes(CurvedTransitionResult.secondKeyframeObj);
-    const obj2 = easingY(dependencyMap[3]);
-    easingY(dependencyMap[4]).insertWebAnimation(tmp6, result);
-    const obj3 = easingY(dependencyMap[4]);
+    const result = require(1640) /* convertAnimationObjectToKeyframes */.convertAnimationObjectToKeyframes(CurvedTransitionResult.secondKeyframeObj);
+    const obj2 = require(1640) /* convertAnimationObjectToKeyframes */;
+    require(1669) /* findDescendantWithExitingAnimation */.insertWebAnimation(tmp6, result);
+    const obj3 = require(1669) /* findDescendantWithExitingAnimation */;
     const tmp4 = tmp6;
-  } else if (easingY(dependencyMap[5]).TransitionType.ENTRY_EXIT === ENTRY_EXIT) {
-    firstKeyframeObj = easingY(dependencyMap[11]).EntryExitTransition(tmp, easingY);
-    const obj11 = easingY(dependencyMap[11]);
+  } else if (require(1638) /* TransitionType */.TransitionType.ENTRY_EXIT === ENTRY_EXIT) {
+    firstKeyframeObj = require(1676) /* addTransformToKeepPosition */.EntryExitTransition(tmp, easingY);
+    const obj11 = require(1676) /* addTransformToKeepPosition */;
   }
-  const result1 = easingY(dependencyMap[3]).convertAnimationObjectToKeyframes(firstKeyframeObj);
-  const obj8 = easingY(dependencyMap[3]);
-  easingY(dependencyMap[4]).insertWebAnimation(tmp, result1);
+  const result1 = require(1640) /* convertAnimationObjectToKeyframes */.convertAnimationObjectToKeyframes(firstKeyframeObj);
+  const obj8 = require(1640) /* convertAnimationObjectToKeyframes */;
+  require(1669) /* findDescendantWithExitingAnimation */.insertWebAnimation(tmp, result1);
   obj = { transitionKeyframeName: tmp, dummyTransitionKeyframeName: tmp4 };
   return obj;
 };

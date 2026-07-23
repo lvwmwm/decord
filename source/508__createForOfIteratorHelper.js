@@ -1,25 +1,28 @@
 // Module ID: 508
 // Function ID: 6494
 // Name: _createForOfIteratorHelper
-// Dependencies: []
+// Dependencies: [509, 510, 556, 557, 558, 559, 560]
 
 // Module 508 (_createForOfIteratorHelper)
+import _createForOfIteratorHelper from "_createForOfIteratorHelper";
+import _createForOfIteratorHelper from "_createForOfIteratorHelper";
+
 let length;
 let _exports = exports;
-function _createForOfIteratorHelper(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelper(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  let _exports = Symbol_iterator;
-  if (Symbol_iterator) {
-    let closure_4 = true;
-    let closure_5 = false;
+  let arr = iterable;
+  if (iterable) {
+    let c4 = true;
+    let c5 = false;
     let obj = {
       s() {
 
@@ -30,17 +33,18 @@ function _createForOfIteratorHelper(@@iterator) {
           return iter;
         },
       e(arg0) {
-          let closure_5 = true;
+          let c5 = true;
+          let closure_3 = arg0;
         },
       f() {
-          let tmp = closure_4;
-          if (!closure_4) {
+          let tmp = c4;
+          if (!c4) {
             tmp = null == arr.return;
           }
           if (!tmp) {
             arr.return();
           }
-          if (closure_5) {
+          if (c5) {
             throw closure_3;
           }
         }
@@ -48,14 +52,14 @@ function _createForOfIteratorHelper(@@iterator) {
     return obj;
   } else {
     const _Array = Array;
-    if (!Array.isArray(Symbol_iterator)) {
-      let arr;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          arr = _arrayLikeToArray(Symbol_iterator, undefined);
+    if (!Array.isArray(iterable)) {
+      arr = undefined;
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          arr = _arrayLikeToArray(iterable, undefined);
         } else {
           const _Object = Object;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           class F {
             constructor() {
               return;
@@ -63,24 +67,23 @@ function _createForOfIteratorHelper(@@iterator) {
           }
           let name = substr;
           if (tmp2) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                arr = _arrayLikeToArray(iterable, undefined);
               } else {
                 obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp2 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp2 = "Object" === substr && iterable.constructor;
         }
       }
-      _exports = arr;
       if (!arr) {
         const _TypeError = TypeError;
         const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
@@ -92,10 +95,10 @@ function _createForOfIteratorHelper(@@iterator) {
         throw typeError;
       }
     }
-    if (_exports) {
-      closure_0 = _exports;
+    if (arr) {
+      closure_0 = arr;
     }
-    let closure_2 = 0;
+    let c2 = 0;
     class F {
       constructor() {
         return;
@@ -140,15 +143,15 @@ function serialize(obj) {
     const items = [];
     for (const key10012 in arg0) {
       let tmp4 = key10012;
-      let tmp5 = closure_0;
-      let tmp6 = closure_2;
-      let obj2 = closure_0(closure_2[0]);
+      let tmp5 = require;
+      let tmp6 = dependencyMap;
+      let obj2 = require(509) /* _createForOfIteratorHelper */;
       if (!obj2.hasOwn(arg0, key10012)) {
         continue;
       } else {
-        let tmp2 = closure_12;
-        let tmp3 = closure_12(items, key10012, arg0[key10012]);
-        // continue
+        let tmp2 = pushEncodedKeyValuePair;
+        let tmp3 = pushEncodedKeyValuePair(items, key10012, arg0[key10012]);
+        continue;
       }
       continue;
     }
@@ -156,25 +159,25 @@ function serialize(obj) {
   } else {
     return obj;
   }
-  obj = require(dependencyMap[0]);
+  obj = require(509) /* _createForOfIteratorHelper */;
 }
-function pushEncodedKeyValuePair(arr) {
+function pushEncodedKeyValuePair(items, key10012, value) {
   let done;
-  if (undefined !== arg2) {
+  if (undefined !== value) {
     if (null !== tmp) {
       const _Array = Array;
       if (Array.isArray(tmp)) {
-        const obj2 = _createForOfIteratorHelper(arg2);
+        const obj2 = _createForOfIteratorHelper(value);
         obj2.s();
         const iter = obj2.n();
         let iter2 = iter;
         if (!iter.done) {
           do {
-            let tmp26 = closure_12;
-            let tmp27 = arr;
-            let tmp28 = arg1;
+            let tmp26 = pushEncodedKeyValuePair;
+            let tmp27 = items;
+            let tmp28 = key10012;
             let tmp29 = iter2;
-            let tmp30 = closure_12(arr, arg1, iter2.value);
+            let tmp30 = pushEncodedKeyValuePair(items, key10012, iter2.value);
             let tmp31 = obj2;
             let iter3 = obj2.n();
             iter2 = iter3;
@@ -185,20 +188,20 @@ function pushEncodedKeyValuePair(arr) {
         while (true) {
           let tmp32 = obj2;
           let eResult = obj2.e(__exception);
-          // continue
+          continue;
         }
       } else {
         if (obj.isObject(tmp)) {
           for (const key10044 in tmp) {
-            let tmp39 = closure_0;
-            let tmp40 = closure_2;
+            let tmp39 = require;
+            let tmp40 = dependencyMap;
             let tmp38 = key10044;
-            let obj3 = closure_0(closure_2[0]);
+            let obj3 = require(509) /* _createForOfIteratorHelper */;
             let tmp41 = arg2;
             if (!obj3.hasOwn(tmp, key10044)) {
               continue;
             } else {
-              let tmp17 = closure_12;
+              let tmp17 = pushEncodedKeyValuePair;
               let tmp18 = arg0;
               let tmp19 = arg1;
               let _HermesInternal = HermesInternal;
@@ -207,22 +210,22 @@ function pushEncodedKeyValuePair(arr) {
               let tmp20 = key10044;
               let str7 = "]";
               let tmp21 = arg2;
-              let tmp22 = closure_12(arg0, "" + arg1 + "[" + tmp38 + "]", tmp[key10044]);
-              // continue
+              let tmp22 = pushEncodedKeyValuePair(arg0, "" + arg1 + "[" + tmp38 + "]", tmp[key10044]);
+              continue;
             }
             continue;
           }
         } else {
           const _encodeURI2 = encodeURI;
           const _encodeURIComponent = encodeURIComponent;
-          const text = `${encodeURI(arg1)}=`;
-          arr.push(`${encodeURI(arg1)}=` + encodeURIComponent(tmp));
+          const text = `${encodeURI(key10012)}=`;
+          items.push(`${encodeURI(key10012)}=` + encodeURIComponent(tmp));
         }
-        const obj = require(dependencyMap[0]);
+        obj = require(509) /* _createForOfIteratorHelper */;
       }
     } else {
       const _encodeURI = encodeURI;
-      arr.push(encodeURI(arg1));
+      items.push(encodeURI(key10012));
     }
   }
 }
@@ -275,7 +278,7 @@ class Response {
         arr2 = parts[num6];
         index = arr2.indexOf(":");
         if (-1 !== index) {
-          str5 = require("module_0");
+          str5 = require("_createForOfIteratorHelper");
           tmp5 = trim;
           formatted = str5.toLowerCase();
           obj[formatted] = trim(arr2.slice(index + 1));
@@ -284,7 +287,7 @@ class Response {
       self.headers = obj;
       ({ headers: self.header, xhr: xhr2 } = self);
       str6 = "content-type";
-      self.header.content-type = xhr2.getResponseHeader("content-type");
+      self.header["content-type"] = xhr2.getResponseHeader("content-type");
       _setHeaderPropertiesResult = self._setHeaderProperties(self.header);
       tmp7 = null;
       if (null === self.text) {
@@ -315,7 +318,7 @@ class Response {
   }
   _parseBody(arg0) {
     self = this;
-    application/json = module.parse[this.type];
+    application_json = closure_4.parse[this.type];
     if (this.req._parser) {
       req = self.req;
       _parserResult = req._parser(self, global);
@@ -326,8 +329,8 @@ class Response {
         tmp = isJSON(self.type);
       }
       if (tmp) {
-        tmp3 = module;
-        application/json = module.parse.application/json;
+        tmp3 = closure_4;
+        application_json = closure_4.parse["application/json"];
       }
       _parserResult = null;
       if (application_json) {
@@ -358,14 +361,14 @@ class Response {
 class Request {
   constructor(arg0, arg1) {
     self = this;
-    require = this;
+    self = this;
     self._query = this._query || [];
     self.method = global;
     self.url = require;
     self.header = {};
     self._header = {};
     onResult = self.on("end", () => {
-      const tmp2 = new closure_14(self);
+      const tmp2 = new outer1_14(self);
       self.emit("response", tmp2);
       if (!self._isResponseOK(tmp2)) {
         let _Error = Error;
@@ -409,7 +412,7 @@ class Request {
   }
   type(arg0) {
     self = this;
-    tmp = module.types[global];
+    tmp = closure_4.types[global];
     if (!tmp) {
       tmp = global;
     }
@@ -418,7 +421,7 @@ class Request {
   }
   accept(arg0) {
     self = this;
-    tmp = module.types[global];
+    tmp = closure_4.types[global];
     if (!tmp) {
       tmp = global;
     }
@@ -454,7 +457,7 @@ class Request {
       obj.type = str3;
       tmp = obj;
     }
-    tmp5 = tmp.encoder || (arg0) => {
+    tmp5 = tmp.encoder || ((arg0) => {
       if ("function" === typeof btoa) {
         const _btoa = btoa;
         return btoa(arg0);
@@ -463,7 +466,7 @@ class Request {
         const error = new Error("Cannot use basic auth, btoa is not a function");
         throw error;
       }
-    };
+    });
     return self._auth(global, str2, tmp, tmp5);
   }
   query(arg0) {
@@ -591,7 +594,7 @@ class Request {
   }
   _setUploadTimeout() {
     self = this;
-    require = this;
+    self = this;
     tmp = this._uploadTimeout && !self._uploadTimeoutTimer;
     if (tmp) {
       tmp2 = globalThis;
@@ -615,12 +618,10 @@ class Request {
       tmp50 = error;
       return self.callback(error);
     } else {
-      require = self;
-      tmp = module;
-      self.xhr = module.getXHR();
+      tmp = closure_4;
+      self.xhr = closure_4.getXHR();
       xhr = self.xhr;
       obj = xhr;
-      module = xhr;
       tmp2 = self._formData || self._data;
       result = tmp2;
       _setTimeoutsResult = self._setTimeouts();
@@ -684,7 +685,7 @@ class Request {
           break;
         } else {
           _setUploadTimeoutResult = self._setUploadTimeout();
-          // break
+          break;
         }
         if (self.username) {
           if (self.password) {
@@ -708,11 +709,11 @@ class Request {
                 if ("string" !== typeof result) {
                   tmp52 = result;
                   if (!self._isHost(result)) {
-                    str6 = self._header.content-type;
+                    str6 = self._header["content-type"];
                     _serializer = self._serializer;
                     tmp20 = _serializer;
                     if (!_serializer) {
-                      tmp21 = module;
+                      tmp21 = closure_4;
                       tmp22 = str6;
                       str7 = "";
                       if (str6) {
@@ -721,10 +722,10 @@ class Request {
                         num = 0;
                         str7 = str6.split(";")[0];
                       }
-                      tmp20 = module.serialize[str7];
+                      tmp20 = closure_4.serialize[str7];
                     }
                     tmp24 = tmp20;
-                    application/json = tmp20;
+                    application_json = tmp20;
                     tmp25 = !tmp20;
                     tmp26 = tmp25;
                     if (tmp25) {
@@ -732,8 +733,8 @@ class Request {
                       tmp26 = isJSON(str6);
                     }
                     if (tmp26) {
-                      tmp28 = module;
-                      application/json = module.serialize.application/json;
+                      tmp28 = closure_4;
+                      application_json = closure_4.serialize["application/json"];
                     }
                     tmp29 = application_json;
                     if (application_json) {
@@ -755,9 +756,9 @@ class Request {
             hasOwnResult = tmp55;
             if (!tmp55) {
             } else {
-              tmp33 = closure_0;
+              tmp33 = self;
               tmp34 = closure_2;
-              obj2 = closure_0(closure_2[0]);
+              obj2 = require("_createForOfIteratorHelper");
               tmp35 = tmp53;
               hasOwnResult = obj2.hasOwn(self.header, tmp54);
             }
@@ -767,7 +768,7 @@ class Request {
               tmp37 = xhr;
               tmp38 = tmp53;
               setRequestHeaderResult = obj.setRequestHeader(tmp54, self.header[tmp54]);
-              // continue
+              continue;
             }
             continue;
           }
@@ -817,7 +818,7 @@ if ("undefined" !== typeof window) {
 } else {
   const _self = self;
   if ("undefined" === typeof self) {
-    const _console = console;
+    let _console = console;
     console.warn("Using browser-only version of superagent in non-browser environment");
     self = undefined;
   } else {
@@ -843,47 +844,45 @@ function trim(str) {
 }
 _exports.serializeObject = serialize;
 _exports.parseString = parseString;
-_exports.types = {};
-let obj = { application/x-www-form-urlencoded: require(dependencyMap[1]).stringify, application/json: require(dependencyMap[2]) };
+_exports.types = { html: "text/html", json: "application/json", xml: "text/xml", urlencoded: "application/x-www-form-urlencoded", form: "application/x-www-form-urlencoded", "form-data": "application/x-www-form-urlencoded" };
+let obj = { "application/x-www-form-urlencoded": require("module_510").stringify, "application/json": require("defaultOptions") };
 _exports.serialize = obj;
-obj = { application/x-www-form-urlencoded: parseString, application/json: JSON.parse };
+obj = { "application/x-www-form-urlencoded": parseString, "application/json": JSON.parse };
 _exports.parse = obj;
 let num = 0;
-const _module = require(dependencyMap[0]);
-_module.mixin(Response.prototype, require(dependencyMap[3]).prototype);
+_createForOfIteratorHelper.mixin(Response.prototype, require("ResponseBase").prototype);
 _exports.Response = Response;
-require(dependencyMap[4])(Request.prototype);
-const _module1 = require(dependencyMap[0]);
-_module1.mixin(Request.prototype, require(dependencyMap[5]).prototype);
+require("Emitter")(Request.prototype);
+_createForOfIteratorHelper.mixin(Request.prototype, require("RequestBase").prototype);
 Request.prototype.ca = Request.prototype.agent;
 Request.prototype.buffer = Request.prototype.ca;
 Request.prototype.pipe = Request.prototype.write;
 _exports.agent = () => {
-  let tmp = require(dependencyMap[6]);
+  let tmp = require(560) /* _createForOfIteratorHelper */;
   tmp = new tmp();
   return tmp;
 };
-let closure_6 = 0;
-const items = [];
+let c6 = 0;
+let items = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"];
 if (0 < items.length) {
   do {
-    let tmp5 = function _loop() {
-      const require = str;
-      require(dependencyMap[6]).prototype[items[closure_6].toLowerCase()] = function(arg0, arg1) {
-        const request = new _Request.Request(str, arg0);
+    let tmp5 = (function _loop() {
+      const str = items[c6];
+      str(560).prototype[str.toLowerCase()] = function(arg0, arg1) {
+        const request = new outer1_4.Request(str, arg0);
         this._setDefaults(request);
         if (arg1) {
           request.end(arg1);
         }
         return request;
       };
-    }();
+    })();
     num = num + 1;
-    closure_6 = num;
+    c6 = num;
     length = items.length;
   } while (num < length);
 }
-require(dependencyMap[6]).prototype.del = require(dependencyMap[6]).prototype.delete;
+require("_createForOfIteratorHelper").prototype.del = require("_createForOfIteratorHelper").prototype.delete;
 _exports.get = (arg0, arg1, arg2) => {
   let tmp = arg2;
   const obj = _exports("GET", arg0);

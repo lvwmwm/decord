@@ -1,24 +1,23 @@
-// Module ID: 3992
-// Function ID: 33120
+// Module ID: 3994
+// Function ID: 33125
 // Name: isFabric
-// Dependencies: []
+// Dependencies: [3995, 477, 2]
 // Exports: isIosFabric
 
-// Module 3992 (isFabric)
+// Module 3994 (isFabric)
 function isFabric() {
   let isFabricResult;
-  if (null != importDefault(dependencyMap[0])) {
-    isFabricResult = importDefault(dependencyMap[0]).isFabric();
-    const obj = importDefault(dependencyMap[0]);
+  if (null != importDefault(3995)) {
+    isFabricResult = importDefault(3995).isFabric();
+    const obj = importDefault(3995);
   }
   return null != isFabricResult && isFabricResult;
 }
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("utils/native/FabricUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/native/FabricUtils.tsx");
 
 export { isFabric };
 export const isIosFabric = function isIosFabric() {
-  let isIOSResult = require(dependencyMap[1]).isIOS();
+  let isIOSResult = require(477) /* set */.isIOS();
   if (isIOSResult) {
     isIOSResult = isFabric();
   }

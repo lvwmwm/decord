@@ -1,13 +1,14 @@
 // Module ID: 1895
-// Function ID: 21222
+// Function ID: 21223
 // Name: GuildEntityDao
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [6, 7, 1887, 1889, 2]
 
 // Module 1895 (GuildEntityDao)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const tmp2 = () => {
+const require = arg1;
+const tmp2 = (() => {
   class GuildEntityDao {
     constructor(arg0, arg1, arg2) {
       flag = arg3;
@@ -15,23 +16,22 @@ const tmp2 = () => {
       if (arg3 === undefined) {
         flag = true;
       }
-      tmp = __exportStarResult1(self, GuildEntityDao);
+      tmp = outer1_2(self, GuildEntityDao);
       self.originalPrefix = arg0;
       items = [];
       items[0] = arg0;
-      table = new GuildEntityDao(closure_1[2]).Table(items, arg1, arg2, flag);
+      table = new GuildEntityDao(outer1_1[2]).Table(items, arg1, arg2, flag);
       self.table = table;
       return;
     }
   }
-  const arg1 = GuildEntityDao;
   let obj = {
     key: "prefix",
     get() {
       return this.table.prefix;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "withoutLogging",
     value() {
@@ -98,7 +98,7 @@ const tmp2 = () => {
     key: "getGuildId",
     value(arg0) {
       const table = this.table;
-      const items = [true, arg0];
+      const items = [null, arg0];
       return table.getParentId(items);
     }
   };
@@ -107,11 +107,12 @@ const tmp2 = () => {
     value(arg0, arg1) {
       let Replace = arg2;
       const self = this;
-      const GuildEntityDao = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       if (arg2 === undefined) {
-        Replace = GuildEntityDao(arg1[3]).ConflictOptions.Replace;
+        Replace = GuildEntityDao(outer1_1[3]).ConflictOptions.Replace;
       }
-      return self.transaction((put) => put.put(put, arg1, Replace), "" + self.prefix + " put");
+      return self.transaction((put) => put.put(closure_0, closure_1, Replace), "" + self.prefix + " put");
     }
   };
   items[11] = {
@@ -119,47 +120,51 @@ const tmp2 = () => {
     value(arg0, arg1) {
       let Replace = arg2;
       const self = this;
-      const GuildEntityDao = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       if (arg2 === undefined) {
-        Replace = GuildEntityDao(arg1[3]).ConflictOptions.Replace;
+        Replace = GuildEntityDao(outer1_1[3]).ConflictOptions.Replace;
       }
-      return self.transaction((putAll) => putAll.putAll(putAll, arg1, Replace), "" + self.prefix + " putAll");
+      return self.transaction((putAll) => putAll.putAll(closure_0, closure_1, Replace), "" + self.prefix + " putAll");
     }
   };
   items[12] = {
     key: "replaceAll",
     value(arg0, arg1) {
-      const GuildEntityDao = arg0;
-      return this.transaction((str) => str.replaceAll(str, arg1), "" + this.prefix + " replaceAll");
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      return this.transaction((str) => str.replaceAll(closure_0, closure_1), "" + this.prefix + " replaceAll");
     }
   };
   items[13] = {
     key: "delete",
     value(arg0, arg1) {
-      const GuildEntityDao = arg0;
-      return this.transaction((arg0) => arg0.delete(arg0, arg1), "" + this.prefix + " delete");
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      return this.transaction((arg0) => arg0.delete(closure_0, closure_1), "" + this.prefix + " delete");
     }
   };
   items[14] = {
     key: "deleteGeneration",
     value(arg0, arg1) {
-      const GuildEntityDao = arg0;
-      return this.transaction((deleteGeneration) => deleteGeneration.deleteGeneration(deleteGeneration, arg1), "" + this.prefix + " deleteGeneration");
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      return this.transaction((deleteGeneration) => deleteGeneration.deleteGeneration(closure_0, closure_1), "" + this.prefix + " deleteGeneration");
     }
   };
   items[15] = {
     key: "transaction",
     value(arg0, arg1) {
-      const GuildEntityDao = arg0;
+      let closure_0 = arg0;
       const table = this.table;
-      return table.transaction((arg0) => arg0(new closure_5(arg0)), arg1);
+      return table.transaction((arg0) => callback(new outer2_5(arg0)), arg1);
     }
   };
   items[16] = {
     key: "upgradeTransaction",
     value(arg0) {
       const table = this.table;
-      return new closure_5(table.upgradeTransaction(arg0));
+      return new outer1_5(table.upgradeTransaction(arg0));
     }
   };
   items[17] = {
@@ -185,7 +190,7 @@ const tmp2 = () => {
       return table.deleteSyncUnsafe(items);
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "cell",
       value(arg0, data, generation) {
@@ -195,37 +200,37 @@ const tmp2 = () => {
     }
   ];
   return callback(GuildEntityDao, items, items1);
-}();
-const tmp3 = () => {
+})();
+let closure_4 = tmp2;
+const tmp3 = (() => {
   class GuildEntityDaoTransaction {
     constructor(arg0) {
-      tmp = __exportStarResult1(this, GuildEntityDaoTransaction);
+      tmp = outer1_2(this, GuildEntityDaoTransaction);
       this.transaction = arg0;
       return;
     }
   }
-  const arg1 = GuildEntityDaoTransaction;
   let obj = {
     key: "put",
     value(arg0, arg1) {
       let Replace = arg2;
       const self = this;
       if (arg2 === undefined) {
-        Replace = GuildEntityDaoTransaction(closure_1[3]).ConflictOptions.Replace;
+        Replace = GuildEntityDaoTransaction(outer1_1[3]).ConflictOptions.Replace;
       }
       return self.putWithGeneration(arg0, arg1, null, Replace);
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "putWithGeneration",
     value(arg0, arg1, arg2) {
       let Replace = arg3;
       if (arg3 === undefined) {
-        Replace = GuildEntityDaoTransaction(closure_1[3]).ConflictOptions.Replace;
+        Replace = GuildEntityDaoTransaction(outer1_1[3]).ConflictOptions.Replace;
       }
       const transaction = this.transaction;
-      return transaction.put(closure_4.cell(arg0, arg1, arg2), Replace);
+      return transaction.put(outer1_4.cell(arg0, arg1, arg2), Replace);
     }
   };
   items[1] = obj;
@@ -233,12 +238,12 @@ const tmp3 = () => {
     key: "putAll",
     value(arg0, arr) {
       let Replace = arg2;
-      const GuildEntityDaoTransaction = arg0;
+      let closure_0 = arg0;
       if (arg2 === undefined) {
-        Replace = GuildEntityDaoTransaction(closure_1[3]).ConflictOptions.Replace;
+        Replace = GuildEntityDaoTransaction(outer1_1[3]).ConflictOptions.Replace;
       }
       const transaction = this.transaction;
-      return transaction.putAll(arr.map((arg0) => closure_4.cell(arg0, arg0, null)), Replace);
+      return transaction.putAll(arr.map((arg0) => outer2_4.cell(closure_0, arg0, null)), Replace);
     }
   };
   items[2] = obj;
@@ -282,18 +287,19 @@ const tmp3 = () => {
       return transaction.deleteGeneration([], arg0, arg1);
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "fromDatabaseTransaction",
       value(prefix, tableId, transaction) {
-        const tableTransaction = new GuildEntityDaoTransaction(closure_1[2]).TableTransaction(prefix, tableId, transaction);
+        const tableTransaction = new GuildEntityDaoTransaction(outer1_1[2]).TableTransaction(prefix, tableId, transaction);
         return new GuildEntityDaoTransaction(tableTransaction);
       }
     }
   ];
   return callback(GuildEntityDaoTransaction, items, items1);
-}();
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/GuildEntityDao.tsx");
+})();
+let closure_5 = tmp3;
+const result = require("prefixCell").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/GuildEntityDao.tsx");
 
 export const GuildEntityDao = tmp2;
 export const GuildEntityDaoTransaction = tmp3;

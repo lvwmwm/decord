@@ -1,9 +1,13 @@
 // Module ID: 1920
-// Function ID: 21720
+// Function ID: 21721
 // Name: wrapURL
-// Dependencies: []
+// Dependencies: [1921, 653, 3742, 477, 2]
 
 // Module 1920 (wrapURL)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+const require = arg1;
 function wrapURL(arg0, closure_6) {
   let tmp = closure_6;
   if (closure_6 === undefined) {
@@ -14,12 +18,10 @@ function wrapURL(arg0, closure_6) {
 function getLocale() {
   return locale.locale.toLowerCase();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const LocalizedLinks = tmp2.LocalizedLinks;
-const combined = "https://" + tmp2.SUPPORT_DOMAIN;
-let closure_6 = "https://" + tmp2.SUPPORT_DEV_DOMAIN;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("utils/HelpdeskUtils.tsx");
+const LocalizedLinks = ME.LocalizedLinks;
+const combined = "https://" + ME.SUPPORT_DOMAIN;
+let closure_6 = "https://" + ME.SUPPORT_DEV_DOMAIN;
+const result = require("getLocalizedLink").fileFinishedImporting("utils/HelpdeskUtils.tsx");
 
 export default {
   getArticleURL(REFERRAL_PROGRAM) {
@@ -32,14 +34,14 @@ export default {
     return wrapURL("/hc/" + getLocale() + "/articles/" + MEDIA_CHANNEL, "https://creator-support.discord.com");
   },
   getTwitterURL() {
-    return importDefault(dependencyMap[2])(LocalizedLinks.TWITTER);
+    return importDefault(3742)(LocalizedLinks.TWITTER);
   },
   getCommunityURL() {
     return wrapURL("/hc/" + getLocale());
   },
   getSubmitRequestURL(arg0) {
     const tmp = getLocale();
-    const tmp2 = wrapURL("/hc/" + tmp + "/requests/new?platform=" + encodeURIComponent(arg1(dependencyMap[3]).getPlatformName()));
+    const tmp2 = wrapURL("/hc/" + tmp + "/requests/new?platform=" + encodeURIComponent(require(477) /* set */.getPlatformName()));
     let sum = tmp2;
     if (null != arg0) {
       const _encodeURIComponent = encodeURIComponent;

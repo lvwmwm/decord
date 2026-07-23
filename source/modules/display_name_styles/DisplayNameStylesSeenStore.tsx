@@ -1,41 +1,44 @@
-// Module ID: 14114
-// Function ID: 107148
+// Module ID: 14228
+// Function ID: 109304
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 14114 (_isNativeReflectConstruct)
+// Module 14228 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import closure_1 from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let obj = { seenFontIds: new Set() };
-const set = new Set();
+let obj = {};
+let set = new Set();
+obj.seenFontIds = set;
 obj.seenEffectIds = new Set();
 obj.newFontsBadgeDismissed = false;
 obj.newEffectsBadgeDismissed = false;
-let tmp4 = (PersistedStore) => {
+let tmp4 = ((PersistedStore) => {
   class DisplayNameStylesSeenStore {
     constructor() {
       self = this;
       tmp = DisplayNameStylesSeenStore(this, DisplayNameStylesSeenStore);
-      obj = closure_3(DisplayNameStylesSeenStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(DisplayNameStylesSeenStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -44,7 +47,6 @@ let tmp4 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = DisplayNameStylesSeenStore;
   callback2(DisplayNameStylesSeenStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -77,46 +79,47 @@ let tmp4 = (PersistedStore) => {
         prop1 = seenFontIds.newEffectsBadgeDismissed;
       }
       obj.newEffectsBadgeDismissed = null != prop1 && prop1;
+      const outer1_5 = obj;
     }
   };
   const items = [obj, , , , , ];
   obj = {
     key: "getState",
     value() {
-      return { seenFontIds: Array.from(closure_5.seenFontIds), seenEffectIds: Array.from(closure_5.seenEffectIds), newFontsBadgeDismissed: closure_5.newFontsBadgeDismissed, newEffectsBadgeDismissed: closure_5.newEffectsBadgeDismissed };
+      return { seenFontIds: Array.from(outer1_5.seenFontIds), seenEffectIds: Array.from(outer1_5.seenEffectIds), newFontsBadgeDismissed: outer1_5.newFontsBadgeDismissed, newEffectsBadgeDismissed: outer1_5.newEffectsBadgeDismissed };
     }
   };
   items[1] = obj;
   obj = {
     key: "getSeenFonts",
     value() {
-      return closure_5.seenFontIds;
+      return outer1_5.seenFontIds;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getSeenEffects",
     value() {
-      return closure_5.seenEffectIds;
+      return outer1_5.seenEffectIds;
     }
   };
   items[4] = {
     key: "getNewFontsBadgeDismissed",
     value() {
-      return closure_5.newFontsBadgeDismissed;
+      return outer1_5.newFontsBadgeDismissed;
     }
   };
   items[5] = {
     key: "getNewEffectsBadgeDismissed",
     value() {
-      return closure_5.newEffectsBadgeDismissed;
+      return outer1_5.newEffectsBadgeDismissed;
     }
   };
   return callback(DisplayNameStylesSeenStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp4.displayName = "DisplayNameStylesSeenStore";
 tmp4.persistKey = "DisplayNameStylesSeenStore";
-const items = [
+let items = [
   (arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
@@ -133,7 +136,7 @@ obj = {
     if (seenFontIds.has(fontId)) {
       return false;
     } else {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(obj);
       const _Set = Set;
       const items = [];
@@ -150,7 +153,7 @@ obj = {
     if (seenEffectIds.has(effectId)) {
       return false;
     } else {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(obj);
       const _Set = Set;
       const items = [];
@@ -165,7 +168,7 @@ obj = {
     if (obj.newFontsBadgeDismissed) {
       return false;
     } else {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(obj);
       obj["newFontsBadgeDismissed"] = true;
     }
@@ -174,14 +177,13 @@ obj = {
     if (obj.newEffectsBadgeDismissed) {
       return false;
     } else {
-      const obj = {};
+      obj = {};
       const merged = Object.assign(obj);
       obj["newEffectsBadgeDismissed"] = true;
     }
   }
 };
-tmp4 = new tmp4(importDefault(dependencyMap[6]), obj);
-const set1 = new Set();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/display_name_styles/DisplayNameStylesSeenStore.tsx");
+tmp4 = new tmp4(require("dispatcher"), obj);
+let result = set.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesSeenStore.tsx");
 
 export default tmp4;

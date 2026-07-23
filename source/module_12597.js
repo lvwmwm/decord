@@ -1,9 +1,7 @@
 // Module ID: 12597
-// Function ID: 96833
+// Function ID: 97541
 // Dependencies: []
 
 // Module 12597
-const _module = require(dependencyMap[0]);
-const obj = { 1358955657: null, 1279501871: null, -100662186: null, -134216521: null, 1375732845: null, -1598249400: null, -117286062: null, 978739886: null, scales: ["<string:24264687>", "isArray"] };
 
-export default _module.registerAsset(obj);
+export default { Z_NO_FLUSH: 0, Z_PARTIAL_FLUSH: 1, Z_SYNC_FLUSH: 2, Z_FULL_FLUSH: 3, Z_FINISH: 4, Z_BLOCK: 5, Z_TREES: 6, Z_OK: 0, Z_STREAM_END: 1, Z_NEED_DICT: 2, Z_ERRNO: -1, Z_STREAM_ERROR: -2, Z_DATA_ERROR: -3, Z_BUF_ERROR: -5, Z_NO_COMPRESSION: 0, Z_BEST_SPEED: 1, Z_BEST_COMPRESSION: 9, Z_DEFAULT_COMPRESSION: -1, Z_FILTERED: 1, Z_HUFFMAN_ONLY: 2, Z_RLE: 3, Z_FIXED: 4, Z_DEFAULT_STRATEGY: 0, Z_BINARY: 0, Z_TEXT: 1, Z_UNKNOWN: 2, Z_DEFLATED: 8 };

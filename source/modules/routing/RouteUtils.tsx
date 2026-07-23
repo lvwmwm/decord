@@ -1,20 +1,20 @@
-// Module ID: 3963
-// Function ID: 32819
+// Module ID: 3965
+// Function ID: 32824
 // Name: isPseudoGuildId
-// Dependencies: []
+// Dependencies: [654, 1355, 2, 3966]
 // Exports: isValidChannelId, isValidGuildId
 
-// Module 3963 (isPseudoGuildId)
+// Module 3965 (isPseudoGuildId)
+import { PSEUDO_GUILD_IDS } from "APP_WITH_INVITE_AND_GUILD_ONBOARDING";
+import { isStaticChannelRoute } from "set";
+
 function isPseudoGuildId(stateFromStores) {
   return PSEUDO_GUILD_IDS.includes(stateFromStores);
 }
-const PSEUDO_GUILD_IDS = require(dependencyMap[0]).PSEUDO_GUILD_IDS;
-const isStaticChannelRoute = require(dependencyMap[1]).isStaticChannelRoute;
-let closure_2 = /^\d+$/;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/routing/RouteUtils.tsx");
+const re2 = /^\d+$/;
+const result = require("set").fileFinishedImporting("modules/routing/RouteUtils.tsx");
 
-export const RouteParam = require(dependencyMap[3]).RouteParam;
+export const RouteParam = require("paramPattern").RouteParam;
 export { isPseudoGuildId };
 export const isValidGuildId = function isValidGuildId(guildId) {
   let tmp = null != guildId;

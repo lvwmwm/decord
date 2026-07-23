@@ -1,30 +1,27 @@
-// Module ID: 14110
-// Function ID: 107118
+// Module ID: 14224
+// Function ID: 109274
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [297467904, 297336832, 557842432, 557514752, 557580288, 270270464, 131072, 401604608]
+// Dependencies: [31, 653, 1862, 7847, 7844, 675, 1863, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 14110 (useDisplayNameStylesHandleApply)
-let closure_3 = importAll(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
+// Module 14224 (useDisplayNameStylesHandleApply)
+import result from "result";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+let result = require("DisplayNameEffect").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
 
 export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
   hasChanges = hasChanges.hasChanges;
-  const arg1 = hasChanges;
   const selectedFontId = hasChanges.selectedFontId;
-  const importDefault = selectedFontId;
   const selectedEffectId = hasChanges.selectedEffectId;
-  const dependencyMap = selectedEffectId;
   const selectedColors = hasChanges.selectedColors;
-  const React = selectedColors;
   const defaultColor = hasChanges.defaultColor;
-  const AnalyticEvents = defaultColor;
   const guildId = hasChanges.guildId;
   const isTryItOut = hasChanges.isTryItOut;
   const onClose = hasChanges.onClose;
-  const items = [hasChanges, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut];
-  return React.useCallback(() => {
+  let items = [hasChanges, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut];
+  return selectedColors.useCallback(() => {
     if (hasChanges) {
       let items = selectedColors;
       let tmp4 = selectedEffectId === hasChanges(selectedEffectId[2]).DisplayNameEffect.SOLID;
@@ -47,7 +44,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
         obj.displayNameStyles = obj;
         tmp11Result.setPendingChanges(obj);
       }
-      obj = { font_name: hasChanges(selectedEffectId[6]).DisplayNameFont[closure_1], effect_name: hasChanges(selectedEffectId[2]).DisplayNameEffect[closure_2], colors: selectedColors };
+      obj = { font_name: hasChanges(selectedEffectId[6]).DisplayNameFont[selectedFontId], effect_name: hasChanges(selectedEffectId[2]).DisplayNameEffect[selectedEffectId], colors: selectedColors };
       selectedFontId(selectedEffectId[5]).track(defaultColor.DISPLAY_NAME_STYLES_APPLIED, obj);
       if (null != onClose) {
         onClose();

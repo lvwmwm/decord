@@ -1,20 +1,25 @@
-// Module ID: 5649
-// Function ID: 48331
+// Module ID: 5654
+// Function ID: 48358
 // Name: useAvailableTags
-// Dependencies: []
+// Dependencies: [31, 1348, 3758, 482, 566, 1327, 5655, 2]
 // Exports: useSomeAppliedTags, useVisibleAppliedForumTags
 
-// Module 5649 (useAvailableTags)
+// Module 5654 (useAvailableTags)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { Permissions } from "sum";
+
+const require = arg1;
 function useAvailableTags(parent_id) {
   parent_id = undefined;
   if (null != parent_id) {
     parent_id = parent_id.parent_id;
   }
-  const arg1 = parent_id;
-  const items = [closure_3];
+  const items = [_isNativeReflectConstruct];
   const items1 = [parent_id];
-  return arg1(dependencyMap[4]).useStateFromStoresObject(items, () => {
-    const channel = channel.getChannel(parent_id);
+  return parent_id(566).useStateFromStoresObject(items, () => {
+    const channel = outer1_3.getChannel(parent_id);
     let availableTags;
     if (null != channel) {
       availableTags = channel.availableTags;
@@ -31,41 +36,40 @@ function useAvailableTags(parent_id) {
   }, items1);
 }
 function useAppliedTags(thread) {
-  const arg1 = thread;
+  let closure_0 = thread;
   const tmp = useAvailableTags(thread);
   const dependencyMap = tmp;
   const items = [tmp, thread];
-  return React.useMemo((self) => {
+  return React.useMemo(() => {
     let found;
-    if (null != self) {
-      const appliedTags = self.appliedTags;
+    if (null != thread) {
+      const appliedTags = thread.appliedTags;
       if (null != appliedTags) {
-        const mapped = appliedTags.map((arg0) => closure_1[arg0]);
+        const mapped = appliedTags.map((arg0) => outer1_1[arg0]);
         if (null != mapped) {
-          found = mapped.filter(self(tmp[5]).isNotNullish);
+          found = mapped.filter(thread(tmp[5]).isNotNullish);
         }
       }
     }
     if (null == found) {
-      found = closure_6;
+      found = outer1_6;
     }
     let result = found;
-    if (null != self) {
+    if (null != thread) {
       result = found;
-      if (self.isModeratorReportChannel()) {
-        result = self(tmp[6]).sortedModeratorReportTags(found);
-        const obj = self(tmp[6]);
+      if (thread.isModeratorReportChannel()) {
+        result = thread(tmp[6]).sortedModeratorReportTags(found);
+        const obj = thread(tmp[6]);
       }
     }
     return result;
   }, items);
 }
 function useVisibleForumTags(parentChannel) {
-  const arg1 = parentChannel;
+  const _require = parentChannel;
   let availableTags;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => closure_4.can(constants.MANAGE_THREADS, arg0));
-  const dependencyMap = stateFromStores;
+  let items = [closure_4];
+  stateFromStores = _require(stateFromStores[4]).useStateFromStores(items, () => outer1_4.can(outer1_5.MANAGE_THREADS, closure_0));
   const items1 = [stateFromStores, ];
   if (null != parentChannel) {
     availableTags = parentChannel.availableTags;
@@ -73,8 +77,8 @@ function useVisibleForumTags(parentChannel) {
   items1[1] = availableTags;
   return React.useMemo(() => {
     let availableTags;
-    if (null != arg0) {
-      availableTags = arg0.availableTags;
+    if (null != parentChannel) {
+      availableTags = parentChannel.availableTags;
     }
     if (null == availableTags) {
       availableTags = [];
@@ -86,12 +90,8 @@ function useVisibleForumTags(parentChannel) {
     return found;
   }, items1);
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const Permissions = arg1(dependencyMap[3]).Permissions;
 let closure_6 = [];
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/forums/ForumTagHooks.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forums/ForumTagHooks.tsx");
 
 export { useAvailableTags };
 export { useAppliedTags };
@@ -100,39 +100,38 @@ export const useSomeAppliedTags = function useSomeAppliedTags(thread, arg1) {
   if (arg1 === undefined) {
     num = 1;
   }
-  arg1 = num;
-  let dependencyMap;
+  let c1;
   const tmp = useAppliedTags(thread);
-  dependencyMap = tmp;
-  const items = [tmp, num];
+  c1 = tmp;
+  let items = [tmp, num];
   return React.useMemo(() => {
-    const items = [tmp.slice(0, num), Math.max(0, tmp.length - num)];
+    const items = [_undefined.slice(0, num), Math.max(0, _undefined.length - num)];
     return items;
   }, items);
 };
 export { useVisibleForumTags };
 export const useVisibleAppliedForumTags = function useVisibleAppliedForumTags(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_3];
+  const items = [_isNativeReflectConstruct];
   const items1 = [arg0];
-  const tmp = useVisibleForumTags(arg1(dependencyMap[4]).useStateFromStores(items, () => {
+  const tmp = useVisibleForumTags(_require(566).useStateFromStores(items, () => {
     let parent_id;
-    if (null != arg0) {
-      parent_id = arg0.parent_id;
+    if (null != moderatorReportChannel) {
+      parent_id = moderatorReportChannel.parent_id;
     }
-    return channel.getChannel(parent_id);
+    return outer1_3.getChannel(parent_id);
   }, items1));
   const React = tmp;
   const items2 = [arg1, tmp, arg0];
   return React.useMemo(() => {
-    const found = arg1.filter((arg0) => closure_2.includes(arg0));
+    const found = closure_1.filter((arg0) => outer1_2.includes(arg0));
     let result = found;
-    if (null != arg0) {
+    if (null != moderatorReportChannel) {
       result = found;
-      if (arg0.isModeratorReportChannel()) {
-        result = arg0(arg1[6]).sortedModeratorReportTags(found);
-        const obj = arg0(arg1[6]);
+      if (moderatorReportChannel.isModeratorReportChannel()) {
+        result = moderatorReportChannel(closure_1[6]).sortedModeratorReportTags(found);
+        const obj = moderatorReportChannel(closure_1[6]);
       }
     }
     return result;

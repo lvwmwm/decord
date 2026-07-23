@@ -1,26 +1,27 @@
-// Module ID: 14877
-// Function ID: 112059
+// Module ID: 14993
+// Function ID: 114227
 // Name: _saveGuildThemeNuxPreference
-// Dependencies: []
+// Dependencies: [5, 1316, 4062, 1331, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 14877 (_saveGuildThemeNuxPreference)
+// Module 14993 (_saveGuildThemeNuxPreference)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _saveGuildThemeNuxPreference() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _saveGuildThemeNuxPreference = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_themes/GuildThemeNuxUtils.tsx");
+const result = require("GuildThemeSourcePreference").fileFinishedImporting("modules/guild_themes/GuildThemeNuxUtils.tsx");
 
 export const getInitialGuildThemeNuxSelection = function getInitialGuildThemeNuxSelection() {
-  const defaultGuildThemePreference = defaultGuildThemePreference.getDefaultGuildThemePreference();
-  if (defaultGuildThemePreference === arg1(dependencyMap[2]).GuildThemeSourcePreference.PERSONAL) {
-    let GUILD = arg1(dependencyMap[2]).GuildThemeSourcePreference.PERSONAL;
+  defaultGuildThemePreference = defaultGuildThemePreference.getDefaultGuildThemePreference();
+  if (defaultGuildThemePreference === require(4062) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.PERSONAL) {
+    let GUILD = require(4062) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = arg1(dependencyMap[2]).GuildThemeSourcePreference.GUILD;
+    GUILD = require(4062) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 };

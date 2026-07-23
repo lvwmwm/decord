@@ -1,10 +1,17 @@
-// Module ID: 15942
-// Function ID: 122264
+// Module ID: 16059
+// Function ID: 124437
 // Name: getSpatialAudioPointFromGuildRoomPosition
-// Dependencies: [42795008, 44236800, 44957696, 131072, 125239296, 100663296, 251658240]
+// Dependencies: [1194, 16049, 16054, 16055, 566, 16050, 2]
 // Exports: livingRoomWorldPointToMediaEnginePoint, useGuildRoomSpatialAudio
 
-// Module 15942 (getSpatialAudioPointFromGuildRoomPosition)
+// Module 16059 (getSpatialAudioPointFromGuildRoomPosition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import items from "items";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function getSpatialAudioPointFromGuildRoomPosition(arg0, arg1, aspectRatio) {
   let point = arg1;
   if (null == arg1) {
@@ -17,9 +24,8 @@ function computeLivingRoomWorldPoints(arg0) {
   let currentUserId;
   let users;
   ({ users, currentUserId } = arg0);
-  const arg1 = currentUserId;
-  let importDefault;
-  let dependencyMap;
+  let c1;
+  let aspectRatio;
   const value = users.get(currentUserId);
   let position;
   if (null != value) {
@@ -29,21 +35,18 @@ function computeLivingRoomWorldPoints(arg0) {
   if (null != position) {
     tmp3 = position;
   }
-  importDefault = tmp3;
-  dependencyMap = closure_5[closure_0(undefined, closure_2[3]).GuildRoomBackgrounds.DEFAULT].aspectRatio;
-  const items = [...users.values()];
+  c1 = tmp3;
+  aspectRatio = table[currentUserId(undefined, aspectRatio[3]).GuildRoomBackgrounds.DEFAULT].aspectRatio;
+  let items = [...users.values()];
   const found = items.filter((userId) => userId.userId !== currentUserId);
   return Object.fromEntries(found.map((userId) => {
-    const items = [userId.userId, callback(userId.position, tmp3, { aspectRatio })];
+    const items = [userId.userId, outer1_8(userId.position, c1, { aspectRatio })];
     return items;
   }));
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ GUILD_ROOM_BACKGROUND_CONFIG: closure_5, GUILD_ROOM_SPATIAL_AUDIO_MODE: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = {};
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_rooms/GuildRoomSpatialAudio.tsx");
+({ GUILD_ROOM_BACKGROUND_CONFIG: closure_5, GUILD_ROOM_SPATIAL_AUDIO_MODE: closure_6 } = items);
+let closure_7 = { x: 50, y: 50 };
+const result = require("items").fileFinishedImporting("modules/guild_rooms/GuildRoomSpatialAudio.tsx");
 
 export { computeLivingRoomWorldPoints };
 export const livingRoomWorldPointToMediaEnginePoint = function livingRoomWorldPointToMediaEnginePoint(worldX) {
@@ -51,14 +54,12 @@ export const livingRoomWorldPointToMediaEnginePoint = function livingRoomWorldPo
 };
 export const useGuildRoomSpatialAudio = function useGuildRoomSpatialAudio(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const guildId = channelId.guildId;
   let dependencyMap;
-  let obj = arg1(dependencyMap[4]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  const importDefault = stateFromStores;
-  let experimental = importDefault(dependencyMap[5]).useExperiment({ guildId, location: "SpatialAudioPanel" }).experimental;
+  let obj = channelId(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getId());
+  let experimental = stateFromStores(16050).useExperiment({ guildId, location: "SpatialAudioPanel" }).experimental;
   if (experimental) {
     experimental = null != guildId;
   }
@@ -68,14 +69,14 @@ export const useGuildRoomSpatialAudio = function useGuildRoomSpatialAudio(channe
   }
   dependencyMap = tmp3;
   obj = { available: experimental };
-  const obj2 = importDefault(dependencyMap[5]);
+  const obj2 = stateFromStores(16050);
   const items1 = [closure_4];
   const items2 = [tmp3, channelId, stateFromStores];
-  obj.worldPoints = arg1(dependencyMap[4]).useStateFromStores(items1, () => {
-    if (tmp3) {
+  obj.worldPoints = channelId(566).useStateFromStores(items1, () => {
+    if (c2) {
       if (null != channelId) {
-        const obj = { users: roomUsers.getRoomUsers(channelId), currentUserId: stateFromStores };
-        const tmp3 = callback(obj);
+        const obj = { users: outer1_4.getRoomUsers(channelId), currentUserId: stateFromStores };
+        outer1_9(obj);
       }
       return {};
     }

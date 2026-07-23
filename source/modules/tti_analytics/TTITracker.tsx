@@ -1,52 +1,60 @@
 // Module ID: 14
 // Function ID: 184
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [15, 17, 18, 5, 6, 7, 20, 2, 21, 22, 2]
 
 // Module 14 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let global = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _defineProperties from "_defineProperties";
+import AppStartPerformance from "AppStartPerformance";
+import importDefaultResult from "set";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      global = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -108,21 +116,15 @@ function _serialize(arg0, arg1) {
   }
   return null;
 }
-let closure_5 = importDefault(dependencyMap[0]);
-let closure_6 = importDefault(dependencyMap[1]);
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-const importDefaultResult = importDefault(dependencyMap[5]);
 function loggerCallback() {
 
 }
 global.__timingFunction = () => performance.now();
-let closure_12 = null == global.__getTotalRequireTime ? () => 0 : () => global.__getTotalRequireTime();
-let closure_13 = () => {
+let closure_12 = null == global.__getTotalRequireTime ? (() => 0) : (() => global.__getTotalRequireTime());
+let closure_13 = (() => {
   class TTITimer {
     constructor(arg0, arg1) {
-      tmp = closure_9(this, TTITimer);
+      tmp = outer1_9(this, TTITimer);
       this.emoji = arg0;
       this.name = arg1;
       this.start_ = 0;
@@ -134,7 +136,6 @@ let closure_13 = () => {
       return;
     }
   }
-  const importDefault = TTITimer;
   let obj = {
     key: "start",
     get() {
@@ -169,16 +170,16 @@ let closure_13 = () => {
       if (0 === this.start_) {
         self.recordStart_();
       }
-      TTITimer(closure_4[6]).mark(self.emoji, "Start " + self.name);
-      callback5();
+      TTITimer(outer1_4[6]).mark(self.emoji, "Start " + self.name);
+      outer1_11();
     }
   };
   items[5] = {
     key: "recordStart_",
     value() {
       this.start_ = Date.now();
-      this.startNumImports = callback3(closure_4[7]).size();
-      this.startImportTime = callback6();
+      this.startNumImports = outer1_3(outer1_4[7]).size();
+      this.startImportTime = outer1_12();
     }
   };
   items[6] = {
@@ -189,20 +190,20 @@ let closure_13 = () => {
         if (0 !== self.start_) {
           self.recordEnd_();
           const _HermesInternal = HermesInternal;
-          TTITimer(closure_4[6]).mark(self.emoji, "Finish " + self.name, self.end_ - self.start_);
-          const obj2 = TTITimer(closure_4[6]);
+          TTITimer(outer1_4[6]).mark(self.emoji, "Finish " + self.name, self.end_ - self.start_);
+          const obj2 = TTITimer(outer1_4[6]);
         }
-        callback5();
+        outer1_11();
       }
-      TTITimer(closure_4[6]).mark(self.emoji, "Finish " + self.name);
+      TTITimer(outer1_4[6]).mark(self.emoji, "Finish " + self.name);
     }
   };
   items[7] = {
     key: "recordEnd_",
     value() {
       this.end_ = Date.now();
-      this.endNumImports = callback3(closure_4[7]).size();
-      this.endImportTime = callback6();
+      this.endNumImports = outer1_3(outer1_4[7]).size();
+      this.endImportTime = outer1_12();
     }
   };
   items[8] = {
@@ -212,24 +213,24 @@ let closure_13 = () => {
       if (0 === this.start_) {
         self.start_ = start_;
         self.end_ = start_ + arg1;
-        self.endNumImports = callback3(closure_4[7]).size();
-        self.endImportTime = callback6();
-        const obj = callback3(closure_4[7]);
+        self.endNumImports = outer1_3(outer1_4[7]).size();
+        self.endImportTime = outer1_12();
+        const obj = outer1_3(outer1_4[7]);
       }
-      TTITimer(closure_4[6]).mark(self.emoji, self.name, arg1);
-      callback5();
+      TTITimer(outer1_4[6]).mark(self.emoji, self.name, arg1);
+      outer1_11();
     }
   };
   items[9] = {
     key: "serializeStart",
     value(arg0) {
-      return callback7(arg0, this.start_);
+      return outer1_19(arg0, this.start_);
     }
   };
   items[10] = {
     key: "serializeEnd",
     value(arg0) {
-      return callback7(arg0, this.end_);
+      return outer1_19(arg0, this.end_);
     }
   };
   items[11] = {
@@ -237,13 +238,13 @@ let closure_13 = () => {
     value(arg0) {
       const self = this;
       if (this.start_ > 0) {
-        return TTITimer(closure_4[6]).time(self.emoji, self.name, arg0);
+        return TTITimer(outer1_4[6]).time(self.emoji, self.name, arg0);
       } else {
         self.recordStart_();
-        const obj = TTITimer(closure_4[6]);
+        const obj = TTITimer(outer1_4[6]);
         self.recordEnd_();
-        callback5();
-        return TTITimer(closure_4[6]).time(self.emoji, self.name, arg0);
+        outer1_11();
+        return TTITimer(outer1_4[6]).time(self.emoji, self.name, arg0);
       }
     }
   };
@@ -251,13 +252,13 @@ let closure_13 = () => {
   let closure_1 = callback2(async function(arg0) {
     const self = this;
     if (self.start_ > 0) {
-      return callback(closure_4[6]).timeAsync(self.emoji, self.name, arg0);
+      return TTITimer(outer2_4[6]).timeAsync(self.emoji, self.name, arg0);
     } else {
       self.recordStart_();
-      const obj = callback(closure_4[6]);
+      const obj = TTITimer(outer2_4[6]);
       self.recordEnd_();
-      callback2();
-      return yield callback(closure_4[6]).timeAsync(self.emoji, self.name, arg0);
+      outer2_11();
+      return yield TTITimer(outer2_4[6]).timeAsync(self.emoji, self.name, arg0);
     }
   });
   obj10.value = function measureAsync(arg0) {
@@ -268,21 +269,21 @@ let closure_13 = () => {
   let closure_0 = callback2(async function(arg0) {
     const self = this;
     if (self.start_ > 0) {
-      return callback(closure_4[6]).timeAsync(self.emoji, self.name, arg0);
+      return TTITimer(outer2_4[6]).timeAsync(self.emoji, self.name, arg0);
     } else {
       self.recordStart_();
       const _Date2 = Date;
       const timestamp = Date.now();
       const _HermesInternal2 = HermesInternal;
-      callback(closure_4[6]).mark(self.emoji, "Start " + self.name);
-      const obj3 = callback(closure_4[6]);
+      TTITimer(outer2_4[6]).mark(self.emoji, "Start " + self.name);
+      const obj3 = TTITimer(outer2_4[6]);
       const tmp16 = yield arg0();
       const _HermesInternal = HermesInternal;
       const _Date = Date;
       const combined = "Finish " + self.name;
-      callback(closure_4[6]).mark(self.emoji, combined, Date.now() - timestamp);
+      TTITimer(outer2_4[6]).mark(self.emoji, combined, Date.now() - timestamp);
       self.recordEnd_();
-      callback2();
+      outer2_11();
       return tmp16;
     }
   });
@@ -291,8 +292,8 @@ let closure_13 = () => {
   };
   items[13] = obj11;
   return importDefaultResult(TTITimer, items);
-}();
-let closure_14 = () => {
+})();
+let closure_14 = (() => {
   class TTIEvent {
     constructor(arg0, arg1) {
       flag = arg2;
@@ -304,7 +305,7 @@ let closure_14 = () => {
       if (flag2 === undefined) {
         flag2 = false;
       }
-      tmp = closure_9(self, TTIEvent);
+      tmp = outer1_9(self, TTIEvent);
       self.emoji = arg0;
       self.name = arg1;
       self.onlyOnce = flag;
@@ -315,7 +316,6 @@ let closure_14 = () => {
       return;
     }
   }
-  const global = TTIEvent;
   let obj = {
     key: "time",
     get() {
@@ -337,13 +337,13 @@ let closure_14 = () => {
       } else if (!self.onlyOnce) {
         if (self.alwaysRecord) {
           self.recordState_(timestamp);
-          callback4();
+          outer1_11();
         } else {
-          callback(closure_4[6]).mark(self.emoji, self.name);
-          const obj = callback(closure_4[6]);
+          outer1_2(outer1_4[6]).mark(self.emoji, self.name);
+          const obj = outer1_2(outer1_4[6]);
         }
       }
-      callback4();
+      outer1_11();
     }
   };
   items[1] = obj;
@@ -351,10 +351,10 @@ let closure_14 = () => {
     key: "recordState_",
     value(time_) {
       this.time_ = time_;
-      this.numImports = callback2(closure_4[7]).size();
-      this.importTime = callback5();
-      const obj = callback2(closure_4[7]);
-      callback(closure_4[6]).mark(this.emoji, this.name);
+      this.numImports = outer1_3(outer1_4[7]).size();
+      this.importTime = outer1_12();
+      const obj = outer1_3(outer1_4[7]);
+      outer1_2(outer1_4[6]).mark(this.emoji, this.name);
     }
   };
   items[2] = obj;
@@ -367,20 +367,19 @@ let closure_14 = () => {
   items[4] = {
     key: "serialize",
     value(arg0) {
-      return callback6(arg0, this.time_);
+      return outer1_19(arg0, this.time_);
     }
   };
   return importDefaultResult(TTIEvent, items);
-}();
-let closure_15 = () => {
+})();
+let closure_15 = (() => {
   class TTIImportEvent {
     constructor() {
-      tmp = closure_9(this, TTIImportEvent);
+      tmp = outer1_9(this, TTIImportEvent);
       this.time_ = 0;
       return;
     }
   }
-  const global = TTIImportEvent;
   let obj = {
     key: "time",
     get() {
@@ -392,16 +391,16 @@ let closure_15 = () => {
     key: "record",
     value() {
       if (0 === this.time_) {
-        tmp.time_ = callback2();
+        tmp.time_ = outer1_12();
       }
     }
   };
   items[1] = obj;
   return importDefaultResult(TTIImportEvent, items);
-}();
+})();
 class TTITrackers {
   constructor() {
-    tmp = closure_9(this, TTITrackers);
+    tmp = c9(this, TTITrackers);
     tmp2 = new f196("\u2757", "Load index.tsx");
     this.loadIndex = tmp2;
     tmp3 = new f196("\u{1F4BE}", "Load fast_connect native module");
@@ -497,20 +496,20 @@ class TTITrackers {
     return;
   }
 }
-let tmp3 = (arg0) => {
+let tmp3 = ((arg0) => {
   class TTITracker {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_9(this, TTITracker);
+      tmp = outer1_9(this, TTITracker);
       items1 = [...items];
-      obj = closure_6(TTITracker);
-      tmp2 = closure_5;
-      if (closure_18()) {
+      obj = outer1_6(TTITracker);
+      tmp2 = outer1_5;
+      if (outer1_18()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -541,22 +540,21 @@ let tmp3 = (arg0) => {
       return tmp2Result;
     }
   }
-  const global = TTITracker;
   callback(TTITracker, arg0);
   let obj = {
     key: "setTTICallback",
     value(arg0) {
-      const TTITracker = arg0;
-      function loggerCallback() {
-        if (true === arg0()) {
-          function loggerCallback() {
+      let closure_0 = arg0;
+      const outer1_11 = function loggerCallback() {
+        if (true === callback()) {
+          const outer2_11 = function loggerCallback() {
             return false;
-          }
+          };
         }
-      }
+      };
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , ];
   obj = {
     key: "setInitialPage",
     value(initialPage) {
@@ -587,7 +585,7 @@ let tmp3 = (arg0) => {
     key: "setInterstitial",
     value(interstitial) {
       this.interstitial = interstitial;
-      callback5();
+      outer1_11();
     }
   };
   items[6] = {
@@ -653,9 +651,9 @@ let tmp3 = (arg0) => {
   items[10] = {
     key: "recordMessageRender",
     value(cachedChannelId, arr, arg2, messageRenderHasMoreAfter) {
-      const self = this;
-      const TTITracker = this;
-      const _default = callback(closure_4[8]).default;
+      let self = this;
+      self = this;
+      const _default = outer1_1(outer1_4[8]).default;
       const renderLatestMessages = this.renderLatestMessages;
       if (!renderLatestMessages.hasData()) {
         const renderMessages = self.renderMessages;
@@ -677,7 +675,7 @@ let tmp3 = (arg0) => {
                 if (0 === arr.length) {
                   self.messageCacheMissingReason = "channel-empty";
                 } else if (cachedChannelId === self.cachedChannelId) {
-                  const cachedMessageIds = self.cachedMessageIds;
+                  let cachedMessageIds = self.cachedMessageIds;
                   const sorted = cachedMessageIds.sort(_default.compare);
                   const sorted1 = arr.sort(_default.compare);
                   const _Math = Math;
@@ -716,7 +714,7 @@ let tmp3 = (arg0) => {
               self.messageCacheMissingReason = null;
             }
           }
-          const tmp5 = null != self.cachedChannelId && cachedChannelId !== self.cachedChannelId;
+          tmp5 = null != self.cachedChannelId && cachedChannelId !== self.cachedChannelId;
         }
       }
     }
@@ -743,63 +741,63 @@ let tmp3 = (arg0) => {
       let iter2;
       const self = this;
       const startTime = this.getStartTime(arg1);
-      const tmp2 = callback6(arg0);
+      const tmp2 = outer1_16(arg0);
       let iter = tmp2();
       if (!iter.done) {
         do {
           let value = iter.value;
           let label = value.label;
           if ("Finish MainApplication.initialize()" === label) {
-            let tmp16 = closure_19;
-            self.extraProperties.time_main_application_initialize_end = closure_19(startTime, value.timestamp);
+            let tmp16 = outer1_19;
+            self.extraProperties.time_main_application_initialize_end = outer1_19(startTime, value.timestamp);
           } else if ("GET_REACT_INSTANCE_MANAGER_START" === label) {
-            let tmp15 = closure_19;
-            self.extraProperties.time_get_react_instance_manager_start = closure_19(startTime, value.timestamp);
+            let tmp15 = outer1_19;
+            self.extraProperties.time_get_react_instance_manager_start = outer1_19(startTime, value.timestamp);
           } else if ("GET_REACT_INSTANCE_MANAGER_END" === label) {
-            let tmp14 = closure_19;
-            self.extraProperties.time_get_react_instance_manager_end = closure_19(startTime, value.timestamp);
+            let tmp14 = outer1_19;
+            self.extraProperties.time_get_react_instance_manager_end = outer1_19(startTime, value.timestamp);
           } else if ("PROCESS_PACKAGES_START" === label) {
-            let tmp13 = closure_19;
-            self.extraProperties.time_process_packages_start = closure_19(startTime, value.timestamp);
+            let tmp13 = outer1_19;
+            self.extraProperties.time_process_packages_start = outer1_19(startTime, value.timestamp);
           } else if ("PROCESS_PACKAGES_END" === label) {
-            let tmp12 = closure_19;
-            self.extraProperties.time_process_packages_end = closure_19(startTime, value.timestamp);
+            let tmp12 = outer1_19;
+            self.extraProperties.time_process_packages_end = outer1_19(startTime, value.timestamp);
           } else if ("CREATE_CATALYST_INSTANCE_START" === label) {
-            let tmp11 = closure_19;
-            self.extraProperties.time_create_catalyst_instance_start = closure_19(startTime, value.timestamp);
+            let tmp11 = outer1_19;
+            self.extraProperties.time_create_catalyst_instance_start = outer1_19(startTime, value.timestamp);
           } else if ("CREATE_CATALYST_INSTANCE_END" === label) {
-            let tmp10 = closure_19;
-            self.extraProperties.time_create_catalyst_instance_end = closure_19(startTime, value.timestamp);
+            let tmp10 = outer1_19;
+            self.extraProperties.time_create_catalyst_instance_end = outer1_19(startTime, value.timestamp);
           } else if ("CREATE_UI_MANAGER_MODULE_START" === label) {
-            let tmp9 = closure_19;
-            self.extraProperties.time_create_ui_manager_module_start = closure_19(startTime, value.timestamp);
+            let tmp9 = outer1_19;
+            self.extraProperties.time_create_ui_manager_module_start = outer1_19(startTime, value.timestamp);
           } else if ("CREATE_UI_MANAGER_MODULE_END" === label) {
-            let tmp8 = closure_19;
-            self.extraProperties.time_create_ui_manager_module_end = closure_19(startTime, value.timestamp);
+            let tmp8 = outer1_19;
+            self.extraProperties.time_create_ui_manager_module_end = outer1_19(startTime, value.timestamp);
           } else if ("REACT_BRIDGE_LOADING_START" === label) {
-            let tmp7 = closure_19;
-            self.extraProperties.time_react_bridge_loading_start = closure_19(startTime, value.timestamp);
+            let tmp7 = outer1_19;
+            self.extraProperties.time_react_bridge_loading_start = outer1_19(startTime, value.timestamp);
           } else if ("REACT_BRIDGE_LOADING_END" === label) {
-            let tmp6 = closure_19;
-            self.extraProperties.time_react_bridge_loading_end = closure_19(startTime, value.timestamp);
+            let tmp6 = outer1_19;
+            self.extraProperties.time_react_bridge_loading_end = outer1_19(startTime, value.timestamp);
           } else if ("CacheStorage Init Start" === label) {
-            let tmp5 = closure_19;
-            self.extraProperties.time_init_native_storage_start = closure_19(startTime, value.timestamp);
+            let tmp5 = outer1_19;
+            self.extraProperties.time_init_native_storage_start = outer1_19(startTime, value.timestamp);
           } else if ("CacheStorage Init End" === label) {
-            let tmp4 = closure_19;
-            self.extraProperties.time_init_native_storage_end = closure_19(startTime, value.timestamp);
+            let tmp4 = outer1_19;
+            self.extraProperties.time_init_native_storage_end = outer1_19(startTime, value.timestamp);
           } else if ("RUN_JS_BUNDLE_START" === label) {
-            let tmp3 = closure_19;
-            self.extraProperties.time_before_js_bundle_start = closure_19(startTime, value.timestamp);
+            let tmp3 = outer1_19;
+            self.extraProperties.time_before_js_bundle_start = outer1_19(startTime, value.timestamp);
           } else if ("ChatModule.updateRows() Start" === label) {
             if (null == self.extraProperties.time_first_native_message_render_start) {
-              let tmp18 = closure_19;
-              self.extraProperties.time_first_native_message_render_start = closure_19(startTime, value.timestamp);
+              let tmp18 = outer1_19;
+              self.extraProperties.time_first_native_message_render_start = outer1_19(startTime, value.timestamp);
             }
           } else if ("ChatModule.updateRows() Finish" === label) {
             if (null == self.extraProperties.time_first_native_message_render_end) {
-              let tmp17 = closure_19;
-              self.extraProperties.time_first_native_message_render_end = closure_19(startTime, value.timestamp);
+              let tmp17 = outer1_19;
+              self.extraProperties.time_first_native_message_render_end = outer1_19(startTime, value.timestamp);
             }
           }
           iter2 = tmp2();
@@ -831,8 +829,8 @@ let tmp3 = (arg0) => {
       let loadIndex;
       const self = this;
       const startTime = this.getStartTime(arg0);
-      const tmp2 = callback(closure_4[9]);
-      const found = callback(closure_4[9])(callback2(closure_4[6]).logGroups[0].logs).filter((log) => {
+      const tmp2 = outer1_1(outer1_4[9]);
+      const found = outer1_1(outer1_4[9])(outer1_2(outer1_4[6]).logGroups[0].logs).filter((log) => {
         log = log.log;
         return log.startsWith("Require ");
       });
@@ -844,7 +842,7 @@ let tmp3 = (arg0) => {
         }
         return num;
       });
-      const tmp2Result = callback(closure_4[9])(callback2(closure_4[6]).logGroups[0].logs);
+      const tmp2Result = outer1_1(outer1_4[9])(outer1_2(outer1_4[6]).logGroups[0].logs);
       const result = this.serializeAppStartupMetrics();
       const obj = {};
       const merged = Object.assign(this.extraProperties);
@@ -1116,8 +1114,8 @@ let tmp3 = (arg0) => {
     }
   };
   return importDefaultResult(TTITracker, items);
-}(importDefaultResult(TTITrackers));
+})(importDefaultResult(TTITrackers));
 tmp3 = new tmp3();
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/tti_analytics/TTITracker.tsx");
+let result = require("_inherits").fileFinishedImporting("modules/tti_analytics/TTITracker.tsx");
 
 export default tmp3;

@@ -1,23 +1,34 @@
-// Module ID: 14421
-// Function ID: 108774
+// Module ID: 14535
+// Function ID: 110927
 // Name: pressable
-// Dependencies: []
+// Dependencies: [7662, 653, 3827, 10095, 1212, 2]
 
-// Module 14421 (pressable)
-const MarketingURLs = require(dependencyMap[1]).MarketingURLs;
-const _module = require(dependencyMap[3]);
-const pressable = _module.createPressable({
+// Module 14535 (pressable)
+import { MarketingURLs } from "ME";
+import createToggle from "createToggle";
+
+const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(dependencyMap[4]).intl;
-    return intl.string(require(dependencyMap[4]).t.KGFTww);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.KGFTww);
   },
-  parent: require(dependencyMap[0]).MobileSetting.DATA_AND_PRIVACY,
+  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   onPress: function onPrivacyPolicyPress() {
-    importDefault(dependencyMap[2]).openURL(MarketingURLs.PRIVACY);
+    importDefault(3827).openURL(MarketingURLs.PRIVACY);
   },
   withArrow: true
 });
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/SafetyPrivacyPolicySetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.KGFTww);
+  },
+  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
+  onPress: function onPrivacyPolicyPress() {
+    importDefault(3827).openURL(MarketingURLs.PRIVACY);
+  },
+  withArrow: true
+};
+const result = require("module_3827").fileFinishedImporting("modules/user_settings/defs/native/SafetyPrivacyPolicySetting.tsx");
 
 export default pressable;

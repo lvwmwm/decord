@@ -1,9 +1,18 @@
-// Module ID: 8332
-// Function ID: 66033
+// Module ID: 8338
+// Function ID: 66070
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 8311, 8339, 1443, 587, 566, 686, 2]
 
-// Module 8332 (_isNativeReflectConstruct)
+// Module 8338 (_isNativeReflectConstruct)
+import getHostname from "getHostname";
+import isOriginalContentTypeDifferent from "isOriginalContentTypeDifferent";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { SPOTIFY_HOSTNAMES } from "spotifyUtmParams";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,7 +23,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _isTrustedDomain(url) {
-  const hostname = arg1(dependencyMap[6]).getHostname(url);
+  const hostname = require(8339) /* getHostname */.getHostname(url);
   if (window.GLOBAL_ENV.INVITE_HOST !== hostname) {
     const _window2 = window;
     if (window.GLOBAL_ENV.GIFT_CODE_HOST !== hostname) {
@@ -25,8 +34,8 @@ function _isTrustedDomain(url) {
           if (location.hostname !== hostname) {
             let hasItem = SPOTIFY_HOSTNAMES.includes(hostname);
             if (!hasItem) {
-              hasItem = importDefault(dependencyMap[7]).isDiscordHostname(hostname);
-              const obj2 = importDefault(dependencyMap[7]);
+              hasItem = importDefault(1443).isDiscordHostname(hostname);
+              const obj2 = importDefault(1443);
             }
             if (!hasItem) {
               hasItem = set.has(hostname);
@@ -40,33 +49,27 @@ function _isTrustedDomain(url) {
   return true;
 }
 function _isTrustedProtocol(url) {
-  return set1.has(arg1(dependencyMap[6]).getProtocol(url));
+  return set1.has(require(8339) /* getHostname */.getProtocol(url));
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const SPOTIFY_HOSTNAMES = arg1(dependencyMap[5]).SPOTIFY_HOSTNAMES;
-const set = new Set();
+let set = new Set();
 const set1 = new Set();
 let replaced;
 if (null != window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) {
   replaced = str.replace("//", "");
 }
-let tmp5 = (Store) => {
+let tmp5 = ((Store) => {
   class MaskedLinkStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, MaskedLinkStore);
-      obj = closure_6(MaskedLinkStore);
-      tmp2 = closure_5;
-      if (closure_12()) {
+      tmp = outer1_3(this, MaskedLinkStore);
+      obj = outer1_6(MaskedLinkStore);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -75,14 +78,13 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = MaskedLinkStore;
   callback2(MaskedLinkStore, Store);
   let obj = {
     key: "initialize",
     value() {
       let trustedDomains;
       let trustedProtocols;
-      const Storage = MaskedLinkStore(closure_2[8]).Storage;
+      const Storage = MaskedLinkStore(outer1_2[8]).Storage;
       let obj = Storage.get("MaskedLinkStore");
       if (null == obj) {
         obj = {};
@@ -96,13 +98,13 @@ let tmp5 = (Store) => {
         }
         const prototype3 = _Set3.prototype;
         _Set3 = new _Set3(arr);
-        let _Set = _Set3;
+        let outer1_9 = _Set3;
         const _Set4 = Set;
         const set = new Set();
-        let _Set2 = set;
+        let outer1_10 = set;
       } else {
         ({ trustedDomains, trustedProtocols } = obj);
-        _Set = Set;
+        let _Set = Set;
         arr = null;
         if (null != trustedDomains) {
           const _Array = Array;
@@ -110,7 +112,8 @@ let tmp5 = (Store) => {
         }
         const prototype = _Set.prototype;
         _Set = new _Set(arr);
-        _Set2 = Set;
+        outer1_9 = _Set;
+        let _Set2 = Set;
         let arr1 = null;
         if (null != trustedProtocols) {
           const _Array2 = Array;
@@ -118,6 +121,7 @@ let tmp5 = (Store) => {
         }
         const prototype2 = _Set2.prototype;
         _Set2 = new _Set2(arr1);
+        outer1_10 = _Set2;
       }
     }
   };
@@ -125,29 +129,29 @@ let tmp5 = (Store) => {
   obj = {
     key: "isTrustedDomain",
     value(arg0) {
-      return callback4(arg0);
+      return outer1_13(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "isTrustedProtocol",
     value(arg0) {
-      return callback5(arg0);
+      return outer1_14(arg0);
     }
   };
   items[2] = obj;
   return callback(MaskedLinkStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "MaskedLinkStore";
-tmp5 = new tmp5(importDefault(dependencyMap[10]), {
+tmp5 = new tmp5(require("dispatcher"), {
   MASKED_LINK_ADD_TRUSTED_DOMAIN: function handleAddTrustedDomain(url) {
     url = url.url;
     if (_isTrustedDomain(url)) {
       return false;
     } else {
-      let obj = arg1(dependencyMap[6]);
+      let obj = require(8339) /* getHostname */;
       set.add(obj.getHostname(url));
-      const Storage = arg1(dependencyMap[8]).Storage;
+      const Storage = require(587) /* Storage */.Storage;
       obj = { trustedDomains: set, trustedProtocols: set1 };
       const result = Storage.set("MaskedLinkStore", obj);
     }
@@ -157,14 +161,14 @@ tmp5 = new tmp5(importDefault(dependencyMap[10]), {
     if (_isTrustedProtocol(url)) {
       return false;
     } else {
-      let obj = arg1(dependencyMap[6]);
+      let obj = require(8339) /* getHostname */;
       set1.add(obj.getProtocol(url));
-      const Storage = arg1(dependencyMap[8]).Storage;
+      const Storage = require(587) /* Storage */.Storage;
       obj = { trustedDomains: set, trustedProtocols: set1 };
       const result = Storage.set("MaskedLinkStore", obj);
     }
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("stores/MaskedLinkStore.tsx");
+let result = set.fileFinishedImporting("stores/MaskedLinkStore.tsx");
 
 export default tmp5;

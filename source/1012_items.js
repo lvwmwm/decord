@@ -1,49 +1,51 @@
 // Module ID: 1012
-// Function ID: 11039
+// Function ID: 11040
 // Name: items
-// Dependencies: []
+// Dependencies: [1013, 1024, 1020, 1016, 1025, 1026, 1022, 1023, 1015]
 
 // Module 1012 (items)
+const require = arg1;
+let dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["ApplicationCache", "AudioTrackList"];
+const items = [0.1, 0.25];
 arg5.CLSThresholds = items;
 arg5.onCLS = function onCLS(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   if (arguments.length > 1) {
-    let closure_1 = {};
-    const obj = arg1(closure_1[0]);
-    obj.onFCP(arg1(closure_1[1]).runOnce(() => {
-      const metric = arg0(reportAllChanges[2]).initMetric("CLS", 0);
-      const reportAllChanges = metric;
-      const obj = arg0(reportAllChanges[2]);
-      const visibilityWatcher = arg0(reportAllChanges[3]).getVisibilityWatcher();
-      const obj2 = arg0(reportAllChanges[3]);
-      let closure_2 = arg0(reportAllChanges[4]).initUnique(reportAllChanges, arg0(reportAllChanges[5]).LayoutShiftManager);
+    const dependencyMap = {};
+    let obj = _require(1013);
+    obj.onFCP(_require(1024).runOnce(() => {
+      const metric = callback(1020).initMetric("CLS", 0);
+      const obj = callback(1020);
+      const visibilityWatcher = callback(1016).getVisibilityWatcher();
+      const obj2 = callback(1016);
+      let closure_2 = callback(1025).initUnique(metric, callback(1026).LayoutShiftManager);
       function handleEntries(items) {
         for (const item10003 of arg0) {
           let tmp = closure_2;
           let _processEntryResult = closure_2._processEntry(item10003);
+          continue;
         }
-        if (_sessionValue._sessionValue > metric.value) {
-          ({ _sessionValue: closure_1.value, _sessionEntries: closure_1.entries } = _sessionValue);
+        if (closure_2._sessionValue > metric.value) {
+          ({ _sessionValue: metric.value, _sessionEntries: metric.entries } = closure_2);
           bindReporterResult();
         }
       }
-      const obj4 = arg0(reportAllChanges[4]);
-      const observeResult = arg0(reportAllChanges[6]).observe("layout-shift", handleEntries);
+      const obj4 = callback(1025);
+      const observeResult = callback(1022).observe("layout-shift", handleEntries);
       if (observeResult) {
-        const obj6 = arg0(reportAllChanges[7]);
-        const bindReporterResult = obj6.bindReporter(arg0, metric, closure_2, reportAllChanges.reportAllChanges);
-        const arg0 = bindReporterResult;
+        const obj6 = callback(1023);
+        const bindReporterResult = obj6.bindReporter(callback, metric, outer1_2, metric.reportAllChanges);
+        callback = bindReporterResult;
         visibilityWatcher.onHidden(() => {
           handleEntries(observeResult.takeRecords());
           bindReporterResult(true);
         });
-        const WINDOW = arg0(reportAllChanges[8]).WINDOW;
+        const WINDOW = callback(1015).WINDOW;
         if (!tmp13) {
           const timerId = WINDOW.setTimeout(bindReporterResult);
         }
-        const tmp13 = null == WINDOW || null == WINDOW.setTimeout;
+        tmp13 = null == WINDOW || null == WINDOW.setTimeout;
       }
     }));
   }

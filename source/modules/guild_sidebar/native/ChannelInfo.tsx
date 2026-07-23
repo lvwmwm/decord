@@ -1,27 +1,39 @@
-// Module ID: 14934
-// Function ID: 112434
+// Module ID: 15050
+// Function ID: 114602
 // Name: LimitAndDurationInfo
-// Dependencies: []
+// Dependencies: [31, 6764, 1838, 3758, 4142, 4146, 653, 33, 4130, 566, 11179, 6767, 9137, 15051, 15052, 4313, 1273, 15054, 15055, 14971, 4950, 11393, 14972, 15056, 11931, 2]
 // Exports: default
 
-// Module 14934 (LimitAndDurationInfo)
+// Module 15050 (LimitAndDurationInfo)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 function LimitAndDurationInfo(channel) {
   let hasMedia;
   let hasVideo;
   let selected;
   let voiceStatesCount;
   channel = channel.channel;
-  const arg1 = channel;
   ({ voiceStatesCount, selected } = channel);
-  let obj = arg1(dependencyMap[9]);
+  let obj = channel(566);
   const items = [closure_7, closure_5];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let isGuildStageVoiceResult = channel.isGuildStageVoice();
     if (isGuildStageVoiceResult) {
-      let obj = channel(closure_2[20]);
+      let obj = channel(outer1_2[20]);
       isGuildStageVoiceResult = obj.getStageHasMedia(channel.id);
     }
-    obj = { isLocked: !closure_5.can(constants.CONNECT, channel), hasVideo: closure_7.hasVideo(channel.id), hasMedia: isGuildStageVoiceResult };
+    obj = { isLocked: !outer1_5.can(outer1_9.CONNECT, channel), hasVideo: outer1_7.hasVideo(channel.id), hasMedia: isGuildStageVoiceResult };
     return obj;
   });
   ({ hasVideo, hasMedia } = stateFromStoresObject);
@@ -39,7 +51,7 @@ function LimitAndDurationInfo(channel) {
     }
     obj.video = hasVideo;
     obj.channel = channel;
-    let tmp4Result = tmp4(arg1(dependencyMap[22]).ConnectedUserLimit, obj);
+    let tmp4Result = tmp4(channel(14972).ConnectedUserLimit, obj);
   } else {
     const obj1 = { channel };
     tmp4Result = tmp4(DurationInfo, obj1);
@@ -47,7 +59,7 @@ function LimitAndDurationInfo(channel) {
   return tmp4Result;
 }
 function DurationInfo(channel) {
-  let obj = arg1(dependencyMap[23]);
+  let obj = require(15056) /* useStartTime */;
   const startTime = obj.useStartTime(channel.channel);
   let tmp3 = null;
   if (null != startTime) {
@@ -55,23 +67,14 @@ function DurationInfo(channel) {
     obj = { start: startTime };
     obj.entry = obj;
     obj.style = tmp.activeTimestamp;
-    tmp3 = jsx(arg1(dependencyMap[24]).ActiveTimestamp, obj);
+    tmp3 = jsx(require(11931) /* ActiveTimestamp */.ActiveTimestamp, { start: startTime });
   }
   return tmp3;
 }
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const tmp3 = arg1(dependencyMap[6]);
-({ GuildFeatures: closure_8, Permissions: closure_9 } = tmp3);
-const jsx = arg1(dependencyMap[7]).jsx;
-let obj = arg1(dependencyMap[8]);
-obj = { fontFamily: tmp3.Fonts.CODE_NORMAL };
-let closure_11 = obj.createStyles({ activeTimestamp: obj });
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/guild_sidebar/native/ChannelInfo.tsx");
+({ GuildFeatures: closure_8, Permissions: closure_9 } = ME);
+_createForOfIteratorHelperLoose = { fontFamily: ME.Fonts.CODE_NORMAL, fontSize: 12, lineHeight: 16 };
+let closure_11 = _createForOfIteratorHelperLoose.createStyles({ activeTimestamp: _createForOfIteratorHelperLoose });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_sidebar/native/ChannelInfo.tsx");
 
 export default function ChannelInfo(channel) {
   let enableActivities;
@@ -85,19 +88,18 @@ export default function ChannelInfo(channel) {
   let needSubscriptionToAccess;
   let voiceStates;
   channel = channel.channel;
-  const arg1 = channel;
   ({ isChannelCollapsed, voiceStates, enableConnectedUserLimit, enableActivities, muted, isSubscriptionGated, needSubscriptionToAccess } = channel);
-  let obj = arg1(dependencyMap[9]);
-  const items = [closure_4, closure_6, closure_3];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ guild: guild.getGuild(channel.guild_id), mentionsCount: store.getMentionCount(channel.id), isMentionLowImportance: store.getIsMentionLowImportance(channel.id), isNewChannel: closure_3.shouldIndicateNewChannel(channel.guild_id, channel.id) }));
+  let obj = channel(566);
+  const items = [closure_4, closure_6, _isNativeReflectConstruct];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ guild: outer1_4.getGuild(channel.guild_id), mentionsCount: outer1_6.getMentionCount(channel.id), isMentionLowImportance: outer1_6.getIsMentionLowImportance(channel.id), isNewChannel: outer1_3.shouldIndicateNewChannel(channel.guild_id, channel.id) }));
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
-  const tmp2 = importDefault(dependencyMap[10])(channel);
-  let obj1 = arg1(dependencyMap[11]);
+  const tmp2 = importDefault(11179)(channel);
+  let obj1 = channel(6767);
   const optInEnabledForGuild = obj1.useOptInEnabledForGuild(channel.guild_id);
-  let obj2 = arg1(dependencyMap[12]);
+  let obj2 = channel(9137);
   const unreadThreadsCountForParent = obj2.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   obj = { mentionsCount, isNewChannel, postsWithUnreadsCount: unreadThreadsCountForParent, muted };
-  if (importDefault(dependencyMap[13])(obj)) {
+  if (importDefault(15051)(obj)) {
     obj = { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance };
     if (isNewChannel) {
       isNewChannel = optInEnabledForGuild;
@@ -109,7 +111,7 @@ export default function ChannelInfo(channel) {
     }
     obj.postsWithUnreadsCount = tmp28;
     obj.muted = muted;
-    return jsx(importDefault(dependencyMap[14]), obj);
+    return jsx(importDefault(15052), { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance });
   } else {
     if (null != isChannelCollapsed) {
       if (isChannelCollapsed) {
@@ -121,9 +123,9 @@ export default function ChannelInfo(channel) {
         if (null != hasItem) {
           if (hasItem) {
             if (obj5.hasStream(voiceStates)) {
-              return jsx(arg1(dependencyMap[16]).LiveTag, {});
+              return jsx(channel(1273).LiveTag, {});
             }
-            const obj5 = arg1(dependencyMap[15]);
+            obj5 = channel(4313);
           }
         }
       }
@@ -132,16 +134,16 @@ export default function ChannelInfo(channel) {
       if (enableActivities) {
         if (obj6.showChannelItemEmbeddedActivities(tmp2)) {
           obj1 = { embeddedApps: tmp2, muted };
-          return jsx(importDefault(dependencyMap[18]), obj1);
+          return jsx(importDefault(15055), { embeddedApps: tmp2, muted });
         }
-        const obj6 = arg1(dependencyMap[17]);
+        obj6 = channel(15054);
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
           obj2 = { locked: needSubscriptionToAccess };
-          return jsx(importDefault(dependencyMap[19]), obj2);
+          return jsx(importDefault(14971), { locked: needSubscriptionToAccess });
         }
       }
     }
@@ -156,7 +158,7 @@ export default function ChannelInfo(channel) {
           num3 = length;
         }
         const obj3 = { channel, voiceStatesCount: num3, selected: channel.isChannelSelected };
-        return <LimitAndDurationInfo {...obj3} />;
+        return <LimitAndDurationInfo channel={channel} voiceStatesCount={num3} selected={arg0.isChannelSelected} />;
       }
     }
     return null;

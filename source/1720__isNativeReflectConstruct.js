@@ -1,11 +1,25 @@
 // Module ID: 1720
-// Function ID: 19348
+// Function ID: 19349
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 1585, 1690, 1626]
 
 // Module 1720 (_isNativeReflectConstruct)
+import jsxProd from "jsxProd";
+import closure_3 from "isJest";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import result from "result";
+import "result";
+import { jsx } from "jsxProd";
+import isJest from "isJest";
+
 let Component;
+let closure_7;
+let closure_8;
+let closure_9;
 let createContext;
+let require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,43 +31,35 @@ function _isNativeReflectConstruct() {
 }
 function SkipEntering(children) {
   const tmp = callback4(children.shouldSkip);
-  const arg1 = tmp;
+  const require = tmp;
   const tmp2 = callback4(children.itemKey);
   if (children.itemKey !== tmp2.current) {
     ({ shouldSkip: tmp.current, itemKey: tmp2.current } = children);
   }
   const items = [tmp, children.itemKey];
   callback3(() => {
-    tmp.current = false;
+    closure_0.current = false;
   }, items);
-  return jsx(closure_11 ? context : context.Provider, { value: tmp, children: children.children });
+  return jsx(isJest ? context : context.Provider, { value: tmp, children: children.children });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-({ Children: closure_7, useEffect: closure_8, useRef: closure_9, Component, createContext } = arg1(dependencyMap[5]));
-importDefault(dependencyMap[5]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp2 = arg1(dependencyMap[5]);
-let closure_11 = arg1(dependencyMap[7]).isReact19();
+({ Children: closure_7, useEffect: closure_8, useRef: closure_9, Component, createContext } = result);
+isJest = isJest.isReact19();
 const context = createContext(null);
 
 export const SkipEnteringContext = context;
-export const LayoutAnimationConfig = (Component) => {
+export const LayoutAnimationConfig = ((Component) => {
   class LayoutAnimationConfig {
     constructor() {
       self = this;
-      tmp = closure_2(this, LayoutAnimationConfig);
-      obj = closure_5(LayoutAnimationConfig);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, LayoutAnimationConfig);
+      obj = outer1_5(LayoutAnimationConfig);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -62,16 +68,15 @@ export const LayoutAnimationConfig = (Component) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = LayoutAnimationConfig;
   callback2(LayoutAnimationConfig, Component);
   let obj = {
     key: "getMaybeWrappedChildren",
     value: function getMaybeWrappedChildren() {
-      const self = this;
-      const LayoutAnimationConfig = this;
-      if (closure_7.count(this.props.children) > 1) {
+      let self = this;
+      self = this;
+      if (outer1_7.count(this.props.children) > 1) {
         if (self.props.skipExiting) {
-          let children = closure_7.map(self.props.children, (children) => callback(self, { itemKey: self.props.itemKey, skipExiting: true, children }));
+          let children = outer1_7.map(self.props.children, (children) => outer2_10(self, { itemKey: self.props.itemKey, skipExiting: true, children }));
         }
         return children;
       }
@@ -83,13 +88,13 @@ export const LayoutAnimationConfig = (Component) => {
     key: "setShouldAnimateExiting",
     value: function setShouldAnimateExiting() {
       const self = this;
-      if (1 === closure_7.count(this.props.children)) {
-        const findNodeHandleResult = LayoutAnimationConfig(closure_1[8]).findNodeHandle(self);
+      if (1 === outer1_7.count(this.props.children)) {
+        const findNodeHandleResult = LayoutAnimationConfig(outer1_1[8]).findNodeHandle(self);
         if (findNodeHandleResult) {
-          const result = LayoutAnimationConfig(closure_1[9]).setShouldAnimateExitingForTag(findNodeHandleResult, !self.props.skipExiting);
-          const obj2 = LayoutAnimationConfig(closure_1[9]);
+          const result = LayoutAnimationConfig(outer1_1[9]).setShouldAnimateExitingForTag(findNodeHandleResult, !self.props.skipExiting);
+          const obj2 = LayoutAnimationConfig(outer1_1[9]);
         }
-        const obj = LayoutAnimationConfig(closure_1[8]);
+        const obj = LayoutAnimationConfig(outer1_1[8]);
       }
     }
   };
@@ -112,10 +117,10 @@ export const LayoutAnimationConfig = (Component) => {
       let tmp2 = maybeWrappedChildren;
       if (undefined !== this.props.skipEntering) {
         const obj = { itemKey: self.props.itemKey, shouldSkip: self.props.skipEntering, children: maybeWrappedChildren };
-        tmp2 = callback3(closure_14, obj);
+        tmp2 = outer1_10(outer1_14, obj);
       }
       return tmp2;
     }
   };
   return callback(LayoutAnimationConfig, items);
-}(Component);
+})(Component);

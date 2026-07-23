@@ -1,47 +1,53 @@
-// Module ID: 11809
-// Function ID: 91635
+// Module ID: 11819
+// Function ID: 91684
 // Name: GiftBackgroundSelectTile
-// Dependencies: []
+// Dependencies: [31, 27, 1851, 11820, 33, 11821, 11822, 11823, 11824, 11825, 11826, 11827, 11828, 11829, 4130, 689, 1212, 2262, 5085, 2]
 // Exports: default
 
-// Module 11809 (GiftBackgroundSelectTile)
-importAll(dependencyMap[0]);
-({ View: closure_3, Pressable: closure_4 } = arg1(dependencyMap[1]));
-const PremiumGiftStyles = arg1(dependencyMap[2]).PremiumGiftStyles;
-const GIFT_STYLE_DESCRIPTIONS = arg1(dependencyMap[3]).GIFT_STYLE_DESCRIPTIONS;
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let obj = { [PremiumGiftStyles.STANDARD_BOX]: importDefault(dependencyMap[5]), [PremiumGiftStyles.CAKE]: importDefault(dependencyMap[6]), [PremiumGiftStyles.CHEST]: importDefault(dependencyMap[7]), [PremiumGiftStyles.COFFEE]: importDefault(dependencyMap[8]) };
-obj = { uri: importDefault(dependencyMap[9]) };
+// Module 11819 (GiftBackgroundSelectTile)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { PremiumGiftStyles } from "GuildFeatures";
+import { GIFT_STYLE_DESCRIPTIONS } from "GIFT_STYLE_DESCRIPTIONS";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_3, Pressable: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let obj = { [PremiumGiftStyles.STANDARD_BOX]: require("registerAsset"), [PremiumGiftStyles.CAKE]: require("registerAsset"), [PremiumGiftStyles.CHEST]: require("registerAsset"), [PremiumGiftStyles.COFFEE]: require("registerAsset") };
+obj = { uri: require("metadata") };
 obj[PremiumGiftStyles.NITROWEEN_STANDARD] = obj;
 obj[PremiumGiftStyles.SNOWGLOBE] = null;
 obj[PremiumGiftStyles.BOX] = null;
 obj[PremiumGiftStyles.CUP] = null;
-obj = { uri: importDefault(dependencyMap[10]) };
+obj = { uri: require("metadata") };
 obj[PremiumGiftStyles.SEASONAL_CAKE] = obj;
-const tmp4 = arg1(dependencyMap[4]);
-obj[PremiumGiftStyles.SEASONAL_CHEST] = { uri: importDefault(dependencyMap[11]) };
-const obj1 = { uri: importDefault(dependencyMap[11]) };
-obj[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: importDefault(dependencyMap[12]) };
-const obj2 = { uri: importDefault(dependencyMap[12]) };
-obj[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: importDefault(dependencyMap[13]) };
-const obj3 = { uri: importDefault(dependencyMap[13]) };
-let closure_9 = arg1(dependencyMap[14]).createStyles((arg0) => {
+obj[PremiumGiftStyles.SEASONAL_CHEST] = { uri: require("metadata") };
+let obj1 = { uri: require("metadata") };
+obj[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: require("metadata") };
+const obj2 = { uri: require("metadata") };
+obj[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: require("metadata") };
+let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { REMEDIATION_ELEMENT_TYPES: true, "Null": true, "Null": true, marginEnd: importDefault(dependencyMap[15]).space.PX_8 };
+  obj = { width: 78, height: 44, justifyContent: "center", marginEnd: importDefault(689).space.PX_8 };
   let num = 0;
   if (0 === arg0) {
     num = 20;
   }
   obj.marginStart = num;
   obj.container = obj;
-  obj = { delete: 24, channel: 24, position: null, top: "b04e363869889767a126da0fcdcaf9c8", left: "AppleNeutralIcon", bottom: "png", right: true, borderColor: importDefault(dependencyMap[15]).colors.TEXT_BRAND, borderRadius: importDefault(dependencyMap[15]).radii.sm };
+  obj = { position: "absolute", borderColor: importDefault(689).colors.TEXT_BRAND, borderRadius: importDefault(689).radii.sm, borderWidth: 2, flex: 1, width: 78, height: 44 };
   obj.selected = obj;
-  obj.image = {};
+  obj.image = { width: 72, height: 38, alignSelf: "center" };
   return obj;
 });
-const obj7 = arg1(dependencyMap[14]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelectTile.tsx");
+const obj3 = { uri: require("metadata") };
+const result = require("GuildFeatures").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelectTile.tsx");
 
 export default function GiftBackgroundSelectTile(index) {
   let giftStyle;
@@ -50,13 +56,13 @@ export default function GiftBackgroundSelectTile(index) {
   const tmp = callback2(index.index);
   let tmp4Result = null;
   if (null != obj[giftStyle]) {
-    let obj = {};
-    const intl = arg1(dependencyMap[16]).intl;
     obj = {};
-    const intl2 = arg1(dependencyMap[16]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj = {};
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     obj.giftStyle = intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]);
-    obj.aria-label = intl.formatToPlainString(importDefault(dependencyMap[17]).+utqaz, obj);
-    obj.aria-selected = selected;
+    obj["aria-label"] = intl.formatToPlainString(importDefault(2262)["+utqaz"], obj);
+    obj["aria-selected"] = selected;
     obj.style = tmp.container;
     obj.onPress = index.onPress;
     if (selected) {
@@ -65,7 +71,7 @@ export default function GiftBackgroundSelectTile(index) {
     }
     const items = [selected, ];
     const obj1 = { resizeMode: "contain", style: tmp.image, source: tmp2 };
-    items[1] = callback(importDefault(dependencyMap[18]), obj1);
+    items[1] = callback(importDefault(5085), obj1);
     obj.children = items;
     tmp4Result = closure_7(closure_4, obj);
     const tmp4 = closure_7;

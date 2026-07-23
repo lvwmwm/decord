@@ -1,26 +1,32 @@
-// Module ID: 13705
-// Function ID: 103702
+// Module ID: 13819
+// Function ID: 105858
 // Name: FamilyCenterEmpty
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 13820, 4126, 2]
 // Exports: default
 
-// Module 13705 (FamilyCenterEmpty)
-importAll(dependencyMap[0]);
-({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp4 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createStyles({ art: { "Bool(false)": null, "Bool(false)": null }, empty: { "Null": true, "Null": true } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterEmpty.tsx");
+// Module 13819 (FamilyCenterEmpty)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ art: { marginBottom: 10, width: 243 }, empty: { display: "flex", alignItems: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterEmpty.tsx");
 
 export default function FamilyCenterEmpty(text) {
   const tmp = callback3();
   let obj = { style: tmp.empty };
-  obj = { source: importDefault(dependencyMap[4]), style: tmp.art, resizeMethod: "scale" };
+  obj = { source: importDefault(13820), style: tmp.art, resizeMethod: "scale" };
   const items = [callback(closure_4, obj), ];
-  obj = { cachedAt: "y", edpbxy: "isArray", children: text.text };
-  items[1] = callback(arg1(dependencyMap[5]).Text, obj);
+  obj = { variant: "text-sm/medium", color: "text-muted", children: text.text };
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_3, obj);
 };

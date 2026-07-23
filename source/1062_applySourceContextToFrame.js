@@ -1,26 +1,27 @@
 // Module ID: 1062
-// Function ID: 11355
+// Function ID: 11356
 // Name: applySourceContextToFrame
-// Dependencies: []
+// Dependencies: [65, 794]
 
 // Module 1062 (applySourceContextToFrame)
+import _toConsumableArray from "_toConsumableArray";
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+
 function applySourceContextToFrame(filename) {
   if (filename.filename === arg2) {
     if (filename.lineno) {
       if (arg1.length) {
-        require(dependencyMap[1]).addContextToFrame(arg1, filename, arg3);
-        const obj = require(dependencyMap[1]);
+        require(794) /* registerSpanErrorInstrumentation */.addContextToFrame(arg1, filename, arg3);
+        const obj = require(794) /* registerSpanErrorInstrumentation */;
       }
     }
   }
   return filename;
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[1]);
 
 export { applySourceContextToFrame };
-export const contextLinesIntegration = _module.defineIntegration(function _contextLinesIntegration() {
+export const contextLinesIntegration = registerSpanErrorInstrumentation.defineIntegration(function _contextLinesIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       let first = arguments[0];
@@ -29,16 +30,16 @@ export const contextLinesIntegration = _module.defineIntegration(function _conte
     if (null != first.frameContextLines) {
       num = first.frameContextLines;
     }
-    const require = num;
-    const obj = {
+    let obj = {
       name: "ContextLines",
       processEvent(exception) {
-          function addSourceContext(exception, arg1) {
-            const _document = arg1(_location[1]).GLOBAL_OBJ.document;
-            let _location = arg1(_location[1]).GLOBAL_OBJ.location;
+          (function addSourceContext(exception, arg1) {
+            let closure_0 = arg1;
+            const _document = num(outer2_1[1]).GLOBAL_OBJ.document;
+            let _location = num(outer2_1[1]).GLOBAL_OBJ.location;
             if (_location) {
-              _location = arg1(_location[1]).stripUrlQueryAndFragment(arg1(_location[1]).GLOBAL_OBJ.location.href);
-              const obj = arg1(_location[1]);
+              _location = num(outer2_1[1]).stripUrlQueryAndFragment(num(outer2_1[1]).GLOBAL_OBJ.location.href);
+              const obj = num(outer2_1[1]);
             }
             if (_document) {
               if (_location) {
@@ -50,14 +51,14 @@ export const contextLinesIntegration = _module.defineIntegration(function _conte
                 if (null != values) {
                   if (values.length) {
                     if (_document.documentElement.innerHTML) {
-                      const items = ["TEXT_TRUNCATED", "MAYBE_JSON_TRUNCATED"];
-                      const callback = items.concat(callback(str.split("\n")), []);
+                      const items = ["<!DOCTYPE html>", "<html>"];
+                      let closure_2 = items.concat(outer2_2(str.split("\n")), ["</html>"]);
                       const item = values.forEach((stacktrace) => {
                         stacktrace = stacktrace.stacktrace;
                         if (tmp) {
                           const frames = stacktrace.frames;
                           stacktrace.frames = frames.map((arg0) => {
-                            callback(arg0, closure_2, closure_1, closure_0);
+                            outer4_3(arg0, outer1_2, outer1_1, outer1_0);
                             return arg0;
                           });
                         }
@@ -72,7 +73,7 @@ export const contextLinesIntegration = _module.defineIntegration(function _conte
               }
             }
             return exception;
-          }(exception, num);
+          })(exception, num);
           return exception;
         }
     };

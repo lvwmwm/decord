@@ -1,13 +1,13 @@
 // Module ID: 4497
-// Function ID: 39667
+// Function ID: 39671
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [0, 4294967295]
+// Dependencies: [27, 42]
 
 // Module 4497 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "__exportStarResult1";
+import { codegenNativeComponent } from "get ActivityIndicator";
+import get from "get";
 
-const obj = { uiViewClassName: "RNSScreenContainer", validAttributes: {} };
-const _module = require(dependencyMap[1]);
+const obj = { uiViewClassName: "RNSScreenStackHeaderSubview", validAttributes: { type: true, hidesSharedBackground: true, synchronousShadowStateUpdatesEnabled: true } };
 
-export default _module.get("RNSScreenContainer", () => obj);
+export default get.get("RNSScreenStackHeaderSubview", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

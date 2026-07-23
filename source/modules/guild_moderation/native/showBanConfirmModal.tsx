@@ -1,15 +1,14 @@
-// Module ID: 10992
-// Function ID: 85548
+// Module ID: 11002
+// Function ID: 85598
 // Name: showBanConfirmModal
-// Dependencies: []
+// Dependencies: [4098, 4337, 11003, 1934, 2]
 // Exports: default
 
-// Module 10992 (showBanConfirmModal)
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/guild_moderation/native/showBanConfirmModal.tsx");
+// Module 11002 (showBanConfirmModal)
+const result = require("BanConfirmModal").fileFinishedImporting("modules/guild_moderation/native/showBanConfirmModal.tsx");
 
-export default function showBanConfirmModal(closure_2) {
-  importDefault(dependencyMap[0]).hideActionSheet();
-  const obj = importDefault(dependencyMap[0]);
-  importDefault(dependencyMap[1]).pushLazy(require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), closure_2);
+export default function showBanConfirmModal(merged) {
+  importDefault(4098).hideActionSheet();
+  const obj = importDefault(4098);
+  importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(11003, dependencyMap.paths), merged);
 };

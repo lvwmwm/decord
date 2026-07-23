@@ -1,20 +1,24 @@
-// Module ID: 13318
-// Function ID: 101163
+// Module ID: 13432
+// Function ID: 103319
 // Name: items
-// Dependencies: []
+// Dependencies: [5, 4578, 1849, 4033, 482, 8310, 5733, 4585, 10499, 5768, 5739, 10496, 5770, 5484, 2]
 
-// Module 13318 (items)
+// Module 13432 (items)
+import set from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
+import sum from "sum";
+
 let RPCCommands;
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[3]);
-const RPC_SCOPE_CONFIG = tmp2.RPC_SCOPE_CONFIG;
-({ RPCCommands, RPCErrors: closure_6 } = arg1(dependencyMap[4]));
+let closure_6;
+const require = arg1;
+RPC_SCOPE_CONFIG = RPC_SCOPE_CONFIG.RPC_SCOPE_CONFIG;
+({ RPCCommands, RPCErrors: closure_6 } = sum);
 let obj = {};
 obj = {};
 obj = {};
-const items = [arg1(dependencyMap[5]).OAuth2Scopes.RPC, tmp2.RPC_LOCAL_SCOPE];
+const items = [require("set").OAuth2Scopes.RPC, RPC_SCOPE_CONFIG.RPC_LOCAL_SCOPE];
 obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj.scope = obj;
 obj.handler = function handler() {
@@ -24,21 +28,22 @@ obj.handler = function handler() {
 obj[RPCCommands.GET_SOUNDBOARD_SOUNDS] = obj;
 const obj1 = {};
 const obj2 = {};
-const items1 = [arg1(dependencyMap[5]).OAuth2Scopes.RPC, arg1(dependencyMap[5]).OAuth2Scopes.RPC_VOICE_WRITE];
+const items1 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_VOICE_WRITE];
 obj2[RPC_SCOPE_CONFIG.ALL] = items1;
 obj1.scope = obj2;
 obj1.validation = function validation(string) {
-  let obj = importDefault(dependencyMap[8])(string);
+  let obj = importDefault(10499)(string);
   obj = { guild_id: string.string(), sound_id: string.string() };
   return obj.required().keys(obj);
 };
 obj1.handler = function handler(args) {
-  ({ guild_id: closure_0, sound_id: closure_1 } = args.args);
+  let importDefault;
+  let require;
+  ({ guild_id: require, sound_id: importDefault } = args.args);
   // CreateGeneratorClosureLongIndex (0x67)
   return callback(tmp)();
 };
 obj[RPCCommands.PLAY_SOUNDBOARD_SOUND] = obj1;
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/rpc/server/commands/soundboard.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/server/commands/soundboard.tsx");
 
 export default obj;

@@ -1,9 +1,10 @@
 // Module ID: 1096
-// Function ID: 12559
+// Function ID: 12560
 // Name: DEFAULT_BUNDLE_NAME
-// Dependencies: []
+// Dependencies: [27, 1097]
 
 // Module 1096 (DEFAULT_BUNDLE_NAME)
-const Platform = require(dependencyMap[0]).Platform;
+import { Platform } from "get ActivityIndicator";
 
-export const DEFAULT_BUNDLE_NAME = require(dependencyMap[1]).ANDROID_DEFAULT_BUNDLE_NAME;
+
+export const DEFAULT_BUNDLE_NAME = require("ANDROID_DEFAULT_BUNDLE_NAME").ANDROID_DEFAULT_BUNDLE_NAME;

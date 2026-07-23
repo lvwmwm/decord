@@ -1,12 +1,12 @@
-// Module ID: 9489
-// Function ID: 73964
+// Module ID: 9496
+// Function ID: 74005
 // Name: enforcing
-// Dependencies: []
+// Dependencies: [27, 2]
 
-// Module 9489 (enforcing)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+// Module 9496 (enforcing)
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 const enforcing = TurboModuleRegistry.getEnforcing("NativeCommandClipboardModule");
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeCommandClipboardModule.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeCommandClipboardModule.tsx");
 
 export default enforcing;

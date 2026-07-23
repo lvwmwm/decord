@@ -1,8 +1,8 @@
 // Module ID: 233
 // Function ID: 3238
 // Name: DialogManagerAndroid
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 233 (DialogManagerAndroid)
 
-export default importAll(dependencyMap[0]).get("DialogManagerAndroid");
+export default require("requireModule").get("DialogManagerAndroid");

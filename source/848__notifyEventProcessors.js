@@ -1,22 +1,25 @@
 // Module ID: 848
-// Function ID: 9460
+// Function ID: 9461
 // Name: _notifyEventProcessors
-// Dependencies: []
+// Dependencies: [804, 849, 800, 801]
 
 // Module 848 (_notifyEventProcessors)
-function _notifyEventProcessors(tmpResult, arg1, arg2, arg3) {
-  const arg6 = arg2;
+const require = arg1;
+let dependencyMap = arg6;
+function _notifyEventProcessors(arg0, arg1, arg2, arg3) {
+  const _require = arg1;
+  const dependencyMap = arg2;
   const _notifyEventProcessors = arg3;
-  if (tmpResult) {
+  if (arg0) {
     if (tmp) {
       const _Object = Object;
-      tmpResult = tmp(Object.assign({}, tmpResult), arg1);
-      let DEBUG_BUILD = arg1(arg6[2]).DEBUG_BUILD;
+      const tmpResult = tmp(Object.assign({}, arg0), arg1);
+      let DEBUG_BUILD = _require(800).DEBUG_BUILD;
       if (DEBUG_BUILD) {
         DEBUG_BUILD = null === tmpResult;
       }
       if (DEBUG_BUILD) {
-        const debug = arg1(arg6[3]).debug;
+        const debug = _require(801).debug;
         let str = tmp.id;
         if (!str) {
           str = "?";
@@ -25,17 +28,17 @@ function _notifyEventProcessors(tmpResult, arg1, arg2, arg3) {
         debug.log("Event processor \"" + str + "\" dropped event");
       }
       if (obj.isThenable(tmpResult)) {
-        let nextPromise = tmpResult.then((arg0) => arg3(arg0, arg1, arg2, arg3 + 1));
+        let nextPromise = tmpResult.then((arg0) => callback(arg0, closure_0, closure_1, callback + 1));
       } else {
         nextPromise = _notifyEventProcessors(tmpResult, arg1, arg2, arg3 + 1);
       }
       return nextPromise;
     }
   }
-  return tmpResult;
+  return arg0;
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-arg5.notifyEventProcessors = function notifyEventProcessors(arg0, tmpResult) {
+arg5.notifyEventProcessors = function notifyEventProcessors(arg0, arg1, arg2) {
   let num = 0;
   if (arguments.length > 3) {
     num = 0;
@@ -43,12 +46,12 @@ arg5.notifyEventProcessors = function notifyEventProcessors(arg0, tmpResult) {
       num = arguments[3];
     }
   }
-  const tmp = _notifyEventProcessors(tmpResult, arg2, arg0, num);
+  const tmp = _notifyEventProcessors(arg1, arg2, arg0, num);
   if (obj.isThenable(tmp)) {
     let resolvedSyncPromiseResult = tmp;
   } else {
-    resolvedSyncPromiseResult = tmpResult(arg6[1]).resolvedSyncPromise(tmp);
-    const obj2 = tmpResult(arg6[1]);
+    resolvedSyncPromiseResult = require(849) /* SyncPromise */.resolvedSyncPromise(tmp);
+    const obj2 = require(849) /* SyncPromise */;
   }
   return resolvedSyncPromiseResult;
 };

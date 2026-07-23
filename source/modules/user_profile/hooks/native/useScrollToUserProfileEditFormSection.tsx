@@ -1,27 +1,28 @@
-// Module ID: 13464
-// Function ID: 102221
+// Module ID: 13578
+// Function ID: 104377
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 9783, 566, 2]
 // Exports: default
 
-// Module 13464 (useScrollToUserProfileEditFormSection)
-let closure_2 = importAll(dependencyMap[0]);
-const findNodeHandle = arg1(dependencyMap[1]).findNodeHandle;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
+// Module 13578 (useScrollToUserProfileEditFormSection)
+import result from "result";
+import { findNodeHandle } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import zustandStore from "zustandStore";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");
 
 export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const ref = React.useRef({});
-  const React = ref;
-  const items = [closure_4];
-  let closure_3 = arg1(dependencyMap[4]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const effect = React.useEffect(() => {
-    let tmp = null != arg1;
+  ref = ref.useRef({});
+  const items = [_isNativeReflectConstruct];
+  let closure_3 = _require(566).useStateFromStores(items, () => outer1_4.useReducedMotion);
+  const effect = ref.useEffect(() => {
+    let tmp = null != closure_1;
     if (tmp) {
-      const current = ref.current;
+      let current = ref.current;
       let tmp3;
       if (null != current) {
         tmp3 = current[closure_1];
@@ -31,20 +32,20 @@ export default function useScrollToUserProfileEditFormSection(arg0, arg1) {
     if (tmp) {
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        let obj = ref2.current[closure_1];
-        const tmp = callback(ref.current);
+        let obj = outer1_2.current[outer1_1];
+        const tmp = callback(outer1_0.current);
         if (null != tmp) {
           if (null != obj) {
             obj.measureLayout(tmp, (arg0, arg1) => {
-              const current = ref.current;
+              const current = outer2_0.current;
               if (null != current) {
-                const obj = { x: arg0, y: arg1, animated: !closure_3 };
+                const obj = { x: arg0, y: arg1, animated: !outer2_3 };
                 current.scrollTo(obj);
               }
             });
           }
           obj = { scrollPosition: null };
-          state.setState(obj);
+          outer2_5.setState(obj);
         }
       }, 0);
     }

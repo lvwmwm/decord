@@ -1,37 +1,37 @@
-// Module ID: 15485
-// Function ID: 118119
-// Dependencies: []
+// Module ID: 15602
+// Function ID: 120293
+// Name: dispatcher
+// Dependencies: [686, 2]
 
-// Module 15485
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("actions/PermissionActionCreators.tsx");
+// Module 15602 (dispatcher)
+const result = require("set").fileFinishedImporting("actions/PermissionActionCreators.tsx");
 
 export default {
   clearVADWarning() {
-    importDefault(dependencyMap[0]).dispatch({ type: "PERMISSION_CLEAR_VAD_WARNING" });
+    importDefault(686).dispatch({ type: "PERMISSION_CLEAR_VAD_WARNING" });
   },
   clearSuppressWarning() {
     let flag = arg0;
     if (arg0 === undefined) {
       flag = false;
     }
-    let obj = importDefault(dependencyMap[0]);
+    let obj = importDefault(686);
     obj = { type: "PERMISSION_CLEAR_SUPPRESS_WARNING", forever: flag };
     obj.dispatch(obj);
   },
   clearPTTAdminWarning() {
-    importDefault(dependencyMap[0]).dispatch({ type: "PERMISSION_CLEAR_PTT_ADMIN_WARNING" });
+    importDefault(686).dispatch({ type: "PERMISSION_CLEAR_PTT_ADMIN_WARNING" });
   },
   requestElevatedProcess(pid) {
-    let obj = importDefault(dependencyMap[0]);
+    let obj = importDefault(686);
     obj = { type: "PERMISSION_REQUEST_ELEVATED_PROCESS", pid };
     obj.dispatch(obj);
   },
   clearElevatedProcess() {
-    importDefault(dependencyMap[0]).dispatch({ type: "PERMISSION_CLEAR_ELEVATED_PROCESS" });
+    importDefault(686).dispatch({ type: "PERMISSION_CLEAR_ELEVATED_PROCESS" });
   },
   continueNonelevatedProcess(pid) {
-    let obj = importDefault(dependencyMap[0]);
+    let obj = importDefault(686);
     obj = { type: "PERMISSION_CONTINUE_NONELEVATED_PROCESS", pid };
     obj.dispatch(obj);
   }

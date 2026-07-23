@@ -1,10 +1,20 @@
-// Module ID: 11119
-// Function ID: 86563
+// Module ID: 11129
+// Function ID: 86613
 // Name: ForumPostUsername
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 11125, 33, 4130, 9137, 1358, 10849, 11130, 566, 7650, 1273, 4126, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 11119 (ForumPostUsername)
+// Module 11129 (ForumPostUsername)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { useForumChannelStore } from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function ForumPostUsername(arg0) {
   let authorColor;
   let authorColors;
@@ -20,13 +30,13 @@ function ForumPostUsername(arg0) {
   ({ containerStyle, roleDotStyle, textStyle, suffix, hasUnreads } = arg0);
   const tmp = callback2();
   let num = 158;
-  if (useForumChannelStore({ thread }.thread.parent_id).layoutType === arg1(dependencyMap[7]).ForumLayout.GRID) {
+  if (useForumChannelStore({ thread }.thread.parent_id).layoutType === require(1358) /* set */.ForumLayout.GRID) {
     num = 72;
   }
-  const diff = importDefault(dependencyMap[8])() - arg1(dependencyMap[9]).GRID_HORIZONTAL_PADDING - num;
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
+  const diff = importDefault(10849)() - require(11130) /* GIFIcon */.GRID_HORIZONTAL_PADDING - num;
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.roleStyle);
   if ("username" === stateFromStores) {
     if (null != authorColor) {
       obj = { color: authorColor };
@@ -36,9 +46,9 @@ function ForumPostUsername(arg0) {
     } else {
       obj = { opacity: 0.8 };
     }
-    let obj3 = arg1(dependencyMap[11]);
+    let obj3 = require(7650) /* processColorStringsInternal */;
     const processColorStringsArray = obj3.useProcessColorStringsArray(authorColors);
-    const tmp10 = arg1(dependencyMap[11]);
+    const tmp10 = require(7650) /* processColorStringsInternal */;
     let tmp12;
     const useIsRoleStyleAndRoleColorsEligibleForERC = tmp10.useIsRoleStyleAndRoleColorsEligibleForERC;
     if (null != authorId) {
@@ -59,11 +69,11 @@ function ForumPostUsername(arg0) {
         const items2 = [tmp.roleDotContainer, roleDotStyle];
         obj3.style = items2;
         const obj4 = { size: "small", color: authorColor, colors: authorColors };
-        obj3.children = callback(arg1(dependencyMap[12]).RoleDot, obj4);
+        obj3.children = callback(require(1273) /* Button */.RoleDot, obj4);
         tmp23 = callback(View, obj3);
       }
       const items3 = [tmp23, ];
-      const obj5 = { 276823: true, 285451: true, -1230751656: true, 1570975106: true };
+      const obj5 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", gradientColors: null, lineClamp: 1 };
       let tmp32;
       if (tmp17) {
         tmp32 = processColorStringsArray;
@@ -73,7 +83,7 @@ function ForumPostUsername(arg0) {
       obj5.style = items4;
       const items5 = [authorName, suffix];
       obj5.children = items5;
-      items3[1] = closure_7(arg1(dependencyMap[13]).Text, obj5);
+      items3[1] = closure_7(require(4126) /* Text */.Text, obj5);
       obj1.children = items3;
       tmp19Result = closure_7(View, obj1);
       const tmp19 = closure_7;
@@ -83,15 +93,9 @@ function ForumPostUsername(arg0) {
     return tmp19Result;
   }
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const useForumChannelStore = arg1(dependencyMap[3]).useForumChannelStore;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ authorContainer: { 419998037: "content", -1318619413: "Array", 1639156690: "isArray", -936160966: "isArray" }, roleDotContainer: {}, authorName: { "Bool(true)": true, "Bool(true)": true } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/forums/native/posts/ForumPostUsername.tsx");
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ authorContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center", marginEnd: 8 }, roleDotContainer: { alignItems: "center", justifyContent: "center", marginEnd: 2, marginBottom: 4 }, authorName: { overflow: "hidden", flexWrap: "nowrap" } });
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forums/native/posts/ForumPostUsername.tsx");
 
 export const ForumPostAuthor = function ForumPostAuthor(thread) {
   let author;
@@ -103,7 +107,7 @@ export const ForumPostAuthor = function ForumPostAuthor(thread) {
   let user;
   thread = thread.thread;
   ({ hasUnreads, suffix, containerStyle, roleDotStyle, textStyle } = thread);
-  let obj = arg1(dependencyMap[6]);
+  let obj = require(9137) /* sortForumPostReactionsByPopularityDesc */;
   const forumPostAuthor = obj.useForumPostAuthor(thread);
   ({ user, author } = forumPostAuthor);
   let nick;
@@ -157,7 +161,7 @@ export const ForumPostMessageAuthor = function ForumPostMessageAuthor(thread) {
   let textStyle;
   thread = thread.thread;
   ({ message, hasUnreads, suffix, containerStyle, roleDotStyle, textStyle } = thread);
-  let obj = arg1(dependencyMap[6]);
+  let obj = require(9137) /* sortForumPostReactionsByPopularityDesc */;
   const forumPostMessageAuthor = obj.useForumPostMessageAuthor(message, thread);
   const user = forumPostMessageAuthor.user;
   obj = { thread };

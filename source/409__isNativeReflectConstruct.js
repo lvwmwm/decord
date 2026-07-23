@@ -1,9 +1,18 @@
 // Module ID: 409
 // Function ID: 5812
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 410]
 
 // Module 409 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import jsxProd from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,20 +22,13 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const jsx = arg1(dependencyMap[7]).jsx;
+let closure_3 = ["tintColor", "titleColor", "title"];
 
-export default (Component) => {
+export default ((Component) => {
   class RefreshControl {
     constructor() {
       self = this;
-      tmp = closure_5(this, RefreshControl);
+      tmp = outer1_5(this, apply);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -34,19 +36,19 @@ export default (Component) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_8(RefreshControl);
-      tmp3 = closure_7;
-      if (closure_11()) {
+      obj = outer1_8(apply);
+      tmp3 = outer1_7;
+      if (outer1_11()) {
         if (!combined) {
           combined = [];
         }
-        tmp5 = closure_8;
-        constructResult = Reflect.construct(obj, combined, closure_8(self).constructor);
+        tmp5 = outer1_8;
+        constructResult = Reflect.construct(obj, combined, outer1_8(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
       tmp3Result = tmp3(self, constructResult);
-      RefreshControl = tmp3Result;
+      apply = tmp3Result;
       tmp3Result._lastNativeRefreshing = false;
       tmp3Result._onRefresh = () => {
         tmp3Result._lastNativeRefreshing = true;
@@ -57,12 +59,11 @@ export default (Component) => {
         tmp3Result.forceUpdate();
       };
       tmp3Result._setNativeRef = (_nativeRef) => {
-        tmp3Result._nativeRef = _nativeRef;
+        closure_0._nativeRef = _nativeRef;
       };
       return tmp3Result;
     }
   }
-  const arg1 = RefreshControl;
   callback2(RefreshControl, Component);
   let obj = {
     key: "componentDidMount",
@@ -70,7 +71,7 @@ export default (Component) => {
       this._lastNativeRefreshing = this.props.refreshing;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "componentDidUpdate",
     value: function componentDidUpdate(refreshing) {
@@ -79,11 +80,11 @@ export default (Component) => {
         self._lastNativeRefreshing = self.props.refreshing;
       } else {
         if (tmp) {
-          const Commands = RefreshControl(closure_2[8]).Commands;
+          const Commands = RefreshControl(outer1_2[8]).Commands;
           Commands.setNativeRefreshing(self._nativeRef, self.props.refreshing);
           self._lastNativeRefreshing = self.props.refreshing;
         }
-        const tmp = self.props.refreshing !== self._lastNativeRefreshing && self._nativeRef;
+        tmp = self.props.refreshing !== self._lastNativeRefreshing && self._nativeRef;
       }
     }
   };
@@ -97,10 +98,10 @@ export default (Component) => {
       const props = this.props;
       ({ tintColor, titleColor, title } = props);
       const obj = { ref: this._setNativeRef, onRefresh: this._onRefresh };
-      const tmp = callback2(props, closure_3);
-      return callback5(callback(closure_2[8]), Object.assign({}, tmp, obj));
+      const tmp = outer1_4(props, outer1_3);
+      return outer1_10(outer1_1(outer1_2[8]), Object.assign({}, tmp, obj));
     }
   };
   items[2] = obj;
   return callback(RefreshControl, items);
-}(importAll(dependencyMap[6]).Component);
+})(require("result").Component);

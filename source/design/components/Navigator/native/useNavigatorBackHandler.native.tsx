@@ -1,13 +1,15 @@
-// Module ID: 9103
-// Function ID: 71336
+// Module ID: 9110
+// Function ID: 71377
 // Name: useNavigatorBackHandler
-// Dependencies: []
+// Dependencies: [31, 1456, 477, 2]
 // Exports: default
 
-// Module 9103 (useNavigatorBackHandler)
-let closure_2 = importAll(dependencyMap[0]);
+// Module 9110 (useNavigatorBackHandler)
+import result from "result";
+
+const require = arg1;
 let closure_3 = {};
-const result = arg1(dependencyMap[3]).fileFinishedImporting("design/components/Navigator/native/useNavigatorBackHandler.native.tsx");
+const result = require("set").fileFinishedImporting("design/components/Navigator/native/useNavigatorBackHandler.native.tsx");
 
 export default function useNavigatorBackHandler() {
   let tmp = arg0;
@@ -15,11 +17,9 @@ export default function useNavigatorBackHandler() {
     tmp = closure_3;
   }
   const onBeforeGoBack = tmp.onBeforeGoBack;
-  const arg1 = onBeforeGoBack;
-  let dependencyMap;
+  let navigation;
   let React;
-  const navigation = arg1(dependencyMap[1]).useNavigation();
-  dependencyMap = navigation;
+  navigation = onBeforeGoBack(navigation[1]).useNavigation();
   React = React.useRef(true);
   const items = [navigation];
   const items1 = [navigation, onBeforeGoBack];
@@ -28,31 +28,32 @@ export default function useNavigatorBackHandler() {
     if (arg0 === undefined) {
       flag = false;
     }
-    closure_2.current = flag;
+    result.current = flag;
     navigation.goBack();
   }, items);
   const effect = React.useEffect(() => navigation.addListener("beforeRemove", (data) => {
-    if (ref.current) {
+    let closure_0 = data;
+    if (outer1_2.current) {
       if ("POP" === data.data.action.type) {
-        let obj = data(closure_1[2]);
+        let obj = onBeforeGoBack(navigation[2]);
         if (obj.isIOS()) {
-          if (null != data) {
+          if (null != outer1_0) {
             obj = { preventable: false };
-            data(obj);
+            outer1_0(obj);
           }
         }
       }
-      if (null != data) {
+      if (null != outer1_0) {
         obj = {
           preventable: true,
           preventDefault() {
-                return arg0.preventDefault();
+                return data.preventDefault();
               },
           goBack() {
-                return navigation.goBack();
+                return outer2_1.goBack();
               }
         };
-        data(obj);
+        outer1_0(obj);
       }
     }
   }), items1);

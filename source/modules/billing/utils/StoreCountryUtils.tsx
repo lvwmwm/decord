@@ -1,12 +1,11 @@
 // Module ID: 1871
-// Function ID: 20860
+// Function ID: 20861
 // Name: parseStoreCountry
-// Dependencies: []
+// Dependencies: [2]
 // Exports: parseStoreCountry
 
 // Module 1871 (parseStoreCountry)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/billing/utils/StoreCountryUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/billing/utils/StoreCountryUtils.tsx");
 
 export const parseStoreCountry = function parseStoreCountry(storeCountry) {
   let set_at;

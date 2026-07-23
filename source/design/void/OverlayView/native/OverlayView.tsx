@@ -1,25 +1,27 @@
-// Module ID: 4473
-// Function ID: 39555
+// Module ID: 4477
+// Function ID: 39587
 // Name: View
-// Dependencies: []
+// Dependencies: [31, 27, 33, 477, 4478, 4512, 2]
 // Exports: TransitionGroupOverlayView
 
-// Module 4473 (View)
-importAll(dependencyMap[0]);
-const tmp3 = arg1(dependencyMap[1]);
-let View = tmp3.View;
-const StyleSheet = tmp3.StyleSheet;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 4477 (View)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import set from "set";
+import set from "set";
+import set from "jsxProd";
+
+let View = get_ActivityIndicator.View;
+const StyleSheet = get_ActivityIndicator.StyleSheet;
 let FullWindowOverlay = View;
-if (obj.isIOS()) {
-  FullWindowOverlay = arg1(dependencyMap[4]).FullWindowOverlay;
+if (set.isIOS()) {
+  FullWindowOverlay = require("enableScreens").FullWindowOverlay;
 }
-const obj = arg1(dependencyMap[3]);
-if (obj2.isIOS()) {
-  View = importDefault(dependencyMap[5]);
+if (set.isIOS()) {
+  View = require("__INTERNAL_VIEW_CONFIG");
 }
-const obj2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("design/void/OverlayView/native/OverlayView.tsx");
+const result = set.fileFinishedImporting("design/void/OverlayView/native/OverlayView.tsx");
 
 export default FullWindowOverlay;
 export const TransitionGroupOverlayView = function TransitionGroupOverlayView(children) {
@@ -35,8 +37,8 @@ export const TransitionGroupOverlayView = function TransitionGroupOverlayView(ch
       obj = {};
       const merged1 = Object.assign(merged);
       obj["children"] = children;
-      obj.children = <View {...obj} />;
-      tmp3 = <FullWindowOverlay {...obj} />;
+      obj.children = <View />;
+      tmp3 = <FullWindowOverlay />;
     }
   }
   return tmp3;

@@ -1,18 +1,18 @@
 // Module ID: 348
 // Function ID: 5178
 // Name: set
-// Dependencies: []
+// Dependencies: [349, 352, 79, 48, 44, 101, 209]
 
 // Module 348 (set)
-if (null != importDefault(dependencyMap[0])) {
-  let importDefaultResult = importDefault(dependencyMap[0]);
+if (null != require("shouldUseTurboAnimatedModule")) {
+  let importDefaultResult = require("shouldUseTurboAnimatedModule");
 } else {
-  importDefaultResult = importDefault(dependencyMap[1]);
+  importDefaultResult = require("shouldUseTurboAnimatedModule");
 }
-let closure_5 = 1;
-let closure_6 = 1;
+let c5 = 1;
+let c6 = 1;
 const set = new Set();
-let closure_8 = false;
+let c8 = false;
 let closure_9 = [];
 let closure_10 = [];
 let prop;
@@ -21,165 +21,164 @@ if (null != importDefaultResult) {
 }
 let result = null != prop;
 if (result) {
-  result = importAll(dependencyMap[2]).animatedShouldUseSingleOp();
-  const importAllResult = importAll(dependencyMap[2]);
+  result = require("javaScriptFlagGetter").animatedShouldUseSingleOp();
+  const importAllResult = require("javaScriptFlagGetter");
 }
-let closure_12 = null;
+let c12 = null;
 let closure_13 = {};
 let closure_14 = {};
-let closure_15 = null;
-let closure_16 = null;
-let result1 = importAll(dependencyMap[2]).animatedShouldSignalBatch();
+let c15 = null;
+let c16 = null;
+let result1 = require("javaScriptFlagGetter").animatedShouldSignalBatch();
 if (!result1) {
-  result1 = importAll(dependencyMap[2]).cxxNativeAnimatedEnabled();
-  const importAllResult2 = importAll(dependencyMap[2]);
+  result1 = require("javaScriptFlagGetter").cxxNativeAnimatedEnabled();
+  const importAllResult2 = require("javaScriptFlagGetter");
 }
-let closure_18 = function createNativeOperations() {
-  const items = [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000003352612121774424, -0.00009304311882733125, 1628076733573683000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 14571980381412470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007632501635457862, -63043016858028190000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 20134468210428378000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022612443736291424, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004295894630686911, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000021594130998962094, 20985255467096936000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002063392061561748, 14865723551822496000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 23139237674881053000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000038398249596431946, -12508643297499527000, 13681865077383645000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008114566910268794, -0.000000000000000000000000000000000000000000000000000000000000000000000000000000002056933789717559, -3397767936739963000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.00000000000000010304821132308748];
-  const importDefault = items;
-  const obj = {};
-  const importAll = obj;
-  if (result) {
+let closure_18 = (function createNativeOperations() {
+  let items = ["createAnimatedNode", "updateAnimatedNodeConfig", "getValue", "startListeningToAnimatedNodeValue", "stopListeningToAnimatedNodeValue", "connectAnimatedNodes", "disconnectAnimatedNodes", "startAnimatingNode", "stopAnimation", "setAnimatedNodeValue", "setAnimatedNodeOffset", "flattenAnimatedNodeOffset", "extractAnimatedNodeOffset", "connectAnimatedNodeToView", "disconnectAnimatedNodeFromView", "restoreDefaultValues", "dropAnimatedNode", "addAnimatedEventToView", "removeAnimatedEventFromView", "addListener", "removeListener"];
+  let obj = {};
+  if (closure_11) {
     let num2 = 0;
-    let closure_2 = 0;
+    let c2 = 0;
     if (0 < items.length) {
       do {
-        let tmp2 = function _loop() {
-          let closure_0 = closure_2 + 1;
-          obj[closure_0[closure_2]] = () => {
+        let tmp2 = (function _loop() {
+          let items = c2 + 1;
+          obj[items[c2]] = () => {
             const length = arguments.length;
             const array = new Array(length);
             for (let num = 0; num < length; num = num + 1) {
               array[num] = arguments[num];
             }
-            const push = navigation.push;
+            const push = outer2_10.push;
             const items = [closure_0];
-            push.apply(navigation, items.concat(array));
-            if (closure_17) {
+            push.apply(outer2_10, items.concat(array));
+            if (outer2_17) {
               const _clearImmediate = clearImmediate;
-              clearImmediate(immediate);
+              clearImmediate(outer2_12);
               const _setImmediate = setImmediate;
-              const immediate = setImmediate(flushQueue.flushQueue);
+              outer2_12 = setImmediate(outer2_19.flushQueue);
             }
           };
-        }();
+        })();
         num2 = num2 + 1;
-        closure_2 = num2;
+        c2 = num2;
       } while (num2 < length2);
     }
   } else {
     let num = 0;
-    let closure_3 = 0;
+    let c3 = 0;
     if (0 < items.length) {
       do {
-        let tmp = function _loop2() {
+        let tmp = (function _loop2() {
           const items = tmp;
-          obj[items[closure_3]] = () => {
+          obj[items[c3]] = () => {
             const length = arguments.length;
             const array = new Array(length);
             for (let num = 0; num < length; num = num + 1) {
               array[num] = arguments[num];
             }
-            const obj = array(closure_2[3])(closure_4)[closure_0];
-            if (!closure_8) {
-              if (0 === arr.length) {
-                if (closure_17) {
-                  let arr = arr.push(() => obj.apply(undefined, array));
+            const obj = items(table[3])(outer2_4)[array];
+            if (!outer2_8) {
+              if (0 === outer2_9.length) {
+                if (outer2_17) {
+                  outer2_9.push(() => obj.apply(undefined, array));
                   const _clearImmediate = clearImmediate;
-                  clearImmediate(immediate);
+                  clearImmediate(outer2_12);
                   const _setImmediate = setImmediate;
-                  const immediate = setImmediate(flushQueue.flushQueue);
+                  outer2_12 = setImmediate(outer2_19.flushQueue);
                 } else {
                   obj.apply(undefined, array);
                 }
               }
             }
-            arr = arr.push(() => obj.apply(undefined, array));
+            outer2_9.push(() => obj.apply(undefined, array));
           };
-        }();
+        })();
         num = num + 1;
-        closure_3 = num;
+        c3 = num;
       } while (num < length);
     }
   }
   return obj;
-}();
+})();
 let obj = {
-  getValue: result ? (arg0, arg1) => {
+  getValue: result ? ((arg0, arg1) => {
     if (arg1) {
       closure_13[arg0] = arg1;
     }
     const value = store.getValue(arg0);
-  } : (arg0, arg1) => {
+  }) : ((arg0, arg1) => {
     const value = store.getValue(arg0, arg1);
-  },
+  }),
   setWaitingForIdentifier(combined) {
     if (!result1) {
       set.add(combined);
-      let closure_8 = true;
-      const obj = importAll(dependencyMap[2]);
+      let c8 = true;
+      const obj = importAll(79);
       if (tmp6) {
         const _clearImmediate = clearImmediate;
-        clearImmediate(closure_12);
+        clearImmediate(c12);
       }
-      const tmp6 = importAll(dependencyMap[2]).animatedShouldDebounceQueueFlush() && closure_12;
+      tmp6 = importAll(79).animatedShouldDebounceQueueFlush() && c12;
     }
   },
   unsetWaitingForIdentifier(combined) {
     if (!result1) {
       set.delete(combined);
       if (0 === set.size) {
-        let closure_8 = false;
+        let c8 = false;
         obj.disableQueue();
       }
     }
   },
   disableQueue() {
-    importDefault(dependencyMap[4])(importDefaultResult, "Native animated module is not available");
-    const obj = importAll(dependencyMap[2]);
+    importDefault(44)(closure_4, "Native animated module is not available");
+    const obj = importAll(79);
     if (obj.animatedShouldDebounceQueueFlush()) {
       const _clearImmediate = clearImmediate;
       clearImmediate(immediate);
       const _setImmediate = setImmediate;
-      const immediate = setImmediate(obj.flushQueue);
+      immediate = setImmediate(obj.flushQueue);
     } else {
       obj.flushQueue();
     }
   },
-  flushQueue: result ? () => {
-    importDefault(dependencyMap[4])(importDefaultResult, "Native animated module is not available");
-    let closure_12 = null;
+  flushQueue: result ? (() => {
+    importDefault(44)(importDefaultResult, "Native animated module is not available");
+    let c12 = null;
     if (0 !== length.length) {
-      function ensureGlobalEventEmitterListeners() {
-        let closure_15 = callback(closure_2[5]).addListener("onNativeAnimatedModuleGetValue", (value) => {
-          if (closure_13[value.tag]) {
-            tmp(value.value);
-            delete r0[r1];
+      (function ensureGlobalEventEmitterListeners() {
+        const outer1_15 = outer1_0(outer1_2[5]).addListener("onNativeAnimatedModuleGetValue", (value) => {
+          if (outer2_13[value.tag]) {
+            tmp3(value.value);
+            delete tmp[tmp2];
           }
         });
-        const obj = callback(closure_2[5]);
-        let closure_16 = callback(closure_2[5]).addListener("onNativeAnimatedModuleAnimationFinished", (arg0) => {
-          let tmp = arg0;
+        const obj = outer1_0(outer1_2[5]);
+        const outer1_16 = outer1_0(outer1_2[5]).addListener("onNativeAnimatedModuleAnimationFinished", (arg0) => {
+          let tmp3 = arg0;
           if (!Array.isArray(arg0)) {
             const items = [arg0];
-            tmp = items;
+            tmp3 = items;
           }
-          for (const item10013 of tmp) {
+          for (const item10013 of tmp3) {
             let animationId = item10013.animationId;
-            let tmp3 = animationId;
-            let tmp4 = closure_14;
-            let tmp5 = closure_14[animationId];
-            if (tmp5) {
-              let tmp7 = tmp5;
-              let tmp8 = item10013;
-              let tmp6Result = tmp6(tmp2);
-              let tmp10 = closure_14;
-              let tmp11 = animationId;
-              delete r8[r7];
+            let tmp5 = animationId;
+            let tmp6 = outer2_14;
+            let tmp7 = outer2_14[animationId];
+            if (tmp7) {
+              let tmp9 = tmp7;
+              let tmp10 = item10013;
+              let tmp8Result = tmp8(tmp4);
+              let tmp12 = outer2_14;
+              let tmp13 = animationId;
+              delete tmp2[tmp];
             }
+            continue;
           }
         });
-      }();
+      })();
       let tmp4 = null == importDefaultResult;
       if (!tmp4) {
         tmp4 = null == importDefaultResult.queueAndExecuteBatchedOperations;
@@ -189,10 +188,10 @@ let obj = {
       }
       length.length = 0;
     }
-  } : () => {
-    importDefault(dependencyMap[4])(importDefaultResult, "Native animated module is not available");
-    let closure_12 = null;
-    if (0 !== closure_9.length) {
+  }) : (() => {
+    importDefault(44)(importDefaultResult, "Native animated module is not available");
+    let c12 = null;
+    if (0 !== lib.length) {
       let tmp3 = null == importDefaultResult;
       if (!tmp3) {
         tmp3 = null == importDefaultResult.startOperationBatch;
@@ -201,10 +200,10 @@ let obj = {
         importDefaultResult.startOperationBatch();
       }
       for (let num = 0; num < length; num = num + 1) {
-        let tmp7 = closure_9;
-        let tmp8 = closure_9[num]();
+        let tmp7 = lib;
+        let tmp8 = lib[num]();
       }
-      closure_9.length = 0;
+      lib.length = 0;
       let tmp11 = null == importDefaultResult;
       if (!tmp11) {
         tmp11 = null == importDefaultResult.finishOperationBatch;
@@ -212,9 +211,9 @@ let obj = {
       if (!tmp11) {
         importDefaultResult.finishOperationBatch();
       }
-      const length = closure_9.length;
+      length = lib.length;
     }
-  },
+  }),
   createAnimatedNode(newNodeTag, __getNativeConfigResult) {
     const animatedNode = store.createAnimatedNode(newNodeTag, __getNativeConfigResult);
   },
@@ -226,8 +225,8 @@ let obj = {
   startListeningToAnimatedNodeValue(__getNativeTagResult) {
     const result = store.startListeningToAnimatedNodeValue(__getNativeTagResult);
   },
-  stopListeningToAnimatedNodeValue(__getNativeTagResult) {
-    const result = store.stopListeningToAnimatedNodeValue(__getNativeTagResult);
+  stopListeningToAnimatedNodeValue(closure_1) {
+    const result = store.stopListeningToAnimatedNodeValue(closure_1);
   },
   connectAnimatedNodes(arg0, arg1) {
     store.connectAnimatedNodes(arg0, arg1);
@@ -235,14 +234,14 @@ let obj = {
   disconnectAnimatedNodes(arg0, arg1) {
     const result = store.disconnectAnimatedNodes(arg0, arg1);
   },
-  startAnimatingNode: result ? (arg0, arg1, arg2, arg3) => {
+  startAnimatingNode: result ? ((arg0, arg1, arg2, arg3) => {
     if (arg3) {
       closure_14[arg0] = arg3;
     }
     store.startAnimatingNode(arg0, arg1, arg2);
-  } : (arg0, arg1, arg2, arg3) => {
+  }) : ((arg0, arg1, arg2, arg3) => {
     store.startAnimatingNode(arg0, arg1, arg2, arg3);
-  },
+  }),
   stopAnimation(arg0) {
     store.stopAnimation(arg0);
   },
@@ -272,14 +271,14 @@ let obj = {
   dropAnimatedNode(__nativeTag) {
     store.dropAnimatedNode(__nativeTag);
   },
-  addAnimatedEventToView(findNodeHandleResult, arg1, arg2) {
-    const result = store.addAnimatedEventToView(findNodeHandleResult, arg1, arg2);
+  addAnimatedEventToView(closure_4, closure_0, arg2) {
+    const result = store.addAnimatedEventToView(closure_4, closure_0, arg2);
   },
-  removeAnimatedEventFromView(closure_4, closure_0, animatedValueTag) {
-    const result = store.removeAnimatedEventFromView(closure_4, closure_0, animatedValueTag);
+  removeAnimatedEventFromView(outer1_4, outer1_0, animatedValueTag) {
+    const result = store.removeAnimatedEventFromView(outer1_4, outer1_0, animatedValueTag);
   }
 };
-let closure_20 = false;
+let c20 = false;
 obj = {
   API: obj,
   generateNewNodeTag() {
@@ -291,7 +290,7 @@ obj = {
     return +closure_6;
   },
   assertNativeAnimatedModule() {
-    importDefault(dependencyMap[4])(importDefaultResult, "Native animated module is not available");
+    importDefault(44)(closure_4, "Native animated module is not available");
   },
   shouldUseNativeDriver(useNativeDriver) {
     if (null == useNativeDriver.useNativeDriver) {
@@ -299,12 +298,12 @@ obj = {
       console.warn("Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`");
     }
     if (true === useNativeDriver.useNativeDriver) {
-      if (!importDefaultResult) {
+      if (!closure_4) {
         let flag = false;
-        if (!closure_20) {
+        if (!c20) {
           const _console2 = console;
           console.warn("Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md");
-          closure_20 = true;
+          c20 = true;
           flag = false;
         }
       }
@@ -333,12 +332,13 @@ obj = {
 };
 Object.defineProperty(obj, "nativeEventEmitter", {
   get: () => {
-    if (!tmp3) {
-      let tmp3 = importDefault(dependencyMap[6]);
+    if (!closure_3) {
+      let tmp3 = importDefault(209);
       const prototype = tmp3.prototype;
       tmp3 = new tmp3(null);
+      closure_3 = tmp3;
     }
-    return tmp3;
+    return closure_3;
   },
   set: undefined
 });

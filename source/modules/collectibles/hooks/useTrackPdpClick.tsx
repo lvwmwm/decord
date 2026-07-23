@@ -1,38 +1,35 @@
-// Module ID: 8734
-// Function ID: 69089
+// Module ID: 8741
+// Function ID: 69130
 // Name: useTrackPdpClick
-// Dependencies: []
+// Dependencies: [31, 653, 8666, 8667, 6786, 675, 2]
 // Exports: useTrackPdpClick
 
-// Module 8734 (useTrackPdpClick)
-let closure_3 = importAll(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/collectibles/hooks/useTrackPdpClick.tsx");
+// Module 8741 (useTrackPdpClick)
+import result from "result";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+const result = require("useCollectiblesAnalyticsContext").fileFinishedImporting("modules/collectibles/hooks/useTrackPdpClick.tsx");
 
 export const useTrackPdpClick = function useTrackPdpClick(skuId) {
   skuId = skuId.skuId;
-  const arg1 = skuId;
   const productSkuIds = skuId.productSkuIds;
-  const importDefault = productSkuIds;
   const analyticsLocations = skuId.analyticsLocations;
-  const dependencyMap = analyticsLocations;
-  let React;
-  let AnalyticEvents;
+  let cardId;
+  let sessionId;
   let shopDiscountSource;
-  let collectiblesAnalyticsContext = arg1(dependencyMap[2]).useCollectiblesAnalyticsContext();
+  let collectiblesAnalyticsContext = skuId(analyticsLocations[2]).useCollectiblesAnalyticsContext();
   if (null == collectiblesAnalyticsContext) {
     collectiblesAnalyticsContext = {};
   }
-  const cardId = collectiblesAnalyticsContext.cardId;
-  React = cardId;
-  const sessionId = collectiblesAnalyticsContext.sessionId;
-  AnalyticEvents = sessionId;
-  const obj = arg1(dependencyMap[2]);
-  const currentUserIfAvailable = arg1(dependencyMap[3]).useCurrentUserIfAvailable();
-  const obj3 = arg1(dependencyMap[3]);
-  shopDiscountSource = arg1(dependencyMap[4]).getShopDiscountSource(currentUserIfAvailable);
+  cardId = collectiblesAnalyticsContext.cardId;
+  sessionId = collectiblesAnalyticsContext.sessionId;
+  let obj = skuId(analyticsLocations[2]);
+  const currentUserIfAvailable = skuId(analyticsLocations[3]).useCurrentUserIfAvailable();
+  const obj3 = skuId(analyticsLocations[3]);
+  shopDiscountSource = skuId(analyticsLocations[4]).getShopDiscountSource(currentUserIfAvailable);
   const items = [skuId, analyticsLocations, cardId, productSkuIds, sessionId, shopDiscountSource];
-  return React.useCallback((cta) => {
+  return cardId.useCallback((cta) => {
     let tmp = arg1;
     let obj = productSkuIds(analyticsLocations[5]);
     obj = {};

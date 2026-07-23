@@ -1,33 +1,38 @@
-// Module ID: 15130
-// Function ID: 114167
+// Module ID: 15245
+// Function ID: 116336
 // Name: ICYMIHeader
-// Dependencies: []
+// Dependencies: [31, 27, 33, 15179, 689, 4126, 1212, 2]
 // Exports: default
 
-// Module 15130 (ICYMIHeader)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).createICYMIStyles((margin) => {
-  let obj = { text: obj };
-  obj = { "Bool(false)": false, "Bool(false)": 0, marginHorizontal: margin.margin };
-  obj = { hideWhenScrolling: false, autoCapitalize: false, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
+// Module 15245 (ICYMIHeader)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import createICYMIStyles from "createICYMIStyles";
+
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createICYMIStyles.createICYMIStyles((margin) => {
+  obj = { text: obj };
+  obj = { flexDirection: "row", justifyContent: "space-between", marginHorizontal: margin.margin };
+  obj = { height: 1, width: "100%", backgroundColor: importDefault(689).colors.BORDER_SUBTLE, marginBottom: importDefault(689).space.PX_16 };
   obj.separator = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/icymi/native/ICYMIHeader.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/icymi/native/ICYMIHeader.tsx");
 
 export default function ICYMIHeader() {
   const tmp = callback3();
   let obj = {};
   obj = { style: tmp.separator };
   const items = [callback(View, obj), ];
-  obj = { "Null": "String", "Null": "justifyContent", alignItems: "np", style: tmp.text };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.children = intl.string(arg1(dependencyMap[6]).t.jnXV/V);
-  items[1] = callback(arg1(dependencyMap[5]).Text, obj);
+  obj = { style: tmp.text, variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["jnXV/V"]);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_5, obj);
 };

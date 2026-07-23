@@ -1,27 +1,27 @@
-// Module ID: 14248
-// Function ID: 107671
+// Module ID: 14362
+// Function ID: 109824
 // Name: route
-// Dependencies: []
+// Dependencies: [653, 10095, 1212, 5791, 14363, 2]
 
-// Module 14248 (route)
-const _module = require(dependencyMap[1]);
-let obj = {
+// Module 14362 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.8/udY0);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["8/udY0"]);
   },
   parent: null,
-  IconComponent: require(dependencyMap[3]).SettingsIcon,
+  IconComponent: require("SettingsIcon").SettingsIcon,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.ADVANCED,
+  route: require("ME").UserSettingsSections.ADVANCED,
   getComponent() {
-    return require(dependencyMap[4]).default;
+    return require(14363).default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AdvancedSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/AdvancedSetting.tsx");
 
 export default route;

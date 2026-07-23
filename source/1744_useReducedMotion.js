@@ -1,13 +1,14 @@
 // Module ID: 1744
-// Function ID: 19526
+// Function ID: 19527
 // Name: useReducedMotion
-// Dependencies: []
+// Dependencies: [1623]
 // Exports: useReducedMotion
 
 // Module 1744 (useReducedMotion)
-const _module = require(dependencyMap[0]);
-let closure_0 = _module.isReducedMotionEnabledInSystem();
+import isReducedMotionEnabledInSystem from "isReducedMotionEnabledInSystem";
+
+isReducedMotionEnabledInSystem = isReducedMotionEnabledInSystem.isReducedMotionEnabledInSystem();
 
 export function useReducedMotion() {
-  return closure_0;
+  return isReducedMotionEnabledInSystem;
 }

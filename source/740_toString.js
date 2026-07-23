@@ -1,12 +1,12 @@
 // Module ID: 740
-// Function ID: 8783
+// Function ID: 8784
 // Name: toString
-// Dependencies: []
+// Dependencies: [579, 591, 741, 576]
 
 // Module 740 (toString)
 let prototype;
-if (require(dependencyMap[0])) {
-  prototype = require(dependencyMap[0]).prototype;
+if (require("module_579")) {
+  prototype = require("module_579").prototype;
 }
 let toString;
 if (prototype) {
@@ -15,9 +15,9 @@ if (prototype) {
 function baseToString(arg0) {
   if ("string" === typeof arg0) {
     return arg0;
-  } else if (require(dependencyMap[1])(arg0)) {
-    return "" + tmp7(tmp8[2])(arg0, baseToString);
-  } else if (tmp7(tmp8[3])(arg0)) {
+  } else if (require(591)(arg0)) {
+    return "" + tmp7(741)(arg0, baseToString);
+  } else if (tmp7(576)(arg0)) {
     let str3 = "";
     if (toString) {
       str3 = toString.call(arg0);

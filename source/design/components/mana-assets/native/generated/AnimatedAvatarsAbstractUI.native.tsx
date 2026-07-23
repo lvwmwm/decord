@@ -1,13 +1,13 @@
-// Module ID: 5849
-// Function ID: 49706
+// Module ID: 5854
+// Function ID: 49735
 // Name: AnimatedAvatarsAbstractUI
-// Dependencies: [131072, 561250304, 3657433088, 4194304019]
+// Dependencies: [33, 5085, 5855, 2]
 // Exports: AnimatedAvatarsAbstractUI
 
-// Module 5849 (AnimatedAvatarsAbstractUI)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AnimatedAvatarsAbstractUI.native.tsx");
+// Module 5854 (AnimatedAvatarsAbstractUI)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AnimatedAvatarsAbstractUI.native.tsx");
 
 export const AnimatedAvatarsAbstractUI = function AnimatedAvatarsAbstractUI(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const AnimatedAvatarsAbstractUI = function AnimatedAvatarsAbstractUI(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5855) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const AnimatedAvatarsAbstractUI = function AnimatedAvatarsAbstractUI(widt
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

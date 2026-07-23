@@ -1,78 +1,82 @@
-// Module ID: 14246
-// Function ID: 107655
+// Module ID: 14360
+// Function ID: 109808
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1849, 33, 4130, 7962, 5503, 1212, 14361, 12380, 566, 1872, 2]
 // Exports: default
 
-// Module 14246 (BackwardsCompatibleAppIconRows)
+// Module 14360 (BackwardsCompatibleAppIconRows)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { createElement } from "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_8;
+let closure_9;
+const require = arg1;
 function BackwardsCompatibleAppIconRows(arg0) {
   if (arg0 == null) {
     HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
     throw undefined;
   } else {
-    const merged = Object.assign(arg0, undefined);
-    const arg1 = merged;
+    let merged = Object.assign(arg0, undefined);
     let closure_1;
-    let closure_2;
-    function onLongPress(closure_4, arg1) {
+    let dependencyMap;
+    function onLongPress(result, arg1) {
       let tmp = null;
-      if (closure_4 === merged(callback2[6]).FreemiumAppIconIds.DEFAULT) {
-        tmp = callback2(true);
+      if (result === merged(7962).FreemiumAppIconIds.DEFAULT) {
+        tmp = dependencyMap(true);
       }
       return tmp;
     }
     const tmp9 = onLongPress(React.useState(false), 2);
     closure_1 = tmp9[0];
-    closure_2 = tmp9[1];
+    dependencyMap = tmp9[1];
     const icons = merged.icons;
     let obj = { style: callback2().container };
     obj = { title: merged.title, accessibilityRole: "radiogroup" };
-    const intl = arg1(closure_2[8]).intl;
-    obj.accessibilityLabel = intl.string(arg1(closure_2[8]).t.N4YDao);
+    const intl = merged(1212).intl;
+    obj.accessibilityLabel = intl.string(merged(1212).t.N4YDao);
     obj.hasIcons = true;
     obj.children = icons.map((id) => {
       const obj = {};
-      const merged = Object.assign(merged);
+      merged = Object.assign(merged);
       obj["key"] = id.id;
       obj["icon"] = id;
       obj["showEasterEgg"] = callback;
       obj["onLongPress"] = onLongPress;
-      return callback3(callback(closure_2[9]), obj);
+      return outer1_7(callback(14361), obj);
     });
-    obj.children = callback(arg1(closure_2[7]).TableRowGroup, obj);
+    obj.children = callback(merged(5503).TableRowGroup, obj);
     return callback(View, obj);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-const createElement = arg1(dependencyMap[1]).createElement;
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[5]).createStyles({ container: { padding: 16 }, bottomUpsellPadding: { paddingBottom: 56 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_icons/native/AppIconRows.tsx");
+({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16 }, bottomUpsellPadding: { paddingBottom: 56 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/app_icons/native/AppIconRows.tsx");
 
 export default function AppIconRows(onSelect) {
   let currentAppIcon;
   let limitedTimeAppIcons;
   onSelect = onSelect.onSelect;
-  let obj = arg1(dependencyMap[10]);
+  let obj = require(12380) /* fetchCurrentAppIcon */;
   const appIcons = obj.useAppIcons();
   ({ limitedTimeAppIcons, currentAppIcon } = appIcons);
-  let obj1 = arg1(dependencyMap[11]);
-  const items = [closure_6];
-  const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = arg1(dependencyMap[12]);
+  let obj1 = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getCurrentUser());
+  let obj2 = require(1872) /* isPremiumAtLeast */;
   const isPremiumResult = obj2.isPremium(stateFromStores);
   const tmp5 = limitedTimeAppIcons.length > 0 && limitedTimeAppIcons.filter((isHidden) => !isHidden.isHidden).length > 0;
   obj = {};
   let tmp8 = null;
   if (tmp5) {
     obj = { hasNitro: isPremiumResult, icons: limitedTimeAppIcons, currentAppIcon };
-    const intl = arg1(dependencyMap[8]).intl;
-    obj.title = intl.string(arg1(dependencyMap[8]).t.anqaFd);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.title = intl.string(require(1212) /* getSystemLocale */.t.anqaFd);
     obj.onSelect = onSelect;
     tmp8 = callback(BackwardsCompatibleAppIconRows, obj);
   }
@@ -86,8 +90,8 @@ export default function AppIconRows(onSelect) {
   obj2 = { hasNitro: isPremiumResult, icons: appIcons.officialAppIcons, currentAppIcon };
   let stringResult;
   if (tmp5) {
-    const intl2 = arg1(dependencyMap[8]).intl;
-    stringResult = intl2.string(arg1(dependencyMap[8]).t.Ipxkog);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl2.string(require(1212) /* getSystemLocale */.t.Ipxkog);
   }
   obj2.title = stringResult;
   obj2.onSelect = onSelect;

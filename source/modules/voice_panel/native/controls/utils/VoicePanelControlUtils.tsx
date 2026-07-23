@@ -1,20 +1,18 @@
-// Module ID: 15733
-// Function ID: 120348
+// Module ID: 15850
+// Function ID: 122521
 // Name: getDrawerSpec
-// Dependencies: []
+// Dependencies: [9891, 2]
 
-// Module 15733 (getDrawerSpec)
+// Module 15850 (getDrawerSpec)
 let closure_2 = { code: "function getDrawerSpec_VoicePanelControlUtilsTsx1(height,top){const{roundToNearestPixel}=this.__closure;const maxHeight=height-top;return{minHeight:roundToNearestPixel(maxHeight*0.65),maxHeight:maxHeight};}" };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/voice_panel/native/controls/utils/VoicePanelControlUtils.tsx");
-
-export const getDrawerSpec = () => {
-  function getDrawerSpec(height, top) {
+const tmp2 = (() => {
+  export function getDrawerSpec(height, top) {
     const diff = height - top;
-    return { minHeight: callback(closure_1[0])(0.65 * diff), maxHeight: diff };
+    return { minHeight: outer1_0(outer1_1[0])(0.65 * diff), maxHeight: diff };
   }
-  getDrawerSpec.__closure = { roundToNearestPixel: importDefault(dependencyMap[0]) };
+  getDrawerSpec.__closure = { roundToNearestPixel: importDefault(9891) };
   getDrawerSpec.__workletHash = 3647675988513;
   getDrawerSpec.__initData = closure_2;
   return getDrawerSpec;
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/utils/VoicePanelControlUtils.tsx");

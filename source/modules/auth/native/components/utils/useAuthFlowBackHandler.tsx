@@ -1,20 +1,21 @@
-// Module ID: 14632
-// Function ID: 110338
+// Module ID: 14747
+// Function ID: 112502
 // Name: useAuthFlowBackHandler
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [31, 14732, 14729, 5093, 2]
 // Exports: default
 
-// Module 14632 (useAuthFlowBackHandler)
-import __exportStarResult1 from "__exportStarResult1";
-import { RegistrationTransitionActionTypes as closure_3 } from "__exportStarResult1";
+// Module 14747 (useAuthFlowBackHandler)
+import result from "result";
+import { RegistrationTransitionActionTypes as closure_3 } from "RegistrationTransitionActionTypes";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/auth/native/components/utils/useAuthFlowBackHandler.tsx");
+const require = arg1;
+const result = require("getInitialAuthScreen").fileFinishedImporting("modules/auth/native/components/utils/useAuthFlowBackHandler.tsx");
 
 export default function useAuthFlowBackHandler(arg0) {
-  const arg1 = arg0;
-  closure_1 = React.useContext(arg1(closure_1[2]).TrackRegistrationContext);
-  arg1(closure_1[3]).useNavigatorBackPressHandler(() => {
-    callback({ step: arg0, actionType: constants.VIEWED });
+  const _require = arg0;
+  const dependencyMap = React.useContext(_require(14729).TrackRegistrationContext);
+  _require(5093).useNavigatorBackPressHandler(() => {
+    callback({ step: closure_0, actionType: outer1_3.VIEWED });
     return false;
   });
 };

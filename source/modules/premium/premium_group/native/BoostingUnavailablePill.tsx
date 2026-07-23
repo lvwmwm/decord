@@ -1,43 +1,45 @@
-// Module ID: 12331
-// Function ID: 94432
+// Module ID: 12445
+// Function ID: 96583
 // Name: handlePress
-// Dependencies: []
+// Dependencies: [27, 3790, 33, 4130, 689, 4098, 12446, 1934, 1212, 2780, 4126, 2]
 // Exports: default
 
-// Module 12331 (handlePress)
+// Module 12445 (handlePress)
+import get_ActivityIndicator from "get ActivityIndicator";
+import { getPremiumGroupProductName as closure_5 } from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
 function handlePress() {
-  let obj = importDefault(dependencyMap[5]);
+  let obj = importDefault(4098);
   obj = {};
-  const intl = require(dependencyMap[8]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { premiumGroupProductName: callback() };
-  obj.aboutText = intl.formatToPlainString(importDefault(dependencyMap[9]).5xN/C1, obj);
-  obj.openLazy(require(dependencyMap[7])(dependencyMap[6], dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  obj.aboutText = intl.formatToPlainString(importDefault(2780)["5xN/C1"], obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(12446, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
-const _module = require(dependencyMap[0]);
-({ TouchableOpacity: closure_3, View: closure_4 } = _module);
-let closure_5 = require(dependencyMap[1]).getPremiumGroupProductName;
-const jsx = require(dependencyMap[2]).jsx;
-const _module1 = require(dependencyMap[3]);
+({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginBottom: 12 };
 obj.premiumGroupBanner = obj;
-obj.pgUnavailable = { "Null": "<string:3942646034>", "Null": "<string:3355444267>" };
+obj.pgUnavailable = { flex: 1, justifyContent: "center" };
 obj.pgUnavailableText = { textAlign: "center" };
-let closure_7 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[11]);
-const result = _module2.fileFinishedImporting("modules/premium/premium_group/native/BoostingUnavailablePill.tsx");
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("jsxProd").fileFinishedImporting("modules/premium/premium_group/native/BoostingUnavailablePill.tsx");
 
 export default function BoostingUnavailablePill(style) {
   const tmp = callback2();
   let obj = { activeOpacity: 0.7, onPress: handlePress };
   obj = { style: items };
-  const items = [tmp.premiumGroupBanner, style.style];
+  items = [tmp.premiumGroupBanner, style.style];
   obj = { style: tmp.pgUnavailable };
-  const obj1 = { style: tmp.pgUnavailableText };
-  const intl = require(dependencyMap[8]).intl;
-  obj1.children = intl.string(require(dependencyMap[8]).t.5nrJDO);
-  obj.children = jsx(require(dependencyMap[10]).Text, obj1);
-  obj.children = <closure_4 {...obj} />;
-  obj.children = <closure_4 {...obj} />;
-  return <closure_3 {...obj} />;
+  const obj1 = { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.string(require(1212) /* getSystemLocale */.t["5nrJDO"]);
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText });
+  obj.children = <closure_4 style={tmp.pgUnavailable} />;
+  obj.children = <closure_4 style={tmp.pgUnavailable} />;
+  return <closure_3 style={tmp.pgUnavailable} />;
 };

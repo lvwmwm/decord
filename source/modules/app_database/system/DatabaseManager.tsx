@@ -1,52 +1,62 @@
 // Module ID: 1898
-// Function ID: 21305
+// Function ID: 21306
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 15, 17, 18, 1194, 3, 686, 1899, 1883, 566, 2]
 
 // Module 1898 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import timestamp from "timestamp";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import closure_9 from "_inherits";
+import closure_10 from "_isNativeReflectConstruct";
+import importDefaultResult from "_possibleConstructorReturn";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +67,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -96,27 +106,19 @@ function _databaseName(arg0) {
   return "@account." + arg0;
 }
 async function _trySpeculativelyOpenDatabaseAsync(arg0, arg1) {
-  const tmp = callback2(arg0);
-  closure_11.verbose("speculatively opening " + tmp);
-  const Database = callback(closure_3[10]).Database;
+  const tmp = outer2_15(arg0);
+  outer2_11.verbose("speculatively opening " + tmp);
+  const Database = outer2_0(outer2_3[10]).Database;
   return yield Database.open(tmp);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let importDefaultResult = importDefault(dependencyMap[7]);
 importDefaultResult = new importDefaultResult("DatabaseManager");
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class DatabaseManager {
     constructor() {
       self = this;
-      tmp = closure_5(this, DatabaseManager);
+      tmp = outer1_5(this, DatabaseManager);
       items = [, , ];
-      items[0] = DatabaseManager(closure_3[8]);
+      items[0] = DatabaseManager(outer1_3[8]);
       items[1] = {
         CLEAR_CACHES(arg0) {
               return tmp2Result.handleClearCaches(arg0);
@@ -131,19 +133,19 @@ let tmp4 = (Store) => {
               return tmp2Result.handleAuthenticationStoreChanged();
             }
       };
-      items[2] = f21334(closure_3[8]).DispatchBand.Early;
-      obj = closure_8(DatabaseManager);
-      tmp2 = closure_7;
-      if (closure_14()) {
+      items[2] = f21335(outer1_3[8]).DispatchBand.Early;
+      obj = outer1_8(DatabaseManager);
+      tmp2 = outer1_7;
+      if (outer1_14()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_8;
-        constructResult = Reflect.construct(obj, items, closure_8(self).constructor);
+        tmp5 = outer1_8;
+        constructResult = Reflect.construct(obj, items, outer1_8(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      f21334 = tmp2Result;
+      apply = tmp2Result;
       map = new Map();
       tmp2Result.databases = map;
       tmp2Result.activeUserId = null;
@@ -151,23 +153,22 @@ let tmp4 = (Store) => {
       return tmp2Result;
     }
   }
-  const importDefault = DatabaseManager;
   callback3(DatabaseManager, Store);
   let obj = {
     key: "initialize",
     value() {
-      let closure_0 = this;
-      this.waitFor(store);
-      const result = this.carefullySpeculativelyOpen(callback2(closure_3[9]).getUserId());
+      const self = this;
+      this.waitFor(outer1_10);
+      const result = this.carefullySpeculativelyOpen(outer1_2(outer1_3[9]).getUserId());
       const result1 = this.handleAuthenticationStoreChanged();
-      store.addChangeListener(() => self.handleAuthenticationStoreChanged());
+      outer1_10.addChangeListener(() => self.handleAuthenticationStoreChanged());
     }
   };
-  const items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , ];
   obj = {
     key: "databaseName",
     value(arg0) {
-      return callback7(arg0);
+      return outer1_15(arg0);
     }
   };
   items[1] = obj;
@@ -193,23 +194,24 @@ let tmp4 = (Store) => {
     value(arg0) {
       const self = this;
       if (this.preventWritingCachesAgainThisSession) {
-        closure_11.verbose("Not opening database because caches have been manually cleared.");
+        outer1_11.verbose("Not opening database because caches have been manually cleared.");
         return null;
       } else {
         if (null != arg0) {
           const databases = self.databases;
           if (!databases.has(arg0)) {
-            const tmp2 = function tryOpenDatabase(arg0) {
-              const tmp = callback(arg0);
-              closure_11.verbose("synchronously opening " + tmp);
+            const tmp2 = (function tryOpenDatabase(arg0) {
+              const tmp = outer2_15(arg0);
+              let closure_0 = tmp;
+              outer2_11.verbose("synchronously opening " + tmp);
               const fn = () => {
-                const Database = tmp(closure_3[10]).Database;
+                const Database = tmp(outer3_3[10]).Database;
                 return Database.openSyncUnsafe(tmp, { invalidateDisabledHandles: true });
               };
               fn();
-            }(arg0);
+            })(arg0);
             const _HermesInternal = HermesInternal;
-            closure_11.verbose("added database (" + arg0 + " \u2192 " + tmp2 + ")");
+            outer1_11.verbose("added database (" + arg0 + " \u2192 " + tmp2 + ")");
             const databases2 = self.databases;
             const result = databases2.set(arg0, tmp2);
             self.emitChange();
@@ -224,9 +226,9 @@ let tmp4 = (Store) => {
     value(arg0) {
       let iter2;
       const self = this;
-      closure_11.info("disabling and nulling all databases (reason: " + arg0 + ")");
+      outer1_11.info("disabling and nulling all databases (reason: " + arg0 + ")");
       const databases = this.databases;
-      const tmp2 = callback5(databases.keys());
+      const tmp2 = outer1_12(databases.keys());
       let iter = tmp2();
       if (!iter.done) {
         do {
@@ -254,7 +256,7 @@ let tmp4 = (Store) => {
       const self = this;
       const databases = this.databases;
       const value = databases.get(arg0);
-      closure_11.log("removing database (user: " + arg0 + ", database: " + value + ")");
+      outer1_11.log("removing database (user: " + arg0 + ", database: " + value + ")");
       if (null != value) {
         value.close();
       }
@@ -277,7 +279,7 @@ let tmp4 = (Store) => {
     key: "handleConnectionOpen",
     value() {
       const self = this;
-      const id = store.getId();
+      const id = outer1_10.getId();
       const databases = this.databases;
       const value = databases.get(id);
       if (null != value) {
@@ -285,7 +287,7 @@ let tmp4 = (Store) => {
       }
       let tmp3 = null == value;
       if (tmp3) {
-        tmp3 = stateResult !== callback(closure_3[10]).DatabaseState.Open;
+        tmp3 = stateResult !== callback(outer1_3[10]).DatabaseState.Open;
       }
       if (tmp3) {
         self.remove(id);
@@ -297,21 +299,21 @@ let tmp4 = (Store) => {
     key: "handleAuthenticationStoreChanged",
     value() {
       const self = this;
-      const id = store.getId();
+      const id = outer1_10.getId();
       const activeUserId = this.activeUserId;
       if (id !== activeUserId) {
         const databases2 = self.databases;
         const value = databases2.get(activeUserId);
         const _HermesInternal = HermesInternal;
-        closure_11.verbose("active user changed (now: " + id + ", was: " + activeUserId + ", was: " + value + ")");
+        outer1_11.verbose("active user changed (now: " + id + ", was: " + activeUserId + ", was: " + value + ")");
         if (null != value) {
           value.close();
         }
-        callback2(closure_3[9]).setUserId(id);
+        outer1_2(outer1_3[9]).setUserId(id);
         self.activeUserId = id;
         const databases = self.databases;
         databases.delete(activeUserId);
-        const obj = callback2(closure_3[9]);
+        const obj = outer1_2(outer1_3[9]);
       }
     }
   };
@@ -319,23 +321,23 @@ let tmp4 = (Store) => {
   let closure_0 = callback(async function(arg0) {
     const self = this;
     if (self.preventWritingCachesAgainThisSession) {
-      closure_11.verbose("Not opening database because caches have been manually cleared.");
+      outer2_11.verbose("Not opening database because caches have been manually cleared.");
     } else if (null != arg0) {
-      const obj = yield function trySpeculativelyOpenDatabaseAsync(arg0) {
-        return callback(...arguments);
-      }(arg0);
+      const obj = yield (function trySpeculativelyOpenDatabaseAsync(arg0) {
+        return outer3_16(...arguments);
+      })(arg0);
       if (null != obj) {
         const databases = self.databases;
         if (!databases.has(arg0)) {
           const _HermesInternal = HermesInternal;
-          closure_11.verbose("added speculative database (" + arg0 + " \u2192 " + obj + ")");
+          outer2_11.verbose("added speculative database (" + arg0 + " \u2192 " + obj + ")");
           const databases2 = self.databases;
           const result = databases2.set(arg0, obj);
           self.emitChange();
         }
       }
       const _HermesInternal2 = HermesInternal;
-      closure_11.verbose("discarding speculative database (" + arg0 + " \u2192 " + obj + ")");
+      outer2_11.verbose("discarding speculative database (" + arg0 + " \u2192 " + obj + ")");
       if (null != obj) {
         obj.close();
       }
@@ -346,8 +348,8 @@ let tmp4 = (Store) => {
   };
   items[9] = obj7;
   return callback2(DatabaseManager, items);
-}(importDefault(dependencyMap[11]).Store);
+})(require("initialize").Store);
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/app_database/system/DatabaseManager.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/app_database/system/DatabaseManager.tsx");
 
 export default tmp4;

@@ -1,34 +1,34 @@
 // Module ID: 192
 // Function ID: 2711
-// Dependencies: [6, 7, 202, 129, 202, 205, 1639, 1642, 1643, 1644]
+// Dependencies: [126, 193, 211, 215, 217, 197, 222, 223, 226, 228]
 
 // Module 192
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
-import _classCallCheck from "_classCallCheck";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
+import polyfillObjectProperty from "polyfillObjectProperty";
 
-_classCallCheck.polyfillGlobal("XMLHttpRequest", () => require(dependencyMap[1]).default);
-_classCallCheck.polyfillGlobal("FormData", () => require(dependencyMap[2]).default);
-_classCallCheck.polyfillGlobal("fetch", () => require(dependencyMap[3]).fetch);
-_classCallCheck.polyfillGlobal("Headers", () => require(dependencyMap[3]).Headers);
-_classCallCheck.polyfillGlobal("Request", () => require(dependencyMap[3]).Request);
-_classCallCheck.polyfillGlobal("Response", () => require(dependencyMap[3]).Response);
-_classCallCheck.polyfillGlobal("WebSocket", () => require(dependencyMap[4]).default);
-_classCallCheck.polyfillGlobal("Blob", () => require(dependencyMap[5]).default);
-_classCallCheck.polyfillGlobal("File", () => require(dependencyMap[6]).default);
-_classCallCheck.polyfillGlobal("FileReader", () => require(dependencyMap[7]).default);
-_classCallCheck.polyfillGlobal("URL", () => require(dependencyMap[8]).URL);
-_classCallCheck.polyfillGlobal("URLSearchParams", () => require(dependencyMap[8]).URLSearchParams);
-_classCallCheck.polyfillGlobal("AbortController", () => require(dependencyMap[9]).AbortController);
-_classCallCheck.polyfillGlobal("AbortSignal", () => require(dependencyMap[9]).AbortSignal);
+polyfillObjectProperty.polyfillGlobal("XMLHttpRequest", () => require(193) /* _callSuper */.default);
+polyfillObjectProperty.polyfillGlobal("FormData", () => require(211) /* FormData */.default);
+polyfillObjectProperty.polyfillGlobal("fetch", () => require(215) /* t */.fetch);
+polyfillObjectProperty.polyfillGlobal("Headers", () => require(215) /* t */.Headers);
+polyfillObjectProperty.polyfillGlobal("Request", () => require(215) /* t */.Request);
+polyfillObjectProperty.polyfillGlobal("Response", () => require(215) /* t */.Response);
+polyfillObjectProperty.polyfillGlobal("WebSocket", () => require(217) /* _isNativeReflectConstruct */.default);
+polyfillObjectProperty.polyfillGlobal("Blob", () => require(197) /* Blob */.default);
+polyfillObjectProperty.polyfillGlobal("File", () => require(222) /* _isNativeReflectConstruct */.default);
+polyfillObjectProperty.polyfillGlobal("FileReader", () => require(223) /* _isNativeReflectConstruct */.default);
+polyfillObjectProperty.polyfillGlobal("URL", () => require(226) /* validateBaseUrl */.URL);
+polyfillObjectProperty.polyfillGlobal("URLSearchParams", () => require(226) /* validateBaseUrl */.URLSearchParams);
+polyfillObjectProperty.polyfillGlobal("AbortController", () => require(228) /* _isNativeReflectConstruct */.AbortController);
+polyfillObjectProperty.polyfillGlobal("AbortSignal", () => require(228) /* _isNativeReflectConstruct */.AbortSignal);

@@ -1,78 +1,89 @@
-// Module ID: 13293
-// Function ID: 100948
+// Module ID: 13407
+// Function ID: 103104
 // Name: set
-// Dependencies: []
+// Dependencies: [5, 1347, 4167, 4033, 653, 4155, 10499, 10501, 477, 10523, 4124, 3748, 13408, 3821, 675, 8336, 13409, 10496, 5796, 13403, 7371, 13410, 2]
 
-// Module 13293 (set)
+// Module 13407 (set)
+import closure_3 from "items3";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
+import ME from "ME";
+import items3 from "items3";
+import createRPCCommand from "createRPCCommand";
+import set from "_isNativeReflectConstruct";
+
 let RPCCommands;
 let RPC_AUTHENTICATED_SCOPE;
 let RPC_SCOPE_CONFIG;
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[3]);
-({ RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG } = tmp2);
-({ ApplicationFlags: closure_6, PopoutWindowKeys: closure_7, RPCCommands, RPCErrors: closure_8, UserSettingsSections: closure_9, AnalyticEvents: closure_10 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
+({ ApplicationFlags: closure_6, PopoutWindowKeys: closure_7, RPCCommands, RPCErrors: closure_8, UserSettingsSections: closure_9, AnalyticEvents: closure_10 } = ME);
 const items = [, ];
-({ AM_HARMONY_PRD_APPLICATION_ID: arr[0], AM_HARMONY_STG_APPLICATION_ID: arr[1] } = arg1(dependencyMap[5]));
-const set = new Set(items);
-let obj = { [RPCCommands.OPEN_EXTERNAL_LINK]: obj, [RPCCommands.NAVIGATE_TO_CONNECTIONS]: obj };
+({ AM_HARMONY_PRD_APPLICATION_ID: arr[0], AM_HARMONY_STG_APPLICATION_ID: arr[1] } = items3);
+let set = new Set(items);
+obj = { [RPCCommands.OPEN_EXTERNAL_LINK]: obj, [RPCCommands.NAVIGATE_TO_CONNECTIONS]: obj };
 obj = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items1 },
   validation(string) {
-    let obj = importDefault(dependencyMap[6])(string);
+    let obj = importDefault(10499)(string);
     obj = {};
     const requiredResult = obj.required();
     obj.url = string.string().required();
     return requiredResult.keys(obj);
   },
   handler(socket) {
-    const arg1 = socket.socket;
-    const importDefault = socket.args.url;
+    socket = socket.socket;
+    const url = socket.args.url;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   }
 };
-const items1 = [RPC_AUTHENTICATED_SCOPE, tmp2.RPC_EMBEDDED_APP_SCOPE];
+items1 = [RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG.RPC_EMBEDDED_APP_SCOPE];
 obj = {
   validation(arg0) {
-    return importDefault(dependencyMap[6])(arg0);
+    return importDefault(10499)(arg0);
   },
   scope: { [RPC_SCOPE_CONFIG.ANY]: items2 },
   handler(socket) {
     socket = socket.socket;
-    let obj = arg1(dependencyMap[7]);
+    let obj = require(10501) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
     if (set.has(obj2.validateApplication(socket.application))) {
       obj = { screen: constants3.CONNECTIONS };
-      arg1(dependencyMap[18]).openUserSettings(obj);
+      require(5796) /* openUserSettings */.openUserSettings(obj);
     } else {
-      let tmp4 = importDefault(dependencyMap[17]);
+      let tmp4 = importDefault(10496);
       obj = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
       const prototype = tmp4.prototype;
       tmp4 = new tmp4(obj, "Command not available for this application");
       throw tmp4;
     }
-    const obj2 = arg1(dependencyMap[7]);
+    obj2 = require(10501) /* recurseReplaceContentTree */;
   }
 };
-const items2 = [RPC_AUTHENTICATED_SCOPE];
-const tmp4 = arg1(dependencyMap[5]);
-const items3 = [RPC_AUTHENTICATED_SCOPE];
-obj[RPCCommands.SHARE_LINK] = arg1(dependencyMap[19]).createRPCCommand(RPCCommands.SHARE_LINK, {
+items2 = [RPC_AUTHENTICATED_SCOPE];
+items3 = [RPC_AUTHENTICATED_SCOPE];
+obj[RPCCommands.SHARE_LINK] = createRPCCommand.createRPCCommand(RPCCommands.SHARE_LINK, {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items3 },
   handler(arg0) {
     let args;
+    let dependencyMap;
+    let importDefault;
+    let require;
     let socket;
     ({ socket, args } = arg0);
-    ({ custom_id: closure_0, message: closure_1, link_id: closure_2 } = args);
-    let obj = arg1(dependencyMap[7]);
-    const result = obj.validatePostMessageTransport(socket.transport);
-    const validateApplicationResult = arg1(dependencyMap[7]).validateApplication(socket.application);
-    let closure_3 = validateApplicationResult;
+    ({ custom_id: require, message: importDefault, link_id: dependencyMap } = args);
+    let obj = require(10501) /* recurseReplaceContentTree */;
+    let result = obj.validatePostMessageTransport(socket.transport);
+    const validateApplicationResult = require(10501) /* recurseReplaceContentTree */.validateApplication(socket.application);
     if (null == validateApplicationResult) {
-      let tmp19 = importDefault(dependencyMap[17]);
+      let tmp19 = importDefault(10496);
       obj = { errorCode: constants2.INVALID_COMMAND };
       const prototype3 = tmp19.prototype;
       tmp19 = new tmp19(obj, "No application.");
@@ -80,93 +91,40 @@ obj[RPCCommands.SHARE_LINK] = arg1(dependencyMap[19]).createRPCCommand(RPCComman
     } else {
       if (obj5.hasApplicationFlag(socket.application, constants.EMBEDDED)) {
         const promise = new Promise((arg0) => {
-          let obj = arg0(closure_2[21]);
+          let closure_0 = arg0;
+          let obj = outer1_0(outer1_2[21]);
           obj = {
-            applicationId: validateApplicationResult,
-            customId: arg0,
+            applicationId: closure_3,
+            customId: closure_0,
             linkId: closure_2,
             message: closure_1,
-            onShare(didSendMessage, first1) {
+            onShare(stateFromStores, first1) {
               const obj = {};
               let tmp2 = first1;
               if (!first1) {
-                tmp2 = didSendMessage;
+                tmp2 = stateFromStores;
               }
               obj.success = tmp2;
               obj.didCopyLink = first1;
-              obj.didSendMessage = didSendMessage;
-              didSendMessage(obj);
+              obj.didSendMessage = stateFromStores;
+              closure_0(obj);
             }
           };
           const result = obj.openActivityShareLinkModal(obj);
         });
         return promise;
       } else {
-        let tmp5 = importDefault(dependencyMap[17]);
+        let tmp5 = importDefault(10496);
         obj = { errorCode: constants2.INVALID_COMMAND };
         const prototype = tmp5.prototype;
         tmp5 = new tmp5(obj, "This application cannot access this API");
         throw tmp5;
       }
-      const obj5 = arg1(dependencyMap[20]);
+      obj5 = require(7371) /* getApplicationFlags */;
     }
-    const obj2 = arg1(dependencyMap[7]);
+    const obj2 = require(10501) /* recurseReplaceContentTree */;
   }
 });
-const obj1 = {
-  scope: { [RPC_SCOPE_CONFIG.ANY]: items3 },
-  handler(arg0) {
-    let args;
-    let socket;
-    ({ socket, args } = arg0);
-    ({ custom_id: closure_0, message: closure_1, link_id: closure_2 } = args);
-    let obj = arg1(dependencyMap[7]);
-    const result = obj.validatePostMessageTransport(socket.transport);
-    const validateApplicationResult = arg1(dependencyMap[7]).validateApplication(socket.application);
-    let closure_3 = validateApplicationResult;
-    if (null == validateApplicationResult) {
-      let tmp19 = importDefault(dependencyMap[17]);
-      obj = { errorCode: constants2.INVALID_COMMAND };
-      const prototype3 = tmp19.prototype;
-      tmp19 = new tmp19(obj, "No application.");
-      throw tmp19;
-    } else {
-      if (obj5.hasApplicationFlag(socket.application, constants.EMBEDDED)) {
-        const promise = new Promise((arg0) => {
-          let obj = arg0(closure_2[21]);
-          obj = {
-            applicationId: validateApplicationResult,
-            customId: arg0,
-            linkId: closure_2,
-            message: closure_1,
-            onShare(didSendMessage, first1) {
-              const obj = {};
-              let tmp2 = first1;
-              if (!first1) {
-                tmp2 = didSendMessage;
-              }
-              obj.success = tmp2;
-              obj.didCopyLink = first1;
-              obj.didSendMessage = didSendMessage;
-              didSendMessage(obj);
-            }
-          };
-          const result = obj.openActivityShareLinkModal(obj);
-        });
-        return promise;
-      } else {
-        let tmp5 = importDefault(dependencyMap[17]);
-        obj = { errorCode: constants2.INVALID_COMMAND };
-        const prototype = tmp5.prototype;
-        tmp5 = new tmp5(obj, "This application cannot access this API");
-        throw tmp5;
-      }
-      const obj5 = arg1(dependencyMap[20]);
-    }
-    const obj2 = arg1(dependencyMap[7]);
-  }
-};
-const obj4 = arg1(dependencyMap[19]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/rpc/server/commands/links.tsx");
+let result = set.fileFinishedImporting("modules/rpc/server/commands/links.tsx");
 
 export default obj;

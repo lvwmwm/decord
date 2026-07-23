@@ -1,22 +1,24 @@
-// Module ID: 11624
-// Function ID: 90273
+// Module ID: 11634
+// Function ID: 90322
 // Name: useGetApplicationFromBotUserId
-// Dependencies: []
+// Dependencies: [6856, 653, 566, 2]
 // Exports: default
 
-// Module 11624 (useGetApplicationFromBotUserId)
-let closure_2 = importDefault(dependencyMap[0]);
-const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[1]).EMPTY_STRING_SNOWFLAKE_ID;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/applications/getApplicationFromBotUserId.tsx");
+// Module 11634 (useGetApplicationFromBotUserId)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/applications/getApplicationFromBotUserId.tsx");
 
 export default function useGetApplicationFromBotUserId(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   let tmp;
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => {
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
     let tmp;
-    if (null !== arg0) {
-      const userProfile = userProfile.getUserProfile(null != arg0 ? arg0 : closure_3);
+    if (null !== closure_0) {
+      const userProfile = outer1_2.getUserProfile(null != closure_0 ? closure_0 : outer1_3);
       let application;
       if (null != userProfile) {
         application = userProfile.application;

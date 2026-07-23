@@ -1,19 +1,20 @@
-// Module ID: 14808
-// Function ID: 111629
+// Module ID: 14924
+// Function ID: 113797
 // Name: _fetchActiveChannels
-// Dependencies: []
+// Dependencies: [5, 653, 686, 507, 4030, 2]
 // Exports: fetchActiveChannels
 
-// Module 14808 (_fetchActiveChannels)
+// Module 14924 (_fetchActiveChannels)
+import set from "set";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _fetchActiveChannels() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchActiveChannels = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/active_channels/ActiveChannelsActionCreators.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/active_channels/ActiveChannelsActionCreators.tsx");
 
 export const fetchActiveChannels = function fetchActiveChannels(guildId) {
   return _fetchActiveChannels(...arguments);

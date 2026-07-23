@@ -1,5 +1,5 @@
 // Module ID: 966
-// Function ID: 10438
+// Function ID: 10439
 // Name: replaceExports
 // Dependencies: []
 
@@ -16,7 +16,7 @@ arg5.replaceExports = function replaceExports(arg0, arg1, arg2) {
         let tmp5 = arg0;
         let tmp6 = arg2;
         tmp.default = arg2;
-        // break
+        break;
       }
       break;
     }

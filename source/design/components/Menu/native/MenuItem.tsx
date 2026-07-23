@@ -1,13 +1,15 @@
-// Module ID: 12930
-// Function ID: 98550
+// Module ID: 13044
+// Function ID: 100706
 // Name: MenuItem
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 13042, 4545, 5158, 5177, 2]
 
-// Module 12930 (MenuItem)
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_5 = arg1(dependencyMap[2]).createStyles({ formIcon: {}, formLabel: {} });
-const obj2 = arg1(dependencyMap[2]);
+// Module 13044 (MenuItem)
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ formIcon: { width: 20, height: 20 }, formLabel: { fontSize: 14, fontWeight: "500" } });
 const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   let IconComponent;
   let disabled;
@@ -23,18 +25,18 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   if (disabled === undefined) {
     disabled = false;
   }
-  ref = action.action;
-  let importDefault;
+  action = action.action;
+  let menuClose;
   const tmp = callback();
-  importDefault = importAllResult.useContext(ref(dependencyMap[3]).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13042).MenuContext).menuClose;
   if (null != IconComponent) {
     let obj = { size: "sm" };
-    let tmp2 = <IconComponent {...obj} />;
+    let tmp2 = <IconComponent size="sm" />;
   } else {
     tmp2 = null;
     if (null != iconSource) {
       obj = { source: iconSource, style: tmp.formIcon };
-      tmp2 = jsx(importDefault(dependencyMap[4]), obj);
+      tmp2 = jsx(menuClose(4545), { source: iconSource, style: tmp.formIcon });
     }
   }
   obj = { ref, style, accessibilityRole: "menuitem", disabled };
@@ -57,15 +59,15 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   let tmp11 = label;
   if ("string" === typeof label) {
     const obj1 = { text: label, style: tmp.formLabel };
-    tmp11 = jsx(importDefault(dependencyMap[6]), obj1);
+    tmp11 = jsx(menuClose(5177), { text: label, style: tmp.formLabel });
   }
   obj.label = tmp11;
   obj.onPress = function onPress() {
     action();
     menuClose();
   };
-  return jsx(importDefault(dependencyMap[5]), obj);
+  return jsx(menuClose(5158), { ref, style, accessibilityRole: "menuitem", disabled });
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
 
 export const MenuItem = forwardRefResult;

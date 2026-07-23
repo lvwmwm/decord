@@ -1,18 +1,19 @@
-// Module ID: 7538
-// Function ID: 60357
+// Module ID: 7544
+// Function ID: 60394
 // Name: SafetyHubLinks
-// Dependencies: []
+// Dependencies: [7, 6, 653, 480, 2]
 
-// Module 7538 (SafetyHubLinks)
-const importDefaultResult = importDefault(dependencyMap[0]);
-let closure_0 = importDefault(dependencyMap[1]);
-const AnalyticsSections = arg1(dependencyMap[2]).AnalyticsSections;
+// Module 7544 (SafetyHubLinks)
+import importDefaultResult from "_defineProperties";
+import _classCallCheck from "_classCallCheck";
+import { AnalyticsSections } from "ME";
+
 let obj = { SETTINGS: "SETTINGS", ACCOUNT_STANDING: "ACCOUNT_STANDING", GUILD_SETTINGS: "GUILD_SETTINGS", ENCRYPTION: "ENCRYPTION", CONTENT_AND_SOCIAL: "CONTENT_AND_SOCIAL", DATA_PRIVACY: "DATA_PRIVACY" };
 const items = [, , ];
 ({ SETTINGS: arr[0], ACCOUNT_STANDING: arr[1], ENCRYPTION: arr[2] } = obj);
 class SafetyHubLinks {
   constructor() {
-    tmp = closure_0(this, SafetyHubLinks);
+    tmp = _classCallCheck(this, SafetyHubLinks);
     return;
   }
 }
@@ -26,7 +27,7 @@ importDefaultResultResult.SPAM_LINK = "https://support.discord.com/hc/requests/n
 importDefaultResultResult.LEARN_MORE_UU_APPEAL_LINK = "https://support.discord.com/hc/articles/360041820932";
 class SafetyHubPolicyNoticeKeys {
   constructor() {
-    tmp = closure_0(this, SafetyHubPolicyNoticeKeys);
+    tmp = _classCallCheck(this, SafetyHubPolicyNoticeKeys);
     return;
   }
 }
@@ -35,7 +36,7 @@ importDefaultResultResult1.CLASSIFICATION_ID = "classification_id";
 importDefaultResultResult1.INCIDENT_TIMESTAMP = "incident_time";
 class SafetySystemNotificationEmbedKeys {
   constructor() {
-    tmp = closure_0(this, SafetySystemNotificationEmbedKeys);
+    tmp = _classCallCheck(this, SafetySystemNotificationEmbedKeys);
     return;
   }
 }
@@ -55,9 +56,9 @@ const items1 = [, , , ];
 ({ DIDNT_VIOLATE_POLICY: arr2[0], TOO_STRICT_UNFAIR: arr2[1], DONT_AGREE_PENALTY: arr2[2], SOMETHING_ELSE: arr2[3] } = obj);
 const obj1 = {};
 const frozen = Object.freeze(obj);
-obj1.impression_group = arg1(dependencyMap[3]).ImpressionGroups.APPEAL_INGESTION;
+obj1.impression_group = require("isThrottled").ImpressionGroups.APPEAL_INGESTION;
 const obj2 = { SPEED_BUMP: "speed-bump", COLLECT_SIGNAL: "collect-signal", CONFIRM_SUBMISSION: "confirm-submission", REQUEST_SENT: "request-sent", THANKS: "thanks" };
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/safety_hub/SafetyHubConstants.tsx");
+const result = require("ME").fileFinishedImporting("modules/safety_hub/SafetyHubConstants.tsx");
 
 export const SafetyHubView = obj;
 export const SafetyHubViewOrder = items;
@@ -78,7 +79,7 @@ export const VIDEO_PLACEHOLDER_HEIGHT = 250;
 export const VIDEO_PLACEHOLDER_FILENAME = "video.png";
 export const APPEAL_INGESTION_IMPRESSION_PROPERTIES = obj1;
 export const AppealIngestionSlideTypes = obj2;
-export const AppealIngestionSlidesOrder = { [obj2.SPEED_BUMP]: { next: obj2.COLLECT_SIGNAL, prev: null }, [obj2.COLLECT_SIGNAL]: { next: obj2.CONFIRM_SUBMISSION, prev: obj2.SPEED_BUMP }, [obj2.CONFIRM_SUBMISSION]: { next: obj2.REQUEST_SENT, prev: obj2.COLLECT_SIGNAL }, [obj2.REQUEST_SENT]: { e: "o", context: "o" } };
+export const AppealIngestionSlidesOrder = { [obj2.SPEED_BUMP]: { next: obj2.COLLECT_SIGNAL, prev: null }, [obj2.COLLECT_SIGNAL]: { next: obj2.CONFIRM_SUBMISSION, prev: obj2.SPEED_BUMP }, [obj2.CONFIRM_SUBMISSION]: { next: obj2.REQUEST_SENT, prev: obj2.COLLECT_SIGNAL }, [obj2.REQUEST_SENT]: { next: null, prev: null } };
 export const ViolationType = { USER: 1, [1]: "USER", GUILD_OWNER: 2, [2]: "GUILD_OWNER", GUILD_MEMBER: 3, [3]: "GUILD_MEMBER" };
 export const AgeCheckStatus = { LOADING: "loading", ERROR: "error", SUCCESS: "success", FAILURE: "failure", NONE: "none" };
 export const AGE_CHECK_POLL_DELAY_MS = 2000;

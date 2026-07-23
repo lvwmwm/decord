@@ -1,120 +1,130 @@
-// Module ID: 5462
-// Function ID: 46664
+// Module ID: 5465
+// Function ID: 46683
 // Name: fetchApplication
-// Dependencies: []
+// Dependencies: [5, 5466, 4153, 4167, 653, 686, 507, 566, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 5462 (fetchApplication)
+// Module 5465 (fetchApplication)
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import importDefaultResult from "_isNativeReflectConstruct";
+import ME from "ME";
+import initialize from "initialize";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function fetchApplication() {
   return _fetchApplication(...arguments);
 }
 async function _fetchApplication(arg0, arg1) {
-  const fn = function*(applicationId, arg1, signal) {
+  let iter = (function*(applicationId, arg1, signal) {
     let flag = arg1;
     if (flag === undefined) {
       flag = false;
     }
     yield undefined;
-    let obj = callback2(closure_2[5]);
+    let obj = outer2_1(outer2_2[5]);
     obj = { type: "APPLICATION_FETCH", applicationId };
     obj.dispatch(obj);
-    const HTTP = callback(closure_2[6]).HTTP;
-    obj = { url: closure_7.APPLICATION_PUBLIC(applicationId), query: obj1, oldFormErrors: true, signal };
-    const obj1 = { with_guild: flag };
-    obj.rejectWithError = callback(closure_2[6]).rejectWithMigratedError();
+    const HTTP = outer2_0(outer2_2[6]).HTTP;
+    obj = { url: outer2_7.APPLICATION_PUBLIC(applicationId), query: obj1, oldFormErrors: true, signal };
+    obj1 = { with_guild: flag };
+    obj.rejectWithError = outer2_0(outer2_2[6]).rejectWithMigratedError();
     const tmp3 = yield HTTP.get(obj);
-    const obj5 = callback(closure_2[6]);
-    const obj2 = { maskRemainder: "rgba(0, 0, 0, 0.5)", overflow: 24, cardSection: "flex", application: tmp3.body };
-    callback2(closure_2[5]).dispatch(obj2);
+    const obj5 = outer2_0(outer2_2[6]);
+    const obj2 = { type: "APPLICATION_FETCH_SUCCESS", application: tmp3.body, isHydrated: true };
+    outer2_1(outer2_2[5]).dispatch(obj2);
     return tmp3.body;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const importDefaultResult = importDefault(dependencyMap[3]);
-const tmp3 = arg1(dependencyMap[4]);
-({ Endpoints: closure_7, NOOP: closure_8 } = tmp3);
+({ Endpoints: closure_7, NOOP: closure_8 } = ME);
 let obj = {
   createApplication(arg0) {
-    ({ name: closure_0, guildId: closure_1, type: closure_2, teamId: closure_3 } = arg0);
+    let dispatcher;
+    let dependencyMap;
+    let importDefault;
+    let require;
+    ({ name: require, guildId: importDefault, type: dependencyMap, teamId: dispatcher } = arg0);
     return callback(async () => {
-      const HTTP = callback(closure_2[6]).HTTP;
-      let obj = { url: constants.APPLICATIONS, body: obj };
-      obj = { name: callback, type: closure_2, guild_id: callback2, team_id: closure_3, rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
+      const HTTP = outer2_0(outer2_2[6]).HTTP;
+      obj = { url: outer2_7.APPLICATIONS, body: obj };
+      obj = { name: outer1_0, type: outer1_2, guild_id: outer1_1, team_id: outer1_3, rejectWithError: outer2_0(outer2_2[6]).rejectWithMigratedError() };
       const body = yield HTTP.post(obj).body;
-      let tmp = null != callback2;
+      let tmp = null != outer1_1;
       if (tmp) {
-        tmp = null != closure_2;
+        tmp = null != outer1_2;
       }
       if (tmp) {
         obj = { type: "APPLICATION_FETCH_SUCCESS", application: body };
-        callback2(closure_2[5]).dispatch(obj);
-        const obj4 = callback2(closure_2[5]);
+        outer2_1(outer2_2[5]).dispatch(obj);
+        const obj4 = outer2_1(outer2_2[5]);
       }
       return body;
     })();
   },
   getApplicationsForGuild(arg0, arg1) {
     let obj = arg1;
-    arg1 = arg0;
+    let closure_0 = arg0;
     if (arg1 === undefined) {
       obj = {};
     }
-    const importDefault = obj.includeTeam;
+    const includeTeam = obj.includeTeam;
     obj = Object.create(null);
     obj.includeTeam = 0;
     let closure_2 = Object.assign(obj, obj);
     return callback(async () => {
-      const HTTP = callback(closure_2[6]).HTTP;
-      let obj = { url: closure_7.GUILD_APPLICATIONS(callback) };
+      const HTTP = callback(507).HTTP;
+      let obj = { url: outer2_7.GUILD_APPLICATIONS(outer1_0) };
       obj = {};
-      const merged = Object.assign(closure_2);
-      obj["include_team"] = callback2;
+      const merged = Object.assign(outer1_2);
+      obj["include_team"] = outer1_1;
       obj.query = obj;
-      obj.rejectWithError = callback(closure_2[6]).rejectWithMigratedError();
+      obj.rejectWithError = callback(507).rejectWithMigratedError();
       const body = yield HTTP.get(obj).body;
-      const obj3 = callback(closure_2[6]);
-      callback2(closure_2[5]).dispatch({ type: "APPLICATIONS_FETCH_SUCCESS", applications: body });
+      const obj3 = callback(507);
+      includeTeam(686).dispatch({ type: "APPLICATIONS_FETCH_SUCCESS", applications: body });
       return body;
     })();
   },
   transferApplication(arg0) {
-    ({ applicationId: closure_0, teamId: closure_1 } = arg0);
+    let importDefault;
+    let require;
+    ({ applicationId: require, teamId: importDefault } = arg0);
     return callback(async () => {
-      const HTTP = callback(closure_2[6]).HTTP;
-      let obj = { url: closure_7.APPLICATION_OWNER_TRANSFER(callback), body: obj };
-      obj = { team_id: callback2, rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
+      const HTTP = outer2_0(outer2_2[6]).HTTP;
+      obj = { url: outer2_7.APPLICATION_OWNER_TRANSFER(outer1_0), body: obj };
+      obj = { team_id: outer1_1, rejectWithError: outer2_0(outer2_2[6]).rejectWithMigratedError() };
       const body = yield HTTP.post(obj).body;
-      const obj3 = callback(closure_2[6]);
-      callback2(closure_2[5]).dispatch({ type: "APPLICATION_FETCH_SUCCESS", application: body });
+      const obj3 = outer2_0(outer2_2[6]);
+      outer2_1(outer2_2[5]).dispatch({ type: "APPLICATION_FETCH_SUCCESS", application: body });
       return body;
     })();
   },
   fetchApplications(arg0) {
     let flag = arg1;
-    const arg1 = arg0;
+    let closure_0 = arg0;
     if (arg1 === undefined) {
       flag = true;
     }
-    const importDefault = flag;
     return callback(async () => {
       let set;
-      let found = set;
-      if (!callback) {
-        found = set.filter((applicationId) => {
-          let isHydratedResult = null != closure_6.getApplication(applicationId);
+      let found = outer1_0;
+      if (!outer1_1) {
+        found = outer1_0.filter((applicationId) => {
+          let isHydratedResult = null != outer3_6.getApplication(applicationId);
           if (isHydratedResult) {
-            isHydratedResult = closure_6.isHydrated(applicationId);
+            isHydratedResult = outer3_6.isHydrated(applicationId);
           }
           let tmp3 = !isHydratedResult;
           if (tmp3) {
-            tmp3 = !closure_6.isFetchingApplication(applicationId);
+            tmp3 = !outer3_6.isFetchingApplication(applicationId);
           }
           if (tmp3) {
-            tmp3 = !closure_6.didFetchingApplicationFail(applicationId);
+            tmp3 = !outer3_6.didFetchingApplicationFail(applicationId);
           }
           if (tmp3) {
             tmp3 = applicationId.length > 0;
@@ -124,34 +134,34 @@ let obj = {
       }
       if (found.length > 0) {
         let obj = { type: "APPLICATIONS_FETCH", applicationIds: found };
-        callback(closure_2[5]).dispatch(obj);
-        const HTTP = set(closure_2[6]).HTTP;
-        obj = { url: constants.APPLICATIONS_PUBLIC };
+        flag(outer2_2[5]).dispatch(obj);
+        const HTTP = callback(outer2_2[6]).HTTP;
+        obj = { url: outer2_7.APPLICATIONS_PUBLIC };
         const _URLSearchParams = URLSearchParams;
         const str3 = new URLSearchParams(found.map((arg0) => {
-          const items = ["accessible", arg0];
+          const items = ["application_ids", arg0];
           return items;
         }));
         obj.query = str3.toString();
         obj.oldFormErrors = true;
-        const obj3 = callback(closure_2[5]);
-        obj.rejectWithError = set(closure_2[6]).rejectWithMigratedError();
+        const obj3 = flag(outer2_2[5]);
+        obj.rejectWithError = callback(outer2_2[6]).rejectWithMigratedError();
         const tmp25 = yield HTTP.get(obj);
         const body = tmp25.body;
         const _Set = Set;
         set = new Set(body.map((id) => id.id));
         const found1 = found.filter((arg0) => !set.has(arg0));
-        obj = callback(closure_2[5]);
+        obj = flag(outer2_2[5]);
         const obj1 = { type: "APPLICATIONS_FETCH_SUCCESS", applications: tmp25.body, unknownApplicationIds: found1, isHydrated: true };
         obj.dispatch(obj1);
-        const obj6 = set(closure_2[6]);
+        const obj6 = callback(outer2_2[6]);
       }
     })();
   },
   fetchApplication
 };
 obj = {
-  getQueryId: tmp3.QueryIds.APPLICATIONS,
+  getQueryId: ME.QueryIds.APPLICATIONS,
   get(applicationId) {
     let tmp = null;
     if (null != applicationId) {
@@ -183,28 +193,26 @@ obj = {
     return result;
   }
 };
-const fetchStore = arg1(dependencyMap[7]).createFetchStore(importDefaultResult, obj);
-const obj2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/applications/ApplicationActionCreators.tsx");
+const fetchStore = initialize.createFetchStore(importDefaultResult, obj);
+let result = require("_callSuper").fileFinishedImporting("modules/applications/ApplicationActionCreators.tsx");
 
 export default obj;
 export { fetchApplication };
 export const useApplication = fetchStore;
 export const useApplicationWithLoggedOutContext = function useApplicationWithLoggedOutContext(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   let tmp;
   const tmp2 = fetchStore(arg0);
   const data = tmp2.data;
-  const importDefault = data;
   const error = tmp2.error;
   const obj = {};
-  const items = [closure_4];
+  const items = [_isNativeReflectConstruct];
   const items1 = [arg0, data];
-  obj.app = arg1(dependencyMap[7]).useStateFromStores(items, () => {
+  obj.app = _require(566).useStateFromStores(items, () => {
     if (null == data) {
-      const application = application.getApplication(arg0);
+      const application = outer1_4.getApplication(closure_0);
       if (null != application) {
-        return closure_5.createFromServer(application);
+        return outer1_5.createFromServer(application);
       }
     }
     return data;

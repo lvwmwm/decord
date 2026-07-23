@@ -1,26 +1,28 @@
-// Module ID: 8236
-// Function ID: 65030
+// Module ID: 8242
+// Function ID: 65067
 // Name: useFramePreviewOverrideFrame
-// Dependencies: []
+// Dependencies: [31, 6781, 8243, 1876, 2]
 // Exports: default
 
-// Module 8236 (useFramePreviewOverrideFrame)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).useFramePreviewOverrideStore;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/profile_frames/hooks/useFramePreviewOverrideFrame.native.tsx");
+// Module 8242 (useFramePreviewOverrideFrame)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { useFramePreviewOverrideStore as closure_4 } from "_createForOfIteratorHelperLoose";
+
+let require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/profile_frames/hooks/useFramePreviewOverrideFrame.native.tsx");
 
 export default function useFramePreviewOverrideFrame() {
-  const tmp = callback((override) => override.override);
-  const arg1 = tmp;
+  let tmp = callback((override) => override.override);
+  const require = tmp;
   const items = [tmp];
   return React.useMemo(() => {
     let tmp = null;
     if (null != tmp) {
-      const obj = { type: tmp(closure_1[3]).CollectiblesItemType.PROFILE_FRAME, skuId: "frame-preview-override" };
+      const obj = { type: tmp(outer1_1[3]).CollectiblesItemType.PROFILE_FRAME, skuId: "frame-preview-override" };
       ({ frameKey: obj.label, layers: obj.layers, innerWidth: obj.innerWidth, overflowTop: obj.overflowTop, overflowBottom: obj.overflowBottom, overflowHorizontal: obj.overflowHorizontal } = tmp);
-      const prototype = ctor.prototype;
-      tmp = new ctor(obj);
+      const prototype = outer1_3.prototype;
+      tmp = new outer1_3(obj);
     }
     return tmp;
   }, items);

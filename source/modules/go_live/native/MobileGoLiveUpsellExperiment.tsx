@@ -1,12 +1,13 @@
-// Module ID: 10686
-// Function ID: 83294
+// Module ID: 10696
+// Function ID: 83343
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 10686 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { showMobileGoLiveUpsell: false }, variations: { [1]: { "Bool(true)": null, "Bool(true)": 0.5 }, [2]: {} } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/go_live/native/MobileGoLiveUpsellExperiment.tsx");
+// Module 10696 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-mobile-go-live-upsell", kind: "user", defaultConfig: { showMobileGoLiveUpsell: false }, variations: { [1]: { showMobileGoLiveUpsell: true, goLiveUpsellVariant: "one-step" }, [2]: { showMobileGoLiveUpsell: true, goLiveUpsellVariant: "two-step" } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/go_live/native/MobileGoLiveUpsellExperiment.tsx");
 
 export default apexExperiment;

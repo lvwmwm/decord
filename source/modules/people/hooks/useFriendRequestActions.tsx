@@ -1,28 +1,26 @@
-// Module ID: 12033
-// Function ID: 92985
+// Module ID: 12147
+// Function ID: 95136
 // Name: useFriendRequestActions
-// Dependencies: []
+// Dependencies: [31, 9057, 2]
 // Exports: useFriendRequestActions
 
-// Module 12033 (useFriendRequestActions)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/people/hooks/useFriendRequestActions.tsx");
+// Module 12147 (useFriendRequestActions)
+import result from "result";
+
+let result = require("set").fileFinishedImporting("modules/people/hooks/useFriendRequestActions.tsx");
 
 export const useFriendRequestActions = function useFriendRequestActions(userId) {
   userId = userId.userId;
-  const importDefault = userId;
   const applicationId = userId.applicationId;
-  const dependencyMap = applicationId;
   const isGameRelationship = userId.isGameRelationship;
-  const React = isGameRelationship;
   const _location = userId.location;
   const onConfirm = userId.onConfirm;
   const onCancel = userId.onCancel;
   const onFinally = userId.onFinally;
   const items = [applicationId, isGameRelationship, _location, userId];
-  const obj = {};
+  let obj = {};
   const items1 = [applicationId, isGameRelationship, _location, onCancel, onConfirm, onFinally, userId];
-  const callback = React.useCallback(() => {
+  const callback = isGameRelationship.useCallback(() => {
     let obj = userId(applicationId[1]);
     obj = { userId };
     let tmp = null;
@@ -33,7 +31,7 @@ export const useFriendRequestActions = function useFriendRequestActions(userId) 
     obj.location = _location;
     obj.cancelFriendRequest(obj);
   }, items);
-  obj.acceptFriendRequest = React.useCallback(() => {
+  obj.acceptFriendRequest = isGameRelationship.useCallback(() => {
     let obj = userId(applicationId[1]);
     obj = { userId };
     let tmp = null;

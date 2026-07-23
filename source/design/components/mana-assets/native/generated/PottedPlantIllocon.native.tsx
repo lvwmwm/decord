@@ -1,13 +1,13 @@
-// Module ID: 6411
-// Function ID: 50549
+// Module ID: 6416
+// Function ID: 50578
 // Name: PottedPlantIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6417, 2]
 // Exports: PottedPlantIllocon
 
-// Module 6411 (PottedPlantIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/PottedPlantIllocon.native.tsx");
+// Module 6416 (PottedPlantIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PottedPlantIllocon.native.tsx");
 
 export const PottedPlantIllocon = function PottedPlantIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const PottedPlantIllocon = function PottedPlantIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6417) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const PottedPlantIllocon = function PottedPlantIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

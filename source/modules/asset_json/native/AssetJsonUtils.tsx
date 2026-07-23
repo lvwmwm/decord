@@ -1,34 +1,40 @@
 // Module ID: 1215
-// Function ID: 13991
+// Function ID: 13992
 // Name: loadJsonAsset
-// Dependencies: []
+// Dependencies: [5, 27, 1216, 1218, 1219, 1220, 1221, 1222, 1223, 1224, 1225, 1226, 1227, 1228, 1229, 1230, 1231, 1232, 1233, 1234, 1235, 1236, 1237, 1238, 1239, 1240, 1241, 1242, 1243, 1244, 1245, 1246, 477, 1247, 2]
 
 // Module 1215 (loadJsonAsset)
+import registerAsset from "registerAsset";
+import get_ActivityIndicator from "registerAsset";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function loadJsonAsset(arg0) {
   return _loadJsonAsset(...arguments);
 }
 async function _loadJsonAsset(arg0, arg1) {
-  const fn = function*(source) {
+  let iter = (function*(source) {
     let flag = arg1;
     if (flag === undefined) {
       flag = true;
     }
     yield undefined;
-    if (null != closure_6[source]) {
+    if (null != outer2_6[source]) {
       if (flag) {
-        return closure_6[source];
+        return outer2_6[source];
       }
     }
-    const uri = closure_4.resolveAssetSource(source).uri;
+    const uri = outer2_4.resolveAssetSource(source).uri;
     if (obj.isAndroid()) {
       let asset;
-      if (null != callback2(closure_2[33])) {
-        asset = callback2(closure_2[33]).readAsset(uri, "utf8");
-        const obj2 = callback2(closure_2[33]);
+      if (null != outer2_1(outer2_2[33])) {
+        asset = outer2_1(outer2_2[33]).readAsset(uri, "utf8");
+        const obj2 = outer2_1(outer2_2[33]);
       }
       let asset1 = asset;
     } else {
-      const DCDFileManager = DCDFileManager.DCDFileManager;
+      const DCDFileManager = outer2_5.DCDFileManager;
       asset1 = DCDFileManager.readAsset(uri, "utf8");
     }
     if (null == asset1) {
@@ -40,119 +46,116 @@ async function _loadJsonAsset(arg0, arg1) {
       if (null == tmp9) {
         return null;
       } else {
-        if (null != closure_6[source]) {
+        if (null != outer2_6[source]) {
           if (flag) {
-            return closure_6[source];
+            return outer2_6[source];
           }
         }
         const _JSON = JSON;
         const parsed = JSON.parse(tmp9);
-        closure_6[source] = parsed;
+        outer2_6[source] = parsed;
         return parsed;
       }
     }
-    const obj = callback(closure_2[32]);
-  };
-  fn.next();
-  return fn;
+    obj = outer2_0(outer2_2[32]);
+  })();
+  iter.next();
+  return iter;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ Image: closure_4, NativeModules: closure_5 } = arg1(dependencyMap[1]));
+({ Image: closure_4, NativeModules: closure_5 } = get_ActivityIndicator);
 let closure_6 = {};
-const obj = {
+const result = require("registerAsset").fileFinishedImporting("modules/asset_json/native/AssetJsonUtils.tsx");
+
+export const jsonAssets = {
   i18n_bg() {
-    return loadJsonAsset(arg1(dependencyMap[2]));
+    return loadJsonAsset(require(1216) /* registerAsset */);
   },
   i18n_cs() {
-    return loadJsonAsset(arg1(dependencyMap[3]));
+    return loadJsonAsset(require(1218) /* registerAsset */);
   },
   i18n_da() {
-    return loadJsonAsset(arg1(dependencyMap[4]));
+    return loadJsonAsset(require(1219) /* registerAsset */);
   },
   i18n_de() {
-    return loadJsonAsset(arg1(dependencyMap[5]));
+    return loadJsonAsset(require(1220) /* registerAsset */);
   },
   i18n_el() {
-    return loadJsonAsset(arg1(dependencyMap[6]));
+    return loadJsonAsset(require(1221) /* registerAsset */);
   },
   i18n_enGB() {
-    return loadJsonAsset(arg1(dependencyMap[7]));
+    return loadJsonAsset(require(1222) /* registerAsset */);
   },
   i18n_esES() {
-    return loadJsonAsset(arg1(dependencyMap[8]));
+    return loadJsonAsset(require(1223) /* registerAsset */);
   },
   i18n_es419() {
-    return loadJsonAsset(arg1(dependencyMap[9]));
+    return loadJsonAsset(require(1224) /* registerAsset */);
   },
   i18n_fi() {
-    return loadJsonAsset(arg1(dependencyMap[10]));
+    return loadJsonAsset(require(1225) /* registerAsset */);
   },
   i18n_fr() {
-    return loadJsonAsset(arg1(dependencyMap[11]));
+    return loadJsonAsset(require(1226) /* registerAsset */);
   },
   i18n_hr() {
-    return loadJsonAsset(arg1(dependencyMap[12]));
+    return loadJsonAsset(require(1227) /* registerAsset */);
   },
   i18n_hu() {
-    return loadJsonAsset(arg1(dependencyMap[13]));
+    return loadJsonAsset(require(1228) /* registerAsset */);
   },
   i18n_it() {
-    return loadJsonAsset(arg1(dependencyMap[14]));
+    return loadJsonAsset(require(1229) /* registerAsset */);
   },
   i18n_ja() {
-    return loadJsonAsset(arg1(dependencyMap[15]));
+    return loadJsonAsset(require(1230) /* registerAsset */);
   },
   i18n_ko() {
-    return loadJsonAsset(arg1(dependencyMap[16]));
+    return loadJsonAsset(require(1231) /* registerAsset */);
   },
   i18n_lt() {
-    return loadJsonAsset(arg1(dependencyMap[17]));
+    return loadJsonAsset(require(1232) /* registerAsset */);
   },
   i18n_nl() {
-    return loadJsonAsset(arg1(dependencyMap[18]));
+    return loadJsonAsset(require(1233) /* registerAsset */);
   },
   i18n_no() {
-    return loadJsonAsset(arg1(dependencyMap[19]));
+    return loadJsonAsset(require(1234) /* registerAsset */);
   },
   i18n_pl() {
-    return loadJsonAsset(arg1(dependencyMap[20]));
+    return loadJsonAsset(require(1235) /* registerAsset */);
   },
   i18n_ptBR() {
-    return loadJsonAsset(arg1(dependencyMap[21]));
+    return loadJsonAsset(require(1236) /* registerAsset */);
   },
   i18n_ro() {
-    return loadJsonAsset(arg1(dependencyMap[22]));
+    return loadJsonAsset(require(1237) /* registerAsset */);
   },
   i18n_ru() {
-    return loadJsonAsset(arg1(dependencyMap[23]));
+    return loadJsonAsset(require(1238) /* registerAsset */);
   },
   i18n_svSE() {
-    return loadJsonAsset(arg1(dependencyMap[24]));
+    return loadJsonAsset(require(1239) /* registerAsset */);
   },
   i18n_th() {
-    return loadJsonAsset(arg1(dependencyMap[25]));
+    return loadJsonAsset(require(1240) /* registerAsset */);
   },
   i18n_tr() {
-    return loadJsonAsset(arg1(dependencyMap[26]));
+    return loadJsonAsset(require(1241) /* registerAsset */);
   },
   i18n_uk() {
-    return loadJsonAsset(arg1(dependencyMap[27]));
+    return loadJsonAsset(require(1242) /* registerAsset */);
   },
   i18n_vi() {
-    return loadJsonAsset(arg1(dependencyMap[28]));
+    return loadJsonAsset(require(1243) /* registerAsset */);
   },
   i18n_zhCN() {
-    return loadJsonAsset(arg1(dependencyMap[29]));
+    return loadJsonAsset(require(1244) /* registerAsset */);
   },
   i18n_zhTW() {
-    return loadJsonAsset(arg1(dependencyMap[30]));
+    return loadJsonAsset(require(1245) /* registerAsset */);
   },
   i18n_hi() {
-    return loadJsonAsset(arg1(dependencyMap[31]));
+    return loadJsonAsset(require(1246) /* registerAsset */);
   }
 };
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/asset_json/native/AssetJsonUtils.tsx");
-
-export const jsonAssets = obj;
 export { loadJsonAsset };

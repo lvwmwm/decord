@@ -1,18 +1,19 @@
-// Module ID: 4672
-// Function ID: 40715
+// Module ID: 4675
+// Function ID: 40733
 // Name: NativePermissionsRequestOptions
-// Dependencies: []
+// Dependencies: [4676, 4677, 4678, 4682, 2, 4679]
 
-// Module 4672 (NativePermissionsRequestOptions)
-importDefault(dependencyMap[0]).initialize();
-const ProcessArgs = arg1(dependencyMap[1]).ProcessArgs;
+// Module 4675 (NativePermissionsRequestOptions)
+import { ProcessArgs } from "ProcessArgs";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+require("_isNativeReflectConstruct").initialize();
 if (ProcessArgs.isDiscordTestSet()) {
-  let _default = arg1(dependencyMap[2]).default;
+  let _default = require("_isNativeReflectConstruct").default;
 } else {
-  _default = arg1(dependencyMap[3]).default;
+  _default = require("_createForOfIteratorHelperLoose").default;
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/native_permissions/NativePermissionUtils.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/native_permissions/NativePermissionUtils.tsx");
 
 export default _default;
-export const NativePermissionsRequestOptions = arg1(dependencyMap[5]).NativePermissionsRequestOptions;
+export const NativePermissionsRequestOptions = require("NativePermissionBaseUtils").NativePermissionsRequestOptions;

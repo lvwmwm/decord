@@ -1,15 +1,17 @@
 // Module ID: 975
-// Function ID: 10487
+// Function ID: 10488
 // Name: getDevServer
-// Dependencies: []
+// Dependencies: [91]
 
 // Module 975 (getDevServer)
+const module = arg2;
+const dependencyMap = arg6;
 arg5.default = function getDevServer() {
   if (undefined === first) {
-    let obj = arg2(arg6[0]);
+    let obj = module(91);
     const str = obj.getConstants().scriptURL;
     const match = str.match(/^https?:\/\/.*?\//);
-    let first = null;
+    first = null;
     if (match) {
       first = match[0];
     }
@@ -17,6 +19,7 @@ arg5.default = function getDevServer() {
     if (match) {
       tmp5 = str;
     }
+    let closure_3 = tmp5;
   }
   obj = {};
   let str2 = "http://localhost:8081/";
@@ -24,7 +27,7 @@ arg5.default = function getDevServer() {
     str2 = first;
   }
   obj.url = str2;
-  obj.fullBundleUrl = tmp5;
+  obj.fullBundleUrl = closure_3;
   obj.bundleLoadedFromServer = null !== first;
   return obj;
 };

@@ -1,53 +1,67 @@
-// Module ID: 15648
-// Function ID: 119478
+// Module ID: 15765
+// Function ID: 121651
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 4143, 1194, 1348, 4202, 4146, 4203, 10015, 653, 15719, 566, 15058, 10014, 10017, 2]
 // Exports: default, useChunkedParticipants
 
-// Module 15648 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15765 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import VoicePanelModes from "VoicePanelModes";
+import { RTCConnectionStates } from "ME";
+
+let closure_11;
+let closure_12;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +72,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,54 +107,40 @@ function getMemoizedParticipant(type, get) {
   }
   return value;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-({ VoicePanelCardItemType: closure_11, VoicePanelCTACard: closure_12 } = arg1(dependencyMap[8]));
-const RTCConnectionStates = arg1(dependencyMap[9]).RTCConnectionStates;
+({ VoicePanelCardItemType: closure_11, VoicePanelCTACard: closure_12 } = VoicePanelModes);
 let closure_14 = [];
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelParticipants.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelParticipants.tsx");
 
 export default function useVoicePanelCards(channelId) {
-  const arg1 = channelId;
+  const _require = channelId;
   const importDefault = arg1;
-  const id = store.getId();
-  const dependencyMap = id;
-  let channel = channel.getChannel(channelId);
+  const id = stateFromStores.getId();
+  const channel = desyncedChannelParticipants.getChannel(channelId);
   let isDMResult;
   if (null != channel) {
     isDMResult = channel.isDM();
   }
   const callback = tmp3;
-  const tmp4 = importDefault(dependencyMap[10])(channelId);
+  const tmp4 = importDefault(id[10])(channelId);
   const React = tmp4;
   const first = callback(React.useState(() => new Map()), 1)[0];
-  let closure_5 = first;
-  const items = [first];
-  const effect = React.useEffect(() => () => closure_5.clear(), items);
-  const items1 = [closure_8];
-  const stateFromStores = arg1(dependencyMap[11]).useStateFromStores(items1, () => state.getState() === constants3.RTC_CONNECTED);
-  const store = stateFromStores;
-  const obj2 = arg1(dependencyMap[11]);
-  const desyncedChannelParticipants = arg1(dependencyMap[12]).useDesyncedChannelParticipants(channelId);
-  channel = desyncedChannelParticipants;
-  const obj = {};
-  const obj3 = arg1(dependencyMap[12]);
-  const items2 = [closure_5, closure_10];
+  let items = [first];
+  const effect = React.useEffect(() => () => outer1_5.clear(), items);
+  let items1 = [closure_8];
+  stateFromStores = _require(id[11]).useStateFromStores(items1, () => outer1_8.getState() === outer1_13.RTC_CONNECTED);
+  const obj2 = _require(id[11]);
+  desyncedChannelParticipants = _require(id[12]).useDesyncedChannelParticipants(channelId);
+  let obj = {};
+  const obj3 = _require(id[12]);
+  let items2 = [first, closure_10];
   const items3 = [tmp4, desyncedChannelParticipants, channelId, arg1, first, null != isDMResult && isDMResult, id, stateFromStores];
-  obj.items = arg1(dependencyMap[11]).useStateFromStoresArray(items2, () => {
+  obj.items = _require(id[11]).useStateFromStoresArray(items2, () => {
     let done;
     let length;
-    if (tmp4) {
-      let voiceParticipantsHidden = first.getVoiceParticipantsHidden(arg0);
+    if (result) {
+      let voiceParticipantsHidden = first.getVoiceParticipantsHidden(closure_0);
       const items = [];
-      const filteredParticipants = first.getFilteredParticipants(arg0);
+      const filteredParticipants = first.getFilteredParticipants(closure_0);
       let num3 = 0;
       if (0 < filteredParticipants.length) {
         do {
@@ -151,7 +151,7 @@ export default function useVoicePanelCards(channelId) {
       }
       if (!voiceParticipantsHidden) {
         if (null != desyncedChannelParticipants) {
-          const tmp12 = callback(desyncedChannelParticipants);
+          const tmp12 = outer1_15(desyncedChannelParticipants);
           let iter = tmp12();
           if (!iter.done) {
             do {
@@ -172,56 +172,56 @@ export default function useVoicePanelCards(channelId) {
       let tmp16;
       if (0 < items2.length) {
         do {
-          let tmp17 = closure_17;
+          let tmp17 = outer1_17;
           let obj = {};
-          let tmp18 = closure_11;
-          obj.type = closure_11.PARTICIPANT;
+          let tmp18 = outer1_11;
+          obj.type = outer1_11.PARTICIPANT;
           obj.id = items2[num4].id;
-          let tmp19 = closure_5;
-          let tmp20 = closure_17(obj, closure_5);
-          let tmp21 = closure_3;
-          if (!closure_3) {
+          let tmp19 = first;
+          let tmp20 = outer1_17(obj, first);
+          let tmp21 = _slicedToArray;
+          if (!_slicedToArray) {
             let arr1 = items1.push(tmp20);
             let tmp23 = tmp15;
           } else {
-            let tmp22 = closure_2;
+            let tmp22 = id;
             tmp23 = tmp20;
           }
           num4 = num4 + 1;
-          let tmp15 = tmp23;
+          tmp15 = tmp23;
           tmp16 = tmp23;
         } while (num4 < items2.length);
       }
       if (null != tmp16) {
         items1.push(tmp16);
       }
-      let tmp26 = tmp3;
-      if (tmp3) {
+      let tmp26 = _slicedToArray;
+      if (_slicedToArray) {
         tmp26 = stateFromStores;
       }
       if (tmp26) {
         tmp26 = 1 === items1.length;
       }
       if (tmp26) {
-        obj = { type: constants.CTA, id: constants2.CALLER_DISCONNECTED };
-        items1.push(callback2(obj, first));
+        obj = { type: outer1_11.CTA, id: outer1_12.CALLER_DISCONNECTED };
+        items1.push(outer1_17(obj, first));
       }
       if (voiceParticipantsHidden) {
         voiceParticipantsHidden = 0 === items.length;
       }
       if (voiceParticipantsHidden) {
-        obj = { type: constants.CTA, id: constants2.NO_VIDEO_PARTICIPANTS };
-        items1.push(callback2(obj, first));
+        obj = { type: outer1_11.CTA, id: outer1_12.NO_VIDEO_PARTICIPANTS };
+        items1.push(outer1_17(obj, first));
       }
       if (items1.length <= 0) {
-        items1 = closure_14;
+        items1 = outer1_14;
       }
       return items1;
     } else {
-      const voiceStatesForChannelAlt = voiceStatesForChannelAlt.getVoiceStatesForChannelAlt(arg0, arg1);
-      let mapped = voiceStatesForChannelAlt.map((id) => callback({ type: constants.PARTICIPANT, id: id.user.id }, closure_5));
+      const voiceStatesForChannelAlt = outer1_10.getVoiceStatesForChannelAlt(closure_0, closure_1);
+      let mapped = voiceStatesForChannelAlt.map((id) => outer2_17({ type: outer2_11.PARTICIPANT, id: id.user.id }, outer1_5));
       if (mapped.length <= 0) {
-        mapped = closure_14;
+        mapped = outer1_14;
       }
       return mapped;
     }
@@ -230,41 +230,37 @@ export default function useVoicePanelCards(channelId) {
   return obj;
 };
 export const useChunkedParticipants = function useChunkedParticipants(channelId, arg1) {
-  arg1 = channelId;
+  const _require = channelId;
   const importDefault = arg1;
-  const id = store.getId();
-  const dependencyMap = id;
-  const layoutManager = React.useContext(importDefault(dependencyMap[13])).layoutManager;
-  const callback = layoutManager;
-  const managerSubscription = arg1(dependencyMap[14]).useManagerSubscription(layoutManager);
-  const React = managerSubscription;
-  const first = callback(React.useState(() => new Map()), 1)[0];
-  let closure_5 = first;
-  const items = [first];
-  const effect = React.useEffect(() => () => closure_5.clear(), items);
-  const obj = arg1(dependencyMap[14]);
-  const items1 = [closure_9, closure_5];
-  const items2 = [channelId, first, layoutManager, arg1, managerSubscription, id];
-  return arg1(dependencyMap[11]).useStateFromStoresArray(items1, (arg0, self) => {
+  id = id.getId();
+  const layoutManager = managerSubscription.useContext(importDefault(id[13])).layoutManager;
+  managerSubscription = _require(id[14]).useManagerSubscription(layoutManager);
+  const first = layoutManager(managerSubscription.useState(() => new Map()), 1)[0];
+  let items = [first];
+  const effect = managerSubscription.useEffect(() => () => outer1_5.clear(), items);
+  let obj = _require(id[14]);
+  let items1 = [closure_9, first];
+  let items2 = [channelId, first, layoutManager, arg1, managerSubscription, id];
+  return _require(id[11]).useStateFromStoresArray(items1, () => {
     let done;
     let end;
     if (managerSubscription < 0) {
-      return closure_14;
+      return outer1_14;
     } else {
       let items = [];
-      if (inChannel.isInChannel(arg0, id)) {
+      if (outer1_9.isInChannel(closure_0, id)) {
         let _Set = Set;
         const items1 = [];
-        let start = self.start;
-        if (start <= self.end) {
+        let start = closure_1.start;
+        if (start <= closure_1.end) {
           do {
-            let tmp4 = closure_3;
+            let tmp4 = layoutManager;
             let push = items1.push;
             let _Array = Array;
             let items2 = [];
             let tmp5 = items2;
             let num = 0;
-            let arraySpreadResult = HermesBuiltin.arraySpread(Array.from(closure_3.getChunk(start)), 0);
+            let arraySpreadResult = HermesBuiltin.arraySpread(Array.from(layoutManager.getChunk(start)), 0);
             let tmp7 = push;
             let tmp8 = items2;
             let tmp9 = items1;
@@ -276,24 +272,24 @@ export const useChunkedParticipants = function useChunkedParticipants(channelId,
         }
         const prototype = _Set.prototype;
         _Set = new _Set(items1);
-        const tmpResult = closure_15(_Set);
+        const tmpResult = outer1_15(_Set);
         let iter = tmpResult();
         if (!iter.done) {
           do {
-            let tmp18 = closure_17;
-            let tmp19 = closure_5;
-            let arr = items.push(closure_17(iter.value, closure_5));
+            let tmp18 = outer1_17;
+            let tmp19 = first;
+            let arr = items.push(outer1_17(iter.value, first));
             let iter2 = tmpResult();
             iter = iter2;
             done = iter2.done;
           } while (!done);
         }
         if (tmp23) {
-          const obj = { type: constants.CTA, id: constants2.NO_VIDEO_PARTICIPANTS };
-          items.push(callback(obj, first));
+          const obj = { type: outer1_11.CTA, id: outer1_12.NO_VIDEO_PARTICIPANTS };
+          items.push(outer1_17(obj, first));
         }
         if (items.length <= 0) {
-          items = closure_14;
+          items = outer1_14;
         }
         return items;
       } else {

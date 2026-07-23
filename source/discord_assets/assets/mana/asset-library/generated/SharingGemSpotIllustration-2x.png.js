@@ -1,11 +1,10 @@
-// Module ID: 6500
-// Function ID: 50683
+// Module ID: 6505
+// Function ID: 50712
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6500 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SharingGemSpotIllustration-2x.png.js");
+// Module 6505 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SharingGemSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/d3c25c53df58c0605338e5bf276e6823eab4cc11449e08502c81b02d264509cb.png";
 export const metadata = { fileBytes: 35711 };

@@ -1,34 +1,35 @@
-// Module ID: 6679
-// Function ID: 51406
+// Module ID: 6684
+// Function ID: 51438
 // Name: useInterval
-// Dependencies: [57, 5, 6]
+// Dependencies: [31, 44, 2]
 // Exports: default
 
-// Module 6679 (useInterval)
-import _slicedToArray from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
+// Module 6684 (useInterval)
+import result from "result";
 
-({ useEffect: closure_2, useRef: closure_3 } = _slicedToArray);
-const result = _classCallCheck.fileFinishedImporting("hooks/useInterval.tsx");
+let closure_2;
+let closure_3;
+({ useEffect: closure_2, useRef: closure_3 } = result);
+result = require("set").fileFinishedImporting("hooks/useInterval.tsx");
 
 export default function useInterval(arg0, arg1) {
-  const importDefault = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   const callback = callback2(arg0);
-  const callback2 = callback2(null);
+  callback2 = callback2(null);
   const items = [arg0];
   callback(() => {
-    closure_2.current = arg0;
+    closure_2.current = closure_0;
   }, items);
   const items1 = [arg1];
   callback(() => {
-    if (null !== arg1) {
+    if (null !== closure_1) {
       const _setInterval = setInterval;
       ref.current = setInterval(() => {
-        callback(closure_1[1])(null != ref.current, "Missing callback");
-        ref.current();
-      }, arg1);
-      return () => clearInterval(ref2.current);
+        callback(table[1])(null != outer1_2.current, "Missing callback");
+        outer1_2.current();
+      }, closure_1);
+      return () => clearInterval(outer1_3.current);
     } else if (null !== ref.current) {
       const _clearInterval = clearInterval;
       clearInterval(ref.current);

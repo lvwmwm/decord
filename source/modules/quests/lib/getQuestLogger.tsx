@@ -1,23 +1,24 @@
-// Module ID: 6943
-// Function ID: 55498
+// Module ID: 6948
+// Function ID: 55532
 // Name: getQuestLogger
-// Dependencies: []
+// Dependencies: [683, 482, 3, 2]
 // Exports: getQuestLogger
 
-// Module 6943 (getQuestLogger)
-let closure_2 = importDefault(dependencyMap[0]);
-const NOOP = arg1(dependencyMap[1]).NOOP;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/quests/lib/getQuestLogger.tsx");
+// Module 6948 (getQuestLogger)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { NOOP } from "sum";
 
-export const getQuestLogger = function getQuestLogger(arg0) {
+const result = require("timestamp").fileFinishedImporting("modules/quests/lib/getQuestLogger.tsx");
+
+export const getQuestLogger = function getQuestLogger(getQuestLogger) {
   let _location;
   let quest;
-  let obj = arg0;
-  if (arg0 === undefined) {
+  let obj = getQuestLogger;
+  if (getQuestLogger === undefined) {
     obj = {};
   }
   ({ quest, location: _location } = obj);
-  const isLoggingQuestEvents = isLoggingQuestEvents.isLoggingQuestEvents;
+  isLoggingQuestEvents = isLoggingQuestEvents.isLoggingQuestEvents;
   let questName;
   if (null != quest) {
     questName = quest.config.messages.questName;
@@ -32,7 +33,7 @@ export const getQuestLogger = function getQuestLogger(arg0) {
     const _HermesInternal2 = HermesInternal;
     str = "-" + questName + ")";
   }
-  let tmp4 = importDefault(dependencyMap[2]);
+  let tmp4 = importDefault(3);
   tmp4 = new tmp4("QuestLogger" + str2 + str);
   obj = { log: isLoggingQuestEvents ? tmp4.log : NOOP, warn: isLoggingQuestEvents ? tmp4.warn : NOOP, error: isLoggingQuestEvents ? tmp4.error : NOOP, info: isLoggingQuestEvents ? tmp4.info : NOOP, verbose: isLoggingQuestEvents ? tmp4.verbose : NOOP, trace: isLoggingQuestEvents ? tmp4.trace : NOOP };
   return obj;

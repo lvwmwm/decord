@@ -1,11 +1,11 @@
-// Module ID: 9493
-// Function ID: 73984
+// Module ID: 9500
+// Function ID: 74025
 // Name: FeedbackRating
-// Dependencies: []
+// Dependencies: [1282, 2]
 
-// Module 9493 (FeedbackRating)
-const obj = { BAD: "bad", NEUTRAL: "neutral", GOOD: "good" };
-const items = [require(dependencyMap[0]).InAppFeedbackType.VIDEO_BACKGROUND, require(dependencyMap[0]).InAppFeedbackType.STREAM, require(dependencyMap[0]).InAppFeedbackType.ACTIVITY, require(dependencyMap[0]).InAppFeedbackType.VOICE, require(dependencyMap[0]).InAppFeedbackType.IN_APP_REPORTS, require(dependencyMap[0]).InAppFeedbackType.SEARCH_RESULTS];
+// Module 9500 (FeedbackRating)
+let obj = { BAD: "bad", NEUTRAL: "neutral", GOOD: "good" };
+const items = [require("_callSuper").InAppFeedbackType.VIDEO_BACKGROUND, require("_callSuper").InAppFeedbackType.STREAM, require("_callSuper").InAppFeedbackType.ACTIVITY, require("_callSuper").InAppFeedbackType.VOICE, require("_callSuper").InAppFeedbackType.IN_APP_REPORTS, require("_callSuper").InAppFeedbackType.SEARCH_RESULTS];
 const items1 = [, , ];
 ({ BAD: arr2[0], NEUTRAL: arr2[1], GOOD: arr2[2] } = obj);
 const reduced = items.reduce((arg0, arg1, arg2) => {
@@ -14,12 +14,11 @@ const reduced = items.reduce((arg0, arg1, arg2) => {
   obj[arg1] = arg2;
   return obj;
 }, {});
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/feedback/Constants.tsx");
+const result = require("set").fileFinishedImporting("modules/feedback/Constants.tsx");
 
 export const FeedbackRating = obj;
 export const FEEDBACK_FREEFORM_LENGTH = 1024;
-export const FeedbackType = require(dependencyMap[0]).InAppFeedbackType;
+export const FeedbackType = require("_callSuper").InAppFeedbackType;
 export const FeedbackGroup = { AV: "AV", SOCIAL: "SOCIAL", SEARCH: "SEARCH", SAFETY: "SAFETY" };
 export const FeedbackTypePrecedence = reduced;
 export const DEFAULT_RATINGS = items1;

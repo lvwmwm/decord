@@ -1,33 +1,30 @@
-// Module ID: 8291
-// Function ID: 65467
+// Module ID: 8297
+// Function ID: 65504
 // Name: lerpVarWidthThumbnailScrollBounds
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8291 (lerpVarWidthThumbnailScrollBounds)
+// Module 8297 (lerpVarWidthThumbnailScrollBounds)
 let closure_0 = { code: "function lerpVarWidthThumbnailScrollBounds_portraitThumbnailHelpersTsx1(positions,position){if(positions.length===0)return 0;if(position<0){return 0;}if(position>=positions.length){position=positions.length;}const index=Math.floor(position);const fraction=position-index;if(index>=positions.length){return positions[positions.length-1].scrollStart;}const startPos=positions[index].scrollStart;const endPos=index<positions.length-1?positions[index+1].scrollStart:startPos;return startPos+fraction*(endPos-startPos);}" };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/media_viewer/native/portraitThumbnailHelpers.tsx");
-
-export const lerpVarWidthThumbnailScrollBounds = () => {
-  function lerpVarWidthThumbnailScrollBounds(arg0, arg1) {
+const tmp2 = (() => {
+  export function lerpVarWidthThumbnailScrollBounds(closure_1, arg1) {
     let length = arg1;
-    if (0 === arg0.length) {
+    if (0 === closure_1.length) {
       return 0;
     } else if (length < 0) {
       return 0;
     } else {
-      if (length >= arg0.length) {
-        length = arg0.length;
+      if (length >= closure_1.length) {
+        length = closure_1.length;
       }
       const _Math = Math;
       const rounded = Math.floor(length);
-      if (rounded >= arg0.length) {
-        return arg0[arg0.length - 1].scrollStart;
+      if (rounded >= closure_1.length) {
+        return closure_1[closure_1.length - 1].scrollStart;
       } else {
-        const scrollStart = arg0[rounded].scrollStart;
+        const scrollStart = closure_1[rounded].scrollStart;
         let scrollStart2 = scrollStart;
-        if (rounded < arg0.length - 1) {
-          scrollStart2 = arg0[rounded + 1].scrollStart;
+        if (rounded < closure_1.length - 1) {
+          scrollStart2 = closure_1[rounded + 1].scrollStart;
         }
         return scrollStart + tmp3 * (scrollStart2 - scrollStart);
       }
@@ -37,4 +34,5 @@ export const lerpVarWidthThumbnailScrollBounds = () => {
   lerpVarWidthThumbnailScrollBounds.__workletHash = 5256874583737;
   lerpVarWidthThumbnailScrollBounds.__initData = closure_0;
   return lerpVarWidthThumbnailScrollBounds;
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/portraitThumbnailHelpers.tsx");

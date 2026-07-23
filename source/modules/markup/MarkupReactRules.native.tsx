@@ -1,11 +1,35 @@
-// Module ID: 4119
-// Function ID: 34136
+// Module ID: 4121
+// Function ID: 34145
 // Name: MarkupText
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 1348, 1917, 1910, 1838, 653, 1355, 482, 33, 4125, 4126, 4130, 689, 4138, 4321, 3982, 4337, 8492, 4470, 1212, 5492, 3830, 5515, 1273, 1443, 8336, 3827, 9488, 9525, 9969, 566, 3974, 7650, 4098, 10866, 1934, 21, 3803, 5085, 9986, 12849, 10881, 4563, 10267, 12850, 12852, 4074, 4565, 477, 4593, 12854, 10269, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
-// Module 4119 (MarkupText)
+// Module 4121 (MarkupText)
+import smartOutput from "smartOutput";
+import get_ActivityIndicator from "isLinkTrusted";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import closure_12 from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import set from "set";
+import { Fonts } from "sum";
+import jsxProd from "hexToRgb";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "_isNativeReflectConstruct";
+
 let EMOJI_CHAT_SIZE;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 class MarkupText {
   constructor(arg0) {
     str = global.color;
@@ -16,7 +40,7 @@ class MarkupText {
     if (str2 === undefined) {
       str2 = "text-sm/medium";
     }
-    obj = { 0: "spring", -9223372036854775808: 0.4, 0: 1 };
+    obj = { children: 0, color: 0, variant: 0 };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     obj = {};
@@ -24,17 +48,17 @@ class MarkupText {
     obj.color = str;
     merged1 = Object.assign(merged);
     obj["children"] = global.children;
-    return jsx(arg1(dependencyMap[12]).Text, obj);
+    return jsx(require("Text").Text, obj);
   }
 }
 function getIconSize() {
   const fontScale = store.getFontScale();
   if (fontScale < 1) {
-    let SMALL = arg1(dependencyMap[25]).Icon.Sizes.EXTRA_SMALL_10;
+    let SMALL = require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL_10;
   } else if (fontScale < 1.25) {
-    SMALL = arg1(dependencyMap[25]).Icon.Sizes.EXTRA_SMALL;
+    SMALL = require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL;
   } else {
-    SMALL = arg1(dependencyMap[25]).Icon.Sizes.SMALL;
+    SMALL = require(1273) /* Button */.Icon.Sizes.SMALL;
   }
   return SMALL;
 }
@@ -44,21 +68,20 @@ function MarkupLink(arg0) {
   let state;
   let styles;
   ({ state, node } = arg0);
-  const arg1 = node;
   function getValidatedUrl(arg0) {
     const target = node.target;
     if ("string" !== typeof target) {
       return null;
     } else {
-      const url = getValidatedUrl(closure_2[26]).safeParseWithQuery(target);
+      const url = getValidatedUrl(outer1_2[26]).safeParseWithQuery(target);
       let formatResult = null;
       if (null != url) {
         formatResult = null;
         if (null != url.protocol) {
           formatResult = null;
           if (null != url.hostname) {
-            formatResult = getValidatedUrl(closure_2[26]).format(url);
-            const obj2 = getValidatedUrl(closure_2[26]);
+            formatResult = getValidatedUrl(outer1_2[26]).format(url);
+            const obj2 = getValidatedUrl(outer1_2[26]);
           }
         }
       }
@@ -82,14 +105,14 @@ function MarkupLink(arg0) {
     const node = tmp;
     if (null != tmp) {
       stopPropagation.stopPropagation();
-      let obj = node(closure_2[27]);
+      let obj = node(outer1_2[27]);
       obj = {
         href: tmp,
         onConfirm() {
-            return callback(closure_2[28]).openURL(tmp);
+            return getValidatedUrl(outer2_2[28]).openURL(closure_0);
           },
         trusted() {
-            return tmp(closure_2[29]).isLinkTrusted(tmp);
+            return node(outer2_2[29]).isLinkTrusted(closure_0);
           }
       };
       obj.handleClick(obj);
@@ -100,37 +123,33 @@ function MarkupLink(arg0) {
     if (null != tmp) {
       stopPropagation.stopPropagation();
       const obj = { urlString: tmp };
-      getValidatedUrl(closure_2[30])(obj);
+      getValidatedUrl(outer1_2[30])(obj);
     }
   };
-  const tmp = callback2();
+  tmp = callback2();
   const tmp2 = closure_16;
   obj = {};
   const merged = Object.assign(state);
   obj["inLink"] = true;
-  obj.children = arg1(dependencyMap[31]).smartOutput(node, output, obj);
-  return tmp2(arg1(dependencyMap[12]).Text, obj, state.key);
+  obj.children = node(9969).smartOutput(node, output, obj);
+  return tmp2(node(4126).Text, obj, state.key);
 }
 function MarkupMention(styles) {
   let node;
   let roleStyle;
   let state;
   ({ roleStyle, state, node } = styles);
-  const arg1 = node;
   styles = styles.styles;
   const userId = node.userId;
-  const importDefault = userId;
   const roleId = node.roleId;
-  const dependencyMap = roleId;
   const guildId = node.guildId;
-  let closure_3 = guildId;
-  let obj = arg1(dependencyMap[32]);
+  let obj = node(roleId[32]);
   const items = [closure_10, closure_11];
   const items1 = [guildId, roleId, userId];
   const stateFromStores = obj.useStateFromStores(items, () => {
     if (null != guildId) {
       if (null != roleId) {
-        let role = role.getRole(guildId, roleId);
+        let role = outer1_11.getRole(guildId, roleId);
       }
       return role;
     }
@@ -138,7 +157,7 @@ function MarkupMention(styles) {
     if (null != guildId) {
       role = null;
       if (null != userId) {
-        role = member.getMember(guildId, userId);
+        role = outer1_10.getMember(guildId, userId);
       }
     }
   }, items1);
@@ -171,17 +190,17 @@ function MarkupMention(styles) {
       backgroundColor = mention.backgroundColor;
     }
     if (null == backgroundColor) {
-      backgroundColor = arg1(dependencyMap[33]).hexWithOpacity(tmp4, 0.1);
-      const obj3 = arg1(dependencyMap[33]);
+      backgroundColor = node(roleId[33]).hexWithOpacity(tmp4, 0.1);
+      const obj3 = node(roleId[33]);
     }
     obj.backgroundColor = backgroundColor;
     tmp7 = obj;
   }
   const tmp = callback2();
-  const processColorStringsArray = arg1(dependencyMap[34]).useProcessColorStringsArray(tmp6);
-  const obj4 = arg1(dependencyMap[34]);
+  const processColorStringsArray = node(roleId[34]).useProcessColorStringsArray(tmp6);
+  let obj4 = node(roleId[34]);
   let str2 = "button";
-  const isRoleStyleAndRoleColorsEligibleForERC = arg1(dependencyMap[34]).useIsRoleStyleAndRoleColorsEligibleForERC(guildId, userId, roleStyle, processColorStringsArray);
+  const isRoleStyleAndRoleColorsEligibleForERC = node(roleId[34]).useIsRoleStyleAndRoleColorsEligibleForERC(guildId, userId, roleStyle, processColorStringsArray);
   if (state.noStyleAndInteraction) {
     str2 = "text";
   }
@@ -244,7 +263,7 @@ function MarkupMention(styles) {
   obj.onPress = fn;
   let tmp19Result = "dot" === roleStyle;
   if (tmp19Result) {
-    const obj1 = {};
+    let obj1 = {};
     let tmp22;
     if (null != guildId) {
       tmp22 = guildId;
@@ -253,14 +272,14 @@ function MarkupMention(styles) {
     obj1.color = tmp4;
     obj1.colors = tmp6;
     obj1.size = "small";
-    tmp19Result = closure_16(arg1(dependencyMap[25]).RoleDot, obj1);
+    tmp19Result = closure_16(node(roleId[25]).RoleDot, obj1);
     const tmp19 = closure_16;
   }
   const items2 = [tmp19Result, ];
-  const obj5 = arg1(dependencyMap[34]);
+  let obj5 = node(roleId[34]);
   const tmp14 = closure_17;
   const tmp15 = MarkupText;
-  items2[1] = arg1(dependencyMap[31]).smartOutput(node, styles.output, state);
+  items2[1] = node(roleId[31]).smartOutput(node, styles.output, state);
   obj.children = items2;
   return tmp14(tmp15, obj, state.key);
 }
@@ -281,7 +300,7 @@ function MarkupBlockQuote(state) {
     textColor = state.textColor;
   }
   obj.color = textColor;
-  obj.children = arg1(dependencyMap[31]).smartOutput(node, output, state);
+  obj.children = require(9969) /* smartOutput */.smartOutput(node, output, state);
   return closure_16(MarkupText, obj, state.key);
 }
 function MarkupInlineCode(arg0) {
@@ -290,21 +309,20 @@ function MarkupInlineCode(arg0) {
   let state;
   let styles;
   ({ state, node } = arg0);
-  const arg1 = node;
   ({ styles, output } = arg0);
-  let tmp2 = !state.noStyleAndInteraction;
-  if (tmp2) {
-    tmp2 = !state.inLink;
+  let tmp3 = !state.noStyleAndInteraction;
+  if (tmp3) {
+    tmp3 = !state.inLink;
   }
   let str = "text";
-  if (tmp2) {
+  if (tmp3) {
     str = "button";
   }
   let obj = {};
-  const tmp = callback2();
+  const tmp2 = callback2();
   const merged = Object.assign(styles.inlineCode || callback2().inlineCode);
   if (state.inLink) {
-    delete r6.color;
+    delete tmp.color;
   }
   obj = { accessibilityRole: str };
   obj.style = obj;
@@ -314,23 +332,23 @@ function MarkupInlineCode(arg0) {
   }
   obj.color = textColor;
   let fn;
-  if (tmp2) {
+  if (tmp3) {
     fn = () => {
       const content = node.content;
       if ("string" === typeof content) {
-        node(closure_2[22]).copy(content);
-        const obj = node(closure_2[22]);
-        const result = node(closure_2[23]).presentCopiedToClipboard();
-        const obj2 = node(closure_2[23]);
+        node(outer1_2[22]).copy(content);
+        const obj = node(outer1_2[22]);
+        const result = node(outer1_2[23]).presentCopiedToClipboard();
+        const obj2 = node(outer1_2[23]);
       }
     };
   }
   obj.onPress = fn;
-  const tmp3 = styles.inlineCode || callback2().inlineCode;
-  const tmp5 = closure_16;
-  const tmp6 = MarkupText;
-  obj.children = arg1(dependencyMap[31]).smartOutput(node, output, state);
-  return tmp5(tmp6, obj, state.key);
+  const tmp4 = styles.inlineCode || callback2().inlineCode;
+  const tmp6 = closure_16;
+  const tmp7 = MarkupText;
+  obj.children = node(9969).smartOutput(node, output, state);
+  return tmp6(tmp7, obj, state.key);
 }
 function MarkupCodeBlock(state) {
   let node;
@@ -349,7 +367,7 @@ function MarkupCodeBlock(state) {
     textColor = state.textColor;
   }
   obj.color = textColor;
-  const items = [arg1(dependencyMap[31]).smartOutput(node, output, state), "\n"];
+  const items = [require(9969) /* smartOutput */.smartOutput(node, output, state), "\n"];
   obj.children = items;
   return closure_17(MarkupText, obj, state.key);
 }
@@ -357,10 +375,10 @@ function MarkupCustomEmoji(styles) {
   let node;
   let state;
   ({ state, node } = styles);
-  const AnimateEmoji = arg1(dependencyMap[39]).AnimateEmoji;
+  const AnimateEmoji = require(3803) /* explicitContentFromProto */.AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
-  arg1(dependencyMap[32]);
-  [][0] = closure_8;
+  require(566) /* initialize */;
+  [][0] = _isNativeReflectConstruct;
   if (node.src) {
     let obj = {};
     let emoji = styles.styles.emoji;
@@ -381,8 +399,8 @@ function MarkupCustomEmoji(styles) {
     const obj2 = { uri: node.src };
     obj.source = obj2;
     obj.enableAnimation = !tmp3 && setting;
-    let tmp4Result = tmp4(importDefault(dependencyMap[40]), obj, state.key);
-    const tmp11 = importDefault(dependencyMap[40]);
+    let tmp4Result = tmp4(importDefault(5085), obj, state.key);
+    const tmp11 = importDefault(5085);
   } else {
     obj = {};
     let textColor;
@@ -400,9 +418,7 @@ function MarkupChannelMention(state) {
   let styles;
   let variants;
   state = state.state;
-  const arg1 = state;
   const node = state.node;
-  const importDefault = node;
   const output = state.output;
   ({ styles, variants } = state);
   const tmp = callback2();
@@ -425,10 +441,10 @@ function MarkupChannelMention(state) {
   const items = [outputResult, , ];
   if (null == node.inContent) {
     items[1] = null;
-    let obj3 = arg1(dependencyMap[31]);
+    let obj3 = state(9969);
     items[2] = obj3.smartOutput(node, output, state);
     obj.children = items;
-    const tmp2Result = closure_17(arg1(dependencyMap[12]).Text, obj, state.key);
+    const tmp2Result = closure_17(state(4126).Text, obj, state.key);
     let tmp18Result = tmp2Result;
     if (!state.disablePressableChannelMention) {
       obj = { accessibilityRole: str };
@@ -459,30 +475,30 @@ function MarkupChannelMention(state) {
           ({ channelId, messageId } = node);
           if (null != channelId) {
             if (null != messageId) {
-              state(closure_2[15]).transitionToMessage(channelId, messageId);
-              const obj5 = state(closure_2[15]);
+              state(outer1_2[15]).transitionToMessage(channelId, messageId);
+              const obj5 = state(outer1_2[15]);
             } else {
-              const channel = channel.getChannel(channelId);
+              const channel = outer1_9.getChannel(channelId);
               if (null != channel) {
                 if (channel.isGuildVocal()) {
                   if (obj.canViewChannel(channel)) {
                     if (tmp4) {
-                      const rootNavigationRef = state(closure_2[17]).getRootNavigationRef();
+                      const rootNavigationRef = state(outer1_2[17]).getRootNavigationRef();
                       if (null != rootNavigationRef) {
                         rootNavigationRef.goBack();
                       }
-                      const obj2 = state(closure_2[17]);
+                      const obj2 = state(outer1_2[17]);
                     }
                     if (tmp5) {
-                      let arr = node(closure_2[18]);
+                      let arr = node(outer1_2[18]);
                       arr = arr.pop();
                     }
                   }
-                  const obj = state(closure_2[16]);
+                  obj = state(outer1_2[16]);
                 }
               }
-              state(closure_2[15]).transitionToChannel(channelId);
-              const obj4 = state(closure_2[15]);
+              state(outer1_2[15]).transitionToChannel(channelId);
+              const obj4 = state(outer1_2[15]);
             }
           }
         }
@@ -495,17 +511,17 @@ function MarkupChannelMention(state) {
     }
     return tmp18Result;
   } else {
-    const obj2 = { themedColor: importDefault(dependencyMap[14]).colors.MENTION_FOREGROUND };
+    let obj2 = { themedColor: node(689).colors.MENTION_FOREGROUND };
     const fontScale = store.getFontScale();
     if (fontScale < 1.25) {
-      obj3 = { "Null": 800, "Null": 16 };
+      obj3 = { width: 8, height: 8 };
     } else {
-      obj3 = fontScale < 2 ? { "Null": null, "Null": null } : { "Null": null, "Null": null };
+      obj3 = fontScale < 2 ? { width: 12, height: 12 } : { width: 16, height: 16 };
     }
     obj2.style = obj3;
-    obj2.source = importDefault(dependencyMap[41]);
-    obj2.size = arg1(dependencyMap[25]).Icon.Sizes.CUSTOM;
-    closure_16(arg1(dependencyMap[25]).ThemedIcon, obj2);
+    obj2.source = node(9986);
+    obj2.size = state(1273).Icon.Sizes.CUSTOM;
+    closure_16(state(1273).ThemedIcon, obj2);
     const tmp4 = closure_16;
   }
 }
@@ -514,9 +530,7 @@ function MarkupAttachmentLink(state) {
   let styles;
   let variants;
   state = state.state;
-  const arg1 = state;
   const node = state.node;
-  const importDefault = node;
   ({ output, styles, variants } = state);
   const tmp = callback2();
   let str = "button";
@@ -531,12 +545,12 @@ function MarkupAttachmentLink(state) {
   }
   obj.variant = str2;
   obj.style = tmp.channelMentionText;
-  obj = { themedColor: importDefault(dependencyMap[14]).colors.MENTION_FOREGROUND, source: importDefault(dependencyMap[42]), size: getIconSize() };
-  const items = [callback(arg1(dependencyMap[25]).ThemedIcon, obj), ];
-  let obj2 = arg1(dependencyMap[31]);
+  obj = { themedColor: node(689).colors.MENTION_FOREGROUND, source: node(12849), size: getIconSize() };
+  const items = [callback(state(1273).ThemedIcon, obj), ];
+  let obj2 = state(9969);
   items[1] = obj2.smartOutput(node, output, state);
   obj.children = items;
-  const tmp2Result = closure_17(arg1(dependencyMap[12]).Text, obj, state.key);
+  const tmp2Result = closure_17(state(4126).Text, obj, state.key);
   let tmp5Result = tmp2Result;
   if (!state.disablePressableChannelMention) {
     obj = { accessibilityRole: str };
@@ -563,8 +577,8 @@ function MarkupAttachmentLink(state) {
     obj.onPress = function onPress(stopPropagation) {
       if (!state.noStyleAndInteraction) {
         stopPropagation.stopPropagation();
-        node(closure_2[28]).openURL(node.attachmentLink);
-        const obj = node(closure_2[28]);
+        node(outer1_2[28]).openURL(node.attachmentLink);
+        const obj = node(outer1_2[28]);
       }
     };
     obj.children = tmp2Result;
@@ -588,45 +602,31 @@ function MarkupCommandMention(state) {
     mention = tmp.mention;
   }
   obj.style = mention;
-  return tmp2(importDefault(dependencyMap[43]), obj, state.key);
+  return tmp2(importDefault(10881), obj, state.key);
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ PixelRatio: closure_4, Pressable: closure_5, View: closure_6, Text: closure_7 } = arg1(dependencyMap[1]));
-let closure_8 = importDefault(dependencyMap[2]);
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = importDefault(dependencyMap[4]);
-let closure_11 = importDefault(dependencyMap[5]);
-let closure_12 = importDefault(dependencyMap[6]);
-const tmp2 = arg1(dependencyMap[1]);
-({ EMOJI_CHAT_SIZE, GuildFeatures: closure_13 } = arg1(dependencyMap[7]));
-const tmp3 = arg1(dependencyMap[7]);
-({ StaticChannelRoute: closure_14, StaticChannelId: closure_15 } = arg1(dependencyMap[8]));
-const Fonts = arg1(dependencyMap[9]).Fonts;
-const tmp4 = arg1(dependencyMap[8]);
-({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[10]));
-const regExp = new RegExp(arg1(dependencyMap[11]).ANSI_CONTROL_SEQUENCE_RE, "g");
+({ PixelRatio: closure_4, Pressable: closure_5, View: closure_6, Text: closure_7 } = get_ActivityIndicator);
+({ EMOJI_CHAT_SIZE, GuildFeatures: closure_13 } = ME);
+({ StaticChannelRoute: closure_14, StaticChannelId: closure_15 } = set);
+({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
+const regExp = new RegExp(require("_createForOfIteratorHelperLoose").ANSI_CONTROL_SEQUENCE_RE, "g");
 let obj = { fontFamily: Fonts.CODE_BOLD };
 obj = { fontFamily: Fonts.PRIMARY_BOLD };
-let closure_19 = { emoji: { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, resizeMode: "contain" }, guildIcon: { GRAPHQL_URLS: "\u{1F4A0}", INTEGRATION_TIMEOUT_MS: 6 }, list: { paddingTop: 16 }, listItem: { paddingTop: 4 }, bullet: obj, strong: obj };
-let obj2 = arg1(dependencyMap[13]);
-obj = {};
-const tmp5 = arg1(dependencyMap[10]);
-obj.link = { fontFamily: Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_LINK };
-obj2 = { backgroundColor: importDefault(dependencyMap[14]).colors.MENTION_BACKGROUND };
-obj.channelMention = obj2;
-const obj1 = { fontFamily: Fonts.PRIMARY_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_LINK };
-obj.channelMentionText = { color: importDefault(dependencyMap[14]).colors.MENTION_FOREGROUND };
-const obj3 = { color: importDefault(dependencyMap[14]).colors.MENTION_FOREGROUND };
-obj.mention = { color: importDefault(dependencyMap[14]).unsafe_rawColors.BRAND_500, backgroundColor: importDefault(dependencyMap[14]).colors.BORDER_SUBTLE };
-const obj4 = { color: importDefault(dependencyMap[14]).unsafe_rawColors.BRAND_500, backgroundColor: importDefault(dependencyMap[14]).colors.BORDER_SUBTLE };
-obj.inlineCode = { fontFamily: Fonts.CODE_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_CODE };
-const obj5 = { fontFamily: Fonts.CODE_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_CODE };
-obj.codeBlock = { fontFamily: Fonts.CODE_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_CODE };
-const obj6 = { fontFamily: Fonts.CODE_BOLD, color: importDefault(dependencyMap[14]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[14]).colors.BACKGROUND_CODE };
-obj.blockQuote = { borderLeftColor: importDefault(dependencyMap[14]).colors.SPINE_DEFAULT };
-let closure_20 = obj2.createStyles(obj);
-const obj7 = { borderLeftColor: importDefault(dependencyMap[14]).colors.SPINE_DEFAULT };
-const result = arg1(dependencyMap[54]).fileFinishedImporting("modules/markup/MarkupReactRules.native.tsx");
+let closure_19 = { emoji: { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, resizeMode: "contain" }, guildIcon: { paddingEnd: 2, paddingBottom: 1 }, list: { paddingTop: 16 }, listItem: { paddingTop: 4 }, bullet: obj, strong: obj };
+obj = { link: { fontFamily: Fonts.PRIMARY_BOLD, color: require("_createForOfIteratorHelperLoose").colors.TEXT_LINK } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MENTION_BACKGROUND, borderRadius: 3, paddingHorizontal: 2, alignItems: "center" };
+obj.channelMention = _createForOfIteratorHelperLoose;
+let obj1 = { fontFamily: Fonts.PRIMARY_BOLD, color: require("_createForOfIteratorHelperLoose").colors.TEXT_LINK };
+obj.channelMentionText = { color: require("_createForOfIteratorHelperLoose").colors.MENTION_FOREGROUND };
+let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.MENTION_FOREGROUND };
+obj.mention = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let obj4 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+obj.inlineCode = { fontFamily: Fonts.CODE_BOLD, color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_CODE };
+let obj5 = { fontFamily: Fonts.CODE_BOLD, color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_CODE };
+obj.codeBlock = { fontFamily: Fonts.CODE_BOLD, color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_CODE };
+let obj7 = { borderLeftWidth: 4, borderLeftColor: require("_createForOfIteratorHelperLoose").colors.SPINE_DEFAULT, paddingLeft: 8 };
+obj.blockQuote = obj7;
+let closure_20 = _createForOfIteratorHelperLoose.createStyles(obj);
+let result = set.fileFinishedImporting("modules/markup/MarkupReactRules.native.tsx");
 
 export default function createRules() {
   let obj = arg0;
@@ -634,12 +634,10 @@ export default function createRules() {
   if (arg0 === undefined) {
     obj = {};
   }
-  const arg1 = obj;
   if (obj === undefined) {
     obj = {};
   }
-  const importDefault = obj;
-  const tmp = (arg0) => {
+  let tmp = ((arg0) => {
     let obj = arg0;
     if (arg0 === undefined) {
       obj = {};
@@ -652,20 +650,20 @@ export default function createRules() {
           textColor = noStyleAndInteraction.textColor;
         }
         obj.color = textColor;
-        obj.children = obj(closure_2[31]).smartOutput(node, output, noStyleAndInteraction);
-        let tmpResult = tmp(closure_21, obj, noStyleAndInteraction.key);
-        const obj3 = obj(closure_2[31]);
-        const tmp5 = closure_21;
+        obj.children = obj(outer2_2[31]).smartOutput(node, output, noStyleAndInteraction);
+        let tmpResult = tmp(outer2_21, obj, noStyleAndInteraction.key);
+        const obj3 = obj(outer2_2[31]);
+        const tmp5 = outer2_21;
       } else {
         obj = { state: noStyleAndInteraction, node, output };
         obj.styles = obj;
-        tmpResult = tmp(closure_23, obj, noStyleAndInteraction.key);
+        tmpResult = tmp(outer2_23, obj, noStyleAndInteraction.key);
       }
       return tmpResult;
     };
-  }(obj);
+  })(obj);
   obj = {};
-  obj[arg1(dependencyMap[44]).AST_KEY.TEXT] = {
+  obj[obj(4563).AST_KEY.TEXT] = {
     react(content, output, textColor) {
       if ("string" === typeof content.content) {
         content = content.content;
@@ -676,16 +674,16 @@ export default function createRules() {
           textColor = textColor.textColor;
         }
         obj.color = textColor;
-        obj.children = obj(closure_2[31]).smartOutput(content, output, textColor);
-        content = closure_16(closure_21, obj, textColor.key);
-        const obj2 = obj(closure_2[31]);
-        const tmp = closure_16;
-        const tmp2 = closure_21;
+        obj.children = obj(outer1_2[31]).smartOutput(content, output, textColor);
+        content = outer1_16(outer1_21, obj, textColor.key);
+        const obj2 = obj(outer1_2[31]);
+        const tmp = outer1_16;
+        const tmp2 = outer1_21;
       }
       return content;
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.STRIKETHROUGH] = {
+  obj[obj(4563).AST_KEY.STRIKETHROUGH] = {
     react(node, output, textColor) {
       const obj = { style: { textDecorationLine: "line-through" } };
       textColor = undefined;
@@ -694,11 +692,11 @@ export default function createRules() {
       }
       obj.color = textColor;
       obj.variant = textColor.textVariant;
-      obj.children = obj(closure_2[31]).smartOutput(node, output, textColor);
-      return closure_16(closure_21, obj, textColor.key);
+      obj.children = obj(outer1_2[31]).smartOutput(node, output, textColor);
+      return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.UNDERLINE] = {
+  obj[obj(4563).AST_KEY.UNDERLINE] = {
     react(node, output, textColor) {
       const obj = { style: { textDecorationLine: "underline" } };
       textColor = undefined;
@@ -707,11 +705,11 @@ export default function createRules() {
       }
       obj.color = textColor;
       obj.variant = textColor.textVariant;
-      obj.children = obj(closure_2[31]).smartOutput(node, output, textColor);
-      return closure_16(closure_21, obj, textColor.key);
+      obj.children = obj(outer1_2[31]).smartOutput(node, output, textColor);
+      return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.ITALICS] = {
+  obj[obj(4563).AST_KEY.ITALICS] = {
     react(node, output, textColor) {
       let obj = {};
       obj = {};
@@ -732,16 +730,16 @@ export default function createRules() {
       }
       obj.color = textColor;
       obj.variant = textColor.textVariant;
-      obj.children = obj(closure_2[31]).smartOutput(node, output, textColor);
-      return closure_16(closure_21, obj, textColor.key);
+      obj.children = obj(outer1_2[31]).smartOutput(node, output, textColor);
+      return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.STRONG] = {
+  obj[obj(4563).AST_KEY.STRONG] = {
     react(node, output, textColor) {
       const obj = {};
       let strong = obj.strong;
       if (!strong) {
-        strong = closure_19.strong;
+        strong = outer1_19.strong;
       }
       obj.style = strong;
       textColor = undefined;
@@ -750,14 +748,14 @@ export default function createRules() {
       }
       obj.color = textColor;
       obj.variant = textColor.textVariant;
-      obj.children = obj(closure_2[31]).smartOutput(node, output, textColor);
-      return closure_16(closure_21, obj, textColor.key);
+      obj.children = obj(outer1_2[31]).smartOutput(node, output, textColor);
+      return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.LINK] = { react: tmp };
-  obj[arg1(dependencyMap[44]).AST_KEY.URL] = { react: tmp };
-  obj[arg1(dependencyMap[44]).AST_KEY.AUTOLINK] = { react: tmp };
-  obj[arg1(dependencyMap[44]).AST_KEY.LINE_BREAK] = {
+  obj[obj(4563).AST_KEY.LINK] = { react: tmp };
+  obj[obj(4563).AST_KEY.URL] = { react: tmp };
+  obj[obj(4563).AST_KEY.AUTOLINK] = { react: tmp };
+  obj[obj(4563).AST_KEY.LINE_BREAK] = {
     react(arg0, arg1, textColor) {
       const obj = {};
       textColor = undefined;
@@ -766,10 +764,10 @@ export default function createRules() {
       }
       obj.color = textColor;
       obj.children = "\n";
-      return closure_16(closure_21, obj, textColor.key);
+      return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.HIGHLIGHT] = {
+  obj[obj(4563).AST_KEY.HIGHLIGHT] = {
     react(node, output, textColor) {
       const obj = {};
       textColor = undefined;
@@ -777,17 +775,17 @@ export default function createRules() {
         textColor = textColor.textColor;
       }
       obj.color = textColor;
-      obj.children = obj(closure_2[31]).smartOutput(node, output, textColor);
-      return closure_16(closure_21, obj, textColor.key);
+      obj.children = obj(outer1_2[31]).smartOutput(node, output, textColor);
+      return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.BLOCK_QUOTE] = {
+  obj[obj(4563).AST_KEY.BLOCK_QUOTE] = {
     react(node, output, key) {
-      const obj = { styles: obj, state: key, node, output };
-      return callback(closure_25, obj, key.key);
+      obj = { styles: obj, state: key, node, output };
+      return outer1_16(outer1_25, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.PARAGRAPH] = {
+  obj[obj(4563).AST_KEY.PARAGRAPH] = {
     order: 600,
     react(node, output, textColor) {
       const obj = {};
@@ -796,11 +794,11 @@ export default function createRules() {
         textColor = textColor.textColor;
       }
       obj.color = textColor;
-      obj.children = obj(closure_2[31]).smartOutput(node, output, textColor);
-      return closure_16(closure_21, obj, textColor.key);
+      obj.children = obj(outer1_2[31]).smartOutput(node, output, textColor);
+      return outer1_16(outer1_21, obj, textColor.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.EMOJI] = {
+  obj[obj(4563).AST_KEY.EMOJI] = {
     react(surrogate, arg1, key) {
       const obj = {};
       let content = surrogate.surrogate;
@@ -808,40 +806,40 @@ export default function createRules() {
         content = surrogate.content;
       }
       obj.children = content;
-      return closure_16(closure_7, obj, key.key);
+      return outer1_16(outer1_7, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.CUSTOM_EMOJI] = {
+  obj[obj(4563).AST_KEY.CUSTOM_EMOJI] = {
     react(node, arg1, key) {
-      const obj = { state: key, node, styles: obj };
-      return callback(closure_28, obj, key.key);
+      obj = { state: key, node, styles: obj };
+      return outer1_16(outer1_28, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.SPOILER] = {
+  obj[obj(4563).AST_KEY.SPOILER] = {
     react(node, output, key) {
-      const obj = { spoilerStyle: obj.spoiler, spoilerRevealedStyle: obj.spoilerRevealed };
-      const tmp = obj(closure_2[45]);
-      obj.children = obj(closure_2[31]).smartOutput(node, output, key);
-      return callback(tmp, obj, key.key);
+      obj = { spoilerStyle: obj.spoiler, spoilerRevealedStyle: obj.spoilerRevealed };
+      const tmp = obj(outer1_2[45]);
+      obj.children = obj(outer1_2[31]).smartOutput(node, output, key);
+      return outer1_16(tmp, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.STATIC_ROUTE_LINK] = {
+  obj[obj(4563).AST_KEY.STATIC_ROUTE_LINK] = {
     react(channelId, output, textColor) {
       let obj = channelId;
-      obj = obj(closure_2[31]);
+      obj = obj(outer1_2[31]);
       if (obj.isStaticRouteIconType(channelId.channelId)) {
-        let SignPostIcon = obj(closure_2[46]).SignPostIcon;
+        let SignPostIcon = obj(outer1_2[46]).SignPostIcon;
         channelId = channelId.channelId;
-        if (constants.GUILD_HOME !== channelId) {
-          if (constants.SERVER_GUIDE !== channelId) {
-            if (constants.CHANNEL_BROWSER !== channelId) {
-              if (constants.CUSTOMIZE_COMMUNITY !== channelId) {
-                if (constants.LINKED_ROLES === channelId) {
-                  SignPostIcon = obj(closure_2[48]).LinkIcon;
+        if (outer1_15.GUILD_HOME !== channelId) {
+          if (outer1_15.SERVER_GUIDE !== channelId) {
+            if (outer1_15.CHANNEL_BROWSER !== channelId) {
+              if (outer1_15.CUSTOMIZE_COMMUNITY !== channelId) {
+                if (outer1_15.LINKED_ROLES === channelId) {
+                  SignPostIcon = obj(outer1_2[48]).LinkIcon;
                 }
               }
             }
-            SignPostIcon = obj(closure_2[47]).ChannelListMagnifyingGlassIcon;
+            SignPostIcon = obj(outer1_2[47]).ChannelListMagnifyingGlassIcon;
           }
           obj = { accessibilityRole: "button" };
           obj.style = obj.staticRouteLink;
@@ -853,60 +851,60 @@ export default function createRules() {
           obj.onPress = function onPress() {
             let channelId;
             let guildId;
-            ({ guildId, channelId } = arg0);
-            const guild = guild.getGuild(guildId);
+            ({ guildId, channelId } = closure_0);
+            const guild = outer2_12.getGuild(guildId);
             let hasItem = null != guildId && null != guild;
             if (hasItem) {
               const features = guild.features;
-              hasItem = features.has(constants.COMMUNITY);
+              hasItem = features.has(outer2_13.COMMUNITY);
             }
             if (hasItem) {
-              let tmp5 = channelId !== constants3.GUILD_HOME;
+              let tmp5 = channelId !== outer2_15.GUILD_HOME;
               if (tmp5) {
-                tmp5 = channelId !== constants3.SERVER_GUIDE;
+                tmp5 = channelId !== outer2_15.SERVER_GUIDE;
               }
               if (!tmp5) {
-                const result = arg0(closure_2[15]).transitionToStaticChannelRoute(guildId, constants2.GUILD_HOME);
-                const obj = arg0(closure_2[15]);
+                obj = obj(outer2_2[15]);
+                const result = obj.transitionToStaticChannelRoute(guildId, outer2_14.GUILD_HOME);
               }
             }
           };
           obj = {};
           obj.style = obj.staticRouteLinkIcon;
           obj.size = "sm";
-          const items = [callback(SignPostIcon, obj), obj(closure_2[31]).smartOutput(channelId, output, textColor)];
+          const items = [outer1_16(SignPostIcon, obj), obj(outer1_2[31]).smartOutput(channelId, output, textColor)];
           obj.children = items;
-          return closure_17(closure_21, obj, textColor.key);
+          return outer1_17(outer1_21, obj, textColor.key);
         }
-        SignPostIcon = obj(closure_2[46]).SignPostIcon;
+        SignPostIcon = obj(outer1_2[46]).SignPostIcon;
       } else {
         return null;
       }
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.INLINE_CODE] = {
+  obj[obj(4563).AST_KEY.INLINE_CODE] = {
     react(node, output, key) {
-      const obj = { styles: obj, state: key, node, output };
-      return callback(closure_26, obj, key.key);
+      obj = { styles: obj, state: key, node, output };
+      return outer1_16(outer1_26, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.CODE_BLOCK] = {
+  obj[obj(4563).AST_KEY.CODE_BLOCK] = {
     parse(arg0, arg1, arg2) {
-      const obj = obj(closure_2[49]).RULES[closure_0(undefined, closure_2[44]).AST_KEY.CODE_BLOCK];
+      obj = obj(outer1_2[49]).RULES[obj(undefined, outer1_2[44]).AST_KEY.CODE_BLOCK];
       const parsed = obj.parse(arg0, arg1, arg2);
       if ("ansi" === str.toLowerCase()) {
         const content = parsed.content;
-        parsed.content = content.replaceAll(closure_18, "");
+        parsed.content = content.replaceAll(outer1_18, "");
       }
       return parsed;
     },
     react(node, output, key) {
-      const obj = { styles: obj, state: key, node, output };
-      return callback(closure_27, obj, key.key);
+      obj = { styles: obj, state: key, node, output };
+      return outer1_16(outer1_27, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.MENTION] = {
-    react: (arg0, arg1) => {
+  obj[obj(4563).AST_KEY.MENTION] = {
+    react: ((arg0, arg1) => {
       let obj = arg0;
       let str = arg1;
       if (arg0 === undefined) {
@@ -915,40 +913,39 @@ export default function createRules() {
       if (str === undefined) {
         str = "username";
       }
-      obj = str;
       return (node, output, key) => {
-        const obj = { roleStyle: str, state: key, node, output, styles: obj };
-        return callback(closure_24, obj, key.key);
+        obj = { roleStyle: str, state: key, node, output, styles: obj };
+        return outer2_16(outer2_24, obj, key.key);
       };
-    }(obj, arg2)
+    })(obj, arg2)
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.CHANNEL_MENTION] = {
+  obj[obj(4563).AST_KEY.CHANNEL_MENTION] = {
     react(node, output, key) {
-      const obj = { styles: obj, state: key, node, output, variants: obj };
-      return callback(closure_29, obj, key.key);
+      obj = { styles: obj, state: key, node, output, variants: obj };
+      return outer1_16(outer1_29, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.ATTACHMENT_LINK] = {
+  obj[obj(4563).AST_KEY.ATTACHMENT_LINK] = {
     react(node, output, key) {
-      const obj = { styles: obj, state: key, node, output, variants: obj };
-      return callback(closure_30, obj, key.key);
+      obj = { styles: obj, state: key, node, output, variants: obj };
+      return outer1_16(outer1_30, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.SOUNDBOARD] = {
+  obj[obj(4563).AST_KEY.SOUNDBOARD] = {
     react(node, output, key) {
       const obj = { variant: "text-md/bold" };
-      const items = ["numColumnsAndHorizontalIncompatible", obj(closure_2[31]).smartOutput(node, output, key), ">"];
+      const items = ["<sound:", obj(outer1_2[31]).smartOutput(node, output, key), ">"];
       obj.children = items;
-      return callback2(obj(closure_2[12]).Text, obj, key.key);
+      return outer1_17(obj(outer1_2[12]).Text, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.GUILD] = {
+  obj[obj(4563).AST_KEY.GUILD] = {
     react(icon, output, textColor) {
-      let obj = obj(closure_2[50]);
+      obj = obj(outer1_2[50]);
       let num = 2;
       if (!obj.isAndroid()) {
         let num3 = 0;
-        if (store.getFontScale() < 1.5) {
+        if (outer1_4.getFontScale() < 1.5) {
           num3 = 1;
         }
         num = num3;
@@ -960,39 +957,39 @@ export default function createRules() {
           textColor = textColor.textColor;
         }
         obj.color = textColor;
-        obj = { style: closure_19.guildIcon, children: null };
-        const items = [callback(closure_6, obj), ];
+        obj = { style: outer1_19.guildIcon, children: null };
+        const items = [outer1_16(outer1_6, obj), ];
         const obj1 = {};
         let textColor1;
         if (null != textColor) {
           textColor1 = textColor.textColor;
         }
         obj1.color = textColor1;
-        obj1.children = obj(closure_2[31]).smartOutput(icon, output, textColor);
-        items[1] = callback(closure_21, obj1);
+        obj1.children = obj(outer1_2[31]).smartOutput(icon, output, textColor);
+        items[1] = outer1_16(outer1_21, obj1);
         obj.children = items;
-        return closure_17(closure_21, obj, textColor.key);
+        return outer1_17(outer1_21, obj, textColor.key);
       } else {
         const obj2 = {};
         const obj3 = { top: num };
         obj2.style = obj3;
         obj2.icon = icon.icon;
-        const fontScale = store.getFontScale();
+        const fontScale = outer1_4.getFontScale();
         if (fontScale < 1) {
-          let XXSMALL = obj(closure_2[24]).GuildIconSizes.XXXSMALL;
+          let XXSMALL = obj(outer1_2[24]).GuildIconSizes.XXXSMALL;
         } else if (fontScale < 1.25) {
-          XXSMALL = obj(closure_2[24]).GuildIconSizes.XXSMALL_12;
+          XXSMALL = obj(outer1_2[24]).GuildIconSizes.XXSMALL_12;
         } else {
-          XXSMALL = obj(closure_2[24]).GuildIconSizes.XXSMALL;
+          XXSMALL = obj(outer1_2[24]).GuildIconSizes.XXSMALL;
         }
         obj2.size = XXSMALL;
-        callback(obj(closure_2[24]), obj2);
-        const tmp2 = callback;
-        const tmp5 = obj(closure_2[24]);
+        outer1_16(obj(outer1_2[24]), obj2);
+        const tmp2 = outer1_16;
+        const tmp5 = obj(outer1_2[24]);
       }
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.CHANNEL] = {
+  obj[obj(4563).AST_KEY.CHANNEL] = {
     react(iconType, output, textColor) {
       iconType = iconType.iconType;
       let str = "text";
@@ -1004,66 +1001,68 @@ export default function createRules() {
         num = 0;
       }
       let obj = {};
-      obj.themedColor = obj(closure_2[14]).colors.MENTION_FOREGROUND;
-      obj.source = obj(closure_2[51]).getChannelMentionIcon(str);
-      obj.size = callback3();
+      obj.themedColor = obj(outer1_2[14]).colors.MENTION_FOREGROUND;
+      obj.source = obj(outer1_2[51]).getChannelMentionIcon(str);
+      obj.size = outer1_22();
       obj.style = { top: 1 };
       obj = {};
       textColor = undefined;
-      const obj2 = obj(closure_2[51]);
+      const obj2 = obj(outer1_2[51]);
       if (null != textColor) {
         textColor = textColor.textColor;
       }
       obj.color = textColor;
       obj = { paddingEnd: num };
-      const items = [callback(closure_6, { style: obj, children: callback(obj(closure_2[25]).ThemedIcon, obj) }), ];
-      const tmp = callback(obj(closure_2[25]).ThemedIcon, obj);
-      const tmp2 = closure_17;
-      const tmp3 = closure_21;
-      items[1] = obj(closure_2[31]).smartOutput(iconType, output, textColor);
+      const items = [outer1_16(outer1_6, { style: obj, children: outer1_16(obj(outer1_2[25]).ThemedIcon, obj) }), ];
+      const tmp = outer1_16(obj(outer1_2[25]).ThemedIcon, obj);
+      const tmp2 = outer1_17;
+      const tmp3 = outer1_21;
+      items[1] = obj(outer1_2[31]).smartOutput(iconType, output, textColor);
       obj.children = items;
       return tmp2(tmp3, obj, textColor.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.COMMAND_MENTION] = {
+  obj[obj(4563).AST_KEY.COMMAND_MENTION] = {
     react(node, output, key) {
-      const obj = { styles: obj, state: key, node, output };
-      return callback(closure_31, obj, key.key);
+      obj = { styles: obj, state: key, node, output };
+      return outer1_16(outer1_31, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.GAME_MENTION] = {
+  obj[obj(4563).AST_KEY.GAME_MENTION] = {
     react(node, arg1, key) {
       const obj = { node, state: key };
-      return callback(obj(closure_2[52]), obj, key.key);
+      return outer1_16(obj(outer1_2[52]), obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.TIMESTAMP] = {
+  obj[obj(4563).AST_KEY.TIMESTAMP] = {
     react(node, arg1, key) {
-      const obj = { node, style: obj.timestamp };
-      return callback(obj(closure_2[53]), obj, key.key);
+      obj = { node, style: obj.timestamp };
+      return outer1_16(obj(outer1_2[53]), obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.LIST] = {
+  obj[obj(4563).AST_KEY.LIST] = {
     react(start, arg1, level) {
-      let obj = start;
-      obj = arg1;
+      let closure_0 = start;
+      let closure_1 = arg1;
+      let closure_2 = level;
+      let smartOutput = start;
       let num = 0;
       if (null != level.level) {
         num = level.level;
       }
       let closure_5 = null != start.start ? start.start : level.start;
       if (level.formatInline) {
-        obj = {};
+        let obj = {};
         let textColor;
         if (null != level) {
           textColor = level.textColor;
         }
         obj.color = textColor;
-        const items = start.items;
-        obj.children = items.map((self) => {
+        let items = start.items;
+        obj.children = items.map((arg0, arg1) => {
           let obj = {};
           let str = "\u2022 ";
-          if (true === self.ordered) {
+          if (true === start.ordered) {
             str = "\u2022 ";
             if (null != closure_5) {
               const _HermesInternal = HermesInternal;
@@ -1072,28 +1071,29 @@ export default function createRules() {
           }
           const items = [str, , ];
           obj = {};
-          const merged = Object.assign(arg2);
-          obj["key"] = "" + arg2.key + "-" + arg1;
-          items[1] = arg1(self, obj);
+          const merged = Object.assign(level);
+          obj["key"] = "" + level.key + "-" + arg1;
+          items[1] = callback(arg0, obj);
           let str4 = " ";
-          if (arg1 !== self.items.length - 1) {
+          if (arg1 !== start.items.length - 1) {
             str4 = "  ";
           }
           items[2] = str4;
           obj.children = items;
-          return closure_17(self.Fragment, obj, "list-" + arg2.key + "-item-" + arg1);
+          return outer2_17(outer2_3.Fragment, obj, "list-" + level.key + "-item-" + arg1);
         });
-        const _HermesInternal2 = HermesInternal;
-        return callback(closure_21, obj, "list-" + level.key);
+        let _HermesInternal2 = HermesInternal;
+        return outer1_16(outer1_21, obj, "list-" + level.key);
       } else {
-        const items1 = start.items;
-        const mapped = items1.map((arr, arg1, self) => {
+        let items1 = start.items;
+        let mapped = items1.map((arr) => {
+          let closure_0 = arr;
           if (0 !== num) {
             let obj = {};
-            const merged = Object.assign(self);
+            const merged = Object.assign(level);
             const _HermesInternal2 = HermesInternal;
             let str4 = "";
-            obj["key"] = "" + self.key + "-" + arg1;
+            obj["key"] = "" + level.key + "-" + arg1;
             obj["level"] = num + 1;
             if (null != closure_5) {
               let sum = closure_5 + 1;
@@ -1101,12 +1101,11 @@ export default function createRules() {
               sum = closure_5;
             }
             obj["start"] = sum;
-            arg1 = obj;
-            obj = { style: closure_19.listItem, variant: "text-sm/medium" };
-            const obj1 = { style: closure_19.bullet };
+            obj = { style: outer2_19.listItem, variant: "text-sm/medium" };
+            const obj1 = { style: outer2_19.bullet };
             let textColor;
-            if (null != self) {
-              textColor = self.textColor;
+            if (null != level) {
+              textColor = level.textColor;
             }
             obj1.color = textColor;
             let repeatResult = str4;
@@ -1114,14 +1113,14 @@ export default function createRules() {
               const repeat = "  ".repeat;
               repeatResult = "  ".repeat(num);
             }
-            const items = [repeatResult, "\u26AC "];
+            let items = [repeatResult, "\u26AC "];
             obj1.children = items;
             const _HermesInternal3 = HermesInternal;
-            const items1 = [closure_17(closure_21, obj1, "list-" + self.key + "-item-" + arg1 + "-bullet"), , ];
+            const items1 = [outer2_17(outer2_21, obj1, "list-" + level.key + "-item-" + arg1 + "-bullet"), , ];
             const _Array = Array;
             if (Array.isArray(arr)) {
               let mapped = arr.map((type) => {
-                let str = arg1 + 1 === type.length;
+                let str = arg1 + 1 === arr.length;
                 const obj = {};
                 let str2 = tmp;
                 if ("list" === type.type) {
@@ -1136,38 +1135,38 @@ export default function createRules() {
                 }
                 items[2] = str;
                 obj.children = items;
-                return closure_17(React.Fragment, obj, arg1);
+                return outer3_17(outer3_3.Fragment, obj, arg1);
               });
             } else {
-              mapped = arg1(arr, obj);
+              mapped = obj(arr, obj);
             }
             items1[1] = mapped;
-            if (arr.items.length !== arg1 + 1) {
+            if (start2.items.length !== arg1 + 1) {
               str4 = "  ";
             }
             items1[2] = str4;
             obj.children = items1;
             const _HermesInternal4 = HermesInternal;
-            return closure_17(arr(self[12]).Text, obj, "list-" + self.key + "-item-" + arg1);
+            return outer2_17(obj(outer2_2[12]).Text, obj, "list-" + level.key + "-item-" + arg1);
           } else {
-            if ("boolean" === typeof arr.ordered) {
+            if ("boolean" === typeof start2.ordered) {
               const _HermesInternal = HermesInternal;
               let str = "" + closure_5 + arg1 + ". ";
             }
-            obj = arr(self[50]);
+            obj = obj(outer2_2[50]);
             str = "\u25CF ";
             if (obj.isAndroid()) {
               str = "\u2022 ";
             }
           }
         });
-        obj = { style: closure_19.list, variant: "text-sm/medium", children: mapped };
-        const _HermesInternal = HermesInternal;
-        return callback(obj(level[12]).Text, obj, "list-" + level.key);
+        obj = { style: outer1_19.list, variant: "text-sm/medium", children: mapped };
+        let _HermesInternal = HermesInternal;
+        return outer1_16(obj(outer1_2[12]).Text, obj, "list-" + level.key);
       }
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.HEADING] = {
+  obj[obj(4563).AST_KEY.HEADING] = {
     react(level, output, formatInline) {
       if (formatInline.formatInline) {
         let obj = { variant: "text-sm/semibold" };
@@ -1176,9 +1175,9 @@ export default function createRules() {
           textColor = formatInline.textColor;
         }
         obj.color = textColor;
-        const items = [obj(closure_2[31]).smartOutput(level, output, formatInline), " "];
+        const items = [obj(outer1_2[31]).smartOutput(level, output, formatInline), " "];
         obj.children = items;
-        return closure_17(closure_21, obj, formatInline.key);
+        return outer1_17(outer1_21, obj, formatInline.key);
       } else {
         let str = "heading-xl/bold";
         if (1 !== level.level) {
@@ -1194,21 +1193,21 @@ export default function createRules() {
           str3 = "text-overlay-light";
         }
         obj.color = str3;
-        const items1 = [obj(closure_2[31]).smartOutput(level, output, formatInline), "\n"];
+        const items1 = [obj(outer1_2[31]).smartOutput(level, output, formatInline), "\n"];
         obj.children = items1;
-        return closure_17(obj(closure_2[12]).Text, obj, formatInline.key);
+        return outer1_17(obj(outer1_2[12]).Text, obj, formatInline.key);
       }
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.SUBTEXT] = {
+  obj[obj(4563).AST_KEY.SUBTEXT] = {
     react(node, output, key) {
-      const obj = { cachedAt: 400, edpbxy: 20 };
-      const items = [obj(closure_2[31]).smartOutput(node, output, key), "\n"];
+      const obj = { variant: "text-sm/normal", color: "text-muted" };
+      const items = [obj(outer1_2[31]).smartOutput(node, output, key), "\n"];
       obj.children = items;
-      return callback2(obj(closure_2[12]).Text, obj, key.key);
+      return outer1_17(obj(outer1_2[12]).Text, obj, key.key);
     }
   };
-  obj[arg1(dependencyMap[44]).AST_KEY.SILENT_PREFIX] = {
+  obj[obj(4563).AST_KEY.SILENT_PREFIX] = {
     react(content, output, textColor) {
       if ("string" === typeof content.content) {
         content = content.content;
@@ -1219,11 +1218,11 @@ export default function createRules() {
           textColor = textColor.textColor;
         }
         obj.color = textColor;
-        obj.children = obj(closure_2[31]).smartOutput(content, output, textColor);
-        content = closure_16(closure_21, obj, textColor.key);
-        const obj2 = obj(closure_2[31]);
-        const tmp = closure_16;
-        const tmp2 = closure_21;
+        obj.children = obj(outer1_2[31]).smartOutput(content, output, textColor);
+        content = outer1_16(outer1_21, obj, textColor.key);
+        const obj2 = obj(outer1_2[31]);
+        const tmp = outer1_16;
+        const tmp2 = outer1_21;
       }
       return content;
     }
@@ -1235,8 +1234,8 @@ export const plainMentionRenderer = function plainMentionRenderer(content, outpu
   if ("string" === typeof content.content) {
     content = content.content;
   } else {
-    content = output(dependencyMap[31]).smartOutput(content, output, state);
-    const obj = output(dependencyMap[31]);
+    content = require(9969) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(9969) /* smartOutput */;
   }
   return content;
 };

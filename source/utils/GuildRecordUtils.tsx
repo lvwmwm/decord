@@ -1,10 +1,20 @@
 // Module ID: 1387
-// Function ID: 16544
+// Function ID: 16545
 // Name: fromGuildPropertiesWithAdditionalFields
-// Dependencies: []
+// Dependencies: [1388, 1391, 653, 1390, 44, 1837, 2]
 // Exports: attachSerializedData, dangerouslyConstructGuildRecordFromUntypedObject, fromBackgroundSync, fromClientDiscoverableGuild, fromDirectoryGuild, fromGuild, fromGuildBasic, fromGuildDirectoryEntry, fromGuildProfile, fromInviteGuild, fromSerializedGuildRecord, fromServer, fromStoreListingGuild, fromVerificationGateGuild, isGuildRecord, toGuildProperties
 
 // Module 1387 (fromGuildPropertiesWithAdditionalFields)
+import constructInPlace from "constructInPlace";
+import isGuildOwner from "isGuildOwner";
+import { GuildNSFWContentLevel } from "ME";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
 function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guild) {
   let application_id;
   let discovery_splash;
@@ -40,7 +50,7 @@ function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guild) {
     tmp7 = home_header;
   }
   obj.homeHeader = tmp7;
-  obj.features = require(dependencyMap[3]).toSetInplace(properties.features);
+  obj.features = require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(properties.features);
   let preferredLocale = properties.preferred_locale;
   if (null == preferredLocale) {
     preferredLocale = closure_7.preferredLocale;
@@ -231,23 +241,19 @@ function resolveGuildTheme(theme, guildTheme) {
   } else {
     tmp2 = null;
     if (null != theme) {
-      let fromServerGuildThemeResult = require(dependencyMap[5]).fromServerGuildTheme(theme);
+      let fromServerGuildThemeResult = require(1837) /* cloneCustomUserThemeSettings */.fromServerGuildTheme(theme);
       if (null == fromServerGuildThemeResult) {
-        fromServerGuildThemeResult = { "Null": "L", "Null": "L" };
+        fromServerGuildThemeResult = { enabled: false, themeSettings: null };
       }
       tmp2 = fromServerGuildThemeResult;
-      const obj = require(dependencyMap[5]);
+      const obj = require(1837) /* cloneCustomUserThemeSettings */;
     }
   }
   return tmp2;
 }
-const _module = require(dependencyMap[0]);
-({ constructInPlace: closure_3, merge: closure_4, objectIsPlainRecordOfType: closure_5, tryReuseExistingInPlacePlainRecord: closure_6 } = _module);
-const _module1 = require(dependencyMap[1]);
-({ GUILD_DEFAULT_PROPERTY_VALUES: closure_7, GuildRecordTypeTag: closure_8 } = _module1);
-const GuildNSFWContentLevel = require(dependencyMap[2]).GuildNSFWContentLevel;
-const _module2 = require(dependencyMap[6]);
-const result = _module2.fileFinishedImporting("utils/GuildRecordUtils.tsx");
+({ constructInPlace: closure_3, merge: closure_4, objectIsPlainRecordOfType: closure_5, tryReuseExistingInPlacePlainRecord: closure_6 } = constructInPlace);
+({ GUILD_DEFAULT_PROPERTY_VALUES: closure_7, GuildRecordTypeTag: closure_8 } = isGuildOwner);
+const result = require("ME").fileFinishedImporting("utils/GuildRecordUtils.tsx");
 
 export const isGuildRecord = function isGuildRecord(guild) {
   return callback3(closure_8, guild);
@@ -273,7 +279,7 @@ export const fromServer = function fromServer(joined_at, joinedAt) {
     num = premium_subscription_count;
   }
   if (null == joined_at.properties) {
-    importDefault(dependencyMap[4])(null != joinedAt, "If guild.properties is null, existingGuild must be passed in");
+    importDefault(44)(null != joinedAt, "If guild.properties is null, existingGuild must be passed in");
     let obj = { joinedAt: date, premiumSubscriberCount: num };
     let tmp7 = callback2(joinedAt, obj);
   } else {
@@ -317,15 +323,15 @@ export const fromBackgroundSync = function fromBackgroundSync(putResult, guild) 
   }
   return tmp;
 };
-export const fromGuild = function fromGuild(guild, guild2) {
+export const fromGuild = function fromGuild(guild, fromGuildResult) {
   const obj = {};
   if (null != guild.joined_at) {
     const _Date = Date;
     let date = new Date(guild.joined_at);
   } else {
     let joinedAt;
-    if (null != guild2) {
-      joinedAt = guild2.joinedAt;
+    if (null != fromGuildResult) {
+      joinedAt = fromGuildResult.joinedAt;
     }
     date = null;
     if (null != joinedAt) {
@@ -334,10 +340,10 @@ export const fromGuild = function fromGuild(guild, guild2) {
   }
   obj.joinedAt = date;
   obj.premiumSubscriberCount = guild.premium_subscription_count;
-  return fromGuildPropertiesWithAdditionalFields(guild, obj, guild2);
+  return fromGuildPropertiesWithAdditionalFields(guild, obj, fromGuildResult);
 };
 export const fromInviteGuild = function fromInviteGuild(guild) {
-  const obj = { id: guild.id, name: guild.name, description: guild.description, icon: guild.icon, splash: guild.splash, banner: guild.banner, features: require(dependencyMap[3]).toSetInplace(guild.features) };
+  const obj = { id: guild.id, name: guild.name, description: guild.description, icon: guild.icon, splash: guild.splash, banner: guild.banner, features: require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(guild.features) };
   ({ verification_level: obj.verificationLevel, vanity_url_code: obj.vanityURLCode, premium_subscription_count: obj.premiumSubscriberCount, nsfw_level: obj.nsfwLevel, premium_tier: obj.premiumTier, home_header: obj.homeHeader } = guild);
   return constructFromPartialGuildRecord(obj);
 };
@@ -353,7 +359,7 @@ export const fromGuildProfile = function fromGuildProfile(profile) {
     premiumTier = closure_7.premiumTier;
   }
   obj.premiumTier = premiumTier;
-  obj.features = require(dependencyMap[3]).toSetInplace(profile.features);
+  obj.features = require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(profile.features);
   return constructFromPartialGuildRecord(obj);
 };
 export const fromStoreListingGuild = function fromStoreListingGuild(id) {
@@ -386,7 +392,7 @@ export const fromDirectoryGuild = function fromDirectoryGuild(id) {
     tmp4 = splash;
   }
   obj.splash = tmp4;
-  obj.features = require(dependencyMap[3]).toSetInplace(id.features);
+  obj.features = require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(id.features);
   return constructFromPartialGuildRecord(obj);
 };
 export const fromGuildDirectoryEntry = function fromGuildDirectoryEntry(entry) {
@@ -415,7 +421,7 @@ export const fromGuildDirectoryEntry = function fromGuildDirectoryEntry(entry) {
     tmp4 = splash;
   }
   obj.splash = tmp4;
-  obj.features = require(dependencyMap[3]).toSetInplace(entry.features);
+  obj.features = require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(entry.features);
   return constructFromPartialGuildRecord(obj);
 };
 export const fromVerificationGateGuild = function fromVerificationGateGuild(stateFromStores1) {
@@ -438,7 +444,7 @@ export const fromVerificationGateGuild = function fromVerificationGateGuild(stat
     tmp4 = splash;
   }
   obj.splash = tmp4;
-  obj.features = require(dependencyMap[3]).toSetInplace(stateFromStores1.features);
+  obj.features = require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(stateFromStores1.features);
   let verificationLevel = stateFromStores1.verification_level;
   if (null == verificationLevel) {
     verificationLevel = closure_7.verificationLevel;
@@ -477,7 +483,7 @@ export const fromClientDiscoverableGuild = function fromClientDiscoverableGuild(
     tmp6 = icon;
   }
   obj.icon = tmp6;
-  obj.features = require(dependencyMap[3]).toSetInplace(guild.features);
+  obj.features = require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(guild.features);
   let premiumSubscriberCount = guild.premiumSubscriptionCount;
   if (null == premiumSubscriberCount) {
     premiumSubscriberCount = closure_7.premiumSubscriberCount;
@@ -517,7 +523,7 @@ export const fromGuildBasic = function fromGuildBasic(id) {
     tmp5 = discovery_splash;
   }
   obj.discoverySplash = tmp5;
-  obj.features = require(dependencyMap[3]).toSetInplace(id.features);
+  obj.features = require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(id.features);
   return constructFromPartialGuildRecord(obj);
 };
 export const dangerouslyConstructGuildRecordFromUntypedObject = function dangerouslyConstructGuildRecordFromUntypedObject(id) {
@@ -534,7 +540,7 @@ export const dangerouslyConstructGuildRecordFromUntypedObject = function dangero
   obj.splash = id.splash || null;
   obj.banner = id.banner || null;
   obj.homeHeader = id.homeHeader || null;
-  obj.features = require(dependencyMap[3]).toSetInplace(id.features);
+  obj.features = require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(id.features);
   let preferredLocale = id.preferredLocale;
   if (!preferredLocale) {
     preferredLocale = closure_7.preferredLocale;
@@ -717,9 +723,9 @@ export const toGuildProperties = function toGuildProperties(id) {
   if (null != id.guildTheme) {
     const guildTheme = id.guildTheme;
     obj = { enabled: guildTheme.enabled };
-    const merged = Object.assign(require(dependencyMap[5]).toServerGuildThemeSettings(guildTheme.themeSettings));
+    const merged = Object.assign(require(1837) /* cloneCustomUserThemeSettings */.toServerGuildThemeSettings(guildTheme.themeSettings));
     tmp5 = obj;
-    const obj4 = require(dependencyMap[5]);
+    const obj4 = require(1837) /* cloneCustomUserThemeSettings */;
   }
   obj.theme = tmp5;
   let tmp10 = null;
@@ -737,7 +743,7 @@ export const toGuildProperties = function toGuildProperties(id) {
 export const fromSerializedGuildRecord = function fromSerializedGuildRecord(value) {
   const obj = {};
   const merged = Object.assign(value);
-  obj["features"] = require(dependencyMap[3]).toSetInplace(value.features);
+  obj["features"] = require(1390) /* _createForOfIteratorHelperLoose */.toSetInplace(value.features);
   let date = null;
   if (null != value.joinedAt) {
     const _Date = Date;
@@ -750,8 +756,8 @@ export const fromSerializedGuildRecord = function fromSerializedGuildRecord(valu
     date1 = new Date(value.premiumProgressBarEnabledUserUpdatedAt);
   }
   obj["premiumProgressBarEnabledUserUpdatedAt"] = date1;
-  delete r2.roles;
-  delete r2.member;
+  delete tmp.roles;
+  delete tmp.member;
   return constructGuildInPlace(obj);
 };
 export { constructFromPartialGuildRecord };

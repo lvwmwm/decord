@@ -1,15 +1,14 @@
-// Module ID: 6948
-// Function ID: 55528
+// Module ID: 6953
+// Function ID: 55562
 // Name: videoAssetFromServer
-// Dependencies: []
+// Dependencies: [2]
 // Exports: desktopVideoAssetsFromServer, desktopVideoMessagesFromServer, mobileVideoAssetsFromServer, mobileVideoMessagesFromServer
 
-// Module 6948 (videoAssetFromServer)
+// Module 6953 (videoAssetFromServer)
 function videoAssetFromServer(video) {
   return { url: video.url, width: video.width, height: video.height, thumbnail: video.thumbnail, caption: video.caption, transcript: video.transcript };
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/quests/types/v2/Video.tsx");
+const result = require("set").fileFinishedImporting("modules/quests/types/v2/Video.tsx");
 
 export { videoAssetFromServer };
 export const desktopVideoAssetsFromServer = function desktopVideoAssetsFromServer(assets) {

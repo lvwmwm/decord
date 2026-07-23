@@ -1,20 +1,30 @@
-// Module ID: 14627
-// Function ID: 110299
+// Module ID: 14742
+// Function ID: 112463
 // Name: _scorePassword
-// Dependencies: []
+// Dependencies: [5, 14743, 1194, 653, 1197, 3712, 675, 4942, 480, 4030, 9446, 686, 14744, 14745, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 14627 (_scorePassword)
+// Module 14742 (_scorePassword)
+import closure_4 from "t";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import ME from "ME";
+import result from "result";
+
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function _scorePassword() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _scorePassword = obj;
   return obj(...arguments);
 }
 function _registerPhone() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _registerPhone = obj;
   return obj(...arguments);
 }
 function registerFull(giftCodeSKUId) {
@@ -44,14 +54,14 @@ function registerFull(giftCodeSKUId) {
   if (prop === undefined) {
     prop = null;
   }
-  let obj = importDefault(dependencyMap[11]);
+  let obj = importDefault(686);
   obj.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    importDefault(dependencyMap[12])(birthday, constants2.REGISTER);
+    importDefault(14744)(birthday, constants2.REGISTER);
     obj = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
-    importDefault(dependencyMap[6]).track(constants.AGE_GATE_ACTION, obj);
-    const obj9 = importDefault(dependencyMap[6]);
-    const diffResult = importDefault(dependencyMap[5])().diff(birthday, "years");
+    importDefault(675).track(constants.AGE_GATE_ACTION, obj);
+    const obj9 = importDefault(675);
+    const diffResult = importDefault(3712)().diff(birthday, "years");
     if (diffResult >= 13) {
       if (diffResult < 13) {
         let str3 = "23+";
@@ -65,15 +75,15 @@ function registerFull(giftCodeSKUId) {
       } else {
         str = "13-17";
       }
-      let obj1 = importDefault(dependencyMap[6]);
+      let obj1 = importDefault(675);
       obj = { age_bucket: str };
       obj1.track(constants.USER_AGE_SUBMITTED, obj);
     }
-    const obj11 = importDefault(dependencyMap[5])();
+    const obj11 = importDefault(3712)();
   }
-  let obj3 = importDefault(dependencyMap[7]);
+  let obj3 = importDefault(4942);
   obj1 = { url: constants3.REGISTER };
-  const obj2 = { fingerprint: fingerprint.getFingerprint(), email, username, global_name: globalName, password, invite, consent, phone_token: phoneToken };
+  let obj2 = { fingerprint: fingerprint.getFingerprint(), email, username, global_name: globalName, password, invite, consent, phone_token: phoneToken };
   let formatResult;
   if (null != birthday) {
     formatResult = birthday.format("YYYY-MM-DD");
@@ -87,7 +97,7 @@ function registerFull(giftCodeSKUId) {
   }
   obj2.promotional_email_opt_in = checked;
   obj1.body = obj2;
-  obj3 = { event: arg1(dependencyMap[8]).NetworkActionNames.USER_REGISTER };
+  obj3 = { event: require(480) /* isThrottled */.NetworkActionNames.USER_REGISTER };
   const obj4 = { invite_code: invite, used_username_suggestion: prop };
   let checked1;
   if (null != promoEmailConsent) {
@@ -104,38 +114,33 @@ function registerFull(giftCodeSKUId) {
   obj1.trackedActionData = obj3;
   obj1.rejectWithError = false;
   return obj3.post(obj1).then((body) => {
-    let obj = callback2(closure_3[11]);
+    let obj = outer1_1(outer1_3[11]);
     obj = { type: "REGISTER_SUCCESS", token: body.body.token };
     obj.dispatch(obj);
     obj = { type: "GUARDIAN_CONNECT_REQUIRED", shouldShowGuardianConnect: true === body.body.show_guardian_connect };
-    callback2(closure_3[11]).dispatch(obj);
-    const obj3 = callback2(closure_3[11]);
-    callback2(closure_3[6]).track(constants.AGE_GATE_ACTION, { source: constants3.REGISTER, action: constants2.AGE_GATE_SUCCESS });
+    outer1_1(outer1_3[11]).dispatch(obj);
+    const obj3 = outer1_1(outer1_3[11]);
+    outer1_1(outer1_3[6]).track(outer1_6.AGE_GATE_ACTION, { source: outer1_10.REGISTER, action: outer1_9.AGE_GATE_SUCCESS });
   }, (arg0) => {
-    if (arg0 instanceof callback(closure_3[10]).CaptchaCancelError) {
+    if (arg0 instanceof outer1_0(outer1_3[10]).CaptchaCancelError) {
       throw arg0;
     } else {
-      let tmp3 = callback2(closure_3[9]);
+      let tmp3 = outer1_1(outer1_3[9]);
       const prototype = tmp3.prototype;
       tmp3 = new tmp3(arg0);
       if (null != tmp3.getFieldErrors("date_of_birth")) {
-        const result = callback3(closure_3[13]).preventUnderageRegistration(constants3.REGISTER);
-        const obj2 = callback3(closure_3[13]);
+        const result = outer1_2(outer1_3[13]).preventUnderageRegistration(outer1_10.REGISTER);
+        const obj2 = outer1_2(outer1_3[13]);
       }
       const obj = { is_unique_username_registration: true, email_error_reason: tmp3.getFirstFieldErrorMessage("email"), phone_error_reason: tmp3.getFirstFieldErrorMessage("phone_token"), password_error_reason: tmp3.getFirstFieldErrorMessage("password"), username_error_reason: tmp3.getFirstFieldErrorMessage("username"), global_name_error_reason: tmp3.getFirstFieldErrorMessage("global_name"), date_of_birth_error_reason: tmp3.getFirstFieldErrorMessage("date_of_birth"), promotional_email_opt_in_error_reason: tmp3.getFirstFieldErrorMessage("promotional_email_opt_in"), fingerprint_error_reason: tmp3.getFirstFieldErrorMessage("fingerprint"), invite_error_reason: tmp3.getFirstFieldErrorMessage("invite"), gift_code_sku_id_error_reason: tmp3.getFirstFieldErrorMessage("gift_code_sku_id"), guild_template_code_error_reason: tmp3.getFirstFieldErrorMessage("guild_template_code"), consent_error_reason: tmp3.getFirstFieldErrorMessage("consent"), generic_error_reason: tmp3.getAnyErrorMessage() };
-      callback2(closure_3[6]).track(constants.REGISTER_SUBMIT_ERRORED, obj);
+      outer1_1(outer1_3[6]).track(outer1_6.REGISTER_SUBMIT_ERRORED, obj);
       throw tmp3;
     }
   });
 }
-let closure_4 = importDefault(dependencyMap[0]);
-arg1(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ AnalyticEvents: closure_6, AnalyticsSections: closure_7, Endpoints: closure_8 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-({ AgeGateAnalyticAction: closure_9, AgeGateSource: closure_10 } = arg1(dependencyMap[4]));
-const tmp4 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/auth/register.tsx");
+({ AnalyticEvents: closure_6, AnalyticsSections: closure_7, Endpoints: closure_8 } = ME);
+({ AgeGateAnalyticAction: closure_9, AgeGateSource: closure_10 } = result);
+result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/auth/register.tsx");
 
 export default function register(invite) {
   invite = invite.invite;

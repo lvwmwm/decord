@@ -1,14 +1,15 @@
 // Module ID: 309
 // Function ID: 4744
 // Name: Info
-// Dependencies: []
+// Dependencies: [7, 6]
 
 // Module 309 (Info)
-const importDefaultResult = importDefault(dependencyMap[0]);
-let closure_2 = importDefault(dependencyMap[1]);
+import importDefaultResult from "_defineProperties";
+import _classCallCheck from "_classCallCheck";
+
 class Info {
   constructor() {
-    tmp = closure_2(this, Info);
+    tmp = c2(this, Info);
     this.any_blank_count = 0;
     this.any_blank_ms = 0;
     this.any_blank_speed_sum = 0;
@@ -24,23 +25,23 @@ class Info {
 }
 let closure_3 = importDefaultResult(Info);
 let closure_4 = [];
-let closure_5 = 10;
-let closure_6 = null;
+let c5 = 10;
+let c6 = null;
 
-export default () => {
+export default (() => {
   class FillRateHelper {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, FillRateHelper);
+      tmp = outer1_2(this, FillRateHelper);
       this._anyBlankStartTime = null;
       this._enabled = false;
-      tmp2 = new closure_3();
+      tmp2 = new outer1_3();
       this._info = tmp2;
       this._mostlyBlankStartTime = null;
       this._samplesStartTime = null;
       this._listMetrics = arg0;
-      num = closure_6;
-      if (!closure_6) {
+      num = outer1_6;
+      if (!outer1_6) {
         num = 0;
       }
       self._enabled = num > Math.random();
@@ -48,7 +49,6 @@ export default () => {
       return;
     }
   }
-  const global = FillRateHelper;
   let obj = {
     key: "activate",
     value: function activate() {
@@ -71,14 +71,14 @@ export default () => {
       if (this._enabled) {
         const _samplesStartTime = self._samplesStartTime;
         if (null != _samplesStartTime) {
-          if (self._info.sample_count < closure_5) {
+          if (self._info.sample_count < outer1_5) {
             self._resetData();
           } else {
-            let _performance = _performance.performance;
+            const _performance = FillRateHelper.performance;
             const _Object = Object;
             const obj = { total_time_spent: _performance.now() - _samplesStartTime };
-            _performance = Object.assign({}, self._info, obj);
-            const item = arr.forEach((arg0) => arg0(closure_0));
+            let closure_0 = Object.assign({}, self._info, obj);
+            const item = outer1_4.forEach((arg0) => arg0(closure_0));
             self._resetData();
           }
         }
@@ -252,7 +252,7 @@ export default () => {
     key: "_resetData",
     value: function _resetData() {
       this._anyBlankStartTime = null;
-      this._info = new closure_3();
+      this._info = new outer1_3();
       this._mostlyBlankStartTime = null;
       this._samplesStartTime = null;
     }
@@ -261,14 +261,15 @@ export default () => {
     {
       key: "addListener",
       value: function addListener(arg0) {
-        const FillRateHelper = arg0;
-        if (null === closure_6) {
+        let closure_0 = arg0;
+        if (null === outer1_6) {
           const _console = console;
           console.warn("Call `FillRateHelper.setSampleRate` before `addListener`.");
         }
+        outer1_4.push(arg0);
         return {
           remove() {
-            closure_4 = closure_4.filter((arg0) => closure_0 !== arg0);
+            outer2_4 = outer2_4.filter((arg0) => outer1_0 !== arg0);
           }
         };
       }
@@ -276,15 +277,15 @@ export default () => {
     {
       key: "setSampleRate",
       value: function setSampleRate(arg0) {
-
+        const outer1_6 = arg0;
       }
     },
     {
       key: "setMinSampleCount",
       value: function setMinSampleCount(arg0) {
-
+        const outer1_5 = arg0;
       }
     }
   ];
   return importDefaultResult(FillRateHelper, items, items1);
-}();
+})();

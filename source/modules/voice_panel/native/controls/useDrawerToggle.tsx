@@ -1,57 +1,56 @@
-// Module ID: 15731
-// Function ID: 120342
+// Module ID: 15848
+// Function ID: 122515
 // Name: useDrawerToggle
-// Dependencies: []
+// Dependencies: [31, 10013, 10014, 3991, 8277, 15849, 1212, 2]
 // Exports: default
 
-// Module 15731 (useDrawerToggle)
-let closure_3 = importAll(dependencyMap[0]);
-const VoicePanelControlsModes = arg1(dependencyMap[1]).VoicePanelControlsModes;
+// Module 15848 (useDrawerToggle)
+import result from "result";
+import { VoicePanelControlsModes } from "VoicePanelControlsModes";
+
+const require = arg1;
 let closure_5 = { code: "function useDrawerToggleTsx1(){const{controlsSpecs,VoicePanelControlsModes}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.DRAWER;}" };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/voice_panel/native/controls/useDrawerToggle.tsx");
+const result = require("dismissPanel").fileFinishedImporting("modules/voice_panel/native/controls/useDrawerToggle.tsx");
 
 export default function useDrawerToggle(arg0) {
-  const arg1 = arg0;
-  const context = React.useContext(importDefault(dependencyMap[2]));
-  const controlsSpecs = context.controlsSpecs;
-  const importDefault = controlsSpecs;
-  const connected = context.connected;
-  const dependencyMap = connected;
-  const dismissPanel = context.dismissPanel;
-  const React = dismissPanel;
-  let obj = arg1(dependencyMap[3]);
+  const _require = arg0;
+  const context = dismissPanel.useContext(controlsSpecs(connected[2]));
+  controlsSpecs = context.controlsSpecs;
+  connected = context.connected;
+  dismissPanel = context.dismissPanel;
+  let obj = _require(connected[3]);
   const fn = function l() {
-    return controlsSpecs.get().mode === constants.DRAWER;
+    return controlsSpecs.get().mode === outer1_4.DRAWER;
   };
   obj = { controlsSpecs, VoicePanelControlsModes };
   fn.__closure = obj;
   fn.__workletHash = 900483810235;
   fn.__initData = closure_5;
   const derivedValue = obj.useDerivedValue(fn);
-  const tmp3 = importDefault(dependencyMap[4])(derivedValue);
+  const tmp3 = controlsSpecs(connected[4])(derivedValue);
   const items = [arg0, dismissPanel, connected, controlsSpecs];
-  const callback = React.useCallback(() => {
-    if (controlsSpecs.get().mode === constants.DRAWER) {
+  const callback = dismissPanel.useCallback(() => {
+    if (controlsSpecs.get().mode === outer1_4.DRAWER) {
       dismissPanel();
     } else {
       const obj = { tab: "settings" };
       const value = connected.get();
-      const VoicePanelTabAnalyticsSources = arg0(connected[5]).VoicePanelTabAnalyticsSources;
+      const VoicePanelTabAnalyticsSources = callback(connected[5]).VoicePanelTabAnalyticsSources;
       obj.source = value ? VoicePanelTabAnalyticsSources.CONNECTED_BUTTON : VoicePanelTabAnalyticsSources.PREJOIN_BUTTON;
-      arg0(obj);
-      const tmp = arg0;
+      callback(obj);
+      const tmp = callback;
     }
   }, items);
   obj = { isDrawerOpen: tmp3, handlePress: callback };
-  const intl = arg1(dependencyMap[6]).intl;
+  const intl = _require(connected[6]).intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[6]).t;
+  const t = _require(connected[6]).t;
   if (tmp3) {
-    let stringResult = string(t.awDmr/);
+    let stringResult = string(t["awDmr/"]);
   } else {
     stringResult = string(t.OXW7dL);
   }
   obj.accessibilityLabel = stringResult;
-  obj.ariaHidden = !importDefault(dependencyMap[4])(connected);
+  obj.ariaHidden = !controlsSpecs(connected[4])(connected);
   return obj;
 };

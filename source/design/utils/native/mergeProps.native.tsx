@@ -1,10 +1,10 @@
-// Module ID: 3836
-// Function ID: 31998
+// Module ID: 3838
+// Function ID: 32003
 // Name: chainCallbacks
-// Dependencies: []
+// Dependencies: [2]
 // Exports: mergeProps, mergeRefs
 
-// Module 3836 (chainCallbacks)
+// Module 3838 (chainCallbacks)
 function chainCallbacks(arg0, arg1) {
   let closure_0 = [...arguments];
   return (arg0) => {
@@ -28,13 +28,12 @@ function chainCallbacks(arg0, arg1) {
     }
   };
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("design/utils/native/mergeProps.native.tsx");
+const result = require("set").fileFinishedImporting("design/utils/native/mergeProps.native.tsx");
 
 export { chainCallbacks };
-export const mergeRefs = function mergeRefs(closure_18, photosButtonExternalRef) {
+export const mergeRefs = function mergeRefs(ref, photosButtonExternalRef) {
   const items = [...arguments];
-  return 1 === items.length ? items[0] : (current) => {
+  return 1 === items.length ? items[0] : ((current) => {
     let num = 0;
     if (0 < items.length) {
       do {
@@ -47,7 +46,7 @@ export const mergeRefs = function mergeRefs(closure_18, photosButtonExternalRef)
         num = num + 1;
       } while (num < arr.length);
     }
-  };
+  });
 };
 export const mergeProps = function mergeProps(inputProps, focusProps, arg2) {
   const items = [...arguments];
@@ -61,9 +60,9 @@ export const mergeProps = function mergeProps(inputProps, focusProps, arg2) {
     let tmp10 = tmp5;
     let keys = Object.keys();
     if (keys !== undefined) {
-      let tmp3 = tmp8;
-      let tmp4 = tmp9;
-      let tmp5 = tmp10;
+      tmp3 = tmp8;
+      tmp4 = tmp9;
+      tmp5 = tmp10;
       let obj2 = keys[tmp];
       while (obj2 !== undefined) {
         let tmp14 = obj2;
@@ -80,7 +79,7 @@ export const mergeProps = function mergeProps(inputProps, focusProps, arg2) {
                     tmp8 = obj2;
                     tmp9 = obj3;
                     tmp10 = tmp15;
-                    // continue
+                    continue;
                   }
                 }
               }
@@ -99,7 +98,7 @@ export const mergeProps = function mergeProps(inputProps, focusProps, arg2) {
         tmp8 = obj2;
         tmp9 = obj3;
         tmp10 = tmp15;
-        // continue
+        continue;
       }
     }
   }

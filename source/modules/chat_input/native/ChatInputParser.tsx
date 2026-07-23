@@ -1,22 +1,22 @@
-// Module ID: 11424
-// Function ID: 88915
+// Module ID: 11434
+// Function ID: 88965
 // Name: ChatInputParser
-// Dependencies: []
+// Dependencies: [6, 7, 27, 22, 2]
 // Exports: convertToNativeStyle
 
-// Module 11424 (ChatInputParser)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const processColor = arg1(dependencyMap[2]).processColor;
-const tmp2 = () => {
+// Module 11434 (ChatInputParser)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import { processColor } from "get ActivityIndicator";
+
+const tmp2 = (() => {
   class ChatInputParser {
     constructor() {
-      tmp = closure_2(this, ChatInputParser);
+      tmp = outer1_2(this, ChatInputParser);
       this.rules = {};
       return;
     }
   }
-  const importDefault = ChatInputParser;
   let obj = {
     key: "addRule",
     value(ruleId) {
@@ -27,32 +27,33 @@ const tmp2 = () => {
   obj = {
     key: "removeRule",
     value(arg0) {
-      delete r1[r0];
+      delete tmp2[tmp];
     }
   };
   items[1] = obj;
   obj = {
     key: "parse",
     value(arg0, arg1) {
-      const ChatInputParser = arg0;
-      const obj = ChatInputParser(arg1[3]);
-      return ChatInputParser(arg1[3]).valuesIn(this.rules).reduce((arr, matchFunction) => {
-        arr = matchFunction;
-        return arr.concat(matchFunction.matchFunction(arr, matchFunction).map((arg0, self) => {
-          if ("function" === typeof self.deleteNodeOnBackspace) {
-            let deleteNodeOnBackspace = self.deleteNodeOnBackspace(arg0);
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let obj = ChatInputParser(outer1_1[3]);
+      return ChatInputParser(outer1_1[3]).valuesIn(this.rules).reduce((arr, matchFunction) => {
+        let closure_0 = matchFunction;
+        return arr.concat(matchFunction.matchFunction(closure_0, closure_1).map((arg0) => {
+          if ("function" === typeof matchFunction.deleteNodeOnBackspace) {
+            let deleteNodeOnBackspace = matchFunction.deleteNodeOnBackspace(arg0);
           } else {
-            deleteNodeOnBackspace = self.deleteNodeOnBackspace;
+            deleteNodeOnBackspace = matchFunction.deleteNodeOnBackspace;
           }
-          if ("function" === typeof self.editDisabled) {
-            let editDisabled = self.editDisabled(arg0);
+          if ("function" === typeof matchFunction.editDisabled) {
+            let editDisabled = matchFunction.editDisabled(arg0);
           } else {
-            editDisabled = self.editDisabled;
+            editDisabled = matchFunction.editDisabled;
           }
-          const obj = { type: self.type };
+          const obj = { type: matchFunction.type };
           let style;
-          if (null != self.style) {
-            style = self.style(arg0);
+          if (null != matchFunction.style) {
+            style = matchFunction.style(arg0);
           }
           obj.style = style;
           obj.deleteNodeOnBackspace = deleteNodeOnBackspace;
@@ -65,15 +66,15 @@ const tmp2 = () => {
   };
   items[2] = obj;
   return callback(ChatInputParser, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/chat_input/native/ChatInputParser.tsx");
+})();
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/chat_input/native/ChatInputParser.tsx");
 
 export default tmp2;
 export const convertToNativeStyle = (color) => {
   let backgroundColor;
   let borderRadius;
   ({ backgroundColor, borderRadius } = color);
-  let obj = { flex: "spring", paddingVertical: 0.4, paddingRight: 1 };
+  let obj = { backgroundColor: 0, color: 0, borderRadius: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   let tmp3 = null;

@@ -1,11 +1,22 @@
-// Module ID: 9527
-// Function ID: 74231
+// Module ID: 9534
+// Function ID: 74272
 // Name: canForwardMessage
-// Dependencies: [4093640725]
+// Dependencies: [1908, 1348, 1838, 3758, 653, 1360, 566, 2]
 // Exports: useCanForwardMessage
 
-// Module 9527 (canForwardMessage)
+// Module 9534 (canForwardMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+import ME from "ME";
+
 let MessageFlags;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function canForwardMessage(state) {
   let obj = arg1;
   let obj2 = arg2;
@@ -15,13 +26,13 @@ function canForwardMessage(state) {
     obj = closure_5;
   }
   if (obj2 === undefined) {
-    obj2 = closure_2;
+    obj2 = _isNativeReflectConstruct;
   }
   if (obj3 === undefined) {
     obj3 = closure_3;
   }
   if (obj4 === undefined) {
-    obj4 = closure_4;
+    obj4 = _createForOfIteratorHelperLoose;
   }
   if (null == state) {
     return false;
@@ -47,8 +58,8 @@ function canForwardMessage(state) {
       hasItem = null == state.activityInstance;
     }
     if (hasItem) {
-      hasItem = 0 === arg1(dependencyMap[5]).removeFlag(state.flags, closure_10);
-      const obj5 = arg1(dependencyMap[5]);
+      hasItem = 0 === require(1360) /* hasFlag */.removeFlag(state.flags, closure_10);
+      const obj5 = require(1360) /* hasFlag */;
     }
     if (hasItem) {
       const channel = obj3.getChannel(state.channel_id);
@@ -91,18 +102,13 @@ function canForwardMessage(state) {
     }
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-({ GuildFeatures: closure_6, MessageFlags, MessageStates: closure_7, MessageTypesSets: closure_8, Permissions: closure_9 } = arg1(dependencyMap[4]));
+({ GuildFeatures: closure_6, MessageFlags, MessageStates: closure_7, MessageTypesSets: closure_8, Permissions: closure_9 } = ME);
 let closure_10 = MessageFlags.CROSSPOSTED | MessageFlags.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD | MessageFlags.GUILD_FEED_HIDDEN | MessageFlags.HAS_SNAPSHOT | MessageFlags.HAS_THREAD | MessageFlags.IS_CROSSPOST | MessageFlags.IS_VOICE_MESSAGE | MessageFlags.SHOULD_SHOW_LINK_NOT_DISCORD_WARNING | MessageFlags.SUPPRESS_EMBEDS | MessageFlags.SUPPRESS_NOTIFICATIONS | MessageFlags.URGENT | MessageFlags.IS_COMPONENTS_V2 | MessageFlags.IS_GUILD_OFFICIAL;
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/forwarding/canForwardMessage.tsx");
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/forwarding/canForwardMessage.tsx");
 
 export { canForwardMessage };
 export const useCanForwardMessage = function useCanForwardMessage(message) {
-  const arg1 = message;
-  const items = [closure_5, closure_2, closure_3, closure_4];
-  return arg1(dependencyMap[6]).useStateFromStores(items, () => callback(arg0, closure_5, closure_2, closure_3, closure_4));
+  const _require = message;
+  const items = [closure_5, _isNativeReflectConstruct, closure_3, _createForOfIteratorHelperLoose];
+  return _require(566).useStateFromStores(items, () => outer1_11(closure_0, outer1_5, outer1_2, outer1_3, outer1_4));
 };

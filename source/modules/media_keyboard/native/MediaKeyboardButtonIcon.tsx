@@ -1,36 +1,37 @@
-// Module ID: 11336
-// Function ID: 88167
+// Module ID: 11346
+// Function ID: 88217
 // Name: MediaKeyboardButtonIcon
-// Dependencies: []
+// Dependencies: [31, 33, 3996, 1324, 3991, 1555, 4131, 4134, 10197, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11336 (MediaKeyboardButtonIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+// Module 11346 (MediaKeyboardButtonIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 let closure_4 = { code: "function MediaKeyboardButtonIconTsx1(){const{keyboard,KeyboardTypes,chatInputFloating,withTiming,timingStandard}=this.__closure;const isActive=keyboard===KeyboardTypes.MEDIA||chatInputFloating&&keyboard===KeyboardTypes.APP_LAUNCHER;return{transform:[{rotate:withTiming(isActive?'45deg':'0deg',timingStandard)}]};}" };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardButtonIcon.tsx");
+const result = require("getKeyboardContextForType").fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardButtonIcon.tsx");
 
 export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
   if (arg0 == null) {
     HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
     throw undefined;
   } else {
-    let arg1;
-    let importDefault;
+    let _require;
+    let chatInputFloating;
     const merged = Object.assign(arg0, undefined);
-    const tmp7 = importDefault(dependencyMap[2])();
-    arg1 = tmp7;
-    let obj = arg1(dependencyMap[3]);
+    const tmp7 = chatInputFloating(3996)();
+    _require = tmp7;
+    let obj = _require(1324);
     obj = { location: "MediaKeyboardButtonIcon" };
-    const chatInputFloating = obj.useMobileVisualRefreshConfig(obj).chatInputFloating;
-    importDefault = chatInputFloating;
-    let obj2 = arg1(dependencyMap[4]);
+    chatInputFloating = obj.useMobileVisualRefreshConfig(obj).chatInputFloating;
+    let obj2 = _require(3991);
     const fn = function s() {
-      let tmp = tmp7 === tmp7(closure_2[5]).KeyboardTypes.MEDIA;
+      let tmp = _undefined === _undefined(outer1_2[5]).KeyboardTypes.MEDIA;
       if (!tmp) {
         let tmp2 = chatInputFloating;
         if (chatInputFloating) {
-          tmp2 = tmp7 === tmp7(closure_2[5]).KeyboardTypes.APP_LAUNCHER;
+          tmp2 = _undefined === _undefined(outer1_2[5]).KeyboardTypes.APP_LAUNCHER;
         }
         tmp = tmp2;
       }
@@ -40,12 +41,12 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
       if (tmp) {
         str = "45deg";
       }
-      obj.rotate = tmp7(closure_2[6]).withTiming(str, tmp7(closure_2[7]).timingStandard);
+      obj.rotate = _undefined(outer1_2[6]).withTiming(str, _undefined(outer1_2[7]).timingStandard);
       const items = [obj];
       obj.transform = items;
       return obj;
     };
-    obj = { keyboard: tmp7, KeyboardTypes: arg1(dependencyMap[5]).KeyboardTypes, chatInputFloating, withTiming: arg1(dependencyMap[6]).withTiming, timingStandard: arg1(dependencyMap[7]).timingStandard };
+    obj = { keyboard: tmp7, KeyboardTypes: _require(1555).KeyboardTypes, chatInputFloating, withTiming: _require(4131).withTiming, timingStandard: _require(4134).timingStandard };
     fn.__closure = obj;
     fn.__workletHash = 12686941860647;
     fn.__initData = closure_4;
@@ -53,7 +54,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     const obj1 = { style: animatedStyle };
     obj2 = {};
     const merged1 = Object.assign(merged);
-    obj1.children = jsx(arg1(dependencyMap[8]).PlusLargeIcon, obj2);
-    return jsx(importDefault(dependencyMap[4]).View, obj1);
+    obj1.children = jsx(_require(10197).PlusLargeIcon, {});
+    return jsx(chatInputFloating(3991).View, { style: animatedStyle });
   }
 };

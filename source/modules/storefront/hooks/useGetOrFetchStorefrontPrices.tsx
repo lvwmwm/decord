@@ -1,20 +1,21 @@
-// Module ID: 8677
-// Function ID: 68736
+// Module ID: 8684
+// Function ID: 68776
 // Name: useGetOrFetchStorefrontPricesForApplicationId
-// Dependencies: []
+// Dependencies: [31, 8685, 2]
 // Exports: useGetOrFetchStorefrontPricesForApplicationId, useGetOrFetchStorefrontPricesForSkuIds
 
-// Module 8677 (useGetOrFetchStorefrontPricesForApplicationId)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/storefront/hooks/useGetOrFetchStorefrontPrices.tsx");
+// Module 8684 (useGetOrFetchStorefrontPricesForApplicationId)
+import result from "result";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/storefront/hooks/useGetOrFetchStorefrontPrices.tsx");
 
 export const useGetOrFetchStorefrontPricesForApplicationId = function useGetOrFetchStorefrontPricesForApplicationId(applicationId) {
   applicationId = applicationId.applicationId;
-  const arg1 = applicationId;
   const items = [applicationId];
   const effect = React.useEffect(() => {
     if (null != applicationId) {
-      let obj = applicationId(closure_1[1]);
+      let obj = applicationId(outer1_1[1]);
       obj = { applicationId };
       const storefrontPricesForApplicationId = obj.fetchStorefrontPricesForApplicationId(obj);
     }
@@ -22,11 +23,10 @@ export const useGetOrFetchStorefrontPricesForApplicationId = function useGetOrFe
 };
 export const useGetOrFetchStorefrontPricesForSkuIds = function useGetOrFetchStorefrontPricesForSkuIds(skuIds) {
   skuIds = skuIds.skuIds;
-  const arg1 = skuIds;
   const items = [skuIds];
   const effect = React.useEffect(() => {
     if (0 !== skuIds.length) {
-      let obj = skuIds(closure_1[1]);
+      let obj = skuIds(outer1_1[1]);
       obj = { skuIds };
       const storefrontPricesForSkuIds = obj.fetchStorefrontPricesForSkuIds(obj);
     }

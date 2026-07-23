@@ -1,10 +1,9 @@
 // Module ID: 1862
-// Function ID: 20531
+// Function ID: 20532
 // Name: DisplayNameEffect
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 1862 (DisplayNameEffect)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/DisplayNameEffect.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/DisplayNameEffect.tsx");
 
 export const DisplayNameEffect = { SOLID: 1, [1]: "SOLID", GRADIENT: 2, [2]: "GRADIENT", NEON: 3, [3]: "NEON", TOON: 4, [4]: "TOON", POP: 5, [5]: "POP", GLOW: 6, [6]: "GLOW", PRISM: 7, [7]: "PRISM", GUMMY: 8, [8]: "GUMMY", TEST_1: 1001, [1001]: "TEST_1", TEST_2: 1002, [1002]: "TEST_2", TEST_3: 1003, [1003]: "TEST_3", TEST_4: 1004, [1004]: "TEST_4" };

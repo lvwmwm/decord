@@ -1,22 +1,21 @@
-// Module ID: 10595
-// Function ID: 82668
+// Module ID: 10605
+// Function ID: 82718
 // Name: useDispatchOpenActivity
-// Dependencies: []
+// Dependencies: [31, 686, 2]
 // Exports: default
 
-// Module 10595 (useDispatchOpenActivity)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/useDispatchOpenActivity.tsx");
+// Module 10605 (useDispatchOpenActivity)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/activities/useDispatchOpenActivity.tsx");
 
 export default function useDispatchOpenActivity(connectedEmbeddedActivity) {
   connectedEmbeddedActivity = connectedEmbeddedActivity.connectedEmbeddedActivity;
-  const importDefault = connectedEmbeddedActivity;
-  let dependencyMap;
   let applicationId;
+  applicationId = undefined;
   if (null != connectedEmbeddedActivity) {
     applicationId = connectedEmbeddedActivity.applicationId;
   }
-  dependencyMap = applicationId;
   const items = [applicationId, connectedEmbeddedActivity];
   const effect = React.useEffect(() => {
     let tmp = null != connectedEmbeddedActivity;

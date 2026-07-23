@@ -1,9 +1,18 @@
 // Module ID: 347
 // Function ID: 5139
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 99, 100, 348, 354, 359, 357]
 
 // Module 347 (_isNativeReflectConstruct)
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import _classPrivateFieldKey from "_classPrivateFieldKey";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+import closure_8 from "_classPrivateFieldBase";
+import importDefaultResult from "_classPrivateFieldKey";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,25 +23,24 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  const importDefault = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_6(closure_5(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const dependencyMap = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
 function flushValue(self) {
   const set = new Set();
-  const importDefault = set;
   function findAnimatedStyles(update) {
     if ("function" === typeof update.update) {
       set.add(update);
@@ -41,78 +49,69 @@ function flushValue(self) {
       const __getChildrenResult = update.__getChildren();
     }
   }
-  const dependencyMap = findAnimatedStyles;
   findAnimatedStyles(self);
-  const item = set.forEach((update) => update.update());
+  let item = set.forEach((update) => update.update());
 }
 function _executeAsAnimatedBatch(combined) {
-  const API = importDefault(dependencyMap[8]).API;
+  const API = importDefault(348).API;
   const result = API.setWaitingForIdentifier(combined);
   arg1();
-  const API2 = importDefault(dependencyMap[8]).API;
+  const API2 = importDefault(348).API;
   const result1 = API2.unsetWaitingForIdentifier(combined);
 }
 function _ensureUpdateSubscriptionExists2() {
-  const self = this;
-  const importDefault = this;
+  let self = this;
+  self = this;
   if (null == callback3(this, closure_10)[closure_10]) {
     const __getNativeTagResult = self.__getNativeTag();
     const dependencyMap = __getNativeTagResult;
-    const API = importDefault(dependencyMap[8]).API;
-    const result = API.startListeningToAnimatedNodeValue(__getNativeTagResult);
-    const nativeEventEmitter = importDefault(dependencyMap[8]).nativeEventEmitter;
-    let closure_2 = nativeEventEmitter.addListener("onAnimatedValueUpdate", (tag) => {
-      if (tag.tag === __getNativeTagResult) {
+    let API = self(348).API;
+    let result = API.startListeningToAnimatedNodeValue(__getNativeTagResult);
+    const nativeEventEmitter = self(348).nativeEventEmitter;
+    let _classPrivateFieldBase = nativeEventEmitter.addListener("onAnimatedValueUpdate", (tag) => {
+      if (tag.tag === closure_1) {
         const result = self.__onAnimatedValueUpdateReceived(tag.value, tag.offset);
       }
     });
     const obj = {
       remove() {
-          if (null != callback(self, closure_10)[closure_10]) {
-            callback(self, closure_10)[closure_10] = null;
-            closure_2.remove();
+          if (null != outer1_8(self, outer1_10)[outer1_10]) {
+            outer1_8(self, outer1_10)[outer1_10] = null;
+            _classPrivateFieldBase.remove();
             const API = self(__getNativeTagResult[8]).API;
-            const result = API.stopListeningToAnimatedNodeValue(__getNativeTagResult);
+            const result = API.stopListeningToAnimatedNodeValue(closure_1);
           }
         }
     };
     callback3(self, closure_10)[closure_10] = obj;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-const importDefaultResult = importDefault(dependencyMap[7]);
 let closure_9 = importDefaultResult("listenerCount");
 let closure_10 = importDefaultResult("updateSubscription");
 let closure_11 = importDefaultResult("ensureUpdateSubscriptionExists");
 
-export default (arg0) => {
+export default ((arg0) => {
   class AnimatedValue {
     constructor(arg0, arg1) {
       self = this;
-      tmp = closure_2(this, AnimatedValue);
+      tmp = outer1_2(this, AnimatedValue);
       items = [];
       items[0] = arg1;
-      obj = closure_5(AnimatedValue);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      obj = outer1_5(AnimatedValue);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      obj = { value: closure_16 };
-      definePropertyResult = Object.defineProperty(tmp2Result, closure_11, obj);
-      definePropertyResult1 = Object.defineProperty(tmp2Result, closure_9, { writable: true, value: undefined });
-      definePropertyResult2 = Object.defineProperty(tmp2Result, closure_10, { writable: true, value: undefined });
+      obj = { value: outer1_16 };
+      definePropertyResult = Object.defineProperty(tmp2Result, outer1_11, obj);
+      definePropertyResult1 = Object.defineProperty(tmp2Result, outer1_9, { writable: true, value: undefined });
+      definePropertyResult2 = Object.defineProperty(tmp2Result, outer1_10, { writable: true, value: undefined });
       if ("number" !== typeof arg0) {
         _Error = Error;
         prototype = Error.prototype;
@@ -123,15 +122,15 @@ export default (arg0) => {
         tmp19 = error;
         throw error;
       } else {
-        tmp9 = closure_8;
-        tmp10 = closure_9;
+        tmp9 = outer1_8;
+        tmp10 = outer1_9;
         num = 0;
-        closure_8(tmp2Result, closure_9)[closure_9] = 0;
-        tmp11 = closure_8;
-        tmp12 = closure_10;
-        tmp13 = closure_10;
+        outer1_8(tmp2Result, outer1_9)[outer1_9] = 0;
+        tmp11 = outer1_8;
+        tmp12 = outer1_10;
+        tmp13 = outer1_10;
         tmp14 = null;
-        closure_8(tmp2Result, closure_10)[closure_10] = null;
+        outer1_8(tmp2Result, outer1_10)[outer1_10] = null;
         tmp2Result._value = arg0;
         tmp2Result._startingValue = arg0;
         tmp2Result._offset = 0;
@@ -147,24 +146,23 @@ export default (arg0) => {
       }
     }
   }
-  const importDefault = AnimatedValue;
   callback2(AnimatedValue, arg0);
   let obj = {
     key: "__detach",
     value: function __detach() {
-      const self = this;
-      const AnimatedValue = this;
+      let self = this;
+      self = this;
       if (this.__isNative) {
-        const API = AnimatedValue(closure_1[8]).API;
+        const API = AnimatedValue(outer1_1[8]).API;
         const value = API.getValue(self.__getNativeTag(), (arg0) => {
           self._value = arg0 - self._offset;
         });
       }
       self.stopAnimation();
-      callback5(AnimatedValue, "__detach", self, 3)([]);
+      outer1_13(self, "__detach", self, 3)([]);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "__getValue",
     value: function __getValue() {
@@ -176,10 +174,10 @@ export default (arg0) => {
     key: "__makeNative",
     value: function __makeNative(arg0) {
       const items = [arg0];
-      callback5(AnimatedValue, "__makeNative", this, 3)(items);
-      if (callback3(this, closure_9)[closure_9] > 0) {
-        callback3(this, closure_11)[closure_11]();
-        const tmp4 = callback3(this, closure_11);
+      outer1_13(AnimatedValue, "__makeNative", this, 3)(items);
+      if (outer1_8(this, outer1_9)[outer1_9] > 0) {
+        outer1_8(this, outer1_11)[outer1_11]();
+        const tmp4 = outer1_8(this, outer1_11);
       }
     }
   };
@@ -188,13 +186,13 @@ export default (arg0) => {
     key: "addListener",
     value: function addListener(arg0) {
       const items = [arg0];
-      const tmp2 = callback3(this, closure_9);
-      tmp2[closure_9] = tmp2[closure_9] + 1;
+      const tmp2 = outer1_8(this, outer1_9);
+      tmp2[outer1_9] = tmp2[outer1_9] + 1;
       if (this.__isNative) {
-        callback3(this, closure_11)[closure_11]();
-        const tmp5 = callback3(this, closure_11);
+        outer1_8(this, outer1_11)[outer1_11]();
+        const tmp5 = outer1_8(this, outer1_11);
       }
-      return callback5(AnimatedValue, "addListener", this, 3)(items);
+      return outer1_13(AnimatedValue, "addListener", this, 3)(items);
     }
   };
   items[4] = {
@@ -202,15 +200,15 @@ export default (arg0) => {
     value: function removeListener(arg0) {
       const self = this;
       const items = [arg0];
-      callback5(AnimatedValue, "removeListener", this, 3)(items);
-      const tmp2 = callback3(this, closure_9);
-      tmp2[closure_9] = tmp2[closure_9] - 1;
+      outer1_13(AnimatedValue, "removeListener", this, 3)(items);
+      const tmp2 = outer1_8(this, outer1_9);
+      tmp2[outer1_9] = tmp2[outer1_9] - 1;
       let __isNative = this.__isNative;
       if (__isNative) {
-        __isNative = 0 === callback3(self, closure_9)[closure_9];
+        __isNative = 0 === outer1_8(self, outer1_9)[outer1_9];
       }
       if (__isNative) {
-        const obj = callback3(self, closure_10)[closure_10];
+        const obj = outer1_8(self, outer1_10)[outer1_10];
         if (null != obj) {
           obj.remove();
         }
@@ -220,10 +218,10 @@ export default (arg0) => {
   items[5] = {
     key: "removeAllListeners",
     value: function removeAllListeners() {
-      callback5(AnimatedValue, "removeAllListeners", this, 3)([]);
-      callback3(this, closure_9)[closure_9] = 0;
+      outer1_13(AnimatedValue, "removeAllListeners", this, 3)([]);
+      outer1_8(this, outer1_9)[outer1_9] = 0;
       if (this.__isNative) {
-        const obj = callback3(this, closure_10)[closure_10];
+        const obj = outer1_8(this, outer1_10)[outer1_10];
         if (null != obj) {
           obj.remove();
         }
@@ -234,7 +232,7 @@ export default (arg0) => {
     key: "setValue",
     value: function setValue(_value) {
       let self = this;
-      const AnimatedValue = _value;
+      let closure_0 = _value;
       self = this;
       if (this._animation) {
         const _animation = self._animation;
@@ -243,9 +241,9 @@ export default (arg0) => {
       }
       self._updateValue(_value, !self.__isNative);
       if (self.__isNative) {
-        callback7(self.__getNativeTag().toString(), () => {
-          const API = arg0(self[8]).API;
-          return API.setAnimatedNodeValue(self.__getNativeTag(), arg0);
+        outer1_15(self.__getNativeTag().toString(), () => {
+          const API = AnimatedValue(outer2_1[8]).API;
+          return API.setAnimatedNodeValue(self.__getNativeTag(), closure_0);
         });
         const str = self.__getNativeTag();
       }
@@ -257,7 +255,7 @@ export default (arg0) => {
       const self = this;
       this._offset = _offset;
       if (this.__isNative) {
-        const API = AnimatedValue(closure_1[8]).API;
+        const API = AnimatedValue(outer1_1[8]).API;
         const result = API.setAnimatedNodeOffset(self.__getNativeTag(), _offset);
       }
     }
@@ -269,7 +267,7 @@ export default (arg0) => {
       this._value = this._value + this._offset;
       this._offset = 0;
       if (this.__isNative) {
-        const API = AnimatedValue(closure_1[8]).API;
+        const API = AnimatedValue(outer1_1[8]).API;
         const result = API.flattenAnimatedNodeOffset(self.__getNativeTag());
       }
     }
@@ -277,13 +275,13 @@ export default (arg0) => {
   items[9] = {
     key: "extractOffset",
     value: function extractOffset() {
-      const self = this;
-      const AnimatedValue = this;
+      let self = this;
+      self = this;
       this._offset = this._offset + this._value;
       this._value = 0;
       if (this.__isNative) {
-        callback7(self.__getNativeTag().toString(), () => {
-          const API = self(closure_1[8]).API;
+        outer1_15(self.__getNativeTag().toString(), () => {
+          const API = AnimatedValue(outer2_1[8]).API;
           return API.extractAnimatedNodeOffset(self.__getNativeTag());
         });
         const str = self.__getNativeTag();
@@ -302,7 +300,7 @@ export default (arg0) => {
       self._animation = null;
       if (arg0) {
         if (self.__isNative) {
-          const API = AnimatedValue(closure_1[8]).API;
+          const API = AnimatedValue(outer1_1[8]).API;
           const value = API.getValue(self.__getNativeTag(), arg0);
         } else {
           arg0(self.__getValue());
@@ -317,7 +315,7 @@ export default (arg0) => {
       this.stopAnimation(arg0);
       this._value = this._startingValue;
       if (this.__isNative) {
-        const API = AnimatedValue(closure_1[8]).API;
+        const API = AnimatedValue(outer1_1[8]).API;
         API.setAnimatedNodeValue(self.__getNativeTag(), self._startingValue);
       }
     }
@@ -334,7 +332,7 @@ export default (arg0) => {
   items[13] = {
     key: "interpolate",
     value: function interpolate(arg0) {
-      let tmp = AnimatedValue(closure_1[9]);
+      let tmp = AnimatedValue(outer1_1[9]);
       tmp = new tmp(this, arg0);
       return tmp;
     }
@@ -343,12 +341,12 @@ export default (arg0) => {
     key: "animate",
     value: function animate(__isInteraction) {
       let self = this;
-      const AnimatedValue = arg1;
+      let closure_0 = arg1;
       self = this;
-      let closure_2 = null;
+      let _classPrivateFieldBase = null;
       if (__isInteraction.__isInteraction) {
-        closure_2 = AnimatedValue(self[10]).createInteractionHandle();
-        const obj = AnimatedValue(self[10]);
+        _classPrivateFieldBase = AnimatedValue(outer1_1[10]).createInteractionHandle();
+        let obj = AnimatedValue(outer1_1[10]);
       }
       if (self._animation) {
         const _animation = self._animation;
@@ -359,19 +357,19 @@ export default (arg0) => {
         self._updateValue(_value, true);
       }, (arg0) => {
         self._animation = null;
-        if (null !== closure_2) {
-          const result = arg1(self[10]).clearInteractionHandle(closure_2);
-          const obj = arg1(self[10]);
+        if (null !== _classPrivateFieldBase) {
+          const result = AnimatedValue(outer2_1[10]).clearInteractionHandle(_classPrivateFieldBase);
+          const obj = AnimatedValue(outer2_1[10]);
         }
-        if (arg1) {
-          arg1(arg0);
+        if (callback) {
+          callback(arg0);
         }
       }, self._animation, self);
     }
   };
   items[15] = {
     key: "stopTracking",
-    value: function stopTracking(arg0, arg1) {
+    value: function stopTracking(closure_1, arg1) {
       const self = this;
       if (this._tracking) {
         const _tracking = self._tracking;
@@ -402,7 +400,7 @@ export default (arg0) => {
       } else {
         self._value = _value;
         if (arg1) {
-          callback6(self);
+          outer1_14(self);
         }
         self.__callListeners(self.__getValue());
       }
@@ -415,5 +413,5 @@ export default (arg0) => {
     }
   };
   return callback(AnimatedValue, items);
-}(importDefault(dependencyMap[11]));
+})(require("_isNativeReflectConstruct"));
 export { flushValue };

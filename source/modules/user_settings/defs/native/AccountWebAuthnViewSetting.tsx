@@ -1,60 +1,62 @@
-// Module ID: 13588
-// Function ID: 103000
+// Module ID: 13702
+// Function ID: 105156
 // Name: route
-// Dependencies: []
+// Dependencies: [31, 13623, 1849, 7662, 653, 4470, 1212, 5594, 566, 10095, 13626, 2]
 
-// Module 13588 (route)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let obj = arg1(dependencyMap[9]);
-obj = {
+// Module 13702 (route)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t.y7SXYX);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.y7SXYX);
   },
-  parent: arg1(dependencyMap[3]).MobileSetting.ACCOUNT,
+  parent: require("MobileSetting").MobileSetting.ACCOUNT,
   usePreNavigationAction: function useAccountCanUseWebAuthnView() {
     return React.useCallback(() => {
-      const currentUser = currentUser.getCurrentUser();
+      const currentUser = outer1_5.getCurrentUser();
       let verified;
       if (null != currentUser) {
         verified = currentUser.verified;
       }
       if (!(null != verified && verified)) {
-        let obj = callback2(closure_2[5]);
+        let obj = outer1_1(outer1_2[5]);
         obj = {};
-        const intl = callback(closure_2[6]).intl;
-        obj.title = intl.string(callback(closure_2[6]).t.v740sh);
-        const intl2 = callback(closure_2[6]).intl;
-        obj.body = intl2.string(callback(closure_2[6]).t.uggF7o);
+        const intl = outer1_0(outer1_2[6]).intl;
+        obj.title = intl.string(outer1_0(outer1_2[6]).t.v740sh);
+        const intl2 = outer1_0(outer1_2[6]).intl;
+        obj.body = intl2.string(outer1_0(outer1_2[6]).t.uggF7o);
         obj.show(obj);
       }
       return null != verified && verified;
     }, []);
   },
   useTrailing: function useAccountSecurityKeysSettingTrailing() {
-    if (!closure_4.hasFetchedCredentials()) {
-      const webAuthnCredentials = arg1(dependencyMap[7]).fetchWebAuthnCredentials();
-      const obj = arg1(dependencyMap[7]);
+    if (!_isNativeReflectConstruct.hasFetchedCredentials()) {
+      const webAuthnCredentials = require(5594) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
+      let obj = require(5594) /* _fetchWebAuthnConditionalChallenge */;
     }
-    const items = [closure_4];
-    return arg1(dependencyMap[8]).useStateFromStores(items, () => {
-      const intl = callback(closure_2[6]).intl;
-      const obj = { count: credentials.getCredentials().length };
-      return intl.formatToPlainString(callback(closure_2[6]).t.n8mZ0X, obj);
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => {
+      const intl = outer1_0(outer1_2[6]).intl;
+      const obj = { count: outer1_4.getCredentials().length };
+      return intl.formatToPlainString(outer1_0(outer1_2[6]).t.n8mZ0X, obj);
     });
   },
   unsearchable: true,
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[4]).UserSettingsSections.WEBAUTHN_VIEW,
+createToggle = {
+  route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return arg1(dependencyMap[10]).default;
+    return require(13626) /* UserSettingsWebAuthn */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/defs/native/AccountWebAuthnViewSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/defs/native/AccountWebAuthnViewSetting.tsx");
 
-export default route;
+export default createToggle;

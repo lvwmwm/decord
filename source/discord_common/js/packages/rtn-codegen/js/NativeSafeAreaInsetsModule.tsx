@@ -1,12 +1,12 @@
 // Module ID: 1569
-// Function ID: 17632
+// Function ID: 17633
 // Name: enforcing
-// Dependencies: []
+// Dependencies: [27, 2]
 
 // Module 1569 (enforcing)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 const enforcing = TurboModuleRegistry.getEnforcing("NativeSafeAreaInsetsModule");
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeSafeAreaInsetsModule.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeSafeAreaInsetsModule.tsx");
 
 export default enforcing;

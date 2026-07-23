@@ -1,10 +1,9 @@
-// Module ID: 12010
-// Function ID: 92829
+// Module ID: 12124
+// Function ID: 94980
 // Name: WishlistVisibility
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 12010 (WishlistVisibility)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/WishlistVisibility.tsx");
+// Module 12124 (WishlistVisibility)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/WishlistVisibility.tsx");
 
 export const WishlistVisibility = { PRIVATE: 0, [0]: "PRIVATE", PUBLIC: 1, [1]: "PUBLIC" };

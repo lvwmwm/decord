@@ -1,7 +1,7 @@
-// Module ID: 14584
-// Function ID: 109926
-// Dependencies: []
+// Module ID: 14699
+// Function ID: 112090
+// Name: set
+// Dependencies: [2]
 
-// Module 14584
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/devtools/native/components/screens/performance/types.tsx");
+// Module 14699 (set)
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/types.tsx");

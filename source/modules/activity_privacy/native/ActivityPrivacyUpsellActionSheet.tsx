@@ -1,13 +1,15 @@
-// Module ID: 14455
-// Function ID: 108932
+// Module ID: 14569
+// Function ID: 111085
 // Name: ActivityPrivacyUpsellActionSheet
-// Dependencies: []
+// Dependencies: [31, 33, 13754, 13756, 2]
 // Exports: default
 
-// Module 14455 (ActivityPrivacyUpsellActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/activity_privacy/native/ActivityPrivacyUpsellActionSheet.tsx");
+// Module 14569 (ActivityPrivacyUpsellActionSheet)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("getPermissiveness").fileFinishedImporting("modules/activity_privacy/native/ActivityPrivacyUpsellActionSheet.tsx");
 
 export default function ActivityPrivacyUpsellActionSheet(direction) {
   let confirmText;
@@ -15,14 +17,12 @@ export default function ActivityPrivacyUpsellActionSheet(direction) {
   let title;
   let toastContent;
   direction = direction.direction;
-  const arg1 = direction;
   const affectedGuildIds = direction.affectedGuildIds;
-  const importDefault = affectedGuildIds;
-  const upsellStrings = arg1(dependencyMap[2]).getUpsellStrings(direction === arg1(dependencyMap[2]).ChangeDirection.RESTRICTING, direction.settingName);
+  const upsellStrings = direction(13754).getUpsellStrings(direction === direction(13754).ChangeDirection.RESTRICTING, direction.settingName);
   const items = [direction, affectedGuildIds];
   ({ title, subtitle, confirmText, toastContent } = upsellStrings);
   const onConfirm = React.useCallback(() => {
-    const result = direction(closure_2[2]).applyBulkGuildRestrictionChange(direction, affectedGuildIds);
+    const result = direction(outer1_2[2]).applyBulkGuildRestrictionChange(direction, affectedGuildIds);
   }, items);
-  return jsx(importDefault(dependencyMap[3]), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
+  return jsx(affectedGuildIds(13756), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
 };

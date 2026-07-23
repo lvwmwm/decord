@@ -1,15 +1,15 @@
-// Module ID: 14460
-// Function ID: 108949
+// Module ID: 14574
+// Function ID: 111102
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getNotifyFriendsOnProfileUpdateExperiment, useNotifyFriendsOnProfileUpdateExperiment
 
-// Module 14460 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": true, "Bool(false)": true, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/notifications/profile_updates/sender/NotifyFriendsOnProfileUpdateExperiment.tsx");
+// Module 14574 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-06-notify-friends-on-profile-update", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/notifications/profile_updates/sender/NotifyFriendsOnProfileUpdateExperiment.tsx");
 
 export default apexExperiment;
 export const useNotifyFriendsOnProfileUpdateExperiment = function useNotifyFriendsOnProfileUpdateExperiment(NotifyFriendsOnProfileUpdateSetting) {

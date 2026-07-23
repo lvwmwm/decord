@@ -1,17 +1,23 @@
-// Module ID: 8168
-// Function ID: 64509
+// Module ID: 8174
+// Function ID: 64546
 // Name: canToggleCommunicationDisableOnUser
-// Dependencies: []
+// Dependencies: [1391, 1838, 3758, 1849, 653, 3763, 566, 2]
 // Exports: default
 
-// Module 8168 (canToggleCommunicationDisableOnUser)
+// Module 8174 (canToggleCommunicationDisableOnUser)
+import { isGuildOwner } from "isGuildOwner";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
 function canToggleCommunicationDisableOnUser(id, id2, items) {
   let obj;
   let obj2;
   let obj3;
   let tmp = items;
   if (items === undefined) {
-    items = [closure_6, closure_4, closure_5];
+    items = [closure_6, _createForOfIteratorHelperLoose, _isNativeReflectConstruct];
     tmp = items;
   }
   [obj, obj2, obj3] = tmp;
@@ -24,8 +30,8 @@ function canToggleCommunicationDisableOnUser(id, id2, items) {
       let canResult = isGuildOwner(guild, user);
       if (!canResult) {
         obj = { permission: Permissions.ADMINISTRATOR, user, context: guild };
-        canResult = importAll(dependencyMap[5]).can(obj);
-        const obj5 = importAll(dependencyMap[5]);
+        canResult = importAll(3763).can(obj);
+        const obj5 = importAll(3763);
       }
       let canManageUserResult = !canResult;
       if (canManageUserResult) {
@@ -37,22 +43,16 @@ function canToggleCommunicationDisableOnUser(id, id2, items) {
   }
   return tmp6;
 }
-const isGuildOwner = require(dependencyMap[0]).isGuildOwner;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const Permissions = require(dependencyMap[4]).Permissions;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/guild_communication_disabled/useCanToggleCommunicationDisableOnUser.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_communication_disabled/useCanToggleCommunicationDisableOnUser.tsx");
 
 export default function useCanToggleCommunicationDisableOnUser(arg0, arg1) {
-  const require = arg0;
-  const importAll = arg1;
-  const items = [closure_6, closure_4, closure_5];
+  const _require = arg0;
+  let closure_1 = arg1;
+  let items = [closure_6, _createForOfIteratorHelperLoose, _isNativeReflectConstruct];
   const items1 = [arg0, arg1];
-  return require(dependencyMap[6]).useStateFromStores(items, () => {
-    const items = [closure_6, closure_4, closure_5];
-    return callback(arg0, arg1, items);
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_6, outer1_4, outer1_5];
+    return outer1_8(closure_0, closure_1, items);
   }, items1);
 };
 export { canToggleCommunicationDisableOnUser };

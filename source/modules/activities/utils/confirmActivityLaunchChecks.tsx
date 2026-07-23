@@ -1,48 +1,45 @@
-// Module ID: 10808
-// Function ID: 83946
+// Module ID: 10818
+// Function ID: 83995
 // Name: getOrFetchApplicationForLaunch
-// Dependencies: []
+// Dependencies: [5, 1348, 1347, 653, 10816, 10819, 686, 4029, 3748, 10820, 10524, 10821, 7371, 10823, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10808 (getOrFetchApplicationForLaunch)
+// Module 10818 (getOrFetchApplicationForLaunch)
+import EmbeddedActivityLocationKind from "EmbeddedActivityLocationKind";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { ApplicationFlags } from "ME";
+
+const require = arg1;
 function getOrFetchApplicationForLaunch() {
   return _getOrFetchApplicationForLaunch(...arguments);
 }
 function _getOrFetchApplicationForLaunch() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getOrFetchApplicationForLaunch = obj;
   return obj(...arguments);
 }
 function _confirmActivityChange() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _confirmActivityChange = obj;
   return obj(...arguments);
 }
 function _confirmActivityAgeGate() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _confirmActivityAgeGate = obj;
   return obj(...arguments);
 }
 function _confirmExternalAppLaunch() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _confirmExternalAppLaunch = obj;
   return obj(...arguments);
 }
 function _confirmActivityLaunchChecks() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _confirmActivityLaunchChecks = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const ApplicationFlags = arg1(dependencyMap[3]).ApplicationFlags;
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/activities/utils/confirmActivityLaunchChecks.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/activities/utils/confirmActivityLaunchChecks.tsx");
 
 export const confirmActivityLaunchChecks = function confirmActivityLaunchChecks(arg0) {
   return _confirmActivityLaunchChecks(...arguments);

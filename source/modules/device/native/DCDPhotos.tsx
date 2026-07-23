@@ -1,9 +1,9 @@
-// Module ID: 9658
-// Function ID: 75249
-// Dependencies: []
+// Module ID: 9665
+// Function ID: 75290
+// Name: get ActivityIndicator
+// Dependencies: [27, 2]
 
-// Module 9658
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/device/native/DCDPhotos.tsx");
+// Module 9665 (get ActivityIndicator)
+const result = require("set").fileFinishedImporting("modules/device/native/DCDPhotos.tsx");
 
-export default require(dependencyMap[0]).NativeModules.DCDPhotos;
+export default require("get ActivityIndicator").NativeModules.DCDPhotos;

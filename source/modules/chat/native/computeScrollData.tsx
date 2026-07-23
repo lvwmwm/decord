@@ -1,24 +1,29 @@
-// Module ID: 9432
-// Function ID: 73430
+// Module ID: 9439
+// Function ID: 73471
 // Name: findMessageRowIndex
-// Dependencies: []
+// Dependencies: [4122, 7622, 9440, 4062, 2]
 // Exports: default
 
-// Module 9432 (findMessageRowIndex)
+// Module 9439 (findMessageRowIndex)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import Changeset from "Changeset";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function findMessageRowIndex(rows, focusTargetId) {
+  let closure_0 = focusTargetId;
   const findIndexResult = rows.findIndex((message) => {
     let tmp = null != message.message;
     if (tmp) {
-      tmp = message.message.id === arg1;
+      tmp = message.message.id === closure_0;
     }
     return tmp;
   });
   return -1 !== findIndexResult ? findIndexResult : undefined;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ RowType: closure_3, SeparatorType: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/chat/native/computeScrollData.tsx");
+({ RowType: closure_3, SeparatorType: closure_4 } = Changeset);
+const result = require("ChatScrollPosition").fileFinishedImporting("modules/chat/native/computeScrollData.tsx");
 
 export default function computeScrollData(shouldInitialScroll) {
   let animated;
@@ -31,24 +36,24 @@ export default function computeScrollData(shouldInitialScroll) {
   ({ rows, scrollToMessageId, jumpTargetId, animated, scrollPosition, focusTargetId, jumpType } = shouldInitialScroll);
   if (shouldInitialScroll.shouldInitialScroll) {
     if (null == jumpTargetId) {
-      const tmp2 = function findUnreadSeperatorRowIndex(rows) {
+      const tmp2 = (function findUnreadSeperatorRowIndex(rows) {
         const findIndexResult = rows.findIndex((type) => {
-          let tmp = type.type === constants.SEPARATOR;
+          let tmp = type.type === outer2_3.SEPARATOR;
           if (tmp) {
-            tmp = type.id === constants2.UNREAD;
+            tmp = type.id === outer2_4.UNREAD;
           }
           return tmp;
         });
         return -1 !== findIndexResult ? findIndexResult : undefined;
-      }(rows);
+      })(rows);
       if (null != tmp2) {
-        let obj = { type: arg1(dependencyMap[2]).ChatScrollType.SCROLL, index: tmp2 };
+        let obj = { type: require(9440) /* ChatScrollPosition */.ChatScrollType.SCROLL, index: tmp2 };
         if (animated) {
-          animated = !closure_2.useReducedMotion;
+          animated = !_isNativeReflectConstruct.useReducedMotion;
         }
         obj.animate = animated;
         obj.highlight = false;
-        obj.position = arg1(dependencyMap[2]).ChatScrollPosition.TOP;
+        obj.position = require(9440) /* ChatScrollPosition */.ChatScrollPosition.TOP;
         return obj;
       }
     }
@@ -57,15 +62,15 @@ export default function computeScrollData(shouldInitialScroll) {
   if (null != scrollToMessageId) {
     const tmp5 = findMessageRowIndex(rows, scrollToMessageId);
     if (null != tmp5) {
-      obj = { type: arg1(dependencyMap[2]).ChatScrollType.SCROLL, index: tmp5 };
-      let tmp9 = !closure_2.useReducedMotion;
+      obj = { type: require(9440) /* ChatScrollPosition */.ChatScrollType.SCROLL, index: tmp5 };
+      let tmp9 = !_isNativeReflectConstruct.useReducedMotion;
       if (tmp9) {
-        tmp9 = jumpType !== arg1(dependencyMap[3]).JumpType.INSTANT;
+        tmp9 = jumpType !== require(4062) /* GuildThemeSourcePreference */.JumpType.INSTANT;
       }
       obj.animate = tmp9;
       obj.highlight = scrollToMessageId === jumpTargetId;
       if (null == scrollPosition) {
-        scrollPosition = arg1(dependencyMap[2]).ChatScrollPosition.TOP;
+        scrollPosition = require(9440) /* ChatScrollPosition */.ChatScrollPosition.TOP;
       }
       obj.position = scrollPosition;
       tmp3 = obj;
@@ -76,7 +81,7 @@ export default function computeScrollData(shouldInitialScroll) {
     if (null != focusTargetId) {
       const tmp16 = findMessageRowIndex(rows, focusTargetId);
       if (null != tmp16) {
-        obj = { type: arg1(dependencyMap[2]).ChatScrollType.FOCUS_ONLY, index: tmp16 };
+        obj = { type: require(9440) /* ChatScrollPosition */.ChatScrollType.FOCUS_ONLY, index: tmp16 };
         tmp14 = obj;
       }
     }

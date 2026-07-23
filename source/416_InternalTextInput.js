@@ -1,13 +1,28 @@
 // Module ID: 416
 // Function ID: 5838
 // Name: InternalTextInput
-// Dependencies: []
+// Dependencies: [29, 57, 31, 33, 144, 143, 48, 325, 262, 292, 147, 44, 289, 114, 253]
 
 // Module 416 (InternalTextInput)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _slicedToArray from "_slicedToArray";
+import closure_9 from "result";
+import result from "result";
+import { jsx } from "jsxProd";
+import { default as Commands } from "Commands";
+import { Commands } from "Commands";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
 function InternalTextInput(props) {
+  let Commands;
   let accessibilityState;
   let accessible;
   let caretHidden;
+  let Commands;
   let cursorColor;
   let end;
   let id;
@@ -24,7 +39,7 @@ function InternalTextInput(props) {
   let tmp5;
   const importDefault = props;
   ({ aria-busy: tmp, aria-checked: tmp2, aria-disabled: tmp3, aria-expanded: tmp4, aria-selected: tmp5, accessibilityState, id, tabIndex, selection, selectionColor, selectionHandleColor, cursorColor } = props);
-  const tmp7 = callback4(null);
+  let tmp7 = callback3(null);
   const dependencyMap = tmp7;
   let tmp8 = null;
   if (null != selection) {
@@ -45,32 +60,26 @@ function InternalTextInput(props) {
     const multiline = props.multiline;
   }
   let closure_2 = tmp9;
-  const tmp10 = callback2(callback5(0), 2);
-  const first = tmp10[0];
-  let closure_3 = first;
+  const tmp10 = hitSlop(callback4(0), 2);
+  let first = tmp10[0];
   let closure_4 = tmp10[1];
   obj = { props, inputRef: tmp7, mostRecentEventCount: first, selection: tmp8, text: defaultValue, viewCommands: Commands };
-  const tmp6 = callback(props, closure_2);
-  ({ setLastNativeText: closure_5, setLastNativeSelection: closure_6 } = function useTextInputStateSynchronization(props) {
-    props = iter;
+  let tmp6 = editable(props, closure_2);
+  ({ setLastNativeText: Commands, setLastNativeSelection: Commands } = (function useTextInputStateSynchronization(props) {
+    const iter = props.props;
     const mostRecentEventCount = props.mostRecentEventCount;
     const selection = props.selection;
     const inputRef = props.inputRef;
-    let first = inputRef;
     const text = props.text;
-    let closure_4 = text;
     const viewCommands = props.viewCommands;
-    const tmp = hitSlop(callback4(props.props.value), 2);
-    first = tmp[0];
+    let tmp = hitSlop(outer1_14(iter.value), 2);
+    const first = tmp[0];
     const setLastNativeText = tmp[1];
-    const editable = setLastNativeText;
-    const tmp4 = hitSlop(callback4({ selection: { 400888199: "pow", 2091392542: "decorationCutout" }, mostRecentEventCount }), 2);
+    const tmp4 = hitSlop(outer1_14({ selection: { start: -1, end: -1 }, mostRecentEventCount }), 2);
     const setLastNativeSelection = tmp4[1];
-    const hitSlop = setLastNativeSelection;
     const selection2 = tmp4[0].selection;
-    const onPress = selection2;
     const items = [mostRecentEventCount, inputRef, , , , , , , ];
-    ({ value: arr[2], defaultValue: arr[3] } = props.props);
+    ({ value: arr[2], defaultValue: arr[3] } = iter);
     items[4] = first;
     items[5] = selection;
     items[6] = selection2;
@@ -124,48 +133,42 @@ function InternalTextInput(props) {
         if (null != end) {
           num = end;
         }
-        viewCommands.setTextAndSelection(current, mostRecentEventCount, text, num2, num);
+        viewCommands.setTextAndSelection(current, mostRecentEventCount, closure_4, num2, num);
         const tmp19 = viewCommands;
       }
     }, items);
     return { setLastNativeText, setLastNativeSelection };
-  }(obj));
+  })(obj));
   onPressOut(() => {
     const current = tmp7.current;
-    const arg0 = current;
     if (null != current) {
-      arg0(tmp7[5]).registerInput(current);
+      props(tmp7[5]).registerInput(current);
       return () => {
-        current(closure_1[5]).unregisterInput(current);
-        const obj = current(closure_1[5]);
+        current(143).unregisterInput(current);
+        const obj = current(143);
         if (obj2.currentlyFocusedInput() === current) {
-          current(closure_1[6])(current).blur();
-          const obj3 = current(closure_1[6])(current);
+          current(48)(current).blur();
+          const obj3 = current(48)(current);
         }
       };
     }
   }, []);
-  const items = [first, Commands];
-  const tmp12 = function useTextInputStateSynchronization(props) {
-    props = iter;
+  let items = [first, Commands];
+  const tmp12 = (function useTextInputStateSynchronization(props) {
+    const iter = props.props;
     const mostRecentEventCount = props.mostRecentEventCount;
     const selection = props.selection;
     const inputRef = props.inputRef;
-    let first = inputRef;
     const text = props.text;
-    let closure_4 = text;
     const viewCommands = props.viewCommands;
-    const tmp = hitSlop(callback4(props.props.value), 2);
-    first = tmp[0];
+    let tmp = hitSlop(outer1_14(iter.value), 2);
+    const first = tmp[0];
     const setLastNativeText = tmp[1];
-    const editable = setLastNativeText;
-    const tmp4 = hitSlop(callback4({ selection: { 400888199: "pow", 2091392542: "decorationCutout" }, mostRecentEventCount }), 2);
+    const tmp4 = hitSlop(outer1_14({ selection: { start: -1, end: -1 }, mostRecentEventCount }), 2);
     const setLastNativeSelection = tmp4[1];
-    const hitSlop = setLastNativeSelection;
     const selection2 = tmp4[0].selection;
-    const onPress = selection2;
     const items = [mostRecentEventCount, inputRef, , , , , , , ];
-    ({ value: arr[2], defaultValue: arr[3] } = props.props);
+    ({ value: arr[2], defaultValue: arr[3] } = iter);
     items[4] = first;
     items[5] = selection;
     items[6] = selection2;
@@ -219,33 +222,33 @@ function InternalTextInput(props) {
         if (null != end) {
           num = end;
         }
-        viewCommands.setTextAndSelection(current, mostRecentEventCount, text, num2, num);
+        viewCommands.setTextAndSelection(current, mostRecentEventCount, closure_4, num2, num);
         const tmp19 = viewCommands;
       }
     }, items);
     return { setLastNativeText, setLastNativeSelection };
-  }(obj);
+  })(obj);
   const multiline2 = props.multiline;
   let tmp16 = null != multiline2;
   const tmp14 = onPressIn((current) => {
-    tmp7.current = current;
+    closure_1.current = current;
     if (null != current) {
       const _Object = Object;
       const obj = {
         clear() {
-            if (null != closure_1.current) {
-              store.setTextAndSelection(closure_1.current, closure_3, "", 0, 0);
+            if (null != outer1_1.current) {
+              outer1_2.setTextAndSelection(outer1_1.current, outer1_3, "", 0, 0);
             }
           },
         isFocused() {
-            return callback(closure_1[5]).currentlyFocusedInput() === closure_1.current;
+            return callback(table[5]).currentlyFocusedInput() === outer1_1.current;
           },
         getNativeRef() {
-            return closure_1.current;
+            return outer1_1.current;
           },
         setSelection(closure_0, arg1) {
-            if (null != closure_1.current) {
-              store.setTextAndSelection(closure_1.current, closure_3, null, closure_0, arg1);
+            if (null != outer1_1.current) {
+              outer1_2.setTextAndSelection(outer1_1.current, outer1_3, null, closure_0, arg1);
             }
           }
       };
@@ -278,56 +281,53 @@ function InternalTextInput(props) {
     }
   }
   let tmp17 = false !== props.focusable;
-  const editable = props.editable;
-  const callback = editable;
-  const hitSlop = props.hitSlop;
-  const callback2 = hitSlop;
+  editable = props.editable;
+  hitSlop = props.hitSlop;
   const onPress = props.onPress;
-  const React = onPress;
-  const onPressIn = props.onPressIn;
-  const onPressOut = props.onPressOut;
+  onPressIn = props.onPressIn;
+  onPressOut = props.onPressOut;
   const items1 = [editable, hitSlop, onPress, onPressIn, onPressOut, ];
   ({ rejectResponderTermination: arr2[5], accessible, caretHidden } = props);
-  const tmp15 = importDefault(dependencyMap[7])(onPressIn((current) => {
-    tmp7.current = current;
+  const tmp15 = importDefault(325)(onPressIn((current) => {
+    closure_1.current = current;
     if (null != current) {
       const _Object = Object;
       const obj = {
         clear() {
-            if (null != closure_1.current) {
-              store.setTextAndSelection(closure_1.current, closure_3, "", 0, 0);
+            if (null != outer1_1.current) {
+              outer1_2.setTextAndSelection(outer1_1.current, outer1_3, "", 0, 0);
             }
           },
         isFocused() {
-            return callback(closure_1[5]).currentlyFocusedInput() === closure_1.current;
+            return callback(table[5]).currentlyFocusedInput() === outer1_1.current;
           },
         getNativeRef() {
-            return closure_1.current;
+            return outer1_1.current;
           },
         setSelection(closure_0, arg1) {
-            if (null != closure_1.current) {
-              store.setTextAndSelection(closure_1.current, closure_3, null, closure_0, arg1);
+            if (null != outer1_1.current) {
+              outer1_2.setTextAndSelection(outer1_1.current, outer1_3, null, closure_0, arg1);
             }
           }
       };
       const merged = Object.assign(current, obj);
     }
   }, items), props.forwardedRef);
-  if (importDefault(dependencyMap[8]).isTesting) {
+  if (importDefault(262).isTesting) {
     caretHidden = true;
   }
-  const tmp19 = importDefault(dependencyMap[9])(callback3(() => ({
+  let tmp19 = importDefault(292)(callback2(() => ({
     hitSlop,
     onPress(arg0) {
-      if (null != callback) {
-        callback(arg0);
+      if (null != outer1_9) {
+        outer1_9(arg0);
       }
-      let tmp4 = false !== closure_7;
+      let tmp4 = false !== outer1_7;
       if (tmp4) {
-        tmp4 = null != ref.current;
+        tmp4 = null != outer1_1.current;
       }
       if (tmp4) {
-        const current = ref.current;
+        const current = outer1_1.current;
         current.focus();
       }
     },
@@ -336,18 +336,18 @@ function InternalTextInput(props) {
     cancelable: null
   }), items1));
   ({ onBlur, onFocus } = tmp19);
-  const tmp18 = callback3(() => ({
+  const tmp18 = callback2(() => ({
     hitSlop,
     onPress(arg0) {
-      if (null != callback) {
-        callback(arg0);
+      if (null != outer1_9) {
+        outer1_9(arg0);
       }
-      let tmp4 = false !== closure_7;
+      let tmp4 = false !== outer1_7;
       if (tmp4) {
-        tmp4 = null != ref.current;
+        tmp4 = null != outer1_1.current;
       }
       if (tmp4) {
-        const current = ref.current;
+        const current = outer1_1.current;
         current.focus();
       }
     },
@@ -357,7 +357,7 @@ function InternalTextInput(props) {
   }), items1);
   let prop;
   if (null != props) {
-    prop = props.aria-label;
+    prop = props["aria-label"];
   }
   if (null == prop) {
     let accessibilityLabel;
@@ -407,7 +407,7 @@ function InternalTextInput(props) {
     tmp24 = obj;
   }
   const style = props.style;
-  const tmp30 = importDefault(dependencyMap[10])(props.style);
+  const tmp30 = importDefault(147)(props.style);
   let tmp31 = style;
   if (null != tmp30) {
     let fontWeight;
@@ -426,7 +426,7 @@ function InternalTextInput(props) {
       if (!tmp33) {
         obj2 = {};
       }
-      obj2.textAlignVertical = closure_19[tmp30.verticalAlign];
+      obj2.textAlignVertical = table4[tmp30.verticalAlign];
       obj2.verticalAlign = undefined;
       tmp34 = obj2;
     }
@@ -438,7 +438,7 @@ function InternalTextInput(props) {
   }
   let prop1;
   if (null != props) {
-    prop1 = props.aria-labelledby;
+    prop1 = props["aria-labelledby"];
   }
   if (null == prop1) {
     let prop2;
@@ -453,20 +453,20 @@ function InternalTextInput(props) {
     str7 = placeholder;
   }
   let children = props.children;
-  const Children = React.Children;
+  const Children = onPress.Children;
   const countResult = Children.count(children);
   let tmp41 = null != props.value;
-  const tmp20 = callback(tmp19, closure_3);
-  const tmp23 = null == accessibilityState && null == tmp && null == tmp2 && null == tmp3 && null == tmp4 && null == tmp5;
+  const tmp20 = editable(tmp19, first);
+  tmp23 = null == accessibilityState && null == tmp && null == tmp2 && null == tmp3 && null == tmp4 && null == tmp5;
   const tmp36 = props.autoCapitalize || "sentences";
   if (tmp41) {
     tmp41 = countResult;
   }
-  importDefault(dependencyMap[11])(!tmp41, "Cannot specify both value and children.");
+  importDefault(44)(!tmp41, "Cannot specify both value and children.");
   let tmp43 = children;
   if (countResult > 1) {
-    const obj3 = { children };
-    tmp43 = jsx(importDefault(dependencyMap[12]), obj3);
+    let obj3 = { children };
+    tmp43 = jsx(importDefault(289), { children });
   }
   const obj4 = { selectionColor };
   if (undefined === selectionHandleColor) {
@@ -493,39 +493,39 @@ function InternalTextInput(props) {
   }
   obj6.numberOfLines = numberOfLines;
   obj6.onBlur = function _onBlur(arg0) {
-    arg0(tmp7[5]).blurInput(tmp7.current);
-    if (arg0.onBlur) {
-      arg0.onBlur(arg0);
+    props(tmp7[5]).blurInput(tmp7.current);
+    if (props.onBlur) {
+      props.onBlur(arg0);
     }
   };
   obj6.onChange = function _onChange(_pending, self) {
     const text = _pending.nativeEvent.text;
-    if (_pending.onChange) {
-      _pending.onChange(_pending);
+    if (props.onChange) {
+      props.onChange(_pending);
     }
-    if (_pending.onChangeText) {
-      _pending.onChangeText(text);
+    if (props.onChangeText) {
+      props.onChangeText(text);
     }
     if (null != tmp7.current) {
       callback2(text);
       callback(_pending.nativeEvent.eventCount);
-      const tmp7 = callback;
+      tmp7 = callback;
     }
   };
   obj6.onFocus = function _onFocus(arg0) {
-    arg0(tmp7[5]).focusInput(tmp7.current);
-    if (arg0.onFocus) {
-      arg0.onFocus(arg0);
+    props(tmp7[5]).focusInput(tmp7.current);
+    if (props.onFocus) {
+      props.onFocus(arg0);
     }
   };
   obj6.onScroll = function _onScroll(arg0) {
-    if (arg0.onScroll) {
-      arg0.onScroll(arg0);
+    if (props.onScroll) {
+      props.onScroll(arg0);
     }
   };
   obj6.onSelectionChange = function _onSelectionChange(nativeEvent) {
-    if (nativeEvent.onSelectionChange) {
-      nativeEvent.onSelectionChange(nativeEvent);
+    if (props.onSelectionChange) {
+      props.onSelectionChange(nativeEvent);
     }
     if (null != tmp7.current) {
       const obj = { selection: nativeEvent.nativeEvent.selection, mostRecentEventCount: first };
@@ -536,22 +536,16 @@ function InternalTextInput(props) {
   obj6.style = tmp31;
   obj6.text = defaultValue;
   obj6.textBreakStrategy = props.textBreakStrategy;
-  children = <closure_5 {...Object.assign({ ref: tmp15 }, tmp6, obj4, tmp20, obj6)} />;
-  return jsx(importDefault(dependencyMap[13]), { value: true, children });
+  children = <Commands {...Object.assign({ ref: tmp15 }, tmp6, obj4, tmp20, obj6)} />;
+  return jsx(importDefault(114), { value: true, children });
 }
-let closure_2 = [];
-let closure_3 = [];
-let closure_4 = [];
-let closure_7 = importDefault(dependencyMap[0]);
-let closure_8 = importDefault(dependencyMap[1]);
-let closure_9 = importAll(dependencyMap[2]);
-({ useCallback: closure_10, useLayoutEffect: closure_11, useMemo: closure_12, useRef: closure_13, useState: closure_14 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_5 = arg1(dependencyMap[4]).default;
-const Commands = arg1(dependencyMap[4]).Commands;
-let closure_16 = { <string:555757>: true, <string:720896>: true, <string:851968>: true, <string:983040>: true, <string:1114112>: true, <string:1179648>: true, <string:1572864>: true };
-let closure_17 = {};
-let closure_18 = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "size", "Bool(false)": "o", "Bool(false)": "Array", 1179783485: "isArray", 735109082: "push", 669338063: "o", 2090873474: "Array", 1549274622: "isArray", 299569651: "pos", 612241874: "o", 958626988: "Array", -1962929323: "isArray", 2091719004: "enumerable", 1377667846: "max", 853309665: "Array", 2147103453: "isArray", 1656585401: "enumerable", 2092465339: "concat", 2091142316: "Array", 611876005: "isArray", -1962705754: "url", 355349114: "HTTP", 301937271: "Array", 400888199: "isArray", 2091392542: "alignItems", 1572233113: "l", 160579: "Array", 65536: "isArray" };
+let closure_2 = ["aria-busy", "aria-checked", "aria-disabled", "aria-expanded", "aria-selected", "accessibilityState", "id", "tabIndex", "selection", "selectionColor", "selectionHandleColor", "cursorColor"];
+let closure_3 = ["onBlur", "onFocus"];
+let closure_4 = ["ref", "allowFontScaling", "rejectResponderTermination", "underlineColorAndroid", "autoComplete", "textContentType", "readOnly", "editable", "enterKeyHint", "returnKeyType", "inputMode", "showSoftInputOnFocus", "keyboardType"];
+({ useCallback: closure_10, useLayoutEffect: closure_11, useMemo: closure_12, useRef: closure_13, useState: closure_14 } = result);
+let closure_16 = { enter: "default", done: "done", go: "go", next: "next", previous: "previous", search: "search", send: "send" };
+let closure_17 = { none: "default", text: "default", decimal: "decimal-pad", numeric: "number-pad", tel: "phone-pad", search: "default", email: "email-address", url: "url" };
+let closure_18 = { "address-line1": "postal-address-region", "address-line2": "postal-address-locality", bday: "birthdate-full", "bday-day": "birthdate-day", "bday-month": "birthdate-month", "bday-year": "birthdate-year", "cc-csc": "cc-csc", "cc-exp": "cc-exp", "cc-exp-month": "cc-exp-month", "cc-exp-year": "cc-exp-year", "cc-number": "cc-number", country: "postal-address-country", "current-password": "password", email: "email", "honorific-prefix": "name-prefix", "honorific-suffix": "name-suffix", name: "name", "additional-name": "name-middle", "family-name": "name-family", "given-name": "name-given", "new-password": "password-new", off: "off", "one-time-code": "sms-otp", "postal-code": "postal-code", sex: "gender", "street-address": "street-address", tel: "tel", "tel-country-code": "tel-country-code", "tel-national": "tel-national", username: "username" };
 class TextInput {
   constructor(arg0) {
     allowFontScaling = global.allowFontScaling;
@@ -571,7 +565,7 @@ class TextInput {
     obj.allowFontScaling = tmp;
     obj.rejectResponderTermination = tmp2;
     obj.underlineColorAndroid = str;
-    tmp3 = closure_7(global, InternalTextInput);
+    tmp3 = _objectWithoutProperties(global, InternalTextInput);
     tmp4 = jsx;
     tmp5 = InternalTextInput;
     if (undefined !== readOnly) {
@@ -603,10 +597,9 @@ class TextInput {
   }
 }
 TextInput.displayName = "TextInput";
-let obj = { currentlyFocusedInput: importDefault(dependencyMap[5]).currentlyFocusedInput, currentlyFocusedField: importDefault(dependencyMap[5]).currentlyFocusedField, focusTextInput: importDefault(dependencyMap[5]).focusTextInput, blurTextInput: importDefault(dependencyMap[5]).blurTextInput };
+let obj = { currentlyFocusedInput: require("focusInput").currentlyFocusedInput, currentlyFocusedField: require("focusInput").currentlyFocusedField, focusTextInput: require("focusInput").focusTextInput, blurTextInput: require("focusInput").blurTextInput };
 TextInput.State = obj;
-const tmp2 = arg1(dependencyMap[2]);
-obj = importDefault(dependencyMap[14]).create({ multilineDefault: { paddingTop: 5 } });
-let closure_19 = { accessibilityRole: "en-US", apply: 0, "Null": null, "Null": true };
+obj = require("setStyleAttributePreprocessor").create({ multilineDefault: { paddingTop: 5 } });
+let closure_19 = { auto: "auto", top: "top", bottom: "bottom", middle: "center" };
 
 export default TextInput;

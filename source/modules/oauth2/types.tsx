@@ -1,10 +1,9 @@
-// Module ID: 8956
-// Function ID: 70638
+// Module ID: 8963
+// Function ID: 70679
 // Name: OAuth2Prompts
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8956 (OAuth2Prompts)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/oauth2/types.tsx");
+// Module 8963 (OAuth2Prompts)
+const result = require("set").fileFinishedImporting("modules/oauth2/types.tsx");
 
 export const OAuth2Prompts = { NONE: "none", CONSENT: "consent" };

@@ -1,9 +1,11 @@
 // Module ID: 494
 // Function ID: 6424
 // Name: unsafeStringify
-// Dependencies: []
+// Dependencies: [495]
 
 // Module 494 (unsafeStringify)
+const module = arg2;
+const dependencyMap = arg6;
 function unsafeStringify(array) {
   let num = 0;
   if (arguments.length > 1) {
@@ -31,7 +33,7 @@ arg5.default = function stringify(arg0) {
     }
   }
   const tmpResult = unsafeStringify(arg0, num);
-  if (arg2(arg6[0])(tmpResult)) {
+  if (module(495)(tmpResult)) {
     return tmpResult;
   } else {
     const _TypeError = TypeError;

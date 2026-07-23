@@ -1,40 +1,42 @@
-// Module ID: 10763
-// Function ID: 83662
+// Module ID: 10773
+// Function ID: 83711
 // Name: useActiveSpeakerPillScrollHandler
-// Dependencies: [357105664, 131072, 528089088, 452984832, 553648128, 503316480]
+// Dependencies: [57, 31, 677, 682, 3743, 2]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
-// Module 10763 (useActiveSpeakerPillScrollHandler)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).createWithEqualityFn((arg0) => {
-  const arg1 = arg0;
+// Module 10773 (useActiveSpeakerPillScrollHandler)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+
+const require = arg1;
+let closure_4 = useStoreWithEqualityFn.createWithEqualityFn((arg0) => {
+  let closure_0 = arg0;
   const obj = {
-    WAVE_EMPHASIZE: true,
-    paddingBottom: true,
-    getVoiceState: true,
+    showActiveSpeakerPill: false,
     setShowActiveSpeakerPill(arg0) {
-      return arg0(closure_1[3]).batchUpdates(() => arg0({ showActiveSpeakerPill: arg0 }));
+      const callback = arg0;
+      return callback(outer1_1[3]).batchUpdates(() => callback({ showActiveSpeakerPill: callback }));
     },
+    listRef: null,
     setListRef(arg0) {
-      return arg0(closure_1[3]).batchUpdates(() => arg0({ listRef: arg0 }));
+      const callback = arg0;
+      return callback(outer1_1[3]).batchUpdates(() => callback({ listRef: callback }));
     }
   };
   return obj;
 });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/stage_channels/native/StageChannelListStore.tsx");
+const result = require("useStoreWithEqualityFn").fileFinishedImporting("modules/stage_channels/native/StageChannelListStore.tsx");
 
 export const useActiveSpeakerPillScrollHandler = function useActiveSpeakerPillScrollHandler() {
   const tmp = callback(callback2((arg0) => {
     const items = [, ];
     ({ listRef: arr[0], setListRef: arr[1] } = arg0);
     return items;
-  }, arg1(dependencyMap[4]).shallow), 2);
-  const first = tmp[0];
-  const arg1 = first;
+  }, first(3743).shallow), 2);
+  first = tmp[0];
   const dependencyMap = tmp3;
-  const items = [tmp[1]];
+  let items = [tmp[1]];
   const items1 = [
     React.useCallback((arg0) => {
       tmp3(arg0);
@@ -44,7 +46,7 @@ export const useActiveSpeakerPillScrollHandler = function useActiveSpeakerPillSc
   const items2 = [first];
   items1[1] = React.useCallback(() => {
     if (null != first) {
-      first.scrollToLocation({});
+      first.scrollToLocation({ section: 0, item: 0, animated: true });
     }
   }, items2);
   return items1;
@@ -54,5 +56,5 @@ export const useActiveSpeakerPillState = function useActiveSpeakerPillState() {
     const items = [, ];
     ({ showActiveSpeakerPill: arr[0], setShowActiveSpeakerPill: arr[1] } = arg0);
     return items;
-  }, arg1(dependencyMap[4]).shallow);
+  }, require(3743) /* isIterable */.shallow);
 };

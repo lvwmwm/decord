@@ -1,12 +1,11 @@
-// Module ID: 4156
-// Function ID: 35113
+// Module ID: 4160
+// Function ID: 35145
 // Name: getGameMediaRefURL
-// Dependencies: []
+// Dependencies: [1832, 1392, 4161, 2]
 // Exports: default
 
-// Module 4156 (getGameMediaRefURL)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");
+// Module 4160 (getGameMediaRefURL)
+const result = require("isImageProxyURL").fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");
 
 export default function getGameMediaRefURL(id, type, size) {
   if (null == type) {
@@ -18,17 +17,17 @@ export default function getGameMediaRefURL(id, type, size) {
       if (!obj3.isNullOrEmpty(type.value)) {
         let obj = { id, hash: type.value };
         const merged = Object.assign(size);
-        const gameAssetURL = importDefault(dependencyMap[1]).getGameAssetURL(obj);
+        const gameAssetURL = importDefault(1392).getGameAssetURL(obj);
         let tmp15 = null;
         if (null != gameAssetURL) {
           tmp15 = gameAssetURL;
         }
         tmp7 = tmp15;
-        const obj4 = importDefault(dependencyMap[1]);
+        const obj4 = importDefault(1392);
       }
       return tmp7;
     } else if ("url" === type) {
-      obj = require(dependencyMap[2]);
+      obj = require(4161) /* isImageProxyURL */;
       obj = {};
       size = undefined;
       if (null != size) {

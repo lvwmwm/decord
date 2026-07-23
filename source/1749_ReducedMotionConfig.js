@@ -1,34 +1,34 @@
 // Module ID: 1749
-// Function ID: 19564
+// Function ID: 19565
 // Name: ReducedMotionConfig
-// Dependencies: []
+// Dependencies: [31, 1586, 1623, 1607]
 // Exports: ReducedMotionConfig
 
 // Module 1749 (ReducedMotionConfig)
-const useEffect = require(dependencyMap[0]).useEffect;
+import { useEffect } from "result";
+
 
 export const ReducedMotionConfig = function ReducedMotionConfig(mode) {
   mode = mode.mode;
-  const require = mode;
   useEffect(() => {
 
   }, []);
   const items = [mode];
   useEffect(() => {
-    const mode = mode(closure_1[2]).ReducedMotionManager.jsValue;
-    if (mode(closure_1[3]).ReduceMotion.System === mode) {
-      const ReducedMotionManager2 = mode(closure_1[2]).ReducedMotionManager;
-      ReducedMotionManager2.setEnabled(mode(closure_1[2]).isReducedMotionEnabledInSystem());
-      const obj = mode(closure_1[2]);
-    } else if (mode(closure_1[3]).ReduceMotion.Always === tmp) {
-      const ReducedMotionManager = mode(closure_1[2]).ReducedMotionManager;
+    const jsValue = mode(outer1_1[2]).ReducedMotionManager.jsValue;
+    if (mode(outer1_1[3]).ReduceMotion.System === jsValue) {
+      const ReducedMotionManager2 = mode(outer1_1[2]).ReducedMotionManager;
+      ReducedMotionManager2.setEnabled(mode(outer1_1[2]).isReducedMotionEnabledInSystem());
+      const obj = mode(outer1_1[2]);
+    } else if (mode(outer1_1[3]).ReduceMotion.Always === tmp) {
+      let ReducedMotionManager = mode(outer1_1[2]).ReducedMotionManager;
       ReducedMotionManager.setEnabled(true);
-    } else if (mode(closure_1[3]).ReduceMotion.Never === tmp) {
-      const ReducedMotionManager3 = mode(closure_1[2]).ReducedMotionManager;
+    } else if (mode(outer1_1[3]).ReduceMotion.Never === tmp) {
+      const ReducedMotionManager3 = mode(outer1_1[2]).ReducedMotionManager;
       ReducedMotionManager3.setEnabled(false);
     }
     return () => {
-      const ReducedMotionManager = jsValue(closure_1[2]).ReducedMotionManager;
+      const ReducedMotionManager = mode(outer2_1[2]).ReducedMotionManager;
       ReducedMotionManager.setEnabled(jsValue);
     };
   }, items);

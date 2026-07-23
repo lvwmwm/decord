@@ -1,49 +1,53 @@
-// Module ID: 11762
-// Function ID: 91331
+// Module ID: 11772
+// Function ID: 91380
 // Name: presentResendToast
-// Dependencies: []
+// Dependencies: [57, 5, 31, 27, 1838, 33, 4130, 3831, 11773, 11774, 10886, 22, 11766, 1212, 4029, 5737, 11761, 11775, 4126, 5459, 9264, 2]
 // Exports: default
 
-// Module 11762 (presentResendToast)
+// Module 11772 (presentResendToast)
+import _slicedToArray from "_slicedToArray";
+import closure_4 from "jsxProd";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_9;
+const require = arg1;
 function presentResendToast(content) {
-  let obj = importDefault(dependencyMap[7]);
-  obj = { key: "HUB_EMAIL_RESET", content, icon: importDefault(dependencyMap[8]) };
+  let obj = importDefault(3831);
+  obj = { key: "HUB_EMAIL_RESET", content, icon: importDefault(11773) };
   obj.open(obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ View: closure_6, Image: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-const tmp3 = arg1(dependencyMap[5]);
-let closure_11 = arg1(dependencyMap[6]).createStyles({ container: { alignItems: "center" }, title: { value: null, on: null }, description: { memo: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 }, label: { memo: "Group 13", accessibilityRole: 2 }, error: {} });
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/hub/native/components/HubEmailConnectionPinVerify.tsx");
+({ View: closure_6, Image: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles({ container: { alignItems: "center" }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center", marginBottom: 24 }, label: { textAlign: "center", marginBottom: 12 }, error: { alignSelf: "center", marginVertical: 8 } });
+const result = require("result").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionPinVerify.tsx");
 
 export default function HubEmailConnectionPinVerify(email) {
+  let importDefault;
   let onClose;
   email = email.email;
-  const arg1 = email;
-  ({ guildId: closure_1, onClose } = email);
-  const dependencyMap = onClose;
+  ({ guildId: importDefault, onClose } = email);
   let callback;
   function _handleCodeEntered(arg0) {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = _handleCodeEntered(tmp);
-    const _handleCodeEntered = obj;
     return obj(...arguments);
   }
   const tmp = callback3();
   const items = [onClose];
   const effect = React.useEffect(() => {
-    callback(onClose[9]).initialize(() => {
-      callback2(true);
-      callback(callback2[10])();
+    outer1_1(onClose[9]).initialize(() => {
+      outer1_2(true);
+      outer2_1(onClose[10])();
     });
     return () => {
-      callback(closure_2[9]).terminate();
+      outer2_1(onClose[9]).terminate();
     };
   }, items);
   let obj = importDefault(tmp3);
@@ -53,36 +57,36 @@ export default function HubEmailConnectionPinVerify(email) {
   callback = tmp5[1];
   obj = {};
   obj = { style: tmp.container };
-  const obj1 = { source: importDefault(dependencyMap[17]) };
+  const obj1 = { source: importDefault(onClose[17]) };
   const items1 = [callback2(closure_7, obj1), , , , , ];
-  const obj2 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
-  const intl = arg1(dependencyMap[13]).intl;
-  obj2.children = intl.string(arg1(dependencyMap[13]).t.SJ3Lxc);
-  items1[1] = callback2(arg1(dependencyMap[18]).Text, obj2);
-  const obj3 = { style: tmp.description };
-  const intl2 = arg1(dependencyMap[13]).intl;
-  obj3.children = intl2.format(arg1(dependencyMap[13]).t.b+W0oq, { onClick: obj.throttle(_handleCodeEntered(dependencyMap[11]), 1000), email });
-  items1[2] = callback2(arg1(dependencyMap[19]).TextWithIOSLinkWorkaround, obj3);
-  const obj4 = { "Null": false, "Null": false, alignItems: false, style: tmp.label };
-  const intl3 = arg1(dependencyMap[13]).intl;
-  obj4.children = intl3.string(arg1(dependencyMap[13]).t.rpWT1s);
-  items1[3] = callback2(arg1(dependencyMap[18]).Text, obj4);
+  const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+  const intl = email(onClose[13]).intl;
+  obj2.children = intl.string(email(onClose[13]).t.SJ3Lxc);
+  items1[1] = callback2(email(onClose[18]).Text, obj2);
+  const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
+  const intl2 = email(onClose[13]).intl;
+  obj3.children = intl2.format(email(onClose[13]).t["b+W0oq"], { onClick: obj.throttle(_handleCodeEntered(onClose[11]), 1000), email });
+  items1[2] = callback2(email(onClose[19]).TextWithIOSLinkWorkaround, obj3);
+  const obj4 = { style: tmp.label, variant: "text-sm/semibold", color: "text-muted" };
+  const intl3 = email(onClose[13]).intl;
+  obj4.children = intl3.string(email(onClose[13]).t.rpWT1s);
+  items1[3] = callback2(email(onClose[18]).Text, obj4);
   const obj5 = {
-    blurAmount: null,
-    blurEffectName: 0,
+    hasError: false,
+    count: 8,
     onCodeEntered: function handleCodeEntered(arg0) {
       return _handleCodeEntered(...arguments);
     },
-    codeType: arg1(dependencyMap[20]).CodeType.ALPHANUMERIC
+    codeType: email(onClose[20]).CodeType.ALPHANUMERIC
   };
-  items1[4] = callback2(arg1(dependencyMap[20]).CodeBlocks, obj5);
+  items1[4] = callback2(email(onClose[20]).CodeBlocks, obj5);
   let tmp9 = null != first;
   if (tmp9) {
-    const obj6 = { cachedAt: 1, edpbxy: "center", style: tmp.error, children: first.getAnyErrorMessage() };
-    tmp9 = callback2(arg1(dependencyMap[18]).Text, obj6);
+    const obj6 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: first.getAnyErrorMessage() };
+    tmp9 = callback2(email(onClose[18]).Text, obj6);
   }
   items1[5] = tmp9;
   obj.children = items1;
   obj.children = closure_10(closure_6, obj);
-  return callback2(arg1(dependencyMap[16]).HubEmailConnectionScreen, obj);
+  return callback2(email(onClose[16]).HubEmailConnectionScreen, obj);
 };

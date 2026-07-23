@@ -1,10 +1,13 @@
 // Module ID: 861
-// Function ID: 9628
+// Function ID: 9629
 // Name: setMetricAttribute
-// Dependencies: []
+// Dependencies: [57, 65, 857, 821, 815, 859, 825, 800, 801, 847, 862, 802]
 // Exports: _INTERNAL_captureMetric
 
 // Module 861 (setMetricAttribute)
+import _slicedToArray from "_slicedToArray";
+import _toConsumableArray from "_toConsumableArray";
+
 function setMetricAttribute(merged, arg1, email, arg3) {
   let tmp = !email;
   if (!tmp) {
@@ -20,54 +23,52 @@ function setMetricAttribute(merged, arg1, email, arg3) {
     merged[arg1] = email;
   }
 }
-function _INTERNAL_captureSerializedMetric(tmp8Result) {
+function _INTERNAL_captureSerializedMetric(closure_0) {
   const obj = _getBufferMap();
-  const arr = _INTERNAL_getMetricBuffer(tmp8Result);
+  const arr = _INTERNAL_getMetricBuffer(closure_0);
   if (undefined === arr) {
     const items = [arg1];
-    const result = obj.set(tmp8Result, items);
+    const result = obj.set(closure_0, items);
   } else if (arr.length >= 1000) {
-    _INTERNAL_flushMetricsBuffer(tmp8Result, arr);
+    _INTERNAL_flushMetricsBuffer(closure_0, arr);
     const items1 = [arg1];
-    const result1 = obj.set(tmp8Result, items1);
+    const result1 = obj.set(closure_0, items1);
   } else {
     const items2 = [];
     const items3 = [arg1];
-    const result2 = obj.set(tmp8Result, items2.concat(callback2(arr), items3));
+    const result2 = obj.set(closure_0, items2.concat(_toConsumableArray(arr), items3));
   }
 }
-function _INTERNAL_flushMetricsBuffer(tmp8Result, arr) {
+function _INTERNAL_flushMetricsBuffer(closure_0, arr) {
   let _metadata;
   let tunnel;
   let items = arr;
   if (null == arr) {
-    items = _INTERNAL_getMetricBuffer(tmp8Result);
+    items = _INTERNAL_getMetricBuffer(closure_0);
   }
   if (null == items) {
     items = [];
   }
   if (0 !== items.length) {
-    const options = tmp8Result.getOptions();
-    const obj = require(dependencyMap[10]);
+    const options = closure_0.getOptions();
+    const obj = require(862) /* createMetricContainerEnvelopeItem */;
     ({ _metadata, tunnel } = options);
-    const metricEnvelope = obj.createMetricEnvelope(items, _metadata, tunnel, tmp8Result.getDsn());
-    const result = _getBufferMap().set(tmp8Result, []);
-    tmp8Result.emit("flushMetrics");
-    tmp8Result.sendEnvelope(metricEnvelope);
+    const metricEnvelope = obj.createMetricEnvelope(items, _metadata, tunnel, closure_0.getDsn());
+    const result = _getBufferMap().set(closure_0, []);
+    closure_0.emit("flushMetrics");
+    closure_0.sendEnvelope(metricEnvelope);
     const obj2 = _getBufferMap();
   }
 }
-function _INTERNAL_getMetricBuffer(tmp8Result) {
-  return _getBufferMap().get(tmp8Result);
+function _INTERNAL_getMetricBuffer(closure_0) {
+  return _getBufferMap().get(closure_0);
 }
 function _getBufferMap() {
-  return require(dependencyMap[11]).getGlobalSingleton("clientToMetricBufferMap", () => {
+  return require(802) /* getSentryCarrier */.getGlobalSingleton("clientToMetricBufferMap", () => {
     const weakMap = new WeakMap();
     return weakMap;
   });
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attributes, scope) {
@@ -82,7 +83,7 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
     scope = scope.scope;
   }
   if (null == scope) {
-    let obj = require(dependencyMap[6]);
+    let obj = require(825) /* getCurrentScope */;
     scope = obj.getCurrentScope();
   }
   let prop;
@@ -97,8 +98,8 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
     client = scope.getClient();
   }
   if (null == client) {
-    client = require(dependencyMap[6]).getClient();
-    const obj2 = require(dependencyMap[6]);
+    client = require(825) /* getCurrentScope */.getClient();
+    const obj2 = require(825) /* getCurrentScope */;
   }
   if (client) {
     const options = client.getOptions();
@@ -111,14 +112,14 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
     }
     if (null != enableMetrics) {
       if (!enableMetrics) {
-        if (require(dependencyMap[7]).DEBUG_BUILD) {
-          const debug2 = require(dependencyMap[8]).debug;
+        if (require(800).DEBUG_BUILD) {
+          const debug2 = require(801) /* consoleSandbox */.debug;
           debug2.warn("metrics option not enabled, metric will not be captured.");
         }
       }
     }
-    const obj3 = require(dependencyMap[9]);
-    const combinedScopeData = obj3.getCombinedScopeData(require(dependencyMap[6]).getIsolationScope(), scope);
+    const obj3 = require(847) /* mergeScopeData */;
+    const combinedScopeData = obj3.getCombinedScopeData(require(825) /* getCurrentScope */.getIsolationScope(), scope);
     ({ user, attributes } = combinedScopeData);
     const options1 = client.getOptions();
     const _Object = Object;
@@ -170,9 +171,9 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
       beforeSendMetricResult = beforeSendMetric(merged1);
     }
     if (beforeSendMetricResult) {
-      let tmp49Result = tmp49(tmp50[2]);
-      const tmp55 = callback(tmp49Result._getTraceInfoFromScope(client, scope), 2)[1];
-      tmp49Result = tmp49(tmp50[3]);
+      let tmp49Result = tmp49(857);
+      const tmp55 = _slicedToArray(tmp49Result._getTraceInfoFromScope(client, scope), 2)[1];
+      tmp49Result = tmp49(821);
       const _getSpanForScopeResult = tmp49Result._getSpanForScope(scope);
       if (_getSpanForScopeResult) {
         let trace_id = _getSpanForScopeResult.spanContext().traceId;
@@ -183,7 +184,7 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
       if (_getSpanForScopeResult) {
         spanId = _getSpanForScopeResult.spanContext().spanId;
       }
-      obj = { timestamp: require(dependencyMap[4]).timestampInSeconds() };
+      obj = { timestamp: require(815) /* dateTimestampInSeconds */.timestampInSeconds() };
       let str16 = "";
       if (null != trace_id) {
         str16 = trace_id;
@@ -192,24 +193,24 @@ export const _INTERNAL_captureMetric = function _INTERNAL_captureMetric(attribut
       obj.span_id = spanId;
       ({ name: obj11.name, type: obj11.type, unit: obj11.unit, value: obj11.value } = beforeSendMetricResult);
       const _Object3 = Object;
-      const obj12 = require(dependencyMap[4]);
-      const obj13 = require(dependencyMap[5]);
-      const serializeAttributesResult = require(dependencyMap[5]).serializeAttributes(attributes);
-      obj.attributes = Object.assign({}, serializeAttributesResult, require(dependencyMap[5]).serializeAttributes(beforeSendMetricResult.attributes, "skip-undefined"));
-      if (require(dependencyMap[7]).DEBUG_BUILD) {
-        const debug4 = require(dependencyMap[8]).debug;
+      const obj12 = require(815) /* dateTimestampInSeconds */;
+      const obj13 = require(859) /* isAttributeObject */;
+      const serializeAttributesResult = require(859) /* isAttributeObject */.serializeAttributes(attributes);
+      obj.attributes = Object.assign({}, serializeAttributesResult, require(859) /* isAttributeObject */.serializeAttributes(beforeSendMetricResult.attributes, "skip-undefined"));
+      if (require(800).DEBUG_BUILD) {
+        const debug4 = require(801) /* consoleSandbox */.debug;
         debug4.log("[Metric]", obj);
       }
       prop(client, obj);
       client.emit("afterCaptureMetric", beforeSendMetricResult);
-      const obj14 = require(dependencyMap[5]);
-    } else if (tmp49(tmp50[7]).DEBUG_BUILD) {
-      const debug3 = require(dependencyMap[8]).debug;
+      const obj14 = require(859) /* isAttributeObject */;
+    } else if (tmp49(800).DEBUG_BUILD) {
+      const debug3 = require(801) /* consoleSandbox */.debug;
       debug3.log("`beforeSendMetric` returned `null`, will not send metric.");
     }
-    const obj4 = require(dependencyMap[6]);
-  } else if (require(dependencyMap[7]).DEBUG_BUILD) {
-    const debug = require(dependencyMap[8]).debug;
+    const obj4 = require(825) /* getCurrentScope */;
+  } else if (require(800).DEBUG_BUILD) {
+    const debug = require(801) /* consoleSandbox */.debug;
     debug.warn("No client available to capture metric.");
   }
 };

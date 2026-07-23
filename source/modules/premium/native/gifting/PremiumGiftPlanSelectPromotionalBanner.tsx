@@ -1,27 +1,31 @@
-// Module ID: 9684
-// Function ID: 75373
-// Dependencies: []
+// Module ID: 9691
+// Function ID: 75414
+// Dependencies: [31, 27, 33, 4130, 689, 7146, 9688, 4554, 5085, 4126, 1212, 9692, 2]
 
-// Module 9684
-const View = arg1(dependencyMap[1]).View;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles(() => {
-  let obj = { gradient: { minHeight: 60 }, bannerImage: { <string:3730418857>: null, <string:927093373>: null, <string:1549960880>: null, <string:2858504902>: null, <string:996387424>: null, <string:1532076118>: null } };
-  obj = { paddingLeft: "w", paddingRight: "Array", flexDirection: "isArray", paddingTop: importDefault(dependencyMap[4]).space.PX_12, paddingBottom: importDefault(dependencyMap[4]).space.PX_12, paddingStart: importDefault(dependencyMap[4]).space.PX_24, paddingEnd: 120 };
+// Module 9691
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(() => {
+  let obj = { gradient: { minHeight: 60 }, bannerImage: { position: "absolute", top: 0, left: 0, right: 0, width: "100%", aspectRatio: 5 } };
+  obj = { minHeight: 60, justifyContent: "center", gap: 2, paddingTop: importDefault(689).space.PX_12, paddingBottom: importDefault(689).space.PX_12, paddingStart: importDefault(689).space.PX_24, paddingEnd: 120 };
   obj.content = obj;
   obj.heading = {};
   obj.subheading = {};
-  obj.logoContainer = {};
+  obj.logoContainer = { position: "absolute", top: 0, bottom: 0, right: 10, justifyContent: "center", alignItems: "center" };
   const items = [{ rotate: "-7deg" }, { translateY: 8 }];
   obj.logoContainerLargeTilted = { transform: items };
-  obj.logo = {};
-  obj.logoLargeTilted = {};
+  obj.logo = { width: 95, height: 95 };
+  obj.logoLargeTilted = { width: 120, height: 120 };
   return obj;
 });
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function PremiumGiftPlanSelectPromotionalBanner(giftPlanSelectionCardBannerComponent) {
+const memoResult = require("result").memo(function PremiumGiftPlanSelectPromotionalBanner(giftPlanSelectionCardBannerComponent) {
   let claimableRewards;
   let isSelected;
   let onLayout;
@@ -29,10 +33,10 @@ const memoResult = importAllResult.memo(function PremiumGiftPlanSelectPromotiona
   ({ claimableRewards, isSelected, onLayout } = giftPlanSelectionCardBannerComponent);
   const tmp = callback3();
   const gradient = giftPlanSelectionCardBannerComponent.gradient;
-  let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === arg1(dependencyMap[5]).GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
-  let obj = arg1(dependencyMap[6]);
+  let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(7146) /* _isNativeReflectConstruct */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
+  let obj = require(9688) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.mobileBannerAsset);
-  let obj1 = arg1(dependencyMap[6]);
+  let obj1 = require(9688) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl1 = obj1.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.avatarAsset, true);
   obj = { style: tmp.gradient, useAngle: true };
   let angle;
@@ -44,7 +48,7 @@ const memoResult = importAllResult.memo(function PremiumGiftPlanSelectPromotiona
     num = angle;
   }
   obj.angle = num;
-  obj.angleCenter = { 0: false, 0: false };
+  obj.angleCenter = { x: 0.5, y: 0.5 };
   let colors;
   if (null != gradient) {
     colors = gradient.colors;
@@ -59,18 +63,18 @@ const memoResult = importAllResult.memo(function PremiumGiftPlanSelectPromotiona
     obj = { style: tmp.bannerImage, resizeMode: "cover" };
     obj1 = { uri: themeAndReducedMotionAwareAssetUrl };
     obj.source = obj1;
-    tmp7 = callback(importDefault(dependencyMap[8]), obj);
+    tmp7 = callback(importDefault(5085), obj);
   }
   const items = [tmp7, , ];
   const obj2 = { style: tmp.content };
-  const obj3 = { style: tmp.heading };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj3.children = intl.string(arg1(dependencyMap[10]).t.OEtqpm);
-  const items1 = [callback(arg1(dependencyMap[9]).Text, obj3), ];
-  const obj4 = { "Null": -723270365666699200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 995196783524001600000000000000000000000000000000000000000000000000000000000000000000000, alignItems: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009366153007565067, style: tmp.subheading };
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj4.children = intl2.formatToPlainString(arg1(dependencyMap[10]).t.2h5M+X, { availableCount: claimableRewards.length });
-  items1[1] = callback(arg1(dependencyMap[9]).Text, obj4);
+  const obj3 = { style: tmp.heading, variant: "text-md/bold", color: "text-overlay-light" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj3.children = intl.string(require(1212) /* getSystemLocale */.t.OEtqpm);
+  const items1 = [callback(require(4126) /* Text */.Text, obj3), ];
+  const obj4 = { style: tmp.subheading, variant: "text-md/medium", color: "text-overlay-light" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj4.children = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["2h5M+X"], { availableCount: claimableRewards.length });
+  items1[1] = callback(require(4126) /* Text */.Text, obj4);
   obj2.children = items1;
   items[1] = callback2(View, obj2);
   let tmp12Result = null != themeAndReducedMotionAwareAssetUrl1;
@@ -91,17 +95,17 @@ const memoResult = importAllResult.memo(function PremiumGiftPlanSelectPromotiona
     items3[1] = logoLargeTilted;
     obj7.promoRotatingStyle = items3;
     obj7.rotatingAvatarImageUrl = themeAndReducedMotionAwareAssetUrl1;
-    obj6.children = callback(importDefault(dependencyMap[11]), obj7);
+    obj6.children = callback(importDefault(9692), obj7);
     tmp12Result = callback(View, obj6);
     const tmp12 = callback;
     const tmp13 = View;
     const tmp14 = callback;
-    const tmp17 = importDefault(dependencyMap[11]);
+    const tmp17 = importDefault(9692);
   }
   items[2] = tmp12Result;
   obj.children = items;
-  return callback2(importDefault(dependencyMap[7]), obj);
+  return callback2(importDefault(4554), obj);
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftPlanSelectPromotionalBanner.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftPlanSelectPromotionalBanner.tsx");
 
 export default memoResult;

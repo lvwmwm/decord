@@ -1,15 +1,15 @@
-// Module ID: 8662
-// Function ID: 68557
+// Module ID: 8669
+// Function ID: 68597
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getIsProfileFrameGiftingEnabled, useIsProfileFrameGiftingEnabled
 
-// Module 8662 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: "/assets/design/components/Icon/native/redesign/generated/images", DateToSystemTimezoneSetter: 24, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/collectibles/experiments/CollectiblesProfileFrameGiftingExperiment.tsx");
+// Module 8669 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-profile-frame-gifting", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/collectibles/experiments/CollectiblesProfileFrameGiftingExperiment.tsx");
 
 export default apexExperiment;
 export const getIsProfileFrameGiftingEnabled = function getIsProfileFrameGiftingEnabled(isWishlistableCollectiblesProduct) {

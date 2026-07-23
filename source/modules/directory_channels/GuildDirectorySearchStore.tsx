@@ -1,9 +1,16 @@
-// Module ID: 10025
-// Function ID: 77459
+// Module ID: 10033
+// Function ID: 77499
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 10034, 566, 686, 2]
 
-// Module 10025 (_isNativeReflectConstruct)
+// Module 10033 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,27 +20,22 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = [];
 let closure_8 = {};
 let closure_9 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class GuildDirectorySearchStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GuildDirectorySearchStore);
-      obj = closure_5(GuildDirectorySearchStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, GuildDirectorySearchStore);
+      obj = outer1_5(GuildDirectorySearchStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,14 +44,13 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildDirectorySearchStore;
   callback2(GuildDirectorySearchStore, Store);
   let obj = {
     key: "getSearchState",
     value(arg0) {
-      let obj = closure_8[arg0];
+      let obj = outer1_8[arg0];
       if (null == obj) {
-        obj = {};
+        obj = { mostRecentQuery: "", fetching: false };
       }
       return obj;
     }
@@ -59,13 +60,13 @@ let tmp2 = (Store) => {
     key: "getSearchResults",
     value(arg0, arg1) {
       let results;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         if (null != tmp[arg1]) {
           results = tmp4.results;
         }
       }
       if (null == results) {
-        results = closure_7;
+        results = outer1_7;
       }
       return results;
     }
@@ -75,7 +76,7 @@ let tmp2 = (Store) => {
     key: "shouldFetch",
     value(arg0, arg1) {
       let lastSearchedAt;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         if (null != tmp[arg1]) {
           lastSearchedAt = tmp4.lastSearchedAt;
         }
@@ -90,9 +91,9 @@ let tmp2 = (Store) => {
   };
   items[2] = obj;
   return callback(GuildDirectorySearchStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GuildDirectorySearchStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   GUILD_DIRECTORY_SEARCH_START: function handleSearchStart(mostRecentQuery) {
     closure_8[mostRecentQuery.channelId] = { fetching: true, mostRecentQuery: mostRecentQuery.query };
   },
@@ -101,55 +102,55 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     let results;
     ({ channelId, results } = query);
     let obj = {};
-    const merged = Object.assign(closure_8[channelId]);
+    const merged = Object.assign(dependencyMap[channelId]);
     obj["fetching"] = false;
-    closure_8[channelId] = obj;
+    dependencyMap[channelId] = obj;
     const items = [];
-    messages = items;
     const item = results.forEach((entry) => {
-      items.push(items(closure_1[5]).guildDirectoryEntryFromServer(entry));
+      items.push(items(outer1_1[5]).guildDirectoryEntryFromServer(entry));
     });
     obj = {};
-    const merged1 = Object.assign(closure_9[channelId]);
-    obj = { results: messages(dependencyMap[5]).orderByTotalMemberCount(items), lastSearchedAt: Date.now() };
+    const merged1 = Object.assign(dependencyMap2[channelId]);
+    obj = { results: items(10034).orderByTotalMemberCount(items), lastSearchedAt: Date.now() };
     obj[query.query] = obj;
-    closure_9[channelId] = obj;
+    dependencyMap2[channelId] = obj;
   },
   GUILD_DIRECTORY_SEARCH_FAILURE: function handleSearchFailure(error) {
     const channelId = error.channelId;
     const obj = {};
-    const merged = Object.assign(closure_8[channelId]);
+    const merged = Object.assign(dependencyMap[channelId]);
     obj["fetching"] = false;
-    closure_8[channelId] = obj;
+    dependencyMap[channelId] = obj;
   },
   GUILD_DIRECTORY_SEARCH_CLEAR: function handleSearchClear(channelId) {
-    closure_8[channelId.channelId] = { dmsDisabled: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING", invitesDisabled: null };
+    closure_8[channelId.channelId] = { fetching: false, mostRecentQuery: "" };
   },
   GUILD_DIRECTORY_CACHED_SEARCH: function handleUpdateQuery(mostRecentQuery) {
     closure_8[mostRecentQuery.channelId] = { fetching: false, mostRecentQuery: mostRecentQuery.query };
   },
   GUILD_DIRECTORY_ENTRY_DELETE: function handleDeleteEntry(arg0) {
     let channelId;
-    ({ channelId, guildId: closure_0 } = arg0);
+    let require;
+    ({ channelId, guildId: require } = arg0);
     let mostRecentQuery;
-    if (null != closure_8[channelId]) {
+    if (null != dependencyMap[channelId]) {
       mostRecentQuery = tmp.mostRecentQuery;
     }
     if (null != mostRecentQuery) {
-      if (null != closure_9[channelId][mostRecentQuery]) {
+      if (null != dependencyMap2[channelId][mostRecentQuery]) {
         const results = tmp4.results;
         let obj = {};
         const found = results.filter((guildId) => guildId.guildId !== closure_0);
-        const merged = Object.assign(closure_9[channelId]);
+        const merged = Object.assign(dependencyMap2[channelId]);
         obj = {};
         const merged1 = Object.assign(tmp4);
         obj["results"] = found;
-        obj[closure_8[channelId].mostRecentQuery] = obj;
-        closure_9[channelId] = obj;
+        obj[dependencyMap[channelId].mostRecentQuery] = obj;
+        dependencyMap2[channelId] = obj;
       }
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/directory_channels/GuildDirectorySearchStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/directory_channels/GuildDirectorySearchStore.tsx");
 
 export default tmp2;

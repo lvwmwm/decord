@@ -1,17 +1,17 @@
-// Module ID: 12196
-// Function ID: 93739
+// Module ID: 12310
+// Function ID: 95890
 // Name: isMostRecentDeadEndInvite
-// Dependencies: []
+// Dependencies: [653, 10906, 2]
 // Exports: isMostRecentDeadEndInvite
 
-// Module 12196 (isMostRecentDeadEndInvite)
-const ActivityActionTypes = require(dependencyMap[0]).ActivityActionTypes;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/activities/utils/isMostRecentDeadEndInvite.tsx");
+// Module 12310 (isMostRecentDeadEndInvite)
+import { ActivityActionTypes } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/activities/utils/isMostRecentDeadEndInvite.tsx");
 
 export const isMostRecentDeadEndInvite = function isMostRecentDeadEndInvite(id, applicationFromMessage, id2, arg3) {
-  const importDefault = id2;
-  const dependencyMap = arg3;
+  let closure_0 = id2;
+  let closure_1 = arg3;
   return !applicationFromMessage.hasAnyAfter(id, (activity) => {
     let tmp = null != activity.activity;
     if (tmp) {
@@ -20,13 +20,13 @@ export const isMostRecentDeadEndInvite = function isMostRecentDeadEndInvite(id, 
       if (null != application) {
         id = application.id;
       }
-      tmp = id === arg2;
+      tmp = id === id2;
     }
     if (tmp) {
-      tmp = activity.activity.type === constants.JOIN;
+      tmp = activity.activity.type === outer1_2.JOIN;
     }
     if (tmp) {
-      tmp = !arg2(arg3[1])(arg3, activity, arg2);
+      tmp = !id2(table[1])(table, activity, id2);
     }
     return tmp;
   }, 25);

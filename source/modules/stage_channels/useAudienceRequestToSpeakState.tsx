@@ -1,10 +1,13 @@
-// Module ID: 4310
-// Function ID: 37780
+// Module ID: 4314
+// Function ID: 37812
 // Name: getAudienceRequestToSpeakState
-// Dependencies: []
+// Dependencies: [4146, 566, 2]
 // Exports: default
 
-// Module 4310 (getAudienceRequestToSpeakState)
+// Module 4314 (getAudienceRequestToSpeakState)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getAudienceRequestToSpeakState(voiceStateForChannel) {
   if (null == voiceStateForChannel) {
     let REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK = obj.NONE;
@@ -28,23 +31,22 @@ function getAudienceRequestToSpeakState(voiceStateForChannel) {
   }
   return REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 }
-let closure_2 = importDefault(dependencyMap[0]);
 const obj = { NONE: 0, [0]: "NONE", REQUESTED_TO_SPEAK: 1, [1]: "REQUESTED_TO_SPEAK", REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK: 2, [2]: "REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK", ON_STAGE: 3, [3]: "ON_STAGE" };
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/stage_channels/useAudienceRequestToSpeakState.tsx");
+const result = require("set").fileFinishedImporting("modules/stage_channels/useAudienceRequestToSpeakState.tsx");
 
 export default function useAudienceRequestToSpeakState(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_2];
+  const items = [_isNativeReflectConstruct];
   const items1 = [arg0, arg1];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => {
-    if (null != arg0) {
-      if (null != arg1) {
-        let NONE = callback(voiceStateForChannel.getVoiceStateForChannel(arg1, arg0));
+  return _require(566).useStateFromStores(items, () => {
+    if (null != closure_0) {
+      if (null != closure_1) {
+        let NONE = outer1_4(outer1_2.getVoiceStateForChannel(closure_1, closure_0));
       }
       return NONE;
     }
-    NONE = constants.NONE;
+    NONE = outer1_3.NONE;
   }, items1);
 };
 export const RequestToSpeakStates = obj;

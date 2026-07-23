@@ -1,12 +1,15 @@
 // Module ID: 1104
-// Function ID: 12607
+// Function ID: 12608
 // Name: getDefaultSidecarUrl
-// Dependencies: []
+// Dependencies: [65, 794, 792, 973]
 // Exports: spotlightIntegration
 
 // Module 1104 (getDefaultSidecarUrl)
+import _toConsumableArray from "_toConsumableArray";
+
+const require = arg1;
 function getDefaultSidecarUrl() {
-  const Devtools = arg1(dependencyMap[3]).ReactNativeLibraries.Devtools;
+  const Devtools = require(973) /* reactNativeVersion */.ReactNativeLibraries.Devtools;
   let devServer;
   if (null !== Devtools) {
     if (undefined !== obj) {
@@ -28,13 +31,12 @@ function getDefaultSidecarUrl() {
       const _HermesInternal = HermesInternal;
       let combined = "http://" + tmp11 + ":8969/stream";
     } else {
-      combined = closure_3;
+      combined = c3;
     }
     return combined;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = "http://localhost:8969/stream";
+let c3 = "http://localhost:8969/stream";
 
 export const spotlightIntegration = function spotlightIntegration(arg0) {
   if (arguments.length > 0) {
@@ -45,8 +47,7 @@ export const spotlightIntegration = function spotlightIntegration(arg0) {
     if (undefined === sidecarUrl) {
       sidecarUrl = getDefaultSidecarUrl();
     }
-    const arg1 = sidecarUrl;
-    const debug = arg1(dependencyMap[1]).debug;
+    let debug = sidecarUrl(794).debug;
     debug.log("[Spotlight] Using Sidecar URL", sidecarUrl);
     const obj = {
       name: "Spotlight",
@@ -54,29 +55,29 @@ export const spotlightIntegration = function spotlightIntegration(arg0) {
 
         },
       setup(on) {
-          function _setup(on, sidecarUrl) {
-            function sendEnvelopesToSidecar(on, sidecarUrl) {
+          (function _setup(on, sidecarUrl) {
+            (function sendEnvelopesToSidecar(on, sidecarUrl) {
+              let closure_0 = sidecarUrl;
               if (on.on) {
                 on.on("beforeEnvelope", (arg0) => {
-                  const tmp = callback(arg0);
-                  tmp[1] = callback(arg0[1]).filter(() => { ... });
-                  const arr = callback(arg0[1]);
-                  const stealthXhr = arg1(closure_1[2]).createStealthXhr();
-                  const arg1 = stealthXhr;
+                  let tmp = outer4_2(arg0);
+                  tmp[1] = outer4_2(arg0[1]).filter(() => { ... });
+                  const arr = outer4_2(arg0[1]);
+                  const stealthXhr = sidecarUrl(outer4_1[2]).createStealthXhr();
                   if (stealthXhr) {
-                    stealthXhr.open("POST", arg1, true);
+                    stealthXhr.open("POST", stealthXhr, true);
                     stealthXhr.setRequestHeader("Content-Type", "application/x-sentry-envelope");
                     stealthXhr.onreadystatechange = function onreadystatechange() { ... };
-                    stealthXhr.send(arg1(closure_1[1]).serializeEnvelope(tmp));
-                    const obj3 = arg1(closure_1[1]);
+                    stealthXhr.send(sidecarUrl(outer4_1[1]).serializeEnvelope(tmp));
+                    const obj3 = sidecarUrl(outer4_1[1]);
                   } else {
-                    const debug = arg1(closure_1[1]).debug;
+                    let debug = sidecarUrl(outer4_1[1]).debug;
                     debug.error("[Spotlight] Sentry SDK can not create XHR object");
                   }
                 });
               }
-            }(on, sidecarUrl);
-          }(on, sidecarUrl);
+            })(on, sidecarUrl);
+          })(on, sidecarUrl);
         }
     };
     return obj;

@@ -1,14 +1,14 @@
-// Module ID: 5583
-// Function ID: 47393
+// Module ID: 5586
+// Function ID: 47416
 // Name: ActivityIndicator
-// Dependencies: []
+// Dependencies: [27, 33, 3834, 689, 2]
 // Exports: ActivityIndicator
 
-// Module 5583 (ActivityIndicator)
-const ActivityIndicator = require(dependencyMap[0]).ActivityIndicator;
-const jsx = require(dependencyMap[1]).jsx;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("design/components/ActivityIndicator/native/ActivityIndicator.native.tsx");
+// Module 5586 (ActivityIndicator)
+import { ActivityIndicator } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const result = require("map").fileFinishedImporting("design/components/ActivityIndicator/native/ActivityIndicator.native.tsx");
 
 export const ActivityIndicator = function ActivityIndicator(size) {
   let str = size.size;
@@ -23,8 +23,8 @@ export const ActivityIndicator = function ActivityIndicator(size) {
   obj.size = 0;
   obj.animating = 0;
   const merged = Object.assign(size, obj);
-  obj = require(dependencyMap[2]);
-  let token = obj.useToken(importDefault(dependencyMap[3]).colors.BACKGROUND_BRAND);
+  obj = require(3834) /* map */;
+  let token = obj.useToken(importDefault(689).colors.BACKGROUND_BRAND);
   const color = merged.color;
   if (null != color) {
     token = color;
@@ -34,5 +34,5 @@ export const ActivityIndicator = function ActivityIndicator(size) {
   obj["size"] = str;
   obj["animating"] = flag;
   obj["color"] = token;
-  return <ActivityIndicator {...obj} />;
+  return <ActivityIndicator />;
 };

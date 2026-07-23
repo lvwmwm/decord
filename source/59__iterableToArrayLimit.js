@@ -9,15 +9,15 @@ export default function _iterableToArrayLimit(arg0, arg1) {
   let tmp3 = null;
   if (null != arg0) {
     const _Symbol = Symbol;
-    @@iterator = "undefined" !== typeof Symbol;
-    if (Symbol_iterator) {
+    iterable = "undefined" !== typeof Symbol;
+    if (iterable) {
       const _Symbol2 = Symbol;
-      @@iterator = tmp[Symbol.iterator];
+      iterable = tmp[Symbol.iterator];
     }
-    if (!Symbol_iterator) {
-      @@iterator = tmp[Symbol.iterator];
+    if (!iterable) {
+      iterable = tmp[Symbol.iterator];
     }
-    tmp3 = Symbol_iterator;
+    tmp3 = iterable;
   }
   if (null != tmp3) {
     const items = [];
@@ -48,6 +48,11 @@ export default function _iterableToArrayLimit(arg0, arg1) {
             let tmp16 = iter2;
             let arr = items.push(iter3.value);
             let tmp18 = arg1;
+            if (items.length !== arg1) {
+              continue;
+            } else {
+              break;
+            }
             break;
           }
         }

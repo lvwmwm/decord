@@ -1,13 +1,13 @@
-// Module ID: 5905
-// Function ID: 49790
+// Module ID: 5910
+// Function ID: 49819
 // Name: BountiesPosterIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 5911, 2]
 // Exports: BountiesPosterIllocon
 
-// Module 5905 (BountiesPosterIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterIllocon.native.tsx");
+// Module 5910 (BountiesPosterIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterIllocon.native.tsx");
 
 export const BountiesPosterIllocon = function BountiesPosterIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const BountiesPosterIllocon = function BountiesPosterIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5911) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const BountiesPosterIllocon = function BountiesPosterIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

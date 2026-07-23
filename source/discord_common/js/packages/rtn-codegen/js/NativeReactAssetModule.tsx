@@ -1,12 +1,12 @@
-// Module ID: 16478
-// Function ID: 127329
+// Module ID: 16595
+// Function ID: 129503
 // Name: enforcing
-// Dependencies: []
+// Dependencies: [27, 2]
 
-// Module 16478 (enforcing)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+// Module 16595 (enforcing)
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 const enforcing = TurboModuleRegistry.getEnforcing("NativeReactAssetModule");
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeReactAssetModule.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeReactAssetModule.tsx");
 
 export default enforcing;

@@ -1,26 +1,25 @@
-// Module ID: 10941
-// Function ID: 85088
+// Module ID: 10951
+// Function ID: 85137
 // Name: regExp
-// Dependencies: []
+// Dependencies: [4098, 10952, 1934, 10461, 10462, 7781, 4052, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 10941 (regExp)
+// Module 10951 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/experiments/native/ExperimentEmbedPlatformUtils.tsx");
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/experiments/native/ExperimentEmbedPlatformUtils.tsx");
 
 export const EXPERIMENT_EMBED_URL_REGEX = regExp;
 export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperimentEmbedTap(experimentFromEmbedURL, experimentTreatmentFromEmbedURL) {
   let experiments;
   let overridesInfo;
-  const require = experimentTreatmentFromEmbedURL;
+  const _require = experimentTreatmentFromEmbedURL;
   if (null != experimentTreatmentFromEmbedURL) {
     const _Number = Number;
     if (!Number.isNaN(experimentTreatmentFromEmbedURL)) {
-      let obj = require(dependencyMap[3]);
+      let obj = _require(10461);
       const legacyExperiments = obj.getLegacyExperiments();
       ({ experiments, overridesInfo } = legacyExperiments);
-      const apexExperiments = require(dependencyMap[4]).getApexExperiments();
+      const apexExperiments = _require(10462).getApexExperiments();
       let tmp5 = experiments[experimentFromEmbedURL];
       if (null == tmp5) {
         tmp5 = apexExperiments.experiments[experimentFromEmbedURL];
@@ -34,23 +33,23 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
         if (null != tmp6) {
           tmp7 = tmp6;
         }
-        const experimentBuckets = require(dependencyMap[5]).getExperimentBuckets(tmp5);
-        const iter = experimentBuckets.find((value) => value.value === arg1);
+        const experimentBuckets = _require(7781).getExperimentBuckets(tmp5);
+        const iter = experimentBuckets.find((value) => value.value === closure_0);
         if (null != iter) {
           if (null != tmp7) {
             if (tmp7.variantId === iter.value) {
-              require(dependencyMap[6]).overrideBucket(tmp5.system, experimentFromEmbedURL, null);
-              const obj5 = require(dependencyMap[6]);
+              _require(4052).overrideBucket(tmp5.system, experimentFromEmbedURL, null);
+              const obj5 = _require(4052);
             }
           }
-          require(dependencyMap[6]).overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
-          const obj4 = require(dependencyMap[6]);
+          _require(4052).overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
+          const obj4 = _require(4052);
         }
-        const obj3 = require(dependencyMap[5]);
+        const obj3 = _require(7781);
       }
-      const obj2 = require(dependencyMap[4]);
+      const obj2 = _require(10462);
     }
   }
   obj = { id: experimentFromEmbedURL };
-  importDefault(dependencyMap[0]).openLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), "ExperimentOverrideSheet", obj);
+  importDefault(4098).openLazy(_require(1934)(10952, dependencyMap.paths), "ExperimentOverrideSheet", obj);
 };

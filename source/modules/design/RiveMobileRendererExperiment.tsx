@@ -1,15 +1,15 @@
-// Module ID: 14609
-// Function ID: 110094
+// Module ID: 14724
+// Function ID: 112258
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: useRiveRendererExperiment
 
-// Module 14609 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/design/RiveMobileRendererExperiment.tsx");
+// Module 14724 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2025-12-rive-mobile-renderer", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/design/RiveMobileRendererExperiment.tsx");
 
 export default apexExperiment;
 export const useRiveRendererExperiment = function useRiveRendererExperiment(AppContainer) {

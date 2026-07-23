@@ -1,25 +1,27 @@
 // Module ID: 1159
-// Function ID: 13196
+// Function ID: 13197
 // Name: safeFactory
-// Dependencies: []
+// Dependencies: [794]
 
 // Module 1159 (safeFactory)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.safeFactory = function safeFactory(beforeBreadcrumb, arg1) {
   let fn = beforeBreadcrumb;
-  arg1 = beforeBreadcrumb;
+  let closure_0 = beforeBreadcrumb;
   if (arguments.length > 1) {
     let closure_1 = {};
     if ("function" === typeof fn) {
-      fn = () => arg0(...arguments);
+      fn = () => beforeBreadcrumb(...arguments);
     }
     return fn;
   }
 };
 arg5.safeTracesSampler = function safeTracesSampler(tracesSampler) {
   let fn = tracesSampler;
-  const arg1 = tracesSampler;
+  let closure_0 = tracesSampler;
   if (tracesSampler) {
-    fn = () => arg0(...arguments);
+    fn = () => tracesSampler(...arguments);
   }
   return fn;
 };

@@ -1,14 +1,16 @@
 // Module ID: 1085
-// Function ID: 12457
+// Function ID: 12458
 // Name: listenForSentryMessages
-// Dependencies: []
+// Dependencies: [794, 1048, 1004, 1054, 1007]
 // Exports: registerWebWorker
 
 // Module 1085 (listenForSentryMessages)
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+
 function listenForSentryMessages(addEventListener) {
   const listener = addEventListener.addEventListener("message", (data) => {
     data = data.data;
-    let obj = callback(closure_1[0]);
+    let obj = outer1_0(outer1_1[0]);
     let flag = false;
     if (obj.isPlainObject(data)) {
       flag = false;
@@ -19,7 +21,7 @@ function listenForSentryMessages(addEventListener) {
           }
         }
         if ("_sentryDebugIds" in data) {
-          let obj1 = callback(closure_1[0]);
+          let obj1 = outer1_0(outer1_1[0]);
           if (!obj1.isPlainObject(data._sentryDebugIds)) {
             flag = false;
           }
@@ -28,7 +30,7 @@ function listenForSentryMessages(addEventListener) {
           if (!obj3.isPlainObject(data._sentryModuleMetadata)) {
             flag = false;
           }
-          const obj3 = callback(closure_1[0]);
+          obj3 = outer1_0(outer1_1[0]);
         }
         flag = true;
         if ("_sentryWorkerError" in data) {
@@ -36,35 +38,35 @@ function listenForSentryMessages(addEventListener) {
           if (!obj4.isPlainObject(data._sentryWorkerError)) {
             flag = false;
           }
-          const obj4 = callback(closure_1[0]);
+          obj4 = outer1_0(outer1_1[0]);
         }
       }
     }
     if (flag) {
       const result = data.stopImmediatePropagation();
       if (data.data._sentryDebugIds) {
-        if (callback(closure_1[1]).DEBUG_BUILD) {
-          const debug = callback(closure_1[0]).debug;
+        if (outer1_0(outer1_1[1]).DEBUG_BUILD) {
+          const debug = outer1_0(outer1_1[0]).debug;
           debug.log("Sentry debugId web worker message received", data.data);
         }
         const _Object = Object;
-        callback(closure_1[2]).WINDOW._sentryDebugIds = Object.assign({}, data.data._sentryDebugIds, callback(closure_1[2]).WINDOW._sentryDebugIds);
+        outer1_0(outer1_1[2]).WINDOW._sentryDebugIds = Object.assign({}, data.data._sentryDebugIds, outer1_0(outer1_1[2]).WINDOW._sentryDebugIds);
       }
       if (data.data._sentryModuleMetadata) {
-        if (callback(closure_1[1]).DEBUG_BUILD) {
-          const debug2 = callback(closure_1[0]).debug;
+        if (outer1_0(outer1_1[1]).DEBUG_BUILD) {
+          const debug2 = outer1_0(outer1_1[0]).debug;
           debug2.log("Sentry module metadata web worker message received", data.data);
         }
         const _Object2 = Object;
-        callback(closure_1[2]).WINDOW._sentryModuleMetadata = Object.assign({}, data.data._sentryModuleMetadata, callback(closure_1[2]).WINDOW._sentryModuleMetadata);
+        outer1_0(outer1_1[2]).WINDOW._sentryModuleMetadata = Object.assign({}, data.data._sentryModuleMetadata, outer1_0(outer1_1[2]).WINDOW._sentryModuleMetadata);
       }
       if (data.data._sentryWorkerError) {
-        if (callback(closure_1[1]).DEBUG_BUILD) {
-          const debug3 = callback(closure_1[0]).debug;
+        if (outer1_0(outer1_1[1]).DEBUG_BUILD) {
+          const debug3 = outer1_0(outer1_1[0]).debug;
           debug3.log("Sentry worker rejection message received", data.data._sentryWorkerError);
         }
         const _sentryWorkerError = data.data._sentryWorkerError;
-        const client = callback(closure_1[0]).getClient();
+        const client = outer1_0(outer1_1[0]).getClient();
         if (client) {
           const stackParser = client.getOptions().stackParser;
           const attachStacktrace = client.getOptions().attachStacktrace;
@@ -84,28 +86,26 @@ function listenForSentryMessages(addEventListener) {
             obj.worker = obj;
             result1.contexts = Object.assign({}, result1.contexts, obj);
           }
-          const obj7 = callback(closure_1[0]);
-          obj1 = { originalException: reason, mechanism: { priority: 1902051331, "Bool(false)": null } };
-          callback(closure_1[0]).captureEvent(result1, obj1);
-          if (callback(closure_1[1]).DEBUG_BUILD) {
-            const debug4 = callback(closure_1[0]).debug;
+          obj7 = outer1_0(outer1_1[0]);
+          obj1 = { originalException: reason, mechanism: { handled: false, type: "auto.browser.web_worker.onunhandledrejection" } };
+          outer1_0(outer1_1[0]).captureEvent(result1, obj1);
+          if (outer1_0(outer1_1[1]).DEBUG_BUILD) {
+            const debug4 = outer1_0(outer1_1[0]).debug;
             debug4.log("Captured worker unhandled rejection", reason);
           }
-          const obj12 = callback(closure_1[0]);
+          const obj12 = outer1_0(outer1_1[0]);
         }
-        const obj5 = callback(closure_1[0]);
+        const obj5 = outer1_0(outer1_1[0]);
       }
     }
   });
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
 
 export const INTEGRATION_NAME = "WebWorker";
 export const registerWebWorker = function registerWebWorker(self) {
   const _self = self.self;
-  const require = _self;
-  const obj = { _sentryMessage: true };
+  let obj = { _sentryMessage: true };
   const _sentryDebugIds = _self._sentryDebugIds;
   let tmp;
   if (null != _sentryDebugIds) {
@@ -120,7 +120,7 @@ export const registerWebWorker = function registerWebWorker(self) {
   obj._sentryModuleMetadata = tmp2;
   _self.postMessage(obj);
   const listener = _self.addEventListener("unhandledrejection", (arg0) => {
-    const obj = { reason: _self(closure_1[3])._getUnhandledRejectionError(arg0) };
+    const obj = { reason: _self(outer1_1[3])._getUnhandledRejectionError(arg0) };
     const _location = _self.location;
     let href;
     if (null != _location) {
@@ -128,18 +128,18 @@ export const registerWebWorker = function registerWebWorker(self) {
     }
     obj.filename = href;
     _self.postMessage({ _sentryMessage: true, _sentryWorkerError: obj });
-    if (_self(closure_1[1]).DEBUG_BUILD) {
-      const debug = _self(closure_1[0]).debug;
+    if (_self(outer1_1[1]).DEBUG_BUILD) {
+      const debug = _self(outer1_1[0]).debug;
       debug.log("[Sentry Worker] Forwarding unhandled rejection to parent", obj);
     }
   });
-  if (require(dependencyMap[1]).DEBUG_BUILD) {
-    const debug = require(dependencyMap[0]).debug;
+  if (_self(1048).DEBUG_BUILD) {
+    let debug = _self(794).debug;
     debug.log("[Sentry Worker] Registered worker with unhandled rejection handling");
   }
 };
-export const webWorkerIntegration = _module.defineIntegration((worker) => {
-  const require = worker.worker;
+export const webWorkerIntegration = registerSpanErrorInstrumentation.defineIntegration((worker) => {
+  worker = worker.worker;
   return {
     name: "WebWorker",
     setupOnce() {
@@ -149,11 +149,11 @@ export const webWorkerIntegration = _module.defineIntegration((worker) => {
         items = [tmp];
       }
       const item = items.forEach((arg0) => {
-        callback(arg0);
+        outer2_2(arg0);
       });
     },
     addWorker(arg0) {
-      callback(arg0);
+      outer1_2(arg0);
     }
   };
 });

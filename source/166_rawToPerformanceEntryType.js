@@ -1,9 +1,11 @@
 // Module ID: 166
 // Function ID: 2482
 // Name: rawToPerformanceEntryType
-// Dependencies: []
+// Dependencies: [154, 167, 160, 168, 155]
 
 // Module 166 (rawToPerformanceEntryType)
+const require = arg1;
+const dependencyMap = arg6;
 function rawToPerformanceEntryType(entryType) {
   if (obj.MARK === entryType) {
     return "mark";
@@ -22,40 +24,40 @@ function rawToPerformanceEntryType(entryType) {
     throw typeError;
   }
 }
-const obj = {};
+let obj = { MARK: 1, MEASURE: 2, EVENT: 3, LONGTASK: 4, RESOURCE: 5 };
 arg5.RawPerformanceEntryTypeValues = obj;
 arg5.rawToPerformanceEntry = function rawToPerformanceEntry(entryType) {
   let fetchStart;
   entryType = entryType.entryType;
   if (obj.EVENT === entryType) {
-    const PerformanceEventTiming = arg1(arg6[0]).PerformanceEventTiming;
-    let obj = {};
+    const PerformanceEventTiming = require(154) /* _isNativeReflectConstruct */.PerformanceEventTiming;
+    obj = {};
     ({ name: obj6.name, startTime: obj6.startTime, duration: obj6.duration, processingStart: obj6.processingStart, processingEnd: obj6.processingEnd, interactionId: obj6.interactionId } = entryType);
     const prototype6 = PerformanceEventTiming.prototype;
     const performanceEventTiming = new PerformanceEventTiming(obj);
     return performanceEventTiming;
   } else if (obj.LONGTASK === entryType) {
-    const PerformanceLongTaskTiming = arg1(arg6[1]).PerformanceLongTaskTiming;
+    const PerformanceLongTaskTiming = require(167) /* _callSuper */.PerformanceLongTaskTiming;
     obj = { name: entryType.name, entryType: rawToPerformanceEntryType(entryType.entryType) };
     ({ startTime: obj5.startTime, duration: obj5.duration } = entryType);
     const prototype5 = PerformanceLongTaskTiming.prototype;
     const performanceLongTaskTiming = new PerformanceLongTaskTiming(obj);
     return performanceLongTaskTiming;
   } else if (obj.MARK === entryType) {
-    const PerformanceMark = arg1(arg6[2]).PerformanceMark;
+    const PerformanceMark = require(160) /* _callSuper */.PerformanceMark;
     const obj1 = { startTime: entryType.startTime };
     const prototype4 = PerformanceMark.prototype;
     const performanceMark = new PerformanceMark(entryType.name, obj1);
     return performanceMark;
   } else if (obj.MEASURE === entryType) {
-    const PerformanceMeasure = arg1(arg6[2]).PerformanceMeasure;
+    const PerformanceMeasure = require(160) /* _callSuper */.PerformanceMeasure;
     const obj2 = {};
     ({ startTime: obj3.startTime, duration: obj3.duration } = entryType);
     const prototype3 = PerformanceMeasure.prototype;
     const performanceMeasure = new PerformanceMeasure(entryType.name, obj2);
     return performanceMeasure;
   } else if (obj.RESOURCE === entryType) {
-    const PerformanceResourceTiming = arg1(arg6[3]).PerformanceResourceTiming;
+    const PerformanceResourceTiming = require(168) /* _isNativeReflectConstruct */.PerformanceResourceTiming;
     const obj3 = {};
     ({ name: obj2.name, startTime: obj2.startTime, duration: obj2.duration, fetchStart } = entryType);
     let num3 = 0;
@@ -98,7 +100,7 @@ arg5.rawToPerformanceEntry = function rawToPerformanceEntry(entryType) {
     const performanceResourceTiming = new PerformanceResourceTiming(obj3);
     return performanceResourceTiming;
   } else {
-    const PerformanceEntry = arg1(arg6[4]).PerformanceEntry;
+    const PerformanceEntry = require(155) /* PerformanceEntry */.PerformanceEntry;
     obj = { name: entryType.name, entryType: rawToPerformanceEntryType(entryType.entryType) };
     ({ startTime: obj.startTime, duration: obj.duration } = entryType);
     const prototype = PerformanceEntry.prototype;

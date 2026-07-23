@@ -1,35 +1,39 @@
-// Module ID: 14441
-// Function ID: 108867
+// Module ID: 14555
+// Function ID: 111020
 // Name: toggle
-// Dependencies: []
+// Dependencies: [31, 6769, 7662, 653, 7125, 13728, 5793, 10095, 1212, 2]
 
-// Module 14441 (toggle)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ AllFriendSourceFlags: closure_4, FriendSourceFlags: closure_5 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[7]);
-obj = {
+// Module 14555 (toggle)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import createToggle from "createToggle";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ AllFriendSourceFlags: closure_4, FriendSourceFlags: closure_5 } = ME);
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[8]).intl;
-    return intl.string(arg1(dependencyMap[8]).t.mGr3CX);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.mGr3CX);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsEveryoneSettingValue() {
-    const selectedTeenId = arg1(dependencyMap[4]).useSelectedTeenId();
+    const selectedTeenId = controlledSetting(7125).useSelectedTeenId();
     let tmp2;
     if (null != selectedTeenId) {
       tmp2 = selectedTeenId;
     }
-    const ParentalControlledFriendSourceFlags = arg1(dependencyMap[5]).ParentalControlledFriendSourceFlags;
-    const controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(tmp2);
-    const arg1 = controlledSetting;
+    const ParentalControlledFriendSourceFlags = controlledSetting(13728).ParentalControlledFriendSourceFlags;
+    controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(tmp2);
     const items = [controlledSetting];
-    return React.useMemo(() => controlledSetting(closure_1[6]).computeFlags(controlledSetting), items).all;
+    return React.useMemo(() => controlledSetting(outer1_1[6]).computeFlags(controlledSetting), items).all;
   },
   onValueChange: function onFriendRequestsEveryoneSettingValueChange(arg0) {
-    const selectedTeenId = selectedTeenId.getSelectedTeenId();
+    selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      const ParentalControlledFriendSourceFlags = arg1(dependencyMap[5]).ParentalControlledFriendSourceFlags;
+      const ParentalControlledFriendSourceFlags = require(13728) /* result */.ParentalControlledFriendSourceFlags;
       if (arg0) {
         let tmp7 = tmp4;
       } else {
@@ -40,8 +44,7 @@ obj = {
   },
   unsearchable: true
 };
-const toggle = obj.createToggle(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsFriendRequestsEveryoneSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+let result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsFriendRequestsEveryoneSetting.tsx");
 
-export default toggle;
+export default createToggle;

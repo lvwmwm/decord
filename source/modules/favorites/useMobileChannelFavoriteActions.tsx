@@ -1,36 +1,38 @@
-// Module ID: 10335
-// Function ID: 79787
+// Module ID: 10348
+// Function ID: 79865
 // Name: useMobileChannelFavoriteActions
-// Dependencies: []
+// Dependencies: [1194, 1917, 1351, 10190, 5077, 566, 2]
 // Exports: default
 
-// Module 10335 (useMobileChannelFavoriteActions)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/favorites/useMobileChannelFavoriteActions.tsx");
+// Module 10348 (useMobileChannelFavoriteActions)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/favorites/useMobileChannelFavoriteActions.tsx");
 
 export default function useMobileChannelFavoriteActions(id, FavoritesGuildChannelList) {
   let hasAccess;
   let hasHigherPrivileges;
-  FavoritesGuildChannelList = id;
-  let obj = FavoritesGuildChannelList(dependencyMap[3]);
+  const _require = id;
+  let obj = _require(10190);
   const favoritesAccess = obj.useFavoritesAccess(FavoritesGuildChannelList);
   ({ hasAccess, hasHigherPrivileges } = favoritesAccess);
-  let result = FavoritesGuildChannelList(dependencyMap[4]).canFavoriteChannelType(id, hasHigherPrivileges);
-  const obj2 = FavoritesGuildChannelList(dependencyMap[4]);
+  let result = _require(5077).canFavoriteChannelType(id, hasHigherPrivileges);
+  const obj2 = _require(5077);
   const items = [closure_4];
-  const stateFromStores = FavoritesGuildChannelList(dependencyMap[5]).useStateFromStores(items, () => favorite.isFavorite(arg0.id));
-  const obj3 = FavoritesGuildChannelList(dependencyMap[5]);
-  const isFavoritesGuildSelected = FavoritesGuildChannelList(dependencyMap[3]).useIsFavoritesGuildSelected();
-  const obj4 = FavoritesGuildChannelList(dependencyMap[3]);
-  const items1 = [closure_3, closure_2];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_4.isFavorite(id.id));
+  const obj3 = _require(566);
+  const isFavoritesGuildSelected = _require(10190).useIsFavoritesGuildSelected();
+  const obj4 = _require(10190);
+  const items1 = [closure_3, _isNativeReflectConstruct];
   obj = { hasFavoritesAccess: hasAccess };
   if (result) {
     result = obj5.useStateFromStores(items1, () => {
-      let isMemberResult = null == arg0.guild_id;
+      let isMemberResult = null == id.guild_id;
       if (!isMemberResult) {
-        isMemberResult = member.isMember(arg0.guild_id, id.getId());
+        isMemberResult = outer1_3.isMember(id.guild_id, outer1_2.getId());
       }
       return isMemberResult;
     });

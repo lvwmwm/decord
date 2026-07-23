@@ -1,25 +1,25 @@
-// Module ID: 14324
-// Function ID: 108184
+// Module ID: 14438
+// Function ID: 110337
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14439, 2]
 
-// Module 14324 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14438 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Segmented Control";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_SEGMENTED_CONTROL,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_SEGMENTED_CONTROL,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14439) /* UserSettingsDesignSystemSegmentedControl */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemSegmentedControlSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemSegmentedControlSetting.tsx");
 
 export default route;

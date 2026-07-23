@@ -1,34 +1,36 @@
-// Module ID: 14127
-// Function ID: 107244
+// Module ID: 14241
+// Function ID: 109400
 // Name: useValue
-// Dependencies: []
+// Dependencies: [4122, 7662, 566, 13370, 10095, 1212, 2556, 2]
 // Exports: onValueChange, useValue
 
-// Module 14127 (useValue)
+// Module 14241 (useValue)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
 function useValue() {
-  const items = [closure_3];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => obj.displayNameStylesEnabled);
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.displayNameStylesEnabled);
 }
 function onValueChange(enabled) {
-  const result = arg1(dependencyMap[3]).setDisplayNameStylesEnabled(enabled);
+  const result = require(13370) /* setFontSize */.setDisplayNameStylesEnabled(enabled);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(importDefault(dependencyMap[6]).2gFUEw);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2556)["2gFUEw"]);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.ACCESSIBILITY,
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue,
   onValueChange,
   usePredicate() {
     return true;
   }
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/DisplayNameStylesAccessibilitySetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+let result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/DisplayNameStylesAccessibilitySetting.tsx");
 
-export default toggle;
+export default createToggle;
 export { useValue };
 export { onValueChange };

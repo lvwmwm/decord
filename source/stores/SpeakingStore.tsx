@@ -1,9 +1,24 @@
-// Module ID: 4949
-// Function ID: 42482
+// Module ID: 4952
+// Function ID: 42500
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 4177, 4202, 1906, 653, 4191, 3763, 4953, 566, 686, 2]
 
-// Module 4949 (_isNativeReflectConstruct)
+// Module 4952 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import dispatcher from "dispatcher";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+import DesktopSources from "DesktopSources";
+
+let closure_14;
+let closure_15;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +28,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +81,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -137,7 +152,7 @@ function anyoneHasFlagInContext(arg0, arg1) {
             break;
           }
         } else {
-          let tmp7 = closure_17;
+          let tmp7 = c17;
         }
         let iter2 = tmp3();
         iter = iter2;
@@ -159,7 +174,7 @@ function setSpeakingFlagForUserInContext(context, userId, flags, voiceDb) {
   let value = map.get(DEFAULT);
   if (null == value) {
     const _Map = Map;
-    const map = new Map();
+    map = new Map();
     const result = map.set(DEFAULT, map);
     value = map;
   }
@@ -207,38 +222,27 @@ function setSpeakingFlagForUserInContext(context, userId, flags, voiceDb) {
 function handleConnectionOpen(user) {
   const id = user.user.id;
   const sessionId = user.sessionId;
-  let closure_19 = null;
+  let c19 = null;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-const Permissions = arg1(dependencyMap[10]).Permissions;
-({ SpeakingFlags: closure_14, MediaEngineContextTypes: closure_15 } = arg1(dependencyMap[11]));
-const map = new Map();
-let closure_17 = null;
-let closure_18 = null;
-let closure_19 = null;
-let closure_20 = false;
-let tmp4 = (Store) => {
+({ SpeakingFlags: closure_14, MediaEngineContextTypes: closure_15 } = DesktopSources);
+let map = new Map();
+let c17 = null;
+let c18 = null;
+let c19 = null;
+let c20 = false;
+let tmp4 = ((Store) => {
   class SpeakingStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, SpeakingStore);
-      obj = closure_6(SpeakingStore);
-      tmp2 = closure_5;
-      if (closure_21()) {
+      tmp = outer1_3(this, SpeakingStore);
+      obj = outer1_6(SpeakingStore);
+      tmp2 = outer1_5;
+      if (outer1_21()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -247,7 +251,6 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = SpeakingStore;
   callback2(SpeakingStore, Store);
   let obj = {
     key: "initialize",
@@ -259,7 +262,7 @@ let tmp4 = (Store) => {
         }
         return tmp;
       });
-      this.waitFor(closure_9, closure_10, closure_11, closure_12);
+      this.waitFor(outer1_9, outer1_10, outer1_11, outer1_12);
     }
   };
   const items = [obj, , , , , , , , , , , , ];
@@ -268,9 +271,9 @@ let tmp4 = (Store) => {
     value(arg0, arg1) {
       let DEFAULT = arg2;
       if (arg2 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      let value = store.get(DEFAULT);
+      let value = outer1_16.get(DEFAULT);
       let since;
       if (null != value) {
         value = value.get(arg0);
@@ -291,10 +294,9 @@ let tmp4 = (Store) => {
     value() {
       let DEFAULT = arg0;
       if (arg0 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      const SpeakingStore = DEFAULT;
-      const value = store.get(DEFAULT);
+      const value = outer1_16.get(DEFAULT);
       let keys;
       if (null != value) {
         keys = value.keys();
@@ -302,7 +304,7 @@ let tmp4 = (Store) => {
       if (null == keys) {
         keys = [];
       }
-      return Array.from(keys).filter((arg0) => callback(DEFAULT, arg0, constants.VOICE));
+      return Array.from(keys).filter((arg0) => outer2_25(DEFAULT, arg0, outer2_14.VOICE));
     }
   };
   items[2] = obj;
@@ -311,9 +313,9 @@ let tmp4 = (Store) => {
     value(arg0) {
       let DEFAULT = arg1;
       if (arg1 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      return callback4(DEFAULT, arg0, constants.VOICE);
+      return outer1_25(DEFAULT, arg0, outer1_14.VOICE);
     }
   };
   items[4] = {
@@ -321,9 +323,9 @@ let tmp4 = (Store) => {
     value(arg0) {
       let DEFAULT = arg1;
       if (arg1 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      return callback4(DEFAULT, arg0, constants.PRIORITY);
+      return outer1_25(DEFAULT, arg0, outer1_14.PRIORITY);
     }
   };
   items[5] = {
@@ -331,9 +333,9 @@ let tmp4 = (Store) => {
     value(arg0) {
       let DEFAULT = arg1;
       if (arg1 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      return callback4(DEFAULT, arg0, constants.SOUNDSHARE);
+      return outer1_25(DEFAULT, arg0, outer1_14.SOUNDSHARE);
     }
   };
   items[6] = {
@@ -341,9 +343,9 @@ let tmp4 = (Store) => {
     value() {
       let DEFAULT = arg0;
       if (arg0 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      return callback5(DEFAULT, constants.VOICE, true);
+      return outer1_26(DEFAULT, outer1_14.VOICE, true);
     }
   };
   items[7] = {
@@ -352,11 +354,11 @@ let tmp4 = (Store) => {
       let DEFAULT = arg0;
       const self = this;
       if (arg0 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      let isSpeakingResult = null != closure_17;
+      let isSpeakingResult = null != outer1_17;
       if (isSpeakingResult) {
-        isSpeakingResult = self.isSpeaking(closure_17, DEFAULT);
+        isSpeakingResult = self.isSpeaking(outer1_17, DEFAULT);
       }
       return isSpeakingResult;
     }
@@ -364,7 +366,7 @@ let tmp4 = (Store) => {
   items[8] = {
     key: "isCurrentUserPTTActive",
     value() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[9] = {
@@ -372,9 +374,9 @@ let tmp4 = (Store) => {
     value() {
       let DEFAULT = arg0;
       if (arg0 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      return callback5(DEFAULT, constants.VOICE | constants.PRIORITY);
+      return outer1_26(DEFAULT, outer1_14.VOICE | outer1_14.PRIORITY);
     }
   };
   items[10] = {
@@ -383,11 +385,11 @@ let tmp4 = (Store) => {
       let DEFAULT = arg0;
       const self = this;
       if (arg0 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      let isPrioritySpeakerResult = null != closure_17;
+      let isPrioritySpeakerResult = null != outer1_17;
       if (isPrioritySpeakerResult) {
-        isPrioritySpeakerResult = self.isPrioritySpeaker(closure_17, DEFAULT);
+        isPrioritySpeakerResult = self.isPrioritySpeaker(outer1_17, DEFAULT);
       }
       return isPrioritySpeakerResult;
     }
@@ -398,14 +400,14 @@ let tmp4 = (Store) => {
       let DEFAULT = arg0;
       const self = this;
       if (arg0 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      let isPrioritySpeakerResult = null != closure_17;
+      let isPrioritySpeakerResult = null != outer1_17;
       if (isPrioritySpeakerResult) {
-        isPrioritySpeakerResult = self.isPrioritySpeaker(closure_17, DEFAULT);
+        isPrioritySpeakerResult = self.isPrioritySpeaker(outer1_17, DEFAULT);
       }
       if (isPrioritySpeakerResult) {
-        isPrioritySpeakerResult = self.isSpeaking(closure_17, DEFAULT);
+        isPrioritySpeakerResult = self.isSpeaking(outer1_17, DEFAULT);
       }
       return isPrioritySpeakerResult;
     }
@@ -415,14 +417,14 @@ let tmp4 = (Store) => {
     value(arg0) {
       let DEFAULT = arg1;
       if (arg1 === undefined) {
-        DEFAULT = constants2.DEFAULT;
+        DEFAULT = outer1_15.DEFAULT;
       }
-      const config = SpeakingStore(closure_2[13]).getConfig({ location: "SpeakingStore" });
+      const config = SpeakingStore(outer1_2[13]).getConfig({ location: "SpeakingStore" });
       let num = -Infinity;
       if (config.enabled) {
         num = -Infinity;
         if (!config.disableUI) {
-          let value = store.get(DEFAULT);
+          let value = outer1_16.get(DEFAULT);
           let voiceDb;
           if (null != value) {
             value = value.get(arg0);
@@ -440,9 +442,9 @@ let tmp4 = (Store) => {
     }
   };
   return callback(SpeakingStore, items);
-}(importDefault(dependencyMap[14]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "SpeakingStore";
-tmp4 = new tmp4(importDefault(dependencyMap[15]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: handleConnectionOpen,
   OVERLAY_INITIALIZE: handleConnectionOpen,
   SPEAKING: function handleSpeaking(arg0) {
@@ -453,9 +455,9 @@ tmp4 = new tmp4(importDefault(dependencyMap[15]), {
     ({ context, userId, speakingFlags, voiceDb } = arg0);
     let num = speakingFlags;
     if ((speakingFlags & constants.PRIORITY) === constants.PRIORITY) {
-      const channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
+      channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
       if (null != channel) {
-        let obj = importAll(dependencyMap[12]);
+        let obj = importAll(3763);
         obj = { permission: Permissions.PRIORITY_SPEAKER, user: userId, context: channel };
         if (obj.can(obj)) {
           store.setCanHavePriority(userId, true);
@@ -477,46 +479,47 @@ tmp4 = new tmp4(importDefault(dependencyMap[15]), {
       let sessionId;
       let userId;
       ({ userId, channelId, sessionId } = arg1);
-      let tmp2 = userId === closure_17;
+      let tmp2 = userId === outer1_17;
       if (tmp2) {
-        tmp2 = sessionId === closure_18;
+        tmp2 = sessionId === outer1_18;
       }
       if (tmp2) {
         let tmp4 = null;
         if (null != channelId) {
           tmp4 = channelId;
         }
+        const outer1_19 = tmp4;
       }
       let flag = false;
-      if (tmp4 !== tmp4) {
-        flag = set.delete(constants.DEFAULT) || false;
-        const tmp7 = set.delete(constants.DEFAULT) || false;
+      if (outer1_19 !== outer1_19) {
+        flag = outer1_16.delete(outer1_15.DEFAULT) || false;
+        const tmp7 = outer1_16.delete(outer1_15.DEFAULT) || false;
       }
       if (null == channelId) {
-        if (userId !== closure_17) {
-          let tmp23 = callback(constants.DEFAULT, userId) || flag;
+        if (userId !== outer1_17) {
+          let tmp23 = outer1_24(outer1_15.DEFAULT, userId) || flag;
         }
-        tmp23 = set.delete(constants.DEFAULT) || flag;
-        const tmp26 = set.delete(constants.DEFAULT) || flag;
+        tmp23 = outer1_16.delete(outer1_15.DEFAULT) || flag;
+        const tmp26 = outer1_16.delete(outer1_15.DEFAULT) || flag;
       } else {
-        if (userId === closure_17) {
-          if (sessionId !== closure_18) {
-            let tmp12 = set.delete(constants.DEFAULT) || flag;
-            const tmp18 = set.delete(constants.DEFAULT) || flag;
+        if (userId === outer1_17) {
+          if (sessionId !== outer1_18) {
+            let tmp12 = outer1_16.delete(outer1_15.DEFAULT) || flag;
+            const tmp18 = outer1_16.delete(outer1_15.DEFAULT) || flag;
           }
           if (!tmp12) {
             tmp12 = arg0;
           }
           return tmp12;
         }
-        let tmp10 = userId !== closure_17;
+        let tmp10 = userId !== outer1_17;
         if (tmp10) {
-          tmp10 = channelId !== channelId.getChannelId();
+          tmp10 = channelId !== outer1_11.getChannelId();
         }
         tmp12 = flag;
         if (tmp10) {
-          tmp12 = callback(constants.DEFAULT, userId) || flag;
-          const tmp15 = callback(constants.DEFAULT, userId) || flag;
+          tmp12 = outer1_24(outer1_15.DEFAULT, userId) || flag;
+          const tmp15 = outer1_24(outer1_15.DEFAULT, userId) || flag;
         }
       }
     }, false);
@@ -525,90 +528,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[15]), {
     isActive = isActive.isActive;
   }
 });
-const obj = {
-  CONNECTION_OPEN: handleConnectionOpen,
-  OVERLAY_INITIALIZE: handleConnectionOpen,
-  SPEAKING: function handleSpeaking(arg0) {
-    let context;
-    let speakingFlags;
-    let userId;
-    let voiceDb;
-    ({ context, userId, speakingFlags, voiceDb } = arg0);
-    let num = speakingFlags;
-    if ((speakingFlags & constants.PRIORITY) === constants.PRIORITY) {
-      const channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
-      if (null != channel) {
-        let obj = importAll(dependencyMap[12]);
-        obj = { permission: Permissions.PRIORITY_SPEAKER, user: userId, context: channel };
-        if (obj.can(obj)) {
-          store.setCanHavePriority(userId, true);
-          num = speakingFlags;
-        }
-      }
-      store.setCanHavePriority(userId, false);
-      num = speakingFlags & ~constants.PRIORITY;
-    }
-    if ((num & constants.HIDDEN) === constants.HIDDEN) {
-      num = 0;
-    }
-    return setSpeakingFlagForUserInContext(context, userId, num, voiceDb);
-  },
-  VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
-    voiceStates = voiceStates.voiceStates;
-    return voiceStates.reduce((arg0, arg1) => {
-      let channelId;
-      let sessionId;
-      let userId;
-      ({ userId, channelId, sessionId } = arg1);
-      let tmp2 = userId === closure_17;
-      if (tmp2) {
-        tmp2 = sessionId === closure_18;
-      }
-      if (tmp2) {
-        let tmp4 = null;
-        if (null != channelId) {
-          tmp4 = channelId;
-        }
-      }
-      let flag = false;
-      if (tmp4 !== tmp4) {
-        flag = set.delete(constants.DEFAULT) || false;
-        const tmp7 = set.delete(constants.DEFAULT) || false;
-      }
-      if (null == channelId) {
-        if (userId !== closure_17) {
-          let tmp23 = callback(constants.DEFAULT, userId) || flag;
-        }
-        tmp23 = set.delete(constants.DEFAULT) || flag;
-        const tmp26 = set.delete(constants.DEFAULT) || flag;
-      } else {
-        if (userId === closure_17) {
-          if (sessionId !== closure_18) {
-            let tmp12 = set.delete(constants.DEFAULT) || flag;
-            const tmp18 = set.delete(constants.DEFAULT) || flag;
-          }
-          if (!tmp12) {
-            tmp12 = arg0;
-          }
-          return tmp12;
-        }
-        let tmp10 = userId !== closure_17;
-        if (tmp10) {
-          tmp10 = channelId !== channelId.getChannelId();
-        }
-        tmp12 = flag;
-        if (tmp10) {
-          tmp12 = callback(constants.DEFAULT, userId) || flag;
-          const tmp15 = callback(constants.DEFAULT, userId) || flag;
-        }
-      }
-    }, false);
-  },
-  PUSH_TO_TALK_STATE_CHANGE: function handlePushToTalkStateChange(isActive) {
-    isActive = isActive.isActive;
-  }
-};
-const tmp2 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("stores/SpeakingStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/SpeakingStore.tsx");
 
 export default tmp4;

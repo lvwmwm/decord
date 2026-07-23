@@ -1,35 +1,37 @@
-// Module ID: 11510
-// Function ID: 89690
+// Module ID: 11520
+// Function ID: 89740
 // Name: guildPowerupsAckNotification
-// Dependencies: []
+// Dependencies: [4018, 653, 686, 11521, 4369, 507, 11522, 1327, 2]
 // Exports: disablePowerupForGuild, enablePowerupForGuild, fetchGuildBoostEntitlements, fetchPowerupCatalogForGuild, guildPowerupsAckNotification, guildPowerupsResetNotifications
 
-// Module 11510 (guildPowerupsAckNotification)
-const _module = require(dependencyMap[0]);
-({ GUILD_POWERUP_APPLICATION_ID: closure_3, GuildPowerupType: closure_4 } = _module);
-const Endpoints = require(dependencyMap[1]).Endpoints;
-const _module1 = require(dependencyMap[8]);
-const result = _module1.fileFinishedImporting("modules/premium/powerups/GuildPowerupsActionCreators.tsx");
+// Module 11520 (guildPowerupsAckNotification)
+import BoostedGuildTiers from "BoostedGuildTiers";
+import { Endpoints } from "ME";
 
-export const guildPowerupsAckNotification = function guildPowerupsAckNotification(guildId) {
-  let obj = importDefault(dependencyMap[2]);
-  obj = { type: "GUILD_POWERUPS_ACK_NOTIFICATION", guildId };
+let closure_3;
+let closure_4;
+({ GUILD_POWERUP_APPLICATION_ID: closure_3, GuildPowerupType: closure_4 } = BoostedGuildTiers);
+let result = require("dispatcher").fileFinishedImporting("modules/premium/powerups/GuildPowerupsActionCreators.tsx");
+
+export const guildPowerupsAckNotification = function guildPowerupsAckNotification(closure_0) {
+  let obj = importDefault(686);
+  obj = { type: "GUILD_POWERUPS_ACK_NOTIFICATION", guildId: closure_0 };
   obj.dispatch(obj);
 };
 export const guildPowerupsResetNotifications = function guildPowerupsResetNotifications() {
-  importDefault(dependencyMap[2]).dispatch({ type: "GUILD_POWERUPS_RESET_NOTIFICATIONS" });
+  importDefault(686).dispatch({ type: "GUILD_POWERUPS_RESET_NOTIFICATIONS" });
 };
 export const fetchPowerupCatalogForGuild = function fetchPowerupCatalogForGuild(guildId) {
-  const require = guildId;
+  const _require = guildId;
   if (true === arg1) {
-    const MOCK_LEVELS = require(dependencyMap[3]).MOCK_LEVELS;
-    const combined = MOCK_LEVELS.concat(require(dependencyMap[3]).MOCK_PERKS);
+    const MOCK_LEVELS = _require(11521).MOCK_LEVELS;
+    const combined = MOCK_LEVELS.concat(_require(11521).MOCK_PERKS);
     let obj = {};
-    obj[constants.LEVEL] = require(dependencyMap[3]).MOCK_LEVELS;
-    obj[constants.PERK] = require(dependencyMap[3]).MOCK_PERKS;
-    let obj2 = importDefault(dependencyMap[2]);
+    obj[constants.LEVEL] = _require(11521).MOCK_LEVELS;
+    obj[constants.PERK] = _require(11521).MOCK_PERKS;
+    let obj2 = importDefault(686);
     obj = { type: "GUILD_POWERUP_CATALOG_FETCH_SUCCESS", guildId };
-    const sorted = combined.sort((skuId, skuId2) => {
+    let sorted = combined.sort((skuId, skuId2) => {
       let num = -1;
       if (skuId.skuId >= skuId2.skuId) {
         num = 1;
@@ -47,15 +49,16 @@ export const fetchPowerupCatalogForGuild = function fetchPowerupCatalogForGuild(
     obj2 = { application_id: closure_3, guild_id: guildId };
     obj1.query = obj2;
     obj1.oldFormErrors = true;
-    const obj5 = require(dependencyMap[4]);
-    obj1.rejectWithError = require(dependencyMap[5]).rejectWithMigratedError();
+    const obj5 = _require(4369);
+    obj1.rejectWithError = _require(507).rejectWithMigratedError();
     const result = obj5.httpGetWithCountryCodeQuery(obj1);
     return result.then((body) => {
       let allPowerups;
       let powerupCatalog;
+      const guildId = body;
       body = body.body;
-      const mapped = body.map((arg0) => callback(closure_2[6])(arg0.body, arg0));
-      const found = mapped.filter(body(closure_2[7]).isNotNullish);
+      const mapped = body.map((arg0) => outer2_1(outer2_2[6])(body.body, arg0));
+      const found = mapped.filter(guildId(outer1_2[7]).isNotNullish);
       const sorted = found.sort((skuId, skuId2) => {
         let num = -1;
         if (skuId.skuId >= skuId2.skuId) {
@@ -76,24 +79,23 @@ export const fetchPowerupCatalogForGuild = function fetchPowerupCatalogForGuild(
         return powerupCatalog;
       }, { allPowerups: {}, powerupCatalog: {} });
       ({ allPowerups, powerupCatalog } = reduced);
-      callback(closure_2[2]).dispatch({ type: "GUILD_POWERUP_CATALOG_FETCH_SUCCESS", guildId: body, allPowerups, powerupCatalog });
+      outer1_1(outer1_2[2]).dispatch({ type: "GUILD_POWERUP_CATALOG_FETCH_SUCCESS", guildId, allPowerups, powerupCatalog });
       return body.body;
     });
   }
 };
-export const fetchGuildBoostEntitlements = function fetchGuildBoostEntitlements(guildId, arg1) {
+export const fetchGuildBoostEntitlements = function fetchGuildBoostEntitlements(closure_0, arg1) {
   let flag = arg1;
-  const require = guildId;
+  const _require = closure_0;
   if (arg1 === undefined) {
     flag = true;
   }
-  let obj = require(dependencyMap[4]);
-  obj = { url: Endpoints.GUILD_POWERUPS(guildId), query: obj, oldFormErrors: true };
-  obj = { include_ends_at: flag, rejectWithError: require(dependencyMap[5]).rejectWithMigratedError() };
+  let obj = _require(4369);
+  obj = { url: Endpoints.GUILD_POWERUPS(closure_0), query: obj, oldFormErrors: true };
+  obj = { include_ends_at: flag, rejectWithError: _require(507).rejectWithMigratedError() };
   const result = obj.httpGetWithCountryCodeQuery(obj);
   return result.then((body) => {
     let obj = {};
-    body = obj;
     obj = {};
     body = body.body;
     const item = body.forEach((sku) => {
@@ -135,15 +137,15 @@ export const fetchGuildBoostEntitlements = function fetchGuildBoostEntitlements(
       }
       obj[sku.sku_id] = sku;
     });
-    obj = { type: "GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS", guildId: body, unlockedPowerups: obj, unlockedGameServers: obj };
-    obj(closure_2[2]).dispatch(obj);
+    obj = { type: "GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS", guildId: obj, unlockedPowerups: obj, unlockedGameServers: obj };
+    outer1_1(outer1_2[2]).dispatch(obj);
   });
 };
 export const enablePowerupForGuild = function enablePowerupForGuild(arg0, arg1) {
-  const HTTP = require(dependencyMap[5]).HTTP;
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   return HTTP.post({ url: Endpoints.GUILD_POWERUP_TOGGLE(arg0, arg1), rejectWithError: true });
 };
 export const disablePowerupForGuild = function disablePowerupForGuild(arg0, arg1) {
-  const HTTP = require(dependencyMap[5]).HTTP;
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
   return HTTP.del({ url: Endpoints.GUILD_POWERUP_TOGGLE(arg0, arg1), rejectWithError: true });
 };

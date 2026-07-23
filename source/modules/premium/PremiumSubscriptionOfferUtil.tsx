@@ -1,53 +1,71 @@
-// Module ID: 7420
-// Function ID: 59631
+// Module ID: 7425
+// Function ID: 59665
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 3782, 1851, 6686, 7426, 7127, 566, 3712, 7128, 7374, 1881, 7427, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
 
-// Module 7420 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 7425 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import GuildFeatures from "GuildFeatures";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,13 +102,10 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: closure_6, PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: closure_7, PREMIUM_TIER_2_ANNUAL_V2_20_PERCENT_DISCOUNT_ID: closure_8, PREMIUM_TIER_2_ANNUAL_V2_30_PERCENT_DISCOUNT_ID: closure_9, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: closure_10, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_11, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: closure_12, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_13, PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: closure_15, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_16, PREMIUM_GROUP_30_PERCENT_3_MONTH_DISCOUNT_ID: closure_17 } = arg1(dependencyMap[3]));
+({ PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: closure_6, PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: closure_7, PREMIUM_TIER_2_ANNUAL_V2_20_PERCENT_DISCOUNT_ID: closure_8, PREMIUM_TIER_2_ANNUAL_V2_30_PERCENT_DISCOUNT_ID: closure_9, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: closure_10, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_11, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: closure_12, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_13, PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: closure_15, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_16, PREMIUM_GROUP_30_PERCENT_3_MONTH_DISCOUNT_ID: closure_17 } = GuildFeatures);
 function useHasDiscountApplied() {
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.getPremiumTypeSubscription());
   let prop;
   if (null != stateFromStores) {
     const metadata = stateFromStores.metadata;
@@ -101,25 +116,24 @@ function useHasDiscountApplied() {
   let tmp3 = null != prop;
   if (tmp3) {
     const _Date = Date;
-    const tmp6 = importDefault(dependencyMap[8]);
-    tmp3 = importDefault(dependencyMap[8])(Date.now()) <= importDefault(dependencyMap[8])(prop);
-    const tmp6Result = importDefault(dependencyMap[8])(Date.now());
+    const tmp6 = importDefault(3712);
+    tmp3 = importDefault(3712)(Date.now()) <= importDefault(3712)(prop);
+    const tmp6Result = importDefault(3712)(Date.now());
   }
   return tmp3;
 }
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/premium/PremiumSubscriptionOfferUtil.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/PremiumSubscriptionOfferUtil.tsx");
 
 export const useIsInPremiumOfferExperience = function useIsInPremiumOfferExperience() {
-  const premiumTrialOffer = arg1(dependencyMap[4]).usePremiumTrialOffer();
-  const obj = arg1(dependencyMap[4]);
-  const hasActiveTrial = arg1(dependencyMap[5]).useHasActiveTrial();
-  const obj2 = arg1(dependencyMap[5]);
-  const premiumDiscountOffer = arg1(dependencyMap[6]).usePremiumDiscountOffer();
-  const obj3 = arg1(dependencyMap[6]);
-  const premiumGroupDiscountOffer = arg1(dependencyMap[6]).usePremiumGroupDiscountOffer();
+  const premiumTrialOffer = require(6686) /* useGetTrialOffer */.usePremiumTrialOffer();
+  const obj = require(6686) /* useGetTrialOffer */;
+  const hasActiveTrial = require(7426) /* useHasActiveTrial */.useHasActiveTrial();
+  const obj2 = require(7426) /* useHasActiveTrial */;
+  const premiumDiscountOffer = require(7127) /* useGetDiscountOffer */.usePremiumDiscountOffer();
+  const obj3 = require(7127) /* useGetDiscountOffer */;
+  const premiumGroupDiscountOffer = require(7127) /* useGetDiscountOffer */.usePremiumGroupDiscountOffer();
   let tmp6 = null != premiumTrialOffer;
-  const obj4 = arg1(dependencyMap[6]);
+  const obj4 = require(7127) /* useGetDiscountOffer */;
   if (!tmp6) {
     tmp6 = hasActiveTrial;
   }
@@ -136,9 +150,9 @@ export const useIsInPremiumOfferExperience = function useIsInPremiumOfferExperie
 };
 export { useHasDiscountApplied };
 export const useActiveDiscountInfo = function useActiveDiscountInfo() {
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getPremiumTypeSubscription());
   let active_discount_id;
   if (null != stateFromStores) {
     const metadata = stateFromStores.metadata;
@@ -152,54 +166,56 @@ export const useActiveDiscountInfo = function useActiveDiscountInfo() {
         if (closure_14 !== active_discount_id) {
           if (closure_15 !== active_discount_id) {
             if (closure_13 === active_discount_id) {
-              obj = { discountId: active_discount_id };
+              obj = { duration: 1, percentage: 40, discountId: active_discount_id };
               return obj;
             } else if (closure_6 === active_discount_id) {
-              obj = { discountId: active_discount_id };
+              obj = { duration: 1, percentage: 20, discountId: active_discount_id };
               return obj;
             } else if (closure_7 === active_discount_id) {
-              const obj1 = { discountId: active_discount_id };
+              const obj1 = { duration: 1, percentage: 25, discountId: active_discount_id };
               return obj1;
             } else if (closure_8 === active_discount_id) {
-              const obj2 = { "Null": null, "Null": "\u{1F595}", discountId: active_discount_id };
+              const obj2 = { duration: 12, percentage: 20, discountId: active_discount_id };
               return obj2;
             } else if (closure_9 === active_discount_id) {
-              const obj3 = { "Null": "<string:11497792>", "Null": "<string:1107361792>", discountId: active_discount_id };
+              const obj3 = { duration: 12, percentage: 30, discountId: active_discount_id };
               return obj3;
             } else if (closure_16 === active_discount_id) {
-              const obj4 = { discountId: active_discount_id };
+              const obj4 = { duration: 1, percentage: 40, discountId: active_discount_id };
               return obj4;
             } else if (closure_17 === active_discount_id) {
-              const obj5 = { "Null": "midroll", "Null": "min", discountId: active_discount_id };
+              const obj5 = { duration: 3, percentage: 30, discountId: active_discount_id };
               return obj5;
             }
           }
         }
       }
-      const obj6 = { "Null": "midroll", "Null": "min", discountId: active_discount_id };
+      const obj6 = { duration: 3, percentage: 30, discountId: active_discount_id };
       return obj6;
     }
   }
-  const obj7 = { "Null": -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037056361633470366, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009772994543110067, discountId: active_discount_id };
+  const obj7 = { duration: 1, percentage: 30, discountId: active_discount_id };
   return obj7;
 };
 export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscountOffer(arg0) {
+  let dependencyMap;
+  let require;
   let tmp4;
   let tmp6;
   let tmp7;
   let tmp9;
-  function onFetchComplete(closure_4, arg1) {
+  function onFetchComplete(result, arg1) {
     callback(true);
     tmp7(false);
   }
-  const tmp = importDefault(dependencyMap[9])(closure_10);
-  let tmp2 = importDefault(dependencyMap[9])(closure_11);
-  [tmp4, closure_0] = onFetchComplete(React.useState(false), 2);
+  const tmp = importDefault(7128)(closure_10);
+  let tmp2 = importDefault(7128)(closure_11);
+  [tmp4, require] = onFetchComplete(React.useState(false), 2);
   const tmp3 = onFetchComplete(React.useState(false), 2);
   [tmp6, tmp7] = onFetchComplete(React.useState(false), 2);
-  const importDefault = tmp7;
+  importDefault = tmp7;
   const tmp5 = onFetchComplete(React.useState(false), 2);
-  [tmp9, closure_2] = onFetchComplete(React.useState(null), 2);
+  [tmp9, dependencyMap] = onFetchComplete(React.useState(null), 2);
   if (null != tmp) {
     tmp2 = tmp;
   }
@@ -220,7 +236,7 @@ export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscount
     }
     if (!tmp12) {
       tmp7(true);
-      obj = arg1(dependencyMap[10]);
+      obj = require(7374) /* _fetchUserOffer */;
       const churnDiscountOffer = obj.fetchChurnDiscountOffer();
       churnDiscountOffer.then((arg0) => {
         callback2(arg0);
@@ -239,10 +255,10 @@ export const useFetchChurnUserDiscountOffer = function useFetchChurnUserDiscount
   const tmp8 = onFetchComplete(React.useState(null), 2);
 };
 export const useShouldFetchChurnOffer = function useShouldFetchChurnOffer() {
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.getPremiumTypeSubscription());
   let hasPremiumNitroMonthly = null !== stateFromStores;
-  const obj = arg1(dependencyMap[7]);
+  const obj = require(566) /* initialize */;
   if (hasPremiumNitroMonthly) {
     hasPremiumNitroMonthly = stateFromStores.hasPremiumNitroMonthly;
   }
@@ -262,7 +278,7 @@ export const renewalInvoiceChurnDiscountInfo = function renewalInvoiceChurnDisco
   if (!iter.done) {
     while (true) {
       let discounts = iter2.value.discounts;
-      found = discounts.find((type) => type.type === callback(closure_2[11]).InvoiceDiscountTypes.SUBSCRIPTION_PLAN);
+      found = discounts.find((type) => type.type === outer1_0(outer1_2[11]).InvoiceDiscountTypes.SUBSCRIPTION_PLAN);
       if (null != found) {
         let discount_id = found.discount_id;
         let tmp3 = closure_10;
@@ -289,5 +305,5 @@ export const renewalInvoiceChurnDiscountInfo = function renewalInvoiceChurnDisco
   return null;
 };
 export const useIsNUXEligible = function useIsNUXEligible() {
-  return arg1(dependencyMap[12]).useIsInReverseTrial();
+  return require(7427) /* useIsInReverseTrial */.useIsInReverseTrial();
 };

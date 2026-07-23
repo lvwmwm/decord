@@ -1,23 +1,25 @@
-// Module ID: 8469
-// Function ID: 67578
+// Module ID: 8475
+// Function ID: 67615
 // Name: useCanSendStageStartNotification
-// Dependencies: []
+// Dependencies: [4051, 3758, 482, 566, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 8469 (useCanSendStageStartNotification)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const Permissions = arg1(dependencyMap[2]).Permissions;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/stage_channels/LiveStageNotificationsUtils.tsx");
+// Module 8475 (useCanSendStageStartNotification)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { Permissions } from "sum";
+
+const require = arg1;
+const result = require("sum").fileFinishedImporting("modules/stage_channels/LiveStageNotificationsUtils.tsx");
 
 export const useCanSendStageStartNotification = function useCanSendStageStartNotification(first) {
-  const arg1 = first;
+  const _require = first;
   const items = [closure_3];
   const items1 = [first];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    let canResult = null != arg0;
+  return _require(566).useStateFromStores(items, () => {
+    let canResult = null != closure_0;
     if (canResult) {
-      canResult = closure_3.can(constants.MENTION_EVERYONE, arg0);
+      canResult = outer1_3.can(outer1_4.MENTION_EVERYONE, closure_0);
     }
     return canResult;
   }, items1);
@@ -27,10 +29,9 @@ export const useDefaultSendStartStageNotificationToggle = function useDefaultSen
   if (null != first) {
     guild_id = first.guild_id;
   }
-  const arg1 = guild_id;
-  const items = [closure_2];
+  const items = [_isNativeReflectConstruct];
   const items1 = [guild_id];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => memberCount.getMemberCount(guild_id), items1);
+  const stateFromStores = guild_id(566).useStateFromStores(items, () => outer1_2.getMemberCount(guild_id), items1);
   let tmp3 = null == first;
   if (!tmp3) {
     let tmp4 = null == stateFromStores;

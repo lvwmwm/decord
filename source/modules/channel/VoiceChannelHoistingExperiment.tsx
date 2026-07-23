@@ -1,15 +1,20 @@
-// Module ID: 15893
-// Function ID: 121712
-// Name: experiment
-// Dependencies: []
+// Module ID: 16010
+// Function ID: 123885
+// Name: items
+// Dependencies: [4045, 4042, 2]
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 15893 (experiment)
-const _module = require(dependencyMap[1]);
-const items = [{ config: { 1385720913: null, 1352505702: null } }, { config: { 1385720913: "<string:1040334421>", 1352505702: "<string:1040334338>" } }];
-const experiment = _module.createExperiment({ commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, defaultConfig: { 1385720913: true, 1352505702: true }, treatments: items });
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/channel/VoiceChannelHoistingExperiment.tsx");
+// Module 16010 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2025-12_voice_channel_hoisting", label: "Voice Channel Hoisting", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, defaultConfig: { enableWaveformIcon: false, enableHighlight: false } };
+obj = { id: 1, label: "Both waveform and highlight", config: { enableWaveformIcon: true, enableHighlight: true } };
+const items = [obj, ];
+const obj1 = { id: 2, label: "Waveform icon only", config: { enableWaveformIcon: true, enableHighlight: false } };
+items[1] = obj1;
+obj.treatments = items;
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/channel/VoiceChannelHoistingExperiment.tsx");
 
 export const VoiceChannelHoistingExperiment = experiment;
 export const useVoiceChannelHoistingExperiment = function useVoiceChannelHoistingExperiment(guildId, location) {

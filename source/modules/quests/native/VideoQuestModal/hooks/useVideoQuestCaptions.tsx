@@ -1,45 +1,47 @@
-// Module ID: 13928
-// Function ID: 105860
+// Module ID: 14042
+// Function ID: 108016
 // Name: useVideoQuestCaptions
-// Dependencies: []
+// Dependencies: [57, 31, 9458, 507, 14043, 2]
 // Exports: useVideoQuestCaptions
 
-// Module 13928 (useVideoQuestCaptions)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
+// Module 14042 (useVideoQuestCaptions)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
 let closure_4 = { NONE: "none", LOADING: "loading", SUCCESS: "success", ERROR: "error" };
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoQuestCaptions.tsx");
+const result = require("resolveAsset").fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoQuestCaptions.tsx");
 
 export const useVideoQuestCaptions = (quest) => {
+  let dependencyMap;
   let tmp4;
-  const questAsset = arg1(dependencyMap[2]).getQuestAsset(quest, arg1(dependencyMap[2]).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
-  let url;
+  const questAsset = url(9458).getQuestAsset(quest, url(9458).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
+  url = undefined;
   if (null != questAsset) {
     url = questAsset.url;
   }
-  const arg1 = url;
-  const obj = arg1(dependencyMap[2]);
-  [tmp4, closure_1] = callback(React.useState(constants.NONE), 2);
+  let obj = url(9458);
+  [tmp4, dependencyMap] = callback(React.useState(constants.NONE), 2);
   const captions = callback(React.useState(null), 2);
-  const callback = captions[1];
+  callback = captions[1];
   const items = [url];
   const effect = React.useEffect(() => {
     if (null != url) {
-      const HTTP = url(callback[3]).HTTP;
+      const HTTP = url(outer1_1[3]).HTTP;
       const obj = { url, rejectWithError: true };
       const value = HTTP.get(obj);
       value.then((text) => {
-        callback3(callback(callback2[4]).parseVtt(text.text).cues);
-        callback2(constants.SUCCESS);
+        outer1_2(url(outer2_1[4]).parseVtt(text.text).cues);
+        outer1_1(outer2_4.SUCCESS);
       }).catch(() => {
-        callback2(constants.ERROR);
+        outer1_1(outer2_4.ERROR);
       });
       const nextPromise = value.then((text) => {
-        callback3(callback(callback2[4]).parseVtt(text.text).cues);
-        callback2(constants.SUCCESS);
+        outer1_2(url(outer2_1[4]).parseVtt(text.text).cues);
+        outer1_1(outer2_4.SUCCESS);
       });
     } else {
-      callback(constants.NONE);
+      callback(outer1_4.NONE);
     }
   }, items);
   return { captions: captions[0], status };

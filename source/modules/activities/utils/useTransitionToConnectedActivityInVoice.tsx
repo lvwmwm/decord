@@ -1,37 +1,36 @@
-// Module ID: 15618
-// Function ID: 119251
+// Module ID: 15735
+// Function ID: 121424
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: []
+// Dependencies: [5, 31, 1348, 1906, 653, 3748, 10438, 10825, 10527, 1207, 2]
 // Exports: default
 
-// Module 15618 (useTransitionToConnectedActivityInVoice)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const ComponentActions = arg1(dependencyMap[4]).ComponentActions;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/activities/utils/useTransitionToConnectedActivityInVoice.tsx");
+// Module 15735 (useTransitionToConnectedActivityInVoice)
+import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { ComponentActions } from "ME";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/utils/useTransitionToConnectedActivityInVoice.tsx");
 
 export default function useTransitionToConnectedActivityInVoice(onTransition) {
   onTransition = onTransition.onTransition;
-  const arg1 = onTransition;
   const items = [onTransition];
   const effect = React.useEffect(() => {
     function handler() {
       return _handler(...arguments);
     }
-    const onTransition = handler;
     function _handler() {
       // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback(tmp);
-      const _handler = obj;
+      const obj = outer2_3(tmp);
       return obj(...arguments);
     }
-    const ComponentDispatch = onTransition(closure_2[9]).ComponentDispatch;
-    const subscription = ComponentDispatch.subscribe(constants.OPEN_EMBEDDED_ACTIVITY, handler);
+    let ComponentDispatch = onTransition(outer1_2[9]).ComponentDispatch;
+    const subscription = ComponentDispatch.subscribe(outer1_7.OPEN_EMBEDDED_ACTIVITY, handler);
     return () => {
-      const ComponentDispatch = handler(closure_2[9]).ComponentDispatch;
-      ComponentDispatch.unsubscribe(constants.OPEN_EMBEDDED_ACTIVITY, handler);
+      const ComponentDispatch = onTransition(outer2_2[9]).ComponentDispatch;
+      ComponentDispatch.unsubscribe(outer2_7.OPEN_EMBEDDED_ACTIVITY, handler);
     };
   }, items);
 };

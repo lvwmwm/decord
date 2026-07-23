@@ -1,9 +1,20 @@
-// Module ID: 16110
-// Function ID: 123934
+// Module ID: 16227
+// Function ID: 126107
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 7, 6, 1858, 653, 1184, 3712, 21, 2]
 
-// Module 16110 (_isNativeReflectConstruct)
+// Module 16227 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importDefaultResult from "isNonEmptyString";
+import closure_6 from "ME";
+import ME from "ME";
+import importDefaultResult1 from "Record";
+
+let closure_7;
+let closure_8;
+let closure_9;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -81,9 +92,9 @@ function getTargetType(arg0) {
                               CHANNEL = constants.GUILD;
                             } else {
                               const _HermesInternal = HermesInternal;
-                              importDefault(dependencyMap[7]).captureMessage("Unknown target type for: " + arg0);
+                              importDefault(1184).captureMessage("Unknown target type for: " + arg0);
                               CHANNEL = constants.UNKNOWN;
-                              const obj = importDefault(dependencyMap[7]);
+                              const obj = importDefault(1184);
                             }
                           }
                         }
@@ -265,50 +276,43 @@ function getActionType(arg0) {
   }
   return constants3.CREATE;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const importDefaultResult = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const importDefaultResult1 = importDefault(dependencyMap[5]);
-({ AuditLogTargetTypes: closure_7, AuditLogActions: closure_8, AuditLogActionTypes: closure_9 } = arg1(dependencyMap[6]));
+({ AuditLogTargetTypes: closure_7, AuditLogActions: closure_8, AuditLogActionTypes: closure_9 } = ME);
 class AuditLogChange {
   constructor(arg0, arg1, arg2) {
-    tmp = closure_6(this, AuditLogChange);
+    tmp = c6(this, AuditLogChange);
     this.key = global;
     this.oldValue = arg1;
     this.newValue = importDefault;
     return;
   }
 }
-const tmp4 = arg1(dependencyMap[6]);
 const importDefaultResultResult = importDefaultResult(AuditLogChange);
-const tmp6 = (importDefaultResult1) => {
+const tmp6 = ((importDefaultResult1) => {
   class AuditLogRecord {
     constructor(arg0) {
       self = this;
-      tmp = closure_6(this, AuditLogRecord);
-      obj = closure_3(AuditLogRecord);
-      tmp2 = closure_2;
-      if (closure_10()) {
+      tmp = outer1_6(this, AuditLogRecord);
+      obj = outer1_3(AuditLogRecord);
+      tmp2 = outer1_2;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, [], closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, [], outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
       ({ id: tmp6.id, action: tmp6.action } = importDefaultResult1);
-      tmp2Result.actionType = closure_12(tmp2Result.action);
+      tmp2Result.actionType = outer1_12(tmp2Result.action);
       ({ targetId: tmp6.targetId, timestampStart } = importDefaultResult1);
       if (null == timestampStart) {
         tmp7 = AuditLogRecord;
-        tmp8 = closure_1;
+        tmp8 = outer1_1;
         num = 8;
         num2 = 9;
-        tmp9 = AuditLogRecord(closure_1[8]);
-        obj2 = AuditLogRecord(closure_1[9]);
+        tmp9 = AuditLogRecord(outer1_1[8]);
+        obj2 = AuditLogRecord(outer1_1[9]);
         timestampStart = tmp9(obj2.extractTimestamp(tmp2Result.id));
       }
       tmp2Result.timestampStart = timestampStart;
@@ -322,7 +326,7 @@ const tmp6 = (importDefaultResult1) => {
         changes = [];
       }
       tmp2Result.changes = changes;
-      tmp2Result.targetType = closure_11(tmp2Result.action);
+      tmp2Result.targetType = outer1_11(tmp2Result.action);
       options = importDefaultResult1.options;
       if (null == options) {
         options = {};
@@ -342,11 +346,10 @@ const tmp6 = (importDefaultResult1) => {
       return tmp2Result;
     }
   }
-  const importDefault = AuditLogRecord;
   callback(AuditLogRecord, importDefaultResult1);
   return importDefaultResult(AuditLogRecord);
-}(importDefaultResult1);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("records/AuditLogRecord.tsx");
+})(importDefaultResult1);
+let result = require("_inherits").fileFinishedImporting("records/AuditLogRecord.tsx");
 
 export default tmp6;
 export { getTargetType };

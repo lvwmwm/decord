@@ -1,21 +1,22 @@
-// Module ID: 15964
-// Function ID: 122446
-// Dependencies: []
+// Module ID: 16081
+// Function ID: 124619
+// Dependencies: [31, 33, 7794, 5503, 9094, 2]
 
-// Module 15964
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+// Module 16081
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo((type) => {
   type = type.type;
-  const arg1 = type;
   const options = type.options;
-  const dependencyMap = options;
-  const items = [options];
-  const memo = importAllResult.useMemo(() => {
+  const maxValues = type.maxValues;
+  let items = [options];
+  const memo = maxValues.useMemo(() => {
     const found = options.filter((arg0) => arg0.default);
     return found.map((value) => value.value);
   }, items);
-  let obj = arg1(dependencyMap[2]);
+  let obj = type(options[2]);
   let tmp;
   if (memo.length > 0) {
     obj = { type, values: memo };
@@ -23,10 +24,9 @@ const memoResult = importAllResult.memo((type) => {
   }
   const componentState = obj.useComponentState(type, tmp);
   const state = componentState.state;
-  const jsx = state;
   const executeStateUpdate = componentState.executeStateUpdate;
   const items1 = [state, type];
-  let closure_5 = importAllResult.useMemo(() => {
+  let closure_5 = maxValues.useMemo(() => {
     let type;
     if (null != state) {
       type = state.type;
@@ -42,7 +42,7 @@ const memoResult = importAllResult.memo((type) => {
     hasIcons: false,
     children: options.map((label) => {
       const hasItem = closure_5.includes(label.value);
-      const obj = {
+      let obj = {
         label: label.label,
         subLabel: label.description,
         checked: hasItem,
@@ -50,14 +50,14 @@ const memoResult = importAllResult.memo((type) => {
           if (arg0) {
             const items = [];
             const arraySpreadResult = HermesBuiltin.arraySpread(arr, 0);
-            items[arraySpreadResult] = value;
+            items[arraySpreadResult] = closure_0;
             const sum = arraySpreadResult + 1;
             let found = items;
           } else {
-            found = arr.filter((arg0) => arg0 !== closure_0);
+            found = arr.filter((arg0) => arg0 !== outer1_0);
           }
           const obj = { type: value, values: found };
-          callback(obj);
+          outer1_4(obj);
         }
       };
       const type = label.value;
@@ -69,8 +69,8 @@ const memoResult = importAllResult.memo((type) => {
       return state(type(options[4]).TableCheckboxRow, obj, label.value);
     })
   };
-  return jsx(arg1(dependencyMap[3]).TableRowGroup, obj);
+  return state(type(options[3]).TableRowGroup, obj);
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/interaction_components/native/actions/CheckboxGroupActionComponent.tsx");
+const result = require("isInteractionComponent").fileFinishedImporting("modules/interaction_components/native/actions/CheckboxGroupActionComponent.tsx");
 
 export default memoResult;

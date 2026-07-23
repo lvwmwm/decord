@@ -1,13 +1,13 @@
-// Module ID: 9416
-// Function ID: 73294
+// Module ID: 9423
+// Function ID: 73335
 // Name: cheapWorkletShallowEqual
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 9416 (cheapWorkletShallowEqual)
+// Module 9423 (cheapWorkletShallowEqual)
 let closure_0 = { code: "function cheapWorkletShallowEqual_cheapWorkletShallowEqualTsx1(a,b){if(a===b)return true;if(a==null||b==null)return false;for(const key in a){if(a[key]!==b[key])return false;}return true;}" };
 let closure_1 = { code: "function cheapWorkletArrayShallowEqual_cheapWorkletShallowEqualTsx2(a,b){if(a===b)return true;if(a==null||b==null)return false;if(a.length!==b.length)return false;for(let i=0;i<a.length;i++){if(a[i]!==b[i])return false;}return true;}" };
-const tmp2 = () => {
-  function cheapWorkletShallowEqual(safeAreaState, safeAreaState2) {
+const tmp2 = (() => {
+  export function cheapWorkletShallowEqual(safeAreaState, safeAreaState2) {
     if (safeAreaState === safeAreaState2) {
       return true;
     } else {
@@ -32,13 +32,9 @@ const tmp2 = () => {
   cheapWorkletShallowEqual.__workletHash = 760221372005;
   cheapWorkletShallowEqual.__initData = closure_0;
   return cheapWorkletShallowEqual;
-}();
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/reanimated/native/cheapWorkletShallowEqual.tsx");
-
-export const cheapWorkletShallowEqual = tmp2;
-export const cheapWorkletArrayShallowEqual = () => {
-  function cheapWorkletArrayShallowEqual(arg0, arg1) {
+})();
+let tmp3 = (() => {
+  export function cheapWorkletArrayShallowEqual(arg0, arg1) {
     if (arg0 === arg1) {
       return true;
     } else {
@@ -65,4 +61,5 @@ export const cheapWorkletArrayShallowEqual = () => {
   cheapWorkletArrayShallowEqual.__workletHash = 3679738010781;
   cheapWorkletArrayShallowEqual.__initData = closure_1;
   return cheapWorkletArrayShallowEqual;
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/reanimated/native/cheapWorkletShallowEqual.tsx");

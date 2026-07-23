@@ -1,119 +1,125 @@
-// Module ID: 13665
-// Function ID: 103488
+// Module ID: 13779
+// Function ID: 105644
 // Name: FamilyCenterTeenQRCodeButtonInner
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 6769, 6770, 653, 4344, 33, 4130, 689, 7123, 3830, 1212, 11061, 624, 13780, 675, 13781, 4098, 13782, 1934, 4541, 4543, 12227, 2198, 13785, 4337, 1443, 11058, 1553, 4675, 12875, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 13665 (FamilyCenterTeenQRCodeButtonInner)
+// Module 13779 (FamilyCenterTeenQRCodeButtonInner)
+import DCDQRScanner from "DCDQRScanner";
+import { View } from "isOriginalContentTypeDifferent";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import items from "items";
+import { AnalyticEvents } from "ME";
+import { NativePermissionTypes } from "NativePermissionStatus";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function FamilyCenterTeenQRCodeButtonInner() {
-  const callback = React.useCallback(() => {
+  const callback = stateFromStores1.useCallback(() => {
     const intl = getLinkCode(stateFromStores[12]).intl;
     getLinkCode(stateFromStores[11]).presentFailedToast(intl.string(getLinkCode(stateFromStores[12]).t.R0RpRX));
   }, []);
-  let obj = arg1(dependencyMap[13]);
-  const getLinkCode = obj.useFamilyCenterActions().getLinkCode;
-  const arg1 = getLinkCode;
-  let obj1 = arg1(dependencyMap[13]);
+  let obj = getLinkCode(stateFromStores[13]);
+  getLinkCode = obj.useFamilyCenterActions().getLinkCode;
+  let obj1 = getLinkCode(stateFromStores[13]);
   const getLinkCode2 = obj1.useFamilyCenterActions({ onError: callback }).getLinkCode;
-  const importDefault = getLinkCode2;
-  const tmp = callback3();
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[14]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const dependencyMap = stateFromStores;
-  const obj3 = arg1(dependencyMap[14]);
+  let tmp = _createForOfIteratorHelperLoose();
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = getLinkCode(stateFromStores[14]).useStateFromStores(items, () => outer1_5.getCurrentUser());
+  let obj3 = getLinkCode(stateFromStores[14]);
   const items1 = [closure_6];
-  const stateFromStores1 = arg1(dependencyMap[14]).useStateFromStores(items1, () => store.getLinkCode());
-  const React = stateFromStores1;
-  const obj4 = arg1(dependencyMap[14]);
+  stateFromStores1 = getLinkCode(stateFromStores[14]).useStateFromStores(items1, () => outer1_6.getLinkCode());
+  const obj4 = getLinkCode(stateFromStores[14]);
   const items2 = [closure_6];
-  const stateFromStores2 = arg1(dependencyMap[14]).useStateFromStores(items2, () => store.getLinkCodeExpiresAt());
-  const View = stateFromStores2;
-  const obj5 = arg1(dependencyMap[14]);
-  const userQRLinkUrl = arg1(dependencyMap[10]).useUserQRLinkUrl();
-  const effect = React.useEffect(() => {
+  const stateFromStores2 = getLinkCode(stateFromStores[14]).useStateFromStores(items2, () => outer1_6.getLinkCodeExpiresAt());
+  const obj5 = getLinkCode(stateFromStores[14]);
+  const userQRLinkUrl = getLinkCode(stateFromStores[10]).useUserQRLinkUrl();
+  const effect = stateFromStores1.useEffect(() => {
     getLinkCode();
   }, []);
-  importDefault(dependencyMap[15])(stateFromStores2, getLinkCode);
+  getLinkCode2(stateFromStores[15])(stateFromStores2, getLinkCode);
   const items3 = [stateFromStores, stateFromStores1];
   const items4 = [stateFromStores1, stateFromStores2, getLinkCode2];
-  const callback1 = React.useCallback(() => {
+  const callback1 = stateFromStores1.useCallback(() => {
     let tmp = null != stateFromStores;
     if (tmp) {
       tmp = null != stateFromStores1;
     }
     if (tmp) {
       let obj = getLinkCode2(stateFromStores[16]);
-      obj = { action: closure_9.ShareLink };
-      obj.track(constants.FAMILY_CENTER_ACTION, obj);
+      obj = { action: outer1_9.ShareLink };
+      obj.track(outer1_10.FAMILY_CENTER_ACTION, obj);
       const result = getLinkCode(stateFromStores[17]).shareGuardianConnectLink(stateFromStores, stateFromStores1);
       const obj3 = getLinkCode(stateFromStores[17]);
     }
   }, items3);
-  const callback2 = React.useCallback(() => {
+  const callback2 = stateFromStores1.useCallback(() => {
     let tmp = null != stateFromStores1;
     if (tmp) {
       tmp = null != stateFromStores2;
     }
     if (tmp) {
       let obj = getLinkCode2(stateFromStores[16]);
-      obj = { action: closure_9.ShowQRCodeModal };
-      obj.track(constants.FAMILY_CENTER_ACTION, obj);
+      obj = { action: outer1_9.ShowQRCodeModal };
+      obj.track(outer1_10.FAMILY_CENTER_ACTION, obj);
       obj = { linkCode: stateFromStores1, expiresAt: stateFromStores2, onRefresh: getLinkCode2 };
-      getLinkCode2(stateFromStores[18]).openLazy(getLinkCode(stateFromStores[20])(stateFromStores[19], stateFromStores.paths), closure_7, obj);
+      getLinkCode2(stateFromStores[18]).openLazy(getLinkCode(stateFromStores[20])(stateFromStores[19], stateFromStores.paths), outer1_7, obj);
       const obj3 = getLinkCode2(stateFromStores[18]);
     }
   }, items4);
-  obj = { direction: "horizontal", spacing: importDefault(dependencyMap[9]).space.PX_8, style: tmp.container };
-  obj = {};
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.text = intl.string(arg1(dependencyMap[12]).t.Ej3B3Y);
+  obj = { direction: "horizontal", spacing: getLinkCode2(stateFromStores[9]).space.PX_8, style: tmp.container };
+  obj = { grow: true, shrink: true, size: "md", variant: "primary" };
+  let intl = getLinkCode(stateFromStores[12]).intl;
+  obj.text = intl.string(getLinkCode(stateFromStores[12]).t.Ej3B3Y);
   obj.disabled = null == userQRLinkUrl || null == stateFromStores1 || null == stateFromStores2;
   obj.onPress = callback1;
-  obj.icon = callback(arg1(dependencyMap[23]).ShareIcon, { "Bool(false)": "%Float64Array%", "Bool(false)": "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" });
+  obj.icon = callback(getLinkCode(stateFromStores[23]).ShareIcon, { size: "sm", color: "control-primary-text-default" });
   obj.iconPosition = "start";
-  const items5 = [callback(arg1(dependencyMap[22]).Button, obj), ];
-  obj1 = {};
-  const intl2 = arg1(dependencyMap[12]).intl;
-  obj1.text = intl2.string(importDefault(dependencyMap[24]).wd4yrz);
+  const items5 = [callback(getLinkCode(stateFromStores[22]).Button, obj), ];
+  obj1 = { grow: true, shrink: true, size: "md", variant: "secondary" };
+  const intl2 = getLinkCode(stateFromStores[12]).intl;
+  obj1.text = intl2.string(getLinkCode2(stateFromStores[24]).wd4yrz);
   obj1.disabled = null == userQRLinkUrl || null == stateFromStores1 || null == stateFromStores2;
   obj1.onPress = callback2;
-  obj1.icon = callback(arg1(dependencyMap[25]).QrCodeIcon, { "Bool(false)": 1, "Bool(false)": 12 });
+  obj1.icon = callback(getLinkCode(stateFromStores[25]).QrCodeIcon, { size: "sm", color: "control-secondary-text-default" });
   obj1.iconPosition = "start";
-  items5[1] = callback(arg1(dependencyMap[22]).Button, obj1);
+  items5[1] = callback(getLinkCode(stateFromStores[22]).Button, obj1);
   obj.children = items5;
-  return callback2(arg1(dependencyMap[21]).Stack, obj);
+  return callback2(getLinkCode(stateFromStores[21]).Stack, obj);
 }
 class FamilyCenterBannerButton {
   constructor(arg0) {
     ({ onPress, text, loading } = global);
-    tmp = closure_15();
+    tmp = c15();
     obj = { style: tmp.button };
-    obj = { text, onPress, loading };
-    obj1 = { style: tmp.art };
-    obj.icon = jsx(arg1(dependencyMap[25]).QrCodeIcon, obj1);
+    obj = { grow: true, shrink: true, size: "md", variant: "primary" };
+    obj.text = text;
+    obj.onPress = onPress;
+    obj.loading = loading;
+    obj1 = { style: null, size: "custom", color: "white" };
+    obj1.style = tmp.art;
+    obj.icon = jsx(require("QrCodeIcon").QrCodeIcon, obj1);
     obj.iconPosition = "start";
-    obj.children = jsx(arg1(dependencyMap[22]).Button, obj);
+    obj.children = jsx(require("Button").Button, obj);
     return jsx(View, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ CONNECT_GUARDIAN_BOTTOM_SHEET_KEY: closure_7, FAMILY_CENTER_LINK_REQUEST_REGEX: closure_8, FamilyCenterAction: closure_9 } = arg1(dependencyMap[4]));
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-const NativePermissionTypes = arg1(dependencyMap[6]).NativePermissionTypes;
-const tmp2 = arg1(dependencyMap[4]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { marginTop: importDefault(dependencyMap[9]).space.PX_16 };
-obj.container = obj;
-let closure_14 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[7]);
-let closure_15 = arg1(dependencyMap[8]).createStyles({ button: {}, art: { -9223372036854775808: 0, 9223372036854775807: 1, 0: 3 } });
-const obj4 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterBannerButton.tsx");
+({ CONNECT_GUARDIAN_BOTTOM_SHEET_KEY: closure_7, FAMILY_CENTER_LINK_REQUEST_REGEX: closure_8, FamilyCenterAction: closure_9 } = items);
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let closure_15 = _createForOfIteratorHelperLoose.createStyles({ button: { height: 50, width: "100%", marginTop: 16 }, art: { width: 18, height: 18, marginRight: 6 } });
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/native/FamilyCenterBannerButton.tsx");
 
 export default FamilyCenterBannerButton;
 export const FamilyCenterTeenQRCodeButton = function FamilyCenterTeenQRCodeButton() {
@@ -124,12 +130,12 @@ export const FamilyCenterTeenQRCodeButton = function FamilyCenterTeenQRCodeButto
   return tmp;
 };
 export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeButton() {
-  function handleQrCodeScanSucess(closure_0) {
+  function handleQrCodeScanSucess(outer1_0) {
     let hostname;
     let pathname;
-    let arr = callback(closure_2[26]);
+    let arr = outer1_1(outer1_2[26]);
     arr = arr.pop();
-    let toURLSafeResult = callback(closure_2[27]).toURLSafe(closure_0);
+    let toURLSafeResult = outer1_1(outer1_2[27]).toURLSafe(outer1_0);
     if (null == toURLSafeResult) {
       toURLSafeResult = {};
     }
@@ -140,36 +146,36 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
       if (null != pathname) {
         tmp2 = null;
         if (obj3.isDiscordHostname(hostname)) {
-          if (null !== pathname.match(closure_8)) {
-            const result = handleQrCodeScanSucess(closure_2[28]).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
-            const obj4 = handleQrCodeScanSucess(closure_2[28]);
+          if (null !== pathname.match(outer1_8)) {
+            const result = handleQrCodeScanSucess(outer1_2[28]).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
+            const obj4 = handleQrCodeScanSucess(outer1_2[28]);
           }
           tmp2 = tmp6;
         }
-        const obj3 = callback(closure_2[27]);
+        obj3 = outer1_1(outer1_2[27]);
       }
     }
     return tmp2;
   }
-  let obj = handleQrCodeScanSucess(dependencyMap[10]);
+  let obj = handleQrCodeScanSucess(7123);
   if (obj.useHasMaxConnections()) {
     return null;
   } else {
     obj = {};
-    const intl = handleQrCodeScanSucess(dependencyMap[12]).intl;
-    obj.text = intl.string(importDefault(dependencyMap[24]).z4a9HP);
+    const intl = handleQrCodeScanSucess(1212).intl;
+    obj.text = intl.string(importDefault(2198).z4a9HP);
     obj.onPress = function onPress() {
-      let obj = callback(closure_2[16]);
-      obj = { action: ScanQRCodeButton.ScanQRCodeButton };
-      obj.track(constants.FAMILY_CENTER_ACTION, obj);
-      const obj3 = handleQrCodeScanSucess(closure_2[29]);
-      const tmp3 = handleQrCodeScanSucess(closure_2[29]).isMetaQuest() ? closure_11.HEADSET_CAMERA : closure_11.CAMERA;
-      const permission = callback(closure_2[30]).requestPermission(tmp3);
+      let obj = outer1_1(outer1_2[16]);
+      obj = { action: outer1_9.ScanQRCodeButton };
+      obj.track(outer1_10.FAMILY_CENTER_ACTION, obj);
+      const obj3 = handleQrCodeScanSucess(outer1_2[29]);
+      const tmp3 = handleQrCodeScanSucess(outer1_2[29]).isMetaQuest() ? outer1_11.HEADSET_CAMERA : outer1_11.CAMERA;
+      const permission = outer1_1(outer1_2[30]).requestPermission(tmp3);
       permission.then((arg0) => {
         if (arg0) {
-          let obj = callback2(paths[26]);
-          obj = { showHelp: false, onScanSuccess: callback };
-          obj.pushLazy(callback(paths[20])(paths[31], paths.paths), obj);
+          let obj = outer2_1(outer2_2[26]);
+          obj = { showHelp: false, onScanSuccess: outer1_0 };
+          obj.pushLazy(handleQrCodeScanSucess(outer2_2[20])(outer2_2[31], outer2_2.paths), obj);
         }
       });
     };

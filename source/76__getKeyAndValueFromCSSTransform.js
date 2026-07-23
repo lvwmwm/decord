@@ -1,11 +1,12 @@
 // Module ID: 76
 // Function ID: 1470
 // Name: _getKeyAndValueFromCSSTransform
-// Dependencies: []
+// Dependencies: [77]
 // Exports: default
 
 // Module 76 (_getKeyAndValueFromCSSTransform)
-let closure_0 = importDefault(dependencyMap[0]);
+import _defineProperty from "_defineProperty";
+
 function _getKeyAndValueFromCSSTransform(key, str) {
   const regExp = new RegExp(/([+-]?\d+(\.\d+)?)([a-zA-Z]+|%)?/g);
   if ("matrix" === key) {

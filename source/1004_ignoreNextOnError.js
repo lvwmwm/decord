@@ -1,7 +1,7 @@
 // Module ID: 1004
-// Function ID: 10969
+// Function ID: 10970
 // Name: ignoreNextOnError
-// Dependencies: []
+// Dependencies: [794]
 // Exports: getHttpRequestData, shouldIgnoreOnError
 
 // Module 1004 (ignoreNextOnError)
@@ -12,29 +12,28 @@ function ignoreNextOnError() {
   });
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_2 = 0;
+let c2 = 0;
 function wrap(arg0) {
-  const require = arg0;
+  const _require = arg0;
   if (arguments.length > 1) {
-    let closure_1 = {};
+    const dependencyMap = {};
     if ("function" === typeof tmp) {
       const __sentry_wrapped__ = tmp.__sentry_wrapped__;
       if (__sentry_wrapped__) {
         return "function" === typeof tmp6 ? __sentry_wrapped__ : arg0;
       } else {
-        let obj = require(closure_1[0]);
+        let obj = _require(794);
         if (obj.getOriginalFunction(tmp)) {
           return tmp;
         } else {
           function sentryWrapped() {
             const length = arguments.length;
             const array = new Array(length);
-            const arg0 = array;
             for (let num = 0; num < length; num = num + 1) {
               let tmp3 = array;
               arr[num] = arguments[num];
             }
-            return arg0.apply(this, array.map((arg0) => callback(arg0, closure_1)));
+            return array.apply(this, array.map((arg0) => outer2_4(arg0, outer1_1)));
           }
           for (const key10030 in tmp) {
             let tmp28 = key10030;
@@ -48,18 +47,18 @@ function wrap(arg0) {
               let tmp13 = tmp27;
               let tmp14 = arg0;
               sentryWrapped[tmp28] = tmp[tmp28];
-              // continue
+              continue;
             }
             continue;
           }
           while (true) {
-            let tmp15 = require;
-            let tmp16 = closure_1;
-            let obj2 = require(closure_1[0]);
+            let tmp15 = _require;
+            let tmp16 = dependencyMap;
+            let obj2 = _require(794);
             let tmp17 = sentryWrapped;
             let tmp18 = arg0;
             let markFunctionWrappedResult = obj2.markFunctionWrapped(sentryWrapped, tmp);
-            let obj3 = require(closure_1[0]);
+            let obj3 = _require(794);
             let str2 = "__sentry_wrapped__";
             let result = obj3.addNonEnumerableProperty(tmp, "__sentry_wrapped__", sentryWrapped);
             let tmp21 = globalThis;
@@ -73,11 +72,11 @@ function wrap(arg0) {
               let tmp23 = sentryWrapped;
               obj = {
                 get() {
-                              return arg0.name;
+                              return name.name;
                             }
               };
               let definePropertyResult = Object.defineProperty(sentryWrapped, "name", obj);
-              // break
+              break;
             }
           }
         }
@@ -88,13 +87,13 @@ function wrap(arg0) {
   }
 }
 
-export const WINDOW = require(dependencyMap[0]).GLOBAL_OBJ;
+export const WINDOW = require("registerSpanErrorInstrumentation").GLOBAL_OBJ;
 export const getHttpRequestData = function getHttpRequestData() {
-  let obj = require(dependencyMap[0]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   const locationHref = obj.getLocationHref();
-  const referrer = require(dependencyMap[0]).GLOBAL_OBJ.document || {}.referrer;
-  const tmp2 = require(dependencyMap[0]).GLOBAL_OBJ.document || {};
-  const userAgent = require(dependencyMap[0]).GLOBAL_OBJ.navigator || {}.userAgent;
+  const referrer = require(794) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.document || {}.referrer;
+  const tmp2 = require(794) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.document || {};
+  const userAgent = require(794) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.navigator || {}.userAgent;
   obj = { url: locationHref };
   let tmp4 = referrer;
   if (referrer) {
@@ -103,7 +102,7 @@ export const getHttpRequestData = function getHttpRequestData() {
   }
   let tmp5 = userAgent;
   if (userAgent) {
-    const obj1 = { User-Agent: userAgent };
+    const obj1 = { "User-Agent": userAgent };
     tmp5 = obj1;
   }
   obj.headers = Object.assign({}, tmp4, tmp5);
@@ -111,6 +110,6 @@ export const getHttpRequestData = function getHttpRequestData() {
 };
 export { ignoreNextOnError };
 export const shouldIgnoreOnError = function shouldIgnoreOnError() {
-  return closure_2 > 0;
+  return c2 > 0;
 };
 export { wrap };

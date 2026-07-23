@@ -1,35 +1,37 @@
-// Module ID: 8976
-// Function ID: 70757
+// Module ID: 8983
+// Function ID: 70798
 // Name: PlayStationLinkError
-// Dependencies: []
+// Dependencies: [31, 8973, 653, 33, 1456, 8984, 1212, 8985, 2]
 // Exports: PlayStationLinkError
 
-// Module 8976 (PlayStationLinkError)
-importAll(dependencyMap[0]);
-let closure_2 = arg1(dependencyMap[1]).PlayStationLinkModalScenes;
-const AbortCodes = arg1(dependencyMap[2]).AbortCodes;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkError.tsx");
+// Module 8983 (PlayStationLinkError)
+import "result";
+import { PlayStationLinkModalScenes as closure_2 } from "PlayStationLinkModalScenes";
+import { AbortCodes } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkError.tsx");
 
 export const PlayStationLinkError = function PlayStationLinkError(arg0) {
   let errorCode;
   let onClose;
   ({ onClose, errorCode } = arg0);
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(1456) /* useNavigation */;
   const navigation = obj.useNavigation();
-  const connectRetry = arg1(dependencyMap[5]).useConnectRetry(navigation, constants.PRE_CONNECT);
+  const connectRetry = require(8984) /* useConnectRetry */.useConnectRetry(navigation, constants.PRE_CONNECT);
   if (errorCode === AbortCodes.UNDER_MINIMUM_AGE) {
-    const intl2 = arg1(dependencyMap[6]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[6]).t.3dIn2A);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t["3dIn2A"]);
   } else {
-    const intl = arg1(dependencyMap[6]).intl;
-    stringResult = intl.string(arg1(dependencyMap[6]).t.qE9nqE);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1212) /* getSystemLocale */.t.qE9nqE);
   }
   obj = {};
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj.title = intl3.string(arg1(dependencyMap[6]).t.eY3qHd);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl3.string(require(1212) /* getSystemLocale */.t.eY3qHd);
   obj.body = stringResult;
   obj.onClose = onClose;
   obj.onRetry = connectRetry;
-  return jsx(arg1(dependencyMap[7]).TwoWayLinkError, obj);
+  return jsx(require(8985) /* TwoWayLinkError */.TwoWayLinkError, {});
 };

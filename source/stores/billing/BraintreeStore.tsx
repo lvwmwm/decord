@@ -1,9 +1,22 @@
-// Module ID: 3791
-// Function ID: 29561
+// Module ID: 3793
+// Function ID: 29566
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 477, 507, 566, 686, 2]
 
-// Module 3791 (_isNativeReflectConstruct)
+// Module 3793 (_isNativeReflectConstruct)
+import closure_2 from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import ME from "ME";
+import set from "set";
+import set from "_possibleConstructorReturn";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +26,44 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-({ Endpoints: closure_7, PaymentGateways: closure_8, PaymentSourceTypes: closure_9 } = arg1(dependencyMap[5]));
-let closure_12 = null;
-let closure_13 = null;
-let closure_14 = null;
-let obj = arg1(dependencyMap[6]);
-if (obj.isDesktop()) {
-  const _window = window;
-  obj = {
+({ Endpoints: closure_7, PaymentGateways: closure_8, PaymentSourceTypes: closure_9 } = ME);
+let c12 = null;
+let c13 = null;
+let c14 = null;
+if (set.isDesktop()) {
+  let _window = window;
+  set = {
     getReturnUrlPrefix() {
         if (null == closure_10) {
           const _Error = Error;
           const error = new Error("popupBridgeState is unset");
           throw error;
         } else {
-          const aPIBaseURL = arg1(dependencyMap[7]).getAPIBaseURL();
+          const aPIBaseURL = require(507) /* _isNativeReflectConstruct */.getAPIBaseURL();
           return aPIBaseURL + closure_7.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(constants.BRAINTREE, closure_10);
         }
       },
     open(arg0) {
+        let closure_11 = arg0;
         window.open(arg0);
         tmp3.emitChange();
       }
   };
-  window.popupBridge = obj;
+  window.popupBridge = set;
 }
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class BraintreeStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, BraintreeStore);
-      obj = closure_5(BraintreeStore);
-      tmp2 = closure_4;
-      if (closure_16()) {
+      tmp = outer1_2(this, BraintreeStore);
+      obj = outer1_5(BraintreeStore);
+      tmp2 = outer1_4;
+      if (outer1_16()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -64,39 +72,38 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = BraintreeStore;
   callback2(BraintreeStore, Store);
   let obj = {
     key: "getClient",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getPayPalClient",
     value() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[1] = obj;
   obj = {
     key: "getVenmoClient",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getLastURL",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   return callback(BraintreeStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "BraintreeStore";
-obj = {
+set = {
   BRAINTREE_CREATE_CLIENT_SUCCESS: function handleBraintreeCreateClientSuccess(client) {
     client = client.client;
   },
@@ -120,17 +127,17 @@ obj = {
     }
   },
   BRAINTREE_TEARDOWN_PAYPAL_CLIENT: function handleBraintreeTeardownPayPalClient() {
-    let closure_13 = null;
+    let c13 = null;
   },
   BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS: function handleBraintreeCreateVenmoClientSuccess(venmoClient) {
     venmoClient = venmoClient.venmoClient;
   },
   BRAINTREE_TEARDOWN_VENMO_CLIENT: function handleBraintreeTeardownVenmoClient() {
-    let closure_14 = null;
+    let c14 = null;
   }
 };
-tmp3 = new tmp3(importDefault(dependencyMap[9]), obj);
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("stores/billing/BraintreeStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), set);
+let closure_15 = tmp3;
+let result = set.fileFinishedImporting("stores/billing/BraintreeStore.tsx");
 
 export default tmp3;

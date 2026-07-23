@@ -1,19 +1,20 @@
-// Module ID: 14256
-// Function ID: 107697
+// Module ID: 14370
+// Function ID: 109850
 // Name: _emailSupport
-// Dependencies: []
+// Dependencies: [5, 1921, 1554, 4110, 3827, 1920, 2]
 // Exports: emailSupport
 
-// Module 14256 (_emailSupport)
+// Module 14370 (_emailSupport)
+import wrapURL from "wrapURL";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _emailSupport() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _emailSupport = obj;
   return obj(...arguments);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("utils/native/SupportUtils.tsx");
+const result = require("getConstants").fileFinishedImporting("utils/native/SupportUtils.tsx");
 
 export const emailSupport = function emailSupport() {
   return _emailSupport(...arguments);

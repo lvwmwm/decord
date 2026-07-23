@@ -1,10 +1,20 @@
-// Module ID: 8356
-// Function ID: 66613
+// Module ID: 8362
+// Function ID: 66650
 // Name: canEveryoneRoleViewEvent
-// Dependencies: []
+// Dependencies: [1353, 1348, 1907, 1838, 3758, 6758, 1354, 653, 3763, 8363, 566, 2]
 // Exports: default
 
-// Module 8356 (canEveryoneRoleViewEvent)
+// Module 8362 (canEveryoneRoleViewEvent)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import { isGuildEventEnded } from "_isNativeReflectConstruct";
+import { GuildScheduledEventEntityTypes as closure_9 } from "GUILD_EVENT_MAX_NAME_LENGTH";
+import { Permissions } from "ME";
+
+const require = arg1;
 function canEveryoneRoleViewEvent(guildEvent, items1) {
   let obj;
   let tmp = items1;
@@ -25,8 +35,8 @@ function canEveryoneRoleViewEvent(guildEvent, items1) {
     const channel = obj.getChannel(tmp4);
     let canEveryoneRoleResult = null != channel;
     if (canEveryoneRoleResult) {
-      canEveryoneRoleResult = importAll(dependencyMap[8]).canEveryoneRole(Permissions.VIEW_CHANNEL, channel);
-      const obj3 = importAll(dependencyMap[8]);
+      canEveryoneRoleResult = importAll(3763).canEveryoneRole(Permissions.VIEW_CHANNEL, channel);
+      const obj3 = importAll(3763);
     }
     return canEveryoneRoleResult;
   }
@@ -38,7 +48,7 @@ function isGuildEventInvitable(guildEvent) {
   let obj4;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [closure_5, closure_4, closure_6, closure_3];
+    const items = [closure_5, closure_4, _createForOfIteratorHelperLoose, _isNativeReflectConstruct];
     tmp = items;
   }
   [obj, obj2, obj3, obj4] = tmp;
@@ -53,7 +63,7 @@ function isGuildEventInvitable(guildEvent) {
     }
     const guild = obj3.getGuild(guildEvent.guild_id);
     const stageInstanceByChannel = obj4.getStageInstanceByChannel(channel_id);
-    const obj5 = arg1(dependencyMap[9]);
+    const obj5 = require(8363) /* canViewInviteModal */;
     const tmp15 = !obj5.canViewInviteModal(closure_7, guild, defaultChannel, stageInstanceByChannel);
     let tmp16 = !tmp15;
     if (!tmp15) {
@@ -67,23 +77,15 @@ function isGuildEventInvitable(guildEvent) {
     return tmp16;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const isGuildEventEnded = arg1(dependencyMap[5]).isGuildEventEnded;
-let closure_9 = arg1(dependencyMap[6]).GuildScheduledEventEntityTypes;
-const Permissions = arg1(dependencyMap[7]).Permissions;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_scheduled_events/useCanInviteForGuildEvent.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/useCanInviteForGuildEvent.tsx");
 
 export default function useCanInviteForGuildEvent(arg0) {
-  const arg1 = arg0;
-  const items = [closure_5, closure_4, closure_6, closure_3];
+  const _require = arg0;
+  let items = [closure_5, closure_4, _createForOfIteratorHelperLoose, _isNativeReflectConstruct];
   const items1 = [arg0];
-  return arg1(dependencyMap[10]).useStateFromStores(items, () => {
-    const items = [closure_5, closure_4, closure_6, closure_3];
-    return callback(arg0, items);
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_5, outer1_4, outer1_6, outer1_3];
+    return outer1_12(closure_0, items);
   }, items1);
 };
 export { canEveryoneRoleViewEvent };

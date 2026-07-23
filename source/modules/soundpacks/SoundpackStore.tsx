@@ -1,38 +1,39 @@
-// Module ID: 10235
-// Function ID: 79075
+// Module ID: 10247
+// Function ID: 79147
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 10248, 566, 686, 2]
 
-// Module 10235 (_isNativeReflectConstruct)
+// Module 10247 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { Soundpacks } from "Soundpacks";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const Soundpacks = arg1(dependencyMap[5]).Soundpacks;
 let obj = { soundpack: Soundpacks.CLASSIC, lastSoundpackExperimentId: null };
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class SoundpackStore {
     constructor() {
       self = this;
       tmp = SoundpackStore(this, SoundpackStore);
-      obj = closure_3(SoundpackStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(SoundpackStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,16 +42,16 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = SoundpackStore;
   callback2(SoundpackStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       if (null != arg0) {
+        const outer1_6 = arg0;
         const _Object = Object;
-        const values = Object.values(constants);
-        if (!values.includes(arg0.soundpack)) {
-          arg0.soundpack = constants.CLASSIC;
+        const values = Object.values(outer1_5);
+        if (!values.includes(outer1_6.soundpack)) {
+          outer1_6.soundpack = outer1_5.CLASSIC;
         }
       }
     }
@@ -59,25 +60,25 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[1] = obj;
   obj = {
     key: "getSoundpack",
     value() {
-      return closure_6.soundpack;
+      return outer1_6.soundpack;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getLastSoundpackExperimentId",
     value() {
-      return closure_6.lastSoundpackExperimentId;
+      return outer1_6.lastSoundpackExperimentId;
     }
   };
   return callback(SoundpackStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "SoundpackStore";
 tmp2.persistKey = "SoundpackStore";
 obj = {
@@ -90,7 +91,7 @@ obj = {
     obj.lastSoundpackExperimentId = lastSoundpackExperimentId;
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[7]), obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/soundpacks/SoundpackStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/soundpacks/SoundpackStore.tsx");
 
 export default tmp2;

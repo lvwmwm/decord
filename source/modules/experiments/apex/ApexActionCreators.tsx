@@ -1,34 +1,33 @@
-// Module ID: 10453
-// Function ID: 80731
+// Module ID: 10463
+// Function ID: 80781
 // Name: _fetchApexExperimentsMetadata
-// Dependencies: []
+// Dependencies: [29, 5, 1188, 653, 507, 686, 7784, 1429, 566, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 10453 (_fetchApexExperimentsMetadata)
+// Module 10463 (_fetchApexExperimentsMetadata)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _fetchApexExperimentsMetadata() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchApexExperimentsMetadata = obj;
   return obj(...arguments);
 }
 function _fetchUserExperimentAssignments() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchUserExperimentAssignments = obj;
   return obj(...arguments);
 }
 function _fetchInstallationExperiments() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchInstallationExperiments = obj;
   return obj(...arguments);
 }
-let closure_3 = ["<string:1070696759>"];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/experiments/apex/ApexActionCreators.tsx");
+let closure_3 = ["installation"];
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/apex/ApexActionCreators.tsx");
 
 export const fetchApexExperimentsMetadata = function fetchApexExperimentsMetadata(APP) {
   return _fetchApexExperimentsMetadata(...arguments);

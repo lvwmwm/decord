@@ -1,25 +1,25 @@
-// Module ID: 14996
-// Function ID: 112930
-// Dependencies: []
+// Module ID: 15112
+// Function ID: 115098
+// Dependencies: [31, 13997, 33, 3834, 689, 14078, 3991, 4542, 8229, 2]
 
-// Module 14996
-const YOU_BAR_SPRING_CONFIG = arg1(dependencyMap[1]).YOU_BAR_SPRING_CONFIG;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 15112
+import { YOU_BAR_SPRING_CONFIG } from "CONNECTION_BANNER_HEIGHT";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
 let closure_5 = { code: "function YouBarNameplateTsx1(){const{withSpring,isQuestRendered,questDockAnimatedBorderRadius,borderRadius,YOU_BAR_SPRING_CONFIG}=this.__closure;return{borderTopRightRadius:withSpring(isQuestRendered?questDockAnimatedBorderRadius.get():borderRadius,YOU_BAR_SPRING_CONFIG)};}" };
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function YouBarNameplate(isQuestRendered) {
+const memoResult = require("result").memo(function YouBarNameplate(isQuestRendered) {
   let barWidth;
   let nameplate;
   isQuestRendered = isQuestRendered.isQuestRendered;
-  const arg1 = isQuestRendered;
   const avatarSize = isQuestRendered.avatarSize;
   ({ nameplate, barWidth } = isQuestRendered);
-  let obj = arg1(dependencyMap[3]);
-  const token = obj.useToken(importDefault(dependencyMap[4]).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const importDefault = token;
-  const tmp2 = importDefault(dependencyMap[5])(token);
+  let obj = isQuestRendered(3834);
+  token = obj.useToken(token(689).modules.mobile.YOU_BAR_BORDER_RADIUS);
+  const tmp2 = token(14078)(token);
   const dependencyMap = tmp2;
-  let obj1 = arg1(dependencyMap[6]);
+  let obj1 = isQuestRendered(3991);
   const fn = function l() {
     const obj = {};
     if (isQuestRendered) {
@@ -27,16 +27,16 @@ const memoResult = importAll(dependencyMap[0]).memo(function YouBarNameplate(isQ
     } else {
       value = token;
     }
-    obj.borderTopRightRadius = isQuestRendered(tmp2[7]).withSpring(value, closure_3);
+    obj.borderTopRightRadius = isQuestRendered(tmp2[7]).withSpring(value, outer1_3);
     return obj;
   };
-  obj = { withSpring: arg1(dependencyMap[7]).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp2, borderRadius: token, YOU_BAR_SPRING_CONFIG };
+  obj = { withSpring: isQuestRendered(4542).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp2, borderRadius: token, YOU_BAR_SPRING_CONFIG };
   fn.__closure = obj;
   fn.__workletHash = 17156260157738;
   fn.__initData = closure_5;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   obj = {};
-  obj1 = { left: avatarSize };
+  obj1 = { position: "absolute", top: 0, left: avatarSize, right: -1, bottom: 0, borderTopRightRadius: null, borderTopLeftRadius: 0, borderBottomRightRadius: null, borderBottomLeftRadius: 0, overflow: "hidden" };
   let num = 0;
   if (!isQuestRendered) {
     num = token;
@@ -47,10 +47,10 @@ const memoResult = importAll(dependencyMap[0]).memo(function YouBarNameplate(isQ
   const items = [obj1, animatedStyle];
   obj.style = items;
   obj.pointerEvents = "none";
-  const obj2 = { zIndex: 1567300603, position: 221342020, top: 822948183, nameplate };
-  obj.children = jsx(importDefault(dependencyMap[8]), obj2);
-  return jsx(importDefault(dependencyMap[6]).View, obj);
+  const obj2 = { nameplate, isFocused: true, animate: false };
+  obj.children = jsx(token(8229), { nameplate, isFocused: true, animate: false });
+  return jsx(token(3991).View, {});
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNameplate.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNameplate.tsx");
 
 export default memoResult;

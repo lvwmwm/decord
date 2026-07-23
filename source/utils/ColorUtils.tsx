@@ -1,18 +1,21 @@
-// Module ID: 3972
-// Function ID: 32906
+// Module ID: 3974
+// Function ID: 32911
 // Name: hexToRgb
-// Dependencies: []
+// Dependencies: [57, 666, 1212, 3, 3975, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgbArray, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 3972 (hexToRgb)
+// Module 3974 (hexToRgb)
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
 function hexToRgb(PRIMARY_800) {
-  let obj = importDefault(dependencyMap[1])(PRIMARY_800);
+  let obj = importDefault(666)(PRIMARY_800);
   const tmp = callback(obj.rgb(), 3);
   obj = { r: tmp[0], g: tmp[1], b: tmp[2] };
   return obj;
 }
 function hexToRgba(primaryColor) {
-  let obj = importDefault(dependencyMap[1])(primaryColor);
+  let obj = importDefault(666)(primaryColor);
   const tmp = callback(obj.rgba(), 4);
   obj = { r: tmp[0], g: tmp[1], b: tmp[2], a: tmp[3] };
   return obj;
@@ -57,23 +60,23 @@ function hslToString(h, s, l) {
   return "hsl(" + h + ", " + s + "%, " + l + "%)";
 }
 function hslToHex(arg0, arg1, arg2) {
-  arg1 = arg0;
-  let importDefault = arg2;
+  let closure_0 = arg0;
+  let closure_1 = arg2;
   const fn = function f(arg0) {
-    const result = (arg0 + arg0 / 30) % 12;
-    let str = Math.round(255 * (result - closure_2 * Math.max(Math.min(result - 3, 9 - result, 1), -1)));
+    const result = (arg0 + closure_0 / 30) % 12;
+    let str = Math.round(255 * (closure_1 - closure_2 * Math.max(Math.min(result - 3, 9 - result, 1), -1)));
     str = str.toString(16);
     return str.padStart(2, "0");
   };
-  const result = arg2 / 100;
-  importDefault = result;
+  let result = arg2 / 100;
+  closure_1 = result;
   let closure_2 = arg1 * Math.min(result, 1 - result) / 100;
   const fnResult = fn(0);
   return "#" + fnResult + fn(8) + fn(4);
 }
 function hex2rgb2hsv(first4) {
   function diffc(result) {
-    return (bound - result) / 6 / diff + 0.5;
+    return (bound - result) / 6 / closure_1 + 0.5;
   }
   function percentRoundFn(arg0) {
     return Math.round(100 * arg0) / 100;
@@ -91,7 +94,6 @@ function hex2rgb2hsv(first4) {
     const result2 = parseInt(match[3], 16) / 255;
     const _Math2 = Math;
     const bound = Math.max(result, result1, result2);
-    const arg1 = bound;
     const _Math3 = Math;
     const diff = bound - Math.min(result, result1, result2);
     const importDefault = diff;
@@ -177,7 +179,7 @@ function rawHslToRgb(hue, saturation, lightness) {
   let sum = lightness;
   const result = hue / 360;
   if (0 === saturation) {
-    let tmp12 = importDefault(dependencyMap[4]);
+    let tmp12 = importDefault(3975);
     const _Math = Math;
     const rounded = Math.round(255 * sum);
     const _Math2 = Math;
@@ -215,7 +217,7 @@ function rawHslToRgb(hue, saturation, lightness) {
     } else {
       result1 = sum + saturation - sum * saturation;
     }
-    const diff = 2 * sum - result1;
+    let diff = 2 * sum - result1;
     sum = result + 0.3333333333333333;
     hue2rgb(diff, result1, sum);
     hue2rgb(diff, result1, result);
@@ -227,98 +229,97 @@ function sortColors(hsv, hsv2) {
   hsv2 = hsv2.hsv;
   return hsv2.s + hsv2.v - (hsv.s + hsv.v);
 }
-let closure_3 = importDefault(dependencyMap[0]);
 let closure_4 = { code: "function hexWithOpacity_ColorUtilsTsx1(color,value){if(color.length===7){const alpha=value*255|0;return color+alpha.toString(16).padStart(2,'0').toUpperCase();}const hex=color.charAt(0)==='#'?color.slice(1):color;let r;let g;let b;let a;switch(hex.length){case 3:r=hex.charAt(0);g=hex.charAt(1);b=hex.charAt(2);r+=r;g+=g;b+=b;a=(value*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+r+g+b+a;case 4:r=hex.charAt(0);g=hex.charAt(1);b=hex.charAt(2);a=hex.charAt(3);r+=r;g+=g;b+=b;a+=a;const alpha4=parseInt(a,16)/255*value;const alpha4Hex=(alpha4*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+r+g+b+alpha4Hex;case 6:const alpha6=(value*255|0).toString(16).padStart(2,'0').toUpperCase();return'#'+hex+alpha6;case 8:const baseColor='#'+hex.slice(0,6);const existingAlpha=parseInt(hex.slice(6),16)/255;const alpha8=(existingAlpha*value*255|0).toString(16).padStart(2,'0').toUpperCase();return baseColor+alpha8;default:throw new Error('Invalid hex color format');}}" };
 let closure_5 = { code: "function hexToRgbaString_ColorUtilsTsx2(hex,opacity){const{hexToRgba}=this.__closure;const{r:r,g:g,b:b,a:a}=hexToRgba(hex);return\"rgba(\"+r+\", \"+g+\", \"+b+\", \"+(opacity!==null&&opacity!==void 0?opacity:a)+\")\";}" };
 let obj = {};
 obj = {
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.fBawRj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.fBawRj);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.hvv3QR);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.hvv3QR);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.JwX6Jd);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.JwX6Jd);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.H3xljj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.H3xljj);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.X9izyR);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.X9izyR);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.Kw7K2z);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.Kw7K2z);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.z5AZKW);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.z5AZKW);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.JqBqKz);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.JqBqKz);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.edPgnK);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.edPgnK);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.ti7gsS);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.ti7gsS);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.H9jz+S);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["H9jz+S"]);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.UmsfHL);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.UmsfHL);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.GoDlAC);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.GoDlAC);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.9GpDYK);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["9GpDYK"]);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.lwrNQG);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.lwrNQG);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.Lf10GG);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.Lf10GG);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.H+AjY7);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["H+AjY7"]);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.XTkdex);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.XTkdex);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.Ve0Lip);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.Ve0Lip);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t.BwbOAO);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.BwbOAO);
   },
   () => {
-    const intl = arg1(dependencyMap[2]).intl;
-    return intl.string(arg1(dependencyMap[2]).t./po5rJ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["/po5rJ"]);
   }
 };
-const tmp2 = () => {
-  function hexWithOpacity(BLACK, LEVEL_1) {
+let tmp2 = (() => {
+  export function hexWithOpacity(BLACK, LEVEL_1) {
     if (7 === BLACK.length) {
       let str = 255 * LEVEL_1 | 0.toString(16);
       return BLACK + str.padStart(2, "0").toUpperCase();
@@ -373,19 +374,19 @@ const tmp2 = () => {
   hexWithOpacity.__workletHash = 1677228068105;
   hexWithOpacity.__initData = closure_4;
   return hexWithOpacity;
-}();
+})();
 const merged = Object.assign(obj);
 obj["#5865f2"] = () => {
-  const intl = arg1(dependencyMap[2]).intl;
-  return intl.string(arg1(dependencyMap[2]).t.Cn/LJ4);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t["Cn/LJ4"]);
 };
-const tmp3 = () => {
-  function hexToRgbaString(colorHex, opacity) {
+const tmp3 = (() => {
+  export function hexToRgbaString(colorHex, opacity) {
     let a;
     let b;
     let g;
     let r;
-    ({ r, g, b, a } = callback(colorHex));
+    ({ r, g, b, a } = outer1_8(colorHex));
     if (null != opacity) {
       a = opacity;
     }
@@ -395,10 +396,9 @@ const tmp3 = () => {
   hexToRgbaString.__workletHash = 8956046161224;
   hexToRgbaString.__initData = closure_5;
   return hexToRgbaString;
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("utils/ColorUtils.tsx");
+})();
+let result = require("getSystemLocale").fileFinishedImporting("utils/ColorUtils.tsx");
 
-export const hexWithOpacity = tmp2;
 export { hexToRgb };
 export const hexToRgbArray = function hexToRgbArray(PRIMARY_800) {
   const items = [, , ];
@@ -406,7 +406,6 @@ export const hexToRgbArray = function hexToRgbArray(PRIMARY_800) {
   return items;
 };
 export { hexToRgba };
-export const hexToRgbaString = tmp3;
 export const hexOpacityToRgba = function hexOpacityToRgba(backgroundColor, dividerOpacity) {
   const tmp = hexToRgb(backgroundColor);
   return "rgba(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ", " + dividerOpacity + ")";
@@ -439,11 +438,11 @@ export { hslToHex };
 export const hexToColorName = function hexToColorName(color, arg1) {
   if (null == obj[color]) {
     if (arg1) {
-      const intl = arg1(dependencyMap[2]).intl;
-      const obj = { color };
-      let str4 = intl.formatToPlainString(arg1(dependencyMap[2]).t.7BFCRR, obj);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj = { color };
+      let str4 = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["7BFCRR"], obj);
     } else {
-      let tmp5 = importDefault(dependencyMap[3]);
+      let tmp5 = importDefault(3);
       const prototype = tmp5.prototype;
       tmp5 = new tmp5("ColorUtils");
       const _HermesInternal = HermesInternal;
@@ -460,7 +459,7 @@ export const mixColors = function mixColors(alpha, red) {
   const sum1 = (1 - alpha) * red.green + alpha * alpha.green;
   const sum2 = (1 - alpha) * red.blue + alpha * alpha.blue;
   const sum3 = alpha.alpha + red.alpha * (1 - alpha.alpha);
-  let tmp5 = importDefault(dependencyMap[4]);
+  let tmp5 = importDefault(3975);
   tmp5 = new tmp5(sum, sum1, sum2, sum3);
   return tmp5;
 };
@@ -494,8 +493,8 @@ export const getComplimentaryPaletteForColor = function getComplimentaryPaletteF
       if (diff1 < 0) {
         sum2 = diff1 + 360;
       }
-      let tmp7 = closure_13;
-      let tmp8 = closure_13(sum2, sum, sum1);
+      let tmp7 = hslToRgb;
+      let tmp8 = hslToRgb(sum2, sum, sum1);
       let items1 = [, , ];
       ({ r: arr2[0], g: arr2[1], b: arr2[2] } = tmp8);
       let arr = items.push(items1);
@@ -561,7 +560,7 @@ export const getAccessibleForegroundColor = function getAccessibleForegroundColo
           let result2 = obj3.set("hsl.l", value + 0.05);
           let tmp6 = importDefault;
           let tmp7 = dependencyMap;
-          let tmp8 = importDefault(dependencyMap[1]);
+          let tmp8 = importDefault(666);
           num2 = num2 + 1;
           obj4 = result2;
           if (num2 >= 10) {
@@ -591,9 +590,9 @@ export const findColorByHsv = function findColorByHsv(colors) {
   const substr = colors.slice(0, 3);
   const mapped = substr.map((hex) => {
     let obj = { hex };
-    obj = callback(hex);
+    obj = outer1_12(hex);
     if (null == obj) {
-      obj = { 100504674: "spring", 9223372036854775807: 0.4, 9223372036854775807: 1 };
+      obj = { h: 0, s: 0, v: 0 };
     }
     obj.hsv = obj;
     return obj;

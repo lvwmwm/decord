@@ -1,11 +1,10 @@
-// Module ID: 4019
-// Function ID: 33436
+// Module ID: 4021
+// Function ID: 33445
 // Name: VANITY_URL_POWERUP_SKU_ID
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4019 (VANITY_URL_POWERUP_SKU_ID)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/Powerups.tsx");
+// Module 4021 (VANITY_URL_POWERUP_SKU_ID)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/Powerups.tsx");
 
 export const VANITY_URL_POWERUP_SKU_ID = "1387197800336330924";
 export const GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID = "1395150519886024775";

@@ -1,13 +1,17 @@
-// Module ID: 15098
-// Function ID: 113799
+// Module ID: 15213
+// Function ID: 115968
 // Name: createItem
-// Dependencies: []
+// Dependencies: [31, 8306, 7087, 566, 8321, 2]
 // Exports: default
 
-// Module 15098 (createItem)
+// Module 15213 (createItem)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function createItem(id, type, unread) {
   type = type.type;
-  if (type(dependencyMap[2]).ICYMIItemTypes.MESSAGE === type) {
+  if (require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE === type) {
     if (type.message.id === type.message.channel_id) {
       if (null != type.threadChannel) {
         let obj = { id: id.id };
@@ -36,9 +40,9 @@ function createItem(id, type, unread) {
     obj1.debugScore = JSON.stringify(id.score_components);
     obj1.unread = unread;
   } else {
-    if (type(dependencyMap[2]).ICYMIItemTypes.ACTIVITY !== type) {
-      if (type(dependencyMap[2]).ICYMIItemTypes.CUSTOM_STATUS !== type) {
-        if (type(dependencyMap[2]).ICYMIItemTypes.GUILD_EVENT === type) {
+    if (require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.ACTIVITY !== type) {
+      if (require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.CUSTOM_STATUS !== type) {
+        if (require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.GUILD_EVENT === type) {
           const obj3 = { id: id.id };
           const _Date2 = Date;
           obj3.timestamp = Date.now();
@@ -49,7 +53,7 @@ function createItem(id, type, unread) {
           obj3.debugScore = JSON.stringify(id.score_components);
           obj3.unread = unread;
           return obj3;
-        } else if (type(dependencyMap[2]).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
+        } else if (require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
           obj = { id: id.id };
           const _Date = Date;
           obj.timestamp = Date.now();
@@ -77,30 +81,27 @@ function createItem(id, type, unread) {
     return obj6;
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/icymi/useICYMIItems.tsx");
+const result = require("MessageEmbedTypes").fileFinishedImporting("modules/icymi/useICYMIItems.tsx");
 
 export default function useICYMIItems() {
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => store.getUnreadDisplayItems());
-  const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => store.getReadDisplayItems());
-  const arg1 = stateFromStores1;
-  const obj2 = arg1(dependencyMap[3]);
-  const items2 = [closure_4];
-  const stateFromStores2 = arg1(dependencyMap[3]).useStateFromStores(items2, () => store.getNextIndexToHydrate());
-  const obj3 = arg1(dependencyMap[3]);
-  const items3 = [closure_4];
-  const stateFromStoresObject = arg1(dependencyMap[3]).useStateFromStoresObject(items3, () => store.getHydratedItems());
-  const obj4 = arg1(dependencyMap[3]);
-  const items4 = [closure_4];
-  const stateFromStores3 = arg1(dependencyMap[3]).useStateFromStores(items4, () => store.getMissingItems());
+  let obj = stateFromStores1(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getUnreadDisplayItems());
+  const items1 = [_isNativeReflectConstruct];
+  stateFromStores1 = stateFromStores1(566).useStateFromStores(items1, () => outer1_4.getReadDisplayItems());
+  const obj2 = stateFromStores1(566);
+  const items2 = [_isNativeReflectConstruct];
+  const stateFromStores2 = stateFromStores1(566).useStateFromStores(items2, () => outer1_4.getNextIndexToHydrate());
+  const obj3 = stateFromStores1(566);
+  const items3 = [_isNativeReflectConstruct];
+  const stateFromStoresObject = stateFromStores1(566).useStateFromStoresObject(items3, () => outer1_4.getHydratedItems());
+  const obj4 = stateFromStores1(566);
+  const items4 = [_isNativeReflectConstruct];
+  const stateFromStores3 = stateFromStores1(566).useStateFromStores(items4, () => outer1_4.getMissingItems());
   const items5 = [stateFromStores1];
   const effect = React.useEffect(() => {
-    const stateFromStores1 = Date.now() + stateFromStores1.length;
-    callback(closure_2[4]).ackGravityItems(stateFromStores1.map((id) => {
+    stateFromStores1 = Date.now() + stateFromStores1.length;
+    outer1_1(outer1_2[4]).ackGravityItems(stateFromStores1.map((id) => {
       let closure_0 = tmp - 1;
       return { id: id.id, timestamp: +closure_0 };
     }, true));
@@ -121,9 +122,9 @@ export default function useICYMIItems() {
         let tmp7 = stateFromStoresObject[tmp35.id];
         let tmp8 = null == tmp7;
         if (tmp8) {
-          let tmp9 = arg1;
+          let tmp9 = stateFromStores1;
           let tmp10 = dependencyMap;
-          tmp8 = tmp35.type === arg1(dependencyMap[2]).ICYMIItemTypes.MESSAGE;
+          tmp8 = tmp35.type === stateFromStores1(7087).ICYMIItemTypes.MESSAGE;
         }
         if (tmp8) {
           let message_context = tmp35.data.message_context;
@@ -132,7 +133,7 @@ export default function useICYMIItems() {
             reference_message_id = message_context.reference_message_id;
           }
           tmp8 = null != reference_message_id;
-          let tmp5 = message_context;
+          tmp5 = message_context;
         }
         if (tmp8) {
           tmp7 = stateFromStoresObject[tmp35.data.message_id];
@@ -156,7 +157,7 @@ export default function useICYMIItems() {
       }
       num2 = num2 + 1;
       tmp5 = tmp12;
-      let tmp6 = tmp13;
+      tmp6 = tmp13;
       num = sum;
       num3 = sum;
       if (num2 >= stateFromStores.length) {
@@ -175,9 +176,9 @@ export default function useICYMIItems() {
         let tmp22 = stateFromStoresObject[tmp37.id];
         let tmp23 = null == tmp22;
         if (tmp23) {
-          let tmp24 = arg1;
+          let tmp24 = stateFromStores1;
           let tmp25 = dependencyMap;
-          tmp23 = tmp37.type === arg1(dependencyMap[2]).ICYMIItemTypes.MESSAGE;
+          tmp23 = tmp37.type === stateFromStores1(7087).ICYMIItemTypes.MESSAGE;
         }
         if (tmp23) {
           let message_context2 = tmp37.data.message_context;
@@ -186,7 +187,7 @@ export default function useICYMIItems() {
             reference_message_id1 = message_context2.reference_message_id;
           }
           tmp23 = null != reference_message_id1;
-          let tmp20 = message_context2;
+          tmp20 = message_context2;
         }
         if (tmp23) {
           tmp22 = stateFromStoresObject[tmp37.data.message_id];
@@ -210,7 +211,7 @@ export default function useICYMIItems() {
       }
       num4 = num4 + 1;
       tmp20 = tmp27;
-      let tmp21 = tmp28;
+      tmp21 = tmp28;
       if (num4 >= stateFromStores1.length) {
         break;
       }

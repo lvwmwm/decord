@@ -1,25 +1,26 @@
-// Module ID: 11390
-// Function ID: 88585
+// Module ID: 11400
+// Function ID: 88635
 // Name: TiktokNeutralIcon
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 33, 689, 3833, 11401, 2]
 // Exports: TiktokNeutralIcon
 
-// Module 11390 (TiktokNeutralIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 11400 (TiktokNeutralIcon)
+import "result";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/TiktokNeutralIcon.tsx");
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/TiktokNeutralIcon.tsx");
 
 export const TiktokNeutralIcon = function TiktokNeutralIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(11401) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(11401) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

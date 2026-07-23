@@ -1,19 +1,40 @@
-// Module ID: 10853
-// Function ID: 84319
+// Module ID: 10863
+// Function ID: 84368
 // Name: useScrollHandlers
-// Dependencies: []
+// Dependencies: [31, 9313, 3, 4528, 9886, 682, 9440, 9442, 4979, 2]
 // Exports: default
 
-// Module 10853 (useScrollHandlers)
-let closure_3 = importAll(dependencyMap[0]);
-({ updateIsAtBottom: closure_4, updateShouldShowJumpToPresentButton: closure_5 } = arg1(dependencyMap[1]));
-let importDefaultResult = importDefault(dependencyMap[2]);
+// Module 10863 (useScrollHandlers)
+import result from "result";
+import getChatInputContainerHeight from "getChatInputContainerHeight";
+import importDefaultResult from "SCREEN_READER_ENABLED_GETTER";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ updateIsAtBottom: closure_4, updateShouldShowJumpToPresentButton: closure_5 } = getChatInputContainerHeight);
 importDefaultResult = new importDefaultResult("useScrollHandlers");
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/messages/native/hooks/useScrollHandlers.tsx");
+let result = require("timestamp").fileFinishedImporting("modules/messages/native/hooks/useScrollHandlers.tsx");
 
 export default function useScrollHandlers(arg0) {
-  ({ chatRef: closure_0, chatManager: closure_1, chatUpdatesQueue: closure_2, pendingUpdatesQueueRef: closure_3, animatedRef: closure_4, fetchMoreBefore: closure_5, fetchMoreAfter: closure_6, handleVisibleMessagesChange: closure_7, applyNativeRowsUpdate: closure_8, messages: closure_9, channel: closure_10, channelId: closure_11, screenIndex: closure_12, onScroll: closure_13, useReducedMotion: closure_14, isStaff: closure_15, visibleMessagesWindowHandler: closure_16 } = arg0);
+  let closure_10;
+  let closure_11;
+  let closure_12;
+  let closure_13;
+  let closure_14;
+  let closure_15;
+  let closure_16;
+  let result;
+  let closure_4;
+  let closure_5;
+  let closure_6;
+  let closure_7;
+  let closure_8;
+  let closure_9;
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ chatRef: require, chatManager: importDefault, chatUpdatesQueue: dependencyMap, pendingUpdatesQueueRef: result, animatedRef: closure_4, fetchMoreBefore: closure_5, fetchMoreAfter: closure_6, handleVisibleMessagesChange: closure_7, applyNativeRowsUpdate: closure_8, messages: closure_9, channel: closure_10, channelId: closure_11, screenIndex: closure_12, onScroll: closure_13, useReducedMotion: closure_14, isStaff: closure_15, visibleMessagesWindowHandler: closure_16 } = arg0);
   let ref1;
   let ref2;
   let ref3;
@@ -26,7 +47,7 @@ export default function useScrollHandlers(arg0) {
   }
   function loadMoreAfter() {
     closure_4.current = true;
-    lib2();
+    callback2();
   }
   function handleScrollCallbacks(isNearTop) {
     let eventTimestamp;
@@ -53,7 +74,7 @@ export default function useScrollHandlers(arg0) {
       flag4 = false;
     }
     if (null != id) {
-      lib(set[3]);
+      outer1_0(outer1_2[3]);
       let tmp7 = !closure_9.loadingMore;
       if (tmp7) {
         if (!flag2) {
@@ -74,7 +95,7 @@ export default function useScrollHandlers(arg0) {
               loadMoreBefore();
             }
             let obj = { isFirstMessageVisible: flag4 };
-            callback4(obj);
+            callback5(obj);
             set.tryFlush();
             return true;
           }
@@ -94,8 +115,8 @@ export default function useScrollHandlers(arg0) {
         current = ref1.current;
       }
       if (!current) {
-        obj = previousRows(set[4]);
-        const id = id.id;
+        obj = outer1_1(outer1_2[4]);
+        id = id.id;
         let num3 = 0;
         if (isAtBottom) {
           num3 = 1;
@@ -139,15 +160,15 @@ export default function useScrollHandlers(arg0) {
       ref4.current = flag2;
       ref6.current = flag3;
       ref5.current = flag4;
-      isAtBottom(closure_2[5]).batchUpdates(() => {
+      outer1_0(outer1_2[5]).batchUpdates(() => {
         let hasMoreAfter = flag5;
         if (!flag5) {
-          hasMoreAfter = hasMoreAfter.hasMoreAfter;
+          hasMoreAfter = outer1_9.hasMoreAfter;
         }
-        closure_5(closure_11, closure_12, hasMoreAfter);
-        callback(closure_12, isAtBottom);
+        outer2_5(outer1_11, outer1_12, hasMoreAfter);
+        outer2_4(outer1_12, isAtBottom);
       });
-      const obj2 = isAtBottom(closure_2[5]);
+      const obj2 = outer1_0(outer1_2[5]);
     }
   }
   const ref = React.useRef(undefined);
@@ -175,7 +196,7 @@ export default function useScrollHandlers(arg0) {
       if (flag) {
         flag = !closure_14;
       }
-      previousRows(closure_2[6]).scrollToTop(lib.current, flag);
+      outer1_1(outer1_2[6]).scrollToTop(closure_0.current, flag);
     },
     scrollToRelativeOffset(arg0) {
       let flag = arg1;
@@ -185,20 +206,20 @@ export default function useScrollHandlers(arg0) {
       if (flag) {
         flag = !closure_14;
       }
-      const result = previousRows(closure_2[6]).scrollToRelativeOffset(lib.current, arg0, flag);
+      const result = outer1_1(outer1_2[6]).scrollToRelativeOffset(closure_0.current, arg0, flag);
     },
     scrollToTopMessage() {
-      const previousRows = previousRows.getPreviousRows();
+      previousRows = previousRows.getPreviousRows();
       if (previousRows.length > 0) {
-        previousRows(closure_2[6]).scrollTo(lib.current, previousRows.length - 1);
-        const obj = previousRows(closure_2[6]);
+        outer1_1(outer1_2[6]).scrollTo(closure_0.current, previousRows.length - 1);
+        const obj = outer1_1(outer1_2[6]);
       }
     },
     updateNativeRows(isLoadingAtTop) {
       if (set.isBlocking) {
         set.add(isLoadingAtTop);
       } else if (!isLoadingAtTop.isLoadingAtTop) {
-        callback3(isLoadingAtTop);
+        callback4(isLoadingAtTop);
       } else {
         set.add(isLoadingAtTop);
       }
@@ -223,18 +244,18 @@ export default function useScrollHandlers(arg0) {
       ({ timeStamp, nativeEvent } = arg0);
       ({ firstVisibleMessageIndex, lastVisibleMessageIndex, changesetUpdateId } = nativeEvent);
       ({ isAtBottom, isNearBottom, isNearTop, dragging, decelerating, shouldShowJumpToPresent, isFirstMessageVisible, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible } = nativeEvent);
-      let obj = lib(closure_2[7]);
-      const changesetIdForChat = obj.getChangesetIdForChat(lib.current);
+      let obj = outer1_0(outer1_2[7]);
+      const changesetIdForChat = obj.getChangesetIdForChat(closure_0.current);
       if (changesetUpdateId !== changesetIdForChat) {
         if (null == ref.current) {
           ref.current = timeStamp;
         }
         if (closure_15) {
-          lib2.log("STAFF-ACK-LOG: Ignoring outdated scroll event.", closure_11, changesetUpdateId, changesetIdForChat, timeStamp);
+          outer1_6.log("STAFF-ACK-LOG: Ignoring outdated scroll event.", closure_11, changesetUpdateId, changesetIdForChat, timeStamp);
         }
       } else {
-        obj = { firstVisibleMessageRowIndex: firstVisibleMessageIndex, lastVisibleMessageRowIndex: lastVisibleMessageIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: lib(closure_2[8]).QuestsVisibleMessagesChangedSource.SCROLL };
-        callback2(obj);
+        obj = { firstVisibleMessageRowIndex: firstVisibleMessageIndex, lastVisibleMessageRowIndex: lastVisibleMessageIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: outer1_0(outer1_2[8]).QuestsVisibleMessagesChangedSource.SCROLL };
+        callback3(obj);
         const current = ref.current;
         let tmp2 = timeStamp;
         if (null != current) {

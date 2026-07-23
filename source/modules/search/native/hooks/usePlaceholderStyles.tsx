@@ -1,31 +1,32 @@
-// Module ID: 15224
-// Function ID: 114951
+// Module ID: 15340
+// Function ID: 117121
 // Name: useFullscreenPlaceholderCount
-// Dependencies: []
+// Dependencies: [4122, 9103, 1450, 566, 3991, 4131, 1273, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 15224 (useFullscreenPlaceholderCount)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).FADE_LAYOUT_ANIMATION_DURATION;
+// Module 15340 (useFullscreenPlaceholderCount)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
+
+const require = arg1;
 let closure_5 = { code: "function usePlaceholderStylesTsx1(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/search/native/hooks/usePlaceholderStyles.tsx");
+const result = require("useWindowDimensions").fileFinishedImporting("modules/search/native/hooks/usePlaceholderStyles.tsx");
 
 export const useFullscreenPlaceholderCount = function useFullscreenPlaceholderCount(arg0) {
   let numColumns;
   let placeholderHeight;
   ({ placeholderHeight, numColumns } = arg0);
-  return Math.ceil(importDefault(dependencyMap[2])({ ignoreKeyboard: true }).height / placeholderHeight) * numColumns;
+  return Math.ceil(importDefault(1450)({ ignoreKeyboard: true }).height / placeholderHeight) * numColumns;
 };
 export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(visible) {
-  const arg1 = visible;
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const importDefault = stateFromStores;
+  const _require = visible;
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.useReducedMotion);
   class A {
     constructor() {
       obj = {};
-      tmp = visible;
+      tmp = closure_0;
       if (closure_1) {
         num11 = 0;
         if (tmp) {
@@ -34,8 +35,8 @@ export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(
         obj.opacity = num11;
         tmp5 = obj;
       } else {
-        tmp2 = visible;
-        tmp3 = closure_2;
+        tmp2 = closure_0;
+        tmp3 = outer1_2;
         if (tmp) {
           num3 = 4;
           tmp2Result = tmp2(tmp3[4]);
@@ -66,8 +67,8 @@ export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(
           num = 5;
           tmp2Result5 = tmp2(tmp3[5]);
           obj3 = {};
-          tmp4 = closure_4;
-          obj3.duration = closure_4;
+          tmp4 = outer1_4;
+          obj3.duration = outer1_4;
           num2 = 0;
           obj.opacity = tmp2Result5.withTiming(0, obj3);
           tmp5 = obj;
@@ -76,9 +77,9 @@ export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(
       return tmp5;
     }
   }
-  obj = { useReducedMotion: stateFromStores, visible, withRepeat: arg1(dependencyMap[4]).withRepeat, withSequence: arg1(dependencyMap[4]).withSequence, withTiming: arg1(dependencyMap[5]).withTiming, STANDARD_EASING: arg1(dependencyMap[6]).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
+  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(3991).withRepeat, withSequence: _require(3991).withSequence, withTiming: _require(4131).withTiming, STANDARD_EASING: _require(1273).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
   A.__closure = obj;
   A.__workletHash = 9750536800906;
   A.__initData = closure_5;
-  return arg1(dependencyMap[4]).useAnimatedStyle(A);
+  return _require(3991).useAnimatedStyle(A);
 };

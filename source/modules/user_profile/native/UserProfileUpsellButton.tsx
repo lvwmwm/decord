@@ -1,39 +1,43 @@
-// Module ID: 13452
-// Function ID: 102148
+// Module ID: 13566
+// Function ID: 104304
 // Name: UserProfileUpsellButton
-// Dependencies: []
+// Dependencies: [31, 653, 1851, 33, 4130, 5464, 6685, 675, 4543, 7941, 1212, 7871, 2]
 // Exports: default
 
-// Module 13452 (UserProfileUpsellButton)
-let closure_3 = importAll(dependencyMap[0]);
-({ AnalyticsPages: closure_4, UpsellTypes: closure_5, AnalyticsSections: closure_6, AnalyticEvents: closure_7 } = arg1(dependencyMap[1]));
-const PremiumUpsellTypes = arg1(dependencyMap[2]).PremiumUpsellTypes;
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[1]);
-let closure_10 = arg1(dependencyMap[4]).createStyles({ nitroWheel: { marginRight: 2 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_profile/native/UserProfileUpsellButton.tsx");
+// Module 13566 (UserProfileUpsellButton)
+import result from "result";
+import ME from "ME";
+import { PremiumUpsellTypes } from "GuildFeatures";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ AnalyticsPages: closure_4, UpsellTypes: closure_5, AnalyticsSections: closure_6, AnalyticEvents: closure_7 } = ME);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ nitroWheel: { marginRight: 2 } });
+let result = require("GuildFeatures").fileFinishedImporting("modules/user_profile/native/UserProfileUpsellButton.tsx");
 
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
-  const arg1 = analyticsObject;
   let label = analyticsObject.label;
-  const analyticsLocations = importDefault(dependencyMap[5])().analyticsLocations;
-  const importDefault = analyticsLocations;
-  let obj = arg1(dependencyMap[6]);
+  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
+  let obj = analyticsObject(6685);
   const nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = React.useEffect(() => {
-    let obj = analyticsLocations(closure_2[7]);
-    obj = { type: constants5.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON, location: obj, location_stack: analyticsLocations };
-    obj = { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject };
-    obj.track(constants4.PREMIUM_UPSELL_VIEWED, obj);
+    let obj = analyticsLocations(outer1_2[7]);
+    obj = { type: outer1_8.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON, location: obj, location_stack: analyticsLocations };
+    obj = { page: outer1_4.USER_SETTINGS, section: outer1_6.USER_PROFILE, object: analyticsObject };
+    obj.track(outer1_7.PREMIUM_UPSELL_VIEWED, obj);
   }, items);
   obj = {
     onPress() {
-      let obj = analyticsLocations(closure_2[9]);
-      obj = { initialUpsellKey: constants2.CUSTOM_PROFILES, analyticsLocation: obj, analyticsLocations, analyticsProperties: obj1 };
-      obj = { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject };
+      let obj = analyticsLocations(outer1_2[9]);
+      obj = { initialUpsellKey: outer1_5.CUSTOM_PROFILES, analyticsLocation: obj, analyticsLocations, analyticsProperties: obj1 };
+      obj = { page: outer1_4.USER_SETTINGS, section: outer1_6.USER_PROFILE, object: analyticsObject };
       const result = obj.handleShowUpsellAlert(obj);
     },
     variant: "active"
@@ -42,11 +46,11 @@ export default function UserProfileUpsellButton(analyticsObject) {
     label = nitroTrialCtaOverride;
   }
   if (null == label) {
-    const intl = arg1(dependencyMap[10]).intl;
-    label = intl.string(arg1(dependencyMap[10]).t.pj0XBN);
+    const intl = analyticsObject(1212).intl;
+    label = intl.string(analyticsObject(1212).t.pj0XBN);
   }
   obj.text = label;
-  obj = { style: callback().nitroWheel };
-  obj.icon = jsx(arg1(dependencyMap[11]).NitroWheelIcon, obj);
-  return jsx(arg1(dependencyMap[8]).Button, obj);
+  obj = { color: "white", size: "sm", style: callback().nitroWheel };
+  obj.icon = jsx(analyticsObject(7871).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
+  return jsx(analyticsObject(4543).Button, { color: "white", size: "sm", style: callback().nitroWheel });
 };

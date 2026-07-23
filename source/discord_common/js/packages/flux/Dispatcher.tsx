@@ -1,52 +1,57 @@
 // Module ID: 627
 // Function ID: 7178
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 4, 628, 20, 44, 570, 571, 632, 633, 2]
 
 // Module 627 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import logger from "logger";
+import add from "add";
+import set from "log";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,23 +91,20 @@ function _arrayLikeToArray(arg0, arg1) {
 function setDisplayName(arg0, displayName) {
   arg0.displayName = displayName;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const set = new Set([]);
-const logger = new arg1(dependencyMap[2]).Logger("Flux");
-let closure_8 = () => {
+let set = new Set(["APP_STATE_UPDATE", "CLEAR_CACHES", "CONNECTION_CLOSED", "CONNECTION_OPEN", "CONNECTION_RESUMED", "LOGIN_SUCCESS", "LOGIN", "LOGOUT", "MESSAGE_SEND_FAILED", "PUSH_NOTIFICATION_CLICK", "RESET_SOCKET", "SESSION_START", "UPLOAD_FAIL", "WRITE_CACHES"]);
+const logger = new require("AppStartPerformance").Logger("Flux");
+let closure_8 = (() => {
   class ActionHandlersGraph {
     constructor() {
-      tmp = closure_4(this, ActionHandlersGraph);
+      tmp = outer1_4(this, ActionHandlersGraph);
       this._orderedActionHandlers = {};
       this._orderedCallbackTokens = null;
       this._lastID = 1;
-      depGraph = new ActionHandlersGraph(closure_3[9]).DepGraph();
+      depGraph = new ActionHandlersGraph(outer1_3[9]).DepGraph();
       this._dependencyGraph = depGraph;
       return;
     }
   }
-  const arg1 = ActionHandlersGraph;
   let obj = {
     key: "getOrderedActionHandlers",
     value: function getOrderedActionHandlers(type) {
@@ -114,27 +116,30 @@ let closure_8 = () => {
       return result;
     }
   };
-  const items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , ];
   obj = {
     key: "register",
     value: function register(name, obj, storeDidChange, band, token) {
       const self = this;
+      let closure_0 = name;
+      let closure_1 = obj;
       if (token === undefined) {
         token = self.createToken();
       }
       obj = undefined;
-      let closure_3;
+      let c3;
       let isIntegerResult = band >= 0;
       if (isIntegerResult) {
         const _Number = Number;
         isIntegerResult = Number.isInteger(band);
       }
-      obj(closure_3[5])(isIntegerResult, "band must be a non-negative integer.");
+      outer1_1(outer1_3[5])(isIntegerResult, "band must be a non-negative integer.");
       obj = {};
       for (const key10023 in arg1) {
         let tmp10 = key10023;
-        closure_3 = key10023;
+        c3 = key10023;
         let tmp6Result = tmp6();
+        continue;
       }
       const _dependencyGraph = self._dependencyGraph;
       obj = { name, band, actionHandler: obj, storeDidChange };
@@ -148,9 +153,8 @@ let closure_8 = () => {
   obj = {
     key: "createToken",
     value: function createToken() {
-      const tmp = +this._lastID;
-      this._lastID = tmp + 1;
-      return "ID_" + tmp;
+      this._lastID = +this._lastID + 1;
+      return "ID_" + +this._lastID;
     }
   };
   items[2] = obj;
@@ -160,7 +164,7 @@ let closure_8 = () => {
       let done;
       const self = this;
       const result = this._validateDependencies(arg0, arg1);
-      const tmp2 = callback2(arg1);
+      const tmp2 = outer1_9(arg1);
       let iter = tmp2();
       if (!iter.done) {
         do {
@@ -199,7 +203,7 @@ let closure_8 = () => {
           name: combined,
           band,
           actionHandler: {},
-          storeDidChange(type) {
+          storeDidChange(actionHandler) {
 
             }
         };
@@ -249,6 +253,7 @@ let closure_8 = () => {
   items[9] = {
     key: "_computeOrderedCallbackTokens",
     value: function _computeOrderedCallbackTokens() {
+      const self = this;
       const _dependencyGraph = this._dependencyGraph;
       const overallOrderResult = _dependencyGraph.overallOrder();
       this._orderedCallbackTokens = overallOrderResult;
@@ -256,8 +261,10 @@ let closure_8 = () => {
     }
   };
   return callback(ActionHandlersGraph, items);
-}();
-const tmp4 = () => {
+})();
+let result = set.fileFinishedImporting("../discord_common/js/packages/flux/Dispatcher.tsx");
+
+export const Dispatcher = (() => {
   class Dispatcher {
     constructor() {
       num = arg0;
@@ -266,13 +273,13 @@ const tmp4 = () => {
       if (arg0 === undefined) {
         num = 0;
       }
-      tmp2 = closure_4(self, Dispatcher);
+      tmp2 = outer1_4(self, Dispatcher);
       self._interceptors = [];
       self._subscriptions = {};
       self._waitQueue = [];
       self._processingWaitQueue = false;
       self._currentDispatchActionType = null;
-      tmp3 = new closure_8();
+      tmp3 = new outer1_8();
       self._actionHandlers = tmp3;
       self._sentryUtils = undefined;
       self.functionCache = {};
@@ -280,9 +287,9 @@ const tmp4 = () => {
       self._sentryUtils = arg2;
       if (null == actionLogger) {
         tmp4 = Dispatcher;
-        tmp5 = closure_3;
+        tmp5 = outer1_3;
         num2 = 3;
-        ActionLogger = Dispatcher(closure_3[3]).ActionLogger;
+        ActionLogger = Dispatcher(outer1_3[3]).ActionLogger;
         prototype = ActionLogger.prototype;
         tmp6 = new.target;
         tmp7 = new.target;
@@ -291,19 +298,18 @@ const tmp4 = () => {
       self.actionLogger = actionLogger;
       actionLogger = self.actionLogger;
       onResult = actionLogger.on("trace", (arg0, arg1, arg2) => {
-        let isTracing = callback(closure_3[4]).isTracing;
+        let isTracing = outer2_1(outer2_3[4]).isTracing;
         if (isTracing) {
           isTracing = arg2 >= 10;
         }
         if (isTracing) {
-          callback(closure_3[4]).mark("\u{1F9A5}", arg1, arg2);
-          const obj = callback(closure_3[4]);
+          outer2_1(outer2_3[4]).mark("\u{1F9A5}", arg1, arg2);
+          const obj = outer2_1(outer2_3[4]);
         }
       });
       return;
     }
   }
-  const arg1 = Dispatcher;
   let obj = {
     key: "isDispatching",
     value() {
@@ -314,21 +320,22 @@ const tmp4 = () => {
   obj = {
     key: "dispatch",
     value(arg0) {
-      const Dispatcher = this;
+      const self = this;
+      let closure_1 = arg0;
       return new Promise((arg0, arg1) => {
-        const self = arg0;
-        arg0 = arg1;
-        const _waitQueue = self._waitQueue;
+        const _self = arg0;
+        let closure_1 = arg1;
+        const _waitQueue = _self._waitQueue;
         _waitQueue.push(() => {
-          if (null == arg0.functionCache[closure_1.type]) {
-            arg0.functionCache[arg1.type] = (arg0) => closure_0._dispatchWithDevtools(arg0);
-            callback(arg0.functionCache[closure_1.type], `dispatch_${closure_1.type}`);
+          if (null == lib.functionCache[closure_1.type]) {
+            lib.functionCache[closure_1.type] = (arg0) => closure_0._dispatchWithDevtools(arg0);
+            outer3_11(lib.functionCache[closure_1.type], `dispatch_${closure_1.type}`);
           }
-          const functionCache = arg0.functionCache;
-          functionCache[closure_1.type](arg1);
-          arg0();
+          const functionCache = lib.functionCache;
+          functionCache[closure_1.type](closure_1);
+          lib();
         });
-        self.flushWaitQueue();
+        _self.flushWaitQueue();
       });
     }
   };
@@ -337,8 +344,8 @@ const tmp4 = () => {
     key: "dispatchForStoreTest",
     value(type) {
       let iter2;
-      callback(closure_3[5])(false, "dispatchForTest cannot be called in: production");
-      const tmp2 = callback4(this._actionHandlers.getOrderedActionHandlers(type));
+      outer1_1(outer1_3[5])(false, "dispatchForTest cannot be called in: production");
+      const tmp2 = outer1_9(this._actionHandlers.getOrderedActionHandlers(type));
       let iter = tmp2();
       if (!iter.done) {
         do {
@@ -363,7 +370,7 @@ const tmp4 = () => {
       const self = this;
       if (!this._processingWaitQueue) {
         self._processingWaitQueue = true;
-        callback(closure_3[6]).isDispatching = true;
+        outer1_1(outer1_3[6]).isDispatching = true;
         let num3 = 0;
         if (self._waitQueue.length > 0) {
           const sum = num3 + 1;
@@ -373,16 +380,16 @@ const tmp4 = () => {
               do {
                 let _waitQueue = self._waitQueue;
                 let tmp5 = _waitQueue.shift()();
-                let length = self._waitQueue.length;
+                length = self._waitQueue.length;
               } while (length > 0);
             }
-            let tmp6 = callback;
-            let tmp7 = closure_3;
-            let obj = callback(closure_3[6]);
+            let tmp6 = outer1_1;
+            let tmp7 = outer1_3;
+            let obj = outer1_1(outer1_3[6]);
             let emitResult = obj.emit();
           }
-          const serializeResult = callback2(closure_3[7]).serialize();
-          closure_7.error("LastFewActions", serializeResult);
+          const serializeResult = outer1_2(outer1_3[7]).serialize();
+          outer1_7.error("LastFewActions", serializeResult);
           const _sentryUtils = self._sentryUtils;
           if (null != _sentryUtils) {
             obj = { message: "Dispatcher: Dispatch loop detected" };
@@ -394,7 +401,7 @@ const tmp4 = () => {
           throw Error("Dispatch loop detected, aborting");
         }
         self._processingWaitQueue = false;
-        callback(closure_3[6]).isDispatching = false;
+        outer1_1(outer1_3[6]).isDispatching = false;
       }
     }
   };
@@ -407,38 +414,40 @@ const tmp4 = () => {
   items[5] = {
     key: "_dispatchWithLogging",
     value(type) {
-      const Dispatcher = this;
-      type(closure_3[5])(null == this._currentDispatchActionType, "Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch. Action: " + type.type + " Already dispatching: " + this._currentDispatchActionType);
-      type(closure_3[5])(type.type, "Dispatch.dispatch(...) called without an action type");
-      if (set.has(type.type)) {
+      const self = this;
+      let closure_1 = type;
+      outer1_1(outer1_3[5])(null == this._currentDispatchActionType, "Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch. Action: " + type.type + " Already dispatching: " + this._currentDispatchActionType);
+      outer1_1(outer1_3[5])(type.type, "Dispatch.dispatch(...) called without an action type");
+      if (outer1_6.has(type.type)) {
         const _HermesInternal = HermesInternal;
-        closure_7.log("Dispatching " + tmp.type);
+        outer1_7.log("Dispatching " + tmp.type);
       }
-      const tmp2 = type(closure_3[5]);
+      const tmp2 = outer1_1(outer1_3[5]);
       const tmp3 = null == this._currentDispatchActionType;
-      Dispatcher(closure_3[8]).mark(type.type);
-      const obj = Dispatcher(closure_3[8]);
-      callback2(closure_3[7]).add(type.type);
+      Dispatcher(outer1_3[8]).mark(type.type);
+      const obj = Dispatcher(outer1_3[8]);
+      outer1_2(outer1_3[7]).add(type.type);
       const actionLogger = this.actionLogger;
       const logResult1 = actionLogger.log(type, (arg0) => {
-        self._currentDispatchActionType = arg0.type;
-        self._dispatch(arg0, arg0);
+        self._currentDispatchActionType = type.type;
+        self._dispatch(type, arg0);
         self._currentDispatchActionType = null;
       });
       if (logResult1.totalTime > 100) {
         const _HermesInternal2 = HermesInternal;
-        closure_7.verbose("Slow dispatch on " + tmp.type + ": " + logResult1.totalTime + "ms");
+        outer1_7.verbose("Slow dispatch on " + tmp.type + ": " + logResult1.totalTime + "ms");
       }
-      const obj2 = callback2(closure_3[7]);
-      Dispatcher(closure_3[8]).measure("DISPATCH[" + type.type + "]", type.type);
+      const obj2 = outer1_2(outer1_3[7]);
+      Dispatcher(outer1_3[8]).measure("DISPATCH[" + type.type + "]", type.type);
     }
   };
   items[6] = {
     key: "_dispatch",
     value(type) {
       const self = this;
-      const Dispatcher = type;
-      const tmp = callback4(this._interceptors);
+      let closure_0 = type;
+      let closure_1 = arg1;
+      const tmp = outer1_9(this._interceptors);
       let iter = tmp();
       if (!iter.done) {
         while (!iter.value(type)) {
@@ -449,23 +458,22 @@ const tmp4 = () => {
       }
       const orderedActionHandlers = self._actionHandlers.getOrderedActionHandlers(type);
       let num = 0;
-      let closure_3 = 0;
+      let c3 = 0;
       if (0 < orderedActionHandlers.length) {
         do {
-          let tmp2 = function _loop() {
-            const arg0 = obj.actionHandler;
-            if (false !== arg1(orderedActionHandlers[closure_3].name, () => actionHandler(actionHandler))) {
-              obj.storeDidChange(arg0);
+          let tmp2 = (function _loop() {
+            if (false !== callback(orderedActionHandlers[c3].name, () => actionHandler(actionHandler))) {
+              obj.storeDidChange(actionHandler);
             }
-          }();
+          })();
           num = num + 1;
-          closure_3 = num;
+          c3 = num;
         } while (num < length);
       }
-      const tmp3 = self._subscriptions[type.type];
-      if (null != tmp3) {
+      let logger = tmp3;
+      if (null != self._subscriptions[type.type]) {
         arg1("__subscriptions", () => {
-          const item = tmp3.forEach((arg0) => arg0(closure_0));
+          const item = tmp3.forEach((arg0) => arg0(outer1_0));
         });
       }
     }
@@ -501,12 +509,11 @@ const tmp4 = () => {
   items[10] = {
     key: "unsubscribe",
     value: function unsubscribe(arg0, arg1) {
-      const obj = this._subscriptions[arg0];
-      if (null != obj) {
+      if (null != this._subscriptions[arg0]) {
         obj.delete(arg1);
         if (0 === obj.size) {
-          const _subscriptions = tmp._subscriptions;
-          delete r0[r1];
+          const _subscriptions = tmp3._subscriptions;
+          delete tmp[tmp2];
         }
       }
     }
@@ -534,7 +541,4 @@ const tmp4 = () => {
     }
   };
   return callback(Dispatcher, items);
-}();
-const result = arg1(dependencyMap[10]).fileFinishedImporting("../discord_common/js/packages/flux/Dispatcher.tsx");
-
-export const Dispatcher = tmp4;
+})();

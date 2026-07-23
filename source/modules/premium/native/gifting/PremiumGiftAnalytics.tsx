@@ -1,31 +1,28 @@
-// Module ID: 9803
-// Function ID: 76121
+// Module ID: 9810
+// Function ID: 76162
 // Name: PremiumGiftAnalytics
-// Dependencies: []
+// Dependencies: [31, 653, 8809, 7156, 477, 675, 1212, 7157, 2]
 // Exports: default
 
-// Module 9803 (PremiumGiftAnalytics)
-let closure_3 = importAll(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftAnalytics.tsx");
+// Module 9810 (PremiumGiftAnalytics)
+import result from "result";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+let result = require("importDefaultResult1").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftAnalytics.tsx");
 
 export default function PremiumGiftAnalytics(currentStep) {
   currentStep = currentStep.currentStep;
-  const arg1 = currentStep;
-  const nativeGiftContext = arg1(dependencyMap[2]).useNativeGiftContext();
+  const nativeGiftContext = currentStep(productId[2]).useNativeGiftContext();
   const customGiftMessage = nativeGiftContext.customGiftMessage;
-  const importDefault = customGiftMessage;
-  const productId = nativeGiftContext.productId;
-  const dependencyMap = productId;
+  productId = nativeGiftContext.productId;
   const basePurchaseAnalytics = nativeGiftContext.basePurchaseAnalytics;
-  const React = basePurchaseAnalytics;
-  const ref = React.useRef(null);
-  const AnalyticEvents = ref;
-  const timestamp = Date.now();
-  let closure_5 = React.useRef(timestamp);
-  let closure_6 = React.useRef(timestamp);
+  const ref = basePurchaseAnalytics.useRef(null);
+  let timestamp = Date.now();
+  let closure_5 = basePurchaseAnalytics.useRef(timestamp);
+  let closure_6 = basePurchaseAnalytics.useRef(timestamp);
   const items = [basePurchaseAnalytics, currentStep, ref, customGiftMessage, productId];
-  const effect = React.useEffect(() => {
+  const effect = basePurchaseAnalytics.useEffect(() => {
     if (currentStep !== ref.current) {
       const _Date = Date;
       const timestamp = Date.now();
@@ -67,10 +64,10 @@ export default function PremiumGiftAnalytics(currentStep) {
     }
   }, items);
   const items1 = [basePurchaseAnalytics, ref];
-  const effect1 = React.useEffect(() => () => {
-    if (ref.current !== callback(closure_2[3]).PaymentFlowStep.CONFIRM) {
-      callback2(closure_2[5]).track(ref.PAYMENT_FLOW_CANCELED, closure_3);
-      const obj = callback2(closure_2[5]);
+  const effect1 = basePurchaseAnalytics.useEffect(() => () => {
+    if (outer1_4.current !== currentStep(productId[3]).PaymentFlowStep.CONFIRM) {
+      customGiftMessage(productId[5]).track(ref.PAYMENT_FLOW_CANCELED, outer1_3);
+      const obj = customGiftMessage(productId[5]);
     }
   }, items1);
   return currentStep.children;

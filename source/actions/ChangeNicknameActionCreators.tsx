@@ -1,42 +1,42 @@
-// Module ID: 7927
-// Function ID: 63303
-// Dependencies: []
+// Module ID: 7933
+// Function ID: 63340
+// Dependencies: [653, 507, 6691, 1212, 2]
 
-// Module 7927
-const Endpoints = require(dependencyMap[0]).Endpoints;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("actions/ChangeNicknameActionCreators.tsx");
+// Module 7933
+import { Endpoints } from "ME";
+
+let result = require("trackInvite").fileFinishedImporting("actions/ChangeNicknameActionCreators.tsx");
 
 export default {
   changeNickname(guildId, arg1, closure_4, nick) {
-    const require = arg1;
-    const importDefault = nick;
-    const HTTP = require(dependencyMap[1]).HTTP;
-    let obj = { url: Endpoints.GUILD_MEMBER_NICK(guildId, closure_4), body: obj, oldFormErrors: true };
-    obj = { nick, rejectWithError: require(dependencyMap[1]).rejectWithMigratedError() };
-    const obj3 = require(dependencyMap[1]);
+    const _require = arg1;
+    let closure_1 = nick;
+    const HTTP = _require(507).HTTP;
+    obj = { url: Endpoints.GUILD_MEMBER_NICK(guildId, closure_4), body: obj, oldFormErrors: true };
+    obj = { nick, rejectWithError: _require(507).rejectWithMigratedError() };
+    const obj3 = _require(507);
     return HTTP.patch(obj).then((body) => {
-      const arg3 = body.body.nick;
-      arg3(closure_2[2]);
-      if (null != arg3) {
-        if ("" !== arg3) {
-          const intl2 = arg1(closure_2[3]).intl;
-          const obj = { nick: arg3 };
-          let result = intl2.formatToMarkdownString(arg1(closure_2[3]).t.gz+HRq, obj);
+      const nick = body.body.nick;
+      nick(outer1_2[2]);
+      if (null != nick) {
+        if ("" !== nick) {
+          const intl2 = callback(outer1_2[3]).intl;
+          const obj = { nick };
+          let result = intl2.formatToMarkdownString(callback(outer1_2[3]).t["gz+HRq"], obj);
         }
         tmp2(tmp3, result);
       }
-      const intl = arg1(closure_2[3]).intl;
-      result = intl.string(arg1(closure_2[3]).t.Vhpd9A);
+      const intl = callback(outer1_2[3]).intl;
+      result = intl.string(callback(outer1_2[3]).t.Vhpd9A);
     }, (status) => {
       if (403 === status.status) {
-        const intl2 = arg1(closure_2[3]).intl;
-        arg3(closure_2[2]).sendBotMessage(arg1, intl2.formatToMarkdownString(arg1(closure_2[3]).t.Izf9jO, {}));
-        const obj2 = arg3(closure_2[2]);
+        const intl2 = callback(outer1_2[3]).intl;
+        nick(outer1_2[2]).sendBotMessage(callback, intl2.formatToMarkdownString(callback(outer1_2[3]).t.Izf9jO, {}));
+        const obj2 = nick(outer1_2[2]);
       } else {
-        const intl = arg1(closure_2[3]).intl;
-        arg3(closure_2[2]).sendBotMessage(arg1, intl.string(arg1(closure_2[3]).t.5LO/Ss));
-        const obj = arg3(closure_2[2]);
+        const intl = callback(outer1_2[3]).intl;
+        nick(outer1_2[2]).sendBotMessage(callback, intl.string(callback(outer1_2[3]).t["5LO/Ss"]));
+        const obj = nick(outer1_2[2]);
       }
     });
   }

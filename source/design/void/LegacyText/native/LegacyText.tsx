@@ -1,19 +1,17 @@
-// Module ID: 7528
-// Function ID: 60241
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Module ID: 7533
+// Function ID: 60275
+// Dependencies: [31, 27, 653, 33, 4130, 7534, 2]
 
-// Module 7528
-import { Text } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 7533
+import { Text } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
 
-let closure_2 = __exportStarResult1.createStyles({ text: { fontFamily: require("__exportStarResult1").Fonts.PRIMARY_MEDIUM, includeFontPadding: false } });
-const obj = { fontFamily: require("__exportStarResult1").Fonts.PRIMARY_MEDIUM, includeFontPadding: false };
-const result = __exportStarResult1.fileFinishedImporting("design/void/LegacyText/native/LegacyText.tsx");
-
-export default importAllResult.forwardRef((arg0, ref) => {
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ text: { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, includeFontPadding: false } });
+let obj = { fontFamily: require("ME").Fonts.PRIMARY_MEDIUM, includeFontPadding: false };
+const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   let children;
   let style;
   ({ style, children } = arg0);
@@ -21,10 +19,15 @@ export default importAllResult.forwardRef((arg0, ref) => {
   obj.style = 0;
   obj.children = 0;
   const merged = Object.assign(arg0, obj);
+  obj = require(7534) /* useLegacyTextMigrationHighlight */;
   obj = { ref };
+  const legacyTextMigrationHighlight = obj.useLegacyTextMigrationHighlight();
   const merged1 = Object.assign(merged);
-  const items = [callback().text, style];
+  const items = [callback().text, style, legacyTextMigrationHighlight];
   obj["style"] = items;
   obj["children"] = children;
-  return <Text {...obj} />;
+  return <Text ref={arg1} />;
 });
+const result = require("ME").fileFinishedImporting("design/void/LegacyText/native/LegacyText.tsx");
+
+export default forwardRefResult;

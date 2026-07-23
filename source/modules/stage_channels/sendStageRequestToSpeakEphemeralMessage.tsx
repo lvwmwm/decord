@@ -1,17 +1,22 @@
-// Module ID: 16058
-// Function ID: 123290
+// Module ID: 16175
+// Function ID: 125463
 // Name: createRequestToSpeakMessage
-// Dependencies: []
+// Dependencies: [653, 686, 21, 2]
 // Exports: sendStageRequestToSpeakEphemeralMessage
 
-// Module 16058 (createRequestToSpeakMessage)
+// Module 16175 (createRequestToSpeakMessage)
+import ME from "ME";
+
+let closure_2;
+let closure_3;
+let closure_4;
 function createRequestToSpeakMessage(requestToSpeakTimestamp) {
   let channelId;
   let requesterUser;
   requestToSpeakTimestamp = requestToSpeakTimestamp.requestToSpeakTimestamp;
   const obj = {};
   ({ channelId, requesterUser } = requestToSpeakTimestamp);
-  obj.id = importDefault(dependencyMap[2]).fromTimestamp(Date.parse(requestToSpeakTimestamp));
+  obj.id = importDefault(21).fromTimestamp(Date.parse(requestToSpeakTimestamp));
   obj.type = constants3.STAGE_RAISE_HAND;
   obj.flags = constants.EPHEMERAL;
   obj.content = "";
@@ -29,14 +34,14 @@ function createRequestToSpeakMessage(requestToSpeakTimestamp) {
   obj.tts = false;
   return obj;
 }
-const _module = require(dependencyMap[0]);
-({ MessageFlags: closure_2, MessageStates: closure_3, MessageTypes: closure_4 } = _module);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/stage_channels/sendStageRequestToSpeakEphemeralMessage.tsx");
+({ MessageFlags: closure_2, MessageStates: closure_3, MessageTypes: closure_4 } = ME);
+const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/stage_channels/sendStageRequestToSpeakEphemeralMessage.tsx");
 
 export const sendStageRequestToSpeakEphemeralMessage = function sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp) {
-  let obj = importDefault(dependencyMap[1]);
-  obj = { channelId, message: createRequestToSpeakMessage(obj), sendMessageOptions: {} };
+  let obj = importDefault(686);
+  obj = { type: "MESSAGE_CREATE", channelId, message: null, optimistic: false, sendMessageOptions: null, isPushNotification: false };
   obj = { channelId, requesterUser: user, requestToSpeakTimestamp };
+  obj.message = createRequestToSpeakMessage(obj);
+  obj.sendMessageOptions = {};
   obj.dispatch(obj);
 };

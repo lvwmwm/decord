@@ -1,27 +1,27 @@
-// Module ID: 14430
-// Function ID: 108816
+// Module ID: 14544
+// Function ID: 110969
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 1212, 3832, 14528, 2]
 
-// Module 14430 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14544 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t./7xJCF);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["/7xJCF"]);
   },
-  parent: require(dependencyMap[0]).MobileSetting.CONTENT_AND_SOCIAL,
-  IconComponent: require(dependencyMap[4]).FriendsIcon,
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL,
+  IconComponent: require("FriendsIcon").FriendsIcon,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.CONTENT_AND_SOCIAL,
+  route: require("ME").UserSettingsSections.CONTENT_AND_SOCIAL,
   getComponent() {
-    return require(dependencyMap[5]).DiscordPermissionsPage;
+    return require(14528) /* getSocialPermissions */.DiscordPermissionsPage;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ContentAndSocialDiscordRouteSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/ContentAndSocialDiscordRouteSetting.tsx");
 
 export default route;

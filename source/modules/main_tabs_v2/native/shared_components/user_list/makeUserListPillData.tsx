@@ -1,17 +1,19 @@
-// Module ID: 8815
-// Function ID: 69529
+// Module ID: 8822
+// Function ID: 69570
 // Name: makeUserListPillData
-// Dependencies: []
+// Dependencies: [31, 33, 3969, 1273, 2]
 // Exports: default
 
-// Module 8815 (makeUserListPillData)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/makeUserListPillData.tsx");
+// Module 8822 (makeUserListPillData)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("conceal").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/makeUserListPillData.tsx");
 
 export default function makeUserListPillData(id) {
-  let obj = { id: id.id, text: importDefault(dependencyMap[2]).getName(id) };
-  obj = { user: id, guildId: undefined, size: arg1(dependencyMap[3]).AvatarSizes.XXSMALL };
-  obj.icon = jsx(arg1(dependencyMap[3]).Avatar, obj);
+  let obj = { id: id.id, text: importDefault(3969).getName(id) };
+  obj = { user: id, guildId: undefined, size: require(1273) /* Button */.AvatarSizes.XXSMALL };
+  obj.icon = jsx(require(1273) /* Button */.Avatar, { user: id, guildId: undefined, size: require(1273) /* Button */.AvatarSizes.XXSMALL });
   return obj;
 };

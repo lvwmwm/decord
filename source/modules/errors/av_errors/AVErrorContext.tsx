@@ -1,40 +1,45 @@
-// Module ID: 16411
-// Function ID: 126777
+// Module ID: 16528
+// Function ID: 128951
 // Name: getCommonErrorContext
-// Dependencies: []
+// Dependencies: [4177, 4202, 1906, 4216, 4227, 4194, 2]
 // Exports: getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 16411 (getCommonErrorContext)
+// Module 16528 (getCommonErrorContext)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getCommonErrorContext() {
   const obj = {};
   const videoDevices = store.getVideoDevices();
+  const tmp2 = videoDevices[store.getVideoDeviceId(store)];
   let name;
-  if (null != videoDevices[closure_2.getVideoDeviceId(closure_2)]) {
+  if (null != tmp2) {
     name = tmp2.name;
   }
   obj.videoDeviceName = name;
   const inputDevices = store.getInputDevices();
+  const tmp5 = inputDevices[store.getInputDeviceId(store)];
   let name1;
-  if (null != inputDevices[closure_2.getInputDeviceId(closure_2)]) {
+  if (null != tmp5) {
     name1 = tmp5.name;
   }
   obj.audioInputDeviceName = name1;
   const outputDevices = store.getOutputDevices();
+  const tmp8 = outputDevices[store.getOutputDeviceId(store)];
   let name2;
-  if (null != outputDevices[closure_2.getOutputDeviceId(closure_2)]) {
+  if (null != tmp8) {
     name2 = tmp8.name;
   }
   obj.audioOutputDeviceName = name2;
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/errors/av_errors/AVErrorContext.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/AVErrorContext.tsx");
 
 export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext() {
-  const voiceChannelId = voiceChannelId.getVoiceChannelId();
+  voiceChannelId = voiceChannelId.getVoiceChannelId();
   const obj = {};
   let tmp2;
   if (null != voiceChannelId) {
@@ -48,16 +53,16 @@ export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext(
   }
   obj.mediaSessionId = tmp4;
   obj.rtcConnectionId = store2.getRTCConnectionId();
-  obj.mediaContext = arg1(dependencyMap[4]).MediaEngineContextTypes.DEFAULT;
+  obj.mediaContext = require(4227) /* getMediaEngineImpl */.MediaEngineContextTypes.DEFAULT;
   const merged = Object.assign(getCommonErrorContext());
   return obj;
 };
 export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
   let channelId;
   let ownerId;
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(4194) /* isStreamKey */;
   ({ channelId, ownerId } = obj.decodeStreamKey(streamKey));
-  const rTCConnection = rTCConnection.getRTCConnection(streamKey);
+  rTCConnection = rTCConnection.getRTCConnection(streamKey);
   obj = { channelId };
   let mediaSessionId;
   if (null != rTCConnection) {
@@ -73,7 +78,7 @@ export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
     rTCConnectionId = rTCConnection.getRTCConnectionId();
   }
   obj.rtcConnectionId = rTCConnectionId;
-  obj.mediaContext = arg1(dependencyMap[4]).MediaEngineContextTypes.STREAM;
+  obj.mediaContext = require(4227) /* getMediaEngineImpl */.MediaEngineContextTypes.STREAM;
   obj.streamKey = streamKey;
   obj.userId = ownerId;
   const merged = Object.assign(getCommonErrorContext());

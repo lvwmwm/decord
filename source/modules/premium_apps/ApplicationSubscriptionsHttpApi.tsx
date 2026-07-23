@@ -1,37 +1,35 @@
-// Module ID: 10807
-// Function ID: 83926
+// Module ID: 10817
+// Function ID: 83975
 // Name: _getApplicationSubscriptionGroupListingsForApplication
-// Dependencies: []
+// Dependencies: [5, 653, 507, 686, 4030, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 10807 (_getApplicationSubscriptionGroupListingsForApplication)
+// Module 10817 (_getApplicationSubscriptionGroupListingsForApplication)
+import set from "set";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _getApplicationSubscriptionGroupListingsForApplication() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getApplicationSubscriptionGroupListingsForApplication = obj;
   return obj(...arguments);
 }
 function _getEntitlementsForGuild() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getEntitlementsForGuild = obj;
   return obj(...arguments);
 }
 function _getSubscriptionGroupForSubscriptionPlan() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getSubscriptionGroupForSubscriptionPlan = obj;
   return obj(...arguments);
 }
 function _fetchEligibleApplicationSubscriptionGuilds() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchEligibleApplicationSubscriptionGuilds = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsHttpApi.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsHttpApi.tsx");
 
 export const getApplicationSubscriptionGroupListingsForApplication = function getApplicationSubscriptionGroupListingsForApplication(applicationId, groupListingId) {
   return _getApplicationSubscriptionGroupListingsForApplication(...arguments);
@@ -43,24 +41,24 @@ export const getSubscriptionGroupForSubscriptionPlan = function getSubscriptionG
   return _getSubscriptionGroupForSubscriptionPlan(...arguments);
 };
 export const fetchApplication = function fetchApplication(applicationId, signal) {
-  signal = applicationId;
-  let obj = importDefault(dependencyMap[3]);
+  const _require = applicationId;
+  let obj = importDefault(686);
   obj = { type: "APPLICATION_FETCH", applicationId };
   obj.dispatch(obj);
-  const HTTP = signal(dependencyMap[2]).HTTP;
-  obj = { url: Endpoints.APPLICATION_PUBLIC(applicationId), signal, rejectWithError: signal(dependencyMap[2]).rejectWithMigratedError() };
+  const HTTP = _require(507).HTTP;
+  obj = { url: Endpoints.APPLICATION_PUBLIC(applicationId), signal, rejectWithError: _require(507).rejectWithMigratedError() };
   const value = HTTP.get(obj);
-  const obj4 = signal(dependencyMap[2]);
+  const obj4 = _require(507);
   return value.then((body) => {
-    let obj = callback(closure_2[3]);
-    obj = { maskRemainder: "rgba(0, 0, 0, 0.5)", overflow: 24, cardSection: "flex", application: body.body };
+    let obj = outer1_1(outer1_2[3]);
+    obj = { type: "APPLICATION_FETCH_SUCCESS", application: body.body, isHydrated: true };
     obj.dispatch(obj);
     return body.body;
   }).catch((arg0) => {
-    let obj = callback(closure_2[3]);
-    obj = { type: "APPLICATION_FETCH_FAIL", applicationId: arg0 };
+    let obj = outer1_1(outer1_2[3]);
+    obj = { type: "APPLICATION_FETCH_FAIL", applicationId: closure_0 };
     obj.dispatch(obj);
-    let tmp2 = callback(closure_2[4]);
+    let tmp2 = outer1_1(outer1_2[4]);
     tmp2 = new tmp2(arg0);
     return Promise.reject(tmp2);
   });

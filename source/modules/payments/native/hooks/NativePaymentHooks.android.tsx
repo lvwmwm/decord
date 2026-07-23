@@ -1,10 +1,17 @@
-// Module ID: 7996
-// Function ID: 63566
+// Module ID: 8002
+// Function ID: 63603
 // Name: notSupported
-// Dependencies: []
+// Dependencies: [5, 57, 31, 5621, 3, 566, 22, 7160, 3791, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useResubscribeSubscription
 
-// Module 7996 (notSupported)
+// Module 8002 (notSupported)
+import initialize from "initialize";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+const require = arg1;
 function notSupported() {
   const error = new Error("Native hook not supported for android");
   throw error;
@@ -17,38 +24,37 @@ function useNativeIAPPayments() {
   return closure_8;
 }
 function useGoogleSkuIds(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const items = [closure_6];
-  const isFetchingGoogleSkus = arg1(dependencyMap[5]).useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
-  const dependencyMap = isFetchingGoogleSkus;
-  let closure_3 = React.useRef([]);
+  const _require = arg0;
+  let closure_1 = arg1;
+  const items = [_isNativeReflectConstruct];
+  isFetchingGoogleSkus = _require(isFetchingGoogleSkus[5]).useStateFromStores(items, () => outer1_6.isFetchingGoogleSkus());
+  let initialize = React.useRef([]);
   const fetchError = callback(React.useState(null), 2);
-  const callback = fetchError[1];
+  callback = fetchError[1];
   const items1 = [arg1, isFetchingGoogleSkus, arg0];
   const effect = React.useEffect(() => {
     async function _fetch() {
-      if (callback) {
-        ref.current = [];
+      if (outer3_1) {
+        outer3_3.current = [];
       }
-      const differenceResult = callback(closure_2[6]).difference(lib, ref.current);
-      if (!closure_2) {
-        if (!callback) {
-          if (0 !== lib.length) {
+      const differenceResult = callback2(isFetchingGoogleSkus[6]).difference(_fetch, outer3_3.current);
+      if (!outer3_2) {
+        if (!outer3_1) {
+          if (0 !== _fetch.length) {
             if (0 !== differenceResult.length) {
-              yield lib(closure_2[7]).loadInAppSkus(differenceResult);
-              const obj3 = lib(closure_2[7]);
-              ref.current = callback(closure_2[6]).union(ref.current, differenceResult);
-              callback2(null);
-              const obj2 = callback(closure_2[6]);
+              yield callback(isFetchingGoogleSkus[7]).loadInAppSkus(differenceResult);
+              const obj3 = callback(isFetchingGoogleSkus[7]);
+              outer3_3.current = callback2(isFetchingGoogleSkus[6]).union(outer3_3.current, differenceResult);
+              outer3_4(null);
+              const obj2 = callback2(isFetchingGoogleSkus[6]);
             }
           }
         }
       }
     }
-    !function fetch() {
+    !(function fetch() {
       return _fetch(...arguments);
-    }();
+    })();
   }, items1);
   return { isFetchingGoogleSkus, fetchError: fetchError[0] };
 }
@@ -67,14 +73,9 @@ function useCreateSubscription(arg0) {
     return obj;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("NativePaymentHooks.android.tsx");
-let closure_8 = {};
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.android.tsx");
+let closure_8 = { nativePaymentsConnected: true, storeFront: null };
+const result = require("result").fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.android.tsx");
 
 export default { useNativeIAPPayments, useGoogleSkuIds, useCreateSubscription, useCancelSubscription, useResubscribeSubscription };
 export { useNativeIAPPayments };

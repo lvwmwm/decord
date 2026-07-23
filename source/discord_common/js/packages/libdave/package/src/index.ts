@@ -1,13 +1,12 @@
-// Module ID: 8876
-// Function ID: 69989
+// Module ID: 8883
+// Function ID: 70030
 // Name: generateDisplayableCode
-// Dependencies: []
+// Dependencies: [2, 8884, 8885, 8886, 8895]
 
-// Module 8876 (generateDisplayableCode)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/index.ts");
+// Module 8883 (generateDisplayableCode)
+const result = require("_generateKeyFingerprint").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/index.ts");
 
-export const generateDisplayableCode = require(dependencyMap[1]).generateDisplayableCode;
-export const generateKeyFingerprint = require(dependencyMap[2]).generateKeyFingerprint;
-export const generatePairwiseFingerprint = require(dependencyMap[3]).generatePairwiseFingerprint;
-export const serializeKey = require(dependencyMap[4]).serializeKey;
+export const generateDisplayableCode = require("generateDisplayableCode").generateDisplayableCode;
+export const generateKeyFingerprint = require("_generateKeyFingerprint").generateKeyFingerprint;
+export const generatePairwiseFingerprint = require("compareArrays").generatePairwiseFingerprint;
+export const serializeKey = require("serializeKey").serializeKey;

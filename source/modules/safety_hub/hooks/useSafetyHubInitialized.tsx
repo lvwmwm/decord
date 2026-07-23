@@ -1,14 +1,16 @@
-// Module ID: 11045
-// Function ID: 85977
+// Module ID: 11055
+// Function ID: 86027
 // Name: useSafetyHubInitialized
-// Dependencies: []
+// Dependencies: [11026, 566, 2]
 // Exports: useSafetyHubInitialized
 
-// Module 11045 (useSafetyHubInitialized)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubInitialized.tsx");
+// Module 11055 (useSafetyHubInitialized)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubInitialized.tsx");
 
 export const useSafetyHubInitialized = function useSafetyHubInitialized() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => initialized.isInitialized());
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.isInitialized());
 };

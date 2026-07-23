@@ -1,17 +1,19 @@
-// Module ID: 14087
-// Function ID: 106947
+// Module ID: 14201
+// Function ID: 109103
 // Name: CircleMinusIcon
-// Dependencies: [7656, 1212, 10087, 3801, 2, 7656, 10087, 1212]
+// Dependencies: [31, 27, 33, 689, 3833, 14202, 14203, 2]
 // Exports: CircleMinusIcon
 
-// Module 14087 (CircleMinusIcon)
-import "MobileSetting";
-import { View } from "getSystemLocale";
-import createToggle from "createToggle";
-import getSystemLocale from "getSystemLocale";
+// Module 14201 (CircleMinusIcon)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
 
-({ jsx: closure_4, jsxs: closure_5 } = createToggle);
-const result = getSystemLocale.fileFinishedImporting("design/components/Icon/native/redesign/generated/CircleMinusIcon.tsx");
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/redesign/generated/CircleMinusIcon.tsx");
 
 export const CircleMinusIcon = function CircleMinusIcon(color) {
   let secondaryColor;
@@ -22,21 +24,21 @@ export const CircleMinusIcon = function CircleMinusIcon(color) {
   }
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = { -1435702126: "spring", -1718953382: 0.4, 2085832679: 1 };
+  let obj = { style: 0, secondaryColor: 0, color: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
-  obj = { source: arg1(dependencyMap[5]), color: secondaryColor, style };
+  obj = { source: require(14202) /* registerAsset */, color: secondaryColor, style };
   const merged1 = Object.assign(merged);
-  const items = [callback(arg1(dependencyMap[4]).BaseIconImage, obj), ];
-  const obj1 = { source: arg1(dependencyMap[6]), color: INTERACTIVE_ICON_DEFAULT };
+  const items = [callback(require(3833) /* BaseIconImage */.BaseIconImage, obj), ];
+  const obj1 = { source: require(14203) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
-  const items2 = [...items1.flat(), { 10360: 40, 10496: 40 }];
+  const items2 = [...items1.flat(), { position: "absolute", top: 0 }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
-  items[1] = callback(arg1(dependencyMap[4]).BaseIconImage, obj1);
+  items[1] = callback(require(3833) /* BaseIconImage */.BaseIconImage, obj1);
   obj.children = items;
   return callback2(View, obj);
 };

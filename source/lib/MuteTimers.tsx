@@ -1,17 +1,14 @@
-// Module ID: 3759
-// Function ID: 28805
+// Module ID: 3761
+// Function ID: 28810
 // Name: MuteTimers
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 // Exports: computeIsMuted, isTemporarilyMuted
 
-// Module 3759 (MuteTimers)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 3761 (MuteTimers)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("lib/MuteTimers.tsx");
-
-export default () => {
+let tmp2 = (() => {
   class MuteTimers {
     constructor() {
       tmp = MuteTimers(this, MuteTimers);
@@ -19,7 +16,6 @@ export default () => {
       return;
     }
   }
-  let closure_0 = MuteTimers;
   let obj = {
     key: "reset",
     value() {
@@ -66,17 +62,20 @@ export default () => {
     key: "clearTimer",
     value(arg0) {
       const self = this;
-      if (tmp) {
+      if (tmp3) {
         const _clearTimeout = clearTimeout;
         clearTimeout(self.timers[arg0]);
         const timers = self.timers;
-        delete r0[r1];
+        delete tmp[tmp2];
       }
     }
   };
   items[2] = obj;
   return callback(MuteTimers, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("lib/MuteTimers.tsx");
+
+export default tmp2;
 export const computeIsMuted = function computeIsMuted(mute_config) {
   mute_config = mute_config.mute_config;
   let tmp2 = !tmp;

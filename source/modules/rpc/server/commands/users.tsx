@@ -1,31 +1,32 @@
-// Module ID: 13315
-// Function ID: 101157
+// Module ID: 13429
+// Function ID: 103313
 // Name: RPC_EMBEDDED_APP_SCOPE
-// Dependencies: []
+// Dependencies: [1849, 4033, 653, 13403, 10502, 2]
 
-// Module 13315 (RPC_EMBEDDED_APP_SCOPE)
+// Module 13429 (RPC_EMBEDDED_APP_SCOPE)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
+import { RPCCommands } from "ME";
+import createRPCCommand from "createRPCCommand";
+
 let RPC_EMBEDDED_APP_SCOPE;
 let RPC_LOCAL_SCOPE;
 let RPC_SCOPE_CONFIG;
-let closure_2 = importDefault(dependencyMap[0]);
-({ RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = arg1(dependencyMap[1]));
-const RPCCommands = arg1(dependencyMap[2]).RPCCommands;
+({ RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
 let obj = {};
-const tmp2 = arg1(dependencyMap[1]);
 obj = {
   scope: { [RPC_SCOPE_CONFIG.ANY]: items },
   handler(args) {
-    const user = user.getUser(args.args.id);
+    user = user.getUser(args.args.id);
     let tmp2 = null;
     if (null != user) {
-      tmp2 = importDefault(dependencyMap[4])(user);
+      tmp2 = importDefault(10502)(user);
     }
     return tmp2;
   }
 };
-const items = [RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE];
-obj[RPCCommands.GET_USER] = arg1(dependencyMap[3]).createRPCCommand(RPCCommands.GET_USER, obj);
-const obj2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/rpc/server/commands/users.tsx");
+items = [RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE];
+obj[RPCCommands.GET_USER] = createRPCCommand.createRPCCommand(RPCCommands.GET_USER, obj);
+const result = require("ME").fileFinishedImporting("modules/rpc/server/commands/users.tsx");
 
 export default obj;

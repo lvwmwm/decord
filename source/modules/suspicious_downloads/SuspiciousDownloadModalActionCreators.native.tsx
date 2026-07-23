@@ -1,15 +1,14 @@
-// Module ID: 12103
-// Function ID: 93308
-// Dependencies: []
+// Module ID: 12217
+// Function ID: 95459
+// Dependencies: [4098, 12218, 1934, 2]
 
-// Module 12103
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadModalActionCreators.native.tsx");
+// Module 12217
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadModalActionCreators.native.tsx");
 
 export default {
   show(href) {
-    let obj = importDefault(dependencyMap[0]);
+    let obj = importDefault(4098);
     obj = { href };
-    obj.openLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), "suspicious-download", obj);
+    obj.openLazy(require(1934) /* maybeLoadBundle */(12218, dependencyMap.paths), "suspicious-download", obj);
   }
 };

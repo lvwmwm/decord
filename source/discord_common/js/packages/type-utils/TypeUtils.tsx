@@ -1,12 +1,11 @@
 // Module ID: 1361
-// Function ID: 16292
+// Function ID: 16293
 // Name: exact
-// Dependencies: []
+// Dependencies: [2]
 // Exports: arrayIsNotEmpty, assertUnreachable, dangerouslyCast, exact, hasOwnProperty
 
 // Module 1361 (exact)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/type-utils/TypeUtils.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/type-utils/TypeUtils.tsx");
 
 export function exact(arg0) {
   return arg0;
@@ -17,7 +16,7 @@ export const hasOwnProperty = function hasOwnProperty(arg0, arg1) {
 export const dangerouslyCast = function dangerouslyCast(type, ForumChannelRecord) {
   return Object.setPrototypeOf(type, ForumChannelRecord.prototype);
 };
-export const assertUnreachable = function assertUnreachable(id, arg1) {
+export const assertUnreachable = function assertUnreachable(closure_0, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};

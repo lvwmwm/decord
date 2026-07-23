@@ -1,44 +1,45 @@
-// Module ID: 8564
-// Function ID: 68070
+// Module ID: 8571
+// Function ID: 68110
 // Name: renderTooltipItem
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 3991, 8572, 3849, 8568, 8569, 2]
 // Exports: AnimatedCoachmark
 
-// Module 8564 (renderTooltipItem)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const StyleSheet = arg1(dependencyMap[2]).StyleSheet;
-const jsx = arg1(dependencyMap[3]).jsx;
+// Module 8571 (renderTooltipItem)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { StyleSheet } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function renderTooltipItem(arg0, arg1) {
   let obj = { style: items, pointerEvents: "box-none" };
-  const items = [arg1, StyleSheet.absoluteFill];
+  items = [arg1, StyleSheet.absoluteFill];
   let tmp2 = null;
   if (null != arg0) {
     obj = {};
     const merged = Object.assign(arg0);
     obj["enterExitAnimatedStyles"] = arg1;
-    tmp2 = jsx(arg1(dependencyMap[5]).CoachmarkContainer, obj);
+    tmp2 = jsx(require(8572) /* Coachmark */.CoachmarkContainer, {});
   }
   obj.children = tmp2;
-  return jsx(importDefault(dependencyMap[4]).View, obj);
+  return jsx(importDefault(3991).View, { style: items, pointerEvents: "box-none" });
 }
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
 
 export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   visible = visible.visible;
-  const arg1 = visible;
   let obj = Object.create(null);
   obj.visible = 0;
   const merged = Object.assign(visible, obj);
   const tmp3 = callback(React.useState(visible), 2);
   const importDefault = tmp3[1];
-  obj = arg1(dependencyMap[7]);
+  obj = visible(8568);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const items = [visible];
   const effect = React.useEffect(() => {
     callback(visible);
   }, items);
-  obj = { useReducedMotion: React.useContext(arg1(dependencyMap[6]).AccessibilityPreferencesContext).reducedMotion.enabled };
+  obj = { useReducedMotion: React.useContext(visible(3849).AccessibilityPreferencesContext).reducedMotion.enabled };
   let tmp8;
   if (tmp3[0]) {
     tmp8 = merged;
@@ -47,5 +48,5 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   obj.entering = result;
   obj.exiting = result;
   obj.renderItem = renderTooltipItem;
-  return jsx(importDefault(dependencyMap[8]), obj);
+  return jsx(importDefault(8569), { useReducedMotion: React.useContext(visible(3849).AccessibilityPreferencesContext).reducedMotion.enabled });
 };

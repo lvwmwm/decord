@@ -1,13 +1,15 @@
-// Module ID: 11202
-// Function ID: 87248
+// Module ID: 11212
+// Function ID: 87298
 // Name: RecommendationAppRow
-// Dependencies: []
+// Dependencies: [31, 33, 1392, 11202, 2]
 // Exports: default
 
-// Module 11202 (RecommendationAppRow)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/app_launcher/native/base_components/RecommendationAppRow.tsx");
+// Module 11212 (RecommendationAppRow)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("getAvatarURL").fileFinishedImporting("modules/app_launcher/native/base_components/RecommendationAppRow.tsx");
 
 export default function RecommendationAppRow(isLastRow) {
   let application;
@@ -24,9 +26,9 @@ export default function RecommendationAppRow(isLastRow) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(1392);
   obj = { id: application.id, icon: application.icon, bot: application.bot, botIconFirst: true };
   const applicationIconSource = obj.getApplicationIconSource(obj);
   obj = { application, iconSource: applicationIconSource, onPress: isLastRow.onPress, isFirstRow, isLastRow: flag, showsPromoted: flag2 };
-  return jsx(arg1(dependencyMap[3]).BaseAppRow, obj);
+  return jsx(require(11202) /* AppRowLabel */.BaseAppRow, { application, iconSource: applicationIconSource, onPress: isLastRow.onPress, isFirstRow, isLastRow: flag, showsPromoted: flag2 });
 };

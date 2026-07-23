@@ -1,29 +1,29 @@
-// Module ID: 13472
-// Function ID: 102267
+// Module ID: 13586
+// Function ID: 104423
 // Name: getDisplayNameStylesFontName
-// Dependencies: []
+// Dependencies: [1863, 2556, 2]
 // Exports: default
 
-// Module 13472 (getDisplayNameStylesFontName)
+// Module 13586 (getDisplayNameStylesFontName)
 const obj = {};
-obj[arg1(dependencyMap[0]).DisplayNameFont.DEFAULT] = importDefault(dependencyMap[1]).ZEL6mz;
-obj[arg1(dependencyMap[0]).DisplayNameFont.CHERRY_BOMB] = importDefault(dependencyMap[1]).rN7cuX;
-obj[arg1(dependencyMap[0]).DisplayNameFont.CHICLE] = importDefault(dependencyMap[1]).CbHHnL;
-obj[arg1(dependencyMap[0]).DisplayNameFont.MUSEO_MODERNO] = importDefault(dependencyMap[1]).iEcEKO;
-obj[arg1(dependencyMap[0]).DisplayNameFont.NEO_CASTEL] = importDefault(dependencyMap[1]).DL7jLZ;
-obj[arg1(dependencyMap[0]).DisplayNameFont.PIXELIFY] = importDefault(dependencyMap[1]).jq4aRp;
-obj[arg1(dependencyMap[0]).DisplayNameFont.SINISTRE] = importDefault(dependencyMap[1]).jV9DN4;
-obj[arg1(dependencyMap[0]).DisplayNameFont.ZILLA_SLAB] = importDefault(dependencyMap[1]).KMR8rT;
-obj[arg1(dependencyMap[0]).DisplayNameFont.PLAYPEN_SANS] = importDefault(dependencyMap[1]).RP8HFf;
-obj[arg1(dependencyMap[0]).DisplayNameFont.ORBITRON] = importDefault(dependencyMap[1]).pwbAIk;
-obj[arg1(dependencyMap[0]).DisplayNameFont.NEW_ROCKER] = importDefault(dependencyMap[1]).Llo/Ia;
-obj[arg1(dependencyMap[0]).DisplayNameFont.KALAM] = importDefault(dependencyMap[1]).t9Les4;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/display_name_styles/getDisplayNameStylesFontName.tsx");
+obj[require("DisplayNameFont").DisplayNameFont.DEFAULT] = require("messagesProxy").ZEL6mz;
+obj[require("DisplayNameFont").DisplayNameFont.CHERRY_BOMB] = require("messagesProxy").rN7cuX;
+obj[require("DisplayNameFont").DisplayNameFont.CHICLE] = require("messagesProxy").CbHHnL;
+obj[require("DisplayNameFont").DisplayNameFont.MUSEO_MODERNO] = require("messagesProxy").iEcEKO;
+obj[require("DisplayNameFont").DisplayNameFont.NEO_CASTEL] = require("messagesProxy").DL7jLZ;
+obj[require("DisplayNameFont").DisplayNameFont.PIXELIFY] = require("messagesProxy").jq4aRp;
+obj[require("DisplayNameFont").DisplayNameFont.SINISTRE] = require("messagesProxy").jV9DN4;
+obj[require("DisplayNameFont").DisplayNameFont.ZILLA_SLAB] = require("messagesProxy").KMR8rT;
+obj[require("DisplayNameFont").DisplayNameFont.PLAYPEN_SANS] = require("messagesProxy").RP8HFf;
+obj[require("DisplayNameFont").DisplayNameFont.ORBITRON] = require("messagesProxy").pwbAIk;
+obj[require("DisplayNameFont").DisplayNameFont.NEW_ROCKER] = require("messagesProxy")["Llo/Ia"];
+obj[require("DisplayNameFont").DisplayNameFont.KALAM] = require("messagesProxy").t9Les4;
+const result = require("set").fileFinishedImporting("modules/display_name_styles/getDisplayNameStylesFontName.tsx");
 
 export default function getDisplayNameStylesFontName(arg0) {
   let ZEL6mz = obj[arg0];
   if (null == ZEL6mz) {
-    ZEL6mz = importDefault(dependencyMap[1]).ZEL6mz;
+    ZEL6mz = importDefault(2556).ZEL6mz;
   }
   return ZEL6mz;
 };

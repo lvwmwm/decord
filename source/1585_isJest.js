@@ -1,10 +1,13 @@
 // Module ID: 1585
-// Function ID: 17700
+// Function ID: 17701
 // Name: isJest
-// Dependencies: []
+// Dependencies: [31, 27]
 // Exports: isAndroid, isFabric, isIOS, isMacOS, isReact19, isWeb, isWindowAvailable, shouldBeUseWeb
 
 // Module 1585 (isJest)
+import { version } from "result";
+import { Platform } from "get ActivityIndicator";
+
 function isJest() {
   return process.env.JEST_WORKER_ID;
 }
@@ -18,8 +21,6 @@ function isChromeDebugger() {
   }
   return !RN$Bridgeless;
 }
-const version = require(dependencyMap[0]).version;
-const Platform = require(dependencyMap[1]).Platform;
 
 export { isJest };
 export { isChromeDebugger };

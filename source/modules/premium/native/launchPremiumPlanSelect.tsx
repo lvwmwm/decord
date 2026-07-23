@@ -1,13 +1,13 @@
-// Module ID: 6642
-// Function ID: 51009
+// Module ID: 6647
+// Function ID: 51038
 // Name: launchPremiumPlanSelect
-// Dependencies: []
+// Dependencies: [653, 6648, 4337, 6649, 1934, 6649, 5793, 2]
 // Exports: launchPremiumPlanSelect
 
-// Module 6642 (launchPremiumPlanSelect)
-const UserSettingsSections = require(dependencyMap[0]).UserSettingsSections;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
+// Module 6647 (launchPremiumPlanSelect)
+import { UserSettingsSections } from "ME";
+
+let result = require("module_4337").fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
 
 export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostPurchaseFlow) {
   let analyticsLocation;
@@ -18,8 +18,9 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
   let onPaymentDismiss;
   let onPaymentSuccess;
   let planId;
+  let require;
   let showCurrentPlan;
-  ({ predicate: closure_0, navigation, showCurrentPlan } = isBoostPurchaseFlow);
+  ({ predicate: require, navigation, showCurrentPlan } = isBoostPurchaseFlow);
   if (showCurrentPlan === undefined) {
     showCurrentPlan = true;
   }
@@ -29,7 +30,7 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
   }
   ({ analyticsLocation, analyticsLocations, planId, applicationId, guildId, onPaymentSuccess, onPaymentDismiss } = isBoostPurchaseFlow);
   function wrappedPredicate(isDeprecated) {
-    let tmp = !callback(closure_2[1]).shouldAlwaysExcludeFromPlanSelect(isDeprecated);
+    let tmp = !outer1_0(outer1_2[1]).shouldAlwaysExcludeFromPlanSelect(isDeprecated);
     if (tmp) {
       let tmp4;
       if (null != callback) {
@@ -46,9 +47,9 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
     navigation.push(PREMIUM_PLAN_SELECT, obj);
   } else {
     obj = { initialRoute: PREMIUM_PLAN_SELECT, analyticsLocation, analyticsLocations, predicate: wrappedPredicate, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onBack: tmp, onPaymentSuccess, onPaymentDismiss };
-    const obj3 = importDefault(dependencyMap[2]);
-    obj3.pushLazy(require(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), obj, require(dependencyMap[5]).PREMIUM_KEY);
-    const tmp7 = require(dependencyMap[4])(dependencyMap[3], dependencyMap.paths);
+    const obj3 = importDefault(4337);
+    obj3.pushLazy(require(1934) /* maybeLoadBundle */(6649, dependencyMap.paths), obj, require(6649) /* getScreens */.PREMIUM_KEY);
+    const tmp7 = require(1934) /* maybeLoadBundle */(6649, dependencyMap.paths);
   }
-  const result = require(dependencyMap[6]).trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
+  const result = require(5793) /* getSanitizedRestrictedGuilds */.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
 };

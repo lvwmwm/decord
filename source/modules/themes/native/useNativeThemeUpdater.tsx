@@ -1,35 +1,37 @@
-// Module ID: 15521
-// Function ID: 118425
+// Module ID: 15638
+// Function ID: 120598
 // Name: useNativeThemeUpdater
-// Dependencies: [261423104, 1017839616, 296288256, 79429632, 293928960, 1017970688]
+// Dependencies: [31, 1278, 1324, 15639, 15640, 2]
 // Exports: default
 
-// Module 15521 (useNativeThemeUpdater)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/themes/native/useNativeThemeUpdater.tsx");
+// Module 15638 (useNativeThemeUpdater)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let require = arg1;
+const result = require("useIsMobileVisualRefreshExperimentEnabled").fileFinishedImporting("modules/themes/native/useNativeThemeUpdater.tsx");
 
 export default function useNativeThemeUpdater() {
-  const tmp = importDefault(dependencyMap[2])("useNativeThemeUpdater");
-  const arg1 = tmp;
-  const importDefault = React.useRef(theme.theme);
+  const tmp = importDefault(1324)("useNativeThemeUpdater");
+  const require = tmp;
+  importDefault = React.useRef(theme.theme);
   const items = [tmp];
   const layoutEffect = React.useLayoutEffect(() => {
-    tmp(closure_2[3]).updateVisualRefresh(tmp);
+    tmp(outer1_2[3]).updateVisualRefresh(tmp);
   }, items);
   const layoutEffect1 = React.useLayoutEffect(() => {
-    function handleThemeUpdate(arg0) {
-      const theme = closure_4.theme;
-      if (theme !== ref.current) {
-        ref.current = theme;
-        handleThemeUpdate(closure_2[4]).updateTheme(theme);
-        const obj = handleThemeUpdate(closure_2[4]);
+    function handleThemeUpdate() {
+      const theme = outer2_4.theme;
+      if (theme !== outer1_1.current) {
+        outer1_1.current = theme;
+        handleThemeUpdate(outer2_2[4]).updateTheme(theme);
+        const obj = handleThemeUpdate(outer2_2[4]);
       }
     }
-    handleThemeUpdate(closure_2[4]).updateTheme(closure_4.theme);
-    closure_4.addChangeListener(handleThemeUpdate);
+    tmp(outer1_2[4]).updateTheme(outer1_4.theme);
+    outer1_4.addChangeListener(handleThemeUpdate);
     return () => {
-      closure_4.removeChangeListener(handleThemeUpdate);
+      outer2_4.removeChangeListener(handleThemeUpdate);
     };
   }, []);
 };

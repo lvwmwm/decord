@@ -1,33 +1,34 @@
 // Module ID: 1472
-// Function ID: 17122
+// Function ID: 17123
 // Name: useChildListeners
-// Dependencies: []
+// Dependencies: [31]
 // Exports: default
 
 // Module 1472 (useChildListeners)
-let closure_0 = importAll(dependencyMap[0]);
+import result from "result";
+
 
 export default function useChildListeners() {
-  const current = React.useRef({ action: [], focus: [] }).current;
-  const React = current;
+  current = current.useRef({ action: [], focus: [] }).current;
   const items = [current];
   return {
     listeners: current,
-    addListener: React.useCallback((arg0, arg1) => {
-      const current = arg0;
-      let arr = current[arg0];
+    addListener: current.useCallback((arg0, arg1) => {
+      const table = arg0;
+      let closure_1 = arg1;
+      let arr = table[arg0];
       arr = arr.push(arg1);
-      let closure_2 = false;
+      let c2 = false;
       return () => {
-        const index = arg0[closure_0].indexOf(arg1);
-        let tmp2 = !closure_2;
-        if (!closure_2) {
+        const index = dependencyMap[dependencyMap].indexOf(closure_1);
+        let tmp2 = !c2;
+        if (!c2) {
           tmp2 = index > -1;
         }
         if (tmp2) {
-          closure_2 = true;
-          arg0[closure_0].splice(index, 1);
-          const arr2 = arg0[closure_0];
+          c2 = true;
+          dependencyMap[dependencyMap].splice(index, 1);
+          const arr2 = dependencyMap[dependencyMap];
         }
       };
     }, items)

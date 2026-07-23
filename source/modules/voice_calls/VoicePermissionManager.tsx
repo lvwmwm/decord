@@ -1,9 +1,25 @@
-// Module ID: 15875
-// Function ID: 121494
+// Module ID: 15992
+// Function ID: 123667
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4954, 4147, 1194, 1348, 4177, 4202, 653, 4344, 4675, 15993, 4314, 5078, 2]
 
-// Module 15875 (_isNativeReflectConstruct)
+// Module 15992 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import getAudienceRequestToSpeakState from "getAudienceRequestToSpeakState";
+import set from "set";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import { InputModes } from "ME";
+import { NativePermissionTypes } from "NativePermissionStatus";
+import tmp2 from "AutomaticLifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,19 +30,19 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function voicePermissionRequest() {
-  const permission = importDefault(dependencyMap[13]).requestPermission(NativePermissionTypes.AUDIO);
+  const permission = importDefault(4675).requestPermission(NativePermissionTypes.AUDIO);
   permission.then((arg0) => {
     if (arg0) {
-      callback(closure_2[14])(true);
+      outer1_1(outer1_2[14])(true);
     }
   });
   if (mode.getMode() === InputModes.PUSH_TO_TALK) {
-    const permission1 = importDefault(dependencyMap[13]).requestPermission(NativePermissionTypes.INPUT_MONITORING);
-    const obj2 = importDefault(dependencyMap[13]);
+    const permission1 = importDefault(4675).requestPermission(NativePermissionTypes.INPUT_MONITORING);
+    const obj2 = importDefault(4675);
   }
 }
 function shouldImmediatelyRequestVoicePermissions(id, id2) {
-  const channel = channel.getChannel(id2);
+  channel = channel.getChannel(id2);
   let isListenModeCapableResult;
   if (null != channel) {
     isListenModeCapableResult = channel.isListenModeCapable();
@@ -37,88 +53,9 @@ function shouldImmediatelyRequestVoicePermissions(id, id2) {
   }
   return isSpeakerResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-const InputModes = arg1(dependencyMap[11]).InputModes;
-const NativePermissionTypes = arg1(dependencyMap[12]).NativePermissionTypes;
-let closure_16 = null;
-let tmp2 = (arg0) => {
-  class VoicePermissionManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, VoicePermissionManager);
-      items1 = [...items];
-      obj = closure_6(VoicePermissionManager);
-      tmp2 = closure_5;
-      if (closure_17()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.actions = { VOICE_STATE_UPDATES: tmp2Result.handleVoiceStateUpdates, VOICE_CHANNEL_SELECT: tmp2Result.handleVoiceChannelSelect };
-      return tmp2Result;
-    }
-  }
-  const arg1 = VoicePermissionManager;
-  callback2(VoicePermissionManager, arg0);
-  let obj = {
-    key: "handleVoiceChannelSelect",
-    value(channelId) {
-      if (null == channelId.channelId) {
-        let closure_16 = null;
-      }
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "handleVoiceStateUpdates",
-    value(voiceStates) {
-      voiceStates = voiceStates.voiceStates;
-      const item = voiceStates.forEach((arg0) => {
-        let channelId;
-        let userId;
-        ({ userId, channelId } = arg0);
-        if (null != channelId) {
-          if (id.getId() === userId) {
-            if (null != rTCConnectionId.getRTCConnectionId()) {
-              if (channelId !== channelId) {
-                if (callback3(userId, channelId)) {
-                  callback2();
-                } else {
-                  const prototype = ctor.prototype;
-                  const tmp7 = new ctor(arg0);
-                  const audienceRequestToSpeakState = callback(closure_2[15]).getAudienceRequestToSpeakState(tmp7);
-                  if (audienceRequestToSpeakState === callback(closure_2[15]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
-                    callback2();
-                  }
-                  const obj = callback(closure_2[15]);
-                }
-              }
-            }
-          }
-        }
-      });
-    }
-  };
-  items[1] = obj;
-  return callback(VoicePermissionManager, items);
-}(importDefault(dependencyMap[16]));
+let c16 = null;
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/voice_calls/VoicePermissionManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_calls/VoicePermissionManager.tsx");
 
 export default tmp2;
 export { shouldImmediatelyRequestVoicePermissions };

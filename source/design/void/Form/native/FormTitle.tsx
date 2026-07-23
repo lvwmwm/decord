@@ -1,34 +1,40 @@
-// Module ID: 7187
-// Function ID: 57861
+// Module ID: 7192
+// Function ID: 57895
 // Name: FormTitle
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 477, 4130, 689, 1273, 2]
 // Exports: default
 
-// Module 7187 (FormTitle)
+// Module 7192 (FormTitle)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import set from "set";
+import set from "set";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "ME";
+
 let Platform;
-importAll(dependencyMap[0]);
-({ View: closure_2, Platform } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
+let closure_2;
+let closure_3;
+let closure_4;
+const require = arg1;
+({ View: closure_2, Platform } = get_ActivityIndicator);
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
 let num = 58;
-if (obj.isAndroid()) {
+if (set.isAndroid()) {
   num = 48;
 }
-let obj1 = arg1(dependencyMap[4]);
 let num2 = 48;
-if (obj1.isAndroid()) {
+if (set.isAndroid()) {
   num2 = 56;
 }
-const tmp4 = arg1(dependencyMap[3]);
-obj = { titleWrapper: { "Bool(false)": "w", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "container" }, horizontalPadding: { paddingHorizontal: 16 }, thinTitle: { paddingTop: 26 } };
-obj = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: importDefault(dependencyMap[6]).colors.TEXT_SUBTLE };
-obj.titleText = obj;
-obj1 = { color: importDefault(dependencyMap[6]).unsafe_rawColors.RED_400 };
-obj.error = obj1;
-let closure_5 = arg1(dependencyMap[5]).createStyles(obj);
-const obj3 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/void/Form/native/FormTitle.tsx");
+set = { titleWrapper: { flexDirection: "row", justifyContent: "space-between", paddingTop: 16, paddingBottom: 16 }, horizontalPadding: { paddingHorizontal: 16 }, thinTitle: { paddingTop: 26 } };
+set = { fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 13, color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+set.titleText = set;
+set = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+set.error = set;
+set = _createForOfIteratorHelperLoose.createStyles(set);
+const result = set.fileFinishedImporting("design/void/Form/native/FormTitle.tsx");
 
 export default function FormTitle(thinTitle) {
   let icon;
@@ -55,7 +61,7 @@ export default function FormTitle(thinTitle) {
     flag3 = false;
   }
   ({ viewStyle, textStyle } = thinTitle);
-  const tmp = callback();
+  const tmp = set();
   let obj = {};
   const items = [tmp.titleWrapper, , , ];
   if (flag) {
@@ -79,7 +85,7 @@ export default function FormTitle(thinTitle) {
     formatted = title.toUpperCase();
   }
   obj.children = formatted;
-  const items2 = [closure_3(arg1(dependencyMap[7]).LegacyText, obj), icon];
+  const items2 = [closure_3(require(1273) /* Button */.LegacyText, obj), icon];
   obj.children = items2;
   return closure_4(closure_2, obj);
 };

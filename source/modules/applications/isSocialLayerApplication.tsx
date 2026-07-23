@@ -1,23 +1,23 @@
-// Module ID: 10845
-// Function ID: 84234
+// Module ID: 10855
+// Function ID: 84283
 // Name: isSocialLayerApplication
-// Dependencies: []
+// Dependencies: [653, 7371, 8955, 2]
 // Exports: isSocialLayerSDKAuthorization
 
-// Module 10845 (isSocialLayerApplication)
+// Module 10855 (isSocialLayerApplication)
+import { ApplicationFlags } from "ME";
+
 function isSocialLayerApplication(application) {
-  let hasApplicationFlagResult = require(dependencyMap[1]).hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION_LIMITED);
+  let hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION_LIMITED);
   if (!hasApplicationFlagResult) {
-    hasApplicationFlagResult = require(dependencyMap[1]).hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION);
-    const obj2 = require(dependencyMap[1]);
+    hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.SOCIAL_LAYER_INTEGRATION);
+    const obj2 = require(7371) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 }
-const ApplicationFlags = require(dependencyMap[0]).ApplicationFlags;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/applications/isSocialLayerApplication.tsx");
+const result = require("items").fileFinishedImporting("modules/applications/isSocialLayerApplication.tsx");
 
 export default isSocialLayerApplication;
 export const isSocialLayerSDKAuthorization = function isSocialLayerSDKAuthorization(application, scopes) {
-  return isSocialLayerApplication(application) && scopes.some((arg0) => callback(closure_1[2]).isSocialLayerUmbrellaScope(arg0));
+  return isSocialLayerApplication(application) && scopes.some((arg0) => outer1_0(outer1_1[2]).isSocialLayerUmbrellaScope(arg0));
 };

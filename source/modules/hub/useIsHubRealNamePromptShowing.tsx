@@ -1,35 +1,37 @@
-// Module ID: 11671
-// Function ID: 90560
+// Module ID: 11681
+// Function ID: 90609
 // Name: useIsHubRealNamePromptShowing
-// Dependencies: []
+// Dependencies: [31, 11682, 1917, 1838, 1849, 653, 11683, 566, 11684, 2]
 // Exports: default
 
-// Module 11671 (useIsHubRealNamePromptShowing)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const GuildFeatures = arg1(dependencyMap[5]).GuildFeatures;
-const GuildPrompts = arg1(dependencyMap[6]).GuildPrompts;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/hub/useIsHubRealNamePromptShowing.tsx");
+// Module 11681 (useIsHubRealNamePromptShowing)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import { GuildFeatures } from "ME";
+import { GuildPrompts } from "GuildPrompts";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/hub/useIsHubRealNamePromptShowing.tsx");
 
 export default function useIsHubRealNamePromptShowing(arg0) {
-  const arg1 = arg0;
-  const items = [closure_6, closure_4, closure_7, closure_5];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct, closure_7, closure_5];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
+    const guild = outer1_6.getGuild(closure_0);
     let hasItem;
     if (null != guild) {
       const features = guild.features;
-      hasItem = features.has(constants.HUB);
+      hasItem = features.has(outer1_8.HUB);
     }
     if (true !== hasItem) {
       return null;
-    } else if (true === closure_4.hasViewedPrompt(constants2.REAL_NAME_PROMPT, guild.id)) {
+    } else if (true === outer1_4.hasViewedPrompt(outer1_9.REAL_NAME_PROMPT, guild.id)) {
       return null;
     } else {
-      const currentUser = currentUser.getCurrentUser();
+      const currentUser = outer1_7.getCurrentUser();
       if (null == currentUser) {
         return null;
       } else {
@@ -37,7 +39,7 @@ export default function useIsHubRealNamePromptShowing(arg0) {
         if (null != currentUser) {
           id = currentUser.id;
         }
-        const member = member.getMember(guild.id, id);
+        const member = outer1_5.getMember(guild.id, id);
         let nick;
         if (null != member) {
           nick = member.nick;
@@ -46,17 +48,16 @@ export default function useIsHubRealNamePromptShowing(arg0) {
       }
     }
   });
-  const importDefault = stateFromStores;
   const items1 = [stateFromStores, arg0];
   const effect = React.useEffect(() => {
-    let tmp = null != arg0;
+    let tmp = null != closure_0;
     if (tmp) {
       tmp = null != stateFromStores;
     }
     if (tmp) {
       if (!stateFromStores) {
-        stateFromStores(closure_2[8]).viewPrompt(constants2.REAL_NAME_PROMPT, arg0);
-        const obj = stateFromStores(closure_2[8]);
+        stateFromStores(outer1_2[8]).viewPrompt(outer1_9.REAL_NAME_PROMPT, closure_0);
+        const obj = stateFromStores(outer1_2[8]);
       }
     }
   }, items1);

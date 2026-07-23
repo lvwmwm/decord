@@ -1,15 +1,19 @@
-// Module ID: 12931
-// Function ID: 98553
+// Module ID: 13045
+// Function ID: 100709
 // Name: MenuPopout
-// Dependencies: []
+// Dependencies: [57, 31, 33, 9305, 3991, 9669, 13042, 13043, 13044, 2]
 // Exports: MenuPopout
 
-// Module 12931 (MenuPopout)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ jsx: closure_5, Fragment: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/Menu/native/MenuPopout.tsx");
+// Module 13045 (MenuPopout)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import jsxProd from "jsxProd";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, Fragment: closure_6 } = jsxProd);
+const result = require("jsxProd").fileFinishedImporting("design/components/Menu/native/MenuPopout.tsx");
 
 export const MenuPopout = function MenuPopout(onRequestOpen) {
   let key;
@@ -18,36 +22,31 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
   if (menuItems === undefined) {
     menuItems = [];
   }
-  const arg1 = menuItems;
   onRequestOpen = onRequestOpen.onRequestOpen;
-  const importDefault = onRequestOpen;
   const onRequestClose = onRequestOpen.onRequestClose;
-  const dependencyMap = onRequestClose;
   const position = onRequestOpen.position;
-  let callback = position;
   const align = onRequestOpen.align;
-  const React = align;
   const offset = onRequestOpen.offset;
   const offsetAnimated = onRequestOpen.offsetAnimated;
   let uID;
   let animatedRef;
   let first;
   let closure_10;
-  callback = undefined;
+  let callback;
   let memo;
   let callback1;
-  let obj = arg1(dependencyMap[3]);
+  let obj = menuItems(onRequestClose[3]);
   uID = obj.useUID();
   if (null != key) {
     uID = key;
   }
-  animatedRef = arg1(dependencyMap[4]).useAnimatedRef();
-  const tmp3 = callback(React.useState(false), 2);
+  animatedRef = menuItems(onRequestClose[4]).useAnimatedRef();
+  const tmp3 = position(align.useState(false), 2);
   first = tmp3[0];
   closure_10 = tmp3[1];
   const items = [uID, onRequestClose];
   const mapped = menuItems.map((label) => ({ name: label.label, label: label.label }));
-  callback = React.useCallback(() => {
+  callback = align.useCallback(() => {
     callback(false);
     if (null != onRequestClose) {
       onRequestClose();
@@ -55,8 +54,8 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
     onRequestOpen(onRequestClose[5]).hideNativeMenu(uID);
   }, items);
   const items1 = [animatedRef, callback, menuItems, position, align, offset, offsetAnimated];
-  memo = React.useMemo(() => {
-    const obj = {
+  memo = align.useMemo(() => {
+    let obj = {
       toggleButtonRef: animatedRef,
       onClose: callback,
       position,
@@ -67,14 +66,14 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
         let obj = {};
         obj = { showIconFirst: true };
         const merged = Object.assign(arg0);
-        obj.children = callback2(callback(closure_2[8]).MenuItem, obj);
-        return callback2(callback(closure_2[7]).MenuGroup, obj, "chat-context-menu-group-" + arg1);
+        obj.children = offset(menuItems(onRequestClose[8]).MenuItem, obj);
+        return offset(menuItems(onRequestClose[7]).MenuGroup, obj, "chat-context-menu-group-" + arg1);
       })
     };
     return offset(menuItems(onRequestClose[6]).Menu, obj);
   }, items1);
   const items2 = [memo, uID, onRequestOpen];
-  callback1 = React.useCallback(() => {
+  callback1 = align.useCallback(() => {
     callback(true);
     if (null != onRequestOpen) {
       onRequestOpen();
@@ -85,7 +84,7 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
   obj = {};
   obj = {
     ref: animatedRef,
-    onPress: React.useCallback(() => {
+    onPress: align.useCallback(() => {
       if (first) {
         callback();
       } else {
@@ -96,7 +95,7 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
     accessibilityActions: mapped,
     onAccessibilityAction(arg0) {
       const menuItems = arg0;
-      const found = menuItems.find((label) => label.label === label.nativeEvent.actionName);
+      const found = menuItems.find((label) => label.label === nativeEvent.nativeEvent.actionName);
       if (!tmp) {
         found.action();
       }

@@ -1,76 +1,79 @@
-// Module ID: 10978
-// Function ID: 85474
+// Module ID: 10988
+// Function ID: 85524
 // Name: GuildEnableCommunicationAlert
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 1849, 1919, 653, 33, 4130, 7664, 4559, 675, 10987, 3831, 1212, 10332, 4561, 4126, 4319, 10166, 5459, 2]
 // Exports: default
 
-// Module 10978 (GuildEnableCommunicationAlert)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_6 = importDefault(dependencyMap[4]);
-({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: closure_7, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: closure_8 } = arg1(dependencyMap[5]));
-const tmp4 = arg1(dependencyMap[6]);
-const AnalyticEvents = tmp4.AnalyticEvents;
-const tmp3 = arg1(dependencyMap[5]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = { fontFamily: tmp4.Fonts.PRIMARY_SEMIBOLD };
-let closure_12 = obj.createStyles({ wrapper: { padding: 16 }, body: { paddingTop: 16 }, description: { lineHeight: 18 }, cta: { paddingTop: 8 }, countdown: obj });
-const tmp5 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guild_communication_disabled/native/GuildEnableCommunicationAlert.tsx");
+// Module 10988 (GuildEnableCommunicationAlert)
+import closure_3 from "getFriendlyDurationString";
+import _slicedToArray from "_slicedToArray";
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getFriendlyDurationString from "getFriendlyDurationString";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: closure_7, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: closure_8 } = getFriendlyDurationString);
+const AnalyticEvents = ME.AnalyticEvents;
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = { fontFamily: ME.Fonts.PRIMARY_SEMIBOLD };
+let closure_12 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { padding: 16 }, body: { paddingTop: 16 }, description: { lineHeight: 18 }, cta: { paddingTop: 8 }, countdown: _createForOfIteratorHelperLoose });
+const result = require("result").fileFinishedImporting("modules/guild_communication_disabled/native/GuildEnableCommunicationAlert.tsx");
 
 export default function GuildEnableCommunicationAlert(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const userId = guildId.userId;
-  const importDefault = userId;
-  let obj = { "Bool(true)": "spring", "Bool(true)": 0.4, "Bool(true)": 1 };
+  let obj = { guildId: 0, userId: 0, onCancel: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(guildId, obj);
   function _handleConfirmRemoveTimeout(arg0, arg1) {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = callback(tmp);
-    const _handleConfirmRemoveTimeout = obj;
     return obj(...arguments);
   }
   const tmp3 = callback();
   const dependencyMap = tmp3;
-  let closure_3 = _handleConfirmRemoveTimeout(importDefault(dependencyMap[9])(userId, guildId), 1)[0];
-  importDefault(dependencyMap[10])(() => {
+  let closure_3 = _handleConfirmRemoveTimeout(userId(7664)(userId, guildId), 1)[0];
+  userId(4559)(() => {
     let obj = userId(tmp3[11]);
-    obj = { type: closure_7, guild_id: guildId, other_user_id: userId };
-    obj.track(constants.OPEN_MODAL, obj);
+    obj = { type: outer1_7, guild_id: guildId, other_user_id: userId };
+    obj.track(outer1_9.OPEN_MODAL, obj);
   });
   obj = {};
   const merged1 = Object.assign(merged);
-  const intl = arg1(dependencyMap[14]).intl;
-  obj["title"] = intl.string(arg1(dependencyMap[14]).t.+ZD3ou);
+  const intl = guildId(1212).intl;
+  obj["title"] = intl.string(guildId(1212).t["+ZD3ou"]);
   obj["style"] = tmp3.wrapper;
-  const intl2 = arg1(dependencyMap[14]).intl;
-  obj["cancelText"] = intl2.string(arg1(dependencyMap[14]).t.ETE/oC);
+  const intl2 = guildId(1212).intl;
+  obj["cancelText"] = intl2.string(guildId(1212).t["ETE/oC"]);
   let onClose;
   if (null != merged) {
     onClose = merged.onClose;
   }
   obj["onClose"] = onClose;
   obj["onCancel"] = guildId.onCancel;
-  const intl3 = arg1(dependencyMap[14]).intl;
-  obj["confirmText"] = intl3.string(arg1(dependencyMap[14]).t.qXtNtS);
+  const intl3 = guildId(1212).intl;
+  obj["confirmText"] = intl3.string(guildId(1212).t.qXtNtS);
   obj["onConfirm"] = function handleConfirmRemoveTimeout() {
     return _handleConfirmRemoveTimeout(...arguments);
   };
   obj = { style: tmp3.body };
   const obj1 = { style: tmp3.description, variant: "text-sm/medium" };
-  const intl4 = arg1(dependencyMap[14]).intl;
+  const intl4 = guildId(1212).intl;
   const obj2 = {};
-  const user = user.getUser(userId);
+  user = user.getUser(userId);
   const tmp11 = closure_11;
   const tmp12 = View;
   const tmp5 = closure_10;
-  const tmp6 = importDefault(dependencyMap[16]);
-  const name = importDefault(dependencyMap[18]).getName(guildId, null, user);
+  const tmp6 = userId(4561);
+  const name = userId(4319).getName(guildId, null, user);
   let str = "";
   if (null != name) {
     str = name;
@@ -83,16 +86,16 @@ export default function GuildEnableCommunicationAlert(guildId) {
       num = new Date(closure_3);
     }
     const obj = { style: tmp3.countdown, deadline: num, withUnits: true };
-    return callback2(userId(tmp3[19]), obj);
+    return outer1_10(userId(tmp3[19]), obj);
   };
-  obj1.children = intl4.format(arg1(dependencyMap[14]).t.t+abNU, obj2);
-  const items = [closure_10(arg1(dependencyMap[17]).Text, obj1), ];
+  obj1.children = intl4.format(guildId(1212).t["t+abNU"], obj2);
+  const items = [closure_10(guildId(4126).Text, obj1), ];
   const obj3 = { style: items1, variant: "text-sm/medium" };
-  const items1 = [, ];
+  items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp3);
-  const intl5 = tmp9(tmp10[14]).intl;
-  obj3.children = intl5.format(arg1(dependencyMap[14]).t.KtENkK, { link: closure_8 });
-  items[1] = closure_10(arg1(dependencyMap[20]).TextWithIOSLinkWorkaround, obj3);
+  const intl5 = tmp9(1212).intl;
+  obj3.children = intl5.format(guildId(1212).t.KtENkK, { link: closure_8 });
+  items[1] = closure_10(guildId(5459).TextWithIOSLinkWorkaround, obj3);
   obj.children = items;
   obj["children"] = tmp11(tmp12, obj);
   return tmp5(tmp6, obj);

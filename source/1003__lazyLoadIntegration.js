@@ -1,21 +1,23 @@
 // Module ID: 1003
-// Function ID: 10962
+// Function ID: 10963
 // Name: _lazyLoadIntegration
-// Dependencies: []
+// Dependencies: [5, 1004, 794]
 // Exports: lazyLoadIntegration
 
 // Module 1003 (_lazyLoadIntegration)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
 async function _lazyLoadIntegration(arg0, arg1, arg2) {
   let element;
-  const tmp3 = element(closure_1[1]).WINDOW.Sentry || {};
-  element(closure_1[1]).WINDOW.Sentry = tmp3;
-  if (closure_3[arg0]) {
+  const tmp3 = outer2_0(outer2_1[1]).WINDOW.Sentry || {};
+  outer2_0(outer2_1[1]).WINDOW.Sentry = tmp3;
+  if (outer2_3[arg0]) {
     if ("function" === typeof tmp4[tmp]) {
       if (!("_isShim" in tmp13)) {
         return tmp13;
       }
     }
-    const client = element(closure_1[2]).getClient();
+    const client = outer2_0(outer2_1[2]).getClient();
     let str4;
     if (null != client) {
       const options = client.getOptions();
@@ -28,9 +30,9 @@ async function _lazyLoadIntegration(arg0, arg1, arg2) {
     }
     const _URL = URL;
     const _HermesInternal2 = HermesInternal;
-    const str9 = new URL("/" + element(closure_1[2]).SDK_VERSION + "/" + tmp2 + ".min.js", str4);
+    const str9 = new URL("/" + outer2_0(outer2_1[2]).SDK_VERSION + "/" + tmp2 + ".min.js", str4);
     let str = str9.toString();
-    const _document = element(closure_1[1]).WINDOW.document;
+    const _document = outer2_0(outer2_1[1]).WINDOW.document;
     element = <script />;
     element.src = str;
     element.crossOrigin = "anonymous";
@@ -38,12 +40,12 @@ async function _lazyLoadIntegration(arg0, arg1, arg2) {
     if (arg1) {
       const attr = obj3.setAttribute("nonce", arg1);
     }
-    const obj = element(closure_1[2]);
-    const obj3 = element;
-    const currentScript = element(closure_1[1]).WINDOW.document.currentScript;
-    let head = element(closure_1[1]).WINDOW.document.body;
+    const obj = outer2_0(outer2_1[2]);
+    obj3 = element;
+    const currentScript = outer2_0(outer2_1[1]).WINDOW.document.currentScript;
+    let head = outer2_0(outer2_1[1]).WINDOW.document.body;
     if (!head) {
-      head = element(closure_1[1]).WINDOW.document.head;
+      head = outer2_0(outer2_1[1]).WINDOW.document.head;
     }
     if (!head) {
       let parentElement;
@@ -69,10 +71,10 @@ async function _lazyLoadIntegration(arg0, arg1, arg2) {
       const error1 = new Error("Could not find parent element to insert lazy-loaded " + tmp + " script");
       throw error1;
     }
-    const obj4 = head;
-    const promise = new Promise((arg0, arg1) => {
+    obj4 = head;
+    promise = new Promise((arg0, arg1) => {
       const element = arg0;
-      const listener = element.addEventListener("load", () => arg0());
+      const listener = element.addEventListener("load", () => callback());
       const listener1 = element.addEventListener("error", arg1);
     });
   } else {
@@ -83,9 +85,8 @@ async function _lazyLoadIntegration(arg0, arg1, arg2) {
     throw error2;
   }
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_3 = { isArray: 0, isArray: true, textAlign: true, withSpring: true, isArray: true, isArray: true, _desired: true, withTiming: true, isArray: false, isArray: true, _distance: true, withTiming: true, isArray: true, isArray: true, st: false, withTiming: false, isArray: false, isArray: false, accessibilityRole: false, withTiming: false, isArray: true };
+let closure_3 = { replayIntegration: "replay", replayCanvasIntegration: "replay-canvas", feedbackIntegration: "feedback", feedbackModalIntegration: "feedback-modal", feedbackScreenshotIntegration: "feedback-screenshot", captureConsoleIntegration: "captureconsole", contextLinesIntegration: "contextlines", linkedErrorsIntegration: "linkederrors", dedupeIntegration: "dedupe", extraErrorDataIntegration: "extraerrordata", graphqlClientIntegration: "graphqlclient", httpClientIntegration: "httpclient", reportingObserverIntegration: "reportingobserver", rewriteFramesIntegration: "rewriteframes", browserProfilingIntegration: "browserprofiling", moduleMetadataIntegration: "modulemetadata", instrumentAnthropicAiClient: "instrumentanthropicaiclient", instrumentOpenAiClient: "instrumentopenaiclient", instrumentGoogleGenAIClient: "instrumentgooglegenaiclient", instrumentLangGraph: "instrumentlanggraph", createLangChainCallbackHandler: "createlangchaincallbackhandler" };
 
 export const lazyLoadIntegration = function lazyLoadIntegration(arg0, arg1) {
   return _lazyLoadIntegration(...arguments);

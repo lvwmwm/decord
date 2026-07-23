@@ -1,21 +1,25 @@
-// Module ID: 13314
-// Function ID: 101155
+// Module ID: 13428
+// Function ID: 103311
 // Name: getInitialSubscriptionPayload
-// Dependencies: []
+// Dependencies: [1347, 10479, 6942, 653, 4155, 10526, 4663, 13391, 6965, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 13314 (getInitialSubscriptionPayload)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const RPCEvents = arg1(dependencyMap[3]).RPCEvents;
-({ ActivityLayoutMode: closure_6, ActivityScreenOrientation: closure_7 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
+// Module 13428 (getInitialSubscriptionPayload)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { RPCEvents } from "ME";
+import items3 from "items3";
 
-export const getInitialSubscriptionPayload = function getInitialSubscriptionPayload(closure_1, closure_2, closure_3) {
-  if (RPCEvents.ACTIVITY_PIP_MODE_UPDATE === closure_2) {
-    const application4 = closure_1.application;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ ActivityLayoutMode: closure_6, ActivityScreenOrientation: closure_7 } = items3);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
+
+export const getInitialSubscriptionPayload = function getInitialSubscriptionPayload(outer1_1, outer1_2, outer1_3) {
+  if (RPCEvents.ACTIVITY_PIP_MODE_UPDATE === outer1_2) {
+    const application4 = outer1_1.application;
     let id;
     if (null != application4) {
       id = application4.id;
@@ -30,8 +34,8 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
       tmp40 = obj;
     }
     return tmp40;
-  } else if (RPCEvents.ACTIVITY_LAYOUT_MODE_UPDATE === closure_2) {
-    const application3 = closure_1.application;
+  } else if (RPCEvents.ACTIVITY_LAYOUT_MODE_UPDATE === outer1_2) {
+    const application3 = outer1_1.application;
     let id1;
     if (null != application3) {
       id1 = application3.id;
@@ -46,15 +50,15 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
       tmp35 = obj;
     }
     return tmp35;
-  } else if (RPCEvents.FRAME_LAYOUT_MODE_UPDATE === closure_2) {
-    const application2 = closure_1.application;
+  } else if (RPCEvents.FRAME_LAYOUT_MODE_UPDATE === outer1_2) {
+    const application2 = outer1_1.application;
     let id2;
     if (null != application2) {
       id2 = application2.id;
     }
     let tmp26 = null;
     if (null != id2) {
-      const connectedFrame = connectedFrame.getConnectedFrame();
+      connectedFrame = connectedFrame.getConnectedFrame();
       let layoutMode;
       if (null != connectedFrame) {
         layoutMode = connectedFrame.layoutMode;
@@ -67,33 +71,33 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
       tmp30 = obj1;
     }
     return tmp30;
-  } else if (RPCEvents.THERMAL_STATE_UPDATE === closure_2) {
-    const thermalState = closure_2(dependencyMap[5]).getThermalState();
+  } else if (RPCEvents.THERMAL_STATE_UPDATE === outer1_2) {
+    const thermalState = require(10526) /* _getThermalState */.getThermalState();
     let tmp23 = null;
-    if (thermalState !== closure_2(dependencyMap[5]).ThermalStates.UNHANDLED) {
+    if (thermalState !== require(10526) /* _getThermalState */.ThermalStates.UNHANDLED) {
       let obj2 = { thermal_state: thermalState };
       tmp23 = obj2;
     }
     return tmp23;
-  } else if (RPCEvents.ORIENTATION_UPDATE === closure_2) {
+  } else if (RPCEvents.ORIENTATION_UPDATE === outer1_2) {
     const obj3 = {};
-    let obj4 = closure_2(dependencyMap[6]);
+    let obj4 = require(4663) /* getIsScreenLandscape */;
     obj3.screen_orientation = obj4.getIsScreenLandscape() ? closure_7.LANDSCAPE : closure_7.PORTRAIT;
     return obj3;
-  } else if (RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === closure_2) {
-    obj2 = closure_2(dependencyMap[7]);
+  } else if (RPCEvents.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === outer1_2) {
+    obj2 = require(13391) /* activityInstanceConnectedParticipants */;
     return obj2.activityInstanceConnectedParticipants();
-  } else if (RPCEvents.QUEST_ENROLLMENT_STATUS_UPDATE === closure_2) {
-    const quest_id = closure_3.quest_id;
+  } else if (RPCEvents.QUEST_ENROLLMENT_STATUS_UPDATE === outer1_2) {
+    const quest_id = outer1_3.quest_id;
     if (quest_id) {
-      const quest = quest.getQuest(quest_id);
-      obj = closure_2(dependencyMap[8]);
+      quest = quest.getQuest(quest_id);
+      obj = require(6965) /* _createForOfIteratorHelperLoose */;
       const activityApplicationId = obj.getActivityApplicationId(quest);
       let tmp10 = null;
       if (null != quest) {
         tmp10 = null;
         if (null != activityApplicationId) {
-          const application = closure_1.application;
+          const application = outer1_1.application;
           let id3;
           if (null != application) {
             id3 = application.id;

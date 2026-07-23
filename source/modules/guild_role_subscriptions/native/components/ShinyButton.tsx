@@ -1,21 +1,23 @@
-// Module ID: 9348
-// Function ID: 73014
+// Module ID: 9355
+// Function ID: 73055
 // Name: ShinyButton
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 4544, 1273, 9356, 2]
 // Exports: default
 
-// Module 9348 (ShinyButton)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[3]).radii.sm, backgroundColor: importDefault(dependencyMap[3]).colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT };
-obj.container = obj;
-obj.sparkleIcon = { marginRight: 4, tintColor: importDefault(dependencyMap[3]).colors.WHITE };
-obj.disabled = { opacity: 0.5 };
-let closure_4 = obj.createStyles(obj);
-const obj1 = { marginRight: 4, tintColor: importDefault(dependencyMap[3]).colors.WHITE };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/ShinyButton.tsx");
+// Module 9355 (ShinyButton)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.sparkleIcon = { marginRight: 4, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.disabled = { opacity: 0.5 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj1 = { marginRight: 4, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ShinyButton.tsx");
 
 export default function ShinyButton(style) {
   let disabled;
@@ -27,10 +29,10 @@ export default function ShinyButton(style) {
 
     };
   }
-  let obj = { 0: -24, 0: null, 0: 1, 9223372036854775807: "Malaysia" };
+  let obj = { style: 0, loading: 0, disabled: 0, onPress: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(style, obj);
-  const tmp3 = callback();
+  const tmp3 = _createForOfIteratorHelperLoose();
   obj = { onPress };
   const items = [tmp3.container, style.style];
   obj.pillStyle = items;
@@ -38,17 +40,17 @@ export default function ShinyButton(style) {
   obj.disabled = disabled;
   let tmp6Result;
   if (!loading) {
-    obj = { size: arg1(dependencyMap[5]).Icon.Sizes.REFRESH_SMALL_16, source: importDefault(dependencyMap[6]) };
+    obj = { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9356) };
     const items1 = [tmp3.sparkleIcon, ];
     if (disabled) {
       disabled = tmp3.disabled;
     }
     items1[1] = disabled;
     obj.style = items1;
-    tmp6Result = jsx(arg1(dependencyMap[5]).Icon, obj);
+    tmp6Result = jsx(require(1273) /* Button */.Icon, { size: require(1273) /* Button */.Icon.Sizes.REFRESH_SMALL_16, source: importDefault(9356) });
     const tmp6 = jsx;
   }
   obj.icon = tmp6Result;
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[4]).BaseTextButton, obj);
+  return jsx(require(4544) /* CollapsingText */.BaseTextButton, { onPress });
 };

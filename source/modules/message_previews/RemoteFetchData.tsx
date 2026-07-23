@@ -1,52 +1,56 @@
-// Module ID: 14095
-// Function ID: 107018
+// Module ID: 14209
+// Function ID: 109174
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 2]
 
-// Module 14095 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 14209 (_createForOfIteratorHelperLoose)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let asyncGeneratorStep = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +61,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      asyncGeneratorStep = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (_classCallCheck >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        _classCallCheck = tmp3 + 1;
+        obj.value = length[+_classCallCheck];
       }
       return obj;
     };
@@ -83,11 +87,8 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const obj = { Pending: 0, [0]: "Pending", Fetching: 1, [1]: "Fetching" };
-const tmp2 = () => {
+let obj = { Pending: 0, [0]: "Pending", Fetching: 1, [1]: "Fetching" };
+let tmp2 = (() => {
   class RemoteFetchData {
     constructor() {
       tmp = RemoteFetchData(this, RemoteFetchData);
@@ -98,25 +99,24 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_1 = RemoteFetchData;
   let obj = {
     key: "empty",
     value() {
       return 0 === this.pending.size && 0 === this.fetching.size;
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "status",
     value(arg0) {
       const pending = this.pending;
       if (pending.has(arg0)) {
-        let Pending = closure_3.Pending;
+        let Pending = outer1_3.Pending;
       } else {
         const fetching = this.fetching;
         Pending = null;
         if (fetching.has(arg0)) {
-          Pending = closure_3.Fetching;
+          Pending = outer1_3.Fetching;
         }
       }
       return Pending;
@@ -156,7 +156,7 @@ const tmp2 = () => {
     value(arg0) {
       let done;
       const self = this;
-      const tmp = callback2(arg0);
+      const tmp = outer1_4(arg0);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -177,7 +177,7 @@ const tmp2 = () => {
     value(arg0) {
       let done;
       const self = this;
-      const tmp = callback2(arg0);
+      const tmp = outer1_4(arg0);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -198,7 +198,7 @@ const tmp2 = () => {
     value(arg0) {
       let done;
       const self = this;
-      const tmp = callback2(arg0);
+      const tmp = outer1_4(arg0);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -216,14 +216,14 @@ const tmp2 = () => {
   };
   const obj6 = { key: "try" };
   // CreateGeneratorClosureLongIndex (0x67)
-  const callback = callback("try");
+  callback = callback("try");
   obj6.value = function _try() {
     return callback(...arguments);
   };
   items[8] = obj6;
   return callback2(RemoteFetchData, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/message_previews/RemoteFetchData.tsx");
+})();
+const result = require("_defineProperties").fileFinishedImporting("modules/message_previews/RemoteFetchData.tsx");
 
 export const FetchStatus = obj;
 export const RemoteFetchData = tmp2;

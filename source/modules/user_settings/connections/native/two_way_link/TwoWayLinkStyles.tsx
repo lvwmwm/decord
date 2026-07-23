@@ -1,24 +1,25 @@
-// Module ID: 8936
-// Function ID: 70448
+// Module ID: 8943
+// Function ID: 70489
 // Name: styles
-// Dependencies: []
+// Dependencies: [4130, 689, 2]
 
-// Module 8936 (styles)
-const _module = require(dependencyMap[0]);
+// Module 8943 (styles)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let obj = {};
-obj = { 1387016623: null, 50159674: null, -2027309997: null, backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BASE_LOW };
+obj = { flex: 1, alignItems: "stretch", justifyContent: "flex-start", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
-obj.navHeader = { backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BASE_LOW, borderBottomColor: importDefault(dependencyMap[1]).colors.BORDER_SUBTLE, shadowColor: "transparent" };
-obj.content = {};
+obj.navHeader = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, shadowColor: "transparent" };
+obj.content = { alignItems: "center", flex: 1, paddingTop: 24, paddingHorizontal: 16, maxWidth: 480, alignSelf: "center" };
 obj.title = { textAlign: "center" };
 obj.stepHeader = { textTransform: "uppercase" };
-obj.body = { MINIMAL: null, currentScreenId: null };
-obj.bodyContent = { "Bool(true)": "<string:1912602980>", "Bool(true)": "toString", "Null": "toString" };
-const obj2 = { onLayout: "pr. p.", variant: "pop.", color: "vidurnaktis", selectable: "vidurdienis", enableBuildOverrides: "rytas", mustConfirmExternalLink: "diena", direction: "vakaras", align: "naktis", backgroundColor: importDefault(dependencyMap[1]).colors.BACKGROUND_BASE_LOW, borderTopColor: importDefault(dependencyMap[1]).colors.BORDER_SUBTLE };
+obj.body = { marginTop: 8, textAlign: "center" };
+obj.bodyContent = { flexDirection: "column", gap: 24, padding: 16 };
+const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderTopWidth: 1, paddingTop: 24, paddingBottom: 18, paddingHorizontal: 12, width: "100%", flexShrink: 0 };
 obj.footerContainer = obj2;
 obj.footerButton = { marginBottom: 6 };
-const styles = _module.createStyles(obj);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkStyles.tsx");
+const styles = _createForOfIteratorHelperLoose.createStyles(obj);
+const obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, shadowColor: "transparent" };
+const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkStyles.tsx");
 
 export const useTwoWayLinkStyles = styles;

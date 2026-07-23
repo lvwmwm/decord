@@ -1,10 +1,19 @@
-// Module ID: 14376
-// Function ID: 108518
+// Module ID: 14490
+// Function ID: 110671
 // Name: ShopCardGridItem
-// Dependencies: []
+// Dependencies: [31, 27, 6774, 33, 4130, 8663, 8666, 14489, 22, 2]
 // Exports: default
 
-// Module 14376 (ShopCardGridItem)
+// Module 14490 (ShopCardGridItem)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function ShopCardGridItem(index) {
   let cardWidth;
   let disableBundleStaticBackground;
@@ -13,74 +22,70 @@ function ShopCardGridItem(index) {
   let product;
   let unpublishedAt;
   index = index.index;
-  const arg1 = index;
   const items = [index];
   ({ product, cardWidth, preferVCPrice, unpublishedAt, disableBundleStaticBackground, muteBundleStaticBackground } = index);
   const memo = React.useMemo(() => ({ tilePosition: index }), items);
-  const obj = { newValue: memo, children: jsx(importDefault(dependencyMap[5]), { unpublishedAt, product, cardWidth, preferVCPrice, disableBundleStaticBackground, muteBundleStaticBackground }) };
-  return jsx(arg1(dependencyMap[6]).CollectiblesAnalyticsProvider, obj);
+  const obj = { newValue: memo, children: jsx(importDefault(8663), { unpublishedAt, product, cardWidth, preferVCPrice, disableBundleStaticBackground, muteBundleStaticBackground }) };
+  return jsx(index(8666).CollectiblesAnalyticsProvider, { newValue: memo, children: jsx(importDefault(8663), { unpublishedAt, product, cardWidth, preferVCPrice, disableBundleStaticBackground, muteBundleStaticBackground }) });
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { 1426971212: true, 1282719710: true, gap: arg1(dependencyMap[5]).COLLECTIBLES_SHOP_CARD_GAP };
-obj.rowContainer = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardsGrid.tsx");
+({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { justifyContent: "center", flexDirection: "row", gap: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_GAP };
+_createForOfIteratorHelperLoose.rowContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardsGrid.tsx");
 
 export default function CollectiblesShopCardsGrid(accessibilityLabel) {
+  let result;
+  let closure_4;
+  let dependencyMap;
+  let importDefault;
   let onScroll;
   let paddingBottom;
   let paddingTop;
   let scrollEnabled;
   const products = accessibilityLabel.products;
-  const arg1 = products;
-  ({ category: closure_1, preferVCPrice: closure_2, scrollEnabled } = accessibilityLabel);
+  ({ category: importDefault, preferVCPrice: dependencyMap, scrollEnabled } = accessibilityLabel);
   if (scrollEnabled === undefined) {
     scrollEnabled = false;
   }
-  ({ disableBundleStaticBackground: closure_3, muteBundleStaticBackground: closure_4 } = accessibilityLabel);
+  ({ disableBundleStaticBackground: result, muteBundleStaticBackground: closure_4 } = accessibilityLabel);
   let closure_5;
-  let closure_6;
-  let jsx;
+  let columns;
+  let cardWidth;
   ({ onScroll, paddingTop, paddingBottom } = accessibilityLabel);
-  closure_5 = callback();
-  let obj = arg1(dependencyMap[7]);
+  closure_5 = _createForOfIteratorHelperLoose();
+  let obj = products(14489);
   const cardLayout = obj.useCardLayout();
-  const columns = cardLayout.columns;
-  closure_6 = columns;
-  jsx = cardLayout.cardWidth;
+  columns = cardLayout.columns;
+  cardWidth = cardLayout.cardWidth;
   const items = [products, columns];
-  const memo = React.useMemo(() => callback(closure_2[8]).chunk(products, columns), items);
+  const memo = React.useMemo(() => outer1_1(outer1_2[8]).chunk(products, columns), items);
   obj = { accessibilityLabel: accessibilityLabel.accessibilityLabel, accessibilityRole: "list", scrollEnabled, showsVerticalScrollIndicator: false, onScroll };
-  obj = { gap: arg1(dependencyMap[5]).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom };
+  obj = { gap: products(8663).COLLECTIBLES_SHOP_CARD_GAP, paddingTop, paddingBottom };
   obj.contentContainerStyle = obj;
   obj.children = memo.map((arr) => {
-    const products = arg1;
-    return cardWidth(closure_4, {
+    let closure_0 = arg1;
+    return cardWidth(outer1_4, {
       style: rowContainer.rowContainer,
       children: arr.map((product) => {
-        if (null != closure_1) {
-          let categoryForProduct = closure_1;
+        if (null != outer1_1) {
+          let categoryForProduct = outer1_1;
         } else {
-          categoryForProduct = categoryForProduct.getCategoryForProduct(product.skuId);
+          categoryForProduct = columns.getCategoryForProduct(product.skuId);
         }
-        const obj = { product, index: arg1 * categoryForProduct + arg1, cardWidth: closure_7 };
+        const obj = { product, index: closure_0 * outer1_6 + arg1, cardWidth: outer1_7 };
         let unpublishedAt;
         if (null != categoryForProduct) {
           unpublishedAt = categoryForProduct.unpublishedAt;
         }
         obj.unpublishedAt = unpublishedAt;
-        obj.preferVCPrice = closure_2;
-        obj.disableBundleStaticBackground = closure_3;
-        obj.muteBundleStaticBackground = closure_4;
-        return closure_7(closure_9, obj, product.skuId);
+        obj.preferVCPrice = outer1_2;
+        obj.disableBundleStaticBackground = outer1_3;
+        obj.muteBundleStaticBackground = outer1_4;
+        return cardWidth(outer2_9, obj, product.skuId);
       })
     }, arg1);
   });
-  return <closure_5 {...obj} />;
+  return cardWidth(closure_5, obj);
 };

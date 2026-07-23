@@ -1,17 +1,20 @@
-// Module ID: 4532
-// Function ID: 39793
+// Module ID: 4536
+// Function ID: 39825
 // Name: map
-// Dependencies: []
+// Dependencies: [27, 3, 2]
 // Exports: default
 
-// Module 4532 (map)
-const _module = require(dependencyMap[0]);
-({ requireNativeComponent: closure_0, UIManager: closure_1, View: closure_2 } = _module);
-let importDefaultResult = importDefault(dependencyMap[1]);
+// Module 4536 (map)
+import get_ActivityIndicator from "get ActivityIndicator";
+import importDefaultResult from "timestamp";
+
+let closure_0;
+let closure_1;
+let closure_2;
+({ requireNativeComponent: closure_0, UIManager: closure_1, View: closure_2 } = get_ActivityIndicator);
 importDefaultResult = new importDefaultResult("RequireNativeComponentOrDefault");
 const map = new Map();
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("utils/native/requireNativeComponentOrDefault.native.tsx");
+let result = require("set").fileFinishedImporting("utils/native/requireNativeComponentOrDefault.native.tsx");
 
 export default function requireNativeComponentOrDefault(warnWhenMissing) {
   let componentFoundInstance;

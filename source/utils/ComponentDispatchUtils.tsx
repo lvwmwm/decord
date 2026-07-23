@@ -1,15 +1,16 @@
 // Module ID: 1207
-// Function ID: 13873
+// Function ID: 13874
 // Name: reportDevtoolsEvent
-// Dependencies: []
+// Dependencies: [653, 1208, 3, 1209, 2]
 
 // Module 1207 (reportDevtoolsEvent)
-const ComponentActionsKeyed = require(dependencyMap[0]).ComponentActionsKeyed;
-let importDefaultResult = importDefault(dependencyMap[2]);
+import { ComponentActionsKeyed } from "ME";
+import importDefaultResult from "ComponentDispatcher";
+
 importDefaultResult = new importDefaultResult("ComponentDispatchUtils");
-const obj = {
-  389648952: "isArray",
-  -625213786: "WireType",
+let obj = {
+  maxListeners: 100,
+  enableDevtools: false,
   logger: {
     warn(arg0, arg1) {
       const items = [arg0, ...HermesBuiltin.copyRestArgs()];
@@ -19,12 +20,12 @@ const obj = {
   devtoolsReporter: function reportDevtoolsEvent(fullActionName, actionData, durationMs) {
     const importAll = fullActionName;
     const values = Object.values(ComponentActionsKeyed);
-    const found = values.find((arg0) => arg0.startsWith(arg0));
+    const found = values.find((arg0) => closure_0.startsWith(arg0));
     let tmp2 = fullActionName;
     if (null != found) {
       tmp2 = found;
     }
-    let obj = importAll(dependencyMap[1]);
+    let obj = importAll(1208);
     obj = { type: "ComponentDispatch", description: tmp2 };
     obj = { actionData, fullActionName };
     obj.data = obj;
@@ -32,9 +33,8 @@ const obj = {
     obj.reportEvent(obj);
   }
 };
-const componentDispatcher = new require(dependencyMap[3]).ComponentDispatcher(obj);
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("utils/ComponentDispatchUtils.tsx");
+const componentDispatcher = new require("ComponentDispatcher").ComponentDispatcher(obj);
+const result = require("timestamp").fileFinishedImporting("utils/ComponentDispatchUtils.tsx");
 
-export const ComponentDispatcher = require(dependencyMap[3]).ComponentDispatcher;
+export const ComponentDispatcher = require("ComponentDispatcher").ComponentDispatcher;
 export const ComponentDispatch = componentDispatcher;

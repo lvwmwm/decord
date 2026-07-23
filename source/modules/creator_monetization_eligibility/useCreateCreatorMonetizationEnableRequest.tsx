@@ -1,21 +1,23 @@
-// Module ID: 16289
-// Function ID: 125733
+// Module ID: 16406
+// Function ID: 127907
 // Name: useCreateCreatorMonetizationEnableRequest
-// Dependencies: []
+// Dependencies: [5, 57, 31, 16380, 4030, 2]
 // Exports: default
 
-// Module 16289 (useCreateCreatorMonetizationEnableRequest)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/creator_monetization_eligibility/useCreateCreatorMonetizationEnableRequest.tsx");
+// Module 16406 (useCreateCreatorMonetizationEnableRequest)
+import set from "set";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const result = require("result").fileFinishedImporting("modules/creator_monetization_eligibility/useCreateCreatorMonetizationEnableRequest.tsx");
 
 export default function useCreateCreatorMonetizationEnableRequest(arg0) {
+  let dependencyMap;
   let tmp4;
-  const importDefault = arg0;
+  let closure_0 = arg0;
   const tmp2 = callback2(React.useState(), 2);
   let closure_1 = tmp2[1];
-  [tmp4, closure_2] = callback2(React.useState(false), 2);
+  [tmp4, dependencyMap] = callback2(React.useState(false), 2);
   const tmp5 = callback2(React.useState(false), 2);
   const callback = tmp5[1];
   const tmp3 = callback2(React.useState(false), 2);

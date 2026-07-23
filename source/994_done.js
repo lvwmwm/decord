@@ -1,10 +1,10 @@
 // Module ID: 994
-// Function ID: 10672
+// Function ID: 10673
 // Name: done
-// Dependencies: []
+// Dependencies: [995]
 
 // Module 994 (done)
-require(dependencyMap[0]).prototype.done = function(arg0, arg1) {
+require("noop").prototype.done = function(arg0, arg1) {
   const self = this;
   let self2 = this;
   if (arguments.length) {
@@ -12,10 +12,11 @@ require(dependencyMap[0]).prototype.done = function(arg0, arg1) {
     self2 = then(...arguments);
   }
   self2.then(null, (arg0) => {
+    let closure_0 = arg0;
     const timerId = setTimeout(() => {
-      throw arg0;
+      throw closure_0;
     }, 0);
   });
 };
 
-export default require(dependencyMap[0]);
+export { default } from "noop";

@@ -1,12 +1,12 @@
-// Module ID: 6941
-// Function ID: 55493
+// Module ID: 6946
+// Function ID: 55527
 // Name: frozen
-// Dependencies: []
+// Dependencies: [587, 2]
 
-// Module 6941 (frozen)
+// Module 6946 (frozen)
 const frozen = Object.freeze({
   getItem(arg0) {
-    const Storage = require(dependencyMap[0]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     const value = Storage.get(arg0);
     let tmp2 = null;
     if (null != value) {
@@ -15,15 +15,14 @@ const frozen = Object.freeze({
     return tmp2;
   },
   setItem(arg0, arg1) {
-    const Storage = require(dependencyMap[0]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     return Storage.set(arg0, arg1);
   },
   removeItem(arg0) {
-    const Storage = require(dependencyMap[0]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     return Storage.remove(arg0);
   }
 });
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/zustand/LocalStorageWrapper.tsx");
+const result = require("set").fileFinishedImporting("modules/zustand/LocalStorageWrapper.tsx");
 
 export default frozen;

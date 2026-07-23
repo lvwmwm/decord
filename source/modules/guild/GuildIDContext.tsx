@@ -1,11 +1,12 @@
-// Module ID: 4360
-// Function ID: 38669
+// Module ID: 4364
+// Function ID: 38701
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 2]
 
-// Module 4360 (context)
-const context = importAll(dependencyMap[0]).createContext(undefined);
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/guild/GuildIDContext.tsx");
+// Module 4364 (context)
+import importAllResult from "result";
+
+const context = require("result").createContext(undefined);
+const result = require("set").fileFinishedImporting("modules/guild/GuildIDContext.tsx");
 
 export default context;

@@ -1,25 +1,26 @@
 // Module ID: 221
 // Function ID: 3067
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 201]
 
 // Module 221 (_isNativeReflectConstruct)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _classCallCheck = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _classCallCheck;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 
-export default (arg0) => {
+export default ((arg0) => {
   class CloseEvent {
     constructor(arg0, arg1) {
       self = this;
@@ -27,13 +28,13 @@ export default (arg0) => {
       items = [, ];
       items[0] = arg0;
       items[1] = arg1;
-      obj = closure_3(CloseEvent);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      obj = outer1_3(CloseEvent);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, items, closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -62,7 +63,6 @@ export default (arg0) => {
       return tmp2Result;
     }
   }
-  let closure_0 = CloseEvent;
   callback2(CloseEvent, arg0);
   let obj = {
     key: "wasClean",
@@ -70,7 +70,7 @@ export default (arg0) => {
       return this._wasClean;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "code",
     get() {
@@ -86,4 +86,4 @@ export default (arg0) => {
   };
   items[2] = obj;
   return callback(CloseEvent, items);
-}(importDefault(dependencyMap[5]));
+})(require("Event"));

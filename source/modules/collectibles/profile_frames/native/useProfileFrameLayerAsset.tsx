@@ -1,27 +1,30 @@
-// Module ID: 8252
-// Function ID: 65110
+// Module ID: 8258
+// Function ID: 65147
 // Name: map
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1830, 2]
 // Exports: default
 
-// Module 8252 (map)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-({ Image: closure_4, PixelRatio: closure_5 } = arg1(dependencyMap[2]));
+// Module 8258 (map)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ Image: closure_4, PixelRatio: closure_5 } = get_ActivityIndicator);
 const map = new Map();
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx");
 
 export default function useProfileFrameLayerAsset(width) {
   let layer;
   let skuId;
   width = width.width;
   ({ skuId, layer } = width);
-  let obj = arg1(closure_1[3]);
-  obj = { skuId, assetFormat: arg1(closure_1[3]).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
-  const collectiblesItemAssetUrl = obj.getCollectiblesItemAssetUrl(obj);
-  const arg1 = collectiblesItemAssetUrl;
-  closure_1 = callback(React.useReducer((arg0) => arg0 + 1, 0), 2)[1];
+  let obj = collectiblesItemAssetUrl(1830);
+  obj = { skuId, assetFormat: collectiblesItemAssetUrl(1830).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
+  collectiblesItemAssetUrl = obj.getCollectiblesItemAssetUrl(obj);
+  const dependencyMap = callback(React.useReducer((arg0) => arg0 + 1, 0), 2)[1];
   const items = [collectiblesItemAssetUrl];
   const effect = React.useEffect(() => {
     let hasItem = null == collectiblesItemAssetUrl;
@@ -29,13 +32,13 @@ export default function useProfileFrameLayerAsset(width) {
       hasItem = "" === collectiblesItemAssetUrl;
     }
     if (!hasItem) {
-      hasItem = set.has(collectiblesItemAssetUrl);
+      hasItem = outer1_6.has(collectiblesItemAssetUrl);
     }
     if (!hasItem) {
-      const size = size.getSize(collectiblesItemAssetUrl, (arg0, arg1) => {
+      const size = outer1_4.getSize(collectiblesItemAssetUrl, (arg0, arg1) => {
         if (arg0 > 0) {
-          const result = closure_6.set(closure_0, arg1 / arg0);
-          callback();
+          const result = outer2_6.set(outer1_0, arg1 / arg0);
+          outer1_1();
         }
       }, () => {
 

@@ -1,17 +1,20 @@
-// Module ID: 15326
-// Function ID: 116588
+// Module ID: 15443
+// Function ID: 118762
 // Name: getGroupDMRecipientLimit
-// Dependencies: []
+// Dependencies: [1849, 653, 2]
 // Exports: default
 
-// Module 15326 (getGroupDMRecipientLimit)
-let closure_0 = importDefault(dependencyMap[0]);
-({ MAX_GROUP_DM_PARTICIPANTS: closure_1, MAX_GROUP_DM_STAFF_PARTICIPANTS: closure_2 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/group_dm/getGroupDMRecipientLimit.tsx");
+// Module 15443 (getGroupDMRecipientLimit)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_1;
+let closure_2;
+({ MAX_GROUP_DM_PARTICIPANTS: closure_1, MAX_GROUP_DM_STAFF_PARTICIPANTS: closure_2 } = ME);
+const result = require("set").fileFinishedImporting("modules/group_dm/getGroupDMRecipientLimit.tsx");
 
 export default function getGroupDMRecipientLimit(userLimit) {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
     if (currentUser.isStaff()) {
       userLimit = closure_2;

@@ -1,39 +1,48 @@
-// Module ID: 11640
-// Function ID: 90356
+// Module ID: 11650
+// Function ID: 90405
 // Name: useAnimatedTextStyle
-// Dependencies: []
+// Dependencies: [31, 27, 33, 3991, 4130, 689, 4542, 4126, 477, 1212, 2]
 // Exports: TabItem
 
-// Module 11640 (useAnimatedTextStyle)
+// Module 11650 (useAnimatedTextStyle)
+import result from "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "module_3991";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function useAnimatedTextStyle(index) {
   index = index.index;
-  const arg1 = index;
   const activeIndex = index.activeIndex;
-  const importDefault = activeIndex;
   const pressed = index.pressed;
-  const dependencyMap = pressed;
-  let closure_3;
-  let tmp = callback3();
+  let c3;
+  let tmp = _createForOfIteratorHelperLoose();
   if ("gradient-background" === index.variant) {
-    tmp = callback4();
+    tmp = callback3();
   }
-  closure_3 = tmp;
-  let obj = arg1(dependencyMap[3]);
+  c3 = tmp;
+  let obj = index(pressed[3]);
   const fn = function c() {
-    let active = tmp.inactive;
-    const tmp = pressed.get() >= 0;
+    let active = _undefined.inactive;
     const value = pressed.get();
     if (value === index) {
-      active = tmp.pressed;
+      active = _undefined.pressed;
     } else if (tmp) {
-      active = tmp.inactive;
-    } else if (tmp4 === index) {
-      active = tmp.active;
+      active = _undefined.inactive;
+    } else if (tmp4 === tmp3) {
+      active = _undefined.active;
     }
-    const obj = { color: index(pressed[6]).withSpring(active, closure_7, "animate-always") };
+    const obj = {};
+    tmp = pressed.get() >= 0;
+    tmp3 = index;
+    obj.color = index(pressed[6]).withSpring(active, outer1_7, "animate-always");
     return obj;
   };
-  obj = { colors: tmp, pressed, index, activeIndex, withSpring: arg1(dependencyMap[6]).withSpring, TEXT_SPRING_CONFIG: closure_7 };
+  obj = { colors: tmp, pressed, index, activeIndex, withSpring: index(pressed[6]).withSpring, TEXT_SPRING_CONFIG: closure_7 };
   fn.__closure = obj;
   fn.__workletHash = 11643476765161;
   fn.__initData = closure_12;
@@ -46,66 +55,59 @@ function TabItemCount(arg0) {
   let pressed;
   let variant;
   ({ count, index, activeIndex, pressed, variant } = arg0);
-  let obj = arg1(dependencyMap[3]);
-  const sharedValue = obj.useSharedValue(0);
-  const arg1 = sharedValue;
-  const items = [sharedValue];
+  let obj = sharedValue(3991);
+  sharedValue = obj.useSharedValue(0);
+  let items = [sharedValue];
   const layoutEffect = React.useLayoutEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj1 = arg1(dependencyMap[3]);
+  let obj1 = sharedValue(3991);
   class T {
     constructor() {
       obj = {};
-      obj2 = closure_0(closure_2[6]);
-      obj.opacity = obj2.withSpring(closure_0.get(), closure_8);
+      obj2 = outer1_0(outer1_2[6]);
+      obj.opacity = obj2.withSpring(closure_0.get(), outer1_8);
       obj = {};
-      obj4 = closure_0(closure_2[6]);
-      obj5 = closure_0(closure_2[3]);
+      obj4 = outer1_0(outer1_2[6]);
+      obj5 = outer1_0(outer1_2[3]);
       items = [, ];
       items[0] = -10;
       items[1] = 0;
-      obj.translateX = obj4.withSpring(obj5.interpolate(closure_0.get(), [77601039, 1612144654], items), closure_8);
+      obj.translateX = obj4.withSpring(obj5.interpolate(closure_0.get(), [0, 1], items), outer1_8);
       items1 = [];
       items1[0] = obj;
       obj.transform = items1;
       return obj;
     }
   }
-  obj = { withSpring: arg1(dependencyMap[6]).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG: closure_8, interpolate: arg1(dependencyMap[3]).interpolate };
+  obj = { withSpring: sharedValue(4542).withSpring, countAnimationState: sharedValue, COUNT_SPRING_CONFIG: closure_8, interpolate: sharedValue(3991).interpolate };
   T.__closure = obj;
   T.__workletHash = 16666672974627;
   T.__initData = closure_13;
   const animatedStyle = obj1.useAnimatedStyle(T);
   const tmp = callback2();
   obj = { style: items1 };
-  const items1 = [tmp.count, animatedStyle];
-  obj1 = { label: "8d7c88bf2a3c70b7581717d42e9c4ec1", accessible: "send_message_32px", surrogates: "png", jsx: true, style: useAnimatedTextStyle({ index, activeIndex, pressed, variant }), children: count };
-  obj.children = callback(arg1(dependencyMap[7]).Text, obj1);
-  return callback(importDefault(dependencyMap[3]).View, obj);
+  items1 = [tmp.count, animatedStyle];
+  obj1 = { animated: true, variant: "text-sm/medium", style: useAnimatedTextStyle({ index, activeIndex, pressed, variant }), lineClamp: 1, children: count };
+  obj.children = callback(sharedValue(4126).Text, obj1);
+  return callback(importDefault(3991).View, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]).createAnimatedComponent(arg1(dependencyMap[1]).Pressable);
-let closure_7 = { marginVertical: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010754332093450583, maxHeight: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014563163232767484, maxWidth: -867922343120036700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, minHeight: 4112214442204730000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-let closure_8 = { marginVertical: true, maxHeight: true, maxWidth: true, minHeight: true };
-let obj1 = arg1(dependencyMap[4]);
-let obj = { item: { "Bool(true)": null, "Bool(true)": "6ac82e47fbd4ea8331f749e0f8f68b4b", "Bool(true)": "voice_bar_bluetooth", "Bool(true)": "png", "Bool(true)": true } };
-obj = { marginLeft: importDefault(dependencyMap[5]).space.PX_8 };
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = require("module_3991").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_7 = { mass: 0.3, damping: 13, stiffness: 250, overshootClamping: true };
+let closure_8 = { mass: 2, damping: 30, stiffness: 300, overshootClamping: true };
+let obj = { item: { flexShrink: 0, flexBasis: 0, paddingBottom: 14, flexDirection: "row", justifyContent: "center" } };
+obj = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
 obj.count = obj;
-let closure_9 = obj1.createStyles(obj);
-const importDefaultResult = importDefault(dependencyMap[3]);
-obj1 = { inactive: importDefault(dependencyMap[5]).colors.TEXT_MUTED, active: importDefault(dependencyMap[5]).colors.TEXT_BRAND, pressed: importDefault(dependencyMap[5]).colors.TEXT_BRAND };
-let closure_10 = arg1(dependencyMap[4]).createStyleProperties(obj1);
-const obj5 = arg1(dependencyMap[4]);
-const obj7 = arg1(dependencyMap[4]);
-let closure_11 = obj7.createStyleProperties({ inactive: importDefault(dependencyMap[5]).colors.TEXT_MUTED, active: importDefault(dependencyMap[5]).colors.TEXT_STRONG, pressed: importDefault(dependencyMap[5]).colors.TEXT_STRONG });
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+_createForOfIteratorHelperLoose = { inactive: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, active: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND, pressed: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyleProperties(_createForOfIteratorHelperLoose);
+let closure_11 = _createForOfIteratorHelperLoose.createStyleProperties({ inactive: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, active: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG, pressed: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG });
 let closure_12 = { code: "function TabItemNativeTsx1(){const{colors,pressed,index,activeIndex,withSpring,TEXT_SPRING_CONFIG}=this.__closure;let color=colors.inactive;const isPressActive=pressed.get()>=0;const isPressed=pressed.get()===index;const isActive=Math.round(activeIndex.get())===index;if(isPressed){color=colors.pressed;}else if(isPressActive){color=colors.inactive;}else if(isActive){color=colors.active;}return{color:withSpring(color,TEXT_SPRING_CONFIG,'animate-always')};}" };
 let closure_13 = { code: "function TabItemNativeTsx2(){const{withSpring,countAnimationState,COUNT_SPRING_CONFIG,interpolate}=this.__closure;return{opacity:withSpring(countAnimationState.get(),COUNT_SPRING_CONFIG),transform:[{translateX:withSpring(interpolate(countAnimationState.get(),[0,1],[-10,0]),COUNT_SPRING_CONFIG)}]};}" };
 let closure_14 = { code: "function TabItemNativeTsx3(){const{activeIndex,index}=this.__closure;return{accessibilityState:{selected:activeIndex.get()===index}};}" };
-const obj2 = { inactive: importDefault(dependencyMap[5]).colors.TEXT_MUTED, active: importDefault(dependencyMap[5]).colors.TEXT_STRONG, pressed: importDefault(dependencyMap[5]).colors.TEXT_STRONG };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/components/Tabs/native/TabItem.native.tsx");
+let obj2 = { inactive: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, active: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG, pressed: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG };
+let result = require("jsxProd").fileFinishedImporting("design/components/Tabs/native/TabItem.native.tsx");
 
 export const TabItem = function TabItem(arg0) {
   let count;
@@ -117,16 +119,14 @@ export const TabItem = function TabItem(arg0) {
   let state;
   let variant;
   ({ count, index } = arg0);
-  const arg1 = index;
   ({ state, pressed, variant } = arg0);
-  let obj = { "Bool(false)": 0.6, "Bool(false)": "BounceOut", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutRight", "Bool(false)": null, "Bool(false)": 0.6, "Bool(false)": "BounceOutLeft" };
+  let obj = { label: 0, count: 0, index: 0, itemCount: 0, state: 0, pressed: 0, grow: 0, variant: 0 };
   ({ label, itemCount, grow } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   const activeIndex = state.activeIndex;
-  const importDefault = activeIndex;
-  const dependencyMap = state.setItemDimensions;
-  let obj1 = arg1(dependencyMap[3]);
+  const setItemDimensions = state.setItemDimensions;
+  let obj1 = index(setItemDimensions[3]);
   const fn = function f() {
     let obj = {};
     obj = { selected: activeIndex.get() === index };
@@ -158,14 +158,14 @@ export const TabItem = function TabItem(arg0) {
   const tmp7 = closure_6;
   let formatToPlainStringResult;
   if (obj5.isAndroid()) {
-    const intl = arg1(dependencyMap[9]).intl;
+    const intl = index(setItemDimensions[9]).intl;
     obj1 = { position: index + 1, tabCount: itemCount };
-    formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[9]).t.4EsQA1, obj1);
+    formatToPlainStringResult = intl.formatToPlainString(index(setItemDimensions[9]).t["4EsQA1"], obj1);
   }
   obj["accessibilityHint"] = formatToPlainStringResult;
   obj["animatedProps"] = animatedProps;
-  const obj2 = { label: 0.931, accessible: 0, surrogates: null, jsx: 1, style: tmp5, children: label };
-  const items1 = [callback(arg1(dependencyMap[7]).Text, obj2), ];
+  const obj2 = { animated: true, variant: "text-sm/semibold", style: tmp5, lineClamp: 1, children: label };
+  const items1 = [callback(index(setItemDimensions[7]).Text, obj2), ];
   let tmp12 = null;
   if (null != count) {
     const obj3 = { count, index, activeIndex, pressed, variant };

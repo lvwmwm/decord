@@ -1,9 +1,18 @@
-// Module ID: 9525
-// Function ID: 74184
+// Module ID: 9532
+// Function ID: 74225
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1849, 3754, 9533, 4351, 566, 686, 2]
 
-// Module 9525 (_isNativeReflectConstruct)
+// Module 9532 (_isNativeReflectConstruct)
+import sortedInsert from "sortedInsert";
+import savedMessageDataToClient from "savedMessageDataToClient";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -94,7 +103,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function getTimeSafe(dueAt) {
   if (null == dueAt) {
-    return closure_8;
+    return c8;
   } else {
     const _Date = Date;
     const date = new Date(tmp);
@@ -105,7 +114,7 @@ function getComparator(dueAt) {
   if (null != dueAt.dueAt) {
     let diff = getTimeSafe(dueAt.dueAt);
   } else {
-    diff = closure_8 - getTimeSafe(dueAt.savedAt);
+    diff = c8 - getTimeSafe(dueAt.savedAt);
   }
   return diff;
 }
@@ -169,49 +178,43 @@ function nullifyMessageObject(messageId) {
 function handleGuild() {
   let tmp = 0 !== set1.size;
   if (tmp) {
-    if (!closure_10) {
-      closure_10 = true;
+    if (!c10) {
+      c10 = true;
     }
-    tmp = !closure_10;
-    const tmp3 = !closure_10;
+    tmp = !c10;
+    const tmp3 = !c10;
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = 10000000000000;
-const secondaryIndexMap = new arg1(dependencyMap[6]).SecondaryIndexMap((saveData) => {
-  const items = [arg1(dependencyMap[7]).SavedMessageSortTypes.ALL, ];
+let c8 = 10000000000000;
+const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap((saveData) => {
+  const items = [require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.ALL, ];
   if (null != saveData.saveData.dueAt) {
-    let BOOKMARK = arg1(dependencyMap[7]).SavedMessageSortTypes.REMINDER;
+    let BOOKMARK = require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER;
   } else {
-    BOOKMARK = arg1(dependencyMap[7]).SavedMessageSortTypes.BOOKMARK;
+    BOOKMARK = require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK;
   }
   items[1] = BOOKMARK;
   return items;
 }, (saveData) => getComparator(saveData.saveData));
-let closure_10 = true;
-let closure_11 = 0;
-const set = new Set();
+let c10 = true;
+let c11 = 0;
+let set = new Set();
 const set1 = new Set();
 const map = new Map();
-let tmp6 = (Store) => {
+let tmp6 = ((Store) => {
   class SavedMessagesStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, SavedMessagesStore);
-      obj = closure_5(SavedMessagesStore);
-      tmp2 = closure_4;
-      if (closure_15()) {
+      tmp = outer1_2(this, SavedMessagesStore);
+      obj = outer1_5(SavedMessagesStore);
+      tmp2 = outer1_4;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -220,101 +223,100 @@ let tmp6 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SavedMessagesStore;
   callback2(SavedMessagesStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
     }
   };
   const items = [obj, , , , , , , , , , , ];
   obj = {
     key: "getSavedMessages",
     value() {
-      return store.values(SavedMessagesStore(closure_1[7]).SavedMessageSortTypes.ALL);
+      return outer1_9.values(SavedMessagesStore(outer1_1[7]).SavedMessageSortTypes.ALL);
     }
   };
   items[1] = obj;
   obj = {
     key: "getSavedMessage",
     value(channelId, messageId) {
-      return store.get(callback4({ channelId, messageId }));
+      return outer1_9.get(outer1_21({ channelId, messageId }));
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getMessageBookmarks",
     value() {
-      return store.values(SavedMessagesStore(closure_1[7]).SavedMessageSortTypes.BOOKMARK);
+      return outer1_9.values(SavedMessagesStore(outer1_1[7]).SavedMessageSortTypes.BOOKMARK);
     }
   };
   items[4] = {
     key: "getMessageReminders",
     value() {
-      return store.values(SavedMessagesStore(closure_1[7]).SavedMessageSortTypes.REMINDER);
+      return outer1_9.values(SavedMessagesStore(outer1_1[7]).SavedMessageSortTypes.REMINDER);
     }
   };
   items[5] = {
     key: "getOverdueMessageReminderCount",
     value() {
-      return closure_12.size;
+      return outer1_12.size;
     }
   };
   items[6] = {
     key: "hasOverdueReminder",
     value() {
-      return closure_12.size > 0;
+      return outer1_12.size > 0;
     }
   };
   items[7] = {
     key: "getSavedMessageCount",
     value() {
-      return store.size();
+      return outer1_9.size();
     }
   };
   items[8] = {
     key: "getIsStale",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[9] = {
     key: "getLastChanged",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[10] = {
     key: "isMessageBookmarked",
     value(channelId, messageId) {
-      const value = store.get(callback4({ channelId, messageId }));
+      const value = outer1_9.get(outer1_21({ channelId, messageId }));
       return null != value && null == value.saveData.dueAt;
     }
   };
   items[11] = {
     key: "isMessageReminder",
     value(channelId, messageId) {
-      const value = store.get(callback4({ channelId, messageId }));
+      const value = outer1_9.get(outer1_21({ channelId, messageId }));
       return null != value && null != value.saveData.dueAt;
     }
   };
   return callback(SavedMessagesStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp6.displayName = "SavedMessagesStore";
-tmp6 = new tmp6(importDefault(dependencyMap[10]), {
+tmp6 = new tmp6(require("dispatcher"), {
   POST_CONNECTION_OPEN: function handlePostConnectionOpen() {
-    let closure_10 = true;
+    let c10 = true;
   },
   LOGOUT: function handleLogout() {
-    let closure_10 = true;
+    let c10 = true;
     secondaryIndexMap.clear();
     map.clear();
     set1.clear();
   },
   SAVED_MESSAGES_UPDATE: function handleUpdate(savedMessages) {
     let done;
-    let closure_10 = false;
+    let c10 = false;
     secondaryIndexMap.clear();
     map.clear();
     set1.clear();
@@ -322,8 +324,8 @@ tmp6 = new tmp6(importDefault(dependencyMap[10]), {
     let iter = tmp4();
     if (!iter.done) {
       do {
-        let tmp5 = closure_22;
-        let tmp6 = closure_22(iter.value);
+        let tmp5 = upsertSavedMessage;
+        let tmp6 = upsertSavedMessage(iter.value);
         let iter2 = tmp4();
         iter = iter2;
         done = iter2.done;
@@ -360,9 +362,9 @@ tmp6 = new tmp6(importDefault(dependencyMap[10]), {
     let iter = tmp2();
     if (!iter.done) {
       do {
-        let tmp3 = closure_23;
+        let tmp3 = nullifyMessageObject;
         let obj = { messageId: iter.value, channelId: tmp };
-        let tmp4 = closure_23(obj);
+        let tmp4 = nullifyMessageObject(obj);
         let iter2 = tmp2();
         iter = iter2;
         done = iter2.done;
@@ -386,7 +388,7 @@ tmp6 = new tmp6(importDefault(dependencyMap[10]), {
         } else {
           obj = {};
           const merged = Object.assign(value);
-          obj.message = arg1(dependencyMap[8]).updateMessageRecord(value.message, message);
+          obj.message = require(4351) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
           const result = secondaryIndexMap.set(tmp10, obj);
         }
       }
@@ -399,11 +401,11 @@ tmp6 = new tmp6(importDefault(dependencyMap[10]), {
   CHANNEL_CREATE: function handleChannelCreate(arg0) {
     let tmp2 = 0 !== set1.size;
     if (tmp2) {
-      let tmp4 = !closure_10;
-      if (!closure_10) {
+      let tmp4 = !c10;
+      if (!c10) {
         const tmp6 = isChannelRelevant(tmp.id);
         if (tmp6) {
-          closure_10 = true;
+          c10 = true;
         }
         tmp4 = tmp6;
         const tmp7 = tmp6;
@@ -413,10 +415,11 @@ tmp6 = new tmp6(importDefault(dependencyMap[10]), {
     return tmp2;
   },
   CHANNEL_UPDATES: function handleChannelUpdates(arg0) {
+    let c10;
     let iter3;
     if (0 === set1.size) {
       return false;
-    } else if (closure_10) {
+    } else if (c10) {
       return false;
     } else {
       const tmp4 = _createForOfIteratorHelperLoose(tmp);
@@ -426,9 +429,9 @@ tmp6 = new tmp6(importDefault(dependencyMap[10]), {
       let flag3 = false;
       if (!iter.done) {
         do {
-          let tmp5 = closure_20;
-          if (closure_20(iter2.value.id)) {
-            closure_10 = true;
+          let tmp5 = isChannelRelevant;
+          if (isChannelRelevant(iter2.value.id)) {
+            c10 = true;
             flag2 = true;
           }
           iter3 = tmp4();
@@ -442,11 +445,11 @@ tmp6 = new tmp6(importDefault(dependencyMap[10]), {
   CHANNEL_DELETE: function handleChannelDelete(arg0) {
     let tmp2 = 0 !== set1.size;
     if (tmp2) {
-      let tmp4 = !closure_10;
-      if (!closure_10) {
+      let tmp4 = !c10;
+      if (!c10) {
         const tmp6 = isChannelRelevant(tmp.id);
         if (tmp6) {
-          closure_10 = true;
+          c10 = true;
         }
         tmp4 = tmp6;
         const tmp7 = tmp6;
@@ -458,15 +461,15 @@ tmp6 = new tmp6(importDefault(dependencyMap[10]), {
   GUILD_MEMBER_UPDATE: function handleGuildMemberUpdate(arg0) {
     let tmp2 = 0 !== set1.size;
     if (tmp2) {
-      let tmp4 = !closure_10;
-      if (!closure_10) {
-        const currentUser = currentUser.getCurrentUser();
+      let tmp4 = !c10;
+      if (!c10) {
+        currentUser = currentUser.getCurrentUser();
         let id;
         if (null != currentUser) {
           id = currentUser.id;
         }
         if (tmp.id === id) {
-          closure_10 = true;
+          c10 = true;
         }
         tmp4 = tmp9;
       }
@@ -481,7 +484,7 @@ tmp6 = new tmp6(importDefault(dependencyMap[10]), {
     set.add(savedMessage.savedMessage.saveData.messageId);
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/saved_messages/SavedMessagesStore.tsx");
+let result = set.fileFinishedImporting("modules/saved_messages/SavedMessagesStore.tsx");
 
 export default tmp6;
 export { getComparator };

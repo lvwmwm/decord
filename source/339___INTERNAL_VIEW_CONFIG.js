@@ -1,13 +1,14 @@
 // Module ID: 339
 // Function ID: 4989
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [110, 42]
 
 // Module 339 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "RCTModalHostView", directEventTypes: { topRequestClose: { registrationName: "onRequestClose" }, topShow: { registrationName: "onShow" }, topDismiss: { registrationName: "onDismiss" }, topOrientationChange: { registrationName: "onOrientationChange" } } };
-const _module = require(dependencyMap[0]);
-obj.validAttributes = Object.assign({ "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false }, _module.ConditionallyIgnoredEventHandlers({}));
-const _module1 = require(dependencyMap[1]);
+import weakSet from "weakSet";
+import get from "get";
 
-export default _module1.get("RCTModalHostView", () => obj);
+const obj = { uiViewClassName: "RCTModalHostView", directEventTypes: { topRequestClose: { registrationName: "onRequestClose" }, topShow: { registrationName: "onShow" }, topDismiss: { registrationName: "onDismiss" }, topOrientationChange: { registrationName: "onOrientationChange" } } };
+obj.validAttributes = Object.assign({ animationType: true, presentationStyle: true, transparent: true, statusBarTranslucent: true, navigationBarTranslucent: true, hardwareAccelerated: true, visible: true, animated: true, allowSwipeDismissal: true, supportedOrientations: true, identifier: true }, weakSet.ConditionallyIgnoredEventHandlers({ onRequestClose: true, onShow: true, onDismiss: true, onOrientationChange: true }));
+
+export default get.get("RCTModalHostView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

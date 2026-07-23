@@ -1,33 +1,35 @@
-// Module ID: 10360
-// Function ID: 79957
+// Module ID: 10370
+// Function ID: 80007
 // Name: showChannelFollowingActionSheet
-// Dependencies: []
+// Dependencies: [31, 33, 4098, 10371, 1934, 4471, 10377, 2]
 
-// Module 10360 (showChannelFollowingActionSheet)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/channel_following/native/showChannelFollowingActionSheet.tsx");
+// Module 10370 (showChannelFollowingActionSheet)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("showActionSheet").fileFinishedImporting("modules/channel_following/native/showChannelFollowingActionSheet.tsx");
 function showChannelFollowingActionSheet(id, guildId) {
-  guildId = id;
+  const _require = id;
   const importDefault = guildId;
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(4098);
   obj = {
     sourceChannelId: id,
     sourceGuildId: guildId,
     targetChannelId: arg2,
     targetGuildId: arg3,
     reopenActionSheetWithTarget(arg0, arg1) {
-      callback(arg0, arg1, arg1, arg0);
+      outer1_4(closure_0, closure_1, arg1, arg0);
     },
     onSuccess() {
-      let obj = arg1(closure_2[5]);
+      let obj = guildId(outer1_2[5]);
       obj = {
         importer() {
-          return callback(paths[4])(paths[6], paths.paths).then((arg0) => {
+          return callback(outer2_2[4])(outer2_2[6], outer2_2.paths).then((arg0) => {
             let closure_0 = arg0.default;
             return (arg0) => {
               const merged = Object.assign(arg0);
-              return callback(closure_0, {});
+              return outer4_3(closure_0, {});
             };
           });
         },
@@ -36,10 +38,10 @@ function showChannelFollowingActionSheet(id, guildId) {
       obj.openLazy(obj);
     },
     onCancel() {
-      return arg1(closure_2[2]).hideActionSheet();
+      return guildId(outer1_2[2]).hideActionSheet();
     }
   };
-  obj.openLazy(guildId(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), "NewChannelFollower." + id, obj);
+  obj.openLazy(_require(1934)(10371, dependencyMap.paths), "NewChannelFollower." + id, obj);
 }
 
 export { showChannelFollowingActionSheet };

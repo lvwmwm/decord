@@ -1,10 +1,22 @@
-// Module ID: 6753
-// Function ID: 52643
+// Module ID: 6758
+// Function ID: 52675
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1917, 1354, 3754, 22, 21, 566, 686, 2]
 // Exports: eventScheduledToStartWithin, isGuildEventEnded, scheduledEventSort
 
-// Module 6753 (_isNativeReflectConstruct)
+// Module 6758 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "GUILD_EVENT_MAX_NAME_LENGTH";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
+
+let closure_10;
+let closure_11;
+let closure_9;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,49 +26,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -67,16 +79,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -113,16 +125,16 @@ function deleteEvent(id) {
     flag = true;
   }
   secondaryIndexMap.delete(id);
-  delete r4[r3];
+  delete tmp3[tmp2];
   if (flag) {
-    delete r1[r3];
+    delete tmp[tmp2];
   }
   closure_14 = closure_14 + 1;
 }
 function getEventRecurrenceId(guild_scheduled_event_exception_id) {
   let tmp = guild_scheduled_event_exception_id;
   if (null == guild_scheduled_event_exception_id) {
-    tmp = closure_16;
+    tmp = SERIES;
   }
   return tmp;
 }
@@ -136,18 +148,18 @@ function addGuildEventUser(guild_scheduled_event_id) {
     flag2 = true;
   }
   guild_scheduled_event_id = guild_scheduled_event_id.guild_scheduled_event_id;
-  if (null == closure_17[guild_scheduled_event_id]) {
-    closure_17[guild_scheduled_event_id] = {};
+  if (null == dependencyMap[guild_scheduled_event_id]) {
+    dependencyMap[guild_scheduled_event_id] = {};
   }
   const tmp2 = getEventRecurrenceId(guild_scheduled_event_id.guild_scheduled_event_exception_id);
-  if (null == closure_17[guild_scheduled_event_id][tmp2]) {
-    closure_17[guild_scheduled_event_id][tmp2] = {};
+  if (null == dependencyMap[guild_scheduled_event_id][tmp2]) {
+    dependencyMap[guild_scheduled_event_id][tmp2] = {};
   }
-  closure_17[guild_scheduled_event_id][tmp2][guild_scheduled_event_id.user_id] = guild_scheduled_event_id;
+  dependencyMap[guild_scheduled_event_id][tmp2][guild_scheduled_event_id.user_id] = guild_scheduled_event_id;
   if (flag) {
     let tmp7;
-    if (null != closure_18[guild_scheduled_event_id.guild_scheduled_event_id]) {
-      tmp7 = tmp6[closure_24(undefined, guild_scheduled_event_id.guild_scheduled_event_exception_id)];
+    if (null != dependencyMap2[guild_scheduled_event_id.guild_scheduled_event_id]) {
+      tmp7 = tmp6[getEventRecurrenceId(undefined, guild_scheduled_event_id.guild_scheduled_event_exception_id)];
     }
     let num = 0;
     if (null != tmp7) {
@@ -171,33 +183,33 @@ function removeGuildEventUser(guild_scheduled_event_exception_id, arg1) {
   if (arg1 === undefined) {
     flag = true;
   }
-  const tmp = getEventRecurrenceId(guild_scheduled_event_exception_id.guild_scheduled_event_exception_id);
-  let tmp3;
-  if (null != closure_17[guild_scheduled_event_exception_id.guild_scheduled_event_id]) {
-    if (null != tmp2[tmp]) {
-      tmp3 = tmp4[guild_scheduled_event_exception_id.user_id];
+  const tmp3 = getEventRecurrenceId(guild_scheduled_event_exception_id.guild_scheduled_event_exception_id);
+  let tmp5;
+  if (null != dependencyMap[guild_scheduled_event_exception_id.guild_scheduled_event_id]) {
+    if (null != tmp4[tmp3]) {
+      tmp5 = tmp6[guild_scheduled_event_exception_id.user_id];
     }
   }
-  let tmp6 = !tmp5;
-  if (null == tmp3) {
-    tmp6 = guild_scheduled_event_exception_id.user_id === id.getId();
+  let tmp8 = !tmp7;
+  if (null == tmp5) {
+    tmp8 = guild_scheduled_event_exception_id.user_id === id.getId();
   }
-  if (!tmp6) {
-    let tmp9 = null == tmp8;
-    if (!tmp9) {
-      tmp9 = null == tmp11;
+  if (!tmp8) {
+    let tmp11 = null == tmp10;
+    if (!tmp11) {
+      tmp11 = null == tmp13;
     }
-    if (!tmp9) {
+    if (!tmp11) {
       const user_id = guild_scheduled_event_exception_id.user_id;
-      delete r6[r3];
+      delete tmp2[tmp];
     }
-    let tmp16;
-    if (null != closure_18[guild_scheduled_event_exception_id.guild_scheduled_event_id]) {
-      tmp16 = tmp15[closure_24(undefined, guild_scheduled_event_exception_id.guild_scheduled_event_exception_id)];
+    let tmp18;
+    if (null != dependencyMap2[guild_scheduled_event_exception_id.guild_scheduled_event_id]) {
+      tmp18 = tmp17[getEventRecurrenceId(undefined, guild_scheduled_event_exception_id.guild_scheduled_event_exception_id)];
     }
     let num = 0;
-    if (null != tmp16) {
-      num = tmp16;
+    if (null != tmp18) {
+      num = tmp18;
     }
     if (null == guild_scheduled_event_exception_id.guild_scheduled_event_exception_id) {
       let num3 = 1;
@@ -213,16 +225,16 @@ function removeGuildEventUser(guild_scheduled_event_exception_id, arg1) {
   }
 }
 function setUserCount(guild_scheduled_event_id, guild_scheduled_event_exception_id, eventCount) {
-  if (null == closure_18[guild_scheduled_event_id]) {
-    closure_18[guild_scheduled_event_id] = {};
+  if (null == dependencyMap2[guild_scheduled_event_id]) {
+    dependencyMap2[guild_scheduled_event_id] = {};
   }
-  closure_18[guild_scheduled_event_id][getEventRecurrenceId(guild_scheduled_event_exception_id)] = eventCount;
+  dependencyMap2[guild_scheduled_event_id][getEventRecurrenceId(guild_scheduled_event_exception_id)] = eventCount;
 }
 function clearScheduledEventsForGuild(id, arg1) {
-  const importDefault = arg1;
+  let closure_0 = arg1;
   const values = secondaryIndexMap.values(obj.GUILD_EVENT(id));
   const item = values.forEach((id) => {
-    callback(id.id, arg1);
+    outer1_23(id.id, closure_0);
   });
 }
 function handleGuildScheduledEventUpdateOrCreate(guildScheduledEvent) {
@@ -231,7 +243,6 @@ function handleGuildScheduledEventUpdateOrCreate(guildScheduledEvent) {
 }
 function handleGuildScheduledEventExceptionCreateOrUpdate(eventException) {
   eventException = eventException.eventException;
-  const importDefault = eventException;
   const value = secondaryIndexMap.get(eventException.event_id);
   if (null == value) {
     return false;
@@ -266,26 +277,19 @@ function isGuildScheduledEventActive(status) {
 function isEventUpcoming(guild_scheduled_event) {
   return !set.has(guild_scheduled_event.status);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-({ GuildScheduledEventStatus: closure_9, GuildScheduledEventStatusDone: closure_10, GuildScheduledEventUserResponses: closure_11 } = arg1(dependencyMap[7]));
+({ GuildScheduledEventStatus: closure_9, GuildScheduledEventStatusDone: closure_10, GuildScheduledEventUserResponses: closure_11 } = GUILD_EVENT_MAX_NAME_LENGTH);
 let obj = {
-  "Null": null,
-  "Null": null,
-  "Null": null,
+  EVENT: "event",
+  EVENT_ACTIVE: "active",
+  EVENT_UPCOMING: "event-upcoming",
   GUILD_EVENT(arg0) {
     return "" + arg0 + "-" + obj.EVENT;
   },
-  GUILD_EVENT_ACTIVE(guild_id) {
-    return "" + guild_id + "-" + obj.EVENT_ACTIVE;
+  GUILD_EVENT_ACTIVE(closure_0) {
+    return "" + closure_0 + "-" + obj.EVENT_ACTIVE;
   },
-  GUILD_EVENT_UPCOMING(guild_id) {
-    return "" + guild_id + "-" + obj.EVENT_UPCOMING;
+  GUILD_EVENT_UPCOMING(closure_0) {
+    return "" + closure_0 + "-" + obj.EVENT_UPCOMING;
   },
   CHANNEL_EVENT(channel_id) {
     return "" + channel_id + "-" + obj.EVENT;
@@ -293,11 +297,11 @@ let obj = {
   CHANNEL_EVENT_ACTIVE(channel_id) {
     return "" + channel_id + "-" + obj.EVENT_ACTIVE;
   },
-  CHANNEL_EVENT_UPCOMING(channel_id) {
-    return "" + channel_id + "-" + obj.EVENT_UPCOMING;
+  CHANNEL_EVENT_UPCOMING(closure_0) {
+    return "" + closure_0 + "-" + obj.EVENT_UPCOMING;
   }
 };
-const secondaryIndexMap = new arg1(dependencyMap[8]).SecondaryIndexMap(function scheduledEventIndex(status) {
+const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap(function scheduledEventIndex(status) {
   let channel_id;
   let entity_id;
   let guild_id;
@@ -326,24 +330,24 @@ const secondaryIndexMap = new arg1(dependencyMap[8]).SecondaryIndexMap(function 
   }
   return items;
 }, scheduledEventSort);
-let closure_14 = 0;
+let c14 = 0;
 let closure_15 = [];
-let closure_16 = "SERIES";
+const SERIES = "SERIES";
 let closure_17 = {};
 let closure_18 = {};
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class GuildScheduledEventStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GuildScheduledEventStore);
-      obj = closure_5(GuildScheduledEventStore);
-      tmp2 = closure_4;
-      if (closure_19()) {
+      tmp = outer1_2(this, GuildScheduledEventStore);
+      obj = outer1_5(GuildScheduledEventStore);
+      tmp2 = outer1_4;
+      if (outer1_19()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -352,21 +356,20 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = GuildScheduledEventStore;
   callback2(GuildScheduledEventStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, closure_8);
+      this.waitFor(outer1_7, outer1_8);
     }
   };
-  const items = [obj, , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , ];
   obj = {
     key: "getGuildScheduledEvent",
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        const value = store.get(arg0);
+        const value = outer1_13.get(arg0);
         let tmp4 = null;
         if (null != value) {
           tmp4 = value;
@@ -380,7 +383,7 @@ let tmp4 = (Store) => {
   obj = {
     key: "getGuildEventCountByIndex",
     value(arg0) {
-      return store.size(arg0);
+      return outer1_13.size(arg0);
     }
   };
   items[2] = obj;
@@ -390,7 +393,7 @@ let tmp4 = (Store) => {
       if (null == arg0) {
         let items = [];
       } else {
-        items = store.values(arg0);
+        items = outer1_13.values(arg0);
       }
       return items;
     }
@@ -398,13 +401,13 @@ let tmp4 = (Store) => {
   items[4] = {
     key: "getGuildScheduledEventsByIndex",
     value(arg0) {
-      return store.values(arg0);
+      return outer1_13.values(arg0);
     }
   };
   items[5] = {
     key: "getRsvpVersion",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[6] = {
@@ -414,8 +417,9 @@ let tmp4 = (Store) => {
         return null;
       } else {
         let tmp5;
-        if (null != closure_17[arg0]) {
-          if (null != tmp4[closure_24(undefined, arg1)]) {
+        if (null != outer1_17[arg0]) {
+          const tmp6 = tmp4[outer1_24(undefined, arg1)];
+          if (null != tmp6) {
             tmp5 = tmp6[arg2];
           }
         }
@@ -426,14 +430,14 @@ let tmp4 = (Store) => {
   items[7] = {
     key: "isInterestedInEventRecurrence",
     value(arg0, arg1) {
-      const id = id.getId();
+      const id = outer1_7.getId();
       const rsvp = this.getRsvp(arg0, null, id);
       const rsvp1 = this.getRsvp(arg0, arg1, id);
       let response;
       if (null != rsvp) {
         response = rsvp.response;
       }
-      let tmp5 = response === constants.INTERESTED;
+      let tmp5 = response === outer1_11.INTERESTED;
       let response1;
       if (null != rsvp1) {
         response1 = rsvp1.response;
@@ -442,7 +446,7 @@ let tmp4 = (Store) => {
         response = rsvp1.response;
       }
       if (tmp5) {
-        tmp5 = response !== constants.UNINTERESTED;
+        tmp5 = response !== outer1_11.UNINTERESTED;
       }
       if (!tmp5) {
         tmp5 = tmp7;
@@ -457,8 +461,8 @@ let tmp4 = (Store) => {
         return 0;
       } else {
         let tmp3;
-        if (null != closure_18[arg0]) {
-          tmp3 = tmp2[closure_16];
+        if (null != outer1_18[arg0]) {
+          tmp3 = tmp2[outer1_16];
         }
         let num = 0;
         if (null != tmp3) {
@@ -467,7 +471,7 @@ let tmp4 = (Store) => {
         let diff = num;
         if (null != arg1) {
           let tmp8;
-          if (null != closure_18[arg0]) {
+          if (null != outer1_18[arg0]) {
             tmp8 = tmp7[arg1];
           }
           let num2 = 0;
@@ -484,8 +488,8 @@ let tmp4 = (Store) => {
     key: "hasUserCount",
     value(arg0, arg1) {
       let tmp;
-      if (null != closure_18[arg0]) {
-        tmp = tmp2[closure_24(undefined, arg1)];
+      if (null != outer1_18[arg0]) {
+        tmp = tmp2[outer1_24(undefined, arg1)];
       }
       return null != tmp;
     }
@@ -495,7 +499,7 @@ let tmp4 = (Store) => {
     value(arg0) {
       let tmp = null != arg0;
       if (tmp) {
-        tmp = callback4(store.get(arg0));
+        tmp = outer1_29(outer1_13.get(arg0));
       }
       return tmp;
     }
@@ -505,7 +509,7 @@ let tmp4 = (Store) => {
     value(channel_id) {
       const self = this;
       if (null != channel_id) {
-        return self.getGuildScheduledEventsByIndex(closure_12.CHANNEL_EVENT_ACTIVE(channel_id))[0];
+        return self.getGuildScheduledEventsByIndex(outer1_12.CHANNEL_EVENT_ACTIVE(channel_id))[0];
       }
     }
   };
@@ -516,8 +520,8 @@ let tmp4 = (Store) => {
         return {};
       } else {
         let obj;
-        if (null != closure_17[arg0]) {
-          obj = tmp4[closure_24(undefined, arg1)];
+        if (null != outer1_17[arg0]) {
+          obj = tmp4[outer1_24(undefined, arg1)];
         }
         if (null == obj) {
           obj = {};
@@ -527,20 +531,20 @@ let tmp4 = (Store) => {
     }
   };
   return callback(GuildScheduledEventStore, items);
-}(importDefault(dependencyMap[11]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "GuildScheduledEventStore";
 obj = {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     guilds = guilds.guilds;
     secondaryIndexMap.clear();
-    let closure_14 = 0;
+    let c14 = 0;
     let closure_17 = {};
     let closure_18 = {};
     const item = closure_15.forEach(saveEvent);
     const item1 = guilds.forEach((guild_scheduled_events) => {
       const prop = guild_scheduled_events.guild_scheduled_events;
       return prop.forEach((arg0) => {
-        callback(arg0);
+        outer2_22(arg0);
       });
     });
     return true;
@@ -550,7 +554,7 @@ obj = {
     clearScheduledEventsForGuild(guild.id, false);
     const prop = guild.guild_scheduled_events;
     const item = prop.forEach((arg0) => {
-      callback(arg0);
+      outer1_22(arg0);
     });
     return true;
   },
@@ -567,16 +571,16 @@ obj = {
     const values = secondaryIndexMap.values(obj.GUILD_EVENT(guildScheduledEvents.guildId), true);
     const mapped = values.map((id) => id.id);
     const mapped1 = guildScheduledEvents.map((id) => id.id);
-    const obj = importDefault(dependencyMap[9]);
+    obj = importDefault(22);
     const item = obj.difference(mapped, mapped1).forEach((arg0) => {
-      callback(arg0);
+      outer1_23(arg0);
     });
     const tmp4 = _createForOfIteratorHelperLoose(guildScheduledEvents);
     let iter = tmp4();
     if (!iter.done) {
       do {
-        let tmp5 = closure_22;
-        let tmp6 = closure_22(iter.value);
+        let tmp5 = saveEvent;
+        let tmp6 = saveEvent(iter.value);
         let iter2 = tmp4();
         iter = iter2;
         done = iter2.done;
@@ -599,15 +603,16 @@ obj = {
     ({ userId, guildEventId, guildEventExceptionId } = arg0);
     ({ guildId, response } = arg0);
     let tmp2;
-    if (null != closure_17[guildEventId]) {
-      if (null != tmp[closure_24(undefined, guildEventExceptionId)]) {
+    if (null != dependencyMap[guildEventId]) {
+      const tmp3 = tmp[getEventRecurrenceId(undefined, guildEventExceptionId)];
+      if (null != tmp3) {
         tmp2 = tmp3[userId];
       }
     }
     if (null != tmp2) {
       removeGuildEventUser(tmp2, false);
     }
-    const member = member.getMember(guildId, userId);
+    member = member.getMember(guildId, userId);
     const obj = { user_id: userId, guild_scheduled_event_id: guildEventId };
     let tmp8;
     if (null != member) {
@@ -625,7 +630,7 @@ obj = {
   GUILD_SCHEDULED_EVENT_RSVPS_FETCH_SUCESS: function handleFetchGuildEventsForUser(guildScheduledEventUsers) {
     const prop = guildScheduledEventUsers.guildScheduledEventUsers;
     const item = prop.forEach((arg0) => {
-      callback(arg0, false, false);
+      outer1_25(arg0, false, false);
     });
     closure_14 = closure_14 + 1;
     return true;
@@ -633,19 +638,17 @@ obj = {
   GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: function handleFetchUsersForGuildEventSuccess(guildScheduledEventUsers) {
     const prop = guildScheduledEventUsers.guildScheduledEventUsers;
     const item = prop.forEach((arg0) => {
-      callback(arg0, false, false);
+      outer1_25(arg0, false, false);
     });
     closure_14 = closure_14 + 1;
     return true;
   },
   GUILD_SCHEDULED_EVENT_USER_COUNTS_FETCH_SUCCESS: function handleEventUserCountsFetchSuccess(eventId) {
     eventId = eventId.eventId;
-    const importDefault = eventId;
     const counts = eventId.counts;
-    const dependencyMap = counts;
     setUserCount(eventId, null, counts.eventCount);
-    importDefault(dependencyMap[10]).forEachKey(counts.recurrenceCounts, (arg0) => {
-      callback(eventId, arg0, counts.eventCount - counts.recurrenceCounts[arg0]);
+    eventId(counts[10]).forEachKey(counts.recurrenceCounts, (arg0) => {
+      outer1_27(eventId, arg0, counts.eventCount - counts.recurrenceCounts[arg0]);
     });
   },
   INVITE_RESOLVE_SUCCESS: function handleInviteResolveSuccess(invite) {
@@ -661,7 +664,6 @@ obj = {
   GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: handleGuildScheduledEventExceptionCreateOrUpdate,
   GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: function handleGuildScheduledEventExceptionDelete(eventException) {
     eventException = eventException.eventException;
-    const importDefault = eventException;
     const value = secondaryIndexMap.get(eventException.event_id);
     if (null == value) {
       return false;
@@ -692,9 +694,8 @@ obj = {
     return true;
   }
 };
-tmp4 = new tmp4(importDefault(dependencyMap[12]), obj);
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventStore.tsx");
+tmp4 = new tmp4(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventStore.tsx");
 
 export default tmp4;
 export const StaticGuildEventIndexes = obj;

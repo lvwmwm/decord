@@ -1,16 +1,17 @@
-// Module ID: 6662
-// Function ID: 51327
+// Module ID: 6667
+// Function ID: 51359
 // Name: createDefinedContext
-// Dependencies: []
+// Dependencies: [31, 33, 2]
 // Exports: default
 
-// Module 6662 (createDefinedContext)
-let closure_0 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("utils/ContextUtils.tsx");
+// Module 6667 (createDefinedContext)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const result = require("set").fileFinishedImporting("utils/ContextUtils.tsx");
 
 export default function createDefinedContext() {
-  function useContext(context) {
+  function useContext(context, arg1) {
     context = context.useContext(context);
     if (null == context) {
       const _Error = Error;
@@ -20,15 +21,13 @@ export default function createDefinedContext() {
       return context;
     }
   }
-  const jsx = useContext;
-  const context = React.createContext(undefined);
-  const React = context;
+  context = context.createContext(undefined);
   const items = [
     context,
     useContext,
     () => {
-      let closure_0 = useContext();
-      return (children) => callback(redux.Provider, { value: redux, children: children.children });
+      let result = useContext();
+      return (children) => useContext(redux.Provider, { value: redux, children: children.children });
     }
   ];
   return items;

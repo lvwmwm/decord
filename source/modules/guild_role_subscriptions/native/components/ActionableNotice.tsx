@@ -1,17 +1,21 @@
-// Module ID: 16354
-// Function ID: 126172
+// Module ID: 16471
+// Function ID: 128346
 // Name: ActionableNotice
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 4126, 4543, 2]
 // Exports: default
 
-// Module 16354 (ActionableNotice)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { platformIconContainer: true, platformIconContainer: true, platformIconContainer: true }, message: { "Null": "Activities and Clear", "Null": "email_verification" }, actionButton: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/ActionableNotice.tsx");
+// Module 16471 (ActionableNotice)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", paddingVertical: 12, alignItems: "center" }, message: { marginEnd: 27, flex: 3 }, actionButton: { flexGrow: 0, alignSelf: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ActionableNotice.tsx");
 
 export default function ActionableNotice(arg0) {
   let ctaMessage;
@@ -27,9 +31,9 @@ export default function ActionableNotice(arg0) {
   }
   const tmp = callback2();
   let obj = { style: items };
-  const items = [style, tmp.container];
-  obj = { style: tmp.message, children: message };
-  const items1 = [callback(arg1(dependencyMap[4]).Text, obj), ];
+  items = [style, tmp.container];
+  obj = { style: tmp.message, variant: "text-sm/medium", color: "text-default", children: message };
+  const items1 = [callback(require(4126) /* Text */.Text, obj), ];
   obj = { style: tmp.actionButton };
   const obj1 = { size: "sm", onPress: onClick };
   if (!submitting) {
@@ -37,7 +41,7 @@ export default function ActionableNotice(arg0) {
   }
   obj1.disabled = submitting;
   obj1.text = ctaMessage;
-  obj.children = callback(arg1(dependencyMap[5]).Button, obj1);
+  obj.children = callback(require(4543) /* Button */.Button, obj1);
   items1[1] = callback(View, obj);
   obj.children = items1;
   return closure_4(View, obj);

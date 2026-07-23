@@ -1,18 +1,18 @@
-// Module ID: 14033
-// Function ID: 106705
+// Module ID: 14147
+// Function ID: 108861
 // Name: toggle
-// Dependencies: [1278, 7656, 653, 1324, 566, 10087, 1212, 14036]
+// Dependencies: [4177, 7662, 4191, 566, 10095, 1212, 8843, 2]
 
-// Module 14033 (toggle)
+// Module 14147 (toggle)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { Features } from "ME";
-import initialize from "initialize";
-import useAppearanceSettingTrailing from "useAppearanceSettingTrailing";
+import { Features } from "DesktopSources";
+import createToggle from "createToggle";
 
-initialize = {
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t./jwMtn);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["/jwMtn"]);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   usePredicate() {
@@ -20,17 +20,17 @@ initialize = {
   },
   useValue: function useSidechainCompressionSettingValue() {
     const items = [_isNativeReflectConstruct];
-    return arg1(dependencyMap[3]).useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getSidechainCompression());
   },
   onValueChange(sidechainCompression) {
-    return importDefault(dependencyMap[6]).setSidechainCompression(sidechainCompression);
+    return importDefault(8843).setSidechainCompression(sidechainCompression);
   },
   useDescription() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.zlA23F);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.zlA23F);
   }
 };
-initialize = initialize.createToggle(initialize);
-const result = useAppearanceSettingTrailing.fileFinishedImporting("modules/user_settings/defs/native/SidechainCompressionSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+const result = require("DesktopSources").fileFinishedImporting("modules/user_settings/defs/native/SidechainCompressionSetting.tsx");
 
-export default initialize;
+export default createToggle;

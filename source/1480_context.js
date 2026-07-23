@@ -1,12 +1,13 @@
 // Module ID: 1480
-// Function ID: 17174
+// Function ID: 17175
 // Name: context
-// Dependencies: []
+// Dependencies: [31]
 // Exports: default
 
 // Module 1480 (context)
-const importAllResult = importAll(dependencyMap[0]);
-const context = importAllResult.createContext({
+import importAllResult from "result";
+
+let context = importAllResult.createContext({
   scheduleUpdate(arg0) {
     const error = new Error("Couldn't find a schedule context.");
     throw error;
@@ -18,7 +19,7 @@ const context = importAllResult.createContext({
 });
 
 export default function useScheduleUpdate(arg0) {
-  const context = importAllResult.useContext(context);
+  context = importAllResult.useContext(context);
   context.scheduleUpdate(arg0);
   const effect = importAllResult.useEffect(context.flushUpdates);
 };

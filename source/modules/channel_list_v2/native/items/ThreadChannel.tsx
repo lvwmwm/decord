@@ -1,10 +1,31 @@
-// Module ID: 14850
-// Function ID: 111906
+// Module ID: 14966
+// Function ID: 114074
 // Name: ThreadChannel
-// Dependencies: []
+// Dependencies: [31, 27, 3760, 1348, 3758, 4142, 1906, 1849, 4146, 4203, 10260, 653, 4326, 1211, 33, 4130, 689, 8018, 4549, 566, 11393, 4138, 10340, 14967, 14969, 8450, 14972, 1273, 14974, 14980, 4312, 2]
 // Exports: default
 
-// Module 14850 (ThreadChannel)
+// Module 14966 (ThreadChannel)
+import importAllResult from "set";
+import { View } from "Button";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import hairlineWidth from "hairlineWidth";
+import { Permissions } from "ME";
+import { UnreadSetting } from "ReadStateTypes";
+import { OpenThreadAnalyticsLocations as closure_16 } from "AbortCodes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_17;
+let closure_18;
+let closure_19;
+const require = arg1;
 function ThreadChannel(channel) {
   let hasVideo;
   let isLocked;
@@ -17,36 +38,30 @@ function ThreadChannel(channel) {
   let unread;
   let voiceStates;
   let flag = channel.channel;
-  const arg1 = flag;
   ({ selected, threadIndex } = channel);
-  const importDefault = threadIndex;
   const threadCount = channel.threadCount;
-  const dependencyMap = threadCount;
-  let closure_5;
-  let closure_6;
-  let closure_7;
-  let closure_8;
-  let closure_9;
-  const tmp = callback2();
-  const View = flag.id;
   let ownerId;
+  let parent_id;
+  let fontScale;
+  let user;
+  let parentChannel;
+  const tmp = callback2();
+  const id = flag.id;
+  ownerId = undefined;
   if (null != flag) {
     ownerId = flag.ownerId;
   }
-  closure_5 = ownerId;
-  let parent_id;
+  parent_id = undefined;
   if (null != flag) {
     parent_id = flag.parent_id;
   }
-  closure_6 = parent_id;
-  let obj = arg1(dependencyMap[18]);
-  const fontScale = obj.useFontScale();
-  closure_7 = fontScale;
-  let obj1 = arg1(dependencyMap[19]);
-  const items = [closure_6, closure_5, closure_10, closure_12, closure_11, closure_8, closure_9, closure_7];
+  let obj = flag(threadCount[18]);
+  fontScale = obj.useFontScale();
+  let obj1 = flag(threadCount[19]);
+  let items = [parent_id, ownerId, closure_10, closure_12, closure_11, user, parentChannel, fontScale];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items, () => {
     const isMutedResult = ownerId.isMuted(id);
-    const obj = { user: user.getUser(ownerId), parentChannel: parent_id.getChannel(parent_id), voiceStates: voiceStatesForChannel.getVoiceStatesForChannel(flag), hasVideo: closure_11.hasVideo(flag.id), isLocked: !fontScale.can(constants.CONNECT, flag), muted: isMutedResult };
+    const obj = { user: outer1_10.getUser(ownerId), parentChannel: parent_id.getChannel(parent_id), voiceStates: outer1_12.getVoiceStatesForChannel(flag), hasVideo: outer1_11.hasVideo(flag.id), isLocked: !fontScale.can(outer1_14.CONNECT, flag), muted: isMutedResult };
     let hasUnreadResult = !isMutedResult;
     if (hasUnreadResult) {
       hasUnreadResult = user.hasUnread(id);
@@ -57,10 +72,8 @@ function ThreadChannel(channel) {
     obj.selectedVoiceChannelId = parentChannel.getVoiceChannelId();
     return obj;
   });
-  const user = stateFromStoresObject.user;
-  closure_8 = user;
-  const parentChannel = stateFromStoresObject.parentChannel;
-  closure_9 = parentChannel;
+  user = stateFromStoresObject.user;
+  parentChannel = stateFromStoresObject.parentChannel;
   ({ voiceStates, hasVideo, unread, mentionCount } = stateFromStoresObject);
   const items1 = [threadIndex, threadCount, fontScale, tmp.threadLineSegment];
   ({ isLocked, muted, isMentionLowImportance, selectedVoiceChannelId } = stateFromStoresObject);
@@ -103,7 +116,7 @@ function ThreadChannel(channel) {
     obj.borderBottomLeftRadius = num10;
     items[1] = obj;
     obj.style = items;
-    return closure_17(id, obj);
+    return outer1_17(id, obj);
   }, items1);
   if (null != voiceStates) {
     num = voiceStates.length;
@@ -113,7 +126,7 @@ function ThreadChannel(channel) {
   const items3 = [flag, user, parentChannel];
   const callback = importAllResult.useCallback(() => {
     let obj = flag(threadCount[21]);
-    obj = { source: constants2.CHANNEL_LIST };
+    obj = { source: outer1_16.CHANNEL_LIST };
     obj.transitionToThread(flag, obj);
   }, items2);
   obj = {};
@@ -137,22 +150,22 @@ function ThreadChannel(channel) {
   let tmp16 = unread;
   if (unread) {
     const obj4 = { style: tmp.unreadIcon };
-    tmp16 = callback(View, obj4);
+    tmp16 = callback(id, obj4);
   }
   obj3.children = tmp16;
-  const items5 = [callback(View, obj3), callback(View, { style: tmp.spineSpacer }), ];
+  const items5 = [callback(id, obj3), callback(id, { style: tmp.spineSpacer }), ];
   const obj6 = { onPress: callback, onLongPress: callback1, style: tmp.container, accessible: true, accessibilityRole: "button" };
   const obj5 = { style: tmp.spineSpacer };
   const tmp10 = closure_18;
   const tmp11 = closure_19;
   const tmp12 = closure_18;
-  const tmp13 = View;
+  const tmp13 = id;
   const tmp14 = callback;
-  const tmp15 = View;
+  const tmp15 = id;
   const tmp19 = callback;
-  const tmp7 = importDefault(dependencyMap[20])(obj);
+  const tmp7 = threadIndex(threadCount[20])(obj);
   const obj7 = { channel: flag, unread, mentionCount };
-  obj6.accessibilityLabel = importDefault(dependencyMap[25])(obj7);
+  obj6.accessibilityLabel = threadIndex(threadCount[25])(obj7);
   obj6.accessibilityState = { selected };
   obj6.channel = flag;
   obj6.selected = selected;
@@ -164,12 +177,12 @@ function ThreadChannel(channel) {
     let tmp25 = null;
     if (tmp7) {
       const obj8 = { userCount: num, video: hasVideo, channel: flag };
-      tmp25 = callback(arg1(dependencyMap[26]).ConnectedUserLimit, obj8);
+      tmp25 = callback(flag(threadCount[26]).ConnectedUserLimit, obj8);
     }
     let tmp24 = tmp25;
   } else {
     const obj9 = { value: mentionCount, isMentionLowImportance };
-    tmp24 = callback(arg1(dependencyMap[27]).Badge, obj9);
+    tmp24 = callback(flag(threadCount[27]).Badge, obj9);
   }
   obj6.channelInfo = tmp24;
   if (0 === voiceStates.length) {
@@ -182,78 +195,61 @@ function ThreadChannel(channel) {
   } else {
     if (selectedVoiceChannelId !== channel.threadId) {
       if (1 !== voiceStates.length) {
-        const obj10 = { enumerable: null, HermesInternal: null, dispatch: null, ty: null, it: null };
-        const tmp37 = importDefault(dependencyMap[29]);
-        const obj11 = { <string:879400349>: "mn", <string:2858505162>: "description", <string:1927653984>: "Array" };
+        const obj10 = { users: null, max: 8, guildId: null, renderIcon: false, noPadding: true };
+        const tmp37 = threadIndex(threadCount[29]);
+        const obj11 = { channels: null, selectedChannelId: null, selectedVoiceChannelId: null };
         const items6 = [flag];
         obj11.channels = items6;
         const obj12 = {};
         obj12[flag.id] = voiceStates;
         obj11.voiceStates = obj12;
-        obj10.users = arg1(dependencyMap[30]).computeSummarizedVoiceUsers(obj11);
+        obj10.users = flag(threadCount[30]).computeSummarizedVoiceUsers(obj11);
         obj10.guildId = flag.guild_id;
         let tmp32 = callback(tmp37, obj10);
-        const obj16 = arg1(dependencyMap[30]);
+        const obj16 = flag(threadCount[30]);
       }
     }
     const obj13 = { channel: flag };
     flag = false;
     obj13.collapsed = false;
     obj13.voiceStates = voiceStates;
-    tmp32 = callback(importDefault(dependencyMap[28]), obj13);
+    tmp32 = callback(threadIndex(threadCount[28]), obj13);
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-const tmp2 = arg1(dependencyMap[10]);
-const getScaledChannelRowHeight = tmp2.getScaledChannelRowHeight;
-const Permissions = arg1(dependencyMap[11]).Permissions;
-const UnreadSetting = arg1(dependencyMap[12]).UnreadSetting;
-let closure_16 = arg1(dependencyMap[13]).OpenThreadAnalyticsLocations;
-({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = arg1(dependencyMap[14]));
-let obj1 = arg1(dependencyMap[15]);
+const getScaledChannelRowHeight = hairlineWidth.getScaledChannelRowHeight;
+({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);
 let obj = {};
-obj = { backspace: "<string:1358955120>", tab: "<string:1933683661>", enter: "<string:1090519306>", shift: "M99.2224 43.2126C103.136 43.2126 106.31 40.0048 106.31 36.0479C106.31 32.091 103.136 28.8832 99.2224 28.8832C95.3082 28.8832 92.1351 32.091 92.1351 36.0479C92.1351 40.0048 95.3082 43.2126 99.2224 43.2126Z", ctrl: "<string:1092953937>", marginVertical: tmp2.CHANNEL_MARGIN_VERTICAL, borderRadius: importDefault(dependencyMap[16]).radii.md };
+obj = { marginVertical: hairlineWidth.CHANNEL_MARGIN_VERTICAL, marginStart: 2, marginEnd: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, flex: 1 };
 obj.container = obj;
-obj.threadRow = {};
-obj.unreadContainer = { "Null": 9, "Null": null, "Null": "\u{1F91B}\u{1F3FC}" };
+obj.threadRow = { flex: 0, flexDirection: "row", alignSelf: "stretch" };
+obj.unreadContainer = { width: 8, alignItems: "flex-start", justifyContent: "flex-start" };
 obj.spineSpacer = { width: 28 };
-obj1 = { borderRadius: importDefault(dependencyMap[16]).radii.xs, backgroundColor: importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.unreadIcon = obj1;
-const tmp3 = arg1(dependencyMap[14]);
-obj.threadLineSegment = { backgroundColor: importDefault(dependencyMap[16]).colors.SPINE_DEFAULT };
-let closure_20 = obj1.createStyles(obj);
+_createForOfIteratorHelperLoose = { width: 8, height: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE, marginLeft: -4, marginTop: 12 };
+obj.unreadIcon = _createForOfIteratorHelperLoose;
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.SPINE_DEFAULT, width: 2, position: "absolute", left: 23 };
+obj.threadLineSegment = obj2;
+let closure_20 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_21 = importAllResult.memo((arg0) => {
   let color;
   let fontScale;
   ({ color, fontScale } = arg0);
-  let obj = {};
-  obj = { top: getScaledChannelRowHeight(fontScale) / 2 - 16 + 2 };
+  let obj = { width: 12, height: 16 };
+  obj = { position: "absolute", left: 23, top: getScaledChannelRowHeight(fontScale) / 2 - 16 + 2 };
   obj.style = obj;
-  obj.children = callback(arg1(dependencyMap[17]).Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" });
-  return callback(importDefault(dependencyMap[17]), obj);
+  obj.children = callback(require(8018) /* inlineStyles */.Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" });
+  return callback(importDefault(8018), obj);
 });
-const obj2 = { backgroundColor: importDefault(dependencyMap[16]).colors.SPINE_DEFAULT };
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/channel_list_v2/native/items/ThreadChannel.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/items/ThreadChannel.tsx");
 
 export default function ConnectedThreadChannel(threadId) {
   let selected;
   let threadCount;
   let threadIndex;
   threadId = threadId.threadId;
-  const arg1 = threadId;
   ({ threadIndex, threadCount, selected } = threadId);
-  let obj = arg1(dependencyMap[19]);
+  let obj = threadId(566);
   const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(threadId));
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(threadId));
   let tmp2 = null;
   if (null != stateFromStores) {
     obj = { channel: stateFromStores, threadId, threadIndex, threadCount, selected };

@@ -1,25 +1,23 @@
-// Module ID: 8306
-// Function ID: 65759
+// Module ID: 8312
+// Function ID: 65796
 // Name: isPlayedGameEntry
-// Dependencies: [5, 653, 507]
+// Dependencies: [7810, 8313, 2]
 // Exports: isConsoleEntry, isLaunchedActivityEntry, isListeningLikeEntry, isRecentActivityEntry
 
-// Module 8306 (isPlayedGameEntry)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-
+// Module 8312 (isPlayedGameEntry)
 function isPlayedGameEntry(content_type) {
   content_type = undefined;
   if (null != content_type) {
     content_type = content_type.content_type;
   }
-  return content_type === require(dependencyMap[0]).ContentInventoryEntryType.PLAYED_GAME;
+  return content_type === require(7810) /* ContentInventoryEntryType */.ContentInventoryEntryType.PLAYED_GAME;
 }
 function isTopGameEntry(content_type) {
   content_type = undefined;
   if (null != content_type) {
     content_type = content_type.content_type;
   }
-  return content_type === require(dependencyMap[0]).ContentInventoryEntryType.TOP_GAME;
+  return content_type === require(7810) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_GAME;
 }
 function isGamingLikeEntry(content) {
   let tmp = isPlayedGameEntry(content);
@@ -28,47 +26,47 @@ function isGamingLikeEntry(content) {
   }
   return tmp;
 }
-function isApplicationEntry(extra) {
-  extra = undefined;
-  if (null != extra) {
-    extra = extra.extra;
+function isApplicationEntry(closure_0) {
+  let extra;
+  if (null != closure_0) {
+    extra = closure_0.extra;
   }
   let tmp2 = null != extra;
   if (tmp2) {
     let extra1;
-    if (null != extra) {
-      extra1 = extra.extra;
+    if (null != closure_0) {
+      extra1 = closure_0.extra;
     }
     tmp2 = "application_id" in extra1;
   }
   return tmp2;
 }
-function isListenedSessionEntry(entry) {
+function isListenedSessionEntry(closure_0) {
   let content_type;
-  if (null != entry) {
-    content_type = entry.content_type;
+  if (null != closure_0) {
+    content_type = closure_0.content_type;
   }
-  return content_type === require(dependencyMap[0]).ContentInventoryEntryType.LISTENED_SESSION;
+  return content_type === require(7810) /* ContentInventoryEntryType */.ContentInventoryEntryType.LISTENED_SESSION;
 }
 function isTopArtistEntry(entry) {
   let content_type;
   if (null != entry) {
     content_type = entry.content_type;
   }
-  return content_type === require(dependencyMap[0]).ContentInventoryEntryType.TOP_ARTIST;
+  return content_type === require(7810) /* ContentInventoryEntryType */.ContentInventoryEntryType.TOP_ARTIST;
 }
 function isWatchedMediaEntry(entry) {
   let content_type;
   if (null != entry) {
     content_type = entry.content_type;
   }
-  return content_type === require(dependencyMap[0]).ContentInventoryEntryType.WATCHED_MEDIA;
+  return content_type === require(7810) /* ContentInventoryEntryType */.ContentInventoryEntryType.WATCHED_MEDIA;
 }
 function isXboxEntry(extra) {
   const tmp = isGamingLikeEntry(extra);
   let tmp2 = tmp;
   if (tmp) {
-    tmp2 = extra.extra.platform === require(dependencyMap[1]).PlatformType.XBOX;
+    tmp2 = extra.extra.platform === require(8313) /* PlatformType */.PlatformType.XBOX;
   }
   return tmp2;
 }
@@ -76,11 +74,11 @@ function isPlaystationEntry(extra) {
   const tmp = isGamingLikeEntry(extra);
   let tmp2 = tmp;
   if (tmp) {
-    tmp2 = extra.extra.platform === require(dependencyMap[1]).PlatformType.PLAYSTATION;
+    tmp2 = extra.extra.platform === require(8313) /* PlatformType */.PlatformType.PLAYSTATION;
   }
   return tmp2;
 }
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/content_inventory/ContentInventoryTypes.tsx");
+const result = require("set").fileFinishedImporting("modules/content_inventory/ContentInventoryTypes.tsx");
 
 export { isPlayedGameEntry };
 export { isTopGameEntry };
@@ -88,10 +86,10 @@ export { isGamingLikeEntry };
 export { isApplicationEntry };
 export { isListenedSessionEntry };
 export { isTopArtistEntry };
-export const isListeningLikeEntry = function isListeningLikeEntry(entry) {
-  let tmp = isListenedSessionEntry(entry);
+export const isListeningLikeEntry = function isListeningLikeEntry(closure_0) {
+  let tmp = isListenedSessionEntry(closure_0);
   if (!tmp) {
-    tmp = isTopArtistEntry(entry);
+    tmp = isTopArtistEntry(closure_0);
   }
   return tmp;
 };
@@ -110,7 +108,7 @@ export const isLaunchedActivityEntry = function isLaunchedActivityEntry(content_
   if (null != content_type) {
     content_type = content_type.content_type;
   }
-  return content_type === require(dependencyMap[0]).ContentInventoryEntryType.LAUNCHED_ACTIVITY;
+  return content_type === require(7810) /* ContentInventoryEntryType */.ContentInventoryEntryType.LAUNCHED_ACTIVITY;
 };
 export const isRecentActivityEntry = function isRecentActivityEntry(content) {
   let tmp = isGamingLikeEntry(content);

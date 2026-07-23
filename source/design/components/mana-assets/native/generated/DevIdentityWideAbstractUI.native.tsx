@@ -1,13 +1,13 @@
-// Module ID: 5985
-// Function ID: 49910
+// Module ID: 5990
+// Function ID: 49939
 // Name: DevIdentityWideAbstractUI
-// Dependencies: []
+// Dependencies: [33, 5085, 5991, 2]
 // Exports: DevIdentityWideAbstractUI
 
-// Module 5985 (DevIdentityWideAbstractUI)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DevIdentityWideAbstractUI.native.tsx");
+// Module 5990 (DevIdentityWideAbstractUI)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DevIdentityWideAbstractUI.native.tsx");
 
 export const DevIdentityWideAbstractUI = function DevIdentityWideAbstractUI(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const DevIdentityWideAbstractUI = function DevIdentityWideAbstractUI(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5991) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const DevIdentityWideAbstractUI = function DevIdentityWideAbstractUI(widt
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

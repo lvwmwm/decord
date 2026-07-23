@@ -1,50 +1,55 @@
-// Module ID: 9594
-// Function ID: 74756
+// Module ID: 9601
+// Function ID: 74797
 // Name: _fetchStickerPack
-// Dependencies: []
+// Dependencies: [5, 4808, 1921, 4469, 1849, 5035, 653, 662, 4369, 507, 686, 4466, 7852, 1331, 22, 4470, 1212, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 9594 (_fetchStickerPack)
+// Module 9601 (_fetchStickerPack)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import MAX_FAVORITES from "MAX_FAVORITES";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function _fetchStickerPack() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchStickerPack = obj;
   return obj(...arguments);
 }
 function _fetchStickerPacks() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchStickerPacks = obj;
   return obj(...arguments);
 }
 function _fetchSticker() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchSticker = obj;
   return obj(...arguments);
 }
 function _fetchGuildStickersWithCreator() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchGuildStickersWithCreator = obj;
   return obj(...arguments);
 }
 function _deleteGuildSticker() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _deleteGuildSticker = obj;
   return obj(...arguments);
 }
 function _createGuildSticker() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _createGuildSticker = obj;
   return obj(...arguments);
 }
 function _updateGuildSticker() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _updateGuildSticker = obj;
   return obj(...arguments);
 }
 function cleanFavoriteStickers(arr) {
@@ -52,24 +57,16 @@ function cleanFavoriteStickers(arr) {
   if (obj.totalUnavailableGuilds <= 0) {
     let found = arr;
     if (connected.isConnected()) {
-      found = arr.filter((arg0) => null != stickerById.getStickerById(arg0));
+      found = arr.filter((arg0) => null != outer1_8.getStickerById(arg0));
     }
     tmp = found;
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const Endpoints = arg1(dependencyMap[6]).Endpoints;
-({ MAX_FAVORITES: closure_10, UserSettingsDelay: closure_11 } = arg1(dependencyMap[7]));
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/stickers/StickersActionCreators.tsx");
+({ MAX_FAVORITES: closure_10, UserSettingsDelay: closure_11 } = MAX_FAVORITES);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stickers/StickersActionCreators.tsx");
 
-export const fetchStickerPack = function fetchStickerPack(847199849233514549, arg1) {
+export const fetchStickerPack = function fetchStickerPack(_847199849233514549, arg1) {
   return _fetchStickerPack(...arguments);
 };
 export const fetchStickerPacks = function fetchStickerPacks() {
@@ -91,48 +88,48 @@ export const updateGuildSticker = function updateGuildSticker(arg0, arg1, arg2) 
   return _updateGuildSticker(...arguments);
 };
 export const addStickerPreview = function addStickerPreview(channelId, sticker, draftType) {
-  let obj = importDefault(dependencyMap[10]);
+  let obj = importDefault(686);
   obj = { type: "ADD_STICKER_PREVIEW", channelId, sticker, draftType };
   obj.dispatch(obj);
 };
 export const clearStickerPreview = function clearStickerPreview(channelId, draftType) {
-  let obj = importDefault(dependencyMap[10]);
+  let obj = importDefault(686);
   obj = { type: "CLEAR_STICKER_PREVIEW", channelId, draftType };
   obj.dispatch(obj);
 };
-export const favoriteSticker = function favoriteSticker(arg0) {
-  const arg1 = arg0;
-  const FrecencyUserSettingsActionCreators = arg1(dependencyMap[13]).FrecencyUserSettingsActionCreators;
+export const favoriteSticker = function favoriteSticker(closure_0) {
+  const _require = closure_0;
+  const FrecencyUserSettingsActionCreators = _require(1331).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", (stickerIds) => {
-    stickerIds.stickerIds = callback2(stickerIds.stickerIds);
-    let obj = callback(closure_2[14]);
-    if (obj.size(stickerIds.stickerIds) >= closure_10) {
+    stickerIds.stickerIds = outer1_19(stickerIds.stickerIds);
+    let obj = outer1_1(outer1_2[14]);
+    if (obj.size(stickerIds.stickerIds) >= outer1_10) {
       obj = {};
-      const intl = stickerIds(closure_2[16]).intl;
-      obj.title = intl.string(stickerIds(closure_2[16]).t.+XYXtZ);
-      const intl2 = stickerIds(closure_2[16]).intl;
-      obj = { count: closure_10 };
-      obj.body = intl2.formatToPlainString(stickerIds(closure_2[16]).t.JaIyFi, obj);
-      callback(closure_2[15]).show(obj);
+      const intl = callback(outer1_2[16]).intl;
+      obj.title = intl.string(callback(outer1_2[16]).t["+XYXtZ"]);
+      const intl2 = callback(outer1_2[16]).intl;
+      obj = { count: outer1_10 };
+      obj.body = intl2.formatToPlainString(callback(outer1_2[16]).t.JaIyFi, obj);
+      outer1_1(outer1_2[15]).show(obj);
       let flag = false;
-      const obj2 = callback(closure_2[15]);
+      const obj2 = outer1_1(outer1_2[15]);
     } else {
       stickerIds = stickerIds.stickerIds;
-      flag = !stickerIds.includes(stickerIds);
+      flag = !stickerIds.includes(callback);
       if (flag) {
         stickerIds = stickerIds.stickerIds;
-        stickerIds.push(stickerIds);
+        stickerIds.push(callback);
       }
     }
     return flag;
   }, constants.INFREQUENT_USER_ACTION);
 };
-export const unfavoriteSticker = function unfavoriteSticker(arg0) {
-  const arg1 = arg0;
-  const FrecencyUserSettingsActionCreators = arg1(dependencyMap[13]).FrecencyUserSettingsActionCreators;
+export const unfavoriteSticker = function unfavoriteSticker(closure_0) {
+  const _require = closure_0;
+  const FrecencyUserSettingsActionCreators = _require(1331).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", (stickerIds) => {
     stickerIds = stickerIds.stickerIds;
-    stickerIds.stickerIds = stickerIds.filter((arg0) => arg0 !== closure_0);
-    stickerIds.stickerIds = callback(stickerIds.stickerIds);
+    stickerIds.stickerIds = stickerIds.filter((arg0) => arg0 !== outer1_0);
+    stickerIds.stickerIds = outer1_19(stickerIds.stickerIds);
   }, constants.INFREQUENT_USER_ACTION);
 };

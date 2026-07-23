@@ -1,12 +1,12 @@
-// Module ID: 6724
-// Function ID: 52395
+// Module ID: 6729
+// Function ID: 52427
 // Name: result
-// Dependencies: []
+// Dependencies: [664, 2]
 // Exports: createMemberSearchCursor
 
-// Module 6724 (result)
-const result = 2 * importDefault(dependencyMap[0]).Millis.DAY;
-const result1 = arg1(dependencyMap[1]).fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyElasticSearchQueryTypes.tsx");
+// Module 6729 (result)
+const result = 2 * require("set").Millis.DAY;
+const result1 = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyElasticSearchQueryTypes.tsx");
 
 export const UNUSUAL_DM_COMPARISON_DELTA = result;
 export const createMemberSearchCursor = function createMemberSearchCursor(joinedAt) {

@@ -1,48 +1,50 @@
-// Module ID: 11591
-// Function ID: 90123
+// Module ID: 11601
+// Function ID: 90172
 // Name: importDefaultResult1
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 666, 689, 5167, 2]
 // Exports: default
 
-// Module 11591 (importDefaultResult1)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = {};
-const importDefaultResult = importDefault(dependencyMap[4]);
-const importDefaultResultResult = importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_360);
-obj.borderColor = importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_360).alpha(0.35).hex();
-obj.cardActive = obj;
+// Module 11601 (importDefaultResult1)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "t";
+import importDefaultResult1 from "t";
+import importDefaultResult2 from "t";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
+const importDefaultResultResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360);
+_createForOfIteratorHelperLoose.borderColor = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360).alpha(0.35).hex();
+_createForOfIteratorHelperLoose.cardActive = _createForOfIteratorHelperLoose;
 const obj1 = {};
-const alphaResult = importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_360).alpha(0.35);
-const importDefaultResult1 = importDefault(dependencyMap[4]);
-const importDefaultResult1Result = importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).unsafe_rawColors.YELLOW_300);
-obj1.borderColor = importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
-obj.cardExpiring = obj1;
+const alphaResult = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360).alpha(0.35);
+const importDefaultResult1Result = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300);
+obj1.borderColor = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+_createForOfIteratorHelperLoose.cardExpiring = obj1;
 const obj2 = {};
-const alphaResult1 = importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).unsafe_rawColors.YELLOW_300).alpha(0.35);
-const importDefaultResult2 = importDefault(dependencyMap[4]);
-const importDefaultResult2Result = importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).unsafe_rawColors.YELLOW_300);
-obj2.borderColor = importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
-obj.cardRemoving = obj2;
-let closure_4 = obj.createStyles(obj);
-const alphaResult2 = importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).unsafe_rawColors.YELLOW_300).alpha(0.35);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsCard.tsx");
+const alphaResult1 = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300).alpha(0.35);
+const importDefaultResult2Result = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300);
+obj2.borderColor = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300).alpha(0.35).hex();
+_createForOfIteratorHelperLoose.cardRemoving = obj2;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const alphaResult2 = require("t")(require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300).alpha(0.35);
+const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsCard.tsx");
 
 export default function GuildPowerupsCard(status) {
   let children;
   let containerStyle;
   let style;
   status = status.status;
-  let obj = { position: -24, bottom: null, padding: 1, width: "Malaysia" };
+  let obj = { children: 0, containerStyle: 0, status: 0, style: 0 };
   ({ children, containerStyle, style } = status);
   Object.setPrototypeOf(null);
   const merged = Object.assign(status, obj);
-  const tmp3 = callback();
+  const tmp3 = _createForOfIteratorHelperLoose();
   obj = { style: containerStyle };
-  obj = { "Null": "/assets/design/components/Illustration/native/redesign/generated/images", "Null": 232, "Null": 126 };
+  obj = { border: "faint", radius: 16, shadow: "none" };
   const merged1 = Object.assign(merged);
   let type;
   if (null != status) {
@@ -62,6 +64,6 @@ export default function GuildPowerupsCard(status) {
   items[3] = style;
   obj["style"] = items;
   obj["children"] = children;
-  obj.children = jsx(arg1(dependencyMap[6]).Card, obj);
-  return <View {...obj} />;
+  obj.children = jsx(require(5167) /* getCardBackgroundToken */.Card, { border: "faint", radius: 16, shadow: "none" });
+  return <View border="faint" radius={16} shadow="none" />;
 };

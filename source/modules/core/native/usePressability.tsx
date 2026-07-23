@@ -1,9 +1,9 @@
-// Module ID: 14709
-// Function ID: 110992
-// Dependencies: []
+// Module ID: 14824
+// Function ID: 113156
+// Name: set
+// Dependencies: [2, 292]
 
-// Module 14709
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/core/native/usePressability.tsx");
+// Module 14824 (set)
+const result = require("set").fileFinishedImporting("modules/core/native/usePressability.tsx");
 
-export default importDefault(dependencyMap[1]);
+export { default } from "usePressability";

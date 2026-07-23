@@ -1,22 +1,24 @@
-// Module ID: 16469
-// Function ID: 127240
+// Module ID: 16586
+// Function ID: 129414
 // Name: externalFingerprint
-// Dependencies: []
+// Dependencies: [1194, 4988, 686, 2]
 // Exports: default
 
-// Module 16469 (externalFingerprint)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/auth/externalFingerprint.tsx");
+// Module 16586 (externalFingerprint)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("dispatcher").fileFinishedImporting("modules/auth/externalFingerprint.tsx");
 
 export default function externalFingerprint(arg0) {
   if (!authenticated.isAuthenticated()) {
-    let obj = arg1(dependencyMap[1]);
-    const fingerprint = obj.parse(arg1(dependencyMap[1]).extract(arg0)).fingerprint;
+    let obj = require(4988) /* encode */;
+    const fingerprint = obj.parse(require(4988) /* encode */.extract(arg0)).fingerprint;
     if (null != fingerprint) {
       obj = { type: "FINGERPRINT", fingerprint };
-      importDefault(dependencyMap[2]).dispatch(obj);
-      const obj3 = importDefault(dependencyMap[2]);
+      importDefault(686).dispatch(obj);
+      const obj3 = importDefault(686);
     }
-    const obj2 = arg1(dependencyMap[1]);
+    const obj2 = require(4988) /* encode */;
   }
 };

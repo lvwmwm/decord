@@ -1,9 +1,13 @@
-// Module ID: 9252
-// Function ID: 72309
+// Module ID: 9259
+// Function ID: 72350
 // Name: getBatchesToRender
-// Dependencies: []
+// Dependencies: [31, 33, 9254, 9249, 7588, 9252, 2]
 
-// Module 9252 (getBatchesToRender)
+// Module 9259 (getBatchesToRender)
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getBatchesToRender(renderAhead) {
   if ("nominal" !== renderAhead) {
     if ("half" === renderAhead) {
@@ -13,8 +17,6 @@ function getBatchesToRender(renderAhead) {
     }
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
 const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
   let accessibilityLabel;
   let enabled;
@@ -53,9 +55,7 @@ const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
   if (horizontal === undefined) {
     horizontal = false;
   }
-  ref = horizontal;
   keyExtractor = keyExtractor.keyExtractor;
-  const importDefault = keyExtractor;
   ({ listFooterAlwaysMounted, inActionSheet, insetStart, insetEnd, itemSize, keyboardDismissMode, keyboardShouldPersistTaps, listFooterSize } = keyExtractor);
   if (listFooterAlwaysMounted === undefined) {
     listFooterAlwaysMounted = false;
@@ -69,22 +69,21 @@ const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
     renderAhead = "nominal";
   }
   const scrollIndicatorInsetEnd = keyExtractor.scrollIndicatorInsetEnd;
-  const dependencyMap = scrollIndicatorInsetEnd;
   const scrollIndicatorInsetStart = keyExtractor.scrollIndicatorInsetStart;
   ({ sectionHeaderIsSticky, renderItem, renderListFooter, renderListHeader, renderSectionHeader, renderSectionFooter, scrollEventThrottle, sectionHeaderSize } = keyExtractor);
   if (sectionHeaderIsSticky === undefined) {
     sectionHeaderIsSticky = true;
   }
-  let obj = {};
+  let obj = { accessibilityLabel: 0, enabled: 0, estimatedListSize: 0, horizontal: 0, inActionSheet: 0, insetStart: 0, insetEnd: 0, itemSize: 0, keyboardDismissMode: 0, keyboardShouldPersistTaps: 0, keyExtractor: 0, listFooterSize: 0, listFooterAlwaysMounted: 0, listHeaderSize: 0, listHeaderAlwaysMounted: 0, onLayout: 0, renderAhead: 0, renderItem: 0, renderListFooter: 0, renderListHeader: 0, renderSectionHeader: 0, renderSectionFooter: 0, scrollEventThrottle: 0, scrollIndicatorInsetEnd: 0, scrollIndicatorInsetStart: 0, sectionHeaderSize: 0, sectionHeaderIsSticky: 0, sectionFooterSize: 0, sections: 0, showsHorizontalScrollIndicator: 0, showsVerticalScrollIndicator: 0, style: 0 };
   ({ sectionFooterSize, sections, showsHorizontalScrollIndicator, showsVerticalScrollIndicator, style } = keyExtractor);
   Object.setPrototypeOf(null);
   const merged = Object.assign(keyExtractor, obj);
-  ({ onScroll, onScrollBeginDrag, onScrollEndDrag } = importDefault(dependencyMap[2])(merged, horizontal));
+  ({ onScroll, onScrollBeginDrag, onScrollEndDrag } = keyExtractor(scrollIndicatorInsetEnd[2])(merged, horizontal));
   obj = { estimatedListSize, horizontal };
   const items = [keyExtractor];
-  const tmp3 = importDefault(dependencyMap[2])(merged, horizontal);
+  const tmp3 = keyExtractor(scrollIndicatorInsetEnd[2])(merged, horizontal);
   const items1 = [horizontal, scrollIndicatorInsetEnd, scrollIndicatorInsetStart];
-  const callback = importAllResult.useCallback((arg0, arg1, arg2) => {
+  const callback = scrollIndicatorInsetStart.useCallback((arg0, arg1, arg2) => {
     if (horizontal(scrollIndicatorInsetEnd[4]).FastListItemTypes.ITEM === arg0) {
       let tmp18Result;
       if (null != keyExtractor) {
@@ -110,7 +109,7 @@ const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
       return tmp5;
     }
   }, items);
-  const memo = importAllResult.useMemo(() => {
+  const memo = scrollIndicatorInsetStart.useMemo(() => {
     const obj = {};
     if (horizontal) {
       obj.left = tmp2;
@@ -121,12 +120,12 @@ const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
     }
   }, items1);
   if ("animatedCallbacks" === merged.scrollReporting) {
-    let AnimatedFastList = ref(dependencyMap[4]).AnimatedFastList;
+    let AnimatedFastList = horizontal(scrollIndicatorInsetEnd[4]).AnimatedFastList;
   } else {
-    AnimatedFastList = importDefault(dependencyMap[4]);
+    AnimatedFastList = keyExtractor(scrollIndicatorInsetEnd[4]);
   }
   obj = { accessibilityLabel, automaticallyAdjustsScrollIndicatorInsets: null == memo, batchesToRender: getBatchesToRender(renderAhead) };
-  obj.chunkBase = importDefault(dependencyMap[3])(obj);
+  obj.chunkBase = keyExtractor(scrollIndicatorInsetEnd[3])(obj);
   let str = "disabled";
   if (sectionHeaderIsSticky) {
     str = "default";
@@ -174,8 +173,8 @@ const forwardRefResult = importAllResult.forwardRef((keyExtractor, ref) => {
   }
   obj.stickyHeaderFooter = listHeaderAlwaysMounted;
   obj.style = style;
-  return <AnimatedFastList {...obj} />;
+  return <AnimatedFastList accessibilityLabel={accessibilityLabel} automaticallyAdjustsScrollIndicatorInsets={null == memo} batchesToRender={getBatchesToRender(renderAhead)} />;
 });
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/fastest_list/FastestList.ios.tsx");
+const result = require("useFastestListPropsScrollReporting").fileFinishedImporting("modules/fastest_list/FastestList.ios.tsx");
 
 export default forwardRefResult;

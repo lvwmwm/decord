@@ -1,38 +1,39 @@
-// Module ID: 9536
-// Function ID: 74294
+// Module ID: 9543
+// Function ID: 74335
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4123, 566, 686, 2]
 
-// Module 9536 (_isNativeReflectConstruct)
+// Module 9543 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const MessageSendLocation = arg1(dependencyMap[5]).MessageSendLocation;
 let closure_6 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class SendMessageOptionsStore {
     constructor() {
       self = this;
       tmp = SendMessageOptionsStore(this, SendMessageOptionsStore);
-      obj = closure_3(SendMessageOptionsStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(SendMessageOptionsStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,20 +42,19 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = SendMessageOptionsStore;
   callback2(SendMessageOptionsStore, Store);
   const items = [
     {
       key: "getOptions",
       value(arg0) {
-        return closure_6[arg0];
+        return outer1_6[arg0];
       }
     }
   ];
   return callback(SendMessageOptionsStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "SendMessageOptionsStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   MESSAGE_CREATE: function handleMessageCreate(arg0) {
     let message;
     let sendMessageOptions;
@@ -68,18 +68,18 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       }
       obj["location"] = OTHER;
       closure_6[message.id] = obj;
-      const tmp = closure_6;
+      const tmp3 = closure_6;
     }
-    let tmp6 = null != message.nonce && message.nonce !== message.id;
-    if (tmp6) {
-      tmp6 = message.nonce in closure_6;
+    let tmp8 = null != message.nonce && message.nonce !== message.id;
+    if (tmp8) {
+      tmp8 = message.nonce in closure_6;
     }
-    if (tmp6) {
+    if (tmp8) {
       const nonce = message.nonce;
-      delete r1[r0];
+      delete tmp2[tmp];
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/messages/SendMessageOptionsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/messages/SendMessageOptionsStore.tsx");
 
 export default tmp2;

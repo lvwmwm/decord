@@ -1,41 +1,45 @@
-// Module ID: 15121
-// Function ID: 114101
+// Module ID: 15236
+// Function ID: 116270
 // Name: ContentInventoryReplyRow
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 27, 33, 15179, 689, 4660, 4126, 8007, 2]
 // Exports: ContentInventoryReplyRow
 
-// Module 15121 (ContentInventoryReplyRow)
-import "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15236 (ContentInventoryReplyRow)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import createICYMIStyles from "createICYMIStyles";
 
-({ jsx: closure_4, jsxs: closure_5 } = __exportStarResult1);
-let closure_6 = __exportStarResult1.createICYMIStyles((margin) => {
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = createICYMIStyles.createICYMIStyles((margin) => {
   let obj = {};
-  obj = { height: 1, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, marginBottom: margin.margin, width: "100%" };
+  obj = { height: 1, backgroundColor: importDefault(689).colors.BORDER_SUBTLE, marginBottom: margin.margin, width: "100%" };
   obj.separator = obj;
-  obj = { marginHorizontal: margin.margin, marginBottom: margin.margin, gap: importDefault(dependencyMap[4]).space.PX_12 };
+  obj = { flex: 1, alignItems: "center", justifyContent: "center", flexDirection: "row" };
+  ({ margin: obj3.marginHorizontal, margin: obj3.marginBottom } = margin);
+  obj.gap = importDefault(689).space.PX_12;
   obj.container = obj;
-  const obj1 = { -9223372036854775808: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437, height: importDefault(dependencyMap[4]).space.PX_40 };
+  const obj1 = { flexGrow: 1, flexBasis: 0, height: importDefault(689).space.PX_40 };
   obj.buttonContainer = obj1;
-  const obj2 = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", gap: importDefault(dependencyMap[4]).space.PX_12, height: importDefault(dependencyMap[4]).space.PX_40 };
+  const obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: importDefault(689).space.PX_12, height: importDefault(689).space.PX_40 };
   obj.feedbackContainer = obj2;
-  obj.icon = {};
-  obj.feedbackButtonIcon = { tintColor: importDefault(dependencyMap[4]).colors.BUTTON_OUTLINE_PRIMARY_TEXT };
-  const obj3 = { tintColor: importDefault(dependencyMap[4]).colors.BUTTON_OUTLINE_PRIMARY_TEXT };
-  obj.input = { flex: 1, borderRadius: importDefault(dependencyMap[4]).radii.round };
-  const obj5 = { borderless: "r", WindowDimensionsEvents: "isArray", ICYMITab: "isArray", WumpusMahjongSpotIllustration: "title", TRAIN_SIMULATOR: "r", backgroundColor: importDefault(dependencyMap[4]).colors.REDESIGN_CHAT_INPUT_BACKGROUND };
+  obj.icon = { width: 20, height: 20 };
+  const obj3 = { tintColor: importDefault(689).colors.BUTTON_OUTLINE_PRIMARY_TEXT };
+  obj.feedbackButtonIcon = obj3;
+  obj.input = { flex: 1, borderRadius: importDefault(689).radii.round };
+  const obj5 = { borderRadius: 20, width: "100%", minHeight: 40, backgroundColor: importDefault(689).colors.REDESIGN_CHAT_INPUT_BACKGROUND, justifyContent: "center" };
   obj.contentInventoryPressable = obj5;
-  const obj4 = { flex: 1, borderRadius: importDefault(dependencyMap[4]).radii.round };
-  obj.contentInventoryContainer = { marginLeft: margin.margin, paddingVertical: importDefault(dependencyMap[4]).space.PX_8, gap: importDefault(dependencyMap[4]).space.PX_4 };
+  const obj6 = { marginLeft: margin.margin, marginRight: 10, paddingVertical: importDefault(689).space.PX_8, flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_4 };
+  obj.contentInventoryContainer = obj6;
   obj.contentInventoryText = { flexShrink: 1 };
   ({ inset: obj10.marginLeft, margin: obj10.marginTop } = margin);
-  obj.replyContainer = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
+  obj.replyContainer = { flexDirection: "row", alignItems: "center" };
   return obj;
 });
-const result = __exportStarResult1.fileFinishedImporting("modules/icymi/native/ReplyRow.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/icymi/native/ReplyRow.tsx");
 
 export const ContentInventoryReplyRow = function ContentInventoryReplyRow(onPress) {
   const reactText = onPress.reactText;
@@ -43,10 +47,10 @@ export const ContentInventoryReplyRow = function ContentInventoryReplyRow(onPres
   let obj = { style: tmp.replyContainer };
   obj = { accessibilityRole: "button", onPress: onPress.onReply, style: tmp.contentInventoryPressable, accessibilityLabel: reactText, pointerEvents: "box-only" };
   obj = { style: tmp.contentInventoryContainer };
-  const obj1 = { 803799044: true, 1269170180: true, 711589892: true, style: tmp.contentInventoryText, children: reactText };
-  const items = [callback(arg1(dependencyMap[6]).Text, obj1), callback(arg1(dependencyMap[7]).ReactionIcon, { style: tmp.icon, size: "custom" })];
+  const obj1 = { variant: "text-md/medium", color: "input-placeholder-text-default", lineClamp: 1, style: tmp.contentInventoryText, children: reactText };
+  const items = [callback(require(4126) /* Text */.Text, obj1), callback(require(8007) /* ReactionIcon */.ReactionIcon, { style: tmp.icon, size: "custom" })];
   obj.children = items;
   obj.children = callback2(View, obj);
-  obj.children = callback(arg1(dependencyMap[5]).PressableOpacity, obj);
+  obj.children = callback(require(4660) /* PressableBase */.PressableOpacity, obj);
   return callback(View, obj);
 };

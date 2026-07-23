@@ -1,12 +1,12 @@
 // Module ID: 1803
-// Function ID: 19922
+// Function ID: 19923
 // Name: Background
-// Dependencies: []
+// Dependencies: [1804, 1805, 1806, 1808, 1809]
 
 // Module 1803 (Background)
 
-export const Background = importDefault(dependencyMap[0]);
-export const Content = importDefault(dependencyMap[1]);
-export const Done = importDefault(dependencyMap[2]);
-export const Next = importDefault(dependencyMap[3]);
-export const Prev = importDefault(dependencyMap[4]);
+export const Background = require("Background");
+export const Content = require("Content");
+export const Done = require("Done");
+export const Next = require("Next");
+export const Prev = require("Prev");

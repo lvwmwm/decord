@@ -1,102 +1,101 @@
-// Module ID: 15133
-// Function ID: 114182
+// Module ID: 15248
+// Function ID: 116351
 // Name: CutoutGuildIcon
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1838, 8306, 33, 4130, 689, 7873, 5515, 566, 4066, 7087, 8320, 3991, 4542, 1459, 4660, 13953, 4126, 1212, 3976, 2]
 // Exports: default
 
-// Module 15133 (CutoutGuildIcon)
+// Module 15248 (CutoutGuildIcon)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_5;
+let closure_6;
+let closure_9;
+const require = arg1;
 function CutoutGuildIcon(guild) {
-  let obj = { style: {} };
+  let obj = { style: { width: 24, height: 24 } };
   obj = {};
-  obj = {};
-  const tmp = callback3();
-  obj.shape = arg1(dependencyMap[8]).CutoutShape.RoundedRect;
-  obj.cornerRadius = importDefault(dependencyMap[7]).radii.md;
+  obj = { shape: null, x: 18, y: -4, width: 32, height: 32 };
+  const tmp = _createForOfIteratorHelperLoose();
+  obj.shape = require(7873) /* SolidCutout */.CutoutShape.RoundedRect;
+  obj.cornerRadius = importDefault(689).radii.md;
   const items = [obj];
   obj.cutouts = items;
   const obj1 = { guild: guild.guild };
-  const tmp2 = importDefault(dependencyMap[8]);
-  obj1.size = arg1(dependencyMap[9]).GuildIconSizes.XSMALL;
+  const tmp2 = importDefault(7873);
+  obj1.size = require(5515) /* makeSizeStyle */.GuildIconSizes.XSMALL;
   obj1.style = tmp.guildIconBG;
-  obj.children = callback2(importDefault(dependencyMap[9]), obj1);
-  obj.children = callback2(tmp2, obj);
-  return callback2(closure_6, obj);
+  obj.children = callback(importDefault(5515), obj1);
+  obj.children = callback(tmp2, obj);
+  return callback(closure_6, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ ActivityIndicator: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[7]).radii.round, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BRAND };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[5]);
-obj.guildIconBG = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
-obj.refreshMorePillContainer = { marginHorizontal: "title", borderRadius: "__closure", padding: "r", marginLeft: "construct", width: "Array", height: "isArray" };
-let closure_11 = obj.createStyles(obj);
-let closure_12 = {};
+({ ActivityIndicator: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignSelf: "center", alignItems: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 8, paddingVertical: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.guildIconBG = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+_createForOfIteratorHelperLoose.refreshMorePillContainer = { position: "absolute", top: 0, left: 0, height: 32, width: "100%", zIndex: 100 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let closure_12 = { overshootClamping: true, stiffness: 20, damping: 15, mass: 0.03 };
 let closure_13 = { code: "function NewContentPillTsx1(){const{withSpring,showingPill,springConfig}=this.__closure;return{transform:[{translateY:withSpring(showingPill?12:0,springConfig)}],opacity:withSpring(showingPill?1:0,springConfig,'respect-motion-settings')};}" };
 let closure_14 = { code: "function NewContentPillTsx2(){const{showingPill}=this.__closure;return{pointerEvents:showingPill?'box-none':'none'};}" };
-const obj1 = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/icymi/native/NewContentPill.tsx");
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/icymi/native/NewContentPill.tsx");
 
 export default function NewContentPill(onPress) {
   onPress = onPress.onPress;
-  const arg1 = onPress;
   const isRefreshing = onPress.isRefreshing;
-  const importDefault = isRefreshing;
-  let closure_8;
+  let first1;
   let isFocused;
   let first2;
-  let callback3;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_8];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => first1.getNewUnreadDehydratedItems());
-  const dependencyMap = stateFromStoresArray;
-  let obj1 = arg1(dependencyMap[10]);
-  const items1 = [closure_8];
+  let _createForOfIteratorHelperLoose;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = onPress(stateFromStoresArray[10]);
+  let items = [first1];
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => first1.getNewUnreadDehydratedItems());
+  let obj1 = onPress(stateFromStoresArray[10]);
+  const items1 = [first1];
   const stateFromStores = obj1.useStateFromStores(items1, () => first1.hasNewContent(), []);
-  let callback = stateFromStores;
-  const tmp4 = callback(React.useState(stateFromStoresArray), 2);
-  const first = tmp4[0];
-  const React = first;
+  const tmp4 = stateFromStores(first.useState(stateFromStoresArray), 2);
+  first = tmp4[0];
   let closure_5 = tmp4[1];
   const items2 = [first];
-  let closure_6 = React.useMemo(() => {
+  let closure_6 = first.useMemo(() => {
     const items = [];
-    const onPress = items;
     const item = first.forEach((data) => {
-      if (items.length < items(closure_2[12]).MIN_ITEMS_FOR_NEW_PILL) {
-        let isGuildItemResult = items(closure_2[13]).isGuildItem(data);
+      if (items.length < onPress(stateFromStoresArray[12]).MIN_ITEMS_FOR_NEW_PILL) {
+        let isGuildItemResult = onPress(stateFromStoresArray[13]).isGuildItem(data);
         if (isGuildItemResult) {
           isGuildItemResult = !items.includes(data.data.guild_id);
         }
         if (isGuildItemResult) {
           items.push(data.data.guild_id);
         }
-        const obj = items(closure_2[13]);
+        const obj = onPress(stateFromStoresArray[13]);
       }
     });
     return items;
   }, items2);
-  let obj2 = arg1(dependencyMap[10]);
+  let obj2 = onPress(stateFromStoresArray[10]);
   const items3 = [closure_7];
   const stateFromStoresArray1 = obj2.useStateFromStoresArray(items3, () => {
     const mapped = closure_6.map((guildId) => guild.getGuild(guildId));
     return mapped.filter(Boolean);
   });
-  const tmp7 = callback(React.useState(false), 2);
+  const tmp7 = stateFromStores(first.useState(false), 2);
   closure_7 = tmp7[1];
-  let first1 = stateFromStores;
+  first1 = stateFromStores;
   if (stateFromStores) {
     first1 = tmp7[0];
   }
-  closure_8 = first1;
-  let obj3 = arg1(dependencyMap[14]);
+  let obj3 = onPress(stateFromStoresArray[14]);
   const fn = function y() {
     let obj = {};
     obj = {};
@@ -104,7 +103,7 @@ export default function NewContentPill(onPress) {
     if (first1) {
       num = 12;
     }
-    obj.translateY = onPress(stateFromStoresArray[15]).withSpring(num, closure_12);
+    obj.translateY = onPress(stateFromStoresArray[15]).withSpring(num, outer1_12);
     const items = [obj];
     obj.transform = items;
     const obj3 = onPress(stateFromStoresArray[15]);
@@ -112,20 +111,20 @@ export default function NewContentPill(onPress) {
     if (first1) {
       num2 = 1;
     }
-    obj.opacity = onPress(stateFromStoresArray[15]).withSpring(num2, closure_12, "respect-motion-settings");
+    obj.opacity = onPress(stateFromStoresArray[15]).withSpring(num2, outer1_12, "respect-motion-settings");
     return obj;
   };
-  obj = { withSpring: arg1(dependencyMap[15]).withSpring, showingPill: first1, springConfig: closure_12 };
+  obj = { withSpring: onPress(stateFromStoresArray[15]).withSpring, showingPill: first1, springConfig: closure_12 };
   fn.__closure = obj;
   fn.__workletHash = 13655660855782;
   fn.__initData = closure_13;
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  let obj5 = arg1(dependencyMap[14]);
+  let obj5 = onPress(stateFromStoresArray[14]);
   class C {
     constructor() {
       obj = {};
       str = "none";
-      if (closure_8) {
+      if (c8) {
         str = "box-none";
       }
       obj.pointerEvents = str;
@@ -137,13 +136,13 @@ export default function NewContentPill(onPress) {
   C.__workletHash = 876312391659;
   C.__initData = closure_14;
   const animatedProps = obj5.useAnimatedProps(C);
-  let obj7 = arg1(dependencyMap[16]);
+  let obj7 = onPress(stateFromStoresArray[16]);
   isFocused = obj7.useIsFocused();
-  const tmp12 = callback(React.useState(false), 2);
+  const tmp12 = stateFromStores(first.useState(false), 2);
   first2 = tmp12[0];
-  callback3 = tmp12[1];
+  _createForOfIteratorHelperLoose = tmp12[1];
   const items4 = [stateFromStores, isFocused, first2];
-  const layoutEffect = React.useLayoutEffect(() => {
+  const layoutEffect = first.useLayoutEffect(() => {
     if (!first2) {
       if (isFocused) {
         if (stateFromStores) {
@@ -164,13 +163,13 @@ export default function NewContentPill(onPress) {
     }
   }, items4);
   const items5 = [isRefreshing, stateFromStoresArray, stateFromStores];
-  const effect = React.useEffect(() => {
+  const effect = first.useEffect(() => {
     if (!isRefreshing) {
       callback(stateFromStoresArray);
     }
   }, items5);
   const items6 = [onPress];
-  callback = React.useCallback(() => {
+  const callback = first.useCallback(() => {
     onPress();
   }, items6);
   if (0 === stateFromStoresArray1.length) {
@@ -179,16 +178,16 @@ export default function NewContentPill(onPress) {
     obj1.style = items7;
     obj1.animatedProps = animatedProps;
     obj2 = { onPress: callback, style: tmp.container };
-    const items8 = [isFocused(arg1(dependencyMap[18]).ArrowSmallUpIcon, {}), ];
-    obj3 = {};
+    const items8 = [isFocused(onPress(stateFromStoresArray[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" }), ];
+    obj3 = { style: null, variant: "heading-md/bold", color: "interactive-text-active" };
     const obj4 = { marginLeft: 4 };
     obj3.style = obj4;
-    const intl = arg1(dependencyMap[20]).intl;
-    obj3.children = intl.string(arg1(dependencyMap[20]).t.4Nl0Rl);
-    items8[1] = isFocused(arg1(dependencyMap[19]).Text, obj3);
+    const intl = onPress(stateFromStoresArray[20]).intl;
+    obj3.children = intl.string(onPress(stateFromStoresArray[20]).t["4Nl0Rl"]);
+    items8[1] = isFocused(onPress(stateFromStoresArray[19]).Text, obj3);
     obj2.children = items8;
-    obj1.children = first2(arg1(dependencyMap[17]).PressableOpacity, obj2);
-    let tmp41Result = isFocused(importDefault(dependencyMap[14]).View, obj1);
+    obj1.children = first2(onPress(stateFromStoresArray[17]).PressableOpacity, obj2);
+    let tmp41Result = isFocused(isRefreshing(stateFromStoresArray[14]).View, obj1);
   } else {
     obj5 = {};
     const items9 = [tmp.refreshMorePillContainer, animatedStyle];
@@ -197,14 +196,14 @@ export default function NewContentPill(onPress) {
     const obj6 = { onPress: callback, style: tmp.container };
     if (isRefreshing) {
       obj7 = {};
-      let obj9 = arg1(dependencyMap[21]);
-      const unsafe_rawColors = importDefault(dependencyMap[7]).unsafe_rawColors;
+      let obj9 = onPress(stateFromStoresArray[21]);
+      const unsafe_rawColors = isRefreshing(stateFromStoresArray[7]).unsafe_rawColors;
       obj7.color = obj9.isThemeDark(tmp6) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_500;
       tmp47(closure_5, obj7);
       const isThemeDarkResult = obj9.isThemeDark(tmp6);
       const tmp19 = closure_5;
     } else {
-      const items10 = [tmp47(arg1(dependencyMap[18]).ArrowSmallUpIcon, {}), , ];
+      const items10 = [tmp47(onPress(stateFromStoresArray[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" }), , ];
       const substr = stateFromStoresArray1.slice(0, stateFromStoresArray1.length - 1);
       items10[1] = substr.map((guild) => {
         let obj = {};
@@ -216,7 +215,7 @@ export default function NewContentPill(onPress) {
         obj.marginLeft = num;
         obj.style = obj;
         obj = { guild };
-        obj.children = isFocused(closure_15, obj);
+        obj.children = isFocused(outer1_15, obj);
         return isFocused(closure_6, obj, guild.id);
       });
       const obj8 = {};
@@ -227,18 +226,18 @@ export default function NewContentPill(onPress) {
       }
       obj9.marginLeft = num4;
       obj8.style = obj9;
-      const obj10 = { guild: stateFromStoresArray1[stateFromStoresArray1.length - 1], size: arg1(dependencyMap[9]).GuildIconSizes.XSMALL, style: tmp.guildIconBG };
-      obj8.children = isFocused(importDefault(dependencyMap[9]), obj10);
+      const obj10 = { guild: stateFromStoresArray1[stateFromStoresArray1.length - 1], size: onPress(stateFromStoresArray[9]).GuildIconSizes.XSMALL, style: tmp.guildIconBG };
+      obj8.children = isFocused(isRefreshing(stateFromStoresArray[9]), obj10);
       items10[2] = isFocused(closure_6, obj8);
       obj6.children = items10;
       obj5.children = tmp44(tmp46, obj6);
-      tmp41Result = tmp41(importDefault(dependencyMap[14]).View, obj5);
+      tmp41Result = tmp41(isRefreshing(stateFromStoresArray[14]).View, obj5);
       const tmp26 = isFocused;
       const tmp27 = closure_6;
-      const tmp31 = importDefault(dependencyMap[9]);
+      const tmp31 = isRefreshing(stateFromStoresArray[9]);
     }
-    const tmp41 = isFocused;
-    const tmp44 = first2;
+    tmp41 = isFocused;
+    tmp44 = first2;
   }
   return tmp41Result;
 };

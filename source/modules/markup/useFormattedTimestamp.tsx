@@ -1,53 +1,57 @@
-// Module ID: 10258
-// Function ID: 79274
+// Module ID: 10270
+// Function ID: 79342
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 664, 6679, 3712, 4587, 2]
 // Exports: default
 
-// Module 10258 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10270 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,37 +88,34 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const items = [2 * importDefault(dependencyMap[2]).Seconds.MINUTE, importDefault(dependencyMap[2]).Seconds.SECOND];
+let items = [2 * require("set").Seconds.MINUTE, require("set").Seconds.SECOND];
 const items1 = [items, , , ];
-const items2 = [5 * importDefault(dependencyMap[2]).Seconds.MINUTE, importDefault(dependencyMap[2]).Seconds.MINUTE];
+const items2 = [5 * require("set").Seconds.MINUTE, require("set").Seconds.MINUTE];
 items1[1] = items2;
-const items3 = [45 * importDefault(dependencyMap[2]).Seconds.MINUTE, 2 * importDefault(dependencyMap[2]).Seconds.MINUTE];
+const items3 = [45 * require("set").Seconds.MINUTE, 2 * require("set").Seconds.MINUTE];
 items1[2] = items3;
-const items4 = [21 * importDefault(dependencyMap[2]).Seconds.HOUR, 5 * importDefault(dependencyMap[2]).Seconds.MINUTE];
+const items4 = [21 * require("set").Seconds.HOUR, 5 * require("set").Seconds.MINUTE];
 items1[3] = items4;
-let closure_6 = 2 * importDefault(dependencyMap[2]).Seconds.HOUR;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/markup/useFormattedTimestamp.tsx");
+let closure_6 = 2 * require("set").Seconds.HOUR;
+let result = require("set").fileFinishedImporting("modules/markup/useFormattedTimestamp.tsx");
 
 export default function useFormattedTimestamp(format) {
-  const arg1 = format;
-  const forceUpdate = arg1(dependencyMap[3]).useForceUpdate();
-  const importDefault = forceUpdate;
+  const _require = format;
+  const forceUpdate = _require(6679).useForceUpdate();
   const items = [forceUpdate, , ];
   ({ format: arr[1], parsed: arr[2] } = format);
   const effect = React.useEffect(() => {
     if ("R" === interval.format) {
-      const result = 1000 * closure_6;
+      const result = 1000 * outer1_6;
       const _Math = Math;
       const parsed = interval.parsed;
-      const absolute = Math.abs(parsed.diff(forceUpdate(closure_2[4])()));
-      const tmp10 = callback2(closure_5);
+      const absolute = Math.abs(parsed.diff(forceUpdate(outer1_2[4])()));
+      const tmp10 = outer1_7(outer1_5);
       const iter = tmp10();
       let iter2 = iter;
       let result1 = result;
       if (!iter.done) {
-        const tmp13 = callback(iter2.value, 2);
+        const tmp13 = outer1_3(iter2.value, 2);
         while (absolute >= 1000 * tmp13[0]) {
           let iter3 = tmp10();
           iter2 = iter3;
@@ -123,14 +124,14 @@ export default function useFormattedTimestamp(format) {
         result1 = 1000 * tmp13[1];
       }
       const _setInterval = setInterval;
-      const interval = setInterval(() => {
-        callback();
+      interval = setInterval(() => {
+        outer1_1();
       }, result1);
       return () => clearInterval(closure_0);
     }
   }, items);
   if ("R" === format.format) {
-    const TIMESTAMP_FORMATS = arg1(dependencyMap[5]).TIMESTAMP_FORMATS;
+    const TIMESTAMP_FORMATS = _require(4587).TIMESTAMP_FORMATS;
     let formatted = TIMESTAMP_FORMATS.R(format.parsed);
   } else {
     formatted = format.formatted;

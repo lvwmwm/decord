@@ -1,9 +1,19 @@
-// Module ID: 12532
-// Function ID: 96242
+// Module ID: 12646
+// Function ID: 98398
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 6688, 1851, 653, 587, 3712, 566, 686, 2]
 
-// Module 12532 (_isNativeReflectConstruct)
+// Module 12646 (_isNativeReflectConstruct)
+import GuildFeatures from "GuildFeatures";
+import ME from "ME";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { PremiumSubscriptionSKUs } from "GuildFeatures";
+import { NoticeTypes } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +23,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,41 +103,41 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function dismissUntilStorageKey(PREMIUM_TIER_0_TRIAL_ENDING) {
-  return closure_13[PREMIUM_TIER_0_TRIAL_ENDING] + "-untilAtLeast";
+  return dependencyMap[PREMIUM_TIER_0_TRIAL_ENDING] + "-untilAtLeast";
 }
-function clearDismissUntil(closure_11) {
-  const Storage = arg1(dependencyMap[8]).Storage;
-  Storage.remove(dismissUntilStorageKey(closure_11));
+function clearDismissUntil(value) {
+  const Storage = require(587) /* Storage */.Storage;
+  Storage.remove(dismissUntilStorageKey(value));
 }
-function dismissNotice(closure_11, untilAtLeast) {
-  if (null != closure_11) {
-    if (null != closure_13[closure_11]) {
-      const Storage = untilAtLeast(dependencyMap[8]).Storage;
+function dismissNotice(c11, untilAtLeast) {
+  if (null != c11) {
+    if (null != dependencyMap[c11]) {
+      const Storage = require(587) /* Storage */.Storage;
       const result = Storage.set(tmp12, true);
     }
     if (null != untilAtLeast) {
       if (null != tmp12) {
-        const Storage2 = untilAtLeast(dependencyMap[8]).Storage;
-        const result1 = Storage2.set(dismissUntilStorageKey(closure_11), untilAtLeast.format("YYYY-MM-DDTHH:mm:ss.SSSZ"));
-        const tmp9 = dismissUntilStorageKey(closure_11);
+        const Storage2 = require(587) /* Storage */.Storage;
+        const result1 = Storage2.set(dismissUntilStorageKey(c11), untilAtLeast.format("YYYY-MM-DDTHH:mm:ss.SSSZ"));
+        const tmp9 = dismissUntilStorageKey(c11);
       }
     }
-    clearDismissUntil(closure_11);
+    clearDismissUntil(c11);
   }
 }
 function isNoticeDismissed(PREMIUM_TIER_0_TRIAL_ENDING) {
   if (null == PREMIUM_TIER_0_TRIAL_ENDING) {
     return false;
   } else {
-    if (null != closure_13[PREMIUM_TIER_0_TRIAL_ENDING]) {
-      const Storage = arg1(dependencyMap[8]).Storage;
+    if (null != dependencyMap[PREMIUM_TIER_0_TRIAL_ENDING]) {
+      const Storage = require(587) /* Storage */.Storage;
       let value = Storage.get(dismissUntilStorageKey(PREMIUM_TIER_0_TRIAL_ENDING));
       let tmp5 = null;
       if (null != value) {
-        tmp5 = importDefault(dependencyMap[9])(value);
+        tmp5 = importDefault(3712)(value);
       }
       if (null != tmp5) {
-        return tmp5.isAfter(importDefault(dependencyMap[9])());
+        return tmp5.isAfter(importDefault(3712)());
       }
     }
     let tmp8 = null != tmp16;
@@ -135,7 +145,7 @@ function isNoticeDismissed(PREMIUM_TIER_0_TRIAL_ENDING) {
       tmp8 = "" !== tmp16;
     }
     if (tmp8) {
-      const Storage2 = arg1(dependencyMap[8]).Storage;
+      const Storage2 = require(587) /* Storage */.Storage;
       value = Storage2.get(tmp16);
       tmp8 = null != value && value;
       const tmp12 = null != value && value;
@@ -146,7 +156,7 @@ function isNoticeDismissed(PREMIUM_TIER_0_TRIAL_ENDING) {
 function updateNotice() {
   let items;
   let value;
-  let closure_11 = null;
+  let c11 = null;
   const tmp = _createForOfIteratorHelperLoose(items);
   let iter = tmp();
   if (!iter.done) {
@@ -161,7 +171,7 @@ function updateNotice() {
           let tmp8 = isNoticeDismissed;
           let tmp9 = NoticeTypes;
           if (!isNoticeDismissed(NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING)) {
-            closure_11 = value;
+            c11 = value;
           }
         }
       } else {
@@ -182,34 +192,26 @@ function updateNotice() {
       let iter2 = tmp();
       iter = iter2;
     }
-    closure_11 = value;
+    c11 = value;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const PremiumSubscriptionSKUs = arg1(dependencyMap[6]).PremiumSubscriptionSKUs;
-const NoticeTypes = arg1(dependencyMap[7]).NoticeTypes;
-let closure_11 = null;
-const items = [, ];
+let c11 = null;
+let items = [, ];
 ({ PREMIUM_TIER_2_TRIAL_ENDING: arr[0], PREMIUM_TIER_0_TRIAL_ENDING: arr[1] } = NoticeTypes);
 let closure_13 = { [NoticeTypes.PREMIUM_TIER_0_TRIAL_ENDING]: "hidePremiumTier0TrialEndingReminder", [NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING]: "hidePremiumTier2TrialEndingReminder" };
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class NoticeStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, NoticeStore);
-      obj = closure_6(NoticeStore);
-      tmp2 = closure_5;
-      if (closure_14()) {
+      tmp = outer1_3(this, NoticeStore);
+      obj = outer1_6(NoticeStore);
+      tmp2 = outer1_5;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -218,28 +220,27 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = NoticeStore;
   callback2(NoticeStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const items = [closure_8];
-      this.syncWith(items, closure_21);
-      this.waitFor(closure_8);
+      const items = [outer1_8];
+      this.syncWith(items, outer1_21);
+      this.waitFor(outer1_8);
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "getNoticeType",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[1] = obj;
   return callback(NoticeStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "NoticeStore";
-tmp2 = new tmp2(importDefault(dependencyMap[11]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: updateNotice,
   CURRENT_USER_UPDATE: updateNotice,
   PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: updateNotice,
@@ -253,29 +254,29 @@ tmp2 = new tmp2(importDefault(dependencyMap[11]), {
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp2 = closure_13;
-        let tmp3 = closure_13[value];
+        let tmp2 = dependencyMap;
+        let tmp3 = dependencyMap[value];
         if (null != tmp3) {
-          let tmp4 = closure_0;
-          let tmp5 = closure_2;
-          let Storage = closure_0(closure_2[8]).Storage;
+          let tmp4 = require;
+          let tmp5 = dependencyMap;
+          let Storage = require(587) /* Storage */.Storage;
           let removeResult = Storage.remove(tmp3);
         }
-        let tmp7 = closure_18;
-        let tmp8 = closure_18(value);
+        let tmp7 = clearDismissUntil;
+        let tmp8 = clearDismissUntil(value);
         iter2 = tmp();
         iter = iter2;
       } while (!iter2.done);
     }
-    let closure_11 = null;
+    let c11 = null;
   },
   NOTICE_DISMISS: function handleNoticeDismiss(untilAtLeast) {
-    if (null != closure_11) {
-      dismissNotice(closure_11, untilAtLeast.untilAtLeast);
+    if (null != c11) {
+      dismissNotice(c11, untilAtLeast.untilAtLeast);
       updateNotice();
     }
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/NoticeStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/native/NoticeStore.tsx");
 
 export default tmp2;

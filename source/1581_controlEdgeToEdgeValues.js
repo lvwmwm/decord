@@ -1,22 +1,22 @@
 // Module ID: 1581
-// Function ID: 17672
+// Function ID: 17673
 // Name: controlEdgeToEdgeValues
-// Dependencies: [0, 0]
+// Dependencies: [57, 27]
 // Exports: controlEdgeToEdgeValues, isEdgeToEdge
 
 // Module 1581 (controlEdgeToEdgeValues)
-import "__exportStarResult1";
-import "__exportStarResult1";
+import _slicedToArray from "_slicedToArray";
+import get_ActivityIndicator from "get ActivityIndicator";
 
 
 export function controlEdgeToEdgeValues(arg0) {
 
 }
 export const isEdgeToEdge = function isEdgeToEdge() {
-  const TurboModuleRegistry = __exportStarResult1.TurboModuleRegistry;
+  const TurboModuleRegistry = get_ActivityIndicator.TurboModuleRegistry;
   let tmp = null != TurboModuleRegistry.get("RNEdgeToEdge");
   if (!tmp) {
-    const TurboModuleRegistry2 = __exportStarResult1.TurboModuleRegistry;
+    const TurboModuleRegistry2 = get_ActivityIndicator.TurboModuleRegistry;
     const value = TurboModuleRegistry2.get("DeviceInfo");
     let getConstants;
     if (null != value) {

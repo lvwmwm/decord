@@ -1,37 +1,37 @@
-// Module ID: 14940
-// Function ID: 112452
+// Module ID: 15056
+// Function ID: 114620
 // Name: useStartTime
-// Dependencies: []
+// Dependencies: [31, 4469, 9478, 653, 566, 10458, 2]
 // Exports: useStartTime
 
-// Module 14940 (useStartTime)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const ChannelTypes = arg1(dependencyMap[3]).ChannelTypes;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/channel/useVoiceChannelStartTime.tsx");
+// Module 15056 (useStartTime)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel/useVoiceChannelStartTime.tsx");
 
 export const useStartTime = function useStartTime(channel) {
-  const arg1 = channel;
-  const items = [closure_4, closure_3];
-  const stateFromStoresObject = arg1(dependencyMap[4]).useStateFromStoresObject(items, () => ({ hasRequestedStartTimes: closure_4.hasRequestedStartTimes(arg0.guild_id), startTime: closure_4.getStartTime(arg0), isGuildUnavailable: tmp2.isUnavailable(arg0.guild_id) }));
-  const hasRequestedStartTimes = stateFromStoresObject.hasRequestedStartTimes;
-  const dependencyMap = hasRequestedStartTimes;
+  const _require = channel;
+  const items = [closure_4, _isNativeReflectConstruct];
+  const stateFromStoresObject = _require(hasRequestedStartTimes[4]).useStateFromStoresObject(items, () => ({ hasRequestedStartTimes: outer1_4.hasRequestedStartTimes(channel.guild_id), startTime: outer1_4.getStartTime(channel), isGuildUnavailable: tmp2.isUnavailable(channel.guild_id) }));
+  hasRequestedStartTimes = stateFromStoresObject.hasRequestedStartTimes;
   const isGuildUnavailable = stateFromStoresObject.isGuildUnavailable;
-  const React = isGuildUnavailable;
-  closure_3 = tmp2;
+  _isNativeReflectConstruct = tmp2;
   const items1 = [channel.type === ChannelTypes.GUILD_VOICE, channel.guild_id, hasRequestedStartTimes, isGuildUnavailable];
-  const effect = React.useEffect(() => {
+  const effect = isGuildUnavailable.useEffect(() => {
     let tmp = hasRequestedStartTimes;
     if (!hasRequestedStartTimes) {
-      tmp = !tmp2;
+      tmp = !_isNativeReflectConstruct;
     }
     if (!tmp) {
       tmp = isGuildUnavailable;
     }
     if (!tmp) {
-      const channelInfo = arg0(hasRequestedStartTimes[5]).fetchChannelInfo(arg0.guild_id);
-      const obj = arg0(hasRequestedStartTimes[5]);
+      const channelInfo = channel(hasRequestedStartTimes[5]).fetchChannelInfo(channel.guild_id);
+      const obj = channel(hasRequestedStartTimes[5]);
     }
   }, items1);
   return stateFromStoresObject.startTime;

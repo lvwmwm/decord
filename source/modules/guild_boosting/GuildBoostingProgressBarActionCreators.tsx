@@ -1,22 +1,21 @@
-// Module ID: 14931
-// Function ID: 112421
+// Module ID: 15047
+// Function ID: 114589
 // Name: updateGuildPremiumSubscriptionCount
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: resetGuildPremiumSubscriptionCount, updateGuildPremiumSubscriptionCount
 
-// Module 14931 (updateGuildPremiumSubscriptionCount)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_boosting/GuildBoostingProgressBarActionCreators.tsx");
+// Module 15047 (updateGuildPremiumSubscriptionCount)
+const result = require("set").fileFinishedImporting("modules/guild_boosting/GuildBoostingProgressBarActionCreators.tsx");
 
 export const updateGuildPremiumSubscriptionCount = function updateGuildPremiumSubscriptionCount(guildId, arg1) {
   const importDefault = guildId;
   const dependencyMap = arg1;
-  importDefault(dependencyMap[0]).wait(() => {
-    let obj = arg0(arg1[0]);
-    obj = { type: "APPLIED_GUILD_BOOST_COUNT_UPDATE", guildId: arg0, premiumCount: arg1 };
+  importDefault(686).wait(() => {
+    let obj = guildId(table[0]);
+    obj = { type: "APPLIED_GUILD_BOOST_COUNT_UPDATE", guildId, premiumCount: table };
     obj.dispatch(obj);
   });
 };
 export const resetGuildPremiumSubscriptionCount = function resetGuildPremiumSubscriptionCount() {
-  importDefault(dependencyMap[0]).dispatch({ type: "APPLIED_GUILD_BOOST_COUNT_RESET" });
+  importDefault(686).dispatch({ type: "APPLIED_GUILD_BOOST_COUNT_RESET" });
 };

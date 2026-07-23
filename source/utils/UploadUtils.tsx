@@ -1,10 +1,10 @@
-// Module ID: 4663
-// Function ID: 40482
+// Module ID: 4666
+// Function ID: 40500
 // Name: items
-// Dependencies: []
+// Dependencies: [4667, 4665, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData
 
-// Module 4663 (items)
+// Module 4666 (items)
 let obj = {
   reName: /\.jpe?g$/i,
   name(arg0) {
@@ -120,8 +120,7 @@ items[13] = {
   },
   type: "image/webm"
 };
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("utils/UploadUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/UploadUtils.tsx");
 
 export const MAX_TOTAL_ATTACHMENT_SIZE = 524288000;
 export const MAX_TOTAL_ATTACHMENT_SIZE_MB = 500;
@@ -168,17 +167,17 @@ export const getAttachmentPayload = function getAttachmentPayload(id, arg1, name
     obj.is_clip = true;
     obj.title = id.clip.name;
     obj.application_id = id.clip.applicationId;
-    obj.clip_created_at = require(dependencyMap[0]).getClipCreatedAt(id.clip.createdAt);
-    const obj2 = require(dependencyMap[0]);
-    obj.clip_participant_ids = require(dependencyMap[0]).getClipParticipantIds(id.clip.users);
+    obj.clip_created_at = require(4667) /* _createForOfIteratorHelperLoose */.getClipCreatedAt(id.clip.createdAt);
+    const obj2 = require(4667) /* _createForOfIteratorHelperLoose */;
+    obj.clip_participant_ids = require(4667) /* _createForOfIteratorHelperLoose */.getClipParticipantIds(id.clip.users);
     obj.clip_remote_id = id.clip.remoteClipId;
-    const obj3 = require(dependencyMap[0]);
-    obj.clip_events_timeline = require(dependencyMap[0]).getClipEventsTimeline(id.clip);
-    const obj4 = require(dependencyMap[0]);
+    const obj3 = require(4667) /* _createForOfIteratorHelperLoose */;
+    obj.clip_events_timeline = require(4667) /* _createForOfIteratorHelperLoose */.getClipEventsTimeline(id.clip);
+    const obj4 = require(4667) /* _createForOfIteratorHelperLoose */;
   }
   let tmp9 = "item" in id && null != id.item;
   if (tmp9) {
-    tmp9 = id.item.platform === require(dependencyMap[1]).UploadPlatform.WEB;
+    tmp9 = id.item.platform === require(4665) /* _isNativeReflectConstruct */.UploadPlatform.WEB;
   }
   if (tmp9) {
     str = "mimeType";
@@ -193,34 +192,36 @@ export const getAttachmentPayload = function getAttachmentPayload(id, arg1, name
   return obj;
 };
 export const getFileData = function getFileData(arg0) {
-  const require = arg0;
-  const xMLHttpRequest = new XMLHttpRequest();
-  const dependencyMap = xMLHttpRequest;
+  let closure_0 = arg0;
+  let xMLHttpRequest = new XMLHttpRequest();
   return new Promise((arg0, arg1) => {
+    let closure_0 = arg0;
     const xMLHttpRequest = arg1;
-    xMLHttpRequest.open("GET", arg0, true);
+    xMLHttpRequest.open("GET", closure_0, true);
     xMLHttpRequest.responseType = "blob";
-    xMLHttpRequest.onabort = (arg0) => arg1(arg0);
-    xMLHttpRequest.onerror = (arg0) => arg1(arg0);
-    xMLHttpRequest.ontimeout = (arg0) => arg1(arg0);
+    xMLHttpRequest.onabort = (arg0) => lib(arg0);
+    xMLHttpRequest.onerror = (arg0) => lib(arg0);
+    xMLHttpRequest.ontimeout = (arg0) => lib(arg0);
     xMLHttpRequest.onload = () => {
       let data;
-      if (null != arg1) {
-        const response = arg1.response;
+      if (null != lib) {
+        const response = lib.response;
         if (null != response) {
           data = response.data;
         }
       }
-      return arg0(data);
+      return closure_0(data);
     };
     xMLHttpRequest.send();
   });
 };
 export const getFileContentLength = function getFileContentLength(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   return new Promise((arg0, onerror) => {
+    let closure_0 = arg0;
+    let closure_1 = onerror;
     const xMLHttpRequest = new XMLHttpRequest();
-    xMLHttpRequest.open("HEAD", arg0, true);
+    xMLHttpRequest.open("HEAD", closure_0, true);
     xMLHttpRequest.onload = () => {
       if (xMLHttpRequest.status >= 200) {
         if (xMLHttpRequest.status < 300) {
@@ -228,16 +229,16 @@ export const getFileContentLength = function getFileContentLength(arg0) {
           if (null != responseHeader) {
             if ("" !== responseHeader) {
               const _parseInt = parseInt;
-              arg0(parseInt(responseHeader, 10));
+              callback(parseInt(responseHeader, 10));
             }
           }
           const _Error = Error;
           const error = new Error("Content-Length header is missing");
-          arg1(error);
+          onerror(error);
         }
       }
       const error1 = new Error("HTTP request failed with status code " + xMLHttpRequest.status);
-      arg1(error1);
+      onerror(error1);
     };
     xMLHttpRequest.onerror = onerror;
     xMLHttpRequest.onabort = onerror;
@@ -250,10 +251,9 @@ export const getFile = function getFile(overrideType) {
   let overrideFilename;
   let uri;
   ({ uri, i, overrideFilename } = overrideType);
-  const require = overrideFilename;
   overrideType = overrideType.overrideType;
   const parts = uri.split("/");
-  let dependencyMap = str;
+  let str4 = str;
   const parts1 = str.split("?");
   let formatted;
   if (null != parts1) {
@@ -262,11 +262,10 @@ export const getFile = function getFile(overrideType) {
     }
   }
   let str3 = "";
-  let str4 = "";
+  str4 = "";
   if (null != formatted) {
     str4 = formatted;
   }
-  dependencyMap = str4;
   let found = items.find((reName) => {
     reName = reName.reName;
     return reName.test(str4);

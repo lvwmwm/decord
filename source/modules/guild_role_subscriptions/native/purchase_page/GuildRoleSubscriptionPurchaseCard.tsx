@@ -1,58 +1,65 @@
-// Module ID: 15158
-// Function ID: 114341
+// Module ID: 15273
+// Function ID: 116510
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 1557, 14116, 15268, 5187, 4126, 1273, 15274, 5189, 1212, 14126, 2]
 // Exports: default
 
-// Module 15158 (GuildRoleSubscriptionPurchaseCard)
-let closure_4 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
-obj.container = obj;
-obj.header = {};
-const tmp3 = arg1(dependencyMap[3]);
-obj.content = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.headerText = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: "%BigInt64Array%", display: "targetFrames", flexDirection: "png", alignItems: "SETTINGS_PREMIUM_MANAGE_PLAN" };
-obj.headerDot = obj2;
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.seperator = { borderColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_HOVER };
-let closure_8 = obj.createStyles(obj);
-const obj3 = { borderColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_HOVER };
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchaseCard.tsx");
+// Module 15273 (GuildRoleSubscriptionPurchaseCard)
+import _slicedToArray from "_slicedToArray";
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.header = { padding: 16, paddingBottom: 24 };
+let obj1 = { padding: 16, paddingTop: 24, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.content = obj1;
+_createForOfIteratorHelperLoose.headerText = { flexDirection: "row", alignItems: "center" };
+let obj2 = { width: 3, height: 3, borderRadius: 1.5, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, marginHorizontal: 8 };
+_createForOfIteratorHelperLoose.headerDot = obj2;
+let obj3 = { borderBottomWidth: 1, marginLeft: -16, marginRight: -16, borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER };
+_createForOfIteratorHelperLoose.seperator = obj3;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/GuildRoleSubscriptionPurchaseCard.tsx");
 
 export default function GuildRoleSubscriptionPurchaseCard(guildId) {
   const listingId = guildId.listingId;
-  const tmp = callback4();
-  let obj = importAll(dependencyMap[7]);
-  let obj1 = importAll(dependencyMap[7]);
-  let obj2 = arg1(dependencyMap[8]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = importAll(14116);
+  let obj1 = importAll(14116);
+  let obj2 = require(15268) /* TruncatedText */;
   const formattedSubscriptionPlan = obj2.useFormattedSubscriptionPlan(listingId);
-  obj = { openDisableCommunication: null, freezeEnabled: null };
+  obj = { scrollable: true, startExpanded: true };
   obj = { style: tmp.container };
   obj1 = { style: tmp.header };
   obj2 = { style: tmp.headerText };
-  const items = [callback2(arg1(dependencyMap[10]).Text, { children: callback(obj1.useName(listingId), 1)[0] }), callback2(View, { style: tmp.headerDot }), callback2(arg1(dependencyMap[10]).Text, { children: formattedSubscriptionPlan })];
+  const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: callback(obj1.useName(listingId), 1)[0] };
+  const items = [callback2(require(4126) /* Text */.Text, obj3), callback2(View, { style: tmp.headerDot }), ];
+  const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan };
+  items[2] = callback2(require(4126) /* Text */.Text, obj5);
   obj2.children = items;
-  const items1 = [callback3(View, obj2), callback2(arg1(dependencyMap[11]).Spacer, { size: 16 }), , , ];
-  const obj4 = { 803799044: "i", 1269170180: "pos", 711589892: "done", children: callback(obj.useDescription(listingId), 1)[0] };
-  items1[2] = callback2(arg1(dependencyMap[8]).TruncatedText, obj4);
-  items1[3] = callback2(arg1(dependencyMap[11]).Spacer, { size: 24 });
-  items1[4] = callback2(importDefault(dependencyMap[12]), { listingId });
+  const items1 = [callback3(View, obj2), callback2(require(1273) /* Button */.Spacer, { size: 16 }), , , ];
+  const obj6 = { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: callback(obj.useDescription(listingId), 1)[0] };
+  items1[2] = callback2(require(15268) /* TruncatedText */.TruncatedText, obj6);
+  items1[3] = callback2(require(1273) /* Button */.Spacer, { size: 24 });
+  items1[4] = callback2(importDefault(15274), { listingId });
   obj1.children = items1;
   const items2 = [callback3(View, obj1), callback2(View, { style: tmp.seperator }), ];
-  const obj6 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj7 };
-  const obj8 = { cachedAt: "<string:191316381>", edpbxy: "<string:3094478849>", style: { textTransform: "uppercase" } };
-  const intl = arg1(dependencyMap[14]).intl;
-  obj8.children = intl.string(arg1(dependencyMap[14]).t.UdEvUi);
-  const items3 = [callback2(arg1(dependencyMap[10]).Text, obj8), callback2(arg1(dependencyMap[11]).Spacer, { size: 24 }), callback2(arg1(dependencyMap[15]).Content, { listingId, guildId: guildId.guildId })];
-  obj6.children = items3;
-  items2[2] = callback3(arg1(dependencyMap[13]).BottomSheetScrollView, obj6);
+  const obj8 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj9 };
+  const obj10 = { variant: "text-sm/bold", color: "text-default", style: { textTransform: "uppercase" } };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj10.children = intl.string(require(1212) /* getSystemLocale */.t.UdEvUi);
+  const items3 = [callback2(require(4126) /* Text */.Text, obj10), callback2(require(1273) /* Button */.Spacer, { size: 24 }), callback2(require(14126) /* SectionTitle */.Content, { listingId, guildId: guildId.guildId })];
+  obj8.children = items3;
+  items2[2] = callback3(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj8);
   obj.children = items2;
   obj.children = callback3(View, obj);
-  return callback2(arg1(dependencyMap[9]).BottomSheet, obj);
+  return callback2(require(5187) /* Background */.BottomSheet, obj);
 };

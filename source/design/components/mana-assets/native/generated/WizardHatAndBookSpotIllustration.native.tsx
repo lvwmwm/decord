@@ -1,13 +1,13 @@
-// Module ID: 6619
-// Function ID: 50861
+// Module ID: 6624
+// Function ID: 50890
 // Name: WizardHatAndBookSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6625, 2]
 // Exports: WizardHatAndBookSpotIllustration
 
-// Module 6619 (WizardHatAndBookSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WizardHatAndBookSpotIllustration.native.tsx");
+// Module 6624 (WizardHatAndBookSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WizardHatAndBookSpotIllustration.native.tsx");
 
 export const WizardHatAndBookSpotIllustration = function WizardHatAndBookSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const WizardHatAndBookSpotIllustration = function WizardHatAndBookSpotIll
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6625) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const WizardHatAndBookSpotIllustration = function WizardHatAndBookSpotIll
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

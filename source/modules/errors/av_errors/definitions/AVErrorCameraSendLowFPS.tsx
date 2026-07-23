@@ -1,14 +1,16 @@
-// Module ID: 16428
-// Function ID: 126848
+// Module ID: 16545
+// Function ID: 129022
 // Name: AVErrorCameraSendLowFPSDefinition
-// Dependencies: []
+// Dependencies: [1194, 4177, 4202, 664, 16531, 8857, 16528, 2]
 
-// Module 16428 (AVErrorCameraSendLowFPSDefinition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = 20 * importDefault(dependencyMap[3]).Millis.SECOND;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorCameraSendLowFPS.tsx");
+// Module 16545 (AVErrorCameraSendLowFPSDefinition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+let closure_5 = 20 * require("set").Millis.SECOND;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorCameraSendLowFPS.tsx");
 
 export const AVErrorCameraSendLowFPSDefinition = {
   getActiveErrors() {
@@ -28,14 +30,14 @@ export const AVErrorCameraSendLowFPSDefinition = {
           }
         }
         if (rTCConnection.hasActiveRemoteWants()) {
-          const accumulatedStatsWithMinDatapoints = arg1(dependencyMap[4]).getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, store.getId());
+          const accumulatedStatsWithMinDatapoints = require(16531) /* getReportInboundErrors */.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, store.getId());
           let tmp9 = null;
           if (null != accumulatedStatsWithMinDatapoints) {
             if (accumulatedStatsWithMinDatapoints.short.frameRate < 10) {
-              const obj = { type: arg1(dependencyMap[5]).AVError.CAMERA_SEND_LOW_FPS, userId: store.getId() };
-              const merged = Object.assign(arg1(dependencyMap[6]).getVoiceChannelErrorContext());
+              const obj = { type: require(8857) /* validateUniqueErrorCodes */.AVError.CAMERA_SEND_LOW_FPS, userId: store.getId() };
+              const merged = Object.assign(require(16528) /* getCommonErrorContext */.getVoiceChannelErrorContext());
               const items = [obj];
-              const obj4 = arg1(dependencyMap[6]);
+              const obj4 = require(16528) /* getCommonErrorContext */;
               const tmp10 = items;
             }
             tmp9 = tmp10;

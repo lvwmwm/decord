@@ -25,7 +25,7 @@ function jsxProd(type, key) {
           continue;
         } else {
           obj[tmp6] = key[tmp6];
-          // continue
+          continue;
         }
         continue;
       }

@@ -1,10 +1,16 @@
-// Module ID: 10838
-// Function ID: 84121
+// Module ID: 10848
+// Function ID: 84170
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: []
+// Dependencies: [3758, 653, 624, 3803, 2]
 // Exports: useShouldDisplaySpoilerObscurity
 
-// Module 10838 (computeGlobalSpoilerDisplay)
+// Module 10848 (computeGlobalSpoilerDisplay)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function computeGlobalSpoilerDisplay(RenderSpoilers, stateFromStores) {
   if (constants.ALWAYS === RenderSpoilers) {
     return true;
@@ -15,16 +21,14 @@ function computeGlobalSpoilerDisplay(RenderSpoilers, stateFromStores) {
     return false;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ Permissions: closure_3, SpoilerRenderSetting: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/messages/computeGlobalSpoilerDisplay.tsx");
+({ Permissions: closure_3, SpoilerRenderSetting: closure_4 } = ME);
+const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/messages/computeGlobalSpoilerDisplay.tsx");
 
 export default computeGlobalSpoilerDisplay;
 export const useShouldDisplaySpoilerObscurity = function useShouldDisplaySpoilerObscurity(channel) {
-  const arg1 = channel;
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => closure_2.can(constants.MANAGE_MESSAGES, arg0));
-  const RenderSpoilers = arg1(dependencyMap[3]).RenderSpoilers;
+  const _require = channel;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_2.can(outer1_3.MANAGE_MESSAGES, closure_0));
+  const RenderSpoilers = _require(3803).RenderSpoilers;
   return !computeGlobalSpoilerDisplay(RenderSpoilers.useSetting(), stateFromStores);
 };

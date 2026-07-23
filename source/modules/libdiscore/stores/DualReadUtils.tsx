@@ -1,53 +1,55 @@
 // Module ID: 1840
-// Function ID: 20175
+// Function ID: 20176
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [653, 1390, 571, 675, 620, 2]
 // Exports: runDualReadValidation
 
 // Module 1840 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import { AnalyticEvents } from "ME";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -115,7 +117,7 @@ function deepEqualImpl(getTime, getTime2, map, arg3) {
               if (getTime instanceof Set) {
                 const _Set2 = Set;
                 if (getTime2 instanceof Set) {
-                  return require(dependencyMap[1]).areSetsEqual(getTime, getTime2);
+                  return require(1390) /* _createForOfIteratorHelperLoose */.areSetsEqual(getTime, getTime2);
                 }
               }
               const _Array = Array;
@@ -221,24 +223,24 @@ function validateRecord(key, obj, shadowRecord) {
       let _Object = Object;
       if (hasOwnProperty.call(arg2, key10011)) {
         let tmp4 = arg2[key10011];
-        let tmp5 = closure_9;
+        let tmp5 = deepEqual;
         let tmp6 = tmp;
         let tmp7 = tmp4;
-        if (closure_9(tmp, tmp4)) {
+        if (deepEqual(tmp, tmp4)) {
           continue;
         } else {
           obj = { type: "value-mismatch", field: key10011, primaryValue: tmp, shadowValue: tmp4 };
           let arr = items.push(obj);
           let tmp9 = tmp;
           let tmp10 = tmp4;
-          // continue
+          continue;
         }
         continue;
       } else {
         obj = { type: "field-missing", field: key10011 };
         arr = items.push(obj);
         let tmp3 = tmp;
-        // continue
+        continue;
       }
       continue;
     }
@@ -270,23 +272,23 @@ function isPlainObject(arg0) {
 }
 function logErrorsToAnalytics(store_name, items) {
   if (0 !== items.length) {
-    const lastResult = importAll(dependencyMap[2]).last();
+    const lastResult = importAll(571).last();
     if (null != lastResult) {
       let value = map.get(store_name);
       if (null == value) {
         let obj = { mismatchesReported: 0 };
         const _Map = Map;
-        const map = new Map();
+        map = new Map();
         obj.mismatchesByLastAction = map;
         const _WeakSet = WeakSet;
         const weakSet = new WeakSet();
         obj.visitedEntries = weakSet;
-        const _Set = Set;
-        const set = new Set();
+        let _Set = Set;
+        let set = new Set();
         obj.seenMismatches = set;
         value = obj;
       }
-      const result = map.set(store_name, value);
+      let result = map.set(store_name, value);
       if (value.mismatchesReported < 15) {
         const mismatchesByLastAction = value.mismatchesByLastAction;
         value = mismatchesByLastAction.get(lastResult);
@@ -295,8 +297,9 @@ function logErrorsToAnalytics(store_name, items) {
           num2 = value;
         }
         if (num2 < 3) {
-          const tmp23 = function generateErrorReport(value, items) {
+          let tmp23 = (function generateErrorReport(value, items) {
             let iter6;
+            let closure_0 = value;
             function appendMismatch(arg0) {
               let num = 0;
               const items = [...arguments];
@@ -308,14 +311,14 @@ function logErrorsToAnalytics(store_name, items) {
                   let str2 = ":";
                   let str3 = ":";
                   let combined = "" + tmp.fieldName + ":" + tmp.primaryType + ":" + tmp.shadowType;
-                  let tmp3 = closure_0;
-                  let seenMismatches = closure_0.seenMismatches;
+                  let tmp3 = value;
+                  let seenMismatches = value.seenMismatches;
                   if (!seenMismatches.has(combined)) {
-                    let tmp4 = closure_0;
-                    let seenMismatches2 = closure_0.seenMismatches;
+                    let tmp4 = value;
+                    let seenMismatches2 = value.seenMismatches;
                     let addResult = seenMismatches2.add(combined);
-                    let tmp6 = closure_1;
-                    let mismatchedFields = closure_1.mismatchedFields;
+                    let tmp6 = obj;
+                    let mismatchedFields = obj.mismatchedFields;
                     let arr = mismatchedFields.push(tmp);
                   }
                   num = num + 1;
@@ -368,31 +371,31 @@ function logErrorsToAnalytics(store_name, items) {
                     }
                     let tmp12 = appendMismatch;
                     let obj = { fieldName: combined };
-                    let tmp13 = callback;
-                    obj.primaryType = callback(tmp6);
-                    obj.shadowType = callback(tmp10);
+                    let tmp13 = outer2_14;
+                    obj.primaryType = outer2_14(tmp6);
+                    obj.shadowType = outer2_14(tmp10);
                     let tmp14 = appendMismatch(obj);
                     let tmp15 = tmp10;
                   }
                 } else {
                   let tmp7 = appendMismatch;
                   obj = { fieldName: combined };
-                  let tmp8 = callback;
-                  obj.primaryType = callback(tmp6);
+                  let tmp8 = outer2_14;
+                  obj.primaryType = outer2_14(tmp6);
                   obj.shadowType = "missing";
                   let tmp9 = appendMismatch(obj);
                 }
               }
             }
             function appendArrayMismatches(combined, primaryValue, shadowValue) {
-              let obj = combined(appendDeepMismatches[4]);
+              let obj = outer2_0(outer2_3[4]);
               if (!obj.areArraysShallowEqual(primaryValue, shadowValue)) {
-                obj = { "Null": false, "Null": false, "Null": false, fieldName: combined, primaryArrayLength: primaryValue.length, secondaryArrayLength: shadowValue.length };
+                obj = { fieldName: combined, primaryType: "array", shadowType: "array", primaryArrayLength: primaryValue.length, secondaryArrayLength: shadowValue.length };
                 appendMismatch(obj);
               }
             }
-            let obj = { "Bool(false)": "%FunctionPrototype%", "Bool(false)": "paddingStart", mismatchedFields: [] };
-            const tmp = callback(items);
+            let obj = { numExtraKeys: 0, numMissingKeys: 0, mismatchedFields: [] };
+            let tmp = outer1_6(items);
             const iter = tmp();
             let iter2 = iter;
             if (!iter.done) {
@@ -425,8 +428,8 @@ function logErrorsToAnalytics(store_name, items) {
                     if (!visitedEntries2.has(value.primaryRecord)) {
                       let visitedEntries = value.visitedEntries;
                       let addResult = visitedEntries.add(value.primaryRecord);
-                      let tmp7 = closure_6;
-                      let tmp8 = closure_6(value.mismatches);
+                      let tmp7 = outer1_6;
+                      let tmp8 = outer1_6(value.mismatches);
                       let iter3 = tmp8();
                       let iter4 = iter3;
                       tmp9 = iter3;
@@ -434,7 +437,7 @@ function logErrorsToAnalytics(store_name, items) {
                       tmp11 = tmp4;
                       tmp12 = tmp5;
                       if (!iter3.done) {
-                        while (true) {
+                        do {
                           value = iter4.value;
                           let str = value.field;
                           str = str.toString();
@@ -442,8 +445,8 @@ function logErrorsToAnalytics(store_name, items) {
                           if ("field-missing" === type2) {
                             let mismatchedFields = obj.mismatchedFields;
                             obj = { fieldName: str };
-                            let tmp18 = closure_14;
-                            obj.primaryType = closure_14(value.primaryRecord[value.field]);
+                            let tmp18 = outer1_14;
+                            obj.primaryType = outer1_14(value.primaryRecord[value.field]);
                             obj.shadowType = "missing";
                             let arr = mismatchedFields.push(obj);
                           } else if ("value-mismatch" === type2) {
@@ -464,32 +467,27 @@ function logErrorsToAnalytics(store_name, items) {
                               }
                             }
                             obj = { fieldName: str };
-                            let tmp14 = closure_14;
-                            obj.primaryType = closure_14(value.primaryValue);
-                            obj.shadowType = closure_14(value.shadowValue);
+                            let tmp14 = outer1_14;
+                            obj.primaryType = outer1_14(value.primaryValue);
+                            obj.shadowType = outer1_14(value.shadowValue);
                             let appendMismatchResult = appendMismatch(obj);
                           }
-                          let iter5 = tmp8();
+                          iter5 = tmp8();
                           iter4 = iter5;
                           tmp9 = iter5;
                           tmp10 = tmp8;
                           tmp11 = value;
                           tmp12 = str;
-                          if (iter5.done) {
-                            break;
-                          } else {
-                            // continue
-                          }
-                        }
+                        } while (!iter5.done);
                       }
                     }
                   }
                 }
                 iter6 = tmp();
-                let tmp2 = tmp9;
-                let tmp3 = tmp10;
-                let tmp4 = tmp11;
-                let tmp5 = tmp12;
+                tmp2 = tmp9;
+                tmp3 = tmp10;
+                tmp4 = tmp11;
+                tmp5 = tmp12;
                 iter2 = iter6;
               } while (!iter6.done);
             }
@@ -498,7 +496,7 @@ function logErrorsToAnalytics(store_name, items) {
             } else {
               return obj;
             }
-          }(value, items);
+          })(value, items);
           if (null != tmp23) {
             const mismatchesByLastAction2 = value.mismatchesByLastAction;
             const result1 = mismatchesByLastAction2.set(lastResult, num2 + 1);
@@ -507,13 +505,13 @@ function logErrorsToAnalytics(store_name, items) {
             ({ numMissingKeys: obj4.num_missing_keys, numExtraKeys: obj4.num_extra_keys } = tmp23);
             const _JSON = JSON;
             obj.mismatched_fields = JSON.stringify(tmp23.mismatchedFields);
-            importDefault(dependencyMap[3]).track(AnalyticEvents.LIBDISCORE_KV_DUAL_READ_ERROR, obj);
-            const obj3 = importDefault(dependencyMap[3]);
+            importDefault(675).track(AnalyticEvents.LIBDISCORE_KV_DUAL_READ_ERROR, obj);
+            const obj3 = importDefault(675);
           }
         }
       }
     }
-    const obj2 = importAll(dependencyMap[2]);
+    const obj2 = importAll(571);
   }
 }
 function getType(arg0) {
@@ -532,23 +530,20 @@ function getType(arg0) {
   }
   return str;
 }
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const map = new Map();
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/libdiscore/stores/DualReadUtils.tsx");
+let map = new Map();
+let result = require("add").fileFinishedImporting("modules/libdiscore/stores/DualReadUtils.tsx");
 
 export const runDualReadValidation = function runDualReadValidation(store_name, Kkv, arg2) {
-  const items = [];
-  const require = items;
+  let items = [];
   arg2((arg0, arg1) => {
-    callback(items, arg0, arg1);
+    outer1_10(items, arg0, arg1);
   });
-  function logErrors(arg0, arg1, items) {
+  (function logErrors(arg0, arg1, items) {
     if (0 !== items.length) {
       items = [];
-      const items1 = [];
-      let closure_2 = 0;
-      const item = items.forEach((type) => {
+      let items1 = [];
+      let c2 = 0;
+      let item = items.forEach((type) => {
         if (closure_2 < 5) {
           closure_2 = closure_2 + 1;
           type = type.type;
@@ -561,11 +556,11 @@ export const runDualReadValidation = function runDualReadValidation(store_name, 
               const mismatches = type.mismatches;
               const item = mismatches.forEach((type) => {
                 if ("field-missing" !== type.type) {
-                  function logDiff(primaryValue, shadowValue) {
+                  (function logDiff(primaryValue, shadowValue) {
                     function impl() { ... }
                     const map = new Map();
                     impl(primaryValue, shadowValue);
-                  }(type.primaryValue, type.shadowValue);
+                  })(type.primaryValue, type.shadowValue);
                 }
               });
             }
@@ -573,7 +568,7 @@ export const runDualReadValidation = function runDualReadValidation(store_name, 
         }
       });
     }
-  }(undefined, undefined, items);
+  })(undefined, undefined, items);
   logErrorsToAnalytics(store_name, items);
 };
 export { doDualReadValidation };

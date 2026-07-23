@@ -1,13 +1,13 @@
-// Module ID: 5895
-// Function ID: 49775
+// Module ID: 5900
+// Function ID: 49804
 // Name: BellSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 5901, 2]
 // Exports: BellSpotIllustration
 
-// Module 5895 (BellSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BellSpotIllustration.native.tsx");
+// Module 5900 (BellSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BellSpotIllustration.native.tsx");
 
 export const BellSpotIllustration = function BellSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const BellSpotIllustration = function BellSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5901) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const BellSpotIllustration = function BellSpotIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

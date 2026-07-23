@@ -1,21 +1,23 @@
-// Module ID: 7082
-// Function ID: 56726
+// Module ID: 7087
+// Function ID: 56760
 // Name: MessageEmbedTypes
-// Dependencies: []
+// Dependencies: [653, 2]
 // Exports: typeToString
 
-// Module 7082 (MessageEmbedTypes)
+// Module 7087 (MessageEmbedTypes)
+import ME from "ME";
+import set from "set";
+
 let MessageEmbedTypes;
-const _module = require(dependencyMap[0]);
-({ ChannelTypes: closure_0, MessageEmbedTypes } = _module);
+let closure_0;
+({ ChannelTypes: closure_0, MessageEmbedTypes } = ME);
 const obj = { MESSAGE: 0, [0]: "MESSAGE", ACTIVITY: 2, [2]: "ACTIVITY", CUSTOM_STATUS: 3, [3]: "CUSTOM_STATUS", GUILD_EVENT: 5, [5]: "GUILD_EVENT", RECOMMENDED_GUILDS: 6, [6]: "RECOMMENDED_GUILDS" };
 const items = [, ];
 ({ MESSAGE: arr[0], CUSTOM_STATUS: arr[1] } = obj);
+let set = new Set(items);
 const items1 = [, ];
 ({ IMAGE: arr2[0], GIFV: arr2[1] } = MessageEmbedTypes);
-const set = new Set(items);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/icymi/ICYMITypes.tsx");
+const result = set.fileFinishedImporting("modules/icymi/ICYMITypes.tsx");
 
 export const ICYMI_PAGE_SIZE = 15;
 export const MIN_ITEMS_FOR_NEW_PILL = 3;

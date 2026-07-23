@@ -1,10 +1,15 @@
 // Module ID: 1855
-// Function ID: 20438
+// Function ID: 20439
 // Name: getEnv
-// Dependencies: []
+// Dependencies: [1856, 653, 44, 1360, 2]
 // Exports: getPremiumTypeFromRawValue, isStaffEnv, isStaffEnvRawData, validatePremiumType
 
 // Module 1855 (getEnv)
+import { Environments } from "Environments";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
 function getEnv(arg0) {
   let str = "production";
   if ("production" === Environments.TEST) {
@@ -15,11 +20,8 @@ function getEnv(arg0) {
   }
   return str;
 }
-const Environments = require(dependencyMap[0]).Environments;
-const _module = require(dependencyMap[1]);
-({ PREMIUM_TYPE_NONE: closure_4, UserFlags: closure_5 } = _module);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user/UserStoreUtils.tsx");
+({ PREMIUM_TYPE_NONE: closure_4, UserFlags: closure_5 } = ME);
+const result = require("invariant").fileFinishedImporting("modules/user/UserStoreUtils.tsx");
 
 export const validatePremiumType = function validatePremiumType(arg0, arg1, premiumType) {
   let tmp = arg0;
@@ -27,7 +29,7 @@ export const validatePremiumType = function validatePremiumType(arg0, arg1, prem
     tmp = undefined === arg1;
   }
   if (!tmp) {
-    importDefault(dependencyMap[2])(premiumType === arg1, "Premium type should not change for non-staff users");
+    importDefault(44)(premiumType === arg1, "Premium type should not change for non-staff users");
   }
 };
 export { getEnv };
@@ -59,8 +61,8 @@ export const isStaffEnvRawData = function isStaffEnvRawData(flags) {
     if (tmp7) {
       let tmp8 = null == flags.flags;
       if (!tmp8) {
-        tmp8 = !require(dependencyMap[3]).hasFlag(flags.flags, constants.STAFF);
-        const obj = require(dependencyMap[3]);
+        tmp8 = !require(1360) /* hasFlag */.hasFlag(flags.flags, constants.STAFF);
+        const obj = require(1360) /* hasFlag */;
       }
       let tmp12 = !tmp8;
       if (tmp8) {

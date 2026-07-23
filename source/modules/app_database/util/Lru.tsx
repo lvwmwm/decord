@@ -1,16 +1,13 @@
-// Module ID: 6708
-// Function ID: 52151
+// Module ID: 6713
+// Function ID: 52183
 // Name: Lru
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 6708 (Lru)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 6713 (Lru)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("modules/app_database/util/Lru.tsx");
-
-export const Lru = () => {
+const tmp2 = (() => {
   class Lru {
     constructor(arg0) {
       tmp = Lru(this, Lru);
@@ -20,14 +17,13 @@ export const Lru = () => {
       return;
     }
   }
-  let closure_0 = Lru;
   let obj = {
     key: "length",
     get() {
       return this.items.size;
     }
   };
-  const items = [obj, , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , ];
   obj = {
     key: "capacity",
     get() {
@@ -128,4 +124,7 @@ export const Lru = () => {
     }
   };
   return callback(Lru, items);
-}();
+})();
+let result = require("set").fileFinishedImporting("modules/app_database/util/Lru.tsx");
+
+export const Lru = tmp2;

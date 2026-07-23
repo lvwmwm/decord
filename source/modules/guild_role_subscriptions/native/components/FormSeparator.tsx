@@ -1,25 +1,26 @@
-// Module ID: 13992
-// Function ID: 106377
+// Module ID: 14106
+// Function ID: 108533
 // Name: FormSeparator
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 // Exports: default
 
-// Module 13992 (FormSeparator)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 } };
-obj = { "Null": 0, "Null": "#dfdfdf", backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-obj.separator = obj;
-let closure_2 = obj.createStyles(obj);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormSeparator.tsx");
+// Module 14106 (FormSeparator)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+_createForOfIteratorHelperLoose = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 } };
+_createForOfIteratorHelperLoose = { width: "100%", height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.separator = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormSeparator.tsx");
 
 export default function FormSeparator(arg0) {
   let style;
   let withoutMargins;
   ({ style, withoutMargins } = arg0);
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   const items = [tmp.container, , ];
   let margins;
@@ -30,6 +31,6 @@ export default function FormSeparator(arg0) {
   items[2] = style;
   obj.style = items;
   obj = { style: tmp.separator };
-  obj.children = <View {...obj} />;
-  return <View {...obj} />;
+  obj.children = <View style={tmp.separator} />;
+  return <View style={tmp.separator} />;
 };

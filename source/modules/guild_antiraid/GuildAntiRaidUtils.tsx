@@ -1,39 +1,42 @@
-// Module ID: 7696
-// Function ID: 61384
+// Module ID: 7702
+// Function ID: 61421
 // Name: hasDetectedRaid
-// Dependencies: []
+// Dependencies: [7703, 3712, 7704, 1212, 2]
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown
 
-// Module 7696 (hasDetectedRaid)
+// Module 7702 (hasDetectedRaid)
+import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY";
+
+let closure_3;
+let closure_4;
+let closure_5;
 function hasDetectedRaid(raidDetectedAt) {
   let tmp = null != raidDetectedAt.raidDetectedAt;
   if (tmp) {
-    const obj = importDefault(dependencyMap[1])(raidDetectedAt.raidDetectedAt);
-    tmp = importDefault(dependencyMap[1])(raidDetectedAt.raidDetectedAt).add(closure_3, "hours") > importDefault(dependencyMap[1])();
-    const addResult = importDefault(dependencyMap[1])(raidDetectedAt.raidDetectedAt).add(closure_3, "hours");
+    const obj = importDefault(3712)(raidDetectedAt.raidDetectedAt);
+    tmp = importDefault(3712)(raidDetectedAt.raidDetectedAt).add(closure_3, "hours") > importDefault(3712)();
+    const addResult = importDefault(3712)(raidDetectedAt.raidDetectedAt).add(closure_3, "hours");
   }
   return tmp;
 }
-const _module = require(dependencyMap[0]);
-({ NAGBAR_DISPLAY_MAX_HOURS: closure_3, DEFAULT_LOCKDOWN_DURATION: closure_4, getTimeframes: closure_5 } = _module);
-const obj = {};
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidUtils.tsx");
+({ NAGBAR_DISPLAY_MAX_HOURS: closure_3, DEFAULT_LOCKDOWN_DURATION: closure_4, getTimeframes: closure_5 } = GUILD_REPORT_RAID_MOBILE_KEY);
+let obj = { month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" };
+const result = require("GuildIncidentActionSources").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidUtils.tsx");
 
 export const DATE_CONFIG = obj;
 export const hasDetectedActivity = function hasDetectedActivity(stateFromStores1) {
   let tmp = null != stateFromStores1.dmSpamDetectedAt;
   if (tmp) {
-    const obj = importDefault(dependencyMap[1])(stateFromStores1.dmSpamDetectedAt);
-    tmp = importDefault(dependencyMap[1])(stateFromStores1.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(dependencyMap[1])();
-    const addResult = importDefault(dependencyMap[1])(stateFromStores1.dmSpamDetectedAt).add(closure_3, "hours");
+    const obj = importDefault(3712)(stateFromStores1.dmSpamDetectedAt);
+    tmp = importDefault(3712)(stateFromStores1.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(3712)();
+    const addResult = importDefault(3712)(stateFromStores1.dmSpamDetectedAt).add(closure_3, "hours");
   }
   if (!tmp) {
     let tmp6 = null != stateFromStores1.raidDetectedAt;
     if (tmp6) {
-      const obj2 = importDefault(dependencyMap[1])(stateFromStores1.raidDetectedAt);
-      tmp6 = importDefault(dependencyMap[1])(stateFromStores1.raidDetectedAt).add(closure_3, "hours") > importDefault(dependencyMap[1])();
-      const addResult1 = importDefault(dependencyMap[1])(stateFromStores1.raidDetectedAt).add(closure_3, "hours");
+      const obj2 = importDefault(3712)(stateFromStores1.raidDetectedAt);
+      tmp6 = importDefault(3712)(stateFromStores1.raidDetectedAt).add(closure_3, "hours") > importDefault(3712)();
+      const addResult1 = importDefault(3712)(stateFromStores1.raidDetectedAt).add(closure_3, "hours");
     }
     tmp = tmp6;
   }
@@ -43,35 +46,35 @@ export { hasDetectedRaid };
 export const hasDetectedDMRaid = function hasDetectedDMRaid(dmSpamDetectedAt) {
   let tmp = null != dmSpamDetectedAt.dmSpamDetectedAt;
   if (tmp) {
-    const obj = importDefault(dependencyMap[1])(dmSpamDetectedAt.dmSpamDetectedAt);
-    tmp = importDefault(dependencyMap[1])(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(dependencyMap[1])();
-    const addResult = importDefault(dependencyMap[1])(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours");
+    const obj = importDefault(3712)(dmSpamDetectedAt.dmSpamDetectedAt);
+    tmp = importDefault(3712)(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(3712)();
+    const addResult = importDefault(3712)(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours");
   }
   return tmp;
 };
 export const getIncidentAlertType = function getIncidentAlertType(guildIncident) {
   if (null != guildIncident) {
-    const GuildIncidentAlertTypes = require(dependencyMap[2]).GuildIncidentAlertTypes;
+    const GuildIncidentAlertTypes = require(7704) /* GuildIncidentActionSources */.GuildIncidentAlertTypes;
     const tmp2 = hasDetectedRaid(guildIncident);
   }
 };
 export const getEnabledInterventions = function getEnabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   if (pauseInvites) {
-    items.push(require(dependencyMap[2]).GuildIncidentActionTypes.INVITES_DISABLED);
+    items.push(require(7704) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
   }
   if (pauseDms) {
-    items.push(require(dependencyMap[2]).GuildIncidentActionTypes.DMS_DISABLED);
+    items.push(require(7704) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
 };
 export const getDisabledInterventions = function getDisabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   if (!pauseInvites) {
-    items.push(require(dependencyMap[2]).GuildIncidentActionTypes.INVITES_DISABLED);
+    items.push(require(7704) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
   }
   if (!pauseDms) {
-    items.push(require(dependencyMap[2]).GuildIncidentActionTypes.DMS_DISABLED);
+    items.push(require(7704) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
 };
@@ -132,7 +135,6 @@ export const initialLockdownDurationHours = function initialLockdownDurationHour
   if (null != stateFromStores) {
     prop = stateFromStores.lockdownDurationHours;
   }
-  const require = prop;
   if (null == prop) {
     prop = closure_4;
   } else {
@@ -153,26 +155,26 @@ export const getSecurityActionDetailsString = function getSecurityActionDetailsS
       tmp = tmp27;
     }
     if (tmp === true) {
-      const intl3 = require(dependencyMap[3]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       let obj = { guildName };
       const _Date3 = Date;
       const date = new Date(invitesDisabledUntil);
-      obj.time = date.toLocaleString(require(dependencyMap[3]).intl.currentLocale, obj);
-      return intl3.formatToPlainString(require(dependencyMap[3]).t.hCZitf, obj);
+      obj.time = date.toLocaleString(require(1212) /* getSystemLocale */.intl.currentLocale, obj);
+      return intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.hCZitf, obj);
     } else if (tmp26 === true) {
-      const intl2 = require(dependencyMap[3]).intl;
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       obj = { guildName };
       const _Date2 = Date;
       const date1 = new Date(invitesDisabledUntil);
-      obj.time = date1.toLocaleString(require(dependencyMap[3]).intl.currentLocale, obj);
-      return intl2.formatToPlainString(require(dependencyMap[3]).t.HNKxf+, obj);
+      obj.time = date1.toLocaleString(require(1212) /* getSystemLocale */.intl.currentLocale, obj);
+      return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["HNKxf+"], obj);
     } else if (tmp27 === true) {
-      const intl = require(dependencyMap[3]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       obj = { guildName };
       const _Date = Date;
       const date2 = new Date(invitesDisabledUntil);
-      obj.time = date2.toLocaleString(require(dependencyMap[3]).intl.currentLocale, obj);
-      return intl.formatToPlainString(require(dependencyMap[3]).t.M3iSyL, obj);
+      obj.time = date2.toLocaleString(require(1212) /* getSystemLocale */.intl.currentLocale, obj);
+      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.M3iSyL, obj);
     } else {
       return "";
     }

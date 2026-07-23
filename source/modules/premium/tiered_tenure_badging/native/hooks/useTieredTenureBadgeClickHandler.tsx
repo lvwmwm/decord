@@ -1,33 +1,36 @@
-// Module ID: 8521
-// Function ID: 67930
+// Module ID: 8527
+// Function ID: 67967
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: []
+// Dependencies: [31, 1849, 1851, 8528, 653, 5512, 8529, 6877, 566, 5796, 4098, 8530, 1934, 8530, 675, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 8521 (useTieredTenureBadgeClickHandler)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const PremiumTypes = arg1(dependencyMap[2]).PremiumTypes;
-const DEFAULT_PREMIUM_BADGE_ID = arg1(dependencyMap[3]).DEFAULT_PREMIUM_BADGE_ID;
-({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = arg1(dependencyMap[4]));
-const UserProfileThemeTypes = arg1(dependencyMap[5]).UserProfileThemeTypes;
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/premium/tiered_tenure_badging/native/hooks/useTieredTenureBadgeClickHandler.tsx");
+// Module 8527 (useTieredTenureBadgeClickHandler)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PremiumTypes } from "GuildFeatures";
+import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID";
+import ME from "ME";
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = ME);
+const result = require("GuildFeatures").fileFinishedImporting("modules/premium/tiered_tenure_badging/native/hooks/useTieredTenureBadgeClickHandler.tsx");
 
 export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeClickHandler(id, userId, themeType) {
-  userId = id;
-  const importDefault = userId;
+  const _require = id;
+  let closure_1 = userId;
   const dependencyMap = themeType;
-  const isPremiumSubscriber = userId(dependencyMap[6]).useIsPremiumSubscriber(PremiumTypes.TIER_2);
-  const React = isPremiumSubscriber;
+  const isPremiumSubscriber = _require(8529).useIsPremiumSubscriber(PremiumTypes.TIER_2);
   let tmp2 = "string" === typeof id;
   if (tmp2) {
-    tmp2 = null != userId(dependencyMap[7]).getTieredTenureBadge(id);
-    const obj2 = userId(dependencyMap[7]);
+    tmp2 = null != _require(6877).getTieredTenureBadge(id);
+    const obj2 = _require(6877);
   }
-  const obj = userId(dependencyMap[6]);
-  const items = [closure_4];
-  const stateFromStores = userId(dependencyMap[8]).useStateFromStores(items, () => tmp2.getCurrentUser());
+  let obj = _require(8529);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => tmp2.getCurrentUser());
   let tmp7 = id === DEFAULT_PREMIUM_BADGE_ID;
   if (tmp7) {
     id = undefined;
@@ -42,26 +45,25 @@ export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeCli
   if (!tmp2) {
     tmp2 = tmp7;
   }
-  closure_4 = tmp2;
+  _isNativeReflectConstruct = tmp2;
   const items1 = [themeType, userId, tmp2, id, isPremiumSubscriber];
   let callback = null;
   if (tmp2) {
-    callback = React.useCallback(() => {
-      if (arg2 === constants3.YOU_SCREEN) {
-        let obj = { screen: constants2.PREMIUM };
-        arg0(arg2[9]).openUserSettings(obj);
-        const obj3 = arg0(arg2[9]);
+    callback = isPremiumSubscriber.useCallback(() => {
+      if (themeType === outer1_9.YOU_SCREEN) {
+        let obj = { screen: outer1_8.PREMIUM };
+        id(themeType[9]).openUserSettings(obj);
+        const obj3 = id(themeType[9]);
       } else {
-        obj = arg1(arg2[10]);
-        const tmp4 = arg0(arg2[12])(arg2[11], arg2.paths);
-        obj = { userId: arg1 };
-        obj.openLazy(tmp4, arg0(arg2[13]).TIERED_TENURE_BADGE_ACTION_SHEET_KEY, obj, "stack");
-        const tmp2 = arg2;
+        obj = userId(themeType[10]);
+        const tmp4 = id(themeType[12])(themeType[11], themeType.paths);
+        obj = { userId };
+        obj.openLazy(tmp4, id(themeType[13]).TIERED_TENURE_BADGE_ACTION_SHEET_KEY, obj, "stack");
       }
-      if (tmp2) {
-        const obj1 = { badge: arg0, viewed_user_id: arg1, premium_type: isPremiumSubscriber };
-        arg1(arg2[14]).track(constants.TIERED_TENURE_BADGE_CLICKED, obj1);
-        const obj5 = arg1(arg2[14]);
+      if (_isNativeReflectConstruct) {
+        const obj1 = { badge: id, viewed_user_id: userId, premium_type: isPremiumSubscriber };
+        userId(themeType[14]).track(outer1_7.TIERED_TENURE_BADGE_CLICKED, obj1);
+        const obj5 = userId(themeType[14]);
       }
     }, items1);
   }

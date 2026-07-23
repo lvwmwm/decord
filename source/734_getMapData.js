@@ -1,13 +1,13 @@
 // Module ID: 734
-// Function ID: 8771
+// Function ID: 8772
 // Name: getMapData
-// Dependencies: []
+// Dependencies: [735]
 
 // Module 734 (getMapData)
 
 export default function getMapData(__data__) {
   __data__ = __data__.__data__;
-  if (require(dependencyMap[0])(arg1)) {
+  if (require(735) /* isKeyable */(arg1)) {
     let str = "hash";
     if ("string" === typeof arg1) {
       str = "string";

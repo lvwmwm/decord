@@ -1,10 +1,13 @@
-// Module ID: 4364
-// Function ID: 38736
+// Module ID: 4368
+// Function ID: 38768
 // Name: isTablet
-// Dependencies: []
+// Dependencies: [646, 2]
 
-// Module 4364 (isTablet)
-const set = new Set(["updatePermissionOverwrite", null, null, null, null]);
+// Module 4368 (isTablet)
+import { product } from "capitalize";
+import set from "set";
+
+let set = new Set(["iPad", "Kindle", "Kindle Fire", "Nook", "PlayBook"]);
 let platform;
 if (null != window) {
   const _navigator = window.navigator;
@@ -33,7 +36,6 @@ if (tmp3) {
   }
   tmp3 = maxTouchPoints > 1;
 }
-const product = importDefault(dependencyMap[0]).product;
 let str = "";
 let str2 = "";
 if (null != product) {
@@ -43,8 +45,8 @@ const tmp6 = set.has(str2) || tmp3;
 let hasItem = !tmp6;
 if (hasItem) {
   let family;
-  if (null != importDefault(dependencyMap[0])) {
-    const os = importDefault(dependencyMap[0]).os;
+  if (null != require("capitalize")) {
+    const os = require("capitalize").os;
     if (null != os) {
       family = os.family;
     }
@@ -55,21 +57,20 @@ if (hasItem) {
   hasItem = set1.has(str);
 }
 let family1;
-if (null != importDefault(dependencyMap[0])) {
-  const os2 = importDefault(dependencyMap[0]).os;
+if (null != require("capitalize")) {
+  const os2 = require("capitalize").os;
   if (null != os2) {
     family1 = os2.family;
   }
 }
 let family2;
-if (null != importDefault(dependencyMap[0])) {
-  const os3 = importDefault(dependencyMap[0]).os;
+if (null != require("capitalize")) {
+  const os3 = require("capitalize").os;
   if (null != os3) {
     family2 = os3.family;
   }
 }
-const set1 = new Set(["obscureBackground", "hideNavigationBar", "onFocus"]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/shared/lib/PlatformUtils.tsx");
+const result = set.fileFinishedImporting("../discord_common/js/shared/lib/PlatformUtils.tsx");
 
 export const isTablet = tmp6;
 export const isMobile = hasItem;

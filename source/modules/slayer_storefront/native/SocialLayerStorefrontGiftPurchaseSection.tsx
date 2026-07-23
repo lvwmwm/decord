@@ -1,59 +1,60 @@
-// Module ID: 9741
-// Function ID: 75768
+// Module ID: 9748
+// Function ID: 75809
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: []
+// Dependencies: [57, 31, 27, 6663, 1849, 653, 1851, 33, 4130, 689, 5160, 5470, 566, 5450, 491, 4559, 675, 9749, 9739, 477, 686, 9734, 1212, 9744, 5459, 4543, 2]
 // Exports: default
 
-// Module 9741 (SocialLayerStorefrontGiftPurchaseSection)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const useNativeCheckoutStore = arg1(dependencyMap[3]).useNativeCheckoutStore;
-let closure_7 = importDefault(dependencyMap[4]);
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-const GiftingOrigin = arg1(dependencyMap[6]).GiftingOrigin;
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
-const tmp2 = arg1(dependencyMap[7]);
-let closure_12 = arg1(dependencyMap[8]).createStyles((arg0) => {
+// Module 9748 (SocialLayerStorefrontGiftPurchaseSection)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { useNativeCheckoutStore } from "context";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { GiftingOrigin } from "GuildFeatures";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+const require = arg1;
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+let closure_12 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { paddingBottom: importDefault(dependencyMap[9]).space.PX_12 + arg0, paddingTop: importDefault(dependencyMap[9]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_16, gap: importDefault(dependencyMap[9]).space.PX_8, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW };
-  const merged = Object.assign(importDefault(dependencyMap[9]).shadows.SHADOW_TOP_HIGH);
+  obj = { paddingBottom: importDefault(689).space.PX_12 + arg0, paddingTop: importDefault(689).space.PX_12, paddingHorizontal: importDefault(689).space.PX_16, gap: importDefault(689).space.PX_8, backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
+  const merged = Object.assign(importDefault(689).shadows.SHADOW_TOP_HIGH);
   obj.container = obj;
-  obj = { position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, location: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[9]).space.PX_4 };
+  obj = { display: "flex", flexDirection: "column", gap: importDefault(689).space.PX_4 };
   obj.legalCopy = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftPurchaseSection.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftPurchaseSection.tsx");
 
 export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
   let analyticsLocations;
+  let _slicedToArray;
   const skuId = disabled.skuId;
-  const arg1 = skuId;
   const sku = disabled.sku;
-  const importDefault = sku;
   const giftOptions = disabled.giftOptions;
-  const dependencyMap = giftOptions;
-  ({ giftingOrigin: closure_3, analyticsLocations } = disabled);
-  const React = analyticsLocations;
+  ({ giftingOrigin: _slicedToArray, analyticsLocations } = disabled);
   let closure_5;
   let useNativeCheckoutStore;
-  let closure_7;
+  let memo;
   let closure_8;
   let closure_9;
   let callback;
   let closure_11;
-  const tmp = callback2(importDefault(dependencyMap[10])().insets.bottom);
-  let obj = arg1(dependencyMap[11]);
+  const tmp = callback2(sku(giftOptions[10])().insets.bottom);
+  let obj = skuId(giftOptions[11]);
   let applicationId;
   if (null != sku) {
     applicationId = sku.applicationId;
   }
   const getOrFetchApplication = obj.useGetOrFetchApplication(applicationId);
-  let obj1 = arg1(dependencyMap[12]);
-  const items = [closure_7];
+  let obj1 = skuId(giftOptions[12]);
+  const items = [memo];
   closure_5 = obj1.useStateFromStores(items, () => memo.getUser(giftOptions.recipient_id));
-  const tmp4 = importDefault(dependencyMap[13])(() => skuId(giftOptions[14]).v4());
+  const tmp4 = sku(giftOptions[13])(() => skuId(giftOptions[14]).v4());
   useNativeCheckoutStore = tmp4;
   const items1 = [analyticsLocations, skuId, , , , ];
   let type;
@@ -72,8 +73,8 @@ export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
   }
   items1[4] = applicationId1;
   items1[5] = tmp4;
-  const memo = React.useMemo(() => {
-    const obj = { location_stack: analyticsLocations, sku_id: skuId };
+  memo = analyticsLocations.useMemo(() => {
+    const obj = { is_gift: true, location_stack: analyticsLocations, payment_type: "sku", sku_id: skuId };
     let type;
     if (null != sku) {
       type = sku.type;
@@ -82,7 +83,6 @@ export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
     let productLine;
     if (null != sku) {
       productLine = sku.productLine;
-      const tmp4 = sku;
     }
     obj.sku_product_line = productLine;
     let applicationId;
@@ -90,14 +90,13 @@ export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
       applicationId = sku.applicationId;
     }
     obj.application_id = applicationId;
-    obj.load_id = tmp4;
+    obj.load_id = c6;
     return obj;
   }, items1);
-  closure_7 = memo;
-  const tmp10 = callback(React.useState(false), 2);
+  let tmp10 = callback(analyticsLocations.useState(false), 2);
   closure_8 = tmp10[1];
-  closure_9 = React.useRef("not_started");
-  let obj2 = arg1(dependencyMap[15]);
+  closure_9 = analyticsLocations.useRef("not_started");
+  let obj2 = skuId(giftOptions[15]);
   const unmountEffect = obj2.useUnmountEffect(() => {
     if ("pending" === closure_9.current) {
       sku(giftOptions[16]).track(lib.PAYMENT_FLOW_CANCELED, memo);
@@ -105,7 +104,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
     }
   });
   const items2 = [memo];
-  callback = React.useCallback(() => {
+  callback = analyticsLocations.useCallback(() => {
     if ("pending" === closure_9.current) {
       closure_9.current = "failed";
       sku(giftOptions[16]).track(lib.PAYMENT_FLOW_FAILED, memo);
@@ -114,9 +113,9 @@ export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
     lib(false);
   }, items2);
   const tmp13 = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
-  importDefault(dependencyMap[17])(tmp13, giftOptions);
+  sku(giftOptions[17])(tmp13, giftOptions);
   const items3 = [giftOptions];
-  const memo1 = React.useMemo(() => ({ isGift: true, options: giftOptions }), items3);
+  const memo1 = analyticsLocations.useMemo(() => ({ isGift: true, options: giftOptions }), items3);
   obj = { skuId, sku, giftParams: memo1, analyticsLoadId: tmp4, analyticsLocations };
   let id;
   if (null != tmp13) {
@@ -134,9 +133,9 @@ export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
     lib(false);
     let tmp7 = null == giftOptions.recipient_id;
     if (!tmp7) {
-      let tmp10 = closure_3 !== closure_9.USER_PROFILE_WISHLIST;
+      let tmp10 = _slicedToArray !== closure_9.USER_PROFILE_WISHLIST;
       if (tmp10) {
-        tmp10 = closure_3 !== closure_9.DM_CHANNEL_WISHLIST;
+        tmp10 = _slicedToArray !== closure_9.DM_CHANNEL_WISHLIST;
       }
       tmp7 = tmp10;
     }
@@ -164,20 +163,23 @@ export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
   obj.onPurchasePending = function onPurchasePending() {
 
   };
-  closure_11 = importDefault(dependencyMap[18])(obj);
-  const intl = arg1(dependencyMap[22]).intl;
-  const stringResult = intl.string(arg1(dependencyMap[22]).t.ouo4FK);
+  closure_11 = sku(giftOptions[18])(obj);
+  const intl = skuId(giftOptions[22]).intl;
+  const stringResult = intl.string(skuId(giftOptions[22]).t.ouo4FK);
   obj = { style: tmp.container };
   obj1 = { style: tmp.legalCopy };
-  const tmp16 = importDefault(dependencyMap[18]);
+  const tmp16 = sku(giftOptions[18]);
   const tmp19 = closure_11;
   const tmp21 = callback;
   let tmp22;
   if (null != getOrFetchApplication) {
     tmp22 = getOrFetchApplication;
   }
-  const mobileFinePrintMessageForApplication = arg1(dependencyMap[23]).getMobileFinePrintMessageForApplication(tmp22, stringResult, { shouldAppendDisclaimer: true });
-  obj1.children = mobileFinePrintMessageForApplication.map((children) => callback(skuId(giftOptions[24]).TextWithIOSLinkWorkaround, { children }, arg1));
+  const mobileFinePrintMessageForApplication = skuId(giftOptions[23]).getMobileFinePrintMessageForApplication(tmp22, stringResult, { shouldAppendDisclaimer: true });
+  obj1.children = mobileFinePrintMessageForApplication.map((children) => {
+    const obj = { variant: "text-xs/normal", color: "text-muted", children };
+    return callback(skuId(giftOptions[24]).TextWithIOSLinkWorkaround, obj, arg1);
+  });
   const items4 = [tmp21(closure_5, obj1), ];
   obj2 = {
     variant: "active",
@@ -192,7 +194,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(disabled) {
       callback().catch(callback);
     }
   };
-  items4[1] = callback(arg1(dependencyMap[25]).Button, obj2);
+  items4[1] = callback(skuId(giftOptions[25]).Button, obj2);
   obj.children = items4;
   return tmp19(closure_5, obj);
 };

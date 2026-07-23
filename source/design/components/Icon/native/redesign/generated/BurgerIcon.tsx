@@ -1,26 +1,26 @@
-// Module ID: 13420
-// Function ID: 101927
+// Module ID: 13534
+// Function ID: 104083
 // Name: BurgerIcon
-// Dependencies: [1056964629, 2063597588, 33554453, 1979711488, 31, 33]
+// Dependencies: [31, 33, 689, 3833, 13535, 2]
 // Exports: BurgerIcon
 
-// Module 13420 (BurgerIcon)
-import module_33 from "module_33";
+// Module 13534 (BurgerIcon)
+import "result";
+import { jsx } from "jsxProd";
 
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = module_33.fileFinishedImporting("design/components/Icon/native/redesign/generated/BurgerIcon.tsx");
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/BurgerIcon.tsx");
 
 export const BurgerIcon = function BurgerIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13535) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13535) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

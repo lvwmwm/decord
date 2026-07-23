@@ -1,61 +1,62 @@
-// Module ID: 3776
-// Function ID: 29229
+// Module ID: 3778
+// Function ID: 29234
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 566, 686, 2]
 
-// Module 3776 (_isNativeReflectConstruct)
+// Module 3778 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { FallbackCurrencyCountry } from "ME";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
 function handlePaymentSourceCreateEnd() {
-  let closure_11 = false;
+  let c11 = false;
 }
 function handlePaymentSourcesFetchEnd() {
-  let closure_6;
+  let c6;
 }
 function handleSubscriptionFetchEnd() {
-  let closure_14 = false;
+  let c14 = false;
 }
 function handleSubscriptionUpdateStart() {
-  let closure_15 = true;
+  let c15 = true;
 }
 function handleSubscriptionUpdateEnd() {
-  let closure_15 = false;
+  let c15 = false;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const FallbackCurrencyCountry = arg1(dependencyMap[5]).FallbackCurrencyCountry;
-let closure_11 = false;
-let closure_12 = false;
-let closure_13 = false;
-let closure_14 = false;
-let closure_15 = false;
-let closure_16 = null;
-let closure_17 = null;
-let closure_18 = false;
-let closure_19 = false;
-let tmp2 = (Store) => {
+let c11 = false;
+let c12 = false;
+let c13 = false;
+let c14 = false;
+let c15 = false;
+let c16 = null;
+let c17 = null;
+let c18 = false;
+let c19 = false;
+let tmp2 = ((Store) => {
   class BillingInfoStore {
     constructor() {
       self = this;
       tmp = BillingInfoStore(this, BillingInfoStore);
-      obj = closure_3(BillingInfoStore);
-      tmp2 = closure_2;
-      if (closure_20()) {
+      obj = outer1_3(BillingInfoStore);
+      tmp2 = outer1_2;
+      if (outer1_20()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -64,20 +65,19 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = BillingInfoStore;
   callback2(BillingInfoStore, Store);
   let obj = {
     key: "isBusy",
     get() {
-      let tmp = closure_11;
-      if (!closure_11) {
-        tmp = closure_12;
+      let tmp = outer1_11;
+      if (!outer1_11) {
+        tmp = outer1_12;
       }
       if (!tmp) {
-        tmp = closure_15;
+        tmp = outer1_15;
       }
       if (!tmp) {
-        tmp = closure_13;
+        tmp = outer1_13;
       }
       return tmp;
     }
@@ -86,14 +86,14 @@ let tmp2 = (Store) => {
   obj = {
     key: "isUpdatingPaymentSource",
     get() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[1] = obj;
   obj = {
     key: "isRemovingPaymentSource",
     get() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[2] = obj;
@@ -106,122 +106,122 @@ let tmp2 = (Store) => {
   items[4] = {
     key: "isSubscriptionFetching",
     get() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[5] = {
     key: "isPaymentSourceFetching",
     get() {
-      return null != closure_6;
+      return null != outer1_6;
     }
   };
   items[6] = {
     key: "editSourceError",
     get() {
-      return closure_16;
+      return outer1_16;
     }
   };
   items[7] = {
     key: "removeSourceError",
     get() {
-      return closure_17;
+      return outer1_17;
     }
   };
   items[8] = {
     key: "ipCountryCodeLoaded",
     get() {
-      return undefined !== closure_7;
+      return undefined !== outer1_7;
     }
   };
   items[9] = {
     key: "ipCountryCode",
     get() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[10] = {
     key: "ipCountryCodeRequest",
     get() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[11] = {
     key: "ipLocationLoaded",
     get() {
-      return undefined !== closure_9;
+      return undefined !== outer1_9;
     }
   };
   items[12] = {
     key: "ipLocation",
     get() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[13] = {
     key: "ipLocationRequest",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[14] = {
     key: "ipLocationHasError",
     get() {
-      return closure_19;
+      return outer1_19;
     }
   };
   items[15] = {
     key: "ipCountryCodeWithFallback",
     get() {
-      return null != closure_7 ? closure_7 : closure_5;
+      return null != outer1_7 ? outer1_7 : outer1_5;
     }
   };
   items[16] = {
     key: "ipCountryCodeHasError",
     get() {
-      return closure_18;
+      return outer1_18;
     }
   };
   items[17] = {
     key: "paymentSourcesFetchRequest",
     get() {
-      return closure_6;
+      return outer1_6;
     }
   };
   return callback(BillingInfoStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "BillingInfoStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   BILLING_PAYMENT_SOURCE_CREATE_START: function handlePaymentSourceCreateStart() {
-    let closure_11 = true;
+    let c11 = true;
   },
   BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: handlePaymentSourceCreateEnd,
   BILLING_PAYMENT_SOURCE_CREATE_FAIL: handlePaymentSourceCreateEnd,
   STRIPE_TOKEN_FAILURE: handlePaymentSourceCreateEnd,
   BILLING_PAYMENT_SOURCE_REMOVE_START: function handlePaymentSourceRemoveStart() {
-    let closure_13 = true;
+    let c13 = true;
   },
   BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: function handlePaymentSourceRemoveSuccess() {
-    let closure_13 = false;
+    let c13 = false;
   },
   BILLING_PAYMENT_SOURCE_REMOVE_FAIL: function handlePaymentSourceRemoveFail(error) {
-    let closure_13 = false;
+    let c13 = false;
     error = error.error;
   },
   BILLING_PAYMENT_SOURCE_REMOVE_CLEAR_ERROR: function handleClearRemoveError() {
-    let closure_17 = null;
+    let c17 = null;
   },
   BILLING_PAYMENT_SOURCE_UPDATE_START: function handlePaymentSourceUpdateStart() {
-    let closure_12 = true;
+    let c12 = true;
   },
   BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: function handlePaymentSourceUpdateSuccess() {
-    let closure_12 = false;
+    let c12 = false;
   },
   BILLING_PAYMENT_SOURCE_UPDATE_FAIL: function handlePaymentSourceUpdateFail(error) {
-    let closure_12 = false;
+    let c12 = false;
     error = error.error;
   },
   BILLING_PAYMENT_SOURCE_UPDATE_CLEAR_ERROR: function handleClearUpdateError() {
-    let closure_16 = null;
+    let c16 = null;
   },
   BILLING_PAYMENT_SOURCES_FETCH_START: function handlePaymentSourcesFetchStart(request) {
     request = request.request;
@@ -229,7 +229,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
   BILLING_PAYMENT_SOURCES_FETCH_SUCCESS: handlePaymentSourcesFetchEnd,
   BILLING_PAYMENT_SOURCES_FETCH_FAIL: handlePaymentSourcesFetchEnd,
   BILLING_SUBSCRIPTION_FETCH_START: function handleSubscriptionFetchStart() {
-    let closure_14 = true;
+    let c14 = true;
   },
   BILLING_SUBSCRIPTION_FETCH_SUCCESS: handleSubscriptionFetchEnd,
   BILLING_SUBSCRIPTION_FETCH_FAIL: handleSubscriptionFetchEnd,
@@ -246,8 +246,8 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     countryCode = countryCode.countryCode;
   },
   BILLING_IP_COUNTRY_CODE_FAILURE: function handleIpCountryCodeFailure() {
-    let closure_7 = null;
-    let closure_18 = true;
+    let c7 = null;
+    let c18 = true;
   },
   BILLING_IP_LOCATION_FETCH_START: function handleIpLocationFetchStart(request) {
     request = request.request;
@@ -256,24 +256,24 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     location = location.location;
   },
   BILLING_IP_LOCATION_FAILURE: function handleIpLocationFailure() {
-    let closure_9 = null;
-    let closure_19 = true;
+    let c9 = null;
+    let c19 = true;
   },
   LOGOUT: function handleLogout() {
-    let closure_6;
-    let closure_8;
-    let closure_7;
-    let closure_18 = false;
-    let closure_9;
-    let closure_19 = false;
-    let closure_10;
-    let closure_17 = null;
-    let closure_16 = null;
+    let c6;
+    let c8;
+    let c7;
+    let c18 = false;
+    let c9;
+    let c19 = false;
+    let c10;
+    let c17 = null;
+    let c16 = null;
   },
   CONNECTION_OPEN: function handleConnectionOpen(countryCode) {
     countryCode = countryCode.countryCode;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("stores/billing/BillingInfoStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/billing/BillingInfoStore.tsx");
 
 export default tmp2;

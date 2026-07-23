@@ -1,42 +1,48 @@
-// Module ID: 12215
-// Function ID: 93794
+// Module ID: 12329
+// Function ID: 95945
 // Name: GuildPreview
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 3974, 4126, 1212, 5515, 2]
 // Exports: default
 
-// Module 12215 (GuildPreview)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: {} };
-obj = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.borderColor = obj;
-obj.title = {};
-const obj1 = { disableNewIOSPicker: "-3", useInAppMessageSoundsEnabled: "unflip", video_game: "unflip", mediaType: "-4", videoQuality: "tts", quality: "tts", maxWidth: "-6", borderRadius: importDefault(dependencyMap[4]).radii.sm };
-obj.guildContainer = obj1;
-obj.guildInfo = { marginLeft: 8 };
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsGuildPreviewElement.tsx");
+// Module 12329 (GuildPreview)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 } };
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+_createForOfIteratorHelperLoose.borderColor = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.title = { lineHeight: 16, marginBottom: 8 };
+let obj1 = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, padding: 12 };
+_createForOfIteratorHelperLoose.guildContainer = obj1;
+_createForOfIteratorHelperLoose.guildInfo = { marginLeft: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsGuildPreviewElement.tsx");
 
 export default function GuildPreview(guild) {
   guild = guild.guild;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[5]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(3974) /* hexToRgb */;
   obj = { style: tmp.container };
-  obj = { 9223372036854775807: true, 0: true, 0: true, style: tmp.title };
-  const intl = arg1(dependencyMap[7]).intl;
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
+  const intl = require(1212) /* getSystemLocale */.intl;
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
-  obj.children = intl.string(arg1(dependencyMap[7]).t.0ox7Hq).toUpperCase();
-  const items = [callback(arg1(dependencyMap[6]).Text, obj), ];
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["0ox7Hq"]).toUpperCase();
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
   const obj1 = { style: items1 };
-  const items1 = [tmp.guildContainer, { borderColor: hexWithOpacityResult }];
+  items1 = [tmp.guildContainer, { borderColor: hexWithOpacityResult }];
   const obj2 = {};
-  const str = intl.string(arg1(dependencyMap[7]).t.0ox7Hq);
-  obj2.size = arg1(dependencyMap[8]).GuildIconSizes.LARGE;
+  const str = intl.string(require(1212) /* getSystemLocale */.t["0ox7Hq"]);
+  obj2.size = require(5515) /* makeSizeStyle */.GuildIconSizes.LARGE;
   obj2.guild = guild;
-  const items2 = [callback(importDefault(dependencyMap[8]), obj2), callback(arg1(dependencyMap[6]).Text, { style: tmp.guildInfo, children: guild.name })];
+  const items2 = [callback(importDefault(5515), obj2), ];
+  const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name };
+  items2[1] = callback(require(4126) /* Text */.Text, obj3);
   obj1.children = items2;
   items[1] = callback2(View, obj1);
   obj.children = items;

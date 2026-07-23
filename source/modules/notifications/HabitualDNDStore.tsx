@@ -1,9 +1,18 @@
-// Module ID: 12531
-// Function ID: 96226
+// Module ID: 12645
+// Function ID: 98382
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4810, 653, 664, 3803, 686, 566, 2]
 
-// Module 12531 (_isNativeReflectConstruct)
+// Module 12645 (_isNativeReflectConstruct)
+import ME from "ME";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { StatusTypes } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,33 +27,26 @@ function hasBeenUsingDND() {
   if (someResult) {
     someResult = arr.some((arg0) => {
       const timestamp = Date.now();
-      return arg0 < timestamp - 3 * callback(closure_2[7]).Millis.DAY;
+      return arg0 < timestamp - 3 * outer1_1(outer1_2[7]).Millis.DAY;
     });
   }
   return someResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const StatusTypes = arg1(dependencyMap[6]).StatusTypes;
 let closure_10 = [];
-let closure_11 = false;
-let tmp2 = (PersistedStore) => {
+let c11 = false;
+let tmp2 = ((PersistedStore) => {
   class HabitualDNDStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, HabitualDNDStore);
-      obj = closure_6(HabitualDNDStore);
-      tmp2 = closure_5;
-      if (closure_12()) {
+      tmp = outer1_3(this, HabitualDNDStore);
+      obj = outer1_6(HabitualDNDStore);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -53,19 +55,18 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = HabitualDNDStore;
   callback2(HabitualDNDStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(sessionStartsWithDND) {
-      this.waitFor(closure_8);
+      this.waitFor(outer1_8);
       let isArray = null != sessionStartsWithDND;
       if (isArray) {
         const _Array = Array;
         isArray = Array.isArray(sessionStartsWithDND.sessionStartsWithDND);
       }
       if (isArray) {
-        sessionStartsWithDND = sessionStartsWithDND.sessionStartsWithDND;
+        const outer1_10 = sessionStartsWithDND.sessionStartsWithDND;
       }
     }
   };
@@ -73,14 +74,14 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "showNagBar",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[1] = obj;
   obj = {
     key: "getState",
     value() {
-      return { sessionStartsWithDND: closure_10 };
+      return { sessionStartsWithDND: outer1_10 };
     }
   };
   items[2] = obj;
@@ -88,31 +89,31 @@ let tmp2 = (PersistedStore) => {
     key: "getTemp",
     value() {
       const obj = {};
-      const StatusExpiresAtSetting = HabitualDNDStore(closure_2[8]).StatusExpiresAtSetting;
+      const StatusExpiresAtSetting = HabitualDNDStore(outer1_2[8]).StatusExpiresAtSetting;
       obj.x = StatusExpiresAtSetting.getSetting();
       return obj;
     }
   };
   return callback(HabitualDNDStore, items);
-}(importDefault(dependencyMap[10]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "HabitualDNDStore";
 tmp2.persistKey = "habitualDND";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   POST_CONNECTION_OPEN: function handleConnect() {
     if (status.getStatus() === StatusTypes.DND) {
-      const StatusExpiresAtSetting = arg1(dependencyMap[8]).StatusExpiresAtSetting;
+      const StatusExpiresAtSetting = require(3803) /* explicitContentFromProto */.StatusExpiresAtSetting;
       if ("0" === StatusExpiresAtSetting.getSetting()) {
         const _Date = Date;
-        let arr = arr.push(Date.now());
+        arr = arr.push(Date.now());
         arr = arr.filter((arg0) => {
           const timestamp = Date.now();
-          return arg0 > timestamp - 5 * callback(closure_2[7]).Millis.DAY;
+          return arg0 > timestamp - 5 * outer1_1(outer1_2[7]).Millis.DAY;
         });
         if (hasBeenUsingDND()) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
-            callback(closure_2[9]).dispatch({ type: "HABITUAL_DND_CLEAR" });
-          }, 15 * importDefault(dependencyMap[7]).Millis.SECOND);
+            outer1_1(outer1_2[9]).dispatch({ type: "HABITUAL_DND_CLEAR" });
+          }, 15 * importDefault(664).Millis.SECOND);
         }
       }
     }
@@ -123,6 +124,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     let closure_10 = [];
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/notifications/HabitualDNDStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/notifications/HabitualDNDStore.tsx");
 
 export default tmp2;

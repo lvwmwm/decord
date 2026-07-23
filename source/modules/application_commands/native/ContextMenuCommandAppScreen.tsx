@@ -1,47 +1,45 @@
-// Module ID: 15437
-// Function ID: 117803
+// Module ID: 15554
+// Function ID: 119977
 // Name: ContextMenuCommandAppScreen
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 5160, 8832, 15553, 9244, 2]
 // Exports: default
 
-// Module 15437 (ContextMenuCommandAppScreen)
-let closure_2 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { marginHorizontal: importDefault(dependencyMap[3]).space.PX_16 };
-obj.list = obj;
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/application_commands/native/ContextMenuCommandAppScreen.tsx");
+// Module 15554 (ContextMenuCommandAppScreen)
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.list = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/application_commands/native/ContextMenuCommandAppScreen.tsx");
 
 export default function ContextMenuCommandAppScreen(route) {
   const params = route.route.params;
-  const section = params.section;
-  const importDefault = section;
+  let section = params.section;
   const commands = params.commands;
-  const dependencyMap = commands;
   const onPressCommand = params.onPressCommand;
-  const React = onPressCommand;
-  const items = [commands.length];
+  let items = [commands.length];
   const items1 = [commands, onPressCommand, section];
-  const memo = React.useMemo(() => {
+  const memo = onPressCommand.useMemo(() => {
     const items = [commands.length];
     return items;
   }, items);
-  const callback = React.useCallback((arg0, arg1) => {
+  const callback = onPressCommand.useCallback((arg0, arg1) => {
     const section = tmp;
     const diff = commands.length - 1;
-    return callback(section(commands[6]), {
+    return outer1_3(section(commands[6]), {
       item: commands[arg1],
       onPress() {
-        return callback(tmp);
+        return outer1_2(closure_0);
       },
       section,
       start: 0 === arg1,
       end: arg1 === diff
     }, commands[arg1].id);
   }, items1);
-  const tmp = importDefault(dependencyMap[5])();
-  const tmp4 = callback();
-  return jsx(importDefault(dependencyMap[7]), { style: callback().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: importDefault(dependencyMap[4])({ includeKeyboardHeight: true }).insets.bottom, renderItem: callback });
+  const tmp = section(commands[5])();
+  const tmp4 = _createForOfIteratorHelperLoose();
+  return jsx(section(commands[7]), { style: _createForOfIteratorHelperLoose().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: section(commands[4])({ includeKeyboardHeight: true }).insets.bottom, renderItem: callback });
 };

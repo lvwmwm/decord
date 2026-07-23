@@ -1,38 +1,39 @@
-// Module ID: 10636
-// Function ID: 83080
+// Module ID: 10646
+// Function ID: 83130
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 10636 (_isNativeReflectConstruct)
+// Module 10646 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = false;
-let closure_6 = false;
-let tmp2 = (DeviceSettingsStore) => {
+let c5 = false;
+let c6 = false;
+let tmp2 = ((DeviceSettingsStore) => {
   class StageMusicStore {
     constructor() {
       self = this;
       tmp = StageMusicStore(this, StageMusicStore);
-      obj = closure_3(StageMusicStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(StageMusicStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,51 +42,52 @@ let tmp2 = (DeviceSettingsStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = StageMusicStore;
   callback2(StageMusicStore, DeviceSettingsStore);
   let obj = {
     key: "initialize",
     value(arg0) {
-
+      if (null != arg0) {
+        const outer1_5 = arg0;
+      }
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "isMuted",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   items[1] = obj;
   obj = {
     key: "shouldPlay",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getUserAgnosticState",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   return callback(StageMusicStore, items);
-}(importDefault(dependencyMap[5]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp2.displayName = "StageMusicStore";
 tmp2.persistKey = "StageMusicStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   STAGE_MUSIC_MUTE: function handleMute(muted) {
     muted = muted.muted;
-    let closure_6 = false;
+    let c6 = false;
   },
   STAGE_MUSIC_PLAY: function handlePlay(play) {
     play = play.play;
   },
   VOICE_CHANNEL_SELECT: function handleConnect() {
-    let closure_6 = false;
+    let c6 = false;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/stage_channels/StageMusicStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stage_channels/StageMusicStore.tsx");
 
 export default tmp2;

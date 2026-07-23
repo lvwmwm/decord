@@ -1,38 +1,43 @@
-// Module ID: 14406
-// Function ID: 108670
+// Module ID: 14520
+// Function ID: 110823
 // Name: VerificationListItem
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 33, 4130, 8897, 5165, 1212, 4660, 5119, 4126, 6653, 1456, 566, 3969, 9122, 14517, 7879, 2]
 // Exports: default
 
-// Module 14406 (VerificationListItem)
+// Module 14520 (VerificationListItem)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function VerificationListItem(userId) {
   let end;
   let index;
   let start;
   userId = userId.userId;
-  const arg1 = userId;
   const verification = userId.verification;
-  const importDefault = verification;
   const items = [userId, verification.verifiedKey];
   ({ index, start, end } = userId);
   const items1 = [verification.timestamp];
   const callback = React.useCallback(() => {
-    const result = userId(closure_2[5]).deletePersistentVerification(userId, verification.verifiedKey);
+    const result = userId(outer1_2[5]).deletePersistentVerification(userId, verification.verifiedKey);
   }, items);
-  const memo = React.useMemo(() => userId(closure_2[5]).getSecureFramesUserVerifiedTimestamp(verification.timestamp), items1);
+  const memo = React.useMemo(() => userId(outer1_2[5]).getSecureFramesUserVerifiedTimestamp(verification.timestamp), items1);
   let obj = {};
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.label = intl.formatToPlainString(arg1(dependencyMap[7]).t.N4qBBO, { index });
+  const intl = userId(1212).intl;
+  obj.label = intl.formatToPlainString(userId(1212).t.N4qBBO, { index });
   obj.subLabel = memo;
   obj.start = start;
   obj.end = end;
-  obj = { onPress: callback, children: jsx(arg1(dependencyMap[9]).XSmallIcon, {}) };
-  obj.trailing = jsx(arg1(dependencyMap[8]).PressableHighlight, obj);
-  return jsx(arg1(dependencyMap[6]).TableRow, obj);
+  obj = { onPress: callback, children: jsx(userId(5119).XSmallIcon, {}) };
+  obj.trailing = jsx(userId(4660).PressableHighlight, { onPress: callback, children: jsx(userId(5119).XSmallIcon, {}) });
+  return jsx(userId(5165).TableRow, { onPress: callback, children: jsx(userId(5119).XSmallIcon, {}) });
 }
-function SectionListItem(children) {
-  const tmp = callback();
-  return jsx(arg1(dependencyMap[10]).Text, { style: callback().section, children: children.title });
+function SectionListItem(title) {
+  const obj = { style: callback().section, variant: "text-sm/semibold", color: "text-default", children: title.title };
+  return jsx(require(4126) /* Text */.Text, { style: callback().section, variant: "text-sm/semibold", color: "text-default", children: title.title });
 }
 function renderItem(item) {
   item = item.item;
@@ -40,11 +45,11 @@ function renderItem(item) {
   if (constants.VERIFICATION === type) {
     let obj = {};
     const merged = Object.assign(item);
-    return <VerificationListItem {...obj} />;
+    return <VerificationListItem />;
   } else if (constants.SECTION === type) {
     obj = {};
     const merged1 = Object.assign(item);
-    return <SectionListItem {...obj} />;
+    return <SectionListItem />;
   }
 }
 function getItemType(type) {
@@ -60,78 +65,68 @@ function keyExtractor(type) {
 }
 function ClearVerificationsListFooter(userId) {
   userId = userId.userId;
-  const arg1 = userId;
   const items = [userId];
   const callback = React.useCallback(() => {
-    const result = userId(closure_2[5]).deleteUserPersistentVerifications(userId);
+    const result = userId(outer1_2[5]).deleteUserPersistentVerifications(userId);
   }, items);
   let obj = {};
-  obj = {};
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.children = intl.string(arg1(dependencyMap[7]).t.2xL5lu);
-  obj.label = jsx(arg1(dependencyMap[10]).Text, obj);
-  obj = { cachedAt: null, edpbxy: null };
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj.children = intl2.string(arg1(dependencyMap[7]).t.kgAfXN);
-  obj.subLabel = jsx(arg1(dependencyMap[10]).Text, obj);
+  obj = { variant: "text-md/semibold", color: "text-feedback-critical" };
+  const intl = userId(1212).intl;
+  obj.children = intl.string(userId(1212).t["2xL5lu"]);
+  obj.label = jsx(userId(4126).Text, { variant: "text-md/semibold", color: "text-feedback-critical" });
+  obj = { variant: "text-xs/medium", color: "text-subtle" };
+  const intl2 = userId(1212).intl;
+  obj.children = intl2.string(userId(1212).t.kgAfXN);
+  obj.subLabel = jsx(userId(4126).Text, { variant: "text-xs/medium", color: "text-subtle" });
   obj.onPress = callback;
   obj.start = true;
   obj.end = true;
-  return jsx(arg1(dependencyMap[6]).TableRow, obj);
+  return jsx(userId(5165).TableRow, { variant: "text-xs/medium", color: "text-subtle" });
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ list: { flexGrow: 1 }, listContent: { "Bool(false)": "a", "Bool(false)": "oldRule" }, listFooter: { marginTop: 32 }, section: { marginBottom: 8 } });
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ list: { flexGrow: 1 }, listContent: { paddingVertical: 32, paddingHorizontal: 16 }, listFooter: { marginTop: 32 }, section: { marginBottom: 8 } });
 let closure_8 = { VERIFICATION: "VERIFICATION", SECTION: "SECTION" };
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesVerificationsScreen.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesVerificationsScreen.tsx");
 
 export default function SettingsSecureFramesVerificationsScreen() {
   const tmp = callback();
-  let obj = arg1(formattedName[11]);
-  const userId = obj.useSettingNavigationRoute().params.userId;
-  const arg1 = userId;
-  let obj1 = arg1(formattedName[12]);
+  let obj = userId(6653);
+  userId = obj.useSettingNavigationRoute().params.userId;
+  let obj1 = userId(1456);
   const navigation = obj1.useNavigation();
-  const importDefault = navigation;
-  const items = [closure_5];
-  const stateFromStores = arg1(formattedName[13]).useStateFromStores(items, () => user.getUser(userId));
-  const obj3 = arg1(formattedName[13]);
-  const formattedName = importDefault(formattedName[14]).getFormattedName(stateFromStores, false);
-  const layoutEffect = React.useLayoutEffect(() => {
-    const obj = {};
-    const intl = userId(closure_2[7]).intl;
-    obj.title = "" + intl.string(userId(closure_2[7]).t.5b3FNI) + " (" + closure_2 + ")";
+  let items = [_isNativeReflectConstruct];
+  const stateFromStores = userId(566).useStateFromStores(items, () => outer1_5.getUser(userId));
+  const obj3 = userId(566);
+  const dependencyMap = navigation(3969).getFormattedName(stateFromStores, false);
+  const layoutEffect = secureFramesUserVerifiedKeys.useLayoutEffect(() => {
+    let obj = {};
+    let intl = userId(1212).intl;
+    obj.title = "" + intl.string(userId(1212).t["5b3FNI"]) + " (" + dependencyMap + ")";
     obj.headerTitle = function headerTitle() {
       const obj = {};
-      const intl = callback(closure_2[7]).intl;
-      obj.title = intl.string(callback(closure_2[7]).t.5b3FNI);
-      obj.subtitle = closure_2;
-      return callback2(callback(closure_2[15]).GenericHeaderTitle, obj);
+      const intl = userId(1212).intl;
+      obj.title = intl.string(userId(1212).t["5b3FNI"]);
+      obj.subtitle = outer1_2;
+      return outer2_6(userId(9122).GenericHeaderTitle, obj);
     };
     navigation.setOptions(obj);
   });
-  const obj4 = importDefault(formattedName[14]);
-  const secureFramesUserVerifiedKeys = arg1(formattedName[16]).useSecureFramesUserVerifiedKeys(userId);
-  const React = secureFramesUserVerifiedKeys;
+  const obj4 = navigation(3969);
+  secureFramesUserVerifiedKeys = userId(14517).useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];
-  const memo = React.useMemo(() => {
+  const memo = secureFramesUserVerifiedKeys.useMemo(() => {
     const items = [];
-    const userId = items;
-    let obj = { type: constants.SECTION };
-    const intl = userId(closure_2[7]).intl;
+    let obj = { type: outer1_8.SECTION };
+    const intl = userId(1212).intl;
     obj = { count: secureFramesUserVerifiedKeys.length };
-    obj.title = intl.formatToPlainString(userId(closure_2[7]).t./MBjYF, obj);
+    obj.title = intl.formatToPlainString(userId(1212).t["/MBjYF"], obj);
     items.push(obj);
     const item = secureFramesUserVerifiedKeys.forEach((verification) => {
-      items.push({ type: constants.VERIFICATION, verification, index: arg1 + 1, userId: items, start: 0 === arg1, end: arg1 === length.length - 1 });
+      items.push({ type: outer2_8.VERIFICATION, verification, index: arg1 + 1, userId: items, start: 0 === arg1, end: arg1 === outer1_3.length - 1 });
     });
     return items;
   }, items1);
-  const effect = React.useEffect(() => {
+  const effect = secureFramesUserVerifiedKeys.useEffect(() => {
     if (0 === secureFramesUserVerifiedKeys.length) {
       navigation.pop();
     }
@@ -139,7 +134,7 @@ export default function SettingsSecureFramesVerificationsScreen() {
   obj = { style: tmp.list };
   obj = { keyExtractor, getItemType, renderItem, data: memo, contentContainerStyle: tmp.listContent };
   obj1 = { style: tmp.listFooter, children: <ClearVerificationsListFooter userId={userId} /> };
-  obj.ListFooterComponent = <View {...obj1} />;
-  obj.children = jsx(arg1(formattedName[17]).FlashList, obj);
-  return <View {...obj} />;
+  obj.ListFooterComponent = <View style={tmp.listFooter}><ClearVerificationsListFooter userId={userId} /></View>;
+  obj.children = jsx(userId(7879).FlashList, { keyExtractor, getItemType, renderItem, data: memo, contentContainerStyle: tmp.listContent });
+  return <View keyExtractor={keyExtractor} getItemType={getItemType} renderItem={renderItem} data={memo} contentContainerStyle={tmp.listContent} />;
 };

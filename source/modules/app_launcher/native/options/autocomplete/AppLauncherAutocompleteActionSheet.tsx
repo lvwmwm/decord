@@ -1,20 +1,36 @@
-// Module ID: 11284
-// Function ID: 87820
+// Module ID: 11294
+// Function ID: 87870
 // Name: Item
-// Dependencies: []
+// Dependencies: [57, 31, 27, 7021, 1838, 653, 4566, 33, 22, 8184, 4130, 689, 624, 4098, 11289, 11290, 1212, 44, 5165, 4329, 4126, 1273, 11291, 2]
 // Exports: default
 
-// Module 11284 (Item)
+// Module 11294 (Item)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import jsxProd from "jsxProd";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "registerAsset";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function Item(arg0) {
+  let dependencyMap;
+  let importDefault;
   let item;
-  ({ item, index: closure_0, choices: closure_1, onChoiceSelect: closure_2 } = arg0);
-  let closure_3;
+  let require;
+  ({ item, index: require, choices: importDefault, onChoiceSelect: dependencyMap } = arg0);
+  let _slicedToArray;
   let React;
   function ListItem(arg0) {
     let label;
     let onPress;
     ({ label, onPress } = arg0);
-    return callback2(callback(closure_2[18]).TableRow, { label, onPress, start: 0 === callback, end: callback === length.length - 1 });
+    return outer1_9(outer1_0(outer1_2[18]).TableRow, { label, onPress, start: 0 === closure_0, end: closure_0 === length.length - 1 });
   }
   let tmp2 = item.type === AutoCompleteResultTypes.CHOICE;
   if (!tmp2) {
@@ -23,129 +39,127 @@ function Item(arg0) {
   if (!tmp2) {
     tmp2 = item.type === AutoCompleteResultTypes.LABEL;
   }
-  importDefault(dependencyMap[17])(tmp2, "Invalid autocomplete result type");
-  closure_3 = callback3();
+  importDefault(44)(tmp2, "Invalid autocomplete result type");
+  _slicedToArray = callback2();
   React = React.useMemo(() => 100 * Math.random() + 50, []);
-  const tmp = importDefault(dependencyMap[17]);
-  const match = arg1(dependencyMap[19]).match(item);
+  const tmp = importDefault(44);
+  const match = require(4329) /* n */.match(item);
   let obj = { type: AutoCompleteResultTypes.CHOICE };
-  const str = arg1(dependencyMap[19]);
+  const str = require(4329) /* n */;
   obj = { type: AutoCompleteResultTypes.LABEL };
-  const withResult = match.with(obj, (children) => {
-    let obj = {
-      label: callback2(children(closure_2[20]).Text, obj),
+  const withResult = match.with(obj, (choice) => {
+    let closure_0 = choice;
+    obj = {
+      label: outer1_9(outer1_0(outer1_2[20]).Text, obj),
       onPress() {
-        if (null != callback2) {
-          callback2(arg0.choice);
+        if (null != outer1_2) {
+          outer1_2(choice.choice);
         }
-        callback(callback2[13]).hideActionSheet();
+        outer2_1(outer2_2[13]).hideActionSheet();
       }
     };
-    obj = { children: children.choice.displayName };
-    return callback2(ListItem, obj);
+    obj = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: choice.choice.displayName };
+    return outer1_9(ListItem, obj);
   });
   const obj1 = { type: AutoCompleteResultTypes.CHOICE_LOADING };
-  const withResult1 = match.with(obj, (children) => {
-    let obj = {
-      label: callback2(children(closure_2[20]).Text, obj),
+  const withResult1 = match.with(obj, (choice) => {
+    let closure_0 = choice;
+    obj = {
+      label: outer1_9(outer1_0(outer1_2[20]).Text, obj),
       onPress() {
-        if (null != callback2) {
-          callback2(arg0.choice);
+        if (null != outer1_2) {
+          outer1_2(choice.choice);
         }
-        callback(callback2[13]).hideActionSheet();
+        outer2_1(outer2_2[13]).hideActionSheet();
       }
     };
-    obj = { children: children.choice.displayName };
-    return callback2(ListItem, obj);
+    obj = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: choice.choice.displayName };
+    return outer1_9(ListItem, obj);
   }).with(obj, (label) => {
-    const items = ["_handleShowDeferredInvite", label.label, "\""];
-    return callback2(ListItem, {
-      label: callback3(label(closure_2[20]).Text, { children: items }),
+    let closure_0 = label;
+    obj = {
+      label: outer1_10(outer1_0(outer1_2[20]).Text, obj),
       onPress() {
-        if (null != callback2) {
+        if (null != outer1_2) {
           const obj = {};
-          ({ label: obj.name, label: obj.value, label: obj.displayName } = arg0);
-          callback2(obj);
+          ({ label: obj.name, label: obj.value, label: obj.displayName } = closure_0);
+          outer1_2(obj);
         }
-        callback(callback2[13]).hideActionSheet();
+        outer2_1(outer2_2[13]).hideActionSheet();
       }
-    });
+    };
+    obj = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary" };
+    const items = ["\"", label.label, "\""];
+    obj.children = items;
+    return outer1_9(ListItem, obj);
   });
-  return match.with(obj, (children) => {
-    let obj = {
-      label: callback2(children(closure_2[20]).Text, obj),
+  return match.with(obj, (choice) => {
+    let closure_0 = choice;
+    obj = {
+      label: outer1_9(outer1_0(outer1_2[20]).Text, obj),
       onPress() {
-        if (null != callback2) {
-          callback2(arg0.choice);
+        if (null != outer1_2) {
+          outer1_2(choice.choice);
         }
-        callback(callback2[13]).hideActionSheet();
+        outer2_1(outer2_2[13]).hideActionSheet();
       }
     };
-    obj = { children: children.choice.displayName };
-    return callback2(ListItem, obj);
+    obj = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary", children: choice.choice.displayName };
+    return outer1_9(ListItem, obj);
   }).with(obj, (label) => {
-    const items = ["_handleShowDeferredInvite", label.label, "\""];
-    return callback2(ListItem, {
-      label: callback3(label(closure_2[20]).Text, { children: items }),
+    let closure_0 = label;
+    obj = {
+      label: outer1_10(outer1_0(outer1_2[20]).Text, obj),
       onPress() {
-        if (null != callback2) {
+        if (null != outer1_2) {
           const obj = {};
-          ({ label: obj.name, label: obj.value, label: obj.displayName } = arg0);
-          callback2(obj);
+          ({ label: obj.name, label: obj.value, label: obj.displayName } = closure_0);
+          outer1_2(obj);
         }
-        callback(callback2[13]).hideActionSheet();
+        outer2_1(outer2_2[13]).hideActionSheet();
       }
-    });
+    };
+    obj = { lineClamp: 1, variant: "text-md/normal", color: "mobile-text-heading-primary" };
+    const items = ["\"", label.label, "\""];
+    obj.children = items;
+    return outer1_9(ListItem, obj);
   }).with({ type: AutoCompleteResultTypes.CHOICE_LOADING }, () => {
     let obj = {};
-    obj = { style: closure_3.commandChoiceLoadingContainer, children: callback2(ListItem, { style: items }) };
-    const items = [closure_3.commandChoiceLoadingItem, ];
-    obj = { width: closure_4 };
+    obj = { style: _slicedToArray.commandChoiceLoadingContainer, children: outer1_9(ListItem, { style: items }) };
+    items = [_slicedToArray.commandChoiceLoadingItem, ];
+    obj = { width: result };
     items[1] = obj;
-    obj.label = callback2(ListItem, obj);
-    return callback2(ListItem, obj);
+    obj.label = outer1_9(ListItem, obj);
+    return outer1_9(ListItem, obj);
   }).exhaustive();
 }
 function AutocompleteFailedEmptyState() {
-  const obj = { style: callback3().emptyState, lightSource: importDefault(dependencyMap[22]), darkSource: importDefault(dependencyMap[22]) };
-  const intl = arg1(dependencyMap[16]).intl;
-  obj.title = intl.string(arg1(dependencyMap[16]).t.rTAbPn);
-  return callback2(arg1(dependencyMap[21]).EmptyState, obj);
+  const obj = { style: callback2().emptyState, lightSource: importDefault(11291), darkSource: importDefault(11291) };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.rTAbPn);
+  return callback(require(1273) /* Button */.EmptyState, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-arg1(dependencyMap[5]).AutoCompleteResultTypes;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[7]));
-const tmp2 = arg1(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]).debounce(importDefault(dependencyMap[9]), arg1(dependencyMap[6]).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { flex: null, marginRight: null });
-const importDefaultResult = importDefault(dependencyMap[8]);
-let obj = { commandChoiceLoadingContainer: { "Null": "<string:3942646034>", "Null": "<string:3355444267>" } };
-obj = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: importDefault(dependencyMap[11]).radii.lg, alignSelf: "flex-start" };
+require("ME").AutoCompleteResultTypes;
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let obj = { commandChoiceLoadingContainer: { flex: 1, justifyContent: "center" } };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignSelf: "flex-start" };
 obj.commandChoiceLoadingItem = obj;
 obj.emptyState = { backgroundColor: "transparent" };
-let closure_12 = arg1(dependencyMap[10]).createStyles(obj);
-const obj2 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteActionSheet.tsx");
+let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteActionSheet.tsx");
 
 export default function AppLauncherAutocompleteActionSheet(onDismiss) {
   let initChoice;
   let onChoiceSelect;
   const option = onDismiss.option;
-  const arg1 = option;
   ({ initChoice, onChoiceSelect } = onDismiss);
-  const importDefault = onChoiceSelect;
   const channel = onDismiss.channel;
-  const dependencyMap = channel;
   const activeCommand = onDismiss.activeCommand;
-  let callback = activeCommand;
   const optionValues = onDismiss.optionValues;
-  const React = optionValues;
-  let View;
-  let closure_6;
-  let closure_7;
+  let first;
+  let ref;
+  let autocompleteResults;
+  let lastErrored;
   let memo;
   let name;
   if (null != initChoice) {
@@ -155,19 +169,17 @@ export default function AppLauncherAutocompleteActionSheet(onDismiss) {
   if (null != name) {
     str = name;
   }
-  const tmp3 = callback(React.useState(str), 2);
-  const first = tmp3[0];
-  View = first;
-  const ref = React.useRef(null);
-  closure_6 = ref;
-  let obj = arg1(dependencyMap[12]);
-  const items = [closure_6];
-  const items1 = [channel.id, option.name, first];
+  const tmp3 = activeCommand(optionValues.useState(str), 2);
+  first = tmp3[0];
+  ref = optionValues.useRef(null);
+  let obj = option(channel[12]);
+  let items = [ref];
+  let items1 = [channel.id, option.name, first];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ autocompleteResults: ref.getAutocompleteChoices(channel.id, option.name, first), lastErrored: ref.getLastErrored(channel.id) }), items1);
-  closure_7 = autocompleteResults;
-  let lastErrored = stateFromStoresObject.lastErrored;
-  const items2 = [first, stateFromStoresObject.autocompleteResults, lastErrored];
-  memo = React.useMemo(() => {
+  autocompleteResults = stateFromStoresObject.autocompleteResults;
+  lastErrored = stateFromStoresObject.lastErrored;
+  let items2 = [first, autocompleteResults, lastErrored];
+  memo = optionValues.useMemo(() => {
     const items = [];
     if ("" !== first) {
       let obj = { type: lastErrored.LABEL, label: first };
@@ -188,27 +200,27 @@ export default function AppLauncherAutocompleteActionSheet(onDismiss) {
     if (null != autocompleteResults) {
       const push2 = items.push;
       const items2 = [];
-      HermesBuiltin.arraySpread(autocompleteResults.map((choice) => ({ type: constants.CHOICE, choice })), 0);
+      HermesBuiltin.arraySpread(autocompleteResults.map((choice) => ({ type: lastErrored.CHOICE, choice })), 0);
       HermesBuiltin.apply(items2, items);
     }
   }, items2);
   let tmp7 = 0 === memo.length && !lastErrored;
   const items3 = [channel, option.name, activeCommand, optionValues, first];
-  const effect = React.useEffect(() => {
+  const effect = optionValues.useEffect(() => {
     let obj = { command: activeCommand, optionValues };
     obj = { channel, guild: autocompleteResults.getGuild(channel.guild_id), autocomplete: obj };
     obj = { name: option.name, query: first };
     obj.context = obj;
-    callback(obj);
+    outer1_11(obj);
     const current = ref.current;
     if (null != current) {
-      current.scrollToOffset({ <string:1438146821>: "absolute", <string:39547134>: -1 });
+      current.scrollToOffset({ offset: 0, animated: false });
     }
   }, items3);
   const items4 = [onChoiceSelect, memo];
   const items5 = [onChoiceSelect, first];
-  callback = React.useCallback((item) => memo(closure_13, { item: item.item, index: item.index, onChoiceSelect, choices: memo }), items4);
-  const callback1 = React.useCallback(() => {
+  const callback = optionValues.useCallback((item) => memo(outer1_13, { item: item.item, index: item.index, onChoiceSelect, choices: memo }), items4);
+  const callback1 = optionValues.useCallback(() => {
     if ("" !== first) {
       if (null != onChoiceSelect) {
         const obj = { name: first, value: first, displayName: first };
@@ -220,18 +232,18 @@ export default function AppLauncherAutocompleteActionSheet(onDismiss) {
   }, items5);
   obj = { option, onDismiss: onDismiss.onDismissAutocompleteSheet };
   obj = {};
-  const intl = arg1(dependencyMap[16]).intl;
-  obj.placeholder = intl.string(arg1(dependencyMap[16]).t.Wuie9L);
+  const intl = option(channel[16]).intl;
+  obj.placeholder = intl.string(option(channel[16]).t.Wuie9L);
   obj.onChange = tmp3[1];
   obj.autoFocus = true;
   obj.returnKeyType = "done";
   obj.onSubmitEditing = callback1;
-  const items6 = [memo(arg1(dependencyMap[15]).AppLauncherListSearchBar, obj), , , ];
+  const items6 = [memo(option(channel[15]).AppLauncherListSearchBar, obj), , , ];
   if (tmp7) {
-    tmp7 = memo(arg1(dependencyMap[15]).AppLauncherListEmptyState, {});
+    tmp7 = memo(option(channel[15]).AppLauncherListEmptyState, {});
   }
   items6[1] = tmp7;
-  items6[2] = memo(arg1(dependencyMap[15]).AppLauncherList, {
+  items6[2] = memo(option(channel[15]).AppLauncherList, {
     ref,
     keyExtractor(type) {
       let str = "placeholder";
@@ -249,5 +261,5 @@ export default function AppLauncherAutocompleteActionSheet(onDismiss) {
   }
   items6[3] = lastErrored;
   obj.children = items6;
-  return closure_10(arg1(dependencyMap[14]).AppLauncherCommandOptionActionSheet, obj);
+  return closure_10(option(channel[14]).AppLauncherCommandOptionActionSheet, obj);
 };

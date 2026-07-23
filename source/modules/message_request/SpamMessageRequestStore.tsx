@@ -1,61 +1,70 @@
-// Module ID: 5602
-// Function ID: 47628
+// Module ID: 5605
+// Function ID: 47651
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1196, 2]
 
-// Module 5602 (_isNativeReflectConstruct)
+// Module 5605 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_5 from "_isNativeReflectConstruct";
+import tmp5 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let _isNativeReflectConstruct = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _isNativeReflectConstruct = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -128,9 +137,9 @@ function handleConnectionOpen() {
   set1.clear();
   const values = Object.values(mutablePrivateChannels.getMutablePrivateChannels());
   const item = values.forEach((arg0) => {
-    callback(arg0);
+    outer1_13(arg0);
   });
-  let closure_8 = true;
+  let c8 = true;
 }
 function handleSpamAcceptOptimistic(channelId) {
   set1.add(channelId.channelId);
@@ -144,8 +153,8 @@ function handleChannelUpdates(channels) {
   let iter = tmp();
   if (!iter.done) {
     do {
-      let tmp2 = closure_13;
-      let tmp3 = closure_13(iter.value);
+      let tmp2 = processChannel;
+      let tmp3 = processChannel(iter.value);
       let iter2 = tmp();
       iter = iter2;
       done = iter2.done;
@@ -161,111 +170,12 @@ function handleChannelDelete(channel) {
   }
   return flag;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-const set = new Set();
+let set = new Set();
 const set1 = new Set();
-let closure_8 = false;
-let tmp5 = (importDefaultResult) => {
-  class SpamMessageRequestStore {
-    constructor() {
-      self = this;
-      tmp = SpamMessageRequestStore(this, SpamMessageRequestStore);
-      obj = {
-        CONNECTION_OPEN: closure_14,
-        CONNECTION_OPEN_SUPPLEMENTAL: closure_14,
-        CACHE_LOADED_LAZY() {
-              return tmp2Result.loadCache();
-            },
-        CHANNEL_CREATE: closure_16,
-        CHANNEL_UPDATES: closure_17,
-        CHANNEL_DELETE: closure_18,
-        MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: closure_15
-      };
-      items = [];
-      items[0] = obj;
-      obj2 = closure_3(SpamMessageRequestStore);
-      tmp2 = closure_2;
-      if (closure_9()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj2, items, closure_3(self).constructor);
-      } else {
-        constructResult = obj2.apply(self, items);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      SpamMessageRequestStore = tmp2Result;
-      return tmp2Result;
-    }
-  }
-  let closure_0 = SpamMessageRequestStore;
-  callback2(SpamMessageRequestStore, importDefaultResult);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(closure_5);
-    }
-  };
-  const items = [obj, , , , , , , ];
-  obj = {
-    key: "loadCache",
-    value() {
-      const snapshot = this.readSnapshot(SpamMessageRequestStore.LATEST_SNAPSHOT_VERSION);
-      if (null != snapshot) {
-        const _Set = Set;
-        const set = new Set(snapshot);
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "takeSnapshot",
-    value() {
-      return { version: SpamMessageRequestStore.LATEST_SNAPSHOT_VERSION, data: Array.from(closure_6) };
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getSpamChannelIds",
-    value() {
-      return closure_6;
-    }
-  };
-  items[4] = {
-    key: "getSpamChannelsCount",
-    value() {
-      return set.size;
-    }
-  };
-  items[5] = {
-    key: "isSpam",
-    value(arg0) {
-      return set.has(arg0);
-    }
-  };
-  items[6] = {
-    key: "isAcceptedOptimistic",
-    value(arg0) {
-      return set2.has(arg0);
-    }
-  };
-  items[7] = {
-    key: "isReady",
-    value() {
-      return closure_8;
-    }
-  };
-  return callback(SpamMessageRequestStore, items);
-}(importDefault(dependencyMap[6]));
+let c8 = false;
 tmp5.displayName = "SpamMessageRequestStore";
 tmp5.LATEST_SNAPSHOT_VERSION = 1;
 tmp5 = new tmp5();
-const importDefaultResult = importDefault(dependencyMap[6]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/message_request/SpamMessageRequestStore.tsx");
+let result = set.fileFinishedImporting("modules/message_request/SpamMessageRequestStore.tsx");
 
 export default tmp5;

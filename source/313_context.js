@@ -1,15 +1,18 @@
 // Module ID: 313
 // Function ID: 4797
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 33]
 // Exports: VirtualizedListCellContextProvider, VirtualizedListContextProvider, VirtualizedListContextResetter
 
 // Module 313 (context)
-importAll(dependencyMap[0]);
-const obj = arg1(dependencyMap[0]);
-({ useContext: closure_0, useMemo: closure_1 } = obj);
-const jsx = arg1(dependencyMap[1]).jsx;
-const context = obj.createContext(null);
+import "result";
+import result from "result";
+import { jsx } from "jsxProd";
+
+let closure_0;
+let closure_1;
+({ useContext: closure_0, useMemo: closure_1 } = result);
+const context = result.createContext(null);
 
 export const VirtualizedListContext = context;
 export const VirtualizedListContextResetter = function VirtualizedListContextResetter(children) {
@@ -24,13 +27,14 @@ export const VirtualizedListContextProvider = function VirtualizedListContextPro
 export const VirtualizedListCellContextProvider = function VirtualizedListCellContextProvider(cellKey) {
   cellKey = cellKey.cellKey;
   const tmp = cellKey(context);
+  const callback = tmp;
   const items = [tmp, cellKey];
-  return <context.Provider value={tmp(() => {
+  return <context.Provider value={callback(() => {
     let merged = null;
-    if (null != tmp) {
+    if (null != closure_1) {
       const _Object = Object;
       const obj = { cellKey };
-      merged = Object.assign({}, tmp, obj);
+      merged = Object.assign({}, closure_1, obj);
     }
     return merged;
   }, items)}>{arg0.children}</context.Provider>;

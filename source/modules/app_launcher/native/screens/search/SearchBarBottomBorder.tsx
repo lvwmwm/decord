@@ -1,21 +1,21 @@
-// Module ID: 11206
-// Function ID: 87257
+// Module ID: 11216
+// Function ID: 87307
 // Name: usePinnedSearchBarBottomBorder
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 33, 4130, 689, 3991, 4542, 4546, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 11206 (usePinnedSearchBarBottomBorder)
-import closure_3 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 11216 (usePinnedSearchBarBottomBorder)
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-__exportStarResult1 = {};
-__exportStarResult1 = { borderBottomColor: require("__exportStarResult1").colors.BORDER_SUBTLE, borderBottomWidth: 1 };
-__exportStarResult1.border = __exportStarResult1;
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderBottomWidth: 1 };
+_createForOfIteratorHelperLoose.border = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_6 = { code: "function SearchBarBottomBorderTsx1(){const{withSpring,scrollPosition,triggerScrollHeight,springStandard}=this.__closure;return{opacity:withSpring(scrollPosition.get()>triggerScrollHeight?1:0,springStandard)};}" };
-const result = __exportStarResult1.fileFinishedImporting("modules/app_launcher/native/screens/search/SearchBarBottomBorder.tsx");
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/screens/search/SearchBarBottomBorder.tsx");
 
 export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomBorder(arg0) {
   let key;
@@ -24,11 +24,9 @@ export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomB
   if (triggerScrollHeight === undefined) {
     triggerScrollHeight = 1;
   }
-  const arg1 = triggerScrollHeight;
-  let importDefault;
-  let obj = arg1(dependencyMap[4]);
-  const sharedValue = obj.useSharedValue(0);
-  importDefault = sharedValue;
+  let sharedValue;
+  let obj = triggerScrollHeight(3991);
+  sharedValue = obj.useSharedValue(0);
   const items = [key, sharedValue];
   const effect = React.useEffect(() => {
     const result = sharedValue.set(0);
@@ -37,23 +35,23 @@ export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomB
   const callback = React.useCallback((offset) => {
     const result = sharedValue.set(offset.offset);
   }, items1);
-  const tmp = __exportStarResult1();
+  const tmp = _createForOfIteratorHelperLoose();
   const fn = function u() {
     const obj = {};
     let num = 0;
     if (sharedValue.get() > triggerScrollHeight) {
       num = 1;
     }
-    obj.opacity = triggerScrollHeight(closure_2[5]).withSpring(num, triggerScrollHeight(closure_2[6]).springStandard);
+    obj.opacity = triggerScrollHeight(outer1_2[5]).withSpring(num, triggerScrollHeight(outer1_2[6]).springStandard);
     return obj;
   };
-  obj = { withSpring: arg1(dependencyMap[5]).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: arg1(dependencyMap[6]).springStandard };
+  obj = { withSpring: triggerScrollHeight(4542).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(4546).springStandard };
   fn.__closure = obj;
   fn.__workletHash = 5466161440826;
   fn.__initData = closure_6;
   obj = { scrollHandler: callback };
-  const animatedStyle = arg1(dependencyMap[4]).useAnimatedStyle(fn);
+  const animatedStyle = triggerScrollHeight(3991).useAnimatedStyle(fn);
   const items2 = [tmp.border, animatedStyle];
-  obj.bottomBorderComponent = jsx(importDefault(dependencyMap[4]).View, { style: items2 }, key);
+  obj.bottomBorderComponent = jsx(sharedValue(3991).View, { style: items2 }, key);
   return obj;
 };

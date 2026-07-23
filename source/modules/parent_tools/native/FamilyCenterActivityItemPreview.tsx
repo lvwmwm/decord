@@ -1,15 +1,24 @@
-// Module ID: 13692
-// Function ID: 103622
+// Module ID: 13806
+// Function ID: 105778
 // Name: AvatarDecorationPreviewImage
-// Dependencies: []
+// Dependencies: [31, 27, 8257, 33, 4130, 13805, 689, 8230, 8241, 8697, 11261, 8013, 7871, 1876, 1873, 2]
 // Exports: default
 
-// Module 13692 (AvatarDecorationPreviewImage)
+// Module 13806 (AvatarDecorationPreviewImage)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { PROFILE_FRAME_ASPECT_RATIO as closure_5 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function AvatarDecorationPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(13805) /* getCollectibleTypeName */;
   const avatarDecorationPreviewUrl = obj.getAvatarDecorationPreviewUrl(product);
   let tmp2 = null;
   if (null != avatarDecorationPreviewUrl) {
@@ -18,13 +27,13 @@ function AvatarDecorationPreviewImage(arg0) {
     obj.source = obj;
     obj.style = styles.avatarDecorationPreview;
     obj.fadeDuration = 0;
-    tmp2 = <closure_4 {...obj} />;
+    tmp2 = <closure_4 uri={avatarDecorationPreviewUrl} />;
   }
   return tmp2;
 }
 function NameplatePreviewImage(styles) {
   styles = styles.styles;
-  let obj = arg1(dependencyMap[7]);
+  let obj = require(8230) /* getNameplateAssets */;
   const staticImageUrl = obj.getNameplateAssets(styles.nameplateData).staticImageUrl;
   let tmp = null;
   if (null != staticImageUrl) {
@@ -35,8 +44,8 @@ function NameplatePreviewImage(styles) {
     obj.style = styles.nameplatePreview;
     obj.resizeMode = "cover";
     obj.fadeDuration = 0;
-    obj.children = <closure_4 {...obj} />;
-    tmp = <closure_3 {...obj} />;
+    obj.children = <closure_4 />;
+    tmp = <closure_3 />;
   }
   return tmp;
 }
@@ -44,7 +53,7 @@ function ProfileEffectPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(13805) /* getCollectibleTypeName */;
   const profileEffectPreviewUrl = obj.getProfileEffectPreviewUrl(product);
   let tmp2 = null;
   if (null != profileEffectPreviewUrl) {
@@ -53,7 +62,7 @@ function ProfileEffectPreviewImage(arg0) {
     obj.source = obj;
     obj.style = styles.avatarDecorationPreview;
     obj.fadeDuration = 0;
-    tmp2 = <closure_4 {...obj} />;
+    tmp2 = <closure_4 uri={profileEffectPreviewUrl} />;
   }
   return tmp2;
 }
@@ -61,14 +70,14 @@ function ProfileFramePreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  const tmp = importDefault(dependencyMap[8])(product.skuId, "FamilyCenterActivityItemPreview");
+  const tmp = importDefault(8241)(product.skuId, "FamilyCenterActivityItemPreview");
   let tmp2 = null;
   if (null != tmp) {
     let obj = { style: styles.profileFrameContainer };
-    obj = { profileFrame: tmp, previewWidth: arg1(dependencyMap[5]).PREVIEW_SIZE * closure_5, previewHeight: arg1(dependencyMap[5]).PREVIEW_SIZE, profileBackgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW };
-    obj.children = jsx(importDefault(dependencyMap[9]), obj);
-    tmp2 = <closure_3 {...obj} />;
-    const tmp8 = importDefault(dependencyMap[9]);
+    obj = { profileFrame: tmp, previewWidth: require(13805) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5, previewHeight: require(13805) /* getCollectibleTypeName */.PREVIEW_SIZE, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
+    obj.children = jsx(importDefault(8697), { profileFrame: tmp, previewWidth: require(13805) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5, previewHeight: require(13805) /* getCollectibleTypeName */.PREVIEW_SIZE, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW });
+    tmp2 = <closure_3 profileFrame={tmp} previewWidth={require(13805) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5} previewHeight={require(13805) /* getCollectibleTypeName */.PREVIEW_SIZE} profileBackgroundColor={importDefault(689).colors.BACKGROUND_BASE_LOW} />;
+    const tmp8 = importDefault(8697);
   }
   return tmp2;
 }
@@ -78,19 +87,19 @@ function SubscriptionPreview(arg0) {
   ({ subscriptionPlanId, styles } = arg0);
   if (null == subscriptionPlanId) {
     let obj = { style: styles.purchasePlaceholder };
-    obj = { size: "custom", style: {} };
-    obj.children = jsx(arg1(dependencyMap[10]).ShopIcon, obj);
-    return <closure_3 {...obj} />;
+    obj = { size: "custom", style: { width: 20, height: 20 } };
+    obj.children = jsx(require(11261) /* ShopIcon */.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+    return <closure_3 size="custom" style={{ width: 20, height: 20 }} />;
   } else {
     const obj1 = { style: styles.purchasePlaceholder };
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp11(tmp12[11]).BoostGemIcon;
+      let NitroWheelIcon = tmp11(8013).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp11(tmp12[12]).NitroWheelIcon;
+      NitroWheelIcon = tmp11(7871).NitroWheelIcon;
     }
-    obj = { size: "custom", style: {} };
-    obj1.children = <NitroWheelIcon {...obj} />;
-    return <closure_3 {...obj1} />;
+    obj = { size: "custom", style: { width: 20, height: 20 } };
+    obj1.children = <NitroWheelIcon size="custom" style={{ width: 20, height: 20 }} />;
+    return <closure_3 style={styles.purchasePlaceholder} />;
   }
 }
 function CollectiblePreview(arg0) {
@@ -99,56 +108,51 @@ function CollectiblePreview(arg0) {
   ({ product, styles } = arg0);
   if (null == product) {
     let obj = { style: styles.purchasePlaceholder };
-    obj = { size: "custom", style: {} };
-    obj.children = jsx(arg1(dependencyMap[10]).ShopIcon, obj);
-    return <closure_3 {...obj} />;
+    obj = { size: "custom", style: { width: 20, height: 20 } };
+    obj.children = jsx(require(11261) /* ShopIcon */.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+    return <closure_3 size="custom" style={{ width: 20, height: 20 }} />;
   } else {
     const type = product.type;
-    if (arg1(dependencyMap[13]).CollectiblesItemType.AVATAR_DECORATION === type) {
+    if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj1 = { product, styles };
-      return <AvatarDecorationPreviewImage {...obj1} />;
-    } else if (arg1(dependencyMap[13]).CollectiblesItemType.NAMEPLATE === type) {
-      let obj4 = arg1(dependencyMap[14]);
+      return <AvatarDecorationPreviewImage product={product} styles={styles} />;
+    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
+      let obj4 = require(1873) /* getNameplateData */;
       const nameplateDataFromProductRecord = obj4.getNameplateDataFromProductRecord(product);
       let tmp13 = null;
       if (null != nameplateDataFromProductRecord) {
         const obj2 = { nameplateData: nameplateDataFromProductRecord, styles };
-        tmp13 = <NameplatePreviewImage {...obj2} />;
+        tmp13 = <NameplatePreviewImage nameplateData={nameplateDataFromProductRecord} styles={styles} />;
       }
       return tmp13;
-    } else if (arg1(dependencyMap[13]).CollectiblesItemType.PROFILE_EFFECT === type) {
+    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj3 = { product, styles };
-      return <ProfileEffectPreviewImage {...obj3} />;
-    } else if (arg1(dependencyMap[13]).CollectiblesItemType.PROFILE_FRAME === type) {
+      return <ProfileEffectPreviewImage product={product} styles={styles} />;
+    } else if (require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
       obj4 = { product, styles };
-      return <ProfileFramePreviewImage {...obj4} />;
+      return <ProfileFramePreviewImage product={product} styles={styles} />;
     } else {
       obj = { style: styles.purchasePlaceholder };
-      const obj5 = { size: "custom", style: {} };
-      obj.children = jsx(arg1(dependencyMap[10]).ShopIcon, obj5);
-      return <closure_3 {...obj} />;
+      const obj5 = { size: "custom", style: { width: 20, height: 20 } };
+      obj.children = jsx(require(11261) /* ShopIcon */.ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+      return <closure_3 style={styles.purchasePlaceholder} />;
     }
   }
 }
-importAll(dependencyMap[0]);
-({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = arg1(dependencyMap[2]).PROFILE_FRAME_ASPECT_RATIO;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE, borderRadius: importDefault(dependencyMap[6]).radii.xs, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 12 };
-obj.purchasePlaceholder = obj;
-const tmp3 = arg1(dependencyMap[1]);
-obj.avatarDecorationPreview = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE, marginRight: 12 };
-const obj1 = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE, marginRight: 12 };
-obj.nameplateContainer = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE, borderRadius: importDefault(dependencyMap[6]).radii.xs };
-const obj3 = { "Bool(false)": 40, "Bool(false)": 40, width: arg1(dependencyMap[5]).PREVIEW_SIZE * arg1(dependencyMap[5]).NAMEPLATE_ASPECT_RATIO, height: arg1(dependencyMap[5]).PREVIEW_SIZE };
-obj.nameplatePreview = obj3;
-const obj4 = { <string:1672236972>: 1124074357, <string:1374589238>: 235044, <string:4217547013>: 236311, <string:3312931232>: 236311, <string:2449359443>: 58031171, width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE };
-obj.profileFrameContainer = obj4;
-let closure_7 = obj.createStyles(obj);
-const obj2 = { width: arg1(dependencyMap[5]).PREVIEW_SIZE, height: arg1(dependencyMap[5]).PREVIEW_SIZE, borderRadius: importDefault(dependencyMap[6]).radii.xs };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityItemPreview.tsx");
+({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: require("getCollectibleTypeName").PREVIEW_SIZE, height: require("getCollectibleTypeName").PREVIEW_SIZE, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 12 };
+_createForOfIteratorHelperLoose.purchasePlaceholder = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.avatarDecorationPreview = { width: require("getCollectibleTypeName").PREVIEW_SIZE, height: require("getCollectibleTypeName").PREVIEW_SIZE, marginRight: 12 };
+let obj2 = { width: require("getCollectibleTypeName").PREVIEW_SIZE, height: require("getCollectibleTypeName").PREVIEW_SIZE, marginRight: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden", position: "relative" };
+_createForOfIteratorHelperLoose.nameplateContainer = obj2;
+let obj3 = { position: "absolute", right: 0, width: require("getCollectibleTypeName").PREVIEW_SIZE * require("getCollectibleTypeName").NAMEPLATE_ASPECT_RATIO, height: require("getCollectibleTypeName").PREVIEW_SIZE };
+_createForOfIteratorHelperLoose.nameplatePreview = obj3;
+let obj4 = { width: require("getCollectibleTypeName").PREVIEW_SIZE, height: require("getCollectibleTypeName").PREVIEW_SIZE, marginRight: 12, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.profileFrameContainer = obj4;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { width: require("getCollectibleTypeName").PREVIEW_SIZE, height: require("getCollectibleTypeName").PREVIEW_SIZE, marginRight: 12 };
+const result = require("PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityItemPreview.tsx");
 
 export default function FamilyCenterActivityItemPreview(arg0) {
   let displayName;
@@ -156,7 +160,7 @@ export default function FamilyCenterActivityItemPreview(arg0) {
   let product;
   let subscriptionPlanId;
   ({ displayName, product, isSubscription, subscriptionPlanId } = arg0);
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { accessible: true, accessibilityLabel: displayName };
   if (isSubscription) {
     obj = { subscriptionPlanId, styles: tmp };
@@ -166,5 +170,5 @@ export default function FamilyCenterActivityItemPreview(arg0) {
     tmp4Result = tmp4(CollectiblePreview, obj);
   }
   obj.children = tmp4Result;
-  return <closure_3 {...obj} />;
+  return <closure_3 accessible accessibilityLabel={displayName} />;
 };

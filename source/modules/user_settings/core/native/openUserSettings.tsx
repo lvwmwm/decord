@@ -1,17 +1,17 @@
-// Module ID: 5791
-// Function ID: 49505
+// Module ID: 5796
+// Function ID: 49534
 // Name: openUserSettings
-// Dependencies: []
+// Dependencies: [5797, 653, 3982, 686, 2]
 // Exports: openUserSettings
 
-// Module 5791 (openUserSettings)
-const _module = require(dependencyMap[0]);
-const UserSettingsSections = require(dependencyMap[1]).UserSettingsSections;
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/core/native/openUserSettings.tsx");
+// Module 5796 (openUserSettings)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { UserSettingsSections } from "ME";
+
+const result = require("getRootNavigationRef").fileFinishedImporting("modules/user_settings/core/native/openUserSettings.tsx");
 
 export const openUserSettings = (screen) => {
-  let obj = require(dependencyMap[2]);
+  let obj = require(3982) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (tmp) {
     obj = { type: "USER_SETTINGS_MODAL_INIT" };
@@ -23,11 +23,11 @@ export const openUserSettings = (screen) => {
       screen = UserSettingsSections.OVERVIEW;
     }
     obj.section = screen;
-    importDefault(dependencyMap[3]).dispatch(obj);
+    importDefault(686).dispatch(obj);
     rootNavigationRef.navigate("settings", screen);
     if (null != arg1) {
       arg1();
     }
-    const obj3 = importDefault(dependencyMap[3]);
+    const obj3 = importDefault(686);
   }
 };

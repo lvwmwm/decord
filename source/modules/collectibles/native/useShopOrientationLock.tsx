@@ -1,37 +1,39 @@
-// Module ID: 14358
-// Function ID: 108399
+// Module ID: 14472
+// Function ID: 110552
 // Name: useShopOrientationLock
-// Dependencies: []
+// Dependencies: [31, 1553, 8303, 2]
 // Exports: useShopOrientationLock
 
-// Module 14358 (useShopOrientationLock)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = 0;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/native/useShopOrientationLock.tsx");
+// Module 14472 (useShopOrientationLock)
+import result from "result";
+
+const require = arg1;
+let c3 = 0;
+const result = require("handleOrientationChange").fileFinishedImporting("modules/collectibles/native/useShopOrientationLock.tsx");
 
 export const useShopOrientationLock = function useShopOrientationLock() {
   let closure_0 = React.useRef(false);
   const effect = React.useEffect(() => {
     if (!obj.isMetaQuest()) {
-      if (0 === closure_3) {
-        callback(closure_1[2]).lockOrientation("PORTRAIT", true);
-        const obj2 = callback(closure_1[2]);
+      if (0 === outer1_3) {
+        callback(outer1_1[2]).lockOrientation("PORTRAIT", true);
+        const obj2 = callback(outer1_1[2]);
       }
       callback.current = true;
-      closure_3 = closure_3 + 1;
+      outer1_3 = outer1_3 + 1;
       return () => {
-        if (ref.current) {
-          const diff = closure_3 - 1;
-          closure_3 = diff;
+        if (outer1_0.current) {
+          const diff = outer2_3 - 1;
+          outer2_3 = diff;
           if (0 === diff) {
-            let obj = ref(closure_1[2]);
+            let obj = callback(outer2_1[2]);
             obj = { unlockAfterRotatingToPreviousLock: false };
             obj.unlockOrientation(obj);
           }
-          ref.current = false;
+          outer1_0.current = false;
         }
       };
     }
-    const obj = callback(closure_1[1]);
+    obj = callback(outer1_1[1]);
   }, []);
 };

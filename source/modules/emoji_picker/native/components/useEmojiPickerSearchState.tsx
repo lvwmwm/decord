@@ -1,45 +1,47 @@
-// Module ID: 9330
-// Function ID: 72925
+// Module ID: 9337
+// Function ID: 72966
 // Name: useEmojiPickerSearchState
-// Dependencies: []
+// Dependencies: [57, 31, 4991, 682, 1331, 2]
 // Exports: default
 
-// Module 9330 (useEmojiPickerSearchState)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");
+// Module 9337 (useEmojiPickerSearchState)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");
 
 export default function useEmojiPickerSearchState(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const dependencyMap = arg1;
-  const callback = arg2;
-  const ref = React.useRef("");
-  const React = ref;
-  const tmp2 = callback(React.useState(null), 2);
-  let closure_4 = tmp2[1];
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let callback = arg2;
+  ref = ref.useRef("");
+  const tmp2 = callback(ref.useState(null), 2);
+  let _isNativeReflectConstruct = tmp2[1];
   const items = [arg1, arg0, arg2];
   return {
-    handleTextChange: React.useCallback((arr) => {
+    handleTextChange: ref.useCallback((arr) => {
+      const callback = arr;
       if ("" !== arr) {
         let substr = arr;
         if (":" === arr[0]) {
           substr = arr.slice(1);
         }
-        const FrecencyUserSettingsActionCreators = arr(closure_1[4]).FrecencyUserSettingsActionCreators;
+        const FrecencyUserSettingsActionCreators = callback(1331).FrecencyUserSettingsActionCreators;
         const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
-        let obj = { channel: arr, query: substr, count: 0, intention: arg2 };
-        closure_1 = closure_4.searchWithoutFetchingLatest(obj);
-        arr(closure_1[3]).batchUpdates(() => {
-          closure_3.current = arg0;
-          callback(closure_1);
+        let obj = { channel: callback, query: substr, count: 0, intention: _slicedToArray };
+        const dependencyMap = _isNativeReflectConstruct.searchWithoutFetchingLatest(obj);
+        callback(682).batchUpdates(() => {
+          outer1_3.current = closure_0;
+          outer1_4(closure_1);
         });
-        const obj3 = arr(closure_1[3]);
+        const obj3 = callback(682);
       } else {
-        obj = arr(closure_1[3]);
+        obj = callback(682);
         obj.batchUpdates(() => {
-          closure_3.current = "";
-          callback(null);
+          outer1_3.current = "";
+          outer1_4(null);
           const result = closure_1.set(0);
         });
       }

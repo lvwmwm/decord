@@ -1,50 +1,54 @@
-// Module ID: 15837
-// Function ID: 121065
+// Module ID: 15954
+// Function ID: 123238
 // Name: isAnalyticsEndpoint
-// Dependencies: []
+// Dependencies: [5, 4044, 653, 508, 15955, 1443, 1428, 686, 507, 1194, 683, 1921, 1849, 675, 477, 15956, 27, 643, 15957, 15958, 12, 1184, 15961, 1934, 9446, 14636, 8926, 5050, 15967, 12840, 15968, 1430, 2]
 
-// Module 15837 (isAnalyticsEndpoint)
+// Module 15954 (isAnalyticsEndpoint)
+import isOriginalContentTypeDifferent from "isOriginalContentTypeDifferent";
+import closure_5 from "_isNativeReflectConstruct";
+import { AbortCodes } from "ME";
+import ApexExperiment from "ApexExperiment";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "dispatcher";
+
+const require = arg1;
 function isAnalyticsEndpoint(pathname) {
   const uRL = new URL(pathname);
   return regex.test(uRL.pathname);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const AbortCodes = arg1(dependencyMap[2]).AbortCodes;
-let closure_7 = ["<string:2958173008>", "<string:1367850004>"];
-importDefault(dependencyMap[3]).parse. = JSON.parse;
-const idGenerator = new arg1(dependencyMap[4]).IdGenerator();
-let closure_9 = /\/api(\/v\d+)?\/science/;
-let obj = arg1(dependencyMap[6]);
-obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { migrationKilled: false }, variations: { [1]: { migrationKilled: true } } };
-let closure_10 = obj.createApexExperiment(obj);
-let closure_11 = null;
-const subscription = importDefault(dependencyMap[7]).subscribe("LOGOUT", () => {
-  let closure_11 = null;
+let closure_7 = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"];
+require("_createForOfIteratorHelper").parse[""] = JSON.parse;
+const idGenerator = new require("IdGenerator").IdGenerator();
+const re9 = /\/api(\/v\d+)?\/science/;
+ApexExperiment = { name: "2026-07-reject-with-error-kill-switch", kind: "user", defaultConfig: { migrationKilled: false }, variations: { [1]: { migrationKilled: true } } };
+ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+let c11 = null;
+const subscription = require("dispatcher").subscribe("LOGOUT", () => {
+  let c11 = null;
 });
-const importDefaultResult = importDefault(dependencyMap[7]);
-const result = arg1(dependencyMap[8]).setRejectWithMigratedError(function isRejectWithMigratedErrorEnabled() {
-  if (null != closure_11) {
-    let tmp2 = closure_11;
+let result = _isNativeReflectConstruct.setRejectWithMigratedError(function isRejectWithMigratedErrorEnabled() {
+  if (null != c11) {
+    let tmp2 = c11;
   } else {
     tmp2 = !hasLoadedExperiments.hasLoadedExperiments;
     if (!tmp2) {
       const obj = { location: "reject_with_error_migration" };
-      const tmp4 = !config.getConfig(obj).migrationKilled;
-      closure_11 = tmp4;
+      const tmp4 = !ApexExperiment.getConfig(obj).migrationKilled;
+      c11 = tmp4;
       tmp2 = tmp4;
     }
   }
   return tmp2;
 });
-const obj4 = arg1(dependencyMap[8]);
-obj = {
+ApexExperiment = {
   prepareRequest(promise) {
-    const arg1 = promise;
+    const _require = promise;
     function maybeTrackRequest(status) {
-      if (closure_2) {
+      if (c2) {
         const obj = {};
-        ({ url: obj.url, method: obj.method } = status);
+        ({ url: obj.url, method: obj.method } = closure_0);
         status = undefined;
         if (null != status) {
           status = status.status;
@@ -54,16 +58,16 @@ obj = {
         const _performance = performance;
         obj.duration_ms = Math.round(performance.now() - callback);
         callback(maybeTrackRequest[19])(obj);
-        closure_2 = false;
+        c2 = false;
         const tmp3 = callback(maybeTrackRequest[19]);
       }
     }
-    const _default = arg1(maybeTrackRequest[9]).default;
-    const _default2 = arg1(maybeTrackRequest[10]).default;
-    const _default3 = arg1(maybeTrackRequest[12]).default;
+    const _default = _require(maybeTrackRequest[9]).default;
+    const _default2 = _require(maybeTrackRequest[10]).default;
+    const _default3 = _require(maybeTrackRequest[12]).default;
     const importDefault = performance.now();
     if ("/" === promise.url[0]) {
-      obj.url = arg1(maybeTrackRequest[8]).getAPIBaseURL() + obj.url;
+      obj.url = _require(maybeTrackRequest[8]).getAPIBaseURL() + obj.url;
       let tmp2 = "Authorization" in obj.header;
       if (!tmp2) {
         tmp2 = "authorization" in obj.header;
@@ -71,8 +75,8 @@ obj = {
       if (!tmp2) {
         const result = obj.set("Authorization", _default.getToken());
       }
-      const obj6 = arg1(maybeTrackRequest[8]);
-      const result1 = arg1(maybeTrackRequest[15]).updateDynamicSuperProperties();
+      const obj6 = _require(maybeTrackRequest[8]);
+      const result1 = _require(maybeTrackRequest[15]).updateDynamicSuperProperties();
       const superPropertiesBase64 = _default4.getSuperPropertiesBase64();
       if (null != superPropertiesBase64) {
         const result2 = obj.set("X-Super-Properties", superPropertiesBase64);
@@ -93,11 +97,11 @@ obj = {
       if (tmp17) {
         const result4 = obj.set("X-Installation-ID", installationForTracking);
       }
-      if (arg1(maybeTrackRequest[14]).isPlatformEmbedded) {
+      if (_require(maybeTrackRequest[14]).isPlatformEmbedded) {
         let items = [];
-        const tmp22 = arg1(maybeTrackRequest[16]);
+        const tmp22 = _require(maybeTrackRequest[16]);
         if (obj3.isAndroid()) {
-          let LocalizationManager = arg1(maybeTrackRequest[17]).default;
+          let LocalizationManager = _require(maybeTrackRequest[17]).default;
         } else {
           LocalizationManager = tmp22.NativeModules.LocalizationManager;
         }
@@ -108,8 +112,8 @@ obj = {
           }
           items = Languages;
         }
-        const result5 = obj.set("Accept-Language", function populateQValues(items) {
-          let closure_0 = 10;
+        const result5 = obj.set("Accept-Language", (function populateQValues(items) {
+          let c0 = 10;
           const reduced = items.reduce((arr) => {
             if (10 === closure_0) {
               arr.push(arg1);
@@ -121,10 +125,10 @@ obj = {
             return arr;
           }, []);
           return reduced.join(",");
-        }(items));
-        const obj3 = arg1(maybeTrackRequest[14]);
+        })(items));
+        obj3 = _require(maybeTrackRequest[14]);
       }
-      const result6 = obj.set("X-Discord-Locale", arg1(maybeTrackRequest[11]).default.locale);
+      const result6 = obj.set("X-Discord-Locale", _require(maybeTrackRequest[11]).default.locale);
       const tmp31 = importDefault(maybeTrackRequest[18])();
       if (null != tmp31) {
         const result7 = obj.set("X-Discord-Timezone", tmp31);
@@ -162,7 +166,7 @@ obj = {
         if (!isAnalyticsEndpoint(uRL.pathname)) {
           const _URLSearchParams = URLSearchParams;
           const str16 = new URLSearchParams();
-          const _HermesInternal = HermesInternal;
+          let _HermesInternal = HermesInternal;
           str16.append("query", "@http.x_client_trace_id:\"" + tmp46 + "\"");
           str16.append("showAllSpans", "true");
           const _HermesInternal2 = HermesInternal;
@@ -172,12 +176,12 @@ obj = {
           }
           const obj4 = importDefault(maybeTrackRequest[5]);
         }
-        const tmp46 = generateResult;
+        tmp46 = generateResult;
       }
-      const obj2 = arg1(maybeTrackRequest[15]);
+      let obj2 = _require(maybeTrackRequest[15]);
     }
     const importAll = !isAnalyticsEndpoint(promise.url);
-    const _default4 = arg1(maybeTrackRequest[13]).default;
+    _default4 = _require(maybeTrackRequest[13]).default;
     importAll(maybeTrackRequest[20]).report("Network", "Sending " + promise.method + " to " + promise.url);
     promise.on("response", (status) => {
       let method;
@@ -194,7 +198,7 @@ obj = {
         const _HermesInternal = HermesInternal;
         str = "and body: " + text;
       }
-      ({ method, url } = status);
+      ({ method, url } = closure_0);
       status = undefined;
       if (null != status) {
         status = status.status;
@@ -206,7 +210,7 @@ obj = {
       let method;
       let url;
       let obj = callback2(maybeTrackRequest[20]);
-      ({ method, url } = status);
+      ({ method, url } = promise);
       status = undefined;
       if (null != status) {
         status = status.status;
@@ -220,8 +224,8 @@ obj = {
         if ("parse" in status) {
           if (status.parse) {
             let str = "[FILTERED]";
-            if (closure_7.includes(status.url)) {
-              const xhr = status.xhr;
+            if (outer1_7.includes(promise.url)) {
+              const xhr = promise.xhr;
               let substr;
               if (null != xhr) {
                 const responseText = xhr.responseText;
@@ -231,9 +235,9 @@ obj = {
               }
               str = substr;
             }
+            obj = { category: "superagent", message: "Failed to parse HTTP response." };
             obj = {};
-            obj = {};
-            ({ method: obj4.method, url: obj4.url } = status);
+            ({ method: obj4.method, url: obj4.url } = promise);
             obj.responseText = str;
             obj.status = status.status;
             obj.data = obj;
@@ -246,14 +250,14 @@ obj = {
     });
   },
   interceptResponse(statusCode) {
-    const arg1 = statusCode;
-    const importDefault = arg1;
-    const importAll = arg2;
+    const _require = statusCode;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
     if (400 === statusCode.statusCode) {
-      const body = statusCode.body;
+      let body = statusCode.body;
       if (null != body) {
         if (body.captcha_key) {
-          const items = [arg1(dependencyMap[23])(dependencyMap[22], dependencyMap.paths), arg1(dependencyMap[23])(dependencyMap[24], dependencyMap.paths)];
+          const items = [_require(1934)(15961, dependencyMap.paths), _require(1934)(9446, dependencyMap.paths)];
           const allPromises = Promise.all(items);
           const nextPromise = Promise.all(items).then((arg0) => {
             const iter = arg0[Symbol.iterator]();
@@ -272,7 +276,7 @@ obj = {
             if (!tmp3) {
               iter.return();
             }
-            return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(arg0.body));
+            return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(statusCode.body));
           });
           Promise.all(items).then((arg0) => {
             const iter = arg0[Symbol.iterator]();
@@ -291,19 +295,19 @@ obj = {
             if (!tmp3) {
               iter.return();
             }
-            return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(arg0.body));
-          }).then((X-Captcha-Key) => {
+            return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(statusCode.body));
+          }).then((X_Captcha_Key) => {
             let captcha_rqtoken;
             let captcha_session_id;
             ({ captcha_rqtoken, captcha_session_id } = X_Captcha_Key);
-            const obj = { X-Captcha-Key: X_Captcha_Key.captcha_key };
+            const obj = { "X-Captcha-Key": X_Captcha_Key.captcha_key };
             if (null != captcha_rqtoken) {
-              obj.X-Captcha-Rqtoken = captcha_rqtoken;
+              obj["X-Captcha-Rqtoken"] = captcha_rqtoken;
             }
             if (null != captcha_session_id) {
-              obj.X-Captcha-Session-Id = captcha_session_id;
+              obj["X-Captcha-Session-Id"] = captcha_session_id;
             }
-            arg1(obj);
+            callback(obj);
           }).catch(arg2);
           let flag = true;
           const nextPromise1 = Promise.all(items).then((arg0) => {
@@ -323,19 +327,19 @@ obj = {
             if (!tmp3) {
               iter.return();
             }
-            return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(arg0.body));
-          }).then((X-Captcha-Key) => {
+            return nextResult.default.showCaptchaAsync(nextResult1.extractCaptchaPropsFromResponse(statusCode.body));
+          }).then((X_Captcha_Key) => {
             let captcha_rqtoken;
             let captcha_session_id;
             ({ captcha_rqtoken, captcha_session_id } = X_Captcha_Key);
-            const obj = { X-Captcha-Key: X_Captcha_Key.captcha_key };
+            const obj = { "X-Captcha-Key": X_Captcha_Key.captcha_key };
             if (null != captcha_rqtoken) {
-              obj.X-Captcha-Rqtoken = captcha_rqtoken;
+              obj["X-Captcha-Rqtoken"] = captcha_rqtoken;
             }
             if (null != captcha_session_id) {
-              obj.X-Captcha-Session-Id = captcha_session_id;
+              obj["X-Captcha-Session-Id"] = captcha_session_id;
             }
-            arg1(obj);
+            callback(obj);
           });
         }
         return flag;
@@ -351,13 +355,13 @@ obj = {
         const body3 = statusCode.body;
         if (null != body3) {
           if (body3.mfa) {
-            const promise4 = arg1(dependencyMap[23])(dependencyMap[25], dependencyMap.paths);
-            arg1(dependencyMap[23])(dependencyMap[25], dependencyMap.paths).then((openMFAModal) => {
-              openMFAModal.openMFAModal(openMFAModal.body.mfa, arg1, arg2);
+            const promise4 = _require(1934)(14636, dependencyMap.paths);
+            _require(1934)(14636, dependencyMap.paths).then((openMFAModal) => {
+              openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
             }).catch(arg2);
             flag = true;
-            const nextPromise2 = arg1(dependencyMap[23])(dependencyMap[25], dependencyMap.paths).then((openMFAModal) => {
-              openMFAModal.openMFAModal(openMFAModal.body.mfa, arg1, arg2);
+            const nextPromise2 = _require(1934)(14636, dependencyMap.paths).then((openMFAModal) => {
+              openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
             });
           }
         }
@@ -369,11 +373,11 @@ obj = {
       code1 = body4.code;
     }
     if (obj.isLimitedAccessErrorCode(statusCode.statusCode, code1)) {
-      tmp6(tmp7[23])(tmp7[27], tmp7.paths).then((arg0) => {
+      tmp6(1934)(5050, dependencyMap.paths).then((arg0) => {
         arg0.default();
       });
       flag = false;
-      const promise3 = tmp6(tmp7[23])(tmp7[27], tmp7.paths);
+      const promise3 = tmp6(1934)(5050, dependencyMap.paths);
     } else {
       const body5 = statusCode.body;
       let code2;
@@ -381,8 +385,8 @@ obj = {
         code2 = body5.code;
       }
       if (tmp6Result.isLimitedAccessErrorCode(statusCode.statusCode, code2)) {
-        arg1(dependencyMap[23])(dependencyMap[29], dependencyMap.paths).then((arg0) => {
-          const body = arg0.body;
+        _require(1934)(12840, dependencyMap.paths).then((arg0) => {
+          const body = statusCode.body;
           let guild_id;
           if (null != body) {
             guild_id = body.guild_id;
@@ -390,7 +394,7 @@ obj = {
           arg0.default(guild_id);
         });
         flag = false;
-        const promise2 = arg1(dependencyMap[23])(dependencyMap[29], dependencyMap.paths);
+        const promise2 = _require(1934)(12840, dependencyMap.paths);
       } else {
         flag = 403 === statusCode.statusCode;
         if (flag) {
@@ -402,25 +406,23 @@ obj = {
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          arg1(dependencyMap[23])(dependencyMap[30], dependencyMap.paths).then((openRestrictedHoursModal) => {
+          _require(1934)(15968, dependencyMap.paths).then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });
           flag = false;
-          const promise = arg1(dependencyMap[23])(dependencyMap[30], dependencyMap.paths);
+          const promise = _require(1934)(15968, dependencyMap.paths);
         }
       }
-      const tmp6Result = tmp6(tmp7[28]);
+      tmp6Result = tmp6(15967);
     }
   }
 };
-arg1(dependencyMap[8]).setRequestPatch(obj);
-const obj5 = arg1(dependencyMap[8]);
-arg1(dependencyMap[8]).setAwaitOnline(() => {
+ApexExperiment = _isNativeReflectConstruct.setRequestPatch(ApexExperiment);
+_isNativeReflectConstruct.setAwaitOnline((() => {
   // CreateGeneratorClosureLongIndex (0x67)
   let closure_0 = callback(tmp);
   return function() {
     return callback(...arguments);
   };
-}());
-const obj7 = arg1(dependencyMap[8]);
-const result1 = arg1(dependencyMap[32]).fileFinishedImporting("lib/superagentPatch.tsx");
+})());
+let result1 = require("ME").fileFinishedImporting("lib/superagentPatch.tsx");

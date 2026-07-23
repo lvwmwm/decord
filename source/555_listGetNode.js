@@ -1,7 +1,7 @@
 // Module ID: 555
 // Function ID: 6701
 // Name: listGetNode
-// Dependencies: []
+// Dependencies: [518, 552]
 
 // Module 555 (listGetNode)
 function listGetNode(next) {
@@ -22,23 +22,22 @@ function listGetNode(next) {
 }
 
 export default function getSideChannelList() {
-  const obj = {
+  let obj = {
     assert(arg0) {
       if (!obj.has(arg0)) {
-        let tmp3 = lib(obj[0]);
+        let tmp3 = outer1_0(obj[0]);
         const prototype = tmp3.prototype;
-        tmp3 = new tmp3("Side channel does not contain " + lib(obj[1])(arg0));
+        tmp3 = new tmp3("Side channel does not contain " + outer1_0(obj[1])(arg0));
         throw tmp3;
       }
     },
     delete: function _delete(arg0) {
-      let next = lib;
-      if (lib) {
-        next = lib.next;
+      if (next) {
+        next = next.next;
       }
       let tmp3;
-      if (lib) {
-        tmp3 = callback(tmp2, arg0, true);
+      if (next) {
+        tmp3 = outer1_2(tmp2, arg0, true);
       }
       let tmp6 = tmp3;
       if (tmp3) {
@@ -48,14 +47,14 @@ export default function getSideChannelList() {
         tmp6 = next === tmp3;
       }
       if (tmp6) {
-        let lib;
+        next = undefined;
       }
       return tmp3;
     },
     get(arg0) {
       let tmp2;
       if (closure_0) {
-        const iter = callback(tmp, arg0);
+        const iter = outer1_2(tmp, arg0);
         let value = iter;
         if (iter) {
           value = iter.value;
@@ -67,15 +66,15 @@ export default function getSideChannelList() {
     has(arg0) {
       let tmp3 = !tmp2;
       if (!!closure_0) {
-        tmp3 = callback(tmp, arg0);
+        tmp3 = outer1_2(tmp, arg0);
       }
       return tmp3;
     },
     set(key, value) {
       if (!obj) {
-        let obj = { next: undefined };
+        obj = { next: undefined };
       }
-      const tmp = callback(obj, key);
+      const tmp = outer1_2(obj, key);
       if (tmp) {
         tmp.value = value;
       } else {
@@ -84,6 +83,5 @@ export default function getSideChannelList() {
       }
     }
   };
-  const dependencyMap = obj;
   return obj;
 };

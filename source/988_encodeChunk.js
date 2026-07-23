@@ -1,5 +1,5 @@
 // Module ID: 988
-// Function ID: 10636
+// Function ID: 10637
 // Name: encodeChunk
 // Dependencies: []
 
@@ -10,17 +10,17 @@ function encodeChunk(arg0, arg1, arg2) {
   if (arg1 < arg2) {
     do {
       let sum = (arg0[sum1] << 16 & 16711680) + (arg0[sum1 + 1] << 8 & 65280) + (255 & arg0[sum1 + 2]);
-      let tmp3 = closure_0;
-      let tmp4 = closure_0;
-      let tmp5 = closure_0;
-      let tmp6 = closure_0;
-      let arr = items.push(closure_0[sum >> 18 & 63] + closure_0[sum >> 12 & 63] + closure_0[sum >> 6 & 63] + closure_0[63 & sum]);
+      let tmp3 = items;
+      let tmp4 = items;
+      let tmp5 = items;
+      let tmp6 = items;
+      let arr = items.push(items[sum >> 18 & 63] + items[sum >> 12 & 63] + items[sum >> 6 & 63] + items[63 & sum]);
       sum1 = sum1 + 3;
     } while (sum1 < arg2);
   }
   return items.join("");
 }
-const items = [];
+let items = [];
 let num = 0;
 do {
   items[num] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"[num];
@@ -36,7 +36,7 @@ arg5.base64StringFromByteArray = function base64StringFromByteArray(arr2) {
     do {
       sum = num + 16383;
       let tmp5 = sum;
-      let tmp3 = closure_1;
+      let tmp3 = encodeChunk;
       if (sum > diff) {
         tmp5 = diff;
       }

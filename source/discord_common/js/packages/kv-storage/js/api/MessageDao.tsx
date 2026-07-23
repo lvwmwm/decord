@@ -1,12 +1,13 @@
 // Module ID: 1897
-// Function ID: 21268
+// Function ID: 21269
 // Name: makeCell
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [6, 7, 1887, 1889, 2]
 
 // Module 1897 (makeCell)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
+const require = arg1;
 function makeCell(arg0, arg1, data) {
   const tmp = makeStorageId(data.id);
   const items = [arg0, arg1, tmp];
@@ -15,37 +16,37 @@ function makeCell(arg0, arg1, data) {
 function makeStorageId(id) {
   return id.padStart(19, "0");
 }
-const tmp3 = () => {
+const tmp3 = (() => {
   class MessageDaoTransaction {
     constructor(arg0) {
-      tmp = __exportStarResult1(this, MessageDaoTransaction);
+      tmp = outer1_2(this, MessageDaoTransaction);
       this.transaction = arg0;
       return;
     }
   }
-  const arg1 = MessageDaoTransaction;
   let obj = {
     key: "put",
     value(arg0, arg1, arg2) {
       let Replace = arg3;
       if (arg3 === undefined) {
-        Replace = MessageDaoTransaction(closure_1[3]).ConflictOptions.Replace;
+        Replace = MessageDaoTransaction(outer1_1[3]).ConflictOptions.Replace;
       }
       const transaction = this.transaction;
-      transaction.put(callback2(arg0, arg1, arg2), Replace);
+      transaction.put(outer1_5(arg0, arg1, arg2), Replace);
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "putAll",
     value(arg0, arg1, arr) {
       let Replace = arg3;
-      const MessageDaoTransaction = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       if (arg3 === undefined) {
-        Replace = MessageDaoTransaction(arg1[3]).ConflictOptions.Replace;
+        Replace = MessageDaoTransaction(outer1_1[3]).ConflictOptions.Replace;
       }
       const transaction = this.transaction;
-      transaction.putAll(arr.map((arg0) => callback(arg0, arg1, arg0)), Replace);
+      transaction.putAll(arr.map((arg0) => outer2_5(closure_0, closure_1, arg0)), Replace);
     }
   };
   items[1] = obj;
@@ -84,7 +85,7 @@ const tmp3 = () => {
     key: "deleteMessage",
     value(arg0, arg1, arg2) {
       const transaction = this.transaction;
-      const items = [arg0, arg1, callback3(arg2)];
+      const items = [arg0, arg1, outer1_6(arg2)];
       transaction.delete(items);
     }
   };
@@ -105,16 +106,16 @@ const tmp3 = () => {
   };
   items[9] = {
     key: "trimChannelsIn",
-    value(prefix, closure_12) {
+    value(prefix, outer5_12) {
       const messages = this.transaction.messages;
-      messages.trimChannelsIn(prefix, closure_12);
+      messages.trimChannelsIn(prefix, outer5_12);
     }
   };
   items[10] = {
     key: "trimChannelsNotIn",
-    value(prefix, closure_11) {
+    value(prefix, outer5_11) {
       const messages = this.transaction.messages;
-      messages.trimChannelsNotIn(prefix, closure_11);
+      messages.trimChannelsNotIn(prefix, outer5_11);
     }
   };
   const items1 = [
@@ -127,14 +128,15 @@ const tmp3 = () => {
     {
       key: "fromDatabaseTransaction",
       value(prefix, tableId, transaction) {
-        const tableTransaction = new MessageDaoTransaction(closure_1[2]).TableTransaction(prefix, tableId, transaction);
+        const tableTransaction = new MessageDaoTransaction(outer1_1[2]).TableTransaction(prefix, tableId, transaction);
         return new MessageDaoTransaction(tableTransaction);
       }
     }
   ];
   return callback(MessageDaoTransaction, items, items1);
-}();
-const tmp2 = () => {
+})();
+let closure_4 = tmp3;
+const tmp2 = (() => {
   class MessageDao {
     constructor(arg0, arg1, arg2) {
       flag = arg3;
@@ -142,23 +144,22 @@ const tmp2 = () => {
       if (arg3 === undefined) {
         flag = true;
       }
-      tmp = __exportStarResult1(self, MessageDao);
+      tmp = outer1_2(self, MessageDao);
       self.originalPrefix = arg0;
       items = [];
       items[0] = arg0;
-      table = new MessageDao(closure_1[2]).Table(items, arg1, arg2, flag);
+      table = new MessageDao(outer1_1[2]).Table(items, arg1, arg2, flag);
       self.table = table;
       return;
     }
   }
-  const arg1 = MessageDao;
   let obj = {
     key: "prefix",
     get() {
       return this.table.prefix;
     }
   };
-  const items = [obj, , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , ];
   obj = {
     key: "withoutLogging",
     value() {
@@ -170,7 +171,7 @@ const tmp2 = () => {
     key: "get",
     value(arg0, arg1, arg2) {
       const table = this.table;
-      const items = [arg0, arg1, callback3(arg2)];
+      const items = [arg0, arg1, outer1_6(arg2)];
       return table.get(items);
     }
   };
@@ -180,15 +181,15 @@ const tmp2 = () => {
     value(arg0, arg1, limit) {
       const table = this.table;
       const items = [arg0, arg1];
-      return table.getMany(items, { ordering: MessageDao(closure_1[3]).Ordering.Descending, limit });
+      return table.getMany(items, { ordering: MessageDao(outer1_1[3]).Ordering.Descending, limit });
     }
   };
   items[4] = {
     key: "getRange",
     value(arg0, arg1, arg2, arg3, arg4) {
       const table = this.table;
-      const items = [arg0, arg1, callback3(arg2)];
-      const items1 = [arg0, arg1, callback3(arg3)];
+      const items = [arg0, arg1, outer1_6(arg2)];
+      const items1 = [arg0, arg1, outer1_6(arg3)];
       return table.getRange(items, items1, arg4);
     }
   };
@@ -204,22 +205,23 @@ const tmp2 = () => {
     value(arg0, arg1, arg2) {
       let Replace = arg3;
       if (arg3 === undefined) {
-        Replace = MessageDao(closure_1[3]).ConflictOptions.Replace;
+        Replace = MessageDao(outer1_1[3]).ConflictOptions.Replace;
       }
       const table = this.table;
-      return table.put(callback2(arg0, arg1, arg2), Replace);
+      return table.put(outer1_5(arg0, arg1, arg2), Replace);
     }
   };
   items[7] = {
     key: "putAll",
     value(arg0, arg1, arr) {
       let Replace = arg3;
-      const MessageDao = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       if (arg3 === undefined) {
-        Replace = MessageDao(arg1[3]).ConflictOptions.Replace;
+        Replace = MessageDao(outer1_1[3]).ConflictOptions.Replace;
       }
       const table = this.table;
-      return table.putAll(arr.map((arg0) => callback(arg0, arg1, arg0)), Replace);
+      return table.putAll(arr.map((arg0) => outer2_5(closure_0, closure_1, arg0)), Replace);
     }
   };
   items[8] = {
@@ -249,28 +251,28 @@ const tmp2 = () => {
     key: "deleteMessage",
     value(arg0, arg1, arg2) {
       const table = this.table;
-      const items = [arg0, arg1, callback3(arg2)];
+      const items = [arg0, arg1, outer1_6(arg2)];
       return table.delete(items);
     }
   };
   items[12] = {
     key: "transaction",
     value(arg0, arg1) {
-      const MessageDao = arg0;
+      let closure_0 = arg0;
       const table = this.table;
-      return table.transaction((arg0) => arg0(new closure_4(arg0)), arg1);
+      return table.transaction((arg0) => callback(new outer2_4(arg0)), arg1);
     }
   };
   items[13] = {
     key: "upgradeTransaction",
     value(arg0) {
       const table = this.table;
-      return new closure_4(table.upgradeTransaction(arg0));
+      return new outer1_4(table.upgradeTransaction(arg0));
     }
   };
   return callback(MessageDao, items);
-}();
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/MessageDao.tsx");
+})();
+const result = require("prefixCell").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/MessageDao.tsx");
 
 export const MessageDao = tmp2;
 export const MessageDaoTransaction = tmp3;

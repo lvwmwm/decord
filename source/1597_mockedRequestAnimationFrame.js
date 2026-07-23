@@ -1,9 +1,10 @@
 // Module ID: 1597
-// Function ID: 17811
+// Function ID: 17812
 // Name: mockedRequestAnimationFrame
 // Dependencies: []
 
 // Module 1597 (mockedRequestAnimationFrame)
 arg5.mockedRequestAnimationFrame = function mockedRequestAnimationFrame(arg0) {
-  return setTimeout(() => arg0(performance.now()), 0);
+  let closure_0 = arg0;
+  return setTimeout(() => callback(performance.now()), 0);
 };

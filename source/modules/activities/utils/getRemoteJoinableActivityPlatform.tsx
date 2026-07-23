@@ -1,15 +1,19 @@
-// Module ID: 10902
-// Function ID: 84737
+// Module ID: 10912
+// Function ID: 84786
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: []
+// Dependencies: [5067, 4145, 653, 478, 1360, 10449, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 10902 (getRemoteJoinableActivityPlatform)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ ActivityFlags: closure_4, ActivityGamePlatforms: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activities/utils/getRemoteJoinableActivityPlatform.tsx");
+// Module 10912 (getRemoteJoinableActivityPlatform)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ ActivityFlags: closure_4, ActivityGamePlatforms: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/activities/utils/getRemoteJoinableActivityPlatform.tsx");
 
 export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActivityPlatform(presenceActivity) {
   if (null == presenceActivity) {
@@ -23,7 +27,7 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
         num = flags2;
       }
       if (obj5.hasFlag(num, constants.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN)) {
-        const remoteApplicationActivity = remoteApplicationActivity.getRemoteApplicationActivity(application_id);
+        remoteApplicationActivity = remoteApplicationActivity.getRemoteApplicationActivity(application_id);
         let tmp4 = null;
         if (null != remoteApplicationActivity) {
           tmp4 = null;
@@ -43,7 +47,7 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
                 }
               }
               tmp4 = tmp18;
-              const obj4 = arg1(dependencyMap[4]);
+              obj4 = require(1360) /* hasFlag */;
             } else {
               tmp4 = null;
               if (!connected.isConnected(remoteApplicationActivity.application_id)) {
@@ -51,23 +55,23 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
                 if (obj2.isAndroid()) {
                   let tmp12 = platform === constants2.ANDROID;
                 } else {
-                  const tmp11 = !arg1(dependencyMap[3]).isIOS();
+                  const tmp11 = !require(478) /* isWindows */.isIOS();
                   tmp12 = !tmp11;
                   if (!tmp11) {
                     tmp12 = platform === constants2.IOS;
                   }
-                  const obj3 = arg1(dependencyMap[3]);
+                  const obj3 = require(478) /* isWindows */;
                 }
                 tmp4 = null;
-                const obj2 = arg1(dependencyMap[3]);
+                obj2 = require(478) /* isWindows */;
               }
             }
           }
-          const obj = arg1(dependencyMap[5]);
+          obj = require(10449) /* _computeActivityPartyPrivacyFlags */;
         }
         return tmp4;
       }
-      const obj5 = arg1(dependencyMap[4]);
+      obj5 = require(1360) /* hasFlag */;
     }
     return null;
   }

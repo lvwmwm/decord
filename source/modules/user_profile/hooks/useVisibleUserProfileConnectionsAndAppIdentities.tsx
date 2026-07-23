@@ -1,20 +1,21 @@
-// Module ID: 12002
-// Function ID: 92747
+// Module ID: 12118
+// Function ID: 94924
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: []
+// Dependencies: [31, 12119, 12120, 5470, 1327, 4814, 2]
 // Exports: default
 
-// Module 12002 (useVisibleUserProfileConnectionsAndAppIdentities)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_profile/hooks/useVisibleUserProfileConnectionsAndAppIdentities.tsx");
+// Module 12118 (useVisibleUserProfileConnectionsAndAppIdentities)
+import result from "result";
+
+const require = arg1;
+const result = require("useUserProfileConnections").fileFinishedImporting("modules/user_profile/hooks/useVisibleUserProfileConnectionsAndAppIdentities.tsx");
 
 export default function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
-  const filteredAppIdentities = importDefault(dependencyMap[1])(arg0).filteredAppIdentities;
-  const arg1 = filteredAppIdentities;
-  const tmp = importDefault(dependencyMap[2])(arg0);
-  const importDefault = tmp;
+  const filteredAppIdentities = importDefault(memo[1])(arg0).filteredAppIdentities;
+  const tmp = importDefault(memo[2])(arg0);
+  importDefault = tmp;
   const items = [filteredAppIdentities];
-  const memo = React.useMemo(() => {
+  memo = found.useMemo(() => {
     let mapped;
     if (null != filteredAppIdentities) {
       mapped = filteredAppIdentities.map((application_id) => application_id.application_id);
@@ -24,22 +25,23 @@ export default function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
     }
     return new Set(mapped);
   }, items);
-  const dependencyMap = memo;
   const items1 = [];
   HermesBuiltin.arraySpread(memo, 0);
-  const tmp3 = importDefault(dependencyMap[3]);
-  const found = importDefault(dependencyMap[3])(items1).filter(arg1(dependencyMap[4]).isNotNullish);
-  const React = found;
-  const tmp3Result = importDefault(dependencyMap[3])(items1);
+  const tmp3 = importDefault(memo[3]);
+  found = importDefault(memo[3])(items1).filter(filteredAppIdentities(memo[4]).isNotNullish);
+  const tmp3Result = importDefault(memo[3])(items1);
   const items2 = [filteredAppIdentities, found];
   const items3 = [tmp, memo];
   return {
-    appIdentities: React.useMemo(() => {
-      const mapped = filteredAppIdentities.map((identity) => ({ identity, application: closure_3.find((id) => id.id === id.application_id) }));
+    appIdentities: found.useMemo(() => {
+      const mapped = filteredAppIdentities.map((identity) => {
+        let closure_0 = identity;
+        return { identity, application: outer1_3.find((id) => id.id === identity.application_id) };
+      });
       return mapped.filter((application) => null != application.application);
     }, items2),
-    connections: React.useMemo(() => tmp.filter((type) => {
-      const value = callback(set[5]).get(type.type);
+    connections: found.useMemo(() => tmp.filter((type) => {
+      const value = callback(memo[5]).get(type.type);
       let tmp2 = null == value;
       if (!tmp2) {
         const migrationData = value.migrationData;
@@ -50,7 +52,7 @@ export default function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
         tmp2 = !obj2.getMigrationExperimentEnabled("useVisibleUserProfileConnectionsAndAppIdentities");
       }
       if (!tmp2) {
-        tmp2 = !set.has(value.migrationData.replacedBy);
+        tmp2 = !outer1_2.has(value.migrationData.replacedBy);
       }
       return tmp2;
     }), items3)

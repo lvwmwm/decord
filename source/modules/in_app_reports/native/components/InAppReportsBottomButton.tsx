@@ -1,64 +1,68 @@
-// Module ID: 12232
-// Function ID: 93867
+// Module ID: 12346
+// Function ID: 96018
 // Name: InAppReportsBottomButton
-// Dependencies: []
+// Dependencies: [31, 27, 482, 33, 4130, 689, 1212, 2298, 4126, 4543, 1273, 2]
 // Exports: default
 
-// Module 12232 (InAppReportsBottomButton)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: {}, paddingHorizontal: { paddingHorizontal: 16 } };
-obj = { 9223372036854775807: 24, 0: 24, 9223372036854775807: null, -9223372036854775808: "e3a50d090de2ca1d8928677d5f100909", backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.divider = obj;
-obj.descriptionText = {};
-const tmp3 = arg1(dependencyMap[3]);
-obj.errorText = { color: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
-let closure_6 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBottomButton.tsx");
+// Module 12346 (InAppReportsBottomButton)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flex: 0, alignSelf: "stretch", paddingBottom: 12 }, paddingHorizontal: { paddingHorizontal: 16 } };
+_createForOfIteratorHelperLoose = { height: 1, alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginBottom: 16 };
+_createForOfIteratorHelperLoose.divider = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.descriptionText = { lineHeight: 16, textAlign: "center", marginBottom: 12 };
+let obj1 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: require("sum").Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
+_createForOfIteratorHelperLoose.errorText = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("sum").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBottomButton.tsx");
 
 export default function InAppReportsBottomButton(button) {
   let disabled;
   let hasError;
+  let importDefault;
   let isModeratorReport;
   button = button.button;
-  const arg1 = button;
-  ({ onPress: closure_1, isModeratorReport } = button);
+  ({ onPress: importDefault, isModeratorReport } = button);
   ({ disabled, hasError } = button);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   if (null == button) {
     return null;
   } else {
-    const string3 = arg1(dependencyMap[6]).intl.string;
+    const string3 = button(1212).intl.string;
     if ("submit" === button.type) {
-      const intl2 = arg1(dependencyMap[6]).intl;
+      const intl2 = button(1212).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        let stringResult = string(importDefault(tmp7[7]).ZUyreS);
+        let stringResult = string(importDefault(2298).ZUyreS);
       } else {
-        stringResult = string(tmp6(tmp7[6]).t.G+vU89);
-        const intl3 = tmp6(tmp7[6]).intl;
-        const formatResult = intl3.format(tmp6(tmp7[6]).t.Q0tSKT, {});
+        stringResult = string(tmp6(1212).t["G+vU89"]);
+        const intl3 = tmp6(1212).intl;
+        const formatResult = intl3.format(tmp6(1212).t.Q0tSKT, {});
       }
     } else {
       if ("next" === button.type) {
-        const intl = arg1(dependencyMap[6]).intl;
-        let stringResult1 = intl.string(arg1(dependencyMap[6]).t.PDTjLN);
+        const intl = button(1212).intl;
+        let stringResult1 = intl.string(button(1212).t.PDTjLN);
       } else {
         stringResult1 = tmp33;
         if ("cancel" === button.type) {
-          const intl5 = arg1(dependencyMap[6]).intl;
-          stringResult1 = intl5.string(arg1(dependencyMap[6]).t.ETE/oC);
+          const intl5 = button(1212).intl;
+          stringResult1 = intl5.string(button(1212).t["ETE/oC"]);
         }
       }
-      const intl4 = arg1(dependencyMap[6]).intl;
+      const intl4 = button(1212).intl;
       const string2 = intl4.string;
       if (isModeratorReport) {
-        let string2Result = string2(importDefault(tmp14[7]).psKFdJ);
+        let string2Result = string2(importDefault(2298).psKFdJ);
       } else {
-        string2Result = string2(arg1(tmp14[6]).t.h6D8Vy);
+        string2Result = string2(button(1212).t.h6D8Vy);
       }
       let obj = { style: tmp.container };
       obj = { style: tmp.divider };
@@ -66,8 +70,8 @@ export default function InAppReportsBottomButton(button) {
       obj = { style: tmp.paddingHorizontal };
       let tmp20 = null;
       if (null != tmp2) {
-        const obj1 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.descriptionText, children: tmp2 };
-        tmp20 = callback(arg1(dependencyMap[8]).Text, obj1);
+        const obj1 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp2 };
+        tmp20 = callback(button(4126).Text, obj1);
       }
       const items1 = [tmp20, , ];
       const obj2 = {
@@ -78,11 +82,11 @@ export default function InAppReportsBottomButton(button) {
         text: stringResult1,
         variant: str2
       };
-      items1[1] = callback(arg1(dependencyMap[9]).Button, obj2);
+      items1[1] = callback(button(4543).Button, obj2);
       let tmp27 = null;
       if (hasError) {
         const obj3 = { style: tmp.errorText, children: string2Result };
-        tmp27 = callback(arg1(dependencyMap[10]).LegacyText, obj3);
+        tmp27 = callback(button(1273).LegacyText, obj3);
       }
       items1[2] = tmp27;
       obj.children = items1;

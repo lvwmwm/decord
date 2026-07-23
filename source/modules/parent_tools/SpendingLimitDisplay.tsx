@@ -1,10 +1,15 @@
-// Module ID: 13698
-// Function ID: 103675
+// Module ID: 13812
+// Function ID: 105831
 // Name: getSpendingLimitDisplayState
-// Dependencies: []
+// Dependencies: [1316, 6769, 1851, 566, 13730, 5618, 5619, 1212, 2198, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 13698 (getSpendingLimitDisplayState)
+// Module 13812 (getSpendingLimitDisplayState)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { SubscriptionIntervalTypes } from "GuildFeatures";
+
+const require = arg1;
 function getSpendingLimitDisplayState(amount) {
   if (null == amount) {
     let obj = { kind: "off" };
@@ -14,13 +19,13 @@ function getSpendingLimitDisplayState(amount) {
     return obj;
   } else {
     const currency = amount.currency;
-    const obj8 = arg1(dependencyMap[5]);
-    const formatRateResult = obj8.formatRate(arg1(dependencyMap[5]).formatPrice(amount.amount, currency), SubscriptionIntervalTypes.MONTH, 1);
+    const obj8 = require(5618) /* formatSingleCurrencyPrice */;
+    const formatRateResult = obj8.formatRate(require(5618) /* formatSingleCurrencyPrice */.formatPrice(amount.amount, currency), SubscriptionIntervalTypes.MONTH, 1);
     if (arg1 >= amount.amount) {
       const obj1 = { kind: "spent", monthlyText: formatRateResult };
       return obj1;
     } else {
-      const tmp12 = arg1(dependencyMap[6]).CurrencyExponents[amount.currency];
+      const tmp12 = require(5619) /* CurrencyCodes */.CurrencyExponents[amount.currency];
       let num = 2;
       if (null != tmp12) {
         num = tmp12;
@@ -28,29 +33,26 @@ function getSpendingLimitDisplayState(amount) {
       const diff = amount.amount - arg1;
       if (diff <= 10 * 10 ** num) {
         const obj2 = { kind: "close-to-limit", monthlyText: formatRateResult };
-        const intl = arg1(dependencyMap[7]).intl;
+        const intl = require(1212) /* getSystemLocale */.intl;
         let obj3 = {};
-        obj3 = arg1(dependencyMap[5]);
+        obj3 = require(5618) /* formatSingleCurrencyPrice */;
         obj3.amount = obj3.formatPrice(diff, currency);
-        obj2.remainingText = intl.formatToPlainString(importDefault(dependencyMap[8]).+Q+bU1, obj3);
+        obj2.remainingText = intl.formatToPlainString(importDefault(2198)["+Q+bU1"], obj3);
         obj = obj2;
       } else {
         obj = { kind: "on", monthlyText: formatRateResult };
       }
       return obj;
     }
-    const obj9 = arg1(dependencyMap[5]);
+    const obj9 = require(5618) /* formatSingleCurrencyPrice */;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const SubscriptionIntervalTypes = arg1(dependencyMap[2]).SubscriptionIntervalTypes;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/parent_tools/SpendingLimitDisplay.tsx");
+const result = require("GuildFeatures").fileFinishedImporting("modules/parent_tools/SpendingLimitDisplay.tsx");
 
 export const useSpendingLimitFromUserSettings = function useSpendingLimitFromUserSettings() {
-  const items = [closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const safetySettings = settings.settings.safetySettings;
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const safetySettings = outer1_3.settings.safetySettings;
     let oneTimePurchaseLimit;
     if (null != safetySettings) {
       const spendingLimitSettings = safetySettings.spendingLimitSettings;
@@ -67,13 +69,13 @@ export const useSpendingLimitFromUserSettings = function useSpendingLimitFromUse
       tmp2 = obj;
     }
     return tmp2;
-  }, undefined, arg1(dependencyMap[4]).spendingLimitEqual);
+  }, undefined, require(13730) /* spendingLimitEqual */.spendingLimitEqual);
 };
 export const CLOSE_TO_LIMIT_THRESHOLD_MAJOR_UNITS = 10;
 export { getSpendingLimitDisplayState };
 export const useSpendingLimitDisplayState = function useSpendingLimitDisplayState(cap) {
   const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => monthlyPurchases.getMonthlyPurchases());
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_4.getMonthlyPurchases());
   let total_amount;
   if (null != stateFromStores) {
     total_amount = stateFromStores.total_amount;

@@ -1,79 +1,80 @@
-// Module ID: 7637
-// Function ID: 61156
+// Module ID: 7643
+// Function ID: 61193
 // Name: createGuildBreadcrumb
-// Dependencies: []
+// Dependencies: [6, 7, 7644, 1348, 1838, 3758, 3767, 1849, 1392, 1212, 3800, 4320, 5679, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 7637 (createGuildBreadcrumb)
+// Module 7643 (createGuildBreadcrumb)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function createGuildBreadcrumb(id, timestamp) {
   let obj = { originLabel: id.name };
   obj = { id: id.id, size: 16, icon: id.icon, canAnimate: false };
-  obj.originIconUrl = importDefault(dependencyMap[8]).getGuildIconURL(obj);
+  obj.originIconUrl = importDefault(1392).getGuildIconURL(obj);
   obj.timestampLabel = timestamp;
-  const intl = timestamp(dependencyMap[9]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { origin: id.name, timestamp };
-  obj.accessibilityLabel = intl.formatToPlainString(timestamp(dependencyMap[9]).t.+l04BN, obj);
+  obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["+l04BN"], obj);
   return obj;
 }
 function createChannelBreadcrumb(origin, timestamp) {
   let obj = { originLabel: origin, timestampLabel: timestamp };
-  const intl = timestamp(dependencyMap[9]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { origin, timestamp };
-  obj.accessibilityLabel = intl.formatToPlainString(timestamp(dependencyMap[9]).t.+l04BN, obj);
+  obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["+l04BN"], obj);
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const tmp2 = () => {
+let tmp2 = (() => {
   class MessageForward {
     constructor(arg0, arg1, arg2) {
-      tmp = closure_3(this, MessageForward);
+      tmp = outer1_3(this, MessageForward);
       this.parentMessage = arg0;
       this.messageSnapshot = arg1;
       this.snapshotIndex = arg2;
       return;
     }
   }
-  const arg1 = MessageForward;
   const items = [
     {
       key: "getForwardInfo",
-      value(arg0, closure_11, closure_12) {
+      value(arg0, closure_14, _createForOfIteratorHelperLoose) {
         let parentMessage;
         let snapshotIndex;
         let obj = arg0;
-        let tmp = closure_11;
-        let tmp2 = closure_12;
+        let tmp = closure_14;
+        let tmp2 = _createForOfIteratorHelperLoose;
         let obj1 = arg3;
         let obj2 = arg4;
         let obj3 = arg5;
         const self = this;
         if (arg0 === undefined) {
-          obj = closure_6;
+          obj = outer1_6;
         }
         if (tmp === undefined) {
-          tmp = closure_10;
+          tmp = outer1_10;
         }
         if (tmp2 === undefined) {
-          tmp2 = closure_9;
+          tmp2 = outer1_9;
         }
         if (obj1 === undefined) {
-          obj1 = closure_8;
+          obj1 = outer1_8;
         }
         if (obj2 === undefined) {
-          obj2 = closure_7;
+          obj2 = outer1_7;
         }
         if (obj3 === undefined) {
-          obj3 = closure_5;
+          obj3 = outer1_5;
         }
         ({ snapshotIndex, parentMessage } = self);
-        let obj4 = MessageForward(closure_2[10]);
+        let obj4 = MessageForward(outer1_2[10]);
         const result = obj4.calendarFormatCompact(self.messageSnapshot.message.timestamp);
         const channel = obj.getChannel(self.parentMessage.channel_id);
         if (null != channel) {
@@ -94,14 +95,14 @@ const tmp2 = () => {
               if (null == guild) {
                 obj = { snapshotIndex };
               } else {
-                obj = { snapshotIndex, footerInfo: callback2(guild, result) };
+                obj = { snapshotIndex, footerInfo: outer1_12(guild, result) };
               }
               return obj;
             } else {
               if (obj1.can(channel1.accessPermissions, channel1)) {
                 obj1 = { snapshotIndex };
-                const obj11 = MessageForward(closure_2[11]);
-                obj1.footerInfo = callback3(obj11.computeChannelName(channel1, tmp, tmp2, true), result);
+                const obj11 = MessageForward(outer1_2[11]);
+                obj1.footerInfo = outer1_13(obj11.computeChannelName(channel1, tmp, tmp2, true), result);
                 obj2 = obj1;
               } else {
                 obj2 = { snapshotIndex };
@@ -127,7 +128,7 @@ const tmp2 = () => {
             obj4 = { snapshotIndex };
             let obj5 = obj4;
           } else {
-            obj5 = { snapshotIndex, footerInfo: callback2(guild1, result) };
+            obj5 = { snapshotIndex, footerInfo: outer1_12(guild1, result) };
           }
           return obj5;
         }
@@ -135,12 +136,13 @@ const tmp2 = () => {
     }
   ];
   return callback(MessageForward, items);
-}();
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/forwarding/formatMessageForwards.tsx");
+})();
+let closure_11 = tmp2;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forwarding/formatMessageForwards.tsx");
 
 export const MessageForward = tmp2;
 export const maybeCreateSingleForwardForMessage = function maybeCreateSingleForwardForMessage(message) {
-  if (importDefault(dependencyMap[12])(message)) {
+  if (importDefault(5679)(message)) {
     const first = message.messageSnapshots[0];
     if (null != first) {
       const prototype = tmp2.prototype;

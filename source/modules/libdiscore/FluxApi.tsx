@@ -1,16 +1,16 @@
 // Module ID: 1843
-// Function ID: 20237
+// Function ID: 20238
 // Name: fluxApi
-// Dependencies: []
+// Dependencies: [1844, 2]
 // Exports: hasFluxApi
 
 // Module 1843 (fluxApi)
-const _module = require(dependencyMap[0]);
-const fluxApi = _module.getFluxApi();
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/libdiscore/FluxApi.tsx");
+import isBlockedDomain from "isBlockedDomain";
 
-export const FLUX_API = fluxApi;
+isBlockedDomain = isBlockedDomain.getFluxApi();
+const result = require("set").fileFinishedImporting("modules/libdiscore/FluxApi.tsx");
+
+export const FLUX_API = isBlockedDomain;
 export const hasFluxApi = function hasFluxApi() {
-  return null != fluxApi;
+  return null != isBlockedDomain;
 };

@@ -1,14 +1,16 @@
-// Module ID: 15052
-// Function ID: 113318
+// Module ID: 15167
+// Function ID: 115487
 // Name: renderChannelPressableWrapper
-// Dependencies: []
+// Dependencies: [31, 27, 33, 10261, 2]
 // Exports: renderChannelPressableWrapper
 
-// Module 15052 (renderChannelPressableWrapper)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelPressableWrapper.tsx");
+// Module 15167 (renderChannelPressableWrapper)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelPressableWrapper.tsx");
 
 export const renderChannelPressableWrapper = function renderChannelPressableWrapper(children, panelVariant) {
   let isThread;
@@ -19,7 +21,7 @@ export const renderChannelPressableWrapper = function renderChannelPressableWrap
   if (flag === undefined) {
     flag = false;
   }
-  let obj = panelVariant(dependencyMap[3]);
+  let obj = require(10261) /* getLayoutStyles */;
   obj = {};
   const layout2 = obj.getLayoutStyles(layout, launchpad).layout;
   if (isThread) {
@@ -27,8 +29,8 @@ export const renderChannelPressableWrapper = function renderChannelPressableWrap
   } else {
     marginThread = flag ? layout2.marginPanels : layout2.margin;
   }
-  const items = [marginThread, { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true }];
+  const items = [marginThread, { flex: 1, flexDirection: "row", alignItems: "center" }];
   obj.style = items;
   obj.children = children;
-  return <View {...obj} />;
+  return <View />;
 };

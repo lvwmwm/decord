@@ -1,19 +1,21 @@
-// Module ID: 10905
-// Function ID: 84744
+// Module ID: 10915
+// Function ID: 84793
 // Name: getShouldShowAppAuthPrompt
-// Dependencies: []
+// Dependencies: [5066, 5469, 5472, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 10905 (getShouldShowAppAuthPrompt)
-let closure_3 = importDefault(dependencyMap[0]);
-const FetchState = arg1(dependencyMap[0]).FetchState;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/application_account_linking/native/getShouldShowAppAuthPrompt.tsx");
+// Module 10915 (getShouldShowAppAuthPrompt)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/application_account_linking/native/getShouldShowAppAuthPrompt.tsx");
 
 export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(applicationFromMessage) {
   if (null == applicationFromMessage) {
     return false;
   } else {
-    const authorizationApp = arg1(dependencyMap[1]).getAuthorizationApp(applicationFromMessage);
+    const authorizationApp = require(5469) /* getAuthorizationApp */.getAuthorizationApp(applicationFromMessage);
     if (null == authorizationApp) {
       return false;
     } else {
@@ -37,9 +39,9 @@ export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(ap
           return tmp4;
         } else if (authStore.getFetchStateForApplication(parentId) === FetchState.NOT_FETCHED) {
           const items = [parentId];
-          const response = importDefault(dependencyMap[2]).fetch(items);
+          const response = importDefault(5472).fetch(items);
           let flag2 = false;
-          const obj = importDefault(dependencyMap[2]);
+          const obj = importDefault(5472);
         } else {
           let tmp9 = authStore.getFetchStateForApplication(parentId) === FetchState.FETCHED;
           if (tmp9) {
@@ -51,6 +53,6 @@ export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(ap
         return false;
       }
     }
-    const obj2 = arg1(dependencyMap[1]);
+    const obj2 = require(5469) /* getAuthorizationApp */;
   }
 };

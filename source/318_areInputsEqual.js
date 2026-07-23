@@ -31,15 +31,15 @@ function areInputsEqual(arg0, arg1) {
     return true;
   }
 }
-let closure_0 = Number.isNaN || function ponyfill(arg0) {
+let closure_0 = Number.isNaN || (function ponyfill(arg0) {
   return "number" === typeof arg0 && arg0 != arg0;
-};
+});
 
 export default function memoizeOne(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let closure_4 = [];
-  let closure_5 = false;
+  let c5 = false;
   return function memoized() {
     let length;
     const self = this;
@@ -52,17 +52,16 @@ export default function memoizeOne(arg0, arg1) {
         length = arguments.length;
       } while (num < length);
     }
-    let tmp = closure_5;
-    if (closure_5) {
+    let tmp = c5;
+    if (c5) {
       tmp = self === self;
     }
     if (tmp) {
-      tmp = callback(items, closure_4);
+      tmp = callback2(items, items);
     }
     if (!tmp) {
-      let closure_3 = arg0.apply(self, items);
-      closure_5 = true;
-      closure_4 = items;
+      let closure_3 = callback.apply(self, items);
+      c5 = true;
     }
     return closure_3;
   };

@@ -1,10 +1,16 @@
-// Module ID: 9059
-// Function ID: 71130
+// Module ID: 9066
+// Function ID: 71171
 // Name: getUserVoiceState
-// Dependencies: []
+// Dependencies: [1348, 3758, 4146, 482, 566, 2]
 // Exports: canViewUserVoiceChannel, default
 
-// Module 9059 (getUserVoiceState)
+// Module 9066 (getUserVoiceState)
+import importDefaultResult from "_isNativeReflectConstruct";
+import importDefaultResult1 from "_isNativeReflectConstruct";
+import importDefaultResult2 from "_isNativeReflectConstruct";
+import { Permissions } from "sum";
+
+const require = arg1;
 function getUserVoiceState(arg0, arg1) {
   let guildId;
   let userId;
@@ -78,25 +84,19 @@ function getVisibleUserVoiceActivity(arg0) {
   }
   return tmp4;
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const importDefaultResult1 = importDefault(dependencyMap[1]);
-const importDefaultResult2 = importDefault(dependencyMap[2]);
-const Permissions = arg1(dependencyMap[3]).Permissions;
 let closure_6 = { ChannelStore: importDefaultResult, PermissionStore: importDefaultResult1, VoiceStateStore: importDefaultResult2 };
 let closure_7 = Object.freeze({ voiceState: undefined, voiceChannel: undefined });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
 
 export default function useUserVoiceActivity(userId) {
   userId = userId.userId;
-  const arg1 = userId;
   const guildId = userId.guildId;
-  const dependencyMap = guildId;
-  const items = [importDefaultResult, importDefaultResult1, importDefaultResult2];
+  const items = [closure_2, importDefaultResult1, importDefaultResult2];
   const items1 = [guildId, userId];
-  return arg1(dependencyMap[4]).useStateFromStoresObject(items, () => {
+  return userId(guildId[4]).useStateFromStoresObject(items, () => {
     let obj = { userId, guildId };
-    obj = { ChannelStore: closure_2, PermissionStore: closure_3, VoiceStateStore: closure_4 };
-    return callback(obj, obj);
+    obj = { ChannelStore: outer1_2, PermissionStore: outer1_3, VoiceStateStore: outer1_4 };
+    return outer1_11(obj, obj);
   }, items1);
 };
 export { getUserVoiceState };

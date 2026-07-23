@@ -1,61 +1,27 @@
-// Module ID: 7880
-// Function ID: 62736
+// Module ID: 7886
+// Function ID: 62773
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 1906, 5078, 2]
 
-// Module 7880 (_isNativeReflectConstruct)
+// Module 7886 (_isNativeReflectConstruct)
+import set from "set";
+import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import tmp2 from "AutomaticLifecycleManager";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return set;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let tmp2 = (arg0) => {
-  class VideoBackgroundManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_1(this, VideoBackgroundManager);
-      items1 = [...items];
-      obj = closure_3(VideoBackgroundManager);
-      tmp2 = closure_2;
-      if (closure_6()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, items1, closure_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      VideoBackgroundManager = tmp2Result;
-      tmp2Result.previousSelectedVoiceChannelId = closure_5.getVoiceChannelId();
-      tmp2Result.cachedDominantColors = {};
-      tmp2Result._handleSelectVoiceChannel = (channelId) => {
-        channelId = channelId.channelId;
-        if (tmp2Result.previousSelectedVoiceChannelId !== channelId) {
-          tmp2Result.cachedDominantColors = {};
-        }
-        tmp2Result.previousSelectedVoiceChannelId = channelId;
-      };
-      tmp2Result.actions = { VOICE_CHANNEL_SELECT: tmp2Result._handleSelectVoiceChannel };
-      return tmp2Result;
-    }
-  }
-  const callback = VideoBackgroundManager;
-  callback2(VideoBackgroundManager, arg0);
-  return callback(VideoBackgroundManager);
-}(importDefault(dependencyMap[6]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/calls/native/VideoBackgroundManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/calls/native/VideoBackgroundManager.tsx");
 
 export default tmp2;

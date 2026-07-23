@@ -1,18 +1,20 @@
-// Module ID: 10202
-// Function ID: 78758
+// Module ID: 10214
+// Function ID: 78830
 // Name: useIsConnectedToVoiceChannelForId
-// Dependencies: []
+// Dependencies: [1194, 4146, 566, 2]
 // Exports: useIsConnectedToVoiceChannel
 
-// Module 10202 (useIsConnectedToVoiceChannelForId)
+// Module 10214 (useIsConnectedToVoiceChannelForId)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function useIsConnectedToVoiceChannelForId(arg0) {
-  const arg1 = arg0;
-  const items = [closure_3, closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => inChannel.isInChannel(arg0, id.getId()));
+  const _require = arg0;
+  const items = [closure_3, _isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => outer1_3.isInChannel(closure_0, outer1_2.getId()));
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/voice_chat/VoiceChatHooks.tsx");
+const result = require("initialize").fileFinishedImporting("modules/voice_chat/VoiceChatHooks.tsx");
 
 export const useIsConnectedToVoiceChannel = function useIsConnectedToVoiceChannel(id) {
   id = undefined;

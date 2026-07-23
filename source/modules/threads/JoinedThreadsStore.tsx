@@ -1,17 +1,18 @@
-// Module ID: 3758
-// Function ID: 28768
+// Module ID: 3760
+// Function ID: 28773
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [6, 7, 15, 17, 18, 1352, 1194, 3761, 22, 566, 686, 2]
 
-// Module 3758 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import { ALL_CHANNEL_TYPES } from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
+// Module 3760 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import MuteTimers from "MuteTimers";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { ALL_CHANNEL_TYPES } from "_callSuper";
+import closure_8 from "_isNativeReflectConstruct";
+import importDefaultResult from "MuteTimers";
+import set from "_possibleConstructorReturn";
 
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -24,9 +25,9 @@ function _isNativeReflectConstruct() {
 }
 function deleteGuildThreads(arg0) {
   const importDefault = arg0;
-  const obj = importDefault(dependencyMap[8])(closure_9);
-  const rejectResult = importDefault(dependencyMap[8])(closure_9).reject((guildId) => guildId.guildId === guildId);
-  closure_9 = importDefault(dependencyMap[8])(closure_9).reject((guildId) => guildId.guildId === guildId).keyBy("threadId").value();
+  const obj = importDefault(22)(closure_9);
+  const rejectResult = importDefault(22)(closure_9).reject((guildId) => guildId.guildId === closure_0);
+  closure_9 = importDefault(22)(closure_9).reject((guildId) => guildId.guildId === closure_0).keyBy("threadId").value();
 }
 function storeThreads(threads) {
   threads = threads.threads;
@@ -53,74 +54,72 @@ function storeThread(type) {
   }
 }
 function handleMutedChange(id) {
-  const importDefault = id;
+  let closure_0 = id;
   importDefaultResult.clearTimer(id);
-  if (true === closure_9[id].muted) {
+  if (true === dependencyMap[id].muted) {
     const _Set2 = Set;
-    let set = new Set(set);
+    let set = new Set(set2);
+    set2 = set;
     set.add(id);
     if (importDefaultResult.setTimer(id, tmp.muteConfig, () => {
-      closure_9[closure_0].muted = false;
-      const set = new Set(set);
-      set.delete(arg0);
-      closure_12.emitChange();
+      outer1_9[closure_0].muted = false;
+      set = new Set(set);
+      set.delete(closure_0);
+      outer1_12.emitChange();
     })) {
-      closure_9[id].muted = false;
+      dependencyMap[id].muted = false;
       const _Set3 = Set;
-      const set1 = new Set(set);
-      set = set1;
+      const set1 = new Set(set2);
+      set2 = set1;
       set1.delete(id);
     }
   } else {
     const _Set = Set;
-    const set2 = new Set(set);
-    set = set2;
+    set2 = new Set(set2);
     set2.delete(id);
   }
 }
 function handleThreadListSyncOrSearchFinish(guildId) {
   guildId = guildId.guildId;
-  const importDefault = guildId;
   const members = guildId.members;
   if (tmp) {
     const item = members.forEach((id) => {
       const obj = { threadId: id.id, guildId, flags: id.flags, muted: id.muted, muteConfig: id.muteConfig, joinTimestamp: new Date(id.joinTimestamp) };
-      closure_9[id.id] = obj;
-      callback(id.id);
+      outer1_9[id.id] = obj;
+      outer1_17(id.id);
     });
   }
 }
 function handleSearchMessagesSuccess(guildId) {
   guildId = guildId.guildId;
-  const importDefault = guildId;
   const data = guildId.data;
   if (null != guildId) {
-    const item = data.forEach((members) => {
+    let item = data.forEach((members) => {
       members = members.members;
       const item = members.forEach((id) => {
-        const obj = { threadId: id.id, guildId: closure_0, flags: id.flags, muted: id.muted, muteConfig: id.muteConfig, joinTimestamp: new Date(id.joinTimestamp) };
-        closure_9[id.id] = obj;
-        callback(id.id);
+        const obj = { threadId: id.id, guildId: outer1_0, flags: id.flags, muted: id.muted, muteConfig: id.muteConfig, joinTimestamp: new Date(id.joinTimestamp) };
+        outer2_9[id.id] = obj;
+        outer2_17(id.id);
       });
     });
   }
 }
 let closure_9 = {};
 importDefaultResult = new importDefaultResult();
-const set = new Set();
-let tmp5 = (Store) => {
+let set = new Set();
+let tmp5 = ((Store) => {
   class JoinedThreadsStoreClass {
     constructor() {
       self = this;
-      tmp = __exportStarResult1(this, JoinedThreadsStoreClass);
-      obj = closure_5(JoinedThreadsStoreClass);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, JoinedThreadsStoreClass);
+      obj = outer1_5(JoinedThreadsStoreClass);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -129,19 +128,18 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = JoinedThreadsStoreClass;
   callback2(JoinedThreadsStoreClass, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8);
+      this.waitFor(outer1_8);
     }
   };
   const items = [obj, , , , , , , ];
   obj = {
     key: "hasJoined",
     value(arg0) {
-      return arg0 in closure_9;
+      return arg0 in outer1_9;
     }
   };
   items[1] = obj;
@@ -149,7 +147,7 @@ let tmp5 = (Store) => {
     key: "joinTimestamp",
     value(arg0) {
       let joinTimestamp;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         joinTimestamp = tmp.joinTimestamp;
       }
       return joinTimestamp;
@@ -160,7 +158,7 @@ let tmp5 = (Store) => {
     key: "flags",
     value(arg0) {
       let flags;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         flags = tmp.flags;
       }
       return flags;
@@ -169,14 +167,14 @@ let tmp5 = (Store) => {
   items[4] = {
     key: "getInitialOverlayState",
     value() {
-      return Object.values(closure_9);
+      return Object.values(outer1_9);
     }
   };
   items[5] = {
     key: "getMuteConfig",
     value(arg0) {
       let muteConfig;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         muteConfig = tmp.muteConfig;
       }
       return muteConfig;
@@ -185,36 +183,36 @@ let tmp5 = (Store) => {
   items[6] = {
     key: "getMutedThreads",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[7] = {
     key: "isMuted",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_11.has(arg0);
     }
   };
   return callback(JoinedThreadsStoreClass, items);
-}(require("__exportStarResult1").Store);
+})(require("initialize").Store);
 tmp5.displayName = "JoinedThreadsStore";
-tmp5 = new tmp5(require("__exportStarResult1"), {
+tmp5 = new tmp5(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     importDefaultResult.reset();
     const set = new Set();
     let closure_9 = {};
     guilds = guilds.guilds;
     const item = guilds.forEach((arg0) => {
-      callback(arg0);
+      outer1_15(arg0);
     });
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(joinedThreads) {
-    const mapped = importDefault(dependencyMap[8])(joinedThreads.joinedThreads).map((joinTimestamp) => {
+    const mapped = importDefault(22)(joinedThreads.joinedThreads).map((joinTimestamp) => {
       const obj = {};
       const merged = Object.assign(joinTimestamp);
       obj["joinTimestamp"] = new Date(joinTimestamp.joinTimestamp);
       return obj;
     });
-    const arr = importDefault(dependencyMap[8])(joinedThreads.joinedThreads);
+    const arr = importDefault(22)(joinedThreads.joinedThreads);
     let closure_9 = mapped.keyBy("threadId").value();
   },
   GUILD_CREATE: function handleGuildCreate(guild) {
@@ -235,12 +233,11 @@ tmp5 = new tmp5(require("__exportStarResult1"), {
   LOAD_ARCHIVED_THREADS_SUCCESS: handleThreadListSyncOrSearchFinish,
   THREAD_DELETE: function handleThreadDelete(channel) {
     channel = channel.channel;
-    if (channel.id in closure_9) {
-      const obj = {};
-      const merged = Object.assign(closure_9);
-      closure_9 = obj;
+    if (channel.id in obj) {
+      obj = {};
+      const merged = Object.assign(obj);
       const id = channel.id;
-      delete r1[r0];
+      delete tmp2[tmp];
     } else {
       return false;
     }
@@ -265,10 +262,10 @@ tmp5 = new tmp5(require("__exportStarResult1"), {
     let userId;
     ({ id, guildId } = arg0);
     ({ userId, isJoining } = arg0);
-    let tmp = store.getId() === userId;
-    if (tmp) {
+    let tmp3 = store.getId() === userId;
+    if (tmp3) {
       if (null === guildId) {
-        tmp = tmp3;
+        tmp3 = tmp5;
       } else if (isJoining) {
         let obj = { threadId: id, guildId, flags: 0, muted: true };
         obj = { end_time: undefined };
@@ -277,53 +274,53 @@ tmp5 = new tmp5(require("__exportStarResult1"), {
         const date = new Date();
         guildId = date;
         obj.joinTimestamp = date;
-        tmp4[id] = obj;
+        tmp6[id] = obj;
       } else {
-        delete r4[r5];
+        delete tmp[tmp2];
       }
     }
-    return tmp;
+    return tmp3;
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(removedMemberIds) {
-    const importDefault = removedMemberIds;
-    let closure_1 = false;
+    let closure_0 = removedMemberIds;
+    let c1 = false;
     removedMemberIds = removedMemberIds.removedMemberIds;
     let hasItem = null != removedMemberIds;
     if (hasItem) {
       hasItem = removedMemberIds.includes(store.getId());
     }
     if (hasItem) {
-      hasItem = removedMemberIds.id in closure_9;
+      hasItem = removedMemberIds.id in obj;
     }
     if (hasItem) {
-      const obj = {};
-      const merged = Object.assign(closure_9);
-      closure_9 = obj;
+      obj = {};
+      let merged = Object.assign(obj);
       const id = removedMemberIds.id;
-      delete r4[r3];
-      closure_1 = true;
+      delete tmp2[tmp];
+      c1 = true;
     }
     const addedMembers = removedMemberIds.addedMembers;
     if (null != addedMembers) {
       const item = addedMembers.forEach((userId) => {
-        if (userId.userId === id.getId()) {
+        if (userId.userId === outer1_8.getId()) {
           let obj = {};
           const merged = Object.assign(obj);
           obj = {};
-          ({ id: obj2.threadId, guildId: obj2.guildId } = userId);
+          ({ id: obj2.threadId, guildId: obj2.guildId } = user);
           ({ flags: obj2.flags, muted: obj2.muted, muteConfig: obj2.muteConfig } = userId);
           const _Date = Date;
           const date = new Date(userId.joinTimestamp);
           obj.joinTimestamp = date;
-          obj[userId.id] = obj;
-          callback(userId.id);
-          let closure_1 = true;
+          obj[user.id] = obj;
+          outer1_17(user.id);
+          let c1 = true;
         }
       });
     }
-    return closure_1;
+    return c1;
   }
 });
-const result = require("__exportStarResult1").fileFinishedImporting("modules/threads/JoinedThreadsStore.tsx");
+let closure_12 = tmp5;
+let result = set.fileFinishedImporting("modules/threads/JoinedThreadsStore.tsx");
 
 export default tmp5;

@@ -1,12 +1,11 @@
-// Module ID: 7087
-// Function ID: 56837
+// Module ID: 7092
+// Function ID: 56871
 // Name: GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH
-// Dependencies: []
+// Dependencies: [6859, 2]
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 7087 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");
+// Module 7092 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
+const result = require("set").fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");
 
 export const GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH = 100;
 export const MIN_TRUSTED_EMPTY_PREFIX_LENGTH = 7;
@@ -40,6 +39,6 @@ export const normalizeGameAutocompleteQuery = function normalizeGameAutocomplete
   }
 };
 export const isGameAutocompleteResultAllowedInGameWidgets = function isGameAutocompleteResultAllowedInGameWidgets(id) {
-  const GAME_WIDGET_BANNED_APPLICATION_IDS = require(dependencyMap[0]).GAME_WIDGET_BANNED_APPLICATION_IDS;
+  const GAME_WIDGET_BANNED_APPLICATION_IDS = require(6859) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_BANNED_APPLICATION_IDS;
   return !GAME_WIDGET_BANNED_APPLICATION_IDS.has(id.id);
 };

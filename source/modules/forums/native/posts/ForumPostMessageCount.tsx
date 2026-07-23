@@ -1,36 +1,41 @@
-// Module ID: 11132
-// Function ID: 86628
+// Module ID: 11142
+// Function ID: 86678
 // Name: num2
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 477, 9137, 1212, 4629, 4126, 10352, 2]
 // Exports: default
 
-// Module 11132 (num2)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { tintColor: importDefault(dependencyMap[4]).colors.ICON_MUTED, marginEnd: 4 };
-const tmp3 = arg1(dependencyMap[2]);
+// Module 11142 (num2)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "set";
+import set from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.ICON_MUTED, marginEnd: 4 };
 let num = 0;
-if (obj4.isAndroid()) {
+if (set.isAndroid()) {
   num = 2;
 }
-obj.marginTop = num;
-obj.iconRead = obj;
-const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT, marginEnd: 4 };
-const obj4 = arg1(dependencyMap[5]);
+_createForOfIteratorHelperLoose.marginTop = num;
+_createForOfIteratorHelperLoose.iconRead = _createForOfIteratorHelperLoose;
+let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, marginEnd: 4 };
 let num2 = 0;
-if (obj6.isAndroid()) {
+if (set.isAndroid()) {
   num2 = 2;
 }
 obj1.marginTop = num2;
-obj.iconUnread = obj1;
-obj.messageUnreadCount = { marginStart: 4 };
-obj.container = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-let closure_6 = obj.createStyles(obj);
-const obj6 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/native/posts/ForumPostMessageCount.tsx");
+_createForOfIteratorHelperLoose.iconUnread = obj1;
+_createForOfIteratorHelperLoose.messageUnreadCount = { marginStart: 4 };
+_createForOfIteratorHelperLoose.container = { flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = set.fileFinishedImporting("modules/forums/native/posts/ForumPostMessageCount.tsx");
 
 export default function ForumPostMessageCount(hasUnreads) {
   let containerStyle;
@@ -41,8 +46,8 @@ export default function ForumPostMessageCount(hasUnreads) {
   let unreadCount;
   hasUnreads = hasUnreads.hasUnreads;
   ({ thread, containerStyle } = hasUnreads);
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(9137) /* sortForumPostReactionsByPopularityDesc */;
   messageCount = obj.useMessageCount(thread);
   ({ messageCountText, unreadCount } = messageCount);
   let str = "text-muted";
@@ -51,32 +56,32 @@ export default function ForumPostMessageCount(hasUnreads) {
     str = "text-default";
   }
   obj = { style: items };
-  const items = [tmp.container, containerStyle];
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[7]).t.8M0DrB, { count: messageCountText });
+  items = [tmp.container, containerStyle];
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["8M0DrB"], { count: messageCountText });
   obj = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead };
   let str2 = "icon-muted";
   if (hasUnreads) {
     str2 = "interactive-text-default";
   }
   obj.color = str2;
-  const items1 = [closure_4(arg1(dependencyMap[8]).ChatIcon, obj), , ];
+  const items1 = [closure_4(require(4629) /* ChatIcon */.ChatIcon, obj), , ];
   if (isMaxMessageCount) {
     const obj1 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-    let tmp6Result = tmp6(arg1(dependencyMap[9]).Text, obj1);
+    let tmp6Result = tmp6(require(4126) /* Text */.Text, obj1);
   } else {
     const obj2 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
-    tmp6Result = tmp6(importDefault(dependencyMap[10]), obj2);
+    tmp6Result = tmp6(importDefault(10352), obj2);
   }
   items1[1] = tmp6Result;
   let tmp12 = null != unreadCount;
   if (tmp12) {
-    const obj3 = { cachedAt: "png", edpbxy: "absolute", style: tmp.messageUnreadCount };
-    const intl2 = arg1(dependencyMap[7]).intl;
+    const obj3 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.messageUnreadCount };
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj4 = { count: unreadCount };
-    const items2 = [null, intl2.format(arg1(dependencyMap[7]).t.z3PEth, obj4), ")"];
+    const items2 = ["(", intl2.format(require(1212) /* getSystemLocale */.t.z3PEth, obj4), ")"];
     obj3.children = items2;
-    tmp12 = callback(arg1(dependencyMap[9]).Text, obj3);
+    tmp12 = callback(require(4126) /* Text */.Text, obj3);
   }
   items1[2] = tmp12;
   obj.children = items1;

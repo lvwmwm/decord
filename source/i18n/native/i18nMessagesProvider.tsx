@@ -1,33 +1,35 @@
-// Module ID: 16475
-// Function ID: 127318
+// Module ID: 16592
+// Function ID: 129492
 // Name: i18nManager
-// Dependencies: []
+// Dependencies: [27, 477, 16593, 1250, 1212, 2]
 // Exports: default
 
-// Module 16475 (i18nManager)
-const _module = require(dependencyMap[1]);
-if (_module.isAndroid()) {
-  let i18nManager = importDefault(dependencyMap[2]);
+// Module 16592 (i18nManager)
+import set from "set";
+import set from "enforcing";
+
+if (set.isAndroid()) {
+  let i18nManager = require("enforcing");
 } else {
-  i18nManager = require(dependencyMap[0]).NativeModules.i18nManager;
+  i18nManager = require("get ActivityIndicator").NativeModules.i18nManager;
 }
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("i18n/native/i18nMessagesProvider.tsx");
+let result = set.fileFinishedImporting("i18n/native/i18nMessagesProvider.tsx");
 
 export default function newIntlMessagesProvider() {
   return new Promise((arg0) => {
-    closure_2.keysRequest((arr) => {
-      closure_2.valuesResult(arr.map((code) => {
-        const result = callback(closure_1[3]).runtimeHashMessageKey(code);
-        const tmp2 = callback(closure_1[4]).t[result];
+    let closure_0 = arg0;
+    outer1_2.keysRequest((arr) => {
+      outer2_2.valuesResult(arr.map((code) => {
+        const result = outer3_0(outer3_1[3]).runtimeHashMessageKey(code);
+        const tmp2 = outer3_0(outer3_1[4]).t[result];
         let str = "";
         if (null != tmp2) {
-          const intl = callback(closure_1[4]).intl;
+          const intl = outer3_0(outer3_1[4]).intl;
           str = intl.reserialize(tmp2);
         }
         return str;
       }));
-      arr(true);
+      callback(true);
     });
   });
 };

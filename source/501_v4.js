@@ -1,16 +1,19 @@
 // Module ID: 501
 // Function ID: 6445
 // Name: v4
-// Dependencies: []
+// Dependencies: [502, 493, 494]
 
 // Module 501 (v4)
+const require = arg1;
+const module = arg2;
+const dependencyMap = arg6;
 arg5.default = function v4(arg0, arg1, arg2) {
   let obj = arg0;
   let num = arg2;
-  if (arg2(arg6[0]).randomUUID) {
+  if (module(502).randomUUID) {
     if (!arg1) {
       if (!obj) {
-        return arg2(arg6[0]).randomUUID();
+        return module(502).randomUUID();
       }
     }
   }
@@ -21,7 +24,7 @@ arg5.default = function v4(arg0, arg1, arg2) {
   if (!random) {
     let rng = obj.rng;
     if (!rng) {
-      rng = arg2(arg6[1]);
+      rng = module(493);
     }
     random = rng();
   }
@@ -38,6 +41,6 @@ arg5.default = function v4(arg0, arg1, arg2) {
     } while (num5 < 16);
     return arg1;
   } else {
-    return arg1(arg6[2]).unsafeStringify(random);
+    return require(494) /* unsafeStringify */.unsafeStringify(random);
   }
 };

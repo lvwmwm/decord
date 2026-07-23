@@ -1,9 +1,36 @@
-// Module ID: 9871
-// Function ID: 76436
+// Module ID: 9878
+// Function ID: 76477
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 4143, 4808, 1352, 5659, 1348, 1838, 4142, 1906, 3947, 653, 1355, 664, 3, 4803, 9581, 4062, 8340, 6691, 9879, 587, 3952, 1198, 5661, 4470, 1212, 686, 5078, 2]
 
-// Module 9871 (_isNativeReflectConstruct)
+// Module 9878 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "ME";
+import set from "set";
+import timestamp from "timestamp";
+import _slicedToArray from "_slicedToArray";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { isTextChannel } from "_callSuper";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import closure_17 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { isStaticChannelRoute } from "set";
+import importDefaultResult from "_getPrototypeOf";
+import tmp5 from "AutomaticLifecycleManager";
+
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_23;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -36,37 +63,37 @@ function fetchMessages(arg0) {
           type1 = channel.type;
         }
         if (null == type1) {
-          let obj1 = importDefault(dependencyMap[19]);
+          let obj1 = importDefault(4803);
           const orCreate = obj1.getOrCreate(channelId);
           let orCreate1 = orCreate;
-          if (orCreate.some(arg1(dependencyMap[20]).messageHasExpiredAttachmentUrl)) {
+          if (orCreate.some(require(9581) /* isAttachmentUrl */.messageHasExpiredAttachmentUrl)) {
             importDefaultResult.log("Found expired attachment link, clearing messages");
-            let obj5 = importDefault(dependencyMap[19]);
+            let obj5 = importDefault(4803);
             obj5.clear(channelId);
-            let obj6 = importDefault(dependencyMap[19]);
+            let obj6 = importDefault(4803);
             orCreate1 = obj6.getOrCreate(channelId);
           }
           let obj7 = orCreate1;
-          if (tmp15) {
-            let obj = { "Null": "<string:1243348993>", "Null": "<string:2137063425>", jumpType: arg1(dependencyMap[21]).JumpType.ANIMATED };
+          if (tmp17) {
+            let obj = { jumpTargetId: null, jumped: false, jumpType: require(4062) /* GuildThemeSourcePreference */.JumpType.ANIMATED };
             const mutation = orCreate1.mutate(obj);
-            let obj9 = importDefault(dependencyMap[19]);
+            let obj9 = importDefault(4803);
             obj9.commit(mutation);
             obj7 = mutation;
           }
           let obj10 = obj7;
-          if (tmp21) {
+          if (tmp23) {
             obj = { focusTargetId: null };
             const mutation1 = obj7.mutate(obj);
-            importDefault(dependencyMap[19]).commit(mutation1);
+            importDefault(4803).commit(mutation1);
             obj10 = mutation1;
-            const obj12 = importDefault(dependencyMap[19]);
+            const obj12 = importDefault(4803);
           }
           if (isPreload) {
             if (!closure_10.isConnected()) {
               let flag = true;
             }
-            let hasUnreadResult = importDefault(dependencyMap[22])(channelId);
+            let hasUnreadResult = importDefault(8340)(channelId);
             if (hasUnreadResult) {
               hasUnreadResult = closure_15.hasUnread(channelId);
             }
@@ -75,15 +102,15 @@ function fetchMessages(arg0) {
             }
             if (flag) {
               obj1 = { loadingMore: true };
-              importDefault(dependencyMap[19]).commit(obj10.mutate(obj1));
+              importDefault(4803).commit(obj10.mutate(obj1));
               if (null == messageId) {
                 if (null != channel) {
                   if (channel.isThread()) {
                     let flag4 = false;
                     if (!closure_15.hasOpenedThread(channelId)) {
                       if (null == obj2) {
-                        const Storage = arg1(dependencyMap[25]).Storage;
-                        let obj2 = Storage.get(closure_29, {});
+                        const Storage = require(587) /* Storage */.Storage;
+                        obj2 = Storage.get(viewedThreadIds, {});
                         if (null == obj2) {
                           obj2 = {};
                         }
@@ -93,20 +120,20 @@ function fetchMessages(arg0) {
                         const _Date = Date;
                         obj2[channelId] = Date.now();
                         const _Date2 = Date;
-                        for (const key10150 in closure_27) {
-                          let tmp75 = key10150;
-                          let tmp76 = closure_27;
-                          if (closure_27[key10150] >= tmp48) {
+                        for (const key10150 in obj2) {
+                          let tmp77 = key10150;
+                          let tmp78 = obj2;
+                          if (obj2[key10150] >= tmp50) {
                             continue;
                           } else {
-                            let tmp50 = closure_27;
-                            delete r19[r20];
-                            // continue
+                            let tmp52 = obj2;
+                            delete tmp[tmp2];
+                            continue;
                           }
                           continue;
                         }
-                        const Storage2 = arg1(dependencyMap[25]).Storage;
-                        const result = Storage2.set(closure_29, obj2);
+                        const Storage2 = require(587) /* Storage */.Storage;
+                        const result = Storage2.set(viewedThreadIds, obj2);
                         flag4 = true;
                       }
                     }
@@ -114,8 +141,8 @@ function fetchMessages(arg0) {
                       const _HermesInternal2 = HermesInternal;
                       importDefaultResult.log("Jumping to start of thread " + channel.id);
                       const obj3 = { channelId };
-                      const obj26 = importDefault(dependencyMap[23]);
-                      obj3.limit = arg1(dependencyMap[24]).getMessageLimit("MessageManager.threadStart");
+                      const obj26 = importDefault(6691);
+                      obj3.limit = require(9879) /* getMessageLimit */.getMessageLimit("MessageManager.threadStart");
                       const obj4 = { messageId: channelId, flash: false };
                       obj3.jump = obj4;
                       obj3.isPreload = isPreload;
@@ -134,9 +161,9 @@ function fetchMessages(arg0) {
                         const _HermesInternal = HermesInternal;
                         importDefaultResult.log("Jumping to most recent message in thread " + channel.id + " - " + trackedAckMessageId);
                         obj5 = { channelId };
-                        const obj18 = importDefault(dependencyMap[23]);
-                        obj5.limit = arg1(dependencyMap[24]).getMessageLimit("MessageManager.threadUnread");
-                        obj6 = { 0: true, 0: "/assets/design/components/Icon/native/redesign/generated/images", 0: 24, messageId: trackedAckMessageId };
+                        const obj18 = importDefault(6691);
+                        obj5.limit = require(9879) /* getMessageLimit */.getMessageLimit("MessageManager.threadUnread");
+                        obj6 = { messageId: trackedAckMessageId, flash: false, offset: 1 };
                         obj5.jump = obj6;
                         obj5.isPreload = isPreload;
                         obj5.skipLocalFetch = skipLocalFetch;
@@ -148,30 +175,30 @@ function fetchMessages(arg0) {
                   }
                 }
                 obj7 = { channelId };
-                const obj22 = importDefault(dependencyMap[23]);
-                obj7.limit = arg1(dependencyMap[24]).getMessageLimit("MessageManager.initialFetch");
+                const obj22 = importDefault(6691);
+                obj7.limit = require(9879) /* getMessageLimit */.getMessageLimit("MessageManager.initialFetch");
                 obj7.isPreload = isPreload;
                 obj7.skipLocalFetch = skipLocalFetch;
-                const obj8 = { jumpType: arg1(dependencyMap[21]).JumpType.ANIMATED };
+                const obj8 = { jumpType: require(4062) /* GuildThemeSourcePreference */.JumpType.ANIMATED };
                 obj7.jump = obj8;
                 obj7.avoidInitialScroll = avoidInitialScroll;
                 obj7.fetchKey = fetchKey;
                 return obj22.fetchMessages(obj7);
               } else {
-                obj9 = { channelId, messageId, flash: true, isPreload, skipLocalFetch, jumpType: tmp, avoidInitialScroll };
-                importDefault(dependencyMap[23]).jumpToMessage(obj9);
-                const obj15 = importDefault(dependencyMap[23]);
+                obj9 = { channelId, messageId, flash: true, isPreload, skipLocalFetch, jumpType: tmp3, avoidInitialScroll };
+                importDefault(6691).jumpToMessage(obj9);
+                const obj15 = importDefault(6691);
               }
-              const obj13 = importDefault(dependencyMap[19]);
+              const obj13 = importDefault(4803);
             }
           }
           if (!obj10.loadingMore) {
-            let tmp27 = null != guildId;
-            if (tmp27) {
-              tmp27 = null == guild.getGuild(guildId);
+            let tmp29 = null != guildId;
+            if (tmp29) {
+              tmp29 = null == guild.getGuild(guildId);
             }
             flag = forceFetch;
-            if (!tmp27) {
+            if (!tmp29) {
               flag = true;
             }
           }
@@ -179,8 +206,8 @@ function fetchMessages(arg0) {
           if (null != messageId) {
             flag = true;
           }
-          const tmp15 = null != orCreate1.jumpTargetId && null == messageId;
-          const tmp21 = null != obj7.focusTargetId && null == messageId;
+          tmp17 = null != orCreate1.jumpTargetId && null == messageId;
+          tmp23 = null != obj7.focusTargetId && null == messageId;
         } else {
           const GUILD_THREADS_ONLY = constants3.GUILD_THREADS_ONLY;
         }
@@ -203,9 +230,9 @@ function handleConnectionOpen() {
     }
     const channel1 = store2.getChannel(channelId);
     if (null != channel1) {
-      const obj5 = arg1(dependencyMap[26]);
+      const obj5 = require(3952) /* matchPath */;
       obj = { path: closure_22.CHANNEL(":guild", ":channel", ":message"), exact: true };
-      const matchPathResult = obj5.matchPath(arg1(dependencyMap[27]).getHistory().location.pathname, obj);
+      const matchPathResult = obj5.matchPath(require(1198) /* shouldNavigate */.getHistory().location.pathname, obj);
       const obj1 = { channelId: channel1.id };
       let message;
       if (null != matchPathResult) {
@@ -218,7 +245,7 @@ function handleConnectionOpen() {
       const obj2 = { guildId: channel1.getGuildId(), channelId: channel1.id, messageId: obj1.messageId, avoidInitialScroll: null != obj1.messageId };
       fetchMessages(obj2);
       maybeLoadChannelSplitView(channel1.getGuildId(), channel1.id);
-      const obj6 = arg1(dependencyMap[27]);
+      const obj6 = require(1198) /* shouldNavigate */;
     }
   }
 }
@@ -228,14 +255,14 @@ function loadSelectedChannelIfNecessary() {
     const channel = store2.getChannel(channelId);
     if (null != channel) {
       if (isTextChannel(channel.type)) {
-        let obj = importDefault(dependencyMap[19]);
+        let obj = importDefault(4803);
         const orCreate = obj.getOrCreate(channelId);
         if (!tmp7) {
           obj = { guildId: channel.getGuildId(), channelId: channel.id };
           fetchMessages(obj);
         }
         maybeLoadChannelSplitView(channel.getGuildId(), channel.id);
-        const tmp7 = orCreate.ready && orCreate.hasFetched;
+        tmp7 = orCreate.ready && orCreate.hasFetched;
       } else {
         maybeLoadChannelSplitView(channel.getGuildId(), channel.id);
       }
@@ -269,7 +296,7 @@ function maybeLoadChannelSplitView(guildId, channelId) {
 }
 function handleChannelSectionStoreChange() {
   const channelId = store3.getChannelId();
-  const guildId = guildId.getGuildId();
+  guildId = guildId.getGuildId();
   if (null != guildId) {
     if (null != channelId) {
       const sidebarState = store.getSidebarState(channelId);
@@ -277,7 +304,7 @@ function handleChannelSectionStoreChange() {
       if (null != sidebarState) {
         type = sidebarState.type;
       }
-      if (type !== arg1(dependencyMap[28]).SidebarType.VIEW_CHANNEL) {
+      if (type !== require(5661) /* SidebarType */.SidebarType.VIEW_CHANNEL) {
         maybeLoadChannelSplitView(guildId, channelId);
       }
     }
@@ -312,15 +339,15 @@ function handleMessageEditEnd(response) {
       if (response.body.code === constants2.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
         const retry_after = response.body.retry_after;
         if (null != retry_after) {
-          let obj = importDefault(dependencyMap[29]);
+          let obj = importDefault(4470);
           obj = {};
-          const intl = arg1(dependencyMap[30]).intl;
-          obj.title = intl.string(arg1(dependencyMap[30]).t.Whhv4w);
-          const intl2 = arg1(dependencyMap[30]).intl;
+          const intl = require(1212) /* getSystemLocale */.intl;
+          obj.title = intl.string(require(1212) /* getSystemLocale */.t.Whhv4w);
+          const intl2 = require(1212) /* getSystemLocale */.intl;
           obj = {};
           const _Math = Math;
           obj.retryAfterMinutes = Math.ceil(retry_after / 60);
-          obj.body = intl2.formatToPlainString(arg1(dependencyMap[30]).t.qoxdQB, obj);
+          obj.body = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.qoxdQB, obj);
           obj.show(obj);
         }
       }
@@ -338,13 +365,13 @@ function handleLoadMessagesSuccess(jump) {
   }
   if (!isPreview) {
     let num = 0;
-    if (null != closure_30[channelId]) {
+    if (null != table[channelId]) {
       num = tmp2;
     }
     const _Date = Date;
     if (Date.now() - num >= closure_25) {
       const _Date2 = Date;
-      closure_30[channelId] = Date.now();
+      table[channelId] = Date.now();
       channelId = store3.getChannelId();
       const currentSidebarChannelId = store.getCurrentSidebarChannelId(channelId);
       if (isStale) {
@@ -355,10 +382,10 @@ function handleLoadMessagesSuccess(jump) {
         const tmp7 = channelId === channelId || channelId === currentSidebarChannelId;
       }
       if (isStale) {
-        let obj = importDefault(dependencyMap[23]);
-        obj = { channelId, limit: arg1(dependencyMap[24]).getMessageLimit("MessageManager.staleFetch"), jump: jump.jump };
+        let obj = importDefault(6691);
+        obj = { channelId, limit: require(9879) /* getMessageLimit */.getMessageLimit("MessageManager.staleFetch"), jump: jump.jump };
         const messages = obj.fetchMessages(obj);
-        const obj3 = arg1(dependencyMap[24]);
+        const obj3 = require(9879) /* getMessageLimit */;
       }
     }
   }
@@ -375,7 +402,7 @@ function handleUploadFail(arg0) {
     tmp2 = true !== tmp;
   }
   if (tmp2) {
-    let obj = importDefault(dependencyMap[31]);
+    let obj = importDefault(686);
     obj = { type: "MESSAGE_SEND_FAILED", channelId, messageId };
     let tmp5 = null;
     if (null != reason) {
@@ -391,103 +418,16 @@ function handleAppWillBecomeActive() {
   if (null == channelId) {
     return false;
   } else {
-    const newLocalMessages = importDefault(dependencyMap[23]).fetchNewLocalMessages(channelId, closure_18);
+    const newLocalMessages = importDefault(6691).fetchNewLocalMessages(channelId, closure_18);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const isTextChannel = arg1(dependencyMap[8]).isTextChannel;
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = importDefault(dependencyMap[12]);
-let closure_16 = importDefault(dependencyMap[13]);
-let closure_17 = importDefault(dependencyMap[14]);
-({ MAX_MESSAGES_PER_CHANNEL: closure_18, CURRENT_APP_CONTEXT: closure_19, ChannelTypes: closure_20, AbortCodes: closure_21, Routes: closure_22, ChannelTypesSets: closure_23 } = arg1(dependencyMap[15]));
-const isStaticChannelRoute = arg1(dependencyMap[16]).isStaticChannelRoute;
-let closure_25 = 10 * importDefault(dependencyMap[17]).Millis.SECOND;
-let importDefaultResult = importDefault(dependencyMap[18]);
+({ MAX_MESSAGES_PER_CHANNEL: closure_18, CURRENT_APP_CONTEXT: closure_19, ChannelTypes: closure_20, AbortCodes: closure_21, Routes: closure_22, ChannelTypesSets: closure_23 } = ME);
+let closure_25 = 10 * require("set").Millis.SECOND;
 importDefaultResult = new importDefaultResult("MessageManager");
-let closure_28 = 90 * importDefault(dependencyMap[17]).Millis.DAY;
-let closure_29 = "viewedThreadIds";
+let closure_28 = 90 * require("set").Millis.DAY;
+const viewedThreadIds = "viewedThreadIds";
 let closure_30 = {};
-let tmp5 = (arg0) => {
-  class MessageManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, MessageManager);
-      items1 = [...items];
-      obj = closure_6(MessageManager);
-      tmp2 = closure_5;
-      if (closure_31()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.fetchMessages = closure_32;
-      tmp2Result.loadSelectedChannelIfNecessary = closure_34;
-      map = new Map();
-      tmp2Result.stores = map.set(closure_12, closure_39);
-      obj = {
-        APP_STATE_UPDATE_WILL_BECOME_ACTIVE: closure_45,
-        OVERLAY_INITIALIZE: closure_33,
-        CHANNEL_SELECT: closure_35,
-        VOICE_CHANNEL_SELECT: closure_36,
-        THREAD_CREATE: closure_41,
-        THREAD_LIST_SYNC() {
-              callback();
-            },
-        CHANNEL_CREATE: closure_41,
-        CHANNEL_PRELOAD: closure_40,
-        GUILD_CREATE() {
-              callback();
-            },
-        MESSAGE_END_EDIT: closure_42,
-        LOAD_MESSAGES_SUCCESS: closure_43,
-        UPLOAD_FAIL: closure_44,
-        CHANNEL_DELETE() {
-              callback();
-            },
-        THREAD_DELETE() {
-              callback();
-            },
-        CHANNEL_RTC_JUMP_TO_VOICE_CHANNEL_MESSAGE: closure_37
-      };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const arg1 = MessageManager;
-  callback2(MessageManager, arg0);
-  let obj = {
-    key: "_initialize",
-    value() {
-      const subscription = callback(closure_2[31]).subscribe("CONNECTION_OPEN", closure_33);
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "_terminate",
-    value() {
-      callback(closure_2[31]).unsubscribe("CONNECTION_OPEN", closure_33);
-    }
-  };
-  items[1] = obj;
-  return callback(MessageManager, items);
-}(importDefault(dependencyMap[32]));
 tmp5 = new tmp5();
-const tmp2 = arg1(dependencyMap[15]);
-const result = arg1(dependencyMap[33]).fileFinishedImporting("modules/messages/MessageManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/messages/MessageManager.tsx");
 
 export default tmp5;

@@ -1,27 +1,34 @@
-// Module ID: 11382
-// Function ID: 88513
-// Dependencies: []
+// Module ID: 11392
+// Function ID: 88563
+// Dependencies: [31, 27, 3758, 4146, 653, 33, 4130, 689, 477, 8830, 4066, 3976, 10214, 624, 4963, 4957, 4950, 11393, 4126, 1212, 4543, 4654, 4658, 2]
 
-// Module 11382
-const importAllResult = importAll(dependencyMap[0]);
-({ View: closure_4, Pressable: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[1]);
-({ NOOP: closure_8, Permissions: closure_9 } = arg1(dependencyMap[4]));
-const jsx = arg1(dependencyMap[5]).jsx;
-const tmp3 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
+// Module 11392
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ View: closure_4, Pressable: closure_5 } = get_ActivityIndicator);
+({ NOOP: closure_8, Permissions: closure_9 } = ME);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
   let obj = {};
-  obj = { borderRadius: importDefault(dependencyMap[7]).radii.xxl, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8, paddingVertical: importDefault(dependencyMap[7]).space.PX_4, marginVertical: -importDefault(dependencyMap[7]).space.PX_4, backgroundColor: importDefault(dependencyMap[7]).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, minHeight: 28, justifyContent: "center" };
+  obj = { borderRadius: importDefault(689).radii.xxl, paddingHorizontal: importDefault(689).space.PX_8, paddingVertical: importDefault(689).space.PX_4, marginVertical: -importDefault(689).space.PX_4, backgroundColor: importDefault(689).colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, minHeight: 28, justifyContent: "center" };
   let num = 1;
   if (arg0) {
     num = 0;
   }
   obj.elevation = num;
   obj.shadowRadius = 4;
-  obj.shadowOffset = {};
-  obj.shadowColor = importDefault(dependencyMap[7]).colors.BLACK;
+  obj.shadowOffset = { width: 0, height: 1 };
+  obj.shadowColor = importDefault(689).colors.BLACK;
   let num2 = 0.14;
   if (arg1) {
     num2 = 0.08;
@@ -34,12 +41,12 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   obj.borderColor = str;
   obj.borderWidth = 1;
   obj.joinButton = obj;
-  obj.joinButtonContent = {};
-  obj = { tintColor: importDefault(dependencyMap[7]).colors.WHITE };
+  obj.joinButtonContent = { width: "auto", alignItems: "center" };
+  obj = { tintColor: importDefault(689).colors.WHITE };
   obj.joinButtonIconActive = obj;
-  obj.joinButtonIconInactive = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
-  const obj2 = {};
-  const obj1 = { tintColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj.joinButtonIconInactive = { tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
+  const obj2 = { marginTop: null, alignSelf: "center", maxWidth: 64 };
+  const obj1 = { tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
   let num3 = 0;
   if (obj6.isAndroid()) {
     num3 = -2;
@@ -48,37 +55,34 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   obj.joinButtonText = obj2;
   return obj;
 });
-const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel) {
   let noIcon;
   let small;
   channel = channel.channel;
-  const arg1 = channel;
   let voiceStates = channel.voiceStates;
   if (voiceStates === undefined) {
     voiceStates = [];
   }
-  const importDefault = voiceStates;
   ({ small, noIcon } = channel);
   if (small === undefined) {
     small = false;
   }
-  const tmp = importDefault(dependencyMap[9])();
-  let obj = arg1(dependencyMap[11]);
-  let intl = callback(tmp, obj.isThemeLight(importDefault(dependencyMap[10])()));
-  let obj1 = arg1(dependencyMap[12]);
+  const tmp = voiceStates(8830)();
+  let obj = channel(3976);
+  let intl = callback(tmp, obj.isThemeLight(voiceStates(4066)()));
+  let obj1 = channel(10214);
   const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel);
-  let obj2 = arg1(dependencyMap[13]);
-  const items = [closure_6];
-  const stateFromStores = obj2.useStateFromStores(items, () => !closure_6.can(constants.CONNECT, channel));
-  let obj3 = arg1(dependencyMap[14]);
-  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, arg1(dependencyMap[15]).StageChannelParticipantNamedIndex.AUDIENCE);
+  let obj2 = channel(624);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj2.useStateFromStores(items, () => !outer1_6.can(outer1_9.CONNECT, channel));
+  let obj3 = channel(4963);
+  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, channel(4957).StageChannelParticipantNamedIndex.AUDIENCE);
   const isGuildStageVoiceResult = channel.isGuildStageVoice();
-  let obj4 = arg1(dependencyMap[16]);
-  const tmp2 = importDefault(dependencyMap[10])();
-  let obj5 = arg1(dependencyMap[13]);
+  let obj4 = channel(4950);
+  const tmp2 = voiceStates(4066)();
+  let obj5 = channel(624);
   const items1 = [closure_7];
-  const stateFromStores1 = obj5.useStateFromStores(items1, () => closure_7.hasVideo(channel.id));
+  const stateFromStores1 = obj5.useStateFromStores(items1, () => outer1_7.hasVideo(channel.id));
   const sum = stageParticipantsCount + voiceStates.length;
   let num = 0;
   if (null != sum) {
@@ -96,12 +100,12 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   if (!stateFromStores1) {
     tmp12 = tmp7;
   }
-  const tmp7 = obj4.useStageHasMedia(channel.id) && isGuildStageVoiceResult;
+  tmp7 = obj4.useStageHasMedia(channel.id) && isGuildStageVoiceResult;
   obj = { channel, video: tmp12 };
-  const connectedUserLimit = arg1(dependencyMap[17]).useConnectedUserLimit(obj);
-  const obj7 = arg1(dependencyMap[17]);
+  const connectedUserLimit = channel(11393).useConnectedUserLimit(obj);
+  const obj7 = channel(11393);
   obj = { channel, video: tmp12, userCount: num };
-  let connectedUserLimitFormatted = arg1(dependencyMap[17]).useConnectedUserLimitFormatted(obj);
+  let connectedUserLimitFormatted = channel(11393).useConnectedUserLimitFormatted(obj);
   let tmp15 = !stateFromStores && !isConnectedToVoiceChannel && tmp10 != connectedUserLimitFormatted && num > 0;
   if (tmp15) {
     tmp15 = num >= connectedUserLimit / 2 + 1;
@@ -109,17 +113,17 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   if (isConnectedToVoiceChannel) {
     return null;
   } else if (small) {
-    obj1 = { onPress: closure_8, style: intl.joinButton };
+    obj1 = { accessibilityRole: "none", pointerEvents: "none", onPress: closure_8, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no", style: intl.joinButton };
     obj2 = { style: intl.joinButtonContent };
-    obj3 = {};
+    obj3 = { style: null, color: "interactive-text-default", variant: "text-xs/semibold", lineClamp: 1 };
     intl = intl.joinButtonText;
     obj3.style = intl;
     if (tmp10 == connectedUserLimitFormatted) {
-      intl = arg1(dependencyMap[19]).intl;
-      connectedUserLimitFormatted = intl.string(arg1(dependencyMap[19]).t.VJlc0S);
+      intl = channel(1212).intl;
+      connectedUserLimitFormatted = intl.string(channel(1212).t.VJlc0S);
     }
     obj3.children = connectedUserLimitFormatted;
-    obj2.children = tmp16(arg1(dependencyMap[18]).Text, obj3);
+    obj2.children = tmp16(channel(4126).Text, obj3);
     obj1.children = tmp16(closure_4, obj2);
     let tmp16Result = tmp16(closure_5, obj1);
     const tmp30 = closure_5;
@@ -133,20 +137,16 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
           if (!memo) {
             let joinButtonIconActive = intl.joinButtonIconInactive;
           }
-          const items3 = [joinButtonIconActive, { "Null": "icon-strong", "Null": "text-md/medium" }];
-          let tmp26 = arg1;
-          let str2 = dependencyMap;
+          const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
+          let tmp26 = channel;
           if (isGuildStageVoiceResult) {
-            let VoiceNormalIcon = tmp26(str2[21]).StageIcon;
+            let VoiceNormalIcon = tmp26(4654).StageIcon;
           } else {
-            VoiceNormalIcon = tmp26(str2[22]).VoiceNormalIcon;
+            VoiceNormalIcon = tmp26(4658).VoiceNormalIcon;
           }
           tmp26 = jsx;
-          obj5 = {};
-          str2 = "xs";
-          obj5.size = "xs";
-          obj5.style = items3;
-          <VoiceNormalIcon {...obj5} />;
+          obj5 = { size: "xs", style: items3 };
+          <VoiceNormalIcon size="xs" style={items3} />;
         }
         joinButtonIconActive = intl.joinButtonIconActive;
       }
@@ -164,9 +164,9 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
       obj4.importantForAccessibility = "no";
       tmp16Result = tmp16(tmp19, obj4);
     } else {
-      const intl2 = arg1(dependencyMap[19]).intl;
+      const intl2 = channel(1212).intl;
       let str = intl2.string;
-      let toUpperCase = arg1(dependencyMap[19]).t;
+      let toUpperCase = channel(1212).t;
       if (memo) {
         str = str(toUpperCase.dI3q4h);
         toUpperCase = str.toUpperCase;
@@ -177,6 +177,6 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
     }
   }
 });
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/channel_list_v2/native/components/VocalChannelJoinButton.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_list_v2/native/components/VocalChannelJoinButton.tsx");
 
 export default memoResult;

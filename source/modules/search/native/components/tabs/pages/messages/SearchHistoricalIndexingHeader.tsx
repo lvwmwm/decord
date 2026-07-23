@@ -1,37 +1,36 @@
-// Module ID: 15272
-// Function ID: 115287
+// Module ID: 15389
+// Function ID: 117461
 // Name: HistoricalIndexingHeader
-// Dependencies: []
+// Dependencies: [31, 1921, 9103, 33, 4130, 10076, 5167, 4126, 1212, 2]
 // Exports: default
 
-// Module 15272 (HistoricalIndexingHeader)
+// Module 15389 (HistoricalIndexingHeader)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let SEARCH_ROW_TAP_STATE_PADDING;
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-const SearchTabs = tmp2.SearchTabs;
-({ SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = tmp2);
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ header: { marginBottom: 16 }, headerMessages: { marginHorizontal: SEARCH_LIST_HORIZONTAL_PADDING, marginTop: SEARCH_ROW_TAP_STATE_PADDING } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchHistoricalIndexingHeader.tsx");
+const require = arg1;
+const SearchTabs = SearchAutocompleteSelectAnalyticsActions.SearchTabs;
+({ SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = SearchAutocompleteSelectAnalyticsActions);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ header: { marginBottom: 16 }, headerMessages: { marginHorizontal: SEARCH_LIST_HORIZONTAL_PADDING, marginTop: SEARCH_ROW_TAP_STATE_PADDING } });
+const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchHistoricalIndexingHeader.tsx");
 
 export default function HistoricalIndexingHeader(searchContext) {
   searchContext = searchContext.searchContext;
-  const arg1 = searchContext;
   const documentsIndexed = searchContext.documentsIndexed;
-  const importDefault = documentsIndexed;
   const tab = searchContext.tab;
-  const dependencyMap = tab;
   const tmp = callback();
   const React = tmp;
   const items = [documentsIndexed];
   const items1 = [tmp.headerMessages, tab];
-  const memo = React.useMemo(() => Number(documentsIndexed).toLocaleString(locale.locale), items);
+  const memo = React.useMemo(() => Number(documentsIndexed).toLocaleString(outer1_4.locale), items);
   const items2 = [documentsIndexed, searchContext];
   const memo1 = React.useMemo(() => {
-    if (tab === constants.MESSAGES) {
+    if (tab === outer1_5.MESSAGES) {
       const headerMessages = tmp.headerMessages;
     }
     return headerMessages;
@@ -41,11 +40,12 @@ export default function HistoricalIndexingHeader(searchContext) {
     obj = { searchContext, isHistoricalIndexing: true, documentsIndexed };
     obj.trackSearchIndexing(obj);
   }, items2);
-  let obj = { style: items3 };
+  let obj = { variant: "primary", border: "subtle" };
   const items3 = [tmp.header, memo1];
-  obj = { cachedAt: false, edpbxy: false };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.children = intl.format(arg1(dependencyMap[8]).t.4Y3O+O, { count: memo });
-  obj.children = jsx(arg1(dependencyMap[7]).Text, obj);
-  return jsx(arg1(dependencyMap[6]).Card, obj);
+  obj.style = items3;
+  obj = { variant: "heading-sm/normal", color: "interactive-text-default" };
+  const intl = searchContext(tab[8]).intl;
+  obj.children = intl.format(searchContext(tab[8]).t["4Y3O+O"], { count: memo });
+  obj.children = jsx(searchContext(tab[7]).Text, { variant: "heading-sm/normal", color: "interactive-text-default" });
+  return jsx(searchContext(tab[6]).Card, { variant: "heading-sm/normal", color: "interactive-text-default" });
 };

@@ -1,17 +1,20 @@
-// Module ID: 4114
-// Function ID: 34075
+// Module ID: 4116
+// Function ID: 34084
 // Name: readSnowflake
-// Dependencies: []
+// Dependencies: [57, 21, 1440, 4117, 2]
 // Exports: generateInviteKeyFromUrlParams, getInviteInstanceId, getInviteKeySearchSuffix, parseExtraDataFromInviteKey
 
-// Module 4114 (readSnowflake)
+// Module 4116 (readSnowflake)
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
 function readSnowflake(firstQueryStringValue) {
   let tmp;
   if ("string" === typeof firstQueryStringValue) {
     if (obj.isProbablyAValidSnowflake(firstQueryStringValue)) {
       tmp = firstQueryStringValue;
     }
-    const obj = importDefault(dependencyMap[1]);
+    obj = importDefault(21);
   }
   return tmp;
 }
@@ -23,15 +26,15 @@ function generateInviteKeyFromExtraData(source) {
   ({ baseCode, guildScheduledEventId, targetChannelId, targetMessageId } = source);
   const obj = {};
   if (null != guildScheduledEventId) {
-    obj[closure_4] = guildScheduledEventId;
+    obj[event] = guildScheduledEventId;
   }
   if (null != targetChannelId) {
-    obj[closure_5] = targetChannelId;
+    obj[channel] = targetChannelId;
     if (null != targetMessageId) {
-      obj[closure_6] = targetMessageId;
+      obj[message] = targetMessageId;
     }
   }
-  const json = importDefault(dependencyMap[2]).stringify(obj);
+  const json = importDefault(1440).stringify(obj);
   let combined = baseCode;
   if ("" !== json) {
     const _HermesInternal = HermesInternal;
@@ -42,11 +45,10 @@ function generateInviteKeyFromExtraData(source) {
 function parseInviteCodeFromInviteKey(code) {
   return callback(code.split("?"), 1)[0];
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = "event";
-let closure_5 = "channel";
-let closure_6 = "message";
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/instant_invite/InviteCodeUtils.tsx");
+const event = "event";
+const channel = "channel";
+const message = "message";
+const result = require("parse").fileFinishedImporting("modules/instant_invite/InviteCodeUtils.tsx");
 
 export { readSnowflake };
 export const generateInviteKeyFromUrlParams = function generateInviteKeyFromUrlParams(inviteHostRemainingPath, search) {
@@ -57,16 +59,16 @@ export const generateInviteKeyFromUrlParams = function generateInviteKeyFromUrlP
     if ("?" === search.charAt(0)) {
       substr = search.substring(1);
     }
-    let obj = importDefault(dependencyMap[2]);
+    let obj = importDefault(1440);
     const parsed = obj.parse(substr);
-    const firstQueryStringValue = search(dependencyMap[3]).getFirstQueryStringValue(parsed[closure_4]);
-    const obj2 = search(dependencyMap[3]);
-    const tmp13 = readSnowflake(search(dependencyMap[3]).getFirstQueryStringValue(parsed[closure_5]));
+    const firstQueryStringValue = require(4117) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
+    const obj2 = require(4117) /* getFirstQueryStringValue */;
+    const tmp13 = readSnowflake(require(4117) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]));
     obj = { baseCode: inviteHostRemainingPath, guildScheduledEventId: firstQueryStringValue, targetChannelId: tmp13 };
     let tmp16;
     if (null != tmp13) {
-      tmp16 = readSnowflake(search(dependencyMap[3]).getFirstQueryStringValue(parsed[closure_6]));
-      const obj5 = search(dependencyMap[3]);
+      tmp16 = readSnowflake(require(4117) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[message]));
+      const obj5 = require(4117) /* getFirstQueryStringValue */;
     }
     obj.targetMessageId = tmp16;
     return generateInviteKeyFromExtraData(obj);
@@ -80,16 +82,16 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
     let obj = { baseCode: first };
     return obj;
   } else {
-    const parsed = importDefault(dependencyMap[2]).parse(tmp3);
-    const obj3 = importDefault(dependencyMap[2]);
-    const firstQueryStringValue = arg1(dependencyMap[3]).getFirstQueryStringValue(parsed[closure_4]);
-    const obj4 = arg1(dependencyMap[3]);
-    const tmp17 = readSnowflake(arg1(dependencyMap[3]).getFirstQueryStringValue(parsed[closure_5]));
+    const parsed = importDefault(1440).parse(tmp3);
+    const obj3 = importDefault(1440);
+    const firstQueryStringValue = require(4117) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[event]);
+    const obj4 = require(4117) /* getFirstQueryStringValue */;
+    const tmp17 = readSnowflake(require(4117) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]));
     obj = { baseCode: first, guildScheduledEventId: firstQueryStringValue, targetChannelId: tmp17 };
     let tmp8;
     if (null != tmp17) {
-      obj = arg1(dependencyMap[3]);
-      tmp8 = readSnowflake(obj.getFirstQueryStringValue(parsed[closure_6]));
+      obj = require(4117) /* getFirstQueryStringValue */;
+      tmp8 = readSnowflake(obj.getFirstQueryStringValue(parsed[message]));
     }
     obj.targetMessageId = tmp8;
     return obj;

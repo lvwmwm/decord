@@ -1,14 +1,16 @@
-// Module ID: 14538
-// Function ID: 109477
+// Module ID: 14652
+// Function ID: 111637
 // Name: UserSettingsJSError
-// Dependencies: []
+// Dependencies: [31, 33, 4126, 2]
 // Exports: default
 
-// Module 14538 (UserSettingsJSError)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsJSError.tsx");
+// Module 14652 (UserSettingsJSError)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("Text").fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsJSError.tsx");
 
 export default function UserSettingsJSError() {
-  return jsx(arg1(dependencyMap[2]).Text, { variant: "display-md", children: null.boo });
+  return jsx(require(4126) /* Text */.Text, { variant: "display-md", children: null.boo });
 };

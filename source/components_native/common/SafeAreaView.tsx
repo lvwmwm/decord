@@ -1,14 +1,15 @@
-// Module ID: 5118
-// Function ID: 44381
+// Module ID: 5121
+// Function ID: 44400
 // Name: SafeAreaPaddingView
-// Dependencies: []
+// Dependencies: [31, 27, 33, 1557, 5122, 636, 2]
 // Exports: SafeAreaPaddingView
 
-// Module 5118 (SafeAreaPaddingView)
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("components_native/common/SafeAreaView.tsx");
+// Module 5121 (SafeAreaPaddingView)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const result = require("jsxProd").fileFinishedImporting("components_native/common/SafeAreaView.tsx");
 
 export const SafeAreaPaddingView = function SafeAreaPaddingView(top) {
   let flag = top.top;
@@ -28,19 +29,18 @@ export const SafeAreaPaddingView = function SafeAreaPaddingView(top) {
     flag4 = false;
   }
   let style = top.style;
-  let obj = { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false };
+  let obj = { top: 0, bottom: 0, left: 0, right: 0, style: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(top, obj);
-  let importDefault;
-  let dependencyMap;
+  let ref;
+  let items;
   let React;
-  const rect = importDefault(dependencyMap[3])();
-  const ref = React.useRef(null);
-  importDefault = ref;
+  const rect = ref(items[3])();
+  ref = React.useRef(null);
   if (null == style) {
     style = {};
   }
-  let items = [style, , , , ];
+  items = [style, , , , ];
   let tmp8;
   if (flag) {
     obj = { paddingTop: rect.top + tmp4 };
@@ -65,20 +65,19 @@ export const SafeAreaPaddingView = function SafeAreaPaddingView(top) {
     tmp11 = obj3;
   }
   items[4] = tmp11;
-  dependencyMap = items;
-  const tmp12 = importDefault(dependencyMap[4])(ref);
-  const tmp13 = importDefault(dependencyMap[5])(items, tmp12);
+  const tmp12 = ref(items[4])(ref);
+  const tmp13 = ref(items[5])(items, tmp12);
   React = tmp13;
   if (tmp13) {
-    dependencyMap = tmp12;
+    items = tmp12;
     items = tmp12;
   }
   const insertionEffect = React.useInsertionEffect(() => {
-    if (!tmp13) {
-      ref.current = tmp12;
+    if (!c2) {
+      ref.current = items;
     }
   });
   const obj4 = { style: items };
   const merged1 = Object.assign(merged);
-  return <View {...obj4} />;
+  return <View style={items} />;
 };

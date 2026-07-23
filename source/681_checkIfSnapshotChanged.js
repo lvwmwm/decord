@@ -1,13 +1,18 @@
 // Module ID: 681
 // Function ID: 8398
 // Name: checkIfSnapshotChanged
-// Dependencies: []
+// Dependencies: [31]
 
 // Module 681 (checkIfSnapshotChanged)
+import result from "result";
+
+let closure_1;
+let closure_2;
+let closure_3;
+let closure_4;
 function checkIfSnapshotChanged(value) {
   return !is(value.value, value.getSnapshot());
 }
-const _module = require(dependencyMap[0]);
 if ("function" === typeof Object.is) {
   const _Object = Object;
 } else {
@@ -27,37 +32,38 @@ if ("function" === typeof Object.is) {
     return tmp;
   };
 }
-({ useState: closure_1, useEffect: closure_2, useLayoutEffect: closure_3, useDebugValue: closure_4 } = _module);
+({ useState: closure_1, useEffect: closure_2, useLayoutEffect: closure_3, useDebugValue: closure_4 } = result);
 
-export const useSyncExternalStore = undefined !== _module.useSyncExternalStore ? _module.useSyncExternalStore : function useSyncExternalStore$1(arg0, getSnapshot) {
-  const is = arg0;
+export const useSyncExternalStore = undefined !== result.useSyncExternalStore ? result.useSyncExternalStore : (function useSyncExternalStore$1(arg0, getSnapshot) {
+  let closure_0 = arg0;
+  const callback = getSnapshot;
   const tmp = getSnapshot();
-  const tmp2 = getSnapshot({ inst: { value: tmp, getSnapshot } });
+  const callback2 = tmp;
+  const tmp2 = callback({ inst: { value: tmp, getSnapshot } });
   const inst = tmp2[0].inst;
-  const callback = tmp2[1];
+  const callback3 = tmp2[1];
   const items = [arg0, tmp, getSnapshot];
   inst(() => {
-    inst.value = tmp;
-    inst.getSnapshot = arg1;
-    if (callback2(inst)) {
+    inst.value = closure_2;
+    inst.getSnapshot = closure_1;
+    if (outer1_5(inst)) {
       const obj = { inst };
-      callback(obj);
-      const tmp = callback;
+      callback2(obj);
     }
   }, items);
   const items1 = [arg0];
-  tmp(() => {
-    if (callback2(inst)) {
-      const obj = { inst };
-      callback(obj);
+  callback2(() => {
+    if (outer1_5(inst)) {
+      let obj = { inst };
+      callback2(obj);
     }
-    return arg0(() => {
-      if (callback2(closure_3)) {
-        const obj = { inst: closure_3 };
-        callback(obj);
+    return callback(() => {
+      if (outer2_5(outer1_3)) {
+        const obj = { inst: outer1_3 };
+        outer1_4(obj);
       }
     });
   }, items1);
-  callback(tmp);
+  callback3(tmp);
   return tmp;
-};
+});

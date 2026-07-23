@@ -1,19 +1,21 @@
-// Module ID: 10098
-// Function ID: 78209
+// Module ID: 10106
+// Function ID: 78249
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [469762087, 3154116624, 33554436, 4026531840, 7955, 345088]
+// Dependencies: [1316, 1849, 566, 7616, 10107, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 10098 (useSafetyAlertsSettingOrDefault)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");
+// Module 10106 (useSafetyAlertsSettingOrDefault)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");
 
 export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOrDefault() {
-  const currentUser = currentUser.getCurrentUser();
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const privacy = settings.settings.privacy;
+  currentUser = currentUser.getCurrentUser();
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => {
+    const privacy = outer1_2.settings.privacy;
     let value;
     if (null != privacy) {
       if (null != privacy.inappropriateConversationWarnings) {
@@ -22,10 +24,10 @@ export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOr
     }
     return null == value || value;
   });
-  const obj2 = arg1(dependencyMap[2]);
-  let userIsTeen = arg1(dependencyMap[3]).useUserIsTeen();
-  const obj3 = arg1(dependencyMap[3]);
-  const tmp3 = !userIsTeen || !arg1(dependencyMap[4]).useIsEligibleForInappropriateConversationDefaultOn({ location: "useSafetyAlertsSettingOrDefault" });
+  const obj2 = require(566) /* initialize */;
+  let userIsTeen = require(7616) /* useUserIsTeen */.useUserIsTeen();
+  const obj3 = require(7616) /* useUserIsTeen */;
+  const tmp3 = !userIsTeen || !require(10107) /* InappropriateConversationsDefaultOn */.useIsEligibleForInappropriateConversationDefaultOn({ location: "useSafetyAlertsSettingOrDefault" });
   let tmp4 = !tmp3;
   if (tmp3) {
     if (!userIsTeen) {

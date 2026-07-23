@@ -1,30 +1,32 @@
 // Module ID: 434
 // Function ID: 5990
 // Name: getState
-// Dependencies: []
+// Dependencies: [98, 435, 209, 44]
 
 // Module 434 (getState)
+let require = arg1;
+const module = arg2;
+const dependencyMap = arg6;
 function getState() {
   if (null != obj) {
     return obj;
   } else {
-    let tmp13 = arg2(arg6[0]);
+    let tmp13 = obj(98);
     const prototype2 = tmp13.prototype;
     tmp13 = new tmp13();
-    const arg1 = tmp13;
-    const _default = arg1(arg6[1]).default;
+    const require = tmp13;
+    const _default = require(435) /* Appearance */.default;
     if (null == _default) {
-      let obj = { <string:382774833>: "o", <string:1238898205>: "o", eventEmitter: tmp13 };
+      obj = { NativeAppearance: null, appearance: null, eventEmitter: tmp13 };
     } else {
       obj = { NativeAppearance: _default, appearance: null, eventEmitter: tmp13 };
-      const arg2 = obj;
-      let tmp3 = arg2(arg6[2]);
+      let tmp3 = obj(209);
       const prototype = tmp3.prototype;
       tmp3 = new tmp3(_default);
       tmp3.addListener("appearanceChanged", (colorScheme) => {
         const obj = {};
         colorScheme = colorScheme.colorScheme;
-        callback(colorScheme);
+        outer1_5(colorScheme);
         obj.colorScheme = colorScheme;
         obj.appearance = obj;
         tmp13.emit("change", obj.appearance);
@@ -41,7 +43,7 @@ function toColorScheme(colorScheme) {
   if (!tmp2) {
     tmp2 = null == colorScheme;
   }
-  arg2(arg6[3])(tmp2, "Unrecognized color scheme. Did you mean 'dark', 'light' or null?");
+  module(44)(tmp2, "Unrecognized color scheme. Did you mean 'dark', 'light' or null?");
   return colorScheme;
 }
 arg5.getColorScheme = function getColorScheme() {

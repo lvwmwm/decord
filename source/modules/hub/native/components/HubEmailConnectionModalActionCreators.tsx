@@ -1,17 +1,20 @@
-// Module ID: 11768
-// Function ID: 91367
-// Dependencies: []
+// Module ID: 11778
+// Function ID: 91416
+// Dependencies: [5, 4337, 11761, 1934, 2]
 
-// Module 11768
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/hub/native/components/HubEmailConnectionModalActionCreators.tsx");
+// Module 11778
+import asyncGeneratorStep from "asyncGeneratorStep";
+
+const require = arg1;
+const result = require("getScreens").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionModalActionCreators.tsx");
 
 export default {
-  open(closure_2) {
+  open(merged) {
+    let closure_0 = arg1;
     // CreateGeneratorClosureLongIndex (0x67)
-    importDefault(dependencyMap[1]).pushLazy(callback(tmp), closure_2, "HUB_EMAIL_CONNECTION_MODAL_KEY");
+    importDefault(4337).pushLazy(callback(tmp), merged, "HUB_EMAIL_CONNECTION_MODAL_KEY");
   },
   close() {
-    importDefault(dependencyMap[1]).popWithKey("HUB_EMAIL_CONNECTION_MODAL_KEY");
+    importDefault(4337).popWithKey("HUB_EMAIL_CONNECTION_MODAL_KEY");
   }
 };

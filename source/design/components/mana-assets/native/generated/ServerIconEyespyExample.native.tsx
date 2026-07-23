@@ -1,13 +1,13 @@
-// Module ID: 6475
-// Function ID: 50645
+// Module ID: 6480
+// Function ID: 50674
 // Name: ServerIconEyespyExample
-// Dependencies: []
+// Dependencies: [33, 5085, 6481, 2]
 // Exports: ServerIconEyespyExample
 
-// Module 6475 (ServerIconEyespyExample)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconEyespyExample.native.tsx");
+// Module 6480 (ServerIconEyespyExample)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconEyespyExample.native.tsx");
 
 export const ServerIconEyespyExample = function ServerIconEyespyExample(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ServerIconEyespyExample = function ServerIconEyespyExample(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6481) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ServerIconEyespyExample = function ServerIconEyespyExample(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

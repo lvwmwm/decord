@@ -1,12 +1,11 @@
-// Module ID: 12963
-// Function ID: 98626
+// Module ID: 13077
+// Function ID: 100782
 // Name: useToggleButtonProps
-// Dependencies: []
+// Dependencies: [2]
 // Exports: useToggleButtonProps, useToggleIconButtonProps
 
-// Module 12963 (useToggleButtonProps)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("design/components/Button/native/useToggleButtonProps.native.tsx");
+// Module 13077 (useToggleButtonProps)
+const result = require("set").fileFinishedImporting("design/components/Button/native/useToggleButtonProps.native.tsx");
 
 export const useToggleButtonProps = function useToggleButtonProps(on, first) {
   let obj = {};

@@ -1,53 +1,65 @@
 // Module ID: 1002
-// Function ID: 10734
+// Function ID: 10735
 // Name: mergeOptions
-// Dependencies: []
+// Dependencies: [65, 29, 5, 77, 57, 794]
 // Exports: buildFeedbackIntegration, feedbackModalIntegration, feedbackScreenshotIntegration, getFeedback
 
 // Module 1002 (mergeOptions)
+import _toConsumableArray from "_toConsumableArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import asyncGeneratorStep from "registerSpanErrorInstrumentation";
+import _defineProperty from "_defineProperty";
+import _slicedToArray from "_slicedToArray";
+
+let closure_34;
+let closure_35;
+let closure_36;
+let closure_37;
+let closure_38;
+let closure_39;
 function mergeOptions(tags, tags2) {
-  const require = tags;
-  const dependencyMap = tags2;
+  let closure_0 = tags;
+  let closure_1 = tags2;
   return Object.assign({}, tags, tags2, {
     tags: Object.assign({}, tags.tags, tags2.tags),
     onFormOpen() {
-      if (null != arg1.onFormOpen) {
-        arg1.onFormOpen();
+      if (null != tags2.onFormOpen) {
+        tags2.onFormOpen();
       }
-      if (null != arg0.onFormOpen) {
-        arg0.onFormOpen();
+      if (null != tags.onFormOpen) {
+        tags.onFormOpen();
       }
     },
     onFormClose() {
-      if (null != arg1.onFormClose) {
-        arg1.onFormClose();
+      if (null != tags2.onFormClose) {
+        tags2.onFormClose();
       }
-      if (null != arg0.onFormClose) {
-        arg0.onFormClose();
+      if (null != tags.onFormClose) {
+        tags.onFormClose();
       }
     },
     onSubmitSuccess(arg0, arg1) {
-      if (null != arg1.onSubmitSuccess) {
-        arg1.onSubmitSuccess(arg0, arg1);
+      if (null != tags2.onSubmitSuccess) {
+        tags2.onSubmitSuccess(arg0, arg1);
       }
-      if (null != arg0.onSubmitSuccess) {
-        arg0.onSubmitSuccess(arg0, arg1);
+      if (null != tags.onSubmitSuccess) {
+        tags.onSubmitSuccess(arg0, arg1);
       }
     },
     onSubmitError(arg0) {
-      if (null != arg1.onSubmitError) {
-        arg1.onSubmitError(arg0);
+      if (null != tags2.onSubmitError) {
+        tags2.onSubmitError(arg0);
       }
-      if (null != arg0.onSubmitError) {
-        arg0.onSubmitError(arg0);
+      if (null != tags.onSubmitError) {
+        tags.onSubmitError(arg0);
       }
     },
     onFormSubmitted() {
-      if (null != arg1.onFormSubmitted) {
-        arg1.onFormSubmitted();
+      if (null != tags2.onFormSubmitted) {
+        tags2.onFormSubmitted();
       }
-      if (null != arg0.onFormSubmitted) {
-        arg0.onFormSubmitted();
+      if (null != tags.onFormSubmitted) {
+        tags.onFormSubmitted();
       }
     },
     themeDark: Object.assign({}, tags.themeDark, tags2.themeDark),
@@ -55,21 +67,21 @@ function mergeOptions(tags, tags2) {
   });
 }
 function setAttributesNS(elementNS, arg1) {
-  const require = elementNS;
+  let closure_0 = elementNS;
   const entries = Object.entries(arg1);
   const item = entries.forEach((arg0) => {
-    const tmp = callback(arg0, 2);
-    arg0.setAttributeNS(null, tmp[0], tmp[1]);
+    const tmp = outer1_6(arg0, 2);
+    elementNS.setAttributeNS(null, tmp[0], tmp[1]);
   });
   return elementNS;
 }
 function Actor(arg0) {
+  let require;
   let styleNonce;
   let triggerAriaLabel;
   let triggerLabel;
-  ({ triggerLabel, triggerAriaLabel, shadow: closure_0, styleNonce } = arg0);
+  ({ triggerLabel, triggerAriaLabel, shadow: require, styleNonce } = arg0);
   const element = <button />;
-  const dependencyMap = element;
   element.type = "button";
   element.className = "widget__actor";
   element.ariaHidden = "false";
@@ -77,33 +89,33 @@ function Actor(arg0) {
     triggerAriaLabel = triggerLabel;
   }
   if (!triggerAriaLabel) {
-    triggerAriaLabel = closure_10;
+    triggerAriaLabel = c10;
   }
   element.ariaLabel = triggerAriaLabel;
-  element.appendChild(function FeedbackIcon() {
+  element.appendChild((function FeedbackIcon() {
     function createElementNS(clipPath) {
-      const _document = callback(closure_1[5]).GLOBAL_OBJ.document;
+      const _document = outer2_0(element[5]).GLOBAL_OBJ.document;
       return _document.createElementNS("http://www.w3.org/2000/svg", clipPath);
     }
     const elementNS = createElementNS("svg");
-    callback2(elementNS, { "Null": "screenshot", "Null": "form__label", "Null": null, "Null": "center" });
+    outer1_43(elementNS, { width: "20", height: "20", viewBox: "0 0 20 20", fill: "var(--actor-color, var(--foreground))" });
     const elementNS1 = createElementNS("g");
-    callback2(elementNS1, { clipPath: "url(#clip0_57_80)" });
+    outer1_43(elementNS1, { clipPath: "url(#clip0_57_80)" });
     const elementNS2 = createElementNS("path");
-    callback2(elementNS2, callback(callback(callback({}, "fill-rule", "evenodd"), "clip-rule", "evenodd"), "d", "M15.6622 15H12.3997C12.2129 14.9959 12.031 14.9396 11.8747 14.8375L8.04965 12.2H7.49956V19.1C7.4875 19.3348 7.3888 19.5568 7.22256 19.723C7.05632 19.8892 6.83435 19.9879 6.59956 20H2.04956C1.80193 19.9968 1.56535 19.8969 1.39023 19.7218C1.21511 19.5467 1.1153 19.3101 1.11206 19.0625V12.2H0.949652C0.824431 12.2017 0.700142 12.1783 0.584123 12.1311C0.468104 12.084 0.362708 12.014 0.274155 11.9255C0.185602 11.8369 0.115689 11.7315 0.0685419 11.6155C0.0213952 11.4995 -0.00202913 11.3752 -0.00034808 11.25V3.75C-0.00900498 3.62067 0.0092504 3.49095 0.0532651 3.36904C0.0972798 3.24712 0.166097 3.13566 0.255372 3.04168C0.344646 2.94771 0.452437 2.87327 0.571937 2.82307C0.691437 2.77286 0.82005 2.74798 0.949652 2.75H8.04965L11.8747 0.1625C12.031 0.0603649 12.2129 0.00407221 12.3997 0H15.6622C15.9098 0.00323746 16.1464 0.103049 16.3215 0.278167C16.4966 0.453286 16.5964 0.689866 16.5997 0.9375V3.25269C17.3969 3.42959 18.1345 3.83026 18.7211 4.41679C19.5322 5.22788 19.9878 6.32796 19.9878 7.47502C19.9878 8.62209 19.5322 9.72217 18.7211 10.5333C18.1345 11.1198 17.3969 11.5205 16.5997 11.6974V14.0125C16.6047 14.1393 16.5842 14.2659 16.5395 14.3847C16.4948 14.5035 16.4268 14.6121 16.3394 14.7042C16.252 14.7962 16.147 14.8698 16.0307 14.9206C15.9144 14.9714 15.7891 14.9984 15.6622 15ZM1.89695 10.325H1.88715V4.625H8.33715C8.52423 4.62301 8.70666 4.56654 8.86215 4.4625L12.6872 1.875H14.7247V13.125H12.6872L8.86215 10.4875C8.70666 10.3835 8.52423 10.327 8.33715 10.325H2.20217C2.15205 10.3167 2.10102 10.3125 2.04956 10.3125C1.9981 10.3125 1.94708 10.3167 1.89695 10.325ZM2.98706 12.2V18.1625H5.66206V12.2H2.98706ZM16.5997 9.93612V5.01393C16.6536 5.02355 16.7072 5.03495 16.7605 5.04814C17.1202 5.13709 17.4556 5.30487 17.7425 5.53934C18.0293 5.77381 18.2605 6.06912 18.4192 6.40389C18.578 6.73866 18.6603 7.10452 18.6603 7.47502C18.6603 7.84552 18.578 8.21139 18.4192 8.54616C18.2605 8.88093 18.0293 9.17624 17.7425 9.41071C17.4556 9.64518 17.1202 9.81296 16.7605 9.90191C16.7072 9.91509 16.6536 9.9265 16.5997 9.93612Z"));
+    outer1_43(elementNS2, outer1_5(outer1_5(outer1_5({}, "fill-rule", "evenodd"), "clip-rule", "evenodd"), "d", "M15.6622 15H12.3997C12.2129 14.9959 12.031 14.9396 11.8747 14.8375L8.04965 12.2H7.49956V19.1C7.4875 19.3348 7.3888 19.5568 7.22256 19.723C7.05632 19.8892 6.83435 19.9879 6.59956 20H2.04956C1.80193 19.9968 1.56535 19.8969 1.39023 19.7218C1.21511 19.5467 1.1153 19.3101 1.11206 19.0625V12.2H0.949652C0.824431 12.2017 0.700142 12.1783 0.584123 12.1311C0.468104 12.084 0.362708 12.014 0.274155 11.9255C0.185602 11.8369 0.115689 11.7315 0.0685419 11.6155C0.0213952 11.4995 -0.00202913 11.3752 -0.00034808 11.25V3.75C-0.00900498 3.62067 0.0092504 3.49095 0.0532651 3.36904C0.0972798 3.24712 0.166097 3.13566 0.255372 3.04168C0.344646 2.94771 0.452437 2.87327 0.571937 2.82307C0.691437 2.77286 0.82005 2.74798 0.949652 2.75H8.04965L11.8747 0.1625C12.031 0.0603649 12.2129 0.00407221 12.3997 0H15.6622C15.9098 0.00323746 16.1464 0.103049 16.3215 0.278167C16.4966 0.453286 16.5964 0.689866 16.5997 0.9375V3.25269C17.3969 3.42959 18.1345 3.83026 18.7211 4.41679C19.5322 5.22788 19.9878 6.32796 19.9878 7.47502C19.9878 8.62209 19.5322 9.72217 18.7211 10.5333C18.1345 11.1198 17.3969 11.5205 16.5997 11.6974V14.0125C16.6047 14.1393 16.5842 14.2659 16.5395 14.3847C16.4948 14.5035 16.4268 14.6121 16.3394 14.7042C16.252 14.7962 16.147 14.8698 16.0307 14.9206C15.9144 14.9714 15.7891 14.9984 15.6622 15ZM1.89695 10.325H1.88715V4.625H8.33715C8.52423 4.62301 8.70666 4.56654 8.86215 4.4625L12.6872 1.875H14.7247V13.125H12.6872L8.86215 10.4875C8.70666 10.3835 8.52423 10.327 8.33715 10.325H2.20217C2.15205 10.3167 2.10102 10.3125 2.04956 10.3125C1.9981 10.3125 1.94708 10.3167 1.89695 10.325ZM2.98706 12.2V18.1625H5.66206V12.2H2.98706ZM16.5997 9.93612V5.01393C16.6536 5.02355 16.7072 5.03495 16.7605 5.04814C17.1202 5.13709 17.4556 5.30487 17.7425 5.53934C18.0293 5.77381 18.2605 6.06912 18.4192 6.40389C18.578 6.73866 18.6603 7.10452 18.6603 7.47502C18.6603 7.84552 18.578 8.21139 18.4192 8.54616C18.2605 8.88093 18.0293 9.17624 17.7425 9.41071C17.4556 9.64518 17.1202 9.81296 16.7605 9.90191C16.7072 9.91509 16.6536 9.9265 16.5997 9.93612Z"));
     elementNS.appendChild(elementNS1).appendChild(elementNS2);
     const elementNS3 = createElementNS("defs");
     const elementNS4 = createElementNS("clipPath");
-    callback2(elementNS4, { id: "clip0_57_80" });
+    outer1_43(elementNS4, { id: "clip0_57_80" });
     const elementNS5 = createElementNS("rect");
-    callback2(elementNS5, {});
+    outer1_43(elementNS5, { width: "20", height: "20", fill: "white" });
     elementNS4.appendChild(elementNS5);
     elementNS3.appendChild(elementNS4);
     const appendChildResult = elementNS.appendChild(elementNS1);
     const appendChildResult4 = elementNS.appendChild(elementNS3);
     elementNS.appendChild(elementNS3).appendChild(elementNS4).appendChild(elementNS5);
     return elementNS;
-  }());
+  })());
   if (triggerLabel) {
     const element1 = <span />;
     element1.appendChild(document.createTextNode(triggerLabel));
@@ -114,7 +126,6 @@ function Actor(arg0) {
   if (styleNonce) {
     const attr = element2.setAttribute("nonce", styleNonce);
   }
-  let closure_2 = element2;
   return {
     el: element,
     appendToDom() {
@@ -140,6 +151,7 @@ function v$1(__s, __s2) {
   for (const key10004 in arg1) {
     let tmp = key10004;
     arg0[key10004] = arg1[key10004];
+    continue;
   }
   return __s;
 }
@@ -164,14 +176,14 @@ function y$1(div, arg1, cancelButtonLabel, arg3) {
       let tmp14 = tmp10;
       if ("key" == tmp10) {
         tmp3 = arg1[tmp10];
-        // continue
+        continue;
       } else {
         if ("ref" == tmp10) {
           tmp4 = arg1[tmp10];
-          // continue
+          continue;
         } else {
           obj[tmp10] = arg1[tmp10];
-          // continue
+          continue;
         }
         continue;
       }
@@ -194,7 +206,7 @@ function y$1(div, arg1, cancelButtonLabel, arg3) {
           continue;
         } else {
           obj[key10029] = arg0.defaultProps[key10029];
-          // continue
+          continue;
         }
         continue;
       }
@@ -202,12 +214,12 @@ function y$1(div, arg1, cancelButtonLabel, arg3) {
   }
   return d$1(div, obj, tmp5, tmp6, null);
 }
-function d$1(type, props, key, ref, arg4) {
-  const obj = { type, props, key, ref, __k: null, __: null, __b: 0, __e: null, __d: undefined, __c: null, constructor: undefined };
+function d$1(g$1, props, key, ref, arg4) {
+  const obj = { type: g$1, props, key, ref, __k: null, __: null, __b: 0, __e: null, __d: undefined, __c: null, constructor: undefined };
   let tmp = arg4;
   if (null == arg4) {
-    const sum = closure_17 + 1;
-    closure_17 = sum;
+    const sum = c17 + 1;
+    c17 = sum;
     tmp = sum;
   }
   obj.__v = tmp;
@@ -383,7 +395,7 @@ function x$1(self) {
     flag = debounceRendering !== obj.debounceRendering;
   }
   if (flag) {
-    let debounceRendering = obj.debounceRendering;
+    debounceRendering = obj.debounceRendering;
     if (!debounceRendering) {
       debounceRendering = _setTimeout;
     }
@@ -477,16 +489,16 @@ function P$1(arg0, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, arr) {
                 if ("bigint" !== tmp7) {
                   let _String = String;
                   if (tmp5.constructor != String) {
-                    let tmp83 = closure_25;
-                    if (closure_25(tmp5)) {
-                      let tmp15 = closure_49;
-                      let tmp16 = closure_50;
+                    let tmp83 = isArray;
+                    if (isArray(tmp5)) {
+                      let tmp15 = d$1;
+                      let tmp16 = g$1;
                       let obj = { children: tmp5 };
                       let tmp17 = obj;
                       let tmp18 = null;
                       let tmp19 = null;
                       let tmp20 = null;
-                      let tmp9Result = closure_49(closure_50, obj, null, null, null);
+                      let tmp9Result = d$1(g$1, obj, null, null, null);
                     } else {
                       tmp9Result = tmp5;
                       if (undefined === tmp5.constructor) {
@@ -494,7 +506,7 @@ function P$1(arg0, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, arr) {
                         if (tmp5.__b > 0) {
                           ({ type, props, key } = tmp5);
                           let ref = null;
-                          let tmp9 = closure_49;
+                          let tmp9 = d$1;
                           if (tmp5.ref) {
                             ref = tmp5.ref;
                           }
@@ -511,13 +523,13 @@ function P$1(arg0, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, arr) {
                 }
               }
             }
-            let tmp21 = closure_49;
+            let tmp21 = d$1;
             let tmp22 = null;
             let tmp23 = tmp5;
             let tmp24 = null;
             let tmp25 = null;
             let tmp26 = tmp5;
-            tmp9Result = closure_49(null, tmp5, null, null, tmp5);
+            tmp9Result = d$1(null, tmp5, null, null, tmp5);
           }
         }
       }
@@ -525,13 +537,13 @@ function P$1(arg0, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, arr) {
       if (null != tmp6) {
         tmp6.__ = __k;
         tmp6.__b = __k.__b + 1;
-        let tmp36 = closure_59;
+        let tmp36 = I;
         let sum = num + num2;
         let tmp38 = tmp6;
         let tmp39 = __k;
         let tmp40 = sum;
         let tmp41 = tmp3;
-        let tmp42 = closure_59(tmp6, __k, sum, tmp3);
+        let tmp42 = I(tmp6, __k, sum, tmp3);
         tmp6.__i = tmp42;
         let tmp43 = null;
         let tmp44 = tmp3;
@@ -614,11 +626,11 @@ function P$1(arg0, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, arr) {
         tmp32 = num2;
         if (__e) {
           if (tmp28.__e == __k.__d) {
-            let tmp33 = closure_52;
-            __k.__d = closure_52(tmp28);
+            let tmp33 = m$1;
+            __k.__d = m$1(tmp28);
           }
-          let tmp34 = closure_68;
-          let tmp35 = closure_68(tmp28, tmp28, false);
+          let tmp34 = O;
+          let tmp35 = O(tmp28, tmp28, false);
           __k[num] = null;
           diff2 = tmp3 - 1;
           tmp29 = tmp;
@@ -627,8 +639,8 @@ function P$1(arg0, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, arr) {
         }
       }
       num = num + 1;
-      let tmp = tmp29;
-      let tmp2 = tmp30;
+      tmp = tmp29;
+      tmp2 = tmp30;
       tmp3 = diff2;
       num2 = tmp32;
       tmp4 = diff2;
@@ -698,7 +710,7 @@ function P$1(arg0, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, arr) {
       tmp56.__u = tmp56.__u & -196609;
     }
     ___d2 = $(tmp56, ___d, arg0);
-    const tmp73 = tmp56.ref && tmp60.ref != tmp56.ref;
+    tmp73 = tmp56.ref && tmp60.ref != tmp56.ref;
     const tmp77 = null == tmp53 && null != __e2;
   }
   __k.__d = tmp54;
@@ -835,13 +847,13 @@ function I(arg0, arg1, arg2, arg3) {
   }
   return arg2;
 }
-function T$1(setProperty) {
+function T$1(style, arg1, arg2) {
   if ("-" === arg1[0]) {
     let str4 = "";
     if (null != arg2) {
       str4 = arg2;
     }
-    setProperty.setProperty(arg1, str4);
+    style.setProperty(arg1, str4);
   } else {
     let str = "";
     if (null != arg2) {
@@ -854,7 +866,7 @@ function T$1(setProperty) {
       }
       str = text;
     }
-    setProperty[arg1] = str;
+    style[arg1] = str;
   }
 }
 function A$1(iter, checked, cssText, checked2, flag) {
@@ -880,11 +892,11 @@ function A$1(iter, checked, cssText, checked2, flag) {
           if (tmp45) {
             continue;
           } else {
-            let tmp46 = closure_60;
+            let tmp46 = T$1;
             let tmp47 = arg0;
             let tmp48 = key10105;
-            let tmp49 = closure_60(arg0.style, tmp71, "");
-            // continue
+            let tmp49 = T$1(arg0.style, tmp71, "");
+            continue;
           }
           continue;
         }
@@ -901,12 +913,12 @@ function A$1(iter, checked, cssText, checked2, flag) {
           if (tmp54) {
             continue;
           } else {
-            let tmp55 = closure_60;
+            let tmp55 = T$1;
             let tmp56 = arg0;
             let tmp57 = key10118;
             let tmp58 = arg2;
-            let tmp59 = closure_60(arg0.style, tmp72, arg2[tmp72]);
-            // continue
+            let tmp59 = T$1(arg0.style, tmp72, arg2[tmp72]);
+            continue;
           }
           continue;
         }
@@ -981,7 +993,7 @@ function A$1(iter, checked, cssText, checked2, flag) {
           let tmp18 = iter;
           let tmp19 = str2;
           let removeAttributeResult = iter.removeAttribute(str2);
-          // break
+          break;
         } else {
           let tmp12 = cssText;
           flag = false;
@@ -995,7 +1007,7 @@ function A$1(iter, checked, cssText, checked2, flag) {
           let tmp15 = str2;
           let tmp16 = cssText;
           let attr = iter.setAttribute(str2, cssText);
-          // break
+          break;
         }
         break;
       }
@@ -1005,7 +1017,6 @@ function A$1(iter, checked, cssText, checked2, flag) {
 }
 function D$1(arg0) {
   if (this.l) {
-    const tmp = this.l[arg0.type + false];
     if (!arg0.t) {
       const _Date = Date;
       arg0.t = Date.now();
@@ -1014,7 +1025,7 @@ function D$1(arg0) {
     if (obj.event) {
       eventResult = obj.event(arg0);
     }
-    return tmp(eventResult);
+    return this.l[arg0.type + false](eventResult);
   }
 }
 function L(arg0) {
@@ -1031,7 +1042,7 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
   let length;
   let length2;
   let componentWillMountResult = type;
-  const require = type;
+  let closure_0 = type;
   let tmp2 = __s2;
   let tmp3 = arg5;
   let tmp4 = arg7;
@@ -1061,7 +1072,7 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
       if (contextType) {
         tmp33 = tmp2[tmp32.__c];
       }
-      let obj = tmp33;
+      obj = tmp33;
       if (contextType) {
         if (obj) {
           let __ = obj.props.value;
@@ -1073,7 +1084,7 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
           const __c = __u.__c;
           componentWillMountResult.__c = __c;
           let obj2 = __c;
-          let dependencyMap = __c;
+          type = __c;
           const __E = __c.__E;
           __c.__ = __E;
           const tmp6 = __E;
@@ -1083,7 +1094,6 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
               const prototype2 = type.prototype;
               type = new type(props, tmp42);
               obj2 = type;
-              dependencyMap = type;
               componentWillMountResult.__c = type;
             }
             if (obj) {
@@ -1102,7 +1112,7 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
           const prototype = b$1.prototype;
           const tmp52 = new b$1(props, tmp42);
           obj2 = tmp52;
-          dependencyMap = tmp52;
+          type = tmp52;
           componentWillMountResult.__c = tmp52;
           tmp52.constructor = type;
           tmp52.render = q$1;
@@ -1119,9 +1129,7 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
           v$1(obj2.__s, type.getDerivedStateFromProps(props, obj2.__s));
         }
         const props2 = obj2.props;
-        let closure_2 = props2;
         const state = obj2.state;
-        let closure_3 = state;
         obj2.__v = componentWillMountResult;
         if (flag) {
           componentWillMountResult = type;
@@ -1182,7 +1190,7 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
             const __k = componentWillMountResult.__k;
             componentWillMountResult = __k.forEach((arg0) => {
               if (arg0) {
-                arg0.__ = arg1;
+                arg0.__ = closure_0;
               }
             });
             let num3 = 0;
@@ -1218,7 +1226,7 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
             componentWillMountResult = obj2;
             const __h2 = obj2.__h;
             componentWillMountResult = __h2.push(() => {
-              tmp52.componentDidUpdate(props2, state, closure_4);
+              type.componentDidUpdate(props2, state, closure_4);
             });
           }
         }
@@ -1342,6 +1350,11 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
             componentWillMountResult = num5;
             componentWillMountResult = num5 + 1;
             num5 = componentWillMountResult;
+            if (componentWillMountResult < 25) {
+              continue;
+            } else {
+              break;
+            }
             break;
           }
         }
@@ -1366,22 +1379,22 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
 }
 function j$1(items, sort, items1) {
   let length;
-  const require = items;
+  const _require = items;
   let num = 0;
   if (0 < items1.length) {
     do {
-      let tmp = closure_67;
+      let tmp = N;
       let sum = num + 1;
       let sum1 = sum + 1;
-      let tmp4 = closure_67(items1[num], items1[sum], items1[sum1]);
+      let tmp4 = N(items1[num], items1[sum], items1[sum1]);
       num = sum1 + 1;
       length = items1.length;
     } while (num < length);
   }
   if (obj.__c) {
-    obj.__c(sort, require);
+    obj.__c(sort, _require);
   }
-  require.some((__h) => {
+  _require.some((__h) => {
     __h = __h.__h;
     __h.__h = [];
     __h.some((call) => {
@@ -1483,7 +1496,7 @@ function z$1(__e, type, props, __s2, flag, arg5, arr, arg7, arg8) {
                 tmp12 = tmp15;
               }
             }
-            // continue
+            continue;
           }
           continue;
         }
@@ -1547,7 +1560,7 @@ function z$1(__e, type, props, __s2, flag, arg5, arr, arg7, arg8) {
                     tmp27 = tmp36;
                     tmp28 = tmp37;
                     tmp29 = tmp38;
-                    // continue
+                    continue;
                   }
                   continue;
                 }
@@ -1588,7 +1601,7 @@ function z$1(__e, type, props, __s2, flag, arg5, arr, arg7, arg8) {
           tmp51 = "foreignObject" !== type;
         }
         if (callResult) {
-          let __k = callResult[0];
+          let __k = 65;
         } else {
           __k = props.__k;
           if (__k) {
@@ -1601,8 +1614,8 @@ function z$1(__e, type, props, __s2, flag, arg5, arr, arg7, arg8) {
           if (+callResult.length) {
             do {
               if (null != callResult[diff]) {
-                let tmp65 = closure_47;
-                let tmp66 = closure_47(callResult[diff]);
+                let tmp65 = p$1;
+                let tmp66 = p$1(callResult[diff]);
               }
               tmp67 = +diff;
               diff = tmp67 - 1;
@@ -1631,7 +1644,7 @@ function z$1(__e, type, props, __s2, flag, arg5, arr, arg7, arg8) {
         if (tmp80) {
           A$1(iter, "checked", tmp33, iter2.checked, false);
         }
-        const tmp80 = undefined !== tmp33 && tmp33 !== iter.checked;
+        tmp80 = undefined !== tmp33 && tmp33 !== iter.checked;
       }
     }
     return iter;
@@ -1684,7 +1697,7 @@ function O(ref, __v) {
             let tmp22 = __k;
             let tmp23 = __v;
             let tmp24 = tmp;
-            let tmp21 = closure_68;
+            let tmp21 = O;
             if (!tmp) {
               tmp24 = "function" !== typeof ref.type;
             }
@@ -1715,7 +1728,7 @@ function O(ref, __v) {
       let tmp15 = obj;
       let tmp16 = __v;
       let __eResult = obj.__e(__exception, __v);
-      // continue
+      continue;
     }
   }
 }
@@ -1724,17 +1737,17 @@ function q$1(arg0, arg1, arg2) {
 }
 function h(arg0, arg1) {
   if (obj.__h) {
-    let tmp3 = closure_30;
-    if (!closure_30) {
+    let tmp3 = c30;
+    if (!c30) {
       tmp3 = arg1;
     }
     obj.__h(closure_27, arg0, tmp3);
     const tmp2 = closure_27;
   }
-  closure_30 = 0;
+  c30 = 0;
   let __H = closure_27.__H;
   if (!__H) {
-    let obj = { __: [], __h: [] };
+    obj = { __: [], __h: [] };
     closure_27.__H = obj;
     __H = obj;
   }
@@ -1745,8 +1758,8 @@ function h(arg0, arg1) {
   }
   return __H.__[arg0];
 }
-const fn = function p(arg0) {
-  let closure_30 = 1;
+let fn = function p(arg0) {
+  let c30 = 1;
   return fn2(D, arg0);
 };
 const fn2 = function y(arg0) {
@@ -1760,7 +1773,7 @@ const fn2 = function y(arg0) {
     } else {
       tmp4 = D(undefined, arg1);
     }
-    const items = [
+    let items = [
       tmp4,
       (arg0) => {
           if (tmp2.__N) {
@@ -1797,7 +1810,7 @@ const fn2 = function y(arg0) {
                 __N.__ = __N.__N;
                 __N.__N = undefined;
                 if (__N.__[0] !== __N.__[0]) {
-                  let closure_0 = true;
+                  let c0 = true;
                 }
               }
             });
@@ -1819,18 +1832,17 @@ const fn2 = function y(arg0) {
           return true;
         }
       };
-      const dependencyMap = fn;
       closure_27.u = true;
-      let closure_2 = closure_27.shouldComponentUpdate;
+      const shouldComponentUpdate = closure_27.shouldComponentUpdate;
       const componentWillUpdate = closure_27.componentWillUpdate;
-      closure_27.componentWillUpdate = function(arg0, arg1, arg2) {
+      closure_27.componentWillUpdate = function(prototype, _invoke) {
         const self = this;
         if (this.__e) {
           let closure_2;
-          fn(arg0, arg1, arg2);
+          fn(prototype, _invoke, arg2);
         }
         if (componentWillUpdate) {
-          componentWillUpdate.call(self, arg0, arg1, arg2);
+          componentWillUpdate.call(self, prototype, _invoke, arg2);
         }
       };
       closure_27.shouldComponentUpdate = fn;
@@ -1859,6 +1871,7 @@ class A {
     return;
   }
 }
+let closure_73 = A;
 const fn3 = function q(__h, arg1) {
   let closure_26 = tmp + 1;
   const tmp2 = h(+closure_26, 7);
@@ -1873,9 +1886,9 @@ const fn3 = function q(__h, arg1) {
   return __;
 };
 const fn4 = function x(arg0, arg1) {
-  const require = arg0;
-  let closure_30 = 8;
-  return fn3(() => arg0, arg1);
+  let closure_0 = arg0;
+  let c30 = 8;
+  return fn3(() => closure_0, arg1);
 };
 function j() {
   let arr = arr2.shift();
@@ -1910,14 +1923,14 @@ function j() {
   }
 }
 function w(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   const fn = function r() {
     clearTimeout(closure_2);
-    if (closure_40) {
+    if (outer1_40) {
       const _cancelAnimationFrame = cancelAnimationFrame;
       cancelAnimationFrame(closure_1);
     }
-    const timerId = setTimeout(arg0);
+    const timerId = setTimeout(closure_0);
   };
   const timeout = setTimeout(fn, 100);
   if (closure_40) {
@@ -1936,8 +1949,8 @@ function B(arg0) {
   arg0.__c = arg0.__();
 }
 function C(arg0, arr) {
-  const require = arg0;
-  return !arg0 || arg0.length !== arr.length || arr.some((arg0, arg1) => arg0 !== arg0[arg1]);
+  let closure_0 = arg0;
+  return !arg0 || arg0.length !== arr.length || arr.some((arg0, arg1) => arg0 !== table[arg1]);
 }
 function D(arg0, arg1) {
   let tmp = arg1;
@@ -1952,12 +1965,12 @@ function DialogHeader(options) {
   const tmp = fn3(() => {
     const obj = {};
     function createElementNS(path) {
-      return closure_8.createElementNS("http://www.w3.org/2000/svg", path);
+      return outer2_8.createElementNS("http://www.w3.org/2000/svg", path);
     }
     const elementNS = createElementNS("svg");
-    callback(elementNS, {});
+    outer1_43(elementNS, { width: "32", height: "30", viewBox: "0 0 72 66", fill: "inherit" });
     const elementNS1 = createElementNS("path");
-    callback(elementNS1, { 9223372036854775807: "exclude", 0: "useAutoSearchPeopleTab" });
+    outer1_43(elementNS1, { transform: "translate(11, 11)", d: "M29,2.26a4.67,4.67,0,0,0-8,0L14.42,13.53A32.21,32.21,0,0,1,32.17,40.19H27.55A27.68,27.68,0,0,0,12.09,17.47L6,28a15.92,15.92,0,0,1,9.23,12.17H4.62A.76.76,0,0,1,4,39.06l2.94-5a10.74,10.74,0,0,0-3.36-1.9l-2.91,5a4.54,4.54,0,0,0,1.69,6.24A4.66,4.66,0,0,0,4.62,44H19.15a19.4,19.4,0,0,0-8-17.31l2.31-4A23.87,23.87,0,0,1,23.76,44H36.07a35.88,35.88,0,0,0-16.41-31.8l4.67-8a.77.77,0,0,1,1.05-.27c.53.29,20.29,34.77,20.66,35.17a.76.76,0,0,1-.68,1.13H40.6q.09,1.91,0,3.81h4.78A4.59,4.59,0,0,0,50,39.43a4.49,4.49,0,0,0-.62-2.28Z" });
     elementNS.appendChild(elementNS1);
     obj.__html = elementNS.outerHTML;
     return obj;
@@ -1965,7 +1978,7 @@ function DialogHeader(options) {
   const tmp2 = y$1;
   let tmp4 = null;
   if (options.showBranding) {
-    obj = { dangerouslySetInnerHTML: tmp };
+    obj = { class: "brand-link", target: "_blank", href: "https://sentry.io/welcome/", title: "Powered by Sentry", rel: "noopener noreferrer", dangerouslySetInnerHTML: tmp };
     tmp4 = y$1("a", obj);
   }
   return tmp2("h2", obj, y$1("span", { class: "dialog__title" }, options.formTitle), tmp4);
@@ -1980,7 +1993,9 @@ function retrieveStringValue(get) {
 }
 function Form(onSubmitError) {
   let addScreenshotButtonLabel;
+  let asyncGeneratorStep;
   let cancelButtonLabel;
+  let closure_14;
   let defaultEmail;
   let defaultName;
   let emailLabel;
@@ -1991,47 +2006,40 @@ function Form(onSubmitError) {
   let onSubmitSuccess;
   let options;
   let removeScreenshotButtonLabel;
+  let require;
+  let sendFeedback;
   let showEmail;
   let showName;
   let submitButtonLabel;
   let tmp4;
   let tmp9;
-  ({ options, defaultEmail, defaultName, onSubmit: closure_0, onSubmitSuccess } = onSubmitError);
-  const dependencyMap = onSubmitSuccess;
+  ({ options, defaultEmail, defaultName, onSubmit: require, onSubmitSuccess } = onSubmitError);
   onSubmitError = onSubmitError.onSubmitError;
-  let closure_2 = onSubmitError;
   let screenshotInput = onSubmitError.screenshotInput;
-  let closure_3 = screenshotInput;
-  ({ tags: closure_4, addScreenshotButtonLabel, emailLabel } = options);
-  let closure_5 = emailLabel;
+  ({ tags: asyncGeneratorStep, addScreenshotButtonLabel, emailLabel } = options);
   const isEmailRequired = options.isEmailRequired;
-  const callback3 = isEmailRequired;
   const isNameRequired = options.isNameRequired;
-  let closure_7 = isNameRequired;
   const messageLabel = options.messageLabel;
-  const document = messageLabel;
   const nameLabel = options.nameLabel;
-  const navigator = nameLabel;
   const isRequiredLabel = options.isRequiredLabel;
   ({ onFormClose, showEmail, showName } = onSubmitError);
   ({ removeScreenshotButtonLabel, cancelButtonLabel, emailPlaceholder, messagePlaceholder, namePlaceholder, submitButtonLabel } = options);
-  const tmp = callback3(fn(false), 2);
-  const disabled = tmp[0];
+  const tmp = isEmailRequired(fn(false), 2);
+  const first = tmp[0];
   let closure_10 = tmp[1];
-  [tmp4, closure_11] = callback3(fn(null), 2);
-  const tmp5 = callback3(fn(false), 2);
+  [tmp4, sendFeedback] = isEmailRequired(fn(null), 2);
+  const tmp5 = isEmailRequired(fn(false), 2);
   const first1 = tmp5[0];
-  let closure_12 = first1;
   let closure_13 = tmp5[1];
   let input;
   if (null != screenshotInput) {
     input = screenshotInput.input;
   }
-  const tmp3 = callback3(fn(null), 2);
-  [tmp9, closure_14] = callback3(fn(null), 2);
-  const items = [emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel];
+  const tmp3 = isEmailRequired(fn(null), 2);
+  [tmp9, closure_14] = isEmailRequired(fn(null), 2);
+  let items = [emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel];
   const tmp10 = fn4;
-  const tmp8 = callback3(fn(null), 2);
+  const tmp8 = isEmailRequired(fn(null), 2);
   let closure_15 = fn4((name) => {
     const obj = { emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel };
     const items = [];
@@ -2046,15 +2054,15 @@ function Form(onSubmitError) {
     }
     if (items.length > 0) {
       const _HermesInternal = HermesInternal;
-      callback2("Please enter in the following required fields: " + items.join(", "));
+      callback("Please enter in the following required fields: " + items.join(", "));
     } else {
-      callback2(null);
+      callback(null);
     }
     return 0 === items.length;
   }, items);
   const tmp11 = fn4((arg0) => {
-    callback4(arg0);
-    callback3(false);
+    callback3(arg0);
+    callback2(false);
   }, []);
   if (screenshotInput) {
     screenshotInput = first1;
@@ -2062,46 +2070,46 @@ function Form(onSubmitError) {
   const items1 = [screenshotInput, onSubmitSuccess, onSubmitError];
   let obj = {
     class: "form",
-    onSubmit: tmp10(() => {
-      let closure_0 = callback(async (arg0) => {
-        callback2(true);
+    onSubmit: tmp10((() => {
+      let closure_0 = outer1_4(async (arg0) => {
+        outer2_10(true);
         arg0.preventDefault();
         if (arg0.target instanceof globalThis.HTMLFormElement) {
           const _FormData = FormData;
           const formData = new FormData(arg0.target);
-          if (closure_3) {
-            if (closure_12) {
-              const valueResult = closure_3.value();
+          if (outer2_3) {
+            if (outer2_12) {
+              const valueResult = outer2_3.value();
             }
           }
           const tmp13 = yield valueResult;
-          let obj = { name: callback4(formData, "name"), email: callback4(formData, "email"), message: callback4(formData, "message") };
+          let obj = { name: outer3_83(formData, "name"), email: outer3_83(formData, "email"), message: outer3_83(formData, "message") };
           let tmp17;
           if (tmp13) {
             const items = [tmp14];
             tmp17 = items;
           }
           obj.attachments = tmp17;
-          if (callback3(obj)) {
+          if (outer2_15(obj)) {
             obj = {};
             ({ name: obj2.name, email: obj2.email, message: obj2.message } = tmp19);
             obj.source = "widget";
-            obj.tags = closure_4;
+            obj.tags = outer2_4;
             obj = { attachments: tmp19.attachments };
-            callback(obj, yield closure_0(obj, obj));
-            callback2(false);
+            outer2_1(obj, yield closure_0(obj, obj));
+            outer2_10(false);
           } else {
-            callback2(false);
+            outer2_10(false);
           }
-          const tmp14 = tmp13;
+          tmp14 = tmp13;
         } else {
-          callback2(false);
+          outer2_10(false);
         }
       });
       return function(arg0) {
         return callback(...arguments);
       };
-    }(), items1)
+    })(), items1)
   };
   let tmp14 = null;
   if (input) {
@@ -2111,7 +2119,7 @@ function Form(onSubmitError) {
       tmp14 = y$1(input, obj);
     }
   }
-  obj = { backgroundColor: "IEMobile", shadowColor: "IE", disabled };
+  obj = { class: "form__right", "data-sentry-feedback": true, disabled: first };
   let tmp17 = null;
   if (tmp4) {
     const obj2 = { class: "form__error-container" };
@@ -2119,90 +2127,94 @@ function Form(onSubmitError) {
   }
   if (showName) {
     const obj3 = { label: nameLabel, isRequiredLabel, isRequired: isNameRequired };
-    const obj4 = { defaultValue: defaultName, placeholder: namePlaceholder, required: isNameRequired };
+    const obj4 = { class: "form__input", defaultValue: defaultName, id: "name", name: "name", placeholder: namePlaceholder, required: isNameRequired, type: "text" };
     let tmp19Result = tmp19(LabelText, obj3);
-    tmp19Result = tmp19("label", { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026084971913313856, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000837324121520983 }, tmp19Result, tmp19("input", obj4));
+    tmp19Result = tmp19("label", { for: "name", class: "form__label" }, tmp19Result, tmp19("input", obj4));
   } else {
-    const obj5 = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, value: defaultName };
+    const obj5 = { "aria-hidden": true, value: defaultName, name: "name", type: "hidden" };
     tmp19Result = tmp19("input", obj5);
   }
   if (showEmail) {
     const obj6 = { label: emailLabel, isRequiredLabel, isRequired: isEmailRequired };
-    const obj7 = { defaultValue: defaultEmail, placeholder: emailPlaceholder, required: isEmailRequired };
+    const obj7 = { class: "form__input", defaultValue: defaultEmail, id: "email", name: "email", placeholder: emailPlaceholder, required: isEmailRequired, type: "email" };
     let tmp23Result = tmp23(LabelText, obj6);
-    tmp23Result = tmp23("label", { "Null": false, "Null": false }, tmp23Result, tmp23("input", obj7));
+    tmp23Result = tmp23("label", { for: "email", class: "form__label" }, tmp23Result, tmp23("input", obj7));
   } else {
-    const obj8 = { value: defaultEmail };
+    const obj8 = { "aria-hidden": true, value: defaultEmail, name: "email", type: "hidden" };
     tmp23Result = tmp23("input", obj8);
   }
+  const obj9 = { autoFocus: true, class: "form__input form__input--textarea", id: "message", name: "message", placeholder: messagePlaceholder, required: true, rows: 5 };
   const obj1 = { class: "form__top" };
-  const tmp12 = () => {
-    let closure_0 = callback(async (arg0) => {
-      callback2(true);
+  const tmp12 = (() => {
+    let closure_0 = outer1_4(async (arg0) => {
+      outer2_10(true);
       arg0.preventDefault();
       if (arg0.target instanceof globalThis.HTMLFormElement) {
         const _FormData = FormData;
         const formData = new FormData(arg0.target);
-        if (closure_3) {
-          if (closure_12) {
-            const valueResult = closure_3.value();
+        if (outer2_3) {
+          if (outer2_12) {
+            const valueResult = outer2_3.value();
           }
         }
         const tmp13 = yield valueResult;
-        let obj = { name: callback4(formData, "name"), email: callback4(formData, "email"), message: callback4(formData, "message") };
+        let obj = { name: outer3_83(formData, "name"), email: outer3_83(formData, "email"), message: outer3_83(formData, "message") };
         let tmp17;
         if (tmp13) {
           const items = [tmp14];
           tmp17 = items;
         }
         obj.attachments = tmp17;
-        if (callback3(obj)) {
+        if (outer2_15(obj)) {
           obj = {};
           ({ name: obj2.name, email: obj2.email, message: obj2.message } = tmp19);
           obj.source = "widget";
-          obj.tags = closure_4;
+          obj.tags = outer2_4;
           obj = { attachments: tmp19.attachments };
-          callback(obj, yield closure_0(obj, obj));
-          callback2(false);
+          outer2_1(obj, yield closure_0(obj, obj));
+          outer2_10(false);
         } else {
-          callback2(false);
+          outer2_10(false);
         }
-        const tmp14 = tmp13;
+        tmp14 = tmp13;
       } else {
-        callback2(false);
+        outer2_10(false);
       }
     });
     return function(arg0) {
       return callback(...arguments);
     };
-  }();
-  const tmp13 = y$1;
+  })();
+  let tmp13 = y$1;
   const tmp27 = y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true });
   let tmp30Result = null;
   if (input) {
-    const obj9 = {
-      disabled,
+    const obj10 = {
+      class: "btn btn--default",
+      disabled: first,
+      type: "button",
       onClick() {
-          callback4(null);
-          callback3((arg0) => !arg0);
+          callback3(null);
+          callback2((arg0) => !arg0);
         }
     };
     if (first1) {
       addScreenshotButtonLabel = removeScreenshotButtonLabel;
     }
-    tmp30Result = tmp30("button", obj9, addScreenshotButtonLabel);
+    tmp30Result = tmp30("button", obj10, addScreenshotButtonLabel);
     let tmp32 = null;
     if (tmp9) {
-      const obj10 = { class: "form__error-container" };
-      tmp32 = y$1("div", obj10, tmp9.message);
+      const obj11 = { class: "form__error-container" };
+      tmp32 = y$1("div", obj11, tmp9.message);
     }
-    tmp30Result = tmp30("label", {}, tmp30Result, tmp32);
+    tmp30Result = tmp30("label", { for: "screenshot", class: "form__label" }, tmp30Result, tmp32);
   }
-  const tmp28 = y$1("label", {}, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", { placeholder: messagePlaceholder }));
-  const obj12 = { 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018437789434861197, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005961061916478577, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002563193955611289, disabled };
-  const obj11 = { class: "btn-group" };
-  const tmp16Result = y$1("div", obj1, tmp17, tmp19Result, tmp23Result, y$1("label", {}, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", { placeholder: messagePlaceholder })), tmp30Result);
-  return tmp13("form", obj, tmp14, y$1("fieldset", obj, tmp16Result, y$1("div", obj11, y$1("button", obj12, submitButtonLabel), y$1("button", { disabled, onClick }, cancelButtonLabel))));
+  const tmp28 = y$1("label", { for: "message", class: "form__label" }, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", obj9));
+  const obj13 = { class: "btn btn--primary", disabled: first, type: "submit" };
+  const obj12 = { class: "btn-group" };
+  const tmp16Result = y$1("div", obj1, tmp17, tmp19Result, tmp23Result, y$1("label", { for: "message", class: "form__label" }, y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true }), y$1("textarea", obj9)), tmp30Result);
+  const obj14 = { class: "btn btn--default", disabled: first, type: "button", onClick: onFormClose };
+  return tmp13("form", obj, tmp14, y$1("fieldset", obj, tmp16Result, y$1("div", obj12, y$1("button", obj13, submitButtonLabel), y$1("button", obj14, cancelButtonLabel))));
 }
 function LabelText(arg0) {
   let isRequired;
@@ -2217,15 +2229,15 @@ function LabelText(arg0) {
 }
 function SuccessIcon() {
   function createElementNS(path) {
-    const _document = callback(closure_1[5]).GLOBAL_OBJ.document;
+    const _document = outer1_0(outer1_1[5]).GLOBAL_OBJ.document;
     return _document.createElementNS("http://www.w3.org/2000/svg", path);
   }
   const elementNS = createElementNS("svg");
-  setAttributesNS(elementNS, {});
+  setAttributesNS(elementNS, { width: "16", height: "17", viewBox: "0 0 16 17", fill: "inherit" });
   const elementNS1 = createElementNS("g");
   setAttributesNS(elementNS1, { clipPath: "url(#clip0_57_156)" });
   const elementNS2 = createElementNS("path");
-  setAttributesNS(elementNS2, callback2(callback2(callback2({}, "fill-rule", "evenodd"), "clip-rule", "evenodd"), "d", "M3.55544 15.1518C4.87103 16.0308 6.41775 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 6.91775 15.5308 5.37103 14.6518 4.05544C13.7727 2.73985 12.5233 1.71447 11.0615 1.10897C9.59966 0.503466 7.99113 0.34504 6.43928 0.653721C4.88743 0.962403 3.46197 1.72433 2.34315 2.84315C1.22433 3.96197 0.462403 5.38743 0.153721 6.93928C-0.15496 8.49113 0.00346625 10.0997 0.608967 11.5615C1.21447 13.0233 2.23985 14.2727 3.55544 15.1518ZM4.40546 3.1204C5.46945 2.40946 6.72036 2.03 8 2.03C9.71595 2.03 11.3616 2.71166 12.575 3.92502C13.7883 5.13838 14.47 6.78405 14.47 8.5C14.47 9.77965 14.0905 11.0306 13.3796 12.0945C12.6687 13.1585 11.6582 13.9878 10.476 14.4775C9.29373 14.9672 7.99283 15.0953 6.73777 14.8457C5.48271 14.596 4.32987 13.9798 3.42502 13.075C2.52018 12.1701 1.90397 11.0173 1.65432 9.76224C1.40468 8.50718 1.5328 7.20628 2.0225 6.02404C2.5122 4.8418 3.34148 3.83133 4.40546 3.1204Z"));
+  setAttributesNS(elementNS2, _defineProperty(_defineProperty(_defineProperty({}, "fill-rule", "evenodd"), "clip-rule", "evenodd"), "d", "M3.55544 15.1518C4.87103 16.0308 6.41775 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 6.91775 15.5308 5.37103 14.6518 4.05544C13.7727 2.73985 12.5233 1.71447 11.0615 1.10897C9.59966 0.503466 7.99113 0.34504 6.43928 0.653721C4.88743 0.962403 3.46197 1.72433 2.34315 2.84315C1.22433 3.96197 0.462403 5.38743 0.153721 6.93928C-0.15496 8.49113 0.00346625 10.0997 0.608967 11.5615C1.21447 13.0233 2.23985 14.2727 3.55544 15.1518ZM4.40546 3.1204C5.46945 2.40946 6.72036 2.03 8 2.03C9.71595 2.03 11.3616 2.71166 12.575 3.92502C13.7883 5.13838 14.47 6.78405 14.47 8.5C14.47 9.77965 14.0905 11.0306 13.3796 12.0945C12.6687 13.1585 11.6582 13.9878 10.476 14.4775C9.29373 14.9672 7.99283 15.0953 6.73777 14.8457C5.48271 14.596 4.32987 13.9798 3.42502 13.075C2.52018 12.1701 1.90397 11.0173 1.65432 9.76224C1.40468 8.50718 1.5328 7.20628 2.0225 6.02404C2.5122 4.8418 3.34148 3.83133 4.40546 3.1204Z"));
   const elementNS3 = createElementNS("path");
   setAttributesNS(elementNS3, { d: "M6.68775 12.4297C6.78586 12.4745 6.89218 12.4984 7 12.5C7.11275 12.4955 7.22315 12.4664 7.32337 12.4145C7.4236 12.3627 7.51121 12.2894 7.58 12.2L12 5.63999C12.0848 5.47724 12.1071 5.28902 12.0625 5.11098C12.0178 4.93294 11.9095 4.77744 11.7579 4.67392C11.6064 4.57041 11.4221 4.52608 11.24 4.54931C11.0579 4.57254 10.8907 4.66173 10.77 4.79999L6.88 10.57L5.13 8.56999C5.06508 8.49566 4.98613 8.43488 4.89768 8.39111C4.80922 8.34735 4.713 8.32148 4.61453 8.31498C4.51605 8.30847 4.41727 8.32147 4.32382 8.35322C4.23038 8.38497 4.14413 8.43484 4.07 8.49999C3.92511 8.63217 3.83692 8.81523 3.82387 9.01092C3.81083 9.2066 3.87393 9.39976 4 9.54999L6.43 12.24C6.50187 12.3204 6.58964 12.385 6.68775 12.4297Z" });
   elementNS.appendChild(elementNS1).append(elementNS3, elementNS2);
@@ -2233,7 +2245,7 @@ function SuccessIcon() {
   const elementNS5 = createElementNS("clipPath");
   setAttributesNS(elementNS5, { id: "clip0_57_156" });
   const elementNS6 = createElementNS("rect");
-  setAttributesNS(elementNS6, {});
+  setAttributesNS(elementNS6, { width: "16", height: "16", fill: "white", transform: "translate(0 0.5)" });
   elementNS5.appendChild(elementNS6);
   elementNS4.appendChild(elementNS5);
   const appendChildResult = elementNS.appendChild(elementNS1);
@@ -2243,17 +2255,15 @@ function SuccessIcon() {
 }
 function Dialog(onFormSubmitted) {
   onFormSubmitted = onFormSubmitted.onFormSubmitted;
-  const require = onFormSubmitted;
-  const tmp = callback(onFormSubmitted, closure_7);
+  const tmp = _objectWithoutProperties(onFormSubmitted, closure_7);
   const dependencyMap = tmp;
   const options = tmp.options;
-  const tmp3 = callback3(fn(null), 2);
+  const tmp3 = _slicedToArray(fn(null), 2);
   const first = tmp3[0];
-  let closure_2 = first;
-  const callback = tmp3[1];
+  _objectWithoutProperties = tmp3[1];
   const items = [first];
   [][0] = onFormSubmitted;
-  const tmp2 = fn3(() => ({ __html: callback2().outerHTML }), []);
+  const tmp2 = fn3(() => ({ __html: outer1_86().outerHTML }), []);
   if (first) {
     let obj = { class: "success__position", onClick: tmp5 };
     obj = { class: "success__content" };
@@ -2277,49 +2287,53 @@ function Dialog(onFormSubmitted) {
   return y$1(g$1, null, tmp9Result);
 }
 function useTakeScreenshotFactory(hooks) {
-  const require = hooks.hooks;
+  hooks = hooks.hooks;
   return function useTakeScreenshot(arg0) {
-    ({ onBeforeScreenshot: closure_0, onScreenshot: closure_1, onAfterScreenshot: closure_2, onError: closure_3 } = arg0);
-    let closure_4 = function useDpi() {
-      const devicePixelRatio = React(closure_1[5]).GLOBAL_OBJ.devicePixelRatio;
+    let closure_1;
+    let closure_2;
+    let closure_3;
+    let hooks;
+    ({ onBeforeScreenshot: hooks, onScreenshot: closure_1, onAfterScreenshot: closure_2, onError: closure_3 } = arg0);
+    let closure_4 = (function useDpi() {
+      const devicePixelRatio = hooks(outer2_1[5]).GLOBAL_OBJ.devicePixelRatio;
       let num = 1;
       if (null != devicePixelRatio) {
         num = devicePixelRatio;
       }
-      const tmp2 = callback(React.useState(num), 2);
-      const React = tmp2[1];
-      const effect = React.useEffect(() => {
+      const tmp2 = outer2_6(outer1_0.useState(num), 2);
+      let closure_0 = tmp2[1];
+      const effect = outer1_0.useEffect(() => {
         function onChange() {
-          onChange(onChange(matchMediaResult[5]).GLOBAL_OBJ.devicePixelRatio);
+          onChange(hooks(outer4_1[5]).GLOBAL_OBJ.devicePixelRatio);
         }
-        const callback = onChange;
-        const matchMediaResult = globalThis.matchMedia("(resolution: " + callback(matchMediaResult[5]).GLOBAL_OBJ.devicePixelRatio + "dppx)");
+        const matchMediaResult = globalThis.matchMedia("(resolution: " + hooks(outer3_1[5]).GLOBAL_OBJ.devicePixelRatio + "dppx)");
+        let closure_1 = matchMediaResult;
         const listener = matchMediaResult.addEventListener("change", onChange);
         return () => {
           const removed = matchMediaResult.removeEventListener("change", onChange);
         };
       }, []);
       return tmp2[0];
-    }();
-    const effect = hooks.useEffect(() => {
-      () => {
-        let closure_0 = callback(async () => {
-          let callback;
+    })();
+    let effect = hooks.useEffect(() => {
+      (() => {
+        let closure_0 = outer3_4(async () => {
+          let closure_0;
           let closure_1;
-          callback();
-          const mediaDevices = mediaDevices.mediaDevices;
-          let obj = {};
-          obj = { width: callback(closure_1[5]).GLOBAL_OBJ.innerWidth * closure_4, height: callback(closure_1[5]).GLOBAL_OBJ.innerHeight * closure_4 };
+          outer3_0();
+          const mediaDevices = outer5_9.mediaDevices;
+          let obj = { video: null, audio: false, monitorTypeSurfaces: "exclude", preferCurrentTab: true, selfBrowserSurface: "include", surfaceSwitching: "exclude" };
+          obj = { width: hooks(outer5_1[5]).GLOBAL_OBJ.innerWidth * outer3_4, height: hooks(outer5_1[5]).GLOBAL_OBJ.innerHeight * outer3_4 };
           obj.video = obj;
-          callback = yield mediaDevices.getDisplayMedia(obj);
+          closure_0 = yield mediaDevices.getDisplayMedia(obj);
           closure_1 = <video />;
           yield new Promise(() => { ... });
-          callback2();
+          outer3_2();
         });
         return function takeScreenshot() {
           return callback(...arguments);
         };
-      }()().catch(closure_3);
+      })()().catch(closure_3);
     }, []);
   };
 }
@@ -2332,20 +2346,21 @@ function with2dContext(getContext, arg1, arg2) {
   }
 }
 function paintImage(getContext) {
-  const require = arg1;
+  let closure_0 = arg1;
   with2dContext(getContext, { alpha: true }, (width, drawImage) => {
-    drawImage.drawImage(drawImage, 0, 0, drawImage.width, drawImage.height, 0, 0, width.width, width.height);
+    drawImage.drawImage(styles, 0, 0, styles.width, styles.height, 0, 0, width.width, width.height);
   });
 }
 function paintForeground(getContext) {
-  const require = arg1;
-  const dependencyMap = arg2;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
   with2dContext(getContext, { alpha: true }, (width, fillRect) => {
-    if (arg2.length) {
+    let closure_0 = fillRect;
+    if (closure_1.length) {
       fillRect.fillStyle = "rgba(0, 0, 0, 0.25)";
       fillRect.fillRect(0, 0, width.width, width.height);
     }
-    const item = arg2.forEach((type) => {
+    const item = closure_1.forEach((type) => {
       type = type.type;
       if ("highlight" === type) {
         obj.shadowColor = "rgba(0, 0, 0, 0.7)";
@@ -2361,20 +2376,19 @@ function paintForeground(getContext) {
   });
 }
 function ScreenshotEditorFactory(h) {
+  let _toConsumableArray;
   let options;
   h = h.h;
-  const require = h;
-  const hooks = h.hooks;
-  const dependencyMap = hooks;
-  ({ outputBuffer: closure_2, options } = h);
-  let closure_3 = options;
+  let closure_0 = h;
+  let hooks = h.hooks;
+  ({ outputBuffer: _toConsumableArray, options } = h);
   let closure_4 = useTakeScreenshotFactory({ hooks });
-  let closure_5 = function ToolbarFactory(h) {
+  let closure_5 = (function ToolbarFactory(h) {
     h = h.h;
     return function Toolbar(action) {
+      let closure_1;
       let options;
       action = action.action;
-      const h = action;
       ({ setAction: closure_1, options } = action);
       let obj = { class: "editor__tool-bar" };
       obj = { type: "button" };
@@ -2403,51 +2417,43 @@ function ScreenshotEditorFactory(h) {
         }
         closure_1(str);
       };
-      return h("div", { class: "editor__tool-container" }, h("div", obj, h("button", obj, options.highlightToolText), h("button", obj, options.hideToolText)));
+      return action("div", { class: "editor__tool-container" }, action("div", obj, action("button", obj, options.highlightToolText), action("button", obj, options.hideToolText)));
     };
-  }({ h });
-  let closure_6 = function IconCloseFactory(h) {
+  })({ h });
+  let closure_6 = (function IconCloseFactory(h) {
     h = h.h;
     return function IconClose() {
-      const tmp = h("circle", {});
-      const tmp2 = h("path", {});
-      return h("svg", {}, tmp, tmp2, h("path", {}), h("path", {}));
+      const tmp = h("circle", { r: "7", cx: "8", cy: "8", fill: "white" });
+      const tmp2 = h("path", { strokeWidth: "1.5", d: "M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,1.53A6.47,6.47,0,1,0,14.47,8,6.47,6.47,0,0,0,8,1.53Z" });
+      return h("svg", { "data-test-id": "icon-close", viewBox: "0 0 16 16", fill: "#2B2233", height: "25px", width: "25px" }, tmp, tmp2, h("path", { strokeWidth: "1.5", d: "M5.34,11.41a.71.71,0,0,1-.53-.22.74.74,0,0,1,0-1.06l5.32-5.32a.75.75,0,0,1,1.06,1.06L5.87,11.19A.74.74,0,0,1,5.34,11.41Z" }), h("path", { strokeWidth: "1.5", d: "M10.66,11.41a.74.74,0,0,1-.53-.22L4.81,5.87A.75.75,0,0,1,5.87,4.81l5.32,5.32a.74.74,0,0,1,0,1.06A.71.71,0,0,1,10.66,11.41Z" }));
     };
-  }({ h });
-  const obj = {};
+  })({ h });
+  let obj = {};
   const styleNonce = options.styleNonce;
-  const element = <style />;
+  let element = <style />;
   element.textContent = "\n.editor {\n  display: flex;\n  flex-grow: 1;\n  flex-direction: column;\n}\n\n.editor__image-container {\n  justify-items: center;\n  padding: 15px;\n  position: relative;\n  height: 100%;\n  border-radius: var(--menu-border-radius, 6px);\n\n  background-color: " + "#1A141F" + ";\n  background-image: repeating-linear-gradient(\n      -145deg,\n      transparent,\n      transparent 8px,\n      " + "#1A141F" + " 8px,\n      " + "#1A141F" + " 11px\n    ),\n    repeating-linear-gradient(\n      -45deg,\n      transparent,\n      transparent 15px,\n      " + "#302735" + " 15px,\n      " + "#302735" + " 16px\n    );\n}\n\n.editor__canvas-container {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.editor__canvas-container > * {\n  object-fit: contain;\n  position: absolute;\n}\n\n.editor__tool-container {\n  padding-top: 8px;\n  display: flex;\n  justify-content: center;\n}\n\n.editor__tool-bar {\n  display: flex;\n  gap: 8px;\n}\n\n.editor__tool {\n  display: flex;\n  padding: 8px 12px;\n  justify-content: center;\n  align-items: center;\n  border: var(--button-border, var(--border));\n  border-radius: var(--button-border-radius, 6px);\n  background: var(--button-background, var(--background));\n  color: var(--button-color, var(--foreground));\n}\n\n.editor__tool--active {\n  background: var(--button-primary-background, var(--accent-background));\n  color: var(--button-primary-color, var(--accent-foreground));\n}\n\n.editor__rect {\n  position: absolute;\n  z-index: 2;\n}\n\n.editor__rect button {\n  opacity: 0;\n  position: absolute;\n  top: -12px;\n  right: -12px;\n  cursor: pointer;\n  padding: 0;\n  z-index: 3;\n  border: none;\n  background: none;\n}\n\n.editor__rect:hover button {\n  opacity: 1;\n}\n";
   if (styleNonce) {
     const attr = element.setAttribute("nonce", styleNonce);
   }
   obj.__html = element.innerText;
-  let closure_7 = obj;
-  const document = h.dialog.el.style;
+  const style = h.dialog.el.style;
   function ScreenshotEditor(screenshot) {
     screenshot = screenshot.screenshot;
-    const h = screenshot;
-    const tmp = callback2(hooks.useState("highlight"), 2);
-    const first = tmp[0];
-    const hooks = first;
-    const tmp3 = callback2(hooks.useState([]), 2);
+    let tmp = callback2(first.useState("highlight"), 2);
+    first = tmp[0];
+    const tmp3 = callback2(first.useState([]), 2);
     const first1 = tmp3[0];
     const options = tmp3[1];
-    const ref = hooks.useRef(null);
-    let closure_4 = ref;
-    const ref1 = hooks.useRef(null);
-    let closure_5 = ref1;
-    const ref2 = hooks.useRef(null);
-    const callback2 = ref2;
-    const ref3 = hooks.useRef(null);
-    let obj = ref3;
-    const tmp8 = callback2(hooks.useState(1), 2);
+    const ref = first.useRef(null);
+    const ref1 = first.useRef(null);
+    const ref2 = first.useRef(null);
+    const ref3 = first.useRef(null);
+    const tmp8 = callback2(first.useState(1), 2);
     const first2 = tmp8[0];
-    const style = first2;
     let closure_9 = tmp8[1];
-    const items = [options.id];
-    const memo = hooks.useMemo(() => {
-      const element = first2.getElementById(closure_3.id);
+    let items = [options.id];
+    const memo = first.useMemo(() => {
+      const element = style.getElementById(closure_3.id);
       if (element) {
         const computedStyle = globalThis.getComputedStyle(element);
         let propertyValue = computedStyle.getPropertyValue("--button-primary-background");
@@ -2459,168 +2465,167 @@ function ScreenshotEditorFactory(h) {
         return "white";
       }
     }, items);
-    const items1 = [screenshot];
-    const layoutEffect = hooks.useLayoutEffect(() => {
+    let items1 = [screenshot];
+    const layoutEffect = first.useLayoutEffect(() => {
       function handleResize() {
-        const current = ref.current;
-        const handleResize = current;
+        const current = outer1_4.current;
         if (current) {
           const obj = { alpha: false };
-          callback(handleResize.canvas, obj, (width) => {
-            callback(Math.min(current.clientWidth / width.width, current.clientHeight / width.height));
+          outer3_89(handleResize.canvas, obj, (width) => {
+            outer2_9(Math.min(current.clientWidth / width.width, current.clientHeight / width.height));
           });
           if (!tmp4) {
             const _setTimeout = setTimeout;
-            const timerId = setTimeout(handleResize, 0);
+            const timerId = setTimeout(current, 0);
           }
-          const tmp4 = 0 !== current.clientHeight && 0 !== current.clientWidth;
+          tmp4 = 0 !== current.clientHeight && 0 !== current.clientWidth;
         }
       }
-      const screenshot = handleResize;
       handleResize();
-      const GLOBAL_OBJ = screenshot(first[5]).GLOBAL_OBJ;
+      let GLOBAL_OBJ = screenshot(hooks[5]).GLOBAL_OBJ;
       const listener = GLOBAL_OBJ.addEventListener("resize", handleResize);
       return () => {
-        const GLOBAL_OBJ = handleResize(closure_1[5]).GLOBAL_OBJ;
+        const GLOBAL_OBJ = handleResize(hooks[5]).GLOBAL_OBJ;
         const removed = GLOBAL_OBJ.removeEventListener("resize", handleResize);
       };
     }, items1);
     const items2 = [screenshot];
-    let closure_11 = hooks.useCallback((arg0, arg1) => {
-      const screenshot = arg1;
-      callback3(arg0, { alpha: true }, (arg0, scale) => {
-        scale.scale(scale, scale);
-        arg0.width = scale.canvas.width;
-        arg0.height = scale.canvas.height;
+    let closure_11 = first.useCallback((arg0, arg1) => {
+      let closure_0 = arg1;
+      outer2_89(arg0, { alpha: true }, (arg0, scale) => {
+        scale.scale(closure_0, closure_0);
+        arg0.width = closure_0.canvas.width;
+        arg0.height = closure_0.canvas.height;
       });
     }, items2);
     const items3 = [screenshot];
-    const effect = hooks.useEffect(() => {
+    const effect = first.useEffect(() => {
       callback(ref1.current, screenshot.dpi);
-      callback4(ref1.current, screenshot.canvas);
+      outer2_90(ref1.current, screenshot.canvas);
     }, items3);
     const items4 = [first1, memo];
-    const effect1 = hooks.useEffect(() => {
+    const effect1 = first.useEffect(() => {
       callback(ref2.current, screenshot.dpi);
-      callback3(ref2.current, { alpha: true }, (width, clearRect) => {
+      outer2_89(ref2.current, { alpha: true }, (width, clearRect) => {
         clearRect.clearRect(0, 0, width.width, width.height);
       });
-      callback5(ref2.current, memo, first1);
+      outer2_91(ref2.current, memo, first1);
     }, items4);
     const items5 = [first1, screenshot, memo];
-    const effect2 = hooks.useEffect(() => {
+    const effect2 = first.useEffect(() => {
       callback(first1, screenshot.dpi);
-      callback4(first1, screenshot.canvas);
-      callback3(<canvas />, { alpha: true }, (arg0, scale) => {
-        scale.scale(closure_0.dpi, closure_0.dpi);
-        arg0.width = closure_0.canvas.width;
-        arg0.height = closure_0.canvas.height;
-        callback2(arg0, closure_10, closure_2);
-        callback(closure_2, arg0);
+      outer2_90(first1, screenshot.canvas);
+      outer2_89(<canvas />, { alpha: true }, (arg0, scale) => {
+        scale.scale(outer1_0.dpi, outer1_0.dpi);
+        arg0.width = outer1_0.canvas.width;
+        arg0.height = outer1_0.canvas.height;
+        outer3_91(arg0, outer1_10, outer1_2);
+        outer3_90(first1, arg0);
       });
     }, items5);
-    let closure_12 = hooks.useCallback((arg0) => {
-      const screenshot = arg0;
+    let closure_12 = first.useCallback((arg0) => {
+      let closure_0 = arg0;
       return (preventDefault) => {
         preventDefault.preventDefault();
         preventDefault.stopPropagation();
-        callback((arg0) => {
-          const arr = callback(arg0);
-          arr.splice(closure_0, 1);
+        outer1_3((arg0) => {
+          const arr = outer4_2(arg0);
+          arr.splice(outer1_0, 1);
           return arr;
         });
       };
     }, []);
-    obj = { width: `${screenshot.canvas.width * tmp9}px`, height: `${screenshot.canvas.height * tmp9}px` };
+    let obj = { width: `${screenshot.canvas.width * tmp9}px`, height: `${screenshot.canvas.height * tmp9}px` };
     function handleStopPropagation(stopPropagation) {
       stopPropagation.stopPropagation();
     }
     obj = { class: "editor" };
-    obj = { nonce: options.styleNonce, dangerouslySetInnerHTML: obj };
+    obj = { nonce: options.styleNonce, dangerouslySetInnerHTML: ref3 };
     const obj1 = { class: "editor__canvas-container", ref };
-    const tmp15 = h("style", obj);
+    const tmp15 = screenshot("style", obj);
     const obj2 = {
       ref: ref3,
       onMouseDown: function handleMouseDown(offsetX) {
-        if (first) {
+        if (obj) {
           if (ref3.current) {
             const current = ref3.current;
             const boundingClientRect = current.getBoundingClientRect();
-            const obj = { type: first, x: offsetX.offsetX / first2, y: offsetX.offsetY / first2 };
-            const first = obj;
-            function getDrawCommand(getDrawCommand, clientX) {
-              const result = (clientX.clientX - closure_0.x) / closure_8;
-              const result1 = (clientX.clientY - closure_0.y) / closure_8;
-              return { type: getDrawCommand.type, x: Math.min(getDrawCommand.x, result), y: Math.min(getDrawCommand.y, result1), w: Math.abs(result - getDrawCommand.x), h: Math.abs(result1 - getDrawCommand.y) };
+            obj = {};
+            obj.type = obj;
+            obj.x = offsetX.offsetX / first2;
+            obj.y = offsetX.offsetY / first2;
+            function getDrawCommand(type, clientX) {
+              const result = (clientX.clientX - closure_0.x) / outer1_8;
+              const result1 = (clientX.clientY - closure_0.y) / outer1_8;
+              return { type: type.type, x: Math.min(type.x, result), y: Math.min(type.y, result1), w: Math.abs(result - type.x), h: Math.abs(result1 - type.y) };
             }
             function handleMouseMove(clientX) {
-              callback(ref.current, { alpha: true }, (width, clearRect) => {
+              outer3_89(outer1_6.current, { alpha: true }, (width, clearRect) => {
                 clearRect.clearRect(0, 0, width.width, width.height);
               });
               const items = [];
               const items1 = [getDrawCommand(obj, clientX)];
-              callback2(ref.current, closure_10, items.concat(getDrawCommand(getDrawCommand), items1));
+              outer3_91(outer1_6.current, outer1_10, items.concat(outer3_2(getDrawCommand), items1));
             }
-            let closure_3 = handleMouseMove;
             function handleMouseUp(clientX) {
               const tmp = getDrawCommand(obj, clientX);
               let closure_0 = tmp;
-              let tmp2 = tmp.w * closure_8 >= 1;
+              let tmp2 = tmp.w * outer1_8 >= 1;
               if (tmp2) {
-                tmp2 = tmp.h * closure_8 >= 1;
+                tmp2 = tmp.h * outer1_8 >= 1;
               }
               if (tmp2) {
                 handleMouseMove((arg0) => {
                   const items = [];
-                  const items1 = [tmp];
-                  return items.concat(callback(arg0), items1);
+                  const items1 = [closure_0];
+                  return items.concat(outer4_2(arg0), items1);
                 });
               }
-              const removed = closure_8.removeEventListener("mousemove", handleMouseMove);
-              const removed1 = closure_8.removeEventListener("mouseup", handleMouseUp);
+              const removed = style.removeEventListener("mousemove", handleMouseMove);
+              const removed1 = style.removeEventListener("mouseup", handleMouseUp);
             }
-            const listener = first2.addEventListener("mousemove", handleMouseMove);
-            const listener1 = first2.addEventListener("mouseup", handleMouseUp);
+            const listener = style.addEventListener("mousemove", handleMouseMove);
+            const listener1 = style.addEventListener("mouseup", handleMouseUp);
           }
         }
       },
       style: obj
     };
-    const tmp16 = h("canvas", { ref: ref1, id: "background", style: obj });
+    const tmp16 = screenshot("canvas", { ref: ref1, id: "background", style: obj });
     const obj3 = { options, action: first, setAction: tmp[1] };
-    const tmp17 = h("canvas", { ref: ref2, id: "foreground", style: obj });
-    return h("div", obj, tmp15, h("div", { class: "editor__image-container" }, h("div", obj1, tmp16, h("canvas", { ref: ref2, id: "foreground", style: obj }), h("div", obj2, first1.map((arg0, key) => {
-      let obj = { key, class: "editor__rect", style: obj };
-      obj = { top: `${arg0.y * closure_8}px`, left: `${arg0.x * closure_8}px`, width: `${arg0.w * closure_8}px`, height: `${arg0.h * closure_8}px` };
-      obj = { aria-label: closure_3.removeHighlightText, onClick: callback2(key), onMouseDown: handleStopPropagation, onMouseUp: handleStopPropagation, type: "button" };
+    const tmp17 = screenshot("canvas", { ref: ref2, id: "foreground", style: obj });
+    return screenshot("div", obj, tmp15, screenshot("div", { class: "editor__image-container" }, screenshot("div", obj1, tmp16, screenshot("canvas", { ref: ref2, id: "foreground", style: obj }), screenshot("div", obj2, first1.map((arg0, key) => {
+      obj = { key, class: "editor__rect", style: obj };
+      obj = { top: `${arg0.y * first2}px`, left: `${arg0.x * first2}px`, width: `${arg0.w * first2}px`, height: `${arg0.h * first2}px` };
+      obj = { "aria-label": closure_3.removeHighlightText, onClick: callback2(key), onMouseDown: handleStopPropagation, onMouseUp: handleStopPropagation, type: "button" };
       return screenshot("div", obj, screenshot("button", obj, screenshot(ref2, null)));
-    })))), h(closure_5, obj3));
+    })))), screenshot(ref1, obj3));
   }
   return function Wrapper(onError) {
-    const h = onError.onError;
-    const tmp = callback2(React.useState(), 2);
+    onError = onError.onError;
+    const tmp = callback2(hooks.useState(), 2);
     const first = tmp[0];
-    const React = tmp[1];
+    hooks = tmp[1];
     let obj = {
-      onBeforeScreenshot: React.useCallback(() => {
-        closure_8.display = "none";
+      onBeforeScreenshot: hooks.useCallback(() => {
+        outer1_8.display = "none";
       }, []),
-      onScreenshot: React.useCallback((arg0, arg1) => {
-        const onError = arg0;
+      onScreenshot: hooks.useCallback((arg0, arg1) => {
+        let closure_0 = arg0;
         let closure_1 = arg1;
-        callback(<canvas />, { alpha: false }, (canvas, scale) => {
-          scale.scale(scale, scale);
-          ({ videoWidth: canvas.width, videoHeight: canvas.height } = canvas);
-          scale.drawImage(canvas, 0, 0, canvas.width, canvas.height);
-          scale({ canvas, dpi: scale });
+        outer2_89(<canvas />, { alpha: false }, (canvas, scale) => {
+          scale.scale(callback, callback);
+          ({ videoWidth: canvas.width, videoHeight: canvas.height } = closure_0);
+          scale.drawImage(closure_0, 0, 0, canvas.width, canvas.height);
+          callback({ canvas, dpi: callback });
         });
-        ({ videoWidth: closure_2.width, videoHeight: closure_2.height } = arg0);
+        ({ videoWidth: outer1_2.width, videoHeight: outer1_2.height } = arg0);
       }, []),
-      onAfterScreenshot: React.useCallback(() => {
-        closure_8.display = "block";
+      onAfterScreenshot: hooks.useCallback(() => {
+        outer1_8.display = "block";
       }, []),
-      onError: React.useCallback((arg0) => {
-        closure_8.display = "block";
+      onError: hooks.useCallback((arg0) => {
+        outer1_8.display = "block";
         onError(arg0);
       }, [])
     };
@@ -2634,22 +2639,16 @@ function ScreenshotEditorFactory(h) {
     return tmp4Result;
   };
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
-let closure_6 = require(dependencyMap[4]);
-let closure_7 = [1796924755, 1178978089];
+let closure_7 = ["open", "onFormSubmitted"];
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const document = require(dependencyMap[5]).GLOBAL_OBJ.document;
-const navigator = require(dependencyMap[5]).GLOBAL_OBJ.navigator;
-let closure_10 = "Report a Bug";
+const document = require("registerSpanErrorInstrumentation").GLOBAL_OBJ.document;
+const navigator = require("registerSpanErrorInstrumentation").GLOBAL_OBJ.navigator;
+let c10 = "Report a Bug";
 function sendFeedback(message) {
   if (arguments.length > 1) {
     if (message.message) {
-      let obj = require(closure_1[5]);
-      const client = obj.getClient();
-      const require = client;
+      let obj = client(794);
+      client = obj.getClient();
       if (client) {
         let length = message.tags;
         if (length) {
@@ -2657,29 +2656,29 @@ function sendFeedback(message) {
           length = Object.keys(message.tags).length;
         }
         if (length) {
-          const currentScope = require(closure_1[5]).getCurrentScope();
+          const currentScope = client(794).getCurrentScope();
           currentScope.setTags(message.tags);
-          const obj2 = require(closure_1[5]);
+          const obj2 = client(794);
         }
         const _Object2 = Object;
         obj = { source: "api" };
-        const obj4 = require(closure_1[5]);
-        obj.url = require(closure_1[5]).getLocationHref();
-        closure_1 = obj4.captureFeedback(Object.assign(obj, message), { includeReplay: true });
+        const obj4 = client(794);
+        obj.url = client(794).getLocationHref();
+        const dependencyMap = obj4.captureFeedback(Object.assign(obj, message), { includeReplay: true });
         const promise = new Promise((arg0, arg1) => {
           const client = arg0;
           let closure_1 = arg1;
-          const timeout = setTimeout(() => arg1("Unable to determine if Feedback was correctly sent."), 30000);
+          const timeout = setTimeout(() => callback2("Unable to determine if Feedback was correctly sent."), 30000);
           let closure_3 = client.on("afterSendEvent", (event_id, statusCode) => {
-            if (event_id.event_id === statusCode) {
+            if (event_id.event_id === callback2) {
               const _clearTimeout = clearTimeout;
               clearTimeout(closure_2);
-              callback();
+              callback3();
               if (null != statusCode) {
                 if (statusCode.statusCode) {
                   if (statusCode.statusCode >= 200) {
                     if (statusCode.statusCode < 300) {
-                      let tmp9 = event_id(statusCode);
+                      let tmp9 = callback(callback2);
                     }
                     return tmp9;
                   }
@@ -2690,9 +2689,9 @@ function sendFeedback(message) {
                 statusCode = statusCode.statusCode;
               }
               if (403 === statusCode) {
-                tmp9 = statusCode("Unable to send feedback. This could be because this domain is not in your list of allowed domains.");
+                tmp9 = callback2("Unable to send feedback. This could be because this domain is not in your list of allowed domains.");
               } else {
-                tmp9 = statusCode("Unable to send feedback. This could be because of network issues, or because you are using an ad-blocker.");
+                tmp9 = callback2("Unable to send feedback. This could be because of network issues, or because you are using an ad-blocker.");
               }
             }
           });
@@ -2711,11 +2710,11 @@ function sendFeedback(message) {
   }
 }
 let closure_12 = "undefined" === typeof globalThis.__SENTRY_DEBUG__ || globalThis.__SENTRY_DEBUG__;
-let closure_13 = { guild: false, monocolored: false, size: false, strokeWidth: false, d: false, fillRule: false, clipRule: false, d: false, fill: false, fillRule: false };
-let closure_14 = {};
+let closure_13 = { foreground: "#2b2233", background: "#ffffff", accentForeground: "white", accentBackground: "rgba(88, 74, 192, 1)", successColor: "#268d75", errorColor: "#df3338", border: "1.5px solid rgba(41, 35, 47, 0.13)", boxShadow: "0px 4px 24px 0px rgba(43, 34, 51, 0.12)", outline: "1px auto var(--accent-background)", interactiveFilter: "brightness(95%)" };
+let closure_14 = { foreground: "#ebe6ef", background: "#29232f", accentForeground: "white", accentBackground: "rgba(88, 74, 192, 1)", successColor: "#2da98c", errorColor: "#f55459", border: "1.5px solid rgba(235, 230, 239, 0.15)", boxShadow: "0px 4px 24px 0px rgba(43, 34, 51, 0.12)", outline: "1px auto var(--accent-background)", interactiveFilter: "brightness(150%)" };
 let closure_22 = {};
-const items = [];
-let closure_24 = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
+let items = [];
+const re24 = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
 const slice = items.slice;
 let obj = {
   __e(__exception, __v) {
@@ -2772,7 +2771,7 @@ let obj = {
     throw __exception;
   }
 };
-let closure_17 = 0;
+let c17 = 0;
 b$1.prototype.render = g$1;
 let closure_18 = [];
 if ("function" === typeof Promise) {
@@ -2784,29 +2783,29 @@ function f$1(__v, __v2) {
   return __v.__v.__b - __v2.__v.__b;
 }
 C$1.__r = 0;
-let closure_30 = 0;
+let c30 = 0;
 let closure_31 = [];
 let closure_32 = [];
 ({ __b: closure_34, __r: closure_35, diffed: closure_36, __c: closure_37, unmount: closure_38, __: closure_39 } = obj);
 obj.__b = (arg0) => {
-  let closure_27 = null;
-  if (callback4) {
-    callback4(arg0);
+  let c27 = null;
+  if (callback) {
+    callback(arg0);
   }
 };
 obj.__ = (arg0, __k) => {
   if (tmp) {
     arg0.__m = __k.__k.__m;
   }
-  if (callback9) {
-    callback9(arg0, __k);
+  if (callback6) {
+    callback6(arg0, __k);
   }
 };
 obj.__r = (__c) => {
-  if (callback5) {
-    callback5(__c);
+  if (callback2) {
+    callback2(__c);
   }
-  let closure_26 = 0;
+  let c26 = 0;
   __c = __c.__c;
   const __H = __c.__H;
   if (__H) {
@@ -2818,7 +2817,7 @@ obj.__r = (__c) => {
         if (__N.__N) {
           __N.__ = __N.__N;
         }
-        __N.__V = closure_32;
+        __N.__V = outer1_32;
         __N.i = undefined;
         __N.__N = undefined;
       });
@@ -2828,14 +2827,14 @@ obj.__r = (__c) => {
       const __h1 = __H.__h;
       const item2 = __h1.forEach(B);
       __H.__h = [];
-      closure_26 = 0;
+      c26 = 0;
     }
   }
   closure_28 = __c;
 };
 obj.diffed = (__c) => {
-  if (callback6) {
-    callback6(__c);
+  if (callback3) {
+    callback3(__c);
   }
   __c = __c.__c;
   let __H = __c;
@@ -2849,7 +2848,7 @@ obj.diffed = (__c) => {
         tmp4 = _requestAnimationFrame === obj.requestAnimationFrame;
       }
       if (!tmp4) {
-        let _requestAnimationFrame = obj.requestAnimationFrame;
+        _requestAnimationFrame = obj.requestAnimationFrame;
         if (!_requestAnimationFrame) {
           _requestAnimationFrame = w;
         }
@@ -2861,36 +2860,36 @@ obj.diffed = (__c) => {
       if (arg0.i) {
         arg0.__H = arg0.i;
       }
-      if (arg0.__V !== closure_32) {
+      if (arg0.__V !== outer1_32) {
         arg0.__ = arg0.__V;
       }
       arg0.i = undefined;
-      arg0.__V = closure_32;
+      arg0.__V = outer1_32;
     });
   }
-  let closure_27 = null;
-  let closure_28 = null;
+  let c27 = null;
+  let c28 = null;
 };
 obj.__c = (arg0, arr) => {
-  const require = arr;
+  let closure_0 = arr;
   arr.some((__h) => {
     __h = __h.__h;
-    const item = __h.forEach(closure_78);
+    const item = __h.forEach(outer1_78);
     const __h1 = __h.__h;
     __h.__h = __h1.filter((arg0) => {
       if (!!arg0.__) {
-        callback(arg0);
+        outer2_79(arg0);
       }
       return !arg0.__;
     });
   });
-  if (callback7) {
-    callback7(arg0, require);
+  if (callback4) {
+    callback4(arg0, closure_0);
   }
 };
 obj.unmount = (__c) => {
-  if (callback8) {
-    callback8(__c);
+  if (callback5) {
+    callback5(__c);
   }
   __c = __c.__c;
   let __H = __c;
@@ -2900,7 +2899,7 @@ obj.unmount = (__c) => {
   if (__H) {
     const __ = __c.__H.__;
     const item = __.forEach((arg0) => {
-      callback(arg0);
+      outer1_78(arg0);
     });
     __c.__H = undefined;
     if (require) {
@@ -3003,7 +3002,7 @@ obj.useId = function g() {
     }
     let __m = tmp5.__m;
     if (!__m) {
-      const items = ["placeholder", "aria-label"];
+      const items = [0, 0];
       tmp5.__m = items;
       __m = items;
     }
@@ -3013,21 +3012,21 @@ obj.useId = function g() {
   return tmp2.__;
 };
 obj.useImperativeHandle = function T(arg0, arg1, arr) {
-  const require = arg0;
-  const dependencyMap = arg1;
-  let closure_30 = 6;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let c30 = 6;
   let combined = arr;
   if (null != arr) {
     combined = arr.concat(arg0);
   }
-  A(() => {
-    if ("function" === typeof arg0) {
-      arg0(arg1());
-      let fn = () => callback(null);
-    } else if (arg0) {
-      arg0.current = arg1();
+  closure_73(() => {
+    if ("function" === typeof callback) {
+      callback(callback2());
+      let fn = () => outer1_0(null);
+    } else if (callback) {
+      callback.current = callback2();
       fn = () => {
-        closure_0.current = null;
+        outer1_0.current = null;
         return null;
       };
     }
@@ -3038,15 +3037,18 @@ obj.useLayoutEffect = A;
 obj.useMemo = fn3;
 obj.useReducer = fn2;
 obj.useRef = function F(arg0) {
-  const require = arg0;
-  let closure_30 = 5;
-  return fn3(() => ({ current: arg0 }), []);
+  let closure_0 = arg0;
+  let c30 = 5;
+  return fn3(() => ({ current: closure_0 }), []);
 };
 obj.useState = fn;
 let closure_41 = Object.defineProperty(obj, Symbol.toStringTag, { value: "Module" });
 
 export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) {
-  ({ lazyLoadIntegration: closure_0, getModalIntegration: closure_1, getScreenshotIntegration: closure_2 } = arg0);
+  let _toConsumableArray;
+  let dependencyMap;
+  let require;
+  ({ lazyLoadIntegration: require, getModalIntegration: dependencyMap, getScreenshotIntegration: _toConsumableArray } = arg0);
   return function feedbackIntegration() {
     if (arguments.length > 0) {
       if (undefined !== arguments[0]) {
@@ -3057,16 +3059,16 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
       if (undefined !== id) {
         str = id;
       }
-      const autoInject = first.autoInject;
+      let autoInject = first.autoInject;
       const showBranding = first.showBranding;
       const isEmailRequired = first.isEmailRequired;
       const isNameRequired = first.isNameRequired;
       const showEmail = first.showEmail;
       const showName = first.showName;
-      const enableScreenshot = first.enableScreenshot;
+      let enableScreenshot = first.enableScreenshot;
       let useSentryUser = first.useSentryUser;
       if (undefined === useSentryUser) {
-        useSentryUser = {};
+        useSentryUser = { email: "email", name: "username" };
       }
       const styleNonce = first.styleNonce;
       const scriptNonce = first.scriptNonce;
@@ -3155,7 +3157,7 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
       }
       let triggerLabel = first.triggerLabel;
       if (undefined === triggerLabel) {
-        triggerLabel = closure_10;
+        triggerLabel = outer1_10;
       }
       const triggerAriaLabel = first.triggerAriaLabel;
       let str17 = "";
@@ -3179,21 +3181,21 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
       }
       let obj = { id: str, autoInject: undefined === autoInject || autoInject, showBranding: undefined === showBranding || showBranding, isEmailRequired: undefined !== isEmailRequired && isEmailRequired, isNameRequired: undefined !== isNameRequired && isNameRequired, showEmail: undefined === showEmail || showEmail, showName: undefined === showName || showName, enableScreenshot: undefined === enableScreenshot || enableScreenshot, useSentryUser, tags: first.tags, styleNonce, scriptNonce, colorScheme: str2, themeDark, themeLight, triggerLabel, triggerAriaLabel: str17, cancelButtonLabel: str4, submitButtonLabel: str15, confirmButtonLabel: str5, formTitle: str8, emailLabel: str6, emailPlaceholder: str7, messageLabel: str10, messagePlaceholder: str11, nameLabel: str12, namePlaceholder: str13, successMessageText: str16, isRequiredLabel: str9, addScreenshotButtonLabel: str3, removeScreenshotButtonLabel: str14, highlightToolText: str18, hideToolText: str19, removeHighlightText: str20 };
       ({ onFormClose: obj5.onFormClose, onFormOpen: obj5.onFormOpen, onSubmitError: obj5.onSubmitError, onSubmitSuccess: obj5.onSubmitSuccess, onFormSubmitted: obj5.onFormSubmitted } = first);
-      const callback = null;
+      let c4 = null;
       let closure_5 = [];
       function _createShadow(tmpResult) {
         let colorScheme;
         let styleNonce;
         let themeDark;
-        if (!closure_4) {
+        if (!c4) {
           const element = <div />;
           const _String = String;
           element.id = String(tmpResult.id);
-          const body = _attachTo.body;
+          const body = outer2_8.body;
           body.appendChild(element);
           const obj = { mode: "open" };
           const attachShadowResult = element.attachShadow(obj);
-          closure_4 = attachShadowResult;
+          c4 = attachShadowResult;
           ({ colorScheme, themeDark, styleNonce } = tmpResult);
           const element1 = <style />;
           let str4 = "";
@@ -3204,16 +3206,16 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
           }
           if ("dark" === colorScheme) {
             const _Object2 = Object;
-            let merged = Object.assign({}, closure_14, themeDark);
+            let merged = Object.assign({}, outer2_14, themeDark);
           } else {
             const _Object = Object;
-            merged = Object.assign({}, closure_13, tmpResult.themeLight);
+            merged = Object.assign({}, outer2_13, tmpResult.themeLight);
           }
-          const tmp6Result = callback3(merged);
+          const tmp6Result = outer2_45(merged);
           if ("system" === colorScheme) {
             const _Object3 = Object;
             const _HermesInternal2 = HermesInternal;
-            str4 = "\n@media (prefers-color-scheme: dark) {\n  :host {\n    color-scheme: only dark;\n\n    " + callback3(Object.assign({}, closure_14, themeDark)) + "\n  }\n}";
+            str4 = "\n@media (prefers-color-scheme: dark) {\n  :host {\n    color-scheme: only dark;\n\n    " + outer2_45(Object.assign({}, outer2_14, themeDark)) + "\n  }\n}";
           }
           const _HermesInternal3 = HermesInternal;
           element1.textContent = "\n:host {\n  --font-family: system-ui, 'Helvetica Neue', Arial, sans-serif;\n  --font-size: 14px;\n  --z-index: 100000;\n\n  --page-margin: 16px;\n  --inset: auto 0 0 auto;\n  --actor-inset: var(--inset);\n\n  font-family: var(--font-family);\n  font-size: var(--font-size);\n\n  " + str6 + "\n\n  " + tmp6Result + "\n}\n\n" + str4 + "\n";
@@ -3221,25 +3223,26 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
             const attr = element1.setAttribute("nonce", styleNonce);
           }
           attachShadowResult.appendChild(element1);
-          const tmp6 = callback3;
+          const tmp6 = outer2_45;
         }
-        return closure_4;
+        return c4;
       }
-      let closure_7 = () => {
-        let closure_0 = _null(async (arg0) => {
-          let callback;
+      let closure_7 = (() => {
+        let closure_0 = outer2_4(async (arg0) => {
+          const callback = arg0;
+          let closure_1;
           const enableScreenshot = arg0.enableScreenshot;
           let tmp2 = enableScreenshot;
           if (enableScreenshot) {
             let obj = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-            let isMatch = obj.test(closure_9.userAgent);
+            let isMatch = obj.test(outer4_9.userAgent);
             if (!isMatch) {
-              let maxTouchPoints = /Macintosh/i.test(closure_9.userAgent);
+              let maxTouchPoints = /Macintosh/i.test(outer4_9.userAgent);
               if (maxTouchPoints) {
-                maxTouchPoints = closure_9.maxTouchPoints;
+                maxTouchPoints = outer4_9.maxTouchPoints;
               }
               if (maxTouchPoints) {
-                maxTouchPoints = closure_9.maxTouchPoints > 1;
+                maxTouchPoints = outer4_9.maxTouchPoints > 1;
               }
               isMatch = maxTouchPoints;
               const obj2 = /Macintosh/i;
@@ -3249,22 +3252,22 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
             }
             tmp2 = !isMatch;
           }
-          if (callback) {
-            const tmp15 = callback()();
-            arg0(callback[5]).addIntegration(tmp15);
+          if (styleNonce) {
+            const tmp15 = styleNonce()();
+            outer4_0(outer4_1[5]).addIntegration(tmp15);
             let tmp20;
             if (tmp9) {
-              if (callback2) {
-                tmp20 = callback2();
+              if (scriptNonce) {
+                tmp20 = scriptNonce();
               } else {
-                const tmp24 = yield closure_0("feedbackScreenshotIntegration", closure_2);
+                const tmp24 = yield closure_0("feedbackScreenshotIntegration", outer2_2);
                 return tmp24;
               }
             }
             if (tmp20) {
               const tmp20Result = tmp20();
-              arg0(callback[5]).addIntegration(tmp20Result);
-              const obj5 = arg0(callback[5]);
+              outer4_0(outer4_1[5]).addIntegration(tmp20Result);
+              const obj5 = outer4_0(outer4_1[5]);
               const tmp = tmp20Result;
             }
             obj = {};
@@ -3274,78 +3277,76 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
                   if (null != closure_1) {
                     closure_1.close();
                   }
-                  if (null != arg0.onFormClose) {
-                    arg0.onFormClose();
+                  if (null != enableScreenshot.onFormClose) {
+                    enableScreenshot.onFormClose();
                   }
                 },
               onFormSubmitted() {
                   if (null != closure_1) {
                     closure_1.close();
                   }
-                  if (null != arg0.onFormSubmitted) {
-                    arg0.onFormSubmitted();
+                  if (null != enableScreenshot.onFormSubmitted) {
+                    enableScreenshot.onFormSubmitted();
                   }
                 }
             };
             obj.options = Object.assign({}, arg0, obj);
             obj.screenshotIntegration = tmp;
-            obj.sendFeedback = closure_11;
-            obj.shadow = callback3(arg0);
-            callback = tmp15.createDialog(obj);
+            obj.sendFeedback = outer4_11;
+            obj.shadow = outer2_6(arg0);
+            closure_1 = tmp15.createDialog(obj);
             const obj3 = tmp15;
-            const obj4 = arg0(callback[5]);
+            const obj4 = outer4_0(outer4_1[5]);
           } else {
-            const tmp12 = yield closure_0("feedbackModalIntegration", closure_2);
+            const tmp12 = yield closure_0("feedbackModalIntegration", outer2_2);
             return tmp12;
           }
         });
         return function _loadAndRenderDialog(arg0) {
           return callback(...arguments);
         };
-      }();
+      })();
       function _attachTo(el, arg1) {
         if (arguments.length > 1) {
-          const callback = tmp(tmp2, {});
+          let closure_0 = tmp(tmp2, {});
           if ("string" === typeof el) {
-            let element = _attachTo.querySelector(el);
+            let element = outer2_8.querySelector(el);
           } else {
             element = null;
             if ("function" === typeof el.addEventListener) {
               element = el;
             }
           }
-          const styleNonce = element;
           if (element) {
-            let closure_2 = null;
-            const tmp16 = () => {
-              let closure_0 = unsubscribe(async () => {
-                if (!closure_2) {
+            let c2 = null;
+            const tmp16 = (() => {
+              let closure_0 = outer3_4(async () => {
+                if (!outer2_2) {
                   const _Object = Object;
                   const obj = { onFormSubmitted() { ... } };
-                  closure_2 = yield closure_7(Object.assign({}, closure_0, obj));
+                  outer2_2 = yield outer3_7(Object.assign({}, closure_0, obj));
                 }
-                closure_2.appendToDom();
-                closure_2.open();
+                outer2_2.appendToDom();
+                outer2_2.open();
               });
               return function handleClick() {
                 return callback(...arguments);
               };
-            }();
+            })();
             const listener = element.addEventListener("click", tmp16);
             function unsubscribe() {
-              closure_5 = closure_5.filter((arg0) => arg0 !== closure_4);
-              if (null != closure_2) {
-                closure_2.removeFromDom();
+              outer1_5 = outer1_5.filter((arg0) => arg0 !== outer1_4);
+              if (null != c2) {
+                c2.removeFromDom();
               }
-              closure_2 = null;
-              const removed = element.removeEventListener("click", tmp16);
+              c2 = null;
+              const removed = element.removeEventListener("click", closure_3);
             }
-            let closure_4 = unsubscribe;
-            const arr = arr.push(unsubscribe);
+            arr = arr.push(unsubscribe);
             return unsubscribe;
           } else {
-            if (closure_12) {
-              const debug = callback(styleNonce[5]).debug;
+            if (outer2_12) {
+              const debug = outer2_0(outer2_1[5]).debug;
               debug.error("[Feedback] Unable to attach to target element");
             }
             const _Error = Error;
@@ -3364,7 +3365,7 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
           ({ triggerLabel: obj.triggerLabel, triggerAriaLabel: obj.triggerAriaLabel } = tmpResult);
           obj.shadow = _createShadow(tmpResult);
           obj.styleNonce = styleNonce;
-          const tmp8 = callback2(obj);
+          const tmp8 = outer2_44(obj);
           let closure_0 = tmp8;
           const _Object = Object;
           obj = {
@@ -3385,14 +3386,14 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
       obj = {
         name: "Feedback",
         setupOnce() {
-            const obj = callback(styleNonce[5]);
+            const obj = outer2_0(outer2_1[5]);
             let autoInject = obj.isBrowser();
             if (autoInject) {
               autoInject = obj.autoInject;
             }
             if (autoInject) {
-              if ("loading" === _attachTo.readyState) {
-                const listener = _attachTo.addEventListener("DOMContentLoaded", () => callback().appendToDom());
+              if ("loading" === outer2_8.readyState) {
+                const listener = outer2_8.addEventListener("DOMContentLoaded", () => outer1_9().appendToDom());
               } else {
                 _createActor().appendToDom();
                 const obj2 = _createActor();
@@ -3411,7 +3412,7 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
             }
           }
       };
-      let closure_0 = callback(async () => {
+      let closure_0 = outer1_4(async () => {
         if (obj) {
           return obj.resume();
         } else {
@@ -3433,7 +3434,7 @@ export const buildFeedbackIntegration = function buildFeedbackIntegration(arg0) 
           if (null != parentElement) {
             parentElement.remove();
           }
-          const _null = null;
+          _null = null;
         }
         const item = arr.forEach((arg0) => arg0());
       };
@@ -3449,17 +3450,19 @@ export const feedbackModalIntegration = function feedbackModalIntegration() {
 
     },
     createDialog(options) {
+      let closure_1;
+      let closure_2;
       let screenshotIntegration;
       options = options.options;
       ({ screenshotIntegration, sendFeedback: closure_1, shadow: closure_2 } = options);
       const useSentryUser = options.useSentryUser;
-      let obj = options(closure_1[5]);
+      let obj = outer1_0(outer1_1[5]);
       const currentScope = obj.getCurrentScope();
       let user = currentScope.getUser();
-      const isolationScope = options(closure_1[5]).getIsolationScope();
+      const isolationScope = outer1_0(outer1_1[5]).getIsolationScope();
       const user1 = isolationScope.getUser();
-      const obj3 = options(closure_1[5]);
-      const globalScope = options(closure_1[5]).getGlobalScope();
+      const obj3 = outer1_0(outer1_1[5]);
+      const globalScope = outer1_0(outer1_1[5]).getGlobalScope();
       const user2 = globalScope.getUser();
       if (!user) {
         let tmp5 = user2;
@@ -3481,7 +3484,7 @@ export const feedbackModalIntegration = function feedbackModalIntegration() {
       if (styleNonce) {
         const attr = element.setAttribute("nonce", styleNonce);
       }
-      let closure_7 = "";
+      let c7 = "";
       obj = {};
       Object.defineProperty(obj, "el", { get: () => closure_5, set: undefined });
       obj.appendToDom = function appendToDom() {
@@ -3497,27 +3500,27 @@ export const feedbackModalIntegration = function feedbackModalIntegration() {
       obj.removeFromDom = function removeFromDom() {
         closure_5.remove();
         element.remove();
-        input.body.style.overflow = closure_7;
+        outer2_8.body.style.overflow = c7;
       };
       obj.open = function open() {
         renderContent(true);
         if (null != options.onFormOpen) {
           options.onFormOpen();
         }
-        const client = options(closure_1[5]).getClient();
+        const client = outer2_0(outer2_1[5]).getClient();
         if (null != client) {
           client.emit("openFeedbackWidget");
         }
-        const overflow = input.body.style.overflow;
-        input.body.style.overflow = "hidden";
+        const overflow = outer2_8.body.style.overflow;
+        outer2_8.body.style.overflow = "hidden";
       };
       obj.close = function close() {
         renderContent(false);
-        input.body.style.overflow = closure_7;
+        outer2_8.body.style.overflow = c7;
       };
       let input;
       if (null != screenshotIntegration) {
-        obj = { h: closure_48, hooks: closure_41 };
+        obj = { h: outer1_48, hooks: outer1_41 };
         obj.dialog = obj;
         obj.options = options;
         input = screenshotIntegration.createInput(obj);
@@ -3538,7 +3541,7 @@ export const feedbackModalIntegration = function feedbackModalIntegration() {
         if (useSentryUser) {
           let tmp7;
           if (null != user) {
-            tmp7 = user[closure_3.name];
+            tmp7 = user[useSentryUser.name];
           }
           str = tmp7;
         }
@@ -3550,7 +3553,7 @@ export const feedbackModalIntegration = function feedbackModalIntegration() {
         if (useSentryUser) {
           let tmp12;
           if (null != user) {
-            tmp12 = user[closure_3.email];
+            tmp12 = user[useSentryUser.email];
           }
           str2 = tmp12;
         }
@@ -3559,54 +3562,54 @@ export const feedbackModalIntegration = function feedbackModalIntegration() {
         }
         obj.defaultEmail = String(str2);
         obj.onFormClose = function onFormClose() {
-          callback(false);
-          if (null != closure_0.onFormClose) {
-            closure_0.onFormClose();
+          outer1_9(false);
+          if (null != outer1_0.onFormClose) {
+            outer1_0.onFormClose();
           }
         };
         obj.onSubmit = closure_1;
         obj.onSubmitSuccess = function onSubmitSuccess(arg0, arg1) {
-          callback(false);
-          if (null != closure_0.onSubmitSuccess) {
-            closure_0.onSubmitSuccess(arg0, arg1);
+          outer1_9(false);
+          if (null != outer1_0.onSubmitSuccess) {
+            outer1_0.onSubmitSuccess(arg0, arg1);
           }
         };
         obj.onSubmitError = function onSubmitError(arg0) {
-          if (null != closure_0.onSubmitError) {
-            closure_0.onSubmitError(arg0);
+          if (null != outer1_0.onSubmitError) {
+            outer1_0.onSubmitError(arg0);
           }
         };
         obj.onFormSubmitted = function onFormSubmitted() {
-          if (null != closure_0.onFormSubmitted) {
-            closure_0.onFormSubmitted();
+          if (null != outer1_0.onFormSubmitted) {
+            outer1_0.onFormSubmitted();
           }
         };
         obj.open = open;
-        const tmpResult = callback2(closure_87, obj);
-        if (closure_16.__) {
-          closure_16.__(tmpResult, tmp16);
+        const tmpResult = outer2_48(outer2_87, obj);
+        if (outer2_16.__) {
+          outer2_16.__(tmpResult, tmp16);
         }
         const __k = tmp16.__k;
         const items = [];
         const items1 = [];
         const items2 = [tmpResult];
-        const tmp20 = callback2(closure_50, null, items2);
+        const tmp20 = outer2_48(outer2_50, null, items2);
         closure_5.__k = tmp20;
         let tmp21 = __k;
         if (!__k) {
-          tmp21 = closure_22;
+          tmp21 = outer2_22;
         }
         let tmp23 = null;
         if (!__k) {
           let callResult = null;
           if (tmp16.firstChild) {
-            callResult = callback.call(tmp16.childNodes);
+            callResult = outer2_15.call(tmp16.childNodes);
           }
           tmp23 = callResult;
         }
-        closure_64(closure_5, tmp20, tmp21, closure_22, undefined !== closure_5.ownerSVGElement, tmp23, items, __k ? __k.__e : closure_5.firstChild, false, items1);
+        outer2_64(closure_5, tmp20, tmp21, outer2_22, undefined !== closure_5.ownerSVGElement, tmp23, items, __k ? __k.__e : closure_5.firstChild, false, items1);
         tmp20.__d = undefined;
-        callback3(items, tmp20, items1);
+        outer2_65(items, tmp20, items1);
       }
       return obj;
     }
@@ -3625,13 +3628,13 @@ export const feedbackScreenshotIntegration = function feedbackScreenshotIntegrat
       let options;
       ({ h, hooks, dialog, options } = arg0);
       const element = <canvas />;
-      const obj = { input: callback2({ h, hooks, outputBuffer: element, dialog, options }) };
-      let closure_0 = callback(async () => {
+      let obj = { input: outer1_92({ h, hooks, outputBuffer: element, dialog, options }) };
+      let closure_0 = outer1_4(async () => {
         let obj = yield new Promise((arg0) => {
-          closure_1.toBlob(arg0, "image/png");
+          outer2_1.toBlob(arg0, "image/png");
         });
         if (obj) {
-          obj = {};
+          obj = { data: null, filename: "screenshot.png", contentType: "application/png" };
           let _Uint8Array = Uint8Array;
           const tmp = yield obj.arrayBuffer();
           const prototype = _Uint8Array.prototype;
@@ -3649,7 +3652,7 @@ export const feedbackScreenshotIntegration = function feedbackScreenshotIntegrat
 };
 export const getFeedback = function getFeedback() {
   let integrationByName;
-  const client = require(dependencyMap[5]).getClient();
+  const client = require(794) /* registerSpanErrorInstrumentation */.getClient();
   if (null != client) {
     integrationByName = client.getIntegrationByName("Feedback");
   }

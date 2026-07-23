@@ -1,0 +1,35 @@
+// Module ID: 9120
+// Function ID: 71428
+// Name: useInvalidPreventRemoveError
+// Dependencies: [57, 31]
+// Exports: default
+
+// Module 9120 (useInvalidPreventRemoveError)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+
+export default function useInvalidPreventRemoveError(routes) {
+  const setNextDismissedKey = first(React.useState(null), 2);
+  first = setNextDismissedKey[0];
+  let tmp3 = null;
+  if (first) {
+    routes = routes.routes;
+    const found = routes.find((key) => key.key === first);
+    let name;
+    if (null != found) {
+      name = found.name;
+    }
+    tmp3 = name;
+  }
+  React = tmp3;
+  const items = [tmp3];
+  const effect = React.useEffect(() => {
+    if (result) {
+      const _HermesInternal = HermesInternal;
+      const _console = console;
+      console.error("The screen '" + result + "' was removed natively but didn't get removed from JS state. This can happen if the action was prevented in a 'beforeRemove' listener, which is not fully supported in native-stack.\n\nConsider using a 'usePreventRemove' hook with 'headerBackButtonMenuEnabled: false' to prevent users from natively going back multiple screens.");
+    }
+  }, items);
+  return { setNextDismissedKey: setNextDismissedKey[1] };
+};

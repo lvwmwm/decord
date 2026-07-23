@@ -1,11 +1,12 @@
-// Module ID: 4210
-// Function ID: 36582
+// Module ID: 4214
+// Function ID: 36614
 // Name: DEFAULT_FRECENCY
-// Dependencies: []
+// Dependencies: [6, 7, 22, 3712, 2]
 
-// Module 4210 (DEFAULT_FRECENCY)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+// Module 4214 (DEFAULT_FRECENCY)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 function DEFAULT_FRECENCY(arg0, arg1, numOfRecentUses) {
   return Math.ceil(arg0 * (arg1 / numOfRecentUses.numOfRecentUses));
 }
@@ -28,17 +29,17 @@ function DEFAULT_WEIGHT(arg0) {
   }
   return num;
 }
-const tmp2 = () => {
+let tmp2 = (() => {
   class Frecency {
     constructor(arg0) {
       self = this;
       computeWeight = arg0.computeWeight;
       if (computeWeight === undefined) {
-        computeWeight = closure_5;
+        computeWeight = outer1_5;
       }
       computeFrecency = arg0.computeFrecency;
       if (computeFrecency === undefined) {
-        computeFrecency = closure_4;
+        computeFrecency = outer1_4;
       }
       flag = arg0.calculateMaxTotalUse;
       if (flag === undefined) {
@@ -52,7 +53,7 @@ const tmp2 = () => {
       if (num === undefined) {
         num = 10;
       }
-      tmp = closure_2(self, Frecency);
+      tmp = outer1_2(self, Frecency);
       self.computeBonus = arg0.computeBonus;
       self.computeWeight = computeWeight;
       self.computeFrecency = computeFrecency;
@@ -68,17 +69,16 @@ const tmp2 = () => {
       return;
     }
   }
-  const importDefault = Frecency;
   let obj = {
     key: "overwriteHistory",
     value(arg0, arr) {
       let obj = arg0;
-      const self = this;
-      const Frecency = this;
+      let self = this;
+      self = this;
       if (null == arg0) {
         obj = {};
       }
-      self.usageHistory = Frecency(closure_1[2]).mapValues(obj, (arg0) => {
+      self.usageHistory = Frecency(outer1_1[2]).mapValues(obj, (arg0) => {
         const obj = {};
         const merged = Object.assign(arg0);
         obj["frecency"] = -1;
@@ -90,7 +90,7 @@ const tmp2 = () => {
       self.markDirty();
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "markDirty",
     value() {
@@ -221,26 +221,26 @@ const tmp2 = () => {
   items[7] = {
     key: "compute",
     value() {
-      const self = this;
-      const Frecency = this;
-      closure_1 = Frecency(closure_1[3])();
+      let self = this;
+      self = this;
+      let closure_1 = Frecency(outer1_1[3])();
       let maxByResult = null;
       if (this.calculateMaxTotalUse) {
         const _Object = Object;
-        maxByResult = Frecency(closure_1[2]).maxBy(Object.values(self.usageHistory), (totalUses) => totalUses.totalUses);
-        const obj = Frecency(closure_1[2]);
+        maxByResult = Frecency(outer1_1[2]).maxBy(Object.values(self.usageHistory), (totalUses) => totalUses.totalUses);
+        let obj = Frecency(outer1_1[2]);
       }
-      const item = Frecency(closure_1[2]).forEach(self.usageHistory, (recentUses) => {
-        const self = recentUses;
+      let item = Frecency(outer1_1[2]).forEach(self.usageHistory, (recentUses) => {
+        const _self = recentUses;
         recentUses = recentUses.recentUses;
         if (-1 === recentUses.frecency) {
-          let closure_1 = self.computeBonus(arg1) / 100;
+          let closure_1 = _self.computeBonus(arg1) / 100;
           recentUses.score = 0;
-          const item = self(closure_1[2]).forEach(recentUses, (self) => {
-            if (arg1 >= self.maxSamples) {
+          const item = Frecency(outer2_1[2]).forEach(recentUses, (arg0, arg1) => {
+            if (arg1 >= closure_0.maxSamples) {
               return false;
             } else {
-              self.score = self.score + closure_1 * self.computeWeight(closure_1.diff(self(closure_1[3])(self), "days"));
+              closure_0.score = closure_0.score + closure_1 * closure_0.computeWeight(closure_1.diff(Frecency(outer3_1[3])(arg0), "days"));
             }
           });
           if (recentUses.score > 0) {
@@ -251,18 +251,18 @@ const tmp2 = () => {
                 totalUses = maxByResult.totalUses;
               }
               obj.maxTotalUse = totalUses;
-              recentUses.frecency = self.computeFrecency(tmp, recentUses.score, obj);
+              recentUses.frecency = _self.computeFrecency(tmp3, recentUses.score, obj);
             }
-            self.usageHistory[arg1] = recentUses;
+            _self.usageHistory[arg1] = recentUses;
           } else {
-            const usageHistory = self.usageHistory;
-            delete r3[r1];
+            const usageHistory = _self.usageHistory;
+            delete tmp2[tmp];
           }
-          const arr2 = self(closure_1[2]);
+          const arr2 = Frecency(outer2_1[2]);
         }
       });
-      const arr = Frecency(closure_1[2]);
-      const mapped = Frecency(closure_1[2])(self.usageHistory).map((frecency) => {
+      const arr = Frecency(outer1_1[2]);
+      const mapped = Frecency(outer1_1[2])(self.usageHistory).map((frecency) => {
         const lookupKeyResult = self.lookupKey(arg1);
         let tmp2 = null;
         if (null != lookupKeyResult) {
@@ -272,7 +272,7 @@ const tmp2 = () => {
         return tmp2;
       });
       const found = mapped.filter((arg0) => null !== arg0);
-      const arr2 = Frecency(closure_1[2])(self.usageHistory);
+      let arr2 = Frecency(outer1_1[2])(self.usageHistory);
       const mapped1 = found.sortBy((arg0) => {
         let tmp;
         [, tmp] = arg0;
@@ -306,7 +306,7 @@ const tmp2 = () => {
     }
   };
   return callback(Frecency, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("lib/Frecency.tsx");
+})();
+const result = require("apply").fileFinishedImporting("lib/Frecency.tsx");
 
 export default tmp2;

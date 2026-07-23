@@ -1,15 +1,21 @@
-// Module ID: 13656
-// Function ID: 103442
+// Module ID: 13770
+// Function ID: 105598
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 13656 (_isNativeReflectConstruct)
+// Module 13770 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -18,27 +24,22 @@ function getStartOfCurrentDayPeriod() {
   date.setHours(0, 0, 0, 0);
   return date.getTime();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = null;
-let closure_6 = null;
-let closure_7 = null;
-let tmp2 = (PersistedStore) => {
+let c5 = null;
+let c6 = null;
+let c7 = null;
+let tmp2 = ((PersistedStore) => {
   class ParentalConsentWarningStore {
     constructor() {
       self = this;
       tmp = ParentalConsentWarningStore(this, ParentalConsentWarningStore);
-      obj = closure_3(ParentalConsentWarningStore);
-      tmp2 = closure_2;
-      if (closure_9()) {
+      obj = outer1_3(ParentalConsentWarningStore);
+      tmp2 = outer1_2;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -47,7 +48,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ParentalConsentWarningStore;
   callback2(ParentalConsentWarningStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -60,6 +60,7 @@ let tmp2 = (PersistedStore) => {
       if (null != prop) {
         tmp2 = prop;
       }
+      const outer1_5 = tmp2;
       let prop1;
       if (null != lastWarningFetchDayStart) {
         prop1 = lastWarningFetchDayStart.lastModalShownDayStart;
@@ -68,6 +69,7 @@ let tmp2 = (PersistedStore) => {
       if (null != prop1) {
         tmp4 = prop1;
       }
+      const outer1_6 = tmp4;
       let warning;
       if (null != lastWarningFetchDayStart) {
         warning = lastWarningFetchDayStart.warning;
@@ -76,22 +78,23 @@ let tmp2 = (PersistedStore) => {
       if (null != warning) {
         tmp6 = warning;
       }
+      const outer1_7 = tmp6;
     }
   };
   const items = [obj, , , , ];
   obj = {
     key: "getWarning",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[1] = obj;
   obj = {
     key: "shouldFetchToday",
     value() {
-      let tmp = null == closure_5;
+      let tmp = null == outer1_5;
       if (!tmp) {
-        tmp = closure_5 !== callback3();
+        tmp = outer1_5 !== outer1_10();
       }
       return tmp;
     }
@@ -100,9 +103,9 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "hasShownModalToday",
     value() {
-      let tmp = null != closure_6;
+      let tmp = null != outer1_6;
       if (tmp) {
-        tmp = closure_6 === callback3();
+        tmp = outer1_6 === outer1_10();
       }
       return tmp;
     }
@@ -110,14 +113,14 @@ let tmp2 = (PersistedStore) => {
   items[4] = {
     key: "getState",
     value() {
-      return { lastWarningFetchDayStart: closure_5, lastModalShownDayStart: closure_6, warning: closure_7 };
+      return { lastWarningFetchDayStart: outer1_5, lastModalShownDayStart: outer1_6, warning: outer1_7 };
     }
   };
   return callback(ParentalConsentWarningStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "ParentalConsentWarningStore";
 tmp2.persistKey = "ParentalConsentWarningStore";
-const items = [
+let items = [
   (lastWarningFetchDayStart) => {
     const obj = {};
     let prop;
@@ -151,7 +154,7 @@ const items = [
   }
 ];
 tmp2.migrations = items;
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   PARENTAL_CONSENT_WARNING_FETCH_SUCCESS: function handleFetchSuccess(warning) {
     warning = warning.warning;
     let closure_5 = getStartOfCurrentDayPeriod();
@@ -162,16 +165,17 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     tmp2.persist();
   },
   PARENTAL_CONSENT_WARNING_CLEARED: function handleWarningCleared() {
-    let closure_7 = null;
+    let c7 = null;
     tmp2.persist();
   },
   LOGOUT: function handleLogout() {
-    let closure_5 = null;
-    let closure_6 = null;
-    let closure_7 = null;
+    let c5 = null;
+    let c6 = null;
+    let c7 = null;
     tmp2.persist();
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/parent_tools/ParentalConsentWarningStore.tsx");
+let closure_8 = tmp2;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/parent_tools/ParentalConsentWarningStore.tsx");
 
 export default tmp2;

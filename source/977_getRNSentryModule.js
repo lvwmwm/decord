@@ -1,15 +1,21 @@
 // Module ID: 977
-// Function ID: 10504
+// Function ID: 10505
 // Name: getRNSentryModule
-// Dependencies: []
+// Dependencies: [57, 27, 978, 973, 980, 794, 989, 983, 990]
 // Exports: getDataFromUri, getRNSentryModule
 
 // Module 977 (getRNSentryModule)
+import _slicedToArray from "_slicedToArray";
+import get_ActivityIndicator from "get ActivityIndicator";
+import encodeUTF8 from "encodeUTF8";
+
 let Platform;
-const self = this;
+let closure_3;
+let self = this;
+const require = arg1;
 function getRNSentryModule() {
   if (obj.isTurboModuleEnabled()) {
-    const TurboModuleRegistry = arg1(dependencyMap[3]).ReactNativeLibraries.TurboModuleRegistry;
+    const TurboModuleRegistry = require(973) /* reactNativeVersion */.ReactNativeLibraries.TurboModuleRegistry;
     let value;
     if (null !== TurboModuleRegistry) {
       if (undefined !== TurboModuleRegistry) {
@@ -22,8 +28,7 @@ function getRNSentryModule() {
   }
   return RNSentry;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ NativeModules: closure_3, Platform } = arg1(dependencyMap[1]));
+({ NativeModules: closure_3, Platform } = get_ActivityIndicator);
 let fn = this;
 if (this) {
   fn = self.__awaiter;
@@ -31,50 +36,54 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    arg1 = arg0;
-    const dependencyMap = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;
@@ -98,7 +107,7 @@ if (!fn2) {
         continue;
       } else {
         obj[key10007] = arg0[key10007];
-        // continue
+        continue;
       }
       continue;
     }
@@ -123,15 +132,14 @@ if (!fn2) {
   };
 }
 let closure_6 = getRNSentryModule();
-let obj = arg1(dependencyMap[4]);
-let closure_7 = obj.encodeUTF8("\n");
-obj = {
+let closure_7 = encodeUTF8.encodeUTF8("\n");
+encodeUTF8 = {
   fetchModules() {
     return fn(this, undefined, undefined, function*() {
       const self = this;
       if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          const tmp3 = yield closure_6.fetchModules();
+        if (self._isModuleLoaded(outer2_6)) {
+          const tmp3 = yield outer2_6.fetchModules();
           let parsed = null;
           if (tmp3) {
             const _JSON = JSON;
@@ -147,35 +155,35 @@ obj = {
     });
   },
   sendEnvelope(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     return fn(this, undefined, undefined, function*() {
       let tmp63;
       let tmp64;
       const self = this;
       if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          const tmp7 = callback2(callback, 2);
+        if (self._isModuleLoaded(outer2_6)) {
+          const tmp7 = outer2_2(outer1_0, 2);
           const _JSON = JSON;
           const json = JSON.stringify(tmp7[0]);
-          let obj = callback(closure_1[4]);
+          let obj = callback(outer2_1[4]);
           const encodeUTF8Result = obj.encodeUTF8(json);
           const _Uint8Array = Uint8Array;
-          const uint8Array = new Uint8Array(encodeUTF8Result.length + closure_7.length);
+          const uint8Array = new Uint8Array(encodeUTF8Result.length + outer2_7.length);
           let arr2 = uint8Array;
           const result = uint8Array.set(encodeUTF8Result);
-          const result1 = uint8Array.set(closure_7, encodeUTF8Result.length);
+          const result1 = uint8Array.set(outer2_7, encodeUTF8Result.length);
           let flag = false;
           const tmp21 = tmp7[1][Symbol.iterator]();
           while (tmp21 !== undefined) {
-            let tmp61 = callback2;
-            let tmp62 = callback2(self._processItem(tmp22), 2);
+            let tmp61 = outer2_2;
+            let tmp62 = outer2_2(self._processItem(tmp22), 2);
             [tmp63, tmp64] = tmp62;
             let tmp65 = tmp64;
             if ("string" === typeof tmp64) {
               let str7 = "text/plain";
               let tmp33 = callback;
-              let tmp34 = closure_1;
-              let obj5 = callback(closure_1[4]);
+              let tmp34 = outer2_1;
+              let obj5 = callback(outer2_1[4]);
               let tmp35 = tmp64;
               let encodeUTF8Result1 = obj5.encodeUTF8(tmp65);
             } else {
@@ -199,16 +207,16 @@ obj = {
                 }
                 str7 = str6;
                 let tmp25 = callback;
-                let tmp26 = closure_1;
-                let obj3 = callback(closure_1[4]);
+                let tmp26 = outer2_1;
+                let obj3 = callback(outer2_1[4]);
                 let _JSON2 = JSON;
                 let tmp27 = tmp64;
                 encodeUTF8Result1 = obj3.encodeUTF8(JSON.stringify(tmp65));
                 let tmp28 = flag;
                 if (!flag) {
                   let tmp29 = callback;
-                  let tmp30 = closure_1;
-                  let obj4 = callback(closure_1[6]);
+                  let tmp30 = outer2_1;
+                  let obj4 = callback(outer2_1[6]);
                   let tmp31 = tmp64;
                   flag = obj4.isHardCrash(tmp65);
                 }
@@ -221,44 +229,44 @@ obj = {
             tmp63.length = encodeUTF8Result1.length;
             let _JSON3 = JSON;
             let tmp40 = callback;
-            let tmp41 = closure_1;
+            let tmp41 = outer2_1;
             let json1 = JSON.stringify(tmp63);
-            let obj6 = callback(closure_1[4]);
+            let obj6 = callback(outer2_1[4]);
             let encodeUTF8Result2 = obj6.encodeUTF8(json1);
             let _Uint8Array2 = Uint8Array;
             let tmp42 = arr2;
-            let tmp43 = closure_7;
-            let tmp44 = closure_7;
+            let tmp43 = outer2_7;
+            let tmp44 = outer2_7;
             let tmp45 = new.target;
             let tmp46 = new.target;
-            let uint8Array1 = new Uint8Array(arr2.length + encodeUTF8Result2.length + closure_7.length + encodeUTF8Result1.length + closure_7.length);
+            let uint8Array1 = new Uint8Array(arr2.length + encodeUTF8Result2.length + outer2_7.length + encodeUTF8Result1.length + outer2_7.length);
             let tmp47 = uint8Array1;
             let result2 = uint8Array1.set(arr2);
             let result3 = uint8Array1.set(encodeUTF8Result2, arr2.length);
-            let tmp50 = closure_7;
-            let result4 = uint8Array1.set(closure_7, arr2.length + encodeUTF8Result2.length);
-            let tmp52 = closure_7;
-            let result5 = uint8Array1.set(encodeUTF8Result1, arr2.length + encodeUTF8Result2.length + closure_7.length);
-            let tmp54 = closure_7;
-            let tmp55 = closure_7;
-            let result6 = uint8Array1.set(closure_7, arr2.length + encodeUTF8Result2.length + closure_7.length + encodeUTF8Result1.length);
+            let tmp50 = outer2_7;
+            let result4 = uint8Array1.set(outer2_7, arr2.length + encodeUTF8Result2.length);
+            let tmp52 = outer2_7;
+            let result5 = uint8Array1.set(encodeUTF8Result1, arr2.length + encodeUTF8Result2.length + outer2_7.length);
+            let tmp54 = outer2_7;
+            let tmp55 = outer2_7;
+            let result6 = uint8Array1.set(outer2_7, arr2.length + encodeUTF8Result2.length + outer2_7.length + encodeUTF8Result1.length);
             arr2 = uint8Array1;
-            // continue
+            continue;
           }
           obj = { hardCrashed: flag };
-          yield closure_6.captureEnvelope(callback(closure_1[7]).base64StringFromByteArray(arr2), obj);
-          const obj8 = callback(closure_1[7]);
+          yield outer2_6.captureEnvelope(callback(outer2_1[7]).base64StringFromByteArray(arr2), obj);
+          const obj8 = callback(outer2_1[7]);
         } else {
           throw self._NativeClientError;
         }
       } else {
-        const debug = callback(closure_1[5]).debug;
+        const debug = callback(outer2_1[5]).debug;
         debug.warn("Event was skipped as native SDK is not enabled.");
       }
     });
   },
   initNativeSdk(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     return fn(this, undefined, undefined, function*() {
       let androidProfilingOptions;
       let beforeBreadcrumb;
@@ -269,12 +277,12 @@ obj = {
       let integrations;
       let logsOrigin;
       const self = this;
-      const merged = Object.assign({ r: null, cx: null }, lib);
-      if (undefined !== lib.enableLogs) {
+      const merged = Object.assign({ enableNative: true, autoInitializeNativeSdk: true }, outer1_0);
+      if (undefined !== outer1_0.enableLogs) {
         let obj = {};
-        let enableLogs = lib.enableLogs;
+        let enableLogs = outer1_0.enableLogs;
         if (enableLogs) {
-          enableLogs = "js" !== lib.logsOrigin;
+          enableLogs = "js" !== outer1_0.logsOrigin;
         }
         obj.enableLogs = enableLogs;
       } else {
@@ -284,19 +292,21 @@ obj = {
       if (merged1.enableNative) {
         if (merged1.autoInitializeNativeSdk) {
           if (merged1.dsn) {
-            if (self._isModuleLoaded(closure_6)) {
+            if (self._isModuleLoaded(outer2_6)) {
               const ignoreErrors = merged1.ignoreErrors;
+              const outer1_1 = ignoreErrors;
               let found;
               if (null !== ignoreErrors) {
-                if (undefined !== ignoreErrors) {
-                  found = ignoreErrors.filter((arg0) => "string" === typeof arg0);
+                if (undefined !== outer1_1) {
+                  found = outer1_1.filter((arg0) => "string" === typeof arg0);
                 }
               }
               const ignoreErrors2 = merged1.ignoreErrors;
+              const outer1_2 = ignoreErrors2;
               let mapped;
               if (null !== ignoreErrors2) {
-                if (undefined !== ignoreErrors2) {
-                  const found1 = ignoreErrors2.filter((arg0) => arg0 instanceof RegExp);
+                if (undefined !== outer1_2) {
+                  const found1 = outer1_2.filter((arg0) => arg0 instanceof RegExp);
                   mapped = found1.map((source) => source.source);
                 }
               }
@@ -315,14 +325,14 @@ obj = {
                 merged1.ignoreErrorsRegex = mapped;
               }
               ({ beforeSend, beforeBreadcrumb, beforeSendTransaction, beforeSendMetric, integrations, ignoreErrors: ignoreErrors3, logsOrigin, androidProfilingOptions } = merged1);
-              const tmp25 = callback(merged1, []);
+              const tmp25 = outer2_5(merged1, ["beforeSend", "beforeBreadcrumb", "beforeSendTransaction", "beforeSendMetric", "integrations", "ignoreErrors", "logsOrigin", "androidProfilingOptions"]);
               if (androidProfilingOptions) {
                 const _Object = Object;
                 const _Object2 = Object;
                 obj = { androidProfilingOptions };
                 tmp25._experiments = Object.assign(Object.assign({}, tmp25._experiments), obj);
               }
-              const tmp27 = yield closure_6.initNativeSdk(tmp25);
+              const tmp27 = yield outer2_6.initNativeSdk(tmp25);
               self.nativeIsReady = tmp27;
               self.enableNative = true;
               return tmp27;
@@ -330,14 +340,14 @@ obj = {
               throw self._NativeClientError;
             }
           } else {
-            const debug3 = lib(ignoreErrors[5]).debug;
+            const debug3 = callback(outer2_1[5]).debug;
             debug3.warn("Warning: No DSN was provided. The Sentry SDK will be disabled. Native SDK will also not be initalized.");
             self.enableNative = false;
             return false;
           }
         } else {
           if (merged1.enableNativeNagger) {
-            const debug2 = lib(ignoreErrors[5]).debug;
+            const debug2 = callback(outer2_1[5]).debug;
             debug2.warn("Note: Native Sentry SDK was not initialized automatically, you will need to initialize it manually. If you wish to disable the native SDK and get rid of this warning, pass enableNative: false");
           }
           self.enableNative = true;
@@ -345,7 +355,7 @@ obj = {
         }
       } else {
         if (merged1.enableNativeNagger) {
-          const debug = lib(ignoreErrors[5]).debug;
+          const debug = callback(outer2_1[5]).debug;
           debug.warn("Note: Native Sentry SDK is disabled.");
         }
         self.enableNative = false;
@@ -359,8 +369,8 @@ obj = {
       if (obj) {
         return obj.resume();
       } else if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          return closure_6.fetchNativeLogAttributes();
+        if (self._isModuleLoaded(outer2_6)) {
+          return outer2_6.fetchNativeLogAttributes();
         } else {
           throw self._NativeClientError;
         }
@@ -375,8 +385,8 @@ obj = {
       if (obj) {
         return obj.resume();
       } else if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          return closure_6.fetchNativeRelease();
+        if (self._isModuleLoaded(outer2_6)) {
+          return outer2_6.fetchNativeRelease();
         } else {
           throw self._NativeClientError;
         }
@@ -391,8 +401,8 @@ obj = {
       if (obj) {
         return obj.resume();
       } else if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          return closure_6.fetchNativeSdkInfo();
+        if (self._isModuleLoaded(outer2_6)) {
+          return outer2_6.fetchNativeSdkInfo();
         } else {
           throw self._NativeClientError;
         }
@@ -407,8 +417,8 @@ obj = {
       if (obj) {
         return obj.resume();
       } else if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          return closure_6.fetchNativeDeviceContexts();
+        if (self._isModuleLoaded(outer2_6)) {
+          return outer2_6.fetchNativeDeviceContexts();
         } else {
           throw self._NativeClientError;
         }
@@ -423,15 +433,15 @@ obj = {
       if (obj) {
         return obj.resume();
       } else if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          let nativeAppStart = closure_6.fetchNativeAppStart();
+        if (self._isModuleLoaded(outer2_6)) {
+          let nativeAppStart = outer2_6.fetchNativeAppStart();
         } else {
-          const debug2 = callback(closure_1[5]).debug;
+          const debug2 = outer2_0(outer2_1[5]).debug;
           debug2.error(self._NativeClientError);
           nativeAppStart = null;
         }
       } else {
-        const debug = callback(closure_1[5]).debug;
+        const debug = outer2_0(outer2_1[5]).debug;
         debug.warn(self._DisabledNativeError);
         return null;
       }
@@ -443,8 +453,8 @@ obj = {
       if (obj) {
         return obj.resume();
       } else if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          return closure_6.fetchNativeFrames();
+        if (self._isModuleLoaded(outer2_6)) {
+          return outer2_6.fetchNativeFrames();
         } else {
           throw self._NativeClientError;
         }
@@ -478,8 +488,8 @@ obj = {
           ({ id, ip_address, email, username, geo } = arg0);
           const obj = { id, ip_address, email, username, geo };
           _serializeObjectResult = self._serializeObject(obj);
-          _serializeObjectResult1 = self._serializeObject(fn2(arg0, []));
-          const tmp5 = fn2(arg0, []);
+          _serializeObjectResult1 = self._serializeObject(fn2(arg0, ["id", "ip_address", "email", "username", "geo"]));
+          const tmp5 = fn2(arg0, ["id", "ip_address", "email", "username", "geo"]);
         }
         authStore.setUser(_serializeObjectResult, _serializeObjectResult1);
       } else {
@@ -512,7 +522,7 @@ obj = {
           return authStore.setExtra(arg0, "undefined");
         } else {
           const _JSON = JSON;
-          const json = JSON.stringify(arg1(dependencyMap[5]).normalize(arg1));
+          const json = JSON.stringify(require(794) /* registerSpanErrorInstrumentation */.normalize(arg1));
           while (true) {
             let tmp3 = json;
             if ("string" === typeof json) {
@@ -527,7 +537,7 @@ obj = {
             }
             return setExtraResult;
           }
-          const obj = arg1(dependencyMap[5]);
+          const obj = require(794) /* registerSpanErrorInstrumentation */;
         }
       } else {
         throw self._NativeClientError;
@@ -569,7 +579,7 @@ obj = {
         if (null === data) {
           return authStore.setContext(arg0, null);
         } else {
-          const result = data(dependencyMap[8]).convertToNormalizedObject(data);
+          const result = require(990) /* convertToNormalizedObject */.convertToNormalizedObject(data);
           while (true) {
             let tmp4 = result;
             let tmp5 = authStore;
@@ -584,7 +594,7 @@ obj = {
               let setContextResult1 = setContext(arg0, obj);
             }
           }
-          const obj2 = data(dependencyMap[8]);
+          const obj2 = require(990) /* convertToNormalizedObject */;
         }
       } else {
         throw self._NativeClientError;
@@ -597,8 +607,8 @@ obj = {
       if (obj) {
         return obj.resume();
       } else if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          return closure_6.closeNativeSdk().then(() => {
+        if (self._isModuleLoaded(outer2_6)) {
+          return outer2_6.closeNativeSdk().then(() => {
             self.enableNative = false;
           });
         }
@@ -632,8 +642,8 @@ obj = {
     return fn(this, undefined, undefined, function*() {
       const self = this;
       if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          const tmp11 = yield closure_6.captureScreenshot();
+        if (self._isModuleLoaded(outer2_6)) {
+          const tmp11 = yield outer2_6.captureScreenshot();
           while (true) {
             let tmp12 = tmp11;
             let mapped = null;
@@ -648,17 +658,17 @@ obj = {
                 obj.data = uint8Array;
                 return Object.assign(merged, obj);
               });
-              // break
+              break;
             }
             return mapped;
           }
         } else {
-          const debug2 = callback(closure_1[5]).debug;
+          const debug2 = outer2_0(outer2_1[5]).debug;
           debug2.error(self._NativeClientError);
           return null;
         }
       } else {
-        const debug = callback(closure_1[5]).debug;
+        const debug = outer2_0(outer2_1[5]).debug;
         debug.warn(self._DisabledNativeError);
         return null;
       }
@@ -668,8 +678,8 @@ obj = {
     return fn(this, undefined, undefined, function*() {
       const self = this;
       if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          const tmp3 = yield closure_6.fetchViewHierarchy();
+        if (self._isModuleLoaded(outer2_6)) {
+          const tmp3 = yield outer2_6.fetchViewHierarchy();
           let uint8Array = null;
           if (tmp3) {
             const _Uint8Array = Uint8Array;
@@ -690,7 +700,7 @@ obj = {
       if (self._isModuleLoaded(authStore)) {
         const startProfilingResult = authStore.startProfiling(arg0);
         const started = startProfilingResult.started;
-        const debug = arg1(dependencyMap[5]).debug;
+        const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
         if (started) {
           debug.log("[NATIVE] Start Profiling");
         } else {
@@ -716,7 +726,7 @@ obj = {
         if (profile) {
           if (!error) {
             if (!androidProfile) {
-              const debug = arg1(dependencyMap[5]).debug;
+              const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
               debug.warn("[NATIVE] Stop Profiling Failed: No Android Profile");
             }
             const obj = {};
@@ -727,7 +737,7 @@ obj = {
             return obj;
           }
         }
-        const debug2 = arg1(dependencyMap[5]).debug;
+        const debug2 = require(794) /* registerSpanErrorInstrumentation */.debug;
         debug2.error("[NATIVE] Stop Profiling Failed", error);
         return null;
       } else {
@@ -771,32 +781,32 @@ obj = {
       if (obj) {
         return obj.resume();
       } else if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          return closure_6.initNativeReactNavigationNewFrameTracking();
+        if (self._isModuleLoaded(outer2_6)) {
+          return outer2_6.initNativeReactNavigationNewFrameTracking();
         }
       }
     });
   },
-  captureReplay(arg0) {
-    const arg1 = arg0;
+  captureReplay(outer1_0) {
+    let closure_0 = outer1_0;
     return fn(this, undefined, undefined, function*() {
       const self = this;
       if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          const tmp15 = yield closure_6.captureReplay(closure_0);
+        if (self._isModuleLoaded(outer2_6)) {
+          const tmp15 = yield outer2_6.captureReplay(outer1_0);
           let tmp16 = tmp15;
           if (!tmp15) {
             tmp16 = null;
           }
           let resolved = tmp16;
         } else {
-          const debug2 = callback(closure_1[5]).debug;
+          const debug2 = callback(outer2_1[5]).debug;
           const _HermesInternal2 = HermesInternal;
           debug2.warn("[NATIVE] `" + self.captureReplay.name + "` is not available when native is not available.");
           resolved = Promise.resolve(null);
         }
       } else {
-        const debug = callback(closure_1[5]).debug;
+        const debug = callback(outer2_1[5]).debug;
         const _HermesInternal = HermesInternal;
         debug.warn("[NATIVE] `" + self.captureReplay.name + "` is not available when native is disabled.");
         return Promise.resolve(null);
@@ -810,13 +820,13 @@ obj = {
         let tmp11 = authStore.getCurrentReplayId() || null;
         const tmp13 = authStore.getCurrentReplayId() || null;
       } else {
-        const debug2 = arg1(dependencyMap[5]).debug;
+        const debug2 = require(794) /* registerSpanErrorInstrumentation */.debug;
         const _HermesInternal2 = HermesInternal;
         debug2.warn("[NATIVE] `" + self.getCurrentReplayId.name + "` is not available when native is not available.");
         tmp11 = null;
       }
     } else {
-      const debug = arg1(dependencyMap[5]).debug;
+      const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
       const _HermesInternal = HermesInternal;
       debug.warn("[NATIVE] `" + self.getCurrentReplayId.name + "` is not available when native is disabled.");
       return null;
@@ -826,8 +836,8 @@ obj = {
     return fn(this, undefined, undefined, function*() {
       const self = this;
       if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          const tmp5 = yield closure_6.crashedLastRun();
+        if (self._isModuleLoaded(outer2_6)) {
+          const tmp5 = yield outer2_6.crashedLastRun();
           let tmp6 = null;
           if ("boolean" === typeof tmp5) {
             tmp6 = tmp5;
@@ -852,12 +862,12 @@ obj = {
     newScreenTimeToDisplay = Promise.resolve(null);
   },
   getDataFromUri(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     return fn(this, undefined, undefined, function*() {
       const self = this;
       if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
-          const tmp4 = yield closure_6.getDataFromUri(closure_0);
+        if (self._isModuleLoaded(outer2_6)) {
+          const tmp4 = yield outer2_6.getDataFromUri(outer1_0);
           const _Uint8Array = Uint8Array;
           const uint8Array = new Uint8Array(tmp4);
           return uint8Array;
@@ -884,13 +894,13 @@ obj = {
     }
   },
   encodeToBase64(data) {
-    const arg1 = data;
+    let closure_0 = data;
     return fn(this, undefined, undefined, function*() {
       const self = this;
       if (self.enableNative) {
-        if (self._isModuleLoaded(closure_6)) {
+        if (self._isModuleLoaded(outer2_6)) {
           const _Array = Array;
-          const tmp5 = yield closure_6.encodeToBase64(Array.from(closure_0));
+          const tmp5 = yield outer2_6.encodeToBase64(Array.from(outer1_0));
           let tmp6 = tmp5;
           if (!tmp5) {
             tmp6 = null;
@@ -914,7 +924,7 @@ obj = {
       }
     }
     const _processLevelsResult = self._processLevels(tmp[1]);
-    let tmp4 = "android" === obj.platform;
+    let tmp4 = "android" === encodeUTF8.platform;
     if (tmp4) {
       tmp4 = "message" in _processLevelsResult;
     }
@@ -926,13 +936,12 @@ obj = {
     return items;
   },
   _serializeObject(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     const obj = {};
-    const dependencyMap = obj;
     const keys = Object.keys(arg0);
     const item = keys.forEach((arg0) => {
       let json = tmp;
-      if ("string" !== typeof arg0[arg0]) {
+      if ("string" !== typeof table[arg0]) {
         const _JSON = JSON;
         json = JSON.stringify(tmp);
       }
@@ -941,11 +950,11 @@ obj = {
     return obj;
   },
   _processLevels(level) {
-    const self = this;
-    const arg1 = this;
-    const obj = {};
+    let self = this;
+    self = this;
+    let obj = {};
     let _processLevelResult;
-    const merged = Object.assign({}, level);
+    let merged = Object.assign({}, level);
     if (level.level) {
       _processLevelResult = self._processLevel(level.level);
     }
@@ -983,23 +992,23 @@ obj = {
     this.primitiveProcessor = primitiveProcessor;
   }
 };
-const sentryError = new arg1(dependencyMap[5]).SentryError("Native is disabled");
-obj._DisabledNativeError = sentryError;
-const sentryError1 = new arg1(dependencyMap[5]).SentryError("Native Client is not available, can't start on native.");
-obj._NativeClientError = sentryError1;
-obj.enableNative = true;
-obj.nativeIsReady = false;
-obj.platform = "android";
+const sentryError = new require("registerSpanErrorInstrumentation").SentryError("Native is disabled");
+encodeUTF8._DisabledNativeError = sentryError;
+const sentryError1 = new require("registerSpanErrorInstrumentation").SentryError("Native Client is not available, can't start on native.");
+encodeUTF8._NativeClientError = sentryError1;
+encodeUTF8.enableNative = true;
+encodeUTF8.nativeIsReady = false;
+encodeUTF8.platform = "android";
 
 export { getRNSentryModule };
-export const NATIVE = obj;
+export const NATIVE = encodeUTF8;
 export const getDataFromUri = function getDataFromUri(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return fn(this, undefined, undefined, function*() {
     if (obj) {
       return obj.resume();
     } else {
-      return dataFromUri.getDataFromUri(closure_0);
+      return outer2_8.getDataFromUri(outer1_0);
     }
   });
 };

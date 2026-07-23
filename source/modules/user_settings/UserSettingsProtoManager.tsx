@@ -1,17 +1,21 @@
-// Module ID: 13272
-// Function ID: 100703
+// Module ID: 13386
+// Function ID: 102859
 // Name: handleConnectionOpen
-// Dependencies: []
+// Dependencies: [1316, 662, 1319, 13387, 13388, 686, 22, 1331, 2]
 
-// Module 13272 (handleConnectionOpen)
+// Module 13386 (handleConnectionOpen)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { UserSettingsTypes } from "MAX_FAVORITES";
+
+const require = arg1;
 function handleConnectionOpen() {
-  const fullState = fullState.getFullState();
-  const arg1 = fullState;
-  if (fullState[closure_4.PRELOADED_USER_SETTINGS].editInfo.triggeredMigrations) {
-    const PreloadedUserSettingsActionCreators = arg1(dependencyMap[7]).PreloadedUserSettingsActionCreators;
-    const result = PreloadedUserSettingsActionCreators.markDirtyFromMigration(tmp2.proto, tmp2.editInfo.cleanupFuncs);
+  fullState = fullState.getFullState();
+  if (fullState[UserSettingsTypes.PRELOADED_USER_SETTINGS].editInfo.triggeredMigrations) {
+    const PreloadedUserSettingsActionCreators = fullState(1331).PreloadedUserSettingsActionCreators;
+    let result = PreloadedUserSettingsActionCreators.markDirtyFromMigration(tmp2.proto, tmp2.editInfo.cleanupFuncs);
   }
-  const item = importDefault(dependencyMap[6]).forEach(arg1(dependencyMap[7]).UserSettingsActionCreatorsByType, (scheduleSaveFromOfflineEdit) => {
+  const item = importDefault(22).forEach(fullState(1331).UserSettingsActionCreatorsByType, (scheduleSaveFromOfflineEdit) => {
+    const tmp = fullState[Number(undefined, arg1)];
     if (tmp2) {
       const result = scheduleSaveFromOfflineEdit.scheduleSaveFromOfflineEdit();
     }
@@ -24,10 +28,10 @@ function handleUserSettingsProtoEnqueueUpdate(settings) {
   let type;
   ({ proto, type } = settings.settings);
   ({ delaySeconds, jitter } = settings);
-  arg1(dependencyMap[7]).UserSettingsActionCreatorsByType[type].markDirty(proto, { delaySeconds, jitter });
+  require(1331) /* _createForOfIteratorHelperLoose */.UserSettingsActionCreatorsByType[type].markDirty(proto, { delaySeconds, jitter });
 }
 function handleUserSettingsProtoLoadIfNecessary(arg0) {
-  const ifNecessary = arg1(dependencyMap[7]).UserSettingsActionCreatorsByType[arg0.settingsType].loadIfNecessary();
+  const ifNecessary = require(1331) /* _createForOfIteratorHelperLoose */.UserSettingsActionCreatorsByType[arg0.settingsType].loadIfNecessary();
 }
 function handleAppStateUpdate(state) {
   state = state.state;
@@ -36,32 +40,30 @@ function handleAppStateUpdate(state) {
     tmp = "background" !== state;
   }
   if (!tmp) {
-    function persistPendingChanges() {
-      const item = callback2(closure_2[6]).forEach(callback(closure_2[7]).UserSettingsActionCreatorsByType, (persistChanges) => {
-        const fullState = fullState.getFullState();
+    (function persistPendingChanges() {
+      const item = outer1_1(outer1_2[6]).forEach(outer1_0(outer1_2[7]).UserSettingsActionCreatorsByType, (persistChanges) => {
+        const fullState = outer2_3.getFullState();
         if (null != fullState[Number(undefined, arg1)].editInfo.timeout) {
           persistChanges.persistChanges();
         }
       });
-    }();
+    })();
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const UserSettingsTypes = arg1(dependencyMap[1]).UserSettingsTypes;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/UserSettingsProtoManager.tsx");
+let result = require("MAX_FAVORITES").fileFinishedImporting("modules/user_settings/UserSettingsProtoManager.tsx");
 
 export default {
   init() {
-    importDefault(dependencyMap[2])[UserSettingsTypes.PRELOADED_USER_SETTINGS] = importDefault(dependencyMap[3]);
-    const tmp = importDefault(dependencyMap[2]);
-    importDefault(dependencyMap[2])[UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS] = importDefault(dependencyMap[4]);
-    const tmp2 = importDefault(dependencyMap[2]);
-    const subscription = importDefault(dependencyMap[5]).subscribe("CONNECTION_OPEN", handleConnectionOpen);
-    const obj = importDefault(dependencyMap[5]);
-    const subscription1 = importDefault(dependencyMap[5]).subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", handleUserSettingsProtoEnqueueUpdate);
-    const obj2 = importDefault(dependencyMap[5]);
-    const subscription2 = importDefault(dependencyMap[5]).subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", handleUserSettingsProtoLoadIfNecessary);
-    const obj3 = importDefault(dependencyMap[5]);
-    const subscription3 = importDefault(dependencyMap[5]).subscribe("APP_STATE_UPDATE", handleAppStateUpdate);
+    importDefault(1319)[UserSettingsTypes.PRELOADED_USER_SETTINGS] = importDefault(13387);
+    const tmp = importDefault(1319);
+    importDefault(1319)[UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS] = importDefault(13388);
+    const tmp2 = importDefault(1319);
+    const subscription = importDefault(686).subscribe("CONNECTION_OPEN", handleConnectionOpen);
+    const obj = importDefault(686);
+    const subscription1 = importDefault(686).subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", handleUserSettingsProtoEnqueueUpdate);
+    const obj2 = importDefault(686);
+    const subscription2 = importDefault(686).subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", handleUserSettingsProtoLoadIfNecessary);
+    const obj3 = importDefault(686);
+    const subscription3 = importDefault(686).subscribe("APP_STATE_UPDATE", handleAppStateUpdate);
   }
 };

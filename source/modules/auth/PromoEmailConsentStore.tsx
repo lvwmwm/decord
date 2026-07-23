@@ -1,21 +1,21 @@
-// Module ID: 5588
-// Function ID: 47469
+// Module ID: 5591
+// Function ID: 47492
 // Name: setPromoEmailConsentState
-// Dependencies: []
+// Dependencies: [621, 682, 2]
 // Exports: setPromoEmailConsentChecked, setPromoEmailConsentState
 
-// Module 5588 (setPromoEmailConsentState)
-const _module = require(dependencyMap[0]);
-const obj = _module.create(() => ({ È: true, É: false, Ê: false }));
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/auth/PromoEmailConsentStore.tsx");
+// Module 5591 (setPromoEmailConsentState)
+import keys from "keys";
+
+const obj = keys.create(() => ({ required: false, checked: false, preChecked: false }));
+const result = require("set").fileFinishedImporting("modules/auth/PromoEmailConsentStore.tsx");
 
 export const setPromoEmailConsentState = function setPromoEmailConsentState(arg0) {
-  const require = arg0;
-  require(dependencyMap[1]).batchUpdates(() => state.setState(arg0));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_2.setState(closure_0));
 };
 export const setPromoEmailConsentChecked = function setPromoEmailConsentChecked(arg0) {
-  const require = arg0;
-  require(dependencyMap[1]).batchUpdates(() => state.setState({ checked: arg0 }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_2.setState({ checked: closure_0 }));
 };
 export const usePromoEmailConsentStore = obj;

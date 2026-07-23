@@ -1,17 +1,17 @@
-// Module ID: 16184
-// Function ID: 124871
+// Module ID: 16301
+// Function ID: 127044
 // Name: setRoleJustCreated
-// Dependencies: []
+// Dependencies: [621, 682, 2]
 // Exports: setRoleJustCreated
 
-// Module 16184 (setRoleJustCreated)
-const _module = require(dependencyMap[0]);
-const obj = _module.create(() => ({ roleJustCreated: false }));
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRolesManager.tsx");
+// Module 16301 (setRoleJustCreated)
+import keys from "keys";
+
+const obj = keys.create(() => ({ roleJustCreated: false }));
+const result = require("set").fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRolesManager.tsx");
 
 export const setRoleJustCreated = function setRoleJustCreated(arg0) {
-  const require = arg0;
-  require(dependencyMap[1]).batchUpdates(() => state.setState({ roleJustCreated: arg0 }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_2.setState({ roleJustCreated: closure_0 }));
 };
 export const useGuildSettingsRolesManagerState = obj;

@@ -1,80 +1,81 @@
-// Module ID: 10523
-// Function ID: 82197
+// Module ID: 10533
+// Function ID: 82247
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 4191, 566, 686, 2]
 
-// Module 10523 (_isNativeReflectConstruct)
+// Module 10533 (_isNativeReflectConstruct)
+import DesktopSources from "DesktopSources";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { NULL_STRING_GUILD_ID } from "ME";
+import { MediaEngineContextTypes } from "DesktopSources";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let DesktopSources = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return DesktopSources;
   }
   const result = _isNativeReflectConstruct();
 }
-function makeTimeoutKey(context, userId) {
-  return "" + context + ":" + userId;
+function makeTimeoutKey(mediaContext, userId) {
+  return "" + mediaContext + ":" + userId;
 }
 function clearUser(arg0, arg1) {
-  let tmp = arg1;
-  let tmp2 = arg2;
+  let tmp5 = arg1;
+  let tmp6 = arg2;
   if (arg2 === undefined) {
-    tmp2 = null;
+    tmp6 = null;
   }
-  if (null != closure_9[arg0]) {
-    let tmp4 = tmp;
-    if (null == tmp) {
-      tmp4 = NULL_STRING_GUILD_ID;
+  if (null != dependencyMap[arg0]) {
+    let tmp8 = tmp5;
+    if (null == tmp5) {
+      tmp8 = NULL_STRING_GUILD_ID;
     }
-    if (null != tmp3[tmp4]) {
+    if (null != tmp7[tmp8]) {
       const _Object = Object;
       const values = Object.values(MediaEngineContextTypes);
       for (let num = 0; num < values.length; num = num + 1) {
-        let tmp8 = values[num];
-        let tmp9 = tmp2 !== tmp8 && null != tmp2;
-        if (!tmp9) {
-          delete r2[r11];
-          let tmp10 = closure_10;
-          let tmp11 = makeTimeoutKey;
-          if (null != tmp2) {
-            tmp8 = tmp2;
+        let tmp12 = values[num];
+        let tmp13 = tmp6 !== tmp12 && null != tmp6;
+        if (!tmp13) {
+          delete tmp2[tmp4];
+          let tmp14 = closure_10;
+          let tmp15 = makeTimeoutKey;
+          if (null != tmp6) {
+            tmp12 = tmp6;
           }
-          let tmp11Result = tmp11(tmp8, arg0);
-          delete r10[r1];
+          let tmp15Result = tmp15(tmp12, arg0);
+          delete tmp3[tmp];
         }
       }
-      if (null == tmp) {
-        tmp = NULL_STRING_GUILD_ID;
+      if (null == tmp5) {
+        tmp5 = NULL_STRING_GUILD_ID;
       }
-      closure_9[arg0][tmp] = tmp5;
+      dependencyMap[arg0][tmp5] = tmp9;
     }
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const NULL_STRING_GUILD_ID = arg1(dependencyMap[5]).NULL_STRING_GUILD_ID;
-const MediaEngineContextTypes = arg1(dependencyMap[6]).MediaEngineContextTypes;
-let closure_7 = null;
-let closure_8 = null;
+let c7 = null;
+let c8 = null;
 let closure_9 = {};
 let closure_10 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class VideoStreamStore {
     constructor() {
       self = this;
       tmp = VideoStreamStore(this, VideoStreamStore);
-      obj = closure_3(VideoStreamStore);
-      tmp2 = closure_2;
-      if (closure_11()) {
+      obj = outer1_3(VideoStreamStore);
+      tmp2 = outer1_2;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -83,7 +84,6 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = VideoStreamStore;
   callback2(VideoStreamStore, Store);
   let obj = {
     key: "getStreamId",
@@ -91,12 +91,12 @@ let tmp2 = (Store) => {
       let tmp = arg1;
       let DEFAULT = arg2;
       if (arg2 === undefined) {
-        DEFAULT = constants.DEFAULT;
+        DEFAULT = outer1_6.DEFAULT;
       }
       let streamId;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         if (null == tmp) {
-          tmp = closure_5;
+          tmp = outer1_5;
         }
         if (null != tmp3[tmp]) {
           if (null != tmp5[DEFAULT]) {
@@ -114,12 +114,12 @@ let tmp2 = (Store) => {
       let tmp = arg1;
       let DEFAULT = arg2;
       if (arg2 === undefined) {
-        DEFAULT = constants.DEFAULT;
+        DEFAULT = outer1_6.DEFAULT;
       }
       let tmp4;
-      if (null != closure_9[arg0]) {
+      if (null != outer1_9[arg0]) {
         if (null == tmp) {
-          tmp = closure_5;
+          tmp = outer1_5;
         }
         if (null != tmp3[tmp]) {
           tmp4 = tmp5[DEFAULT];
@@ -132,20 +132,20 @@ let tmp2 = (Store) => {
   obj = {
     key: "getTimedoutVideos",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getTimedoutVideo",
     value(arg0, arg1) {
-      return closure_10[closure_12(undefined, arg0, arg1)];
+      return outer1_10[outer1_12(undefined, arg0, arg1)];
     }
   };
   return callback(VideoStreamStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "VideoStreamStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(user) {
     const id = user.user.id;
     const sessionId = user.sessionId;
@@ -161,14 +161,14 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     let userId;
     ({ userId, guildId, streamId, context } = arg0);
     if (null != streamId) {
-      if (!(userId in closure_9)) {
-        closure_9[userId] = {};
+      if (!(userId in dependencyMap)) {
+        dependencyMap[userId] = {};
       }
-      let tmp6 = guildId;
+      let tmp8 = guildId;
       if (null == guildId) {
-        tmp6 = NULL_STRING_GUILD_ID;
+        tmp8 = NULL_STRING_GUILD_ID;
       }
-      let obj = closure_9[userId][tmp6];
+      let obj = dependencyMap[userId][tmp8];
       if (null == obj) {
         obj = {};
       }
@@ -179,9 +179,9 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
       const merged = Object.assign(obj);
       obj = { streamId };
       obj[context] = obj;
-      closure_9[userId][guildId] = obj;
+      dependencyMap[userId][guildId] = obj;
       makeTimeoutKey(context, userId);
-      delete r1[r0];
+      delete tmp2[tmp];
     } else {
       clearUser(userId, guildId, context);
     }
@@ -194,27 +194,27 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
       let userId;
       ({ userId, channelId, guildId } = arg1);
       if (null == channelId) {
-        if (userId === closure_7) {
-          if (tmp !== closure_8) {
+        if (userId === outer1_7) {
+          if (tmp !== outer1_8) {
             return arg0;
           } else {
-            let closure_9 = {};
-            let closure_10 = {};
+            const outer1_9 = {};
+            const outer1_10 = {};
           }
         }
         return true;
       }
       if (null == channelId) {
         let tmp5;
-        if (null != closure_9[userId]) {
+        if (null != outer1_9[userId]) {
           let tmp6 = guildId;
           if (null == guildId) {
-            tmp6 = closure_5;
+            tmp6 = outer1_5;
           }
           tmp5 = tmp4[tmp6];
         }
         if (null != tmp5) {
-          callback(userId, guildId);
+          outer1_13(userId, guildId);
         }
       }
       return arg0;
@@ -230,13 +230,13 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     closure_10[makeTimeoutKey(mediaContext, userId)] = { videoStreamId, userId, streamKey, mediaContext };
   },
   CLEAR_VIDEO_STREAM_READY_TIMEOUT: function handleClearVideoStreamTimeout(arg0) {
-    if (null == closure_10[closure_12(undefined, arg0.mediaContext, arg0.userId)]) {
+    if (null == table[makeTimeoutKey(undefined, arg0.mediaContext, arg0.userId)]) {
       return false;
     } else {
-      delete r1[r2];
+      delete tmp[tmp2];
     }
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/VideoStreamStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/VideoStreamStore.tsx");
 
 export default tmp2;

@@ -1,14 +1,15 @@
-// Module ID: 12502
-// Function ID: 95818
+// Module ID: 12616
+// Function ID: 97974
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: useDebugExperiment
 
-// Module 12502 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: {}, variations: { [1]: {}, [2]: {} } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/experiments/apex/DebugExperiment.tsx");
+// Module 12616 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-03-debug-experiment", kind: "user", defaultConfig: {}, variations: { [1]: {}, [2]: {} } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/experiments/apex/DebugExperiment.tsx");
 
 export default apexExperiment;
 export const DebugExperiment = apexExperiment;

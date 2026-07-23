@@ -1,12 +1,11 @@
-// Module ID: 8645
-// Function ID: 68435
+// Module ID: 8652
+// Function ID: 68475
 // Name: showInvite
-// Dependencies: []
+// Dependencies: [8486, 686, 7460, 2]
 // Exports: clearDisplayedInvite, showInvite
 
-// Module 8645 (showInvite)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("actions/native/DisplayedInviteActionCreators.tsx");
+// Module 8652 (showInvite)
+const result = require("generateAcceptInviteOptions").fileFinishedImporting("actions/native/DisplayedInviteActionCreators.tsx");
 
 export const showInvite = function showInvite(inviteCode, username, arg2) {
   let _location;
@@ -17,12 +16,12 @@ export const showInvite = function showInvite(inviteCode, username, arg2) {
     obj = {};
   }
   ({ deeplinkAttemptId, fromDeeplink, location: _location } = obj);
-  require(dependencyMap[0]);
+  require(8486) /* _isNativeReflectConstruct */;
   obj = { type: "DISPLAYED_INVITE_SHOW", code: inviteCode, username, deeplinkAttemptId, fromDeeplink };
-  importDefault(dependencyMap[1]).dispatch(obj);
-  const obj2 = importDefault(dependencyMap[1]);
-  const invite = importDefault(dependencyMap[2]).resolveInvite(inviteCode, _location);
+  importDefault(686).dispatch(obj);
+  const obj2 = importDefault(686);
+  const invite = importDefault(7460).resolveInvite(inviteCode, _location);
 };
 export const clearDisplayedInvite = function clearDisplayedInvite() {
-  importDefault(dependencyMap[1]).dispatch({ type: "DISPLAYED_INVITE_CLEAR" });
+  importDefault(686).dispatch({ type: "DISPLAYED_INVITE_CLEAR" });
 };

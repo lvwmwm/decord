@@ -1,27 +1,29 @@
-// Module ID: 10310
-// Function ID: 79607
+// Module ID: 10323
+// Function ID: 79681
 // Name: _fetchBugReportConfig
-// Dependencies: []
+// Dependencies: [5, 1278, 653, 507, 1212, 10324, 477, 4942, 480, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 10310 (_fetchBugReportConfig)
+// Module 10323 (_fetchBugReportConfig)
+import _uploadDebugLogFiles from "_uploadDebugLogFiles";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function _fetchBugReportConfig() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchBugReportConfig = obj;
   return obj(...arguments);
 }
 function _submitReport() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _submitReport = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ DebugLogCategory: closure_5, Endpoints: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/bug_reporter/BugReportUtils.tsx");
+({ DebugLogCategory: closure_5, Endpoints: closure_6 } = ME);
+const result = require("ME").fileFinishedImporting("modules/bug_reporter/BugReportUtils.tsx");
 
 export const fetchBugReportConfig = function fetchBugReportConfig() {
   return _fetchBugReportConfig(...arguments);
@@ -51,34 +53,34 @@ export const getFeatureId = function getFeatureId(feature) {
 };
 export const getPriorities = function getPriorities() {
   let obj = {};
-  const intl = arg1(dependencyMap[4]).intl;
-  obj.title = intl.string(arg1(dependencyMap[4]).t.VwIij9);
-  const intl2 = arg1(dependencyMap[4]).intl;
-  obj.description = intl2.format(arg1(dependencyMap[4]).t.DOP8yY, {});
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.VwIij9);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl2.format(require(1212) /* getSystemLocale */.t.DOP8yY, {});
   obj.emoji = "801497159479722084";
   obj.value = 0;
   const items = [obj, , , ];
   obj = {};
-  const intl3 = arg1(dependencyMap[4]).intl;
-  obj.title = intl3.string(arg1(dependencyMap[4]).t.rYfJop);
-  const intl4 = arg1(dependencyMap[4]).intl;
-  obj.description = intl4.format(arg1(dependencyMap[4]).t.+LEfDL, {});
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl3.string(require(1212) /* getSystemLocale */.t.rYfJop);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl4.format(require(1212) /* getSystemLocale */.t["+LEfDL"], {});
   obj.emoji = "410336837563973632";
   obj.value = 1;
   items[1] = obj;
   obj = {};
-  const intl5 = arg1(dependencyMap[4]).intl;
-  obj.title = intl5.string(arg1(dependencyMap[4]).t.9LSuy3);
-  const intl6 = arg1(dependencyMap[4]).intl;
-  obj.description = intl6.format(arg1(dependencyMap[4]).t.nC7pvx, {});
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl5.string(require(1212) /* getSystemLocale */.t["9LSuy3"]);
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl6.format(require(1212) /* getSystemLocale */.t.nC7pvx, {});
   obj.emoji = "841420679643529296";
   obj.value = 2;
   items[2] = obj;
   const obj1 = {};
-  const intl7 = arg1(dependencyMap[4]).intl;
-  obj1.title = intl7.string(arg1(dependencyMap[4]).t.Ia0ska);
-  const intl8 = arg1(dependencyMap[4]).intl;
-  obj1.description = intl8.format(arg1(dependencyMap[4]).t.D4rbgX, {});
+  const intl7 = require(1212) /* getSystemLocale */.intl;
+  obj1.title = intl7.string(require(1212) /* getSystemLocale */.t.Ia0ska);
+  const intl8 = require(1212) /* getSystemLocale */.intl;
+  obj1.description = intl8.format(require(1212) /* getSystemLocale */.t.D4rbgX, {});
   obj1.emoji = "827645852352512021";
   obj1.value = 3;
   items[3] = obj1;

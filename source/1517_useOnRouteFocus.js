@@ -1,22 +1,21 @@
 // Module ID: 1517
-// Function ID: 17422
+// Function ID: 17423
 // Name: useOnRouteFocus
-// Dependencies: []
+// Dependencies: [31, 1478]
 // Exports: default
 
 // Module 1517 (useOnRouteFocus)
-let closure_2 = importAll(dependencyMap[0]);
+import result from "result";
+
 
 export default function useOnRouteFocus(router) {
   router = router.router;
-  const importDefault = router;
   const getState = router.getState;
-  const dependencyMap = getState;
-  const React = key;
+  const key = router.key;
   const setState = router.setState;
-  const onRouteFocus = React.useContext(importDefault(dependencyMap[1])).onRouteFocus;
-  const items = [getState, onRouteFocus, router, setState, router.key];
-  return React.useCallback((arg0) => {
+  const onRouteFocus = key.useContext(router(getState[1])).onRouteFocus;
+  const items = [getState, onRouteFocus, router, setState, key];
+  return key.useCallback((arg0) => {
     const tmp = getState();
     const stateForRouteFocus = router.getStateForRouteFocus(tmp, arg0);
     if (stateForRouteFocus !== tmp) {

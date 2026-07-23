@@ -1,13 +1,13 @@
-// Module ID: 6387
-// Function ID: 50513
+// Module ID: 6392
+// Function ID: 50542
 // Name: Orb3dIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6393, 2]
 // Exports: Orb3dIllustration
 
-// Module 6387 (Orb3dIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/Orb3dIllustration.native.tsx");
+// Module 6392 (Orb3dIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/Orb3dIllustration.native.tsx");
 
 export const Orb3dIllustration = function Orb3dIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const Orb3dIllustration = function Orb3dIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6393) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const Orb3dIllustration = function Orb3dIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

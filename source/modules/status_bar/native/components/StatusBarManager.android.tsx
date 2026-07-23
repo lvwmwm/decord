@@ -1,22 +1,22 @@
-// Module ID: 9751
-// Function ID: 75872
+// Module ID: 9758
+// Function ID: 75913
 // Name: StatusBarManager
-// Dependencies: []
+// Dependencies: [6, 7, 27, 22, 1569, 2]
 
-// Module 9751 (StatusBarManager)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const StatusBar = arg1(dependencyMap[2]).StatusBar;
-let tmp2 = () => {
+// Module 9758 (StatusBarManager)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import { StatusBar } from "get ActivityIndicator";
+
+let tmp2 = (() => {
   class StatusBarManager {
     constructor() {
-      tmp = closure_2(this, StatusBarManager);
+      tmp = outer1_2(this, StatusBarManager);
       this.propsStack = [];
       this.updateImmediate = null;
       return;
     }
   }
-  const importDefault = StatusBarManager;
   let obj = {
     key: "pushStackEntry",
     value(hidden) {
@@ -27,7 +27,7 @@ let tmp2 = () => {
       return obj;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "popStackEntry",
     value(arg0) {
@@ -66,20 +66,20 @@ let tmp2 = () => {
   items[3] = {
     key: "updatePropsStack",
     value() {
-      const StatusBarManager = this;
+      const self = this;
       clearImmediate(this.updateImmediate);
       this.updateImmediate = setImmediate(() => {
-        const items = [{}, ...closure_0.propsStack];
-        const applyResult = self(closure_1[3]).merge.apply(items);
-        barStyle.setBarStyle(applyResult.barStyle);
-        const tmp = self(closure_1[3]);
-        self(closure_1[4]).setStatusBarVisible(!applyResult.hidden);
+        const items = [{ hidden: false, barStyle: "default" }, ...self.propsStack];
+        const applyResult = StatusBarManager(outer2_1[3]).merge.apply(items);
+        outer2_4.setBarStyle(applyResult.barStyle);
+        const tmp = StatusBarManager(outer2_1[3]);
+        StatusBarManager(outer2_1[4]).setStatusBarVisible(!applyResult.hidden);
       });
     }
   };
   return callback(StatusBarManager, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/status_bar/native/components/StatusBarManager.android.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/status_bar/native/components/StatusBarManager.android.tsx");
 
 export default tmp2;

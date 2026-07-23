@@ -1,21 +1,22 @@
-// Module ID: 6806
-// Function ID: 53703
+// Module ID: 6811
+// Function ID: 53735
 // Name: FramesBannerBlockRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6806, 2]
 
-// Module 6806 (FramesBannerBlockRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 6811 (FramesBannerBlockRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class FramesBannerBlockRecord {
     constructor(arg0) {
-      tmp = closure_2(this, FramesBannerBlockRecord);
-      this.type = FramesBannerBlockRecord(closure_1[2]).ShopBlockType.FRAMES_BANNER;
+      tmp = outer1_2(this, FramesBannerBlockRecord);
+      this.type = FramesBannerBlockRecord(outer1_1[2]).ShopBlockType.FRAMES_BANNER;
       ({ title: this.title, body: this.body, mobile_background_image: this.mobileBackgroundImage, mobile_foreground_image: this.mobileForegroundImage, desktop_background_image: this.desktopBackgroundImage } = arg0);
       return;
     }
   }
-  const arg1 = FramesBannerBlockRecord;
   const items = [
     {
       key: "fromServer",
@@ -25,7 +26,7 @@ const tmp2 = () => {
     }
   ];
   return callback(FramesBannerBlockRecord, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/records/FramesBannerBlockRecord.tsx");
+})();
+const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/FramesBannerBlockRecord.tsx");
 
 export const FramesBannerBlockRecord = tmp2;

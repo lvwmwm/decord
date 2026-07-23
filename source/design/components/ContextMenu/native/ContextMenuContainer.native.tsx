@@ -1,39 +1,42 @@
-// Module ID: 12965
-// Function ID: 98638
+// Module ID: 13079
+// Function ID: 100794
 // Name: getItemKey
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 13080, 9303, 1571, 4477, 4524, 4476, 2]
 // Exports: ContextMenuContainer
 
-// Module 12965 (getItemKey)
+// Module 13079 (getItemKey)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let StyleSheet;
+let closure_4;
+let require = arg1;
 function getItemKey(key) {
   return key.key;
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ StyleSheet, View: closure_4 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = {};
+({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj["zIndex"] = 99999;
-obj.overlayView = obj;
-obj.wrapperView = StyleSheet.absoluteFillObject;
-let closure_6 = obj.createStyles(obj);
+_createForOfIteratorHelperLoose["zIndex"] = 99999;
+_createForOfIteratorHelperLoose.overlayView = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.wrapperView = StyleSheet.absoluteFillObject;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_7 = [];
 function EMPTY_CALLBACK() {
 
 }
 function renderItem(arg0, menu, transitionState, cleanUp) {
-  return jsx(menu(dependencyMap[4]).ContextMenuPopout, { menu, transitionState, cleanUp }, arg0);
+  return jsx(require(13080) /* ContextMenuDivider */.ContextMenuPopout, { menu, transitionState, cleanUp }, arg0);
 }
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/components/ContextMenu/native/ContextMenuContainer.native.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/ContextMenu/native/ContextMenuContainer.native.tsx");
 
 export const ContextMenuContainer = function ContextMenuContainer() {
-  const tmp = callback();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[5]);
+  let tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  let obj = require(callback[5]);
   const activeContextMenu = obj.useActiveContextMenu();
   if (null != activeContextMenu) {
     const items = [activeContextMenu];
@@ -48,19 +51,17 @@ export const ContextMenuContainer = function ContextMenuContainer() {
   if (null == requestClose) {
     requestClose = EMPTY_CALLBACK;
   }
-  const importDefault = requestClose;
   const effect = React.useEffect(() => {
     const KeyboardEvents = tmp(callback[6]).KeyboardEvents;
-    const tmp = KeyboardEvents.addListener("keyboardDidHide", tmp(callback[5]).hideContextMenu);
+    tmp = KeyboardEvents.addListener("keyboardDidHide", tmp(callback[5]).hideContextMenu);
     return () => {
       closure_0.remove();
     };
   }, []);
   const items1 = [requestClose];
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     requestClose(true);
   }, items1);
-  const dependencyMap = callback;
   const items2 = [callback, , ];
   ({ overlayView: arr3[1], wrapperView: arr3[2] } = tmp);
   const callback1 = React.useCallback((children) => {
@@ -71,12 +72,12 @@ export const ContextMenuContainer = function ContextMenuContainer() {
       str = "none";
     }
     obj.pointerEvents = str;
-    obj.style = callback.wrapperView;
+    obj.style = outer1_5.wrapperView;
     obj = { onDismiss: callback, children };
-    obj.children = callback(callback(callback[8]).Dialog, obj);
-    obj.children = callback(closure_4, obj);
-    return callback(requestClose(callback[7]), obj);
+    obj.children = outer1_5(outer1_5(callback[8]).Dialog, obj);
+    obj.children = outer1_5(outer1_4, obj);
+    return outer1_5(requestClose(callback[7]), obj);
   }, items2);
   obj = { wrapChildren: callback1, items: tmp3, renderItem, getItemKey };
-  return jsx(arg1(dependencyMap[9]).TransitionGroup, obj);
+  return jsx(require(callback[9]).TransitionGroup, { wrapChildren: callback1, items: tmp3, renderItem, getItemKey });
 };

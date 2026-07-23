@@ -1,18 +1,27 @@
-// Module ID: 10907
-// Function ID: 84751
+// Module ID: 10917
+// Function ID: 84800
 // Name: fetchJoinSecret
-// Dependencies: []
+// Dependencies: [5, 653, 4155, 668, 5689, 3827, 686, 507, 10482, 10483, 10522, 2]
 
-// Module 10907 (fetchJoinSecret)
+// Module 10917 (fetchJoinSecret)
+import module_3827 from "module_3827";
+import ME from "ME";
+import { ActivityIntent } from "items3";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function fetchJoinSecret(application) {
   let channelId;
   let messageId;
   let remotePartyId;
   let sessionId;
   let userId;
+  const _require = arg1;
   ({ channelId, messageId } = application);
   const id = application.application.id;
-  const importDefault = id;
   let tmp = null != channelId;
   ({ userId, sessionId, remotePartyId } = application);
   if (tmp) {
@@ -23,12 +32,12 @@ function fetchJoinSecret(application) {
     let obj = { channel_id: channelId, message_id: messageId, headless: true };
     tmp2 = obj;
   }
-  importDefault(dependencyMap[6]).dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId: id, remotePartyId });
-  const HTTP = arg1(dependencyMap[7]).HTTP;
-  obj = { accessibilityRole: "<string:1143341058>", apply: "<string:1783758850>", "Null": "<string:966328321>", "Null": "<string:1210843137>", "Null": "<string:3618963458>", url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), query: tmp2 };
+  id(686).dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId: id, remotePartyId });
+  const HTTP = _require(507).HTTP;
+  obj = { url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), retries: 3, query: tmp2, oldFormErrors: true, rejectWithError: true };
   const value = HTTP.get(obj);
-  return value.then((arg0) => arg1(arg0), () => {
-    let obj = id(closure_2[6]);
+  return value.then((arg0) => callback(arg0), () => {
+    let obj = id(outer1_2[6]);
     obj = { type: "ACTIVITY_JOIN_FAILED", applicationId: id };
     obj.dispatch(obj);
     return false;
@@ -36,12 +45,12 @@ function fetchJoinSecret(application) {
 }
 function joinWithSecret(str) {
   const combined = "" + str.replace(/\/+$/, "") + constants.GAME_INVITE_FRAGMENT + arg1;
-  importDefault(dependencyMap[5]).openURL(combined, constants2.SAFARI);
+  importDefault(3827).openURL(combined, constants2.SAFARI);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ Endpoints: closure_4, DiscordConnectDeeplinks: closure_5, WebBrowserType: closure_6, ActivityFlags: closure_7 } = arg1(dependencyMap[1]));
-const ActivityIntent = arg1(dependencyMap[2]).ActivityIntent;
-const obj = {
+({ Endpoints: closure_4, DiscordConnectDeeplinks: closure_5, WebBrowserType: closure_6, ActivityFlags: closure_7 } = ME);
+const result = require("items3").fileFinishedImporting("actions/GamesActionCreators.native.tsx");
+
+export default {
   addGame() {
 
   },
@@ -71,13 +80,9 @@ const obj = {
     return Promise.resolve();
   },
   join(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
   joinWithSecret
 };
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("actions/GamesActionCreators.native.tsx");
-
-export default obj;

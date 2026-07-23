@@ -1,12 +1,12 @@
-// Module ID: 15977
-// Function ID: 122547
+// Module ID: 16094
+// Function ID: 124720
 // Name: enforcing
-// Dependencies: []
+// Dependencies: [27, 2]
 
-// Module 15977 (enforcing)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+// Module 16094 (enforcing)
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 const enforcing = TurboModuleRegistry.getEnforcing("NativeJSWatchdogModule");
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeJSWatchdogModule.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeJSWatchdogModule.tsx");
 
 export default enforcing;

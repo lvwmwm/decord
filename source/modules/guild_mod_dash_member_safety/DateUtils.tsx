@@ -1,15 +1,15 @@
-// Module ID: 6725
-// Function ID: 52397
+// Module ID: 6730
+// Function ID: 52429
 // Name: getJoinedAtDateFormatter
-// Dependencies: []
+// Dependencies: [1212, 6731, 2]
 // Exports: formatDateRelativeTime, getJoinedAtTimestamp
 
-// Module 6725 (getJoinedAtDateFormatter)
+// Module 6730 (getJoinedAtDateFormatter)
 function getJoinedAtDateFormatter() {
-  return { seconds: require(dependencyMap[0]).t.FsBhl/, minutes: require(dependencyMap[0]).t.4d1mgT, hours: require(dependencyMap[0]).t.2wkczD, days: require(dependencyMap[0]).t.ocdS+f, months: require(dependencyMap[0]).t.az14+h, years: require(dependencyMap[0]).t.5Gk1ns };
+  return { seconds: require(1212) /* getSystemLocale */.t["FsBhl/"], minutes: require(1212) /* getSystemLocale */.t["4d1mgT"], hours: require(1212) /* getSystemLocale */.t["2wkczD"], days: require(1212) /* getSystemLocale */.t["ocdS+f"], months: require(1212) /* getSystemLocale */.t["az14+h"], years: require(1212) /* getSystemLocale */.t["5Gk1ns"] };
 }
 function getAccountAgeDateFormatter() {
-  return { hours: require(dependencyMap[0]).t.JZP2Rs, days: require(dependencyMap[0]).t.3moSHc, months: require(dependencyMap[0]).t.0Ddwr1, years: require(dependencyMap[0]).t.cR7lcs };
+  return { hours: require(1212) /* getSystemLocale */.t.JZP2Rs, days: require(1212) /* getSystemLocale */.t["3moSHc"], months: require(1212) /* getSystemLocale */.t["0Ddwr1"], years: require(1212) /* getSystemLocale */.t.cR7lcs };
 }
 function getMembersTableTimestampFormatter(arg0) {
   if (arg0 === obj.JOINED_AT) {
@@ -20,15 +20,14 @@ function getMembersTableTimestampFormatter(arg0) {
   return tmp2;
 }
 const obj = { JOINED_AT: 0, [0]: "JOINED_AT", ACCOUNT_AGE: 1, [1]: "ACCOUNT_AGE" };
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/guild_mod_dash_member_safety/DateUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/DateUtils.tsx");
 
-export const ACCOUNT_AGE_DATE_TOOLTIP_CONFIG = { 0: 0.00000000000000000000000000002524355432732662, 0: 0.00000000000000000010842024107846067, 0: 0.0000000004656613931258713, 9223372036854775807: 2.000000275671482, 9223372036854775807: 131072.06494140625 };
-export const MEMBER_JOIN_DATE_TOOLTIP_CONFIG = { 0: 0.00000000000000000000000000002524355432732662, 0: 0.00000000000000000010842024107846067, 0: 0.0000000004656613931258713, 9223372036854775807: 2.000000275671482, 9223372036854775807: 131072.06494140625 };
+export const ACCOUNT_AGE_DATE_TOOLTIP_CONFIG = { month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" };
+export const MEMBER_JOIN_DATE_TOOLTIP_CONFIG = { month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" };
 export const MembersTableDateFormats = obj;
 export { getMembersTableTimestampFormatter };
 export const formatDateRelativeTime = function formatDateRelativeTime(arg0, arg1) {
-  return importDefault(dependencyMap[1])(arg0, getMembersTableTimestampFormatter(arg1), false);
+  return importDefault(6731)(arg0, getMembersTableTimestampFormatter(arg1), false);
 };
 export const getJoinedAtTimestamp = function getJoinedAtTimestamp(joinedAt) {
   if (null != joinedAt) {

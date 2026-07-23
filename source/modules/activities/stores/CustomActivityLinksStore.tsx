@@ -1,38 +1,39 @@
-// Module ID: 12096
-// Function ID: 93285
+// Module ID: 12210
+// Function ID: 95436
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 12211, 566, 686, 2]
 
-// Module 12096 (_isNativeReflectConstruct)
+// Module 12210 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import CustomActivityLinkRecord from "CustomActivityLinkRecord";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
 let closure_6 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class CustomActivityLinksStore {
     constructor() {
       self = this;
       tmp = CustomActivityLinksStore(this, CustomActivityLinksStore);
-      obj = closure_3(CustomActivityLinksStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(CustomActivityLinksStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,36 +42,35 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = CustomActivityLinksStore;
   callback2(CustomActivityLinksStore, Store);
   const items = [
     {
       key: "getOne",
       value(arg0, arg1) {
-        if (null != closure_6[arg0]) {
-          return closure_6[arg0][arg1];
+        if (null != outer1_6[arg0]) {
+          return outer1_6[arg0][arg1];
         }
       }
     }
   ];
   return callback(CustomActivityLinksStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "CustomActivityLinksStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let applicationId;
     let link;
     ({ applicationId, link } = arg0);
-    if (null == closure_6[applicationId]) {
+    if (null == dependencyMap[applicationId]) {
       const _Object = Object;
-      closure_6[applicationId] = Object.create(null);
+      dependencyMap[applicationId] = Object.create(null);
     }
-    closure_6[applicationId][link.link_id] = new closure_5(link);
+    dependencyMap[applicationId][link.link_id] = new CustomActivityLinkRecord(link);
   },
   LOGOUT: function handleLogout() {
     let closure_6 = {};
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/activities/stores/CustomActivityLinksStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/activities/stores/CustomActivityLinksStore.tsx");
 
 export default tmp2;

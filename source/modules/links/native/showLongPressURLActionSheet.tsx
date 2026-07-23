@@ -1,33 +1,33 @@
-// Module ID: 9518
-// Function ID: 74081
+// Module ID: 9525
+// Function ID: 74122
 // Name: showLongPressURLActionSheet
-// Dependencies: []
+// Dependencies: [4099, 1212, 3830, 5492, 3827, 8332, 9526, 5497, 2]
 // Exports: default
 
-// Module 9518 (showLongPressURLActionSheet)
-const _module = require(dependencyMap[8]);
-const result = _module.fileFinishedImporting("modules/links/native/showLongPressURLActionSheet.tsx");
+// Module 9525 (showLongPressURLActionSheet)
+let result = require("presentAddedFriendToast").fileFinishedImporting("modules/links/native/showLongPressURLActionSheet.tsx");
 
 export default function showLongPressURLActionSheet(urlString) {
   let channelId;
+  let closure_3;
   let disableHapticFeedback;
-  const require = str;
-  ({ guildId: closure_1, channelId } = urlString);
-  const dependencyMap = channelId;
+  let importDefault;
+  const str = urlString.urlString;
+  ({ guildId: importDefault, channelId } = urlString);
   ({ messageId: closure_3, disableHapticFeedback } = urlString);
   if (disableHapticFeedback === undefined) {
     disableHapticFeedback = false;
   }
   let match;
   if (!disableHapticFeedback) {
-    let obj = require(dependencyMap[0]);
-    const result = obj.triggerHapticFeedback(require(dependencyMap[0]).HapticFeedbackTypes.IMPACT_LIGHT);
+    let obj = str(channelId[0]);
+    const result = obj.triggerHapticFeedback(str(channelId[0]).HapticFeedbackTypes.IMPACT_LIGHT);
   }
   const items = [];
   match = str.match(/^(tel|sms|mailto):([^?;]+)/);
   if (null != match) {
     obj = {};
-    const intl7 = require(dependencyMap[1]).intl;
+    const intl7 = str(channelId[1]).intl;
     if ("mailto" === match[1]) {
     } else {
     }
@@ -40,24 +40,24 @@ export default function showLongPressURLActionSheet(urlString) {
     items.push(obj);
     if ("tel" === match[1]) {
       obj = {};
-      const intl = require(dependencyMap[1]).intl;
-      obj.label = intl.string(require(dependencyMap[1]).t.+wbjMW);
+      const intl = str(channelId[1]).intl;
+      obj.label = intl.string(str(channelId[1]).t["+wbjMW"]);
       obj.onPress = function onPress() {
-        callback(channelId[4]).openURL(str.replace("tel:", "sms:"));
+        outer1_1(channelId[4]).openURL(str.replace("tel:", "sms:"));
       };
       items.push(obj);
     }
   }
   const obj1 = {};
-  const intl2 = require(dependencyMap[1]).intl;
-  obj1.label = intl2.string(require(dependencyMap[1]).t.wuRE8M);
+  const intl2 = str(channelId[1]).intl;
+  obj1.label = intl2.string(str(channelId[1]).t.wuRE8M);
   obj1.onPress = function onPress() {
-    callback(channelId[4]).openURL(str);
+    outer1_1(channelId[4]).openURL(str);
   };
   const items1 = [obj1, , ];
   const obj2 = {};
-  const intl3 = require(dependencyMap[1]).intl;
-  obj2.label = intl3.string(require(dependencyMap[1]).t.WqhZss);
+  const intl3 = str(channelId[1]).intl;
+  obj2.label = intl3.string(str(channelId[1]).t.WqhZss);
   obj2.onPress = function onPress() {
     str(channelId[2]).presentLinkCopied();
     const obj = str(channelId[2]);
@@ -65,8 +65,8 @@ export default function showLongPressURLActionSheet(urlString) {
   };
   items1[1] = obj2;
   const obj3 = {};
-  const intl4 = require(dependencyMap[1]).intl;
-  obj3.label = intl4.string(require(dependencyMap[1]).t.Ej3B3Y);
+  const intl4 = str(channelId[1]).intl;
+  obj3.label = intl4.string(str(channelId[1]).t.Ej3B3Y);
   obj3.onPress = function onPress() {
     let obj = str(channelId[5]);
     obj = { url: str };
@@ -75,19 +75,19 @@ export default function showLongPressURLActionSheet(urlString) {
   items1[HermesBuiltin.arraySpread(items, 2)] = obj3;
   if (null != channelId) {
     const obj4 = {};
-    const intl5 = require(dependencyMap[1]).intl;
-    obj4.label = intl5.string(require(dependencyMap[1]).t.aW2YlJ);
+    const intl5 = str(channelId[1]).intl;
+    obj4.label = intl5.string(str(channelId[1]).t.aW2YlJ);
     obj4.onPress = function onPress() {
-      callback(channelId[6])({ guildId: callback, channelId, messageId: closure_3, navigationSettings: { backgroundColor: null, borderColor: null } });
+      outer1_1(channelId[6])({ guildId: closure_1, channelId, messageId: closure_3, navigationSettings: { navigationReplace: true, safe: true } });
     };
     items1.unshift(obj4);
   }
-  let obj6 = require(dependencyMap[7]);
+  let obj6 = str(channelId[7]);
   const obj5 = { key: "LongPressUrl" };
   obj6 = {};
-  const intl6 = require(dependencyMap[1]).intl;
-  obj6.title = intl6.string(require(dependencyMap[1]).t.5oIOLX);
-  obj6.subtitle = urlString.urlString;
+  const intl6 = str(channelId[1]).intl;
+  obj6.title = intl6.string(str(channelId[1]).t["5oIOLX"]);
+  obj6.subtitle = str;
   obj5.header = obj6;
   obj5.options = items1;
   obj5.hasIcons = false;

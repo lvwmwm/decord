@@ -1,18 +1,20 @@
-// Module ID: 10783
-// Function ID: 83760
+// Module ID: 10793
+// Function ID: 83809
 // Name: ParticipantTitle
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 1273, 10776, 2]
 // Exports: default
 
-// Module 10783 (ParticipantTitle)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { fontSize: 14, color: importDefault(dependencyMap[3]).colors.WHITE };
-obj.usernameText = obj;
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/video_calls/native/components/ParticipantTitle.tsx");
+// Module 10793 (ParticipantTitle)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { fontSize: 14, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.usernameText = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/video_calls/native/components/ParticipantTitle.tsx");
 
 export default function ParticipantTitle(arg0) {
   let channel;
@@ -20,7 +22,7 @@ export default function ParticipantTitle(arg0) {
   let style;
   ({ channel, participant, style } = arg0);
   const obj = { style: items, numberOfLines: 1 };
-  const items = [callback().usernameText, style];
-  obj.children = importDefault(dependencyMap[5])(channel, participant);
-  return jsx(arg1(dependencyMap[4]).LegacyText, obj);
+  items = [_createForOfIteratorHelperLoose().usernameText, style];
+  obj.children = importDefault(10776)(channel, participant);
+  return jsx(require(1273) /* Button */.LegacyText, { style: items, numberOfLines: 1 });
 };

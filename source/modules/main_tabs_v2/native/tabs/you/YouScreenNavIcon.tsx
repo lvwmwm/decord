@@ -1,91 +1,96 @@
-// Module ID: 15365
-// Function ID: 117013
+// Module ID: 15482
+// Function ID: 119187
 // Name: str2
-// Dependencies: []
+// Dependencies: [31, 27, 33, 15473, 15132, 689, 7873, 4130, 1212, 8372, 4126, 2]
 
-// Module 15365 (str2)
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = arg1(dependencyMap[2]));
-let obj1 = arg1(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[2]);
-const ICON_SIZE = arg1(dependencyMap[4]).ICON_SIZE;
-const tmp4 = obj1.isYouNavFloating() ? ICON_SIZE.md : ICON_SIZE.sm;
-let obj2 = arg1(dependencyMap[3]);
+// Module 15482 (str2)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import isYouNavFloating from "isYouNavFloating";
+import { ICON_SIZE } from "getIconSize";
+import isYouNavFloating from "isYouNavFloating";
+import isYouNavFloating from "isYouNavFloating";
+import { colors } from "_createForOfIteratorHelperLoose";
+import isYouNavFloating from "isYouNavFloating";
+import isYouNavFloating from "isYouNavFloating";
+import isYouNavFloating from "isYouNavFloating";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import isYouNavFloating from "isYouNavFloating";
+import isYouNavFloating from "isYouNavFloating";
+import isYouNavFloating from "isYouNavFloating";
+import isYouNavFloating from "isYouNavFloating";
+import isYouNavFloating from "isYouNavFloating";
+
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = jsxProd);
+isYouNavFloating = isYouNavFloating.isYouNavFloating();
+const tmp4 = isYouNavFloating ? ICON_SIZE.md : ICON_SIZE.sm;
 let str = "sm";
-if (obj2.isYouNavFloating()) {
+if (isYouNavFloating.isYouNavFloating()) {
   str = "md";
 }
-const result = (importDefault(dependencyMap[5]).space.PX_32 - tmp4) / 2;
-let obj3 = arg1(dependencyMap[3]);
-const isYouNavFloatingResult = obj1.isYouNavFloating();
-const colors = importDefault(dependencyMap[5]).colors;
-let closure_8 = obj3.isYouNavFloating() ? colors.TEXT_DEFAULT : colors.WHITE;
-let obj4 = arg1(dependencyMap[3]);
+const result = (require("_createForOfIteratorHelperLoose").space.PX_32 - tmp4) / 2;
+isYouNavFloating = isYouNavFloating.isYouNavFloating();
+let closure_8 = isYouNavFloating ? colors.TEXT_DEFAULT : colors.WHITE;
 let str2 = "text-overlay-light";
-if (obj4.isYouNavFloating()) {
+if (isYouNavFloating.isYouNavFloating()) {
   str2 = "text-default";
 }
-let obj5 = arg1(dependencyMap[3]);
 let num = 6;
-if (obj5.isYouNavFloating()) {
+if (isYouNavFloating.isYouNavFloating()) {
   num = 8;
 }
-let obj6 = arg1(dependencyMap[3]);
 let num2 = 2;
-if (obj6.isYouNavFloating()) {
+if (isYouNavFloating.isYouNavFloating()) {
   num2 = 4;
 }
-let obj = { shape: arg1(dependencyMap[6]).CutoutShape.Circle, x: tmp4 - num - num2, y: -num2, size: num + 2 * num2 };
-const items = [obj];
-const isYouNavFloatingResult1 = obj3.isYouNavFloating();
+let obj = { shape: require("SolidCutout").CutoutShape.Circle, x: tmp4 - num - num2, y: -num2, size: num + 2 * num2 };
+let items = [obj];
 obj = {};
-obj1 = {};
-const obj9 = arg1(dependencyMap[7]);
+isYouNavFloating = {};
 let prop;
-if (!obj12.isYouNavFloating()) {
-  prop = importDefault(dependencyMap[5]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
+if (!isYouNavFloating.isYouNavFloating()) {
+  prop = require("_createForOfIteratorHelperLoose").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT;
 }
-obj1.backgroundColor = prop;
-obj1.borderRadius = importDefault(dependencyMap[5]).modules.button.BORDER_RADIUS;
-obj1.marginHorizontal = importDefault(dependencyMap[5]).space.PX_4;
-const obj12 = arg1(dependencyMap[3]);
+isYouNavFloating.backgroundColor = prop;
+isYouNavFloating.borderRadius = require("_createForOfIteratorHelperLoose").modules.button.BORDER_RADIUS;
+isYouNavFloating.marginHorizontal = require("_createForOfIteratorHelperLoose").space.PX_4;
 let str3 = "row";
-if (obj13.isYouNavFloating()) {
+if (isYouNavFloating.isYouNavFloating()) {
   str3 = "column";
 }
-obj1.flexDirection = str3;
-obj1.alignItems = "center";
-obj1.padding = result;
-const obj13 = arg1(dependencyMap[3]);
-obj1.overflow = "hidden";
-obj.container = obj1;
-obj2 = {};
-const obj14 = arg1(dependencyMap[3]);
+isYouNavFloating.flexDirection = str3;
+isYouNavFloating.alignItems = "center";
+isYouNavFloating.padding = result;
+isYouNavFloating.overflow = "hidden";
+obj.container = isYouNavFloating;
+isYouNavFloating = {};
 let PX_4;
-if (!obj16.isYouNavFloating()) {
-  PX_4 = importDefault(dependencyMap[5]).space.PX_4;
+if (!isYouNavFloating.isYouNavFloating()) {
+  PX_4 = require("_createForOfIteratorHelperLoose").space.PX_4;
 }
-obj2.marginLeft = PX_4;
-const obj16 = arg1(dependencyMap[3]);
+isYouNavFloating.marginLeft = PX_4;
 let PX_41;
-if (obj17.isYouNavFloating()) {
-  PX_41 = importDefault(dependencyMap[5]).space.PX_4;
+if (isYouNavFloating.isYouNavFloating()) {
+  PX_41 = require("_createForOfIteratorHelperLoose").space.PX_4;
 }
-obj2.marginTop = PX_41;
-obj.label = obj2;
-obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: importDefault(dependencyMap[5]).radii.round, height: num, width: num, position: "absolute", right: 0, top: 0 };
-obj.dot = obj3;
-obj4 = { position: "4344770a7977c211fcddc04a38055e0c", top: "channel_settings_grid_view_example_post", left: "png", width: true, zIndex: "/assets/images/native/forum_channels", backgroundColor: importDefault(dependencyMap[5]).colors.WHITE };
-const items1 = [{ rotate: "30deg" }];
-obj4.transform = items1;
-obj.nitroSlant = obj4;
-obj5 = { width: importDefault(dependencyMap[5]).space.PX_12, left: "75%" };
-obj.nitroSlantLarge = obj5;
-obj6 = { width: importDefault(dependencyMap[5]).space.PX_8, left: "45%" };
-obj.nitroSlantSmall = obj6;
-let closure_11 = obj9.createStyles(obj);
-const obj17 = arg1(dependencyMap[3]);
+isYouNavFloating.marginTop = PX_41;
+obj.label = isYouNavFloating;
+isYouNavFloating = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, height: num, width: num, position: "absolute", right: 0, top: 0 };
+obj.dot = isYouNavFloating;
+isYouNavFloating = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, transform: null, position: "absolute", height: "200%", opacity: 0.15 };
+let items1 = [{ rotate: "30deg" }];
+isYouNavFloating.transform = items1;
+obj.nitroSlant = isYouNavFloating;
+isYouNavFloating = { width: require("_createForOfIteratorHelperLoose").space.PX_12, left: "75%" };
+obj.nitroSlantLarge = isYouNavFloating;
+isYouNavFloating = { width: require("_createForOfIteratorHelperLoose").space.PX_8, left: "45%" };
+obj.nitroSlantSmall = isYouNavFloating;
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, ref) => {
   let IconComponent;
   let accessibilityLabel;
@@ -108,7 +113,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
   if (flag) {
     obj = {};
     obj = { cutouts: items, children: tmp2 };
-    const items = [callback(importDefault(dependencyMap[6]), obj), ];
+    items = [callback(importDefault(7873), obj), ];
     const obj1 = { style: tmp.dot };
     items[1] = callback(View, obj1);
     obj.children = items;
@@ -117,13 +122,13 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
   let tmp10;
   if (flag) {
     const obj2 = {};
-    const intl = ref(dependencyMap[8]).intl;
-    obj2.text = intl.string(ref(dependencyMap[8]).t.y2b7CA);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj2.text = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
     tmp10 = obj2;
   }
-  const obj3 = { ref, style: tmp.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp10, onPress, hitSlop: importDefault(dependencyMap[5]).space.PX_8 };
+  const obj3 = { ref, style: tmp.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp10, onPress, hitSlop: importDefault(689).space.PX_8 };
   if (showNitroSlant) {
-    let obj6 = ref(dependencyMap[3]);
+    let obj6 = require(15473) /* isYouNavFloating */;
     showNitroSlant = !obj6.isYouNavFloating();
   }
   if (showNitroSlant) {
@@ -144,7 +149,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
   const items4 = [showNitroSlant, tmp3, ];
   if (null != label) {
     const obj7 = { style: tmp.label };
-    let str = "text-sm/semibold";
+    str = "text-sm/semibold";
     if (obj13.isYouNavFloating()) {
       str = "text-xs/semibold";
     }
@@ -155,17 +160,17 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
       accessibilityLabel = label;
     }
     obj7.children = accessibilityLabel;
-    let tmp23Result = callback(ref(dependencyMap[10]).Text, obj7);
-    const obj13 = ref(dependencyMap[3]);
+    let tmp23Result = callback(require(4126) /* Text */.Text, obj7);
+    obj13 = require(15473) /* isYouNavFloating */;
     const tmp23 = callback;
   } else {
     tmp23Result = null;
-    const obj11 = ref(dependencyMap[3]);
+    const obj11 = require(15473) /* isYouNavFloating */;
   }
   items4[2] = tmp23Result;
   obj3.children = items4;
-  return callback2(ref(dependencyMap[9]).PressableScale, obj3);
+  return callback2(require(8372) /* TwinButtons */.PressableScale, obj3);
 }));
-const result1 = arg1(dependencyMap[11]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIcon.tsx");
+const result1 = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIcon.tsx");
 
 export default memoResult;

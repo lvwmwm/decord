@@ -1,33 +1,34 @@
-// Module ID: 13591
-// Function ID: 103017
+// Module ID: 13705
+// Function ID: 105173
 // Name: getBlockedSource
-// Dependencies: [0, 0, 4294967295, 4294967295, 4294967295]
+// Dependencies: [31, 27, 33, 7403, 13706, 13707, 13708, 3976, 2]
 // Exports: Blocked
 
-// Module 13591 (getBlockedSource)
-import "__exportStarResult1";
-import { Image } from "__exportStarResult1";
+// Module 13705 (getBlockedSource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
 
+const require = arg1;
 function getBlockedSource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useBlockedSource() {
-  return getBlockedSource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getBlockedSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/Blocked.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Blocked.tsx");
 
 export { getBlockedSource };
 export { useBlockedSource };
@@ -35,5 +36,5 @@ export const Blocked = function Blocked(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useBlockedSource();
-  return <Image {...obj} />;
+  return <Image />;
 };

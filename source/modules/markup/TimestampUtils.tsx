@@ -1,16 +1,16 @@
-// Module ID: 4583
-// Function ID: 40175
+// Module ID: 4587
+// Function ID: 40207
 // Name: formatTimestampMention
-// Dependencies: []
+// Dependencies: [3800, 3712, 664, 2]
 // Exports: parseTimestamp, unparseTimestamp
 
-// Module 4583 (formatTimestampMention)
+// Module 4587 (formatTimestampMention)
 function formatTimestampMention(arg0) {
   let format;
   let timestamp;
   ({ timestamp, format } = arg0);
-  const tmp = importDefault(dependencyMap[1]);
-  const tmpResult = tmp(Number(timestamp) * importDefault(dependencyMap[2]).Millis.SECOND);
+  const tmp = importDefault(3712);
+  const tmpResult = tmp(Number(timestamp) * importDefault(664).Millis.SECOND);
   if (tmpResult.isValid()) {
     let f;
     if (null != format) {
@@ -19,7 +19,7 @@ function formatTimestampMention(arg0) {
     if (null == f) {
       f = obj.f;
     }
-    const obj = { timestamp, format, parsed: tmpResult };
+    obj = { timestamp, format, parsed: tmpResult };
     obj.full = obj.F(tmpResult);
     obj.formatted = f(tmpResult);
     return obj;
@@ -28,54 +28,54 @@ function formatTimestampMention(arg0) {
   }
   const NumberResult = Number(timestamp);
 }
-const obj = {
+let obj = {
   t(date) {
-    return require(dependencyMap[0]).dateFormat(date, "LT");
+    return require(3800) /* resetCache */.dateFormat(date, "LT");
   },
   T(date) {
-    return require(dependencyMap[0]).dateFormat(date, "LTS");
+    return require(3800) /* resetCache */.dateFormat(date, "LTS");
   },
   d(date) {
-    return require(dependencyMap[0]).dateFormat(date, "L");
+    return require(3800) /* resetCache */.dateFormat(date, "L");
   },
   D(date) {
-    return require(dependencyMap[0]).dateFormat(date, "LL");
+    return require(3800) /* resetCache */.dateFormat(date, "LL");
   },
   f(date) {
-    return require(dependencyMap[0]).dateFormat(date, "LLL");
+    return require(3800) /* resetCache */.dateFormat(date, "LLL");
   },
   F(date) {
-    return require(dependencyMap[0]).dateFormat(date, "LLLL");
+    return require(3800) /* resetCache */.dateFormat(date, "LLLL");
   },
   s(date) {
-    return require(dependencyMap[0]).dateFormat(date, "L LT");
+    return require(3800) /* resetCache */.dateFormat(date, "L LT");
   },
   S(date) {
-    return require(dependencyMap[0]).dateFormat(date, "L LTS");
+    return require(3800) /* resetCache */.dateFormat(date, "L LTS");
   },
   R(toDate) {
-    const result = importDefault(dependencyMap[1]).relativeTimeThreshold("s");
-    const obj = importDefault(dependencyMap[1]);
-    const result1 = importDefault(dependencyMap[1]).relativeTimeThreshold("s", 60);
-    const obj2 = importDefault(dependencyMap[1]);
-    const result2 = importDefault(dependencyMap[1]).relativeTimeThreshold("ss");
-    const obj3 = importDefault(dependencyMap[1]);
-    const result3 = importDefault(dependencyMap[1]).relativeTimeThreshold("ss", -1);
-    const obj4 = importDefault(dependencyMap[1]);
-    const result4 = importDefault(dependencyMap[1]).relativeTimeThreshold("m");
-    const obj5 = importDefault(dependencyMap[1]);
-    const result5 = importDefault(dependencyMap[1]).relativeTimeThreshold("m", 60);
-    const obj6 = importDefault(dependencyMap[1]);
-    const tmp7 = importDefault(dependencyMap[1]);
-    const fromNowResult = importDefault(dependencyMap[1])(toDate.toDate()).fromNow();
+    const result = importDefault(3712).relativeTimeThreshold("s");
+    const obj = importDefault(3712);
+    const result1 = importDefault(3712).relativeTimeThreshold("s", 60);
+    const obj2 = importDefault(3712);
+    const result2 = importDefault(3712).relativeTimeThreshold("ss");
+    const obj3 = importDefault(3712);
+    const result3 = importDefault(3712).relativeTimeThreshold("ss", -1);
+    const obj4 = importDefault(3712);
+    const result4 = importDefault(3712).relativeTimeThreshold("m");
+    const obj5 = importDefault(3712);
+    const result5 = importDefault(3712).relativeTimeThreshold("m", 60);
+    const obj6 = importDefault(3712);
+    const tmp7 = importDefault(3712);
+    const fromNowResult = importDefault(3712)(toDate.toDate()).fromNow();
     while (true) {
       let tmp9 = importDefault;
       let tmp10 = dependencyMap;
-      let obj8 = importDefault(dependencyMap[1]);
+      let obj8 = importDefault(3712);
       let result6 = obj8.relativeTimeThreshold("s", result);
-      let obj9 = importDefault(dependencyMap[1]);
+      let obj9 = importDefault(3712);
       let result7 = obj9.relativeTimeThreshold("ss", result2);
-      let obj10 = importDefault(dependencyMap[1]);
+      let obj10 = importDefault(3712);
       let result8 = obj10.relativeTimeThreshold("m", result4);
       let tmp14 = fromNowResult;
       if (null != fromNowResult) {
@@ -84,7 +84,7 @@ const obj = {
         let tmp15 = importDefault;
         let tmp16 = dependencyMap;
         let tmp18 = toDate;
-        let tmp17 = importDefault(dependencyMap[1]);
+        let tmp17 = importDefault(3712);
         let tmp17Result = tmp17(toDate.toDate());
         fromNowResult1 = tmp17Result.fromNow();
       }
@@ -95,8 +95,7 @@ const obj = {
 Object.setPrototypeOf(obj, null);
 const keys = Object.keys(obj);
 const regExp = new RegExp("^<t:(-?\\d{1,17})(?::(" + keys.join("|") + "))?>");
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/markup/TimestampUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/markup/TimestampUtils.tsx");
 
 export const TIMESTAMP_FORMATS = obj;
 export const DEFAULT_TIMESTAMP_FORMAT = "f";

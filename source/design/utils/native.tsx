@@ -1,16 +1,15 @@
-// Module ID: 3834
-// Function ID: 31995
+// Module ID: 3836
+// Function ID: 32000
 // Name: getNodeText
-// Dependencies: []
+// Dependencies: [2, 3837, 3838, 3839, 3840]
 
-// Module 3834 (getNodeText)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("design/utils/native.tsx");
+// Module 3836 (getNodeText)
+const result = require("chainCallbacks").fileFinishedImporting("design/utils/native.tsx");
 
-export const getNodeText = require(dependencyMap[1]).getNodeText;
-export const chainCallbacks = require(dependencyMap[2]).chainCallbacks;
-export const mergeProps = require(dependencyMap[2]).mergeProps;
-export const mergeRefs = require(dependencyMap[2]).mergeRefs;
-export const useFocus = require(dependencyMap[3]).useFocus;
-export const isThemeLight = require(dependencyMap[4]).isThemeLight;
-export const isThemeDark = require(dependencyMap[4]).isThemeDark;
+export const getNodeText = require("getNodeText").getNodeText;
+export const chainCallbacks = require("chainCallbacks").chainCallbacks;
+export const mergeProps = require("chainCallbacks").mergeProps;
+export const mergeRefs = require("chainCallbacks").mergeRefs;
+export const useFocus = require("useFocus").useFocus;
+export const isThemeLight = require("isThemeLight").isThemeLight;
+export const isThemeDark = require("isThemeLight").isThemeDark;

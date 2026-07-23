@@ -1,16 +1,17 @@
 // Module ID: 1056
-// Function ID: 11309
+// Function ID: 11310
 // Name: httpContextIntegration
-// Dependencies: []
+// Dependencies: [794, 1004]
 
 // Module 1056 (httpContextIntegration)
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
 
-export const httpContextIntegration = _module.defineIntegration(() => ({
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const httpContextIntegration = registerSpanErrorInstrumentation.defineIntegration(() => ({
   name: "HttpContext",
   preprocessEvent(request) {
-    let obj = callback(closure_1[1]);
+    let obj = outer1_0(outer1_1[1]);
     const httpRequestData = obj.getHttpRequestData();
     request = request.request;
     let headers;

@@ -1,33 +1,32 @@
-// Module ID: 11228
-// Function ID: 87408
+// Module ID: 11238
+// Function ID: 87458
 // Name: useFetchDeveloperActivityShelfItems
-// Dependencies: []
+// Dependencies: [31, 7370, 10517, 3803, 566, 10486, 2]
 // Exports: useFetchDeveloperActivityShelfItems
 
-// Module 11228 (useFetchDeveloperActivityShelfItems)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const DevShelfFetchState = arg1(dependencyMap[1]).DevShelfFetchState;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activities/useFetchDeveloperActivityShelfItems.tsx");
+// Module 11238 (useFetchDeveloperActivityShelfItems)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { DevShelfFetchState } from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("isActivitiesAllowed").fileFinishedImporting("modules/activities/useFetchDeveloperActivityShelfItems.tsx");
 
 export const useFetchDeveloperActivityShelfItems = function useFetchDeveloperActivityShelfItems() {
-  const isActivitiesEnabledForCurrentPlatform = arg1(dependencyMap[2]).useIsActivitiesEnabledForCurrentPlatform();
-  const arg1 = isActivitiesEnabledForCurrentPlatform;
-  const DeveloperMode = arg1(dependencyMap[3]).DeveloperMode;
-  const setting = DeveloperMode.getSetting();
-  const dependencyMap = setting;
-  const obj = arg1(dependencyMap[2]);
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => fetchState.getFetchState(), []);
-  const React = stateFromStores;
+  isActivitiesEnabledForCurrentPlatform = isActivitiesEnabledForCurrentPlatform(setting[2]).useIsActivitiesEnabledForCurrentPlatform();
+  const DeveloperMode = isActivitiesEnabledForCurrentPlatform(setting[3]).DeveloperMode;
+  setting = DeveloperMode.getSetting();
+  let obj = isActivitiesEnabledForCurrentPlatform(setting[2]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = isActivitiesEnabledForCurrentPlatform(setting[4]).useStateFromStores(items, () => outer1_3.getFetchState(), []);
   const items1 = [isActivitiesEnabledForCurrentPlatform, stateFromStores, setting];
-  const effect = React.useEffect(() => {
+  const effect = stateFromStores.useEffect(() => {
     let tmp = isActivitiesEnabledForCurrentPlatform;
     if (isActivitiesEnabledForCurrentPlatform) {
       tmp = setting;
     }
     if (tmp) {
-      tmp = stateFromStores === constants.INITIALIZED;
+      tmp = stateFromStores === outer1_4.INITIALIZED;
     }
     if (tmp) {
       const developerApplications = isActivitiesEnabledForCurrentPlatform(setting[5]).fetchDeveloperApplications();

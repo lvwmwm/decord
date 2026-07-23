@@ -1,33 +1,32 @@
-// Module ID: 9179
-// Function ID: 71905
+// Module ID: 9186
+// Function ID: 71946
 // Name: getChangeEmailReasonDisplayText
-// Dependencies: [5, 653, 4939]
+// Dependencies: [9185, 1212, 2]
 // Exports: getChangeEmailReasonDisplayText
 
-// Module 9179 (getChangeEmailReasonDisplayText)
-import { ChangeEmailReasons } from "asyncGeneratorStep";
-import makeRequest from "makeRequest";
+// Module 9186 (getChangeEmailReasonDisplayText)
+import { ChangeEmailReasons } from "ChangeEmailReasons";
 
 let closure_2 = {
   [ChangeEmailReasons.DISCORD_EMPLOYEE_ASKED_ME_TO]: () => {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.naBTFO);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.naBTFO);
   },
   [ChangeEmailReasons.SOMEONE_ASKED_ME_TO]: () => {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.LQ0RUP);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.LQ0RUP);
   },
   [ChangeEmailReasons.NEW_EMAIL]: () => {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.oOqQjw);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.oOqQjw);
   },
   [ChangeEmailReasons.SOMETHING_ELSE]: () => {
-    const intl = require(dependencyMap[1]).intl;
-    return intl.string(require(dependencyMap[1]).t.p38n1b);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.p38n1b);
   }
 };
-const result = makeRequest.fileFinishedImporting("modules/verification/ChangeEmailUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/verification/ChangeEmailUtils.tsx");
 
 export const getChangeEmailReasonDisplayText = function getChangeEmailReasonDisplayText(value) {
-  return closure_2[value]();
+  return dependencyMap[value]();
 };

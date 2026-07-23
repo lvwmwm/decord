@@ -1,16 +1,17 @@
 // Module ID: 307
 // Function ID: 4733
 // Name: ChildListCollection
-// Dependencies: []
+// Dependencies: [6, 7, 44]
 
 // Module 307 (ChildListCollection)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export default () => {
+
+export default (() => {
   class ChildListCollection {
     constructor() {
-      tmp = closure_2(this, ChildListCollection);
+      tmp = outer1_2(this, ChildListCollection);
       map = new Map();
       this._cellKeyToChildren = map;
       map1 = new Map();
@@ -18,13 +19,12 @@ export default () => {
       return;
     }
   }
-  const importDefault = ChildListCollection;
   let obj = {
     key: "add",
     value: function add(arg0, arg1) {
       const self = this;
       const _childrenToCellKey = this._childrenToCellKey;
-      ChildListCollection(closure_1[2])(!_childrenToCellKey.has(arg0), "Trying to add already present child list");
+      ChildListCollection(outer1_1[2])(!_childrenToCellKey.has(arg0), "Trying to add already present child list");
       const _cellKeyToChildren = this._cellKeyToChildren;
       let set = _cellKeyToChildren.get(arg1);
       if (null == set) {
@@ -38,18 +38,18 @@ export default () => {
       const result1 = _childrenToCellKey2.set(arg0, arg1);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "remove",
     value: function remove(arg0) {
       const _childrenToCellKey = this._childrenToCellKey;
       let value = _childrenToCellKey.get(arg0);
-      ChildListCollection(closure_1[2])(null != value, "Trying to remove non-present child list");
+      ChildListCollection(outer1_1[2])(null != value, "Trying to remove non-present child list");
       const _childrenToCellKey2 = this._childrenToCellKey;
       _childrenToCellKey2.delete(arg0);
       const _cellKeyToChildren = this._cellKeyToChildren;
       value = _cellKeyToChildren.get(value);
-      ChildListCollection(closure_1[2])(value, "_cellKeyToChildren should contain cellKey");
+      ChildListCollection(outer1_1[2])(value, "_cellKeyToChildren should contain cellKey");
       value.delete(arg0);
       if (0 === value.size) {
         const _cellKeyToChildren2 = this._cellKeyToChildren;
@@ -68,22 +68,25 @@ export default () => {
         for (const item10012 of item10008) {
           let tmp3 = arg0;
           let tmp4 = arg0(item10012);
+          continue;
         }
+        continue;
       }
     }
   };
   items[2] = obj;
   items[3] = {
     key: "forEachInCell",
-    value: function forEachInCell(tmp2Result, arg1) {
+    value: function forEachInCell(closure_0, arg1) {
       const _cellKeyToChildren = this._cellKeyToChildren;
-      let items = _cellKeyToChildren.get(tmp2Result);
+      let items = _cellKeyToChildren.get(closure_0);
       if (null == items) {
         items = [];
       }
       for (const item10010 of items) {
         let tmp = arg1;
         let tmp2 = arg1(item10010);
+        continue;
       }
     }
   };
@@ -101,8 +104,6 @@ export default () => {
           obj.return();
           let flag = true;
           return true;
-        } else {
-          // continue
         }
       }
       return false;
@@ -115,4 +116,4 @@ export default () => {
     }
   };
   return callback(ChildListCollection, items);
-}();
+})();

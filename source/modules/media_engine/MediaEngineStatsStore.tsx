@@ -1,9 +1,18 @@
-// Module ID: 4211
-// Function ID: 36606
+// Module ID: 4215
+// Function ID: 36638
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 4216, 4194, 566, 686, 2]
 
-// Module 4211 (_isNativeReflectConstruct)
+// Module 4215 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import isStreamKey from "isStreamKey";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -99,7 +108,7 @@ function updateAveragedStatsHelper(minVersion, arg1, arg2, arr, arr2) {
   let tmp = arg2;
   const found = arr.find((type) => "video" === type.type);
   if (null == arg2) {
-    const obj = { minVersion };
+    const obj = { packetsSentOrReceived: 0, packetsLost: 0, packetLossRate: 0, frameRate: 0, resolution: 0, entropy: 0, numDatapoints: 0, frameRateAggregated: 0, resolutionAggregated: 0, entropyAggregated: 0, minVersion };
     tmp = obj;
   }
   if (null == found) {
@@ -248,73 +257,73 @@ function updateAveragedStatsHelper(minVersion, arg1, arg2, arr, arr2) {
     tmp.packetsLost = num3;
   }
 }
-function updateAveragedStats(arg0, arg1, version, version2) {
-  if (null == arg0[arg1]) {
-    arg0[arg1] = {};
+function updateAveragedStats(closure_10, prop, value, arr) {
+  if (null == closure_10[prop]) {
+    closure_10[prop] = {};
   }
-  const id = id.getId();
-  version = undefined;
-  if (null != version2) {
-    version = version2.version;
+  id = id.getId();
+  let version;
+  if (null != arr) {
+    version = arr.version;
   }
   let num = 0;
   if (null != version) {
     num = version;
   }
   let outbound;
-  if (null != version2) {
-    outbound = version2.stats.rtp.outbound;
+  if (null != arr) {
+    outbound = arr.stats.rtp.outbound;
   }
-  arg0[arg1][id] = updateAveragedStatsHelper(version.version, num, arg0[arg1][id], version.stats.rtp.outbound, outbound);
-  const keys = Object.keys(version.stats.rtp.inbound);
+  closure_10[prop][id] = updateAveragedStatsHelper(value.version, num, closure_10[prop][id], value.stats.rtp.outbound, outbound);
+  const keys = Object.keys(value.stats.rtp.inbound);
   for (let num2 = 0; num2 < keys.length; num2 = num2 + 1) {
     let tmp5 = keys[num2];
-    version = version.version;
+    version = value.version;
     let version1;
     let tmp6 = updateAveragedStatsHelper;
-    if (null != version2) {
-      version1 = version2.version;
+    if (null != arr) {
+      version1 = arr.version;
     }
     let num3 = 0;
     if (null != version1) {
       num3 = version1;
     }
-    let tmp8 = arg0[arg1][tmp5];
-    let tmp9 = version.stats.rtp.inbound[tmp5];
+    let tmp8 = closure_10[prop][tmp5];
+    let tmp9 = value.stats.rtp.inbound[tmp5];
     let tmp10;
-    if (null != version2) {
-      tmp10 = version2.stats.rtp.inbound[tmp5];
+    if (null != arr) {
+      tmp10 = arr.stats.rtp.inbound[tmp5];
     }
     let tmp11 = version;
     let tmp12 = num3;
     let tmp13 = tmp8;
     let tmp14 = tmp9;
     let tmp15 = tmp10;
-    arg0[arg1][tmp5] = tmp6(version, num3, tmp8, tmp9, tmp10);
+    closure_10[prop][tmp5] = tmp6(version, num3, tmp8, tmp9, tmp10);
   }
 }
 function resetAccumulatedStats(mediaEngineConnectionId, ownerId) {
-  let tmp2;
-  if (null != closure_10[mediaEngineConnectionId]) {
-    tmp2 = tmp[ownerId];
+  let tmp5;
+  if (null != dependencyMap2[mediaEngineConnectionId]) {
+    tmp5 = tmp4[ownerId];
   }
-  if (null != tmp2) {
-    delete r4[r2];
+  if (null != tmp5) {
+    delete tmp3[tmp2];
   }
-  let tmp6;
-  if (null != closure_11[mediaEngineConnectionId]) {
-    tmp6 = tmp5[ownerId];
+  let tmp9;
+  if (null != dependencyMap3[mediaEngineConnectionId]) {
+    tmp9 = tmp8[ownerId];
   }
-  if (null != tmp6) {
-    delete r1[r2];
+  if (null != tmp9) {
+    delete tmp[tmp2];
   }
 }
-function getStatsHistoryAtIndex(arg0, arg1) {
-  if (null == arg0) {
+function getStatsHistoryAtIndex(prop, arg1) {
+  if (null == prop) {
     return null;
   } else {
     let tmp2 = null;
-    if (null != closure_9[arg0]) {
+    if (null != dependencyMap[prop]) {
       tmp2 = null;
       if (arr.length > arg1) {
         tmp2 = arr[arr.length - arg1 - 1];
@@ -323,29 +332,22 @@ function getStatsHistoryAtIndex(arg0, arg1) {
     return tmp2;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
 let closure_9 = {};
 let closure_10 = {};
 let closure_11 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class MediaEngineStatsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, MediaEngineStatsStore);
-      obj = closure_5(MediaEngineStatsStore);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      tmp = outer1_2(this, MediaEngineStatsStore);
+      obj = outer1_5(MediaEngineStatsStore);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -354,26 +356,25 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = MediaEngineStatsStore;
   callback2(MediaEngineStatsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, closure_8);
+      this.waitFor(outer1_7, outer1_8);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "getConnectionStats",
     value(arg0) {
-      return callback4(arg0, 0);
+      return outer1_19(arg0, 0);
     }
   };
   items[1] = obj;
   obj = {
     key: "getLastConnectionStats",
     value(arg0) {
-      return callback4(arg0, 1);
+      return outer1_19(arg0, 1);
     }
   };
   items[2] = obj;
@@ -383,7 +384,7 @@ let tmp2 = (Store) => {
       if (null == arg0) {
         let items = [];
       } else {
-        items = closure_9[arg0];
+        items = outer1_9[arg0];
         if (null == items) {
           items = [];
         }
@@ -396,7 +397,7 @@ let tmp2 = (Store) => {
     value(arg0, arg1, arg2) {
       let tmp = null;
       if (null != arg0) {
-        const tmp3 = "long" === arg2 ? closure_10 : closure_11[arg0];
+        const tmp3 = "long" === arg2 ? outer1_10 : outer1_11[arg0];
         let tmp4;
         if (null != tmp3) {
           tmp4 = tmp3[arg1];
@@ -411,9 +412,9 @@ let tmp2 = (Store) => {
     }
   };
   return callback(MediaEngineStatsStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "MediaEngineStatsStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   MEDIA_ENGINE_CONNECTION_STATS: function handleMediaEngineConnectionStats(connectionStats) {
     let iter3;
     const tmp = _createForOfIteratorHelperLoose(connectionStats.connectionStats);
@@ -425,25 +426,25 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
         let prop = value.mediaEngineConnectionId;
         if (0 !== prop.length) {
           {}[prop] = value;
-          let tmp26 = closure_9;
-          if (!(prop in closure_9)) {
-            let tmp2 = closure_9;
-            closure_9[prop] = [];
+          let tmp26 = dependencyMap;
+          if (!(prop in dependencyMap)) {
+            let tmp2 = dependencyMap;
+            dependencyMap[prop] = [];
           }
-          let tmp3 = closure_9;
-          let arr2 = closure_9[prop];
+          let tmp3 = dependencyMap;
+          let arr2 = dependencyMap[prop];
           let arr = arr2.push(value);
-          let tmp5 = closure_9;
+          let tmp5 = dependencyMap;
           arr = undefined;
-          if (closure_9[prop].length > 30) {
-            let tmp7 = closure_9;
-            let arr3 = closure_9[prop];
+          if (dependencyMap[prop].length > 30) {
+            let tmp7 = dependencyMap;
+            let arr3 = dependencyMap[prop];
             arr = arr3.shift();
           }
           let tmp9 = closure_11;
-          let tmp10 = closure_19;
-          let tmp8 = closure_17;
-          let tmp11 = closure_19(prop, 15);
+          let tmp10 = getStatsHistoryAtIndex;
+          let tmp8 = updateAveragedStats;
+          let tmp11 = getStatsHistoryAtIndex(prop, 15);
           let tmp12;
           if (null != tmp11) {
             tmp12 = tmp11;
@@ -453,12 +454,12 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
           let tmp15 = value;
           let tmp16 = tmp12;
           let tmp8Result = tmp8(tmp9, prop, value, tmp12);
-          let tmp18 = closure_17;
+          let tmp18 = updateAveragedStats;
           let tmp19 = closure_10;
           let tmp20 = prop;
           let tmp21 = value;
           let tmp22 = arr;
-          let tmp23 = closure_17(closure_10, prop, value, arr);
+          let tmp23 = updateAveragedStats(closure_10, prop, value, arr);
           let tmp24 = tmp11;
           let tmp25 = arr;
         }
@@ -469,9 +470,9 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
   },
   MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET: function handleResetStats(mediaEngineConnectionId) {
     if (null != mediaEngineConnectionId.mediaEngineConnectionId) {
-      delete r2[r1];
-      delete r2[r1];
-      delete r0[r1];
+      delete tmp3[tmp2];
+      delete tmp3[tmp2];
+      delete tmp[tmp2];
     }
   },
   STREAM_UPDATE: function handleStreamUpdate(streamKey) {
@@ -479,7 +480,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     if (streamKey.paused) {
       return false;
     } else {
-      const rTCConnection = rTCConnection.getRTCConnection(streamKey);
+      rTCConnection = rTCConnection.getRTCConnection(streamKey);
       let mediaEngineConnectionId;
       if (null != rTCConnection) {
         mediaEngineConnectionId = rTCConnection.getMediaEngineConnectionId();
@@ -487,7 +488,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
       if (null == mediaEngineConnectionId) {
         return false;
       } else {
-        resetAccumulatedStats(mediaEngineConnectionId, arg1(dependencyMap[7]).decodeStreamKey(streamKey).ownerId);
+        resetAccumulatedStats(mediaEngineConnectionId, require(4194) /* isStreamKey */.decodeStreamKey(streamKey).ownerId);
       }
     }
   },
@@ -500,6 +501,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     }
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/media_engine/MediaEngineStatsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/media_engine/MediaEngineStatsStore.tsx");
 
 export default tmp2;

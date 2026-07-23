@@ -1,9 +1,26 @@
-// Module ID: 12057
-// Function ID: 93109
+// Module ID: 12171
+// Function ID: 95260
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 33, 4130, 689, 12172, 4533, 3842, 12186, 8511, 2]
 
-// Module 12057 (_callSuper)
+// Module 12171 (_callSuper)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import getActivityIndicator from "get ActivityIndicator";
+import module_8511 from "module_8511";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -15,7 +32,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_7(arg0, constructResult);
+  return module_8511(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -26,38 +43,28 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const importAllResult = importAll(dependencyMap[6]);
-({ View: closure_10, Image: closure_11, StyleSheet: closure_12 } = arg1(dependencyMap[7]));
-const tmp3 = arg1(dependencyMap[7]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[8]));
-let obj = arg1(dependencyMap[9]);
-obj = {};
-obj = { padding: importDefault(dependencyMap[10]).space.PX_8, borderRadius: importDefault(dependencyMap[10]).radii.xs };
-obj.qrCode = obj;
-obj.qrCodeContainer = {};
-obj.qrCodeOverlay = {};
-obj.size-40 = { "Null": "isArray", "Null": "c" };
-obj.size-60 = { "Null": -8364231971842388000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 13343173839891460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-let closure_15 = obj.createLegacyClassComponentStyles(obj);
-const obj1 = { SIZE_40: "SIZE_40", SIZE_60: "SIZE_60" };
+let closure_3 = ["style", "text", "blur", "accessibilityLabel"];
+({ View: closure_10, Image: closure_11, StyleSheet: closure_12 } = get_ActivityIndicator);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { display: "flex", alignSelf: "flex-start", padding: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+_createForOfIteratorHelperLoose.qrCode = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.qrCodeContainer = { display: "flex", alignSelf: "flex-start", alignItems: "center", justifyContent: "center", position: "relative" };
+_createForOfIteratorHelperLoose.qrCodeOverlay = { display: "flex", alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose["size-40"] = { width: 40, height: 40 };
+_createForOfIteratorHelperLoose["size-60"] = { width: 60, height: 60 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+let obj1 = { SIZE_40: "SIZE_40", SIZE_60: "SIZE_60" };
 const frozen = Object.freeze({ [obj1.SIZE_40]: "size-40", [obj1.SIZE_60]: "size-60" });
-const tmp6 = (PureComponent) => {
+let tmp6 = ((PureComponent) => {
   class QRCode {
     constructor() {
-      tmp = closure_5(this, QRCode);
-      return closure_19(this, QRCode, arguments);
+      tmp = outer1_5(this, QRCode);
+      return outer1_19(this, QRCode, arguments);
     }
   }
-  const arg1 = QRCode;
   callback3(QRCode, PureComponent);
-  const items = [
+  let items = [
     {
       key: "render",
       value() {
@@ -67,78 +74,77 @@ const tmp6 = (PureComponent) => {
         const props = this.props;
         const accessibilityLabel = props.accessibilityLabel;
         ({ style, text, blur } = props);
-        const tmp2 = callback2(props, closure_3);
+        const tmp2 = outer1_4(props, outer1_3);
         let obj = { accessible: null != accessibilityLabel, accessibilityRole: "image", accessibilityLabel, style: items };
         let tmp5 = null;
-        const items = [callback5(this.context).qrCode, { backgroundColor: tmp2.bgColor }, style];
+        items = [outer1_15(this.context).qrCode, { backgroundColor: tmp2.bgColor }, style];
         obj = { style: obj };
         obj = { position: "relative", width: tmp2.size, height: tmp2.size };
         const obj1 = { value: text, level: "M" };
-        const tmp = callback5(this.context);
-        const tmp3 = callback4;
-        const tmp6 = closure_14;
+        const tmp = outer1_15(this.context);
+        const tmp3 = outer1_13;
+        const tmp6 = outer1_14;
         const merged = Object.assign(tmp2);
-        const items1 = [callback4(callback(closure_2[11]), obj1), ];
+        const items1 = [outer1_13(outer1_1(outer1_2[11]), obj1), ];
         if (blur) {
-          const obj2 = { style: absoluteFill.absoluteFill, blurTheme: "dark" };
-          tmp5 = callback4(callback(closure_2[12]), obj2);
+          const obj2 = { style: outer1_12.absoluteFill, blurTheme: "dark" };
+          tmp5 = outer1_13(outer1_1(outer1_2[12]), obj2);
         }
         items1[1] = tmp5;
         obj.children = items1;
-        obj.children = tmp6(closure_10, obj);
-        return tmp3(closure_10, obj);
+        obj.children = tmp6(outer1_10, obj);
+        return tmp3(outer1_10, obj);
       }
     }
   ];
   return callback(QRCode, items);
-}(importAllResult.PureComponent);
-tmp6.contextType = arg1(dependencyMap[13]).ThemeContext;
-tmp6.defaultProps = {};
-const tmp7 = (PureComponent) => {
+})(importAllResult.PureComponent);
+let closure_18 = tmp6;
+tmp6.contextType = require("ManaContext").ThemeContext;
+tmp6.defaultProps = { size: 128, bgColor: "#ffffff", fgColor: "#000000" };
+let tmp7 = ((PureComponent) => {
   class QRCodeWithOverlay {
     constructor() {
-      tmp = closure_5(this, QRCodeWithOverlay);
-      return closure_19(this, QRCodeWithOverlay, arguments);
+      tmp = outer1_5(this, QRCodeWithOverlay);
+      return outer1_19(this, QRCodeWithOverlay, arguments);
     }
   }
-  const arg1 = QRCodeWithOverlay;
   callback3(QRCodeWithOverlay, PureComponent);
-  const items = [
+  let items = [
     {
       key: "render",
       value() {
-        const tmp = callback4(this.context);
+        const tmp = outer1_15(this.context);
         const props = this.props;
         let SIZE_40 = props.overlaySize;
         if (null == SIZE_40) {
-          SIZE_40 = SIZE_40.SIZE_40;
+          SIZE_40 = outer1_16.SIZE_40;
         }
         let obj = { style: tmp.qrCodeContainer };
         obj = {};
         const merged = Object.assign(this.props);
         obj["blur"] = false;
-        const items = [callback3(closure_18, obj), , ];
+        const items = [outer1_13(outer1_18, obj), , ];
         obj = { style: items1 };
-        const items1 = [tmp.qrCodeOverlay, closure_12.absoluteFill];
-        obj.children = callback3(closure_11, { style: tmp[closure_17[SIZE_40]], source: QRCodeWithOverlay(closure_2[14]) });
-        items[1] = callback3(closure_10, obj);
+        items1 = [tmp.qrCodeOverlay, outer1_12.absoluteFill];
+        obj.children = outer1_13(outer1_11, { style: tmp[outer1_17[SIZE_40]], source: QRCodeWithOverlay(outer1_2[14]) });
+        items[1] = outer1_13(outer1_10, obj);
         let tmp7 = null;
         if (props.blur) {
-          const obj2 = { style: closure_12.absoluteFill };
-          tmp7 = callback3(callback(closure_2[15]), obj2);
+          const obj2 = { style: outer1_12.absoluteFill };
+          tmp7 = outer1_13(outer1_1(outer1_2[15]), obj2);
         }
         items[2] = tmp7;
         obj.children = items;
-        return closure_14(closure_10, obj);
+        return outer1_14(outer1_10, obj);
       }
     }
   ];
   return callback(QRCodeWithOverlay, items);
-}(importAllResult.PureComponent);
-tmp7.contextType = arg1(dependencyMap[13]).ThemeContext;
-tmp7.defaultProps = {};
-const tmp4 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("components_native/QRCode.tsx");
+})(importAllResult.PureComponent);
+tmp7.contextType = require("ManaContext").ThemeContext;
+tmp7.defaultProps = { size: 144, bgColor: "#ffffff", fgColor: "#000000" };
+let result = require("_defineProperties").fileFinishedImporting("components_native/QRCode.tsx");
 
 export default tmp6;
 export const QRCodeOverlaySizes = obj1;

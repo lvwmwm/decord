@@ -1,16 +1,16 @@
-// Module ID: 15539
-// Function ID: 118612
+// Module ID: 15656
+// Function ID: 120785
 // Name: useSimpleGuildSize
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: default
 
-// Module 15539 (useSimpleGuildSize)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/launchpad/native/shared/useSimpleGuildSize.tsx");
+// Module 15656 (useSimpleGuildSize)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/useSimpleGuildSize.tsx");
 
 export default function useSimpleGuildSize(size) {
   size = size.size;
-  const React = size;
   const style = size.style;
   let num;
   let memo;
@@ -18,13 +18,13 @@ export default function useSimpleGuildSize(size) {
   if (null != size) {
     num = size;
   }
-  const items = [num];
-  memo = React.useMemo(() => ({ width: num, height: num }), items);
+  let items = [num];
+  memo = size.useMemo(() => ({ width: num, height: num }), items);
   const items1 = [style, size, memo];
-  const obj = {
+  let obj = {
     containerSize: num,
     containerSizeStyle: memo,
-    containerStyles: React.useMemo(() => {
+    containerStyles: size.useMemo(() => {
       const obj = { position: "relative" };
       let num = 0;
       if (null == size) {

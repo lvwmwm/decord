@@ -1,76 +1,84 @@
-// Module ID: 9606
-// Function ID: 74841
+// Module ID: 9613
+// Function ID: 74882
 // Name: generateListData
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4466, 1212, 4126, 4660, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 9606 (generateListData)
+// Module 9613 (generateListData)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2;
+let closure_3;
+let closure_4;
+let closure_5;
+let require = arg1;
 function generateListData(stickerPack) {
   const items = [];
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(4466) /* getStickerPackPreviewSticker */;
   if (obj.isStickerPackAnimated(stickerPack)) {
     obj = { key: "animated" };
-    const intl = arg1(dependencyMap[6]).intl;
-    obj.description = intl.string(arg1(dependencyMap[6]).t.W11rMa);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.description = intl.string(require(1212) /* getSystemLocale */.t.W11rMa);
     items.push(obj);
   }
   return items;
 }
-importAll(dependencyMap[0]);
-({ View: closure_2, FlatList: closure_3 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { location: null, hash: 1, Reflect: "row", type: "stretch", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.xs, shadowColor: importDefault(dependencyMap[4]).colors.BLACK, shadowOffset: { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" }, shadowOpacity: 0.25, shadowRadius: 5 };
-obj.informationContainer = obj;
-obj.headerContainer = {};
-obj.informationHeader = { lineHeight: 20 };
-obj.informationContentContainer = { flexDirection: "row" };
-obj.informationContent = { lineHeight: 20 };
-obj.informationContentDescription = { flexGrow: "Array", zIndex: "isArray" };
-let closure_6 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stickers/native/StickerPackInformationPopout.tsx");
+({ View: closure_2, FlatList: closure_3 } = get_ActivityIndicator);
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, width: "90%", marginHorizontal: "5%", padding: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, shadowColor: require("_createForOfIteratorHelperLoose").colors.BLACK, shadowOffset: { width: 2, height: 2 }, shadowOpacity: 0.25, shadowRadius: 5 };
+_createForOfIteratorHelperLoose.informationContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerContainer = { flexDirection: "row", justifyContent: "space-between", marginBottom: 8 };
+_createForOfIteratorHelperLoose.informationHeader = { lineHeight: 20 };
+_createForOfIteratorHelperLoose.informationContentContainer = { flexDirection: "row" };
+_createForOfIteratorHelperLoose.informationContent = { lineHeight: 20 };
+_createForOfIteratorHelperLoose.informationContentDescription = { flex: 1, marginLeft: 5 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/stickers/native/StickerPackInformationPopout.tsx");
 
 export default function StickerPackInformationPopout(stickerPack) {
   let onClose;
   let style;
   stickerPack = stickerPack.stickerPack;
   ({ onClose, style } = stickerPack);
-  const tmp = callback3();
-  const arg1 = tmp;
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
   let obj = { style: items };
-  const items = [tmp.informationContainer, style];
+  items = [tmp.informationContainer, style];
   obj = { style: tmp.headerContainer };
-  obj = { "Null": true, "Null": true, alignItems: true, style: tmp.informationHeader };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.children = intl.format(arg1(dependencyMap[6]).t.XDm6yN, { stickerPackName: stickerPack.name });
-  const items1 = [callback(arg1(dependencyMap[7]).Text, obj), ];
+  obj = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.format(require(1212) /* getSystemLocale */.t.XDm6yN, { stickerPackName: stickerPack.name });
+  let items1 = [callback(require(4126) /* Text */.Text, obj), ];
   const obj2 = { onPress: onClose, accessibilityRole: "button" };
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj2.accessibilityLabel = intl2.string(arg1(dependencyMap[6]).t.cpT0Cq);
-  const obj3 = {};
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj3.children = intl3.string(arg1(dependencyMap[6]).t.cpT0Cq);
-  obj2.children = callback(arg1(dependencyMap[7]).Text, obj3);
-  items1[1] = callback(arg1(dependencyMap[8]).PressableOpacity, obj2);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj2.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
+  const obj3 = { variant: "text-md/bold", color: "text-brand" };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj3.children = intl3.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
+  obj2.children = callback(require(4126) /* Text */.Text, obj3);
+  items1[1] = callback(require(4660) /* PressableBase */.PressableOpacity, obj2);
   obj.children = items1;
   const items2 = [callback2(closure_2, obj), ];
   const obj1 = { stickerPackName: stickerPack.name };
   const tmp2 = generateListData(stickerPack);
   items2[1] = callback(closure_3, {
     data: generateListData(stickerPack),
-    renderItem(children) {
+    renderItem(item) {
       let obj = { style: tmp.informationContentContainer };
-      obj = { style: tmp.informationContent };
-      const items = [callback(tmp(closure_1[7]).Text, obj), ];
-      obj = { style: items1, children: children.item.description };
+      obj = { style: tmp.informationContent, variant: "text-md/medium", color: "text-default", children: "\u2022" };
+      const items = [outer1_4(tmp(outer1_1[7]).Text, obj), ];
+      obj = { style: null, variant: "text-md/medium", color: "text-default" };
       const items1 = [, ];
       ({ informationContent: arr2[0], informationContentDescription: arr2[1] } = tmp);
-      items[1] = callback(tmp(closure_1[7]).Text, obj);
+      obj.style = items1;
+      obj.children = item.item.description;
+      items[1] = outer1_4(tmp(outer1_1[7]).Text, obj);
       obj.children = items;
-      return callback2(closure_2, obj);
+      return outer1_5(outer1_2, obj);
     }
   });
   obj.children = items2;

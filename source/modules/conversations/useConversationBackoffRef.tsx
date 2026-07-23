@@ -1,26 +1,31 @@
-// Module ID: 9265
-// Function ID: 72386
+// Module ID: 9272
+// Function ID: 72427
 // Name: useConversationBackoffRef
-// Dependencies: []
+// Dependencies: [31, 6833, 561, 2]
 // Exports: useConversationBackoffRef
 
-// Module 9265 (useConversationBackoffRef)
-let closure_2 = importAll(dependencyMap[0]);
-({ FETCH_BACKOFF_MAX_MS: closure_3, FETCH_BACKOFF_MIN_MS: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/conversations/useConversationBackoffRef.tsx");
+// Module 9272 (useConversationBackoffRef)
+import result from "result";
+import CONVERSATION_COLORS from "CONVERSATION_COLORS";
+
+let closure_3;
+let closure_4;
+({ FETCH_BACKOFF_MAX_MS: closure_3, FETCH_BACKOFF_MIN_MS: closure_4 } = CONVERSATION_COLORS);
+const result = require("Backoff").fileFinishedImporting("modules/conversations/useConversationBackoffRef.tsx");
 
 export const useConversationBackoffRef = function useConversationBackoffRef(items) {
   if (items === undefined) {
     items = [];
   }
-  let importDefault;
-  let tmp = importDefault(dependencyMap[2]);
+  let ref;
+  let tmp = ref(561);
   tmp = new tmp(closure_4, closure_3);
-  const ref = React.useRef(tmp);
-  importDefault = ref;
-  const effect = React.useEffect(() => () => {
-    current.succeed();
+  ref = React.useRef(tmp);
+  const effect = React.useEffect(() => {
+    current = current.current;
+    return () => {
+      current.succeed();
+    };
   }, items);
   return ref;
 };

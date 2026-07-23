@@ -1,70 +1,75 @@
-// Module ID: 12895
-// Function ID: 98449
+// Module ID: 13009
+// Function ID: 100605
 // Name: OverflowSquircle
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 2]
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 12895 (OverflowSquircle)
+// Module 13009 (OverflowSquircle)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function OverflowSquircle(arg0) {
   let overflow;
   let style;
   ({ overflow, style } = arg0);
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items };
-  const items = [tmp.overflowSquircleWrap, style];
+  items = [tmp.overflowSquircleWrap, style];
   obj = { style: tmp.overflowSquircle };
   obj = { variant: "text-xs/medium", children: "+" + overflow };
-  obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
-  obj.children = <View {...obj} />;
-  return <View {...obj} />;
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xs/medium", children: "+" + overflow });
+  obj.children = <View variant="text-xs/medium">{"+" + overflow}</View>;
+  return <View variant="text-xs/medium">{"+" + overflow}</View>;
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = { container: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, iconWrapper: { <string:3596066964>: null, <string:3638417373>: null } };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.md };
-obj.overflowSquircleWrap = obj;
-obj.overflowSquircle = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { numGuildMembers: "<string:3829596163>", numChannels: "<string:3841983414>", query: "<string:3875537846>", limit: "<string:1124074422>", _fuzzy: "\u043F\u043E\u0447\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 {{count}} \u0433\u043E\u0434", borderRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-obj.overflowTextOnly = obj2;
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-obj.overflowCircleWrap = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: 17 };
-const obj3 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: 17 };
-obj.overflowCircle = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-let closure_4 = obj.createStyles(obj);
-const obj4 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-const result = arg1(dependencyMap[6]).fileFinishedImporting("design/void/SummarizedIconRow/native/SummarizedIconRow.tsx");
+_createForOfIteratorHelperLoose = { container: { flexDirection: "row", alignItems: "center" }, iconWrapper: { alignItems: "center", justifyContent: "center" } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+_createForOfIteratorHelperLoose.overflowSquircleWrap = _createForOfIteratorHelperLoose;
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, margin: 3, paddingHorizontal: 8, height: 30, alignItems: "center", justifyContent: "center", borderRadius: 10 };
+_createForOfIteratorHelperLoose.overflowSquircle = obj1;
+let obj2 = { margin: 2, paddingHorizontal: 8, height: 32, alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.overflowTextOnly = obj2;
+_createForOfIteratorHelperLoose.overflowCircleWrap = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderRadius: 17 };
+const obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, margin: 2, paddingHorizontal: 8, height: 30, alignItems: "center", justifyContent: "center", borderRadius: 15 };
+_createForOfIteratorHelperLoose.overflowCircle = obj4;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderRadius: 17 };
+const result = require("jsxProd").fileFinishedImporting("design/void/SummarizedIconRow/native/SummarizedIconRow.tsx");
 
 export default function SummarizedIconRow(items) {
+  let OverflowSquircle;
+  let View;
+  let _createForOfIteratorHelperLoose;
+  let jsx;
   let overflowComponent;
   let style;
   items = items.items;
-  const arg1 = items;
   let num = items.max;
   if (num === undefined) {
     num = 8;
   }
-  const dependencyMap = num;
-  ({ renderItem: closure_2, offsetAmount: closure_3, iconWrapperStyle: closure_4, overflowStyle: closure_5, overflowComponent, style } = items);
+  ({ renderItem: View, offsetAmount: jsx, iconWrapperStyle: _createForOfIteratorHelperLoose, overflowStyle: OverflowSquircle, overflowComponent, style } = items);
   if (overflowComponent === undefined) {
     overflowComponent = OverflowSquircle;
   }
-  let tmp;
+  let c7;
   let closure_8;
-  tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
+  c7 = tmp;
   closure_8 = Math.max(items.length - num, 0);
-  const items1 = [tmp.container, style];
+  let items1 = [tmp.container, style];
   return <View style={items1}>{items.map((arg0, arg1) => {
     if (arg1 < num) {
       if (arg1 === num - 1) {
         if (closure_8 > 0) {
           let obj = {};
-          obj = { marginLeft: callback2 };
+          obj = { marginLeft: closure_3 };
           const items = [obj, closure_5];
           obj.style = items;
           obj.overflow = closure_8 + 1;
-          let tmp6 = callback2(overflowComponent, obj, arg1);
+          let tmp6 = outer1_3(overflowComponent, obj, arg1);
         }
         return tmp6;
       }
@@ -73,9 +78,9 @@ export default function SummarizedIconRow(items) {
       tmp6 = null;
       if (arg0) {
         obj = {};
-        const items1 = [tmp.iconWrapper, closure_4, ];
+        const items1 = [_undefined.iconWrapper, closure_4, ];
         if (0 !== arg1) {
-          const obj1 = { marginLeft: callback2 };
+          const obj1 = { marginLeft: closure_3 };
           let obj2 = obj1;
         } else {
           obj2 = {};
@@ -84,9 +89,9 @@ export default function SummarizedIconRow(items) {
         obj.style = items1;
         diff = callback(arg0, arg1 === diff);
         obj.children = diff;
-        callback2(callback, obj, arg1);
-        const tmp7 = callback2;
-        const tmp8 = callback;
+        outer1_3(outer1_2, obj, arg1);
+        const tmp7 = outer1_3;
+        const tmp8 = outer1_2;
       }
     }
   })}</View>;
@@ -96,33 +101,33 @@ export const OverflowText = function OverflowText(arg0) {
   let style;
   ({ overflow, style } = arg0);
   let obj = {};
-  const items = [callback().overflowTextOnly, style];
+  const items = [_createForOfIteratorHelperLoose().overflowTextOnly, style];
   obj.style = items;
   obj = { variant: "text-xs/medium", children: "+" + overflow };
-  obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
-  return <View {...obj} />;
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xs/medium", children: "+" + overflow });
+  return <View variant="text-xs/medium">{"+" + overflow}</View>;
 };
 export const OverflowTextSmall = function OverflowTextSmall(arg0) {
   let overflow;
   let style;
   ({ overflow, style } = arg0);
   let obj = {};
-  const items = [callback().overflowTextOnly, style];
+  const items = [_createForOfIteratorHelperLoose().overflowTextOnly, style];
   obj.style = items;
   obj = { variant: "text-xxs/medium", children: "+" + overflow };
-  obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
-  return <View {...obj} />;
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xxs/medium", children: "+" + overflow });
+  return <View variant="text-xxs/medium">{"+" + overflow}</View>;
 };
 export const OverflowCircle = function OverflowCircle(arg0) {
   let overflow;
   let style;
   ({ overflow, style } = arg0);
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items };
-  const items = [tmp.overflowCircleWrap, style];
+  items = [tmp.overflowCircleWrap, style];
   obj = { style: tmp.overflowCircle };
   obj = { variant: "text-xs/medium", children: "+" + overflow };
-  obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
-  obj.children = <View {...obj} />;
-  return <View {...obj} />;
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xs/medium", children: "+" + overflow });
+  obj.children = <View variant="text-xs/medium">{"+" + overflow}</View>;
+  return <View variant="text-xs/medium">{"+" + overflow}</View>;
 };

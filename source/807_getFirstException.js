@@ -1,9 +1,11 @@
 // Module ID: 807
-// Function ID: 9051
+// Function ID: 9052
 // Name: getFirstException
-// Dependencies: []
+// Dependencies: [798, 808, 809, 799]
 
 // Module 807 (getFirstException)
+const require = arg1;
+const dependencyMap = arg6;
 function getFirstException(exception) {
   exception = exception.exception;
   let first;
@@ -23,7 +25,7 @@ function _parseInt(replaced) {
   return parseInt(str, 10);
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let closure_3 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
+const re3 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
 arg5.addContextToFrame = function addContextToFrame(arr, lineno) {
   let num = 5;
   if (arguments.length > 2) {
@@ -38,18 +40,18 @@ arg5.addContextToFrame = function addContextToFrame(arr, lineno) {
     const bound = Math.max(Math.min(length - 1, lineno.lineno - 1), 0);
     const _Math4 = Math;
     const substr = arr.slice(Math.max(0, bound - num), bound);
-    lineno.pre_context = substr.map((arg0) => callback(closure_1[2]).snipLine(arg0, 0));
+    lineno.pre_context = substr.map((arg0) => outer1_0(outer1_1[2]).snipLine(arg0, 0));
     const _Math5 = Math;
     const bound1 = Math.min(length - 1, bound);
     let num2 = lineno.colno;
     if (!num2) {
       num2 = 0;
     }
-    lineno.context_line = lineno(arg6[2]).snipLine(arr[bound1], num2);
+    lineno.context_line = require(809) /* isMatchingPattern */.snipLine(arr[bound1], num2);
     const _Math = Math;
     const substr1 = arr.slice(Math.min(bound + 1, length), bound + 1 + num);
-    lineno.post_context = substr1.map((arg0) => callback(closure_1[2]).snipLine(arg0, 0));
-    const obj = lineno(arg6[2]);
+    lineno.post_context = substr1.map((arg0) => outer1_0(outer1_1[2]).snipLine(arg0, 0));
+    const obj = require(809) /* isMatchingPattern */;
   }
 };
 arg5.addExceptionMechanism = function addExceptionMechanism(arg0, data) {
@@ -58,7 +60,7 @@ arg5.addExceptionMechanism = function addExceptionMechanism(arg0, data) {
     const mechanism = tmp.mechanism;
     const _Object = Object;
     const _Object2 = Object;
-    tmp.mechanism = Object.assign({}, { -1604557429: 295321873, -564905130: -1101987839 }, mechanism, data);
+    tmp.mechanism = Object.assign({}, { type: "generic", handled: true }, mechanism, data);
     if (data) {
       if ("data" in data) {
         data = undefined;
@@ -98,10 +100,10 @@ arg5.checkOrSetAlreadyCaught = function checkOrSetAlreadyCaught(__sentry_capture
       let flag3 = true;
       return true;
     } else {
-      let tmp2 = arg1;
-      let tmp3 = arg6;
+      let tmp2 = require;
+      let tmp3 = dependencyMap;
       let num = 3;
-      let obj = arg1(arg6[3]);
+      let obj = require(799) /* addNonEnumerableProperty */;
       let tmp4 = __sentry_captured__;
       let str = "__sentry_captured__";
       let flag = true;
@@ -166,29 +168,28 @@ arg5.uuid4 = function uuid4() {
     if (undefined !== arguments[0]) {
       let first = arguments[0];
     }
-    const arg1 = first;
     if (null != first) {
       if (first.randomUUID) {
-        const obj = arg1(arg6[1]);
-        return arg1(arg6[1]).withRandomSafeContext(() => first.randomUUID()).replace(/-/g, "");
+        let obj = first(808);
+        return first(808).withRandomSafeContext(() => first.randomUUID()).replace(/-/g, "");
       }
     }
     while (true) {
-      let tmp7 = closure_2;
-      if (closure_2) {
+      let tmp7 = c2;
+      if (c2) {
         break;
       } else {
         let str3 = "10000000100040008000100000000000";
-        closure_2 = "10000000100040008000100000000000";
-        // break
+        c2 = "10000000100040008000100000000000";
+        break;
       }
-      let tmp8 = closure_2;
-      return closure_2.replace(/[018]/g, (arg0) => {
-        const obj = first(closure_1[1]);
-        return arg0 ^ (15 & 16 * first(closure_1[1]).safeMathRandom()) >> arg0 / 4.toString(16);
+      let tmp8 = c2;
+      return c2.replace(/[018]/g, (arg0) => {
+        const obj = first(outer1_1[1]);
+        return arg0 ^ (15 & 16 * first(outer1_1[1]).safeMathRandom()) >> arg0 / 4.toString(16);
       });
     }
   }
-  const GLOBAL_OBJ = arg1(arg6[0]).GLOBAL_OBJ;
+  const GLOBAL_OBJ = first(798).GLOBAL_OBJ;
   first = GLOBAL_OBJ.crypto || GLOBAL_OBJ.msCrypto;
 };

@@ -1,35 +1,32 @@
-// Module ID: 15529
-// Function ID: 118491
+// Module ID: 15646
+// Function ID: 120664
 // Name: useLaunchpadAnimatedStyles
-// Dependencies: []
+// Dependencies: [10451, 477, 4130, 15647, 14710, 1557, 3991, 4542, 2]
 // Exports: default
 
-// Module 15529 (useLaunchpadAnimatedStyles)
-const LAUNCH_PAD_SPRING_CONFIG = require(dependencyMap[0]).LAUNCH_PAD_SPRING_CONFIG;
-const _module = require(dependencyMap[1]);
-let closure_4 = _module.isAndroid();
-const _module1 = require(dependencyMap[2]);
-let closure_5 = _module1.createStyles({ launchPad: {}, launchPadCover: {} });
+// Module 15646 (useLaunchpadAnimatedStyles)
+import { LAUNCH_PAD_SPRING_CONFIG } from "LAUNCH_PAD_SPRING_CONFIG";
+import set from "set";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "_createForOfIteratorHelperLoose";
+
+set = set.isAndroid();
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ launchPad: { position: "absolute", top: 0, left: 0, width: "100%", zIndex: 1 }, launchPadCover: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: "#000" } });
 let closure_6 = { code: "function useLaunchPadAnimatedStylesNativeTsx1(){const{withSpring,interpolate,launchPadSharedState,windowDimensions,LAUNCH_PAD_SPRING_CONFIG,gestureState,launchPadShown,IS_ANDROID,height}=this.__closure;return{transform:[{translateX:withSpring(interpolate(launchPadSharedState.get(),[0,1],[windowDimensions.get().width-16,0]),LAUNCH_PAD_SPRING_CONFIG,'animate-always',function(finished){'worklet';if(!finished||gestureState.get().active)return;if(launchPadSharedState.get()===1||launchPadSharedState.get()===0){launchPadShown.set(launchPadSharedState.get()===1);}})}],bottom:IS_ANDROID?0:height.get()};}" };
 let closure_7 = { code: "function useLaunchPadAnimatedStylesNativeTsx2(finished){const{gestureState,launchPadSharedState,launchPadShown}=this.__closure;if(!finished||gestureState.get().active)return;if(launchPadSharedState.get()===1||launchPadSharedState.get()===0){launchPadShown.set(launchPadSharedState.get()===1);}}" };
 let closure_8 = { code: "function useLaunchPadAnimatedStylesNativeTsx3(){const{withSpring,interpolate,launchPadSharedState,LAUNCH_PAD_SPRING_CONFIG}=this.__closure;return{opacity:withSpring(interpolate(launchPadSharedState.get(),[0,1],[0,0.6]),LAUNCH_PAD_SPRING_CONFIG,'animate-always')};}" };
-const _module2 = require(dependencyMap[8]);
-const result = _module2.fileFinishedImporting("modules/launchpad/native/useLaunchPadAnimatedStyles.native.tsx");
+let result = set.fileFinishedImporting("modules/launchpad/native/useLaunchPadAnimatedStyles.native.tsx");
 
 export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
   launchPadSharedState = launchPadSharedState.launchPadSharedState;
-  const require = launchPadSharedState;
   const gestureState = launchPadSharedState.gestureState;
-  const importDefault = gestureState;
   const launchPadShown = launchPadSharedState.launchPadShown;
-  const dependencyMap = launchPadShown;
-  const tmp = callback();
-  const tmp2 = importDefault(dependencyMap[3])();
+  let tmp = callback();
+  const tmp2 = gestureState(launchPadShown[3])();
   const LAUNCH_PAD_SPRING_CONFIG = tmp2;
-  const tmp3 = importDefault(dependencyMap[4])();
-  let closure_4 = tmp3;
-  let obj = require(dependencyMap[6]);
-  const fn = function _() {
+  const tmp3 = gestureState(launchPadShown[4])();
+  let obj = launchPadSharedState(launchPadShown[6]);
+  let fn = function _() {
     let obj = {};
     obj = {};
     const obj3 = launchPadSharedState(launchPadShown[7]);
@@ -40,23 +37,23 @@ export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
     const fn = function h(arg0) {
       let tmp = arg0;
       if (arg0) {
-        tmp = !closure_1.get().active;
+        tmp = !outer1_1.get().active;
       }
       if (tmp) {
-        let tmp4 = 1 !== store.get();
+        let tmp4 = 1 !== outer1_0.get();
         if (tmp4) {
-          tmp4 = 0 !== store.get();
+          tmp4 = 0 !== outer1_0.get();
         }
         if (!tmp4) {
-          const result = closure_2.set(1 === store.get());
+          const result = outer1_2.set(1 === outer1_0.get());
         }
       }
     };
     obj = { gestureState, launchPadSharedState, launchPadShown };
     fn.__closure = obj;
     fn.__workletHash = 7028378249389;
-    fn.__initData = closure_7;
-    obj.translateX = obj3.withSpring(launchPadSharedState(launchPadShown[6]).interpolate(value, [77601039, 1612144654], items), tmp2, "animate-always", fn);
+    fn.__initData = outer1_7;
+    obj.translateX = obj3.withSpring(launchPadSharedState(launchPadShown[6]).interpolate(value, [0, 1], items), tmp2, "animate-always", fn);
     const items1 = [obj];
     obj.transform = items1;
     if (!tmp3) {
@@ -65,7 +62,7 @@ export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
     obj.bottom = num;
     return obj;
   };
-  obj = { withSpring: require(dependencyMap[7]).withSpring, interpolate: require(dependencyMap[6]).interpolate, launchPadSharedState, windowDimensions: tmp3, LAUNCH_PAD_SPRING_CONFIG, gestureState, launchPadShown, IS_ANDROID: closure_4, height: tmp2 };
+  obj = { withSpring: launchPadSharedState(launchPadShown[7]).withSpring, interpolate: launchPadSharedState(launchPadShown[6]).interpolate, launchPadSharedState, windowDimensions: tmp3, LAUNCH_PAD_SPRING_CONFIG, gestureState, launchPadShown, IS_ANDROID: tmp3, height: tmp2 };
   fn.__closure = obj;
   fn.__workletHash = 1628632614770;
   fn.__initData = closure_6;
@@ -75,18 +72,18 @@ export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
       obj = {};
       obj2 = launchPadSharedState(launchPadShown[7]);
       obj3 = launchPadSharedState(launchPadShown[6]);
-      obj.opacity = obj2.withSpring(obj3.interpolate(launchPadSharedState.get(), [77601039, 1612144654], [true, true]), closure_3, "animate-always");
+      obj.opacity = obj2.withSpring(obj3.interpolate(launchPadSharedState.get(), [0, 1], [0, 0.6]), outer1_3, "animate-always");
       return obj;
     }
   }
-  obj = { withSpring: require(dependencyMap[7]).withSpring, interpolate: require(dependencyMap[6]).interpolate, launchPadSharedState, LAUNCH_PAD_SPRING_CONFIG };
+  obj = { withSpring: launchPadSharedState(launchPadShown[7]).withSpring, interpolate: launchPadSharedState(launchPadShown[6]).interpolate, launchPadSharedState, LAUNCH_PAD_SPRING_CONFIG };
   P.__closure = obj;
   P.__workletHash = 6964438968188;
   P.__initData = closure_8;
   const obj1 = {};
-  const items = [tmp.launchPadCover, require(dependencyMap[6]).useAnimatedStyle(P)];
+  let items = [tmp.launchPadCover, launchPadSharedState(launchPadShown[6]).useAnimatedStyle(P)];
   obj1.launchPadCoverStyles = items;
-  const items1 = [tmp.launchPad, animatedStyle, { paddingTop: importDefault(dependencyMap[5])().top }];
+  let items1 = [tmp.launchPad, animatedStyle, { paddingTop: gestureState(launchPadShown[5])().top }];
   obj1.launchPadStyles = items1;
   return obj1;
 };

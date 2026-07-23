@@ -1,49 +1,53 @@
-// Module ID: 11402
-// Function ID: 88728
-// Dependencies: []
+// Module ID: 11412
+// Function ID: 88778
+// Dependencies: [31, 27, 1849, 33, 4130, 689, 477, 1324, 1327, 8822, 8425, 4660, 1212, 11413, 11254, 4126, 3843, 2]
 
-// Module 11402
+// Module 11412
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "_isNativeReflectConstruct";
+
+const require = arg1;
 let num = 0;
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj1 = arg1(dependencyMap[4]);
 let obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_16, paddingBottom: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.searchBarContainer = obj;
-obj1 = { marginLeft: importDefault(dependencyMap[5]).space.PX_12 };
-if (obj6.isAndroid()) {
+_createForOfIteratorHelperLoose = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_12 };
+if (set.isAndroid()) {
   num = 2;
 }
-obj1.marginBottom = num;
-obj.header = obj1;
-const obj6 = arg1(dependencyMap[6]);
-obj.showSearchButton = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
-const obj2 = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
-obj.searchBar = { borderRadius: importDefault(dependencyMap[5]).radii.md };
-let closure_7 = obj1.createStyles(obj);
-const obj3 = { borderRadius: importDefault(dependencyMap[5]).radii.md };
-const memoResult = importAllResult.memo(function NewMessagesTagListInput(forceSearchResults) {
+_createForOfIteratorHelperLoose.marginBottom = num;
+obj.header = _createForOfIteratorHelperLoose;
+obj.showSearchButton = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+let obj2 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+obj.searchBar = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj3 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NewMessagesTagListInput.tsx");
+
+export default importAllResult.memo(function NewMessagesTagListInput(forceSearchResults) {
   let autoFocus;
   let hasQuery;
   let onChangeText;
   let onFocus;
   let onForceSearchResults;
+  let require;
   let selectedUserIds;
   let tagListInputRef;
-  ({ onSelectUser: closure_0, selectedUserIds } = forceSearchResults);
-  const importDefault = selectedUserIds;
+  ({ onSelectUser: require, selectedUserIds } = forceSearchResults);
   ({ autoFocus, onChangeText, onFocus, hasQuery, onForceSearchResults, tagListInputRef } = forceSearchResults);
   const tmp = callback();
-  let obj = arg1(dependencyMap[7]);
+  let obj = require(memo[7]);
   const items = [selectedUserIds];
-  const memo = importAllResult.useMemo(() => {
-    const mapped = null != selectedUserIds ? selectedUserIds : [].map(user.getUser);
-    const found = mapped.filter(callback(memo[8]).isNotNullish);
+  memo = importAllResult.useMemo(() => {
+    const mapped = null != selectedUserIds ? selectedUserIds : [].map(outer1_5.getUser);
+    const found = mapped.filter(outer1_0(memo[8]).isNotNullish);
     return found.map(selectedUserIds(memo[9]));
   }, items);
-  const dependencyMap = memo;
   obj = { style: tmp.searchBarContainer };
   obj = {};
   let searchBar;
@@ -58,18 +62,18 @@ const memoResult = importAllResult.memo(function NewMessagesTagListInput(forceSe
     tmp6 = null;
     if (memo.length > 0) {
       const obj1 = { accessibilityRole: "button" };
-      const intl = arg1(dependencyMap[12]).intl;
+      let intl = require(memo[12]).intl;
       const string = intl.string;
-      const t = arg1(dependencyMap[12]).t;
+      const t = require(memo[12]).t;
       if (forceSearchResults) {
-        let stringResult = string(t.4wv+DE);
+        let stringResult = string(t["4wv+DE"]);
       } else {
         stringResult = string(t.fTcQm2);
       }
       obj1.accessibilityLabel = stringResult;
       obj1.onPress = onForceSearchResults;
       obj1.style = tmp.showSearchButton;
-      let str2 = arg1;
+      let str2 = require;
       if (forceSearchResults) {
         let CirclePlusIcon = str2(tmp14[13]).ChevronLargeRightIcon;
       } else {
@@ -78,36 +82,33 @@ const memoResult = importAllResult.memo(function NewMessagesTagListInput(forceSe
       const obj2 = {};
       str2 = "xs";
       obj2.size = "xs";
-      obj1.children = <CirclePlusIcon {...obj2} />;
-      jsx(arg1(dependencyMap[11]).PressableOpacity, obj1);
+      obj1.children = <CirclePlusIcon />;
+      jsx(require(memo[11]).PressableOpacity, { accessibilityRole: "button" });
       const tmp13 = jsx;
       const tmp7 = jsx;
     }
   }
   obj.footer = tmp6;
-  const obj3 = { style: tmp.header };
-  const intl2 = arg1(dependencyMap[12]).intl;
-  obj3.children = intl2.string(arg1(dependencyMap[12]).t.kHyiXs);
-  obj.icon = jsx(arg1(dependencyMap[15]).Text, obj3);
+  const obj3 = { style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false };
+  const intl2 = require(memo[12]).intl;
+  obj3.children = intl2.string(require(memo[12]).t.kHyiXs);
+  obj.icon = jsx(require(memo[15]).Text, { style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false });
   obj.onChangeText = onChangeText;
   obj.onFocus = onFocus;
   obj.onRemove = function onRemove(arg0) {
-    const user = user.getUser(tmp.id);
+    const user = outer1_5.getUser(tmp.id);
     if (null != user) {
       callback(user);
-      const AccessibilityAnnouncer = callback(memo[16]).AccessibilityAnnouncer;
-      const intl = callback(memo[12]).intl;
+      const AccessibilityAnnouncer = outer1_0(memo[16]).AccessibilityAnnouncer;
+      const intl = outer1_0(memo[12]).intl;
       const obj = { text: tmp.text };
-      AccessibilityAnnouncer.announce(intl.formatToPlainString(callback(memo[12]).t.srlxB8, obj));
+      AccessibilityAnnouncer.announce(intl.formatToPlainString(outer1_0(memo[12]).t.srlxB8, obj));
     }
   };
-  const intl3 = arg1(dependencyMap[12]).intl;
-  obj.placeholder = intl3.string(arg1(dependencyMap[12]).t.CaEER6);
+  const intl3 = require(memo[12]).intl;
+  obj.placeholder = intl3.string(require(memo[12]).t.CaEER6);
   obj.tags = memo;
   obj.ref = tagListInputRef;
-  obj.children = jsx(importDefault(dependencyMap[10]), obj);
-  return <View {...obj} />;
+  obj.children = jsx(selectedUserIds(memo[10]), {});
+  return <View />;
 });
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NewMessagesTagListInput.tsx");
-
-export default memoResult;

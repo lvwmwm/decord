@@ -1,47 +1,48 @@
-// Module ID: 8201
-// Function ID: 64863
+// Module ID: 8207
+// Function ID: 64900
 // Name: ItemsSortingHat
-// Dependencies: []
+// Dependencies: [6, 7, 31, 1876, 1212, 2]
 // Exports: getBundleItemNames, useShopProductItems
 
-// Module 8201 (ItemsSortingHat)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-const tmp2 = () => {
+// Module 8207 (ItemsSortingHat)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import result from "result";
+
+const require = arg1;
+const tmp2 = (() => {
   class ItemsSortingHat {
     constructor(arg0) {
-      tmp = closure_2(this, ItemsSortingHat);
+      tmp = outer1_2(this, ItemsSortingHat);
       this.itemsByTypes = this.sortByTypes(arg0);
       return;
     }
   }
-  const arg1 = ItemsSortingHat;
   let obj = {
     key: "firstAvatarDecoration",
     get() {
-      return this.getFirstItemByType(ItemsSortingHat(closure_1[3]).CollectiblesItemType.AVATAR_DECORATION);
+      return this.getFirstItemByType(ItemsSortingHat(outer1_1[3]).CollectiblesItemType.AVATAR_DECORATION);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "firstProfileEffect",
     get() {
-      return this.getFirstItemByType(ItemsSortingHat(closure_1[3]).CollectiblesItemType.PROFILE_EFFECT);
+      return this.getFirstItemByType(ItemsSortingHat(outer1_1[3]).CollectiblesItemType.PROFILE_EFFECT);
     }
   };
   items[1] = obj;
   obj = {
     key: "firstNameplate",
     get() {
-      return this.getFirstItemByType(ItemsSortingHat(closure_1[3]).CollectiblesItemType.NAMEPLATE);
+      return this.getFirstItemByType(ItemsSortingHat(outer1_1[3]).CollectiblesItemType.NAMEPLATE);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "firstProfileFrame",
     get() {
-      return this.getFirstItemByType(ItemsSortingHat(closure_1[3]).CollectiblesItemType.PROFILE_FRAME);
+      return this.getFirstItemByType(ItemsSortingHat(outer1_1[3]).CollectiblesItemType.PROFILE_FRAME);
     }
   };
   items[4] = {
@@ -72,25 +73,26 @@ const tmp2 = () => {
     }
   };
   return callback(ItemsSortingHat, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/hooks/useShopProductItems.tsx");
+})();
+let closure_5 = tmp2;
+let result = require("result").fileFinishedImporting("modules/collectibles/hooks/useShopProductItems.tsx");
 
 export const ItemsSortingHat = tmp2;
 export const useShopProductItems = function useShopProductItems(product) {
-  const arg1 = product;
+  let closure_0 = product;
   const items = [product];
   return React.useMemo(() => {
-    const tmp = new closure_5(arg0.items);
+    const tmp = new outer1_5(product.items);
     return { firstProfileEffect: tmp.firstProfileEffect, firstAvatarDecoration: tmp.firstAvatarDecoration, firstNameplate: tmp.firstNameplate, firstProfileFrame: tmp.firstProfileFrame };
   }, items);
 };
 export const getBundleItemNames = function getBundleItemNames(bundledProducts) {
-  const intl = arg1(dependencyMap[4]).intl;
-  let stringResult = intl.string(arg1(dependencyMap[4]).t.7v0T9P);
-  const intl2 = arg1(dependencyMap[4]).intl;
-  let stringResult1 = intl2.string(arg1(dependencyMap[4]).t.wR5wOo);
-  const intl3 = arg1(dependencyMap[4]).intl;
-  const stringResult2 = intl3.string(arg1(dependencyMap[4]).t.x5CoXR);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  let stringResult = intl.string(require(1212) /* getSystemLocale */.t["7v0T9P"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  let stringResult1 = intl2.string(require(1212) /* getSystemLocale */.t.wR5wOo);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  const stringResult2 = intl3.string(require(1212) /* getSystemLocale */.t.x5CoXR);
   let tmp4 = stringResult;
   let tmp5 = stringResult1;
   let tmp6 = stringResult2;

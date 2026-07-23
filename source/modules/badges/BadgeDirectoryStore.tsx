@@ -1,9 +1,18 @@
-// Module ID: 8262
-// Function ID: 65175
+// Module ID: 8268
+// Function ID: 65212
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1849, 664, 8269, 561, 8271, 566, 686, 2]
 
-// Module 8262 (_isNativeReflectConstruct)
+// Module 8268 (_isNativeReflectConstruct)
+import closure_3 from "set";
+import closure_4 from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -123,32 +132,26 @@ function getObtainedAtFromBadge(current_tier) {
     return obtained_at;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const HOUR = importDefault(dependencyMap[6]).Millis.HOUR;
-const map = new Map();
-const set = new Set();
-const set1 = new Set();
-const map1 = new Map();
+const HOUR = require("set").Millis.HOUR;
+let map = new Map();
+let set = new Set();
+let set1 = new Set();
+let map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
-let tmp8 = (Store) => {
+let tmp8 = ((Store) => {
   class BadgeDirectoryStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, BadgeDirectoryStore);
-      obj = closure_6(BadgeDirectoryStore);
-      tmp2 = closure_5;
-      if (closure_16()) {
+      tmp = outer1_3(this, BadgeDirectoryStore);
+      obj = outer1_6(BadgeDirectoryStore);
+      tmp2 = outer1_5;
+      if (outer1_16()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -157,21 +160,20 @@ let tmp8 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = BadgeDirectoryStore;
   callback2(BadgeDirectoryStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8);
+      this.waitFor(outer1_8);
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "getBadges",
     value(arg0) {
       let tmp = arg0;
       if (null == arg0) {
-        const currentUser = authStore.getCurrentUser();
+        const currentUser = outer1_8.getCurrentUser();
         let id;
         if (null != currentUser) {
           id = currentUser.id;
@@ -181,7 +183,7 @@ let tmp8 = (Store) => {
       if (null == tmp) {
         return [];
       } else {
-        const value = store.get(tmp);
+        const value = outer1_10.get(tmp);
         if (null != value) {
           const _Array = Array;
           let items = Array.from(value.values());
@@ -196,18 +198,18 @@ let tmp8 = (Store) => {
   obj = {
     key: "hasCatalogFor",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_11.has(arg0);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "isCatalogStaleFor",
     value(arg0) {
-      const value = closure_13.get(arg0);
+      const value = outer1_13.get(arg0);
       let tmp2 = null == value;
       if (!tmp2) {
         const _Date = Date;
-        tmp2 = Date.now() - value >= closure_9;
+        tmp2 = Date.now() - value >= outer1_9;
       }
       return tmp2;
     }
@@ -217,7 +219,7 @@ let tmp8 = (Store) => {
     value(arg0) {
       let tmp = arg0;
       if (null == arg0) {
-        const currentUser = authStore.getCurrentUser();
+        const currentUser = outer1_8.getCurrentUser();
         let id;
         if (null != currentUser) {
           id = currentUser.id;
@@ -226,7 +228,7 @@ let tmp8 = (Store) => {
       }
       let hasItem = null != tmp;
       if (hasItem) {
-        hasItem = set2.has(tmp);
+        hasItem = outer1_12.has(tmp);
       }
       return hasItem;
     }
@@ -236,7 +238,7 @@ let tmp8 = (Store) => {
     value(arg0, arg1) {
       let tmp = arg1;
       if (null == arg1) {
-        const currentUser = authStore.getCurrentUser();
+        const currentUser = outer1_8.getCurrentUser();
         let id;
         if (null != currentUser) {
           id = currentUser.id;
@@ -245,7 +247,7 @@ let tmp8 = (Store) => {
       }
       let tmp5;
       if (null != tmp) {
-        let value = store.get(tmp);
+        let value = outer1_10.get(tmp);
         value = undefined;
         if (null != value) {
           value = value.get(arg0);
@@ -274,7 +276,6 @@ let tmp8 = (Store) => {
     key: "getCurrentTier",
     value(arg0, arg1) {
       const badgeById = this.getBadgeById(arg0, arg1);
-      const BadgeDirectoryStore = badgeById;
       let current_tier;
       if (null != badgeById) {
         current_tier = badgeById.current_tier;
@@ -288,14 +289,13 @@ let tmp8 = (Store) => {
   items[8] = {
     key: "getObtainedAt",
     value(arg0, arg1) {
-      return callback5(this.getBadgeById(arg0, arg1));
+      return outer1_20(this.getBadgeById(arg0, arg1));
     }
   };
   items[9] = {
     key: "getNextTier",
     value(arg0, arg1) {
       const badgeById = this.getBadgeById(arg0, arg1);
-      const BadgeDirectoryStore = badgeById;
       let next_tier;
       if (null != badgeById) {
         next_tier = badgeById.next_tier;
@@ -316,25 +316,25 @@ let tmp8 = (Store) => {
         num = 0;
         if (null != singleRequirementProgress) {
           const _Math = Math;
-          num = Math.max(0, callback4(nextTier) - singleRequirementProgress.current);
+          num = Math.max(0, outer1_19(nextTier) - singleRequirementProgress.current);
         }
       }
       return num;
     }
   };
   return callback(BadgeDirectoryStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp8.displayName = "BadgeDirectoryStore";
-tmp8 = new tmp8(importDefault(dependencyMap[11]), {
+tmp8 = new tmp8(require("dispatcher"), {
   BADGE_DIRECTORY_FETCH_START: function handleFetchStart(userId) {
-    const set = new Set(set);
+    set = new Set(set);
     set.delete(userId.userId);
   },
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
     let userId;
     ({ userId, badges } = arg0);
-    const map = new Map(map);
+    map = new Map(map);
     const result = map.set(userId, new Map(badges.map((badge_id) => {
       const items = [badge_id.badge_id, badge_id];
       return items;
@@ -344,7 +344,7 @@ tmp8 = new tmp8(importDefault(dependencyMap[11]), {
       return items;
     }));
     closure_11 = new Set(closure_11).add(userId);
-    const set1 = new Set(set1);
+    set1 = new Set(set1);
     set1.delete(userId);
     const set = new Set(closure_11);
     closure_13 = new Map(closure_13).set(userId, Date.now());
@@ -356,7 +356,7 @@ tmp8 = new tmp8(importDefault(dependencyMap[11]), {
     let badge;
     let userId;
     ({ userId, badge } = arg0);
-    let map = new Map(map);
+    map = new Map(map);
     map = map.get(userId);
     if (null == map) {
       const _Map = Map;
@@ -400,7 +400,7 @@ tmp8 = new tmp8(importDefault(dependencyMap[11]), {
           num2 = sum;
         } while (!iter3.done);
       }
-      if (badges.filter((id) => null != callback(closure_2[7]).resolveProfileBadgeId(id.id)).length !== num2) {
+      if (badges.filter((id) => null != outer1_0(outer1_2[7]).resolveProfileBadgeId(id.id)).length !== num2) {
         value = map3.get(id);
         let num3 = 0;
         if (null != value) {
@@ -410,16 +410,16 @@ tmp8 = new tmp8(importDefault(dependencyMap[11]), {
         if (Date.now() >= num3) {
           let value1 = map2.get(id);
           if (null == value1) {
-            const tmp15 = importDefault(dependencyMap[8]);
+            const tmp15 = importDefault(561);
             const prototype = tmp15.prototype;
-            value1 = new tmp15(importDefault(dependencyMap[6]).Millis.MINUTE, HOUR, true);
+            value1 = new tmp15(importDefault(664).Millis.MINUTE, HOUR, true);
           }
           const result = map2.set(id, value1);
           const _Date2 = Date;
           const timestamp = Date.now();
           const result1 = map3.set(id, timestamp + value1.fail());
-          const badgeDirectory = arg1(dependencyMap[9]).fetchBadgeDirectory(id);
-          const obj4 = arg1(dependencyMap[9]);
+          const badgeDirectory = require(8271) /* urlUserId */.fetchBadgeDirectory(id);
+          const obj4 = require(8271) /* urlUserId */;
         }
       } else {
         const value2 = map2.get(id);
@@ -441,7 +441,7 @@ tmp8 = new tmp8(importDefault(dependencyMap[11]), {
     map3.clear();
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/badges/BadgeDirectoryStore.tsx");
+let result = set.fileFinishedImporting("modules/badges/BadgeDirectoryStore.tsx");
 
 export default tmp8;
 export { getSingleRequirementThreshold };

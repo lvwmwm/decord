@@ -1,27 +1,27 @@
-// Module ID: 13778
-// Function ID: 104111
+// Module ID: 13892
+// Function ID: 106267
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 1212, 13893, 2]
 
-// Module 13778 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 13892 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(require(dependencyMap[3]).t.u95Dt4);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.u95Dt4);
   },
-  parent: require(dependencyMap[0]).MobileSetting.PREMIUM,
+  parent: require("MobileSetting").MobileSetting.PREMIUM,
   unsearchable: true,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.PREMIUM_PLAN_SELECT,
+  route: require("ME").UserSettingsSections.PREMIUM_PLAN_SELECT,
   getComponent() {
-    return require(dependencyMap[4]).default;
+    return require(13893) /* PremiumPlanSelectSettingScreen */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/PremiumPlanSelectSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/PremiumPlanSelectSetting.tsx");
 
 export default route;

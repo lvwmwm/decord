@@ -1,20 +1,23 @@
-// Module ID: 6953
-// Function ID: 55542
+// Module ID: 6958
+// Function ID: 55576
 // Name: resolveResponseTtl
-// Dependencies: []
+// Dependencies: [664, 2]
 // Exports: questAdDecisionFromAdDecision
 
-// Module 6953 (resolveResponseTtl)
+// Module 6958 (resolveResponseTtl)
 function resolveResponseTtl(responseTtlSeconds) {
   if (null == responseTtlSeconds) {
-    return result;
+    return closure_0;
   } else {
-    const result = 1000 * responseTtlSeconds;
+    let result = 1000 * responseTtlSeconds;
+    if (result >= closure_0) {
+      result = closure_0;
+    }
     return result;
   }
 }
-const result = 6 * importDefault(dependencyMap[0]).Millis.HOUR;
-const result1 = arg1(dependencyMap[1]).fileFinishedImporting("modules/ads/utils/AdDecisionUtils.tsx");
+let result = 6 * require("set").Millis.HOUR;
+const result1 = require("set").fileFinishedImporting("modules/ads/utils/AdDecisionUtils.tsx");
 
 export const MAX_RESPONSE_TTL_MS = result;
 export { resolveResponseTtl };

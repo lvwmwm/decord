@@ -1,9 +1,11 @@
 // Module ID: 1072
-// Function ID: 12306
+// Function ID: 12307
 // Name: reportPageLoaded
-// Dependencies: []
+// Dependencies: [794]
 
 // Module 1072 (reportPageLoaded)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.reportPageLoaded = function reportPageLoaded() {
   if (arguments.length > 0) {
@@ -14,5 +16,5 @@ arg5.reportPageLoaded = function reportPageLoaded() {
       first.emit("endPageloadSpan");
     }
   }
-  first = arg1(arg6[0]).getClient();
+  first = require(794) /* registerSpanErrorInstrumentation */.getClient();
 };

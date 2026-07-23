@@ -1,14 +1,14 @@
-// Module ID: 4946
-// Function ID: 42417
+// Module ID: 4949
+// Function ID: 42435
 // Name: canJoinVoiceChannel
-// Dependencies: []
+// Dependencies: [1352, 653, 2]
 // Exports: default
 
-// Module 4946 (canJoinVoiceChannel)
-const isPrivate = require(dependencyMap[0]).isPrivate;
-const BasicPermissions = require(dependencyMap[1]).BasicPermissions;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/channel/canJoinVoiceChannel.tsx");
+// Module 4949 (canJoinVoiceChannel)
+import { isPrivate } from "_callSuper";
+import { BasicPermissions } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/channel/canJoinVoiceChannel.tsx");
 
 export default function canJoinVoiceChannel(type, canBasicChannel) {
   let canBasicChannelResult = isPrivate(type.type);

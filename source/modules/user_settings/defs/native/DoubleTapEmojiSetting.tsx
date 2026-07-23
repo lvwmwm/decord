@@ -1,21 +1,30 @@
-// Module ID: 14435
-// Function ID: 108835
+// Module ID: 14549
+// Function ID: 110988
 // Name: SettingsEmoji
-// Dependencies: []
+// Dependencies: [5, 31, 7662, 653, 1852, 33, 4130, 689, 3803, 7656, 1392, 5151, 9326, 675, 5484, 9339, 10095, 1212, 2]
 
-// Module 14435 (SettingsEmoji)
+// Module 14549 (SettingsEmoji)
+import jsxProd from "jsxProd";
+import "result";
+import { AnalyticEvents } from "ME";
+import { EmojiIntention } from "set";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createToggle from "createToggle";
+
+const require = arg1;
 function SettingsEmoji(emoji) {
   emoji = emoji.emoji;
   if (null != emoji.id) {
-    let obj = importDefault(dependencyMap[10]);
-    obj = { id: emoji.id };
+    let obj = importDefault(1392);
+    obj = { id: emoji.id, size: 24, animated: false };
     let url = obj.getEmojiURL(obj);
   } else {
     url = emoji.url;
   }
-  obj = { fastImageStyle: {}, src: url };
+  obj = { fastImageStyle: { height: 24, width: 24 }, src: url };
   let str = "";
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const tmp4 = jsx;
   if (null == emoji.id) {
     str = emoji.surrogates;
@@ -23,54 +32,47 @@ function SettingsEmoji(emoji) {
   obj.name = str;
   obj.adjustsFontSizeToFit = true;
   obj.textEmojiStyle = tmp.textEmoji;
-  return tmp4(importDefault(dependencyMap[11]), obj);
+  return tmp4(importDefault(5151), obj);
 }
 function useDoubleTapDisabled() {
-  const DoubleTapReactionEmoji = arg1(dependencyMap[8]).DoubleTapReactionEmoji;
+  const DoubleTapReactionEmoji = require(3803) /* explicitContentFromProto */.DoubleTapReactionEmoji;
   const disableDoubleTap = DoubleTapReactionEmoji.useSetting().disableDoubleTap;
   return null != disableDoubleTap && disableDoubleTap;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const EmojiIntention = arg1(dependencyMap[4]).EmojiIntention;
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { color: importDefault(dependencyMap[7]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.textEmoji = obj;
-let closure_7 = obj.createStyles(obj);
-const obj4 = arg1(dependencyMap[16]);
-const pressable = obj4.createPressable({
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.textEmoji = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.96WKNB);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["96WKNB"]);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.CHAT,
+  parent: require("MobileSetting").MobileSetting.CHAT,
   useTrailing: function useDoubleTapEmojiSettingTrailing() {
-    const DoubleTapReactionEmoji = arg1(dependencyMap[8]).DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3803) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    let obj = arg1(dependencyMap[9]);
+    let obj = require(7656) /* getFallbackDoubleTapDisambiguatedEmoji */;
     const result = obj.disambiguatedEmojiFromSettingsValue(setting);
-    const fallbackDoubleTapDisambiguatedEmoji = arg1(dependencyMap[9]).getFallbackDoubleTapDisambiguatedEmoji();
+    const fallbackDoubleTapDisambiguatedEmoji = require(7656) /* getFallbackDoubleTapDisambiguatedEmoji */.getFallbackDoubleTapDisambiguatedEmoji();
     if (null == result) {
       if (null != fallbackDoubleTapDisambiguatedEmoji) {
         obj = { emoji: fallbackDoubleTapDisambiguatedEmoji };
-        let tmp4 = <SettingsEmoji {...obj} />;
+        let tmp4 = <SettingsEmoji emoji={fallbackDoubleTapDisambiguatedEmoji} />;
       }
       return tmp4;
     }
     tmp4 = null;
     if (null != result) {
       obj = { emoji: result };
-      tmp4 = <SettingsEmoji {...obj} />;
+      tmp4 = <SettingsEmoji emoji={result} />;
     }
   },
   onPress: function onPressSetting() {
-    let obj = callback(dependencyMap[12]);
+    let obj = _require(9326);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI };
     // CreateGeneratorClosureLongIndex (0x67)
-    const callback = callback2(tmp);
+    _require = callback(tmp);
     obj.onPressEmoji = function() {
       return callback(...arguments);
     };
@@ -79,9 +81,9 @@ const pressable = obj4.createPressable({
   },
   withArrow: true,
   useDescription: function useDoubleTapEmojiDescription() {
-    const DoubleTapReactionEmoji = arg1(dependencyMap[8]).DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3803) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    const result = arg1(dependencyMap[9]).disambiguatedEmojiFromSettingsValue(setting);
+    const result = require(7656) /* getFallbackDoubleTapDisambiguatedEmoji */.disambiguatedEmojiFromSettingsValue(setting);
     let combined = null;
     if (null != result) {
       const _HermesInternal = HermesInternal;
@@ -96,34 +98,34 @@ const pressable = obj4.createPressable({
 });
 const obj1 = {
   useTitle() {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.96WKNB);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["96WKNB"]);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.CHAT,
+  parent: require("MobileSetting").MobileSetting.CHAT,
   useTrailing: function useDoubleTapEmojiSettingTrailing() {
-    const DoubleTapReactionEmoji = arg1(dependencyMap[8]).DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3803) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    let obj = arg1(dependencyMap[9]);
+    let obj = require(7656) /* getFallbackDoubleTapDisambiguatedEmoji */;
     const result = obj.disambiguatedEmojiFromSettingsValue(setting);
-    const fallbackDoubleTapDisambiguatedEmoji = arg1(dependencyMap[9]).getFallbackDoubleTapDisambiguatedEmoji();
+    const fallbackDoubleTapDisambiguatedEmoji = require(7656) /* getFallbackDoubleTapDisambiguatedEmoji */.getFallbackDoubleTapDisambiguatedEmoji();
     if (null == result) {
       if (null != fallbackDoubleTapDisambiguatedEmoji) {
         obj = { emoji: fallbackDoubleTapDisambiguatedEmoji };
-        let tmp4 = <SettingsEmoji {...obj} />;
+        let tmp4 = <SettingsEmoji emoji={fallbackDoubleTapDisambiguatedEmoji} />;
       }
       return tmp4;
     }
     tmp4 = null;
     if (null != result) {
       obj = { emoji: result };
-      tmp4 = <SettingsEmoji {...obj} />;
+      tmp4 = <SettingsEmoji emoji={result} />;
     }
   },
   onPress: function onPressSetting() {
-    let obj = callback(dependencyMap[12]);
+    let obj = _require(9326);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI };
     // CreateGeneratorClosureLongIndex (0x67)
-    const callback = callback2(tmp);
+    _require = callback(tmp);
     obj.onPressEmoji = function() {
       return callback(...arguments);
     };
@@ -132,9 +134,9 @@ const obj1 = {
   },
   withArrow: true,
   useDescription: function useDoubleTapEmojiDescription() {
-    const DoubleTapReactionEmoji = arg1(dependencyMap[8]).DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3803) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    const result = arg1(dependencyMap[9]).disambiguatedEmojiFromSettingsValue(setting);
+    const result = require(7656) /* getFallbackDoubleTapDisambiguatedEmoji */.disambiguatedEmojiFromSettingsValue(setting);
     let combined = null;
     if (null != result) {
       const _HermesInternal = HermesInternal;
@@ -147,6 +149,6 @@ const obj1 = {
     return !useDoubleTapDisabled();
   }
 };
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/user_settings/defs/native/DoubleTapEmojiSetting.tsx");
+let result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/DoubleTapEmojiSetting.tsx");
 
 export default pressable;

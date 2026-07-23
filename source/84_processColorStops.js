@@ -1,13 +1,14 @@
 // Module ID: 84
 // Function ID: 1499
 // Name: processColorStops
-// Dependencies: [225, 108, 109]
+// Dependencies: [65, 57, 38]
 // Exports: default
 
 // Module 84 (processColorStops)
-import FileReaderModule from "FileReaderModule";
-import module_108 from "module_108";
+import _toConsumableArray from "_toConsumableArray";
+import _slicedToArray from "_slicedToArray";
 
+const require = arg1;
 function processColorStops(nextResult) {
   const items = [];
   let num = 0;
@@ -33,9 +34,9 @@ function processColorStops(nextResult) {
           }
         }
       }
-      let tmp3 = arg1;
+      let tmp3 = require;
       let tmp4 = dependencyMap;
-      obj = arg1(dependencyMap[2]);
+      obj = require(38) /* processColor */;
       let defaultResult = obj.default(tmp2.color);
       let tmp6 = defaultResult;
       if (null == defaultResult) {
@@ -62,6 +63,7 @@ function processColorStops(nextResult) {
               let tmp16 = item10043;
               obj.position = obj7;
               arr = items.push(obj);
+              continue;
             }
           }
         }
@@ -79,8 +81,8 @@ function processColorStops(nextResult) {
   return items;
 }
 function parseRadialGradientCSSString(str) {
-  let tmp = closure_7;
-  let tmp2 = closure_8;
+  let tmp = ellipse;
+  let tmp2 = c8;
   const merged = Object.assign({}, closure_9);
   const parts = str.split(/,(?![^(]*\))/);
   let arr = callback(parts);
@@ -88,8 +90,8 @@ function parseRadialGradientCSSString(str) {
   let flag = false;
   let flag2 = false;
   let flag3 = false;
-  let str3 = closure_7;
-  let tmp7 = closure_8;
+  let str3 = ellipse;
+  let tmp7 = c8;
   let tmp8 = merged;
   let flag4 = false;
   let flag5 = false;
@@ -110,8 +112,8 @@ function parseRadialGradientCSSString(str) {
         flag = flag7;
         flag2 = flag8;
         flag3 = tmp11;
-        let tmp5 = tmp12;
-        let tmp6 = tmp13;
+        tmp5 = tmp12;
+        tmp6 = tmp13;
         str3 = tmp9;
         tmp7 = tmp10;
         tmp8 = merged;
@@ -315,8 +317,8 @@ function parseRadialGradientCSSString(str) {
             const trimmed3 = str50.toLowerCase().trim();
             const str52 = str50.toLowerCase();
             const trimmed4 = str51.toLowerCase().trim();
-            const items = [null, null, "T"];
-            const items1 = ["<string:2647432649>", "<string:2787483085>", "<string:2787747367>"];
+            const items = ["left", "center", "right"];
+            const items1 = ["top", "center", "bottom"];
             if (items.includes(trimmed3)) {
               if (items1.includes(trimmed4)) {
                 let str26 = "0%";
@@ -604,9 +606,9 @@ function parseColorStopsCSSString(arr) {
         let tmp27 = getPositionFromCSSValue;
         let tmp28 = getPositionFromCSSValue(match[1]);
         let tmp29 = getPositionFromCSSValue(match[2]);
-        let tmp30 = arg1;
+        let tmp30 = require;
         let tmp31 = dependencyMap;
-        let obj6 = arg1(dependencyMap[2]);
+        let obj6 = require(38) /* processColor */;
         let defaultResult = obj6.default(match[0]);
         if (null == defaultResult) {
           return null;
@@ -631,9 +633,9 @@ function parseColorStopsCSSString(arr) {
       } else if (2 === match.length) {
         let tmp21 = getPositionFromCSSValue;
         let tmp22 = getPositionFromCSSValue(match[1]);
-        let tmp23 = arg1;
+        let tmp23 = require;
         let tmp24 = dependencyMap;
-        let obj3 = arg1(dependencyMap[2]);
+        let obj3 = require(38) /* processColor */;
         let defaultResult1 = obj3.default(match[0]);
         if (null == defaultResult1) {
           return null;
@@ -676,9 +678,9 @@ function parseColorStopsCSSString(arr) {
             }
           }
         } else {
-          let tmp9 = arg1;
+          let tmp9 = require;
           let tmp10 = dependencyMap;
-          obj = arg1(dependencyMap[2]);
+          obj = require(38) /* processColor */;
           defaultResult2 = obj.default(match[0]);
           if (null == defaultResult2) {
             return null;
@@ -695,13 +697,13 @@ function parseColorStopsCSSString(arr) {
         }
       }
       num = num + 1;
-      let tmp2 = tmp13;
-      let tmp3 = tmp14;
-      let tmp4 = tmp15;
-      let tmp5 = tmp16;
-      let tmp6 = tmp17;
-      let tmp7 = tmp18;
-      let tmp8 = defaultResult2;
+      tmp2 = tmp13;
+      tmp3 = tmp14;
+      tmp4 = tmp15;
+      tmp5 = tmp16;
+      tmp6 = tmp17;
+      tmp7 = tmp18;
+      tmp8 = defaultResult2;
       tmp = match;
     }
     return null;
@@ -714,13 +716,13 @@ function getDirectionForKeyword(formatted) {
   } else {
     formatted = formatted.replace(/\s+/g, " ").toLowerCase();
     if ("to top" === formatted) {
-      return {};
+      return { type: "angle", value: 0 };
     } else if ("to right" === formatted) {
-      return { "Null": "<string:3219128320>", "Null": "<string:4285678061>" };
+      return { type: "angle", value: 90 };
     } else if ("to bottom" === formatted) {
-      return {};
+      return { type: "angle", value: 180 };
     } else if ("to left" === formatted) {
-      return { "Null": 4294499583, "Null": 3692313855 };
+      return { type: "angle", value: 270 };
     } else {
       if ("to top right" !== formatted) {
         if ("to right top" !== formatted) {
@@ -733,16 +735,16 @@ function getDirectionForKeyword(formatted) {
                       return null;
                     }
                   }
-                  return { "Null": "<string:1071644672>", "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008902029986740907 };
+                  return { type: "keyword", value: "to bottom left" };
                 }
               }
-              return { "Null": 3095792639, "Null": 2846468607 };
+              return { type: "keyword", value: "to top left" };
             }
           }
-          return { "Null": -1946222592, "Null": 3276939 };
+          return { type: "keyword", value: "to bottom right" };
         }
       }
-      return { "Null": null, "Null": null };
+      return { type: "keyword", value: "to top right" };
     }
     const str9 = formatted.replace(/\s+/g, " ");
   }
@@ -782,12 +784,12 @@ function getPositionFromCSSValue(trimmed) {
   }
   return parsed;
 }
-let closure_4 = /^to\s+(?:top|bottom|left|right)(?:\s+(?:top|bottom|left|right))?/i;
-let closure_5 = /^([+-]?\d*\.?\d+)(deg|grad|rad|turn)$/i;
-let closure_6 = {};
-let closure_7 = "ellipse";
-let closure_8 = "farthest-corner";
-let closure_9 = {};
+const re4 = /^to\s+(?:top|bottom|left|right)(?:\s+(?:top|bottom|left|right))?/i;
+const re5 = /^([+-]?\d*\.?\d+)(deg|grad|rad|turn)$/i;
+let closure_6 = { type: "angle", value: 180 };
+const ellipse = "ellipse";
+let c8 = "farthest-corner";
+let closure_9 = { top: "50%", left: "50%" };
 
 export default function processBackgroundImage(str) {
   let items = [];
@@ -795,7 +797,7 @@ export default function processBackgroundImage(str) {
     return items;
   } else {
     if ("string" === typeof str) {
-      items = function parseBackgroundImageCSSString(arg0) {
+      items = (function parseBackgroundImageCSSString(arg0) {
         const items = [];
         const items1 = [];
         let str = "";
@@ -822,7 +824,7 @@ export default function processBackgroundImage(str) {
             }
             let sum = str + tmp;
             let tmp6 = diff;
-            // break
+            break;
           }
         }
         if ("" !== str2.trim()) {
@@ -833,19 +835,19 @@ export default function processBackgroundImage(str) {
           let obj = /^(linear|radial)-gradient\(((?:\([^)]*\)|[^()])*)\)/;
           let match = obj.exec(str4.toLowerCase());
           if (match) {
-            let tmp8 = callback;
+            let tmp8 = outer1_3;
             let tmp9 = match;
-            let tmp10 = callback(tmp22, 3);
+            let tmp10 = outer1_3(tmp22, 3);
             let str5 = tmp10[1];
             let tmp11 = tmp10[2];
             if ("radial" === str5.toLowerCase()) {
-              let tmp15 = callback2;
+              let tmp15 = outer1_11;
               let tmp16 = tmp11;
-              let tmp14 = callback2(tmp11);
+              let tmp14 = outer1_11(tmp11);
             } else {
-              let tmp12 = callback3;
+              let tmp12 = outer1_12;
               let tmp13 = tmp11;
-              tmp14 = callback3(tmp11);
+              tmp14 = outer1_12(tmp11);
             }
             if (null != tmp14) {
               let tmp18 = items;
@@ -853,14 +855,14 @@ export default function processBackgroundImage(str) {
               let arr1 = items.push(tmp17);
             }
           }
-          // continue
+          continue;
         }
         return items;
-      }(str.replace(/\n/g, " "));
+      })(str.replace(/\n/g, " "));
     } else {
       const _Array = Array;
       if (Array.isArray(str)) {
-        const iter = str[Symbol.iterator]();
+        let iter = str[Symbol.iterator]();
         const nextResult = iter.next();
         while (iter !== undefined) {
           let tmp46 = nextResult;
@@ -927,8 +929,8 @@ export default function processBackgroundImage(str) {
             } else {
               let tmp51 = nextResult;
               if ("radial-gradient" === tmp46.type) {
-                let shape = closure_7;
-                let size = closure_8;
+                let shape = ellipse;
+                let size = c8;
                 let _Object = Object;
                 let tmp52 = closure_9;
                 let position = Object.assign({}, closure_9);
@@ -997,7 +999,7 @@ export default function processBackgroundImage(str) {
                 obj1.colorStops = tmp49;
                 items = items.concat(obj1);
               }
-              // continue
+              continue;
             }
           }
         }

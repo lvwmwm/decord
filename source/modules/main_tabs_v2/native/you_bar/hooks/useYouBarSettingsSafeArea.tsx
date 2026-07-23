@@ -1,22 +1,21 @@
-// Module ID: 12270
-// Function ID: 94080
+// Module ID: 12384
+// Function ID: 96231
 // Name: useYouBarSettingsOutsideSafeAreaTop
-// Dependencies: []
+// Dependencies: [1557, 8133, 478, 2]
 // Exports: useYouBarSettingsCustomHeaderPaddingTop
 
-// Module 12270 (useYouBarSettingsOutsideSafeAreaTop)
+// Module 12384 (useYouBarSettingsOutsideSafeAreaTop)
 function useYouBarSettingsOutsideSafeAreaTop() {
-  const tmp = importDefault(dependencyMap[1])();
-  const obj = require(dependencyMap[2]);
-  return require(dependencyMap[2]).isIOS() || tmp;
+  const tmp = importDefault(8133)();
+  const obj = require(478) /* isWindows */;
+  return require(478) /* isWindows */.isIOS() || tmp;
 }
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarSettingsSafeArea.tsx");
+const result = require("isWindows").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarSettingsSafeArea.tsx");
 
 export const useYouBarSettingsCustomHeaderPaddingTop = function useYouBarSettingsCustomHeaderPaddingTop() {
   let num = 16;
   if (!useYouBarSettingsOutsideSafeAreaTop()) {
-    num = importDefault(dependencyMap[0])().top;
+    num = importDefault(1557)().top;
   }
   return num;
 };

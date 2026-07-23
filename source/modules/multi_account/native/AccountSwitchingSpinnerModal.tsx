@@ -1,25 +1,27 @@
-// Module ID: 15991
-// Function ID: 122720
+// Module ID: 16108
+// Function ID: 124893
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 1212, 5586, 668, 2]
 
-// Module 15991 (AccountSwitchingSpinnerModal)
+// Module 16108 (AccountSwitchingSpinnerModal)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 class AccountSwitchingSpinnerModal {
   constructor() {
-    obj = { style: closure_4().switchingSpinnerContainer, accessible: true };
-    intl = arg1(dependencyMap[4]).intl;
-    obj.accessibilityLabel = intl.string(arg1(dependencyMap[4]).t.n8qMH0);
-    obj.children = jsx(arg1(dependencyMap[5]).ActivityIndicator, {});
+    obj = { style: c4().switchingSpinnerContainer, accessible: true };
+    intl = require("getSystemLocale").intl;
+    obj.accessibilityLabel = intl.string(require("getSystemLocale").t.n8qMH0);
+    obj.children = jsx(require("ActivityIndicator").ActivityIndicator, {});
     return jsx(View, obj);
   }
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-let closure_4 = obj.createStyles({ switchingSpinnerContainer: {} });
-obj = { animation: arg1(dependencyMap[6]).ModalAnimation.FADE, closable: false };
-AccountSwitchingSpinnerModal.modalConfig = obj;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/multi_account/native/AccountSwitchingSpinnerModal.tsx");
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ switchingSpinnerContainer: { flex: 1, alignItems: "center", justifyContent: "center" } });
+_createForOfIteratorHelperLoose = { animation: require("keys").ModalAnimation.FADE, closable: false };
+AccountSwitchingSpinnerModal.modalConfig = _createForOfIteratorHelperLoose;
+const result = require("jsxProd").fileFinishedImporting("modules/multi_account/native/AccountSwitchingSpinnerModal.tsx");
 
 export default AccountSwitchingSpinnerModal;

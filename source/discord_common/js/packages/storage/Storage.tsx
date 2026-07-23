@@ -1,10 +1,9 @@
 // Module ID: 587
 // Function ID: 6979
 // Name: Storage
-// Dependencies: []
+// Dependencies: [2, 588]
 
 // Module 587 (Storage)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/storage/Storage.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/storage/Storage.tsx");
 
-export const Storage = require(dependencyMap[1]).impl;
+export const Storage = require("parseValue").impl;

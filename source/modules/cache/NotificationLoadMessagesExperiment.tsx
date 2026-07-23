@@ -1,13 +1,13 @@
-// Module ID: 16398
-// Function ID: 126674
+// Module ID: 16515
+// Function ID: 128848
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 16398 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: 705839377, DateToSystemTimezoneSetter: 410124290, defaultConfig: {}, variations: { [1]: {}, [2]: {}, [3]: { "Null": true, <string:16843009>: true, <string:56819969>: true, <string:844366595>: true }, [4]: { "Null": null, <string:16843009>: null, <string:56819969>: null, <string:844366595>: null }, [5]: { "Null": true, <string:16843009>: true, <string:56819969>: true, <string:844366595>: true }, [6]: { "Null": false, <string:16843009>: false, <string:56819969>: false, <string:844366595>: false }, [7]: { "Null": true, <string:16843009>: true, <string:56819969>: true, <string:844366595>: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/cache/NotificationLoadMessagesExperiment.tsx");
+// Module 16515 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-03-notification-load-messages", kind: "user", defaultConfig: { enabled: false, limit: 1, cooldownMs: 0, debounceMs: 0 }, variations: { [1]: { enabled: true, limit: 1, cooldownMs: 60000, debounceMs: 3000 }, [2]: { enabled: true, limit: 25, cooldownMs: 60000, debounceMs: 3000 }, [3]: { enabled: true, limit: 10, cooldownMs: 60000, debounceMs: 3000 }, [4]: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 3000 }, [5]: { enabled: true, limit: 10, cooldownMs: 0, debounceMs: 3000 }, [6]: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 0 }, [7]: { enabled: true, limit: 10, cooldownMs: 0, debounceMs: 0 } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/cache/NotificationLoadMessagesExperiment.tsx");
 
 export default apexExperiment;

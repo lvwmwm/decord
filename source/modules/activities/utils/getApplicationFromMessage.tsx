@@ -1,18 +1,19 @@
-// Module ID: 12192
-// Function ID: 93727
+// Module ID: 12306
+// Function ID: 95878
 // Name: getApplicationFromMessage
-// Dependencies: []
+// Dependencies: [4153, 12303, 8311, 2]
 // Exports: getApplicationFromMessage
 
-// Module 12192 (getApplicationFromMessage)
-let closure_0 = importDefault(dependencyMap[0]);
-const SpotifyApplication = arg1(dependencyMap[1]).SpotifyApplication;
-const isSpotifyParty = arg1(dependencyMap[2]).isSpotifyParty;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/activities/utils/getApplicationFromMessage.tsx");
+// Module 12306 (getApplicationFromMessage)
+import _callSuper from "_callSuper";
+import { SpotifyApplication } from "_isNativeReflectConstruct";
+import { isSpotifyParty } from "spotifyUtmParams";
+
+const result = require("spotifyUtmParams").fileFinishedImporting("modules/activities/utils/getApplicationFromMessage.tsx");
 
 export const getApplicationFromMessage = function getApplicationFromMessage(application) {
   if (null != application.application) {
-    let fromServer = closure_0.createFromServer(application.application);
+    let fromServer = _callSuper.createFromServer(application.application);
   } else if (null != application.activity) {
     if (null != application.activity.party_id) {
       if (isSpotifyParty(application.activity.party_id)) {

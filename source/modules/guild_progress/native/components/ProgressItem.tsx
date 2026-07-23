@@ -1,21 +1,23 @@
-// Module ID: 11501
-// Function ID: 89631
+// Module ID: 11511
+// Function ID: 89681
 // Name: ProgressItem
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 4324, 7495, 2]
 // Exports: default
 
-// Module 11501 (ProgressItem)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = { formCTAContainer: { marginBottom: 8 } };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.CARD_BACKGROUND_DEFAULT };
-obj.formCTA = obj;
-obj.formCTAFullWidth = { width: "100%" };
-let closure_7 = obj.createStyles(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_progress/native/components/ProgressItem.tsx");
+// Module 11511 (ProgressItem)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { AnalyticEvents } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = { formCTAContainer: { marginBottom: 8 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT };
+_createForOfIteratorHelperLoose.formCTA = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.formCTAFullWidth = { width: "100%" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/guild_progress/native/components/ProgressItem.tsx");
 
 export default function ProgressItem(onPress) {
   let description;
@@ -24,19 +26,15 @@ export default function ProgressItem(onPress) {
   let source;
   let title;
   onPress = onPress.onPress;
-  const arg1 = onPress;
   const isCompleted = onPress.isCompleted;
-  const importDefault = isCompleted;
   const analyticsSetupType = onPress.analyticsSetupType;
-  const dependencyMap = analyticsSetupType;
   const analyticsAction = onPress.analyticsAction;
-  const React = analyticsAction;
   const renderEndComponent = onPress.renderEndComponent;
   ({ title, source, description, fullWidth, iconStyle } = onPress);
-  const tmp = callback();
+  let tmp = _createForOfIteratorHelperLoose();
   const items = [analyticsAction, analyticsSetupType, onPress, isCompleted];
   let obj = { style: tmp.formCTAContainer };
-  const callback = React.useCallback(() => {
+  const callback = analyticsAction.useCallback(() => {
     let tmp = null != analyticsAction;
     if (tmp) {
       tmp = null != analyticsSetupType;
@@ -44,7 +42,7 @@ export default function ProgressItem(onPress) {
     if (tmp) {
       let obj = isCompleted(analyticsSetupType[6]);
       obj = { setup_type: analyticsSetupType, action: analyticsAction, action_completed: isCompleted };
-      obj.trackWithMetadata(constants.SERVER_SETUP_CTA_CLICKED, obj);
+      obj.trackWithMetadata(outer1_5.SERVER_SETUP_CTA_CLICKED, obj);
     }
     onPress();
   }, items);
@@ -71,6 +69,6 @@ export default function ProgressItem(onPress) {
     tmp7 = renderEndComponentResult;
   }
   obj.trailing = tmp7;
-  obj.children = jsx(arg1(dependencyMap[7]).FormCTA, obj);
-  return <View {...obj} />;
+  obj.children = jsx(onPress(analyticsSetupType[7]).FormCTA, { variant: "row-button" });
+  return <View variant="row-button" />;
 };

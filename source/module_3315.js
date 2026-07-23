@@ -1,18 +1,13 @@
 // Module ID: 3315
-// Function ID: 26096
-// Dependencies: []
+// Function ID: 26097
+// Dependencies: [3316, 3317, 3318, 3319, 3320]
 
 // Module 3315
-const _module = require(dependencyMap[0]);
-if (!_module) {
-  let obj = { default: _module };
-} else {
-  obj = _module;
-}
-obj = {};
-obj.date = obj.default({ formats: {}, defaultWidth: "full" });
-obj.time = obj.default({ formats: { "Null": "<string:30527488>", "Null": "<string:19720960>", "Null": "<string:40710656>", "Null": "<string:38627584>" }, defaultWidth: "full" });
-obj.dateTime = obj.default({ formats: {}, defaultWidth: "full" });
+import result from "result";
+import result1 from "result1";
+import result2 from "result2";
+import result3 from "result3";
 
-export default obj;
+
+export default { code: "pt-BR", formatDistance: result.default, formatLong: result1.default, formatRelative: result2.default, localize: result3.default, match: require("module_3320"), options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };
 export default exports.default;

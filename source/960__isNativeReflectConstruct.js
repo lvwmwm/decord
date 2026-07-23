@@ -1,9 +1,16 @@
 // Module ID: 960
-// Function ID: 10385
+// Function ID: 10386
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 162]
 
 // Module 960 (_isNativeReflectConstruct)
+import _defineProperties from "_defineProperties";
+import _classCallCheck from "_classCallCheck";
+import "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _wrapNativeSuper from "_wrapNativeSuper";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,15 +20,9 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = require(dependencyMap[0]);
-let closure_1 = require(dependencyMap[1]);
-let closure_2 = require(dependencyMap[2]);
-let closure_3 = require(dependencyMap[3]);
-let closure_4 = require(dependencyMap[4]);
-const _module = require(dependencyMap[5]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const SentryError = (arg0) => {
+export const SentryError = ((arg0) => {
   class SentryError {
     constructor(arg0) {
       self = this;
@@ -32,16 +33,16 @@ export const SentryError = (arg0) => {
           str = arguments[1];
         }
       }
-      tmp = closure_1(self, SentryError);
+      tmp = outer1_1(self, SentryError);
       items = [];
       items[0] = arg0;
-      obj = closure_3(SentryError);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      obj = outer1_3(SentryError);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, items, closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -51,7 +52,6 @@ export const SentryError = (arg0) => {
       return tmp2Result;
     }
   }
-  const callback = SentryError;
-  callback2(SentryError, arg0);
-  return callback(SentryError);
-}(_module(Error));
+  _inherits(SentryError, arg0);
+  return SentryError(SentryError);
+})(_wrapNativeSuper(Error));

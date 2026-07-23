@@ -1,21 +1,23 @@
-// Module ID: 15268
-// Function ID: 115262
+// Module ID: 15385
+// Function ID: 117436
 // Name: useSearchMessages
-// Dependencies: []
+// Dependencies: [5660, 10077, 566, 10078, 2]
 // Exports: useSearchMessages
 
-// Module 15268 (useSearchMessages)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessages.tsx");
+// Module 15385 (useSearchMessages)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessages.tsx");
 
 export const useSearchMessages = function useSearchMessages(searchContext, tab) {
-  tab = searchContext;
+  const _require = searchContext;
   const dependencyMap = tab;
-  const items = [closure_3, closure_2];
+  const items = [closure_3, _isNativeReflectConstruct];
   const items1 = [searchContext, tab];
-  return tab(dependencyMap[2]).useStateFromStores(items, () => {
-    const searchResultsQuery = searchResultsQuery.getSearchResultsQuery(arg0);
-    return messages.getMessages(arg0(arg1[3]).getSearchTabFetchId(arg0, arg1, searchResultsQuery));
+  return _require(566).useStateFromStores(items, () => {
+    const searchResultsQuery = outer1_3.getSearchResultsQuery(searchContext);
+    return outer1_2.getMessages(searchContext(tab[3]).getSearchTabFetchId(searchContext, tab, searchResultsQuery));
   }, items1);
 };

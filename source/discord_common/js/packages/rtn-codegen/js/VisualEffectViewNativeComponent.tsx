@@ -1,14 +1,14 @@
-// Module ID: 4533
-// Function ID: 39795
+// Module ID: 4537
+// Function ID: 39827
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42, 2]
 
-// Module 4533 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "DCDVisualEffectView", validAttributes: {} };
-const _module = require(dependencyMap[0]);
-const value = _module.get("DCDVisualEffectView", () => obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/VisualEffectViewNativeComponent.tsx");
+// Module 4537 (__INTERNAL_VIEW_CONFIG)
+import get from "get";
+
+const obj = { uiViewClassName: "DCDVisualEffectView", validAttributes: { blurAmount: true, blurEffectName: true, blurTintIOSParityCompensationRgba: true, blurTintRgba: true, blurTargetViewNativeId: true } };
+const value = get.get("DCDVisualEffectView", () => obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/VisualEffectViewNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

@@ -1,0 +1,11 @@
+// Module ID: 2877
+// Function ID: 24762
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 2877 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/premium/tenure_reward", scales: [1], hash: "4ce7db81a29e051a11be32b72852c173", name: "TenureReward.compiled.messages", type: "jsona" };
+
+export default registerAsset.registerAsset(obj);

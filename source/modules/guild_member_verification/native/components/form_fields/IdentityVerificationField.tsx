@@ -1,17 +1,25 @@
-// Module ID: 9173
-// Function ID: 71860
+// Module ID: 9180
+// Function ID: 71901
 // Name: BaseIdentityVerificationField
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 4082, 4543, 1212, 3950, 9181, 4337, 9236, 1934, 9239, 9265, 9212, 2]
 // Exports: default
 
-// Module 9173 (BaseIdentityVerificationField)
+// Module 9180 (BaseIdentityVerificationField)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function BaseIdentityVerificationField(icon) {
   let label;
   let onPress;
   let passesVerification;
   icon = icon.icon;
   ({ label, passesVerification, onPress } = icon);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   let tmp4 = null;
   if (null != icon) {
@@ -19,50 +27,49 @@ function BaseIdentityVerificationField(icon) {
     tmp4 = callback(icon, obj);
   }
   const items = [tmp4, , ];
+  obj = { style: null, variant: "text-md/medium", color: "mobile-text-heading-primary" };
   const items1 = [tmp.label];
-  items[1] = callback(arg1(dependencyMap[5]).Text, { style: items1, children: label });
-  obj = {};
+  obj.style = items1;
+  obj.children = label;
+  items[1] = callback(require(4126) /* Text */.Text, obj);
+  const obj1 = {};
   if (passesVerification) {
-    obj.style = tmp.verifiedContainer;
-    const obj1 = { color: "status-positive" };
-    obj.children = callback(arg1(dependencyMap[6]).CheckmarkLargeIcon, obj1);
-    let tmp11 = obj;
+    obj1.style = tmp.verifiedContainer;
+    const obj2 = { color: "status-positive" };
+    obj1.children = callback(require(4082) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, obj2);
+    let tmp11 = obj1;
   } else {
-    obj.style = tmp.ctaButton;
-    const obj2 = {};
-    const intl = arg1(dependencyMap[8]).intl;
-    obj2.text = intl.string(arg1(dependencyMap[8]).t.13ofGu);
-    obj2.onPress = onPress;
-    obj.children = callback(arg1(dependencyMap[7]).Button, obj2);
-    tmp11 = obj;
+    obj1.style = tmp.ctaButton;
+    const obj3 = { variant: "primary", size: "sm", grow: true };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj3.text = intl.string(require(1212) /* getSystemLocale */.t["13ofGu"]);
+    obj3.onPress = onPress;
+    obj1.children = callback(require(4543) /* Button */.Button, obj3);
+    tmp11 = obj1;
   }
   items[2] = callback(View, tmp11);
   obj.children = items;
   return closure_5(View, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
-obj.container = obj;
-obj.icon = {};
-obj.label = { category: "<string:466485249>", position: "<string:3382050817>", opacity: "<string:40960001>" };
-obj.verifiedContainer = { <string:1101041249>: true, addQuarters: "/assets/design/components/Icon/native/redesign/generated/images", <string:1092586321>: 24, addWeeks: 24 };
-obj.ctaButton = { <string:1385783798>: "<string:1062273028>", <string:3266691745>: "<string:3332911364>", <string:5372001>: "<string:1099511627>" };
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/IdentityVerificationField.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: 8, marginTop: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, height: 48, flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.icon = { marginLeft: 4, marginRight: 8 };
+_createForOfIteratorHelperLoose.label = { flex: 1, marginLeft: 4, lineHeight: 20 };
+_createForOfIteratorHelperLoose.verifiedContainer = { paddingVertical: 7, paddingHorizontal: 4, flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.ctaButton = { flexGrow: 0, alignSelf: "center", paddingHorizontal: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/IdentityVerificationField.tsx");
 
 export default function IdentityVerificationField(arg0) {
   let passesVerification;
   let platform;
   ({ platform, passesVerification } = arg0);
-  if (arg1(dependencyMap[9]).UserVerificationFieldPlatforms.EMAIL === platform) {
-    const intl3 = arg1(dependencyMap[8]).intl;
+  if (require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL === platform) {
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     const string2 = intl3.string;
-    let INsLgA = arg1(dependencyMap[8]).t;
+    let INsLgA = require(1212) /* getSystemLocale */.t;
     if (passesVerification) {
       INsLgA = INsLgA.INsLgA;
       let string2Result = string2(INsLgA);
@@ -70,48 +77,48 @@ export default function IdentityVerificationField(arg0) {
       string2Result = string2(INsLgA.c6EUJI);
     }
   } else {
-    if (arg1(dependencyMap[9]).UserVerificationFieldPlatforms.PHONE === platform) {
-      const intl2 = arg1(dependencyMap[8]).intl;
+    if (require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE === platform) {
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       const string = intl2.string;
-      const t = arg1(dependencyMap[8]).t;
+      const t = require(1212) /* getSystemLocale */.t;
       if (passesVerification) {
-        let stringResult = string(t.xO2XI/);
+        let stringResult = string(t["xO2XI/"]);
       } else {
         stringResult = string(t.woMjLV);
       }
       let stringResult1 = stringResult;
     } else {
-      const intl = arg1(dependencyMap[8]).intl;
-      stringResult1 = intl.string(arg1(dependencyMap[8]).t.mhv8BM);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      stringResult1 = intl.string(require(1212) /* getSystemLocale */.t.mhv8BM);
     }
-    if (arg1(dependencyMap[9]).UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = arg1(dependencyMap[15]).EnvelopeIcon;
-    } else if (arg1(dependencyMap[9]).UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = arg1(dependencyMap[16]).MobilePhoneIcon;
+    if (require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.EMAIL === platform) {
+      let EnvelopeIcon = require(9265) /* EnvelopeIcon */.EnvelopeIcon;
+    } else if (require(3950) /* isTermsFormField */.UserVerificationFieldPlatforms.PHONE === platform) {
+      EnvelopeIcon = require(9212) /* MobilePhoneIcon */.MobilePhoneIcon;
     } else {
-      EnvelopeIcon = arg1(dependencyMap[15]).EnvelopeIcon;
+      EnvelopeIcon = require(9265) /* EnvelopeIcon */.EnvelopeIcon;
     }
-    const obj = {
+    let obj = {
       label: stringResult1,
       icon: EnvelopeIcon,
       passesVerification,
-      onPress: function getHandlePress(platform) {
-          if (callback(closure_2[9]).UserVerificationFieldPlatforms.EMAIL === platform) {
+      onPress: (function getHandlePress(platform) {
+          if (outer1_0(outer1_2[9]).UserVerificationFieldPlatforms.EMAIL === platform) {
             return () => {
-              callback2(closure_2[10]).open();
+              outer2_1(outer2_2[10]).open();
             };
-          } else if (callback(closure_2[9]).UserVerificationFieldPlatforms.PHONE === platform) {
+          } else if (outer1_0(outer1_2[9]).UserVerificationFieldPlatforms.PHONE === platform) {
             return () => {
-              let obj = callback2(paths[11]);
-              obj = { reason: callback(paths[14]).ChangePhoneReason.GUILD_PHONE_REQUIRED };
-              obj.pushLazy(callback(paths[13])(paths[12], paths.paths), obj);
+              let obj = outer2_1(outer2_2[11]);
+              obj = { reason: outer2_0(outer2_2[14]).ChangePhoneReason.GUILD_PHONE_REQUIRED };
+              obj.pushLazy(outer2_0(outer2_2[13])(outer2_2[12], outer2_2.paths), obj);
             };
           } else {
             return () => {
 
             };
           }
-        }(platform)
+        })(platform)
     };
     return callback(BaseIdentityVerificationField, obj);
   }

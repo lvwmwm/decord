@@ -1,60 +1,58 @@
-// Module ID: 14465
-// Function ID: 108986
+// Module ID: 14579
+// Function ID: 111139
 // Name: useSettingSearchResults
-// Dependencies: [0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [57, 31, 13552, 13553, 14575, 13557, 14580, 13555, 574, 2]
 // Exports: useSettingSearchResults
 
-// Module 14465 (useSettingSearchResults)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
+// Module 14579 (useSettingSearchResults)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import zustandStore from "zustandStore";
+import closure_6 from "zustandStore";
 
-let closure_4 = importAll(dependencyMap[1]);
+const require = arg1;
 let closure_7 = [];
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/settings/native/search/hooks/useSettingSearchResults.tsx");
+const result = require("zustandStore").fileFinishedImporting("modules/settings/native/search/hooks/useSettingSearchResults.tsx");
 
 export const useSettingSearchResults = function useSettingSearchResults() {
-  const memo = React.useMemo(() => {
-    let tmp = callback(closure_2[6]);
-    tmp = new tmp(memo(closure_2[7]).getSettingSearchableTitles());
+  const memo = memo1.useMemo(() => {
+    let tmp = callback(14580);
+    tmp = new tmp(memo(13555).getSettingSearchableTitles());
     return tmp;
   }, []);
-  const arg1 = memo;
-  const settings = callback(React.useState(closure_7), 2);
+  const settings = callback(memo1.useState(closure_7), 2);
   let closure_1 = settings[1];
-  const isLoading = callback(React.useState(false), 2);
+  const isLoading = callback(memo1.useState(false), 2);
   let closure_2 = isLoading[1];
-  const placeholderCount = callback(React.useState(10), 2);
-  const callback = placeholderCount[1];
+  const placeholderCount = callback(memo1.useState(10), 2);
+  callback = placeholderCount[1];
   const items = [memo];
-  const memo1 = React.useMemo(() => callback(closure_2[8])((arg0) => {
-    let scoredSearchResults = field.getField("blocklist");
-    scoredSearchResults = scoredSearchResults.getScoredSearchResults(arg0);
-    const found = scoredSearchResults.filter((setting) => {
+  memo1 = memo1.useMemo(() => callback(574)((arg0) => {
+    const field = outer2_6.getField("blocklist");
+    const found = outer1_0.getScoredSearchResults(arg0).filter((setting) => {
       setting = setting.setting;
-      let tmp = !callback2(closure_2[4]).isBlocked(setting, callback);
+      let tmp = !callback(14575).isBlocked(setting, closure_0);
       if (tmp) {
-        tmp = !callback(closure_2[5]).SETTING_RENDERER_CONFIG[setting].unsearchable;
+        tmp = !memo(13557).SETTING_RENDERER_CONFIG[setting].unsearchable;
       }
       return tmp;
     });
-    callback(found);
-    callback3(Math.max(Math.min(found.length, 10), 5));
-    callback2(false);
+    outer1_1(found);
+    outer1_3(Math.max(Math.min(found.length, 10), 5));
+    outer1_2(false);
   }, 350), items);
-  const React = memo1;
   const items1 = [memo1];
-  const effect = React.useEffect(() => {
-    let closure_0 = closure_5.subscribe((query) => query.query.trim(), (arg0) => {
+  const effect = memo1.useEffect(() => {
+    let closure_0 = outer1_5.subscribe((query) => query.query.trim(), (arg0) => {
       if ("" === arg0) {
-        if (null != lib.cancel) {
-          lib.cancel();
+        if (null != outer1_4.cancel) {
+          outer1_4.cancel();
         }
-        callback2(closure_7);
-        callback3(false);
+        outer1_1(outer2_7);
+        outer1_2(false);
       } else {
-        callback3(true);
-        lib(arg0);
+        outer1_2(true);
+        outer1_4(arg0);
       }
     }, {
       equalityFn(arg0, arg1) {
@@ -63,8 +61,8 @@ export const useSettingSearchResults = function useSettingSearchResults() {
     });
     return () => {
       callback();
-      if (null != lib.cancel) {
-        lib.cancel();
+      if (null != outer1_4.cancel) {
+        outer1_4.cancel();
       }
     };
   }, items1);

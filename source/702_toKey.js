@@ -1,13 +1,13 @@
 // Module ID: 702
-// Function ID: 8707
+// Function ID: 8708
 // Name: toKey
-// Dependencies: []
+// Dependencies: [576]
 
 // Module 702 (toKey)
 
 export default function toKey(arg0) {
   if ("string" !== typeof arg0) {
-    if (!require(dependencyMap[0])(arg0)) {
+    if (!require(576) /* isSymbol */(arg0)) {
       const text = `${arg0}`;
       if ("0" !== `${arg0}`) {
         let str2 = text;

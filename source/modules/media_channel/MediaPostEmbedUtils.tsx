@@ -1,29 +1,33 @@
-// Module ID: 4311
-// Function ID: 37784
+// Module ID: 4315
+// Function ID: 37816
 // Name: getMediaPostEmbedChannelPath
-// Dependencies: []
+// Dependencies: [1838, 3767, 1849, 653, 4316, 1212, 4319, 1392, 1360, 4320, 4114, 4321, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedCommonData
 
-// Module 4311 (getMediaPostEmbedChannelPath)
+// Module 4315 (getMediaPostEmbedChannelPath)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function getMediaPostEmbedChannelPath(url) {
   if (null != url) {
-    const parseURLSafelyResult = arg1(dependencyMap[10]).parseURLSafely(url);
+    const parseURLSafelyResult = require(4114) /* _createForOfIteratorHelperLoose */.parseURLSafely(url);
     if (null != parseURLSafelyResult) {
-      const result = arg1(dependencyMap[10]).remainingPathFromDiscordHostMatch(parseURLSafelyResult);
+      const result = require(4114) /* _createForOfIteratorHelperLoose */.remainingPathFromDiscordHostMatch(parseURLSafelyResult);
       if (null != result) {
-        return arg1(dependencyMap[11]).tryParseChannelPath(result);
+        return require(4321) /* canViewChannel */.tryParseChannelPath(result);
       }
-      const obj2 = arg1(dependencyMap[10]);
+      const obj2 = require(4114) /* _createForOfIteratorHelperLoose */;
     }
-    const obj = arg1(dependencyMap[10]);
+    const obj = require(4114) /* _createForOfIteratorHelperLoose */;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ GuildFeatures: closure_6, MessageAttachmentFlags: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/media_channel/MediaPostEmbedUtils.tsx");
+({ GuildFeatures: closure_6, MessageAttachmentFlags: closure_7 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_channel/MediaPostEmbedUtils.tsx");
 
 export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(arg0) {
   let canAccess;
@@ -44,13 +48,13 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     return null;
   } else {
     let has_media_attachment = !canAccess;
-    const thumbnailImage = arg1(dependencyMap[4]).getThumbnailImage(mediaPostEmbedData.thumbnail);
+    const thumbnailImage = require(4316) /* MAX_THUMBNAIL_COUNT */.getThumbnailImage(mediaPostEmbedData.thumbnail);
     if (has_media_attachment) {
       has_media_attachment = mediaPostEmbedData.has_media_attachment;
     }
-    const intl = arg1(dependencyMap[5]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const string = intl.string;
-    const t = arg1(dependencyMap[5]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (canAccess) {
       let stringResult = string(t.UsZEBI);
     } else {
@@ -58,7 +62,7 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     }
     let name;
     if (null != user) {
-      let obj = importDefault(dependencyMap[6]);
+      let obj = importDefault(4319);
       name = obj.getName(mediaPostEmbedData.guild_id, mediaPostEmbedData.channel_id, user);
     }
     let avatarURL;
@@ -74,8 +78,8 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
       ({ guild_id: obj3.id, guild_icon: obj3.icon } = mediaPostEmbedData);
       obj.size = 40;
       obj.canAnimate = false;
-      avatarURL = importDefault(dependencyMap[7]).getGuildIconURL(obj);
-      const obj2 = importDefault(dependencyMap[7]);
+      avatarURL = importDefault(1392).getGuildIconURL(obj);
+      const obj2 = importDefault(1392);
     }
     const thumbnail = mediaPostEmbedData.thumbnail;
     let flag3 = false;
@@ -87,8 +91,8 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     if (flag3) {
       flag3 = !has_media_attachment;
     }
-    const obj7 = arg1(dependencyMap[4]);
-    const tmp9 = null != avatarURL && selectedGuildId === mediaPostEmbedData.guild_id;
+    const obj7 = require(4316) /* MAX_THUMBNAIL_COUNT */;
+    tmp9 = null != avatarURL && selectedGuildId === mediaPostEmbedData.guild_id;
     const thumbnail2 = mediaPostEmbedData.thumbnail;
     let flags;
     if (null != thumbnail2) {
@@ -101,7 +105,7 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     obj = {};
     const title = mediaPostEmbedData.title;
     let str = "";
-    const obj4 = arg1(dependencyMap[8]);
+    const obj4 = require(1360) /* hasFlag */;
     if (null != title) {
       str = title;
     }
@@ -111,8 +115,8 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     obj.coverImage = thumbnailImage;
     let stringResult1;
     if (has_media_attachment) {
-      const intl2 = arg1(dependencyMap[5]).intl;
-      stringResult1 = intl2.string(arg1(dependencyMap[5]).t.Yonlia);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      stringResult1 = intl2.string(require(1212) /* getSystemLocale */.t.Yonlia);
     }
     obj.coverImageOverlayText = stringResult1;
     ({ parent_channel_id: obj5.parentChannelId, channel_id: obj5.threadId } = mediaPostEmbedData);
@@ -136,14 +140,14 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     obj.authorName = name;
     let channelName;
     if (null != parentChannel) {
-      channelName = arg1(dependencyMap[9]).computeChannelName(parentChannel, closure_5, closure_4);
-      const obj6 = arg1(dependencyMap[9]);
+      channelName = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(parentChannel, closure_5, _isNativeReflectConstruct);
+      const obj6 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
     }
     obj.channelName = channelName;
     obj.avatarUrl = avatarURL;
     obj.shouldShowBlurredThumbnailImage = has_media_attachment;
     obj.shouldContainMediaWithBackground = flag3;
-    obj.shouldSpoiler = arg1(dependencyMap[8]).hasFlag(num7, constants2.IS_SPOILER);
+    obj.shouldSpoiler = require(1360) /* hasFlag */.hasFlag(num7, constants2.IS_SPOILER);
     obj.obscureAwaitingScan = false;
     ({ flags: obj5.flags, content_scan_version: obj5.contentScanVersion } = mediaPostEmbedData);
     return obj;
@@ -163,7 +167,7 @@ export const getMediaPostEmbedChannelId = function getMediaPostEmbedChannelId(ur
 };
 export { getMediaPostEmbedChannelPath };
 export const canUseMediaPostEmbed = function canUseMediaPostEmbed(guildId, isMediaChannel) {
-  const guild = guild.getGuild(guildId);
+  guild = guild.getGuild(guildId);
   if (null != guild) {
     if (null != isMediaChannel) {
       const features = guild.features;

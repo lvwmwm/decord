@@ -1,9 +1,21 @@
-// Module ID: 5513
-// Function ID: 46947
+// Module ID: 5516
+// Function ID: 46970
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5, 1858, 653, 507, 1392, 1390, 1387, 2]
 
-// Module 5513 (_callSuper)
+// Module 5516 (_callSuper)
+import Record from "Record";
+import closure_4 from "ME";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import importDefaultResult from "Record";
+import ME from "ME";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   const obj = callback2(arg1);
   if (_isNativeReflectConstruct()) {
@@ -13,7 +25,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, undefined);
   }
-  return closure_5(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -28,44 +40,36 @@ function getEmojiSourceData() {
   return _getEmojiSourceData(...arguments);
 }
 async function _getEmojiSourceData(arg0, arg1) {
-  const HTTP = callback(closure_2[8]).HTTP;
-  let obj = { skuId: "theme_color", call: "int32", hd: "optionsContainer", code: "%Uint32ArrayPrototype%", url: closure_9.EMOJI_SOURCE_DATA(arg0) };
+  const HTTP = outer2_0(outer2_2[8]).HTTP;
+  let obj = { url: outer2_9.EMOJI_SOURCE_DATA(arg0), oldFormErrors: true, timeout: 5000, rejectWithError: true };
   const body = yield HTTP.get(obj).body;
   let type;
   if (null != body) {
     type = tmp2.type;
   }
-  if (type === constants.GUILD) {
-    obj = { guild: closure_12.createFromServer(body.guild), type: body.type };
+  if (type === outer2_11.GUILD) {
+    obj = { guild: outer2_12.createFromServer(body.guild), type: body.type };
   } else {
     let type1;
     if (null != tmp2) {
       type1 = tmp2.type;
     }
-    if (type1 === constants.APPLICATION) {
-      obj = { application: closure_13.createFromServer(tmp2.application), type: tmp2.type };
+    if (type1 === outer2_11.APPLICATION) {
+      obj = { application: outer2_13.createFromServer(tmp2.application), type: tmp2.type };
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const importDefaultResult = importDefault(dependencyMap[6]);
-({ Endpoints: closure_9, GuildFeatures: closure_10 } = arg1(dependencyMap[7]));
-const obj = { GUILD: "GUILD", APPLICATION: "APPLICATION" };
-const tmp4 = (importDefaultResult) => {
+({ Endpoints: closure_9, GuildFeatures: closure_10 } = ME);
+let obj = { GUILD: "GUILD", APPLICATION: "APPLICATION" };
+const tmp4 = ((importDefaultResult) => {
   class ExpressionSourceGuildRecord {
     constructor(arg0) {
-      tmp = closure_3(this, ExpressionSourceGuildRecord);
-      tmp2 = closure_14(this, ExpressionSourceGuildRecord);
+      tmp = outer1_3(this, ExpressionSourceGuildRecord);
+      tmp2 = outer1_14(this, ExpressionSourceGuildRecord);
       ({ id: tmp2.id, name: tmp2.name, icon: tmp2.icon, description: tmp2.description, features: tmp2.features, premiumTier: tmp2.premiumTier, premiumSubscriberCount: tmp2.premiumSubscriberCount, presenceCount: tmp2.presenceCount, memberCount: tmp2.memberCount, emojis: tmp2.emojis } = importDefaultResult);
       return tmp2;
     }
   }
-  const importDefault = ExpressionSourceGuildRecord;
   callback3(ExpressionSourceGuildRecord, importDefaultResult);
   let obj = {
     key: "getIconURL",
@@ -75,7 +79,7 @@ const tmp4 = (importDefaultResult) => {
       if (arg1 === undefined) {
         flag = false;
       }
-      let obj = ExpressionSourceGuildRecord(closure_2[9]);
+      let obj = ExpressionSourceGuildRecord(outer1_2[9]);
       obj = { id: self.id, size, icon: self.icon, canAnimate: flag };
       return obj.getGuildIconURL(obj);
     }
@@ -84,14 +88,14 @@ const tmp4 = (importDefaultResult) => {
   obj = {
     key: "getIconSource",
     value(arg0, flag) {
-      let closure_0 = this;
-      const ExpressionSourceGuildRecord = arg0;
+      const self = this;
+      let closure_1 = arg0;
       if (flag === undefined) {
         flag = false;
       }
-      return ExpressionSourceGuildRecord(closure_2[9]).getAnimatableSourceWithFallback(flag, (canAnimate) => {
-        let obj = canAnimate(closure_2[9]);
-        obj = { id: self.id, size: canAnimate, icon: self.icon, canAnimate };
+      return ExpressionSourceGuildRecord(outer1_2[9]).getAnimatableSourceWithFallback(flag, (canAnimate) => {
+        let obj = ExpressionSourceGuildRecord(outer2_2[9]);
+        obj = { id: self.id, size: closure_1, icon: self.icon, canAnimate };
         return obj.getGuildIconSource(obj);
       });
     }
@@ -108,12 +112,12 @@ const tmp4 = (importDefaultResult) => {
   items[3] = {
     key: "isDiscoverable",
     value() {
-      return this.hasFeature(constants.DISCOVERABLE);
+      return this.hasFeature(outer1_10.DISCOVERABLE);
     }
   };
   const obj2 = { key: "getGuildFromEmojiId" };
   let closure_0 = callback4(async (arg0) => {
-    const tmp = yield closure_16(arg0);
+    const tmp = yield outer2_16(arg0);
     let guild = null;
     if (null != tmp) {
       let type;
@@ -121,7 +125,7 @@ const tmp4 = (importDefaultResult) => {
         type = tmp.type;
       }
       guild = null;
-      if (type === constants.GUILD) {
+      if (type === outer2_11.GUILD) {
         guild = tmp.guild;
       }
     }
@@ -135,7 +139,7 @@ const tmp4 = (importDefaultResult) => {
     {
       key: "_mapCommon",
       value(id) {
-        const obj = { id: id.id, name: id.name, icon: id.icon, description: id.description, features: callback(closure_2[10]).toSetInplace(id.features) };
+        const obj = { id: id.id, name: id.name, icon: id.icon, description: id.description, features: callback(outer1_2[10]).toSetInplace(id.features) };
         return obj;
       }
     },
@@ -189,23 +193,23 @@ const tmp4 = (importDefaultResult) => {
           } else {
             fromGuildRecord = obj2.createFromDiscoverableGuild(guild);
           }
-          const obj = callback(closure_2[11]);
+          obj = callback(outer1_2[11]);
         }
       }
     }
   ];
   return callback(ExpressionSourceGuildRecord, items, items1);
-}(importDefaultResult);
-const tmp5 = (importDefaultResult) => {
+})(importDefaultResult);
+let closure_12 = tmp4;
+const tmp5 = ((importDefaultResult) => {
   class ExpressionSourceApplicationRecord {
     constructor(arg0) {
-      tmp = closure_3(this, ExpressionSourceApplicationRecord);
-      tmp2 = closure_14(this, ExpressionSourceApplicationRecord);
+      tmp = outer1_3(this, ExpressionSourceApplicationRecord);
+      tmp2 = outer1_14(this, ExpressionSourceApplicationRecord);
       ({ id: tmp2.id, name: tmp2.name } = importDefaultResult);
       return tmp2;
     }
   }
-  const arg1 = ExpressionSourceApplicationRecord;
   callback3(ExpressionSourceApplicationRecord, importDefaultResult);
   const items = [
     {
@@ -216,9 +220,9 @@ const tmp5 = (importDefaultResult) => {
     }
   ];
   return callback(ExpressionSourceApplicationRecord, null, items);
-}(importDefaultResult);
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/emojis/records/ExpressionSourceRecord.tsx");
+})(importDefaultResult);
+let closure_13 = tmp5;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/emojis/records/ExpressionSourceRecord.tsx");
 
 export const EmojiSourceDataTypes = obj;
 export { getEmojiSourceData };

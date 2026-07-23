@@ -1,10 +1,13 @@
-// Module ID: 12197
-// Function ID: 93742
+// Module ID: 12311
+// Function ID: 95893
 // Name: getJoinFromSupportedPlatformsIconKeys
-// Dependencies: []
+// Dependencies: [31, 653, 2]
 // Exports: useJoinFromSupportedPlatformsIconKeys
 
-// Module 12197 (getJoinFromSupportedPlatformsIconKeys)
+// Module 12311 (getJoinFromSupportedPlatformsIconKeys)
+import result from "result";
+import { ActivityGamePlatforms } from "ME";
+
 function getJoinFromSupportedPlatformsIconKeys(isGameLaunchable) {
   let currentPlatform;
   let platforms;
@@ -35,7 +38,7 @@ function getJoinFromSupportedPlatformsIconKeys(isGameLaunchable) {
         if (set.has(ActivityGamePlatforms.DESKTOP)) {
           items.push(obj.DESKTOP);
         }
-        let tmp23 = items;
+        tmp23 = items;
         if (set.has(ActivityGamePlatforms.META_QUEST)) {
           items.push(obj.VR);
           tmp23 = items;
@@ -50,22 +53,18 @@ function getJoinFromSupportedPlatformsIconKeys(isGameLaunchable) {
   }
   tmp23 = closure_3;
 }
-let closure_0 = importAll(dependencyMap[0]);
-const ActivityGamePlatforms = arg1(dependencyMap[1]).ActivityGamePlatforms;
 let obj = { DESKTOP: "desktop", MOBILE: "mobile", ANDROID: "android", IOS: "ios", PLAYSTATION: "playstation", XBOX: "xbox", VR: "vr" };
 obj = { [ActivityGamePlatforms.DESKTOP]: obj.DESKTOP, [ActivityGamePlatforms.ANDROID]: obj.ANDROID, [ActivityGamePlatforms.IOS]: obj.IOS, [ActivityGamePlatforms.XBOX]: obj.XBOX, [ActivityGamePlatforms.PS4]: obj.PLAYSTATION, [ActivityGamePlatforms.PS5]: obj.PLAYSTATION, [ActivityGamePlatforms.SAMSUNG]: null, [ActivityGamePlatforms.EMBEDDED]: null, [ActivityGamePlatforms.META_QUEST]: obj.VR };
 let closure_3 = [];
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/useJoinFromSupportedPlatformsIconKeys.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/utils/useJoinFromSupportedPlatformsIconKeys.tsx");
 
 export const IconKey = obj;
 export const ACTIVITY_GAME_PLATFORM_TO_ICON_KEY = obj;
 export { getJoinFromSupportedPlatformsIconKeys };
 export const useJoinFromSupportedPlatformsIconKeys = function useJoinFromSupportedPlatformsIconKeys(platforms) {
   platforms = platforms.platforms;
-  const React = platforms;
   const currentPlatform = platforms.currentPlatform;
-  const ActivityGamePlatforms = currentPlatform;
   const isGameLaunchable = platforms.isGameLaunchable;
   const items = [currentPlatform, platforms, isGameLaunchable];
-  return React.useMemo(() => callback({ platforms, currentPlatform, isGameLaunchable }), items);
+  return platforms.useMemo(() => outer1_4({ platforms, currentPlatform, isGameLaunchable }), items);
 };

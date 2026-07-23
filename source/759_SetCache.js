@@ -1,9 +1,11 @@
 // Module ID: 759
-// Function ID: 8818
+// Function ID: 8819
 // Name: SetCache
-// Dependencies: []
+// Dependencies: [709, 760, 761]
 
 // Module 759 (SetCache)
+import setCacheAdd from "setCacheAdd";
+
 let prototype;
 let prototype2;
 class SetCache {
@@ -13,7 +15,7 @@ class SetCache {
     if (null != global) {
       num = global.length;
     }
-    tmp = require(dependencyMap[0]);
+    tmp = require("MapCache");
     tmp = new tmp();
     self.__data__ = tmp;
     for (let num2 = 0; num2 < num; num2 = num2 + 1) {
@@ -23,9 +25,8 @@ class SetCache {
   }
 }
 ({ prototype, prototype: prototype2 } = SetCache);
-const _module = require(dependencyMap[1]);
-prototype2.push = _module;
-prototype.add = _module;
-SetCache.prototype.has = require(dependencyMap[2]);
+prototype2.push = setCacheAdd;
+prototype.add = setCacheAdd;
+SetCache.prototype.has = require("setCacheHas");
 
 export default SetCache;

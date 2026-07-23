@@ -1,11 +1,10 @@
-// Module ID: 4012
-// Function ID: 33335
+// Module ID: 4014
+// Function ID: 33340
 // Name: GuildThemePreviewOrigin
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4012 (GuildThemePreviewOrigin)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild_themes/GuildThemePreviewConstants.tsx");
+// Module 4014 (GuildThemePreviewOrigin)
+const result = require("set").fileFinishedImporting("modules/guild_themes/GuildThemePreviewConstants.tsx");
 
 export const GuildThemePreviewOrigin = { GUILD_SETTINGS: "guild_settings", PERK_MODAL: "perk_modal" };
 export const GuildThemePreviewOwner = { GUILD_SETTINGS: "guild_settings", PREVIEW_PANEL: "preview_panel" };

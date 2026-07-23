@@ -1,12 +1,11 @@
 // Module ID: 1888
-// Function ID: 21080
+// Function ID: 21081
 // Name: combineKey
-// Dependencies: []
+// Dependencies: [1889, 2]
 // Exports: combineKey, combineKeyPrefix
 
 // Module 1888 (combineKey)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/util/Key.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/util/Key.tsx");
 
 export const combineKey = function combineKey(prefix, items) {
   if (Array.isArray(items)) {
@@ -20,7 +19,7 @@ export const combineKey = function combineKey(prefix, items) {
     const sum = arraySpreadResult + 1;
   }
   if (items1.length >= 1) {
-    if (items1.length <= require(dependencyMap[0]).MAXIMUM_KEY_BITS) {
+    if (items1.length <= require(1889) /* TableId */.MAXIMUM_KEY_BITS) {
       return items1;
     }
   }
@@ -38,7 +37,7 @@ export const combineKeyPrefix = function combineKeyPrefix(prefix, items) {
     items1[arraySpreadResult] = items;
     const sum = arraySpreadResult + 1;
   }
-  if (items1.length <= require(dependencyMap[0]).MAXIMUM_KEY_BITS) {
+  if (items1.length <= require(1889) /* TableId */.MAXIMUM_KEY_BITS) {
     return items1;
   } else {
     const _Error = Error;

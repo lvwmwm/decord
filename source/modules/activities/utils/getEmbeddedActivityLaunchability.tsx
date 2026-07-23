@@ -1,10 +1,18 @@
-// Module ID: 10826
-// Function ID: 84064
+// Module ID: 10836
+// Function ID: 84113
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: []
+// Dependencies: [1348, 1838, 3758, 4146, 4155, 653, 10517, 566, 1212, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 10826 (getEmbeddedActivityLaunchability)
+// Module 10836 (getEmbeddedActivityLaunchability)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { SUPPORTED_ACTIVITIES_CHANNEL_TYPES as closure_6 } from "items3";
+import { Permissions } from "ME";
+
+const require = arg1;
 function getEmbeddedActivityLaunchability(arg0) {
   let ChannelStore;
   let GuildStore;
@@ -43,7 +51,7 @@ function getEmbeddedActivityLaunchability(arg0) {
               } else {
                 return obj.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION;
               }
-              const canResult = PermissionStore.can(Permissions.CONNECT, channel);
+              canResult = PermissionStore.can(Permissions.CONNECT, channel);
             }
           }
         }
@@ -52,40 +60,34 @@ function getEmbeddedActivityLaunchability(arg0) {
     } else {
       return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS;
     }
-    const obj2 = arg1(dependencyMap[6]);
+    obj2 = require(10517) /* isActivitiesAllowed */;
   } else {
     return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[4]).SUPPORTED_ACTIVITIES_CHANNEL_TYPES;
-const Permissions = arg1(dependencyMap[5]).Permissions;
 const obj = { CAN_LAUNCH: 0, [0]: "CAN_LAUNCH", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 1, [1]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", NO_CHANNEL_CONNECT_PERMISSION: 2, [2]: "NO_CHANNEL_CONNECT_PERMISSION", NO_CHANNEL: 3, [3]: "NO_CHANNEL", NO_GUILD: 4, [4]: "NO_GUILD", IS_AFK_CHANNEL: 5, [5]: "IS_AFK_CHANNEL", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 6, [6]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL: 7, [7]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL" };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/activities/utils/getEmbeddedActivityLaunchability.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/utils/getEmbeddedActivityLaunchability.tsx");
 
 export const EmbeddedActivityLaunchability = obj;
 export { getEmbeddedActivityLaunchability };
 export const getEmbeddedActivityLaunchabilityForChannel = function getEmbeddedActivityLaunchabilityForChannel(channelId) {
-  return getEmbeddedActivityLaunchability({ channelId, ChannelStore: closure_2, GuildStore: closure_3, PermissionStore: closure_4, VoiceStateStore: closure_5 });
+  return getEmbeddedActivityLaunchability({ channelId, ChannelStore: _isNativeReflectConstruct, GuildStore: _createForOfIteratorHelperLoose, PermissionStore: closure_4, VoiceStateStore: closure_5 });
 };
 export const useEmbeddedActivityLaunchability = function useEmbeddedActivityLaunchability(channelId) {
-  const arg1 = channelId;
-  const items = [closure_2, closure_3, closure_4, closure_5];
+  const _require = channelId;
+  const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose, closure_4, closure_5];
   const items1 = [channelId];
-  return arg1(dependencyMap[7]).useStateFromStores(items, () => callback({ channelId: arg0, ChannelStore: closure_2, GuildStore: closure_3, PermissionStore: closure_4, VoiceStateStore: closure_5 }), items1);
+  return _require(566).useStateFromStores(items, () => outer1_9({ channelId: closure_0, ChannelStore: outer1_2, GuildStore: outer1_3, PermissionStore: outer1_4, VoiceStateStore: outer1_5 }), items1);
 };
 export const getEmbeddedActivityLaunchabilityLabel = function getEmbeddedActivityLaunchabilityLabel(arg0) {
   if (obj.CAN_LAUNCH === arg0) {
-    const intl3 = arg1(dependencyMap[8]).intl;
-    return intl3.string(arg1(dependencyMap[8]).t.qJvTKQ);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.qJvTKQ);
   } else if (obj.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === arg0) {
-    const intl2 = arg1(dependencyMap[8]).intl;
-    return intl2.string(arg1(dependencyMap[8]).t.hHGrWz);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.hHGrWz);
   } else {
-    const intl = arg1(dependencyMap[8]).intl;
-    return intl.string(arg1(dependencyMap[8]).t.j29zCr);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.j29zCr);
   }
 };

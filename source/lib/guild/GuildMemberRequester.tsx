@@ -1,17 +1,19 @@
-// Module ID: 4956
-// Function ID: 42606
+// Module ID: 4959
+// Function ID: 42624
 // Name: GuildMemberRequestState
-// Dependencies: []
+// Dependencies: [6, 7, 4015, 22, 2]
 
-// Module 4956 (GuildMemberRequestState)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = () => {
+// Module 4959 (GuildMemberRequestState)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+let closure_5 = (() => {
   class GuildMemberRequestState {
     constructor(arg0, arg1) {
-      GuildMemberRequestState = arg0;
-      arg1 = arg1;
-      tmp = closure_3(this, GuildMemberRequestState);
+      closure_0 = arg0;
+      closure_1 = arg1;
+      tmp = outer1_3(this, closure_0);
       set = new Set();
       this._pendingRequests = set;
       set1 = new Set();
@@ -19,11 +21,10 @@ let closure_5 = () => {
       set2 = new Set();
       this._unacknowledgedRequests = set2;
       this._guildId = arg0;
-      this._guildMemberExists = (arg0) => arg1(arg0, arg0);
+      this._guildMemberExists = (arg0) => callback(closure_0, arg0);
       return;
     }
   }
-  const arg1 = GuildMemberRequestState;
   let obj = {
     key: "acknowledge",
     value(arg0) {
@@ -33,12 +34,12 @@ let closure_5 = () => {
       _pendingRequests.delete(arg0);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "flushRequests",
     value(arg0) {
-      const self = this;
-      const GuildMemberRequestState = this;
+      let self = this;
+      self = this;
       if (0 !== this._pendingRequests.size) {
         const items = [];
         let _pendingRequests = self._pendingRequests;
@@ -63,8 +64,8 @@ let closure_5 = () => {
   obj = {
     key: "requestUnacknowledged",
     value() {
-      const self = this;
-      const GuildMemberRequestState = this;
+      let self = this;
+      self = this;
       let tmp = 0 !== this._unacknowledgedRequests.size;
       if (tmp) {
         const prop = self._unacknowledgedRequests;
@@ -102,21 +103,20 @@ let closure_5 = () => {
     }
   };
   return callback(GuildMemberRequestState, items);
-}();
-const tmp2 = () => {
+})();
+const tmp2 = (() => {
   class GuildMemberRequester {
     constructor(arg0, arg1) {
-      GuildMemberRequester = this;
-      tmp = closure_3(this, GuildMemberRequester);
+      self = this;
+      tmp = outer1_3(this, self);
       this._guildStates = {};
-      delayedCall = new GuildMemberRequester(closure_2[2]).DelayedCall(0, () => self.flushRequests());
+      delayedCall = new GuildMemberRequester(outer1_2[2]).DelayedCall(0, () => self.flushRequests());
       this._flush = delayedCall;
       this._guildMemberExists = arg0;
       this._onChange = arg1;
       return;
     }
   }
-  const arg1 = GuildMemberRequester;
   let obj = {
     key: "reset",
     value() {
@@ -146,8 +146,8 @@ const tmp2 = () => {
   items[3] = {
     key: "flushRequests",
     value() {
-      const GuildMemberRequester = this;
-      const item = callback(closure_2[3]).forEach(this._guildStates, (flushRequests) => flushRequests.flushRequests(self._onChange));
+      const self = this;
+      const item = outer1_1(outer1_2[3]).forEach(this._guildStates, (flushRequests) => flushRequests.flushRequests(self._onChange));
     }
   };
   items[4] = {
@@ -165,8 +165,8 @@ const tmp2 = () => {
       const self = this;
       let tmp = this._guildStates[arg0];
       if (null == tmp) {
-        const prototype = ctor.prototype;
-        const tmp6 = new ctor(arg0, self._guildMemberExists);
+        const prototype = outer1_5.prototype;
+        const tmp6 = new outer1_5(arg0, self._guildMemberExists);
         self._guildStates[arg0] = tmp6;
         tmp = tmp6;
       }
@@ -176,21 +176,21 @@ const tmp2 = () => {
   items[6] = {
     key: "getDebugState",
     value(arg0) {
-      const GuildMemberRequester = arg0;
+      let closure_0 = arg0;
       const pendingRequestGuildIds = [];
       const unacknowledgedRequestGuildIds = [];
       const sentRequestGuildIds = [];
-      const item = pendingRequestGuildIds(unacknowledgedRequestGuildIds[3]).forEach(this._guildStates, (_pendingRequests) => {
+      const item = outer1_1(outer1_2[3]).forEach(this._guildStates, (_pendingRequests) => {
         _pendingRequests = _pendingRequests._pendingRequests;
-        if (_pendingRequests.has(_pendingRequests)) {
+        if (_pendingRequests.has(closure_0)) {
           pendingRequestGuildIds.push(_pendingRequests._guildId);
         }
         const _unacknowledgedRequests = _pendingRequests._unacknowledgedRequests;
-        if (_unacknowledgedRequests.has(_pendingRequests)) {
+        if (_unacknowledgedRequests.has(closure_0)) {
           unacknowledgedRequestGuildIds.push(_pendingRequests._guildId);
         }
         const _sentRequests = _pendingRequests._sentRequests;
-        if (_sentRequests.has(_pendingRequests)) {
+        if (_sentRequests.has(closure_0)) {
           sentRequestGuildIds.push(_pendingRequests._guildId);
         }
       });
@@ -198,7 +198,7 @@ const tmp2 = () => {
     }
   };
   return callback(GuildMemberRequester, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("lib/guild/GuildMemberRequester.tsx");
+})();
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("lib/guild/GuildMemberRequester.tsx");
 
 export default tmp2;

@@ -1,9 +1,17 @@
-// Module ID: 6979
-// Function ID: 55773
+// Module ID: 6984
+// Function ID: 55807
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 57, 6, 7, 6985, 6991, 4206, 2]
 
-// Module 6979 (_isNativeReflectConstruct)
+// Module 6984 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import SystemResources from "SystemResources";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,14 +26,14 @@ function parseEncoder(key10013) {
     return obj.UNKNOWN;
   } else {
     const _Object = Object;
-    const keys = Object.keys(closure_16);
+    const keys = Object.keys(table);
     let num = 0;
     if (0 < keys.length) {
       const formatted = key10013.toLowerCase();
       while (!formatted.includes(keys[num])) {
         num = num + 1;
       }
-      return closure_16[keys[num]];
+      return table[keys[num]];
     }
     return obj.UNCATEGORIZED;
   }
@@ -35,14 +43,14 @@ function parseDecoder(prop1) {
     return obj.UNKNOWN;
   } else {
     const _Object = Object;
-    const keys = Object.keys(closure_17);
+    const keys = Object.keys(table2);
     let num = 0;
     if (0 < keys.length) {
       const formatted = prop1.toLowerCase();
       while (!formatted.includes(keys[num])) {
         num = num + 1;
       }
-      return closure_17[keys[num]];
+      return table2[keys[num]];
     }
     return obj.UNCATEGORIZED;
   }
@@ -71,49 +79,43 @@ function parseCodecType(name) {
   }
   return AV1;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = [-5069146887281651000000000000000000000000000000000000000000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061521245768139, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031370271294886884, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000039003749655745725, 4432828622934684000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037835475242167895, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061520669613126, 80298912977866030000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009387430135, 1739628723789689800000000000000000000000000000000000000000000000000000000000000000000000000, 0.014687500000000075];
-let closure_10 = [];
-let closure_11 = [];
-let closure_12 = ["GiftTrollIllocon", "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK", "Ip", "GUILD_DIRECTORY_SEARCH", "GiftTrollIllocon", "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK", "Ip", "GuildSettingsRoleEditSections", "isArray", "getPremiumTypeFromRawValue", "emptyStateImageContainer", "CustomEvent", "PREMIUM_6_MONTH_GUILD", "COLLECTIBLES_SHOP_WIDE_BANNER", null, null, null, null, "CustomEvent", "PREMIUM_6_MONTH_GUILD", "COLLECTIBLES_SHOP_WIDE_BANNER", "GuildSettingsRoleEditSections", "isArray", "GAME_CLAIM", true, true, true, true, true, true];
+let closure_9 = [0, 500000, 1000000, 1500000, 2000000, 3000000, 4000000, 5000000, 6000000, 7000000, 8000000];
+let closure_10 = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
+let closure_11 = [720, 480, 360];
+let closure_12 = ["framesCodec", "framesNetwork", "packets", "packetsLost", "framesDropped", "framesCodecError", "bytes", "nackCount", "pliCount", "qpSum", "freezeCount", "pauseCount", "totalFreezesDuration", "totalPausesDuration", "totalFramesDuration", "totalDecodeTime", "keyframes", "passthroughCount", "cryptorSuccessCount", "cryptorFailureCount", "cryptorDuration", "cryptorAttempts", "cryptorMissingKeyCount", "cryptorInvalidNonceCount", "qualityDecodeErrors", "qualityDecoderReboots", "qualityScoreErrors", "qualityFrameDrops", "qualitySizeMismatches", "screenshareFramesUnique"];
 let obj = { H264: "H264", H265: "H265", VP8: "VP8", VP9: "VP9", AV1: "AV1", UNKNOWN: "UNKNOWN" };
 obj = { NVIDIA_CUDA: "nvidia_cuda", NVIDIA_DIRECT_3D: "nvidia_direct_3d", NVIDIA_VULKAN: "nvidia_vulkan", OPENH264: "openh264", VIDEOTOOLBOX: "videotoolbox", AMD_DIRECT_3D: "amd_direct_3d", AMD_VAAPI: "amd_vaapi", INTEL: "intel", INTEL_DIRECT_3D: "intel_direct_3d", INTEL_VAAPI: "intel_vaapi", VP8_LIBVPX: "vp8_libvpx", EXYNOS: "exynos", QUALCOMM: "qualcomm", MEDIATEK: "mediatek", WMF_SW: "wmf_sw", WMF_HW: "wmf_hw", WMF_DIRECT_3D: "wmf_direct_3d", WMF_DIRECT_3D_INTEL: "wmf_direct_3d_intel", WMF_DIRECT_3D_NVIDIA: "wmf_direct_3d_nvidia", WMF_DIRECT_3D_AMD: "wmf_direct_3d_amd", WMF_CHROME: "wmf_chrome", UNCATEGORIZED: "uncategorized", UNKNOWN: "unknown" };
 obj = { VIDEOTOOLBOX: "videotoolbox", VP8_LIBVPX: "vp8_libvpx", ELECTRON: "electron", FFMPEG: "ffmpeg", DAV1D: "dav1d", WEBRTC: "WebRTC", EXYNOS: "exynos", QUALCOMM: "qualcomm", MEDIATEK: "mediatek", UNCATEGORIZED: "uncategorized", D3D11VIDEODECODER: "d3d11videodecoder", ANDROID: "android", UNKNOWN: "unknown" };
-let closure_16 = Object.freeze({ mediafoundation direct3d intel: obj.WMF_DIRECT_3D_INTEL, mediafoundation direct3d nvidia: obj.WMF_DIRECT_3D_NVIDIA, mediafoundation direct3d amd: obj.WMF_DIRECT_3D_AMD, mediafoundationvideoencodeaccelerator: obj.WMF_CHROME, nvidia: cuda: obj.NVIDIA_CUDA, nvidia: direct3d: obj.NVIDIA_DIRECT_3D, nvidia: vulkan: obj.NVIDIA_VULKAN, amd: direct3d: obj.AMD_DIRECT_3D, amd: vaapi: obj.AMD_VAAPI, intel: direct3d: obj.INTEL_DIRECT_3D, intel: vaapi: obj.INTEL_VAAPI, intel: obj.INTEL, videotoolbox: obj.VIDEOTOOLBOX, openh264: obj.OPENH264, libvpx: obj.VP8_LIBVPX, c2.exynos: obj.EXYNOS, omx.exynos: obj.EXYNOS, c2.qti: obj.QUALCOMM, omx.qcom: obj.QUALCOMM, c2.mtk: obj.MEDIATEK, omx.mtk: obj.MEDIATEK, mediafoundation sw: obj.WMF_SW, mediafoundation hw: obj.WMF_HW, mediafoundation direct3d: obj.WMF_DIRECT_3D });
-let closure_17 = Object.freeze({ videotoolbox: obj.VIDEOTOOLBOX, libvpx: obj.VP8_LIBVPX, electron: obj.ELECTRON, ffmpeg: obj.FFMPEG, dav1d: obj.DAV1D, webrtc: obj.WEBRTC, c2.exynos: obj.EXYNOS, omx.exynos: obj.EXYNOS, c2.qti: obj.QUALCOMM, omx.qcom: obj.QUALCOMM, c2.mtk: obj.MEDIATEK, omx.mtk: obj.MEDIATEK, d3d11videodecoder: obj.D3D11VIDEODECODER, c2.android: obj.ANDROID, omx.google: obj.ANDROID });
+let closure_16 = Object.freeze({ "mediafoundation direct3d intel": obj.WMF_DIRECT_3D_INTEL, "mediafoundation direct3d nvidia": obj.WMF_DIRECT_3D_NVIDIA, "mediafoundation direct3d amd": obj.WMF_DIRECT_3D_AMD, mediafoundationvideoencodeaccelerator: obj.WMF_CHROME, "nvidia: cuda": obj.NVIDIA_CUDA, "nvidia: direct3d": obj.NVIDIA_DIRECT_3D, "nvidia: vulkan": obj.NVIDIA_VULKAN, "amd: direct3d": obj.AMD_DIRECT_3D, "amd: vaapi": obj.AMD_VAAPI, "intel: direct3d": obj.INTEL_DIRECT_3D, "intel: vaapi": obj.INTEL_VAAPI, intel: obj.INTEL, videotoolbox: obj.VIDEOTOOLBOX, openh264: obj.OPENH264, libvpx: obj.VP8_LIBVPX, "c2.exynos": obj.EXYNOS, "omx.exynos": obj.EXYNOS, "c2.qti": obj.QUALCOMM, "omx.qcom": obj.QUALCOMM, "c2.mtk": obj.MEDIATEK, "omx.mtk": obj.MEDIATEK, "mediafoundation sw": obj.WMF_SW, "mediafoundation hw": obj.WMF_HW, "mediafoundation direct3d": obj.WMF_DIRECT_3D });
+let closure_17 = Object.freeze({ videotoolbox: obj.VIDEOTOOLBOX, libvpx: obj.VP8_LIBVPX, electron: obj.ELECTRON, ffmpeg: obj.FFMPEG, dav1d: obj.DAV1D, webrtc: obj.WEBRTC, "c2.exynos": obj.EXYNOS, "omx.exynos": obj.EXYNOS, "c2.qti": obj.QUALCOMM, "omx.qcom": obj.QUALCOMM, "c2.mtk": obj.MEDIATEK, "omx.mtk": obj.MEDIATEK, d3d11videodecoder: obj.D3D11VIDEODECODER, "c2.android": obj.ANDROID, "omx.google": obj.ANDROID });
 const obj3 = { None: 0, [0]: "None", ClientSideDisableVideo: 1, [1]: "ClientSideDisableVideo", SenderStopped: 2, [2]: "SenderStopped" };
-const tmp3 = () => {
+let tmp3 = (() => {
   class InboundStats {
     constructor(arg0) {
-      InboundStats = this;
-      tmp = closure_7(this, InboundStats);
-      values = Object.values(closure_15);
+      self = this;
+      tmp = outer1_7(this, self);
+      values = Object.values(outer1_15);
       this.decoderBuckets = Object.fromEntries(values.map((arg0) => {
         const items = [arg0, 0];
         return items;
       }));
-      this.codecBuckets = { "Bool(false)": "Text", "Bool(false)": "resizeMode", "Bool(false)": "from", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "braintreemasterpasslanding" };
+      this.codecBuckets = { H264: 0, H265: 0, VP8: 0, VP9: 0, AV1: 0, UNKNOWN: 0 };
       this.statsWindow = [];
-      histogram = new InboundStats(closure_2[6]).Histogram();
+      histogram = new InboundStats(outer1_2[6]).Histogram();
       this.fpsHistogram = histogram;
-      histogram1 = new InboundStats(closure_2[6]).Histogram();
+      histogram1 = new InboundStats(outer1_2[6]).Histogram();
       this.bitrateHistogram = histogram1;
-      histogram2 = new InboundStats(closure_2[6]).Histogram();
+      histogram2 = new InboundStats(outer1_2[6]).Histogram();
       this.inboundBitrateEstimateHistogram = histogram2;
-      histogram3 = new InboundStats(closure_2[6]).Histogram();
+      histogram3 = new InboundStats(outer1_2[6]).Histogram();
       this.resolutionHistogram = histogram3;
-      histogram4 = new InboundStats(closure_2[6]).Histogram();
+      histogram4 = new InboundStats(outer1_2[6]).Histogram();
       this.localWantHistogram = histogram4;
-      tmp7 = closure_1(closure_2[7]);
+      tmp7 = outer1_1(outer1_2[7]);
       tmp7 = new tmp7();
       this.systemResources = tmp7;
-      this.decoderCodec = closure_13.UNKNOWN;
-      this.aggregatedProperties = { "Bool(true)": 4209, "Bool(true)": 29440, "Bool(true)": 196608, "Bool(true)": 131072, "Bool(true)": 1212219392, 0: 1358955034, 9223372036854775807: -968757770, 9223372036854775807: 1895826111, 9223372036854775807: 1, 9223372036854775807: 29953, 0: 0, 0: 59047936, 9223372036854775807: 0, -9223372036854775808: 0, -9223372036854775808: 7536640, 0: 16777216, 0: 50331648, 9223372036854775807: 1090519040, 0: 70156, 9223372036854775807: 369, -9223372036854775808: 7667968, 0: 0, 9223372036854775807: -1728053248, 0: 335544323, 0: 0, 0: 1929379840, 0: 0, 0: 2, 0: 4, 0: 25997889 };
+      this.decoderCodec = outer1_13.UNKNOWN;
+      this.aggregatedProperties = { framesCodec: 0, framesNetwork: 0, packets: 0, packetsLost: 0, framesDropped: 0, framesCodecError: 0, bytes: 0, nackCount: 0, pliCount: 0, qpSum: 0, freezeCount: 0, pauseCount: 0, totalFreezesDuration: 0, totalPausesDuration: 0, totalFramesDuration: 0, totalDecodeTime: 0, keyframes: 0, passthroughCount: 0, cryptorSuccessCount: 0, cryptorFailureCount: 0, cryptorDuration: 0, cryptorAttempts: 0, cryptorMissingKeyCount: 0, cryptorInvalidNonceCount: 0, qualityDecodeErrors: 0, qualityDecoderReboots: 0, qualityScoreErrors: 0, qualityFrameDrops: 0, qualitySizeMismatches: 0, screenshareFramesUnique: 0 };
       this.aggregationDuration = 0;
       this.bitrateBuckets = {};
       this.fpsBuckets = {};
@@ -126,30 +128,29 @@ const tmp3 = () => {
       this.minWidth = null;
       this.minHeight = null;
       this.maxConsecutiveStaticColorFrames = 0;
-      this.videoStoppedReason = closure_18.None;
+      this.videoStoppedReason = outer1_18.None;
       this.startTime = arg0.now();
-      stopWatch = new InboundStats(closure_2[8]).StopWatch(arg0);
+      stopWatch = new InboundStats(outer1_2[8]).StopWatch(arg0);
       this.videoStoppedWatch = stopWatch;
-      item = closure_9.forEach((arg0) => {
+      item = outer1_9.forEach((arg0) => {
         self.bitrateBuckets[arg0] = 0;
       });
-      item1 = closure_10.forEach((arg0) => {
+      item1 = outer1_10.forEach((arg0) => {
         self.fpsBuckets[arg0] = 0;
       });
-      item2 = closure_11.forEach((arg0) => {
+      item2 = outer1_11.forEach((arg0) => {
         self.resolutionBuckets[arg0] = 0;
       });
       return;
     }
   }
-  const arg1 = InboundStats;
   let obj = {
     key: "isVideoStopped",
     get() {
-      return this.videoStoppedReason !== closure_18.None;
+      return this.videoStoppedReason !== outer1_18.None;
     }
   };
-  const items = [obj, , , , , , , ];
+  let items = [obj, , , , , , , ];
   obj = {
     key: "videoStoppedDuration",
     get() {
@@ -163,7 +164,7 @@ const tmp3 = () => {
     value(timestamp, timestamp2) {
       const self = this;
       let num = 0;
-      if (0 < length.length) {
+      if (0 < outer1_12.length) {
         do {
           let tmp = arr[num];
           let tmp2 = timestamp[tmp];
@@ -200,7 +201,7 @@ const tmp3 = () => {
         videoStoppedWatch2.start();
       } else {
         self.videoStoppedReason = videoStoppedReason & ~arg1;
-        if (self.videoStoppedReason === closure_18.None) {
+        if (self.videoStoppedReason === outer1_18.None) {
           const statsWindow = self.statsWindow;
           statsWindow.splice(0);
           const videoStoppedWatch = self.videoStoppedWatch;
@@ -223,8 +224,8 @@ const tmp3 = () => {
       let resolution;
       let timestamp;
       let timestamp2;
-      const self = this;
-      const InboundStats = this;
+      let self = this;
+      self = this;
       if (!this.isVideoStopped) {
         const statsWindow = self.statsWindow;
         statsWindow.push(cryptorSuccessCount);
@@ -259,7 +260,7 @@ const tmp3 = () => {
                 codecBuckets[codecType] = codecBuckets[codecType] + result1;
                 let tmp4 = null != tmp13.codecType;
                 if (tmp4) {
-                  tmp4 = tmp13.codecType !== constants.UNKNOWN;
+                  tmp4 = tmp13.codecType !== outer1_13.UNKNOWN;
                 }
                 if (tmp4) {
                   self.encoderCodec = tmp13.codecType;
@@ -306,7 +307,7 @@ const tmp3 = () => {
                 codecBuckets2[codecType] = codecBuckets2[codecType] + result1;
                 let tmp11 = null != tmp13.codecType;
                 if (tmp11) {
-                  tmp11 = tmp13.codecType !== constants.UNKNOWN;
+                  tmp11 = tmp13.codecType !== outer1_13.UNKNOWN;
                 }
                 if (tmp11) {
                   self.decoderCodec = tmp13.codecType;
@@ -316,7 +317,7 @@ const tmp3 = () => {
           }
           if (self.statsWindow.length >= 6) {
             ({ bytes: bytes2, framesCodec: framesCodec2, timestamp: timestamp2 } = self.statsWindow[self.statsWindow.length - 3]);
-            const item = closure_11.forEach((arg0) => {
+            const item = outer1_11.forEach((arg0) => {
               if (resolution <= arg0) {
                 const resolutionBuckets = self.resolutionBuckets;
                 resolutionBuckets[arg0] = resolutionBuckets[arg0] + result1;
@@ -325,13 +326,13 @@ const tmp3 = () => {
             const result2 = (timestamp - timestamp2) / 1000;
             const result3 = 8 * (bytes - bytes2) / result2;
             const result4 = (framesCodec - framesCodec2) / result2;
-            const item1 = closure_9.forEach((arg0) => {
+            const item1 = outer1_9.forEach((arg0) => {
               if (result3 <= arg0) {
                 const bitrateBuckets = self.bitrateBuckets;
                 bitrateBuckets[arg0] = bitrateBuckets[arg0] + result1;
               }
             });
-            const item2 = closure_10.forEach((arg0) => {
+            const item2 = outer1_10.forEach((arg0) => {
               if (result4 <= arg0) {
                 const fpsBuckets = self.fpsBuckets;
                 fpsBuckets[arg0] = fpsBuckets[arg0] + result1;
@@ -375,8 +376,8 @@ const tmp3 = () => {
       const set = new Set();
       const entries = Object.entries(this.codecBuckets);
       for (let num = 0; num < entries.length; num = num + 1) {
-        let tmp = callback2;
-        let tmp2 = callback2(entries[num], 2);
+        let tmp = outer1_6;
+        let tmp2 = outer1_6(entries[num], 2);
         if (tmp2[1] > 0) {
           let addResult = set.add(tmp3);
         }
@@ -385,13 +386,13 @@ const tmp3 = () => {
     }
   };
   return callback2(InboundStats, items);
-}();
-const obj1 = { mediafoundation direct3d intel: obj.WMF_DIRECT_3D_INTEL, mediafoundation direct3d nvidia: obj.WMF_DIRECT_3D_NVIDIA, mediafoundation direct3d amd: obj.WMF_DIRECT_3D_AMD, mediafoundationvideoencodeaccelerator: obj.WMF_CHROME, nvidia: cuda: obj.NVIDIA_CUDA, nvidia: direct3d: obj.NVIDIA_DIRECT_3D, nvidia: vulkan: obj.NVIDIA_VULKAN, amd: direct3d: obj.AMD_DIRECT_3D, amd: vaapi: obj.AMD_VAAPI, intel: direct3d: obj.INTEL_DIRECT_3D, intel: vaapi: obj.INTEL_VAAPI, intel: obj.INTEL, videotoolbox: obj.VIDEOTOOLBOX, openh264: obj.OPENH264, libvpx: obj.VP8_LIBVPX, c2.exynos: obj.EXYNOS, omx.exynos: obj.EXYNOS, c2.qti: obj.QUALCOMM, omx.qcom: obj.QUALCOMM, c2.mtk: obj.MEDIATEK, omx.mtk: obj.MEDIATEK, mediafoundation sw: obj.WMF_SW, mediafoundation hw: obj.WMF_HW, mediafoundation direct3d: obj.WMF_DIRECT_3D };
-const obj2 = { videotoolbox: obj.VIDEOTOOLBOX, libvpx: obj.VP8_LIBVPX, electron: obj.ELECTRON, ffmpeg: obj.FFMPEG, dav1d: obj.DAV1D, webrtc: obj.WEBRTC, c2.exynos: obj.EXYNOS, omx.exynos: obj.EXYNOS, c2.qti: obj.QUALCOMM, omx.qcom: obj.QUALCOMM, c2.mtk: obj.MEDIATEK, omx.mtk: obj.MEDIATEK, d3d11videodecoder: obj.D3D11VIDEODECODER, c2.android: obj.ANDROID, omx.google: obj.ANDROID };
-const tmp2 = () => {
+})();
+const obj1 = { "mediafoundation direct3d intel": obj.WMF_DIRECT_3D_INTEL, "mediafoundation direct3d nvidia": obj.WMF_DIRECT_3D_NVIDIA, "mediafoundation direct3d amd": obj.WMF_DIRECT_3D_AMD, mediafoundationvideoencodeaccelerator: obj.WMF_CHROME, "nvidia: cuda": obj.NVIDIA_CUDA, "nvidia: direct3d": obj.NVIDIA_DIRECT_3D, "nvidia: vulkan": obj.NVIDIA_VULKAN, "amd: direct3d": obj.AMD_DIRECT_3D, "amd: vaapi": obj.AMD_VAAPI, "intel: direct3d": obj.INTEL_DIRECT_3D, "intel: vaapi": obj.INTEL_VAAPI, intel: obj.INTEL, videotoolbox: obj.VIDEOTOOLBOX, openh264: obj.OPENH264, libvpx: obj.VP8_LIBVPX, "c2.exynos": obj.EXYNOS, "omx.exynos": obj.EXYNOS, "c2.qti": obj.QUALCOMM, "omx.qcom": obj.QUALCOMM, "c2.mtk": obj.MEDIATEK, "omx.mtk": obj.MEDIATEK, "mediafoundation sw": obj.WMF_SW, "mediafoundation hw": obj.WMF_HW, "mediafoundation direct3d": obj.WMF_DIRECT_3D };
+const obj2 = { videotoolbox: obj.VIDEOTOOLBOX, libvpx: obj.VP8_LIBVPX, electron: obj.ELECTRON, ffmpeg: obj.FFMPEG, dav1d: obj.DAV1D, webrtc: obj.WEBRTC, "c2.exynos": obj.EXYNOS, "omx.exynos": obj.EXYNOS, "c2.qti": obj.QUALCOMM, "omx.qcom": obj.QUALCOMM, "c2.mtk": obj.MEDIATEK, "omx.mtk": obj.MEDIATEK, d3d11videodecoder: obj.D3D11VIDEODECODER, "c2.android": obj.ANDROID, "omx.google": obj.ANDROID };
+let tmp2 = (() => {
   class RawVideoStats {
     constructor() {
-      tmp = closure_7(this, RawVideoStats);
+      tmp = outer1_7(this, RawVideoStats);
       this.bytes = 0;
       this.framesCodec = 0;
       this.framesCodecError = null;
@@ -442,7 +443,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = RawVideoStats;
   let obj = {
     key: "parseInboundStats",
     value(resolution, timestamp) {
@@ -476,8 +476,8 @@ const tmp2 = () => {
         tmp.majorResolution = num4;
         tmp.timestamp = timestamp;
         ({ nackCount: tmp.nackCount, pliCount: tmp.pliCount } = resolution);
-        tmp.decoder = callback3(resolution.decoderImplementationName);
-        tmp.codecType = callback4(resolution.codec.name);
+        tmp.decoder = outer1_21(resolution.decoderImplementationName);
+        tmp.codecType = outer1_22(resolution.codec.name);
         tmp.qpSum = 0;
         ({ freezeCount: tmp.freezeCount, pauseCount: tmp.pauseCount, totalFreezesDuration: tmp.totalFreezesDuration, totalPausesDuration: tmp.totalPausesDuration, totalFramesDuration: tmp.totalFramesDuration, totalDecodeTime } = resolution);
         let num5 = 0;
@@ -585,9 +585,9 @@ const tmp2 = () => {
         }
         obj.majorResolution = num5;
         obj.timestamp = timestamp;
-        obj.encoder = callback2(framesSent.encoderImplementationName);
+        obj.encoder = outer1_20(framesSent.encoderImplementationName);
         obj.decoder = null;
-        obj.codecType = callback4(framesSent.codec.name);
+        obj.codecType = outer1_22(framesSent.codec.name);
         ({ nackCount: obj.nackCount, pliCount: obj.pliCount, qpSum: obj.qpSum, freezeCount } = framesSent);
         let num6 = 0;
         if (null != freezeCount) {
@@ -745,47 +745,47 @@ const tmp2 = () => {
   };
   items[1] = obj;
   return callback2(RawVideoStats, null, items);
-}();
-const tmp4 = (arg0) => {
+})();
+let tmp4 = ((arg0) => {
   class OutboundStats {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_7(this, OutboundStats);
+      tmp = outer1_7(this, OutboundStats);
       items1 = [...items];
-      obj = closure_4(OutboundStats);
-      tmp2 = closure_3;
-      if (closure_19()) {
+      obj = outer1_4(OutboundStats);
+      tmp2 = outer1_3;
+      if (outer1_19()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_4;
-        constructResult = Reflect.construct(obj, items1, closure_4(self).constructor);
+        tmp5 = outer1_4;
+        constructResult = Reflect.construct(obj, items1, outer1_4(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      values = Object.values(closure_14);
+      values = Object.values(outer1_14);
       tmp2Result.encoderBuckets = Object.fromEntries(values.map((arg0) => {
         const items = [arg0, 0];
         return items;
       }));
-      tmp2Result.encoderCodec = closure_13.UNKNOWN;
+      tmp2Result.encoderCodec = outer1_13.UNKNOWN;
       tmp2Result.targetFrames = 0;
       tmp2Result.targetBytesMax = 0;
       tmp2Result.targetBytesNetwork = 0;
-      histogram = new OutboundStats(closure_2[6]).Histogram();
+      histogram = new OutboundStats(outer1_2[6]).Histogram();
       tmp2Result.targetBitrateHistogram = histogram;
       tmp2Result.outboundBytesAvailable = 0;
-      histogram1 = new OutboundStats(closure_2[6]).Histogram();
+      histogram1 = new OutboundStats(outer1_2[6]).Histogram();
       tmp2Result.outboundBandwidthSurplus = histogram1;
       tmp2Result.averageEncodeTime = 0;
       tmp2Result.vmafScoreSum = 0;
       tmp2Result.vmafScoreNum = 0;
-      histogram2 = new OutboundStats(closure_2[6]).Histogram();
+      histogram2 = new OutboundStats(outer1_2[6]).Histogram();
       tmp2Result.vmafHistogram = histogram2;
       tmp2Result.psnrDbSum = 0;
       tmp2Result.psnrDbNum = 0;
-      histogram3 = new OutboundStats(closure_2[6]).Histogram();
+      histogram3 = new OutboundStats(outer1_2[6]).Histogram();
       tmp2Result.psnrHistogram = histogram3;
       tmp2Result.qualityDecodeErrors = 0;
       tmp2Result.qualityDecoderReboots = 0;
@@ -802,9 +802,8 @@ const tmp4 = (arg0) => {
       return tmp2Result;
     }
   }
-  const arg1 = OutboundStats;
   callback(OutboundStats, arg0);
-  const items = [
+  let items = [
     {
       key: "appendTargetRates",
       value(arg0, arg1, arg2, arg3) {
@@ -840,8 +839,8 @@ const tmp4 = (arg0) => {
     }
   ];
   return callback2(OutboundStats, items);
-}(tmp3);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("lib/VideoQualityStats.tsx");
+})(tmp3);
+let result = require("_inherits").fileFinishedImporting("lib/VideoQualityStats.tsx");
 
 export const CodecTypes = obj;
 export const Encoders = obj;

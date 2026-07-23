@@ -1,11 +1,12 @@
 // Module ID: 840
-// Function ID: 9330
+// Function ID: 9331
 // Name: forEachEnvelopeItem
-// Dependencies: [0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [65, 57, 802, 798, 841, 814]
 // Exports: addItemToEnvelope, createAttachmentEnvelopeItem, createEnvelope, createEventEnvelopeHeaders, createSpanEnvelopeItem, envelopeContainsItemType, envelopeItemTypeToDataCategory, getSdkMetadataForEnvelopeHeader, parseEnvelope, serializeEnvelope
 
 // Module 840 (forEachEnvelopeItem)
-import "__exportStarResult1";
+import _toConsumableArray from "_toConsumableArray";
+import _slicedToArray from "_slicedToArray";
 
 function forEachEnvelopeItem(arg0, arg1) {
   const iter = arg0[1][Symbol.iterator]();
@@ -16,14 +17,12 @@ function forEachEnvelopeItem(arg0, arg1) {
       iter.return();
       let flag = true;
       return true;
-    } else {
-      // continue
     }
   }
   return false;
 }
 function encodeUTF8(arg0) {
-  const sentryCarrier = require(dependencyMap[2]).getSentryCarrier(require(dependencyMap[3]).GLOBAL_OBJ);
+  const sentryCarrier = require(802) /* getSentryCarrier */.getSentryCarrier(require(798).GLOBAL_OBJ);
   if (sentryCarrier.encodePolyfill) {
     let encodePolyfillResult = sentryCarrier.encodePolyfill(arg0);
   } else {
@@ -33,16 +32,15 @@ function encodeUTF8(arg0) {
   }
   return encodePolyfillResult;
 }
-let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = {};
+let closure_4 = { session: "session", sessions: "session", attachment: "attachment", transaction: "transaction", event: "error", client_report: "internal", user_report: "default", profile: "profile", profile_chunk: "profile", replay_event: "replay", replay_recording: "replay", check_in: "monitor", feedback: "feedback", span: "span", raw_security: "security", log: "log_item", metric: "metric", trace_metric: "metric" };
 
 export const addItemToEnvelope = function addItemToEnvelope(arg0, arg1) {
-  const tmp = callback(arg0, 2);
+  const tmp = _slicedToArray(arg0, 2);
   const items = [tmp[0], ];
   const items1 = [];
   const items2 = [arg1];
-  items[1] = items1.concat(__exportStarResult1(tmp[1]), items2);
+  items[1] = items1.concat(_toConsumableArray(tmp[1]), items2);
   return items;
 };
 export const createAttachmentEnvelopeItem = function createAttachmentEnvelopeItem(data) {
@@ -80,9 +78,9 @@ export const createEventEnvelopeHeaders = function createEventEnvelopeHeaders(ev
     tmp4 = arg3;
   }
   if (tmp4) {
-    obj = { dsn: require(dependencyMap[5]).dsnToString(arg3) };
+    obj = { dsn: require(814) /* dsnFromString */.dsnToString(arg3) };
     tmp4 = obj;
-    const obj5 = require(dependencyMap[5]);
+    const obj5 = require(814) /* dsnFromString */;
   }
   let tmp7 = prop;
   if (prop) {
@@ -96,11 +94,11 @@ export const createSpanEnvelopeItem = function createSpanEnvelopeItem(arg0) {
   return items;
 };
 export const envelopeContainsItemType = function envelopeContainsItemType(arg0, arg1) {
-  const require = arg1;
-  return forEachEnvelopeItem(arg0, (arg0, arg1) => arg1.includes(arg1));
+  let closure_0 = arg1;
+  return forEachEnvelopeItem(arg0, (arg0, arg1) => closure_0.includes(arg1));
 };
 export const envelopeItemTypeToDataCategory = function envelopeItemTypeToDataCategory(arg0) {
-  return closure_4[arg0];
+  return table[arg0];
 };
 export { forEachEnvelopeItem };
 export const getSdkMetadataForEnvelopeHeader = function getSdkMetadataForEnvelopeHeader(sdk) {
@@ -114,10 +112,9 @@ export const getSdkMetadataForEnvelopeHeader = function getSdkMetadataForEnvelop
 };
 export const parseEnvelope = function parseEnvelope(arg0) {
   function readBinary(length) {
-    const tmp = tmp.subarray(length + 1);
+    tmp = tmp.subarray(length + 1);
     return tmp.subarray(0, length);
   }
-  const dependencyMap = readBinary;
   function readJson() {
     let length = tmp.indexOf(10);
     if (length < 0) {
@@ -160,22 +157,22 @@ export const serializeEnvelope = function serializeEnvelope(arg0) {
       if ("string" === typeof json) {
         let sum = arr + json;
       } else {
-        sum = [callback(arr), json];
+        sum = [outer1_6(arr), json];
       }
-      let arr = sum;
+      arr = sum;
     } else {
       let tmp2 = json;
       if ("string" === typeof json) {
-        tmp2 = callback(json);
+        tmp2 = outer1_6(json);
       }
       arr = arr.push(tmp2);
     }
   }
-  const tmp = callback(arg0, 2);
+  const tmp = _slicedToArray(arg0, 2);
   let closure_0 = JSON.stringify(tmp[0]);
   while (tmp2 !== undefined) {
-    let tmp15 = callback;
-    let tmp16 = callback(tmp3, 2);
+    let tmp15 = _slicedToArray;
+    let tmp16 = _slicedToArray(tmp3, 2);
     let tmp17 = tmp16[1];
     let tmp18 = tmp17;
     let tmp19 = append;
@@ -193,7 +190,7 @@ export const serializeEnvelope = function serializeEnvelope(arg0) {
         let tmp8 = json;
         let appendResult1 = append(json);
       }
-      // continue
+      continue;
     }
     let tmp10 = append;
     let tmp11 = tmp17;
@@ -202,7 +199,7 @@ export const serializeEnvelope = function serializeEnvelope(arg0) {
   if ("string" === typeof closure_0) {
     let tmp14 = closure_0;
   } else {
-    tmp14 = function concatBuffers(closure_0) {
+    tmp14 = (function concatBuffers(closure_0) {
       const uint8Array = new Uint8Array(closure_0.reduce((arg0, arg1) => arg0 + arg1.length, 0));
       let num = 0;
       for (const item10018 of arg0) {
@@ -210,9 +207,10 @@ export const serializeEnvelope = function serializeEnvelope(arg0) {
         let tmp3 = num;
         let result = uint8Array.set(item10018, num);
         num = num + item10018.length;
+        continue;
       }
       return uint8Array;
-    }(closure_0);
+    })(closure_0);
   }
   return tmp14;
 };

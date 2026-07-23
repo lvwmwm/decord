@@ -1,49 +1,51 @@
-// Module ID: 12787
-// Function ID: 97962
+// Module ID: 12901
+// Function ID: 100118
 // Name: GuildPicker
-// Dependencies: []
+// Dependencies: [31, 33, 12902, 12903, 4098, 8382, 1934, 1212, 2]
 // Exports: default
 
-// Module 12787 (GuildPicker)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_settings_picker/native/components/GuildPicker.tsx");
+// Module 12901 (GuildPicker)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("useFilteredGuilds").fileFinishedImporting("modules/guild_settings_picker/native/components/GuildPicker.tsx");
 
 export default function GuildPicker(isGuildIncluded) {
+  let dependencyMap;
   let selectedGuild;
   const guildId = isGuildIncluded.guildId;
-  const arg1 = guildId;
-  const importDefault = isGuildIncluded.onChange;
-  ({ options: closure_2, selectedGuild } = importDefault(dependencyMap[2])({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
-  const obj = {};
+  const onChange = isGuildIncluded.onChange;
+  ({ options: dependencyMap, selectedGuild } = onChange(12902)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
+  let obj = {};
   let name;
-  const tmp = importDefault(dependencyMap[2])({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
+  const tmp = onChange(12902)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
   const tmp2 = jsx;
   if (null != selectedGuild) {
     name = selectedGuild.name;
   }
   obj.label = name;
   obj.onPress = function onPress() {
-    let obj = onChange(paths[4]);
+    let obj = onChange(outer1_2[4]);
     obj = {};
-    const intl = guildId(paths[7]).intl;
-    obj.title = intl.string(guildId(paths[7]).t.etZ9tX);
-    obj.items = paths;
+    const intl = guildId(outer1_2[7]).intl;
+    obj.title = intl.string(guildId(outer1_2[7]).t.etZ9tX);
+    obj.items = closure_2;
     obj.onItemSelect = function onItemSelect(arg0) {
       if (null != arg0) {
-        if (null != callback) {
-          callback(arg0);
+        if (null != outer1_1) {
+          outer1_1(arg0);
         }
       }
       setImmediate(() => {
-        callback(closure_2[4]).hideActionSheet("GuildPicker");
+        onChange(outer3_2[4]).hideActionSheet("GuildPicker");
       });
     };
     obj.selectedItem = guildId;
     obj.hasIcons = false;
-    obj.openLazy(guildId(paths[6])(paths[5], paths.paths), "GuildPicker", obj);
+    obj.openLazy(guildId(outer1_2[6])(outer1_2[5], outer1_2.paths), "GuildPicker", obj);
   };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.placeholder = intl.string(arg1(dependencyMap[7]).t.etZ9tX);
-  return tmp2(importDefault(dependencyMap[3]), obj);
+  let intl = guildId(1212).intl;
+  obj.placeholder = intl.string(guildId(1212).t.etZ9tX);
+  return tmp2(onChange(12903), obj);
 };

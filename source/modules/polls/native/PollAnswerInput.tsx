@@ -1,20 +1,28 @@
-// Module ID: 11321
-// Function ID: 88098
+// Module ID: 11331
+// Function ID: 88148
 // Name: ImageInput
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0]
+// Dependencies: [31, 27, 1348, 4468, 7071, 1852, 33, 4130, 689, 11332, 1212, 7003, 4660, 1273, 9326, 7938, 4098, 11333, 1934, 8008, 7495, 4090, 11336, 2]
 // Exports: default
 
-// Module 11321 (ImageInput)
-import closure_3 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import { DraftType } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { EmojiIntention } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 11331 (ImageInput)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { DraftType } from "_isNativeReflectConstruct";
+import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER";
+import { EmojiIntention } from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
+let closure_10;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_9;
+const require = arg1;
 function ImageInput(openImageInputActionSheet) {
   let answerIndex;
   let channelId;
@@ -24,24 +32,20 @@ function ImageInput(openImageInputActionSheet) {
   let localCreationAnswerId;
   let openExpressionPicker;
   ({ channelId, localCreationAnswerId, image } = openImageInputActionSheet);
-  const arg1 = image;
   ({ openExpressionPicker, emojiSize } = openImageInputActionSheet);
   if (emojiSize === undefined) {
     emojiSize = 24;
   }
   ({ imageSize, answerIndex } = openImageInputActionSheet);
-  const importDefault = answerIndex;
   openImageInputActionSheet = openImageInputActionSheet.openImageInputActionSheet;
-  let dependencyMap;
-  let React;
-  const tmp2 = importDefault(dependencyMap[9])(channelId, localCreationAnswerId, image, imageSize, emojiSize);
-  const upload = tmp2.upload;
-  dependencyMap = upload;
-  const setUploadSize = tmp2.setUploadSize;
-  React = setUploadSize;
+  let upload;
+  let setUploadSize;
+  const tmp2 = answerIndex(upload[9])(channelId, localCreationAnswerId, image, imageSize, emojiSize);
+  upload = tmp2.upload;
+  setUploadSize = tmp2.setUploadSize;
   const items = [image, upload, answerIndex];
   const items1 = [setUploadSize];
-  const memo = React.useMemo(() => {
+  const memo = setUploadSize.useMemo(() => {
     let emoji;
     if (null != image) {
       emoji = image.emoji;
@@ -66,7 +70,7 @@ function ImageInput(openImageInputActionSheet) {
     }
   }, items);
   let tmp5 = null != upload;
-  const callback = React.useCallback((nativeEvent) => {
+  const callback = setUploadSize.useCallback((nativeEvent) => {
     setUploadSize(nativeEvent.nativeEvent.layout.width);
   }, items1);
   if (!tmp5) {
@@ -89,73 +93,73 @@ function ImageInput(openImageInputActionSheet) {
     tmp9 = callback;
   }
   obj.onLayout = tmp9;
-  const items2 = [openImageInputActionSheet.containerStyle, null != upload && __exportStarResult1().uploadContainer];
+  const items2 = [openImageInputActionSheet.containerStyle, null != upload && _createForOfIteratorHelperLoose().uploadContainer];
   obj.style = items2;
   if (tmp5) {
     obj = { children: tmp2.renderImage };
     let tmp10Result = tmp10(closure_6, obj);
   } else {
     obj = { source: openImageInputActionSheet.iconSrc };
-    tmp10Result = tmp10(arg1(dependencyMap[13]).Icon, obj);
+    tmp10Result = tmp10(image(upload[13]).Icon, obj);
   }
   obj.children = tmp10Result;
-  return closure_12(arg1(dependencyMap[12]).PressableOpacity, obj);
+  return closure_12(image(upload[12]).PressableOpacity, obj);
 }
-({ Keyboard: closure_4, TouchableOpacity: closure_5, View: closure_6 } = __exportStarResult1);
-({ MAX_POLL_ANSWER_LENGTH: closure_9, POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY: closure_10 } = __exportStarResult1);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = __exportStarResult1);
-__exportStarResult1 = { defaultContainer: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
-__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("__exportStarResult1").radii.lg };
-__exportStarResult1.defaultImageAndTextContainer = __exportStarResult1;
-__exportStarResult1.cannotRemove = { marginRight: 30 };
-__exportStarResult1.defaultImageContainer = { "Null": true, "Null": true, "Null": true, "Null": true };
-__exportStarResult1.pollAnswerTextInput = { icon: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, apply: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
-const obj1 = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000004133748228085058, "Bool(true)": 241505615215171200000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000004667261426595996, color: require("__exportStarResult1").colors.TEXT_MUTED };
-__exportStarResult1.defaultRemoveButtonContainer = obj1;
-__exportStarResult1.uploadContainer = { alignItems: "flex-start" };
-__exportStarResult1.errorInput = { borderColor: require("__exportStarResult1").colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/polls/native/PollAnswerInput.tsx");
+({ Keyboard: closure_4, TouchableOpacity: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ MAX_POLL_ANSWER_LENGTH: closure_9, POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY: closure_10 } = POLL_ATTACHMENT_FOLDER);
+({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
+_createForOfIteratorHelperLoose = { defaultContainer: { flexDirection: "row", alignItems: "center" } };
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, flex: 1, overflow: "hidden" };
+_createForOfIteratorHelperLoose.defaultImageAndTextContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.cannotRemove = { marginRight: 30 };
+_createForOfIteratorHelperLoose.defaultImageContainer = { width: 60, height: 48, justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.pollAnswerTextInput = { flex: 1, paddingStart: 0 };
+const obj1 = { paddingLeft: 6, height: 48, justifyContent: "center", color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose.defaultRemoveButtonContainer = obj1;
+_createForOfIteratorHelperLoose.uploadContainer = { alignItems: "flex-start" };
+_createForOfIteratorHelperLoose.errorInput = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/polls/native/PollAnswerInput.tsx");
 
 export default function PollAnswerInput(answer) {
   let canRemoveAnswer;
+  let result;
+  let closure_4;
+  let closure_5;
+  let closure_6;
   let error;
   let inputRef;
   let onSubmitEditing;
   answer = answer.answer;
-  const arg1 = answer;
   const index = answer.index;
-  const importDefault = index;
   const channelId = answer.channelId;
-  const dependencyMap = channelId;
-  ({ onAnswerTextChange: closure_3, onAnswerEmojiSelect: closure_4, canRemoveAnswer, onRemoveAnswer: closure_5, onRemoveAnswerImage: closure_6, error } = answer);
+  ({ onAnswerTextChange: result, onAnswerEmojiSelect: closure_4, canRemoveAnswer, onRemoveAnswer: closure_5, onRemoveAnswerImage: closure_6, error } = answer);
   function openExpressionPicker() {
     const channel = localCreationAnswerId.getChannel(channelId);
     if (null != channel) {
-      closure_4.dismiss();
+      outer1_4.dismiss();
       let obj = answer(channelId[14]);
       obj = {
         channel,
         onPressEmoji(arg0) {
-            callback(arg0, closure_1);
+            outer1_4(arg0, outer1_1);
           },
-        pickerIntention: constants.POLLS,
+        pickerIntention: outer1_11.POLLS,
         startExpanded: false,
         autoFocus: false
       };
       const result = obj.openEmojiPickerActionSheet(obj);
     }
   }
-  const DraftType = openExpressionPicker;
   function handleSaveAltText(description) {
     let obj = index(channelId[15]);
     obj = { description };
     obj.update(channelId, answer.localCreationAnswerId, openExpressionPicker.Poll, obj);
   }
   ({ inputRef, onSubmitEditing } = answer);
-  const tmp = __exportStarResult1();
+  const tmp = _createForOfIteratorHelperLoose();
   const localCreationAnswerId = answer.localCreationAnswerId;
-  let closure_7 = localCreationAnswerId;
   let tmp2 = null != error;
   if (tmp2) {
     tmp2 = error.length > 0;
@@ -186,18 +190,18 @@ export default function PollAnswerInput(answer) {
       openImageInputActionSheet() {
         let obj = index(channelId[16]);
         obj = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage: closure_6, openExpressionPicker };
-        obj.openLazy(answer(channelId[18])(channelId[17], channelId.paths), closure_10, obj);
+        obj.openLazy(answer(channelId[18])(channelId[17], channelId.paths), outer1_10, obj);
       },
-      iconSrc: importDefault(dependencyMap[19]),
+      iconSrc: index(channelId[19]),
       containerStyle: tmp.defaultImageContainer,
       imageSize: 48,
       answerIndex: index
     }),
 
   ];
-  const obj2 = { usePlaceholderAnimatedStyle: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011659129370058801, GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009371452544228291, GENERIC_REGEX: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000119768426936, overflow: -198606573258742300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ref: inputRef };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj2.placeholder = intl.string(arg1(dependencyMap[10]).t.NNHVlv);
+  const obj2 = { ref: inputRef, textAlignVertical: "center", showTopContainer: false, showBorder: false };
+  const intl = answer(channelId[10]).intl;
+  obj2.placeholder = intl.string(answer(channelId[10]).t.NNHVlv);
   obj2.onChange = function onChange(text) {
     return callback({ text, index, localCreationAnswerId });
   };
@@ -205,21 +209,21 @@ export default function PollAnswerInput(answer) {
   obj2.blurOnSubmit = false;
   obj2.style = tmp.pollAnswerTextInput;
   obj2.textContentType = "none";
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj2.accessibilityLabel = intl2.formatToPlainString(arg1(dependencyMap[10]).t.3+V8G9, { answerNumber: index + 1 });
+  const intl2 = answer(channelId[10]).intl;
+  obj2.accessibilityLabel = intl2.formatToPlainString(answer(channelId[10]).t["3+V8G9"], { answerNumber: index + 1 });
   let formatToPlainStringResult;
   if (tmp2) {
-    const intl3 = arg1(dependencyMap[10]).intl;
+    const intl3 = answer(channelId[10]).intl;
     const obj4 = { errorMessage: error };
-    formatToPlainStringResult = intl3.formatToPlainString(arg1(dependencyMap[10]).t.jnq5Ho, obj4);
+    formatToPlainStringResult = intl3.formatToPlainString(answer(channelId[10]).t.jnq5Ho, obj4);
   }
   obj2.accessibilityHint = formatToPlainStringResult;
   obj2.maxLength = handleSaveAltText;
   obj2.returnKeyType = "next";
   obj2.required = true;
   obj2.autoCorrect = true;
-  obj2.aria-invalid = error;
-  items2[1] = callback(arg1(dependencyMap[20]).FormInput, obj2);
+  obj2["aria-invalid"] = error;
+  items2[1] = callback(answer(channelId[20]).FormInput, obj2);
   obj.children = items2;
   const items3 = [closure_13(closure_6, obj), ];
   if (canRemoveAnswer) {
@@ -230,11 +234,11 @@ export default function PollAnswerInput(answer) {
       accessibilityRole: "button",
       style: tmp.defaultRemoveButtonContainer
     };
-    const intl4 = arg1(dependencyMap[10]).intl;
+    const intl4 = answer(channelId[10]).intl;
     const obj6 = { answerNumber: index + 1 };
-    obj5.accessibilityLabel = intl4.formatToPlainString(arg1(dependencyMap[10]).t.22fjEc, obj6);
-    const obj7 = { size: arg1(dependencyMap[13]).Icon.Sizes.MEDIUM, source: importDefault(dependencyMap[21]), color: tmp.defaultRemoveButtonContainer.color };
-    obj5.children = callback(arg1(dependencyMap[13]).Icon, obj7);
+    obj5.accessibilityLabel = intl4.formatToPlainString(answer(channelId[10]).t["22fjEc"], obj6);
+    const obj7 = { size: answer(channelId[13]).Icon.Sizes.MEDIUM, source: index(channelId[21]), color: tmp.defaultRemoveButtonContainer.color };
+    obj5.children = callback(answer(channelId[13]).Icon, obj7);
     canRemoveAnswer = callback(closure_5, obj5);
   }
   items3[1] = canRemoveAnswer;
@@ -242,7 +246,7 @@ export default function PollAnswerInput(answer) {
   const items4 = [closure_13(closure_6, obj), ];
   if (tmp2) {
     const obj8 = { message: error };
-    tmp2 = callback(importDefault(dependencyMap[22]), obj8);
+    tmp2 = callback(index(channelId[22]), obj8);
   }
   items4[1] = tmp2;
   obj.children = items4;

@@ -1,12 +1,11 @@
-// Module ID: 5709
-// Function ID: 49088
+// Module ID: 5714
+// Function ID: 49115
 // Name: items
-// Dependencies: []
+// Dependencies: [1282, 2]
 
-// Module 5709 (items)
-const items = [require(dependencyMap[0]).HubProgressStep.JOIN_GUILD, require(dependencyMap[0]).HubProgressStep.INVITE_USER, require(dependencyMap[0]).HubProgressStep.CONTACT_SYNC];
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/hub/HubProgressBarConstants.tsx");
+// Module 5714 (items)
+const items = [require("_callSuper").HubProgressStep.JOIN_GUILD, require("_callSuper").HubProgressStep.INVITE_USER, require("_callSuper").HubProgressStep.CONTACT_SYNC];
+const result = require("set").fileFinishedImporting("modules/hub/HubProgressBarConstants.tsx");
 
 export const HUB_PROGRESS_STEP_ORDER = items;
 export const HUB_PROGRESS_NUM_TOTAL_STEPS = items.length;

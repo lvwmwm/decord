@@ -1,9 +1,16 @@
-// Module ID: 8313
-// Function ID: 65809
+// Module ID: 8319
+// Function ID: 65846
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 664, 7087, 8320, 566, 686, 2]
 
-// Module 8313 (_isNativeReflectConstruct)
+// Module 8319 (_isNativeReflectConstruct)
+import MessageEmbedTypes from "MessageEmbedTypes";
+import generateHydrationId from "generateHydrationId";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +20,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,26 +99,21 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = 7 * importDefault(dependencyMap[5]).Millis.DAY;
+let closure_7 = 7 * require("set").Millis.DAY;
 let closure_8 = { readIdToTimestampMap: {} };
-let tmp2 = (DeviceSettingsStore) => {
+let tmp2 = ((DeviceSettingsStore) => {
   class ICYMIUnreadStateStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ICYMIUnreadStateStore);
-      obj = closure_5(ICYMIUnreadStateStore);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      tmp = outer1_2(this, ICYMIUnreadStateStore);
+      obj = outer1_5(ICYMIUnreadStateStore);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -120,7 +122,6 @@ let tmp2 = (DeviceSettingsStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ICYMIUnreadStateStore;
   callback2(ICYMIUnreadStateStore, DeviceSettingsStore);
   let obj = {
     key: "initialize",
@@ -130,20 +131,20 @@ let tmp2 = (DeviceSettingsStore) => {
         if (null != readIdToTimestampMap.readIdToTimestampMap) {
           const obj = { readIdToTimestampMap: readIdToTimestampMap.readIdToTimestampMap };
         }
-        let closure_8 = { readIdToTimestampMap: {} };
+        const outer1_8 = { readIdToTimestampMap: {} };
         const _Date = Date;
-        let closure_0 = Date.now() - closure_7;
+        let closure_0 = Date.now() - outer1_7;
         const _Object = Object;
-        const keys = Object.keys(closure_8.readIdToTimestampMap);
-        const tmp6 = callback4(keys.filter((arg0) => readIdToTimestampMap.readIdToTimestampMap[arg0] < closure_0));
-        let iter = tmp6();
+        const keys = Object.keys(outer1_8.readIdToTimestampMap);
+        const tmp8 = outer1_10(keys.filter((arg0) => outer2_8.readIdToTimestampMap[arg0] < closure_0));
+        let iter = tmp8();
         if (!iter.done) {
           do {
             let value = iter.value;
-            let tmp7 = closure_8;
-            readIdToTimestampMap = closure_8.readIdToTimestampMap;
-            delete r1[r5];
-            let iter2 = tmp6();
+            let tmp9 = outer1_8;
+            readIdToTimestampMap = outer1_8.readIdToTimestampMap;
+            delete tmp[tmp2];
+            let iter2 = tmp8();
             iter = iter2;
             done = iter2.done;
           } while (!done);
@@ -155,39 +156,40 @@ let tmp2 = (DeviceSettingsStore) => {
   obj = {
     key: "getReadTimestamp",
     value(arg0) {
-      return closure_8.readIdToTimestampMap[arg0];
+      return outer1_8.readIdToTimestampMap[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getState",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getUserAgnosticState",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   return callback(ICYMIUnreadStateStore, items);
-}(importDefault(dependencyMap[8]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp2.displayName = "ICYMIUnreadStateStore";
 tmp2.persistKey = "ICYMIUnreadStateStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   ICYMI_ACK_ITEMS: function handleTabAck(arg0) {
     let items;
-    ({ items, override: closure_0 } = arg0);
+    let require;
+    ({ items, override: require } = arg0);
     const item = items.forEach((id) => {
       let tmp = null != id;
       if (tmp) {
-        tmp = null == closure_8.readIdToTimestampMap[id.id] || closure_0;
-        const tmp3 = null == closure_8.readIdToTimestampMap[id.id] || closure_0;
+        tmp = null == outer1_8.readIdToTimestampMap[id.id] || closure_0;
+        const tmp3 = null == outer1_8.readIdToTimestampMap[id.id] || closure_0;
       }
       if (tmp) {
-        closure_8.readIdToTimestampMap[id.id] = id.timestamp;
+        outer1_8.readIdToTimestampMap[id.id] = id.timestamp;
       }
     });
   },
@@ -199,10 +201,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     if (!iter.done) {
       do {
         let value = iter2.value;
-        let tmp3 = closure_0;
-        let tmp4 = closure_1;
+        let tmp3 = require;
+        let tmp4 = dependencyMap;
         let tmp5 = tmp2;
-        if (value.type === closure_0(closure_1[6]).ICYMIItemTypes.MESSAGE) {
+        if (value.type === require(7087) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
           let tmp11 = closure_8;
           let result = null != closure_8.readIdToTimestampMap[value.id];
           if (!result) {
@@ -212,12 +214,12 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
               prop = message_context.external_content_application_id;
             }
             result = null != prop;
-            let tmp2 = message_context;
+            tmp2 = message_context;
           }
           if (!result) {
-            let tmp8 = closure_0;
-            let tmp9 = closure_1;
-            let obj = closure_0(closure_1[7]);
+            let tmp8 = require;
+            let tmp9 = dependencyMap;
+            let obj = require(8320) /* generateHydrationId */;
             result = obj.isItemUnreadInChannel(value.data.channel_id, value.data.message_id);
           }
           tmp5 = tmp2;
@@ -237,6 +239,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     closure_8.readIdToTimestampMap = {};
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/icymi/ICYMIUnreadStateStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/icymi/ICYMIUnreadStateStore.tsx");
 
 export default tmp2;

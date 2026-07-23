@@ -1,13 +1,16 @@
-// Module ID: 10929
-// Function ID: 84970
+// Module ID: 10939
+// Function ID: 85019
 // Name: setBuildOverrideForBranch
-// Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0]
+// Dependencies: [5, 10440, 477, 10940, 10941, 4471, 4046, 2]
 // Exports: refreshBuildOverride, setBuildOverrideForId, setBuildOverrideFromLink, toggleOverride
 
-// Module 10929 (setBuildOverrideForBranch)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+// Module 10939 (setBuildOverrideForBranch)
+import module_4471 from "module_4471";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "set";
+import set from "set";
 
+const require = arg1;
 function setBuildOverrideForBranch(id) {
   setBuildOverride({ type: "branch", id });
 }
@@ -17,7 +20,6 @@ function setBuildOverride(arg0) {
 function _setBuildOverride() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _setBuildOverride = obj;
   return obj(...arguments);
 }
 function clearBuildOverride() {
@@ -26,27 +28,23 @@ function clearBuildOverride() {
 function _clearBuildOverride() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _clearBuildOverride = obj;
   return obj(...arguments);
 }
 function _toggleOverride() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _toggleOverride = obj;
   return obj(...arguments);
 }
 function _setBuildOverrideFromLink() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _setBuildOverrideFromLink = obj;
   return obj(...arguments);
 }
 let str = "discord_ios";
-if (obj.isAndroid()) {
+if (set.isAndroid()) {
   str = "discord_android";
 }
-const obj = arg1(dependencyMap[2]);
-const result = require("__exportStarResult1").fileFinishedImporting("modules/build_overrides/native/BuildOverrideUtils.tsx");
+let result = set.fileFinishedImporting("modules/build_overrides/native/BuildOverrideUtils.tsx");
 
 export const DEVICE_FIELD = str;
 export { setBuildOverrideForBranch };
@@ -55,7 +53,7 @@ export const setBuildOverrideForId = function setBuildOverrideForId(id) {
 };
 export { setBuildOverride };
 export const refreshBuildOverride = function refreshBuildOverride() {
-  const result = importDefault(dependencyMap[4]).checkForUpdateAndReload();
+  const result = importDefault(10941).checkForUpdateAndReload();
 };
 export { clearBuildOverride };
 export const toggleOverride = function toggleOverride(code) {

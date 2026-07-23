@@ -1,7 +1,7 @@
 // Module ID: 723
-// Function ID: 8750
+// Function ID: 8751
 // Name: hashSet
-// Dependencies: []
+// Dependencies: [713]
 
 // Module 723 (hashSet)
 
@@ -15,7 +15,7 @@ export default function hashSet(arg0, arg1) {
     num = 0;
   }
   self.size = size + num;
-  if (!require(dependencyMap[0])) {
+  if (!require(713) /* getNative */) {
     let str = arg1;
   } else {
     str = "__lodash_hash_undefined__";

@@ -1,13 +1,13 @@
-// Module ID: 6519
-// Function ID: 50711
+// Module ID: 6524
+// Function ID: 50740
 // Name: SocialSdkIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6525, 2]
 // Exports: SocialSdkIllocon
 
-// Module 6519 (SocialSdkIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/SocialSdkIllocon.native.tsx");
+// Module 6524 (SocialSdkIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SocialSdkIllocon.native.tsx");
 
 export const SocialSdkIllocon = function SocialSdkIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const SocialSdkIllocon = function SocialSdkIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6525) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const SocialSdkIllocon = function SocialSdkIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

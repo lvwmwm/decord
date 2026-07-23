@@ -1,39 +1,41 @@
-// Module ID: 15508
-// Function ID: 118345
+// Module ID: 15625
+// Function ID: 120518
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5066, 566, 686, 2]
 
-// Module 15508 (_isNativeReflectConstruct)
+// Module 15625 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
 const map = new Map();
-const set = new Set();
-let tmp4 = (Store) => {
+let set = new Set();
+let tmp4 = ((Store) => {
   class AccountLinkStore {
     constructor() {
       self = this;
       tmp = AccountLinkStore(this, AccountLinkStore);
-      obj = closure_3(AccountLinkStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(AccountLinkStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,39 +44,38 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = AccountLinkStore;
   callback2(AccountLinkStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_5);
+      this.waitFor(outer1_5);
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getPendingAuthorizations",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[1] = obj;
   obj = {
     key: "deletePendingAuthorization",
     value(arg0) {
-      set.delete(arg0);
+      outer1_6.delete(arg0);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getGloballyDisabledAuthorizationFlows",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   return callback(AccountLinkStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "AccountLinkStore";
-tmp4 = new tmp4(importDefault(dependencyMap[7]), {
+tmp4 = new tmp4(require("dispatcher"), {
   ACCOUNT_LINK_AUTHORIZATION_STARTED: function handleAuthorizationStarted(applicationId) {
     if (tmp) {
       const obj = { applicationId: applicationId.applicationId };
@@ -88,6 +89,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[7]), {
     const set = new Set(flows.flows);
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/application_account_linking/AccountLinkStore.tsx");
+let result = set.fileFinishedImporting("modules/application_account_linking/AccountLinkStore.tsx");
 
 export default tmp4;

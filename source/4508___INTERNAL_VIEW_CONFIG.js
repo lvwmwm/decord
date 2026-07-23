@@ -1,13 +1,13 @@
 // Module ID: 4508
-// Function ID: 39697
+// Function ID: 39720
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [0, 4294967295]
+// Dependencies: [27, 42]
 
 // Module 4508 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "__exportStarResult1";
+import { codegenNativeComponent } from "get ActivityIndicator";
+import get from "get";
 
-const obj = { uiViewClassName: "RNSFullWindowOverlay", validAttributes: { accessibilityContainerViewIsModal: true } };
-const _module = require(dependencyMap[1]);
+const obj = { uiViewClassName: "RNSScreenContentWrapper", validAttributes: {} };
 
-export default _module.get("RNSFullWindowOverlay", () => obj);
+export default get.get("RNSScreenContentWrapper", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

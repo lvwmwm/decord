@@ -1,5 +1,5 @@
 // Module ID: 1087
-// Function ID: 12479
+// Function ID: 12480
 // Name: eventOriginIntegration
 // Dependencies: []
 
@@ -16,8 +16,8 @@ arg5.eventOriginIntegration = function eventOriginIntegration() {
         tags = {};
       }
       tags.tags = tags;
-      tags.tags.event.origin = "javascript";
-      tags.tags.event.environment = "javascript";
+      tags.tags["event.origin"] = "javascript";
+      tags.tags["event.environment"] = "javascript";
       return tags;
     }
   };

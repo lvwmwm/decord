@@ -1,11 +1,11 @@
 // Module ID: 769
-// Function ID: 8839
+// Function ID: 8840
 // Name: getAllKeys
-// Dependencies: [1946157060, 1962934276]
+// Dependencies: [770, 601, 772]
 
 // Module 769 (getAllKeys)
 
 export default function getAllKeys(arg0) {
-  const tmp = require(dependencyMap[0]);
-  return tmp(arg0, require(dependencyMap[1]), require(dependencyMap[2]));
+  const tmp = require(770) /* baseGetAllKeys */;
+  return tmp(arg0, require(601) /* keys */, require(772) /* getOwnPropertySymbols */);
 };

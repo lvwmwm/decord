@@ -1,9 +1,23 @@
-// Module ID: 6721
-// Function ID: 52261
+// Module ID: 6726
+// Function ID: 52293
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 1194, 1917, 1838, 1849, 6727, 653, 1327, 21, 6733, 6734, 6729, 566, 686, 2]
 
-// Module 6721 (_isNativeReflectConstruct)
+// Module 6726 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import pendingMemberRequestKey from "pendingMemberRequestKey";
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _slicedToArray from "_slicedToArray";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import { GuildMemberSafetyPageStore as closure_13 } from "_createForOfIteratorHelperLoose";
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +27,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +80,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,16 +107,15 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getMemberSafetyPageStore(guildId) {
-  if (null == closure_16[guildId]) {
+  if (null == dependencyMap[guildId]) {
     const prototype = ctor.prototype;
     const tmp6 = new ctor(guildId);
-    closure_16[guildId] = tmp6;
+    dependencyMap[guildId] = tmp6;
   }
-  return closure_16[guildId];
+  return dependencyMap[guildId];
 }
-function resetMemberSafetyPageStore(id, isInitialized) {
-  let flag = isInitialized;
-  if (isInitialized === undefined) {
+function resetMemberSafetyPageStore(id, flag) {
+  if (flag === undefined) {
     flag = false;
   }
   getMemberSafetyPageStore(id).reset(flag);
@@ -122,33 +135,21 @@ function handleGuildRoleMemberUpdate(guildId) {
   const items = [guildId.userId];
   return getMemberSafetyPageStore(guildId.guildId).updateMembersByMemberIds(items);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = arg1(dependencyMap[10]).GuildMemberSafetyPageStore;
-const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[11]).EMPTY_STRING_SNOWFLAKE_ID;
-let closure_15 = false;
+let c15 = false;
 let closure_16 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class MemberSafetyStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, MemberSafetyStore);
-      obj = closure_6(MemberSafetyStore);
-      tmp2 = closure_5;
-      if (closure_17()) {
+      tmp = outer1_3(this, MemberSafetyStore);
+      obj = outer1_6(MemberSafetyStore);
+      tmp2 = outer1_5;
+      if (outer1_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -157,33 +158,32 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = MemberSafetyStore;
   callback2(MemberSafetyStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_9, closure_10, closure_11, closure_12);
+      this.waitFor(outer1_9, outer1_10, outer1_11, outer1_12);
     }
   };
   const items = [obj, , , , , , , , , , , , , , , ];
   obj = {
     key: "isInitialized",
     value(arg0) {
-      return callback4(arg0).isInitialized;
+      return outer1_20(arg0).isInitialized;
     }
   };
   items[1] = obj;
   obj = {
     key: "getMembersByGuildId",
     value(arg0, arg1) {
-      return callback4(arg0).getMembersByIndex(arg1);
+      return outer1_20(arg0).getMembersByIndex(arg1);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getMembersCountByGuildId",
     value(arg0, arg1) {
-      return callback4(arg0).countMembersByIndex(arg1);
+      return outer1_20(arg0).countMembersByIndex(arg1);
     }
   };
   items[4] = {
@@ -191,7 +191,7 @@ let tmp2 = (Store) => {
     value(arg0) {
       let countMembersByIndex;
       let searchChunkSize;
-      const obj = callback4(arg0);
+      const obj = outer1_20(arg0);
       ({ searchChunkSize, countMembersByIndex } = obj);
       let totalResultsCount = obj.getTotalResultsCount();
       if (null == totalResultsCount) {
@@ -203,78 +203,78 @@ let tmp2 = (Store) => {
   items[5] = {
     key: "getKnownMemberSearchCountByGuildId",
     value(arg0) {
-      const obj = callback4(arg0);
+      const obj = outer1_20(arg0);
       return obj.countMembersByIndex(obj.getSearchIndex());
     }
   };
   items[6] = {
     key: "getCurrentMemberSearchResultsByGuildId",
     value(arg0) {
-      const obj = callback4(arg0);
+      const obj = outer1_20(arg0);
       return obj.getMembersByIndex(obj.getSearchIndex());
     }
   };
   items[7] = {
     key: "getSearchStateByGuildId",
     value(arg0) {
-      return callback4(arg0).getSearchState();
+      return outer1_20(arg0).getSearchState();
     }
   };
   items[8] = {
     key: "hasDefaultSearchStateByGuildId",
     value(arg0) {
-      return callback4(arg0).hasDefaultSearchState();
+      return outer1_20(arg0).hasDefaultSearchState();
     }
   };
   items[9] = {
     key: "getPagedMembersByGuildId",
     value(arg0) {
-      return callback4(arg0).getPaginatedMembers();
+      return outer1_20(arg0).getPaginatedMembers();
     }
   };
   items[10] = {
     key: "getPaginationStateByGuildId",
     value(arg0) {
-      return callback4(arg0).getPaginationState();
+      return outer1_20(arg0).getPaginationState();
     }
   };
   items[11] = {
     key: "getElasticSearchPaginationByGuildId",
     value(arg0) {
-      return callback4(arg0).getElasticSearchPagination();
+      return outer1_20(arg0).getElasticSearchPagination();
     }
   };
   items[12] = {
     key: "getEnhancedMember",
     value(arg0, guildId) {
-      return callback4(arg0).getMember(guildId);
+      return outer1_20(arg0).getMember(guildId);
     }
   };
   items[13] = {
     key: "getNewMemberTimestamp",
     value(arg0) {
-      return callback4(arg0).getNewMemberTimestamp();
+      return outer1_20(arg0).getNewMemberTimestamp();
     }
   };
   items[14] = {
     key: "getLastRefreshTimestamp",
     value(arg0) {
-      return callback4(arg0).lastRefreshTimestamp;
+      return outer1_20(arg0).lastRefreshTimestamp;
     }
   };
   items[15] = {
     key: "getLastCursorTimestamp",
     value(arg0) {
-      return callback4(arg0).lastCursorTimestamp;
+      return outer1_20(arg0).lastCursorTimestamp;
     }
   };
   return callback(MemberSafetyStore, items);
-}(importDefault(dependencyMap[17]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "MemberSafetyStore";
-tmp2 = new tmp2(importDefault(dependencyMap[18]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
-    if (closure_15) {
-      closure_15 = false;
+    if (c15) {
+      c15 = false;
     } else {
       let flag = true;
       if (true === undefined) {
@@ -282,52 +282,52 @@ tmp2 = new tmp2(importDefault(dependencyMap[18]), {
       }
       for (const key10005 in closure_16) {
         let tmp2 = key10005;
-        let tmp3 = closure_21;
-        let tmp4 = closure_21(key10005, flag);
+        let tmp3 = resetMemberSafetyPageStore;
+        let tmp4 = resetMemberSafetyPageStore(key10005, flag);
+        continue;
       }
     }
-    return function _mergeGuildMembers(guilds) {
-      let closure_0 = false;
+    return (function _mergeGuildMembers(guilds) {
+      let c0 = false;
       guilds = guilds.guilds;
       const item = guilds.forEach((id) => {
-        const obj = callback(id.id);
-        closure_0 = callback(id.id).updateServerMembers(id.members) || closure_0;
+        const obj = outer2_20(id.id);
+        c0 = outer2_20(id.id).updateServerMembers(id.members) || c0;
       });
-      return closure_0;
-    }(guilds);
+      return c0;
+    })(guilds);
   },
   CONNECTION_OPEN_SUPPLEMENTAL: function handleConnectionOpenSupplemental(guilds) {
-    return function _mergeGuildMembersSupplemental(guilds) {
-      let closure_0 = false;
+    return (function _mergeGuildMembersSupplemental(guilds) {
+      let c0 = false;
       guilds = guilds.guilds;
-      const item = guilds.forEach((activity_instances) => {
+      let item = guilds.forEach((activity_instances) => {
         activity_instances = activity_instances.activity_instances;
-        const items = [];
-        let closure_0 = items;
+        let items = [];
         if (null != activity_instances) {
-          const item = activity_instances.forEach((participants) => {
+          let item = activity_instances.forEach((participants) => {
             participants = participants.participants;
             if (null != participants) {
               const item = participants.forEach((member) => {
                 if (obj.isNotNullish(member.member)) {
-                  const arr = arr.push(member.member);
+                  outer1_0.push(member.member);
                 }
               });
             }
           });
         }
-        const obj = callback(activity_instances.id);
-        closure_0 = callback(activity_instances.id).updateServerMembers(items) || closure_0;
+        const obj = outer2_20(activity_instances.id);
+        items = outer2_20(activity_instances.id).updateServerMembers(items) || items;
       });
-      return closure_0;
-    }(guilds);
+      return c0;
+    })(guilds);
   },
   LOCAL_MESSAGES_LOADED: function handleLocalMessagesLoaded(guildId) {
     let iter2;
     guildId = guildId.guildId;
     if (null != guildId) {
       if (null != guild.getGuild(guildId)) {
-        let closure_15 = true;
+        let c15 = true;
         const obj = getMemberSafetyPageStore(guildId);
         const items = [];
         const tmp4 = _createForOfIteratorHelperLoose(tmp);
@@ -348,17 +348,17 @@ tmp2 = new tmp2(importDefault(dependencyMap[18]), {
     return false;
   },
   CACHE_LOADED: function handleCacheLoaded(guildMembers) {
-    let closure_0 = false;
-    let closure_15 = true;
-    const entries = importDefault(dependencyMap[13]).entries(guildMembers.guildMembers);
+    let c0 = false;
+    let c15 = true;
+    const entries = importDefault(21).entries(guildMembers.guildMembers);
     const item = entries.forEach((arg0) => {
       let tmp;
       let tmp2;
       [tmp, tmp2] = arg0;
-      const obj = callback(tmp);
-      closure_0 = callback(tmp).updateClientMembers(Object.values(tmp2)) || closure_0;
+      const obj = outer1_20(tmp);
+      c0 = outer1_20(tmp).updateClientMembers(Object.values(tmp2)) || c0;
     });
-    return closure_0;
+    return c0;
   },
   PASSIVE_UPDATE_V2: function handlePassiveUpdateV2(members) {
     members = members.members;
@@ -386,8 +386,8 @@ tmp2 = new tmp2(importDefault(dependencyMap[18]), {
     if (!iter.done) {
       do {
         let value = iter2.value;
-        let tmp2 = closure_20;
-        let obj = closure_20(value.guildId);
+        let tmp2 = getMemberSafetyPageStore;
+        let obj = getMemberSafetyPageStore(value.guildId);
         let tmp3 = obj.updateServerMembers(value.members) || flag;
         iter3 = tmp();
         flag = tmp3;
@@ -400,7 +400,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[18]), {
   GUILD_MEMBER_ADD: handleGuildMemberUpdate,
   GUILD_MEMBER_UPDATE: handleGuildMemberUpdate,
   GUILD_MEMBER_UPDATE_LOCAL: function handleGuildMemberUpdateLocal(guildId) {
-    const id = id.getId();
+    id = id.getId();
     const items = [id];
     return getMemberSafetyPageStore(guildId.guildId).updateMembersByMemberIds(items);
   },
@@ -485,7 +485,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[18]), {
     let guildId;
     let memberSupplementals;
     ({ guildId, memberSupplementals } = arg0);
-    const result = arg1(dependencyMap[14]).syncMemberSupplemental(guildId, memberSupplementals);
+    const result = require(6733) /* getMemberSupplementalByGuildId */.syncMemberSupplemental(guildId, memberSupplementals);
     if (result) {
       const result1 = getMemberSafetyPageStore(guildId).updateMembersByMemberIds(memberSupplementals.map((userId) => userId.userId));
       const obj2 = getMemberSafetyPageStore(guildId);
@@ -511,10 +511,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[18]), {
       memberSupplementals.push({ userId: user.id, sourceInviteCode: source_invite_code, joinSourceType: join_source_type, joinSourceApplicationId: join_source_application_id, joinSourceChannelId: join_source_channel_id, inviterId: inviter_id });
       return memberIds;
     }, { memberIds: [], memberSupplementals: [] });
-    const memberIds = reduced.memberIds;
-    let obj1 = arg1(dependencyMap[14]);
+    let memberIds = reduced.memberIds;
+    let obj1 = require(6733) /* getMemberSupplementalByGuildId */;
     let result = obj1.syncMemberSupplemental(guildId, reduced.memberSupplementals);
-    let obj2 = arg1(dependencyMap[15]);
+    let obj2 = require(6734) /* pendingMemberRequestKey */;
     const result1 = obj2.registerFetchedSupplementals(guildId, memberIds);
     let first;
     let tmp6;
@@ -545,8 +545,8 @@ tmp2 = new tmp2(importDefault(dependencyMap[18]), {
       id = EMPTY_STRING_SNOWFLAKE_ID;
     }
     obj1.userId = id;
-    obj.before = arg1(dependencyMap[16]).createMemberSearchCursor(obj1);
-    const obj6 = arg1(dependencyMap[16]);
+    obj.before = require(6729) /* result */.createMemberSearchCursor(obj1);
+    const obj6 = require(6729) /* result */;
     obj2 = {};
     let joined_at1;
     if (null != tmp6) {
@@ -567,7 +567,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[18]), {
       id1 = EMPTY_STRING_SNOWFLAKE_ID;
     }
     obj2.userId = id1;
-    obj.after = arg1(dependencyMap[16]).createMemberSearchCursor(obj2);
+    obj.after = require(6729) /* result */.createMemberSearchCursor(obj2);
     obj.elasticSearchCursor = obj;
     if (!result) {
       result = result2;
@@ -581,6 +581,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[18]), {
     return getMemberSafetyPageStore(guildId.guildId).updateMembersByMemberIds(guildId.userIds);
   }
 });
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyStore.tsx");
 
 export default tmp2;

@@ -1,17 +1,21 @@
-// Module ID: 12584
-// Function ID: 96799
+// Module ID: 12698
+// Function ID: 98955
 // Name: NUFActionSheetTemplate
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 4126, 4543, 2]
 // Exports: default
 
-// Module 12584 (NUFActionSheetTemplate)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: {}, title: {}, description: { accessible: "<string:651624449>", rejectWithError: "<string:24313857>", "Bool(false)": "<string:1677721600>", "Bool(false)": "<string:503316480>" }, illustration: { _totalAmount: "w", borderColor: "Array", member_ids_preview: "isArray" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/nuf_channels/native/components/NUFTemplateV2.tsx");
+// Module 12698 (NUFActionSheetTemplate)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, alignItems: "center" }, title: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 46, paddingLeft: 18, paddingRight: 18 }, illustration: { alignSelf: "stretch", alignItems: "center", marginBottom: 32 } });
+const result = require("jsxProd").fileFinishedImporting("modules/nuf_channels/native/components/NUFTemplateV2.tsx");
 
 export default function NUFActionSheetTemplate(arg0) {
   let CTALabel;
@@ -24,10 +28,10 @@ export default function NUFActionSheetTemplate(arg0) {
   let obj = { style: tmp.container };
   obj = { style: tmp.illustration, children: illustration };
   const items = [callback(View, obj), , , ];
-  obj = { 9223372036854775807: null, 0: null, 0: null, style: tmp.title, children: title };
-  items[1] = callback(arg1(dependencyMap[4]).Text, obj);
-  items[2] = callback(arg1(dependencyMap[4]).Text, { style: tmp.description, variant: "text-md/medium", children: description });
-  items[3] = callback(arg1(dependencyMap[5]).Button, { text: CTALabel, onPress: onCTAPress, grow: true });
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/bold", children: title };
+  items[1] = callback(require(4126) /* Text */.Text, obj);
+  items[2] = callback(require(4126) /* Text */.Text, { style: tmp.description, variant: "text-md/medium", children: description });
+  items[3] = callback(require(4543) /* Button */.Button, { text: CTALabel, onPress: onCTAPress, grow: true });
   obj.children = items;
   return callback2(View, obj);
 };

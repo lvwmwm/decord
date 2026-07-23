@@ -1,36 +1,38 @@
-// Module ID: 10162
-// Function ID: 78583
+// Module ID: 10170
+// Function ID: 78623
 // Name: useShowUnlinkChannelAlert
-// Dependencies: []
+// Dependencies: [5, 31, 7596, 4471, 1212, 4561, 2]
 // Exports: default
 
-// Module 10162 (useShowUnlinkChannelAlert)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/integration_settings/native/useShowUnlinkChannelAlert.tsx");
+// Module 10170 (useShowUnlinkChannelAlert)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import result from "result";
+
+const require = arg1;
+const result = require("init").fileFinishedImporting("modules/integration_settings/native/useShowUnlinkChannelAlert.tsx");
 
 export default function useShowUnlinkChannelAlert(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [arg0, arg2];
-  const callback = React.useCallback(callback(tmp), items);
+  callback = React.useCallback(callback(tmp), items);
   const items1 = [arg1, callback];
   return React.useCallback(() => {
-    let obj = arg1(arg2[3]);
+    let obj = callback2(4471);
     obj = {};
-    const intl = arg0(arg2[4]).intl;
-    obj.title = intl.string(arg0(arg2[4]).t.JmUENg);
-    const intl2 = arg0(arg2[4]).intl;
-    obj = { applicationName: arg1 };
-    obj.body = intl2.format(arg0(arg2[4]).t.6l2osp, obj);
-    const intl3 = arg0(arg2[4]).intl;
-    obj.cancelText = intl3.string(arg0(arg2[4]).t.ETE/oC);
-    const intl4 = arg0(arg2[4]).intl;
-    obj.confirmText = intl4.string(arg0(arg2[4]).t.cY+Oob);
+    const intl = callback(1212).intl;
+    obj.title = intl.string(callback(1212).t.JmUENg);
+    const intl2 = callback(1212).intl;
+    obj = { applicationName: callback2 };
+    obj.body = intl2.format(callback(1212).t["6l2osp"], obj);
+    const intl3 = callback(1212).intl;
+    obj.cancelText = intl3.string(callback(1212).t["ETE/oC"]);
+    const intl4 = callback(1212).intl;
+    obj.confirmText = intl4.string(callback(1212).t["cY+Oob"]);
     obj.onConfirm = callback;
-    obj.confirmColor = arg1(arg2[5]).Colors.RED;
+    obj.confirmColor = callback2(4561).Colors.RED;
     obj.show(obj);
   }, items1);
 };

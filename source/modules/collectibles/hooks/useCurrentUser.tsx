@@ -1,20 +1,22 @@
-// Module ID: 8660
-// Function ID: 68549
+// Module ID: 8667
+// Function ID: 68589
 // Name: useCurrentUser
-// Dependencies: []
+// Dependencies: [1849, 566, 44, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 8660 (useCurrentUser)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/hooks/useCurrentUser.tsx");
+// Module 8667 (useCurrentUser)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("invariant").fileFinishedImporting("modules/collectibles/hooks/useCurrentUser.tsx");
 
 export const useCurrentUser = function useCurrentUser() {
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[1]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  importDefault(dependencyMap[2])(null != stateFromStores, "user has to be signed in before accessing shop");
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getCurrentUser());
+  importDefault(44)(null != stateFromStores, "user has to be signed in before accessing shop");
   return stateFromStores;
 };
 export const useCurrentUserIfAvailable = function useCurrentUserIfAvailable() {
-  const items = [closure_3];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getCurrentUser());
 };

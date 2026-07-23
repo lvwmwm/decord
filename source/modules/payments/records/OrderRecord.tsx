@@ -1,9 +1,19 @@
-// Module ID: 6659
-// Function ID: 51287
+// Module ID: 6664
+// Function ID: 51316
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1858, 3785, 6665, 6666, 2]
 
-// Module 6659 (_callSuper)
+// Module 6664 (_callSuper)
+import _callSuper from "_callSuper";
+import closure_1 from "_callSuper";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importDefaultResult from "Record";
+import { BaseInvoiceRecord } from "_callSuper";
+import closure_6 from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function _callSuper(arg0, arg1, arg2) {
   const obj = callback2(arg1);
   if (_isNativeReflectConstruct()) {
@@ -13,31 +23,22 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, undefined);
   }
-  return closure_2(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _callSuper = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _callSuper;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const importDefaultResult = importDefault(dependencyMap[5]);
-const BaseInvoiceRecord = arg1(dependencyMap[6]).BaseInvoiceRecord;
-let closure_6 = importDefault(dependencyMap[7]);
-let closure_7 = importDefault(dependencyMap[8]);
-const tmp3 = (importDefaultResult) => {
+let tmp3 = ((importDefaultResult) => {
   class BillingFacetRecord {
     constructor(arg0) {
       tmp = BillingFacetRecord(this, BillingFacetRecord);
-      tmp2 = closure_9(this, BillingFacetRecord);
+      tmp2 = outer1_9(this, BillingFacetRecord);
       ({ paymentGateway: tmp2.paymentGateway, paymentSourceId } = importDefaultResult);
       tmp3 = null;
       if (null != paymentSourceId) {
@@ -53,7 +54,6 @@ const tmp3 = (importDefaultResult) => {
       return tmp2;
     }
   }
-  let closure_0 = BillingFacetRecord;
   callback3(BillingFacetRecord, importDefaultResult);
   const items = [
     {
@@ -70,7 +70,7 @@ const tmp3 = (importDefaultResult) => {
             tmp3 = payment_source_id;
           }
           obj.paymentSourceId = tmp3;
-          obj.invoicePreview = closure_5.createInvoiceFromOrder(billing_facet);
+          obj.invoicePreview = outer1_5.createInvoiceFromOrder(billing_facet);
           const prototype = tmp2.prototype;
           tmp = new tmp2(obj);
         }
@@ -79,12 +79,13 @@ const tmp3 = (importDefaultResult) => {
     }
   ];
   return callback(BillingFacetRecord, null, items);
-}(importDefaultResult);
-const tmp4 = (importDefaultResult) => {
+})(importDefaultResult);
+let closure_8 = tmp3;
+let tmp4 = ((importDefaultResult) => {
   class OrderRecord {
     constructor(arg0) {
       tmp = OrderRecord(this, OrderRecord);
-      tmp2 = closure_9(this, OrderRecord);
+      tmp2 = outer1_9(this, OrderRecord);
       ({ id: tmp2.id, status: tmp2.status, revision: tmp2.revision, orderLineItems } = importDefaultResult);
       if (null == orderLineItems) {
         orderLineItems = [];
@@ -128,7 +129,6 @@ const tmp4 = (importDefaultResult) => {
       return tmp2;
     }
   }
-  let closure_0 = OrderRecord;
   callback3(OrderRecord, importDefaultResult);
   let obj = {
     key: "getInvoicePreview",
@@ -157,7 +157,7 @@ const tmp4 = (importDefaultResult) => {
     value(id) {
       let unsatisfied_constraints;
       let tmp = OrderRecord;
-      const obj = { id: id.id, status: id.status, revision: id.revision, orderLineItems: id.order_line_items, billingFacetRecord: closure_8.createFromOrder(id) };
+      const obj = { id: id.id, status: id.status, revision: id.revision, orderLineItems: id.order_line_items, billingFacetRecord: outer1_8.createFromOrder(id) };
       const external_gateway_facet = id.external_gateway_facet;
       let tmp2 = null;
       if (null != external_gateway_facet) {
@@ -170,21 +170,21 @@ const tmp4 = (importDefaultResult) => {
         tmp3 = gifting_facet;
       }
       obj.giftingFacet = tmp3;
-      obj.checkoutContextRecord = closure_6.createFromOrder(id);
+      obj.checkoutContextRecord = outer1_6.createFromOrder(id);
       ({ created_at: obj.createdAt, unsatisfied_constraints } = id);
       if (null == unsatisfied_constraints) {
         unsatisfied_constraints = [];
       }
       obj.unsatisfiedConstraints = unsatisfied_constraints;
-      obj.subscriptionFacet = closure_7.createFromServer(id.subscription_facet);
+      obj.subscriptionFacet = outer1_7.createFromServer(id.subscription_facet);
       tmp = new tmp(obj);
       return tmp;
     }
   };
   const items1 = [obj];
   return callback(OrderRecord, items, items1);
-}(importDefaultResult);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/payments/records/OrderRecord.tsx");
+})(importDefaultResult);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/payments/records/OrderRecord.tsx");
 
 export default tmp4;
 export const BillingFacetRecord = tmp3;

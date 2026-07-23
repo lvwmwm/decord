@@ -1,8 +1,8 @@
 // Module ID: 81
 // Function ID: 1487
 // Name: NativeReactNativeFeatureFlagsCxx
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 81 (NativeReactNativeFeatureFlagsCxx)
 
-export default importAll(dependencyMap[0]).get("NativeReactNativeFeatureFlagsCxx");
+export default require("requireModule").get("NativeReactNativeFeatureFlagsCxx");

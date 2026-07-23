@@ -1,10 +1,14 @@
-// Module ID: 4361
-// Function ID: 38670
+// Module ID: 4365
+// Function ID: 38702
 // Name: isMentioned
-// Dependencies: []
+// Dependencies: [1348, 1917, 1838, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 4361 (isMentioned)
+// Module 4365 (isMentioned)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 function isMentioned(suppressRoles) {
   let channelId;
   let mentionEveryone;
@@ -21,7 +25,7 @@ function isMentioned(suppressRoles) {
   if (flag === undefined) {
     flag = false;
   }
-  let channel;
+  let member;
   if (mentionEveryone) {
     if (!suppressEveryone) {
       return true;
@@ -33,7 +37,7 @@ function isMentioned(suppressRoles) {
     if (!flag) {
       if (null != mentionRoles) {
         if (0 !== mentionRoles.length) {
-          channel = channel.getChannel(channelId);
+          const channel = member.getChannel(channelId);
           if (null == channel) {
             return false;
           } else {
@@ -43,8 +47,7 @@ function isMentioned(suppressRoles) {
             } else if (null == guild.getGuild(guildId)) {
               return false;
             } else {
-              const member = member.getMember(guildId, userId);
-              channel = member;
+              member = member.getMember(guildId, userId);
               return null != member && mentionRoles.some((arg0) => {
                 const roles = member.roles;
                 return roles.includes(arg0);
@@ -57,10 +60,7 @@ function isMentioned(suppressRoles) {
     return false;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/messages/isMessageMentioned.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/isMessageMentioned.tsx");
 
 export default function isMessageMentioned(suppressRoles) {
   let message;

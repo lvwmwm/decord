@@ -1,30 +1,33 @@
-// Module ID: 12004
-// Function ID: 92762
+// Module ID: 12096
+// Function ID: 94745
 // Name: fetchStore
-// Dependencies: []
+// Dependencies: [5, 12095, 653, 686, 507, 1184, 566, 2]
 
-// Module 12004 (fetchStore)
-let closure_3 = importDefault(dependencyMap[0]);
-const importDefaultResult = importDefault(dependencyMap[1]);
-const tmp3 = arg1(dependencyMap[2]);
-const Endpoints = tmp3.Endpoints;
+// Module 12096 (fetchStore)
+import isNonEmptyString from "isNonEmptyString";
+import importDefaultResult from "_isNativeReflectConstruct";
+import ME from "ME";
+import initialize from "initialize";
+
+const require = arg1;
+const Endpoints = ME.Endpoints;
 let obj = {
   fetchUserApplicationIdentitiesWithProfiles(arg0) {
-    const arg1 = arg0;
-    const importDefault = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
   updateApplicationIdentityConfig(application_id, provider_issued_user_id, arg2) {
-    provider_issued_user_id = application_id;
-    const importDefault = provider_issued_user_id;
-    const dependencyMap = arg2;
+    let closure_0 = application_id;
+    let closure_1 = provider_issued_user_id;
+    let closure_2 = arg2;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   }
 };
 obj = {
-  getQueryId: tmp3.QueryIds.USER_APPLICATION_IDENTITIES,
+  getQueryId: ME.QueryIds.USER_APPLICATION_IDENTITIES,
   get(arg0) {
     return importDefaultResult.getUserIdentities(arg0);
   },
@@ -32,9 +35,8 @@ obj = {
     return obj.fetchUserApplicationIdentitiesWithProfiles(arg0);
   }
 };
-const fetchStore = arg1(dependencyMap[6]).createFetchStore(importDefaultResult, obj);
-const obj2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_application_identity/UserApplicationIdentityActionCreators.tsx");
+const fetchStore = initialize.createFetchStore(importDefaultResult, obj);
+const result = require("ME").fileFinishedImporting("modules/user_application_identity/UserApplicationIdentityActionCreators.tsx");
 
 export default obj;
 export const useUserApplicationIdentities = fetchStore;

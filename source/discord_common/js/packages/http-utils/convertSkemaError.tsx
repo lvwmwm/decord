@@ -1,12 +1,11 @@
 // Module ID: 563
 // Function ID: 6812
 // Name: convertSkemaError
-// Dependencies: []
+// Dependencies: [2]
 // Exports: convertSkemaError
 
 // Module 563 (convertSkemaError)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/http-utils/convertSkemaError.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/http-utils/convertSkemaError.tsx");
 
 export const convertSkemaError = function convertSkemaError(errors) {
   const obj = {};
@@ -33,7 +32,7 @@ export const convertSkemaError = function convertSkemaError(errors) {
         }
         obj[key10009] = mapped;
         let tmp = _errors;
-        // continue
+        continue;
       }
       continue;
     }

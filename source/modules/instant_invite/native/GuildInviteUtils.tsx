@@ -1,69 +1,68 @@
-// Module ID: 12023
-// Function ID: 92916
+// Module ID: 12137
+// Function ID: 95067
 // Name: _sendGuildInvite
-// Dependencies: []
+// Dependencies: [5, 31, 1907, 4051, 1917, 1838, 3758, 4970, 1849, 12138, 6979, 653, 675, 4098, 12139, 1934, 5045, 566, 3843, 1212, 7460, 8483, 11745, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 12023 (_sendGuildInvite)
+// Module 12137 (_sendGuildInvite)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { setSendState } from "setSendState";
+import { InviteSendStates } from "InviteSendStates";
+import ME from "ME";
+
+let closure_14;
+let closure_15;
+const require = arg1;
 function _sendGuildInvite() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _sendGuildInvite = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-const setSendState = arg1(dependencyMap[9]).setSendState;
-const InviteSendStates = arg1(dependencyMap[10]).InviteSendStates;
-({ Permissions: closure_14, AnalyticEvents: closure_15 } = arg1(dependencyMap[11]));
-const tmp2 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/instant_invite/native/GuildInviteUtils.tsx");
+({ Permissions: closure_14, AnalyticEvents: closure_15 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/instant_invite/native/GuildInviteUtils.tsx");
 
 export const showGuildInviteActionSheet = function showGuildInviteActionSheet(id, newestAnalyticsLocation) {
-  let obj = importDefault(dependencyMap[12]);
+  let obj = importDefault(675);
   obj = { type: "Invite to Guilds", source: newestAnalyticsLocation };
   obj.track(constants.OPEN_POPOUT, obj);
-  const obj3 = importDefault(dependencyMap[13]);
+  const obj3 = importDefault(4098);
   obj = { recipientId: id, source: newestAnalyticsLocation };
-  obj3.openLazy(newestAnalyticsLocation(dependencyMap[15])(dependencyMap[14], dependencyMap.paths), "invite-to-guilds-" + id, obj);
+  obj3.openLazy(require(1934) /* maybeLoadBundle */(12139, dependencyMap.paths), "invite-to-guilds-" + id, obj);
 };
 export const useServerInviteRows = function useServerInviteRows(id, query) {
-  query = id;
-  const importDefault = query;
-  const items = [closure_10, closure_8];
-  const stateFromStoresArray = query(dependencyMap[17]).useStateFromStoresArray(items, () => {
-    const flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+  const _require = id;
+  let closure_1 = query;
+  let items = [closure_10, closure_8];
+  stateFromStoresArray = _require(stateFromStoresArray[17]).useStateFromStoresArray(items, () => {
+    const flattenedGuildIds = outer1_10.getFlattenedGuildIds();
     const items = [];
-    const arg0 = items;
     const item = flattenedGuildIds.forEach((guildId) => {
-      const guild = guild.getGuild(guildId);
+      const guild = outer2_8.getGuild(guildId);
       if (null != guild) {
         items.push(guild);
       }
     });
     return items;
   });
-  const dependencyMap = stateFromStoresArray;
-  const items1 = [stateFromStoresArray, query, id];
+  let items1 = [stateFromStoresArray, query, id];
   return React.useMemo(() => {
-    if (null == memberCounts2) {
+    if (null == memberCounts) {
       const items = [[], []];
       return items;
     } else {
-      const memberCounts2 = memberCounts.getMemberCounts();
+      memberCounts = outer1_6.getMemberCounts();
       const items1 = [];
-      const arg1 = items1;
       const items2 = [];
-      const stateFromStoresArray = items2;
-      const item = stateFromStoresArray.forEach((vanityURLCode) => {
-        let canResult = closure_9.can(constants.CREATE_INSTANT_INVITE, vanityURLCode);
+      const item = items2.forEach((vanityURLCode) => {
+        let canResult = outer2_9.can(outer2_14.CREATE_INSTANT_INVITE, vanityURLCode);
         if (!canResult) {
           canResult = null != vanityURLCode.vanityURLCode;
         }
@@ -71,18 +70,18 @@ export const useServerInviteRows = function useServerInviteRows(id, query) {
           let tmp7Result = null == items1;
           if (!tmp7Result) {
             const formatted = str2.toLowerCase();
-            tmp7Result = items1(items2[16])(formatted, str.toLowerCase());
-            const tmp7 = items1(items2[16]);
+            tmp7Result = items1(stateFromStoresArray[16])(formatted, str.toLowerCase());
+            const tmp7 = items1(stateFromStoresArray[16]);
           }
           if (tmp7Result) {
-            if (!member.isMember(vanityURLCode.id, closure_0)) {
+            if (!outer2_7.isMember(vanityURLCode.id, table)) {
               const obj = { guild: vanityURLCode };
               let num2 = 0;
-              if (null != closure_0[vanityURLCode.id]) {
+              if (null != table[vanityURLCode.id]) {
                 num2 = tmp12;
               }
               obj.memberCount = num2;
-              const currentUser = currentUser.getCurrentUser();
+              const currentUser = outer2_11.getCurrentUser();
               let id;
               if (null != currentUser) {
                 id = currentUser.id;
@@ -94,8 +93,8 @@ export const useServerInviteRows = function useServerInviteRows(id, query) {
               }
             }
           }
-          const str = vanityURLCode.name;
-          const str2 = items1;
+          str = vanityURLCode.name;
+          str2 = items1;
         }
       });
       const items3 = [items1, items2];

@@ -1,45 +1,49 @@
-// Module ID: 15911
-// Function ID: 121909
+// Module ID: 16028
+// Function ID: 124082
 // Name: ActivityFeedbackReasons
-// Dependencies: []
+// Dependencies: [31, 4155, 653, 9500, 33, 675, 16029, 9521, 1212, 9503, 3830, 16030, 2]
 // Exports: default
 
-// Module 15911 (ActivityFeedbackReasons)
-importAll(dependencyMap[0]);
-const ActivityFeedbackReasons = arg1(dependencyMap[1]).ActivityFeedbackReasons;
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const FeedbackType = arg1(dependencyMap[3]).FeedbackType;
-const jsx = arg1(dependencyMap[4]).jsx;
+// Module 16028 (ActivityFeedbackReasons)
+import "result";
+import { ActivityFeedbackReasons } from "items3";
+import { AnalyticEvents } from "ME";
+import { FeedbackType } from "FeedbackRating";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const items = [, , ];
 ({ OTHER: arr[0], ADS: arr[1], NOT_FUN: arr[2] } = ActivityFeedbackReasons);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/activities/native/ActivityFeedbackActionSheet.tsx");
+const result = require("ME").fileFinishedImporting("modules/activities/native/ActivityFeedbackActionSheet.tsx");
 
 export default function ActivityFeedbackActionSheet(activityApplication) {
+  let ActivityFeedbackReasons;
+  let dependencyMap;
+  let importDefault;
   activityApplication = activityApplication.activityApplication;
-  const arg1 = activityApplication;
-  ({ channel: closure_1, embeddedActivityLocation: closure_2, analyticsData: closure_3 } = activityApplication);
+  ({ channel: importDefault, embeddedActivityLocation: dependencyMap, analyticsData: ActivityFeedbackReasons } = activityApplication);
   const embeddedActivityConfig = activityApplication.embeddedActivityConfig;
   let prop;
   if (null != embeddedActivityConfig) {
     prop = embeddedActivityConfig.displays_advertisements;
   }
   let obj = {};
-  const tmp2 = importDefault(dependencyMap[6])(true, true === prop);
-  const intl = arg1(dependencyMap[8]).intl;
+  const tmp2 = importDefault(16029)(true, true === prop);
+  const intl = activityApplication(1212).intl;
   obj = { applicationName: activityApplication.name };
-  obj.headerLabel = intl.formatToPlainString(arg1(dependencyMap[8]).t.QXYwoD, obj);
+  obj.headerLabel = intl.formatToPlainString(activityApplication(1212).t.QXYwoD, obj);
   obj.showHeaderCloseButton = true;
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj.ratingsBodyLabel = intl2.string(arg1(dependencyMap[8]).t.9hk2KF);
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj.reasonsHeaderLabel = intl3.string(arg1(dependencyMap[8]).t.g1q5fr);
+  const intl2 = activityApplication(1212).intl;
+  obj.ratingsBodyLabel = intl2.string(activityApplication(1212).t["9hk2KF"]);
+  const intl3 = activityApplication(1212).intl;
+  obj.reasonsHeaderLabel = intl3.string(activityApplication(1212).t.g1q5fr);
   obj.reasons = tmp2;
   obj.feedbackReasons = items;
   obj.otherKey = ActivityFeedbackReasons.OTHER;
   obj.trackOpen = function trackOpen() {
-    let obj = callback(closure_2[5]);
+    let obj = outer1_1(outer1_2[5]);
     obj = { type: "Activity Feedback Sheet", application_id: activityApplication.id, application_name: activityApplication.name, game_id: activityApplication.id, source: "Activity End" };
-    obj.track(constants.OPEN_POPOUT, obj);
+    obj.track(outer1_4.OPEN_POPOUT, obj);
   };
   obj.trackReport = function trackReport(dontShowAgain) {
     let feedback;
@@ -51,18 +55,18 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
       value = reason.value;
     }
     if (dontShowAgain.dontShowAgain) {
-      let obj = callback(closure_2[5]);
+      let obj = outer1_1(outer1_2[5]);
       obj = { application_id: activityApplication.id, rating };
-      obj.track(constants.ACTIVITY_REPORT_DONT_SHOW, obj);
-      obj = { feedbackType: constants2.ACTIVITY, location: "ActivityFeedbackActionSheet" };
-      activityApplication(closure_2[9]).processOptOut(obj);
-      const obj3 = activityApplication(closure_2[9]);
+      obj.track(outer1_4.ACTIVITY_REPORT_DONT_SHOW, obj);
+      obj = { feedbackType: outer1_5.ACTIVITY, location: "ActivityFeedbackActionSheet" };
+      activityApplication(outer1_2[9]).processOptOut(obj);
+      const obj3 = activityApplication(outer1_2[9]);
     }
     if (null != rating) {
-      activityApplication(closure_2[10]).presentFeedbackSent();
-      const obj1 = { problem: value, channel: callback, embeddedActivityLocation: closure_2 };
+      activityApplication(outer1_2[10]).presentFeedbackSent();
+      const obj1 = { problem: value, channel: closure_1, embeddedActivityLocation: closure_2 };
       let str2 = "";
-      const obj5 = activityApplication(closure_2[10]);
+      const obj5 = activityApplication(outer1_2[10]);
       if (null != feedback) {
         str2 = feedback;
       }
@@ -71,9 +75,9 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
       obj1.analyticsData = closure_3;
       obj1.location = "Activity End";
       obj1.rating = rating;
-      callback(closure_2[11])(obj1);
-      const tmp17 = callback(closure_2[11]);
+      outer1_1(outer1_2[11])(obj1);
+      const tmp17 = outer1_1(outer1_2[11]);
     }
   };
-  return jsx(importDefault(dependencyMap[7]), obj);
+  return jsx(importDefault(9521), { applicationName: activityApplication.name });
 };

@@ -1,10 +1,31 @@
-// Module ID: 16188
-// Function ID: 124935
+// Module ID: 16305
+// Function ID: 127108
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1388, 16306, 1911, 1910, 8439, 16300, 653, 16307, 11455, 4571, 1327, 483, 3763, 665, 1913, 22, 566, 686, 2]
 
-// Module 16188 (_isNativeReflectConstruct)
+// Module 16305 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
+import calculateElevatedPermissions from "calculateElevatedPermissions";
+import pad2 from "pad2";
+import { set } from "constructInPlace";
+import closure_10 from "_isNativeReflectConstruct";
+import { isRoleEqual } from "GuildRoleRecordTypeTag";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_13 from "_isNativeReflectConstruct";
+import { GuildSettingsRoleEditSections } from "MAX_SUBCATEGORIES";
+import ME from "ME";
+import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS";
+import set from "_possibleConstructorReturn";
+
 let FormStates;
+let closure_15;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,19 +38,19 @@ function _isNativeReflectConstruct() {
 function clearRoleEdit(id) {
   set.delete(id);
   if (0 === set.size) {
-    let closure_28 = false;
+    let c28 = false;
   }
 }
 function clearConfigurationEdit(id) {
   set1.delete(id);
   if (0 === set1.size) {
-    let closure_32 = false;
+    let c32 = false;
   }
 }
 function calculatePositionDeltas() {
   if (null != user) {
     if (null != closure_30) {
-      let obj = importDefault(dependencyMap[13]);
+      let obj = importDefault(11455);
       obj = {
         oldOrdering: store.getSortedRoles(user.id),
         newOrdering: closure_30,
@@ -60,54 +81,52 @@ function handleInit() {
     flag = true;
   }
   const guild = store2.getProps().guild;
-  let closure_28 = false;
-  let closure_29 = false;
-  let closure_23;
+  let c28 = false;
+  let c29 = false;
+  let c23;
   set.clear();
   map2.clear();
-  const CLOSED = FormStates.OPEN;
+  const OPEN = FormStates.OPEN;
   if (null != guild) {
-    const items = [];
+    let items = [];
     HermesBuiltin.arraySpread(store.getSortedRoles(guild.id), 0);
     let items1 = items;
   } else {
     items1 = [];
   }
-  let closure_30 = items1;
   const items2 = [...items1];
-  let closure_31 = items2;
   let id;
   if (null != guild) {
     id = guild.id;
   }
-  initRoleStyles(id, closure_31);
-  let closure_32 = false;
+  initRoleStyles(id, items2);
+  let c32 = false;
   if (flag) {
     map1.clear();
     const item = map.forEach((arg0, arg1) => {
       const items = [...arg0];
-      const result = closure_35.set(arg1, items);
+      const result = outer1_35.set(arg1, items);
     });
   }
 }
 function initRoleStyles(guildId, items) {
-  items = guildId;
+  let closure_0 = guildId;
   const item = items.forEach((colors) => {
-    let GRADIENT = constants.SOLID;
-    let obj = colors(closure_3[14]);
+    let GRADIENT = outer1_24.SOLID;
+    let obj = guildId(outer1_3[14]);
     if (!tmp) {
       obj = {};
-      obj = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array", primary_color: closure_17 };
-      obj[constants.SOLID] = obj;
-      const obj1 = { primary_color: closure_19.primary_color, secondary_color: closure_19.secondary_color, tertiary_color: null };
-      obj[constants.GRADIENT] = obj1;
-      const obj2 = { primary_color: closure_20.primary_color, secondary_color: closure_20.secondary_color, tertiary_color: closure_20.tertiary_color };
-      obj[constants.HOLOGRAPHIC] = obj2;
+      obj = { primary_color: outer1_17, secondary_color: null, tertiary_color: null };
+      obj[outer1_24.SOLID] = obj;
+      const obj1 = { primary_color: outer1_19.primary_color, secondary_color: outer1_19.secondary_color, tertiary_color: null };
+      obj[outer1_24.GRADIENT] = obj1;
+      const obj2 = { primary_color: outer1_20.primary_color, secondary_color: outer1_20.secondary_color, tertiary_color: outer1_20.tertiary_color };
+      obj[outer1_24.HOLOGRAPHIC] = obj2;
       if (null != colors.colors) {
         const obj3 = {};
         let primary_color = colors.colors.primary_color;
         if (null == primary_color) {
-          primary_color = closure_17;
+          primary_color = outer1_17;
         }
         obj3.primary_color = primary_color;
         const secondary_color = colors.colors.secondary_color;
@@ -125,16 +144,16 @@ function initRoleStyles(guildId, items) {
         obj[GRADIENT] = obj3;
       }
       const obj4 = { currentStyle: GRADIENT, styleColors: obj };
-      const result = closure_36.set(colors.id, obj4);
+      const result = outer1_36.set(colors.id, obj4);
     } else if (null != colors.colors.tertiary_color) {
-      GRADIENT = constants.HOLOGRAPHIC;
+      GRADIENT = outer1_24.HOLOGRAPHIC;
     } else if (null != colors.colors.secondary_color) {
-      GRADIENT = constants.GRADIENT;
+      GRADIENT = outer1_24.GRADIENT;
     }
   });
 }
 function getSectionFieldContext(id, section) {
-  if (null != closure_25[section]) {
+  if (null != table[section]) {
     if (0 !== arr.length) {
       const tmp2 = _getRole(id);
       const tmp4 = getOriginalRole(id);
@@ -152,17 +171,15 @@ function getSectionFieldContext(id, section) {
   return null;
 }
 function getRolesInOrder(map, roles) {
-  roles = map;
-  const mapped = roles.map((arg0) => arg0.get(arg0));
-  const found = mapped.filter(roles(dependencyMap[15]).isNotNullish);
-  const importDefault = found;
-  const importAll = new Set(roles);
+  const _require = map;
+  const mapped = roles.map((arg0) => map.get(arg0));
+  const found = mapped.filter(_require(length[15]).isNotNullish);
+  const set = new Set(roles);
   const item = map.forEach((arg0, arg1) => {
     if (!set.has(arg1)) {
       found.push(arg0);
     }
   });
-  const dependencyMap = found.length;
   return found.map((arg0, arg1) => {
     const obj = {};
     const merged = Object.assign(arg0);
@@ -171,62 +188,59 @@ function getRolesInOrder(map, roles) {
   });
 }
 function updateRole(arg0, arg1) {
-  const index = closure_30.indexOf(arg0);
+  const index = items.indexOf(arg0);
   if (index < 0) {
     return false;
   } else {
     const obj = {};
     const merged = Object.assign(arg0);
     const merged1 = Object.assign(arg1);
-    const items = [];
-    HermesBuiltin.arraySpread(closure_30, 0);
+    items = [];
+    HermesBuiltin.arraySpread(items, 0);
     items[index] = obj;
-    closure_30 = items;
-    let closure_28 = true;
+    let c28 = true;
     set.add(obj.id);
     callback3();
   }
 }
 function _getRole(id) {
-  const arg1 = id;
-  return closure_30.find((id) => id.id === id);
+  let closure_0 = id;
+  return closure_30.find((id) => id.id === closure_0);
 }
 function getOriginalRole(id) {
-  const arg1 = id;
-  return closure_31.find((id) => id.id === id);
+  let closure_0 = id;
+  return closure_31.find((id) => id.id === closure_0);
 }
 function syncGuildChanges(guildId) {
   guildId = guildId.guildId;
-  let arg1;
-  let importDefault;
+  let items;
+  let map;
   const guild = store2.getProps().guild;
   if (null != guild) {
     if (guildId === guild.id) {
       if (CLOSED !== FormStates.SUBMITTING) {
-        const items = [];
+        items = [];
         HermesBuiltin.arraySpread(store.getSortedRoles(guild.id), 0);
-        arg1 = items;
         const item = set.forEach((arg0) => {
           const items = arg0;
-          const tmp = callback2(arg0);
-          let closure_1 = -1;
+          const tmp = outer1_48(arg0);
+          let c1 = -1;
           if (null != items.find((id) => {
-            if (id.id === id) {
+            if (id.id === closure_0) {
               let closure_1 = arg1;
               return true;
             }
           })) {
             if (null != tmp) {
-              items[closure_1] = tmp;
+              items[c1] = tmp;
             }
           }
-          callback(arg0);
+          outer1_40(arg0);
         });
         const _Map = Map;
-        const map = new Map();
-        importDefault = map;
+        map = new Map();
         const item1 = set.forEach((arg0) => {
-          const value = store.get(arg0);
+          const value = outer1_36.get(arg0);
           if (null != value) {
             const result = map.set(arg0, value);
           }
@@ -234,87 +248,73 @@ function syncGuildChanges(guildId) {
         map2.clear();
         initRoleStyles(guildId, items);
         const item2 = map.forEach((arg0, arg1) => {
-          const result = store.set(arg1, arg0);
+          const result = outer1_36.set(arg1, arg0);
         });
-        let closure_29 = false;
+        let c29 = false;
         const items1 = [];
         HermesBuiltin.arraySpread(items, 0);
-        let closure_30 = items1;
       }
     }
   }
   return false;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let set = arg1(dependencyMap[5]).set;
-let closure_10 = importDefault(dependencyMap[6]);
-const isRoleEqual = arg1(dependencyMap[7]).isRoleEqual;
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-const GuildSettingsRoleEditSections = arg1(dependencyMap[10]).GuildSettingsRoleEditSections;
-const tmp2 = arg1(dependencyMap[11]);
-({ GuildSettingsSections: closure_15, FormStates } = tmp2);
-({ DEFAULT_ROLE_COLOR: closure_17, GuildFeatures: closure_18 } = tmp2);
-({ DEFAULT_GRADIENT_ROLE_COLORS: closure_19, HOLOGRAPHIC_ROLE_COLORS: closure_20 } = arg1(dependencyMap[12]));
+({ GuildSettingsSections: closure_15, FormStates } = ME);
+({ DEFAULT_ROLE_COLOR: closure_17, GuildFeatures: closure_18 } = ME);
+({ DEFAULT_GRADIENT_ROLE_COLORS: closure_19, HOLOGRAPHIC_ROLE_COLORS: closure_20 } = HOLOGRAPHIC_ROLE_COLORS);
 let obj = { SOLID: "solid", GRADIENT: "gradient", HOLOGRAPHIC: "holographic" };
-let closure_25 = { [GuildSettingsRoleEditSections.DISPLAY]: ["formatters", "RFC1738", "RFC3986", true, true, true, true], [GuildSettingsRoleEditSections.PERMISSIONS]: [true], [GuildSettingsRoleEditSections.MEMBERS]: [], [GuildSettingsRoleEditSections.VERIFICATIONS]: [] };
+let closure_25 = { [GuildSettingsRoleEditSections.DISPLAY]: ["name", "hoist", "mentionable", "color", "colors", "colorString", "colorStrings"], [GuildSettingsRoleEditSections.PERMISSIONS]: ["permissions"], [GuildSettingsRoleEditSections.MEMBERS]: [], [GuildSettingsRoleEditSections.VERIFICATIONS]: [] };
 set = new Set();
-const CLOSED = FormStates.CLOSED;
-let closure_28 = false;
-let closure_29 = false;
+let CLOSED = FormStates.CLOSED;
+let c28 = false;
+let c29 = false;
 let closure_30 = [];
 let closure_31 = [];
-let closure_32 = false;
+let c32 = false;
 const set1 = new Set();
-const map = new Map();
-const map1 = new Map();
+let map = new Map();
+let map1 = new Map();
 const map2 = new Map();
-const tmp3 = arg1(dependencyMap[12]);
-let closure_37 = importDefault(dependencyMap[20]).debounce(() => {
-  let closure_0 = false;
-  if (closure_29) {
+let closure_37 = require("dispatcher").debounce(() => {
+  let c0 = false;
+  if (c29) {
     const tmp2 = calculatePositionDeltas().length > 0;
-    closure_29 = tmp2;
+    c29 = tmp2;
     if (!tmp2) {
-      closure_0 = true;
+      c0 = true;
     }
   }
-  const items = [...closure_26];
+  const items = [...set];
   const item = items.forEach((arg0) => {
-    if (callback2(tmp, callback6(arg0))) {
-      callback3(arg0);
-      let closure_0 = true;
+    if (outer1_11(tmp, outer1_49(arg0))) {
+      outer1_40(arg0);
+      let c0 = true;
     }
   });
-  const items1 = [...closure_33];
+  const items1 = [...set1];
   const item1 = items1.forEach((arg0) => {
-    const value = closure_35.get(arg0);
-    if (obj.isEqual(value, closure_34.get(arg0))) {
-      callback4(arg0);
-      let closure_0 = true;
+    const value = outer1_35.get(arg0);
+    if (obj.isEqual(value, outer1_34.get(arg0))) {
+      outer1_41(arg0);
+      let c0 = true;
     }
   });
-  if (closure_0) {
+  if (c0) {
     tmp9.emitChange();
   }
 }, 500);
-let tmp9 = (Store) => {
+let tmp9 = ((Store) => {
   class GuildSettingsRolesStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, GuildSettingsRolesStore);
-      obj = closure_7(GuildSettingsRolesStore);
-      tmp2 = closure_6;
-      if (closure_39()) {
+      tmp = outer1_4(this, GuildSettingsRolesStore);
+      obj = outer1_7(GuildSettingsRolesStore);
+      tmp2 = outer1_6;
+      if (outer1_39()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -323,24 +323,23 @@ let tmp9 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildSettingsRolesStore;
   callback2(GuildSettingsRolesStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_13, closure_10, closure_12);
+      this.waitFor(outer1_13, outer1_10, outer1_12);
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , ];
   obj = {
     key: "hasChanges",
     value() {
-      let tmp = closure_28;
-      if (!closure_28) {
-        tmp = closure_29;
+      let tmp = outer1_28;
+      if (!outer1_28) {
+        tmp = outer1_29;
       }
       if (!tmp) {
-        tmp = closure_32;
+        tmp = outer1_32;
       }
       return tmp;
     }
@@ -349,16 +348,16 @@ let tmp9 = (Store) => {
   obj = {
     key: "hasSectionChanges",
     value(arg0, arg1) {
-      if (arg1 === constants.VERIFICATIONS) {
-        return set.has(arg0);
+      if (arg1 === outer1_14.VERIFICATIONS) {
+        return outer1_33.has(arg0);
       } else {
-        const tmp2 = callback7(arg0, arg1);
+        const tmp2 = outer1_45(arg0, arg1);
         let tmp4 = null != tmp2;
         if (tmp4) {
-          const obj = callback(closure_3[20]);
-          const pickResult = callback(closure_3[20]).pick(tmp2.role, tmp2.fields);
-          tmp4 = !callback4(pickResult, callback(closure_3[20]).pick(tmp2.original, tmp2.fields));
-          const obj2 = callback(closure_3[20]);
+          const obj = outer1_1(outer1_3[20]);
+          const pickResult = outer1_1(outer1_3[20]).pick(tmp2.role, tmp2.fields);
+          tmp4 = !outer1_11(pickResult, outer1_1(outer1_3[20]).pick(tmp2.original, tmp2.fields));
+          const obj2 = outer1_1(outer1_3[20]);
         }
         return tmp4;
       }
@@ -368,61 +367,61 @@ let tmp9 = (Store) => {
   items[3] = {
     key: "getRoleStyleData",
     value(arg0) {
-      return closure_36.get(arg0);
+      return outer1_36.get(arg0);
     }
   };
   items[4] = {
     key: "errorMessage",
     get() {
-      return closure_23;
+      return outer1_23;
     }
   };
   items[5] = {
     key: "hasSortChanges",
     get() {
-      return closure_29;
+      return outer1_29;
     }
   };
   items[6] = {
     key: "hasRoleConfigurationChanges",
     get() {
-      return closure_32;
+      return outer1_32;
     }
   };
   items[7] = {
     key: "guild",
     get() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[8] = {
     key: "editedRoleIds",
     get() {
-      return Array.from(closure_26);
+      return Array.from(outer1_26);
     }
   };
   items[9] = {
     key: "editedRoleIdsForConfigurations",
     get() {
-      return closure_33;
+      return outer1_33;
     }
   };
   items[10] = {
     key: "roles",
     get() {
-      return closure_30;
+      return outer1_30;
     }
   };
   items[11] = {
     key: "formState",
     get() {
-      return closure_27;
+      return outer1_27;
     }
   };
   items[12] = {
     key: "getSortDeltas",
     value() {
-      return callback6();
+      return outer1_42();
     }
   };
   items[13] = {
@@ -434,23 +433,23 @@ let tmp9 = (Store) => {
   items[14] = {
     key: "getRole",
     value(arg0) {
-      return callback8(arg0);
+      return outer1_48(arg0);
     }
   };
   items[15] = {
     key: "getPermissionSearchQuery",
     value() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[16] = {
     key: "getEditedRoleConnectionConfigurationsMap",
     value() {
-      return closure_35;
+      return outer1_35;
     }
   };
   return callback(GuildSettingsRolesStore, items);
-}(importDefault(dependencyMap[21]).Store);
+})(require("initialize").Store);
 tmp9.displayName = "GuildSettingsRolesStore";
 obj = {
   GUILD_SETTINGS_ROLES_INIT() {
@@ -465,9 +464,9 @@ obj = {
         return false;
       }
     }
-    const mapped = roles.map((arg0) => callback(arg0));
-    closure_30 = mapped.filter(arg1(dependencyMap[15]).isNotNullish);
-    let closure_29 = true;
+    const mapped = roles.map((arg0) => outer1_48(arg0));
+    closure_30 = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
+    let c29 = true;
     callback3();
   },
   GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS: function handleUpdatePermissions(flag) {
@@ -477,7 +476,7 @@ obj = {
     } else {
       const permissions = tmp.permissions;
       const obj = {};
-      const obj2 = importAll(dependencyMap[16]);
+      const obj2 = importAll(483);
       if (flag.allow) {
         let addResult = obj2.add(permissions, flag);
       } else {
@@ -500,7 +499,7 @@ obj = {
     const tmp = _getRole(id.id);
     let tmp2 = null != tmp;
     if (tmp2) {
-      const obj = { permissions: importAll(dependencyMap[17]).NONE };
+      const obj = { permissions: importAll(3763).NONE };
       tmp2 = updateRole(tmp, obj);
     }
     return tmp2;
@@ -529,7 +528,7 @@ obj = {
     ({ id, color } = arg0);
     let int2hexResult = null;
     if (0 !== color) {
-      let obj = arg1(dependencyMap[18]);
+      let obj = require(665) /* pad2 */;
       int2hexResult = obj.int2hex(color);
     }
     const tmp4 = _getRole(id);
@@ -540,17 +539,17 @@ obj = {
       let tmp12Result = null != value;
       if (tmp12Result) {
         value.currentStyle = obj.SOLID;
-        obj = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array", primary_color: color };
+        obj = { primary_color: color, secondary_color: null, tertiary_color: null };
         value.styleColors[obj.SOLID] = obj;
         obj = {};
         const merged = Object.assign(value);
         const result = map2.set(id, obj);
         const obj1 = { color, colorString: int2hexResult };
-        const obj2 = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array", primary_color: color };
+        const obj2 = { primary_color: color, secondary_color: null, tertiary_color: null };
         obj1.colors = obj2;
         let tmp13 = null;
         if (null != int2hexResult) {
-          const obj3 = { 0: "mn", 9223372036854775807: "description", -9223372036854775808: "Array", primaryColor: int2hexResult };
+          const obj3 = { primaryColor: int2hexResult, secondaryColor: null, tertiaryColor: null };
           tmp13 = obj3;
         }
         obj1.colorStrings = tmp13;
@@ -569,7 +568,7 @@ obj = {
     if (null == tmp) {
       return false;
     } else {
-      const result = arg1(dependencyMap[19]).extractColorStringsFromServerColors(colors);
+      const result = require(1913) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(colors);
       const value = map2.get(id);
       let tmp8 = null != value;
       if (tmp8) {
@@ -616,7 +615,7 @@ obj = {
       return false;
     } else {
       ({ fields, original } = tmp);
-      updateRole(tmp.role, importDefault(dependencyMap[20]).pick(original, fields));
+      updateRole(tmp.role, importDefault(22).pick(original, fields));
       let hasItem = fields.includes("color");
       if (!hasItem) {
         hasItem = fields.includes("colors");
@@ -646,17 +645,15 @@ obj = {
   },
   GUILD_SETTINGS_ROLES_COMMIT_SECTION_CHANGES: function handleCommitSectionChanges(id) {
     id = id.id;
-    const arg1 = id;
-    let importDefault;
-    const tmp = getSectionFieldContext(id, id.section);
+    let obj;
+    let tmp = getSectionFieldContext(id, id.section);
     if (null == tmp) {
       return false;
     } else {
       const role = tmp.role;
-      const obj = {};
+      obj = {};
       const merged = Object.assign(tmp.original);
-      const merged1 = Object.assign(importDefault(dependencyMap[20]).pick(role, tmp.fields));
-      importDefault = obj;
+      const merged1 = Object.assign(obj(22).pick(role, tmp.fields));
       closure_31 = closure_31.map((id) => {
         let tmp = id;
         if (id.id === id) {
@@ -670,15 +667,15 @@ obj = {
     }
   },
   GUILD_SETTINGS_ROLE_SELECT: function handleInsertRole(arg0) {
+    let closure_22;
     let role;
     ({ role, searchQuery: closure_22 } = arg0);
     if (null != role) {
       if (null == _getRole(role.id)) {
         const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(closure_30, 0);
+        const arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
         items[arraySpreadResult] = role;
         const sum = arraySpreadResult + 1;
-        closure_30 = items;
         callback3();
       } else {
         updateRole(role, role);
@@ -705,7 +702,7 @@ obj = {
     if (null != user) {
       id = user.id;
     }
-    const items = [role];
+    let items = [role];
     initRoleStyles(id, items);
   },
   GUILD_SETTINGS_ROLES_ROLE_STYLE_UPDATE: function handleRoleStyleUpdate(arg0) {
@@ -722,7 +719,7 @@ obj = {
       } else {
         let obj = { currentStyle, styleColors: value.styleColors };
         const result = map2.set(id, obj);
-        const result1 = arg1(dependencyMap[19]).extractColorStringsFromServerColors(tmp7);
+        const result1 = require(1913) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(tmp7);
         obj = {};
         const primary_color = tmp7.primary_color;
         let tmp2;
@@ -752,7 +749,7 @@ obj = {
         clearConfigurationEdit(tmp.id);
         callback3();
       }
-      const obj = importDefault(dependencyMap[20]);
+      obj = importDefault(22);
     }
   },
   GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS: function handleUpdateRoleConnectionConfigurations(roleId) {
@@ -760,25 +757,23 @@ obj = {
     if (null == tmp) {
       return false;
     } else {
-      let closure_32 = true;
+      let c32 = true;
       set1.add(tmp.id);
       const result = map1.set(tmp.id, roleId.roleConnectionConfigurations);
       callback3();
     }
   },
   GUILD_SETTINGS_CLOSE: function handleClose() {
-    let closure_21 = null;
+    let c21 = null;
     const items = [];
-    let closure_30 = items;
-    let closure_31 = items;
     map.clear();
     set.clear();
     map2.clear();
     map1.clear();
-    const set = new Set();
-    let closure_28 = false;
-    let closure_29 = false;
-    let closure_32 = false;
+    set = new Set();
+    let c28 = false;
+    let c29 = false;
+    let c32 = false;
     const CLOSED = FormStates.CLOSED;
   },
   GUILD_ROLE_CREATE: syncGuildChanges,
@@ -792,10 +787,10 @@ obj = {
     return syncGuildChanges(roleId);
   },
   GUILD_SETTINGS_ROLES_SUBMITTING: function handleSubmitting() {
-    const CLOSED = FormStates.SUBMITTING;
+    const SUBMITTING = FormStates.SUBMITTING;
   },
   GUILD_SETTINGS_ROLES_SAVE_FAIL: function handleSaveFail(message) {
-    const CLOSED = FormStates.OPEN;
+    const OPEN = FormStates.OPEN;
     message = message.message;
   },
   GUILD_SETTINGS_ROLES_SAVE_SUCCESS: function handleSaveSuccess() {
@@ -810,7 +805,7 @@ obj = {
         items[arraySpreadResult] = constants2.PIN_PERMISSION_MIGRATION_COMPLETE;
         const sum = arraySpreadResult + 1;
         const set = new Set(items);
-        const user = set(user, "features", set);
+        user = set(user, "features", set);
       }
     }
     return false;
@@ -824,15 +819,15 @@ obj = {
         items[arraySpreadResult] = constants2.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE;
         const sum = arraySpreadResult + 1;
         const set = new Set(items);
-        const user = set(user, "features", set);
+        user = set(user, "features", set);
       }
     }
     return false;
   }
 };
-tmp9 = new tmp9(importDefault(dependencyMap[22]), obj);
-const importDefaultResult = importDefault(dependencyMap[20]);
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesStore.tsx");
+tmp9 = new tmp9(require("dispatcher"), obj);
+let closure_38 = tmp9;
+let result = set.fileFinishedImporting("modules/guild_settings/roles/GuildSettingsRolesStore.tsx");
 
 export default tmp9;
 export const RoleColorsStyle = obj;

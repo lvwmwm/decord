@@ -1,24 +1,26 @@
-// Module ID: 13839
-// Function ID: 104603
+// Module ID: 13953
+// Function ID: 106759
 // Name: ArrowSmallUpIcon
-// Dependencies: []
+// Dependencies: [31, 33, 689, 3833, 13954, 2]
 // Exports: ArrowSmallUpIcon
 
-// Module 13839 (ArrowSmallUpIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ArrowSmallUpIcon.tsx");
+// Module 13953 (ArrowSmallUpIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/ArrowSmallUpIcon.tsx");
 
 export const ArrowSmallUpIcon = function ArrowSmallUpIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(13954) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(13954) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

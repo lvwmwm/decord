@@ -1,28 +1,29 @@
-// Module ID: 11504
-// Function ID: 89647
+// Module ID: 11514
+// Function ID: 89697
 // Name: useLoadGuildPowerups
-// Dependencies: []
+// Dependencies: [31, 4041, 11515, 11520, 2]
 // Exports: default
 
-// Module 11504 (useLoadGuildPowerups)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/powerups/hooks/useLoadGuildPowerups.tsx");
+// Module 11514 (useLoadGuildPowerups)
+import result from "result";
+
+const require = arg1;
+const result = require("fetchGameServerCatalog").fileFinishedImporting("modules/premium/powerups/hooks/useLoadGuildPowerups.tsx");
 
 export default function useLoadGuildPowerups(guildId) {
-  const arg1 = guildId;
-  const gameServerEnabled = arg1(dependencyMap[1]).useGameServerEnabled(guildId, "useLoadGuildPowerups");
-  const dependencyMap = gameServerEnabled;
+  const _require = guildId;
+  gameServerEnabled = _require(gameServerEnabled[1]).useGameServerEnabled(guildId, "useLoadGuildPowerups");
   const items = [guildId, gameServerEnabled];
   const effect = React.useEffect(() => {
     if (gameServerEnabled) {
-      const gameServerCatalog = arg0(gameServerEnabled[2]).fetchGameServerCatalog(arg0);
-      const obj = arg0(gameServerEnabled[2]);
+      const gameServerCatalog = guildId(gameServerEnabled[2]).fetchGameServerCatalog(guildId);
+      const obj = guildId(gameServerEnabled[2]);
     }
   }, items);
   const items1 = [guildId];
   const effect1 = React.useEffect(() => {
-    const powerupCatalogForGuild = arg0(gameServerEnabled[3]).fetchPowerupCatalogForGuild(arg0);
-    const obj = arg0(gameServerEnabled[3]);
-    const guildBoostEntitlements = arg0(gameServerEnabled[3]).fetchGuildBoostEntitlements(arg0);
+    const powerupCatalogForGuild = guildId(gameServerEnabled[3]).fetchPowerupCatalogForGuild(guildId);
+    const obj = guildId(gameServerEnabled[3]);
+    const guildBoostEntitlements = guildId(gameServerEnabled[3]).fetchGuildBoostEntitlements(guildId);
   }, items1);
 };

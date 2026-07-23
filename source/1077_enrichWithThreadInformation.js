@@ -1,11 +1,12 @@
 // Module ID: 1077
-// Function ID: 12388
+// Function ID: 12389
 // Name: enrichWithThreadInformation
-// Dependencies: []
+// Dependencies: [77, 794, 1004, 1048]
 // Exports: addProfileToGlobalCache, addProfilesToEnvelope, attachProfiledThreadToEvent, createProfileChunkPayload, createProfilingEvent, findProfiledTransactionsFromEnvelope, getActiveProfilesCount, hasLegacyProfiling, isAutomatedPageLoadSpan, shouldProfileSession, shouldProfileSpanLegacy, startJSSelfProfile, takeProfileFromGlobalCache, validateProfileChunk
 
 // Module 1077 (enrichWithThreadInformation)
-import StringResult from "module_0";
+import _defineProperty from "_defineProperty";
+import StringResult from "_defineProperty";
 
 function enrichWithThreadInformation(samples) {
   let tmp = samples;
@@ -38,10 +39,10 @@ function createProfilePayload(event_id, arg1, resources, type) {
       DEBUG_BUILD = 32 !== trace_id.length;
     }
     if (DEBUG_BUILD) {
-      DEBUG_BUILD = require(dependencyMap[3]).DEBUG_BUILD;
+      DEBUG_BUILD = require(1048).DEBUG_BUILD;
     }
     if (DEBUG_BUILD) {
-      const debug = require(dependencyMap[1]).debug;
+      const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
       const _HermesInternal = HermesInternal;
       debug.log("[Profiling] Invalid traceId: " + trace_id + " on profiled event");
     }
@@ -53,7 +54,7 @@ function createProfilePayload(event_id, arg1, resources, type) {
       if ("number" === typeof type.timestamp) {
         let result = 1000 * type.timestamp;
       } else {
-        let obj1 = require(dependencyMap[1]);
+        let obj1 = require(794) /* registerSpanErrorInstrumentation */;
         result = 1000 * obj1.timestampInSeconds();
       }
       let obj = { event_id };
@@ -65,14 +66,14 @@ function createProfilePayload(event_id, arg1, resources, type) {
       obj.release = type.release || "";
       let DEFAULT_ENVIRONMENT = type.environment;
       if (!DEFAULT_ENVIRONMENT) {
-        DEFAULT_ENVIRONMENT = require(dependencyMap[1]).DEFAULT_ENVIRONMENT;
+        DEFAULT_ENVIRONMENT = require(794) /* registerSpanErrorInstrumentation */.DEFAULT_ENVIRONMENT;
       }
       obj.environment = DEFAULT_ENVIRONMENT;
-      obj = { name: "javascript", version: require(dependencyMap[2]).WINDOW.navigator.userAgent };
+      obj = { name: "javascript", version: require(1004) /* ignoreNextOnError */.WINDOW.navigator.userAgent };
       obj.runtime = obj;
-      obj1 = { name: closure_6, version: closure_7, build_number: str3 };
+      obj1 = { name: c6, version: c7, build_number: str3 };
       obj.os = obj1;
-      const obj2 = { locale: str4, model: closure_10, manufacturer: str3, architecture: closure_8, is_emulator: false };
+      const obj2 = { locale: str4, model: c10, manufacturer: str3, architecture: c8, is_emulator: false };
       obj.device = obj2;
       const obj3 = { images: applyDebugMetadata(resources.resources) };
       obj.debug_meta = obj3;
@@ -80,12 +81,12 @@ function createProfilePayload(event_id, arg1, resources, type) {
       const obj4 = { name: type.transaction || "" };
       event_id = type.event_id;
       if (!event_id) {
-        event_id = require(dependencyMap[1]).uuid4();
-        const obj10 = require(dependencyMap[1]);
+        event_id = require(794) /* registerSpanErrorInstrumentation */.uuid4();
+        const obj10 = require(794) /* registerSpanErrorInstrumentation */;
       }
       obj4.id = event_id;
       obj4.trace_id = str5;
-      obj4.active_thread_id = StringResult;
+      obj4.active_thread_id = closure_4;
       obj4.relative_start_ns = "0";
       const result1 = 1000000 * (result - arg1);
       obj4.relative_end_ns = result1.toFixed(0);
@@ -95,20 +96,20 @@ function createProfilePayload(event_id, arg1, resources, type) {
     } else if ("number" === typeof type.start_timestamp) {
       let result2 = 1000 * type.start_timestamp;
     } else {
-      obj = require(dependencyMap[1]);
+      obj = require(794) /* registerSpanErrorInstrumentation */;
       result2 = 1000 * obj.timestampInSeconds();
     }
   }
 }
 function convertJSSelfProfileToSampledFormat(samples) {
-  const require = samples;
-  const callback = 0;
-  let obj = { samples: [], stacks: [], frames: [], thread_metadata: callback({}, StringResult, obj) };
+  const _require = samples;
+  const _defineProperty = 0;
+  obj = { samples: [], stacks: [], frames: [], thread_metadata: _defineProperty({}, timestamp, obj) };
   obj = { name: closure_5 };
-  let closure_3 = obj;
   const first = samples.samples[0];
   if (first) {
-    let result = require(dependencyMap[1]).browserPerformanceTimeOrigin();
+    timestamp = first.timestamp;
+    let result = _require(794).browserPerformanceTimeOrigin();
     const _performance = performance;
     if ("number" === typeof performance.timeOrigin) {
       const _performance2 = performance;
@@ -132,41 +133,41 @@ function convertJSSelfProfileToSampledFormat(samples) {
           obj.stacks[closure_1] = [];
           closure_2 = closure_2 + 1;
         }
-        let obj = {};
+        obj = {};
         const result = (stackId.timestamp + closure_5 - timestamp) * obj;
         obj.elapsed_since_start_ns = result.toFixed(0);
         obj.stack_id = closure_1;
         obj.thread_id = timestamp;
         obj.samples[arg1] = obj;
       } else {
-        let tmp11 = stackId.stacks[stackId.stackId];
+        let tmp11 = samples.stacks[stackId.stackId];
         const items = [];
         if (tmp11) {
           do {
             let arr = items.push(tmp11.frameId);
-            let tmp2 = closure_0;
-            let tmp3 = closure_0.frames[tmp11.frameId];
+            let tmp2 = samples;
+            let tmp3 = samples.frames[tmp11.frameId];
             let tmp4 = tmp3;
             if (tmp3) {
-              let tmp5 = closure_3;
-              tmp4 = undefined === closure_3.frames[tmp11.frameId];
+              let tmp5 = obj;
+              tmp4 = undefined === obj.frames[tmp11.frameId];
             }
             if (tmp4) {
-              let tmp6 = closure_3;
+              let tmp6 = obj;
               obj = { function: tmp3.name };
               let tmp7;
               if ("number" === typeof tmp3.resourceId) {
-                let tmp8 = closure_0;
-                tmp7 = closure_0.resources[tmp3.resourceId];
+                let tmp8 = samples;
+                tmp7 = samples.resources[tmp3.resourceId];
               }
               obj.abs_path = tmp7;
               ({ line: obj.lineno, column: obj.colno } = tmp3);
-              closure_3.frames[tmp11.frameId] = obj;
+              obj.frames[tmp11.frameId] = obj;
             }
             tmp9 = undefined;
             if (undefined !== tmp11.parentId) {
-              let tmp10 = closure_0;
-              tmp9 = closure_0.stacks[tmp11.parentId];
+              let tmp10 = samples;
+              tmp9 = samples.stacks[tmp11.parentId];
             }
             tmp11 = tmp9;
           } while (tmp9);
@@ -187,7 +188,7 @@ function convertJSSelfProfileToSampledFormat(samples) {
   }
 }
 function applyDebugMetadata(resources) {
-  const client = require(dependencyMap[1]).getClient();
+  const client = require(794) /* registerSpanErrorInstrumentation */.getClient();
   let options;
   if (null != client) {
     options = client.getOptions();
@@ -197,8 +198,8 @@ function applyDebugMetadata(resources) {
     stackParser = options.stackParser;
   }
   if (stackParser) {
-    let debugImagesForResources = require(dependencyMap[1]).getDebugImagesForResources(stackParser, resources);
-    const obj3 = require(dependencyMap[1]);
+    let debugImagesForResources = require(794) /* registerSpanErrorInstrumentation */.getDebugImagesForResources(stackParser, resources);
+    const obj3 = require(794) /* registerSpanErrorInstrumentation */;
   } else {
     debugImagesForResources = [];
   }
@@ -210,7 +211,7 @@ function isValidSampleRate(concat) {
       const _isNaN = isNaN;
       return flag2;
     }
-    let flag2 = true === concat;
+    flag2 = true === concat;
     if (!flag2) {
       flag2 = false === concat;
     }
@@ -222,8 +223,8 @@ function isValidSampleRate(concat) {
       let flag4 = !tmp3;
       if (tmp3) {
         flag4 = false;
-        if (require(dependencyMap[3]).DEBUG_BUILD) {
-          const debug = require(dependencyMap[1]).debug;
+        if (require(1048).DEBUG_BUILD) {
+          const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
           const _HermesInternal = HermesInternal;
           debug.warn("[Profiling] Invalid sample rate. Sample rate must be between 0 and 1. Got " + concat + ".");
           flag4 = false;
@@ -233,8 +234,8 @@ function isValidSampleRate(concat) {
     }
   }
   flag2 = false;
-  if (require(dependencyMap[3]).DEBUG_BUILD) {
-    const debug2 = require(dependencyMap[1]).debug;
+  if (require(1048).DEBUG_BUILD) {
+    const debug2 = require(794) /* registerSpanErrorInstrumentation */.debug;
     const _JSON = JSON;
     const json = JSON.stringify(concat);
     const _JSON2 = JSON;
@@ -243,12 +244,11 @@ function isValidSampleRate(concat) {
     flag2 = false;
   }
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_3 = 1000000;
-let tmp2 = "window" in require(dependencyMap[1]).GLOBAL_OBJ;
+let c3 = 1000000;
+let tmp2 = "window" in require("registerSpanErrorInstrumentation").GLOBAL_OBJ;
 if (tmp2) {
-  tmp2 = require(dependencyMap[1]).GLOBAL_OBJ.window === require(dependencyMap[1]).GLOBAL_OBJ;
+  tmp2 = require("registerSpanErrorInstrumentation").GLOBAL_OBJ.window === require("registerSpanErrorInstrumentation").GLOBAL_OBJ;
 }
 if (tmp2) {
   tmp2 = "undefined" === typeof globalThis.importScripts;
@@ -257,10 +257,10 @@ let str2 = "worker";
 if (tmp2) {
   str2 = "main";
 }
-const _navigator = require(dependencyMap[2]).WINDOW.navigator;
-let closure_6 = "";
-let closure_7 = "";
-let closure_8 = "";
+const _navigator = require("ignoreNextOnError").WINDOW.navigator;
+let c6 = "";
+let c7 = "";
+let c8 = "";
 let str3;
 if (null != _navigator) {
   str3 = _navigator.userAgent;
@@ -268,7 +268,7 @@ if (null != _navigator) {
 if (!str3) {
   str3 = "";
 }
-let closure_10 = "";
+let c10 = "";
 let str4;
 if (null != _navigator) {
   str4 = _navigator.language;
@@ -295,7 +295,7 @@ if (tmp6) {
   tmp6 = "getHighEntropyValues" in userAgentData;
 }
 if (tmp6) {
-  const highEntropyValues = userAgentData.getHighEntropyValues(["x", "exports", "isArray", "Array", "isArray"]);
+  const highEntropyValues = userAgentData.getHighEntropyValues(["architecture", "model", "platform", "platformVersion", "fullVersionList"]);
   highEntropyValues.then((platform) => {
     let closure_6 = platform.platform || "";
     let closure_8 = platform.architecture || "";
@@ -325,14 +325,14 @@ if (tmp6) {
     }
   });
 }
-let closure_12 = false;
+let c12 = false;
 const map = new Map();
 
 export const MAX_PROFILE_DURATION_MS = 30000;
 export const PROFILER_THREAD_ID_STRING = StringResult;
 export const PROFILER_THREAD_NAME = str2;
-export const addProfileToGlobalCache = function addProfileToGlobalCache(closure_2, arg1) {
-  const result = map.set(closure_2, arg1);
+export const addProfileToGlobalCache = function addProfileToGlobalCache(outer3_2, arg1) {
+  const result = map.set(outer3_2, arg1);
   if (map.size > 30) {
     const value = map.keys().next().value;
     if (undefined !== value) {
@@ -350,7 +350,7 @@ export const addProfilesToEnvelope = function addProfilesToEnvelope(arg0, arg1) 
       let obj = { type: "profile" };
       let items = [obj, tmp4];
       arr = arr.push(items);
-      // continue
+      continue;
     }
     return arg0;
   } else {
@@ -384,7 +384,7 @@ export const attachProfiledThreadToEvent = function attachProfiledThreadToEvent(
           if (null == data) {
             data = {};
           }
-          obj.data = Object.assign({}, data, callback(callback({}, "thread.id", StringResult), "thread.name", "thread.name"));
+          obj.data = Object.assign({}, data, _defineProperty(_defineProperty({}, "thread.id", closure_4), "thread.name", "thread.name"));
           contexts.contexts.trace = Object.assign({}, trace, obj);
           const spans = contexts.spans;
           if (null != spans) {
@@ -393,7 +393,7 @@ export const attachProfiledThreadToEvent = function attachProfiledThreadToEvent(
               if (!data) {
                 data = {};
               }
-              data.data = Object.assign({}, data, callback(callback({}, "thread.id", closure_4), "thread.name", closure_5));
+              data.data = Object.assign({}, data, outer1_2(outer1_2({}, "thread.id", outer1_4), "thread.name", outer1_5));
             });
           }
         }
@@ -435,7 +435,7 @@ export const createProfileChunkPayload = function createProfileChunkPayload(fram
         if (tmp4) {
           do {
             let arr = items2.push(tmp5.frameId);
-            let tmp8;
+            tmp8 = undefined;
             if (undefined !== tmp5.parentId) {
               tmp8 = frames.stacks[tmp5.parentId];
             }
@@ -448,7 +448,7 @@ export const createProfileChunkPayload = function createProfileChunkPayload(fram
         let tmp10 = items2;
       }
     }
-    let obj1 = require(dependencyMap[1]);
+    let obj1 = require(794) /* registerSpanErrorInstrumentation */;
     let result = obj1.browserPerformanceTimeOrigin();
     const _performance = performance;
     if ("number" === typeof performance.timeOrigin) {
@@ -475,8 +475,8 @@ export const createProfileChunkPayload = function createProfileChunkPayload(fram
           num7 = stackId;
         }
         obj.stack_id = num7;
-        let tmp18 = StringResult;
-        obj.thread_id = StringResult;
+        let tmp18 = closure_4;
+        obj.thread_id = closure_4;
         obj.timestamp = result1;
         items3[num6] = obj;
         let tmp19 = stackId;
@@ -485,7 +485,7 @@ export const createProfileChunkPayload = function createProfileChunkPayload(fram
     }
     obj = { frames: items, stacks: items1, samples: items3 };
     obj1 = { name: str2 };
-    obj.thread_metadata = callback({}, StringResult, obj1);
+    obj.thread_metadata = _defineProperty({}, closure_4, obj1);
     const options = _client.getOptions();
     let sdk;
     if (null != _client.getSdkMetadata) {
@@ -494,7 +494,7 @@ export const createProfileChunkPayload = function createProfileChunkPayload(fram
         sdk = sdkMetadata.sdk;
       }
     }
-    const obj2 = { chunk_id: require(dependencyMap[1]).uuid4() };
+    const obj2 = { chunk_id: require(794) /* registerSpanErrorInstrumentation */.uuid4() };
     const obj3 = {};
     let name;
     if (null != sdk) {
@@ -509,15 +509,15 @@ export const createProfileChunkPayload = function createProfileChunkPayload(fram
     if (null != sdk) {
       version = sdk.version;
     }
-    let str2 = "0.0.0";
+    str2 = "0.0.0";
     if (null != version) {
       str2 = version;
     }
     obj3.version = str2;
     obj2.client_sdk = obj3;
     if (!uuid4Result) {
-      uuid4Result = require(dependencyMap[1]).uuid4();
-      const obj9 = require(dependencyMap[1]);
+      uuid4Result = require(794) /* registerSpanErrorInstrumentation */.uuid4();
+      const obj9 = require(794) /* registerSpanErrorInstrumentation */;
     }
     obj2.profiler_id = uuid4Result;
     obj2.platform = "javascript";
@@ -544,8 +544,8 @@ export { createProfilePayload };
 export const createProfilingEvent = function createProfilingEvent(event_id, arg1, samples, type) {
   if (samples.samples.length < 2) {
     let flag = false;
-    if (require(dependencyMap[3]).DEBUG_BUILD) {
-      const debug2 = require(dependencyMap[1]).debug;
+    if (require(1048).DEBUG_BUILD) {
+      const debug2 = require(794) /* registerSpanErrorInstrumentation */.debug;
       debug2.log("[Profiling] Discarding profile because it contains less than 2 samples");
       flag = false;
     }
@@ -553,8 +553,8 @@ export const createProfilingEvent = function createProfilingEvent(event_id, arg1
     flag = !tmp;
     if (!samples.frames.length) {
       flag = false;
-      if (require(dependencyMap[3]).DEBUG_BUILD) {
-        const debug = require(dependencyMap[1]).debug;
+      if (require(1048).DEBUG_BUILD) {
+        const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
         debug.log("[Profiling] Discarding profile because it contains no frames");
         flag = false;
       }
@@ -569,8 +569,7 @@ export const createProfilingEvent = function createProfilingEvent(event_id, arg1
 export { enrichWithThreadInformation };
 export const findProfiledTransactionsFromEnvelope = function findProfiledTransactionsFromEnvelope(arg0) {
   const items = [];
-  const require = items;
-  require(dependencyMap[1]).forEachEnvelopeItem(arg0, (arg0, arg1) => {
+  items(794).forEachEnvelopeItem(arg0, (arg0, arg1) => {
     if ("transaction" === arg1) {
       let num = 1;
       if (1 < arg0.length) {
@@ -592,8 +591,8 @@ export const findProfiledTransactionsFromEnvelope = function findProfiledTransac
             profile_id = tmp4.profile_id;
           }
           if (profile_id) {
-            let tmp5 = closure_0;
-            let arr = closure_0.push(arg0[num]);
+            let tmp5 = items;
+            let arr = items.push(arg0[num]);
           }
           num = num + 1;
           tmp2 = tmp4;
@@ -610,21 +609,21 @@ export const hasLegacyProfiling = function hasLegacyProfiling(options) {
   return undefined !== options.profilesSampleRate;
 };
 export const isAutomatedPageLoadSpan = function isAutomatedPageLoadSpan(rootSpan) {
-  return "pageload" === require(dependencyMap[1]).spanToJSON(rootSpan).op;
+  return "pageload" === require(794) /* registerSpanErrorInstrumentation */.spanToJSON(rootSpan).op;
 };
 export { isValidSampleRate };
 export const shouldProfileSession = function shouldProfileSession(options) {
-  if (closure_12) {
-    if (require(dependencyMap[3]).DEBUG_BUILD) {
-      const debug4 = require(dependencyMap[1]).debug;
+  if (c12) {
+    if (require(1048).DEBUG_BUILD) {
+      const debug4 = require(794) /* registerSpanErrorInstrumentation */.debug;
       debug4.log("[Profiling] Profiling has been disabled for the duration of the current user session as the JS Profiler could not be started.");
     }
     return false;
   } else {
     if ("trace" !== options.profileLifecycle) {
       if ("manual" !== options.profileLifecycle) {
-        if (require(dependencyMap[3]).DEBUG_BUILD) {
-          const debug3 = require(dependencyMap[1]).debug;
+        if (require(1048).DEBUG_BUILD) {
+          const debug3 = require(794) /* registerSpanErrorInstrumentation */.debug;
           debug3.warn("[Profiling] Session not sampled. Invalid `profileLifecycle` option.");
         }
         return false;
@@ -637,16 +636,16 @@ export const shouldProfileSession = function shouldProfileSession(options) {
         let flag2 = Math.random() <= profileSessionSampleRate;
       } else {
         flag2 = false;
-        if (require(dependencyMap[3]).DEBUG_BUILD) {
-          const debug2 = require(dependencyMap[1]).debug;
+        if (require(1048).DEBUG_BUILD) {
+          const debug2 = require(794) /* registerSpanErrorInstrumentation */.debug;
           debug2.log("[Profiling] Discarding profile because profileSessionSampleRate is not defined or set to 0");
           flag2 = false;
         }
       }
     } else {
       let flag = false;
-      if (require(dependencyMap[3]).DEBUG_BUILD) {
-        const debug = require(dependencyMap[1]).debug;
+      if (require(1048).DEBUG_BUILD) {
+        const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
         debug.warn("[Profiling] Discarding profile because of invalid profileSessionSampleRate.");
         flag = false;
       }
@@ -655,15 +654,15 @@ export const shouldProfileSession = function shouldProfileSession(options) {
   }
 };
 export const shouldProfileSpanLegacy = function shouldProfileSpanLegacy(rootSpan) {
-  if (closure_12) {
-    if (require(dependencyMap[3]).DEBUG_BUILD) {
-      const debug5 = require(dependencyMap[1]).debug;
+  if (c12) {
+    if (require(1048).DEBUG_BUILD) {
+      const debug5 = require(794) /* registerSpanErrorInstrumentation */.debug;
       debug5.log("[Profiling] Profiling has been disabled for the duration of the current user session.");
     }
     return false;
   } else if (rootSpan.isRecording()) {
     let num3 = 1;
-    const client = tmp(tmp2[1]).getClient();
+    const client = tmp(794).getClient();
     let options;
     if (null != client) {
       options = client.getOptions();
@@ -680,7 +679,7 @@ export const shouldProfileSpanLegacy = function shouldProfileSpanLegacy(rootSpan
           let flag6 = tmp25;
           if (!tmp25) {
             flag6 = false;
-            if (require(dependencyMap[3]).DEBUG_BUILD) {
+            if (require(1048).DEBUG_BUILD) {
               num3 = require(dependencyMap[num3]).debug;
               const _Number = Number;
               const _HermesInternal = HermesInternal;
@@ -693,7 +692,7 @@ export const shouldProfileSpanLegacy = function shouldProfileSpanLegacy(rootSpan
           let flag4 = flag6;
         } else {
           flag4 = false;
-          if (require(dependencyMap[3]).DEBUG_BUILD) {
+          if (require(1048).DEBUG_BUILD) {
             const debug4 = require(dependencyMap[num3]).debug;
             debug4.log("[Profiling] Discarding profile because a negative sampling decision was inherited or profileSampleRate is set to 0");
             flag4 = false;
@@ -701,7 +700,7 @@ export const shouldProfileSpanLegacy = function shouldProfileSpanLegacy(rootSpan
         }
       } else {
         let flag3 = false;
-        if (require(dependencyMap[3]).DEBUG_BUILD) {
+        if (require(1048).DEBUG_BUILD) {
           const debug3 = require(dependencyMap[num3]).debug;
           debug3.warn("[Profiling] Discarding profile because of invalid sample rate.");
           flag3 = false;
@@ -709,23 +708,23 @@ export const shouldProfileSpanLegacy = function shouldProfileSpanLegacy(rootSpan
         return flag3;
       }
     } else {
-      if (require(dependencyMap[3]).DEBUG_BUILD) {
+      if (require(1048).DEBUG_BUILD) {
         const debug2 = require(dependencyMap[num3]).debug;
         debug2.log("[Profiling] Profiling disabled, no options found.");
       }
       return false;
     }
-    const tmpResult = tmp(tmp2[1]);
+    const tmpResult = tmp(794);
   } else {
-    if (tmp(tmp2[3]).DEBUG_BUILD) {
-      const debug = require(dependencyMap[1]).debug;
+    if (tmp(1048).DEBUG_BUILD) {
+      const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
       debug.log("[Profiling] Discarding profile because root span was not sampled.");
     }
     return false;
   }
 };
 export const startJSSelfProfile = function startJSSelfProfile() {
-  const Profiler = require(dependencyMap[2]).WINDOW.Profiler;
+  const Profiler = require(1004) /* ignoreNextOnError */.WINDOW.Profiler;
   let tmp = Profiler;
   if ("function" === typeof Profiler) {
     const _Math = Math;
@@ -733,8 +732,8 @@ export const startJSSelfProfile = function startJSSelfProfile() {
     const prototype = tmp.prototype;
     tmp = new tmp(obj);
     return tmp;
-  } else if (require(dependencyMap[3]).DEBUG_BUILD) {
-    const debug = require(dependencyMap[1]).debug;
+  } else if (require(1048).DEBUG_BUILD) {
+    const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
     debug.log("[Profiling] Profiling is not supported by this browser, Profiler interface missing on window object.");
   }
 };
@@ -791,7 +790,7 @@ export const validateProfileChunk = function validateProfileChunk(profileChunkPa
         obj = { reason: "missing or invalid profiler_id" };
         return obj;
       }
-      const tmp15 = isHex32;
+      tmp15 = isHex32;
     }
   }
   return { reason: "chunk is not an object" };

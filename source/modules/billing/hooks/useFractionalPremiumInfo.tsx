@@ -1,10 +1,24 @@
-// Module ID: 6631
-// Function ID: 50879
+// Module ID: 6636
+// Function ID: 50908
 // Name: calculateFractionalPremiumInfo
-// Dependencies: []
+// Dependencies: [57, 31, 1849, 3782, 6637, 653, 1851, 3712, 44, 3791, 3776, 566, 4559, 6638, 22, 2]
 // Exports: default
 
-// Module 6631 (calculateFractionalPremiumInfo)
+// Module 6636 (calculateFractionalPremiumInfo)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import ME from "ME";
+import GuildFeatures from "GuildFeatures";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_8;
+let closure_9;
+const require = arg1;
 function calculateFractionalPremiumInfo(isFetching) {
   let entitlements;
   let excludeReverseTrialFromCountdown;
@@ -16,7 +30,7 @@ function calculateFractionalPremiumInfo(isFetching) {
     flag = false;
   }
   ({ entitlements, unactivatedFractionalPremiumUnits, premiumSubscription, fetchedAllEntitlements, excludeReverseTrialFromCountdown } = isFetching);
-  let obj = { isFractionalPremiumActive: false, fractionalState: constants3.NONE, startsAt: importDefault(dependencyMap[7])(0), endsAt: importDefault(dependencyMap[7])(0), currentEntitlementId: "", currentEntitlementEndsAt: importDefault(dependencyMap[7])(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
+  let obj = { isFractionalPremiumActive: false, fractionalState: constants3.NONE, startsAt: importDefault(3712)(0), endsAt: importDefault(3712)(0), currentEntitlementId: "", currentEntitlementEndsAt: importDefault(3712)(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
   let str = "";
   if (flag) {
     obj = {};
@@ -31,7 +45,7 @@ function calculateFractionalPremiumInfo(isFetching) {
         if (tmp2) {
           tmp2 = null != endsAt2.endsAt;
         }
-        callback(closure_2[8])(tmp2, "endsAt should not be null");
+        outer1_1(outer1_2[8])(tmp2, "endsAt should not be null");
         let num = -1;
         if (endsAt.endsAt >= endsAt2.endsAt) {
           let num2 = 0;
@@ -50,7 +64,7 @@ function calculateFractionalPremiumInfo(isFetching) {
         obj = {};
         const obj1 = { entitlementIds: mapped };
         obj.extra = obj1;
-        const result = arg1(dependencyMap[9]).captureBillingMessage("fractional redemption entitlements should have startsAt/endsAt", obj);
+        const result = require(3791) /* _createGatewayCheckoutContext */.captureBillingMessage("fractional redemption entitlements should have startsAt/endsAt", obj);
         const _Error = Error;
         const error = new Error("fractional redemption entitlements should have startsAt/endsAt");
         throw error;
@@ -70,17 +84,17 @@ function calculateFractionalPremiumInfo(isFetching) {
         }
         const obj2 = { isFractionalPremiumActive: null != tmp4, fractionalState: tmp6 };
         if (null != tmp4) {
-          let tmp14 = importDefault(dependencyMap[7])(tmp4.startsAt);
+          let tmp14 = importDefault(3712)(tmp4.startsAt);
         } else {
-          tmp14 = importDefault(dependencyMap[7])(0);
+          tmp14 = importDefault(3712)(0);
         }
         obj2.startsAt = tmp14;
         if (null != tmp4) {
-          const obj4 = arg1(dependencyMap[10]);
-          let tmp22Result = importDefault(dependencyMap[7])(obj4.extendDateWithUnconsumedFractionalPremium(tmp4.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
-          const tmp22 = importDefault(dependencyMap[7]);
+          const obj4 = require(3776) /* _createForOfIteratorHelperLoose */;
+          let tmp22Result = importDefault(3712)(obj4.extendDateWithUnconsumedFractionalPremium(tmp4.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
+          const tmp22 = importDefault(3712);
         } else {
-          tmp22Result = importDefault(dependencyMap[7])(0);
+          tmp22Result = importDefault(3712)(0);
         }
         obj2.endsAt = tmp22Result;
         if (null != tmp4) {
@@ -88,9 +102,9 @@ function calculateFractionalPremiumInfo(isFetching) {
         }
         obj2.currentEntitlementId = str;
         if (null != tmp4) {
-          let tmp29 = importDefault(dependencyMap[7])(tmp4.endsAt);
+          let tmp29 = importDefault(3712)(tmp4.endsAt);
         } else {
-          tmp29 = importDefault(dependencyMap[7])(0);
+          tmp29 = importDefault(3712)(0);
         }
         obj2.currentEntitlementEndsAt = tmp29;
         obj2.unactivatedUnits = unactivatedFractionalPremiumUnits;
@@ -129,62 +143,49 @@ function shouldFetchApplicationEntitlements(stateFromStores) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ EntitlementSourceTypes: closure_8, EntitlementTypes: closure_9, SubscriptionStatusTypes: closure_10 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-({ FractionalPremiumStates: closure_11, PREMIUM_SUBSCRIPTION_APPLICATION: closure_12 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/billing/hooks/useFractionalPremiumInfo.tsx");
+({ EntitlementSourceTypes: closure_8, EntitlementTypes: closure_9, SubscriptionStatusTypes: closure_10 } = ME);
+({ FractionalPremiumStates: closure_11, PREMIUM_SUBSCRIPTION_APPLICATION: closure_12 } = GuildFeatures);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/billing/hooks/useFractionalPremiumInfo.tsx");
 
 export default function useFractionalPremiumInfo() {
   let excludeReverseTrialFromCountdown;
+  let importDefault;
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = { "Null": true, "Null": false, "Null": false };
+    obj = { forceFetch: false, excludeReverseTrial: false, excludeReverseTrialFromCountdown: false };
   }
   const forceFetch = obj.forceFetch;
-  const arg1 = forceFetch;
-  ({ excludeReverseTrial: closure_1, excludeReverseTrialFromCountdown } = obj);
-  const dependencyMap = excludeReverseTrialFromCountdown;
-  let callback;
-  let React;
-  let closure_5;
-  let closure_6;
-  let closure_7;
+  ({ excludeReverseTrial: importDefault, excludeReverseTrialFromCountdown } = obj);
+  let stateFromStores;
+  let stateFromStoresArray;
+  let stateFromStores1;
+  let stateFromStoresArray1;
+  let stateFromStores2;
   let closure_8;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[11]).useStateFromStores(items, () => stateFromStores1.getCurrentUser());
-  callback = stateFromStores;
-  const obj2 = arg1(dependencyMap[11]);
-  const items1 = [closure_7];
-  const stateFromStoresArray = arg1(dependencyMap[11]).useStateFromStoresArray(items1, () => stateFromStores2.getFractionalPremium({ excludeReverseTrial: closure_1 }));
-  React = stateFromStoresArray;
-  const obj3 = arg1(dependencyMap[11]);
-  const items2 = [closure_7];
-  const stateFromStores1 = arg1(dependencyMap[11]).useStateFromStores(items2, () => stateFromStores2.fetchedAllEntitlements);
-  closure_5 = stateFromStores1;
-  const obj4 = arg1(dependencyMap[11]);
-  const items3 = [closure_7];
-  const stateFromStoresArray1 = arg1(dependencyMap[11]).useStateFromStoresArray(items3, () => stateFromStores2.getUnactivatedFractionalPremiumUnits());
-  closure_6 = stateFromStoresArray1;
-  const obj5 = arg1(dependencyMap[11]);
-  const items4 = [closure_6];
-  const stateFromStores2 = arg1(dependencyMap[11]).useStateFromStores(items4, () => stateFromStoresArray1.getPremiumTypeSubscription());
-  closure_7 = stateFromStores2;
+  const items = [stateFromStores1];
+  stateFromStores = forceFetch(excludeReverseTrialFromCountdown[11]).useStateFromStores(items, () => stateFromStores1.getCurrentUser());
+  const obj2 = forceFetch(excludeReverseTrialFromCountdown[11]);
+  const items1 = [stateFromStores2];
+  stateFromStoresArray = forceFetch(excludeReverseTrialFromCountdown[11]).useStateFromStoresArray(items1, () => stateFromStores2.getFractionalPremium({ excludeReverseTrial: closure_1 }));
+  let obj3 = forceFetch(excludeReverseTrialFromCountdown[11]);
+  const items2 = [stateFromStores2];
+  stateFromStores1 = forceFetch(excludeReverseTrialFromCountdown[11]).useStateFromStores(items2, () => stateFromStores2.fetchedAllEntitlements);
+  const obj4 = forceFetch(excludeReverseTrialFromCountdown[11]);
+  const items3 = [stateFromStores2];
+  stateFromStoresArray1 = forceFetch(excludeReverseTrialFromCountdown[11]).useStateFromStoresArray(items3, () => stateFromStores2.getUnactivatedFractionalPremiumUnits());
+  const obj5 = forceFetch(excludeReverseTrialFromCountdown[11]);
+  const items4 = [stateFromStoresArray1];
+  stateFromStores2 = forceFetch(excludeReverseTrialFromCountdown[11]).useStateFromStores(items4, () => stateFromStoresArray1.getPremiumTypeSubscription());
   obj = {};
   let fetchingAllEntitlements = shouldFetchRedemptionEntitlements(forceFetch, stateFromStores);
   if (!fetchingAllEntitlements) {
-    fetchingAllEntitlements = closure_7.fetchingAllEntitlements;
+    fetchingAllEntitlements = stateFromStores2.fetchingAllEntitlements;
   }
   if (!fetchingAllEntitlements) {
     fetchingAllEntitlements = shouldFetchApplicationEntitlements(stateFromStores);
   }
   if (!fetchingAllEntitlements) {
-    const applicationIdsFetching = closure_7.applicationIdsFetching;
+    const applicationIdsFetching = stateFromStores2.applicationIdsFetching;
     fetchingAllEntitlements = applicationIdsFetching.has(closure_12);
   }
   obj.isFetching = fetchingAllEntitlements;
@@ -194,26 +195,26 @@ export default function useFractionalPremiumInfo() {
   obj.premiumSubscription = stateFromStores2;
   obj.fetchedAllEntitlements = stateFromStores1;
   obj.excludeReverseTrialFromCountdown = excludeReverseTrialFromCountdown;
-  const tmp12 = callback(React.useState(calculateFractionalPremiumInfo(obj)), 2);
+  const tmp12 = stateFromStores(stateFromStoresArray.useState(calculateFractionalPremiumInfo(obj)), 2);
   closure_8 = tmp12[1];
-  importDefault(dependencyMap[12])(() => {
-    if (callback3(forceFetch, stateFromStores)) {
+  importDefault(excludeReverseTrialFromCountdown[12])(() => {
+    if (outer1_14(forceFetch, stateFromStores)) {
       let obj = forceFetch(excludeReverseTrialFromCountdown[13]);
-      obj = { entitlementType: constants.FRACTIONAL_REDEMPTION };
+      obj = { entitlementType: outer1_9.FRACTIONAL_REDEMPTION };
       const userEntitlements = obj.fetchUserEntitlements(obj);
     }
-    if (callback4(stateFromStores)) {
-      const userEntitlementsForApplication = forceFetch(excludeReverseTrialFromCountdown[13]).fetchUserEntitlementsForApplication(closure_12);
+    if (outer1_15(stateFromStores)) {
+      const userEntitlementsForApplication = forceFetch(excludeReverseTrialFromCountdown[13]).fetchUserEntitlementsForApplication(outer1_12);
       const obj3 = forceFetch(excludeReverseTrialFromCountdown[13]);
     }
   });
   const items5 = [stateFromStores, stateFromStoresArray, stateFromStores2, stateFromStoresArray1, stateFromStores1, excludeReverseTrialFromCountdown];
-  const effect = React.useEffect(() => {
-    let closure_0 = callback2({ entitlements: stateFromStoresArray, unactivatedFractionalPremiumUnits: stateFromStoresArray1, currentUser: stateFromStores, premiumSubscription: stateFromStores2, fetchedAllEntitlements: stateFromStores1, excludeReverseTrialFromCountdown });
+  const effect = stateFromStoresArray.useEffect(() => {
+    let closure_0 = outer1_13({ entitlements: stateFromStoresArray, unactivatedFractionalPremiumUnits: stateFromStoresArray1, currentUser: stateFromStores, premiumSubscription: stateFromStores2, fetchedAllEntitlements: stateFromStores1, excludeReverseTrialFromCountdown });
     callback((arg0) => {
       let tmp = arg0;
-      if (!obj.isEqual(arg0, callback)) {
-        tmp = callback;
+      if (!obj.isEqual(arg0, closure_0)) {
+        tmp = closure_0;
       }
       return tmp;
     });

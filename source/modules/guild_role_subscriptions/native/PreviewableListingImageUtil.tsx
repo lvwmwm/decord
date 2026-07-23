@@ -1,19 +1,18 @@
-// Module ID: 16299
-// Function ID: 125778
+// Module ID: 16416
+// Function ID: 127952
 // Name: getSource
-// Dependencies: []
+// Dependencies: [16417, 2]
 // Exports: getSource
 
-// Module 16299 (getSource)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/native/PreviewableListingImageUtil.tsx");
+// Module 16416 (getSource)
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/PreviewableListingImageUtil.tsx");
 
 export const getSource = function getSource(imageLocal) {
   if (null != imageLocal.imageLocal) {
     imageLocal = imageLocal.imageLocal;
   } else {
-    imageLocal = importAll(dependencyMap[0]).getSource(imageLocal);
-    const obj = importAll(dependencyMap[0]);
+    imageLocal = importAll(16417).getSource(imageLocal);
+    const obj = importAll(16417);
   }
   return imageLocal;
 };

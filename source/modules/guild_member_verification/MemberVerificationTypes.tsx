@@ -1,10 +1,10 @@
-// Module ID: 3948
-// Function ID: 32621
+// Module ID: 3950
+// Function ID: 32626
 // Name: isTermsFormField
-// Dependencies: []
+// Dependencies: [2]
 // Exports: hasNonTermsFormField
 
-// Module 3948 (isTermsFormField)
+// Module 3950 (isTermsFormField)
 function isTermsFormField(field_type) {
   let tmp = null != field_type;
   if (tmp) {
@@ -13,8 +13,7 @@ function isTermsFormField(field_type) {
   return tmp;
 }
 const obj = { TERMS: "TERMS", TEXT_INPUT: "TEXT_INPUT", PARAGRAPH: "PARAGRAPH", MULTIPLE_CHOICE: "MULTIPLE_CHOICE", VERIFICATION: "VERIFICATION" };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild_member_verification/MemberVerificationTypes.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_member_verification/MemberVerificationTypes.tsx");
 
 export const MAX_RESULTS_PER_PAGE = 25;
 export const MAX_VISIBLE_PAGES = 4;
@@ -24,5 +23,5 @@ export const GuildJoinRequestSortOrders = { TIMESTAMP_DESC: "NEWEST", TIMESTAMP_
 export const GuildJoinRequestApplicationStatuses = { STARTED: "STARTED", SUBMITTED: "SUBMITTED", REJECTED: "REJECTED", APPROVED: "APPROVED" };
 export { isTermsFormField };
 export const hasNonTermsFormField = function hasNonTermsFormField(formFields) {
-  return null != formFields && formFields.some((arg0) => !callback(arg0));
+  return null != formFields && formFields.some((arg0) => !outer1_1(arg0));
 };

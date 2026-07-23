@@ -1,29 +1,28 @@
-// Module ID: 11146
-// Function ID: 86682
+// Module ID: 11156
+// Function ID: 86732
 // Name: computeKeyboardActionSheetHeight
-// Dependencies: []
+// Dependencies: [5084, 1557, 1450, 5163, 2]
 // Exports: default, getKeyboardActionSheetHeight
 
-// Module 11146 (computeKeyboardActionSheetHeight)
+// Module 11156 (computeKeyboardActionSheetHeight)
 function computeKeyboardActionSheetHeight(safeAreaInsets, windowDimensions, customKeyboardHeight) {
-  let diff = windowDimensions.height - require(dependencyMap[0]).NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top;
+  let diff = windowDimensions.height - require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top;
   if (customKeyboardHeight >= diff) {
     diff = customKeyboardHeight;
   }
   const obj = { minimum: customKeyboardHeight, maximum: diff };
   return obj;
 }
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/action_sheet/native/useKeyboardActionSheetHeight.tsx");
+const result = require("useWindowDimensions").fileFinishedImporting("modules/action_sheet/native/useKeyboardActionSheetHeight.tsx");
 
 export default function useKeyboardActionSheetHeight() {
-  const tmp = importDefault(dependencyMap[1])();
-  return computeKeyboardActionSheetHeight(tmp, importDefault(dependencyMap[2])({ ignoreKeyboard: true }), importDefault(dependencyMap[3])());
+  const tmp = importDefault(1557)();
+  return computeKeyboardActionSheetHeight(tmp, importDefault(1450)({ ignoreKeyboard: true }), importDefault(5163)());
 };
 export const getKeyboardActionSheetHeight = function getKeyboardActionSheetHeight() {
-  const safeAreaInsets = require(dependencyMap[1]).getSafeAreaInsets();
-  const obj = require(dependencyMap[1]);
-  const windowDimensions = require(dependencyMap[2]).getWindowDimensions({ ignoreKeyboard: true });
-  const obj2 = require(dependencyMap[2]);
-  return computeKeyboardActionSheetHeight(safeAreaInsets, windowDimensions, require(dependencyMap[3]).getCustomKeyboardHeight());
+  const safeAreaInsets = require(1557) /* useSafeAreaInsets */.getSafeAreaInsets();
+  const obj = require(1557) /* useSafeAreaInsets */;
+  const windowDimensions = require(1450) /* useWindowDimensions */.getWindowDimensions({ ignoreKeyboard: true });
+  const obj2 = require(1450) /* useWindowDimensions */;
+  return computeKeyboardActionSheetHeight(safeAreaInsets, windowDimensions, require(5163) /* useCustomKeyboardHeight */.getCustomKeyboardHeight());
 };

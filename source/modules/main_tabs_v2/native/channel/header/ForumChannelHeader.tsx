@@ -1,14 +1,17 @@
-// Module ID: 10114
-// Function ID: 78292
-// Dependencies: []
+// Module ID: 10122
+// Function ID: 78332
+// Dependencies: [31, 27, 9123, 33, 4130, 10123, 10101, 10124, 2]
 
-// Module 10114
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[3]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_5 = arg1(dependencyMap[4]).createStyles({ search: { height: arg1(dependencyMap[2]).MIN_HEADER_HEIGHT } });
-const obj2 = arg1(dependencyMap[4]);
-const memoResult = importAllResult.memo((arg0) => {
+// Module 10122
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+let obj = { flex: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", paddingStart: 4, height: require("MIN_HEADER_HEIGHT").MIN_HEADER_HEIGHT };
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ search: obj });
+const memoResult = require("result").memo((arg0) => {
   let channelId;
   let guildId;
   let isGuildMemberCountVisible;
@@ -18,18 +21,18 @@ const memoResult = importAllResult.memo((arg0) => {
   let searchPlaceholder;
   ({ channelId, guildId } = arg0);
   ({ screenIndex, pressable, isGuildMemberCountVisible, isNavigationScreen, searchPlaceholder } = arg0);
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(10123) /* useIsForumChannelSearchActive */;
   if (obj.useIsForumChannelSearchActive(channelId)) {
     obj = { style: tmp.search };
     obj = { channelId, guildId, placeholder: searchPlaceholder };
-    obj.children = tmp2(arg1(dependencyMap[6]).ForumChannelSearchInput, obj);
+    obj.children = tmp2(require(10101) /* ForumChannelCloseSearchButton */.ForumChannelSearchInput, obj);
     let tmp2Result = tmp2(View, obj);
   } else {
     const obj1 = { channelId, guildId, pressable, isGuildMemberCountVisible, isNavigationScreen, screenIndex };
-    tmp2Result = tmp2(importDefault(dependencyMap[7]), obj1);
+    tmp2Result = tmp2(importDefault(10124), obj1);
   }
   return tmp2Result;
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ForumChannelHeader.tsx");
+const result = require("MIN_HEADER_HEIGHT").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ForumChannelHeader.tsx");
 
 export default memoResult;

@@ -1,21 +1,26 @@
-// Module ID: 8582
-// Function ID: 68160
+// Module ID: 8589
+// Function ID: 68200
 // Name: getRejectionReasons
-// Dependencies: []
+// Dependencies: [31, 4151, 653, 675, 1360, 8590, 8591, 8592, 44, 2]
 // Exports: default, gameIdIsAcceptable
 
-// Module 8582 (getRejectionReasons)
+// Module 8589 (getRejectionReasons)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function getRejectionReasons(gameFlags) {
   if (null == gameFlags) {
     const items = [closure_7.NoMatch];
     return items;
   } else {
     const items1 = [];
-    if (obj.hasFlag(gameFlags.gameFlags, arg1(dependencyMap[5]).GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj.hasFlag(gameFlags.gameFlags, require(8590) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       items1.push(closure_7.Disabled);
     }
     const themes = gameFlags.themes;
-    if (themes.includes(arg1(dependencyMap[6]).ThirdPartyGameApplicationThemes.EROTIC)) {
+    if (themes.includes(require(8591) /* ThirdPartyGameApplicationThemes */.ThirdPartyGameApplicationThemes.EROTIC)) {
       items1.push(closure_7.NSFW);
     }
     return items1;
@@ -24,11 +29,8 @@ function getRejectionReasons(gameFlags) {
 function gameIsAcceptable(game) {
   return 0 === getRejectionReasons(game).length;
 }
-let closure_4 = importAll(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
 let closure_7 = { NoMatch: "no match", NSFW: "nsfw", Disabled: "profile disabled" };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/game_profile/hooks/useShouldOpenGameProfileModal.tsx");
+const result = require("ME").fileFinishedImporting("modules/game_profile/hooks/useShouldOpenGameProfileModal.tsx");
 
 export default function useShouldOpenGameProfileModal(applicationId) {
   let gameId;
@@ -38,39 +40,34 @@ export default function useShouldOpenGameProfileModal(applicationId) {
     str = "";
   }
   const source = applicationId.source;
-  const arg1 = source;
   ({ trackEntryPointImpression, gameId } = applicationId);
   if (trackEntryPointImpression === undefined) {
     trackEntryPointImpression = true;
   }
-  const importDefault = trackEntryPointImpression;
   let closure_2;
-  let dependencyMap;
-  let React;
-  let closure_5;
-  closure_2 = React.useRef(false);
-  const obj = { applicationId: str, gameId };
-  gameId = importDefault(dependencyMap[7])(obj);
-  const gameRecord = gameId.gameRecord;
-  dependencyMap = gameRecord;
-  const isLoading = gameId.isLoading;
-  React = isLoading;
-  const shouldOpenGameProfile = gameIsAcceptable(gameRecord);
-  closure_5 = shouldOpenGameProfile;
-  const items = [gameRecord, shouldOpenGameProfile, isLoading, source, trackEntryPointImpression];
-  const effect = React.useEffect(() => {
+  let gameRecord;
+  let isLoading;
+  let shouldOpenGameProfile;
+  closure_2 = isLoading.useRef(false);
+  let obj = { applicationId: str, gameId };
+  gameId = trackEntryPointImpression(gameRecord[7])(obj);
+  gameRecord = gameId.gameRecord;
+  isLoading = gameId.isLoading;
+  shouldOpenGameProfile = gameIsAcceptable(gameRecord);
+  let items = [gameRecord, shouldOpenGameProfile, isLoading, source, trackEntryPointImpression];
+  const effect = isLoading.useEffect(() => {
     if (!ref.current) {
       if (trackEntryPointImpression) {
         if (!isLoading) {
           if (null != gameRecord) {
             trackEntryPointImpression(gameRecord[8])(null != source, "Cannot track a Game Profile Entry Point Impressions without a source.");
-            let items = callback(gameRecord);
+            let items = outer1_8(gameRecord);
             if (items === undefined) {
               items = [];
             }
             let obj = trackEntryPointImpression(gameRecord[3]);
             obj = { game_profile_available: shouldOpenGameProfile, application_id: gameRecord.id, rejection_reason: items, source };
-            obj.track(constants.GAME_PROFILE_ENTRY_POINT_AVAILABLE, obj);
+            obj.track(outer1_6.GAME_PROFILE_ENTRY_POINT_AVAILABLE, obj);
             ref.current = true;
             const tmp12 = source;
             const tmp16 = shouldOpenGameProfile;

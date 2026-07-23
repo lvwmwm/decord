@@ -1,44 +1,44 @@
-// Module ID: 15626
-// Function ID: 119306
+// Module ID: 15743
+// Function ID: 121479
 // Name: useChannelFloatingCTAContent
-// Dependencies: []
+// Dependencies: [31, 4177, 4202, 624, 8933, 1334, 2]
 // Exports: default
 
-// Module 15626 (useChannelFloatingCTAContent)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/video_calls/native/useChannelFloatingCTAContent.tsx");
+// Module 15743 (useChannelFloatingCTAContent)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/useChannelFloatingCTAContent.tsx");
 
 export default function useChannelFloatingCTAContent(arg0) {
-  const arg1 = arg0;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    let tmp = null != arg0;
+  const _require = arg0;
+  let items = [closure_5];
+  stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => {
+    let tmp = null != closure_0;
     if (tmp) {
-      tmp = channelId.getChannelId() === arg0;
+      tmp = outer1_5.getChannelId() === closure_0;
     }
     return tmp;
   });
-  const tmp2 = importDefault(dependencyMap[4])();
-  const importDefault = tmp2;
-  const dependencyMap = stateFromStores;
-  const obj = arg1(dependencyMap[3]);
-  const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => anyLocalVideoAutoDisabled.isAnyLocalVideoAutoDisabled());
-  const React = stateFromStores1;
+  let tmp2 = importDefault(stateFromStores[4])();
+  importDefault = tmp2;
+  const obj = _require(stateFromStores[3]);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = _require(stateFromStores[3]).useStateFromStores(items1, () => outer1_4.isAnyLocalVideoAutoDisabled());
   const items2 = [stateFromStores1, tmp2, stateFromStores];
-  return React.useMemo(() => {
+  return stateFromStores1.useMemo(() => {
     const items = [];
     if (stateFromStores1) {
-      items.push(arg0(stateFromStores[5]).DismissibleContent.VOICE_PANEL_BAD_CONNECTION_CTA);
+      items.push(callback(stateFromStores[5]).DismissibleContent.VOICE_PANEL_BAD_CONNECTION_CTA);
       const tmp2 = stateFromStores;
     }
     if (stateFromStores) {
-      items.push(arg0(stateFromStores[5]).DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
+      items.push(callback(stateFromStores[5]).DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
     }
     if (tmp2.some((twoWayLink) => twoWayLink.twoWayLink)) {
-      items.push(arg0(stateFromStores[5]).DismissibleContent.DONUT_MOBILE_NUX);
+      items.push(callback(stateFromStores[5]).DismissibleContent.DONUT_MOBILE_NUX);
     }
     return items;
   }, items2);

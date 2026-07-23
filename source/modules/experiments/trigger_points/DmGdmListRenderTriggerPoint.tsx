@@ -1,11 +1,10 @@
-// Module ID: 14801
-// Function ID: 111531
+// Module ID: 14917
+// Function ID: 113699
 // Name: commonTriggerPointConfiguration
-// Dependencies: []
+// Dependencies: [4045, 7158, 2]
 
-// Module 14801 (commonTriggerPointConfiguration)
-const commonTriggerPointConfiguration = new require(dependencyMap[1]).CommonTriggerPointConfiguration([], require(dependencyMap[0]).CommonTriggerPoints.DM_GDM_LIST_RENDER, { location: "dm/gdm list rendered" });
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/experiments/trigger_points/DmGdmListRenderTriggerPoint.tsx");
+// Module 14917 (commonTriggerPointConfiguration)
+const commonTriggerPointConfiguration = new require("CommonTriggerPointConfiguration").CommonTriggerPointConfiguration([], require("ExperimentBuckets").CommonTriggerPoints.DM_GDM_LIST_RENDER, { location: "dm/gdm list rendered" });
+const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/DmGdmListRenderTriggerPoint.tsx");
 
 export const DmGdmListRenderTriggerPoint = commonTriggerPointConfiguration;

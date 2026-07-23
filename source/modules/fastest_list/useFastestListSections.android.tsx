@@ -1,20 +1,18 @@
-// Module ID: 9244
-// Function ID: 72280
+// Module ID: 9251
+// Function ID: 72321
 // Name: useFastestListSections
-// Dependencies: []
+// Dependencies: [31, 5450, 9252, 9253, 2]
 // Exports: default
 
-// Module 9244 (useFastestListSections)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");
+// Module 9251 (useFastestListSections)
+import result from "result";
+
+const result = require("ITEM").fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");
 
 export default function useFastestListSections(fastestListId) {
   fastestListId = fastestListId.fastestListId;
-  const importDefault = fastestListId;
   const itemSize = fastestListId.itemSize;
-  const dependencyMap = itemSize;
   const keyExtractor = fastestListId.keyExtractor;
-  const React = keyExtractor;
   let num = fastestListId.listFooterSize;
   if (num === undefined) {
     num = 0;
@@ -32,12 +30,12 @@ export default function useFastestListSections(fastestListId) {
   if (num4 === undefined) {
     num4 = 0;
   }
-  let tmp;
-  tmp = importDefault(dependencyMap[1])(() => {
-    let closure_0 = 0;
+  let c8;
+  const tmp = fastestListId(itemSize[1])(() => {
+    let c0 = 0;
     return {
       getId() {
-        return "" + closure_0;
+        return "" + c0;
       },
       incrementId() {
         let closure_0 = tmp + 1;
@@ -45,8 +43,9 @@ export default function useFastestListSections(fastestListId) {
       }
     };
   });
-  const items = [keyExtractor, itemSize, num, num2, num3, num4, fastestListId, tmp, sections];
-  const memo = React.useMemo(() => {
+  c8 = tmp;
+  let items = [keyExtractor, itemSize, num, num2, num3, num4, fastestListId, tmp, sections];
+  const memo = keyExtractor.useMemo(() => {
     const items = [];
     const items1 = [];
     if ("number" === typeof num) {
@@ -80,7 +79,7 @@ export default function useFastestListSections(fastestListId) {
     const items4 = [];
     const items5 = [];
     if (null == keyExtractor) {
-      let obj = { keys: [2060509169] };
+      let obj = { keys: [""] };
       items.push(obj);
       items2.push("");
       items4.push("");
@@ -99,7 +98,7 @@ export default function useFastestListSections(fastestListId) {
     }
     if ("number" === typeof num4) {
       if (tmp14) {
-        obj = { keysAreUniform: tmp16, listId: fastestListId, listFooterKey: str, listFooterSize: tmp3, listHeaderKey: str2, listHeaderSize: tmp9, sections, sectionsId: tmp.getId(), sectionHeaderKeys: items2, sectionHeaderSizes: items3, sectionHeaderSizeIsUniform: tmp14, sectionFooterKeys: items4, sectionFooterSizes: items5, sectionFooterSizeIsUniform: tmp15, itemKeys: items, itemSizeIsUniform: tmp, itemSizes: items1 };
+        obj = { keysAreUniform: tmp16, listId: fastestListId, listFooterKey: str, listFooterSize: tmp3, listHeaderKey: str2, listHeaderSize: tmp9, sections, sectionsId: _undefined.getId(), sectionHeaderKeys: items2, sectionHeaderSizes: items3, sectionHeaderSizeIsUniform: tmp14, sectionFooterKeys: items4, sectionFooterSizes: items5, sectionFooterSizeIsUniform: tmp15, itemKeys: items, itemSizeIsUniform: tmp, itemSizes: items1 };
         return obj;
       }
     }
@@ -107,27 +106,27 @@ export default function useFastestListSections(fastestListId) {
     if (0 < sections.length) {
       do {
         if (!tmp14) {
-          let tmp27 = closure_6;
-          let arr5 = items3.push(closure_6(num5));
+          let tmp27 = num3;
+          let arr5 = items3.push(num3(num5));
         }
         if (!tmp15) {
-          let tmp29 = closure_7;
-          let arr6 = items5.push(closure_7(num5));
+          let tmp29 = num4;
+          let arr6 = items5.push(num4(num5));
         }
         if (!tmp16) {
-          let tmp31 = closure_2;
-          let tmp32 = closure_0;
-          let tmp33 = closure_1;
-          let tmp34 = closure_2(closure_0(closure_1[2]).SECTION_HEADER, num5, 0);
+          let tmp31 = keyExtractor;
+          let tmp32 = fastestListId;
+          let tmp33 = itemSize;
+          let tmp34 = keyExtractor(fastestListId(itemSize[2]).SECTION_HEADER, num5, 0);
           let str3 = "";
           if (null != tmp34) {
             str3 = tmp34;
           }
           let arr7 = items2.push(str3);
-          let tmp36 = closure_2;
-          let tmp37 = closure_0;
-          let tmp38 = closure_1;
-          let tmp39 = closure_2(closure_0(closure_1[2]).SECTION_FOOTER, num5, 0);
+          let tmp36 = keyExtractor;
+          let tmp37 = fastestListId;
+          let tmp38 = itemSize;
+          let tmp39 = keyExtractor(fastestListId(itemSize[2]).SECTION_FOOTER, num5, 0);
           let str4 = "";
           if (null != tmp39) {
             str4 = tmp39;
@@ -137,8 +136,8 @@ export default function useFastestListSections(fastestListId) {
           let tmp42 = tmp39;
         }
         if (!tmp) {
-          let tmp44 = closure_5;
-          let tmp45 = closure_5[num5];
+          let tmp44 = sections;
+          let tmp45 = sections[num5];
           if (!tmp) {
             let obj1 = { sizes: [] };
             let arr9 = items1.push(obj1);
@@ -156,15 +155,15 @@ export default function useFastestListSections(fastestListId) {
             do {
               if (!tmp) {
                 let sizes = items1[num5].sizes;
-                let tmp50 = closure_1;
-                let arr11 = sizes.push(closure_1(num5, num6));
+                let tmp50 = itemSize;
+                let arr11 = sizes.push(itemSize(num5, num6));
               }
               if (!tmp16) {
                 let keys = items[num5].keys;
-                let tmp52 = closure_2;
-                let tmp53 = closure_0;
-                let tmp54 = closure_1;
-                let tmp55 = closure_2(closure_0(closure_1[2]).ITEM, num5, num6);
+                let tmp52 = keyExtractor;
+                let tmp53 = fastestListId;
+                let tmp54 = itemSize;
+                let tmp55 = keyExtractor(fastestListId(itemSize[2]).ITEM, num5, num6);
                 let str5 = "";
                 if (null != tmp55) {
                   str5 = tmp55;
@@ -182,14 +181,14 @@ export default function useFastestListSections(fastestListId) {
           tmp43 = tmp26;
         }
         num5 = num5 + 1;
-        let tmp59 = closure_5;
-        let tmp26 = tmp43;
-      } while (num5 < closure_5.length);
+        let tmp59 = sections;
+        tmp26 = tmp43;
+      } while (num5 < sections.length);
     }
   }, items);
-  const items1 = [tmp, memo];
-  const effect = React.useEffect(() => {
-    tmp.incrementId();
+  let items1 = [tmp, memo];
+  const effect = keyExtractor.useEffect(() => {
+    _undefined.incrementId();
   }, items1);
-  return importDefault(dependencyMap[3])(memo);
+  return fastestListId(itemSize[3])(memo);
 };

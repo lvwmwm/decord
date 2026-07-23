@@ -1,35 +1,38 @@
 // Module ID: 1677
-// Function ID: 18579
+// Function ID: 18580
 // Name: JSPropsUpdaterPaper
-// Dependencies: []
+// Dependencies: [6, 7, 27, 1585, 1589]
 
 // Module 1677 (JSPropsUpdaterPaper)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import get_ActivityIndicator from "get ActivityIndicator";
+import isJest from "isJest";
+
 let Platform;
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ NativeEventEmitter: closure_5, Platform } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const obj = arg1(dependencyMap[3]);
-let tmp4 = () => {
+let closure_5;
+const require = arg1;
+({ NativeEventEmitter: closure_5, Platform } = get_ActivityIndicator);
+isJest = isJest.shouldBeUseWeb();
+let tmp4 = (() => {
   class JSPropsUpdaterPaper {
     constructor() {
-      tmp = closure_3(this, JSPropsUpdaterPaper);
-      tmp2 = new closure_5(undefined);
+      tmp = outer1_3(this, JSPropsUpdaterPaper);
+      tmp2 = new outer1_5(undefined);
       this._reanimatedEventEmitter = tmp2;
       return;
     }
   }
-  const global = JSPropsUpdaterPaper;
   let obj = {
     key: "addOnJSPropsChangeListener",
     value: function addOnJSPropsChangeListener(getComponentViewTag) {
-      const _tagToComponentMapping = JSPropsUpdaterPaper._tagToComponentMapping;
+      let _tagToComponentMapping = JSPropsUpdaterPaper._tagToComponentMapping;
       const result = _tagToComponentMapping.set(getComponentViewTag.getComponentViewTag(), getComponentViewTag);
       if (1 === JSPropsUpdaterPaper._tagToComponentMapping.size) {
         const self = this;
         const _reanimatedEventEmitter = this._reanimatedEventEmitter;
         _reanimatedEventEmitter.addListener("onReanimatedPropsChange", function listener(viewTag) {
-          const _tagToComponentMapping = obj._tagToComponentMapping;
+          const _tagToComponentMapping = outer1_0._tagToComponentMapping;
           const value = _tagToComponentMapping.get(viewTag.viewTag);
           if (null != value) {
             value._updateFromNative(viewTag.props);
@@ -53,14 +56,13 @@ let tmp4 = () => {
   };
   items[1] = obj;
   return callback(JSPropsUpdaterPaper, items);
-}();
-const shouldBeUseWebResult = arg1(dependencyMap[3]).shouldBeUseWeb();
+})();
 tmp4._tagToComponentMapping = new Map();
 let closure_6 = { code: "function pnpm_JSPropsUpdaterTs1(){const{runOnJS,updater}=this.__closure;global.updateJSProps=function(viewTag,props){runOnJS(updater)(viewTag,props);};}" };
-const tmp6 = () => {
+const tmp6 = (() => {
   class JSPropsUpdaterFabric {
     constructor() {
-      tmp = closure_3(this, updater);
+      tmp = outer1_3(this, updater);
       if (!updater.isInitialized) {
         updater = function updater(value, props) {
           const _tagToComponentMapping = updater._tagToComponentMapping;
@@ -69,19 +71,19 @@ const tmp6 = () => {
             value._updateFromNative(props);
           }
         };
-        tmp2 = closure_1;
-        tmp3 = closure_2;
+        tmp2 = outer1_1;
+        tmp3 = outer1_2;
         num = 4;
-        obj = closure_1(closure_2[4]);
+        obj = outer1_1(outer1_2[4]);
         pnpm_JSPropsUpdaterTs1 = /* worklet (recovered source) */ function pnpm_JSPropsUpdaterTs1(){const{runOnJS,updater}=this.__closure;global.updateJSProps=function(viewTag,props){runOnJS(updater)(viewTag,props);};};
         obj = {};
-        obj.runOnJS = closure_1(closure_2[4]).runOnJS;
+        obj.runOnJS = outer1_1(outer1_2[4]).runOnJS;
         obj.updater = updater;
         pnpm_JSPropsUpdaterTs1.__closure = obj;
         num2 = 2068327241111;
         pnpm_JSPropsUpdaterTs1.__workletHash = 2068327241111;
-        tmp4 = closure_6;
-        pnpm_JSPropsUpdaterTs1.__initData = closure_6;
+        tmp4 = outer1_6;
+        pnpm_JSPropsUpdaterTs1.__initData = outer1_6;
         tmp5 = obj.runOnUIImmediately(pnpm_JSPropsUpdaterTs1)();
         tmp6 = updater;
         flag = true;
@@ -90,7 +92,6 @@ const tmp6 = () => {
       return;
     }
   }
-  const global = JSPropsUpdaterFabric;
   let obj = {
     key: "addOnJSPropsChangeListener",
     value: function addOnJSPropsChangeListener(getComponentViewTag) {
@@ -112,19 +113,18 @@ const tmp6 = () => {
   };
   items[1] = obj;
   return callback(JSPropsUpdaterFabric, items);
-}();
+})();
 const map = new Map();
 tmp6._tagToComponentMapping = new Map();
 tmp6.isInitialized = false;
-if (shouldBeUseWebResult) {
-  tmp4 = () => {
+if (isJest) {
+  tmp4 = (() => {
     class JSPropsUpdaterWeb {
       constructor() {
-        tmp = closure_3(this, JSPropsUpdaterWeb);
+        tmp = outer1_3(this, JSPropsUpdaterWeb);
         return;
       }
     }
-    const global = JSPropsUpdaterWeb;
     let obj = {
       key: "addOnJSPropsChangeListener",
       value: function addOnJSPropsChangeListener(arg0) {
@@ -140,7 +140,7 @@ if (shouldBeUseWebResult) {
     };
     items[1] = obj;
     return callback(JSPropsUpdaterWeb, items);
-  }();
+  })();
 } else if (global._IS_FABRIC) {
   tmp4 = tmp6;
 }

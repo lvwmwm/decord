@@ -1,26 +1,28 @@
 // Module ID: 301
 // Function ID: 4555
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [31, 38, 110, 42, 117]
 
 // Module 301 (__INTERNAL_VIEW_CONFIG)
-importAll(dependencyMap[0]);
-let obj = { uiViewClassName: "AndroidDrawerLayout", directEventTypes: { topDrawerSlide: { registrationName: "onDrawerSlide" }, topDrawerStateChanged: { registrationName: "onDrawerStateChanged" }, topDrawerOpen: { registrationName: "onDrawerOpen" }, topDrawerClose: { registrationName: "onDrawerClose" } } };
-obj = {};
-obj = { process: arg1(dependencyMap[1]).default };
-obj.drawerBackgroundColor = obj;
-obj.statusBarBackgroundColor = { process: arg1(dependencyMap[1]).default };
-const obj1 = { process: arg1(dependencyMap[1]).default };
-obj.validAttributes = Object.assign(obj, arg1(dependencyMap[2]).ConditionallyIgnoredEventHandlers({}));
-const obj5 = arg1(dependencyMap[2]);
+import "result";
+import weakSet from "weakSet";
+import get from "get";
 
-export default arg1(dependencyMap[3]).get("AndroidDrawerLayout", () => obj);
+const require = arg1;
+let obj = { uiViewClassName: "AndroidDrawerLayout", directEventTypes: { topDrawerSlide: { registrationName: "onDrawerSlide" }, topDrawerStateChanged: { registrationName: "onDrawerStateChanged" }, topDrawerOpen: { registrationName: "onDrawerOpen" }, topDrawerClose: { registrationName: "onDrawerClose" } } };
+obj = { keyboardDismissMode: true, drawerBackgroundColor: null, drawerPosition: true, drawerWidth: true, drawerLockMode: true };
+obj = { process: require("processColor").default };
+obj.drawerBackgroundColor = obj;
+obj.statusBarBackgroundColor = { process: require("processColor").default };
+obj.validAttributes = Object.assign(obj, weakSet.ConditionallyIgnoredEventHandlers({ onDrawerSlide: true, onDrawerStateChanged: true, onDrawerOpen: true, onDrawerClose: true }));
+
+export default get.get("AndroidDrawerLayout", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;
 export const Commands = {
   openDrawer(nodeFromPublicInstance) {
-    arg1(dependencyMap[4]).dispatchCommand(nodeFromPublicInstance, "openDrawer", []);
+    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "openDrawer", []);
   },
   closeDrawer(nodeFromPublicInstance) {
-    arg1(dependencyMap[4]).dispatchCommand(nodeFromPublicInstance, "closeDrawer", []);
+    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "closeDrawer", []);
   }
 };

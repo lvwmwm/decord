@@ -1,35 +1,35 @@
-// Module ID: 14040
-// Function ID: 106747
+// Module ID: 14154
+// Function ID: 108903
 // Name: route
-// Dependencies: [920322048, 131072, 527826944, 553648128, 2969567232, 4143972354, 3707764750, 33554486, 4026531840, 7958]
+// Dependencies: [1278, 7662, 653, 1324, 566, 10095, 1212, 14150, 14155, 2]
 
-// Module 14040 (route)
-import module_7958 from "module_7958";
+// Module 14154 (route)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
 
-let closure_3 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[5]);
-obj = {
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t.Ksh3ik);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.Ksh3ik);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.APPEARANCE,
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate: function useIsSingleThemePickerVisible() {
-    const tmp = importDefault(dependencyMap[3])("AppearanceThemePickerSetting");
-    const items = [closure_3];
-    const obj = arg1(dependencyMap[4]);
-    return !tmp || !arg1(dependencyMap[4]).useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+    const tmp = importDefault(1324)("AppearanceThemePickerSetting");
+    const items = [_isNativeReflectConstruct];
+    const obj = require(566) /* initialize */;
+    return !tmp || !require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isSameAsDeviceThemeEnabled());
   },
-  useTrailing: arg1(dependencyMap[7]).useAppearanceSettingTrailing,
-  screen: obj
+  useTrailing: require("useAppearanceSettingTrailing").useAppearanceSettingTrailing,
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[2]).UserSettingsSections.APPEARANCE_THEME_PICKER,
+createToggle = {
+  route: require("ME").UserSettingsSections.APPEARANCE_THEME_PICKER,
   getComponent() {
-    return arg1(dependencyMap[8]).default;
+    return require(14155) /* getThemeOverride */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = module_7958.fileFinishedImporting("modules/user_settings/defs/native/AppearanceThemePickerSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AppearanceThemePickerSetting.tsx");
 
-export default route;
+export default createToggle;

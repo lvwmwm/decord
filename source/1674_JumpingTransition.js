@@ -1,9 +1,11 @@
 // Module ID: 1674
-// Function ID: 18565
+// Function ID: 18566
 // Name: JumpingTransition
-// Dependencies: []
+// Dependencies: [1634]
 
 // Module 1674 (JumpingTransition)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.JumpingTransition = function JumpingTransition(name) {
   let scaleX;
   let scaleY;
@@ -22,14 +24,14 @@ arg5.JumpingTransition = function JumpingTransition(name) {
   obj = {};
   const items = [{ translateX: "" + translateX + "px", translateY: "" + translateY + "px", scale: "" + scaleX + "," + scaleY }];
   obj.transform = items;
-  obj.easing = arg1(arg6[0]).Easing.exp;
+  obj.easing = require(1634) /* linear */.Easing.exp;
   obj[0] = obj;
   const obj2 = {};
   const obj3 = { translateX: `${translateX / 2}px`, translateY: "" + diff + "px", scale: "" + scaleX + "," + scaleY };
   const items1 = [obj3];
   obj2.transform = items1;
   obj[50] = obj2;
-  const items2 = [{ "Null": "construct", "Null": "isArray", marginBottom: "isArray" }];
+  const items2 = [{ translateX: "0px", translateY: "0px", scale: "1,1" }];
   obj[100] = { transform: items2 };
   obj.style = obj;
   obj.duration = 300;

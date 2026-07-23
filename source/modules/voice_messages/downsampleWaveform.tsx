@@ -1,15 +1,14 @@
-// Module ID: 11353
-// Function ID: 88317
+// Module ID: 11363
+// Function ID: 88367
 // Name: downsampleWaveform
-// Dependencies: []
+// Dependencies: [44, 2]
 // Exports: default
 
-// Module 11353 (downsampleWaveform)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/voice_messages/downsampleWaveform.tsx");
+// Module 11363 (downsampleWaveform)
+const result = require("set").fileFinishedImporting("modules/voice_messages/downsampleWaveform.tsx");
 
 export default function downsampleWaveform(arg0, arg1) {
-  importDefault(dependencyMap[0])(arg0.length >= arg1, "Waveform smaller than samples");
+  importDefault(44)(arg0.length >= arg1, "Waveform smaller than samples");
   if (arg0.length === arg1) {
     return arg0;
   } else {

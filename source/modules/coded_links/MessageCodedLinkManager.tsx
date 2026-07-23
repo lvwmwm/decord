@@ -1,9 +1,20 @@
-// Module ID: 15979
-// Function ID: 122556
+// Module ID: 16096
+// Function ID: 124729
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 5, 6693, 4115, 4114, 4119, 16097, 7460, 5718, 11191, 16104, 5078, 2]
 
-// Module 15979 (_isNativeReflectConstruct)
+// Module 16096 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import tmp2 from "AutomaticLifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,7 +25,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function resolveMessageCodedLinks(content) {
-  const arr = importDefault(dependencyMap[8])(content.content);
+  const arr = importDefault(4114)(content.content);
   let tmp = null != arr;
   if (tmp) {
     tmp = 0 !== arr.length;
@@ -24,34 +35,34 @@ function resolveMessageCodedLinks(content) {
       let code;
       let type;
       ({ type, code } = arg0);
-      if (code(closure_2[9]).CodedLinkType.INVITE === type) {
+      if (outer1_0(outer1_2[9]).CodedLinkType.INVITE === type) {
         // CreateGeneratorClosureLongIndex (0x67)
-        const result = code(closure_2[10]).queueMessageLinkFetch(callback(tmp));
-        const obj3 = code(closure_2[10]);
-      } else if (code(closure_2[9]).CodedLinkType.TEMPLATE === type) {
+        const result = outer1_0(outer1_2[10]).queueMessageLinkFetch(outer1_8(tmp));
+        const obj3 = outer1_0(outer1_2[10]);
+      } else if (outer1_0(outer1_2[9]).CodedLinkType.TEMPLATE === type) {
         // CreateGeneratorClosureLongIndex (0x67)
-        const result1 = code(closure_2[10]).queueMessageLinkFetch(callback(tmp8));
-        const obj2 = code(closure_2[10]);
-      } else if (code(closure_2[9]).CodedLinkType.BUILD_OVERRIDE !== type) {
-        if (code(closure_2[9]).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
-          if (code(closure_2[9]).CodedLinkType.EVENT !== type) {
-            if (code(closure_2[9]).CodedLinkType.CHANNEL_LINK !== type) {
-              if (code(closure_2[9]).CodedLinkType.ACTIVITY_BOOKMARK !== type) {
-                if (code(closure_2[9]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
-                  if (code(closure_2[9]).CodedLinkType.GUILD_PRODUCT !== type) {
-                    if (code(closure_2[9]).CodedLinkType.SERVER_SHOP !== type) {
-                      if (code(closure_2[9]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                        if (code(closure_2[9]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                          if (code(closure_2[9]).CodedLinkType.QUESTS_EMBED !== type) {
-                            if (code(closure_2[9]).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                              if (code(closure_2[9]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                if (code(closure_2[9]).CodedLinkType.APP_OAUTH2_LINK !== type) {
-                                  if (code(closure_2[9]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
-                                    if (code(closure_2[9]).CodedLinkType.EXPERIMENT !== type) {
-                                      if (code(closure_2[9]).CodedLinkType.GAME_PROFILE !== type) {
-                                        if (code(closure_2[9]).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
-                                          const embedApplication = code(closure_2[13]).getEmbedApplication(code);
-                                          const obj = code(closure_2[13]);
+        const result1 = outer1_0(outer1_2[10]).queueMessageLinkFetch(outer1_8(tmp8));
+        const obj2 = outer1_0(outer1_2[10]);
+      } else if (outer1_0(outer1_2[9]).CodedLinkType.BUILD_OVERRIDE !== type) {
+        if (outer1_0(outer1_2[9]).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+          if (outer1_0(outer1_2[9]).CodedLinkType.EVENT !== type) {
+            if (outer1_0(outer1_2[9]).CodedLinkType.CHANNEL_LINK !== type) {
+              if (outer1_0(outer1_2[9]).CodedLinkType.ACTIVITY_BOOKMARK !== type) {
+                if (outer1_0(outer1_2[9]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
+                  if (outer1_0(outer1_2[9]).CodedLinkType.GUILD_PRODUCT !== type) {
+                    if (outer1_0(outer1_2[9]).CodedLinkType.SERVER_SHOP !== type) {
+                      if (outer1_0(outer1_2[9]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                        if (outer1_0(outer1_2[9]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                          if (outer1_0(outer1_2[9]).CodedLinkType.QUESTS_EMBED !== type) {
+                            if (outer1_0(outer1_2[9]).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                              if (outer1_0(outer1_2[9]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                if (outer1_0(outer1_2[9]).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                                  if (outer1_0(outer1_2[9]).CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                                    if (outer1_0(outer1_2[9]).CodedLinkType.EXPERIMENT !== type) {
+                                      if (outer1_0(outer1_2[9]).CodedLinkType.GAME_PROFILE !== type) {
+                                        if (outer1_0(outer1_2[9]).CodedLinkType.APP_DIRECTORY_PROFILE === type) {
+                                          const embedApplication = outer1_0(outer1_2[13]).getEmbedApplication(code);
+                                          const obj = outer1_0(outer1_2[13]);
                                         } else {
                                           const _Error = Error;
                                           const _HermesInternal = HermesInternal;
@@ -77,39 +88,7 @@ function resolveMessageCodedLinks(content) {
     });
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let tmp2 = (arg0) => {
-  class MessageCodedLinkManager {
-    constructor() {
-      self = this;
-      tmp = closure_4(this, MessageCodedLinkManager);
-      obj = closure_6(MessageCodedLinkManager);
-      tmp2 = closure_5;
-      if (closure_11()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, [], closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, undefined);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp7 = closure_1(closure_2[14])(tmp2Result, closure_12);
-      return tmp2Result;
-    }
-  }
-  const arg1 = MessageCodedLinkManager;
-  callback2(MessageCodedLinkManager, arg0);
-  return callback(MessageCodedLinkManager);
-}(importDefault(dependencyMap[15]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/coded_links/MessageCodedLinkManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/coded_links/MessageCodedLinkManager.tsx");
 
 export default tmp2;

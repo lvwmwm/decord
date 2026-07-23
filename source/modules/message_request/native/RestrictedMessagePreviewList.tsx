@@ -1,53 +1,63 @@
-// Module ID: 15465
-// Function ID: 117959
+// Module ID: 15582
+// Function ID: 120133
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 27, 4349, 33, 4130, 15583, 689, 4639, 4126, 1212, 4086, 3800, 5464, 566, 8492, 7621, 15584, 9293, 4660, 15585, 2]
 // Exports: default
 
-// Module 15465 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15582 (_createForOfIteratorHelperLoose)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+let closure_8;
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,88 +95,79 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function HiddenMedia(length) {
-  const tmp = callback3();
-  const arg1 = tmp;
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
   let obj = {};
-  const items = [
+  let items = [
     Array.from({ length: length.count }, (arg0, arg1) => {
       let obj = { style: tmp.mediaPlaceholderCard };
-      const items = [callback(tmp(closure_2[7]).ImageWarningIcon, { "Bool(false)": "text-link", "Bool(false)": "text-sm/normal" }), ];
-      obj = { cachedAt: "y", edpbxy: "isArray" };
-      const intl = tmp(closure_2[9]).intl;
-      obj.children = intl.string(tmp(closure_2[9]).t.B2xSxL);
-      items[1] = callback(tmp(closure_2[8]).Text, obj);
+      const items = [outer1_6(tmp(outer1_2[7]).ImageWarningIcon, { size: "lg", color: "text-muted" }), ];
+      obj = { variant: "text-sm/medium", color: "text-muted" };
+      const intl = tmp(outer1_2[9]).intl;
+      obj.children = intl.string(tmp(outer1_2[9]).t.B2xSxL);
+      items[1] = outer1_6(tmp(outer1_2[8]).Text, obj);
       obj.children = items;
-      return callback2(closure_4, obj, arg1);
+      return outer1_7(outer1_4, obj, arg1);
     }),
 
   ];
   obj = { style: tmp.mediaHiddenRow };
-  const items1 = [callback(arg1(dependencyMap[10]).CircleInformationIcon, {}), ];
-  obj = { cachedAt: 400, edpbxy: 20 };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.children = intl.string(arg1(dependencyMap[9]).t.VGf+K3);
-  items1[1] = callback(arg1(dependencyMap[8]).Text, obj);
+  const items1 = [callback(require(4086) /* CircleInformationIcon */.CircleInformationIcon, { size: "sm", color: "text-muted" }), ];
+  obj = { variant: "text-sm/normal", color: "text-muted" };
+  let intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["VGf+K3"]);
+  items1[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items1;
   items[1] = callback2(View, obj);
   obj.children = items;
   return callback2(View, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = { grow: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010061202988173046, accessibilityLabel: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004778309797938844, maxFontSizeMultiplier: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008347376505644786, accessibilityHint: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000029560810505976, flexShrink: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007293802354993027, flexGrow: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022357496646633032, alignSelf: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010242004964635269, type: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002094012059866823, guildId: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001966906527891313, expand: 0.00000000000000000000000000000000000000000000000000035497714504717675, 530735522: "<string:285278209>", 710845794: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", 1273509270: null, 1886478582: "8915080f4bfd7f0d822009e14ea151a4", "Bool(true)": "tr.messages.8915080f4bfd7f0d822009e14ea151a4.compiled.messages", "Bool(true)": "jsona", "Bool(true)": "BACKROOM_SEAT_2", "Bool(true)": null, "Bool(true)": true, "Bool(true)": "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", "Bool(true)": null, "Bool(true)": "8346f3201160fa23b5df96de0246b3b6", "Bool(true)": "uk.messages.8346f3201160fa23b5df96de0246b3b6.compiled.messages", "Bool(true)": "jsona", "Bool(true)": "BACKROOM_SEAT_3", "Bool(true)": null };
-let obj = arg1(dependencyMap[4]);
-obj = { container: { flexDirection: "column" } };
-obj = { marginLeft: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET };
-obj.hiddenMedia = obj;
-obj.messageRow = { position: "relative" };
-const tmp2 = arg1(dependencyMap[3]);
-obj.avatarHitbox = { width: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET, height: arg1(dependencyMap[5]).RESTRICTED_AVATAR_SIZE };
-const obj2 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[6]).space.PX_8, marginVertical: importDefault(dependencyMap[6]).space.PX_12 };
-obj.dateDivider = obj2;
-const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderWidth: "<string:2941583362>" };
-obj.dividerLine = obj3;
-const obj4 = { customContainer: 0, dup: 0, useCanManageGuildRoleSubscriptions: false, STICKERS_UPLOAD: false, gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, borderRadius: importDefault(dependencyMap[6]).radii.md, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
-obj.mediaPlaceholderCard = obj4;
-const obj5 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[6]).space.PX_8, marginTop: importDefault(dependencyMap[6]).space.PX_8, marginBottom: importDefault(dependencyMap[6]).space.PX_4 };
-obj.mediaHiddenRow = obj5;
-let closure_10 = obj.createStyles(obj);
-const obj1 = { width: arg1(dependencyMap[5]).RESTRICTED_CONTENT_INSET, height: arg1(dependencyMap[5]).RESTRICTED_AVATAR_SIZE };
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewList.tsx");
+({ jsx: closure_6, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
+let closure_9 = { renderEmbeds: false, renderReactions: false, inlineEmbedMedia: false, inlineAttachmentMedia: false, animateEmoji: false, gifAutoPlay: false, timestampHourCycle: 0, renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderThreadEmbeds: false, renderReplies: false, renderCommunicationDisabled: false, renderAttachments: false, renderExecutedCommands: false, renderPolls: false, renderSharedClientTheme: false, renderForumPostActions: false, ignoreMentioned: false, ignoreEmbedDescriptionCache: false, forceHideSimpleEmbedContent: false, enableSwipeActions: false, useAlternateEmbedColors: false, restrictedPreview: true };
+_createForOfIteratorHelperLoose = { container: { flexDirection: "column" } };
+_createForOfIteratorHelperLoose = { marginLeft: require("RESTRICTED_AVATAR_SIZE").RESTRICTED_CONTENT_INSET };
+_createForOfIteratorHelperLoose.hiddenMedia = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.messageRow = { position: "relative" };
+let obj1 = { position: "absolute", top: 0, left: 0, width: require("RESTRICTED_AVATAR_SIZE").RESTRICTED_CONTENT_INSET, height: require("RESTRICTED_AVATAR_SIZE").RESTRICTED_AVATAR_SIZE };
+_createForOfIteratorHelperLoose.avatarHitbox = obj1;
+let obj2 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.dateDivider = obj2;
+let obj3 = { flex: 1, height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.dividerLine = obj3;
+let obj4 = { alignItems: "center", justifyContent: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, height: 160, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.mediaPlaceholderCard = obj4;
+const obj5 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.mediaHiddenRow = obj5;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewList.tsx");
 
 export default function RestrictedMessagePreviewList(channelId) {
   let iter3;
   channelId = channelId.channelId;
-  const arg1 = channelId;
-  const tmp = callback3();
+  let tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  const analyticsLocations = importDefault(dependencyMap[12])().analyticsLocations;
-  const dependencyMap = analyticsLocations;
-  let obj = arg1(dependencyMap[13]);
-  const items = [closure_5];
-  const items1 = [channelId];
+  analyticsLocations = importDefault(analyticsLocations[12])().analyticsLocations;
+  let obj = channelId(analyticsLocations[13]);
+  let items = [_isNativeReflectConstruct];
+  let items1 = [channelId];
   const items2 = [channelId, analyticsLocations];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const messages = messages.getMessages(channelId);
+    messages = messages.getMessages(channelId);
     return messages.toArray();
   }, items1);
-  const callback = React.useCallback((userId) => {
+  callback = callback.useCallback((userId) => {
 
   }, items2);
-  const React = callback;
-  const memo = React.useMemo(() => {
-    let tmp = tmp(analyticsLocations[15]);
+  const memo = callback.useMemo(() => {
+    tmp = tmp(analyticsLocations[15]);
     tmp = new tmp();
-    tmp.setOptions(closure_9);
+    tmp.setOptions(outer1_9);
     return tmp;
   }, []);
-  const View = memo;
   const items3 = [tmp, memo, callback];
-  closure_5 = React.useCallback((message) => {
-    const channelId = message;
-    const tmp = tmp(analyticsLocations[16])(message);
+  _isNativeReflectConstruct = callback.useCallback((message) => {
+    let closure_0 = message;
+    tmp = tmp(analyticsLocations[16])(message);
     let obj = {};
     obj = { style: tmp.messageRow };
     obj = { pointerEvents: "none", message, rowGenerator: memo };
@@ -175,21 +176,21 @@ export default function RestrictedMessagePreviewList(channelId) {
     const intl = channelId(analyticsLocations[9]).intl;
     obj1.accessibilityLabel = intl.string(channelId(analyticsLocations[9]).t.iXAna6);
     obj1.onPress = function onPress() {
-      return callback(arg0.author.id);
+      return outer1_3(message.author.id);
     };
     items[1] = items4(channelId(analyticsLocations[18]).PressableOpacity, obj1);
     obj.children = items;
-    const items1 = [callback(memo, obj), ];
+    const items1 = [outer1_7(memo, obj), ];
     let tmp4 = tmp > 0;
     if (tmp4) {
       const obj2 = { style: tmp.hiddenMedia };
       const obj3 = { count: tmp };
-      obj2.children = items4(closure_13, obj3);
+      obj2.children = items4(outer1_13, obj3);
       tmp4 = items4(memo, obj2);
     }
     items1[1] = tmp4;
     obj.children = items1;
-    return callback(closure_8, obj);
+    return outer1_7(outer1_8, obj);
   }, items3);
   const items4 = [];
   const tmp5 = _createForOfIteratorHelperLoose(stateFromStoresArray);
@@ -208,9 +209,9 @@ export default function RestrictedMessagePreviewList(channelId) {
           }
         }
         if (null != tmp8) {
-          let tmp9 = closure_0;
-          let tmp10 = closure_2;
-          let obj3 = closure_0(closure_2[11]);
+          let tmp9 = channelId;
+          let tmp10 = analyticsLocations;
+          let obj3 = channelId(analyticsLocations[11]);
           if (obj3.isSameDay(tmp8.messages[tmp8.messages.length - 1].timestamp, value.timestamp)) {
             let messages = tmp8.messages;
             let arr = messages.push(value);
@@ -232,7 +233,7 @@ export default function RestrictedMessagePreviewList(channelId) {
       iter2 = iter3;
     } while (!iter3.done);
   }
-  return items4(View, {
+  return items4(memo, {
     style: tmp.container,
     children: items4.map((type) => {
       if ("message" === type.type) {
@@ -251,12 +252,12 @@ export default function RestrictedMessagePreviewList(channelId) {
           obj = { style: tmp.dateDivider };
           const obj1 = { style: tmp.dividerLine };
           const items = [items4(memo, obj1), , ];
-          const obj2 = { cachedAt: 15, edpbxy: "center", children: channelId(analyticsLocations[11]).dateFormat(message.timestamp, "LL") };
+          const obj2 = { variant: "text-xs/semibold", color: "text-muted", children: channelId(analyticsLocations[11]).dateFormat(message.timestamp, "LL") };
           items[1] = items4(channelId(analyticsLocations[8]).Text, obj2);
           const obj3 = { style: tmp.dividerLine };
           items[2] = items4(memo, obj3);
           obj.children = items;
-          tmp3 = callback(memo, obj);
+          tmp3 = outer1_7(memo, obj);
           const obj6 = channelId(analyticsLocations[11]);
         }
         const items1 = [tmp3, ];
@@ -274,7 +275,7 @@ export default function RestrictedMessagePreviewList(channelId) {
           const _HermesInternal = HermesInternal;
           id = "blocked-" + message.id;
         }
-        return callback(memo, obj, id);
+        return outer1_7(memo, obj, id);
       } else if ("message" === tmp.type) {
         let message2 = tmp.message;
       } else {

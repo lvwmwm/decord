@@ -1,38 +1,39 @@
-// Module ID: 4991
-// Function ID: 43178
+// Module ID: 4994
+// Function ID: 43196
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 4991 (_isNativeReflectConstruct)
+// Module 4994 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let obj = { topEmojisByGuildId: {} };
 let closure_7 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class TopEmojiStore {
     constructor() {
       self = this;
       tmp = TopEmojiStore(this, TopEmojiStore);
-      obj = closure_3(TopEmojiStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(TopEmojiStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,40 +42,40 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = TopEmojiStore;
   callback2(TopEmojiStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       let tmp = arg0;
       if (null == arg0) {
-        tmp = closure_5;
+        tmp = outer1_5;
       }
+      const outer1_6 = tmp;
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[1] = obj;
   obj = {
     key: "getTopEmojiIdsByGuildId",
     value(arg0) {
-      return topEmojisByGuildId.topEmojisByGuildId[arg0];
+      return outer1_6.topEmojisByGuildId[arg0];
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getIsFetching",
     value(arg0) {
-      return closure_7[arg0];
+      return outer1_7[arg0];
     }
   };
   return callback(TopEmojiStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "TopEmojiStore";
 tmp2.persistKey = "TopEmojiStore";
 obj = {
@@ -93,7 +94,7 @@ obj = {
     closure_7[guildId] = false;
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[6]), obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/emojis/top_emojis/TopEmojiStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/emojis/top_emojis/TopEmojiStore.tsx");
 
 export default tmp2;

@@ -1,41 +1,43 @@
-// Module ID: 5167
-// Function ID: 44976
+// Module ID: 5170
+// Function ID: 44995
 // Name: TableRowIcon
-// Dependencies: []
+// Dependencies: [29, 31, 27, 33, 4130, 689, 4545, 2]
 // Exports: TableRowIcon
 
-// Module 5167 (TableRowIcon)
-let closure_3 = ["onFocus"];
-let closure_4 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { width: importDefault(dependencyMap[5]).modules.mobile.TABLE_ROW_ICON_SIZE, height: importDefault(dependencyMap[5]).modules.mobile.TABLE_ROW_ICON_SIZE, justifyContent: "center", alignItems: "center", borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.container = obj;
-obj.default = { color: importDefault(dependencyMap[5]).colors.TABLEROW_ICON_COLOR_DEFAULT };
-const obj1 = { color: importDefault(dependencyMap[5]).colors.TABLEROW_ICON_COLOR_DEFAULT };
-obj.statusOnline = { color: importDefault(dependencyMap[5]).colors.TEXT_STATUS_ONLINE };
-const obj2 = { color: importDefault(dependencyMap[5]).colors.TEXT_STATUS_ONLINE };
-obj.statusIdle = { color: importDefault(dependencyMap[5]).colors.TEXT_STATUS_IDLE };
-const obj3 = { color: importDefault(dependencyMap[5]).colors.TEXT_STATUS_IDLE };
-obj.statusDND = { color: importDefault(dependencyMap[5]).colors.TEXT_STATUS_DND };
-const obj4 = { color: importDefault(dependencyMap[5]).colors.TEXT_STATUS_DND };
-obj.statusOffline = { color: importDefault(dependencyMap[5]).colors.TEXT_STATUS_OFFLINE };
-const obj5 = { color: importDefault(dependencyMap[5]).colors.TEXT_STATUS_OFFLINE };
-obj.xbox = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.PLATFORM_XBOX, color: importDefault(dependencyMap[5]).colors.WHITE };
-const obj6 = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.PLATFORM_XBOX, color: importDefault(dependencyMap[5]).colors.WHITE };
-obj.playstation = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.PLATFORM_PLAYSTATION, color: importDefault(dependencyMap[5]).colors.WHITE };
-const obj7 = { backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.PLATFORM_PLAYSTATION, color: importDefault(dependencyMap[5]).colors.WHITE };
-obj.danger = { color: importDefault(dependencyMap[5]).colors.TEXT_FEEDBACK_CRITICAL };
-const obj8 = { color: importDefault(dependencyMap[5]).colors.TEXT_FEEDBACK_CRITICAL };
-obj.secondary = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
-const obj9 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.translucent = { color: importDefault(dependencyMap[5]).colors.WHITE };
-let closure_7 = obj.createStyles(obj);
-const obj10 = { color: importDefault(dependencyMap[5]).colors.WHITE };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/TableRow/native/TableRowIcon.native.tsx");
+// Module 5170 (TableRowIcon)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_3 = ["color"];
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_ICON_SIZE, height: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_ICON_SIZE, justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.default = { color: require("_createForOfIteratorHelperLoose").colors.TABLEROW_ICON_COLOR_DEFAULT };
+const obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TABLEROW_ICON_COLOR_DEFAULT };
+_createForOfIteratorHelperLoose.statusOnline = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_ONLINE };
+const obj2 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_ONLINE };
+_createForOfIteratorHelperLoose.statusIdle = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_IDLE };
+const obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_IDLE };
+_createForOfIteratorHelperLoose.statusDND = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_DND };
+const obj4 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_DND };
+_createForOfIteratorHelperLoose.statusOffline = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_OFFLINE };
+const obj5 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_OFFLINE };
+_createForOfIteratorHelperLoose.xbox = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_XBOX, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+const obj6 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_XBOX, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.playstation = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_PLAYSTATION, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+const obj7 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PLATFORM_PLAYSTATION, color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.danger = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
+const obj8 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
+_createForOfIteratorHelperLoose.secondary = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+const obj9 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.translucent = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj10 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+const result = require("get ActivityIndicator").fileFinishedImporting("design/components/TableRow/native/TableRowIcon.native.tsx");
 
 export const TableRowIcon = function TableRowIcon(arg0) {
   let IconComponent;
@@ -45,7 +47,7 @@ export const TableRowIcon = function TableRowIcon(arg0) {
   if (variant === undefined) {
     variant = "default";
   }
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   if ("default" === variant) {
     let translucent = tmp.default;
   } else if ("text-status-online" === variant) {
@@ -69,9 +71,9 @@ export const TableRowIcon = function TableRowIcon(arg0) {
   }
   const color = translucent.color;
   if ("default" === variant) {
-    let REFRESH_SMALL_16 = arg1(dependencyMap[6]).IconSizes.MEDIUM;
+    let REFRESH_SMALL_16 = require(4545) /* getIconSize */.IconSizes.MEDIUM;
   } else {
-    REFRESH_SMALL_16 = arg1(dependencyMap[6]).IconSizes.REFRESH_SMALL_16;
+    REFRESH_SMALL_16 = require(4545) /* getIconSize */.IconSizes.REFRESH_SMALL_16;
   }
   let str8 = "md";
   if ("default" !== variant) {
@@ -92,14 +94,14 @@ export const TableRowIcon = function TableRowIcon(arg0) {
     }
   }
   let obj = { style: items };
-  const items = [tmp.container, callback(translucent, closure_3)];
+  items = [tmp.container, callback(translucent, closure_3)];
   if (null != IconComponent) {
     obj = { size: str8, color };
-    let tmp13 = <IconComponent {...obj} />;
+    let tmp13 = <IconComponent size={str8} color={color} />;
   } else {
     obj = { color, source, size: REFRESH_SMALL_16 };
-    tmp13 = jsx(importDefault(dependencyMap[6]), obj);
+    tmp13 = jsx(importDefault(4545), { color, source, size: REFRESH_SMALL_16 });
   }
   obj.children = tmp13;
-  <View {...obj} />;
+  <View style={items} />;
 };

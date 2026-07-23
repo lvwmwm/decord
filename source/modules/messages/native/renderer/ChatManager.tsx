@@ -1,13 +1,17 @@
-// Module ID: 9303
-// Function ID: 72689
+// Module ID: 9310
+// Function ID: 72730
 // Name: ChatManager
-// Dependencies: []
+// Dependencies: [6, 7, 7622, 9311, 636, 2]
 
-// Module 9303 (ChatManager)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ Changeset: closure_4, RowType: closure_5 } = arg1(dependencyMap[2]));
-const obj = {
+// Module 9310 (ChatManager)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import Changeset from "Changeset";
+
+let closure_4;
+let closure_5;
+({ Changeset: closure_4, RowType: closure_5 } = Changeset);
+let obj = {
   determineChangeType() {
     return constants.NOOP;
   },
@@ -17,18 +21,17 @@ const obj = {
   determineChangeTypeForEmbeddedActivity() {
     return constants.NOOP;
   },
-  getBlocked(self) {
+  getBlocked(closure_0) {
     return false;
   },
-  getIgnored(self) {
+  getIgnored(closure_0) {
     return false;
   }
 };
-const tmp2 = arg1(dependencyMap[2]);
-const tmp3 = () => {
+let tmp3 = (() => {
   class ChatManager {
     constructor() {
-      tmp = closure_2(this, ChatManager);
+      tmp = outer1_2(this, ChatManager);
       this._messages = null;
       this._rows = [];
       this.messages = null;
@@ -40,14 +43,13 @@ const tmp3 = () => {
       return;
     }
   }
-  const importDefault = ChatManager;
   let obj = {
     key: "getPreviousMessages",
     value() {
       return this._messages;
     }
   };
-  const items = [obj, , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , ];
   obj = {
     key: "getPreviousRows",
     value() {
@@ -140,8 +142,7 @@ const tmp3 = () => {
     key: "determineChangeTypeForUploadProgress",
     value(items) {
       let self = this;
-      const tmp = this.uploadProgressIds[items.id];
-      if (null != tmp) {
+      if (null != this.uploadProgressIds[items.id]) {
         items = tmp.items;
         let length;
         if (null != items) {
@@ -156,29 +157,29 @@ const tmp3 = () => {
           if (tmp.compressionProgress === items.compressionProgress) {
             if (tmp.progress === items.progress) {
               if (tmp.currentSize === items.currentSize) {
-                let UPDATE = constants.NOOP;
+                let UPDATE = outer1_4.NOOP;
               }
             }
           }
         }
         self.uploadProgressIds[items.id] = items;
-        self = constants;
-        UPDATE = constants.UPDATE;
+        self = outer1_4;
+        UPDATE = outer1_4.UPDATE;
       } else {
         self.uploadProgressIds[items.id] = items;
-        return constants.INSERT;
+        return outer1_4.INSERT;
       }
     }
   };
   items[9] = {
     key: "determineChangeTypeForEmbeddedActivity",
     value(arg0) {
-      const tmp = ChatManager(closure_1[3])(arg0);
+      const tmp = ChatManager(outer1_1[3])(arg0);
       this.embeddedActivities[tmp] = arg0;
       if (null != this.embeddedActivities[tmp]) {
-        let INSERT = constants.UPDATE;
+        let INSERT = outer1_4.UPDATE;
       } else {
-        INSERT = constants.INSERT;
+        INSERT = outer1_4.INSERT;
       }
       return INSERT;
     }
@@ -195,31 +196,31 @@ const tmp3 = () => {
         flag = false;
       }
       if (null == self._messages) {
-        return constants.NOOP;
+        return outer1_4.NOOP;
       } else {
         const _Array = Array;
         if (Array.isArray(self._messages)) {
-          return constants.NOOP;
+          return outer1_4.NOOP;
         } else if (null == self._messages._map) {
-          return constants.NOOP;
+          return outer1_4.NOOP;
         } else {
           let tmp = tmp12;
           if (null == self._messages._map[message.id]) {
             tmp = tmp12;
             if (null != message.nonce) {
               if (null != self._messages._map[message.nonce]) {
-                let INSERT = constants.UPDATE;
+                let INSERT = outer1_4.UPDATE;
               }
               return INSERT;
             }
           }
           if (null != tmp) {
             if (!forceRender.forceRender) {
-              INSERT = ChatManager(closure_1[4])(tmp, message) ? tmp4.NOOP : tmp4.UPDATE;
+              INSERT = ChatManager(outer1_1[4])(tmp, message) ? tmp4.NOOP : tmp4.UPDATE;
             }
-            INSERT = constants.UPDATE;
+            INSERT = outer1_4.UPDATE;
           }
-          INSERT = constants.INSERT;
+          INSERT = outer1_4.INSERT;
         }
       }
     }
@@ -253,12 +254,12 @@ const tmp3 = () => {
                 let tmp19 = self._rows[num3];
                 let tmp20 = self.rows[num];
                 let changeType = tmp20.changeType;
-                let tmp21 = constants;
-                if (constants.NOOP !== changeType) {
-                  let tmp22 = constants;
-                  if (constants.UPDATE !== changeType) {
-                    let tmp23 = constants;
-                    let INSERT = constants.INSERT;
+                let tmp21 = outer1_4;
+                if (outer1_4.NOOP !== changeType) {
+                  let tmp22 = outer1_4;
+                  if (outer1_4.UPDATE !== changeType) {
+                    let tmp23 = outer1_4;
+                    let INSERT = outer1_4.INSERT;
                     tmp20.index = num + num2;
                     let arr = items.push(tmp20);
                     let sum = num + 1;
@@ -272,15 +273,15 @@ const tmp3 = () => {
                   }
                 }
                 if (tmp20.type === tmp19.type) {
-                  let tmp47 = constants2;
-                  if (tmp20.type !== constants2.SEPARATOR) {
-                    let tmp25 = constants2;
-                    if (tmp20.type !== constants2.LOADING) {
-                      let tmp26 = constants2;
-                      let tmp27 = constants;
+                  let tmp47 = outer1_5;
+                  if (tmp20.type !== outer1_5.SEPARATOR) {
+                    let tmp25 = outer1_5;
+                    if (tmp20.type !== outer1_5.LOADING) {
+                      let tmp26 = outer1_5;
+                      let tmp27 = outer1_4;
                       let tmp28 = tmp;
                       let tmp29 = tmp2;
-                      if (tmp20.changeType !== constants.NOOP) {
+                      if (tmp20.changeType !== outer1_4.NOOP) {
                         tmp20.index = num + num2;
                         arr = items.push(tmp20);
                         sum1 = num3 + 1;
@@ -292,12 +293,12 @@ const tmp3 = () => {
                         tmp14 = tmp20;
                         tmp15 = tmp5;
                       } else {
-                        let tmp48 = constants2;
-                        if (tmp20.type !== constants2.SEPARATOR) {
-                          let tmp32 = constants2;
-                          if (tmp20.type !== constants2.LOADING) {
-                            let tmp33 = constants2;
-                            if (tmp20.type === constants2.BLOCKED_GROUP) {
+                        let tmp48 = outer1_5;
+                        if (tmp20.type !== outer1_5.SEPARATOR) {
+                          let tmp32 = outer1_5;
+                          if (tmp20.type !== outer1_5.LOADING) {
+                            let tmp33 = outer1_5;
+                            if (tmp20.type === outer1_5.BLOCKED_GROUP) {
                               let tmp30 = tmp;
                               let tmp31 = tmp2;
                               if (tmp20.text === tmp19.text) {
@@ -305,10 +306,10 @@ const tmp3 = () => {
                                 tmp31 = tmp2;
                               }
                             } else {
-                              let tmp34 = constants2;
+                              let tmp34 = outer1_5;
                             }
-                            let tmp35 = constants2;
-                            if (tmp20.type === constants2.MESSAGE) {
+                            let tmp35 = outer1_5;
+                            if (tmp20.type === outer1_5.MESSAGE) {
                               if (tmp20.separatorBefore !== tmp19.separatorBefore) {
                                 tmp30 = tmp;
                                 tmp31 = tmp2;
@@ -336,8 +337,8 @@ const tmp3 = () => {
                           tmp30 = tmp;
                           tmp31 = tmp2;
                         }
-                        let tmp39 = constants;
-                        tmp20.changeType = constants.UPDATE;
+                        let tmp39 = outer1_4;
+                        tmp20.changeType = outer1_4.UPDATE;
                         tmp20.index = num + num2;
                         let arr1 = items.push(tmp20);
                         sum1 = num3 + 1;
@@ -353,26 +354,26 @@ const tmp3 = () => {
                   }
                 }
                 let obj = {};
-                let tmp41 = constants;
-                obj.changeType = constants.REMOVE;
+                let tmp41 = outer1_4;
+                obj.changeType = outer1_4.REMOVE;
                 obj.index = num + num2;
                 let arr2 = items.push(obj);
                 if (num + num2 > 0) {
                   let num4 = 1;
                   let tmp43 = items[num + num2 - 1];
-                  let tmp44 = constants;
-                  let maybeRemove = tmp43.changeType !== constants.NOOP;
+                  let tmp44 = outer1_4;
+                  let maybeRemove = tmp43.changeType !== outer1_4.NOOP;
                   if (!maybeRemove) {
-                    let tmp45 = constants2;
-                    maybeRemove = tmp43.type !== constants2.MESSAGE;
+                    let tmp45 = outer1_5;
+                    maybeRemove = tmp43.type !== outer1_5.MESSAGE;
                   }
                   if (!maybeRemove) {
                     maybeRemove = self.maybeRemove;
                   }
-                  let tmp5 = tmp43;
+                  tmp5 = tmp43;
                   if (!maybeRemove) {
-                    let tmp46 = constants;
-                    tmp43.changeType = constants.UPDATE;
+                    let tmp46 = outer1_4;
+                    tmp43.changeType = outer1_4.UPDATE;
                     tmp5 = tmp43;
                   }
                 }
@@ -386,8 +387,8 @@ const tmp3 = () => {
                 tmp14 = tmp20;
               } else {
                 let tmp16 = self.rows[num];
-                let tmp17 = constants;
-                tmp16.changeType = constants.INSERT;
+                let tmp17 = outer1_4;
+                tmp16.changeType = outer1_4.INSERT;
                 tmp16.index = num + num2;
                 let arr3 = items.push(tmp16);
                 sum = num + 1;
@@ -401,8 +402,8 @@ const tmp3 = () => {
               }
             } else {
               obj = {};
-              let tmp6 = constants;
-              obj.changeType = constants.REMOVE;
+              let tmp6 = outer1_4;
+              obj.changeType = outer1_4.REMOVE;
               obj.index = num + num2;
               let arr4 = items.push(obj);
               sum2 = num2 + 1;
@@ -414,13 +415,13 @@ const tmp3 = () => {
               tmp14 = tmp4;
               tmp15 = tmp5;
             }
-            let tmp = tmp10;
-            let tmp2 = tmp11;
+            tmp = tmp10;
+            tmp2 = tmp11;
             num = sum;
             num2 = sum2;
             num3 = sum1;
-            let tmp3 = tmp13;
-            let tmp4 = tmp14;
+            tmp3 = tmp13;
+            tmp4 = tmp14;
             tmp5 = tmp15;
             if (sum1 < self._rows.length) {
               continue;
@@ -444,15 +445,15 @@ const tmp3 = () => {
           num2 = 0;
           num3 = 0;
         }
-        rows = items.filter((changeType) => changeType.changeType !== constants.NOOP);
+        rows = items.filter((changeType) => changeType.changeType !== outer2_4.NOOP);
       }
       ({ messages: self._messages, rows: self._rows } = self);
       return rows;
     }
   };
   return callback(ChatManager, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/messages/native/renderer/ChatManager.tsx");
+})();
+const result = require("Changeset").fileFinishedImporting("modules/messages/native/renderer/ChatManager.tsx");
 
 export default tmp3;
 export const MockChatManager = obj;

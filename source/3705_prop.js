@@ -1,5 +1,5 @@
 // Module ID: 3705
-// Function ID: 28077
+// Function ID: 28080
 // Name: prop
 // Dependencies: []
 
@@ -10,14 +10,14 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { accessibilityHint: "<string:1358954758>", legacyCompat_selected: "<string:162284779>", legacyCompat_onPress: "<string:163250179>", eventTarget: "<string:155779075>" }, narrow: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, short: { accessibilityHint: "<string:1358954758>", legacyCompat_selected: "<string:162284779>", legacyCompat_onPress: "<string:163250179>", eventTarget: "<string:155779075>" } };
+    obj = { long: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" } };
     obj.conjunction = obj;
-    const obj1 = { long: {}, narrow: {}, short: {} };
+    const obj1 = { long: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" }, short: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, narrow: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, short: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 } };
+    const obj2 = { long: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" } };
     obj.unit = obj2;
     obj.data = obj;
-    obj.locale = "zh-Hans";
+    obj.locale = "uk";
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { accessibilityHint: "<string:1358954758>", legacyCompat_selected: "<string:162284779>", legacyCompat_onPress: "<string:163250179>", eventTarget: "<string:155779075>" }, narrow: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, short: { accessibilityHint: "<string:1358954758>", legacyCompat_selected: "<string:162284779>", legacyCompat_onPress: "<string:163250179>", eventTarget: "<string:155779075>" } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, narrow: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 }, short: { accessibilityHint: 1315241986, legacyCompat_selected: 2072379394, legacyCompat_onPress: 1045495810, eventTarget: 1602306 } } }, locale: "zh-Hans" });
+prop.push({ data: { conjunction: { long: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" }, short: { end: "{0} \u0430\u0431\u043E {1}", middle: "{0}, {1}", pair: "{0} \u0430\u0431\u043E {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" }, short: { end: "{0} \u0456 {1}", middle: "{0}, {1}", pair: "{0} \u0456 {1}", start: "{0}, {1}" } } }, locale: "uk" });

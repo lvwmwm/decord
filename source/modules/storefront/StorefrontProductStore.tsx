@@ -1,38 +1,39 @@
-// Module ID: 13854
-// Function ID: 104755
+// Module ID: 13968
+// Function ID: 106911
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 13854 (_isNativeReflectConstruct)
+// Module 13968 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = {};
 let closure_6 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class StorefrontProductStore {
     constructor() {
       self = this;
       tmp = StorefrontProductStore(this, StorefrontProductStore);
-      obj = closure_3(StorefrontProductStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(StorefrontProductStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,7 +42,6 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = StorefrontProductStore;
   callback2(StorefrontProductStore, Store);
   let obj = {
     key: "getFetchState",
@@ -49,7 +49,7 @@ let tmp2 = (Store) => {
       let tmp;
       if (null != arg0) {
         let state;
-        if (null != closure_5[arg0]) {
+        if (null != outer1_5[arg0]) {
           state = tmp3.state;
         }
         tmp = state;
@@ -64,7 +64,7 @@ let tmp2 = (Store) => {
       let tmp;
       if (null != arg0) {
         let state;
-        if (null != closure_6[arg0]) {
+        if (null != outer1_6[arg0]) {
           state = tmp3.state;
         }
         tmp = state;
@@ -79,7 +79,7 @@ let tmp2 = (Store) => {
       let tmp;
       if (null != arg0) {
         let fetchedAt;
-        if (null != closure_5[arg0]) {
+        if (null != outer1_5[arg0]) {
           fetchedAt = tmp3.fetchedAt;
         }
         tmp = fetchedAt;
@@ -94,7 +94,7 @@ let tmp2 = (Store) => {
       let tmp;
       if (null != arg0) {
         let fetchedAt;
-        if (null != closure_6[arg0]) {
+        if (null != outer1_6[arg0]) {
           fetchedAt = tmp3.fetchedAt;
         }
         tmp = fetchedAt;
@@ -108,7 +108,7 @@ let tmp2 = (Store) => {
       let tmp;
       if (null != arg0) {
         let fetchError;
-        if (null != closure_5[arg0]) {
+        if (null != outer1_5[arg0]) {
           fetchError = tmp3.fetchError;
         }
         tmp = fetchError;
@@ -122,7 +122,7 @@ let tmp2 = (Store) => {
       let tmp;
       if (null != arg0) {
         let fetchError;
-        if (null != closure_6[arg0]) {
+        if (null != outer1_6[arg0]) {
           fetchError = tmp3.fetchError;
         }
         tmp = fetchError;
@@ -135,7 +135,7 @@ let tmp2 = (Store) => {
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        tmp = closure_5[arg0];
+        tmp = outer1_5[arg0];
       }
       let product = null;
       if (null != tmp) {
@@ -160,7 +160,7 @@ let tmp2 = (Store) => {
       let tmp;
       if (null != arg0) {
         let products;
-        if (null != closure_6[arg0]) {
+        if (null != outer1_6[arg0]) {
           products = tmp3.products;
         }
         tmp = products;
@@ -169,43 +169,44 @@ let tmp2 = (Store) => {
     }
   };
   return callback(StorefrontProductStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "StorefrontProductStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   STOREFRONT_PRODUCTS_WITH_SKUS_FETCH: function handleProductsWithSkusFetch(productIds) {
     productIds = productIds.productIds;
     const item = productIds.forEach((arg0) => {
       const obj = { state: "loading" };
       let product;
-      if (null != closure_5[arg0]) {
+      if (null != outer1_5[arg0]) {
         product = tmp2.product;
       }
       obj.product = product;
-      closure_5[arg0] = obj;
+      outer1_5[arg0] = obj;
     });
   },
   STOREFRONT_PRODUCTS_WITH_SKUS_FETCH_SUCCESS: function handleProductsWithSkusFetchSuccess(arg0) {
     let productIds;
     let products;
     ({ productIds, products } = arg0);
-    let closure_0 = Date.now();
-    let closure_1 = new Set();
+    let dispatcher = Date.now();
+    const set = new Set();
     const item = products.forEach((id) => {
       set.add(id.id);
-      closure_5[id.id] = { state: "success", product: id, fetchedAt: closure_0 };
+      outer1_5[id.id] = { state: "success", product: id, fetchedAt: dispatcher };
     });
     const item1 = productIds.forEach((arg0) => {
       if (!set.has(arg0)) {
-        delete r0[r1];
+        delete tmp[tmp2];
       }
     });
   },
   STOREFRONT_PRODUCTS_WITH_SKUS_FETCH_FAILURE: function handleProductsWithSkusFetchFailure(arg0) {
+    let dispatcher;
     let productIds;
-    ({ productIds, apiError: closure_0 } = arg0);
-    let closure_1 = Date.now();
+    ({ productIds, apiError: dispatcher } = arg0);
+    let set = Date.now();
     const item = productIds.forEach((arg0) => {
-      closure_5[arg0] = { state: "error", fetchedAt: closure_1, fetchError: closure_0 };
+      outer1_5[arg0] = { state: "error", fetchedAt: set, fetchError: dispatcher };
     });
   },
   STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH: function handleProductsBySkuIdsFetch(skuIds) {
@@ -213,70 +214,71 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     const item = skuIds.forEach((arg0) => {
       const obj = { state: "loading" };
       let products;
-      if (null != closure_6[arg0]) {
+      if (null != outer1_6[arg0]) {
         products = tmp2.products;
       }
       obj.products = products;
-      closure_6[arg0] = obj;
+      outer1_6[arg0] = obj;
     });
   },
   STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH_SUCCESS: function handleProductsBySkuIdsFetchSuccess(arg0) {
     let products;
     let skuIds;
     ({ skuIds, products } = arg0);
-    let closure_0 = Date.now();
-    let closure_1 = products.reduce((arg0, skuIds) => {
-      let closure_0 = arg0;
-      let closure_1 = skuIds;
+    let dispatcher = Date.now();
+    let set = products.reduce((arg0, skuIds) => {
+      let dispatcher = arg0;
+      let set = skuIds;
       skuIds = skuIds.skuIds;
       const item = skuIds.forEach((arg0) => {
-        if (null == arg0[arg0]) {
-          const items = [arg1];
-          arg0[arg0] = items;
+        if (null == dependencyMap[arg0]) {
+          const items = [set];
+          dependencyMap[arg0] = items;
         } else {
-          let arr = arg0[arg0];
-          arr = arr.push(arg1);
+          let arr = dependencyMap[arg0];
+          arr = arr.push(set);
         }
       });
       return arg0;
     }, {});
-    const item = skuIds.forEach((arg0) => {
-      if (null != closure_1[arg0]) {
-        const obj = { state: "success", products: closure_1[arg0], fetchedAt: closure_0 };
-        closure_6[arg0] = obj;
+    let item = skuIds.forEach((arg0) => {
+      if (null != dependencyMap[arg0]) {
+        const obj = { state: "success", products: dependencyMap[arg0], fetchedAt: dispatcher };
+        outer1_6[arg0] = obj;
       } else {
-        delete r0[r2];
+        delete tmp[tmp2];
       }
     });
     const item1 = products.forEach((id) => {
-      closure_5[id.id] = { state: "success", product: id, fetchedAt: closure_0 };
+      outer1_5[id.id] = { state: "success", product: id, fetchedAt: dispatcher };
     });
   },
   STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH_FAILURE: function handleProductsBySkuIdsFetchFailure(arg0) {
+    let dispatcher;
     let skuIds;
-    ({ skuIds, apiError: closure_0 } = arg0);
-    let closure_1 = Date.now();
+    ({ skuIds, apiError: dispatcher } = arg0);
+    let set = Date.now();
     const item = skuIds.forEach((arg0) => {
-      closure_6[arg0] = { state: "error", fetchedAt: closure_1, fetchError: closure_0 };
+      outer1_6[arg0] = { state: "error", fetchedAt: set, fetchError: dispatcher };
     });
   },
   STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_SUCCESS: function handleCollectionsWithProductsFetchSuccess(collections) {
     collections = collections.collections;
-    let closure_0 = Date.now();
-    const item = collections.forEach((products) => {
+    let dispatcher = Date.now();
+    let item = collections.forEach((products) => {
       products = products.products;
       const item = products.forEach((id) => {
-        closure_5[id.id] = { state: "success", product: id, fetchedAt: closure_0 };
+        outer2_5[id.id] = { state: "success", product: id, fetchedAt: outer1_0 };
       });
     });
   },
   STOREFRONT_COLLECTIONS_FOR_APPLICATION_FETCH_SUCCESS: function handleCollectionsForApplicationFetchSuccess(collections) {
     collections = collections.collections;
-    let closure_0 = Date.now();
-    const item = collections.forEach((products) => {
+    let dispatcher = Date.now();
+    let item = collections.forEach((products) => {
       products = products.products;
       const item = products.forEach((id) => {
-        closure_5[id.id] = { state: "success", product: id, fetchedAt: closure_0 };
+        outer2_5[id.id] = { state: "success", product: id, fetchedAt: outer1_0 };
       });
     });
   },
@@ -285,6 +287,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     let closure_6 = {};
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/storefront/StorefrontProductStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/storefront/StorefrontProductStore.tsx");
 
 export default tmp2;

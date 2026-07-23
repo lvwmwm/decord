@@ -1,18 +1,19 @@
 // Module ID: 1033
-// Function ID: 11117
+// Function ID: 11118
 // Name: InteractionManager
-// Dependencies: []
+// Dependencies: [6, 7, 1032]
 
 // Module 1033 (InteractionManager)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = 0;
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export const InteractionManager = () => {
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+let c4 = 0;
+
+export const InteractionManager = (() => {
   class InteractionManager {
     constructor() {
-      tmp = closure_2(this, InteractionManager);
+      tmp = outer1_2(this, InteractionManager);
       __init = InteractionManager.prototype.__init;
       callResult = __init.call(this);
       __init2 = InteractionManager.prototype.__init2;
@@ -20,14 +21,13 @@ export const InteractionManager = () => {
       return;
     }
   }
-  const require = InteractionManager;
   let obj = {
     key: "__init",
     value: function __init() {
       this._longestInteractionList = [];
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "__init2",
     value: function __init2() {
@@ -38,7 +38,7 @@ export const InteractionManager = () => {
   obj = {
     key: "_resetInteractions",
     value: function _resetInteractions() {
-      const interactionCount = InteractionManager(closure_1[2]).getInteractionCount();
+      const outer1_4 = InteractionManager(outer1_1[2]).getInteractionCount();
       this._longestInteractionList.length = 0;
       const _longestInteractionMap = this._longestInteractionMap;
       _longestInteractionMap.clear();
@@ -49,8 +49,8 @@ export const InteractionManager = () => {
     key: "_estimateP98LongestInteraction",
     value: function _estimateP98LongestInteraction() {
       const diff = this._longestInteractionList.length - 1;
-      const obj = InteractionManager(closure_1[2]);
-      return this._longestInteractionList[Math.min(Math, diff, Math.floor(Math, (obj.getInteractionCount(obj) - closure_4) / 50))];
+      const obj = InteractionManager(outer1_1[2]);
+      return this._longestInteractionList[Math.min(Math, diff, Math.floor(Math, (obj.getInteractionCount(obj) - outer1_4) / 50))];
     }
   };
   items[4] = {
@@ -101,6 +101,7 @@ export const InteractionManager = () => {
           for (const item10061 of spliceResult) {
             let _longestInteractionMap3 = self._longestInteractionMap;
             let deleteResult = _longestInteractionMap3.delete(item10061.id);
+            continue;
           }
         }
         const _onAfterProcessingINPCandidate = self._onAfterProcessingINPCandidate;
@@ -111,5 +112,5 @@ export const InteractionManager = () => {
       }
     }
   };
-  return callback(InteractionManager, items);
-}();
+  return _defineProperties(InteractionManager, items);
+})();

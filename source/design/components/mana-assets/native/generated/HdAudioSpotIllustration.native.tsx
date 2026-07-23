@@ -1,13 +1,13 @@
-// Module ID: 6243
-// Function ID: 50297
+// Module ID: 6248
+// Function ID: 50326
 // Name: HdAudioSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6249, 2]
 // Exports: HdAudioSpotIllustration
 
-// Module 6243 (HdAudioSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HdAudioSpotIllustration.native.tsx");
+// Module 6248 (HdAudioSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HdAudioSpotIllustration.native.tsx");
 
 export const HdAudioSpotIllustration = function HdAudioSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const HdAudioSpotIllustration = function HdAudioSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6249) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const HdAudioSpotIllustration = function HdAudioSpotIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

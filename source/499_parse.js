@@ -1,11 +1,13 @@
 // Module ID: 499
 // Function ID: 6434
 // Name: parse
-// Dependencies: []
+// Dependencies: [495]
 
 // Module 499 (parse)
+const module = arg2;
+const dependencyMap = arg6;
 arg5.default = function parse(arr) {
-  if (arg2(arg6[0])(arr)) {
+  if (module(495)(arr)) {
     const _Uint8Array = Uint8Array;
     const uint8Array = new Uint8Array(16);
     const _parseInt = parseInt;

@@ -1,29 +1,33 @@
-// Module ID: 15067
-// Function ID: 113415
+// Module ID: 15182
+// Function ID: 115584
 // Name: ICYMICustomScoresModal
-// Dependencies: []
+// Dependencies: [31, 33, 9113, 4130, 689, 5519, 9122, 1212, 10161, 15183, 15184, 2]
 // Exports: default
 
-// Module 15067 (ICYMICustomScoresModal)
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
-let obj = arg1(dependencyMap[2]);
-let closure_5 = obj.createNativeStackNavigator();
-const tmp3 = arg1(dependencyMap[1]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-obj.header = obj;
-let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/icymi/native/custom_scores/ICYMICustomScoresModal.tsx");
+// Module 15182 (ICYMICustomScoresModal)
+import "result";
+import jsxProd from "jsxProd";
+import createNativeStackNavigator from "createNativeStackNavigator";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
+createNativeStackNavigator = {};
+createNativeStackNavigator = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+createNativeStackNavigator.header = createNativeStackNavigator;
+createNativeStackNavigator = _createForOfIteratorHelperLoose.createStyles(createNativeStackNavigator);
+const result = require("createNativeStackNavigator").fileFinishedImporting("modules/icymi/native/custom_scores/ICYMICustomScoresModal.tsx");
 
 export default function ICYMICustomScoresModal() {
-  const callback = callback4();
-  let obj = callback(dependencyMap[5]);
+  const _require = createNativeStackNavigator();
+  let obj = _require(5519);
   let closure_1 = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions() {
-      const merged = Object.assign(closure_1);
+      let merged = Object.assign(closure_1);
       return {
         headerStyle: lib.header,
         headerTitle(children) {
@@ -32,7 +36,7 @@ export default function ICYMICustomScoresModal() {
           const merged = Object.assign(children, obj);
           obj = { title: children.children };
           const merged1 = Object.assign(merged);
-          return callback2(callback(closure_2[6]).GenericHeaderTitle, obj);
+          return outer2_3(callback(outer2_2[6]).GenericHeaderTitle, obj);
         },
         headerTitleAlign: "center"
       };
@@ -43,29 +47,29 @@ export default function ICYMICustomScoresModal() {
     name: "default",
     options(navigation) {
       const obj = {};
-      const intl = lib(closure_2[7]).intl;
-      obj.title = intl.string(lib(closure_2[7]).t.jVshKt);
-      obj.headerLeft = lib(closure_2[6]).getRenderModalCloseImage(navigation.navigation);
-      const merged = Object.assign(callback(closure_2[8])());
+      const intl = lib(outer1_2[7]).intl;
+      obj.title = intl.string(lib(outer1_2[7]).t.jVshKt);
+      obj.headerLeft = lib(outer1_2[6]).getRenderModalCloseImage(navigation.navigation);
+      const merged = Object.assign(callback(outer1_2[8])());
       return obj;
     },
     getComponent() {
-      return lib(closure_2[9]).default;
+      return lib(outer1_2[9]).default;
     }
   };
   const items = [
-    callback2(closure_5.Screen, obj),
-    callback2(closure_5.Screen, {
+    callback(createNativeStackNavigator.Screen, obj),
+    callback(createNativeStackNavigator.Screen, {
       name: "guild",
       options(navigation) {
-        const obj = { headerLeft: lib(closure_2[6]).getRenderModalBackImage(navigation.navigation) };
+        const obj = { headerLeft: lib(outer1_2[6]).getRenderModalBackImage(navigation.navigation) };
         return obj;
       },
       getComponent() {
-        return lib(closure_2[10]).default;
+        return lib(outer1_2[10]).default;
       }
     })
   ];
   obj.children = items;
-  return callback3(closure_5.Navigator, obj);
+  return callback2(createNativeStackNavigator.Navigator, obj);
 };

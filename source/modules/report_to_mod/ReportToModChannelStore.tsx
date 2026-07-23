@@ -1,46 +1,47 @@
-// Module ID: 11787
-// Function ID: 91511
+// Module ID: 11797
+// Function ID: 91560
 // Name: useReportToModChannelFiltersStore
-// Dependencies: []
+// Dependencies: [621, 3999, 682, 6946, 2]
 // Exports: useShouldShowResolvedFlagsForChannel
 
-// Module 11787 (useReportToModChannelFiltersStore)
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[1]);
+// Module 11797 (useReportToModChannelFiltersStore)
+import keys from "keys";
+import createJSONStorage from "createJSONStorage";
+import createJSONStorage from "createJSONStorage";
+
 let obj = { name: "report-to-mod-channel-storage" };
-const _module2 = require(dependencyMap[1]);
-obj.storage = _module2.createJSONStorage(() => importDefault(dependencyMap[3]));
-obj = _module.create(_module1.persist((arg0, arg1) => {
-  const require = arg0;
-  const importDefault = arg1;
+obj.storage = createJSONStorage.createJSONStorage(() => importDefault(6946));
+obj = keys.create(createJSONStorage.persist((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return {
     channelShowResolvedFlags: {},
     setShowResolvedFlags(arg0, arg1) {
-      return arg0(closure_2[2]).batchUpdates(() => {
-        arg0((channelShowResolvedFlags) => {
+      const callback = arg0;
+      let closure_1 = arg1;
+      return callback(outer1_2[2]).batchUpdates(() => {
+        callback((channelShowResolvedFlags) => {
           let obj = {};
           obj = {};
           const merged = Object.assign(channelShowResolvedFlags.channelShowResolvedFlags);
-          obj[closure_0] = closure_1;
+          obj[outer1_0] = outer1_1;
           obj.channelShowResolvedFlags = obj;
           return obj;
         });
       });
     },
     getShowResolvedFlags(arg0) {
-      const tmp = arg1().channelShowResolvedFlags[arg0];
+      const tmp = callback2().channelShowResolvedFlags[arg0];
       return null == tmp || tmp;
     }
   };
 }, obj));
-const _module3 = require(dependencyMap[4]);
-const result = _module3.fileFinishedImporting("modules/report_to_mod/ReportToModChannelStore.tsx");
+const result = require("batchUpdates").fileFinishedImporting("modules/report_to_mod/ReportToModChannelStore.tsx");
 
 export const useReportToModChannelFiltersStore = obj;
 export const useShouldShowResolvedFlagsForChannel = function useShouldShowResolvedFlagsForChannel(arg0) {
-  const require = arg0;
-  let obj = obj();
-  const importDefault = obj;
+  let closure_0 = arg0;
+  obj = obj();
   if (null == arg0) {
     obj = {
       showResolvedFlags: true,
@@ -53,7 +54,7 @@ export const useShouldShowResolvedFlagsForChannel = function useShouldShowResolv
     const showResolvedFlags = obj.getShowResolvedFlags(arg0);
     obj.showResolvedFlags = null == showResolvedFlags || showResolvedFlags;
     obj.setShowResolvedFlags = function setShowResolvedFlags(arg0) {
-      return obj.setShowResolvedFlags(arg0, arg0);
+      return obj.setShowResolvedFlags(closure_0, arg0);
     };
   }
   return obj;

@@ -1,24 +1,26 @@
-// Module ID: 13888
-// Function ID: 105061
+// Module ID: 14002
+// Function ID: 107217
 // Name: WreathIcon
-// Dependencies: [910753792, 131072, 527826944, 553648128, 2969567232, 4143972354]
+// Dependencies: [31, 33, 689, 3833, 14003, 2]
 // Exports: default
 
-// Module 13888 (WreathIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/quests/native/QuestDock/WreathIcon.tsx");
+// Module 14002 (WreathIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/QuestDock/WreathIcon.tsx");
 
 export default function WreathIcon(color) {
   let INTERACTIVE_TEXT_DEFAULT = color.color;
   if (INTERACTIVE_TEXT_DEFAULT === undefined) {
-    INTERACTIVE_TEXT_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_TEXT_DEFAULT;
+    INTERACTIVE_TEXT_DEFAULT = importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_TEXT_DEFAULT, style: color.style };
+  obj = { source: require(14003) /* registerAsset */, color: INTERACTIVE_TEXT_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(14003) /* registerAsset */, color: INTERACTIVE_TEXT_DEFAULT, style: color.style });
 };

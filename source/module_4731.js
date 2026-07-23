@@ -1,6 +1,6 @@
 // Module ID: 4731
-// Function ID: 41135
-// Dependencies: []
+// Function ID: 41142
+// Dependencies: [4732, 4734]
 
 // Module 4731
 const self = this;
@@ -25,20 +25,18 @@ if (self2) {
         if (callResult) {
           continue;
         } else {
-          let tmp2 = closure_0;
-          let tmp3 = closure_0(arg1, arg0, key10007);
-          // continue
+          let tmp2 = self2;
+          let tmp3 = self2(arg1, arg0, key10007);
+          continue;
         }
         continue;
       }
     };
   }
   const _Object2 = Object;
-  const obj = { value: true };
-  fn(require(dependencyMap[0]), exports);
-  fn(require(dependencyMap[1]), exports);
-  fn(require(dependencyMap[2]), exports);
-  fn(require(dependencyMap[3]), exports);
+  let obj = { value: true };
+  fn(require("module_4732"), exports);
+  fn(require("module_4734"), exports);
 } else {
-  const _Object = Object;
+  let _Object = Object;
 }

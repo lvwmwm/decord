@@ -1,17 +1,19 @@
-// Module ID: 9731
-// Function ID: 75721
+// Module ID: 9738
+// Function ID: 75762
 // Name: useFormattedSKUPrice
-// Dependencies: []
+// Dependencies: [31, 7160, 566, 5621, 2]
 // Exports: useFormattedSKUPrice
 
-// Module 9731 (useFormattedSKUPrice)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
+// Module 9738 (useFormattedSKUPrice)
+import result from "result";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/storefront/native/StorefrontNativeUtils.android.tsx");
 
 export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   sku = sku.sku;
-  let arg1;
-  let importDefault;
+  let _require;
+  let stateFromStores;
   let tmp2;
   if (null != sku) {
     const googleSkuIds = sku.googleSkuIds;
@@ -23,26 +25,25 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
   if (null != tmp2) {
     tmp3 = tmp2;
   }
-  arg1 = tmp3;
-  const items = [tmp3];
+  _require = tmp3;
+  let items = [tmp3];
   const effect = React.useEffect(() => {
-    if (null != tmp3) {
-      const items = [tmp3];
-      const inAppSkus = tmp3(closure_2[1]).loadInAppSkus(items);
-      const obj = tmp3(closure_2[1]);
+    if (null != _undefined) {
+      const items = [_undefined];
+      const inAppSkus = _undefined(outer1_2[1]).loadInAppSkus(items);
+      const obj = _undefined(outer1_2[1]);
     }
   }, items);
-  const items1 = [importDefault(dependencyMap[3])];
+  const items1 = [stateFromStores(5621)];
   const items2 = [tmp3];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items1, () => {
+  stateFromStores = _require(566).useStateFromStores(items1, () => {
     let product = null;
-    if (null != tmp3) {
-      product = stateFromStores(closure_2[3]).getProduct(tmp3);
-      const obj = stateFromStores(closure_2[3]);
+    if (null != c0) {
+      product = stateFromStores(outer1_2[3]).getProduct(c0);
+      const obj = stateFromStores(outer1_2[3]);
     }
     return product;
   }, items2);
-  importDefault = stateFromStores;
   const items3 = [stateFromStores];
   return React.useMemo(() => {
     let priceString;
@@ -50,9 +51,9 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
       priceString = stateFromStores.priceString;
     }
     if (null != priceString) {
-      let obj = { normalPrice: stateFromStores.priceString, userPrice: stateFromStores.priceString };
+      let obj = { normalPrice: stateFromStores.priceString, discountedPrice: null, discountPercent: null, userPrice: stateFromStores.priceString };
     } else {
-      obj = { "Null": true, "Null": 5, "Null": true, "Null": true };
+      obj = { normalPrice: null, discountedPrice: null, discountPercent: null, userPrice: null };
     }
     return obj;
   }, items3);

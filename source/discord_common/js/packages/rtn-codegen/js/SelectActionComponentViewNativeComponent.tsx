@@ -1,18 +1,18 @@
-// Module ID: 14570
-// Function ID: 109786
+// Module ID: 14685
+// Function ID: 111950
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [110, 42, 2]
 
-// Module 14570 (__INTERNAL_VIEW_CONFIG)
+// Module 14685 (__INTERNAL_VIEW_CONFIG)
+import weakSet from "weakSet";
+import get from "get";
+
 let obj = { uiViewClassName: "SelectActionComponentView", directEventTypes: { topTap: { registrationName: "onTap" } } };
 obj = { model: true };
-const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({ onTap: true }));
+const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onTap: true }));
 obj.validAttributes = obj;
-const _module1 = require(dependencyMap[1]);
-const value = _module1.get("SelectActionComponentView", () => obj);
-const _module2 = require(dependencyMap[2]);
-const result = _module2.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/SelectActionComponentViewNativeComponent.tsx");
+const value = get.get("SelectActionComponentView", () => obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/SelectActionComponentViewNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

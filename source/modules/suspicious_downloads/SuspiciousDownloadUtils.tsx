@@ -1,25 +1,27 @@
-// Module ID: 12101
-// Function ID: 93305
+// Module ID: 12215
+// Function ID: 95456
 // Name: set
-// Dependencies: []
+// Dependencies: [12216, 1443, 2]
 // Exports: isSuspiciousDownload
 
-// Module 12101 (set)
-const set = new Set(importDefault(dependencyMap[0]));
-const obj = {};
-const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
-obj.github.com = regExp;
-const regExp1 = new RegExp("/downloads\\S*/[^/]*");
-obj.bitbucket.org = regExp1;
-const regExp2 = new RegExp("/downloads\\S*/[^/]*");
-obj.gitlab.com = regExp2;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadUtils.tsx");
+// Module 12215 (set)
+import set from "set";
 
-export const isSuspiciousDownload = function isSuspiciousDownload(closure_0) {
+let set = new Set(require("module_12216"));
+let obj = {};
+const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
+obj["github.com"] = regExp;
+const regExp1 = new RegExp("/downloads\\S*/[^/]*");
+obj["bitbucket.org"] = regExp1;
+const regExp2 = new RegExp("/downloads\\S*/[^/]*");
+obj["gitlab.com"] = regExp2;
+const result = set.fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadUtils.tsx");
+
+export const isSuspiciousDownload = function isSuspiciousDownload(outer1_0) {
   let hostname;
   let pathname;
-  const obj = importDefault(dependencyMap[1]);
-  let toURLSafeResult = obj.toURLSafe(closure_0);
+  const obj = importDefault(1443);
+  let toURLSafeResult = obj.toURLSafe(outer1_0);
   if (null == toURLSafeResult) {
     toURLSafeResult = {};
   }
@@ -75,6 +77,11 @@ export const isSuspiciousDownload = function isSuspiciousDownload(closure_0) {
             let tmp16 = tmp8;
             let diff1 = tmp8 - 1;
             tmp8 = diff1;
+            if (diff1 >= 0) {
+              continue;
+            } else {
+              break label0;
+            }
             break label0;
           }
           let tmp18 = num2;
@@ -83,7 +90,7 @@ export const isSuspiciousDownload = function isSuspiciousDownload(closure_0) {
             break;
           } else {
             tmp6 = parts[tmp8 - num2];
-            // break
+            break;
           }
         }
         let tmp20 = tmp6;

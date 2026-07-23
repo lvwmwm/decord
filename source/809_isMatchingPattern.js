@@ -1,18 +1,20 @@
 // Module ID: 809
-// Function ID: 9071
+// Function ID: 9072
 // Name: isMatchingPattern
-// Dependencies: [4294967295, 0]
+// Dependencies: [804, 810]
 
 // Module 809 (isMatchingPattern)
+const require = arg1;
+const dependencyMap = arg6;
 function isMatchingPattern(arr, test) {
-  const tmp2 = !test(arg6[0]).isString(arr);
+  const tmp2 = !require(804) /* isBuiltin */.isString(arr);
   if (tmp2) {
     return !tmp2;
   } else {
     if (obj2.isRegExp(test)) {
       let isMatch = test.test(arr);
     } else {
-      const tmp7 = !test(arg6[0]).isString(test);
+      const tmp7 = !require(804) /* isBuiltin */.isString(test);
       isMatch = !tmp7;
       if (!tmp7) {
         if (tmp) {
@@ -21,9 +23,9 @@ function isMatchingPattern(arr, test) {
           hasItem = arr.includes(test);
         }
       }
-      const obj3 = test(arg6[0]);
+      const obj3 = require(804) /* isBuiltin */;
     }
-    const obj2 = test(arg6[0]);
+    obj2 = require(804) /* isBuiltin */;
   }
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
@@ -38,16 +40,16 @@ arg5.safeJoin = function safeJoin(arg0, arg1) {
         let tmp2 = arg0;
         let tmp3 = num2;
         let tmp4 = arr[num2];
-        let tmp5 = arg1;
-        let tmp6 = arg6;
-        let obj = arg1(arg6[0]);
+        let tmp5 = require;
+        let tmp6 = dependencyMap;
+        let obj = require(804) /* isBuiltin */;
         let tmp7 = tmp4;
         let tmp8 = items;
         let push = items.push;
         if (obj.isVueViewModel(tmp4)) {
-          let tmp11 = arg1;
-          let tmp12 = arg6;
-          let obj2 = arg1(arg6[1]);
+          let tmp11 = require;
+          let tmp12 = dependencyMap;
+          let obj2 = require(810) /* createStackParser */;
           let tmp13 = tmp4;
           arr = push(obj2.getVueInternalName(tmp4));
         } else {
@@ -109,13 +111,13 @@ arg5.snipLine = function snipLine(arr) {
   }
 };
 arg5.stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   let closure_1 = arguments.length > 2 && undefined !== arguments[2] && arguments[2];
   if (arguments.length > 1) {
     if (undefined !== arguments[1]) {
       let items = arguments[1];
     }
-    return items.some((arg0) => callback(arg0, arg0, closure_1));
+    return items.some((arg0) => outer1_2(closure_0, arg0, closure_1));
   }
   items = [];
 };

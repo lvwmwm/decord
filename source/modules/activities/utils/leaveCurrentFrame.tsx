@@ -1,17 +1,18 @@
-// Module ID: 10477
-// Function ID: 81180
+// Module ID: 10487
+// Function ID: 81230
 // Name: leaveCurrentFrame
-// Dependencies: []
+// Dependencies: [10479, 10488, 2]
 // Exports: leaveCurrentFrame
 
-// Module 10477 (leaveCurrentFrame)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/leaveCurrentFrame.tsx");
+// Module 10487 (leaveCurrentFrame)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/activities/utils/leaveCurrentFrame.tsx");
 
 export const leaveCurrentFrame = function leaveCurrentFrame() {
-  const connectedFrame = connectedFrame.getConnectedFrame();
+  connectedFrame = connectedFrame.getConnectedFrame();
   if (null != connectedFrame) {
-    let obj = importDefault(dependencyMap[1])();
+    let obj = importDefault(10488)();
     obj = { applicationId: connectedFrame.applicationId };
     obj.leaveFrame(obj);
   }

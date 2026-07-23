@@ -1,24 +1,26 @@
-// Module ID: 10687
-// Function ID: 83295
+// Module ID: 10697
+// Function ID: 83344
 // Name: SpeedometerIcon
-// Dependencies: []
+// Dependencies: [31, 33, 689, 3833, 10698, 2]
 // Exports: SpeedometerIcon
 
-// Module 10687 (SpeedometerIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/SpeedometerIcon.tsx");
+// Module 10697 (SpeedometerIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/SpeedometerIcon.tsx");
 
 export const SpeedometerIcon = function SpeedometerIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10698) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(10698) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

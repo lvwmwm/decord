@@ -1,104 +1,105 @@
-// Module ID: 11479
-// Function ID: 89399
-// Dependencies: []
+// Module ID: 11489
+// Function ID: 89449
+// Dependencies: [31, 27, 4122, 11105, 653, 33, 4130, 9162, 3950, 11490, 1212, 4324, 9152, 11491, 5119, 9145, 566, 11481, 5453, 11492, 2]
 
-// Module 11479
-const Image = arg1(dependencyMap[1]).Image;
-let closure_4 = importDefault(dependencyMap[2]);
-const TextAreaCta = arg1(dependencyMap[3]).TextAreaCta;
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const jsx = arg1(dependencyMap[5]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_8 = arg1(dependencyMap[6]).createStyles({ noticeIcon: {}, lottieAnimation: { hideWhenScrolling: 0, autoCapitalize: -1048576 } });
-const obj2 = arg1(dependencyMap[6]);
-const memoResult = importAllResult.memo(function ChatInputGuardGuildMemberVerification(guildId) {
+// Module 11489
+import { Image } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { TextAreaCta } from "TextAreaCta";
+import { AnalyticEvents } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ noticeIcon: { height: 36, width: 36, resizeMode: "contain" }, lottieAnimation: { height: 36, width: 36 } });
+const memoResult = require("result").memo(function ChatInputGuardGuildMemberVerification(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const tmp = callback();
-  let obj = arg1(dependencyMap[7]);
+  let obj = guildId(9162);
   const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (null != currentUserGuildJoinRequest) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  if (arg1(dependencyMap[8]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-    let tmp7 = importDefault(dependencyMap[9]);
-    const intl2 = arg1(dependencyMap[10]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[10]).t.lk30cY);
+  if (guildId(3950).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+    let tmp7 = importDefault(11490);
+    const intl2 = guildId(1212).intl;
+    let stringResult = intl2.string(guildId(1212).t.lk30cY);
     class A {
       constructor() {
-        obj = closure_1(closure_2[11]);
-        obj = { cta_type: closure_5.MEMBER_VERIFICATION_REJECTED };
-        trackWithMetadataResult = obj.trackWithMetadata(closure_6.TEXT_AREA_CTA_CLICKED, obj);
-        obj3 = guildId(closure_2[12]);
+        obj = outer1_1(outer1_2[11]);
+        obj = { cta_type: outer1_5.MEMBER_VERIFICATION_REJECTED };
+        trackWithMetadataResult = obj.trackWithMetadata(outer1_6.TEXT_AREA_CTA_CLICKED, obj);
+        obj3 = guildId(outer1_2[12]);
         obj1 = { guildId, canWithdraw: false };
         result = obj3.openMemberVerificationRejectedAlert(obj1);
         return;
       }
     }
-  } else if (arg1(dependencyMap[8]).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-    tmp7 = importDefault(dependencyMap[13]);
+  } else if (guildId(3950).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+    tmp7 = importDefault(11491);
     class A {
       constructor() {
-        obj = closure_1(closure_2[11]);
-        obj = { cta_type: closure_5.MEMBER_VERIFICATION_CONFIRMED };
-        trackWithMetadataResult = obj.trackWithMetadata(closure_6.TEXT_AREA_CTA_CLICKED, obj);
-        obj3 = guildId(closure_2[12]);
+        obj = outer1_1(outer1_2[11]);
+        obj = { cta_type: outer1_5.MEMBER_VERIFICATION_CONFIRMED };
+        trackWithMetadataResult = obj.trackWithMetadata(outer1_6.TEXT_AREA_CTA_CLICKED, obj);
+        obj3 = guildId(outer1_2[12]);
         obj1 = { guildId };
-        intl = guildId(closure_2[10]).intl;
-        obj1.subtitleText = intl.string(guildId(closure_2[10]).t.13tjTU);
+        intl = guildId(outer1_2[10]).intl;
+        obj1.subtitleText = intl.string(guildId(outer1_2[10]).t["13tjTU"]);
         result = obj3.openMemberVerificationCancelPendingAlert(obj1);
         return;
       }
     }
-    stringResult = obj1.string(arg1(dependencyMap[10]).t.5iLvSx);
-    const tmp8 = jsx(arg1(dependencyMap[14]).XSmallIcon, {});
+    stringResult = obj1.string(guildId(1212).t["5iLvSx"]);
+    const tmp8 = jsx(guildId(5119).XSmallIcon, {});
   } else {
-    const intl = arg1(dependencyMap[10]).intl;
-    stringResult = intl.string(arg1(dependencyMap[10]).t.rEBKvg);
+    let intl = guildId(1212).intl;
+    stringResult = intl.string(guildId(1212).t.rEBKvg);
     class A {
       constructor() {
-        obj = closure_1(closure_2[11]);
-        obj = { cta_type: closure_5.MEMBER_VERIFICATION };
-        trackWithMetadataResult = obj.trackWithMetadata(closure_6.TEXT_AREA_CTA_CLICKED, obj);
-        obj3 = guildId(closure_2[15]);
+        obj = outer1_1(outer1_2[11]);
+        obj = { cta_type: outer1_5.MEMBER_VERIFICATION };
+        trackWithMetadataResult = obj.trackWithMetadata(outer1_6.TEXT_AREA_CTA_CLICKED, obj);
+        obj3 = guildId(outer1_2[15]);
         result = obj3.openMemberVerificationModal(guildId);
         return;
       }
     }
   }
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[16]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = guildId(566).useStateFromStores(items, () => outer1_4.useReducedMotion);
   obj = { type: "simple-action" };
-  const obj3 = arg1(dependencyMap[16]);
+  const obj3 = guildId(566);
   const tmp17 = jsx;
   if (null != tmp7) {
     obj = { style: tmp.noticeIcon, source: tmp7 };
-    let tmp23 = <Image {...obj} />;
+    let tmp23 = <Image style={tmp.noticeIcon} source={tmp7} />;
   } else {
-    const obj1 = { style: tmp.lottieAnimation };
+    obj1 = { style: tmp.lottieAnimation };
     class A {
       constructor() {
-        obj = closure_1(closure_2[11]);
-        obj = { cta_type: closure_5.MEMBER_VERIFICATION };
-        trackWithMetadataResult = obj.trackWithMetadata(closure_6.TEXT_AREA_CTA_CLICKED, obj);
-        obj3 = guildId(closure_2[15]);
+        obj = outer1_1(outer1_2[11]);
+        obj = { cta_type: outer1_5.MEMBER_VERIFICATION };
+        trackWithMetadataResult = obj.trackWithMetadata(outer1_6.TEXT_AREA_CTA_CLICKED, obj);
+        obj3 = guildId(outer1_2[15]);
         result = obj3.openMemberVerificationModal(guildId);
         return;
       }
     }
     obj1.autoPlay = !stateFromStores;
-    tmp23 = jsx(importDefault(dependencyMap[18]), obj1);
-    const tmp22 = importDefault(dependencyMap[18]);
+    tmp23 = jsx(importDefault(5453), { style: tmp.lottieAnimation });
+    const tmp22 = importDefault(5453);
   }
   obj.icon = tmp23;
   obj.message = stringResult;
   obj.actionIcon = tmp8;
-  const intl3 = arg1(dependencyMap[10]).intl;
-  obj.actionLabel = intl3.string(arg1(dependencyMap[10]).t.r8/DT+);
+  const intl3 = guildId(1212).intl;
+  obj.actionLabel = intl3.string(guildId(1212).t["r8/DT+"]);
   obj.actionOnPress = A;
-  return tmp17(importDefault(dependencyMap[17]), obj);
+  return tmp17(importDefault(11481), obj);
 });
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardGuildMemberVerification.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardGuildMemberVerification.tsx");
 
 export default memoResult;

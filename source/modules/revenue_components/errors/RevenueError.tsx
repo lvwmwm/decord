@@ -1,24 +1,25 @@
-// Module ID: 8198
-// Function ID: 64850
+// Module ID: 8204
+// Function ID: 64887
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 162, 2]
 
-// Module 8198 (_isNativeReflectConstruct)
+// Module 8204 (_isNativeReflectConstruct)
+import _defineProperties from "_defineProperties";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _defineProperties;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = (arg0) => {
+const tmp2 = ((arg0) => {
   class RevenueError {
     constructor(arg0) {
       self = this;
@@ -34,16 +35,16 @@ const tmp2 = (arg0) => {
       if (flag === undefined) {
         flag = false;
       }
-      tmp2 = closure_1(self, RevenueError);
+      tmp2 = outer1_1(self, RevenueError);
       items = [];
       items[0] = arg0.message;
-      obj = closure_3(RevenueError);
-      tmp3 = closure_2;
-      if (closure_5()) {
+      obj = outer1_3(RevenueError);
+      tmp3 = outer1_2;
+      if (outer1_5()) {
         tmp5 = globalThis;
         _Reflect = Reflect;
-        tmp6 = closure_3;
-        constructResult = Reflect.construct(obj, items, closure_3(self).constructor);
+        tmp6 = outer1_3;
+        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -55,10 +56,9 @@ const tmp2 = (arg0) => {
       return tmp3Result;
     }
   }
-  const callback = RevenueError;
-  callback2(RevenueError, arg0);
-  return callback(RevenueError);
-}(importDefault(dependencyMap[5])(Error));
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/revenue_components/errors/RevenueError.tsx");
+  callback(RevenueError, arg0);
+  return RevenueError(RevenueError);
+})(require("_wrapNativeSuper")(Error));
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/revenue_components/errors/RevenueError.tsx");
 
 export const RevenueError = tmp2;

@@ -1,39 +1,43 @@
-// Module ID: 13543
-// Function ID: 102720
+// Module ID: 13657
+// Function ID: 104876
 // Name: SafetyHubAccountStandingSubwayMarker
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1212, 4126, 2]
 // Exports: default
 
-// Module 13543 (SafetyHubAccountStandingSubwayMarker)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: {} };
-obj = { -77157546: "shouldUseReanimated", 1448895136: "Array", 1314541995: "isArray", 911521633: "Map", padding: importDefault(dependencyMap[4]).space.PX_4, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
-obj.marker = obj;
-const obj1 = { -1613805272: null, 1375445090: "72525f866a43ec6d6f9f30f81847a5d3", -262995365: "ic_star_filled", 1183819946: "png", 651842187: true, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-obj.empty = obj1;
-obj.label = { textAlign: "center" };
-obj.firstOption = {};
-obj.lastOption = { -262995365: "\u{1F64C}", 1183819946: true };
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/safety_hub/native/SafetyHubAccountStandingSubwayMarker.tsx");
+// Module 13657 (SafetyHubAccountStandingSubwayMarker)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { width: 56, display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center", rowGap: 8, flex: 1 } };
+_createForOfIteratorHelperLoose = { display: "flex", justifyContent: "center", alignItems: "center", zIndex: 1, padding: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.marker = _createForOfIteratorHelperLoose;
+let obj1 = { display: "flex", borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, width: "100%", height: "100%" };
+_createForOfIteratorHelperLoose.empty = obj1;
+_createForOfIteratorHelperLoose.label = { textAlign: "center" };
+_createForOfIteratorHelperLoose.firstOption = { alignItems: "flex-start", textAlign: "left" };
+_createForOfIteratorHelperLoose.lastOption = { alignItems: "flex-end", textAlign: "right" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/native/SafetyHubAccountStandingSubwayMarker.tsx");
 
 export default function SafetyHubAccountStandingSubwayMarker(arg0) {
   let index;
   let isSelected;
   let numOptions;
   let onLayout;
+  let require;
   let selectedIcon;
   let size;
   let status;
-  ({ selectedIcon, style: closure_0, isSelected } = arg0);
-  const importDefault = isSelected;
+  ({ selectedIcon, style: require, isSelected } = arg0);
   ({ index, size, numOptions } = arg0);
   ({ status, onLayout } = arg0);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
   let obj = {};
   const merged = Object.assign(tmp.container);
@@ -48,12 +52,12 @@ export default function SafetyHubAccountStandingSubwayMarker(arg0) {
     obj1["height"] = size;
     let num = 0;
     if (tmp3) {
-      num = -importDefault(dependencyMap[4]).space.PX_4;
+      num = -isSelected(689).space.PX_4;
     }
     obj1["marginLeft"] = num;
     let num3 = 0;
     if (index === numOptions - 1) {
-      num3 = -importDefault(dependencyMap[4]).space.PX_4;
+      num3 = -isSelected(689).space.PX_4;
     }
     obj1["marginRight"] = num3;
     obj.style = obj1;
@@ -64,19 +68,19 @@ export default function SafetyHubAccountStandingSubwayMarker(arg0) {
     const tmp11 = View;
   }
   const items = [selectedIcon, ];
-  const intl = arg1(dependencyMap[5]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   items[1] = intl.format(status, {
     hook(children) {
       if (isSelected) {
         let obj = {};
-        obj = { color: lib.color };
+        obj = { color: color.color };
         obj.style = obj;
         obj.variant = "text-xxs/bold";
         obj.children = children;
       } else {
-        obj = { "Null": "construct", "Null": "type", style: tmp.label, children };
+        obj = { color: "interactive-text-default", variant: "text-xxs/normal", style: tmp.label, children };
       }
-      return closure_4(lib(closure_4[6]).Text, obj, arg1);
+      return outer1_4(outer1_0(outer1_4[6]).Text, obj, arg1);
     }
   });
   obj.children = items;

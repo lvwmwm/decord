@@ -1,17 +1,17 @@
 // Module ID: 1493
-// Function ID: 17219
+// Function ID: 17220
 // Name: formatToList
-// Dependencies: []
+// Dependencies: [57]
 
 // Module 1493 (formatToList)
-let closure_0 = importDefault(dependencyMap[0]);
+import _slicedToArray from "_slicedToArray";
+
 function formatToList(found) {
   const mapped = found.map((arg0) => "- " + arg0);
   return mapped.join("\n");
 }
 function validatePathConfig(config) {
-  const items = [null, null];
-  let closure_0 = items;
+  const items = ["initialRouteName", "screens"];
   const tmp = arguments.length > 1 && undefined !== arguments[1];
   let tmp2 = !tmp;
   if (tmp) {
@@ -31,10 +31,10 @@ function validatePathConfig(config) {
   } else if (config.screens) {
     const _Object = Object;
     const entries = Object.entries(config.screens);
-    const item = entries.forEach((frames) => {
-      const tmp2 = items(frames, 2)[1];
+    const item = entries.forEach((closure_2) => {
+      const tmp2 = items(closure_2, 2)[1];
       if ("string" !== typeof tmp2) {
-        callback(tmp2, false);
+        outer1_2(tmp2, false);
       }
     });
   }

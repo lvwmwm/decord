@@ -1,49 +1,52 @@
-// Module ID: 12262
-// Function ID: 94042
+// Module ID: 12376
+// Function ID: 96193
 // Name: ProgressWheel
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 3834, 689, 12368, 5085, 12377, 8018, 12378, 2]
 // Exports: default
 
-// Module 12262 (ProgressWheel)
-const View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = _module);
+// Module 12376 (ProgressWheel)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 let closure_6 = 2 * Math.PI * 77;
-const _module1 = require(dependencyMap[2]);
-let closure_7 = _module1.createStyles({ progressCircleContainer: {}, progressCircleImage: {}, glowImage: {} });
-const _module2 = require(dependencyMap[10]);
-const result = _module2.fileFinishedImporting("modules/premium/referral_program/native/ProgressWheel.tsx");
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ progressCircleContainer: { width: 160, height: 160, alignItems: "center", justifyContent: "center", marginTop: 24 }, progressCircleImage: { position: "absolute", width: 93, height: 93, borderRadius: 46.5 }, glowImage: { position: "absolute", width: 180, height: 180 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/referral_program/native/ProgressWheel.tsx");
 
 export default function ProgressWheel(nReferralsSent) {
   nReferralsSent = nReferralsSent.nReferralsSent;
   const tmp = callback3();
-  let obj = require(dependencyMap[3]);
-  const token = obj.useToken(importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG);
-  let obj1 = require(dependencyMap[3]);
+  let obj = require(3834) /* map */;
+  const token = obj.useToken(importDefault(689).colors.BACKGROUND_MOD_STRONG);
+  let obj1 = require(3834) /* map */;
   obj = { style: tmp.progressCircleContainer };
-  const token1 = obj1.useToken(importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH);
-  let tmp6 = nReferralsSent === require(dependencyMap[5]).MAX_REFERRALS_SENT;
+  const token1 = obj1.useToken(importDefault(689).colors.BACKGROUND_SURFACE_HIGH);
+  let tmp6 = nReferralsSent === require(12368) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT;
   if (tmp6) {
-    obj = { source: importDefault(dependencyMap[7]), style: tmp.glowImage };
-    tmp6 = callback(importDefault(dependencyMap[6]), obj);
-    const tmp10 = importDefault(dependencyMap[6]);
+    obj = { source: importDefault(12377), style: tmp.glowImage };
+    tmp6 = callback(importDefault(5085), obj);
+    const tmp10 = importDefault(5085);
   }
   const items = [tmp6, , ];
-  obj1 = { "Null": null, "Null": 2 };
-  const obj2 = { <string:629464489>: "/assets/images/native/premium/illustrations", <string:380965795>: 314, <string:116544181>: 195, <string:1644872196>: null, <string:3126628718>: "f774e43fd38da2d8b6e5bdabed98e8b8", stroke: token, fill: token1 };
-  const items1 = [callback(require(dependencyMap[8]).Circle, obj2), callback(require(dependencyMap[8]).Circle, { strokeDasharray: closure_6, strokeDashoffset: closure_6 * (1 - 33.3 * nReferralsSent / 100) })];
+  obj1 = { width: 160, height: 160 };
+  const obj2 = { cx: 80, cy: 80, r: 77, stroke: token, strokeWidth: 6, fill: token1 };
+  const items1 = [callback(require(8018) /* inlineStyles */.Circle, obj2), ];
+  const obj3 = { cx: 80, cy: 80, r: 77, stroke: "#53ac66", strokeWidth: 6, fill: "transparent", strokeDasharray: closure_6, strokeDashoffset: closure_6 * (1 - 33.3 * nReferralsSent / 100), strokeLinecap: "round", rotation: -90, origin: "80, 80" };
+  items1[1] = callback(require(8018) /* inlineStyles */.Circle, obj3);
   obj1.children = items1;
-  items[1] = callback2(importDefault(dependencyMap[8]), obj1);
+  items[1] = callback2(importDefault(8018), obj1);
   const obj4 = {};
   const obj5 = {};
-  const obj3 = { strokeDasharray: closure_6, strokeDashoffset: closure_6 * (1 - 33.3 * nReferralsSent / 100) };
-  const tmp11 = importDefault(dependencyMap[8]);
+  const tmp11 = importDefault(8018);
   const tmp4 = callback2;
   const tmp5 = View;
-  obj5.uri = importDefault(dependencyMap[9]);
+  obj5.uri = importDefault(12378);
   obj4.source = obj5;
   obj4.style = tmp.progressCircleImage;
-  items[2] = callback(importDefault(dependencyMap[6]), obj4);
+  items[2] = callback(importDefault(5085), obj4);
   obj.children = items;
   return tmp4(tmp5, obj);
 };

@@ -1,46 +1,49 @@
-// Module ID: 10323
-// Function ID: 79708
+// Module ID: 10336
+// Function ID: 79782
 // Name: AlertNotification
-// Dependencies: []
+// Dependencies: [31, 27, 33, 5515, 7873, 689, 4130, 10239, 1212, 4138, 10310, 7576, 10254, 2]
 // Exports: default
 
-// Module 10323 (AlertNotification)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-const obj = { shape: arg1(dependencyMap[4]).CutoutShape.RoundedRect, x: arg1(dependencyMap[3]).ImageSizes[arg1(undefined, dependencyMap[3]).GuildIconSizes.NORMAL] - -6 - 24, cornerRadius: importDefault(dependencyMap[5]).radii.sm };
-const tmp2 = arg1(dependencyMap[2]);
-let closure_9 = arg1(dependencyMap[6]).createStyles({ warningBadge: { backgroundColor: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", flexDirection: null, justifyContent: null, alignItems: null, overflow: true, zIndex: false, minHeight: true }, warningIcon: { "Null": null, "Null": null } });
-const obj2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/in_app_notifications/native/AlertNotification.tsx");
+// Module 10336 (AlertNotification)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+let obj = { shape: require("SolidCutout").CutoutShape.RoundedRect, x: require("makeSizeStyle").ImageSizes[require("makeSizeStyle").GuildIconSizes.NORMAL] - -6 - 24, y: -6, width: 24, height: 24, cornerRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ warningBadge: { position: "absolute", top: -6, right: -6, width: 24, height: 24, alignItems: "center", justifyContent: "center" }, warningIcon: { width: 16, height: 16 } });
+const result = require("jsxProd").fileFinishedImporting("modules/in_app_notifications/native/AlertNotification.tsx");
 
 export default function AlertNotification(notification) {
   notification = notification.notification;
   const channel = notification.channel;
-  const arg1 = channel;
   const guild = notification.guild;
-  const importDefault = guild;
   const tmp = callback3();
-  let obj = arg1(dependencyMap[7]);
+  let obj = channel(10239);
   const incidentData = obj.useGuildIncidentsState(notification.key).incidentData;
   let raidDetectedAt;
   if (null != incidentData) {
     raidDetectedAt = incidentData.raidDetectedAt;
   }
   if (null != raidDetectedAt) {
-    const intl2 = arg1(dependencyMap[8]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[8]).t.Mn3elp);
+    const intl2 = channel(1212).intl;
+    let stringResult = intl2.string(channel(1212).t.Mn3elp);
   } else {
-    const intl = arg1(dependencyMap[8]).intl;
-    stringResult = intl.string(arg1(dependencyMap[8]).t.evRhwg);
+    let intl = channel(1212).intl;
+    stringResult = intl.string(channel(1212).t.evRhwg);
   }
   const items = [guild];
   const items1 = [channel.id];
   const memo = React.useMemo(() => {
     const obj = { type: "simple" };
     let name;
-    const intl = channel(closure_2[8]).intl;
-    obj.text = intl.string(channel(closure_2[8]).t.2IY4YN);
+    const intl = channel(outer1_2[8]).intl;
+    obj.text = intl.string(channel(outer1_2[8]).t["2IY4YN"]);
     if (null != guild) {
       name = guild.name;
     }
@@ -48,24 +51,24 @@ export default function AlertNotification(notification) {
     return obj;
   }, items);
   const callback = React.useCallback(() => {
-    channel(closure_2[9]).transitionToChannel(channel.id, { navigationReplace: true });
+    channel(outer1_2[9]).transitionToChannel(channel.id, { navigationReplace: true });
   }, items1);
   obj = {};
   obj = {};
   const obj1 = { cutouts: items2 };
-  const items2 = [obj];
-  obj1.children = callback(importDefault(dependencyMap[3]), { guild, selected: false });
-  const items3 = [callback(importDefault(dependencyMap[4]), obj1), ];
+  items2 = [obj];
+  obj1.children = callback(guild(5515), { guild, selected: false });
+  const items3 = [callback(guild(7873), obj1), ];
   const obj2 = { style: tmp.warningBadge };
-  const obj3 = { style: tmp.warningIcon, color: importDefault(dependencyMap[5]).colors.ICON_FEEDBACK_WARNING };
-  obj2.children = callback(arg1(dependencyMap[11]).WarningIcon, obj3);
+  const obj3 = { style: tmp.warningIcon, color: guild(689).colors.ICON_FEEDBACK_WARNING };
+  obj2.children = callback(channel(7576).WarningIcon, obj3);
   items3[1] = callback(View, obj2);
   obj.children = items3;
   obj.icon = callback2(closure_6, obj);
   obj.header = memo;
   const obj4 = { text: stringResult };
-  obj.children = callback(arg1(dependencyMap[12]).SystemMessageText, obj4);
+  obj.children = callback(channel(10254).SystemMessageText, obj4);
   obj.onPress = callback;
   obj.notification = notification;
-  return callback(arg1(dependencyMap[10]).NotificationPressable, obj);
+  return callback(channel(10310).NotificationPressable, obj);
 };

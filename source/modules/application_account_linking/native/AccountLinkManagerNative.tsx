@@ -1,9 +1,17 @@
-// Module ID: 16465
-// Function ID: 127212
+// Module ID: 16582
+// Function ID: 129386
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 4096, 15624, 2]
 
-// Module 16465 (_isNativeReflectConstruct)
+// Module 16582 (_isNativeReflectConstruct)
+import removeInAppBrowserCloseSubscription from "removeInAppBrowserCloseSubscription";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,42 +22,36 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  arg1 = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_6(closure_5(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const dependencyMap = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let tmp2 = (AccountLinkManager) => {
+let tmp2 = ((AccountLinkManager) => {
   class AccountLinkManagerNative {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_2(this, AccountLinkManagerNative);
+      tmp = outer1_2(this, AccountLinkManagerNative);
       items1 = [...items];
-      obj = closure_5(AccountLinkManagerNative);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      obj = outer1_5(AccountLinkManagerNative);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items1, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -59,14 +61,13 @@ let tmp2 = (AccountLinkManager) => {
       return tmp2Result;
     }
   }
-  const arg1 = AccountLinkManagerNative;
   callback2(AccountLinkManagerNative, AccountLinkManager);
   let obj = {
     key: "_initialize",
     value() {
-      const AccountLinkManagerNative = this;
-      callback4(AccountLinkManagerNative, "_initialize", this, 3)([]);
-      this.unsubscribeBrowser = AccountLinkManagerNative(closure_1[6]).subscribeToIsInAppBrowserOpen((isBrowserOpen) => {
+      const self = this;
+      outer1_9(self, "_initialize", this, 3)([]);
+      this.unsubscribeBrowser = AccountLinkManagerNative(outer1_1[6]).subscribeToIsInAppBrowserOpen((isBrowserOpen) => {
         self.isBrowserOpen = isBrowserOpen;
         if (arg1) {
           self.evaluatePending();
@@ -74,12 +75,12 @@ let tmp2 = (AccountLinkManager) => {
       });
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "_terminate",
     value() {
       const self = this;
-      callback4(AccountLinkManagerNative, "_terminate", this, 3)([]);
+      outer1_9(AccountLinkManagerNative, "_terminate", this, 3)([]);
       const unsubscribeBrowser = this.unsubscribeBrowser;
       if (null != unsubscribeBrowser) {
         unsubscribeBrowser.call(self);
@@ -93,14 +94,14 @@ let tmp2 = (AccountLinkManager) => {
     value() {
       const self = this;
       if (!this.isBrowserOpen) {
-        callback4(AccountLinkManagerNative, "evaluatePending", self, 3)([]);
+        outer1_9(AccountLinkManagerNative, "evaluatePending", self, 3)([]);
       }
     }
   };
   items[2] = obj;
   return callback(AccountLinkManagerNative, items);
-}(arg1(dependencyMap[7]).AccountLinkManager);
+})(require("_createForOfIteratorHelperLoose").AccountLinkManager);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/application_account_linking/native/AccountLinkManagerNative.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/application_account_linking/native/AccountLinkManagerNative.tsx");
 
 export default tmp2;

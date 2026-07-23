@@ -1,14 +1,27 @@
-// Module ID: 16320
-// Function ID: 125906
+// Module ID: 16437
+// Function ID: 128080
 // Name: getComponentPropsForScreen
-// Dependencies: []
+// Dependencies: [57, 31, 16424, 14094, 33, 4130, 44, 5788, 7607, 1212, 16438, 16423, 16439, 16459, 16462, 16464, 1557, 4337, 5450, 5519, 16466, 2]
 // Exports: default
 
-// Module 16320 (getComponentPropsForScreen)
+// Module 16437 (getComponentPropsForScreen)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { GuildRoleSubscriptionsTierScenes as closure_7 } from "MAX_SUBSCRIPTION_TIERS";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getComponentPropsForScreen(arg0, arg1, arg2) {
   let obj = arg1[arg0];
   let runtimeProps;
-  importDefault(dependencyMap[6])(null != obj, "Props not provided in screen map for scene " + arg0);
+  importDefault(44)(null != obj, "Props not provided in screen map for scene " + arg0);
   if (null != obj.getRuntimeProps) {
     runtimeProps = obj.getRuntimeProps();
   }
@@ -38,22 +51,22 @@ function getScreenPropsForScene(arg0, arg1) {
   }
 }
 function getHeaderRight(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return () => {
     const obj = {
-      source: arg1(closure_2[8]),
+      source: callback2(outer1_2[8]),
       onPress() {
-        return callback(closure_0);
+        return outer1_1(outer1_0);
       }
     };
-    const intl = arg0(closure_2[9]).intl;
-    obj.accessibilityLabel = intl.string(arg0(closure_2[9]).t.cpT0Cq);
-    return callback(arg0(closure_2[7]).HeaderActionButton, obj);
+    const intl = callback(outer1_2[9]).intl;
+    obj.accessibilityLabel = intl.string(callback(outer1_2[9]).t.cpT0Cq);
+    return outer1_8(callback(outer1_2[7]).HeaderActionButton, obj);
   };
 }
 function buildInitialRouteStack(arg0, arg1) {
-  importDefault(dependencyMap[6])(arg0.length > 0, "At least one step must be provided to RoleTierEditScenesModal");
+  importDefault(44)(arg0.length > 0, "At least one step must be provided to RoleTierEditScenesModal");
   if (null == arg1) {
     let obj = { name: arg0[0] };
     const items = [obj];
@@ -93,7 +106,7 @@ function buildScreenMap(arg0, arg1) {
   let num = 0;
   obj.steps = 0;
   obj.stepScreenPropsMap = 0;
-  const merged = Object.assign(arg0, obj);
+  let merged = Object.assign(arg0, obj);
   obj = {};
   const mapped = steps.map(orderify);
   if (0 < steps.length) {
@@ -116,7 +129,9 @@ function buildScreenMap(arg0, arg1) {
       num = num + 1;
     } while (num < steps.length);
   }
-  return function getScreens(arg0, merged, arg2, stepScreenPropsMap) {
+  return (function getScreens(arg0, merged, arg2, stepScreenPropsMap) {
+    let closure_0 = arg0;
+    let closure_1 = merged;
     let obj = {
       fullscreen: true,
       headerTitle() {
@@ -126,95 +141,89 @@ function buildScreenMap(arg0, arg1) {
     obj = {};
     obj = {};
     merged = Object.assign(obj);
-    obj["headerRight"] = callback2(constants.GATING, arg2);
-    const merged1 = Object.assign(callback(constants.GATING, stepScreenPropsMap));
+    obj["headerRight"] = outer1_14(outer1_7.GATING, arg2);
+    const merged1 = Object.assign(outer1_13(outer1_7.GATING, stepScreenPropsMap));
     obj["render"] = function render() {
       const obj = {};
-      const tmp = callback2(constants.GATING, arg0, arg1);
+      const tmp = outer2_12(outer2_7.GATING, closure_0, closure_1);
       const merged = Object.assign(tmp);
-      return callback(arg1(closure_2[10]), obj);
+      return outer2_8(outer2_1(outer2_2[10]), obj);
     };
-    obj[constants.GATING] = obj;
+    obj[outer1_7.GATING] = obj;
     const obj1 = {};
     const merged2 = Object.assign(obj);
-    obj1["headerRight"] = callback2(constants.GROUP, arg2);
-    const merged3 = Object.assign(callback(constants.GROUP, stepScreenPropsMap));
+    obj1["headerRight"] = outer1_14(outer1_7.GROUP, arg2);
+    const merged3 = Object.assign(outer1_13(outer1_7.GROUP, stepScreenPropsMap));
     obj1["render"] = function render() {
       const obj = {};
-      const tmp = callback2(constants.GROUP, arg0, arg1);
+      const tmp = outer2_12(outer2_7.GROUP, closure_0, closure_1);
       const merged = Object.assign(tmp);
-      return callback(arg1(closure_2[11]), obj);
+      return outer2_8(outer2_1(outer2_2[11]), obj);
     };
-    obj[constants.GROUP] = obj1;
+    obj[outer1_7.GROUP] = obj1;
     const obj2 = {};
     const merged4 = Object.assign(obj);
-    obj2["headerRight"] = callback2(constants.CHANNEL_BENEFITS, arg2);
-    const merged5 = Object.assign(callback(constants.CHANNEL_BENEFITS, stepScreenPropsMap));
+    obj2["headerRight"] = outer1_14(outer1_7.CHANNEL_BENEFITS, arg2);
+    const merged5 = Object.assign(outer1_13(outer1_7.CHANNEL_BENEFITS, stepScreenPropsMap));
     obj2["render"] = function render() {
-      const merged = Object.assign(callback2(constants.CHANNEL_BENEFITS, arg0, arg1));
-      return callback(arg0(closure_2[12]).GuildRoleSubscriptionTierChannelBenefitsModal, {});
+      const merged = Object.assign(outer2_12(outer2_7.CHANNEL_BENEFITS, closure_0, closure_1));
+      return outer2_8(outer2_0(outer2_2[12]).GuildRoleSubscriptionTierChannelBenefitsModal, {});
     };
-    obj[constants.CHANNEL_BENEFITS] = obj2;
+    obj[outer1_7.CHANNEL_BENEFITS] = obj2;
     const obj3 = {};
     const merged6 = Object.assign(obj);
-    obj3["headerRight"] = callback2(constants.INTANGIBLE_BENEFITS, arg2);
-    const merged7 = Object.assign(callback(constants.INTANGIBLE_BENEFITS, stepScreenPropsMap));
+    obj3["headerRight"] = outer1_14(outer1_7.INTANGIBLE_BENEFITS, arg2);
+    const merged7 = Object.assign(outer1_13(outer1_7.INTANGIBLE_BENEFITS, stepScreenPropsMap));
     obj3["render"] = function render() {
-      const merged = Object.assign(callback2(constants.INTANGIBLE_BENEFITS, arg0, arg1));
-      return callback(arg0(closure_2[12]).GuildRoleSubscriptionTierIntangibleBenefitsModal, {});
+      const merged = Object.assign(outer2_12(outer2_7.INTANGIBLE_BENEFITS, closure_0, closure_1));
+      return outer2_8(outer2_0(outer2_2[12]).GuildRoleSubscriptionTierIntangibleBenefitsModal, {});
     };
-    obj[constants.INTANGIBLE_BENEFITS] = obj3;
+    obj[outer1_7.INTANGIBLE_BENEFITS] = obj3;
     const obj4 = {};
     const merged8 = Object.assign(obj);
-    obj4["headerRight"] = callback2(constants.CONFIRMATION, arg2);
-    const merged9 = Object.assign(callback(constants.CONFIRMATION, stepScreenPropsMap));
+    obj4["headerRight"] = outer1_14(outer1_7.CONFIRMATION, arg2);
+    const merged9 = Object.assign(outer1_13(outer1_7.CONFIRMATION, stepScreenPropsMap));
     obj4["render"] = function render() {
       const obj = {};
-      const tmp = callback2(constants.CONFIRMATION, arg0, arg1);
+      const tmp = outer2_12(outer2_7.CONFIRMATION, closure_0, closure_1);
       const merged = Object.assign(tmp);
-      return callback(arg1(closure_2[13]), obj);
+      return outer2_8(outer2_1(outer2_2[13]), obj);
     };
-    obj[constants.CONFIRMATION] = obj4;
+    obj[outer1_7.CONFIRMATION] = obj4;
     const obj5 = {};
     const merged10 = Object.assign(obj);
-    obj5["headerRight"] = callback2(constants.DESIGN, arg2);
-    const merged11 = Object.assign(callback(constants.DESIGN, stepScreenPropsMap));
+    obj5["headerRight"] = outer1_14(outer1_7.DESIGN, arg2);
+    const merged11 = Object.assign(outer1_13(outer1_7.DESIGN, stepScreenPropsMap));
     obj5["render"] = function render() {
       const obj = {};
-      const tmp = callback2(constants.DESIGN, arg0, arg1);
+      const tmp = outer2_12(outer2_7.DESIGN, closure_0, closure_1);
       const merged = Object.assign(tmp);
-      return callback(arg1(closure_2[14]), obj);
+      return outer2_8(outer2_1(outer2_2[14]), obj);
     };
-    obj[constants.DESIGN] = obj5;
+    obj[outer1_7.DESIGN] = obj5;
     const obj6 = {};
     const merged12 = Object.assign(obj);
-    obj6["headerRight"] = callback2(constants.DETAILS, arg2);
-    const merged13 = Object.assign(callback(constants.DETAILS, stepScreenPropsMap));
+    obj6["headerRight"] = outer1_14(outer1_7.DETAILS, arg2);
+    const merged13 = Object.assign(outer1_13(outer1_7.DETAILS, stepScreenPropsMap));
     obj6["render"] = function render() {
       const obj = {};
-      const tmp = callback2(constants.DETAILS, arg0, arg1);
+      const tmp = outer2_12(outer2_7.DETAILS, closure_0, closure_1);
       const merged = Object.assign(tmp);
-      return callback(arg1(closure_2[15]), obj);
+      return outer2_8(outer2_1(outer2_2[15]), obj);
     };
-    obj[constants.DETAILS] = obj6;
+    obj[outer1_7.DETAILS] = obj6;
     return obj;
-  }(obj, merged, arg1, stepScreenPropsMap);
+  })(obj, merged, arg1, stepScreenPropsMap);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ useCurrentTierEditScene: closure_5, useResetTierEditState: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = arg1(dependencyMap[3]).GuildRoleSubscriptionsTierScenes;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[5]).createStyles({ stepsIndicator: { "Null": 16, "Null": 26, "Null": 8 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/RoleTierEditScenesModal.tsx");
+({ useCurrentTierEditScene: closure_5, useResetTierEditState: closure_6 } = _createForOfIteratorHelperLoose);
+({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles({ stepsIndicator: { position: "absolute", alignSelf: "center", height: 48 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/native/components/RoleTierEditScenesModal.tsx");
 
 export default function RoleTierEditScenesModal(modalKey) {
   let initialStack;
   let screens;
-  const arg1 = modalKey;
+  const _require = modalKey;
   function handleClose(memo, arg1) {
     if (null != onClose) {
       onClose(memo);
@@ -223,18 +232,16 @@ export default function RoleTierEditScenesModal(modalKey) {
     callback2();
   }
   modalKey = modalKey.modalKey;
-  const importDefault = modalKey;
   const steps = modalKey.steps;
-  const dependencyMap = steps;
-  const callback = modalKey.onClose;
-  const tmp2 = callback(callback2(), 2);
+  const onClose = modalKey.onClose;
+  const tmp2 = onClose(callback(), 2);
   const React = tmp2[0];
-  const callback2 = tmp2[1];
-  const callback3 = callback3();
-  const tmp3 = callback(React.useState(0), 2);
+  callback = tmp2[1];
+  callback2 = callback2();
+  const tmp3 = onClose(React.useState(0), 2);
   let closure_7 = tmp3[1];
   const items = [modalKey];
-  const callback4 = React.useCallback(() => {
+  const callback3 = React.useCallback(() => {
     modalKey(steps[17]).popWithKey(modalKey);
   }, items);
   const items1 = [steps];
@@ -244,15 +251,14 @@ export default function RoleTierEditScenesModal(modalKey) {
     }
     return scene;
   }), items1);
-  const tmp = callback5();
+  const tmp = callback4();
   let obj = {};
-  ({ screens, initialStack } = importDefault(dependencyMap[18])(() => ({ screens: callback6(arg0, handleClose), initialStack: callback5(memo, closure_4) })));
+  ({ screens, initialStack } = modalKey(steps[18])(() => ({ screens: outer1_17(closure_0, handleClose), initialStack: outer1_15(memo, result) })));
   obj = {
     screens,
     initialRouteStack: initialStack,
     onWillFocus(route) {
       const name = route.route.name;
-      route = name;
       if (null != name) {
         callback(name);
         const findIndexResult = memo.findIndex((arg0) => arg0 === name);
@@ -262,12 +268,12 @@ export default function RoleTierEditScenesModal(modalKey) {
       }
     }
   };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.headerBackTitle = intl.string(arg1(dependencyMap[9]).t.13/7kX);
-  const items2 = [callback4(arg1(dependencyMap[19]).Navigator, obj), ];
+  const intl = _require(steps[9]).intl;
+  obj.headerBackTitle = intl.string(_require(steps[9]).t["13/7kX"]);
+  const items2 = [callback3(_require(steps[19]).Navigator, obj), ];
   obj = { style: items3, current: tmp3[0] + 1, total: memo.length };
-  const items3 = [tmp.stepsIndicator, { top: importDefault(dependencyMap[16])().top }];
-  items2[1] = callback4(importDefault(dependencyMap[20]), obj);
+  items3 = [tmp.stepsIndicator, { top: modalKey(steps[16])().top }];
+  items2[1] = callback3(modalKey(steps[20]), obj);
   obj.children = items2;
   return handleClose(memo, obj);
 };

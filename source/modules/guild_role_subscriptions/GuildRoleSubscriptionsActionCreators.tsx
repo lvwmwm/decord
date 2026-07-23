@@ -1,53 +1,58 @@
-// Module ID: 5631
-// Function ID: 48054
+// Module ID: 5636
+// Function ID: 48081
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 5, 653, 5637, 686, 4451, 5638, 675, 4324, 4206, 664, 2]
 // Exports: archiveSubscriptionListing, createSubscriptionGroupListing, createSubscriptionListing, deleteSubscriptionGroupListing, deleteSubscriptionListing, fetchAllSubscriptionListingsDataForGuild, fetchMonetizationRestrictions, fetchSubscriptionListingForPlan, fetchSubscriptionsSettings, updateSubscriptionGroupListing, updateSubscriptionListing, updateSubscriptionTrial, updateSubscriptionsSettings
 
-// Module 5631 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5636 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _deletePaymentSource from "_deletePaymentSource";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,18 +89,18 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-async function _fetchSubscriptionsSettings(guildId, arg1) {
-  const obj = callback2(closure_3[3]);
-  const tmp = yield callback2(closure_3[3]).getGuildRoleSubscriptionsSettings(guildId);
-  callback(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS", settings: tmp });
+async function _fetchSubscriptionsSettings(arg0, arg1) {
+  const obj = outer2_2(outer2_3[3]);
+  const tmp = yield outer2_2(outer2_3[3]).getGuildRoleSubscriptionsSettings(arg0);
+  outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS", settings: tmp });
 }
 async function _updateSubscriptionsSettings(arg0, arg1, arg2) {
-  const obj = callback2(closure_3[3]);
-  const tmp = yield callback2(closure_3[3]).updateGuildRoleSubscriptionsSettings(arg0, arg1);
-  callback(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS", settings: tmp });
+  const obj = outer2_2(outer2_3[3]);
+  const tmp = yield outer2_2(outer2_3[3]).updateGuildRoleSubscriptionsSettings(arg0, arg1);
+  outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS", settings: tmp });
 }
 async function _fetchAllSubscriptionListingsDataForGuild(arg0, arg1) {
-  const fn = function*(guildId) {
+  let iter = (function*(guildId) {
     let iter6;
     let obj = arg1;
     if (obj === undefined) {
@@ -106,21 +111,21 @@ async function _fetchAllSubscriptionListingsDataForGuild(arg0, arg1) {
       flag = true;
     }
     yield undefined;
-    let obj1 = callback2(closure_3[4]);
+    let obj1 = outer2_1(outer2_3[4]);
     obj = { type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS", guildId };
     obj1.dispatch(obj);
     obj = { includeSoftDeleted: flag };
     obj.countryCode = obj.countryCode;
-    const items = [callback3(closure_3[3]).getGuildRoleSubscriptionGroupListingsForGuild(guildId, obj), , , ];
-    const obj4 = callback3(closure_3[3]);
-    items[1] = callback3(closure_3[3]).getGuildRoleSubscriptionsSettings(guildId);
-    const obj6 = callback3(closure_3[3]);
-    items[2] = callback3(closure_3[3]).getGuildRoleSubscriptionTrials(guildId);
-    const obj7 = callback3(closure_3[3]);
-    items[3] = callback(closure_3[5]).fetchSubscriptions();
-    const tmp3 = callback4(yield Promise.all(items), 3);
+    const items = [outer2_2(outer2_3[3]).getGuildRoleSubscriptionGroupListingsForGuild(guildId, obj), , , ];
+    const obj4 = outer2_2(outer2_3[3]);
+    items[1] = outer2_2(outer2_3[3]).getGuildRoleSubscriptionsSettings(guildId);
+    const obj6 = outer2_2(outer2_3[3]);
+    items[2] = outer2_2(outer2_3[3]).getGuildRoleSubscriptionTrials(guildId);
+    const obj7 = outer2_2(outer2_3[3]);
+    items[3] = outer2_0(outer2_3[5]).fetchSubscriptions();
+    const tmp3 = outer2_4(yield Promise.all(items), 3);
     const first = tmp3[0];
-    const tmp5 = callback5(first);
+    const tmp5 = outer2_7(first);
     const iter = tmp5();
     let iter2 = iter;
     if (!iter.done) {
@@ -128,7 +133,7 @@ async function _fetchAllSubscriptionListingsDataForGuild(arg0, arg1) {
         let tmp6 = iter2;
         let subscription_listings = iter2.value.subscription_listings;
         let tmp7 = subscription_listings;
-        let tmp8 = closure_7(null != subscription_listings ? subscription_listings : []);
+        let tmp8 = outer2_7(null != subscription_listings ? subscription_listings : []);
         let tmp9 = tmp8;
         let iter3 = tmp8();
         let iter4 = iter3;
@@ -136,15 +141,15 @@ async function _fetchAllSubscriptionListingsDataForGuild(arg0, arg1) {
           do {
             let tmp10 = iter4;
             let value = iter4.value;
-            let tmp11 = closure_1;
-            let tmp12 = closure_3;
-            let obj10 = closure_1(closure_3[4]);
+            let tmp11 = outer2_1;
+            let tmp12 = outer2_3;
+            let obj10 = outer2_1(outer2_3[4]);
             obj1 = { type: "SUBSCRIPTION_PLANS_FETCH_SUCCESS", skuId: value.id, subscriptionPlans: value.subscription_plans };
             let dispatchResult1 = obj10.dispatch(obj1);
             let tmp14 = tmp8;
             let iter5 = tmp9();
             iter4 = iter5;
-            let done = iter5.done;
+            done = iter5.done;
           } while (!done);
         }
         let tmp15 = tmp5;
@@ -152,7 +157,7 @@ async function _fetchAllSubscriptionListingsDataForGuild(arg0, arg1) {
         iter2 = iter6;
       } while (!iter6.done);
     }
-    const obj8 = callback(closure_3[5]);
+    const obj8 = outer2_0(outer2_3[5]);
     const flatMapResult = first.flatMap((benefit_channels) => {
       benefit_channels = benefit_channels.benefit_channels;
       if (null == benefit_channels) {
@@ -160,101 +165,97 @@ async function _fetchAllSubscriptionListingsDataForGuild(arg0, arg1) {
       }
       return benefit_channels;
     });
-    callback2(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS", guildId, groupListings: first, benefitChannels: flatMapResult, settings: tmp3[1], subscriptionTrials: tmp3[2] });
-  };
-  fn.next();
-  return fn;
+    outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS", guildId, groupListings: first, benefitChannels: flatMapResult, settings: tmp3[1], subscriptionTrials: tmp3[2] });
+  })();
+  iter.next();
+  return iter;
 }
 async function _createSubscriptionGroupListing(arg0, arg1, arg2) {
-  const tmp = yield callback2(closure_3[3]).createGuildRoleSubscriptionGroupListing(arg0, arg1);
-  const obj = callback2(closure_3[3]);
-  callback(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING", listing: tmp });
+  const tmp = yield outer2_2(outer2_3[3]).createGuildRoleSubscriptionGroupListing(arg0, arg1);
+  const obj = outer2_2(outer2_3[3]);
+  outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING", listing: tmp });
   return tmp;
 }
 async function _updateSubscriptionGroupListing(arg0, arg1, arg2, arg3) {
-  const tmp = yield callback2(closure_3[3]).updateGuildRoleSubscriptionGroupListing(arg0, arg1, arg2);
-  const obj = callback2(closure_3[3]);
-  callback(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING", listing: tmp });
+  const tmp = yield outer2_2(outer2_3[3]).updateGuildRoleSubscriptionGroupListing(arg0, arg1, arg2);
+  const obj = outer2_2(outer2_3[3]);
+  outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING", listing: tmp });
   return tmp;
 }
-async function _deleteSubscriptionGroupListing(arg0, groupListingId, arg2) {
-  let obj = callback2(closure_3[3]);
-  yield obj.deleteGuildRoleSubscriptionGroupListing(arg0, groupListingId);
-  obj = { type: "GUILD_ROLE_SUBSCRIPTIONS_DELETE_GROUP_LISTING", groupListingId };
-  callback(closure_3[4]).dispatch(obj);
+async function _deleteSubscriptionGroupListing(arg0, arg1, arg2) {
+  let obj = outer2_2(outer2_3[3]);
+  yield obj.deleteGuildRoleSubscriptionGroupListing(arg0, arg1);
+  obj = { type: "GUILD_ROLE_SUBSCRIPTIONS_DELETE_GROUP_LISTING", groupListingId: arg1 };
+  outer2_1(outer2_3[4]).dispatch(obj);
   return true;
 }
-async function _fetchSubscriptionListingForPlan(planId, arg1) {
-  let obj = callback(closure_3[4]);
-  obj = { type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN", planId };
+async function _fetchSubscriptionListingForPlan(arg0, arg1) {
+  let iter3;
+  let obj = outer2_1(outer2_3[4]);
+  obj = { type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN", planId: arg0 };
   obj.dispatch(obj);
-  const tmp2 = yield callback2(closure_3[3]).getGuildRoleSubscriptionGroupForSubscriptionPlan(planId);
-  const obj3 = callback2(closure_3[3]);
-  callback(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN_SUCCESS", groupListing: tmp2 });
+  const tmp2 = yield outer2_2(outer2_3[3]).getGuildRoleSubscriptionGroupForSubscriptionPlan(arg0);
+  const obj3 = outer2_2(outer2_3[3]);
+  outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN_SUCCESS", groupListing: tmp2 });
   let prop = tmp2.subscription_listings;
   if (null == prop) {
     prop = [];
   }
-  const tmp4Result = closure_7(prop);
+  const tmp4Result = outer2_7(prop);
   const iter = tmp4Result();
   let iter2 = iter;
   if (!iter.done) {
-    while (true) {
+    do {
       let value = iter2.value;
-      if (value.subscription_plans[0].id === planId) {
-        let tmp6 = callback2;
-        let tmp7 = closure_3;
-        let obj5 = callback2(closure_3[6]);
+      if (value.subscription_plans[0].id === arg0) {
+        let tmp6 = outer2_2;
+        let tmp7 = outer2_3;
+        let obj5 = outer2_2(outer2_3[6]);
         let tmp8 = obj5;
         let flag = true;
         let tmp9 = yield obj5.fetchSubscriptionPlansForSKU(value.id, undefined, undefined, true);
       }
-      let iter3 = tmp4Result();
+      iter3 = tmp4Result();
       iter2 = iter3;
-      if (iter3.done) {
-        break;
-      } else {
-        // continue
-      }
-    }
+    } while (!iter3.done);
   }
 }
-async function _deleteSubscriptionListing(arg0, arg1, listingId, arg3) {
-  let obj = callback2(closure_3[3]);
-  yield obj.deleteGuildRoleSubscriptionListing(arg0, arg1, listingId);
-  obj = { type: "GUILD_ROLE_SUBSCRIPTIONS_DELETE_LISTING", listingId };
-  callback(closure_3[4]).dispatch(obj);
+async function _deleteSubscriptionListing(arg0, arg1, arg2, arg3) {
+  let obj = outer2_2(outer2_3[3]);
+  yield obj.deleteGuildRoleSubscriptionListing(arg0, arg1, arg2);
+  obj = { type: "GUILD_ROLE_SUBSCRIPTIONS_DELETE_LISTING", listingId: arg2 };
+  outer2_1(outer2_3[4]).dispatch(obj);
 }
 async function _archiveSubscriptionListing(arg0, arg1, arg2, arg3) {
-  const obj = callback2(closure_3[3]);
-  const tmp = yield callback2(closure_3[3]).archiveGuildRoleSubscriptionListing(arg0, arg1, arg2);
-  callback(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: tmp });
+  const obj = outer2_2(outer2_3[3]);
+  const tmp = yield outer2_2(outer2_3[3]).archiveGuildRoleSubscriptionListing(arg0, arg1, arg2);
+  outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: tmp });
 }
 async function _updateSubscriptionTrial(arg0, arg1, arg2, arg3) {
-  const obj = callback2(closure_3[3]);
-  const tmp = yield callback2(closure_3[3]).updateGuildRoleSubscriptionsTrial(arg0, arg1, arg2);
-  callback(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTION_TRIAL", subscriptionTrial: tmp });
+  const obj = outer2_2(outer2_3[3]);
+  const tmp = yield outer2_2(outer2_3[3]).updateGuildRoleSubscriptionsTrial(arg0, arg1, arg2);
+  outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTION_TRIAL", subscriptionTrial: tmp });
 }
 function fetchGuildRoleSubscriptionGroupListing() {
   return _fetchGuildRoleSubscriptionGroupListing(...arguments);
 }
 async function _fetchGuildRoleSubscriptionGroupListing(arg0, arg1, arg2) {
-  const fn = function*(arg0, arg1) {
+  let iter = (function*(arg0, arg1) {
     let obj = arg2;
     if (obj === undefined) {
       obj = {};
     }
     yield undefined;
-    const tmp2 = yield callback2(closure_3[3]).getGuildRoleSubscriptionGroupListing(arg0, arg1, obj);
-    const obj2 = callback2(closure_3[3]);
-    callback(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING", listing: tmp2 });
+    const tmp2 = yield outer2_2(outer2_3[3]).getGuildRoleSubscriptionGroupListing(arg0, arg1, obj);
+    const obj2 = outer2_2(outer2_3[3]);
+    outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING", listing: tmp2 });
     return tmp2;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _createSubscriptionListing(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let analyticsContext;
     let data;
     let groupListingId;
@@ -262,42 +263,42 @@ async function _createSubscriptionListing(arg0, arg1) {
     let onBeforeDispatchNewListing;
     ({ guildId, groupListingId, analyticsContext, onBeforeDispatchNewListing, data } = arg0);
     yield undefined;
-    let obj = callback3(closure_3[3]);
+    let obj = outer2_2(outer2_3[3]);
     const tmp2 = yield obj.createGuildRoleSubscriptionListing(guildId, groupListingId, data);
     obj = { role_subscription_listing_id: tmp2.id, role_subscription_group_listing_id: groupListingId, template_name: analyticsContext.templateCategory, has_change_from_template: analyticsContext.hasChangeFromTemplate };
-    const obj2 = callback2(closure_3[7]);
-    const merged = Object.assign(callback(closure_3[8]).collectGuildAnalyticsMetadata(guildId));
-    obj2.track(constants.ROLE_SUBSCRIPTION_LISTING_CREATED, obj);
-    yield closure_19(guildId, groupListingId, { includeArchivedListings: true });
+    const obj2 = outer2_1(outer2_3[7]);
+    const merged = Object.assign(outer2_0(outer2_3[8]).collectGuildAnalyticsMetadata(guildId));
+    obj2.track(outer2_6.ROLE_SUBSCRIPTION_LISTING_CREATED, obj);
+    yield outer2_19(guildId, groupListingId, { includeArchivedListings: true });
     if (null != onBeforeDispatchNewListing) {
       const result = onBeforeDispatchNewListing(tmp2);
     }
-    const obj4 = callback(closure_3[8]);
-    callback2(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: tmp2 });
+    const obj4 = outer2_0(outer2_3[8]);
+    outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: tmp2 });
     return tmp2;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _updateSubscriptionListing(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let data;
     let groupListingId;
     let guildId;
     let listingId;
     ({ guildId, listingId, groupListingId, data } = arg0);
     yield undefined;
-    const tmp2 = yield callback2(closure_3[3]).updateGuildRoleSubscriptionListing(guildId, groupListingId, listingId, data);
-    const obj = callback2(closure_3[3]);
-    callback(closure_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: tmp2 });
-    yield closure_19(guildId, groupListingId, { includeArchivedListings: true });
+    const tmp2 = yield outer2_2(outer2_3[3]).updateGuildRoleSubscriptionListing(guildId, groupListingId, listingId, data);
+    const obj = outer2_2(outer2_3[3]);
+    outer2_1(outer2_3[4]).dispatch({ type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_LISTING", listing: tmp2 });
+    yield outer2_19(guildId, groupListingId, { includeArchivedListings: true });
     return tmp2;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _fetchMonetizationRestrictions(arg0, arg1) {
-  const fn = function*(guildId) {
+  let iter = (function*(guildId) {
     let obj = arg1;
     if (obj === undefined) {
       obj = {};
@@ -314,10 +315,10 @@ async function _fetchMonetizationRestrictions(arg0, arg1) {
         if (!signal.aborted) {
           break;
         } else {
-          let tmp16 = callback;
-          let tmp17 = closure_3;
+          let tmp16 = outer2_1;
+          let tmp17 = outer2_3;
           let num2 = 4;
-          let obj8 = callback(closure_3[4]);
+          let obj8 = outer2_1(outer2_3[4]);
           obj = {};
           let str3 = "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_ABORTED";
           obj.type = "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_ABORTED";
@@ -326,26 +327,26 @@ async function _fetchMonetizationRestrictions(arg0, arg1) {
           let dispatchResult = obj8.dispatch(obj);
         }
       }
-      let tmp5 = callback;
-      let tmp6 = closure_3;
+      let tmp5 = outer2_1;
+      let tmp6 = outer2_3;
       let num = 4;
-      let obj1 = callback(closure_3[4]);
+      let obj1 = outer2_1(outer2_3[4]);
       obj = {};
       let str = "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS";
       obj.type = "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS";
       let tmp7 = guildId;
       obj.guildId = guildId;
       let dispatchResult1 = obj1.dispatch(obj);
-      let tmp9 = callback2;
-      let obj4 = callback2(closure_3[3]);
+      let tmp9 = outer2_2;
+      let obj4 = outer2_2(outer2_3[3]);
       obj1 = {};
       let tmp10 = signal;
       obj1.signal = signal;
       let restrictions = yield obj4.getGuildMonetizationRestrictions(guildId, obj1).restrictions;
       let tmp11 = restrictions;
-      let tmp12 = callback;
-      let tmp13 = closure_3;
-      let obj6 = callback(closure_3[4]);
+      let tmp12 = outer2_1;
+      let tmp13 = outer2_3;
+      let obj6 = outer2_1(outer2_3[4]);
       let obj2 = {};
       let str2 = "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS";
       obj2.type = "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS";
@@ -358,22 +359,19 @@ async function _fetchMonetizationRestrictions(arg0, arg1) {
         break;
       }
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsActionCreators.tsx");
+let result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsActionCreators.tsx");
 
 export const fetchSubscriptionsSettings = function fetchSubscriptionsSettings(id) {
   return _fetchSubscriptionsSettings(...arguments);
 };
-export const updateSubscriptionsSettings = function updateSubscriptionsSettings(arg0, arg1) {
+export const updateSubscriptionsSettings = function updateSubscriptionsSettings(HeaderActionButton, arg1) {
   return _updateSubscriptionsSettings(...arguments);
 };
-export const fetchAllSubscriptionListingsDataForGuild = function fetchAllSubscriptionListingsDataForGuild(guildId, arg1) {
+export const fetchAllSubscriptionListingsDataForGuild = function fetchAllSubscriptionListingsDataForGuild(closure_0, arg1) {
   return _fetchAllSubscriptionListingsDataForGuild(...arguments);
 };
 export const createSubscriptionGroupListing = function createSubscriptionGroupListing() {

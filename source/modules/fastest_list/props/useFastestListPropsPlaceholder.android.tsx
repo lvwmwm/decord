@@ -1,10 +1,13 @@
-// Module ID: 9243
-// Function ID: 72276
+// Module ID: 9250
+// Function ID: 72317
 // Name: createNativePlaceholderConfig
-// Dependencies: []
+// Dependencies: [31, 8828, 3974, 2]
 // Exports: default
 
-// Module 9243 (createNativePlaceholderConfig)
+// Module 9250 (createNativePlaceholderConfig)
+import result from "result";
+
+let require = arg1;
 function createNativePlaceholderConfig(type) {
   let labelPaddingInnerRatio;
   let labelSecondarySize;
@@ -17,7 +20,7 @@ function createNativePlaceholderConfig(type) {
   const obj = { borderRadius: undefined, borderTopLeftRadius: undefined, borderTopRightRadius: undefined, borderBottomLeftRadius: undefined, borderBottomRightRadius: undefined, divider: undefined, dividerColorRgba: undefined, dividerPaddingLeft: undefined, dividerPaddingRight: undefined, placeholderShape: undefined, placeholderShapeColorRgba: undefined, placeholderShapeCount: undefined, placeholderShapeGap: undefined, placeholderShapePaddingHorizontal: undefined, placeholderShapePaddingVertical: undefined, placeholderFeedBackgroundColorRgba: undefined, placeholderFeedColorRgba: undefined, placeholderFeedLabelPadding: undefined, placeholderFeedLabelPaddingInnerRatio: undefined, placeholderFeedLabelSize: undefined, placeholderFeedLabelSecondarySize: undefined, placeholderFeedPadding: undefined, placeholderFeedShape: undefined, placeholderFeedShapeSize: undefined };
   let NONE = type;
   if (null == type) {
-    NONE = arg1(dependencyMap[1]).FastestListPropsPlaceholderType.NONE;
+    NONE = require(8828) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
   }
   obj.placeholderType = NONE;
   obj.width = undefined;
@@ -28,8 +31,8 @@ function createNativePlaceholderConfig(type) {
     return obj;
   } else {
     let num20 = 1;
-    if (arg1(dependencyMap[1]).FastestListPropsPlaceholderType.NONE !== type) {
-      if (arg1(dependencyMap[num20]).FastestListPropsPlaceholderType.SHAPE === type) {
+    if (require(8828) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
+      if (require(dependencyMap[num20]).FastestListPropsPlaceholderType.SHAPE === type) {
         const borderRadius2 = type.borderRadius;
         let num15 = 0;
         if (null != borderRadius2) {
@@ -54,7 +57,7 @@ function createNativePlaceholderConfig(type) {
           num18 = paddingVertical;
         }
         obj.placeholderShapePaddingVertical = num18;
-        obj.placeholderShapeColorRgba = arg1(dependencyMap[2]).hexToRgbaString(type.colorHex, type.opacity);
+        obj.placeholderShapeColorRgba = require(3974) /* hexToRgb */.hexToRgbaString(type.colorHex, type.opacity);
         const shapeCount = type.shapeCount;
         if (null != shapeCount) {
           num20 = shapeCount;
@@ -72,8 +75,8 @@ function createNativePlaceholderConfig(type) {
           str2 = horizonalAlignment;
         }
         obj.horizontalAlignment = str2;
-        const obj5 = arg1(dependencyMap[2]);
-      } else if (arg1(dependencyMap[num20]).FastestListPropsPlaceholderType.FEED_ITEM === type) {
+        const obj5 = require(3974) /* hexToRgb */;
+      } else if (require(dependencyMap[num20]).FastestListPropsPlaceholderType.FEED_ITEM === type) {
         const borderRadius = type.borderRadius;
         let num2 = 0;
         if (null != borderRadius) {
@@ -108,8 +111,8 @@ function createNativePlaceholderConfig(type) {
         obj.divider = null != divider && divider;
         let hexToRgbaStringResult;
         if (null != type.dividerColorHex) {
-          hexToRgbaStringResult = arg1(dependencyMap[2]).hexToRgbaString(type.dividerColorHex);
-          const obj2 = arg1(dependencyMap[2]);
+          hexToRgbaStringResult = require(3974) /* hexToRgb */.hexToRgbaString(type.dividerColorHex);
+          const obj2 = require(3974) /* hexToRgb */;
         }
         obj.dividerColorRgba = hexToRgbaStringResult;
         const dividerPaddingLeft = type.dividerPaddingLeft;
@@ -126,11 +129,11 @@ function createNativePlaceholderConfig(type) {
         obj.dividerPaddingRight = num9;
         let hexToRgbaStringResult1;
         if (null != type.backgroundColorHex) {
-          hexToRgbaStringResult1 = arg1(dependencyMap[2]).hexToRgbaString(type.backgroundColorHex);
-          const obj3 = arg1(dependencyMap[2]);
+          hexToRgbaStringResult1 = require(3974) /* hexToRgb */.hexToRgbaString(type.backgroundColorHex);
+          const obj3 = require(3974) /* hexToRgb */;
         }
         obj.placeholderFeedBackgroundColorRgba = hexToRgbaStringResult1;
-        obj.placeholderFeedColorRgba = arg1(dependencyMap[2]).hexToRgbaString(type.colorHex);
+        obj.placeholderFeedColorRgba = require(3974) /* hexToRgb */.hexToRgbaString(type.colorHex);
         ({ labelSize: obj.placeholderFeedLabelSize, labelSecondarySize } = type);
         let num12 = 0;
         if (null != labelSecondarySize) {
@@ -150,7 +153,7 @@ function createNativePlaceholderConfig(type) {
         }
         obj.placeholderFeedPadding = num14;
         ({ shape: obj.placeholderFeedShape, shapeSize: obj.placeholderFeedShapeSize } = type);
-        const obj4 = arg1(dependencyMap[2]);
+        const obj4 = require(3974) /* hexToRgb */;
       } else {
         const _Error = Error;
         const _HermesInternal = HermesInternal;
@@ -161,18 +164,17 @@ function createNativePlaceholderConfig(type) {
     return obj;
   }
 }
-let closure_2 = importAll(dependencyMap[0]);
 let obj = {};
-obj = { type: arg1(dependencyMap[1]).FastestListPropsPlaceholderType.NONE };
+obj = { type: require("FastestListPropsPlaceholderType").FastestListPropsPlaceholderType.NONE };
 obj.sectionItem = obj;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx");
+const result = require("hexToRgb").fileFinishedImporting("modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx");
 
 export default function useFastestListPropsPlaceholder() {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = obj;
   }
-  const arg1 = tmp;
+  const require = tmp;
   const items = [tmp];
-  return React.useMemo(() => ({ listFooter: callback(tmp.listFooter), listHeader: callback(tmp.listHeader), sectionFooter: callback(tmp.sectionFooter), sectionHeader: callback(tmp.sectionHeader), sectionItem: callback(tmp.sectionItem), sectionItemAtFront: callback(tmp.sectionItemAtFront), sectionItemAtRear: callback(tmp.sectionItemAtRear), sectionItemSingleton: callback(tmp.sectionItemSingleton) }), items);
+  return React.useMemo(() => ({ listFooter: outer1_4(tmp.listFooter), listHeader: outer1_4(tmp.listHeader), sectionFooter: outer1_4(tmp.sectionFooter), sectionHeader: outer1_4(tmp.sectionHeader), sectionItem: outer1_4(tmp.sectionItem), sectionItemAtFront: outer1_4(tmp.sectionItemAtFront), sectionItemAtRear: outer1_4(tmp.sectionItemAtRear), sectionItemSingleton: outer1_4(tmp.sectionItemSingleton) }), items);
 };

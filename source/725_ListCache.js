@@ -1,7 +1,7 @@
 // Module ID: 725
-// Function ID: 8753
+// Function ID: 8754
 // Name: ListCache
-// Dependencies: [47775744, 50200576, 50266112, 49676288, 24182784]
+// Dependencies: [726, 727, 730, 731, 732]
 
 // Module 725 (ListCache)
 class ListCache {
@@ -14,15 +14,15 @@ class ListCache {
     clearResult = self.clear();
     for (let num2 = 0; num2 < num; num2 = num2 + 1) {
       tmp2 = global[num2];
-      result = self.set(tmp2[0], tmp2[1]);
+      result = require("listCacheClear");
     }
     return;
   }
 }
-ListCache.prototype.clear = require(dependencyMap[0]);
-ListCache.prototype.delete = require(dependencyMap[1]);
-ListCache.prototype.get = require(dependencyMap[2]);
-ListCache.prototype.has = require(dependencyMap[3]);
-ListCache.prototype.set = require(dependencyMap[4]);
+ListCache.prototype.clear = require("listCacheClear");
+ListCache.prototype.delete = require("listCacheDelete");
+ListCache.prototype.get = require("listCacheGet");
+ListCache.prototype.has = require("listCacheHas");
+ListCache.prototype.set = require("listCacheSet");
 
 export default ListCache;

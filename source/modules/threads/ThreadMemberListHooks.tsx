@@ -1,66 +1,66 @@
-// Module ID: 15265
-// Function ID: 115225
+// Module ID: 15382
+// Function ID: 117399
 // Name: useThreadMemberListSections
-// Dependencies: []
+// Dependencies: [31, 1910, 7096, 482, 4559, 5688, 5664, 566, 1212, 2]
 // Exports: useThreadMemberListSections
 
-// Module 15265 (useThreadMemberListSections)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const StatusTypes = arg1(dependencyMap[3]).StatusTypes;
+// Module 15382 (useThreadMemberListSections)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { StatusTypes } from "sum";
+
+const require = arg1;
 let closure_7 = [];
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/threads/ThreadMemberListHooks.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/threads/ThreadMemberListHooks.tsx");
 
 export const useThreadMemberListSections = function useThreadMemberListSections(channelId, stateFromStores) {
-  stateFromStores = channelId;
+  const _require = channelId;
   const importDefault = stateFromStores;
-  importDefault(dependencyMap[4])(() => {
+  importDefault(stateFromStores[4])(() => {
     let id;
-    if (null != arg1) {
-      id = arg1.id;
+    if (null != stateFromStores) {
+      id = stateFromStores.id;
     }
     if (null != id) {
-      arg0(stateFromStores[5]).subscribeChannel(arg1.id, arg0, arg0(stateFromStores[6]).DEFAULT_RANGES);
-      const obj = arg0(stateFromStores[5]);
+      channelId(stateFromStores[5]).subscribeChannel(stateFromStores.id, channelId, channelId(stateFromStores[6]).DEFAULT_RANGES);
+      const obj = channelId(stateFromStores[5]);
     }
   });
-  const items = [closure_4];
-  stateFromStores = stateFromStores(dependencyMap[7]).useStateFromStores(items, () => {
-    if (null != arg1) {
-      let sortedRoles = tmp4.getSortedRoles(arg1.id);
+  const items = [_createForOfIteratorHelperLoose];
+  stateFromStores = _require(stateFromStores[7]).useStateFromStores(items, () => {
+    if (null != stateFromStores) {
+      let sortedRoles = tmp4.getSortedRoles(stateFromStores.id);
     } else {
       sortedRoles = [];
     }
     return sortedRoles;
   });
-  const dependencyMap = stateFromStores;
-  const obj = stateFromStores(dependencyMap[7]);
-  const items1 = [closure_5];
-  const stateFromStoresObject = stateFromStores(dependencyMap[7]).useStateFromStoresObject(items1, () => ({ version: store.getMemberListVersion(arg0), members: store.getMemberListSections(arg0) }));
+  let obj = _require(stateFromStores[7]);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStoresObject = _require(stateFromStores[7]).useStateFromStoresObject(items1, () => ({ version: outer1_5.getMemberListVersion(closure_0), members: outer1_5.getMemberListSections(closure_0) }));
   const members = stateFromStoresObject.members;
-  const React = members;
-  closure_4 = tmp4;
+  _createForOfIteratorHelperLoose = tmp4;
   const items2 = [stateFromStores, members, stateFromStoresObject.version, null == stateFromStores];
-  let memo = React.useMemo(() => {
-    if (tmp4) {
-      return closure_7;
+  let memo = members.useMemo(() => {
+    if (_createForOfIteratorHelperLoose) {
+      return outer1_7;
     } else {
       const found = stateFromStores.filter((hoist) => hoist.hoist);
       const mapped = found.map((id) => ({ id: id.id, label: id.name }));
-      let obj = { id: constants.ONLINE };
-      const intl = arg0(stateFromStores[8]).intl;
-      obj.label = intl.string(arg0(stateFromStores[8]).t.WbGtnH);
-      obj = { id: constants.OFFLINE };
-      const intl2 = arg0(stateFromStores[8]).intl;
-      obj.label = intl2.string(arg0(stateFromStores[8]).t.Vv0abJ);
+      let obj = { id: outer1_6.ONLINE };
+      const intl = channelId(stateFromStores[8]).intl;
+      obj.label = intl.string(channelId(stateFromStores[8]).t.WbGtnH);
+      obj = { id: outer1_6.OFFLINE };
+      const intl2 = channelId(stateFromStores[8]).intl;
+      obj.label = intl2.string(channelId(stateFromStores[8]).t.Vv0abJ);
       mapped.push(obj, obj);
       return mapped.map((id) => {
         id = id.id;
         const obj = { label: id.label };
         let userIds;
-        if (null != closure_3) {
-          if (null != closure_3[id]) {
+        if (null != outer1_3) {
+          if (null != outer1_3[id]) {
             userIds = tmp2.userIds;
           }
         }

@@ -1,39 +1,41 @@
-// Module ID: 5046
-// Function ID: 43681
+// Module ID: 5049
+// Function ID: 43699
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 566, 686, 2]
 
-// Module 5046 (_isNativeReflectConstruct)
+// Module 5049 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-const set = new Set();
+let set = new Set();
 const set1 = new Set();
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class BulkBanStore {
     constructor() {
       self = this;
       tmp = BulkBanStore(this, BulkBanStore);
-      obj = closure_3(BulkBanStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(BulkBanStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,33 +44,32 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = BulkBanStore;
   callback2(BulkBanStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_5);
+      this.waitFor(outer1_5);
     }
   };
   const items = [obj, , ];
   obj = {
     key: "hasPendingBulkBan",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_6.has(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "consumeCompletedBeforeStarted",
     value(arg0, arg1) {
-      return set2.delete("" + arg0 + ":" + arg1);
+      return outer1_7.delete("" + arg0 + ":" + arg1);
     }
   };
   items[2] = obj;
   return callback(BulkBanStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "BulkBanStore";
-tmp4 = new tmp4(importDefault(dependencyMap[7]), {
+tmp4 = new tmp4(require("dispatcher"), {
   GUILD_BULK_BAN_STARTED: function handleBulkBanStarted(guildId) {
     set.add(guildId.guildId);
   },
@@ -93,6 +94,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[7]), {
     set1.clear();
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_mod_dash_member_safety/BulkBanStore.tsx");
+let result = set.fileFinishedImporting("modules/guild_mod_dash_member_safety/BulkBanStore.tsx");
 
 export default tmp4;

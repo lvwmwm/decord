@@ -1,87 +1,91 @@
-// Module ID: 7060
-// Function ID: 56468
+// Module ID: 7065
+// Function ID: 56502
 // Name: onDismiss
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4098, 7066, 1212, 5187, 7026, 7067, 7006, 1273, 4126, 4543, 3946, 1334, 7065, 1934, 686, 2]
 // Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 7060 (onDismiss)
+// Module 7065 (onDismiss)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function onDismiss() {
-  importDefault(dependencyMap[5]).hideActionSheet();
+  importDefault(4098).hideActionSheet();
 }
-importAll(dependencyMap[0]);
-const tmp3 = arg1(dependencyMap[1]);
-const View = tmp3.View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { "Null": "message", "Null": "properties", "Null": 1, "Null": 250 } };
-obj = {};
-const merged = Object.assign(tmp3.StyleSheet.absoluteFillObject);
-obj["flex"] = 1;
-obj["alignItems"] = "center";
-obj["justifyContent"] = "center";
-obj["top"] = -120;
-obj.fill = obj;
-const obj1 = { <string:1199788897>: null, <string:480689183>: null, <string:3327199329>: null, tintColor: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE };
-obj.nitroWheel = obj1;
-obj.textContainer = {};
-obj.body = {};
-obj.content = { paddingHorizontal: 16 };
-let closure_6 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("components_native/reactions/BurstReactionFirstSendActionSheet.tsx");
+const View = get_ActivityIndicator.View;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { paddingTop: 24, paddingBottom: 24, paddingLeft: 12, paddingRight: 12 } };
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
+_createForOfIteratorHelperLoose["flex"] = 1;
+_createForOfIteratorHelperLoose["alignItems"] = "center";
+_createForOfIteratorHelperLoose["justifyContent"] = "center";
+_createForOfIteratorHelperLoose["top"] = -120;
+_createForOfIteratorHelperLoose.fill = _createForOfIteratorHelperLoose;
+let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, width: 37.5, height: 37.5 };
+_createForOfIteratorHelperLoose.nitroWheel = obj1;
+_createForOfIteratorHelperLoose.textContainer = { flexDirection: "row", flexShrink: 1, alignItems: "center", alignSelf: "center", textAlign: "center" };
+_createForOfIteratorHelperLoose.body = { paddingTop: 8, paddingBottom: 18 };
+_createForOfIteratorHelperLoose.content = { paddingHorizontal: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("jsxProd").fileFinishedImporting("components_native/reactions/BurstReactionFirstSendActionSheet.tsx");
 
 export default function BurstReactionFirstSendActionSheet(arg0) {
   let channelId;
   let emoji;
   let messageId;
   ({ emoji, channelId, messageId } = arg0);
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[6]);
-  obj = { quest: arg1(dependencyMap[7]).t.5TpPli };
-  const deviceSpecificString = obj.getDeviceSpecificString(obj, arg1(dependencyMap[7]).t.2Yp7dF);
-  obj = { backdropOpacity: arg1(dependencyMap[9]).BACKDROP_OPACITY, contentStyles: tmp.content };
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(7066) /* getDeviceSpecificString */;
+  obj = { quest: require(1212) /* getSystemLocale */.t["5TpPli"] };
+  const deviceSpecificString = obj.getDeviceSpecificString(obj, require(1212) /* getSystemLocale */.t["2Yp7dF"]);
+  obj = { backdropOpacity: require(7026) /* _generateAnimationSource */.BACKDROP_OPACITY, contentStyles: tmp.content };
   const obj1 = { style: tmp.fill };
-  const obj2 = { channelId, emoji, messageId, reactionType: arg1(dependencyMap[11]).ReactionTypes.BURST };
-  obj1.children = callback(importDefault(dependencyMap[10]), obj2);
+  const obj2 = { channelId, emoji, messageId, reactionType: require(7006) /* ReactionTypes */.ReactionTypes.BURST };
+  obj1.children = callback(importDefault(7067), obj2);
   obj.backdropChildren = callback(View, obj1);
   obj.onDismiss = onDismiss;
   const obj3 = { style: tmp.container };
   const obj4 = { style: tmp.textContainer };
-  const items = [callback(arg1(dependencyMap[12]).NitroWheel, { style: tmp.nitroWheel }), ];
+  const items = [callback(require(1273) /* Button */.NitroWheel, { style: tmp.nitroWheel }), ];
   const obj6 = { variant: "heading-xl/bold" };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj6.children = intl.string(arg1(dependencyMap[7]).t.NX7HI7);
-  items[1] = callback(arg1(dependencyMap[13]).Text, obj6);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj6.children = intl.string(require(1212) /* getSystemLocale */.t.NX7HI7);
+  items[1] = callback(require(4126) /* Text */.Text, obj6);
   obj4.children = items;
   const items1 = [callback2(View, obj4), , ];
   const obj5 = { style: tmp.nitroWheel };
-  const tmp3 = importDefault(dependencyMap[10]);
-  items1[1] = callback(View, { style: tmp.body, children: callback(arg1(dependencyMap[13]).Text, obj8) });
+  const tmp3 = importDefault(7067);
+  items1[1] = callback(View, { style: tmp.body, children: callback(require(4126) /* Text */.Text, obj8) });
   const obj9 = {};
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj9.text = intl2.string(arg1(dependencyMap[7]).t.+IrDzN);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj9.text = intl2.string(require(1212) /* getSystemLocale */.t["+IrDzN"]);
   obj9.onPress = onDismiss;
-  items1[2] = callback(arg1(dependencyMap[14]).Button, obj9);
+  items1[2] = callback(require(4543) /* Button */.Button, obj9);
   obj3.children = items1;
   obj.children = callback2(View, obj3);
-  return callback(arg1(dependencyMap[8]).BottomSheet, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };
 export const openBurstReactionFirstSendActionSheet = function openBurstReactionFirstSendActionSheet(arg0) {
   let channelId;
   let emoji;
   let messageId;
   ({ channelId, messageId, emoji } = arg0);
-  let obj = importDefault(dependencyMap[5]);
+  let obj = importDefault(4098);
   obj.hideActionSheet();
-  if (obj2.UNSAFE_isDismissibleContentDismissed(arg1(dependencyMap[16]).DismissibleContent.SUPER_REACTIONS_FIRST_SENT)) {
+  if (obj2.UNSAFE_isDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.SUPER_REACTIONS_FIRST_SENT)) {
     obj = { type: "BURST_REACTION_EFFECT_SEND", channelId, messageId, emoji };
-    importDefault(dependencyMap[19]).dispatch(obj);
-    const obj6 = importDefault(dependencyMap[19]);
+    importDefault(686).dispatch(obj);
+    const obj6 = importDefault(686);
   } else {
-    const result = arg1(dependencyMap[15]).UNSAFE_markDismissibleContentAsDismissed(arg1(dependencyMap[16]).DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
-    const obj3 = arg1(dependencyMap[15]);
+    const result = require(3946) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1334) /* DismissibleContent */.DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
+    const obj3 = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
     obj = { channelId, messageId, emoji };
-    importDefault(dependencyMap[5]).openLazy(arg1(dependencyMap[18])(dependencyMap[17], dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
-    const obj4 = importDefault(dependencyMap[5]);
+    importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(7065, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
+    const obj4 = importDefault(4098);
   }
 };

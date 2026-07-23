@@ -1,87 +1,65 @@
-// Module ID: 9004
-// Function ID: 70872
-// Dependencies: []
+// Module ID: 9011
+// Function ID: 70913
+// Dependencies: [57, 31, 27, 33, 4130, 689, 3991, 7919, 9012, 4663, 8284, 5122, 4126, 1212, 4131, 4134, 5109, 4554, 668, 2]
 
-// Module 9004
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ View: closure_5, Pressable: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[3]));
-let obj1 = arg1(dependencyMap[4]);
-let obj = { animatedViewContainer: { overflow: "hidden" }, container: { useFramePreviewOverrideStore: true, explicitContentGuilds: true }, measuringContainer: { flexDirection: "justifyContent", height: "shapes" }, descriptionContainer: { marginTop: 8 }, expandDescriptionCTAGradient: { GiftingBadgeExperiment: "_setUpdatePropsFor", CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT: "age", WishlistButtonBase: "targetFrames", IS_ADMIN: "png", host: "CONNECT" } };
-obj = { 657871458: null, 676398622: false, 1370448294: 0, -2090710710: 0, -1648602683: 0, backgroundColor: importDefault(dependencyMap[5]).colors.CARD_BACKGROUND_DEFAULT };
-obj.expandDescriptionCTA = obj;
-obj.collapseDescriptionCTA = { marginTop: 4 };
-obj1 = { gap: importDefault(dependencyMap[5]).space.PX_4 };
-obj.nameContainer = obj1;
+// Module 9011
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ View: closure_5, Pressable: closure_6, StyleSheet: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
+let closure_11 = ["black", "transparent"];
+let obj = { animatedViewContainer: { overflow: "hidden" }, container: { position: "relative", width: "100%" }, measuringContainer: { width: "100%", position: "absolute" }, descriptionContainer: { marginTop: 8 }, viewMoreCTA: { position: "absolute", right: 0, bottom: 0, pointerEvents: "none" }, maskFill: { flex: 1, backgroundColor: "black" }, maskLastLine: { flexDirection: "row" }, maskFade: { width: 32 }, collapseDescriptionCTA: { marginTop: 4 } };
+obj = { display: "flex", flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_4, overflow: "hidden" };
+obj.nameContainer = obj;
 obj.nameText = { flexShrink: 1 };
-const tmp3 = arg1(dependencyMap[3]);
-obj.partnerLabelWrapper = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-let closure_10 = obj1.createStyles(obj);
-let closure_11 = { code: "function DetailsHeaderTsx1(){const{height}=this.__closure;return{height:height.get()};}" };
-let closure_12 = { code: "function DetailsHeaderTsx2(){const{runOnJS,setShouldLineClamp}=this.__closure;runOnJS(setShouldLineClamp)(true);}" };
-const obj2 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: importDefault(dependencyMap[5]).radii.lg };
+_createForOfIteratorHelperLoose = { justifyContent: "center", paddingVertical: 2, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+obj.partnerLabelWrapper = _createForOfIteratorHelperLoose;
+let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_13 = { code: "function DetailsHeaderTsx1(){const{height}=this.__closure;return{height:height.get()};}" };
+let closure_14 = { code: "function DetailsHeaderTsx2(){const{runOnJS,setShouldLineClamp}=this.__closure;runOnJS(setShouldLineClamp)(true);}" };
 const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyle) {
   let application;
+  let c14;
+  let closure_6;
   let containerStyle;
-  let expandDescriptionCTAStyle;
   let hideName;
   let mainContainerStyle;
-  let tmp15;
-  ({ application, mainContainerStyle, expandDescriptionCTAStyle, hideName } = viewContainerStyle);
-  let importDefault;
-  let callback;
-  let React;
-  let closure_5;
-  let closure_6;
+  let tmp16;
+  ({ application, mainContainerStyle, hideName } = viewContainerStyle);
   let first2;
-  let closure_9;
-  let callback2;
-  let closure_11;
-  let closure_12;
+  let callback;
   let first3;
-  let closure_14;
+  let closure_11;
+  let callback2;
+  let closure_13;
+  c14 = undefined;
+  let first4;
+  let closure_16;
   let isScreenLandscape;
-  let tmp20;
-  function handleApplicationDescriptionPress() {
-    if (first) {
-      closure_5.current = false;
-      if (first1) {
-        const obj2 = ref(closure_2[12]);
-        const current = closure_10.current;
-        const fn = function t() {
-          callback(closure_2[6]).runOnJS(closure_12)(true);
-        };
-        let obj = { runOnJS: ref(closure_2[6]).runOnJS, setShouldLineClamp: _undefined };
-        fn.__closure = obj;
-        fn.__workletHash = 6050776164847;
-        fn.__initData = _undefined;
-        const result = store.set(obj2.withTiming(current, ref(closure_2[13]).timingStandard, "respect-motion-settings", fn));
-      } else {
-        _undefined(false);
-        obj = ref(closure_2[12]);
-        const result1 = store.set(obj.withTiming(ref.current, ref(closure_2[13]).timingStandard));
-      }
-      callback2(!first1);
-    }
-  }
-  const tmp = callback2();
-  let obj = arg1(closure_2[7]);
-  const ref = React.useRef(null);
-  const arg1 = ref;
-  const tmp4 = callback(React.useState(false), 2);
-  let first = tmp4[0];
-  importDefault = first;
-  closure_2 = tmp4[1];
-  const tmp6 = callback(React.useState(false), 2);
-  const first1 = tmp6[0];
-  callback = first1;
-  React = tmp6[1];
-  closure_5 = React.useRef(true);
+  let c18;
+  let tmp = callback2();
+  let obj = ref(7919);
+  ref = importAllResult.useRef(null);
+  const tmp4 = first1(importAllResult.useState(false), 2);
+  const first = tmp4[0];
+  const dependencyMap = tmp4[1];
+  const tmp6 = first1(importAllResult.useState(false), 2);
+  first1 = tmp6[0];
+  let closure_5 = importAllResult.useRef(true);
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
-  ({ containerHeight: closure_6, containerStyle } = function useContainerAnimation() {
-    let obj = ref(closure_2[6]);
+  ({ containerHeight: closure_6, containerStyle } = (function useContainerAnimation() {
+    let obj = ref(3991);
     const sharedValue = obj.useSharedValue(null);
     obj = {};
     const fn = function t() {
@@ -89,41 +67,26 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     };
     fn.__closure = { height: sharedValue };
     fn.__workletHash = 23826674246;
-    fn.__initData = closure_11;
-    obj.containerStyle = sharedValue(closure_2[6]).useAnimatedStyle(fn);
+    fn.__initData = closure_13;
+    obj.containerStyle = ref(3991).useAnimatedStyle(fn);
     obj.containerHeight = sharedValue;
     return obj;
-  }());
-  let obj1 = arg1(closure_2[7]);
+  })());
+  let obj1 = ref(7919);
   const sectionName = obj1.getSectionName(application);
-  let obj2 = arg1(closure_2[7]);
+  let obj2 = ref(7919);
   const str = obj2.getSectionDescription(application);
-  let tmp64Result = null != str && str.trim().length > 0;
-  const tmp11 = callback(React.useState(null), 2);
+  let tmp80Result = null != str && str.trim().length > 0;
+  const tmp11 = first1(tmp6[1].useState(null), 2);
   first2 = tmp11[0];
-  closure_9 = tmp11[1];
-  let backgroundColor = tmp.expandDescriptionCTA.backgroundColor;
-  let tmp13 = null != expandDescriptionCTAStyle && false !== expandDescriptionCTAStyle;
-  if (tmp13) {
-    tmp13 = "object" === typeof expandDescriptionCTAStyle;
-  }
-  if (tmp13) {
-    tmp13 = "backgroundColor" in expandDescriptionCTAStyle;
-  }
-  if (tmp13) {
-    tmp13 = "string" === typeof expandDescriptionCTAStyle.backgroundColor;
-  }
-  if (tmp13) {
-    backgroundColor = expandDescriptionCTAStyle.backgroundColor;
-  }
-  let obj3 = arg1(closure_2[8]);
-  const items = [obj3.hexOpacityToRgba(backgroundColor, 0), ];
-  let obj4 = arg1(closure_2[8]);
-  items[1] = obj4.hexOpacityToRgba(backgroundColor, 1);
-  callback2 = React.useRef(0);
-  closure_11 = React.useRef(0);
-  const tmp8 = function useContainerAnimation() {
-    let obj = ref(closure_2[6]);
+  callback = tmp11[1];
+  const tmp13 = first1(tmp6[1].useState(null), 2);
+  first3 = tmp13[0];
+  closure_11 = tmp13[1];
+  callback2 = importAllResult.useRef(0);
+  closure_13 = importAllResult.useRef(0);
+  const tmp8 = (function useContainerAnimation() {
+    let obj = ref(3991);
     const sharedValue = obj.useSharedValue(null);
     obj = {};
     const fn = function t() {
@@ -131,48 +94,53 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     };
     fn.__closure = { height: sharedValue };
     fn.__workletHash = 23826674246;
-    fn.__initData = closure_11;
-    obj.containerStyle = sharedValue(closure_2[6]).useAnimatedStyle(fn);
+    fn.__initData = closure_13;
+    obj.containerStyle = ref(3991).useAnimatedStyle(fn);
     obj.containerHeight = sharedValue;
     return obj;
-  }();
-  [tmp15, closure_12] = callback(React.useState(false), 2);
-  const tmp16 = callback(React.useState(false), 2);
-  first3 = tmp16[0];
-  closure_14 = tmp16[1];
-  const items1 = [str];
-  const memo = React.useMemo(() => {
+  })();
+  [tmp16, c14] = first1(tmp6[1].useState(false), 2);
+  const tmp17 = first1(tmp6[1].useState(false), 2);
+  first4 = tmp17[0];
+  closure_16 = tmp17[1];
+  const items = [str];
+  const memo = importAllResult.useMemo(() => {
     let result = null;
     if (null != str) {
-      result = ref(closure_2[9]).parseBioReactWithCachedAST(str);
-      const obj = ref(closure_2[9]);
+      result = ref(9012).parseBioReactWithCachedAST(str);
+      const obj = ref(9012);
     }
     return result;
-  }, items1);
-  let obj5 = arg1(closure_2[10]);
-  isScreenLandscape = obj5.useIsScreenLandscape();
-  tmp20 = importDefault(closure_2[11])(isScreenLandscape);
-  const items2 = [isScreenLandscape, tmp20];
-  const effect = React.useEffect(() => {
-    if (isScreenLandscape !== tmp20) {
+  }, items);
+  let obj3 = ref(4663);
+  isScreenLandscape = obj3.useIsScreenLandscape();
+  const tmp21 = first(8284)(isScreenLandscape);
+  c18 = tmp21;
+  const items1 = [isScreenLandscape, tmp21];
+  const effect = importAllResult.useEffect(() => {
+    if (isScreenLandscape !== c18) {
       callback4(false);
-      closure_11.current = 0;
-      closure_10.current = 0;
+      closure_13.current = 0;
+      closure_12.current = 0;
     }
-  }, items2);
+  }, items1);
+  let tmp24 = first;
+  const tmp15 = first1(tmp6[1].useState(false), 2);
+  if (first) {
+    tmp24 = !first1;
+  }
   obj = {};
-  const tmp14 = callback(React.useState(false), 2);
-  obj = { style: items3 };
-  const items3 = [tmp.animatedViewContainer, containerStyle, viewContainerStyle.viewContainerStyle];
+  obj = { style: items2 };
+  items2 = [tmp.animatedViewContainer, containerStyle, viewContainerStyle.viewContainerStyle];
   obj1 = {
-    style: items4,
+    style: items3,
     onLayout(nativeEvent) {
-      if (!first3) {
-        closure_10.current = nativeEvent.nativeEvent.layout.height;
-        const result = store.set(closure_10.current);
+      if (!first4) {
+        closure_12.current = nativeEvent.nativeEvent.layout.height;
+        const result = store.set(closure_12.current);
         let tmp7 = ref.current > 0;
         if (tmp7) {
-          tmp7 = closure_10.current > 0;
+          tmp7 = closure_12.current > 0;
         }
         if (tmp7) {
           callback4(true);
@@ -180,161 +148,214 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       }
     }
   };
-  const items4 = [tmp.container, mainContainerStyle];
+  items3 = [tmp.container, mainContainerStyle];
   obj2 = { style: tmp.nameContainer };
-  let tmp26 = !hideName;
-  if (tmp26) {
-    obj3 = { <string:2846932934>: "r", <string:1289959171>: 59, <string:1640337854>: 85.5, <string:2933637077>: null, style: tmp.nameText, children: sectionName };
-    tmp26 = str(arg1(closure_2[15]).Heading, obj3);
+  let tmp29 = !hideName;
+  if (tmp29) {
+    obj3 = { style: tmp.nameText, variant: "heading-lg/bold", color: "text-default", lineClamp: 1, children: sectionName };
+    tmp29 = first2(ref(4126).Heading, obj3);
   }
-  const items5 = [tmp26, ];
-  let tmp30 = null;
+  const items4 = [tmp29, ];
+  let tmp33 = null;
   if (isPartnerApplicationResult) {
-    obj4 = { style: tmp.partnerLabelWrapper };
-    obj5 = { cachedAt: true, edpbxy: true };
-    const intl = arg1(closure_2[16]).intl;
-    obj5.children = intl.string(arg1(closure_2[16]).t.LO4f0P);
-    obj4.children = str(arg1(closure_2[15]).Text, obj5);
-    tmp30 = str(closure_5, obj4);
+    const obj4 = { style: tmp.partnerLabelWrapper };
+    const obj5 = { variant: "text-xs/medium", color: "text-default" };
+    const intl = ref(1212).intl;
+    obj5.children = intl.string(ref(1212).t.LO4f0P);
+    obj4.children = first2(ref(4126).Text, obj5);
+    tmp33 = first2(closure_5, obj4);
   }
-  items5[1] = tmp30;
-  obj2.children = items5;
-  const items6 = [first2(closure_5, obj2), ];
-  let tmp36Result = tmp64Result;
-  if (tmp64Result) {
+  items4[1] = tmp33;
+  obj2.children = items4;
+  const items5 = [callback(closure_5, obj2), ];
+  let tmp39Result = tmp80Result;
+  if (tmp80Result) {
     const obj6 = {};
     let descriptionContainer = !hideName;
     if (descriptionContainer) {
       descriptionContainer = tmp.descriptionContainer;
     }
     obj6.style = descriptionContainer;
-    obj6.onPress = handleApplicationDescriptionPress;
+    obj6.onPress = function onPress() {
+      if (first) {
+        closure_5.current = false;
+        if (first1) {
+          const obj2 = ref(4131);
+          const current = closure_12.current;
+          const fn = function t() {
+            ref(table[6]).runOnJS(outer1_14)(true);
+          };
+          let obj = { runOnJS: ref(3991).runOnJS, setShouldLineClamp: _undefined };
+          fn.__closure = obj;
+          fn.__workletHash = 6050776164847;
+          fn.__initData = _undefined;
+          const result = store.set(obj2.withTiming(current, ref(4134).timingStandard, "respect-motion-settings", fn));
+        } else {
+          _undefined(false);
+          obj = ref(4131);
+          const result1 = store.set(obj.withTiming(ref.current, ref(4134).timingStandard));
+        }
+        callback(!first1);
+      }
+    };
     obj6.accessibilityRole = "button";
-    const obj7 = { lineClamp: num5, children: memo };
-    const items7 = [str(arg1(closure_2[15]).Text, obj7), ];
-    let tmp41 = first;
-    if (first) {
-      let tmp42 = null;
-      if (first1) {
-        const obj8 = { style: tmp.collapseDescriptionCTA };
-        const intl2 = arg1(closure_2[16]).intl;
-        obj8.children = intl2.string(arg1(closure_2[16]).t.D5xGUK);
-        tmp42 = str(arg1(closure_2[15]).Text, obj8);
-      }
-      tmp41 = tmp42;
-    }
-    items7[1] = tmp41;
-    obj6.children = items7;
-    tmp36Result = first2(closure_6, obj6);
-    const tmp36 = first2;
-    const tmp37 = closure_6;
-    const tmp38 = str;
-  }
-  items6[1] = tmp36Result;
-  obj1.children = items6;
-  const items8 = [first2(closure_5, obj1), ];
-  if (first) {
-    let tmp47Result = null;
-    if (!first1) {
-      const obj9 = {};
-      const items9 = [tmp.expandDescriptionCTA, expandDescriptionCTAStyle];
-      obj9.style = items9;
-      obj9.onPress = handleApplicationDescriptionPress;
-      obj9.accessibilityRole = "button";
-      const obj10 = { start: arg1(closure_2[18]).HorizontalGradient.START, end: arg1(closure_2[18]).HorizontalGradient.END, colors: items };
-      const items10 = [tmp.expandDescriptionCTAGradient, ];
+    const obj7 = {};
+    if (tmp24) {
+      const obj8 = { style: str.absoluteFill };
+      const obj9 = { style: tmp.maskFill };
+      const items6 = [first2(closure_5, obj9), ];
+      const obj10 = {};
+      const items7 = [tmp.maskLastLine, ];
       const obj11 = {};
-      let num9 = 0;
-      if (null != first2) {
-        num9 = first2 - 5;
+      let num5 = 0;
+      if (null != first3) {
+        num5 = first3;
       }
-      obj11.right = num9;
-      items10[1] = obj11;
-      obj10.style = items10;
-      const items11 = [str(importDefault(closure_2[17]), obj10), ];
-      const obj12 = {
+      obj11.height = num5;
+      items7[1] = obj11;
+      obj10.style = items7;
+      const obj12 = { style: tmp.maskFill };
+      const items8 = [first2(closure_5, obj12), , ];
+      const obj13 = { start: ref(668).HorizontalGradient.START, end: ref(668).HorizontalGradient.END, colors: closure_11, style: tmp.maskFade };
+      items8[1] = first2(first(4554), obj13);
+      const obj14 = {};
+      const obj15 = {};
+      let num8 = 0;
+      if (null != first2) {
+        num8 = first2;
+      }
+      obj15.width = num8;
+      obj14.style = obj15;
+      items8[2] = first2(closure_5, obj14);
+      obj10.children = items8;
+      items6[1] = callback(closure_5, obj10);
+      obj8.children = items6;
+      let tmp49Result = tmp49(tmp50, obj8);
+      const tmp53 = first2;
+      const tmp54 = closure_5;
+      const tmp57 = first(4554);
+    } else {
+      const obj16 = {};
+      const items9 = [str.absoluteFill, tmp.maskFill];
+      obj16.style = items9;
+      tmp49Result = first2(closure_5, obj16);
+    }
+    obj7.maskElement = tmp49Result;
+    const obj17 = { variant: "text-sm/medium", color: "text-default", lineClamp: num10, children: memo };
+    obj7.children = first2(ref(4126).Text, obj17);
+    const items10 = [first2(first(5109), obj7), , ];
+    let tmp63 = null;
+    if (tmp24) {
+      const obj18 = { style: tmp.viewMoreCTA };
+      const obj19 = {
         onLayout(nativeEvent) {
               if (null == first2) {
-                callback3(nativeEvent.nativeEvent.layout.width);
+                callback2(nativeEvent.nativeEvent.layout.width);
               }
-            }
+            },
+        variant: "text-sm/medium",
+        color: "text-brand"
       };
-      const intl3 = arg1(closure_2[16]).intl;
-      const items12 = [, intl3.string(arg1(closure_2[16]).t.OBCR+p)];
-      obj12.children = items12;
-      items11[1] = first2(arg1(closure_2[15]).Text, obj12);
-      obj9.children = items11;
-      tmp47Result = first2(closure_6, obj9);
-      const tmp47 = first2;
-      const tmp48 = closure_6;
-      const tmp49 = str;
-      const tmp52 = importDefault(closure_2[17]);
+      const intl2 = ref(1212).intl;
+      const items11 = ["\u2026 ", intl2.string(ref(1212).t["OBCR+p"])];
+      obj19.children = items11;
+      obj18.children = callback(ref(4126).Text, obj19);
+      tmp63 = first2(closure_5, obj18);
     }
-    first = tmp47Result;
+    items10[1] = tmp63;
+    let tmp69 = null;
+    if (first) {
+      tmp69 = null;
+      if (first1) {
+        const obj20 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA };
+        const intl3 = ref(1212).intl;
+        obj20.children = intl3.string(ref(1212).t.D5xGUK);
+        tmp69 = first2(ref(4126).Text, obj20);
+      }
+    }
+    items10[2] = tmp69;
+    obj6.children = items10;
+    tmp39Result = callback(closure_6, obj6);
+    const tmp39 = callback;
+    const tmp40 = closure_6;
+    const tmp41 = first2;
+    const tmp44 = first(5109);
+    const tmp60 = first2;
   }
-  items8[1] = first;
-  obj.children = items8;
-  const items13 = [first2(importDefault(closure_2[6]).View, obj), ];
-  let tmp58Result = !first3;
-  if (tmp58Result) {
-    const obj13 = {};
-    const items14 = [mainContainerStyle, tmp.measuringContainer, { "Bool(false)": "external", "Bool(false)": "<string:24183296>" }];
-    obj13.style = items14;
-    obj13.onLayout = function onLayout(nativeEvent) {
+  items5[1] = tmp39Result;
+  obj1.children = items5;
+  obj.children = callback(closure_5, obj1);
+  const items12 = [first2(first(3991).View, obj), ];
+  let tmp74Result = !first4;
+  if (tmp74Result) {
+    const obj21 = {};
+    const items13 = [mainContainerStyle, tmp.measuringContainer, { opacity: 0, pointerEvents: "none" }];
+    obj21.style = items13;
+    obj21.onLayout = function onLayout(nativeEvent) {
       ref.current = nativeEvent.nativeEvent.layout.height;
       let tmp = ref.current > 0;
       if (tmp) {
-        tmp = closure_10.current > 0;
+        tmp = closure_12.current > 0;
       }
       if (tmp) {
         callback4(true);
       }
     };
-    let tmp60 = !hideName;
-    if (tmp60) {
-      const obj14 = { cachedAt: null, edpbxy: null, children: sectionName };
-      tmp60 = str(arg1(closure_2[15]).Heading, obj14);
+    let tmp76 = !hideName;
+    if (tmp76) {
+      const obj22 = { variant: "heading-lg/bold", color: "text-default", children: sectionName };
+      tmp76 = first2(ref(4126).Heading, obj22);
     }
-    const items15 = [tmp60, ];
-    if (tmp64Result) {
-      const obj15 = {};
+    const items14 = [tmp76, ];
+    if (tmp80Result) {
+      const obj23 = {};
       let descriptionContainer2 = !hideName;
       if (descriptionContainer2) {
         descriptionContainer2 = tmp.descriptionContainer;
       }
-      obj15.style = descriptionContainer2;
-      const obj16 = {
+      obj23.style = descriptionContainer2;
+      const obj24 = {
+        variant: "text-sm/medium",
+        color: "text-default",
         onTextLayout(nativeEvent) {
+              const lines = nativeEvent.nativeEvent.lines;
+              let tmp = null == first3;
+              if (tmp) {
+                tmp = null != lines[0];
+              }
+              if (tmp) {
+                callback3(lines[0].height);
+              }
               if (null == ref.current) {
                 ref.current = length;
               }
-              if (nativeEvent.nativeEvent.lines.length > 3) {
+              if (lines.length > 3) {
                 _undefined(true);
-                callback(true);
+                dependencyMap(true);
               }
             },
         children: memo
       };
-      const items16 = [str(arg1(closure_2[15]).Text, obj16), ];
-      const obj17 = { style: tmp.collapseDescriptionCTA };
-      const intl4 = arg1(closure_2[16]).intl;
-      obj17.children = intl4.string(arg1(closure_2[16]).t.D5xGUK);
-      items16[1] = str(arg1(closure_2[15]).Text, obj17);
-      obj15.children = items16;
-      tmp64Result = first2(closure_5, obj15);
-      const tmp64 = first2;
-      const tmp65 = closure_5;
+      const items15 = [first2(ref(4126).Text, obj24), ];
+      const obj25 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA };
+      const intl4 = ref(1212).intl;
+      obj25.children = intl4.string(ref(1212).t.D5xGUK);
+      items15[1] = first2(ref(4126).Text, obj25);
+      obj23.children = items15;
+      tmp80Result = callback(closure_5, obj23);
+      const tmp80 = callback;
+      const tmp81 = closure_5;
     }
-    items15[1] = tmp64Result;
-    obj13.children = items15;
-    tmp58Result = first2(closure_5, obj13);
-    const tmp58 = first2;
-    const tmp59 = closure_5;
+    items14[1] = tmp80Result;
+    obj21.children = items14;
+    tmp74Result = callback(closure_5, obj21);
+    const tmp74 = callback;
+    const tmp75 = closure_5;
   }
-  items13[1] = tmp58Result;
-  obj.children = items13;
-  return first2(closure_9, obj);
+  items12[1] = tmp74Result;
+  obj.children = items12;
+  return callback(first3, obj);
 });
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/DetailsHeader.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/DetailsHeader.tsx");
 
 export default memoResult;

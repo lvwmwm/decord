@@ -1,54 +1,58 @@
-// Module ID: 11297
-// Function ID: 87912
+// Module ID: 11307
+// Function ID: 87962
 // Name: AppLauncherUserOption
-// Dependencies: []
+// Dependencies: [57, 31, 4122, 33, 4130, 689, 566, 11299, 1820, 4098, 11308, 1934, 11308, 1273, 11302, 9104, 11305, 4126, 2]
 // Exports: default
 
-// Module 11297 (AppLauncherUserOption)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_SUBTLE };
-obj.iconWrapper = obj;
-let closure_7 = obj.createStyles(obj);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/app_launcher/native/options/user/AppLauncherUserOption.tsx");
+// Module 11307 (AppLauncherUserOption)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
+_createForOfIteratorHelperLoose.iconWrapper = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/options/user/AppLauncherUserOption.tsx");
 
 export default function AppLauncherUserOption(option) {
+  let _createForOfIteratorHelperLoose;
   let autoFocus;
   let channel;
+  let _slicedToArray;
+  let dependencyMap;
   let hasError;
+  let importDefault;
   let style;
   let tmp6;
   option = option.option;
-  const arg1 = option;
-  ({ initialValue: closure_1, onUserPress: closure_2, onActionSheetDismiss: closure_3, channel } = option);
-  const React = channel;
+  ({ initialValue: importDefault, onUserPress: dependencyMap, onActionSheetDismiss: _slicedToArray, channel } = option);
   const onPress = option.onPress;
   ({ style, autoFocus, hasError } = option);
   const guild_id = channel.guild_id;
-  let obj = arg1(dependencyMap[6]);
+  let obj = option(566);
   const items = [onPress];
   const stateFromStores = obj.useStateFromStores(items, () => onPress.useReducedMotion);
-  const tmp3 = callback(React.useState(() => {
+  const tmp3 = callback(channel.useState(() => {
     let userId = null;
-    if (null != lib) {
+    if (null != closure_1) {
       userId = null;
-      if ("userMention" === lib.type) {
-        userId = lib.userId;
+      if ("userMention" === closure_1.type) {
+        userId = closure_1.userId;
       }
     }
     return userId;
   }), 2);
   const first = tmp3[0];
   const jsx = tmp3[1];
-  const tmp = callback2();
-  [tmp6, closure_7] = callback(React.useState(null), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  [tmp6, _createForOfIteratorHelperLoose] = callback(channel.useState(null), 2);
   obj = { style, option, hasError };
   let tmp9 = null != tmp6;
-  const tmp5 = callback(React.useState(null), 2);
+  const tmp5 = callback(channel.useState(null), 2);
   const tmp7 = jsx;
   if (!tmp9) {
     tmp9 = null != first;
@@ -58,46 +62,46 @@ export default function AppLauncherUserOption(option) {
     if (null != onPress) {
       onPress();
     }
-    let obj = option(paths[8]);
+    let obj = option(outer1_2[8]);
     const result = obj.dismissGlobalKeyboard();
-    const obj2 = lib(paths[9]);
+    const obj2 = outer1_1(outer1_2[9]);
     obj = {
       option,
       channel,
       onUserPress(user) {
         user = user.user;
         if ("string" === typeof user) {
-          callback2(user);
+          outer1_6(user);
         } else {
-          callback2(user.id);
-          callback3(user);
+          outer1_6(user.id);
+          outer1_7(user);
         }
-        callback({ user });
+        outer1_2({ user });
       },
-      onActionSheetDismiss: closure_3
+      onActionSheetDismiss: _slicedToArray
     };
-    obj2.openLazy(option(paths[11])(paths[10], paths.paths), option(paths[12]).APP_LAUNCHER_USER_LIST_ACTION_SHEET_KEY, obj);
+    obj2.openLazy(option(outer1_2[11])(outer1_2[10], outer1_2.paths), option(outer1_2[12]).APP_LAUNCHER_USER_LIST_ACTION_SHEET_KEY, obj);
   };
   if (null != tmp6) {
-    obj = { user: tmp6, guildId: guild_id, animate: !stateFromStores, size: arg1(dependencyMap[13]).AvatarSizes.REFRESH_MEDIUM_32 };
-    let tmp15 = jsx(arg1(dependencyMap[13]).Avatar, obj);
+    obj = { user: tmp6, guildId: guild_id, animate: !stateFromStores, size: option(1273).AvatarSizes.REFRESH_MEDIUM_32 };
+    let tmp15 = jsx(option(1273).Avatar, { user: tmp6, guildId: guild_id, animate: !stateFromStores, size: option(1273).AvatarSizes.REFRESH_MEDIUM_32 });
   } else {
-    const obj1 = { icon: jsx(arg1(dependencyMap[15]).UserCircleIcon, {}), wrapperStyle: tmp.iconWrapper };
-    tmp15 = jsx(importDefault(dependencyMap[14]), obj1);
-    const tmp13 = importDefault(dependencyMap[14]);
+    const obj1 = { icon: jsx(option(9104).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
+    tmp15 = jsx(importDefault(11302), { icon: jsx(option(9104).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper });
+    const tmp13 = importDefault(11302);
   }
   obj.leading = tmp15;
   if (null != tmp6) {
-    const obj2 = { guildId: guild_id, user: tmp6 };
-    let tmp19 = jsx(importDefault(dependencyMap[16]), obj2);
+    let obj2 = { guildId: guild_id, user: tmp6 };
+    let tmp19 = jsx(importDefault(11305), { guildId: guild_id, user: tmp6 });
   } else {
     tmp19 = null;
     if (null != first) {
-      const obj3 = { children: first };
-      tmp19 = jsx(arg1(dependencyMap[17]).Text, obj3);
+      const obj3 = { variant: "text-md/medium", color: "text-default", children: first };
+      tmp19 = jsx(option(4126).Text, { variant: "text-md/medium", color: "text-default", children: first });
     }
   }
   obj.selectedItemName = tmp19;
   obj.autoFocus = autoFocus;
-  return tmp7(importDefault(dependencyMap[7]), obj);
+  return tmp7(importDefault(11299), obj);
 };

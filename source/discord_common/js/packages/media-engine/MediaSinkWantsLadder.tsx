@@ -1,52 +1,60 @@
-// Module ID: 4274
-// Function ID: 37410
+// Module ID: 4278
+// Function ID: 37442
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 4191, 2]
 
-// Module 4274 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4278 (_createForOfIteratorHelperLoose)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import DesktopSources from "DesktopSources";
+
+let closure_2;
+let closure_3;
+let closure_4;
+let closure_5;
+function _createForOfIteratorHelperLoose(iterable) {
+  let _classCallCheck = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _classCallCheck = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (_defineProperties >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        _defineProperties = tmp3 + 1;
+        obj.value = length[+_defineProperties];
       }
       return obj;
     };
@@ -83,17 +91,14 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-({ defaultVideoQualityOptions: closure_2, VIDEO_QUALITY_FRAMERATE: closure_3, VIDEO_QUALITY_FRAMERATE_MUTED_2: closure_4, VIDEO_QUALITY_FRAMERATE_MUTED: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const tmp3 = () => {
+({ defaultVideoQualityOptions: closure_2, VIDEO_QUALITY_FRAMERATE: closure_3, VIDEO_QUALITY_FRAMERATE_MUTED_2: closure_4, VIDEO_QUALITY_FRAMERATE_MUTED: closure_5 } = DesktopSources);
+let tmp3 = (() => {
   class MediaSinkWantsLadder {
     constructor() {
       tmp = arg0;
       self = this;
       if (arg0 === undefined) {
-        tmp = closure_2;
+        tmp = outer1_2;
       }
       tmp2 = MediaSinkWantsLadder(self, MediaSinkWantsLadder);
       ({ width, height } = tmp.videoBudget);
@@ -110,7 +115,6 @@ const tmp3 = () => {
       throw error;
     }
   }
-  let closure_0 = MediaSinkWantsLadder;
   let obj = {
     key: "getMaxSinkValue",
     value(arg0) {
@@ -127,7 +131,7 @@ const tmp3 = () => {
         throw error;
       } else {
         const wantValue2 = self.orderedLadder[0].wantValue;
-        const tmp9 = callback(self.orderedLadder);
+        const tmp9 = outer1_6(self.orderedLadder);
         const iter3 = tmp9();
         let iter2 = iter3;
         let tmp2 = wantValue2;
@@ -161,11 +165,11 @@ const tmp3 = () => {
       }
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "getResolution",
     value(arg0) {
-      const tmp = callback(this.orderedLadder);
+      const tmp = outer1_6(this.orderedLadder);
       const iter = tmp();
       let iter2 = iter;
       let tmp2 = null;
@@ -198,7 +202,7 @@ const tmp3 = () => {
       let budgetPortion;
       let height;
       let width;
-      const set = new Set([]);
+      const set = new Set([0, 4, 8, 10]);
       const items = [];
       let num = 1;
       let num2 = 1;
@@ -217,8 +221,8 @@ const tmp3 = () => {
       let num3 = 100;
       let num4 = 0;
       do {
-        let tmp4 = closure_6;
-        let tmp5 = closure_6(items);
+        let tmp4 = outer1_6;
+        let tmp5 = outer1_6(items);
         let iter = tmp5();
         let iter2 = iter;
         width = 0;
@@ -248,10 +252,10 @@ const tmp3 = () => {
         }
         let diff = num3;
         if (num4 !== num5) {
-          let tmp9 = closure_0;
-          let obj1 = { width: num5, height: num6, budgetPortion: num7, mutedFramerate: closure_0.getMutedFramerate(num3) };
-          let tmp10 = closure_3;
-          obj1.framerate = closure_3;
+          let tmp9 = MediaSinkWantsLadder;
+          let obj1 = { width: num5, height: num6, budgetPortion: num7, mutedFramerate: MediaSinkWantsLadder.getMutedFramerate(num3) };
+          let tmp10 = outer1_3;
+          obj1.framerate = outer1_3;
           obj[num3] = obj1;
           diff = num3 - 10;
           num4 = num5;
@@ -267,7 +271,7 @@ const tmp3 = () => {
     {
       key: "getMutedFramerate",
       value(arg0) {
-        return arg0 <= 20 ? closure_4 : closure_5;
+        return arg0 <= 20 ? outer1_4 : outer1_5;
       }
     },
     {
@@ -277,7 +281,7 @@ const tmp3 = () => {
         const items = [];
         const keys = Object.keys(arg0);
         const mapped = keys.map((arg0) => Number(arg0));
-        const tmp = callback(mapped.sort((arg0, arg1) => arg0 - arg1));
+        const tmp = outer1_6(mapped.sort((arg0, arg1) => arg0 - arg1));
         let iter = tmp();
         if (!iter.done) {
           do {
@@ -299,7 +303,7 @@ const tmp3 = () => {
     }
   ];
   return callback(MediaSinkWantsLadder, items, items1);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/media-engine/MediaSinkWantsLadder.tsx");
+})();
+let result = require("DesktopSources").fileFinishedImporting("../discord_common/js/packages/media-engine/MediaSinkWantsLadder.tsx");
 
 export const MediaSinkWantsLadder = tmp3;

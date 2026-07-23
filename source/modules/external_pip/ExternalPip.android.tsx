@@ -1,35 +1,38 @@
-// Module ID: 10221
-// Function ID: 78975
+// Module ID: 10233
+// Function ID: 79047
 // Name: NativeModules
-// Dependencies: []
+// Dependencies: [6, 7, 27, 2]
 
-// Module 10221 (NativeModules)
+// Module 10233 (NativeModules)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import get_ActivityIndicator from "get ActivityIndicator";
+
 let NativeModules;
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-({ NativeEventEmitter: closure_2, NativeModules } = arg1(dependencyMap[2]));
+let closure_2;
+({ NativeEventEmitter: closure_2, NativeModules } = get_ActivityIndicator);
 const ExternalPip = NativeModules.ExternalPip;
-let tmp3 = () => {
+let tmp3 = (() => {
   class ExternalPip {
     constructor() {
       tmp = ExternalPip(this, ExternalPip);
       this._enabled = false;
       this._isInPipMode = false;
-      tmp2 = new closure_2(closure_3.PipAndroid);
+      tmp2 = new outer1_2(outer1_3.PipAndroid);
       this.eventEmitter = tmp2;
       return;
     }
   }
-  let closure_0 = ExternalPip;
   let obj = {
     key: "addOnPipModeChangedListener",
     value(arg0) {
-      const ExternalPip = this;
+      const self = this;
+      let _defineProperties = arg0;
       const eventEmitter = this.eventEmitter;
       return eventEmitter.addListener("onPipModeChanged", (isInPipMode) => {
         isInPipMode = isInPipMode.isInPipMode;
         self._isInPipMode = isInPipMode;
-        isInPipMode(isInPipMode);
+        callback(isInPipMode);
       });
     }
   };
@@ -64,13 +67,13 @@ let tmp3 = () => {
   items[5] = {
     key: "setPipAspectRatio",
     value(arg0, arg1) {
-      store.setPipAspectRatio(arg0, arg1);
+      outer1_4.setPipAspectRatio(arg0, arg1);
     }
   };
   items[6] = {
     key: "refreshPipUi",
     value() {
-      store.refreshPipUi();
+      outer1_4.refreshPipUi();
     }
   };
   items[7] = {
@@ -83,13 +86,13 @@ let tmp3 = () => {
     key: "setEnabled",
     value(_enabled) {
       this._enabled = _enabled;
-      store.setEnabled(this._enabled);
+      outer1_4.setEnabled(this._enabled);
     }
   };
   items[9] = {
     key: "setActive",
     value(isActive) {
-      return store.setActive(isActive);
+      return outer1_4.setActive(isActive);
     }
   };
   items[10] = {
@@ -101,7 +104,7 @@ let tmp3 = () => {
   items[11] = {
     key: "isSupported",
     value() {
-      return true === store.isSupported;
+      return true === outer1_4.isSupported;
     }
   };
   items[12] = {
@@ -111,9 +114,8 @@ let tmp3 = () => {
     }
   };
   return callback(ExternalPip, items);
-}();
+})();
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/external_pip/ExternalPip.android.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/external_pip/ExternalPip.android.tsx");
 
 export default tmp3;

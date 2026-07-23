@@ -1,14 +1,17 @@
-// Module ID: 10545
-// Function ID: 82388
+// Module ID: 10555
+// Function ID: 82438
 // Name: doRectanglesIntersectWorklet
-// Dependencies: []
+// Dependencies: [10211, 686, 2]
 // Exports: setPipEnabledWhileFocusedOnActivityOrStream, updateVoiceCallOverlayLayoutState
 
-// Module 10545 (doRectanglesIntersectWorklet)
-const _module = require(dependencyMap[0]);
-({ MIN_MARGIN_BETWEEN_OVERLAYS: closure_2, VoiceCallOverlayType: closure_3 } = _module);
+// Module 10555 (doRectanglesIntersectWorklet)
+import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
+
+let closure_2;
+let closure_3;
+({ MIN_MARGIN_BETWEEN_OVERLAYS: closure_2, VoiceCallOverlayType: closure_3 } = BOX_MODE_ACTIONSHEET_WIDTH);
 let closure_4 = { code: "function doRectanglesIntersectWorklet_VoiceCallOverlayUtilsTsx1(rectA,rectB,minMarginBetweenOverlays){if(rectA==null||rectA.x==null||rectA.y==null||rectA.width==null||rectA.height==null||rectB==null||rectB.x==null||rectB.y==null||rectB.width==null||rectB.height==null){return false;}const minAx=rectA.x-minMarginBetweenOverlays;const maxAx=rectA.x+rectA.width+minMarginBetweenOverlays;const minAy=rectA.y-minMarginBetweenOverlays;const maxAy=rectA.y+rectA.height+minMarginBetweenOverlays;const minBx=rectB.x;const maxBx=rectB.x+rectB.width;const minBy=rectB.y;const maxBy=rectB.y+rectB.height;const aLeftOfB=maxAx<minBx;const aRightOfB=minAx>maxBx;const aBelowB=minAy>maxBy;const aAboveB=maxAy<minBy;return!(aLeftOfB||aRightOfB||aAboveB||aBelowB);}" };
-let closure_5 = () => {
+let closure_5 = (() => {
   function doRectanglesIntersectWorklet(arg0, arg1) {
     if (null != arg0) {
       if (null != arg0.x) {
@@ -50,24 +53,21 @@ let closure_5 = () => {
   doRectanglesIntersectWorklet.__workletHash = 697248006216;
   doRectanglesIntersectWorklet.__initData = closure_4;
   return doRectanglesIntersectWorklet;
-}();
+})();
 let closure_6 = { code: "function doesTargetPositionIntersectOtherOverlaysWorklet_VoiceCallOverlayUtilsTsx2(voiceCallOverlayLayoutStates,voiceCallOverlayType,targetRectangle){const{VoiceCallOverlayType,doRectanglesIntersectWorklet,MIN_MARGIN_BETWEEN_OVERLAYS}=this.__closure;switch(voiceCallOverlayType){case VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON:{if(!voiceCallOverlayLayoutStates[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE].isVisible){return false;}const doRectanglesIntersect=doRectanglesIntersectWorklet(targetRectangle,voiceCallOverlayLayoutStates[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE],MIN_MARGIN_BETWEEN_OVERLAYS);if(doRectanglesIntersect){return true;}break;}case VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE:{if(!voiceCallOverlayLayoutStates[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON].isVisible){return false;}const doRectanglesIntersect=doRectanglesIntersectWorklet(targetRectangle,voiceCallOverlayLayoutStates[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON],MIN_MARGIN_BETWEEN_OVERLAYS);if(doRectanglesIntersect){return true;}break;}}return false;}" };
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/video_calls/native/VoiceCallOverlayUtils.tsx");
-
-export const doesTargetPositionIntersectOtherOverlaysWorklet = () => {
-  function doesTargetPositionIntersectOtherOverlaysWorklet(arg0, arg1, arg2) {
-    if (constants.VOICE_CONTROLS_TOGGLE_BUTTON === arg1) {
-      if (arg0[closure_3.CAMERA_PREVIEW_PICTURE_IN_PICTURE].isVisible) {
-        if (callback(arg2, arg0[closure_3.CAMERA_PREVIEW_PICTURE_IN_PICTURE], closure_2)) {
+const tmp3 = (() => {
+  export function doesTargetPositionIntersectOtherOverlaysWorklet(arg0, arg1, arg2) {
+    if (outer1_3.VOICE_CONTROLS_TOGGLE_BUTTON === arg1) {
+      if (arg0[outer1_3.CAMERA_PREVIEW_PICTURE_IN_PICTURE].isVisible) {
+        if (outer1_5(arg2, arg0[outer1_3.CAMERA_PREVIEW_PICTURE_IN_PICTURE], outer1_2)) {
           return true;
         }
       } else {
         return false;
       }
-    } else if (constants.CAMERA_PREVIEW_PICTURE_IN_PICTURE === arg1) {
-      if (arg0[closure_3.VOICE_CONTROLS_TOGGLE_BUTTON].isVisible) {
-        if (callback(arg2, arg0[closure_3.VOICE_CONTROLS_TOGGLE_BUTTON], closure_2)) {
+    } else if (outer1_3.CAMERA_PREVIEW_PICTURE_IN_PICTURE === arg1) {
+      if (arg0[outer1_3.VOICE_CONTROLS_TOGGLE_BUTTON].isVisible) {
+        if (outer1_5(arg2, arg0[outer1_3.VOICE_CONTROLS_TOGGLE_BUTTON], outer1_2)) {
           return true;
         }
       } else {
@@ -80,14 +80,16 @@ export const doesTargetPositionIntersectOtherOverlaysWorklet = () => {
   doesTargetPositionIntersectOtherOverlaysWorklet.__workletHash = 4190950618494;
   doesTargetPositionIntersectOtherOverlaysWorklet.__initData = closure_6;
   return doesTargetPositionIntersectOtherOverlaysWorklet;
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/video_calls/native/VoiceCallOverlayUtils.tsx");
+
 export const updateVoiceCallOverlayLayoutState = function updateVoiceCallOverlayLayoutState(voiceCallOverlayType, voiceCallOverlayLayoutState) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(686);
   obj = { type: "VOICE_CALL_OVERLAY_LAYOUT_STATE_UPDATE", voiceCallOverlayType, voiceCallOverlayLayoutState };
   obj.dispatch(obj);
 };
 export const setPipEnabledWhileFocusedOnActivityOrStream = function setPipEnabledWhileFocusedOnActivityOrStream(pipEnabledWhileFocusedOnActivityOrStream) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(686);
   obj = { type: "VOICE_CALL_SET_PIP_ENABLED_FOR_ACTIVITY_OR_STREAM", pipEnabledWhileFocusedOnActivityOrStream };
   obj.dispatch(obj);
 };

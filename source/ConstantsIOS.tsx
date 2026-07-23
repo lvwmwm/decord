@@ -1,13 +1,15 @@
 // Module ID: 668
 // Function ID: 8272
-// Name: DrawerSourceTypes
-// Dependencies: []
+// Name: keys
+// Dependencies: [2]
 
-// Module 668 (DrawerSourceTypes)
-const frozen = Object.freeze({ START: { 0: "%FunctionPrototype%", 0: "paddingStart" }, END: { 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, 0: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 } });
-const frozen1 = Object.freeze({ START: { 0: "%FunctionPrototype%", 0: "paddingStart" }, END: {} });
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("ConstantsIOS.tsx");
+// Module 668 (keys)
+import set from "set";
+
+let set = new Set(["token", "fingerprint"]);
+const frozen = Object.freeze({ START: { x: 0, y: 0 }, END: { x: 1, y: 0 } });
+const frozen1 = Object.freeze({ START: { x: 0, y: 0 }, END: { x: 0, y: 1 } });
+const result = set.fileFinishedImporting("ConstantsIOS.tsx");
 
 export const DrawerSourceTypes = { BACK_BUTTON: "Back Button", SWIPE: "Swipe", MUTUAL_GUILD_ITEM: "Mutual Guild Item", MEMBER_LIST_ICON: "Member List Icon", CHANNEL_DRAWER_ICON: "Channel Drawer Icon", CHANNEL_TITLE: "Channel Title", PREMIUM_GUILD_SUBSCRIPTION_GUILD_LIST_UPSELL: "Premium Guild Subscription Guild List Upsell" };
 export const AppStates = { INACTIVE: "inactive", BACKGROUND: "background", ACTIVE: "active" };
@@ -32,10 +34,10 @@ export const ActivityPartyApplicationNames = { spotify: "Spotify" };
 export const CACHE_STORE_LAZY_KEY = "CacheStoreLazy";
 export const CACHE_STORE_CHANNELS_LAZY_KEY = "CacheStoreChannelsLazy";
 export const CACHE_STORE_KEY = "CacheStore";
-export const STORAGE_SECURE_KEYS = new Set([true, true]);
+export const STORAGE_SECURE_KEYS = set;
 export const MAX_INVITE_AVATARS_TO_SHOW = 6;
 export const INVITE_EMBED_AVATAR_SIZE = 50;
-export const UPLOAD_BANNER_SIZE = {};
+export const UPLOAD_BANNER_SIZE = { width: 1080, height: 432 };
 export const UPLOAD_STICKER_SIZE = 320;
 export const UPLOAD_MEDIUM_SIZE = 256;
 export const UPLOAD_SMALL_SIZE = 128;

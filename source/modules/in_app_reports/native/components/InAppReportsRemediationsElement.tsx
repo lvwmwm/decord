@@ -1,27 +1,29 @@
-// Module ID: 12219
-// Function ID: 93807
+// Module ID: 12333
+// Function ID: 95958
 // Name: RemediationsElement
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5503, 1212, 2]
 // Exports: default
 
-// Module 12219 (RemediationsElement)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_32 };
-obj.container = obj;
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsRemediationsElement.tsx");
+// Module 12333 (RemediationsElement)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_32 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsRemediationsElement.tsx");
 
 export default function RemediationsElement(children) {
-  let obj = { style: callback().container };
+  let obj = { style: _createForOfIteratorHelperLoose().container };
   obj = {};
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.title = intl.string(arg1(dependencyMap[6]).t.k+QA9N);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["k+QA9N"]);
   obj.hasIcons = true;
   obj.children = children.children;
-  obj.children = jsx(arg1(dependencyMap[5]).TableRowGroup, obj);
-  return <View {...obj} />;
+  obj.children = jsx(require(5503) /* TableRowGroupTitle */.TableRowGroup, {});
+  return <View />;
 };

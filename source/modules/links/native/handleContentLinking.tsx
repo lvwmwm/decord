@@ -1,21 +1,22 @@
-// Module ID: 9519
-// Function ID: 74089
+// Module ID: 9526
+// Function ID: 74130
 // Name: _handleContentLinking
-// Dependencies: []
+// Dependencies: [5, 7461, 653, 4337, 5628, 1198, 9527, 2]
 // Exports: default
 
-// Module 9519 (_handleContentLinking)
+// Module 9526 (_handleContentLinking)
+import shouldNavigate from "shouldNavigate";
+import { Routes } from "ME";
+
+const require = arg1;
 function _handleContentLinking() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleContentLinking = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-arg1(dependencyMap[1]).addPostConnectionCallback;
-const Routes = arg1(dependencyMap[2]).Routes;
-let closure_6 = null;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/links/native/handleContentLinking.tsx");
+require("shouldWaitForBlockingModals").addPostConnectionCallback;
+let c6 = null;
+const result = require("ME").fileFinishedImporting("modules/links/native/handleContentLinking.tsx");
 
 export default function handleContentLinking() {
   return _handleContentLinking(...arguments);

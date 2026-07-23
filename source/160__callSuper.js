@@ -1,9 +1,17 @@
 // Module ID: 160
 // Function ID: 2450
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 99, 100, 155]
 
 // Module 160 (_callSuper)
+import _classPrivateFieldKey from "_classPrivateFieldKey";
+import PerformanceEntry from "PerformanceEntry";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import importDefaultResult from "_classPrivateFieldKey";
+
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -15,35 +23,28 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_2(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _classPrivateFieldKey = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _classPrivateFieldKey;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-const importDefaultResult = importDefault(dependencyMap[6]);
 let closure_6 = importDefaultResult("detail");
 let closure_7 = importDefaultResult("detail");
 
-export const PerformanceMark = (PerformanceEntry) => {
+export const PerformanceMark = ((PerformanceEntry) => {
   class PerformanceMark {
     constructor(arg0, arg1) {
       tmp = PerformanceMark;
       tmp2 = PerformanceMark(this, PerformanceMark);
       obj = { name: PerformanceEntry, entryType: "mark" };
       startTime = undefined;
-      tmp3 = closure_8;
+      tmp3 = outer1_8;
       if (null != arg1) {
         startTime = arg1.startTime;
       }
@@ -57,53 +58,51 @@ export const PerformanceMark = (PerformanceEntry) => {
       items = [];
       items[0] = obj;
       tmp3Result = tmp3(this, tmp, items);
-      definePropertyResult = Object.defineProperty(tmp3Result, closure_6, { writable: true, value: undefined });
+      definePropertyResult = Object.defineProperty(tmp3Result, outer1_6, { writable: true, value: undefined });
       if (arg1) {
-        tmp8 = closure_5;
-        tmp9 = closure_6;
-        closure_5(tmp3Result, closure_6)[closure_6] = arg1.detail;
+        tmp8 = outer1_5;
+        tmp9 = outer1_6;
+        outer1_5(tmp3Result, outer1_6)[outer1_6] = arg1.detail;
       }
       return tmp3Result;
     }
   }
-  let closure_0 = PerformanceMark;
   callback3(PerformanceMark, PerformanceEntry);
-  const items = [
+  let items = [
     {
       key: "detail",
       get() {
-        return callback(this, closure_6)[closure_6];
+        return outer1_5(this, outer1_6)[outer1_6];
       }
     }
   ];
   return callback(PerformanceMark, items);
-}(arg1(dependencyMap[7]).PerformanceEntry);
-export const PerformanceMeasure = (PerformanceEntry) => {
+})(require("PerformanceEntry").PerformanceEntry);
+export const PerformanceMeasure = ((PerformanceEntry) => {
   class PerformanceMeasure {
     constructor(arg0, arg1) {
       tmp = PerformanceMeasure(this, PerformanceMeasure);
       obj = { name: PerformanceEntry, entryType: "measure", startTime: arg1.startTime, duration: arg1.duration };
       items = [];
       items[0] = obj;
-      tmp2 = closure_8(this, PerformanceMeasure, items);
-      definePropertyResult = Object.defineProperty(tmp2, closure_7, { writable: true, value: undefined });
+      tmp2 = outer1_8(this, PerformanceMeasure, items);
+      definePropertyResult = Object.defineProperty(tmp2, outer1_7, { writable: true, value: undefined });
       if (arg1) {
-        tmp4 = closure_5;
-        tmp5 = closure_7;
-        closure_5(tmp2, closure_7)[closure_7] = arg1.detail;
+        tmp4 = outer1_5;
+        tmp5 = outer1_7;
+        outer1_5(tmp2, outer1_7)[outer1_7] = arg1.detail;
       }
       return tmp2;
     }
   }
-  let closure_0 = PerformanceMeasure;
   callback3(PerformanceMeasure, PerformanceEntry);
-  const items = [
+  let items = [
     {
       key: "detail",
       get() {
-        return callback(this, closure_7)[closure_7];
+        return outer1_5(this, outer1_7)[outer1_7];
       }
     }
   ];
   return callback(PerformanceMeasure, items);
-}(arg1(dependencyMap[7]).PerformanceEntry);
+})(require("PerformanceEntry").PerformanceEntry);

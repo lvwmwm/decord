@@ -1,23 +1,23 @@
-// Module ID: 13669
-// Function ID: 103514
+// Module ID: 13783
+// Function ID: 105670
 // Name: useOnNewPendingRequest
-// Dependencies: []
+// Dependencies: [31, 6769, 7123, 566, 4559, 6771, 2]
 // Exports: default
 
-// Module 13669 (useOnNewPendingRequest)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
+// Module 13783 (useOnNewPendingRequest)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("useUserIdsForLinkStatus").fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
 
 export default function useOnNewPendingRequest(arg0) {
-  const arg1 = arg0;
-  const pendingRequestCount = arg1(dependencyMap[2]).usePendingRequestCount();
-  const importDefault = pendingRequestCount;
-  const obj = arg1(dependencyMap[2]);
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => authStore.getAreLinkedUsersProcessed());
-  const dependencyMap = stateFromStores;
-  importDefault(dependencyMap[4])(() => {
+  const _require = arg0;
+  const pendingRequestCount = _require(stateFromStores[2]).usePendingRequestCount();
+  let obj = _require(stateFromStores[2]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => authStore.getAreLinkedUsersProcessed());
+  pendingRequestCount(stateFromStores[4])(() => {
     if (!authStore.getAreLinkedUsersProcessed()) {
       const linkedUsers = pendingRequestCount(stateFromStores[5]).fetchLinkedUsers();
       linkedUsers.catch(() => {
@@ -26,12 +26,12 @@ export default function useOnNewPendingRequest(arg0) {
       const obj = pendingRequestCount(stateFromStores[5]);
     }
   });
-  const React = React.useRef(arg0);
+  React = React.useRef(arg0);
   const items1 = [arg0];
   const effect = React.useEffect(() => {
-    closure_3.current = arg0;
+    result.current = closure_0;
   }, items1);
-  closure_4 = React.useRef(null);
+  _isNativeReflectConstruct = React.useRef(null);
   const items2 = [stateFromStores, pendingRequestCount];
   const effect1 = React.useEffect(() => {
     if (stateFromStores) {

@@ -1,21 +1,27 @@
-// Module ID: 10776
-// Function ID: 83731
+// Module ID: 10786
+// Function ID: 83780
 // Name: _callSuper
-// Dependencies: [0, 0, 0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1278, 33, 4130, 689, 3976, 10787, 10788, 3842, 1212, 4660, 10789, 566, 2]
 // Exports: default
 
-// Module 10776 (_callSuper)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_10 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 10786 (_callSuper)
+import getActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getSystemLocale from "getSystemLocale";
+import useFetchStreamPreview from "useFetchStreamPreview";
+import initialize from "initialize";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_10 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
+let closure_11;
+let closure_12;
+let closure_8;
+let closure_9;
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -27,7 +33,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_5(arg0, constructResult);
+  return getSystemLocale(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -38,35 +44,33 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-const importAllResult = importAll(dependencyMap[5]);
-const tmp3 = arg1(dependencyMap[6]);
-({ Image: closure_8, View: closure_9 } = tmp3);
-({ jsx: closure_11, jsxs: closure_12 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = {};
-const merged = Object.assign(tmp3.StyleSheet.absoluteFillObject);
-__exportStarResult1["alignItems"] = "center";
-__exportStarResult1["justifyContent"] = "center";
-__exportStarResult1["paddingLeft"] = 20;
-__exportStarResult1["paddingRight"] = 20;
-__exportStarResult1.wrapper = __exportStarResult1;
-__exportStarResult1.text = { color: require("__exportStarResult1").colors.TEXT_MUTED };
-__exportStarResult1.fallbackImage = { width: "100%" };
-__exportStarResult1 = __exportStarResult1.createLegacyClassComponentStyles(__exportStarResult1);
-const tmp6 = (PureComponent) => {
+({ Image: closure_8, View: closure_9 } = get_ActivityIndicator);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
+let merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
+_createForOfIteratorHelperLoose["alignItems"] = "center";
+_createForOfIteratorHelperLoose["justifyContent"] = "center";
+_createForOfIteratorHelperLoose["paddingLeft"] = 20;
+_createForOfIteratorHelperLoose["paddingRight"] = 20;
+_createForOfIteratorHelperLoose.wrapper = _createForOfIteratorHelperLoose;
+let obj1 = { textAlign: "center", fontSize: 14, lineHeight: 18, marginTop: 16, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose.text = obj1;
+_createForOfIteratorHelperLoose.fallbackImage = { width: "100%" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+const tmp6 = ((PureComponent) => {
   class DefaultFallback {
     constructor() {
-      tmp = closure_3(this, DefaultFallback);
-      return closure_17(this, DefaultFallback, arguments);
+      tmp = outer1_3(this, DefaultFallback);
+      return outer1_17(this, DefaultFallback, arguments);
     }
   }
-  const arg1 = DefaultFallback;
   callback3(DefaultFallback, PureComponent);
   const items = [
     {
       key: "render",
       value() {
-        const tmp = callback2(this.context);
+        const tmp = outer1_13(this.context);
         let obj = { style: tmp.wrapper };
         obj = { resizeMode: "contain", style: tmp.fallbackImage };
         if (obj3.isThemeDark(this.props.theme)) {
@@ -75,32 +79,33 @@ const tmp6 = (PureComponent) => {
           tmp5Result = tmp5(tmp6[13]);
         }
         obj.source = tmp5Result;
-        obj.children = closure_11(closure_8, obj);
-        return closure_11(closure_9, obj);
+        obj.children = outer1_11(outer1_8, obj);
+        return outer1_11(outer1_9, obj);
       }
     }
   ];
   return callback(DefaultFallback, items);
-}(importAllResult.PureComponent);
-tmp6.contextType = require("__exportStarResult1").ThemeContext;
+})(importAllResult.PureComponent);
+let closure_14 = tmp6;
+tmp6.contextType = require("ManaContext").ThemeContext;
 const obj2 = {};
-const obj3 = { "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "l", "Bool(false)": "HTTP", height: undefined, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOWEST };
+const obj3 = { flex: 1, width: "100%", height: undefined, aspectRatio: 1.7777777777777777, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
 obj2.touchable = obj3;
-__exportStarResult1 = { flex: 1, backgroundColor: require("__exportStarResult1").unsafe_rawColors.BLACK };
-obj2.imageContainer = __exportStarResult1;
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK };
+obj2.imageContainer = _createForOfIteratorHelperLoose;
 obj2.image = { flex: 1 };
-let closure_15 = __exportStarResult1.createLegacyClassComponentStyles(obj2);
-const tmp7 = (PureComponent) => {
+let closure_15 = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(obj2);
+const tmp7 = ((PureComponent) => {
   class StreamPreview {
     constructor(arg0) {
       items = [...arguments];
-      tmp = closure_3(this, StreamPreview);
+      tmp = outer1_3(this, StreamPreview);
       items1 = [...items];
-      tmp2 = closure_17(this, StreamPreview, items1);
+      tmp2 = outer1_17(this, StreamPreview, items1);
       StreamPreview = tmp2;
-      tmp2.state = { accessibilityRole: true, construct: true };
+      tmp2.state = { isImageLoaded: false, isImageErrored: false };
       tmp2.handleLoadStart = () => {
-        tmp2.setState({ accessibilityRole: true, construct: true });
+        tmp2.setState({ isImageLoaded: false, isImageErrored: false });
       };
       tmp2.handleLoad = () => {
         tmp2.setState({ isImageLoaded: true });
@@ -111,9 +116,8 @@ const tmp7 = (PureComponent) => {
       return tmp2;
     }
   }
-  const arg1 = StreamPreview;
   callback3(StreamPreview, PureComponent);
-  const items = [
+  let items = [
     {
       key: "render",
       value() {
@@ -121,7 +125,7 @@ const tmp7 = (PureComponent) => {
         let renderFallback;
         let theme;
         let url;
-        const tmp = callback4(this.context);
+        const tmp = outer1_15(this.context);
         ({ url, isFetching, renderFallback, theme } = this.props);
         if (null != url) {
           if (!isFetching) {
@@ -137,9 +141,9 @@ const tmp7 = (PureComponent) => {
               obj = { uri: url, cache: "force-cache" };
               obj.source = obj;
               ({ handleLoadStart: obj.onLoadStart, handleLoad: obj.onLoad, handleError: obj.onError } = this);
-              const tmp12 = callback2(closure_8, obj);
+              const tmp12 = outer1_11(outer1_8, obj);
             }
-            obj = { accessibilityLabel: tmp2 };
+            obj = { accessibilityRole: "button", accessibilityLabel: tmp2, activeOpacity: 0.6 };
             const items = [tmp.touchable, tmp3];
             obj.style = items;
             obj.disabled = tmp6;
@@ -147,9 +151,9 @@ const tmp7 = (PureComponent) => {
             const obj1 = { style: tmp.imageContainer };
             const items1 = [tmp8, tmp12];
             obj1.children = items1;
-            const items2 = [callback3(closure_9, obj1), tmp4];
+            const items2 = [outer1_12(outer1_9, obj1), tmp4];
             obj.children = items2;
-            return callback3(StreamPreview(closure_2[16]).PressableOpacity, obj);
+            return outer1_12(StreamPreview(outer1_2[16]).PressableOpacity, obj);
           }
         }
         let renderFallbackResult1;
@@ -161,24 +165,25 @@ const tmp7 = (PureComponent) => {
     }
   ];
   return callback(StreamPreview, items);
-}(importAllResult.PureComponent);
-tmp7.contextType = require("__exportStarResult1").ThemeContext;
+})(importAllResult.PureComponent);
+let closure_16 = tmp7;
+tmp7.contextType = require("ManaContext").ThemeContext;
 tmp7.defaultProps = {
   renderFallback: function defaultRenderFallback(arg0, theme) {
     const obj = { theme };
-    const intl = theme(dependencyMap[15]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const string = intl.string;
-    const t = theme(dependencyMap[15]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (arg0) {
       let stringResult = string(t.NQ7H8V);
     } else {
       stringResult = string(t.uQZTBV);
     }
     obj.caption = stringResult;
-    return closure_11(tmp6, obj);
+    return closure_11(closure_14, obj);
   }
 };
-const result = __exportStarResult1.fileFinishedImporting("components_native/StreamPreview.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/StreamPreview.tsx");
 
 export default function ConnectedStreamPreview(stream) {
   let channelId;
@@ -187,14 +192,14 @@ export default function ConnectedStreamPreview(stream) {
   let ownerId;
   let previewUrl;
   ({ guildId, channelId, ownerId } = stream.stream);
-  ({ previewUrl, isLoading } = importDefault(dependencyMap[17])(guildId, channelId, ownerId));
-  let obj = arg1(dependencyMap[18]);
+  ({ previewUrl, isLoading } = importDefault(10789)(guildId, channelId, ownerId));
+  let obj = require(566) /* initialize */;
   const items = [closure_10];
   obj = {};
-  const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_10.theme);
   const merged = Object.assign(stream);
   obj["url"] = previewUrl;
   obj["isFetching"] = isLoading;
   obj["theme"] = stateFromStores;
-  return callback4(tmp7, obj);
+  return callback4(closure_16, obj);
 };

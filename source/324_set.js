@@ -1,16 +1,17 @@
 // Module ID: 324
 // Function ID: 4887
 // Name: set
-// Dependencies: []
+// Dependencies: [31, 325]
 // Exports: unstable_getImageComponentDecorator, unstable_registerImageAttachedCallback, unstable_setImageComponentDecorator, unstable_unregisterImageAttachedCallback, useWrapRefWithImageAttachedCallbacks
 
 // Module 324 (set)
-importAll(dependencyMap[0]);
-const useRef = arg1(dependencyMap[0]).useRef;
+import "result";
+import { useRef } from "result";
+
 const set = new Set();
 
 export function unstable_setImageComponentDecorator(arg0) {
-
+  let closure_2 = arg0;
 }
 export function unstable_getImageComponentDecorator() {
   return closure_2;
@@ -23,25 +24,25 @@ export const unstable_unregisterImageAttachedCallback = function unstable_unregi
 };
 export const useWrapRefWithImageAttachedCallbacks = function useWrapRefWithImageAttachedCallbacks(ref) {
   const importDefault = useRef([]);
-  const tmp = useRef(null);
+  let tmp = useRef(null);
   if (null == tmp.current) {
     tmp.current = (arg0) => {
       if (null == arg0) {
         if (ref.current.length > 0) {
-          const current = ref.current;
+          let current = ref.current;
           const item = current.forEach((arg0) => arg0());
           ref.current = [];
         }
       } else {
-        const item1 = closure_4.forEach((arg0) => {
-          const tmp = arg0(arg0);
+        const item1 = outer1_4.forEach((arg0) => {
+          const tmp = arg0(ref);
           if (null != tmp) {
-            const current = arg0.current;
+            const current = ref.current;
             current.push(tmp);
           }
         });
       }
     };
   }
-  return importDefault(dependencyMap[1])(ref, tmp.current);
+  return importDefault(325)(ref, tmp.current);
 };

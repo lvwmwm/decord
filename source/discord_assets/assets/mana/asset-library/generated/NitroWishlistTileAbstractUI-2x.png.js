@@ -1,11 +1,10 @@
-// Module ID: 6362
-// Function ID: 50476
+// Module ID: 6367
+// Function ID: 50505
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6362 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWishlistTileAbstractUI-2x.png.js");
+// Module 6367 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWishlistTileAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2477cd6127ab89f19e4d411f9573c320ebf4180a77dfa416418741637a6037d7.png";
 export const metadata = { fileBytes: 39275 };

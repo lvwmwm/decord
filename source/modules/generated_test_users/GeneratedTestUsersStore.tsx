@@ -1,15 +1,22 @@
-// Module ID: 13405
-// Function ID: 101889
+// Module ID: 13519
+// Function ID: 104045
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1857, 566, 686, 2]
 
-// Module 13405 (_isNativeReflectConstruct)
+// Module 13519 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -20,28 +27,22 @@ function handleAddUser(id) {
     closure_6.users = map;
   }
   const users = closure_6.users;
-  const result = users.set(id.id, new closure_5(id));
+  const result = users.set(id.id, new _isNativeReflectConstruct(id));
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = { "Bool(true)": "o", "Bool(true)": "o" };
-let tmp2 = (PersistedStore) => {
+let closure_6 = { pools: null, users: null };
+let tmp2 = ((PersistedStore) => {
   class GeneratedTestUsersStore {
     constructor() {
       self = this;
       tmp = GeneratedTestUsersStore(this, GeneratedTestUsersStore);
-      obj = closure_3(GeneratedTestUsersStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(GeneratedTestUsersStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -50,7 +51,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GeneratedTestUsersStore;
   callback2(GeneratedTestUsersStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -60,32 +60,32 @@ let tmp2 = (PersistedStore) => {
           const _Map = Map;
           const _Object = Object;
           const map = new Map(Object.entries(pools.pools));
-          closure_6.pools = map;
+          outer1_6.pools = map;
         }
         if (null != pools.users) {
           const _Map2 = Map;
           const _Object2 = Object;
           const map1 = new Map(Object.entries(pools.users));
-          closure_6.users = map1;
+          outer1_6.users = map1;
         }
       }
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "getState",
     value() {
       const obj = {};
       let fromEntriesResult = null;
-      if (null != closure_6.pools) {
+      if (null != outer1_6.pools) {
         const _Object = Object;
-        fromEntriesResult = Object.fromEntries(closure_6.pools);
+        fromEntriesResult = Object.fromEntries(outer1_6.pools);
       }
       obj.pools = fromEntriesResult;
       let fromEntriesResult1 = null;
-      if (null != closure_6.users) {
+      if (null != outer1_6.users) {
         const _Object2 = Object;
-        fromEntriesResult1 = Object.fromEntries(closure_6.users);
+        fromEntriesResult1 = Object.fromEntries(outer1_6.users);
       }
       obj.users = fromEntriesResult1;
       return obj;
@@ -95,8 +95,8 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getUsersForPool",
     value(arg0) {
-      const GeneratedTestUsersStore = arg0;
-      const users = closure_6.users;
+      let initialize = arg0;
+      const users = outer1_6.users;
       let items;
       if (null != users) {
         items = users.values();
@@ -105,10 +105,10 @@ let tmp2 = (PersistedStore) => {
         items = [];
       }
       return Array.from(items).filter((id) => {
-        const pools = pools.pools;
+        const pools = outer2_6.pools;
         let hasItem;
         if (null != pools) {
-          const value = pools.get(id);
+          const value = pools.get(initialize);
           if (null != value) {
             const userIds = value.userIds;
             hasItem = userIds.includes(id.id);
@@ -122,7 +122,7 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getPool",
     value(arg0) {
-      const pools = closure_6.pools;
+      const pools = outer1_6.pools;
       let value;
       if (null != pools) {
         value = pools.get(arg0);
@@ -137,7 +137,7 @@ let tmp2 = (PersistedStore) => {
   items[4] = {
     key: "getUser",
     value(arg0) {
-      const users = closure_6.users;
+      const users = outer1_6.users;
       let value;
       if (null != users) {
         value = users.get(arg0);
@@ -153,19 +153,19 @@ let tmp2 = (PersistedStore) => {
     key: "getPools",
     value() {
       let arr = null;
-      if (null !== closure_6.pools) {
+      if (null !== outer1_6.pools) {
         const _Array = Array;
-        const pools = closure_6.pools;
+        const pools = outer1_6.pools;
         arr = Array.from(pools.values());
       }
       return arr;
     }
   };
   return callback(GeneratedTestUsersStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "GeneratedTestUsersStore";
 tmp2.persistKey = "GeneratedTestUsersStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   GENERATED_POOL_BY_ID_FETCH_SUCCESS: function handleFetchPoolByIdSuccess(arg0) {
     let pool;
     let users;
@@ -192,7 +192,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       if (value.userIds.length > 0) {
         const userIds = value.userIds;
         const item = userIds.forEach((arg0) => {
-          const users = users.users;
+          const users = outer1_6.users;
           if (null != users) {
             users.delete(arg0);
           }
@@ -205,6 +205,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/generated_test_users/GeneratedTestUsersStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/generated_test_users/GeneratedTestUsersStore.tsx");
 
 export default tmp2;

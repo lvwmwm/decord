@@ -1,16 +1,17 @@
 // Module ID: 1696
-// Function ID: 18758
+// Function ID: 18759
 // Name: updateLayoutAnimations
-// Dependencies: []
+// Dependencies: [1585, 1626]
 
 // Module 1696 (updateLayoutAnimations)
-const _module = require(dependencyMap[0]);
-if (_module.shouldBeUseWeb()) {
+import isJest from "isJest";
+
+if (isJest.shouldBeUseWeb()) {
   function updateLayoutAnimations() {
 
   }
 } else {
-  let closure_2 = function createUpdateManager() {
+  let closure_2 = (function createUpdateManager() {
     let closure_0 = [];
     let closure_1 = [];
     return {
@@ -28,22 +29,22 @@ if (_module.shouldBeUseWeb()) {
             const _setImmediate = setImmediate;
             setImmediate(self.flush);
           }
-          const obj = arr(arr2[0]);
+          obj = arr(arr2[0]);
         }
       },
       flush() {
-        const result = arr(closure_1[1]).configureLayoutAnimationBatch(arr.concat(closure_1));
+        const result = arr(arr2[1]).configureLayoutAnimationBatch(arr.concat(arr2));
         arr.length = 0;
-        closure_1.length = 0;
+        arr2.length = 0;
       }
     };
-  }();
+  })();
   updateLayoutAnimations = function updateLayoutAnimations(viewTag, type, arg2, sharedTransitionTag) {
     const obj = { viewTag, type };
     let shareableCloneRecursive;
     if (arg2) {
-      shareableCloneRecursive = require(dependencyMap[1]).makeShareableCloneRecursive(arg2);
-      const obj2 = require(dependencyMap[1]);
+      shareableCloneRecursive = require(1626) /* getSensorContainer */.makeShareableCloneRecursive(arg2);
+      const obj2 = require(1626) /* getSensorContainer */;
     }
     obj.config = shareableCloneRecursive;
     obj.sharedTransitionTag = sharedTransitionTag;

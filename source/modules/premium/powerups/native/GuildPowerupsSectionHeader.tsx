@@ -1,28 +1,30 @@
-// Module ID: 11575
-// Function ID: 90012
+// Module ID: 11585
+// Function ID: 90061
 // Name: GuildPowerupsSectionHeader
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 689, 4126, 2]
 // Exports: default
 
-// Module 11575 (GuildPowerupsSectionHeader)
-const View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_3, jsxs: closure_4 } = _module);
-const _module1 = require(dependencyMap[2]);
+// Module 11585 (GuildPowerupsSectionHeader)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
 let obj = {};
-obj = { padding: importDefault(dependencyMap[3]).space.PX_16 };
+obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
 obj.headerContainer = obj;
-let closure_5 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSectionHeader.tsx");
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSectionHeader.tsx");
 
 export default function GuildPowerupsSectionHeader(arg0) {
   let description;
   let title;
   ({ title, description } = arg0);
   let obj = { style: callback3().headerContainer };
-  obj = { tooltipText: "png", contain: true, children: title };
-  const items = [callback(require(dependencyMap[4]).Text, obj), callback(require(dependencyMap[4]).Text, { variant: "text-md/normal", children: description })];
+  obj = { variant: "heading-lg/semibold", accessibilityRole: "header", children: title };
+  const items = [callback(require(4126) /* Text */.Text, obj), callback(require(4126) /* Text */.Text, { variant: "text-md/normal", children: description })];
   obj.children = items;
   return callback2(View, obj);
 };

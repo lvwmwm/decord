@@ -1,9 +1,18 @@
-// Module ID: 4346
-// Function ID: 38541
+// Module ID: 4350
+// Function ID: 38573
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1348, 653, 1360, 4351, 566, 686, 2]
 
-// Module 4346 (_isNativeReflectConstruct)
+// Module 4350 (_isNativeReflectConstruct)
+import ME from "ME";
+import hasFlag from "hasFlag";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { MessageFlags } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -104,28 +113,21 @@ function clearAll() {
     map.clear();
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const MessageFlags = arg1(dependencyMap[6]).MessageFlags;
 let closure_9 = [];
-const map = new Map();
-let tmp3 = (Store) => {
+let map = new Map();
+let tmp3 = ((Store) => {
   class EphemeralMessageStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, EphemeralMessageStore);
-      obj = closure_5(EphemeralMessageStore);
-      tmp2 = closure_4;
-      if (closure_11()) {
+      tmp = outer1_2(this, EphemeralMessageStore);
+      obj = outer1_5(EphemeralMessageStore);
+      tmp2 = outer1_4;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -134,19 +136,18 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = EphemeralMessageStore;
   callback2(EphemeralMessageStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
     }
   };
   const items = [obj, ];
   obj = {
     key: "getMessages",
     value(arg0) {
-      const value = closure_10.get(arg0);
+      const value = outer1_10.get(arg0);
       if (null != value) {
         if (0 !== value.size) {
           const _Array = Array;
@@ -154,14 +155,14 @@ let tmp3 = (Store) => {
         }
         return arr;
       }
-      arr = closure_9;
+      arr = outer1_9;
     }
   };
   items[1] = obj;
   return callback(EphemeralMessageStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "EphemeralMessageStore";
-tmp3 = new tmp3(importDefault(dependencyMap[10]), {
+tmp3 = new tmp3(require("dispatcher"), {
   MESSAGE_CREATE: function handleMessageCreate(arg0) {
     let channelId;
     let message;
@@ -175,11 +176,11 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
       let value = map.get(channelId);
       if (null == value) {
         const _Map = Map;
-        const map = new Map();
+        map = new Map();
         const result = map.set(channelId, map);
         value = map;
       }
-      const result1 = value.set(message.id, arg1(dependencyMap[8]).createMessageRecord(message));
+      const result1 = value.set(message.id, require(4351) /* createMinimalMessageRecord */.createMessageRecord(message));
       if (value.size > 50) {
         const iter2 = value.keys().next();
         while (true !== iter2.done) {
@@ -193,7 +194,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
     } else {
       return false;
     }
-    const obj = arg1(dependencyMap[7]);
+    obj = require(1360) /* hasFlag */;
   },
   MESSAGE_UPDATE: function handleMessageUpdate(message) {
     let channel_id;
@@ -210,7 +211,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
           if (null == value) {
             return false;
           } else {
-            const result = value.set(id, arg1(dependencyMap[8]).updateMessageRecord(value, message));
+            const result = value.set(id, require(4351) /* createMinimalMessageRecord */.updateMessageRecord(value, message));
           }
         }
       }
@@ -287,10 +288,10 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
       if (!iter.done) {
         do {
           let value = iter2.value;
-          let tmp5 = closure_7;
-          if (null == closure_7.getChannel(value)) {
-            let tmp6 = closure_10;
-            let deleteResult = closure_10.delete(value);
+          let tmp5 = channel;
+          if (null == channel.getChannel(value)) {
+            let tmp6 = map;
+            let deleteResult = map.delete(value);
             flag = true;
           }
           iter3 = tmp3();
@@ -306,6 +307,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
   OVERLAY_INITIALIZE: clearAll,
   LOGOUT: clearAll
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/messages/EphemeralMessageStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/messages/EphemeralMessageStore.tsx");
 
 export default tmp3;

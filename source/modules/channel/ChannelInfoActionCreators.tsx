@@ -1,20 +1,21 @@
-// Module ID: 10448
-// Function ID: 80671
+// Module ID: 10458
+// Function ID: 80721
 // Name: fetchChannelInfo
-// Dependencies: []
+// Dependencies: [4808, 6761, 686, 2]
 // Exports: fetchChannelInfo
 
-// Module 10448 (fetchChannelInfo)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/channel/ChannelInfoActionCreators.tsx");
+// Module 10458 (fetchChannelInfo)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+const result = require("dispatcher").fileFinishedImporting("modules/channel/ChannelInfoActionCreators.tsx");
 
 export const fetchChannelInfo = function fetchChannelInfo(guild_id) {
   if (!closure_3.hasRequestedStatuses(guild_id)) {
-    let obj = importDefault(dependencyMap[2]);
+    let obj = importDefault(686);
     obj = { type: "FETCH_CHANNEL_INFO", guildId: guild_id };
     obj.dispatch(obj);
-    const socket = socket.getSocket();
-    const channelInfo = socket.requestChannelInfo(guild_id, ["transform", "formatToPlainString"]);
+    socket = socket.getSocket();
+    const channelInfo = socket.requestChannelInfo(guild_id, ["status", "voice_start_time"]);
   }
 };

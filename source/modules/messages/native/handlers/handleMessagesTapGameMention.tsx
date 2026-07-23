@@ -1,16 +1,15 @@
-// Module ID: 10878
-// Function ID: 84590
+// Module ID: 10888
+// Function ID: 84639
 // Name: handleMessagesTapGameMention
-// Dependencies: []
+// Dependencies: [8594, 8600, 2]
 // Exports: handleMessagesTapGameMention
 
-// Module 10878 (handleMessagesTapGameMention)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapGameMention.tsx");
+// Module 10888 (handleMessagesTapGameMention)
+const result = require("set").fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapGameMention.tsx");
 
 export const handleMessagesTapGameMention = function handleMessagesTapGameMention(gameId) {
   gameId = gameId.gameId;
-  let obj = importDefault(dependencyMap[0]);
-  obj = { gameId, gameProfileModalChecks: { shouldOpenGameProfile: true, gameId }, source: require(dependencyMap[1]).GameProfileSources.GameMention };
+  let obj = importDefault(8594);
+  obj = { gameId, gameProfileModalChecks: { shouldOpenGameProfile: true, gameId }, source: require(8600) /* GameProfileEmbedAction */.GameProfileSources.GameMention };
   obj.openGameProfileModal(obj);
 };

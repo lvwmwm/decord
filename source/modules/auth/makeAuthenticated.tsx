@@ -1,51 +1,53 @@
-// Module ID: 15314
-// Function ID: 116466
+// Module ID: 15431
+// Function ID: 118640
 // Name: makeAuthenticated
-// Dependencies: []
+// Dependencies: [31, 1194, 653, 33, 1328, 15432, 2]
 // Exports: makeAuthenticated
 
-// Module 15314 (makeAuthenticated)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const LoginStates = arg1(dependencyMap[2]).LoginStates;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/auth/makeAuthenticated.tsx");
+// Module 15431 (makeAuthenticated)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { LoginStates } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/auth/makeAuthenticated.tsx");
 
 export const makeAuthenticated = function makeAuthenticated(displayName) {
   let tmp = arg2;
-  const arg1 = displayName;
-  const importDefault = arg1;
+  let closure_0 = displayName;
+  let closure_1 = arg1;
   if (arg2 === undefined) {
-    const obj = { passProps: true };
+    let obj = { passProps: true };
     tmp = obj;
   }
   const dependencyMap = tmp;
   class Authenticated {
     constructor(arg0) {
-      obj = displayName(arg2[4]);
+      obj = closure_0(closure_2[4]);
       if (!obj.isAuthenticated()) {
-        tmp = closure_3;
-        tmp2 = closure_4;
-        if (closure_3.getLoginStatus() !== closure_4.LOGGING_IN) {
-          tmp3 = closure_3;
-          if (closure_3.allowLogoutRedirect()) {
-            tmp4 = arg1;
+        tmp = outer1_3;
+        tmp2 = outer1_4;
+        if (outer1_3.getLoginStatus() !== outer1_4.LOGGING_IN) {
+          tmp3 = outer1_3;
+          if (outer1_3.allowLogoutRedirect()) {
+            tmp4 = closure_1;
             tmp5 = null;
-            if (null != arg1) {
-              tmp10 = closure_5;
-              tmp11 = arg1;
+            if (null != closure_1) {
+              tmp10 = outer1_5;
+              tmp11 = closure_1;
               obj = {};
-              tmp12 = arg1;
-              tmp13 = arg2;
+              tmp12 = closure_1;
+              tmp13 = closure_2;
               num2 = 5;
-              obj.renderRedirect = closure_5(arg1(arg2[5]), {});
-              tmp14Result = closure_5(arg1, obj);
+              obj.renderRedirect = outer1_5(closure_1(closure_2[5]), {});
+              tmp14Result = outer1_5(closure_1, obj);
             } else {
-              tmp6 = closure_5;
-              tmp7 = arg1;
-              tmp8 = arg2;
+              tmp6 = outer1_5;
+              tmp7 = closure_1;
+              tmp8 = closure_2;
               num = 5;
-              tmp14Result = closure_5(arg1(arg2[5]), {});
+              tmp14Result = outer1_5(closure_1(closure_2[5]), {});
             }
           }
           return tmp14Result;
@@ -53,9 +55,9 @@ export const makeAuthenticated = function makeAuthenticated(displayName) {
       }
       obj1 = {};
       tmp16 = null;
-      tmp14 = closure_5;
-      tmp15 = displayName;
-      if (arg2.passProps) {
+      tmp14 = outer1_5;
+      tmp15 = closure_0;
+      if (closure_2.passProps) {
         tmp16 = displayName;
       }
       merged = Object.assign(tmp16);

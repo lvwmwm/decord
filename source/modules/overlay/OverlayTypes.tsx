@@ -1,11 +1,10 @@
-// Module ID: 4172
-// Function ID: 35427
+// Module ID: 4176
+// Function ID: 35459
 // Name: DevToolsFocusedPidsTrackMode
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4172 (DevToolsFocusedPidsTrackMode)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/overlay/OverlayTypes.tsx");
+// Module 4176 (DevToolsFocusedPidsTrackMode)
+const result = require("set").fileFinishedImporting("modules/overlay/OverlayTypes.tsx");
 
 export const DevToolsFocusedPidsTrackMode = { TRACK_FOCUS: "track_focus", UNTRACK_FOCUS: "untrack_focus" };
 export const OverlayForcedRenderMode = { UNSET: "UNSET", IN_PROCESS_V2: "IN_PROCESS_V2", OUT_OF_PROCESS_V3: "OUT_OF_PROCESS_V3", OUT_OF_PROCESS_V3_LIMITED_INTERACTION: "OUT_OF_PROCESS_V3_LIMITED_INTERACTION" };

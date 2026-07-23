@@ -1,28 +1,32 @@
 // Module ID: 1092
-// Function ID: 12521
+// Function ID: 12522
 // Name: startProfiling
-// Dependencies: []
+// Dependencies: [65, 27, 978, 794, 1093, 1094, 1098, 1099, 977, 1100]
 // Exports: hermesProfilingIntegration
 
 // Module 1092 (startProfiling)
+import _toConsumableArray from "_toConsumableArray";
+import { Platform } from "get ActivityIndicator";
+
+const require = arg1;
 function startProfiling(arg0) {
-  const NATIVE = arg1(dependencyMap[8]).NATIVE;
+  const NATIVE = require(977) /* getRNSentryModule */.NATIVE;
   let result = null;
   if (NATIVE.startProfiling(arg0)) {
     const _Date = Date;
-    result = Date.now() * closure_3;
+    result = Date.now() * c3;
   }
   return result;
 }
 function stopProfiling(arg0) {
-  const NATIVE = arg1(dependencyMap[8]).NATIVE;
+  const NATIVE = require(977) /* getRNSentryModule */.NATIVE;
   const stopProfilingResult = NATIVE.stopProfiling();
   if (stopProfilingResult) {
     const _Date = Date;
-    const result = Date.now() * closure_3;
-    const result1 = arg1(dependencyMap[9]).convertToSentryProfile(stopProfilingResult.hermesProfile);
+    const result = Date.now() * c3;
+    const result1 = require(1100) /* mapSamples */.convertToSentryProfile(stopProfilingResult.hermesProfile);
     if (result1) {
-      const hermesProfilingEvent = arg1(dependencyMap[5]).createHermesProfilingEvent(result1);
+      const hermesProfilingEvent = require(1094) /* isValidProfile */.createHermesProfilingEvent(result1);
       if (hermesProfilingEvent) {
         if (stopProfilingResult.androidProfile) {
           return createAndroidWithHermesProfile(hermesProfilingEvent, stopProfilingResult.androidProfile, result - arg0);
@@ -36,11 +40,11 @@ function stopProfiling(arg0) {
       } else {
         return null;
       }
-      const obj2 = arg1(dependencyMap[5]);
+      const obj2 = require(1094) /* isValidProfile */;
     } else {
       return null;
     }
-    const obj = arg1(dependencyMap[9]);
+    const obj = require(1100) /* mapSamples */;
   } else {
     return null;
   }
@@ -75,11 +79,11 @@ function addNativeProfileToHermesProfile(hermesProfilingEvent, nativeProfile) {
   return Object.assign(Object.assign(merged1, obj1), { measurements: nativeProfile.measurements });
 }
 function addNativeThreadCpuProfileToHermes(profile, profile2, active_thread_id) {
-  profile2 = active_thread_id;
+  let closure_0 = active_thread_id;
   profile.thread_metadata = Object.assign(Object.assign({}, profile2.thread_metadata), profile.thread_metadata);
   profile.queue_metadata = Object.assign(Object.assign({}, profile2.queue_metadata), profile.queue_metadata);
-  const dependencyMap = profile.frames.length;
-  let closure_2 = profile.stacks.length;
+  let length = profile.frames.length;
+  length = profile.stacks.length;
   if (profile2.frames) {
     let frames = profile2.frames;
     for (const item10032 of frames) {
@@ -89,6 +93,7 @@ function addNativeThreadCpuProfileToHermes(profile, profile2, active_thread_id) 
       ({ function: obj.function, instruction_addr: obj.instruction_addr } = item10032);
       obj.platform = undefined;
       let arr = frames.push(obj);
+      continue;
     }
   }
   const items = [];
@@ -100,27 +105,25 @@ function addNativeThreadCpuProfileToHermes(profile, profile2, active_thread_id) 
   if (!stacks1) {
     stacks1 = [];
   }
-  profile.stacks = items.concat(closure_2(stacks), closure_2(stacks1.map((arr) => arr.map((arg0) => arg0 + closure_1))));
+  profile.stacks = items.concat(length(stacks), length(stacks1.map((arr) => arr.map((arg0) => arg0 + outer1_1))));
   const items1 = [];
   let samples = tmp.samples;
   if (!samples) {
     samples = [];
   }
   let samples1 = profile2.samples;
-  const tmp5 = closure_2;
-  const tmp5Result = closure_2(stacks);
-  const tmp7 = closure_2;
-  const tmp8 = closure_2;
+  const tmp5 = length;
+  const tmp5Result = length(stacks);
+  const tmp7 = length;
+  const tmp8 = length;
   if (!samples1) {
     samples1 = [];
   }
-  const found = samples1.filter((thread_id) => thread_id.thread_id !== arg2);
-  profile.samples = items1.concat(closure_2(samples), closure_2(found.map((stack_id) => Object.assign(Object.assign({}, stack_id), { stack_id: length + stack_id.stack_id }))));
+  const found = samples1.filter((thread_id) => thread_id.thread_id !== closure_0);
+  profile.samples = items1.concat(length(samples), length(found.map((stack_id) => Object.assign(Object.assign({}, stack_id), { stack_id: length + stack_id.stack_id }))));
   return profile;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const Platform = arg1(dependencyMap[1]).Platform;
-let closure_3 = 1000000;
+let c3 = 1000000;
 let closure_4 = { platformProfilers: true };
 
 export const hermesProfilingIntegration = function hermesProfilingIntegration() {
@@ -129,15 +132,15 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
       let first = arguments[0];
     }
     const platformProfilers = first.platformProfilers;
-    let closure_2 = null === platformProfilers || undefined === platformProfilers || platformProfilers;
-    let closure_3 = false;
+    let _toConsumableArray = null === platformProfilers || undefined === platformProfilers || platformProfilers;
+    let c3 = false;
     function _startCurrentProfileForActiveTransaction() {
-      if (!lib) {
-        const activeSpan = lib(closure_1[3]).getActiveSpan();
+      if (!closure_0) {
+        const activeSpan = outer1_0(outer1_1[3]).getActiveSpan();
         if (activeSpan) {
           _startCurrentProfile(activeSpan);
         }
-        const obj = lib(closure_1[3]);
+        const obj = outer1_0(outer1_1[3]);
       }
     }
     function _startCurrentProfile(activeSpan) {
@@ -145,14 +148,14 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
         _finishCurrentProfile();
         if (_shouldStartProfiling(activeSpan)) {
           const _setTimeout = setTimeout;
-          const timeout = setTimeout(_finishCurrentProfile, lib(timeout[7]).MAX_PROFILE_DURATION_MS);
+          const timeout = setTimeout(_finishCurrentProfile, outer1_0(outer1_1[7]).MAX_PROFILE_DURATION_MS);
           _startNewProfile(activeSpan);
         }
       }
     }
     function _shouldStartProfiling(startTimestampNs) {
-      const obj = lib(closure_1[3]);
-      const obj2 = lib(closure_1[3]);
+      const obj = outer1_0(outer1_1[3]);
+      const obj2 = outer1_0(outer1_1[3]);
       if (spanIsSampledResult) {
         const client = obj2.getClient();
         let getOptions;
@@ -172,7 +175,7 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
           }
         }
         if (undefined === profilesSampleRate) {
-          const debug3 = lib(closure_1[3]).debug;
+          const debug3 = outer1_0(outer1_1[3]).debug;
           debug3.log("[Profiling] Profiling disabled, enable it by setting `profilesSampleRate` option to SDK init call.");
           let flag2 = false;
         } else {
@@ -180,7 +183,7 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
           const tmp9 = Math.random() > profilesSampleRate;
           flag2 = !tmp9;
           if (tmp9) {
-            const debug2 = lib(closure_1[3]).debug;
+            const debug2 = outer1_0(outer1_1[3]).debug;
             debug2.log("[Profiling] Skip profiling transaction due to sampling.");
             flag2 = false;
           }
@@ -191,34 +194,32 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
         debug.log("[Profiling] Transaction is not sampled, skipping profiling");
         return false;
       }
-      const spanIsSampledResult = lib(closure_1[3]).spanIsSampled(startTimestampNs);
+      spanIsSampledResult = outer1_0(outer1_1[3]).spanIsSampled(startTimestampNs);
     }
     function _startNewProfile(spanContext) {
-      const tmp = _startCurrentProfile(closure_2);
+      const tmp = _startCurrentProfile(_toConsumableArray);
       if (tmp) {
-        const obj = { span_id: spanContext.spanContext().spanId };
-        obj.profile_id = obj(closure_1[3]).uuid4();
-        obj.startTimestampNs = tmp;
+        const obj = { span_id: spanContext.spanContext().spanId, profile_id: outer1_0(outer1_1[3]).uuid4(), startTimestampNs: tmp };
         const attr = spanContext.setAttribute("profile_id", obj.profile_id);
-        const debug = obj(closure_1[3]).debug;
+        const debug = outer1_0(outer1_1[3]).debug;
         debug.log("[Profiling] started profiling: ", obj.profile_id);
-        const obj2 = obj(closure_1[3]);
+        const obj2 = outer1_0(outer1_1[3]);
       }
     }
     function _finishCurrentProfileForSpan(spanContext) {
       if (obj.isRootSpan(spanContext)) {
         let span_id;
-        if (null != lib) {
-          span_id = lib.span_id;
+        if (null != closure_0) {
+          span_id = closure_0.span_id;
         }
         if (spanContext.spanContext().spanId === span_id) {
           _finishCurrentProfile();
         } else {
-          const debug = lib(closure_1[3]).debug;
+          const debug = outer1_0(outer1_1[3]).debug;
           const spanId = spanContext.spanContext().spanId;
           let span_id1;
-          if (null != lib) {
-            span_id1 = lib.span_id;
+          if (null != closure_0) {
+            span_id1 = closure_0.span_id;
           }
           const _HermesInternal = HermesInternal;
           debug.log("[Profiling] Span (" + spanId + ") ended is not the currently profiled span (" + span_id1 + "). Not stopping profiling.");
@@ -227,18 +228,18 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
     }
     function _finishCurrentProfile() {
       _clearCurrentProfileTimeout();
-      if (undefined !== lib) {
-        const tmp9 = _shouldStartProfiling(lib.startTimestampNs);
+      if (undefined !== c0) {
+        const tmp9 = _shouldStartProfiling(c0.startTimestampNs);
         if (tmp9) {
           const PROFILE_QUEUE = tmp10(tmp11[4]).PROFILE_QUEUE;
-          PROFILE_QUEUE.add(lib.profile_id, tmp9);
+          PROFILE_QUEUE.add(c0.profile_id, tmp9);
           const debug2 = tmp10(tmp11[3]).debug;
-          debug2.log("[Profiling] finished profiling: ", lib.profile_id);
-          let lib;
+          debug2.log("[Profiling] finished profiling: ", c0.profile_id);
+          c0 = undefined;
         } else {
           const debug = tmp10(tmp11[3]).debug;
           debug.warn("[Profiling] Stop failed. Cleaning up...");
-          lib = undefined;
+          c0 = undefined;
         }
       }
     }
@@ -266,7 +267,7 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
         }
       }
       if ("string" !== typeof profile_id) {
-        const debug3 = lib(closure_1[3]).debug;
+        const debug3 = outer1_0(outer1_1[3]).debug;
         debug3.log("[Profiling] cannot find profile for a transaction without a profile context");
         return null;
       } else {
@@ -294,20 +295,20 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
         }
         if (profile_id1) {
           data = contexts.contexts.trace.data;
-          delete r1.profile_id;
+          delete tmp.profile_id;
         }
-        const PROFILE_QUEUE = lib(closure_1[4]).PROFILE_QUEUE;
+        const PROFILE_QUEUE = outer1_0(outer1_1[4]).PROFILE_QUEUE;
         const value = PROFILE_QUEUE.get(profile_id);
-        const PROFILE_QUEUE2 = lib(closure_1[4]).PROFILE_QUEUE;
+        const PROFILE_QUEUE2 = outer1_0(outer1_1[4]).PROFILE_QUEUE;
         PROFILE_QUEUE2.delete(profile_id);
         if (value) {
-          const result = tmp13(tmp14[5]).enrichCombinedProfileWithEventContext(profile_id, value, contexts);
-          const debug2 = tmp13(tmp14[3]).debug;
+          const result = tmp14(tmp15[5]).enrichCombinedProfileWithEventContext(profile_id, value, contexts);
+          const debug2 = tmp14(tmp15[3]).debug;
           const _HermesInternal2 = HermesInternal;
           debug2.log("[Profiling] Created profile " + profile_id + " for transaction " + contexts.event_id);
           return result;
         } else {
-          const debug = tmp13(tmp14[3]).debug;
+          const debug = tmp14(tmp15[3]).debug;
           const _HermesInternal = HermesInternal;
           debug.log("[Profiling] cannot find profile " + profile_id + " for transaction " + contexts.event_id);
           return null;
@@ -315,19 +316,19 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
       }
     }
     function _clearCurrentProfileTimeout() {
-      if (undefined !== closure_1) {
+      if (undefined !== c1) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(closure_1);
+        clearTimeout(c1);
       }
-      closure_1 = undefined;
+      c1 = undefined;
     }
-    const obj = {
+    let obj = {
       name: "HermesProfiling",
       setupOnce() {
-          if (!closure_3) {
-            closure_3 = true;
-            const obj = lib(closure_1[2]);
-            const obj2 = lib(closure_1[3]);
+          if (!c3) {
+            c3 = true;
+            let obj = outer1_0(outer1_1[2]);
+            let obj2 = outer1_0(outer1_1[3]);
             if (isHermesEnabledResult) {
               const client = obj2.getClient();
               let tmp7 = client;
@@ -339,35 +340,36 @@ export const hermesProfilingIntegration = function hermesProfilingIntegration() 
                 client.on("spanStart", _startCurrentProfile);
                 client.on("spanEnd", _finishCurrentProfileForSpan);
                 client.on("beforeEnvelope", (arg0) => {
-                  const PROFILE_QUEUE = callback(closure_1[4]).PROFILE_QUEUE;
+                  const PROFILE_QUEUE = outer2_0(outer2_1[4]).PROFILE_QUEUE;
                   if (PROFILE_QUEUE.size()) {
-                    const result = callback(closure_1[5]).findProfiledTransactionsFromEnvelope(arg0);
+                    const result = outer2_0(outer2_1[5]).findProfiledTransactionsFromEnvelope(arg0);
                     if (result.length) {
                       const items = [];
                       for (const item10032 of result) {
-                        let tmp7 = closure_10;
-                        let tmp8 = closure_10(item10032);
+                        let tmp7 = outer1_10;
+                        let tmp8 = outer1_10(item10032);
                         if (tmp8) {
                           let tmp10 = items;
                           let tmp11 = tmp8;
                           let arr = items.push(tmp9);
                         }
+                        continue;
                       }
-                      const result1 = callback(closure_1[5]).addProfilesToEnvelope(arg0, items);
-                      const obj2 = callback(closure_1[5]);
+                      const result1 = outer2_0(outer2_1[5]).addProfilesToEnvelope(arg0, items);
+                      const obj2 = outer2_0(outer2_1[5]);
                     } else {
-                      const debug = callback(closure_1[3]).debug;
+                      const debug = outer2_0(outer2_1[3]).debug;
                       debug.log("[Profiling] no profiled transactions found in envelope");
                     }
-                    const obj = callback(closure_1[5]);
+                    const obj = outer2_0(outer2_1[5]);
                   }
                 });
               }
             } else {
-              const debug = obj2.debug;
+              let debug = obj2.debug;
               debug.log("[Profiling] Hermes is not enabled, not adding profiling integration.");
             }
-            const isHermesEnabledResult = lib(closure_1[2]).isHermesEnabled();
+            isHermesEnabledResult = outer1_0(outer1_1[2]).isHermesEnabled();
           }
         }
     };

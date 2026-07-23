@@ -1,18 +1,23 @@
 // Module ID: 1129
-// Function ID: 12892
+// Function ID: 12893
 // Name: patchAppRegistryRunApplication
-// Dependencies: []
+// Dependencies: [978, 794, 973, 1130]
 
 // Module 1129 (patchAppRegistryRunApplication)
+const require = arg1;
+const dependencyMap = arg6;
 function patchAppRegistryRunApplication(arg0) {
-  const arg1 = arg0;
-  const AppRegistry = arg1(arg6[2]).ReactNativeLibraries.AppRegistry;
+  const _require = arg0;
+  const AppRegistry = _require(973).ReactNativeLibraries.AppRegistry;
   if (AppRegistry) {
-    arg1(arg6[3]).fillTyped(AppRegistry, "runApplication", (arg0) => (self) => {
-      const item = self.forEach((arg0) => arg0());
-      return self(...arguments);
+    _require(1130).fillTyped(AppRegistry, "runApplication", (arg0) => {
+      let closure_0 = arg0;
+      return () => {
+        const item = lib.forEach((arg0) => arg0());
+        return lib(...arguments);
+      };
     });
-    const obj = arg1(arg6[3]);
+    const obj = _require(1130);
   }
 }
 arg5.INTEGRATION_NAME = "AppRegistry";
@@ -22,15 +27,15 @@ arg5.appRegistryIntegration = function appRegistryIntegration() {
     name: "AppRegistry",
     setupOnce() {
       if (!obj.isWeb()) {
-        callback(arr);
+        outer1_2(arr);
       }
     },
     onRunApplication(onRunApplicationHook) {
       if (arr.includes(onRunApplicationHook)) {
-        const debug = arr(closure_1[1]).debug;
+        const debug = arr(outer1_1[1]).debug;
         debug.log("[AppRegistryIntegration] Callback already registered.");
       } else {
-        const arr = arr.push(onRunApplicationHook);
+        arr = arr.push(onRunApplicationHook);
       }
     }
   };
@@ -45,5 +50,5 @@ arg5.getAppRegistryIntegration = function getAppRegistryIntegration(client) {
       return first.getIntegrationByName("AppRegistry");
     }
   }
-  first = arg1(arg6[1]).getClient();
+  first = require(794) /* registerSpanErrorInstrumentation */.getClient();
 };

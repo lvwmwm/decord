@@ -1,10 +1,9 @@
-// Module ID: 8831
-// Function ID: 69665
+// Module ID: 8838
+// Function ID: 69706
 // Name: RouteTypes
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8831 (RouteTypes)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/voice_calls/VoiceCallTypes.tsx");
+// Module 8838 (RouteTypes)
+const result = require("set").fileFinishedImporting("modules/voice_calls/VoiceCallTypes.tsx");
 
 export const RouteTypes = { UNKNOWN: "unknown", BLUETOOTH: "bluetooth", SPEAKER: "speaker", RECEIVER: "receiver" };

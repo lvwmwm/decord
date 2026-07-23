@@ -1,42 +1,57 @@
-// Module ID: 15845
-// Function ID: 121108
+// Module ID: 15962
+// Function ID: 123281
 // Name: CaptchaModal
-// Dependencies: []
+// Dependencies: [31, 27, 14731, 14732, 33, 4130, 9197, 1508, 15963, 5187, 4541, 5807, 4126, 1212, 4543, 9446, 15964, 14739, 2]
 // Exports: default
 
-// Module 15845 (CaptchaModal)
-let closure_3 = importAll(dependencyMap[0]);
-({ Keyboard: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = arg1(dependencyMap[2]).doesRegistrationHaveIdentityType;
-const tmp2 = arg1(dependencyMap[1]);
-({ RegisterTransitionSteps: closure_7, RegistrationTransitionActionTypes: closure_8 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-const tmp4 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[5]).createStyles((arg0) => {
+// Module 15962 (CaptchaModal)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_4;
+let closure_5;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ Keyboard: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ RegisterTransitionSteps: closure_7, RegistrationTransitionActionTypes: closure_8 } = RegistrationTransitionActionTypes);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = {};
+  obj = { alignItems: "center", paddingVertical: 8 };
   let num = 8;
   if (arg0) {
     num = 32;
   }
   obj.paddingHorizontal = num;
   obj.contentContainer = obj;
-  obj.description = {};
+  obj.description = { paddingBottom: 12, paddingTop: 4 };
   return obj;
 });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/captcha/native/CaptchaModal.tsx");
+let result = require("useRegistrationUIStore").fileFinishedImporting("modules/captcha/native/CaptchaModal.tsx");
 
 export default function CaptchaModal(arg0) {
   let bodyText;
+  let result;
+  let closure_4;
+  let closure_5;
+  let closure_6;
+  let closure_7;
+  let dependencyMap;
   let headerText;
   let onReject;
-  ({ onCaptchaVerify: closure_0, onReject } = arg0);
-  const importDefault = onReject;
-  ({ close: closure_2, sitekey: closure_3, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
-  const tmp = callback2(importDefault(dependencyMap[6])());
-  const tmp2 = importDefault(dependencyMap[7])();
+  let require;
+  ({ onCaptchaVerify: require, onReject } = arg0);
+  ({ close: dependencyMap, sitekey: result, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
+  let tmp = callback2(onReject(9197)());
+  const tmp2 = onReject(1508)();
+  let closure_8 = tmp2;
   const items = [tmp2];
   const memo = React.useMemo(() => {
     const first = tmp2.getState().routes[0];
@@ -47,76 +62,76 @@ export default function CaptchaModal(arg0) {
     let str = "Guild Join Captcha";
     if ("auth" === name) {
       str = "Guild Join Captcha";
-      if (callback3()) {
+      if (outer1_6()) {
         str = "User Registration Captcha";
       }
     }
     return str;
   }, items);
-  const callback = importDefault(dependencyMap[8])({ onReject, analyticsType: memo });
+  const callback = onReject(15963)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
-    closure_4.dismiss();
+    outer1_4.dismiss();
   }, []);
-  let obj = { 0: null, 9223372036854775807: null };
+  let obj = { startHeight: 900, startExpanded: true };
   obj = { style: tmp.contentContainer, spacing: 12 };
-  const items1 = [callback(arg1(dependencyMap[11]).DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  const items1 = [callback(require(5807) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
   obj = {};
-  const obj1 = { tooltipText: false, contain: false };
+  const obj1 = { variant: "heading-xl/bold", accessibilityRole: "header" };
   if (null == headerText) {
-    const intl = arg1(dependencyMap[13]).intl;
-    headerText = intl.string(arg1(dependencyMap[13]).t.FpoiHe);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    headerText = intl.string(require(1212) /* getSystemLocale */.t.FpoiHe);
   }
   obj1.children = headerText;
-  const items2 = [callback(arg1(dependencyMap[12]).Text, obj1), ];
-  const obj2 = { cachedAt: 3, edpbxy: null, style: tmp.description };
+  const items2 = [callback(require(4126) /* Text */.Text, obj1), ];
+  let obj2 = { variant: "text-md/medium", color: "text-subtle", style: tmp.description };
   if (null == bodyText) {
-    const intl2 = arg1(dependencyMap[13]).intl;
-    bodyText = intl2.string(arg1(dependencyMap[13]).t./CidxO);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    bodyText = intl2.string(require(1212) /* getSystemLocale */.t["/CidxO"]);
   }
   obj2.children = bodyText;
-  items2[1] = callback(arg1(dependencyMap[12]).Text, obj2);
+  items2[1] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items2;
   items1[1] = closure_10(closure_5, obj);
-  const obj3 = {
+  let obj3 = {
     grow: true,
     onPress() {
-      callback4();
       callback2();
-      const result = callback(callback2[15]).emitCaptchaDistributionMetric(closure_7);
-      const obj = callback(callback2[15]);
-      const obj2 = onReject(callback2[16]);
-      const showCaptchaResult = onReject(callback2[16]).showCaptcha(closure_4, closure_3, closure_5);
-      onReject(callback2[16]).showCaptcha(closure_4, closure_3, closure_5).then((arg0) => {
-        let tmp = "auth" === store.getState().routes[0].name;
+      callback();
+      const result = outer1_0(outer1_2[15]).emitCaptchaDistributionMetric(closure_7);
+      let obj = outer1_0(outer1_2[15]);
+      const obj2 = onReject(outer1_2[16]);
+      const showCaptchaResult = onReject(outer1_2[16]).showCaptcha(closure_4, result, closure_5);
+      onReject(outer1_2[16]).showCaptcha(closure_4, result, closure_5).then((arg0) => {
+        let tmp = "auth" === outer1_8.getState().routes[0].name;
         if (tmp) {
-          tmp = callback3();
+          tmp = outer2_6();
         }
         if (tmp) {
-          let obj = callback(closure_2[17]);
-          obj = { step: constants.CAPTCHA, actionType: store.SUBMITTED };
+          let obj = outer2_0(outer2_2[17]);
+          obj = { step: outer2_7.CAPTCHA, actionType: constants.SUBMITTED };
           obj.trackRegTransition(obj);
         }
-        callback(arg0, callback3);
-        let tmp9 = "auth" === store.getState().routes[0].name;
+        outer1_0(arg0, outer1_6);
+        let tmp9 = "auth" === outer1_8.getState().routes[0].name;
         if (tmp9) {
-          tmp9 = callback3();
+          tmp9 = outer2_6();
         }
         if (tmp9) {
-          obj = { step: constants.CAPTCHA, actionType: store.SUCCESS };
-          callback(closure_2[17]).trackRegTransition(obj);
-          const obj3 = callback(closure_2[17]);
+          obj = { step: outer2_7.CAPTCHA, actionType: constants.SUCCESS };
+          outer2_0(outer2_2[17]).trackRegTransition(obj);
+          const obj3 = outer2_0(outer2_2[17]);
         }
       }).catch((arg0) => {
-        if (null != callback2) {
-          callback2(arg0);
+        if (null != outer1_1) {
+          outer1_1(arg0);
         }
       });
     }
   };
-  const intl3 = arg1(dependencyMap[13]).intl;
-  obj3.text = intl3.string(arg1(dependencyMap[13]).t.cY+Oob);
-  items1[2] = callback(arg1(dependencyMap[14]).Button, obj3);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
+  items1[2] = callback(require(4543) /* Button */.Button, obj3);
   obj.children = items1;
-  obj.children = closure_10(arg1(dependencyMap[10]).Stack, obj);
-  return callback(arg1(dependencyMap[9]).BottomSheet, obj);
+  obj.children = closure_10(require(4541) /* Stack */.Stack, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };

@@ -1,29 +1,29 @@
-// Module ID: 8287
-// Function ID: 65415
-// Dependencies: []
+// Module ID: 8293
+// Function ID: 65452
+// Dependencies: [621, 682, 2]
 
-// Module 8287
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/panels/morphable/AppFreezeStore.tsx");
+// Module 8293
+import keys from "keys";
 
-export default _module.create((arg0) => {
-  const require = arg0;
-  const obj = {
+let obj = keys.create((arg0) => {
+  let closure_0 = arg0;
+  let obj = {
     lockKeys: new Set(),
     requestFreezeLock(arg0) {
+      let closure_0;
+      let closure_1;
       ({ key: closure_0, lockEnabled: closure_1 } = arg0);
-      arg0(closure_1[1]).batchUpdates(() => {
-        callback((lockKeys) => {
+      callback(outer1_1[1]).batchUpdates(() => {
+        outer1_0((lockKeys) => {
           lockKeys = lockKeys.lockKeys;
-          const hasItem = lockKeys.has(closure_0);
-          if (closure_1) {
+          const hasItem = lockKeys.has(outer1_0);
+          if (outer1_1) {
             let tmp12 = lockKeys;
             if (!hasItem) {
               let obj = {};
               const merged = Object.assign(lockKeys);
               const _Set2 = Set;
-              const items = [closure_0];
+              const items = [outer1_0];
               const _Array = Array;
               HermesBuiltin.arraySpread(Array.from(lockKeys.lockKeys), 1);
               const set = new Set(items);
@@ -34,7 +34,7 @@ export default _module.create((arg0) => {
           } else if (hasItem) {
             const _Set = Set;
             const set1 = new Set(lockKeys);
-            set1.delete(closure_0);
+            set1.delete(outer1_0);
             obj = {};
             const merged1 = Object.assign(lockKeys);
             obj["lockKeys"] = set1;
@@ -48,3 +48,6 @@ export default _module.create((arg0) => {
   };
   return obj;
 });
+const result = require("set").fileFinishedImporting("modules/panels/morphable/AppFreezeStore.tsx");
+
+export default obj;

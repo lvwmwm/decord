@@ -1,57 +1,61 @@
-// Module ID: 7653
-// Function ID: 61223
+// Module ID: 7659
+// Function ID: 61260
 // Name: DoubleTapErrorToastIcon
-// Dependencies: []
+// Dependencies: [31, 27, 1852, 33, 4130, 689, 7660, 3831, 4126, 1212, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7653 (DoubleTapErrorToastIcon)
+// Module 7659 (DoubleTapErrorToastIcon)
+import "result";
+import { View } from "get ActivityIndicator";
+import { EmojiDisabledReasons } from "set";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function DoubleTapErrorToastIcon() {
-  let obj = { style: callback().icon, aria-hidden: true };
-  obj = { color: importDefault(dependencyMap[5]).colors.WHITE, size: "xs" };
-  obj.children = jsx(arg1(dependencyMap[6]).XSmallBoldIcon, obj);
-  return <View {...obj} />;
+  let obj = { style: _createForOfIteratorHelperLoose().icon, "aria-hidden": true };
+  obj = { color: importDefault(689).colors.WHITE, size: "xs" };
+  obj.children = jsx(require(7660) /* XSmallBoldIcon */.XSmallBoldIcon, { color: importDefault(689).colors.WHITE, size: "xs" });
+  return <View color={importDefault(689).colors.WHITE} size="xs" />;
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const EmojiDisabledReasons = arg1(dependencyMap[2]).EmojiDisabledReasons;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: importDefault(dependencyMap[5]).radii.round, padding: importDefault(dependencyMap[5]).space.PX_4, marginLeft: importDefault(dependencyMap[5]).space.PX_4 };
-obj.icon = obj;
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapErrorToast.tsx");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, padding: require("_createForOfIteratorHelperLoose").space.PX_4, marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.icon = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("set").fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapErrorToast.tsx");
 
 export const showDoubleTapErrorToast = function showDoubleTapErrorToast(arg0) {
-  ({ emojiName: closure_0, reason: closure_1 } = arg0);
-  let obj = importDefault(dependencyMap[7]);
+  let importDefault;
+  let require;
+  ({ emojiName: require, reason: importDefault } = arg0);
+  let obj = importDefault(3831);
   obj = {
     key: "EMOJI_DOUBLE_TAP_ERROR",
     icon() {
-      return callback2(closure_7, {});
+      return outer1_5(outer1_7, {});
     },
     content() {
-      if (closure_1 === constants.DISALLOW_EXTERNAL) {
-        if (null != callback) {
+      if (closure_1 === outer1_4.DISALLOW_EXTERNAL) {
+        if (null != closure_0) {
           let obj = { variant: "text-sm/normal" };
-          const intl3 = callback(closure_2[9]).intl;
-          obj = { emojiName: callback };
-          obj.children = intl3.format(callback(closure_2[9]).t.Dz4vkv, obj);
-          let tmp3Result = callback2(callback(closure_2[8]).Text, obj);
+          const intl3 = outer1_0(outer1_2[9]).intl;
+          obj = { emojiName: closure_0 };
+          obj.children = intl3.format(outer1_0(outer1_2[9]).t.Dz4vkv, obj);
+          let tmp3Result = outer1_5(outer1_0(outer1_2[8]).Text, obj);
         }
         return tmp3Result;
       }
       obj = { variant: "text-sm/normal" };
-      if (null != callback) {
-        const intl2 = callback(closure_2[9]).intl;
-        const obj1 = { emojiName: callback };
-        let formatResult = intl2.format(callback(closure_2[9]).t.WZGLFq, obj1);
+      if (null != closure_0) {
+        const intl2 = outer1_0(outer1_2[9]).intl;
+        const obj1 = { emojiName: closure_0 };
+        let formatResult = intl2.format(outer1_0(outer1_2[9]).t.WZGLFq, obj1);
       } else {
-        const intl = callback(closure_2[9]).intl;
-        formatResult = intl.string(callback(closure_2[9]).t.CL5mWi);
+        const intl = outer1_0(outer1_2[9]).intl;
+        formatResult = intl.string(outer1_0(outer1_2[9]).t.CL5mWi);
       }
       obj.children = formatResult;
-      tmp3Result = callback2(callback(closure_2[8]).Text, obj);
+      tmp3Result = outer1_5(outer1_0(outer1_2[8]).Text, obj);
     },
     toastDurationMs: 3000
   };

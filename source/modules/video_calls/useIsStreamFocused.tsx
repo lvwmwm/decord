@@ -1,21 +1,23 @@
-// Module ID: 10606
-// Function ID: 82753
+// Module ID: 10616
+// Function ID: 82803
 // Name: useIsStreamFocused
-// Dependencies: []
+// Dependencies: [4143, 4148, 566, 2]
 // Exports: useIsStreamFocused
 
-// Module 10606 (useIsStreamFocused)
-let closure_2 = importDefault(dependencyMap[0]);
-const isStreamParticipant = arg1(dependencyMap[1]).isStreamParticipant;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");
+// Module 10616 (useIsStreamFocused)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { isStreamParticipant } from "ParticipantTypes";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");
 
 export const useIsStreamFocused = function useIsStreamFocused(id) {
-  const arg1 = id;
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => {
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
     let selectedParticipant = null;
-    if (null != arg0) {
-      selectedParticipant = selectedParticipant.getSelectedParticipant(arg0);
+    if (null != closure_0) {
+      selectedParticipant = outer1_2.getSelectedParticipant(closure_0);
     }
     return selectedParticipant;
   });

@@ -4,9 +4,11 @@
 // Dependencies: []
 
 // Module 176 (set)
-let closure_1 = 1;
+const global = arg0;
+let c1 = 1;
 const set = new Set();
 arg5.setImmediate = function setImmediate(flushQueue) {
+  const _global = flushQueue;
   const length = arguments.length;
   let num = 0;
   if (length > 1) {
@@ -30,16 +32,16 @@ arg5.setImmediate = function setImmediate(flushQueue) {
     if (+closure_1.has(+closure_1)) {
       set.delete(tmp3);
     }
-    flushQueue.queueMicrotask(() => {
+    _global.queueMicrotask(() => {
       if (tmp3.has(tmp3)) {
         tmp3.delete(tmp3);
       } else {
-        arg0.apply(undefined, closure_1);
+        callback.apply(undefined, closure_1);
       }
     });
     return +closure_1;
   }
 };
-arg5.clearImmediate = function clearImmediate(closure_12) {
-  set.add(closure_12);
+arg5.clearImmediate = function clearImmediate(_updateImmediate) {
+  set.add(_updateImmediate);
 };

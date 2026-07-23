@@ -1,17 +1,19 @@
 // Module ID: 1029
-// Function ID: 11097
+// Function ID: 11098
 // Name: whenIdleOrHidden
-// Dependencies: []
+// Dependencies: [1015, 1024, 1017]
 
 // Module 1029 (whenIdleOrHidden)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.whenIdleOrHidden = function whenIdleOrHidden(closure_6) {
-  let arg1 = closure_6;
-  let _setTimeout = arg1(arg6[0]).WINDOW.requestIdleCallback;
+  let _require = closure_6;
+  let _setTimeout = _require(1015).WINDOW.requestIdleCallback;
   if (!_setTimeout) {
-    _setTimeout = arg1(arg6[0]).WINDOW.setTimeout;
+    _setTimeout = _require(1015).WINDOW.setTimeout;
   }
-  const _document = arg1(arg6[0]).WINDOW.document;
+  const _document = _require(1015).WINDOW.document;
   let visibilityState;
   if (null != _document) {
     visibilityState = _document.visibilityState;
@@ -19,18 +21,18 @@ arg5.whenIdleOrHidden = function whenIdleOrHidden(closure_6) {
   if ("hidden" === visibilityState) {
     closure_6();
   } else {
-    const runOnceResult = arg1(arg6[1]).runOnce(closure_6);
-    arg1 = runOnceResult;
-    const obj = arg1(arg6[1]);
-    arg1(arg6[2]).addPageListener("visibilitychange", runOnceResult, { "Null": null, "Null": null });
-    const obj2 = arg1(arg6[2]);
-    arg1(arg6[2]).addPageListener("pagehide", runOnceResult, { "Null": null, "Null": null });
+    const runOnceResult = _require(1024).runOnce(closure_6);
+    _require = runOnceResult;
+    let obj = _require(1024);
+    _require(1017).addPageListener("visibilitychange", runOnceResult, { once: true, capture: true });
+    const obj2 = _require(1017);
+    _require(1017).addPageListener("pagehide", runOnceResult, { once: true, capture: true });
     _setTimeout(() => {
-      runOnceResult();
-      runOnceResult(closure_1[2]).removePageListener("visibilitychange", runOnceResult, { capture: true });
-      const obj = runOnceResult(closure_1[2]);
-      runOnceResult(closure_1[2]).removePageListener("pagehide", runOnceResult, { capture: true });
+      callback();
+      callback(outer1_1[2]).removePageListener("visibilitychange", callback, { capture: true });
+      const obj = callback(outer1_1[2]);
+      callback(outer1_1[2]).removePageListener("pagehide", callback, { capture: true });
     });
-    const obj3 = arg1(arg6[2]);
+    const obj3 = _require(1017);
   }
 };

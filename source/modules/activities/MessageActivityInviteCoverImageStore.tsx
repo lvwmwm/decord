@@ -1,39 +1,40 @@
-// Module ID: 12199
-// Function ID: 93752
+// Module ID: 12313
+// Function ID: 95903
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1362, 566, 686, 2]
 
-// Module 12199 (_isNativeReflectConstruct)
+// Module 12313 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importDefaultResult from "priv";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let importDefaultResult = importDefault(dependencyMap[5]);
 let obj = { max: 500 };
 importDefaultResult = new importDefaultResult(obj);
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class MessageActivityInviteCoverImageStore {
     constructor() {
       self = this;
       tmp = MessageActivityInviteCoverImageStore(this, MessageActivityInviteCoverImageStore);
-      obj = closure_3(MessageActivityInviteCoverImageStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(MessageActivityInviteCoverImageStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,18 +43,17 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = MessageActivityInviteCoverImageStore;
   callback2(MessageActivityInviteCoverImageStore, Store);
   const items = [
     {
       key: "getCoverImageURL",
       value(messageId) {
-        return closure_5.get(messageId.messageId);
+        return outer1_5.get(messageId.messageId);
       }
     }
   ];
   return callback(MessageActivityInviteCoverImageStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "MessageActivityInviteCoverImageStore";
 obj = {
   SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL: function handleSetMessageActivityInviteCoverImageURL(arg0) {
@@ -67,7 +67,7 @@ obj = {
     }
   }
 };
-tmp4 = new tmp4(importDefault(dependencyMap[7]), obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/activities/MessageActivityInviteCoverImageStore.tsx");
+tmp4 = new tmp4(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/activities/MessageActivityInviteCoverImageStore.tsx");
 
 export default tmp4;

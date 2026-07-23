@@ -1,18 +1,22 @@
-// Module ID: 10684
-// Function ID: 83287
+// Module ID: 10694
+// Function ID: 83336
 // Name: getGoLiveAutoQualityExperimentConfig
-// Dependencies: []
+// Dependencies: [1188, 4220, 4185, 1325, 566, 587, 4309, 2]
 // Exports: maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 10684 (getGoLiveAutoQualityExperimentConfig)
+// Module 10694 (getGoLiveAutoQualityExperimentConfig)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { ApplicationStreamPresets } from "makeButton";
+import importDefaultResult from "getUnitId";
+
+const require = arg1;
 function getGoLiveAutoQualityExperimentConfig(location) {
   return store.getConfig({ location: location.location });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const ApplicationStreamPresets = arg1(dependencyMap[2]).ApplicationStreamPresets;
-let obj = { "Null": true, "Null": false, "Null": false };
-obj = { defaultConfig: obj };
+let obj = { allowAutoQuality: false, defaultAutoQuality: false, migrateAutoQuality: false };
+obj = { name: "2025-10-go-live-auto-quality", kind: "user" };
+obj.defaultConfig = obj;
 obj = {};
 const obj1 = {};
 const merged = Object.assign(obj);
@@ -25,29 +29,28 @@ obj2["allowAutoQuality"] = true;
 obj2["defaultAutoQuality"] = true;
 obj[2] = obj2;
 obj.variations = obj;
-let closure_5 = importDefault(dependencyMap[3])(obj);
-const importDefaultResult = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/go_live/GoLiveAutoQualityExperiment.tsx");
+let closure_5 = require("getUnitId")(obj);
+let result = require("makeButton").fileFinishedImporting("modules/go_live/GoLiveAutoQualityExperiment.tsx");
 
 export { getGoLiveAutoQualityExperimentConfig };
 export const useGoLiveAutoQualityExperimentConfig = function useGoLiveAutoQualityExperimentConfig(location) {
-  const arg1 = location.location;
-  const items = [closure_2];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => callback({ location }));
+  location = location.location;
+  const items = [_isNativeReflectConstruct];
+  return location(566).useStateFromStores(items, () => outer1_6({ location }));
 };
 export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
-  const Storage = arg1(dependencyMap[5]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   const value = Storage.get("GoLiveAutoQualityMigrationVersion");
   if (store.getConfig({ location: "maybeMigrateToAutoQuality" }).migrateAutoQuality) {
     if (tmp3 < 1) {
-      const state = state.getState();
+      state = state.getState();
       if (state.preset !== ApplicationStreamPresets.PRESET_CUSTOM) {
-        let obj = arg1(dependencyMap[6]);
+        let obj = require(4309) /* isVoiceChannelFull */;
         obj = { preset: ApplicationStreamPresets.PRESET_AUTO };
         ({ resolution: obj2.resolution, fps: obj2.frameRate, soundshareEnabled: obj2.soundshareEnabled } = state);
         obj.noTrack = true;
         obj.updateStreamSettings(obj);
-        const Storage2 = arg1(dependencyMap[5]).Storage;
+        const Storage2 = require(587) /* Storage */.Storage;
         const result = Storage2.set("GoLiveAutoQualityMigrationVersion", 1);
       }
     }

@@ -1,18 +1,17 @@
-// Module ID: 7533
-// Function ID: 60280
+// Module ID: 7539
+// Function ID: 60317
 // Name: postToNativeWebView
-// Dependencies: []
+// Dependencies: [2]
 // Exports: buildIncodeFallbackSessionInjection, buildIncodeParamsInjection, parseIncodeWebViewMessage, postIncodeCaptureComplete, postIncodeFallbackRequest, postIncodeResult, readInjectedIncodeParams
 
-// Module 7533 (postToNativeWebView)
+// Module 7539 (postToNativeWebView)
 function postToNativeWebView(arg0) {
   if (null != ReactNativeWebView) {
     ReactNativeWebView.postMessage(arg0);
   }
 }
-const obj = { COMPLETED: "completed", CANCELLED: "cancelled", ERROR: "error" };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/age_assurance/AgeVerificationIncodeWebViewConstants.tsx");
+let obj = { COMPLETED: "completed", CANCELLED: "cancelled", ERROR: "error" };
+const result = require("set").fileFinishedImporting("modules/age_assurance/AgeVerificationIncodeWebViewConstants.tsx");
 
 export const AGE_VERIFICATION_INCODE_PATH = "/age-verification/incode";
 export const AGE_VERIFICATION_INCODE_PARAMS_KEY = "__DISCORD_AGE_VERIFICATION_INCODE_PARAMS__";

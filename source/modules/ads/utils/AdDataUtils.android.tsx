@@ -1,48 +1,51 @@
-// Module ID: 6966
-// Function ID: 55700
+// Module ID: 6971
+// Function ID: 55734
 // Name: getAdUser
-// Dependencies: []
+// Dependencies: [57, 31, 6972, 6973, 6974, 2]
 // Exports: getAdUser, useAdUser
 
-// Module 6966 (getAdUser)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const DEFAULT_TIMEOUT_MS = arg1(dependencyMap[3]).DEFAULT_TIMEOUT_MS;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/ads/utils/AdDataUtils.android.tsx");
+// Module 6971 (getAdUser)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { DEFAULT_TIMEOUT_MS } from "DEFAULT_TIMEOUT_MS";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/ads/utils/AdDataUtils.android.tsx");
 
 export const getAdUser = function getAdUser(questContentName) {
-  let adUser = closure_4.adUser;
+  let adUser = _isNativeReflectConstruct.adUser;
   if (null == adUser) {
-    if (!closure_4.hasFetchFailed) {
-      if (!closure_4.isFetching) {
-        adUser = arg1(dependencyMap[4]).fetchAdUser(questContentName);
-        const obj = arg1(dependencyMap[4]);
+    if (!_isNativeReflectConstruct.hasFetchFailed) {
+      if (!_isNativeReflectConstruct.isFetching) {
+        adUser = require(6974) /* _fetchAdUser */.fetchAdUser(questContentName);
+        const obj = require(6974) /* _fetchAdUser */;
       }
       let resolved = new Promise((arg0) => {
+        let closure_0 = arg0;
         function handleUpdate() {
-          let hasFetchFailed = null != safeResolve.adUser;
+          let hasFetchFailed = null != outer2_4.adUser;
           if (!hasFetchFailed) {
-            hasFetchFailed = safeResolve.hasFetchFailed;
+            hasFetchFailed = outer2_4.hasFetchFailed;
           }
           if (hasFetchFailed) {
-            safeResolve(safeResolve.adUser);
+            safeResolve(outer2_4.adUser);
           }
         }
         function safeResolve(adUser) {
-          if (!closure_1) {
-            closure_1 = true;
+          if (!c1) {
+            c1 = true;
             const _clearTimeout = clearTimeout;
-            clearTimeout(closure_2);
-            safeResolve.removeChangeListener(handleUpdate);
-            adUser(adUser);
+            clearTimeout(_slicedToArray);
+            outer2_4.removeChangeListener(handleUpdate);
+            callback(adUser);
           }
         }
-        let closure_1 = false;
+        let c1 = false;
         const timeout = setTimeout(() => {
           safeResolve(null);
-        }, closure_5);
-        safeResolve.addChangeListener(handleUpdate);
+        }, outer1_5);
+        outer1_4.addChangeListener(handleUpdate);
       });
     }
     return resolved;
@@ -50,34 +53,33 @@ export const getAdUser = function getAdUser(questContentName) {
   resolved = Promise.resolve(adUser);
 };
 export const useAdUser = function useAdUser(profile_badge) {
-  const arg1 = profile_badge;
-  const tmp = callback(React.useState(closure_4.adUser), 2);
+  let closure_0 = profile_badge;
+  const tmp = callback(React.useState(_isNativeReflectConstruct.adUser), 2);
   let closure_1 = tmp[1];
   const items = [profile_badge];
   const effect = React.useEffect(() => {
     function handleStoreChange() {
-      let hasFetchFailed = null != closure_4.adUser;
+      let hasFetchFailed = null != outer2_4.adUser;
       if (!hasFetchFailed) {
-        hasFetchFailed = closure_4.hasFetchFailed;
+        hasFetchFailed = outer2_4.hasFetchFailed;
       }
       if (hasFetchFailed) {
-        callback(closure_4.adUser);
+        outer1_1(outer2_4.adUser);
       }
     }
-    const arg0 = handleStoreChange;
-    let hasFetchFailed = null != closure_4.adUser;
+    let hasFetchFailed = null != outer1_4.adUser;
     if (!hasFetchFailed) {
-      hasFetchFailed = closure_4.isFetching;
+      hasFetchFailed = outer1_4.isFetching;
     }
     if (!hasFetchFailed) {
-      hasFetchFailed = closure_4.hasFetchFailed;
+      hasFetchFailed = outer1_4.hasFetchFailed;
     }
     if (!hasFetchFailed) {
-      const adUser = arg0(closure_1[4]).fetchAdUser(arg0);
-      const obj = arg0(closure_1[4]);
+      const adUser = profile_badge(table[4]).fetchAdUser(handleStoreChange);
+      const obj = profile_badge(table[4]);
     }
-    closure_4.addChangeListener(handleStoreChange);
-    return () => closure_4.removeChangeListener(handleStoreChange);
+    outer1_4.addChangeListener(handleStoreChange);
+    return () => outer2_4.removeChangeListener(handleStoreChange);
   }, items);
   return tmp[0];
 };

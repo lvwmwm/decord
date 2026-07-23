@@ -1,19 +1,21 @@
 // Module ID: 846
-// Function ID: 9436
+// Function ID: 9437
 // Name: applyClientOptions
-// Dependencies: []
+// Dependencies: [57, 65, 807, 815, 847, 848, 834, 809, 850, 841, 820]
 // Exports: parseEventHintOrCaptureContext, prepareEvent
 
 // Module 846 (applyClientOptions)
+import _slicedToArray from "_slicedToArray";
+import _toConsumableArray from "_toConsumableArray";
+
 function applyClientOptions(environment, environment2) {
   let dist;
   let maxValueLength;
   let release;
   ({ release, dist, maxValueLength } = environment2);
-  const require = maxValueLength;
   let DEFAULT_ENVIRONMENT = environment.environment || environment2.environment;
   if (!DEFAULT_ENVIRONMENT) {
-    DEFAULT_ENVIRONMENT = require(dependencyMap[6]).DEFAULT_ENVIRONMENT;
+    DEFAULT_ENVIRONMENT = maxValueLength(834).DEFAULT_ENVIRONMENT;
   }
   environment.environment = DEFAULT_ENVIRONMENT;
   if (tmp3) {
@@ -24,8 +26,8 @@ function applyClientOptions(environment, environment2) {
   }
   const request = environment.request;
   if (tmp5) {
-    request.url = require(dependencyMap[7]).truncate(request.url, maxValueLength);
-    const obj = require(dependencyMap[7]);
+    request.url = maxValueLength(809).truncate(request.url, maxValueLength);
+    let obj = maxValueLength(809);
   }
   if (maxValueLength) {
     const exception = environment.exception;
@@ -39,15 +41,15 @@ function applyClientOptions(environment, environment2) {
     if (!tmp8) {
       const item = arr.forEach((value) => {
         if (value.value) {
-          value.value = maxValueLength(closure_1[7]).truncate(value.value, maxValueLength);
-          const obj = maxValueLength(closure_1[7]);
+          value.value = maxValueLength(outer1_1[7]).truncate(value.value, maxValueLength);
+          const obj = maxValueLength(outer1_1[7]);
         }
       });
     }
   }
 }
 function applyDebugIds(exception) {
-  const callback = callback(dependencyMap[8]).getFilenameToDebugIdMap(arg1);
+  _require = _require(850).getFilenameToDebugIdMap(arg1);
   exception = exception.exception;
   let tmp = null == exception;
   let arr = exception;
@@ -57,7 +59,7 @@ function applyDebugIds(exception) {
     arr = values;
   }
   if (!tmp) {
-    const item = arr.forEach((stacktrace) => {
+    let item = arr.forEach((stacktrace) => {
       stacktrace = stacktrace.stacktrace;
       let tmp = null == stacktrace;
       let arr = stacktrace;
@@ -69,7 +71,7 @@ function applyDebugIds(exception) {
       if (!tmp) {
         const item = arr.forEach((filename) => {
           if (filename.filename) {
-            filename.debug_id = closure_0[filename.filename];
+            filename.debug_id = outer1_0[filename.filename];
           }
         });
       }
@@ -78,7 +80,6 @@ function applyDebugIds(exception) {
 }
 function applyDebugMeta(exception) {
   const obj = {};
-  const require = obj;
   exception = exception.exception;
   let tmp = null == exception;
   let arr = exception;
@@ -88,7 +89,7 @@ function applyDebugMeta(exception) {
     arr = values;
   }
   if (!tmp) {
-    const item = arr.forEach((stacktrace) => {
+    let item = arr.forEach((stacktrace) => {
       stacktrace = stacktrace.stacktrace;
       let tmp = null == stacktrace;
       let arr = stacktrace;
@@ -101,11 +102,11 @@ function applyDebugMeta(exception) {
         const item = arr.forEach((debug_id) => {
           if (debug_id.debug_id) {
             if (debug_id.abs_path) {
-              closure_0[debug_id.abs_path] = debug_id.debug_id;
+              outer1_0[debug_id.abs_path] = debug_id.debug_id;
             } else if (debug_id.filename) {
-              closure_0[debug_id.filename] = debug_id.debug_id;
+              outer1_0[debug_id.filename] = debug_id.debug_id;
             }
-            delete r0.debug_id;
+            delete tmp.debug_id;
           }
         });
       }
@@ -118,26 +119,24 @@ function applyDebugMeta(exception) {
       images = [];
     }
     exception.debug_meta.images = images;
-    const dependencyMap = exception.debug_meta.images;
+    images = exception.debug_meta.images;
     const _Object = Object;
     const entries = Object.entries(obj);
     const item1 = entries.forEach((arg0) => {
-      const tmp = callback(arg0, 2);
+      const tmp = outer1_2(arg0, 2);
       images.push({ type: "sourcemap", code_file: tmp[0], debug_id: tmp[1] });
     });
   }
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = [];
+let closure_4 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "propagationContext"];
 
 export { applyClientOptions };
 export { applyDebugIds };
 export { applyDebugMeta };
 export const parseEventHintOrCaptureContext = function parseEventHintOrCaptureContext(captureContext) {
   if (captureContext) {
-    let tmp3 = captureContext instanceof require(dependencyMap[10]).Scope;
+    let tmp3 = captureContext instanceof require(820) /* Scope */.Scope;
     if (!tmp3) {
       tmp3 = "function" === typeof captureContext;
     }
@@ -156,30 +155,28 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
   if (undefined !== normalizeDepth) {
     num = normalizeDepth;
   }
-  const require = num;
   const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
   let num2 = 1000;
   if (undefined !== normalizeMaxBreadth) {
     num2 = normalizeMaxBreadth;
   }
-  const dependencyMap = num2;
-  const obj = {};
+  let obj = {};
   event_id = event_id.event_id;
   if (!event_id) {
     event_id = event_id2.event_id;
   }
   if (!event_id) {
-    event_id = require(dependencyMap[2]).uuid4();
-    const obj2 = require(dependencyMap[2]);
+    event_id = num(num2[2]).uuid4();
+    let obj2 = num(num2[2]);
   }
   obj.event_id = event_id;
   let timestamp = event_id.timestamp;
   if (!timestamp) {
-    timestamp = require(dependencyMap[3]).dateTimestampInSeconds();
-    const obj3 = require(dependencyMap[3]);
+    timestamp = num(num2[3]).dateTimestampInSeconds();
+    let obj3 = num(num2[3]);
   }
   obj.timestamp = timestamp;
-  const merged = Object.assign({}, event_id, obj);
+  let merged = Object.assign({}, event_id, obj);
   let integrations = event_id2.integrations;
   if (!integrations) {
     const integrations1 = normalizeDepth.integrations;
@@ -193,9 +190,9 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
     if (!integrations2) {
       integrations2 = [];
     }
-    merged.sdk.integrations = items.concat(callback2(integrations2), callback2(integrations));
-    const tmp7 = callback2;
-    const tmp7Result = callback2(integrations2);
+    merged.sdk.integrations = items.concat(_toConsumableArray(integrations2), _toConsumableArray(integrations));
+    const tmp7 = _toConsumableArray;
+    const tmp7Result = _toConsumableArray(integrations2);
   }
   if (emit) {
     emit.emit("applyFrameMetadata", event_id);
@@ -206,42 +203,44 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
   const captureContext = event_id2.captureContext;
   if (!captureContext) {
     if (event_id2.mechanism) {
-      const result = require(dependencyMap[2]).addExceptionMechanism(merged, event_id2.mechanism);
-      const obj5 = require(dependencyMap[2]);
+      const result = num(num2[2]).addExceptionMechanism(merged, event_id2.mechanism);
+      let obj5 = num(num2[2]);
     }
     if (emit) {
       let eventProcessors = emit.getEventProcessors();
     } else {
       eventProcessors = [];
     }
-    const combinedScopeData = require(dependencyMap[4]).getCombinedScopeData(isolationScope, clone);
+    const combinedScopeData = num(num2[4]).getCombinedScopeData(isolationScope, clone);
     const items1 = [];
     let attachments = event_id2.attachments;
     if (!attachments) {
       attachments = [];
     }
-    const obj6 = require(dependencyMap[4]);
-    const tmp26 = callback2;
-    const combined = items1.concat(callback2(attachments), callback2(combinedScopeData.attachments));
+    const obj6 = num(num2[4]);
+    const tmp26 = _toConsumableArray;
+    const combined = items1.concat(_toConsumableArray(attachments), _toConsumableArray(combinedScopeData.attachments));
     if (combined.length) {
       event_id2.attachments = combined;
     }
-    const tmp26Result = callback2(attachments);
-    const result1 = require(dependencyMap[4]).applyScopeDataToEvent(merged, combinedScopeData);
+    const tmp26Result = _toConsumableArray(attachments);
+    const result1 = num(num2[4]).applyScopeDataToEvent(merged, combinedScopeData);
     const items2 = [];
-    const obj7 = require(dependencyMap[4]);
-    const combined1 = items2.concat(callback2(eventProcessors), callback2(combinedScopeData.eventProcessors));
-    const tmp33 = callback2(eventProcessors);
-    const result2 = require(dependencyMap[5]).notifyEventProcessors(combined1, merged, event_id2);
+    let obj7 = num(num2[4]);
+    const combined1 = items2.concat(_toConsumableArray(eventProcessors), _toConsumableArray(combinedScopeData.eventProcessors));
+    const tmp33 = _toConsumableArray(eventProcessors);
+    const result2 = num(num2[5]).notifyEventProcessors(combined1, merged, event_id2);
     return result2.then((breadcrumbs) => {
       if (breadcrumbs) {
-        callback(breadcrumbs);
+        outer1_7(breadcrumbs);
       }
       let tmp3 = breadcrumbs;
       if ("number" === typeof num) {
         tmp3 = breadcrumbs;
         if (0 > 0) {
-          tmp3 = function normalizeEvent(breadcrumbs, arg1, arg2) {
+          tmp3 = (function normalizeEvent(breadcrumbs, arg1, arg2) {
+            let closure_0 = arg1;
+            let closure_1 = arg2;
             if (breadcrumbs) {
               const _Object = Object;
               breadcrumbs = breadcrumbs.breadcrumbs;
@@ -251,9 +250,9 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
                 obj.breadcrumbs = breadcrumbs.map((data) => {
                   data = data.data;
                   if (data) {
-                    const obj = { data: arg1(arg2[9]).normalize(data.data, arg1, arg2) };
+                    const obj = { data: 9(num2[9]).normalize(data.data, closure_0, closure_1) };
                     data = obj;
-                    const obj2 = arg1(arg2[9]);
+                    const obj2 = 9(num2[9]);
                   }
                   return Object.assign({}, data, data);
                 });
@@ -261,29 +260,29 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
               }
               let user = breadcrumbs.user;
               if (user) {
-                obj = { user: arg1(arg2[9]).normalize(breadcrumbs.user, arg1, arg2) };
+                obj = { user: 9(num2[9]).normalize(breadcrumbs.user, arg1, arg2) };
                 user = obj;
-                const obj3 = arg1(arg2[9]);
+                const obj3 = 9(num2[9]);
               }
               let contexts = breadcrumbs.contexts;
               if (contexts) {
-                obj = { contexts: arg1(arg2[9]).normalize(breadcrumbs.contexts, arg1, arg2) };
+                obj = { contexts: num(9[9]).normalize(breadcrumbs.contexts, arg1, arg2) };
                 contexts = obj;
-                const obj5 = arg1(arg2[9]);
+                const obj5 = num(9[9]);
               }
               let extra = breadcrumbs.extra;
               if (extra) {
-                const obj1 = { extra: arg1(arg2[9]).normalize(breadcrumbs.extra, arg1, arg2) };
+                const obj1 = { extra: num(num2[9]).normalize(breadcrumbs.extra, arg1, arg2) };
                 extra = obj1;
-                const obj7 = arg1(arg2[9]);
+                const obj7 = num(num2[9]);
               }
               const merged = Object.assign({}, breadcrumbs, breadcrumbs, user, contexts, extra);
               const contexts2 = breadcrumbs.contexts;
               if (tmp17) {
                 merged.contexts.trace = breadcrumbs.contexts.trace;
                 if (breadcrumbs.contexts.trace.data) {
-                  merged.contexts.trace.data = arg1(arg2[9]).normalize(breadcrumbs.contexts.trace.data, arg1, arg2);
-                  const obj8 = arg1(arg2[9]);
+                  merged.contexts.trace.data = num(num2[9]).normalize(breadcrumbs.contexts.trace.data, arg1, arg2);
+                  const obj8 = num(num2[9]);
                 }
               }
               if (breadcrumbs.spans) {
@@ -291,23 +290,23 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
                 merged.spans = spans.map((data) => {
                   data = data.data;
                   if (data) {
-                    const obj = { data: arg1(arg2[9]).normalize(data.data, arg1, arg2) };
+                    const obj = { data: 9(num2[9]).normalize(data.data, closure_0, closure_1) };
                     data = obj;
-                    const obj2 = arg1(arg2[9]);
+                    const obj2 = 9(num2[9]);
                   }
                   return Object.assign({}, data, data);
                 });
               }
               const contexts3 = breadcrumbs.contexts;
               if (tmp20) {
-                merged.contexts.flags = arg1(arg2[9]).normalize(breadcrumbs.contexts.flags, 3, arg2);
-                const obj9 = arg1(arg2[9]);
+                merged.contexts.flags = num(num2[9]).normalize(breadcrumbs.contexts.flags, 3, arg2);
+                const obj9 = num(num2[9]);
               }
               return merged;
             } else {
               return null;
             }
-          }(breadcrumbs, num, num2);
+          })(breadcrumbs, num, num2);
         }
       }
       return tmp3;
@@ -316,7 +315,7 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
     if (clone) {
       let cloneResult = clone.clone();
     } else {
-      const Scope = require(dependencyMap[10]).Scope;
+      const Scope = num(num2[10]).Scope;
       const prototype = Scope.prototype;
       cloneResult = new Scope();
     }

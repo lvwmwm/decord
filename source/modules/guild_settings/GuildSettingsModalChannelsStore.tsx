@@ -1,9 +1,28 @@
-// Module ID: 16091
-// Function ID: 123705
+// Module ID: 16208
+// Function ID: 125878
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 29, 1352, 1907, 3758, 653, 5071, 22, 566, 686, 2]
 
-// Module 16091 (_isNativeReflectConstruct)
+// Module 16208 (_isNativeReflectConstruct)
+import closure_3 from "_callSuper";
+import closure_4 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import ME from "ME";
+import importDefaultResult from "apply";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_15;
+let closure_16;
+let closure_9;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -23,7 +42,7 @@ function sortCategoryList(channel, channel2) {
       if (callback4(type)) {
         return num;
       }
-      let num = 1;
+      num = 1;
       if (type === constants.GUILD_TEXT) {
         num = -1;
       }
@@ -38,10 +57,10 @@ function buildSortedChannels() {
   const _null = { _categories: [], null: [] };
   const keys = Object.keys(closure_23);
   const item = keys.forEach((arg0) => {
-    if (null != closure_23[arg0]) {
+    if (null != outer1_23[arg0]) {
       if (null != _categories) {
-        if (tmp.type === constants.GUILD_CATEGORY) {
-          const _categories = _categories._categories;
+        if (tmp.type === outer1_15.GUILD_CATEGORY) {
+          _categories = _categories._categories;
           let obj = { channel: tmp, index: -1 };
           let arr = _categories.push(obj);
           if (null == _categories[tmp.id]) {
@@ -65,27 +84,26 @@ function buildSortedChannels() {
     }
   });
   let _categories = _null._categories;
-  const sorted = _categories.sort(sortCategoryList);
+  let sorted = _categories.sort(sortCategoryList);
   _categories = _null._categories;
   const item1 = _categories.forEach((channel) => {
     channel = channel.channel;
-    if (null != closure_19) {
+    if (null != _categories) {
       if (null != channel) {
-        if (null != closure_19[channel.id]) {
-          const sorted = obj.sort(closure_27);
+        if (null != _categories[channel.id]) {
+          const sorted = obj.sort(outer1_27);
         }
       }
     }
   });
-  const item2 = importDefault(dependencyMap[10])(_null._categories, _null).forEach(setIndex);
+  const item2 = importDefault(5071)(_null._categories, _null).forEach(setIndex);
   setupSortLists();
 }
 function rebuildChannels() {
-  const channels = channels.getChannels(closure_17);
-  if (channels === closure_20) {
+  channels = channels.getChannels(c17);
+  if (channels === channels) {
     return false;
   } else {
-    closure_20 = channels;
     let closure_23 = {};
     const item = channels[closure_11].forEach((channel) => {
       channel = channel.channel;
@@ -97,11 +115,11 @@ function rebuildChannels() {
       closure_23[channel.id] = channel;
       return channel;
     });
-    const item2 = channels[closure_15.GUILD_CATEGORY].forEach((channel) => {
+    const item2 = channels[constants.GUILD_CATEGORY].forEach((channel) => {
       channel = channel.channel;
       let canResult = "null" === channel.id;
       if (!canResult) {
-        canResult = closure_14.can(constants.VIEW_CHANNEL, channel);
+        canResult = outer1_14.can(outer1_16.VIEW_CHANNEL, channel);
       }
       if (canResult) {
         closure_23[channel.id] = channel;
@@ -112,61 +130,49 @@ function rebuildChannels() {
 }
 function setupSortLists() {
   if (null != _null) {
-    const arr = importDefault(dependencyMap[10])(_null._categories, _null, (channel) => {
+    const arr = importDefault(5071)(_null._categories, _null, (channel) => {
       channel = channel.channel;
-      let tmp = channel.type === constants.GUILD_CATEGORY;
+      let tmp = channel.type === outer1_15.GUILD_CATEGORY;
       if (!tmp) {
-        let hasItem = null != set;
+        let hasItem = null != outer1_21;
         if (hasItem) {
-          hasItem = set.has(channel.type);
+          hasItem = outer1_21.has(channel.type);
         }
         tmp = hasItem;
       }
       return tmp;
     });
-    let closure_22 = arr;
     let closure_18 = arr.map((channel) => channel.channel.id);
   }
 }
-let closure_2 = ["<string:2963512464>", "<string:2801594173>"];
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ isGuildSelectableChannelType: closure_9, isGuildVocalChannelType: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-({ GUILD_SELECTABLE_CHANNELS_KEY: closure_11, GUILD_VOCAL_CHANNELS_KEY: closure_12 } = arg1(dependencyMap[7]));
-let closure_13 = importDefault(dependencyMap[7]);
-let closure_14 = importDefault(dependencyMap[8]);
-const tmp3 = arg1(dependencyMap[7]);
-({ ChannelTypes: closure_15, Permissions: closure_16 } = arg1(dependencyMap[9]));
-let closure_17 = null;
-let closure_18 = null;
-let closure_19 = null;
-let closure_20 = null;
-let closure_21 = null;
-let closure_22 = null;
+let closure_2 = ["lock_permissions", "id"];
+({ isGuildSelectableChannelType: closure_9, isGuildVocalChannelType: closure_10 } = _callSuper);
+({ GUILD_SELECTABLE_CHANNELS_KEY: closure_11, GUILD_VOCAL_CHANNELS_KEY: closure_12 } = _isNativeReflectConstruct);
+({ ChannelTypes: closure_15, Permissions: closure_16 } = ME);
+let c17 = null;
+let c18 = null;
+let c19 = null;
+let c20 = null;
+let c21 = null;
+let c22 = null;
 let closure_23 = {};
-const tmp4 = arg1(dependencyMap[9]);
-let closure_24 = importDefault(dependencyMap[11]).debounce(() => {
+let closure_24 = require("apply").debounce(() => {
   rebuildChannels();
   tmp5.emitChange();
 }, 500);
-let tmp5 = (Store) => {
+let tmp5 = ((Store) => {
   class GuildSettingsModalChannelsStoreClass {
     constructor() {
       self = this;
-      tmp = closure_3(this, GuildSettingsModalChannelsStoreClass);
-      obj = closure_6(GuildSettingsModalChannelsStoreClass);
-      tmp2 = closure_5;
-      if (closure_26()) {
+      tmp = outer1_3(this, GuildSettingsModalChannelsStoreClass);
+      obj = outer1_6(GuildSettingsModalChannelsStoreClass);
+      tmp2 = outer1_5;
+      if (outer1_26()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -175,136 +181,134 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = GuildSettingsModalChannelsStoreClass;
   callback2(GuildSettingsModalChannelsStoreClass, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_13, closure_14);
-      const items = [closure_13];
+      this.waitFor(outer1_13, outer1_14);
+      const items = [outer1_13];
       this.syncWith(items, () => {
-        callback();
+        outer2_24();
         return false;
       });
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "initGuild",
     value(arg0) {
-      callback4();
+      const outer1_17 = arg0;
+      outer1_30();
     }
   };
   items[1] = obj;
   obj = {
     key: "channels",
     get() {
-      return closure_19;
+      return outer1_19;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "order",
     get() {
-      return closure_18;
+      return outer1_18;
     }
   };
   items[4] = {
     key: "sortingType",
     get() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[5] = {
     key: "channelList",
     get() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[6] = {
     key: "getLocalChannel",
     value(arg0) {
-      return closure_23[arg0];
+      return outer1_23[arg0];
     }
   };
   return callback(GuildSettingsModalChannelsStoreClass, items);
-}(importDefault(dependencyMap[12]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "GuildSettingsModalChannelsStore";
-tmp5 = new tmp5(importDefault(dependencyMap[13]), {
+tmp5 = new tmp5(require("dispatcher"), {
   GUILD_SETTINGS_MODAL_CHANNELS_TERMINATE: function handleTerminate() {
-    let closure_17 = null;
-    let closure_18 = null;
-    let closure_19 = null;
-    let closure_21 = null;
-    let closure_22 = null;
-    let closure_20 = null;
+    let c17 = null;
+    let c18 = null;
+    let c19 = null;
+    let c21 = null;
+    let c22 = null;
+    let c20 = null;
   },
   GUILD_SETTINGS_MODAL_CHANNELS_START_REORDER: function handleStartReorder(sortingType) {
     sortingType = sortingType.sortingType;
-    if (null == closure_19) {
+    if (null == c19) {
       return false;
     } else {
       const _Set = Set;
       const set = new Set(sortingType);
-      let closure_21 = set;
       setupSortLists();
     }
   },
   GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER: function handleStopReorder() {
-    let closure_21 = null;
+    let c21 = null;
     setupSortLists();
   },
   GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE: function handleLocalSortChange(updates) {
     updates = updates.updates;
     const item = updates.forEach((id) => {
       let lock_permissions;
-      if (null != closure_23[id.id]) {
+      if (null != outer1_23[id.id]) {
         ({ lock_permissions, id } = id);
-        closure_23[id.id] = closure_23[id.id].merge(callback(id, closure_2));
-        const obj = closure_23[id.id];
+        outer1_23[id.id] = outer1_23[id.id].merge(outer1_8(id, outer1_2));
+        const obj = outer1_23[id.id];
       }
     });
     buildSortedChannels();
   }
 });
-const importDefaultResult = importDefault(dependencyMap[11]);
-const obj = {
+let closure_25 = tmp5;
+let obj = {
   GUILD_SETTINGS_MODAL_CHANNELS_TERMINATE: function handleTerminate() {
-    let closure_17 = null;
-    let closure_18 = null;
-    let closure_19 = null;
-    let closure_21 = null;
-    let closure_22 = null;
-    let closure_20 = null;
+    let c17 = null;
+    let c18 = null;
+    let c19 = null;
+    let c21 = null;
+    let c22 = null;
+    let c20 = null;
   },
   GUILD_SETTINGS_MODAL_CHANNELS_START_REORDER: function handleStartReorder(sortingType) {
     sortingType = sortingType.sortingType;
-    if (null == closure_19) {
+    if (null == c19) {
       return false;
     } else {
       const _Set = Set;
       const set = new Set(sortingType);
-      let closure_21 = set;
       setupSortLists();
     }
   },
   GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER: function handleStopReorder() {
-    let closure_21 = null;
+    let c21 = null;
     setupSortLists();
   },
   GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE: function handleLocalSortChange(updates) {
     updates = updates.updates;
     const item = updates.forEach((id) => {
       let lock_permissions;
-      if (null != closure_23[id.id]) {
+      if (null != outer1_23[id.id]) {
         ({ lock_permissions, id } = id);
-        closure_23[id.id] = closure_23[id.id].merge(callback(id, closure_2));
-        const obj = closure_23[id.id];
+        outer1_23[id.id] = outer1_23[id.id].merge(outer1_8(id, outer1_2));
+        const obj = outer1_23[id.id];
       }
     });
     buildSortedChannels();
   }
 };
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_settings/GuildSettingsModalChannelsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_settings/GuildSettingsModalChannelsStore.tsx");
 
 export default tmp5;

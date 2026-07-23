@@ -1,21 +1,23 @@
-// Module ID: 11802
-// Function ID: 91588
+// Module ID: 11812
+// Function ID: 91637
 // Name: useInappropriateConversationsTiers
-// Dependencies: []
+// Dependencies: [1849, 9101, 10105, 566, 10407, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 11802 (useInappropriateConversationsTiers)
-let closure_2 = importDefault(dependencyMap[0]);
-const SafetyWarningTypes = arg1(dependencyMap[1]).SafetyWarningTypes;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");
+// Module 11812 (useInappropriateConversationsTiers)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("InappropriateConversationExperiment").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");
 
 export const useInappropriateConversationsTiers = function useInappropriateConversationsTiers(channel) {
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(10105) /* InappropriateConversationExperiment */;
   const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning({ location: "context-menu-item" });
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = arg1(dependencyMap[3]);
-  const inappropriateConversationBannerForChannel = arg1(dependencyMap[4]).useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getCurrentUser());
+  const obj2 = require(566) /* initialize */;
+  const inappropriateConversationBannerForChannel = require(10407) /* useInappropriateConversationBannerForChannel */.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
   let isStaffResult;
   if (null != stateFromStores) {
     isStaffResult = stateFromStores.isStaff();

@@ -1,21 +1,28 @@
-// Module ID: 7644
-// Function ID: 61190
+// Module ID: 7650
+// Function ID: 61227
 // Name: processColorStringsInternal
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1278, 482, 666, 1327, 4571, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 7644 (processColorStringsInternal)
+// Module 7650 (processColorStringsInternal)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { processColor } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ThemeTypes } from "sum";
+
+const require = arg1;
 function processColorStringsInternal(primaryColor) {
   let tmp10;
   let tmp8;
   let tmp9;
   if (theme.theme === ThemeTypes.LIGHT) {
     if (null != primaryColor) {
-      const obj = importDefault(dependencyMap[5])(primaryColor);
-      [tmp8, tmp9, tmp10] = callback(importDefault(dependencyMap[5])(primaryColor).hsl(), 3);
-      const tmp7 = callback(importDefault(dependencyMap[5])(primaryColor).hsl(), 3);
-      const obj2 = importDefault(dependencyMap[5]);
-      return processColor(importDefault(dependencyMap[5]).hsl(tmp8, tmp9, 0.85 * tmp10).hex());
+      const obj = importDefault(666)(primaryColor);
+      [tmp8, tmp9, tmp10] = callback(importDefault(666)(primaryColor).hsl(), 3);
+      const tmp7 = callback(importDefault(666)(primaryColor).hsl(), 3);
+      const obj2 = importDefault(666);
+      return processColor(importDefault(666).hsl(tmp8, tmp9, 0.85 * tmp10).hex());
     }
   }
   let tmp2;
@@ -36,20 +43,15 @@ function processColorStringsArray(colorStrings) {
   } else {
     const items = [, , ];
     ({ primaryColor: arr[0], secondaryColor: arr[1], tertiaryColor: arr[2] } = processColorStrings(colorStrings));
-    return items.filter(arg1(dependencyMap[6]).isNotNullish);
+    return items.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const processColor = arg1(dependencyMap[2]).processColor;
-let closure_6 = importDefault(dependencyMap[3]);
-const ThemeTypes = arg1(dependencyMap[4]).ThemeTypes;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/premium/enhanced_role_colors/native/EnhancedRoleColorUtils.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/enhanced_role_colors/native/EnhancedRoleColorUtils.tsx");
 
 export { processColorStrings };
 export { processColorStringsArray };
 export const useProcessColorStringsArray = function useProcessColorStringsArray(colorStrings) {
-  const arg1 = colorStrings;
+  let closure_0 = colorStrings;
   let primaryColor;
   if (null != colorStrings) {
     primaryColor = colorStrings.primaryColor;
@@ -65,13 +67,13 @@ export const useProcessColorStringsArray = function useProcessColorStringsArray(
     tertiaryColor = colorStrings.tertiaryColor;
   }
   items[2] = tertiaryColor;
-  return React.useMemo(() => callback(arg0), items);
+  return React.useMemo(() => outer1_10(closure_0), items);
 };
 export const isNativeMessageEligibleForEnhancedRoleColors = function isNativeMessageEligibleForEnhancedRoleColors(guildId, id) {
-  return id(dependencyMap[7]).getHasEnhancedRoleColors(guildId, id);
+  return require(4571) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColors(guildId, id);
 };
 export const useIsRoleStyleAndRoleColorsEligibleForERC = function useIsRoleStyleAndRoleColorsEligibleForERC(guildId, id, stateFromStores, processColorStringsArray) {
-  let tmp = importDefault(dependencyMap[7])(guildId, id);
+  let tmp = importDefault(4571)(guildId, id);
   if (tmp) {
     tmp = "username" === stateFromStores;
   }

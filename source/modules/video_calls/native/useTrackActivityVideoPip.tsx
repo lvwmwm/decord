@@ -1,35 +1,36 @@
-// Module ID: 10607
-// Function ID: 82756
+// Module ID: 10617
+// Function ID: 82806
 // Name: useTrackActivityPip
-// Dependencies: []
+// Dependencies: [31, 10539, 653, 624, 8284, 10599, 675, 2]
 // Exports: default
 
-// Module 10607 (useTrackActivityPip)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/video_calls/native/useTrackActivityVideoPip.tsx");
+// Module 10617 (useTrackActivityPip)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/video_calls/native/useTrackActivityVideoPip.tsx");
 
 export default function useTrackActivityPip(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
-  const importDefault = stateFromStores;
-  const tmp2 = importDefault(dependencyMap[4])(stateFromStores);
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_4.isPipEnabledWhileFocusedOnActivityOrStream());
+  let tmp2 = stateFromStores(8284)(stateFromStores);
   const dependencyMap = tmp2;
-  const tmp3 = importDefault(dependencyMap[5])();
+  const tmp3 = stateFromStores(10599)();
   const React = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = React.useEffect(() => {
-    if (null != tmp3) {
+    if (null != result) {
       if (null != tmp2) {
         if (stateFromStores !== tmp2) {
-          let track = closure_5;
-          const tmp2 = stateFromStores ? track.ACTIVITY_VIDEO_PIP_SHOWN : track.ACTIVITY_VIDEO_PIP_HIDDEN;
+          let track = outer1_5;
+          tmp2 = stateFromStores ? track.ACTIVITY_VIDEO_PIP_SHOWN : track.ACTIVITY_VIDEO_PIP_HIDDEN;
           track = stateFromStores(tmp2[6]).track;
           const obj = {};
-          ({ id: obj.channel_id, guild_id: obj.guild_id } = arg0);
-          ({ applicationId: obj.application_id, compositeInstanceId: obj.activity_session_id } = stateFromStores);
+          ({ id: obj.channel_id, guild_id: obj.guild_id } = closure_0);
+          ({ applicationId: obj.application_id, compositeInstanceId: obj.activity_session_id } = result);
           track(tmp2, obj);
           const tmp5 = stateFromStores(tmp2[6]);
         }

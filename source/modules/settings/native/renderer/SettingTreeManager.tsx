@@ -1,52 +1,57 @@
-// Module ID: 14461
-// Function ID: 108952
+// Module ID: 14575
+// Function ID: 111105
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 10096, 13557, 13556, 2]
 
-// Module 14461 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 14575 (_createForOfIteratorHelperLoose)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,18 +88,14 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const NodeType = arg1(dependencyMap[2]).NodeType;
-let closure_5 = () => {
+let closure_5 = (() => {
   class SettingTreeManagerCache {
     constructor() {
-      tmp = closure_2(this, SettingTreeManagerCache);
+      tmp = outer1_2(this, SettingTreeManagerCache);
       this.cache = {};
       return;
     }
   }
-  const arg1 = SettingTreeManagerCache;
   let obj = {
     key: "get",
     value(arg0) {
@@ -117,19 +118,18 @@ let closure_5 = () => {
   };
   items[2] = obj;
   return callback(SettingTreeManagerCache, items);
-}();
-let tmp2 = () => {
+})();
+let tmp2 = (() => {
   class SettingTreeManager {
     constructor() {
-      tmp = closure_2(this, SettingTreeManager);
-      tmp2 = new closure_5();
+      tmp = outer1_2(this, SettingTreeManager);
+      tmp2 = new outer1_5();
       this.highestAncestorCache = tmp2;
-      tmp3 = new closure_5();
+      tmp3 = new outer1_5();
       this.breadcrumbCache = tmp3;
       return;
     }
   }
-  const arg1 = SettingTreeManager;
   let obj = {
     key: "transformParent",
     value(arg0) {
@@ -144,7 +144,7 @@ let tmp2 = () => {
       return tmp;
     }
   };
-  const items = [obj, , , , , , , ];
+  let items = [obj, , , , , , , ];
   obj = {
     key: "validate",
     value() {
@@ -157,13 +157,13 @@ let tmp2 = () => {
     value(arg0) {
       const self = this;
       const items = [];
-      let transformParentResult = this.transformParent(SettingTreeManager(closure_1[3]).SETTING_RENDERER_CONFIG[arg0].parent);
+      let transformParentResult = this.transformParent(SettingTreeManager(outer1_1[3]).SETTING_RENDERER_CONFIG[arg0].parent);
       if (null != transformParentResult) {
         do {
           let arr = items.push(transformParentResult);
-          let tmp3 = closure_0;
-          let tmp4 = closure_1;
-          transformParentResult = self.transformParent(closure_0(closure_1[3]).SETTING_RENDERER_CONFIG[transformParentResult].parent);
+          let tmp3 = SettingTreeManager;
+          let tmp4 = outer1_1;
+          transformParentResult = self.transformParent(SettingTreeManager(outer1_1[3]).SETTING_RENDERER_CONFIG[transformParentResult].parent);
         } while (null != transformParentResult);
       }
       return items;
@@ -173,10 +173,10 @@ let tmp2 = () => {
   items[3] = {
     key: "isBlocked",
     value(arg0, arg1) {
-      const SettingTreeManager = arg1;
+      let closure_0 = arg1;
       const ancestors = this.getAncestors(arg0);
       ancestors.push(arg0);
-      return ancestors.some((arg0) => arg1.has(arg0));
+      return ancestors.some((arg0) => set.has(arg0));
     }
   };
   items[4] = {
@@ -203,16 +203,16 @@ let tmp2 = () => {
     key: "getNearestRouteAncestorDataOrSelf",
     value(arg0) {
       const self = this;
-      const tmp = SettingTreeManager(closure_1[3]).SETTING_RENDERER_CONFIG[arg0];
-      if (tmp.type === constants.ROUTE) {
+      const tmp = SettingTreeManager(outer1_1[3]).SETTING_RENDERER_CONFIG[arg0];
+      if (tmp.type === outer1_4.ROUTE) {
         return tmp;
       } else {
-        const tmp12 = callback2(self.getAncestors(arg0));
+        const tmp12 = outer1_6(self.getAncestors(arg0));
         const iter3 = tmp12();
         let iter2 = iter3;
         if (!iter3.done) {
-          const tmp4 = SettingTreeManager(closure_1[3]).SETTING_RENDERER_CONFIG[iter2.value];
-          while (tmp4.type !== constants.ROUTE) {
+          const tmp4 = SettingTreeManager(outer1_1[3]).SETTING_RENDERER_CONFIG[iter2.value];
+          while (tmp4.type !== outer1_4.ROUTE) {
             let iter = tmp12();
             iter2 = iter;
           }
@@ -236,13 +236,13 @@ let tmp2 = () => {
         return value;
       } else {
         const items = [];
-        const tmp8 = callback2(self.getAncestors(arg0));
+        const tmp8 = outer1_6(self.getAncestors(arg0));
         let iter2 = tmp8();
         if (!iter2.done) {
           do {
-            let tmp2 = closure_0;
-            let tmp3 = closure_1;
-            let obj = closure_0(closure_1[4]);
+            let tmp2 = SettingTreeManager;
+            let tmp3 = outer1_1;
+            let obj = SettingTreeManager(outer1_1[4]);
             let cachedSettingTitle = obj.getCachedSettingTitle(iter2.value);
             if (null != cachedSettingTitle) {
               let arr = items.push(cachedSettingTitle);
@@ -267,8 +267,8 @@ let tmp2 = () => {
     }
   };
   return callback(SettingTreeManager, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/settings/native/renderer/SettingTreeManager.tsx");
+let result = require("GUILD_SELECT_ALL_SERVERS_OPTION_ID").fileFinishedImporting("modules/settings/native/renderer/SettingTreeManager.tsx");
 
 export default tmp2;

@@ -1,9 +1,17 @@
 // Module ID: 1312
-// Function ID: 15261
+// Function ID: 15262
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1284, 2]
 
 // Module 1312 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import module_1284 from "module_1284";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,53 +21,46 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let tmp2 = (MessageType) => {
+let tmp2 = ((MessageType) => {
   class Timestamp$Type {
     constructor() {
       self = this;
-      tmp = closure_3(this, Timestamp$Type);
+      tmp = outer1_3(this, Timestamp$Type);
       items = [, ];
-      items[0] = {};
-      items[1] = {};
-      items1 = [];
+      items[0] = { no: 1, name: "seconds", kind: "scalar", T: 3 };
+      items[1] = { no: 2, name: "nanos", kind: "scalar", T: 5 };
+      items1 = ["google.protobuf.Timestamp"];
       items1[1] = items;
-      obj = closure_6(Timestamp$Type);
-      tmp2 = closure_5;
-      if (closure_8()) {
+      obj = outer1_6(Timestamp$Type);
+      tmp2 = outer1_5;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = Timestamp$Type;
   callback2(Timestamp$Type, MessageType);
   let obj = {
     key: "now",
     value() {
       const obj = this.create();
       const timestamp = Date.now();
-      const PbLong = Timestamp$Type(closure_1[6]).PbLong;
+      const PbLong = Timestamp$Type(outer1_1[6]).PbLong;
       obj.seconds = PbLong.from(Math.floor(timestamp / 1000)).toString();
       obj.nanos = timestamp % 1000 * 1000000;
       return obj;
     }
   };
-  const items = [obj, , , , , , , ];
+  let items = [obj, , , , , , , ];
   obj = {
     key: "toDate",
     value(seconds) {
-      const PbLong = Timestamp$Type(closure_1[6]).PbLong;
+      const PbLong = Timestamp$Type(outer1_1[6]).PbLong;
       const result = 1000 * PbLong.from(seconds.seconds).toNumber();
       const fromResult = PbLong.from(seconds.seconds);
       return new Date(result + Math.ceil(seconds.nanos / 1000000));
@@ -71,7 +72,7 @@ let tmp2 = (MessageType) => {
     value(getTime) {
       const obj = this.create();
       const time = getTime.getTime();
-      const PbLong = Timestamp$Type(closure_1[6]).PbLong;
+      const PbLong = Timestamp$Type(outer1_1[6]).PbLong;
       obj.seconds = PbLong.from(Math.floor(time / 1000)).toString();
       obj.nanos = time % 1000 * 1000000;
       return obj;
@@ -81,7 +82,7 @@ let tmp2 = (MessageType) => {
   items[3] = {
     key: "internalJsonWrite",
     value(seconds) {
-      const PbLong = Timestamp$Type(closure_1[6]).PbLong;
+      const PbLong = Timestamp$Type(outer1_1[6]).PbLong;
       const result = 1000 * PbLong.from(seconds.seconds).toNumber();
       if (result >= Date.parse("0001-01-01T00:00:00Z")) {
         const _Date2 = Date;
@@ -121,7 +122,7 @@ let tmp2 = (MessageType) => {
       const self = this;
       if ("string" !== typeof prepareResult) {
         const _Error4 = Error;
-        obj = Timestamp$Type(closure_1[6]);
+        obj = Timestamp$Type(outer1_1[6]);
         const error = new Error("Unable to parse Timestamp from JSON " + obj.typeofJsonValue(prepareResult) + ".");
         throw error;
       } else {
@@ -146,7 +147,7 @@ let tmp2 = (MessageType) => {
                 if (!obj) {
                   obj = self.create();
                 }
-                const PbLong = Timestamp$Type(closure_1[6]).PbLong;
+                const PbLong = Timestamp$Type(outer1_1[6]).PbLong;
                 obj.seconds = PbLong.from(parsed / 1000).toString();
                 obj.nanos = 0;
                 if (match[7]) {
@@ -175,13 +176,13 @@ let tmp2 = (MessageType) => {
   items[5] = {
     key: "create",
     value(arr) {
-      let obj = { 1636552529: 217054453169258600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 2078953903: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017924046406340588 };
+      let obj = { seconds: "0", nanos: 0 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, Timestamp$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, Timestamp$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = Timestamp$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = Timestamp$Type(closure_1[6]);
+        const result = Timestamp$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = Timestamp$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -198,8 +199,8 @@ let tmp2 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           let str4 = pos.int64();
@@ -236,8 +237,8 @@ let tmp2 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = Timestamp$Type;
-                let tmp13 = closure_1;
-                onRead = Timestamp$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = Timestamp$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -249,8 +250,8 @@ let tmp2 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -259,17 +260,17 @@ let tmp2 = (MessageType) => {
     key: "internalBinaryWrite",
     value(seconds, tag, writeUnknownFields) {
       if ("0" !== seconds.seconds) {
-        tag.tag(1, Timestamp$Type(closure_1[6]).WireType.Varint).int64(seconds.seconds);
-        const tagResult = tag.tag(1, Timestamp$Type(closure_1[6]).WireType.Varint);
+        tag.tag(1, Timestamp$Type(outer1_1[6]).WireType.Varint).int64(seconds.seconds);
+        const tagResult = tag.tag(1, Timestamp$Type(outer1_1[6]).WireType.Varint);
       }
       if (0 !== seconds.nanos) {
-        tag.tag(2, Timestamp$Type(closure_1[6]).WireType.Varint).int32(seconds.nanos);
-        const tagResult1 = tag.tag(2, Timestamp$Type(closure_1[6]).WireType.Varint);
+        tag.tag(2, Timestamp$Type(outer1_1[6]).WireType.Varint).int32(seconds.nanos);
+        const tagResult1 = tag.tag(2, Timestamp$Type(outer1_1[6]).WireType.Varint);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = Timestamp$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = Timestamp$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, seconds, tag);
@@ -278,8 +279,8 @@ let tmp2 = (MessageType) => {
     }
   };
   return callback(Timestamp$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/protos/google/protobuf/timestamp.tsx");
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/google/protobuf/timestamp.tsx");
 
 export const Timestamp = tmp2;

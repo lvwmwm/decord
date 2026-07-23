@@ -1,17 +1,18 @@
-// Module ID: 10827
-// Function ID: 84070
+// Module ID: 10837
+// Function ID: 84119
 // Name: leaveCurrentEmbeddedActivity
-// Dependencies: []
+// Dependencies: [1347, 10524, 2]
 // Exports: leaveCurrentEmbeddedActivity
 
-// Module 10827 (leaveCurrentEmbeddedActivity)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/leaveCurrentEmbeddedActivity.tsx");
+// Module 10837 (leaveCurrentEmbeddedActivity)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const result = require("set").fileFinishedImporting("modules/activities/utils/leaveCurrentEmbeddedActivity.tsx");
 
 export const leaveCurrentEmbeddedActivity = function leaveCurrentEmbeddedActivity() {
-  const currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
+  currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
   if (null != currentEmbeddedActivity) {
-    let obj = importDefault(dependencyMap[1])();
+    let obj = importDefault(10524)();
     obj = {};
     ({ location: obj2.location, applicationId: obj2.applicationId } = currentEmbeddedActivity);
     obj.showFeedback = false;

@@ -1,29 +1,31 @@
-// Module ID: 10020
-// Function ID: 77431
-// Dependencies: []
+// Module ID: 10028
+// Function ID: 77471
+// Dependencies: [653, 507, 686, 2]
 
-// Module 10020
-const _module = require(dependencyMap[0]);
-({ Endpoints: closure_3, MAX_MESSAGES_PER_CHANNEL: closure_4 } = _module);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("actions/native/MessagePreviewActionCreators.tsx");
+// Module 10028
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+({ Endpoints: closure_3, MAX_MESSAGES_PER_CHANNEL: closure_4 } = ME);
+const result = require("dispatcher").fileFinishedImporting("actions/native/MessagePreviewActionCreators.tsx");
 
 export default {
   fetchMessages(channelId, around) {
-    const require = channelId;
-    const importDefault = around;
-    const HTTP = require(dependencyMap[1]).HTTP;
-    let obj = { applicationCommands: "jsx", isEncryptionAvailable: "r", flexGrow: "isArray", flexShrink: "accessibilityRole", alignSelf: "track", url: closure_3.MESSAGES(channelId) };
+    const _require = channelId;
+    let closure_1 = around;
+    const HTTP = _require(507).HTTP;
+    let obj = { url: closure_3.MESSAGES(channelId), query: null, retries: 2, oldFormErrors: true, rejectWithError: true };
     obj = { limit: closure_4, around };
     obj.query = obj;
     const value = HTTP.get(obj);
     value.then((body) => {
-      let obj = arg1(closure_2[2]);
-      obj = { type: "LOAD_MESSAGES_AROUND_SUCCESS", channelId: body, messages: body.body, around: arg1 };
+      let obj = around(outer1_2[2]);
+      obj = { type: "LOAD_MESSAGES_AROUND_SUCCESS", channelId: closure_0, messages: body.body, around };
       obj.dispatch(obj);
     });
   },
   clearMessages() {
-    importDefault(dependencyMap[2]).dispatch({ type: "CLEAR_MESSAGES_AROUND_SUCCESS" });
+    importDefault(686).dispatch({ type: "CLEAR_MESSAGES_AROUND_SUCCESS" });
   }
 };

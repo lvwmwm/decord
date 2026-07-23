@@ -1,15 +1,19 @@
-// Module ID: 7012
-// Function ID: 56264
+// Module ID: 7017
+// Function ID: 56298
 // Name: trackChannelOpenedClickstream
-// Dependencies: []
+// Dependencies: [1348, 653, 1355, 6700, 2]
 // Exports: default
 
-// Module 7012 (trackChannelOpenedClickstream)
-let closure_2 = importDefault(dependencyMap[0]);
-({ ChannelTypes: closure_3, AnalyticEvents: closure_4 } = arg1(dependencyMap[1]));
-const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/app_analytics/track/channel_opened/trackChannelOpenedClickstream.tsx");
+// Module 7017 (trackChannelOpenedClickstream)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { StaticChannelRoute } from "set";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ ChannelTypes: closure_3, AnalyticEvents: closure_4 } = ME);
+const result = require("set").fileFinishedImporting("modules/app_analytics/track/channel_opened/trackChannelOpenedClickstream.tsx");
 
 export default function trackChannelOpenedClickstream(channelId) {
   channelId = channelId.channelId;
@@ -23,9 +27,9 @@ export default function trackChannelOpenedClickstream(channelId) {
                 if (StaticChannelRoute.MEMBER_SAFETY !== channelId) {
                   if (StaticChannelRoute.GUILD_ONBOARDING !== channelId) {
                     if (StaticChannelRoute.GUILD_BOOSTS !== channelId) {
-                      let obj = arg1(dependencyMap[3]);
+                      let obj = require(6700) /* _createForOfIteratorHelperLoose */;
                       obj = { channel_id: channelId };
-                      const channel = channel.getChannel(channelId);
+                      channel = channel.getChannel(channelId);
                       let type;
                       if (null != channel) {
                         type = channel.type;

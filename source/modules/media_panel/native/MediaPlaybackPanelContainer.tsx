@@ -1,12 +1,14 @@
-// Module ID: 15779
-// Function ID: 120626
-// Dependencies: [37093376, 282853376, 517341184, 270270464, 1034420224, 298188800, 438173696]
+// Module ID: 15896
+// Function ID: 122799
+// Dependencies: [31, 33, 13458, 3745, 15897, 15899, 2]
 
-// Module 15779
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function MediaPlaybackPanelContainer() {
-  let obj = arg1(dependencyMap[2]);
+// Module 15896
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const memoResult = require("result").memo(function MediaPlaybackPanelContainer() {
+  let obj = require(13458) /* _isNativeReflectConstruct */;
   let tmp = null;
   if (obj.useMediaPlayerManagerStore(obj2.useShallow((showPip) => {
     let activeMediaPlayerSource;
@@ -47,12 +49,12 @@ const memoResult = importAll(dependencyMap[0]).memo(function MediaPlaybackPanelC
     }
     return tmp3;
   }))) {
-    obj = { children: jsx(importDefault(dependencyMap[5]), {}) };
-    tmp = jsx(importDefault(dependencyMap[4]), obj);
-    const tmp5 = importDefault(dependencyMap[4]);
+    obj = { children: jsx(importDefault(15899), {}) };
+    tmp = jsx(importDefault(15897), { children: jsx(importDefault(15899), {}) });
+    let tmp5 = importDefault(15897);
   }
   return tmp;
 });
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelContainer.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelContainer.tsx");
 
 export default memoResult;

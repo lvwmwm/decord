@@ -1,99 +1,101 @@
-// Module ID: 13716
-// Function ID: 103755
+// Module ID: 13830
+// Function ID: 105911
 // Name: FamilyCenterModalCancelScreen
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 7124, 4337, 3830, 1212, 11061, 44, 7572, 7573, 13825, 7607, 4126, 2198, 13795, 11071, 4965, 4543, 5087, 11073, 2]
 // Exports: default
 
-// Module 13716 (FamilyCenterModalCancelScreen)
+// Module 13830 (FamilyCenterModalCancelScreen)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function FamilyCenterModalCancelScreen(otherUser) {
   otherUser = otherUser.otherUser;
-  const arg1 = otherUser;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const callback = React.useCallback(() => {
-    let arr = cancelLinkRequest(closure_2[6]);
+    let arr = cancelLinkRequest(outer1_2[6]);
     arr = arr.pop();
   }, []);
   const callback1 = React.useCallback(() => {
-    const intl = otherUser(closure_2[8]).intl;
-    otherUser(closure_2[7]).presentFailedToast(intl.string(otherUser(closure_2[8]).t.R0RpRX));
+    const intl = otherUser(outer1_2[8]).intl;
+    otherUser(outer1_2[7]).presentFailedToast(intl.string(otherUser(outer1_2[8]).t.R0RpRX));
   }, []);
-  let obj = arg1(dependencyMap[9]);
+  let obj = otherUser(11061);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   const cancelLinkRequest = familyCenterActions.cancelLinkRequest;
-  const importDefault = cancelLinkRequest;
   const isCancelLoading = familyCenterActions.isCancelLoading;
   const items = [cancelLinkRequest, otherUser.id];
   const callback2 = React.useCallback(() => {
     cancelLinkRequest(otherUser.id);
   }, items);
-  importDefault(dependencyMap[10])(importDefault(dependencyMap[5])(), "FamilyCenterCancelModal should only be rendered for parents.");
+  cancelLinkRequest(44)(cancelLinkRequest(7124)(), "FamilyCenterCancelModal should only be rendered for parents.");
   obj = {};
   obj = {};
   const obj1 = { style: tmp.header };
   const obj2 = { otherUser };
-  const tmp2 = importDefault(dependencyMap[5])();
-  obj2.iconSrc = importDefault(dependencyMap[14]);
-  const items1 = [callback(importDefault(dependencyMap[13]), obj2), , ];
+  const tmp2 = cancelLinkRequest(7124)();
+  obj2.iconSrc = cancelLinkRequest(7607);
+  const items1 = [callback(cancelLinkRequest(13825), obj2), , ];
   const obj3 = { style: tmp.headerText, variant: "text-lg/bold" };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj3.children = intl.string(importDefault(dependencyMap[16]).HynllX);
-  items1[1] = callback(arg1(dependencyMap[15]).Text, obj3);
-  items1[2] = callback(importDefault(dependencyMap[17]), { user: otherUser });
+  let intl = otherUser(1212).intl;
+  obj3.children = intl.string(cancelLinkRequest(2198).HynllX);
+  items1[1] = callback(otherUser(4126).Text, obj3);
+  items1[2] = callback(cancelLinkRequest(13795), { user: otherUser });
   obj1.children = items1;
   obj.children = callback2(View, obj1);
-  const items2 = [callback(arg1(dependencyMap[12]).ModalContent, obj), ];
+  const items2 = [callback(otherUser(7573).ModalContent, obj), ];
   const obj4 = {};
   const obj5 = {};
   const obj6 = { variant: "destructive", disabled: isCancelLoading, loading: isCancelLoading };
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj6.text = intl2.string(importDefault(dependencyMap[16]).mK40bk);
+  const intl2 = otherUser(1212).intl;
+  obj6.text = intl2.string(cancelLinkRequest(2198).mK40bk);
   obj6.onPress = callback2;
-  const items3 = [callback(arg1(dependencyMap[20]).Button, obj6), ];
+  const items3 = [callback(otherUser(4543).Button, obj6), ];
   const obj7 = { variant: "tertiary" };
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj7.text = intl3.string(importDefault(dependencyMap[16]).czincX);
-  obj7.onPress = importDefault(dependencyMap[6]).pop;
-  items3[1] = callback(arg1(dependencyMap[20]).Button, obj7);
+  const intl3 = otherUser(1212).intl;
+  obj7.text = intl3.string(cancelLinkRequest(2198).czincX);
+  obj7.onPress = cancelLinkRequest(4337).pop;
+  items3[1] = callback(otherUser(4543).Button, obj7);
   obj5.children = items3;
-  obj4.children = callback2(arg1(dependencyMap[19]).ButtonGroup, obj5);
-  items2[1] = callback(arg1(dependencyMap[18]).ModalFooter, obj4);
+  obj4.children = callback2(otherUser(4965).ButtonGroup, obj5);
+  items2[1] = callback(otherUser(11071).ModalFooter, obj4);
   obj.children = items2;
-  return callback2(arg1(dependencyMap[11]).ModalScreen, obj);
+  return callback2(otherUser(7572).ModalScreen, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { marginBottom: importDefault(dependencyMap[4]).space.PX_16 };
-obj.header = obj;
-const tmp2 = arg1(dependencyMap[2]);
-obj.headerText = { marginTop: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_4 };
-let closure_7 = obj.createStyles(obj);
-const obj1 = { marginTop: importDefault(dependencyMap[4]).space.PX_16, marginBottom: importDefault(dependencyMap[4]).space.PX_4 };
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterModalCancel.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerText = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterModalCancel.tsx");
 
 export default function FamilyCenterModalCancel(otherUser) {
   otherUser = otherUser.otherUser;
-  const arg1 = otherUser;
   const items = [otherUser];
-  const memo = React.useMemo(() => function getScreens(otherUser) {
+  const memo = React.useMemo(() => (function getScreens(otherUser) {
+    let closure_0 = otherUser;
     let obj = {};
     obj = {
       headerShown: true,
-      headerLeft: otherUser(closure_2[21]).getHeaderCloseButton(callback(closure_2[6]).pop),
+      headerLeft: otherUser(outer2_2[21]).getHeaderCloseButton(outer2_1(outer2_2[6]).pop),
       headerTitle() {
         return null;
       },
       render() {
-        return callback(closure_8, { otherUser: arg0 });
+        return outer3_5(outer3_8, { otherUser: closure_0 });
       }
     };
     obj.CANCEL = obj;
     return obj;
-  }(otherUser), items);
-  const obj = { initialRouteName: "CANCEL", screens: memo };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.headerBackTitle = intl.string(arg1(dependencyMap[8]).t.13/7kX);
-  return callback(arg1(dependencyMap[22]).Modal, obj);
+  })(otherUser), items);
+  let obj = { initialRouteName: "CANCEL", screens: memo };
+  const intl = otherUser(1212).intl;
+  obj.headerBackTitle = intl.string(otherUser(1212).t["13/7kX"]);
+  return callback(otherUser(11073).Modal, obj);
 };

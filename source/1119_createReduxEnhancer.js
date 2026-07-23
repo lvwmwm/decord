@@ -1,13 +1,14 @@
 // Module ID: 1119
-// Function ID: 12716
+// Function ID: 12717
 // Name: createReduxEnhancer
-// Dependencies: []
+// Dependencies: [65, 794]
 // Exports: createReduxEnhancer
 
 // Module 1119 (createReduxEnhancer)
-let closure_2 = require(dependencyMap[0]);
+import _toConsumableArray from "_toConsumableArray";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const obj = {
+let obj = {
   attachReduxState: true,
   actionTransformer(arg0) {
     return arg0;
@@ -26,21 +27,21 @@ export const createReduxEnhancer = function createReduxEnhancer(arg0) {
   return (arg0) => {
     let closure_0 = arg0;
     return (arg0, arg1) => {
-      function sentryWrapReducer(arg0) {
-        const sentryWrapReducer = arg0;
-        return (self) => {
-          const tmp = self(self, arg1);
-          let obj = self(closure_1[1]);
+      function sentryWrapReducer(arg0, arg1) {
+        let closure_0 = arg0;
+        return (arg0, arg1) => {
+          const tmp = lib(arg0, arg1);
+          let obj = lib(outer4_1[1]);
           const currentScope = obj.getCurrentScope();
-          const actionTransformerResult = self.actionTransformer(arg1);
+          const actionTransformerResult = lib.actionTransformer(arg1);
           if (null != actionTransformerResult) {
-            obj = { "Bool(true)": "isArray", "Bool(true)": "isArray", "Bool(true)": "isArray", data: actionTransformerResult };
-            self(closure_1[1]).addBreadcrumb(obj);
-            const obj3 = self(closure_1[1]);
+            obj = { category: "redux.action", data: actionTransformerResult, type: "info" };
+            lib(outer4_1[1]).addBreadcrumb(obj);
+            const obj3 = lib(outer4_1[1]);
           }
-          const stateTransformerResult = self.stateTransformer(tmp);
+          const stateTransformerResult = lib.stateTransformer(tmp);
           if (null != stateTransformerResult) {
-            const client = self(closure_1[1]).getClient();
+            const client = lib(outer4_1[1]).getClient();
             let options;
             if (null != client) {
               options = client.getOptions();
@@ -55,23 +56,22 @@ export const createReduxEnhancer = function createReduxEnhancer(arg0) {
             obj = {};
             const obj1 = { type: "redux", value: stateTransformerResult };
             obj.state = obj1;
-            const obj5 = self(closure_1[1]);
-            const result = self(closure_1[1]).addNonEnumerableProperty(obj, "__sentry_override_normalization_depth__", 3 + num);
+            const obj5 = lib(outer4_1[1]);
+            const result = lib(outer4_1[1]).addNonEnumerableProperty(obj, "__sentry_override_normalization_depth__", 3 + num);
             currentScope.setContext("state", obj);
-            const obj9 = self(closure_1[1]);
+            const obj9 = lib(outer4_1[1]);
           } else {
             currentScope.setContext("state", null);
           }
-          const configureScopeWithState = self.configureScopeWithState;
+          const configureScopeWithState = lib.configureScopeWithState;
           if ("function" === typeof configureScopeWithState) {
             const result1 = configureScopeWithState(currentScope, tmp);
           }
           return tmp;
         };
       }
-      arg0 = sentryWrapReducer;
-      if (arg0.attachReduxState) {
-        let obj = arg0(closure_1[1]);
+      if (lib.attachReduxState) {
+        let obj = lib(outer2_1[1]);
         const globalScope = obj.getGlobalScope();
         globalScope.addEventProcessor((type, attachments) => {
           let tmp2 = tmp;
@@ -89,13 +89,13 @@ export const createReduxEnhancer = function createReduxEnhancer(arg0) {
             const _JSON = JSON;
             obj.data = JSON.stringify(type.contexts.state.state.value);
             const items2 = [obj];
-            attachments.attachments = items.concat(closure_2(items1), items2);
-            const tmp5 = closure_2;
-            const tmp5Result = closure_2(items1);
+            attachments.attachments = items.concat(outer3_2(items1), items2);
+            const tmp5 = outer3_2;
+            const tmp5Result = outer3_2(items1);
           }
         });
       }
-      const tmp4 = arg0(sentryWrapReducer(arg0), arg1);
+      const tmp4 = sentryWrapReducer(sentryWrapReducer(arg0), arg1);
       obj = {
         apply(apply) {
           const items = [sentryWrapReducer(arg2[0])];

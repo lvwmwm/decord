@@ -1,12 +1,15 @@
-// Module ID: 16112
-// Function ID: 124186
+// Module ID: 16229
+// Function ID: 126359
 // Name: set
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 16112 (set)
-const obj = { ALL: new Set([null, null, null, null]) };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildFeedItemTypes.tsx");
+// Module 16229 (set)
+import set from "set";
+
+const obj = {};
+let set = new Set(["conversation", "forum_post", "message", "message_bundle"]);
+obj.ALL = set;
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildFeedItemTypes.tsx");
 
 export const GuildFeedItemTypes = { MESSAGE: "message", FORUM_POST: "forum_post", MESSAGE_BUNDLE: "message_bundle", CONVERSATION: "conversation" };
 export const GuildFeedItemTypesSets = obj;

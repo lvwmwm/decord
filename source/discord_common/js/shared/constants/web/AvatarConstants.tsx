@@ -1,7 +1,7 @@
 // Module ID: 1394
-// Function ID: 16639
+// Function ID: 16640
 // Name: getAvatarSpecs
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getAvatarSize, getStatusSize
 
 // Module 1394 (getAvatarSpecs)
@@ -9,10 +9,9 @@ function getAvatarSpecs(arg0) {
   return frozen[arg0];
 }
 let obj = { SIZE_16: "SIZE_16", SIZE_20: "SIZE_20", SIZE_24: "SIZE_24", SIZE_32: "SIZE_32", SIZE_40: "SIZE_40", SIZE_44: "SIZE_44", SIZE_48: "SIZE_48", SIZE_56: "SIZE_56", SIZE_72: "SIZE_72", SIZE_80: "SIZE_80", SIZE_96: "SIZE_96", SIZE_120: "SIZE_120", SIZE_152: "SIZE_152", DEPRECATED_SIZE_30: "DEPRECATED_SIZE_30", DEPRECATED_SIZE_60: "DEPRECATED_SIZE_60", DEPRECATED_SIZE_100: "DEPRECATED_SIZE_100" };
-obj = { [obj.SIZE_16]: Object.freeze({}), [obj.SIZE_20]: Object.freeze({ maxFontSizeMultiplier: "channelId", accessibilityRole: "channelId", "Null": "resizeMode", "Null": "formatToPlainString" }), [obj.SIZE_24]: Object.freeze({ maxFontSizeMultiplier: false, accessibilityRole: false, "Null": false, "Null": false }), [obj.SIZE_32]: Object.freeze({}), [obj.SIZE_40]: Object.freeze({ maxFontSizeMultiplier: true, accessibilityRole: 0.8, "Null": 0.7, "Null": 0.6 }), [obj.SIZE_44]: Object.freeze({ maxFontSizeMultiplier: 0.6, accessibilityRole: 0.5, "Null": 0.4, "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016020554264098596 }), [obj.SIZE_48]: Object.freeze({ maxFontSizeMultiplier: true, accessibilityRole: true, "Null": true, "Null": true }), [obj.SIZE_56]: Object.freeze({}), [obj.SIZE_72]: Object.freeze({ maxFontSizeMultiplier: 22517569, accessibilityRole: -834596608, "Null": 1912603047, "Null": 256 }), [obj.SIZE_80]: Object.freeze({}), [obj.SIZE_96]: Object.freeze({ maxFontSizeMultiplier: "content", accessibilityRole: "useRef", "Null": "Array", "Null": "isArray" }), [obj.SIZE_120]: Object.freeze({}), [obj.SIZE_152]: Object.freeze({ maxFontSizeMultiplier: "Supplemental Category", accessibilityRole: true, "Null": "/assets/images/native/avatars", "Null": 256 }), [obj.DEPRECATED_SIZE_30]: Object.freeze({}), [obj.DEPRECATED_SIZE_60]: Object.freeze({ maxFontSizeMultiplier: false, accessibilityRole: false, "Null": false, "Null": false }), [obj.DEPRECATED_SIZE_100]: Object.freeze({}) };
+obj = { [obj.SIZE_16]: Object.freeze({ size: 16, status: 6, stroke: 2, offset: 0 }), [obj.SIZE_20]: Object.freeze({ size: 20, status: 6, stroke: 2, offset: 0 }), [obj.SIZE_24]: Object.freeze({ size: 24, status: 8, stroke: 3, offset: 0 }), [obj.SIZE_32]: Object.freeze({ size: 32, status: 10, stroke: 3, offset: 0 }), [obj.SIZE_40]: Object.freeze({ size: 40, status: 12, stroke: 4, offset: 0 }), [obj.SIZE_44]: Object.freeze({ size: 44, status: 12, stroke: 4, offset: 0 }), [obj.SIZE_48]: Object.freeze({ size: 48, status: 12, stroke: 4, offset: 0 }), [obj.SIZE_56]: Object.freeze({ size: 56, status: 14, stroke: 4, offset: 2 }), [obj.SIZE_72]: Object.freeze({ size: 72, status: 16, stroke: 6, offset: 4 }), [obj.SIZE_80]: Object.freeze({ size: 80, status: 16, stroke: 6, offset: 4 }), [obj.SIZE_96]: Object.freeze({ size: 96, status: 20, stroke: 8, offset: 6 }), [obj.SIZE_120]: Object.freeze({ size: 120, status: 24, stroke: 8, offset: 8 }), [obj.SIZE_152]: Object.freeze({ size: 152, status: 30, stroke: 10, offset: 10 }), [obj.DEPRECATED_SIZE_30]: Object.freeze({ size: 30, status: 0, stroke: 0, offset: 0 }), [obj.DEPRECATED_SIZE_60]: Object.freeze({ size: 60, status: 0, stroke: 0, offset: 0 }), [obj.DEPRECATED_SIZE_100]: Object.freeze({ size: 100, status: 0, stroke: 0, offset: 0 }) };
 const frozen = Object.freeze(obj);
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/constants/web/AvatarConstants.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/constants/web/AvatarConstants.tsx");
 
 export const MOBILE_HEIGHT_RATIO = 1.5;
 export const TYPING_WIDTH_RATIO = 2.5;

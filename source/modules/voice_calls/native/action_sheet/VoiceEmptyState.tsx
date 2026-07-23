@@ -1,49 +1,53 @@
-// Module ID: 12596
-// Function ID: 96831
+// Module ID: 12710
+// Function ID: 98987
 // Name: VoiceEmptyState
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 1557, 1273, 1212, 12711, 12712, 2]
 // Exports: default
 
-// Module 12596 (VoiceEmptyState)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const Fonts = arg1(dependencyMap[2]).Fonts;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: { justifyContent: "center" }, button: {} };
-obj = {};
-const tmp3 = arg1(dependencyMap[3]);
-const merged = Object.assign(importDefault(dependencyMap[5])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
-obj["textTransform"] = "none";
-obj["lineHeight"] = 24;
-obj.emptyTitle = obj;
+// Module 12710 (VoiceEmptyState)
+import "result";
+import { View } from "get ActivityIndicator";
+import { Fonts } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+import importDefaultResult1 from "createTextStyle";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { justifyContent: "center" }, button: { paddingHorizontal: 12, paddingTop: 16 } };
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
+_createForOfIteratorHelperLoose["textTransform"] = "none";
+_createForOfIteratorHelperLoose["lineHeight"] = 24;
+_createForOfIteratorHelperLoose.emptyTitle = _createForOfIteratorHelperLoose;
 const obj1 = {};
-const importDefaultResult = importDefault(dependencyMap[5]);
-const merged1 = Object.assign(importDefault(dependencyMap[5])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[6]).colors.TEXT_SUBTLE, 16));
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 16));
 obj1["lineHeight"] = 20;
 obj1["fontWeight"] = "600";
-obj.emptyBody = obj1;
-let closure_6 = obj.createStyles(obj);
-const importDefaultResult1 = importDefault(dependencyMap[5]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceEmptyState.tsx");
+_createForOfIteratorHelperLoose.emptyBody = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceEmptyState.tsx");
 
 export default function VoiceEmptyState(channel) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   const items = [tmp.container, ];
-  obj = { paddingBottom: importDefault(dependencyMap[7])().bottom };
+  obj = { paddingBottom: importDefault(1557)().bottom };
   items[1] = obj;
   obj.style = items;
   obj = {};
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.title = intl.string(arg1(dependencyMap[9]).t./HABZo);
-  const intl2 = arg1(dependencyMap[9]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[9]).t.5Jy2FY);
-  obj.lightSource = importDefault(dependencyMap[10]);
-  obj.darkSource = importDefault(dependencyMap[10]);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["/HABZo"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl2.string(require(1212) /* getSystemLocale */.t["5Jy2FY"]);
+  obj.lightSource = importDefault(12711);
+  obj.darkSource = importDefault(12711);
   ({ emptyTitle: obj3.titleStyle, emptyBody: obj3.bodyStyle } = tmp);
-  obj.imageStyle = {};
-  const items1 = [callback(arg1(dependencyMap[8]).ThemedEmptyState, obj), callback(importDefault(dependencyMap[11]), { channel: channel.channel, style: tmp.button })];
+  obj.imageStyle = { marginBottom: 16, marginTop: 20 };
+  const items1 = [callback(require(1273) /* Button */.ThemedEmptyState, obj), callback(importDefault(12712), { channel: channel.channel, style: tmp.button })];
   obj.children = items1;
   return callback2(View, obj);
 };

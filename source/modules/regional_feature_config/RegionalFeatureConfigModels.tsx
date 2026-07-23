@@ -1,14 +1,13 @@
-// Module ID: 3813
-// Function ID: 31696
+// Module ID: 3815
+// Function ID: 31701
 // Name: SettingsConfig
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 3813 (SettingsConfig)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 3815 (SettingsConfig)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const tmp2 = () => {
+let tmp2 = (() => {
   class SettingsConfig {
     constructor(arg0) {
       tmp = SettingsConfig(this, SettingsConfig);
@@ -16,7 +15,6 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = SettingsConfig;
   let obj = {
     key: "isFeatureTeenByDefault",
     value(arg0) {
@@ -37,8 +35,9 @@ const tmp2 = () => {
   };
   items[1] = obj;
   return callback(SettingsConfig, items);
-}();
-const tmp3 = () => {
+})();
+let closure_2 = tmp2;
+const tmp3 = (() => {
   class AgeVerificationConfig {
     constructor(arg0) {
       tmp = AgeVerificationConfig(this, AgeVerificationConfig);
@@ -46,7 +45,6 @@ const tmp3 = () => {
       return;
     }
   }
-  let closure_0 = AgeVerificationConfig;
   let obj = {
     key: "isFeatureAgeGated",
     value(arg0) {
@@ -67,12 +65,9 @@ const tmp3 = () => {
   };
   items[1] = obj;
   return callback(AgeVerificationConfig, items);
-}();
-const result = items.fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigModels.tsx");
-
-export const SettingsConfig = tmp2;
-export const AgeVerificationConfig = tmp3;
-export const RegionalFeatureConfig = () => {
+})();
+let closure_3 = tmp3;
+const tmp4 = (() => {
   class RegionalFeatureConfig {
     constructor(arg0, arg1) {
       tmp = RegionalFeatureConfig(this, RegionalFeatureConfig);
@@ -81,7 +76,6 @@ export const RegionalFeatureConfig = () => {
       return;
     }
   }
-  let closure_0 = RegionalFeatureConfig;
   let obj = {
     key: "isFeatureAgeGated",
     value(AGE_GATED_SPACES) {
@@ -117,11 +111,16 @@ export const RegionalFeatureConfig = () => {
     {
       key: "fromConnectionOpen",
       value(teen_by_default_settings) {
-        const tmp = new closure_2(teen_by_default_settings.teen_by_default_settings);
-        const tmp2 = new closure_3(teen_by_default_settings.age_gated_features);
-        return new RegionalFeatureConfig(tmp, new closure_3(teen_by_default_settings.age_gated_features));
+        const tmp = new outer1_2(teen_by_default_settings.teen_by_default_settings);
+        const tmp2 = new outer1_3(teen_by_default_settings.age_gated_features);
+        return new RegionalFeatureConfig(tmp, new outer1_3(teen_by_default_settings.age_gated_features));
       }
     }
   ];
   return callback(RegionalFeatureConfig, items, items1);
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigModels.tsx");
+
+export const SettingsConfig = tmp2;
+export const AgeVerificationConfig = tmp3;
+export const RegionalFeatureConfig = tmp4;

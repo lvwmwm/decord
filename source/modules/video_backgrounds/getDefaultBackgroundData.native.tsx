@@ -1,15 +1,16 @@
-// Module ID: 8847
-// Function ID: 69844
+// Module ID: 8854
+// Function ID: 69885
 // Name: DefaultVideoBackground
-// Dependencies: []
+// Dependencies: [7851, 2]
 // Exports: default
 
-// Module 8847 (DefaultVideoBackground)
-const DefaultVideoBackground = require(dependencyMap[0]).DefaultVideoBackground;
-let closure_1 = { id: DefaultVideoBackground.OPTION_1 };
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/video_backgrounds/getDefaultBackgroundData.native.tsx");
+// Module 8854 (DefaultVideoBackground)
+import { DefaultVideoBackground } from "VideoFilterType";
+
+let obj = { id: DefaultVideoBackground.OPTION_1, source: "", name: "" };
+const result = require("set").fileFinishedImporting("modules/video_backgrounds/getDefaultBackgroundData.native.tsx");
 
 export default function getDefaultBackgroundData() {
-  return { [closure_0.OPTION_1]: closure_1, [closure_0.OPTION_2]: closure_1, [closure_0.OPTION_3]: closure_1, [closure_0.OPTION_4]: closure_1, [closure_0.OPTION_7]: closure_1, [closure_0.OPTION_8]: closure_1, [closure_0.OPTION_9]: closure_1, [closure_0.OPTION_10]: closure_1 };
+  obj = { [closure_0.OPTION_1]: obj, [closure_0.OPTION_2]: obj, [closure_0.OPTION_3]: obj, [closure_0.OPTION_4]: obj, [closure_0.OPTION_7]: obj, [closure_0.OPTION_8]: obj, [closure_0.OPTION_9]: obj, [closure_0.OPTION_10]: obj };
+  return obj;
 };

@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 612 (isIndex)
-let closure_0 = /^(?:0|[1-9]\d*)$/;
+const re0 = /^(?:0|[1-9]\d*)$/;
 
 export default function isIndex(arg0, arg1) {
   let num = 9007199254740991;

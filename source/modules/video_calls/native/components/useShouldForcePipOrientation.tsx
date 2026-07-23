@@ -1,31 +1,34 @@
-// Module ID: 10532
-// Function ID: 82307
+// Module ID: 10542
+// Function ID: 82357
 // Name: useShouldForcePipOrientation
-// Dependencies: []
+// Dependencies: [1347, 4143, 1194, 4155, 4148, 10543, 566, 10532, 8303, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 10532 (useShouldForcePipOrientation)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const OrientationLockState = arg1(dependencyMap[3]).OrientationLockState;
-({ isStreamParticipant: closure_7, ParticipantTypes: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/video_calls/native/components/useShouldForcePipOrientation.tsx");
+// Module 10542 (useShouldForcePipOrientation)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { OrientationLockState } from "items3";
+import ParticipantTypes from "ParticipantTypes";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ isStreamParticipant: closure_7, ParticipantTypes: closure_8 } = ParticipantTypes);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/components/useShouldForcePipOrientation.tsx");
 
 export const useShouldForcePipOrientation = function useShouldForcePipOrientation(channel) {
   let activityLockOrientation;
   let focusedEmbeddedActivityParticipant;
   channel = channel.channel;
-  const arg1 = channel;
-  const tmp = importDefault(dependencyMap[5])(channel.id);
-  const items = [closure_4, id];
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items, () => {
-    const participant = store2.getParticipant(channel.id, id.getId());
+  const tmp = importDefault(10543)(channel.id);
+  const items = [_isNativeReflectConstruct, id];
+  const stateFromStores = channel(566).useStateFromStores(items, () => {
+    const participant = outer1_4.getParticipant(channel.id, outer1_5.getId());
     let tmp2 = null;
     if (null != participant) {
       tmp2 = null;
-      if (participant.type === constants.USER) {
+      if (participant.type === outer1_8.USER) {
         tmp2 = null;
         if (null != participant.streamId) {
           tmp2 = participant;
@@ -34,11 +37,11 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
     }
     return tmp2;
   });
-  const obj = arg1(dependencyMap[6]);
-  const items1 = [closure_3, closure_4];
-  const stateFromStoresObject = arg1(dependencyMap[6]).useStateFromStoresObject(items1, () => {
-    const currentEmbeddedActivity = store.getCurrentEmbeddedActivity();
-    const selectedParticipant = store2.getSelectedParticipant(channel.id);
+  let obj = channel(566);
+  const items1 = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  const stateFromStoresObject = channel(566).useStateFromStoresObject(items1, () => {
+    const currentEmbeddedActivity = outer1_3.getCurrentEmbeddedActivity();
+    const selectedParticipant = outer1_4.getSelectedParticipant(channel.id);
     let obj = {};
     let applicationId;
     if (null != currentEmbeddedActivity) {
@@ -56,12 +59,12 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
       if (id === obj2.getEmbeddedActivityParticipantId(obj)) {
         tmp4 = selectedParticipant;
       }
-      const obj2 = channel(closure_2[7]);
+      obj2 = channel(outer1_2[7]);
     }
     obj.focusedEmbeddedActivityParticipant = tmp4;
     let pipOrientationLockStateForApp = null;
     if (null != currentEmbeddedActivity) {
-      pipOrientationLockStateForApp = store.getPipOrientationLockStateForApp(currentEmbeddedActivity.applicationId);
+      pipOrientationLockStateForApp = outer1_3.getPipOrientationLockStateForApp(currentEmbeddedActivity.applicationId);
     }
     obj.activityLockOrientation = pipOrientationLockStateForApp;
     return obj;
@@ -81,16 +84,16 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   if (null != tmp6) {
     if (callback(tmp6)) {
       if (null == stateFromStores) {
-        return arg1(dependencyMap[8]).OrientationType.LANDSCAPE;
+        return channel(8303).OrientationType.LANDSCAPE;
       }
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    let LANDSCAPE = arg1(dependencyMap[8]).OrientationType.LANDSCAPE;
+    let LANDSCAPE = channel(8303).OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE = null;
     if (activityLockOrientation === OrientationLockState.PORTRAIT) {
-      LANDSCAPE = arg1(dependencyMap[8]).OrientationType.PORTRAIT;
+      LANDSCAPE = channel(8303).OrientationType.PORTRAIT;
     }
   }
 };

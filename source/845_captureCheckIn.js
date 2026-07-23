@@ -1,38 +1,40 @@
 // Module ID: 845
-// Function ID: 9403
+// Function ID: 9404
 // Name: captureCheckIn
-// Dependencies: []
+// Dependencies: [5, 825, 846, 800, 801, 807, 815, 804, 842, 798, 822]
 // Exports: addEventProcessor, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
 
 // Module 845 (captureCheckIn)
+import asyncGeneratorStep from "getFirstException";
+
 function captureCheckIn(arg0, arg1) {
-  const currentScope = require(dependencyMap[1]).getCurrentScope();
-  const obj = require(dependencyMap[1]);
-  const client = require(dependencyMap[1]).getClient();
+  const currentScope = require(825) /* getCurrentScope */.getCurrentScope();
+  const obj = require(825) /* getCurrentScope */;
+  const client = require(825) /* getCurrentScope */.getClient();
   if (client) {
     if (client.captureCheckIn) {
       return client.captureCheckIn(arg0, arg1, currentScope);
-    } else if (require(dependencyMap[3]).DEBUG_BUILD) {
-      const debug2 = require(dependencyMap[4]).debug;
+    } else if (require(800).DEBUG_BUILD) {
+      const debug2 = require(801) /* consoleSandbox */.debug;
       debug2.warn("Cannot capture check-in. Client does not support sending check-ins.");
     }
-  } else if (require(dependencyMap[3]).DEBUG_BUILD) {
-    const debug = require(dependencyMap[4]).debug;
+  } else if (require(800).DEBUG_BUILD) {
+    const debug = require(801) /* consoleSandbox */.debug;
     debug.warn("Cannot capture check-in. No client defined.");
   }
-  const obj2 = require(dependencyMap[1]);
-  return require(dependencyMap[5]).uuid4();
+  const obj2 = require(825) /* getCurrentScope */;
+  return require(807) /* getFirstException */.uuid4();
 }
 async function _flush(arg0, arg1) {
   if (obj) {
     return obj.resume();
   } else {
-    const client = callback(closure_1[1]).getClient();
+    const client = outer2_0(outer2_1[1]).getClient();
     if (client) {
       let flushResult = client.flush(arg0);
     } else {
-      if (callback(closure_1[3]).DEBUG_BUILD) {
-        const debug = callback(closure_1[4]).debug;
+      if (outer2_0(outer2_1[3]).DEBUG_BUILD) {
+        const debug = outer2_0(outer2_1[4]).debug;
         debug.warn("Cannot flush events. No client defined.");
       }
       flushResult = Promise.resolve(false);
@@ -44,12 +46,12 @@ async function _close(arg0, arg1) {
   if (obj) {
     return obj.resume();
   } else {
-    const client = callback(closure_1[1]).getClient();
+    const client = outer2_0(outer2_1[1]).getClient();
     if (client) {
       let closeResult = client.close(arg0);
     } else {
-      if (callback(closure_1[3]).DEBUG_BUILD) {
-        const debug = callback(closure_1[4]).debug;
+      if (outer2_0(outer2_1[3]).DEBUG_BUILD) {
+        const debug = outer2_0(outer2_1[4]).debug;
         debug.warn("Cannot flush events and disable SDK. No client defined.");
       }
       closeResult = Promise.resolve(false);
@@ -58,21 +60,21 @@ async function _close(arg0, arg1) {
   }
 }
 function endSession() {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
-  const obj = require(dependencyMap[1]);
-  const currentScope = require(dependencyMap[1]).getCurrentScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
+  const obj = require(825) /* getCurrentScope */;
+  const currentScope = require(825) /* getCurrentScope */.getCurrentScope();
   const tmp = currentScope.getSession() || isolationScope.getSession();
   if (tmp) {
-    require(dependencyMap[10]).closeSession(tmp);
-    const obj5 = require(dependencyMap[10]);
+    require(822) /* updateSession */.closeSession(tmp);
+    const obj5 = require(822) /* updateSession */;
   }
   _sendSessionUpdate();
   isolationScope.setSession();
 }
 function _sendSessionUpdate() {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
-  const obj = require(dependencyMap[1]);
-  const client = require(dependencyMap[1]).getClient();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
+  const obj = require(825) /* getCurrentScope */;
+  const client = require(825) /* getCurrentScope */.getClient();
   const session = isolationScope.getSession();
   let tmp2 = session;
   if (session) {
@@ -82,22 +84,21 @@ function _sendSessionUpdate() {
     client.captureSession(session);
   }
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const addEventProcessor = function addEventProcessor(arg0) {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
   isolationScope.addEventProcessor(arg0);
 };
 export { captureCheckIn };
 export const captureEvent = function captureEvent(arg0, arg1) {
-  const currentScope = require(dependencyMap[1]).getCurrentScope();
+  const currentScope = require(825) /* getCurrentScope */.getCurrentScope();
   return currentScope.captureEvent(arg0, arg1);
 };
 export const captureException = function captureException(arg0, arg1) {
-  const currentScope = require(dependencyMap[1]).getCurrentScope();
-  const obj = require(dependencyMap[1]);
-  return currentScope.captureException(arg0, require(dependencyMap[2]).parseEventHintOrCaptureContext(arg1));
+  const currentScope = require(825) /* getCurrentScope */.getCurrentScope();
+  const obj = require(825) /* getCurrentScope */;
+  return currentScope.captureException(arg0, require(846) /* applyClientOptions */.parseEventHintOrCaptureContext(arg1));
 };
 export const captureMessage = function captureMessage(arg0, captureContext) {
   let tmp2;
@@ -109,7 +110,7 @@ export const captureMessage = function captureMessage(arg0, captureContext) {
     const obj = { captureContext };
     tmp3 = obj;
   }
-  const currentScope = require(dependencyMap[1]).getCurrentScope();
+  const currentScope = require(825) /* getCurrentScope */.getCurrentScope();
   return currentScope.captureMessage(arg0, tmp2, tmp3);
 };
 export const captureSession = function captureSession() {
@@ -131,7 +132,7 @@ export const flush = function flush(arg0) {
 };
 export const isEnabled = function isEnabled() {
   let enabled;
-  const client = require(dependencyMap[1]).getClient();
+  const client = require(825) /* getCurrentScope */.getClient();
   if (null != client) {
     enabled = client.getOptions().enabled;
   }
@@ -143,45 +144,45 @@ export const isEnabled = function isEnabled() {
   return tmp2;
 };
 export const isInitialized = function isInitialized() {
-  return require(dependencyMap[1]).getClient();
+  return require(825) /* getCurrentScope */.getClient();
 };
 export const lastEventId = function lastEventId() {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
   return isolationScope.lastEventId();
 };
 export const setContext = function setContext(arg0, arg1) {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
   isolationScope.setContext(arg0, arg1);
 };
 export const setExtra = function setExtra(arg0, arg1) {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
   isolationScope.setExtra(arg0, arg1);
 };
 export const setExtras = function setExtras(arg0) {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
   isolationScope.setExtras(arg0);
 };
 export const setTag = function setTag(arg0, arg1) {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
   isolationScope.setTag(arg0, arg1);
 };
 export const setTags = function setTags(arg0) {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
   isolationScope.setTags(arg0);
 };
 export const setUser = function setUser(arg0) {
-  const isolationScope = require(dependencyMap[1]).getIsolationScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
   isolationScope.setUser(arg0);
 };
 export const startSession = function startSession(arg0) {
-  let obj = require(dependencyMap[1]);
+  let obj = require(825) /* getCurrentScope */;
   const isolationScope = obj.getIsolationScope();
-  const currentScope = require(dependencyMap[1]).getCurrentScope();
-  const obj3 = require(dependencyMap[1]);
-  const userAgent = require(dependencyMap[9]).GLOBAL_OBJ.navigator || {}.userAgent;
-  const tmp = require(dependencyMap[9]).GLOBAL_OBJ.navigator || {};
+  const currentScope = require(825) /* getCurrentScope */.getCurrentScope();
+  const obj3 = require(825) /* getCurrentScope */;
+  const userAgent = require(798).GLOBAL_OBJ.navigator || {}.userAgent;
+  const tmp = require(798).GLOBAL_OBJ.navigator || {};
   obj = {};
-  const obj5 = require(dependencyMap[10]);
+  const obj5 = require(822) /* updateSession */;
   obj.user = currentScope.getUser() || isolationScope.getUser();
   let tmp3 = userAgent;
   if (userAgent) {
@@ -196,28 +197,27 @@ export const startSession = function startSession(arg0) {
   }
   if ("ok" === status) {
     const obj1 = { status: "exited" };
-    require(dependencyMap[10]).updateSession(session1, obj1);
-    const obj8 = require(dependencyMap[10]);
+    require(822) /* updateSession */.updateSession(session1, obj1);
+    const obj8 = require(822) /* updateSession */;
   }
   endSession();
   isolationScope.setSession(session);
   return session;
 };
 export const withMonitor = function withMonitor(arg0, arg1, arg2) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  const _require = arg0;
+  let dependencyMap = arg1;
   let closure_2 = arg2;
-  function runCallback(arg0, arg1) {
-    function finishCheckIn(ok) {
-      const obj = { monitorSlug: callback, status: ok, checkInId: callback, duration: callback(closure_1[6]).timestampInSeconds() - closure_1 };
-      callback2(obj);
-    }
-    const arg2 = finishCheckIn;
-    const callback = runCallback({ monitorSlug: callback, status: "in_progress" }, arg2);
-    const callback2 = callback(callback2[6]).timestampInSeconds();
-    const promise = callback2();
-    const obj = { monitorSlug: callback, status: "in_progress" };
-    const obj2 = callback(callback2[6]);
+  function runCallback(arg0, finishCheckIn) {
+    finishCheckIn = function finishCheckIn(ok) {
+      const obj = { monitorSlug: callback, status: ok, checkInId: callback, duration: callback(table[6]).timestampInSeconds() - table };
+      runCallback(obj);
+    };
+    callback = runCallback({ monitorSlug: callback, status: "in_progress" }, finishCheckIn);
+    const dependencyMap = callback(815).timestampInSeconds();
+    const promise = dependencyMap();
+    let obj = { monitorSlug: callback, status: "in_progress" };
+    const obj2 = callback(815);
     if (obj3.isThenable(promise)) {
       let nextPromise = promise.then((arg0) => {
         finishCheckIn("ok");
@@ -232,11 +232,11 @@ export const withMonitor = function withMonitor(arg0, arg1, arg2) {
     }
     return nextPromise;
   }
-  return require(dependencyMap[1]).withIsolationScope(() => {
-    if (null != arg2) {
-      if (arg2.isolateTrace) {
-        let startNewTraceResult = arg0(arg1[8]).startNewTrace(runCallback);
-        const obj = arg0(arg1[8]);
+  return _require(825).withIsolationScope(() => {
+    if (null != isolateTrace) {
+      if (isolateTrace.isolateTrace) {
+        let startNewTraceResult = callback(842).startNewTrace(runCallback);
+        const obj = callback(842);
       }
       return startNewTraceResult;
     }

@@ -1,17 +1,17 @@
 // Module ID: 1566
-// Function ID: 17629
+// Function ID: 17630
 // Name: initialWindowMetrics
-// Dependencies: []
+// Dependencies: [1567]
 
 // Module 1566 (initialWindowMetrics)
 let initialWindowMetrics;
-if (null != importDefault(dependencyMap[0])) {
-  if (null != importDefault(dependencyMap[0]).getConstants) {
-    const constants = importDefault(dependencyMap[0]).getConstants();
+if (null != require("RNCSafeAreaContext")) {
+  if (null != require("RNCSafeAreaContext").getConstants) {
+    const constants = require("RNCSafeAreaContext").getConstants();
     if (null != constants) {
       initialWindowMetrics = constants.initialWindowMetrics;
     }
-    const importDefaultResult = importDefault(dependencyMap[0]);
+    const importDefaultResult = require("RNCSafeAreaContext");
   }
 }
 let tmp4 = null;

@@ -1,10 +1,10 @@
-// Module ID: 4183
-// Function ID: 36009
+// Module ID: 4187
+// Function ID: 36041
 // Name: getClipCropAspectRatio
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getClipCropBounds
 
-// Module 4183 (getClipCropAspectRatio)
+// Module 4187 (getClipCropAspectRatio)
 function getClipCropAspectRatio(arg0) {
   if (obj.PORTRAIT_9_16 === arg0) {
     return 0.5625;
@@ -14,9 +14,8 @@ function getClipCropAspectRatio(arg0) {
     return null;
   }
 }
-const obj = { ORIGINAL: "original", PORTRAIT_9_16: "9:16", LANDSCAPE_16_9: "16:9" };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/clips/ClipsTypes.tsx");
+let obj = { ORIGINAL: "original", PORTRAIT_9_16: "9:16", LANDSCAPE_16_9: "16:9" };
+const result = require("set").fileFinishedImporting("modules/clips/ClipsTypes.tsx");
 
 export const ClipSignalTypes = { MANUAL: "manual", DISTRIBUTED: "distributed", SHOUTING: "shouting", LAUGHTER: "laughter", GAME_EVENT: "game_event", SPEAKING: "speaking", SOUNDBOARD: "soundboard" };
 export const ClipsHardwareClassification = { UNKNOWN: "unknown", BELOW_MINIMUM: "below_minimum", MEETS_MINIMUM: "meets_minimum", MEETS_AUTO_ENABLE: "meets_auto_enable" };

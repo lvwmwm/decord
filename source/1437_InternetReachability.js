@@ -1,14 +1,16 @@
 // Module ID: 1437
-// Function ID: 16767
+// Function ID: 16768
 // Name: InternetReachability
-// Dependencies: []
+// Dependencies: [7, 6]
 
 // Module 1437 (InternetReachability)
-let closure_0 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 class InternetReachability {
   constructor(arg0, arg1) {
-    closure_0 = this;
-    tmp = closure_0(this, InternetReachability);
+    self = this;
+    tmp = self(this, InternetReachability);
     this._isInternetReachable = undefined;
     this._currentInternetReachabilityCheckHandler = null;
     this._currentTimeoutHandle = null;
@@ -46,38 +48,39 @@ class InternetReachability {
       const response = fetch(self._configuration.reachabilityUrl, obj);
       let promise = new Promise((arg0, arg1) => {
         let timeout = arg1;
-        timeout = setTimeout(() => callback("timedout"), timeout._configuration.reachabilityRequestTimeout);
+        timeout = setTimeout(() => callback("timedout"), outer1_0._configuration.reachabilityRequestTimeout);
       });
       function cancel() {
 
       }
       promise = new Promise((arg0, arg1) => {
+        let _classCallCheck = arg1;
         function cancel() {
-          return arg1("canceled");
+          return callback("canceled");
         }
       });
       obj = {};
       const items = [response, promise, promise];
       const racePromise = Promise.race(items);
       const nextPromise = Promise.race(items).then((status) => {
-        const _configuration = closure_0._configuration;
+        const _configuration = outer1_0._configuration;
         return _configuration.reachabilityTest(status);
       });
       const nextPromise1 = Promise.race(items).then((status) => {
-        const _configuration = closure_0._configuration;
+        const _configuration = outer1_0._configuration;
         return _configuration.reachabilityTest(status);
       }).then((arg0) => {
-        const result = closure_0._setIsInternetReachable(arg0);
-        const _configuration = closure_0._configuration;
-        closure_0._currentTimeoutHandle = setTimeout(closure_0._checkInternetReachability, closure_0._isInternetReachable ? _configuration.reachabilityLongTimeout : _configuration.reachabilityShortTimeout);
+        const result = outer1_0._setIsInternetReachable(arg0);
+        const _configuration = outer1_0._configuration;
+        outer1_0._currentTimeoutHandle = setTimeout(outer1_0._checkInternetReachability, outer1_0._isInternetReachable ? _configuration.reachabilityLongTimeout : _configuration.reachabilityShortTimeout);
       });
       obj.promise = Promise.race(items).then((status) => {
-        const _configuration = closure_0._configuration;
+        const _configuration = outer1_0._configuration;
         return _configuration.reachabilityTest(status);
       }).then((arg0) => {
-        const result = closure_0._setIsInternetReachable(arg0);
-        const _configuration = closure_0._configuration;
-        closure_0._currentTimeoutHandle = setTimeout(closure_0._checkInternetReachability, closure_0._isInternetReachable ? _configuration.reachabilityLongTimeout : _configuration.reachabilityShortTimeout);
+        const result = outer1_0._setIsInternetReachable(arg0);
+        const _configuration = outer1_0._configuration;
+        outer1_0._currentTimeoutHandle = setTimeout(outer1_0._checkInternetReachability, outer1_0._isInternetReachable ? _configuration.reachabilityLongTimeout : _configuration.reachabilityShortTimeout);
       }).catch((arg0) => {
         if ("canceled" === arg0) {
           abortController.abort();
@@ -85,14 +88,14 @@ class InternetReachability {
           if ("timedout" === arg0) {
             abortController.abort();
           }
-          const result = closure_0._setIsInternetReachable(false);
+          const result = outer1_0._setIsInternetReachable(false);
           const _setTimeout = setTimeout;
-          closure_0._currentTimeoutHandle = setTimeout(closure_0._checkInternetReachability, closure_0._configuration.reachabilityShortTimeout);
+          outer1_0._currentTimeoutHandle = setTimeout(outer1_0._checkInternetReachability, outer1_0._configuration.reachabilityShortTimeout);
         }
       }).then(() => {
-        clearTimeout(closure_0);
+        clearTimeout(_classCallCheck);
       }, (arg0) => {
-        clearTimeout(closure_0);
+        clearTimeout(_classCallCheck);
         throw arg0;
       });
       obj.cancel = cancel;
@@ -125,4 +128,4 @@ class InternetReachability {
   }
 }
 
-export default importDefault(dependencyMap[0])(InternetReachability);
+export default _defineProperties(InternetReachability);

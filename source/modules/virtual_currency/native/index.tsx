@@ -1,13 +1,12 @@
-// Module ID: 9779
-// Function ID: 76032
+// Module ID: 9786
+// Function ID: 76073
 // Name: BalanceWidgetPill
-// Dependencies: []
+// Dependencies: [2, 9787, 9797, 9795, 9798]
 
-// Module 9779 (BalanceWidgetPill)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/virtual_currency/native/index.tsx");
+// Module 9786 (BalanceWidgetPill)
+const result = require("BalanceWidgetPillButton").fileFinishedImporting("modules/virtual_currency/native/index.tsx");
 
-export const BalanceWidgetPill = require(dependencyMap[1]).BalanceWidgetPill;
-export const BalanceWidgetPillButton = require(dependencyMap[2]).BalanceWidgetPillButton;
-export const BalanceCounter = require(dependencyMap[3]).BalanceCounter;
-export const BalanceWidgetActionSheet = importDefault(dependencyMap[4]);
+export const BalanceWidgetPill = require("BalanceWidgetPill").BalanceWidgetPill;
+export const BalanceWidgetPillButton = require("BalanceWidgetPillButton").BalanceWidgetPillButton;
+export const BalanceCounter = require("BalanceCounter").BalanceCounter;
+export const BalanceWidgetActionSheet = require("balance");

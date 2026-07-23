@@ -1,46 +1,43 @@
-// Module ID: 11214
-// Function ID: 87330
+// Module ID: 11224
+// Function ID: 87380
 // Name: CommandRowIcon
-// Dependencies: []
+// Dependencies: [5, 57, 31, 33, 11152, 7919, 11225, 6755, 5171, 4543, 1212, 4076, 2]
 // Exports: default
 
-// Module 11214 (CommandRowIcon)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/app_launcher/native/base_components/CommandRowButton.tsx");
+// Module 11224 (CommandRowIcon)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/app_launcher/native/base_components/CommandRowButton.tsx");
 
 export default function CommandRowIcon(command) {
   command = command.command;
-  const arg1 = command;
   const beforeExecuteCommand = command.beforeExecuteCommand;
-  const dependencyMap = beforeExecuteCommand;
   const onExecuteCommand = command.onExecuteCommand;
-  let callback = onExecuteCommand;
   const tryExecuteCommand = command.tryExecuteCommand;
-  const callback2 = tryExecuteCommand;
   const sectionName = command.sectionName;
-  const React = sectionName;
   let closure_5;
   let commandContext;
-  callback = undefined;
+  let callback;
   let options = command.options;
   if (null == options) {
     options = [];
   }
-  const tmp2 = callback2(React.useState(false), 2);
+  const tmp2 = tryExecuteCommand(sectionName.useState(false), 2);
   closure_5 = tmp2[1];
-  const useCommandContext = arg1(dependencyMap[4]).useCommandContext;
+  const useCommandContext = command(beforeExecuteCommand[4]).useCommandContext;
   commandContext = useCommandContext(command.context);
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [onExecuteCommand, command, commandContext, beforeExecuteCommand, sectionName];
-  callback = React.useCallback(callback(useCommandContext), items);
+  callback = sectionName.useCallback(onExecuteCommand(useCommandContext), items);
   const items1 = [tryExecuteCommand, callback];
   if (tmp) {
     let tmp7Result = tmp7(tmp8(tmp9[8]).TableRowArrow, {});
   } else {
-    let obj = {};
+    let obj = { size: "sm", text: null, onPress: null, icon: null, iconPosition: "end", grow: false, variant: "tertiary" };
     const intl = tmp8(tmp9[10]).intl;
     obj.text = intl.string(tmp8(tmp9[10]).t.TXNS7S);
     obj.onPress = tmp6;

@@ -1,9 +1,31 @@
-// Module ID: 4807
-// Function ID: 41941
+// Module ID: 4810
+// Function ID: 41959
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4811, 1316, 4162, 4943, 4165, 10444, 4217, 4145, 653, 4174, 3803, 1360, 9081, 636, 22, 566, 686, 2]
 
-// Module 4807 (_isNativeReflectConstruct)
+// Module 4810 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import explicitContentFromProto from "explicitContentFromProto";
+import isListeningOnSpotify from "isListeningOnSpotify";
+import isUndefinedOrNull from "isUndefinedOrNull";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import { sortActivity } from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_22;
+let closure_23;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +35,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +88,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -104,8 +126,8 @@ function filterPlayingActivities(arg0) {
     if (!iter2.done) {
       do {
         let value = iter2.value;
-        let tmp = closure_19;
-        if (value.type === closure_19.PLAYING) {
+        let tmp = constants2;
+        if (value.type === constants2.PLAYING) {
           let arr = items1.push(value);
         } else {
           arr = items.push(value);
@@ -130,7 +152,7 @@ function filterPlayingActivities(arg0) {
   }
 }
 function shouldShowApplicationActivity(application_id) {
-  return arg1(dependencyMap[14]).shouldShareApplicationActivity(application_id, closure_12);
+  return require(4174) /* convertToTransitionState */.shouldShareApplicationActivity(application_id, closure_12);
 }
 function shouldShowActivity(flags) {
   flags = flags.flags;
@@ -143,7 +165,7 @@ function shouldShowActivity(flags) {
   } else {
     const type = flags.type;
     if (constants2.LISTENING === type) {
-      if (importDefault(dependencyMap[17])(flags)) {
+      if (importDefault(9081)(flags)) {
         let shouldShowActivityResult = closure_8.shouldShowActivity();
       } else {
         shouldShowActivityResult = null != flags.application_id;
@@ -160,7 +182,7 @@ function shouldShowActivity(flags) {
         if (1 === searchGamesByNameResult.length) {
           setting = shouldShowApplicationActivity(searchGamesByNameResult[0]);
         } else {
-          const ShowCurrentGame = arg1(dependencyMap[15]).ShowCurrentGame;
+          const ShowCurrentGame = require(3803) /* explicitContentFromProto */.ShowCurrentGame;
           setting = ShowCurrentGame.getSetting();
         }
       }
@@ -176,7 +198,7 @@ function shouldShowActivity(flags) {
       return tmp4;
     }
   }
-  const obj = arg1(dependencyMap[16]);
+  obj = require(1360) /* hasFlag */;
 }
 function handleUpdate() {
   const idleSince = closure_11.getIdleSince();
@@ -184,14 +206,13 @@ function handleUpdate() {
   if (null != idleSince) {
     num = idleSince;
   }
-  let closure_24 = num;
   let closure_27 = closure_11.isAFK();
-  if (closure_28) {
+  if (c28) {
     let IDLE = closure_23;
-  } else if (closure_21) {
+  } else if (c21) {
     IDLE = StatusTypes.INVISIBLE;
   } else {
-    const StatusSetting = arg1(dependencyMap[15]).StatusSetting;
+    const StatusSetting = require(3803) /* explicitContentFromProto */.StatusSetting;
     let ONLINE = StatusSetting.getSetting();
     if (ONLINE === StatusTypes.UNKNOWN) {
       ONLINE = StatusTypes.ONLINE;
@@ -200,92 +221,71 @@ function handleUpdate() {
   }
   let tmp9 = IDLE === StatusTypes.ONLINE;
   if (tmp9) {
-    tmp9 = closure_24 > 0;
+    tmp9 = num > 0;
   }
   if (tmp9) {
     IDLE = StatusTypes.IDLE;
   }
-  if (!closure_28) {
+  if (!c28) {
     if (IDLE !== StatusTypes.INVISIBLE) {
-      const activities = activities.getActivities();
+      activities = activities.getActivities();
       let found = activities.filter(shouldShowActivity);
     }
     let flag = false;
-    if (!importDefault(dependencyMap[18])(closure_25, found)) {
-      closure_25 = found;
+    if (!importDefault(636)(found, found)) {
       let closure_26 = filterPlayingActivities(found);
       flag = true;
     }
     const remoteActivities = store.getRemoteActivities();
-    if (closure_29 !== remoteActivities) {
-      closure_29 = remoteActivities;
+    if (remoteActivities !== remoteActivities) {
       flag = true;
     }
     const hiddenActivities = store.getHiddenActivities();
-    if (closure_30 !== hiddenActivities) {
-      closure_30 = hiddenActivities;
-    }
     if (flag) {
       const items = [];
-      let arraySpreadResult = HermesBuiltin.arraySpread(closure_25, 0);
-      arraySpreadResult = HermesBuiltin.arraySpread(closure_29.filter((type) => type.type !== constants.CUSTOM_STATUS), arraySpreadResult);
-      const tmp28 = importDefault(dependencyMap[19]);
-      const tmp28Result = importDefault(dependencyMap[19])(items.sort(sortActivity));
-      const valueResult = importDefault(dependencyMap[19])(items.sort(sortActivity)).uniqBy((type) => "" + type.type + ":" + type.application_id + ":" + type.name).value();
-      let closure_31 = valueResult;
+      let arraySpreadResult = HermesBuiltin.arraySpread(found, 0);
+      arraySpreadResult = HermesBuiltin.arraySpread(remoteActivities.filter((type) => type.type !== outer1_19.CUSTOM_STATUS), arraySpreadResult);
+      const tmp28 = importDefault(22);
+      const tmp28Result = importDefault(22)(items.sort(sortActivity));
+      const valueResult = importDefault(22)(items.sort(sortActivity)).uniqBy((type) => "" + type.type + ":" + type.application_id + ":" + type.name).value();
       let closure_32 = filterPlayingActivities(valueResult);
-      const iter = importDefault(dependencyMap[19])(items.sort(sortActivity)).uniqBy((type) => "" + type.type + ":" + type.application_id + ":" + type.name);
+      const iter = importDefault(22)(items.sort(sortActivity)).uniqBy((type) => "" + type.type + ":" + type.application_id + ":" + type.name);
     }
   }
   found = [];
 }
 function handleConnectionOpen() {
-  let closure_28 = false;
+  let c28 = false;
   const UNKNOWN = StatusTypes.UNKNOWN;
   handleUpdate();
   const result = currentUserOnConnectionOpen.setCurrentUserOnConnectionOpen(closure_22, closure_31);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-const sortActivity = arg1(dependencyMap[11]).sortActivity;
-let closure_16 = importDefault(dependencyMap[12]);
-const tmp2 = arg1(dependencyMap[13]);
-const StatusTypes = tmp2.StatusTypes;
-({ ActivityFlags: closure_18, ActivityTypes: closure_19, AppStates: closure_20 } = tmp2);
-let closure_21 = false;
+const StatusTypes = ME.StatusTypes;
+({ ActivityFlags: closure_18, ActivityTypes: closure_19, AppStates: closure_20 } = ME);
+let c21 = false;
 ({ ONLINE: closure_22, UNKNOWN: closure_23 } = StatusTypes);
-let closure_24 = 0;
+let c24 = 0;
 let closure_25 = [];
 let closure_26 = [];
-let closure_27 = false;
-let closure_28 = true;
+let c27 = false;
+let c28 = true;
 let closure_29 = Object.freeze([]);
 let closure_30 = Object.freeze([]);
 let closure_31 = [];
 let closure_32 = [];
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class SelfPresenceStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, SelfPresenceStore);
-      obj = closure_6(SelfPresenceStore);
-      tmp2 = closure_5;
-      if (closure_33()) {
+      tmp = outer1_3(this, SelfPresenceStore);
+      obj = outer1_6(SelfPresenceStore);
+      tmp2 = outer1_5;
+      if (outer1_33()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -294,28 +294,27 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SelfPresenceStore;
   callback2(SelfPresenceStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_10, closure_11, closure_12, closure_13, closure_14, closure_16, closure_8, closure_9);
-      const items = [closure_13];
-      this.syncWith(items, closure_39);
+      this.waitFor(outer1_10, outer1_11, outer1_12, outer1_13, outer1_14, outer1_16, outer1_8, outer1_9);
+      const items = [outer1_13];
+      this.syncWith(items, outer1_39);
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "getLocalPresence",
     value() {
-      return { status: closure_22, since: closure_24, activities: closure_26, afk: closure_27 };
+      return { status: outer1_22, since: outer1_24, activities: outer1_26, afk: outer1_27 };
     }
   };
   items[1] = obj;
   obj = {
     key: "getStatus",
     value() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[2] = obj;
@@ -326,7 +325,7 @@ let tmp3 = (Store) => {
       if (arg0 === undefined) {
         flag = true;
       }
-      return flag ? closure_32 : closure_26;
+      return flag ? outer1_32 : outer1_26;
     }
   };
   items[4] = {
@@ -336,13 +335,13 @@ let tmp3 = (Store) => {
       if (arg0 === undefined) {
         flag = true;
       }
-      return flag ? closure_31 : closure_25;
+      return flag ? outer1_31 : outer1_25;
     }
   };
   items[5] = {
     key: "getHiddenActivities",
     value() {
-      return closure_30;
+      return outer1_30;
     }
   };
   items[6] = {
@@ -361,11 +360,11 @@ let tmp3 = (Store) => {
     value(arg0) {
       let flag = arg1;
       const self = this;
-      const SelfPresenceStore = arg0;
+      let closure_0 = arg0;
       if (arg1 === undefined) {
         flag = true;
       }
-      return self.findActivity((application_id) => application_id.application_id === application_id, flag);
+      return self.findActivity((application_id) => application_id.application_id === closure_0, flag);
     }
   };
   items[8] = {
@@ -381,9 +380,9 @@ let tmp3 = (Store) => {
     }
   };
   return callback(SelfPresenceStore, items);
-}(importDefault(dependencyMap[20]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "SelfPresenceStore";
-tmp3 = new tmp3(importDefault(dependencyMap[21]), {
+tmp3 = new tmp3(require("dispatcher"), {
   START_SESSION: handleUpdate,
   CONNECTION_OPEN: function handleConnectionOpenTracked() {
     handleConnectionOpen();
@@ -405,7 +404,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[21]), {
   LIBRARY_FETCH_SUCCESS: handleUpdate,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: handleUpdate,
   LOGOUT: function handleLogout() {
-    let closure_28 = true;
+    let c28 = true;
     let closure_23 = closure_22;
     handleUpdate();
   },
@@ -414,19 +413,19 @@ tmp3 = new tmp3(importDefault(dependencyMap[21]), {
     handleUpdate();
   },
   WINDOW_FOCUS: function handleWindowFocus() {
-    let closure_21 = false;
+    let c21 = false;
     handleUpdate();
   },
   APP_STATE_UPDATE: function handleAppStateUpdate(state) {
     if (state.state === constants3.ACTIVE) {
-      if (closure_21) {
-        closure_21 = false;
+      if (c21) {
+        c21 = false;
         handleUpdate();
       }
     }
     return false;
   }
 });
-const result = arg1(dependencyMap[22]).fileFinishedImporting("stores/SelfPresenceStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/SelfPresenceStore.tsx");
 
 export default tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 6922
-// Function ID: 55228
+// Module ID: 6927
+// Function ID: 55262
 // Name: toRichValue
-// Dependencies: []
+// Dependencies: [2]
 // Exports: createEmptyState, createState, voidToOptionValue
 
-// Module 6922 (toRichValue)
+// Module 6927 (toRichValue)
 function toRichValue(content) {
   if ("" !== content) {
     const parts = content.split("\n");
@@ -17,13 +17,12 @@ function toRichValue(content) {
   }
   return mapped;
 }
-const obj = { type: "line" };
-const items = [Object.freeze({ text: "" })];
+let obj = { type: "line" };
+let items = [Object.freeze({ text: "" })];
 obj.children = Object.freeze(items);
 const items1 = [Object.freeze(obj)];
 let closure_0 = Object.freeze(items1);
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/channel_text_area/slate/SlateUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_text_area/slate/SlateUtils.tsx");
 
 export const createEmptyState = function createEmptyState() {
   const items = [{ text: "" }];

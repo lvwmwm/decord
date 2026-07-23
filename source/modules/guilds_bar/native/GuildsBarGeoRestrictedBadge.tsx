@@ -1,26 +1,27 @@
-// Module ID: 14760
-// Function ID: 111274
-// Dependencies: []
+// Module ID: 14876
+// Function ID: 113442
+// Dependencies: [31, 27, 33, 4130, 689, 4973, 5085, 11369, 2]
 
-// Module 14760
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj1 = arg1(dependencyMap[3]);
+// Module 14876
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
 let obj = {};
-obj = { borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, backgroundColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING_BACKGROUND };
+obj = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, backgroundColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING_BACKGROUND, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
 obj.badgeImageContainer = obj;
-obj1 = { hideWhenScrolling: null, autoCapitalize: null, opacity: arg1(dependencyMap[5]).DARK_1_LIGHT_08, tintColor: importDefault(dependencyMap[4]).colors.BLACK };
-obj.badgeImage = obj1;
-let closure_4 = obj1.createStyles(obj);
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function GuildsBarGeoRestrictedBadge(style) {
+_createForOfIteratorHelperLoose = { height: 16, width: 16, opacity: require("result").DARK_1_LIGHT_08, tintColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
+obj.badgeImage = _createForOfIteratorHelperLoose;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function GuildsBarGeoRestrictedBadge(style) {
   const tmp = callback();
   let obj = { style: items, pointerEvents: "none" };
-  const items = [tmp.badgeImageContainer, style.style];
-  obj = { source: importDefault(dependencyMap[7]), style: tmp.badgeImage };
-  obj.children = jsx(importDefault(dependencyMap[6]), obj);
-  return <View {...obj} />;
+  items = [tmp.badgeImageContainer, style.style];
+  obj = { source: importDefault(11369), style: tmp.badgeImage };
+  obj.children = jsx(importDefault(5085), { source: importDefault(11369), style: tmp.badgeImage });
+  return <View source={importDefault(11369)} style={tmp.badgeImage} />;
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedBadge.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedBadge.tsx");
 
 export default memoResult;

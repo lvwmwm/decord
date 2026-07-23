@@ -1,9 +1,31 @@
-// Module ID: 4967
-// Function ID: 42684
+// Module ID: 4970
+// Function ID: 42702
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 3948, 3759, 1316, 4971, 4469, 1917, 1838, 1196, 4325, 1849, 4972, 636, 44, 1327, 1916, 2]
 
-// Module 4967 (_isNativeReflectConstruct)
+// Module 4970 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import randomFolderId from "randomFolderId";
+import invariant from "invariant";
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import areArraysShallowlyEqual from "areArraysShallowlyEqual";
+import areArraysShallowlyEqual from "areArraysShallowlyEqual";
+import areArraysShallowlyEqual from "areArraysShallowlyEqual";
+import areArraysShallowlyEqual from "areArraysShallowlyEqual";
+import tmp4 from "_isNativeReflectConstruct";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +35,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +88,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -119,12 +141,12 @@ function insertUnsortedGuilds(arg0, arg1) {
 function convertNodeToGuildFolder(type) {
   let children;
   type = type.type;
-  if (arg1(dependencyMap[15]).GuildsNodeType.FOLDER === type) {
+  if (require(4972) /* randomFolderId */.GuildsNodeType.FOLDER === type) {
     let obj = {};
     ({ id: obj2.folderId, name: obj2.folderName, color: obj2.folderColor, expanded: obj2.expanded, children } = type);
     obj.guildIds = children.map((id) => id.id);
     return obj;
-  } else if (arg1(dependencyMap[15]).GuildsNodeType.GUILD === type) {
+  } else if (require(4972) /* randomFolderId */.GuildsNodeType.GUILD === type) {
     obj = { folderId: undefined };
     const items = [type.id];
     obj.guildIds = items;
@@ -136,19 +158,20 @@ function convertNodeToGuildFolder(type) {
 }
 function rebuildTree(arg0, arg1) {
   let done;
+  let iter5;
   let iter9;
-  let guildsTree = new arg1(dependencyMap[15]).GuildsTree();
+  let guildsTree = new require(4972) /* randomFolderId */.GuildsTree();
   if (0 === arg0.length) {
     if (arg1.length > 0) {
       const tmp19 = _createForOfIteratorHelperLoose(arg1);
       let iter6 = tmp19();
       if (!iter6.done) {
         do {
-          let tmp20 = closure_18;
-          let tmp21 = closure_0;
-          let tmp22 = closure_2;
-          let obj3 = closure_0(closure_2[15]);
-          let addNodeResult = closure_18.addNode(obj3.createGuildNode(iter6.value));
+          let tmp20 = guildsTree;
+          let tmp21 = require;
+          let tmp22 = dependencyMap;
+          let obj3 = require(4972) /* randomFolderId */;
+          let addNodeResult = guildsTree.addNode(obj3.createGuildNode(iter6.value));
           let iter7 = tmp19();
           iter6 = iter7;
           done = iter7.done;
@@ -160,9 +183,9 @@ function rebuildTree(arg0, arg1) {
     if (!iter8.done) {
       do {
         let value = iter8.value;
-        let tmp28 = closure_0;
-        let tmp29 = closure_2;
-        let tmp30 = value.type === closure_0(closure_2[15]).GuildsNodeType.GUILD;
+        let tmp28 = require;
+        let tmp29 = dependencyMap;
+        let tmp30 = value.type === require(4972) /* randomFolderId */.GuildsNodeType.GUILD;
         if (tmp30) {
           let tmp31 = closure_9;
           let isLurkingResult = closure_9.isLurking(value.id);
@@ -171,19 +194,19 @@ function rebuildTree(arg0, arg1) {
             isLurkingResult = closure_13.isCurrentUserGuest(value.id);
           }
           if (!isLurkingResult) {
-            let tmp34 = closure_14;
-            let tmp35 = null == closure_14.getGuild(value.id);
+            let tmp34 = store2;
+            let tmp35 = null == store2.getGuild(value.id);
             if (tmp35) {
-              let tmp36 = closure_12;
-              tmp35 = !closure_12.isUnavailable(value.id);
+              let tmp36 = unavailable;
+              tmp35 = !unavailable.isUnavailable(value.id);
             }
             isLurkingResult = tmp35;
           }
           tmp30 = isLurkingResult;
         }
         if (tmp30) {
-          let tmp37 = closure_18;
-          let removeNodeResult = closure_18.removeNode(value);
+          let tmp37 = guildsTree;
+          let removeNodeResult = guildsTree.removeNode(value);
         }
         iter9 = tmp26();
         iter8 = iter9;
@@ -193,17 +216,17 @@ function rebuildTree(arg0, arg1) {
     const values = Object.values(guildsTree.nodes);
     for (let num = 0; num < values.length; num = num + 1) {
       let element = values[num];
-      let tmp41 = arg1;
+      let tmp41 = require;
       let tmp42 = dependencyMap;
-      let tmp43 = element.type === arg1(dependencyMap[15]).GuildsNodeType.FOLDER && 0 === element.children.length;
+      let tmp43 = element.type === require(4972) /* randomFolderId */.GuildsNodeType.FOLDER && 0 === element.children.length;
       if (tmp43) {
         let tmp44 = guildsTree;
         let removeNodeResult1 = guildsTree.removeNode(element);
       }
     }
-    insertUnsortedGuilds((arg0) => null == tmp.nodes[arg0], (value) => tmp.addNode(callback(closure_2[15]).createGuildNode(value), tmp.root, false));
+    insertUnsortedGuilds((arg0) => null == guildsTree.nodes[arg0], (value) => guildsTree.addNode(outer1_0(outer1_2[15]).createGuildNode(value), guildsTree.root, false));
     guildsTree.version = tmp.version;
-    const tmp52 = importDefault(dependencyMap[16])(tmp, guildsTree);
+    const tmp52 = importDefault(636)(tmp, guildsTree);
     if (tmp52) {
       guildsTree = tmp;
     } else {
@@ -215,7 +238,7 @@ function rebuildTree(arg0, arg1) {
   const iter = tmp3();
   let iter2 = iter;
   if (!iter.done) {
-    while (true) {
+    do {
       value = iter2.value;
       let tmp7 = tmp4;
       let tmp8 = tmp5;
@@ -223,17 +246,17 @@ function rebuildTree(arg0, arg1) {
       if (0 !== value.guildIds.length) {
         if (null == value.folderId) {
           let tmp14 = guildsTree;
-          let tmp15 = arg1;
+          let tmp15 = require;
           let tmp16 = dependencyMap;
-          let obj2 = arg1(dependencyMap[15]);
+          let obj2 = require(4972) /* randomFolderId */;
           let addNodeResult1 = guildsTree.addNode(obj2.createGuildNode(value.guildIds[0]));
           tmp7 = tmp4;
           tmp8 = tmp5;
           tmp9 = tmp6;
         } else {
-          let tmp54 = arg1;
+          let tmp54 = require;
           let tmp55 = dependencyMap;
-          let obj4 = arg1(dependencyMap[15]);
+          let obj4 = require(4972) /* randomFolderId */;
           let tmp56 = closure_11;
           let folderNode = obj4.createFolderNode(value, undefined, closure_11.isFolderExpanded(value.folderId));
           let tmp58 = guildsTree;
@@ -247,9 +270,9 @@ function rebuildTree(arg0, arg1) {
           tmp9 = tmp61;
           if (!iter10.done) {
             let tmp10 = guildsTree;
-            let tmp11 = arg1;
+            let tmp11 = require;
             let tmp12 = dependencyMap;
-            let obj = arg1(dependencyMap[15]);
+            let obj = require(4972) /* randomFolderId */;
             let addNodeResult3 = guildsTree.addNode(obj.createGuildNode(iter4.value), folderNode);
             let iter3 = tmp61();
             iter4 = iter3;
@@ -259,17 +282,12 @@ function rebuildTree(arg0, arg1) {
           }
         }
       }
-      let iter5 = tmp3();
-      let tmp4 = tmp7;
-      let tmp5 = tmp8;
-      let tmp6 = tmp9;
+      iter5 = tmp3();
+      tmp4 = tmp7;
+      tmp5 = tmp8;
+      tmp6 = tmp9;
       iter2 = iter5;
-      if (iter5.done) {
-        break;
-      } else {
-        // continue
-      }
-    }
+    } while (!iter5.done);
   }
 }
 function handleRebuild() {
@@ -291,7 +309,7 @@ function handleSettingsUpdate() {
   let guildFolders = store.getGuildFolders();
   let tmp6Result = null == guildFolders;
   if (!tmp6Result) {
-    tmp6Result = !importDefault(dependencyMap[16])(guildFolders, guildFolders);
+    tmp6Result = !importDefault(636)(guildFolders, guildFolders);
   }
   if (tmp6Result) {
     guildFolders = store.settings.guildFolders;
@@ -318,26 +336,26 @@ function handleMoveById(sourceId) {
     if (null != node1) {
       let tmp5 = combine;
       if (combine) {
-        tmp5 = node.type === arg1(dependencyMap[15]).GuildsNodeType.FOLDER;
+        tmp5 = node.type === require(4972) /* randomFolderId */.GuildsNodeType.FOLDER;
       }
       const _HermesInternal = HermesInternal;
-      importDefault(dependencyMap[17])(!tmp5, "[SORTED GUILDS] Can't combine a folder " + node.id + " with another guilds list item");
+      importDefault(44)(!tmp5, "[SORTED GUILDS] Can't combine a folder " + node.id + " with another guilds list item");
       let tmp12 = combine;
-      const tmp31 = importDefault(dependencyMap[17]);
+      const tmp31 = importDefault(44);
       const tmp6 = !tmp5;
       if (combine) {
         tmp12 = null != node1.parentId;
       }
       const _HermesInternal2 = HermesInternal;
-      importDefault(dependencyMap[17])(!tmp12, "[SORTED GUILDS] Can't combine with a guild " + node1.id + " that's already inside of a folder");
-      const tmp11 = importDefault(dependencyMap[17]);
+      importDefault(44)(!tmp12, "[SORTED GUILDS] Can't combine with a guild " + node1.id + " that's already inside of a folder");
+      const tmp11 = importDefault(44);
       const tmp13 = !tmp12;
-      const tmp17 = importDefault(dependencyMap[17]);
+      const tmp17 = importDefault(44);
       const _HermesInternal3 = HermesInternal;
-      tmp17(!(node.type === arg1(dependencyMap[15]).GuildsNodeType.FOLDER && null != node1.parentId), "[SORTED GUILDS] Can't move a folder " + node.id + " to inside of another folder " + node1.parentId);
+      tmp17(!(node.type === require(4972) /* randomFolderId */.GuildsNodeType.FOLDER && null != node1.parentId), "[SORTED GUILDS] Can't move a folder " + node.id + " to inside of another folder " + node1.parentId);
       if (combine) {
         let convertToFolderResult = node1;
-        if (node1.type !== arg1(dependencyMap[15]).GuildsNodeType.FOLDER) {
+        if (node1.type !== require(4972) /* randomFolderId */.GuildsNodeType.FOLDER) {
           convertToFolderResult = guildsTree.convertToFolder(node1);
         }
         guildsTree.moveInto(node, convertToFolderResult, moveToBelow);
@@ -350,22 +368,22 @@ function handleMoveById(sourceId) {
 }
 function handleGuildFolderCreateLocal(sourceIds) {
   sourceIds = sourceIds.sourceIds;
-  let arg1;
+  let c0;
   const arr = sourceIds.shift();
   if (null == arr) {
     return false;
   } else {
-    const node = guildsTree.getNode(arr);
+    let node = guildsTree.getNode(arr);
     if (null == node) {
       return false;
     } else {
       const convertToFolderResult = guildsTree.convertToFolder(node);
-      arg1 = convertToFolderResult;
+      c0 = convertToFolderResult;
       convertToFolderResult.name = sourceIds.name;
       const item = sourceIds.forEach((arg0) => {
-        const node = closure_18.getNode(arg0);
+        const node = outer1_18.getNode(arg0);
         if (null != node) {
-          closure_18.moveInto(node, convertToFolderResult, true);
+          outer1_18.moveInto(node, c0, true);
         }
       });
     }
@@ -379,13 +397,13 @@ function handleGuildFolderEditLocal(arg0) {
   obj.targetId = 0;
   obj.sourceIds = 0;
   const merged = Object.assign(arg0, obj);
-  let arg1;
-  let importDefault;
-  let dependencyMap;
-  const node = guildsTree.getNode(targetId);
+  let node1;
+  let set;
+  let set1;
+  let node = guildsTree.getNode(targetId);
   if (null == node) {
     return false;
-  } else if (node.type !== arg1(dependencyMap[15]).GuildsNodeType.FOLDER) {
+  } else if (node.type !== node1(set1[15]).GuildsNodeType.FOLDER) {
     return false;
   } else {
     let name;
@@ -394,39 +412,36 @@ function handleGuildFolderEditLocal(arg0) {
     }
     if (name !== node.name) {
       const cloneNodeResult = guildsTree.cloneNode(node);
-      importDefault(dependencyMap[17])(cloneNodeResult.id === node.id, "[SORTED GUILDS] Replacement folder node must have same id.");
+      set(set1[17])(cloneNodeResult.id === node.id, "[SORTED GUILDS] Replacement folder node must have same id.");
       cloneNodeResult.name = name;
       guildsTree.replaceNode(node, cloneNodeResult);
     }
-    const node1 = guildsTree.getNode(targetId);
-    arg1 = node1;
+    node1 = guildsTree.getNode(targetId);
     if (null == node1) {
       return false;
     } else {
       const children = node1.children;
       const mapped = children.map((id) => id.id);
-      const found = mapped.filter(arg1(dependencyMap[18]).isNotNullish);
+      const found = mapped.filter(node1(set1[18]).isNotNullish);
       const _Set = Set;
-      const set = new Set(found);
-      importDefault = set;
+      set = new Set(found);
       const _Set2 = Set;
-      const set1 = new Set(sourceIds);
-      dependencyMap = set1;
+      set1 = new Set(sourceIds);
       const _Set3 = Set;
       const items = [];
       HermesBuiltin.arraySpread(found, 0);
       const set2 = new Set(items.filter((arg0) => !set1.has(arg0)));
       const found1 = sourceIds.filter((arg0) => !set.has(arg0));
       const item = found1.forEach((arg0) => {
-        const node = store.getNode(arg0);
+        const node = outer1_18.getNode(arg0);
         if (null != node) {
-          store.moveInto(node, node1, true);
+          outer1_18.moveInto(node, node1, true);
         }
       });
       const item1 = set2.forEach((arg0) => {
-        const node = store.getNode(arg0);
+        const node = outer1_18.getNode(arg0);
         if (null != node) {
-          store.moveNextTo(node, node1, true);
+          outer1_18.moveNextTo(node, node1, true);
         }
       });
     }
@@ -434,18 +449,17 @@ function handleGuildFolderEditLocal(arg0) {
 }
 function handleGuildFolderDeleteLocal(targetId) {
   const element = guildsTree.getNode(targetId.targetId);
-  const arg1 = element;
   let tmp = null != element;
   if (tmp) {
-    const tmp4 = element.type === arg1(dependencyMap[15]).GuildsNodeType.FOLDER;
+    const tmp4 = element.type === element(4972).GuildsNodeType.FOLDER;
     if (tmp4) {
       const children = element.children;
       const mapped = children.map((id) => id.id);
-      const found = mapped.filter(arg1(dependencyMap[18]).isNotNullish);
+      const found = mapped.filter(element(1327).isNotNullish);
       const item = found.forEach((arg0) => {
-        const node = closure_18.getNode(arg0);
+        const node = outer1_18.getNode(arg0);
         if (null != node) {
-          closure_18.moveNextTo(node, element, true);
+          outer1_18.moveNextTo(node, element, true);
         }
       });
     }
@@ -458,7 +472,7 @@ function handleJoinedLurkingGuild(joinedAt) {
   let user;
   joinedAt = joinedAt.joinedAt;
   ({ guildId, user } = joinedAt);
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   const guild = store2.getGuild(guildId);
   let id;
   if (null != currentUser) {
@@ -485,7 +499,7 @@ function handleGuildFolderExpand(folderId) {
   const node = guildsTree.getNode(folderId);
   const isFolderExpandedResult = closure_11.isFolderExpanded(folderId);
   if (null != node) {
-    if (node.type === arg1(dependencyMap[15]).GuildsNodeType.FOLDER) {
+    if (node.type === require(4972) /* randomFolderId */.GuildsNodeType.FOLDER) {
       if (node.expanded !== isFolderExpandedResult) {
         setNodeExpanded(node, isFolderExpandedResult);
       }
@@ -497,7 +511,7 @@ function handleFolderExpanded(expanded) {
   expanded = expanded.expanded;
   const node = guildsTree.getNode(expanded.folderId);
   if (null != node) {
-    if (node.type === arg1(dependencyMap[15]).GuildsNodeType.FOLDER) {
+    if (node.type === require(4972) /* randomFolderId */.GuildsNodeType.FOLDER) {
       if (node.expanded !== expanded) {
         setNodeExpanded(node, expanded);
       }
@@ -512,12 +526,12 @@ function handleCollapseAll() {
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp2 = closure_0;
-      let tmp3 = closure_2;
-      let tmp4 = value.type === closure_0(closure_2[15]).GuildsNodeType.FOLDER && value.expanded;
+      let tmp2 = require;
+      let tmp3 = dependencyMap;
+      let tmp4 = value.type === require(4972) /* randomFolderId */.GuildsNodeType.FOLDER && value.expanded;
       if (tmp4) {
-        let tmp5 = closure_39;
-        let tmp6 = closure_39(value, false);
+        let tmp5 = setNodeExpanded;
+        let tmp6 = setNodeExpanded(value, false);
       }
       iter2 = tmp();
       iter = iter2;
@@ -526,204 +540,48 @@ function handleCollapseAll() {
 }
 function setNodeExpanded(node, expanded) {
   const cloneNodeResult = guildsTree.cloneNode(node);
-  importDefault(dependencyMap[17])(cloneNodeResult.id === node.id, "[SORTED GUILDS] setNodeExpanded: Replacement folder node must have same id.");
+  importDefault(44)(cloneNodeResult.id === node.id, "[SORTED GUILDS] setNodeExpanded: Replacement folder node must have same id.");
   cloneNodeResult.expanded = expanded;
   guildsTree.replaceNode(node, cloneNodeResult);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = importDefault(dependencyMap[13]);
-let closure_16 = importDefault(dependencyMap[14]);
-const guildsTree = new arg1(dependencyMap[15]).GuildsTree();
-const importDefaultResult = importDefault(dependencyMap[12]);
-let closure_19 = arg1(dependencyMap[19]).cachedFunction((sortedGuildNodes) => sortedGuildNodes.sortedGuildNodes().map((id) => id.id));
-const obj = arg1(dependencyMap[19]);
-let closure_20 = arg1(dependencyMap[19]).cachedFunction((getRoots) => {
+let guildsTree = new require("randomFolderId").GuildsTree();
+let closure_19 = areArraysShallowlyEqual.cachedFunction((sortedGuildNodes) => sortedGuildNodes.sortedGuildNodes().map((id) => id.id));
+let closure_20 = areArraysShallowlyEqual.cachedFunction((getRoots) => {
   const roots = getRoots.getRoots();
   return roots.map(convertNodeToGuildFolder);
 });
-const obj2 = arg1(dependencyMap[19]);
-let closure_21 = arg1(dependencyMap[19]).cachedFunction((root) => {
+let closure_21 = areArraysShallowlyEqual.cachedFunction((root) => {
   const items = [];
-  const arg1 = items;
   function flattenNodes(root) {
     let done;
     const type = root.type;
-    if (items(closure_2[15]).GuildsNodeType.FOLDER === type) {
+    if (items(outer1_2[15]).GuildsNodeType.FOLDER === type) {
       items.push(root);
     }
-    const tmp5 = callback(root.children);
+    const tmp5 = outer1_24(root.children);
     let iter = tmp5();
     if (!iter.done) {
       do {
-        let tmp6 = closure_1;
-        let tmp7 = closure_1(iter.value);
+        let tmp6 = flattenNodes;
+        let tmp7 = flattenNodes(iter.value);
         let iter2 = tmp5();
         iter = iter2;
         done = iter2.done;
       } while (!done);
     }
   }
-  const importDefault = flattenNodes;
   flattenNodes(root.root);
   return items;
 });
-const obj3 = arg1(dependencyMap[19]);
-let closure_22 = arg1(dependencyMap[19]).cachedFunction((root) => {
+let closure_22 = areArraysShallowlyEqual.cachedFunction((root) => {
   const children = root.root.children;
   return children.map(convertNodeToGuildFolder);
 });
-let tmp4 = (importDefaultResult) => {
-  class SortedGuildStore {
-    constructor() {
-      self = this;
-      tmp = closure_3(this, SortedGuildStore);
-      obj = {
-        CONNECTION_OPEN: closure_29,
-        OVERLAY_INITIALIZE: closure_29,
-        CACHE_LOADED() {
-              return tmp2Result.loadCache();
-            },
-        GUILD_CREATE: closure_29,
-        GUILD_DELETE: closure_29,
-        GUILD_MEMBER_ADD: closure_35,
-        USER_SETTINGS_PROTO_UPDATE: closure_30,
-        GUILD_MOVE_BY_ID: closure_31,
-        GUILD_FOLDER_CREATE_LOCAL: closure_32,
-        GUILD_FOLDER_EDIT_LOCAL: closure_33,
-        GUILD_FOLDER_DELETE_LOCAL: closure_34,
-        TOGGLE_GUILD_FOLDER_EXPAND: closure_36,
-        SET_GUILD_FOLDER_EXPANDED: closure_37,
-        GUILD_FOLDER_COLLAPSE: closure_38
-      };
-      items = [];
-      items[0] = obj;
-      obj2 = closure_6(SortedGuildStore);
-      tmp2 = closure_5;
-      if (closure_23()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj2, items, closure_6(self).constructor);
-      } else {
-        constructResult = obj2.apply(self, items);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      SortedGuildStore = tmp2Result;
-      tmp2Result.loadCache = () => {
-        let iter;
-        const snapshot = tmp2Result.readSnapshot(tmp2Result.LATEST_SNAPSHOT_VERSION);
-        let tree;
-        if (null != snapshot) {
-          tree = snapshot.tree;
-        }
-        if (null != tree) {
-          const GuildsTree = tmp2Result(closure_2[15]).GuildsTree;
-          const prototype = GuildsTree.prototype;
-          const guildsTree = new GuildsTree();
-          const snapshot1 = guildsTree.loadSnapshot(tree);
-          const tmp14 = callback(guildsTree.allNodes());
-          let iter2 = tmp14();
-          if (!iter2.done) {
-            do {
-              let value = iter2.value;
-              let tmp3 = closure_0;
-              let tmp4 = closure_2;
-              if (value.type === closure_0(closure_2[15]).GuildsNodeType.FOLDER) {
-                let tmp5 = closure_11;
-                value.expanded = closure_11.isFolderExpanded(value.id);
-              }
-              iter = tmp14();
-              iter2 = iter;
-            } while (!iter.done);
-          }
-        }
-      };
-      return tmp2Result;
-    }
-  }
-  const arg1 = SortedGuildStore;
-  callback2(SortedGuildStore, importDefaultResult);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(closure_14, closure_15, closure_10, closure_12, closure_9, closure_11, closure_8);
-    }
-  };
-  const items = [obj, , , , , , , , ];
-  obj = {
-    key: "getGuildsTree",
-    value() {
-      return closure_18;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getGuildFolders",
-    value() {
-      return callback4(store, store.version);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getGuildFolderById",
-    value(arg0) {
-      const SortedGuildStore = arg0;
-      const guildFolders = this.getGuildFolders();
-      return guildFolders.find((folderId) => folderId.folderId === folderId);
-    }
-  };
-  items[4] = {
-    key: "getFlattenedGuildIds",
-    value() {
-      return callback3(store, store.version);
-    }
-  };
-  items[5] = {
-    key: "getFlattenedGuildFolderList",
-    value() {
-      return callback5(store, store.version);
-    }
-  };
-  items[6] = {
-    key: "getCompatibleGuildFolders",
-    value() {
-      return callback6(store, store.version);
-    }
-  };
-  items[7] = {
-    key: "getFastListGuildFolders",
-    value() {
-      return store.getRoots();
-    }
-  };
-  items[8] = {
-    key: "takeSnapshot",
-    value() {
-      let obj = { version: SortedGuildStore.LATEST_SNAPSHOT_VERSION };
-      obj = { tree: store.getSnapshot() };
-      obj.data = obj;
-      return obj;
-    }
-  };
-  return callback(SortedGuildStore, items);
-}(importDefaultResult);
 tmp4.displayName = "SortedGuildStore";
 tmp4.LATEST_SNAPSHOT_VERSION = 2;
 tmp4 = new tmp4();
-const obj4 = arg1(dependencyMap[19]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("stores/SortedGuildStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/SortedGuildStore.tsx");
 
 export default tmp4;
-export const GuildsNodeType = arg1(dependencyMap[15]).GuildsNodeType;
+export const GuildsNodeType = require("randomFolderId").GuildsNodeType;
 export { insertUnsortedGuilds };

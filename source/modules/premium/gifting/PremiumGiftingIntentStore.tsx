@@ -1,9 +1,24 @@
-// Module ID: 7748
-// Function ID: 61534
+// Module ID: 7754
+// Function ID: 61571
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4044, 1188, 6902, 1316, 5592, 3767, 653, 7755, 3803, 7756, 22, 566, 686, 2]
 
-// Module 7748 (_isNativeReflectConstruct)
+// Module 7754 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import apply from "apply";
+import dispatcher from "dispatcher";
+import closure_7 from "set";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import { Consents } from "ME";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +28,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +81,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,8 +108,8 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getCurrentTime() {
-  if (null != closure_22) {
-    let timestamp = closure_22;
+  if (null != c22) {
+    let timestamp = c22;
   } else {
     const _Date = Date;
     timestamp = Date.now();
@@ -102,25 +117,28 @@ function getCurrentTime() {
   return timestamp;
 }
 function categorizeTopAffinityFriendAnniversaries(flag) {
+  let set;
+  let set1;
   if (flag === undefined) {
     flag = false;
   }
-  const result = arg1(dependencyMap[12]).categorizeFriendAnniversariesByAffinity(closure_16, (arg0) => {
-    const userAffinity = userAffinity.getUserAffinity(arg0);
+  const result = require(7755) /* _createForOfIteratorHelperLoose */.categorizeFriendAnniversariesByAffinity(closure_16, (arg0) => {
+    const userAffinity = outer1_10.getUserAffinity(arg0);
     let dmProbability;
     if (null != userAffinity) {
       dmProbability = userAffinity.dmProbability;
     }
     return dmProbability;
   }, flag);
-  ({ highestAffinity: closure_17, highAffinity: closure_18 } = result);
+  ({ highestAffinity: set, highAffinity: set1 } = result);
 }
 function updateFriendAnniversaries() {
+  let arr;
   let iter3;
-  if (null == closure_20) {
+  if (null == c20) {
     resetFriendAnniversaries();
     if (closure_12.hasConsented(Consents.PERSONALIZATION)) {
-      const EnableFriendAnniversaryNotifications = arg1(dependencyMap[13]).EnableFriendAnniversaryNotifications;
+      const EnableFriendAnniversaryNotifications = require(3803) /* explicitContentFromProto */.EnableFriendAnniversaryNotifications;
       if (EnableFriendAnniversaryNotifications.getSetting()) {
         const tmp12 = _createForOfIteratorHelperLoose(store.getFriendIDs());
         const iter = tmp12();
@@ -128,13 +146,13 @@ function updateFriendAnniversaries() {
         if (!iter.done) {
           do {
             let value = iter2.value;
-            let tmp15 = closure_13;
-            let since = closure_13.getSince(value);
-            let tmp17 = closure_10;
-            let userAffinity = closure_10.getUserAffinity(value);
-            let tmp19 = closure_13;
+            let tmp15 = store;
+            let since = store.getSince(value);
+            let tmp17 = userAffinity;
+            userAffinity = userAffinity.getUserAffinity(value);
+            let tmp19 = store;
             let tmp20 = tmp14;
-            if (closure_13.isFriend(value)) {
+            if (store.isFriend(value)) {
               tmp20 = tmp14;
               if (null != userAffinity) {
                 tmp20 = tmp14;
@@ -147,13 +165,13 @@ function updateFriendAnniversaries() {
                     let tmp23 = since;
                     let date = new Date(since);
                     let tmp25 = date;
-                    let tmp26 = closure_0;
-                    let tmp27 = closure_2;
-                    let obj = closure_0(closure_2[12]);
+                    let tmp26 = require;
+                    let tmp27 = dependencyMap;
+                    let obj = require(7755) /* _createForOfIteratorHelperLoose */;
                     tmp20 = date;
                     if (obj.isFriendAnniversary(date)) {
-                      let tmp28 = closure_16;
-                      let arr = closure_16.push(value);
+                      let tmp28 = arr;
+                      arr = arr.push(value);
                       let tmp30 = closure_19;
                       obj = { friendsSince: date };
                       closure_19[value] = obj;
@@ -164,24 +182,24 @@ function updateFriendAnniversaries() {
               }
             }
             iter3 = tmp12();
-            let tmp14 = tmp20;
+            tmp14 = tmp20;
             iter2 = iter3;
           } while (!iter3.done);
         }
-        if (0 !== closure_16.length) {
+        if (0 !== arr.length) {
           obj = { location: "PremiumGiftingIntentStore updateFriendAnniversaries" };
           if (obj3.getFriendAnniversaryGateConfig(obj).enabled) {
-            const sorted = closure_16.sort((arg0, arg1) => closure_10.compareByDmProbability(arg0, arg1));
+            const sorted = arr.sort((arg0, arg1) => outer1_10.compareByDmProbability(arg0, arg1));
             categorizeTopAffinityFriendAnniversaries();
           } else {
             resetFriendAnniversaries();
           }
-          const obj3 = arg1(dependencyMap[14]);
+          obj3 = require(7756) /* getFriendAnniversaryGateConfig */;
         }
       }
     }
   } else {
-    generateFriendAnniversaries(closure_20);
+    generateFriendAnniversaries(c20);
   }
 }
 function resetFriendAnniversaries() {
@@ -195,72 +213,60 @@ function maybeUpdateMessageGiftIntentLastShownMap(recipientUserId) {
     closure_15.messageGiftIntentLastShownMap[recipientUserId] = getCurrentTime();
   }
 }
-function generateFriendAnniversaries(closure_20) {
+function generateFriendAnniversaries(c20) {
   resetFriendAnniversaries();
   if (obj.getFriendAnniversaryGateConfig({ location: "PremiumGiftingIntentStore generateFriendAnniversaries" }).enabled) {
-    const EnableFriendAnniversaryNotifications = arg1(dependencyMap[13]).EnableFriendAnniversaryNotifications;
+    const EnableFriendAnniversaryNotifications = set(3803).EnableFriendAnniversaryNotifications;
     if (EnableFriendAnniversaryNotifications.getSetting()) {
+      let closure_20 = c20;
       const friendIDs = store.getFriendIDs();
-      const found = friendIDs.filter((arg0) => !closure_13.isIgnored(arg0));
+      const found = friendIDs.filter((arg0) => !outer1_13.isIgnored(arg0));
       const _Set = Set;
-      const set = new Set(found);
-      const arg1 = set;
+      set = new Set(found);
       if (null != _null) {
-        if (_null.length === closure_20) {
-          const _null = sampleSizeResult;
+        if (_null.length === c20) {
+          _null = sampleSizeResult;
           const item = sampleSizeResult.forEach((arg0) => {
-            const since = closure_13.getSince(arg0);
+            const since = outer1_13.getSince(arg0);
             if (null != since) {
               const _Date = Date;
               const date = new Date(since);
-              const arr = arr.push(arg0);
+              outer1_16.push(arg0);
               const obj = { friendsSince: date };
-              closure_19[arg0] = obj;
+              outer1_19[arg0] = obj;
             }
           });
-          const sorted = closure_16.sort((arg0, arg1) => closure_10.compareByDmProbability(arg0, arg1));
+          const sorted = arr.sort((arg0, arg1) => outer1_10.compareByDmProbability(arg0, arg1));
           categorizeTopAffinityFriendAnniversaries(true);
         }
-        let sampleSizeResult = _null;
+        sampleSizeResult = _null;
       }
-      sampleSizeResult = importDefault(dependencyMap[15]).sampleSize(found, closure_20);
-      const obj2 = importDefault(dependencyMap[15]);
+      sampleSizeResult = importDefault(22).sampleSize(found, c20);
+      const obj2 = importDefault(22);
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-const Consents = arg1(dependencyMap[11]).Consents;
 let closure_15 = { messageGiftIntentLastShownMap: {}, lastShownFriendsListGiftIntents: [], friendsTabBadgeLastDismissedTime: null, lastKnownGiftIntentDismissedAtMs: 0 };
 let closure_16 = [];
-const set = new Set();
-const set1 = new Set();
+let set = new Set();
+let set1 = new Set();
 let closure_19 = {};
-let closure_20 = null;
-let closure_21 = null;
-let closure_22 = null;
-let tmp4 = (PersistedStore) => {
+let c20 = null;
+let c21 = null;
+let c22 = null;
+let tmp4 = ((PersistedStore) => {
   class PremiumGiftingIntentStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, PremiumGiftingIntentStore);
-      obj = closure_6(PremiumGiftingIntentStore);
-      tmp2 = closure_5;
-      if (closure_23()) {
+      tmp = outer1_3(this, PremiumGiftingIntentStore);
+      obj = outer1_6(PremiumGiftingIntentStore);
+      tmp2 = outer1_5;
+      if (outer1_23()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -269,66 +275,65 @@ let tmp4 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = PremiumGiftingIntentStore;
   callback2(PremiumGiftingIntentStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(friendsTabBadgeLastDismissedTime) {
       const self = this;
-      let closure_15 = { messageGiftIntentLastShownMap: {}, lastShownFriendsListGiftIntents: [], friendsTabBadgeLastDismissedTime: null, lastKnownGiftIntentDismissedAtMs: 0 };
+      const outer1_15 = { messageGiftIntentLastShownMap: {}, lastShownFriendsListGiftIntents: [], friendsTabBadgeLastDismissedTime: null, lastKnownGiftIntentDismissedAtMs: 0 };
       if (null != friendsTabBadgeLastDismissedTime) {
-        closure_15.friendsTabBadgeLastDismissedTime = friendsTabBadgeLastDismissedTime.friendsTabBadgeLastDismissedTime;
+        outer1_15.friendsTabBadgeLastDismissedTime = friendsTabBadgeLastDismissedTime.friendsTabBadgeLastDismissedTime;
         const _Array = Array;
-        closure_15.lastShownFriendsListGiftIntents = Array.from(friendsTabBadgeLastDismissedTime.lastShownFriendsListGiftIntents);
+        outer1_15.lastShownFriendsListGiftIntents = Array.from(friendsTabBadgeLastDismissedTime.lastShownFriendsListGiftIntents);
         const obj = {};
         const merged = Object.assign(friendsTabBadgeLastDismissedTime.messageGiftIntentLastShownMap);
-        closure_15.messageGiftIntentLastShownMap = obj;
+        outer1_15.messageGiftIntentLastShownMap = obj;
         const lastKnownGiftIntentDismissedAtMs = friendsTabBadgeLastDismissedTime.lastKnownGiftIntentDismissedAtMs;
         let num = 0;
         if (null != lastKnownGiftIntentDismissedAtMs) {
           num = lastKnownGiftIntentDismissedAtMs;
         }
-        closure_15.lastKnownGiftIntentDismissedAtMs = num;
-        const tmp7 = closure_15;
+        outer1_15.lastKnownGiftIntentDismissedAtMs = num;
+        const tmp7 = outer1_15;
       }
-      const items = [closure_13, closure_10, closure_12, closure_8, closure_9, closure_11];
-      self.syncWith(items, closure_28);
-      closure_15.messageGiftIntentLastShownMap = PremiumGiftingIntentStore(closure_2[12]).pruneTimestampMap(closure_15.messageGiftIntentLastShownMap, callback4(), 1209600000);
+      const items = [outer1_13, outer1_10, outer1_12, outer1_8, outer1_9, outer1_11];
+      self.syncWith(items, outer1_28);
+      outer1_15.messageGiftIntentLastShownMap = PremiumGiftingIntentStore(outer1_2[12]).pruneTimestampMap(outer1_15.messageGiftIntentLastShownMap, outer1_26(), 1209600000);
     }
   };
-  const items = [obj, , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_15;
+      return outer1_15;
     }
   };
   items[1] = obj;
   obj = {
     key: "getFriendAnniversaries",
     value() {
-      return closure_16;
+      return outer1_16;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "canShowFriendsTabBadge",
     value() {
-      return function hasNewHighAffinityFriendAnniversaries() {
-        return Array.from(closure_18).some((arg0) => {
-          const lastShownFriendsListGiftIntents = obj.lastShownFriendsListGiftIntents;
+      return (function hasNewHighAffinityFriendAnniversaries() {
+        return Array.from(outer2_18).some((arg0) => {
+          const lastShownFriendsListGiftIntents = outer3_15.lastShownFriendsListGiftIntents;
           return !lastShownFriendsListGiftIntents.includes(arg0);
         });
-      }();
+      })();
     }
   };
   items[4] = {
     key: "getFriendAnniversaryYears",
     value(arg0) {
       let num = 0;
-      if (null != closure_19[arg0]) {
-        num = PremiumGiftingIntentStore(closure_2[12]).yearsSince(tmp.friendsSince);
-        const obj = PremiumGiftingIntentStore(closure_2[12]);
+      if (null != outer1_19[arg0]) {
+        num = PremiumGiftingIntentStore(outer1_2[12]).yearsSince(tmp.friendsSince);
+        const obj = PremiumGiftingIntentStore(outer1_2[12]);
       }
       return num;
     }
@@ -336,50 +341,50 @@ let tmp4 = (PersistedStore) => {
   items[5] = {
     key: "isGiftIntentMessageInCooldown",
     value(arg0) {
-      return null != closure_15.messageGiftIntentLastShownMap[arg0];
+      return null != outer1_15.messageGiftIntentLastShownMap[arg0];
     }
   };
   items[6] = {
     key: "getDevToolTotalFriendAnniversaries",
     value() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[7] = {
     key: "getDevToolCurrentDate",
     value() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[8] = {
     key: "getHighestAffinityFriendAnniversaries",
     value() {
-      return Array.from(closure_17);
+      return Array.from(outer1_17);
     }
   };
   items[9] = {
     key: "getHighAffinityFriendAnniversaries",
     value() {
-      return Array.from(closure_18);
+      return Array.from(outer1_18);
     }
   };
   items[10] = {
     key: "getMessageGiftIntentLastShownMap",
     value() {
-      return closure_15.messageGiftIntentLastShownMap;
+      return outer1_15.messageGiftIntentLastShownMap;
     }
   };
   items[11] = {
     key: "getLastKnownGiftIntentDismissedAtMs",
     value() {
-      return closure_15.lastKnownGiftIntentDismissedAtMs;
+      return outer1_15.lastKnownGiftIntentDismissedAtMs;
     }
   };
   return callback(PremiumGiftingIntentStore, items);
-}(importDefault(dependencyMap[16]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp4.displayName = "PremiumGiftingIntentStore";
 tmp4.persistKey = "PremiumGiftingIntentStore";
-const items = [
+let items = [
   (friendsTabBadgeLastDismissedTime) => {
     let tmp = friendsTabBadgeLastDismissedTime;
     if (null != friendsTabBadgeLastDismissedTime) {
@@ -460,7 +465,7 @@ const items = [
   },
   (arg0) => {
     if (null != arg0) {
-      delete r0.profilePopoutGiftIntentsDismissMap;
+      delete tmp.profilePopoutGiftIntentsDismissMap;
     }
     return arg0;
   },
@@ -470,13 +475,13 @@ const items = [
     } else {
       const obj = {};
       const merged = Object.assign(arg0);
-      delete r1.giftUnreadNotificationLastDismissedTimes;
+      delete tmp.giftUnreadNotificationLastDismissedTimes;
       return obj;
     }
   }
 ];
 tmp4.migrations = items;
-tmp4 = new tmp4(importDefault(dependencyMap[17]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     resetFriendAnniversaries();
   },
@@ -518,7 +523,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[17]), {
         iter = iter2;
       } while (!iter2.done);
     }
-    closure_15.messageGiftIntentLastShownMap = arg1(dependencyMap[12]).pruneTimestampMap(obj, getCurrentTime(), 1296000000);
+    closure_15.messageGiftIntentLastShownMap = require(7755) /* _createForOfIteratorHelperLoose */.pruneTimestampMap(obj, getCurrentTime(), 1296000000);
     closure_15.lastKnownGiftIntentDismissedAtMs = settingsTimestampMs;
   },
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: function handleDevToolResetFriendsListGiftIntentsShown() {
@@ -530,18 +535,18 @@ tmp4 = new tmp4(importDefault(dependencyMap[17]), {
   DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: function handleDevToolSetFriendAnniversaryCount(total) {
     total = total.total;
     if (null == total) {
-      let closure_20 = null;
-      let closure_21 = null;
+      let c20 = null;
+      let c21 = null;
       updateFriendAnniversaries();
     } else {
       generateFriendAnniversaries(total);
     }
   },
   DEV_TOOLS_RESAMPLE_FRIEND_ANNIVERSARIES: function handleDevToolResampleFriendAnniversaries() {
-    let flag = null != closure_20;
+    let flag = null != c20;
     if (flag) {
-      let closure_21 = null;
-      generateFriendAnniversaries(closure_20);
+      let c21 = null;
+      generateFriendAnniversaries(c20);
       flag = true;
     }
     return flag;
@@ -550,10 +555,10 @@ tmp4 = new tmp4(importDefault(dependencyMap[17]), {
 
   },
   DEV_TOOLS_RESET_CURRENT_DATE: function handleDevToolResetCurrentDate() {
-    let closure_22 = null;
+    let c22 = null;
   }
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/premium/gifting/PremiumGiftingIntentStore.tsx");
+let result = set.fileFinishedImporting("modules/premium/gifting/PremiumGiftingIntentStore.tsx");
 
 export default tmp4;
 export const FRIENDS_LIST_ANNIVERSARY_DISPLAY_LIMIT = 5;

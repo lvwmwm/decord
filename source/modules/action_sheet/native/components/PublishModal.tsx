@@ -1,31 +1,35 @@
-// Module ID: 9852
-// Function ID: 76276
+// Module ID: 9859
+// Function ID: 76317
 // Name: PublishModal
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 4973, 9860, 1273, 1212, 2]
 // Exports: default
 
-// Module 9852 (PublishModal)
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-({ View: closure_4, ActivityIndicator: closure_5 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = { alertContainer: { paddingTop: 16 }, alertLoading: { 335090477: true, -1945376054: true } };
-obj = { "Bool(true)": "1 m\u00E5ned", "Null": "{{count}} m\u00E5neder", "Null": "cirka 1 \u00E5r", color: arg1(dependencyMap[5]).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
-obj.alertBodyText = obj;
-let closure_7 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/action_sheet/native/components/PublishModal.tsx");
+// Module 9859 (PublishModal)
+import _slicedToArray from "_slicedToArray";
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ View: closure_4, ActivityIndicator: closure_5 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 } };
+_createForOfIteratorHelperLoose = { marginBottom: 16, fontSize: 16, lineHeight: 24, color: require("result").DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
+_createForOfIteratorHelperLoose.alertBodyText = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/action_sheet/native/components/PublishModal.tsx");
 
 export default function PublishModal(channelId) {
-  const tmp = callback2();
-  const tmp2 = callback(importDefault(dependencyMap[6])(channelId.channelId), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = callback(importDefault(9860)(channelId.channelId), 2);
   const first = tmp2[0];
   if (tmp2[1]) {
     let obj = { style: tmp.alertLoading };
     obj = { animating: true };
-    obj.children = <closure_5 {...obj} />;
-    return <closure_4 {...obj} />;
+    obj.children = <closure_5 animating />;
+    return <closure_4 animating />;
   } else {
     let guildsFollowing;
     if (null != first) {
@@ -41,7 +45,7 @@ export default function PublishModal(channelId) {
     }
     obj = { style: tmp.alertContainer };
     const obj1 = { style: tmp.alertBodyText };
-    const intl = arg1(dependencyMap[8]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     if (tmp6) {
       const obj2 = {};
       let guildsFollowing2;
@@ -53,13 +57,13 @@ export default function PublishModal(channelId) {
         num3 = guildsFollowing2;
       }
       obj2.numGuildsFollowing = num3;
-      obj1.children = intl.format(tmp12(tmp13[8]).t.GCGrNP, obj2);
+      obj1.children = intl.format(tmp12(1212).t.GCGrNP, obj2);
       let tmp14 = obj1;
     } else {
-      obj1.children = intl.string(tmp12(tmp13[8]).t.8FpqOs);
+      obj1.children = intl.string(tmp12(1212).t["8FpqOs"]);
       tmp14 = obj1;
     }
-    obj.children = jsx(arg1(dependencyMap[7]).LegacyText, tmp14);
-    return <closure_4 {...obj} />;
+    obj.children = jsx(require(1273) /* Button */.LegacyText, tmp14);
+    return <closure_4 style={tmp.alertContainer} />;
   }
 };

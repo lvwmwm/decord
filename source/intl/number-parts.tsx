@@ -1,42 +1,41 @@
-// Module ID: 8180
-// Function ID: 64611
+// Module ID: 8186
+// Function ID: 64648
 // Name: numberParts
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8180 (numberParts)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("intl/number-parts.tsx");
+// Module 8186 (numberParts)
+const result = require("set").fileFinishedImporting("intl/number-parts.tsx");
 const obj = Object.create(null);
-obj.bg = { optimistic: false, flexGrow: false };
-obj.cs = { optimistic: false, flexGrow: false };
-obj.da = { optimistic: null, flexGrow: null };
-obj.de = { optimistic: null, flexGrow: null };
-obj.el = { optimistic: null, flexGrow: null };
-obj.en-GB = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
-obj.en-US = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
-obj.es-ES = { optimistic: null, flexGrow: null };
-obj.es-419 = { optimistic: null, flexGrow: null };
-obj.fi = { optimistic: false, flexGrow: false };
-obj.fr = { optimistic: 6, flexGrow: 6 };
-obj.hi = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
-obj.hr = { optimistic: null, flexGrow: null };
-obj.hu = { optimistic: false, flexGrow: false };
-obj.it = { optimistic: null, flexGrow: null };
-obj.ja = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
-obj.ko = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
-obj.lt = { optimistic: false, flexGrow: false };
-obj.nl = { optimistic: null, flexGrow: null };
-obj.no = { optimistic: false, flexGrow: false };
-obj.pl = { optimistic: false, flexGrow: false };
-obj.pt-BR = { optimistic: null, flexGrow: null };
-obj.ro = { optimistic: null, flexGrow: null };
-obj.ru = { optimistic: false, flexGrow: false };
-obj.sv-SE = { optimistic: false, flexGrow: false };
-obj.th = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
-obj.tr = { optimistic: null, flexGrow: null };
-obj.uk = { optimistic: false, flexGrow: false };
-obj.vi = { optimistic: null, flexGrow: null };
-obj.zh-CN = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
-obj.zh-TW = { optimistic: "NitroWumpusOfferingRight3dIllustration", flexGrow: "ms" };
+obj.bg = { group: " ", decimal: "," };
+obj.cs = { group: " ", decimal: "," };
+obj.da = { group: ".", decimal: "," };
+obj.de = { group: ".", decimal: "," };
+obj.el = { group: ".", decimal: "," };
+obj["en-GB"] = { group: ",", decimal: "." };
+obj["en-US"] = { group: ",", decimal: "." };
+obj["es-ES"] = { group: ".", decimal: "," };
+obj["es-419"] = { group: ".", decimal: "," };
+obj.fi = { group: " ", decimal: "," };
+obj.fr = { group: "\u202F", decimal: "," };
+obj.hi = { group: ",", decimal: "." };
+obj.hr = { group: ".", decimal: "," };
+obj.hu = { group: " ", decimal: "," };
+obj.it = { group: ".", decimal: "," };
+obj.ja = { group: ",", decimal: "." };
+obj.ko = { group: ",", decimal: "." };
+obj.lt = { group: " ", decimal: "," };
+obj.nl = { group: ".", decimal: "," };
+obj.no = { group: " ", decimal: "," };
+obj.pl = { group: " ", decimal: "," };
+obj["pt-BR"] = { group: ".", decimal: "," };
+obj.ro = { group: ".", decimal: "," };
+obj.ru = { group: " ", decimal: "," };
+obj["sv-SE"] = { group: " ", decimal: "," };
+obj.th = { group: ",", decimal: "." };
+obj.tr = { group: ".", decimal: "," };
+obj.uk = { group: " ", decimal: "," };
+obj.vi = { group: ".", decimal: "," };
+obj["zh-CN"] = { group: ",", decimal: "." };
+obj["zh-TW"] = { group: ",", decimal: "." };
 
 export const numberParts = obj;

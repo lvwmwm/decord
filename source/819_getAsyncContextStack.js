@@ -1,21 +1,24 @@
 // Module ID: 819
-// Function ID: 9140
+// Function ID: 9141
 // Name: getAsyncContextStack
-// Dependencies: []
+// Dependencies: [6, 7, 820, 804, 802, 824]
 // Exports: getStackAsyncContextStrategy
 
 // Module 819 (getAsyncContextStack)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 function getAsyncContextStack() {
-  const mainCarrier = require(dependencyMap[4]).getMainCarrier();
-  const obj = require(dependencyMap[4]);
-  const sentryCarrier = require(dependencyMap[4]).getSentryCarrier(mainCarrier);
+  const mainCarrier = require(802) /* getSentryCarrier */.getMainCarrier();
+  const obj = require(802) /* getSentryCarrier */;
+  const sentryCarrier = require(802) /* getSentryCarrier */.getSentryCarrier(mainCarrier);
   let stack = sentryCarrier.stack;
   if (!stack) {
-    const defaultCurrentScope = require(dependencyMap[5]).getDefaultCurrentScope();
-    const obj3 = require(dependencyMap[5]);
+    const defaultCurrentScope = require(824) /* getDefaultCurrentScope */.getDefaultCurrentScope();
+    const obj3 = require(824) /* getDefaultCurrentScope */;
     const prototype = tmp2.prototype;
-    stack = new tmp2(defaultCurrentScope, require(dependencyMap[5]).getDefaultIsolationScope());
-    const obj4 = require(dependencyMap[5]);
+    stack = new tmp2(defaultCurrentScope, require(824) /* getDefaultCurrentScope */.getDefaultIsolationScope());
+    const obj4 = require(824) /* getDefaultCurrentScope */;
   }
   sentryCarrier.stack = stack;
   return stack;
@@ -24,34 +27,31 @@ function withScope(arg0) {
   return getAsyncContextStack().withScope(arg0);
 }
 function withSetScope(arg0, arg1) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   const obj = getAsyncContextStack();
-  let closure_2 = obj;
   return obj.withScope(() => {
-    obj.getStackTop().scope = arg0;
-    return arg1(arg0);
+    obj.getStackTop().scope = closure_0;
+    return callback(closure_0);
   });
 }
 function withIsolationScope(arg0) {
-  const require = arg0;
-  return getAsyncContextStack().withScope(() => arg0(callback().getIsolationScope()));
+  let closure_0 = arg0;
+  return getAsyncContextStack().withScope(() => callback(outer1_5().getIsolationScope()));
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const tmp2 = () => {
+const tmp2 = (() => {
   class AsyncContextStack {
     constructor(arg0, arg1) {
       scope = arg0;
       scope2 = arg1;
       self = this;
-      tmp3 = closure_2(this, AsyncContextStack);
+      tmp3 = outer1_2(this, AsyncContextStack);
       if (!arg0) {
         tmp4 = AsyncContextStack;
-        tmp5 = closure_1;
+        tmp5 = outer1_1;
         num = 2;
-        Scope = AsyncContextStack(closure_1[2]).Scope;
+        Scope = AsyncContextStack(outer1_1[2]).Scope;
         prototype = Scope.prototype;
         tmp6 = new.target;
         tmp7 = new.target;
@@ -59,9 +59,9 @@ const tmp2 = () => {
       }
       if (!scope2) {
         tmp8 = AsyncContextStack;
-        tmp9 = closure_1;
+        tmp9 = outer1_1;
         num2 = 2;
-        Scope2 = AsyncContextStack(closure_1[2]).Scope;
+        Scope2 = AsyncContextStack(outer1_1[2]).Scope;
         prototype2 = Scope2.prototype;
         tmp10 = new.target;
         tmp11 = new.target;
@@ -76,12 +76,11 @@ const tmp2 = () => {
       return;
     }
   }
-  const require = AsyncContextStack;
   let obj = {
     key: "withScope",
     value: function withScope(arg0) {
-      const self = this;
-      const AsyncContextStack = this;
+      let self = this;
+      self = this;
       const promise = arg0(this._pushScope());
       if (obj.isThenable(promise)) {
         let nextPromise = promise.then((arg0) => {
@@ -98,7 +97,7 @@ const tmp2 = () => {
       return nextPromise;
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "getClient",
     value: function getClient() {
@@ -138,17 +137,17 @@ const tmp2 = () => {
   items[6] = {
     key: "_popScope",
     value: function _popScope() {
-      const tmp = this._stack.length <= 1;
       let arr = !tmp;
-      if (!tmp) {
+      if (this._stack.length > 1) {
         const _stack = this._stack;
         arr = _stack.pop();
       }
       return arr;
     }
   };
-  return callback(AsyncContextStack, items);
-}();
+  return _defineProperties(AsyncContextStack, items);
+})();
+let closure_4 = tmp2;
 
 export const AsyncContextStack = tmp2;
 export const getStackAsyncContextStrategy = function getStackAsyncContextStrategy() {
@@ -157,13 +156,13 @@ export const getStackAsyncContextStrategy = function getStackAsyncContextStrateg
     withScope,
     withSetScope,
     withSetIsolationScope(arg0, arg1) {
-      return callback2(arg1);
+      return outer1_8(arg1);
     },
     getCurrentScope() {
-      return callback().getScope();
+      return outer1_5().getScope();
     },
     getIsolationScope() {
-      return callback().getIsolationScope();
+      return outer1_5().getIsolationScope();
     }
   };
 };

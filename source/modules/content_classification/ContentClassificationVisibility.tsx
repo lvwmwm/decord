@@ -1,16 +1,19 @@
-// Module ID: 11075
-// Function ID: 86154
+// Module ID: 11085
+// Function ID: 86204
 // Name: getContentClassificationVisibility
-// Dependencies: []
+// Dependencies: [1849, 6867, 6869, 566, 2]
 // Exports: useContentClassificationVisibility
 
-// Module 11075 (getContentClassificationVisibility)
+// Module 11085 (getContentClassificationVisibility)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getContentClassificationVisibility(contentClassification, channel, nsfwAllowed) {
   if (null != contentClassification) {
-    let obj = channel(dependencyMap[1]);
-    obj = { type: channel(dependencyMap[1]).ContentClassificationVariant.MINIMAL, data: contentClassification };
+    let obj = require(6867) /* _createForOfIteratorHelperLoose */;
+    obj = { type: require(6867) /* _createForOfIteratorHelperLoose */.ContentClassificationVariant.MINIMAL, data: contentClassification };
     const result = obj.contentClassificationToAgeRestriction(obj);
-    if (result === channel(dependencyMap[2]).AgeRestrictionStatus.ADULT) {
+    if (result === require(6869) /* AgeRestrictionStatus */.AgeRestrictionStatus.ADULT) {
       if (true !== nsfwAllowed) {
         let DISPLAY = obj.BLOCK_UNDERAGE;
       } else {
@@ -26,16 +29,15 @@ function getContentClassificationVisibility(contentClassification, channel, nsfw
   }
   DISPLAY = obj.DISPLAY;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const obj = { DISPLAY: "display", BLOCK_UNDERAGE: "block_underage", BLOCK_CHANNEL_RESTRICTION: "block_channel_restriction" };
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/content_classification/ContentClassificationVisibility.tsx");
+let obj = { DISPLAY: "display", BLOCK_UNDERAGE: "block_underage", BLOCK_CHANNEL_RESTRICTION: "block_channel_restriction" };
+let result = require("AgeRestrictionStatus").fileFinishedImporting("modules/content_classification/ContentClassificationVisibility.tsx");
 
 export const ContentClassificationVisibility = obj;
 export { getContentClassificationVisibility };
 export const useContentClassificationVisibility = function useContentClassificationVisibility(contentClassification, channel) {
-  const items = [closure_2];
-  return getContentClassificationVisibility(contentClassification, channel, channel(dependencyMap[3]).useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  const items = [_isNativeReflectConstruct];
+  return getContentClassificationVisibility(contentClassification, channel, require(566) /* initialize */.useStateFromStores(items, () => {
+    const currentUser = outer1_2.getCurrentUser();
     let nsfwAllowed;
     if (null != currentUser) {
       nsfwAllowed = currentUser.nsfwAllowed;

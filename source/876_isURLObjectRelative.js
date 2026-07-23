@@ -1,10 +1,12 @@
 // Module ID: 876
-// Function ID: 9740
+// Function ID: 9741
 // Name: isURLObjectRelative
-// Dependencies: []
+// Dependencies: [77, 816]
 // Exports: getHttpSpanDetailsFromUrlObject, getSanitizedUrlString, parseStringToURLObject, parseUrl, stripDataUrlContent, stripUrlQueryAndFragment
 
 // Module 876 (isURLObjectRelative)
+import _defineProperty from "_defineProperty";
+
 function isURLObjectRelative(result) {
   return "isRelative" in result;
 }
@@ -16,7 +18,7 @@ function getSanitizedUrlStringFromUrlObject(result) {
     const str = new URL(result);
     str.search = "";
     str.hash = "";
-    const items = ["Array", "isArray"];
+    const items = ["80", "443"];
     if (items.includes(str.port)) {
       str.port = "";
     }
@@ -52,43 +54,42 @@ function getHttpSpanNameFromUrlObject(pathname, arg1, method, arg3) {
   }
   return "" + str3 + " " + str;
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const getHttpSpanDetailsFromUrlObject = function getHttpSpanDetailsFromUrlObject(hash, arg1, arg2, method) {
-  const tmp2 = callback(callback({}, require(dependencyMap[1]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, arg2), require(dependencyMap[1]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "url");
+  const tmp2 = _defineProperty(_defineProperty({}, require(816).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, arg2), require(816).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "url");
   if (arg4) {
     let str = "url.template";
     if ("server" === arg1) {
       str = "http.route";
     }
     tmp2[str] = arg4;
-    tmp2[require(dependencyMap[1]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "route";
+    tmp2[require(816).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "route";
   }
   if (tmp5) {
-    tmp2[require(dependencyMap[1]).SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD] = method.method.toUpperCase();
+    tmp2[require(816).SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD] = method.method.toUpperCase();
     const str4 = method.method;
   }
   if (hash) {
     if (hash.search) {
-      tmp2.url.query = hash.search;
+      tmp2["url.query"] = hash.search;
     }
     if (hash.hash) {
-      tmp2.url.fragment = hash.hash;
+      tmp2["url.fragment"] = hash.hash;
     }
     if (hash.pathname) {
-      tmp2.url.path = hash.pathname;
+      tmp2["url.path"] = hash.pathname;
       if ("/" === hash.pathname) {
-        tmp2[require(dependencyMap[1]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "route";
+        tmp2[require(816).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = "route";
       }
     }
     if (!isURLObjectRelative(hash)) {
-      tmp2[require(dependencyMap[1]).SEMANTIC_ATTRIBUTE_URL_FULL] = hash.href;
+      tmp2[require(816).SEMANTIC_ATTRIBUTE_URL_FULL] = hash.href;
       if (hash.port) {
-        tmp2.url.port = hash.port;
+        tmp2["url.port"] = hash.port;
       }
       if (hash.protocol) {
-        tmp2.url.scheme = hash.protocol;
+        tmp2["url.scheme"] = hash.protocol;
       }
       if (hash.hostname) {
         let str7 = "url.domain";

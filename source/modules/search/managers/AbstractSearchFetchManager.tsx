@@ -1,16 +1,13 @@
-// Module ID: 10080
-// Function ID: 78063
+// Module ID: 10088
+// Function ID: 78103
 // Name: AbstractSearchFetchManager
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 10080 (AbstractSearchFetchManager)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 10088 (AbstractSearchFetchManager)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("modules/search/managers/AbstractSearchFetchManager.tsx");
-
-export const AbstractSearchFetchManager = () => {
+const tmp2 = (() => {
   class AbstractSearchFetchManager {
     constructor() {
       tmp = AbstractSearchFetchManager(this, AbstractSearchFetchManager);
@@ -19,7 +16,6 @@ export const AbstractSearchFetchManager = () => {
       return;
     }
   }
-  let closure_0 = AbstractSearchFetchManager;
   let obj = {
     key: "cleanUp",
     value(arg0) {
@@ -62,4 +58,7 @@ export const AbstractSearchFetchManager = () => {
     }
   };
   return callback(AbstractSearchFetchManager, items);
-}();
+})();
+let result = require("set").fileFinishedImporting("modules/search/managers/AbstractSearchFetchManager.tsx");
+
+export const AbstractSearchFetchManager = tmp2;

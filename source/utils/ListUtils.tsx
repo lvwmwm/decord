@@ -1,12 +1,11 @@
-// Module ID: 11642
-// Function ID: 90367
+// Module ID: 11652
+// Function ID: 90416
 // Name: getListSummaryLabel
-// Dependencies: []
+// Dependencies: [1212, 2]
 // Exports: getListSummaryLabel
 
-// Module 11642 (getListSummaryLabel)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/ListUtils.tsx");
+// Module 11652 (getListSummaryLabel)
+const result = require("set").fileFinishedImporting("utils/ListUtils.tsx");
 
 export const getListSummaryLabel = function getListSummaryLabel(names, length) {
   if (null == length) {
@@ -20,15 +19,15 @@ export const getListSummaryLabel = function getListSummaryLabel(names, length) {
     let obj = {};
     num = names[num];
     obj.first = num;
-    let formatToPlainStringResult = intl4.formatToPlainString(require(dependencyMap[num]).t.8s9z8P, obj);
+    let formatToPlainStringResult = intl4.formatToPlainString(require(dependencyMap[num]).t["8s9z8P"], obj);
   } else if (2 === length) {
     const intl3 = require(dependencyMap[num]).intl;
     obj = { first: names[num], second: names[1] };
-    formatToPlainStringResult = intl3.formatToPlainString(require(dependencyMap[num]).t.i0K/dw, obj);
+    formatToPlainStringResult = intl3.formatToPlainString(require(dependencyMap[num]).t["i0K/dw"], obj);
   } else if (3 === length) {
     const intl2 = require(dependencyMap[num]).intl;
     const obj1 = { first: names[num], second: names[1], third: names[2] };
-    formatToPlainStringResult = intl2.formatToPlainString(require(dependencyMap[num]).t./KSOKY, obj1);
+    formatToPlainStringResult = intl2.formatToPlainString(require(dependencyMap[num]).t["/KSOKY"], obj1);
   } else {
     const intl = require(dependencyMap[num]).intl;
     obj = { first: names[num], second: names[1], third: names[2], count: length - 3 };

@@ -1,30 +1,32 @@
-// Module ID: 9902
-// Function ID: 76618
+// Module ID: 9909
+// Function ID: 76659
 // Name: Pile
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 27, 33, 4130, 1327, 22, 7873, 9910, 2]
 // Exports: Pile
 
-// Module 9902 (Pile)
-import closure_3 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 9909 (Pile)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-let closure_6 = __exportStarResult1.createStyles({ pile: { flexDirection: "row" } });
-const result = __exportStarResult1.fileFinishedImporting("design/components/Pile/native/Pile.native.tsx");
+const require = arg1;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ pile: { flexDirection: "row" } });
+let result = require("jsxProd").fileFinishedImporting("design/components/Pile/native/Pile.native.tsx");
 
-export const Pile = function Pile(aria-label) {
+export const Pile = function Pile(aria_label) {
+  let View;
   let children;
+  let result;
+  let dependencyMap;
+  let require;
   let size;
-  ({ shape: closure_0, size } = aria_label);
-  const importDefault = size;
-  ({ gap: closure_2, depthX: closure_3, depthY: closure_4, children } = aria_label);
+  ({ shape: require, size } = aria_label);
+  ({ gap: dependencyMap, depthX: result, depthY: View, children } = aria_label);
   let Children = React.Children;
   const tmp = callback();
-  const length = Children.toArray(children).filter(arg1(dependencyMap[4]).isNotNullish).length;
-  const jsx = length;
-  let obj = arg1(dependencyMap[5]);
+  const length = Children.toArray(children).filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish).length;
+  let obj = require(22) /* apply */;
   if (obj.isArray(size)) {
     if (size.length !== length) {
       const _Error = Error;
@@ -35,25 +37,25 @@ export const Pile = function Pile(aria-label) {
   obj = {
     style: tmp.pile,
     accessible: true,
-    aria-label: aria_label.aria-label,
+    "aria-label": aria_label["aria-label"],
     children: Children.map(children, (type) => {
-      if (validElement.isValidElement(type)) {
-        let obj = callback(closure_2[5]);
+      if (outer1_3.isValidElement(type)) {
+        let obj = outer1_0(outer1_2[5]);
         const tmp6 = obj.isArray(size) ? size[arg1] : size;
         let tmp8;
         if (arg1 < length - 1) {
-          let obj1 = callback(closure_2[5]);
+          let obj1 = outer1_0(outer1_2[5]);
           if (obj1.isArray(size)) {
             let tmp13 = tmp12[arg1 + 1];
           } else {
             tmp13 = tmp12;
           }
-          if (callback(closure_2[6]).CutoutShape.Circle === callback) {
-            obj = { shape: callback };
-            if (null == validElement) {
+          if (outer1_0(outer1_2[6]).CutoutShape.Circle === closure_0) {
+            obj = { shape: closure_0 };
+            if (null == result) {
               let result = -closure_2;
             } else {
-              result = tmp6 * (1 - validElement);
+              result = tmp6 * (1 - result);
             }
             obj.x = result;
             if (null == closure_4) {
@@ -63,12 +65,12 @@ export const Pile = function Pile(aria-label) {
             }
             obj.y = result1;
             obj.size = tmp13 + 2 * closure_2;
-          } else if (callback(closure_2[6]).CutoutShape.RoundedRect === tmp14) {
-            obj = { shape: callback };
-            if (null == validElement) {
+          } else if (outer1_0(outer1_2[6]).CutoutShape.RoundedRect === tmp14) {
+            obj = { shape: closure_0 };
+            if (null == result) {
               let result2 = -closure_2;
             } else {
-              result2 = tmp6 * (1 - validElement);
+              result2 = tmp6 * (1 - result);
             }
             obj.x = result2;
             if (null == closure_4) {
@@ -82,24 +84,24 @@ export const Pile = function Pile(aria-label) {
             obj.cornerRadius = tmp13 / 3 + closure_2;
             tmp8 = obj;
           } else {
-            let obj2 = callback(closure_2[4]);
-            obj2.assertNever(callback);
+            let obj2 = outer1_0(outer1_2[4]);
+            obj2.assertNever(closure_0);
           }
-          const tmp14 = callback;
+          tmp14 = closure_0;
         }
         let num9 = 0;
         let num10 = 0;
         if (arg1 > 0) {
-          let obj5 = callback(closure_2[5]);
+          let obj5 = outer1_0(outer1_2[5]);
           if (obj5.isArray(size)) {
             let tmp48 = tmp47[arg1 - 1];
           } else {
             tmp48 = tmp47;
           }
-          if (null == validElement) {
+          if (null == result) {
             let sum = -tmp48;
           } else {
-            sum = -tmp48 * validElement + closure_2;
+            sum = -tmp48 * result + closure_2;
           }
           let num11 = 0;
           if (null != closure_4) {
@@ -111,7 +113,7 @@ export const Pile = function Pile(aria-label) {
         obj1 = {};
         obj2 = { height: tmp6, marginLeft: num9, marginTop: num10 };
         const items = [obj2, ];
-        if (type.type === callback(closure_2[7]).PileOverflow) {
+        if (type.type === outer1_0(outer1_2[7]).PileOverflow) {
           const obj3 = { minWidth: tmp6 };
           let obj4 = obj3;
         } else {
@@ -125,15 +127,15 @@ export const Pile = function Pile(aria-label) {
           const items1 = [tmp8];
           obj5.cutouts = items1;
           obj5.children = type;
-          tmp62 = length(size(closure_2[6]), obj5);
+          tmp62 = length(size(outer1_2[6]), obj5);
         }
         obj1.children = tmp62;
-        return length(closure_4, obj1, arg1);
+        return length(outer1_4, obj1, arg1);
       } else {
         return null;
       }
     })
   };
   Children = React.Children;
-  return <View {...obj} />;
+  return length(View, obj);
 };

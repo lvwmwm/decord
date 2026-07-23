@@ -1,10 +1,14 @@
 // Module ID: 684
 // Function ID: 8448
 // Name: fromEntries
-// Dependencies: []
+// Dependencies: [482, 587, 2]
 // Exports: getAnalyticsToken, hideToken, init, removeAnalyticsToken, setAnalyticsToken, setToken, showToken
 
 // Module 684 (fromEntries)
+import sum from "sum";
+
+let closure_2;
+let closure_3;
 function fromEntries(arg0) {
   const items = [...arg0];
   return items.reduce((arg0, arg1) => {
@@ -16,20 +20,20 @@ function fromEntries(arg0) {
   }, {});
 }
 function storeTokens() {
-  if (closure_11) {
-    const Storage4 = require(dependencyMap[1]).Storage;
+  if (c11) {
+    const Storage4 = require(587) /* Storage */.Storage;
     Storage4.remove(closure_3);
-    const Storage5 = require(dependencyMap[1]).Storage;
+    const Storage5 = require(587) /* Storage */.Storage;
     Storage5.remove(closure_2);
   } else {
     if (null != closure_7) {
-      const Storage2 = require(dependencyMap[1]).Storage;
+      const Storage2 = require(587) /* Storage */.Storage;
       const result = Storage2.set(closure_3, closure_7);
     } else {
-      const Storage = require(dependencyMap[1]).Storage;
+      const Storage = require(587) /* Storage */.Storage;
       Storage.remove(closure_3);
     }
-    const Storage3 = require(dependencyMap[1]).Storage;
+    const Storage3 = require(587) /* Storage */.Storage;
     const result1 = Storage3.set(closure_2, closure_10);
   }
 }
@@ -39,7 +43,7 @@ function maybeDecryptToken(closure_7) {
       let obj = safeStorage;
       if (null != safeStorage) {
         if (obj.isEncryptionAvailable()) {
-          if (closure_7.startsWith(closure_4)) {
+          if (closure_7.startsWith(c4)) {
             obj = { decryptedToken: safeStorage.decryptString(closure_7.substring(12)), wasEncrypted: true };
           }
         }
@@ -48,7 +52,7 @@ function maybeDecryptToken(closure_7) {
     }
     return obj;
   }
-  obj = { "Null": "<string:1243348993>", "Null": "<string:2137063425>" };
+  obj = { decryptedToken: null, wasEncrypted: false };
 }
 function maybeEncryptToken(closure_6) {
   let combined = closure_6;
@@ -56,9 +60,9 @@ function maybeEncryptToken(closure_6) {
     combined = closure_6;
     if (safeStorage.isEncryptionAvailable()) {
       combined = closure_6;
-      if (!closure_6.startsWith(closure_4)) {
+      if (!closure_6.startsWith(c4)) {
         const _HermesInternal = HermesInternal;
-        combined = "" + closure_4 + safeStorage.encryptString(closure_6);
+        combined = "" + c4 + safeStorage.encryptString(closure_6);
       }
     }
   }
@@ -66,7 +70,7 @@ function maybeEncryptToken(closure_6) {
 }
 function getToken(arg0) {
   if (null != arg0) {
-    let tmp = closure_9[arg0];
+    let tmp = dependencyMap[arg0];
   } else {
     tmp = closure_6;
   }
@@ -76,7 +80,7 @@ function setSecondaryToken(token, __analytics__) {
   if (null != __analytics__) {
     closure_9[__analytics__] = token;
   }
-  if (closure_8) {
+  if (c8) {
     encryptAndStoreTokens();
   } else {
     let closure_7 = closure_6;
@@ -85,18 +89,18 @@ function setSecondaryToken(token, __analytics__) {
   }
 }
 function removeToken(__analytics__) {
-  let tmp = closure_6;
+  let tmp3 = c6;
   if (null != __analytics__) {
-    tmp = closure_9[__analytics__];
-    delete r4[r5];
-    delete r4[r5];
+    tmp3 = dependencyMap[__analytics__];
+    delete tmp[tmp2];
+    delete tmp[tmp2];
   }
-  if (tmp === closure_6) {
-    closure_6 = null;
-    let closure_7 = null;
+  if (tmp3 === c6) {
+    c6 = null;
+    let c7 = null;
   }
   storeTokens();
-  return null != tmp;
+  return null != tmp3;
 }
 function encryptAndStoreTokens() {
   if (null != safeStorage) {
@@ -110,39 +114,39 @@ function encryptAndStoreTokens() {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg0;
-        const items = [tmp, callback(tmp2)];
+        const items = [tmp, outer1_16(tmp2)];
         return items;
       }));
-      let closure_8 = true;
+      let c8 = true;
     }
     storeTokens();
   }
   closure_7 = closure_6;
   closure_10 = closure_9;
 }
-const _module = require(dependencyMap[0]);
-({ TOKENS_KEY: closure_2, TOKEN_KEY: closure_3 } = _module);
-let closure_4 = "dQw4w9WgXcQ:";
+({ TOKENS_KEY: closure_2, TOKEN_KEY: closure_3 } = sum);
+let c4 = "dQw4w9WgXcQ:";
 let safeStorage = null;
 if (null != DiscordNative) {
   safeStorage = DiscordNative.safeStorage;
 }
-let closure_8 = false;
+let c8 = false;
 let closure_9 = {};
 let closure_10 = {};
-let closure_11 = false;
-let closure_12 = false;
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("../discord_common/js/shared/lib/TokenManager.tsx");
+let c11 = false;
+let c12 = false;
+let result = require("set").fileFinishedImporting("../discord_common/js/shared/lib/TokenManager.tsx");
 
 export const init = function init() {
-  if (!closure_12) {
-    const Storage = require(dependencyMap[1]).Storage;
+  let c8;
+  let closure_6;
+  if (!c12) {
+    const Storage = require(587) /* Storage */.Storage;
     let closure_7 = Storage.get(closure_3);
-    const Storage2 = require(dependencyMap[1]).Storage;
+    const Storage2 = require(587) /* Storage */.Storage;
     let closure_10 = Storage2.get(closure_2) || {};
     const tmp5 = Storage2.get(closure_2) || {};
-    ({ wasEncrypted: closure_8, decryptedToken: closure_6 } = maybeDecryptToken(closure_7));
+    ({ wasEncrypted: c8, decryptedToken: closure_6 } = maybeDecryptToken(closure_7));
     const _Object = Object;
     const entries = Object.entries(closure_10);
     const mapped = entries.map((arg0) => {
@@ -151,7 +155,11 @@ export const init = function init() {
       let tmp2;
       let wasEncrypted;
       [tmp, tmp2] = arg0;
-      ({ wasEncrypted, decryptedToken } = callback(tmp2));
+      ({ wasEncrypted, decryptedToken } = outer1_15(tmp2));
+      if (!wasEncrypted) {
+        wasEncrypted = outer1_8;
+      }
+      outer1_8 = wasEncrypted;
       const items = [tmp, decryptedToken];
       return items;
     });
@@ -160,7 +168,7 @@ export const init = function init() {
       [, tmp] = arg0;
       return null != tmp;
     }));
-    closure_12 = true;
+    c12 = true;
     const tmp8 = maybeDecryptToken(closure_7);
   }
 };
@@ -177,20 +185,21 @@ export const setAnalyticsToken = function setAnalyticsToken(token) {
 };
 export const setToken = function setToken(token, id) {
   if (null != token) {
+    let closure_6 = token;
     setSecondaryToken(token, id);
   } else {
     removeToken(id);
   }
 };
 export const hideToken = function hideToken() {
-  if (!closure_11) {
-    closure_11 = true;
+  if (!c11) {
+    c11 = true;
     storeTokens();
   }
 };
 export const showToken = function showToken() {
-  if (closure_11) {
-    closure_11 = false;
+  if (c11) {
+    c11 = false;
     storeTokens();
   }
 };

@@ -1,15 +1,15 @@
-// Module ID: 11664
-// Function ID: 90458
-// Dependencies: []
+// Module ID: 11674
+// Function ID: 90507
+// Dependencies: [10391, 11675, 11676, 2]
 
-// Module 11664
-const _module = require(dependencyMap[0]);
-if (_module.isAnimatedAndroidKeyboard()) {
-  let importDefaultResult = importDefault(dependencyMap[1]);
+// Module 11674
+import apexExperiment from "apexExperiment";
+
+if (apexExperiment.isAnimatedAndroidKeyboard()) {
+  let importDefaultResult = require("module_11675");
 } else {
-  importDefaultResult = importDefault(dependencyMap[2]);
+  importDefaultResult = require("module_11676");
 }
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/main_tabs_v2/native/channel/ChannelSafeAreaBottom.android.tsx");
+const result = require("module_11676").fileFinishedImporting("modules/main_tabs_v2/native/channel/ChannelSafeAreaBottom.android.tsx");
 
 export default importDefaultResult;

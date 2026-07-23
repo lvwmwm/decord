@@ -1,10 +1,16 @@
-// Module ID: 11342
-// Function ID: 88193
+// Module ID: 11352
+// Function ID: 88243
 // Name: interactivityProps
-// Dependencies: []
+// Dependencies: [31, 27, 11105, 33, 4476, 3991, 4131, 11353, 2]
 // Exports: default
 
-// Module 11342 (interactivityProps)
+// Module 11352 (interactivityProps)
+import result from "result";
+import { StyleSheet } from "get ActivityIndicator";
+import { CHAT_INPUT_TIMING_CONFIG } from "TextAreaCta";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function interactivityProps(isInteractive) {
   const obj = {};
   let str = "none";
@@ -22,53 +28,50 @@ function interactivityProps(isInteractive) {
 }
 function FadeTransitionItem(state) {
   state = state.state;
-  const arg1 = state;
   const cleanup = state.cleanup;
-  const importDefault = cleanup;
-  let dependencyMap;
-  const tmp = state === arg1(dependencyMap[4]).TransitionStates.YEETED;
-  let obj = arg1(dependencyMap[5]);
+  let sharedValue;
+  const tmp = state === state(sharedValue[4]).TransitionStates.YEETED;
+  let obj = state(sharedValue[5]);
   let num = 1;
   if (tmp) {
     num = 0;
   }
-  const sharedValue = obj.useSharedValue(num);
-  dependencyMap = sharedValue;
+  sharedValue = obj.useSharedValue(num);
   const items = [state, sharedValue, cleanup];
   const effect = React.useEffect(() => {
     if (state === state(sharedValue[4]).TransitionStates.YEETED) {
       const obj2 = state(sharedValue[6]);
       const fn = function t(arg0) {
         if (true === arg0) {
-          callback(closure_2[5]).runOnJS(closure_1)();
-          const obj = callback(closure_2[5]);
+          state(sharedValue[5]).runOnJS(outer1_1)();
+          const obj = state(sharedValue[5]);
         }
       };
       let obj = { runOnJS: state(sharedValue[5]).runOnJS, cleanup };
       fn.__closure = obj;
       fn.__workletHash = 10965161938750;
-      fn.__initData = closure_7;
-      const result = sharedValue.set(obj2.withTiming(0, closure_4, "respect-motion-settings", fn));
+      fn.__initData = outer1_7;
+      const result = sharedValue.set(obj2.withTiming(0, outer1_4, "respect-motion-settings", fn));
     } else {
       obj = state(sharedValue[6]);
-      const result1 = sharedValue.set(obj.withTiming(1, closure_4, "respect-motion-settings"));
+      const result1 = sharedValue.set(obj.withTiming(1, outer1_4, "respect-motion-settings"));
     }
   }, items);
   class T {
     constructor() {
-      obj = { opacity: closure_2.get() };
+      obj = { opacity: c2.get() };
       return obj;
     }
   }
   T.__closure = { visible: sharedValue };
   T.__workletHash = 13386937038500;
   T.__initData = closure_8;
-  const animatedStyle = arg1(dependencyMap[5]).useAnimatedStyle(T);
+  const animatedStyle = state(sharedValue[5]).useAnimatedStyle(T);
   obj = { style: items1 };
-  const items1 = [closure_6.transitionItem, animatedStyle];
+  items1 = [closure_6.transitionItem, animatedStyle];
   const merged = Object.assign(interactivityProps(!tmp));
   obj["children"] = state.children;
-  return jsx(importDefault(dependencyMap[5]).View, obj);
+  return jsx(cleanup(sharedValue[5]).View, { style: items1 });
 }
 function BounceTransitionItem(state) {
   let animatedStyle;
@@ -78,23 +81,19 @@ function BounceTransitionItem(state) {
   let isInteractive;
   state = state.state;
   ({ cleanup, bounceEnterDelayMs, children } = state);
-  let obj = { visible: state !== arg1(dependencyMap[4]).TransitionStates.YEETED, initiallyVisible: state !== arg1(dependencyMap[4]).TransitionStates.ENTERED, enterDelayMs: bounceEnterDelayMs, onExitComplete: cleanup, interactiveDuringEnter: true };
-  const tmp = importDefault(dependencyMap[7]);
-  ({ animatedStyle, isInteractive } = importDefault(dependencyMap[7])(obj));
+  let obj = { visible: state !== require(4476) /* _createForOfIteratorHelperLoose */.TransitionStates.YEETED, initiallyVisible: state !== require(4476) /* _createForOfIteratorHelperLoose */.TransitionStates.ENTERED, enterDelayMs: bounceEnterDelayMs, onExitComplete: cleanup, interactiveDuringEnter: true };
+  const tmp = importDefault(11353);
+  ({ animatedStyle, isInteractive } = importDefault(11353)(obj));
   obj = { style: items };
-  const items = [closure_6.transitionItemCentered, animatedStyle];
+  items = [closure_6.transitionItemCentered, animatedStyle];
   const merged = Object.assign(interactivityProps(isInteractive));
   obj["children"] = children;
-  return jsx(importDefault(dependencyMap[5]).View, obj);
+  return jsx(importDefault(3991).View, { style: items });
 }
-let closure_3 = importAll(dependencyMap[0]);
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const CHAT_INPUT_TIMING_CONFIG = arg1(dependencyMap[2]).CHAT_INPUT_TIMING_CONFIG;
-const jsx = arg1(dependencyMap[3]).jsx;
-const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { <string:1382672226>: false, <string:3949718378>: false, <string:1369504610>: false, <string:928094841>: false, <string:2985058826>: false, <string:1373970001>: false, <string:3965848119>: false } });
+const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" } });
 let closure_7 = { code: "function ChatInputActionButtonTransitionItemTsx1(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };
 let closure_8 = { code: "function ChatInputActionButtonTransitionItemTsx2(){const{visible}=this.__closure;return{opacity:visible.get()};}" };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonTransitionItem.tsx");
+let result = require("TextAreaCta").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonTransitionItem.tsx");
 
 export default function ChatInputActionButtonTransitionItem(bounceEnterDelayMs) {
   let children;

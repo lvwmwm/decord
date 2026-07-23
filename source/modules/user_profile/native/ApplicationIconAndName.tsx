@@ -1,21 +1,24 @@
-// Module ID: 11651
-// Function ID: 90395
+// Module ID: 11661
+// Function ID: 90444
 // Name: ApplicationIconAndName
-// Dependencies: []
+// Dependencies: [33, 4130, 689, 1273, 4126, 2]
 // Exports: default
 
-// Module 11651 (ApplicationIconAndName)
-const _module = require(dependencyMap[0]);
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = _module);
-const _module1 = require(dependencyMap[1]);
-let closure_6 = _module1.createStyles((width) => {
+// Module 11661 (ApplicationIconAndName)
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles((width) => {
   let obj = {};
-  obj = { width, height: width, marginTop: -1, marginRight: 4, borderRadius: importDefault(dependencyMap[2]).radii.xs };
+  obj = { width, height: width, marginTop: -1, marginRight: 4, borderRadius: importDefault(689).radii.xs };
   obj.gameIcon = obj;
   return obj;
 });
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/user_profile/native/ApplicationIconAndName.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_profile/native/ApplicationIconAndName.tsx");
 
 export default function ApplicationIconAndName(textVariant) {
   let application;
@@ -36,14 +39,14 @@ export default function ApplicationIconAndName(textVariant) {
   obj.uri = str;
   obj.source = obj;
   obj.disableColor = true;
-  const items = [closure_3(require(dependencyMap[3]).Icon, obj, application.id), ];
+  const items = [closure_3(require(1273) /* Button */.Icon, obj, application.id), ];
   const obj1 = { variant: textVariant.textVariant };
   let str2 = "";
   if (useComma) {
     str2 = ", ";
   }
   obj1.children = "" + application.name + str2;
-  items[1] = closure_3(require(dependencyMap[4]).Text, obj1);
+  items[1] = closure_3(require(4126) /* Text */.Text, obj1);
   obj.children = items;
   return closure_5(closure_4, obj);
 };

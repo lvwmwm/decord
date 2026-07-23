@@ -1,19 +1,24 @@
-// Module ID: 12774
-// Function ID: 97910
+// Module ID: 12888
+// Function ID: 100066
 // Name: UserCodeInput
-// Dependencies: []
+// Dependencies: [57, 31, 27, 12889, 33, 4130, 12890, 12891, 4126, 1212, 7512, 4543, 2]
 // Exports: UserCodeInput
 
-// Module 12774 (UserCodeInput)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const OAuthConstants = arg1(dependencyMap[3]).OAuthConstants;
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[5]).createStyles({ text: { textAlign: "center" } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/activate_device/native/UserCodeInput.tsx");
+// Module 12888 (UserCodeInput)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { OAuthConstants } from "OAuthConstants";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ text: { textAlign: "center" } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/activate_device/native/UserCodeInput.tsx");
 
 export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   let error;
@@ -22,31 +27,31 @@ export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
   let onUserCodeAccepted;
   let submitting;
   prefilledUserCode = prefilledUserCode.prefilledUserCode;
-  let callback;
+  let _require;
   ({ onClose, onUserCodeAccepted } = prefilledUserCode);
-  const tmp = callback5();
+  const tmp = callback4();
   let str = "";
   if (null != prefilledUserCode) {
     str = prefilledUserCode;
   }
-  const tmp3 = callback2(React.useState(str), 2);
+  const tmp3 = callback(React.useState(str), 2);
   const first = tmp3[0];
-  callback = tmp3[1];
-  let obj = callback(dependencyMap[6]);
+  _require = tmp3[1];
+  let obj = _require(12890);
   const userCodeSubmit = obj.useUserCodeSubmit(first, onUserCodeAccepted, onClose);
   obj = {};
-  obj = { style: importDefault(dependencyMap[7]).innerContent };
+  obj = { style: importDefault(12891).innerContent };
   ({ manualSubmit, error, submitting } = userCodeSubmit);
-  const obj1 = { cachedAt: true, edpbxy: true, style: tmp.text };
-  const intl = callback(dependencyMap[9]).intl;
-  obj1.children = intl.string(callback(dependencyMap[9]).t.KYPNUv);
-  const items = [callback3(callback(dependencyMap[8]).Text, obj1), ];
-  const obj2 = { style: tmp.text };
-  const intl2 = callback(dependencyMap[9]).intl;
-  obj2.children = intl2.string(callback(dependencyMap[9]).t.xRHk7f);
-  items[1] = callback3(callback(dependencyMap[8]).Text, obj2);
+  const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.text };
+  const intl = _require(1212).intl;
+  obj1.children = intl.string(_require(1212).t.KYPNUv);
+  const items = [callback2(_require(4126).Text, obj1), ];
+  const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.text };
+  const intl2 = _require(1212).intl;
+  obj2.children = intl2.string(_require(1212).t.xRHk7f);
+  items[1] = callback2(_require(4126).Text, obj2);
   obj.children = items;
-  const items1 = [callback4(View, obj), , ];
+  const items1 = [callback3(View, obj), , ];
   const obj3 = {
     onChange(arg0) {
       return callback(arg0);
@@ -56,18 +61,18 @@ export const UserCodeInput = function UserCodeInput(prefilledUserCode) {
     autoFocus: true,
     autoComplete: "off"
   };
-  const intl3 = callback(dependencyMap[9]).intl;
-  obj3.placeholder = intl3.formatToPlainString(callback(dependencyMap[9]).t.0tbz6x, { number: OAuthConstants.USER_CODE_LENGTH });
+  const intl3 = _require(1212).intl;
+  obj3.placeholder = intl3.formatToPlainString(_require(1212).t["0tbz6x"], { number: OAuthConstants.USER_CODE_LENGTH });
   obj3.errorMessage = error;
-  items1[1] = callback3(callback(dependencyMap[10]).TextInput, obj3);
+  items1[1] = callback2(_require(7512).TextInput, obj3);
   const obj5 = { size: "lg" };
-  const intl4 = callback(dependencyMap[9]).intl;
-  obj5.text = intl4.string(callback(dependencyMap[9]).t.3PatSz);
+  const intl4 = _require(1212).intl;
+  obj5.text = intl4.string(_require(1212).t["3PatSz"]);
   obj5.onPress = manualSubmit;
   obj5.loading = submitting;
   obj5.disabled = first.length !== OAuthConstants.USER_CODE_LENGTH;
   obj5.grow = true;
-  items1[2] = callback3(callback(dependencyMap[11]).Button, obj5);
+  items1[2] = callback2(_require(4543).Button, obj5);
   obj.children = items1;
-  return callback4(closure_9, obj);
+  return callback3(closure_9, obj);
 };

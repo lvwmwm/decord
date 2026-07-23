@@ -1,30 +1,33 @@
-// Module ID: 6832
-// Function ID: 53987
+// Module ID: 6837
+// Function ID: 54019
 // Name: set
-// Dependencies: []
+// Dependencies: [6, 7, 653, 477, 6838, 6839, 27, 6840, 6841, 507, 2]
 
-// Module 6832 (set)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-const set = new Set([false, false, false, false, false]);
-const obj = { COUNT: "count", DISTRIBUTION: "distribution" };
-let tmp3 = () => {
+// Module 6837 (set)
+import getActivityIndicator from "get ActivityIndicator";
+import enforcing from "enforcing";
+import { Endpoints } from "ME";
+import set from "ME";
+
+const require = arg1;
+let set = new Set(["darwin", "linux", "win32", "ios", "android"]);
+let obj = { COUNT: "count", DISTRIBUTION: "distribution" };
+let tmp3 = (() => {
   class MonitoringAgent {
     constructor() {
-      MonitoringAgent = this;
-      tmp = closure_2(this, MonitoringAgent);
+      self = this;
+      tmp = outer1_2(this, self);
       this._metrics = [];
       this._intervalId = setInterval(() => {
         self._flush();
       }, 120000);
-      tmp2 = MonitoringAgent(closure_1[6]);
-      obj = MonitoringAgent(closure_1[3]);
+      tmp2 = MonitoringAgent(outer1_1[6]);
+      obj = MonitoringAgent(outer1_1[3]);
       if (obj.isAndroid()) {
         tmp3 = MonitoringAgent;
-        tmp4 = closure_1;
+        tmp4 = outer1_1;
         num = 7;
-        MetricMonitor = MonitoringAgent(closure_1[7]).default;
+        MetricMonitor = MonitoringAgent(outer1_1[7]).default;
       } else {
         MetricMonitor = tmp2.NativeModules.MetricMonitor;
       }
@@ -35,39 +38,37 @@ let tmp3 = () => {
       return;
     }
   }
-  const arg1 = MonitoringAgent;
   let obj = {
     key: "_getMetricWithDefaults",
     value(name, type) {
-      const tags = name.tags;
-      const obj = { name: name.name, type, tags: MonitoringAgent(closure_1[8]).getGlobalTagsArray() };
-      const MonitoringAgent = obj;
+      let tags = name.tags;
+      const obj = { name: name.name, type, tags: MonitoringAgent(outer1_1[8]).getGlobalTagsArray() };
       if (null != tags) {
         const item = tags.forEach((arg0) => {
           const tags = obj.tags;
           tags.push(arg0);
         });
       }
-      const obj2 = MonitoringAgent(closure_1[8]);
+      const obj2 = MonitoringAgent(outer1_1[8]);
       let str = "web";
       if (!obj3.isWeb()) {
-        const platformName = MonitoringAgent(closure_1[3]).getPlatformName();
+        const platformName = MonitoringAgent(outer1_1[3]).getPlatformName();
         let tmp6 = null;
-        if (set.has(platformName)) {
+        if (outer1_5.has(platformName)) {
           tmp6 = platformName;
         }
         str = tmp6;
-        const obj4 = MonitoringAgent(closure_1[3]);
+        const obj4 = MonitoringAgent(outer1_1[3]);
       }
       if (null != str) {
         const tags1 = obj.tags;
         const _HermesInternal = HermesInternal;
         tags1.push("platform:" + str);
       }
-      const CurrentReleaseChannel = MonitoringAgent(closure_1[4]).CurrentReleaseChannel;
+      const CurrentReleaseChannel = MonitoringAgent(outer1_1[4]).CurrentReleaseChannel;
       let tmp9 = null;
       if (null != CurrentReleaseChannel) {
-        const ALL = MonitoringAgent(closure_1[5]).ReleaseChannelsSets.ALL;
+        const ALL = MonitoringAgent(outer1_1[5]).ReleaseChannelsSets.ALL;
         tmp9 = null;
         if (ALL.has(CurrentReleaseChannel)) {
           tmp9 = CurrentReleaseChannel;
@@ -81,7 +82,7 @@ let tmp3 = () => {
       return obj;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "increment",
     value(arg0) {
@@ -91,7 +92,7 @@ let tmp3 = () => {
         flag = false;
       }
       const _metrics = self._metrics;
-      _metrics.push(self._getMetricWithDefaults(arg0, constants.COUNT));
+      _metrics.push(self._getMetricWithDefaults(arg0, outer1_6.COUNT));
       if (!flag) {
         flag = self._metrics.length >= 100;
       }
@@ -110,7 +111,7 @@ let tmp3 = () => {
         flag = false;
       }
       const obj = {};
-      const merged = Object.assign(self._getMetricWithDefaults(arg0, constants.DISTRIBUTION));
+      const merged = Object.assign(self._getMetricWithDefaults(arg0, outer1_6.DISTRIBUTION));
       obj["value"] = arg1;
       const _metrics = self._metrics;
       _metrics.push(obj);
@@ -126,20 +127,20 @@ let tmp3 = () => {
   items[3] = {
     key: "_flush",
     value() {
-      const self = this;
-      const MonitoringAgent = this;
+      let self = this;
+      self = this;
       if (this._metrics.length > 0) {
-        const items = [];
+        let items = [];
         HermesBuiltin.arraySpread(self._metrics, 0);
-        const HTTP = MonitoringAgent(items[9]).HTTP;
-        let obj = { url: METRICS_V2.METRICS_V2 };
-        obj = { metrics: items, client_info: {} };
+        const HTTP = MonitoringAgent(outer1_1[9]).HTTP;
+        let obj = { url: outer1_4.METRICS_V2 };
+        obj = { metrics: items, client_info: { built_at: "1784784017804", build_number: "6057" } };
         obj.body = obj;
         obj.retries = 1;
         obj.rejectWithError = true;
         HTTP.post(obj).catch(() => {
           if (self._metrics.length + items.length < 100) {
-            const items = [];
+            items = [];
             HermesBuiltin.arraySpread(items, HermesBuiltin.arraySpread(self._metrics, 0));
             self._metrics = items;
           }
@@ -150,9 +151,9 @@ let tmp3 = () => {
     }
   };
   return callback(MonitoringAgent, items);
-}();
+})();
 tmp3 = new tmp3();
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/monitoring/MonitoringAgent.tsx");
+const result = set.fileFinishedImporting("modules/monitoring/MonitoringAgent.tsx");
 
 export default tmp3;
 export const MetricType = obj;

@@ -1,35 +1,41 @@
-// Module ID: 14728
-// Function ID: 111070
-// Dependencies: []
+// Module ID: 14843
+// Function ID: 113234
+// Dependencies: [31, 3759, 1391, 4469, 6879, 1838, 3947, 4970, 14812, 14813, 653, 33, 3991, 4130, 689, 1324, 3834, 14823, 3987, 14806, 14844, 566, 5515, 14858, 14859, 4470, 1212, 675, 5700, 14838, 4528, 14814, 9303, 14866, 14867, 4542, 5085, 14869, 2]
 
-// Module 14728
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ getGuildIconSource: closure_5, getGuildIconURL: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-const useItemDragState = arg1(dependencyMap[8]).useItemDragState;
-const TRANSITION_PHYSICS = arg1(dependencyMap[9]).TRANSITION_PHYSICS;
-const AnalyticEvents = arg1(dependencyMap[10]).AnalyticEvents;
-const tmp2 = arg1(dependencyMap[2]);
-({ Fragment: closure_15, jsxs: closure_16, jsx: closure_17 } = arg1(dependencyMap[11]));
+// Module 14843
+import importAllResult from "getGuildsBarGuildMenuItems";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import isGuildOwner from "isGuildOwner";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { useItemDragState } from "withEqualityFn";
+import { TRANSITION_PHYSICS } from "GUILD_ITEM_SIZE";
+import { AnalyticEvents } from "ME";
+import jsxProd from "usePreloadedGuildAsset";
+import module_3991 from "module_3991";
+import module_3991 from "module_3991";
+import module_3991 from "module_3991";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ getGuildIconSource: closure_5, getGuildIconURL: closure_6 } = isGuildOwner);
+({ Fragment: closure_15, jsxs: closure_16, jsx: closure_17 } = jsxProd);
 let obj = {};
-const tmp3 = arg1(dependencyMap[11]);
 obj.pan = require("module_4294967295");
-const obj3 = arg1(dependencyMap[12]);
-obj.itemMeasurements = arg1(dependencyMap[12]).makeMutable([]);
-const obj4 = arg1(dependencyMap[12]);
+obj.itemMeasurements = module_3991.makeMutable([]);
 obj.activeIndex = require("module_4294967295");
-const obj5 = arg1(dependencyMap[12]);
-obj = {};
-const obj6 = arg1(dependencyMap[13]);
-obj.guildIcon = { width: importDefault(dependencyMap[14]).modules.mobile.GUILD_BAR_ITEM_SIZE, height: importDefault(dependencyMap[14]).modules.mobile.GUILD_BAR_ITEM_SIZE };
-let closure_19 = obj6.createStyles(obj);
+obj = { guildIcon: { width: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE, height: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE } };
+let closure_19 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_20 = { code: "function GuildsBarGuildTsx1(values){const{dragDropInProgress,sharedId,guildId,isDragTarget,withSpring,TRANSITION_PHYSICS}=this.__closure;var _guildId;const shouldAnimate=dragDropInProgress.get()&&sharedId.get()===guildId&&!isDragTarget;sharedId.set((_guildId=guildId)!==null&&_guildId!==void 0?_guildId:null);return{animations:{originY:shouldAnimate?withSpring(values.targetOriginY,TRANSITION_PHYSICS,'animate-always'):values.targetOriginY,height:shouldAnimate?withSpring(values.targetHeight,TRANSITION_PHYSICS,'animate-always'):values.targetHeight},initialValues:{originY:values.currentOriginY,height:values.currentHeight}};}" };
-const obj1 = { width: importDefault(dependencyMap[14]).modules.mobile.GUILD_BAR_ITEM_SIZE, height: importDefault(dependencyMap[14]).modules.mobile.GUILD_BAR_ITEM_SIZE };
+let obj1 = { width: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE, height: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE };
 const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
   let accessibilityActions;
   let asset;
@@ -42,7 +48,6 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
   let onAccessibilityAction;
   let overState;
   guildId = guildId.guildId;
-  const arg1 = guildId;
   let flag = guildId.isDragPreview;
   if (flag === undefined) {
     flag = false;
@@ -51,49 +56,44 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let importDefault;
-  let dependencyMap;
-  let React;
-  let closure_4;
+  let token;
+  let drawerOpen;
+  let importAllResult;
+  let selected;
   let isUnavailable;
   let mentionCount;
-  let closure_7;
-  let closure_8;
-  let closure_9;
-  let closure_10;
-  let closure_11;
-  let useItemDragState;
-  let TRANSITION_PHYSICS;
-  let AnalyticEvents;
-  const tmp2 = callback3();
-  let obj = arg1(dependencyMap[16]);
-  const token = obj.useToken(importDefault(dependencyMap[14]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  importDefault = token;
-  let obj1 = arg1(dependencyMap[17]);
-  const tmp = importDefault(dependencyMap[15])("GuildsBarGuild");
-  const MobileHomeDrawerExperiment = arg1(dependencyMap[18]).MobileHomeDrawerExperiment;
+  let unread;
+  let isLurking;
+  let guildName;
+  let mediaState;
+  let isDragTarget;
+  let dragDropInProgress;
+  let stateFromStores1;
+  let sharedValue;
+  let tmp2 = callback3();
+  let obj = guildId(drawerOpen[16]);
+  token = obj.useToken(token(drawerOpen[14]).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  let obj1 = guildId(drawerOpen[17]);
+  const tmp = token(drawerOpen[15])("GuildsBarGuild");
+  const MobileHomeDrawerExperiment = guildId(drawerOpen[18]).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
-  let obj2 = arg1(dependencyMap[19]);
-  const drawerOpen = obj2.useDrawerOpen(enableHome);
-  dependencyMap = drawerOpen;
-  React = React.useRef(arg1(dependencyMap[20]).HomeDrawerActiveHook.NONE);
-  const callback = React.useCallback((current) => {
+  let obj2 = guildId(drawerOpen[19]);
+  drawerOpen = obj2.useDrawerOpen(enableHome);
+  importAllResult = importAllResult.useRef(guildId(drawerOpen[20]).HomeDrawerActiveHook.NONE);
+  const callback = importAllResult.useCallback((current) => {
     closure_3.current = current;
   }, []);
-  let obj3 = arg1(dependencyMap[21]);
-  const items = [closure_10, closure_7, closure_8, closure_4];
+  let obj3 = guildId(drawerOpen[21]);
+  let items = [mediaState, unread, isLurking, selected];
   const items1 = [guildId];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => ({ selected: mediaState.getGuildId() === guildId, isUnavailable: unread.isUnavailable(guildId), unread: isLurking.hasUnread(guildId), mentionCount: isLurking.getMentionCount(guildId), isMentionLowImportance: isLurking.getIsMentionLowImportance(guildId), isLurking: selected.isLurking(guildId) }), items1);
-  const selected = stateFromStoresObject.selected;
-  closure_4 = selected;
+  selected = stateFromStoresObject.selected;
   isUnavailable = stateFromStoresObject.isUnavailable;
   mentionCount = stateFromStoresObject.mentionCount;
-  const unread = stateFromStoresObject.unread;
-  closure_7 = unread;
-  const isLurking = stateFromStoresObject.isLurking;
-  closure_8 = isLurking;
-  let obj4 = arg1(dependencyMap[21]);
-  const items2 = [closure_9];
+  unread = stateFromStoresObject.unread;
+  isLurking = stateFromStoresObject.isLurking;
+  let obj4 = guildId(drawerOpen[21]);
+  const items2 = [guildName];
   const items3 = [guildId, token, selected];
   const stateFromStores = obj4.useStateFromStores(items2, () => {
     const guild = guildName.getGuild(guildId);
@@ -111,99 +111,99 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
     let tmp7;
     if (null != tmp2) {
       if (null != guild) {
-        tmp7 = isUnavailable(guild, guildId(drawerOpen[22]).ImageSizes[closure_0(undefined, closure_2[22]).GuildIconSizes.LARGE], selected);
+        tmp7 = isUnavailable(guild, guildId(drawerOpen[22]).ImageSizes[guildId(undefined, drawerOpen[22]).GuildIconSizes.LARGE], selected);
       }
     }
     obj.asset = tmp7;
     return obj;
-  }, items3, importDefault(dependencyMap[23]));
-  const guildName = stateFromStores.guildName;
-  closure_9 = guildName;
+  }, items3, token(drawerOpen[23]));
+  guildName = stateFromStores.guildName;
   ({ asset, icon } = stateFromStores);
-  const tmp9 = importDefault(dependencyMap[24])(guildId, mentionCount, stateFromStoresObject.isMentionLowImportance);
-  const mediaState = tmp9.mediaState;
-  closure_10 = mediaState;
+  const tmp9 = token(drawerOpen[24])(guildId, mentionCount, stateFromStoresObject.isMentionLowImportance);
+  mediaState = tmp9.mediaState;
   const items4 = [guildId, token, isLurking, isUnavailable, drawerOpen];
   ({ badgeTopRight, badgeBottomRight, cutouts } = tmp9);
   const items5 = [guildName, mentionCount, unread, mediaState];
-  const memo = React.useMemo(() => {
-    const obj = {
+  const memo = importAllResult.useMemo(() => {
+    let obj = {
       onPress() {
-        if (null != store.getGuild(callback)) {
-          if (!closure_5) {
-            const guildFolders = store2.getGuildFolders();
+        if (null != guildName.getGuild(outer1_0)) {
+          if (!outer1_5) {
+            const guildFolders = isDragTarget.getGuildFolders();
             const findIndexResult = guildFolders.findIndex((guildIds) => {
               guildIds = guildIds.guildIds;
-              return guildIds.includes(closure_0);
+              return guildIds.includes(outer2_0);
             });
             if (findIndexResult > -1) {
-              let obj = { guild_id: callback, index: findIndexResult };
-              callback2(closure_2[27]).track(constants.GUILD_CLICKED, obj);
-              if (closure_2) {
-                let obj1 = callback2(closure_2[27]);
-                obj = { guild_id: callback, index: findIndexResult, active_hook: ref.current };
-                obj1.track(constants.HOME_DRAWER_GUILD_CLICKED, obj);
+              let obj = { guild_id: outer1_0, index: findIndexResult };
+              token(drawerOpen[27]).track(sharedValue.GUILD_CLICKED, obj);
+              if (outer1_2) {
+                let obj1 = token(drawerOpen[27]);
+                obj = { guild_id: outer1_0, index: findIndexResult, active_hook: outer1_3.current };
+                obj1.track(sharedValue.HOME_DRAWER_GUILD_CLICKED, obj);
               }
-              const obj7 = callback2(closure_2[27]);
+              const obj7 = token(drawerOpen[27]);
             }
-            if (closure_8) {
-              const result = callback(closure_2[28]).trackGuildIconClicked(callback);
-              const obj4 = callback(closure_2[28]);
+            if (outer1_8) {
+              const result = guildId(drawerOpen[28]).trackGuildIconClicked(outer1_0);
+              const obj4 = guildId(drawerOpen[28]);
             }
-            callback2(closure_2[29])(callback);
+            token(drawerOpen[29])(outer1_0);
           }
         }
         obj1 = {};
-        const intl = callback(closure_2[26]).intl;
-        obj1.title = intl.string(callback(closure_2[26]).t.R0RpRX);
-        const intl2 = callback(closure_2[26]).intl;
-        obj1.body = intl2.string(callback(closure_2[26]).t.m9gRVN);
-        return callback2(closure_2[25]).show(obj1);
+        const intl = guildId(drawerOpen[26]).intl;
+        obj1.title = intl.string(guildId(drawerOpen[26]).t.R0RpRX);
+        const intl2 = guildId(drawerOpen[26]).intl;
+        obj1.body = intl2.string(guildId(drawerOpen[26]).t.m9gRVN);
+        return token(drawerOpen[25]).show(obj1);
       }
     };
     let fn;
     if (isLurking) {
       fn = (nativeEvent) => {
-        const guild = store.getGuild(tmp4Result);
+        const guild = guildName.getGuild(outer1_0);
         if (null != guild) {
-          let obj = tmp4Result(closure_2[30]);
+          let obj = guildId(drawerOpen[30]);
           if (!obj.getIsScreenReaderEnabled()) {
-            const tmp4Result = callback2(closure_2[31])(tmp4Result, store2.getGuildsTree().version);
+            const tmp4Result = token(drawerOpen[31])(outer1_0, isDragTarget.getGuildsTree().version);
+            let closure_0 = tmp4Result;
             if (0 !== tmp4Result.length) {
-              const activeIndex = activeIndex.activeIndex;
-              const result = activeIndex.set(-1);
+              let activeIndex = outer2_18.activeIndex;
+              let result = activeIndex.set(-1);
               obj = {
-                key: tmp4Result,
+                key: outer1_0,
                 title: guild.name,
                 items: tmp4Result,
-                x: 12 + callback2 + 12,
-                y: nativeEvent.nativeEvent.pageY - callback2 / 2,
+                x: 12 + outer1_1 + 12,
+                y: nativeEvent.nativeEvent.pageY - outer1_1 / 2,
                 positionX: "left",
                 positionY: "below",
-                width: callback2,
-                height: callback2,
-                state: activeIndex,
+                width: outer1_1,
+                height: outer1_1,
+                state: outer2_18,
                 dividerIndexes: [],
                 keyboardShouldPersistTaps: "never",
                 requestClose(arg0) {
                         if (!arg0) {
-                          const activeIndex = closure_18.activeIndex;
-                          if (null != tmp4Result[activeIndex.get(activeIndex)]) {
+                          const activeIndex = outer3_18.activeIndex;
+                          const obj = tmp4Result[activeIndex.get(activeIndex)];
+                          if (null != obj) {
                             obj.action();
                           }
                         }
-                        const activeIndex2 = closure_18.activeIndex;
+                        const activeIndex2 = outer3_18.activeIndex;
                         const result = activeIndex2.set(-1);
-                        tmp4Result(closure_2[32]).hideContextMenu();
+                        guildId(drawerOpen[32]).hideContextMenu();
                       },
                 onClose() {
 
                       }
               };
-              tmp4Result(closure_2[32]).showContextMenu(obj);
-              const obj2 = tmp4Result(closure_2[32]);
+              guildId(drawerOpen[32]).showContextMenu(obj);
+              const obj2 = guildId(drawerOpen[32]);
             }
-            const tmp4 = callback2(closure_2[31]);
+            const tmp4 = token(drawerOpen[31]);
           }
         }
       };
@@ -211,12 +211,12 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
     obj.onLongPress = fn;
     return obj;
   }, items4);
-  const memo1 = React.useMemo(() => {
+  const memo1 = importAllResult.useMemo(() => {
     if (null != mentionCount) {
       if (mentionCount > 0) {
         const intl3 = guildId(drawerOpen[26]).intl;
         let obj = { guildName, mentions: mentionCount };
-        let formatToPlainStringResult = intl3.formatToPlainString(guildId(drawerOpen[26]).t./uzRss, obj);
+        let formatToPlainStringResult = intl3.formatToPlainString(guildId(drawerOpen[26]).t["/uzRss"], obj);
       }
       const items = [];
       if (mediaState.activeEvent) {
@@ -257,31 +257,27 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
     } else {
       const intl = guildId(drawerOpen[26]).intl;
       obj = { guildName, mentions: mentionCount };
-      formatToPlainStringResult = intl.formatToPlainString(guildId(drawerOpen[26]).t./uzRss, obj);
+      formatToPlainStringResult = intl.formatToPlainString(guildId(drawerOpen[26]).t["/uzRss"], obj);
     }
   }, items5);
-  const tmp12 = importDefault(dependencyMap[33])(guildId, icon, asset);
-  const tmp13 = useItemDragState(guildId, flag);
-  const isDragTarget = tmp13.isDragTarget;
-  closure_11 = isDragTarget;
-  const dragDropInProgress = tmp13.dragDropInProgress;
-  useItemDragState = dragDropInProgress;
+  const tmp12 = token(drawerOpen[33])(guildId, icon, asset);
+  const tmp13 = dragDropInProgress(guildId, flag);
+  isDragTarget = tmp13.isDragTarget;
+  dragDropInProgress = tmp13.dragDropInProgress;
   ({ dragState, overState, itemSize } = tmp13);
-  const guildsBarAnimatedWrapperStyles = obj1.useGuildsBarAnimatedWrapperStyles({ 1365399211: null, 996494938: null });
-  const items6 = [closure_11];
-  const stateFromStores1 = arg1(dependencyMap[21]).useStateFromStores(items6, () => isDragTarget.getGuildsTree().version);
-  TRANSITION_PHYSICS = stateFromStores1;
+  const guildsBarAnimatedWrapperStyles = obj1.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
+  const items6 = [isDragTarget];
+  stateFromStores1 = guildId(drawerOpen[21]).useStateFromStores(items6, () => isDragTarget.getGuildsTree().version);
   const items7 = [guildId, stateFromStores1];
-  const memo2 = React.useMemo(() => {
-    const arr = token(drawerOpen[31])(guildId, stateFromStores1);
-    const items = [...arr.map((label) => ({ name: label.label, label: label.label, action: label.action })), ...token(drawerOpen[34])(guildId, stateFromStores1).map((name) => ({ name: name.name, label: name.label, action: name.action }))];
-    const guildId = items;
-    const arr2 = token(drawerOpen[34])(guildId, stateFromStores1);
+  const memo2 = importAllResult.useMemo(() => {
+    const arr = token(drawerOpen[31])(items, stateFromStores1);
+    items = [...arr.map((label) => ({ name: label.label, label: label.label, action: label.action })), ...token(drawerOpen[34])(items, stateFromStores1).map((name) => ({ name: name.name, label: name.label, action: name.action }))];
+    const arr2 = token(drawerOpen[34])(items, stateFromStores1);
     return {
       accessibilityActions: items.map((name) => ({ name: name.name, label: name.label })),
       onAccessibilityAction(arg0) {
         const items = arg0;
-        const found = items.find((name) => name.name === name.nativeEvent.actionName);
+        const found = items.find((name) => name.name === nativeEvent.nativeEvent.actionName);
         if (!tmp) {
           found.action();
         }
@@ -289,9 +285,8 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
     };
   }, items7);
   ({ accessibilityActions, onAccessibilityAction } = memo2);
-  const obj6 = arg1(dependencyMap[21]);
-  const sharedValue = arg1(dependencyMap[12]).useSharedValue(guildId);
-  AnalyticEvents = sharedValue;
+  const obj6 = guildId(drawerOpen[21]);
+  sharedValue = guildId(drawerOpen[12]).useSharedValue(guildId);
   class R {
     constructor(arg0) {
       value = dragDropInProgress.get();
@@ -314,24 +309,24 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
       obj = {};
       if (value) {
         tmp8 = guildId;
-        tmp9 = closure_2;
+        tmp9 = c2;
         num = 35;
-        obj3 = guildId(closure_2[35]);
-        tmp10 = f111082;
+        obj3 = guildId(c2[35]);
+        tmp10 = f113246;
         str = "animate-always";
-        targetOriginY = obj3.withSpring(guildId.targetOriginY, f111082, "animate-always");
+        targetOriginY = obj3.withSpring(guildId.targetOriginY, f113246, "animate-always");
       } else {
         targetOriginY = guildId.targetOriginY;
       }
       obj.originY = targetOriginY;
       if (value) {
         tmp11 = guildId;
-        tmp12 = closure_2;
+        tmp12 = c2;
         num2 = 35;
-        obj4 = guildId(closure_2[35]);
-        tmp13 = f111082;
+        obj4 = guildId(c2[35]);
+        tmp13 = f113246;
         str2 = "animate-always";
-        targetHeight = obj4.withSpring(guildId.targetHeight, f111082, "animate-always");
+        targetHeight = obj4.withSpring(guildId.targetHeight, f113246, "animate-always");
       } else {
         targetHeight = guildId.targetHeight;
       }
@@ -341,15 +336,15 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
       return obj;
     }
   }
-  obj = { dragDropInProgress, sharedId: sharedValue, guildId, isDragTarget, withSpring: arg1(dependencyMap[35]).withSpring, TRANSITION_PHYSICS };
+  obj = { dragDropInProgress, sharedId: sharedValue, guildId, isDragTarget, withSpring: guildId(drawerOpen[35]).withSpring, TRANSITION_PHYSICS: stateFromStores1 };
   R.__closure = obj;
   R.__workletHash = 14096669603718;
   R.__initData = closure_20;
   const items8 = [guildId, sharedValue, isDragTarget, dragDropInProgress];
-  const callback1 = React.useCallback(R, items8);
+  const callback1 = importAllResult.useCallback(R, items8);
   obj = { id: guildId, draggedItemSize: itemSize, accessibilityActions, onAccessibilityAction };
   let tmp20;
-  const obj7 = arg1(dependencyMap[12]);
+  let obj7 = guildId(drawerOpen[12]);
   const tmp18 = callback2;
   if (!isDragTarget) {
     tmp20 = cutouts;
@@ -380,24 +375,24 @@ const memoResult = importAllResult.memo(function GuildsBarGuild(guildId) {
   let tmp23;
   if (!flag2) {
     obj1 = { guildId, onActiveHookChange: callback };
-    tmp23 = callback2(importDefault(dependencyMap[20]), obj1);
+    tmp23 = callback2(token(drawerOpen[20]), obj1);
   }
   obj.expandedChildren = tmp23;
   if (isUnavailable) {
-    obj2 = { source: importDefault(dependencyMap[37]), style: tmp2.guildIcon };
-    let tmp33 = callback2(importDefault(dependencyMap[36]), obj2);
-    const tmp40 = importDefault(dependencyMap[36]);
+    obj2 = { source: token(drawerOpen[37]), style: tmp2.guildIcon };
+    let tmp33 = callback2(token(drawerOpen[36]), obj2);
+    const tmp40 = token(drawerOpen[36]);
   } else if (null != tmp12) {
     obj3 = { source: tmp12, style: tmp2.guildIcon };
-    tmp33 = callback2(importDefault(dependencyMap[36]), obj3);
+    tmp33 = callback2(token(drawerOpen[36]), obj3);
   } else {
-    obj4 = { value: guildName, selected, animate: selected, size: arg1(dependencyMap[22]).GuildIconSizes.LARGE };
-    tmp33 = callback2(importDefault(dependencyMap[22]), obj4);
-    const tmp31 = importDefault(dependencyMap[22]);
+    obj4 = { value: guildName, selected, animate: selected, size: guildId(drawerOpen[22]).GuildIconSizes.LARGE };
+    tmp33 = callback2(token(drawerOpen[22]), obj4);
+    const tmp31 = token(drawerOpen[22]);
   }
   obj.children = tmp33;
-  return tmp18(importDefault(dependencyMap[17]), obj);
+  return tmp18(token(drawerOpen[17]), obj);
 });
-const result = arg1(dependencyMap[38]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuild.tsx");
+let result = require("isGuildOwner").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuild.tsx");
 
 export default memoResult;

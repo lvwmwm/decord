@@ -1,53 +1,54 @@
-// Module ID: 10972
-// Function ID: 85416
+// Module ID: 10982
+// Function ID: 85466
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1917, 653, 566, 686, 2]
 
-// Module 10972 (_isNativeReflectConstruct)
+// Module 10982 (_isNativeReflectConstruct)
+import ME from "ME";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FormStates } from "ME";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let ME = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return ME;
   }
   const result = _isNativeReflectConstruct();
 }
 function handleStopEditingRoles() {
-  let closure_7 = null;
-  let closure_8 = false;
-  let closure_9 = null;
-  let closure_10 = null;
-  let closure_11 = null;
+  let c7 = null;
+  let c8 = false;
+  let c9 = null;
+  let c10 = null;
+  let c11 = null;
 }
 function handleChangeNicknameSuccess() {
-  let closure_9 = null;
+  let c9 = null;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-const FormStates = arg1(dependencyMap[6]).FormStates;
-let closure_7 = null;
-let closure_8 = false;
-let closure_9 = null;
-let closure_10 = null;
-let closure_11 = null;
-let tmp2 = (Store) => {
+let c7 = null;
+let c8 = false;
+let c9 = null;
+let c10 = null;
+let c11 = null;
+let tmp2 = ((Store) => {
   class GuildSettingsModalMembersStore {
     constructor() {
       self = this;
       tmp = GuildSettingsModalMembersStore(this, GuildSettingsModalMembersStore);
-      obj = closure_3(GuildSettingsModalMembersStore);
-      tmp2 = closure_2;
-      if (closure_12()) {
+      obj = outer1_3(GuildSettingsModalMembersStore);
+      tmp2 = outer1_2;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -56,60 +57,58 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GuildSettingsModalMembersStore;
   callback2(GuildSettingsModalMembersStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_5);
+      this.waitFor(outer1_5);
     }
   };
   const items = [obj, , , , , ];
   obj = {
     key: "isSubmitting",
     get() {
-      return closure_7 === constants.SUBMITTING;
+      return outer1_7 === outer1_6.SUBMITTING;
     }
   };
   items[1] = obj;
   obj = {
     key: "isEditing",
     get() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "roles",
     get() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[4] = {
     key: "memberId",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[5] = {
     key: "nicknameError",
     get() {
-      return closure_9;
+      return outer1_9;
     }
   };
   return callback(GuildSettingsModalMembersStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "GuildSettingsModalMembersStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   GUILD_SETTINGS_MODAL_MEMBERS_START_EDITING: function handleStartEditingRoles(userId) {
     userId = userId.userId;
-    const member = member.getMember(userId.guildId, userId);
+    member = member.getMember(userId.guildId, userId);
     if (null == member) {
       return false;
     } else {
       const OPEN = FormStates.OPEN;
-      let closure_8 = true;
-      let closure_10 = userId;
+      let c8 = true;
       const roles = member.roles;
     }
   },
@@ -117,20 +116,16 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
   GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE_COMPLETE: handleStopEditingRoles,
   GUILD_SETTINGS_MODAL_MEMBERS_TOGGLE_ROLE: function handleToggleRole(roleId) {
     roleId = roleId.roleId;
-    let closure_0 = roleId;
-    if (null == closure_11) {
+    if (null == found) {
       return false;
+    } else if (tmp) {
+      const items = [];
+      const arraySpreadResult = HermesBuiltin.arraySpread(arr, 0);
+      items[arraySpreadResult] = roleId;
+      const sum = arraySpreadResult + 1;
+      found = items;
     } else {
-      if (tmp) {
-        const items = [];
-        const arraySpreadResult = HermesBuiltin.arraySpread(arr, 0);
-        items[arraySpreadResult] = roleId;
-        const sum = arraySpreadResult + 1;
-        let found = items;
-      } else {
-        found = arr.filter((arg0) => arg0 !== roleId);
-      }
-      closure_11 = found;
+      found = arr.filter((arg0) => arg0 !== roleId);
     }
   },
   GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE: function handleSaveRoles() {
@@ -142,6 +137,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     error = error.error;
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersStore.tsx");
 
 export default tmp2;

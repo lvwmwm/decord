@@ -1,44 +1,53 @@
-// Module ID: 8995
-// Function ID: 70836
+// Module ID: 9002
+// Function ID: 70877
 // Name: ClearButton
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4660, 1212, 1273, 9003, 44, 2]
 
-// Module 8995 (ClearButton)
+// Module 9002 (ClearButton)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function ClearButton(onPress) {
-  let obj = { style: {}, accessibilityRole: "button" };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[6]).t.VkKicb);
+  let obj = { style: { borderRadius: 20, padding: 8 }, accessibilityRole: "button" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.VkKicb);
   obj.onPress = onPress.onPress;
-  obj.hitSlop = {};
-  obj = { source: importDefault(dependencyMap[8]), style: callback2().closeIcon, size: arg1(dependencyMap[7]).Icon.Sizes.MEDIUM };
-  obj.children = callback(arg1(dependencyMap[7]).Icon, obj);
-  return callback(arg1(dependencyMap[5]).PressableOpacity, obj);
+  obj.hitSlop = { top: 8, bottom: 8, right: 8 };
+  obj = { source: importDefault(9003), style: callback2().closeIcon, size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
+  obj.children = callback(require(1273) /* Button */.Icon, obj);
+  return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ TouchableWithoutFeedback: closure_4, View: closure_5, TouchableOpacity: closure_6 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[2]));
-let obj1 = arg1(dependencyMap[3]);
+({ TouchableWithoutFeedback: closure_4, View: closure_5, TouchableOpacity: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = {};
-obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, marginBottom: true, marginTop: true, justifyContent: true, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.xs };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" };
 obj.container = obj;
 obj.onPress = { flexDirection: "row" };
-obj1 = { flex: 1, color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.input = obj1;
-const tmp3 = arg1(dependencyMap[2]);
-obj.error = { borderColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
-const obj2 = { borderColor: importDefault(dependencyMap[4]).unsafe_rawColors.RED_400 };
-obj.closeIcon = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
-const obj3 = { tintColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.placeholder = { color: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
-let closure_9 = obj1.createStyles(obj);
-const obj4 = { color: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose = { flex: 1, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj.input = _createForOfIteratorHelperLoose;
+obj.error = { borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, paddingLeft: 8, flexShrink: 0 };
+obj.closeIcon = obj3;
+let obj2 = { borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+obj.placeholder = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+const obj4 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
 const forwardRefResult = importAllResult.forwardRef((editable) => {
   let accessibilityHint;
   let accessibilityLabel;
   let accessibilityRole;
+  let dependencyMap;
   let error;
   let forceAccessibleContainer;
+  let importDefault;
   let onChangeText;
   let onPress;
   let renderLeadingComponent;
@@ -46,8 +55,7 @@ const forwardRefResult = importAllResult.forwardRef((editable) => {
   let style;
   let value;
   ({ renderLeadingComponent, renderTrailingComponent, onChangeText } = editable);
-  const arg1 = onChangeText;
-  ({ onFocus: closure_1, onBlur: closure_2, value, onPress } = editable);
+  ({ onFocus: importDefault, onBlur: dependencyMap, value, onPress } = editable);
   let flag = editable.editable;
   ({ style, error, accessibilityRole } = editable);
   if (flag === undefined) {
@@ -59,24 +67,24 @@ const forwardRefResult = importAllResult.forwardRef((editable) => {
   }
   let WITH_CONTENT = editable.clearButtonVisibility;
   if (WITH_CONTENT === undefined) {
-    WITH_CONTENT = arg1(dependencyMap[7]).ClearButtonVisibility.WITH_CONTENT;
+    WITH_CONTENT = onChangeText(1273).ClearButtonVisibility.WITH_CONTENT;
   }
-  let obj = {};
+  let obj = { style: 0, error: 0, renderLeadingComponent: 0, renderTrailingComponent: 0, onChangeText: 0, onFocus: 0, accessibilityRole: 0, onBlur: 0, value: 0, onPress: 0, editable: 0, accessibilityLabel: 0, accessibilityHint: 0, forceAccessibleContainer: 0, clearButtonVisibility: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(editable, obj);
   let ref;
   const tmp5 = callback2();
-  ref = importAllResult.useRef(null);
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ref.current);
+  ref = onPress.useRef(null);
+  const imperativeHandle = onPress.useImperativeHandle(arg1, () => ref.current);
   let flag2 = true;
-  if (arg1(dependencyMap[7]).ClearButtonVisibility.ALWAYS !== WITH_CONTENT) {
-    if (arg1(dependencyMap[7]).ClearButtonVisibility.WITH_CONTENT === WITH_CONTENT) {
+  if (onChangeText(1273).ClearButtonVisibility.ALWAYS !== WITH_CONTENT) {
+    if (onChangeText(1273).ClearButtonVisibility.WITH_CONTENT === WITH_CONTENT) {
       let tmp12 = null != value;
       if (tmp12) {
         tmp12 = "" !== value;
       }
       flag2 = tmp12;
-    } else if (arg1(dependencyMap[7]).ClearButtonVisibility.NEVER === WITH_CONTENT) {
+    } else if (onChangeText(1273).ClearButtonVisibility.NEVER === WITH_CONTENT) {
       flag2 = false;
     }
   }
@@ -84,7 +92,7 @@ const forwardRefResult = importAllResult.forwardRef((editable) => {
   if (tmp14) {
     tmp14 = flag;
   }
-  importDefault(dependencyMap[9])(!tmp14, "Cannot have an editable input w/ onPress handler");
+  importDefault(44)(!tmp14, "Cannot have an editable input w/ onPress handler");
   let items = [tmp5.container, , ];
   error = null;
   if (error) {
@@ -176,7 +184,7 @@ const forwardRefResult = importAllResult.forwardRef((editable) => {
   }
   obj2["importantForAccessibility"] = str4;
   obj2["accessibilityElementsHidden"] = !flag;
-  items1[1] = callback(arg1(dependencyMap[7]).TextInput, obj2);
+  items1[1] = callback(onChangeText(1273).TextInput, obj2);
   let result1;
   if (null != renderTrailingComponent) {
     result1 = renderTrailingComponent();
@@ -200,6 +208,6 @@ const forwardRefResult = importAllResult.forwardRef((editable) => {
   obj.children = closure_8(ref, obj1);
   return callback(null != onPress ? closure_6 : flag, obj);
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/void/Form/native/FreeFormTextInput.tsx");
+let result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FreeFormTextInput.tsx");
 
 export default forwardRefResult;

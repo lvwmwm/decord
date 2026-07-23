@@ -1,16 +1,19 @@
-// Module ID: 5620
-// Function ID: 47978
+// Module ID: 5625
+// Function ID: 48005
 // Name: getOrbPriceFromPrices
-// Dependencies: []
+// Dependencies: [653, 655, 5626, 1212, 5627, 3798, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 5620 (getOrbPriceFromPrices)
-const _module = require(dependencyMap[0]);
-({ CurrencyCodes: closure_2, MarketingURLs: closure_3, PriceSetAssignmentPurchaseTypes: closure_4 } = _module);
-const EXTERNAL_PRODUCT_SKU_IDS = require(dependencyMap[1]).EXTERNAL_PRODUCT_SKU_IDS;
-const ConstraintReasonCode = require(dependencyMap[2]).ConstraintReasonCode;
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutUtils.tsx");
+// Module 5625 (getOrbPriceFromPrices)
+import ME from "ME";
+import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
+import { ConstraintReasonCode } from "ConstraintReasonCode";
+
+let closure_2;
+let closure_3;
+let closure_4;
+({ CurrencyCodes: closure_2, MarketingURLs: closure_3, PriceSetAssignmentPurchaseTypes: closure_4 } = ME);
+const result = require("ConstraintReasonCode").fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutUtils.tsx");
 
 export const getOrbPriceFromPrices = function getOrbPriceFromPrices(prices, memo) {
   if (memo) {
@@ -30,7 +33,7 @@ export const getOrbPriceFromPrices = function getOrbPriceFromPrices(prices, memo
     if (null == substr) {
       substr = [];
     }
-    const found = substr.find((currency) => currency.currency === constants.DISCORD_ORB);
+    const found = substr.find((currency) => currency.currency === outer1_2.DISCORD_ORB);
     let tmp7 = null;
     if (null != found) {
       tmp7 = found;
@@ -40,58 +43,58 @@ export const getOrbPriceFromPrices = function getOrbPriceFromPrices(prices, memo
   tmp3 = prices[closure_4.DEFAULT];
 };
 export const getOrbCheckoutDisclaimerMessage = function getOrbCheckoutDisclaimerMessage(skuId) {
-  const intl = require(dependencyMap[3]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const obj = {};
-  const intl2 = require(dependencyMap[3]).intl;
-  obj.buyButtonLabel = intl2.string(require(dependencyMap[3]).t.zLch/S);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.buyButtonLabel = intl2.string(require(1212) /* getSystemLocale */.t["zLch/S"]);
   ({ PAID_TERMS: obj.paidServiceTermURL, PAID_TERMS_VIRTUAL_GOODS: obj.virtualGoodsURL } = closure_3);
-  const intl3 = require(dependencyMap[3]).intl;
-  let stringResult = intl3.string(require(dependencyMap[3]).t.Sxed/G);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  let stringResult = intl3.string(require(1212) /* getSystemLocale */.t["Sxed/G"]);
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
-    const intl5 = require(dependencyMap[3]).intl;
-    stringResult = intl5.string(require(dependencyMap[3]).t.APcKRo);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl5.string(require(1212) /* getSystemLocale */.t.APcKRo);
   } else if (skuId === EXTERNAL_PRODUCT_SKU_IDS.FRACTIONAL_PREMIUM) {
-    const intl4 = require(dependencyMap[3]).intl;
-    stringResult = intl4.string(require(dependencyMap[3]).t.FhJ74j);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl4.string(require(1212) /* getSystemLocale */.t.FhJ74j);
   }
-  const items = [intl.format(require(dependencyMap[3]).t.5qdUrO, obj), " ", stringResult];
+  const items = [intl.format(require(1212) /* getSystemLocale */.t["5qdUrO"], obj), " ", stringResult];
   return items;
 };
 export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMessage(code) {
   if (null == code) {
     return null;
   } else {
-    if (!(code instanceof require(dependencyMap[4]).OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof require(dependencyMap[4]).OrderProcessingPendingError) {
-        const intl5 = require(dependencyMap[3]).intl;
-        let stringResult = intl5.string(require(dependencyMap[3]).t.2BmwgV);
-      } else if (code.code === require(dependencyMap[5]).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
-        const intl4 = require(dependencyMap[3]).intl;
-        stringResult = intl4.string(require(dependencyMap[3]).t.keFvXM);
-      } else if (code.code === require(dependencyMap[5]).ErrorCodes.ALREADY_PURCHASED) {
-        const intl3 = require(dependencyMap[3]).intl;
-        stringResult = intl3.string(require(dependencyMap[3]).t.m371Mx);
-      } else if (code.code === require(dependencyMap[5]).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
-        const intl2 = require(dependencyMap[3]).intl;
-        stringResult = intl2.string(require(dependencyMap[3]).t.ZHgEG7);
+    if (!(code instanceof require(5627) /* _callSuper */.OrderSigningFailedWithConstraintsError)) {
+      if (code instanceof require(5627) /* _callSuper */.OrderProcessingPendingError) {
+        const intl5 = require(1212) /* getSystemLocale */.intl;
+        let stringResult = intl5.string(require(1212) /* getSystemLocale */.t["2BmwgV"]);
+      } else if (code.code === require(3798) /* _isNativeReflectConstruct */.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+        const intl4 = require(1212) /* getSystemLocale */.intl;
+        stringResult = intl4.string(require(1212) /* getSystemLocale */.t.keFvXM);
+      } else if (code.code === require(3798) /* _isNativeReflectConstruct */.ErrorCodes.ALREADY_PURCHASED) {
+        const intl3 = require(1212) /* getSystemLocale */.intl;
+        stringResult = intl3.string(require(1212) /* getSystemLocale */.t.m371Mx);
+      } else if (code.code === require(3798) /* _isNativeReflectConstruct */.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+        const intl2 = require(1212) /* getSystemLocale */.intl;
+        stringResult = intl2.string(require(1212) /* getSystemLocale */.t.ZHgEG7);
       } else {
-        const intl = require(dependencyMap[3]).intl;
-        stringResult = intl.string(require(dependencyMap[3]).t.fqJZ11);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        stringResult = intl.string(require(1212) /* getSystemLocale */.t.fqJZ11);
       }
     }
     if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === arg1) {
-      const intl9 = require(dependencyMap[3]).intl;
-      let stringResult1 = intl9.string(require(dependencyMap[3]).t.keFvXM);
+      const intl9 = require(1212) /* getSystemLocale */.intl;
+      let stringResult1 = intl9.string(require(1212) /* getSystemLocale */.t.keFvXM);
     } else {
       if (ConstraintReasonCode.SKU_ALREADY_OWNED === arg1) {
-        const intl8 = require(dependencyMap[3]).intl;
-        stringResult1 = intl8.string(require(dependencyMap[3]).t.m371Mx);
+        const intl8 = require(1212) /* getSystemLocale */.intl;
+        stringResult1 = intl8.string(require(1212) /* getSystemLocale */.t.m371Mx);
       } else if (ConstraintReasonCode.BUNDLE_PARTIALLY_OWNED !== arg1) {
-        const intl6 = require(dependencyMap[3]).intl;
-        stringResult1 = intl6.string(require(dependencyMap[3]).t.fqJZ11);
+        const intl6 = require(1212) /* getSystemLocale */.intl;
+        stringResult1 = intl6.string(require(1212) /* getSystemLocale */.t.fqJZ11);
       }
-      const intl7 = require(dependencyMap[3]).intl;
-      stringResult1 = intl7.string(require(dependencyMap[3]).t.v9oC0p);
+      const intl7 = require(1212) /* getSystemLocale */.intl;
+      stringResult1 = intl7.string(require(1212) /* getSystemLocale */.t.v9oC0p);
     }
   }
 };

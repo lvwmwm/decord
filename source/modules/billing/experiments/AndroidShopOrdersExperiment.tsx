@@ -1,14 +1,15 @@
-// Module ID: 8733
-// Function ID: 69087
+// Module ID: 8740
+// Function ID: 69128
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: useAndroidShopOrdersEnabled
 
-// Module 8733 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/billing/experiments/AndroidShopOrdersExperiment.tsx");
+// Module 8740 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-06-android-shop-orders", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/billing/experiments/AndroidShopOrdersExperiment.tsx");
 
 export default apexExperiment;
 export const useAndroidShopOrdersEnabled = function useAndroidShopOrdersEnabled(location) {

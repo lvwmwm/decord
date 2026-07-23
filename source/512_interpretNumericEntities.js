@@ -1,10 +1,10 @@
 // Module ID: 512
 // Function ID: 6566
 // Name: interpretNumericEntities
-// Dependencies: []
+// Dependencies: [513]
 
 // Module 512 (interpretNumericEntities)
-const obj = { decoder: require(dependencyMap[0]).decode };
+let obj = { allowDots: false, allowEmptyArrays: false, allowPrototypes: false, allowSparse: false, arrayLimit: 20, charset: "utf-8", charsetSentinel: false, comma: false, decodeDotInKeys: false, decoder: require("items").decode, delimiter: "&", depth: 5, duplicates: "combine", ignoreQueryPrefix: false, interpretNumericEntities: false, parameterLimit: 1000, parseArrays: true, plainObjects: false, strictDepth: false, strictNullHandling: false, throwOnLimitExceeded: false };
 function interpretNumericEntities(str) {
   return str.replace(/&#(\d+);/g, (arg0, replaced) => String.fromCharCode(parseInt(replaced, 10)));
 }
@@ -33,7 +33,7 @@ function parseArrayValue(arr, comma, arg2) {
   }
   return arr;
 }
-function parseQueryStringKeys(str, arr, allowDots) {
+function parseQueryStringKeys(str, arr, allowDots, arg3) {
   if (str) {
     let replaced = str;
     if (allowDots.allowDots) {
@@ -194,8 +194,8 @@ function parseQueryStringKeys(str, arr, allowDots) {
         }
       }
       if (!allowDots.allowEmptyArrays) {
-        let combineResult = require(dependencyMap[0]).combine([], tmp18);
-        const obj5 = require(dependencyMap[0]);
+        let combineResult = require(513) /* items */.combine([], tmp18);
+        const obj5 = require(513) /* items */;
       }
       combineResult = [];
     }
@@ -264,7 +264,7 @@ export default (arg0, allowEmptyArrays) => {
         }
       }
     }
-    let obj = {};
+    obj = {};
     if (undefined === allowEmptyArrays.allowDots) {
       let allowDots = true === allowEmptyArrays.decodeDotInKeys;
       if (!allowDots) {
@@ -370,7 +370,7 @@ export default (arg0, allowEmptyArrays) => {
         let tmp = obj;
       }
       depth = +allowEmptyArrays.depth;
-      const obj2 = require(dependencyMap[0]);
+      obj2 = require(513) /* items */;
     }
     delimiter = allowEmptyArrays.delimiter;
   } else {
@@ -380,7 +380,8 @@ export default (arg0, allowEmptyArrays) => {
     if (null != arg0) {
       let tmp24 = arg0;
       if ("string" === typeof arg0) {
-        tmp24 = function parseQueryStringValues(str, ignoreQueryPrefix) {
+        tmp24 = (function parseQueryStringValues(str, ignoreQueryPrefix) {
+          let closure_0 = ignoreQueryPrefix;
           let obj = Object.create(null);
           if (ignoreQueryPrefix.ignoreQueryPrefix) {
             str = str.replace(/^\?/, "");
@@ -409,7 +410,7 @@ export default (arg0, allowEmptyArrays) => {
             }
           }
           const charset = ignoreQueryPrefix.charset;
-          let closure_1 = charset;
+          let c1 = charset;
           let num2 = -1;
           let tmp4 = charset;
           if (ignoreQueryPrefix.charsetSentinel) {
@@ -424,13 +425,13 @@ export default (arg0, allowEmptyArrays) => {
                 tmp4 = str10;
               }
               if ("utf8=%E2%9C%93" === parts[num4]) {
-                closure_1 = "utf-8";
+                c1 = "utf-8";
                 str10 = "utf-8";
               } else if ("utf8=%26%2310003%3B" === parts[num4]) {
-                closure_1 = "iso-8859-1";
+                c1 = "iso-8859-1";
                 str10 = "iso-8859-1";
               }
-              const arr2 = parts[num4];
+              arr2 = parts[num4];
             }
           }
           for (let num6 = 0; num6 < parts.length; num6 = num6 + 1) {
@@ -443,35 +444,35 @@ export default (arg0, allowEmptyArrays) => {
                 index1 = index + 1;
               }
               if (-1 === index1) {
-                let tmp13 = closure_4;
+                let tmp13 = outer1_4;
                 let tmp14 = ignoreQueryPrefix;
                 let tmp15 = arr4;
                 let tmp16 = tmp4;
                 let str11 = "key";
                 let tmp18 = "";
-                let decoderResult = ignoreQueryPrefix.decoder(arr4, closure_4.decoder, tmp4, "key");
+                let decoderResult = ignoreQueryPrefix.decoder(arr4, outer1_4.decoder, tmp4, "key");
                 if (ignoreQueryPrefix.strictNullHandling) {
                   tmp18 = null;
                 }
                 let maybeMapResult = tmp18;
                 let tmp12 = decoderResult;
               } else {
-                let tmp54 = closure_4;
+                let tmp54 = outer1_4;
                 let tmp55 = ignoreQueryPrefix;
                 let tmp56 = tmp4;
                 let str16 = "key";
-                let decoderResult1 = ignoreQueryPrefix.decoder(arr4.slice(0, index1), closure_4.decoder, tmp4, "key");
-                let tmp58 = ignoreQueryPrefix;
-                let tmp59 = closure_1;
-                let obj2 = ignoreQueryPrefix(closure_1[0]);
-                let tmp60 = closure_6;
-                let tmp62 = callback2;
+                let decoderResult1 = ignoreQueryPrefix.decoder(arr4.slice(0, index1), outer1_4.decoder, tmp4, "key");
+                let tmp58 = outer1_0;
+                let tmp59 = outer1_1;
+                let obj2 = outer1_0(outer1_1[0]);
+                let tmp60 = outer1_6;
+                let tmp62 = outer1_3;
                 let substr = arr4.slice(index1 + 1);
                 let num7 = 0;
-                if (callback2(obj[decoderResult1])) {
+                if (outer1_3(obj[decoderResult1])) {
                   num7 = obj[decoderResult1].length;
                 }
-                maybeMapResult = obj2.maybeMap(tmp60(substr, ignoreQueryPrefix, num7), (arg0) => arg1.decoder(arg0, decoder.decoder, closure_1, "value"));
+                maybeMapResult = obj2.maybeMap(tmp60(substr, ignoreQueryPrefix, num7), (arg0) => ignoreQueryPrefix.decoder(arg0, outer2_4.decoder, c1, "value"));
                 tmp12 = decoderResult1;
               }
               let interpretNumericEntities = maybeMapResult;
@@ -483,27 +484,27 @@ export default (arg0, allowEmptyArrays) => {
               }
               let tmp19 = maybeMapResult;
               if (interpretNumericEntities) {
-                let tmp20 = callback3;
+                let tmp20 = outer1_5;
                 let _String = String;
-                tmp19 = callback3(String(maybeMapResult));
+                tmp19 = outer1_5(String(maybeMapResult));
               }
               let tmp21 = tmp19;
               if (arr4.indexOf("[]=") > -1) {
-                let tmp22 = callback2;
+                let tmp22 = outer1_3;
                 let tmp23 = tmp19;
-                if (callback2(tmp19)) {
+                if (outer1_3(tmp19)) {
                   let items = [tmp19];
                   tmp23 = items;
                 }
                 tmp21 = tmp23;
               }
-              let tmp24 = callback;
-              let callResult = callback.call(obj, tmp12);
+              let tmp24 = outer1_2;
+              let callResult = outer1_2.call(obj, tmp12);
               if (callResult) {
                 if ("combine" === ignoreQueryPrefix.duplicates) {
-                  let tmp39 = ignoreQueryPrefix;
-                  let tmp40 = closure_1;
-                  obj = ignoreQueryPrefix(closure_1[0]);
+                  let tmp39 = outer1_0;
+                  let tmp40 = outer1_1;
+                  obj = outer1_0(outer1_1[0]);
                   obj[tmp12] = obj.combine(obj[tmp12], tmp21);
                   let tmp41 = tmp12;
                   let tmp42 = tmp21;
@@ -535,7 +536,7 @@ export default (arg0, allowEmptyArrays) => {
             }
           }
           return obj;
-        }(arg0, tmp);
+        })(arg0, tmp);
       }
       const tmp25 = tmp.plainObjects ? Object.create(null) : {};
       const _Object = Object;
@@ -546,14 +547,14 @@ export default (arg0, allowEmptyArrays) => {
       if (0 < keys.length) {
         do {
           let tmp29 = keys[num3];
-          let tmp30 = closure_7;
+          let tmp30 = parseQueryStringKeys;
           let tmp31 = tmp29;
           let tmp32 = tmp;
           let tmp33 = tmp72;
-          let tmp35 = closure_0;
-          let tmp36 = closure_1;
-          let tmp34 = closure_7(tmp29, tmp24[tmp29], tmp, tmp72);
-          let obj3 = closure_0(closure_1[0]);
+          let tmp35 = require;
+          let tmp36 = dependencyMap;
+          let tmp34 = parseQueryStringKeys(tmp29, tmp24[tmp29], tmp, tmp72);
+          let obj3 = require(513) /* items */;
           mergeResult = obj3.merge(mergeResult, tmp34, tmp);
           num3 = num3 + 1;
           tmp28 = mergeResult;
@@ -562,8 +563,8 @@ export default (arg0, allowEmptyArrays) => {
       }
       let compactResult = tmp28;
       if (true !== tmp.allowSparse) {
-        compactResult = require(dependencyMap[0]).compact(tmp28);
-        const obj4 = require(dependencyMap[0]);
+        compactResult = require(513) /* items */.compact(tmp28);
+        const obj4 = require(513) /* items */;
       }
       return compactResult;
     }

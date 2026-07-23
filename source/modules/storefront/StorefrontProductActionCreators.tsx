@@ -1,14 +1,20 @@
-// Module ID: 13858
-// Function ID: 104799
+// Module ID: 13972
+// Function ID: 106955
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: []
+// Dependencies: [5, 1921, 13968, 6795, 653, 664, 686, 4369, 4030, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 13858 (_maybeFetchProductsWithSkus)
+// Module 13972 (_maybeFetchProductsWithSkus)
+import set from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import StorefrontProductRecord from "StorefrontProductRecord";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _maybeFetchProductsWithSkus() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _maybeFetchProductsWithSkus = obj;
   return obj(...arguments);
 }
 function shouldFetchProductBySku(arg0) {
@@ -20,7 +26,7 @@ function shouldFetchProductBySku(arg0) {
       const fetchedAtForSku = store.getFetchedAtForSku(arg0);
       if (null != fetchedAtForSku) {
         const _Date = Date;
-        return Date.now() - fetchedAtForSku > "error" === fetchStateForSku ? closure_9 : closure_8;
+        return Date.now() - fetchedAtForSku > ("error" === fetchStateForSku ? closure_9 : closure_8);
       } else {
         return true;
       }
@@ -32,17 +38,11 @@ function shouldFetchProductBySku(arg0) {
 function _maybeFetchProductsBySkuIds() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _maybeFetchProductsBySkuIds = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const Endpoints = arg1(dependencyMap[4]).Endpoints;
-let closure_8 = 12 * importDefault(dependencyMap[5]).Millis.HOUR;
-let closure_9 = 10 * importDefault(dependencyMap[5]).Millis.MINUTE;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/storefront/StorefrontProductActionCreators.tsx");
+let closure_8 = 12 * require("set").Millis.HOUR;
+let closure_9 = 10 * require("set").Millis.MINUTE;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/storefront/StorefrontProductActionCreators.tsx");
 
 export const maybeFetchProductsWithSkus = function maybeFetchProductsWithSkus() {
   return _maybeFetchProductsWithSkus(...arguments);

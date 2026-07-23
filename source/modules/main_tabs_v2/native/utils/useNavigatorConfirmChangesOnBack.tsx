@@ -1,24 +1,24 @@
-// Module ID: 9102
-// Function ID: 71332
+// Module ID: 9109
+// Function ID: 71373
 // Name: useNavigatorConfirmChangesOnBack
-// Dependencies: []
+// Dependencies: [31, 27, 653, 9110, 9111, 2]
 // Exports: default
 
-// Module 9102 (useNavigatorConfirmChangesOnBack)
-let closure_2 = importAll(dependencyMap[0]);
-const Keyboard = arg1(dependencyMap[1]).Keyboard;
-const NOOP = arg1(dependencyMap[2]).NOOP;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/utils/useNavigatorConfirmChangesOnBack.tsx");
+// Module 9109 (useNavigatorConfirmChangesOnBack)
+import result from "result";
+import { Keyboard } from "get ActivityIndicator";
+import { NOOP } from "ME";
+
+const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/utils/useNavigatorConfirmChangesOnBack.tsx");
 
 export default function useNavigatorConfirmChangesOnBack() {
   const ref = React.useRef(null);
-  const importDefault = ref;
-  let closure_1 = React.useRef(false);
-  let obj = { onGoBack: importDefault(closure_1[3])(obj).onGoBack, ref };
+  const dependencyMap = React.useRef(false);
+  obj = { onGoBack: ref(9110)(obj).onGoBack, ref };
   obj = {
     onBeforeGoBack(preventable) {
       if (preventable.preventable) {
-        let current = ref.current;
+        let current = ref2.current;
         if (!current) {
           const current2 = ref.current;
           let hasUnsavedChangesResult;
@@ -29,16 +29,16 @@ export default function useNavigatorConfirmChangesOnBack() {
         }
         if (!current) {
           preventable.preventDefault();
-          closure_3.dismiss();
+          outer1_3.dismiss();
           const obj = {
             hasEdits: true,
-            resetPending: closure_4,
+            resetPending: outer1_4,
             onConfirm() {
-                  closure_1.current = true;
-                  arg0.goBack();
+                  outer1_1.current = true;
+                  preventable.goBack();
                 }
           };
-          ref(ref[4])(obj);
+          ref(ref2[4])(obj);
         }
       }
     }

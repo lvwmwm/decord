@@ -1,9 +1,17 @@
 // Module ID: 1313
-// Function ID: 15275
+// Function ID: 15276
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1284, 2]
 
 // Module 1313 (_callSuper)
+import _slicedToArray from "_slicedToArray";
+import module_1284 from "module_1284";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -15,7 +23,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_5(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -26,24 +34,17 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let tmp2 = (MessageType) => {
+let tmp2 = ((MessageType) => {
   class DoubleValue$Type {
     constructor() {
-      tmp = closure_3(this, DoubleValue$Type);
+      tmp = outer1_3(this, DoubleValue$Type);
       items = [];
-      items[0] = {};
-      items1 = [];
+      items[0] = { no: 1, name: "value", kind: "scalar", T: 1 };
+      items1 = ["google.protobuf.DoubleValue"];
       items1[1] = items;
-      return closure_8(this, DoubleValue$Type, items1);
+      return outer1_8(this, DoubleValue$Type, items1);
     }
   }
-  const arg1 = DoubleValue$Type;
   callback3(DoubleValue$Type, MessageType);
   let obj = {
     key: "internalJsonWrite",
@@ -52,7 +53,7 @@ let tmp2 = (MessageType) => {
       return refJsonWriter.scalar(2, value.value, "value", false, true);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "internalJsonRead",
     value(arg0, arg1, arg2) {
@@ -73,10 +74,10 @@ let tmp2 = (MessageType) => {
       let obj = { value: 0 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, DoubleValue$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, DoubleValue$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = DoubleValue$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = DoubleValue$Type(closure_1[6]);
+        const result = DoubleValue$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = DoubleValue$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -94,8 +95,8 @@ let tmp2 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.value = pos.double();
@@ -127,8 +128,8 @@ let tmp2 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = DoubleValue$Type;
-                let tmp13 = closure_1;
-                onRead = DoubleValue$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = DoubleValue$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -140,8 +141,8 @@ let tmp2 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -150,13 +151,13 @@ let tmp2 = (MessageType) => {
     key: "internalBinaryWrite",
     value(value, tag, writeUnknownFields) {
       if (0 !== value.value) {
-        tag.tag(1, DoubleValue$Type(closure_1[6]).WireType.Bit64).double(value.value);
-        const tagResult = tag.tag(1, DoubleValue$Type(closure_1[6]).WireType.Bit64);
+        tag.tag(1, DoubleValue$Type(outer1_1[6]).WireType.Bit64).double(value.value);
+        const tagResult = tag.tag(1, DoubleValue$Type(outer1_1[6]).WireType.Bit64);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = DoubleValue$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = DoubleValue$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, value, tag);
@@ -165,20 +166,19 @@ let tmp2 = (MessageType) => {
     }
   };
   return callback(DoubleValue$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp2 = new tmp2();
-let tmp4 = (MessageType) => {
+let tmp4 = ((MessageType) => {
   class FloatValue$Type {
     constructor() {
-      tmp = closure_3(this, FloatValue$Type);
+      tmp = outer1_3(this, FloatValue$Type);
       items = [];
-      items[0] = {};
-      items1 = ["constructor"];
+      items[0] = { no: 1, name: "value", kind: "scalar", T: 2 };
+      items1 = ["google.protobuf.FloatValue"];
       items1[1] = items;
-      return closure_8(this, FloatValue$Type, items1);
+      return outer1_8(this, FloatValue$Type, items1);
     }
   }
-  const arg1 = FloatValue$Type;
   callback3(FloatValue$Type, MessageType);
   let obj = {
     key: "internalJsonWrite",
@@ -187,7 +187,7 @@ let tmp4 = (MessageType) => {
       return refJsonWriter.scalar(1, value.value, "value", false, true);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "internalJsonRead",
     value(arg0, arg1, arg2) {
@@ -208,10 +208,10 @@ let tmp4 = (MessageType) => {
       let obj = { value: 0 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, FloatValue$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, FloatValue$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = FloatValue$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = FloatValue$Type(closure_1[6]);
+        const result = FloatValue$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = FloatValue$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -229,8 +229,8 @@ let tmp4 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.value = pos.float();
@@ -262,8 +262,8 @@ let tmp4 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = FloatValue$Type;
-                let tmp13 = closure_1;
-                onRead = FloatValue$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = FloatValue$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -275,8 +275,8 @@ let tmp4 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -285,13 +285,13 @@ let tmp4 = (MessageType) => {
     key: "internalBinaryWrite",
     value(value, tag, writeUnknownFields) {
       if (0 !== value.value) {
-        tag.tag(1, FloatValue$Type(closure_1[6]).WireType.Bit32).float(value.value);
-        const tagResult = tag.tag(1, FloatValue$Type(closure_1[6]).WireType.Bit32);
+        tag.tag(1, FloatValue$Type(outer1_1[6]).WireType.Bit32).float(value.value);
+        const tagResult = tag.tag(1, FloatValue$Type(outer1_1[6]).WireType.Bit32);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = FloatValue$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = FloatValue$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, value, tag);
@@ -300,29 +300,28 @@ let tmp4 = (MessageType) => {
     }
   };
   return callback(FloatValue$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp4 = new tmp4();
-let tmp6 = (MessageType) => {
+let tmp6 = ((MessageType) => {
   class Int64Value$Type {
     constructor() {
-      tmp = closure_3(this, Int64Value$Type);
+      tmp = outer1_3(this, Int64Value$Type);
       items = [];
-      items[0] = {};
-      items1 = [];
+      items[0] = { no: 1, name: "value", kind: "scalar", T: 3 };
+      items1 = ["google.protobuf.Int64Value"];
       items1[1] = items;
-      return closure_8(this, Int64Value$Type, items1);
+      return outer1_8(this, Int64Value$Type, items1);
     }
   }
-  const arg1 = Int64Value$Type;
   callback3(Int64Value$Type, MessageType);
   let obj = {
     key: "internalJsonWrite",
     value(value) {
       const refJsonWriter = this.refJsonWriter;
-      return refJsonWriter.scalar(Int64Value$Type(closure_1[6]).ScalarType.INT64, value.value, "value", false, true);
+      return refJsonWriter.scalar(Int64Value$Type(outer1_1[6]).ScalarType.INT64, value.value, "value", false, true);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "internalJsonRead",
     value(arg0, arg1, arg2) {
@@ -332,7 +331,7 @@ let tmp6 = (MessageType) => {
         obj = self.create();
       }
       const refJsonReader = self.refJsonReader;
-      obj.value = refJsonReader.scalar(arg0, Int64Value$Type(closure_1[6]).ScalarType.INT64, Int64Value$Type(closure_1[6]).LongType.STRING, "value");
+      obj.value = refJsonReader.scalar(arg0, Int64Value$Type(outer1_1[6]).ScalarType.INT64, Int64Value$Type(outer1_1[6]).LongType.STRING, "value");
       return obj;
     }
   };
@@ -343,10 +342,10 @@ let tmp6 = (MessageType) => {
       let obj = { value: "0" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, Int64Value$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, Int64Value$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = Int64Value$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = Int64Value$Type(closure_1[6]);
+        const result = Int64Value$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = Int64Value$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -364,8 +363,8 @@ let tmp6 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           let str4 = pos.int64();
@@ -398,8 +397,8 @@ let tmp6 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = Int64Value$Type;
-                let tmp13 = closure_1;
-                onRead = Int64Value$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = Int64Value$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -411,8 +410,8 @@ let tmp6 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -421,13 +420,13 @@ let tmp6 = (MessageType) => {
     key: "internalBinaryWrite",
     value(value, tag, writeUnknownFields) {
       if ("0" !== value.value) {
-        tag.tag(1, Int64Value$Type(closure_1[6]).WireType.Varint).int64(value.value);
-        const tagResult = tag.tag(1, Int64Value$Type(closure_1[6]).WireType.Varint);
+        tag.tag(1, Int64Value$Type(outer1_1[6]).WireType.Varint).int64(value.value);
+        const tagResult = tag.tag(1, Int64Value$Type(outer1_1[6]).WireType.Varint);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = Int64Value$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = Int64Value$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, value, tag);
@@ -436,29 +435,28 @@ let tmp6 = (MessageType) => {
     }
   };
   return callback(Int64Value$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp6 = new tmp6();
-let tmp8 = (MessageType) => {
+let tmp8 = ((MessageType) => {
   class UInt64Value$Type {
     constructor() {
-      tmp = closure_3(this, UInt64Value$Type);
+      tmp = outer1_3(this, UInt64Value$Type);
       items = [];
-      items[0] = {};
-      items1 = [7];
+      items[0] = { no: 1, name: "value", kind: "scalar", T: 4 };
+      items1 = ["google.protobuf.UInt64Value"];
       items1[1] = items;
-      return closure_8(this, UInt64Value$Type, items1);
+      return outer1_8(this, UInt64Value$Type, items1);
     }
   }
-  const arg1 = UInt64Value$Type;
   callback3(UInt64Value$Type, MessageType);
   let obj = {
     key: "internalJsonWrite",
     value(value) {
       const refJsonWriter = this.refJsonWriter;
-      return refJsonWriter.scalar(UInt64Value$Type(closure_1[6]).ScalarType.UINT64, value.value, "value", false, true);
+      return refJsonWriter.scalar(UInt64Value$Type(outer1_1[6]).ScalarType.UINT64, value.value, "value", false, true);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "internalJsonRead",
     value(arg0, arg1, arg2) {
@@ -468,7 +466,7 @@ let tmp8 = (MessageType) => {
         obj = self.create();
       }
       const refJsonReader = self.refJsonReader;
-      obj.value = refJsonReader.scalar(arg0, UInt64Value$Type(closure_1[6]).ScalarType.UINT64, UInt64Value$Type(closure_1[6]).LongType.STRING, "value");
+      obj.value = refJsonReader.scalar(arg0, UInt64Value$Type(outer1_1[6]).ScalarType.UINT64, UInt64Value$Type(outer1_1[6]).LongType.STRING, "value");
       return obj;
     }
   };
@@ -479,10 +477,10 @@ let tmp8 = (MessageType) => {
       let obj = { value: "0" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, UInt64Value$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, UInt64Value$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = UInt64Value$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = UInt64Value$Type(closure_1[6]);
+        const result = UInt64Value$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = UInt64Value$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -500,8 +498,8 @@ let tmp8 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           let str4 = pos.uint64();
@@ -534,8 +532,8 @@ let tmp8 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = UInt64Value$Type;
-                let tmp13 = closure_1;
-                onRead = UInt64Value$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = UInt64Value$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -547,8 +545,8 @@ let tmp8 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -557,13 +555,13 @@ let tmp8 = (MessageType) => {
     key: "internalBinaryWrite",
     value(value, tag, writeUnknownFields) {
       if ("0" !== value.value) {
-        tag.tag(1, UInt64Value$Type(closure_1[6]).WireType.Varint).uint64(value.value);
-        const tagResult = tag.tag(1, UInt64Value$Type(closure_1[6]).WireType.Varint);
+        tag.tag(1, UInt64Value$Type(outer1_1[6]).WireType.Varint).uint64(value.value);
+        const tagResult = tag.tag(1, UInt64Value$Type(outer1_1[6]).WireType.Varint);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = UInt64Value$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = UInt64Value$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, value, tag);
@@ -572,20 +570,19 @@ let tmp8 = (MessageType) => {
     }
   };
   return callback(UInt64Value$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp8 = new tmp8();
-let tmp10 = (MessageType) => {
+let tmp10 = ((MessageType) => {
   class Int32Value$Type {
     constructor() {
-      tmp = closure_3(this, Int32Value$Type);
+      tmp = outer1_3(this, Int32Value$Type);
       items = [];
-      items[0] = {};
-      items1 = [true];
+      items[0] = { no: 1, name: "value", kind: "scalar", T: 5 };
+      items1 = ["google.protobuf.Int32Value"];
       items1[1] = items;
-      return closure_8(this, Int32Value$Type, items1);
+      return outer1_8(this, Int32Value$Type, items1);
     }
   }
-  const arg1 = Int32Value$Type;
   callback3(Int32Value$Type, MessageType);
   let obj = {
     key: "internalJsonWrite",
@@ -594,7 +591,7 @@ let tmp10 = (MessageType) => {
       return refJsonWriter.scalar(5, value.value, "value", false, true);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "internalJsonRead",
     value(arg0, arg1, arg2) {
@@ -615,10 +612,10 @@ let tmp10 = (MessageType) => {
       let obj = { value: 0 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, Int32Value$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, Int32Value$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = Int32Value$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = Int32Value$Type(closure_1[6]);
+        const result = Int32Value$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = Int32Value$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -636,8 +633,8 @@ let tmp10 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.value = pos.int32();
@@ -669,8 +666,8 @@ let tmp10 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = Int32Value$Type;
-                let tmp13 = closure_1;
-                onRead = Int32Value$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = Int32Value$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -682,8 +679,8 @@ let tmp10 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -692,13 +689,13 @@ let tmp10 = (MessageType) => {
     key: "internalBinaryWrite",
     value(value, tag, writeUnknownFields) {
       if (0 !== value.value) {
-        tag.tag(1, Int32Value$Type(closure_1[6]).WireType.Varint).int32(value.value);
-        const tagResult = tag.tag(1, Int32Value$Type(closure_1[6]).WireType.Varint);
+        tag.tag(1, Int32Value$Type(outer1_1[6]).WireType.Varint).int32(value.value);
+        const tagResult = tag.tag(1, Int32Value$Type(outer1_1[6]).WireType.Varint);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = Int32Value$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = Int32Value$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, value, tag);
@@ -707,20 +704,19 @@ let tmp10 = (MessageType) => {
     }
   };
   return callback(Int32Value$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp10 = new tmp10();
-let tmp12 = (MessageType) => {
+let tmp12 = ((MessageType) => {
   class UInt32Value$Type {
     constructor() {
-      tmp = closure_3(this, UInt32Value$Type);
+      tmp = outer1_3(this, UInt32Value$Type);
       items = [];
-      items[0] = {};
-      items1 = [false];
+      items[0] = { no: 1, name: "value", kind: "scalar", T: 13 };
+      items1 = ["google.protobuf.UInt32Value"];
       items1[1] = items;
-      return closure_8(this, UInt32Value$Type, items1);
+      return outer1_8(this, UInt32Value$Type, items1);
     }
   }
-  const arg1 = UInt32Value$Type;
   callback3(UInt32Value$Type, MessageType);
   let obj = {
     key: "internalJsonWrite",
@@ -729,7 +725,7 @@ let tmp12 = (MessageType) => {
       return refJsonWriter.scalar(13, value.value, "value", false, true);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "internalJsonRead",
     value(arg0, arg1, arg2) {
@@ -750,10 +746,10 @@ let tmp12 = (MessageType) => {
       let obj = { value: 0 };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, UInt32Value$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, UInt32Value$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = UInt32Value$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = UInt32Value$Type(closure_1[6]);
+        const result = UInt32Value$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = UInt32Value$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -771,8 +767,8 @@ let tmp12 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.value = pos.uint32();
@@ -804,8 +800,8 @@ let tmp12 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = UInt32Value$Type;
-                let tmp13 = closure_1;
-                onRead = UInt32Value$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = UInt32Value$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -817,8 +813,8 @@ let tmp12 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -827,13 +823,13 @@ let tmp12 = (MessageType) => {
     key: "internalBinaryWrite",
     value(value, tag, writeUnknownFields) {
       if (0 !== value.value) {
-        tag.tag(1, UInt32Value$Type(closure_1[6]).WireType.Varint).uint32(value.value);
-        const tagResult = tag.tag(1, UInt32Value$Type(closure_1[6]).WireType.Varint);
+        tag.tag(1, UInt32Value$Type(outer1_1[6]).WireType.Varint).uint32(value.value);
+        const tagResult = tag.tag(1, UInt32Value$Type(outer1_1[6]).WireType.Varint);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = UInt32Value$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = UInt32Value$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, value, tag);
@@ -842,20 +838,19 @@ let tmp12 = (MessageType) => {
     }
   };
   return callback(UInt32Value$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp12 = new tmp12();
-let tmp14 = (MessageType) => {
+let tmp14 = ((MessageType) => {
   class BoolValue$Type {
     constructor() {
-      tmp = closure_3(this, BoolValue$Type);
+      tmp = outer1_3(this, BoolValue$Type);
       items = [];
-      items[0] = {};
-      items1 = [];
+      items[0] = { no: 1, name: "value", kind: "scalar", T: 8 };
+      items1 = ["google.protobuf.BoolValue"];
       items1[1] = items;
-      return closure_8(this, BoolValue$Type, items1);
+      return outer1_8(this, BoolValue$Type, items1);
     }
   }
-  const arg1 = BoolValue$Type;
   callback3(BoolValue$Type, MessageType);
   let obj = {
     key: "internalJsonWrite",
@@ -863,7 +858,7 @@ let tmp14 = (MessageType) => {
       return value.value;
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "internalJsonRead",
     value(arg0, arg1, arg2) {
@@ -884,10 +879,10 @@ let tmp14 = (MessageType) => {
       let obj = { value: false };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, BoolValue$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, BoolValue$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = BoolValue$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = BoolValue$Type(closure_1[6]);
+        const result = BoolValue$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = BoolValue$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -905,8 +900,8 @@ let tmp14 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.value = pos.bool();
@@ -938,8 +933,8 @@ let tmp14 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = BoolValue$Type;
-                let tmp13 = closure_1;
-                onRead = BoolValue$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = BoolValue$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -951,8 +946,8 @@ let tmp14 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -961,13 +956,13 @@ let tmp14 = (MessageType) => {
     key: "internalBinaryWrite",
     value(value, tag, writeUnknownFields) {
       if (false !== value.value) {
-        tag.tag(1, BoolValue$Type(closure_1[6]).WireType.Varint).bool(value.value);
-        const tagResult = tag.tag(1, BoolValue$Type(closure_1[6]).WireType.Varint);
+        tag.tag(1, BoolValue$Type(outer1_1[6]).WireType.Varint).bool(value.value);
+        const tagResult = tag.tag(1, BoolValue$Type(outer1_1[6]).WireType.Varint);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = BoolValue$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = BoolValue$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, value, tag);
@@ -976,20 +971,19 @@ let tmp14 = (MessageType) => {
     }
   };
   return callback(BoolValue$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp14 = new tmp14();
-let tmp16 = (MessageType) => {
+let tmp16 = ((MessageType) => {
   class StringValue$Type {
     constructor() {
-      tmp = closure_3(this, StringValue$Type);
+      tmp = outer1_3(this, StringValue$Type);
       items = [];
-      items[0] = {};
-      items1 = [];
+      items[0] = { no: 1, name: "value", kind: "scalar", T: 9 };
+      items1 = ["google.protobuf.StringValue"];
       items1[1] = items;
-      return closure_8(this, StringValue$Type, items1);
+      return outer1_8(this, StringValue$Type, items1);
     }
   }
-  const arg1 = StringValue$Type;
   callback3(StringValue$Type, MessageType);
   let obj = {
     key: "internalJsonWrite",
@@ -997,7 +991,7 @@ let tmp16 = (MessageType) => {
       return value.value;
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "internalJsonRead",
     value(arg0, arg1, arg2) {
@@ -1018,10 +1012,10 @@ let tmp16 = (MessageType) => {
       let obj = { value: "" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, StringValue$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, StringValue$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = StringValue$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = StringValue$Type(closure_1[6]);
+        const result = StringValue$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = StringValue$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -1039,8 +1033,8 @@ let tmp16 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.value = pos.string();
@@ -1072,8 +1066,8 @@ let tmp16 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = StringValue$Type;
-                let tmp13 = closure_1;
-                onRead = StringValue$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = StringValue$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -1085,8 +1079,8 @@ let tmp16 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -1095,13 +1089,13 @@ let tmp16 = (MessageType) => {
     key: "internalBinaryWrite",
     value(value, tag, writeUnknownFields) {
       if ("" !== value.value) {
-        tag.tag(1, StringValue$Type(closure_1[6]).WireType.LengthDelimited).string(value.value);
-        const tagResult = tag.tag(1, StringValue$Type(closure_1[6]).WireType.LengthDelimited);
+        tag.tag(1, StringValue$Type(outer1_1[6]).WireType.LengthDelimited).string(value.value);
+        const tagResult = tag.tag(1, StringValue$Type(outer1_1[6]).WireType.LengthDelimited);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = StringValue$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = StringValue$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, value, tag);
@@ -1110,20 +1104,19 @@ let tmp16 = (MessageType) => {
     }
   };
   return callback(StringValue$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp16 = new tmp16();
-let tmp18 = (MessageType) => {
+let tmp18 = ((MessageType) => {
   class BytesValue$Type {
     constructor() {
-      tmp = closure_3(this, BytesValue$Type);
+      tmp = outer1_3(this, BytesValue$Type);
       items = [];
-      items[0] = {};
-      items1 = [];
+      items[0] = { no: 1, name: "value", kind: "scalar", T: 12 };
+      items1 = ["google.protobuf.BytesValue"];
       items1[1] = items;
-      return closure_8(this, BytesValue$Type, items1);
+      return outer1_8(this, BytesValue$Type, items1);
     }
   }
-  const arg1 = BytesValue$Type;
   callback3(BytesValue$Type, MessageType);
   let obj = {
     key: "internalJsonWrite",
@@ -1132,7 +1125,7 @@ let tmp18 = (MessageType) => {
       return refJsonWriter.scalar(12, value.value, "value", false, true);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "internalJsonRead",
     value(arg0, arg1, arg2) {
@@ -1155,10 +1148,10 @@ let tmp18 = (MessageType) => {
       obj.value = uint8Array;
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, BytesValue$Type(closure_1[6]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, BytesValue$Type(outer1_1[6]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = BytesValue$Type(closure_1[6]).reflectionMergePartial(this, obj, arr);
-        const obj3 = BytesValue$Type(closure_1[6]);
+        const result = BytesValue$Type(outer1_1[6]).reflectionMergePartial(this, obj, arr);
+        const obj3 = BytesValue$Type(outer1_1[6]);
       }
       return obj;
     }
@@ -1176,8 +1169,8 @@ let tmp18 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.value = pos.bytes();
@@ -1209,8 +1202,8 @@ let tmp18 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = BytesValue$Type;
-                let tmp13 = closure_1;
-                onRead = BytesValue$Type(closure_1[6]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = BytesValue$Type(outer1_1[6]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -1222,8 +1215,8 @@ let tmp18 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -1232,13 +1225,13 @@ let tmp18 = (MessageType) => {
     key: "internalBinaryWrite",
     value(value, tag, writeUnknownFields) {
       if (value.value.length) {
-        tag.tag(1, BytesValue$Type(closure_1[6]).WireType.LengthDelimited).bytes(value.value);
-        const tagResult = tag.tag(1, BytesValue$Type(closure_1[6]).WireType.LengthDelimited);
+        tag.tag(1, BytesValue$Type(outer1_1[6]).WireType.LengthDelimited).bytes(value.value);
+        const tagResult = tag.tag(1, BytesValue$Type(outer1_1[6]).WireType.LengthDelimited);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = BytesValue$Type(closure_1[6]).UnknownFieldHandler.onWrite;
+          onWrite = BytesValue$Type(outer1_1[6]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, value, tag);
@@ -1247,9 +1240,9 @@ let tmp18 = (MessageType) => {
     }
   };
   return callback(BytesValue$Type, items);
-}(arg1(dependencyMap[6]).MessageType);
+})(require("module_1284").MessageType);
 tmp18 = new tmp18();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/protos/google/protobuf/wrappers.tsx");
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/google/protobuf/wrappers.tsx");
 
 export const DoubleValue = tmp2;
 export const FloatValue = tmp4;

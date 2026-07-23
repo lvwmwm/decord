@@ -1,11 +1,13 @@
 // Module ID: 1010
-// Function ID: 11016
+// Function ID: 11017
 // Name: triggerHandlers
-// Dependencies: []
+// Dependencies: [1011, 794, 1012, 1027, 1030, 1031, 1022]
 
 // Module 1010 (triggerHandlers)
+const require = arg1;
+const dependencyMap = arg6;
 function triggerHandlers(arg0, arg1) {
-  if (null != closure_6[arg0]) {
+  if (null != dependencyMap[arg0]) {
     if (arr.length) {
       const iter = arr[Symbol.iterator]();
       const nextResult = iter.next();
@@ -20,29 +22,33 @@ function triggerHandlers(arg0, arg1) {
   }
 }
 function instrumentCls() {
-  return arg1(arg6[2]).onCLS((metric) => {
-    callback("cls", { metric });
+  return require(1012) /* items */.onCLS((metric) => {
+    outer1_8("cls", { metric });
+    const outer1_2 = metric;
   }, { reportAllChanges: true });
 }
 function instrumentLcp() {
-  return arg1(arg6[3]).onLCP((metric) => {
-    callback("lcp", { metric });
+  return require(1027) /* items */.onLCP((metric) => {
+    outer1_8("lcp", { metric });
+    const outer1_3 = metric;
   }, { reportAllChanges: true });
 }
 function instrumentTtfb() {
-  return arg1(arg6[4]).onTTFB((metric) => {
-    callback("ttfb", { metric });
+  return require(1030) /* items */.onTTFB((metric) => {
+    outer1_8("ttfb", { metric });
+    const outer1_4 = metric;
   });
 }
 function instrumentInp() {
-  return arg1(arg6[5]).onINP((metric) => {
-    callback("inp", { metric });
+  return require(1031) /* items */.onINP((metric) => {
+    outer1_8("inp", { metric });
+    const outer1_5 = metric;
   });
 }
 function addMetricObserver(inp, _onInp, instrumentInp, closure_4) {
   addHandler(inp, _onInp);
-  if (!closure_7[inp]) {
-    closure_7[inp] = true;
+  if (!dependencyMap2[inp]) {
+    dependencyMap2[inp] = true;
     const tmp3 = instrumentInp();
   }
   if (closure_4) {
@@ -56,22 +62,23 @@ function addMetricObserver(inp, _onInp, instrumentInp, closure_4) {
   return getCleanupCallback(inp, _onInp, tmp8);
 }
 function addHandler(arg0, arg1) {
-  let items = closure_6[arg0];
+  let items = dependencyMap[arg0];
   if (!items) {
     items = [];
   }
-  closure_6[arg0] = items;
-  closure_6[arg0].push(arg1);
+  dependencyMap[arg0] = items;
+  dependencyMap[arg0].push(arg1);
 }
 function getCleanupCallback(event, handleEntries) {
-  handleEntries = event;
-  const arg6 = handleEntries;
+  let closure_0 = event;
+  let closure_1 = handleEntries;
+  let closure_2 = arg2;
   return () => {
-    if (arg2) {
-      arg2();
+    if (callback) {
+      callback();
     }
-    if (closure_6[closure_0]) {
-      const index = arr.indexOf(arg1);
+    if (outer1_6[closure_0]) {
+      const index = arr.indexOf(closure_1);
       if (-1 !== index) {
         arr.splice(index, 1);
       }
@@ -106,17 +113,18 @@ arg5.addLcpInstrumentationHandler = function addLcpInstrumentationHandler(arg0, 
 };
 arg5.addPerformanceInstrumentationHandler = function addPerformanceInstrumentationHandler(event, handleEntries) {
   addHandler(event, handleEntries);
-  if (!closure_7[event]) {
-    function instrumentPerformanceObserver(event) {
+  if (!dependencyMap2[event]) {
+    (function instrumentPerformanceObserver(event) {
+      let closure_0 = event;
       const obj = {};
       if ("event" === event) {
         obj.durationThreshold = 0;
       }
-      event(closure_1[6]).observe(event, (entries) => {
-        callback(entries, { entries });
+      outer1_0(outer1_1[6]).observe(event, (entries) => {
+        outer2_8(closure_0, { entries });
       }, obj);
-    }(event);
-    closure_7[event] = true;
+    })(event);
+    dependencyMap2[event] = true;
   }
   return getCleanupCallback(event, handleEntries);
 };

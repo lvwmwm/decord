@@ -1,15 +1,14 @@
-// Module ID: 4542
-// Function ID: 39839
+// Module ID: 4546
+// Function ID: 39871
 // Name: SUBTLE_SPRING
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4542 (SUBTLE_SPRING)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("design/animation/reanimated/spring/springPresets.tsx");
+// Module 4546 (SUBTLE_SPRING)
+const result = require("set").fileFinishedImporting("design/animation/reanimated/spring/springPresets.tsx");
 
-export const SUBTLE_SPRING = { 84079581: "dd", -79768422: "useActionState", -618226596: "ad" };
-export const ON_PRESS_SPRING = {};
-export const springSlow = { 84079581: "+57", -79768422: null, -618226596: "es-CO" };
-export const springUnclamped = { 84079581: "<string:1618083841>", -79768422: "<string:1610612736>", -618226596: "<string:16777216>" };
-export const springUnclampedBounce = { 84079581: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010754332093450583, -79768422: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014563163232767484, -618226596: -867922343120036700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-export const springStandard = { marginVertical: "<string:1618083841>", maxHeight: "<string:1610612736>", maxWidth: "<string:16777216>", minHeight: "<string:37695298>" };
+export const SUBTLE_SPRING = { mass: 1, damping: 27, stiffness: 300 };
+export const ON_PRESS_SPRING = { mass: 1, overshootClamping: true, damping: 27, stiffness: 300 };
+export const springSlow = { mass: 1, damping: 30, stiffness: 380 };
+export const springUnclamped = { mass: 0.35, damping: 13, stiffness: 250 };
+export const springUnclampedBounce = { mass: 0.3, damping: 13, stiffness: 250 };
+export const springStandard = { mass: 0.35, damping: 13, stiffness: 250, overshootClamping: true };

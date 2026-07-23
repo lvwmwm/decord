@@ -1,14 +1,18 @@
-// Module ID: 10439
-// Function ID: 80582
+// Module ID: 10449
+// Function ID: 80632
 // Name: _computeActivityPartyPrivacyFlags
-// Dependencies: []
+// Dependencies: [653, 3803, 587, 1360, 6982, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 10439 (_computeActivityPartyPrivacyFlags)
+// Module 10449 (_computeActivityPartyPrivacyFlags)
+import ME from "ME";
+
+let closure_3;
+let closure_4;
 function _computeActivityPartyPrivacyFlags(arg0) {
-  const AllowActivityPartyPrivacyFriends = require(dependencyMap[1]).AllowActivityPartyPrivacyFriends;
+  const AllowActivityPartyPrivacyFriends = require(3803) /* explicitContentFromProto */.AllowActivityPartyPrivacyFriends;
   const setting = AllowActivityPartyPrivacyFriends.getSetting();
-  const AllowActivityPartyPrivacyVoiceChannel = require(dependencyMap[1]).AllowActivityPartyPrivacyVoiceChannel;
+  const AllowActivityPartyPrivacyVoiceChannel = require(3803) /* explicitContentFromProto */.AllowActivityPartyPrivacyVoiceChannel;
   const PARTY_PRIVACY_FRIENDS = constants.PARTY_PRIVACY_FRIENDS;
   const setting1 = AllowActivityPartyPrivacyVoiceChannel.getSetting();
   if (setting) {
@@ -24,10 +28,8 @@ function _computeActivityPartyPrivacyFlags(arg0) {
   }
   return tmp4;
 }
-const _module = require(dependencyMap[0]);
-({ ActivityFlags: closure_3, ActivityPartyPrivacy: closure_4 } = _module);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/activities/utils/ActivityFlagUtils.tsx");
+({ ActivityFlags: closure_3, ActivityPartyPrivacy: closure_4 } = ME);
+const result = require("Storage").fileFinishedImporting("modules/activities/utils/ActivityFlagUtils.tsx");
 
 export const computeActivityFlags = function computeActivityFlags(activity, hasFlagResult, arg2, canLaunchFrameResult, privacy) {
   let flag = hasFlagResult;
@@ -68,7 +70,7 @@ export const computeActivityFlags = function computeActivityFlags(activity, hasF
   } else {
     let value = PRIVATE === constants2.PUBLIC;
     if (!value) {
-      const Storage = require(dependencyMap[2]).Storage;
+      const Storage = require(587) /* Storage */.Storage;
       value = Storage.get("ACTIVITIES_FORCE_PUBLIC");
     }
     tmp12 = tmp6;
@@ -87,9 +89,9 @@ export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActiv
   if (null != flags) {
     num = flags;
   }
-  let hasFlagResult = require(dependencyMap[3]).hasFlag(num, constants.CONTEXTLESS);
+  let hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, constants.CONTEXTLESS);
   if (hasFlagResult) {
-    hasFlagResult = importDefault(dependencyMap[4])(remoteApplicationActivity);
+    hasFlagResult = importDefault(6982)(remoteApplicationActivity);
   }
   return hasFlagResult;
 };

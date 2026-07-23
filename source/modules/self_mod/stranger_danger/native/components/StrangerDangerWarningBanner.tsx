@@ -1,21 +1,30 @@
-// Module ID: 10409
-// Function ID: 80183
+// Module ID: 10419
+// Function ID: 80233
 // Name: StrangerDangerWarningBanner
-// Dependencies: []
+// Dependencies: [31, 3767, 9101, 10134, 653, 10420, 33, 4130, 689, 566, 10131, 10132, 4337, 4098, 10421, 1934, 480, 10411, 1212, 10414, 4126, 10423, 2]
 
-// Module 10409 (StrangerDangerWarningBanner)
+// Module 10419 (StrangerDangerWarningBanner)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
+import { AnalyticEvents } from "ME";
+import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_9 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 class StrangerDangerWarningBanner {
   constructor(arg0) {
     channelId = global.channelId;
-    arg1 = channelId;
     warningId = global.warningId;
-    importDefault = warningId;
     senderId = global.senderId;
-    dependencyMap = senderId;
-    importAll = closure_11();
-    obj = arg1(dependencyMap[9]);
+    result = c11();
+    obj = require("initialize");
     items = [];
-    items[0] = closure_4;
+    items[0] = c4;
     items1 = [];
     items1[0] = senderId;
     items2 = [, , ];
@@ -23,76 +32,76 @@ class StrangerDangerWarningBanner {
     items2[1] = warningId;
     items2[2] = senderId;
     stateFromStores = obj.useStateFromStores(items, () => callback.isBlocked(senderId), items1);
-    effect = importAll.useEffect(() => {
+    effect = result.useEffect(() => {
       let obj = channelId(senderId[10]);
       obj = { channelId, warningId, senderId, warningType: callback1.STRANGER_DANGER };
-      obj.trackViewedEvent(constants.SAFETY_WARNING_VIEWED, obj);
+      obj.trackViewedEvent(outer1_8.SAFETY_WARNING_VIEWED, obj);
     }, items2);
     items3 = [, ];
     items3[0] = channelId;
     items3[1] = warningId;
-    callback = importAll.useCallback(() => {
+    callback = result.useCallback(() => {
       const items = [warningId];
       const result = channelId(senderId[11]).dismissChannelSafetyWarnings(channelId, items);
       const obj = channelId(senderId[11]);
       warningId(senderId[12]).popWithKey(callback2);
     }, items3);
-    closure_4 = callback;
+    c4 = callback;
     items4 = [, , , ];
     items4[0] = callback;
     items4[1] = channelId;
     items4[2] = warningId;
     items4[3] = senderId;
-    callback1 = importAll.useCallback((arg0) => {
-      const channelId = arg0;
+    callback1 = result.useCallback((arg0) => {
+      let closure_0 = arg0;
       return () => {
-        callback();
-        let obj = arg0(closure_2[10]);
-        obj = { channelId: arg0, warningId: closure_1, senderId: closure_2, warningType: constants.STRANGER_DANGER, cta: arg0 };
+        outer1_4();
+        let obj = channelId(senderId[10]);
+        obj = { channelId: closure_0, warningId: outer1_1, senderId: outer1_2, warningType: callback1.STRANGER_DANGER, cta: closure_0 };
         obj.trackCtaEvent(obj);
       };
     }, items4);
-    f80188 = callback1;
+    f80238 = callback1;
     items5 = [, , , , ];
     items5[0] = callback1;
     items5[1] = callback;
     items5[2] = channelId;
     items5[3] = warningId;
     items5[4] = senderId;
-    callback2 = importAll.useCallback((arg0) => {
-      const channelId = arg0;
+    callback2 = result.useCallback((arg0) => {
+      let closure_0 = arg0;
       return () => {
-        let obj = callback(paths[13]);
+        let obj = warningId(senderId[13]);
         obj = {
-          userId: paths,
-          channelId: arg0,
-          onBlock: callback2(arg0),
+          userId: outer1_2,
+          channelId: closure_0,
+          onBlock: outer1_5(closure_0),
           onSuccess() {
-            return callback2(closure_2[13]).hideActionSheet();
+            return warningId(senderId[13]).hideActionSheet();
           },
           onIgnore() {
-            callback3();
-            let obj = callback(closure_2[10]);
-            obj = { channelId: callback, warningId: closure_1, senderId: closure_2, warningType: constants.STRANGER_DANGER, cta: callback(closure_2[10]).CtaEventTypes.USER_BANNER_IGNORE_CONFIRM };
+            outer2_4();
+            let obj = channelId(senderId[10]);
+            obj = { channelId: closure_0, warningId: outer2_1, senderId: outer2_2, warningType: callback1.STRANGER_DANGER, cta: channelId(senderId[10]).CtaEventTypes.USER_BANNER_IGNORE_CONFIRM };
             obj.trackCtaEvent(obj);
           },
-          impressionName: arg0(paths[16]).ImpressionNames.BLOCK_USER_CONFIRMATION
+          impressionName: channelId(senderId[16]).ImpressionNames.BLOCK_USER_CONFIRMATION
         };
-        obj.openLazy(arg0(paths[15])(paths[14], paths.paths), closure_9, obj);
+        obj.openLazy(channelId(senderId[15])(senderId[14], senderId.paths), outer2_9, obj);
       };
     }, items5);
     defineProperty = callback2;
     tmp6 = jsx;
-    obj = { channelId, warningId, senderId, warningType: f80188.STRANGER_DANGER };
-    tmp7 = importDefault(dependencyMap[17]);
-    intl = arg1(dependencyMap[18]).intl;
-    obj.header = intl.string(arg1(dependencyMap[18]).t.iOkDpM);
-    intl2 = arg1(dependencyMap[18]).intl;
-    obj.description = intl2.string(arg1(dependencyMap[18]).t.ISUbcM);
+    obj = { channelId, warningId, senderId, warningType: f80238.STRANGER_DANGER };
+    tmp7 = require("SafetyWarningBanner");
+    intl = require("getSystemLocale").intl;
+    obj.header = intl.string(require("getSystemLocale").t.iOkDpM);
+    intl2 = require("getSystemLocale").intl;
+    obj.description = intl2.string(require("getSystemLocale").t.ISUbcM);
     obj.onDismiss = callback;
     obj1 = {};
-    intl3 = arg1(dependencyMap[18]).intl;
-    obj1.text = intl3.string(arg1(dependencyMap[18]).t.Qk/c48);
+    intl3 = require("getSystemLocale").intl;
+    obj1.text = intl3.string(require("getSystemLocale").t["Qk/c48"]);
     obj1.variant = "primary";
     obj1.onpress = function onpress() {
       let obj = warningId(senderId[12]);
@@ -100,11 +109,11 @@ class StrangerDangerWarningBanner {
       const intl = channelId(senderId[18]).intl;
       obj.description = intl.string(channelId(senderId[18]).t.DJMZX6);
       const tmp = channelId(senderId[15])(senderId[19], senderId.paths);
-      obj.safetyTips = callback().map((children) => callback2(callback(closure_2[20]).Text, { variant: "text-sm/medium", children }, arg1));
+      obj.safetyTips = outer1_7().map((children) => outer2_10(channelId(senderId[20]).Text, { variant: "text-sm/medium", children }, arg1));
       obj = { channelId, warningId, senderId };
-      const arr = callback();
+      const arr = outer1_7();
       obj.onBlockPressed = callback2(channelId(senderId[10]).CtaEventTypes.USER_MODAL_BLOCK_CONFIRM);
-      obj.actionItems = callback2(warningId(senderId[21]), obj);
+      obj.actionItems = outer1_10(warningId(senderId[21]), obj);
       obj.pushLazy(tmp, obj, callback2);
       const tmp2 = warningId(senderId[21]);
       const obj4 = channelId(senderId[10]);
@@ -116,14 +125,14 @@ class StrangerDangerWarningBanner {
       items7 = [];
     } else {
       obj2 = {};
-      tmp8 = arg1;
-      tmp9 = dependencyMap;
-      intl4 = arg1(dependencyMap[18]).intl;
-      obj2.text = intl4.string(arg1(dependencyMap[18]).t.ie0QdN);
+      tmp8 = channelId;
+      tmp9 = senderId;
+      intl4 = require("getSystemLocale").intl;
+      obj2.text = intl4.string(require("getSystemLocale").t.ie0QdN);
       str = "destructive";
       obj2.variant = "destructive";
       num = 10;
-      obj2.onpress = callback2(arg1(dependencyMap[10]).CtaEventTypes.USER_BANNER_BLOCK_CONFIRM);
+      obj2.onpress = callback2(require("trackViewedEvent").CtaEventTypes.USER_BANNER_BLOCK_CONFIRM);
       items7 = [];
       items7[0] = obj2;
     }
@@ -132,20 +141,12 @@ class StrangerDangerWarningBanner {
     return tmp6(tmp7, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const SafetyWarningTypes = arg1(dependencyMap[2]).SafetyWarningTypes;
-({ STRANGER_DANGER_MORE_TIPS_MODAL_KEY: closure_6, getStrangerDangerSafetyTips: closure_7 } = arg1(dependencyMap[3]));
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-let closure_9 = arg1(dependencyMap[5]).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
-const jsx = arg1(dependencyMap[6]).jsx;
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
-obj.moreTipsHeader = obj;
-let closure_11 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerWarningBanner.tsx");
+({ STRANGER_DANGER_MORE_TIPS_MODAL_KEY: closure_6, getStrangerDangerSafetyTips: closure_7 } = LOCATION_CONTEXT_MOBILE);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
+_createForOfIteratorHelperLoose.moreTipsHeader = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerWarningBanner.tsx");
 
 export default StrangerDangerWarningBanner;
 export { StrangerDangerWarningBanner };

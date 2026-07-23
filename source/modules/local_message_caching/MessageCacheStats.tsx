@@ -1,17 +1,16 @@
-// Module ID: 6715
-// Function ID: 52198
+// Module ID: 6720
+// Function ID: 52230
 // Name: makeLogKey
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 6715 (makeLogKey)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 6720 (makeLogKey)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
 function makeLogKey(arg0, arg1, arg2, arg3, arg4) {
   return "" + arg0 + ":" + arg1 + ":" + arg2 + ":" + arg3 + ":" + arg4;
 }
-let tmp2 = () => {
+let tmp2 = (() => {
   class MessageCacheStats {
     constructor() {
       tmp = MessageCacheStats(this, MessageCacheStats);
@@ -26,7 +25,6 @@ let tmp2 = () => {
       return;
     }
   }
-  let closure_0 = MessageCacheStats;
   let obj = {
     key: "recordChannelFetchStart",
     value(channelId, arg1, arg2, arg3, limit) {
@@ -54,7 +52,7 @@ let tmp2 = () => {
       obj.after = tmp7;
       obj.limit = limit;
       obj.startTime = Date.now();
-      const result = fetchLogs.set(closure_2(channelId, arg1, tmp3, tmp4, limit), obj);
+      const result = fetchLogs.set(outer1_2(channelId, arg1, tmp3, tmp4, limit), obj);
     }
   };
   const items = [obj, , ];
@@ -72,7 +70,7 @@ let tmp2 = () => {
       if (null != arg3) {
         tmp4 = arg3;
       }
-      const value = fetchLogs.get(closure_2(arg0, arg1, tmp3, tmp4, arg4));
+      const value = fetchLogs.get(outer1_2(arg0, arg1, tmp3, tmp4, arg4));
       if (null != value) {
         const obj = {};
         const _Date = Date;
@@ -103,7 +101,7 @@ let tmp2 = () => {
       if (null != arg3) {
         tmp4 = arg3;
       }
-      const value = fetchLogs.get(closure_2(arg0, arg1, tmp3, tmp4, arg4));
+      const value = fetchLogs.get(outer1_2(arg0, arg1, tmp3, tmp4, arg4));
       if (null != value) {
         const obj = {};
         const _Date = Date;
@@ -121,9 +119,9 @@ let tmp2 = () => {
   };
   items[2] = obj;
   return callback(MessageCacheStats, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = items.fileFinishedImporting("modules/local_message_caching/MessageCacheStats.tsx");
+let result = require("set").fileFinishedImporting("modules/local_message_caching/MessageCacheStats.tsx");
 
 export default tmp2;
 export const INITIAL_MESSAGE_FETCH_KEY = "NativeAppStartup";

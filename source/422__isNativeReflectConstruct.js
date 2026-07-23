@@ -1,17 +1,19 @@
 // Module ID: 422
 // Function ID: 5921
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 390, 282, 262, 355, 147]
 
 // Module 422 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import importAllResult from "__exportStarResult1";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import closure_6 from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import jsxProd from "jsxProd";
 
+let closure_10;
+let closure_11;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -21,14 +23,14 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = [];
-let closure_3 = [];
-({ jsx: closure_10, jsxs: closure_11 } = require("__exportStarResult1"));
-let closure_12 = (Component) => {
+let closure_2 = ["onBlur", "onFocus"];
+let closure_3 = ["ref"];
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+let closure_12 = ((Component) => {
   class TouchableOpacity {
     constructor() {
       self = this;
-      tmp = closure_5(this, TouchableOpacity);
+      tmp = outer1_5(this, TouchableOpacity);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -36,40 +38,39 @@ let closure_12 = (Component) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_8(TouchableOpacity);
-      tmp4 = closure_7;
-      if (closure_13()) {
+      obj = outer1_8(TouchableOpacity);
+      tmp4 = outer1_7;
+      if (outer1_13()) {
         items1 = combined;
         if (!combined) {
           items1 = [];
         }
-        tmp6 = closure_8;
-        constructResult = Reflect.construct(obj, items1, closure_8(self).constructor);
+        tmp6 = outer1_8;
+        constructResult = Reflect.construct(obj, items1, outer1_8(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
       tmp4Result = tmp4(self, constructResult);
       obj = {};
-      value = new TouchableOpacity(closure_1[8]).Value(tmp4Result._getChildStyleOpacityWithDefault());
+      value = new TouchableOpacity(outer1_1[8]).Value(tmp4Result._getChildStyleOpacityWithDefault());
       obj.anim = value;
-      tmp8 = TouchableOpacity(closure_1[9]);
+      tmp8 = TouchableOpacity(outer1_1[9]);
       tmp8 = new tmp8(tmp4Result._createPressabilityConfig());
       obj.pressability = tmp8;
       tmp4Result.state = obj;
       return tmp4Result;
     }
   }
-  const importDefault = TouchableOpacity;
   callback3(TouchableOpacity, Component);
   let obj = {
     key: "_createPressabilityConfig",
     value: function _createPressabilityConfig() {
-      const self = this;
-      const TouchableOpacity = this;
+      let self = this;
+      self = this;
       const obj = { cancelable: !this.props.rejectResponderTermination };
-      aria-disabled = this.props.disabled;
+      aria_disabled = this.props.disabled;
       if (null == aria_disabled) {
-        aria-disabled = self.props.aria-disabled;
+        aria_disabled = self.props["aria-disabled"];
       }
       if (null == aria_disabled) {
         const accessibilityState = self.props.accessibilityState;
@@ -77,7 +78,7 @@ let closure_12 = (Component) => {
         if (null != accessibilityState) {
           disabled = accessibilityState.disabled;
         }
-        aria-disabled = disabled;
+        aria_disabled = disabled;
       }
       obj.disabled = aria_disabled;
       obj.hitSlop = self.props.hitSlop;
@@ -87,7 +88,7 @@ let closure_12 = (Component) => {
       obj.minPressDuration = 0;
       obj.pressRectOffset = self.props.pressRetentionOffset;
       obj.onBlur = function onBlur(arg0) {
-        if (self(closure_1[10]).isTV) {
+        if (TouchableOpacity(outer2_1[10]).isTV) {
           self._opacityInactive(250);
         }
         if (null != self.props.onBlur) {
@@ -96,7 +97,7 @@ let closure_12 = (Component) => {
         }
       };
       obj.onFocus = function onFocus(arg0) {
-        if (self(closure_1[10]).isTV) {
+        if (TouchableOpacity(outer2_1[10]).isTV) {
           self._opacityActive(150);
         }
         if (null != self.props.onFocus) {
@@ -127,13 +128,13 @@ let closure_12 = (Component) => {
       return obj;
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "_setOpacityTo",
     value: function _setOpacityTo(toValue, duration) {
-      let obj = TouchableOpacity(closure_1[8]);
-      obj = { toValue, duration, easing: TouchableOpacity(closure_1[11]).inOut(TouchableOpacity(closure_1[11]).quad), useNativeDriver: true };
-      const obj3 = TouchableOpacity(closure_1[11]);
+      let obj = TouchableOpacity(outer1_1[8]);
+      obj = { toValue, duration, easing: TouchableOpacity(outer1_1[11]).inOut(TouchableOpacity(outer1_1[11]).quad), useNativeDriver: true };
+      const obj3 = TouchableOpacity(outer1_1[11]);
       obj.timing(this.state.anim, obj).start();
     }
   };
@@ -160,7 +161,7 @@ let closure_12 = (Component) => {
     key: "_getChildStyleOpacityWithDefault",
     value: function _getChildStyleOpacityWithDefault() {
       let opacity;
-      const tmp2 = TouchableOpacity(closure_1[12])(this.props.style);
+      const tmp2 = TouchableOpacity(outer1_1[12])(this.props.style);
       if (null != tmp2) {
         opacity = tmp2.opacity;
       }
@@ -181,54 +182,54 @@ let closure_12 = (Component) => {
       const eventHandlers = pressability.getEventHandlers();
       ({ onBlur, onFocus } = eventHandlers);
       let obj = {};
-      aria-busy = this.props.aria-busy;
+      aria_busy = this.props["aria-busy"];
       if (null == aria_busy) {
         const accessibilityState = self.props.accessibilityState;
         let busy;
         if (null != accessibilityState) {
           busy = accessibilityState.busy;
         }
-        aria-busy = busy;
+        aria_busy = busy;
       }
       obj.busy = aria_busy;
-      aria-checked = self.props.aria-checked;
+      aria_checked = self.props["aria-checked"];
       if (null == aria_checked) {
         const accessibilityState2 = self.props.accessibilityState;
         let checked;
         if (null != accessibilityState2) {
           checked = accessibilityState2.checked;
         }
-        aria-checked = checked;
+        aria_checked = checked;
       }
       obj.checked = aria_checked;
-      aria-disabled = self.props.aria-disabled;
+      aria_disabled = self.props["aria-disabled"];
       if (null == aria_disabled) {
         const accessibilityState3 = self.props.accessibilityState;
         let disabled;
         if (null != accessibilityState3) {
           disabled = accessibilityState3.disabled;
         }
-        aria-disabled = disabled;
+        aria_disabled = disabled;
       }
       obj.disabled = aria_disabled;
-      aria-expanded = self.props.aria-expanded;
+      aria_expanded = self.props["aria-expanded"];
       if (null == aria_expanded) {
         const accessibilityState4 = self.props.accessibilityState;
         let expanded;
         if (null != accessibilityState4) {
           expanded = accessibilityState4.expanded;
         }
-        aria-expanded = expanded;
+        aria_expanded = expanded;
       }
       obj.expanded = aria_expanded;
-      aria-selected = self.props.aria-selected;
+      aria_selected = self.props["aria-selected"];
       if (null == aria_selected) {
         const accessibilityState5 = self.props.accessibilityState;
         let selected;
         if (null != accessibilityState5) {
           selected = accessibilityState5.selected;
         }
-        aria-selected = selected;
+        aria_selected = selected;
       }
       obj.selected = aria_selected;
       let merged = obj;
@@ -238,71 +239,71 @@ let closure_12 = (Component) => {
         merged = Object.assign({}, obj, obj);
       }
       obj = {};
-      aria-valuemax = self.props.aria-valuemax;
+      aria_valuemax = self.props["aria-valuemax"];
       if (null == aria_valuemax) {
         const accessibilityValue = self.props.accessibilityValue;
         let max;
         if (null != accessibilityValue) {
           max = accessibilityValue.max;
         }
-        aria-valuemax = max;
+        aria_valuemax = max;
       }
       obj.max = aria_valuemax;
-      aria-valuemin = self.props.aria-valuemin;
+      aria_valuemin = self.props["aria-valuemin"];
       if (null == aria_valuemin) {
         const accessibilityValue2 = self.props.accessibilityValue;
         let min;
         if (null != accessibilityValue2) {
           min = accessibilityValue2.min;
         }
-        aria-valuemin = min;
+        aria_valuemin = min;
       }
       obj.min = aria_valuemin;
-      aria-valuenow = self.props.aria-valuenow;
+      aria_valuenow = self.props["aria-valuenow"];
       if (null == aria_valuenow) {
         const accessibilityValue3 = self.props.accessibilityValue;
         let now;
         if (null != accessibilityValue3) {
           now = accessibilityValue3.now;
         }
-        aria-valuenow = now;
+        aria_valuenow = now;
       }
       obj.now = aria_valuenow;
-      aria-valuetext = self.props.aria-valuetext;
+      aria_valuetext = self.props["aria-valuetext"];
       if (null == aria_valuetext) {
         const accessibilityValue4 = self.props.accessibilityValue;
         let text;
         if (null != accessibilityValue4) {
           text = accessibilityValue4.text;
         }
-        aria-valuetext = text;
+        aria_valuetext = text;
       }
       obj.text = aria_valuetext;
       let str = "none";
-      if ("off" !== self.props.aria-live) {
-        let accessibilityLiveRegion = self.props.aria-live;
+      if ("off" !== self.props["aria-live"]) {
+        let accessibilityLiveRegion = self.props["aria-live"];
         if (null == accessibilityLiveRegion) {
           accessibilityLiveRegion = self.props.accessibilityLiveRegion;
         }
         str = accessibilityLiveRegion;
       }
-      let accessibilityLabel = self.props.aria-label;
+      let accessibilityLabel = self.props["aria-label"];
       if (null == accessibilityLabel) {
         accessibilityLabel = self.props.accessibilityLabel;
       }
       const obj1 = { accessible: false !== self.props.accessible, accessibilityLabel, accessibilityHint: self.props.accessibilityHint, accessibilityLanguage: self.props.accessibilityLanguage, accessibilityRole: self.props.accessibilityRole, accessibilityState: merged, accessibilityActions: self.props.accessibilityActions, onAccessibilityAction: self.props.onAccessibilityAction, accessibilityValue: obj };
       let str2 = "no-hide-descendants";
-      if (true !== self.props.aria-hidden) {
+      if (true !== self.props["aria-hidden"]) {
         str2 = self.props.importantForAccessibility;
       }
       obj1.importantForAccessibility = str2;
-      let accessibilityViewIsModal = self.props.aria-modal;
+      let accessibilityViewIsModal = self.props["aria-modal"];
       if (null == accessibilityViewIsModal) {
         accessibilityViewIsModal = self.props.accessibilityViewIsModal;
       }
       obj1.accessibilityViewIsModal = accessibilityViewIsModal;
       obj1.accessibilityLiveRegion = str;
-      let accessibilityElementsHidden = self.props.aria-hidden;
+      let accessibilityElementsHidden = self.props["aria-hidden"];
       if (null == accessibilityElementsHidden) {
         accessibilityElementsHidden = self.props.accessibilityElementsHidden;
       }
@@ -326,7 +327,7 @@ let closure_12 = (Component) => {
       obj1.focusable = false !== self.props.focusable && undefined !== self.props.onPress && !self.props.disabled;
       obj1.ref = self.props.hostRef;
       const children = [self.props.children, null];
-      return closure_11(TouchableOpacity(closure_1[8]).View, Object.assign(obj1, callback(eventHandlers, closure_2), { children }));
+      return outer1_11(TouchableOpacity(outer1_1[8]).View, Object.assign(obj1, outer1_4(eventHandlers, outer1_2), { children }));
     }
   };
   items[6] = {
@@ -337,12 +338,12 @@ let closure_12 = (Component) => {
       pressability.configure(this._createPressabilityConfig());
       let tmp2 = this.props.disabled === disabled.disabled;
       if (tmp2) {
-        const tmp5 = TouchableOpacity(closure_1[12])(disabled.style);
+        const tmp5 = TouchableOpacity(outer1_1[12])(disabled.style);
         let opacity;
         if (null != tmp5) {
           opacity = tmp5.opacity;
         }
-        const tmp10 = TouchableOpacity(closure_1[12])(self.props.style);
+        const tmp10 = TouchableOpacity(outer1_1[12])(self.props.style);
         let opacity1;
         if (null != tmp10) {
           opacity1 = tmp10.opacity;
@@ -371,10 +372,10 @@ let closure_12 = (Component) => {
     }
   };
   return callback2(TouchableOpacity, items);
-}(importAllResult.Component);
+})(require("result").Component);
 class Touchable {
   constructor(arg0) {
-    return jsx(f5925, Object.assign({}, __exportStarResult1(global, _isNativeReflectConstruct), { hostRef: global.ref }));
+    return jsx(f5925, Object.assign({}, _objectWithoutProperties(global, _isNativeReflectConstruct), { hostRef: global.ref }));
   }
 }
 Touchable.displayName = "TouchableOpacity";

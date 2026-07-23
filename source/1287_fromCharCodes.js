@@ -1,5 +1,5 @@
 // Module ID: 1287
-// Function ID: 15050
+// Function ID: 15051
 // Name: fromCharCodes
 // Dependencies: []
 
@@ -59,8 +59,8 @@ arg5.utf8read = function utf8read(arg0) {
           items1[tmp4] = (15 & tmp3) << 12 | (63 & arg0[tmp5]) << 6 | 63 & arg0[tmp6];
         }
         if (num > 8191) {
-          let tmp16 = closure_0;
-          let arr = items.push(closure_0(items1));
+          let tmp16 = fromCharCodes;
+          let arr = items.push(fromCharCodes(items1));
           num = 0;
         }
         num3 = num;

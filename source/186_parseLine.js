@@ -49,9 +49,9 @@ function parseLine(str) {
     return tmp4;
   }
 }
-let closure_0 = /^ {4}at (.+?)(?: \((native)\)?| \((address at )?(.*?):(\d+):(\d+)\))$/;
-let closure_1 = /^ {4}... skipping (\d+) frames$/;
-let closure_2 = /^ {4}at .*$/;
+const re0 = /^ {4}at (.+?)(?: \((native)\)?| \((address at )?(.*?):(\d+):(\d+)\))$/;
+const re1 = /^ {4}... skipping (\d+) frames$/;
+const re2 = /^ {4}at .*$/;
 arg5.default = function parseHermesStack(str) {
   const parts = str.split(/\n/);
   let items = [];
@@ -65,19 +65,19 @@ arg5.default = function parseHermesStack(str) {
       let items1 = items;
       let tmp3 = num;
       if (tmp2) {
-        let tmp4 = closure_3;
-        let tmp5 = closure_3(tmp2);
+        let tmp4 = parseLine;
+        let tmp5 = parseLine(tmp2);
         if (tmp5) {
           let arr = items.push(tmp5);
           items1 = items;
           tmp3 = num;
           let tmp10 = tmp5;
         } else {
-          let tmp6 = closure_2;
+          let tmp6 = regex;
           items1 = items;
           tmp3 = num;
           let tmp7 = tmp5;
-          if (!closure_2.test(tmp2)) {
+          if (!regex.test(tmp2)) {
             items1 = [];
             tmp3 = num2;
             let tmp8 = tmp5;

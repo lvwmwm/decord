@@ -1,47 +1,50 @@
-// Module ID: 15392
-// Function ID: 117352
+// Module ID: 15509
+// Function ID: 119526
 // Name: openAddModeratorsActionSheet
-// Dependencies: []
+// Dependencies: [5, 31, 1917, 1910, 1838, 653, 7485, 33, 675, 4098, 15510, 1934, 1456, 566, 4948, 8413, 1356, 1881, 4471, 1212, 4140, 8414, 3830, 1273, 8421, 4541, 5503, 5165, 11254, 2]
 // Exports: default
 
-// Module 15392 (openAddModeratorsActionSheet)
+// Module 15509 (openAddModeratorsActionSheet)
+import ME from "ME";
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import { AnalyticEvents } from "ME";
+import { RowType } from "RowType";
+import jsxProd from "jsxProd";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function openAddModeratorsActionSheet(channel) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(dependencyMap[8]);
+  let obj = importDefault(675);
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
-  const obj2 = importDefault(dependencyMap[9]);
+  const obj2 = importDefault(4098);
   obj = { channel, canSkip: flag };
-  obj2.openLazy(arg1(dependencyMap[11])(dependencyMap[10], dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
+  obj2.openLazy(require(1934) /* maybeLoadBundle */(15510, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-const RowType = arg1(dependencyMap[6]).RowType;
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");
 
 export default function ViewModerators(channel) {
   let guild;
   let sortedGuildRoles;
   channel = channel.channel;
-  const arg1 = channel;
-  let importAll;
+  let canUpdateStageChannelModerators;
   function handleRemovePermission(name) {
-    const channel = name;
+    let closure_0 = name;
     let obj = channel(handleRemovePermission[14]);
-    if (name.rowType === constants.ROLE) {
+    if (name.rowType === outer1_9.ROLE) {
       let MEMBER = channel(handleRemovePermission[17]).PermissionOverwriteType.ROLE;
     } else {
       MEMBER = channel(handleRemovePermission[17]).PermissionOverwriteType.MEMBER;
     }
-    let closure_2 = obj.removeModeratorOverwrite(name.id, MEMBER, channel);
+    let closure_2 = obj.removeModeratorOverwrite(name.id, MEMBER, closure_0);
     obj = {};
     const intl = channel(handleRemovePermission[19]).intl;
     obj.title = intl.string(channel(handleRemovePermission[19]).t.GuPYQB);
@@ -49,11 +52,11 @@ export default function ViewModerators(channel) {
     obj = { name: name.name };
     obj.body = intl2.format(channel(handleRemovePermission[19]).t.xERCnZ, obj);
     const intl3 = channel(handleRemovePermission[19]).intl;
-    obj.cancelText = intl3.string(channel(handleRemovePermission[19]).t.ETE/oC);
+    obj.cancelText = intl3.string(channel(handleRemovePermission[19]).t["ETE/oC"]);
     const intl4 = channel(handleRemovePermission[19]).intl;
     obj.confirmText = intl4.string(channel(handleRemovePermission[19]).t.fKxYb0);
     // CreateGeneratorClosureLongIndex (0x67)
-    const guildId = renderRowItem(tmp);
+    let closure_1 = renderRowItem(tmp);
     obj.onConfirm = function() {
       return callback(...arguments);
     };
@@ -62,9 +65,9 @@ export default function ViewModerators(channel) {
     guildId(handleRemovePermission[18]).show(obj);
   }
   function renderRowItem(id) {
-    return callback(guildId(handleRemovePermission[24]), { guildId: channel.guild_id, item: id, channelId: channel.id, showType: true, showRemove: canUpdateStageChannelModerators, onRemove: handleRemovePermission }, id.id);
+    return outer1_10(guildId(handleRemovePermission[24]), { guildId: channel.guild_id, item: id, channelId: channel.id, showType: true, showRemove: canUpdateStageChannelModerators, onRemove: handleRemovePermission }, id.id);
   }
-  let obj = arg1(handleRemovePermission[12]);
+  let obj = channel(handleRemovePermission[12]);
   const navigation = obj.useNavigation();
   obj = {
     headerRight() {
@@ -73,23 +76,21 @@ export default function ViewModerators(channel) {
   };
   navigation.setOptions(obj);
   const guildId = channel.getGuildId();
-  const importDefault = guildId;
-  let obj3 = arg1(handleRemovePermission[13]);
-  const items = [closure_7, closure_6];
+  let obj3 = channel(handleRemovePermission[13]);
+  const items = [closure_7, _createForOfIteratorHelperLoose];
   const items1 = [guildId];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => {
-    const obj = { guild: guild.getGuild(guildId) };
+    const obj = { guild: outer1_7.getGuild(guildId) };
     let sortedRoles;
     if (null != guildId) {
-      sortedRoles = sortedRoles.getSortedRoles(guildId);
+      sortedRoles = outer1_6.getSortedRoles(guildId);
     }
     obj.sortedGuildRoles = sortedRoles;
     return obj;
   }, items1);
   ({ guild, sortedGuildRoles } = stateFromStoresObject);
-  let obj4 = arg1(handleRemovePermission[14]);
-  const canUpdateStageChannelModerators = obj4.useCanUpdateStageChannelModerators(channel.id);
-  importAll = canUpdateStageChannelModerators;
+  let obj4 = channel(handleRemovePermission[14]);
+  canUpdateStageChannelModerators = obj4.useCanUpdateStageChannelModerators(channel.id);
   if (null != guild) {
     if (null != sortedGuildRoles) {
       let isGuildStageVoiceResult = channel.isGuildStageVoice();
@@ -97,46 +98,46 @@ export default function ViewModerators(channel) {
       if (null != guild) {
         id = guild.id;
       }
-      const memberIds = memberIds.getMemberIds(id);
-      let obj5 = importAll(handleRemovePermission[15]);
-      const existingMembersRows = obj5.getExistingMembersRows(memberIds, channel, guild, arg1(handleRemovePermission[16]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
-      const obj7 = importAll(handleRemovePermission[15]);
-      const existingRolesRowWithPermissionDisabled = obj7.getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, arg1(handleRemovePermission[16]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
+      memberIds = memberIds.getMemberIds(id);
+      let obj5 = canUpdateStageChannelModerators(handleRemovePermission[15]);
+      const existingMembersRows = obj5.getExistingMembersRows(memberIds, channel, guild, channel(handleRemovePermission[16]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
+      const obj7 = canUpdateStageChannelModerators(handleRemovePermission[15]);
+      const existingRolesRowWithPermissionDisabled = obj7.getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, channel(handleRemovePermission[16]).MODERATE_STAGE_CHANNEL_PERMISSIONS);
       if (isGuildStageVoiceResult) {
         obj = {};
         const obj1 = { paddingHorizontal: 16 };
         obj.style = obj1;
         obj.spacing = 16;
         const obj2 = {};
-        const intl = arg1(handleRemovePermission[19]).intl;
-        obj2.title = intl.string(arg1(handleRemovePermission[19]).t.f7VbhF);
+        let intl = channel(handleRemovePermission[19]).intl;
+        obj2.title = intl.string(channel(handleRemovePermission[19]).t.f7VbhF);
         obj2.hasIcons = true;
-        obj3 = { icon: callback(arg1(handleRemovePermission[28]).CirclePlusIcon, {}) };
-        const intl2 = arg1(handleRemovePermission[19]).intl;
-        obj3.label = intl2.string(arg1(handleRemovePermission[19]).t.n3bcy8);
+        obj3 = { icon: callback(channel(handleRemovePermission[28]).CirclePlusIcon, {}) };
+        let intl2 = channel(handleRemovePermission[19]).intl;
+        obj3.label = intl2.string(channel(handleRemovePermission[19]).t.n3bcy8);
         obj3.onPress = function onPress() {
           if (null != channel) {
-            callback2(channel);
+            outer1_12(channel);
           }
         };
         obj3.disabled = !canUpdateStageChannelModerators;
         obj3.arrow = true;
-        obj2.children = callback(arg1(handleRemovePermission[27]).TableRow, obj3);
-        const items2 = [callback(arg1(handleRemovePermission[26]).TableRowGroup, obj2), , ];
+        obj2.children = callback(channel(handleRemovePermission[27]).TableRow, obj3);
+        const items2 = [callback(channel(handleRemovePermission[26]).TableRowGroup, obj2), , ];
         obj4 = {};
-        const intl3 = arg1(handleRemovePermission[19]).intl;
-        obj4.title = intl3.string(arg1(handleRemovePermission[19]).t.ghdVJL);
+        let intl3 = channel(handleRemovePermission[19]).intl;
+        obj4.title = intl3.string(channel(handleRemovePermission[19]).t.ghdVJL);
         obj4.hasIcons = true;
         obj4.children = existingRolesRowWithPermissionDisabled.map((arg0) => renderRowItem(arg0));
-        items2[1] = callback(arg1(handleRemovePermission[26]).TableRowGroup, obj4);
+        items2[1] = callback(channel(handleRemovePermission[26]).TableRowGroup, obj4);
         obj5 = {};
-        const intl4 = arg1(handleRemovePermission[19]).intl;
-        obj5.title = intl4.string(arg1(handleRemovePermission[19]).t.ghdVJL);
+        let intl4 = channel(handleRemovePermission[19]).intl;
+        obj5.title = intl4.string(channel(handleRemovePermission[19]).t.ghdVJL);
         obj5.hasIcons = true;
         obj5.children = existingMembersRows.map((arg0) => renderRowItem(arg0));
-        items2[2] = callback(arg1(handleRemovePermission[26]).TableRowGroup, obj5);
+        items2[2] = callback(channel(handleRemovePermission[26]).TableRowGroup, obj5);
         obj.children = items2;
-        isGuildStageVoiceResult = callback2(arg1(handleRemovePermission[25]).Stack, obj);
+        isGuildStageVoiceResult = callback2(channel(handleRemovePermission[25]).Stack, obj);
       }
       return isGuildStageVoiceResult;
     }

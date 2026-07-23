@@ -1,11 +1,10 @@
 // Module ID: 1889
-// Function ID: 21083
+// Function ID: 21084
 // Name: TableId
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 1889 (TableId)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/types/index.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/types/index.tsx");
 
 export const TableId = { Kv: "kv", KvCache: "kv_cache", Messages: "messages" };
 export const MAXIMUM_KEY_BITS = 5;

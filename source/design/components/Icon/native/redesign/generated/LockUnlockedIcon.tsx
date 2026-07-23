@@ -1,24 +1,26 @@
-// Module ID: 10329
-// Function ID: 79775
+// Module ID: 10342
+// Function ID: 79853
 // Name: LockUnlockedIcon
-// Dependencies: [3120562193, 469762065, 3187671056, 1728053265, 33554472, 4026531840]
+// Dependencies: [31, 33, 689, 3833, 10343, 2]
 // Exports: LockUnlockedIcon
 
-// Module 10329 (LockUnlockedIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/LockUnlockedIcon.tsx");
+// Module 10342 (LockUnlockedIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/LockUnlockedIcon.tsx");
 
 export const LockUnlockedIcon = function LockUnlockedIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(10343) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(10343) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,18 +1,17 @@
-// Module ID: 9804
-// Function ID: 76126
+// Module ID: 9811
+// Function ID: 76167
 // Name: navigateToThreadCreation
-// Dependencies: []
+// Dependencies: [7007, 3981, 4138, 2]
 // Exports: navigateToThreadCreation
 
-// Module 9804 (navigateToThreadCreation)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/threads/native/navigateToThreadCreation.tsx");
+// Module 9811 (navigateToThreadCreation)
+let result = require("transitionToChannel").fileFinishedImporting("modules/threads/native/navigateToThreadCreation.tsx");
 
 export const navigateToThreadCreation = function navigateToThreadCreation(channel, SUMMARY_ACTION_SHEET) {
-  const result = importDefault(dependencyMap[0]).openThreadCreationForMobile(channel, undefined, SUMMARY_ACTION_SHEET);
-  const obj = importDefault(dependencyMap[0]);
+  const result = importDefault(7007).openThreadCreationForMobile(channel, undefined, SUMMARY_ACTION_SHEET);
+  const obj = importDefault(7007);
   if (!obj2.navigateToCreateThread(channel.guild_id, channel.id)) {
-    require(dependencyMap[2]).transitionToChannel(channel.id);
-    const obj3 = require(dependencyMap[2]);
+    require(4138) /* transitionToChannel */.transitionToChannel(channel.id);
+    const obj3 = require(4138) /* transitionToChannel */;
   }
 };

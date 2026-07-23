@@ -1,53 +1,61 @@
-// Module ID: 12466
-// Function ID: 95226
+// Module ID: 12580
+// Function ID: 97382
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 27, 12581, 12583, 3, 477, 12582, 4677, 2]
 // Exports: getCompressionHandler
 
-// Module 12466 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12580 (_createForOfIteratorHelperLoose)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import supportsZstd from "supportsZstd";
+import module_12583 from "module_12583";
+import { NativeModules } from "get ActivityIndicator";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -95,7 +103,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_3(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -106,23 +114,16 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const NativeModules = arg1(dependencyMap[5]).NativeModules;
-const items = [];
-const tmp2 = () => {
+let items = [];
+let tmp2 = (() => {
   class BaseGatewayCompressionHandler {
     constructor(arg0) {
-      tmp = closure_6(this, BaseGatewayCompressionHandler);
+      tmp = outer1_6(this, BaseGatewayCompressionHandler);
       this._onDataReady = null;
       this._gatewayEncoding = arg0;
       return;
     }
   }
-  const arg1 = BaseGatewayCompressionHandler;
   let obj = {
     key: "bindWebSocket",
     value() {
@@ -153,14 +154,14 @@ const tmp2 = () => {
     }
   ];
   return callback3(BaseGatewayCompressionHandler, items, items1);
-}();
-items.push((arg0) => {
+})();
+items.push(((arg0) => {
   class DesktopZstdGatewayCompressionHandler {
     constructor(arg0) {
-      tmp = closure_6(this, DesktopZstdGatewayCompressionHandler);
+      tmp = outer1_6(this, DesktopZstdGatewayCompressionHandler);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_13(this, DesktopZstdGatewayCompressionHandler, items);
+      tmp2 = outer1_13(this, DesktopZstdGatewayCompressionHandler, items);
       tmp2._decoder = null;
       _gatewayEncoding = tmp2._gatewayEncoding;
       if (_gatewayEncoding.wantsString()) {
@@ -176,12 +177,11 @@ items.push((arg0) => {
       } else {
         tmp2._decoder = null;
       }
-      obj = DesktopZstdGatewayCompressionHandler(closure_2[6]);
+      obj = DesktopZstdGatewayCompressionHandler(outer1_2[6]);
       tmp2._stream = obj.createZstdContextWeb();
       return tmp2;
     }
   }
-  const arg1 = DesktopZstdGatewayCompressionHandler;
   callback2(DesktopZstdGatewayCompressionHandler, arg0);
   let obj = {
     key: "getAlgorithm",
@@ -189,7 +189,7 @@ items.push((arg0) => {
       return "zstd-stream";
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "usesLegacyCompression",
     value() {
@@ -242,15 +242,15 @@ items.push((arg0) => {
     }
   ];
   return callback3(DesktopZstdGatewayCompressionHandler, items, items1);
-}(tmp2));
-items.push((arg0) => {
+})(tmp2));
+items.push(((arg0) => {
   class PakoStreamGatewayCompressionHandler {
     constructor(arg0) {
-      tmp = closure_6(this, PakoStreamGatewayCompressionHandler);
+      tmp = outer1_6(this, PakoStreamGatewayCompressionHandler);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_13(this, PakoStreamGatewayCompressionHandler, items);
-      tmp2._pako = PakoStreamGatewayCompressionHandler(closure_2[7]);
+      tmp2 = outer1_13(this, PakoStreamGatewayCompressionHandler, items);
+      tmp2._pako = PakoStreamGatewayCompressionHandler(outer1_2[7]);
       tmp2._usesZstd = false;
       tmp2._zstdDecoder = null;
       tmp2._zstdStream = null;
@@ -268,7 +268,6 @@ items.push((arg0) => {
       return tmp2;
     }
   }
-  const arg1 = PakoStreamGatewayCompressionHandler;
   callback2(PakoStreamGatewayCompressionHandler, arg0);
   let obj = {
     key: "getAlgorithm",
@@ -276,7 +275,7 @@ items.push((arg0) => {
       return "zlib-stream";
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "usesLegacyCompression",
     value() {
@@ -387,7 +386,7 @@ items.push((arg0) => {
           }
         }
       } else {
-        let tmp3 = callback(closure_2[8]);
+        let tmp3 = outer1_1(outer1_2[8]);
         const prototype = tmp3.prototype;
         tmp3 = new tmp3("GatewayCompressionHandler");
         tmp3.error("flush end happened on closed compression adapter");
@@ -403,19 +402,18 @@ items.push((arg0) => {
     }
   ];
   return callback3(PakoStreamGatewayCompressionHandler, items, items1);
-}(tmp2));
-items.push((arg0) => {
+})(tmp2));
+items.push(((arg0) => {
   class PakoGatewayCompressionHandler {
     constructor(arg0) {
       items = [...arguments];
-      tmp = closure_6(this, PakoGatewayCompressionHandler);
+      tmp = outer1_6(this, PakoGatewayCompressionHandler);
       items1 = [...items];
-      tmp2 = closure_13(this, PakoGatewayCompressionHandler, items1);
-      tmp2._pako = PakoGatewayCompressionHandler(closure_2[7]);
+      tmp2 = outer1_13(this, PakoGatewayCompressionHandler, items1);
+      tmp2._pako = PakoGatewayCompressionHandler(outer1_2[7]);
       return tmp2;
     }
   }
-  const arg1 = PakoGatewayCompressionHandler;
   callback2(PakoGatewayCompressionHandler, arg0);
   let obj = {
     key: "getAlgorithm",
@@ -423,7 +421,7 @@ items.push((arg0) => {
       return null;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "usesLegacyCompression",
     value() {
@@ -462,7 +460,7 @@ items.push((arg0) => {
 
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "canUse",
       value() {
@@ -471,19 +469,18 @@ items.push((arg0) => {
     }
   ];
   return callback3(PakoGatewayCompressionHandler, items, items1);
-}(tmp2));
-items.push((arg0) => {
+})(tmp2));
+items.push(((arg0) => {
   class MobileGatewayCompressionHandler {
     constructor(arg0) {
-      tmp = closure_6(this, MobileGatewayCompressionHandler);
+      tmp = outer1_6(this, MobileGatewayCompressionHandler);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_13(this, MobileGatewayCompressionHandler, items);
+      tmp2 = outer1_13(this, MobileGatewayCompressionHandler, items);
       tmp2._socketId = null;
       return tmp2;
     }
   }
-  const arg1 = MobileGatewayCompressionHandler;
   callback2(MobileGatewayCompressionHandler, arg0);
   let obj = {
     key: "bindWebSocket",
@@ -491,31 +488,31 @@ items.push((arg0) => {
       const self = this;
       this.close();
       this._socketId = _socketId._socketId;
-      const obj = MobileGatewayCompressionHandler(closure_2[6]);
-      const supportsZstdResult = MobileGatewayCompressionHandler(closure_2[6]).supportsZstd();
-      const isAndroidResult = MobileGatewayCompressionHandler(closure_2[9]).isAndroid();
+      const obj = MobileGatewayCompressionHandler(outer1_2[6]);
+      const supportsZstdResult = MobileGatewayCompressionHandler(outer1_2[6]).supportsZstd();
+      const isAndroidResult = MobileGatewayCompressionHandler(outer1_2[9]).isAndroid();
       if (supportsZstdResult) {
         if (isAndroidResult) {
-          if (null != MobileGatewayCompressionHandler(closure_2[10]).default) {
-            const result = MobileGatewayCompressionHandler(closure_2[10]).default.enableZstdStreamSupport(self._socketId);
-            const _default = MobileGatewayCompressionHandler(closure_2[10]).default;
+          if (null != MobileGatewayCompressionHandler(outer1_2[10]).default) {
+            const result = MobileGatewayCompressionHandler(outer1_2[10]).default.enableZstdStreamSupport(self._socketId);
+            const _default = MobileGatewayCompressionHandler(outer1_2[10]).default;
           }
         } else {
-          const DCDCompressionManager2 = closure_8.DCDCompressionManager;
+          const DCDCompressionManager2 = outer1_8.DCDCompressionManager;
           const result1 = DCDCompressionManager2.enableZstdStreamSupport(self._socketId, 0);
         }
       } else if (isAndroidResult) {
-        if (null != MobileGatewayCompressionHandler(closure_2[10]).default) {
-          const result2 = MobileGatewayCompressionHandler(closure_2[10]).default.enableZlibStreamSupport(self._socketId);
-          const _default2 = MobileGatewayCompressionHandler(closure_2[10]).default;
+        if (null != MobileGatewayCompressionHandler(outer1_2[10]).default) {
+          const result2 = MobileGatewayCompressionHandler(outer1_2[10]).default.enableZlibStreamSupport(self._socketId);
+          const _default2 = MobileGatewayCompressionHandler(outer1_2[10]).default;
         }
       } else {
-        const DCDCompressionManager = closure_8.DCDCompressionManager;
+        const DCDCompressionManager = outer1_8.DCDCompressionManager;
         const result3 = DCDCompressionManager.enableZlibStreamSupport(self._socketId);
       }
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "getAlgorithm",
     value() {
@@ -554,15 +551,15 @@ items.push((arg0) => {
       this._socketId = null;
       if (null !== _socketId) {
         if (obj.isAndroid()) {
-          if (null != MobileGatewayCompressionHandler(closure_2[10]).default) {
-            const result = MobileGatewayCompressionHandler(closure_2[10]).default.disableZlibStreamSupport(_socketId);
-            const _default = MobileGatewayCompressionHandler(closure_2[10]).default;
+          if (null != MobileGatewayCompressionHandler(outer1_2[10]).default) {
+            const result = MobileGatewayCompressionHandler(outer1_2[10]).default.disableZlibStreamSupport(_socketId);
+            const _default = MobileGatewayCompressionHandler(outer1_2[10]).default;
           }
         } else {
-          const DCDCompressionManager = closure_8.DCDCompressionManager;
+          const DCDCompressionManager = outer1_8.DCDCompressionManager;
           const result1 = DCDCompressionManager.disableZlibStreamSupport(_socketId);
         }
-        const obj = MobileGatewayCompressionHandler(closure_2[9]);
+        obj = MobileGatewayCompressionHandler(outer1_2[9]);
       }
     }
   };
@@ -571,24 +568,23 @@ items.push((arg0) => {
       key: "canUse",
       value() {
         if (obj.isAndroid()) {
-          let tmp3 = null != MobileGatewayCompressionHandler(closure_2[10]).default;
+          let tmp3 = null != MobileGatewayCompressionHandler(outer1_2[10]).default;
         } else {
-          tmp3 = null != closure_8.DCDCompressionManager;
+          tmp3 = null != outer1_8.DCDCompressionManager;
         }
         return tmp3;
       }
     }
   ];
   return callback3(MobileGatewayCompressionHandler, items, items1);
-}(tmp2));
-const tmp7 = (arg0) => {
+})(tmp2));
+const tmp7 = ((arg0) => {
   class NullGatewayCompressionHandler {
     constructor() {
-      tmp = closure_6(this, NullGatewayCompressionHandler);
-      return closure_13(this, NullGatewayCompressionHandler, arguments);
+      tmp = outer1_6(this, NullGatewayCompressionHandler);
+      return outer1_13(this, NullGatewayCompressionHandler, arguments);
     }
   }
-  const arg1 = NullGatewayCompressionHandler;
   callback2(NullGatewayCompressionHandler, arg0);
   let obj = {
     key: "getAlgorithm",
@@ -633,15 +629,16 @@ const tmp7 = (arg0) => {
     }
   ];
   return callback3(NullGatewayCompressionHandler, items, items1);
-}(tmp2);
+})(tmp2);
+let closure_10 = tmp7;
 items.push(tmp7);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
+let result = require("_inherits").fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
 
-export const getCompressionHandler = function getCompressionHandler(closure_15) {
-  const ProcessArgs = arg1(dependencyMap[11]).ProcessArgs;
+export const getCompressionHandler = function getCompressionHandler(outer1_15) {
+  const ProcessArgs = require(4677) /* ProcessArgs */.ProcessArgs;
   if (ProcessArgs.isDiscordGatewayPlaintextSet()) {
     const prototype3 = tmp7.prototype;
-    const tmp19 = new tmp7(closure_15);
+    const tmp19 = new tmp7(outer1_15);
     return tmp19;
   } else {
     const tmp3 = _createForOfIteratorHelperLoose(items);
@@ -654,11 +651,11 @@ export const getCompressionHandler = function getCompressionHandler(closure_15) 
         iter2 = iter3;
       }
       const prototype = value.prototype;
-      value = new value(closure_15);
+      value = new value(outer1_15);
       return value;
     }
     const prototype2 = tmp7.prototype;
-    const tmp13 = new tmp7(closure_15);
+    const tmp13 = new tmp7(outer1_15);
     return tmp13;
   }
 };

@@ -1,13 +1,13 @@
-// Module ID: 6479
-// Function ID: 50651
+// Module ID: 6484
+// Function ID: 50680
 // Name: ServerIconLilQuackSPondverseExample
-// Dependencies: []
+// Dependencies: [33, 5085, 6485, 2]
 // Exports: ServerIconLilQuackSPondverseExample
 
-// Module 6479 (ServerIconLilQuackSPondverseExample)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconLilQuackSPondverseExample.native.tsx");
+// Module 6484 (ServerIconLilQuackSPondverseExample)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconLilQuackSPondverseExample.native.tsx");
 
 export const ServerIconLilQuackSPondverseExample = function ServerIconLilQuackSPondverseExample(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ServerIconLilQuackSPondverseExample = function ServerIconLilQuackSP
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6485) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ServerIconLilQuackSPondverseExample = function ServerIconLilQuackSP
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

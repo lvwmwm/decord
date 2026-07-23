@@ -1,22 +1,24 @@
-// Module ID: 11280
-// Function ID: 87806
+// Module ID: 11290
+// Function ID: 87856
 // Name: AppLauncherList
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 1557, 11221, 1273, 11291, 1212, 5772, 2]
 // Exports: AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 11280 (AppLauncherList)
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: {}, emptyStateImage: { flex: 0 } });
-const obj2 = arg1(dependencyMap[3]);
-const forwardRefResult = importAllResult.forwardRef((contentContainerStyle) => {
+// Module 11290 (AppLauncherList)
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
+const forwardRefResult = require("result").forwardRef((contentContainerStyle) => {
   let tmp = arg1;
-  const bottom = importDefault(dependencyMap[4])().bottom;
-  let obj = arg1(dependencyMap[5]);
+  const bottom = importDefault(1557)().bottom;
+  let obj = require(11221) /* useAppLauncherFlashListProps */;
   const appLauncherFlashListProps = obj.useAppLauncherFlashListProps();
   obj = { contentContainerStyle: items, scrollIndicatorInsets: { bottom } };
-  const items = [{ paddingBottom: bottom }, contentContainerStyle.contentContainerStyle];
+  items = [{ paddingBottom: bottom }, contentContainerStyle.contentContainerStyle];
   const scrollerRef = appLauncherFlashListProps.scrollerRef;
   if (null != scrollerRef) {
     tmp = scrollerRef;
@@ -26,24 +28,24 @@ const forwardRefResult = importAllResult.forwardRef((contentContainerStyle) => {
   obj["animatedOnScroll"] = appLauncherFlashListProps.onScroll;
   obj["simultaneousHandlers"] = appLauncherFlashListProps.gestureRef;
   obj["animatedProps"] = appLauncherFlashListProps.animatedProps;
-  return jsx(importDefault(dependencyMap[5]), obj);
+  return jsx(importDefault(11221), { contentContainerStyle: items, scrollIndicatorInsets: { bottom } });
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");
 
 export const AppLauncherList = forwardRefResult;
 export const AppLauncherListEmptyState = function AppLauncherListEmptyState() {
   const tmp = callback();
-  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: importDefault(dependencyMap[7]), darkSource: importDefault(dependencyMap[7]) };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.title = intl.string(arg1(dependencyMap[8]).t.vYocDz);
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[8]).t.V6nAfF);
-  return jsx(arg1(dependencyMap[6]).EmptyState, obj);
+  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: importDefault(11291), darkSource: importDefault(11291) };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.vYocDz);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.V6nAfF);
+  return jsx(require(1273) /* Button */.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: importDefault(11291), darkSource: importDefault(11291) });
 };
 export const AppLauncherListSearchBar = function AppLauncherListSearchBar(arg0) {
   let obj = { style: callback().searchBarContainer };
   obj = { size: "md" };
   const merged = Object.assign(arg0);
-  obj.children = jsx(arg1(dependencyMap[9]).SearchField, obj);
-  return <View {...obj} />;
+  obj.children = jsx(require(5772) /* SearchField */.SearchField, { size: "md" });
+  return <View size="md" />;
 };

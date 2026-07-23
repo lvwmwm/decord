@@ -1,9 +1,18 @@
-// Module ID: 4307
-// Function ID: 37732
+// Module ID: 4311
+// Function ID: 37764
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4195, 22, 4194, 566, 686, 2]
 
-// Module 4307 (_isNativeReflectConstruct)
+// Module 4311 (_isNativeReflectConstruct)
+import apply from "apply";
+import isStreamKey from "isStreamKey";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { StreamTypes } from "StreamIssueReportReasons";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,28 +26,22 @@ function reset() {
   let closure_9 = {};
   let closure_10 = {};
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const StreamTypes = arg1(dependencyMap[5]).StreamTypes;
 let closure_9 = {};
 let closure_10 = {};
-const set = new Set();
-let tmp3 = (Store) => {
+let set = new Set();
+let tmp3 = ((Store) => {
   class ApplicationStreamPreviewStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, ApplicationStreamPreviewStore);
-      obj = closure_6(ApplicationStreamPreviewStore);
-      tmp2 = closure_5;
-      if (closure_12()) {
+      tmp = outer1_3(this, ApplicationStreamPreviewStore);
+      obj = outer1_6(ApplicationStreamPreviewStore);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -47,24 +50,24 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ApplicationStreamPreviewStore;
   callback2(ApplicationStreamPreviewStore, Store);
   let obj = {
     key: "getPreviewURL",
     value(guildId, channelId, ownerId) {
-      let obj = ApplicationStreamPreviewStore(closure_2[7]);
+      let obj = ApplicationStreamPreviewStore(outer1_2[7]);
       obj = {};
       if (null != guildId) {
-        let CALL = constants.GUILD;
+        let CALL = outer1_8.GUILD;
       } else {
-        CALL = constants.CALL;
+        CALL = outer1_8.CALL;
       }
       obj.streamType = CALL;
       obj.guildId = guildId;
       obj.channelId = channelId;
       obj.ownerId = ownerId;
+      const tmp3 = outer1_9[obj.encodeStreamKey(obj, obj)];
       let url;
-      if (null != closure_9[obj.encodeStreamKey(obj, obj)]) {
+      if (null != tmp3) {
         url = tmp3.url;
       }
       return url;
@@ -74,12 +77,12 @@ let tmp3 = (Store) => {
   obj = {
     key: "shouldFetchPreview",
     value(guildId, channelId, ownerId) {
-      let obj = ApplicationStreamPreviewStore(closure_2[7]);
+      let obj = ApplicationStreamPreviewStore(outer1_2[7]);
       obj = {};
       if (null != guildId) {
-        let CALL = constants.GUILD;
+        let CALL = outer1_8.GUILD;
       } else {
-        CALL = constants.CALL;
+        CALL = outer1_8.CALL;
       }
       obj.streamType = CALL;
       obj.guildId = guildId;
@@ -87,7 +90,7 @@ let tmp3 = (Store) => {
       obj.ownerId = ownerId;
       const encodeStreamKeyResult = obj.encodeStreamKey(obj);
       let num = 0;
-      if (null != closure_10[encodeStreamKeyResult]) {
+      if (null != outer1_10[encodeStreamKeyResult]) {
         num = tmp5;
       }
       let tmp6 = null != tmp4;
@@ -103,7 +106,7 @@ let tmp3 = (Store) => {
         tmp8 = tmp6;
       }
       if (tmp8) {
-        tmp8 = !set.has(encodeStreamKeyResult);
+        tmp8 = !outer1_11.has(encodeStreamKeyResult);
       }
       return tmp8;
     }
@@ -112,7 +115,7 @@ let tmp3 = (Store) => {
   obj = {
     key: "getPreviewURLForStreamKey",
     value(streamKey) {
-      const decodeStreamKeyResult = ApplicationStreamPreviewStore(closure_2[7]).decodeStreamKey(streamKey);
+      const decodeStreamKeyResult = ApplicationStreamPreviewStore(outer1_2[7]).decodeStreamKey(streamKey);
       return this.getPreviewURL(decodeStreamKeyResult.guildId, decodeStreamKeyResult.channelId, decodeStreamKeyResult.ownerId);
     }
   };
@@ -120,33 +123,33 @@ let tmp3 = (Store) => {
   items[3] = {
     key: "getIsPreviewLoading",
     value(guildId, channelId, ownerId) {
-      let obj = ApplicationStreamPreviewStore(closure_2[7]);
+      let obj = ApplicationStreamPreviewStore(outer1_2[7]);
       obj = {};
       if (null != guildId) {
-        let CALL = constants.GUILD;
+        let CALL = outer1_8.GUILD;
       } else {
-        CALL = constants.CALL;
+        CALL = outer1_8.CALL;
       }
       obj.streamType = CALL;
       obj.guildId = guildId;
       obj.channelId = channelId;
       obj.ownerId = ownerId;
-      return set.has(obj.encodeStreamKey(obj));
+      return outer1_11.has(obj.encodeStreamKey(obj));
     }
   };
   return callback(ApplicationStreamPreviewStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "ApplicationStreamPreviewStore";
-tmp3 = new tmp3(importDefault(dependencyMap[9]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: reset,
   LOGOUT: reset,
   STREAM_PREVIEW_FETCH_START: function handleStreamPreviewFetch(streamKey) {
     streamKey = streamKey.streamKey;
     let num = 0;
-    if (null != closure_10[streamKey]) {
+    if (null != dependencyMap[streamKey]) {
       num = tmp2;
     }
-    closure_10[streamKey] = num + 1;
+    dependencyMap[streamKey] = num + 1;
     set.add(streamKey);
   },
   STREAM_PREVIEW_FETCH_SUCCESS: function handleStreamPreviewFetchSuccess(streamKey) {
@@ -162,7 +165,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
     const obj = { url: null };
     const timestamp = Date.now();
     if (null == retryAfter) {
-      retryAfter = 10000 * closure_10[streamKey];
+      retryAfter = 10000 * dependencyMap[streamKey];
     }
     obj.expires = timestamp + retryAfter;
     closure_9[streamKey] = obj;
@@ -170,10 +173,10 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
   },
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
-    let reduced = !importDefault(dependencyMap[6]).isEmpty(closure_9);
+    let reduced = !importDefault(22).isEmpty(closure_9);
     if (!reduced) {
-      reduced = !importDefault(dependencyMap[6]).isEmpty(closure_10);
-      const obj2 = importDefault(dependencyMap[6]);
+      reduced = !importDefault(22).isEmpty(closure_10);
+      const obj2 = importDefault(22);
     }
     if (reduced) {
       reduced = voiceStates.reduce((arg0, guildId) => {
@@ -181,20 +184,20 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
         if (guildId.selfStream) {
           return arg0;
         } else {
-          let obj = callback(closure_2[7]);
+          let obj = outer1_0(outer1_2[7]);
           obj = {};
           if (null != guildId) {
-            let CALL = constants.GUILD;
+            let CALL = outer1_8.GUILD;
           } else {
-            CALL = constants.CALL;
+            CALL = outer1_8.CALL;
           }
           obj.streamType = CALL;
           obj.guildId = guildId;
-          obj.channelId = tmp2;
-          obj.ownerId = tmp;
+          obj.channelId = tmp5;
+          obj.ownerId = tmp4;
           obj.encodeStreamKey(obj);
-          delete r2[r1];
-          delete r0[r1];
+          delete tmp3[tmp2];
+          delete tmp[tmp2];
           return true;
         }
       }, false);
@@ -202,6 +205,6 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
     return reduced;
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("stores/ApplicationStreamPreviewStore.tsx");
+let result = set.fileFinishedImporting("stores/ApplicationStreamPreviewStore.tsx");
 
 export default tmp3;

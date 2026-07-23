@@ -1,20 +1,19 @@
-// Module ID: 10511
-// Function ID: 82077
+// Module ID: 10521
+// Function ID: 82127
 // Name: showActivitiesInvalidPermissionsAlert
-// Dependencies: []
+// Dependencies: [4470, 1212, 2]
 // Exports: showActivitiesInvalidPermissionsAlert
 
-// Module 10511 (showActivitiesInvalidPermissionsAlert)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/voice_calls/showActivitiesInvalidPermissionsAlert.tsx");
+// Module 10521 (showActivitiesInvalidPermissionsAlert)
+const result = require("set").fileFinishedImporting("modules/voice_calls/showActivitiesInvalidPermissionsAlert.tsx");
 
 export const showActivitiesInvalidPermissionsAlert = function showActivitiesInvalidPermissionsAlert() {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(4470);
   obj = {};
-  const intl = require(dependencyMap[1]).intl;
-  obj.title = intl.string(require(dependencyMap[1]).t.otsg2R);
-  const intl2 = require(dependencyMap[1]).intl;
-  obj.body = intl2.string(require(dependencyMap[1]).t./Yx5qX);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.otsg2R);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl2.string(require(1212) /* getSystemLocale */.t["/Yx5qX"]);
   obj.hideActionSheet = false;
   obj.show(obj);
 };

@@ -1,47 +1,45 @@
-// Module ID: 13552
-// Function ID: 102799
-// Dependencies: [0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0]
+// Module ID: 13666
+// Function ID: 104955
+// Dependencies: [5, 653, 1212, 686, 507, 675, 4942, 480, 4029, 2]
 
-// Module 13552
-import closure_3 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13666
+import expandLocation from "expandLocation";
+import ME from "ME";
 
-({ AnalyticEvents: closure_4, Endpoints: closure_5 } = __exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/unique_usernames/UniqueUsernamesActionCreators.tsx");
+let closure_4;
+let closure_5;
+const require = arg1;
+({ AnalyticEvents: closure_4, Endpoints: closure_5 } = ME);
+const result = require("getSystemLocale").fileFinishedImporting("modules/unique_usernames/UniqueUsernamesActionCreators.tsx");
 
 export default {
   resetSuggestions() {
-    return importDefault(dependencyMap[3]).dispatch({ type: "UNIQUE_USERNAME_SUGGESTIONS_RESET" });
+    return importDefault(686).dispatch({ type: "UNIQUE_USERNAME_SUGGESTIONS_RESET" });
   },
   fetchSuggestionsRegistration(globalName) {
     let num = arg1;
-    const arg1 = globalName;
+    let closure_0 = globalName;
     if (arg1 === undefined) {
       num = 1500;
     }
-    const importDefault = num;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
-  attemptUsername(arg0, arg1, closure_2, closure_3) {
+  attemptUsername(arg0, arg1, outer1_2, outer1_3) {
     let str = arg1;
-    let flag = closure_2;
-    let flag2 = closure_3;
-    arg1 = arg0;
+    let flag = outer1_2;
+    let flag2 = outer1_3;
+    let closure_0 = arg0;
     if (arg1 === undefined) {
       str = "modal";
     }
-    const importDefault = str;
     if (flag === undefined) {
       flag = false;
     }
-    const dependencyMap = flag;
     if (flag2 === undefined) {
       flag2 = false;
     }
-    const callback = flag2;
     // CreateGeneratorClosureLongIndex (0x67)
-    return callback(tmp)();
+    return flag2(tmp)();
   }
 };

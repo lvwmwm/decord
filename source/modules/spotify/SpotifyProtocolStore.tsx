@@ -1,37 +1,38 @@
-// Module ID: 10892
-// Function ID: 84677
+// Module ID: 10902
+// Function ID: 84726
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 10892 (_isNativeReflectConstruct)
+// Module 10902 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = false;
-let tmp2 = (Store) => {
+let c5 = false;
+let tmp2 = ((Store) => {
   class SpotifyProtocolStore {
     constructor() {
       self = this;
       tmp = SpotifyProtocolStore(this, SpotifyProtocolStore);
-      obj = closure_3(SpotifyProtocolStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(SpotifyProtocolStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,24 +41,23 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = SpotifyProtocolStore;
   callback2(SpotifyProtocolStore, Store);
   const items = [
     {
       key: "isProtocolRegistered",
       value() {
-        return closure_5;
+        return outer1_5;
       }
     }
   ];
   return callback(SpotifyProtocolStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "SpotifyProtocolStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   SPOTIFY_SET_PROTOCOL_REGISTERED: function handleSetProtocolRegistered(isRegistered) {
     isRegistered = isRegistered.isRegistered;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/spotify/SpotifyProtocolStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/spotify/SpotifyProtocolStore.tsx");
 
 export default tmp2;

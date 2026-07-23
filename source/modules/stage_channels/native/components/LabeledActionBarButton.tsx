@@ -1,29 +1,35 @@
-// Module ID: 10730
-// Function ID: 83445
+// Module ID: 10740
+// Function ID: 83494
 // Name: IconPosition
-// Dependencies: []
+// Dependencies: [31, 27, 482, 33, 4130, 4973, 689, 4660, 1273, 2]
 // Exports: LabeledActionButton
 
-// Module 10730 (IconPosition)
-importAll(dependencyMap[0]);
-({ Image: closure_2, View: closure_3 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { "Null": "is_managed", "Null": "scalar", "Null": 8, "Null": 43, "Null": "number_line_settings", backgroundColor: arg1(dependencyMap[5]).ACTION_BAR_BUTTON_BACKGROUND };
-obj.buttonContainer = obj;
-obj.container = { marginHorizontal: 12 };
-obj.containerWithLabel = {};
-obj.pressable = {};
-obj.buttonContent = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
-const tmp4 = arg1(dependencyMap[3]);
-obj.buttonText = { color: importDefault(dependencyMap[6]).colors.WHITE, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
-obj.rightTextMargin = { jsx: null, padding: null };
-let closure_6 = obj.createStyles(obj);
-const obj2 = { LEFT: 0, [0]: "LEFT", RIGHT: 1, [1]: "RIGHT" };
-const obj1 = { color: importDefault(dependencyMap[6]).colors.WHITE, fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_SEMIBOLD };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stage_channels/native/components/LabeledActionBarButton.tsx");
+// Module 10740 (IconPosition)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2;
+let closure_3;
+let closure_4;
+let closure_5;
+const require = arg1;
+({ Image: closure_2, View: closure_3 } = get_ActivityIndicator);
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { minHeight: 56, minWidth: 56, alignItems: "center", justifyContent: "center", borderRadius: 28, backgroundColor: require("result").ACTION_BAR_BUTTON_BACKGROUND };
+_createForOfIteratorHelperLoose.buttonContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.container = { marginHorizontal: 12 };
+_createForOfIteratorHelperLoose.containerWithLabel = { minWidth: "50%", maxWidth: "70%", flexShrink: 1 };
+_createForOfIteratorHelperLoose.pressable = { marginHorizontal: 12, borderRadius: 28 };
+_createForOfIteratorHelperLoose.buttonContent = { display: "flex", flexDirection: "row", alignItems: "center" };
+let obj1 = { marginStart: 8, fontSize: 14, color: require("_createForOfIteratorHelperLoose").colors.WHITE, fontFamily: require("sum").Fonts.PRIMARY_SEMIBOLD, paddingStart: 3 };
+_createForOfIteratorHelperLoose.buttonText = obj1;
+_createForOfIteratorHelperLoose.rightTextMargin = { marginStart: 0, marginEnd: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { LEFT: 0, [0]: "LEFT", RIGHT: 1, [1]: "RIGHT" };
+const result = require("sum").fileFinishedImporting("modules/stage_channels/native/components/LabeledActionBarButton.tsx");
 
 export const IconPosition = obj2;
 export const LabeledActionButton = function LabeledActionButton(children) {
@@ -37,10 +43,10 @@ export const LabeledActionButton = function LabeledActionButton(children) {
   if (iconPosition === undefined) {
     iconPosition = obj2.LEFT;
   }
-  let obj = { 0: "ThreadLockIcon", 0: "png", 0: true, 9223372036854775807: "/assets/design/components/Icon/native/redesign/generated/images", -9223372036854775808: 24, 9223372036854775807: 24, 9223372036854775807: null };
+  let obj = { backgroundColor: 0, imageStyle: 0, children: 0, source: 0, disabled: 0, label: 0, iconPosition: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(children, obj);
-  const tmp4 = callback2();
+  const tmp4 = _createForOfIteratorHelperLoose();
   obj = {};
   const items = [tmp4.container, ];
   let containerWithLabel = null;
@@ -53,7 +59,7 @@ export const LabeledActionButton = function LabeledActionButton(children) {
   const merged1 = Object.assign(merged);
   const obj1 = {};
   const items1 = [tmp4.buttonContainer, , ];
-  const obj2 = {};
+  obj2 = {};
   let num = 1;
   if (disabled) {
     num = 0.25;
@@ -93,7 +99,7 @@ export const LabeledActionButton = function LabeledActionButton(children) {
     items4[1] = rightTextMargin;
     obj7.style = items4;
     obj7.children = label;
-    tmp20Result = callback(arg1(dependencyMap[8]).LegacyText, obj7);
+    tmp20Result = callback(require(1273) /* Button */.LegacyText, obj7);
     const tmp20 = callback;
   }
   items3[1] = tmp20Result;
@@ -107,6 +113,6 @@ export const LabeledActionButton = function LabeledActionButton(children) {
   const items5 = [closure_5(closure_3, obj4), children.children];
   obj1.children = items5;
   obj["children"] = closure_5(closure_3, obj1);
-  obj.children = callback(arg1(dependencyMap[7]).PressableOpacity, obj);
+  obj.children = callback(require(4660) /* PressableBase */.PressableOpacity, obj);
   return callback(closure_3, obj);
 };

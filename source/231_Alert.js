@@ -1,27 +1,28 @@
 // Module ID: 231
 // Function ID: 3230
 // Name: Alert
-// Dependencies: []
+// Dependencies: [6, 7, 232]
 
 // Module 231 (Alert)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export default () => {
+const require = arg1;
+
+export default (() => {
   class Alert {
     constructor() {
-      tmp = closure_2(this, Alert);
+      tmp = outer1_2(this, Alert);
       return;
     }
   }
-  const arg1 = Alert;
   let obj = {
     key: "alert",
     value: function alert(Alert, captureScreenshotError, items) {
       let str = Alert;
       let str2 = captureScreenshotError;
-      Alert = arg3;
-      const _default = Alert(constants[2]).default;
+      let closure_0 = arg3;
+      const _default = Alert(outer1_1[2]).default;
       if (_default) {
         const constants = _default.getConstants();
         let obj = {};
@@ -81,12 +82,12 @@ export default () => {
               }
             }
           } else {
-            let onDismiss = arg0 === closure_1.dismissed && arg3;
+            let onDismiss = arg0 === closure_1.dismissed && closure_0;
             if (onDismiss) {
-              onDismiss = arg3.onDismiss;
+              onDismiss = closure_0.onDismiss;
             }
             if (onDismiss) {
-              arg3.onDismiss();
+              closure_0.onDismiss();
             }
           }
         });
@@ -102,4 +103,4 @@ export default () => {
   };
   items[1] = obj;
   return callback(Alert, null, items);
-}();
+})();

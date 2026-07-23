@@ -1,22 +1,28 @@
-// Module ID: 16314
-// Function ID: 125878
+// Module ID: 16431
+// Function ID: 128052
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1557, 44, 16432, 5187, 5189, 4126, 1273, 4543, 4098, 1212, 2]
 // Exports: default
 
-// Module 16314 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
-importAll(dependencyMap[0]);
-({ TouchableOpacity: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
-obj.container = obj;
-obj.cancel = { alignSelf: "center" };
-let closure_7 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionTierArchiveOrDeleteActionSheet.tsx");
+// Module 16431 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.cancel = { alignSelf: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionTierArchiveOrDeleteActionSheet.tsx");
 
 export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(groupListingId) {
   let archiving;
@@ -28,36 +34,40 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   let headerText;
   groupListingId = groupListingId.groupListingId;
   ({ editStateId, guildId } = groupListingId);
-  const tmp = callback2();
-  importDefault(dependencyMap[6])(null != groupListingId, "group listing id cannot be null");
-  const tmp3 = importDefault(dependencyMap[7])(guildId, groupListingId, editStateId);
+  const tmp = _createForOfIteratorHelperLoose();
+  importDefault(44)(null != groupListingId, "group listing id cannot be null");
+  const tmp3 = importDefault(16432)(guildId, groupListingId, editStateId);
   let deleting = tmp3.deleting;
   ({ headerText, buttonText, descriptionText, handleArchiveOrDelete, archiving } = tmp3);
   let obj = { backdropOpacity: 0.8 };
   obj = { style: tmp.container };
-  obj = { contentContainerStyle: { paddingBottom: importDefault(dependencyMap[5])().bottom } };
-  const items = [callback(arg1(dependencyMap[10]).Text, { children: headerText }), callback(arg1(dependencyMap[11]).Spacer, { size: 12 }), callback(arg1(dependencyMap[10]).Text, { children: descriptionText }), callback(arg1(dependencyMap[11]).Spacer, { size: 24 }), , , ];
-  const obj1 = { "Bool(true)": "8321c7573efa1c0254c4a9b939ac0953", "Bool(true)": "ko.messages.8321c7573efa1c0254c4a9b939ac0953.compiled.messages", "Bool(true)": "jsona", text: buttonText, onPress: handleArchiveOrDelete };
+  obj = { contentContainerStyle: { paddingBottom: importDefault(1557)().bottom } };
+  const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: headerText };
+  const items = [callback(require(4126) /* Text */.Text, obj1), callback(require(1273) /* Button */.Spacer, { size: 12 }), , , , , ];
+  const obj2 = { variant: "text-sm/normal", color: "text-default", children: descriptionText };
+  items[2] = callback(require(4126) /* Text */.Text, obj2);
+  items[3] = callback(require(1273) /* Button */.Spacer, { size: 24 });
+  const obj3 = { text: buttonText, variant: "destructive", grow: true, onPress: handleArchiveOrDelete };
   if (!deleting) {
     deleting = archiving;
   }
-  obj1.disabled = deleting;
-  items[4] = callback(arg1(dependencyMap[12]).Button, obj1);
-  items[5] = callback(arg1(dependencyMap[11]).Spacer, { size: 24 });
-  const obj2 = {
+  obj3.disabled = deleting;
+  items[4] = callback(require(4543) /* Button */.Button, obj3);
+  items[5] = callback(require(1273) /* Button */.Spacer, { size: 24 });
+  const obj4 = {
     onPress() {
-      return callback(closure_2[13]).hideActionSheet();
+      return outer1_1(outer1_2[13]).hideActionSheet();
     },
     style: tmp.cancel,
     activeOpacity: 0.5
   };
-  const obj3 = { cachedAt: null, edpbxy: null };
-  const intl = arg1(dependencyMap[14]).intl;
-  obj3.children = intl.string(arg1(dependencyMap[14]).t.ETE/oC);
-  obj2.children = callback(arg1(dependencyMap[10]).Text, obj3);
-  items[6] = callback(closure_3, obj2);
+  const obj5 = { variant: "text-sm/semibold", color: "interactive-text-active" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj5.children = intl.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
+  obj4.children = callback(require(4126) /* Text */.Text, obj5);
+  items[6] = callback(closure_3, obj4);
   obj.children = items;
-  obj.children = closure_6(arg1(dependencyMap[9]).BottomSheetScrollView, obj);
+  obj.children = closure_6(require(5189) /* BottomSheetModal */.BottomSheetScrollView, obj);
   obj.children = callback(closure_4, obj);
-  return callback(arg1(dependencyMap[8]).BottomSheet, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };

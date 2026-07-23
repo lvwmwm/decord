@@ -1,17 +1,27 @@
 // Module ID: 1064
-// Function ID: 11376
+// Function ID: 11377
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [5, 15, 17, 18, 162, 57, 65, 6, 7, 794, 1009]
 
 // Module 1064 (_callSuper)
+import asyncGeneratorStep from "_slicedToArray";
+import "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _wrapNativeSuper from "_wrapNativeSuper";
+import _slicedToArray from "_slicedToArray";
+import _toConsumableArray from "_toConsumableArray";
+import _classCallCheck from "_toConsumableArray";
+import _defineProperties from "_classCallCheck";
+
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
-  const obj = callback3(arg1);
+  const obj = _getPrototypeOf(arg1);
   if (_isNativeReflectConstruct()) {
     if (!items) {
       items = [];
     }
-    let constructResult = Reflect.construct(obj, items, callback3(arg0).constructor);
+    let constructResult = Reflect.construct(obj, items, _getPrototypeOf(arg0).constructor);
   } else {
     constructResult = obj.apply(arg0, items);
   }
@@ -74,7 +84,7 @@ function stringifyRule(cssText) {
       if (str17.split("\"").length >= 3) {
         const _JSON = JSON;
         const _HermesInternal5 = HermesInternal;
-        const items = [true, "url(" + JSON.stringify(tmp.href) + ")"];
+        const items = ["@import", "url(" + JSON.stringify(tmp.href) + ")"];
         if ("" === tmp.layerName) {
           let arr = items.push("layer");
         } else if (tmp.layerName) {
@@ -140,7 +150,7 @@ function stringifyRule(cssText) {
       break;
     } else {
       cssText = cssText.cssText;
-      // break
+      break;
     }
     return cssText;
   }
@@ -213,7 +223,7 @@ function getInputValue(getAttribute) {
     if ("radio" !== arg2) {
       return value;
     }
-    let value = getAttribute.getAttribute("value") || "";
+    value = getAttribute.getAttribute("value") || "";
   }
   value = getAttribute.value;
 }
@@ -235,7 +245,7 @@ function extractFileExtension(href) {
   return tmp7;
 }
 function getImplementation$1(clearTimeout) {
-  if (closure_21[clearTimeout]) {
+  if (table[clearTimeout]) {
     return tmp2;
   } else {
     const _window = window;
@@ -261,7 +271,7 @@ function getImplementation$1(clearTimeout) {
       }
     }
     const _window3 = window;
-    closure_21[clearTimeout] = obj2.bind(window);
+    table[clearTimeout] = obj2.bind(window);
   }
 }
 function setTimeout$2() {
@@ -279,12 +289,12 @@ function genId() {
 }
 function absoluteToStylesheet(arg0, href) {
   let str = arg0;
-  const require = href;
+  let closure_0 = href;
   if (!arg0) {
     str = "";
   }
-  return str.replace(closure_26, (arg0, self) => {
-    let str = self;
+  return str.replace(closure_26, (arg0, arg1, arg2, arg3, arg4, arg5) => {
+    let str = arg1;
     let str2 = arg2;
     if (!arg2) {
       str2 = arg4;
@@ -299,13 +309,13 @@ function absoluteToStylesheet(arg0, href) {
       str = "";
     }
     if (str2) {
-      if (!regex.test(str2)) {
-        if (!regex2.test(str2)) {
-          if (regex3.test(str2)) {
+      if (!outer1_27.test(str2)) {
+        if (!outer1_28.test(str2)) {
+          if (outer1_29.test(str2)) {
             const _HermesInternal3 = HermesInternal;
             return "url(" + str + str2 + str + ")";
-          } else if ("/" === str2[0]) {
-            if (self.indexOf("//") > -1) {
+          } else if ("/" === 5) {
+            if (href.indexOf("//") > -1) {
               const parts = str6.split("/");
               const substr = parts.slice(0, 3);
               let str8 = substr.join("/");
@@ -315,7 +325,7 @@ function absoluteToStylesheet(arg0, href) {
             const _HermesInternal2 = HermesInternal;
             return "url(" + str + str8.split("?")[0] + str2 + str + ")";
           } else {
-            const parts1 = self.split("/");
+            const parts1 = href.split("/");
             const parts2 = str2.split("/");
             parts1.pop();
             const iter = parts2[Symbol.iterator]();
@@ -333,7 +343,7 @@ function absoluteToStylesheet(arg0, href) {
                   let arr1 = arr3.push(tmp7);
                 }
               }
-              // continue
+              continue;
             }
             const _HermesInternal = HermesInternal;
             return "url(" + str + parts1.join("/") + str + ")";
@@ -393,10 +403,11 @@ function transformAttribute(doc, arg1, arg2, arg3, arg4, arg5, size) {
         return absoluteToDoc(doc, arg3);
       }
       if ("srcset" === arg2) {
-        return function getAbsoluteSrcsetString(doc, str) {
-          function collectCharacters(closure_31) {
-            const match = closure_31.exec(arg1.substring(closure_1));
-            let str = "";
+        return (function getAbsoluteSrcsetString(doc, str) {
+          let closure_0 = str;
+          function collectCharacters(outer1_31) {
+            const match = outer1_31.exec(str.substring(closure_1));
+            str = "";
             if (match) {
               const first = match[0];
               closure_1 = closure_1 + first.length;
@@ -407,26 +418,26 @@ function transformAttribute(doc, arg1, arg2, arg3, arg4, arg5, size) {
           if ("" === str.trim()) {
             return str;
           } else {
-            let closure_1 = 0;
+            let c1 = 0;
             const items = [];
-            collectCharacters(closure_31);
-            if (closure_1 < str.length) {
+            collectCharacters(outer1_31);
+            if (c1 < str.length) {
               do {
-                let tmp = closure_30;
-                let collectCharactersResult1 = collectCharacters(closure_30);
+                let tmp = outer1_30;
+                let collectCharactersResult1 = collectCharacters(outer1_30);
                 if ("," === collectCharactersResult1.slice(-1)) {
-                  let tmp13 = closure_108;
-                  let arr = items.push(closure_108(doc, collectCharactersResult1.substring(0, collectCharactersResult1.length - 1)));
+                  let tmp13 = outer1_108;
+                  let arr = items.push(outer1_108(doc, collectCharactersResult1.substring(0, collectCharactersResult1.length - 1)));
                   let tmp8 = tmp18;
                   let tmp9 = tmp19;
                   let tmp10 = tmp20;
                 } else {
-                  let tmp24 = closure_108;
-                  let tmp25 = closure_108(doc, collectCharactersResult1);
+                  let tmp24 = outer1_108;
+                  let tmp25 = outer1_108(doc, collectCharactersResult1);
                   let str2 = "";
                   let flag = false;
-                  let tmp2 = closure_1;
-                  let charAtResult = str.charAt(closure_1);
+                  let tmp2 = c1;
+                  let charAtResult = str.charAt(c1);
                   let tmp4 = str2;
                   let tmp5 = flag;
                   while ("" !== charAtResult) {
@@ -435,12 +446,12 @@ function transformAttribute(doc, arg1, arg2, arg3, arg4, arg5, size) {
                         flag = false;
                       }
                       str2 = str2 + charAtResult;
-                      let tmp11 = closure_1;
-                      closure_1 = closure_1 + 1;
-                      // continue
+                      let tmp11 = c1;
+                      c1 = c1 + 1;
+                      continue;
                     } else if ("," === charAtResult) {
-                      let tmp6 = closure_1;
-                      closure_1 = closure_1 + 1;
+                      let tmp6 = c1;
+                      c1 = c1 + 1;
                       str = tmp25 + str2;
                       arr = items.push(str.trim());
                       tmp8 = str2;
@@ -456,19 +467,19 @@ function transformAttribute(doc, arg1, arg2, arg3, arg4, arg5, size) {
                   tmp9 = flag;
                   tmp10 = charAtResult;
                 }
-                let tmp15 = closure_31;
-                let collectCharactersResult2 = collectCharacters(closure_31);
-                let tmp17 = closure_1;
-                let tmp18 = tmp8;
-                let tmp19 = tmp9;
-                let tmp20 = tmp10;
-              } while (closure_1 < str.length);
+                let tmp15 = outer1_31;
+                let collectCharactersResult2 = collectCharacters(outer1_31);
+                let tmp17 = c1;
+                tmp18 = tmp8;
+                tmp19 = tmp9;
+                tmp20 = tmp10;
+              } while (c1 < str.length);
             }
             return items.join(", ");
           }
-        }(doc, arg3);
+        })(doc, arg3);
       } else if ("style" === arg2) {
-        const tmp6 = absoluteToStylesheet(arg3, getHref(doc));
+        let tmp6 = absoluteToStylesheet(arg3, getHref(doc));
         let tmp7 = size;
         if (size) {
           tmp7 = size.size > 0;
@@ -479,7 +490,7 @@ function transformAttribute(doc, arg1, arg2, arg3, arg4, arg5, size) {
           if (tmp6) {
             if (0 !== obj.size) {
               const parts = str11.split(";");
-              const items = [];
+              let items = [];
               const iter = parts[Symbol.iterator]();
               const str12 = iter.next();
               while (iter !== undefined) {
@@ -505,7 +516,7 @@ function transformAttribute(doc, arg1, arg2, arg3, arg4, arg5, size) {
                     arr = items.push(arr2);
                   }
                 }
-                // continue
+                continue;
               }
               let str16 = "";
               const joined = items.join("; ");
@@ -523,7 +534,7 @@ function transformAttribute(doc, arg1, arg2, arg3, arg4, arg5, size) {
               let str17 = "Error filtering CSS properties:";
               let warnResult = console.warn("Error filtering CSS properties:", __exception);
               sum = tmp6;
-              // continue
+              continue;
             }
           }
           sum = tmp6;
@@ -589,16 +600,16 @@ function distanceToMatch(nodeType) {
   return num3;
 }
 function createMatchPredicate(arg0, arg1) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return (arg0) => {
     if (null === arg0) {
       return false;
     } else {
-      if (arg0) {
-        if ("string" === typeof arg0) {
+      if (closure_0) {
+        if ("string" === typeof closure_0) {
           const _HermesInternal = HermesInternal;
-          if (obj.matches("." + arg0)) {
+          if (obj.matches("." + closure_0)) {
             return true;
           }
         } else {
@@ -618,12 +629,12 @@ function createMatchPredicate(arg0, arg1) {
           if (flag2) {
             return true;
           }
-          const obj2 = arg0;
+          obj2 = closure_0;
         }
       }
       let tmp11 = tmp10;
-      if (!!arg1) {
-        tmp11 = !obj.matches(arg1);
+      if (!!closure_1) {
+        tmp11 = !obj.matches(closure_1);
       }
       return !tmp11;
     }
@@ -639,7 +650,7 @@ function needMaskingText(nodeType, maskTextClass2, maskTextSelector2, unmaskText
     return false;
   } else {
     if ("INPUT" === obj.tagName) {
-      const items = [".sentry-mask", "[data-sentry-mask]", "\u00D7", "anulare", "\u00EEnchidere", "\u00EEnmul\u021Bire", "semnul x"];
+      const items = ["current-password", "new-password", "cc-number", "cc-exp", "cc-exp-month", "cc-exp-year", "cc-csc"];
       if (items.includes(obj.getAttribute("autocomplete"))) {
         return true;
       }
@@ -747,13 +758,13 @@ function serializeNode(nodeType, newlyAddedElement) {
     }
     return obj;
   } else if (nodeType.DOCUMENT_TYPE_NODE === nodeType) {
-    const obj1 = { type: RN.DocumentType };
+    let obj1 = { type: RN.DocumentType };
     ({ name: obj8.name, publicId: obj8.publicId, systemId: obj8.systemId } = nodeType);
     obj1.rootId = tmp2;
     return obj1;
   } else if (nodeType.ELEMENT_NODE === nodeType) {
-    const obj2 = { doc, blockClass, blockSelector, unblockSelector, inlineStylesheet, maskAttributeFn, maskInputOptions, maskInputFn, dataURLOptions, inlineImages, recordCanvas, keepIframeSrcFn, newlyAddedElement: tmp, rootId: tmp2, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, ignoreCSSAttributes: newlyAddedElement.ignoreCSSAttributes };
-    return function serializeElementNode(nodeType, newlyAddedElement) {
+    let obj2 = { doc, blockClass, blockSelector, unblockSelector, inlineStylesheet, maskAttributeFn, maskInputOptions, maskInputFn, dataURLOptions, inlineImages, recordCanvas, keepIframeSrcFn, newlyAddedElement: tmp, rootId: tmp2, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, ignoreCSSAttributes: newlyAddedElement.ignoreCSSAttributes };
+    return (function serializeElementNode(nodeType, newlyAddedElement) {
       let blockClass;
       let blockSelector;
       let dataURLOptions;
@@ -772,6 +783,7 @@ function serializeNode(nodeType, newlyAddedElement) {
       let unmaskTextClass;
       let unmaskTextSelector;
       let obj = nodeType;
+      let closure_0 = nodeType;
       ({ doc, blockClass, blockSelector, unblockSelector, maskInputOptions, inlineStylesheet } = newlyAddedElement);
       if (undefined === maskInputOptions) {
         maskInputOptions = {};
@@ -781,10 +793,10 @@ function serializeNode(nodeType, newlyAddedElement) {
         dataURLOptions = {};
       }
       newlyAddedElement = newlyAddedElement.newlyAddedElement;
-      let keepIframeSrcFnResult = undefined !== newlyAddedElement;
+      let tmp3 = undefined !== newlyAddedElement;
       ({ inlineImages, recordCanvas, keepIframeSrcFn } = newlyAddedElement);
-      if (keepIframeSrcFnResult) {
-        keepIframeSrcFnResult = newlyAddedElement;
+      if (tmp3) {
+        tmp3 = newlyAddedElement;
       }
       ({ maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, ignoreCSSAttributes } = newlyAddedElement);
       let obj1 = obj;
@@ -794,134 +806,134 @@ function serializeNode(nodeType, newlyAddedElement) {
           let flag2 = false;
         }
         while (true) {
-          let tmp17 = globalThis;
+          let tmp19 = globalThis;
           let str = "form";
-          let tmp16 = flag2;
+          let tmp18 = flag2;
           if (obj instanceof globalThis.HTMLFormElement) {
             break;
           } else {
-            let tmp18 = callback4;
-            let tmp19 = callback4(obj.tagName);
-            let tmp20 = regex;
+            let tmp20 = outer1_97;
+            let tmp21 = outer1_97(obj.tagName);
+            let tmp22 = outer1_25;
             let str2 = "div";
-            if (!regex.test(tmp19)) {
-              str2 = tmp19;
+            if (!outer1_25.test(tmp21)) {
+              str2 = tmp21;
             }
             str = str2;
-            // break
+            break;
           }
-          let tmp21 = str;
+          let tmp23 = str;
           obj = {};
-          let tmp22 = obj;
+          let tmp24 = obj;
           let length2 = obj.attributes.length;
           let num = 0;
           for (let num2 = 0; num2 < length2; num2 = num2 + 1) {
-            let tmp23 = nodeType;
+            let tmp25 = nodeType;
             let iter = obj.attributes[num2];
             let name = iter.name;
             if (name) {
-              let tmp24 = callback13;
-              let tmp25 = str;
+              let tmp26 = outer1_112;
+              let tmp27 = str;
               let value = iter.value;
-              name = !callback13(tmp21, iter.name, undefined);
+              name = !outer1_112(tmp23, iter.name, undefined);
             }
             if (name) {
-              let tmp26 = tmp22;
-              let tmp27 = callback12;
-              let tmp28 = str;
-              let tmp29 = callback4;
-              let tmp30 = nodeType;
-              let tmp31 = doc;
-              let tmp32 = maskAttributeFn;
-              let tmp33 = ignoreCSSAttributes;
-              tmp22[iter.name] = callback12(doc, tmp21, callback4(iter.name), iter.value, obj, maskAttributeFn, ignoreCSSAttributes);
+              let tmp28 = tmp24;
+              let tmp29 = outer1_111;
+              let tmp30 = str;
+              let tmp31 = outer1_97;
+              let tmp32 = nodeType;
+              let tmp33 = doc;
+              let tmp34 = maskAttributeFn;
+              let tmp35 = ignoreCSSAttributes;
+              tmp24[iter.name] = outer1_111(doc, tmp23, outer1_97(iter.name), iter.value, obj, maskAttributeFn, ignoreCSSAttributes);
             }
           }
-          let tmp34 = str;
+          let tmp36 = str;
           let str3 = "link";
-          if ("link" === tmp21) {
+          if ("link" === tmp23) {
             if (inlineStylesheet) {
               let _Array = Array;
               let arr = Array.from(doc.styleSheets);
-              let found = arr.find((href) => href.href === href.href);
-              let tmp36 = null;
-              let tmp37 = null;
+              let found = arr.find((href) => href.href === nodeType.href);
+              let tmp38 = null;
+              let tmp39 = null;
               if (found) {
-                let tmp38 = callback;
-                tmp37 = callback(found);
+                let tmp40 = outer1_93;
+                tmp39 = outer1_93(found);
               }
-              if (tmp37) {
-                let tmp39 = tmp22;
-                tmp22.rel = null;
-                tmp22.href = null;
-                tmp22.crossorigin = null;
-                let tmp40 = callback9;
-                tmp22._cssText = callback9(tmp37, found.href);
+              if (tmp39) {
+                let tmp41 = tmp24;
+                tmp24.rel = null;
+                tmp24.href = null;
+                tmp24.crossorigin = null;
+                let tmp42 = outer1_107;
+                tmp24._cssText = outer1_107(tmp39, found.href);
               }
             }
           }
-          let tmp41 = str;
+          let tmp43 = str;
           let str4 = "style";
-          if ("style" === tmp21) {
-            let tmp42 = nodeType;
+          if ("style" === tmp23) {
+            let tmp44 = nodeType;
             if (obj.sheet) {
-              let tmp43 = nodeType;
+              let tmp45 = nodeType;
               let str5 = obj.innerText;
               if (!str5) {
-                let tmp44 = nodeType;
+                let tmp46 = nodeType;
                 str5 = obj.textContent;
               }
               if (!str5) {
                 str5 = "";
               }
               if (!str5.trim().length) {
-                let tmp45 = callback;
-                let tmp46 = nodeType;
-                let tmp47 = callback(obj.sheet);
-                if (tmp47) {
-                  let tmp48 = tmp22;
-                  let tmp49 = callback9;
-                  let tmp50 = callback11;
-                  tmp22._cssText = callback9(tmp47, callback11(doc));
+                let tmp47 = outer1_93;
+                let tmp48 = nodeType;
+                let tmp49 = outer1_93(obj.sheet);
+                if (tmp49) {
+                  let tmp50 = tmp24;
+                  let tmp51 = outer1_107;
+                  let tmp52 = outer1_110;
+                  tmp24._cssText = outer1_107(tmp49, outer1_110(doc));
                 }
               }
             }
           }
-          let tmp51 = str;
+          let tmp53 = str;
           let str6 = "input";
-          if ("input" !== tmp21) {
-            let tmp52 = str;
+          if ("input" !== tmp23) {
+            let tmp54 = str;
             let str7 = "textarea";
-            if ("textarea" !== tmp21) {
-              let tmp53 = str;
+            if ("textarea" !== tmp23) {
+              let tmp55 = str;
               let str8 = "select";
-              if ("select" !== tmp21) {
-                let tmp54 = str;
+              if ("select" !== tmp23) {
+                let tmp56 = str;
                 let str9 = "option";
               }
-              let tmp74 = str;
+              let tmp76 = str;
               let str12 = "option";
-              if ("option" === tmp21) {
-                let tmp75 = nodeType;
+              if ("option" === tmp23) {
+                let tmp77 = nodeType;
                 if (obj.selected) {
                   if (!maskInputOptions.select) {
-                    let tmp76 = tmp22;
+                    let tmp78 = tmp24;
                     let flag3 = true;
-                    tmp22.selected = true;
+                    tmp24.selected = true;
                   }
                 }
-                let tmp77 = tmp22;
-                delete r13.selected;
+                let tmp79 = tmp24;
+                delete tmp2.selected;
               }
-              let tmp78 = str;
+              let tmp80 = str;
               let str13 = "canvas";
-              if ("canvas" === tmp21) {
+              if ("canvas" === tmp23) {
                 if (recordCanvas) {
-                  let tmp79 = nodeType;
+                  let tmp81 = nodeType;
                   let str14 = "2d";
                   if ("2d" === obj.__context) {
-                    let tmp84 = nodeType;
-                    if (!function is2DCanvasBlank(getContext) {
+                    let tmp86 = nodeType;
+                    if (!(function is2DCanvasBlank(getContext) {
                       const context = getContext.getContext("2d");
                       if (context) {
                         let num3 = 0;
@@ -931,11 +943,11 @@ function serializeNode(nodeType, newlyAddedElement) {
                             if (0 < getContext.height) {
                               while (true) {
                                 let getImageData = context.getImageData;
-                                let tmp3 = closure_20;
+                                let tmp3 = outer2_20;
                                 let obj = getImageData;
-                                if (closure_20 in getImageData) {
-                                  let tmp4 = closure_20;
-                                  obj = getImageData[closure_20];
+                                if (outer2_20 in getImageData) {
+                                  let tmp4 = outer2_20;
+                                  obj = getImageData[outer2_20];
                                 }
                                 let _Uint32Array = Uint32Array;
                                 let _Math = Math;
@@ -967,38 +979,39 @@ function serializeNode(nodeType, newlyAddedElement) {
                       } else {
                         return true;
                       }
-                    }(obj)) {
-                      let tmp85 = tmp22;
-                      let tmp86 = nodeType;
-                      tmp22.rr_dataURL = obj.toDataURL(dataURLOptions.type, dataURLOptions.quality);
+                    })(obj)) {
+                      let tmp87 = tmp24;
+                      let tmp88 = nodeType;
+                      tmp24.rr_dataURL = obj.toDataURL(dataURLOptions.type, dataURLOptions.quality);
                     }
                   } else {
-                    let tmp80 = nodeType;
+                    let tmp82 = nodeType;
                     let str15 = "__context";
                     if (!("__context" in obj)) {
-                      let tmp81 = nodeType;
+                      let tmp83 = nodeType;
                       let toDataURLResult = obj.toDataURL(dataURLOptions.type, dataURLOptions.quality);
                       let element = <canvas />;
                       ({ width: obj7.width, height: obj7.height } = obj);
                       if (toDataURLResult !== element.toDataURL(dataURLOptions.type, dataURLOptions.quality)) {
-                        let tmp83 = tmp22;
-                        tmp22.rr_dataURL = toDataURLResult;
+                        let tmp85 = tmp24;
+                        tmp24.rr_dataURL = toDataURLResult;
                       }
                     }
                   }
                 }
               }
-              let tmp87 = str;
+              let tmp89 = str;
               let str16 = "img";
-              if ("img" === tmp21) {
+              if ("img" === tmp23) {
                 if (inlineImages) {
-                  let tmp88 = element1;
-                  if (!element1) {
+                  let tmp90 = outer1_22;
+                  if (!outer1_22) {
                     let element1 = <canvas />;
+                    outer1_22 = element1;
                     let str17 = "2d";
-                    let context = element1.getContext("2d");
+                    let outer1_23 = element1.getContext("2d");
                   }
-                  let tmp89 = nodeType;
+                  let tmp91 = nodeType;
                   let str18 = obj.currentSrc;
                   if (!str18) {
                     let str19 = "src";
@@ -1010,10 +1023,10 @@ function serializeNode(nodeType, newlyAddedElement) {
                   let crossOrigin = obj.crossOrigin;
                   function recordInlineImage() {
                     const removed = obj.removeEventListener("load", recordInlineImage);
-                    element1.width = obj.naturalWidth;
-                    element1.height = obj.naturalHeight;
-                    closure_23.drawImage(obj, 0, 0);
-                    obj.rr_dataURL = element1.toDataURL(dataURLOptions.type, dataURLOptions.quality);
+                    outer2_22.width = obj.naturalWidth;
+                    outer2_22.height = obj.naturalHeight;
+                    outer2_23.drawImage(obj, 0, 0);
+                    obj.rr_dataURL = outer2_22.toDataURL(dataURLOptions.type, dataURLOptions.quality);
                     while (true) {
                       let tmp3 = obj;
                       let str = "anonymous";
@@ -1025,12 +1038,12 @@ function serializeNode(nodeType, newlyAddedElement) {
                           let tmp7 = obj;
                           let tmp8 = crossOrigin;
                           obj.crossOrigin = crossOrigin;
-                          // break
+                          break;
                         } else {
                           let tmp5 = obj;
                           let str2 = "crossorigin";
                           let removeAttributeResult = obj.removeAttribute("crossorigin");
-                          // break
+                          break;
                         }
                         break;
                       }
@@ -1045,137 +1058,137 @@ function serializeNode(nodeType, newlyAddedElement) {
                   let listener = obj.addEventListener("load", recordInlineImage);
                 }
               }
-              let tmp92 = str;
+              let tmp94 = str;
               let str21 = "audio";
-              let tmp93 = "audio" !== tmp21;
-              if (tmp93) {
-                let tmp94 = str;
+              let tmp95 = "audio" !== tmp23;
+              if (tmp95) {
+                let tmp96 = str;
                 let str22 = "video";
-                tmp93 = "video" !== tmp21;
+                tmp95 = "video" !== tmp23;
               }
-              if (!tmp93) {
-                let tmp95 = tmp22;
-                let tmp96 = nodeType;
+              if (!tmp95) {
+                let tmp97 = tmp24;
+                let tmp98 = nodeType;
                 let str23 = "played";
                 if (obj.paused) {
                   str23 = "paused";
                 }
-                tmp22.rr_mediaState = str23;
-                let tmp97 = tmp22;
-                let tmp98 = nodeType;
-                tmp22.rr_mediaCurrentTime = obj.currentTime;
+                tmp24.rr_mediaState = str23;
+                let tmp99 = tmp24;
+                let keepIframeSrcFnResult = nodeType;
+                tmp24.rr_mediaCurrentTime = obj.currentTime;
               }
-              if (!keepIframeSrcFnResult) {
-                let tmp99 = nodeType;
+              if (!tmp3) {
+                keepIframeSrcFnResult = nodeType;
                 if (obj.scrollLeft) {
-                  keepIframeSrcFnResult = tmp22;
+                  keepIframeSrcFnResult = tmp24;
                   keepIframeSrcFnResult = nodeType;
-                  tmp22.rr_scrollLeft = obj.scrollLeft;
+                  tmp24.rr_scrollLeft = obj.scrollLeft;
                 }
                 keepIframeSrcFnResult = nodeType;
                 if (obj.scrollTop) {
-                  keepIframeSrcFnResult = tmp22;
+                  keepIframeSrcFnResult = tmp24;
                   keepIframeSrcFnResult = nodeType;
-                  tmp22.rr_scrollTop = obj.scrollTop;
+                  tmp24.rr_scrollTop = obj.scrollTop;
                 }
               }
               keepIframeSrcFnResult = flag2;
-              if (tmp16) {
+              if (tmp18) {
                 keepIframeSrcFnResult = nodeType;
                 let size = obj.getBoundingClientRect();
                 obj = {};
-                keepIframeSrcFnResult = tmp22;
-                obj.class = tmp22.class;
+                keepIframeSrcFnResult = tmp24;
+                obj.class = tmp24.class;
                 let _HermesInternal = HermesInternal;
                 let str24 = "";
                 let str25 = "px";
                 obj.rr_width = "" + size.width + "px";
                 let _HermesInternal2 = HermesInternal;
                 obj.rr_height = "" + size.height + "px";
-                tmp22 = obj;
+                tmp24 = obj;
               }
               keepIframeSrcFnResult = str;
               let str26 = "iframe";
-              keepIframeSrcFnResult = "iframe" !== tmp21;
+              keepIframeSrcFnResult = "iframe" !== tmp23;
               if (!keepIframeSrcFnResult) {
-                keepIframeSrcFnResult = tmp22;
-                keepIframeSrcFnResult = keepIframeSrcFn(tmp22.src);
+                keepIframeSrcFnResult = tmp24;
+                keepIframeSrcFnResult = keepIframeSrcFn(tmp24.src);
               }
               if (!keepIframeSrcFnResult) {
                 keepIframeSrcFnResult = flag2;
                 if (!flag2) {
-                  keepIframeSrcFnResult = callback8;
+                  keepIframeSrcFnResult = outer1_105;
                   keepIframeSrcFnResult = nodeType;
-                  keepIframeSrcFnResult = callback8(obj);
+                  keepIframeSrcFnResult = outer1_105(obj);
                 }
                 if (!keepIframeSrcFnResult) {
-                  keepIframeSrcFnResult = tmp22;
-                  tmp22.rr_src = tmp22.src;
+                  keepIframeSrcFnResult = tmp24;
+                  tmp24.rr_src = tmp24.src;
                 }
-                keepIframeSrcFnResult = tmp22;
-                delete r9.src;
+                keepIframeSrcFnResult = tmp24;
+                delete tmp.src;
               }
               keepIframeSrcFnResult = str;
-              if (globalThis.customElements.get(tmp21)) {
+              if (globalThis.customElements.get(tmp23)) {
                 let flag = true;
               }
               while (true) {
                 obj1 = {};
-                keepIframeSrcFnResult = Element;
-                obj1.type = Element.Element;
+                keepIframeSrcFnResult = outer1_18;
+                obj1.type = outer1_18.Element;
                 obj1.tagName = str;
-                obj1.attributes = tmp22;
+                obj1.attributes = tmp24;
                 obj1.childNodes = [];
-                keepIframeSrcFnResult = callback10;
-                keepIframeSrcFnResult = callback10(nodeType);
+                keepIframeSrcFnResult = outer1_109;
+                keepIframeSrcFnResult = outer1_109(nodeType);
                 if (keepIframeSrcFnResult) {
                   break;
                 } else {
-                  // break
+                  break;
                 }
                 obj1.isSVG = keepIframeSrcFnResult;
                 obj1.needBlock = flag2;
-                obj1.rootId = tmp2;
+                obj1.rootId = tmp4;
                 obj1.isCustom = flag;
                 return obj1;
               }
             }
           }
-          let tmp56 = callback6;
-          let tmp55 = nodeType;
-          let tmp57 = callback6(obj);
-          let tmp58 = callback7;
-          let tmp59 = callback5;
-          let tmp60 = str;
-          let tmp61 = callback7(obj, callback5(tmp21), tmp57);
+          let tmp58 = outer1_99;
+          let tmp57 = nodeType;
+          let tmp59 = outer1_99(obj);
+          let tmp60 = outer1_100;
+          let tmp61 = outer1_98;
+          let tmp62 = str;
+          let tmp63 = outer1_100(obj, outer1_98(tmp23), tmp59);
           let checked = obj.checked;
           let str10 = "submit";
-          if ("submit" !== tmp57) {
+          if ("submit" !== tmp59) {
             let str11 = "button";
-            if ("button" !== tmp57) {
-              if (tmp61) {
-                let tmp62 = callback14;
-                let tmp63 = callback2;
-                obj2 = { type: tmp57 };
-                let tmp64 = callback5;
-                let tmp65 = str;
-                obj2.tagName = callback5(tmp21);
+            if ("button" !== tmp59) {
+              if (tmp63) {
+                let tmp64 = outer1_115;
+                let tmp65 = outer1_95;
+                obj2 = { type: tmp59 };
+                let tmp66 = outer1_98;
+                let tmp67 = str;
+                obj2.tagName = outer1_98(tmp23);
                 obj2.maskInputOptions = maskInputOptions;
-                let tmp66 = obj;
-                let tmp67 = maskTextClass;
-                let tmp68 = maskTextSelector;
-                let tmp69 = unmaskTextClass;
-                let tmp70 = unmaskTextSelector;
-                let tmp71 = tmp22;
-                let tmp72 = callback3;
-                let obj3 = { isMasked: callback14(tmp55, maskTextClass, maskTextSelector, unmaskTextClass, unmaskTextSelector, callback2(obj2)), element: obj, value: tmp61, maskInputFn };
-                tmp22.value = callback3(obj3);
+                let tmp68 = obj;
+                let tmp69 = maskTextClass;
+                let tmp70 = maskTextSelector;
+                let tmp71 = unmaskTextClass;
+                let tmp72 = unmaskTextSelector;
+                let tmp73 = tmp24;
+                let tmp74 = outer1_96;
+                let obj3 = { isMasked: outer1_115(tmp57, maskTextClass, maskTextSelector, unmaskTextClass, unmaskTextSelector, outer1_95(obj2)), element: obj, value: tmp63, maskInputFn };
+                tmp24.value = outer1_96(obj3);
               }
             }
           }
           if (checked) {
-            let tmp73 = tmp22;
-            tmp22.checked = checked;
+            let tmp75 = tmp24;
+            tmp24.checked = checked;
           }
         }
       }
@@ -1185,12 +1198,12 @@ function serializeNode(nodeType, newlyAddedElement) {
           flag2 = true;
         }
       } else {
-        let diff = tmp7 - 1;
+        let diff = tmp9 - 1;
         if (+obj1.classList.length) {
           while (!obj2.test(obj1.classList[diff])) {
-            let tmp12 = diff;
-            let tmp13 = +diff;
-            diff = tmp13 - 1;
+            let tmp14 = diff;
+            let tmp15 = +diff;
+            diff = tmp15 - 1;
           }
           flag2 = true;
         }
@@ -1200,9 +1213,9 @@ function serializeNode(nodeType, newlyAddedElement) {
       } else {
         flag2 = false;
       }
-    }(nodeType, obj2);
+    })(nodeType, obj2);
   } else if (nodeType.TEXT_NODE === nodeType) {
-    const obj3 = { doc, maskAllText, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, maskTextFn, maskInputOptions, maskInputFn, rootId: tmp2 };
+    let obj3 = { doc, maskAllText, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, maskTextFn, maskInputOptions, maskInputFn, rootId: tmp2 };
     let tmp8 = obj3;
     ({ maskAllText: maskAllText2, maskTextClass: maskTextClass2, unmaskTextClass: unmaskTextClass2, maskTextSelector: maskTextSelector2, unmaskTextSelector: unmaskTextSelector2, maskTextFn: maskTextFn2, maskInputOptions: maskInputOptions2, maskInputFn: maskInputFn2 } = obj3);
     let tagName = nodeType.parentNode;
@@ -1237,14 +1250,14 @@ function serializeNode(nodeType, newlyAddedElement) {
           let str6 = "Cannot get CSS styles from text's parentNode. Error: ";
           let tmp24 = nodeType;
           let warnResult = console.warn("Cannot get CSS styles from text's parentNode. Error: " + __exception, tmp7);
-          // continue
+          continue;
         }
       }
     }
     if ("SCRIPT" === tagName || undefined) {
       str2 = "SCRIPT_PLACEHOLDER";
     }
-    const tmp36 = needMaskingText(nodeType, maskTextClass2, maskTextSelector2, unmaskTextClass2, unmaskTextSelector2, maskAllText2);
+    let tmp36 = needMaskingText(nodeType, maskTextClass2, maskTextSelector2, unmaskTextClass2, unmaskTextSelector2, maskAllText2);
     let tmp37 = tmp11;
     if (!("STYLE" === tagName || undefined)) {
       tmp37 = tmp12;
@@ -1264,7 +1277,7 @@ function serializeNode(nodeType, newlyAddedElement) {
       }
       if (tmp13) {
         tmp13 = maskInputOptions2.textarea || tmp36;
-        const tmp43 = maskInputOptions2.textarea || tmp36;
+        let tmp43 = maskInputOptions2.textarea || tmp36;
       }
       if (!tmp13) {
         if ("OPTION" === tagName) {
@@ -1315,58 +1328,38 @@ function lowerIfExists(name) {
 }
 function serializeNodeWithId(nodeType, doc) {
   let obj = nodeType;
-  const require = nodeType;
+  let closure_0 = nodeType;
   doc = doc.doc;
-  const dependencyMap = doc;
   const mirror = doc.mirror;
-  let closure_2 = mirror;
   const blockClass = doc.blockClass;
-  let closure_3 = blockClass;
   const blockSelector = doc.blockSelector;
-  let closure_4 = blockSelector;
   const unblockSelector = doc.unblockSelector;
-  let closure_5 = unblockSelector;
   const maskAllText = doc.maskAllText;
-  let closure_6 = maskAllText;
   const maskTextClass = doc.maskTextClass;
-  let closure_7 = maskTextClass;
   const unmaskTextClass = doc.unmaskTextClass;
-  let closure_8 = unmaskTextClass;
   const maskTextSelector = doc.maskTextSelector;
-  let closure_9 = maskTextSelector;
   const unmaskTextSelector = doc.unmaskTextSelector;
-  let closure_10 = unmaskTextSelector;
   const skipChild = doc.skipChild;
-  let tmp = undefined !== skipChild && skipChild;
   const inlineStylesheet = doc.inlineStylesheet;
-  let closure_11 = tmp2;
+  let c11 = tmp3;
   let maskInputOptions = doc.maskInputOptions;
   if (undefined === maskInputOptions) {
     maskInputOptions = {};
   }
-  let closure_12 = maskInputOptions;
   const maskAttributeFn = doc.maskAttributeFn;
-  let closure_13 = maskAttributeFn;
   const maskTextFn = doc.maskTextFn;
-  let closure_14 = maskTextFn;
   const maskInputFn = doc.maskInputFn;
-  let closure_15 = maskInputFn;
   const slimDOMOptions = doc.slimDOMOptions;
-  const defineProperty = slimDOMOptions;
   let dataURLOptions = doc.dataURLOptions;
   if (undefined === dataURLOptions) {
     dataURLOptions = {};
   }
-  const __publicField$1 = dataURLOptions;
   const inlineImages = doc.inlineImages;
-  let tmp3 = undefined !== inlineImages && inlineImages;
-  const RN = tmp3;
+  const RN = tmp4;
   const recordCanvas = doc.recordCanvas;
-  tmp3 = tmp4;
+  let closure_19 = tmp5;
   const onSerialize = doc.onSerialize;
-  let closure_20 = onSerialize;
   const onIframeLoad = doc.onIframeLoad;
-  let closure_21 = onIframeLoad;
   const iframeLoadTimeout = doc.iframeLoadTimeout;
   let num = 5000;
   let num2 = 5000;
@@ -1375,58 +1368,55 @@ function serializeNodeWithId(nodeType, doc) {
   }
   const onBlockedImageLoad = doc.onBlockedImageLoad;
   const onStylesheetLoad = doc.onStylesheetLoad;
-  let closure_24 = onStylesheetLoad;
   const stylesheetLoadTimeout = doc.stylesheetLoadTimeout;
   if (undefined !== stylesheetLoadTimeout) {
     num = stylesheetLoadTimeout;
   }
-  const regExp = num;
   let fn = doc.keepIframeSrcFn;
   if (undefined === fn) {
     fn = () => false;
   }
-  let closure_26 = fn;
   const newlyAddedElement = doc.newlyAddedElement;
   const ignoreCSSAttributes = doc.ignoreCSSAttributes;
-  let closure_27 = ignoreCSSAttributes;
   const preserveWhiteSpace = doc.preserveWhiteSpace;
   let flag = undefined === preserveWhiteSpace || preserveWhiteSpace;
-  let closure_28 = flag;
-  obj = { doc, mirror, blockClass, blockSelector, maskAllText, unblockSelector, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, inlineStylesheet: tmp2, maskInputOptions, maskAttributeFn, maskTextFn, maskInputFn, dataURLOptions, inlineImages: tmp3, recordCanvas: undefined !== recordCanvas && recordCanvas, keepIframeSrcFn: fn, newlyAddedElement: undefined !== newlyAddedElement && newlyAddedElement, ignoreCSSAttributes };
-  const tmp6 = serializeNode(obj, obj);
-  if (tmp6) {
+  let c28 = flag;
+  obj = { doc, mirror, blockClass, blockSelector, maskAllText, unblockSelector, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, inlineStylesheet: tmp3, maskInputOptions, maskAttributeFn, maskTextFn, maskInputFn, dataURLOptions, inlineImages: undefined !== inlineImages && inlineImages, recordCanvas: undefined !== recordCanvas && recordCanvas, keepIframeSrcFn: fn, newlyAddedElement: undefined !== newlyAddedElement && newlyAddedElement, ignoreCSSAttributes };
+  let tmp7 = serializeNode(obj, obj);
+  if (tmp7) {
     if (mirror.hasNode(obj)) {
       let num4 = mirror.getId(obj);
     } else {
       if (!slimDOMOptions.comment) {
         let flag2 = false;
-        if (tmp6.type === RN.Element) {
+        if (tmp7.type === RN.Element) {
           if (!slimDOMOptions.script) {
             if (slimDOMOptions.headFavicon) {
-              if ("link" !== tmp6.tagName) {
-                if ("meta" === tmp6.tagName) {
+              if ("link" !== tmp7.tagName) {
+                if ("meta" === tmp7.tagName) {
                   flag2 = true;
                   if (!str38.match(/^msapplication-tile(image|color)$/)) {
                     flag2 = true;
-                    if ("application-name" !== lowerIfExists(tmp6.attributes.name)) {
+                    if ("application-name" !== lowerIfExists(tmp7.attributes.name)) {
                       flag2 = true;
-                      if ("icon" !== lowerIfExists(tmp6.attributes.rel)) {
+                      if ("icon" !== lowerIfExists(tmp7.attributes.rel)) {
+                        let tmp = lowerIfExists;
                         flag2 = true;
-                        if ("apple-touch-icon" !== lowerIfExists(tmp6.attributes.rel)) {
+                        if ("apple-touch-icon" !== lowerIfExists(tmp7.attributes.rel)) {
                           tmp = lowerIfExists;
                           flag2 = true;
                         }
                       }
                     }
                   }
-                  const str38 = lowerIfExists(tmp6.attributes.name);
+                  str38 = lowerIfExists(tmp7.attributes.name);
                 }
               } else {
                 flag2 = true;
               }
             }
             flag2 = false;
-            if ("meta" === tmp6.tagName) {
+            if ("meta" === tmp7.tagName) {
               if (!slimDOMOptions.headMetaDescKeywords) {
                 if (!slimDOMOptions.headMetaSocial) {
                   if (!slimDOMOptions.headMetaRobots) {
@@ -1434,14 +1424,14 @@ function serializeNodeWithId(nodeType, doc) {
                       if (!slimDOMOptions.headMetaAuthorship) {
                         flag2 = false;
                         if (slimDOMOptions.headMetaVerification) {
-                          if ("google-site-verification" !== lowerIfExists(tmp6.attributes.name)) {
+                          if ("google-site-verification" !== lowerIfExists(tmp7.attributes.name)) {
                             tmp = lowerIfExists;
-                            if ("yandex-verification" !== lowerIfExists(tmp6.attributes.name)) {
+                            if ("yandex-verification" !== lowerIfExists(tmp7.attributes.name)) {
                               tmp = lowerIfExists;
-                              if ("csrf-token" !== lowerIfExists(tmp6.attributes.name)) {
-                                if ("p:domain_verify" !== lowerIfExists(tmp6.attributes.name)) {
-                                  if ("verify-v1" !== lowerIfExists(tmp6.attributes.name)) {
-                                    if ("verification" !== lowerIfExists(tmp6.attributes.name)) {
+                              if ("csrf-token" !== lowerIfExists(tmp7.attributes.name)) {
+                                if ("p:domain_verify" !== lowerIfExists(tmp7.attributes.name)) {
+                                  if ("verify-v1" !== lowerIfExists(tmp7.attributes.name)) {
+                                    if ("verification" !== lowerIfExists(tmp7.attributes.name)) {
                                       flag2 = false;
                                     }
                                   }
@@ -1453,26 +1443,26 @@ function serializeNodeWithId(nodeType, doc) {
                         }
                       } else {
                         flag2 = true;
-                        if ("author" !== lowerIfExists(tmp6.attributes.name)) {
+                        if ("author" !== lowerIfExists(tmp7.attributes.name)) {
                           tmp = lowerIfExists;
                           flag2 = true;
-                          if ("generator" !== lowerIfExists(tmp6.attributes.name)) {
+                          if ("generator" !== lowerIfExists(tmp7.attributes.name)) {
                             tmp = lowerIfExists;
                             flag2 = true;
-                            if ("framework" !== lowerIfExists(tmp6.attributes.name)) {
+                            if ("framework" !== lowerIfExists(tmp7.attributes.name)) {
                               tmp = lowerIfExists;
                               flag2 = true;
-                              if ("publisher" !== lowerIfExists(tmp6.attributes.name)) {
+                              if ("publisher" !== lowerIfExists(tmp7.attributes.name)) {
                                 tmp = lowerIfExists;
                                 flag2 = true;
-                                if ("progid" !== lowerIfExists(tmp6.attributes.name)) {
+                                if ("progid" !== lowerIfExists(tmp7.attributes.name)) {
                                   tmp = lowerIfExists;
                                   flag2 = true;
                                   if (!str48.match(/^article:/)) {
                                     flag2 = true;
-                                    const str18 = lowerIfExists(tmp6.attributes.property);
+                                    const str18 = lowerIfExists(tmp7.attributes.property);
                                   }
-                                  const str48 = lowerIfExists(tmp6.attributes.property);
+                                  str48 = lowerIfExists(tmp7.attributes.property);
                                 }
                               }
                             }
@@ -1484,10 +1474,10 @@ function serializeNodeWithId(nodeType, doc) {
                     }
                   } else {
                     flag2 = true;
-                    if ("robots" !== lowerIfExists(tmp6.attributes.name)) {
+                    if ("robots" !== lowerIfExists(tmp7.attributes.name)) {
                       tmp = lowerIfExists;
                       flag2 = true;
-                      if ("googlebot" !== lowerIfExists(tmp6.attributes.name)) {
+                      if ("googlebot" !== lowerIfExists(tmp7.attributes.name)) {
                         tmp = lowerIfExists;
                         flag2 = true;
                       }
@@ -1500,29 +1490,29 @@ function serializeNodeWithId(nodeType, doc) {
                     if (!str14.match(/^(og|twitter):/)) {
                       flag2 = true;
                     }
-                    const str14 = lowerIfExists(tmp6.attributes.name);
+                    str14 = lowerIfExists(tmp7.attributes.name);
                   }
-                  const str13 = lowerIfExists(tmp6.attributes.property);
+                  str13 = lowerIfExists(tmp7.attributes.property);
                 }
               } else {
                 flag2 = true;
-                const str12 = lowerIfExists(tmp6.attributes.name);
+                const str12 = lowerIfExists(tmp7.attributes.name);
               }
             }
           } else {
             flag2 = true;
-            if ("script" !== tmp6.tagName) {
-              if ("link" !== tmp6.tagName) {
-                if ("link" === tmp6.tagName) {
-                  if ("prefetch" === tmp6.attributes.rel) {
-                    if ("string" === typeof tmp6.attributes.href) {
+            if ("script" !== tmp7.tagName) {
+              if ("link" !== tmp7.tagName) {
+                if ("link" === tmp7.tagName) {
+                  if ("prefetch" === tmp7.attributes.rel) {
+                    if ("string" === typeof tmp7.attributes.href) {
                       flag2 = true;
                     }
                   }
                 }
               } else {
                 flag2 = true;
-                if ("preload" !== tmp6.attributes.rel) {
+                if ("preload" !== tmp7.attributes.rel) {
                   flag2 = true;
                 }
               }
@@ -1535,10 +1525,10 @@ function serializeNodeWithId(nodeType, doc) {
       num4 = -2;
       if (!flag2) {
         if (!flag) {
-          if (tmp6.type === RN.Text) {
-            if (!tmp6.isStyle) {
+          if (tmp7.type === RN.Text) {
+            if (!tmp7.isStyle) {
               num4 = -2;
-              const str24 = tmp6.textContent;
+              const str24 = tmp7.textContent;
             }
           }
         }
@@ -1547,8 +1537,7 @@ function serializeNodeWithId(nodeType, doc) {
     }
     const _Object = Object;
     obj = { id: num4 };
-    const merged = Object.assign(tmp6, obj);
-    let closure_29 = merged;
+    const merged = Object.assign(tmp7, obj);
     mirror.add(obj, merged);
     if (-2 === num4) {
       return null;
@@ -1556,37 +1545,37 @@ function serializeNodeWithId(nodeType, doc) {
       if (onSerialize) {
         onSerialize(obj);
       }
-      let tmp41 = tmp38;
-      if (tmp33.type === RN.Element) {
-        let tmp42 = tmp38;
-        if (tmp38) {
-          tmp42 = !tmp33.needBlock;
+      let tmp42 = tmp39;
+      if (tmp34.type === RN.Element) {
+        let tmp43 = tmp39;
+        if (tmp39) {
+          tmp43 = !tmp34.needBlock;
         }
         const shadowRoot = obj.shadowRoot;
-        let tmp45 = shadowRoot;
+        let tmp46 = shadowRoot;
         if (shadowRoot) {
-          tmp45 = isNativeShadowDom(shadowRoot);
+          tmp46 = isNativeShadowDom(shadowRoot);
         }
-        tmp41 = tmp42;
-        if (tmp45) {
-          tmp33.isShadowHost = true;
-          tmp41 = tmp42;
+        tmp42 = tmp43;
+        if (tmp46) {
+          tmp34.isShadowHost = true;
+          tmp42 = tmp43;
         }
       }
-      if (tmp33.type === RN.Document) {
-        if (tmp41) {
+      if (tmp34.type === RN.Document) {
+        if (tmp42) {
           let headWhitespace = slimDOMOptions.headWhitespace;
           if (headWhitespace) {
-            headWhitespace = tmp33.type === RN.Element;
+            headWhitespace = tmp34.type === RN.Element;
           }
           if (headWhitespace) {
-            headWhitespace = "head" === tmp33.tagName;
+            headWhitespace = "head" === tmp34.tagName;
           }
           if (headWhitespace) {
-            closure_28 = false;
+            c28 = false;
             flag = false;
           }
-          const obj1 = { doc, mirror, blockClass, blockSelector, maskAllText, unblockSelector, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, skipChild: tmp, inlineStylesheet: tmp2, maskInputOptions, maskAttributeFn, maskTextFn, maskInputFn, slimDOMOptions, dataURLOptions, inlineImages: tmp3, recordCanvas: tmp4, preserveWhiteSpace: flag, onSerialize, onIframeLoad, iframeLoadTimeout: num2, onBlockedImageLoad, onStylesheetLoad, stylesheetLoadTimeout: num, keepIframeSrcFn: fn, ignoreCSSAttributes };
+          const obj1 = { doc, mirror, blockClass, blockSelector, maskAllText, unblockSelector, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, skipChild: tmp2, inlineStylesheet: tmp3, maskInputOptions, maskAttributeFn, maskTextFn, maskInputFn, slimDOMOptions, dataURLOptions, inlineImages: tmp4, recordCanvas: tmp5, preserveWhiteSpace: flag, onSerialize, onIframeLoad, iframeLoadTimeout: num2, onBlockedImageLoad, onStylesheetLoad, stylesheetLoadTimeout: num, keepIframeSrcFn: fn, ignoreCSSAttributes };
           if (obj.childNodes) {
             const _Array = Array;
             let items = Array.from(obj.childNodes);
@@ -1597,45 +1586,45 @@ function serializeNodeWithId(nodeType, doc) {
         }
       }
       while (true) {
-        let tmp60 = nodeType;
+        let tmp61 = nodeType;
         let parentNode = obj.parentNode;
         if (!parentNode) {
           break;
         } else {
-          let tmp61 = isShadowRoot;
-          let tmp62 = nodeType;
+          let tmp62 = isShadowRoot;
+          let tmp63 = nodeType;
           parentNode = isShadowRoot(obj.parentNode);
-          // break
+          break;
         }
         if (parentNode) {
-          let tmp63 = isNativeShadowDom;
-          let tmp64 = nodeType;
+          let tmp64 = isNativeShadowDom;
+          let tmp65 = nodeType;
           parentNode = isNativeShadowDom(obj.parentNode);
         }
         if (parentNode) {
-          let tmp65 = merged;
+          let tmp66 = merged;
           let flag5 = true;
-          tmp33.isShadow = true;
+          tmp34.isShadow = true;
         }
-        let tmp66 = merged;
-        let tmp67 = RN;
-        let needBlock = tmp33.type !== RN.Element;
-        if (!needBlock) {
-          let tmp68 = merged;
-          let str27 = "iframe";
-          needBlock = "iframe" !== tmp33.tagName;
-        }
+        let tmp67 = merged;
+        let tmp68 = RN;
+        let needBlock = tmp34.type !== RN.Element;
         if (!needBlock) {
           let tmp69 = merged;
-          needBlock = tmp33.needBlock;
+          let str27 = "iframe";
+          needBlock = "iframe" !== tmp34.tagName;
         }
         if (!needBlock) {
-          let tmp70 = nodeType;
-          let tmp71 = function onceIframeLoaded(contentWindow, arg1, arg2) {
-            contentWindow = arg1;
+          let tmp70 = merged;
+          needBlock = tmp34.needBlock;
+        }
+        if (!needBlock) {
+          let tmp71 = nodeType;
+          let tmp72 = (function onceIframeLoaded(contentWindow, arg1, arg2) {
+            let closure_0 = arg1;
             contentWindow = contentWindow.contentWindow;
             if (contentWindow) {
-              let closure_1 = false;
+              let c1 = false;
               const readyState = tmp2.document.readyState;
               if ("complete" === readyState) {
                 if (contentWindow.location.href === "about:blank") {
@@ -1645,47 +1634,46 @@ function serializeNodeWithId(nodeType, doc) {
                     }
                   }
                 }
-                callback(tmp, 0);
+                outer1_103(tmp, 0);
                 return obj.addEventListener("load", tmp);
               } else {
-                let closure_2 = callback(() => {
-                  if (!closure_1) {
-                    arg1();
-                    closure_1 = true;
+                let closure_2 = outer1_103(() => {
+                  if (!c1) {
+                    callback();
+                    c1 = true;
                   }
                 }, arg2);
                 const listener1 = obj.addEventListener("load", () => {
-                  callback(closure_2);
-                  let closure_1 = true;
-                  arg1();
+                  outer2_104(closure_2);
+                  let c1 = true;
+                  callback();
                 });
               }
             }
-          }(obj, () => {
-            const tmp = callback2(arg0);
+          })(obj, () => {
+            const tmp = outer1_105(closure_0);
             if (tmp) {
               if (onIframeLoad) {
-                const obj = { doc: tmp, mirror, blockClass, blockSelector, unblockSelector, maskAllText, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, skipChild: false, inlineStylesheet: tmp2, maskInputOptions, maskAttributeFn, maskTextFn, maskInputFn, slimDOMOptions, dataURLOptions, inlineImages: callback3, recordCanvas: mirror, preserveWhiteSpace: closure_28, onSerialize, onIframeLoad, iframeLoadTimeout: num2, onStylesheetLoad, stylesheetLoadTimeout: num, keepIframeSrcFn: fn, ignoreCSSAttributes };
-                const tmp30 = callback3(tmp, obj);
+                const obj = { doc: tmp, mirror, blockClass, blockSelector, unblockSelector, maskAllText, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, skipChild: false, inlineStylesheet: closure_11, maskInputOptions, maskAttributeFn, maskTextFn, maskInputFn, slimDOMOptions, dataURLOptions, inlineImages: closure_18, recordCanvas: closure_19, preserveWhiteSpace: c28, onSerialize, onIframeLoad, iframeLoadTimeout: num2, onStylesheetLoad, stylesheetLoadTimeout: num, keepIframeSrcFn: fn, ignoreCSSAttributes };
+                const tmp30 = outer1_118(tmp, obj);
                 if (tmp30) {
-                  onIframeLoad(arg0, tmp30);
+                  onIframeLoad(closure_0, tmp30);
                 }
               }
             }
           }, num2);
         }
-        let tmp72 = merged;
-        let tmp73 = RN;
-        if (tmp33.type === RN.Element) {
-          let tmp74 = merged;
+        let tmp73 = merged;
+        let tmp74 = RN;
+        if (tmp34.type === RN.Element) {
+          let tmp75 = merged;
           let str28 = "img";
-          if ("img" === tmp33.tagName) {
-            let tmp75 = nodeType;
+          if ("img" === tmp34.tagName) {
+            let tmp76 = nodeType;
             if (!obj.complete) {
-              let tmp76 = merged;
-              if (tmp33.needBlock) {
-                let tmp77 = nodeType;
-                let closure_30 = obj;
+              let tmp77 = merged;
+              if (tmp34.needBlock) {
+                let tmp78 = nodeType;
                 function updateImageDimensions() {
                   if (obj.isConnected) {
                     if (!obj.complete) {
@@ -1703,7 +1691,6 @@ function serializeNodeWithId(nodeType, doc) {
                   }
                   const removed = obj.removeEventListener("load", updateImageDimensions);
                 }
-                let closure_31 = updateImageDimensions;
                 if (obj.isConnected) {
                   let str29 = "load";
                   let listener = obj.addEventListener("load", updateImageDimensions);
@@ -1712,75 +1699,75 @@ function serializeNodeWithId(nodeType, doc) {
             }
           }
         }
-        let tmp79 = merged;
-        let tmp80 = RN;
-        let tmp81 = tmp33.type === RN.Element;
-        if (tmp81) {
-          let tmp82 = merged;
-          let str30 = "link";
-          tmp81 = "link" === tmp33.tagName;
-        }
-        if (tmp81) {
+        let tmp80 = merged;
+        let tmp81 = RN;
+        let tmp82 = tmp34.type === RN.Element;
+        if (tmp82) {
           let tmp83 = merged;
-          let str31 = "string";
-          tmp81 = "string" === typeof tmp33.attributes.rel;
+          let str30 = "link";
+          tmp82 = "link" === tmp34.tagName;
         }
-        if (tmp81) {
+        if (tmp82) {
           let tmp84 = merged;
-          let str32 = "stylesheet";
-          let tmp85 = "stylesheet" === tmp33.attributes.rel;
-          if (!tmp85) {
-            let tmp86 = merged;
-            let str33 = "preload";
-            let tmp87 = "preload" === tmp33.attributes.rel;
-            if (tmp87) {
-              let tmp88 = merged;
-              let str34 = "string";
-              tmp87 = "string" === typeof tmp33.attributes.href;
-            }
-            if (tmp87) {
-              let tmp89 = extractFileExtension;
-              let tmp90 = merged;
-              let str35 = "css";
-              tmp87 = "css" === extractFileExtension(tmp33.attributes.href);
-            }
-            tmp85 = tmp87;
-          }
-          tmp81 = tmp85;
+          let str31 = "string";
+          tmp82 = "string" === typeof tmp34.attributes.rel;
         }
-        if (tmp81) {
-          let tmp91 = nodeType;
-          let tmp92 = function onceStylesheetLoaded(sheet, arg1, arg2) {
-            sheet = arg1;
-            let closure_1 = false;
+        if (tmp82) {
+          let tmp85 = merged;
+          let str32 = "stylesheet";
+          let tmp86 = "stylesheet" === tmp34.attributes.rel;
+          if (!tmp86) {
+            let tmp87 = merged;
+            let str33 = "preload";
+            let tmp88 = "preload" === tmp34.attributes.rel;
+            if (tmp88) {
+              let tmp89 = merged;
+              let str34 = "string";
+              tmp88 = "string" === typeof tmp34.attributes.href;
+            }
+            if (tmp88) {
+              let tmp90 = extractFileExtension;
+              let tmp91 = merged;
+              let str35 = "css";
+              tmp88 = "css" === extractFileExtension(tmp34.attributes.href);
+            }
+            tmp86 = tmp88;
+          }
+          tmp82 = tmp86;
+        }
+        if (tmp82) {
+          let tmp92 = nodeType;
+          let tmp93 = (function onceStylesheetLoaded(sheet, arg1, arg2) {
+            let closure_0 = arg1;
+            let c1 = false;
             if (!sheet.sheet) {
-              let closure_2 = callback(() => {
-                if (!closure_1) {
-                  arg1();
-                  closure_1 = true;
+              let closure_2 = outer1_103(() => {
+                if (!c1) {
+                  callback();
+                  c1 = true;
                 }
               }, arg2);
               const listener = sheet.addEventListener("load", () => {
-                callback(closure_2);
-                let closure_1 = true;
-                arg1();
+                outer2_104(closure_2);
+                let c1 = true;
+                callback();
               });
             }
-          }(obj, () => {
+          })(obj, () => {
             if (onStylesheetLoad) {
-              const obj = { doc, mirror, blockClass, blockSelector, unblockSelector, maskAllText, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, skipChild: false, inlineStylesheet: arg0, maskInputOptions, maskAttributeFn, maskTextFn, maskInputFn, slimDOMOptions, dataURLOptions, inlineImages: doc, recordCanvas: mirror, preserveWhiteSpace: closure_28, onSerialize, onIframeLoad, iframeLoadTimeout: num2, onStylesheetLoad, stylesheetLoadTimeout: num, keepIframeSrcFn: fn, ignoreCSSAttributes };
-              const tmp30 = callback3(arg0, obj);
+              const obj = { doc, mirror, blockClass, blockSelector, unblockSelector, maskAllText, maskTextClass, unmaskTextClass, maskTextSelector, unmaskTextSelector, skipChild: false, inlineStylesheet: closure_11, maskInputOptions, maskAttributeFn, maskTextFn, maskInputFn, slimDOMOptions, dataURLOptions, inlineImages: closure_18, recordCanvas: closure_19, preserveWhiteSpace: c28, onSerialize, onIframeLoad, iframeLoadTimeout: num2, onStylesheetLoad, stylesheetLoadTimeout: num, keepIframeSrcFn: fn, ignoreCSSAttributes };
+              const tmp30 = outer1_118(closure_0, obj);
               if (tmp30) {
-                onStylesheetLoad(arg0, tmp30);
+                onStylesheetLoad(closure_0, tmp30);
               }
             }
           }, num);
         }
-        let tmp93 = merged;
-        let tmp94 = RN;
-        if (tmp33.type === RN.Element) {
-          let tmp95 = merged;
-          delete r1.needBlock;
+        let tmp94 = merged;
+        let tmp95 = RN;
+        if (tmp34.type === RN.Element) {
+          let tmp96 = merged;
+          delete tmp.needBlock;
         }
         return merged;
       }
@@ -1792,80 +1779,72 @@ function serializeNodeWithId(nodeType, doc) {
   }
 }
 function on(arg0, arg1) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   if (arguments.length > 2) {
     if (undefined !== arguments[2]) {
       let _document = arguments[2];
     }
-    let closure_2 = _document;
-    const obj = { -9223372036854775808: null, 0: null };
-    let closure_3 = obj;
+    const obj = { capture: true, passive: true };
     const listener = _document.addEventListener(arg0, arg1, obj);
-    return () => _document.removeEventListener(arg0, arg1, obj);
+    return () => _document.removeEventListener(closure_0, closure_1, obj);
   }
   _document = document;
 }
 function throttle$1(arg0, arg1) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   if (arguments.length > 2) {
     let closure_2 = {};
-    let closure_3 = null;
-    let closure_4 = 0;
+    let c3 = null;
+    let c4 = 0;
     return function() {
       const self = this;
       const length = arguments.length;
       const array = new Array(length);
-      const arg0 = array;
       for (let num = 0; num < length; num = num + 1) {
         array[num] = arguments[num];
       }
-      const timestamp = Date.now();
-      let tmp3 = closure_4;
-      if (!closure_4) {
+      let timestamp = Date.now();
+      let tmp3 = timestamp;
+      if (!timestamp) {
         tmp3 = false !== closure_2.leading;
       }
-      if (!tmp3) {
-        closure_4 = timestamp;
-      }
-      const diff = arg1 - (timestamp - closure_4);
-      const arg1 = self;
+      const diff = self - (timestamp - timestamp);
       if (diff > 0) {
-        if (diff <= arg1) {
-          let tmp7 = closure_3;
-          if (!closure_3) {
+        if (diff <= self) {
+          let tmp7 = c3;
+          if (!c3) {
             tmp7 = false === closure_2.trailing;
           }
           if (!tmp7) {
-            closure_3 = callback(() => {
+            c3 = outer1_138(() => {
               let num = 0;
-              if (false !== leading.leading) {
+              if (false !== outer1_2.leading) {
                 const _Date = Date;
                 num = Date.now();
               }
               const timestamp = num;
-              let closure_3 = null;
+              let c3 = null;
               array.apply(self, array);
             }, diff);
           }
         }
       }
-      if (closure_3) {
-        !function clearTimeout$2(closure_3) {
-          return callback("clearTimeout")(...arguments);
-        }(closure_3);
-        closure_3 = null;
+      if (c3) {
+        !(function clearTimeout$2(c3) {
+          return outer2_137("clearTimeout")(...arguments);
+        })(c3);
+        c3 = null;
       }
-      closure_4 = timestamp;
-      arg0.apply(self, array);
+      array.apply(self, array);
     };
   }
 }
 function hookSetter(arg0, arg1, arg2, arg3) {
   let tmp = arg2;
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   let closure_2 = arg2;
   if (arguments.length > 4) {
     if (undefined !== arguments[4]) {
@@ -1875,11 +1854,12 @@ function hookSetter(arg0, arg1, arg2, arg3) {
     const ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(arg0, arg1);
     const _Object2 = _window.Object;
     if (!arg3) {
-      const obj = {
+      let obj = {
         set(arg0) {
-              const arg1 = this;
-              callback(() => {
-                set.set.call(self, arg0);
+              let closure_0 = arg0;
+              const self = this;
+              outer1_138(() => {
+                outer1_2.set.call(self, closure_0);
               }, 0);
               let set = closure_3;
               if (closure_3) {
@@ -1899,16 +1879,16 @@ function hookSetter(arg0, arg1, arg2, arg3) {
       if (!closure_3) {
         obj = {};
       }
-      return closure_121(arg0, arg1, obj, true);
+      return outer1_121(closure_0, closure_1, obj, true);
     };
   }
   _window = window;
 }
 function patch(arg0, arg1, arg2) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   if (arg1 in arg0) {
-    let closure_2 = tmp5;
+    const asyncGeneratorStep = tmp5;
     const tmp7 = arg2(tmp[tmp2]);
     if ("function" === typeof tmp7) {
       const prototype = tmp8.prototype;
@@ -1925,7 +1905,7 @@ function patch(arg0, arg1, arg2) {
     }
     arg0[arg1] = tmp7;
     return () => {
-      arg0[arg1] = tmp5;
+      closure_0[closure_1] = closure_2;
     };
   } else {
     return () => {
@@ -2174,8 +2154,8 @@ function shadowHostInDom(ownerDocument) {
     let tmp3 = getShadowHost(tmp);
     if (tmp3) {
       do {
-        let tmp4 = closure_134;
-        tmp5 = closure_134(tmp3);
+        let tmp4 = getShadowHost;
+        tmp5 = getShadowHost(tmp3);
         tmp = tmp3;
         tmp3 = tmp5;
       } while (tmp5);
@@ -2198,7 +2178,7 @@ function inDom(ownerDocument) {
   return tmp2;
 }
 function getImplementation(arg0) {
-  if (closure_36[arg0]) {
+  if (table2[arg0]) {
     return tmp2;
   } else {
     const _window = window;
@@ -2224,7 +2204,7 @@ function getImplementation(arg0) {
       }
     }
     const _window3 = window;
-    closure_36[arg0] = obj2.bind(window);
+    table2[arg0] = obj2.bind(window);
   }
 }
 function setTimeout$1() {
@@ -2237,37 +2217,39 @@ function isNodeInLinkedList(arg0) {
   return "__ln" in arg0;
 }
 function deepDelete(arg0, childNodes) {
-  const require = arg0;
+  let closure_0 = arg0;
   arg0.delete(childNodes);
   childNodes = childNodes.childNodes;
   if (null != childNodes) {
     const item = childNodes.forEach((arg0) => {
-      callback(arg0, arg0);
+      outer1_141(closure_0, arg0);
     });
   }
 }
 function isParentRemoved(arg0, parentNode) {
   let tmp = 0 !== arg0.length;
   if (tmp) {
-    tmp = function _isParentRemoved(arg0, parentNode, arg2) {
+    tmp = (function _isParentRemoved(arg0, parentNode, arg2) {
+      let closure_0 = arg0;
+      let closure_1 = arg2;
       parentNode = parentNode.parentNode;
       if (parentNode) {
-        const tmp = function _loop() {
-          const id = arg2.getId(parentNode);
-          if (id.some((id) => id.id === closure_0)) {
+        const tmp = (function _loop() {
+          const id2 = id.getId(parentNode);
+          if (id2.some((id) => id.id === closure_0)) {
             const obj = { v: true };
             return obj;
           } else {
-            const parentNode = parentNode.parentNode;
+            parentNode = parentNode.parentNode;
           }
-        }();
+        })();
         while (!tmp) {
           let tmp2 = parentNode;
         }
         return tmp.v;
       }
       return false;
-    }(arg0, parentNode, arg2);
+    })(arg0, parentNode, arg2);
   }
   return tmp;
 }
@@ -2309,15 +2291,14 @@ function getEventTarget(composedPath) {
       break;
     } else {
       target = composedPath.target;
-      // break
+      break;
     }
     return target;
   }
 }
 function initMutationObserver(doc, doc) {
-  const require = doc;
+  let closure_0 = doc;
   const obj = new closure_45();
-  const dependencyMap = obj;
   obj.init(doc);
   let __rrMutationObserver = window.MutationObserver;
   if (!__rrMutationObserver) {
@@ -2342,21 +2323,27 @@ function initMutationObserver(doc, doc) {
     __rrMutationObserver = window[__symbol__Result];
   }
   __rrMutationObserver = new __rrMutationObserver(callbackWrapper((arg0) => {
-    let onMutation = arg0.onMutation;
+    let onMutation = doc.onMutation;
     if (onMutation) {
-      onMutation = false === arg0.onMutation(arg0);
+      onMutation = false === doc.onMutation(arg0);
     }
     if (!onMutation) {
       const processMutations = obj.processMutations;
       processMutations.bind(obj)(arg0);
     }
   }));
-  __rrMutationObserver.observe(doc, {});
+  __rrMutationObserver.observe(doc, { attributes: true, attributeOldValue: true, characterData: true, characterDataOldValue: true, childList: true, subtree: true });
   return __rrMutationObserver;
 }
 function initMouseInteractionObserver(doc) {
+  let _getPrototypeOf;
+  let _inherits;
+  let asyncGeneratorStep;
+  let closure_3;
+  let dependencyMap;
+  let require;
   let sampling;
-  ({ mouseInteractionCb: closure_0, doc: closure_1, mirror: closure_2, blockClass: closure_3, blockSelector: closure_4, unblockSelector: closure_5, sampling } = doc);
+  ({ mouseInteractionCb: require, doc: dependencyMap, mirror: asyncGeneratorStep, blockClass: closure_3, blockSelector: _getPrototypeOf, unblockSelector: _inherits, sampling } = doc);
   if (false === sampling.mouseInteraction) {
     return () => {
 
@@ -2366,9 +2353,8 @@ function initMouseInteractionObserver(doc) {
       if (undefined !== sampling.mouseInteraction) {
         let mouseInteraction = sampling.mouseInteraction;
       }
-      let closure_6 = mouseInteraction;
       let closure_7 = [];
-      let closure_8 = null;
+      let c8 = null;
       const _Object = Object;
       const keys = Object.keys(closure_39);
       const found = keys.filter((str) => {
@@ -2381,71 +2367,72 @@ function initMouseInteractionObserver(doc) {
         }
         return isNaNResult;
       });
-      const item = found.forEach((arg0) => {
-        const str = callback(arg0);
+      let item = found.forEach((arg0) => {
+        const str = outer1_97(arg0);
         let replaced = str;
         if (window.PointerEvent) {
-          if (closure_39.MouseDown !== closure_39[arg0]) {
-            if (closure_39.MouseUp !== tmp4) {
-              if (closure_39.TouchStart !== tmp4) {
+          if (outer1_39.MouseDown !== outer1_39[arg0]) {
+            if (outer1_39.MouseUp !== tmp4) {
+              if (outer1_39.TouchStart !== tmp4) {
                 replaced = str;
               }
             }
           }
           replaced = str.replace("mouse", "pointer");
         }
-        const tmp = function getHandler(arg0) {
+        let tmp = (function getHandler(arg0) {
+          let closure_0 = arg0;
           return (pointerType) => {
             let clientX;
             let clientY;
-            const tmp = callback4(pointerType);
-            if (!callback2(tmp, closure_3, closure_4, closure_5, true)) {
+            const tmp = outer3_145(pointerType);
+            if (!outer3_127(tmp, outer2_3, outer2_4, outer2_5, true)) {
               if ("pointerType" in pointerType) {
                 pointerType = pointerType.pointerType;
                 if ("mouse" === pointerType) {
-                  let Mouse = closure_40.Mouse;
+                  let Mouse = outer3_40.Mouse;
                 } else if ("touch" === pointerType) {
-                  Mouse = closure_40.Touch;
+                  Mouse = outer3_40.Touch;
                 } else {
                   Mouse = null;
                   if ("pen" === pointerType) {
-                    Mouse = closure_40.Pen;
+                    Mouse = outer3_40.Pen;
                   }
                 }
-                if (Mouse === closure_40.Touch) {
+                if (Mouse === outer3_40.Touch) {
                   let str2 = "TouchStart";
                   let Touch = Mouse;
-                  if (closure_39[closure_0] !== closure_39.MouseDown) {
+                  if (outer3_39[closure_0] !== outer3_39.MouseDown) {
                     Touch = Mouse;
                     str2 = tmp2;
-                    if (closure_39[closure_0] === closure_39.MouseUp) {
+                    if (outer3_39[closure_0] === outer3_39.MouseUp) {
                       str2 = "TouchEnd";
                       Touch = Mouse;
                     }
                   }
                 } else {
-                  const Pen = closure_40.Pen;
+                  const Pen = outer3_40.Pen;
                   Touch = Mouse;
                   str2 = tmp2;
                 }
               } else {
                 Touch = null;
                 str2 = tmp2;
-                if (callback3(pointerType)) {
-                  Touch = closure_40.Touch;
+                if (outer3_130(pointerType)) {
+                  Touch = outer3_40.Touch;
                   str2 = tmp2;
                 }
               }
               if (null !== Touch) {
-                let closure_8 = Touch;
+                let outer2_8 = Touch;
                 let startsWithResult = str2.startsWith("Touch");
                 if (startsWithResult) {
-                  startsWithResult = Touch === closure_40.Touch;
+                  startsWithResult = Touch === outer3_40.Touch;
                 }
                 if (!startsWithResult) {
                   let startsWithResult1 = str2.startsWith("Mouse");
                   if (startsWithResult1) {
-                    startsWithResult1 = Touch === closure_40.Mouse;
+                    startsWithResult1 = Touch === outer3_40.Mouse;
                   }
                   startsWithResult = startsWithResult1;
                 }
@@ -2455,30 +2442,30 @@ function initMouseInteractionObserver(doc) {
                 }
               } else {
                 tmp22 = Touch;
-                if (closure_39[closure_0] === closure_39.Click) {
-                  tmp22 = closure_8;
-                  closure_8 = null;
+                if (outer3_39[closure_0] === outer3_39.Click) {
+                  tmp22 = outer2_8;
+                  outer2_8 = null;
                 }
               }
               let first = pointerType;
-              if (callback3(pointerType)) {
+              if (outer3_130(pointerType)) {
                 first = pointerType.changedTouches[0];
               }
               if (first) {
-                const id = id.getId(tmp);
+                const id = outer2_2.getId(tmp);
                 ({ clientX, clientY } = first);
-                let obj = { type: closure_39[str2], id, x: clientX, y: clientY };
+                let obj = { type: outer3_39[str2], id, x: clientX, y: clientY };
                 let tmp36 = null !== tmp22;
                 if (tmp36) {
                   obj = { pointerType: tmp22 };
                   tmp36 = obj;
                 }
-                callback(pointerType)(Object.assign(obj, tmp36));
-                const tmp33 = callback(pointerType);
+                outer3_46(outer2_0)(Object.assign(obj, tmp36));
+                const tmp33 = outer3_46(outer2_0);
               }
             }
           };
-        }(arg0);
+        })(arg0);
       });
       return callbackWrapper(() => {
         const item = arr.forEach((arg0) => arg0());
@@ -2488,25 +2475,29 @@ function initMouseInteractionObserver(doc) {
   }
 }
 function initScrollObserver(sampling) {
+  let _getPrototypeOf;
+  let _inherits;
+  let asyncGeneratorStep;
+  let closure_3;
   let doc;
-  ({ scrollCb: closure_0, doc } = sampling);
-  const dependencyMap = doc;
-  ({ mirror: closure_2, blockClass: closure_3, blockSelector: closure_4, unblockSelector: closure_5 } = sampling);
+  let require;
+  ({ scrollCb: require, doc } = sampling);
+  ({ mirror: asyncGeneratorStep, blockClass: closure_3, blockSelector: _getPrototypeOf, unblockSelector: _inherits } = sampling);
   let num = sampling.sampling.scroll;
   if (!num) {
     num = 100;
   }
   return on("scroll", callbackWrapper(throttle$1(callbackWrapper((arg0) => {
-    const tmp = callback4(arg0);
+    const tmp = outer1_145(arg0);
     if (tmp) {
-      if (!callback3(tmp, closure_3, closure_4, closure_5, true)) {
-        const id = id.getId(tmp);
+      if (!outer1_127(tmp, closure_3, closure_4, closure_5, true)) {
+        id = id.getId(tmp);
         if (tmp === doc) {
           if (doc.defaultView) {
             let obj = { id };
-            ({ left: obj2.x, top: obj2.y } = callback2(doc.defaultView));
+            ({ left: obj2.x, top: obj2.y } = outer1_123(doc.defaultView));
             callback(obj);
-            const tmp15 = callback2(doc.defaultView);
+            const tmp15 = outer1_123(doc.defaultView);
           }
         }
         obj = { id };
@@ -2517,13 +2508,27 @@ function initScrollObserver(sampling) {
   }), num)), doc);
 }
 function initInputObserver(sampling) {
+  let _classCallCheck;
+  let _defineProperties;
+  let _getPrototypeOf;
+  let _inherits;
+  let _slicedToArray;
+  let _toConsumableArray;
+  let asyncGeneratorStep;
+  let c11;
+  let c12;
+  let c13;
+  let c14;
+  let closure_3;
   let doc;
+  let require;
+  let sentryReplaySession;
   function eventHandler(isTrusted) {
-    const tmp = callback11(isTrusted);
+    const tmp = outer1_145(isTrusted);
     let parentElement = tmp;
     let tmp2 = tmp;
     if (tmp) {
-      tmp2 = callback4(tmp.tagName);
+      tmp2 = outer1_98(tmp.tagName);
     }
     const doc = tmp2;
     let obj = tmp;
@@ -2533,15 +2538,17 @@ function initInputObserver(sampling) {
     }
     if (obj) {
       if (tmp2) {
-        if (closure_48.indexOf(tmp2) >= 0) {
-          if (!callback10(obj, checked, tmp20, closure_5, true)) {
+        if (outer1_48.indexOf(tmp2) >= 0) {
+          if (!outer1_127(obj, checked, closure_4, closure_5, true)) {
             const classList = obj.classList;
             if (!classList.contains(closure_6)) {
               if (!closure_7) {
-                const tmp9 = callback5(obj);
-                let checked = false;
+                const tmp9 = outer1_99(obj);
+                let closure_2 = tmp9;
+                checked = false;
                 obj = { maskInputOptions: closure_8, tagName: tmp2, type: tmp9 };
-                const tmp20 = callback7(obj, closure_11, closure_13, closure_12, closure_14, callback2(obj));
+                const tmp20 = outer1_115(obj, closure_11, closure_13, closure_12, closure_14, outer1_95(obj));
+                closure_4 = tmp20;
                 let tmp21 = "radio" !== tmp9;
                 if (tmp21) {
                   tmp21 = "checkbox" !== tmp9;
@@ -2553,9 +2560,9 @@ function initInputObserver(sampling) {
                 }
                 obj = { isMasked: tmp20 };
                 obj.element = obj;
-                obj.value = callback6(obj, tmp2, tmp9);
+                obj.value = outer1_100(obj, tmp2, tmp9);
                 obj.maskInputFn = closure_9;
-                const tmp24 = callback3(obj);
+                const tmp24 = outer1_96(obj);
                 if (closure_10) {
                   const obj1 = { text: tmp24, isChecked: flag2, userTriggered: isTrusted.isTrusted };
                   let obj2 = obj1;
@@ -2569,21 +2576,21 @@ function initInputObserver(sampling) {
                   const elements = doc.querySelectorAll("input[type=\"radio\"][name=\"" + name + "\"]");
                   const item = elements.forEach((element) => {
                     if (element !== parentElement) {
-                      let obj = { isMasked: tmp20, element, value: callback2(element, tmp2, tmp9), maskInputFn: closure_9 };
-                      const tmp10 = callback(obj);
-                      if (closure_10) {
+                      let obj = { isMasked: closure_4, element, value: outer2_100(element, closure_1, closure_2), maskInputFn: outer1_9 };
+                      const tmp10 = outer2_96(obj);
+                      if (outer1_10) {
                         obj = { text: tmp10, isChecked: !checked, userTriggered: false };
                       } else {
                         obj = { text: tmp10, isChecked: !checked };
                       }
-                      closure_18(element, obj);
-                      const tmp11 = closure_18;
+                      outer1_18(element, obj);
+                      const tmp11 = outer1_18;
                     }
                   });
                 }
-                const tmp11 = callback6(obj, tmp2, tmp9);
+                let tmp11 = outer1_100(obj, tmp2, tmp9);
                 const tmp25 = cbWithDedup;
-                const tmp28 = "radio" === tmp9 && name && flag2;
+                tmp28 = "radio" === tmp9 && name && flag2;
               }
             }
           }
@@ -2592,18 +2599,15 @@ function initInputObserver(sampling) {
     }
   }
   function cbWithDedup(arg0, text) {
-    const value = store.get(arg0);
-    const result = store.set(arg0, text);
-    const id = id.getId(arg0);
-    callback(closure_0)(Object.assign({}, text, { id }));
+    const value = outer1_49.get(arg0);
+    const result = outer1_49.set(arg0, text);
+    id = id.getId(arg0);
+    outer1_46(closure_0)(Object.assign({}, text, { id }));
   }
-  ({ inputCb: closure_0, doc } = sampling);
-  const dependencyMap = doc;
-  ({ mirror: closure_2, blockClass: closure_3, blockSelector: closure_4, unblockSelector: closure_5, ignoreClass: closure_6, ignoreSelector: closure_7, maskInputOptions: closure_8, maskInputFn: closure_9, userTriggeredOnInput: closure_10, maskTextClass: closure_11, unmaskTextClass: closure_12, maskTextSelector: closure_13, unmaskTextSelector: closure_14 } = sampling);
-  const mapped = "last" === sampling.sampling.input ? [] : ["isArray", "Object"].map((arg0) => callback8(arg0, callback(eventHandler), doc));
-  let closure_15 = mapped;
+  ({ inputCb: require, doc } = sampling);
+  ({ mirror: asyncGeneratorStep, blockClass: closure_3, blockSelector: _getPrototypeOf, unblockSelector: _inherits, ignoreClass: _slicedToArray, ignoreSelector: _toConsumableArray, maskInputOptions: _classCallCheck, maskInputFn: _defineProperties, userTriggeredOnInput: sentryReplaySession, maskTextClass: c11, unmaskTextClass: c12, maskTextSelector: c13, unmaskTextSelector: c14 } = sampling);
+  const mapped = "last" === sampling.sampling.input ? ["change"] : ["input", "change"].map((arg0) => outer1_119(arg0, outer1_46(eventHandler), doc));
   const defaultView = doc.defaultView;
-  const defineProperty = defaultView;
   if (defaultView) {
     const _Object = defaultView.Object;
     const ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(defaultView.HTMLInputElement.prototype, "value");
@@ -2625,9 +2629,9 @@ function initInputObserver(sampling) {
     }
     if (set) {
       const push = mapped.push;
-      push.apply(mapped, callback4(items1.map((arg0) => callback9(arg0[0], arg0[1], {
+      push.apply(mapped, _toConsumableArray(items1.map((arg0) => outer1_121(arg0[0], arg0[1], {
         set() {
-          callback(closure_17)({ target: this, isTrusted: false });
+          outer2_46(outer1_17)({ target: this, isTrusted: false });
         }
       }, false, defaultView))));
     }
@@ -2639,7 +2643,7 @@ function initInputObserver(sampling) {
       const item = mapped.forEach((arg0) => arg0());
     };
   }
-  const arr = "last" === sampling.sampling.input ? [] : ["isArray", "Object"];
+  const arr = "last" === sampling.sampling.input ? ["change"] : ["input", "change"];
 }
 function getNestedCSSRulePositions(parentRule) {
   const items = [];
@@ -2676,16 +2680,16 @@ function getIdAndStyleId(arg0, getId, getId2) {
   }
 }
 function initAdoptedStyleSheetObserver(doc, doc) {
+  let dependencyMap;
   let mirror;
-  const require = doc;
-  ({ mirror, stylesheetManager: closure_1 } = doc);
-  let closure_2 = null;
+  let closure_0 = doc;
+  ({ mirror, stylesheetManager: dependencyMap } = doc);
+  let id = null;
   if ("#document" === doc.nodeName) {
-    let id = mirror.getId(doc);
+    id = mirror.getId(doc);
   } else {
     id = mirror.getId(doc.host);
   }
-  closure_2 = id;
   if ("#document" === doc.nodeName) {
     const defaultView2 = doc.defaultView;
     let Document;
@@ -2712,7 +2716,6 @@ function initAdoptedStyleSheetObserver(doc, doc) {
       ownPropertyDescriptor = Object.getOwnPropertyDescriptor(prototype, "adoptedStyleSheets");
     }
   }
-  let closure_3 = ownPropertyDescriptor;
   if (null !== id) {
     if (-1 !== id) {
       if (ShadowRoot) {
@@ -2742,7 +2745,7 @@ function initAdoptedStyleSheetObserver(doc, doc) {
           };
           Object.defineProperty(doc, "adoptedStyleSheets", obj);
           let fn = callbackWrapper(() => {
-            Object.defineProperty(arg1, "adoptedStyleSheets", { configurable: ownPropertyDescriptor.configurable, enumerable: ownPropertyDescriptor.enumerable, get: ownPropertyDescriptor.get, set: ownPropertyDescriptor.set });
+            Object.defineProperty(closure_0, "adoptedStyleSheets", { configurable: ownPropertyDescriptor.configurable, enumerable: ownPropertyDescriptor.enumerable, get: ownPropertyDescriptor.get, set: ownPropertyDescriptor.set });
           });
         }
         return fn;
@@ -2754,12 +2757,14 @@ function initAdoptedStyleSheetObserver(doc, doc) {
   };
 }
 function initObservers(doc) {
-  const defaultView = doc.doc.defaultView;
+  let defaultView = doc.doc.defaultView;
   if (defaultView) {
     if (doc.recordDOM) {
       let closure_0 = initMutationObserver(doc, doc.doc);
     }
-    let closure_1 = function initMoveObserver(doc) {
+    let closure_1 = (function initMoveObserver(doc) {
+      let closure_0;
+      let closure_1;
       let sampling;
       ({ mousemoveCb: closure_0, sampling, doc, mirror: closure_1 } = doc);
       if (false === sampling.mousemove) {
@@ -2776,56 +2781,55 @@ function initObservers(doc) {
           num2 = sampling.mousemoveCallback;
         }
         let closure_3 = [];
-        let closure_4 = callback15(callback13((arg0) => {
-          const callback = Date.now() - closure_2;
+        let closure_4 = outer1_120(outer1_46((arg0) => {
+          const callback = Date.now() - c2;
           callback(arr.map((timeOffset) => {
             timeOffset.timeOffset = timeOffset.timeOffset - closure_0;
             return timeOffset;
           }), arg0);
-          closure_2 = null;
+          c2 = null;
         }), num2);
-        const obj = { trailing: false };
-        const tmp4 = callback13(callback15(callback13((arg0) => {
+        let obj = { trailing: false };
+        const tmp4 = outer1_46(outer1_120(outer1_46((arg0) => {
           let clientX;
           let clientY;
           let first = arg0;
-          if (callback3(arg0)) {
+          if (outer2_130(arg0)) {
             first = arg0.changedTouches[0];
           }
           ({ clientX, clientY } = first);
           if (!closure_2) {
-            closure_2 = callback2();
+            closure_2 = outer2_34();
           }
-          const tmp = callback4(arg0);
-          const obj = { x: clientX, y: clientY, id: id.getId(callback4(arg0)), timeOffset: callback2() - closure_2 };
+          const tmp = outer2_145(arg0);
+          const obj = { x: clientX, y: clientY, id: id.getId(outer2_145(arg0)), timeOffset: outer2_34() - closure_2 };
           if ("undefined" !== typeof globalThis.DragEvent) {
             if (arg0 instanceof globalThis.DragEvent) {
-              let Drag = Drag.Drag;
+              let Drag = outer2_38.Drag;
             }
             tmp5(Drag);
           }
           Drag = arg0 instanceof globalThis.MouseEvent ? tmp6.MouseMove : tmp6.TouchMove;
         }), num, obj));
-        const items = [callback14("mousemove", tmp4, doc), callback14("touchmove", tmp4, doc), callback14("drag", tmp4, doc)];
-        let closure_5 = items;
-        return callback13(() => {
+        const items = [outer1_119("mousemove", tmp4, doc), outer1_119("touchmove", tmp4, doc), outer1_119("drag", tmp4, doc)];
+        return outer1_46(() => {
           const item = items.forEach((arg0) => arg0());
         });
       }
-    }(doc);
+    })(doc);
     let closure_2 = initMouseInteractionObserver(doc);
     let closure_3 = initScrollObserver(doc);
     let obj = { win: tmp };
-    let closure_4 = function initViewportResizeObserver(viewportResizeCb, win) {
+    let closure_4 = (function initViewportResizeObserver(viewportResizeCb, win) {
       viewportResizeCb = viewportResizeCb.viewportResizeCb;
-      let closure_1 = -1;
-      let closure_2 = -1;
-      return callback14("resize", callback13(callback15(callback13(() => {
-        const tmp = callback();
-        const tmp2 = callback2();
-        let tmp3 = closure_1 === tmp;
+      let c1 = -1;
+      let c2 = -1;
+      return outer1_119("resize", outer1_46(outer1_120(outer1_46(() => {
+        const tmp = outer2_124();
+        const tmp2 = outer2_125();
+        let tmp3 = c1 === tmp;
         if (tmp3) {
-          tmp3 = closure_2 === tmp2;
+          tmp3 = c2 === tmp2;
         }
         if (!tmp3) {
           const obj = {};
@@ -2834,45 +2838,51 @@ function initObservers(doc) {
           const _Number2 = Number;
           obj.height = Number(tmp);
           viewportResizeCb(obj);
-          closure_1 = tmp;
-          closure_2 = tmp2;
+          c1 = tmp;
+          c2 = tmp2;
         }
       }), 200)), win.win);
-    }(doc, obj);
+    })(doc, obj);
     let closure_5 = initInputObserver(doc);
-    let closure_6 = function initMediaInteractionObserver(doc) {
+    let closure_6 = (function initMediaInteractionObserver(doc) {
+      let closure_0;
+      let closure_1;
+      let closure_2;
+      let closure_3;
+      let closure_4;
+      let closure_5;
       ({ mediaInteractionCb: closure_0, blockClass: closure_1, blockSelector: closure_2, unblockSelector: closure_3, mirror: closure_4, sampling: closure_5, doc } = doc);
-      const tmp = callback13((arg0) => {
+      let tmp = outer1_46((arg0) => {
+        let closure_0 = arg0;
         let num = media.media;
         if (!num) {
           num = 500;
         }
-        return closure_120(callback((arg0) => {
+        return outer2_120(outer2_46((arg0) => {
           let currentTime;
           let muted;
           let playbackRate;
           let volume;
-          const tmp = callback2(arg0);
+          const tmp = outer3_145(arg0);
           if (tmp) {
-            if (!callback(tmp, closure_1, closure_2, closure_3, true)) {
-              const obj = { type: arg0 };
+            if (!outer3_127(tmp, outer1_1, outer1_2, outer1_3, true)) {
+              const obj = { type: callback };
               ({ currentTime, volume, muted, playbackRate } = tmp);
-              obj.id = id.getId(tmp);
+              obj.id = outer1_4.getId(tmp);
               obj.currentTime = currentTime;
               obj.volume = volume;
               obj.muted = muted;
               obj.playbackRate = playbackRate;
-              arg0(obj);
+              callback(obj);
             }
           }
         }), num);
       });
-      const items = [callback14("play", tmp(closure_41.Play), doc), callback14("pause", tmp(closure_41.Pause), doc), callback14("seeked", tmp(closure_41.Seeked), doc), callback14("volumechange", tmp(closure_41.VolumeChange), doc), callback14("ratechange", tmp(closure_41.RateChange), doc)];
-      let closure_6 = items;
-      return callback13(() => {
+      const items = [outer1_119("play", tmp(outer1_41.Play), doc), outer1_119("pause", tmp(outer1_41.Pause), doc), outer1_119("seeked", tmp(outer1_41.Seeked), doc), outer1_119("volumechange", tmp(outer1_41.VolumeChange), doc), outer1_119("ratechange", tmp(outer1_41.RateChange), doc)];
+      return outer1_46(() => {
         const item = items.forEach((arg0) => arg0());
       });
-    }(doc);
+    })(doc);
     let closure_7 = function styleSheetObserver() {
 
     };
@@ -2887,24 +2897,25 @@ function initObservers(doc) {
     };
     if (doc.recordDOM) {
       obj = { win: tmp };
-      closure_7 = function initStyleSheetObserver(doc, win) {
+      closure_7 = (function initStyleSheetObserver(doc, win) {
+        let closure_0;
+        let closure_1;
+        let closure_2;
         ({ styleSheetRuleCb: closure_0, mirror: closure_1, stylesheetManager: closure_2 } = doc);
         win = win.win;
-        let closure_3 = win;
         if (win.CSSStyleSheet) {
           if (win.CSSStyleSheet.prototype) {
             const insertRule = win.CSSStyleSheet.prototype.insertRule;
-            let closure_4 = insertRule;
             const _Proxy = Proxy;
             let obj = {
-              apply: callback13((apply) => {
+              apply: outer1_46((apply) => {
                     let id;
                     let styleId;
                     let tmp2;
                     let tmp3;
-                    [tmp2, tmp3] = replaceSync(arg2, 2);
-                    const tmp = replaceSync(arg2, 2);
-                    ({ id, styleId } = callback3(arg1, closure_1, closure_2.styleMirror));
+                    [tmp2, tmp3] = callback2(arg2, 2);
+                    const tmp = callback2(arg2, 2);
+                    ({ id, styleId } = outer2_151(arg1, closure_1, closure_2.styleMirror));
                     let tmp5 = id;
                     if (id) {
                       tmp5 = -1 !== id;
@@ -2926,16 +2937,15 @@ function initObservers(doc) {
                     return apply.apply(arg1, arg2);
                   })
             };
-            const proxy = new Proxy(insertRule, obj);
+            let proxy = new Proxy(insertRule, obj);
             win.CSSStyleSheet.prototype.insertRule = proxy;
             const deleteRule = win.CSSStyleSheet.prototype.deleteRule;
-            let closure_7 = deleteRule;
             const _Proxy2 = Proxy;
             obj = {
-              apply: callback13((apply) => {
+              apply: outer1_46((apply) => {
                     let id;
                     let styleId;
-                    ({ id, styleId } = callback3(arg1, closure_1, closure_2.styleMirror));
+                    ({ id, styleId } = outer2_151(arg1, closure_1, closure_2.styleMirror));
                     let tmp2 = id;
                     if (id) {
                       tmp2 = -1 !== id;
@@ -2949,7 +2959,7 @@ function initObservers(doc) {
                     }
                     if (tmp2) {
                       let obj = { id, styleId };
-                      obj = { index: replaceSync(arg2, 1)[0] };
+                      obj = { index: callback2(arg2, 1)[0] };
                       const items = [obj];
                       obj.removes = items;
                       callback(obj);
@@ -2957,17 +2967,16 @@ function initObservers(doc) {
                     return apply.apply(arg1, arg2);
                   })
             };
-            const proxy1 = new Proxy(deleteRule, obj);
+            let proxy1 = new Proxy(deleteRule, obj);
             win.CSSStyleSheet.prototype.deleteRule = proxy1;
             if (win.CSSStyleSheet.prototype.replace) {
               const replace = win.CSSStyleSheet.prototype.replace;
-              let closure_5 = replace;
               const _Proxy3 = Proxy;
               obj = {
-                apply: callback13((apply) => {
+                apply: outer1_46((apply) => {
                         let id;
                         let styleId;
-                        ({ id, styleId } = callback3(arg1, closure_1, closure_2.styleMirror));
+                        ({ id, styleId } = outer2_151(arg1, closure_1, closure_2.styleMirror));
                         let tmp2 = id;
                         if (id) {
                           tmp2 = -1 !== id;
@@ -2980,7 +2989,7 @@ function initObservers(doc) {
                           tmp2 = tmp3;
                         }
                         if (tmp2) {
-                          const obj = { id, styleId, replace: replaceSync(arg2, 1)[0] };
+                          const obj = { id, styleId, replace: callback2(arg2, 1)[0] };
                           callback(obj);
                         }
                         return apply.apply(arg1, arg2);
@@ -2991,13 +3000,12 @@ function initObservers(doc) {
             }
             if (win.CSSStyleSheet.prototype.replaceSync) {
               const replaceSync = win.CSSStyleSheet.prototype.replaceSync;
-              let closure_6 = replaceSync;
               const _Proxy4 = Proxy;
               const obj1 = {
-                apply: callback13((apply) => {
+                apply: outer1_46((apply) => {
                         let id;
                         let styleId;
-                        ({ id, styleId } = callback3(arg1, closure_1, closure_2.styleMirror));
+                        ({ id, styleId } = outer2_151(arg1, closure_1, closure_2.styleMirror));
                         let tmp2 = id;
                         if (id) {
                           tmp2 = -1 !== id;
@@ -3010,7 +3018,7 @@ function initObservers(doc) {
                           tmp2 = tmp3;
                         }
                         if (tmp2) {
-                          const obj = { id, styleId, replaceSync: replaceSync(arg2, 1)[0] };
+                          const obj = { id, styleId, replaceSync: callback2(arg2, 1)[0] };
                           callback(obj);
                         }
                         return apply.apply(arg1, arg2);
@@ -3020,34 +3028,33 @@ function initObservers(doc) {
               win.CSSStyleSheet.prototype.replaceSync = proxy3;
             }
             const obj2 = {};
-            let closure_8 = obj2;
-            if (callback17("CSSGroupingRule")) {
+            if (outer1_155("CSSGroupingRule")) {
               obj2.CSSGroupingRule = win.CSSGroupingRule;
             } else {
-              if (callback17("CSSMediaRule")) {
+              if (outer1_155("CSSMediaRule")) {
                 obj2.CSSMediaRule = win.CSSMediaRule;
               }
-              if (callback17("CSSConditionRule")) {
+              if (outer1_155("CSSConditionRule")) {
                 obj2.CSSConditionRule = win.CSSConditionRule;
               }
-              if (callback17("CSSSupportsRule")) {
+              if (outer1_155("CSSSupportsRule")) {
                 obj2.CSSSupportsRule = win.CSSSupportsRule;
               }
             }
             let closure_9 = {};
             const _Object = Object;
-            const entries = Object.entries(obj2);
-            const item = entries.forEach((arg0) => {
-              const tmp = replaceSync(arg0, 2);
+            let entries = Object.entries(obj2);
+            let item = entries.forEach((arg0) => {
+              let tmp = callback2(arg0, 2);
               const first = tmp[0];
-              closure_9[first] = { insertRule: tmp[1].prototype.insertRule, deleteRule: tmp[1].prototype.deleteRule };
+              dependencyMap[first] = { insertRule: tmp[1].prototype.insertRule, deleteRule: tmp[1].prototype.deleteRule };
               let obj = {
-                apply: callback2((apply, parentStyleSheet) => {
+                apply: outer2_46((apply, parentStyleSheet) => {
                   let id;
                   let styleId;
-                  const tmp = callback2(arg2, 2);
+                  const tmp = callback(arg2, 2);
                   let num = tmp[1];
-                  ({ id, styleId } = callback5(parentStyleSheet.parentStyleSheet, closure_1, closure_2.styleMirror));
+                  ({ id, styleId } = outer3_151(parentStyleSheet.parentStyleSheet, outer1_1, outer1_2.styleMirror));
                   let tmp3 = id;
                   if (id) {
                     tmp3 = -1 !== id;
@@ -3067,23 +3074,23 @@ function initObservers(doc) {
                       num = 0;
                     }
                     const items1 = [num];
-                    obj.index = items.concat(callback3(callback4(parentStyleSheet)), items1);
+                    obj.index = items.concat(callback2(outer3_150(parentStyleSheet)), items1);
                     const items2 = [obj];
                     obj.adds = items2;
-                    closure_0(obj);
-                    const tmp5 = closure_0;
-                    const tmp8 = callback3(callback4(parentStyleSheet));
+                    outer1_0(obj);
+                    const tmp5 = outer1_0;
+                    const tmp8 = callback2(outer3_150(parentStyleSheet));
                   }
                   return apply.apply(parentStyleSheet, arg2);
                 })
               };
-              const proxy = new Proxy(closure_9[first].insertRule, obj);
+              const proxy = new Proxy(dependencyMap[first].insertRule, obj);
               tmp[1].prototype.insertRule = proxy;
               obj = {
-                apply: callback2((apply, parentStyleSheet) => {
+                apply: outer2_46((apply, parentStyleSheet) => {
                   let id;
                   let styleId;
-                  ({ id, styleId } = callback5(parentStyleSheet.parentStyleSheet, closure_1, closure_2.styleMirror));
+                  ({ id, styleId } = outer3_151(parentStyleSheet.parentStyleSheet, outer1_1, outer1_2.styleMirror));
                   let tmp2 = id;
                   if (id) {
                     tmp2 = -1 !== id;
@@ -3099,19 +3106,19 @@ function initObservers(doc) {
                     let obj = { id, styleId };
                     obj = {};
                     const items = [];
-                    const items1 = [callback2(arg2, 1)[0]];
-                    obj.index = items.concat(callback3(callback4(parentStyleSheet)), items1);
+                    const items1 = [callback(arg2, 1)[0]];
+                    obj.index = items.concat(callback2(outer3_150(parentStyleSheet)), items1);
                     const items2 = [obj];
                     obj.removes = items2;
-                    callback(obj);
+                    outer1_0(obj);
                   }
                   return apply.apply(parentStyleSheet, arg2);
                 })
               };
-              const proxy1 = new Proxy(closure_9[first].deleteRule, obj);
+              const proxy1 = new Proxy(dependencyMap[first].deleteRule, obj);
               tmp[1].prototype.deleteRule = proxy1;
             });
-            return callback13(() => {
+            return outer1_46(() => {
               win.CSSStyleSheet.prototype.insertRule = insertRule;
               win.CSSStyleSheet.prototype.deleteRule = deleteRule;
               if (replace) {
@@ -3124,8 +3131,8 @@ function initObservers(doc) {
               const item = entries.forEach((arg0) => {
                 const tmp = callback(arg0, 2);
                 const first = tmp[0];
-                tmp[1].prototype.insertRule = closure_9[first].insertRule;
-                tmp[1].prototype.deleteRule = closure_9[first].deleteRule;
+                tmp[1].prototype.insertRule = outer1_9[first].insertRule;
+                tmp[1].prototype.deleteRule = outer1_9[first].deleteRule;
               });
             });
           }
@@ -3133,20 +3140,22 @@ function initObservers(doc) {
         return () => {
 
         };
-      }(doc, obj);
+      })(doc, obj);
       closure_8 = initAdoptedStyleSheetObserver(doc, doc.doc);
       obj = { win: tmp };
-      closure_9 = function initStyleDeclarationObserver(doc, win) {
+      closure_9 = (function initStyleDeclarationObserver(doc, win) {
+        let closure_0;
+        let closure_1;
+        let closure_2;
+        let closure_3;
         ({ styleDeclarationCb: closure_0, mirror: closure_1, ignoreCSSAttributes: closure_2, stylesheetManager: closure_3 } = doc);
         win = win.win;
-        let closure_4 = win;
         const setProperty = win.CSSStyleDeclaration.prototype.setProperty;
-        let closure_5 = setProperty;
         let obj = {
-          apply: callback13((apply, parentRule) => {
+          apply: outer1_46((apply, parentRule) => {
             let id;
             let styleId;
-            const tmp = removeProperty(arg2, 3);
+            const tmp = callback2(arg2, 3);
             const first = tmp[0];
             if (set.has(first)) {
               const items = [first, tmp3, tmp4];
@@ -3157,7 +3166,7 @@ function initObservers(doc) {
               if (null != parentRule) {
                 parentStyleSheet = parentRule.parentStyleSheet;
               }
-              ({ id, styleId } = closure_151(parentStyleSheet, closure_1, closure_3.styleMirror));
+              ({ id, styleId } = outer2_151(parentStyleSheet, closure_1, closure_3.styleMirror));
               let tmp11 = id;
               if (id) {
                 tmp11 = -1 !== id;
@@ -3173,7 +3182,7 @@ function initObservers(doc) {
                 let obj = { id, styleId };
                 obj = { property: first, value: tmp3, priority: tmp4 };
                 obj.set = obj;
-                obj.index = callback2(parentRule.parentRule);
+                obj.index = outer2_150(parentRule.parentRule);
                 callback(obj);
               }
               return apply.apply(parentRule, arg2);
@@ -3183,12 +3192,11 @@ function initObservers(doc) {
         const proxy = new Proxy(setProperty, obj);
         win.CSSStyleDeclaration.prototype.setProperty = proxy;
         const removeProperty = win.CSSStyleDeclaration.prototype.removeProperty;
-        let closure_6 = removeProperty;
         obj = {
-          apply: callback13((apply, parentRule) => {
+          apply: outer1_46((apply, parentRule) => {
             let id;
             let styleId;
-            const first = removeProperty(arg2, 1)[0];
+            const first = callback2(arg2, 1)[0];
             if (set.has(first)) {
               const items = [first];
               return removeProperty.apply(parentRule, items);
@@ -3198,7 +3206,7 @@ function initObservers(doc) {
               if (null != parentRule) {
                 parentStyleSheet = parentRule.parentStyleSheet;
               }
-              ({ id, styleId } = closure_151(parentStyleSheet, closure_1, closure_3.styleMirror));
+              ({ id, styleId } = outer2_151(parentStyleSheet, closure_1, closure_3.styleMirror));
               let tmp8 = id;
               if (id) {
                 tmp8 = -1 !== id;
@@ -3214,7 +3222,7 @@ function initObservers(doc) {
                 let obj = { id, styleId };
                 obj = { property: first };
                 obj.remove = obj;
-                obj.index = callback2(parentRule.parentRule);
+                obj.index = outer2_150(parentRule.parentRule);
                 callback(obj);
               }
               return apply.apply(parentRule, arg2);
@@ -3223,22 +3231,20 @@ function initObservers(doc) {
         };
         const proxy1 = new Proxy(removeProperty, obj);
         win.CSSStyleDeclaration.prototype.removeProperty = proxy1;
-        return callback13(() => {
+        return outer1_46(() => {
           win.CSSStyleDeclaration.prototype.setProperty = setProperty;
           win.CSSStyleDeclaration.prototype.removeProperty = removeProperty;
         });
-      }(doc, obj);
+      })(doc, obj);
       if (doc.collectFonts) {
-        closure_10 = function initFontObserver(doc) {
+        closure_10 = (function initFontObserver(doc) {
+          let closure_0;
           ({ fontCb: closure_0, doc } = doc);
           const defaultView = doc.defaultView;
-          let closure_1 = defaultView;
           if (defaultView) {
-            const items = [];
-            let closure_2 = items;
+            let items = [];
             const _WeakMap = WeakMap;
             const weakMap = new WeakMap();
-            let closure_3 = weakMap;
             const FontFace = defaultView.FontFace;
             defaultView.FontFace = function FontFace2(family, arg1, descriptors) {
               const tmp = new FontFace(family, arg1, descriptors);
@@ -3258,18 +3264,22 @@ function initObservers(doc) {
             items.push(() => {
               defaultView.FontFace = FontFace;
             });
-            items.push(callback16(doc.fonts, "add", (arg0) => function(arg0) {
-              callback2(callback(() => {
-                const value = map.get(arg0);
-                if (value) {
-                  arg0(value);
-                  map.delete(arg0);
-                }
-              }), 0);
-              const items = [arg0];
-              return arg0.apply(this, items);
+            items.push(outer1_122(doc.fonts, "add", (arg0) => {
+              let closure_0 = arg0;
+              return function(arg0) {
+                const callback = arg0;
+                outer3_138(outer3_46(() => {
+                  const value = outer2_3.get(callback);
+                  if (value) {
+                    callback(value);
+                    outer2_3.delete(callback);
+                  }
+                }), 0);
+                const items = [arg0];
+                return callback.apply(this, items);
+              };
             }));
-            return callback13(() => {
+            return outer1_46(() => {
               const item = items.forEach((arg0) => arg0());
             });
           } else {
@@ -3277,41 +3287,47 @@ function initObservers(doc) {
 
             };
           }
-        }(doc);
+        })(doc);
       }
     }
-    let closure_11 = function initSelectionObserver(doc) {
+    let closure_11 = (function initSelectionObserver(doc) {
+      let closure_0;
+      let closure_1;
+      let closure_2;
+      let closure_3;
+      let closure_4;
+      let closure_5;
       ({ doc: closure_0, mirror: closure_1, blockClass: closure_2, blockSelector: closure_3, unblockSelector: closure_4, selectionCb: closure_5 } = doc);
-      let closure_6 = true;
-      const tmp = callback13(() => {
+      let c6 = true;
+      const tmp = outer1_46(() => {
         let endContainer;
         let endOffset;
         let startContainer;
         let startOffset;
-        const selection = selection.getSelection();
+        selection = selection.getSelection();
         if (selection) {
           let closure_6 = selection.isCollapsed || false;
           const items = [];
           for (let num = 0; num < tmp3; num = num + 1) {
             let rangeAt = selection.getRangeAt(num);
             ({ startContainer, endContainer } = rangeAt);
-            let tmp5 = callback2;
+            let tmp5 = outer2_127;
             let tmp6 = closure_2;
             let tmp7 = closure_3;
             let tmp8 = closure_4;
             let tmp9 = startContainer;
             let flag = true;
             ({ startOffset, endOffset } = rangeAt);
-            let tmp10 = callback2(startContainer, closure_2, closure_3, closure_4, true);
+            let tmp10 = outer2_127(startContainer, closure_2, closure_3, closure_4, true);
             let tmp11 = num;
             if (!tmp10) {
-              let tmp12 = callback2;
+              let tmp12 = outer2_127;
               let tmp13 = closure_2;
               let tmp14 = closure_3;
               let tmp15 = closure_4;
               let tmp16 = endContainer;
               let flag2 = true;
-              tmp10 = callback2(endContainer, closure_2, closure_3, closure_4, true);
+              tmp10 = outer2_127(endContainer, closure_2, closure_3, closure_4, true);
             }
             if (!tmp10) {
               let obj = {};
@@ -3325,23 +3341,23 @@ function initObservers(doc) {
           }
           obj = { ranges: items };
           callback(obj);
-          const tmp3 = selection.rangeCount || 0;
+          tmp3 = selection.rangeCount || 0;
         }
       });
       tmp();
-      return callback14("selectionchange", tmp);
-    }(doc);
-    let closure_12 = function initCustomElementObserver(customElementCb) {
+      return outer1_119("selectionchange", tmp);
+    })(doc);
+    let closure_12 = (function initCustomElementObserver(customElementCb) {
       customElementCb = customElementCb.customElementCb;
       const defaultView = customElementCb.doc.defaultView;
       if (defaultView) {
         if (defaultView.customElements) {
-          let fn = callback16(defaultView.customElements, "define", (arg0) => {
-            const customElementCb = arg0;
+          let fn = outer1_122(defaultView.customElements, "define", (arg0) => {
+            let closure_0 = arg0;
             return function(name) {
-              name({ define: { name } });
+              callback({ define: { name } });
               const items = [name, arg1, arg2];
-              name.apply(this, items);
+              callback.apply(this, items);
             };
           });
         }
@@ -3350,17 +3366,17 @@ function initObservers(doc) {
       fn = () => {
 
       };
-    }(doc);
-    const items = [];
-    let closure_13 = items;
+    })(doc);
+    let items = [];
     const plugins = doc.plugins;
     for (const item10053 of plugins) {
       let tmp10 = items;
       let tmp11 = defaultView;
       let arr = items.push(item10053.observer(item10053.callback, tmp, item10053.options));
+      continue;
     }
     return callbackWrapper(() => {
-      const item = closure_47.forEach((reset) => reset.reset());
+      const item = outer1_47.forEach((reset) => reset.reset());
       if (null != closure_0) {
         closure_0.disconnect();
       }
@@ -3404,7 +3420,10 @@ function canMonkeyPatchNestedCSSRule(arg0) {
   return Boolean(prototype);
 }
 function record() {
+  let __publicField$1;
+  let asyncGeneratorStep;
   let blockClass;
+  let dependencyMap;
   let errorHandler;
   let maskAttributeFn;
   let maskInputOptions;
@@ -3418,89 +3437,80 @@ function record() {
       let first = arguments[0];
     }
     const emit = first.emit;
-    const require = emit;
-    ({ checkoutEveryNms: closure_1, checkoutEveryNth: closure_2, blockClass } = first);
+    ({ checkoutEveryNms: dependencyMap, checkoutEveryNth: asyncGeneratorStep, blockClass } = first);
     let str = "rr-block";
     if (undefined !== blockClass) {
       str = blockClass;
     }
-    let closure_3 = str;
-    const blockSelector = first.blockSelector;
+    let blockSelector = first.blockSelector;
     let tmp = null;
     if (undefined !== blockSelector) {
       tmp = blockSelector;
     }
-    let closure_4 = tmp;
-    const unblockSelector = first.unblockSelector;
+    const _getPrototypeOf = tmp;
+    let unblockSelector = first.unblockSelector;
     let tmp2 = null;
     if (undefined !== unblockSelector) {
       tmp2 = unblockSelector;
     }
-    let closure_5 = tmp2;
+    const _inherits = tmp2;
     const ignoreClass = first.ignoreClass;
     let str2 = "rr-ignore";
     if (undefined !== ignoreClass) {
       str2 = ignoreClass;
     }
-    let closure_6 = str2;
     const ignoreSelector = first.ignoreSelector;
     let tmp3 = null;
     if (undefined !== ignoreSelector) {
       tmp3 = ignoreSelector;
     }
-    let closure_7 = tmp3;
-    const maskAllText = first.maskAllText;
-    let closure_8 = tmp4;
-    const maskTextClass = first.maskTextClass;
+    const _toConsumableArray = tmp3;
+    let maskAllText = first.maskAllText;
+    const _classCallCheck = tmp4;
+    let maskTextClass = first.maskTextClass;
     let str3 = "rr-mask";
     if (undefined !== maskTextClass) {
       str3 = maskTextClass;
     }
-    let closure_9 = str3;
-    const unmaskTextClass = first.unmaskTextClass;
+    let unmaskTextClass = first.unmaskTextClass;
     let tmp5 = null;
     if (undefined !== unmaskTextClass) {
       tmp5 = unmaskTextClass;
     }
-    let closure_10 = tmp5;
-    const maskTextSelector = first.maskTextSelector;
+    const sentryReplaySession = tmp5;
+    let maskTextSelector = first.maskTextSelector;
     let tmp6 = null;
     if (undefined !== maskTextSelector) {
       tmp6 = maskTextSelector;
     }
-    let closure_11 = tmp6;
-    const unmaskTextSelector = first.unmaskTextSelector;
+    let c11 = tmp6;
+    let unmaskTextSelector = first.unmaskTextSelector;
     let tmp7 = null;
     if (undefined !== unmaskTextSelector) {
       tmp7 = unmaskTextSelector;
     }
-    let closure_12 = tmp7;
-    const inlineStylesheet = first.inlineStylesheet;
-    let closure_13 = tmp8;
+    let c12 = tmp7;
+    let inlineStylesheet = first.inlineStylesheet;
+    let c13 = tmp8;
     ({ maskInputOptions, slimDOMOptions, maskAttributeFn } = first);
-    let closure_14 = maskAttributeFn;
     const maskInputFn = first.maskInputFn;
-    let closure_15 = maskInputFn;
     const maskTextFn = first.maskTextFn;
-    const defineProperty = maskTextFn;
     const maxCanvasSize = first.maxCanvasSize;
     let tmp10 = null;
     if (undefined !== maxCanvasSize) {
       tmp10 = maxCanvasSize;
     }
-    ({ packFn: closure_17, sampling } = first);
+    ({ packFn: __publicField$1, sampling } = first);
     if (undefined === sampling) {
       sampling = {};
     }
-    let closure_18 = sampling;
     let dataURLOptions = first.dataURLOptions;
     if (undefined === dataURLOptions) {
       dataURLOptions = {};
     }
-    tmp3 = dataURLOptions;
     ({ mousemoveWait, recordDOM } = first);
     let closure_20 = undefined === recordDOM || recordDOM;
-    const recordCanvas = first.recordCanvas;
+    let recordCanvas = first.recordCanvas;
     let closure_21 = tmp11;
     const recordCrossOriginIframes = first.recordCrossOriginIframes;
     let recordAfter = first.recordAfter;
@@ -3515,39 +3525,34 @@ function record() {
     let closure_23 = undefined !== userTriggeredOnInput && userTriggeredOnInput;
     const collectFonts = first.collectFonts;
     let closure_24 = undefined !== collectFonts && collectFonts;
-    const inlineImages = first.inlineImages;
+    let inlineImages = first.inlineImages;
     const regExp = tmp13;
     let plugins = first.plugins;
-    let closure_26 = plugins;
     let fn = first.keepIframeSrcFn;
     if (undefined === fn) {
       fn = () => false;
     }
-    let closure_27 = fn;
     let ignoreCSSAttributes = first.ignoreCSSAttributes;
     if (undefined === ignoreCSSAttributes) {
-      const _Set = Set;
+      let _Set = Set;
       ignoreCSSAttributes = new Set([]);
     }
-    let closure_28 = ignoreCSSAttributes;
     ({ errorHandler, onMutation } = first);
-    let closure_29 = onMutation;
     const getCanvasManager = first.getCanvasManager;
-    let tmp55 = errorHandler;
     let tmp17 = !tmp12;
     if (!tmp17) {
-      const _window = window;
-      const _window2 = window;
+      let _window = window;
+      let _window2 = window;
       tmp17 = window.parent === window;
     }
     let closure_30 = tmp17;
     let flag2 = false;
-    let closure_31 = false;
+    let c31 = false;
     if (!tmp17) {
       const _window3 = window;
       if (window.parent.document) {
         flag2 = false;
-        closure_31 = false;
+        c31 = false;
       }
     }
     while (true) {
@@ -3580,11 +3585,10 @@ function record() {
       let resetResult = navigation.reset();
       let flag3 = true;
       if (true === tmp9) {
-        maskInputOptions = {};
+        maskInputOptions = { color: true, date: true, "datetime-local": true, email: true, month: true, number: true, range: true, search: true, tel: true, text: true, time: true, url: true, week: true, textarea: true, select: true, radio: true, checkbox: true };
       } else if (undefined === maskInputOptions) {
         maskInputOptions = {};
       }
-      let closure_33 = maskInputOptions;
       if (true !== slimDOMOptions) {
         let str7 = "all";
         if ("all" !== slimDOMOptions) {
@@ -3593,9 +3597,8 @@ function record() {
             obj = {};
           }
         }
-        let nowTimestamp = obj;
-        let tmp29 = function polyfill$1() {
-          const emit = this;
+        let tmp29 = (function polyfill$1() {
+          const self = this;
           if (arguments.length > 0) {
             if (undefined !== arguments[0]) {
               let _window = arguments[0];
@@ -3640,8 +3643,8 @@ function record() {
             }
           }
           _window = window;
-        }();
-        let closure_35 = 0;
+        })();
+        let c35 = 0;
         function eventProcessor(eventProcessorResult) {
           let items = plugins;
           if (!plugins) {
@@ -3654,10 +3657,11 @@ function record() {
               let tmp3 = eventProcessorResult;
               eventProcessorResult = obj.eventProcessor(eventProcessorResult);
             }
+            continue;
           }
           let tmp4 = callback;
           if (callback) {
-            tmp4 = !closure_31;
+            tmp4 = !c31;
           }
           if (tmp4) {
             eventProcessorResult = callback(eventProcessorResult);
@@ -3681,12 +3685,12 @@ function record() {
           if (!tmp) {
             const item = observe.forEach((unfreeze) => unfreeze.unfreeze());
           }
-          if (tmp17) {
+          if (closure_30) {
             if (null != emit) {
               emit(eventProcessor(result), isCheckout);
             }
-          } else if (closure_31) {
-            const obj = { type: "rrweb", event: eventProcessor(result) };
+          } else if (c31) {
+            obj = { type: "rrweb", event: eventProcessor(result) };
             const _window = window;
             obj.origin = window.location.origin;
             obj.isCheckout = isCheckout;
@@ -3694,6 +3698,7 @@ function record() {
             parent.postMessage(obj, "*");
           }
           if (result.type === wrappedMutationEmit.FullSnapshot) {
+            const timestamp = result;
             let closure_35 = 0;
           } else if (result.type === wrappedMutationEmit.IncrementalSnapshot) {
             closure_35 = closure_35 + 1;
@@ -3703,10 +3708,10 @@ function record() {
             }
             let tmp20 = closure_1;
             if (closure_1) {
-              tmp20 = result;
+              tmp20 = timestamp;
             }
             if (tmp20) {
-              tmp20 = result.timestamp - result.timestamp > closure_1;
+              tmp20 = result.timestamp - timestamp.timestamp > closure_1;
             }
             if (!tmp17) {
               tmp17 = tmp20;
@@ -3717,19 +3722,17 @@ function record() {
           }
         }
         function wrappedMutationEmit(arg0) {
-          let obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+          obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
           obj = { source: wrappedScrollEmit.Mutation };
           wrappedEmit(obj);
         }
-        let closure_37 = wrappedMutationEmit;
         function wrappedScrollEmit(arg0) {
-          let obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+          obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
           obj = { source: wrappedScrollEmit.Scroll };
           return wrappedEmit(obj);
         }
-        obj = wrappedScrollEmit;
         function wrappedCanvasMutationEmit(arg0) {
-          let obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+          obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
           obj = { source: wrappedScrollEmit.CanvasMutation };
           return wrappedEmit(obj);
         }
@@ -3737,7 +3740,7 @@ function record() {
         obj = {
           mutationCb: wrappedMutationEmit,
           adoptedStyleSheetCb: function wrappedAdoptedStyleSheetEmit(arg0) {
-                  let obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                  obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
                   obj = { source: wrappedScrollEmit.AdoptedStyleSheet };
                   return wrappedEmit(obj);
                 }
@@ -3770,26 +3773,28 @@ function record() {
             if (item10149.getMirror) {
               let tmp48 = item10149;
               let obj1 = {};
-              let tmp49 = closure_60;
-              obj1.nodeMirror = closure_60;
+              let tmp49 = navigation;
+              obj1.nodeMirror = navigation;
               let tmp50 = tmp43;
               ({ crossOriginIframeMirror: obj9.crossOriginIframeMirror, crossOriginIframeStyleMirror: obj9.crossOriginIframeStyleMirror } = obj6);
               let mirror = obj8.getMirror(obj1);
             }
+            continue;
           }
           let tmp52 = ctor7;
           let prototype6 = ctor7.prototype;
           let tmp53 = new.target;
           let tmp54 = new.target;
-          tmp55 = new ctor7();
+          let tmp55 = new ctor7();
           let tmp56 = tmp55;
+          errorHandler = tmp55;
           let obj2 = {};
           let tmp57 = navigation;
           obj2.mirror = navigation;
           let _window4 = window;
           obj2.win = window;
           obj2.mutationCb = function mutationCb(arg0) {
-            let obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+            obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
             obj = { source: wrappedScrollEmit.CanvasMutation };
             return wrappedEmit(obj);
           };
@@ -3814,7 +3819,6 @@ function record() {
             canvasManager = new ctor5();
           }
           while (true) {
-            let closure_43 = canvasManager;
             if ("boolean" !== typeof globalThis.__RRWEB_EXCLUDE_SHADOW_DOM__) {
               break;
             } else {
@@ -3828,46 +3832,45 @@ function record() {
                 let tmp71 = new ctor3();
                 let moveKey = tmp71;
                 function takeFullSnapshot2(arg0) {
-                  const tmp = arguments.length > 0 && undefined !== arguments[0] && arguments[0];
                   if (closure_20) {
                     let obj = { type: wrappedMutationEmit.Meta };
                     obj = {};
                     const _window = window;
                     obj.href = window.location.href;
-                    obj.width = callback4();
-                    obj.height = callback3();
+                    obj.width = outer1_125();
+                    obj.height = outer1_124();
                     obj.data = obj;
-                    const tmp7 = wrappedEmit(obj, tmp);
+                    wrappedEmit(obj, tmp);
                     tmp34.reset();
                     tmp71.init();
                     const item = observe.forEach((lock) => lock.lock());
-                    const _document = document;
-                    obj = { mirror: id, blockClass: str, blockSelector: tmp, unblockSelector: wrappedEmit, maskAllText: globalThis, maskTextClass: str3, unmaskTextClass: callback4, maskTextSelector: callback3, unmaskTextSelector: tmp7, inlineStylesheet: tmp34, maskAllInputs: maskInputOptions, maskAttributeFn, maskInputFn, maskTextFn };
+                    let _document = document;
+                    obj = { mirror: outer1_60, blockClass: str, blockSelector: closure_4, unblockSelector: closure_5, maskAllText: closure_8, maskTextClass: str3, unmaskTextClass: closure_10, maskTextSelector: closure_11, unmaskTextSelector: closure_12, inlineStylesheet: closure_13, maskAllInputs: maskInputOptions, maskAttributeFn, maskInputFn, maskTextFn };
                     obj.slimDOM = obj;
                     obj.dataURLOptions = dataURLOptions;
-                    obj.recordCanvas = tmp11;
-                    obj.inlineImages = tmp13;
+                    obj.recordCanvas = closure_21;
+                    obj.inlineImages = closure_25;
                     obj.onSerialize = function onSerialize(shadowRoot) {
-                      if (callback2(shadowRoot, closure_60)) {
-                        closure_41.addIframe(shadowRoot);
+                      if (outer2_131(shadowRoot, outer2_60)) {
+                        outer1_41.addIframe(shadowRoot);
                       }
-                      if (callback3(shadowRoot, closure_60)) {
-                        closure_40.trackLinkElement(shadowRoot);
+                      if (outer2_132(shadowRoot, outer2_60)) {
+                        outer1_40.trackLinkElement(shadowRoot);
                       }
-                      if (callback4(shadowRoot)) {
+                      if (outer2_133(shadowRoot)) {
                         const _document = document;
-                        closure_44.addShadowRoot(shadowRoot.shadowRoot, document);
+                        outer1_44.addShadowRoot(shadowRoot.shadowRoot, document);
                       }
                     };
                     obj.onIframeLoad = function onIframeLoad(contentWindow) {
-                      closure_41.attachIframe(contentWindow, arg1);
+                      outer1_41.attachIframe(contentWindow, arg1);
                       if (contentWindow.contentWindow) {
-                        closure_43.addWindow(contentWindow.contentWindow);
+                        outer1_43.addWindow(contentWindow.contentWindow);
                       }
-                      closure_44.observeAttachShadow(contentWindow);
+                      outer1_44.observeAttachShadow(contentWindow);
                     };
-                    obj.onStylesheetLoad = function onStylesheetLoad(self, attributes) {
-                      closure_40.attachLinkElement(self, attributes);
+                    obj.onStylesheetLoad = function onStylesheetLoad(shadowRoot, attributes) {
+                      outer1_40.attachLinkElement(shadowRoot, attributes);
                     };
                     obj.onBlockedImageLoad = function onBlockedImageLoad(arg0, id, width) {
                       let obj = { adds: [], removes: [], texts: [] };
@@ -3876,11 +3879,11 @@ function record() {
                       obj.attributes = obj;
                       const items = [obj];
                       obj.attributes = items;
-                      callback(obj);
+                      outer1_37(obj);
                     };
                     obj.keepIframeSrcFn = fn;
                     obj.ignoreCSSAttributes = ignoreCSSAttributes;
-                    const tmp34 = function snapshot(document, arg1) {
+                    tmp34 = (function snapshot(document, arg1) {
                       let dataURLOptions;
                       let iframeLoadTimeout;
                       let keepIframeSrcFn;
@@ -3899,8 +3902,8 @@ function record() {
                       }
                       let mirror = obj.mirror;
                       if (undefined === mirror) {
-                        const prototype = ctor.prototype;
-                        mirror = new ctor();
+                        const prototype = dataURLOptions.prototype;
+                        mirror = new dataURLOptions();
                       }
                       const blockClass = obj.blockClass;
                       let str = "rr-block";
@@ -3956,7 +3959,7 @@ function record() {
                       let ignoreCSSAttributes = obj.ignoreCSSAttributes;
                       obj = { doc: document, mirror, blockClass: str, blockSelector: tmp4, unblockSelector: tmp5, maskAllText: undefined !== maskAllText && maskAllText, maskTextClass: str2, unmaskTextClass: tmp7, maskTextSelector: tmp8, unmaskTextSelector: tmp9, skipChild: false, inlineStylesheet: undefined === inlineStylesheet || inlineStylesheet };
                       if (true === obj) {
-                        obj = { 0: null, 9223372036854775807: 1, 9223372036854775807: true, 0: null, 0: 16, -9223372036854775808: 5, 0: false, -9223372036854775808: 53.504, -9223372036854775808: null, 9223372036854775807: 1, 9223372036854775807: "row", 9223372036854775807: null, EMOJI_PICKER_EMOJI_CLICKED: 20, display: null, PRIVATE_CHANNEL_INTEGRATIONS: 1 };
+                        obj = { color: true, date: true, "datetime-local": true, email: true, month: true, number: true, range: true, search: true, tel: true, text: true, time: true, url: true, week: true, textarea: true, select: true };
                       } else if (false === obj) {
                         obj = {};
                       }
@@ -3989,16 +3992,16 @@ function record() {
                           ignoreCSSAttributes = new Set([]);
                         }
                         obj.ignoreCSSAttributes = ignoreCSSAttributes;
-                        return closure_118(document, obj);
+                        return outer2_118(document, obj);
                       }
-                      const obj2 = { headMetaDescKeywords: "all" === tmp13 };
+                      const obj2 = { script: true, comment: true, headFavicon: true, headWhitespace: true, headMetaDescKeywords: "all" === tmp13, headMetaSocial: true, headMetaRobots: true, headMetaHttpEquiv: true, headMetaAuthorship: true, headMetaVerification: true };
                       obj1 = obj2;
-                    }(document, obj);
+                    })(document, obj);
                     if (tmp34) {
-                      const obj1 = { type: wrappedMutationEmit.FullSnapshot };
-                      const obj2 = { node: tmp34 };
+                      let obj1 = { type: wrappedMutationEmit.FullSnapshot };
+                      let obj2 = { node: tmp34 };
                       const _window2 = window;
-                      obj2.initialOffset = callback2(window);
+                      obj2.initialOffset = outer1_123(window);
                       obj1.data = obj2;
                       wrappedEmit(obj1);
                       const item1 = observe.forEach((unlock) => unlock.unlock());
@@ -4010,7 +4013,7 @@ function record() {
                       if (adoptedStyleSheets) {
                         const _document4 = document;
                         const _document5 = document;
-                        tmp34.adoptStyleSheets(document.adoptedStyleSheets, id.getId(document));
+                        tmp34.adoptStyleSheets(document.adoptedStyleSheets, outer1_60.getId(document));
                       }
                     } else {
                       const _console = console;
@@ -4018,80 +4021,78 @@ function record() {
                     }
                   }
                 }
-                let closure_45 = takeFullSnapshot2;
                 let items = [];
                 let arr3 = items;
-                let callbackWrapper = items;
                 function observe(doc) {
-                  const obj = {
+                  obj = {
                     onMutation,
                     mutationCb: wrappedMutationEmit,
                     mousemoveCb(positions, source) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: obj };
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: obj };
                       obj = { source, positions };
-                      return callback(obj);
+                      return wrappedEmit(obj);
                     },
                     mouseInteractionCb(arg0) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: Object.assign(obj, arg0) };
-                      obj = { source: closure_38.MouseInteraction };
-                      return callback(obj);
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                      obj = { source: wrappedScrollEmit.MouseInteraction };
+                      return wrappedEmit(obj);
                     },
                     scrollCb: wrappedScrollEmit,
                     viewportResizeCb(arg0) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: Object.assign(obj, arg0) };
-                      obj = { source: closure_38.ViewportResize };
-                      return callback(obj);
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                      obj = { source: wrappedScrollEmit.ViewportResize };
+                      return wrappedEmit(obj);
                     },
                     inputCb(arg0) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: Object.assign(obj, arg0) };
-                      obj = { source: closure_38.Input };
-                      return callback(obj);
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                      obj = { source: wrappedScrollEmit.Input };
+                      return wrappedEmit(obj);
                     },
                     mediaInteractionCb(arg0) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: Object.assign(obj, arg0) };
-                      obj = { source: closure_38.MediaInteraction };
-                      return callback(obj);
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                      obj = { source: wrappedScrollEmit.MediaInteraction };
+                      return wrappedEmit(obj);
                     },
                     styleSheetRuleCb(arg0) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: Object.assign(obj, arg0) };
-                      obj = { source: closure_38.StyleSheetRule };
-                      return callback(obj);
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                      obj = { source: wrappedScrollEmit.StyleSheetRule };
+                      return wrappedEmit(obj);
                     },
                     styleDeclarationCb(arg0) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: Object.assign(obj, arg0) };
-                      obj = { source: closure_38.StyleDeclaration };
-                      return callback(obj);
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                      obj = { source: wrappedScrollEmit.StyleDeclaration };
+                      return wrappedEmit(obj);
                     },
                     canvasMutationCb: wrappedCanvasMutationEmit,
                     fontCb(arg0) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: Object.assign(obj, arg0) };
-                      obj = { source: closure_38.Font };
-                      return callback(obj);
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                      obj = { source: wrappedScrollEmit.Font };
+                      return wrappedEmit(obj);
                     },
                     selectionCb(arg0) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: Object.assign(obj, arg0) };
-                      obj = { source: closure_38.Selection };
-                      callback(obj);
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                      obj = { source: wrappedScrollEmit.Selection };
+                      wrappedEmit(obj);
                     },
                     customElementCb(arg0) {
-                      let obj = { type: closure_37.IncrementalSnapshot, data: Object.assign(obj, arg0) };
-                      obj = { source: closure_38.CustomElement };
-                      callback(obj);
+                      obj = { type: wrappedMutationEmit.IncrementalSnapshot, data: Object.assign(obj, arg0) };
+                      obj = { source: wrappedScrollEmit.CustomElement };
+                      wrappedEmit(obj);
                     },
                     blockClass: str,
                     ignoreClass: str2,
-                    ignoreSelector: tmp3,
-                    maskAllText: tmp4,
+                    ignoreSelector: closure_7,
+                    maskAllText: closure_8,
                     maskTextClass: str3,
-                    unmaskTextClass: tmp5,
-                    maskTextSelector: tmp6,
-                    unmaskTextSelector: tmp7,
+                    unmaskTextClass: closure_10,
+                    maskTextSelector: closure_11,
+                    unmaskTextSelector: closure_12,
                     maskInputOptions,
-                    inlineStylesheet: tmp8,
+                    inlineStylesheet: closure_13,
                     sampling,
                     recordDOM: closure_20,
-                    recordCanvas: tmp11,
-                    inlineImages: tmp13,
+                    recordCanvas: closure_21,
+                    inlineImages: closure_25,
                     userTriggeredOnInput: closure_23,
                     collectFonts: closure_24,
                     doc,
@@ -4099,40 +4100,41 @@ function record() {
                     maskInputFn,
                     maskTextFn,
                     keepIframeSrcFn: fn,
-                    blockSelector: tmp,
-                    unblockSelector: tmp2,
+                    blockSelector: closure_4,
+                    unblockSelector: closure_5,
                     slimDOMOptions: obj,
                     dataURLOptions,
-                    mirror: closure_60,
-                    iframeManager: tmp43,
-                    stylesheetManager: tmp34,
-                    shadowDomManager: tmp71,
-                    processedNodeManager: tmp55,
+                    mirror: outer1_60,
+                    iframeManager: closure_41,
+                    stylesheetManager: closure_40,
+                    shadowDomManager: closure_44,
+                    processedNodeManager: errorHandler,
                     canvasManager,
                     ignoreCSSAttributes
                   };
                   let mapped;
-                  const tmp = items(closure_153);
                   if (null != plugins) {
                     const found = plugins.filter((observer) => observer.observer);
                     if (null != found) {
-                      mapped = found.map((observer) => ({
-                        observer: observer.observer,
-                        options: observer.options,
-                        callback(payload) {
-                          let obj = { type: Plugin.Plugin, data: obj };
-                          obj = { plugin: payload.name, payload };
-                          return callback(obj);
-                        }
-                      }));
+                      mapped = found.map((observer) => {
+                        let closure_0 = observer;
+                        return {
+                          observer: observer.observer,
+                          options: observer.options,
+                          callback(payload) {
+                            obj = { type: wrappedMutationEmit.Plugin, data: obj };
+                            obj = { plugin: observer.name, payload };
+                            return wrappedEmit(obj);
+                          }
+                        };
+                      });
                     }
-                    const tmp2 = plugins;
                   }
                   if (!mapped) {
                     mapped = [];
                   }
                   obj.plugins = mapped;
-                  return tmp(obj, {});
+                  return items(outer1_153)(obj, {});
                 }
                 let tmp75 = tmp43;
                 let addLoadListenerResult = obj6.addLoadListener((contentDocument) => {
@@ -4143,7 +4145,6 @@ function record() {
                   items.push(observe(document));
                 }
                 let tmp77 = init;
-                let closure_48 = init;
                 let _document = document;
                 let str10 = "interactive";
                 if ("interactive" !== document.readyState) {
@@ -4170,8 +4171,8 @@ function record() {
                   }
                   return () => {
                     const item = items.forEach((arg0) => arg0());
-                    tmp55.destroy();
-                    let closure_56;
+                    errorHandler.destroy();
+                    let takeFullSnapshot2;
                   };
                 }
                 let initResult = init();
@@ -4212,7 +4213,7 @@ function record() {
         let tmp42 = obj5;
         tmp43 = new ctor2(obj5);
       }
-      obj6 = {};
+      obj6 = { script: true, comment: true, headFavicon: true, headWhitespace: true, headMetaSocial: true, headMetaRobots: true, headMetaHttpEquiv: true, headMetaVerification: true };
       let str8 = "all";
       let tmp28 = "all" === slimDOMOptions;
       obj6.headMetaAuthorship = tmp28;
@@ -4237,26 +4238,26 @@ function timestampToS(arg0) {
   return result;
 }
 function addBreadcrumbEvent(triggerUserActivity, category) {
-  const require = triggerUserActivity;
-  const dependencyMap = category;
+  let closure_0 = triggerUserActivity;
+  let closure_1 = category;
   if ("sentry.transaction" !== category.category) {
-    const items = [null, null];
+    const items = ["ui.click", "ui.input"];
     if (items.includes(category.category)) {
       triggerUserActivity.triggerUserActivity();
     } else {
       const result = triggerUserActivity.checkAndHandleExpiredSession();
     }
-    triggerUserActivity.addUpdate((arg0, self) => {
-      let obj = { type: Custom.Custom };
-      let num = self.timestamp;
+    triggerUserActivity.addUpdate(() => {
+      let obj = { type: outer1_37.Custom };
+      let num = category.timestamp;
       if (!num) {
         num = 0;
       }
       obj.timestamp = 1000 * num;
-      obj = { tag: "breadcrumb", payload: arg0(self[9]).normalize(self, 10, 1000) };
+      obj = { tag: "breadcrumb", payload: triggerUserActivity(category[9]).normalize(category, 10, 1000) };
       obj.data = obj;
-      arg0.throttledAddEvent(obj);
-      return "console" === self.category;
+      triggerUserActivity.throttledAddEvent(obj);
+      return "console" === category.category;
     });
   }
 }
@@ -4285,46 +4286,49 @@ function getTargetNode(target) {
   return target;
 }
 function onWindowOpen(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   if (!arr2) {
-    const arr2 = [];
-    function monkeyPatchWindowOpen() {
-      arg0(closure_1[9]).fill(arg0(closure_1[9]).GLOBAL_OBJ, "open", (arg0) => () => {
-        if (closure_61) {
-          const item = closure_61.forEach((arg0) => arg0());
-        }
-        while (true) {
-          let length = arguments.length;
-          let tmp3 = globalThis;
-          let _Array = Array;
-          let tmp4 = new.target;
-          let tmp5 = new.target;
-          let tmp6 = length;
-          let array = new Array(length);
-          let tmp8 = array;
-          let num = 0;
-          if (0 >= length) {
-            break;
-          } else {
-            do {
-              array[num] = arguments[num];
-              num = num + 1;
-            } while (num < length);
+    arr2 = [];
+    (function monkeyPatchWindowOpen() {
+      callback(outer1_1[9]).fill(callback(outer1_1[9]).GLOBAL_OBJ, "open", (arg0) => {
+        let closure_0 = arg0;
+        return () => {
+          if (closure_61) {
+            const item = closure_61.forEach((arg0) => arg0());
           }
-          let tmp9 = arg0;
-          let tmp10 = arg0;
-          let tmp11 = closure_1;
-          let num2 = 9;
-          return arg0.apply(arg0(closure_1[9]).GLOBAL_OBJ, array);
-        }
+          while (true) {
+            let length = arguments.length;
+            let tmp3 = globalThis;
+            let _Array = Array;
+            let tmp4 = new.target;
+            let tmp5 = new.target;
+            let tmp6 = length;
+            let array = new Array(length);
+            let tmp8 = array;
+            let num = 0;
+            if (0 >= length) {
+              break;
+            } else {
+              do {
+                array[num] = arguments[num];
+                num = num + 1;
+              } while (num < length);
+            }
+            let tmp9 = callback;
+            let tmp10 = callback;
+            let tmp11 = outer3_1;
+            let num2 = 9;
+            return callback.apply(callback(outer3_1[9]).GLOBAL_OBJ, array);
+          }
+        };
       });
-    }();
+    })();
   }
   arr2.push(arg0);
   return () => {
     let num = -1;
     if (arr) {
-      num = arr.indexOf(arg0);
+      num = arr.indexOf(closure_0);
     }
     if (num > -1) {
       arr.splice(num, 1);
@@ -4355,7 +4359,7 @@ function updateClickDetectorForRecordingEvent(registerMutation, type) {
         registerMutation.registerClick(node);
       }
     }
-    const tmp2 = source;
+    tmp2 = source;
   }
 }
 function createBreadcrumb(arg0) {
@@ -4364,12 +4368,12 @@ function createBreadcrumb(arg0) {
 function getAttributesToRecord(attributes) {
   const obj = {};
   if (tmp) {
-    attributes.data-sentry-component = attributes.data-sentry-element;
+    attributes["data-sentry-component"] = attributes["data-sentry-element"];
   }
   for (const key10011 in arg0) {
     let tmp3 = key10011;
-    let tmp4 = closure_66;
-    if (!closure_66.has(key10011)) {
+    let tmp4 = set2;
+    if (!set2.has(key10011)) {
       continue;
     } else {
       let tmp2 = "data-testid" !== key10011;
@@ -4381,7 +4385,7 @@ function getAttributesToRecord(attributes) {
         str = "testId";
       }
       obj[str] = arg0[key10011];
-      // continue
+      continue;
     }
     continue;
   }
@@ -4412,7 +4416,7 @@ function getBaseDomBreadcrumb(arg0, message) {
     obj = { nodeId: id };
     obj = { id, tagName: tmp6.tagName };
     const _Array = Array;
-    const mapped = Array.from(tmp6.childNodes).map((type) => type.type === RN.Text && type.textContent);
+    const mapped = Array.from(tmp6.childNodes).map((type) => type.type === outer1_65.Text && type.textContent);
     const _Boolean = Boolean;
     const found = mapped.filter(Boolean);
     const mapped1 = found.map((str) => str.trim());
@@ -4430,7 +4434,7 @@ function getBaseDomBreadcrumb(arg0, message) {
 function handleKeyboardEvent(isEnabled) {
   if (isEnabled.isEnabled()) {
     isEnabled.updateUserActivity();
-    const tmp3 = function getKeyboardBreadcrumb(arg0) {
+    const tmp3 = (function getKeyboardBreadcrumb(arg0) {
       let altKey;
       let ctrlKey;
       let key;
@@ -4459,43 +4463,43 @@ function handleKeyboardEvent(isEnabled) {
                 return null;
               }
             }
-            let obj = callback(closure_1[9]);
+            let obj = outer1_0(outer1_1[9]);
             obj = { maxStringLength: 200 };
             const tmp7 = obj.htmlTreeAsString(target, obj) || "<unknown>";
             obj = { category: "ui.keyDown", message: tmp7 };
             const _Object = Object;
             const obj1 = { metaKey, shiftKey: tmp, ctrlKey, altKey, key };
-            obj.data = Object.assign({}, callback3(target, tmp7).data, obj1);
-            return callback2(obj);
+            obj.data = Object.assign({}, outer1_168(target, tmp7).data, obj1);
+            return outer1_166(obj);
           }
         }
       }
       return null;
-    }(arg1);
+    })(arg1);
     if (tmp3) {
       addBreadcrumbEvent(isEnabled, tmp3);
     }
   }
 }
 function webVitalHandler(arg0, arg1) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return (metric) => {
-    const prop = arg1.replayPerformanceEntries;
-    prop.push(metric(metric.metric));
+    const prop = obj.replayPerformanceEntries;
+    prop.push(callback(metric.metric));
   };
 }
 function createPerformanceEntry(arg0) {
   let tmpResult = null;
-  if (closure_68[arg0.entryType]) {
+  if (table3[arg0.entryType]) {
     tmpResult = tmp(arg0);
   }
   return tmpResult;
 }
 function getAbsoluteTime(arg0) {
-  let timeOrigin = require(dependencyMap[9]).browserPerformanceTimeOrigin();
+  let timeOrigin = require(794) /* registerSpanErrorInstrumentation */.browserPerformanceTimeOrigin();
   if (!timeOrigin) {
-    timeOrigin = require(dependencyMap[9]).GLOBAL_OBJ.performance.timeOrigin;
+    timeOrigin = require(794) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.performance.timeOrigin;
   }
   return (timeOrigin + arg0) / 1000;
 }
@@ -4509,16 +4513,16 @@ function getLargestContentfulPaint(arg0) {
   }
   return getWebVital(arg0, "largest-contentful-paint", tmp3);
 }
-function isLayoutShift(sources) {
-  return undefined !== sources.sources;
+function isLayoutShift(item10011) {
+  return undefined !== item10011.sources;
 }
 function getCumulativeLayoutShift(rating) {
   const items = [];
   const items1 = [];
   for (const item10011 of tmp) {
     let iter = item10011;
-    let tmp19 = closure_174;
-    if (closure_174(item10011)) {
+    let tmp19 = isLayoutShift;
+    if (isLayoutShift(item10011)) {
       let items2 = [];
       let tmp2 = item10011;
       let sources = iter.sources;
@@ -4529,8 +4533,8 @@ function getCumulativeLayoutShift(rating) {
           let tmp5 = items1;
           let tmp6 = item10018;
           let arr = items1.push(tmp4.node);
-          let tmp8 = closure_156;
-          let mirror = closure_156.mirror;
+          let tmp8 = record;
+          let mirror = record.mirror;
           let id = mirror.getId(tmp4.node);
           if (id) {
             let tmp11 = items2;
@@ -4538,6 +4542,7 @@ function getCumulativeLayoutShift(rating) {
             arr = items2.push(tmp10);
           }
         }
+        continue;
       }
       let tmp14 = items;
       let obj = {};
@@ -4551,6 +4556,7 @@ function getCumulativeLayoutShift(rating) {
       obj.nodeIds = tmp17;
       let arr1 = items.push(obj);
     }
+    continue;
   }
   return getWebVital(rating, "cumulative-layout-shift", items1, items);
 }
@@ -4572,7 +4578,7 @@ function getWebVital(rating, name, items1, items) {
   obj = { value, size: value, rating: rating.rating };
   if (items1) {
     mapped = items1.map((arg0) => {
-      const mirror = mirror.mirror;
+      const mirror = outer1_156.mirror;
       return mirror.getId(arg0);
     });
   }
@@ -4589,7 +4595,7 @@ function _addBreadcrumb(arg0) {
       str = arguments[1];
     }
   }
-  let obj = require(dependencyMap[9]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   obj = { category: "console", data: { logger: "replay" }, level: str, message: "" + closure_71 + arg0 };
   obj = { level: str };
   obj.addBreadcrumb(obj, obj);
@@ -4598,35 +4604,35 @@ function createEventBuffer(useCompression) {
   if (useCompression.useCompression) {
     const _window = window;
     if (window.Worker) {
-      const tmp3 = function _loadWorker(arg0) {
+      const tmp3 = (function _loadWorker(arg0) {
         let tmp = arg0;
         if (!arg0) {
-          tmp = function _getWorkerUrl() {
+          tmp = (function _getWorkerUrl() {
             if ("undefined" !== typeof globalThis.__SENTRY_EXCLUDE_REPLAY_WORKER__) {
               if (globalThis.__SENTRY_EXCLUDE_REPLAY_WORKER__) {
                 return "";
               }
             }
-            const blob = new Blob(["String"]);
+            const blob = new Blob(["var t=Uint8Array,n=Uint16Array,r=Int32Array,e=new t([0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,0,0,0,0]),i=new t([0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,0,0]),s=new t([16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15]),a=function(t,e){for(var i=new n(31),s=0;s<31;++s)i[s]=e+=1<<t[s-1];var a=new r(i[30]);for(s=1;s<30;++s)for(var o=i[s];o<i[s+1];++o)a[o]=o-i[s]<<5|s;return{b:i,r:a}},o=a(e,2),h=o.b,f=o.r;h[28]=258,f[258]=28;for(var l=a(i,0).r,u=new n(32768),c=0;c<32768;++c){var v=(43690&c)>>1|(21845&c)<<1;v=(61680&(v=(52428&v)>>2|(13107&v)<<2))>>4|(3855&v)<<4,u[c]=((65280&v)>>8|(255&v)<<8)>>1}var d=function(t,r,e){for(var i=t.length,s=0,a=new n(r);s<i;++s)t[s]&&++a[t[s]-1];var o,h=new n(r);for(s=1;s<r;++s)h[s]=h[s-1]+a[s-1]<<1;if(e){o=new n(1<<r);var f=15-r;for(s=0;s<i;++s)if(t[s])for(var l=s<<4|t[s],c=r-t[s],v=h[t[s]-1]++<<c,d=v|(1<<c)-1;v<=d;++v)o[u[v]>>f]=l}else for(o=new n(i),s=0;s<i;++s)t[s]&&(o[s]=u[h[t[s]-1]++]>>15-t[s]);return o},p=new t(288);for(c=0;c<144;++c)p[c]=8;for(c=144;c<256;++c)p[c]=9;for(c=256;c<280;++c)p[c]=7;for(c=280;c<288;++c)p[c]=8;var g=new t(32);for(c=0;c<32;++c)g[c]=5;var w=d(p,9,0),y=d(g,5,0),m=function(t){return(t+7)/8|0},b=function(n,r,e){return(null==e||e>n.length)&&(e=n.length),new t(n.subarray(r,e))},M=[\"unexpected EOF\",\"invalid block type\",\"invalid length/literal\",\"invalid distance\",\"stream finished\",\"no stream handler\",,\"no callback\",\"invalid UTF-8 data\",\"extra field too long\",\"date not in range 1980-2099\",\"filename too long\",\"stream finishing\",\"invalid zip data\"],E=function(t,n,r){var e=new Error(n||M[t]);if(e.code=t,Error.captureStackTrace&&Error.captureStackTrace(e,E),!r)throw e;return e},z=function(t,n,r){r<<=7&n;var e=n/8|0;t[e]|=r,t[e+1]|=r>>8},_=function(t,n,r){r<<=7&n;var e=n/8|0;t[e]|=r,t[e+1]|=r>>8,t[e+2]|=r>>16},x=function(r,e){for(var i=[],s=0;s<r.length;++s)r[s]&&i.push({s:s,f:r[s]});var a=i.length,o=i.slice();if(!a)return{t:F,l:0};if(1==a){var h=new t(i[0].s+1);return h[i[0].s]=1,{t:h,l:1}}i.sort(function(t,n){return t.f-n.f}),i.push({s:-1,f:25001});var f=i[0],l=i[1],u=0,c=1,v=2;for(i[0]={s:-1,f:f.f+l.f,l:f,r:l};c!=a-1;)f=i[i[u].f<i[v].f?u++:v++],l=i[u!=c&&i[u].f<i[v].f?u++:v++],i[c++]={s:-1,f:f.f+l.f,l:f,r:l};var d=o[0].s;for(s=1;s<a;++s)o[s].s>d&&(d=o[s].s);var p=new n(d+1),g=A(i[c-1],p,0);if(g>e){s=0;var w=0,y=g-e,m=1<<y;for(o.sort(function(t,n){return p[n.s]-p[t.s]||t.f-n.f});s<a;++s){var b=o[s].s;if(!(p[b]>e))break;w+=m-(1<<g-p[b]),p[b]=e}for(w>>=y;w>0;){var M=o[s].s;p[M]<e?w-=1<<e-p[M]++-1:++s}for(;s>=0&&w;--s){var E=o[s].s;p[E]==e&&(--p[E],++w)}g=e}return{t:new t(p),l:g}},A=function(t,n,r){return-1==t.s?Math.max(A(t.l,n,r+1),A(t.r,n,r+1)):n[t.s]=r},D=function(t){for(var r=t.length;r&&!t[--r];);for(var e=new n(++r),i=0,s=t[0],a=1,o=function(t){e[i++]=t},h=1;h<=r;++h)if(t[h]==s&&h!=r)++a;else{if(!s&&a>2){for(;a>138;a-=138)o(32754);a>2&&(o(a>10?a-11<<5|28690:a-3<<5|12305),a=0)}else if(a>3){for(o(s),--a;a>6;a-=6)o(8304);a>2&&(o(a-3<<5|8208),a=0)}for(;a--;)o(s);a=1,s=t[h]}return{c:e.subarray(0,i),n:r}},T=function(t,n){for(var r=0,e=0;e<n.length;++e)r+=t[e]*n[e];return r},k=function(t,n,r){var e=r.length,i=m(n+2);t[i]=255&e,t[i+1]=e>>8,t[i+2]=255^t[i],t[i+3]=255^t[i+1];for(var s=0;s<e;++s)t[i+s+4]=r[s];return 8*(i+4+e)},U=function(t,r,a,o,h,f,l,u,c,v,m){z(r,m++,a),++h[256];for(var b=x(h,15),M=b.t,E=b.l,A=x(f,15),U=A.t,C=A.l,F=D(M),I=F.c,S=F.n,L=D(U),O=L.c,j=L.n,q=new n(19),B=0;B<I.length;++B)++q[31&I[B]];for(B=0;B<O.length;++B)++q[31&O[B]];for(var G=x(q,7),H=G.t,J=G.l,K=19;K>4&&!H[s[K-1]];--K);var N,P,Q,R,V=v+5<<3,W=T(h,p)+T(f,g)+l,X=T(h,M)+T(f,U)+l+14+3*K+T(q,H)+2*q[16]+3*q[17]+7*q[18];if(c>=0&&V<=W&&V<=X)return k(r,m,t.subarray(c,c+v));if(z(r,m,1+(X<W)),m+=2,X<W){N=d(M,E,0),P=M,Q=d(U,C,0),R=U;var Y=d(H,J,0);z(r,m,S-257),z(r,m+5,j-1),z(r,m+10,K-4),m+=14;for(B=0;B<K;++B)z(r,m+3*B,H[s[B]]);m+=3*K;for(var Z=[I,O],$=0;$<2;++$){var tt=Z[$];for(B=0;B<tt.length;++B){var nt=31&tt[B];z(r,m,Y[nt]),m+=H[nt],nt>15&&(z(r,m,tt[B]>>5&127),m+=tt[B]>>12)}}}else N=w,P=p,Q=y,R=g;for(B=0;B<u;++B){var rt=o[B];if(rt>255){_(r,m,N[(nt=rt>>18&31)+257]),m+=P[nt+257],nt>7&&(z(r,m,rt>>23&31),m+=e[nt]);var et=31&rt;_(r,m,Q[et]),m+=R[et],et>3&&(_(r,m,rt>>5&8191),m+=i[et])}else _(r,m,N[rt]),m+=P[rt]}return _(r,m,N[256]),m+P[256]},C=new r([65540,131080,131088,131104,262176,1048704,1048832,2114560,2117632]),F=new t(0),I=function(){for(var t=new Int32Array(256),n=0;n<256;++n){for(var r=n,e=9;--e;)r=(1&r&&-306674912)^r>>>1;t[n]=r}return t}(),S=function(){var t=1,n=0;return{p:function(r){for(var e=t,i=n,s=0|r.length,a=0;a!=s;){for(var o=Math.min(a+2655,s);a<o;++a)i+=e+=r[a];e=(65535&e)+15*(e>>16),i=(65535&i)+15*(i>>16)}t=e,n=i},d:function(){return(255&(t%=65521))<<24|(65280&t)<<8|(255&(n%=65521))<<8|n>>8}}},L=function(s,a,o,h,u){if(!u&&(u={l:1},a.dictionary)){var c=a.dictionary.subarray(-32768),v=new t(c.length+s.length);v.set(c),v.set(s,c.length),s=v,u.w=c.length}return function(s,a,o,h,u,c){var v=c.z||s.length,d=new t(h+v+5*(1+Math.ceil(v/7e3))+u),p=d.subarray(h,d.length-u),g=c.l,w=7&(c.r||0);if(a){w&&(p[0]=c.r>>3);for(var y=C[a-1],M=y>>13,E=8191&y,z=(1<<o)-1,_=c.p||new n(32768),x=c.h||new n(z+1),A=Math.ceil(o/3),D=2*A,T=function(t){return(s[t]^s[t+1]<<A^s[t+2]<<D)&z},F=new r(25e3),I=new n(288),S=new n(32),L=0,O=0,j=c.i||0,q=0,B=c.w||0,G=0;j+2<v;++j){var H=T(j),J=32767&j,K=x[H];if(_[J]=K,x[H]=J,B<=j){var N=v-j;if((L>7e3||q>24576)&&(N>423||!g)){w=U(s,p,0,F,I,S,O,q,G,j-G,w),q=L=O=0,G=j;for(var P=0;P<286;++P)I[P]=0;for(P=0;P<30;++P)S[P]=0}var Q=2,R=0,V=E,W=J-K&32767;if(N>2&&H==T(j-W))for(var X=Math.min(M,N)-1,Y=Math.min(32767,j),Z=Math.min(258,N);W<=Y&&--V&&J!=K;){if(s[j+Q]==s[j+Q-W]){for(var $=0;$<Z&&s[j+$]==s[j+$-W];++$);if($>Q){if(Q=$,R=W,$>X)break;var tt=Math.min(W,$-2),nt=0;for(P=0;P<tt;++P){var rt=j-W+P&32767,et=rt-_[rt]&32767;et>nt&&(nt=et,K=rt)}}}W+=(J=K)-(K=_[J])&32767}if(R){F[q++]=268435456|f[Q]<<18|l[R];var it=31&f[Q],st=31&l[R];O+=e[it]+i[st],++I[257+it],++S[st],B=j+Q,++L}else F[q++]=s[j],++I[s[j]]}}for(j=Math.max(j,B);j<v;++j)F[q++]=s[j],++I[s[j]];w=U(s,p,g,F,I,S,O,q,G,j-G,w),g||(c.r=7&w|p[w/8|0]<<3,w-=7,c.h=x,c.p=_,c.i=j,c.w=B)}else{for(j=c.w||0;j<v+g;j+=65535){var at=j+65535;at>=v&&(p[w/8|0]=g,at=v),w=k(p,w+1,s.subarray(j,at))}c.i=v}return b(d,0,h+m(w)+u)}(s,null==a.level?6:a.level,null==a.mem?u.l?Math.ceil(1.5*Math.max(8,Math.min(13,Math.log(s.length)))):20:12+a.mem,o,h,u)},O=function(t,n,r){for(;r;++n)t[n]=r,r>>>=8},j=function(){function n(n,r){if(\"function\"==typeof n&&(r=n,n={}),this.ondata=r,this.o=n||{},this.s={l:0,i:32768,w:32768,z:32768},this.b=new t(98304),this.o.dictionary){var e=this.o.dictionary.subarray(-32768);this.b.set(e,32768-e.length),this.s.i=32768-e.length}}return n.prototype.p=function(t,n){this.ondata(L(t,this.o,0,0,this.s),n)},n.prototype.push=function(n,r){this.ondata||E(5),this.s.l&&E(4);var e=n.length+this.s.z;if(e>this.b.length){if(e>2*this.b.length-32768){var i=new t(-32768&e);i.set(this.b.subarray(0,this.s.z)),this.b=i}var s=this.b.length-this.s.z;this.b.set(n.subarray(0,s),this.s.z),this.s.z=this.b.length,this.p(this.b,!1),this.b.set(this.b.subarray(-32768)),this.b.set(n.subarray(s),32768),this.s.z=n.length-s+32768,this.s.i=32766,this.s.w=32768}else this.b.set(n,this.s.z),this.s.z+=n.length;this.s.l=1&r,(this.s.z>this.s.w+8191||r)&&(this.p(this.b,r||!1),this.s.w=this.s.i,this.s.i-=2)},n.prototype.flush=function(){this.ondata||E(5),this.s.l&&E(4),this.p(this.b,!1),this.s.w=this.s.i,this.s.i-=2},n}();function q(t,n){n||(n={});var r=function(){var t=-1;return{p:function(n){for(var r=t,e=0;e<n.length;++e)r=I[255&r^n[e]]^r>>>8;t=r},d:function(){return~t}}}(),e=t.length;r.p(t);var i,s=L(t,n,10+((i=n).filename?i.filename.length+1:0),8),a=s.length;return function(t,n){var r=n.filename;if(t[0]=31,t[1]=139,t[2]=8,t[8]=n.level<2?4:9==n.level?2:0,t[9]=3,0!=n.mtime&&O(t,4,Math.floor(new Date(n.mtime||Date.now())/1e3)),r){t[3]=8;for(var e=0;e<=r.length;++e)t[e+10]=r.charCodeAt(e)}}(s,n),O(s,a-8,r.d()),O(s,a-4,e),s}var B=function(){function t(t,n){this.c=S(),this.v=1,j.call(this,t,n)}return t.prototype.push=function(t,n){this.c.p(t),j.prototype.push.call(this,t,n)},t.prototype.p=function(t,n){var r=L(t,this.o,this.v&&(this.o.dictionary?6:2),n&&4,this.s);this.v&&(function(t,n){var r=n.level,e=0==r?0:r<6?1:9==r?3:2;if(t[0]=120,t[1]=e<<6|(n.dictionary&&32),t[1]|=31-(t[0]<<8|t[1])%31,n.dictionary){var i=S();i.p(n.dictionary),O(t,2,i.d())}}(r,this.o),this.v=0),n&&O(r,r.length-4,this.c.d()),this.ondata(r,n)},t.prototype.flush=function(){j.prototype.flush.call(this)},t}(),G=\"undefined\"!=typeof TextEncoder&&new TextEncoder,H=\"undefined\"!=typeof TextDecoder&&new TextDecoder;try{H.decode(F,{stream:!0})}catch(t){}var J=function(){function t(t){this.ondata=t}return t.prototype.push=function(t,n){this.ondata||E(5),this.d&&E(4),this.ondata(K(t),this.d=n||!1)},t}();function K(n,r){if(G)return G.encode(n);for(var e=n.length,i=new t(n.length+(n.length>>1)),s=0,a=function(t){i[s++]=t},o=0;o<e;++o){if(s+5>i.length){var h=new t(s+8+(e-o<<1));h.set(i),i=h}var f=n.charCodeAt(o);f<128||r?a(f):f<2048?(a(192|f>>6),a(128|63&f)):f>55295&&f<57344?(a(240|(f=65536+(1047552&f)|1023&n.charCodeAt(++o))>>18),a(128|f>>12&63),a(128|f>>6&63),a(128|63&f)):(a(224|f>>12),a(128|f>>6&63),a(128|63&f))}return b(i,0,s)}const N=new class{constructor(){this._init()}clear(){this._init()}addEvent(t){if(!t)throw new Error(\"Adding invalid event\");const n=this._hasEvents?\",\":\"\";this.stream.push(n+t),this._hasEvents=!0}finish(){this.stream.push(\"]\",!0);const t=function(t){let n=0;for(const r of t)n+=r.length;const r=new Uint8Array(n);for(let n=0,e=0,i=t.length;n<i;n++){const i=t[n];r.set(i,e),e+=i.length}return r}(this._deflatedData);return this._init(),t}_init(){this._hasEvents=!1,this._deflatedData=[],this.deflate=new B,this.deflate.ondata=(t,n)=>{this._deflatedData.push(t)},this.stream=new J((t,n)=>{this.deflate.push(t,n)}),this.stream.push(\"[\")}},P={clear:()=>{N.clear()},addEvent:t=>N.addEvent(t),finish:()=>N.finish(),compress:t=>function(t){return q(K(t))}(t)};addEventListener(\"message\",function(t){const n=t.data.method,r=t.data.id,e=t.data.arg;if(n in P&&\"function\"==typeof P[n])try{const t=P[n](e);postMessage({id:r,method:n,success:!0,response:t})}catch(t){postMessage({id:r,method:n,success:!1,response:t.message}),console.error(t)}}),postMessage({id:void 0,method:\"init\",success:!0,response:void 0});"]);
             return URL.createObjectURL(blob);
-          }();
+          })();
         }
         if (tmp) {
-          if (closure_69) {
+          if (outer1_69) {
             let str = "";
             if (arg0) {
               const _HermesInternal = HermesInternal;
               str = " from " + arg0;
             }
-            closure_72.log(`Using compression worker${str}`);
+            outer1_72.log(`Using compression worker${str}`);
           }
           const prototype = globalThis.Worker.prototype;
           const worker = new globalThis.Worker(tmp2);
-          const prototype2 = ctor.prototype;
-          const tmp18 = new ctor(worker);
+          const prototype2 = outer1_77.prototype;
+          const tmp18 = new outer1_77(worker);
           return tmp18;
         }
-      }(tmp);
+      })(tmp);
       if (tmp3) {
         return tmp3;
       }
@@ -4638,17 +4644,17 @@ function createEventBuffer(useCompression) {
   return new closure_74();
 }
 function hasSessionStorage() {
-  const tmp = "sessionStorage" in require(dependencyMap[9]).GLOBAL_OBJ;
+  const tmp = "sessionStorage" in require(794) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ;
   let sessionStorage = tmp;
   if (tmp) {
-    sessionStorage = require(dependencyMap[9]).GLOBAL_OBJ.sessionStorage;
+    sessionStorage = require(794) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.sessionStorage;
   }
   return sessionStorage;
 }
 function clearSession(arg0) {
   if (hasSessionStorage()) {
-    const sessionStorage = require(dependencyMap[9]).GLOBAL_OBJ.sessionStorage;
-    sessionStorage.removeItem(closure_10);
+    const sessionStorage = require(794) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.sessionStorage;
+    sessionStorage.removeItem(sentryReplaySession);
   }
   arg0.session = undefined;
 }
@@ -4662,9 +4668,9 @@ function isSampled(sessionSampleRate) {
 }
 function saveSession(arg0) {
   if (hasSessionStorage()) {
-    const sessionStorage = require(dependencyMap[9]).GLOBAL_OBJ.sessionStorage;
+    const sessionStorage = require(794) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.sessionStorage;
     const _JSON = JSON;
-    const result = sessionStorage.setItem(closure_10, JSON.stringify(arg0));
+    const result = sessionStorage.setItem(sentryReplaySession, JSON.stringify(arg0));
   }
 }
 function makeSession(id) {
@@ -4672,8 +4678,8 @@ function makeSession(id) {
   const obj = {};
   id = id.id;
   if (!id) {
-    id = require(dependencyMap[9]).uuid4();
-    const obj2 = require(dependencyMap[9]);
+    id = require(794) /* registerSpanErrorInstrumentation */.uuid4();
+    const obj2 = require(794) /* registerSpanErrorInstrumentation */;
   }
   obj.id = id;
   obj.started = id.started || timestamp;
@@ -4779,8 +4785,8 @@ function loadOrCreateSession(arg0, stickySession) {
     let infoTickResult2;
     let tmp6 = null;
     if (hasSessionStorage()) {
-      const sessionStorage = require(dependencyMap[9]).GLOBAL_OBJ.sessionStorage;
-      const value = sessionStorage.getItem(closure_10);
+      const sessionStorage = require(794) /* registerSpanErrorInstrumentation */.GLOBAL_OBJ.sessionStorage;
+      const value = sessionStorage.getItem(sentryReplaySession);
       infoTickResult2 = value;
       if (!value) {
         tmp6 = null;
@@ -4807,8 +4813,8 @@ function addEventSync(eventBuffer, timestamp) {
 function _addEvent(eventBuffer, timestamp, arg2) {
   return _addEvent3(...arguments);
 }
-async function _addEvent3(eventBuffer, type, arg2, arg3) {
-  eventBuffer = eventBuffer.eventBuffer;
+async function _addEvent3(arg0, arg1, arg2, arg3) {
+  const eventBuffer = arg0.eventBuffer;
   if (eventBuffer) {
     let tmp5 = arg2;
     if (arg2) {
@@ -4821,14 +4827,14 @@ async function _addEvent3(eventBuffer, type, arg2, arg3) {
       obj2.hasCheckout = true;
       obj2.waitForCheckout = false;
     }
-    const tmp11 = function maybeApplyCallback(type, beforeAddRecordingEvent) {
+    const tmp11 = (function maybeApplyCallback(type, beforeAddRecordingEvent) {
       if ("function" === typeof beforeAddRecordingEvent) {
-        if (type.type === Custom.Custom) {
+        if (type.type === outer3_37.Custom) {
           return beforeAddRecordingEvent(type);
         }
       }
       return type;
-    }(type, obj.getOptions().beforeAddRecordingEvent);
+    })(arg1, obj.getOptions().beforeAddRecordingEvent);
     if (tmp11) {
       return yield obj2.addEvent(tmp11);
     }
@@ -4873,10 +4879,10 @@ function isFeedbackEvent(type) {
   return "feedback" === type.type;
 }
 function handleAfterSendEvent(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   return (contexts, statusCode) => {
-    if (contexts.isEnabled()) {
-      if (callback(contexts)) {
+    if (enabled.isEnabled()) {
+      if (outer1_194(contexts)) {
         statusCode = statusCode.statusCode;
         let tmp4 = !statusCode;
         if (!tmp4) {
@@ -4886,8 +4892,8 @@ function handleAfterSendEvent(arg0) {
           tmp4 = statusCode >= 300;
         }
         if (!tmp4) {
-          if (callback2(contexts)) {
-            const context = obj.getContext();
+          if (outer1_195(contexts)) {
+            let context = obj.getContext();
             contexts = contexts.contexts;
             let trace_id = null != contexts;
             let tmp9 = contexts;
@@ -4907,7 +4913,8 @@ function handleAfterSendEvent(arg0) {
               traceIds.add(contexts.contexts.trace.trace_id);
             }
           } else {
-            function handleErrorEvent(getContext, event_id) {
+            (function handleErrorEvent(getContext, event_id) {
+              const callback = getContext;
               const context = getContext.getContext();
               event_id = event_id.event_id;
               if (event_id) {
@@ -4921,13 +4928,13 @@ function handleAfterSendEvent(arg0) {
                 if (event_id.tags) {
                   if (event_id.tags.replayId) {
                     const beforeErrorSampling = getContext.getOptions().beforeErrorSampling;
-                    const timerId = getContext(closure_1[10]).setTimeout(callback(async () => {
-                      yield closure_0.sendBufferedReplayOrFlush();
+                    const timerId = callback(outer2_1[10]).setTimeout(outer2_2(async () => {
+                      yield outer1_0.sendBufferedReplayOrFlush();
                     }));
                   }
                 }
               }
-            }(obj, contexts);
+            })(obj, contexts);
           }
         }
       }
@@ -4935,11 +4942,11 @@ function handleAfterSendEvent(arg0) {
   };
 }
 function handleBeforeSendEvent(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   return (exception) => {
-    let isEnabledResult = exception.isEnabled();
+    let isEnabledResult = enabled.isEnabled();
     if (isEnabledResult) {
-      isEnabledResult = callback3(exception);
+      isEnabledResult = outer1_194(exception);
     }
     if (isEnabledResult) {
       exception = exception.exception;
@@ -4955,32 +4962,32 @@ function handleBeforeSendEvent(arg0) {
       if ("string" === typeof value) {
         if (value.match(/(reactjs\.org\/docs\/error-decoder\.html\?invariant=|react\.dev\/errors\/)(418|419|422|423|425)/)) {
           let obj = { category: "replay.hydrate-error" };
-          obj = { url: exception(closure_1[9]).getLocationHref() };
+          obj = { url: enabled(outer1_1[9]).getLocationHref() };
           obj.data = obj;
-          callback(tmp3, callback2(obj));
-          const obj3 = exception(closure_1[9]);
+          outer1_159(tmp3, outer1_166(obj));
+          const obj3 = enabled(outer1_1[9]);
         }
       }
-      const tmp3 = exception;
+      tmp3 = enabled;
     }
   };
 }
 function handleBreadcrumbs(arg0) {
-  const require = arg0;
-  const client = require(dependencyMap[9]).getClient();
+  const _require = arg0;
+  const client = _require(794).getClient();
   if (client) {
     client.on("beforeAddBreadcrumb", (category) => {
-      function beforeAddBreadcrumb(isEnabled, category) {
-        if (isEnabled.isEnabled()) {
-          if (callback2(category)) {
-            const tmp2 = function normalizeBreadcrumb(category) {
-              if (callback2(category)) {
-                const items = [];
+      (function beforeAddBreadcrumb(closure_0, category) {
+        if (closure_0.isEnabled()) {
+          if (outer2_200(category)) {
+            const tmp2 = (function normalizeBreadcrumb(category) {
+              if (outer3_200(category)) {
+                const items = ["fetch", "xhr", "sentry.event", "sentry.transaction"];
                 if (!items.includes(category.category)) {
                   category = category.category;
                   if (!category.startsWith("ui.")) {
                     if ("console" === category.category) {
-                      return function normalizeConsoleBreadcrumb(data) {
+                      return (function normalizeConsoleBreadcrumb(data) {
                         data = data.data;
                         let _arguments;
                         if (null != data) {
@@ -4988,39 +4995,39 @@ function handleBreadcrumbs(arg0) {
                         }
                         if (Array.isArray(_arguments)) {
                           if (0 !== _arguments.length) {
-                            let closure_0 = false;
+                            let c0 = false;
                             let obj = {};
                             const _Object = Object;
                             const data2 = data.data;
                             obj = { arguments: _arguments.map(() => { ... }) };
-                            if (closure_0) {
+                            if (c0) {
                               const obj1 = {};
-                              const obj2 = { warnings: [889192855] };
+                              const obj2 = { warnings: ["CONSOLE_ARG_TRUNCATED"] };
                               obj1._meta = obj2;
                               obj = obj1;
                             } else {
                               obj = {};
                             }
                             obj.data = Object.assign({}, data2, obj, obj);
-                            return callback(Object.assign({}, data, obj));
+                            return outer4_166(Object.assign({}, data, obj));
                           }
                         }
-                        return callback(data);
-                      }(category);
+                        return outer4_166(data);
+                      })(category);
                     } else {
-                      return callback(category);
+                      return outer3_166(category);
                     }
                   }
                 }
               }
               return null;
-            }(category);
+            })(category);
             if (tmp2) {
-              callback(isEnabled, tmp2);
+              outer2_159(closure_0, tmp2);
             }
           }
         }
-      }(category, category);
+      })(closure_0, category);
     });
   }
 }
@@ -5028,68 +5035,69 @@ function isBreadcrumbWithCategory(category) {
   return category.category;
 }
 function resetReplayIdOnDynamicSamplingContext() {
-  const currentScope = require(dependencyMap[9]).getCurrentScope();
+  const currentScope = require(794) /* registerSpanErrorInstrumentation */.getCurrentScope();
   if (currentScope.getPropagationContext().dsc) {
-    delete r2.replay_id;
+    delete tmp2.replay_id;
   }
-  const obj = require(dependencyMap[9]);
-  const activeSpan = require(dependencyMap[9]).getActiveSpan();
+  const obj = require(794) /* registerSpanErrorInstrumentation */;
+  const activeSpan = require(794) /* registerSpanErrorInstrumentation */.getActiveSpan();
   if (activeSpan) {
-    const dynamicSamplingContextFromSpan = require(dependencyMap[9]).getDynamicSamplingContextFromSpan(activeSpan);
-    delete r1.replay_id;
-    const obj4 = require(dependencyMap[9]);
+    const dynamicSamplingContextFromSpan = require(794) /* registerSpanErrorInstrumentation */.getDynamicSamplingContextFromSpan(activeSpan);
+    delete tmp.replay_id;
+    const obj4 = require(794) /* registerSpanErrorInstrumentation */;
   }
 }
 function handleGlobalEventListener(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   return Object.assign((type, originalException) => {
-    if (type.isEnabled()) {
-      if (!type.isPaused()) {
+    if (store.isEnabled()) {
+      if (!store.isPaused()) {
         if ("replay_event" === type.type) {
-          delete r0.breadcrumbs;
+          delete tmp.breadcrumbs;
           return type;
         } else {
-          if (!callback3(type)) {
-            if (!callback4(type)) {
-              if (!callback5(type)) {
+          if (!outer1_194(type)) {
+            if (!outer1_195(type)) {
+              if (!outer1_196(type)) {
                 return type;
               }
             }
           }
-          if (type.checkAndHandleExpiredSession()) {
-            if (callback5(type)) {
-              type.flush();
-              type.contexts.feedback.replay_id = type.getSessionId();
-              function addFeedbackBreadcrumb(triggerUserActivity, type) {
-                triggerUserActivity.triggerUserActivity();
-                triggerUserActivity.addUpdate((arg0, self) => {
-                  let flag = !self.timestamp;
+          if (store.checkAndHandleExpiredSession()) {
+            if (outer1_196(type)) {
+              store.flush();
+              type.contexts.feedback.replay_id = store.getSessionId();
+              (function addFeedbackBreadcrumb(closure_0, type) {
+                let closure_1 = type;
+                closure_0.triggerUserActivity();
+                closure_0.addUpdate(() => {
+                  let flag = !type.timestamp;
                   if (!flag) {
-                    let obj = { type: Custom.Custom, timestamp: 1000 * self.timestamp };
+                    let obj = { type: outer3_37.Custom, timestamp: 1000 * type.timestamp };
                     obj = { tag: "breadcrumb" };
-                    obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, timestamp: self.timestamp };
-                    const obj1 = { feedbackId: self.event_id };
+                    obj = { timestamp: type.timestamp, type: "default", category: "sentry.feedback" };
+                    const obj1 = { feedbackId: type.event_id };
                     obj.data = obj1;
                     obj.payload = obj;
                     obj.data = obj;
-                    arg0.throttledAddEvent(obj);
+                    closure_0.throttledAddEvent(obj);
                     flag = false;
                   }
                   return flag;
                 });
-              }(type, type);
+              })(store, type);
               return type;
             } else {
               type = type.type;
-              let tmp8;
+              let tmp9;
               if (!type) {
                 const exception = type.exception;
                 type = null == exception;
-                tmp8 = exception;
+                tmp9 = exception;
               }
-              let arr = tmp8;
+              let arr = tmp9;
               if (!type) {
-                const values = tmp8.values;
+                const values = tmp9.values;
                 type = null == values;
                 arr = values;
               }
@@ -5099,52 +5107,52 @@ function handleGlobalEventListener(arg0) {
               if (!type) {
                 originalException = originalException.originalException;
                 type = null == originalException;
-                const tmp11 = originalException;
+                const tmp12 = originalException;
               }
               if (!type) {
-                type = !tmp11.__rrweb__;
+                type = !tmp12.__rrweb__;
               }
               if (!type) {
-                if (!type.getOptions()._experiments.captureExceptions) {
-                  if (closure_69) {
-                    closure_72.log("Ignoring error from rrweb internals", type);
+                if (!store.getOptions()._experiments.captureExceptions) {
+                  if (outer1_69) {
+                    outer1_72.log("Ignoring error from rrweb internals", type);
                   }
                   return null;
                 }
               }
-              let obj = type;
-              let tmp19 = "buffer" === type.recordingMode;
-              if (tmp19) {
-                tmp19 = type.message !== closure_11;
+              let obj = store;
+              let tmp20 = "buffer" === store.recordingMode;
+              if (tmp20) {
+                tmp20 = type.message !== outer1_11;
               }
-              if (tmp19) {
-                tmp19 = !(!type.exception || type.type);
-                const tmp21 = !type.exception || type.type;
+              if (tmp20) {
+                tmp20 = !(!type.exception || type.type);
+                const tmp22 = !type.exception || type.type;
               }
-              if (tmp19) {
-                tmp19 = callback(obj.getOptions().errorSampleRate);
+              if (tmp20) {
+                tmp20 = outer1_182(obj.getOptions().errorSampleRate);
               }
-              let tmp23 = tmp19;
-              if (!tmp19) {
-                tmp23 = "session" === type.recordingMode;
+              let tmp24 = tmp20;
+              if (!tmp20) {
+                tmp24 = "session" === store.recordingMode;
               }
-              if (tmp23) {
+              if (tmp24) {
                 const _Object = Object;
-                obj = { replayId: type.getSessionId() };
+                obj = { replayId: store.getSessionId() };
                 type.tags = Object.assign({}, type.tags, obj);
               }
-              if (tmp19) {
-                if ("buffer" === type.recordingMode) {
-                  const session = type.session;
+              if (tmp20) {
+                if ("buffer" === store.recordingMode) {
+                  const session = store.session;
                   let sampled;
                   if (null != session) {
                     sampled = session.sampled;
                   }
                   if ("buffer" === sampled) {
-                    const session2 = type.session;
+                    const session2 = store.session;
                     session2.dirty = true;
-                    if (type.getOptions().stickySession) {
-                      callback2(session2);
+                    if (store.getOptions().stickySession) {
+                      outer1_183(session2);
                     }
                   }
                 }
@@ -5152,7 +5160,7 @@ function handleGlobalEventListener(arg0) {
               return type;
             }
           } else {
-            callback6();
+            outer1_201();
             return type;
           }
         }
@@ -5162,12 +5170,12 @@ function handleGlobalEventListener(arg0) {
   }, { id: "Replay" });
 }
 function createPerformanceSpans(arg0, arr) {
-  const require = arg0;
+  let closure_0 = arg0;
   return arr.map((op) => {
     const start = op.start;
-    let obj = { type: Custom.Custom, timestamp: start, data: { tag: "performanceSpan", payload: obj } };
+    obj = { type: outer1_37.Custom, timestamp: start, data: { tag: "performanceSpan", payload: obj } };
     obj = { op: op.type, description: op.name, startTimestamp: start, endTimestamp: op.end, data: op.data };
-    let throttledAddEventResult = op.throttledAddEvent(obj);
+    let throttledAddEventResult = closure_0.throttledAddEvent(obj);
     if ("string" === typeof throttledAddEventResult) {
       throttledAddEventResult = Promise.resolve(null);
     }
@@ -5175,25 +5183,24 @@ function createPerformanceSpans(arg0, arr) {
   });
 }
 function handleHistorySpanListener(arg0) {
-  const require = arg0;
-  return (self) => {
+  let closure_0 = arg0;
+  return (arg0) => {
     let from;
     let to;
-    if (self.isEnabled()) {
+    if (obj.isEnabled()) {
       const _Date = Date;
-      ({ from, to } = self);
+      ({ from, to } = arg0);
       const result = Date.now() / 1000;
-      let obj = { type: "navigation.push", start: result, end: result, name: to };
+      obj = { type: "navigation.push", start: result, end: result, name: to };
       obj = { previous: from };
       obj.data = obj;
-      self = obj;
       if (null !== obj) {
-        const urls = self.getContext().urls;
+        const urls = obj.getContext().urls;
         urls.push(obj.name);
-        self.triggerUserActivity();
-        self.addUpdate(() => {
+        obj.triggerUserActivity();
+        obj.addUpdate(() => {
           const items = [obj];
-          callback(obj, items);
+          outer2_203(obj, items);
           return false;
         });
       }
@@ -5201,7 +5208,7 @@ function handleHistorySpanListener(arg0) {
   };
 }
 function addNetworkBreadcrumb(isEnabled, name) {
-  const require = isEnabled;
+  const _require = isEnabled;
   const dependencyMap = name;
   let isEnabledResult = isEnabled.isEnabled();
   if (isEnabledResult) {
@@ -5213,14 +5220,14 @@ function addNetworkBreadcrumb(isEnabled, name) {
       isSentryRequestUrlResult = !isEnabled.getOptions()._experiments.traceInternals;
     }
     if (isSentryRequestUrlResult) {
-      const obj = require(dependencyMap[9]);
-      isSentryRequestUrlResult = obj.isSentryRequestUrl(name.name, require(dependencyMap[9]).getClient());
-      const obj2 = require(dependencyMap[9]);
+      const obj = _require(794);
+      isSentryRequestUrlResult = obj.isSentryRequestUrl(name.name, _require(794).getClient());
+      const obj2 = _require(794);
     }
     if (!isSentryRequestUrlResult) {
       isEnabled.addUpdate(() => {
-        const items = [arg1];
-        callback(arg0, items);
+        const items = [closure_1];
+        outer1_203(closure_0, items);
         return true;
       });
     }
@@ -5239,7 +5246,7 @@ function getBodySize(fetchRequestArgBody) {
       } else {
         const _FormData = FormData;
         if (str instanceof FormData) {
-          return obj.encode(require(dependencyMap[10]).serializeFormData(str)).length;
+          return obj.encode(require(1009) /* addClsInstrumentationHandler */.serializeFormData(str)).length;
         } else {
           const _Blob = Blob;
           if (str instanceof Blob) {
@@ -5273,7 +5280,7 @@ function mergeWarning(_meta) {
     const merged = Object.assign({}, _meta._meta);
     const items = [];
     const items1 = [arg1];
-    merged.warnings = items.concat(callback4(merged.warnings || []), items1);
+    merged.warnings = items.concat(_toConsumableArray(merged.warnings || []), items1);
     _meta._meta = merged;
     return _meta;
   } else {
@@ -5297,7 +5304,7 @@ function makeNetworkReplayBreadcrumb(type, startTimestamp) {
   return tmp;
 }
 function buildSkippedNetworkRequestOrResponse(size) {
-  return { headers: {}, size, _meta: { warnings: ["<string:671237120>"] } };
+  return { headers: {}, size, _meta: { warnings: ["URL_SKIPPED"] } };
 }
 function buildNetworkRequestOrResponse(headers, size, body) {
   let warnings;
@@ -5307,7 +5314,7 @@ function buildNetworkRequestOrResponse(headers, size, body) {
   if (size) {
     let obj = { headers, size };
     if (body) {
-      ({ warnings, body: obj2.body } = function normalizeNetworkBody(body) {
+      ({ warnings, body: obj2.body } = (function normalizeNetworkBody(body) {
         if (body) {
           if ("string" === typeof arr) {
             const first = arr[0];
@@ -5323,16 +5330,16 @@ function buildNetworkRequestOrResponse(headers, size, body) {
               tmp2 = tmp3;
             }
             if (tmp14) {
-              const substr = arr.slice(0, closure_12);
+              const substr = arr.slice(0, outer1_12);
               let obj = {};
               if (tmp2) {
                 obj.body = substr;
-                obj.warnings = [null];
+                obj.warnings = ["MAYBE_JSON_TRUNCATED"];
                 let tmp11 = obj;
               } else {
                 const _HermesInternal = HermesInternal;
                 obj.body = "" + substr + "\u2026";
-                obj.warnings = [false];
+                obj.warnings = ["TEXT_TRUNCATED"];
                 tmp11 = obj;
               }
               return tmp11;
@@ -5344,12 +5351,12 @@ function buildNetworkRequestOrResponse(headers, size, body) {
               obj.body = JSON.parse(arr);
               return obj;
             }
-            const tmp14 = arr.length > closure_12;
+            tmp14 = arr.length > outer1_12;
           }
         }
         obj = { body };
         return obj;
-      }(body));
+      })(body));
       if (tmp4) {
         obj = { warnings };
         obj._meta = obj;
@@ -5364,15 +5371,15 @@ function buildNetworkRequestOrResponse(headers, size, body) {
   }
 }
 function getAllowedHeaders(headers, arr) {
-  const require = headers;
-  const dependencyMap = arr;
+  let closure_0 = headers;
+  let closure_1 = arr;
   const entries = Object.entries(headers);
   return entries.reduce((arg0, arg1) => {
-    const tmp = callback(arg1, 2);
+    const tmp = outer1_6(arg1, 2);
     const formatted = str.toLowerCase();
-    let hasItem = arg1.includes(formatted);
+    let hasItem = arr.includes(formatted);
     if (hasItem) {
-      hasItem = arg0[str];
+      hasItem = headers[str];
     }
     if (hasItem) {
       arg0[formatted] = tmp[1];
@@ -5381,14 +5388,14 @@ function getAllowedHeaders(headers, arr) {
   }, {});
 }
 function urlMatches(arg0, arg1) {
-  const tmp = function getFullUrl(str) {
+  const tmp = (function getFullUrl(str) {
     if (arguments.length > 1) {
       if (undefined !== arguments[1]) {
         let baseURI = arguments[1];
       }
       if (!str.startsWith("http://")) {
         if (!str.startsWith("https://")) {
-          if (!str.startsWith(callback(closure_1[9]).GLOBAL_OBJ.location.origin)) {
+          if (!str.startsWith(outer1_0(outer1_1[9]).GLOBAL_OBJ.location.origin)) {
             const _URL = URL;
             const uRL = new URL(str, baseURI);
             const _URL2 = URL;
@@ -5409,49 +5416,49 @@ function urlMatches(arg0, arg1) {
       }
       return str;
     }
-    baseURI = callback(closure_1[9]).GLOBAL_OBJ.document.baseURI;
-  }(arg0);
-  return require(dependencyMap[9]).stringMatchesSomePattern(tmp, arg1);
+    baseURI = outer1_0(outer1_1[9]).GLOBAL_OBJ.document.baseURI;
+  })(arg0);
+  return require(794) /* registerSpanErrorInstrumentation */.stringMatchesSomePattern(tmp, arg1);
 }
-async function _captureFetchBreadcrumbToReplay(arg0, arg1, replay, arg3) {
-  callback(replay.replay, callback2("resource.fetch", yield function _prepareFetchData(arg0, arg1, replay) {
-    return callback(...arguments);
-  }(arg0, arg1, replay)));
+async function _captureFetchBreadcrumbToReplay(arg0, arg1, arg2, arg3) {
+  outer2_205(arg2.replay, outer2_209("resource.fetch", yield (function _prepareFetchData(arg0, arg1, replay) {
+    return outer3_215(...arguments);
+  })(arg0, arg1, arg2)));
 }
-async function _prepareFetchData2(data, startTimestamp, networkDetailAllowUrls, arg3) {
+async function _prepareFetchData2(arg0, arg1, arg2, arg3) {
   let request_body_size;
   let response_body_size;
   let status_code;
   let url;
   const timestamp = Date.now();
-  startTimestamp = startTimestamp.startTimestamp;
+  let startTimestamp = arg1.startTimestamp;
   if (undefined === startTimestamp) {
     startTimestamp = timestamp;
   }
-  let endTimestamp = startTimestamp.endTimestamp;
+  let endTimestamp = arg1.endTimestamp;
   if (undefined === endTimestamp) {
     endTimestamp = timestamp;
   }
-  data = data.data;
+  const data = arg0.data;
   ({ url, status_code } = data);
   let num = 0;
   if (undefined !== status_code) {
     num = status_code;
   }
   ({ request_body_size, response_body_size } = data);
-  let tmp2 = callback2(url, networkDetailAllowUrls.networkDetailAllowUrls);
+  let tmp2 = outer2_213(url, arg2.networkDetailAllowUrls);
   if (tmp2) {
-    tmp2 = !callback2(url, networkDetailAllowUrls.networkDetailDenyUrls);
+    tmp2 = !outer2_213(url, arg2.networkDetailDenyUrls);
   }
   if (tmp2) {
-    let tmp5 = function _getRequestInfo(networkRequestHeaders, input, request_body_size) {
+    let tmp5 = (function _getRequestInfo(networkRequestHeaders, input, request_body_size) {
       networkRequestHeaders = networkRequestHeaders.networkRequestHeaders;
       if (input) {
         if (1 === input.length) {
           if ("string" !== typeof input[0]) {
-            let obj = callback6(input[0], networkRequestHeaders);
+            let obj = outer3_219(input[0], networkRequestHeaders);
           }
-          obj = callback6(input[num], networkRequestHeaders);
+          obj = outer3_219(input[num], networkRequestHeaders);
         }
         if (2 !== input.length) {
           obj = {};
@@ -5459,83 +5466,85 @@ async function _prepareFetchData2(data, startTimestamp, networkDetailAllowUrls, 
       } else {
         obj = {};
         if (tmp) {
-          const fetchRequestArgBody = callback(closure_1[10]).getFetchRequestArgBody(input);
-          const obj3 = callback(closure_1[10]);
-          const tmp11 = callback2(callback(closure_1[10]).getBodyString(fetchRequestArgBody, closure_72), 2);
-          const tmp14 = callback4(obj, request_body_size, tmp11[0]);
+          const fetchRequestArgBody = outer3_0(outer3_1[10]).getFetchRequestArgBody(input);
+          const obj3 = outer3_0(outer3_1[10]);
+          const tmp11 = outer3_6(outer3_0(outer3_1[10]).getBodyString(fetchRequestArgBody, outer3_72), 2);
+          const tmp14 = outer3_211(obj, request_body_size, tmp11[0]);
           if (tmp11[1]) {
-            return callback3(tmp14, tmp12);
+            return outer3_208(tmp14, tmp12);
           } else {
             return tmp14;
           }
-          const obj4 = callback(closure_1[10]);
+          const obj4 = outer3_0(outer3_1[10]);
         } else {
-          return callback4(obj, request_body_size, undefined);
+          return outer3_211(obj, request_body_size, undefined);
         }
       }
-    }(networkDetailAllowUrls, startTimestamp.input, request_body_size);
+    })(arg2, arg1.input, request_body_size);
   } else {
-    tmp5 = callback(request_body_size);
+    tmp5 = outer2_210(request_body_size);
   }
-  const obj = {
+  let obj = {
     startTimestamp,
     endTimestamp,
     url,
     method: data.method,
     statusCode: num,
     request: tmp5,
-    response: yield function _getResponseInfo(arg0, networkDetailAllowUrls, response, response_body_size) {
-      return callback5(...arguments);
-    }(tmp2, networkDetailAllowUrls, startTimestamp.response, response_body_size)
+    response: yield (function _getResponseInfo(arg0, networkDetailAllowUrls, response, response_body_size) {
+      return outer3_216(...arguments);
+    })(tmp2, arg2, arg1.response, response_body_size)
   };
   return obj;
 }
-async function _getResponseInfo2(captureDetails, arg1, headers, responseBodySize, arg4) {
+async function _getResponseInfo2(arg0, arg1, arg2, arg3, arg4) {
+  let headers;
   let networkCaptureBodies;
   let networkCaptureBodies2;
   let networkResponseHeaders;
+  let responseBodySize;
   ({ networkCaptureBodies, networkResponseHeaders } = arg1);
-  if (!captureDetails) {
-    if (undefined !== responseBodySize) {
-      return callback4(responseBodySize);
+  if (!arg0) {
+    if (undefined !== arg3) {
+      return outer2_210(arg3);
     }
   }
-  if (headers) {
-    let obj = callback6(headers.headers, networkResponseHeaders);
+  if (arg2) {
+    let obj = outer2_218(arg2.headers, networkResponseHeaders);
   } else {
     obj = {};
   }
-  if (headers) {
-    const tmp4 = callback(yield function _parseFetchResponseBody(headers) {
-      return callback(...arguments);
-    }(headers), 2);
+  if (arg2) {
+    const tmp4 = outer2_6(yield (function _parseFetchResponseBody(headers) {
+      return outer3_217(...arguments);
+    })(arg2), 2);
     const first = tmp4[0];
-    obj = { networkCaptureBodies, responseBodySize, captureDetails };
+    obj = { networkCaptureBodies, responseBodySize: arg3, captureDetails: arg0 };
     obj.headers = obj;
     ({ networkCaptureBodies: networkCaptureBodies2, responseBodySize, headers } = obj);
     if (null != first) {
       if (arr.length) {
         if (undefined === responseBodySize) {
-          let tmp12 = callback2(arr);
+          let tmp12 = outer2_206(arr);
         }
         if (tmp7) {
           let tmp22;
           if (networkCaptureBodies2) {
             tmp22 = first;
           }
-          let tmp19Result = callback5(headers, tmp12, tmp22);
-          const tmp19 = callback5;
+          let tmp19Result = outer2_211(headers, tmp12, tmp22);
+          const tmp19 = outer2_211;
         } else {
-          tmp19Result = callback4(tmp15);
+          tmp19Result = outer2_210(tmp15);
         }
         while (true) {
           let tmp23 = tmp19Result;
           if (!tmp6) {
             break;
           } else {
-            let tmp24 = callback3;
-            tmp23 = callback3(tmp19Result, tmp6);
-            // break
+            let tmp24 = outer2_208;
+            tmp23 = outer2_208(tmp19Result, tmp6);
+            break;
           }
           return tmp23;
         }
@@ -5543,29 +5552,31 @@ async function _getResponseInfo2(captureDetails, arg1, headers, responseBodySize
     }
     tmp12 = responseBodySize;
   }
-  return callback5(obj, responseBodySize, undefined);
+  return outer2_211(obj, arg3, undefined);
 }
-async function _parseFetchResponseBody2(clone, arg1) {
-  const cloneResult = clone.clone();
+async function _parseFetchResponseBody2(arg0, arg1) {
+  const cloneResult = arg0.clone();
   while (true) {
     if (cloneResult) {
       let tmp3 = cloneResult;
       let items = [
-        yield function _tryGetResponseText(arg0) {
-              return new Promise((arg0, arg1) => {
-                const timeout = arg0(arg1[10]).setTimeout(() => {
+        yield (function _tryGetResponseText(arg0) {
+              let closure_0 = arg0;
+              return new Promise((closure_0) => {
+                let closure_1 = arg1;
+                const timeout = outer4_0(outer4_1[10]).setTimeout(() => {
                   const error = new Error("Timeout while trying to read response body");
-                  return arg1(error);
+                  return callback2(error);
                 }, 500);
-                const obj = arg0(arg1[10]);
-                const promise = function _getResponseText(arg0) {
-                  return callback(...arguments);
-                }(arg0);
-                function _getResponseText(arg0) {
-                  return callback(...arguments);
-                }(arg0).then((arg0) => arg0(arg0), (arg0) => arg1(arg0)).finally(() => clearTimeout(closure_2));
+                const obj = outer4_0(outer4_1[10]);
+                const promise = (function _getResponseText(closure_0) {
+                  return outer5_220(...arguments);
+                })(closure_0);
+                (function _getResponseText(closure_0) {
+                  return outer5_220(...arguments);
+                })(closure_0).then((arg0) => callback(arg0), (arg0) => callback2(arg0)).finally(() => clearTimeout(closure_2));
               });
-            }(tmp2)
+            })(tmp2)
       ];
       return items;
     } else {
@@ -5577,12 +5588,11 @@ async function _parseFetchResponseBody2(clone, arg1) {
   }
 }
 function getAllHeaders(headers, arr) {
-  const require = headers;
+  let closure_0 = headers;
   const obj = {};
-  const dependencyMap = obj;
   const item = arr.forEach((arg0) => {
-    if (arg0.get(arg0)) {
-      obj[arg0] = arg0.get(arg0);
+    if (headers.get(arg0)) {
+      obj[arg0] = headers.get(arg0);
     }
   });
   return obj;
@@ -5609,14 +5619,14 @@ function getHeadersFromOptions(headers, arr) {
     return {};
   }
 }
-async function _getResponseText2(text, arg1) {
-  return yield text.text();
+async function _getResponseText2(arg0, arg1) {
+  return yield arg0.text();
 }
-async function _captureXhrBreadcrumbToReplay(data, startTimestamp, replay, arg3) {
+async function _captureXhrBreadcrumbToReplay(arg0, arg1, arg2, arg3) {
   if (obj) {
     return obj.resume();
   } else {
-    callback(replay.replay, callback2("resource.xhr", function _prepareXhrData(data, startTimestamp, networkDetailAllowUrls) {
+    outer2_205(arg2.replay, outer2_209("resource.xhr", (function _prepareXhrData(data, startTimestamp, networkDetailAllowUrls) {
       let method;
       let request_body_size;
       let response_body_size;
@@ -5643,54 +5653,55 @@ async function _captureXhrBreadcrumbToReplay(data, startTimestamp, replay, arg3)
       ({ request_body_size, response_body_size } = data);
       if (url) {
         if (xhr) {
-          if (callback7(url, networkDetailAllowUrls.networkDetailAllowUrls)) {
-            if (!callback7(url, networkDetailAllowUrls.networkDetailDenyUrls)) {
-              if (xhr[closure_0(undefined, closure_1[10]).SENTRY_XHR_DATA_KEY]) {
-                let obj = callback6(tmp7.request_headers, networkDetailAllowUrls.networkRequestHeaders);
+          if (outer3_213(url, networkDetailAllowUrls.networkDetailAllowUrls)) {
+            if (!outer3_213(url, networkDetailAllowUrls.networkDetailDenyUrls)) {
+              const tmp7 = xhr[outer3_0(undefined, outer3_1[10]).SENTRY_XHR_DATA_KEY];
+              if (tmp7) {
+                let obj = outer3_212(tmp7.request_headers, networkDetailAllowUrls.networkRequestHeaders);
               } else {
                 obj = {};
               }
-              const obj2 = callback(closure_1[10]);
+              const obj2 = outer3_0(outer3_1[10]);
               if (networkDetailAllowUrls.networkCaptureBodies) {
-                let bodyString = callback(closure_1[10]).getBodyString(startTimestamp.input, closure_72);
-                const obj3 = callback(closure_1[10]);
+                let bodyString = outer3_0(outer3_1[10]).getBodyString(startTimestamp.input, outer3_72);
+                const obj3 = outer3_0(outer3_1[10]);
               } else {
                 bodyString = [undefined];
               }
-              const tmp12 = callback6(callback(closure_1[10]).parseXhrResponseHeaders(xhr), networkDetailAllowUrls.networkResponseHeaders);
-              [tmp18, tmp19] = callback2(bodyString, 2);
+              const tmp12 = outer3_212(outer3_0(outer3_1[10]).parseXhrResponseHeaders(xhr), networkDetailAllowUrls.networkResponseHeaders);
+              [tmp18, tmp19] = outer3_6(bodyString, 2);
               if (networkDetailAllowUrls.networkCaptureBodies) {
-                let items = function _getXhrResponseBody(xhr) {
+                let items = (function _getXhrResponseBody(xhr) {
                   const items = [xhr.responseText];
                   return items;
-                }(xhr);
+                })(xhr);
               } else {
                 items = [undefined];
               }
-              const tmp21 = callback2(items, 2);
-              const tmp24 = callback5(obj, request_body_size, tmp18);
-              const tmp25 = callback5(tmp12, response_body_size, tmp21[0]);
+              const tmp21 = outer3_6(items, 2);
+              const tmp24 = outer3_211(obj, request_body_size, tmp18);
+              const tmp25 = outer3_211(tmp12, response_body_size, tmp21[0]);
               obj = { startTimestamp, endTimestamp, url, method, statusCode: num };
               let tmp26 = tmp24;
               if (tmp19) {
-                tmp26 = callback3(tmp24, tmp19);
+                tmp26 = outer3_208(tmp24, tmp19);
               }
               obj.request = tmp26;
               let tmp28 = tmp25;
               if (tmp21[1]) {
-                tmp28 = callback3(tmp25, tmp22);
+                tmp28 = outer3_208(tmp25, tmp22);
               }
               obj.response = tmp28;
               return obj;
             }
           }
         }
-        obj = { startTimestamp, endTimestamp, url, method, statusCode: num, request: callback4(request_body_size), response: callback4(response_body_size) };
+        obj = { startTimestamp, endTimestamp, url, method, statusCode: num, request: outer3_210(request_body_size), response: outer3_210(response_body_size) };
         return obj;
       } else {
         return null;
       }
-    }(data, startTimestamp, replay)));
+    })(arg0, arg1, arg2)));
   }
 }
 function enrichXhrBreadcrumb(data, xhr) {
@@ -5723,12 +5734,12 @@ function enrichXhrBreadcrumb(data, xhr) {
   }
 }
 function handleNetworkBreadcrumbs(getOptions) {
-  const client = callback(dependencyMap[9]).getClient();
+  const client = _require(794).getClient();
   const options = getOptions.getOptions();
-  const callback = { replay: getOptions, networkDetailAllowUrls: options.networkDetailAllowUrls, networkDetailDenyUrls: options.networkDetailDenyUrls, networkCaptureBodies: options.networkCaptureBodies, networkRequestHeaders: options.networkRequestHeaders, networkResponseHeaders: options.networkResponseHeaders };
+  _require = { replay: getOptions, networkDetailAllowUrls: options.networkDetailAllowUrls, networkDetailDenyUrls: options.networkDetailDenyUrls, networkCaptureBodies: options.networkCaptureBodies, networkRequestHeaders: options.networkRequestHeaders, networkResponseHeaders: options.networkResponseHeaders };
   if (client) {
     client.on("beforeAddBreadcrumb", (data, xhr) => {
-      function beforeAddNetworkBreadcrumb(closure_0, data, xhr) {
+      (function beforeAddNetworkBreadcrumb(closure_0, data, xhr) {
         let input;
         let response;
         if (data.data) {
@@ -5741,10 +5752,10 @@ function handleNetworkBreadcrumbs(getOptions) {
             tmp4 = xhr;
           }
           if (tmp4) {
-            callback3(tmp, xhr);
-            function captureXhrBreadcrumbToReplay(data, xhr, closure_0) {
-              return callback2(...arguments);
-            }(tmp, xhr, closure_0);
+            outer2_222(tmp, xhr);
+            (function captureXhrBreadcrumbToReplay(data, xhr, closure_0) {
+              return outer3_221(...arguments);
+            })(tmp, xhr, closure_0);
           }
           let tmp16 = tmp15;
           if ("fetch" === tmp.category) {
@@ -5758,14 +5769,14 @@ function handleNetworkBreadcrumbs(getOptions) {
             ({ input, response } = xhr);
             let fetchRequestArgBody;
             if (input) {
-              fetchRequestArgBody = callback(closure_1[10]).getFetchRequestArgBody(input);
-              const obj = callback(closure_1[10]);
+              fetchRequestArgBody = callback(outer2_1[10]).getFetchRequestArgBody(input);
+              const obj = callback(outer2_1[10]);
             }
-            const tmp22Result = closure_206(fetchRequestArgBody);
+            const tmp22Result = outer2_206(fetchRequestArgBody);
             let tmp27;
             if (response) {
               const headers = response.headers;
-              tmp27 = callback2(headers.get("content-length"));
+              tmp27 = outer2_207(headers.get("content-length"));
             }
             if (undefined !== tmp22Result) {
               tmp.data.request_body_size = tmp22Result;
@@ -5773,13 +5784,13 @@ function handleNetworkBreadcrumbs(getOptions) {
             if (undefined !== tmp27) {
               tmp.data.response_body_size = tmp27;
             }
-            function captureFetchBreadcrumbToReplay(data, xhr, closure_0) {
-              return callback(...arguments);
-            }(tmp, xhr, closure_0);
-            const tmp22 = closure_206;
+            (function captureFetchBreadcrumbToReplay(data, xhr, closure_0) {
+              return outer3_214(...arguments);
+            })(tmp, xhr, closure_0);
+            const tmp22 = outer2_206;
           }
         }
-      }(closure_0, data, xhr);
+      })(closure_0, data, xhr);
     });
   }
 }
@@ -5791,52 +5802,53 @@ async function _addMemoryEntry(arg0, arg1) {
     return obj.resume();
   } else {
     const _Date = Date;
-    ({ jsHeapSizeLimit, totalJSHeapSize, usedJSHeapSize } = callback(closure_1[9]).GLOBAL_OBJ.performance.memory);
+    ({ jsHeapSizeLimit, totalJSHeapSize, usedJSHeapSize } = outer2_0(outer2_1[9]).GLOBAL_OBJ.performance.memory);
     const result = Date.now() / 1000;
-    let obj = { name: null, url: null, start: result, end: result };
+    obj = { type: "memory", name: "memory", start: result, end: result };
     obj = {};
     const obj1 = { jsHeapSizeLimit, totalJSHeapSize, usedJSHeapSize };
     obj.memory = obj1;
     obj.data = obj;
     const items = [obj];
-    return Promise.all(callback2(arg0, items));
+    return Promise.all(outer2_203(arg0, items));
   }
 }
 function getHandleRecordingEmit(arg0) {
-  const require = arg0;
-  let closure_1 = false;
-  return (self) => {
+  let closure_0 = arg0;
+  let c1 = false;
+  return (arg0, arg1) => {
     let tmp = arg1;
-    if (self.checkAndHandleExpiredSession()) {
+    let closure_0 = arg0;
+    if (closure_0.checkAndHandleExpiredSession()) {
       if (!tmp) {
-        tmp = !closure_1;
+        tmp = !c1;
       }
-      closure_1 = tmp;
-      closure_1 = true;
-      if (self.clickDetector) {
-        callback(self.clickDetector, self);
+      c1 = tmp;
+      c1 = true;
+      if (closure_0.clickDetector) {
+        outer1_165(closure_0.clickDetector, arg0);
       }
-      self.addUpdate((self) => {
+      closure_0.addUpdate(() => {
         if (tmp) {
-          self.setInitialState();
+          store.setInitialState();
         }
-        if (callback2(self, self, closure_1)) {
-          if (closure_1) {
-            const session = self.session;
-            function addSettingsEvent(session, closure_1) {
-              if (closure_1) {
-                if (session.session) {
-                  if (0 === session.session.segmentId) {
-                    const options = session.getOptions();
-                    let obj = { type: Custom.Custom };
+        if (outer2_190(store, store, c1)) {
+          if (c1) {
+            const session = store.session;
+            (function addSettingsEvent(closure_0, c1) {
+              if (c1) {
+                if (closure_0.session) {
+                  if (0 === closure_0.session.segmentId) {
+                    const options = closure_0.getOptions();
+                    let obj = { type: outer3_37.Custom };
                     const _Date = Date;
                     obj.timestamp = Date.now();
                     obj = { tag: "options" };
-                    obj = { shouldRecordCanvas: session.isRecordingCanvas() };
+                    obj = { shouldRecordCanvas: closure_0.isRecordingCanvas() };
                     ({ sessionSampleRate: obj3.sessionSampleRate, errorSampleRate: obj3.errorSampleRate, useCompression: obj3.useCompressionOption, blockAllMedia: obj3.blockAllMedia, maskAllText: obj3.maskAllText, maskAllInputs: obj3.maskAllInputs } = options);
                     let tmp = !tmp7;
-                    if (!!session.eventBuffer) {
-                      tmp = "worker" === session.eventBuffer.type;
+                    if (!!closure_0.eventBuffer) {
+                      tmp = "worker" === closure_0.eventBuffer.type;
                     }
                     obj.useCompression = tmp;
                     obj.networkDetailHasUrls = options.networkDetailAllowUrls.length > 0;
@@ -5845,27 +5857,27 @@ function getHandleRecordingEmit(arg0) {
                     obj.networkResponseHasHeaders = options.networkResponseHeaders.length > 0;
                     obj.payload = obj;
                     obj.data = obj;
-                    closure_190(session, obj, false);
+                    outer3_190(closure_0, obj, false);
                   }
                 }
               }
-            }(self, closure_1);
-            if ("buffer" === self.recordingMode) {
+            })(store, c1);
+            if ("buffer" === store.recordingMode) {
               if (session) {
-                if (self.eventBuffer) {
+                if (store.eventBuffer) {
                   if (!session.dirty) {
-                    const eventBuffer = self.eventBuffer;
+                    const eventBuffer = store.eventBuffer;
                     const earliestTimestamp = eventBuffer.getEarliestTimestamp();
                     if (earliestTimestamp) {
-                      if (closure_69) {
-                        const _Date = Date;
+                      if (outer2_69) {
+                        let _Date = Date;
                         const date = new Date(earliestTimestamp);
                         const _HermesInternal = HermesInternal;
-                        closure_72.log("Updating session start time to earliest event in buffer to " + date);
+                        outer2_72.log("Updating session start time to earliest event in buffer to " + date);
                       }
                       session.started = earliestTimestamp;
-                      if (self.getOptions().stickySession) {
-                        callback(session);
+                      if (store.getOptions().stickySession) {
+                        outer2_183(session);
                       }
                     }
                   }
@@ -5873,8 +5885,8 @@ function getHandleRecordingEmit(arg0) {
               }
             }
             if (!tmp24) {
-              if ("session" === self.recordingMode) {
-                self.flush();
+              if ("session" === store.recordingMode) {
+                store.flush();
               }
             }
             return true;
@@ -5884,21 +5896,21 @@ function getHandleRecordingEmit(arg0) {
         } else {
           return true;
         }
-        const tmp = "buffer" === self.recordingMode && closure_1;
+        tmp = "buffer" === store.recordingMode && c1;
       });
-    } else if (closure_69) {
-      closure_72.warn("Received replay event after session expired.");
+    } else if (outer1_69) {
+      outer1_72.warn("Received replay event after session expired.");
     }
   };
 }
-async function _prepareReplayEvent(event_id, arg1) {
+async function _prepareReplayEvent(arg0, arg1) {
   let client;
   let event;
   let name;
   let scope;
   let version;
-  ({ client, scope, event } = event_id);
-  let obj = { event_id: event_id.replayId };
+  ({ client, scope, event } = arg0);
+  let obj = { event_id: arg0.replayId };
   let keys;
   if ("object" === typeof client._integrations) {
     if (null !== client._integrations) {
@@ -5912,8 +5924,8 @@ async function _prepareReplayEvent(event_id, arg1) {
   obj.integrations = keys;
   client.emit("preprocessEvent", event, obj);
   const options = client.getOptions();
-  const obj2 = callback(closure_1[9]);
-  const tmp6 = yield obj2.prepareEvent(options, event, obj, scope, client, callback(closure_1[9]).getIsolationScope());
+  const obj2 = outer2_0(outer2_1[9]);
+  const tmp6 = yield obj2.prepareEvent(options, event, obj, scope, client, outer2_0(outer2_1[9]).getIsolationScope());
   if (tmp6) {
     client.emit("postprocessEvent", tmp6, obj);
     tmp6.platform = tmp6.platform || "javascript";
@@ -5941,9 +5953,9 @@ async function _prepareReplayEvent(event_id, arg1) {
   } else {
     return null;
   }
-  const obj3 = callback(closure_1[9]);
+  const obj3 = outer2_0(outer2_1[9]);
 }
-async function _sendReplayRequest(recordingData, arg1) {
+async function _sendReplayRequest(arg0, arg1) {
   let errorIds;
   let eventContext;
   let initialTimestamp;
@@ -5952,9 +5964,9 @@ async function _sendReplayRequest(recordingData, arg1) {
   let session;
   let traceIds;
   let urls;
-  ({ replayId, segmentId, eventContext, session } = recordingData);
-  let obj = { recordingData: recordingData.recordingData, headers: { segment_id: segmentId } };
-  recordingData = obj.recordingData;
+  ({ replayId, segmentId, eventContext, session } = arg0);
+  let obj = { recordingData: arg0.recordingData, headers: { segment_id: segmentId } };
+  const recordingData = obj.recordingData;
   const combined = "" + JSON.stringify(obj.headers) + "\n";
   if ("string" === typeof recordingData) {
     const _HermesInternal = HermesInternal;
@@ -5970,10 +5982,10 @@ async function _sendReplayRequest(recordingData, arg1) {
     combined1 = uint8Array;
   }
   ({ urls, errorIds, traceIds, initialTimestamp } = eventContext);
-  const client = callback(closure_1[9]).getClient();
-  const obj4 = callback(closure_1[9]);
+  const client = outer2_0(outer2_1[9]).getClient();
+  const obj4 = outer2_0(outer2_1[9]);
   let transport;
-  const currentScope = callback(closure_1[9]).getCurrentScope();
+  const currentScope = outer2_0(outer2_1[9]).getCurrentScope();
   if (null != client) {
     transport = client.getTransport();
   }
@@ -5984,21 +5996,21 @@ async function _sendReplayRequest(recordingData, arg1) {
     if (obj7) {
       if (dsn) {
         if (session.sampled) {
-          obj = { type: "replay_event", replay_start_timestamp: initialTimestamp / 1000, timestamp: recordingData.timestamp / 1000, error_ids: errorIds, trace_ids: traceIds, urls, replay_id: replayId, segment_id: segmentId, replay_type: session.sampled };
+          obj = { type: "replay_event", replay_start_timestamp: initialTimestamp / 1000, timestamp: arg0.timestamp / 1000, error_ids: errorIds, trace_ids: traceIds, urls, replay_id: replayId, segment_id: segmentId, replay_type: session.sampled };
           obj = { scope: currentScope, client, replayId };
           obj.event = obj;
-          const tmp14 = yield function prepareReplayEvent(arg0) {
-            return callback(...arguments);
-          }(obj);
-          if (tmp14) {
-            delete r1.sdkProcessingMetadata;
-            const obj11 = callback(closure_1[9]);
-            const obj10 = callback(closure_1[9]);
+          const tmp15 = yield (function prepareReplayEvent(arg0) {
+            return outer3_226(...arguments);
+          })(obj);
+          if (tmp15) {
+            delete tmp.sdkProcessingMetadata;
+            const obj11 = outer2_0(outer2_1[9]);
+            const obj10 = outer2_0(outer2_1[9]);
             const obj1 = { type: "replay_event" };
-            const items = [obj1, tmp14];
+            const items = [obj1, tmp15];
             const items1 = [items, ];
             const obj2 = { type: "replay_recording" };
-            const eventEnvelopeHeaders = obj11.createEventEnvelopeHeaders(tmp14, callback(closure_1[9]).getSdkMetadataForEnvelopeHeader(tmp14), client.getOptions().tunnel, dsn);
+            const eventEnvelopeHeaders = obj11.createEventEnvelopeHeaders(tmp15, outer2_0(outer2_1[9]).getSdkMetadataForEnvelopeHeader(tmp15), client.getOptions().tunnel, dsn);
             if ("string" === typeof combined1) {
               const _TextEncoder2 = TextEncoder;
               const textEncoder1 = new TextEncoder();
@@ -6009,28 +6021,28 @@ async function _sendReplayRequest(recordingData, arg1) {
             obj2.length = length;
             const items2 = [obj2, combined1];
             items1[1] = items2;
-            const tmp29 = yield obj7.send(obj10.createEnvelope(eventEnvelopeHeaders, items1));
-            if ("number" === typeof tmp29.statusCode) {
-              const prototype5 = ctor.prototype;
-              const tmp49 = new ctor(tmp29.statusCode);
-              throw tmp49;
+            const tmp30 = yield obj7.send(obj10.createEnvelope(eventEnvelopeHeaders, items1));
+            if ("number" === typeof tmp30.statusCode) {
+              const prototype5 = outer2_79.prototype;
+              const tmp50 = new outer2_79(tmp30.statusCode);
+              throw tmp50;
             }
-            const obj12 = callback(closure_1[9]);
-            const updateRateLimitsResult = callback(closure_1[9]).updateRateLimits({}, tmp29);
-            const obj16 = callback(closure_1[9]);
-            const tmp38 = updateRateLimitsResult;
+            const obj12 = outer2_0(outer2_1[9]);
+            const updateRateLimitsResult = outer2_0(outer2_1[9]).updateRateLimits({}, tmp30);
+            const obj16 = outer2_0(outer2_1[9]);
+            const tmp39 = updateRateLimitsResult;
             if (obj17.isRateLimited(updateRateLimitsResult, "replay")) {
-              const prototype4 = ctor2.prototype;
-              const tmp44 = new ctor2(tmp38);
-              throw tmp44;
+              const prototype4 = outer2_80.prototype;
+              const tmp45 = new outer2_80(tmp39);
+              throw tmp45;
             } else {
-              return tmp30;
+              return tmp31;
             }
-            const obj17 = callback(closure_1[9]);
+            obj17 = outer2_0(outer2_1[9]);
           } else {
             client.recordDroppedEvent("event_processor", "replay");
-            if (closure_69) {
-              closure_72.log("An event processor returned `null`, will not send event.");
+            if (outer2_69) {
+              outer2_72.log("An event processor returned `null`, will not send event.");
             }
             return Promise.resolve({});
           }
@@ -6044,6 +6056,7 @@ function sendReplay(arg0) {
   return _sendReplay(...arguments);
 }
 async function _sendReplay(arg0, arg1) {
+  let closure_0 = arg0;
   let obj;
   if (arguments.length > 1) {
     if (undefined !== arguments[1]) {
@@ -6051,78 +6064,69 @@ async function _sendReplay(arg0, arg1) {
     }
     const onError = tmp.onError;
     if (tmp.recordingData.length) {
-      yield function sendReplayRequest(arg0) {
-        return callback(...arguments);
-      }(tmp);
+      yield (function sendReplayRequest(arg0) {
+        return outer3_227(...arguments);
+      })(tmp);
       return true;
     }
   }
-  obj = { 0: false, -9223372036854775808: null };
+  obj = { count: 0, interval: 5000 };
 }
 function throttle(arg0, arg1, arg2) {
-  const require = arg0;
-  let closure_1 = 300;
-  let closure_2 = 5;
-  let closure_3 = new Map();
-  let closure_4 = false;
+  let closure_0 = arg0;
+  let c1 = 300;
+  let c2 = 5;
+  const map = new Map();
+  let c4 = false;
   return () => {
     const rounded = Math.floor(Date.now() / 1000);
-    function _cleanup(rounded) {
-      let closure_0 = rounded - closure_2;
-      const item = closure_3.forEach((arg0, arg1) => {
+    (function _cleanup(rounded) {
+      let closure_0 = rounded - outer1_2;
+      const item = outer1_3.forEach((arg0, arg1) => {
         if (arg1 < closure_0) {
-          set.delete(arg1);
+          outer2_3.delete(arg1);
         }
       });
-    }(rounded);
-    if (function _getTotalCount() {
-      return callback(closure_3.values()).reduce((arg0, arg1) => arg0 + arg1, 0);
-    }() >= closure_1) {
-      let closure_4 = true;
+    })(rounded);
+    if ((function _getTotalCount() {
+      return outer2_7(outer1_3.values()).reduce((arg0, arg1) => arg0 + arg1, 0);
+    })() >= c1) {
+      let c4 = true;
       let str = "__SKIPPED";
-      if (!closure_4) {
-        str = closure_81;
+      if (!c4) {
+        str = outer1_81;
       }
       return str;
     } else {
-      closure_4 = false;
+      c4 = false;
       const result = map.set(rounded, (map.get(rounded) || 0) + 1);
-      return arg0(...arguments);
+      return callback(...arguments);
     }
   };
 }
 function getOption(arg0) {
   const items = [];
-  const combined = items.concat(callback4(arg0), callback4(arg1));
+  const combined = items.concat(_toConsumableArray(arg0), _toConsumableArray(arg1));
   return combined.join(",");
 }
 function _getMergedNetworkHeaders(arr) {
   const items = [];
-  return items.concat(closure_84, callback4(arr.map((str) => str.toLowerCase())));
+  return items.concat(closure_84, _toConsumableArray(arr.map((str) => str.toLowerCase())));
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
-const _module = require(dependencyMap[4]);
-let closure_6 = require(dependencyMap[5]);
-let closure_7 = require(dependencyMap[6]);
-let closure_8 = require(dependencyMap[7]);
-let closure_9 = require(dependencyMap[8]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_10 = "sentryReplaySession";
-let closure_11 = "Unable to send Replay";
-let closure_12 = 150000;
-let closure_13 = 5000;
-let closure_14 = 20000000;
-let closure_15 = 3600000;
+let sentryReplaySession = "sentryReplaySession";
+let c11 = "Unable to send Replay";
+let c12 = 150000;
+let c13 = 5000;
+let c14 = 20000000;
+let c15 = 3600000;
 function __publicField$1(arg0, arg1, value) {
   let text = arg1;
   if ("symbol" !== typeof arg1) {
     text = `${arg1}`;
   }
   if (text in arg0) {
-    const obj = { value };
+    const obj = { enumerable: true, configurable: true, writable: true, value };
     let tmp2 = defineProperty(arg0, text, obj);
   } else {
     arg0[text] = value;
@@ -6131,18 +6135,17 @@ function __publicField$1(arg0, arg1, value) {
   return tmp2;
 }
 let closure_18 = { Document: 0, [0]: "Document", DocumentType: 1, [1]: "DocumentType", Element: 2, [2]: "Element", Text: 3, [3]: "Text", CDATA: 4, [4]: "CDATA", Comment: 5, [5]: "Comment" };
-const tmp3 = () => {
+let closure_19 = (() => {
   class Mirror {
     constructor() {
-      tmp = closure_8(this, Mirror);
+      tmp = outer1_8(this, Mirror);
       map = new Map();
-      tmp3 = closure_17(this, "idNodeMap", map);
+      tmp3 = outer1_17(this, "idNodeMap", map);
       weakMap = new WeakMap();
-      tmp5 = closure_17(this, "nodeMetaMap", weakMap);
+      tmp5 = outer1_17(this, "nodeMetaMap", weakMap);
       return;
     }
   }
-  const require = Mirror;
   let obj = {
     key: "getId",
     value: function getId(arg0) {
@@ -6190,7 +6193,7 @@ const tmp3 = () => {
   items[4] = {
     key: "removeNodeFromMap",
     value: function removeNodeFromMap(childNodes) {
-      const Mirror = this;
+      const self = this;
       const idNodeMap = this.idNodeMap;
       idNodeMap.delete(this.getId(childNodes));
       if (childNodes.childNodes) {
@@ -6247,73 +6250,191 @@ const tmp3 = () => {
       this.nodeMetaMap = weakMap;
     }
   };
-  return callback5(Mirror, items);
-}();
-let closure_20 = "__rrweb_original__";
+  return _defineProperties(Mirror, items);
+})();
+const __rrweb_original__ = "__rrweb_original__";
 let closure_21 = {};
-let closure_24 = 1;
-const regExp = new RegExp("[^a-z0-9-_:]");
-let closure_26 = /url\((?:(')([^']*)'|(")(.*?)"|([^)]*))\)/gm;
-let closure_27 = /^(?:[a-z+]+:)?\/\//i;
-let closure_28 = /^www\..*/i;
-let closure_29 = /^(data:)([^,]*),(.*)/i;
-let closure_30 = /^[^ \t\n\r\u000c]+/;
-let closure_31 = /^[, \t\n\r\u000c]+/;
-const weakMap = new WeakMap();
-let closure_33 = "Please stop import mirror directly. Instead of that,\r\nnow you can use replayer.getMirror() to access the mirror instance of a replayer,\r\nor you can use record.mirror to access the mirror instance during recording.";
+let c24 = 1;
+let regExp = new RegExp("[^a-z0-9-_:]");
+const re26 = /url\((?:(')([^']*)'|(")(.*?)"|([^)]*))\)/gm;
+const re27 = /^(?:[a-z+]+:)?\/\//i;
+const re28 = /^www\..*/i;
+const re29 = /^(data:)([^,]*),(.*)/i;
+const re30 = /^[^ \t\n\r\u000c]+/;
+const re31 = /^[, \t\n\r\u000c]+/;
+let weakMap = new WeakMap();
+let c33 = "Please stop import mirror directly. Instead of that,\r\nnow you can use replayer.getMirror() to access the mirror instance of a replayer,\r\nor you can use record.mirror to access the mirror instance during recording.";
 let obj = {
   map: {},
   getId() {
-    console.error(closure_33);
+    console.error(c33);
     return -1;
   },
   getNode() {
-    console.error(closure_33);
+    console.error(c33);
     return null;
   },
   removeNodeFromMap() {
-    console.error(closure_33);
+    console.error(c33);
   },
   has() {
-    console.error(closure_33);
+    console.error(c33);
     return false;
   },
   reset() {
-    console.error(closure_33);
+    console.error(c33);
   }
 };
 let _Reflect = "undefined" !== typeof window;
 if (_Reflect) {
-  const _window = window;
+  let _window = window;
   _Reflect = window.Proxy;
 }
 if (_Reflect) {
-  const _window2 = window;
+  let _window2 = window;
   _Reflect = window.Reflect;
 }
 if (_Reflect) {
-  const _Proxy = Proxy;
+  let _Proxy = Proxy;
   obj = {
     get(arg0, arg1, arg2) {
         if ("map" === arg1) {
           const _console = console;
-          console.error(closure_33);
+          console.error(c33);
         }
         return Reflect.get(arg0, arg1, arg2);
       }
   };
-  const proxy = new Proxy(obj, obj);
+  let proxy = new Proxy(obj, obj);
 }
 let nowTimestamp = Date.now;
+let obj3 = /[1-9][0-9]{12}/;
+let tmp3 = (() => {
+  class Mirror {
+    constructor() {
+      tmp = outer1_8(this, Mirror);
+      map = new Map();
+      tmp3 = outer1_17(this, "idNodeMap", map);
+      weakMap = new WeakMap();
+      tmp5 = outer1_17(this, "nodeMetaMap", weakMap);
+      return;
+    }
+  }
+  let obj = {
+    key: "getId",
+    value: function getId(arg0) {
+      const self = this;
+      if (arg0) {
+        const meta = self.getMeta(arg0);
+        let id;
+        if (null != meta) {
+          id = meta.id;
+        }
+        let num2 = -1;
+        if (null != id) {
+          num2 = id;
+        }
+        return num2;
+      } else {
+        return -1;
+      }
+    }
+  };
+  const items = [obj, , , , , , , , , ];
+  obj = {
+    key: "getNode",
+    value: function getNode(arg0) {
+      const idNodeMap = this.idNodeMap;
+      return idNodeMap.get(arg0) || null;
+    }
+  };
+  items[1] = obj;
+  obj = {
+    key: "getIds",
+    value: function getIds() {
+      const idNodeMap = this.idNodeMap;
+      return Array.from(idNodeMap.keys());
+    }
+  };
+  items[2] = obj;
+  items[3] = {
+    key: "getMeta",
+    value: function getMeta(arg0) {
+      const nodeMetaMap = this.nodeMetaMap;
+      return nodeMetaMap.get(arg0) || null;
+    }
+  };
+  items[4] = {
+    key: "removeNodeFromMap",
+    value: function removeNodeFromMap(childNodes) {
+      const self = this;
+      const idNodeMap = this.idNodeMap;
+      idNodeMap.delete(this.getId(childNodes));
+      if (childNodes.childNodes) {
+        childNodes = childNodes.childNodes;
+        const item = childNodes.forEach((arg0) => self.removeNodeFromMap(arg0));
+      }
+    }
+  };
+  items[5] = {
+    key: "has",
+    value: function has(arg0) {
+      const idNodeMap = this.idNodeMap;
+      return idNodeMap.has(arg0);
+    }
+  };
+  items[6] = {
+    key: "hasNode",
+    value: function hasNode(arg0) {
+      const nodeMetaMap = this.nodeMetaMap;
+      return nodeMetaMap.has(arg0);
+    }
+  };
+  items[7] = {
+    key: "add",
+    value: function add(arg0, id) {
+      const idNodeMap = this.idNodeMap;
+      const result = idNodeMap.set(id.id, arg0);
+      const nodeMetaMap = this.nodeMetaMap;
+      const result1 = nodeMetaMap.set(arg0, id);
+    }
+  };
+  items[8] = {
+    key: "replace",
+    value: function replace(arg0, arg1) {
+      const self = this;
+      const node = this.getNode(arg0);
+      if (node) {
+        const nodeMetaMap = self.nodeMetaMap;
+        const value = nodeMetaMap.get(node);
+        if (value) {
+          const nodeMetaMap2 = self.nodeMetaMap;
+          const result = nodeMetaMap2.set(arg1, value);
+        }
+      }
+      const idNodeMap = self.idNodeMap;
+      const result1 = idNodeMap.set(arg0, arg1);
+    }
+  };
+  items[9] = {
+    key: "reset",
+    value: function reset() {
+      this.idNodeMap = new Map();
+      const weakMap = new WeakMap();
+      this.nodeMetaMap = weakMap;
+    }
+  };
+  return _defineProperties(Mirror, items);
+})();
 if (!obj3.test(str.toString())) {
   nowTimestamp = function nowTimestamp() {
     return new Date().getTime();
   };
 }
-let closure_35 = () => {
+let closure_35 = (() => {
   class StyleSheetMirror {
     constructor() {
-      tmp = closure_8(this, StyleSheetMirror);
+      tmp = outer1_8(this, StyleSheetMirror);
       this.id = 1;
       weakMap = new WeakMap();
       this.styleIDMap = weakMap;
@@ -6322,7 +6443,6 @@ let closure_35 = () => {
       return;
     }
   }
-  const require = StyleSheetMirror;
   let obj = {
     key: "getId",
     value: function getId(arg0) {
@@ -6384,13 +6504,12 @@ let closure_35 = () => {
   items[5] = {
     key: "generateId",
     value: function generateId() {
-      const tmp = +this.id;
-      this.id = tmp + 1;
-      return tmp;
+      this.id = +this.id + 1;
+      return +this.id;
     }
   };
-  return callback5(StyleSheetMirror, items);
-}();
+  return _defineProperties(StyleSheetMirror, items);
+})();
 let closure_36 = {};
 let closure_37 = { DomContentLoaded: 0, [0]: "DomContentLoaded", Load: 1, [1]: "Load", FullSnapshot: 2, [2]: "FullSnapshot", IncrementalSnapshot: 3, [3]: "IncrementalSnapshot", Meta: 4, [4]: "Meta", Custom: 5, [5]: "Custom", Plugin: 6, [6]: "Plugin" };
 obj = undefined;
@@ -6434,17 +6553,16 @@ obj[16] = "CustomElement";
 let closure_39 = { MouseUp: 0, [0]: "MouseUp", MouseDown: 1, [1]: "MouseDown", Click: 2, [2]: "Click", ContextMenu: 3, [3]: "ContextMenu", DblClick: 4, [4]: "DblClick", Focus: 5, [5]: "Focus", Blur: 6, [6]: "Blur", TouchStart: 7, [7]: "TouchStart", TouchMove_Departed: 8, [8]: "TouchMove_Departed", TouchEnd: 9, [9]: "TouchEnd", TouchCancel: 10, [10]: "TouchCancel" };
 let closure_40 = { Mouse: 0, [0]: "Mouse", Pen: 1, [1]: "Pen", Touch: 2, [2]: "Touch" };
 let closure_41 = { Play: 0, [0]: "Play", Pause: 1, [1]: "Pause", Seeked: 2, [2]: "Seeked", VolumeChange: 3, [3]: "VolumeChange", RateChange: 4, [4]: "RateChange" };
-let closure_43 = () => {
+let closure_43 = (() => {
   class DoubleLinkedList {
     constructor() {
-      tmp = closure_8(this, DoubleLinkedList);
+      tmp = outer1_8(this, DoubleLinkedList);
       this.length = 0;
       this.head = null;
       this.tail = null;
       return;
     }
   }
-  const require = DoubleLinkedList;
   let obj = {
     key: "get",
     value: function get(arg0) {
@@ -6479,10 +6597,10 @@ let closure_43 = () => {
     key: "addNode",
     value: function addNode(value) {
       const self = this;
-      const obj = { 1861837985: "mn", 152982247: "description", 760389771: "Array", value };
+      const obj = { value, previous: null, next: null };
       value.__ln = obj;
       if (value.previousSibling) {
-        if (callback2(value.previousSibling)) {
+        if (outer1_140(value.previousSibling)) {
           const next = value.previousSibling.__ln.next;
           obj.next = next;
           obj.previous = value.previousSibling.__ln;
@@ -6497,7 +6615,7 @@ let closure_43 = () => {
         self.length = self.length + 1;
       }
       if (value.nextSibling) {
-        if (callback2(value.nextSibling)) {
+        if (outer1_140(value.nextSibling)) {
           if (value.nextSibling.__ln.previous) {
             const previous = value.nextSibling.__ln.previous;
             obj.previous = previous;
@@ -6538,23 +6656,23 @@ let closure_43 = () => {
           }
         }
         if (__ln.__ln) {
-          delete r0.__ln;
+          delete tmp.__ln;
         }
         self.length = self.length - 1;
       }
     }
   };
   items[2] = obj;
-  return callback5(DoubleLinkedList, items);
-}();
+  return _defineProperties(DoubleLinkedList, items);
+})();
 function moveKey(arg0, arg1) {
   return "" + arg0 + "@" + arg1;
 }
-let closure_45 = () => {
+let closure_45 = (() => {
   class MutationBuffer {
     constructor() {
-      MutationBuffer = this;
-      tmp = closure_8(this, MutationBuffer);
+      self = this;
+      tmp = outer1_8(this, self);
       this.frozen = false;
       this.locked = false;
       this.texts = [];
@@ -6577,14 +6695,13 @@ let closure_45 = () => {
       this.emit = () => {
         let head;
         let length;
-        if (!self.frozen) {
-          if (!self.locked) {
-            const items = [];
-            const self = items;
+        if (!items.frozen) {
+          if (!items.locked) {
+            items = [];
             const _Set = Set;
             const set = new Set();
-            const prototype2 = ctor.prototype;
-            const arr2 = new ctor();
+            const prototype2 = outer2_43.prototype;
+            const arr2 = new outer2_43();
             function getNextId(value) {
               let id;
               let tmp = value;
@@ -6595,8 +6712,8 @@ let closure_45 = () => {
                 }
                 id = nextSibling;
                 if (nextSibling) {
-                  let tmp3 = closure_0;
-                  let mirror = closure_0.mirror;
+                  let tmp3 = items;
+                  let mirror = items.mirror;
                   id = mirror.getId(nextSibling);
                 }
                 tmp = nextSibling;
@@ -6604,13 +6721,13 @@ let closure_45 = () => {
               return id;
             }
             function pushAdd(value) {
-              const items = value;
+              let items = value;
               if (value.parentNode) {
-                if (callback4(value)) {
+                if (outer3_136(value)) {
                   const mirror = items.mirror;
                   const getId = mirror.getId;
-                  if (callback(value.parentNode)) {
-                    let id = getId(callback3(value));
+                  if (outer3_91(value.parentNode)) {
+                    let id = getId(outer3_134(value));
                   } else {
                     id = getId(value.parentNode);
                   }
@@ -6622,39 +6739,39 @@ let closure_45 = () => {
                       obj.skipChild = true;
                       obj.newlyAddedElement = true;
                       ({ inlineStylesheet: obj2.inlineStylesheet, maskInputOptions: obj2.maskInputOptions, maskAttributeFn: obj2.maskAttributeFn, maskTextFn: obj2.maskTextFn, maskInputFn: obj2.maskInputFn, slimDOMOptions: obj2.slimDOMOptions, dataURLOptions: obj2.dataURLOptions, recordCanvas: obj2.recordCanvas, inlineImages: obj2.inlineImages } = items);
-                      obj.onSerialize = function onSerialize(self) {
-                        let tmp = callback2(self, self.mirror);
+                      obj.onSerialize = function onSerialize(shadowRoot) {
+                        let tmp = outer4_131(shadowRoot, items.mirror);
                         if (tmp) {
-                          tmp = !callback(self, self.blockClass, self.blockSelector, self.unblockSelector, false);
+                          tmp = !outer4_127(shadowRoot, items.blockClass, items.blockSelector, items.unblockSelector, false);
                         }
                         if (tmp) {
-                          const iframeManager = self.iframeManager;
-                          iframeManager.addIframe(self);
+                          const iframeManager = items.iframeManager;
+                          iframeManager.addIframe(shadowRoot);
                         }
-                        if (callback3(self, self.mirror)) {
-                          const stylesheetManager = self.stylesheetManager;
-                          stylesheetManager.trackLinkElement(self);
+                        if (outer4_132(shadowRoot, items.mirror)) {
+                          const stylesheetManager = items.stylesheetManager;
+                          stylesheetManager.trackLinkElement(shadowRoot);
                         }
-                        if (callback4(self)) {
-                          const shadowDomManager = self.shadowDomManager;
-                          shadowDomManager.addShadowRoot(self.shadowRoot, self.doc);
+                        if (outer4_133(value)) {
+                          const shadowDomManager = items.shadowDomManager;
+                          shadowDomManager.addShadowRoot(value.shadowRoot, items.doc);
                         }
                       };
                       obj.onIframeLoad = function onIframeLoad(contentWindow) {
-                        if (!callback(contentWindow, contentWindow.blockClass, contentWindow.blockSelector, contentWindow.unblockSelector, false)) {
-                          const iframeManager = contentWindow.iframeManager;
+                        if (!outer4_127(contentWindow, items.blockClass, items.blockSelector, items.unblockSelector, false)) {
+                          const iframeManager = items.iframeManager;
                           iframeManager.attachIframe(contentWindow, arg1);
                           if (contentWindow.contentWindow) {
-                            const canvasManager = contentWindow.canvasManager;
+                            const canvasManager = items.canvasManager;
                             canvasManager.addWindow(contentWindow.contentWindow);
                           }
-                          const shadowDomManager = contentWindow.shadowDomManager;
+                          const shadowDomManager = items.shadowDomManager;
                           shadowDomManager.observeAttachShadow(contentWindow);
                         }
                       };
-                      obj.onStylesheetLoad = function onStylesheetLoad(self, attributes) {
-                        const stylesheetManager = self.stylesheetManager;
-                        stylesheetManager.attachLinkElement(self, attributes);
+                      obj.onStylesheetLoad = function onStylesheetLoad(shadowRoot, attributes) {
+                        const stylesheetManager = items.stylesheetManager;
+                        stylesheetManager.attachLinkElement(shadowRoot, attributes);
                       };
                       obj.onBlockedImageLoad = function onBlockedImageLoad(arg0, id, width) {
                         let obj = { adds: [], removes: [], texts: [] };
@@ -6663,10 +6780,10 @@ let closure_45 = () => {
                         obj.attributes = obj;
                         const items = [obj];
                         obj.attributes = items;
-                        arg0.mutationCb(obj);
+                        items.mutationCb(obj);
                       };
                       obj.ignoreCSSAttributes = items.ignoreCSSAttributes;
-                      const tmp15 = callback2(value, obj);
+                      const tmp15 = outer3_118(value, obj);
                       if (tmp15) {
                         obj = { parentId: id, nextId: tmp7, node: tmp15 };
                         items.push(obj);
@@ -6678,25 +6795,25 @@ let closure_45 = () => {
                 }
               }
             }
-            if (self.mapRemoves.length) {
+            if (items.mapRemoves.length) {
               do {
-                let tmp12 = closure_0;
-                let mirror = closure_0.mirror;
-                let mapRemoves = closure_0.mapRemoves;
+                let tmp12 = items;
+                let mirror = items.mirror;
+                let mapRemoves = items.mapRemoves;
                 let removeNodeFromMapResult = mirror.removeNodeFromMap(mapRemoves.shift());
-                length = closure_0.mapRemoves.length;
+                length = items.mapRemoves.length;
               } while (length);
             }
-            const movedSet = self.movedSet;
+            const movedSet = items.movedSet;
             for (const item10040 of movedSet) {
               let tmp16 = item10040;
-              let tmp17 = closure_142;
-              let tmp18 = closure_0;
-              let tmp19 = closure_142(closure_0.removes, item10040, closure_0.mirror);
+              let tmp17 = outer2_142;
+              let tmp18 = items;
+              let tmp19 = outer2_142(items.removes, item10040, items.mirror);
               let tmp20 = tmp19;
               if (tmp19) {
-                let tmp21 = closure_0;
-                let movedSet2 = closure_0.movedSet;
+                let tmp21 = items;
+                let movedSet2 = items.movedSet;
                 let tmp22 = item10040;
                 tmp20 = !movedSet2.has(tmp16.parentNode);
               }
@@ -6705,33 +6822,34 @@ let closure_45 = () => {
                 let tmp24 = item10040;
                 let pushAddResult = pushAdd(tmp16);
               }
+              continue;
             }
-            const addedSet = self.addedSet;
+            const addedSet = items.addedSet;
             for (const item10063 of addedSet) {
               let tmp91 = item10063;
-              let tmp92 = closure_143;
-              let tmp93 = closure_0;
-              if (!closure_143(closure_0.droppedSet, item10063)) {
-                let tmp28 = closure_142;
-                let tmp29 = closure_0;
+              let tmp92 = outer2_143;
+              let tmp93 = items;
+              if (!outer2_143(items.droppedSet, item10063)) {
+                let tmp28 = outer2_142;
+                let tmp29 = items;
                 let tmp30 = item10063;
-                if (!closure_142(closure_0.removes, tmp91, closure_0.mirror)) {
+                if (!outer2_142(items.removes, tmp91, items.mirror)) {
                   let tmp31 = pushAdd;
                   let tmp32 = item10063;
                   let pushAddResult1 = pushAdd(tmp91);
                 }
-                // continue
+                continue;
               }
-              let tmp34 = closure_143;
-              let tmp35 = closure_0;
+              let tmp34 = outer2_143;
+              let tmp35 = items;
               let tmp36 = item10063;
-              if (closure_143(closure_0.movedSet, tmp91)) {
+              if (outer2_143(items.movedSet, tmp91)) {
                 let tmp40 = pushAdd;
                 let tmp41 = item10063;
                 let pushAddResult2 = pushAdd(tmp91);
               } else {
-                let tmp37 = closure_0;
-                let droppedSet = closure_0.droppedSet;
+                let tmp37 = items;
+                let droppedSet = items.droppedSet;
                 let tmp38 = item10063;
                 let addResult = droppedSet.add(tmp91);
               }
@@ -6741,8 +6859,8 @@ let closure_45 = () => {
               while (true) {
                 let tmp47 = null;
                 if (previous) {
-                  let tmp48 = self;
-                  let mirror2 = self.mirror;
+                  let tmp48 = items;
+                  let mirror2 = items.mirror;
                   let id = mirror2.getId(previous.value.parentNode);
                   let nextId = getNextId(previous.value);
                   let tmp51 = -1 !== id && -1 !== nextId;
@@ -6772,8 +6890,8 @@ let closure_45 = () => {
                       let tmp61 = tmp58;
                       let tmp60 = iter2;
                       if (iter2) {
-                        let tmp62 = self;
-                        let mirror3 = self.mirror;
+                        let tmp62 = items;
+                        let mirror3 = items.mirror;
                         let id1 = mirror3.getId(iter2.value.parentNode);
                         tmp57 = id1;
                         tmp61 = tmp58;
@@ -6793,8 +6911,8 @@ let closure_45 = () => {
                               tmp57 = id1;
                               tmp61 = value;
                               if (value.parentNode.nodeType === globalThis.Node.DOCUMENT_FRAGMENT_NODE) {
-                                let tmp64 = self;
-                                let mirror4 = self.mirror;
+                                let tmp64 = items;
+                                let mirror4 = items.mirror;
                                 tmp57 = id1;
                                 tmp61 = value;
                                 iter = iter2;
@@ -6832,9 +6950,9 @@ let closure_45 = () => {
                   let removeNodeResult = arr2.removeNode(iter.value);
                   let tmp69 = pushAdd;
                   let pushAddResult3 = pushAdd(iter.value);
-                  let tmp44 = tmp54;
-                  let tmp45 = tmp55;
-                  let tmp46 = tmp56;
+                  tmp44 = tmp54;
+                  tmp45 = tmp55;
+                  tmp46 = tmp56;
                 }
               }
               if (arr2.head) {
@@ -6844,8 +6962,8 @@ let closure_45 = () => {
                 } while (head);
               }
             }
-            const obj = {};
-            const texts = self.texts;
+            let obj = {};
+            const texts = items.texts;
             const mapped = texts.map((node) => {
               const mirror = items.mirror;
               return { id: mirror.getId(node.node), value: node.value };
@@ -6855,7 +6973,7 @@ let closure_45 = () => {
               const mirror = items.mirror;
               return mirror.has(id.id);
             });
-            const attributes = self.attributes;
+            let attributes = items.attributes;
             const mapped1 = attributes.map((attributes) => {
               attributes = attributes.attributes;
               if ("string" === typeof attributes.style) {
@@ -6880,47 +6998,47 @@ let closure_45 = () => {
               const mirror = items.mirror;
               return mirror.has(id.id);
             });
-            obj.removes = self.removes;
+            obj.removes = items.removes;
             obj.adds = items;
             if (tmp72) {
-              self.texts = [];
-              self.attributes = [];
+              items.texts = [];
+              items.attributes = [];
               const _WeakMap = WeakMap;
               const weakMap = new WeakMap();
-              self.attributeMap = weakMap;
-              self.removes = [];
+              items.attributeMap = weakMap;
+              items.removes = [];
               const _Set2 = Set;
               const set1 = new Set();
-              self.addedSet = set1;
+              items.addedSet = set1;
               const _Set3 = Set;
               const set2 = new Set();
-              self.movedSet = set2;
+              items.movedSet = set2;
               const _Set4 = Set;
               const set3 = new Set();
-              self.droppedSet = set3;
-              self.movedMap = {};
-              self.mutationCb(obj);
+              items.droppedSet = set3;
+              items.movedMap = {};
+              items.mutationCb(obj);
             }
-            const tmp72 = obj.texts.length || obj.attributes.length || obj.removes.length || obj.adds.length;
+            tmp72 = obj.texts.length || obj.attributes.length || obj.removes.length || obj.adds.length;
           }
         }
       };
       this.processMutation = (target) => {
         let attributeName;
         let target2;
-        const self = target;
-        if (!callback12(target.target, self.mirror)) {
+        const _self = target;
+        if (!outer2_128(target.target, _self.mirror)) {
           const type = target.type;
           if ("characterData" === type) {
             if (!tmp58) {
-              const texts = self.texts;
+              const texts = _self.texts;
               let obj = {};
               let tmp61 = str15;
-              if (callback9(target.target, self.maskTextClass, self.maskTextSelector, self.unmaskTextClass, self.unmaskTextSelector, self.maskAllText)) {
+              if (outer2_115(target.target, _self.maskTextClass, _self.maskTextSelector, _self.unmaskTextClass, _self.unmaskTextSelector, _self.maskAllText)) {
                 tmp61 = str15;
                 if (str15) {
-                  if (self.maskTextFn) {
-                    let maskTextFnResult = self.maskTextFn(str15, callback10(target.target));
+                  if (_self.maskTextFn) {
+                    let maskTextFnResult = _self.maskTextFn(str15, outer2_126(target.target));
                   } else {
                     maskTextFnResult = str15.replace(/[\S]/g, "*");
                   }
@@ -6930,28 +7048,28 @@ let closure_45 = () => {
               obj.node = target.target;
               texts.push(obj);
             }
-            const tmp58 = callback11(target.target, self.blockClass, self.blockSelector, self.unblockSelector, false) || target.target.textContent === target.oldValue;
+            tmp58 = outer2_127(target.target, _self.blockClass, _self.blockSelector, _self.unblockSelector, false) || target.target.textContent === target.oldValue;
           } else if ("attributes" === type) {
             ({ target, attributeName, target: target2 } = target);
             let attr = target2.getAttribute(attributeName);
             if ("value" === attributeName) {
-              const tmp72 = callback5(target);
+              const tmp72 = outer2_99(target);
               const tagName = target.tagName;
-              obj = { maskInputOptions: self.maskInputOptions, tagName, type: tmp72 };
-              const obj1 = { isMasked: callback9(target.target, self.maskTextClass, self.maskTextSelector, self.unmaskTextClass, self.unmaskTextSelector, callback2(obj)), element: target, value: callback6(target, tagName, tmp72), maskInputFn: self.maskInputFn };
-              attr = callback3(obj1);
-              const tmp74 = callback6(target, tagName, tmp72);
+              obj = { maskInputOptions: _self.maskInputOptions, tagName, type: tmp72 };
+              const obj1 = { isMasked: outer2_115(target.target, _self.maskTextClass, _self.maskTextSelector, _self.unmaskTextClass, _self.unmaskTextSelector, outer2_95(obj)), element: target, value: outer2_100(target, tagName, tmp72), maskInputFn: _self.maskInputFn };
+              attr = outer2_96(obj1);
+              const tmp74 = outer2_100(target, tagName, tmp72);
             }
-            if (!callback11(target.target, self.blockClass, self.blockSelector, self.unblockSelector, false)) {
+            if (!outer2_127(target.target, _self.blockClass, _self.blockSelector, _self.unblockSelector, false)) {
               if (attr !== target.oldValue) {
-                const attributeMap2 = self.attributeMap;
+                const attributeMap2 = _self.attributeMap;
                 let value = attributeMap2.get(target.target);
                 let str5 = attributeName;
                 if ("IFRAME" === target.tagName) {
                   str5 = attributeName;
                   if ("src" === attributeName) {
                     str5 = attributeName;
-                    if (!self.keepIframeSrcFn(attr)) {
+                    if (!_self.keepIframeSrcFn(attr)) {
                       str5 = "rr_src";
                     }
                   }
@@ -6959,9 +7077,9 @@ let closure_45 = () => {
                 if (!value) {
                   obj = { node: target.target, attributes: {}, styleDiff: {}, _unchangedStyles: {} };
                   value = obj;
-                  const attributes = self.attributes;
+                  const attributes = _self.attributes;
                   attributes.push(obj);
-                  const attributeMap = self.attributeMap;
+                  const attributeMap = _self.attributeMap;
                   const result = attributeMap.set(target.target, obj);
                 }
                 let tmp14 = "type" === str5;
@@ -6975,17 +7093,17 @@ let closure_45 = () => {
                 if (tmp14) {
                   const attr1 = target.setAttribute("data-rr-is-password", "true");
                 }
-                if (!callback8(target.tagName, str5)) {
-                  const doc = self.doc;
-                  value.attributes[str5] = callback7(doc, callback4(target.tagName), callback4(str5), attr, target, self.maskAttributeFn);
+                if (!outer2_112(target.tagName, str5)) {
+                  const doc = _self.doc;
+                  value.attributes[str5] = outer2_111(doc, outer2_97(target.tagName), outer2_97(str5), attr, target, _self.maskAttributeFn);
                   if ("style" === str5) {
-                    if (!self.unattachedDoc) {
+                    if (!_self.unattachedDoc) {
                       const _document = document;
-                      self.unattachedDoc = implementation.createHTMLDocument();
+                      _self.unattachedDoc = implementation.createHTMLDocument();
                     }
                     while (true) {
-                      let tmp31 = self;
-                      let unattachedDoc = self.unattachedDoc;
+                      let tmp31 = _self;
+                      let unattachedDoc = _self.unattachedDoc;
                       let str13 = "span";
                       let element = <span />;
                       if (!target.oldValue) {
@@ -6993,7 +7111,7 @@ let closure_45 = () => {
                       } else {
                         let tmp32 = element;
                         let attr2 = element.setAttribute("style", target.oldValue);
-                        // break
+                        break;
                       }
                       let tmp34 = globalThis;
                       let _Array = Array;
@@ -7027,7 +7145,7 @@ let closure_45 = () => {
                             let tmp46 = propertyPriority;
                             items[1] = propertyPriority;
                             value._unchangedStyles[tmp82] = items;
-                            // continue
+                            continue;
                           }
                         }
                         let tmp47 = value;
@@ -7055,70 +7173,71 @@ let closure_45 = () => {
                           let tmp55 = item10156;
                           value.styleDiff[tmp88] = false;
                         }
+                        continue;
                       }
                     }
                   }
-                  const tmp25 = callback4(target.tagName);
+                  const tmp25 = outer2_97(target.tagName);
                 }
               }
             }
           } else if ("childList" === type) {
-            if (!callback11(target.target, self.blockClass, self.blockSelector, self.unblockSelector, true)) {
+            if (!outer2_127(target.target, _self.blockClass, _self.blockSelector, _self.unblockSelector, true)) {
               const addedNodes = target.addedNodes;
-              const item = addedNodes.forEach((self) => self.genAdds(self, self.target));
+              const item = addedNodes.forEach((arg0) => target.genAdds(arg0, target.target));
               const removedNodes = target.removedNodes;
-              const item1 = removedNodes.forEach((self) => {
-                const mirror = self.mirror;
-                const id = mirror.getId(self);
-                const mirror2 = self.mirror;
+              const item1 = removedNodes.forEach((arg0) => {
+                const mirror = target.mirror;
+                const id = mirror.getId(arg0);
+                const mirror2 = target.mirror;
                 const getId = mirror2.getId;
-                const target = self.target;
-                if (callback(self.target)) {
+                target = target.target;
+                if (outer3_91(target.target)) {
                   let id1 = getId(target.host);
                 } else {
                   id1 = getId(target);
                 }
-                let tmp3 = callback3(self.target, self.blockClass, self.blockSelector, self.unblockSelector, false);
+                let tmp3 = outer3_127(target.target, target.blockClass, target.blockSelector, target.unblockSelector, false);
                 if (!tmp3) {
-                  tmp3 = callback4(self, self.mirror);
+                  tmp3 = outer3_128(arg0, target.mirror);
                 }
                 if (!tmp3) {
-                  const mirror3 = self.mirror;
-                  tmp3 = -1 === mirror3.getId(self);
+                  const mirror3 = target.mirror;
+                  tmp3 = -1 === mirror3.getId(arg0);
                 }
                 if (!tmp3) {
-                  const addedSet = self.addedSet;
-                  if (addedSet.has(self)) {
-                    callback6(self.addedSet, self);
-                    const droppedSet = self.droppedSet;
-                    droppedSet.add(self);
+                  const addedSet = target.addedSet;
+                  if (addedSet.has(arg0)) {
+                    outer3_141(target.addedSet, arg0);
+                    const droppedSet = target.droppedSet;
+                    droppedSet.add(arg0);
                   } else {
-                    const addedSet2 = self.addedSet;
-                    let hasItem = addedSet2.has(self.target);
+                    const addedSet2 = target.addedSet;
+                    let hasItem = addedSet2.has(target.target);
                     if (hasItem) {
                       hasItem = -1 === id;
                     }
                     if (!hasItem) {
-                      hasItem = callback5(self.target, self.mirror);
+                      hasItem = outer3_129(target.target, target.mirror);
                     }
                     if (!hasItem) {
-                      const movedSet = self.movedSet;
-                      if (!movedSet.has(self)) {
-                        const removes = self.removes;
+                      const movedSet = target.movedSet;
+                      if (!movedSet.has(arg0)) {
+                        const removes = target.removes;
                         const obj = { parentId: id1, id };
-                        let tmp20 = !callback(self.target);
+                        let tmp20 = !outer3_91(target.target);
                         if (!tmp20) {
-                          tmp20 = !callback2(self.target);
+                          tmp20 = !outer3_92(target.target);
                         }
                         obj.isShadow = !tmp20;
                         removes.push(obj);
                         const tmp23 = !tmp20;
                       }
                     }
-                    callback6(self.movedSet, self);
+                    outer3_141(target.movedSet, arg0);
                   }
-                  const mapRemoves = self.mapRemoves;
-                  mapRemoves.push(self);
+                  const mapRemoves = target.mapRemoves;
+                  mapRemoves.push(arg0);
                 }
               });
             }
@@ -7128,26 +7247,26 @@ let closure_45 = () => {
       this.genAdds = (childNodes) => {
         let mirror4;
         let movedMap;
-        const self = childNodes;
-        const processedNodeManager = self.processedNodeManager;
-        if (!processedNodeManager.inOtherBuffer(childNodes, self)) {
-          const addedSet = self.addedSet;
+        const _self = childNodes;
+        let processedNodeManager = _self.processedNodeManager;
+        if (!processedNodeManager.inOtherBuffer(childNodes, _self)) {
+          const addedSet = _self.addedSet;
           if (!addedSet.has(childNodes)) {
-            const movedSet = self.movedSet;
+            const movedSet = _self.movedSet;
             if (!movedSet.has(childNodes)) {
-              const mirror = self.mirror;
+              const mirror = _self.mirror;
               if (mirror.hasNode(childNodes)) {
-                if (!callback12(childNodes, self.mirror)) {
-                  const movedSet2 = self.movedSet;
+                if (!outer2_128(childNodes, _self.mirror)) {
+                  const movedSet2 = _self.movedSet;
                   movedSet2.add(childNodes);
                   let hasNodeResult = arg1;
                   if (arg1) {
-                    const mirror2 = self.mirror;
+                    const mirror2 = _self.mirror;
                     hasNodeResult = mirror2.hasNode(arg1);
                   }
                   let id = null;
                   if (hasNodeResult) {
-                    const mirror3 = self.mirror;
+                    const mirror3 = _self.mirror;
                     id = mirror3.getId(arg1);
                   }
                   let tmp15 = id;
@@ -7155,27 +7274,27 @@ let closure_45 = () => {
                     tmp15 = -1 !== id;
                   }
                   if (tmp15) {
-                    ({ mirror: mirror4, movedMap } = self);
-                    movedMap[callback(mirror4.getId(childNodes), id)] = true;
+                    ({ mirror: mirror4, movedMap } = _self);
+                    movedMap[outer2_44(mirror4.getId(childNodes), id)] = true;
                   }
                 }
               } else {
-                const addedSet2 = self.addedSet;
+                const addedSet2 = _self.addedSet;
                 addedSet2.add(childNodes);
-                const droppedSet = self.droppedSet;
+                const droppedSet = _self.droppedSet;
                 droppedSet.delete(childNodes);
               }
-              if (!callback11(childNodes, self.blockClass, self.blockSelector, self.unblockSelector, false)) {
+              if (!outer2_127(childNodes, _self.blockClass, _self.blockSelector, _self.unblockSelector, false)) {
                 if (childNodes.childNodes) {
                   childNodes = childNodes.childNodes;
-                  const item = childNodes.forEach((arg0) => arg0.genAdds(arg0));
+                  const item = childNodes.forEach((arg0) => childNodes.genAdds(arg0));
                 }
-                if (callback13(childNodes)) {
+                if (outer2_133(childNodes)) {
                   const childNodes1 = childNodes.shadowRoot.childNodes;
-                  const item1 = childNodes1.forEach((self) => {
-                    const processedNodeManager = self.processedNodeManager;
-                    processedNodeManager.add(self, self);
-                    self.genAdds(self, self);
+                  const item1 = childNodes1.forEach((arg0) => {
+                    const processedNodeManager = childNodes.processedNodeManager;
+                    processedNodeManager.add(arg0, childNodes);
+                    childNodes.genAdds(arg0, childNodes);
                   });
                 }
               }
@@ -7186,19 +7305,18 @@ let closure_45 = () => {
       return;
     }
   }
-  const require = MutationBuffer;
   let obj = {
     key: "init",
     value: function init(arg0) {
-      const MutationBuffer = arg0;
+      let closure_0 = arg0;
       const self = this;
-      const items = [];
+      const items = ["mutationCb", "blockClass", "blockSelector", "unblockSelector", "maskAllText", "maskTextClass", "unmaskTextClass", "maskTextSelector", "unmaskTextSelector", "inlineStylesheet", "maskInputOptions", "maskAttributeFn", "maskTextFn", "maskInputFn", "keepIframeSrcFn", "recordCanvas", "inlineImages", "slimDOMOptions", "dataURLOptions", "doc", "mirror", "iframeManager", "stylesheetManager", "shadowDomManager", "canvasManager", "processedNodeManager", "ignoreCSSAttributes"];
       const item = items.forEach((arg0) => {
-        self[arg0] = arg0[arg0];
+        self[arg0] = table[arg0];
       });
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "freeze",
     value: function freeze() {
@@ -7250,21 +7368,21 @@ let closure_45 = () => {
       canvasManager.reset();
     }
   };
-  return callback5(MutationBuffer, items);
-}();
+  return _defineProperties(MutationBuffer, items);
+})();
 function callbackWrapper(arg0) {
-  const require = arg0;
-  return closure_42 ? function rrwebWrapped() {
-    return arg0(...arguments);
-  } : arg0;
+  let closure_0 = arg0;
+  return closure_42 ? (function rrwebWrapped() {
+    return callback(...arguments);
+  }) : arg0;
 }
 let closure_47 = [];
-let closure_48 = ["style", "icon", "skuId"];
-const weakMap1 = new WeakMap();
-let closure_50 = () => {
+let closure_48 = ["INPUT", "TEXTAREA", "SELECT"];
+let weakMap1 = new WeakMap();
+let closure_50 = (() => {
   class CrossOriginIframeMirror {
     constructor(arg0) {
-      tmp = closure_8(this, CrossOriginIframeMirror);
+      tmp = outer1_8(this, CrossOriginIframeMirror);
       this.generateIdFn = arg0;
       weakMap = new WeakMap();
       this.iframeIdToRemoteIdMap = weakMap;
@@ -7273,18 +7391,17 @@ let closure_50 = () => {
       return;
     }
   }
-  const require = CrossOriginIframeMirror;
   let obj = {
     key: "getId",
-    value: function getId(arg0, arg1, arg2, arg3) {
+    value: function getId(closure_0) {
       let idToRemoteIdMap = arg2;
       let remoteIdToIdMap = arg3;
       const self = this;
       if (!arg2) {
-        idToRemoteIdMap = self.getIdToRemoteIdMap(arg0);
+        idToRemoteIdMap = self.getIdToRemoteIdMap(closure_0);
       }
       if (!remoteIdToIdMap) {
-        remoteIdToIdMap = self.getRemoteIdToIdMap(arg0);
+        remoteIdToIdMap = self.getRemoteIdToIdMap(closure_0);
       }
       let value = idToRemoteIdMap.get(arg1);
       if (!value) {
@@ -7299,22 +7416,21 @@ let closure_50 = () => {
   const items = [obj, , , , , , ];
   obj = {
     key: "getIds",
-    value: function getIds(arg0, arr) {
-      const CrossOriginIframeMirror = arg0;
+    value: function getIds(closure_0, arr) {
       const self = this;
-      const idToRemoteIdMap = this.getIdToRemoteIdMap(arg0);
-      const remoteIdToIdMap = this.getRemoteIdToIdMap(arg0);
-      return arr.map((arg0) => self.getId(arg0, arg0, closure_2, closure_3));
+      const idToRemoteIdMap = this.getIdToRemoteIdMap(closure_0);
+      const remoteIdToIdMap = this.getRemoteIdToIdMap(closure_0);
+      return arr.map((arg0) => self.getId(closure_0, arg0, closure_2, closure_3));
     }
   };
   items[1] = obj;
   obj = {
     key: "getRemoteId",
-    value: function getRemoteId(arg0, arg1, closure_2) {
+    value: function getRemoteId(closure_0, arg1, closure_2) {
       let remoteIdToIdMap = closure_2;
       const self = this;
       if (!closure_2) {
-        remoteIdToIdMap = self.getRemoteIdToIdMap(arg0);
+        remoteIdToIdMap = self.getRemoteIdToIdMap(closure_0);
       }
       if ("number" !== typeof arg1) {
         return arg1;
@@ -7326,11 +7442,10 @@ let closure_50 = () => {
   items[2] = obj;
   items[3] = {
     key: "getRemoteIds",
-    value: function getRemoteIds(arg0, arr) {
-      const CrossOriginIframeMirror = arg0;
+    value: function getRemoteIds(closure_0, arr) {
       const self = this;
-      const remoteIdToIdMap = this.getRemoteIdToIdMap(arg0);
-      return arr.map((arg0) => self.getRemoteId(arg0, arg0, closure_2));
+      const remoteIdToIdMap = this.getRemoteIdToIdMap(closure_0);
+      return arr.map((arg0) => self.getRemoteId(closure_0, arg0, closure_2));
     }
   };
   items[4] = {
@@ -7354,14 +7469,14 @@ let closure_50 = () => {
   };
   items[5] = {
     key: "getIdToRemoteIdMap",
-    value: function getIdToRemoteIdMap(arg0) {
+    value: function getIdToRemoteIdMap(closure_0) {
       const iframeIdToRemoteIdMap = this.iframeIdToRemoteIdMap;
-      let value = iframeIdToRemoteIdMap.get(arg0);
+      let value = iframeIdToRemoteIdMap.get(closure_0);
       if (!value) {
         const _Map = Map;
         const map = new Map();
         const iframeIdToRemoteIdMap2 = this.iframeIdToRemoteIdMap;
-        const result = iframeIdToRemoteIdMap2.set(arg0, map);
+        const result = iframeIdToRemoteIdMap2.set(closure_0, map);
         value = map;
       }
       return value;
@@ -7369,33 +7484,32 @@ let closure_50 = () => {
   };
   items[6] = {
     key: "getRemoteIdToIdMap",
-    value: function getRemoteIdToIdMap(arg0) {
+    value: function getRemoteIdToIdMap(closure_0) {
       const iframeRemoteIdToIdMap = this.iframeRemoteIdToIdMap;
-      let value = iframeRemoteIdToIdMap.get(arg0);
+      let value = iframeRemoteIdToIdMap.get(closure_0);
       if (!value) {
         const _Map = Map;
         const map = new Map();
         const iframeRemoteIdToIdMap2 = this.iframeRemoteIdToIdMap;
-        const result = iframeRemoteIdToIdMap2.set(arg0, map);
+        const result = iframeRemoteIdToIdMap2.set(closure_0, map);
         value = map;
       }
       return value;
     }
   };
-  return callback5(CrossOriginIframeMirror, items);
-}();
-let closure_51 = () => {
+  return _defineProperties(CrossOriginIframeMirror, items);
+})();
+let closure_51 = (() => {
   class IframeManagerNoop {
     constructor() {
-      tmp = closure_8(this, IframeManagerNoop);
-      tmp2 = new closure_50(closure_106);
+      tmp = outer1_8(this, IframeManagerNoop);
+      tmp2 = new outer1_50(outer1_106);
       this.crossOriginIframeMirror = tmp2;
       weakMap = new WeakMap();
       this.crossOriginIframeRootIdMap = weakMap;
       return;
     }
   }
-  const require = IframeManagerNoop;
   let obj = {
     key: "addIframe",
     value: function addIframe() {
@@ -7417,24 +7531,24 @@ let closure_51 = () => {
     }
   };
   items[2] = obj;
-  return callback5(IframeManagerNoop, items);
-}();
-let closure_52 = () => {
+  return _defineProperties(IframeManagerNoop, items);
+})();
+let closure_52 = (() => {
   class IframeManager {
     constructor(arg0) {
       self = this;
-      tmp = closure_8(this, IframeManager);
+      tmp = outer1_8(this, IframeManager);
       weakMap = new WeakMap();
       this.iframes = weakMap;
       weakMap1 = new WeakMap();
       this.crossOriginIframeMap = weakMap1;
-      tmp4 = new closure_50(closure_106);
+      tmp4 = new outer1_50(outer1_106);
       this.crossOriginIframeMirror = tmp4;
       weakMap2 = new WeakMap();
       this.crossOriginIframeRootIdMap = weakMap2;
       ({ mutationCb: this.mutationCb, wrappedEmit: this.wrappedEmit, stylesheetManager: this.stylesheetManager, recordCrossOriginIframes: this.recordCrossOriginIframes } = arg0);
       generateId = this.stylesheetManager.styleMirror.generateId;
-      tmp6 = new closure_50(generateId.bind(this.stylesheetManager.styleMirror));
+      tmp6 = new outer1_50(generateId.bind(this.stylesheetManager.styleMirror));
       this.crossOriginIframeStyleMirror = tmp6;
       this.mirror = arg0.mirror;
       if (this.recordCrossOriginIframes) {
@@ -7446,7 +7560,6 @@ let closure_52 = () => {
       return;
     }
   }
-  const require = IframeManager;
   let obj = {
     key: "addIframe",
     value: function addIframe(contentWindow) {
@@ -7458,7 +7571,7 @@ let closure_52 = () => {
       }
     }
   };
-  const items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , ];
   obj = {
     key: "addLoadListener",
     value: function addLoadListener(loadListener) {
@@ -7495,7 +7608,7 @@ let closure_52 = () => {
       if (null != loadListener) {
         loadListener.call(self, contentWindow);
       }
-      const tmp4 = callback2(contentWindow);
+      const tmp4 = outer1_139(contentWindow);
       let adoptedStyleSheets = tmp4;
       if (tmp4) {
         adoptedStyleSheets = tmp4.adoptedStyleSheets;
@@ -7534,21 +7647,21 @@ let closure_52 = () => {
     key: "transformCrossOriginEvent",
     value: function transformCrossOriginEvent(value, event) {
       let self = this;
-      const IframeManager = value;
+      let closure_0 = value;
       self = this;
       const type = event.type;
-      if (closure_37.FullSnapshot === type) {
+      if (outer1_37.FullSnapshot === type) {
         const crossOriginIframeMirror = self.crossOriginIframeMirror;
         crossOriginIframeMirror.reset(value);
         const crossOriginIframeStyleMirror = self.crossOriginIframeStyleMirror;
         crossOriginIframeStyleMirror.reset(value);
         self.replaceIdOnNode(event.data.node, value);
         const id = event.data.node.id;
-        const crossOriginIframeRootIdMap = self.crossOriginIframeRootIdMap;
+        let crossOriginIframeRootIdMap = self.crossOriginIframeRootIdMap;
         const result = crossOriginIframeRootIdMap.set(value, id);
         self.patchRootIdOnNode(event.data.node, id);
-        let obj = { timestamp: event.timestamp, type: closure_37.IncrementalSnapshot };
-        obj = { source: closure_38.Mutation };
+        let obj = { timestamp: event.timestamp, type: outer1_37.IncrementalSnapshot };
+        obj = { source: outer1_38.Mutation };
         obj = {};
         const mirror = self.mirror;
         obj.parentId = mirror.getId(value);
@@ -7563,85 +7676,85 @@ let closure_52 = () => {
         obj.data = obj;
         return obj;
       } else {
-        if (closure_37.Meta !== type) {
-          if (closure_37.Load !== type) {
-            if (closure_37.DomContentLoaded !== type) {
-              if (closure_37.Plugin === type) {
+        if (outer1_37.Meta !== type) {
+          if (outer1_37.Load !== type) {
+            if (outer1_37.DomContentLoaded !== type) {
+              if (outer1_37.Plugin === type) {
                 return event;
-              } else if (closure_37.Custom === type) {
-                self.replaceIds(event.data.payload, value, []);
+              } else if (outer1_37.Custom === type) {
+                self.replaceIds(event.data.payload, value, ["id", "parentId", "previousId", "nextId"]);
                 return event;
               } else {
-                if (closure_37.IncrementalSnapshot === type) {
+                if (outer1_37.IncrementalSnapshot === type) {
                   const source = event.data.source;
-                  if (closure_38.Mutation === source) {
+                  if (outer1_38.Mutation === source) {
                     const adds = event.data.adds;
                     const item = adds.forEach((node) => {
-                      self.replaceIds(node, node, [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007737269271489163, 1001891734430195000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 986302999559297500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]);
-                      self.replaceIdOnNode(node.node, node);
+                      self.replaceIds(node, closure_0, ["parentId", "nextId", "previousId"]);
+                      self.replaceIdOnNode(node.node, closure_0);
                       const crossOriginIframeRootIdMap = self.crossOriginIframeRootIdMap;
-                      const value = crossOriginIframeRootIdMap.get(node);
+                      const value = crossOriginIframeRootIdMap.get(closure_0);
                       if (value) {
                         self.patchRootIdOnNode(node.node, value);
                       }
                     });
                     const removes = event.data.removes;
                     const item1 = removes.forEach((data) => {
-                      self.replaceIds(data, data, [null, null]);
+                      self.replaceIds(data, closure_0, ["parentId", "id"]);
                     });
                     const attributes = event.data.attributes;
                     const item2 = attributes.forEach((data) => {
-                      self.replaceIds(data, data, [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011866203721403357]);
+                      self.replaceIds(data, closure_0, ["id"]);
                     });
                     const texts = event.data.texts;
                     const item3 = texts.forEach((data) => {
-                      self.replaceIds(data, data, [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011866203721403357]);
+                      self.replaceIds(data, closure_0, ["id"]);
                     });
                     return event;
                   } else {
-                    if (closure_38.Drag !== source) {
-                      if (closure_38.TouchMove !== source) {
-                        if (closure_38.MouseMove !== source) {
-                          if (closure_38.ViewportResize === source) {
+                    if (outer1_38.Drag !== source) {
+                      if (outer1_38.TouchMove !== source) {
+                        if (outer1_38.MouseMove !== source) {
+                          if (outer1_38.ViewportResize === source) {
                             return false;
                           } else {
-                            if (closure_38.MediaInteraction !== source) {
-                              if (closure_38.MouseInteraction !== source) {
-                                if (closure_38.Scroll !== source) {
-                                  if (closure_38.CanvasMutation !== source) {
-                                    if (closure_38.Input !== source) {
-                                      if (closure_38.StyleSheetRule !== source) {
-                                        if (closure_38.StyleDeclaration !== source) {
-                                          if (closure_38.Font === source) {
+                            if (outer1_38.MediaInteraction !== source) {
+                              if (outer1_38.MouseInteraction !== source) {
+                                if (outer1_38.Scroll !== source) {
+                                  if (outer1_38.CanvasMutation !== source) {
+                                    if (outer1_38.Input !== source) {
+                                      if (outer1_38.StyleSheetRule !== source) {
+                                        if (outer1_38.StyleDeclaration !== source) {
+                                          if (outer1_38.Font === source) {
                                             return event;
-                                          } else if (closure_38.Selection === source) {
+                                          } else if (outer1_38.Selection === source) {
                                             const ranges = event.data.ranges;
                                             const item4 = ranges.forEach((data) => {
-                                              self.replaceIds(data, data, [false, false]);
+                                              self.replaceIds(data, closure_0, ["start", "end"]);
                                             });
                                             return event;
-                                          } else if (closure_38.AdoptedStyleSheet === source) {
-                                            self.replaceIds(event.data, value, [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011866203721403357]);
-                                            self.replaceStyleIds(event.data, value, [null]);
+                                          } else if (outer1_38.AdoptedStyleSheet === source) {
+                                            self.replaceIds(event.data, value, ["id"]);
+                                            self.replaceStyleIds(event.data, value, ["styleIds"]);
                                             const styles = event.data.styles;
                                             if (null != styles) {
                                               const item5 = styles.forEach((data) => {
-                                                self.replaceStyleIds(data, data, [false]);
+                                                self.replaceStyleIds(data, closure_0, ["styleId"]);
                                               });
                                             }
                                             return event;
                                           }
                                         }
                                       }
-                                      self.replaceIds(event.data, value, [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011866203721403357]);
-                                      self.replaceStyleIds(event.data, value, [false]);
+                                      self.replaceIds(event.data, value, ["id"]);
+                                      self.replaceStyleIds(event.data, value, ["styleId"]);
                                       return event;
                                     }
                                   }
                                 }
                               }
                             }
-                            self.replaceIds(event.data, value, [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011866203721403357]);
+                            self.replaceIds(event.data, value, ["id"]);
                             return event;
                           }
                         }
@@ -7649,7 +7762,7 @@ let closure_52 = () => {
                     }
                     const positions = event.data.positions;
                     const item6 = positions.forEach((data) => {
-                      self.replaceIds(data, data, [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011866203721403357]);
+                      self.replaceIds(data, closure_0, ["id"]);
                     });
                     return event;
                   }
@@ -7694,63 +7807,60 @@ let closure_52 = () => {
             arg1[tmp12] = getIds.getId(arg2, arg1[tmp12]);
           }
         }
-        // continue
+        continue;
       }
       return arg1;
     }
   };
   items[6] = {
     key: "replaceIds",
-    value: function replaceIds(data, value, arg2) {
-      return this.replace(this.crossOriginIframeMirror, data, value, arg2);
+    value: function replaceIds(data, closure_0, arg2) {
+      return this.replace(this.crossOriginIframeMirror, data, closure_0, arg2);
     }
   };
   items[7] = {
     key: "replaceStyleIds",
-    value: function replaceStyleIds(data, value, arg2) {
-      return this.replace(this.crossOriginIframeStyleMirror, data, value, arg2);
+    value: function replaceStyleIds(data, closure_0, arg2) {
+      return this.replace(this.crossOriginIframeStyleMirror, data, closure_0, arg2);
     }
   };
   items[8] = {
     key: "replaceIdOnNode",
-    value: function replaceIdOnNode(node, value) {
-      const IframeManager = value;
+    value: function replaceIdOnNode(node, closure_0) {
       const self = this;
-      this.replaceIds(node, value, ["refresh", "reload"]);
+      this.replaceIds(node, closure_0, ["id", "rootId"]);
       if ("childNodes" in node) {
         const childNodes = node.childNodes;
         const item = childNodes.forEach((node) => {
-          self.replaceIdOnNode(node, arg1);
+          self.replaceIdOnNode(node, closure_0);
         });
       }
     }
   };
   items[9] = {
     key: "patchRootIdOnNode",
-    value: function patchRootIdOnNode(node, id) {
-      const IframeManager = id;
+    value: function patchRootIdOnNode(node, closure_0) {
       const self = this;
       if (!tmp) {
-        node.rootId = id;
+        node.rootId = closure_0;
       }
       if ("childNodes" in node) {
         const childNodes = node.childNodes;
         const item = childNodes.forEach((node) => {
-          self.patchRootIdOnNode(node, arg1);
+          self.patchRootIdOnNode(node, closure_0);
         });
       }
     }
   };
-  return callback5(IframeManager, items);
-}();
-let closure_53 = () => {
+  return _defineProperties(IframeManager, items);
+})();
+let closure_53 = (() => {
   class ShadowDomManagerNoop {
     constructor() {
-      tmp = closure_8(this, ShadowDomManagerNoop);
+      tmp = outer1_8(this, ShadowDomManagerNoop);
       return;
     }
   }
-  const require = ShadowDomManagerNoop;
   let obj = {
     key: "init",
     value: function init() {
@@ -7778,12 +7888,12 @@ let closure_53 = () => {
 
     }
   };
-  return callback5(ShadowDomManagerNoop, items);
-}();
-let closure_54 = () => {
+  return _defineProperties(ShadowDomManagerNoop, items);
+})();
+let closure_54 = (() => {
   class ShadowDomManager {
     constructor(arg0) {
-      tmp = closure_8(this, ShadowDomManager);
+      tmp = outer1_8(this, ShadowDomManager);
       weakSet = new WeakSet();
       this.shadowDoms = weakSet;
       this.restoreHandlers = [];
@@ -7792,7 +7902,6 @@ let closure_54 = () => {
       return;
     }
   }
-  const require = ShadowDomManager;
   let obj = {
     key: "init",
     value: function init() {
@@ -7805,9 +7914,9 @@ let closure_54 = () => {
     key: "addShadowRoot",
     value: function addShadowRoot(doc, doc2) {
       let self = this;
-      const ShadowDomManager = doc;
+      let closure_0 = doc;
       self = this;
-      if (callback2(doc)) {
+      if (outer1_92(doc)) {
         const shadowDoms = self.shadowDoms;
         if (!shadowDoms.has(doc)) {
           const shadowDoms2 = self.shadowDoms;
@@ -7818,22 +7927,22 @@ let closure_54 = () => {
           let obj = { doc: doc2 };
           ({ mutationCb: obj.mutationCb, mirror: obj.mirror } = self);
           obj.shadowDomManager = self;
-          let closure_2 = callback6(Object.assign({}, self.bypassOptions, obj), doc);
+          let closure_2 = outer1_146(Object.assign({}, self.bypassOptions, obj), doc);
           self.restoreHandlers.push(() => closure_2.disconnect());
           const _Object2 = Object;
           obj = { scrollCb: self.scrollCb, doc, mirror: self.mirror };
-          self.restoreHandlers.push(callback7(Object.assign({}, self.bypassOptions, obj)));
-          callback4((self) => {
-            let adoptedStyleSheets = self.adoptedStyleSheets;
+          self.restoreHandlers.push(outer1_148(Object.assign({}, self.bypassOptions, obj)));
+          outer1_138(() => {
+            let adoptedStyleSheets = doc.adoptedStyleSheets;
             if (adoptedStyleSheets) {
-              adoptedStyleSheets = self.adoptedStyleSheets.length > 0;
+              adoptedStyleSheets = doc.adoptedStyleSheets.length > 0;
             }
             if (adoptedStyleSheets) {
               const stylesheetManager = self.bypassOptions.stylesheetManager;
               const mirror = self.mirror;
-              stylesheetManager.adoptStyleSheets(self.adoptedStyleSheets, mirror.getId(self.host));
+              stylesheetManager.adoptStyleSheets(doc.adoptedStyleSheets, mirror.getId(doc.host));
             }
-            self.restoreHandlers.push(callback({ mirror: self.mirror, stylesheetManager: self.bypassOptions.stylesheetManager }, self));
+            self.restoreHandlers.push(outer2_152({ mirror: self.mirror, stylesheetManager: self.bypassOptions.stylesheetManager }, doc));
           }, 0);
           const restoreHandlers = self.restoreHandlers;
           const restoreHandlers1 = self.restoreHandlers;
@@ -7846,7 +7955,7 @@ let closure_54 = () => {
     key: "observeAttachShadow",
     value: function observeAttachShadow(contentWindow) {
       const self = this;
-      const tmp = callback5(contentWindow);
+      const tmp = outer1_139(contentWindow);
       contentWindow = contentWindow.contentWindow;
       while (true) {
         let tmp2 = tmp;
@@ -7854,7 +7963,7 @@ let closure_54 = () => {
           break;
         } else {
           tmp2 = contentWindow;
-          // break
+          break;
         }
         if (tmp2) {
           let patchAttachShadowResult = self.patchAttachShadow(contentWindow.Element, tmp);
@@ -7866,20 +7975,20 @@ let closure_54 = () => {
   items[3] = {
     key: "patchAttachShadow",
     value: function patchAttachShadow(Element, document) {
-      const ShadowDomManager = document;
-      const self = this;
-      this.restoreHandlers.push(callback3(Element.prototype, "attachShadow", (arg0) => {
-        const arg1 = arg0;
+      let closure_0 = document;
+      let self = this;
+      this.restoreHandlers.push(outer1_122(Element.prototype, "attachShadow", (arg0) => {
+        let closure_0 = arg0;
         return function(arg0) {
           const self = this;
           let shadowRoot = this.shadowRoot;
           if (shadowRoot) {
-            shadowRoot = callback(self);
+            shadowRoot = outer3_136(self);
           }
           if (shadowRoot) {
-            closure_1.addShadowRoot(self.shadowRoot, arg0);
+            outer1_1.addShadowRoot(self.shadowRoot, callback);
           }
-          return arg0.call(this, arg0);
+          return callback.call(this, arg0);
         };
       }));
     }
@@ -7897,11 +8006,11 @@ let closure_54 = () => {
       canvasManager.resetShadowRoots();
     }
   };
-  return callback5(ShadowDomManager, items);
-}();
+  return _defineProperties(ShadowDomManager, items);
+})();
 if ("undefined" === typeof Uint8Array) {
-  const items = [];
+  let items = [];
 } else {
-  const _Uint8Array = Uint8Array;
-  const uint8Array = new Uint8Array(256);
+  let _Uint8Array = Uint8Array;
+  let uint8Array = new Uint8Array(256);
 }

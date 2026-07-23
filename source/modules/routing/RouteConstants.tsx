@@ -1,23 +1,34 @@
 // Module ID: 654
 // Function ID: 7946
-// Name: INVITE
-// Dependencies: []
+// Name: APP_WITH_INVITE_AND_GUILD_ONBOARDING
+// Dependencies: [655, 660, 661, 484, 2]
 
-// Module 654 (INVITE)
-const CollectibleShopTab = require(dependencyMap[0]).CollectibleShopTab;
-const _module = require(dependencyMap[2]);
-({ ApplicationDirectoryProfileSections: closure_1, GlobalDiscoveryAppsSections: closure_2 } = _module);
+// Module 654 (APP_WITH_INVITE_AND_GUILD_ONBOARDING)
+import { CollectibleShopTab } from "items";
+import GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID from "GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID";
+import getAuthenticationPath from "getAuthenticationPath";
+
+let closure_1;
+let closure_2;
+({ ApplicationDirectoryProfileSections: closure_1, GlobalDiscoveryAppsSections: closure_2 } = GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID);
 const items = ["@me", "@favorites", "@guilds-empty-nux", "@inbox", "@guild-upsell-list"];
 const obj = {
+  INDEX: "/",
+  APP: "/app",
   APP_WITH_INVITE_AND_GUILD_ONBOARDING(code) {
     return "/app/invite-with-guild-onboarding/" + code;
   },
   APP_WITH_GIFT_CODE(arg0) {
     return "/app/gifts/" + arg0;
   },
+  ACTIVITY: "/activity",
+  ACTIVITIES: "/activities",
+  ACTIVITIES_HAPPENING_NOW: "/activities/happening-now",
   ACTIVITY_DETAILS(applicationId) {
     return "/activities/" + applicationId;
   },
+  APPLICATION_LIBRARY: "/library",
+  APPLICATION_LIBRARY_INVENTORY: "/library/inventory",
   APPLICATION_LIBRARY_ACTION(arg0, arg1) {
     return "/library/" + arg0 + "/" + arg1;
   },
@@ -97,14 +108,14 @@ const obj = {
       combined1 = "" + combined + "/" + messageId;
     }
     return combined1;
-  },
-  LOGIN: "/login",
-  LOGIN_HANDOFF: "/login/handoff",
-  LOGIN_ONE_TIME: "/login/one-time",
-  REGISTER: "/register"
+  }
 };
 let str = "/login";
-if (require(dependencyMap[1]).CONFERENCE_MODE_ENABLED) {
+obj.LOGIN = "/login";
+obj.LOGIN_HANDOFF = "/login/handoff";
+obj.LOGIN_ONE_TIME = "/login/one-time";
+obj.REGISTER = "/register";
+if (require("CONFERENCE_MODE_ENABLED").CONFERENCE_MODE_ENABLED) {
   str = "/register";
 }
 obj.DEFAULT_LOGGED_OUT = str;
@@ -373,12 +384,12 @@ obj.PICK_GUILD_SETTINGS = function PICK_GUILD_SETTINGS(arg0, arg1, arg2) {
   }
   return "" + combined + str4;
 };
-obj.GUILD_EVENT_DETAILS = function GUILD_EVENT_DETAILS(guild_id, id, arg2) {
+obj.GUILD_EVENT_DETAILS = function GUILD_EVENT_DETAILS(guild_id, id, closure_1) {
   let str = "";
   const combined = "/events/" + guild_id + "/" + id;
-  if (null != arg2) {
+  if (null != closure_1) {
     const _HermesInternal = HermesInternal;
-    str = "/" + arg2;
+    str = "/" + closure_1;
   }
   return combined + str;
 };
@@ -515,9 +526,8 @@ obj.QUEST_PREVIEW_TOOL_2 = function QUEST_PREVIEW_TOOL_2(arg0) {
 };
 obj.ICYMI = "/icymi";
 const frozen = Object.freeze(obj);
-const _module1 = require(dependencyMap[3]);
-const _module2 = require(dependencyMap[4]);
-const result = _module2.fileFinishedImporting("modules/routing/RouteConstants.tsx");
+const wrapPathsResult = getAuthenticationPath.wrapPaths(frozen, [":", "?", "@"]);
+const result = require("GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID").fileFinishedImporting("modules/routing/RouteConstants.tsx");
 
 export const ME = "@me";
 export const FAVORITES = "@favorites";
@@ -525,4 +535,4 @@ export const NOTIFICATIONS_INBOX = "@inbox";
 export const EMPTY_NUX_SERVER = "@guilds-empty-nux";
 export const MOBILE_GUILD_UPSELL_LIST = "@guild-upsell-list";
 export const PSEUDO_GUILD_IDS = items;
-export const Routes = _module1.wrapPaths(frozen, []);
+export const Routes = wrapPathsResult;

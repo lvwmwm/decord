@@ -1,19 +1,18 @@
-// Module ID: 9324
-// Function ID: 72885
+// Module ID: 9331
+// Function ID: 72926
 // Name: createStore
-// Dependencies: []
+// Dependencies: [677, 3999, 682, 2]
 // Exports: default
 
-// Module 9324 (createStore)
+// Module 9331 (createStore)
 function createStore() {
   function getState() {
     return withEqualityFnResult.getState();
   }
-  const dependencyMap = getState;
-  let obj = require(dependencyMap[0]);
+  let obj = require(getState[0]);
   const withEqualityFn = obj.createWithEqualityFn();
-  const withEqualityFnResult = withEqualityFn(require(dependencyMap[1]).subscribeWithSelector(() => closure_2));
-  const require = withEqualityFnResult;
+  const withEqualityFnResult = withEqualityFn(require(getState[1]).subscribeWithSelector(() => outer1_2));
+  require = withEqualityFnResult;
   obj = {
     useStore: withEqualityFnResult,
     getState,
@@ -21,26 +20,32 @@ function createStore() {
       return withEqualityFnResult.subscribe(arg0, arg1);
     },
     setInspectedExpressionPosition(arg0, arg1, arg2) {
-      const getState = arg1;
-      arg0(getState[2]).batchUpdates(() => {
-        const inspectedExpressionPosition = { rowIndex: arg1, columnIndex: arg0, source: arg2 };
-        return arg0.setState({ inspectedExpressionPosition, hasInteracted: true });
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let closure_2 = arg2;
+      withEqualityFnResult(getState[2]).batchUpdates(() => {
+        const inspectedExpressionPosition = { rowIndex: closure_1, columnIndex: state, source: closure_2 };
+        return state.setState({ inspectedExpressionPosition, hasInteracted: true });
       });
     },
     setActiveCategoryIndex(arg0) {
-      arg0(getState[2]).batchUpdates(() => arg0.setState({ activeCategoryIndex: arg0 }));
+      let closure_0 = arg0;
+      withEqualityFnResult(getState[2]).batchUpdates(() => state.setState({ activeCategoryIndex: state }));
     },
     setSearchPlaceholder(arg0) {
-      arg0(getState[2]).batchUpdates(() => arg0.setState({ searchPlaceholder: arg0 }));
+      let closure_0 = arg0;
+      withEqualityFnResult(getState[2]).batchUpdates(() => state.setState({ searchPlaceholder: state }));
     },
     resetStoreState() {
-      withEqualityFnResult(getState[2]).batchUpdates(() => state.setState(closure_2));
+      withEqualityFnResult(getState[2]).batchUpdates(() => outer1_0.setState(outer2_2));
     },
     setBottomPosition(arg0) {
-      arg0(getState[2]).batchUpdates(() => arg0.setState({ bottomPosition: arg0 }));
+      let closure_0 = arg0;
+      withEqualityFnResult(getState[2]).batchUpdates(() => state.setState({ bottomPosition: state }));
     },
     setAnalyticsId(replaced) {
-      replaced(getState[2]).batchUpdates(() => arg0.setState({ analyticsId: arg0 }));
+      let closure_0 = replaced;
+      withEqualityFnResult(getState[2]).batchUpdates(() => state.setState({ analyticsId: state }));
     },
     getAnalyticsId() {
       return getState().analyticsId;
@@ -48,13 +53,13 @@ function createStore() {
   };
   return obj;
 }
-let closure_2 = Object.freeze({ inspectedExpressionPosition: { callbackActionSheet: "%FunctionPrototype%", defaultReactionEmoji: "paddingStart" } });
+let obj = { inspectedExpressionPosition: { rowIndex: 0, columnIndex: 0 }, hasInteracted: false, activeCategoryIndex: 0, searchPlaceholder: null, bottomPosition: null, analyticsId: null };
+let closure_2 = Object.freeze(obj);
 const store = createStore();
 const store1 = createStore();
 const store2 = createStore();
 const store3 = createStore();
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/expression_picker/ExpressionPickerGridStores.tsx");
+const result = require("batchUpdates").fileFinishedImporting("modules/expression_picker/ExpressionPickerGridStores.tsx");
 
 export default createStore;
 export const INACTIVE_CATEGORY_INDEX = -1;

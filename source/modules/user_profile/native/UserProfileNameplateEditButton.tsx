@@ -1,25 +1,29 @@
-// Module ID: 13487
-// Function ID: 102356
+// Module ID: 13601
+// Function ID: 104512
 // Name: UserProfileNameplateEditButton
-// Dependencies: []
+// Dependencies: [31, 27, 1917, 5512, 482, 33, 4130, 689, 566, 7846, 13602, 4098, 13603, 1934, 13589, 1212, 8229, 1273, 7867, 2]
 // Exports: default
 
-// Module 13487 (UserProfileNameplateEditButton)
-let closure_3 = importAll(dependencyMap[0]);
-({ ActivityIndicator: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-const COLLECTIBLES_PREVIEW_SIZE = arg1(dependencyMap[3]).COLLECTIBLES_PREVIEW_SIZE;
-const NOOP = arg1(dependencyMap[4]).NOOP;
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, borderRadius: importDefault(dependencyMap[7]).radii.xs, overflow: "hidden" };
-obj.previewContainer = obj;
-const tmp2 = arg1(dependencyMap[1]);
-obj.noneIcon = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/user_profile/native/UserProfileNameplateEditButton.tsx");
+// Module 13601 (UserProfileNameplateEditButton)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET";
+import { NOOP } from "sum";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ ActivityIndicator: closure_4, View: closure_5 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { height: COLLECTIBLES_PREVIEW_SIZE, width: COLLECTIBLES_PREVIEW_SIZE, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
+_createForOfIteratorHelperLoose.previewContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.noneIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileNameplateEditButton.tsx");
 
 export default function UserProfileNameplateEditButton(user) {
   let guildId;
@@ -29,26 +33,23 @@ export default function UserProfileNameplateEditButton(user) {
   let nameplateRecord;
   let pendingNameplate;
   user = user.user;
-  const arg1 = user;
   ({ pendingNameplate, guildId } = user);
-  const importDefault = guildId;
-  let closure_3;
-  const tmp = callback();
+  let nameplate;
+  const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp2;
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_6];
+  let obj = user(566);
+  const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
-    if (tmp2) {
-      member = member.getMember(guildId, user.id);
-      const tmp2 = member;
+    if (closure_2) {
+      member = outer1_6.getMember(guildId, user.id);
     }
     return member;
   });
-  let obj1 = arg1(dependencyMap[9]);
+  let obj1 = user(7846);
   obj = { pendingValue: pendingNameplate };
   const collectibles = user.collectibles;
-  let nameplate;
+  nameplate = undefined;
   if (null != collectibles) {
     nameplate = collectibles.nameplate;
   }
@@ -63,7 +64,7 @@ export default function UserProfileNameplateEditButton(user) {
   obj.guildValue = nameplate1;
   obj.guildId = guildId;
   const profilePreviewValue = obj1.getProfilePreviewValue(obj);
-  let obj3 = arg1(dependencyMap[10]);
+  let obj3 = user(13602);
   let skuId;
   if (null != profilePreviewValue) {
     skuId = profilePreviewValue.skuId;
@@ -88,41 +89,40 @@ export default function UserProfileNameplateEditButton(user) {
   if (undefined !== pendingNameplate) {
     nameplate = pendingNameplate;
   }
-  closure_3 = nameplate;
   const items1 = [user, nameplate, guildId];
   if (isFetching) {
     obj = {};
-    const intl4 = arg1(dependencyMap[15]).intl;
-    obj.label = intl4.string(arg1(dependencyMap[15]).t.x5CoXR);
-    const intl5 = arg1(dependencyMap[15]).intl;
-    obj.buttonText = intl5.string(arg1(dependencyMap[15]).t.MKDeyL);
+    const intl4 = user(1212).intl;
+    obj.label = intl4.string(user(1212).t.x5CoXR);
+    const intl5 = user(1212).intl;
+    obj.buttonText = intl5.string(user(1212).t.MKDeyL);
     obj.onPress = NOOP;
-    obj.leading = <closure_4 />;
+    obj.leading = <closure_4 animating size="large" />;
     obj.loading = true;
     obj.disabled = true;
     obj.hideArrow = true;
-    return jsx(arg1(dependencyMap[14]).UserProfileEditFormButton, obj);
+    return jsx(user(13589).UserProfileEditFormButton, {});
   } else {
     let name;
     if (null != nameplateProduct) {
       name = nameplateProduct.name;
     }
     if (null == name) {
-      const intl = arg1(dependencyMap[15]).intl;
-      name = intl.string(arg1(dependencyMap[15]).t.PoWNfe);
+      const intl = user(1212).intl;
+      name = intl.string(user(1212).t.PoWNfe);
     }
     let formatToPlainStringResult = name;
     if (tmp2) {
       formatToPlainStringResult = name;
       if (null == nameplate) {
-        const intl2 = arg1(dependencyMap[15]).intl;
+        const intl2 = user(1212).intl;
         obj1 = { label: name };
-        formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[15]).t.ep5D4i, obj1);
+        formatToPlainStringResult = intl2.formatToPlainString(user(1212).t.ep5D4i, obj1);
       }
     }
     const obj2 = {};
-    const intl3 = arg1(dependencyMap[15]).intl;
-    obj2.label = intl3.string(arg1(dependencyMap[15]).t.x5CoXR);
+    const intl3 = user(1212).intl;
+    obj2.label = intl3.string(user(1212).t.x5CoXR);
     obj2.buttonText = formatToPlainStringResult;
     obj3 = { text: formatToPlainStringResult };
     obj2.accessibilityValue = obj3;
@@ -131,16 +131,16 @@ export default function UserProfileNameplateEditButton(user) {
       if (null != nameplateRecord) {
         if (null != nameplateProduct) {
           const obj4 = { style: tmp.previewContainer };
-          const obj5 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, nameplate: nameplateData };
-          obj4.children = jsx(importDefault(dependencyMap[16]), obj5);
-          let tmp24 = <closure_5 {...obj4} />;
+          const obj5 = { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true };
+          obj4.children = jsx(guildId(8229), { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true });
+          let tmp24 = <closure_5 style={tmp.previewContainer} />;
         }
         obj2.leading = tmp24;
-        return tmp17(arg1(dependencyMap[14]).UserProfileEditFormButton, obj2);
+        return tmp17(user(13589).UserProfileEditFormButton, obj2);
       }
     }
-    const obj6 = { source: importDefault(dependencyMap[18]), style: tmp.noneIcon };
-    tmp24 = jsx(arg1(dependencyMap[17]).Icon, obj6);
-    const tmp17 = jsx;
+    const obj6 = { source: guildId(7867), style: tmp.noneIcon };
+    tmp24 = jsx(user(1273).Icon, { source: guildId(7867), style: tmp.noneIcon });
+    tmp17 = jsx;
   }
 };

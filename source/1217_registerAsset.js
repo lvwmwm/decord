@@ -1,9 +1,9 @@
 // Module ID: 1217
-// Function ID: 14027
+// Function ID: 14028
 // Name: registerAsset
-// Dependencies: []
+// Dependencies: [93]
 
 // Module 1217 (registerAsset)
 
-export const registerAsset = require(dependencyMap[0]).registerAsset;
-export const getAssetByID = require(dependencyMap[0]).getAssetByID;
+export const registerAsset = require("module_93").registerAsset;
+export const getAssetByID = require("module_93").getAssetByID;

@@ -1,10 +1,19 @@
-// Module ID: 16338
-// Function ID: 126074
+// Module ID: 16455
+// Function ID: 128248
 // Name: BaseBenefitRow
-// Dependencies: []
+// Dependencies: [31, 27, 14094, 33, 4130, 14129, 1273, 10681, 4126, 3771, 14122, 4320, 4593, 1212, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 16338 (BaseBenefitRow)
+// Module 16455 (BaseBenefitRow)
+import "result";
+import { View } from "get ActivityIndicator";
+import { GuildRoleSubscriptionBenefitTypes as closure_4 } from "MAX_SUBSCRIPTION_TIERS";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function BaseBenefitRow(isInteractive) {
   let children;
   let contentStyle;
@@ -17,14 +26,14 @@ function BaseBenefitRow(isInteractive) {
   }
   const tmp = callback3();
   let obj = { style: tmp.container };
-  obj = { style: tmp.emojiContainer, children: callback(importDefault(dependencyMap[5]), { guildId, id: emoji }) };
+  obj = { style: tmp.emojiContainer, children: callback(importDefault(14129), { guildId, id: emoji }) };
   const items = [callback(View, obj), , ];
   const items1 = [tmp.benefitColumn, contentStyle];
   items[1] = callback(View, { style: items1, children });
   let tmp4 = true === flag;
   if (tmp4) {
-    obj = { source: importDefault(dependencyMap[7]) };
-    tmp4 = callback(arg1(dependencyMap[6]).Icon, obj);
+    obj = { source: importDefault(10681) };
+    tmp4 = callback(require(1273) /* Button */.Icon, obj);
   }
   items[2] = tmp4;
   obj.children = items;
@@ -38,15 +47,15 @@ function DescriptiveBenefitRow(benefit) {
   ({ children, guildId, isInteractive } = benefit);
   let tmp2 = null;
   if (null != benefit.description) {
-    let obj = { style: tmp.benefitDescription, children: benefit.description };
-    tmp2 = callback(arg1(dependencyMap[8]).Text, obj);
+    let obj = { style: tmp.benefitDescription, variant: "text-sm/medium", color: "interactive-text-default", children: benefit.description };
+    tmp2 = callback(require(4126) /* Text */.Text, obj);
   }
   let emoji_id = benefit.emoji_id;
   if (null == emoji_id) {
     let str = "";
     if (null != benefit.emoji_name) {
-      str = importDefault(dependencyMap[9]).convertSurrogateToName(benefit.emoji_name, false);
-      const obj2 = importDefault(dependencyMap[9]);
+      str = importDefault(3771).convertSurrogateToName(benefit.emoji_name, false);
+      const obj2 = importDefault(3771);
     }
     emoji_id = str;
   }
@@ -61,26 +70,26 @@ function ChannelBenefitRow(benefit) {
   benefit = benefit.benefit;
   ({ guildId, isInteractive } = benefit);
   const tmp = callback3();
-  let obj = arg1(dependencyMap[10]);
+  let obj = require(14122) /* _createForOfIteratorHelperLoose */;
   const channelWithTemplateFallback = obj.useChannelWithTemplateFallback(benefit.ref_id);
   let channelIcon = null;
   if (null != channelWithTemplateFallback) {
-    let obj1 = arg1(dependencyMap[12]);
+    let obj1 = require(4593) /* getThreadChannelIcon */;
     channelIcon = obj1.getChannelIcon(channelWithTemplateFallback);
   }
   if (null == channelWithTemplateFallback) {
-    obj = {};
-    const intl = arg1(dependencyMap[13]).intl;
+    obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
+    const intl = require(1212) /* getSystemLocale */.intl;
     const _HermesInternal = HermesInternal;
-    obj.children = "[" + intl.string(arg1(dependencyMap[13]).t.bz1PZX) + "]";
-    let tmp11 = callback(arg1(dependencyMap[8]).Text, obj);
+    obj.children = "[" + intl.string(require(1212) /* getSystemLocale */.t.bz1PZX) + "]";
+    let tmp11 = callback(require(4126) /* Text */.Text, obj);
   } else {
     obj = { benefit, guildId, isInteractive };
     obj1 = { style: tmp.channelRow };
-    const obj2 = { style: tmp.channelIcon, size: arg1(dependencyMap[6]).Icon.Sizes.CUSTOM, source: channelIcon };
-    const items = [callback(arg1(dependencyMap[6]).Icon, obj2), ];
-    const obj3 = { children: tmp3 };
-    items[1] = callback(arg1(dependencyMap[8]).Text, obj3);
+    const obj2 = { style: tmp.channelIcon, size: require(1273) /* Button */.Icon.Sizes.CUSTOM, source: channelIcon };
+    const items = [callback(require(1273) /* Button */.Icon, obj2), ];
+    const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 };
+    items[1] = callback(require(4126) /* Text */.Text, obj3);
     obj1.children = items;
     obj.children = callback2(View, obj1);
     tmp11 = callback(DescriptiveBenefitRow, obj);
@@ -89,8 +98,8 @@ function ChannelBenefitRow(benefit) {
 }
 function IntangibleBenefitRow(benefit) {
   benefit = benefit.benefit;
-  let obj = { benefit, guildId: benefit.guildId, isInteractive: benefit.isInteractive, children: callback(arg1(dependencyMap[8]).Text, obj) };
-  obj = { children: benefit.name };
+  obj = { benefit, guildId: benefit.guildId, isInteractive: benefit.isInteractive, children: callback(require(4126) /* Text */.Text, obj) };
+  obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: benefit.name };
   return callback(DescriptiveBenefitRow, obj);
 }
 function EmojiBenefitRow(benefit) {
@@ -100,22 +109,18 @@ function EmojiBenefitRow(benefit) {
   ({ guildId, isInteractive } = benefit);
   const tmp = callback3();
   let obj = { emoji: benefit.id, guildId, contentStyle: tmp.emojiRow, isInteractive };
-  obj = { style: tmp.emojiColons };
-  const items = [callback(arg1(dependencyMap[8]).Text, obj), , ];
-  obj = { children: benefit.name };
-  items[1] = callback(arg1(dependencyMap[8]).Text, obj);
-  items[2] = callback(arg1(dependencyMap[8]).Text, { style: tmp.emojiColons });
+  obj = { style: tmp.emojiColons, variant: "text-md/medium", color: "text-muted", children: ":" };
+  const items = [callback(require(4126) /* Text */.Text, obj), , ];
+  obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: benefit.name };
+  items[1] = callback(require(4126) /* Text */.Text, obj);
+  const obj1 = { style: tmp.emojiColons, variant: "text-md/medium", color: "text-muted", children: ":" };
+  items[2] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items;
   return callback2(BaseBenefitRow, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = arg1(dependencyMap[2]).GuildRoleSubscriptionBenefitTypes;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: {}, emojiContainer: {}, benefitColumn: {}, benefitDescription: { loginWebAuthn: -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Ŕ: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 }, channelRow: {}, channelIcon: { ty: 24, bm: 24, hd: null }, emojiRow: {}, emojiColons: { paddingHorizontal: 2 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitPreview.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", justifyContent: "flex-start" }, emojiContainer: { width: 24, height: 24, alignSelf: "flex-start", alignItems: "center", justifyContent: "center", marginEnd: 16 }, benefitColumn: { flexDirection: "column", flexGrow: 1, flex: 1, alignItems: "flex-start", justifyContent: "center" }, benefitDescription: { flex: 1, marginTop: 2 }, channelRow: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, channelIcon: { width: 16, height: 16, marginEnd: 8 }, emojiRow: { flexDirection: "row", justifyContent: "flex-start", alignItems: "center" }, emojiColons: { paddingHorizontal: 2 } });
+const result = require("MAX_SUBSCRIPTION_TIERS").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitPreview.tsx");
 
 export const GuildRoleSubscriptionBenefitPreview = function GuildRoleSubscriptionBenefitPreview(arg0) {
   let benefit;

@@ -1,9 +1,26 @@
-// Module ID: 4989
-// Function ID: 43131
+// Module ID: 4992
+// Function ID: 43149
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1391, 1911, 1917, 1910, 1838, 1849, 653, 3749, 566, 686, 2]
 
-// Module 4989 (_isNativeReflectConstruct)
+// Module 4992 (_isNativeReflectConstruct)
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { isGuildOwner } from "isGuildOwner";
+import { hasPermission } from "GuildRoleRecordTypeTag";
+import closure_9 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import ME from "ME";
+import set from "_possibleConstructorReturn";
+
+let closure_13;
+let closure_14;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +30,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +83,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -106,8 +123,8 @@ function computeRolesForGuild(guildId) {
       const set2 = new Set();
       const result = map3.set(guildId, isGuildOwner(guild, currentUser));
       const features = guild.features;
-      if (features.has(constants.ROLE_SUBSCRIPTIONS_ENABLED)) {
-        const member = member.getMember(guildId, currentUser.id);
+      if (features.has(constants2.ROLE_SUBSCRIPTIONS_ENABLED)) {
+        member = member.getMember(guildId, currentUser.id);
         let _Set = Set;
         let roles;
         if (null != member) {
@@ -123,14 +140,14 @@ function computeRolesForGuild(guildId) {
         if (!iter.done) {
           do {
             let value = iter.value;
-            let tmp12 = closure_0;
-            let tmp13 = closure_1;
-            let obj2 = closure_0(closure_1[12]);
+            let tmp12 = require;
+            let tmp13 = dependencyMap;
+            let obj2 = require(3749) /* isSubscriptionRole */;
             if (obj2.isSubscriptionRole(value)) {
               let addResult = set.add(value.id);
-              let tmp15 = closure_0;
-              let tmp16 = closure_1;
-              let obj3 = closure_0(closure_1[12]);
+              let tmp15 = require;
+              let tmp16 = dependencyMap;
+              let obj3 = require(3749) /* isSubscriptionRole */;
               if (obj3.isSubscriptionRoleAvailableForPurchase(value)) {
                 let addResult1 = set1.add(value.id);
                 if (_Set.has(value.id)) {
@@ -140,13 +157,13 @@ function computeRolesForGuild(guildId) {
             }
             let hasItem = _Set.has(value.id);
             if (hasItem) {
-              let tmp20 = closure_8;
-              let tmp21 = closure_13;
-              hasItem = closure_8(value, closure_13.ADMINISTRATOR);
+              let tmp20 = hasPermission;
+              let tmp21 = constants;
+              hasItem = hasPermission(value, constants.ADMINISTRATOR);
             }
             if (hasItem) {
-              let tmp22 = closure_19;
-              let result1 = closure_19.set(guildId, true);
+              let tmp22 = map3;
+              let result1 = map3.set(guildId, true);
             }
             iter2 = tmp11();
             iter = iter2;
@@ -166,11 +183,11 @@ function deleteEverything() {
   map2.clear();
   map1.clear();
   map3.clear();
-  let closure_20 = null;
+  let c20 = null;
 }
 function handleGuildUpdate(guild) {
   const id = guild.guild.id;
-  if (null == set) {
+  if (null == set1) {
     return false;
   } else {
     guild = store.getGuild(id);
@@ -178,21 +195,21 @@ function handleGuildUpdate(guild) {
       return false;
     } else {
       const features = guild.features;
-      const hasItem = features.has(constants.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
+      const hasItem = features.has(constants2.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
       if (hasItem) {
-        if (!set.has(id)) {
+        if (!set1.has(id)) {
           const _Set = Set;
-          let set = new Set(set);
+          const set = new Set(set1);
           set.add(id);
+          set1 = set;
           return true;
         }
       }
       if (!hasItem) {
-        if (set.has(id)) {
+        if (set1.has(id)) {
           const _Set2 = Set;
-          const set1 = new Set(set);
+          set1 = new Set(set1);
           set1.delete(id);
-          set = set1;
           return true;
         }
       }
@@ -209,37 +226,26 @@ function handleRoleUpdate(guildId) {
   }
   return tmp2;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const isGuildOwner = arg1(dependencyMap[5]).isGuildOwner;
-const hasPermission = arg1(dependencyMap[6]).hasPermission;
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-let closure_12 = importDefault(dependencyMap[10]);
-({ Permissions: closure_13, GuildFeatures: closure_14 } = arg1(dependencyMap[11]));
-const set = new Set();
+({ Permissions: closure_13, GuildFeatures: closure_14 } = ME);
+let set = new Set();
 const map = new Map();
 const map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
-let closure_20 = null;
-let tmp8 = (Store) => {
+let c20 = null;
+let tmp8 = ((Store) => {
   class SubscriptionRoleStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, SubscriptionRoleStore);
-      obj = closure_5(SubscriptionRoleStore);
-      tmp2 = closure_4;
-      if (closure_21()) {
+      tmp = outer1_2(this, SubscriptionRoleStore);
+      obj = outer1_5(SubscriptionRoleStore);
+      tmp2 = outer1_4;
+      if (outer1_21()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -248,12 +254,11 @@ let tmp8 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SubscriptionRoleStore;
   callback2(SubscriptionRoleStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_11, closure_10, closure_12, closure_9);
+      this.waitFor(outer1_11, outer1_10, outer1_12, outer1_9);
     }
   };
   const items = [obj, , , , , , ];
@@ -261,27 +266,28 @@ let tmp8 = (Store) => {
     key: "getGuildIdsWithPurchasableRoles",
     value() {
       let iter2;
-      if (null == set) {
+      if (null == outer1_20) {
         const _Set = Set;
-        const guildsArray = guildsArray.getGuildsArray();
+        const guildsArray = outer1_11.getGuildsArray();
         const set = new Set();
-        const tmp9 = callback4(guildsArray);
+        const tmp9 = outer1_22(guildsArray);
         let iter = tmp9();
         if (!iter.done) {
           do {
             let value = iter.value;
             let features = value.features;
-            let tmp10 = closure_14;
-            if (features.has(closure_14.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) {
+            let tmp10 = outer1_14;
+            if (features.has(outer1_14.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) {
               let addResult = set.add(value.id);
             }
             iter2 = tmp9();
             iter = iter2;
           } while (!iter2.done);
         }
+        outer1_20 = set;
         let tmp = set;
       } else {
-        tmp = set;
+        tmp = outer1_20;
       }
       return tmp;
     }
@@ -290,8 +296,8 @@ let tmp8 = (Store) => {
   obj = {
     key: "buildRoles",
     value(arg0) {
-      if (!map.has(arg0)) {
-        callback5(arg0);
+      if (!outer1_16.has(arg0)) {
+        outer1_24(arg0);
       }
     }
   };
@@ -300,9 +306,9 @@ let tmp8 = (Store) => {
     key: "getSubscriptionRoles",
     value(arg0) {
       const roles = this.buildRoles(arg0);
-      let value = map.get(arg0);
+      let value = outer1_16.get(arg0);
       if (null == value) {
-        value = closure_15;
+        value = outer1_15;
       }
       return value;
     }
@@ -311,9 +317,9 @@ let tmp8 = (Store) => {
     key: "getPurchasableSubscriptionRoles",
     value(arg0) {
       const roles = this.buildRoles(arg0);
-      let value = closure_17.get(arg0);
+      let value = outer1_17.get(arg0);
       if (null == value) {
-        value = closure_15;
+        value = outer1_15;
       }
       return value;
     }
@@ -322,9 +328,9 @@ let tmp8 = (Store) => {
     key: "getUserSubscriptionRoles",
     value(arg0) {
       const roles = this.buildRoles(arg0);
-      let value = closure_18.get(arg0);
+      let value = outer1_18.get(arg0);
       if (null == value) {
-        value = closure_15;
+        value = outer1_15;
       }
       return value;
     }
@@ -333,32 +339,31 @@ let tmp8 = (Store) => {
     key: "getUserIsAdmin",
     value(arg0) {
       const roles = this.buildRoles(arg0);
-      const value = closure_19.get(arg0);
+      const value = outer1_19.get(arg0);
       return null != value && value;
     }
   };
   return callback(SubscriptionRoleStore, items);
-}(importDefault(dependencyMap[13]).Store);
+})(require("initialize").Store);
 tmp8.displayName = "SubscriptionRoleStore";
-tmp8 = new tmp8(importDefault(dependencyMap[14]), {
+tmp8 = new tmp8(require("dispatcher"), {
   CONNECTION_OPEN: deleteEverything,
   LOGOUT: deleteEverything,
   GUILD_CREATE: handleGuildUpdate,
   GUILD_DELETE: function handleGuildDelete(guild) {
     const id = guild.guild.id;
     let hasItem;
-    if (null != closure_20) {
+    if (null != set) {
       hasItem = obj.has(id);
     }
     if (true !== hasItem) {
       return false;
     } else {
       const _Set = Set;
-      const set = new Set(closure_20);
+      set = new Set(set);
       set.delete(id);
-      closure_20 = set;
     }
-    const obj = closure_20;
+    obj = set;
   },
   GUILD_UPDATE: handleGuildUpdate,
   GUILD_ROLE_CREATE: handleRoleUpdate,
@@ -382,49 +387,6 @@ tmp8 = new tmp8(importDefault(dependencyMap[14]), {
     return tmp5;
   }
 });
-const obj = {
-  CONNECTION_OPEN: deleteEverything,
-  LOGOUT: deleteEverything,
-  GUILD_CREATE: handleGuildUpdate,
-  GUILD_DELETE: function handleGuildDelete(guild) {
-    const id = guild.guild.id;
-    let hasItem;
-    if (null != closure_20) {
-      hasItem = obj.has(id);
-    }
-    if (true !== hasItem) {
-      return false;
-    } else {
-      const _Set = Set;
-      const set = new Set(closure_20);
-      set.delete(id);
-      closure_20 = set;
-    }
-    const obj = closure_20;
-  },
-  GUILD_UPDATE: handleGuildUpdate,
-  GUILD_ROLE_CREATE: handleRoleUpdate,
-  GUILD_ROLE_UPDATE: handleRoleUpdate,
-  GUILD_ROLE_DELETE: handleRoleUpdate,
-  GUILD_MEMBER_UPDATE: function handleGuildMemberUpdate(guildId) {
-    guildId = guildId.guildId;
-    const currentUser = authStore.getCurrentUser();
-    let id;
-    if (null != currentUser) {
-      id = currentUser.id;
-    }
-    let tmp3 = guildId.user.id !== id;
-    if (!tmp3) {
-      tmp3 = !map.has(guildId);
-    }
-    let tmp5 = !tmp3;
-    if (!tmp3) {
-      tmp5 = computeRolesForGuild(guildId);
-    }
-    return tmp5;
-  }
-};
-const tmp2 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_role_subscriptions/SubscriptionRoleStore.tsx");
+let result = set.fileFinishedImporting("modules/guild_role_subscriptions/SubscriptionRoleStore.tsx");
 
 export default tmp8;

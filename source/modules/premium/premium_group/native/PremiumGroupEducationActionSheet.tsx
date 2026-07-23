@@ -1,38 +1,42 @@
-// Module ID: 12332
-// Function ID: 94435
+// Module ID: 12446
+// Function ID: 96586
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: []
+// Dependencies: [27, 3790, 33, 4130, 689, 5187, 7507, 4126, 5459, 1212, 2780, 2]
 // Exports: default
 
-// Module 12332 (PremiumGroupEducationActionSheet)
-const View = require(dependencyMap[0]).View;
-const HELP_CENTER_LINK = require(dependencyMap[1]).HELP_CENTER_LINK;
-const _module = require(dependencyMap[2]);
-({ jsx: closure_5, jsxs: closure_6 } = _module);
-const _module1 = require(dependencyMap[3]);
-let obj = { container: { "Null": "<string:343015425>", "Null": "<string:335544320>" } };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.lg };
+// Module 12446 (PremiumGroupEducationActionSheet)
+import { View } from "get ActivityIndicator";
+import { HELP_CENTER_LINK } from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let obj = { container: { marginTop: 32, marginHorizontal: 30 } };
+obj = { flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginBottom: 12 };
 obj.aboutContainer = obj;
 obj.warningIcon = { margin: 16 };
-obj.aboutTextContainer = { 0: "max", 9223372036854775807: "media", 0: "message" };
-obj.helpdeskText = { memo: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 };
-let closure_7 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[11]);
-const result = _module2.fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupEducationActionSheet.tsx");
+obj.aboutTextContainer = { justifyContent: "center", flex: 1, marginRight: 30 };
+obj.helpdeskText = { textAlign: "center", marginBottom: 24 };
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("jsxProd").fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupEducationActionSheet.tsx");
 
-export default function PremiumGroupEducationActionSheet(children) {
+export default function PremiumGroupEducationActionSheet(aboutText) {
   const tmp = callback3();
   let obj = {};
   obj = { style: tmp.container };
   obj = { style: tmp.aboutContainer };
-  const items = [callback(require(dependencyMap[6]).CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), callback(View, { style: tmp.aboutTextContainer, children: callback(require(dependencyMap[7]).Text, { children: children.aboutText }) })];
+  const items = [callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), ];
+  const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText.aboutText };
+  items[1] = callback(View, { style: tmp.aboutTextContainer, children: callback(require(4126) /* Text */.Text, obj3) });
   obj.children = items;
   const items1 = [callback2(View, obj), ];
-  const obj3 = { style: tmp.helpdeskText };
-  const intl = require(dependencyMap[9]).intl;
-  obj3.children = intl.format(importDefault(dependencyMap[10]).ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
-  items1[1] = callback(require(dependencyMap[8]).TextWithIOSLinkWorkaround, obj3);
+  const obj4 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj4.children = intl.format(importDefault(2780).ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
+  items1[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj4);
   obj.children = items1;
   obj.children = callback2(View, obj);
-  return callback(require(dependencyMap[5]).BottomSheet, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };

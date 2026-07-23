@@ -1,9 +1,11 @@
 // Module ID: 1297
-// Function ID: 15170
+// Function ID: 15171
 // Name: RepeatType
-// Dependencies: []
+// Dependencies: [1298]
 
 // Module 1297 (RepeatType)
+const require = arg1;
+const dependencyMap = arg6;
 ScalarType.ScalarType = undefined;
 ScalarType.LongType = undefined;
 ScalarType.RepeatType = undefined;
@@ -74,14 +76,14 @@ RepeatType[2] = "UNPACKED";
 ScalarType.normalizeFieldInfo = function normalizeFieldInfo(localName) {
   localName = localName.localName;
   if (null === localName) {
-    localName = arg1(arg6[0]).lowerCamelCase(localName.name);
-    const obj = arg1(arg6[0]);
+    localName = require(1298) /* lowerCamelCase */.lowerCamelCase(localName.name);
+    const obj = require(1298) /* lowerCamelCase */;
   }
   localName.localName = localName;
   let jsonName = localName.jsonName;
   if (null === jsonName) {
-    jsonName = arg1(arg6[0]).lowerCamelCase(localName.name);
-    const obj2 = arg1(arg6[0]);
+    jsonName = require(1298) /* lowerCamelCase */.lowerCamelCase(localName.name);
+    const obj2 = require(1298) /* lowerCamelCase */;
   }
   localName.jsonName = jsonName;
   let NO = localName.repeat;
@@ -105,11 +107,12 @@ ScalarType.normalizeFieldInfo = function normalizeFieldInfo(localName) {
   return localName;
 };
 ScalarType.readFieldOptions = function readFieldOptions(fields, arg1, arg2, fromJson) {
+  let closure_0 = arg1;
   fields = fields.fields;
   const found = fields.find((localName) => {
-    let tmp = localName.localName == arg1;
+    let tmp = localName.localName == closure_0;
     if (!tmp) {
-      tmp = arg1 == arg1;
+      tmp = arg1 == closure_0;
     }
     return tmp;
   });
@@ -128,11 +131,12 @@ ScalarType.readFieldOptions = function readFieldOptions(fields, arg1, arg2, from
   return fromJsonResult;
 };
 ScalarType.readFieldOption = function readFieldOption(fields, arg1, arg2, fromJson) {
+  let closure_0 = arg1;
   fields = fields.fields;
   const found = fields.find((localName) => {
-    let tmp = localName.localName == arg1;
+    let tmp = localName.localName == closure_0;
     if (!tmp) {
-      tmp = arg1 == arg1;
+      tmp = arg1 == closure_0;
     }
     return tmp;
   });

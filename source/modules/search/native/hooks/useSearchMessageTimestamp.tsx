@@ -1,27 +1,29 @@
-// Module ID: 15248
-// Function ID: 115118
+// Module ID: 15364
+// Function ID: 117288
 // Name: useSearchMessageTimestamp
-// Dependencies: []
+// Dependencies: [31, 21, 6884, 2]
 // Exports: useSearchMessageTimestamp
 
-// Module 15248 (useSearchMessageTimestamp)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/search/native/hooks/useSearchMessageTimestamp.tsx");
+// Module 15364 (useSearchMessageTimestamp)
+import result from "result";
+
+const require = arg1;
+const result = require("getRelativeTimestamp").fileFinishedImporting("modules/search/native/hooks/useSearchMessageTimestamp.tsx");
 
 export const useSearchMessageTimestamp = function useSearchMessageTimestamp(message, channel) {
-  channel = message;
-  const importDefault = channel;
+  let closure_0 = message;
+  let closure_1 = channel;
   const items = [message, channel];
   return React.useMemo(() => {
-    let obj = arg1(closure_2[1]);
-    let id = arg0.id;
+    let obj = channel(outer1_2[1]);
+    let id = message.id;
     if (null == id) {
-      id = arg1.id;
+      id = channel.id;
     }
     const extractTimestampResult = obj.extractTimestamp(id);
-    obj = { timestamp: arg0(closure_2[2]).getRelativeTimestamp(extractTimestampResult, true) };
-    const obj3 = arg0(closure_2[2]);
-    obj.timestampAccessibilityLabel = arg0(closure_2[2]).getRelativeTimestamp(extractTimestampResult, false);
+    obj = { timestamp: message(outer1_2[2]).getRelativeTimestamp(extractTimestampResult, true) };
+    const obj3 = message(outer1_2[2]);
+    obj.timestampAccessibilityLabel = message(outer1_2[2]).getRelativeTimestamp(extractTimestampResult, false);
     return obj;
   }, items);
 };

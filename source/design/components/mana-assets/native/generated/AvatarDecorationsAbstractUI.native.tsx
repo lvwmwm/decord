@@ -1,13 +1,13 @@
-// Module ID: 5865
-// Function ID: 49730
+// Module ID: 5870
+// Function ID: 49759
 // Name: AvatarDecorationsAbstractUI
-// Dependencies: []
+// Dependencies: [33, 5085, 5871, 2]
 // Exports: AvatarDecorationsAbstractUI
 
-// Module 5865 (AvatarDecorationsAbstractUI)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarDecorationsAbstractUI.native.tsx");
+// Module 5870 (AvatarDecorationsAbstractUI)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarDecorationsAbstractUI.native.tsx");
 
 export const AvatarDecorationsAbstractUI = function AvatarDecorationsAbstractUI(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const AvatarDecorationsAbstractUI = function AvatarDecorationsAbstractUI(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5871) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const AvatarDecorationsAbstractUI = function AvatarDecorationsAbstractUI(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

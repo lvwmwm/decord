@@ -1,37 +1,43 @@
-// Module ID: 9385
-// Function ID: 73184
+// Module ID: 9392
+// Function ID: 73225
 // Name: useEmojiAndSource
-// Dependencies: []
+// Dependencies: [5, 57, 31, 1838, 4991, 5516, 653, 3774, 624, 2]
 // Exports: useEmojiAndSource
 
-// Module 9385 (useEmojiAndSource)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-({ ExpressionSourceGuildRecord: closure_7, EmojiSourceDataTypes: closure_8, getEmojiSourceData: closure_9 } = arg1(dependencyMap[5]));
-const GuildFeatures = arg1(dependencyMap[6]).GuildFeatures;
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/emojis/hooks/useEmojiAndSource.tsx");
+// Module 9392 (useEmojiAndSource)
+import closure_2 from "_callSuper";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import { GuildFeatures } from "ME";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ ExpressionSourceGuildRecord: closure_7, EmojiSourceDataTypes: closure_8, getEmojiSourceData: closure_9 } = _callSuper);
+const result = require("result").fileFinishedImporting("modules/emojis/hooks/useEmojiAndSource.tsx");
 
 export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
+  let c3;
+  let c5;
+  let c6;
   let tmp12;
   let tmp14;
   let tmp7;
   emojiId = emojiId.emojiId;
-  const arg1 = emojiId;
   const refreshPositionKey = emojiId.refreshPositionKey;
-  const dependencyMap = refreshPositionKey;
-  let closure_2;
+  let c2;
   let callback;
   let React;
-  let closure_5;
-  let closure_6;
+  c5 = undefined;
+  c6 = undefined;
   let closure_7;
-  const items = [closure_6, closure_5];
-  const emoji = arg1(dependencyMap[8]).useStateFromStoresObject(items, () => {
-    let obj = closure_6;
+  const items = [c6, c5];
+  const emoji = emojiId(refreshPositionKey[8]).useStateFromStoresObject(items, () => {
+    let obj = c6;
     let customEmojiById = null;
     if (null != emojiId) {
       customEmojiById = obj.getCustomEmojiById(tmp);
@@ -46,9 +52,9 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
       if (null != customEmojiById) {
         guildId = customEmojiById.guildId;
       }
-      obj.joinedEmojiSourceGuildRecord = closure_5.getGuild(guildId);
+      obj.joinedEmojiSourceGuildRecord = c5.getGuild(guildId);
     } else {
-      obj = { <string:214891214>: "o", <string:881933519>: "o" };
+      obj = { emoji: null, joinedEmojiSourceGuildRecord: null };
     }
     return obj;
   });
@@ -66,9 +72,9 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
   if (tmp5) {
     tmp5 = null != emojiId;
   }
-  closure_2 = tmp5;
-  const obj = arg1(dependencyMap[8]);
-  [tmp7, closure_3] = callback(React.useState(tmp5), 2);
+  c2 = tmp5;
+  let obj = emojiId(refreshPositionKey[8]);
+  [tmp7, c3] = callback(React.useState(tmp5), 2);
   const sourceType = callback(React.useState(null), 2);
   React = sourceType[1];
   let fromGuildRecord = null;
@@ -76,9 +82,9 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
     fromGuildRecord = closure_7.createFromGuildRecord(joinedEmojiSourceGuildRecord);
   }
   const tmp6 = callback(React.useState(tmp5), 2);
-  [tmp12, closure_5] = callback(React.useState(fromGuildRecord), 2);
+  [tmp12, c5] = callback(React.useState(fromGuildRecord), 2);
   const tmp11 = callback(React.useState(fromGuildRecord), 2);
-  [tmp14, closure_6] = callback(React.useState(null), 2);
+  [tmp14, c6] = callback(React.useState(null), 2);
   closure_7 = React.useRef(refreshPositionKey);
   const effect = React.useEffect(() => {
     closure_7.current = refreshPositionKey;
@@ -88,16 +94,15 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
     function _fetch() {
       // CreateGeneratorClosureLongIndex (0x67)
       const obj = callback(tmp);
-      const _fetch = obj;
       return obj(...arguments);
     }
     if (null != closure_7.current) {
       closure_7.current();
     }
-    if (tmp5) {
-      function fetch() {
+    if (c2) {
+      (function fetch() {
         return _fetch(...arguments);
-      }();
+      })();
     } else if (null != closure_7.current) {
       closure_7.current();
     }

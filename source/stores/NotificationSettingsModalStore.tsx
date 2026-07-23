@@ -1,9 +1,22 @@
-// Module ID: 16077
-// Function ID: 123507
+// Module ID: 16194
+// Function ID: 125680
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1352, 5070, 1907, 4051, 1838, 4325, 653, 5071, 566, 686, 2]
 
-// Module 16077 (_isNativeReflectConstruct)
+// Module 16194 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { isGuildSelectableChannelType as closure_7 } from "_callSuper";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import ME from "ME";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,34 +26,22 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = arg1(dependencyMap[5]).isGuildSelectableChannelType;
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-let closure_12 = importDefault(dependencyMap[10]);
-const tmp2 = arg1(dependencyMap[11]);
-const FormStates = tmp2.FormStates;
-const ChannelTypes = tmp2.ChannelTypes;
-const CLOSED = FormStates.CLOSED;
-let tmp3 = (Store) => {
+const FormStates = ME.FormStates;
+const ChannelTypes = ME.ChannelTypes;
+let CLOSED = FormStates.CLOSED;
+let tmp3 = ((Store) => {
   class NotificationSettingsModalStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, NotificationSettingsModalStore);
-      obj = closure_5(NotificationSettingsModalStore);
-      tmp2 = closure_4;
-      if (closure_17()) {
+      tmp = outer1_2(this, NotificationSettingsModalStore);
+      obj = outer1_5(NotificationSettingsModalStore);
+      tmp2 = outer1_4;
+      if (outer1_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -49,46 +50,45 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = NotificationSettingsModalStore;
   callback2(NotificationSettingsModalStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const NotificationSettingsModalStore = this;
-      this.waitFor(closure_8, closure_9, closure_10, closure_11, closure_12);
-      const items = [closure_12, closure_9, closure_11];
+      const self = this;
+      this.waitFor(outer1_8, outer1_9, outer1_10, outer1_11, outer1_12);
+      const items = [outer1_12, outer1_9, outer1_11];
       this.syncWith(items, () => self.isOpen());
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "isOpen",
     value() {
-      return closure_16 !== constants.CLOSED;
+      return outer1_16 !== outer1_13.CLOSED;
     }
   };
   items[1] = obj;
   obj = {
     key: "getProps",
     value() {
-      const categories = categories.getCategories(closure_15);
+      const categories = outer1_8.getCategories(outer1_15);
       return {
-        guildId: closure_15,
+        guildId: outer1_15,
         categories,
-        guild: guild.getGuild(closure_15),
-        memberCount: memberCount.getMemberCount(closure_15),
-        suppressEveryone: store.isSuppressEveryoneEnabled(closure_15),
-        suppressRoles: store.isSuppressRolesEnabled(closure_15),
-        mobilePush: store.isMobilePushEnabled(closure_15),
-        muted: store.isMuted(closure_15),
-        muteConfig: store.getMuteConfig(closure_15),
-        messageNotifications: store.getMessageNotifications(closure_15),
-        channelOverrides: store.getChannelOverrides(closure_15),
-        channels: NotificationSettingsModalStore(closure_1[12])(categories._categories, categories, (channel) => {
+        guild: outer1_11.getGuild(outer1_15),
+        memberCount: outer1_10.getMemberCount(outer1_15),
+        suppressEveryone: outer1_12.isSuppressEveryoneEnabled(outer1_15),
+        suppressRoles: outer1_12.isSuppressRolesEnabled(outer1_15),
+        mobilePush: outer1_12.isMobilePushEnabled(outer1_15),
+        muted: outer1_12.isMuted(outer1_15),
+        muteConfig: outer1_12.getMuteConfig(outer1_15),
+        messageNotifications: outer1_12.getMessageNotifications(outer1_15),
+        channelOverrides: outer1_12.getChannelOverrides(outer1_15),
+        channels: NotificationSettingsModalStore(outer1_1[12])(categories._categories, categories, (channel) => {
           const type = channel.channel.type;
-          let tmp = callback(type);
+          let tmp = outer2_7(type);
           if (!tmp) {
-            tmp = type === constants.GUILD_CATEGORY;
+            tmp = type === outer2_14.GUILD_CATEGORY;
           }
           return tmp;
         })
@@ -97,18 +97,18 @@ let tmp3 = (Store) => {
   };
   items[2] = obj;
   return callback(NotificationSettingsModalStore, items);
-}(importDefault(dependencyMap[13]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "NotificationSettingsModalStore";
-tmp3 = new tmp3(importDefault(dependencyMap[14]), {
+tmp3 = new tmp3(require("dispatcher"), {
   NOTIFICATION_SETTINGS_MODAL_OPEN: function handleFormOpen(guildId) {
-    const CLOSED = FormStates.OPEN;
+    const OPEN = FormStates.OPEN;
     guildId = guildId.guildId;
   },
   NOTIFICATION_SETTINGS_MODAL_CLOSE: function handleFormClose() {
     const CLOSED = FormStates.CLOSED;
-    let closure_15 = null;
+    let c15 = null;
   }
 });
-const result = arg1(dependencyMap[15]).fileFinishedImporting("stores/NotificationSettingsModalStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/NotificationSettingsModalStore.tsx");
 
 export default tmp3;

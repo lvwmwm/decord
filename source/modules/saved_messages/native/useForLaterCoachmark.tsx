@@ -1,23 +1,25 @@
-// Module ID: 15013
-// Function ID: 113040
+// Module ID: 15129
+// Function ID: 115208
 // Name: CoachmarkImg
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1345, 33, 1334, 4130, 7954, 9535, 5802, 1212, 8563, 2]
 // Exports: default
 
-// Module 15013 (CoachmarkImg)
+// Module 15129 (CoachmarkImg)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { Image } from "get ActivityIndicator";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function CoachmarkImg() {
-  const obj = { source: importDefault(dependencyMap[7]), style: callback2().imageContainer };
-  return <Image {...obj} />;
+  const obj = { source: importDefault(7954), style: callback2().imageContainer };
+  return <Image source={importDefault(7954)} style={callback2().imageContainer} />;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const Image = arg1(dependencyMap[2]).Image;
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-const jsx = arg1(dependencyMap[4]).jsx;
-let closure_8 = arg1(dependencyMap[5]).DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
-let closure_9 = arg1(dependencyMap[6]).createStyles({ imageContainer: { "Null": "Array", "Null": "isArray" } });
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
+let closure_8 = require("DismissibleContent").DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: { width: 100, height: 80 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
 
 export default function useForLaterCoachmark(targetRef) {
   if (obj.useConfig({ location: "forLaterCoachmark" }).enabled) {
@@ -26,29 +28,28 @@ export default function useForLaterCoachmark(targetRef) {
   } else {
     items1 = [];
   }
-  const obj = importDefault(dependencyMap[8]);
-  const tmp2 = callback(arg1(dependencyMap[9]).useSelectedDismissibleContent(items1, undefined, true), 2);
-  const first = tmp2[0];
-  const arg1 = first;
-  const importDefault = tmp4;
+  obj = importDefault(9535);
+  const tmp2 = callback(first(5802).useSelectedDismissibleContent(items1, undefined, true), 2);
+  first = tmp2[0];
+  importDefault = tmp4;
   const items2 = [tmp2[1], first];
   const memo = React.useMemo(() => {
     const obj = {};
-    const intl = first(closure_2[10]).intl;
-    obj.title = intl.string(first(closure_2[10]).t.qPbFK2);
-    const intl2 = first(closure_2[10]).intl;
-    obj.description = intl2.string(first(closure_2[10]).t.URrJq1);
+    const intl = first(outer1_2[10]).intl;
+    obj.title = intl.string(first(outer1_2[10]).t.qPbFK2);
+    const intl2 = first(outer1_2[10]).intl;
+    obj.description = intl2.string(first(outer1_2[10]).t.URrJq1);
     obj.position = "bottom";
-    obj.visible = first === closure_8;
+    obj.visible = first === outer1_8;
     obj.onDismiss = function onDismiss() {
-      callback(constants.USER_DISMISS);
+      outer1_1(outer2_6.USER_DISMISS);
     };
     obj.renderImgComponent = function renderImgComponent() {
-      return callback2(closure_10, {});
+      return outer2_7(outer2_10, {});
     };
     return obj;
   }, items2);
-  const obj2 = arg1(dependencyMap[9]);
-  const coachmark = arg1(dependencyMap[11]).useCoachmark(targetRef, memo);
+  const obj2 = first(5802);
+  const coachmark = first(8563).useCoachmark(targetRef, memo);
   return tmp2[1];
 };

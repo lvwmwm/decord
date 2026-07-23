@@ -1,26 +1,27 @@
-// Module ID: 13742
-// Function ID: 103929
+// Module ID: 13856
+// Function ID: 106085
 // Name: route
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [653, 10095, 1212, 13857, 13859, 2]
 
-// Module 13742 (route)
-let obj = {
+// Module 13856 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.3fe7U5);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["3fe7U5"]);
   },
   parent: null,
-  IconComponent: require("__exportStarResult1").PuzzlePieceIcon,
+  IconComponent: require("PuzzlePieceIcon").PuzzlePieceIcon,
   screen: obj
 };
 obj = {
-  route: require("__exportStarResult1").UserSettingsSections.CONNECTIONS,
+  route: require("ME").UserSettingsSections.CONNECTIONS,
   getComponent() {
-    return require(dependencyMap[4]).default;
+    return require(13859) /* onPress */.default;
   }
 };
-const route = require("__exportStarResult1").createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ConnectionsSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ConnectionsSetting.tsx");
 
 export default route;

@@ -1,16 +1,17 @@
-// Module ID: 4662
-// Function ID: 40473
+// Module ID: 4665
+// Function ID: 40491
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 4294967295, 4294967295]
+// Dependencies: [6, 7, 15, 17, 18, 4666, 22, 4670, 491, 631, 2]
 // Exports: isResolvedUpload
 
-// Module 4662 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
+// Module 4665 (_isNativeReflectConstruct)
+import apply from "apply";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -20,26 +21,26 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-const obj = { REACT_NATIVE: 0, [0]: "REACT_NATIVE", WEB: 1, [1]: "WEB" };
-const tmp2 = (EventEmitter) => {
+let obj = { REACT_NATIVE: 0, [0]: "REACT_NATIVE", WEB: 1, [1]: "WEB" };
+const tmp2 = ((EventEmitter) => {
   class Upload {
     constructor(arg0) {
       self = this;
-      tmp = __exportStarResult1(this, Upload);
-      obj = closure_7(Upload);
-      tmp2 = closure_6;
-      if (closure_10()) {
+      tmp = outer1_4(this, Upload);
+      obj = outer1_7(Upload);
+      tmp2 = outer1_6;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, [], closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, [], outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
       tmp2Result.allowOptimization = true;
       tmp2Result.item = EventEmitter;
-      if (EventEmitter.platform === closure_9.REACT_NATIVE) {
+      if (EventEmitter.platform === outer1_9.REACT_NATIVE) {
         uri = EventEmitter.id;
         tmp11 = null;
         if (null == uri) {
@@ -47,9 +48,9 @@ const tmp2 = (EventEmitter) => {
         }
         tmp2Result.id = uri;
         tmp12 = Upload;
-        tmp13 = closure_3;
+        tmp13 = outer1_3;
         num3 = 5;
-        obj4 = Upload(closure_3[5]);
+        obj4 = Upload(outer1_3[5]);
         obj = {};
         ({ uri: obj5.uri, filename: obj5.overrideFilename, mimeType: obj5.overrideType } = EventEmitter);
         file = obj4.getFile(obj);
@@ -59,18 +60,18 @@ const tmp2 = (EventEmitter) => {
         id = EventEmitter.id;
         tmp15 = null;
         if (null == id) {
-          tmp7 = closure_1;
-          tmp8 = closure_3;
+          tmp7 = outer1_1;
+          tmp8 = outer1_3;
           num = 6;
-          obj2 = closure_1(closure_3[6]);
+          obj2 = outer1_1(outer1_3[6]);
           str = "upload";
           id = obj2.uniqueId("upload");
         }
         tmp2Result.id = id;
-        tmp9 = closure_2;
-        tmp10 = closure_3;
+        tmp9 = outer1_2;
+        tmp10 = outer1_3;
         num2 = 7;
-        obj3 = closure_2(closure_3[7]);
+        obj3 = outer1_2(outer1_3[7]);
         tmp2Result.classification = obj3.classifyFile(EventEmitter.file);
         str2 = "image";
         tmp2Result.isImage = "image" === tmp2Result.classification;
@@ -81,14 +82,13 @@ const tmp2 = (EventEmitter) => {
         tmp2Result.origin = EventEmitter.origin;
       }
       ({ isThumbnail: tmp6.isThumbnail, clip: tmp6.clip } = EventEmitter);
-      obj6 = Upload(closure_3[8]);
+      obj6 = Upload(outer1_3[8]);
       tmp2Result.uniqueId = obj6.v4();
       tmp2Result.spoiler = false;
       tmp2Result.description = null;
       return tmp2Result;
     }
   }
-  const arg1 = Upload;
   callback2(Upload, EventEmitter);
   let obj = {
     key: "cancel",
@@ -105,8 +105,8 @@ const tmp2 = (EventEmitter) => {
   };
   items[1] = obj;
   return callback(Upload, items);
-}(arg1(dependencyMap[9]).EventEmitter);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("lib/uploader/Upload.tsx");
+})(require("EventEmitter").EventEmitter);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("lib/uploader/Upload.tsx");
 
 export default tmp2;
 export const UploadPlatform = obj;

@@ -1,10 +1,12 @@
 // Module ID: 859
-// Function ID: 9621
+// Function ID: 9622
 // Name: isAttributeObject
-// Dependencies: []
+// Dependencies: [57]
 // Exports: serializeAttributes
 
 // Module 859 (isAttributeObject)
+import _slicedToArray from "_slicedToArray";
+
 function isAttributeObject(value) {
   let hasItem = "object" === typeof value;
   if (hasItem) {
@@ -75,7 +77,6 @@ function attributeValueToTypedAttributeValue(value, arg1) {
   }
   obj2 = {};
 }
-let closure_0 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export { attributeValueToTypedAttributeValue };
@@ -89,8 +90,8 @@ export const serializeAttributes = function serializeAttributes(attributes, arg1
   }
   const entries = Object.entries(obj);
   while (tmp3 !== undefined) {
-    let tmp5 = callback;
-    let tmp6 = callback(tmp4, 2);
+    let tmp5 = _slicedToArray;
+    let tmp6 = _slicedToArray(tmp4, 2);
     let first = tmp6[0];
     let tmp8 = attributeValueToTypedAttributeValue;
     let tmp9 = tmp;
@@ -101,7 +102,7 @@ export const serializeAttributes = function serializeAttributes(attributes, arg1
       let tmp14 = tmp10;
       obj[first] = tmp11;
     }
-    // continue
+    continue;
   }
   return obj;
 };

@@ -1,53 +1,58 @@
-// Module ID: 11176
-// Function ID: 86899
+// Module ID: 11186
+// Function ID: 86949
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 1838, 11165, 566, 7929, 11187, 11158, 2]
 // Exports: useBannerBots
 
-// Module 11176 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11186 (_createForOfIteratorHelperLoose)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,25 +89,21 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useBannerBots.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useBannerBots.tsx");
 
 export const useBannerBots = function useBannerBots(context) {
   let tmp10;
   context = context.context;
-  let arg1;
-  let obj = function useAppsMap(context) {
-    let obj = first1(closure_1[5]);
-    obj = { 0: 300000, 0: false, -9223372036854775808: 30, "Bool(false)": 2, "Bool(false)": 0, context: context.context };
+  let first1;
+  let obj = (function useAppsMap(context) {
+    let obj = first1(outer1_1[5]);
+    obj = { context: context.context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true };
     const apps = obj.useApplicationsInContext(obj).apps;
-    const first1 = apps;
     const items = [apps];
-    return React.useMemo(() => {
+    return outer1_2.useMemo(() => {
       let done;
       const map = new Map();
-      const tmp = callback(apps);
+      const tmp = outer2_5(apps);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -115,18 +116,17 @@ export const useBannerBots = function useBannerBots(context) {
       }
       return map;
     }, items);
-  }({ context });
-  let obj1 = arg1(dependencyMap[5]);
-  obj = { 0: 300000, 0: false, -9223372036854775808: 30, "Bool(false)": 2, "Bool(false)": 0, context };
-  const apps = obj1.useApplicationsInContext(obj).apps;
-  const obj4 = function useCommandsMap(context) {
-    const commands = first1(closure_1[5]).useApplicationCommandsInContext({ context: context.context, includeBuiltIn: false }).commands;
-    const first1 = commands;
+  })({ context });
+  let obj1 = first1(11187);
+  obj = { context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true };
+  let apps = obj1.useApplicationsInContext(obj).apps;
+  const obj4 = (function useCommandsMap(context) {
+    const commands = first1(outer1_1[5]).useApplicationCommandsInContext({ context: context.context, includeBuiltIn: false }).commands;
     const items = [commands];
-    return React.useMemo(() => {
+    return outer1_2.useMemo(() => {
       let done;
       const map = new Map();
-      const tmp = callback(commands);
+      const tmp = outer2_5(commands);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -139,12 +139,11 @@ export const useBannerBots = function useBannerBots(context) {
       }
       return map;
     }, items);
-  }({ context });
-  const tmp = function useFrecencyCommandIds(context) {
+  })({ context });
+  let tmp = (function useFrecencyCommandIds(context) {
     context = context.context;
-    const first1 = context;
-    let obj = first1(closure_1[3]);
-    const items = [closure_3];
+    let obj = first1(outer1_1[3]);
+    const items = [outer1_3];
     obj = {
       channel: context.channel,
       guild: obj.useStateFromStores(items, () => {
@@ -153,30 +152,30 @@ export const useBannerBots = function useBannerBots(context) {
         if (null != channel) {
           guild_id = channel.guild_id;
         }
-        return guild.getGuild(guild_id);
+        return outer2_3.getGuild(guild_id);
       })
     };
-    return first1(closure_1[4]).useTopCommands(obj);
-  }({ context });
+    return first1(outer1_1[4]).useTopCommands(obj);
+  })({ context });
   obj = {};
-  const channel = context.channel;
+  let channel = context.channel;
   let guild_id;
   if (null != channel) {
     guild_id = channel.guild_id;
   }
   obj.guildId = guild_id;
   obj.fetchesShelf = true;
-  const activityApplications = arg1(dependencyMap[6]).useActivityApplications(obj);
-  const obj5 = arg1(dependencyMap[6]);
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => recentApplicationCommandMetadata.getRecentApplicationCommandMetadata());
+  const activityApplications = first1(11158).useActivityApplications(obj);
+  const obj5 = first1(11158);
+  let items = [_isNativeReflectConstruct];
+  const stateFromStores = first1(566).useStateFromStores(items, () => outer1_4.getRecentApplicationCommandMetadata());
   let value = null;
   if (null != stateFromStores) {
     value = obj.get(stateFromStores.applicationId);
   }
-  arg1 = value;
+  first1 = value;
   const tmp6 = _createForOfIteratorHelperLoose(tmp);
-  const iter = tmp6();
+  let iter = tmp6();
   let tmp7 = value;
   let iter2 = iter;
   let tmp9 = value;
@@ -192,7 +191,7 @@ export const useBannerBots = function useBannerBots(context) {
         let tmp15 = value1;
         if (null != value1) {
           if (null == tmp7) {
-            arg1 = value1;
+            first1 = value1;
             tmp12 = value1;
             tmp13 = tmp8;
             let tmp18 = value1;
@@ -215,7 +214,7 @@ export const useBannerBots = function useBannerBots(context) {
       }
       let iter3 = tmp6();
       tmp7 = tmp12;
-      let tmp8 = tmp13;
+      tmp8 = tmp13;
       iter2 = iter3;
       tmp9 = tmp12;
       if (iter3.done) {
@@ -226,7 +225,7 @@ export const useBannerBots = function useBannerBots(context) {
   if (null == tmp9) {
     if (apps.length > 0) {
       const first = apps[0];
-      arg1 = first;
+      first1 = first;
       tmp9 = first;
     }
     let tmp19 = tmp9;
@@ -250,8 +249,7 @@ export const useBannerBots = function useBannerBots(context) {
     }
   }
   if (null == tmp19) {
-    const first1 = activityApplications[0];
-    arg1 = first1;
+    first1 = activityApplications[0];
     found = activityApplications[1];
     let tmp22 = first1;
   } else {

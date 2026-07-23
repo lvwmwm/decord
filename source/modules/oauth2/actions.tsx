@@ -1,12 +1,20 @@
-// Module ID: 8954
-// Function ID: 70603
+// Module ID: 8961
+// Function ID: 70644
 // Name: getLocationContextServer
-// Dependencies: []
+// Dependencies: [5, 1348, 1906, 653, 507, 5590, 484, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 8954 (getLocationContextServer)
+// Module 8961 (getLocationContextServer)
+import dispatchLogout from "dispatchLogout";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function getLocationContextServer() {
-  const basicChannel = basicChannel.getBasicChannel(channelId.getChannelId());
+  basicChannel = basicChannel.getBasicChannel(channelId.getChannelId());
   const obj = {};
   let guild_id;
   if (null != basicChannel) {
@@ -39,57 +47,46 @@ function getLocationContextServer() {
 function _authorize() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _authorize = obj;
   return obj(...arguments);
 }
 function _fetchAuthorization() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchAuthorization = obj;
   return obj(...arguments);
 }
 function _startSamsungAuthorization() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _startSamsungAuthorization = obj;
   return obj(...arguments);
 }
 function _fetchChannels() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchChannels = obj;
   return obj(...arguments);
 }
 function _verifyUserCode() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _verifyUserCode = obj;
   return obj(...arguments);
 }
 function _finishUserCode() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _finishUserCode = obj;
   return obj(...arguments);
 }
 function _finishUserCodeTwoWayLinkError() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _finishUserCodeTwoWayLinkError = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ ChannelTypes: closure_6, Endpoints: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/oauth2/actions.tsx");
+({ ChannelTypes: closure_6, Endpoints: closure_7 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/oauth2/actions.tsx");
 
 export { getLocationContextServer };
 export const acceptWhitelist = function acceptWhitelist(token) {
-  const HTTP = arg1(dependencyMap[4]).HTTP;
-  let obj = { url: obj.OAUTH2_WHITELIST_ACCEPT, query: obj, oldFormErrors: true };
-  obj = { token, rejectWithError: arg1(dependencyMap[4]).rejectWithMigratedError() };
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  obj = { url: obj.OAUTH2_WHITELIST_ACCEPT, query: obj, oldFormErrors: true };
+  obj = { token, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
   return HTTP.post(obj);
 };
 export const authorize = function authorize() {
@@ -98,15 +95,15 @@ export const authorize = function authorize() {
 export const fetchAuthorization = function fetchAuthorization(arg0) {
   return _fetchAuthorization(...arguments);
 };
-export const startSamsungAuthorization = function startSamsungAuthorization(arg0, closure_45, closure_1, arg3, closure_5) {
+export const startSamsungAuthorization = function startSamsungAuthorization(closure_0, outer1_45, outer1_1, arg3, outer1_5) {
   return _startSamsungAuthorization(...arguments);
 };
 export const fetchChannels = function fetchChannels(guildId) {
   return _fetchChannels(...arguments);
 };
 export const logoutWithRedirect = function logoutWithRedirect(pathname, TTI_test) {
-  const obj = importDefault(dependencyMap[5]);
-  obj.logout(TTI_test, TTI_test(dependencyMap[6]).getLoginPath(pathname.pathname + pathname.search, false));
+  const obj = importDefault(5590);
+  obj.logout(TTI_test, require(484) /* getAuthenticationPath */.getLoginPath(pathname.pathname + pathname.search, false));
 };
 export const verifyUserCode = function verifyUserCode(arg0) {
   return _verifyUserCode(...arguments);

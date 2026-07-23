@@ -1,10 +1,11 @@
-// Module ID: 13381
-// Function ID: 101715
-// Dependencies: []
+// Module ID: 13495
+// Function ID: 103871
+// Dependencies: [1569, 2, 13496]
 
-// Module 13381
-const result = importDefault(dependencyMap[0]).setNavigationBarContrastEnforced(false);
-const importDefaultResult = importDefault(dependencyMap[0]);
-const result1 = arg1(dependencyMap[1]).fileFinishedImporting("modules/keyboard/native/AnimatedKeyboardProvider.android.tsx");
+// Module 13495
+import importDefaultResult from "enforcing";
 
-export default importDefault(dependencyMap[2]);
+const result = require("enforcing").setNavigationBarContrastEnforced(false);
+const result1 = require("mutable").fileFinishedImporting("modules/keyboard/native/AnimatedKeyboardProvider.android.tsx");
+
+export { default } from "mutable";

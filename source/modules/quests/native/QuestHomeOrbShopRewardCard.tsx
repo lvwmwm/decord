@@ -1,46 +1,49 @@
-// Module ID: 13868
-// Function ID: 104881
+// Module ID: 13982
+// Function ID: 107037
 // Name: QuestHomeOrbShopRewardCard
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 33, 4130, 8663, 689, 566, 3776, 6785, 8731, 8715, 8718, 2]
 // Exports: default
 
-// Module 13868 (QuestHomeOrbShopRewardCard)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { width: arg1(dependencyMap[5]).COLLECTIBLES_SHOP_CARD_WIDTH, height: arg1(dependencyMap[5]).COLLECTIBLES_SHOP_CARD_HEIGHT, overflow: "hidden", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.card = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/quests/native/QuestHomeOrbShopRewardCard.tsx");
+// Module 13982 (QuestHomeOrbShopRewardCard)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+let require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_WIDTH, height: require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_HEIGHT, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/native/QuestHomeOrbShopRewardCard.tsx");
 
 export default function QuestHomeOrbShopRewardCard(product) {
   product = product.product;
-  const arg1 = product;
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores(closure_2[8]).canUseShopDiscounts(currentUser.getCurrentUser()));
-  const importDefault = stateFromStores;
+  const require = product;
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores(outer1_2[8]).canUseShopDiscounts(outer1_5.getCurrentUser()));
   const items1 = [product, stateFromStores];
   const memo = React.useMemo(() => {
-    let obj = product(closure_2[9]);
-    obj = { product, hasShopDiscount: stateFromStores };
+    let obj = product(outer1_2[9]);
+    obj = { product: closure_0, hasShopDiscount: stateFromStores };
     return obj.getProductOrbPrice(obj);
   }, items1);
-  arg1(dependencyMap[10]);
+  require(8731) /* getProductName */;
   let tmp6 = null;
   if (null != memo) {
-    obj = { style: tmp.card, accessibilityLabel: tmp5 };
-    obj = { "Null": 60, "Null": 0, "Null": 0, product };
-    const items2 = [callback(importDefault(dependencyMap[11]), obj), ];
-    const obj1 = { product };
-    items2[1] = callback(importDefault(dependencyMap[12]), obj1);
+    obj = { style: tmp.card, accessible: true, accessibilityRole: "text", accessibilityLabel: tmp5 };
+    obj = { product, isPurchased: false, solidBackground: true };
+    const items2 = [callback(stateFromStores(8715), obj), ];
+    const obj1 = { product, collectibleProductState: null, hidePrice: true };
+    items2[1] = callback(stateFromStores(8718), obj1);
     obj.children = items2;
     tmp6 = callback2(View, obj);
   }
   return tmp6;
 };
-export const QUEST_HOME_ORB_SHOP_REWARD_CARD_HEIGHT = arg1(dependencyMap[5]).COLLECTIBLES_SHOP_CARD_HEIGHT;
+export const QUEST_HOME_ORB_SHOP_REWARD_CARD_HEIGHT = require("CollectiblesShopCardInternalV2").COLLECTIBLES_SHOP_CARD_HEIGHT;

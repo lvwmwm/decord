@@ -1,24 +1,24 @@
-// Module ID: 8263
-// Function ID: 65207
+// Module ID: 8269
+// Function ID: 65244
 // Name: set
-// Dependencies: [1348, 653, 621]
+// Dependencies: [8270, 8265, 2]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId
 
-// Module 8263 (set)
-import module_621 from "module_621";
+// Module 8269 (set)
+import set from "set";
 
-const set = new Set(Object.values(require("_isNativeReflectConstruct").LEGACY_BADGE_ID_MAP));
-const result = module_621.fileFinishedImporting("modules/badges/BadgeIdResolution.tsx");
+let set = new Set(Object.values(require("LEGACY_BADGE_ID_MAP").LEGACY_BADGE_ID_MAP));
+const result = set.fileFinishedImporting("modules/badges/BadgeIdResolution.tsx");
 
 export const legacyBadgeIdToBadgeId = function legacyBadgeIdToBadgeId(arg0) {
-  return require(dependencyMap[0]).LEGACY_BADGE_ID_MAP[arg0];
+  return require(8270) /* LEGACY_BADGE_ID_MAP */.LEGACY_BADGE_ID_MAP[arg0];
 };
 export const resolveProfileBadgeId = function resolveProfileBadgeId(id) {
-  const tmp = require(dependencyMap[0]).LEGACY_BADGE_ID_MAP[id];
+  const tmp = require(8270) /* LEGACY_BADGE_ID_MAP */.LEGACY_BADGE_ID_MAP[id];
   if (null != tmp) {
     return tmp;
   } else {
-    const tmp4 = require(dependencyMap[1]).BadgeId[id.toUpperCase(id)];
+    const tmp4 = require(8265) /* BadgeId */.BadgeId[id.toUpperCase(id)];
     let tmp5;
     if ("number" === typeof tmp4) {
       tmp5 = tmp4;

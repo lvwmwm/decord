@@ -1,45 +1,49 @@
-// Module ID: 13535
-// Function ID: 102679
+// Module ID: 13649
+// Function ID: 104835
 // Name: RestrictedAccountRedirect
-// Dependencies: []
+// Dependencies: [31, 27, 3767, 1849, 653, 7483, 33, 4130, 689, 13650, 1212, 5796, 566, 9234, 9181, 5165, 4543, 2]
 
-// Module 13535 (RestrictedAccountRedirect)
+// Module 13649 (RestrictedAccountRedirect)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { AnalyticsSections } from "ME";
+import { SafetySettingsNoticeType } from "SafetyToastType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function RestrictedAccountRedirect() {
-  const obj = {
-    label: arg1(dependencyMap[10]).t.zqv4nV,
+  let obj = {
+    label: require(1212) /* getSystemLocale */.t.zqv4nV,
     labelHook() {
-      let obj = callback(closure_2[11]);
-      obj = { screen: constants.SETTINGS_CONTENT_AND_SOCIAL };
+      let obj = outer1_0(outer1_2[11]);
+      obj = { screen: outer1_7.SETTINGS_CONTENT_AND_SOCIAL };
       obj.openUserSettings(obj);
     },
     noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   };
-  return callback(importDefault(dependencyMap[9]), obj);
+  return callback(importDefault(13650), obj);
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const AnalyticsSections = arg1(dependencyMap[4]).AnalyticsSections;
-const SafetySettingsNoticeType = arg1(dependencyMap[5]).SafetySettingsNoticeType;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let obj = {};
-obj = { paddingTop: importDefault(dependencyMap[8]).space.PX_24, gap: importDefault(dependencyMap[8]).space.PX_24 };
+obj = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_24 };
 obj.header = obj;
-let closure_11 = arg1(dependencyMap[7]).createStyles(obj);
-const obj2 = arg1(dependencyMap[7]);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
-  let obj = arg1(dependencyMap[12]);
+  let obj = require(566) /* initialize */;
   const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = arg1(dependencyMap[13]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
+  let obj1 = require(9234) /* handleOpenEmailVerification */;
   const bannerText = obj1.getBannerText(stateFromStores);
   const tmp = callback2();
-  const items1 = [closure_5];
-  const stateFromStores1 = arg1(dependencyMap[12]).useStateFromStores(items1, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().length > 0);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_5.getBlockedOrIgnoredIDs().length > 0);
   const callback = importAllResult.useCallback(() => {
-    callback(closure_2[14]).open();
+    outer1_1(outer1_2[14]).open();
   }, []);
   if (null != bannerText) {
     obj = { style: tmp.header };
@@ -55,10 +59,10 @@ const memoResult = importAllResult.memo(() => {
       obj1 = {};
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       obj1.onPress = callback;
-      obj.trailing = callback(arg1(dependencyMap[16]).Button, obj1);
+      obj.trailing = callback(require(4543) /* Button */.Button, obj1);
       obj.start = true;
       obj.end = true;
-      tmp12 = callback(arg1(dependencyMap[15]).TableRow, obj);
+      tmp12 = callback(require(5165) /* TableRowInner */.TableRow, obj);
     }
     items2[1] = tmp12;
     obj.children = items2;
@@ -70,6 +74,6 @@ const memoResult = importAllResult.memo(() => {
   }
   return tmp7Result;
 });
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
 
 export default memoResult;

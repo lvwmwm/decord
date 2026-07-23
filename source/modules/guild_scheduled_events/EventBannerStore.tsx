@@ -1,38 +1,39 @@
-// Module ID: 15623
-// Function ID: 119286
+// Module ID: 15740
+// Function ID: 121459
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1354, 566, 686, 2]
 
-// Module 15623 (_isNativeReflectConstruct)
+// Module 15740 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { GuildScheduledEventStatus } from "GUILD_EVENT_MAX_NAME_LENGTH";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const GuildScheduledEventStatus = arg1(dependencyMap[5]).GuildScheduledEventStatus;
 let closure_6 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class EventBannerStore {
     constructor() {
       self = this;
       tmp = EventBannerStore(this, EventBannerStore);
-      obj = closure_3(EventBannerStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(EventBannerStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,7 +42,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = EventBannerStore;
   callback2(EventBannerStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -51,6 +51,7 @@ let tmp2 = (PersistedStore) => {
         if (null == dismissedEventIds) {
           dismissedEventIds = {};
         }
+        const outer1_6 = dismissedEventIds;
       }
     }
   };
@@ -58,27 +59,26 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "isEventDismissed",
     value(arg0) {
-      return null != closure_6[arg0];
+      return null != outer1_6[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getState",
     value() {
-      return { dismissedEventIds: closure_6 };
+      return { dismissedEventIds: outer1_6 };
     }
   };
   items[2] = obj;
   return callback(EventBannerStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "EventBannerStore";
 tmp2.persistKey = "EventBanner";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   EVENT_BANNER_DISMISS: function handleDismiss(eventId) {
     const obj = {};
-    const merged = Object.assign(closure_6);
+    const merged = Object.assign(obj);
     obj[eventId.eventId] = true;
-    closure_6 = obj;
   },
   GUILD_SCHEDULED_EVENT_UPDATE: function handleEventUpdate(guildScheduledEvent) {
     guildScheduledEvent = guildScheduledEvent.guildScheduledEvent;
@@ -87,29 +87,27 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
         return false;
       }
     }
-    if (null == closure_6[guildScheduledEvent.id]) {
+    if (null == obj[guildScheduledEvent.id]) {
       return false;
     } else {
-      const obj = {};
-      const merged = Object.assign(closure_6);
+      obj = {};
+      const merged = Object.assign(obj);
       const id = guildScheduledEvent.id;
-      delete r0[r2];
-      closure_6 = obj;
+      delete tmp[tmp2];
     }
   },
   GUILD_SCHEDULED_EVENT_DELETE: function handleEventDelete(guildScheduledEvent) {
     guildScheduledEvent = guildScheduledEvent.guildScheduledEvent;
-    if (null == closure_6[guildScheduledEvent.id]) {
+    if (null == obj[guildScheduledEvent.id]) {
       return false;
     } else {
-      const obj = {};
-      const merged = Object.assign(closure_6);
+      obj = {};
+      const merged = Object.assign(obj);
       const id = guildScheduledEvent.id;
-      delete r0[r2];
-      closure_6 = obj;
+      delete tmp[tmp2];
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_scheduled_events/EventBannerStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_scheduled_events/EventBannerStore.tsx");
 
 export default tmp2;

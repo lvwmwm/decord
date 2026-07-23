@@ -1,9 +1,15 @@
-// Module ID: 10435
-// Function ID: 80514
+// Module ID: 10445
+// Function ID: 80564
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 10446, 636, 566, 686, 2]
 
-// Module 10435 (_isNativeReflectConstruct)
+// Module 10445 (_isNativeReflectConstruct)
+import isUndefinedOrNull from "isUndefinedOrNull";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +19,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +72,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -108,33 +114,27 @@ function updateActivities() {
       iter = iter2;
     } while (!iter2.done);
   }
-  let flag = !importDefault(dependencyMap[6])(items, closure_8);
+  let flag = !importDefault(636)(items, items);
   if (flag) {
-    closure_8 = items;
     flag = true;
   }
   return flag;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const items = [importDefault(dependencyMap[5])];
+let items = [require("_isNativeReflectConstruct")];
 let closure_8 = [];
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class FirstPartyRichPresenceStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, FirstPartyRichPresenceStore);
-      obj = closure_5(FirstPartyRichPresenceStore);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      tmp = outer1_2(this, FirstPartyRichPresenceStore);
+      obj = outer1_5(FirstPartyRichPresenceStore);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -143,26 +143,25 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = FirstPartyRichPresenceStore;
   callback2(FirstPartyRichPresenceStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.syncWith(closure_7, closure_12);
+      this.syncWith(outer1_7, outer1_12);
     }
   };
   const items = [obj, ];
   obj = {
     key: "getActivities",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[1] = obj;
   return callback(FirstPartyRichPresenceStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "FirstPartyRichPresenceStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]));
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/rich_presence/FirstPartyRichPresenceStore.tsx");
+tmp2 = new tmp2(require("dispatcher"));
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/rich_presence/FirstPartyRichPresenceStore.tsx");
 
 export default tmp2;

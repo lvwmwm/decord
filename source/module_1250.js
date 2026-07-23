@@ -1,6 +1,6 @@
 // Module ID: 1250
-// Function ID: 14060
-// Dependencies: []
+// Function ID: 14061
+// Dependencies: [1251, 1253, 1254, 1261, 1266, 1268, 1269, 1270, 1271]
 
 // Module 1250
 const self = this;
@@ -25,9 +25,9 @@ if (self2) {
         if (callResult) {
           continue;
         } else {
-          let tmp2 = closure_2;
-          let tmp3 = closure_2(arg1, arg0, key10007);
-          // continue
+          let tmp2 = self2;
+          let tmp3 = self2(arg1, arg0, key10007);
+          continue;
         }
         continue;
       }
@@ -53,7 +53,7 @@ if (self2) {
   obj = {
     enumerable: true,
     get() {
-        return require(dependencyMap[0]).makeDataFormatters;
+        return require(1251) /* makeDataFormatters */.makeDataFormatters;
       }
   };
   Object.defineProperty(exports, "makeDataFormatters", obj);
@@ -61,7 +61,7 @@ if (self2) {
   obj = {
     enumerable: true,
     get() {
-        return require(dependencyMap[1]).dataFormatterCache;
+        return require(1253) /* dataFormatterCache */.dataFormatterCache;
       }
   };
   Object.defineProperty(exports, "dataFormatterCache", obj);
@@ -69,7 +69,7 @@ if (self2) {
   const obj1 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[2]).FormatBuilder;
+        return require(1254) /* _isNativeReflectConstruct */.FormatBuilder;
       }
   };
   Object.defineProperty(exports, "FormatBuilder", obj1);
@@ -77,16 +77,16 @@ if (self2) {
   const obj2 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[2]).bindFormatValues;
+        return require(1254) /* _isNativeReflectConstruct */.bindFormatValues;
       }
   };
   Object.defineProperty(exports, "bindFormatValues", obj2);
-  fn(require(dependencyMap[3]), exports);
+  fn(require("module_1261"), exports);
   const _Object7 = Object;
   const obj3 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[4]).runtimeHashMessageKey;
+        return require(1266) /* runtimeHashMessageKey */.runtimeHashMessageKey;
       }
   };
   Object.defineProperty(exports, "runtimeHashMessageKey", obj3);
@@ -94,7 +94,7 @@ if (self2) {
   const obj4 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[5]).IntlManager;
+        return require(1268) /* DEFAULT_LOCALE */.IntlManager;
       }
   };
   Object.defineProperty(exports, "IntlManager", obj4);
@@ -102,7 +102,7 @@ if (self2) {
   const obj5 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[5]).DEFAULT_LOCALE;
+        return require(1268) /* DEFAULT_LOCALE */.DEFAULT_LOCALE;
       }
   };
   Object.defineProperty(exports, "DEFAULT_LOCALE", obj5);
@@ -110,7 +110,7 @@ if (self2) {
   const obj6 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[6]).InternalIntlMessage;
+        return require(1269) /* serializeAst */.InternalIntlMessage;
       }
   };
   Object.defineProperty(exports, "InternalIntlMessage", obj6);
@@ -118,7 +118,7 @@ if (self2) {
   const obj7 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[7]).createLoader;
+        return require(1270) /* MessageLoader */.createLoader;
       }
   };
   Object.defineProperty(exports, "createLoader", obj7);
@@ -126,7 +126,7 @@ if (self2) {
   const obj8 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[7]).loadAllMessagesInLocale;
+        return require(1270) /* MessageLoader */.loadAllMessagesInLocale;
       }
   };
   Object.defineProperty(exports, "loadAllMessagesInLocale", obj8);
@@ -134,7 +134,7 @@ if (self2) {
   const obj9 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[7]).waitForAllDefaultIntlMessagesLoaded;
+        return require(1270) /* MessageLoader */.waitForAllDefaultIntlMessagesLoaded;
       }
   };
   Object.defineProperty(exports, "waitForAllDefaultIntlMessagesLoaded", obj9);
@@ -142,7 +142,7 @@ if (self2) {
   const obj10 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[7]).MessageLoader;
+        return require(1270) /* MessageLoader */.MessageLoader;
       }
   };
   Object.defineProperty(exports, "MessageLoader", obj10);
@@ -150,7 +150,7 @@ if (self2) {
   const obj11 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[8]).chainMessagesObjects;
+        return require(1271) /* isMessagesProxy */.chainMessagesObjects;
       }
   };
   Object.defineProperty(exports, "chainMessagesObjects", obj11);
@@ -158,10 +158,10 @@ if (self2) {
   const obj12 = {
     enumerable: true,
     get() {
-        return require(dependencyMap[8]).makeMessagesProxy;
+        return require(1271) /* isMessagesProxy */.makeMessagesProxy;
       }
   };
   Object.defineProperty(exports, "makeMessagesProxy", obj12);
 } else {
-  const _Object = Object;
+  let _Object = Object;
 }

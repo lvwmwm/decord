@@ -1,87 +1,93 @@
-// Module ID: 6664
-// Function ID: 51367
+// Module ID: 6669
+// Function ID: 51399
 // Name: SyncedLoadingAlertModal
-// Dependencies: []
+// Dependencies: [5, 57, 31, 33, 4475, 1212, 4472, 2]
 // Exports: showCheckoutOrderErrorModal
 
-// Module 6664 (SyncedLoadingAlertModal)
+// Module 6669 (SyncedLoadingAlertModal)
+import getSystemLocale from "getSystemLocale";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import jsxProd from "jsxProd";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function SyncedLoadingAlertModal(onConfirm) {
   let confirmText;
   let content;
   let onCancel;
   let title;
-  const arg1 = onConfirm.onConfirm;
+  onConfirm = onConfirm.onConfirm;
   ({ title, content, confirmText, onCancel } = onConfirm);
   const tmp = callback2(React.useState(false), 2);
   const first = tmp[0];
-  let closure_1 = tmp[1];
+  const dependencyMap = tmp[1];
   let obj = { title, content };
   obj = {};
   obj = {
     variant: "primary",
     text: confirmText,
     onPress: callback(async () => {
-      callback(true);
-      yield closure_0();
-      callback(false);
+      outer1_1(true);
+      yield outer1_0();
+      outer1_1(false);
     }),
     loading: first
   };
-  const items = [callback3(arg1(closure_1[4]).AlertActionButton, obj), ];
+  const items = [callback3(onConfirm(4475).AlertActionButton, obj), ];
   const obj1 = { variant: "secondary" };
-  const intl = arg1(closure_1[5]).intl;
-  obj1.text = intl.string(arg1(closure_1[5]).t.ETE/oC);
+  const intl = onConfirm(1212).intl;
+  obj1.text = intl.string(onConfirm(1212).t["ETE/oC"]);
   obj1.onPress = onCancel;
   obj1.loading = first;
-  items[1] = callback3(arg1(closure_1[4]).AlertActionButton, obj1);
+  items[1] = callback3(onConfirm(4475).AlertActionButton, obj1);
   obj.children = items;
   obj.actions = callback4(closure_6, obj);
-  return callback3(arg1(closure_1[4]).AlertModal, obj);
+  return callback3(onConfirm(4475).AlertModal, obj);
 }
 function showRetryConfirmModal(dismissable) {
   let key;
   let onCloseCallback;
   ({ key, onCloseCallback } = dismissable);
-  let obj = { 0: "spring", 9223372036854775807: 0.4, 0: 1 };
+  let obj = { key: 0, onCloseCallback: 0, dismissable: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(dismissable, obj);
   obj = {};
   const merged1 = Object.assign(merged);
   obj = { dismissable: dismissable.dismissable };
-  arg1(dependencyMap[6]).openAlert(key, callback3(SyncedLoadingAlertModal, obj), onCloseCallback, obj);
+  require(4472) /* useAlertStore */.openAlert(key, callback3(SyncedLoadingAlertModal, obj), onCloseCallback, obj);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/checkout/native/showCheckoutOrderErrorModal.tsx");
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+const result = require("result").fileFinishedImporting("modules/checkout/native/showCheckoutOrderErrorModal.tsx");
 
 export { showRetryConfirmModal };
 export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(arg0, arg1) {
-  arg1 = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return new Promise((arg0) => {
+    const callback = arg0;
     const obj = { key: "checkout-order-error" };
-    const intl = arg0(closure_1[5]).intl;
-    obj.title = intl.string(arg0(closure_1[5]).t.zrhHH3);
-    const intl2 = arg0(closure_1[5]).intl;
-    obj.content = intl2.string(arg0(closure_1[5]).t.PjfUXe);
-    const intl3 = arg0(closure_1[5]).intl;
-    obj.confirmText = intl3.string(arg0(closure_1[5]).t.7NqTJn);
-    closure_1 = callback(async () => {
-      callback(yield closure_0());
+    const intl = callback(1212).intl;
+    obj.title = intl.string(callback(1212).t.zrhHH3);
+    const intl2 = callback(1212).intl;
+    obj.content = intl2.string(callback(1212).t.PjfUXe);
+    const intl3 = callback(1212).intl;
+    obj.confirmText = intl3.string(callback(1212).t["7NqTJn"]);
+    const dependencyMap = outer1_2(async () => {
+      outer1_0(yield closure_0());
     });
     obj.onConfirm = function() {
-      return callback(...arguments);
+      return callback2(...arguments);
     };
     obj.onCancel = function onCancel() {
-      if (null != callback) {
-        callback();
+      if (null != callback2) {
+        callback2();
       }
-      arg0(undefined);
+      callback(undefined);
     };
     obj.dismissable = false;
-    callback2(obj);
+    outer1_9(obj);
   });
 };

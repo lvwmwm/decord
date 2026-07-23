@@ -1,43 +1,48 @@
-// Module ID: 11325
-// Function ID: 88122
+// Module ID: 11335
+// Function ID: 88172
 // Name: EditPollCreationImageAltTextModal
-// Dependencies: []
+// Dependencies: [57, 31, 27, 7071, 33, 4130, 689, 11332, 11334, 5121, 1212, 1273, 7607, 4126, 5587, 7494, 7495, 2]
 // Exports: default
 
-// Module 11325 (EditPollCreationImageAltTextModal)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ TouchableOpacity: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-const MAX_POLL_ANSWER_LENGTH = arg1(dependencyMap[3]).MAX_POLL_ANSWER_LENGTH;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOW, flex: 1 };
-obj.container = obj;
-obj.header = {};
-const tmp3 = arg1(dependencyMap[4]);
-obj.separator = { borderBottomWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.contentContainer = { "Null": "<string:3942646034>", "Null": "<string:3355444267>" };
-const obj1 = { borderBottomWidth: 1, borderColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_HOVER };
-obj.imageContainer = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.formContainer = { paddingHorizontal: 16 };
-const obj2 = { borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.textInput = { backgroundColor: importDefault(dependencyMap[6]).colors.REDESIGN_CHAT_INPUT_BACKGROUND, borderRadius: importDefault(dependencyMap[6]).radii.lg };
-let closure_10 = obj.createStyles(obj);
-const obj3 = { backgroundColor: importDefault(dependencyMap[6]).colors.REDESIGN_CHAT_INPUT_BACKGROUND, borderRadius: importDefault(dependencyMap[6]).radii.lg };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/polls/native/EditPollCreationImageAltTextModal.tsx");
+// Module 11335 (EditPollCreationImageAltTextModal)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { MAX_POLL_ANSWER_LENGTH } from "POLL_ATTACHMENT_FOLDER";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ TouchableOpacity: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.header = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: 18, paddingTop: 10 };
+_createForOfIteratorHelperLoose.separator = { borderBottomWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER };
+_createForOfIteratorHelperLoose.contentContainer = { flex: 1, justifyContent: "center" };
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, justifyContent: "center", alignItems: "center", alignSelf: "center", overflow: "hidden", aspectRatio: 1 };
+_createForOfIteratorHelperLoose.imageContainer = obj2;
+_createForOfIteratorHelperLoose.formContainer = { paddingHorizontal: 16 };
+let obj1 = { borderBottomWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_HOVER };
+_createForOfIteratorHelperLoose.textInput = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHAT_INPUT_BACKGROUND, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHAT_INPUT_BACKGROUND, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/polls/native/EditPollCreationImageAltTextModal.tsx");
 
 export default function EditPollCreationImageAltTextModal(imageSize) {
   let answer;
   let channelId;
   let onSave;
   ({ channelId, answer, onSave } = imageSize);
-  const arg1 = onSave;
   imageSize = imageSize.imageSize;
-  let importDefault;
-  const tmp = callback4();
-  const tmp2 = importDefault(dependencyMap[7])(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
+  let first;
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = first(11332)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
   const upload = tmp2.upload;
   let description;
   if (null != upload) {
@@ -48,55 +53,54 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
     str = description;
   }
   const tmp5 = callback(React.useState(str), 2);
-  const first = tmp5[0];
-  importDefault = first;
+  first = tmp5[0];
   const items = [onSave, first];
-  const callback = React.useCallback(() => {
+  callback = React.useCallback(() => {
     if (null != first) {
       onSave(first);
     }
-    const result = onSave(closure_2[8]).closeEditPollCreationImageAltTextModal();
+    const result = onSave(outer1_2[8]).closeEditPollCreationImageAltTextModal();
   }, items);
   let obj = { top: true, style: tmp.container };
   obj = { style: tmp.header };
-  obj = { onPress: arg1(dependencyMap[8]).closeEditPollCreationImageAltTextModal };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[10]).t.cpT0Cq);
-  const obj1 = { source: importDefault(dependencyMap[12]) };
-  obj.children = callback2(arg1(dependencyMap[11]).Icon, obj1);
+  obj = { onPress: onSave(11334).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button" };
+  const intl = onSave(1212).intl;
+  obj.accessibilityLabel = intl.string(onSave(1212).t.cpT0Cq);
+  const obj1 = { source: first(7607) };
+  obj.children = callback2(onSave(1273).Icon, obj1);
   const items1 = [callback2(closure_5, obj), , ];
-  const obj2 = { cachedAt: null, edpbxy: null };
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj2.children = intl2.string(arg1(dependencyMap[10]).t.Cq44Rg);
-  items1[1] = callback2(arg1(dependencyMap[13]).Text, obj2);
+  const obj2 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary" };
+  const intl2 = onSave(1212).intl;
+  obj2.children = intl2.string(onSave(1212).t.Cq44Rg);
+  items1[1] = callback2(onSave(4126).Text, obj2);
   const obj3 = { onPress: callback, activeOpacity: 0.5 };
-  const obj4 = {};
-  const intl3 = arg1(dependencyMap[10]).intl;
-  obj4.children = intl3.string(arg1(dependencyMap[10]).t.R3BPH+);
-  obj3.children = callback2(arg1(dependencyMap[13]).Text, obj4);
+  const obj4 = { variant: "text-md/medium", color: "text-brand" };
+  const intl3 = onSave(1212).intl;
+  obj4.children = intl3.string(onSave(1212).t["R3BPH+"]);
+  obj3.children = callback2(onSave(4126).Text, obj4);
   items1[2] = callback2(closure_5, obj3);
   obj.children = items1;
   const items2 = [callback3(closure_6, obj), callback2(closure_6, { style: tmp.separator }), ];
   const obj6 = { style: tmp.contentContainer };
   const items3 = [callback2(closure_6, { style: tmp.imageContainer, children: tmp2.renderImage }), ];
   const obj8 = { style: tmp.formContainer };
-  const items4 = [callback2(arg1(dependencyMap[11]).Spacer, { size: 27 }), , , ];
+  const items4 = [callback2(onSave(1273).Spacer, { size: 27 }), , , ];
   const obj9 = {};
   const obj5 = { style: tmp.separator };
   const obj7 = { style: tmp.imageContainer, children: tmp2.renderImage };
-  const tmp8 = importDefault(dependencyMap[14]);
-  const intl4 = arg1(dependencyMap[10]).intl;
-  obj9.children = intl4.string(arg1(dependencyMap[10]).t./2Gnoa);
-  items4[1] = callback2(importDefault(dependencyMap[15]), obj9);
-  const obj10 = { <string:1446732293>: true, <string:3076300900>: false, <string:1446733240>: false, value: first, onChange: tmp5[1], clearButtonVisibility: arg1(dependencyMap[11]).ClearButtonVisibility.WITH_CONTENT, style: tmp.textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true };
-  const intl5 = arg1(dependencyMap[10]).intl;
-  obj10.accessibilityLabel = intl5.string(arg1(dependencyMap[10]).t./2Gnoa);
-  items4[2] = callback2(arg1(dependencyMap[16]).FormInput, obj10);
-  items4[3] = callback2(arg1(dependencyMap[11]).Spacer, { size: 27 });
+  const tmp8 = first(5587);
+  const intl4 = onSave(1212).intl;
+  obj9.children = intl4.string(onSave(1212).t["/2Gnoa"]);
+  items4[1] = callback2(first(7494), obj9);
+  const obj10 = { showTopContainer: false, showBorder: false, multiline: false, value: first, onChange: tmp5[1], clearButtonVisibility: onSave(1273).ClearButtonVisibility.WITH_CONTENT, style: tmp.textInput, textContentType: "none", maxLength: MAX_POLL_ANSWER_LENGTH, autoFocus: true, autoCorrect: true };
+  const intl5 = onSave(1212).intl;
+  obj10.accessibilityLabel = intl5.string(onSave(1212).t["/2Gnoa"]);
+  items4[2] = callback2(onSave(7495).FormInput, obj10);
+  items4[3] = callback2(onSave(1273).Spacer, { size: 27 });
   obj8.children = items4;
   items3[1] = callback3(closure_6, obj8);
   obj6.children = items3;
   items2[2] = callback3(tmp8, obj6);
   obj.children = items2;
-  return callback3(arg1(dependencyMap[9]).SafeAreaPaddingView, obj);
+  return callback3(onSave(5121).SafeAreaPaddingView, obj);
 };

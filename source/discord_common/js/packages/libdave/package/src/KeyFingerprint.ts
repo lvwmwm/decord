@@ -1,18 +1,18 @@
-// Module ID: 8878
-// Function ID: 69992
+// Module ID: 8885
+// Function ID: 70033
 // Name: _generateKeyFingerprint
-// Dependencies: []
+// Dependencies: [5, 2]
 // Exports: generateKeyFingerprint
 
-// Module 8878 (_generateKeyFingerprint)
+// Module 8885 (_generateKeyFingerprint)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
 function _generateKeyFingerprint() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _generateKeyFingerprint = obj;
   return obj(...arguments);
 }
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/packages/libdave/package/src/KeyFingerprint.ts");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/KeyFingerprint.ts");
 
 export const generateKeyFingerprint = function generateKeyFingerprint(arg0, arg1, arg2) {
   return _generateKeyFingerprint(...arguments);

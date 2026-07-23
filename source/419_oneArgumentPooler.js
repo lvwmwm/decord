@@ -1,9 +1,11 @@
 // Module ID: 419
 // Function ID: 5888
 // Name: oneArgumentPooler
-// Dependencies: []
+// Dependencies: [44]
 
 // Module 419 (oneArgumentPooler)
+const module = arg2;
+const dependencyMap = arg6;
 function oneArgumentPooler(arg0) {
   const self = this;
   if (this.instancePool.length) {
@@ -18,7 +20,7 @@ function oneArgumentPooler(arg0) {
   }
 }
 function standardReleaser(destructor) {
-  arg2(arg6[0])(destructor instanceof this, "Trying to release an instance into a pool of a different type.");
+  module(44)(destructor instanceof this, "Trying to release an instance into a pool of a different type.");
   destructor.destructor();
   if (this.instancePool.length < this.poolSize) {
     const instancePool = this.instancePool;

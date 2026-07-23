@@ -1,52 +1,52 @@
 // Module ID: 689
 // Function ID: 8478
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [690, 691, 692, 693, 694, 695, 696, 783, 784, 666, 785, 2]
 
 // Module 689 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +57,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,22 +83,23 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const Themes = require(dependencyMap[0])._private.Themes;
-const SemanticColors = require(dependencyMap[1])._private.SemanticColors;
-const SemanticColorExperiments = require(dependencyMap[2])._private.SemanticColorExperiments;
-const RawColors = require(dependencyMap[3])._private.RawColors;
-const Shadows = require(dependencyMap[5])._private.Shadows;
+const Themes = require("items")._private.Themes;
+const SemanticColors = require("_private")._private.SemanticColors;
+const SemanticColorExperiments = require("_private")._private.SemanticColorExperiments;
+const RawColors = require("_private")._private.RawColors;
+const Shadows = require("_private")._private.Shadows;
 let closure_7 = Symbol("semanticColor");
-let obj = {
+obj = {
   themes: Themes,
-  colors: importDefault(dependencyMap[6])(SemanticColors, (arg0, arg1) => ({ [closure_7]: arg1 })),
+  colors: require("mapValues")(SemanticColors, (arg0, arg1) => ({ [closure_7]: arg1 })),
   unsafe_rawColors: RawColors,
-  shadows: importDefault(dependencyMap[6])(Shadows, (arg0) => {
-    const require = arg0;
+  shadows: require("mapValues")(Shadows, (arg0) => {
+    let closure_0 = arg0;
     function createResolve(arg0) {
+      let closure_0 = arg0;
       return {
         resolve(isAndroid) {
-          return isAndroid(isAndroid[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+          return dependencyMap(dependencyMap[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
         }
       };
     }
@@ -116,26 +117,29 @@ let obj = {
       elevation: createResolve((elevation) => elevation.elevation)
     };
   }),
-  radii: require(dependencyMap[7]).Radius,
-  modules: importDefault(dependencyMap[6])(require(dependencyMap[4])._private.Modules, (arg0) => importDefault(dependencyMap[6])(arg0, (arg0) => ({
-    resolve(arg0) {
-      let density;
-      let enabledExperiments;
-      ({ enabledExperiments, density } = arg0);
-      const obj = {};
-      if (null == enabledExperiments) {
-        enabledExperiments = [];
+  radii: require("Radius").Radius,
+  modules: require("mapValues")(require("_createForOfIteratorHelperLoose")._private.Modules, (arg0) => importDefault(696)(arg0, (arg0) => {
+    let closure_0 = arg0;
+    return {
+      resolve(arg0) {
+        let density;
+        let enabledExperiments;
+        ({ enabledExperiments, density } = arg0);
+        const obj = {};
+        if (null == enabledExperiments) {
+          enabledExperiments = [];
+        }
+        obj.enabledExperiments = enabledExperiments;
+        let str = "compact";
+        if (null != density) {
+          str = density;
+        }
+        obj.density = str;
+        return closure_0.resolve(obj);
       }
-      obj.enabledExperiments = enabledExperiments;
-      let str = "compact";
-      if (null != density) {
-        str = density;
-      }
-      obj.density = str;
-      return arg0.resolve(obj);
-    }
-  }))),
-  space: require(dependencyMap[8]).SpacePx,
+    };
+  })),
+  space: require("Layout").SpacePx,
   internal: obj
 };
 obj = {
@@ -167,6 +171,7 @@ obj = {
       }
     }
     const category = tmp10.category;
+    const tmp12 = RawColors[SemanticColors[TEXT_FEEDBACK_CRITICAL[closure_7]][tmp].raw];
     const opacity = tmp11.opacity;
     let enabledExperiments;
     if (null != semanticColorContextFromThemeContext) {
@@ -251,19 +256,19 @@ obj = {
         }
         let result = tmp23;
         if (num4 < 1) {
-          result = require(dependencyMap[10]).transformColorForReducedSaturation(tmp23, category, num4);
-          const obj4 = require(dependencyMap[10]);
+          result = require(785) /* interpolate */.transformColorForReducedSaturation(tmp23, category, num4);
+          const obj4 = require(785) /* interpolate */;
         }
         let result1 = result;
         if (1 !== num3) {
-          const obj5 = require(dependencyMap[10]);
+          const obj5 = require(785) /* interpolate */;
           result1 = obj5.transformColorContrast(result, category, tmp, num3);
         }
         let hexResult = result1;
         if (1 !== opacity3) {
-          const obj6 = importDefault(dependencyMap[9])(result1);
-          hexResult = importDefault(dependencyMap[9])(result1).alpha(opacity3).hex();
-          const alphaResult = importDefault(dependencyMap[9])(result1).alpha(opacity3);
+          const obj6 = importDefault(666)(result1);
+          hexResult = importDefault(666)(result1).alpha(opacity3).hex();
+          const alphaResult = importDefault(666)(result1).alpha(opacity3);
         }
         return hexResult;
       }
@@ -336,7 +341,7 @@ obj = {
         } else if (null != semanticColorContextFromThemeContext) {
           tmp35 = semanticColorContextFromThemeContext.gradient.colors[tmp33.color];
         }
-        const tmp65Result = importDefault(dependencyMap[9])(tmp35);
+        const tmp65Result = importDefault(666)(tmp35);
         let result2 = tmp65Result;
         if ("saturation" in tmp33) {
           result2 = tmp65Result.set("hsl.s", tmp33.saturation);
@@ -346,7 +351,7 @@ obj = {
           result3 = result2.set("hsl.l", tmp33.lightness);
         }
         let num = 1;
-        const tmp65 = importDefault(dependencyMap[9]);
+        const tmp65 = importDefault(666);
         if ("opacity" in tmp33) {
           num = tmp33.opacity;
         }
@@ -357,14 +362,13 @@ obj = {
     }
   },
   adjustColorSaturation(arg0, saturation, generic) {
-    return require(dependencyMap[10]).transformColorForReducedSaturation(arg0, generic, saturation);
+    return require(785) /* interpolate */.transformColorForReducedSaturation(arg0, generic, saturation);
   },
   adjustColorContrast(result, contrast, category, theme) {
-    return require(dependencyMap[10]).transformColorContrast(result, category, theme, contrast);
+    return require(785) /* interpolate */.transformColorContrast(result, category, theme, contrast);
   }
 };
-const _module = require(dependencyMap[11]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/tokens/native.tsx");
+let result = require("_private").fileFinishedImporting("../discord_common/js/packages/tokens/native.tsx");
 
 export default obj;
 export const Theme = Themes;

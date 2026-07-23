@@ -1,45 +1,41 @@
-// Module ID: 12393
-// Function ID: 94724
+// Module ID: 12507
+// Function ID: 96880
 // Name: useFetchGuildBoostSlots
-// Dependencies: [31, 4015, 4016, 4019, 566, 11599, 2, 57, 4017, 4019]
+// Dependencies: [5, 57, 31, 4023, 6651, 566, 668, 6658, 4026, 2]
 // Exports: default
 
-// Module 12393 (useFetchGuildBoostSlots)
-import module_31 from "module_31";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import BoostedGuildTiers from "BoostedGuildTiers";
-import closure_6 from "VANITY_URL_POWERUP_SKU_ID";
+// Module 12507 (useFetchGuildBoostSlots)
 import initialize from "initialize";
-import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
 
-const result = VANITY_URL_POWERUP_SKU_ID.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/useFetchGuildBoostSlots.tsx");
+const require = arg1;
+const result = require("result").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/useFetchGuildBoostSlots.tsx");
 
 export default function useFetchGuildBoostSlots() {
   const tmp = callback(React.useState(true), 2);
   const first = tmp[0];
-  const arg1 = first;
   let closure_1 = tmp[1];
-  const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => hasFetched.hasFetched);
-  const dependencyMap = stateFromStores;
-  const obj = arg1(dependencyMap[5]);
-  const items1 = [initialize];
-  const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items1, () => state.getState());
-  let module_31 = stateFromStores1;
-  const callback = React.useRef(stateFromStores1);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = first(stateFromStores[5]).useStateFromStores(items, () => outer1_6.hasFetched);
+  let obj = first(stateFromStores[5]);
+  const items1 = [closure_7];
+  const stateFromStores1 = first(stateFromStores[5]).useStateFromStores(items1, () => outer1_7.getState());
+  callback = React.useRef(stateFromStores1);
   const items2 = [stateFromStores1, stateFromStores, first];
   const effect = React.useEffect(() => {
-    function _fetch(arg0) {
+    function _fetch() {
       // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback(tmp);
-      const _fetch = obj;
+      const obj = stateFromStores1(tmp);
       return obj(...arguments);
     }
     if (_fetch) {
       ref.current = stateFromStores1;
-      function fetch() {
+      (function fetch() {
         return _fetch(...arguments);
-      }();
+      })();
     }
   }, items2);
   return first;

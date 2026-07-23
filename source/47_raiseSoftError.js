@@ -1,9 +1,14 @@
 // Module ID: 47
 // Function ID: 1322
 // Name: raiseSoftError
-// Dependencies: [66, 67, 60, 68]
+// Dependencies: [48, 49, 51, 50]
 
 // Module 47 (raiseSoftError)
+let closure_7;
+let closure_8;
+const require = arg1;
+let module = arg2;
+const dependencyMap = arg6;
 function raiseSoftError(clearJSResponder, arg1) {
   let str = "";
   const combined = "[ReactNative Architecture][JS] '" + clearJSResponder + "' is not available in the new React Native architecture.";
@@ -14,27 +19,27 @@ function raiseSoftError(clearJSResponder, arg1) {
   console.error(combined + str);
 }
 RN$LegacyInterop_UIManager_getConstants = RN$LegacyInterop_UIManager_getConstants.RN$LegacyInterop_UIManager_getConstants;
-let closure_3 = false;
+let c3 = false;
 let closure_4 = {};
 const fn = () => {
-  if (!closure_3) {
-    let closure_4 = arg2(arg6[0])(RN$LegacyInterop_UIManager_getConstants)();
-    closure_3 = true;
+  if (!c3) {
+    let closure_4 = module(48)(RN$LegacyInterop_UIManager_getConstants)();
+    c3 = true;
   }
   return closure_4;
 };
 ({ RN$LegacyInterop_UIManager_getConstantsForViewManager: closure_7, RN$LegacyInterop_UIManager_getDefaultEventTypes: closure_8 } = RN$LegacyInterop_UIManager_getConstants);
-let closure_9 = () => {
-  let closure_0 = false;
-  let closure_1 = null;
+let closure_9 = (() => {
+  let c0 = false;
+  let c1 = null;
   return () => {
-    if (!closure_0) {
-      const _null = _null(closure_2[0])(closure_8)();
-      closure_0 = true;
+    if (!c0) {
+      let closure_1 = _null(outer1_2[0])(outer1_8)();
+      c0 = true;
     }
-    return _null;
+    return closure_1;
   };
-}();
+})();
 let obj = {
   measure(arg0, arg1) {
     raiseSoftError("measure");
@@ -110,8 +115,8 @@ obj = {
         }
       }
     }
-    const tmp3 = arg2(arg6[0]);
-    const tmp3Result = tmp3(arg1(arg6[1]).getFabricUIManager());
+    const tmp3 = module(48);
+    const tmp3Result = tmp3(require(49) /* getFabricUIManager */.getFabricUIManager());
     const result = tmp3Result.findShadowNodeByTag_DEPRECATED(arg0);
     if (result) {
       const result1 = tmp3Result.sendAccessibilityEvent(result, str);
@@ -142,8 +147,8 @@ const merged = Object.assign({}, obj, {}, obj, obj, {
       return null;
     }
   },
-  hasViewManagerConfig(arg0) {
-    return arg1(arg6[2]).unstable_hasComponent(arg0);
+  hasViewManagerConfig(unstable_hasComponent) {
+    return require(51) /* map */.unstable_hasComponent(unstable_hasComponent);
   },
   getConstants() {
     if (RN$LegacyInterop_UIManager_getConstants) {
@@ -155,17 +160,17 @@ const merged = Object.assign({}, obj, {}, obj, obj, {
     return tmp3;
   },
   findSubviewIn(arg0, arg1, arg2) {
-    arg1 = arg2;
-    const tmp = arg2(arg6[0]);
-    const tmpResult = tmp(arg1(arg6[1]).getFabricUIManager());
-    arg2 = tmpResult;
+    const _require = arg2;
+    const tmp = module(48);
+    const tmpResult = tmp(_require(49).getFabricUIManager());
+    module = tmpResult;
     const result = tmpResult.findShadowNodeByTag_DEPRECATED(arg0);
     if (result) {
       tmpResult.findNodeAtPoint(result, arg1[0], arg1[1], (stateNode) => {
         if (null != stateNode) {
           const node = stateNode.stateNode.node;
           if (node) {
-            const arg2 = stateNode.stateNode.canonical.nativeTag;
+            const nativeTag = stateNode.stateNode.canonical.nativeTag;
             tmpResult.measure(node, (arg0, arg1, arg2, arg3, arg4, arg5) => {
               nativeTag(nativeTag, arg4, arg5, arg2, arg3);
             });
@@ -179,14 +184,14 @@ const merged = Object.assign({}, obj, {}, obj, obj, {
         }
       });
     } else {
-      const _console = console;
+      let _console = console;
       const _HermesInternal = HermesInternal;
       console.error("findSubviewIn() noop: Cannot find view with reactTag " + arg0);
     }
   },
   viewIsDescendantOf(arg0, arg1, arg2) {
-    const tmp = arg2(arg6[0]);
-    const tmpResult = tmp(arg1(arg6[1]).getFabricUIManager());
+    const tmp = module(48);
+    const tmpResult = tmp(require(49) /* getFabricUIManager */.getFabricUIManager());
     const result = tmpResult.findShadowNodeByTag_DEPRECATED(arg0);
     if (result) {
       const result1 = tmpResult.findShadowNodeByTag_DEPRECATED(arg1);
@@ -205,9 +210,9 @@ const merged = Object.assign({}, obj, {}, obj, obj, {
     }
   },
   configureNextLayoutAnimation(duration, fn2, fn) {
-    const tmp = fn(arg6[0]);
-    const obj = fn2(arg6[1]);
-    const result = tmp(fn2(arg6[1]).getFabricUIManager()).configureNextLayoutAnimation(duration, fn2, fn);
+    const tmp = module(48);
+    const obj = require(49) /* getFabricUIManager */;
+    const result = tmp(require(49) /* getFabricUIManager */.getFabricUIManager()).configureNextLayoutAnimation(duration, fn2, fn);
   }
 });
 if (RN$LegacyInterop_UIManager_getConstants) {
@@ -219,10 +224,10 @@ if (RN$LegacyInterop_UIManager_getConstants) {
   if (merged.getConstants().ViewManagerNames) {
     const ViewManagerNames = merged.getConstants().ViewManagerNames;
     const item1 = ViewManagerNames.forEach((arg0) => {
-      const arg1 = arg0;
-      arg2(arg6[3])(merged, arg0, {
+      let closure_0 = arg0;
+      module(50)(merged, arg0, {
         get() {
-          return callback(closure_2[0])(obj.getConstantsForViewManager)(arg0);
+          return outer1_1(outer1_2[0])(outer1_10.getConstantsForViewManager)(closure_0);
         }
       });
     });

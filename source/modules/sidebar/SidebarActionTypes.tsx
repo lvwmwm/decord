@@ -1,11 +1,10 @@
-// Module ID: 5656
-// Function ID: 48582
+// Module ID: 5661
+// Function ID: 48609
 // Name: SidebarType
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5656 (SidebarType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/sidebar/SidebarActionTypes.tsx");
+// Module 5661 (SidebarType)
+const result = require("set").fileFinishedImporting("modules/sidebar/SidebarActionTypes.tsx");
 
 export const SidebarType = { CREATE_THREAD: 0, [0]: "CREATE_THREAD", VIEW_THREAD: 1, [1]: "VIEW_THREAD", VIEW_CHANNEL: 2, [2]: "VIEW_CHANNEL", VIEW_MESSAGE_REQUEST: 3, [3]: "VIEW_MESSAGE_REQUEST", VIEW_MOD_REPORT: 4, [4]: "VIEW_MOD_REPORT" };
 export const GuildSidebarType = { GUILD_MEMBER_MOD_VIEW: 4, [4]: "GUILD_MEMBER_MOD_VIEW" };

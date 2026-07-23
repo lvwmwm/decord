@@ -1,52 +1,53 @@
-// Module ID: 10856
-// Function ID: 84477
+// Module ID: 10866
+// Function ID: 84526
 // Name: RoleMembersActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 5658, 1910, 33, 4130, 689, 21, 5150, 566, 5148, 1273, 4126, 5187, 10867, 2]
 // Exports: default
 
-// Module 10856 (RoleMembersActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const EVERYONE_CHANNEL_ID = arg1(dependencyMap[3]).EVERYONE_CHANNEL_ID;
-let closure_7 = importDefault(dependencyMap[4]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_4, paddingTop: importDefault(dependencyMap[7]).space.PX_12, paddingBottom: importDefault(dependencyMap[7]).space.PX_4, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-obj.header = obj;
-obj.headerText = { flex: 1 };
-obj.roleDot = { paddingTop: 0 };
-const tmp2 = arg1(dependencyMap[5]);
-obj.memberCount = { color: importDefault(dependencyMap[7]).colors.TEXT_MUTED };
-let closure_10 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[7]).colors.TEXT_MUTED };
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/messages/native/RoleMembersActionSheet.tsx");
+// Module 10866 (RoleMembersActionSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { EVERYONE_CHANNEL_ID } from "_isNativeReflectConstruct";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerText = { flex: 1 };
+_createForOfIteratorHelperLoose.roleDot = { paddingTop: 0 };
+_createForOfIteratorHelperLoose.memberCount = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/RoleMembersActionSheet.tsx");
 
 export default function RoleMembersActionSheet(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const roleId = guildId.roleId;
-  const importDefault = roleId;
   let channelId = guildId.channelId;
-  let View;
-  let closure_5;
-  const tmp = callback();
+  let c4;
+  let c5;
+  const tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  const items = [guildId, roleId];
-  const effect = React.useEffect(() => {
+  let items = [guildId, roleId];
+  const effect = stateFromStores.useEffect(() => {
     if (roleId !== obj.castGuildIdAsEveryoneGuildRoleId(guildId)) {
       const membersForRole = guildId(guildId[9]).requestMembersForRole(guildId, roleId);
       const obj2 = guildId(guildId[9]);
     }
   }, items);
-  let obj = arg1(dependencyMap[10]);
+  let obj = guildId(566);
   const items1 = [closure_7];
   const items2 = [guildId, roleId];
-  const stateFromStores = obj.useStateFromStores(items1, () => role.getRole(guildId, roleId), items2);
-  const React = stateFromStores;
-  const items3 = [closure_5];
-  let tmp4 = "dot" === arg1(dependencyMap[10]).useStateFromStores(items3, () => tmp9.roleStyle);
+  stateFromStores = obj.useStateFromStores(items1, () => outer1_7.getRole(guildId, roleId), items2);
+  const items3 = [c5];
+  let tmp4 = "dot" === guildId(566).useStateFromStores(items3, () => _undefined.roleStyle);
   if (tmp4) {
     let colorString;
     if (null != stateFromStores) {
@@ -54,10 +55,10 @@ export default function RoleMembersActionSheet(guildId) {
     }
     tmp4 = null != colorString;
   }
-  View = tmp4;
-  const obj2 = arg1(dependencyMap[10]);
-  const result = importDefault(dependencyMap[8]).castGuildIdAsEveryoneGuildRoleId(guildId);
-  const tmp8 = importDefault(dependencyMap[11])(guildId);
+  c4 = tmp4;
+  let obj2 = guildId(566);
+  const result = roleId(21).castGuildIdAsEveryoneGuildRoleId(guildId);
+  const tmp8 = roleId(5148)(guildId);
   let tmp9 = null;
   if (roleId !== result) {
     let tmp10;
@@ -70,20 +71,20 @@ export default function RoleMembersActionSheet(guildId) {
     }
     tmp9 = tmp11;
   }
-  closure_5 = tmp9;
+  c5 = tmp9;
   const items4 = [tmp4, stateFromStores, tmp9, tmp];
   let tmp14Result = null;
   if (null != stateFromStores) {
     obj = { scrollable: true, header: tmp12 };
-    obj = { guildId };
+    obj = { guildId, channelId: null, roleId: null, headerShown: false, inActionSheet: true, disableStickySections: true, disableThemedGradient: true };
     if (null == channelId) {
       channelId = EVERYONE_CHANNEL_ID;
     }
     obj.channelId = channelId;
     obj.roleId = roleId;
-    obj.children = closure_8(importDefault(dependencyMap[15]), obj);
-    tmp14Result = tmp14(arg1(dependencyMap[14]).BottomSheet, obj);
-    const tmp18 = importDefault(dependencyMap[15]);
+    obj.children = closure_8(roleId(10867), obj);
+    tmp14Result = tmp14(guildId(5187).BottomSheet, obj);
+    const tmp18 = roleId(10867);
   }
   return tmp14Result;
 };

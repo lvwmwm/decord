@@ -1,10 +1,9 @@
-// Module ID: 5675
-// Function ID: 48755
+// Module ID: 5680
+// Function ID: 48782
 // Name: ReservedTagIds
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5675 (ReservedTagIds)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/forums/ForumChannelTypes.tsx");
+// Module 5680 (ReservedTagIds)
+const result = require("set").fileFinishedImporting("modules/forums/ForumChannelTypes.tsx");
 
-export const ReservedTagIds = { rr_type: null, reflectionLongConvert: "4f276c9d37ed9e072482570ea4ab1799", sheetElevation: "ic_discoverable_guild_badge_premium_24px", balanceHook: "png", Outgoing: "2026-02-pubsub-bulk-ban-users", Ù: "user" };
+export const ReservedTagIds = { HARASSMENT: "1000", SPAM: "1001", BAN_EVASION: "1002", SERVER_RULES: "1003", MULTIPLE_REPORTS: "1004", RESOLVED: "1005" };

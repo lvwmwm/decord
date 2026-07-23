@@ -1,28 +1,30 @@
-// Module ID: 8577
-// Function ID: 68136
+// Module ID: 8584
+// Function ID: 68176
 // Name: ServerPreviewPill
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 1212, 2]
 // Exports: default
 
-// Module 8577 (ServerPreviewPill)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { <string:996399281>: false, <string:1986280084>: false, <string:1369626617>: false, <string:3881950253>: false, <string:1004165714>: false, borderRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.WHITE };
-obj.pill = obj;
-obj.text = { color: importDefault(dependencyMap[4]).colors.BLACK };
-let closure_4 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[4]).colors.BLACK };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/lurker_mode/native/ServerPreviewPill.tsx");
+// Module 8584 (ServerPreviewPill)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { position: "absolute", top: 16, left: 16, paddingHorizontal: 10, paddingVertical: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.pill = _createForOfIteratorHelperLoose;
+const obj1 = { color: require("_createForOfIteratorHelperLoose").colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 };
+_createForOfIteratorHelperLoose.text = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/lurker_mode/native/ServerPreviewPill.tsx");
 
 export default function ServerPreviewPill() {
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.pill, accessibilityRole: "text" };
   obj = { variant: "text-xs/bold", style: tmp.text };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.children = intl.string(arg1(dependencyMap[6]).t.KNhFgD);
-  obj.children = jsx(arg1(dependencyMap[5]).Text, obj);
-  return <View {...obj} />;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.KNhFgD);
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xs/bold", style: tmp.text });
+  return <View variant="text-xs/bold" style={tmp.text} />;
 };

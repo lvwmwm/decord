@@ -1,27 +1,30 @@
 // Module ID: 1724
-// Function ID: 19369
+// Function ID: 19370
 // Name: AnimatedScrollView
-// Dependencies: []
+// Dependencies: [29, 31, 27, 33, 1616, 1721, 1725]
 
 // Module 1724 (AnimatedScrollView)
-let closure_2 = [];
-let closure_3 = importDefault(dependencyMap[0]);
-importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_5 = arg1(dependencyMap[4]).createAnimatedComponent(arg1(dependencyMap[2]).ScrollView);
-const obj = arg1(dependencyMap[4]);
+import _objectWithoutProperties from "_objectWithoutProperties";
+import "result";
+import { jsx } from "jsxProd";
+import createAnimatedComponent from "createAnimatedComponent";
+import getCurrentReactOwner from "getCurrentReactOwner";
 
-export const AnimatedScrollView = arg1(dependencyMap[5]).componentWithRef((scrollViewOffset) => {
+const require = arg1;
+let closure_2 = ["scrollViewOffset"];
+let closure_5 = createAnimatedComponent.createAnimatedComponent(require("get ActivityIndicator").ScrollView);
+
+export const AnimatedScrollView = getCurrentReactOwner.componentWithRef((scrollViewOffset) => {
   let animatedRef = arg1;
   scrollViewOffset = scrollViewOffset.scrollViewOffset;
   const tmp2 = callback(scrollViewOffset, closure_2);
   if (null === arg1) {
-    let obj = arg1(dependencyMap[6]);
+    let obj = require(1725) /* useAnimatedGestureHandler */;
     animatedRef = obj.useAnimatedRef();
   }
   if (scrollViewOffset) {
-    scrollViewOffset = arg1(dependencyMap[6]).useScrollViewOffset(animatedRef, scrollViewOffset);
-    const obj2 = arg1(dependencyMap[6]);
+    scrollViewOffset = require(1725) /* useAnimatedGestureHandler */.useScrollViewOffset(animatedRef, scrollViewOffset);
+    const obj2 = require(1725) /* useAnimatedGestureHandler */;
   }
   if (!("scrollEventThrottle" in tmp2)) {
     tmp2.scrollEventThrottle = 1;

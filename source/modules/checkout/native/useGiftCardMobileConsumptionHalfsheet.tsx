@@ -1,34 +1,34 @@
-// Module ID: 5794
-// Function ID: 49537
+// Module ID: 5799
+// Function ID: 49566
 // Name: useGiftCardMobileConsumptionHalfsheet
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [57, 31, 5800, 3779, 1345, 482, 5801, 566, 1334, 5802, 4451, 686, 5806, 1934, 4098, 2]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
-// Module 5794 (useGiftCardMobileConsumptionHalfsheet)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import { ContentDismissActionType } from "__exportStarResult1";
-import { PaymentSourceTypes } from "__exportStarResult1";
+// Module 5799 (useGiftCardMobileConsumptionHalfsheet)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { PaymentSourceTypes } from "sum";
 
-const obj = { Idle: "idle", Opening: "opening", Opened: "opened" };
+const require = arg1;
+let obj = { Idle: "idle", Opening: "opening", Opened: "opened" };
 const Idle = obj.Idle;
-const result = require("__exportStarResult1").fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
 
 export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileConsumptionHalfsheet() {
-  const enabled = arg1(dependencyMap[6]).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
-  const arg1 = enabled;
-  const obj = arg1(dependencyMap[6]);
-  const items = [closure_6];
-  const items1 = [enabled];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => {
+  enabled = enabled(5801).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
+  let obj = enabled(5801);
+  let items = [callback];
+  let items1 = [enabled];
+  const stateFromStores = enabled(566).useStateFromStores(items, () => {
     if (enabled) {
       const _Object = Object;
       const values = Object.values(callback.paymentSources);
       let num = 0;
       if (0 < values.length) {
-        while (values[num].type !== constants.TDS_WALLET) {
+        while (values[num].type !== outer1_8.TDS_WALLET) {
           num = num + 1;
         }
         return values[num].id;
@@ -38,22 +38,21 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
       return null;
     }
   }, items1);
-  const importDefault = stateFromStores;
-  const obj2 = arg1(dependencyMap[7]);
-  const items2 = [closure_5];
+  let obj2 = enabled(566);
+  const items2 = [_isNativeReflectConstruct];
   const items3 = [stateFromStores];
-  const stateFromStores1 = arg1(dependencyMap[7]).useStateFromStores(items2, () => {
+  const stateFromStores1 = enabled(566).useStateFromStores(items2, () => {
     let balance = null;
     if (null != stateFromStores) {
       balance = ref.getBalance(stateFromStores);
     }
     return balance;
   }, items3);
-  const obj3 = arg1(dependencyMap[7]);
-  const items4 = [closure_5];
+  const obj3 = enabled(566);
+  const items4 = [_isNativeReflectConstruct];
   const items5 = [stateFromStores];
   let tmp4 = enabled;
-  const stateFromStores2 = arg1(dependencyMap[7]).useStateFromStores(items4, () => {
+  const stateFromStores2 = enabled(566).useStateFromStores(items4, () => {
     let isFetching = null != stateFromStores;
     if (isFetching) {
       isFetching = ref.getIsFetching(stateFromStores);
@@ -83,20 +82,18 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
     }
     return items1;
   }, items6);
-  const obj4 = arg1(dependencyMap[7]);
-  const tmp8 = callback(arg1(dependencyMap[9]).useSelectedDismissibleContent(memo, undefined, true), 2);
-  const first = tmp8[0];
-  let callback = first;
-  const React = tmp10;
-  closure_5 = React.useRef(tmp10);
+  const obj4 = enabled(566);
+  const tmp8 = first(enabled(5802).useSelectedDismissibleContent(memo, undefined, true), 2);
+  first = tmp8[0];
+  React = tmp10;
+  _isNativeReflectConstruct = React.useRef(tmp10);
   const items7 = [tmp8[1]];
   const effect = React.useEffect(() => {
-    closure_5.current = tmp10;
+    _isNativeReflectConstruct.current = result;
   }, items7);
   callback = React.useCallback((arg0) => {
     ref.current(arg0);
   }, []);
-  closure_6 = callback;
   const items8 = [enabled];
   const effect1 = React.useEffect(() => {
     if (enabled) {
@@ -114,39 +111,38 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
   const items10 = [first, callback];
   const effect3 = React.useEffect(() => {
     function handleShow(key) {
-      let tmp = closure_0;
-      if (!closure_0) {
+      let tmp = c0;
+      if (!c0) {
         tmp = key.key !== "GiftCardMobileConsumptionActionSheet";
       }
       if (!tmp) {
-        const Opening = closure_9.Opened;
+        const outer2_10 = outer2_9.Opened;
       }
     }
-    const stateFromStores = handleShow;
     if (first === enabled(tmp4[8]).DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET) {
-      if (Opening === closure_9.Idle) {
-        const Opening = closure_9.Opening;
-        const enabled = false;
+      if (outer1_10 === outer1_9.Idle) {
+        outer1_10 = outer1_9.Opening;
+        let c0 = false;
         let obj = stateFromStores(tmp4[11]);
         const subscription = obj.subscribe("SHOW_ACTION_SHEET", handleShow);
         const promise = enabled(stateFromStores[13])(stateFromStores[12], stateFromStores.paths);
         promise.catch(() => {
-          let tmp = closure_0;
-          if (!closure_0) {
-            tmp = Opening !== closure_9.Opening;
+          let tmp = c0;
+          if (!c0) {
+            tmp = outer2_10 !== outer2_9.Opening;
           }
           if (!tmp) {
-            const Opening = closure_9.Idle;
+            outer2_10 = outer2_9.Idle;
           }
         });
         const obj2 = stateFromStores(stateFromStores[14]);
         obj = { markAsDismissed: callback };
         obj2.openLazy(promise, "GiftCardMobileConsumptionActionSheet", obj, "stack");
         return () => {
-          let closure_0 = true;
-          handleShow(closure_2[11]).unsubscribe("SHOW_ACTION_SHEET", handleShow);
-          if (Opening === closure_9.Opening) {
-            const Opening = closure_9.Idle;
+          let c0 = true;
+          stateFromStores(table[11]).unsubscribe("SHOW_ACTION_SHEET", handleShow);
+          if (outer2_10 === outer2_9.Opening) {
+            outer2_10 = outer2_9.Idle;
           }
         };
       }
@@ -156,14 +152,13 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
   const effect4 = React.useEffect(() => {
     function handleHide(key) {
       if (key.key === "GiftCardMobileConsumptionActionSheet") {
-        ref.current(constants.USER_DISMISS);
+        outer1_5.current(outer2_7.USER_DISMISS);
       }
     }
-    const enabled = handleHide;
     if (first === enabled(tmp4[8]).DismissibleContent.GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET) {
       const subscription = stateFromStores(tmp4[11]).subscribe("HIDE_ACTION_SHEET", handleHide);
       return () => {
-        callback(closure_2[11]).unsubscribe("HIDE_ACTION_SHEET", handleHide);
+        stateFromStores(table[11]).unsubscribe("HIDE_ACTION_SHEET", handleHide);
       };
     }
   }, items11);

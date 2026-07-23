@@ -1,6 +1,8 @@
 // Module ID: 3878
-// Function ID: 32153
+// Function ID: 32151
 // Dependencies: []
 
 // Module 3878
-arg5.RiveErrorType = { Unknown: 0, [0]: "Unknown", FileNotFound: 1, [1]: "FileNotFound", MalformedFile: 2, [2]: "MalformedFile", IncorrectArtboardName: 3, [3]: "IncorrectArtboardName", IncorrectStateMachineName: 4, [4]: "IncorrectStateMachineName", ViewModelInstanceNotFound: 6, [6]: "ViewModelInstanceNotFound", IncorrectStateMachineInputName: 8, [8]: "IncorrectStateMachineInputName" };
+const obj = { uiViewClassName: "RiveView", supportsRawText: false, bubblingEventTypes: {}, directEventTypes: {}, validAttributes: { artboardName: true, stateMachineName: true, autoPlay: true, file: true, alignment: true, fit: true, layoutScaleFactor: true, dataBind: true, onError: true, hybridRef: true } };
+
+export default obj;

@@ -1,22 +1,24 @@
-// Module ID: 15031
-// Function ID: 113241
+// Module ID: 15146
+// Function ID: 115410
 // Name: useNotificationCenterItemAcked
-// Dependencies: []
+// Dependencies: [15139, 566, 6884, 2]
 // Exports: useNotificationCenterItemAcked
 
-// Module 15031 (useNotificationCenterItemAcked)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/notification_center/useNotificationCenterItemAcked.tsx");
+// Module 15146 (useNotificationCenterItemAcked)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("getRelativeTimestamp").fileFinishedImporting("modules/notification_center/useNotificationCenterItemAcked.tsx");
 
 export const useNotificationCenterItemAcked = function useNotificationCenterItemAcked(item, ackedBeforeId) {
-  ackedBeforeId = item;
-  const items = [closure_2];
-  let stateFromStores = ackedBeforeId(dependencyMap[1]).useStateFromStores(items, () => localItemAcked.isLocalItemAcked(arg0));
+  const _require = item;
+  const items = [_isNativeReflectConstruct];
+  let stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.isLocalItemAcked(closure_0));
   let tmp2 = !item.forceUnacked;
   if (tmp2) {
     if (!stateFromStores) {
-      stateFromStores = ackedBeforeId(dependencyMap[2]).isRemoteAcked(item, ackedBeforeId);
-      const obj2 = ackedBeforeId(dependencyMap[2]);
+      stateFromStores = _require(6884).isRemoteAcked(item, ackedBeforeId);
+      const obj2 = _require(6884);
     }
     tmp2 = stateFromStores;
   }

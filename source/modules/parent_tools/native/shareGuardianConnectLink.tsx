@@ -1,23 +1,23 @@
-// Module ID: 13667
-// Function ID: 103507
+// Module ID: 13781
+// Function ID: 105663
 // Name: shareGuardianConnectLink
-// Dependencies: []
+// Dependencies: [6770, 8332, 1212, 2198, 2]
 // Exports: shareGuardianConnectLink
 
-// Module 13667 (shareGuardianConnectLink)
-let closure_3 = require(dependencyMap[0]).FAMILY_CENTER_REQUEST_QR_CODE_URL;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/parent_tools/native/shareGuardianConnectLink.tsx");
+// Module 13781 (shareGuardianConnectLink)
+import { FAMILY_CENTER_REQUEST_QR_CODE_URL as closure_3 } from "items";
+
+const result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/native/shareGuardianConnectLink.tsx");
 
 export const shareGuardianConnectLink = function shareGuardianConnectLink(stateFromStores, linkCode) {
   let username = stateFromStores.globalName;
   if (null == username) {
     username = stateFromStores.username;
   }
-  let obj = require(dependencyMap[1]);
+  let obj = require(8332) /* showShareActionSheet */;
   obj = {};
-  const intl = require(dependencyMap[2]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { username, url: callback(stateFromStores.id, linkCode) };
-  obj.message = intl.formatToPlainString(importDefault(dependencyMap[3]).lVD5Nd, obj);
+  obj.message = intl.formatToPlainString(importDefault(2198).lVD5Nd, obj);
   obj.showShareActionSheet(obj, "Family Center Connect Guardian");
 };

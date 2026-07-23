@@ -1,9 +1,19 @@
 // Module ID: 8074
-// Function ID: 64054
+// Function ID: 64043
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 8075, 8056, 8057]
 
 // Module 8074 (_isNativeReflectConstruct)
+import jsxProd from "jsxProd";
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import "result";
+import { jsx } from "jsxProd";
+import tmp3 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,46 +23,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = (Component) => {
-  class FePointLight {
-    constructor() {
-      self = this;
-      tmp = closure_2(this, FePointLight);
-      obj = closure_5(FePointLight);
-      tmp2 = closure_4;
-      if (closure_7()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = closure_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  const arg1 = FePointLight;
-  callback2(FePointLight, Component);
-  const items = [
-    {
-      key: "render",
-      value: function render() {
-        const result = FePointLight(closure_1[6]).warnUnimplementedFilter();
-        return null;
-      }
-    }
-  ];
-  return callback(FePointLight, items);
-}(arg1(dependencyMap[5]).Component);
-tmp2.displayName = "FePointLight";
-tmp2.defaultProps = {};
+tmp3.displayName = "FeMerge";
+tmp3.defaultProps = Object.assign({}, tmp3.defaultPrimitiveProps);
 
-export default tmp2;
+export default tmp3;

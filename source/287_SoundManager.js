@@ -1,8 +1,8 @@
 // Module ID: 287
 // Function ID: 4467
 // Name: SoundManager
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 287 (SoundManager)
 
-export default importAll(dependencyMap[0]).get("SoundManager");
+export default require("requireModule").get("SoundManager");

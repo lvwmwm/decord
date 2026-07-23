@@ -1,20 +1,24 @@
-// Module ID: 12198
-// Function ID: 93746
+// Module ID: 12312
+// Function ID: 95897
 // Name: _getPresenceActivityInviteCoverImageURL
-// Dependencies: []
+// Dependencies: [31, 12313, 1825, 7820, 566, 12314, 2]
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
-// Module 12198 (_getPresenceActivityInviteCoverImageURL)
+// Module 12312 (_getPresenceActivityInviteCoverImageURL)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _getPresenceActivityInviteCoverImageURL(messageId) {
   let application;
   let presenceActivity;
   ({ presenceActivity, application } = messageId);
   let obj = { messageId: messageId.messageId };
-  let coverImageURL = coverImageURL.getCoverImageURL(obj);
+  coverImageURL = coverImageURL.getCoverImageURL(obj);
   if (null === coverImageURL) {
-    return { 979479382: "o", 1677917265: "o" };
+    return { cachedImageURL: null, imageURL: null };
   } else {
-    const result = 600 * importDefault(dependencyMap[2])();
+    const result = 600 * importDefault(1825)();
     obj = { cachedImageURL: coverImageURL };
     let invite_cover_image;
     if (null != presenceActivity) {
@@ -25,8 +29,8 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
     }
     let assetImage = null;
     if (null != invite_cover_image) {
-      assetImage = arg1(dependencyMap[3]).getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
-      const obj2 = arg1(dependencyMap[3]);
+      assetImage = require(7820) /* _createForOfIteratorHelperLoose */.getAssetImage(presenceActivity.application_id, presenceActivity.assets.invite_cover_image, result);
+      const obj2 = require(7820) /* _createForOfIteratorHelperLoose */;
     }
     if (null != assetImage) {
       coverImageURL = assetImage;
@@ -42,26 +46,19 @@ function _getPresenceActivityInviteCoverImageURL(messageId) {
     return obj;
   }
 }
-let closure_4 = importAll(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activities/utils/usePresenceActivityInviteCoverImageURL.tsx");
+let result = require("getDevicePixelRatio").fileFinishedImporting("modules/activities/utils/usePresenceActivityInviteCoverImageURL.tsx");
 
 export const usePresenceActivityInviteCoverImageURL = (messageId) => {
   messageId = messageId.messageId;
-  const arg1 = messageId;
   const presenceActivity = messageId.presenceActivity;
-  const importDefault = presenceActivity;
   const application = messageId.application;
-  const importAll = application;
-  const items = [closure_5];
+  const items = [_isNativeReflectConstruct];
   const items1 = [messageId, presenceActivity, application];
-  const stateFromStoresObject = arg1(dependencyMap[4]).useStateFromStoresObject(items, () => callback({ messageId, presenceActivity, application }), items1);
-  const cachedImageURL = stateFromStoresObject.cachedImageURL;
-  const dependencyMap = cachedImageURL;
+  const stateFromStoresObject = messageId(cachedImageURL[4]).useStateFromStoresObject(items, () => outer1_6({ messageId, presenceActivity, application }), items1);
+  cachedImageURL = stateFromStoresObject.cachedImageURL;
   const imageURL = stateFromStoresObject.imageURL;
-  const React = imageURL;
   const items2 = [cachedImageURL, imageURL, messageId];
-  const effect = React.useEffect(() => {
+  const effect = imageURL.useEffect(() => {
     if (cachedImageURL !== imageURL) {
       let obj = application(cachedImageURL[5]);
       obj = { messageId, coverImageURL: imageURL };
@@ -77,8 +74,8 @@ export const getPresenceActivityInviteCoverImageURL = function getPresenceActivi
   const imageURL = tmp.imageURL;
   if (tmp.cachedImageURL !== imageURL) {
     obj = { messageId, coverImageURL: imageURL };
-    importAll(dependencyMap[5]).setCoverImageURL(obj);
-    const obj2 = importAll(dependencyMap[5]);
+    importAll(12314).setCoverImageURL(obj);
+    const obj2 = importAll(12314);
   }
   return imageURL;
 };

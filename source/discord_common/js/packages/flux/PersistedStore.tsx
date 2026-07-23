@@ -1,22 +1,33 @@
 // Module ID: 567
 // Function ID: 6828
 // Name: _superPropGet
-// Dependencies: []
+// Dependencies: [102, 29, 6, 7, 15, 17, 18, 568, 572, 20, 587, 2]
 
 // Module 567 (_superPropGet)
+import _get from "_get";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _inherits from "_inherits";
+import Store from "Store";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import closure_10 from "_inherits";
+import { Store } from "Store";
+import set from "_classCallCheck";
+
+const require = arg1;
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  arg1 = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_4(closure_9(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const importDefault = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
@@ -32,7 +43,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_8(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -43,26 +54,18 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const Store = arg1(dependencyMap[7]).Store;
+let closure_3 = ["_state", "_version"];
 let closure_12 = { _state: undefined, _version: undefined };
-let closure_13 = null;
-const tmp2 = (Store) => {
+let c13 = null;
+let tmp2 = ((Store) => {
   class PersistedStore {
     constructor(arg0, arg1, arg2) {
-      tmp = closure_6(this, PersistedStore);
+      tmp = outer1_6(this, PersistedStore);
       items = [, , ];
       items[0] = Store;
       items[1] = arg1;
       items[2] = arg2;
-      obj = closure_16(this, PersistedStore, items);
+      obj = outer1_16(this, PersistedStore, items);
       PersistedStore = obj;
       num = 0;
       if (null != obj.getClass().migrations) {
@@ -77,7 +80,7 @@ const tmp2 = (Store) => {
         _writeResolvers.delete(persistKey);
         arg0();
       };
-      tmp2 = closure_1(closure_2[8]);
+      tmp2 = outer1_1(outer1_2[8]);
       obj.throttledCallback = tmp2((arg0) => obj.callback(arg0), obj.getClass().throttleDelay, { leading: false });
       if ("string" !== typeof obj.getClass().persistKey) {
         tmp14 = globalThis;
@@ -124,7 +127,6 @@ const tmp2 = (Store) => {
       }
     }
   }
-  const arg1 = PersistedStore;
   callback3(PersistedStore, Store);
   let obj = {
     key: "getClass",
@@ -132,7 +134,7 @@ const tmp2 = (Store) => {
       return this.constructor;
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "initializeFromState",
     value(arg0) {
@@ -170,8 +172,8 @@ const tmp2 = (Store) => {
         const _Date2 = Date;
         const diff = Date.now() - timestamp;
         if (diff > 5) {
-          callback(closure_2[9]).mark("\u{1F9A5}", `${self.getName()}.initialize()`, diff);
-          const obj = callback(closure_2[9]);
+          outer1_1(outer1_2[9]).mark("\u{1F9A5}", `${self.getName()}.initialize()`, diff);
+          const obj = outer1_1(outer1_2[9]);
         }
       }
     }
@@ -180,23 +182,23 @@ const tmp2 = (Store) => {
   items[3] = {
     key: "asyncPersist",
     value() {
-      const PersistedStore = this;
+      const self = this;
       const getClassResult = this.getClass();
       const persistKey = getClassResult.persistKey;
       const throttleDelay = getClassResult.throttleDelay;
-      if (!PersistedStore.disableWrites) {
+      if (!self.disableWrites) {
         if (!getClassResult.disableWrite) {
-          let value = PersistedStore._writePromises.get(persistKey);
+          let value = self._writePromises.get(persistKey);
           if (null == value) {
             const promise = new Promise((arg0) => {
-              const self = arg0;
+              let closure_0 = arg0;
               const _writeResolvers = self._writeResolvers;
-              const items = [arg0, requestIdleCallback(throttleDelay > 0 ? () => arg0.throttledCallback(arg0) : () => arg0.callback(arg0), { timeout: 500 })];
+              const items = [arg0, requestIdleCallback(throttleDelay > 0 ? (() => closure_0.throttledCallback(closure_0)) : (() => closure_0.callback(closure_0)), { timeout: 500 })];
               const result = _writeResolvers.set(persistKey, items);
             });
-            const result = PersistedStore._writePromises.set(persistKey, promise);
+            let result = self._writePromises.set(persistKey, promise);
             value = promise;
-            const _writePromises2 = PersistedStore._writePromises;
+            const _writePromises2 = self._writePromises;
           }
           return value;
         }
@@ -208,14 +210,14 @@ const tmp2 = (Store) => {
     key: "persist",
     value() {
       const state = this.getState();
-      const Storage = PersistedStore(closure_2[10]).Storage;
+      const Storage = PersistedStore(outer1_2[10]).Storage;
       const result = Storage.set(this.getClass().persistKey, { _state: state, _version: this._version });
     }
   };
   items[5] = {
     key: "clear",
     value() {
-      const Storage = PersistedStore(closure_2[10]).Storage;
+      const Storage = PersistedStore(outer1_2[10]).Storage;
       Storage.remove(this.getClass().persistKey);
     }
   };
@@ -224,30 +226,32 @@ const tmp2 = (Store) => {
       key: "clearAll",
       value(arg0) {
         const PersistedStore = arg0;
+        const outer1_13 = arg0;
         if (null == PersistedStore._clearAllPromise) {
           const promise = new Promise((arg0) => {
-            requestIdleCallback((self) => {
-              self.clearPersistQueue(self);
-              const allPersistKeys = self.allPersistKeys;
+            let closure_0 = arg0;
+            requestIdleCallback(() => {
+              lib.clearPersistQueue(lib);
+              const allPersistKeys = lib.allPersistKeys;
               const item = allPersistKeys.forEach((arg0) => {
-                if (lib.shouldClear(lib, arg0)) {
-                  const Storage = lib(closure_2[10]).Storage;
+                if (closure_0.shouldClear(closure_0, arg0)) {
+                  const Storage = PersistedStore(outer4_2[10]).Storage;
                   Storage.remove(arg0);
                 }
               });
-              const all = all.getAll();
+              const all = outer3_11.getAll();
               const item1 = all.forEach((getClass) => {
-                let shouldClearResult = getClass instanceof lib;
+                let shouldClearResult = getClass instanceof closure_0;
                 if (shouldClearResult) {
-                  shouldClearResult = lib.shouldClear(lib, getClass.getClass().persistKey);
+                  shouldClearResult = closure_0.shouldClear(closure_0, getClass.getClass().persistKey);
                 }
                 if (shouldClearResult) {
                   getClass._isInitialized = false;
                   getClass.initializeIfNeeded();
                 }
               });
-              self._clearAllPromise = null;
-              self();
+              lib._clearAllPromise = null;
+              lib();
             }, { timeout: 500 });
           });
           PersistedStore._clearAllPromise = promise;
@@ -281,17 +285,17 @@ const tmp2 = (Store) => {
       value(arg0) {
         const PersistedStore = arg0;
         let _writeResolvers = PersistedStore._writeResolvers;
-        const item = _writeResolvers.forEach((self) => {
+        const item = _writeResolvers.forEach((arg0, arg1) => {
           let tmp;
           let tmp2;
-          [tmp, tmp2] = self;
-          if (self.shouldClear(self, arg1)) {
-            self._writePromises.delete(arg1);
-            const _writeResolvers = self._writeResolvers;
+          [tmp, tmp2] = arg0;
+          if (closure_0.shouldClear(closure_0, arg1)) {
+            closure_0._writePromises.delete(arg1);
+            const _writeResolvers = closure_0._writeResolvers;
             _writeResolvers.delete(arg1);
             cancelIdleCallback(tmp2);
             tmp(false);
-            const _writePromises = self._writePromises;
+            const _writePromises = closure_0._writePromises;
           }
         });
         PersistedStore._writePromises.clear();
@@ -304,12 +308,12 @@ const tmp2 = (Store) => {
       value() {
         return Promise.all(Array.from(PersistedStore._writePromises.values())).then(() => {
           const obj = {};
-          const allPersistKeys = obj.allPersistKeys;
+          const allPersistKeys = outer1_0.allPersistKeys;
           const item = allPersistKeys.forEach((arg0) => {
-            const Storage = obj(closure_2[10]).Storage;
+            const Storage = PersistedStore(outer3_2[10]).Storage;
             let value = Storage.get(arg0);
             if (null == value) {
-              value = closure_12;
+              value = outer3_12;
             }
             obj[arg0] = value._state;
           });
@@ -320,13 +324,13 @@ const tmp2 = (Store) => {
     {
       key: "initializeAll",
       value(arg0) {
-        const PersistedStore = arg0;
-        const all = closure_11.getAll();
+        let closure_0 = arg0;
+        const all = outer1_11.getAll();
         const item = all.forEach((getClass) => {
-          if (getClass instanceof getClass) {
+          if (getClass instanceof closure_0) {
             const persistKey = getClass.getClass().persistKey;
-            if (getClass.hasOwnProperty(persistKey)) {
-              getClass.initializeFromState(getClass[persistKey]);
+            if (closure_0.hasOwnProperty(persistKey)) {
+              getClass.initializeFromState(closure_0[persistKey]);
             }
           }
         });
@@ -335,8 +339,8 @@ const tmp2 = (Store) => {
     {
       key: "destroy",
       value() {
-        let closure_13 = null;
-        closure_11.destroy();
+        const outer1_13 = null;
+        outer1_11.destroy();
         PersistedStore.clearPersistQueue({ type: "all" });
         const allPersistKeys = PersistedStore.allPersistKeys;
         allPersistKeys.clear();
@@ -349,9 +353,9 @@ const tmp2 = (Store) => {
       value(arg0, arg1) {
         let _state;
         let _version;
-        if (null != closure_13) {
-          if (PersistedStore.shouldClear(closure_13, arg0)) {
-            const Storage2 = PersistedStore(closure_2[10]).Storage;
+        if (null != outer1_13) {
+          if (PersistedStore.shouldClear(outer1_13, arg0)) {
+            const Storage2 = PersistedStore(outer1_2[10]).Storage;
             Storage2.remove(arg0);
             let obj = { state: undefined, requiresPersist: false };
             return obj;
@@ -359,14 +363,14 @@ const tmp2 = (Store) => {
         }
         let value = null;
         if (null == PersistedStore._clearAllPromise) {
-          const Storage = PersistedStore(closure_2[10]).Storage;
+          const Storage = PersistedStore(outer1_2[10]).Storage;
           value = Storage.get(arg0);
         }
         if (null == value) {
-          value = closure_12;
+          value = outer1_12;
         }
         ({ _state, _version } = value);
-        const tmp6 = callback2(value, closure_3);
+        const tmp6 = outer1_5(value, outer1_3);
         let num2 = 0;
         if (null != arg1) {
           num2 = arg1.length;
@@ -406,9 +410,10 @@ const tmp2 = (Store) => {
     }
   ];
   return callback(PersistedStore, items, items1);
-}(Store);
-tmp2.allPersistKeys = new Set();
-const set = new Set();
+})(Store);
+let closure_14 = tmp2;
+let set = new Set();
+tmp2.allPersistKeys = set;
 tmp2.userAgnosticPersistKeys = new Set();
 const set1 = new Set();
 tmp2._writePromises = new Map();
@@ -417,31 +422,30 @@ tmp2._writeResolvers = new Map();
 tmp2.disableWrites = false;
 tmp2.disableWrite = false;
 tmp2.throttleDelay = 0;
-const tmp7 = (arg0) => {
+let tmp7 = ((arg0) => {
   class UserAgnosticStore {
     constructor() {
-      tmp = closure_6(this, UserAgnosticStore);
-      return closure_16(this, UserAgnosticStore, arguments);
+      tmp = outer1_6(this, UserAgnosticStore);
+      return outer1_16(this, UserAgnosticStore, arguments);
     }
   }
-  const arg1 = UserAgnosticStore;
   callback3(UserAgnosticStore, arg0);
   let obj = {
     key: "initializeFromState",
     value(arg0) {
-      const userAgnosticPersistKeys = closure_14.userAgnosticPersistKeys;
+      const userAgnosticPersistKeys = outer1_14.userAgnosticPersistKeys;
       userAgnosticPersistKeys.add(this.getClass().persistKey);
       const items = [arg0];
-      return callback2(UserAgnosticStore, "initializeFromState", this, 3)(items);
+      return outer1_15(UserAgnosticStore, "initializeFromState", this, 3)(items);
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "initializeIfNeeded",
     value() {
-      const userAgnosticPersistKeys = closure_14.userAgnosticPersistKeys;
+      const userAgnosticPersistKeys = outer1_14.userAgnosticPersistKeys;
       userAgnosticPersistKeys.add(this.getClass().persistKey);
-      return callback2(UserAgnosticStore, "initializeIfNeeded", this, 3)([]);
+      return outer1_15(UserAgnosticStore, "initializeIfNeeded", this, 3)([]);
     }
   };
   items[1] = obj;
@@ -453,32 +457,29 @@ const tmp7 = (arg0) => {
   };
   items[2] = obj;
   return callback(UserAgnosticStore, items);
-}(tmp2);
+})(tmp2);
 const map1 = new Map();
-const tmp8 = (arg0) => {
+let tmp8 = ((arg0) => {
   class DeviceSettingsStore {
     constructor() {
-      tmp = closure_6(this, DeviceSettingsStore);
-      return closure_16(this, DeviceSettingsStore, arguments);
+      tmp = outer1_6(this, DeviceSettingsStore);
+      return outer1_16(this, DeviceSettingsStore, arguments);
     }
   }
-  const arg1 = DeviceSettingsStore;
   callback3(DeviceSettingsStore, arg0);
   return callback(DeviceSettingsStore);
-}(tmp7);
-const tmp9 = (arg0) => {
-  class OfflineCacheStore {
-    constructor() {
-      tmp = closure_6(this, OfflineCacheStore);
-      return closure_16(this, OfflineCacheStore, arguments);
-    }
-  }
-  const arg1 = OfflineCacheStore;
-  callback3(OfflineCacheStore, arg0);
-  return callback(OfflineCacheStore);
-}(tmp7);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("../discord_common/js/packages/flux/PersistedStore.tsx");
+})(tmp7);
+let result = set.fileFinishedImporting("../discord_common/js/packages/flux/PersistedStore.tsx");
 
 export const PersistedStore = tmp2;
 export const DeviceSettingsStore = tmp8;
-export const OfflineCacheStore = tmp9;
+export const OfflineCacheStore = ((arg0) => {
+  class OfflineCacheStore {
+    constructor() {
+      tmp = outer1_6(this, OfflineCacheStore);
+      return outer1_16(this, OfflineCacheStore, arguments);
+    }
+  }
+  callback3(OfflineCacheStore, arg0);
+  return callback(OfflineCacheStore);
+})(tmp7);

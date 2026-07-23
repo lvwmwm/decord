@@ -1,35 +1,58 @@
-// Module ID: 5045
-// Function ID: 43594
+// Module ID: 5048
+// Function ID: 43612
 // Name: showTooManyUserGuildsAlert
-// Dependencies: []
+// Dependencies: [29, 5, 5049, 1194, 4971, 1907, 1838, 1906, 3947, 1849, 653, 1197, 4470, 1212, 686, 5050, 507, 1198, 5053, 1934, 5589, 5597, 5602, 5628, 5697, 4942, 480, 5716, 3763, 483, 5717, 3799, 675, 5721, 4345, 5723, 2]
 
-// Module 5045 (showTooManyUserGuildsAlert)
+// Module 5048 (showTooManyUserGuildsAlert)
+import fromHexReverseArray from "fromHexReverseArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { AgeGateSource } from "result";
+
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+const require = arg1;
 function showTooManyUserGuildsAlert(quantity) {
-  let obj = importDefault(dependencyMap[12]);
+  let obj = importDefault(4470);
   obj = {};
-  const intl = arg1(dependencyMap[13]).intl;
-  obj.title = intl.string(arg1(dependencyMap[13]).t.cTaRxF);
-  const intl2 = arg1(dependencyMap[13]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.cTaRxF);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
   obj = { quantity };
-  obj.body = intl2.formatToPlainString(arg1(dependencyMap[13]).t.VSd+Aj, obj);
+  obj.body = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["VSd+Aj"], obj);
   obj.show(obj);
 }
 function deleteGuild(id) {
-  let obj = importDefault(dependencyMap[14]);
+  let obj = importDefault(686);
   obj = { id };
   obj.dispatch({ type: "GUILD_DELETE", guild: obj });
 }
 async function _joinGuild(arg0, arg1) {
-  const fn = function*(guildId) {
+  let iter = (function*(guildId) {
     let autoNavigate;
     let lurkLocation;
     let obj = arg1;
+    let closure_0 = guildId;
     if (obj === undefined) {
       obj = {};
     }
     let source;
     let loadId;
-    let tmp5;
+    let c3;
     yield undefined;
     source = obj.source;
     loadId = obj.loadId;
@@ -39,18 +62,19 @@ async function _joinGuild(arg0, arg1) {
       tmp3 = autoNavigate;
     }
     const lurker = obj.lurker;
-    tmp5 = null != lurker;
+    let tmp5 = null != lurker;
     if (tmp5) {
       tmp5 = lurker;
     }
-    const currentUser = currentUser.getCurrentUser();
+    c3 = tmp5;
+    const currentUser = outer2_14.getCurrentUser();
     let hasFlagResult;
     if (null != currentUser) {
-      hasFlagResult = currentUser.hasFlag(constants2.QUARANTINED);
+      hasFlagResult = currentUser.hasFlag(outer2_18.QUARANTINED);
     }
     if (null != hasFlagResult) {
       if (hasFlagResult) {
-        source(tmp5[15])();
+        outer2_1(outer2_3[15])();
         const promise = new Promise((arg0, arg1) => {
           const error = new Error();
           return arg1(error);
@@ -58,25 +82,25 @@ async function _joinGuild(arg0, arg1) {
         return promise;
       }
     }
-    let obj2 = source(tmp5[14]);
+    let obj2 = outer2_1(outer2_3[14]);
     obj2.wait(() => {
-      let obj = source(tmp5[14]);
-      obj = { type: "GUILD_JOIN", guildId: arg0, lurker: tmp5, source, loadId };
+      let obj = outer3_1(outer3_3[14]);
+      obj = { type: "GUILD_JOIN", guildId: closure_0, lurker: c3, source, loadId };
       return obj.dispatch(obj);
     });
     let channelId = null;
-    if (guildId === guildId.getGuildId()) {
+    if (guildId === outer2_13.getGuildId()) {
       channelId = null;
-      if (null != store.getGuild(tmp)) {
-        channelId = channelId.getChannelId(tmp);
+      if (null != outer2_11.getGuild(tmp)) {
+        channelId = outer2_12.getChannelId(tmp);
       }
     }
-    const HTTP = guildId(tmp5[16]).HTTP;
-    obj = { url: closure_16.GUILD_JOIN(tmp) };
+    const HTTP = outer2_0(outer2_3[16]).HTTP;
+    obj = { url: outer2_16.GUILD_JOIN(tmp) };
     obj = { lurker: tmp6 };
     let sessionId = null;
     if (tmp5) {
-      sessionId = sessionId.getSessionId();
+      sessionId = outer2_8.getSessionId();
     }
     obj.session_id = sessionId;
     obj.recommendation_load_id = loadId;
@@ -89,7 +113,7 @@ async function _joinGuild(arg0, arg1) {
     }
     obj.location = tmp17;
     let tmp20 = tmp19;
-    if (source !== constants.DIRECTORY_ENTRY) {
+    if (source !== outer2_17.DIRECTORY_ENTRY) {
       tmp20 = null;
     }
     obj.from_directory = tmp20;
@@ -97,94 +121,87 @@ async function _joinGuild(arg0, arg1) {
     obj.context = { source };
     obj.oldFormErrors = true;
     obj.body = {};
-    obj.rejectWithError = guildId(tmp5[16]).rejectWithMigratedError();
+    obj.rejectWithError = outer2_0(outer2_3[16]).rejectWithMigratedError();
     const tmp21 = yield HTTP.put(obj);
     if (null != tmp21.body.join_request) {
       const obj1 = { type: "USER_GUILD_JOIN_REQUEST_UPDATE", guildId: tmp, request: tmp22.body.join_request };
-      source(tmp5[14]).dispatch(obj1);
-      const obj7 = source(tmp5[14]);
+      outer2_1(outer2_3[14]).dispatch(obj1);
+      const obj7 = outer2_1(outer2_3[14]);
     }
-    if (null == store.getGuild(guildId)) {
+    if (null == outer2_11.getGuild(guildId)) {
       if (tmp22.body.show_verification_form) {
         if (tmp3) {
-          guildId(tmp5[17]).transitionTo(closure_21.GUILD_MEMBER_VERIFICATION(tmp));
+          outer2_0(outer2_3[17]).transitionTo(outer2_21.GUILD_MEMBER_VERIFICATION(tmp));
           return tmp21;
         }
       }
     }
     if (null != tmp21.body.welcome_screen) {
       obj2 = { type: "WELCOME_SCREEN_UPDATE", guildId: tmp22.body.id, welcomeScreen: tmp22.body.welcome_screen };
-      source(tmp5[14]).dispatch(obj2);
-      const obj9 = source(tmp5[14]);
+      outer2_1(outer2_3[14]).dispatch(obj2);
+      const obj9 = outer2_1(outer2_3[14]);
     }
     if (null != tmp21.body.approximate_presence_count) {
       const obj3 = { type: "ONLINE_GUILD_MEMBER_COUNT_UPDATE", guildId: tmp22.body.id, count: tmp22.body.approximate_presence_count };
-      source(tmp5[14]).dispatch(obj3);
-      const obj11 = source(tmp5[14]);
+      outer2_1(outer2_3[14]).dispatch(obj3);
+      const obj11 = outer2_1(outer2_3[14]);
     }
     if (!tmp5) {
       if (tmp3) {
         const obj4 = { guildId: tmp, returnChannelId: channelId };
-        return yield yield closure_0(closure_3[19])(closure_3[18], closure_3.paths).default(obj4);
+        return yield yield outer2_0(outer2_3[19])(outer2_3[18], outer2_3.paths).default(obj4);
       }
     }
     return tmp21;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 function waitForGuild(id) {
-  const arg1 = id;
-  return new Promise((arg0) => closure_11.addConditionalChangeListener(() => {
-    const guild = guild.getGuild(arg0);
-    let flag = null == guild;
-    if (!flag) {
-      arg0(guild);
-      flag = false;
-    }
-    return flag;
-  }));
+  let closure_0 = id;
+  return new Promise((arg0) => {
+    let closure_0 = arg0;
+    return outer1_11.addConditionalChangeListener(() => {
+      const guild = outer2_11.getGuild(callback);
+      let flag = null == guild;
+      if (!flag) {
+        callback(guild);
+        flag = false;
+      }
+      return flag;
+    });
+  });
 }
-let closure_4 = [false, false];
-let closure_5 = importDefault(dependencyMap[0]);
-let closure_6 = importDefault(dependencyMap[1]);
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]);
-let closure_13 = importDefault(dependencyMap[8]);
-let closure_14 = importDefault(dependencyMap[9]);
-({ AbortCodes: closure_15, Endpoints: closure_16, JoinGuildSources: closure_17, UserFlags: closure_18, MAX_USER_GUILDS: closure_19, MAX_USER_GUILDS_PREMIUM: closure_20, Routes: closure_21, AnalyticEvents: closure_22 } = arg1(dependencyMap[10]));
-const AgeGateSource = arg1(dependencyMap[11]).AgeGateSource;
-const obj = {
+let closure_4 = ["icon", "unicodeEmoji"];
+({ AbortCodes: closure_15, Endpoints: closure_16, JoinGuildSources: closure_17, UserFlags: closure_18, MAX_USER_GUILDS: closure_19, MAX_USER_GUILDS_PREMIUM: closure_20, Routes: closure_21, AnalyticEvents: closure_22 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/GuildActionCreators.tsx");
+
+export default {
   joinGuild(guildId, arg1) {
     return _joinGuild(...arguments);
   },
   waitForGuild,
-  transitionToGuildSync(guildId, arg1, channelId, messageId) {
-    arg1 = guildId;
-    const importDefault = arg1;
-    const importAll = channelId;
-    const dependencyMap = messageId;
+  transitionToGuildSync(closure_0, arg1, channelId, messageId) {
+    let closure_1 = arg1;
+    let closure_2 = channelId;
+    let closure_3 = messageId;
     return callback(async () => {
-      let channelIdForGuildTransition = closure_2;
-      if (null == closure_2) {
-        let obj = callback(closure_3[22]);
+      let channelIdForGuildTransition = outer1_2;
+      if (null == outer1_2) {
+        let obj = callback(5602);
         channelIdForGuildTransition = obj.getChannelIdForGuildTransition(tmp);
       }
-      let tmp5 = lib;
-      let hasOwnPropertyResult = null != lib;
+      let tmp5 = outer1_1;
+      let hasOwnPropertyResult = null != outer1_1;
       if (hasOwnPropertyResult) {
-        hasOwnPropertyResult = lib.hasOwnProperty("welcomeModalChannelId");
+        hasOwnPropertyResult = outer1_1.hasOwnProperty("welcomeModalChannelId");
       }
       if (hasOwnPropertyResult) {
-        hasOwnPropertyResult = null == lib.welcomeModalChannelId;
+        hasOwnPropertyResult = null == outer1_1.welcomeModalChannelId;
       }
       if (hasOwnPropertyResult) {
         obj = {};
-        const merged = Object.assign(lib);
+        const merged = Object.assign(outer1_1);
         let tmp12;
         if (null != channelIdForGuildTransition) {
           tmp12 = channelIdForGuildTransition;
@@ -192,53 +209,53 @@ const obj = {
         obj["welcomeModalChannelId"] = tmp12;
         tmp5 = obj;
       }
-      lib(closure_3[23])(closure_21.CHANNEL(callback, channelIdForGuildTransition, closure_3), tmp5);
+      callback2(5628)(outer2_21.CHANNEL(outer1_0, channelIdForGuildTransition, outer1_3), tmp5);
       yield new Promise(setImmediate);
     })();
   },
   deleteGuild,
   selectGuild(guildId) {
-    arg1(dependencyMap[24]).stopLurking(guildId);
+    require(5697) /* _createForOfIteratorHelperLoose */.stopLurking(guildId);
   },
   createGuild(guild) {
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_CREATE", guild };
     obj.dispatch(obj);
   },
   setServerMute(id, id2, mute) {
-    const HTTP = id2(dependencyMap[16]).HTTP;
-    let obj = { url: closure_16.GUILD_MEMBER(id, id2), body: obj, oldFormErrors: true };
-    obj = { mute, rejectWithError: id2(dependencyMap[16]).rejectWithMigratedError() };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: closure_16.GUILD_MEMBER(id, id2), body: obj, oldFormErrors: true };
+    obj = { mute, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
     return HTTP.patch(obj);
   },
   setServerDeaf(id, id2, deaf) {
-    const HTTP = id2(dependencyMap[16]).HTTP;
-    let obj = { url: closure_16.GUILD_MEMBER(id, id2), body: obj, oldFormErrors: true };
-    obj = { deaf, rejectWithError: id2(dependencyMap[16]).rejectWithMigratedError() };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: closure_16.GUILD_MEMBER(id, id2), body: obj, oldFormErrors: true };
+    obj = { deaf, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
     return HTTP.patch(obj);
   },
   setChannel(guildId, userId, channel_id) {
-    const HTTP = userId(dependencyMap[16]).HTTP;
-    let obj = { url: closure_16.GUILD_MEMBER(guildId, userId), body: obj, oldFormErrors: true, rejectWithError: true };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: closure_16.GUILD_MEMBER(guildId, userId), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { channel_id };
     HTTP.patch(obj);
   },
   setMemberFlags(id, id2, flags) {
-    const HTTP = id2(dependencyMap[16]).HTTP;
-    let obj = { url: closure_16.GUILD_MEMBER(id, id2), body: obj, oldFormErrors: true, rejectWithError: true };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: closure_16.GUILD_MEMBER(id, id2), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { flags };
     HTTP.patch(obj);
   },
   kickUser(id, id1, current) {
-    id1 = id;
-    const importDefault = id1;
-    const HTTP = id1(dependencyMap[16]).HTTP;
-    let obj = { url: closure_16.GUILD_MEMBER(id, id1), query: obj, oldFormErrors: true };
-    obj = { reason: current, moderator_report_id: arg3, rejectWithError: id1(dependencyMap[16]).rejectWithMigratedError() };
-    const obj3 = id1(dependencyMap[16]);
+    const _require = id;
+    let closure_1 = id1;
+    const HTTP = _require(507).HTTP;
+    obj = { url: closure_16.GUILD_MEMBER(id, id1), query: obj, oldFormErrors: true };
+    obj = { reason: current, moderator_report_id: arg3, rejectWithError: _require(507).rejectWithMigratedError() };
+    const obj3 = _require(507);
     return HTTP.del(obj).then(() => {
-      let obj = arg1(closure_3[14]);
-      obj = { type: "GUILD_MEMBER_REMOVE_LOCAL", guildId: arg0, userId: arg1 };
+      let obj = id1(outer1_3[14]);
+      obj = { type: "GUILD_MEMBER_REMOVE_LOCAL", guildId: closure_0, userId: id1 };
       obj.dispatch(obj);
     });
   },
@@ -250,9 +267,9 @@ const obj = {
     let reason;
     let userId;
     ({ guildId, userId, communicationDisabledUntilTimestamp, duration, reason, location: _location } = moderator_report_id);
-    let obj = importDefault(dependencyMap[25]);
+    let obj = importDefault(4942);
     obj = { url: closure_16.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderator_report_id.moderatorReportId }, oldFormErrors: true };
-    obj = { event: arg1(dependencyMap[26]).NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE };
+    obj = { event: require(480) /* isThrottled */.NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE };
     const obj1 = { guild_id: guildId, target_user_id: userId };
     let tmp = null;
     if (null != duration) {
@@ -272,52 +289,52 @@ const obj = {
     obj1.location = tmp3;
     obj.properties = obj1;
     obj.trackedActionData = obj;
-    obj.rejectWithError = arg1(dependencyMap[16]).rejectWithMigratedError();
+    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return obj.patch(obj);
   },
   banUser(id, id2, value, current) {
-    const HTTP = id2(dependencyMap[16]).HTTP;
-    let obj = { url: closure_16.GUILD_BAN(id, id2), reason: current, body: obj, oldFormErrors: true };
-    obj = { delete_message_seconds: value, moderator_report_id: arg4, rejectWithError: id2(dependencyMap[16]).rejectWithMigratedError() };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: closure_16.GUILD_BAN(id, id2), reason: current, body: obj, oldFormErrors: true };
+    obj = { delete_message_seconds: value, moderator_report_id: arg4, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
     return HTTP.put(obj);
   },
   unbanUser(id, id2) {
-    const HTTP = id2(dependencyMap[16]).HTTP;
-    const obj = { url: closure_16.GUILD_BAN(id, id2), oldFormErrors: true, rejectWithError: id2(dependencyMap[16]).rejectWithMigratedError() };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    const obj = { url: closure_16.GUILD_BAN(id, id2), oldFormErrors: true, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
     return HTTP.del(obj);
   },
-  banMultipleUsers(arg0, user_ids, delete_message_seconds, reason, usePubSub) {
+  banMultipleUsers(outer1_0, outer1_1, outer1_2, outer1_3, usePubSub) {
     let flag = usePubSub;
     if (usePubSub === undefined) {
       flag = false;
     }
-    const HTTP = user_ids(dependencyMap[16]).HTTP;
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
     let obj = {};
     if (flag) {
-      let BULK_GUILD_BAN_V2Result = obj2.BULK_GUILD_BAN_V2(arg0);
+      let BULK_GUILD_BAN_V2Result = obj2.BULK_GUILD_BAN_V2(outer1_0);
     } else {
-      BULK_GUILD_BAN_V2Result = obj2.BULK_GUILD_BAN(arg0);
+      BULK_GUILD_BAN_V2Result = obj2.BULK_GUILD_BAN(outer1_0);
     }
     obj.url = BULK_GUILD_BAN_V2Result;
-    obj = { user_ids, delete_message_seconds };
+    obj = { user_ids: outer1_1, delete_message_seconds: outer1_2 };
     obj.body = obj;
-    obj.reason = reason;
+    obj.reason = outer1_3;
     obj.oldFormErrors = true;
-    obj.rejectWithError = user_ids(dependencyMap[16]).rejectWithMigratedError();
+    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
     return HTTP.post(obj);
   },
   startBulkBan(arg0, arg1, arg2, arg3) {
-    arg1 = arg0;
-    const importDefault = arg1;
-    const importAll = arg2;
-    const dependencyMap = arg3;
-    let closure_4 = this;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let closure_3 = arg3;
+    const self = this;
     return callback(async () => {
-      let obj = callback(closure_3[27]);
+      let obj = callback(5716);
       const usePubSub = obj.getConfig({ location: "startBulkBan" }).usePubSub;
       let num = 14;
-      let obj1 = callback(closure_3[14]);
-      obj = { type: "GUILD_BULK_BAN_STARTED", guildId: closure_0 };
+      let obj1 = callback(686);
+      obj = { type: "GUILD_BULK_BAN_STARTED", guildId: outer1_0 };
       obj1.dispatch(obj);
       if (!usePubSub) {
         const body = tmp.body;
@@ -328,9 +345,9 @@ const obj = {
           items = [];
         }
         const failed_users = tmp8.failed_users;
-        num = callback(closure_3[num]);
-        obj = { type: "GUILD_BULK_BAN_UPDATE", guildId: closure_0 };
-        obj1 = { bannedUsers: items, failedUsers: undefined === failed_users ? [] : failed_users, targetUserIds: callback };
+        num = callback(dependencyMap[num]);
+        obj = { type: "GUILD_BULK_BAN_UPDATE", guildId: outer1_0 };
+        obj1 = { bannedUsers: items, failedUsers: undefined === failed_users ? [] : failed_users, targetUserIds: outer1_1 };
         obj.bulkBan = obj1;
         num.dispatch(obj);
         const tmp12 = undefined === failed_users ? [] : failed_users;
@@ -339,10 +356,10 @@ const obj = {
   },
   createRole(id, arg1, arg2) {
     let obj = arg4;
-    arg1 = id;
-    const importDefault = arg1;
-    const importAll = arg2;
-    const dependencyMap = arg3;
+    let closure_0 = id;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let closure_3 = arg3;
     if (arg4 === undefined) {
       obj = {};
     }
@@ -350,113 +367,112 @@ const obj = {
     if (flag === undefined) {
       flag = false;
     }
-    let closure_4 = flag;
     return callback(async () => {
       let obj = {};
-      if (null != callback2) {
-        if ("" !== callback2) {
-          let stringResult = callback2;
+      if (null != outer1_1) {
+        if ("" !== outer1_1) {
+          let stringResult = outer1_1;
         }
         obj.name = stringResult;
         let num = 0;
-        if (null != callback3) {
-          num = callback3;
+        if (null != outer1_2) {
+          num = outer1_2;
         }
         obj.color = num;
-        if (null != closure_3) {
-          obj = closure_3;
+        if (null != outer1_3) {
+          obj = outer1_3;
         } else {
-          obj = { marginRight: "mn", borderLeftColor: "description", borderLeftWidth: "Array" };
+          obj = { primary_color: null, secondary_color: null, tertiary_color: null };
           let num2 = 0;
-          if (null != callback3) {
-            num2 = callback3;
+          if (null != outer1_2) {
+            num2 = outer1_2;
           }
           obj.primary_color = num2;
         }
         obj.colors = obj;
-        obj.permissions = callback3(closure_3[28]).NONE;
-        const HTTP = callback(closure_3[16]).HTTP;
-        obj = { url: closure_16.GUILD_ROLES(callback), oldFormErrors: true };
+        obj.permissions = callback3(3763).NONE;
+        const HTTP = callback(507).HTTP;
+        obj = { url: outer2_16.GUILD_ROLES(outer1_0), oldFormErrors: true };
         obj.body = obj;
-        obj.rejectWithError = callback(closure_3[16]).rejectWithMigratedError();
+        obj.rejectWithError = callback(507).rejectWithMigratedError();
         const tmp13 = yield HTTP.post(obj);
         const body = tmp13.body;
-        const obj4 = callback(closure_3[16]);
+        const obj4 = callback(507);
         const tmp15 = body;
-        body.permissions = callback3(closure_3[29]).deserialize(body.permissions);
-        if (!closure_4) {
+        body.permissions = callback3(483).deserialize(body.permissions);
+        if (!outer1_4) {
           const obj1 = { type: "GUILD_SETTINGS_ROLE_SELECT", roleId: tmp13.body.id, role: tmp15 };
-          callback2(closure_3[14]).dispatch(obj1);
-          const obj6 = callback2(closure_3[14]);
+          callback2(686).dispatch(obj1);
+          const obj6 = callback2(686);
         }
-        const obj5 = callback3(closure_3[29]);
-        const result = callback2(closure_3[30]).checkGuildTemplateDirty(callback);
+        const obj5 = callback3(483);
+        const result = callback2(5717).checkGuildTemplateDirty(outer1_0);
         return body;
       }
-      const intl = callback(closure_3[13]).intl;
-      stringResult = intl.string(callback(closure_3[13]).t.QBMHvB);
+      const intl = callback(1212).intl;
+      stringResult = intl.string(callback(1212).t.QBMHvB);
     })();
   },
   updateRole(arg0, arg1, arg2) {
-    arg1 = arg0;
-    const importDefault = arg1;
-    const importAll = arg2;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
     return callback(async () => {
-      const icon = closure_2.icon;
+      const icon = outer1_2.icon;
       if (null === icon) {
         const tmp2 = icon;
       }
-      const HTTP = callback(closure_3[16]).HTTP;
-      let obj = { url: closure_16.GUILD_ROLE(callback, callback2) };
+      const HTTP = callback(outer2_3[16]).HTTP;
+      let obj = { url: outer2_16.GUILD_ROLE(outer1_0, outer1_1) };
       obj = {};
-      const merged = Object.assign(callback3(closure_2, closure_4));
+      const merged = Object.assign(outer2_5(outer1_2, outer2_4));
       obj["icon"] = tmp2;
-      obj["unicode_emoji"] = closure_2.unicodeEmoji;
+      obj["unicode_emoji"] = outer1_2.unicodeEmoji;
       obj.body = obj;
       obj.oldFormErrors = true;
-      const tmp = callback3(closure_2, closure_4);
-      obj.rejectWithError = callback(closure_3[16]).rejectWithMigratedError();
-      const obj3 = callback(closure_3[16]);
+      const tmp = outer2_5(outer1_2, outer2_4);
+      obj.rejectWithError = callback(outer2_3[16]).rejectWithMigratedError();
+      const obj3 = callback(outer2_3[16]);
       const tmp4 = yield HTTP.patch(obj);
-      const result = callback2(closure_3[30]).checkGuildTemplateDirty(callback);
+      const result = callback2(outer2_3[30]).checkGuildTemplateDirty(outer1_0);
       return tmp4;
     })();
   },
-  updateRolePermissions(closure_0, closure_1, permissions) {
-    const HTTP = closure_1(dependencyMap[16]).HTTP;
-    let obj = { url: closure_16.GUILD_ROLE(closure_0, closure_1), body: obj, oldFormErrors: true };
-    obj = { permissions, rejectWithError: closure_1(dependencyMap[16]).rejectWithMigratedError() };
+  updateRolePermissions(guildId, outer1_1, permissions) {
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: closure_16.GUILD_ROLE(guildId, outer1_1), body: obj, oldFormErrors: true };
+    obj = { permissions, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
     return HTTP.patch(obj);
   },
   deleteRole(id, id2) {
-    id2 = id;
-    const HTTP = id2(dependencyMap[16]).HTTP;
-    const obj = { y: null, isArray: null, accessible: null, url: closure_16.GUILD_ROLE(id, id2) };
+    const _require = id;
+    const HTTP = _require(507).HTTP;
+    const obj = { url: closure_16.GUILD_ROLE(id, id2), oldFormErrors: true, rejectWithError: true };
     HTTP.del(obj).then(() => {
-      const result = callback(closure_3[30]).checkGuildTemplateDirty(arg0);
+      const result = outer1_1(outer1_3[30]).checkGuildTemplateDirty(closure_0);
     });
   },
   batchChannelUpdate(arg0, arg1) {
-    arg1 = arg0;
-    const importDefault = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     return callback(async () => {
-      const HTTP = callback(closure_3[16]).HTTP;
-      const obj = { url: closure_16.GUILD_CHANNELS(callback), body: callback2, oldFormErrors: true, rejectWithError: callback(closure_3[16]).rejectWithMigratedError() };
-      const obj2 = callback(closure_3[16]);
+      const HTTP = callback(outer2_3[16]).HTTP;
+      const obj = { url: outer2_16.GUILD_CHANNELS(outer1_0), body: outer1_1, oldFormErrors: true, rejectWithError: callback(outer2_3[16]).rejectWithMigratedError() };
+      const obj2 = callback(outer2_3[16]);
       const tmp = yield HTTP.patch(obj);
-      const result = callback2(closure_3[30]).checkGuildTemplateDirty(callback);
+      const result = callback2(outer2_3[30]).checkGuildTemplateDirty(outer1_0);
       return tmp;
     })();
   },
   batchRoleUpdate(arg0, arg1) {
-    arg1 = arg0;
-    const importDefault = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     return callback(async () => {
-      const HTTP = callback(closure_3[16]).HTTP;
-      const obj = { url: closure_16.GUILD_ROLES(callback), body: callback2, oldFormErrors: true, rejectWithError: callback(closure_3[16]).rejectWithMigratedError() };
-      const obj2 = callback(closure_3[16]);
+      const HTTP = callback(outer2_3[16]).HTTP;
+      const obj = { url: outer2_16.GUILD_ROLES(outer1_0), body: outer1_1, oldFormErrors: true, rejectWithError: callback(outer2_3[16]).rejectWithMigratedError() };
+      const obj2 = callback(outer2_3[16]);
       const tmp = yield HTTP.patch(obj);
-      const result = callback2(closure_3[30]).checkGuildTemplateDirty(callback);
+      const result = callback2(outer2_3[30]).checkGuildTemplateDirty(outer1_0);
       return tmp;
     })();
   },
@@ -473,7 +489,7 @@ const obj = {
     if (flag === undefined) {
       flag = true;
     }
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_MEMBERS_REQUEST" };
     let tmp = arg0;
     if (!Array.isArray(arg0)) {
@@ -495,14 +511,14 @@ const obj = {
     }
     ({ query, continuationToken } = obj);
     obj = { type: "GUILD_SEARCH_RECENT_MEMBERS", guildId, query, continuationToken };
-    return importDefault(dependencyMap[14]).dispatch(obj);
+    return importDefault(686).dispatch(obj);
   },
   requestMembersById(id1, items, arg2) {
     let flag = arg2;
     if (arg2 === undefined) {
       flag = true;
     }
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_MEMBERS_REQUEST" };
     let tmp = id1;
     if (!Array.isArray(id1)) {
@@ -520,13 +536,13 @@ const obj = {
     return obj.dispatch(obj);
   },
   move(fromIndex, toIndex, fromFolderIndex, toFolderIndex) {
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_MOVE", fromIndex, toIndex, fromFolderIndex, toFolderIndex };
     obj.dispatch(obj);
   },
-  moveById(id, id2, arg2, arg3) {
+  moveById(id, id2, arg2, fromHexReverseArray) {
     let flag = arg2;
-    let flag2 = arg3;
+    let flag2 = fromHexReverseArray;
     if (arg2 === undefined) {
       flag = false;
     }
@@ -539,29 +555,29 @@ const obj = {
       const error = new Error("GuildActionCreators.moveById: `sourceId` and `targetId` cannot be the same value: " + id);
       throw error;
     } else {
-      let obj = importDefault(dependencyMap[14]);
+      let obj = importDefault(686);
       obj = { type: "GUILD_MOVE_BY_ID", sourceId: id, targetId: id2, moveToBelow: flag, combine: flag2 };
       obj.dispatch(obj);
     }
   },
   createGuildFolderLocal(items, name) {
-    let obj = importDefault(dependencyMap[32]);
+    let obj = importDefault(675);
     obj.track(constants.GUILD_FOLDER_CREATED);
     obj = { type: "GUILD_FOLDER_CREATE_LOCAL", sourceIds: items, name };
-    importDefault(dependencyMap[14]).dispatch(obj);
+    importDefault(686).dispatch(obj);
   },
   editGuildFolderLocal(targetId, sourceIds, name) {
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_FOLDER_EDIT_LOCAL", targetId, sourceIds, name };
     obj.dispatch(obj);
   },
   deleteGuildFolderLocal(targetId) {
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_FOLDER_DELETE_LOCAL", targetId };
     obj.dispatch(obj);
   },
-  toggleGuildFolderExpand(closure_0) {
-    let obj = importDefault(dependencyMap[32]);
+  toggleGuildFolderExpand(outer1_0) {
+    let obj = importDefault(675);
     obj = { source: "sidebar" };
     let str = "expanded";
     if (isFolderExpandedResult) {
@@ -569,200 +585,195 @@ const obj = {
     }
     obj.action = str;
     obj.track(constants.GUILD_FOLDER_CLICKED, obj);
-    const isFolderExpandedResult = folderExpanded.isFolderExpanded(closure_0);
-    obj = { type: "TOGGLE_GUILD_FOLDER_EXPAND", folderId: closure_0 };
-    importDefault(dependencyMap[14]).dispatch(obj);
+    isFolderExpandedResult = folderExpanded.isFolderExpanded(outer1_0);
+    obj = { type: "TOGGLE_GUILD_FOLDER_EXPAND", folderId: outer1_0 };
+    importDefault(686).dispatch(obj);
   },
   setGuildFolderExpanded(folderId, expanded) {
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "SET_GUILD_FOLDER_EXPANDED", folderId, expanded };
     obj.dispatch(obj);
   },
   collapseAllFolders() {
-    importDefault(dependencyMap[14]).dispatch({ type: "GUILD_FOLDER_COLLAPSE" });
+    importDefault(686).dispatch({ type: "GUILD_FOLDER_COLLAPSE" });
   },
   nsfwAgree(guildId) {
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_NSFW_AGREE", guildId };
     obj.dispatch(obj);
   },
   nsfwReturnToSafety(guildId) {
-    const tmp = importDefault(dependencyMap[33])(guildId);
+    const tmp = importDefault(5721)(guildId);
     if (null == tmp) {
       if (null != guildId) {
         const defaultChannel = store.getDefaultChannel(guildId);
         if (null != defaultChannel) {
           if (!obj6.isChannelContentGated(defaultChannel)) {
             if (!obj3.isChannelSpoilerGated(defaultChannel)) {
-              arg1(dependencyMap[17]).transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
-              const obj4 = arg1(dependencyMap[17]);
+              require(1198) /* shouldNavigate */.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
+              const obj4 = require(1198) /* shouldNavigate */;
             }
-            const obj3 = arg1(dependencyMap[35]);
+            obj3 = require(5723) /* getSpoilerGatingChannelId */;
           }
-          const obj6 = arg1(dependencyMap[34]);
+          obj6 = require(4345) /* shouldAgeVerifyForAgeGate */;
         }
-        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, { borderRadius: 1766088043, height: 827788593 });
-        const obj5 = arg1(dependencyMap[17]);
+        require(1198) /* shouldNavigate */.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
+        const obj5 = require(1198) /* shouldNavigate */;
       } else {
-        arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS, { borderRadius: 1766088043, height: 827788593 });
-        const obj2 = arg1(dependencyMap[17]);
+        require(1198) /* shouldNavigate */.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
+        const obj2 = require(1198) /* shouldNavigate */;
       }
     } else {
-      arg1(dependencyMap[17]).transitionTo(closure_21.CHANNEL(tmp.guildId, tmp.channelId));
-      const obj = arg1(dependencyMap[17]);
+      require(1198) /* shouldNavigate */.transitionTo(closure_21.CHANNEL(tmp.guildId, tmp.channelId));
+      const obj = require(1198) /* shouldNavigate */;
     }
   },
   spoilerAgree(channelId) {
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "CHANNEL_SPOILER_AGREE", channelId };
     obj.dispatch(obj);
   },
   clearSpoilerAgree(id) {
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(686);
     obj = { type: "CHANNEL_SPOILER_AGREE_CLEAR", channelId: id };
     obj.dispatch(obj);
   },
   escapeToDefaultChannel(guildId) {
     const defaultChannel = store.getDefaultChannel(guildId);
     if (null != defaultChannel) {
-      arg1(dependencyMap[17]).transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
-      const obj2 = arg1(dependencyMap[17]);
+      require(1198) /* shouldNavigate */.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
+      const obj2 = require(1198) /* shouldNavigate */;
     } else {
-      arg1(dependencyMap[17]).transitionTo(closure_21.FRIENDS);
-      const obj = arg1(dependencyMap[17]);
+      require(1198) /* shouldNavigate */.transitionTo(closure_21.FRIENDS);
+      const obj = require(1198) /* shouldNavigate */;
     }
   },
   fetchApplications(arg0, arg1) {
-    arg1 = arg0;
-    const importDefault = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     return callback(async () => {
-      let obj = { url: closure_16.GUILD_APPLICATIONS(callback), oldFormErrors: true, rejectWithError: callback(closure_3[16]).rejectWithMigratedError() };
-      if (null != callback2) {
-        obj = { channel_id: callback2 };
+      let obj = { url: outer2_16.GUILD_APPLICATIONS(outer1_0), oldFormErrors: true, rejectWithError: callback(outer2_3[16]).rejectWithMigratedError() };
+      if (null != outer1_1) {
+        obj = { channel_id: outer1_1 };
         obj.query = obj;
       }
-      const HTTP = callback(closure_3[16]).HTTP;
-      const obj2 = callback(closure_3[16]);
-      obj = { type: "GUILD_APPLICATIONS_FETCH_SUCCESS", guildId: callback, applications: yield HTTP.get(obj).body };
-      callback2(closure_3[14]).dispatch(obj);
+      const HTTP = callback(outer2_3[16]).HTTP;
+      const obj2 = callback(outer2_3[16]);
+      obj = { type: "GUILD_APPLICATIONS_FETCH_SUCCESS", guildId: outer1_0, applications: yield HTTP.get(obj).body };
+      callback2(outer2_3[14]).dispatch(obj);
     })();
   },
   fetchGuildBansBatch(guildId, arg1, arg2) {
     let num = arg1;
     let tmp = arg2;
-    arg1 = guildId;
+    let closure_0 = guildId;
     if (arg1 === undefined) {
       num = 1000;
     }
-    const importDefault = num;
     if (tmp === undefined) {
       tmp = null;
     }
     const importAll = tmp;
     return callback(async () => {
-      let obj = { limit: closure_1 };
-      if (null != closure_2) {
-        obj.after = closure_2;
+      let obj = { limit: outer1_1 };
+      if (null != outer1_2) {
+        obj.after = outer1_2;
       }
-      const HTTP = callback(closure_3[16]).HTTP;
-      obj = { url: closure_16.GUILD_BANS(callback), oldFormErrors: true, query: obj, rejectWithError: callback(closure_3[16]).rejectWithMigratedError() };
+      const HTTP = callback(outer2_3[16]).HTTP;
+      obj = { url: outer2_16.GUILD_BANS(outer1_0), oldFormErrors: true, query: obj, rejectWithError: callback(outer2_3[16]).rejectWithMigratedError() };
       const value = HTTP.get(obj);
       yield value.then((bans) => {
-        let obj = callback(closure_3[14]);
-        obj = { type: "GUILD_SETTINGS_LOADED_BANS_BATCH", bans: bans.body, guildId: closure_0 };
+        let obj = num(outer3_3[14]);
+        obj = { type: "GUILD_SETTINGS_LOADED_BANS_BATCH", bans: bans.body, guildId: outer2_0 };
         obj.dispatch(obj);
       });
     })();
   },
   searchGuildBans(arg0, arg1, arg2) {
     let num = arg3;
-    arg1 = arg0;
-    const importDefault = arg1;
-    const importAll = arg2;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
     if (arg3 === undefined) {
       num = 10;
     }
-    const dependencyMap = num;
     return callback(async () => {
-      let obj = { limit: closure_3 };
-      let tmp = null != length;
+      let obj = { limit: outer1_3 };
+      let tmp = null != outer1_2;
       if (tmp) {
-        tmp = length.length > 0;
+        tmp = outer1_2.length > 0;
       }
       if (tmp) {
-        obj.user_ids = length;
+        obj.user_ids = outer1_2;
       }
-      let tmp4 = null != closure_1;
+      let tmp4 = null != outer1_1;
       if (tmp4) {
-        tmp4 = closure_1.trim().length > 0;
+        tmp4 = outer1_1.trim().length > 0;
       }
       if (tmp4) {
-        obj.query = closure_1;
+        obj.query = outer1_1;
       }
-      const HTTP = callback(closure_3[16]).HTTP;
-      obj = { url: closure_16.GUILD_BANS_SEARCH(callback), oldFormErrors: true, query: obj, rejectWithError: callback(closure_3[16]).rejectWithMigratedError() };
+      const HTTP = callback(num[16]).HTTP;
+      obj = { url: outer2_16.GUILD_BANS_SEARCH(outer1_0), oldFormErrors: true, query: obj, rejectWithError: callback(num[16]).rejectWithMigratedError() };
       const value = HTTP.get(obj);
       yield value.then((bans) => {
-        let obj = callback(closure_3[14]);
-        obj = { type: "GUILD_SETTINGS_LOADED_BANS_BATCH", bans: bans.body, userIds: closure_2, guildId: closure_0 };
+        let obj = callback(num[14]);
+        obj = { type: "GUILD_SETTINGS_LOADED_BANS_BATCH", bans: bans.body, userIds: outer2_2, guildId: outer2_0 };
         obj.dispatch(obj);
       });
     })();
   },
   fetchGuildBans(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     return callback(async () => {
-      const HTTP = callback(closure_3[16]).HTTP;
-      const obj = { url: closure_16.GUILD_BANS(callback), oldFormErrors: true, rejectWithError: callback(closure_3[16]).rejectWithMigratedError() };
+      const HTTP = callback(outer2_3[16]).HTTP;
+      let obj = { url: outer2_16.GUILD_BANS(outer1_0), oldFormErrors: true, rejectWithError: callback(outer2_3[16]).rejectWithMigratedError() };
       const value = HTTP.get(obj);
       yield value.then((bans) => {
-        let obj = callback(closure_3[14]);
+        let obj = outer3_1(outer3_3[14]);
         obj = { type: "GUILD_SETTINGS_LOADED_BANS", bans: bans.body };
         obj.dispatch(obj);
       });
     })();
   },
   fetchGuildRoleConnectionsEligibility(guildId, id) {
-    const HTTP = id(dependencyMap[16]).HTTP;
-    const obj = { url: closure_16.GUILD_ROLE_CONNECTIONS_ELIGIBILITY(guildId, id), oldFormErrors: true, rejectWithError: id(dependencyMap[16]).rejectWithMigratedError() };
+    const _require = id;
+    const HTTP = _require(507).HTTP;
+    let obj = { url: closure_16.GUILD_ROLE_CONNECTIONS_ELIGIBILITY(guildId, id), oldFormErrors: true, rejectWithError: _require(507).rejectWithMigratedError() };
     const value = HTTP.get(obj);
     return value.then((body) => {
       body = body.body;
-      let obj = callback(closure_3[14]);
-      obj = { type: "GUILD_ROLE_CONNECTION_ELIGIBILITY_FETCH_SUCCESS", roleId: arg1, roleConnectionEligibility: body };
+      let obj = outer1_1(outer1_3[14]);
+      obj = { type: "GUILD_ROLE_CONNECTION_ELIGIBILITY_FETCH_SUCCESS", roleId: closure_0, roleConnectionEligibility: body };
       obj.dispatch(obj);
       return body;
     });
   },
   assignGuildRoleConnection(arg0, id) {
-    id = arg0;
-    const importDefault = id;
+    let closure_0 = arg0;
+    let closure_1 = id;
     return callback(async () => {
-      const HTTP = callback(closure_3[16]).HTTP;
-      const obj = { url: closure_16.GUILD_ROLE_CONNECTIONS_ASSIGN(callback, closure_1), oldFormErrors: true, rejectWithError: callback(closure_3[16]).rejectWithMigratedError() };
+      const HTTP = callback(outer2_3[16]).HTTP;
+      const obj = { url: outer2_16.GUILD_ROLE_CONNECTIONS_ASSIGN(outer1_0, outer1_1), oldFormErrors: true, rejectWithError: callback(outer2_3[16]).rejectWithMigratedError() };
       yield HTTP.post(obj);
     })();
   },
-  unassignGuildRoleConnection(arg0, id) {
-    id = arg0;
-    const importDefault = id;
+  unassignGuildRoleConnection(closure_1, id) {
+    let closure_0 = closure_1;
+    closure_1 = id;
     return callback(async () => {
-      const HTTP = callback(closure_3[16]).HTTP;
-      const obj = { url: closure_16.GUILD_ROLE_CONNECTIONS_UNASSIGN(callback, closure_1), oldFormErrors: true, rejectWithError: callback(closure_3[16]).rejectWithMigratedError() };
+      const HTTP = callback(outer2_3[16]).HTTP;
+      const obj = { url: outer2_16.GUILD_ROLE_CONNECTIONS_UNASSIGN(outer1_0, outer1_1), oldFormErrors: true, rejectWithError: callback(outer2_3[16]).rejectWithMigratedError() };
       yield HTTP.post(obj);
     })();
   },
   getGuildRoleConnectionsConfigurations(guildId) {
-    const arg1 = guildId;
+    let closure_0 = guildId;
     return callback(async () => {
-      const HTTP = callback(closure_3[16]).HTTP;
-      const obj = { url: closure_16.GUILD_ROLE_CONNECTIONS_CONFIGURATIONS(callback), oldFormErrors: true, rejectWithError: callback(closure_3[16]).rejectWithMigratedError() };
+      const HTTP = callback(outer2_3[16]).HTTP;
+      const obj = { url: outer2_16.GUILD_ROLE_CONNECTIONS_CONFIGURATIONS(outer1_0), oldFormErrors: true, rejectWithError: callback(outer2_3[16]).rejectWithMigratedError() };
       return yield HTTP.get(obj).body;
     })();
   }
 };
-const tmp2 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[36]).fileFinishedImporting("actions/GuildActionCreators.tsx");
-
-export default obj;
 export { waitForGuild };

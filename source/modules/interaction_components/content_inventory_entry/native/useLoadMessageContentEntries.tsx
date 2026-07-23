@@ -1,53 +1,60 @@
-// Module ID: 10842
-// Function ID: 84133
+// Module ID: 10852
+// Function ID: 84182
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 5, 31, 4167, 4155, 10853, 7889, 5465, 7812, 44, 7820, 1881, 7809, 5679, 2]
 // Exports: default
 
-// Module 10842 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10852 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ImageSizes } from "items3";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,43 +92,37 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function fetchColors(arg0) {
-  const arg1 = arg0;
-  return promiseDeduper1.one(arg0, () => arg0(closure_2[8]).maybeFetchColors(arg0));
+  let closure_0 = arg0;
+  return promiseDeduper1.one(arg0, () => callback(outer1_2[8]).maybeFetchColors(callback));
 }
 function _fetchApplicationParts() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  const _fetchApplicationParts = obj;
+  const obj = callback(tmp);
   return obj(...arguments);
 }
 function _fetchUserParts() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  const _fetchUserParts = obj;
+  const obj = callback(tmp);
   return obj(...arguments);
 }
 function _fetchWatchedContentParts() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  const _fetchWatchedContentParts = obj;
+  const obj = callback(tmp);
   return obj(...arguments);
 }
 function _fetchListenedContentParts() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  const _fetchListenedContentParts = obj;
+  const obj = callback(tmp);
   return obj(...arguments);
 }
 function _fetchTopArtistContentParts() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  const _fetchTopArtistContentParts = obj;
+  const obj = callback(tmp);
   return obj(...arguments);
 }
 function _loadContentEntryParts() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback2(tmp);
-  const _loadContentEntryParts = obj;
+  const obj = callback(tmp);
   return obj(...arguments);
 }
 function isMessageRenderable(components) {
@@ -130,12 +131,12 @@ function isMessageRenderable(components) {
   if (!iter.done) {
     while (true) {
       let value = iter.value;
-      let tmp2 = arg1;
+      let tmp2 = require;
       let tmp3 = dependencyMap;
-      if (value.type === arg1(dependencyMap[11]).ComponentType.CONTENT_INVENTORY_ENTRY) {
-        let tmp4 = arg1;
+      if (value.type === require(1881) /* PermissionOverwriteType */.ComponentType.CONTENT_INVENTORY_ENTRY) {
+        let tmp4 = require;
         let tmp5 = dependencyMap;
-        let obj = arg1(dependencyMap[12]);
+        let obj = require(7809) /* getMissingIconURL */;
         obj = {};
         obj = { contentInventoryEntry: value.contentInventoryEntry };
         obj.component = obj;
@@ -151,85 +152,74 @@ function isMessageRenderable(components) {
   }
   return true;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const ImageSizes = arg1(dependencyMap[4]).ImageSizes;
-let promiseDeduper = new arg1(dependencyMap[5]).PromiseDeduper();
-promiseDeduper = new arg1(dependencyMap[5]).PromiseDeduper();
-const promiseDeduper1 = new arg1(dependencyMap[5]).PromiseDeduper();
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/interaction_components/content_inventory_entry/native/useLoadMessageContentEntries.tsx");
+let promiseDeduper = new require("_createForOfIteratorHelperLoose").PromiseDeduper();
+promiseDeduper = new require("_createForOfIteratorHelperLoose").PromiseDeduper();
+const promiseDeduper1 = new require("_createForOfIteratorHelperLoose").PromiseDeduper();
+let result = require("result").fileFinishedImporting("modules/interaction_components/content_inventory_entry/native/useLoadMessageContentEntries.tsx");
 
 export default function useLoadMessageContentEntries(arg0) {
-  const arg1 = arg0;
-  let closure_1 = React.useRef(new Map());
+  const _require = arg0;
+  let closure_1 = first1.useRef(new Map());
   const map = new Map();
-  let closure_2 = React.useRef(new Map());
+  const dependencyMap = first1.useRef(new Map());
   const map1 = new Map();
-  const tmp4 = callback(React.useState(new Set()), 2);
-  const first = tmp4[0];
-  let callback = first;
-  let closure_4 = tmp4[1];
-  const set = new Set();
-  const tmp7 = callback(React.useState(new Set()), 2);
-  const first1 = tmp7[0];
-  const React = first1;
-  let closure_6 = tmp7[1];
-  let obj = arg1(closure_2[8]);
+  const tmp4 = first(first1.useState(new Set()), 2);
+  first = tmp4[0];
+  let _createForOfIteratorHelperLoose = tmp4[1];
+  let set = new Set();
+  const tmp7 = first(first1.useState(new Set()), 2);
+  first1 = tmp7[0];
+  let _isNativeReflectConstruct = tmp7[1];
+  let obj = _require(7812);
   const colorStore = obj.useColorStore((palette) => palette.palette);
-  callback = React.useCallback(() => {
+  const callback = first1.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = callback(tmp);
     return function(arg0, arg1) {
       return callback(...arguments);
     };
-  }(), []);
-  const ImageSizes = callback;
-  const items = [colorStore];
-  const effect = React.useEffect(() => {
+  })(), []);
+  let items = [colorStore];
+  const effect = first1.useEffect(() => {
     if (0 !== ref.current.size) {
       const items = [];
-      const arg0 = items;
-      const current = ref.current;
-      const item = current.forEach((arg0, arg1) => {
-        if (callback(arg0)) {
+      let current = ref.current;
+      let item = current.forEach((arg0, arg1) => {
+        if (outer2_20(arg0)) {
           items.push(arg1);
         }
       });
       if (items.length > 0) {
         const item1 = items.forEach((arg0) => {
-          const current = ref.current;
+          const current = outer1_1.current;
           const result = current.set(arg0, "loaded");
-          const current2 = ref2.current;
+          const current2 = outer1_2.current;
           current2.delete(arg0);
         });
         callback((items) => {
           const set = new Set(items);
-          items = set;
-          const item = items.forEach((arg0) => set.delete(arg0));
+          const item = set.forEach((arg0) => set.delete(arg0));
           return set;
         });
       }
     }
   }, items);
   const items1 = [callback, arg0];
-  const effect1 = React.useEffect(() => {
-    const item = arg0.forEach((id) => {
-      if (callback(closure_2[13])(id)) {
+  const effect1 = first1.useEffect(() => {
+    const item = closure_0.forEach((id) => {
+      if (callback(table[13])(id)) {
         if (null != id.messageSnapshots[0]) {
-          callback2(id.id, id.messageSnapshots[0].message);
+          outer1_7(id.id, id.messageSnapshots[0].message);
         }
       }
-      callback2(id.id, id);
+      outer1_7(id.id, id);
     });
   }, items1);
   const items2 = [first, first1];
   obj = {
     unloadedContentEntryMessageIds: first,
-    unloadableContentEntryMessageIds: React.useMemo(() => {
+    unloadableContentEntryMessageIds: first1.useMemo(() => {
       const set = new Set();
-      const arg0 = set;
       const item = first.forEach((arg0) => set.add(arg0));
       const item1 = first1.forEach((arg0) => set.add(arg0));
       return set;

@@ -1,9 +1,18 @@
-// Module ID: 15943
-// Function ID: 122273
+// Module ID: 16060
+// Function ID: 124446
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 653, 12355, 1360, 7476, 12356, 5078, 2]
 
-// Module 15943 (_isNativeReflectConstruct)
+// Module 16060 (_isNativeReflectConstruct)
+import hasFlag from "hasFlag";
+import module_12355 from "module_12355";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { GuildFeatures } from "ME";
+import tmp2 from "AutomaticLifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,68 +34,35 @@ function handleInviteData(invite) {
       const features = guild.features;
       if (null != features) {
         if (features.includes(GuildFeatures.HUB)) {
-          importDefault(dependencyMap[6]).onOpenHubInvite(invite.invite);
-          const obj5 = importDefault(dependencyMap[6]);
+          importDefault(12355).onOpenHubInvite(invite.invite);
+          const obj5 = importDefault(12355);
         }
       }
     }
   }
   let new_member = invite.invite.new_member;
   if (new_member) {
-    let hasFlagResult = arg1(dependencyMap[7]).hasFlag(num, arg1(dependencyMap[8]).GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, require(7476) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
-      hasFlagResult = arg1(dependencyMap[7]).hasFlag(num, arg1(dependencyMap[8]).GuildInviteFlags.IS_APPLICATION_BYPASS);
-      const obj2 = arg1(dependencyMap[7]);
+      hasFlagResult = require(1360) /* hasFlag */.hasFlag(num, require(7476) /* set */.GuildInviteFlags.IS_APPLICATION_BYPASS);
+      const obj2 = require(1360) /* hasFlag */;
     }
     new_member = !hasFlagResult;
-    const obj = arg1(dependencyMap[7]);
+    const obj = require(1360) /* hasFlag */;
   }
   if (new_member) {
     new_member = null != guild;
   }
   if (new_member) {
-    new_member = arg1(dependencyMap[9]).inviteGuildHasPendingMemberDisabledVerification(guild);
-    const obj3 = arg1(dependencyMap[9]);
+    new_member = require(12356) /* inviteGuildHasPendingMemberDisabledVerification */.inviteGuildHasPendingMemberDisabledVerification(guild);
+    const obj3 = require(12356) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
   if (new_member) {
-    const result = arg1(dependencyMap[9]).openVerificationModalOrTransitionToApplication(guild.id);
-    const obj4 = arg1(dependencyMap[9]);
+    const result = require(12356) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
+    const obj4 = require(12356) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const GuildFeatures = arg1(dependencyMap[5]).GuildFeatures;
-let tmp2 = (arg0) => {
-  class GuildVerificationManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_4(this, GuildVerificationManager);
-      items1 = [...items];
-      obj = closure_6(GuildVerificationManager);
-      tmp2 = closure_5;
-      if (closure_9()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = { INVITE_ACCEPT_SUCCESS: closure_10 };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const arg1 = GuildVerificationManager;
-  callback2(GuildVerificationManager, arg0);
-  return callback(GuildVerificationManager);
-}(importDefault(dependencyMap[10]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_verification/GuildVerificationManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_verification/GuildVerificationManager.tsx");
 
 export default tmp2;

@@ -1,37 +1,38 @@
-// Module ID: 3908
-// Function ID: 32326
+// Module ID: 3910
+// Function ID: 32331
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 3906, 2]
 
-// Module 3908 (_isNativeReflectConstruct)
+// Module 3910 (_isNativeReflectConstruct)
+import context from "context";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let context = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return context;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = (Component) => {
+const tmp2 = ((Component) => {
   class RiveErrorBoundary {
     constructor(arg0) {
       self = this;
       items = [...arguments];
       tmp = RiveErrorBoundary(this, RiveErrorBoundary);
       items1 = [...items];
-      obj = closure_3(RiveErrorBoundary);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      obj = outer1_3(RiveErrorBoundary);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, items1, closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, items1, outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -40,7 +41,6 @@ const tmp2 = (Component) => {
       return tmp2Result;
     }
   }
-  let closure_0 = RiveErrorBoundary;
   callback2(RiveErrorBoundary, Component);
   let obj = {
     key: "componentDidCatch",
@@ -53,7 +53,7 @@ const tmp2 = (Component) => {
       }
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "render",
     value() {
@@ -78,10 +78,10 @@ const tmp2 = (Component) => {
       return { hasError: true };
     }
   };
-  const items1 = [obj];
+  let items1 = [obj];
   return callback(RiveErrorBoundary, items, items1);
-}(importAll(dependencyMap[5]).Component);
-tmp2.contextType = arg1(dependencyMap[6]).ManaContext;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/RiveErrorBoundary.tsx");
+})(require("result").Component);
+tmp2.contextType = require("context").ManaContext;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/RiveErrorBoundary.tsx");
 
 export const RiveErrorBoundary = tmp2;

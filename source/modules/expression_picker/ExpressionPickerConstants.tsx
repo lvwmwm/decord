@@ -1,14 +1,13 @@
 // Module ID: 1314
-// Function ID: 15343
+// Function ID: 15344
 // Name: ExpressionPickerViewType
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 1314 (ExpressionPickerViewType)
 const obj = { EMOJI: "emoji", GIF: "gif", STICKER: "sticker", SOUNDBOARD: "soundboard", KAOMOJI: "kaomoji" };
 const items = [, , ];
 ({ EMOJI: arr[0], GIF: arr[1], STICKER: arr[2] } = obj);
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/expression_picker/ExpressionPickerConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/expression_picker/ExpressionPickerConstants.tsx");
 
 export const ExpressionPickerViewType = obj;
 export const CHAT_INPUT_BUTTON_CLASSNAME = "expression-picker-chat-input-button";

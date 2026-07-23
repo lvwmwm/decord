@@ -1,28 +1,27 @@
-// Module ID: 13289
-// Function ID: 100916
+// Module ID: 13403
+// Function ID: 103072
 // Name: createRPCCommand
-// Dependencies: [0, 0, 0]
+// Dependencies: [13404, 13405, 2]
 // Exports: createRPCCommand
 
-// Module 13289 (createRPCCommand)
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/rpc-schema/rpc-schema.tsx");
+// Module 13403 (createRPCCommand)
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rpc-schema/rpc-schema.tsx");
 
 export const createRPCCommand = function createRPCCommand(AUTHENTICATE, scope) {
   let request;
-  let require;
-  let closure_1;
-  const obj = { scope: scope.scope, handler: scope.handler };
-  const tmp2 = require(closure_1[0]).RPCCommandSchemas[AUTHENTICATE];
+  request = undefined;
+  let dependencyMap;
+  let obj = { scope: scope.scope, handler: scope.handler };
+  const tmp2 = request(13404).RPCCommandSchemas[AUTHENTICATE];
   if (null != tmp2) {
     request = tmp2.request;
   }
-  require = request;
-  closure_1 = null;
+  dependencyMap = null;
   if (null != request) {
     obj.validation = (object) => {
       if (null == closure_1) {
-        closure_1 = request(closure_1[1]).joiReqObj(object.object(request(object)));
-        const obj = request(closure_1[1]);
+        closure_1 = request(_null[1]).joiReqObj(object.object(request(object)));
+        const obj = request(_null[1]);
       }
       return closure_1;
     };

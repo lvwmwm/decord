@@ -1,16 +1,17 @@
 // Module ID: 1731
-// Function ID: 19401
+// Function ID: 19402
 // Name: useAnimatedPropsJS
-// Dependencies: []
+// Dependencies: [1732, 1585]
 
 // Module 1731 (useAnimatedPropsJS)
-const _module = require(dependencyMap[1]);
-if (_module.shouldBeUseWeb()) {
+import isJest from "isJest";
+
+if (isJest.shouldBeUseWeb()) {
   function useAnimatedPropsJS(fn, items) {
-    return require(dependencyMap[0]).useAnimatedStyle(fn, items, arg2, true);
+    return require(1732) /* checkSharedValueUsage */.useAnimatedStyle(fn, items, arg2, true);
   }
 } else {
-  useAnimatedPropsJS = require(dependencyMap[0]).useAnimatedStyle;
+  useAnimatedPropsJS = require("checkSharedValueUsage").useAnimatedStyle;
 }
 
 export const useAnimatedProps = useAnimatedPropsJS;

@@ -1,37 +1,38 @@
-// Module ID: 14628
-// Function ID: 110312
+// Module ID: 14743
+// Function ID: 112476
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 14628 (_isNativeReflectConstruct)
+// Module 14743 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = false;
-let tmp2 = (PersistedStore) => {
+let c5 = false;
+let tmp2 = ((PersistedStore) => {
   class ParentalConsentStore {
     constructor() {
       self = this;
       tmp = ParentalConsentStore(this, ParentalConsentStore);
-      obj = closure_3(ParentalConsentStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(ParentalConsentStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,7 +41,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ParentalConsentStore;
   callback2(ParentalConsentStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -49,42 +49,43 @@ let tmp2 = (PersistedStore) => {
       if (null != shouldShowGuardianConnect) {
         prop = shouldShowGuardianConnect.shouldShowGuardianConnect;
       }
-      let closure_5 = null != prop && prop;
+      const outer1_5 = null != prop && prop;
     }
   };
   const items = [obj, , ];
   obj = {
     key: "getShouldShowGuardianConnect",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   items[1] = obj;
   obj = {
     key: "getState",
     value() {
-      return { shouldShowGuardianConnect: closure_5 };
+      return { shouldShowGuardianConnect: outer1_5 };
     }
   };
   items[2] = obj;
   return callback(ParentalConsentStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "ParentalConsentStore";
 tmp2.persistKey = "ParentalConsentStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   GUARDIAN_CONNECT_REQUIRED: function handleGuardianConnectRequired(shouldShowGuardianConnect) {
     let closure_5 = true === shouldShowGuardianConnect.shouldShowGuardianConnect;
     tmp2.persist();
   },
   GUARDIAN_CONNECT_CLEARED: function handleGuardianConnectCleared() {
-    let closure_5 = false;
+    let c5 = false;
     tmp2.persist();
   },
   NUF_COMPLETE: function handleNUFCompleted() {
-    let closure_5 = false;
+    let c5 = false;
     tmp2.persist();
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/parent_tools/ParentalConsentStore.tsx");
+let closure_6 = tmp2;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/parent_tools/ParentalConsentStore.tsx");
 
 export default tmp2;

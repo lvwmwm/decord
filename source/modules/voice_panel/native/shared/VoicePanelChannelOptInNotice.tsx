@@ -1,36 +1,36 @@
-// Module ID: 15680
-// Function ID: 119789
-// Dependencies: []
+// Module ID: 15797
+// Function ID: 121962
+// Dependencies: [31, 33, 5072, 5517, 5165, 1212, 5170, 12852, 2]
 
-// Module 15680
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+// Module 15797
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo(function VoicePanelChannelOptInNotice(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   const analyticsSection = channel.analyticsSection;
-  const importDefault = analyticsSection;
   const items = [channel, analyticsSection];
   const callback = importAllResult.useCallback(() => {
-    let obj = channel(closure_2[2]);
+    let obj = channel(outer1_2[2]);
     obj = { section: analyticsSection };
     obj.setOptInChannel(channel.guild_id, channel.id, true, obj);
   }, items);
   let obj = { style: channel.style };
   obj = {};
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.label = intl.string(arg1(dependencyMap[5]).t.9mysCh);
-  const intl2 = arg1(dependencyMap[5]).intl;
-  obj.subLabel = intl2.string(arg1(dependencyMap[5]).t.PDUCIN);
-  obj = { IconComponent: arg1(dependencyMap[7]).ChannelListMagnifyingGlassIcon };
-  obj.icon = jsx(arg1(dependencyMap[6]).TableRowIcon, obj);
+  const intl = channel(1212).intl;
+  obj.label = intl.string(channel(1212).t["9mysCh"]);
+  const intl2 = channel(1212).intl;
+  obj.subLabel = intl2.string(channel(1212).t.PDUCIN);
+  obj = { IconComponent: channel(12852).ChannelListMagnifyingGlassIcon };
+  obj.icon = jsx(channel(5170).TableRowIcon, { IconComponent: channel(12852).ChannelListMagnifyingGlassIcon });
   obj.onPress = callback;
   obj.start = true;
   obj.end = true;
   obj.arrow = true;
-  obj.children = jsx(arg1(dependencyMap[4]).TableRow, obj);
-  return jsx(importDefault(dependencyMap[3]), obj);
+  obj.children = jsx(channel(5165).TableRow, { IconComponent: channel(12852).ChannelListMagnifyingGlassIcon });
+  return jsx(analyticsSection(5517), { IconComponent: channel(12852).ChannelListMagnifyingGlassIcon });
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelChannelOptInNotice.tsx");
+const result = require("_persistOptInChannelUpdates2").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelChannelOptInNotice.tsx");
 
 export default memoResult;

@@ -1,9 +1,24 @@
-// Module ID: 6632
-// Function ID: 50895
+// Module ID: 6637
+// Function ID: 50924
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4168, 4165, 4175, 653, 1851, 22, 4174, 656, 566, 686, 2]
 
-// Module 6632 (_isNativeReflectConstruct)
+// Module 6637 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_13 } from "GuildFeatures";
+import set from "_possibleConstructorReturn";
+
+let closure_11;
+let closure_12;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +28,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +81,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,29 +107,29 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-function addEntitlement(entitlement) {
-  closure_14[entitlement.id] = closure_8.createFromServer(entitlement);
-  if (null == closure_16[entitlement.sku_id]) {
+function addEntitlement(value) {
+  closure_14[value.id] = closure_8.createFromServer(value);
+  if (null == dependencyMap[value.sku_id]) {
     const _Set = Set;
     const set = new Set();
-    closure_16[entitlement.sku_id] = set;
+    dependencyMap[value.sku_id] = set;
   }
-  if (null == closure_17[entitlement.application_id]) {
+  if (null == dependencyMap2[value.application_id]) {
     const _Set2 = Set;
     const set1 = new Set();
-    closure_17[entitlement.application_id] = set1;
+    dependencyMap2[value.application_id] = set1;
   }
-  if (null != entitlement.subscription_id) {
-    if (null == closure_23[entitlement.subscription_id]) {
+  if (null != value.subscription_id) {
+    if (null == dependencyMap3[value.subscription_id]) {
       const _Set3 = Set;
       const set2 = new Set();
-      closure_23[entitlement.subscription_id] = set2;
+      dependencyMap3[value.subscription_id] = set2;
     }
-    closure_23[entitlement.subscription_id].add(entitlement.id);
-    const obj = closure_23[entitlement.subscription_id];
+    dependencyMap3[value.subscription_id].add(value.id);
+    const obj = dependencyMap3[value.subscription_id];
   }
-  closure_17[entitlement.application_id].add(entitlement.id);
-  closure_16[entitlement.sku_id].add(entitlement.id);
+  dependencyMap2[value.application_id].add(value.id);
+  dependencyMap[value.sku_id].add(value.id);
 }
 function addGiftEntitlement(id) {
   closure_15[id.id] = closure_8.createFromServer(id);
@@ -125,8 +140,8 @@ function handlePurchaseSuccess(entitlements) {
   let iter = tmp();
   if (!iter.done) {
     do {
-      let tmp2 = closure_27;
-      let tmp3 = closure_27(iter.value);
+      let tmp2 = addEntitlement;
+      let tmp3 = addEntitlement(iter.value);
       let iter2 = tmp();
       iter = iter2;
       done = iter2.done;
@@ -136,39 +151,30 @@ function handlePurchaseSuccess(entitlements) {
 function handleEntitlementUpdate(entitlement) {
   addEntitlement(entitlement.entitlement);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-({ EntitlementSourceTypes: closure_11, EntitlementTypes: closure_12 } = arg1(dependencyMap[8]));
-let closure_13 = arg1(dependencyMap[9]).PREMIUM_SUBSCRIPTION_APPLICATION;
+({ EntitlementSourceTypes: closure_11, EntitlementTypes: closure_12 } = ME);
 let closure_14 = {};
 let closure_15 = {};
 let closure_16 = {};
 let closure_17 = {};
-let closure_18 = false;
-let closure_19 = false;
-let closure_20 = false;
-const set = new Set();
-const set1 = new Set();
+let c18 = false;
+let c19 = false;
+let c20 = false;
+let set = new Set();
+let set1 = new Set();
 let closure_23 = {};
-let tmp5 = (Store) => {
+let tmp5 = ((Store) => {
   class EntitlementStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, EntitlementStore);
-      obj = closure_6(EntitlementStore);
-      tmp2 = closure_5;
-      if (closure_24()) {
+      tmp = outer1_3(this, EntitlementStore);
+      obj = outer1_6(EntitlementStore);
+      tmp2 = outer1_5;
+      if (outer1_24()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -177,27 +183,26 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = EntitlementStore;
   callback2(EntitlementStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const items = [closure_9];
+      const items = [outer1_9];
       this.syncWith(items, () => true);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , ];
   obj = {
     key: "get",
     value(arg0) {
-      return closure_14[arg0];
+      return outer1_14[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getGiftable",
     value() {
-      return callback(closure_2[10]).values(closure_15);
+      return outer1_1(outer1_2[10]).values(outer1_15);
     }
   };
   items[2] = obj;
@@ -205,17 +210,17 @@ let tmp5 = (Store) => {
     key: "getForApplication",
     value(arg0) {
       let done;
-      if (null == closure_17[arg0]) {
+      if (null == outer1_17[arg0]) {
         return null;
       } else {
         const _Set = Set;
         const set = new Set();
-        const tmp7 = callback5(tmp);
+        const tmp7 = outer1_25(tmp);
         let iter = tmp7();
         if (!iter.done) {
           do {
-            let tmp8 = closure_14;
-            let addResult = set.add(closure_14[iter.value]);
+            let tmp8 = outer1_14;
+            let addResult = set.add(outer1_14[iter.value]);
             let iter2 = tmp7();
             iter = iter2;
             done = iter2.done;
@@ -229,17 +234,17 @@ let tmp5 = (Store) => {
     key: "getForSku",
     value(arg0) {
       let done;
-      if (null == closure_16[arg0]) {
+      if (null == outer1_16[arg0]) {
         return null;
       } else {
         const _Set = Set;
         const set = new Set();
-        const tmp7 = callback5(tmp);
+        const tmp7 = outer1_25(tmp);
         let iter = tmp7();
         if (!iter.done) {
           do {
-            let tmp8 = closure_14;
-            let addResult = set.add(closure_14[iter.value]);
+            let tmp8 = outer1_14;
+            let addResult = set.add(outer1_14[iter.value]);
             let iter2 = tmp7();
             iter = iter2;
             done = iter2.done;
@@ -252,31 +257,31 @@ let tmp5 = (Store) => {
   items[5] = {
     key: "fetchingAllEntitlements",
     get() {
-      return closure_18;
+      return outer1_18;
     }
   };
   items[6] = {
     key: "fetchedAllEntitlements",
     get() {
-      return closure_19;
+      return outer1_19;
     }
   };
   items[7] = {
     key: "fetchedEndedEntitlements",
     get() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[8] = {
     key: "applicationIdsFetching",
     get() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[9] = {
     key: "applicationIdsFetched",
     get() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[10] = {
@@ -313,17 +318,17 @@ let tmp5 = (Store) => {
     key: "getForSubscription",
     value(arg0) {
       let done;
-      if (null == closure_23[arg0]) {
+      if (null == outer1_23[arg0]) {
         return null;
       } else {
         const _Set = Set;
         const set = new Set();
-        const tmp7 = callback5(tmp);
+        const tmp7 = outer1_25(tmp);
         let iter = tmp7();
         if (!iter.done) {
           do {
-            let tmp8 = closure_14;
-            let addResult = set.add(closure_14[iter.value]);
+            let tmp8 = outer1_14;
+            let addResult = set.add(outer1_14[iter.value]);
             let iter2 = tmp7();
             iter = iter2;
             done = iter2.done;
@@ -340,16 +345,16 @@ let tmp5 = (Store) => {
       if (arg3 === undefined) {
         tmp = null;
       }
-      if (null != closure_16[arg1]) {
-        const tmp4 = callback5(tmp2);
+      if (null != outer1_16[arg1]) {
+        const tmp4 = outer1_25(tmp2);
         let iter = tmp4();
         if (!iter.done) {
           while (true) {
-            let tmp5 = closure_14;
-            let obj = closure_14[iter.value];
+            let tmp5 = outer1_14;
+            let obj = outer1_14[iter.value];
             if (null != obj) {
-              let tmp6 = closure_10;
-              if (obj.isValid(arg0, closure_10, tmp)) {
+              let tmp6 = outer1_10;
+              if (obj.isValid(arg0, outer1_10, tmp)) {
                 break;
               }
             }
@@ -359,18 +364,18 @@ let tmp5 = (Store) => {
           return true;
         }
       }
-      if (set.has(arg2)) {
+      if (outer1_22.has(arg2)) {
         return false;
       } else {
         if (null != tmp) {
-          let libraryApplication = store.getLibraryApplication(arg2, tmp);
+          let libraryApplication = outer1_9.getLibraryApplication(arg2, tmp);
         } else {
-          libraryApplication = store.getActiveLibraryApplication(arg2);
+          libraryApplication = outer1_9.getActiveLibraryApplication(arg2);
         }
         let tmp10 = null == libraryApplication || libraryApplication.sku.id !== arg1;
         if (!tmp10) {
-          tmp10 = !EntitlementStore(closure_2[11]).isUserEntitledToLibraryApplication(libraryApplication);
-          const obj2 = EntitlementStore(closure_2[11]);
+          tmp10 = !EntitlementStore(outer1_2[11]).isUserEntitledToLibraryApplication(libraryApplication);
+          const obj2 = EntitlementStore(outer1_2[11]);
         }
         let tmp13 = !tmp10;
         if (tmp10) {
@@ -383,7 +388,7 @@ let tmp5 = (Store) => {
   items[14] = {
     key: "hasFetchedForApplicationIds",
     value(arr) {
-      return arr.every((arg0) => set.has(arg0));
+      return arr.every((arg0) => outer2_22.has(arg0));
     }
   };
   items[15] = {
@@ -398,7 +403,6 @@ let tmp5 = (Store) => {
       if (flag === undefined) {
         flag = false;
       }
-      const EntitlementStore = flag;
       let flag2 = obj.excludeReverseTrial;
       if (flag2 === undefined) {
         flag2 = false;
@@ -406,14 +410,14 @@ let tmp5 = (Store) => {
       let date;
       const items = [];
       date = new Date();
-      const forApplication = self.getForApplication(closure_13);
+      const forApplication = self.getForApplication(outer1_13);
       if (null != forApplication) {
         const item = forApplication.forEach((endsAt) => {
           let tmp = null != endsAt.endsAt;
           if (tmp) {
             tmp = endsAt.endsAt < date;
           }
-          let tmp4 = endsAt.type !== constants2.FRACTIONAL_REDEMPTION;
+          let tmp4 = endsAt.type !== outer2_12.FRACTIONAL_REDEMPTION;
           if (!tmp4) {
             if (tmp) {
               tmp = !flag;
@@ -451,11 +455,10 @@ let tmp5 = (Store) => {
     key: "getUnactivatedFractionalPremiumUnits",
     value() {
       const items = [];
-      const EntitlementStore = items;
-      const forApplication = this.getForApplication(closure_13);
+      const forApplication = this.getForApplication(outer1_13);
       if (null != forApplication) {
         const item = forApplication.forEach((skuId) => {
-          const ACTIVE_FRACTIONAL_PREMIUM_SKUS = items(closure_2[12]).FractionalPremiumSKUsSets.ACTIVE_FRACTIONAL_PREMIUM_SKUS;
+          const ACTIVE_FRACTIONAL_PREMIUM_SKUS = EntitlementStore(outer2_2[12]).FractionalPremiumSKUsSets.ACTIVE_FRACTIONAL_PREMIUM_SKUS;
           if (tmp) {
             items.push(skuId);
           }
@@ -465,9 +468,9 @@ let tmp5 = (Store) => {
     }
   };
   return callback(EntitlementStore, items);
-}(importAll(dependencyMap[13]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "EntitlementStore";
-tmp5 = new tmp5(importDefault(dependencyMap[14]), {
+tmp5 = new tmp5(require("dispatcher"), {
   ENTITLEMENT_FETCH_APPLICATION_START: function handleEntitlementApplicationStart(applicationId) {
     set.add(applicationId.applicationId);
   },
@@ -482,8 +485,8 @@ tmp5 = new tmp5(importDefault(dependencyMap[14]), {
       do {
         let value = iter.value;
         if (true !== value.consumed) {
-          let tmp4 = closure_27;
-          let tmp5 = closure_27(value);
+          let tmp4 = addEntitlement;
+          let tmp5 = addEntitlement(value);
         }
         iter2 = tmp3();
         iter = iter2;
@@ -509,21 +512,21 @@ tmp5 = new tmp5(importDefault(dependencyMap[14]), {
       do {
         let value = iter2.value;
         if (null != value.entitlements) {
-          let tmp2 = closure_25;
-          let tmp3 = closure_25(value.entitlements);
+          let tmp2 = _createForOfIteratorHelperLoose;
+          let tmp3 = _createForOfIteratorHelperLoose(value.entitlements);
           let iter3 = tmp3();
           let iter4 = iter3;
           let tmp4 = iter3;
           let tmp5 = tmp3;
           if (!iter3.done) {
             do {
-              let tmp6 = closure_27;
-              let tmp7 = closure_27(iter4.value);
+              let tmp6 = addEntitlement;
+              let tmp7 = addEntitlement(iter4.value);
               let iter5 = tmp3();
               iter4 = iter5;
               let tmp8 = iter5;
               let tmp9 = tmp3;
-              let done = iter5.done;
+              done = iter5.done;
             } while (!done);
           }
         }
@@ -536,15 +539,15 @@ tmp5 = new tmp5(importDefault(dependencyMap[14]), {
   ENTITLEMENT_UPDATE: handleEntitlementUpdate,
   ENTITLEMENT_DELETE: function handleEntitlementDelete(entitlement) {
     entitlement = entitlement.entitlement;
-    delete r3[r1];
-    if (null != closure_17[entitlement.application_id]) {
+    delete tmp2[tmp];
+    if (null != dependencyMap2[entitlement.application_id]) {
       obj.delete(entitlement.id);
     }
-    if (null != closure_16[entitlement.sku_id]) {
+    if (null != dependencyMap[entitlement.sku_id]) {
       obj2.delete(entitlement.id);
     }
     if (null != entitlement.subscription_id) {
-      if (null != closure_23[entitlement.subscription_id]) {
+      if (null != dependencyMap3[entitlement.subscription_id]) {
         obj3.delete(entitlement.id);
       }
     }
@@ -553,26 +556,26 @@ tmp5 = new tmp5(importDefault(dependencyMap[14]), {
     let closure_14 = {};
     let closure_16 = {};
     let closure_17 = {};
-    let closure_18 = false;
-    let closure_19 = false;
-    let closure_20 = false;
+    let c18 = false;
+    let c19 = false;
+    let c20 = false;
     const set = new Set();
     const set1 = new Set();
   },
   ENTITLEMENTS_FETCH_FOR_USER_START: function handleUserEntitlementsStart() {
-    let closure_18 = true;
+    let c18 = true;
   },
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: function handleUserEntitlementsSuccess(excludeEnded) {
     let done;
-    let closure_19 = true;
-    let closure_18 = false;
+    let c19 = true;
+    let c18 = false;
     let closure_20 = !excludeEnded.excludeEnded;
     const tmp = _createForOfIteratorHelperLoose(excludeEnded.entitlements);
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_27;
-        let tmp3 = closure_27(iter.value);
+        let tmp2 = addEntitlement;
+        let tmp3 = addEntitlement(iter.value);
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -580,130 +583,11 @@ tmp5 = new tmp5(importDefault(dependencyMap[14]), {
     }
   },
   ENTITLEMENTS_FETCH_FOR_USER_FAIL: function handleUserEntitlementsFail() {
-    let closure_19 = false;
-    let closure_18 = false;
-    let closure_20 = false;
+    let c19 = false;
+    let c18 = false;
+    let c20 = false;
   }
 });
-const obj = {
-  ENTITLEMENT_FETCH_APPLICATION_START: function handleEntitlementApplicationStart(applicationId) {
-    set.add(applicationId.applicationId);
-  },
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: function handleEntitlementApplicationFetch(applicationId) {
-    let iter2;
-    applicationId = applicationId.applicationId;
-    set.delete(applicationId);
-    set1.add(applicationId);
-    const tmp3 = _createForOfIteratorHelperLoose(applicationId.entitlements);
-    let iter = tmp3();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        if (true !== value.consumed) {
-          let tmp4 = closure_27;
-          let tmp5 = closure_27(value);
-        }
-        iter2 = tmp3();
-        iter = iter2;
-      } while (!iter2.done);
-    }
-  },
-  ENTITLEMENT_FETCH_APPLICATION_FAIL: function handleEntitlementApplicationFail() {
-
-  },
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: function handleEntitlementsGiftableFetchSuccess(entitlements) {
-    entitlements = entitlements.entitlements;
-    let closure_15 = {};
-    const item = entitlements.forEach(addGiftEntitlement);
-  },
-  SKU_PURCHASE_SUCCESS: handlePurchaseSuccess,
-  VIRTUAL_CURRENCY_REDEEM_SUCCESS: handlePurchaseSuccess,
-  LIBRARY_FETCH_SUCCESS: function handleLibraryFetchSuccess(libraryApplications) {
-    let iter6;
-    const tmp = _createForOfIteratorHelperLoose(libraryApplications.libraryApplications);
-    const iter = tmp();
-    let iter2 = iter;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        if (null != value.entitlements) {
-          let tmp2 = closure_25;
-          let tmp3 = closure_25(value.entitlements);
-          let iter3 = tmp3();
-          let iter4 = iter3;
-          let tmp4 = iter3;
-          let tmp5 = tmp3;
-          if (!iter3.done) {
-            do {
-              let tmp6 = closure_27;
-              let tmp7 = closure_27(iter4.value);
-              let iter5 = tmp3();
-              iter4 = iter5;
-              let tmp8 = iter5;
-              let tmp9 = tmp3;
-              let done = iter5.done;
-            } while (!done);
-          }
-        }
-        iter6 = tmp();
-        iter2 = iter6;
-      } while (!iter6.done);
-    }
-  },
-  ENTITLEMENT_CREATE: handleEntitlementUpdate,
-  ENTITLEMENT_UPDATE: handleEntitlementUpdate,
-  ENTITLEMENT_DELETE: function handleEntitlementDelete(entitlement) {
-    entitlement = entitlement.entitlement;
-    delete r3[r1];
-    if (null != closure_17[entitlement.application_id]) {
-      obj.delete(entitlement.id);
-    }
-    if (null != closure_16[entitlement.sku_id]) {
-      obj2.delete(entitlement.id);
-    }
-    if (null != entitlement.subscription_id) {
-      if (null != closure_23[entitlement.subscription_id]) {
-        obj3.delete(entitlement.id);
-      }
-    }
-  },
-  LOGOUT: function handleLogout() {
-    let closure_14 = {};
-    let closure_16 = {};
-    let closure_17 = {};
-    let closure_18 = false;
-    let closure_19 = false;
-    let closure_20 = false;
-    const set = new Set();
-    const set1 = new Set();
-  },
-  ENTITLEMENTS_FETCH_FOR_USER_START: function handleUserEntitlementsStart() {
-    let closure_18 = true;
-  },
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: function handleUserEntitlementsSuccess(excludeEnded) {
-    let done;
-    let closure_19 = true;
-    let closure_18 = false;
-    let closure_20 = !excludeEnded.excludeEnded;
-    const tmp = _createForOfIteratorHelperLoose(excludeEnded.entitlements);
-    let iter = tmp();
-    if (!iter.done) {
-      do {
-        let tmp2 = closure_27;
-        let tmp3 = closure_27(iter.value);
-        let iter2 = tmp();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
-    }
-  },
-  ENTITLEMENTS_FETCH_FOR_USER_FAIL: function handleUserEntitlementsFail() {
-    let closure_19 = false;
-    let closure_18 = false;
-    let closure_20 = false;
-  }
-};
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("stores/game_store/EntitlementStore.tsx");
+let result = set.fileFinishedImporting("stores/game_store/EntitlementStore.tsx");
 
 export default tmp5;

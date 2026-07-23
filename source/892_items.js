@@ -1,21 +1,21 @@
 // Module ID: 892
-// Function ID: 9837
+// Function ID: 9838
 // Name: items
 // Dependencies: []
 
 // Module 892 (items)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = [];
+const items = ["X-Client-IP", "X-Forwarded-For", "Fly-Client-IP", "CF-Connecting-IP", "Fastly-Client-Ip", "True-Client-Ip", "X-Real-IP", "X-Cluster-Client-IP", "X-Forwarded", "Forwarded-For", "Forwarded", "X-Vercel-Forwarded-For"];
 arg5.getClientIPAddress = function getClientIPAddress(arg0) {
-  const obj = {};
-  const items = obj;
+  let obj = {};
   const keys = Object.keys(arg0);
   for (const item10011 of keys) {
     let tmp3 = obj;
     let tmp4 = arg0;
     obj[item10011.toLowerCase()] = arg0[item10011];
+    continue;
   }
-  const mapped = items.map((arg0) => {
+  let mapped = obj.map((arg0) => {
     let iter = obj[arg0.toLowerCase(arg0)];
     let str = iter;
     if (Array.isArray(iter)) {
@@ -36,9 +36,7 @@ arg5.getClientIPAddress = function getClientIPAddress(arg0) {
             let substr = arr2.slice(4);
             iter.return();
             tmp3 = substr;
-            // break
-          } else {
-            // continue
+            break;
           }
           break;
         }

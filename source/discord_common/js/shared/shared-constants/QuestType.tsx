@@ -1,10 +1,9 @@
-// Module ID: 6963
-// Function ID: 55693
+// Module ID: 6968
+// Function ID: 55727
 // Name: QuestType
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6963 (QuestType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestType.tsx");
+// Module 6968 (QuestType)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestType.tsx");
 
 export const QuestType = { GAMEPLAY: "GAMEPLAY", VIDEO: "VIDEO" };

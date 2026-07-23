@@ -1,57 +1,58 @@
-// Module ID: 9909
-// Function ID: 76665
+// Module ID: 9917
+// Function ID: 76708
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [57, 31, 9532, 9533, 9918, 566, 1327, 2]
 // Exports: default
 
-// Module 9909 (_createForOfIteratorHelperLoose)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
+// Module 9917 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -62,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -88,38 +89,52 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-function getKeys() {
-  const savedMessages = store.getSavedMessages();
-  return savedMessages.map((saveData) => saveData.saveData);
+function getSavedMessagesForType(arg0) {
+  if (require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.BOOKMARK === arg0) {
+    return store.getMessageBookmarks();
+  } else if (require(9533) /* savedMessageDataToClient */.SavedMessageSortTypes.REMINDER === arg0) {
+    return store.getMessageReminders();
+  } else {
+    return store.getSavedMessages();
+  }
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/saved_messages/useSavedMessagesForPage.tsx");
+function getKeys(arg0) {
+  return getSavedMessagesForType(arg0).map((saveData) => saveData.saveData);
+}
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/saved_messages/useSavedMessagesForPage.tsx");
 
 export default function useSavedMessagesForPage() {
-  const tmp = callback2(React.useState(getKeys), 2);
-  const callback = tmp[0];
-  const importDefault = tmp[1];
-  let closure_2 = React.useRef(store.getIsStale());
+  let ALL = arg0;
+  if (arg0 === undefined) {
+    ALL = ALL(9533).SavedMessageSortTypes.ALL;
+  }
+  let importDefault;
+  let dependencyMap;
+  let callback;
+  const tmp3 = callback(React.useState(() => outer1_9(ALL)), 2);
+  importDefault = tmp3[0];
+  dependencyMap = tmp3[1];
+  callback = React.useRef(store.getIsStale());
+  let items = [ALL];
   const effect = React.useEffect(() => {
     function handleChange() {
-      const lastChanged = store.getLastChanged();
-      if (closure_0 !== lastChanged) {
-        closure_0 = lastChanged;
-        if (ref.current) {
-          if (!store.getIsStale()) {
-            ref.current = false;
-            handleChange(callback());
+      const lastChanged = outer2_5.getLastChanged();
+      if (lastChanged !== lastChanged) {
+        if (outer1_3.current) {
+          if (!outer2_5.getIsStale()) {
+            outer1_3.current = false;
+            outer1_2(outer2_9(closure_0));
           }
         }
-        handleChange((arg0) => {
+        outer1_2((arg0) => {
           let done;
           let iter2;
-          const items = [...arg0];
-          const savedMessages = savedMessages.getSavedMessages();
-          const map = new Map(savedMessages.map((saveData) => {
+          let items = [...arg0];
+          const map = new Map(outer3_8(closure_0).map((saveData) => {
             const items = [saveData.saveData.messageId, saveData];
             return items;
           }));
-          const tmp = callback(arg0);
+          const tmp = outer3_6(arg0);
           let iter = tmp();
           if (!iter.done) {
             do {
@@ -133,7 +148,7 @@ export default function useSavedMessagesForPage() {
               iter = iter2;
             } while (!iter2.done);
           }
-          const tmp4 = callback(map.values());
+          const tmp4 = outer3_6(map.values());
           let iter3 = tmp4();
           if (!iter3.done) {
             do {
@@ -147,17 +162,16 @@ export default function useSavedMessagesForPage() {
         });
       }
     }
-    let closure_1 = handleChange;
-    const lastChanged = closure_5.getLastChanged();
-    closure_5.addChangeListener(handleChange);
+    let lastChanged = outer1_5.getLastChanged();
+    outer1_5.addChangeListener(handleChange);
     return () => {
-      store.removeChangeListener(handleChange);
+      outer2_5.removeChangeListener(handleChange);
     };
-  }, []);
-  importDefault(closure_2[3])();
-  const items = [store];
-  return callback(closure_2[4]).useStateFromStoresArray(items, () => {
-    const mapped = lib.map((channelId) => savedMessage.getSavedMessage(channelId.channelId, channelId.messageId));
-    return mapped.filter(lib(closure_2[5]).isNotNullish);
+  }, items);
+  importDefault(9918)();
+  const items1 = [store];
+  return ALL(566).useStateFromStoresArray(items1, () => {
+    const mapped = closure_1.map((channelId) => outer2_5.getSavedMessage(channelId.channelId, channelId.messageId));
+    return mapped.filter(ALL(table[6]).isNotNullish);
   });
 };

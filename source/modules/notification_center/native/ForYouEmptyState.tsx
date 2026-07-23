@@ -1,35 +1,39 @@
-// Module ID: 15060
-// Function ID: 113355
+// Module ID: 15175
+// Function ID: 115524
 // Name: ForYouEmptyState
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [31, 27, 33, 4130, 5807, 4126, 1212, 2]
 // Exports: ForYouEmptyState
 
-// Module 15060 (ForYouEmptyState)
-import "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15175 (ForYouEmptyState)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-({ jsx: closure_3, jsxs: closure_4 } = __exportStarResult1);
-let closure_5 = __exportStarResult1.createStyles({ image: { marginBottom: 16 }, container: {}, headerText: {}, text: { textAlign: "center" } });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/notification_center/native/ForYouEmptyState.tsx");
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ image: { marginBottom: 16 }, container: { paddingHorizontal: 48, alignItems: "center", justifyContent: "center" }, headerText: { fontSize: 18, marginTop: 16, marginBottom: 8 }, text: { textAlign: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouEmptyState.tsx");
 
 export const ForYouEmptyState = function ForYouEmptyState(height) {
   const tmp = callback3();
   let obj = { style: items };
-  const items = [tmp.container, { height: height.height }];
-  obj = { style: tmp.image, children: callback(arg1(dependencyMap[4]).MailboxSpotIllustration, { scale: 0.75 }) };
+  items = [tmp.container, { height: height.height }];
+  obj = { style: tmp.image, children: callback(require(5807) /* AccountAgeTier10LargeBadge */.MailboxSpotIllustration, { scale: 0.75 }) };
   const items1 = [callback(View, obj), , ];
-  obj = { style: items2 };
+  obj = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/bold" };
   const items2 = [, ];
   ({ text: arr3[0], headerText: arr3[1] } = tmp);
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.children = intl.string(arg1(dependencyMap[6]).t.MwjTvn);
-  items1[1] = callback(arg1(dependencyMap[5]).Text, obj);
-  const obj1 = { "Null": "row", "Null": "center", style: tmp.text };
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj1.children = intl2.string(arg1(dependencyMap[6]).t.AKBgPy);
-  items1[2] = callback(arg1(dependencyMap[5]).Text, obj1);
+  obj.style = items2;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.MwjTvn);
+  items1[1] = callback(require(4126) /* Text */.Text, obj);
+  const obj1 = { color: "text-default", variant: "text-md/medium", style: tmp.text };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.AKBgPy);
+  items1[2] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items1;
   return callback2(View, obj);
 };

@@ -1,27 +1,27 @@
-// Module ID: 8218
-// Function ID: 64961
-// Dependencies: []
+// Module ID: 8224
+// Function ID: 64998
+// Dependencies: [31, 27, 33, 7956, 8221, 2]
 
-// Module 8218
-const importAllResult = importAll(dependencyMap[0]);
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 8224
+import importAllResult from "result";
+import { StyleSheet } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo((paused) => {
   let accessibilityLabel;
   let animate;
   let layerConfig;
   let onLoad;
   ({ layerConfig, animate } = paused);
-  const arg1 = animate;
   paused = paused.paused;
-  const dependencyMap = paused;
   const width = paused.width;
   ({ accessibilityLabel, onLoad } = paused);
-  const ref = importAllResult.useRef(null);
-  let obj = arg1(dependencyMap[3]);
-  const aPNGPlayerControls = obj.useAPNGPlayerControls(ref);
+  const ref = aPNGPlayerControls.useRef(null);
+  let obj = animate(paused[3]);
+  aPNGPlayerControls = obj.useAPNGPlayerControls(ref);
   const items = [animate, paused, aPNGPlayerControls];
-  const effect = importAllResult.useEffect(() => {
+  const effect = aPNGPlayerControls.useEffect(() => {
     if (animate) {
       if (!paused) {
         aPNGPlayerControls.play();
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo((paused) => {
   }, items);
   obj = { ref, url: layerConfig.src, autoplay: false };
   const items1 = [StyleSheet.absoluteFill, ];
-  obj = { position: "absolute", width, height: arg1(dependencyMap[4]).calculateProfileEffectHeight(layerConfig, width) };
+  obj = { position: "absolute", width, height: animate(paused[4]).calculateProfileEffectHeight(layerConfig, width) };
   let num = 0;
   if (animate) {
     num = 1;
@@ -41,8 +41,8 @@ const memoResult = importAllResult.memo((paused) => {
   obj.style = items1;
   obj.ariaLabel = accessibilityLabel;
   obj.onLoad = onLoad;
-  return jsx(arg1(dependencyMap[3]).APNGPlayer, obj);
+  return jsx(animate(paused[3]).APNGPlayer, { position: "absolute", width, height: animate(paused[4]).calculateProfileEffectHeight(layerConfig, width) });
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectLayer.android.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectLayer.android.tsx");
 
 export default memoResult;

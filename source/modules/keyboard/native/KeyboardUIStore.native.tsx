@@ -1,53 +1,63 @@
 // Module ID: 1454
-// Function ID: 16959
+// Function ID: 16960
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1455, 1314, 1552, 587, 1555, 1556, 1557, 477, 1569, 620, 682, 1570, 621, 1571, 1819, 1820, 1558, 1453, 2]
 // Exports: addKeyboardTypeChangedListener, addKeyboardWillOpenChangedListener, setKeyboardType
 
 // Module 1454 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+import { ExpressionPickerViewType } from "ExpressionPickerViewType";
+import { MediaKeyboardTarget } from "DRAG_HANDLE";
+import set from "set";
+import set from "set";
+import keys from "keys";
+import { KeyboardEvents } from "KeyboardChatScrollView";
+import { KeyboardEvents as KeyboardEvents2 } from "KeyboardChatScrollView";
+import set from "DRAG_HANDLE";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,35 +95,35 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getCustomKeyboardHeight(arg0, arg1, arg2, DEFAULT_APP_ENTRY_KEY) {
-  const Storage = require(dependencyMap[3]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   let num = 253;
-  const value = Storage.get(closure_6, 253);
+  const value = Storage.get(customKeyboardHeight, 253);
   if (null != value) {
     num = value;
   }
-  if (arg1 === require(dependencyMap[4]).KeyboardTypes.SYSTEM) {
+  if (arg1 === require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
     if (0 !== arg0) {
       if (obj3.getIsAnyChatInputFocused()) {
         const _Math = Math;
         const bound = Math.max(arg0, 200);
         if (bound !== num) {
-          const Storage2 = require(dependencyMap[3]).Storage;
-          const result = Storage2.set(closure_6, bound);
+          const Storage2 = require(587) /* Storage */.Storage;
+          const result = Storage2.set(customKeyboardHeight, bound);
         }
         let num3 = 0;
         if (arg2) {
-          num3 = require(dependencyMap[6]).getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
-          const obj = require(dependencyMap[6]);
+          num3 = require(1557) /* useSafeAreaInsets */.getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
+          const obj = require(1557) /* useSafeAreaInsets */;
         }
         return bound - num3;
       }
-      const obj3 = require(dependencyMap[5]);
+      obj3 = require(1556) /* setIsAnyChatInputFocused */;
     }
   }
   let num5 = 0;
   if (arg2) {
-    num5 = require(dependencyMap[6]).getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
-    const obj2 = require(dependencyMap[6]);
+    num5 = require(1557) /* useSafeAreaInsets */.getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY).bottom;
+    const obj2 = require(1557) /* useSafeAreaInsets */;
   }
   return num - num5;
 }
@@ -123,15 +133,15 @@ function getSystemKeyboardHeight(arg0) {
   let keyboardHeight;
   ({ keyboardHeight, excludeSafeAreaInsets, appEntryKey } = arg0);
   if (obj.isAndroid()) {
-    let num = importDefault(dependencyMap[8]).getImeInsets(excludeSafeAreaInsets, appEntryKey);
-    const obj3 = importDefault(dependencyMap[8]);
+    let num = importDefault(1569).getImeInsets(excludeSafeAreaInsets, appEntryKey);
+    const obj3 = importDefault(1569);
   } else {
     num = 0;
     if (0 !== keyboardHeight) {
       let num2 = 0;
       if (excludeSafeAreaInsets) {
-        num2 = require(dependencyMap[6]).getSafeAreaInsets(appEntryKey).bottom;
-        const obj2 = require(dependencyMap[6]);
+        num2 = require(1557) /* useSafeAreaInsets */.getSafeAreaInsets(appEntryKey).bottom;
+        const obj2 = require(1557) /* useSafeAreaInsets */;
       }
       num = keyboardHeight - num2;
     }
@@ -183,9 +193,9 @@ function computeEntryState(arg0, keyboardDuration, appEntryKey) {
   }
   if ("object" === typeof tmp.keyboardContexts[type]) {
     if ("object" === typeof tmp12) {
-      let tmp13 = !importDefault(dependencyMap[9])(tmp10, tmp12);
+      let tmp13 = !importDefault(620)(tmp10, tmp12);
     }
-    let obj2 = require(dependencyMap[7]);
+    let obj2 = require(477) /* set */;
     if (obj2.isAndroid()) {
       let systemKeyboardOpen = tmp2Result > 0;
     } else {
@@ -194,18 +204,18 @@ function computeEntryState(arg0, keyboardDuration, appEntryKey) {
         systemKeyboardOpen = tmp.systemKeyboardOpen;
       }
     }
-    if (tmp.keyboardContexts[closure_0(undefined, closure_2[4]).KeyboardTypes.SYSTEM].keyboardWillOpen) {
+    if (tmp.keyboardContexts[require(undefined, 1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM].keyboardWillOpen) {
       if (null != keyboardDuration.systemKeyboardOpen) {
         obj = {};
         const merged = Object.assign(tmp.keyboardContexts);
         const obj1 = {};
-        const merged1 = Object.assign(tmp.keyboardContexts[closure_0(undefined, closure_2[4]).KeyboardTypes.SYSTEM]);
+        const merged1 = Object.assign(tmp.keyboardContexts[require(undefined, 1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM]);
         obj1["keyboardWillOpen"] = false;
-        obj[require(dependencyMap[4]).KeyboardTypes.SYSTEM] = obj1;
+        obj[require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM] = obj1;
         let tmp20 = obj;
       }
       if (tmp.keyboardDuration === keyboardDuration) {
-        if (importDefault(dependencyMap[9])(tmp.keyboardContexts, tmp20)) {
+        if (importDefault(620)(tmp.keyboardContexts, tmp20)) {
           if (tmp.keyboardHeight === tmp2Result) {
             if (tmp.keyboardHeightExcludingSafeAreaInsets === tmp4Result) {
               if (tmp.keyboardType === type) {
@@ -233,19 +243,19 @@ function computeEntryState(arg0, keyboardDuration, appEntryKey) {
   tmp13 = tmp10 !== tmp12;
 }
 function updateKeyboardStoreState(arg0, DEFAULT_APP_ENTRY_KEY) {
-  const require = arg0;
-  const importDefault = DEFAULT_APP_ENTRY_KEY;
-  require(dependencyMap[10]).batchUpdates(() => state.setState((arg0) => {
+  const _require = arg0;
+  let closure_1 = DEFAULT_APP_ENTRY_KEY;
+  _require(682).batchUpdates(() => outer1_9.setState((arg0) => {
     let iter3;
     let tmp = arg0;
-    if (null != closure_1) {
-      const items = [closure_1];
+    if (null != outer1_1) {
+      const items = [outer1_1];
       let APP_ENTRY_KEYS = items;
     } else {
-      APP_ENTRY_KEYS = callback(closure_2[11]).APP_ENTRY_KEYS;
+      APP_ENTRY_KEYS = callback(outer2_2[11]).APP_ENTRY_KEYS;
     }
     const byAppEntry = tmp.byAppEntry;
-    const tmp5 = callback2(APP_ENTRY_KEYS);
+    const tmp5 = outer2_10(APP_ENTRY_KEYS);
     const iter = tmp5();
     let iter2 = iter;
     let tmp6 = byAppEntry;
@@ -254,9 +264,9 @@ function updateKeyboardStoreState(arg0, DEFAULT_APP_ENTRY_KEY) {
       do {
         let value = iter2.value;
         let tmp8 = tmp6[value];
-        let tmp9 = closure_14;
-        let tmp10 = closure_0;
-        let tmp11 = closure_14(tmp8, closure_0, value);
+        let tmp9 = outer2_14;
+        let tmp10 = outer1_0;
+        let tmp11 = outer2_14(tmp8, outer1_0, value);
         let tmp12 = tmp6;
         if (tmp8 !== tmp11) {
           let obj = {};
@@ -280,88 +290,78 @@ function updateKeyboardStoreState(arg0, DEFAULT_APP_ENTRY_KEY) {
   }));
 }
 function createInitialEntryState(main) {
-  let obj = { customKeyboardHeight: getCustomKeyboardHeight(0, require(dependencyMap[4]).KeyboardTypes.SYSTEM, false, main), customKeyboardHeightExcludingSafeAreaInsets: getCustomKeyboardHeight(0, require(dependencyMap[4]).KeyboardTypes.SYSTEM, true, main), keyboardContexts: obj, keyboardDuration: 0, keyboardHeight: getSystemKeyboardHeight(obj2), keyboardHeightExcludingSafeAreaInsets: getSystemKeyboardHeight(obj3), systemKeyboardOpen: false, keyboardType: require(dependencyMap[4]).KeyboardTypes.SYSTEM, keyboardTypePrevious: require(dependencyMap[4]).KeyboardTypes.SYSTEM };
+  obj = { customKeyboardHeight: getCustomKeyboardHeight(0, require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM, false, main), customKeyboardHeightExcludingSafeAreaInsets: getCustomKeyboardHeight(0, require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM, true, main), keyboardContexts: obj, keyboardDuration: 0, keyboardHeight: getSystemKeyboardHeight(obj2), keyboardHeightExcludingSafeAreaInsets: getSystemKeyboardHeight(obj3), systemKeyboardOpen: false, keyboardType: require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM, keyboardTypePrevious: require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM };
   obj = { [closure_0(closure_2[4]).KeyboardTypes.SYSTEM]: { keyboardWillOpen: false }, [closure_0(closure_2[4]).KeyboardTypes.EXPRESSION]: ExpressionPickerViewType.EMOJI, [closure_0(closure_2[4]).KeyboardTypes.MEDIA]: obj, [closure_0(closure_2[4]).KeyboardTypes.APP_LAUNCHER]: obj1 };
   obj = { target: MediaKeyboardTarget.CHAT };
-  const obj2 = { padding: "absolute", minHeight: -1, appEntryKey: main };
-  const obj3 = { padding: null, minHeight: null, appEntryKey: main };
+  obj2 = { keyboardHeight: 0, excludeSafeAreaInsets: false, appEntryKey: main };
+  obj3 = { keyboardHeight: 0, excludeSafeAreaInsets: true, appEntryKey: main };
   return obj;
 }
-const AppLauncherRouteName = require(dependencyMap[0]).AppLauncherRouteName;
-const ExpressionPickerViewType = require(dependencyMap[1]).ExpressionPickerViewType;
-const MediaKeyboardTarget = require(dependencyMap[2]).MediaKeyboardTarget;
-let closure_6 = "customKeyboardHeight";
-const set = new Set();
+const customKeyboardHeight = "customKeyboardHeight";
+let set = new Set();
 const set1 = new Set();
-const _module = require(dependencyMap[7]);
 let str = "keyboardWillShow";
-if (_module.isAndroid()) {
+if (set.isAndroid()) {
   str = "keyboardDidShow";
 }
-const _module1 = require(dependencyMap[7]);
 let str2 = "keyboardWillHide";
-if (_module1.isAndroid()) {
+if (set.isAndroid()) {
   str2 = "keyboardDidHide";
 }
-const _module2 = require(dependencyMap[12]);
-const obj = _module2.create(() => {
+let obj = keys.create(() => {
   let obj = {};
   obj = { main: createInitialEntryState("main"), share: createInitialEntryState("share") };
   obj.byAppEntry = obj;
   return obj;
 });
-const KeyboardEvents = require(dependencyMap[13]).KeyboardEvents;
 KeyboardEvents.addListener(str, (keyboardDuration) => {
   const height = keyboardDuration.height;
-  const result = importDefault(dependencyMap[14]).reactNativeKeyboardDidShow(height, "KeyboardUIStore");
+  const result = importDefault(1819).reactNativeKeyboardDidShow(height, "KeyboardUIStore");
   updateKeyboardStoreState({ keyboardHeight: height, keyboardDuration: keyboardDuration.duration, systemKeyboardOpen: true });
-  const obj = importDefault(dependencyMap[14]);
-  require(dependencyMap[15]).onKeyboardChanged(true);
+  const obj = importDefault(1819);
+  require(1820) /* dismissGlobalKeyboard */.onKeyboardChanged(true);
   const item = set1.forEach((arg0) => arg0(false));
 });
-const KeyboardEvents2 = require(dependencyMap[13]).KeyboardEvents;
 KeyboardEvents2.addListener(str2, () => {
-  const result = importDefault(dependencyMap[14]).reactNativeKeyboardDidHide("KeyboardUIStore");
-  updateKeyboardStoreState({ "Null": "absolute", "Null": -1 });
-  const obj = importDefault(dependencyMap[14]);
-  require(dependencyMap[15]).onKeyboardChanged(false);
+  const result = importDefault(1819).reactNativeKeyboardDidHide("KeyboardUIStore");
+  updateKeyboardStoreState({ keyboardHeight: 0, systemKeyboardOpen: false });
+  const obj = importDefault(1819);
+  require(1820) /* dismissGlobalKeyboard */.onKeyboardChanged(false);
   const item = set1.forEach((arg0) => arg0(false));
 });
-const subscription = importDefault(dependencyMap[16]).subscribe(() => {
+const subscription = require("module_1558").subscribe(() => {
   updateKeyboardStoreState({});
 });
-const _module3 = require(dependencyMap[18]);
-const result = _module3.fileFinishedImporting("modules/keyboard/native/KeyboardUIStore.native.tsx");
+let result = set.fileFinishedImporting("modules/keyboard/native/KeyboardUIStore.native.tsx");
 
 export default obj;
 export const setKeyboardType = function setKeyboardType(keyboardParams, DEFAULT_APP_ENTRY_KEY) {
-  const require = keyboardParams;
+  const _require = keyboardParams;
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
-    DEFAULT_APP_ENTRY_KEY = require(dependencyMap[17]).DEFAULT_APP_ENTRY_KEY;
+    DEFAULT_APP_ENTRY_KEY = _require(1453).DEFAULT_APP_ENTRY_KEY;
   }
-  const importDefault = DEFAULT_APP_ENTRY_KEY;
-  const item = set.forEach((arg0) => arg0(arg0, DEFAULT_APP_ENTRY_KEY));
-  const item1 = set1.forEach((self) => {
-    let tmp = self.type === self(closure_2[4]).KeyboardTypes.SYSTEM;
+  const item = set.forEach((arg0) => arg0(closure_0, DEFAULT_APP_ENTRY_KEY));
+  const item1 = set1.forEach((arg0) => {
+    let tmp = keyboardParams.type === keyboardParams(outer1_2[4]).KeyboardTypes.SYSTEM;
     if (tmp) {
-      const context = self.context;
+      const context = keyboardParams.context;
       let keyboardWillOpen;
       if (null != context) {
         keyboardWillOpen = context.keyboardWillOpen;
       }
       tmp = true === keyboardWillOpen;
     }
-    return self(tmp, DEFAULT_APP_ENTRY_KEY);
+    return arg0(tmp, DEFAULT_APP_ENTRY_KEY);
   });
   updateKeyboardStoreState({ keyboardType: keyboardParams }, DEFAULT_APP_ENTRY_KEY);
 };
 export const addKeyboardWillOpenChangedListener = function addKeyboardWillOpenChangedListener(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   set1.add(arg0);
-  return () => set.delete(arg0);
+  return () => outer1_8.delete(closure_0);
 };
 export const addKeyboardTypeChangedListener = function addKeyboardTypeChangedListener(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   set.add(arg0);
-  return () => set.delete(arg0);
+  return () => outer1_7.delete(closure_0);
 };

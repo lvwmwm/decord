@@ -1,10 +1,26 @@
-// Module ID: 14261
-// Function ID: 107763
+// Module ID: 14375
+// Function ID: 109916
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 1905, 33, 4130, 689, 3842, 8274, 675, 14376, 5085, 8302, 1212, 4660, 8474, 9610, 1273, 7766, 1450, 7767, 1457, 5087, 3712, 7768, 4126, 4337, 5519, 2]
 // Exports: default
 
-// Module 14261 (_callSuper)
+// Module 14375 (_callSuper)
+import getActivityIndicator from "get ActivityIndicator";
+import ME from "ME";
+import module_14376 from "module_14376";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getSystemLocale from "getSystemLocale";
+import importAllResult from "module_4337";
+import { View } from "HeaderBackImage";
+import { AnalyticEvents } from "ME";
+import { CHANGELOG_MODAL_KEY } from "CHANGELOG_MODAL_KEY";
+import jsxProd from "set";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback2(arg1);
@@ -16,7 +32,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_5(arg0, constructResult);
+  return module_14376(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -30,30 +46,28 @@ function _isNativeReflectConstruct() {
 class ChangeLogScreen {
   constructor(arg0) {
     fn = global.onClose;
-    tmp = arg1;
-    tmp2 = dependencyMap;
-    obj = arg1(dependencyMap[10]);
+    tmp = changelog;
+    tmp2 = closure_2;
+    obj = require("_createForOfIteratorHelperLoose");
     legacyClassComponentStyles = obj.useLegacyClassComponentStyles(jsx);
-    obj2 = arg1(dependencyMap[25]);
+    obj2 = require("useChangelog");
     currentChangelog = obj2.useCurrentChangelog();
     changelog = currentChangelog.changelog;
-    arg1 = changelog;
     loaded = currentChangelog.loaded;
-    importDefault = loaded;
-    size = importDefault(dependencyMap[24])();
+    size = require("useWindowDimensions")();
     diff = size.width - 36;
-    result = diff * closure_14;
+    result = diff * c14;
     result1 = 0.5 * size.height;
     obj = { height: Math.min(result, result1) };
     if (result > result1) {
-      tmp8 = closure_14;
-      diff = result1 / closure_14;
+      tmp8 = c14;
+      diff = result1 / c14;
     }
     obj.width = diff;
     ({ width, height } = obj);
-    tmpResult = tmp(tmp2[26]);
+    tmpResult = require("Link");
     navigation = tmpResult.useNavigation();
-    dependencyMap = navigation;
+    closure_2 = navigation;
     if (null == fn) {
       fn = function e() {
         return navigation.goBack();
@@ -64,21 +78,21 @@ class ChangeLogScreen {
     items[1] = navigation;
     effect = Object.useEffect(() => {
       if (null != changelog) {
-        const obj = {
+        let obj = {
           headerTitle() {
               let obj = {};
-              const intl = lib(closure_2[18]).intl;
-              obj.title = intl.string(lib(closure_2[18]).t.LRmNAl);
-              const intl2 = lib(closure_2[18]).intl;
+              const intl = changelog(navigation[18]).intl;
+              obj.title = intl.string(changelog(navigation[18]).t.LRmNAl);
+              const intl2 = changelog(navigation[18]).intl;
               obj = {};
-              if (null != lib.date) {
-                if ("" !== lib.date) {
-                  let toDateResult = callback(closure_2[28])(lib.date).toDate();
-                  const obj3 = callback(closure_2[28])(lib.date);
+              if (null != outer1_0.date) {
+                if ("" !== outer1_0.date) {
+                  let toDateResult = loaded(navigation[28])(outer1_0.date).toDate();
+                  const obj3 = loaded(navigation[28])(outer1_0.date);
                 }
                 obj.date = toDateResult;
                 obj.subtitle = intl2.formatToPlainString(tmp2, obj);
-                return closure_12(lib(closure_2[27]).NavigatorHeader, obj);
+                return outer2_12(changelog(navigation[27]).NavigatorHeader, obj);
               }
               toDateResult = new Date();
             }
@@ -92,7 +106,7 @@ class ChangeLogScreen {
     effect1 = Object.useEffect(() => {
       if (loaded) {
         if (null != changelog) {
-          return () => callback(closure_2[29]).markChangelogAsSeen(closure_0.id, closure_0.date);
+          return () => loaded(navigation[29]).markChangelogAsSeen(outer1_0.id, outer1_0.date);
         }
       }
     }, items1);
@@ -102,34 +116,34 @@ class ChangeLogScreen {
       obj1 = {};
       obj1.style = legacyClassComponentStyles.empty;
       tmp24 = jsx;
-      tmp25 = arg1;
-      tmp26 = dependencyMap;
+      tmp25 = changelog;
+      tmp26 = closure_2;
       num3 = 30;
       obj2 = {};
       str2 = "heading-lg/medium";
       obj2.variant = "heading-lg/medium";
       num4 = 18;
-      intl2 = arg1(dependencyMap[18]).intl;
-      obj2.children = intl2.string(arg1(dependencyMap[18]).t.V9ospk);
-      obj1.children = jsx(arg1(dependencyMap[30]).Text, obj2);
+      intl2 = require("getSystemLocale").intl;
+      obj2.children = intl2.string(require("getSystemLocale").t.V9ospk);
+      obj1.children = jsx(require("Text").Text, obj2);
       tmp14 = jsx(View, obj1);
     } else if (null == changelog) {
       obj3 = {};
       obj3.style = legacyClassComponentStyles.empty;
       tmp17 = jsx;
-      tmp18 = arg1;
-      tmp19 = dependencyMap;
+      tmp18 = changelog;
+      tmp19 = closure_2;
       num = 30;
       tmp15 = jsx;
       tmp16 = View;
-      Text = arg1(dependencyMap[30]).Text;
+      Text = require("Text").Text;
       obj4 = {};
       str = "text-md/semibold";
       obj4.variant = "text-md/semibold";
       num2 = 18;
-      intl = arg1(dependencyMap[18]).intl;
+      intl = require("getSystemLocale").intl;
       string = intl.string;
-      t = arg1(dependencyMap[18]).t;
+      t = require("getSystemLocale").t;
       if (loaded) {
         t = string(t.O1iRT8);
         obj4.children = t;
@@ -144,68 +158,56 @@ class ChangeLogScreen {
       tmp15Result = tmp15(tmp16, tmp20);
     } else {
       tmp12 = jsx;
-      tmp13 = f107778;
+      tmp13 = f109931;
       obj5 = {};
       obj5.onClose = fn;
       obj5.height = height;
       obj5.width = width;
       obj5.changeLog = changelog;
-      tmp14 = jsx(f107778, obj5);
+      tmp14 = jsx(f109931, obj5);
     }
     return tmp14;
   }
 }
 function hideChangeLog() {
-  importDefault(dependencyMap[31]).popWithKey(CHANGELOG_MODAL_KEY);
+  importDefault(4337).popWithKey(CHANGELOG_MODAL_KEY);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-const View = arg1(dependencyMap[6]).View;
-const AnalyticEvents = arg1(dependencyMap[7]).AnalyticEvents;
-const CHANGELOG_MODAL_KEY = arg1(dependencyMap[8]).CHANGELOG_MODAL_KEY;
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[9]));
-let closure_14 = 0.5625;
-let obj = arg1(dependencyMap[10]);
-obj = { video: { alignSelf: "center" }, videoWrapper: { marginBottom: 8 } };
-obj = { borderRadius: importDefault(dependencyMap[11]).radii.xs, overflow: "hidden" };
-obj.videoSpecial = obj;
-obj.videoOverlay = { "Null": null, "Null": null, "Null": null };
-const obj1 = { getUserTrialOffer: "<string:861011969>", borderColor: "<string:861077505>", GuildsNodeType: "<string:976486401>", OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED: "<string:1656487938>", is_pip_mode: "<string:1045495809>", notifSetting: "<string:271532290>", resetNotification: "<string:2035351553>", canEditInvite: "<string:206652268>", SquareActivityPIPReferenceDimensions: "<string:206831617>", borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_SURFACE_HIGH };
-obj.playButton = obj1;
-obj.playIcon = { "Null": true, "Null": true };
-obj.empty = { reportedPageIndex: "oneTimeCode", pageIndex: "stretch", scrollTargetPageIndex: 1, index: "center" };
-let closure_15 = obj.createLegacyClassComponentStyles(obj);
-let obj4 = arg1(dependencyMap[10]);
-const obj2 = {};
-const tmp3 = arg1(dependencyMap[9]);
-obj2.bulletPoint = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_STRONG };
-obj2.listItem = {};
-obj4 = { color: importDefault(dependencyMap[11]).colors.TEXT_DEFAULT };
-obj2.listText = obj4;
-obj2.listItemContent = { 1649697713: "onAnimationFinishCapture", 106012843: "onAnimationFinish" };
-let closure_16 = obj4.createLegacyClassComponentStyles(obj2);
-const tmp4 = (PureComponent) => {
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+let c14 = 0.5625;
+_createForOfIteratorHelperLoose = { video: { alignSelf: "center" }, videoWrapper: { marginBottom: 8 } };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
+_createForOfIteratorHelperLoose.videoSpecial = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.videoOverlay = { position: "absolute", width: "100%", height: "100%" };
+let obj1 = { position: "absolute", top: "50%", left: "50%", marginLeft: -28, marginTop: -28, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, width: 56, height: 56 };
+_createForOfIteratorHelperLoose.playButton = obj1;
+_createForOfIteratorHelperLoose.playIcon = { width: 21, height: 21 };
+_createForOfIteratorHelperLoose.empty = { width: "100%", height: 240, alignItems: "center", paddingTop: 48 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+let obj2 = {};
+let obj3 = { width: 7, height: 7, borderRadius: 3.5, marginRight: 13, marginTop: 7, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+obj2.bulletPoint = obj3;
+obj2.listItem = { flexDirection: "row", marginLeft: 4, marginBottom: 8 };
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, fontSize: 14, lineHeight: 18, flex: 1 };
+obj2.listText = _createForOfIteratorHelperLoose;
+obj2.listItemContent = { flexDirection: "column", flex: 1 };
+let closure_16 = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(obj2);
+let tmp4 = ((PureComponent) => {
   class ListItem {
     constructor() {
-      tmp = closure_3(this, ListItem);
-      return closure_18(this, ListItem, arguments);
+      tmp = outer1_3(this, ListItem);
+      return outer1_18(this, ListItem, arguments);
     }
   }
-  const arg1 = ListItem;
   callback3(ListItem, PureComponent);
-  const items = [
+  let items = [
     {
       key: "render",
       value() {
         const children = this.props.children;
-        const tmp = callback3(this.context);
+        const tmp = outer1_16(this.context);
         let obj = { style: tmp.listItem };
         obj = { style: tmp.bulletPoint };
-        const items = [callback2(closure_9, obj), ];
+        const items = [outer1_12(outer1_9, obj), ];
         obj = { style: tmp.listText };
         let childrenResult = children;
         if ("function" === typeof children) {
@@ -213,25 +215,25 @@ const tmp4 = (PureComponent) => {
           childrenResult = children(obj1);
         }
         obj.children = childrenResult;
-        items[1] = callback2(closure_9, obj);
+        items[1] = outer1_12(outer1_9, obj);
         obj.children = items;
-        return closure_13(closure_9, obj);
+        return outer1_13(outer1_9, obj);
       }
     }
   ];
   return callback(ListItem, items);
-}(importAllResult.PureComponent);
-tmp4.contextType = arg1(dependencyMap[12]).ThemeContext;
-const tmp5 = (PureComponent) => {
+})(importAllResult.PureComponent);
+tmp4.contextType = require("ManaContext").ThemeContext;
+let tmp5 = ((PureComponent) => {
   class ChangeLog {
     constructor(arg0) {
       items = [...arguments];
-      tmp = closure_3(this, ChangeLog);
+      tmp = outer1_3(this, ChangeLog);
       items1 = [...items];
-      tmp2 = closure_18(this, ChangeLog, items1);
+      tmp2 = outer1_18(this, ChangeLog, items1);
       ChangeLog = tmp2;
       tmp2.mountedAt = 0;
-      tmp2.ref = closure_8.createRef();
+      tmp2.ref = outer1_8.createRef();
       tmp2.maxScrolledPercentage = 0;
       tmp2.state = { ytVideoReady: false };
       tmp2.handleScroll = (contentOffset) => {
@@ -255,10 +257,10 @@ const tmp5 = (PureComponent) => {
         } else {
           obj = { uri: image };
         }
-        tmp2.track(constants.CHANGE_LOG_VIDEO_INTERACTED);
+        tmp2.track(outer2_10.CHANGE_LOG_VIDEO_INTERACTED);
         const current = tmp2.ref.current;
         if (null != current) {
-          obj = { "Bool(false)": 10742523210446360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 2.000000599364285, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009089488680308877, "Bool(false)": -504174745769255300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+          obj = { initialSources: null, disableDownload: true, shareable: false, analyticsSource: "Change Log" };
           const obj1 = {};
           const merged = Object.assign(obj);
           obj1["width"] = width;
@@ -266,27 +268,26 @@ const tmp5 = (PureComponent) => {
           const items = [obj1];
           obj.initialSources = items;
           obj.originViewOrOriginLayout = current;
-          tmp2(closure_2[13]).openMediaModal(obj);
-          const obj3 = tmp2(closure_2[13]);
+          ChangeLog(outer2_2[13]).openMediaModal(obj);
+          const obj3 = ChangeLog(outer2_2[13]);
         }
       };
       return tmp2;
     }
   }
-  const arg1 = ChangeLog;
   callback3(ChangeLog, PureComponent);
   let obj = {
     key: "componentDidMount",
     value() {
       this.mountedAt = Date.now();
-      this.track(constants.CHANGE_LOG_OPENED);
+      this.track(outer1_10.CHANGE_LOG_OPENED);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "componentWillUnmount",
     value() {
-      this.track(constants.CHANGE_LOG_CLOSED);
+      this.track(outer1_10.CHANGE_LOG_CLOSED);
     }
   };
   items[1] = obj;
@@ -305,7 +306,7 @@ const tmp5 = (PureComponent) => {
         obj.change_log_id = "" + changeLog.date + ":" + changeLog.revision;
         const merged = Object.assign(obj);
         let tmp4 = obj;
-        if (arg0 === constants.CHANGE_LOG_CLOSED) {
+        if (arg0 === outer1_10.CHANGE_LOG_CLOSED) {
           obj = {};
           const _Math = Math;
           const _Date = Date;
@@ -316,8 +317,8 @@ const tmp5 = (PureComponent) => {
           const merged1 = Object.assign(obj);
           tmp4 = obj;
         }
-        callback(closure_2[14]).track(arg0, tmp4);
-        const obj3 = callback(closure_2[14]);
+        outer1_1(outer1_2[14]).track(arg0, tmp4);
+        const obj3 = outer1_1(outer1_2[14]);
       }
     }
   };
@@ -331,9 +332,9 @@ const tmp5 = (PureComponent) => {
       let onClose;
       let video;
       let youtube_video_id;
-      const self = this;
-      const ChangeLog = this;
-      const tmp = callback4(this.context);
+      let self = this;
+      self = this;
+      const tmp = outer1_15(this.context);
       const props = this.props;
       ({ changeLog, height, onClose } = props);
       ({ video, image, youtube_video_id } = changeLog);
@@ -352,7 +353,7 @@ const tmp5 = (PureComponent) => {
                 },
             useLocalHTML: true
           };
-          const items = [callback3(callback(closure_2[15]), obj1), ];
+          const items = [outer1_12(outer1_1(outer1_2[15]), obj1), ];
           let tmp9 = null;
           if (!tmp2) {
             const obj2 = { style: tmp.videoOverlay };
@@ -360,14 +361,14 @@ const tmp5 = (PureComponent) => {
             const _HermesInternal = HermesInternal;
             obj3.uri = "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg";
             obj2.source = obj3;
-            tmp9 = callback3(callback(closure_2[16]), obj2);
-            const tmp13 = callback(closure_2[16]);
+            tmp9 = outer1_12(outer1_1(outer1_2[16]), obj2);
+            const tmp13 = outer1_1(outer1_2[16]);
           }
           items[1] = tmp9;
           obj.children = items;
-          tmp4Result = closure_13(closure_9, obj);
-          const tmp4 = closure_13;
-          const tmp5 = closure_9;
+          tmp4Result = outer1_13(outer1_9, obj);
+          const tmp4 = outer1_13;
+          const tmp5 = outer1_9;
         }
         return tmp4Result;
       } else {
@@ -376,24 +377,24 @@ const tmp5 = (PureComponent) => {
       const obj4 = { style: tmp.videoWrapper, onAccessibilityEscape: onClose };
       const obj5 = { ref: self.ref, style: tmp.videoSpecial };
       const obj6 = { style: tmp.video, src: obj, width: props.width, height, paused: true, canOpenFullscreen: true, unmutedOnFullScreen: true };
-      const intl = ChangeLog(closure_2[18]).intl;
-      obj6.accessibilityLabel = intl.string(ChangeLog(closure_2[18]).t.zHeo07);
+      const intl = ChangeLog(outer1_2[18]).intl;
+      obj6.accessibilityLabel = intl.string(ChangeLog(outer1_2[18]).t.zHeo07);
       obj6.onPress = function onPress() {
-        self.track(constants.CHANGE_LOG_VIDEO_INTERACTED);
+        self.track(outer2_10.CHANGE_LOG_VIDEO_INTERACTED);
       };
-      const items1 = [callback3(callback(closure_2[17]), obj6), ];
+      const items1 = [outer1_12(outer1_1(outer1_2[17]), obj6), ];
       let tmp20 = null;
       if (null != video) {
-        const obj7 = { <string:1403277940>: "GAME_SERVER_REGIONS", <string:2544012649>: "GAME_SERVER_REGIONS", style: tmp.videoOverlay, onPress: self.playVideo };
-        const obj8 = { <string:1403277940>: "GAME_SERVER_REGIONS", <string:2544012649>: "GAME_SERVER_REGIONS", source: callback(closure_2[21]), onPress: self.playVideo, style: tmp.playButton, iconSize: ChangeLog(closure_2[22]).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
-        obj7.children = callback3(callback(closure_2[20]), obj8);
-        tmp20 = callback3(ChangeLog(closure_2[19]).PressableOpacity, obj7);
-        const tmp26 = callback(closure_2[20]);
+        const obj7 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: tmp.videoOverlay, onPress: self.playVideo };
+        const obj8 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: outer1_1(outer1_2[21]), onPress: self.playVideo, style: tmp.playButton, iconSize: ChangeLog(outer1_2[22]).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
+        obj7.children = outer1_12(outer1_1(outer1_2[20]), obj8);
+        tmp20 = outer1_12(ChangeLog(outer1_2[19]).PressableOpacity, obj7);
+        const tmp26 = outer1_1(outer1_2[20]);
       }
       items1[1] = tmp20;
       obj5.children = items1;
-      obj4.children = closure_13(closure_9, obj5);
-      return callback3(closure_9, obj4);
+      obj4.children = outer1_13(outer1_9, obj5);
+      return outer1_12(outer1_9, obj4);
     }
   };
   items[4] = {
@@ -403,29 +404,29 @@ const tmp5 = (PureComponent) => {
       const merged = Object.assign(this.props);
       obj["video"] = this.renderVideo();
       obj["onScroll"] = this.handleScroll;
-      return callback3(callback(closure_2[23]), obj);
+      return outer1_12(outer1_1(outer1_2[23]), obj);
     }
   };
   return callback(ChangeLog, items);
-}(importAllResult.PureComponent);
-tmp5.contextType = arg1(dependencyMap[12]).ThemeContext;
-const obj3 = { backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_MOD_STRONG };
-const result = arg1(dependencyMap[33]).fileFinishedImporting("components_native/ChangeLogModal.tsx");
+})(importAllResult.PureComponent);
+let closure_17 = tmp5;
+tmp5.contextType = require("ManaContext").ThemeContext;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/ChangeLogModal.tsx");
 
 export default function ChangelogModal() {
   const screens = importAllResult.useMemo(() => {
     let obj = {};
     obj = {
       name: "CHANGELOG",
-      headerLeft: callback(closure_2[27]).getHeaderCloseButton(closure_21),
+      headerLeft: outer1_0(outer1_2[27]).getHeaderCloseButton(outer1_21),
       render() {
-        return callback(closure_20, { onClose: closure_21 });
+        return outer2_12(outer2_20, { onClose: outer2_21 });
       }
     };
     obj.CHANGELOG = obj;
     return obj;
   }, []);
-  return callback4(arg1(dependencyMap[32]).Navigator, { screens, initialRouteName: "CHANGELOG" });
+  return callback4(require(5519) /* NavigationStack */.Navigator, { screens, initialRouteName: "CHANGELOG" });
 };
 export const ListItem = tmp4;
 export { ChangeLogScreen };

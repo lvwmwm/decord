@@ -1,11 +1,12 @@
 // Module ID: 1022
-// Function ID: 11069
+// Function ID: 11070
 // Name: observe
 // Dependencies: []
 
 // Module 1022 (observe)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.observe = function observe(type) {
+  let closure_0 = arg1;
   if (arguments.length > 2) {
     if (undefined !== arguments[2]) {
       let obj = arguments[2];
@@ -14,10 +15,10 @@ arg5.observe = function observe(type) {
     if (supportedEntryTypes.includes(type)) {
       const prototype = globalThis.PerformanceObserver.prototype;
       const performanceObserver = new globalThis.PerformanceObserver((arg0) => {
-        const arg1 = arg0;
+        let closure_0 = arg0;
         const resolved = Promise.resolve();
         resolved.then(() => {
-          arg0(arg0.getEntries());
+          entries(entries.getEntries());
         });
       });
       const _Object = Object;

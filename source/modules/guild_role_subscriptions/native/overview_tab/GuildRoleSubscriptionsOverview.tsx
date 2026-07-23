@@ -1,22 +1,30 @@
-// Module ID: 15145
-// Function ID: 114277
+// Module ID: 15260
+// Function ID: 116446
 // Name: serverNameHook
-// Dependencies: []
+// Dependencies: [31, 4808, 3951, 1838, 33, 4126, 15261, 1212, 8002, 14102, 15262, 624, 5632, 5031, 4471, 1198, 2]
 // Exports: default
 
-// Module 15145 (serverNameHook)
+// Module 15260 (serverNameHook)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function serverNameHook(children) {
-  return jsx(arg1(dependencyMap[5]).Text, { children });
+  const obj = { variant: "heading-lg/extrabold", color: "interactive-text-active", children };
+  return jsx(require(4126) /* Text */.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }
 class RoleSubscriptionsUnavailableNotice {
   constructor(arg0) {
     obj = {};
-    tmp = importDefault(dependencyMap[6]);
-    intl = arg1(dependencyMap[7]).intl;
+    tmp = require("UnavailableNotice");
+    intl = require("getSystemLocale").intl;
     obj = { serverName: global.serverName, serverNameHook };
-    obj.title = intl.format(arg1(dependencyMap[7]).t.uEqG1M, obj);
-    intl2 = arg1(dependencyMap[7]).intl;
-    obj.description = intl2.string(arg1(dependencyMap[7]).t.+3DKTf);
+    obj.title = intl.format(require("getSystemLocale").t.uEqG1M, obj);
+    intl2 = require("getSystemLocale").intl;
+    obj.description = intl2.string(require("getSystemLocale").t["+3DKTf"]);
     return jsx(tmp, obj);
   }
 }
@@ -24,43 +32,35 @@ function PurchasePage(arg0) {
   let gatedChannelId;
   let guildId;
   ({ guildId, gatedChannelId } = arg0);
-  let obj = importDefault(dependencyMap[8]);
+  let obj = importDefault(8002);
   const storeFront = obj.useNativeIAPPayments().storeFront;
   let country;
   if (null != storeFront) {
     country = storeFront.country;
   }
-  obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(dependencyMap[10]), { guildId, gatedChannelId }) };
-  return jsx(arg1(dependencyMap[9]).GroupListingsFetchContextProvider, obj);
+  obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15262), { guildId, gatedChannelId }) };
+  return jsx(require(14102) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(importDefault(15262), { guildId, gatedChannelId }) });
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
 
 export default function GuildRoleSubscriptionsOverview(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
-  let obj = arg1(dependencyMap[11]);
-  const items = [closure_6];
+  let obj = guildId(stateFromStores1[11]);
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [guildId];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId), items1);
-  const importDefault = stateFromStores;
-  const items2 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[11]).useStateFromStores(items2, () => connected.isConnected());
-  const dependencyMap = stateFromStores1;
-  const tmp3 = importDefault(dependencyMap[12])(guildId);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(guildId), items1);
+  const items2 = [_isNativeReflectConstruct];
+  stateFromStores1 = guildId(stateFromStores1[11]).useStateFromStores(items2, () => outer1_4.isConnected());
+  const tmp3 = stateFromStores(stateFromStores1[12])(guildId);
   const React = tmp3;
-  const obj2 = arg1(dependencyMap[11]);
+  const obj2 = guildId(stateFromStores1[11]);
   const items3 = [stateFromStores, stateFromStores1, tmp3];
-  const canUseRoleSubscriptionIAP = arg1(dependencyMap[13]).useCanUseRoleSubscriptionIAP(guildId);
+  const canUseRoleSubscriptionIAP = guildId(stateFromStores1[13]).useCanUseRoleSubscriptionIAP(guildId);
   const effect = React.useEffect(() => {
     let tmp = !stateFromStores1;
     if (!tmp) {
-      tmp = null != stateFromStores && null;
-      const tmp4 = null != stateFromStores && null;
+      tmp = null != stateFromStores && result;
+      const tmp4 = null != stateFromStores && result;
     }
     if (!tmp) {
       let obj = stateFromStores(stateFromStores1[14]);
@@ -68,11 +68,11 @@ export default function GuildRoleSubscriptionsOverview(guildId) {
       const intl = guildId(stateFromStores1[7]).intl;
       obj.title = intl.string(guildId(stateFromStores1[7]).t.r0DLNm);
       const intl2 = guildId(stateFromStores1[7]).intl;
-      obj.body = intl2.string(guildId(stateFromStores1[7]).t.6Y0JlN);
+      obj.body = intl2.string(guildId(stateFromStores1[7]).t["6Y0JlN"]);
       const intl3 = guildId(stateFromStores1[7]).intl;
       obj.confirmText = intl3.string(guildId(stateFromStores1[7]).t.BddRzS);
       obj.show(obj);
-      guildId(stateFromStores1[15]).replaceWith(defaultRoute.defaultRoute);
+      guildId(stateFromStores1[15]).replaceWith(outer1_5.defaultRoute);
       const obj3 = guildId(stateFromStores1[15]);
     }
   }, items3);

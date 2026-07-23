@@ -1,9 +1,9 @@
-// Module ID: 10485
-// Function ID: 81239
-// Dependencies: []
+// Module ID: 10495
+// Function ID: 81289
+// Name: HANDSHAKE
+// Dependencies: [2]
 
-// Module 10485
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/rpc/RPCOpcodes.tsx");
+// Module 10495 (HANDSHAKE)
+const result = require("set").fileFinishedImporting("modules/rpc/RPCOpcodes.tsx");
 
-export default {};
+export default { HANDSHAKE: 0, FRAME: 1, CLOSE: 2, HELLO: 3 };

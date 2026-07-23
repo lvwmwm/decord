@@ -1,9 +1,18 @@
-// Module ID: 6687
-// Function ID: 51691
+// Module ID: 6692
+// Function ID: 51723
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1849, 3948, 3712, 3950, 3754, 3949, 664, 566, 686, 2]
 
-// Module 6687 (_isNativeReflectConstruct)
+// Module 6692 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "t";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import { joinRequestFromServer } from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,19 +23,19 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getSubmittedGuildJoinRequestTotal(guildId) {
-  return closure_11[guildId];
+  return table[guildId];
 }
 function setSubmittedGuildJoinRequestTotal(guildId, total) {
   closure_11[guildId] = total;
-  const result = map.set(guildId, importDefault(dependencyMap[7])());
+  const result = map.set(guildId, importDefault(3712)());
 }
 function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatus) {
   if (DELETED !== applicationStatus) {
     if (null != DELETED) {
-      if (DELETED === DELETED(dependencyMap[8]).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (DELETED === require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
         setSubmittedGuildJoinRequestTotal(guildId, getSubmittedGuildJoinRequestTotal(guildId) + 1);
       }
-      if (applicationStatus === DELETED(dependencyMap[8]).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (applicationStatus === require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
         const _Math = Math;
         setSubmittedGuildJoinRequestTotal(guildId, Math.max(0, getSubmittedGuildJoinRequestTotal(guildId) - 1));
       }
@@ -52,7 +61,7 @@ function upsert(joinRequestId) {
     secondaryIndexMap2.delete(joinRequestId.joinRequestId);
     const result1 = secondaryIndexMap1.set(joinRequestId.joinRequestId, joinRequestId);
   }
-  const obj = arg1(dependencyMap[10]);
+  obj = require(3949) /* isActionedApplicationStatus */;
   if (obj2.isActionedApplicationStatus(joinRequestId.applicationStatus)) {
     secondaryIndexMap1.delete(joinRequestId.joinRequestId);
     const result2 = secondaryIndexMap2.set(joinRequestId.joinRequestId, joinRequestId);
@@ -60,7 +69,7 @@ function upsert(joinRequestId) {
 }
 function handleGuildJoinRequestCreateOrUpdate(request) {
   const tmp = joinRequestFromServer(request.request);
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
     if (tmp.userId !== currentUser.id) {
       const tmp4 = get(tmp.joinRequestId);
@@ -75,44 +84,37 @@ function handleGuildJoinRequestCreateOrUpdate(request) {
   }
   return false;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const joinRequestFromServer = arg1(dependencyMap[6]).joinRequestFromServer;
 const map = new Map();
 let closure_11 = {};
 let closure_12 = {};
-let closure_13 = false;
+let c13 = false;
 function StaticGuildJoinRequestIndexes_GUILD_JOIN_REQUESTS_BY_ID(joinRequestId) {
   return "guild-join-request=" + joinRequestId;
 }
 function StaticGuildJoinRequestIndexes_GUILD_JOIN_REQUESTS_BY_STATUS(guildId, applicationStatus) {
   return "guild-" + guildId + "-" + applicationStatus;
 }
-const secondaryIndexMap = new arg1(dependencyMap[9]).SecondaryIndexMap(guildJoinRequestsIndex, (joinRequestId) => "" + joinRequestId.joinRequestId);
-const secondaryIndexMap1 = new arg1(dependencyMap[9]).SecondaryIndexMap(guildJoinRequestsIndex, (joinRequestId) => "" + joinRequestId.joinRequestId);
-const secondaryIndexMap2 = new arg1(dependencyMap[9]).SecondaryIndexMap(guildJoinRequestsIndex, (actionedAt) => "" + actionedAt.actionedAt);
+const secondaryIndexMap = new require("sortedInsert").SecondaryIndexMap(guildJoinRequestsIndex, (joinRequestId) => "" + joinRequestId.joinRequestId);
+const secondaryIndexMap1 = new require("sortedInsert").SecondaryIndexMap(guildJoinRequestsIndex, (joinRequestId) => "" + joinRequestId.joinRequestId);
+const secondaryIndexMap2 = new require("sortedInsert").SecondaryIndexMap(guildJoinRequestsIndex, (actionedAt) => "" + actionedAt.actionedAt);
 let closure_19 = {};
 let closure_20 = {};
 let closure_21 = {};
 let closure_22 = {};
-let closure_23 = 10 * importDefault(dependencyMap[11]).Seconds.MINUTE;
-let tmp6 = (Store) => {
+let closure_23 = 10 * require("set").Seconds.MINUTE;
+let tmp6 = ((Store) => {
   class GuildJoinRequestStoreV2 {
     constructor() {
       self = this;
-      tmp = closure_3(this, GuildJoinRequestStoreV2);
-      obj = closure_6(GuildJoinRequestStoreV2);
-      tmp2 = closure_5;
-      if (closure_24()) {
+      tmp = outer1_3(this, GuildJoinRequestStoreV2);
+      obj = outer1_6(GuildJoinRequestStoreV2);
+      tmp2 = outer1_5;
+      if (outer1_24()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -121,35 +123,34 @@ let tmp6 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildJoinRequestStoreV2;
   callback2(GuildJoinRequestStoreV2, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8);
+      this.waitFor(outer1_8);
     }
   };
   const items = [obj, , , , , , , , , ];
   obj = {
     key: "getRequest",
     value(arg0) {
-      return closure_22[arg0];
+      return outer1_22[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getRequests",
     value(arg0, applicationStatus) {
-      const tmp = callback4(arg0, applicationStatus);
+      const tmp = outer1_15(arg0, applicationStatus);
       if (obj.isActionedApplicationStatus(applicationStatus)) {
-        let values = closure_18.values(tmp);
+        let values = outer1_18.values(tmp);
       } else {
         if (obj2.isSubmittedApplicationStatus(applicationStatus)) {
-          values = closure_17.values(tmp);
+          values = outer1_17.values(tmp);
         } else {
-          values = closure_16.values(tmp);
+          values = outer1_16.values(tmp);
         }
-        const obj2 = GuildJoinRequestStoreV2(closure_2[10]);
+        obj2 = GuildJoinRequestStoreV2(outer1_2[10]);
       }
       return values;
     }
@@ -158,24 +159,24 @@ let tmp6 = (Store) => {
   items[3] = {
     key: "getSubmittedGuildJoinRequestTotal",
     value(arg0) {
-      return closure_11[arg0];
+      return outer1_11[arg0];
     }
   };
   items[4] = {
     key: "isFetching",
     value() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[5] = {
     key: "hasFetched",
     value(arg0) {
-      if (map.has(arg0)) {
-        const value = map.get(arg0);
+      if (outer1_10.has(arg0)) {
+        const value = outer1_10.get(arg0);
         let tmp4 = null != value;
         if (tmp4) {
-          tmp4 = callback(closure_2[7])().diff(value, "seconds") < closure_23;
-          const obj = callback(closure_2[7])();
+          tmp4 = outer1_1(outer1_2[7])().diff(value, "seconds") < outer1_23;
+          const obj = outer1_1(outer1_2[7])();
         }
         return tmp4;
       } else {
@@ -186,8 +187,8 @@ let tmp6 = (Store) => {
   items[6] = {
     key: "getSelectedApplicationTab",
     value(arg0) {
-      let SUBMITTED = GuildJoinRequestStoreV2(closure_2[8]).GuildJoinRequestApplicationStatuses.SUBMITTED;
-      if (null != closure_19[arg0]) {
+      let SUBMITTED = GuildJoinRequestStoreV2(outer1_2[8]).GuildJoinRequestApplicationStatuses.SUBMITTED;
+      if (null != outer1_19[arg0]) {
         SUBMITTED = tmp;
       }
       return SUBMITTED;
@@ -196,9 +197,9 @@ let tmp6 = (Store) => {
   items[7] = {
     key: "getSelectedSortOrder",
     value(arg0) {
-      let TIMESTAMP_DESC = closure_20[arg0];
+      let TIMESTAMP_DESC = outer1_20[arg0];
       if (null == TIMESTAMP_DESC) {
-        TIMESTAMP_DESC = GuildJoinRequestStoreV2(closure_2[8]).GuildJoinRequestSortOrders.TIMESTAMP_DESC;
+        TIMESTAMP_DESC = GuildJoinRequestStoreV2(outer1_2[8]).GuildJoinRequestSortOrders.TIMESTAMP_DESC;
       }
       return TIMESTAMP_DESC;
     }
@@ -207,8 +208,8 @@ let tmp6 = (Store) => {
     key: "getSelectedGuildJoinRequest",
     value(arg0) {
       let tmp2 = null;
-      if (null != closure_21[arg0]) {
-        tmp2 = callback6(tmp.joinRequestId);
+      if (null != outer1_21[arg0]) {
+        tmp2 = outer1_29(tmp.joinRequestId);
       }
       return tmp2;
     }
@@ -216,18 +217,19 @@ let tmp6 = (Store) => {
   items[9] = {
     key: "getRequestsForUser",
     value(arg0, arg1) {
+      const arr = outer1_12[outer1_28(undefined, arg0, arg1)];
       let found = null;
-      if (null != closure_12[closure_28(undefined, arg0, arg1)]) {
-        const mapped = arr.map((arg0) => callback(arg0));
+      if (null != arr) {
+        const mapped = arr.map((arg0) => outer2_29(arg0));
         found = mapped.filter((arg0) => null != arg0);
       }
       return found;
     }
   };
   return callback(GuildJoinRequestStoreV2, items);
-}(importDefault(dependencyMap[12]).Store);
+})(require("initialize").Store);
 tmp6.displayName = "GuildJoinRequestStoreV2";
-tmp6 = new tmp6(importDefault(dependencyMap[13]), {
+tmp6 = new tmp6(require("dispatcher"), {
   GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: function handleFetchByIdSuccess(joinRequest) {
     upsert(joinRequest.joinRequest);
   },
@@ -244,29 +246,29 @@ tmp6 = new tmp6(importDefault(dependencyMap[13]), {
     let status;
     let total;
     requests = requests.requests;
-    let closure_13 = false;
+    let c13 = false;
     ({ status, total, guildId } = requests);
-    if (status === arg1(dependencyMap[8]).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+    if (status === require(3950) /* isTermsFormField */.GuildJoinRequestApplicationStatuses.SUBMITTED) {
       setSubmittedGuildJoinRequestTotal(guildId, total);
     }
     const item = requests.forEach((arg0) => {
-      callback(arg0);
+      outer1_30(arg0);
     });
   },
   GUILD_JOIN_REQUESTS_FETCH_START: function handleFetchStart() {
-    let closure_13 = true;
+    let c13 = true;
   },
   GUILD_JOIN_REQUESTS_FETCH_FAILURE: function handleFetchFailure() {
-    let closure_13 = false;
+    let c13 = false;
   },
   GUILD_JOIN_REQUEST_CREATE: handleGuildJoinRequestCreateOrUpdate,
   GUILD_JOIN_REQUEST_UPDATE: handleGuildJoinRequestCreateOrUpdate,
   GUILD_JOIN_REQUEST_DELETE: function handleGuildJoinRequestDelete(id) {
     id = id.id;
-    const tmp = get(id);
-    if (null != tmp) {
-      updateSubmittedGuildJoinRequestTotal(id.guildId, "DELETED", tmp.applicationStatus);
-      delete r2[r3];
+    const tmp3 = get(id);
+    if (null != tmp3) {
+      updateSubmittedGuildJoinRequestTotal(id.guildId, "DELETED", tmp3.applicationStatus);
+      delete tmp[tmp2];
       secondaryIndexMap.delete(id);
       secondaryIndexMap1.delete(id);
       secondaryIndexMap2.delete(id);
@@ -276,8 +278,8 @@ tmp6 = new tmp6(importDefault(dependencyMap[13]), {
     let applicationTab;
     let guildId;
     ({ guildId, applicationTab } = arg0);
-    if (applicationTab !== closure_19[guildId]) {
-      closure_19[guildId] = applicationTab;
+    if (applicationTab !== table2[guildId]) {
+      table2[guildId] = applicationTab;
     }
   },
   GUILD_JOIN_REQUESTS_SET_SORT_ORDER: function handleSetSortOrder(arg0) {
@@ -285,22 +287,22 @@ tmp6 = new tmp6(importDefault(dependencyMap[13]), {
     let guildId;
     let sortOrder;
     ({ guildId, sortOrder, applicationStatus } = arg0);
-    if (sortOrder !== closure_20[guildId]) {
-      closure_20[guildId] = sortOrder;
+    if (sortOrder !== table3[guildId]) {
+      table3[guildId] = sortOrder;
       if (obj.isActionedApplicationStatus(applicationStatus)) {
         secondaryIndexMap2.clear();
       }
-      const obj = arg1(dependencyMap[10]);
+      obj = require(3949) /* isActionedApplicationStatus */;
       if (obj2.isSubmittedApplicationStatus(applicationStatus)) {
         secondaryIndexMap1.clear();
       }
-      const obj2 = arg1(dependencyMap[10]);
+      obj2 = require(3949) /* isActionedApplicationStatus */;
     }
   },
   GUILD_JOIN_REQUESTS_SET_SELECTED: function handleGuildJoinRequestSelect(guildId) {
     closure_21[guildId.guildId] = guildId.request;
   }
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestStore.tsx");
 
 export default tmp6;

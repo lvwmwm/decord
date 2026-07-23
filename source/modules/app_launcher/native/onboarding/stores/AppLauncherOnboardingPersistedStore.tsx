@@ -1,38 +1,39 @@
-// Module ID: 11154
-// Function ID: 86752
+// Module ID: 11164
+// Function ID: 86802
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 11154 (_isNativeReflectConstruct)
+// Module 11164 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let obj = {};
+let obj = { canShowBotsBanner: false, canShowAppsOrActivitiesBanner: false, willShowGlobalSearchOnboarding: false, timeMs: 0, channelId: "0" };
 let closure_6 = { lastSeenTimeMs: null, triggeredOnboardingContentMetadata: obj };
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class AppLauncherOnboardingPersistedStore {
     constructor() {
       self = this;
       tmp = AppLauncherOnboardingPersistedStore(this, AppLauncherOnboardingPersistedStore);
-      obj = closure_3(AppLauncherOnboardingPersistedStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(AppLauncherOnboardingPersistedStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,13 +42,12 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = AppLauncherOnboardingPersistedStore;
   callback2(AppLauncherOnboardingPersistedStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       if (null != arg0) {
-        ({ lastSeenTimeMs: closure_6.lastSeenTimeMs, triggeredOnboardingContentMetadata: closure_6.triggeredOnboardingContentMetadata } = arg0);
+        ({ lastSeenTimeMs: outer1_6.lastSeenTimeMs, triggeredOnboardingContentMetadata: outer1_6.triggeredOnboardingContentMetadata } = arg0);
       }
     }
   };
@@ -55,28 +55,28 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[1] = obj;
   obj = {
     key: "getLastSeenTimeMs",
     value() {
-      return closure_6.lastSeenTimeMs;
+      return outer1_6.lastSeenTimeMs;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getTriggeredOnboardingContentMetadata",
     value() {
-      return closure_6.triggeredOnboardingContentMetadata;
+      return outer1_6.triggeredOnboardingContentMetadata;
     }
   };
   return callback(AppLauncherOnboardingPersistedStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "AppLauncherOnboardingPersistedStore";
 tmp2.persistKey = "AppLauncherOnboardingPersistedStore";
-const items = [
+let items = [
   (lastSeenTimeMs) => {
     let obj = {};
     lastSeenTimeMs = undefined;
@@ -157,7 +157,7 @@ obj = {
     closure_6.triggeredOnboardingContentMetadata = triggeredOnboardingContentMetadata.triggeredOnboardingContentMetadata;
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[6]), obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingPersistedStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingPersistedStore.tsx");
 
 export default tmp2;

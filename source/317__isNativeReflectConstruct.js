@@ -1,13 +1,25 @@
 // Module ID: 317
 // Function ID: 4829
 // Name: _isNativeReflectConstruct
-// Dependencies: [1333002240, 100663296, 822083585, 771751936, 1375731712, 1968939652, 6, 7, 209, 294, 333, 8052]
+// Dependencies: [57, 29, 6, 7, 15, 17, 18, 31, 33, 44, 304, 305]
 
 // Module 317 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import NativeEventEmitter from "NativeEventEmitter";
+import _slicedToArray from "_slicedToArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _inherits from "_inherits";
+import closure_7 from "result";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import closure_10 from "_inherits";
+import result from "result";
+import jsxProd from "jsxProd";
 
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,6 +30,9 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function ItemWithSeparator(leadingItem) {
+  let closure_3;
+  let _objectWithoutProperties;
+  let closure_7;
   let index;
   let inverted;
   let item;
@@ -25,37 +40,31 @@ function ItemWithSeparator(leadingItem) {
   let setSelfHighlightCallback;
   let setSelfUpdatePropsCallback;
   const LeadingSeparatorComponent = leadingItem.LeadingSeparatorComponent;
-  const arg1 = LeadingSeparatorComponent;
   const SeparatorComponent = leadingItem.SeparatorComponent;
-  const importDefault = SeparatorComponent;
   const cellKey = leadingItem.cellKey;
-  const dependencyMap = cellKey;
   ({ prevCellKey: closure_3, setSelfHighlightCallback } = leadingItem);
-  const callback = setSelfHighlightCallback;
-  ({ updateHighlightFor: closure_5, setSelfUpdatePropsCallback } = leadingItem);
-  let closure_6 = setSelfUpdatePropsCallback;
+  ({ updateHighlightFor: _objectWithoutProperties, setSelfUpdatePropsCallback } = leadingItem);
   ({ updatePropsFor: closure_7, inverted } = leadingItem);
   ({ item, index, section } = leadingItem);
-  const tmp = callback(first1(false), 2);
-  let closure_8 = tmp[1];
-  const tmp2 = callback(first1(false), 2);
-  let closure_9 = tmp2[1];
+  let tmp = setSelfHighlightCallback(first1(false), 2);
+  let _possibleConstructorReturn = tmp[1];
+  const tmp2 = setSelfHighlightCallback(first1(false), 2);
+  let _getPrototypeOf = tmp2[1];
   let obj = { leadingItem: leadingItem.leadingItem, leadingSection: leadingItem.leadingSection, section: leadingItem.section, trailingItem: leadingItem.item, trailingSection: leadingItem.trailingSection };
-  const tmp3 = callback(first1(obj), 2);
+  const tmp3 = setSelfHighlightCallback(first1(obj), 2);
   const first = tmp3[0];
-  let _classCallCheck = first;
-  const callback4 = tmp3[1];
+  const callback3 = tmp3[1];
   obj = { leadingItem: leadingItem.item, leadingSection: leadingItem.leadingSection, section: leadingItem.section, trailingItem: leadingItem.trailingItem, trailingSection: leadingItem.trailingSection };
-  const tmp5 = callback(first1(obj), 2);
-  const first1 = tmp5[0];
-  const tmp7 = tmp5[1];
-  const items = [cellKey, setSelfHighlightCallback, tmp7, setSelfUpdatePropsCallback];
-  callback4(() => {
-    setSelfHighlightCallback(cellKey, closure_9);
-    setSelfUpdatePropsCallback(cellKey, tmp7);
+  const tmp5 = setSelfHighlightCallback(first1(obj), 2);
+  first1 = tmp5[0];
+  const callback4 = tmp7;
+  const items = [cellKey, setSelfHighlightCallback, tmp5[1], setSelfUpdatePropsCallback];
+  callback3(() => {
+    setSelfHighlightCallback(cellKey, _getPrototypeOf);
+    setSelfUpdatePropsCallback(cellKey, closure_13);
     return () => {
-      callback2(closure_2, null);
-      callback(closure_2, null);
+      outer1_6(outer1_2, null);
+      outer1_4(outer1_2, null);
     };
   }, items);
   obj = {
@@ -89,22 +98,22 @@ function ItemWithSeparator(leadingItem) {
         }
         if (tmp) {
           const _Object = Object;
-          const tmp7 = tmp7(Object.assign({}, first1, arg1));
+          tmp7 = tmp7(Object.assign({}, first1, arg1));
         }
       }
     }
   };
   let tmp10 = null != LeadingSeparatorComponent;
   if (tmp10) {
-    const _Object = Object;
+    let _Object = Object;
     const obj1 = { highlighted: tmp[0] };
-    tmp10 = tmp7(LeadingSeparatorComponent, Object.assign(obj1, first));
+    tmp10 = callback4(LeadingSeparatorComponent, Object.assign(obj1, first));
   }
   let tmp13 = null != SeparatorComponent;
   if (tmp13) {
-    const _Object2 = Object;
+    let _Object2 = Object;
     const obj2 = { highlighted: tmp2[0] };
-    tmp13 = tmp7(SeparatorComponent, Object.assign(obj2, first1));
+    tmp13 = callback4(SeparatorComponent, Object.assign(obj2, first1));
   }
   let tmp16 = tmp10;
   if (!tmp10) {
@@ -131,21 +140,15 @@ function ItemWithSeparator(leadingItem) {
   obj3.children = items1;
   return closure_15(closure_14, obj3);
 }
-let closure_3 = [true, true, true, true, true, true, true];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-({ useEffect: closure_11, useState: closure_12 } = _defineProperties);
-({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = NativeEventEmitter);
+let closure_3 = ["ItemSeparatorComponent", "SectionSeparatorComponent", "renderItem", "renderSectionFooter", "renderSectionHeader", "sections", "stickySectionHeadersEnabled"];
+({ useEffect: closure_11, useState: closure_12 } = result);
+({ jsx: closure_13, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
 
-export default (PureComponent) => {
+export default ((PureComponent) => {
   class VirtualizedSectionList {
     constructor() {
       self = this;
-      tmp = closure_6(this, VirtualizedSectionList);
+      tmp = outer1_6(this, apply);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -153,19 +156,19 @@ export default (PureComponent) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_9(VirtualizedSectionList);
-      tmp3 = closure_8;
-      if (closure_16()) {
+      obj = outer1_9(apply);
+      tmp3 = outer1_8;
+      if (outer1_16()) {
         if (!combined) {
           combined = [];
         }
-        tmp5 = closure_9;
-        constructResult = Reflect.construct(obj, combined, closure_9(self).constructor);
+        tmp5 = outer1_9;
+        constructResult = Reflect.construct(obj, combined, outer1_9(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
       tmp3Result = tmp3(self, constructResult);
-      VirtualizedSectionList = tmp3Result;
+      apply = tmp3Result;
       tmp3Result._keyExtractor = (arg0, index) => {
         const _subExtractorResult = tmp3Result._subExtractor(index);
         let key = _subExtractorResult;
@@ -179,13 +182,13 @@ export default (PureComponent) => {
         return key;
       };
       tmp3Result._convertViewable = (index) => {
-        callback(closure_2[9])(null != index.index, "Received a broken ViewToken");
+        outer2_1(outer2_2[9])(null != index.index, "Received a broken ViewToken");
         const _subExtractorResult = tmp3Result._subExtractor(index.index);
         if (_subExtractorResult) {
           const keyExtractor = _subExtractorResult.section.keyExtractor;
           let keyExtractor2 = tmp3Result.props.keyExtractor;
           if (!keyExtractor2) {
-            keyExtractor2 = tmp3Result(closure_2[10]).keyExtractor;
+            keyExtractor2 = VirtualizedSectionList(outer2_2[10]).keyExtractor;
           }
           if (null != keyExtractor) {
             let keyExtractorResult = keyExtractor(index.item, _subExtractorResult.index);
@@ -220,60 +223,63 @@ export default (PureComponent) => {
           const result = onViewableItemsChanged(obj);
         }
       };
-      tmp3Result._renderItem = (arg0) => (index) => {
-        index = index.index;
-        const _subExtractorResult = index._subExtractor(index);
-        if (_subExtractorResult) {
-          const index2 = _subExtractorResult.index;
-          if (null == index2) {
-            const section = _subExtractorResult.section;
-            if (true === _subExtractorResult.header) {
-              const renderSectionHeader = index.props.renderSectionHeader;
-              let renderSectionHeaderResult = null;
-              if (renderSectionHeader) {
-                let obj = { section };
-                renderSectionHeaderResult = renderSectionHeader(obj);
+      tmp3Result._renderItem = (arg0) => {
+        let closure_0 = arg0;
+        return (index) => {
+          index = index.index;
+          const _subExtractorResult = closure_0._subExtractor(index);
+          if (_subExtractorResult) {
+            const index2 = _subExtractorResult.index;
+            if (null == index2) {
+              const section = _subExtractorResult.section;
+              if (true === _subExtractorResult.header) {
+                const renderSectionHeader = closure_0.props.renderSectionHeader;
+                let renderSectionHeaderResult = null;
+                if (renderSectionHeader) {
+                  let obj = { section };
+                  renderSectionHeaderResult = renderSectionHeader(obj);
+                }
+                return renderSectionHeaderResult;
+              } else {
+                const renderSectionFooter = closure_0.props.renderSectionFooter;
+                let renderSectionFooterResult = null;
+                if (renderSectionFooter) {
+                  obj = { section };
+                  renderSectionFooterResult = renderSectionFooter(obj);
+                }
+                return renderSectionFooterResult;
               }
-              return renderSectionHeaderResult;
             } else {
-              const renderSectionFooter = index.props.renderSectionFooter;
-              let renderSectionFooterResult = null;
-              if (renderSectionFooter) {
-                obj = { section };
-                renderSectionFooterResult = renderSectionFooter(obj);
+              let renderItem = _subExtractorResult.section.renderItem;
+              if (!renderItem) {
+                renderItem = closure_0.props.renderItem;
               }
-              return renderSectionFooterResult;
+              const result = closure_0._getSeparatorComponent(index, _subExtractorResult, closure_0);
+              outer3_1(outer3_2[9])(renderItem, "no renderItem!");
+              obj = { SeparatorComponent: result };
+              let prop;
+              if (0 === index2) {
+                prop = closure_0.props.SectionSeparatorComponent;
+              }
+              obj.LeadingSeparatorComponent = prop;
+              obj.cellKey = _subExtractorResult.key;
+              obj.index = index2;
+              obj.item = index.item;
+              ({ leadingItem: obj.leadingItem, leadingSection: obj.leadingSection } = _subExtractorResult);
+              obj.prevCellKey = closure_0._subExtractor(index - 1) || {}.key;
+              obj.setSelfHighlightCallback = closure_0._setUpdateHighlightFor;
+              obj.setSelfUpdatePropsCallback = closure_0._setUpdatePropsFor;
+              obj.updateHighlightFor = closure_0._updateHighlightFor;
+              obj.updatePropsFor = closure_0._updatePropsFor;
+              obj.renderItem = renderItem;
+              ({ section: obj.section, trailingItem: obj.trailingItem, trailingSection: obj.trailingSection } = _subExtractorResult);
+              obj.inverted = closure_0.props.inverted;
+              return outer3_13(outer3_17, obj);
             }
           } else {
-            let renderItem = _subExtractorResult.section.renderItem;
-            if (!renderItem) {
-              renderItem = index.props.renderItem;
-            }
-            const result = index._getSeparatorComponent(index, _subExtractorResult, index);
-            callback(closure_2[9])(renderItem, "no renderItem!");
-            obj = { SeparatorComponent: result };
-            let prop;
-            if (0 === index2) {
-              prop = index.props.SectionSeparatorComponent;
-            }
-            obj.LeadingSeparatorComponent = prop;
-            obj.cellKey = _subExtractorResult.key;
-            obj.index = index2;
-            obj.item = index.item;
-            ({ leadingItem: obj.leadingItem, leadingSection: obj.leadingSection } = _subExtractorResult);
-            obj.prevCellKey = index._subExtractor(index - 1) || {}.key;
-            obj.setSelfHighlightCallback = index._setUpdateHighlightFor;
-            obj.setSelfUpdatePropsCallback = index._setUpdatePropsFor;
-            obj.updateHighlightFor = index._updateHighlightFor;
-            obj.updatePropsFor = index._updatePropsFor;
-            obj.renderItem = renderItem;
-            ({ section: obj.section, trailingItem: obj.trailingItem, trailingSection: obj.trailingSection } = _subExtractorResult);
-            obj.inverted = index.props.inverted;
-            return closure_13(closure_17, obj);
+            return null;
           }
-        } else {
-          return null;
-        }
+        };
       };
       tmp3Result._updatePropsFor = (arg0, arg1) => {
         if (null != tmp3Result._updatePropsMap[arg0]) {
@@ -290,7 +296,7 @@ export default (PureComponent) => {
           tmp3Result._updateHighlightMap[arg0] = arg1;
         } else {
           const _updateHighlightFor = tmp3Result._updateHighlightFor;
-          delete r0[r2];
+          delete tmp[tmp2];
         }
       };
       tmp3Result._setUpdatePropsFor = (arg0, arg1) => {
@@ -298,19 +304,18 @@ export default (PureComponent) => {
           tmp3Result._updatePropsMap[arg0] = arg1;
         } else {
           const _updatePropsMap = tmp3Result._updatePropsMap;
-          delete r0[r2];
+          delete tmp[tmp2];
         }
       };
       tmp3Result._updateHighlightMap = {};
       tmp3Result._updatePropsMap = {};
       tmp3Result._captureRef = (_listRef) => {
-        tmp3Result._listRef = _listRef;
+        closure_0._listRef = _listRef;
       };
       return tmp3Result;
     }
   }
-  const arg1 = VirtualizedSectionList;
-  callback3(VirtualizedSectionList, PureComponent);
+  callback2(VirtualizedSectionList, PureComponent);
   let obj = {
     key: "scrollToLocation",
     value: function scrollToLocation(itemIndex) {
@@ -345,7 +350,7 @@ export default (PureComponent) => {
       }
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "getListRef",
     value: function getListRef() {
@@ -363,8 +368,8 @@ export default (PureComponent) => {
       let renderSectionHeader;
       let sections;
       let stickySectionHeadersEnabled;
-      const self = this;
-      const VirtualizedSectionList = this;
+      let self = this;
+      self = this;
       const props = this.props;
       ({ ItemSeparatorComponent, SectionSeparatorComponent, renderItem, renderSectionFooter, renderSectionHeader, sections, stickySectionHeadersEnabled } = props);
       let num = 0;
@@ -396,10 +401,10 @@ export default (PureComponent) => {
         let tmp13 = nextResult;
         sum1 = sum + props2.getItemCount(tmp4.data);
         num2 = sum1;
-        // continue
+        continue;
       }
-      const tmp = callback(props, closure_3);
-      const tmp2 = num;
+      const tmp = outer1_5(props, outer1_3);
+      tmp2 = num;
       const obj = {
         keyExtractor: self._keyExtractor,
         stickyHeaderIndices: items,
@@ -414,13 +419,13 @@ export default (PureComponent) => {
       };
       let prop;
       const _renderItemResult = self._renderItem(num2);
-      const tmp16 = closure_13;
+      const tmp16 = outer1_13;
       if (self.props.onViewableItemsChanged) {
         prop = self._onViewableItemsChanged;
       }
       obj.onViewableItemsChanged = prop;
       obj.ref = self._captureRef;
-      return tmp16(sum1(closure_2[11]), Object.assign({}, tmp, obj));
+      return tmp16(outer1_1(outer1_2[11]), Object.assign({}, tmp, obj));
     }
   };
   items[2] = obj;
@@ -490,7 +495,7 @@ export default (PureComponent) => {
             keyExtractor = tmp2;
           }
           if (!keyExtractor) {
-            keyExtractor = VirtualizedSectionList(closure_2[10]).keyExtractor;
+            keyExtractor = VirtualizedSectionList(outer1_2[10]).keyExtractor;
           }
           obj.key = text + keyExtractor(getItem(data, diff), diff);
           obj.index = diff;
@@ -505,7 +510,7 @@ export default (PureComponent) => {
   };
   items[5] = {
     key: "_getSeparatorComponent",
-    value: function _getSeparatorComponent(index, _subExtractorResult, arg2) {
+    value: function _getSeparatorComponent(index, _subExtractorResult, closure_0) {
       const self = this;
       if (!_subExtractorResult) {
         _subExtractorResult = self._subExtractor(index);
@@ -513,7 +518,7 @@ export default (PureComponent) => {
       if (_subExtractorResult) {
         let SectionSeparatorComponent = self.props.SectionSeparatorComponent;
         const props = self.props;
-        const diff = arg2 - 1;
+        const diff = closure_0 - 1;
         const tmp6 = _subExtractorResult.index === props.getItemCount(_subExtractorResult.section.data) - 1;
         if (!SectionSeparatorComponent) {
           let tmp7 = null;
@@ -534,5 +539,5 @@ export default (PureComponent) => {
       }
     }
   };
-  return callback2(VirtualizedSectionList, items);
-}(require("_defineProperties").PureComponent);
+  return callback(VirtualizedSectionList, items);
+})(require("result").PureComponent);

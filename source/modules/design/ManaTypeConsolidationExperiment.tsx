@@ -1,15 +1,15 @@
-// Module ID: 13378
-// Function ID: 101685
+// Module ID: 13492
+// Function ID: 103841
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: useManaTypeConsolidationExperiment
 
-// Module 13378 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/design/ManaTypeConsolidationExperiment.tsx");
+// Module 13492 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-05-mana-type-consolidation", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/design/ManaTypeConsolidationExperiment.tsx");
 
 export default apexExperiment;
 export const useManaTypeConsolidationExperiment = function useManaTypeConsolidationExperiment(RootThemeContextProvider) {

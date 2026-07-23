@@ -1,9 +1,17 @@
-// Module ID: 9428
-// Function ID: 73403
+// Module ID: 9435
+// Function ID: 73444
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 33, 5290, 7588, 2]
 
-// Module 9428 (_isNativeReflectConstruct)
+// Module 9435 (_isNativeReflectConstruct)
+import jsxProd from "jsxProd";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,69 +21,64 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const jsx = arg1(dependencyMap[6]).jsx;
-const tmp3 = (Component) => {
+const tmp3 = ((Component) => {
   class SwipeableFastList {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_2(this, SwipeableFastList);
+      tmp = outer1_2(this, apply);
       items1 = [...items];
-      obj = closure_5(SwipeableFastList);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      obj = outer1_5(apply);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items1, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      SwipeableFastList = tmp2Result;
+      apply = tmp2Result;
       tmp2Result._shouldBounceFirstRowOnMount = tmp2Result.props.bounceFirstRowOnMount;
       tmp2Result._openRowKey = null;
       tmp2Result._refs = {};
       tmp2Result._bounceTimeout = null;
       tmp2Result.renderRow = (arg0, arg1, arg2) => {
-        const props = tmp2Result.props;
+        let closure_1 = arg1;
+        let props = tmp2Result.props;
         const renderQuickActions = props.renderQuickActions;
-        let closure_3 = "" + arg0 + ":" + arg1;
-        let closure_4 = false;
+        let _isNativeReflectConstruct = "" + arg0 + ":" + arg1;
+        let c4 = false;
         if (arg0._shouldBounceFirstRowOnMount) {
           tmp2Result._shouldBounceFirstRowOnMount = false;
-          closure_4 = true;
+          c4 = true;
         }
         const obj = {
           renderRightActions(showRightAction, transX, self) {
-            return renderQuickActions(showRightAction, transX);
+            return renderQuickActions(closure_0, closure_1);
           },
-          ref(self) {
-            self._refs[closure_3] = self;
+          ref(arg0) {
+            closure_0._refs[_isNativeReflectConstruct] = arg0;
             if (tmp) {
-              self.bounceSwipeable(self);
-              if (null != self.props.onBounceSwipable) {
-                const props = self.props;
+              closure_0.bounceSwipeable(arg0);
+              if (null != closure_0.props.onBounceSwipable) {
+                const props = closure_0.props;
                 props.onBounceSwipable();
               }
             }
           },
           overshootFriction: 8,
           onSwipeableWillOpen(left) {
-            return left.handleOpen(closure_3);
+            return closure_0.handleOpen(_isNativeReflectConstruct);
           },
-          onSwipeableClose(arg0, arg1) {
-            return arg0.handleClose(closure_3);
+          onSwipeableClose(arg0, closure_0) {
+            return closure_0.handleClose(_isNativeReflectConstruct);
           },
           useNativeAnimations: true,
           children: props.renderItem(arg0, arg1, arg2)
         };
-        return callback(arg0(arg1[7]), obj);
+        return outer2_7(SwipeableFastList(outer2_1[7]), obj);
       };
       tmp2Result.handleScroll = (arg0) => {
         tmp2Result.closeOpenRow();
@@ -87,7 +90,6 @@ const tmp3 = (Component) => {
       return tmp2Result;
     }
   }
-  const importDefault = SwipeableFastList;
   callback2(SwipeableFastList, Component);
   let obj = {
     key: "componentWillUnmount",
@@ -98,20 +100,21 @@ const tmp3 = (Component) => {
       }
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "bounceSwipeable",
     value(arg0) {
-      const self = this;
-      const SwipeableFastList = this;
+      let self = this;
+      self = this;
+      let closure_1 = arg0;
       if (null != this._bounceTimeout) {
         const _clearTimeout = clearTimeout;
         clearTimeout(self._bounceTimeout);
       }
       self._bounceTimeout = setTimeout(() => {
-        arg0.openRight();
+        closure_1.openRight();
         self._bounceTimeout = setTimeout(() => {
-          closure_1.close();
+          outer1_1.close();
         }, 400);
       }, 700);
     }
@@ -153,18 +156,17 @@ const tmp3 = (Component) => {
       const merged = Object.assign(this.props);
       obj["onScroll"] = this.handleScroll;
       obj["renderItem"] = this.renderRow;
-      return callback3(SwipeableFastList(closure_1[8]), obj);
+      return outer1_7(SwipeableFastList(outer1_1[8]), obj);
     }
   };
   return callback(SwipeableFastList, items);
-}(importAll(dependencyMap[5]).Component);
+})(require("result").Component);
 tmp3.defaultProps = {
   bounceFirstRowOnMount: true,
-  renderQuickActions(arg0, arg1) {
+  renderQuickActions(closure_0, closure_1) {
     return null;
   }
 };
-const importAllResult = importAll(dependencyMap[5]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("components_native/common/SwipeableFastList.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/common/SwipeableFastList.tsx");
 
 export default tmp3;

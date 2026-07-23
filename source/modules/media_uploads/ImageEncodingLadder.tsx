@@ -1,9 +1,13 @@
-// Module ID: 4696
-// Function ID: 40909
+// Module ID: 4699
+// Function ID: 40927
 // Name: getAdaptiveImageCompressionQuality
-// Dependencies: []
+// Dependencies: [6, 7, 653, 2]
 
-// Module 4696 (getAdaptiveImageCompressionQuality)
+// Module 4699 (getAdaptiveImageCompressionQuality)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import { CompressionQuality } from "ME";
+
 function getAdaptiveImageCompressionQuality(size, ADAPTIVE_COMPRESSION_CONFIG) {
   if (ADAPTIVE_COMPRESSION_CONFIG.useAdaptiveCompression) {
     if (null != size.width) {
@@ -47,19 +51,15 @@ function getAdaptiveImageCompressionQuality(size, ADAPTIVE_COMPRESSION_CONFIG) {
     return CompressionQuality.HIGH;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const CompressionQuality = arg1(dependencyMap[2]).CompressionQuality;
-let obj = {};
-obj = {};
-const tmp2 = () => {
+let obj = { SMALL: 921600, MEDIUM: 2073600, LARGE: 3686400, VERY_LARGE: 8294400 };
+obj = { useAdaptiveCompression: true, veryHighQuality: 0.8, highQuality: 0.7, mediumQuality: 0.6, lowQuality: 0.5, veryLowQuality: 0.4, useOriginalIfSmaller: true };
+const tmp2 = (() => {
   class ImageEncodingLadder {
     constructor() {
       tmp = ImageEncodingLadder(this, ImageEncodingLadder);
       return;
     }
   }
-  let closure_0 = ImageEncodingLadder;
   let obj = {
     key: "selectEncodingConfig",
     value(width) {
@@ -70,14 +70,14 @@ const tmp2 = () => {
         if (width.height === targetHeight) {
           let obj = {};
           obj = { width: targetWidth, height: targetHeight };
-          obj.compressionQuality = 100 * callback(obj, lowQuality);
+          obj.compressionQuality = 100 * outer1_5(obj, outer1_4);
           obj.targetWidth = targetWidth;
           obj.targetHeight = targetHeight;
         }
         return obj;
       }
       obj = {};
-      const lowQuality = lowQuality.lowQuality;
+      const lowQuality = outer1_4.lowQuality;
       let num = 0.5;
       if (null != lowQuality) {
         num = lowQuality;
@@ -108,8 +108,8 @@ const tmp2 = () => {
   };
   items[1] = obj;
   return callback(ImageEncodingLadder, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/media_uploads/ImageEncodingLadder.tsx");
+})();
+let result = require("ME").fileFinishedImporting("modules/media_uploads/ImageEncodingLadder.tsx");
 
 export const IMAGE_COMPRESSION_THRESHOLDS = obj;
 export const ADAPTIVE_COMPRESSION_CONFIG = obj;

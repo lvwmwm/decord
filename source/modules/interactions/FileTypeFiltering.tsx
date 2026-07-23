@@ -1,53 +1,58 @@
-// Module ID: 11271
-// Function ID: 87710
+// Module ID: 11281
+// Function ID: 87760
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 1921, 477, 1212, 566, 4470, 2]
 // Exports: getFileTypeFiltering, useFileTypeFiltering
 
-// Module 11271 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11281 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -108,18 +113,18 @@ function getExtensionsForFileTypes(arr) {
         HermesBuiltin.apply(items2, mapped);
       }
       const _Set = Set;
-      const obj = arg1(dependencyMap[3]);
+      const obj = require(477) /* set */;
       const set = new Set(mapped);
       const _Object = Object;
-      const entries = Object.entries(arg1(dependencyMap[3]).isIOS() ? closure_9 : closure_10);
+      const entries = Object.entries(require(477) /* set */.isIOS() ? closure_9 : closure_10);
       let num7 = 0;
       if (0 < entries.length) {
         do {
-          let tmp34 = closure_3;
-          let tmp35 = closure_3(entries[num7], 2);
-          let tmp37 = closure_11;
+          let tmp34 = callback;
+          let tmp35 = callback(entries[num7], 2);
+          let tmp37 = _createForOfIteratorHelperLoose;
           let hasItem = set.has(tmp35[0]);
-          let tmp38 = closure_11(tmp35[1]);
+          let tmp38 = _createForOfIteratorHelperLoose(tmp35[1]);
           let iter = tmp38();
           let done = iter.done;
           if (hasItem) {
@@ -137,7 +142,7 @@ function getExtensionsForFileTypes(arr) {
                 tmp40 = tmp38;
                 tmp41 = tmp32;
                 tmp42 = tmp33;
-                let done2 = iter5.done;
+                done2 = iter5.done;
               } while (!done2);
             }
           } else {
@@ -157,10 +162,10 @@ function getExtensionsForFileTypes(arr) {
             }
           }
           num7 = num7 + 1;
-          let tmp30 = tmp39;
-          let tmp31 = tmp40;
-          let tmp32 = tmp41;
-          let tmp33 = tmp42;
+          tmp30 = tmp39;
+          tmp31 = tmp40;
+          tmp32 = tmp41;
+          tmp33 = tmp42;
         } while (num7 < entries.length);
       }
       const _Array = Array;
@@ -178,16 +183,16 @@ function fileTypesFormattedStringHelper(arr, locale) {
       const listFormat = new ListFormat(locale, obj);
       const items = [];
       if (arr.includes("image")) {
-        const intl = locale(dependencyMap[4]).intl;
-        items.push(intl.string(locale(dependencyMap[4]).t.0r2WwT));
+        const intl = require(1212) /* getSystemLocale */.intl;
+        items.push(intl.string(require(1212) /* getSystemLocale */.t["0r2WwT"]));
       }
       if (arr.includes("video")) {
-        const intl2 = locale(dependencyMap[4]).intl;
-        items.push(intl2.string(locale(dependencyMap[4]).t.al+5qH));
+        const intl2 = require(1212) /* getSystemLocale */.intl;
+        items.push(intl2.string(require(1212) /* getSystemLocale */.t["al+5qH"]));
       }
       if (arr.includes("audio")) {
-        const intl3 = locale(dependencyMap[4]).intl;
-        items.push(intl3.string(locale(dependencyMap[4]).t.Kzll3E));
+        const intl3 = require(1212) /* getSystemLocale */.intl;
+        items.push(intl3.string(require(1212) /* getSystemLocale */.t.Kzll3E));
       }
       const push = items.push;
       const found = arr.filter((str) => str.startsWith("."));
@@ -204,82 +209,78 @@ function fileTypesFormattedStringHelper(arr, locale) {
   return null;
 }
 function useFileTypesFormattedString(fileTypes) {
-  const arg1 = fileTypes;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => locale.locale);
-  const importDefault = stateFromStores;
+  const _require = fileTypes;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.locale);
   const items1 = [fileTypes, stateFromStores];
-  return React.useMemo(() => callback(arg0, stateFromStores), items1);
+  return React.useMemo(() => outer1_14(closure_0, stateFromStores), items1);
 }
 function validateFilenamesForExtensions(arr) {
+  let closure_0 = arg1;
   return 0 === arg1.length || arr.every((arg0) => {
-    const arg1 = arg0;
-    return arg1.some((arg0) => {
-      const formatted = arg0.toLowerCase();
+    let closure_0 = arg0;
+    return closure_0.some((arg0) => {
+      const formatted = closure_0.toLowerCase();
       return formatted.endsWith("." + arg0);
     });
   });
 }
 function showInvalidFileTypeAlertForTypes(types) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(4470);
   obj = {};
-  const intl = arg1(dependencyMap[4]).intl;
-  obj.title = intl.string(arg1(dependencyMap[4]).t.azO1Pe);
-  const intl2 = arg1(dependencyMap[4]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.azO1Pe);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
   obj = { types };
-  obj.body = intl2.formatToPlainString(arg1(dependencyMap[4]).t.5U9LSo, obj);
+  obj.body = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["5U9LSo"], obj);
   obj.show(obj);
 }
 function areMediaFilesAllowed(arr) {
   return 0 === arr.length || arr.some((arg0) => {
-    let hasItem = closure_6.includes(arg0);
+    let hasItem = outer1_6.includes(arg0);
     if (!hasItem) {
-      hasItem = closure_7.includes(arg0);
+      hasItem = outer1_7.includes(arg0);
     }
     return hasItem;
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = [];
-let closure_7 = [90, 87, 83, "mkv"];
-let closure_8 = [481036352, 712729690, 2095984960, 979252543, -919453646, 446676598];
-let closure_9 = { jpg: [true, true, true, true], mov: [true, true] };
-let closure_10 = { jpg: [1616805217, -644393804], mp4: ["Object", "String"] };
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/interactions/FileTypeFiltering.tsx");
+let closure_6 = ["png", "gif", "jpg", "jpeg", "jfif", "webp", "avif"];
+let closure_7 = ["mp4", "mov", "qt", "webm"];
+let closure_8 = ["mp3", "m4a", "wav", "ogg", "opus", "flac"];
+let closure_9 = { jpg: ["jpeg", "jfif", "heic", "heif"], mov: ["mp4", "qt"] };
+let closure_10 = { jpg: ["jpeg", "jfif"], mp4: ["mov", "qt"] };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/interactions/FileTypeFiltering.tsx");
 
 export { useFileTypesFormattedString };
 export const getFileTypeFiltering = function getFileTypeFiltering(fileTypes) {
   const tmp = getExtensionsForFileTypes(fileTypes);
-  const arg1 = tmp;
+  const require = tmp;
   const tmp2 = fileTypesFormattedStringHelper(fileTypes, locale.locale);
   const importDefault = tmp2;
   return {
     allowedExtensions: tmp,
     typesFormattedString: tmp2,
     validateFilenames(arg0) {
-      return callback(arg0, tmp);
+      return outer1_16(arg0, closure_0);
     },
     showInvalidFileTypeAlert() {
-      callback2(tmp2);
+      outer1_17(closure_1);
     },
     mediaFilesAllowed: areMediaFilesAllowed(tmp)
   };
 };
 export const useFileTypeFiltering = function useFileTypeFiltering(fileTypes) {
-  const arg1 = fileTypes;
+  let closure_0 = fileTypes;
   const items = [fileTypes];
-  const memo = React.useMemo(() => callback(arg0), items);
-  const importDefault = memo;
+  const memo = React.useMemo(() => outer1_13(closure_0), items);
   const tmp2 = useFileTypesFormattedString(fileTypes);
   const dependencyMap = tmp2;
   const items1 = [memo];
   const items2 = [tmp2];
-  const callback = React.useCallback((arg0) => callback2(arg0, memo), items1);
+  const callback = React.useCallback((arg0) => outer1_16(arg0, memo), items1);
   const items3 = [memo];
   const callback1 = React.useCallback(() => {
-    callback3(tmp2);
+    outer1_17(closure_2);
   }, items2);
-  return { allowedExtensions: memo, typesFormattedString: tmp2, validateFilenames: callback, showInvalidFileTypeAlert: callback1, mediaFilesAllowed: React.useMemo(() => callback4(memo), items3) };
+  return { allowedExtensions: memo, typesFormattedString: tmp2, validateFilenames: callback, showInvalidFileTypeAlert: callback1, mediaFilesAllowed: React.useMemo(() => outer1_18(memo), items3) };
 };

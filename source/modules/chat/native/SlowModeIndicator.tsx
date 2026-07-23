@@ -1,33 +1,34 @@
-// Module ID: 11363
-// Function ID: 88370
-// Dependencies: []
+// Module ID: 11373
+// Function ID: 88420
+// Dependencies: [31, 6928, 33, 4130, 689, 566, 6929, 3831, 10875, 4660, 4126, 2]
 
-// Module 11363
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let obj = { container: { width: true, marginHorizontal: true } };
-obj = { marginLeft: importDefault(dependencyMap[4]).space.PX_4 };
+// Module 11373
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let obj = { container: { alignItems: "center", flexDirection: "row" } };
+obj = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
 obj.icon = obj;
-let closure_7 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function SlowModeIndicator(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   const hasTypingText = channel.hasTypingText;
-  const importDefault = hasTypingText;
   const slowmodeType = channel.slowmodeType;
-  const dependencyMap = slowmodeType;
   const tmp = callback3();
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_4];
+  let obj = channel(slowmodeType[5]);
+  const items = [canBypassSlowmode];
   const stateFromStores = obj.useStateFromStores(items, () => canBypassSlowmode.getSlowmodeCooldownGuess(channel.id, slowmodeType));
-  const canBypassSlowmode = arg1(dependencyMap[6]).useCanBypassSlowmode(channel, slowmodeType);
-  closure_4 = canBypassSlowmode;
+  let obj1 = channel(slowmodeType[6]);
+  canBypassSlowmode = obj1.useCanBypassSlowmode(channel, slowmodeType);
   const items1 = [hasTypingText, canBypassSlowmode, stateFromStores];
   const items2 = [channel.rateLimitPerUser];
-  const memo = importAllResult.useMemo(() => {
+  const memo = stateFromStores.useMemo(() => {
     if (hasTypingText) {
       if (!canBypassSlowmode) {
         let slowmodeIndicatorText = null;
@@ -36,18 +37,19 @@ const memoResult = importAllResult.memo(function SlowModeIndicator(channel) {
     }
     slowmodeIndicatorText = channel(slowmodeType[6]).getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode);
   }, items1);
-  const callback = importAllResult.useCallback(() => {
+  const callback = stateFromStores.useCallback(() => {
     let obj = hasTypingText(slowmodeType[7]);
     obj = { key: "CHANNEL_SLOWMODE_INFO", IconComponent: channel(slowmodeType[8]).TimerIcon, content: channel(slowmodeType[6]).getSlowmodeDescription(channel.rateLimitPerUser) };
     obj.open(obj);
   }, items2);
   obj = { onPress: callback, style: tmp.container };
-  const items3 = [callback(arg1(dependencyMap[10]).Text, { children: memo }), ];
-  obj = { style: tmp.icon, size: "xxs" };
-  items3[1] = callback(arg1(dependencyMap[8]).TimerIcon, obj);
+  obj = { lineClamp: 1, allowFontScaling: false, variant: "text-xs/medium", color: "interactive-text-default", children: memo };
+  const items3 = [callback(channel(slowmodeType[10]).Text, obj), ];
+  obj1 = { style: tmp.icon, size: "xxs" };
+  items3[1] = callback(channel(slowmodeType[8]).TimerIcon, obj1);
   obj.children = items3;
-  return callback2(arg1(dependencyMap[9]).PressableOpacity, obj);
+  return callback2(channel(slowmodeType[9]).PressableOpacity, obj);
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/chat/native/SlowModeIndicator.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/chat/native/SlowModeIndicator.tsx");
 
 export default memoResult;

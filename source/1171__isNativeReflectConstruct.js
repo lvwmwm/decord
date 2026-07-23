@@ -1,10 +1,28 @@
 // Module ID: 1171
-// Function ID: 13314
+// Function ID: 13315
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1172, 978, 1173, 794, 1175, 1176, 1109, 1180, 1178, 1181]
 
 // Module 1171 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import closure_3 from "isModalSupported";
+import defaultButtonStyles from "defaultButtonStyles";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import isModalSupported from "isModalSupported";
+
 let Platform;
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,44 +32,37 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-({ Animated: closure_8, Appearance: closure_9, Dimensions: closure_10, Easing: closure_11, Modal: closure_12, PanResponder: closure_13, Platform, ScrollView: closure_14, View: closure_15 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-let closure_16 = arg1(dependencyMap[7]).isNativeDriverSupportedForColorAnimations();
+({ Animated: closure_8, Appearance: closure_9, Dimensions: closure_10, Easing: closure_11, Modal: closure_12, PanResponder: closure_13, Platform, ScrollView: closure_14, View: closure_15 } = get_ActivityIndicator);
+isModalSupported = isModalSupported.isNativeDriverSupportedForColorAnimations();
 
-export const FeedbackWidgetProvider = (Component) => {
+export const FeedbackWidgetProvider = ((Component) => {
   class FeedbackWidgetProvider {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, FeedbackWidgetProvider);
+      tmp = outer1_2(this, apply);
       items = [];
       items[0] = Component;
-      obj = closure_5(FeedbackWidgetProvider);
-      tmp2 = closure_4;
-      if (closure_17()) {
+      obj = outer1_5(apply);
+      tmp2 = outer1_4;
+      if (outer1_17()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      FeedbackWidgetProvider = tmp2Result;
-      obj = { accessibilityRole: 29709198, kind: 1156269291, kind: -336183039, body: -347013119, position: 1077828, accessibilityRole: 655360 };
-      value = new closure_8.Value(0);
+      apply = tmp2Result;
+      obj = { isButtonVisible: false, isScreenshotButtonVisible: false, isVisible: false, backgroundOpacity: null, panY: null, isScrollAtTop: true };
+      value = new outer1_8.Value(0);
       obj.backgroundOpacity = value;
-      value1 = new closure_8.Value(closure_10.get("screen").height);
+      value1 = new outer1_8.Value(outer1_10.get("screen").height);
       obj.panY = value1;
       tmp2Result.state = obj;
       obj1 = {
         onStartShouldSetPanResponder(arg0, dy) {
-              let isScrollAtTop = tmp2Result(closure_1[8]).notWeb();
+              let isScrollAtTop = FeedbackWidgetProvider(outer2_1[8]).notWeb();
               if (isScrollAtTop) {
                 isScrollAtTop = tmp2Result.state.isScrollAtTop;
               }
@@ -61,7 +72,7 @@ export const FeedbackWidgetProvider = (Component) => {
               return isScrollAtTop;
             },
         onMoveShouldSetPanResponder(arg0, dy) {
-              let isScrollAtTop = tmp2Result(closure_1[8]).notWeb();
+              let isScrollAtTop = FeedbackWidgetProvider(outer2_1[8]).notWeb();
               if (isScrollAtTop) {
                 isScrollAtTop = tmp2Result.state.isScrollAtTop;
               }
@@ -77,19 +88,19 @@ export const FeedbackWidgetProvider = (Component) => {
               }
             },
         onPanResponderRelease(arg0, dy) {
-              if (dy.dy > tmp2Result(closure_1[9]).PULL_DOWN_CLOSE_THRESHOLD) {
-                const obj = { toValue: store.get("screen").height, duration: tmp2Result(closure_1[9]).SLIDE_ANIMATION_DURATION, useNativeDriver: true };
-                closure_8.timing(tmp2Result.state.panY, obj).start(() => {
-                  closure_0._handleClose();
+              if (dy.dy > FeedbackWidgetProvider(outer2_1[9]).PULL_DOWN_CLOSE_THRESHOLD) {
+                const obj = { toValue: outer2_10.get("screen").height, duration: FeedbackWidgetProvider(outer2_1[9]).SLIDE_ANIMATION_DURATION, useNativeDriver: true };
+                outer2_8.timing(tmp2Result.state.panY, obj).start(() => {
+                  outer1_0._handleClose();
                 });
-                const timingResult = closure_8.timing(tmp2Result.state.panY, obj);
+                const timingResult = outer2_8.timing(tmp2Result.state.panY, obj);
               } else {
-                closure_8.spring(tmp2Result.state.panY, { GestureHandlerRootView: null, ctaOnHover: null }).start();
-                const springResult = closure_8.spring(tmp2Result.state.panY, { GestureHandlerRootView: null, ctaOnHover: null });
+                outer2_8.spring(tmp2Result.state.panY, { toValue: 0, useNativeDriver: true }).start();
+                const springResult = outer2_8.spring(tmp2Result.state.panY, { toValue: 0, useNativeDriver: true });
               }
             }
       };
-      tmp2Result._panResponder = closure_13.create(obj1);
+      tmp2Result._panResponder = outer1_13.create(obj1);
       tmp2Result._handleScroll = (nativeEvent) => {
         tmp2Result.setState({ isScrollAtTop: nativeEvent.nativeEvent.contentOffset.y <= 0 });
       };
@@ -97,20 +108,20 @@ export const FeedbackWidgetProvider = (Component) => {
         let parallel;
         let timing;
         function updateState() {
-          arg0.setState({ isVisible: arg0 });
+          state.setState({ isVisible: state });
         }
         if (arg0) {
           updateState();
         } else {
           let obj = {};
-          ({ parallel, timing } = closure_8);
-          obj.toValue = store.get("screen").height;
-          obj.duration = tmp2Result(updateState[9]).SLIDE_ANIMATION_DURATION;
+          ({ parallel, timing } = outer2_8);
+          obj.toValue = outer2_10.get("screen").height;
+          obj.duration = FeedbackWidgetProvider(outer2_1[9]).SLIDE_ANIMATION_DURATION;
           obj.useNativeDriver = true;
-          obj.easing = closure_11.out(closure_11.quad);
+          obj.easing = outer2_11.out(outer2_11.quad);
           const items = [timing(tmp2Result.state.panY, obj), ];
-          obj = { toValue: 0, duration: tmp2Result(updateState[9]).BACKGROUND_ANIMATION_DURATION, useNativeDriver: closure_16, easing: closure_11.out(closure_11.quad) };
-          items[1] = closure_8.timing(tmp2Result.state.backgroundOpacity, obj);
+          obj = { toValue: 0, duration: FeedbackWidgetProvider(outer2_1[9]).BACKGROUND_ANIMATION_DURATION, useNativeDriver: outer2_16, easing: outer2_11.out(outer2_11.quad) };
+          items[1] = outer2_8.timing(tmp2Result.state.backgroundOpacity, obj);
           parallel(items).start(() => {
             updateState();
           });
@@ -124,30 +135,29 @@ export const FeedbackWidgetProvider = (Component) => {
         tmp2Result.setState({ isScreenshotButtonVisible });
       };
       tmp2Result._handleClose = () => {
-        const FeedbackWidgetManager = tmp2Result(closure_1[9]).FeedbackWidgetManager;
+        const FeedbackWidgetManager = FeedbackWidgetProvider(outer2_1[9]).FeedbackWidgetManager;
         FeedbackWidgetManager.hide();
       };
-      FeedbackButtonManager = FeedbackWidgetProvider(closure_1[9]).FeedbackButtonManager;
+      FeedbackButtonManager = FeedbackWidgetProvider(outer1_1[9]).FeedbackButtonManager;
       initializeResult = FeedbackButtonManager.initialize(tmp2Result._setButtonVisibilityFunction);
-      ScreenshotButtonManager = FeedbackWidgetProvider(closure_1[9]).ScreenshotButtonManager;
+      ScreenshotButtonManager = FeedbackWidgetProvider(outer1_1[9]).ScreenshotButtonManager;
       initializeResult1 = ScreenshotButtonManager.initialize(tmp2Result._setScreenshotButtonVisibilityFunction);
-      FeedbackWidgetManager = FeedbackWidgetProvider(closure_1[9]).FeedbackWidgetManager;
+      FeedbackWidgetManager = FeedbackWidgetProvider(outer1_1[9]).FeedbackWidgetManager;
       initializeResult2 = FeedbackWidgetManager.initialize(tmp2Result._setVisibilityFunction);
       return tmp2Result;
     }
   }
-  const arg1 = FeedbackWidgetProvider;
   callback2(FeedbackWidgetProvider, Component);
   let obj = {
     key: "componentDidMount",
     value: function componentDidMount() {
-      const FeedbackWidgetProvider = this;
-      this._themeListener = closure_9.addChangeListener(() => {
+      const self = this;
+      this._themeListener = outer1_9.addChangeListener(() => {
         self.forceUpdate();
       });
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
@@ -167,15 +177,15 @@ export const FeedbackWidgetProvider = (Component) => {
       if (!isVisible.isVisible) {
         if (self.state.isVisible) {
           let obj = { toValue: 1 };
-          ({ parallel, timing } = RN);
-          obj.duration = FeedbackWidgetProvider(closure_1[9]).BACKGROUND_ANIMATION_DURATION;
-          obj.useNativeDriver = closure_16;
-          obj.easing = closure_11.in(closure_11.quad);
+          ({ parallel, timing } = outer1_8);
+          obj.duration = FeedbackWidgetProvider(outer1_1[9]).BACKGROUND_ANIMATION_DURATION;
+          obj.useNativeDriver = outer1_16;
+          obj.easing = outer1_11.in(outer1_11.quad);
           const items = [timing(self.state.backgroundOpacity, obj), ];
-          obj = { "Bool(false)": "httpServerLocation", "Bool(false)": "hash", "Bool(false)": "httpServerLocation", duration: FeedbackWidgetProvider(closure_1[9]).SLIDE_ANIMATION_DURATION, easing: closure_11.in(closure_11.quad) };
-          items[1] = RN.timing(self.state.panY, obj);
+          obj = { toValue: 0, duration: FeedbackWidgetProvider(outer1_1[9]).SLIDE_ANIMATION_DURATION, useNativeDriver: true, easing: outer1_11.in(outer1_11.quad) };
+          items[1] = outer1_8.timing(self.state.panY, obj);
           parallel(items).start(() => {
-            const debug = callback(closure_1[10]).debug;
+            const debug = FeedbackWidgetProvider(outer2_1[10]).debug;
             debug.log("FeedbackWidgetProvider componentDidUpdate");
           });
           const parallelResult = parallel(items);
@@ -200,54 +210,54 @@ export const FeedbackWidgetProvider = (Component) => {
       let isScreenshotButtonVisible;
       let isVisible;
       const self = this;
-      let obj = FeedbackWidgetProvider(closure_1[7]);
+      let obj = FeedbackWidgetProvider(outer1_1[7]);
       if (obj.isModalSupported()) {
         ({ isButtonVisible, isScreenshotButtonVisible, isVisible, backgroundOpacity } = self.state);
-        obj = { inputRange: [77601039, 1612144654], outputRange: [] };
+        obj = { inputRange: [0, 1], outputRange: ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.9)"] };
         const theme = tmp(tmp2[11]).getTheme();
-        const Fragment = React.Fragment;
+        const Fragment = outer1_7.Fragment;
         const children = self.props.children;
-        const tmp8 = React;
+        const tmp8 = outer1_7;
         const tmpResult = tmp(tmp2[11]);
         if (isButtonVisible) {
           const _Object = Object;
-          let obj3 = FeedbackWidgetProvider(closure_1[13]);
-          isButtonVisible = React.createElement(FeedbackWidgetProvider(closure_1[12]).FeedbackButton, Object.assign({}, obj3.getFeedbackButtonOptions()));
+          let obj3 = FeedbackWidgetProvider(outer1_1[13]);
+          isButtonVisible = outer1_7.createElement(FeedbackWidgetProvider(outer1_1[12]).FeedbackButton, Object.assign({}, obj3.getFeedbackButtonOptions()));
         }
         if (isScreenshotButtonVisible) {
           const _Object2 = Object;
-          let obj4 = FeedbackWidgetProvider(closure_1[13]);
-          isScreenshotButtonVisible = React.createElement(FeedbackWidgetProvider(closure_1[14]).ScreenshotButton, Object.assign({}, obj4.getScreenshotButtonOptions()));
+          let obj4 = FeedbackWidgetProvider(outer1_1[13]);
+          isScreenshotButtonVisible = outer1_7.createElement(FeedbackWidgetProvider(outer1_1[14]).ScreenshotButton, Object.assign({}, obj4.getScreenshotButtonOptions()));
         }
         let element = isVisible;
         if (isVisible) {
           obj = {};
-          const items = [FeedbackWidgetProvider(closure_1[15]).modalWrapper, ];
+          const items = [FeedbackWidgetProvider(outer1_1[15]).modalWrapper, ];
           const obj1 = { backgroundColor: interpolateResult };
           items[1] = obj1;
           obj.style = items;
-          const obj2 = { 9223372036854775807: true, -1403954079: true, 1365402028: true, 1398910164: true, 1671067985: true, visible: isVisible, onRequestClose: self._handleClose };
+          const obj2 = { visible: isVisible, transparent: true, animationType: "none", onRequestClose: self._handleClose, testID: "feedback-form-modal" };
           obj3 = {};
-          ({ createElement, createElement: createElement2 } = React);
-          obj3.style = FeedbackWidgetProvider(closure_1[15]).topSpacer;
-          const element2 = createElement2(closure_15, obj3);
+          ({ createElement, createElement: createElement2 } = outer1_7);
+          obj3.style = FeedbackWidgetProvider(outer1_1[15]).topSpacer;
+          const element2 = createElement2(outer1_15, obj3);
           const _Object3 = Object;
           obj4 = {};
-          const items1 = [FeedbackWidgetProvider(closure_1[15]).modalSheetContainer(theme), ];
+          const items1 = [FeedbackWidgetProvider(outer1_1[15]).modalSheetContainer(theme), ];
           const obj5 = {};
           const obj6 = { translateY: self.state.panY };
           const items2 = [obj6];
           obj5.transform = items2;
           items1[1] = obj5;
           obj4.style = items1;
-          const obj7 = { backgroundColor: 469507067, borderColor: 469508166, borderRadius: 822948183, onScroll: self._handleScroll };
+          const obj7 = { bounces: false, keyboardShouldPersistTaps: "handled", automaticallyAdjustKeyboardInsets: false, onScroll: self._handleScroll };
           const merged = Object.assign(obj4, self._panResponder.panHandlers);
-          ({ createElement: createElement3, createElement: createElement4 } = React);
+          ({ createElement: createElement3, createElement: createElement4 } = outer1_7);
           const _Object4 = Object;
-          const obj11 = FeedbackWidgetProvider(closure_1[15]);
+          const obj11 = FeedbackWidgetProvider(outer1_1[15]);
           ({ _handleClose: obj16.onFormClose, _handleClose: obj16.onFormSubmitted } = self);
-          element = <RN.View {......obj}><closure_12 {......obj2}>{element2}<RN.View {......merged}>{createElement3(closure_14, obj7, createElement4(FeedbackWidgetProvider(closure_1[16]).FeedbackWidget, Object.assign({}, FeedbackWidgetProvider(closure_1[13]).getFeedbackOptions(), {})))}</RN.View></closure_12></RN.View>;
-          const obj15 = FeedbackWidgetProvider(closure_1[13]);
+          element = <outer1_8.View><outer1_12 visible={isVisible} transparent animationType="none" onRequestClose={self._handleClose} testID="feedback-form-modal">{element2}<outer1_8.View {......merged}>{createElement3(outer1_14, obj7, createElement4(FeedbackWidgetProvider(outer1_1[16]).FeedbackWidget, Object.assign({}, FeedbackWidgetProvider(outer1_1[13]).getFeedbackOptions(), {})))}</outer1_8.View></outer1_12></outer1_8.View>;
+          const obj15 = FeedbackWidgetProvider(outer1_1[13]);
           const obj8 = {};
         }
         return <>{children}{isButtonVisible}{isScreenshotButtonVisible}{element}</>;
@@ -259,4 +269,4 @@ export const FeedbackWidgetProvider = (Component) => {
     }
   };
   return callback(FeedbackWidgetProvider, items);
-}(importAllResult.Component);
+})(importAllResult.Component);

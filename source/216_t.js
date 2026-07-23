@@ -4,7 +4,9 @@
 // Dependencies: []
 
 // Module 216 (t)
+const global = arg0;
 const fn = function t(arg0) {
+  let closure_0 = arg0;
   function normalizeName(arg0) {
     let str = arg0;
     if ("string" !== typeof arg0) {
@@ -28,13 +30,14 @@ const fn = function t(arg0) {
     return StringResult;
   }
   function iteratorFor(items) {
+    let closure_0 = items;
     const obj = {
       next() {
-        const arr = arg0.shift();
+        const arr = items.shift();
         return { done: undefined === arr, value: arr };
       }
     };
-    if (tmp8) {
+    if (closure_3) {
       const _Symbol = Symbol;
       obj[Symbol.iterator] = () => obj;
     }
@@ -43,7 +46,7 @@ const fn = function t(arg0) {
   class Headers {
     constructor(arg0) {
       self = this;
-      arg0 = arg0;
+      closure_0 = arg0;
       this.map = {};
       if (arg0 instanceof Headers) {
         item = arg0.forEach(function(arg0, arg1) {
@@ -67,7 +70,7 @@ const fn = function t(arg0) {
           _Object = Object;
           ownPropertyNames = Object.getOwnPropertyNames(arg0);
           item2 = ownPropertyNames.forEach(function(arg0) {
-            this.append(arg0, arg0[arg0]);
+            this.append(arg0, headers[arg0]);
           }, self);
         }
       }
@@ -87,18 +90,21 @@ const fn = function t(arg0) {
     }
   }
   function fileReaderReady(fileReader) {
+    let closure_0 = fileReader;
     return new Promise((arg0, arg1) => {
-      arg0.onload = () => {
-        arg0(arg0.result);
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      closure_0.onload = () => {
+        lib(lib.result);
       };
-      arg0.onerror = () => {
-        arg1(arg0.error);
+      closure_0.onerror = () => {
+        callback(lib.error);
       };
     });
   }
-  function readBlobAsArrayBuffer(data) {
+  function readBlobAsArrayBuffer(closure_0) {
     const fileReader = new FileReader();
-    const asArrayBuffer = fileReader.readAsArrayBuffer(data);
+    const asArrayBuffer = fileReader.readAsArrayBuffer(closure_0);
     return fileReaderReady(fileReader);
   }
   function bufferClone(arr) {
@@ -126,36 +132,36 @@ const fn = function t(arg0) {
             self._bodyText = _bodyInit;
             let tmp = _bodyInit;
           } else {
-            if (closure_4) {
+            if (outer1_4) {
               const _Blob = Blob;
               if (prototype.isPrototypeOf(_bodyInit)) {
                 self._bodyBlob = _bodyInit;
                 tmp = _bodyInit;
               }
             }
-            if (closure_5) {
+            if (outer1_5) {
               const _FormData = FormData;
               if (prototype2.isPrototypeOf(_bodyInit)) {
                 self._bodyFormData = _bodyInit;
                 tmp = _bodyInit;
               }
             }
-            if (closure_2) {
+            if (outer1_2) {
               const _URLSearchParams = URLSearchParams;
               if (prototype3.isPrototypeOf(_bodyInit)) {
                 self._bodyText = _bodyInit.toString();
                 tmp = _bodyInit;
               }
             }
-            if (closure_6) {
-              if (closure_4) {
+            if (outer1_6) {
+              if (outer1_4) {
                 let isPrototypeOfResult = _bodyInit;
                 if (_bodyInit) {
                   const _DataView = DataView;
                   isPrototypeOfResult = prototype4.isPrototypeOf(_bodyInit);
                 }
                 if (isPrototypeOfResult) {
-                  self._bodyArrayBuffer = callback4(_bodyInit.buffer);
+                  self._bodyArrayBuffer = outer1_18(_bodyInit.buffer);
                   const _Blob2 = Blob;
                   const items = [self._bodyArrayBuffer];
                   const blob = new Blob(items);
@@ -164,14 +170,14 @@ const fn = function t(arg0) {
                 }
               }
             }
-            if (!closure_6) {
+            if (!outer1_6) {
               const _Object = Object;
               const callResult = toString.call(_bodyInit);
               self._bodyText = callResult;
               tmp = callResult;
             } else {
               const _ArrayBuffer = ArrayBuffer;
-              self._bodyArrayBuffer = callback4(_bodyInit);
+              self._bodyArrayBuffer = outer1_18(_bodyInit);
               tmp = _bodyInit;
             }
           }
@@ -192,8 +198,8 @@ const fn = function t(arg0) {
                 const result1 = headers3.set("content-type", self._bodyBlob.type);
               }
             }
-            let isPrototypeOfResult1 = closure_2;
-            if (closure_2) {
+            let isPrototypeOfResult1 = outer1_2;
+            if (outer1_2) {
               const _URLSearchParams2 = URLSearchParams;
               isPrototypeOfResult1 = prototype7.isPrototypeOf(tmp);
             }
@@ -204,10 +210,10 @@ const fn = function t(arg0) {
           }
         }
       };
-      if (closure_4) {
+      if (FileReader) {
         self.blob = function() {
           const self = this;
-          const tmp = callback2(this);
+          const tmp = outer1_15(this);
           if (tmp) {
             return tmp;
           } else if (self._bodyBlob) {
@@ -232,7 +238,7 @@ const fn = function t(arg0) {
       self.arrayBuffer = function() {
         let self = this;
         if (this._bodyArrayBuffer) {
-          const tmp9 = callback2(self);
+          const tmp9 = outer1_15(self);
           if (tmp9) {
             return tmp9;
           } else {
@@ -247,8 +253,8 @@ const fn = function t(arg0) {
               resolveResult = resolve(byteOffset);
             }
           }
-        } else if (closure_4) {
-          return self.blob().then(closure_17);
+        } else if (outer1_4) {
+          return self.blob().then(outer1_17);
         } else {
           const _Error = Error;
           const error = new Error("could not read as ArrayBuffer");
@@ -258,7 +264,7 @@ const fn = function t(arg0) {
       self.text = function() {
         let length;
         const self = this;
-        const tmp = callback2(this);
+        const tmp = outer1_15(this);
         if (tmp) {
           return tmp;
         } else if (self._bodyBlob) {
@@ -271,7 +277,7 @@ const fn = function t(arg0) {
             str3 = match[1];
           }
           const asText = fileReader.readAsText(_bodyBlob, str3);
-          return callback3(fileReader);
+          return outer1_16(fileReader);
         } else if (self._bodyArrayBuffer) {
           const _Uint8Array = Uint8Array;
           const uint8Array = new Uint8Array(self._bodyArrayBuffer);
@@ -295,9 +301,9 @@ const fn = function t(arg0) {
           return Promise.resolve(self._bodyText);
         }
       };
-      if (closure_5) {
+      if (FormData) {
         self.formData = function() {
-          return this.text().then(closure_20);
+          return this.text().then(outer1_20);
         };
       }
       self.json = function() {
@@ -467,8 +473,7 @@ const fn = function t(arg0) {
   }
   function decode(str) {
     const formData = new FormData();
-    str = formData;
-    const parts = str.trim().split("&");
+    let parts = str.trim().split("&");
     const item = parts.forEach((str) => {
       if (str) {
         const parts = str.split("=");
@@ -551,26 +556,31 @@ const fn = function t(arg0) {
     }
   }
   function fetch(arg0, arg1) {
-    return new Promise((arg0, self) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    return new Promise((arg0, arg1) => {
+      let DOMException = arg0;
+      const config = arg1;
       function abortXhr() {
         xMLHttpRequest.abort();
       }
-      const tmp = new closure_19(arg0, self);
+      let tmp = new outer1_19(DOMException, config);
+      let closure_2 = tmp;
       if (tmp.signal) {
         if (tmp.signal.aborted) {
-          const DOMException = arg0.DOMException;
+          DOMException = DOMException.DOMException;
           const prototype = DOMException.prototype;
-          const dOMException = new DOMException("Aborted", "AbortError");
-          return self(dOMException);
+          let dOMException = new DOMException("Aborted", "AbortError");
+          return arg1(dOMException);
         }
       }
       const xMLHttpRequest = new XMLHttpRequest();
       xMLHttpRequest.onload = () => {
         const obj = { statusText: xMLHttpRequest.statusText };
-        const tmp = new closure_14();
-        const arg0 = tmp;
+        let tmp = new outer2_14();
+        let closure_0 = tmp;
         const str = xMLHttpRequest.getAllResponseHeaders() || "";
-        const parts = xMLHttpRequest.getAllResponseHeaders() || "".replace(/\r?\n[\t ]+/g, " ").split("\r");
+        let parts = xMLHttpRequest.getAllResponseHeaders() || "".replace(/\r?\n[\t ]+/g, " ").split("\r");
         const mapped = parts.map((arr) => {
           let substr = arr;
           if (0 === arr.indexOf("\n")) {
@@ -587,8 +597,7 @@ const fn = function t(arg0) {
           }
         });
         obj.headers = tmp;
-        const arg1 = obj;
-        let url = url.url;
+        const url = tmp.url;
         if (0 !== url.indexOf("file://")) {
           obj.status = xMLHttpRequest.status;
         } else {
@@ -601,34 +610,34 @@ const fn = function t(arg0) {
           responseURL = headers.get("X-Request-URL");
         }
         obj.url = responseURL;
-        url = "response" in xMLHttpRequest ? tmp7.response : tmp7.responseText;
+        tmp = "response" in xMLHttpRequest ? tmp7.response : tmp7.responseText;
         const timerId = setTimeout(() => {
-          const tmp = new closure_21(closure_2, obj);
+          const tmp = new outer3_21(closure_2, obj);
           tmp(tmp);
         }, 0);
       };
       xMLHttpRequest.onerror = () => {
         const timerId = setTimeout(() => {
           const typeError = new TypeError("Network request failed");
-          callback(typeError);
+          outer1_1(typeError);
         }, 0);
       };
       xMLHttpRequest.ontimeout = () => {
         const timerId = setTimeout(() => {
           const typeError = new TypeError("Network request timed out");
-          callback(typeError);
+          outer1_1(typeError);
         }, 0);
       };
       xMLHttpRequest.onabort = () => {
         const timerId = setTimeout(() => {
           const dOMException = new DOMException.DOMException("Aborted", "AbortError");
-          callback(dOMException);
+          outer1_1(dOMException);
         }, 0);
       };
-      const url = tmp.url;
+      let url = tmp.url;
       if ("" === url) {
-        if (self.location.href) {
-          let href = self.location.href;
+        if (config.location.href) {
+          let href = config.location.href;
         }
         while (true) {
           let flag = true;
@@ -645,37 +654,37 @@ const fn = function t(arg0) {
           }
           let str3 = "responseType";
           if ("responseType" in xMLHttpRequest) {
-            let tmp7 = closure_4;
-            if (closure_4) {
+            let tmp7 = outer1_4;
+            if (outer1_4) {
               let str5 = "blob";
               xMLHttpRequest.responseType = "blob";
             } else {
-              let tmp8 = closure_6;
-              if (closure_6) {
+              let tmp8 = outer1_6;
+              if (outer1_6) {
                 let str4 = "arraybuffer";
                 xMLHttpRequest.responseType = "arraybuffer";
               }
             }
           }
-          let tmp9 = self;
-          if (self) {
-            let tmp10 = self;
+          let tmp9 = config;
+          if (config) {
+            let tmp10 = config;
             let str6 = "object";
-            if ("object" === typeof self.headers) {
-              let tmp26 = self;
-              let tmp27 = closure_14;
-              if (!(self.headers instanceof closure_14)) {
-                let tmp11 = self;
-                if (self.Headers) {
-                  let tmp12 = self;
-                  let tmp13 = self;
+            if ("object" === typeof config.headers) {
+              let tmp26 = config;
+              let tmp27 = outer1_14;
+              if (!(config.headers instanceof outer1_14)) {
+                let tmp11 = config;
+                if (config.Headers) {
+                  let tmp12 = config;
+                  let tmp13 = config;
                 }
-                closure_4 = [];
+                let closure_4 = [];
                 let _Object = Object;
-                let tmp14 = self;
-                let ownPropertyNames = Object.getOwnPropertyNames(self.headers);
+                let tmp14 = config;
+                let ownPropertyNames = Object.getOwnPropertyNames(config.headers);
                 let item = ownPropertyNames.forEach((baggage) => {
-                  xMLHttpRequest.setRequestHeader(baggage, callback2(arg1.headers[baggage]));
+                  xMLHttpRequest.setRequestHeader(baggage, outer2_12(headers.headers[baggage]));
                 });
                 let headers = tmp.headers;
                 let item1 = headers.forEach((arg0, baggage) => {
@@ -715,11 +724,11 @@ const fn = function t(arg0) {
   if (!obj) {
     const _self = self;
     obj = "undefined" !== typeof self && self;
-    const tmp4 = "undefined" !== typeof self && self;
+    let tmp4 = "undefined" !== typeof self && self;
   }
   if (!obj) {
-    obj = undefined !== arg0 && arg0;
-    const tmp6 = undefined !== arg0 && arg0;
+    obj = undefined !== closure_0 && closure_0;
+    let tmp6 = undefined !== closure_0 && closure_0;
   }
   if (!obj) {
     obj = {};
@@ -727,32 +736,34 @@ const fn = function t(arg0) {
   let closure_2 = "URLSearchParams" in obj;
   let tmp8 = "Symbol" in obj;
   if (tmp8) {
-    const _Symbol = Symbol;
+    let _Symbol = Symbol;
     tmp8 = "iterator" in Symbol;
   }
+  let closure_3 = tmp8;
   let tmp9 = "FileReader" in tmp7;
   if (tmp9) {
     tmp9 = "Blob" in tmp7;
   }
   if (!tmp9) {
+    let closure_4 = tmp9;
     let closure_5 = "FormData" in tmp7;
-    const tmp16 = "ArrayBuffer" in tmp7;
-    if (tmp16) {
-      let closure_7 = [true, true, true, true, true, true, true, true, true];
-      const _ArrayBuffer = ArrayBuffer;
-      let closure_8 = ArrayBuffer.isView || (arg0) => {
+    let closure_6 = tmp16;
+    if ("ArrayBuffer" in tmp7) {
+      let closure_7 = ["[object Int8Array]", "[object Uint8Array]", "[object Uint8ClampedArray]", "[object Int16Array]", "[object Uint16Array]", "[object Int32Array]", "[object Uint32Array]", "[object Float32Array]", "[object Float64Array]"];
+      let _ArrayBuffer = ArrayBuffer;
+      let closure_8 = ArrayBuffer.isView || ((arg0) => {
         let tmp = arg0;
         if (arg0) {
           const _Object = Object;
           tmp = closure_7.indexOf(toString.call(arg0)) > -1;
         }
         return tmp;
-      };
+      });
     }
     class Headers {
       constructor(arg0) {
         self = this;
-        arg0 = arg0;
+        closure_0 = arg0;
         this.map = {};
         if (arg0 instanceof Headers) {
           item = arg0.forEach(function(arg0, arg1) {
@@ -776,7 +787,7 @@ const fn = function t(arg0) {
             _Object = Object;
             ownPropertyNames = Object.getOwnPropertyNames(arg0);
             item2 = ownPropertyNames.forEach(function(arg0) {
-              this.append(arg0, arg0[arg0]);
+              this.append(arg0, headers[arg0]);
             }, self);
           }
         }
@@ -797,8 +808,8 @@ const fn = function t(arg0) {
         return;
       }
       delete(arg0) {
-        tmp = normalizeName(arg0);
-        delete r2[r1];
+        tmp3 = normalizeName(arg0);
+        delete tmp2[tmp];
         return;
       }
       get(arg0) {
@@ -831,7 +842,7 @@ const fn = function t(arg0) {
             tmp3 = key10005;
             tmp4 = self;
             callResult = arg0.call(arg1, self.map[key10005], tmp6, self);
-            // continue
+            continue;
           }
           continue;
         }
@@ -839,7 +850,7 @@ const fn = function t(arg0) {
       }
       keys() {
         items = [];
-        arg0 = items;
+        closure_0 = items;
         item = this.forEach((arg0, arg1) => {
           items.push(arg1);
         });
@@ -847,7 +858,7 @@ const fn = function t(arg0) {
       }
       values() {
         items = [];
-        arg0 = items;
+        closure_0 = items;
         item = this.forEach((arg0) => {
           items.push(arg0);
         });
@@ -855,7 +866,7 @@ const fn = function t(arg0) {
       }
       entries() {
         items = [];
-        arg0 = items;
+        closure_0 = items;
         item = this.forEach((arg0, arg1) => {
           const items = [arg1, arg0];
           items.push(items);
@@ -876,36 +887,36 @@ const fn = function t(arg0) {
               self._bodyText = _bodyInit;
               let tmp = _bodyInit;
             } else {
-              if (closure_4) {
+              if (outer1_4) {
                 const _Blob = Blob;
                 if (prototype.isPrototypeOf(_bodyInit)) {
                   self._bodyBlob = _bodyInit;
                   tmp = _bodyInit;
                 }
               }
-              if (closure_5) {
+              if (outer1_5) {
                 const _FormData = FormData;
                 if (prototype2.isPrototypeOf(_bodyInit)) {
                   self._bodyFormData = _bodyInit;
                   tmp = _bodyInit;
                 }
               }
-              if (closure_2) {
+              if (outer1_2) {
                 const _URLSearchParams = URLSearchParams;
                 if (prototype3.isPrototypeOf(_bodyInit)) {
                   self._bodyText = _bodyInit.toString();
                   tmp = _bodyInit;
                 }
               }
-              if (closure_6) {
-                if (closure_4) {
+              if (outer1_6) {
+                if (outer1_4) {
                   let isPrototypeOfResult = _bodyInit;
                   if (_bodyInit) {
                     const _DataView = DataView;
                     isPrototypeOfResult = prototype4.isPrototypeOf(_bodyInit);
                   }
                   if (isPrototypeOfResult) {
-                    self._bodyArrayBuffer = callback4(_bodyInit.buffer);
+                    self._bodyArrayBuffer = outer1_18(_bodyInit.buffer);
                     const _Blob2 = Blob;
                     const items = [self._bodyArrayBuffer];
                     const blob = new Blob(items);
@@ -914,14 +925,14 @@ const fn = function t(arg0) {
                   }
                 }
               }
-              if (!closure_6) {
+              if (!outer1_6) {
                 const _Object = Object;
                 const callResult = toString.call(_bodyInit);
                 self._bodyText = callResult;
                 tmp = callResult;
               } else {
                 const _ArrayBuffer = ArrayBuffer;
-                self._bodyArrayBuffer = callback4(_bodyInit);
+                self._bodyArrayBuffer = outer1_18(_bodyInit);
                 tmp = _bodyInit;
               }
             }
@@ -942,8 +953,8 @@ const fn = function t(arg0) {
                   const result1 = headers3.set("content-type", self._bodyBlob.type);
                 }
               }
-              let isPrototypeOfResult1 = closure_2;
-              if (closure_2) {
+              let isPrototypeOfResult1 = outer1_2;
+              if (outer1_2) {
                 const _URLSearchParams2 = URLSearchParams;
                 isPrototypeOfResult1 = prototype7.isPrototypeOf(tmp);
               }
@@ -954,10 +965,10 @@ const fn = function t(arg0) {
             }
           }
         };
-        if (closure_4) {
+        if (FileReader) {
           self.blob = function() {
             const self = this;
-            const tmp = callback2(this);
+            const tmp = outer1_15(this);
             if (tmp) {
               return tmp;
             } else if (self._bodyBlob) {
@@ -982,7 +993,7 @@ const fn = function t(arg0) {
         self.arrayBuffer = function() {
           let self = this;
           if (this._bodyArrayBuffer) {
-            const tmp9 = callback2(self);
+            const tmp9 = outer1_15(self);
             if (tmp9) {
               return tmp9;
             } else {
@@ -997,8 +1008,8 @@ const fn = function t(arg0) {
                 resolveResult = resolve(byteOffset);
               }
             }
-          } else if (closure_4) {
-            return self.blob().then(closure_17);
+          } else if (outer1_4) {
+            return self.blob().then(outer1_17);
           } else {
             const _Error = Error;
             const error = new Error("could not read as ArrayBuffer");
@@ -1008,7 +1019,7 @@ const fn = function t(arg0) {
         self.text = function() {
           let length;
           const self = this;
-          const tmp = callback2(this);
+          const tmp = outer1_15(this);
           if (tmp) {
             return tmp;
           } else if (self._bodyBlob) {
@@ -1021,7 +1032,7 @@ const fn = function t(arg0) {
               str3 = match[1];
             }
             const asText = fileReader.readAsText(_bodyBlob, str3);
-            return callback3(fileReader);
+            return outer1_16(fileReader);
           } else if (self._bodyArrayBuffer) {
             const _Uint8Array = Uint8Array;
             const uint8Array = new Uint8Array(self._bodyArrayBuffer);
@@ -1045,9 +1056,9 @@ const fn = function t(arg0) {
             return Promise.resolve(self._bodyText);
           }
         };
-        if (closure_5) {
+        if (FormData) {
           self.formData = function() {
-            return this.text().then(closure_20);
+            return this.text().then(outer1_20);
           };
         }
         self.json = function() {
@@ -1219,7 +1230,7 @@ const fn = function t(arg0) {
       const _Symbol2 = Symbol;
       tmp2.prototype[Symbol.iterator] = tmp2.prototype.entries;
     }
-    let closure_9 = [-230490368, -251657061, 1426064539, 2050449377, -549436873, 940953761, -1294915654, 100049549, -1985312009];
+    let closure_9 = ["CONNECT", "DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT", "TRACE"];
     class Response {
       constructor(arg0, arg1) {
         response = arg1;
@@ -1305,7 +1316,7 @@ const fn = function t(arg0) {
         return tmp2;
       }
       static error() {
-        tmp = new Response(null, {});
+        tmp = new Response(null, { status: 200, statusText: "" });
         tmp.ok = false;
         tmp.status = 0;
         tmp.type = "error";
@@ -1341,11 +1352,11 @@ const fn = function t(arg0) {
         }
       }
     }
-    let closure_10 = [null, null, null, null, null];
+    let closure_10 = [301, 302, 303, 307, 308];
     tmp.DOMException = tmp7.DOMException;
-    const DOMException = tmp.DOMException;
-    const prototype2 = DOMException.prototype;
-    const dOMException = new DOMException();
+    let DOMException = tmp.DOMException;
+    let prototype2 = DOMException.prototype;
+    let dOMException = new DOMException();
     while (true) {
       let tmp27 = fetch;
       let flag2 = true;
@@ -1365,7 +1376,7 @@ const fn = function t(arg0) {
         class Headers {
           constructor(arg0) {
             self = this;
-            arg0 = arg0;
+            closure_0 = arg0;
             this.map = {};
             if (arg0 instanceof Headers) {
               item = arg0.forEach(function(arg0, arg1) {
@@ -1389,7 +1400,7 @@ const fn = function t(arg0) {
                 _Object = Object;
                 ownPropertyNames = Object.getOwnPropertyNames(arg0);
                 item2 = ownPropertyNames.forEach(function(arg0) {
-                  this.append(arg0, arg0[arg0]);
+                  this.append(arg0, headers[arg0]);
                 }, self);
               }
             }
@@ -1410,8 +1421,8 @@ const fn = function t(arg0) {
             return;
           }
           delete(arg0) {
-            tmp = normalizeName(arg0);
-            delete r2[r1];
+            tmp3 = normalizeName(arg0);
+            delete tmp2[tmp];
             return;
           }
           get(arg0) {
@@ -1444,7 +1455,7 @@ const fn = function t(arg0) {
                 tmp3 = key10005;
                 tmp4 = self;
                 callResult = arg0.call(arg1, self.map[key10005], tmp6, self);
-                // continue
+                continue;
               }
               continue;
             }
@@ -1452,7 +1463,7 @@ const fn = function t(arg0) {
           }
           keys() {
             items = [];
-            arg0 = items;
+            closure_0 = items;
             item = this.forEach((arg0, arg1) => {
               items.push(arg1);
             });
@@ -1460,7 +1471,7 @@ const fn = function t(arg0) {
           }
           values() {
             items = [];
-            arg0 = items;
+            closure_0 = items;
             item = this.forEach((arg0) => {
               items.push(arg0);
             });
@@ -1468,7 +1479,7 @@ const fn = function t(arg0) {
           }
           entries() {
             items = [];
-            arg0 = items;
+            closure_0 = items;
             item = this.forEach((arg0, arg1) => {
               const items = [arg1, arg0];
               items.push(items);
@@ -1483,7 +1494,7 @@ const fn = function t(arg0) {
       class Headers {
         constructor(arg0) {
           self = this;
-          arg0 = arg0;
+          closure_0 = arg0;
           this.map = {};
           if (arg0 instanceof Headers) {
             item = arg0.forEach(function(arg0, arg1) {
@@ -1507,7 +1518,7 @@ const fn = function t(arg0) {
               _Object = Object;
               ownPropertyNames = Object.getOwnPropertyNames(arg0);
               item2 = ownPropertyNames.forEach(function(arg0) {
-                this.append(arg0, arg0[arg0]);
+                this.append(arg0, headers[arg0]);
               }, self);
             }
           }
@@ -1528,8 +1539,8 @@ const fn = function t(arg0) {
           return;
         }
         delete(arg0) {
-          tmp = normalizeName(arg0);
-          delete r2[r1];
+          tmp3 = normalizeName(arg0);
+          delete tmp2[tmp];
           return;
         }
         get(arg0) {
@@ -1562,7 +1573,7 @@ const fn = function t(arg0) {
               tmp3 = key10005;
               tmp4 = self;
               callResult = arg0.call(arg1, self.map[key10005], tmp6, self);
-              // continue
+              continue;
             }
             continue;
           }
@@ -1570,7 +1581,7 @@ const fn = function t(arg0) {
         }
         keys() {
           items = [];
-          arg0 = items;
+          closure_0 = items;
           item = this.forEach((arg0, arg1) => {
             items.push(arg1);
           });
@@ -1578,7 +1589,7 @@ const fn = function t(arg0) {
         }
         values() {
           items = [];
-          arg0 = items;
+          closure_0 = items;
           item = this.forEach((arg0) => {
             items.push(arg0);
           });
@@ -1586,7 +1597,7 @@ const fn = function t(arg0) {
         }
         entries() {
           items = [];
-          arg0 = items;
+          closure_0 = items;
           item = this.forEach((arg0, arg1) => {
             const items = [arg1, arg0];
             items.push(items);
@@ -1596,13 +1607,13 @@ const fn = function t(arg0) {
       }
     }
   } else {
-    const _Blob = Blob;
-    const blob = new Blob();
+    let _Blob = Blob;
+    let blob = new Blob();
     let flag = true;
     while (true) {
       let tmp13 = __exception;
       flag = false;
-      // continue
+      continue;
     }
   }
 };
@@ -1613,9 +1624,9 @@ if ("object" === typeof arg5) {
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define([null], fn);
+    globalThis.define(["exports"], fn);
   }
 }
-const obj = {};
+let obj = {};
 this.WHATWGFetch = obj;
 fn(obj);

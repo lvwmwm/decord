@@ -1,12 +1,13 @@
-// Module ID: 6698
-// Function ID: 51884
+// Module ID: 6703
+// Function ID: 51916
 // Name: getClientHeartbeatPiggybackProperties
-// Dependencies: []
+// Dependencies: [4150, 2]
 // Exports: getClientHeartbeatPiggybackProperties
 
-// Module 6698 (getClientHeartbeatPiggybackProperties)
-importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/analytics_sessions/ClientHeartbeatPiggyback.tsx");
+// Module 6703 (getClientHeartbeatPiggybackProperties)
+import "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/analytics_sessions/ClientHeartbeatPiggyback.tsx");
 
 export function getClientHeartbeatPiggybackProperties() {
   return {};

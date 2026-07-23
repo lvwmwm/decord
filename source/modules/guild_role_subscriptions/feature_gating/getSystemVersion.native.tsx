@@ -1,13 +1,12 @@
-// Module ID: 5029
-// Function ID: 43313
+// Module ID: 5032
+// Function ID: 43331
 // Name: getSystemVersion
-// Dependencies: []
+// Dependencies: [4110, 2]
 // Exports: getSystemVersion
 
-// Module 5029 (getSystemVersion)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/getSystemVersion.native.tsx");
+// Module 5032 (getSystemVersion)
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/getSystemVersion.native.tsx");
 
 export const getSystemVersion = function getSystemVersion() {
-  return require(dependencyMap[0]).getSystemVersion();
+  return require(4110) /* getSystemVersion */.getSystemVersion();
 };

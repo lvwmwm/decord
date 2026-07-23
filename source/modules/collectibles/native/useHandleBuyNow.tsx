@@ -1,28 +1,32 @@
-// Module ID: 11828
-// Function ID: 91712
+// Module ID: 11838
+// Function ID: 91761
 // Name: useHandleBuyNow
-// Dependencies: []
+// Dependencies: [5, 57, 31, 653, 3, 11817, 6773, 4098, 9772, 1553, 5692, 3791, 3831, 1212, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 11828 (useHandleBuyNow)
+// Module 11838 (useHandleBuyNow)
+import useMobileCollectiblesPurchaseSKU from "useMobileCollectiblesPurchaseSKU";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { Routes } from "ME";
+import importDefaultResult from "ME";
+
+let require = arg1;
 function useHandleBuyNow(product) {
   let analyticsLocations;
   let orderId;
   product = product.product;
-  const arg1 = product;
+  const require = product;
   const onBuy = product.onBuy;
-  const importDefault = onBuy;
   let callback;
   function _onPurchaseComplete() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = callback(tmp);
-    const _onPurchaseComplete = obj;
     return obj(...arguments);
   }
   ({ analyticsLocations, orderId } = product);
   const tmp2 = callback2(_onPurchaseComplete.useState(false), 2);
   const first = tmp2[0];
-  const dependencyMap = first;
   callback = tmp2[1];
   let obj = {
     product,
@@ -38,20 +42,15 @@ function useHandleBuyNow(product) {
     },
     orderId
   };
-  const tmp4 = importDefault(dependencyMap[5])(obj);
-  const callback2 = tmp4;
+  const tmp4 = onBuy(first[5])(obj);
+  callback2 = tmp4;
   obj = { handleBuyNow: _onPurchaseComplete.useCallback(callback(tmp), items), isBuying: first };
   // CreateGeneratorClosureLongIndex (0x67)
-  const items = [tmp4, first, onBuy, product.skuId];
+  items = [tmp4, first, onBuy, product.skuId];
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const Routes = arg1(dependencyMap[3]).Routes;
-let importDefaultResult = importDefault(dependencyMap[4]);
 importDefaultResult = new importDefaultResult("useHandleBuyNow");
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/collectibles/native/useHandleBuyNow.tsx");
+const result = require("result").fileFinishedImporting("modules/collectibles/native/useHandleBuyNow.tsx");
 
 export default useHandleBuyNow;
 export { useHandleBuyNow };

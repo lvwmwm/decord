@@ -1,34 +1,38 @@
-// Module ID: 13684
-// Function ID: 103583
+// Module ID: 13798
+// Function ID: 105739
 // Name: FamilyCenterActivityTotal
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 13797, 6828, 4126, 2]
 // Exports: default
 
-// Module 13684 (FamilyCenterActivityTotal)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[4]).radii.md };
-const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LEDGE);
-obj.container = obj;
-let closure_5 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityTotal.tsx");
+// Module 13798 (FamilyCenterActivityTotal)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { display: "flex", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, padding: 12, justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LEDGE);
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityTotal.tsx");
 
 export default function FamilyCenterActivityTotal(displayType) {
   displayType = displayType.displayType;
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(13797) /* useActionTotalsForDisplayType */;
   const actionTotalsForDisplayType = obj.useActionTotalsForDisplayType(displayType);
-  let obj1 = arg1(dependencyMap[5]);
+  let obj1 = require(13797) /* useActionTotalsForDisplayType */;
   const formattedTotalForDisplayType = obj1.useFormattedTotalForDisplayType(displayType);
   let str = "text-muted";
   if (actionTotalsForDisplayType > 0) {
     str = "text-brand";
   }
-  const tmp = callback2();
-  const activityTypeTextConfigs = arg1(dependencyMap[6]).getActivityTypeTextConfigs();
+  const tmp = _createForOfIteratorHelperLoose();
+  const activityTypeTextConfigs = require(6828) /* getActivityTypeTextConfigs */.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
   let tooltipHeaderResult;
   if (null != value) {
@@ -41,9 +45,9 @@ export default function FamilyCenterActivityTotal(displayType) {
     num = formattedTotalForDisplayType;
   }
   obj.children = num;
-  const items = [callback(arg1(dependencyMap[7]).Text, obj), ];
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
   obj1 = { variant: "text-sm/semibold", children: tooltipHeaderResult };
-  items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items;
   return closure_4(View, obj);
 };

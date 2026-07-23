@@ -1,7 +1,6 @@
 // Module ID: 5229
-// Function ID: 45193
+// Function ID: 45206
 // Dependencies: []
 
 // Module 5229
-
-export default importDefault(dependencyMap[0]).createContext(false);
+arg5.PointerType = { TOUCH: 0, [0]: "TOUCH", STYLUS: 1, [1]: "STYLUS", MOUSE: 2, [2]: "MOUSE", KEY: 3, [3]: "KEY", OTHER: 4, [4]: "OTHER" };

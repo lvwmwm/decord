@@ -1,25 +1,27 @@
-// Module ID: 7549
-// Function ID: 60434
+// Module ID: 7555
+// Function ID: 60471
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: []
+// Dependencies: [31, 33, 4475, 1212, 2716, 4475, 2]
 // Exports: default
 
-// Module 7549 (AgeVerificationQuestUnsupportedAlertModal)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/age_assurance/native/AgeVerificationQuestUnsupportedAlertModal.tsx");
+// Module 7555 (AgeVerificationQuestUnsupportedAlertModal)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("getAlertModalItemKey").fileFinishedImporting("modules/age_assurance/native/AgeVerificationQuestUnsupportedAlertModal.tsx");
 
 export default function AgeVerificationQuestUnsupportedAlertModal() {
   let obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.title = intl.string(importDefault(dependencyMap[4]).gUqXQN);
-  const intl2 = arg1(dependencyMap[3]).intl;
-  obj.content = intl2.string(importDefault(dependencyMap[4]).yBHwMy);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(importDefault(2716).gUqXQN);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl2.string(importDefault(2716).yBHwMy);
   obj = {};
   obj = {};
-  const intl3 = arg1(dependencyMap[3]).intl;
-  obj.text = intl3.string(arg1(dependencyMap[3]).t.NX+WJN);
-  obj.children = jsx(arg1(dependencyMap[2]).AlertActionButton, obj, "got-it");
-  obj.actions = jsx(arg1(dependencyMap[5]).AlertActions, obj);
-  return jsx(arg1(dependencyMap[2]).AlertModal, obj);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl3.string(require(1212) /* getSystemLocale */.t["NX+WJN"]);
+  obj.children = jsx(require(4475) /* getAlertModalItemKey */.AlertActionButton, {}, "got-it");
+  obj.actions = jsx(require(4475) /* getAlertModalItemKey */.AlertActions, {});
+  return jsx(require(4475) /* getAlertModalItemKey */.AlertModal, {});
 };

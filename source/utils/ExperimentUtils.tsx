@@ -1,52 +1,59 @@
-// Module ID: 7776
-// Function ID: 61755
+// Module ID: 7782
+// Function ID: 61792
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 4044, 4045, 4052, 22, 2]
 
-// Module 7776 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 7782 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ExperimentBuckets from "ExperimentBuckets";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -99,10 +106,10 @@ function getFirstEligibleUserExperiment(arg0) {
   }
   return null;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ ExperimentTypes: closure_5, ExperimentBuckets: closure_6 } = arg1(dependencyMap[2]));
-const obj = {
+({ ExperimentTypes: closure_5, ExperimentBuckets: closure_6 } = ExperimentBuckets);
+let result = require("ExperimentBuckets").fileFinishedImporting("utils/ExperimentUtils.tsx");
+
+export default {
   getFirstEligibleUserExperiment,
   isInExperimentBucket(arg0, arg1) {
     return authStore.getUserExperimentBucket(arg0) === arg1;
@@ -136,7 +143,7 @@ const obj = {
             return false;
           } else if (type.type === constants.USER) {
             if (type2.type === constants.USER) {
-              return importDefault(dependencyMap[4]).isEqual(type.context, type2.context);
+              return importDefault(22).isEqual(type.context, type2.context);
             }
           }
         }
@@ -148,7 +155,7 @@ const obj = {
     const tmp = getFirstEligibleUserExperiment(arg0);
     if (null != tmp) {
       const tmp3 = callback(tmp, 2);
-      const result = arg1(dependencyMap[3]).trackExposureToExperiment(tmp3[0], tmp4);
+      const result = require(4052) /* trackExposureToExperiment */.trackExposureToExperiment(tmp3[0], tmp4);
       return tmp3[1];
     }
   },
@@ -165,12 +172,13 @@ const obj = {
     return str;
   },
   getRecentExperimentBuckets(arg0, arg1) {
+    let closure_0 = arg1;
     const entries = Object.entries(arg0);
     return entries.reduce((arg0, arg1) => {
       let str;
       let tmp;
       [str, tmp] = arg1;
-      const tmp3 = callback(str.split("-"), 2);
+      const tmp3 = outer1_3(str.split("-"), 2);
       const first = tmp3[0];
       if (null == tmp3[1]) {
         let flag = false;
@@ -178,15 +186,15 @@ const obj = {
         const _Date = Date;
         const _HermesInternal = HermesInternal;
         const date = new Date("" + first + "-" + arr.slice(0, 2) + "-01");
-        flag = date > arg1;
+        flag = date > closure_0;
       }
       while (true) {
         if (!flag) {
           break;
         } else {
-          let tmp13 = constants;
-          flag = tmp > constants.CONTROL;
-          // break
+          let tmp13 = outer1_6;
+          flag = tmp > outer1_6.CONTROL;
+          break;
         }
         if (flag) {
           arg0[str] = tmp;
@@ -196,7 +204,3 @@ const obj = {
     }, {});
   }
 };
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("utils/ExperimentUtils.tsx");
-
-export default obj;

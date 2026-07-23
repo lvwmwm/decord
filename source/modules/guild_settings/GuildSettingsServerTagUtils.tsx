@@ -1,24 +1,25 @@
-// Module ID: 8435
-// Function ID: 67328
+// Module ID: 8441
+// Function ID: 67365
 // Name: canUseMobileServerTagSettings
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: [1838, 3758, 653, 8442, 7845, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 8435 (canUseMobileServerTagSettings)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { Permissions } from "__exportStarResult1";
+// Module 8441 (canUseMobileServerTagSettings)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/guild_settings/GuildSettingsServerTagUtils.tsx");
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/guild_settings/GuildSettingsServerTagUtils.tsx");
 
 export const canUseMobileServerTagSettings = function canUseMobileServerTagSettings(guildId) {
   const guild = store.getGuild(guildId);
   let enabled = null != guild;
   if (enabled) {
-    enabled = closure_4.can(Permissions.MANAGE_GUILD, guild);
+    enabled = _isNativeReflectConstruct.can(Permissions.MANAGE_GUILD, guild);
   }
   if (enabled) {
-    let obj = importDefault(dependencyMap[3]);
+    let obj = importDefault(8442);
     obj = { location: "GuildSettingsServerTag" };
     enabled = obj.getConfig(obj).enabled;
   }
@@ -28,17 +29,17 @@ export const canViewMobileServerTag = function canViewMobileServerTag(id) {
   const guild = store.getGuild(id);
   let enabled = null != guild;
   if (enabled) {
-    let obj = arg1(dependencyMap[4]);
+    let obj = require(7845) /* getUserPrimaryGuild */;
     enabled = obj.guildSupportsTags(guild);
   }
   if (enabled) {
-    enabled = arg1(dependencyMap[4]).guildHasTag(guild);
-    const obj2 = arg1(dependencyMap[4]);
+    enabled = require(7845) /* getUserPrimaryGuild */.guildHasTag(guild);
+    const obj2 = require(7845) /* getUserPrimaryGuild */;
   }
   if (enabled) {
     obj = { location: "GuildSettingsServerTag" };
-    enabled = importDefault(dependencyMap[3]).getConfig(obj).enabled;
-    const obj3 = importDefault(dependencyMap[3]);
+    enabled = importDefault(8442).getConfig(obj).enabled;
+    const obj3 = importDefault(8442);
   }
   return enabled;
 };

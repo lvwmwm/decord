@@ -1,9 +1,19 @@
-// Module ID: 14019
-// Function ID: 106615
+// Module ID: 14133
+// Function ID: 108771
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 5621, 33, 14134, 566, 2]
 
-// Module 14019 (_isNativeReflectConstruct)
+// Module 14133 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importDefaultResult from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+import importDefaultResult1 from "initialize";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,27 +23,19 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const importDefaultResult = importDefault(dependencyMap[6]);
-const jsx = arg1(dependencyMap[7]).jsx;
-const importAllResult = importAll(dependencyMap[5]);
-const tmp4 = (PureComponent) => {
+const tmp4 = ((PureComponent) => {
   class PremiumRestorationAlert {
     constructor() {
       self = this;
-      tmp = closure_2(this, PremiumRestorationAlert);
-      obj = closure_5(PremiumRestorationAlert);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      tmp = outer1_2(this, PremiumRestorationAlert);
+      obj = outer1_5(PremiumRestorationAlert);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,7 +44,6 @@ const tmp4 = (PureComponent) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = PremiumRestorationAlert;
   callback2(PremiumRestorationAlert, PureComponent);
   const items = [
     {
@@ -51,15 +52,14 @@ const tmp4 = (PureComponent) => {
         let isBusy;
         let onClose;
         ({ isBusy, onClose } = this.props);
-        return callback3(PremiumRestorationAlert(closure_1[8]), { loading, onClose });
+        return outer1_8(PremiumRestorationAlert(outer1_1[8]), { loading, onClose });
       }
     }
   ];
   return callback(PremiumRestorationAlert, items);
-}(importAll(dependencyMap[5]).PureComponent);
-const items = [importDefaultResult];
-const importDefaultResult1 = importDefault(dependencyMap[9]);
-const tmp5 = importDefault(dependencyMap[9]).connectStores(items, () => ({ isBusy: importDefaultResult.isBusy() }))(tmp4);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("components_native/premium/PremiumRestorationAlert.tsx");
+})(require("result").PureComponent);
+let items = [importDefaultResult];
+const tmp5 = require("initialize").connectStores(items, () => ({ isBusy: importDefaultResult.isBusy() }))(tmp4);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/premium/PremiumRestorationAlert.tsx");
 
 export default tmp5;

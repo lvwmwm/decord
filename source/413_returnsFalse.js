@@ -1,18 +1,24 @@
 // Module ID: 413
 // Function ID: 5828
 // Name: returnsFalse
-// Dependencies: []
+// Dependencies: [57, 29, 31, 33, 325, 414]
 // Exports: default
 
 // Module 413 (returnsFalse)
-let closure_3 = [];
-let closure_4 = ["x", 399769602, 944832513, -866827257, -1362231292, -639238143, -162529279, 1985019905];
-let closure_5 = ["<string:3655729153>", "<string:4132438017>"];
-let closure_6 = importDefault(dependencyMap[0]);
-let closure_7 = importDefault(dependencyMap[1]);
-importAll(dependencyMap[2]);
-({ useLayoutEffect: closure_8, useRef: closure_9, useState: closure_10 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
+import _slicedToArray from "_slicedToArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import "result";
+import result from "result";
+import { jsx } from "jsxProd";
+
+let closure_10;
+let closure_8;
+let closure_9;
+const require = arg1;
+let closure_3 = ["ref"];
+let closure_4 = ["disabled", "ios_backgroundColor", "onChange", "onValueChange", "style", "thumbColor", "trackColor", "value"];
+let closure_5 = ["onTintColor", "tintColor"];
+({ useLayoutEffect: closure_8, useRef: closure_9, useState: closure_10 } = result);
 function returnsFalse() {
   return false;
 }
@@ -22,18 +28,20 @@ function returnsTrue() {
 
 export default function Switch(ref) {
   let disabled;
+  let importDefault;
   let ios_backgroundColor;
   let onTintColor;
+  let require;
   let style;
   let thumbColor;
   let tintColor;
   let trackColor;
   let value;
   const tmp = callback2(ref, closure_3);
-  ({ disabled, ios_backgroundColor, onChange: closure_0, onValueChange: closure_1, trackColor, value } = tmp);
+  ({ disabled, ios_backgroundColor, onChange: require, onValueChange: importDefault, trackColor, value } = tmp);
   const dependencyMap = value;
   ({ style, thumbColor } = tmp);
-  const tmp2 = callback2(tmp, closure_4);
+  let tmp2 = callback2(tmp, first);
   let _false;
   if (null != trackColor) {
     _false = trackColor.false;
@@ -45,8 +53,7 @@ export default function Switch(ref) {
   const tmp5 = callback4(null);
   closure_3 = tmp5;
   const tmp7 = callback(callback5({ value: null }), 2);
-  const first = tmp7[0];
-  closure_4 = first;
+  first = tmp7[0];
   let closure_5 = tmp7[1];
   const items = [value, first];
   callback3(() => {
@@ -63,7 +70,7 @@ export default function Switch(ref) {
       tmp2 = null != setNativeProps;
     }
     if (tmp2) {
-      const Commands = callback(value[5]).Commands;
+      const Commands = outer1_0(value[5]).Commands;
       Commands.setNativeValue(tmp5.current, tmp);
     }
   }, items);
@@ -102,7 +109,7 @@ export default function Switch(ref) {
   const accessibilityRole = tmp.accessibilityRole;
   let str = "switch";
   const tmp16 = jsx;
-  const tmp6 = importDefault(dependencyMap[4])(tmp5, ref.ref);
+  const tmp6 = importDefault(325)(tmp5, ref.ref);
   if (null != accessibilityRole) {
     str = accessibilityRole;
   }
@@ -119,5 +126,5 @@ export default function Switch(ref) {
   obj.onResponderTerminationRequest = returnsFalse;
   obj.onStartShouldSetResponder = returnsTrue;
   obj.ref = tmp6;
-  return tmp16(importDefault(dependencyMap[5]), Object.assign({}, tmp10, obj, obj));
+  return tmp16(importDefault(414), Object.assign({}, tmp10, obj, obj));
 };

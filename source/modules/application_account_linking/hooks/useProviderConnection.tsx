@@ -1,29 +1,31 @@
-// Module ID: 5480
-// Function ID: 46778
+// Module ID: 5483
+// Function ID: 46801
 // Name: useProviderConnection
-// Dependencies: []
+// Dependencies: [5, 31, 4812, 566, 4938, 2]
 // Exports: useProviderConnection
 
-// Module 5480 (useProviderConnection)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
+// Module 5483 (useProviderConnection)
+import set from "set";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
 
 export const useProviderConnection = function useProviderConnection(provider_id) {
-  const arg1 = provider_id;
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_5];
+  const _require = provider_id;
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let account = null;
-    if (null != arg0) {
-      account = closure_5.getAccount(null, arg0);
+    if (null != closure_0) {
+      account = outer1_5.getAccount(null, closure_0);
     }
     return account;
   });
-  const items1 = [closure_5];
+  const items1 = [_isNativeReflectConstruct];
   let tmp3 = null != stateFromStores;
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => closure_5.isFetching());
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_5.isFetching());
   if (tmp3) {
     tmp3 = !stateFromStores.revoked;
   }
@@ -32,8 +34,8 @@ export const useProviderConnection = function useProviderConnection(provider_id)
     loading: stateFromStores1,
     hasConnection: tmp3,
     canConnect: null != provider_id,
-    startConnection: React.useCallback(() => {
-      let closure_0 = callback(async (arg0) => {
+    startConnection: React.useCallback((() => {
+      let closure_0 = outer1_3(async (arg0) => {
         if (null == closure_0) {
           let obj = { success: false };
           return obj;
@@ -44,7 +46,7 @@ export const useProviderConnection = function useProviderConnection(provider_id)
             str = arg0;
           }
           obj.location = str;
-          const tmp = yield callback(closure_2[4]).authorize(closure_0, obj);
+          const tmp = yield outer3_1(outer3_2[4]).authorize(closure_0, obj);
           if (tmp.ok) {
             const body = tmp2.body;
             let url;
@@ -58,14 +60,14 @@ export const useProviderConnection = function useProviderConnection(provider_id)
             return obj;
           }
           obj = { success: false };
-          const obj4 = callback(closure_2[4]);
+          const obj4 = outer3_1(outer3_2[4]);
           const tmp8 = closure_0;
         }
       });
       return function() {
         return callback(...arguments);
       };
-    }(), items2),
+    })(), items2),
     account: stateFromStores
   };
   return obj;

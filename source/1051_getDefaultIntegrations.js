@@ -1,27 +1,29 @@
 // Module ID: 1051
-// Function ID: 11255
+// Function ID: 11256
 // Name: getDefaultIntegrations
-// Dependencies: []
+// Dependencies: [794, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1049, 1008, 1006]
 
 // Module 1051 (getDefaultIntegrations)
+const require = arg1;
+const dependencyMap = arg6;
 function getDefaultIntegrations(arg0) {
-  const items = [arg1(arg6[0]).inboundFiltersIntegration(), , , , , , , , ];
-  const obj = arg1(arg6[0]);
-  items[1] = arg1(arg6[0]).functionToStringIntegration();
-  const obj2 = arg1(arg6[0]);
-  items[2] = arg1(arg6[1]).browserApiErrorsIntegration();
-  const obj3 = arg1(arg6[1]);
-  items[3] = arg1(arg6[2]).breadcrumbsIntegration();
-  const obj4 = arg1(arg6[2]);
-  items[4] = arg1(arg6[3]).globalHandlersIntegration();
-  const obj5 = arg1(arg6[3]);
-  items[5] = arg1(arg6[4]).linkedErrorsIntegration();
-  const obj6 = arg1(arg6[4]);
-  items[6] = arg1(arg6[0]).dedupeIntegration();
-  const obj7 = arg1(arg6[0]);
-  items[7] = arg1(arg6[5]).httpContextIntegration();
-  const obj8 = arg1(arg6[5]);
-  items[8] = arg1(arg6[6]).browserSessionIntegration();
+  const items = [require(794) /* registerSpanErrorInstrumentation */.inboundFiltersIntegration(), , , , , , , , ];
+  const obj = require(794) /* registerSpanErrorInstrumentation */;
+  items[1] = require(794) /* registerSpanErrorInstrumentation */.functionToStringIntegration();
+  const obj2 = require(794) /* registerSpanErrorInstrumentation */;
+  items[2] = require(1052) /* _wrapTimeFunction */.browserApiErrorsIntegration();
+  const obj3 = require(1052) /* _wrapTimeFunction */;
+  items[3] = require(1053) /* breadcrumbsIntegration */.breadcrumbsIntegration();
+  const obj4 = require(1053) /* breadcrumbsIntegration */;
+  items[4] = require(1054) /* _getUnhandledRejectionError */.globalHandlersIntegration();
+  const obj5 = require(1054) /* _getUnhandledRejectionError */;
+  items[5] = require(1055) /* linkedErrorsIntegration */.linkedErrorsIntegration();
+  const obj6 = require(1055) /* linkedErrorsIntegration */;
+  items[6] = require(794) /* registerSpanErrorInstrumentation */.dedupeIntegration();
+  const obj7 = require(794) /* registerSpanErrorInstrumentation */;
+  items[7] = require(1056) /* httpContextIntegration */.httpContextIntegration();
+  const obj8 = require(1056) /* httpContextIntegration */;
+  items[8] = require(1057) /* browserSessionIntegration */.browserSessionIntegration();
   return items;
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
@@ -36,8 +38,8 @@ arg5.init = function init() {
     }
     let result = !first.skipBrowserExtensionCheck;
     if (result) {
-      result = arg1(arg6[7]).checkAndWarnIfIsEmbeddedBrowserExtension();
-      const obj2 = arg1(arg6[7]);
+      result = require(1058) /* checkAndWarnIfIsEmbeddedBrowserExtension */.checkAndWarnIfIsEmbeddedBrowserExtension();
+      const obj2 = require(1058) /* checkAndWarnIfIsEmbeddedBrowserExtension */;
     }
     if (null == first.defaultIntegrations) {
       let defaultIntegrations = getDefaultIntegrations();
@@ -52,20 +54,20 @@ arg5.init = function init() {
     obj.enabled = enabled;
     let defaultStackParser = first.stackParser;
     if (!defaultStackParser) {
-      defaultStackParser = arg1(arg6[8]).defaultStackParser;
+      defaultStackParser = require(1049) /* createFrame */.defaultStackParser;
     }
-    obj.stackParser = arg1(arg6[0]).stackParserFromStackParserOptions(defaultStackParser);
-    const obj4 = arg1(arg6[0]);
+    obj.stackParser = require(794) /* registerSpanErrorInstrumentation */.stackParserFromStackParserOptions(defaultStackParser);
+    const obj4 = require(794) /* registerSpanErrorInstrumentation */;
     obj = { integrations: first.integrations, defaultIntegrations };
-    obj.integrations = arg1(arg6[0]).getIntegrationsToSetup(obj);
+    obj.integrations = require(794) /* registerSpanErrorInstrumentation */.getIntegrationsToSetup(obj);
     let makeFetchTransport = first.transport;
     if (!makeFetchTransport) {
-      makeFetchTransport = arg1(arg6[9]).makeFetchTransport;
+      makeFetchTransport = require(1008) /* makeFetchTransport */.makeFetchTransport;
     }
     obj.transport = makeFetchTransport;
     const merged = Object.assign({}, first, obj);
-    const obj5 = arg1(arg6[0]);
-    return arg1(arg6[0]).initAndBind(arg1(arg6[10]).BrowserClient, merged);
+    const obj5 = require(794) /* registerSpanErrorInstrumentation */;
+    return require(794) /* registerSpanErrorInstrumentation */.initAndBind(require(1006) /* _isNativeReflectConstruct */.BrowserClient, merged);
   }
   first = {};
 };

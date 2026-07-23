@@ -1,9 +1,11 @@
 // Module ID: 1050
-// Function ID: 11253
+// Function ID: 11254
 // Name: createUserFeedbackEnvelope
-// Dependencies: []
+// Dependencies: [794]
 
 // Module 1050 (createUserFeedbackEnvelope)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.createUserFeedbackEnvelope = function createUserFeedbackEnvelope(event_id, tunnel) {
   let dsn;
@@ -25,13 +27,13 @@ arg5.createUserFeedbackEnvelope = function createUserFeedbackEnvelope(event_id, 
     tmp3 = dsn;
   }
   if (tmp3) {
-    const obj1 = { dsn: tunnel(arg6[0]).dsnToString(dsn) };
+    const obj1 = { dsn: require(794) /* registerSpanErrorInstrumentation */.dsnToString(dsn) };
     tmp3 = obj1;
-    const obj6 = tunnel(arg6[0]);
+    const obj6 = require(794) /* registerSpanErrorInstrumentation */;
   }
   const items = [{ type: "user_report" }, event_id];
   const merged = Object.assign(obj, sdk, tmp3);
   const date = new Date();
   const items1 = [items];
-  return tunnel(arg6[0]).createEnvelope(merged, items1);
+  return require(794) /* registerSpanErrorInstrumentation */.createEnvelope(merged, items1);
 };

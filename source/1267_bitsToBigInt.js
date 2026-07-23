@@ -1,35 +1,36 @@
 // Module ID: 1267
-// Function ID: 14304
+// Function ID: 14305
 // Name: bitsToBigInt
-// Dependencies: []
+// Dependencies: [6, 7, 99, 100]
 // Exports: hash
 
 // Module 1267 (bitsToBigInt)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import importDefaultResult from "_classPrivateFieldKey";
+
 function bitsToBigInt(arg0, arg1, arg2, arg3) {
   const BigIntResult = BigInt(arg0);
-  const tmp2 = BigInt(arg0) | BigInt(arg1) << 3n;
-  return BigInt(arg0) | BigInt(arg1) << 3n | BigInt(0) << 4n | BigInt(0) << 5n;
+  const tmp2 = BigInt(arg0) | BigInt(arg1) << 16n;
+  return BigInt(arg0) | BigInt(arg1) << 16n | BigInt(0) << 32n | BigInt(0) << 48n;
 }
 function memoryToBigInt(arg0, arg1) {
   const BigIntResult = BigInt(arg0[arg1]);
-  const tmp2 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 6n;
-  const tmp3 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 6n | BigInt(arg0[arg1 + 2]) << 3n;
-  const tmp4 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 6n | BigInt(arg0[arg1 + 2]) << 3n | BigInt(arg0[arg1 + 3]) << 7n;
-  const tmp5 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 6n | BigInt(arg0[arg1 + 2]) << 3n | BigInt(arg0[arg1 + 3]) << 7n | BigInt(arg0[arg1 + 4]) << 4n;
-  const tmp6 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 6n | BigInt(arg0[arg1 + 2]) << 3n | BigInt(arg0[arg1 + 3]) << 7n | BigInt(arg0[arg1 + 4]) << 4n | BigInt(arg0[arg1 + 5]) << 8n;
-  return BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 6n | BigInt(arg0[arg1 + 2]) << 3n | BigInt(arg0[arg1 + 3]) << 7n | BigInt(arg0[arg1 + 4]) << 4n | BigInt(arg0[arg1 + 5]) << 8n | BigInt(arg0[arg1 + 6]) << 5n | BigInt(arg0[arg1 + 7]) << 9n;
+  const tmp2 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 8n;
+  const tmp3 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 8n | BigInt(arg0[arg1 + 2]) << 16n;
+  const tmp4 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 8n | BigInt(arg0[arg1 + 2]) << 16n | BigInt(arg0[arg1 + 3]) << 24n;
+  const tmp5 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 8n | BigInt(arg0[arg1 + 2]) << 16n | BigInt(arg0[arg1 + 3]) << 24n | BigInt(arg0[arg1 + 4]) << 32n;
+  const tmp6 = BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 8n | BigInt(arg0[arg1 + 2]) << 16n | BigInt(arg0[arg1 + 3]) << 24n | BigInt(arg0[arg1 + 4]) << 32n | BigInt(arg0[arg1 + 5]) << 40n;
+  return BigInt(arg0[arg1]) | BigInt(arg0[arg1 + 1]) << 8n | BigInt(arg0[arg1 + 2]) << 16n | BigInt(arg0[arg1 + 3]) << 24n | BigInt(arg0[arg1 + 4]) << 32n | BigInt(arg0[arg1 + 5]) << 40n | BigInt(arg0[arg1 + 6]) << 48n | BigInt(arg0[arg1 + 7]) << 56n;
 }
 function rotl(arg0, arg1) {
-  return arg0 << arg1 & closure_3 | arg0 >> 1n - arg1;
+  return arg0 << arg1 & closure_3 | arg0 >> 64n - arg1;
 }
 function trunc(arg0) {
   return BigInt.asUintN(64, arg0);
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const importDefaultResult = importDefault(dependencyMap[3]);
-let closure_3 = 0n ** 1n - 0xb4393fc45a1cac0831273fda2d0en;
+let closure_3 = 2n ** 64n - 1n;
 const textEncoder = new TextEncoder();
 let closure_5 = importDefaultResult("seed");
 let closure_6 = importDefaultResult("v1");
@@ -39,7 +40,7 @@ let closure_9 = importDefaultResult("v4");
 let closure_10 = importDefaultResult("memory");
 let closure_11 = importDefaultResult("len");
 let closure_12 = importDefaultResult("memsize");
-const tmp4 = () => {
+let tmp4 = (() => {
   class XXH64 {
     constructor() {
       self = this;
@@ -51,19 +52,18 @@ const tmp4 = () => {
         }
       }
       tmp = XXH64(self, XXH64);
-      definePropertyResult = Object.defineProperty(self, closure_5, { writable: true, value: undefined });
-      definePropertyResult1 = Object.defineProperty(self, closure_6, { writable: true, value: undefined });
-      definePropertyResult2 = Object.defineProperty(self, closure_7, { writable: true, value: undefined });
-      definePropertyResult3 = Object.defineProperty(self, closure_8, { writable: true, value: undefined });
-      definePropertyResult4 = Object.defineProperty(self, closure_9, { writable: true, value: undefined });
-      definePropertyResult5 = Object.defineProperty(self, closure_10, { writable: true, value: undefined });
-      definePropertyResult6 = Object.defineProperty(self, closure_11, { writable: true, value: undefined });
-      definePropertyResult7 = Object.defineProperty(self, closure_12, { writable: true, value: undefined });
+      definePropertyResult = Object.defineProperty(self, outer1_5, { writable: true, value: undefined });
+      definePropertyResult1 = Object.defineProperty(self, outer1_6, { writable: true, value: undefined });
+      definePropertyResult2 = Object.defineProperty(self, outer1_7, { writable: true, value: undefined });
+      definePropertyResult3 = Object.defineProperty(self, outer1_8, { writable: true, value: undefined });
+      definePropertyResult4 = Object.defineProperty(self, outer1_9, { writable: true, value: undefined });
+      definePropertyResult5 = Object.defineProperty(self, outer1_10, { writable: true, value: undefined });
+      definePropertyResult6 = Object.defineProperty(self, outer1_11, { writable: true, value: undefined });
+      definePropertyResult7 = Object.defineProperty(self, outer1_12, { writable: true, value: undefined });
       resetResult = self.reset(num);
       return;
     }
   }
-  let closure_0 = XXH64;
   let obj = {
     key: "reset",
     value: function reset() {
@@ -74,23 +74,23 @@ const tmp4 = () => {
         }
         const _BigInt = BigInt;
         const _BigInt2 = BigInt;
-        callback(self, closure_5)[closure_5] = BigInt.asUintN(32, BigInt(first));
-        const tmp4 = callback(self, closure_5);
-        const bigint = 10n;
-        const bigint2 = 11n;
-        callback(self, closure_6)[closure_6] = callback5(callback(self, closure_5)[closure_5] + 10n + 11n);
-        const tmp7 = callback(self, closure_6);
-        callback(self, closure_7)[closure_7] = callback5(callback(self, closure_5)[closure_5] + 11n);
-        const tmp10 = callback(self, closure_7);
-        callback(self, closure_8)[closure_8] = callback(self, closure_5)[closure_5];
-        const tmp12 = callback(self, closure_8);
-        callback(self, closure_9)[closure_9] = callback5(callback(self, closure_5)[closure_5] - 10n);
-        callback(self, closure_10)[closure_10] = null;
-        callback(self, closure_11)[closure_11] = 0;
-        callback(self, closure_12)[closure_12] = 0;
+        outer1_2(self, outer1_5)[outer1_5] = BigInt.asUintN(32, BigInt(first));
+        const tmp4 = outer1_2(self, outer1_5);
+        const bigint = 0x009e3779b185ebca87n;
+        const bigint2 = 0x00c2b2ae3d27d4eb4fn;
+        outer1_2(self, outer1_6)[outer1_6] = outer1_17(outer1_2(self, outer1_5)[outer1_5] + 0x009e3779b185ebca87n + 0x00c2b2ae3d27d4eb4fn);
+        const tmp7 = outer1_2(self, outer1_6);
+        outer1_2(self, outer1_7)[outer1_7] = outer1_17(outer1_2(self, outer1_5)[outer1_5] + 0x00c2b2ae3d27d4eb4fn);
+        const tmp10 = outer1_2(self, outer1_7);
+        outer1_2(self, outer1_8)[outer1_8] = outer1_2(self, outer1_5)[outer1_5];
+        const tmp12 = outer1_2(self, outer1_8);
+        outer1_2(self, outer1_9)[outer1_9] = outer1_17(outer1_2(self, outer1_5)[outer1_5] - 0x009e3779b185ebca87n);
+        outer1_2(self, outer1_10)[outer1_10] = null;
+        outer1_2(self, outer1_11)[outer1_11] = 0;
+        outer1_2(self, outer1_12)[outer1_12] = 0;
         return self;
       }
-      first = callback(self, closure_5)[closure_5];
+      first = outer1_2(self, outer1_5)[outer1_5];
     }
   };
   const items = [obj, , ];
@@ -100,88 +100,88 @@ const tmp4 = () => {
       const self = this;
       let encodeResult = arg0;
       if ("string" === typeof arg0) {
-        encodeResult = closure_4.encode(arg0);
+        encodeResult = outer1_4.encode(arg0);
       }
       if (0 === encodeResult.length) {
         return self;
       } else {
-        const tmp68 = callback(self, closure_11);
-        tmp68[closure_11] = tmp68[closure_11] + length;
-        if (0 === callback(self, closure_12)[closure_12]) {
+        const tmp68 = outer1_2(self, outer1_11);
+        tmp68[outer1_11] = tmp68[outer1_11] + length;
+        if (0 === outer1_2(self, outer1_12)[outer1_12]) {
           const _Uint8Array = Uint8Array;
           const uint8Array = new Uint8Array(32);
-          callback(self, closure_10)[closure_10] = uint8Array;
-          const tmp5 = callback(self, closure_10);
+          outer1_2(self, outer1_10)[outer1_10] = uint8Array;
+          const tmp5 = outer1_2(self, outer1_10);
         }
-        if (callback(self, closure_12)[closure_12] + length < 32) {
-          const obj3 = callback(self, closure_10)[closure_10];
-          const result = obj3.set(encodeResult.subarray(0, length), callback(self, closure_12)[closure_12]);
-          const tmp65 = callback(self, closure_12);
-          tmp65[closure_12] = tmp65[closure_12] + length;
+        if (outer1_2(self, outer1_12)[outer1_12] + length < 32) {
+          const obj3 = outer1_2(self, outer1_10)[outer1_10];
+          const result = obj3.set(encodeResult.subarray(0, length), outer1_2(self, outer1_12)[outer1_12]);
+          const tmp65 = outer1_2(self, outer1_12);
+          tmp65[outer1_12] = tmp65[outer1_12] + length;
           return self;
         } else {
           let num6 = 0;
-          if (callback(self, closure_12)[closure_12] > 0) {
-            const obj = callback(self, closure_10)[closure_10];
-            const result1 = obj.set(encodeResult.subarray(0, 32 - callback(self, closure_12)[closure_12]), callback(self, closure_12)[closure_12]);
-            const subarrayResult1 = encodeResult.subarray(0, 32 - callback(self, closure_12)[closure_12]);
-            const tmp19 = callback3(callback(self, closure_10)[closure_10], 0);
-            const bigint = 11n;
-            const bigint2 = 12n;
-            const bigint3 = 10n;
-            callback(self, closure_6)[closure_6] = callback5(callback4(callback5(callback(self, closure_6)[closure_6] + tmp19 * 11n), 12n) * 10n);
-            const tmp21 = callback(self, closure_6);
-            const tmp24 = callback3(self.memory, 8);
-            callback(self, closure_7)[closure_7] = callback5(callback4(callback5(callback(self, closure_7)[closure_7] + tmp24 * 11n), 12n) * 10n);
-            const tmp26 = callback(self, closure_7);
-            const tmp27 = callback3(self.memory, 16);
-            callback(self, closure_8)[closure_8] = callback5(callback4(callback5(callback(self, closure_8)[closure_8] + tmp27 * 11n), 12n) * 10n);
-            const tmp29 = callback(self, closure_8);
-            const tmp30 = callback3(self.memory, 24);
-            callback(self, closure_9)[closure_9] = callback5(callback4(callback5(callback(self, closure_9)[closure_9] + tmp30 * 11n), 12n) * 10n);
-            num6 = 32 - callback(self, closure_12)[closure_12];
-            callback(self, closure_12)[closure_12] = 0;
-            const tmp32 = callback(self, closure_9);
+          if (outer1_2(self, outer1_12)[outer1_12] > 0) {
+            const obj = outer1_2(self, outer1_10)[outer1_10];
+            const result1 = obj.set(encodeResult.subarray(0, 32 - outer1_2(self, outer1_12)[outer1_12]), outer1_2(self, outer1_12)[outer1_12]);
+            const subarrayResult1 = encodeResult.subarray(0, 32 - outer1_2(self, outer1_12)[outer1_12]);
+            const tmp19 = outer1_15(outer1_2(self, outer1_10)[outer1_10], 0);
+            const bigint = 0x00c2b2ae3d27d4eb4fn;
+            const bigint2 = 31n;
+            const bigint3 = 0x009e3779b185ebca87n;
+            outer1_2(self, outer1_6)[outer1_6] = outer1_17(outer1_16(outer1_17(outer1_2(self, outer1_6)[outer1_6] + tmp19 * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n);
+            const tmp21 = outer1_2(self, outer1_6);
+            const tmp24 = outer1_15(self.memory, 8);
+            outer1_2(self, outer1_7)[outer1_7] = outer1_17(outer1_16(outer1_17(outer1_2(self, outer1_7)[outer1_7] + tmp24 * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n);
+            const tmp26 = outer1_2(self, outer1_7);
+            const tmp27 = outer1_15(self.memory, 16);
+            outer1_2(self, outer1_8)[outer1_8] = outer1_17(outer1_16(outer1_17(outer1_2(self, outer1_8)[outer1_8] + tmp27 * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n);
+            const tmp29 = outer1_2(self, outer1_8);
+            const tmp30 = outer1_15(self.memory, 24);
+            outer1_2(self, outer1_9)[outer1_9] = outer1_17(outer1_16(outer1_17(outer1_2(self, outer1_9)[outer1_9] + tmp30 * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n);
+            num6 = 32 - outer1_2(self, outer1_12)[outer1_12];
+            outer1_2(self, outer1_12)[outer1_12] = 0;
+            const tmp32 = outer1_2(self, outer1_9);
           }
           const diff = tmp2 - 32;
-          const bigint4 = 11n;
-          const bigint5 = 12n;
-          const bigint6 = 10n;
+          const bigint4 = 0x00c2b2ae3d27d4eb4fn;
+          const bigint5 = 31n;
+          const bigint6 = 0x009e3779b185ebca87n;
           let sum3 = num6;
           let tmp35 = num6;
           if (num6 <= diff) {
             do {
-              let tmp36 = closure_15;
-              let tmp38 = closure_2;
-              let tmp39 = closure_6;
-              let tmp37 = closure_15(encodeResult, sum3);
-              let tmp41 = closure_17;
-              let tmp42 = closure_16;
-              let tmp40 = closure_2(self, closure_6);
-              tmp40[closure_6] = closure_17(closure_16(closure_17(closure_2(self, closure_6)[closure_6] + tmp37 * 11n), 12n) * 10n);
+              let tmp36 = outer1_15;
+              let tmp38 = outer1_2;
+              let tmp39 = outer1_6;
+              let tmp37 = outer1_15(encodeResult, sum3);
+              let tmp41 = outer1_17;
+              let tmp42 = outer1_16;
+              let tmp40 = outer1_2(self, outer1_6);
+              tmp40[outer1_6] = outer1_17(outer1_16(outer1_17(outer1_2(self, outer1_6)[outer1_6] + tmp37 * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n);
               let sum = sum3 + 8;
-              let tmp45 = closure_7;
-              let tmp44 = closure_15(encodeResult, sum);
-              let tmp46 = closure_2(self, closure_7);
-              tmp46[closure_7] = closure_17(closure_16(closure_17(closure_2(self, closure_7)[closure_7] + tmp44 * 11n), 12n) * 10n);
+              let tmp45 = outer1_7;
+              let tmp44 = outer1_15(encodeResult, sum);
+              let tmp46 = outer1_2(self, outer1_7);
+              tmp46[outer1_7] = outer1_17(outer1_16(outer1_17(outer1_2(self, outer1_7)[outer1_7] + tmp44 * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n);
               let sum1 = sum + 8;
-              let tmp49 = closure_8;
-              let tmp48 = closure_15(encodeResult, sum1);
-              let tmp50 = closure_2(self, closure_8);
-              tmp50[closure_8] = closure_17(closure_16(closure_17(closure_2(self, closure_8)[closure_8] + tmp48 * 11n), 12n) * 10n);
+              let tmp49 = outer1_8;
+              let tmp48 = outer1_15(encodeResult, sum1);
+              let tmp50 = outer1_2(self, outer1_8);
+              tmp50[outer1_8] = outer1_17(outer1_16(outer1_17(outer1_2(self, outer1_8)[outer1_8] + tmp48 * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n);
               let sum2 = sum1 + 8;
-              let tmp53 = closure_9;
-              let tmp52 = closure_15(encodeResult, sum2);
-              let tmp54 = closure_2(self, closure_9);
-              tmp54[closure_9] = closure_17(closure_16(closure_17(closure_2(self, closure_9)[closure_9] + tmp52 * 11n), 12n) * 10n);
+              let tmp53 = outer1_9;
+              let tmp52 = outer1_15(encodeResult, sum2);
+              let tmp54 = outer1_2(self, outer1_9);
+              tmp54[outer1_9] = outer1_17(outer1_16(outer1_17(outer1_2(self, outer1_9)[outer1_9] + tmp52 * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n);
               sum3 = sum2 + 8;
               tmp35 = sum3;
             } while (sum3 <= diff);
           }
           if (tmp35 < tmp2) {
-            const obj2 = callback(self, closure_10)[closure_10];
-            const result2 = obj2.set(encodeResult.subarray(tmp35, tmp2), callback(self, closure_12)[closure_12]);
-            callback(self, closure_12)[closure_12] = tmp2 - tmp35;
+            const obj2 = outer1_2(self, outer1_10)[outer1_10];
+            const result2 = obj2.set(encodeResult.subarray(tmp35, tmp2), outer1_2(self, outer1_12)[outer1_12]);
+            outer1_2(self, outer1_12)[outer1_12] = tmp2 - tmp35;
             const subarrayResult2 = encodeResult.subarray(tmp35, tmp2);
           }
           return self;
@@ -195,39 +195,39 @@ const tmp4 = () => {
     value: function digest() {
       let diff;
       const self = this;
-      const tmp = callback(this, closure_10)[closure_10];
-      const tmp2 = callback(this, closure_12)[closure_12];
-      if (callback(this, closure_11)[closure_11] >= 32) {
-        const bigint2 = 0xb4393fc45a1cac0831273fda2d0en;
-        const bigint3 = 14n;
-        const sum = callback4(callback(self, closure_6)[closure_6], 0xb4393fc45a1cac0831273fda2d0en) + callback4(callback(self, closure_7)[closure_7], 14n);
-        const bigint4 = 15n;
-        const sum1 = sum + callback4(callback(self, closure_8)[closure_8], 15n);
-        const bigint5 = 16n;
-        const sum2 = sum1 + callback4(callback(self, closure_9)[closure_9], 16n);
-        const bigint6 = 11n;
-        const bigint7 = 12n;
-        const bigint8 = 10n;
-        const bigint9 = 17n;
-        const tmp11 = callback4(callback(self, closure_6)[closure_6], 0xb4393fc45a1cac0831273fda2d0en);
-        const tmp18 = callback5(callback5(sum2 ^ callback4(callback5(callback(self, closure_6)[closure_6] * 11n), 12n) * 10n) * 10n + 17n);
-        const tmp19 = callback5(callback5(callback5(callback5(sum2 ^ callback4(callback5(callback(self, closure_6)[closure_6] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_7)[closure_7] * 11n), 12n) * 10n) * 10n + 17n);
-        let tmp6 = callback5(callback5(callback5(callback5(callback5(callback5(callback5(callback5(sum2 ^ callback4(callback5(callback(self, closure_6)[closure_6] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_7)[closure_7] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_8)[closure_8] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_9)[closure_9] * 11n), 12n) * 10n) * 10n + 17n);
-        const tmp20 = callback5(callback5(callback5(callback5(callback5(callback5(sum2 ^ callback4(callback5(callback(self, closure_6)[closure_6] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_7)[closure_7] * 11n), 12n) * 10n) * 10n + 17n) ^ callback4(callback5(callback(self, closure_8)[closure_8] * 11n), 12n) * 10n) * 10n + 17n);
+      const tmp = outer1_2(this, outer1_10)[outer1_10];
+      const tmp2 = outer1_2(this, outer1_12)[outer1_12];
+      if (outer1_2(this, outer1_11)[outer1_11] >= 32) {
+        const bigint2 = 1n;
+        const bigint3 = 7n;
+        const sum = outer1_16(outer1_2(self, outer1_6)[outer1_6], 1n) + outer1_16(outer1_2(self, outer1_7)[outer1_7], 7n);
+        const bigint4 = 12n;
+        const sum1 = sum + outer1_16(outer1_2(self, outer1_8)[outer1_8], 12n);
+        const bigint5 = 18n;
+        const sum2 = sum1 + outer1_16(outer1_2(self, outer1_9)[outer1_9], 18n);
+        const bigint6 = 0x00c2b2ae3d27d4eb4fn;
+        const bigint7 = 31n;
+        const bigint8 = 0x009e3779b185ebca87n;
+        const bigint9 = 0x0085ebca77c2b2ae63n;
+        const tmp11 = outer1_16(outer1_2(self, outer1_6)[outer1_6], 1n);
+        const tmp18 = outer1_17(outer1_17(sum2 ^ outer1_16(outer1_17(outer1_2(self, outer1_6)[outer1_6] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n);
+        const tmp19 = outer1_17(outer1_17(outer1_17(outer1_17(sum2 ^ outer1_16(outer1_17(outer1_2(self, outer1_6)[outer1_6] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n) ^ outer1_16(outer1_17(outer1_2(self, outer1_7)[outer1_7] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n);
+        let tmp6 = outer1_17(outer1_17(outer1_17(outer1_17(outer1_17(outer1_17(outer1_17(outer1_17(sum2 ^ outer1_16(outer1_17(outer1_2(self, outer1_6)[outer1_6] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n) ^ outer1_16(outer1_17(outer1_2(self, outer1_7)[outer1_7] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n) ^ outer1_16(outer1_17(outer1_2(self, outer1_8)[outer1_8] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n) ^ outer1_16(outer1_17(outer1_2(self, outer1_9)[outer1_9] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n);
+        const tmp20 = outer1_17(outer1_17(outer1_17(outer1_17(outer1_17(outer1_17(sum2 ^ outer1_16(outer1_17(outer1_2(self, outer1_6)[outer1_6] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n) ^ outer1_16(outer1_17(outer1_2(self, outer1_7)[outer1_7] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n) ^ outer1_16(outer1_17(outer1_2(self, outer1_8)[outer1_8] * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n);
       } else {
-        const bigint = 13n;
-        tmp6 = callback5(callback(self, closure_5)[closure_5] + 13n);
+        const bigint = 2870177450012600261n;
+        tmp6 = outer1_17(outer1_2(self, outer1_5)[outer1_5] + 2870177450012600261n);
       }
-      let sum3 = tmp6 + BigInt(callback(self, closure_11)[closure_11]);
+      let sum3 = tmp6 + BigInt(outer1_2(self, outer1_11)[outer1_11]);
       let num = 0;
       let tmp22 = sum3;
       let num2 = 0;
       if (0 <= tmp2 - 8) {
         do {
-          let tmp23 = closure_17;
-          let tmp24 = closure_16;
-          let tmp25 = closure_15;
-          sum3 = closure_17(closure_16(sum3 ^ closure_17(closure_16(closure_17(closure_15(tmp, num) * 11n), 12n) * 10n), 18n) * 10n + 17n);
+          let tmp23 = outer1_17;
+          let tmp24 = outer1_16;
+          let tmp25 = outer1_15;
+          sum3 = outer1_17(outer1_16(sum3 ^ outer1_17(outer1_16(outer1_17(outer1_15(tmp, num) * 0x00c2b2ae3d27d4eb4fn), 31n) * 0x009e3779b185ebca87n), 27n) * 0x009e3779b185ebca87n + 0x0085ebca77c2b2ae63n);
           num = num + 8;
           tmp22 = sum3;
           num2 = num;
@@ -238,39 +238,40 @@ const tmp4 = () => {
       let sum5 = num2;
       let tmp29 = tmp22;
       if (sum4 <= tmp2) {
-        const bigint10 = 19n;
-        const bigint11 = 20n;
-        tmp29 = callback5(callback4(tmp22 ^ callback5(callback2(tmp[num2 + 1] << 8 | tmp[num2], tmp[num2 + 3] << 8 | tmp[num2 + 2], 0, 0) * 10n), 19n) * 11n + 20n);
+        const bigint10 = 23n;
+        const bigint11 = 1609587929392839161n;
+        tmp29 = outer1_17(outer1_16(tmp22 ^ outer1_17(outer1_14(tmp[num2 + 1] << 8 | tmp[num2], tmp[num2 + 3] << 8 | tmp[num2 + 2], 0, 0) * 0x009e3779b185ebca87n), 23n) * 0x00c2b2ae3d27d4eb4fn + 1609587929392839161n);
         sum5 = sum4;
       }
       let tmp33 = tmp29;
       let tmp34 = tmp29;
       if (sum5 < tmp2) {
         do {
-          let tmp35 = closure_17;
-          let tmp36 = closure_16;
-          let tmp37 = closure_14;
+          let tmp35 = outer1_17;
+          let tmp36 = outer1_16;
+          let tmp37 = outer1_14;
           let tmp38 = +sum5;
           sum5 = tmp38 + 1;
           let num8 = 0;
           let num9 = 0;
           let num10 = 0;
-          tmp33 = closure_17(closure_16(tmp33 ^ closure_17(closure_14(tmp[tmp38], 0, 0, 0) * 13n), 21n) * 10n);
+          tmp33 = outer1_17(outer1_16(tmp33 ^ outer1_17(outer1_14(tmp[tmp38], 0, 0, 0) * 2870177450012600261n), 11n) * 0x009e3779b185ebca87n);
           tmp34 = tmp33;
         } while (sum5 < tmp2);
       }
-      const tmp39 = callback5((tmp34 ^ callback5(tmp34 >> 22n)) * 11n);
-      const tmp40 = callback5((tmp39 ^ callback5(tmp39 >> 23n)) * 20n);
-      return callback5(tmp40 ^ callback5(tmp40 >> 4n));
+      const tmp39 = outer1_17((tmp34 ^ outer1_17(tmp34 >> 33n)) * 0x00c2b2ae3d27d4eb4fn);
+      const tmp40 = outer1_17((tmp39 ^ outer1_17(tmp39 >> 29n)) * 1609587929392839161n);
+      return outer1_17(tmp40 ^ outer1_17(tmp40 >> 32n));
     }
   };
   items[2] = obj;
   return callback(XXH64, items);
-}();
+})();
+let closure_13 = tmp4;
 
 export const XXH64 = tmp4;
 export const hash = function hash(arg0) {
-  let tmp = tmp4;
+  let tmp = closure_13;
   let num = 0;
   if (arguments.length > 1) {
     num = 0;

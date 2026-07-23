@@ -1,7 +1,7 @@
 // Module ID: 665
 // Function ID: 8033
 // Name: pad2
-// Dependencies: []
+// Dependencies: [666, 2]
 // Exports: getContrast, getDarkness, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgba, isValidHex, rgb2int
 
 // Module 665 (pad2)
@@ -65,12 +65,11 @@ function getLuminance(arg0, arg1, arg2) {
   });
   return 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
 }
-let closure_2 = /rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d*)?)\))?/;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/utils/ColorUtils.tsx");
+const re2 = /rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d*)?)\))?/;
+let result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/ColorUtils.tsx");
 
 export const hex2int = function hex2int(first) {
-  return importDefault(dependencyMap[0])(first).num();
+  return importDefault(666)(first).num();
 };
 export const int2hex = function int2hex(color) {
   if (color <= 16777215) {
@@ -157,7 +156,7 @@ export const hex2rgb = function hex2rgb(PRIMARY_200, self) {
     alphaResult = null;
   }
   if (obj.valid(PRIMARY_200)) {
-    const obj2 = importDefault(dependencyMap[0])(PRIMARY_200);
+    const obj2 = importDefault(666)(PRIMARY_200);
     if (null == alphaResult) {
       alphaResult = obj2.alpha();
     }
@@ -165,14 +164,14 @@ export const hex2rgb = function hex2rgb(PRIMARY_200, self) {
   } else {
     return null;
   }
-  const obj = importDefault(dependencyMap[0]);
+  obj = importDefault(666);
 };
-export const int2rgba = function int2rgba(primaryColor, arg1) {
+export const int2rgba = function int2rgba(pad2, arg1) {
   let result = arg1;
   if (null == arg1) {
-    result = (primaryColor >> 24 & 255) / 255;
+    result = (pad2 >> 24 & 255) / 255;
   }
-  return "rgba(" + primaryColor >> 16 & 255 + ", " + primaryColor >> 8 & 255 + ", " + 255 & primaryColor + ", " + result + ")";
+  return "rgba(" + pad2 >> 16 & 255 + ", " + pad2 >> 8 & 255 + ", " + 255 & pad2 + ", " + result + ")";
 };
 export const rgb2int = function rgb2int(str) {
   const match = str.match(closure_2);
@@ -185,7 +184,7 @@ export const rgb2int = function rgb2int(str) {
     const _parseInt3 = parseInt;
     obj.blue = parseInt(match[3]);
   } else {
-    obj = { "Bool(true)": "spring", "Bool(true)": 0.4, "Bool(true)": 1 };
+    obj = { red: 0, green: 0, blue: 0 };
   }
   return (obj.red << 16) + (obj.green << 8) + obj.blue;
 };
@@ -226,7 +225,7 @@ export const getDarkness = function getDarkness(hex2intResult) {
   return 1 - (0.299 * (hex2intResult >> 16 & 255) + 0.587 * (hex2intResult >> 8 & 255) + 0.114 * (255 & hex2intResult)) / 255;
 };
 export const isValidHex = function isValidHex(arg0) {
-  return importDefault(dependencyMap[0]).valid(arg0);
+  return importDefault(666).valid(arg0);
 };
 export { int2rgbArray };
 export { getLuminance };

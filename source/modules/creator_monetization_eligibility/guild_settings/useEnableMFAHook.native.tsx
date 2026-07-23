@@ -1,15 +1,14 @@
-// Module ID: 16267
-// Function ID: 125672
+// Module ID: 16384
+// Function ID: 127846
 // Name: passthrough
-// Dependencies: []
+// Dependencies: [2]
 // Exports: useEnableMFAHook
 
-// Module 16267 (passthrough)
+// Module 16384 (passthrough)
 function passthrough(arg0) {
   return arg0;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useEnableMFAHook.native.tsx");
+const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useEnableMFAHook.native.tsx");
 
 export function useEnableMFAHook(arg0) {
   return passthrough;

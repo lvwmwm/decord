@@ -1,20 +1,27 @@
-// Module ID: 6990
-// Function ID: 55905
+// Module ID: 6995
+// Function ID: 55939
 // Name: userRecordToServer
-// Dependencies: []
+// Dependencies: [6830, 1857, 1849, 653, 44, 6996, 2]
 // Exports: createBotMessage, default
 
-// Module 6990 (userRecordToServer)
+// Module 6995 (userRecordToServer)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ReferencedMessageState } from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_10;
+let closure_11;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function userRecordToServer(author) {
   return { id: author.id, username: author.username, avatar: author.avatar, discriminator: author.discriminator, bot: author.bot, global_name: author.globalName, primary_guild: author.primaryGuild };
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const ReferencedMessageState = arg1(dependencyMap[0]).ReferencedMessageState;
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-({ MessageStates: closure_7, MessageTypes: closure_8, LOCAL_BOT_ID: closure_9, NON_USER_BOT_DISCRIMINATOR: closure_10, MessageFlags: closure_11 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/messages/createMessage.tsx");
+({ MessageStates: closure_7, MessageTypes: closure_8, LOCAL_BOT_ID: closure_9, NON_USER_BOT_DISCRIMINATOR: closure_10, MessageFlags: closure_11 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/createMessage.tsx");
 
 export default function createMessage(tts) {
   let allowedMentions;
@@ -44,9 +51,9 @@ export default function createMessage(tts) {
   const items = [];
   ({ flags, poll, sharedCustomTheme, changelogId, giftingPrompt, boostingPrompt, mediaMention } = tts);
   if (DEFAULT === constants2.REPLY) {
-    importDefault(dependencyMap[4])(null != messageReference, "Replies must have a message reference");
+    importDefault(44)(null != messageReference, "Replies must have a message reference");
     if (null == allowedMentions) {
-      const messageByReference = messageByReference.getMessageByReference(messageReference);
+      messageByReference = messageByReference.getMessageByReference(messageReference);
       state = undefined;
       if (null != messageByReference) {
         state = messageByReference.state;
@@ -63,11 +70,11 @@ export default function createMessage(tts) {
   if (author instanceof closure_5) {
     tmp9 = userRecordToServer(author);
   }
-  importDefault(dependencyMap[4])(null != tmp9, "createMessage: author cannot be undefined");
+  importDefault(44)(null != tmp9, "createMessage: author cannot be undefined");
   const obj = {};
   if (null == nonce) {
-    nonce = arg1(dependencyMap[5]).createNonce();
-    const obj2 = arg1(dependencyMap[5]);
+    nonce = require(6996) /* snowflakeSequence */.createNonce();
+    const obj2 = require(6996) /* snowflakeSequence */;
   }
   obj.id = nonce;
   obj.type = DEFAULT;
@@ -110,15 +117,15 @@ export const createBotMessage = function createBotMessage(arg0) {
   let obj = {};
   ({ channelId, content, loggingName } = arg0);
   if (null == messageId) {
-    messageId = arg1(dependencyMap[5]).createNonce();
-    const obj2 = arg1(dependencyMap[5]);
+    messageId = require(6996) /* snowflakeSequence */.createNonce();
+    const obj2 = require(6996) /* snowflakeSequence */;
   }
   obj.id = messageId;
   obj.type = constants2.DEFAULT;
   obj.flags = constants3.EPHEMERAL;
   obj.content = content;
   obj.channel_id = channelId;
-  obj = { =: 49449728, 9: 53017344, 7: 53017344, -: 49446656, 8: 49446656, id: closure_9, discriminator: closure_10 };
+  obj = { id: closure_9, username: "Clyde", discriminator: closure_10, avatar: "clyde", bot: true };
   obj.author = obj;
   obj.attachments = [];
   if (null == embeds) {

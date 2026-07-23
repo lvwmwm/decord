@@ -1,5 +1,5 @@
 // Module ID: 1290
-// Function ID: 15084
+// Function ID: 15085
 // Name: varint64read
 // Dependencies: []
 
@@ -15,6 +15,7 @@ arg5.varint64read = function varint64read() {
   let num = 0;
   let num2 = 0;
   self.pos = +self.pos + 1;
+  const tmp3 = num | (127 & self.buf[+self.pos]) << num2;
   while (128 & self.buf[+self.pos]) {
     num2 = num2 + 7;
     num = tmp3;
@@ -63,7 +64,7 @@ arg5.varint64read = function varint64read() {
     }
   }
   self.assertBounds();
-  const items2 = [num | (127 & self.buf[+self.pos]) << num2, 0];
+  const items2 = [tmp3, 0];
   return items2;
 };
 arg5.varint64write = function varint64write(lo, hi, buf) {
@@ -123,8 +124,8 @@ arg5.varint64write = function varint64write(lo, hi, buf) {
 arg5.int64fromString = function int64fromString(trimmed) {
   let closure_0 = trimmed;
   function add1e6digit(arg0, arg1) {
-    closure_3 = closure_3 * closure_1;
-    const sum = closure_2 * closure_1 + Number(arr.slice(arg0, arg1));
+    closure_3 = closure_3 * c1;
+    const sum = closure_2 * c1 + Number(arr.slice(arg0, arg1));
     closure_2 = sum;
     if (sum >= 4294967296) {
       closure_3 = closure_3 + (closure_2 / 4294967296 | 0);
@@ -134,14 +135,14 @@ arg5.int64fromString = function int64fromString(trimmed) {
   if ("-" == trimmed[0]) {
     closure_0 = trimmed.slice(1);
   }
-  let closure_1 = 1000000;
-  let closure_2 = 0;
-  let closure_3 = 0;
+  let c1 = 1000000;
+  let c2 = 0;
+  let c3 = 0;
   add1e6digit(-24, -18);
   add1e6digit(-18, -12);
   add1e6digit(-12, -6);
   add1e6digit(-6);
-  const items = ["-" == trimmed[0], closure_2, closure_3];
+  const items = ["-" == trimmed[0], c2, c3];
   return items;
 };
 arg5.int64toString = function int64toString(lo, hi) {
@@ -161,7 +162,7 @@ arg5.int64toString = function int64toString(lo, hi) {
   if (hi <= 2097151) {
     return "" + (4294967296 * hi + (lo >>> 0));
   } else {
-    const sum = (16777215 & lo) + 6777216 * tmp9 + 6710656 * tmp10;
+    let sum = (16777215 & lo) + 6777216 * tmp9 + 6710656 * tmp10;
     const sum1 = tmp9 + 8147497 * tmp10;
     const result = 2 * tmp10;
     let sum2 = sum1;
@@ -207,15 +208,16 @@ arg5.varint32write = function varint32write(NumberResult, buf) {
 };
 arg5.varint32read = function varint32read() {
   const self = this;
-  const tmp = +this.pos;
-  this.pos = tmp + 1;
-  const tmp2 = this.buf[tmp];
-  if (128 & tmp2) {
+  this.pos = +this.pos + 1;
+  if (128 & this.buf[+this.pos]) {
     self.pos = +self.pos + 1;
+    const tmp7 = tmp3 | (127 & self.buf[+self.pos]) << 7;
     if (128 & self.buf[+self.pos]) {
       self.pos = +self.pos + 1;
+      const tmp11 = tmp7 | (127 & self.buf[+self.pos]) << 14;
       if (128 & self.buf[+self.pos]) {
         self.pos = +self.pos + 1;
+        const tmp15 = tmp11 | (127 & self.buf[+self.pos]) << 21;
         if (128 & self.buf[+self.pos]) {
           self.pos = +self.pos + 1;
           let tmp18 = self.buf[tmp17];
@@ -239,7 +241,7 @@ arg5.varint32read = function varint32read() {
             self.assertBounds();
             return (tmp15 | tmp19 << 28) >>> 0;
           }
-          const tmp19 = 15 & tmp18;
+          tmp19 = 15 & tmp18;
         } else {
           self.assertBounds();
           return tmp15;

@@ -1,32 +1,33 @@
-// Module ID: 13279
-// Function ID: 100857
+// Module ID: 13393
+// Function ID: 103013
 // Name: crossPlatformCommands
-// Dependencies: []
+// Dependencies: [13394, 13396, 13398, 13399, 13400, 13401, 13402, 13407, 13413, 13414, 13415, 13416, 13417, 13418, 13419, 13426, 13429, 13430, 13431, 13432, 13433, 13434, 13435, 2]
 
-// Module 13279 (crossPlatformCommands)
-const merged = Object.assign(importDefault(dependencyMap[0]));
-const merged1 = Object.assign(importDefault(dependencyMap[1]));
-const merged2 = Object.assign(importDefault(dependencyMap[2]));
-const merged3 = Object.assign(importDefault(dependencyMap[3]));
-const merged4 = Object.assign(importDefault(dependencyMap[4]));
-const merged5 = Object.assign(importDefault(dependencyMap[5]));
-const merged6 = Object.assign(importDefault(dependencyMap[6]));
-const merged7 = Object.assign(importDefault(dependencyMap[7]));
-const merged8 = Object.assign(importDefault(dependencyMap[8]));
-const merged9 = Object.assign(importDefault(dependencyMap[9]));
-const merged10 = Object.assign(importDefault(dependencyMap[10]));
-const merged11 = Object.assign(importDefault(dependencyMap[11]));
-const merged12 = Object.assign(importDefault(dependencyMap[12]));
-const merged13 = Object.assign(importDefault(dependencyMap[13]));
-const merged14 = Object.assign(importDefault(dependencyMap[14]));
-const merged15 = Object.assign(importDefault(dependencyMap[15]));
-const merged16 = Object.assign(importDefault(dependencyMap[16]));
-const merged17 = Object.assign(importDefault(dependencyMap[17]));
-const merged18 = Object.assign(importDefault(dependencyMap[18]));
-const merged19 = Object.assign(importDefault(dependencyMap[19]));
-const merged20 = Object.assign(importDefault(dependencyMap[20]));
-const merged21 = Object.assign(importDefault(dependencyMap[21]));
-const merged22 = Object.assign(importDefault(dependencyMap[22]));
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/rpc/server/commands/crossPlatformRPCCommands.tsx");
+// Module 13393 (crossPlatformCommands)
+import merged from "module_13394";
+import merged1 from "RPC_LOCAL_SCOPE";
+import merged2 from "items";
+import merged3 from "module_13399";
+import merged4 from "module_13400";
+import merged5 from "module_13401";
+import merged6 from "items";
+import merged7 from "set";
+import merged8 from "module_13413";
+import merged9 from "module_13414";
+import merged10 from "AM_HARMONY_PRD_APPLICATION_ID";
+import merged11 from "_createForOfIteratorHelperLoose";
+import merged12 from "RPC_LOCAL_SCOPE";
+import merged13 from "module_13418";
+import merged14 from "getSubscriptionSkusViaListings";
+import merged15 from "module_13426";
+import merged16 from "RPC_EMBEDDED_APP_SCOPE";
+import merged17 from "handler";
+import merged18 from "sum";
+import merged19 from "items";
+import merged20 from "module_13433";
+import merged21 from "module_13434";
+import merged22 from "module_13435";
+
+const result = require("items").fileFinishedImporting("modules/rpc/server/commands/crossPlatformRPCCommands.tsx");
 
 export const crossPlatformCommands = {};

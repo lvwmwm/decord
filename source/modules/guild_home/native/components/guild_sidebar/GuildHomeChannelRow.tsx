@@ -1,43 +1,44 @@
-// Module ID: 14916
-// Function ID: 112343
+// Module ID: 15032
+// Function ID: 114511
 // Name: GuildHomeChannelRow
-// Dependencies: []
+// Dependencies: [31, 653, 1355, 10260, 33, 4130, 689, 1198, 11424, 1212, 12850, 2]
 // Exports: default
 
-// Module 14916 (GuildHomeChannelRow)
-let closure_3 = importAll(dependencyMap[0]);
-const Routes = arg1(dependencyMap[1]).Routes;
-const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;
-const jsx = arg1(dependencyMap[4]).jsx;
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { marginVertical: arg1(dependencyMap[3]).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: importDefault(dependencyMap[6]).radii.md };
-obj.container = obj;
-let closure_7 = obj.createStyles(obj);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_home/native/components/guild_sidebar/GuildHomeChannelRow.tsx");
+// Module 15032 (GuildHomeChannelRow)
+import result from "result";
+import { Routes } from "ME";
+import { StaticChannelRoute } from "set";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginVertical: require("hairlineWidth").CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("set").fileFinishedImporting("modules/guild_home/native/components/guild_sidebar/GuildHomeChannelRow.tsx");
 
 export default function GuildHomeChannelRow(selected) {
   selected = selected.selected;
   const id = selected.guild.id;
-  const arg1 = id;
   const items = [id];
   const callback = React.useCallback(() => {
-    id(closure_2[7]).transitionTo(closure_4.CHANNEL(id, constants.GUILD_HOME));
+    id(outer1_2[7]).transitionTo(outer1_4.CHANNEL(id, outer1_5.GUILD_HOME));
   }, items);
-  const ChannelModes = arg1(dependencyMap[8]).ChannelModes;
+  const ChannelModes = id(11424).ChannelModes;
   const tmp3 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
-  let obj = { onPress: callback, style: callback().container, accessible: true };
-  const tmp = callback();
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[9]).t.VbpLyU);
+  let obj = { onPress: callback, style: _createForOfIteratorHelperLoose().container, accessible: true };
+  const tmp = _createForOfIteratorHelperLoose();
+  const intl = id(1212).intl;
+  obj.accessibilityLabel = intl.string(id(1212).t.VbpLyU);
   obj.accessibilityState = { selected };
   obj.mode = tmp3;
   obj = {};
-  const intl2 = arg1(dependencyMap[9]).intl;
-  obj.name = intl2.string(arg1(dependencyMap[9]).t.VbpLyU);
+  const intl2 = id(1212).intl;
+  obj.name = intl2.string(id(1212).t.VbpLyU);
   obj.mode = tmp3;
-  obj.name = jsx(arg1(dependencyMap[8]).BaseChannelName, obj);
-  obj = { mode: tmp3, IconComponent: arg1(dependencyMap[10]).SignPostIcon };
-  obj.icon = jsx(arg1(dependencyMap[8]).BaseChannelIcon, obj);
-  return jsx(importDefault(dependencyMap[8]), obj);
+  obj.name = jsx(id(11424).BaseChannelName, {});
+  obj = { mode: tmp3, IconComponent: id(12850).SignPostIcon };
+  obj.icon = jsx(id(11424).BaseChannelIcon, { mode: tmp3, IconComponent: id(12850).SignPostIcon });
+  return jsx(importDefault(11424), { mode: tmp3, IconComponent: id(12850).SignPostIcon });
 };

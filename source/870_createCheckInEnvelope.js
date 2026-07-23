@@ -1,9 +1,11 @@
 // Module ID: 870
-// Function ID: 9686
+// Function ID: 9687
 // Name: createCheckInEnvelope
-// Dependencies: []
+// Dependencies: [814, 840]
 
 // Module 870 (createCheckInEnvelope)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.createCheckInEnvelope = function createCheckInEnvelope(arg0, trace, sdk) {
   let tmp = arg3;
@@ -16,15 +18,15 @@ arg5.createCheckInEnvelope = function createCheckInEnvelope(arg0, trace, sdk) {
     tmp = arg4;
   }
   if (tmp) {
-    obj.dsn = trace(arg6[0]).dsnToString(arg4);
-    const obj4 = trace(arg6[0]);
+    obj.dsn = require(814) /* dsnFromString */.dsnToString(arg4);
+    const obj4 = require(814) /* dsnFromString */;
   }
   if (trace) {
     obj.trace = trace;
   }
   const items = [{ type: "check_in" }, arg0];
   const date = new Date();
-  const tmp2 = null != sdk && sdk.sdk;
+  tmp2 = null != sdk && sdk.sdk;
   const items1 = [items];
-  return trace(arg6[1]).createEnvelope(obj, items1);
+  return require(840) /* forEachEnvelopeItem */.createEnvelope(obj, items1);
 };

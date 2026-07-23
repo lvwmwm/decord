@@ -1,56 +1,54 @@
-// Module ID: 14585
-// Function ID: 109927
+// Module ID: 14700
+// Function ID: 112091
 // Name: FRAME_BUDGET_MS
-// Dependencies: []
+// Dependencies: [2]
 // Exports: startFrameMonitor
 
-// Module 14585 (FRAME_BUDGET_MS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/devtools/native/components/screens/performance/startFrameMonitor.tsx");
+// Module 14700 (FRAME_BUDGET_MS)
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/startFrameMonitor.tsx");
 
 export const FRAME_BUDGET_MS = 16.666666666666668;
 export const startFrameMonitor = function startFrameMonitor() {
   let closure_0 = 0;
   let closure_1 = performance.now();
-  let closure_2 = false;
-  let closure_3 = 0;
-  let closure_4 = 0;
-  let closure_5 = 0;
-  let closure_6 = 0;
-  let closure_7 = false;
+  let c2 = false;
+  let c3 = 0;
+  let c4 = 0;
+  let c5 = 0;
+  let c6 = 0;
+  let c7 = false;
   function tick() {
     const nowResult = performance.now();
-    if (closure_2) {
-      const diff = nowResult - closure_1;
+    if (c2) {
+      const diff = nowResult - nowResult;
       closure_3 = closure_3 + 1;
       closure_6 = closure_6 + diff;
-      if (diff > closure_5) {
-        closure_5 = diff;
+      if (diff > c5) {
+        c5 = diff;
       }
       if (diff > 16.666666666666668) {
         closure_4 = closure_4 + 1;
       }
     } else {
-      closure_2 = true;
+      c2 = true;
     }
-    closure_1 = nowResult;
     let closure_0 = requestAnimationFrame(tick);
   }
   closure_0 = requestAnimationFrame(tick);
   return {
     stop() {
-      if (!closure_7) {
+      if (!c7) {
         const _cancelAnimationFrame = cancelAnimationFrame;
         cancelAnimationFrame(closure_0);
-        closure_7 = true;
+        c7 = true;
       }
-      const obj = { frames: closure_3, dropped: closure_4 };
+      const obj = { frames: c3, dropped: c4 };
       let num = 0;
-      if (closure_3 > 0) {
-        num = closure_6 / closure_3;
+      if (c3 > 0) {
+        num = c6 / c3;
       }
       obj.meanMs = num;
-      obj.worstMs = closure_5;
+      obj.worstMs = c5;
       return obj;
     }
   };

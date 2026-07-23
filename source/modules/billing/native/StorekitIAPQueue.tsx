@@ -1,20 +1,26 @@
-// Module ID: 7218
-// Function ID: 58169
+// Module ID: 7223
+// Function ID: 58203
 // Name: productSK2ToIAPProduct
-// Dependencies: []
+// Dependencies: [5, 6, 7, 27, 3811, 5619, 7204, 2]
 
-// Module 7218 (productSK2ToIAPProduct)
+// Module 7223 (productSK2ToIAPProduct)
+import CurrencyCodes from "CurrencyCodes";
+import module_7204 from "module_7204";
+import set from "set";
+import { convertToAlpha2 } from "getCountryCodeByCountryName";
+
+const require = arg1;
 function productSK2ToIAPProduct(description) {
   let items = [];
   if (null != description.subscription.promotionalOffers) {
     const promotionalOffers = description.subscription.promotionalOffers;
-    items = promotionalOffers.map((arg0) => callback(arg0));
+    items = promotionalOffers.map((arg0) => outer1_8(arg0));
   }
   if (null != description.subscription.introductoryOffer) {
     items.push(promoOfferToDiscount(description.subscription.introductoryOffer));
   }
   const price = description.price;
-  const NumberResult = Number(price.toFixed(arg1(dependencyMap[5]).CurrencyExponents[description.currency.toLowerCase(description.currency)]));
+  const NumberResult = Number(price.toFixed(require(5619) /* CurrencyCodes */.CurrencyExponents[description.currency.toLowerCase(description.currency)]));
   const obj = { identifier: String(description.id), price: NumberResult, currencySymbol: str2.split(/[0-9]/)[0], currencyCode: str3.toLowerCase(), priceString: String(NumberResult), countryCode: "", downloadable: false, description: description.description, title: description.displayName, discounts: items };
   return obj;
 }
@@ -31,34 +37,29 @@ function promoOfferToDiscount(introductoryOffer) {
   const obj = { identifier: introductoryOffer.id, type: "SUBSCRIPTION", numberOfPeriods: str4.toString(), price: str5.toString(), localizedPrice: introductoryOffer.displayPrice, paymentMode: str, subscriptionPeriod: introductoryOffer.period.unit.toUpperCase() };
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const convertToAlpha2 = arg1(dependencyMap[4]).convertToAlpha2;
-const RNIapIosSk2 = arg1(dependencyMap[3]).NativeModules.RNIapIosSk2;
-let tmp2 = () => {
+const RNIapIosSk2 = require("get ActivityIndicator").NativeModules.RNIapIosSk2;
+let tmp2 = (() => {
   class StorekitIAPQueueClass {
     constructor() {
-      tmp = closure_3(this, StorekitIAPQueueClass);
+      tmp = outer1_3(this, StorekitIAPQueueClass);
       this._queue = [];
       this._processingQueue = false;
       return;
     }
   }
-  const dependencyMap = StorekitIAPQueueClass;
   let obj = {
     key: "fetchSubscriptions",
     value(arg0) {
-      let closure_0 = this;
-      const StorekitIAPQueueClass = arg0;
+      const self = this;
+      let closure_1 = arg0;
       this.processQueue();
       return new Promise((arg0, arg1) => {
-        const self = arg0;
-        arg0 = arg1;
-        const _queue = self._queue;
-        _queue.push(callback(async () => {
-          const found = yield closure_6.getItems(closure_1).filter((subscription) => null != subscription.subscription);
-          callback(found.map(closure_7));
+        const _self = arg0;
+        let closure_1 = arg1;
+        const _queue = _self._queue;
+        _queue.push(outer2_2(async () => {
+          const found = yield outer4_6.getItems(closure_1).filter((subscription) => null != subscription.subscription);
+          outer1_0(found.map(outer4_7));
         }));
       });
     }
@@ -67,18 +68,18 @@ let tmp2 = () => {
   obj = {
     key: "fetchProducts",
     value(arg0) {
-      let closure_0 = this;
-      const StorekitIAPQueueClass = arg0;
+      const self = this;
+      let closure_1 = arg0;
       this.processQueue();
       return new Promise((arg0, arg1) => {
-        const self = arg0;
-        arg0 = arg1;
-        const _queue = self._queue;
-        _queue.push(callback(async () => {
-          let obj = callback(closure_1[6]);
+        const _self = arg0;
+        let closure_1 = arg1;
+        const _queue = _self._queue;
+        _queue.push(outer2_2(async () => {
+          let obj = callback(StorekitIAPQueueClass[6]);
           obj = { skus: closure_1 };
           const products = obj.getProducts(obj);
-          callback(yield products.then((arr) => {
+          outer1_0(yield products.then((arr) => {
             const found = arr.filter(() => { ... });
             return found.map(() => { ... });
           }));
@@ -104,8 +105,8 @@ let tmp2 = () => {
   };
   items[2] = obj;
   return callback2(StorekitIAPQueueClass, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/billing/native/StorekitIAPQueue.tsx");
+const result = require("_defineProperties").fileFinishedImporting("modules/billing/native/StorekitIAPQueue.tsx");
 
 export default tmp2;

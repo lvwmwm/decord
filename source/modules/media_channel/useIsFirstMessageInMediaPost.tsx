@@ -1,10 +1,13 @@
-// Module ID: 7625
-// Function ID: 61111
+// Module ID: 7631
+// Function ID: 61148
 // Name: isFirstMessageInMediaPost
-// Dependencies: []
+// Dependencies: [1348, 624, 21, 2]
 // Exports: useIsFirstMessageInMediaPost
 
-// Module 7625 (isFirstMessageInMediaPost)
+// Module 7631 (isFirstMessageInMediaPost)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function isFirstMessageInMediaPost(id) {
   let tmp = null != id;
   if (tmp) {
@@ -29,15 +32,14 @@ function isFirstMessageIdInMediaPost(id, channel_id) {
     }
     return false;
   }
-  const obj = importDefault(dependencyMap[2]);
+  obj = importDefault(21);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/media_channel/useIsFirstMessageInMediaPost.tsx");
+const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/media_channel/useIsFirstMessageInMediaPost.tsx");
 
 export const useIsFirstMessageInMediaPost = function useIsFirstMessageInMediaPost(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const items = [arg0];
-  return arg1(dependencyMap[1]).useStateFromStores([], () => callback(arg0), items);
+  return _require(624).useStateFromStores([], () => outer1_4(closure_0), items);
 };
 export { isFirstMessageInMediaPost };
 export { isFirstMessageIdInMediaPost };

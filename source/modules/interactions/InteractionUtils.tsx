@@ -1,56 +1,63 @@
-// Module ID: 7792
-// Function ID: 62213
+// Module ID: 7798
+// Function ID: 62250
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 4294967295, 4294967295, 0, 0, 0, 0]
+// Dependencies: [5, 1194, 7629, 653, 21, 7007, 7799, 1881, 507, 6691, 7800, 686, 4357, 2, 4355]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionStatusViewState
 
-// Module 7792 (_createForOfIteratorHelperLoose)
-import closure_3 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 7798 (_createForOfIteratorHelperLoose)
+import patchThread from "patchThread";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import ME from "ME";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -61,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,8 +99,8 @@ function getInteractionTimeoutTimestamp(id) {
     if ("" !== id) {
       const _Number = Number;
       if (!Number.isNaN(id)) {
-        let sum = importDefault(dependencyMap[4]).extractTimestamp(id) + 900000;
-        const obj = importDefault(dependencyMap[4]);
+        let sum = importDefault(21).extractTimestamp(id) + 900000;
+        const obj = importDefault(21);
       }
       return sum;
     }
@@ -105,8 +112,8 @@ function getInteractionInitialResponseDeadlineTimestamp(id) {
     if ("" !== id) {
       const _Number = Number;
       if (!Number.isNaN(id)) {
-        let sum = importDefault(dependencyMap[4]).extractTimestamp(id) + 3000;
-        const obj = importDefault(dependencyMap[4]);
+        let sum = importDefault(21).extractTimestamp(id) + 3000;
+        const obj = importDefault(21);
       }
       return sum;
     }
@@ -114,7 +121,7 @@ function getInteractionInitialResponseDeadlineTimestamp(id) {
   sum = Date.now();
 }
 async function _executeMessageComponentInteraction(arg0, arg1) {
-  const fn = function*(channelId) {
+  let iter = (function*(channelId) {
     let applicationId;
     let componentId;
     let componentType;
@@ -125,17 +132,18 @@ async function _executeMessageComponentInteraction(arg0, arg1) {
     channelId = channelId.channelId;
     const guildId = channelId.guildId;
     const localState = channelId.localState;
-    let fromTimestampResult;
+    let c3;
     ({ componentType, messageFlags } = channelId);
     yield undefined;
-    let obj = channelId(guildId[4]);
-    fromTimestampResult = obj.fromTimestamp(Date.now());
-    if (closure_5.canQueueInteraction(messageId, fromTimestampResult)) {
-      let obj1 = channelId(guildId[5]);
+    let obj = outer2_1(outer2_2[4]);
+    const fromTimestampResult = obj.fromTimestamp(Date.now());
+    c3 = fromTimestampResult;
+    if (outer2_5.canQueueInteraction(messageId, fromTimestampResult)) {
+      let obj1 = outer2_1(outer2_2[5]);
       yield obj1.unarchiveThreadIfNecessary(channelId);
-      let obj2 = applicationId(guildId[6]);
+      let obj2 = outer2_0(outer2_2[6]);
       obj = { messageId };
-      obj = { interactionType: applicationId(guildId[7]).InteractionTypes.MESSAGE_COMPONENT, applicationId, customId, componentId };
+      obj = { interactionType: outer2_0(outer2_2[7]).InteractionTypes.MESSAGE_COMPONENT, applicationId, customId, componentId };
       obj.data = obj;
       obj.onFailure = function onFailure(code) {
         let tmp2 = null == arg1;
@@ -143,47 +151,47 @@ async function _executeMessageComponentInteraction(arg0, arg1) {
           tmp2 = null != code;
         }
         if (tmp2) {
-          channelId(guildId[9]).sendClydeError(channelId, code);
-          const obj = channelId(guildId[9]);
+          outer3_1(outer3_2[9]).sendClydeError(channelId, code);
+          const obj = outer3_1(outer3_2[9]);
         }
       };
-      obj2.addQueued(fromTimestampResult, obj);
+      obj2.addQueued(tmp3, obj);
       if (null != localState) {
-        const obj6 = applicationId(guildId[6]);
-        const result = obj6.queueInteractionComponentState(messageId, fromTimestampResult, localState, componentId);
+        const obj6 = outer2_0(outer2_2[6]);
+        const result = obj6.queueInteractionComponentState(messageId, tmp3, localState, componentId);
       }
-      obj1 = { type: applicationId(guildId[7]).InteractionTypes.MESSAGE_COMPONENT, nonce: fromTimestampResult, guild_id: guildId, channel_id: channelId, message_flags: messageFlags, message_id: messageId, application_id: applicationId, session_id: sessionId.getSessionId() };
+      obj1 = { type: outer2_0(outer2_2[7]).InteractionTypes.MESSAGE_COMPONENT, nonce: fromTimestampResult, guild_id: guildId, channel_id: channelId, message_flags: messageFlags, message_id: messageId, application_id: applicationId, session_id: outer2_4.getSessionId() };
       obj2 = { component_type: componentType, custom_id: customId };
-      const merged = Object.assign(callback(localState));
+      const merged = Object.assign(outer2_16(localState));
       obj1.data = obj2;
-      const HTTP = applicationId(guildId[8]).HTTP;
-      const obj3 = { url: constants.INTERACTIONS, body: obj1, timeout: 3000, rejectWithError: applicationId(guildId[8]).rejectWithMigratedError() };
+      const HTTP = outer2_0(outer2_2[8]).HTTP;
+      const obj3 = { url: outer2_6.INTERACTIONS, body: obj1, timeout: 3000, rejectWithError: outer2_0(outer2_2[8]).rejectWithMigratedError() };
       yield HTTP.post(obj3, (arg0) => {
-        callback(fromTimestampResult, arg0, applicationId, channelId, guildId);
+        outer3_17(c3, arg0, applicationId, channelId, guildId);
       });
-      const obj10 = applicationId(guildId[8]);
+      const obj10 = outer2_0(outer2_2[8]);
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 function mapMessageComponentLocalStateForAPI(type) {
   if (null == type) {
     return null;
   } else {
     type = type.type;
-    if (arg1(dependencyMap[7]).ComponentType.TEXT_INPUT !== type) {
-      if (arg1(dependencyMap[7]).ComponentType.FILE_UPLOAD !== type) {
-        if (arg1(dependencyMap[7]).ComponentType.RADIO_GROUP !== type) {
-          if (arg1(dependencyMap[7]).ComponentType.CHECKBOX_GROUP !== type) {
-            if (arg1(dependencyMap[7]).ComponentType.CHECKBOX !== type) {
-              if (arg1(dependencyMap[7]).ComponentType.STRING_SELECT === type) {
+    if (require(1881) /* PermissionOverwriteType */.ComponentType.TEXT_INPUT !== type) {
+      if (require(1881) /* PermissionOverwriteType */.ComponentType.FILE_UPLOAD !== type) {
+        if (require(1881) /* PermissionOverwriteType */.ComponentType.RADIO_GROUP !== type) {
+          if (require(1881) /* PermissionOverwriteType */.ComponentType.CHECKBOX_GROUP !== type) {
+            if (require(1881) /* PermissionOverwriteType */.ComponentType.CHECKBOX !== type) {
+              if (require(1881) /* PermissionOverwriteType */.ComponentType.STRING_SELECT === type) {
                 return type;
               } else {
-                if (arg1(dependencyMap[7]).ComponentType.USER_SELECT !== type) {
-                  if (arg1(dependencyMap[7]).ComponentType.ROLE_SELECT !== type) {
-                    if (arg1(dependencyMap[7]).ComponentType.MENTIONABLE_SELECT !== type) {
-                      if (arg1(dependencyMap[7]).ComponentType.CHANNEL_SELECT !== type) {
+                if (require(1881) /* PermissionOverwriteType */.ComponentType.USER_SELECT !== type) {
+                  if (require(1881) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT !== type) {
+                    if (require(1881) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT !== type) {
+                      if (require(1881) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT !== type) {
                         return null;
                       }
                     }
@@ -204,15 +212,15 @@ function mapMessageComponentLocalStateForAPI(type) {
 function handleInteractionResponse(nonce, ok, applicationId, channelId, arg4) {
   if (!ok.ok) {
     if (ok.hasErr) {
-      ok(dependencyMap[6]).setFailed(nonce);
-      const obj10 = ok(dependencyMap[6]);
+      require(7799) /* _fetchMessageInteractionData */.setFailed(nonce);
+      const obj10 = require(7799) /* _fetchMessageInteractionData */;
     } else {
       if (ok.status >= 400) {
         if (ok.status < 500) {
           if (ok.body) {
             if (ok.body.code === constants.INVALID_FORM_BODY) {
               if (ok.body.errors) {
-                const firstSkemaError = ok(dependencyMap[10]).getFirstSkemaError(ok.body.errors);
+                const firstSkemaError = require(7800) /* getFirstSkemaFieldError */.getFirstSkemaError(ok.body.errors);
                 let tmp25 = null == firstSkemaError;
                 if (!tmp25) {
                   let tmp26 = "INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" !== firstSkemaError.code;
@@ -228,15 +236,15 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, arg4) {
                     tmp29 = arg4;
                   }
                   obj.guildId = tmp29;
-                  importDefault(dependencyMap[11]).dispatch(obj);
-                  const obj7 = importDefault(dependencyMap[11]);
+                  importDefault(686).dispatch(obj);
+                  const obj7 = importDefault(686);
                 }
-                const obj6 = ok(dependencyMap[10]);
+                const obj6 = require(7800) /* getFirstSkemaFieldError */;
                 let message;
                 if (null != firstSkemaError) {
                   message = firstSkemaError.message;
                 }
-                ok(dependencyMap[6]).setFailed(nonce, undefined, message);
+                require(7799) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, message);
               }
             }
             if (ok.body.code === constants.UNKNOWN_INTEGRATION) {
@@ -246,12 +254,12 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, arg4) {
                 tmp16 = arg4;
               }
               obj.guildId = tmp16;
-              importDefault(dependencyMap[11]).dispatch(obj);
-              const obj3 = importDefault(dependencyMap[11]);
-              ok(dependencyMap[6]).setFailed(nonce, undefined, ok.body.message);
-              const obj5 = ok(dependencyMap[6]);
+              importDefault(686).dispatch(obj);
+              const obj3 = importDefault(686);
+              require(7799) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, ok.body.message);
+              const obj5 = require(7799) /* _fetchMessageInteractionData */;
             } else {
-              const obj2 = ok(dependencyMap[6]);
+              const obj2 = require(7799) /* _fetchMessageInteractionData */;
               obj2.setFailed(nonce, ok.body.code, ok.body.message, ok.status);
             }
             return tmp13;
@@ -259,7 +267,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, arg4) {
         }
       }
       let code;
-      obj = ok(dependencyMap[6]);
+      obj = require(7799) /* _fetchMessageInteractionData */;
       const body = ok.body;
       if (null != body) {
         code = body.code;
@@ -268,11 +276,9 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, arg4) {
     }
   }
 }
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ Endpoints: closure_6, AbortCodes: closure_7, MessageStates: closure_8, MessageFlags: closure_9 } = require("__exportStarResult1"));
-const obj = { SENDING: 0, [0]: "SENDING", CREATED: 1, [1]: "CREATED", FAILED: 2, [2]: "FAILED", TIMED_OUT: 3, [3]: "TIMED_OUT", EPHEMERAL_SUCCESS: 4, [4]: "EPHEMERAL_SUCCESS" };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/interactions/InteractionUtils.tsx");
+({ Endpoints: closure_6, AbortCodes: closure_7, MessageStates: closure_8, MessageFlags: closure_9 } = ME);
+let obj = { SENDING: 0, [0]: "SENDING", CREATED: 1, [1]: "CREATED", FAILED: 2, [2]: "FAILED", TIMED_OUT: 3, [3]: "TIMED_OUT", EPHEMERAL_SUCCESS: 4, [4]: "EPHEMERAL_SUCCESS" };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/interactions/InteractionUtils.tsx");
 
 export { getInteractionTimeoutTimestamp };
 export { getInteractionInitialResponseDeadlineTimestamp };
@@ -301,7 +307,7 @@ export const getInteractionStatusViewState = function getInteractionStatusViewSt
   if (null != state2) {
     interactionType = state2.data.interactionType;
   }
-  const tmp10 = interactionType === state2(dependencyMap[7]).InteractionTypes.APPLICATION_COMMAND;
+  const tmp10 = interactionType === require(1881) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND;
   const isCommandTypeResult = state.isCommandType();
   if (!tmp10) {
     if (isCommandTypeResult) {
@@ -311,7 +317,7 @@ export const getInteractionStatusViewState = function getInteractionStatusViewSt
     }
     if (!tmp10) {
       if (null != state.interaction) {
-        let SENDING = obj.TIMED_OUT;
+        SENDING = obj.TIMED_OUT;
       }
       if (isCommandTypeResult) {
         if (state.state === constants2.SEND_FAILED) {
@@ -337,7 +343,7 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
   let items = options;
   if (1 === length) {
     let tmp4 = options;
-    if (options[0].type === arg1(dependencyMap[7]).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+    if (options[0].type === require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       while (true) {
         let options1 = tmp4[0].options;
         let length1;
@@ -348,17 +354,17 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
         if (1 !== length1) {
           break;
         } else {
-          let tmp6 = arg1;
+          let tmp6 = require;
           let tmp7 = dependencyMap;
           tmp4 = options1;
-          if (options1[0].type === arg1(dependencyMap[7]).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+          if (options1[0].type === require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
             continue;
           } else {
-            let tmp8 = arg1;
+            let tmp8 = require;
             let tmp9 = dependencyMap;
             tmp4 = options1;
             items = options1;
-            if (options1[0].type !== arg1(dependencyMap[7]).ApplicationCommandOptionType.SUB_COMMAND) {
+            if (options1[0].type !== require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND) {
               break;
             }
           }
@@ -376,7 +382,7 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
   const tmp10Result = _createForOfIteratorHelperLoose(items);
   let iter = tmp10Result();
   if (!iter.done) {
-    while (tmp12 !== arg1(dependencyMap[7]).ApplicationCommandOptionType.ATTACHMENT) {
+    while (tmp12 !== require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.ATTACHMENT) {
       let iter2 = tmp10Result();
       iter = iter2;
     }
@@ -384,4 +390,4 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
   }
   return true;
 };
-export const interactionCallbackErrorReason = arg1(dependencyMap[14]).interactionCallbackErrorReason;
+export const interactionCallbackErrorReason = require("interactionCallbackErrorReason").interactionCallbackErrorReason;

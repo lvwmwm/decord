@@ -1,65 +1,65 @@
 // Module ID: 3725
-// Function ID: 28498
+// Function ID: 28490
 // Name: t
-// Dependencies: []
+// Dependencies: [3712]
 
 // Module 3725 (t)
 const fn = function t(moment) {
-  let closure_0 = "jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.".split("_");
-  let closure_1 = "jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec".split("_");
-  const items = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
-  const tmp = /^(januari|februari|maart|april|mei|april|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
-  return moment.defineLocale("nl", {
-    months: "januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december".split("_"),
-    monthsShort(arg0, arg1) {
-      if (arg0) {
-        if (obj.test(arg1)) {
-          let tmp3 = closure_1[arg0.month(arg0)];
-        } else {
-          tmp3 = closure_0[arg0.month(arg0)];
+  let split;
+  let split2;
+  ({ split, split: split2 } = "\uC77C_\uC6D4_\uD654_\uC218_\uBAA9_\uAE08_\uD1A0");
+  return moment.defineLocale("ko", {
+    months: "1\uC6D4_2\uC6D4_3\uC6D4_4\uC6D4_5\uC6D4_6\uC6D4_7\uC6D4_8\uC6D4_9\uC6D4_10\uC6D4_11\uC6D4_12\uC6D4".split("_"),
+    monthsShort: "1\uC6D4_2\uC6D4_3\uC6D4_4\uC6D4_5\uC6D4_6\uC6D4_7\uC6D4_8\uC6D4_9\uC6D4_10\uC6D4_11\uC6D4_12\uC6D4".split("_"),
+    weekdays: "\uC77C\uC694\uC77C_\uC6D4\uC694\uC77C_\uD654\uC694\uC77C_\uC218\uC694\uC77C_\uBAA9\uC694\uC77C_\uAE08\uC694\uC77C_\uD1A0\uC694\uC77C".split("_"),
+    weekdaysShort: "\uC77C_\uC6D4_\uD654_\uC218_\uBAA9_\uAE08_\uD1A0".split("_"),
+    weekdaysMin: "\uC77C_\uC6D4_\uD654_\uC218_\uBAA9_\uAE08_\uD1A0".split("_"),
+    longDateFormat: { LT: "A h:mm", LTS: "A h:mm:ss", L: "YYYY.MM.DD.", LL: "YYYY\uB144 MMMM D\uC77C", LLL: "YYYY\uB144 MMMM D\uC77C A h:mm", LLLL: "YYYY\uB144 MMMM D\uC77C dddd A h:mm", l: "YYYY.MM.DD.", ll: "YYYY\uB144 MMMM D\uC77C", lll: "YYYY\uB144 MMMM D\uC77C A h:mm", llll: "YYYY\uB144 MMMM D\uC77C dddd A h:mm" },
+    calendar: { sameDay: "\uC624\uB298 LT", nextDay: "\uB0B4\uC77C LT", nextWeek: "dddd LT", lastDay: "\uC5B4\uC81C LT", lastWeek: "\uC9C0\uB09C\uC8FC dddd LT", sameElse: "L" },
+    relativeTime: { future: "%s \uD6C4", past: "%s \uC804", s: "\uBA87 \uCD08", ss: "%d\uCD08", m: "1\uBD84", mm: "%d\uBD84", h: "\uD55C \uC2DC\uAC04", hh: "%d\uC2DC\uAC04", d: "\uD558\uB8E8", dd: "%d\uC77C", M: "\uD55C \uB2EC", MM: "%d\uB2EC", y: "\uC77C \uB144", yy: "%d\uB144" },
+    dayOfMonthOrdinalParse: /\d{1,2}(일|월|주)/,
+    ordinal(arg0, arg1) {
+      if ("d" !== arg1) {
+        if ("D" !== arg1) {
+          if ("DDD" !== arg1) {
+            if ("M" === arg1) {
+              return arg0 + "\uC6D4";
+            } else {
+              if ("w" !== arg1) {
+                if ("W" !== arg1) {
+                  return arg0;
+                }
+              }
+              return arg0 + "\uC8FC";
+            }
+          }
         }
-        const obj = /-MMM-/;
-      } else {
-        return closure_0;
       }
+      return arg0 + "\uC77C";
     },
-    monthsRegex: tmp,
-    monthsShortRegex: tmp,
-    monthsStrictRegex: /^(januari|februari|maart|mei|ju[nl]i|april|augustus|september|oktober|november|december)/i,
-    monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
-    monthsParse: items,
-    longMonthsParse: items,
-    shortMonthsParse: items,
-    weekdays: "zondag_maandag_dinsdag_woensdag_donderdag_vrijdag_zaterdag".split("_"),
-    weekdaysShort: "zo._ma._di._wo._do._vr._za.".split("_"),
-    weekdaysMin: "zo_ma_di_wo_do_vr_za".split("_"),
-    weekdaysParseExact: true,
-    longDateFormat: {},
-    calendar: {},
-    relativeTime: {},
-    dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
-    ordinal(arg0) {
-      if (1 !== arg0) {
-        if (8 !== arg0) {
-          let str = "de";
-        }
-        return arg0 + str;
+    meridiemParse: /오전|오후/,
+    isPM(arg0) {
+      return "\uC624\uD6C4" === arg0;
+    },
+    meridiem(arg0, arg1, arg2) {
+      let str = "\uC624\uD6C4";
+      if (arg0 < 12) {
+        str = "\uC624\uC804";
       }
-      str = "ste";
-    },
-    week: { emoji: false, me: false }
+      return str;
+    }
   });
 };
 if ("object" === typeof exports) {
   if (undefined !== module) {
     if ("function" === typeof require) {
-      fn(require(dependencyMap[0]));
+      fn(require("t"));
     }
   }
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HHmmss.SSSS"], fn);
+    globalThis.define(["../moment"], fn);
   }
 }
 fn(this.moment);

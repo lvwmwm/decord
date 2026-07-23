@@ -1,7 +1,7 @@
 // Module ID: 1145
-// Function ID: 13060
+// Function ID: 13061
 // Name: asyncExpiringMap
-// Dependencies: []
+// Dependencies: [1139]
 // Exports: addTimeToInitialDisplayFallback, getTimeToInitialDisplayFallback
 
 // Module 1145 (asyncExpiringMap)
@@ -12,65 +12,71 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    const asyncExpiringMap = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;
   };
 }
-const asyncExpiringMap = new require(dependencyMap[0]).AsyncExpiringMap({ ttl: 60000 });
+const asyncExpiringMap = new require("AsyncExpiringMap").AsyncExpiringMap({ ttl: 60000 });
 
 export const addTimeToInitialDisplayFallback = function addTimeToInitialDisplayFallback(spanId, newScreenTimeToDisplay) {
   const result = asyncExpiringMap.set(spanId, newScreenTimeToDisplay);
 };
-export const getTimeToInitialDisplayFallback = function getTimeToInitialDisplayFallback(arg0) {
-  return arg0(undefined, undefined, undefined, function*() {
+export const getTimeToInitialDisplayFallback = function getTimeToInitialDisplayFallback(outer1_7) {
+  const callback = outer1_7;
+  return callback(undefined, undefined, undefined, function*() {
     if (obj) {
       return obj.resume();
     } else {
-      return closure_1.get(closure_0);
+      return outer2_1.get(outer1_0);
     }
   });
 };

@@ -1,11 +1,14 @@
 // Module ID: 279
 // Function ID: 3926
 // Name: describeBuiltInComponentFrame
-// Dependencies: []
+// Dependencies: [121, 31, 261, 273]
 
 // Module 279 (describeBuiltInComponentFrame)
-import module_0 from "module_0";
-import closure_130 from "module_0";
+import module_121 from "module_121";
+import result from "result";
+import { RCTEventEmitter } from "get BatchedBridge";
+import closure_109 from "module_121";
+import closure_130 from "module_121";
 
 function describeBuiltInComponentFrame(arg0) {
   if (undefined !== closure_2) {
@@ -17,17 +20,17 @@ function describeBuiltInComponentFrame(arg0) {
   }
 }
 function describeNativeComponentFrame(displayName) {
-  const require = displayName;
-  const dependencyMap = arg1;
+  let closure_0 = displayName;
+  let closure_1 = arg1;
   if (displayName) {
-    if (!closure_7) {
-      closure_7 = true;
-      const _Error = Error;
+    if (!c7) {
+      c7 = true;
+      let _Error = Error;
       const _Error2 = Error;
       Error.prepareStackTrace = undefined;
       let obj = {
         DetermineComponentFrameRoot() {
-              if (arg1) {
+              if (closure_1) {
                 class Fake {
                   constructor() {
                     throw Error();
@@ -57,21 +60,21 @@ function describeNativeComponentFrame(displayName) {
                     }
                     Reflect.construct(constructResult1, []);
                     const _Reflect2 = tmp.Reflect;
-                    tmp = arg0;
-                    constructResult1 = _Reflect2.construct(arg0, [], constructResult1);
+                    tmp = displayName;
+                    constructResult1 = _Reflect2.construct(displayName, [], constructResult1);
                     while (true) {
                       class Fake {
                         constructor() {
                           throw Error();
                         }
                       }
-                      // continue
+                      continue;
                     }
                   }
                 }
                 constructResult1.call();
-                arg0.call(constructResult1.prototype);
-                const items = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
+                displayName.call(constructResult1.prototype);
+                const items = [null, null];
               } else {
                 class Fake {
                   constructor() {
@@ -84,7 +87,7 @@ function describeNativeComponentFrame(displayName) {
             }
       };
       obj.DetermineComponentFrameRoot.displayName = "DetermineComponentFrameRoot";
-      const _Object = Object;
+      let _Object = Object;
       const ownPropertyDescriptor = Object.getOwnPropertyDescriptor(obj.DetermineComponentFrameRoot, "name");
       let configurable = ownPropertyDescriptor;
       if (ownPropertyDescriptor) {
@@ -116,7 +119,7 @@ function describeNativeComponentFrame(displayName) {
                 }
               }
             }
-            const obj4 = arr2[num3];
+            obj4 = arr2[num3];
           }
           if (num4 < parts1.length) {
             if (!obj6.includes("DetermineComponentFrameRoot")) {
@@ -131,7 +134,7 @@ function describeNativeComponentFrame(displayName) {
                 }
               }
             }
-            const obj6 = parts1[num4];
+            obj6 = parts1[num4];
           }
           if (num3 === parts.length) {
             const diff = arr2.length - 1;
@@ -200,7 +203,7 @@ function describeNativeComponentFrame(displayName) {
                 if (hasItem) {
                   str11 = str11.replace("<anonymous>", displayName.displayName);
                 }
-                closure_7 = false;
+                c7 = false;
                 const _Error4 = Error;
                 Error.prepareStackTrace = prepareStackTrace;
                 return str11;
@@ -209,7 +212,7 @@ function describeNativeComponentFrame(displayName) {
           }
         }
       }
-      closure_7 = false;
+      c7 = false;
       const _Error3 = Error;
       Error.prepareStackTrace = prepareStackTrace;
       let str6 = "";
@@ -230,36 +233,108 @@ function describeNativeComponentFrame(displayName) {
   }
   return "";
 }
-function describeFiber(arg0) {
-  return describeBuiltInComponentFrame("Activity");
+function describeFiber(tag) {
+  switch (tag.tag) {
+    case 0:
+      let tmp5 = describeNativeComponentFrame(tag.type, false);
+      return tmp5;
+    case 1:
+      return describeNativeComponentFrame(tag.type, true);
+    case 2:
+      return "";
+    case 3:
+      return "";
+    case 4:
+      return "";
+    case 5:
+      let tmp10 = describeBuiltInComponentFrame(tag.type);
+      return tmp10;
+    case 6:
+      return "";
+    case 7:
+      return "";
+    case 8:
+      return "";
+    case 9:
+      return "";
+    case 10:
+      return "";
+    case 11:
+      return describeNativeComponentFrame(tag.type.render, false);
+    case 12:
+      return "";
+    case 13:
+      return describeBuiltInComponentFrame("Suspense");
+    case 14:
+      return "";
+    case 15:
+      tmp5 = describeNativeComponentFrame(tag.type, false);
+      return tmp5;
+    case 16:
+      return describeBuiltInComponentFrame("Lazy");
+    case 17:
+      return "";
+    case 18:
+      return "";
+    case 19:
+      return describeBuiltInComponentFrame("SuspenseList");
+    case 20:
+      return "";
+    case 21:
+      return "";
+    case 22:
+      return "";
+    case 23:
+      return "";
+    case 24:
+      return "";
+    case 25:
+      return "";
+    case 26:
+      tmp10 = describeBuiltInComponentFrame(tag.type);
+      return tmp10;
+    case 27:
+      tmp10 = describeBuiltInComponentFrame(tag.type);
+      return tmp10;
+    case 28:
+      return "";
+    case 29:
+      return "";
+    case 30:
+      return "";
+    case 31:
+      return describeBuiltInComponentFrame("Activity");
+    default:
+      return "";
+  }
 }
 function getStackByFiberInDevAndProd(arg0) {
   let _return = arg0;
   let str = "";
   do {
     let tmp = str;
-    let tmp2 = closure_180;
+    let tmp2 = describeFiber;
     let tmp3 = _return;
-    str = `${closure_180(_return)}`;
+    str = `${describeFiber(_return)}`;
     _return = _return.return;
   } while (tmp4);
   return str;
 }
-function getIteratorFn(@@iterator) {
+function getIteratorFn(iterable) {
   let tmp = null;
-  if (null !== Symbol_iterator) {
+  if (null !== iterable) {
     tmp = null;
-    if ("object" === typeof Symbol_iterator) {
-      @@iterator = iterator;
+    if ("object" === typeof iterable) {
+      iterable = iterator;
       if (iterator) {
-        @@iterator = Symbol_iterator[closure_24];
+        iterable = iterable[iterator];
       }
-      if (!Symbol_iterator) {
-        @@iterator = Symbol_iterator[Symbol.iterator];
+      if (!iterable) {
+        iterable = iterable[Symbol.iterator];
       }
       let tmp3 = null;
-      if ("function" === typeof Symbol_iterator) {
-        tmp3 = Symbol_iterator;
+      if ("function" === typeof iterable) {
+        tmp3 = iterable;
       }
       tmp = tmp3;
     }
@@ -298,7 +373,7 @@ function getComponentNameFromType(name) {
     const $$typeof = tmp.$$typeof;
     if (closure_10 === $$typeof) {
       return "Portal";
-    } else if (forResult === $$typeof) {
+    } else if (closure_16 === $$typeof) {
       return (tmp.displayName || "Context") + ".Provider";
     } else if (closure_15 === $$typeof) {
       return (tmp._context.displayName || "Context") + ".Consumer";
@@ -376,16 +451,16 @@ class SyntheticEvent {
         if (tmp) {
           self[key10012] = tmp(arg2);
           tmp4 = tmp;
-          // continue
+          continue;
         } else {
           if ("target" === key10012) {
             self.target = arg3;
             tmp3 = tmp;
-            // continue
+            continue;
           } else {
             self[key10012] = arg2[key10012];
             tmp2 = tmp;
-            // continue
+            continue;
           }
           continue;
         }
@@ -473,24 +548,26 @@ function recordTouchStart(arg0) {
     obj.previousTimeStamp = timestampForTouch(arg0);
     items3[tmp] = obj;
   }
-  obj1.mostRecentTimeStamp = timestampForTouch(arg0);
+  obj2.mostRecentTimeStamp = timestampForTouch(arg0);
 }
 function recordTouchMove(arg0) {
-  if (items3[closure_195(undefined, arg0)]) {
+  const tmp = items3[getTouchIdentifier(undefined, arg0)];
+  if (tmp) {
     tmp.touchActive = true;
     ({ currentPageX: tmp.previousPageX, currentPageY: tmp.previousPageY, currentTimeStamp: tmp.previousTimeStamp } = tmp);
     ({ pageX: tmp.currentPageX, pageY: tmp.currentPageY } = arg0);
     tmp.currentTimeStamp = timestampForTouch(arg0);
-    obj1.mostRecentTimeStamp = timestampForTouch(arg0);
+    obj2.mostRecentTimeStamp = timestampForTouch(arg0);
   }
 }
 function recordTouchEnd(arg0) {
-  if (items3[closure_195(undefined, arg0)]) {
+  const tmp = items3[getTouchIdentifier(undefined, arg0)];
+  if (tmp) {
     tmp.touchActive = false;
     ({ currentPageX: tmp.previousPageX, currentPageY: tmp.previousPageY, currentTimeStamp: tmp.previousTimeStamp } = tmp);
     ({ pageX: tmp.currentPageX, pageY: tmp.currentPageY } = arg0);
     tmp.currentTimeStamp = timestampForTouch(arg0);
-    obj1.mostRecentTimeStamp = timestampForTouch(arg0);
+    obj2.mostRecentTimeStamp = timestampForTouch(arg0);
   }
 }
 function accumulate(arr) {
@@ -531,7 +608,7 @@ function accumulateInto(arg0, arg1) {
     } else {
       combined = [arg0, arg1];
     }
-    const tmp3 = isArray(arg0);
+    tmp3 = isArray(arg0);
   }
 }
 function forEachAccumulated(arr, call) {
@@ -543,9 +620,9 @@ function forEachAccumulated(arr, call) {
 }
 function changeResponder(arg0, arg1) {
   let closure_36 = arg0;
-  if (null !== obj3.GlobalResponderHandler) {
-    obj3.GlobalResponderHandler.onChange(tmp, arg0, arg1);
-    const GlobalResponderHandler = obj3.GlobalResponderHandler;
+  if (null !== obj4.GlobalResponderHandler) {
+    obj4.GlobalResponderHandler.onChange(tmp, arg0, arg1);
+    const GlobalResponderHandler = obj4.GlobalResponderHandler;
   }
 }
 function getParent$1(arg0) {
@@ -570,8 +647,8 @@ function traverseTwoPhase$1(arg0, arg1, arg2) {
   if (arg0) {
     do {
       let arr = items.push(tmp);
-      let tmp3 = closure_203;
-      tmp = closure_203(tmp);
+      let tmp3 = getParent$1;
+      tmp = getParent$1(tmp);
     } while (tmp);
   }
   let diff = tmp4 - 1;
@@ -591,7 +668,7 @@ function traverseTwoPhase$1(arg0, arg1, arg2) {
     } while (num < length);
   }
 }
-function getListener$1(stateNode) {
+function getListener$1(stateNode, got) {
   stateNode = stateNode.stateNode;
   if (null === stateNode) {
     return null;
@@ -600,13 +677,13 @@ function getListener$1(stateNode) {
     if (null === tmp2) {
       return null;
     } else {
-      if (tmp2[arg1]) {
+      if (tmp2[got]) {
         if ("function" !== typeof tmp3) {
           const _Error = Error;
-          throw Error("Expected `" + arg1 + "` listener to be a function, instead got a value of `" + tmp4 + "` type.");
+          throw Error("Expected `" + got + "` listener to be a function, instead got a value of `" + tmp4 + "` type.");
         }
       }
-      return tmp2[arg1];
+      return tmp2[got];
     }
   }
 }
@@ -663,8 +740,8 @@ function recomputePluginOrdering() {
     if (keys !== undefined) {
       while (keys[tmp2] !== undefined) {
         let tmp34 = tmp14;
-        let tmp35 = obj5;
-        let tmp36 = obj5[tmp14];
+        let tmp35 = obj6;
+        let tmp36 = obj6[tmp14];
         let tmp37 = closure_40;
         let index = closure_40.indexOf(tmp14);
         if (-1 >= index) {
@@ -674,12 +751,12 @@ function recomputePluginOrdering() {
           let str9 = "`.";
           throw Error("EventPluginRegistry: Cannot inject event plugins that do not exist in the plugin ordering, `" + tmp14 + "`.");
         } else {
-          let tmp39 = closure_42;
-          if (closure_42[index]) {
+          let tmp39 = table;
+          if (table[index]) {
             continue;
           } else if (tmp36.extractEvents) {
-            let tmp16 = closure_42;
-            closure_42[index] = tmp36;
+            let tmp16 = table;
+            table[index] = tmp36;
             let eventTypes = tmp36.eventTypes;
             let tmp17 = eventTypes;
             let tmp5 = tmp10;
@@ -727,7 +804,7 @@ function recomputePluginOrdering() {
                         } else {
                           let tmp29 = publishRegistrationName;
                           let tmp30 = publishRegistrationName(phasedRegistrationNames[tmp28], tmp36);
-                          // continue
+                          continue;
                         }
                         continue;
                       }
@@ -769,15 +846,15 @@ function recomputePluginOrdering() {
     }
   }
 }
-function publishRegistrationName(arg0, arg1) {
-  if (closure_44[arg0]) {
+function publishRegistrationName(registration) {
+  if (table2[registration]) {
     const _Error = Error;
-    throw Error("EventPluginRegistry: More than one plugin attempted to publish the same registration name, `" + arg0 + "`.");
+    throw Error("EventPluginRegistry: More than one plugin attempted to publish the same registration name, `" + registration + "`.");
   } else {
-    closure_44[arg0] = arg1;
+    table2[registration] = arg1;
   }
 }
-function getListener(stateNode) {
+function getListener(stateNode, got) {
   stateNode = stateNode.stateNode;
   if (null === stateNode) {
     return null;
@@ -786,13 +863,13 @@ function getListener(stateNode) {
     if (null === tmp2) {
       return null;
     } else {
-      if (tmp2[arg1]) {
+      if (tmp2[got]) {
         if ("function" !== typeof tmp3) {
           const _Error = Error;
-          throw Error("Expected `" + arg1 + "` listener to be a function, instead got a value of `" + tmp4 + "` type.");
+          throw Error("Expected `" + got + "` listener to be a function, instead got a value of `" + tmp4 + "` type.");
         }
       }
-      return tmp2[arg1];
+      return tmp2[got];
     }
   }
 }
@@ -879,11 +956,11 @@ function batchedUpdatesImpl(arg0, arg1) {
   return arg0(arg1);
 }
 function batchedUpdates$1(arg0, arg1) {
-  if (closure_49) {
+  if (c49) {
     return arg0(arg1);
   } else {
-    closure_49 = true;
-    closure_49 = false;
+    c49 = true;
+    c49 = false;
     return batchedUpdatesImpl(arg0, arg1);
   }
 }
@@ -918,12 +995,13 @@ function executeDispatchesAndReleaseTopLevel(isPropagationStopped) {
 }
 function _receiveRootNodeIDEvent(arg0, arg1, arg2) {
   let tmp = arg2;
-  const require = arg1;
+  let closure_0 = arg1;
   if (!arg2) {
     tmp = closure_51;
   }
   const dependencyMap = tmp;
-  const tmp2 = getInstanceFromTag(arg0);
+  let tmp2 = getInstanceFromTag(arg0);
+  let closure_2 = tmp2;
   let stateNode = null;
   if (null != tmp2) {
     stateNode = tmp2.stateNode;
@@ -932,7 +1010,7 @@ function _receiveRootNodeIDEvent(arg0, arg1, arg2) {
     let num = 0;
     let tmp2 = null;
     let tmp3 = null;
-    if (0 < length.length) {
+    if (0 < outer1_42.length) {
       do {
         let obj = arr[num];
         let extractEventsResult = obj;
@@ -948,8 +1026,8 @@ function _receiveRootNodeIDEvent(arg0, arg1, arg2) {
         }
         let tmp11 = tmp2;
         if (extractEventsResult) {
-          let tmp12 = closure_200;
-          tmp11 = closure_200(tmp2, tmp5);
+          let tmp12 = outer1_200;
+          tmp11 = outer1_200(tmp2, tmp5);
         }
         num = num + 1;
         tmp2 = tmp11;
@@ -957,18 +1035,18 @@ function _receiveRootNodeIDEvent(arg0, arg1, arg2) {
       } while (num < arr.length);
     }
     if (null !== tmp3) {
-      closure_50 = callback(closure_50, tmp3);
+      outer1_50 = outer1_200(outer1_50, tmp3);
     }
-    closure_50 = null;
-    if (closure_50) {
-      callback2(tmp15, closure_219);
-      if (closure_50) {
+    outer1_50 = null;
+    if (outer1_50) {
+      outer1_201(tmp15, outer1_219);
+      if (outer1_50) {
         const _Error = Error;
         throw Error("processEventQueue(): Additional events were enqueued while processing an event queue. Support for this has not yet been implemented.");
-      } else if (closure_26) {
-        closure_26 = false;
-        let closure_27 = null;
-        throw closure_27;
+      } else if (outer1_26) {
+        outer1_26 = false;
+        const outer1_27 = null;
+        throw outer1_27;
       }
     }
   });
@@ -1041,32 +1119,33 @@ function defaultDiffer(name, name2) {
     deepDifferResult = null === name2;
   }
   if (!deepDifferResult) {
-    deepDifferResult = require(dependencyMap[2]).deepDiffer(name, name2, closure_55);
-    const obj = require(dependencyMap[2]);
+    deepDifferResult = require(261) /* get BatchedBridge */.deepDiffer(name, name2, closure_55);
+    const obj = require(261) /* get BatchedBridge */;
   }
   return deepDifferResult;
 }
 function restoreDeletedValuesInNestedArray(arg0, arg1, arg2) {
+  let c54;
   if (isArray(arg1)) {
     let diff = tmp14 - 1;
     if (+arg1.length) {
-      if (0 < closure_54) {
+      if (0 < c54) {
         restoreDeletedValuesInNestedArray(arg0, arg1[diff], arg2);
         diff = tmp19 - 1;
         while (+diff) {
-          let tmp20 = closure_54;
-          if (0 >= closure_54) {
+          let tmp20 = c54;
+          if (0 >= c54) {
             break;
           }
         }
       }
     }
   } else if (arg1) {
-    if (0 < closure_54) {
-      for (const key10008 in closure_53) {
+    if (0 < c54) {
+      for (const key10008 in c53) {
         let tmp22 = key10008;
-        let tmp23 = closure_53;
-        if (!closure_53[key10008]) {
+        let tmp23 = _null;
+        if (!_null[key10008]) {
           continue;
         } else {
           let tmp2 = arg1[key10008];
@@ -1104,12 +1183,12 @@ function restoreDeletedValuesInNestedArray(arg0, arg1, arg2) {
                   let tmp9 = processResult;
                 }
               }
-              let tmp11 = closure_53;
-              closure_53[key10008] = false;
-              let tmp12 = closure_54;
-              closure_54 = closure_54 - 1;
+              let tmp11 = _null;
+              _null[key10008] = false;
+              let tmp12 = c54;
+              c54 = c54 - 1;
               let tmp13 = obj;
-              // continue
+              continue;
             }
             continue;
           }
@@ -1144,10 +1223,10 @@ function diffNestedProperty(arg0, arg1, arg2, arg3) {
           let tmp28 = arg0;
           if (0 < tmp26) {
             do {
-              let tmp29 = closure_226;
+              let tmp29 = diffNestedProperty;
               let tmp30 = tmp27;
               let tmp31 = arg3;
-              tmp27 = closure_226(tmp27, arg1[num3], arg2[num3], arg3);
+              tmp27 = diffNestedProperty(tmp27, arg1[num3], arg2[num3], arg3);
               num3 = num3 + 1;
               tmp28 = tmp27;
               num2 = num3;
@@ -1159,8 +1238,8 @@ function diffNestedProperty(arg0, arg1, arg2, arg3) {
           let sum1 = num2;
           if (num2 < arg1.length) {
             do {
-              let tmp36 = closure_228;
-              tmp32 = closure_228(tmp32, arg1[sum], arg3);
+              let tmp36 = clearNestedProperty;
+              tmp32 = clearNestedProperty(tmp32, arg1[sum], arg3);
               sum = sum + 1;
               tmp34 = tmp32;
               sum1 = sum;
@@ -1171,8 +1250,8 @@ function diffNestedProperty(arg0, arg1, arg2, arg3) {
           let tmp38 = tmp34;
           if (sum1 < arg2.length) {
             do {
-              let tmp39 = closure_227;
-              tmp37 = closure_227(tmp37, arg2[sum1], arg3);
+              let tmp39 = addNestedProperty;
+              tmp37 = addNestedProperty(tmp37, arg2[sum1], arg3);
               sum1 = sum1 + 1;
               tmp38 = tmp37;
               length2 = arg2.length;
@@ -1182,7 +1261,7 @@ function diffNestedProperty(arg0, arg1, arg2, arg3) {
         }
       }
       const tmp14 = isArray(arg1);
-      const flattenStyle = require(dependencyMap[2]).flattenStyle;
+      const flattenStyle = require(261) /* get BatchedBridge */.flattenStyle;
       if (tmp14) {
         let tmp15Result = tmp15(arg0, flattenStyle(arg1), arg2, arg3);
       } else {
@@ -1210,8 +1289,8 @@ function addNestedProperty(arg0, arg1, arg2) {
       let tmp8 = arg0;
       if (0 < arg1.length) {
         do {
-          let tmp9 = closure_227;
-          tmp7 = closure_227(tmp7, arg1[num], arg2);
+          let tmp9 = addNestedProperty;
+          tmp7 = addNestedProperty(tmp7, arg1[num], arg2);
           num = num + 1;
           tmp8 = tmp7;
           length = arg1.length;
@@ -1234,8 +1313,8 @@ function clearNestedProperty(arg0, arg1, arg2) {
       let tmp8 = arg0;
       if (0 < arg1.length) {
         do {
-          let tmp9 = closure_228;
-          tmp7 = closure_228(tmp7, arg1[num], arg2);
+          let tmp9 = clearNestedProperty;
+          tmp7 = clearNestedProperty(tmp7, arg1[num], arg2);
           num = num + 1;
           tmp8 = tmp7;
           length = arg1.length;
@@ -1283,10 +1362,10 @@ function diffProperties(arg0, arg1, arg2, arg3) {
           tmp13 = tmp14;
           tmp11 = null;
         }
-        let tmp15 = closure_53;
-        if (closure_53) {
-          let tmp16 = closure_53;
-          closure_53[tmp10] = false;
+        let tmp15 = _null;
+        if (_null) {
+          let tmp16 = _null;
+          _null[tmp10] = false;
         }
         if (tmp8) {
           if (undefined !== tmp8[tmp10]) {
@@ -1296,7 +1375,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
               processResult = obj4;
               tmp4 = tmp13;
               let tmp43 = tmp11;
-              // continue
+              continue;
             } else {
               let tmp40 = "function" !== typeof obj4.diff && "function" !== typeof obj4.process;
               tmp2 = tmp8;
@@ -1314,7 +1393,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
                 tmp2 = tmp8;
                 tmp4 = tmp13;
                 let tmp42 = tmp11;
-                // continue
+                continue;
               }
               continue;
             }
@@ -1346,7 +1425,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
           } else {
             if ("function" !== typeof obj4.diff) {
               if ("function" !== typeof obj4.process) {
-                closure_53 = null;
+                _null = null;
                 let closure_54 = 0;
                 let tmp18 = diffNestedProperty;
                 let tmp19 = tmp8;
@@ -1361,7 +1440,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
                 if (tmp25) {
                   let tmp26 = restoreDeletedValuesInNestedArray;
                   let tmp27 = restoreDeletedValuesInNestedArray(tmp23, tmp11, obj4);
-                  closure_53 = null;
+                  _null = null;
                   tmp2 = tmp23;
                   processResult = obj4;
                 }
@@ -1400,7 +1479,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
           }
           tmp4 = tmp13;
           let tmp39 = tmp11;
-          // continue
+          continue;
         }
         continue;
       }
@@ -1452,15 +1531,15 @@ function diffProperties(arg0, arg1, arg2, arg3) {
               tmp57 = obj;
             }
             obj[tmp49] = null;
-            let tmp58 = closure_53;
-            if (!closure_53) {
-              closure_53 = {};
+            let tmp58 = _null;
+            if (!_null) {
+              _null = {};
             }
-            let tmp59 = closure_53;
+            let tmp59 = _null;
             tmp56 = tmp57;
-            if (!closure_53[tmp49]) {
-              let tmp60 = closure_53;
-              closure_53[tmp49] = true;
+            if (!_null[tmp49]) {
+              let tmp60 = _null;
+              _null[tmp49] = true;
               let tmp61 = closure_54;
               closure_54 = closure_54 + 1;
               tmp56 = tmp57;
@@ -1469,7 +1548,7 @@ function diffProperties(arg0, arg1, arg2, arg3) {
         }
         tmp6 = tmp48;
         let tmp63 = tmp50;
-        // continue
+        continue;
       }
       continue;
     }
@@ -1477,18 +1556,18 @@ function diffProperties(arg0, arg1, arg2, arg3) {
   return tmp45;
 }
 function mountSafeCallback_NOT_REALLY_SAFE(arg0, arg1) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return () => {
-    if (arg1) {
-      return arg1(...arguments);
+    if (callback) {
+      return callback(...arguments);
     }
   };
 }
 function setIsStrictModeForDevtools(arg0) {
-  if ("function" === typeof require(dependencyMap[3]).log) {
-    const result = require(dependencyMap[3]).unstable_setDisableYieldValue(arg0);
-    const obj = require(dependencyMap[3]);
+  if ("function" === typeof require(273) /* push */.log) {
+    const result = require(273) /* push */.unstable_setDisableYieldValue(arg0);
+    const obj = require(273) /* push */;
   }
   if (__REACT_DEVTOOLS_GLOBAL_HOOK__2) {
     if ("function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__2.setStrictMode) {
@@ -1682,18 +1761,18 @@ function computeExpirationTime(arg0, arg1) {
   return arg1 + 250;
 }
 function claimNextTransitionLane() {
-  let closure_62 = tmp2;
-  if (!(4194048 & closure_62 << 1)) {
-    closure_62 = 256;
+  let c62 = tmp2;
+  if (!(4194048 & c62 << 1)) {
+    c62 = 256;
   }
-  return closure_62;
+  return c62;
 }
 function claimNextRetryLane() {
-  let closure_63 = tmp2;
-  if (!(62914560 & closure_63 << 1)) {
-    closure_63 = 4194304;
+  let c63 = tmp2;
+  if (!(62914560 & c63 << 1)) {
+    c63 = 4194304;
   }
-  return closure_63;
+  return c63;
 }
 function createLaneMap(arg0) {
   const items = [];
@@ -1790,14 +1869,14 @@ function createCursor(current) {
 }
 function pop(arg0) {
   if (0 <= closure_71) {
-    arg0.current = closure_70[closure_71];
-    closure_70[closure_71] = null;
+    arg0.current = table3[closure_71];
+    table3[closure_71] = null;
     closure_71 = closure_71 - 1;
   }
 }
 function push(current, current2) {
-  const sum = closure_71 + 1;
-  closure_71 = sum;
+  const sum = c71 + 1;
+  c71 = sum;
   closure_70[sum] = current.current;
   current.current = current2;
 }
@@ -1864,20 +1943,20 @@ function popHostContext(arg0) {
   }
   if (ref3.current === arg0) {
     pop(ref3);
-    obj11._currentValue = null;
+    obj12._currentValue = null;
   }
 }
 function upgradeHydrationErrorsToRecoverable() {
-  if (null === closure_78) {
+  if (null === c78) {
     return tmp;
   } else {
-    if (null === navigation) {
-      const navigation = tmp;
+    if (null === _null9) {
+      _null9 = tmp;
     } else {
-      const push = navigation.push;
-      push.apply(navigation, tmp);
+      const push = _null9.push;
+      push.apply(_null9, tmp);
     }
-    closure_78 = null;
+    c78 = null;
   }
 }
 function pushProvider(arg0, _currentValue, _currentValue2) {
@@ -1997,10 +2076,15 @@ function propagateContextChanges(child) {
             if (null !== sibling) {
               sibling.return = _return2.return;
               tmp13 = sibling;
-              // break
+              break;
             } else {
               _return2 = _return2.return;
               tmp13 = _return2;
+              if (null !== _return2) {
+                continue;
+              } else {
+                break;
+              }
               break;
             }
             continue;
@@ -2008,8 +2092,8 @@ function propagateContextChanges(child) {
         }
       }
       child = tmp13;
-      let tmp2 = tmp5;
-      let tmp3 = tmp6;
+      tmp2 = tmp5;
+      tmp3 = tmp6;
     }
     const _Error = Error;
     throw Error("We just came from a parent so we must have had a parent. This is a bug in React.");
@@ -2082,12 +2166,12 @@ function propagateParentContextChanges(arg0, flags) {
             tmp6 = tmp2;
             if (alternate2.memoizedState.memoizedState !== _return.memoizedState.memoizedState) {
               if (null !== tmp) {
-                let tmp8 = obj11;
-                arr = tmp.push(obj11);
+                let tmp8 = obj12;
+                arr = tmp.push(obj12);
                 let items1 = tmp;
               } else {
-                let tmp7 = obj11;
-                items1 = [obj11];
+                let tmp7 = obj12;
+                items1 = [obj12];
               }
               tmp4 = items1;
               let tmp10 = alternate2;
@@ -2098,7 +2182,7 @@ function propagateParentContextChanges(arg0, flags) {
       }
       _return = _return.return;
       tmp = tmp4;
-      let tmp2 = tmp6;
+      tmp2 = tmp6;
       flag = flag2;
       tmp3 = tmp4;
       if (null === _return) {
@@ -2123,17 +2207,17 @@ function checkIfContextChanged(firstContext) {
 }
 function prepareToReadContext(dependencies) {
   let closure_81 = dependencies;
-  let closure_82 = null;
+  let c82 = null;
   dependencies = dependencies.dependencies;
   if (null !== dependencies) {
     dependencies.firstContext = null;
   }
 }
 function readContext(arg0) {
-  return readContextForConsumer(closure_81, arg0);
+  return readContextForConsumer(c81, arg0);
 }
 function readContextDuringReconciliation(arg0, arg1) {
-  if (null === closure_81) {
+  if (null === c81) {
     prepareToReadContext(arg0);
   }
   return readContextForConsumer(arg0, arg1);
@@ -2141,20 +2225,18 @@ function readContextDuringReconciliation(arg0, arg1) {
 function readContextForConsumer(flags, _currentValue) {
   _currentValue = _currentValue._currentValue;
   let obj = { context: _currentValue, memoizedValue: _currentValue, next: null };
-  if (null === closure_82) {
+  if (null === obj) {
     if (null === flags) {
       const _Error = Error;
       throw Error("Context can only be read while React is rendering. In classes, you can read it in the render method or getDerivedStateFromProps. In function components, you can read it directly in the function body, but not inside Hooks like useReducer() or useMemo().");
     } else {
-      closure_82 = obj;
       obj = { lanes: 0 };
       obj.firstContext = obj;
       flags.dependencies = obj;
       flags.flags = flags.flags | 524288;
     }
   } else {
-    closure_82.next = obj;
-    closure_82 = obj;
+    obj.next = obj;
   }
   return _currentValue;
 }
@@ -2166,14 +2248,14 @@ function createCache() {
   return obj;
 }
 function releaseCache(refCount) {
-  const require = refCount;
+  const _require = refCount;
   refCount.refCount = refCount.refCount - 1;
   if (0 === refCount.refCount) {
-    const result = require(dependencyMap[3]).unstable_scheduleCallback(require(dependencyMap[3]).unstable_NormalPriority, () => {
-      const controller = arg0.controller;
+    const result = _require(273).unstable_scheduleCallback(_require(273).unstable_NormalPriority, () => {
+      controller = controller.controller;
       controller.abort();
     });
-    const obj = require(dependencyMap[3]);
+    const obj = _require(273);
   }
 }
 function ensureRootIsScheduled(next) {
@@ -2190,34 +2272,34 @@ function ensureRootIsScheduled(next) {
       closure_86 = next;
     }
   }
-  let closure_88 = true;
-  if (!closure_87) {
-    closure_87 = true;
-    const result = require(dependencyMap[3]).unstable_scheduleCallback(require(dependencyMap[3]).unstable_ImmediatePriority, processRootScheduleInImmediateTask);
-    const obj = require(dependencyMap[3]);
+  let c88 = true;
+  if (!c87) {
+    c87 = true;
+    const result = require(273) /* push */.unstable_scheduleCallback(require(273) /* push */.unstable_ImmediatePriority, processRootScheduleInImmediateTask);
+    const obj = require(273) /* push */;
   }
 }
 function flushSyncWorkAcrossRoots_impl(arg0, arg1) {
   let pingedLanes;
   let suspendedLanes;
-  if (!closure_89) {
-    if (closure_88) {
-      closure_89 = true;
+  if (!c89) {
+    if (c88) {
+      c89 = true;
       while (true) {
-        let iter = closure_85;
+        let iter = c85;
         let tmp6 = tmp4;
         let tmp7 = tmp5;
         let flag3 = false;
         let flag4 = false;
-        if (null !== closure_85) {
+        if (null !== c85) {
           while (true) {
             if (!arg1) {
               {
-                let tmp10 = closure_146;
+                let tmp10 = c146;
                 let num9 = 0;
                 let tmp9 = getNextLanes;
-                if (iter === closure_146) {
-                  num9 = closure_148;
+                if (iter === c146) {
+                  num9 = c148;
                 }
                 let tmp11 = null !== iter.cancelPendingCommit || -1 !== iter.timeoutHandle;
                 let tmp9Result = tmp9(iter, num9, tmp11);
@@ -2246,8 +2328,8 @@ function flushSyncWorkAcrossRoots_impl(arg0, arg1) {
             flag3 = flag5;
             tmp6 = tmp8;
             flag4 = flag5;
-            let tmp4 = tmp8;
-            let tmp5 = tmp7;
+            tmp4 = tmp8;
+            tmp5 = tmp7;
             continue;
           }
           let tmp19 = clz32Fallback;
@@ -2267,44 +2349,45 @@ function flushSyncWorkAcrossRoots_impl(arg0, arg1) {
         if (flag4) {
           continue;
         } else {
-          closure_89 = false;
+          c89 = false;
         }
       }
     }
   }
 }
 function processRootScheduleInImmediateTask() {
+  let c85;
   let next;
-  let closure_87 = false;
-  let closure_88 = false;
-  if (0 !== closure_90) {
-    closure_90 = 0;
+  let c87 = false;
+  let c88 = false;
+  if (0 !== c90) {
+    c90 = 0;
   }
-  require(dependencyMap[3]);
-  let iter = closure_85;
+  require(273) /* push */;
+  let iter = c85;
   let tmp3 = null;
-  if (null !== closure_85) {
+  if (null !== c85) {
     do {
       next = iter.next;
-      let tmp4 = closure_271;
-      let tmp5 = closure_271(iter, tmp2);
+      let tmp4 = scheduleTaskForRootDuringMicrotask;
+      let tmp5 = scheduleTaskForRootDuringMicrotask(iter, tmp2);
       let tmp6 = iter;
       if (0 === tmp5) {
         iter.next = null;
         if (null === tmp3) {
-          closure_85 = next;
+          c85 = next;
         } else {
           tmp3.next = next;
         }
         let tmp7 = tmp3;
         if (null === next) {
-          closure_86 = tmp3;
+          let c86 = tmp3;
           tmp7 = tmp3;
         }
       } else {
         tmp7 = iter;
         if (3 & tmp5) {
-          closure_88 = true;
+          c88 = true;
           tmp7 = iter;
         }
       }
@@ -2319,16 +2402,16 @@ function scheduleTaskForRootDuringMicrotask(expirationTimes) {
   let tmp3 = -62914561 & expirationTimes.pendingLanes;
   if (0 < tmp3) {
     do {
-      let tmp4 = closure_59;
-      let diff = 31 - closure_59(tmp3);
+      let tmp4 = clz32Fallback;
+      let diff = 31 - clz32Fallback(tmp3);
       let tmp6 = 1 << diff;
       let tmp7 = expirationTimes[diff];
       let tmp8 = tmp3;
       if (-1 === tmp7) {
         let tmp9 = tmp6 & tmp && !(tmp6 & tmp2);
         if (!tmp9) {
-          let tmp10 = closure_235;
-          expirationTimes[diff] = closure_235(tmp6, arg1);
+          let tmp10 = computeExpirationTime;
+          expirationTimes[diff] = computeExpirationTime(tmp6, arg1);
         }
       } else if (tmp7 <= arg1) {
         expirationTimes.expiredLanes = expirationTimes.expiredLanes | tmp6;
@@ -2337,8 +2420,8 @@ function scheduleTaskForRootDuringMicrotask(expirationTimes) {
     } while (0 < tmp3);
   }
   let num = 0;
-  if (expirationTimes === closure_146) {
-    num = closure_148;
+  if (expirationTimes === c146) {
+    num = c148;
   }
   const tmp11Result = getNextLanes(expirationTimes, num, null !== expirationTimes.cancelPendingCommit || -1 !== expirationTimes.timeoutHandle);
   const callbackNode = expirationTimes.callbackNode;
@@ -2348,8 +2431,8 @@ function scheduleTaskForRootDuringMicrotask(expirationTimes) {
         if (3 & tmp11Result) {
           if (!checkIfRootIsPrerendering(expirationTimes, tmp11Result)) {
             if (null !== callbackNode) {
-              const result = require(dependencyMap[3]).unstable_cancelCallback(callbackNode);
-              const obj = require(dependencyMap[3]);
+              const result = require(273) /* push */.unstable_cancelCallback(callbackNode);
+              const obj = require(273) /* push */;
             }
             expirationTimes.callbackPriority = 2;
             expirationTimes.callbackNode = null;
@@ -2360,40 +2443,40 @@ function scheduleTaskForRootDuringMicrotask(expirationTimes) {
           return tmp20;
         } else {
           if (null !== callbackNode) {
-            const result1 = require(dependencyMap[3]).unstable_cancelCallback(callbackNode);
-            const obj2 = require(dependencyMap[3]);
+            const result1 = require(273) /* push */.unstable_cancelCallback(callbackNode);
+            const obj2 = require(273) /* push */;
           }
           const tmp25 = lanesToEventPriority(tmp11Result);
           if (2 !== tmp25) {
             if (8 !== tmp25) {
               if (32 !== tmp25) {
                 if (268435456 === tmp25) {
-                  let unstable_UserBlockingPriority = require(dependencyMap[3]).unstable_IdlePriority;
+                  let unstable_UserBlockingPriority = require(273) /* push */.unstable_IdlePriority;
                 }
               }
-              unstable_UserBlockingPriority = require(dependencyMap[3]).unstable_NormalPriority;
+              unstable_UserBlockingPriority = require(273) /* push */.unstable_NormalPriority;
             }
             const bindResult = performWorkOnRootViaSchedulerTask.bind(null, expirationTimes);
             expirationTimes.callbackPriority = tmp20;
-            expirationTimes.callbackNode = require(dependencyMap[3]).unstable_scheduleCallback(unstable_UserBlockingPriority, bindResult);
+            expirationTimes.callbackNode = require(273) /* push */.unstable_scheduleCallback(unstable_UserBlockingPriority, bindResult);
             return tmp20;
           }
-          unstable_UserBlockingPriority = require(dependencyMap[3]).unstable_UserBlockingPriority;
+          unstable_UserBlockingPriority = require(273) /* push */.unstable_UserBlockingPriority;
         }
       }
     }
   }
   if (null !== callbackNode) {
-    const result2 = require(dependencyMap[3]).unstable_cancelCallback(callbackNode);
-    const obj4 = require(dependencyMap[3]);
+    const result2 = require(273) /* push */.unstable_cancelCallback(callbackNode);
+    const obj4 = require(273) /* push */;
   }
   expirationTimes.callbackNode = null;
   expirationTimes.callbackPriority = 0;
   return 0;
 }
 function performWorkOnRootViaSchedulerTask(callbackNode) {
-  if (0 !== closure_168) {
-    if (5 !== closure_168) {
+  if (0 !== c168) {
+    if (5 !== c168) {
       callbackNode.callbackNode = null;
       callbackNode.callbackPriority = 0;
       return null;
@@ -2406,8 +2489,8 @@ function performWorkOnRootViaSchedulerTask(callbackNode) {
     }
   }
   let num2 = 0;
-  if (callbackNode === closure_146) {
-    num2 = closure_148;
+  if (callbackNode === c146) {
+    num2 = c148;
   }
   let tmp3 = null !== callbackNode.cancelPendingCommit;
   if (!tmp3) {
@@ -2417,7 +2500,7 @@ function performWorkOnRootViaSchedulerTask(callbackNode) {
   let tmp5 = null;
   if (0 !== tmp2Result) {
     performWorkOnRoot(callbackNode, tmp2Result, arg1);
-    scheduleTaskForRootDuringMicrotask(callbackNode, require(dependencyMap[3]).unstable_now());
+    scheduleTaskForRootDuringMicrotask(callbackNode, require(273) /* push */.unstable_now());
     let bindResult = null;
     if (null != callbackNode.callbackNode) {
       bindResult = null;
@@ -2426,7 +2509,7 @@ function performWorkOnRootViaSchedulerTask(callbackNode) {
       }
     }
     tmp5 = bindResult;
-    const obj = require(dependencyMap[3]);
+    const obj = require(273) /* push */;
   }
   return tmp5;
 }
@@ -2444,18 +2527,19 @@ function requestTransitionLane() {
   return closure_90;
 }
 function pingEngtangledActionScope() {
-  const diff = closure_92 - 1;
-  closure_92 = diff;
+  let length;
+  const diff = c92 - 1;
+  c92 = diff;
   if (0 == diff) {
-    if (null !== length) {
-      if (null !== closure_94) {
-        closure_94.status = "fulfilled";
+    if (null !== _null2) {
+      if (null !== c94) {
+        c94.status = "fulfilled";
       }
-      let length = null;
-      let closure_93 = 0;
-      closure_94 = null;
+      _null2 = null;
+      let c93 = 0;
+      c94 = null;
       let num = 0;
-      if (0 < length.length) {
+      if (0 < _null2.length) {
         do {
           let tmp6 = arr[num]();
           num = num + 1;
@@ -2468,7 +2552,7 @@ function pingEngtangledActionScope() {
 function peekCacheFromPool() {
   let pooledCache = ref5.current;
   if (null === pooledCache) {
-    pooledCache = _null4.pooledCache;
+    pooledCache = _null7.pooledCache;
   }
   return pooledCache;
 }
@@ -2484,7 +2568,7 @@ function getSuspendedCache() {
   const tmp = peekCacheFromPool();
   let tmp2 = null;
   if (null !== tmp) {
-    const obj = { parent: obj12._currentValue, pool: tmp };
+    const obj = { parent: obj13._currentValue, pool: tmp };
     tmp2 = obj;
   }
   return tmp2;
@@ -2536,7 +2620,7 @@ function noop() {
 
 }
 function trackUsedThenable(arr, promise) {
-  let require = promise;
+  let closure_0 = promise;
   if (undefined === arr[arg2]) {
     arr.push(promise);
     let iter = promise;
@@ -2544,7 +2628,7 @@ function trackUsedThenable(arr, promise) {
     iter = promise;
     if (tmp !== promise) {
       promise.then(noop, noop);
-      require = tmp;
+      closure_0 = tmp;
       iter = tmp;
     }
   }
@@ -2559,22 +2643,22 @@ function trackUsedThenable(arr, promise) {
     if ("string" === typeof iter.status) {
       iter.then(noop, noop);
     } else {
-      if (null !== _null4) {
-        if (100 < _null4.shellSuspendCounter) {
+      if (null !== _null7) {
+        if (100 < _null7.shellSuspendCounter) {
           const _Error = Error;
           throw Error("An unknown Component is an async Client Component. Only Server Components can be async at the moment. This error is often caused by accidentally adding `'use client'` to a module that was originally written for the server.");
         }
       }
       iter.status = "pending";
       iter.then((value) => {
-        if ("pending" === tmp.status) {
-          tmp.status = "fulfilled";
-          tmp.value = value;
+        if ("pending" === promise.status) {
+          promise.status = "fulfilled";
+          promise.value = value;
         }
       }, (reason) => {
-        if ("pending" === tmp.status) {
-          tmp.status = "rejected";
-          tmp.reason = reason;
+        if ("pending" === promise.status) {
+          promise.status = "rejected";
+          promise.reason = reason;
         }
       });
     }
@@ -2586,18 +2670,17 @@ function trackUsedThenable(arr, promise) {
       checkIfUseWrappedInAsyncCatch(reason);
       throw reason;
     } else {
-      let closure_102 = iter;
       throw closure_98;
     }
   }
 }
 function getSuspendedThenable() {
-  if (null === closure_102) {
+  if (null === c102) {
     const _Error = Error;
     throw Error("Expected a suspended thenable. This is a bug in React. Please file an issue.");
   } else {
-    closure_102 = null;
-    return closure_102;
+    c102 = null;
+    return c102;
   }
 }
 function checkIfUseWrappedInAsyncCatch(arg0) {
@@ -2605,35 +2688,35 @@ function checkIfUseWrappedInAsyncCatch(arg0) {
 }
 function finishQueueingConcurrentUpdates() {
   let tmp13;
-  let closure_104 = 0;
-  let closure_105 = 0;
+  let c104 = 0;
+  let c105 = 0;
   let num = 0;
-  if (0 < closure_104) {
+  if (0 < c104) {
     while (true) {
-      let tmp3 = closure_103;
-      let tmp4 = closure_103;
+      let tmp3 = dependencyMap;
+      let tmp4 = dependencyMap;
       let tmp5 = +num;
       let sum = tmp5 + 1;
-      closure_103[tmp5] = null;
-      let tmp7 = closure_103;
-      let tmp9 = closure_103;
+      dependencyMap[tmp5] = null;
+      let tmp7 = dependencyMap;
+      let tmp9 = dependencyMap;
       let tmp10 = +sum;
       let sum1 = tmp10 + 1;
-      closure_103[tmp10] = null;
-      let tmp12 = closure_103;
-      tmp13 = closure_103[sum1];
-      let tmp14 = closure_103;
+      dependencyMap[tmp10] = null;
+      let tmp12 = dependencyMap;
+      tmp13 = dependencyMap[sum1];
+      let tmp14 = dependencyMap;
       let tmp15 = +sum1;
       let sum2 = tmp15 + 1;
-      closure_103[tmp15] = null;
-      let tmp17 = closure_103;
-      let tmp18 = closure_103[sum2];
-      let tmp19 = closure_103;
+      dependencyMap[tmp15] = null;
+      let tmp17 = dependencyMap;
+      let tmp18 = dependencyMap[sum2];
+      let tmp19 = dependencyMap;
       let tmp20 = +sum2;
       num = tmp20 + 1;
-      closure_103[tmp20] = null;
+      dependencyMap[tmp20] = null;
       let tmp21 = tmp2;
-      if (null !== closure_103[sum]) {
+      if (null !== dependencyMap[sum]) {
         tmp21 = tmp2;
         if (null !== tmp13) {
           break;
@@ -2641,9 +2724,9 @@ function finishQueueingConcurrentUpdates() {
       }
       if (0 !== tmp18) {
         let tmp23 = markUpdateLaneFromFiberToRoot;
-        let tmp24 = markUpdateLaneFromFiberToRoot(closure_103[num], tmp13, tmp18);
+        let tmp24 = markUpdateLaneFromFiberToRoot(dependencyMap[num], tmp13, tmp18);
       }
-      let tmp2 = tmp21;
+      tmp2 = tmp21;
     }
     if (null === tmp8.pending) {
       tmp13.next = tmp13;
@@ -2736,9 +2819,9 @@ function markUpdateLaneFromFiberToRoot(lanes) {
 }
 function getRootForUpdatedFiber(arg0) {
   let tmp = arg0;
-  if (50 < closure_175) {
-    closure_175 = 0;
-    let closure_176 = null;
+  if (50 < c175) {
+    c175 = 0;
+    let c176 = null;
     const _Error = Error;
     throw Error("Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.");
   } else {
@@ -2757,7 +2840,7 @@ function getRootForUpdatedFiber(arg0) {
   }
 }
 function initializeUpdateQueue(memoizedState) {
-  const obj = { <string:2234961839>: 1, <string:1668074203>: "100%", <string:2755968284>: "absolute", <string:2125854999>: 0, <string:102742980>: 0, baseState: memoizedState.memoizedState, shared: { 9223372036854775807: 22817347, 0: 18467840, 0: 21634048 } };
+  const obj = { baseState: memoizedState.memoizedState, firstBaseUpdate: null, lastBaseUpdate: null, shared: { pending: null, lanes: 0, hiddenCallbacks: null }, callbacks: null };
   memoizedState.updateQueue = obj;
 }
 function cloneUpdateQueue(updateQueue, updateQueue2) {
@@ -2770,7 +2853,8 @@ function cloneUpdateQueue(updateQueue, updateQueue2) {
   }
 }
 function createUpdate(lane) {
-  return { lane };
+  const obj = { lane, tag: 0, payload: null, callback: null, next: null };
+  return obj;
 }
 function enqueueUpdate(updateQueue, next) {
   updateQueue = updateQueue.updateQueue;
@@ -2778,7 +2862,7 @@ function enqueueUpdate(updateQueue, next) {
     return null;
   } else {
     const shared = updateQueue.shared;
-    if (2 & closure_145) {
+    if (2 & c145) {
       if (null === shared.pending) {
         next.next = next;
       } else {
@@ -2851,9 +2935,9 @@ function enqueueCapturedUpdate(arg0, next) {
   updateQueue.lastBaseUpdate = next;
 }
 function suspendIfUpdateReadFromEntangledAsyncAction() {
-  if (closure_107) {
-    if (null !== closure_94) {
-      throw closure_94;
+  if (c107) {
+    if (null !== c94) {
+      throw c94;
     }
   }
 }
@@ -2864,9 +2948,9 @@ function processUpdateQueue(updateQueue) {
   let tmp10;
   let tmp11;
   let tmp9;
-  let closure_107 = false;
+  let c107 = false;
   updateQueue = updateQueue.updateQueue;
-  let closure_106 = false;
+  let c106 = false;
   ({ firstBaseUpdate, lastBaseUpdate } = updateQueue);
   let tmp = firstBaseUpdate;
   if (null !== updateQueue.shared.pending) {
@@ -2905,23 +2989,23 @@ function processUpdateQueue(updateQueue) {
       let tmp4 = -536870913 & iter2.lane;
       let tmp5 = tmp4 !== iter2.lane;
       if (tmp5) {
-        let tmp7 = closure_148;
-        let tmp6 = (closure_148 & tmp4) === tmp4;
+        let tmp7 = c148;
+        let tmp6 = (c148 & tmp4) === tmp4;
       } else {
         tmp6 = (arg3 & tmp4) === tmp4;
       }
       if (tmp6) {
         let tmp12 = 0 !== tmp4;
         if (tmp12) {
-          let tmp13 = closure_93;
-          tmp12 = tmp4 === closure_93;
+          let tmp13 = c93;
+          tmp12 = tmp4 === c93;
         }
         if (tmp12) {
-          closure_107 = true;
+          c107 = true;
         }
         let tmp14 = tmp28;
         if (null !== tmp28) {
-          obj = {};
+          obj = { lane: 0, tag: null, payload: null, callback: null, next: null };
           ({ tag: obj2.tag, payload: obj2.payload } = iter2);
           tmp28.next = obj;
           tmp14 = obj;
@@ -2942,7 +3026,7 @@ function processUpdateQueue(updateQueue) {
             callResult = baseState;
             tmp16 = updateQueue;
             if (2 === tag) {
-              closure_106 = true;
+              c106 = true;
               callResult = baseState;
               tmp16 = updateQueue;
             }
@@ -3040,7 +3124,7 @@ function processUpdateQueue(updateQueue) {
           tmp19 = tmp23;
           tmp20 = tmp24;
           tmp21 = tmp25;
-          // continue
+          continue;
         }
       }
       continue;
@@ -3075,8 +3159,8 @@ function commitCallbacks(callbacks) {
     let num = 0;
     if (0 < callbacks.length) {
       do {
-        let tmp = closure_299;
-        let tmp2 = closure_299(callbacks[num], arg1);
+        let tmp = callCallback;
+        let tmp2 = callCallback(callbacks[num], arg1);
         num = num + 1;
         length = callbacks.length;
       } while (num < length);
@@ -3084,12 +3168,12 @@ function commitCallbacks(callbacks) {
   }
 }
 function pushHiddenContext(arg0, baseLanes) {
-  push(module_0, closure_154);
+  push(closure_109, closure_154);
   push(closure_108, baseLanes);
   closure_154 = closure_154 | baseLanes.baseLanes;
 }
 function reuseHiddenContextOnStack() {
-  push(module_0, closure_154);
+  push(closure_109, c154);
   push(ref6, ref6.current);
 }
 function popHiddenContext() {
@@ -3127,10 +3211,10 @@ function renderWithHooks(memoizedState) {
       let tmp2 = closure_122;
     }
     tmp.H = tmp2;
-    let closure_116 = false;
+    let c116 = false;
     let tmp3 = arg2(arg3, arg4);
-    closure_116 = false;
-    if (closure_115) {
+    c116 = false;
+    if (c115) {
       tmp3 = renderWithHooksAgain(arg1, arg2, arg3, arg4);
     }
     finishRenderingHooks(memoizedState);
@@ -3140,17 +3224,17 @@ function renderWithHooks(memoizedState) {
 }
 function finishRenderingHooks(dependencies) {
   __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.H = closure_120;
-  let tmp = null !== _null2;
+  let tmp = null !== _null4;
   if (tmp) {
-    tmp = null !== _null2.next;
+    tmp = null !== _null4.next;
   }
-  let closure_110 = 0;
-  let closure_111 = null;
-  const _null2 = null;
-  let closure_113 = null;
-  let closure_114 = false;
-  let closure_117 = 0;
-  let closure_118 = null;
+  let c110 = 0;
+  let c111 = null;
+  _null4 = null;
+  let c113 = null;
+  let c114 = false;
+  let c117 = 0;
+  let c118 = null;
   if (tmp) {
     const _Error = Error;
     throw Error("Rendered fewer hooks than expected. This may be caused by an accidental early return statement.");
@@ -3161,7 +3245,7 @@ function finishRenderingHooks(dependencies) {
       tmp4 = checkIfContextChanged(dependencies);
     }
     if (tmp4) {
-      let closure_134 = true;
+      let c134 = true;
     }
   }
 }
@@ -3169,18 +3253,18 @@ function renderWithHooksAgain(updateQueue) {
   let closure_111 = updateQueue;
   let num = 0;
   while (true) {
-    let tmp = closure_115;
-    if (closure_115) {
-      let closure_118 = null;
+    let tmp = c115;
+    if (c115) {
+      let c118 = null;
     }
-    let closure_117 = 0;
-    closure_115 = false;
+    let c117 = 0;
+    c115 = false;
     if (25 <= num) {
       break;
     } else {
       num = num + 1;
-      let closure_112 = null;
-      let closure_113 = null;
+      let c112 = null;
+      let c113 = null;
       if (null != updateQueue.updateQueue) {
         updateQueue = updateQueue.updateQueue;
         updateQueue.lastEffect = null;
@@ -3193,8 +3277,8 @@ function renderWithHooksAgain(updateQueue) {
       let tmp2 = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
       let tmp3 = closure_123;
       __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.H = closure_123;
-      let tmp5 = closure_115;
-      if (closure_115) {
+      let tmp5 = c115;
+      if (c115) {
         continue;
       } else {
         return tmp4;
@@ -3211,11 +3295,11 @@ function TransitionAwareHostComponent() {
     tmp = useThenable(first);
   }
   let memoizedState = null;
-  if (null !== _null2) {
-    memoizedState = _null2.memoizedState;
+  if (null !== _null4) {
+    memoizedState = _null4.memoizedState;
   }
   if (memoizedState !== H.useState()[0]) {
-    _null.flags = _null.flags | 1024;
+    _null3.flags = _null3.flags | 1024;
   }
   return tmp;
 }
@@ -3225,7 +3309,7 @@ function bailoutHooks(updateQueue, flags) {
   updateQueue.lanes = updateQueue.lanes & ~arg2;
 }
 function resetHooksOnUnwind(memoizedState) {
-  if (closure_114) {
+  if (c114) {
     let iter = memoizedState.memoizedState;
     if (null !== iter) {
       do {
@@ -3236,48 +3320,45 @@ function resetHooksOnUnwind(memoizedState) {
         iter = iter.next;
       } while (null !== iter);
     }
-    closure_114 = false;
+    c114 = false;
   }
-  let closure_110 = 0;
-  let closure_111 = null;
-  let closure_112 = null;
-  let closure_113 = null;
-  let closure_115 = false;
-  let closure_117 = 0;
-  let closure_118 = null;
+  let c110 = 0;
+  let c111 = null;
+  let c112 = null;
+  let c113 = null;
+  let c115 = false;
+  let c117 = 0;
+  let c118 = null;
 }
 function mountWorkInProgressHook() {
-  const obj = { -771368826: 1, -814001609: "100%", -1919198945: "absolute", -1202995316: 0, -243338906: 0 };
-  if (null === closure_113) {
-    closure_113 = obj;
-    closure_111.memoizedState = obj;
+  const obj = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
+  if (null === obj) {
+    c111.memoizedState = obj;
   } else {
-    closure_113.next = obj;
-    closure_113 = obj;
+    obj.next = obj;
   }
-  return closure_113;
+  return obj;
 }
 function updateWorkInProgressHook() {
-  if (null === _null2) {
-    const alternate = _null.alternate;
+  if (null === next) {
+    const alternate = _null3.alternate;
     let memoizedState = null;
     if (null !== alternate) {
       memoizedState = alternate.memoizedState;
     }
-    let next = memoizedState;
+    next = memoizedState;
   } else {
-    next = _null2.next;
+    next = next.next;
   }
-  if (null === _null3) {
-    let next2 = _null.memoizedState;
+  if (null === obj) {
+    let next2 = _null3.memoizedState;
   } else {
-    next2 = _null3.next;
+    next2 = obj.next;
   }
   if (null !== next2) {
-    let _null3 = next2;
-    let _null2 = next;
+    obj = next2;
   } else if (null === next) {
-    if (null === _null.alternate) {
+    if (null === _null3.alternate) {
       const _Error2 = Error;
       throw Error("Update hook called on initial render. This is likely a bug in React. Please file an issue.");
     } else {
@@ -3285,32 +3366,24 @@ function updateWorkInProgressHook() {
       throw Error("Rendered more hooks than during the previous render.");
     }
   } else {
-    const obj = {};
-    _null2 = next;
-    obj.memoizedState = next.memoizedState;
-    obj.baseState = _null2.baseState;
-    obj.baseQueue = _null2.baseQueue;
-    obj.queue = _null2.queue;
-    obj.next = null;
-    if (null === _null3) {
-      _null3 = obj;
-      _null.memoizedState = obj;
+    obj = { memoizedState: next.memoizedState, baseState: next.baseState, baseQueue: next.baseQueue, queue: next.queue, next: null };
+    if (null === obj) {
+      _null3.memoizedState = obj;
     } else {
-      _null3.next = obj;
-      _null3 = obj;
+      obj.next = obj;
     }
   }
-  return _null3;
+  return obj;
 }
 function useThenable(arg0) {
   closure_117 = closure_117 + 1;
   if (null === closure_118) {
     closure_118 = [];
   }
-  if (null === _null3) {
+  if (null === _null5) {
     let next = tmp3.memoizedState;
   } else {
-    next = _null3.next;
+    next = _null5.next;
   }
   if (null !== next) {
     return tmp2;
@@ -3330,7 +3403,7 @@ function use($$typeof) {
     if ("object" === typeof $$typeof) {
       if ("function" === typeof $$typeof.then) {
         return useThenable($$typeof);
-      } else if ($$typeof.$$typeof === forResult) {
+      } else if ($$typeof.$$typeof === closure_16) {
         return readContext($$typeof);
       }
     }
@@ -3340,14 +3413,14 @@ function use($$typeof) {
 function useMemoCache(arg0) {
   let data;
   let index;
-  let updateQueue = _null.updateQueue;
+  let updateQueue = _null3.updateQueue;
   let memoCache = null;
   if (null !== updateQueue) {
     memoCache = updateQueue.memoCache;
   }
   let tmp2 = memoCache;
   if (null == memoCache) {
-    const alternate = _null.alternate;
+    const alternate = _null3.alternate;
     tmp2 = memoCache;
     if (null !== alternate) {
       const updateQueue2 = alternate.updateQueue;
@@ -3371,8 +3444,8 @@ function useMemoCache(arg0) {
     tmp2 = obj;
   }
   if (null === updateQueue) {
-    obj = { "Null": true, "Null": 5, "Null": true, "Null": true };
-    _null.updateQueue = obj;
+    obj = { lastEffect: null, events: null, stores: null, memoCache: null };
+    _null3.updateQueue = obj;
     updateQueue = obj;
   }
   updateQueue.memoCache = tmp2;
@@ -3404,7 +3477,7 @@ function basicStateReducer(arg0, arg1) {
   return tmp;
 }
 function updateReducer(arg0) {
-  return updateReducerImpl(updateWorkInProgressHook(), closure_112, arg0);
+  return updateReducerImpl(updateWorkInProgressHook(), c112, arg0);
 }
 function updateReducerImpl(queue, arg1, lastRenderedReducer) {
   let tmp7;
@@ -3438,11 +3511,11 @@ function updateReducerImpl(queue, arg1, lastRenderedReducer) {
       while (true) {
         tmp7 = -536870913 & iter2.lane;
         if (tmp7 !== iter2.lane) {
-          let tmp10 = closure_148;
-          let tmp9 = (closure_148 & tmp7) === tmp7;
+          let tmp10 = c148;
+          let tmp9 = (c148 & tmp7) === tmp7;
         } else {
-          let tmp8 = closure_110;
-          tmp9 = (closure_110 & tmp7) === tmp7;
+          let tmp8 = c110;
+          tmp9 = (c110 & tmp7) === tmp7;
         }
         if (!tmp9) {
           let obj = { lane: tmp7 };
@@ -3455,8 +3528,8 @@ function updateReducerImpl(queue, arg1, lastRenderedReducer) {
             tmp11 = tmp4;
             tmp12 = tmp5;
           }
-          let tmp13 = _null;
-          _null.lanes = _null.lanes | tmp7;
+          let tmp13 = _null3;
+          _null3.lanes = _null3.lanes | tmp7;
           let tmp14 = closure_156;
           closure_156 = closure_156 | tmp7;
           let tmp15 = tmp3;
@@ -3472,17 +3545,17 @@ function updateReducerImpl(queue, arg1, lastRenderedReducer) {
         if (0 === revertLane) {
           break;
         } else {
-          let tmp44 = closure_110;
-          if ((closure_110 & revertLane) === revertLane) {
+          let tmp44 = c110;
+          if ((c110 & revertLane) === revertLane) {
             let next2 = iter2.next;
-            let tmp21 = closure_93;
+            let tmp21 = c93;
             let tmp22 = tmp3;
             let tmp23 = tmp4;
             let tmp24 = tmp5;
             let tmp25 = tmp6;
             let tmp26 = next2;
             let flag4 = flag2;
-            if (revertLane === closure_93) {
+            if (revertLane === c93) {
               tmp22 = tmp3;
               tmp23 = tmp4;
               tmp24 = tmp5;
@@ -3505,10 +3578,10 @@ function updateReducerImpl(queue, arg1, lastRenderedReducer) {
             }
             let tmp42 = is;
             if (!is(tmp22, queue.memoizedState)) {
-              let closure_134 = true;
+              let c134 = true;
               if (flag4) {
-                if (null !== closure_94) {
-                  throw closure_94;
+                if (null !== c94) {
+                  throw c94;
                 }
               }
             }
@@ -3527,15 +3600,15 @@ function updateReducerImpl(queue, arg1, lastRenderedReducer) {
               tmp17 = tmp4;
               tmp18 = tmp5;
             }
-            let tmp19 = _null;
-            _null.lanes = _null.lanes | revertLane;
+            let tmp19 = _null3;
+            _null3.lanes = _null3.lanes | revertLane;
             let tmp20 = closure_156;
             closure_156 = closure_156 | revertLane;
             let flag3 = flag2;
           }
           let action = iter2.action;
-          let tmp29 = closure_116;
-          if (closure_116) {
+          let tmp29 = c116;
+          if (c116) {
             let tmp30 = lastRenderedReducer(tmp3, action);
           }
           let tmp31 = iter2.hasEagerState ? iter2.eagerState : lastRenderedReducer(tmp3, action);
@@ -3547,7 +3620,7 @@ function updateReducerImpl(queue, arg1, lastRenderedReducer) {
       }
       let tmp27 = tmp6;
       if (null !== tmp6) {
-        obj = { MARK_CHANNEL_READ: "%FunctionPrototype%", INDEX_SIZE_ERR: "paddingStart" };
+        obj = { lane: 0, revertLane: 0 };
         ({ action: obj3.action, hasEagerState: obj3.hasEagerState, eagerState: obj3.eagerState } = iter2);
         obj.next = null;
         tmp6.next = obj;
@@ -3557,7 +3630,7 @@ function updateReducerImpl(queue, arg1, lastRenderedReducer) {
       tmp18 = tmp5;
       obj = tmp27;
       flag3 = flag2;
-      if (tmp7 === closure_93) {
+      if (tmp7 === c93) {
         tmp17 = tmp4;
         tmp18 = tmp5;
         obj = tmp27;
@@ -3592,7 +3665,7 @@ function rerenderReducer(lastRenderedReducer) {
         memoizedState = tmp2;
       } while (iter !== next);
       if (!is(tmp2, tmp.memoizedState)) {
-        let closure_134 = true;
+        let c134 = true;
       }
       tmp.memoizedState = tmp2;
       if (null === tmp.baseQueue) {
@@ -3608,37 +3681,37 @@ function rerenderReducer(lastRenderedReducer) {
 function updateSyncExternalStore(bindResult1, bindResult) {
   const tmp2 = updateWorkInProgressHook();
   const tmp3 = bindResult();
-  let tmp5 = closure_112;
-  if (!closure_112) {
+  let tmp5 = c112;
+  if (!c112) {
     tmp5 = tmp2;
   }
   const tmp6 = !is(tmp5.memoizedState, tmp3);
   if (tmp6) {
     tmp2.memoizedState = tmp3;
-    let closure_134 = true;
+    let c134 = true;
   }
   const queue = tmp2.queue;
   const items = [bindResult1];
-  updateEffectImpl(2048, 8, subscribeToStore.bind(null, closure_111, queue, bindResult1), items);
+  updateEffectImpl(2048, 8, subscribeToStore.bind(null, c111, queue, bindResult1), items);
   if (queue.getSnapshot === bindResult) {
     return tmp3;
   }
-  closure_111.flags = closure_111.flags | 2048;
-  pushSimpleEffect(9, createEffectInstance(), updateStoreInstance.bind(null, closure_111, queue, tmp3, bindResult), null);
-  if (null === closure_146) {
+  c111.flags = c111.flags | 2048;
+  pushSimpleEffect(9, createEffectInstance(), updateStoreInstance.bind(null, c111, queue, tmp3, bindResult), null);
+  if (null === c146) {
     const _Error = Error;
     throw Error("Expected a work-in-progress root. This is a bug in React. Please file an issue.");
-  } else if (!(124 & closure_110)) {
+  } else if (!(124 & c110)) {
     pushStoreConsistencyCheck(tmp, bindResult, tmp3);
   }
 }
 function pushStoreConsistencyCheck(flags, getSnapshot, value) {
   flags.flags = flags.flags | 16384;
   let obj = { getSnapshot, value };
-  const updateQueue = _null.updateQueue;
+  const updateQueue = _null3.updateQueue;
   if (null === updateQueue) {
-    obj = { "Null": true, "Null": 5, "Null": true, "Null": true };
-    _null.updateQueue = obj;
+    obj = { lastEffect: null, events: null, stores: null, memoCache: null };
+    _null3.updateQueue = obj;
     const items = [obj];
     obj.stores = items;
   } else {
@@ -3659,11 +3732,11 @@ function updateStoreInstance(arg0, arg1, value, getSnapshot) {
   }
 }
 function subscribeToStore(arg0, arg1, arg2) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return arg2(() => {
-    if (callback(arg1)) {
-      callback2(arg0);
+    if (outer1_321(closure_1)) {
+      outer1_322(closure_0);
     }
   });
 }
@@ -3682,7 +3755,7 @@ function mountStateImpl(arg0) {
   if ("function" === typeof arg0) {
     const tmp4 = arg0();
     tmp2 = tmp4;
-    if (closure_116) {
+    if (c116) {
       setIsStrictModeForDevtools(true);
       arg0();
       setIsStrictModeForDevtools(false);
@@ -3691,7 +3764,7 @@ function mountStateImpl(arg0) {
   }
   tmp.baseState = tmp2;
   tmp.memoizedState = tmp2;
-  const obj = { 9223372036854775807: 22817347, 0: 18467840, 0: 21634048, lastRenderedReducer: basicStateReducer, lastRenderedState: tmp2 };
+  const obj = { pending: null, lanes: 0, dispatch: null, lastRenderedReducer: basicStateReducer, lastRenderedState: tmp2 };
   tmp.queue = obj;
   return tmp;
 }
@@ -3701,7 +3774,7 @@ function updateOptimisticImpl(arg0, arg1, baseState) {
   if ("function" !== typeof arg3) {
     tmp = basicStateReducer;
   }
-  return updateReducerImpl(arg0, closure_112, tmp);
+  return updateReducerImpl(arg0, c112, tmp);
 }
 function dispatchActionState(arg0, action, arg2, arg3, payload) {
   if (isRenderPhaseUpdate(arg0)) {
@@ -3713,13 +3786,17 @@ function dispatchActionState(arg0, action, arg2, arg3, payload) {
       const obj = {
         payload,
         action,
+        next: null,
+        isTransition: true,
+        status: "pending",
+        value: null,
+        reason: null,
         listeners: [],
         then(arg0) {
               const listeners = obj.listeners;
               listeners.push(arg0);
             }
       };
-      const require = obj;
       if (null !== __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T) {
         arg2(true);
       } else {
@@ -3757,24 +3834,24 @@ function runActionStateAction(state, isTransition) {
     while (true) {
       let tmp27 = onActionError;
       let tmp28 = onActionError(tmp29, T, __exception);
-      // continue
+      continue;
     }
-    const tmp13 = obj;
+    tmp13 = obj;
   } else {
     const actionResult1 = action(state, payload);
     handleActionReturnValue(tmp, tmp2, actionResult1);
   }
 }
 function handleActionReturnValue(arg0, arg1, promise) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   if (null !== promise) {
     if ("object" === typeof promise) {
       if ("function" === typeof promise.then) {
         promise.then((arg0) => {
-          callback(arg0, arg1, arg0);
+          outer1_328(closure_0, closure_1, arg0);
         }, (arg0) => {
-          callback2(arg0, arg1, arg0);
+          outer1_329(closure_0, closure_1, arg0);
         });
       }
     }
@@ -3803,8 +3880,8 @@ function onActionError(pending, arg1, reason) {
     do {
       iter.status = "rejected";
       iter.reason = reason;
-      let tmp = closure_330;
-      let tmp2 = closure_330(iter);
+      let tmp = notifyActionListeners;
+      let tmp2 = notifyActionListeners(iter);
       iter = iter.next;
     } while (iter !== iter2.next);
   }
@@ -3829,21 +3906,21 @@ function mountActionState(action, baseState) {
   const tmp = mountWorkInProgressHook();
   tmp.baseState = baseState;
   tmp.memoizedState = baseState;
-  let obj = { 9223372036854775807: 22817347, 0: 18467840, 0: 21634048, lastRenderedReducer: actionStateReducer, lastRenderedState: baseState };
+  let obj = { pending: null, lanes: 0, dispatch: null, lastRenderedReducer: actionStateReducer, lastRenderedState: baseState };
   tmp.queue = obj;
-  const bindResult = dispatchSetState.bind(null, closure_111, obj);
+  const bindResult = dispatchSetState.bind(null, c111, obj);
   obj.dispatch = bindResult;
   obj = { state: baseState, dispatch: null, action, pending: null };
   const tmp4 = mountWorkInProgressHook();
   tmp4.queue = obj;
-  const bindResult2 = dispatchActionState.bind(null, closure_111, obj, dispatchOptimisticSetState.bind(null, closure_111, false, mountStateImpl(false).queue), bindResult);
+  const bindResult2 = dispatchActionState.bind(null, c111, obj, dispatchOptimisticSetState.bind(null, c111, false, mountStateImpl(false).queue), bindResult);
   obj.dispatch = bindResult2;
   tmp4.memoizedState = action;
   const items = [baseState, bindResult2, false];
   return items;
 }
 function updateActionState(arg0) {
-  return updateActionStateImpl(updateWorkInProgressHook(), closure_112, arg0);
+  return updateActionStateImpl(updateWorkInProgressHook(), c112, arg0);
 }
 function updateActionStateImpl(arg0, arg1, queue) {
   const first = updateReducerImpl(arg0, arg1, actionStateReducer)[0];
@@ -3855,7 +3932,7 @@ function updateActionStateImpl(arg0, arg1, queue) {
       const tmp10 = updateWorkInProgressHook();
       queue = tmp10.queue;
       if (queue !== tmp10.memoizedState) {
-        _null.flags = _null.flags | 2048;
+        _null3.flags = _null3.flags | 2048;
         const tmp15 = createEffectInstance();
         pushSimpleEffect(9, tmp15, actionStateActionEffect.bind(null, queue, queue), null);
       }
@@ -3870,7 +3947,7 @@ function actionStateActionEffect(arg0, action) {
 }
 function rerenderActionState(memoizedState) {
   const tmp = updateWorkInProgressHook();
-  if (null !== closure_112) {
+  if (null !== c112) {
     return updateActionStateImpl(tmp, tmp2, memoizedState);
   } else {
     updateWorkInProgressHook();
@@ -3882,10 +3959,10 @@ function rerenderActionState(memoizedState) {
 }
 function pushSimpleEffect(tag, inst, create, deps) {
   let obj = { tag, create, deps, inst, next: null };
-  let updateQueue = _null.updateQueue;
+  let updateQueue = _null3.updateQueue;
   if (null === updateQueue) {
-    obj = { "Null": true, "Null": 5, "Null": true, "Null": true };
-    _null.updateQueue = obj;
+    obj = { lastEffect: null, events: null, stores: null, memoCache: null };
+    _null3.updateQueue = obj;
     updateQueue = obj;
   }
   if (null === updateQueue.lastEffect) {
@@ -3909,7 +3986,7 @@ function mountEffectImpl(arg0, arg1, arg2, arg3) {
   if (undefined !== arg3) {
     tmp2 = arg3;
   }
-  _null.flags = _null.flags | arg0;
+  _null3.flags = _null3.flags | arg0;
   mountWorkInProgressHook().memoizedState = pushSimpleEffect(1 | arg1, { destroy: undefined, resource: undefined }, arg2, tmp2);
 }
 function updateEffectImpl(arg0, arg1, arg2, arg3) {
@@ -3919,14 +3996,14 @@ function updateEffectImpl(arg0, arg1, arg2, arg3) {
     tmp2 = arg3;
   }
   const inst = tmp.memoizedState.inst;
-  if (null !== _null2) {
+  if (null !== _null4) {
     if (null !== tmp2) {
-      if (areHookInputsEqual(tmp2, _null2.memoizedState.deps)) {
+      if (areHookInputsEqual(tmp2, _null4.memoizedState.deps)) {
         tmp.memoizedState = pushSimpleEffect(arg1, inst, arg2, tmp2);
       }
     }
   }
-  _null.flags = _null.flags | arg0;
+  _null3.flags = _null3.flags | arg0;
   tmp.memoizedState = pushSimpleEffect(1 | arg1, inst, arg2, tmp2);
 }
 function mountEffect(arg0, arg1) {
@@ -3942,30 +4019,30 @@ function updateLayoutEffect(arg0, arg1) {
   updateEffectImpl(4, 4, arg0, arg1);
 }
 function imperativeHandleEffect(arg0, arg1) {
-  const require = arg1;
+  let closure_0 = arg1;
   if ("function" === typeof arg1) {
     let closure_1 = arg1(arg0());
     return () => {
-      if ("function" === typeof callback) {
-        callback();
+      if ("function" === typeof callback2) {
+        callback2();
       } else {
-        arg1(null);
+        callback(null);
       }
     };
   } else if (null != arg1) {
     arg1.current = arg0();
     return () => {
-      arg1.current = null;
+      closure_0.current = null;
     };
   }
 }
-function updateImperativeHandle(queue, closure_101, arr) {
+function updateImperativeHandle(queue, c101, arr) {
   let combined = null;
   if (null != arr) {
     const items = [queue];
     combined = arr.concat(items);
   }
-  updateEffectImpl(4, 4, imperativeHandleEffect.bind(null, closure_101, queue), combined);
+  updateEffectImpl(4, 4, imperativeHandleEffect.bind(null, c101, queue), combined);
 }
 function mountDebugValue() {
 
@@ -4000,7 +4077,7 @@ function updateMemo(arg0, arg1) {
     }
   }
   const tmp4 = arg0();
-  if (closure_116) {
+  if (c116) {
     setIsStrictModeForDevtools(true);
     arg0();
     setIsStrictModeForDevtools(false);
@@ -4012,10 +4089,10 @@ function updateMemo(arg0, arg1) {
 function mountDeferredValueImpl(arg0, memoizedState) {
   let tmp = arg2;
   if (undefined !== arg2) {
-    if (!(1073741824 & closure_110)) {
+    if (!(1073741824 & c110)) {
       arg0.memoizedState = tmp;
       const tmp4 = requestDeferredLane();
-      _null.lanes = _null.lanes | tmp4;
+      _null3.lanes = _null3.lanes | tmp4;
       closure_156 = closure_156 | tmp4;
     }
     return tmp;
@@ -4030,31 +4107,30 @@ function updateDeferredValueImpl(arg0, arg1, memoizedState) {
     const tmp11 = mountDeferredValueImpl(arg0, memoizedState, arg3);
     let tmp4 = tmp11;
     if (!is(tmp11, arg1)) {
-      let closure_134 = true;
+      let c134 = true;
       tmp4 = tmp11;
     }
-  } else if (42 & closure_110) {
+  } else if (42 & c110) {
     const tmp6 = requestDeferredLane();
-    _null.lanes = _null.lanes | tmp6;
+    _null3.lanes = _null3.lanes | tmp6;
     closure_156 = closure_156 | tmp6;
     tmp4 = arg1;
   } else {
-    closure_134 = true;
+    c134 = true;
     arg0.memoizedState = memoizedState;
     tmp4 = memoizedState;
   }
 }
 function startTransition(arg0, arg1, arg2, arg3, arg4) {
   let num = 8;
-  if (0 !== closure_68) {
+  if (0 !== num) {
     num = 8;
     if (8 > tmp2) {
       num = tmp;
     }
   }
-  closure_68 = num;
   const T = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T;
-  const obj = {};
+  let obj = {};
   __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = obj;
   dispatchOptimisticSetState(arg0, false, arg1, arg2);
   const promise = arg4();
@@ -4065,9 +4141,13 @@ function startTransition(arg0, arg1, arg2, arg3, arg4) {
   if (null !== promise) {
     if ("object" === typeof promise) {
       if ("function" === typeof promise.then) {
-        dispatchSetStateInternal(arg0, arg1, function chainThenableValue(promise, arg1) {
+        dispatchSetStateInternal(arg0, arg1, (function chainThenableValue(promise, arg1) {
+          let closure_0 = arg1;
           let closure_1 = [];
           const obj = {
+            status: "pending",
+            value: null,
+            reason: null,
             then(arg0) {
 
             }
@@ -4075,15 +4155,15 @@ function startTransition(arg0, arg1, arg2, arg3, arg4) {
           promise.then(() => {
             let length;
             obj.status = "fulfilled";
-            obj.value = arg1;
+            obj.value = closure_0;
             let num = 0;
             if (0 < arr.length) {
               do {
-                let tmp = closure_1;
+                let tmp = arr;
                 let tmp2 = closure_0;
-                let tmp3 = closure_1[num](closure_0);
+                let tmp3 = arr[num](closure_0);
                 num = num + 1;
-                length = closure_1.length;
+                length = arr.length;
               } while (num < length);
             }
           }, (reason) => {
@@ -4093,18 +4173,22 @@ function startTransition(arg0, arg1, arg2, arg3, arg4) {
             let num = 0;
             if (0 < arr.length) {
               do {
-                let tmp = closure_1;
-                let tmp2 = closure_1[num](undefined);
+                let tmp = arr;
+                let tmp2 = arr[num](undefined);
                 num = num + 1;
-                length = closure_1.length;
+                length = arr.length;
               } while (num < length);
             }
           });
           return obj;
-        }(promise, arg3), requestUpdateLane(arg0));
-        const tmp18 = function chainThenableValue(promise, arg1) {
+        })(promise, arg3), requestUpdateLane(arg0));
+        const tmp18 = (function chainThenableValue(promise, arg1) {
+          let closure_0 = arg1;
           let closure_1 = [];
           const obj = {
+            status: "pending",
+            value: null,
+            reason: null,
             then(arg0) {
 
             }
@@ -4112,15 +4196,15 @@ function startTransition(arg0, arg1, arg2, arg3, arg4) {
           promise.then(() => {
             let length;
             obj.status = "fulfilled";
-            obj.value = arg1;
+            obj.value = closure_0;
             let num = 0;
             if (0 < arr.length) {
               do {
-                let tmp = closure_1;
+                let tmp = arr;
                 let tmp2 = closure_0;
-                let tmp3 = closure_1[num](closure_0);
+                let tmp3 = arr[num](closure_0);
                 num = num + 1;
-                length = closure_1.length;
+                length = arr.length;
               } while (num < length);
             }
           }, (reason) => {
@@ -4130,24 +4214,24 @@ function startTransition(arg0, arg1, arg2, arg3, arg4) {
             let num = 0;
             if (0 < arr.length) {
               do {
-                let tmp = closure_1;
-                let tmp2 = closure_1[num](undefined);
+                let tmp = arr;
+                let tmp2 = arr[num](undefined);
                 num = num + 1;
-                length = closure_1.length;
+                length = arr.length;
               } while (num < length);
             }
           });
           return obj;
-        }(promise, arg3);
+        })(promise, arg3);
       }
-      closure_68 = tmp2;
+      num = tmp2;
       __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = T;
     }
   }
   dispatchSetStateInternal(arg0, arg1, arg3, requestUpdateLane(arg0));
 }
 function useHostTransitionStatus() {
-  return readContext(obj11);
+  return readContext(obj12);
 }
 function updateId() {
   return updateWorkInProgressHook().memoizedState;
@@ -4179,7 +4263,7 @@ function refreshCache(arg0) {
 }
 function dispatchReducerAction(arg0, arg1, action) {
   const tmp = requestUpdateLane(arg0);
-  const obj = { "Null": 22817347, "Null": 18467840, "Null": 21634048, "Null": 1098866944, "Bool(true)": 115359, "Bool(true)": 18280545, lane: tmp, action };
+  const obj = { lane: tmp, revertLane: 0, action, hasEagerState: false, eagerState: null, next: null };
   if (isRenderPhaseUpdate(arg0)) {
     enqueueRenderPhaseUpdate(arg1, obj);
   } else {
@@ -4194,7 +4278,7 @@ function dispatchSetState(arg0, arg1, arg2) {
   dispatchSetStateInternal(arg0, arg1, arg2, requestUpdateLane(arg0));
 }
 function dispatchSetStateInternal(arg0, lastRenderedReducer, action, lane) {
-  const obj = { "Null": 22817347, "Null": 18467840, "Null": 21634048, "Null": 1098866944, "Bool(true)": 115359, "Bool(true)": 18280545, lane, action };
+  const obj = { lane, revertLane: 0, action, hasEagerState: false, eagerState: null, next: null };
   if (isRenderPhaseUpdate(arg0)) {
     enqueueRenderPhaseUpdate(lastRenderedReducer, obj);
   } else {
@@ -4209,7 +4293,7 @@ function dispatchSetStateInternal(arg0, lastRenderedReducer, action, lane) {
           tmp3.eagerState = tmp7Result;
           if (is(tmp7Result, lastRenderedState)) {
             enqueueUpdate$1(tmp, lastRenderedReducer, tmp3, 0);
-            if (null === closure_146) {
+            if (null === c146) {
               finishQueueingConcurrentUpdates();
             }
             return false;
@@ -4241,7 +4325,7 @@ function dispatchSetStateInternal(arg0, lastRenderedReducer, action, lane) {
   return false;
 }
 function dispatchOptimisticSetState(arg0, arg1, arg2, action) {
-  const obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Bool(true)": true, "Bool(true)": true, revertLane: requestTransitionLane(), action };
+  const obj = { lane: 2, revertLane: requestTransitionLane(), action, hasEagerState: false, eagerState: null, next: null };
   if (isRenderPhaseUpdate(arg0)) {
     if (arg1) {
       const _Error = Error;
@@ -4256,19 +4340,19 @@ function dispatchOptimisticSetState(arg0, arg1, arg2, action) {
 }
 function isRenderPhaseUpdate(alternate) {
   alternate = alternate.alternate;
-  let tmp = alternate === closure_111;
+  let tmp = alternate === c111;
   if (!tmp) {
     let tmp3 = null !== alternate;
     if (tmp3) {
-      tmp3 = alternate === closure_111;
+      tmp3 = alternate === c111;
     }
     tmp = tmp3;
   }
   return tmp;
 }
 function enqueueRenderPhaseUpdate(pending, next) {
-  let closure_114 = true;
-  let closure_115 = true;
+  let c114 = true;
+  let c115 = true;
   if (null === pending.pending) {
     next.next = next;
   } else {
@@ -4316,9 +4400,9 @@ function resolveLazy(_init) {
   return _init._init(_init._payload);
 }
 function createChildReconciler(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   function deleteChild(deletions) {
-    if (deletions) {
+    if (closure_0) {
       deletions = deletions.deletions;
       if (null === deletions) {
         const items = [arg1];
@@ -4331,11 +4415,11 @@ function createChildReconciler(arg0) {
   }
   function deleteRemainingChildren(arg0, arg1) {
     let sibling = arg1;
-    if (arg0) {
+    if (closure_0) {
       if (null !== sibling) {
         do {
-          let tmp = closure_1;
-          let tmp2 = closure_1(arg0, sibling);
+          let tmp = deleteChild;
+          let tmp2 = deleteChild(arg0, sibling);
           sibling = sibling.sibling;
         } while (null !== sibling);
       }
@@ -4360,14 +4444,14 @@ function createChildReconciler(arg0) {
     return map;
   }
   function useFiber(arg0, arg1) {
-    const tmp = callback7(arg0, arg1);
+    const tmp = outer1_473(arg0, arg1);
     tmp.index = 0;
     tmp.sibling = null;
     return tmp;
   }
   function placeChild(alternate, arg1, index) {
     alternate.index = index;
-    if (alternate) {
+    if (closure_0) {
       index = alternate.alternate;
       if (null !== index) {
         index = index.index;
@@ -4386,8 +4470,8 @@ function createChildReconciler(arg0) {
     }
   }
   function placeSingleChild(alternate) {
-    let tmp = alternate;
-    if (alternate) {
+    let tmp = closure_0;
+    if (closure_0) {
       tmp = null === alternate.alternate;
     }
     if (tmp) {
@@ -4403,7 +4487,7 @@ function createChildReconciler(arg0) {
       }
       return tmp2;
     }
-    const tmp3 = callback10(arg2, arg0.mode, arg3);
+    const tmp3 = outer1_477(arg2, arg0.mode, arg3);
     tmp3.return = arg0;
     tmp2 = tmp3;
   }
@@ -4412,12 +4496,12 @@ function createChildReconciler(arg0) {
     if (type === createChild) {
       let tmp6 = updateFragment(mode, elementType, type.props.children, arg3, type.key);
     } else if (null === elementType) {
-      tmp6 = callback8(type.type, type.key, type.props, undefined, mode.mode, arg3);
-      callback4(tmp6, type);
+      tmp6 = outer1_475(type.type, type.key, type.props, undefined, mode.mode, arg3);
+      outer1_352(tmp6, type);
       tmp6.return = mode;
     } else if (elementType.elementType === type) {
       const tmp10 = useFiber(elementType, type.props);
-      callback4(tmp10, type);
+      outer1_352(tmp10, type);
       tmp10.return = mode;
       tmp6 = tmp10;
     }
@@ -4440,7 +4524,7 @@ function createChildReconciler(arg0) {
         }
       }
     }
-    const tmp3 = callback11(containerInfo, arg0.mode, arg3);
+    const tmp3 = outer1_478(containerInfo, arg0.mode, arg3);
     tmp3.return = arg0;
     tmpResult = tmp3;
   }
@@ -4452,7 +4536,7 @@ function createChildReconciler(arg0) {
       }
       return tmp2;
     }
-    const tmp3 = callback9(arg2, arg0.mode, arg3, arg4);
+    const tmp3 = outer1_476(arg2, arg0.mode, arg3, arg4);
     tmp3.return = arg0;
     tmp2 = tmp3;
   }
@@ -4464,29 +4548,29 @@ function createChildReconciler(arg0) {
             if (null !== $$typeof) {
               $$typeof = $$typeof.$$typeof;
               if (updatePortal === $$typeof) {
-                const tmp24 = callback8($$typeof.type, $$typeof.key, $$typeof.props, undefined, mode.mode, arg2);
-                callback4(tmp24, $$typeof);
+                const tmp24 = outer1_475($$typeof.type, $$typeof.key, $$typeof.props, undefined, mode.mode, arg2);
+                outer1_352(tmp24, $$typeof);
                 tmp24.return = mode;
                 return tmp24;
               } else if (updateFragment === $$typeof) {
-                const tmp20 = callback11($$typeof, mode.mode, arg2);
+                const tmp20 = outer1_478($$typeof, mode.mode, arg2);
                 tmp20.return = mode;
                 return tmp20;
-              } else if (closure_21 === $$typeof) {
+              } else if (outer1_21 === $$typeof) {
                 return createChild(mode, $$typeof._init($$typeof._payload), arg2);
               } else {
                 if (!useFiber($$typeof)) {
-                  if (!callback($$typeof)) {
+                  if (!outer1_182($$typeof)) {
                     if ("function" === typeof $$typeof.then) {
-                      return createChild(mode, callback3($$typeof), arg2);
-                    } else if ($$typeof.$$typeof === closure_16) {
-                      return createChild(mode, callback2(mode, $$typeof), arg2);
+                      return createChild(mode, outer1_351($$typeof), arg2);
+                    } else if ($$typeof.$$typeof === outer1_16) {
+                      return createChild(mode, outer1_264(mode, $$typeof), arg2);
                     } else {
-                      callback5(undefined, $$typeof);
+                      outer1_353(undefined, $$typeof);
                     }
                   }
                 }
-                const tmp17 = callback9($$typeof, mode.mode, arg2, null);
+                const tmp17 = outer1_476($$typeof, mode.mode, arg2, null);
                 tmp17.return = mode;
                 return tmp17;
               }
@@ -4496,7 +4580,7 @@ function createChildReconciler(arg0) {
         }
       }
     }
-    const tmp26 = callback10("" + $$typeof, mode.mode, arg2);
+    const tmp26 = outer1_477("" + $$typeof, mode.mode, arg2);
     tmp26.return = mode;
     return tmp26;
   }
@@ -4523,17 +4607,17 @@ function createChildReconciler(arg0) {
                   tmp29 = updatePortal(arg0, key, $$typeof, arg3);
                 }
                 return tmp29;
-              } else if (closure_21 === $$typeof) {
+              } else if (outer1_21 === $$typeof) {
                 return updateSlot(arg0, key, $$typeof._init($$typeof._payload), arg3);
               } else {
                 if (!useFiber($$typeof)) {
-                  if (!callback($$typeof)) {
+                  if (!outer1_182($$typeof)) {
                     if ("function" === typeof $$typeof.then) {
-                      return updateSlot(arg0, key, callback3($$typeof), arg3);
-                    } else if ($$typeof.$$typeof === closure_16) {
-                      return updateSlot(arg0, key, callback2(arg0, $$typeof), arg3);
+                      return updateSlot(arg0, key, outer1_351($$typeof), arg3);
+                    } else if ($$typeof.$$typeof === outer1_16) {
+                      return updateSlot(arg0, key, outer1_264(arg0, $$typeof), arg3);
                     } else {
-                      callback5(undefined, $$typeof);
+                      outer1_353(undefined, $$typeof);
                     }
                   }
                 }
@@ -4576,17 +4660,17 @@ function createChildReconciler(arg0) {
                 }
                 const tmp34 = get.get(key) || null;
                 return updatePortal(arg1, tmp34, $$typeof, arg4);
-              } else if (closure_21 === $$typeof) {
+              } else if (outer1_21 === $$typeof) {
                 return updateFromMap(get, arg1, arg2, $$typeof._init($$typeof._payload), arg4);
               } else {
                 if (!useFiber($$typeof)) {
-                  if (!callback($$typeof)) {
+                  if (!outer1_182($$typeof)) {
                     if ("function" === typeof $$typeof.then) {
-                      return updateFromMap(get, arg1, arg2, callback3($$typeof), arg4);
-                    } else if ($$typeof.$$typeof === closure_16) {
-                      return updateFromMap(get, arg1, arg2, callback2(arg1, $$typeof), arg4);
+                      return updateFromMap(get, arg1, arg2, outer1_351($$typeof), arg4);
+                    } else if ($$typeof.$$typeof === outer1_16) {
+                      return updateFromMap(get, arg1, arg2, outer1_264(arg1, $$typeof), arg4);
                     } else {
-                      callback5(undefined, $$typeof);
+                      outer1_353(undefined, $$typeof);
                     }
                   }
                 }
@@ -4640,19 +4724,19 @@ function createChildReconciler(arg0) {
             } else if (sibling2.elementType === type) {
               deleteRemainingChildren(arg0, sibling2.sibling);
               tmp68 = useFiber(sibling2, children.props);
-              callback4(tmp68, children);
+              outer1_352(tmp68, children);
               tmp68.return = arg0;
             }
             placeSingleChild(tmp68);
             return tmp68;
           }
           if (children.type === createChild) {
-            const tmp80 = callback9(children.props.children, arg0.mode, arg3, children.key);
+            const tmp80 = outer1_476(children.props.children, arg0.mode, arg3, children.key);
             tmp80.return = arg0;
             tmp68 = tmp80;
           } else {
-            const tmp76 = callback8(children.type, children.key, children.props, undefined, arg0.mode, arg3);
-            callback4(tmp76, children);
+            const tmp76 = outer1_475(children.type, children.key, children.props, undefined, arg0.mode, arg3);
+            outer1_352(tmp76, children);
             tmp76.return = arg0;
             tmp68 = tmp76;
           }
@@ -4675,7 +4759,7 @@ function createChildReconciler(arg0) {
                   const tmp53Result = useFiber(sibling, children1);
                   tmp53Result.return = arg0;
                   let tmp50 = tmp53Result;
-                  const tmp53 = useFiber;
+                  let tmp53 = useFiber;
                 }
                 placeSingleChild(tmp50);
                 return tmp50;
@@ -4683,14 +4767,15 @@ function createChildReconciler(arg0) {
             }
             deleteRemainingChildren(arg0, sibling);
           }
-          tmp50 = callback11(children, arg0.mode, arg3);
+          tmp50 = outer1_478(children, arg0.mode, arg3);
           tmp50.return = arg0;
-        } else if (closure_21 === $$typeof) {
+        } else if (outer1_21 === $$typeof) {
           return reconcileChildFibersImpl(arg0, tag, children._init(children._payload), arg3);
         } else if (useFiber(children)) {
-          return function reconcileChildrenArray(arg0, tag, children, arg3) {
+          return (function reconcileChildrenArray(arg0, tag, children, arg3) {
             let sibling;
             let tmp8;
+            let closure_0 = arg0;
             let num = 0;
             let tmp = null;
             let tmp2 = null;
@@ -4719,27 +4804,27 @@ function createChildReconciler(arg0) {
                     sibling = tmp23.sibling;
                     tmp8 = tmp23;
                   }
-                  let tmp9 = callback5;
+                  let tmp9 = outer1_12;
                   let tmp10 = arg0;
                   let tmp11 = tmp8;
                   let tmp12 = arg3;
-                  let tmp13 = callback5(arg0, tmp8, children[num4], arg3);
+                  let tmp13 = outer1_12(arg0, tmp8, children[num4], arg3);
                   if (null === tmp13) {
                     break;
                   } else {
-                    let tmp14 = arg0;
-                    if (arg0) {
+                    let tmp14 = outer1_0;
+                    if (outer1_0) {
                       tmp14 = tmp8;
                     }
                     if (tmp14) {
                       tmp14 = null === tmp13.alternate;
                     }
                     if (tmp14) {
-                      let tmp15 = callback;
-                      let tmp16 = callback(arg0, tmp8);
+                      let tmp15 = outer1_1;
+                      let tmp16 = outer1_1(arg0, tmp8);
                     }
-                    let tmp17 = callback4;
-                    let tmp18 = callback4(tmp13, num3, num4);
+                    let tmp17 = outer1_5;
+                    let tmp18 = outer1_5(tmp13, num3, num4);
                     let tmp19 = tmp13;
                     if (null !== tmp22) {
                       tmp22.sibling = tmp13;
@@ -4780,22 +4865,22 @@ function createChildReconciler(arg0) {
               }
             }
             if (num2 === children.length) {
-              callback2(arg0, tmp3);
+              outer1_2(arg0, tmp3);
               return tmp;
             } else if (null === tmp3) {
               let tmp46 = tmp;
               let tmp47 = tmp;
               if (num2 < children.length) {
                 do {
-                  let tmp48 = closure_11;
-                  let tmp49 = closure_11(arg0, children[num2], arg3);
+                  let tmp48 = outer1_11;
+                  let tmp49 = outer1_11(arg0, children[num2], arg3);
                   let tmp50 = num;
                   let tmp51 = tmp46;
                   let tmp52 = tmp2;
                   if (null !== tmp49) {
-                    let tmp53 = closure_5;
+                    let tmp53 = outer1_5;
                     let tmp55 = tmp49;
-                    let tmp54 = closure_5(tmp49, num, num2);
+                    let tmp54 = outer1_5(tmp49, num, num2);
                     if (null !== tmp2) {
                       tmp2.sibling = tmp49;
                       tmp55 = tmp46;
@@ -4813,7 +4898,7 @@ function createChildReconciler(arg0) {
               }
               return tmp47;
             } else {
-              const arr = callback3(tmp3);
+              const arr = outer1_3(tmp3);
               let tmp40 = num;
               let tmp41 = tmp;
               let tmp42 = tmp2;
@@ -4821,19 +4906,19 @@ function createChildReconciler(arg0) {
               let tmp43 = tmp;
               if (num2 < children.length) {
                 do {
-                  let tmp24 = closure_13;
+                  let tmp24 = outer1_13;
                   let tmp25 = arr;
                   let tmp26 = arg0;
                   let tmp27 = sum1;
                   let tmp28 = arg3;
-                  let tmp29 = closure_13(arr, arg0, sum1, children[sum1], arg3);
+                  let tmp29 = outer1_13(arr, arg0, sum1, children[sum1], arg3);
                   let tmp30 = sum1;
                   let tmp31 = tmp40;
                   let tmp32 = tmp41;
                   let tmp33 = tmp42;
                   if (null !== tmp29) {
-                    let tmp34 = closure_0;
-                    if (closure_0) {
+                    let tmp34 = outer1_0;
+                    if (outer1_0) {
                       tmp34 = null !== tmp29.alternate;
                     }
                     if (tmp34) {
@@ -4843,9 +4928,9 @@ function createChildReconciler(arg0) {
                       }
                       let deleteResult = arr.delete(key);
                     }
-                    let tmp36 = closure_5;
+                    let tmp36 = outer1_5;
                     let tmp38 = tmp29;
-                    let tmp37 = closure_5(tmp29, tmp40, sum1);
+                    let tmp37 = outer1_5(tmp29, tmp40, sum1);
                     if (null !== tmp42) {
                       tmp42.sibling = tmp29;
                       tmp38 = tmp41;
@@ -4861,25 +4946,26 @@ function createChildReconciler(arg0) {
                   tmp43 = tmp32;
                 } while (sum1 < children.length);
               }
-              if (arg0) {
+              if (outer1_0) {
                 const item = arr.forEach((arg0) => {
-                  callback(arg0, arg0);
+                  outer2_1(closure_0, arg0);
                 });
               }
               return tmp43;
             }
-          }(arg0, tag, children, arg3);
-        } else if (callback(children)) {
-          const obj = callback(children);
+          })(arg0, tag, children, arg3);
+        } else if (outer1_182(children)) {
+          const obj = outer1_182(children);
           if ("function" !== typeof obj) {
-            const _Error = Error;
+            let _Error = Error;
             throw Error("An object is not an iterable. This error is likely caused by a bug in React. Please file an issue.");
           } else {
-            return function reconcileChildrenIterator(arg0, tag, next, arg3) {
+            return (function reconcileChildrenIterator(arg0, tag, next, arg3) {
               let iter4;
               let iter6;
               let sibling;
               let tmp6;
+              let closure_0 = arg0;
               if (null == next) {
                 const _Error = Error;
                 throw Error("An iterable object provided no iterator.");
@@ -4917,27 +5003,27 @@ function createChildReconciler(arg0) {
                         sibling = tmp24.sibling;
                         tmp6 = tmp24;
                       }
-                      let tmp7 = callback5;
+                      let tmp7 = outer1_12;
                       let tmp8 = arg0;
                       let tmp9 = tmp6;
                       let tmp10 = arg3;
-                      let tmp11 = callback5(arg0, tmp6, iter3.value, arg3);
+                      let tmp11 = outer1_12(arg0, tmp6, iter3.value, arg3);
                       if (null === tmp11) {
                         break;
                       } else {
-                        let tmp12 = arg0;
-                        if (arg0) {
+                        let tmp12 = outer1_0;
+                        if (outer1_0) {
                           tmp12 = tmp6;
                         }
                         if (tmp12) {
                           tmp12 = null === tmp11.alternate;
                         }
                         if (tmp12) {
-                          let tmp13 = callback;
-                          let tmp14 = callback(arg0, tmp6);
+                          let tmp13 = outer1_1;
+                          let tmp14 = outer1_1(arg0, tmp6);
                         }
-                        let tmp15 = callback4;
-                        let tmp16 = callback4(tmp11, num3, num4);
+                        let tmp15 = outer1_5;
+                        let tmp16 = outer1_5(tmp11, num3, num4);
                         let tmp17 = tmp11;
                         if (null !== tmp23) {
                           tmp23.sibling = tmp11;
@@ -4984,22 +5070,22 @@ function createChildReconciler(arg0) {
                   }
                 }
                 if (iter2.done) {
-                  callback2(arg0, tmp21);
+                  outer1_2(arg0, tmp21);
                   return tmp19;
                 } else if (null === tmp21) {
                   let tmp47 = tmp19;
                   let tmp48 = tmp19;
                   if (!iter2.done) {
                     do {
-                      let tmp49 = closure_11;
-                      let tmp50 = closure_11(arg0, iter2.value, arg3);
+                      let tmp49 = outer1_11;
+                      let tmp50 = outer1_11(arg0, iter2.value, arg3);
                       let tmp51 = num;
                       let tmp52 = tmp47;
                       let tmp53 = tmp20;
                       if (null !== tmp50) {
-                        let tmp54 = closure_5;
+                        let tmp54 = outer1_5;
                         let tmp56 = tmp50;
-                        let tmp55 = closure_5(tmp50, num, num2);
+                        let tmp55 = outer1_5(tmp50, num, num2);
                         if (null !== tmp20) {
                           tmp20.sibling = tmp50;
                           tmp56 = tmp47;
@@ -5019,7 +5105,7 @@ function createChildReconciler(arg0) {
                   }
                   return tmp48;
                 } else {
-                  const arr = callback3(tmp21);
+                  const arr = outer1_3(tmp21);
                   let tmp41 = num;
                   let tmp42 = tmp19;
                   let tmp43 = tmp20;
@@ -5028,19 +5114,19 @@ function createChildReconciler(arg0) {
                   let tmp44 = tmp19;
                   if (!iter2.done) {
                     do {
-                      let tmp25 = closure_13;
+                      let tmp25 = outer1_13;
                       let tmp26 = arr;
                       let tmp27 = arg0;
                       let tmp28 = sum1;
                       let tmp29 = arg3;
-                      let tmp30 = closure_13(arr, arg0, sum1, iter5.value, arg3);
+                      let tmp30 = outer1_13(arr, arg0, sum1, iter5.value, arg3);
                       let tmp31 = sum1;
                       let tmp32 = tmp41;
                       let tmp33 = tmp42;
                       let tmp34 = tmp43;
                       if (null !== tmp30) {
-                        let tmp35 = closure_0;
-                        if (closure_0) {
+                        let tmp35 = outer1_0;
+                        if (outer1_0) {
                           tmp35 = null !== tmp30.alternate;
                         }
                         if (tmp35) {
@@ -5050,9 +5136,9 @@ function createChildReconciler(arg0) {
                           }
                           let deleteResult = arr.delete(key);
                         }
-                        let tmp37 = closure_5;
+                        let tmp37 = outer1_5;
                         let tmp39 = tmp30;
-                        let tmp38 = closure_5(tmp30, tmp41, sum1);
+                        let tmp38 = outer1_5(tmp30, tmp41, sum1);
                         if (null !== tmp43) {
                           tmp43.sibling = tmp30;
                           tmp39 = tmp42;
@@ -5070,22 +5156,22 @@ function createChildReconciler(arg0) {
                       tmp44 = tmp33;
                     } while (!iter4.done);
                   }
-                  if (arg0) {
+                  if (outer1_0) {
                     const item = arr.forEach((arg0) => {
-                      callback(arg0, arg0);
+                      outer2_1(closure_0, arg0);
                     });
                   }
                   return tmp44;
                 }
               }
-            }(arg0, tag, obj.call(children), arg3);
+            })(arg0, tag, obj.call(children), arg3);
           }
         } else if ("function" === typeof children.then) {
-          return reconcileChildFibersImpl(arg0, tag, callback3(children), arg3);
-        } else if (children.$$typeof === closure_16) {
-          return reconcileChildFibersImpl(arg0, tag, callback2(arg0, children), arg3);
+          return reconcileChildFibersImpl(arg0, tag, outer1_351(children), arg3);
+        } else if (children.$$typeof === outer1_16) {
+          return reconcileChildFibersImpl(arg0, tag, outer1_264(arg0, children), arg3);
         } else {
-          callback5(undefined, children);
+          outer1_353(undefined, children);
         }
       }
     }
@@ -5100,18 +5186,18 @@ function createChildReconciler(arg0) {
     const text = `${promise}`;
     if (null === tag) {
       deleteRemainingChildren(arg0, tag);
-      let tmp14 = callback10(`${promise}`, arg0.mode, arg3);
+      let tmp14 = outer1_477(`${promise}`, arg0.mode, arg3);
       tmp14.return = arg0;
       placeSingleChild(tmp14);
     }
     deleteRemainingChildren(arg0, tag.sibling);
-    const tmp16 = useFiber(tag, text);
+    let tmp16 = useFiber(tag, text);
     tmp16.return = arg0;
     tmp14 = tmp16;
   }
   return (arg0, arg1, arg2, arg3) => {
-    let closure_125 = 0;
-    let closure_124 = null;
+    const outer1_125 = 0;
+    const outer1_124 = null;
     return reconcileChildFibersImpl(arg0, arg1, arg2, arg3);
   };
 }
@@ -5143,7 +5229,7 @@ function pushOffscreenSuspenseHandler(tag) {
       if (tmp10) {
         closure_129 = tag;
       }
-      const tmp10 = null !== alternate && null !== alternate.memoizedState;
+      tmp10 = null !== alternate && null !== alternate.memoizedState;
     }
   } else {
     reuseSuspenseHandlerOnStack();
@@ -5155,8 +5241,8 @@ function reuseSuspenseHandlerOnStack() {
 }
 function popSuspenseHandler(arg0) {
   pop(closure_128);
-  if (closure_129 === arg0) {
-    closure_129 = null;
+  if (c129 === arg0) {
+    c129 = null;
   }
   pop(closure_130);
 }
@@ -5194,7 +5280,7 @@ function findFirstSuspended(arg0) {
           sibling = sibling.child;
           let tmp4 = tmp;
         }
-        let tmp = tmp4;
+        tmp = tmp4;
       }
       if (sibling !== arg0) {
         let tmp8 = sibling;
@@ -5341,7 +5427,7 @@ function resolveClassComponentProps(defaultProps) {
           continue;
         } else {
           obj[tmp5] = arg1[tmp5];
-          // continue
+          continue;
         }
         continue;
       }
@@ -5364,7 +5450,7 @@ function resolveClassComponentProps(defaultProps) {
           continue;
         } else {
           tmp7[tmp11] = defaultProps[tmp11];
-          // continue
+          continue;
         }
         continue;
       }
@@ -5388,13 +5474,13 @@ function logCaughtError(onCaughtError, tag, componentStack) {
   onCaughtError.onCaughtError(componentStack.value, obj);
 }
 function createRootErrorUpdate(arg0, arg1, arg2) {
-  const require = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   const tmp = createUpdate(arg2);
   tmp.tag = 3;
   tmp.payload = { element: null };
   tmp.callback = () => {
-    callback(arg0, arg1);
+    outer1_367(closure_0, closure_1);
   };
   return tmp;
 }
@@ -5404,38 +5490,40 @@ function createClassErrorUpdate(arg0) {
   return tmp;
 }
 function initializeClassErrorUpdate(arg0, arg1, type, value) {
-  const require = arg1;
-  const dependencyMap = type;
+  let closure_0 = arg1;
+  let closure_1 = type;
+  let closure_2 = value;
   const getDerivedStateFromError = type.type.getDerivedStateFromError;
   if ("function" === typeof getDerivedStateFromError) {
     const isArray = value.value;
-    arg0.payload = () => getDerivedStateFromError(value);
+    arg0.payload = () => getDerivedStateFromError(closure_4);
     arg0.callback = () => {
-      callback(arg1, arg2, arg3);
+      outer1_368(closure_0, closure_1, closure_2);
     };
   }
   const stateNode = type.stateNode;
   if (tmp) {
-    arg0.callback = function(arg0, arg1, arg2, self) {
-      self = this;
-      callback(arg1, arg2, self);
+    arg0.callback = function() {
+      const self = this;
+      outer1_368(closure_0, closure_1, value);
       if ("function" !== typeof getDerivedStateFromError) {
-        if (null === set) {
+        if (null === outer1_167) {
           const _Set = Set;
           const items = [self];
           const set = new Set(items);
+          outer1_167 = set;
         } else {
-          set.add(self);
+          outer1_167.add(self);
         }
       }
-      const stack = self.stack;
+      const stack = value.stack;
       const obj = {};
       let str = "";
       if (null !== stack) {
         str = stack;
       }
       obj.componentStack = str;
-      self.componentDidCatch(self.value, obj);
+      self.componentDidCatch(value.value, obj);
     };
   }
 }
@@ -5461,7 +5549,7 @@ function updateForwardRef(arg0, ref, render) {
           continue;
         } else {
           obj[tmp5] = arg3[tmp5];
-          // continue
+          continue;
         }
         continue;
       }
@@ -5469,7 +5557,7 @@ function updateForwardRef(arg0, ref, render) {
   }
   prepareToReadContext(ref);
   if (null !== arg0) {
-    if (!closure_134) {
+    if (!c134) {
       bailoutHooks(arg0, ref, arg4);
       let child = bailoutOnAlreadyFinishedWork(arg0, ref, arg4);
     }
@@ -5528,12 +5616,12 @@ function updateSimpleMemoComponent(memoizedProps, ref) {
     if (shallowEqual(memoizedProps, arg3)) {
       tmp = arg3;
       if (memoizedProps.ref === ref.ref) {
-        let closure_134 = false;
+        let c134 = false;
         ref.pendingProps = memoizedProps;
         if (checkScheduledUpdateOrContext(memoizedProps, arg4)) {
           tmp = memoizedProps;
           if (131072 & memoizedProps.flags) {
-            closure_134 = true;
+            c134 = true;
             tmp = memoizedProps;
           }
         } else {
@@ -5578,7 +5666,7 @@ function updateOffscreenComponent(memoizedState, pendingProps) {
       return null;
     } else if (1 & pendingProps.mode) {
       if (536870912 & arg2) {
-        pendingProps.memoizedState = { maxAge: "angle", updateAgeOnGet: 180 };
+        pendingProps.memoizedState = { baseLanes: 0, cachePool: null };
         if (tmp) {
           let cachePool = null;
           if (null !== memoizedState) {
@@ -5604,7 +5692,7 @@ function updateOffscreenComponent(memoizedState, pendingProps) {
         return null;
       }
     } else {
-      pendingProps.memoizedState = { maxAge: "angle", updateAgeOnGet: 180 };
+      pendingProps.memoizedState = { baseLanes: 0, cachePool: null };
       if (tmp) {
         pushTransition(undefined, null);
       }
@@ -5630,7 +5718,7 @@ function deferHiddenOffscreenComponent(arg0, arg1, baseLanes) {
   const tmp = peekCacheFromPool();
   let tmp2 = null;
   if (null !== tmp) {
-    let obj = { parent: obj12._currentValue, pool: tmp };
+    let obj = { parent: obj13._currentValue, pool: tmp };
     tmp2 = obj;
   }
   obj = { baseLanes, cachePool: tmp2 };
@@ -5650,7 +5738,7 @@ function markRef(ref, ref2) {
     if (tmp4) {
       ref2.flags = ref2.flags | 4194816;
     }
-    const tmp4 = null !== ref && null !== ref.ref;
+    tmp4 = null !== ref && null !== ref.ref;
   } else {
     if ("function" !== typeof ref) {
       if ("object" !== tmp) {
@@ -5661,13 +5749,13 @@ function markRef(ref, ref2) {
     if (!tmp2) {
       ref2.flags = ref2.flags | 4194816;
     }
-    const tmp2 = null !== ref && ref.ref === ref;
+    tmp2 = null !== ref && ref.ref === ref;
   }
 }
 function updateFunctionComponent(arg0, flags) {
   prepareToReadContext(flags);
   if (null !== arg0) {
-    if (!closure_134) {
+    if (!c134) {
       bailoutHooks(arg0, flags, arg4);
       let child = bailoutOnAlreadyFinishedWork(arg0, flags, arg4);
     }
@@ -5682,7 +5770,7 @@ function replayFunctionComponent(arg0, flags) {
   flags.updateQueue = null;
   finishRenderingHooks(arg0);
   if (null !== arg0) {
-    if (!closure_134) {
+    if (!c134) {
       bailoutHooks(arg0, flags, arg5);
       let child = bailoutOnAlreadyFinishedWork(arg0, flags, arg5);
     }
@@ -5733,7 +5821,7 @@ function updateClassComponent(dependencies, stateNode, contextType, memoizedProp
         callComponentWillReceiveProps(undefined, stateNode, memoizedProps, tmp53);
       }
     }
-    let closure_106 = false;
+    let c106 = false;
     const memoizedState3 = stateNode.memoizedState;
     stateNode.state = memoizedState3;
     processUpdateQueue(stateNode, memoizedProps, stateNode, arg4);
@@ -5741,7 +5829,7 @@ function updateClassComponent(dependencies, stateNode, contextType, memoizedProp
     let memoizedState4 = stateNode.memoizedState;
     if (stateNode.pendingProps === memoizedProps) {
       if (memoizedState3 === memoizedState4) {
-        if (!closure_106) {
+        if (!c106) {
           flag2 = false;
           if ("function" === typeof stateNode.componentDidMount) {
             stateNode.flags = stateNode.flags | 4194308;
@@ -5754,8 +5842,8 @@ function updateClassComponent(dependencies, stateNode, contextType, memoizedProp
       applyDerivedStateFromProps(stateNode, undefined, getDerivedStateFromProps2, memoizedProps);
       memoizedState4 = stateNode.memoizedState;
     }
-    let tmp81 = closure_106;
-    if (!closure_106) {
+    let tmp81 = c106;
+    if (!c106) {
       tmp81 = checkShouldComponentUpdate(stateNode, contextType, tmp52, memoizedProps, memoizedState3, memoizedState4, tmp53);
     }
     if (tmp81) {
@@ -5817,9 +5905,9 @@ function updateClassComponent(dependencies, stateNode, contextType, memoizedProp
       if (tmp9) {
         callComponentWillReceiveProps(undefined, stateNode2, memoizedProps, tmp4);
       }
-      const tmp9 = memoizedProps2 !== pendingProps || stateNode2.context !== tmp4;
+      tmp9 = memoizedProps2 !== pendingProps || stateNode2.context !== tmp4;
     }
-    closure_106 = false;
+    c106 = false;
     const memoizedState = stateNode.memoizedState;
     stateNode2.state = memoizedState;
     processUpdateQueue(stateNode, memoizedProps, stateNode2, arg4);
@@ -5827,8 +5915,8 @@ function updateClassComponent(dependencies, stateNode, contextType, memoizedProp
     let memoizedState2 = stateNode.memoizedState;
     if (memoizedProps2 === pendingProps) {
       if (memoizedState === memoizedState2) {
-        tmp = closure_106;
-        if (!closure_106) {
+        tmp = c106;
+        if (!c106) {
           let tmp24 = "function" !== typeof stateNode2.componentDidUpdate;
           if (!tmp24) {
             tmp24 = memoizedProps2 === dependencies.memoizedProps && memoizedState === dependencies.memoizedState;
@@ -5854,8 +5942,8 @@ function updateClassComponent(dependencies, stateNode, contextType, memoizedProp
       applyDerivedStateFromProps(stateNode, undefined, getDerivedStateFromProps, memoizedProps);
       memoizedState2 = stateNode.memoizedState;
     }
-    let tmp33 = closure_106;
-    if (!closure_106) {
+    let tmp33 = c106;
+    if (!c106) {
       tmp33 = checkShouldComponentUpdate(stateNode, contextType, tmp, memoizedProps, memoizedState, memoizedState2, tmp4);
     }
     if (!tmp33) {
@@ -5946,7 +6034,7 @@ function getRemainingWorkInPrimaryTree(childLanes) {
   }
   let tmp2 = num;
   if (arg1) {
-    tmp2 = num | closure_159;
+    tmp2 = num | c159;
   }
   return tmp2;
 }
@@ -6034,17 +6122,17 @@ function updateSuspenseComponent(memoizedState, pendingProps, lanes) {
         } else {
           pushPrimaryTreeSuspenseHandler(pendingProps);
           shim$1();
-          if (!closure_134) {
+          if (!c134) {
             propagateParentContextChanges(undefined, pendingProps, lanes, false);
           }
-          if (!closure_134) {
+          if (!c134) {
             if (!(lanes & memoizedState.childLanes)) {
               shim$1();
               tmp42 = mountSuspensePrimaryChildren(pendingProps, pendingProps.children);
               tmp42.flags = tmp42.flags | 4096;
             }
           }
-          if (null !== closure_146) {
+          if (null !== c146) {
             let num11 = 1;
             if (!(42 & (lanes & -lanes))) {
               num11 = 1;
@@ -6146,7 +6234,7 @@ function updateSuspenseComponent(memoizedState, pendingProps, lanes) {
         } else {
           let cachePool = memoizedState.cachePool;
           if (null !== cachePool) {
-            const _currentValue = obj12._currentValue;
+            const _currentValue = obj13._currentValue;
             if (cachePool.parent !== _currentValue) {
               const obj2 = { parent: _currentValue, pool: _currentValue };
               cachePool = obj2;
@@ -6201,7 +6289,7 @@ function mountSuspensePrimaryChildren(mode, children) {
 function mountWorkInProgressOffscreenFiber(arg0, arg1) {
   const tmp = createFiberImplClass(22, arg0, null, arg1);
   tmp.lanes = 0;
-  tmp.stateNode = {};
+  tmp.stateNode = { _visibility: 1, _pendingMarkers: null, _retryCache: null, _transitions: null };
   return tmp;
 }
 function retrySuspenseComponentWithoutHydrating(child, pendingProps) {
@@ -6222,7 +6310,7 @@ function scheduleSuspenseWorkOnFiber(lanes) {
 function initSuspenseListRenderState(memoizedState, isBackwards, tail, last, tailMode) {
   memoizedState = memoizedState.memoizedState;
   if (null === memoizedState) {
-    const obj = { isBackwards, last, tail, tailMode };
+    const obj = { isBackwards, rendering: null, renderingStartTime: 0, last, tail, tailMode };
     memoizedState.memoizedState = obj;
   } else {
     memoizedState.isBackwards = isBackwards;
@@ -6306,8 +6394,8 @@ function updateSuspenseListComponent(flags, pendingProps) {
           let alternate2 = sibling3.alternate;
           let tmp33 = null !== alternate2;
           if (tmp33) {
-            let tmp34 = closure_359;
-            tmp33 = null === closure_359(alternate2);
+            let tmp34 = findFirstSuspended;
+            tmp33 = null === findFirstSuspended(alternate2);
           }
           if (tmp33) {
             tmp31 = sibling3;
@@ -6403,8 +6491,8 @@ function bailoutOnAlreadyFinishedWork(dependencies, lanes) {
     if (null !== child.sibling) {
       do {
         let sibling = tmp8.sibling;
-        let tmp11 = closure_473;
-        let tmp12 = closure_473(sibling, sibling.pendingProps);
+        let tmp11 = createWorkInProgress;
+        let tmp12 = createWorkInProgress(sibling, sibling.pendingProps);
         tmp9.sibling = tmp12;
         tmp12.return = lanes;
         tmp8 = sibling;
@@ -6432,20 +6520,20 @@ function checkScheduledUpdateOrContext(lanes) {
 function beginWork(memoizedProps, pendingProps) {
   if (null !== memoizedProps) {
     if (memoizedProps.memoizedProps !== pendingProps.pendingProps) {
-      let closure_134 = true;
+      let c134 = true;
     } else {
       if (!checkScheduledUpdateOrContext(memoizedProps, arg2)) {
         if (!(128 & pendingProps.flags)) {
-          pushProvider(undefined, obj12, memoizedProps.memoizedState.cache);
+          pushProvider(undefined, obj13, memoizedProps.memoizedState.cache);
           bailoutOnAlreadyFinishedWork(memoizedProps, pendingProps, arg2);
           pendingProps.lanes = 0;
           updateOffscreenComponent(memoizedProps, pendingProps, arg2);
         }
       }
-      closure_134 = 131072 & memoizedProps.flags;
+      c134 = 131072 & memoizedProps.flags;
     }
   } else {
-    closure_134 = false;
+    c134 = false;
   }
   throw pendingProps.pendingProps;
 }
@@ -6561,8 +6649,8 @@ function unwindWork(arg0, tag) {
     case 2:
       return null;
     case 3:
-      closure_257(closure_84);
-      closure_252();
+      popProvider(obj13);
+      popHostContainer();
       const flags3 = tag.flags;
       let tmp41 = null;
       if (65536 & flags3) {
@@ -6574,10 +6662,10 @@ function unwindWork(arg0, tag) {
       }
       return tmp41;
     case 4:
-      closure_252();
+      popHostContainer();
       return null;
     case 5:
-      closure_254(tag);
+      popHostContext(tag);
       return null;
     case 6:
       return null;
@@ -6588,14 +6676,14 @@ function unwindWork(arg0, tag) {
     case 9:
       return null;
     case 10:
-      closure_257(tag.type);
+      popProvider(tag.type);
       return null;
     case 11:
       return null;
     case 12:
       return null;
     case 13:
-      closure_358(tag);
+      popSuspenseHandler(tag);
       const memoizedState = tag.memoizedState;
       if (null !== memoizedState) {
         if (null !== memoizedState.dehydrated) {
@@ -6623,17 +6711,17 @@ function unwindWork(arg0, tag) {
     case 18:
       return null;
     case 19:
-      closure_248(closure_130);
+      pop(closure_130);
       return null;
     case 20:
       return null;
     case 21:
       return null;
     case 22:
-      closure_358(tag);
-      closure_303();
+      popSuspenseHandler(tag);
+      popHiddenContext();
       if (null !== arg0) {
-        closure_248(closure_96);
+        pop(closure_96);
       }
       let flags = tag.flags;
       let tmp14 = 65536 & flags;
@@ -6646,10 +6734,10 @@ function unwindWork(arg0, tag) {
       }
       return tmp15;
     case 23:
-      closure_358(tag);
-      closure_303();
+      popSuspenseHandler(tag);
+      popHiddenContext();
       if (null !== arg0) {
-        closure_248(closure_96);
+        pop(closure_96);
       }
       flags = tag.flags;
       tmp14 = 65536 & flags;
@@ -6662,22 +6750,22 @@ function unwindWork(arg0, tag) {
       }
       return tmp15;
     case 24:
-      closure_257(closure_84);
+      popProvider(obj13);
       return null;
     case 25:
       return null;
     case 26:
-      closure_254(tag);
+      popHostContext(tag);
       return null;
     case 27:
-      closure_254(tag);
+      popHostContext(tag);
       return null;
     default:
       return null;
   }
 }
 function unwindInterruptedWork(arg0, arg1) {
-  popProvider(obj12);
+  popProvider(obj13);
 }
 function commitHookEffectListMount(arg0, updateQueue) {
   let next2;
@@ -6788,7 +6876,7 @@ function safelyDetachRef(ref) {
         } else {
           let tmp9 = alternate;
           tmp8.refCleanup = null;
-          // break
+          break;
         }
         break;
       }
@@ -6884,8 +6972,8 @@ function insertOrAppendPlacementNodeIntoContainer(tag, arg1, containerTag) {
           let sibling = child.sibling;
           if (null !== sibling) {
             do {
-              let tmp = closure_410;
-              let tmp2 = closure_410(sibling, arg1, containerTag);
+              let tmp = insertOrAppendPlacementNodeIntoContainer;
+              let tmp2 = insertOrAppendPlacementNodeIntoContainer(sibling, arg1, containerTag);
               sibling = sibling.sibling;
             } while (null !== sibling);
           }
@@ -6900,7 +6988,7 @@ function insertOrAppendPlacementNodeIntoContainer(tag, arg1, containerTag) {
       throw Error("Container does not support insertBefore operation");
     }
   } else {
-    const UIManager = require(dependencyMap[2]).UIManager;
+    const UIManager = require(261) /* get BatchedBridge */.UIManager;
     let _nativeTag = stateNode;
     if ("number" !== typeof stateNode) {
       _nativeTag = stateNode._nativeTag;
@@ -6920,8 +7008,8 @@ function insertOrAppendPlacementNode(tag, arg1, _children) {
           let sibling = child.sibling;
           if (null !== sibling) {
             do {
-              let tmp = closure_411;
-              let tmp2 = closure_411(sibling, arg1, _children);
+              let tmp = insertOrAppendPlacementNode;
+              let tmp2 = insertOrAppendPlacementNode(sibling, arg1, _children);
               sibling = sibling.sibling;
             } while (null !== sibling);
           }
@@ -6937,14 +7025,14 @@ function insertOrAppendPlacementNode(tag, arg1, _children) {
       _children.splice(index, 1);
       const index1 = _children.indexOf(arg1);
       _children.splice(index1, 0, stateNode);
-      const UIManager3 = require(dependencyMap[2]).UIManager;
+      const UIManager3 = require(261) /* get BatchedBridge */.UIManager;
       const items = [index];
       const items1 = [index1];
       UIManager3.manageChildren(_children._nativeTag, items, items1, [], [], []);
     } else {
       const index2 = _children.indexOf(arg1);
       _children.splice(index2, 0, stateNode);
-      const UIManager4 = require(dependencyMap[2]).UIManager;
+      const UIManager4 = require(261) /* get BatchedBridge */.UIManager;
       const _nativeTag3 = _children._nativeTag;
       let _nativeTag2 = stateNode;
       if ("number" !== typeof stateNode) {
@@ -6964,13 +7052,13 @@ function insertOrAppendPlacementNode(tag, arg1, _children) {
     if (0 <= index3) {
       _children1.splice(index3, 1);
       _children1.push(stateNode);
-      const UIManager2 = require(dependencyMap[2]).UIManager;
+      const UIManager2 = require(261) /* get BatchedBridge */.UIManager;
       const items4 = [index3];
       const items5 = [_children1.length - 1];
       UIManager2.manageChildren(_children._nativeTag, items4, items5, [], [], []);
     } else {
       _children1.push(stateNode);
-      const UIManager = require(dependencyMap[2]).UIManager;
+      const UIManager = require(261) /* get BatchedBridge */.UIManager;
       const items6 = [_nativeTag];
       const items7 = [_children1.length - 1];
       UIManager.manageChildren(_children._nativeTag, [], [], items6, items7, []);
@@ -6978,24 +7066,23 @@ function insertOrAppendPlacementNode(tag, arg1, _children) {
   }
 }
 function commitLayoutEffectOnFiber(arg0, memoizedProps, flags) {
-  const tmp = flags;
   flags = flags.flags;
   switch (flags.tag) {
     case 0:
-      closure_420(arg0, tmp);
+      recursivelyTraverseLayoutEffects(arg0, tmp);
       let tmp90 = 4 & flags;
       if (tmp90) {
-        closure_402(5, tmp);
+        commitHookEffectListMount(5, tmp);
       }
     break;
     case 1:
-      closure_420(arg0, tmp);
+      recursivelyTraverseLayoutEffects(arg0, tmp);
       if (4 & flags) {
         let stateNode = tmp.stateNode;
         if (null === memoizedProps) {
           stateNode.componentDidMount();
         } else {
-          const tmp73 = closure_365(tmp.type, memoizedProps.memoizedProps);
+          const tmp73 = resolveClassComponentProps(tmp.type, memoizedProps.memoizedProps);
           const memoizedState2 = memoizedProps.memoizedState;
           stateNode.componentDidUpdate(tmp73, memoizedState2, stateNode.__reactInternalSnapshotBeforeUpdate);
         }
@@ -7005,24 +7092,24 @@ function commitLayoutEffectOnFiber(arg0, memoizedProps, flags) {
         if (!(64 & flags)) {
           break;
         } else {
-          let tmp80 = closure_404;
+          let tmp80 = commitClassCallbacks;
           let tmp81 = flags;
-          let tmp82 = closure_404(tmp);
-          // break
+          let tmp82 = commitClassCallbacks(tmp);
+          break;
         }
         let num11 = 512;
         if (512 & flags) {
-          let tmp83 = closure_406;
+          let tmp83 = safelyAttachRef;
           let tmp84 = flags;
-          let tmp85 = closure_406(tmp, tmp.return);
+          let tmp85 = safelyAttachRef(tmp, tmp.return);
         }
       }
     break;
     case 2:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 3:
-      closure_420(arg0, tmp);
+      recursivelyTraverseLayoutEffects(arg0, tmp);
       if (64 & flags) {
         const updateQueue = tmp.updateQueue;
         if (null !== updateQueue) {
@@ -7036,49 +7123,49 @@ function commitLayoutEffectOnFiber(arg0, memoizedProps, flags) {
                 }
               }
             }
-            stateNode = closure_247(tmp.child.stateNode);
+            stateNode = getPublicInstance(tmp.child.stateNode);
           }
-          closure_300(tmp52, stateNode);
+          commitCallbacks(tmp52, stateNode);
         }
       }
     break;
     case 4:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 5:
-      closure_420(arg0, tmp);
+      recursivelyTraverseLayoutEffects(arg0, tmp);
       let tmp43 = 512 & flags;
       if (tmp43) {
-        closure_406(tmp, tmp.return);
+        safelyAttachRef(tmp, tmp.return);
       }
     break;
     case 6:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 7:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 8:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 9:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 10:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 11:
-      closure_420(arg0, tmp);
+      recursivelyTraverseLayoutEffects(arg0, tmp);
       tmp90 = 4 & flags;
       if (tmp90) {
-        closure_402(5, tmp);
+        commitHookEffectListMount(5, tmp);
       }
     break;
     case 12:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 13:
-      closure_420(arg0, tmp);
+      recursivelyTraverseLayoutEffects(arg0, tmp);
       if (64 & flags) {
         const memoizedState = tmp.memoizedState;
         let tmp32 = null !== memoizedState;
@@ -7086,44 +7173,44 @@ function commitLayoutEffectOnFiber(arg0, memoizedProps, flags) {
           tmp32 = null !== tmp30.dehydrated;
         }
         if (tmp32) {
-          closure_468.bind(null, tmp);
-          closure_243();
+          retryDehydratedSuspenseBoundary.bind(null, tmp);
+          shim$1();
         }
       }
     break;
     case 14:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 15:
-      closure_420(arg0, tmp);
+      recursivelyTraverseLayoutEffects(arg0, tmp);
       tmp90 = 4 & flags;
       if (tmp90) {
-        closure_402(5, tmp);
+        commitHookEffectListMount(5, tmp);
       }
     break;
     case 16:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 17:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 18:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 19:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 20:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 21:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 22:
       if (1 & tmp.mode) {
         let tmp9 = null !== tmp.memoizedState;
         if (!tmp9) {
-          tmp9 = closure_136;
+          tmp9 = c136;
         }
         if (!tmp9) {
           let tmp11 = null !== memoizedProps;
@@ -7131,58 +7218,56 @@ function commitLayoutEffectOnFiber(arg0, memoizedProps, flags) {
             tmp11 = null !== memoizedProps.memoizedState;
           }
           if (!tmp11) {
-            tmp11 = closure_137;
+            tmp11 = c137;
           }
-          const tmp14 = closure_136;
-          const tmp15 = closure_137;
-          closure_136 = tmp9;
-          closure_137 = tmp11;
+          c136 = tmp9;
+          c137 = tmp11;
           if (tmp11) {
             if (!tmp15) {
-              closure_422(arg0, tmp, 8772 & tmp.subtreeFlags);
+              recursivelyTraverseReappearLayoutEffects(arg0, tmp, 8772 & tmp.subtreeFlags);
             }
-            closure_136 = tmp14;
-            closure_137 = tmp15;
+            c136 = tmp14;
+            c137 = tmp15;
           }
-          closure_420(arg0, tmp);
+          recursivelyTraverseLayoutEffects(arg0, tmp);
         }
       } else {
-        closure_420(arg0, tmp);
+        recursivelyTraverseLayoutEffects(arg0, tmp);
       }
     break;
     case 23:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 24:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 25:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 26:
-      closure_420(arg0, tmp);
+      recursivelyTraverseLayoutEffects(arg0, tmp);
       tmp43 = 512 & flags;
       if (tmp43) {
-        closure_406(tmp, tmp.return);
+        safelyAttachRef(tmp, tmp.return);
       }
     break;
     case 27:
-      closure_420(arg0, tmp);
+      recursivelyTraverseLayoutEffects(arg0, tmp);
       tmp43 = 512 & flags;
       if (tmp43) {
-        closure_406(tmp, tmp.return);
+        safelyAttachRef(tmp, tmp.return);
       }
     break;
     case 28:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 29:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
     break;
     case 30:
     break;
     default:
-      closure_420(arg0, flags);
+      recursivelyTraverseLayoutEffects(arg0, flags);
   }
 }
 function detachFiberAfterEffects(alternate) {
@@ -7207,8 +7292,8 @@ function recursivelyTraverseDeletionEffects(arg0, arg1, child) {
   let sibling = child.child;
   if (null !== sibling) {
     do {
-      let tmp = closure_415;
-      let tmp2 = closure_415(arg0, arg1, sibling);
+      let tmp = commitDeletionEffectsOnFiber;
+      let tmp2 = commitDeletionEffectsOnFiber(arg0, arg1, sibling);
       sibling = sibling.sibling;
     } while (null !== sibling);
   }
@@ -7223,21 +7308,21 @@ function commitDeletionEffectsOnFiber(arg0, arg1, mode) {
     let tmp6 = mode;
     let num = 1;
     if (1 & mode.mode) {
-      let tmp12 = closure_137;
-      let tmp13 = closure_137;
-      if (!closure_137) {
+      let tmp12 = c137;
+      let tmp13 = c137;
+      if (!c137) {
         let tmp14 = mode;
         let tmp15 = null;
         tmp12 = null !== mode.memoizedState;
       }
-      closure_137 = tmp12;
+      c137 = tmp12;
       let tmp16 = recursivelyTraverseDeletionEffects;
       let tmp17 = arg0;
       let tmp18 = arg1;
       let tmp19 = mode;
       let tmp20 = recursivelyTraverseDeletionEffects(arg0, arg1, mode);
       let tmp21 = tmp13;
-      closure_137 = tmp13;
+      c137 = tmp13;
     } else {
       let tmp7 = recursivelyTraverseDeletionEffects;
       let tmp8 = arg0;
@@ -7247,13 +7332,13 @@ function commitDeletionEffectsOnFiber(arg0, arg1, mode) {
     }
   }
 }
-function attachSuspenseRetryListeners(tag, arr) {
-  const require = tag;
-  tag = tag.tag;
+function attachSuspenseRetryListeners(handler, arr) {
+  let closure_0 = handler;
+  const tag = handler.tag;
   if (13 !== tag) {
     if (19 !== tag) {
       if (22 === tag) {
-        const stateNode = tag.stateNode;
+        const stateNode = handler.stateNode;
         let _retryCache = stateNode._retryCache;
         if (null === _retryCache) {
           const prototype = ctor.prototype;
@@ -7263,23 +7348,22 @@ function attachSuspenseRetryListeners(tag, arr) {
         }
       } else {
         const _Error = Error;
-        throw Error("Unexpected Suspense handler tag (" + tag.tag + "). This is a bug in React.");
+        throw Error("Unexpected Suspense handler tag (" + handler.tag + "). This is a bug in React.");
       }
     }
-    const dependencyMap = _retryCache;
     const item = arr.forEach((promise) => {
-      const bindResult = callback.bind(null, promise, promise);
+      const bindResult = outer1_469.bind(null, closure_0, promise);
       if (!_retryCache.has(promise)) {
         _retryCache.add(promise);
         promise.then(bindResult, bindResult);
       }
     });
   }
-  let stateNode2 = tag.stateNode;
+  let stateNode2 = handler.stateNode;
   if (null === stateNode2) {
     const prototype2 = ctor.prototype;
     const tmp11 = new ctor();
-    tag.stateNode = tmp11;
+    handler.stateNode = tmp11;
     stateNode2 = tmp11;
   }
   _retryCache = stateNode2;
@@ -7306,11 +7390,11 @@ function recursivelyTraverseMutationEffects(arg0, deletions) {
                 continue;
               }
               let containerInfo = _return.stateNode.containerInfo;
-              let closure_141 = true;
+              let c141 = true;
             }
           }
           containerInfo = _return.stateNode;
-          closure_141 = false;
+          c141 = false;
         }
         let tmp3 = containerInfo;
         if (null === containerInfo) {
@@ -7319,7 +7403,7 @@ function recursivelyTraverseMutationEffects(arg0, deletions) {
           let tmp4 = commitDeletionEffectsOnFiber;
           let tmp5 = commitDeletionEffectsOnFiber(arg0, deletions, tmp);
           containerInfo = null;
-          closure_141 = false;
+          c141 = false;
           let alternate = tmp.alternate;
           if (null !== alternate) {
             alternate.return = null;
@@ -7336,8 +7420,8 @@ function recursivelyTraverseMutationEffects(arg0, deletions) {
     let sibling = deletions.child;
     if (null !== sibling) {
       do {
-        let tmp6 = closure_418;
-        let tmp7 = closure_418(sibling, arg0);
+        let tmp6 = commitMutationEffectsOnFiber;
+        let tmp7 = commitMutationEffectsOnFiber(sibling, arg0);
         sibling = sibling.sibling;
       } while (null !== sibling);
     }
@@ -7397,8 +7481,8 @@ function recursivelyTraverseLayoutEffects(arg0, subtreeFlags) {
     let sibling = subtreeFlags.child;
     if (null !== sibling) {
       do {
-        let tmp2 = closure_412;
-        let tmp3 = closure_412(arg0, sibling.alternate, sibling);
+        let tmp2 = commitLayoutEffectOnFiber;
+        let tmp3 = commitLayoutEffectOnFiber(arg0, sibling.alternate, sibling);
         sibling = sibling.sibling;
       } while (null !== sibling);
     }
@@ -7451,7 +7535,7 @@ function recursivelyTraverseDisappearLayoutEffects(child) {
               }
             }
             sibling = sibling.sibling;
-            let tmp = tmp4;
+            tmp = tmp4;
             if (null === sibling) {
               break;
             }
@@ -7527,12 +7611,12 @@ function recursivelyTraversePassiveMountEffects(arg0, subtreeFlags) {
     let sibling = subtreeFlags.child;
     if (null !== sibling) {
       do {
-        let tmp2 = closure_426;
+        let tmp2 = commitPassiveMountOnFiber;
         let tmp3 = arg0;
         let tmp4 = sibling;
         let tmp5 = arg2;
         let tmp6 = arg3;
-        let tmp7 = closure_426(arg0, sibling, arg2, arg3);
+        let tmp7 = commitPassiveMountOnFiber(arg0, sibling, arg2, arg3);
         sibling = sibling.sibling;
       } while (null !== sibling);
     }
@@ -7547,20 +7631,20 @@ function commitPassiveMountOnFiber(arg0, flags) {
   flags = flags.flags;
   switch (flags.tag) {
     case 0:
-      closure_425(arg0, tmp, arg2, arg3);
+      recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
       let tmp91 = 2048 & flags;
       if (tmp91) {
-        closure_402(9, tmp);
+        commitHookEffectListMount(9, tmp);
       }
     break;
     case 1:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 2:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 3:
-      closure_425(arg0, tmp, arg2, arg3);
+      recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
       if (2048 & flags) {
         let cache = null;
         if (null !== tmp.alternate) {
@@ -7572,41 +7656,41 @@ function commitPassiveMountOnFiber(arg0, flags) {
           tmp80.refCount = tmp80.refCount + 1;
           tmp = cache;
           if (null != cache) {
-            closure_267(cache);
+            releaseCache(cache);
           }
         }
       }
     break;
     case 4:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 5:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 6:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 7:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 8:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 9:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 10:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 11:
-      closure_425(arg0, tmp, arg2, arg3);
+      recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
       tmp91 = 2048 & flags;
       if (tmp91) {
-        closure_402(9, tmp);
+        commitHookEffectListMount(9, tmp);
       }
     break;
     case 12:
-      closure_425(arg0, flags, arg2, arg3);
+      recursivelyTraversePassiveMountEffects(arg0, flags, arg2, arg3);
       if (tmp50) {
         const stateNode2 = tmp.stateNode;
         const memoizedProps = tmp.memoizedProps;
@@ -7620,74 +7704,74 @@ function commitPassiveMountOnFiber(arg0, flags) {
           const tmp62 = id;
         }
       }
-      const tmp50 = 2048 & flags;
+      tmp50 = 2048 & flags;
     break;
     case 13:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 14:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 15:
-      closure_425(arg0, tmp, arg2, arg3);
+      recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
       tmp91 = 2048 & flags;
       if (tmp91) {
-        closure_402(9, tmp);
+        commitHookEffectListMount(9, tmp);
       }
     break;
     case 16:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 17:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 18:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 19:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 20:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 21:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
     break;
     case 22:
       ({ stateNode, alternate: alternate2 } = tmp);
       if (null !== tmp.memoizedState) {
         if (2 & stateNode._visibility) {
-          closure_425(arg0, tmp, arg2, arg3);
+          recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
         } else if (1 & tmp.mode) {
-          closure_428(arg0, tmp);
+          recursivelyTraverseAtomicPassiveEffects(arg0, tmp);
         } else {
           stateNode._visibility = stateNode._visibility | 2;
-          closure_425(arg0, tmp, arg2, arg3);
+          recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
         }
       } else {
         tmp = stateNode;
         if (2 & stateNode._visibility) {
-          closure_425(arg0, tmp, arg2, arg3);
+          recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
         } else {
           stateNode._visibility = stateNode._visibility | 2;
-          closure_427(arg0, flags, arg2, arg3, 10256 & tmp.subtreeFlags);
+          recursivelyTraverseReconnectPassiveEffects(arg0, flags, arg2, arg3, 10256 & tmp.subtreeFlags);
         }
       }
       if (2048 & flags) {
-        closure_423(alternate2, tmp);
+        commitOffscreenPassiveMountEffects(alternate2, tmp);
       }
     break;
     case 23:
     break;
     case 24:
-      closure_425(arg0, tmp, arg2, arg3);
+      recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
       if (2048 & flags) {
         const alternate = tmp.alternate;
-        closure_424(undefined, tmp);
+        commitCachePassiveMountEffect(undefined, tmp);
       }
     break;
     default:
-      tmp = closure_425(arg0, tmp, arg2, arg3);
+      tmp = recursivelyTraversePassiveMountEffects(arg0, tmp, arg2, arg3);
   }
 }
 function recursivelyTraverseReconnectPassiveEffects(arg0, subtreeFlags) {
@@ -7782,7 +7866,7 @@ function recursivelyTraverseReconnectPassiveEffects(arg0, subtreeFlags) {
             }
           }
           sibling = sibling.sibling;
-          let tmp2 = tmp10;
+          tmp2 = tmp10;
           if (null === sibling) {
             break;
           }
@@ -7810,23 +7894,23 @@ function recursivelyTraverseAtomicPassiveEffects(arg0, subtreeFlags) {
       do {
         ({ flags, tag } = sibling);
         if (22 === tag) {
-          let tmp8 = closure_428;
-          let tmp9 = closure_428(arg0, sibling);
+          let tmp8 = recursivelyTraverseAtomicPassiveEffects;
+          let tmp9 = recursivelyTraverseAtomicPassiveEffects(arg0, sibling);
           if (2048 & flags) {
-            let tmp10 = closure_423;
-            let tmp11 = closure_423(sibling.alternate, sibling);
+            let tmp10 = commitOffscreenPassiveMountEffects;
+            let tmp11 = commitOffscreenPassiveMountEffects(sibling.alternate, sibling);
           }
         } else if (24 === tag) {
-          let tmp4 = closure_428;
-          let tmp5 = closure_428(arg0, sibling);
+          let tmp4 = recursivelyTraverseAtomicPassiveEffects;
+          let tmp5 = recursivelyTraverseAtomicPassiveEffects(arg0, sibling);
           if (2048 & flags) {
-            let tmp6 = closure_424;
+            let tmp6 = commitCachePassiveMountEffect;
             let alternate = sibling.alternate;
-            let tmp7 = closure_424(undefined, sibling);
+            let tmp7 = commitCachePassiveMountEffect(undefined, sibling);
           }
         } else {
-          let tmp2 = closure_428;
-          let tmp3 = closure_428(arg0, sibling);
+          let tmp2 = recursivelyTraverseAtomicPassiveEffects;
+          let tmp3 = recursivelyTraverseAtomicPassiveEffects(arg0, sibling);
         }
         sibling = sibling.sibling;
       } while (null !== sibling);
@@ -7834,12 +7918,12 @@ function recursivelyTraverseAtomicPassiveEffects(arg0, subtreeFlags) {
   }
 }
 function recursivelyAccumulateSuspenseyCommit(subtreeFlags) {
-  if (subtreeFlags.subtreeFlags & closure_142) {
+  if (subtreeFlags.subtreeFlags & c142) {
     let sibling = subtreeFlags.child;
     if (null !== sibling) {
       do {
-        let tmp2 = closure_430;
-        let tmp3 = closure_430(sibling);
+        let tmp2 = accumulateSuspenseyCommitOnFiber;
+        let tmp3 = accumulateSuspenseyCommitOnFiber(sibling);
         sibling = sibling.sibling;
       } while (null !== sibling);
     }
@@ -7900,9 +7984,9 @@ function recursivelyTraversePassiveUnmountEffects(deletions) {
       if (0 < deletions.length) {
         do {
           let tmp2 = deletions[num];
-          closure_139 = tmp2;
-          let tmp3 = closure_435;
-          let tmp4 = closure_435(tmp2, deletions);
+          let c139 = tmp2;
+          let tmp3 = commitPassiveUnmountEffectsInsideOfDeletedTree_begin;
+          let tmp4 = commitPassiveUnmountEffectsInsideOfDeletedTree_begin(tmp2, deletions);
           num = num + 1;
           length = deletions.length;
         } while (num < length);
@@ -7914,8 +7998,8 @@ function recursivelyTraversePassiveUnmountEffects(deletions) {
     let sibling = deletions.child;
     if (null !== sibling) {
       do {
-        let tmp8 = closure_433;
-        let tmp9 = closure_433(sibling);
+        let tmp8 = commitPassiveUnmountOnFiber;
+        let tmp9 = commitPassiveUnmountOnFiber(sibling);
         sibling = sibling.sibling;
       } while (null !== sibling);
     }
@@ -7960,9 +8044,9 @@ function recursivelyTraverseDisconnectPassiveEffects(deletions) {
       if (0 < deletions.length) {
         do {
           let tmp3 = deletions[num3];
-          closure_139 = tmp3;
-          let tmp4 = closure_435;
-          let tmp5 = closure_435(tmp3, deletions);
+          let c139 = tmp3;
+          let tmp4 = commitPassiveUnmountEffectsInsideOfDeletedTree_begin;
+          let tmp5 = commitPassiveUnmountEffectsInsideOfDeletedTree_begin(tmp3, deletions);
           num3 = num3 + 1;
           num = num3;
           length = deletions.length;
@@ -8010,13 +8094,13 @@ function recursivelyTraverseDisconnectPassiveEffects(deletions) {
   }
 }
 function commitPassiveUnmountEffectsInsideOfDeletedTree_begin(arg0, arg1) {
+  let _null6;
   let _return;
   let sibling;
-  let tag;
-  if (null !== tag) {
+  if (null !== _null6) {
     while (true) {
-      let tmp3 = tag;
-      tag = tag.tag;
+      let tmp3 = _null6;
+      let tag = _null6.tag;
       if (0 !== tag) {
         if (11 !== tag) {
           if (15 !== tag) {
@@ -8040,40 +8124,40 @@ function commitPassiveUnmountEffectsInsideOfDeletedTree_begin(arg0, arg1) {
           let child = tmp3.child;
           if (null !== child) {
             child.return = tmp3;
-            tag = child;
+            _null6 = child;
             let tmp9 = tmp;
             let tmp10 = tmp2;
           } else {
-            let tmp8 = tag;
+            let tmp8 = _null6;
             tmp9 = tmp;
             tmp10 = tmp2;
-            if (null !== tag) {
-              let tmp11 = tag;
-              ({ sibling, return: _return } = tag);
+            if (null !== _null6) {
+              let tmp11 = _null6;
+              ({ sibling, return: _return } = _null6);
               let tmp12 = detachFiberAfterEffects;
-              let tmp13 = detachFiberAfterEffects(tag);
-              while (tag !== arg0) {
+              let tmp13 = detachFiberAfterEffects(_null6);
+              while (_null6 !== arg0) {
                 if (null !== sibling) {
                   sibling.return = _return;
-                  tag = sibling;
+                  _null6 = sibling;
                   tmp9 = sibling;
                   tmp10 = _return;
                 } else {
-                  tag = _return;
+                  _null6 = _return;
                   tmp9 = sibling;
                   tmp10 = _return;
                 }
                 continue;
               }
-              tag = null;
+              _null6 = null;
               tmp9 = sibling;
               tmp10 = _return;
             }
           }
-          let tmp14 = tag;
-          let tmp = tmp9;
-          let tmp2 = tmp10;
-          if (null === tag) {
+          let tmp14 = _null6;
+          tmp = tmp9;
+          tmp2 = tmp10;
+          if (null === _null6) {
             break;
           }
         }
@@ -8087,43 +8171,42 @@ function requestUpdateLane(mode) {
   if (!(1 & mode.mode)) {
     return 2;
   } else {
-    if (!(2 & closure_145)) {
+    if (!(2 & c145)) {
       if (null !== __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T) {
-        let tmp6 = closure_93;
-        if (0 === closure_93) {
+        let tmp6 = c93;
+        if (0 === c93) {
           tmp6 = requestTransitionLane();
         }
         let num2 = tmp6;
       } else {
         num2 = 32;
-        if (0 !== closure_68) {
-          num2 = closure_68;
+        if (0 !== c68) {
+          num2 = c68;
         }
       }
     }
-    num2 = closure_148 & -closure_148;
+    num2 = c148 & -c148;
   }
 }
 function requestDeferredLane() {
-  if (0 === closure_159) {
-    let num = 536870912;
-    if (!(536870912 & closure_148)) {
+  if (0 === num) {
+    num = 536870912;
+    if (!(536870912 & c148)) {
       num = claimNextTransitionLane();
     }
-    closure_159 = num;
   }
   const current = closure_128.current;
   if (null !== current) {
     current.flags = current.flags | 32;
   }
-  return closure_159;
+  return num;
 }
 function scheduleUpdateOnFiber(cancelPendingCommit, mode) {
-  let tmp = cancelPendingCommit !== closure_146;
+  let tmp = cancelPendingCommit !== c146;
   if (!tmp) {
-    let tmp3 = 2 !== closure_149;
+    let tmp3 = 2 !== c149;
     if (tmp3) {
-      tmp3 = 9 !== closure_149;
+      tmp3 = 9 !== c149;
     }
     tmp = tmp3;
   }
@@ -8132,40 +8215,40 @@ function scheduleUpdateOnFiber(cancelPendingCommit, mode) {
   }
   if (!tmp) {
     prepareFreshStack(cancelPendingCommit, 0);
-    markRootSuspended(cancelPendingCommit, closure_148, closure_159, false);
+    markRootSuspended(cancelPendingCommit, c148, c159, false);
   }
   markRootUpdated$1(cancelPendingCommit, arg2);
-  let tmp14 = 2 & closure_145;
+  let tmp14 = 2 & c145;
   if (tmp14) {
-    tmp14 = cancelPendingCommit === closure_146;
+    tmp14 = cancelPendingCommit === c146;
   }
   if (!tmp14) {
-    if (cancelPendingCommit === closure_146) {
-      if (!(2 & closure_145)) {
+    if (cancelPendingCommit === c146) {
+      if (!(2 & c145)) {
         closure_157 = closure_157 | arg2;
       }
-      if (4 === closure_155) {
-        markRootSuspended(cancelPendingCommit, closure_148, closure_159, false);
+      if (4 === c155) {
+        markRootSuspended(cancelPendingCommit, c148, c159, false);
       }
     }
     ensureRootIsScheduled(cancelPendingCommit);
     let tmp27 = 2 === arg2;
     if (tmp27) {
-      tmp27 = 0 === closure_145;
+      tmp27 = 0 === c145;
     }
     if (tmp27) {
       tmp27 = !(1 & mode.mode);
     }
     if (tmp27) {
-      let closure_165 = require(dependencyMap[3]).unstable_now() + 500;
+      let closure_165 = require(273) /* push */.unstable_now() + 500;
       flushSyncWorkAcrossRoots_impl(0, true);
-      const obj = require(dependencyMap[3]);
+      const obj = require(273) /* push */;
     }
   }
 }
 function performWorkOnRoot(expiredLanes) {
-  if (6 & closure_145) {
-    const _Error = Error;
+  if (6 & c145) {
+    let _Error = Error;
     throw Error("Should not already be working.");
   } else {
     let tmp2 = !arg2;
@@ -8179,41 +8262,43 @@ function performWorkOnRoot(expiredLanes) {
       tmp2 = checkIfRootIsPrerendering(expiredLanes, arg1);
     }
     if (tmp2) {
-      function renderRootConcurrent(expiredLanes, arg1) {
-        let closure_146;
-        let closure_148;
+      (function renderRootConcurrent(expiredLanes, arg1) {
+        let outer1_146;
+        let outer1_148;
+        let closure_0 = expiredLanes;
         let tmp2 = arg1;
-        const tmp4 = tmp4 | 2;
-        const tmp5 = callback7();
-        const tmp6 = callback8();
-        if (closure_146 === expiredLanes) {
-          if (closure_148 === tmp2) {
-            let closure_152 = callback(tmp, tmp2);
+        outer1_145 = outer1_145 | 2;
+        const tmp5 = outer1_446();
+        const tmp6 = outer1_447();
+        if (outer1_146 === expiredLanes) {
+          if (outer1_148 === tmp2) {
+            const outer1_152 = outer1_234(tmp, tmp2);
           }
           while (true) {
-            let tmp13 = closure_149;
+            let tmp13 = outer1_149;
             let num = 0;
-            if (0 === closure_149) {
+            if (0 === outer1_149) {
               break;
             } else {
-              let tmp76 = tmp66;
+              let tmp76 = outer1_147;
               let tmp66 = null;
-              if (null === tmp66) {
+              if (null === outer1_147) {
                 break;
               } else {
-                tmp2 = tmp66;
-                let promise = tmp66;
-                let tmp77 = closure_149;
+                tmp2 = outer1_147;
+                let promise = outer1_150;
+                let tmp77 = outer1_149;
                 let num13 = 1;
-                if (1 === closure_149) {
-                  closure_149 = 0;
-                  let tmp60 = callback11;
+                if (1 === outer1_149) {
+                  outer1_149 = 0;
+                  outer1_150 = tmp66;
+                  let tmp60 = outer1_454;
                   let tmp61 = expiredLanes;
                   let tmp62 = tmp2;
                   let tmp63 = promise;
                   let num11 = 1;
-                  let tmp64 = callback11(tmp, tmp2, promise, 1);
-                  // break
+                  let tmp64 = outer1_454(tmp, tmp2, promise, 1);
+                  break;
                 } else {
                   if (2 !== tmp77) {
                     let num14 = 9;
@@ -8221,31 +8306,32 @@ function performWorkOnRoot(expiredLanes) {
                       let num15 = 3;
                       if (3 === tmp77) {
                         let num10 = 7;
-                        closure_149 = 7;
+                        outer1_149 = 7;
                       } else {
                         let num16 = 4;
                         if (4 === tmp77) {
                           let num9 = 5;
-                          closure_149 = 5;
+                          outer1_149 = 5;
                         } else {
                           let num17 = 7;
                           if (7 === tmp77) {
-                            let tmp42 = callback3;
+                            let tmp42 = outer1_280;
                             let tmp43 = promise;
-                            closure_149 = 0;
-                            if (callback3(promise)) {
-                              let tmp49 = callback10;
+                            outer1_149 = 0;
+                            outer1_150 = tmp66;
+                            if (outer1_280(promise)) {
+                              let tmp49 = outer1_453;
                               let tmp50 = tmp2;
-                              let tmp51 = callback10(tmp2);
-                              // break
+                              let tmp51 = outer1_453(tmp2);
+                              break;
                             } else {
-                              let tmp44 = callback11;
+                              let tmp44 = outer1_454;
                               let tmp45 = expiredLanes;
                               let tmp46 = tmp2;
                               let tmp47 = promise;
                               let num8 = 7;
-                              let tmp48 = callback11(tmp, tmp2, promise, 7);
-                              // break
+                              let tmp48 = outer1_454(tmp, tmp2, promise, 7);
+                              break;
                             }
                             break;
                           } else {
@@ -8253,20 +8339,21 @@ function performWorkOnRoot(expiredLanes) {
                             if (5 !== tmp77) {
                               let num2 = 6;
                               if (6 === tmp77) {
-                                closure_149 = 0;
-                                let tmp17 = callback11;
+                                outer1_149 = 0;
+                                outer1_150 = tmp66;
+                                let tmp17 = outer1_454;
                                 let tmp18 = expiredLanes;
                                 let tmp19 = tmp2;
                                 let tmp20 = promise;
                                 let num4 = 6;
-                                let tmp21 = callback11(tmp, tmp2, promise, 6);
-                                // break
+                                let tmp21 = outer1_454(tmp, tmp2, promise, 6);
+                                break;
                               } else {
                                 let num3 = 8;
                                 if (8 === tmp77) {
-                                  let tmp15 = callback5;
-                                  let tmp16 = callback5();
-                                  let closure_155 = 6;
+                                  let tmp15 = outer1_443;
+                                  let tmp16 = outer1_443();
+                                  let outer1_155 = 6;
                                 } else {
                                   let tmp14 = globalThis;
                                   let _Error = Error;
@@ -8278,48 +8365,51 @@ function performWorkOnRoot(expiredLanes) {
                             break;
                           }
                           let memoizedState = null;
-                          let tmp23 = tmp66;
-                          let tag = tmp66.tag;
+                          let tmp23 = outer1_147;
+                          let tag = outer1_147.tag;
                           let num5 = 26;
                           if (26 === tag) {
-                            let tmp24 = tmp66;
-                            memoizedState = tmp66.memoizedState;
+                            let tmp24 = outer1_147;
+                            memoizedState = outer1_147.memoizedState;
                           } else if (5 !== tag) {
                             let num6 = 27;
-                            closure_149 = 0;
-                            let tmp37 = callback11;
+                            outer1_149 = 0;
+                            outer1_150 = tmp66;
+                            let tmp37 = outer1_454;
                             let tmp38 = expiredLanes;
                             let tmp39 = tmp2;
                             let tmp40 = promise;
                             let num7 = 5;
-                            let tmp41 = callback11(tmp, tmp2, promise, 5);
-                            // break
+                            let tmp41 = outer1_454(tmp, tmp2, promise, 5);
+                            break;
                           }
-                          let tmp25 = tmp66;
+                          let tmp25 = outer1_147;
                           let tmp26 = memoizedState;
                           if (memoizedState) {
-                            let tmp35 = callback2;
-                            let tmp36 = callback2();
+                            let tmp35 = outer1_244;
+                            let tmp36 = outer1_244();
                           } else {
-                            closure_149 = 0;
+                            outer1_149 = 0;
+                            outer1_150 = tmp66;
                             let tmp27 = tmp25;
                             let sibling = tmp25.sibling;
                             if (tmp66 !== sibling) {
                               let tmp34 = sibling;
-                              tmp66 = tmp28;
-                              // break
+                              outer1_147 = tmp28;
+                              break;
                             } else {
                               let tmp29 = tmp25;
                               let _return = tmp25.return;
                               let tmp30 = _return;
                               if (tmp66 !== _return) {
                                 let tmp31 = _return;
-                                tmp66 = tmp30;
-                                let tmp32 = callback12;
-                                let tmp33 = callback12(tmp30);
-                                // break
+                                outer1_147 = tmp30;
+                                let tmp32 = outer1_455;
+                                let tmp33 = outer1_455(tmp30);
+                                break;
                               } else {
-                                // break
+                                outer1_147 = tmp66;
+                                break;
                               }
                               break;
                             }
@@ -8330,47 +8420,48 @@ function performWorkOnRoot(expiredLanes) {
                       }
                     }
                     let tmp67 = null;
-                    let closure_81 = null;
-                    let closure_82 = null;
-                    let tmp68 = closure_5;
+                    let outer1_81 = null;
+                    let outer1_82 = null;
+                    let tmp68 = outer1_5;
                     let tmp69 = tmp5;
-                    closure_5.H = tmp5;
-                    let tmp70 = closure_5;
+                    outer1_5.H = tmp5;
+                    let tmp70 = outer1_5;
                     let tmp71 = tmp6;
-                    closure_5.A = tmp6;
-                    let tmp72 = tmp4;
-                    let tmp73 = tmp66;
+                    outer1_5.A = tmp6;
+                    let tmp72 = outer1_145;
+                    let tmp73 = outer1_147;
                     let num12 = 0;
-                    if (null === tmp66) {
-                      closure_146 = null;
-                      closure_148 = 0;
-                      let tmp74 = callback4;
-                      let tmp75 = callback4();
-                      num12 = closure_155;
+                    if (null === outer1_147) {
+                      outer1_146 = null;
+                      outer1_148 = 0;
+                      let tmp74 = outer1_285;
+                      let tmp75 = outer1_285();
+                      num12 = outer1_155;
                     }
                     return num12;
                   }
-                  let tmp52 = callback3;
+                  let tmp52 = outer1_280;
                   let tmp53 = promise;
-                  if (callback3(promise)) {
-                    closure_149 = 0;
-                    let tmp57 = callback10;
+                  if (outer1_280(promise)) {
+                    outer1_149 = 0;
+                    outer1_150 = tmp66;
+                    let tmp57 = outer1_453;
                     let tmp58 = tmp2;
-                    let tmp59 = callback10(tmp2);
-                    // break
+                    let tmp59 = outer1_453(tmp2);
+                    break;
                   } else {
                     function lanes() {
-                      let tmp = 2 !== closure_149;
+                      let tmp = 2 !== outer2_149;
                       if (tmp) {
-                        tmp = 9 !== closure_149;
+                        tmp = 9 !== outer2_149;
                       }
                       if (!tmp) {
-                        tmp = closure_146 !== arg0;
+                        tmp = outer2_146 !== closure_0;
                       }
                       if (!tmp) {
-                        closure_149 = 7;
+                        outer2_149 = 7;
                       }
-                      callback(arg0);
+                      outer2_268(closure_0);
                     }
                     let tmp54 = lanes;
                     let tmp55 = promise;
@@ -8380,14 +8471,14 @@ function performWorkOnRoot(expiredLanes) {
                 break;
               }
             }
-            let tmp65 = callback9;
-            tmp66 = callback9();
+            let tmp65 = outer1_451;
+            tmp66 = outer1_451();
           }
         }
-        let closure_166 = null;
-        let closure_165 = expiredLanes(closure_1[3]).unstable_now() + 500;
-        callback6(expiredLanes, tmp2);
-      }(expiredLanes, arg1);
+        const outer1_166 = null;
+        const outer1_165 = outer1_0(outer1_1[3]).unstable_now() + 500;
+        outer1_444(expiredLanes, tmp2);
+      })(expiredLanes, arg1);
     } else {
       renderRootSync(expiredLanes, arg1, true);
     }
@@ -8403,19 +8494,18 @@ function commitRootWhenReady(arg0, subtreeFlags) {
   if (tmp) {
     accumulateSuspenseyCommitOnFiber(subtreeFlags);
   }
-  function commitRoot(arg0, lanes, arg2, arg3, arg4, arg5, arg6, arg7, arg8) {
+  (function commitRoot(arg0, lanes, arg2, arg3, arg4, arg5, arg6, arg7, arg8) {
     let elementType;
     let memoizedProps;
     let memoizedState;
     let type;
-    const tmp2 = arg0;
     arg0.cancelPendingCommit = null;
     do {
-      let tmp3 = closure_461;
-      let tmp4 = closure_461();
-      let tmp5 = closure_168;
-    } while (0 !== closure_168);
-    if (6 & tmp36) {
+      let tmp3 = outer1_461;
+      let tmp4 = outer1_461();
+      let tmp5 = outer1_168;
+    } while (0 !== outer1_168);
+    if (6 & outer1_145) {
       const _Error3 = Error;
       throw Error("Should not already be working.");
     } else if (null !== lanes) {
@@ -8423,22 +8513,21 @@ function commitRootWhenReady(arg0, subtreeFlags) {
         const _Error2 = Error;
         throw Error("Cannot commit the same tree as before. This error is likely caused by a bug in React. Please file an issue.");
       } else {
-        const tmp71 = lanes.lanes | lanes.childLanes | closure_105;
         const pendingLanes = tmp2.pendingLanes;
-        tmp2.pendingLanes = tmp71;
+        tmp2.pendingLanes = lanes.lanes | lanes.childLanes | outer1_105;
         tmp2.suspendedLanes = 0;
         tmp2.pingedLanes = 0;
         tmp2.warmLanes = 0;
-        tmp2.expiredLanes = tmp2.expiredLanes & tmp71;
-        tmp2.entangledLanes = tmp2.entangledLanes & tmp71;
-        tmp2.errorRecoveryDisabledLanes = tmp2.errorRecoveryDisabledLanes & tmp71;
+        tmp2.expiredLanes = tmp2.expiredLanes & (lanes.lanes | lanes.childLanes | outer1_105);
+        tmp2.entangledLanes = tmp2.entangledLanes & (lanes.lanes | lanes.childLanes | outer1_105);
+        tmp2.errorRecoveryDisabledLanes = tmp2.errorRecoveryDisabledLanes & (lanes.lanes | lanes.childLanes | outer1_105);
         tmp2.shellSuspendCounter = 0;
         const hiddenUpdates = tmp2.hiddenUpdates;
         let tmp12 = pendingLanes & ~tmp71;
         if (0 < tmp12) {
           do {
-            let tmp7 = closure_59;
-            let diff = 31 - closure_59(tmp12);
+            let tmp7 = outer1_59;
+            let diff = 31 - outer1_59(tmp12);
             tmp73[diff] = 0;
             tmp74[diff] = -1;
             let arr = hiddenUpdates[diff];
@@ -8460,11 +8549,11 @@ function commitRootWhenReady(arg0, subtreeFlags) {
               }
             }
             tmp12 = tmp12 & ~1 << diff;
-            let tmp13 = tmp10;
+            tmp13 = tmp10;
           } while (0 < tmp12);
         }
         if (0 !== arg6) {
-          callback2(tmp2, arg6, 0);
+          outer1_240(tmp2, arg6, 0);
         }
         let tmp16 = 0 !== arg8;
         if (tmp16) {
@@ -8473,39 +8562,45 @@ function commitRootWhenReady(arg0, subtreeFlags) {
         if (tmp16) {
           tmp2.suspendedLanes = tmp2.suspendedLanes | arg8 & ~pendingLanes & ~arg2;
         }
-        if (tmp2 === closure_146) {
-          closure_146 = null;
-          let closure_147 = null;
-          let closure_148 = 0;
+        if (tmp2 === outer1_146) {
+          outer1_146 = null;
+          const outer1_147 = null;
+          const outer1_148 = 0;
         }
+        const outer1_170 = lanes;
+        const outer1_169 = tmp2;
+        const outer1_171 = arg2;
+        const outer1_172 = tmp71;
+        const outer1_173 = arg4;
+        const outer1_174 = arg3;
         if (!(10256 & lanes.subtreeFlags)) {
           if (!(10256 & lanes.flags)) {
             tmp2.callbackNode = null;
             tmp2.callbackPriority = 0;
           }
           if (13878 & lanes.subtreeFlags) {
-            const T = constants.T;
-            constants.T = null;
-            const tmp34 = 2;
-            const tmp36 = tmp36 | 4;
-            let _return = lanes;
+            const T = outer1_5.T;
+            outer1_5.T = null;
+            let outer1_68 = 2;
+            outer1_145 = outer1_145 | 4;
+            let outer1_139 = lanes;
             if (null !== lanes) {
               while (true) {
-                let tmp39 = _return;
-                let tmp40 = _return;
-                let child = _return.child;
-                if (1024 & _return.subtreeFlags) {
+                let tmp39 = outer1_139;
+                let tmp40 = outer1_139;
+                let child = outer1_139.child;
+                if (1024 & outer1_139.subtreeFlags) {
                   let tmp41 = child;
                   if (null !== child) {
                     let tmp51 = child;
                     let tmp52 = tmp39;
                     child.return = tmp40;
-                    _return = child;
-                    let tmp53 = _return;
+                    outer1_139 = child;
+                    let tmp53 = outer1_139;
                   }
                 }
-                let tmp42 = _return;
-                if (null !== _return) {
+                let tmp42 = outer1_139;
+                if (null !== outer1_139) {
                   while (true) {
                     let tmp43 = child;
                     if (1024 & child) {
@@ -8516,13 +8611,13 @@ function commitRootWhenReady(arg0, subtreeFlags) {
                         let tmp77 = memoizedState;
                         ({ memoizedProps, memoizedState } = memoizedState);
                         let stateNode = tmp40.stateNode;
-                        let tmp78 = callback3;
+                        let tmp78 = outer1_365;
                         let tmp79 = tmp39;
                         let tmp80 = memoizedProps;
                         ({ elementType, type } = tmp40);
                         let tmp81 = stateNode;
                         let tmp82 = memoizedState;
-                        let snapshotBeforeUpdate = stateNode.getSnapshotBeforeUpdate(callback3(tmp40.type, memoizedProps, undefined), memoizedState);
+                        let snapshotBeforeUpdate = stateNode.getSnapshotBeforeUpdate(outer1_365(tmp40.type, memoizedProps, undefined), memoizedState);
                         let tmp84 = snapshotBeforeUpdate;
                         stateNode.__reactInternalSnapshotBeforeUpdate = snapshotBeforeUpdate;
                       }
@@ -8535,10 +8630,11 @@ function commitRootWhenReady(arg0, subtreeFlags) {
                         let tmp47 = child;
                         let tmp48 = tmp39;
                         child.return = tmp40.return;
-                        _return = child;
+                        outer1_139 = child;
                       } else {
                         let tmp46 = tmp39;
-                        _return = tmp40.return;
+                        let _return = tmp40.return;
+                        outer1_139 = _return;
                       }
                       continue label1;
                     }
@@ -8550,24 +8646,26 @@ function commitRootWhenReady(arg0, subtreeFlags) {
                 }
               }
             }
-            constants.T = T;
-            const tmp35 = tmp36;
+            outer1_68 = tmp34;
+            outer1_5.T = T;
+            const tmp35 = outer1_145;
+            const tmp36 = outer1_145;
           }
-          let closure_168 = 1;
-          callback4();
-          callback5();
-          callback6();
+          outer1_168 = 1;
+          outer1_457();
+          outer1_458();
+          outer1_459();
         }
         tmp2.callbackNode = null;
         tmp2.callbackPriority = 0;
-        const result = callback(closure_1[3]).unstable_scheduleCallback(callback(closure_1[3]).unstable_NormalPriority, () => {
-          callback();
+        const result = outer1_0(outer1_1[3]).unstable_scheduleCallback(outer1_0(outer1_1[3]).unstable_NormalPriority, () => {
+          outer2_462();
           return null;
         });
-        const obj = callback(closure_1[3]);
+        const obj = outer1_0(outer1_1[3]);
       }
     }
-  }(arg0, subtreeFlags, arg5, arg2, arg3, undefined, arg6, arg7, arg8);
+  })(arg0, subtreeFlags, arg5, arg2, arg3, undefined, arg6, arg7, arg8);
 }
 function isRenderConsistentWithExternalStores(arg0) {
   let getSnapshot;
@@ -8588,7 +8686,7 @@ function isRenderConsistentWithExternalStores(arg0) {
         if (null !== child) {
           sibling = child;
           child.return = tmp2;
-          // continue
+          continue;
         }
       }
       if (sibling === arg0) {
@@ -8612,7 +8710,7 @@ function isRenderConsistentWithExternalStores(arg0) {
           return true;
         }
         ({ return: tmp20.sibling.return, sibling } = tmp20);
-        // continue
+        continue;
       }
     }
     if (16384 & sibling.flags) {
@@ -8649,16 +8747,16 @@ function isRenderConsistentWithExternalStores(arg0) {
   }
 }
 function markRootSuspended(suspendedLanes) {
-  suspendedLanes.suspendedLanes = suspendedLanes.suspendedLanes | arg1 & ~closure_158 & ~closure_157;
-  suspendedLanes.pingedLanes = suspendedLanes.pingedLanes & ~arg1 & ~closure_158 & ~closure_157;
+  suspendedLanes.suspendedLanes = suspendedLanes.suspendedLanes | arg1 & ~c158 & ~c157;
+  suspendedLanes.pingedLanes = suspendedLanes.pingedLanes & ~arg1 & ~c158 & ~c157;
   if (arg3) {
     suspendedLanes.warmLanes = suspendedLanes.warmLanes | tmp;
   }
   let tmp3 = tmp;
-  if (0 < (arg1 & ~closure_158 & ~closure_157)) {
+  if (0 < (arg1 & ~c158 & ~c157)) {
     do {
-      let tmp4 = closure_59;
-      let diff = 31 - closure_59(tmp3);
+      let tmp4 = clz32Fallback;
+      let diff = 31 - clz32Fallback(tmp3);
       tmp2[diff] = -1;
       tmp3 = tmp3 & ~1 << diff;
     } while (0 < tmp3);
@@ -8668,24 +8766,25 @@ function markRootSuspended(suspendedLanes) {
   }
 }
 function resetWorkInProgressStack() {
-  if (null !== _return) {
-    if (0 === closure_149) {
-      let _return = _return.return;
+  if (null !== _null8) {
+    if (0 === c149) {
+      let _return = _null8.return;
     } else {
-      let closure_81 = null;
-      let closure_82 = null;
-      resetHooksOnUnwind(_return);
-      let closure_124 = null;
-      let closure_125 = 0;
+      let c81 = null;
+      let c82 = null;
+      resetHooksOnUnwind(_null8);
+      let c124 = null;
+      let c125 = 0;
+      _return = _null8;
     }
     if (null !== _return) {
       do {
-        let tmp6 = closure_401;
-        let tmp7 = closure_401(_return.alternate, _return);
+        let tmp6 = unwindInterruptedWork;
+        let tmp7 = unwindInterruptedWork(_return.alternate, _return);
         _return = _return.return;
       } while (null !== _return);
     }
-    _return = null;
+    _null8 = null;
   }
 }
 function prepareFreshStack(timeoutHandle) {
@@ -8702,22 +8801,22 @@ function prepareFreshStack(timeoutHandle) {
   resetWorkInProgressStack();
   let closure_146 = timeoutHandle;
   const tmp5 = createWorkInProgress(timeoutHandle.current, null);
-  let closure_147 = tmp5;
+  let c147 = tmp5;
   let closure_148 = arg1;
-  let closure_149 = 0;
-  let closure_150 = null;
-  let closure_151 = false;
+  let c149 = 0;
+  let c150 = null;
+  let c151 = false;
   let closure_152 = checkIfRootIsPrerendering(timeoutHandle, arg1);
-  let closure_153 = false;
-  let closure_155 = 0;
-  let closure_156 = 0;
-  let closure_157 = 0;
-  let closure_158 = 0;
-  let closure_159 = 0;
-  let closure_160 = 0;
-  let closure_161 = null;
-  let closure_162 = null;
-  let closure_163 = false;
+  let c153 = false;
+  let c155 = 0;
+  let c156 = 0;
+  let c157 = 0;
+  let c158 = 0;
+  let c159 = 0;
+  let c160 = 0;
+  let c161 = null;
+  let c162 = null;
+  let c163 = false;
   let tmp6 = arg1;
   if (8 & arg1) {
     tmp6 = arg1 | 32 & arg1;
@@ -8730,27 +8829,27 @@ function prepareFreshStack(timeoutHandle) {
     tmp7 = tmp6;
     if (0 < tmp9) {
       do {
-        let tmp11 = closure_59;
-        let diff = 31 - closure_59(tmp9);
+        let tmp11 = clz32Fallback;
+        let diff = 31 - clz32Fallback(tmp9);
         tmp10 = tmp10 | tmp8[diff];
         tmp9 = tmp9 & ~1 << diff;
         tmp7 = tmp10;
       } while (0 < tmp9);
     }
   }
-  let closure_154 = tmp7;
+  let c154 = tmp7;
   finishQueueingConcurrentUpdates();
   return tmp5;
 }
 function handleThrow(current) {
   let promise = arg1;
-  let closure_111 = null;
+  let c111 = null;
   __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.H = closure_120;
   if (arg1 !== closure_98) {
     if (promise !== closure_100) {
       if (promise === closure_99) {
         promise = getSuspendedThenable();
-        let closure_149 = 4;
+        let c149 = 4;
       } else {
         let num = 8;
         if (promise !== closure_133) {
@@ -8766,17 +8865,16 @@ function handleThrow(current) {
           }
           num = num3;
         }
-        closure_149 = num;
+        c149 = num;
       }
     }
-    let closure_150 = promise;
-    if (null === closure_147) {
-      let closure_155 = 1;
+    if (null === c147) {
+      let c155 = 1;
       logUncaughtError(current, createCapturedValueAtFiber(promise, current.current));
     }
   }
   promise = getSuspendedThenable();
-  closure_149 = 3;
+  c149 = 3;
 }
 function pushDispatcher() {
   let H = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.H;
@@ -8791,60 +8889,60 @@ function pushAsyncDispatcher() {
   return __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.A;
 }
 function renderDidSuspendDelayIfPossible() {
-  let closure_155 = 4;
-  let tmp = closure_151;
-  if (!closure_151) {
-    let tmp4 = (4194048 & closure_148) !== closure_148;
+  let c155 = 4;
+  let tmp = c151;
+  if (!c151) {
+    let tmp4 = (4194048 & c148) !== c148;
     if (tmp4) {
       tmp4 = null !== closure_128.current;
     }
     tmp = tmp4;
   }
   if (!tmp) {
-    let closure_152 = true;
+    let c152 = true;
   }
   let tmp8 = !tmp7;
-  if (!(134217727 & closure_156)) {
-    tmp8 = !(134217727 & closure_157);
+  if (!(134217727 & c156)) {
+    tmp8 = !(134217727 & c157);
   }
   if (!tmp8) {
-    tmp8 = null === closure_146;
+    tmp8 = null === c146;
   }
   if (!tmp8) {
-    markRootSuspended(closure_146, closure_148, closure_159, false);
+    markRootSuspended(c146, c148, c159, false);
   }
 }
 function renderRootSync(arg0, arg1, arg2) {
-  let closure_146;
-  let closure_148;
-  closure_145 = closure_145 | 2;
+  let c146;
+  let c148;
+  c145 = c145 | 2;
   const tmp4 = pushDispatcher();
   const tmp5 = pushAsyncDispatcher();
-  let tmp6 = closure_146 === arg0;
+  let tmp6 = c146 === arg0;
   if (tmp6) {
-    tmp6 = closure_148 === arg1;
+    tmp6 = c148 === arg1;
   }
   if (!tmp6) {
-    let closure_166 = null;
+    let c166 = null;
     prepareFreshStack(tmp, arg1);
   }
   let flag = false;
   while (true) {
-    let tmp14 = closure_149;
+    let tmp14 = c149;
     let num = 0;
-    if (0 === closure_149) {
+    if (0 === c149) {
       break;
     } else {
-      let tmp46 = closure_147;
+      let tmp46 = c147;
       let tmp47 = null;
-      if (null === closure_147) {
+      if (null === c147) {
         break;
       } else {
-        let tmp48 = closure_147;
-        let tmp49 = closure_150;
-        let tmp50 = closure_149;
+        let tmp48 = c147;
+        let tmp49 = c150;
+        let tmp50 = c149;
         let num5 = 8;
-        if (8 === closure_149) {
+        if (8 === c149) {
           let tmp32 = resetWorkInProgressStack;
           let tmp33 = resetWorkInProgressStack();
           let num4 = 6;
@@ -8856,15 +8954,15 @@ function renderRootSync(arg0, arg1, arg2) {
               if (9 !== tmp50) {
                 let num3 = 6;
                 if (6 !== tmp50) {
-                  let tmp15 = closure_149;
-                  closure_149 = 0;
-                  closure_150 = null;
+                  let tmp15 = c149;
+                  c149 = 0;
+                  c150 = null;
                   let tmp16 = throwAndUnwindWorkLoop;
                   let tmp17 = arg0;
                   let tmp18 = tmp48;
                   let tmp19 = tmp49;
-                  let tmp20 = throwAndUnwindWorkLoop(tmp, tmp48, tmp49, closure_149);
-                  // break
+                  let tmp20 = throwAndUnwindWorkLoop(tmp, tmp48, tmp49, c149);
+                  break;
                 }
                 break;
               }
@@ -8874,20 +8972,20 @@ function renderRootSync(arg0, arg1, arg2) {
           if (null === closure_128.current) {
             flag = true;
           }
-          let tmp22 = closure_149;
-          closure_149 = 0;
-          closure_150 = null;
+          let tmp22 = c149;
+          c149 = 0;
+          c150 = null;
           let tmp23 = throwAndUnwindWorkLoop;
           let tmp24 = arg0;
           let tmp25 = tmp48;
           let tmp26 = tmp49;
-          let tmp27 = throwAndUnwindWorkLoop(tmp, tmp48, tmp49, closure_149);
+          let tmp27 = throwAndUnwindWorkLoop(tmp, tmp48, tmp49, c149);
           let tmp28 = arg2;
           if (!arg2) {
             break;
           } else {
-            let tmp29 = closure_152;
-            if (!closure_152) {
+            let tmp29 = c152;
+            if (!c152) {
               break;
             } else {
               num4 = 0;
@@ -8900,19 +8998,19 @@ function renderRootSync(arg0, arg1, arg2) {
           tmp.shellSuspendCounter = tmp.shellSuspendCounter + 1;
         }
         let tmp36 = null;
-        let closure_81 = null;
-        let closure_82 = null;
-        let tmp37 = closure_145;
+        let c81 = null;
+        let c82 = null;
+        let tmp37 = c145;
         let tmp38 = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         let tmp39 = tmp4;
         __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.H = tmp4;
         let tmp40 = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         let tmp41 = tmp5;
         __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.A = tmp5;
-        let tmp42 = closure_147;
-        if (null === closure_147) {
-          closure_146 = null;
-          closure_148 = 0;
+        let tmp42 = c147;
+        if (null === c147) {
+          c146 = null;
+          c148 = 0;
           let tmp43 = finishQueueingConcurrentUpdates;
           let tmp44 = finishQueueingConcurrentUpdates();
         }
@@ -8922,42 +9020,42 @@ function renderRootSync(arg0, arg1, arg2) {
     }
     let tmp30 = workLoopSync;
     let tmp31 = workLoopSync();
-    num4 = closure_155;
+    num4 = c155;
   }
 }
 function workLoopSync() {
-  if (null !== closure_147) {
+  if (null !== c147) {
     do {
-      let tmp = closure_452;
-      let tmp2 = closure_147;
-      let tmp3 = closure_452(closure_147);
-      let tmp4 = closure_147;
-    } while (null !== closure_147);
+      let tmp = performUnitOfWork;
+      let tmp2 = c147;
+      let tmp3 = performUnitOfWork(c147);
+      let tmp4 = c147;
+    } while (null !== c147);
   }
 }
 function workLoopConcurrentByScheduler() {
-  if (null !== closure_147) {
+  if (null !== c147) {
     if (!obj.unstable_shouldYield()) {
-      performUnitOfWork(closure_147);
-      while (null !== closure_147) {
+      performUnitOfWork(c147);
+      while (null !== c147) {
         let tmp7 = require;
         let tmp8 = dependencyMap;
-        let obj2 = require(dependencyMap[3]);
+        let obj2 = require(273) /* push */;
         if (obj2.unstable_shouldYield()) {
           break;
         }
       }
     }
-    const obj = require(dependencyMap[3]);
+    obj = require(273) /* push */;
   }
 }
 function performUnitOfWork(alternate) {
-  const tmp = beginWork(alternate.alternate, alternate, closure_154);
+  const tmp = beginWork(alternate.alternate, alternate, c154);
   alternate.memoizedProps = alternate.pendingProps;
   if (null === tmp) {
     completeUnitOfWork(alternate);
   } else {
-    let closure_147 = tmp;
+    let c147 = tmp;
   }
 }
 function replaySuspendedUnitOfWork(pendingProps) {
@@ -8967,15 +9065,15 @@ function replaySuspendedUnitOfWork(pendingProps) {
   if (15 !== tag) {
     if (0 !== tag) {
       if (11 === tag) {
-        let tmp10 = replayFunctionComponent(alternate, pendingProps, pendingProps.pendingProps, pendingProps.type.render, pendingProps.ref, closure_148);
+        let tmp10 = replayFunctionComponent(alternate, pendingProps, pendingProps.pendingProps, pendingProps.type.render, pendingProps.ref, c148);
       } else {
         if (5 === tag) {
           resetHooksOnUnwind(pendingProps);
         }
         unwindInterruptedWork(alternate, pendingProps);
-        resetWorkInProgress(pendingProps, closure_154);
+        resetWorkInProgress(pendingProps, c154);
         let closure_147 = pendingProps;
-        tmp10 = beginWork(alternate, pendingProps, closure_154);
+        tmp10 = beginWork(alternate, pendingProps, c154);
       }
     }
     pendingProps.memoizedProps = pendingProps.pendingProps;
@@ -8985,17 +9083,17 @@ function replaySuspendedUnitOfWork(pendingProps) {
       closure_147 = tmp10;
     }
   }
-  tmp10 = replayFunctionComponent(alternate, pendingProps, pendingProps.pendingProps, pendingProps.type, undefined, closure_148);
+  tmp10 = replayFunctionComponent(alternate, pendingProps, pendingProps.pendingProps, pendingProps.type, undefined, c148);
 }
 function throwAndUnwindWorkLoop(tag, arg1) {
   let stateNode;
   let type;
   let tmp = arg1;
-  let closure_81 = null;
-  let closure_82 = null;
+  let c81 = null;
+  let c82 = null;
   resetHooksOnUnwind(arg1);
-  let closure_124 = null;
-  let closure_125 = 0;
+  let c124 = null;
+  let c125 = 0;
   const _return = arg1.return;
   arg1.flags = arg1.flags | 32768;
   let ErrorResult = arg2;
@@ -9033,15 +9131,15 @@ function throwAndUnwindWorkLoop(tag, arg1) {
           const tag3 = current.tag;
           if (13 === tag3) {
             if (1 & tmp.mode) {
-              if (null === closure_129) {
+              if (null === c129) {
                 renderDidSuspendDelayIfPossible();
               } else {
                 let tmp60 = null === current.alternate;
                 if (tmp60) {
-                  tmp60 = 0 === closure_155;
+                  tmp60 = 0 === c155;
                 }
                 if (tmp60) {
-                  closure_155 = 3;
+                  c155 = 3;
                 }
               }
             }
@@ -9067,7 +9165,7 @@ function throwAndUnwindWorkLoop(tag, arg1) {
                 if (tmp64) {
                   tmp.tag = 28;
                 }
-                const tmp64 = 0 === tmp.tag && null === tmp.alternate;
+                tmp64 = 0 === tmp.tag && null === tmp.alternate;
               }
               tmp.lanes = tmp.lanes | 2;
             }
@@ -9100,7 +9198,7 @@ function throwAndUnwindWorkLoop(tag, arg1) {
                 } else {
                   const updateQueue2 = current.updateQueue;
                   if (null === updateQueue2) {
-                    let obj = { 9223372036854775807: "o", -9223372036854775808: "o" };
+                    let obj = { transitions: null, markerInstances: null };
                     const _Set2 = Set;
                     const items1 = [arg2];
                     const set1 = new Set(items1);
@@ -9136,24 +9234,24 @@ function throwAndUnwindWorkLoop(tag, arg1) {
         }
       }
       if (flag2) {
-        closure_155 = 1;
+        c155 = 1;
         tmp = logUncaughtError;
         tmp = tag;
         tmp = createCapturedValueAtFiber;
         tmp = arg2;
         tmp = logUncaughtError(tag, createCapturedValueAtFiber(arg2, tag.current));
-        let closure_147 = null;
+        let c147 = null;
       } else if (32768 & tmp.flags) {
         if (1 === arg3) {
           let flag4 = true;
           tmp = flag4;
           tmp = unwindUnitOfWork(tmp, flag4);
         } else {
-          tmp = closure_152;
-          if (!closure_152) {
-            if (!(536870912 & closure_148)) {
+          tmp = c152;
+          if (!c152) {
+            if (!(536870912 & c148)) {
               flag4 = true;
-              let closure_151 = true;
+              let c151 = true;
               let tmp87 = tmp86;
               if (2 !== arg3) {
                 tmp87 = 9 === arg3;
@@ -9187,14 +9285,13 @@ function throwAndUnwindWorkLoop(tag, arg1) {
   }
   obj = { cause: ErrorResult };
   const tmp14 = createCapturedValueAtFiber(Error("There was an error during concurrent rendering but React was able to recover by instead synchronously rendering the entire root.", obj), tmp);
-  if (null === arr) {
-    const items3 = [tmp14];
-    let arr = items3;
+  if (null === items3) {
+    items3 = [tmp14];
   } else {
-    arr = arr.push(tmp14);
+    items3.push(tmp14);
   }
-  if (4 !== closure_155) {
-    closure_155 = 2;
+  if (4 !== c155) {
+    c155 = 2;
   }
   flag2 = true;
   if (null !== _return) {
@@ -9231,9 +9328,9 @@ function throwAndUnwindWorkLoop(tag, arg1) {
               tmp = type;
               tmp = stateNode;
               if ("function" === typeof stateNode.componentDidCatch) {
-                tmp = set;
-                if (null !== set) {
-                  let tmp20 = set;
+                tmp = _null10;
+                if (null !== _null10) {
+                  let tmp20 = _null10;
                   let tmp21 = type;
                   let tmp22 = stateNode;
                 }
@@ -9256,30 +9353,27 @@ function completeUnitOfWork(arg0) {
   while (!(32768 & _return.flags)) {
     _return = _return.return;
     let tmp2 = completeWork;
-    let tmp3 = closure_154;
-    let tmp4 = completeWork(tmp.alternate, tmp, closure_154);
+    let tmp3 = c154;
+    let tmp4 = completeWork(tmp.alternate, tmp, c154);
     if (null !== tmp4) {
-      let closure_147 = tmp4;
+      _return = tmp4;
     } else {
       let sibling = tmp.sibling;
       if (null !== sibling) {
-        closure_147 = sibling;
+        _return = sibling;
+      } else if (null !== _return) {
+        continue;
       } else {
-        closure_147 = _return;
-        if (null !== _return) {
-          continue;
-        } else {
-          let tmp5 = closure_155;
-          let num = 0;
-          if (0 === closure_155) {
-            let num2 = 5;
-            closure_155 = 5;
-          }
+        let tmp5 = c155;
+        let num = 0;
+        if (0 === c155) {
+          let num2 = 5;
+          c155 = 5;
         }
       }
     }
   }
-  unwindUnitOfWork(_return, closure_151);
+  unwindUnitOfWork(_return, c151);
 }
 function unwindUnitOfWork(arg0, arg1) {
   let _return = arg0;
@@ -9295,25 +9389,25 @@ function unwindUnitOfWork(arg0, arg1) {
     if (!arg1) {
       let sibling = tmp2.sibling;
       if (null !== sibling) {
-        let closure_147 = sibling;
+        let c147 = sibling;
       }
     }
-    closure_147 = _return;
+    c147 = _return;
     if (tmp3) {
       continue;
     } else {
       let num = 6;
-      let closure_155 = 6;
-      closure_147 = null;
+      let c155 = 6;
+      c147 = null;
     }
   }
   tmp.flags = tmp.flags & 32767;
-  closure_147 = tmp;
+  c147 = tmp;
 }
 function flushMutationEffects() {
-  if (1 === closure_168) {
-    closure_168 = 0;
-    if (13878 & _null5.subtreeFlags) {
+  if (1 === c168) {
+    c168 = 0;
+    if (13878 & _null11.subtreeFlags) {
       const T = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T;
       __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = null;
       let closure_68 = 2;
@@ -9321,14 +9415,14 @@ function flushMutationEffects() {
       commitMutationEffectsOnFiber(tmp18, tmp16);
       __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = T;
     }
-    closure_169.current = _null5;
-    closure_168 = 2;
+    c169.current = _null11;
+    c168 = 2;
   }
 }
 function flushLayoutEffects() {
-  if (2 === closure_168) {
-    closure_168 = 0;
-    if (8772 & _null5.subtreeFlags) {
+  if (2 === c168) {
+    c168 = 0;
+    if (8772 & _null11.subtreeFlags) {
       const T = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T;
       __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = null;
       let closure_68 = 2;
@@ -9336,24 +9430,24 @@ function flushLayoutEffects() {
       commitLayoutEffectOnFiber(tmp16, tmp18.alternate, tmp18);
       __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = T;
     }
-    closure_168 = 3;
+    c168 = 3;
   }
 }
 function flushSpawnedWork() {
-  let closure_168 = 0;
-  let obj = require(dependencyMap[3]);
+  let c168 = 0;
+  let obj = require(273) /* push */;
   const result = obj.unstable_requestPaint();
-  let tmp3 = closure_169;
-  if (!(10256 & _null5.subtreeFlags)) {
+  let tmp3 = c169;
+  if (!(10256 & _null11.subtreeFlags)) {
     if (!(10256 & tmp5.flags)) {
-      closure_168 = 0;
-      closure_169 = null;
-      const _null5 = null;
+      c168 = 0;
+      c169 = null;
+      _null11 = null;
       releaseRootPooledCache(tmp3, tmp3.pendingLanes);
     }
     const pendingLanes = tmp3.pendingLanes;
     if (0 === pendingLanes) {
-      let closure_167 = null;
+      let c167 = null;
     }
     lanesToEventPriority(tmp6);
     const stateNode = tmp5.stateNode;
@@ -9370,9 +9464,9 @@ function flushSpawnedWork() {
       } else {
         let tmp49 = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         let T = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T;
-        let tmp50 = closure_68;
+        let tmp50 = c68;
         let num6 = 2;
-        closure_68 = 2;
+        c68 = 2;
         let tmp51 = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = null;
         let tmp52 = tmp3;
@@ -9387,20 +9481,20 @@ function flushSpawnedWork() {
             let tmp30 = onRecoverableError;
             obj = { componentStack: iter.stack };
             let onRecoverableErrorResult = onRecoverableError(iter.value, obj);
-            let sum = num3 + 1;
+            sum = num3 + 1;
             num3 = sum;
-            let length = arr.length;
+            length = arr.length;
           } while (sum < length);
         }
         let tmp33 = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         let tmp34 = T;
         __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = T;
         let tmp35 = tmp50;
-        closure_68 = tmp50;
-        // break
+        c68 = tmp50;
+        break;
       }
-      let tmp36 = closure_171;
-      let tmp37 = 3 & closure_171;
+      let tmp36 = c171;
+      let tmp37 = 3 & c171;
       if (tmp37) {
         let tmp38 = tmp3;
         tmp37 = 0 !== tmp3.tag;
@@ -9415,7 +9509,7 @@ function flushSpawnedWork() {
       let pendingLanes2 = tmp3.pendingLanes;
       let num4 = 4194090;
       if (!(4194090 & tmp6)) {
-        let closure_175 = 0;
+        let c175 = 0;
         let tmp48 = flushSyncWorkAcrossRoots_impl;
         let flag = false;
         tmp3 = flushSyncWorkAcrossRoots_impl(0, false);
@@ -9424,17 +9518,17 @@ function flushSpawnedWork() {
         let num5 = 42;
       }
       let tmp45 = tmp3;
-      let tmp46 = closure_176;
-      if (tmp3 === closure_176) {
-        let tmp47 = closure_175;
-        closure_175 = closure_175 + 1;
+      let tmp46 = c176;
+      if (tmp3 === c176) {
+        let tmp47 = c175;
+        c175 = c175 + 1;
       } else {
-        closure_175 = 0;
-        closure_176 = tmp3;
+        c175 = 0;
+        c176 = tmp3;
       }
     }
   }
-  closure_168 = 5;
+  c168 = 5;
 }
 function releaseRootPooledCache(pooledCacheLanes) {
   pooledCacheLanes.pooledCacheLanes = pooledCacheLanes.pooledCacheLanes & arg1;
@@ -9453,23 +9547,22 @@ function flushPendingEffects(arg0) {
   return flushPassiveEffects();
 }
 function flushPassiveEffects() {
-  if (5 !== closure_168) {
+  if (5 !== c168) {
     return false;
   } else {
-    let closure_172 = 0;
-    const tmp35 = lanesToEventPriority(closure_171);
+    let c172 = 0;
+    const tmp35 = lanesToEventPriority(c171);
     const T = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T;
     let num = 32;
     if (32 <= tmp35) {
       num = tmp35;
     }
-    let closure_68 = num;
     __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = null;
-    let closure_173 = null;
-    closure_168 = 0;
-    let closure_169 = null;
-    let closure_170 = null;
-    closure_171 = 0;
+    let c173 = null;
+    c168 = 0;
+    let c169 = null;
+    let c170 = null;
+    c171 = 0;
     if (6 & closure_145) {
       const _Error = Error;
       throw Error("Cannot flush passive effects while already rendering.");
@@ -9483,7 +9576,7 @@ function flushPassiveEffects() {
           const result = __REACT_DEVTOOLS_GLOBAL_HOOK__2.onPostCommitFiberRoot(closure_57, tmp4);
         }
       }
-      closure_68 = tmp37;
+      num = tmp37;
       __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.T = T;
       releaseRootPooledCache(tmp31, tmp32);
     }
@@ -9509,9 +9602,9 @@ function captureCommitPhaseError(tag) {
         if ("function" !== typeof _return.type.getDerivedStateFromError) {
           let tmp2 = stateNode;
           if ("function" === typeof stateNode.componentDidCatch) {
-            let tmp3 = set;
-            if (null !== set) {
-              let tmp4 = set;
+            let tmp3 = _null10;
+            if (null !== _null10) {
+              let tmp4 = _null10;
               let tmp5 = stateNode;
             }
           }
@@ -9560,7 +9653,7 @@ function attachPingListener(pingCache, promise, bindResult1) {
     }
   }
   if (!value.has(bindResult1)) {
-    let closure_153 = true;
+    let c153 = true;
     value.add(bindResult1);
     const bindResult = pingSuspendedRoot.bind(null, pingCache, promise, bindResult1);
     promise.then(bindResult, bindResult);
@@ -9573,25 +9666,25 @@ function pingSuspendedRoot(pingCache) {
   }
   pingCache.pingedLanes = pingCache.pingedLanes | pingCache.suspendedLanes & arg2;
   pingCache.warmLanes = pingCache.warmLanes & ~arg2;
-  let tmp3 = closure_146 === pingCache;
+  let tmp3 = c146 === pingCache;
   if (tmp3) {
-    tmp3 = (closure_148 & arg2) === arg2;
+    tmp3 = (c148 & arg2) === arg2;
   }
   if (tmp3) {
-    if (4 === closure_155) {
-      if (!(2 & closure_145)) {
+    if (4 === c155) {
+      if (!(2 & c145)) {
         prepareFreshStack(pingCache, 0);
       }
     } else {
-      if (3 === closure_155) {
-        if ((62914560 & closure_148) === closure_148) {
-          const obj = require(dependencyMap[3]);
+      if (3 === c155) {
+        if ((62914560 & c148) === c148) {
+          const obj = require(273) /* push */;
         }
       }
       closure_158 = closure_158 | arg2;
     }
-    if (closure_160 === closure_148) {
-      closure_160 = 0;
+    if (c160 === c148) {
+      c160 = 0;
     }
   }
   ensureRootIsScheduled(pingCache);
@@ -9799,7 +9892,7 @@ function createFiberFromTypeAndProps($$typeof, arg1, children, arg3, arg4, lanes
               tmp5 = $$typeof;
               tmp6 = arg4;
               num = 10;
-              if (forResult !== $$typeof) {
+              if (closure_16 !== $$typeof) {
                 num = 9;
                 ErrorResult = children;
                 tmp5 = $$typeof;
@@ -10085,7 +10178,7 @@ function updateContainer(element, current) {
   return tmp;
 }
 function nativeOnUncaughtError(error, componentStack) {
-  const ReactFiberErrorDialog = require(dependencyMap[2]).ReactFiberErrorDialog;
+  const ReactFiberErrorDialog = require(261) /* get BatchedBridge */.ReactFiberErrorDialog;
   const obj = { errorBoundary: null, error };
   let str = "";
   if (null != componentStack.componentStack) {
@@ -10097,7 +10190,7 @@ function nativeOnUncaughtError(error, componentStack) {
   }
 }
 function nativeOnCaughtError(error, errorBoundary) {
-  const ReactFiberErrorDialog = require(dependencyMap[2]).ReactFiberErrorDialog;
+  const ReactFiberErrorDialog = require(261) /* get BatchedBridge */.ReactFiberErrorDialog;
   const obj = { errorBoundary: errorBoundary.errorBoundary, error };
   let str = "";
   if (null != errorBoundary.componentStack) {
@@ -10110,18 +10203,16 @@ function nativeOnCaughtError(error, errorBoundary) {
   }
 }
 function unmountComponentAtNode(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   const value = map2.get(arg0);
   if (value) {
     updateContainer(null, value, undefined, () => {
-      set.delete(arg0);
+      outer1_177.delete(closure_0);
     });
   }
 }
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[1]);
-const __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = _module1.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
-let closure_7 = false;
+const __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = result.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+let c7 = false;
 let closure_8 = Symbol.for("react.element");
 let closure_9 = Symbol.for("react.transitional.element");
 let closure_10 = Symbol.for("react.portal");
@@ -10143,8 +10234,8 @@ Symbol.for("react.tracing_marker");
 let closure_23 = Symbol.for("react.memo_cache_sentinel");
 Symbol.for("react.view_transition");
 let closure_25 = Symbol.for("react.client.reference");
-let closure_26 = false;
-let closure_27 = null;
+let c26 = false;
+let c27 = null;
 let getFiberCurrentPropsFromNode$1 = null;
 getInstanceFromTag = null;
 let getNodeFromInstance = null;
@@ -10181,6 +10272,7 @@ let obj = {
     for (const key10006 in tmp) {
       let tmp2 = key10006;
       self[key10006] = null;
+      continue;
     }
     self.dispatchConfig = null;
     self._targetInst = null;
@@ -10192,10 +10284,15 @@ let obj = {
   }
 };
 obj = assign(SyntheticEvent.prototype, obj);
-SyntheticEvent.Interface = {
+obj = {
+  type: null,
+  target: null,
   currentTarget() {
     return null;
   },
+  eventPhase: null,
+  bubbles: null,
+  cancelable: null,
   timeStamp(timeStamp) {
     timeStamp = timeStamp.timeStamp;
     if (!timeStamp) {
@@ -10203,8 +10300,11 @@ SyntheticEvent.Interface = {
       timeStamp = Date.now();
     }
     return timeStamp;
-  }
+  },
+  defaultPrevented: null,
+  isTrusted: null
 };
+SyntheticEvent.Interface = obj;
 SyntheticEvent.extend = function(arg0) {
   class E {
     constructor() {
@@ -10216,7 +10316,7 @@ SyntheticEvent.extend = function(arg0) {
       return self(...arguments);
     }
   }
-  const require = this;
+  const self = this;
   E.prototype = this.prototype;
   const e = new E();
   assign(e, Class.prototype);
@@ -10228,20 +10328,19 @@ SyntheticEvent.extend = function(arg0) {
   return Class;
 };
 addEventPoolingTo(SyntheticEvent);
-obj = {
+let closure_31 = SyntheticEvent.extend({
   touchHistory() {
     return null;
   }
-};
-let closure_31 = SyntheticEvent.extend(obj);
-const items = [];
-const items1 = [true];
-const items2 = [];
-const items3 = [];
-const obj1 = { alignItems: false, createStyles: false, guild_id: true, Symbol: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", touchBank: items3 };
+});
+let items = ["topTouchStart"];
+let items1 = ["topTouchMove"];
+let items2 = ["topTouchCancel", "topTouchEnd"];
+let items3 = [];
+let obj2 = { touchBank: items3, numberActiveTouches: 0, indexOfSingleActiveTouch: -1, mostRecentTimeStamp: 0 };
 let closure_35 = {
   instrument(arg0) {
-
+    let closure_34 = arg0;
   },
   recordTouchTrack(arg0, changedTouches) {
     if (null != callback) {
@@ -10253,15 +10352,15 @@ let closure_35 = {
     } else if (isStartish(arg0)) {
       const changedTouches1 = changedTouches.changedTouches;
       const item1 = changedTouches1.forEach(recordTouchStart);
-      obj1.numberActiveTouches = changedTouches.touches.length;
-      if (1 === obj1.numberActiveTouches) {
-        obj1.indexOfSingleActiveTouch = changedTouches.touches[0].identifier;
+      obj2.numberActiveTouches = changedTouches.touches.length;
+      if (1 === obj2.numberActiveTouches) {
+        obj2.indexOfSingleActiveTouch = changedTouches.touches[0].identifier;
       }
     } else if ("topTouchEnd" === arg0) {
       const changedTouches2 = changedTouches.changedTouches;
       const item2 = changedTouches2.forEach(recordTouchEnd);
-      obj1.numberActiveTouches = changedTouches.touches.length;
-      if (1 === obj1.numberActiveTouches) {
+      obj2.numberActiveTouches = changedTouches.touches.length;
+      if (1 === obj2.numberActiveTouches) {
         let num2 = 0;
         if (0 < items3.length) {
           while (true) {
@@ -10276,21 +10375,21 @@ let closure_35 = {
             num2 = num2 + 1;
             let tmp11 = items3;
           }
-          obj1.indexOfSingleActiveTouch = num2;
+          obj2.indexOfSingleActiveTouch = num2;
         }
       }
     }
   },
-  touchHistory: obj1
+  touchHistory: obj2
 };
-let closure_36 = null;
-let closure_37 = 0;
-const obj2 = { startShouldSetResponder: { phasedRegistrationNames: { "Bool(false)": true, "Bool(false)": true }, dependencies: items }, scrollShouldSetResponder: { phasedRegistrationNames: {}, dependencies: [true] }, selectionChangeShouldSetResponder: { phasedRegistrationNames: { "Bool(false)": null, "Bool(false)": null }, dependencies: [-1618016108] }, moveShouldSetResponder: { phasedRegistrationNames: {}, dependencies: items1 }, responderStart: { registrationName: "onResponderStart", dependencies: items }, responderMove: { registrationName: "onResponderMove", dependencies: items1 }, responderEnd: { registrationName: "onResponderEnd", dependencies: items2 }, responderRelease: { registrationName: "onResponderRelease", dependencies: items2 }, responderTerminationRequest: { registrationName: "onResponderTerminationRequest", dependencies: [] }, responderGrant: { registrationName: "onResponderGrant", dependencies: [] }, responderReject: { registrationName: "onResponderReject", dependencies: [] }, responderTerminate: { registrationName: "onResponderTerminate", dependencies: [] } };
-const obj3 = {
+let c36 = null;
+let c37 = 0;
+let obj3 = { startShouldSetResponder: { phasedRegistrationNames: { bubbled: "onStartShouldSetResponder", captured: "onStartShouldSetResponderCapture" }, dependencies: items }, scrollShouldSetResponder: { phasedRegistrationNames: { bubbled: "onScrollShouldSetResponder", captured: "onScrollShouldSetResponderCapture" }, dependencies: ["topScroll"] }, selectionChangeShouldSetResponder: { phasedRegistrationNames: { bubbled: "onSelectionChangeShouldSetResponder", captured: "onSelectionChangeShouldSetResponderCapture" }, dependencies: ["topSelectionChange"] }, moveShouldSetResponder: { phasedRegistrationNames: { bubbled: "onMoveShouldSetResponder", captured: "onMoveShouldSetResponderCapture" }, dependencies: items1 }, responderStart: { registrationName: "onResponderStart", dependencies: items }, responderMove: { registrationName: "onResponderMove", dependencies: items1 }, responderEnd: { registrationName: "onResponderEnd", dependencies: items2 }, responderRelease: { registrationName: "onResponderRelease", dependencies: items2 }, responderTerminationRequest: { registrationName: "onResponderTerminationRequest", dependencies: [] }, responderGrant: { registrationName: "onResponderGrant", dependencies: [] }, responderReject: { registrationName: "onResponderReject", dependencies: [] }, responderTerminate: { registrationName: "onResponderTerminate", dependencies: [] } };
+let obj4 = {
   _getResponder() {
-    return closure_36;
+    return c36;
   },
-  eventTypes: obj2,
+  eventTypes: obj3,
   extractEvents(arg0, arg1, responderIgnoreScroll) {
     let _dispatchInstances;
     let _dispatchListeners;
@@ -10317,24 +10416,24 @@ const obj3 = {
         }
       }
       if (isStartish(arg0)) {
-        let scrollShouldSetResponder = obj2.startShouldSetResponder;
+        let scrollShouldSetResponder = obj3.startShouldSetResponder;
       } else if (isMoveish(arg0)) {
-        scrollShouldSetResponder = obj2.moveShouldSetResponder;
+        scrollShouldSetResponder = obj3.moveShouldSetResponder;
       } else if ("topSelectionChange" === arg0) {
-        scrollShouldSetResponder = obj2.selectionChangeShouldSetResponder;
+        scrollShouldSetResponder = obj3.selectionChangeShouldSetResponder;
       } else {
-        scrollShouldSetResponder = obj2.scrollShouldSetResponder;
+        scrollShouldSetResponder = obj3.scrollShouldSetResponder;
       }
       let tmp18 = arg1;
-      if (closure_36) {
+      if (c36) {
         let num5 = 0;
-        let tmp21 = closure_36;
+        let tmp21 = c36;
         let num6 = 0;
-        if (closure_36) {
+        if (c36) {
           do {
             num5 = num5 + 1;
-            let tmp22 = closure_203;
-            tmp21 = closure_203(tmp21);
+            let tmp22 = getParent$1;
+            tmp21 = getParent$1(tmp21);
             num6 = num5;
           } while (tmp21);
         }
@@ -10344,8 +10443,8 @@ const obj3 = {
         if (arg1) {
           do {
             num7 = num7 + 1;
-            let tmp24 = closure_203;
-            tmp23 = closure_203(tmp23);
+            let tmp24 = getParent$1;
+            tmp23 = getParent$1(tmp23);
             num8 = num7;
           } while (tmp23);
         }
@@ -10355,8 +10454,8 @@ const obj3 = {
         let tmp28 = num6;
         if (0 < num6 - num8) {
           do {
-            let tmp29 = closure_203;
-            tmp25 = closure_203(tmp25);
+            let tmp29 = getParent$1;
+            tmp25 = getParent$1(tmp25);
             let diff = tmp26 - 1;
             tmp26 = diff;
             tmp27 = tmp25;
@@ -10368,8 +10467,8 @@ const obj3 = {
         let tmp33 = arg1;
         if (0 < num8 - tmp28) {
           do {
-            let tmp34 = closure_203;
-            tmp32 = closure_203(tmp32);
+            let tmp34 = getParent$1;
+            tmp32 = getParent$1(tmp32);
             num8 = num8 - 1;
             tmp33 = tmp32;
             diff2 = num8 - tmp28;
@@ -10402,7 +10501,7 @@ const obj3 = {
       }
       const pooled = store.getPooled(scrollShouldSetResponder, tmp18, responderIgnoreScroll, arg3);
       pooled.touchHistory = closure_35.touchHistory;
-      forEachAccumulated(pooled, tmp18 === closure_36 ? accumulateTwoPhaseDispatchesSingleSkipTarget : accumulateTwoPhaseDispatchesSingle$1);
+      forEachAccumulated(pooled, tmp18 === c36 ? accumulateTwoPhaseDispatchesSingleSkipTarget : accumulateTwoPhaseDispatchesSingle$1);
       ({ _dispatchListeners, _dispatchInstances } = pooled);
       if (isArray(_dispatchListeners)) {
         let num9 = 0;
@@ -10432,14 +10531,14 @@ const obj3 = {
             if (tmp51) {
               tmp6 = tmp52;
               tmp7 = null;
-              if (tmp51 !== closure_36) {
+              if (tmp51 !== c36) {
                 pooled1 = store;
-                pooled1 = obj2;
+                pooled1 = obj3;
                 pooled1 = store;
                 pooled1 = tmp51;
                 pooled1 = responderIgnoreScroll;
                 pooled1 = arg3;
-                pooled1 = store.getPooled(obj2.responderGrant, tmp51, responderIgnoreScroll, arg3);
+                pooled1 = store.getPooled(obj3.responderGrant, tmp51, responderIgnoreScroll, arg3);
                 pooled1 = closure_35;
                 pooled1.touchHistory = closure_35.touchHistory;
                 pooled1 = forEachAccumulated;
@@ -10447,9 +10546,9 @@ const obj3 = {
                 pooled1 = forEachAccumulated(pooled1, accumulateDirectDispatchesSingle$1);
                 pooled1 = executeDirectDispatch;
                 pooled1 = true === executeDirectDispatch(pooled1);
-                pooled1 = closure_36;
-                if (closure_36) {
-                  const pooled2 = store.getPooled(obj2.responderTerminationRequest, closure_36, responderIgnoreScroll, arg3);
+                pooled1 = c36;
+                if (c36) {
+                  const pooled2 = store.getPooled(obj3.responderTerminationRequest, c36, responderIgnoreScroll, arg3);
                   pooled2.touchHistory = closure_35.touchHistory;
                   forEachAccumulated(pooled2, accumulateDirectDispatchesSingle$1);
                   let tmp72 = !pooled2._dispatchListeners;
@@ -10462,7 +10561,7 @@ const obj3 = {
                   }
                   const getPooled = store.getPooled;
                   if (tmp72) {
-                    const pooled3 = getPooled(tmp76.responderTerminate, closure_36, responderIgnoreScroll, arg3);
+                    const pooled3 = getPooled(tmp76.responderTerminate, c36, responderIgnoreScroll, arg3);
                     pooled3.touchHistory = closure_35.touchHistory;
                     forEachAccumulated(pooled3, accumulateDirectDispatchesSingle$1);
                     const items = [pooled1, pooled3];
@@ -10494,44 +10593,44 @@ const obj3 = {
         }
       }
     }
-    let tmp99 = closure_36;
-    if (closure_36) {
+    let tmp99 = c36;
+    if (c36) {
       pooled1 = isStartish;
       tmp99 = isStartish(arg0);
     }
-    pooled1 = closure_36;
-    if (closure_36) {
+    pooled1 = c36;
+    if (c36) {
       pooled1 = isMoveish;
       pooled1 = isMoveish(arg0);
     }
-    pooled1 = closure_36;
-    if (closure_36) {
+    pooled1 = c36;
+    if (c36) {
       pooled1 = "topTouchEnd" === arg0;
       if (!pooled1) {
         pooled1 = "topTouchCancel" === arg0;
       }
     }
     if (tmp99) {
-      pooled1 = obj2;
-      pooled1 = obj2.responderStart;
+      pooled1 = obj3;
+      pooled1 = obj3.responderStart;
     } else if (pooled1) {
-      pooled1 = obj2;
-      pooled1 = obj2.responderMove;
+      pooled1 = obj3;
+      pooled1 = obj3.responderMove;
     } else {
       pooled1 = null;
       if (pooled1) {
-        pooled1 = obj2;
-        pooled1 = obj2.responderEnd;
+        pooled1 = obj3;
+        pooled1 = obj3.responderEnd;
       }
     }
     pooled1 = tmp7;
     if (pooled1) {
       pooled1 = store;
-      pooled1 = closure_36;
+      pooled1 = c36;
       pooled1 = store;
       pooled1 = responderIgnoreScroll;
       pooled1 = arg3;
-      pooled1 = store.getPooled(pooled1, closure_36, responderIgnoreScroll, arg3);
+      pooled1 = store.getPooled(pooled1, c36, responderIgnoreScroll, arg3);
       pooled1 = closure_35;
       pooled1.touchHistory = closure_35.touchHistory;
       pooled1 = forEachAccumulated;
@@ -10540,12 +10639,12 @@ const obj3 = {
       pooled1 = accumulate;
       pooled1 = accumulate(tmp7, pooled1);
     }
-    pooled1 = closure_36;
-    if (closure_36) {
+    pooled1 = c36;
+    if (c36) {
       pooled1 = "topTouchCancel" === arg0;
     }
-    let flag = closure_36;
-    if (closure_36) {
+    let flag = c36;
+    if (c36) {
       flag = !pooled1;
     }
     if (flag) {
@@ -10572,7 +10671,7 @@ const obj3 = {
                 if (0 !== target) {
                   pooled1 = getInstanceFromTag;
                   pooled1 = getInstanceFromTag(target);
-                  pooled1 = closure_36;
+                  pooled1 = c36;
                   if (!pooled1) {
                     let flag2 = false;
                   } else {
@@ -10597,22 +10696,22 @@ const obj3 = {
       }
     }
     if (pooled1) {
-      pooled1 = obj2;
-      pooled1 = obj2.responderTerminate;
+      pooled1 = obj3;
+      pooled1 = obj3.responderTerminate;
     } else {
       pooled1 = null;
       if (flag) {
-        pooled1 = obj2;
-        pooled1 = obj2.responderRelease;
+        pooled1 = obj3;
+        pooled1 = obj3.responderRelease;
       }
     }
     if (pooled1) {
       pooled1 = store;
-      pooled1 = closure_36;
+      pooled1 = c36;
       pooled1 = store;
       pooled1 = responderIgnoreScroll;
       pooled1 = arg3;
-      pooled1 = store.getPooled(pooled1, closure_36, responderIgnoreScroll, arg3);
+      pooled1 = store.getPooled(pooled1, c36, responderIgnoreScroll, arg3);
       pooled1 = closure_35;
       pooled1.touchHistory = closure_35.touchHistory;
       pooled1 = forEachAccumulated;
@@ -10626,40 +10725,40 @@ const obj3 = {
     return pooled1;
   },
   GlobalResponderHandler: null,
-  injection: obj4
+  injection: obj5
 };
 let closure_40 = null;
-const obj5 = {};
+let obj6 = {};
 let closure_42 = [];
 let closure_43 = {};
 let closure_44 = {};
-const customBubblingEventTypes = require(dependencyMap[2]).ReactNativeViewConfigRegistry.customBubblingEventTypes;
-const customDirectEventTypes = require(dependencyMap[2]).ReactNativeViewConfigRegistry.customDirectEventTypes;
-closure_40 = slice.call([null, null]);
-const result = recomputePluginOrdering();
-const obj6 = { ResponderEventPlugin: obj3, ReactNativeBridgeEventPlugin: obj7 };
+const customBubblingEventTypes = require("get BatchedBridge").ReactNativeViewConfigRegistry.customBubblingEventTypes;
+const customDirectEventTypes = require("get BatchedBridge").ReactNativeViewConfigRegistry.customDirectEventTypes;
+closure_40 = slice.call(["ResponderEventPlugin", "ReactNativeBridgeEventPlugin"]);
+result = recomputePluginOrdering();
+let obj7 = { ResponderEventPlugin: obj4, ReactNativeBridgeEventPlugin: obj8 };
 let flag = false;
 let flag2 = false;
-const keys = Object.keys();
+let keys = Object.keys();
 if (keys !== undefined) {
   flag2 = flag;
   while (keys[tmp] !== undefined) {
     let tmp27 = tmp14;
-    if (!obj6.hasOwnProperty(tmp14)) {
+    if (!obj7.hasOwnProperty(tmp14)) {
       continue;
     } else {
-      let tmp15 = obj6[tmp14];
-      if (!obj5.hasOwnProperty(tmp14)) {
-        if (obj5[tmp14]) {
+      let tmp15 = obj7[tmp14];
+      if (!obj6.hasOwnProperty(tmp14)) {
+        if (obj6[tmp14]) {
           let _Error = Error;
           let str = "EventPluginRegistry: Cannot inject two different event plugins using the same name, `";
           let str2 = "`.";
           throw Error("EventPluginRegistry: Cannot inject two different event plugins using the same name, `" + tmp14 + "`.");
         } else {
-          obj5[tmp14] = tmp15;
+          obj6[tmp14] = tmp15;
           flag = true;
           let tmp17 = tmp15;
-          // continue
+          continue;
         }
       } else {
         flag = tmp13;
@@ -10671,14 +10770,13 @@ if (keys !== undefined) {
   }
 }
 if (flag2) {
-  const result1 = recomputePluginOrdering();
+  let result1 = recomputePluginOrdering();
 }
-const map = new Map();
+let map = new Map();
 const map1 = new Map();
-let closure_49 = false;
-let closure_50 = null;
+let c49 = false;
+let c50 = null;
 let closure_51 = {};
-const RCTEventEmitter = require(dependencyMap[2]).RCTEventEmitter;
 RCTEventEmitter.register({
   receiveEvent(arg0, arg1, arg2) {
     _receiveRootNodeIDEvent(arg0, arg1, arg2);
@@ -10700,22 +10798,18 @@ RCTEventEmitter.register({
           } while (num < length);
         }
       }
-      let num6 = 0;
-      if (0 < arr2.length) {
-        do {
-          let tmp8 = arr2[num6];
-          tmp8.changedTouches = arr2;
-          tmp8.touches = touches;
-          let target = tmp8.target;
-          let tmp9 = null == target || 1 > target;
-          let tmp10 = null;
-          if (!tmp9) {
-            tmp10 = target;
-          }
-          let tmp11 = closure_220;
-          let tmp12 = closure_220(tmp10, arg0, tmp8);
-          num6 = num6 + 1;
-        } while (num6 < arr2.length);
+      for (let num6 = 0; num6 < arr2.length; num6 = num6 + 1) {
+        let tmp8 = arr2[num6];
+        tmp8.changedTouches = arr2;
+        tmp8.touches = touches;
+        let target = tmp8.target;
+        let tmp9 = null == target || 1 > target;
+        let tmp10 = null;
+        if (!tmp9) {
+          tmp10 = target;
+        }
+        let tmp11 = _receiveRootNodeIDEvent;
+        let tmp12 = _receiveRootNodeIDEvent(tmp10, arg0, tmp8);
       }
     }
     const items1 = [];
@@ -10772,23 +10866,23 @@ getNodeFromInstance = function getNodeFromInstance(stateNode) {
     throw Error("All native instances should have a tag.");
   }
 };
-const injection = obj3.injection;
-const result2 = injection.injectGlobalResponderHandler({
+const injection = obj4.injection;
+let result2 = injection.injectGlobalResponderHandler({
   onChange(arg0, stateNode) {
     if (null !== stateNode) {
-      const UIManager2 = require(dependencyMap[2]).UIManager;
+      const UIManager2 = require(261) /* get BatchedBridge */.UIManager;
       UIManager2.setJSResponder(stateNode.stateNode._nativeTag, arg2);
     } else {
-      const UIManager = require(dependencyMap[2]).UIManager;
+      const UIManager = require(261) /* get BatchedBridge */.UIManager;
       UIManager.clearJSResponder();
     }
   }
 });
 let closure_52 = {};
-let closure_53 = null;
-let closure_54 = 0;
+let c53 = null;
+let c54 = 0;
 let closure_55 = { unsafelyIgnoreFunctions: true };
-let closure_56 = () => {
+let closure_56 = (() => {
   class ReactNativeFiberHostComponent {
     constructor(arg0, arg1) {
       this._internalFiberInstanceHandleDEV = undefined;
@@ -10801,20 +10895,20 @@ let closure_56 = () => {
   }
   const prototype = ReactNativeFiberHostComponent.prototype;
   prototype.blur = function() {
-    const TextInputState = callback(closure_1[2]).TextInputState;
+    const TextInputState = outer1_0(outer1_1[2]).TextInputState;
     TextInputState.blurTextInput(this);
   };
   prototype.focus = function() {
-    const TextInputState = callback(closure_1[2]).TextInputState;
+    const TextInputState = outer1_0(outer1_1[2]).TextInputState;
     TextInputState.focusTextInput(this);
   };
   prototype.measure = function(arg0) {
-    const UIManager = callback(closure_1[2]).UIManager;
-    UIManager.measure(this._nativeTag, callback3(this, arg0));
+    const UIManager = outer1_0(outer1_1[2]).UIManager;
+    UIManager.measure(this._nativeTag, outer1_230(this, arg0));
   };
   prototype.measureInWindow = function(arg0) {
-    const UIManager = callback(closure_1[2]).UIManager;
-    UIManager.measureInWindow(this._nativeTag, callback3(this, arg0));
+    const UIManager = outer1_0(outer1_1[2]).UIManager;
+    UIManager.measureInWindow(this._nativeTag, outer1_230(this, arg0));
   };
   prototype.measureLayout = function(_nativeTag) {
     const self = this;
@@ -10824,22 +10918,22 @@ let closure_56 = () => {
       }
     }
     if (null != _nativeTag) {
-      const UIManager = callback(closure_1[2]).UIManager;
+      const UIManager = outer1_0(outer1_1[2]).UIManager;
       const _nativeTag2 = self._nativeTag;
-      UIManager.measureLayout(_nativeTag2, _nativeTag, callback3(self, arg2), callback3(self, arg1));
-      const tmp5 = callback3(self, arg2);
+      UIManager.measureLayout(_nativeTag2, _nativeTag, outer1_230(self, arg2), outer1_230(self, arg1));
+      const tmp5 = outer1_230(self, arg2);
     }
   };
   prototype.setNativeProps = function(arg0) {
     const self = this;
-    const tmp = callback2(null, closure_52, arg0, this.viewConfig.validAttributes);
+    const tmp = outer1_229(null, outer1_52, arg0, this.viewConfig.validAttributes);
     if (null != tmp) {
-      const UIManager = callback(closure_1[2]).UIManager;
+      const UIManager = outer1_0(outer1_1[2]).UIManager;
       UIManager.updateView(self._nativeTag, self.viewConfig.uiViewClassName, tmp);
     }
   };
   return ReactNativeFiberHostComponent;
-}();
+})();
 let closure_57 = null;
 let __REACT_DEVTOOLS_GLOBAL_HOOK__2 = null;
 if (Math.clz32) {
@@ -10854,9 +10948,9 @@ if (Math.clz32) {
     return num;
   };
 }
-let closure_62 = 256;
-let closure_63 = 4194304;
-const obj10 = {
+let c62 = 256;
+let c63 = 4194304;
+const obj11 = {
   getInspectorDataForInstance: undefined,
   getInspectorDataForViewTag() {
     throw Error("getInspectorDataForViewTag() is not available in production");
@@ -10865,21 +10959,21 @@ const obj10 = {
     throw Error("getInspectorDataForViewAtPoint() is not available in production.");
   }
 };
-const get = require(dependencyMap[2]).ReactNativeViewConfigRegistry.get;
-let closure_65 = 3;
-let closure_68 = 0;
-const obj11 = { position: 1, offsetY: "100%", "Bool(true)": "absolute", "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": "100%", $$typeof: forResult };
+const get = require("get BatchedBridge").ReactNativeViewConfigRegistry.get;
+let c65 = 3;
+let c68 = 0;
+const obj12 = { $$typeof: forResult, Provider: null, Consumer: null, _currentValue: null, _currentValue2: null, _threadCount: 0 };
 let closure_70 = [];
-let closure_71 = -1;
+let c71 = -1;
 let closure_72 = {};
 const weakMap = new WeakMap();
 let closure_74 = createCursor(null);
 let closure_75 = createCursor(null);
 let closure_76 = createCursor(null);
 let closure_77 = createCursor(null);
-let closure_78 = null;
+let c78 = null;
 if ("function" === typeof Object.is) {
-  const _Object = Object;
+  let _Object = Object;
 } else {
   is = function is(arg0, arg1) {
     let tmp = arg0 === arg1;
@@ -10898,9 +10992,9 @@ if ("function" === typeof Object.is) {
   };
 }
 let closure_80 = createCursor(null);
-let closure_81 = null;
-let closure_82 = null;
-let closure_83 = "undefined" !== typeof AbortController ? AbortController : function() {
+let c81 = null;
+let c82 = null;
+let closure_83 = "undefined" !== typeof AbortController ? AbortController : (function() {
   let closure_0 = [];
   const obj = {
     aborted: false,
@@ -10909,24 +11003,23 @@ let closure_83 = "undefined" !== typeof AbortController ? AbortController : func
     }
   };
   this.signal = obj;
-  const dependencyMap = obj;
   this.abort = () => {
     obj.aborted = true;
     const item = arr.forEach((arg0) => arg0());
   };
-};
-const obj12 = { pointerEvents: 1, horizontalOffset: "100%", "Bool(true)": "absolute", "Bool(true)": 0, "Bool(true)": 0, "Bool(true)": "100%", $$typeof: forResult };
-let closure_85 = null;
-let closure_86 = null;
-let closure_87 = false;
-let closure_88 = false;
-let closure_89 = false;
-let closure_90 = 0;
-let closure_91 = null;
-let closure_92 = 0;
-let closure_93 = 0;
-let closure_94 = null;
-const S = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.S;
+});
+const obj13 = { $$typeof: forResult, Consumer: null, Provider: null, _currentValue: null, _currentValue2: null, _threadCount: 0 };
+let c85 = null;
+let c86 = null;
+let c87 = false;
+let c88 = false;
+let c89 = false;
+let c90 = 0;
+let c91 = null;
+let c92 = 0;
+let c93 = 0;
+let c94 = null;
+let S = __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.S;
 __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.S = (arg0, promise) => {
   let tmp = "object" === typeof promise;
   if (tmp) {
@@ -10936,11 +11029,12 @@ __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.S = (arg0, promi
     tmp = "function" === typeof promise.then;
   }
   if (tmp) {
-    function entangleAsyncAction(arg0, promise) {
-      if (null === items) {
+    (function entangleAsyncAction(arg0, promise) {
+      if (null === outer1_91) {
         const items = [];
-        let closure_92 = 0;
-        let closure_93 = callback();
+        outer1_91 = items;
+        let outer1_92 = 0;
+        const outer1_93 = outer1_274();
         const obj = {
           status: "pending",
           value: undefined,
@@ -10948,11 +11042,12 @@ __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE.S = (arg0, promi
               items.push(arg0);
             }
         };
+        const outer1_94 = obj;
       }
-      closure_92 = closure_92 + 1;
-      promise.then(closure_275, closure_275);
+      outer1_92 = outer1_92 + 1;
+      promise.then(outer1_275, outer1_275);
       return promise;
-    }(undefined, promise);
+    })(undefined, promise);
   }
   if (null !== S) {
     S(arg0, promise);
@@ -10967,23 +11062,23 @@ let closure_101 = {
 
   }
 };
-let closure_102 = null;
+let c102 = null;
 let closure_103 = [];
-let closure_104 = 0;
-let closure_105 = 0;
-let closure_106 = false;
-let closure_107 = false;
+let c104 = 0;
+let c105 = 0;
+let c106 = false;
+let c107 = false;
 let closure_108 = createCursor(null);
-let closure_110 = 0;
-let closure_111 = null;
-let closure_112 = null;
-let closure_113 = null;
-let closure_114 = false;
-let closure_115 = false;
-let closure_116 = false;
-let closure_117 = 0;
-let closure_118 = null;
-let closure_119 = 0;
+let c110 = 0;
+let c111 = null;
+let c112 = null;
+let c113 = null;
+let c114 = false;
+let c115 = false;
+let c116 = false;
+let c117 = 0;
+let c118 = null;
+let c119 = 0;
 let closure_120 = { readContext, use, useCallback: throwInvalidHookError, useContext: throwInvalidHookError, useEffect: throwInvalidHookError, useImperativeHandle: throwInvalidHookError, useLayoutEffect: throwInvalidHookError, useInsertionEffect: throwInvalidHookError, useMemo: throwInvalidHookError, useReducer: throwInvalidHookError, useRef: throwInvalidHookError, useState: throwInvalidHookError, useDebugValue: throwInvalidHookError, useDeferredValue: throwInvalidHookError, useTransition: throwInvalidHookError, useSyncExternalStore: throwInvalidHookError, useId: throwInvalidHookError, useHostTransitionStatus: throwInvalidHookError, useFormState: throwInvalidHookError, useActionState: throwInvalidHookError, useOptimistic: throwInvalidHookError, useMemoCache: throwInvalidHookError, useCacheRefresh: throwInvalidHookError };
 let closure_121 = {
   readContext,
@@ -11000,13 +11095,13 @@ let closure_121 = {
   },
   useContext: readContext,
   useEffect: mountEffect,
-  useImperativeHandle(queue, closure_101, arr) {
+  useImperativeHandle(queue, c101, arr) {
     let combined = null;
     if (null != arr) {
       const items = [queue];
       combined = arr.concat(items);
     }
-    mountEffectImpl(4194308, 4, imperativeHandleEffect.bind(null, closure_101, queue), combined);
+    mountEffectImpl(4194308, 4, imperativeHandleEffect.bind(null, c101, queue), combined);
   },
   useLayoutEffect(arg0, arg1) {
     mountEffectImpl(4194308, 4, arg0, arg1);
@@ -11020,7 +11115,7 @@ let closure_121 = {
       tmp2 = arg1;
     }
     const tmp3 = arg0();
-    if (closure_116) {
+    if (c116) {
       setIsStrictModeForDevtools(true);
       arg0();
       setIsStrictModeForDevtools(false);
@@ -11034,7 +11129,7 @@ let closure_121 = {
     if (undefined !== arg2) {
       const tmpResult = arg2(arg1);
       let tmp3 = tmpResult;
-      if (closure_116) {
+      if (c116) {
         setIsStrictModeForDevtools(true);
         arg2(arg1);
         setIsStrictModeForDevtools(false);
@@ -11045,9 +11140,9 @@ let closure_121 = {
     }
     tmp2.baseState = tmp3;
     tmp2.memoizedState = tmp3;
-    const obj = { 9223372036854775807: 22817347, 0: 18467840, 0: 21634048, lastRenderedReducer, lastRenderedState: tmp3 };
+    const obj = { pending: null, lanes: 0, dispatch: null, lastRenderedReducer, lastRenderedState: tmp3 };
     tmp2.queue = obj;
-    const bindResult = dispatchReducerAction.bind(null, closure_111, obj);
+    const bindResult = dispatchReducerAction.bind(null, c111, obj);
     obj.dispatch = bindResult;
     const items = [tmp2.memoizedState, bindResult];
     return items;
@@ -11060,7 +11155,7 @@ let closure_121 = {
   useState(arg0) {
     const tmp = mountStateImpl(arg0);
     const queue = tmp.queue;
-    const bindResult = dispatchSetState.bind(null, closure_111, queue);
+    const bindResult = dispatchSetState.bind(null, c111, queue);
     queue.dispatch = bindResult;
     const items = [tmp.memoizedState, bindResult];
     return items;
@@ -11070,7 +11165,7 @@ let closure_121 = {
     return mountDeferredValueImpl(mountWorkInProgressHook(), arg0, arg1);
   },
   useTransition() {
-    const bindResult = startTransition.bind(null, closure_111, mountStateImpl(false).queue, true, false);
+    const bindResult = startTransition.bind(null, c111, mountStateImpl(false).queue, true, false);
     mountWorkInProgressHook().memoizedState = bindResult;
     const items = [false, bindResult];
     return items;
@@ -11078,11 +11173,11 @@ let closure_121 = {
   useSyncExternalStore(bindResult1, getSnapshot) {
     const tmp2 = mountWorkInProgressHook();
     const tmp3 = getSnapshot();
-    if (null === closure_146) {
+    if (null === c146) {
       const _Error = Error;
       throw Error("Expected a work-in-progress root. This is a bug in React. Please file an issue.");
     } else {
-      if (!(124 & closure_148)) {
+      if (!(124 & c148)) {
         pushStoreConsistencyCheck(tmp, getSnapshot, tmp3);
       }
       tmp2.memoizedState = tmp3;
@@ -11098,9 +11193,9 @@ let closure_121 = {
   },
   useId() {
     let closure_119 = str + 1;
-    const text = `${`«${closure_146.identifierPrefix}` + "r" + str.toString(32)}»`;
+    const text = `${`«${c146.identifierPrefix}` + "r" + str.toString(32)}»`;
     mountWorkInProgressHook().memoizedState = text;
-    return `${`«${closure_146.identifierPrefix}` + "r" + +closure_119.toString(32)}»`;
+    return `${`«${c146.identifierPrefix}` + "r" + +closure_119.toString(32)}»`;
   },
   useHostTransitionStatus,
   useFormState: mountActionState,
@@ -11109,16 +11204,16 @@ let closure_121 = {
     const tmp = mountWorkInProgressHook();
     tmp.baseState = baseState;
     tmp.memoizedState = baseState;
-    const obj = {};
+    const obj = { pending: null, lanes: 0, dispatch: null, lastRenderedReducer: null, lastRenderedState: null };
     tmp.queue = obj;
-    const bindResult = dispatchOptimisticSetState.bind(null, closure_111, true, obj);
+    const bindResult = dispatchOptimisticSetState.bind(null, c111, true, obj);
     obj.dispatch = bindResult;
     const items = [baseState, bindResult];
     return items;
   },
   useMemoCache,
   useCacheRefresh() {
-    const bindResult = refreshCache.bind(null, closure_111);
+    const bindResult = refreshCache.bind(null, c111);
     mountWorkInProgressHook().memoizedState = bindResult;
     return bindResult;
   }
@@ -11140,7 +11235,7 @@ let closure_122 = {
   },
   useDebugValue: mountDebugValue,
   useDeferredValue(arg0, arg1) {
-    return updateDeferredValueImpl(updateWorkInProgressHook(), _null2.memoizedState, arg0, arg1);
+    return updateDeferredValueImpl(updateWorkInProgressHook(), _null4.memoizedState, arg0, arg1);
   },
   useTransition() {
     const first = updateReducer(basicStateReducer)[0];
@@ -11180,10 +11275,10 @@ let closure_123 = {
   useDebugValue: mountDebugValue,
   useDeferredValue(arg0, arg1) {
     const tmp = updateWorkInProgressHook();
-    if (null === _null2) {
+    if (null === _null4) {
       let tmp7 = mountDeferredValueImpl(tmp, arg0, arg1);
     } else {
-      tmp7 = updateDeferredValueImpl(tmp, _null2.memoizedState, arg0, arg1);
+      tmp7 = updateDeferredValueImpl(tmp, _null4.memoizedState, arg0, arg1);
     }
     return tmp7;
   },
@@ -11203,7 +11298,7 @@ let closure_123 = {
   useActionState: rerenderActionState,
   useOptimistic(baseState) {
     const tmp = updateWorkInProgressHook();
-    if (null !== closure_112) {
+    if (null !== c112) {
       let items = updateOptimisticImpl(tmp, undefined, baseState, arg1);
     } else {
       tmp.baseState = baseState;
@@ -11214,12 +11309,12 @@ let closure_123 = {
   useMemoCache,
   useCacheRefresh: updateRefresh
 };
-let closure_124 = null;
-let closure_125 = 0;
+let c124 = null;
+let c125 = 0;
 let closure_126 = createChildReconciler(true);
 let closure_127 = createChildReconciler(false);
 let closure_128 = createCursor(null);
-let closure_129 = null;
+let c129 = null;
 let closure_131 = {
   enqueueSetState(_reactInternals, payload, callback) {
     _reactInternals = _reactInternals._reactInternals;
@@ -11265,12 +11360,12 @@ let closure_131 = {
     }
   }
 };
-let closure_132 = "function" === typeof reportError ? reportError : (message) => {
+let closure_132 = "function" === typeof reportError ? reportError : ((message) => {
   if ("object" === typeof window) {
     const _window = window;
     if ("function" === typeof window.ErrorEvent) {
       const _window2 = window;
-      const obj = {};
+      const obj = { bubbles: true, cancelable: true };
       if ("object" === typeof message) {
         if (null !== message) {
           if ("string" === typeof message.message) {
@@ -11297,20 +11392,20 @@ let closure_132 = "function" === typeof reportError ? reportError : (message) =>
       process.emit("uncaughtException", message);
     }
   }
-};
+});
 let closure_133 = Error("This is not a real error. It's an implementation detail of React's selective hydration feature. If this leaks into userspace, it's a bug in React. Please file an issue.");
-let closure_134 = false;
-let closure_135 = {};
-let closure_136 = false;
-let closure_137 = false;
+let c134 = false;
+let closure_135 = { dehydrated: null, treeContext: null, retryLane: 0, hydrationErrors: null };
+let c136 = false;
+let c137 = false;
 let closure_138 = "function" === typeof WeakSet ? WeakSet : Set;
-let closure_139 = null;
-let closure_140 = null;
-let closure_141 = false;
-let closure_142 = 8192;
+let c139 = null;
+let c140 = null;
+let c141 = false;
+let c142 = 8192;
 let closure_143 = {
   getCacheForType(arg0) {
-    const tmp = readContext(obj12);
+    const tmp = readContext(obj13);
     const data = tmp.data;
     let value = data.get(arg0);
     if (undefined === value) {
@@ -11323,66 +11418,66 @@ let closure_143 = {
   }
 };
 let closure_144 = "function" === typeof WeakMap ? WeakMap : Map;
-let closure_145 = 0;
-let closure_146 = null;
-let closure_147 = null;
-let closure_148 = 0;
-let closure_149 = 0;
-let closure_150 = null;
-let closure_151 = false;
-let closure_152 = false;
-let closure_153 = false;
-let closure_154 = 0;
-let closure_155 = 0;
-let closure_156 = 0;
-let closure_157 = 0;
-let closure_158 = 0;
-let closure_159 = 0;
-let closure_160 = 0;
-let closure_161 = null;
-let closure_162 = null;
-let closure_163 = false;
-let closure_164 = 0;
-let closure_165 = Infinity;
-let closure_166 = null;
-let closure_167 = null;
-let closure_168 = 0;
-let closure_169 = null;
-let closure_170 = null;
-let closure_171 = 0;
-let closure_172 = 0;
-let closure_173 = null;
-let closure_174 = null;
-let closure_175 = 0;
-let closure_176 = null;
-const version = _module1.version;
+let c145 = 0;
+let c146 = null;
+let c147 = null;
+let c148 = 0;
+let c149 = 0;
+let c150 = null;
+let c151 = false;
+let c152 = false;
+let c153 = false;
+let c154 = 0;
+let c155 = 0;
+let c156 = 0;
+let c157 = 0;
+let c158 = 0;
+let c159 = 0;
+let c160 = 0;
+let c161 = null;
+let c162 = null;
+let c163 = false;
+let c164 = 0;
+const Infinity = Infinity;
+let c166 = null;
+let c167 = null;
+let c168 = 0;
+let c169 = null;
+let c170 = null;
+let c171 = 0;
+let c172 = 0;
+let c173 = null;
+let c174 = null;
+let c175 = 0;
+let c176 = null;
+const version = result.version;
 if ("19.1.0" !== version) {
-  const _Error3 = Error;
+  let _Error3 = Error;
   throw Error("Incompatible React versions: The \"react\" and \"react-native-renderer\" packages must have the exact same version. Instead got:\n  - react:                  " + version + "\n  - react-native-renderer:  19.1.0\nLearn more: https://react.dev/warnings/version-mismatch");
-} else if ("function" !== typeof require(dependencyMap[2]).ReactFiberErrorDialog.showErrorDialog) {
-  const _Error2 = Error;
+} else if ("function" !== typeof require("get BatchedBridge").ReactFiberErrorDialog.showErrorDialog) {
+  let _Error2 = Error;
   throw Error("Expected ReactFiberErrorDialog.showErrorDialog to be a function.");
 } else {
   batchedUpdatesImpl = function batchedUpdatesImpl(arg0, arg1) {
     closure_145 = closure_145 | 1;
     if (0 === closure_145) {
-      let closure_165 = require(dependencyMap[3]).unstable_now() + 500;
+      let closure_165 = require(273) /* push */.unstable_now() + 500;
       flushSyncWorkAcrossRoots_impl(0, true);
-      const obj = require(dependencyMap[3]);
+      const obj = require(273) /* push */;
     }
     return arg0(arg1);
   };
   const _Map = Map;
   const map2 = new Map();
-  const obj13 = { "Bool(false)": "canUnlinkLobby", "Bool(false)": "CONTEXT_MENU_OPEN_GAME_LINK", "Bool(false)": "isArray", "Bool(false)": "PARENTAL_CONSENT_CONNECTION", "Bool(false)": "pricingResultIdMap", currentDispatcherRef: __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE };
-  if (null !== obj10) {
-    tmp32.rendererConfig = obj10;
+  const obj14 = { bundleType: 0, version: "19.1.0", rendererPackageName: "react-native-renderer", currentDispatcherRef: __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, reconcilerVersion: "19.1.0" };
+  if (null !== obj11) {
+    tmp32.rendererConfig = obj11;
   }
   if ("undefined" !== typeof globalThis.__REACT_DEVTOOLS_GLOBAL_HOOK__) {
     __REACT_DEVTOOLS_GLOBAL_HOOK__2 = globalThis.__REACT_DEVTOOLS_GLOBAL_HOOK__;
     if (!globalThis.__REACT_DEVTOOLS_GLOBAL_HOOK__.isDisabled) {
       if (tmp25.supportsFiber) {
-        closure_57 = __REACT_DEVTOOLS_GLOBAL_HOOK__2.inject(obj13);
+        closure_57 = __REACT_DEVTOOLS_GLOBAL_HOOK__2.inject(obj14);
       }
     }
   }
@@ -11394,7 +11489,7 @@ if ("19.1.0" !== version) {
         tmp = arguments[2];
       }
     }
-    return function createPortal$1(children, containerInfo, implementation, arg3) {
+    return (function createPortal$1(children, containerInfo, implementation, arg3) {
       let tmp = null;
       if (3 < arguments.length) {
         tmp = null;
@@ -11402,7 +11497,7 @@ if ("19.1.0" !== version) {
           tmp = arguments[3];
         }
       }
-      const obj = { $$typeof: closure_10 };
+      const obj = { $$typeof: outer1_10 };
       let text = null;
       if (null != tmp) {
         text = `${tmp}`;
@@ -11412,24 +11507,24 @@ if ("19.1.0" !== version) {
       obj.containerInfo = containerInfo;
       obj.implementation = implementation;
       return obj;
-    }(children, containerInfo, null, tmp);
+    })(children, containerInfo, null, tmp);
   };
   exports.dispatchCommand = (_nativeTag, blur, items) => {
     if (null != _nativeTag._nativeTag) {
       _nativeTag = _nativeTag._nativeTag;
     } else {
-      _nativeTag = require(dependencyMap[2]).getNativeTagFromPublicInstance(_nativeTag);
-      const obj = require(dependencyMap[2]);
+      _nativeTag = require(261) /* get BatchedBridge */.getNativeTagFromPublicInstance(_nativeTag);
+      const obj = require(261) /* get BatchedBridge */;
     }
     if (null != _nativeTag) {
-      const nodeFromPublicInstance = require(dependencyMap[2]).getNodeFromPublicInstance(_nativeTag);
+      const nodeFromPublicInstance = require(261) /* get BatchedBridge */.getNodeFromPublicInstance(_nativeTag);
       if (null != nodeFromPublicInstance) {
         globalThis.nativeFabricUIManager.dispatchCommand(nodeFromPublicInstance, blur, items);
       } else {
-        const UIManager = require(dependencyMap[2]).UIManager;
+        const UIManager = require(261) /* get BatchedBridge */.UIManager;
         const result = UIManager.dispatchViewManagerCommand(_nativeTag, blur, items);
       }
-      const obj2 = require(dependencyMap[2]);
+      const obj2 = require(261) /* get BatchedBridge */;
     }
   };
   exports.findHostInstance_DEPRECATED = (arg0) => {
@@ -11461,7 +11556,7 @@ if ("19.1.0" !== version) {
           return _nativeTag.canonical.nativeTag;
         }
       }
-      let nativeTagFromPublicInstance = require(dependencyMap[2]).getNativeTagFromPublicInstance(_nativeTag);
+      let nativeTagFromPublicInstance = require(261) /* get BatchedBridge */.getNativeTagFromPublicInstance(_nativeTag);
       if (!nativeTagFromPublicInstance) {
         const tmp5 = findHostInstance(_nativeTag);
         if (null == tmp5) {
@@ -11469,8 +11564,8 @@ if ("19.1.0" !== version) {
         } else if (null != tmp5._nativeTag) {
           _nativeTag = tmp5._nativeTag;
         } else {
-          _nativeTag = require(dependencyMap[2]).getNativeTagFromPublicInstance(tmp5);
-          const obj2 = require(dependencyMap[2]);
+          _nativeTag = require(261) /* get BatchedBridge */.getNativeTagFromPublicInstance(tmp5);
+          const obj2 = require(261) /* get BatchedBridge */;
         }
       }
       return nativeTagFromPublicInstance;
@@ -11516,7 +11611,7 @@ if ("19.1.0" !== version) {
       tmp21.refCount = tmp21.refCount + 1;
       tmp14.pooledCache = tmp21;
       tmp21.refCount = tmp21.refCount + 1;
-      obj = { body: "<string:1243348993>", code: "<string:2137063425>", cache: tmp21 };
+      obj = { element: null, isDehydrated: false, cache: tmp21 };
       tmp19.memoizedState = obj;
       initializeUpdateQueue(tmp19);
       const result = map2.set(containerTag, tmp14);
@@ -11554,16 +11649,16 @@ if ("19.1.0" !== version) {
           if (tmp) {
             self[key10012] = tmp(arg2);
             tmp4 = tmp;
-            // continue
+            continue;
           } else {
             if ("target" === key10012) {
               self.target = arg3;
               tmp3 = tmp;
-              // continue
+              continue;
             } else {
               self[key10012] = arg2[key10012];
               tmp2 = tmp;
-              // continue
+              continue;
             }
             continue;
           }
@@ -11585,7 +11680,7 @@ if ("19.1.0" !== version) {
   exports.unmountComponentAtNode = unmountComponentAtNode;
   exports.unmountComponentAtNodeAndRemoveContainer = (arg0) => {
     unmountComponentAtNode(arg0);
-    const UIManager = require(dependencyMap[2]).UIManager;
+    const UIManager = require(261) /* get BatchedBridge */.UIManager;
     UIManager.removeRootView(arg0);
   };
   exports.unstable_batchedUpdates = batchedUpdates$1;

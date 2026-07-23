@@ -1,25 +1,33 @@
-// Module ID: 14402
-// Function ID: 108642
+// Module ID: 14516
+// Function ID: 110795
 // Name: UserListItem
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 653, 33, 4130, 689, 566, 14517, 3969, 7889, 5464, 8492, 5165, 1273, 1212, 5171, 3834, 1456, 14515, 4126, 7879, 5459, 8897, 2]
 // Exports: default
 
-// Module 14402 (UserListItem)
+// Module 14516 (UserListItem)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { UserSettingsSections } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function UserListItem(userId) {
   let end;
   let start;
   userId = userId.userId;
-  const arg1 = userId;
   const onPress = userId.onPress;
-  const importDefault = onPress;
   ({ start, end } = userId);
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => user.getUser(userId));
-  let obj1 = arg1(dependencyMap[8]);
+  let obj = userId(analyticsLocations[7]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getUser(userId));
+  let obj1 = userId(analyticsLocations[8]);
   const secureFramesUserVerifiedKeys = obj1.useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId];
-  const formattedName = importDefault(dependencyMap[9]).getFormattedName(stateFromStores);
+  const formattedName = onPress(analyticsLocations[9]).getFormattedName(stateFromStores);
   const effect = React.useEffect(() => {
     const user = userId(analyticsLocations[10]).getUser(userId);
   }, items1);
@@ -27,8 +35,7 @@ function UserListItem(userId) {
   const callback = React.useCallback(() => {
     onPress(userId);
   }, items2);
-  const analyticsLocations = importDefault(dependencyMap[11])().analyticsLocations;
-  const dependencyMap = analyticsLocations;
+  analyticsLocations = onPress(analyticsLocations[11])().analyticsLocations;
   const items3 = [analyticsLocations, userId];
   const callback1 = React.useCallback(() => {
     onPress(analyticsLocations[12])({ userId, sourceAnalyticsLocations: analyticsLocations });
@@ -36,20 +43,20 @@ function UserListItem(userId) {
   obj = {};
   let tmp7 = null != stateFromStores;
   if (tmp7) {
-    obj = { user: stateFromStores, guildId: undefined, size: arg1(dependencyMap[14]).AvatarSizes.REFRESH_MEDIUM_32 };
-    tmp7 = callback(arg1(dependencyMap[14]).Avatar, obj);
+    obj = { user: stateFromStores, guildId: undefined, size: userId(analyticsLocations[14]).AvatarSizes.REFRESH_MEDIUM_32 };
+    tmp7 = callback(userId(analyticsLocations[14]).Avatar, obj);
   }
   obj.icon = tmp7;
-  const intl = arg1(dependencyMap[15]).intl;
+  const intl = userId(analyticsLocations[15]).intl;
   obj1 = { count: secureFramesUserVerifiedKeys.length };
-  obj.subLabel = intl.formatToPlainString(arg1(dependencyMap[15]).t./MBjYF, obj1);
+  obj.subLabel = intl.formatToPlainString(userId(analyticsLocations[15]).t["/MBjYF"], obj1);
   obj.label = formattedName;
   obj.start = start;
   obj.end = end;
   obj.onPress = callback;
   obj.onLongPress = callback1;
-  obj.trailing = callback(arg1(dependencyMap[16]).TableRowArrow, {});
-  return callback(arg1(dependencyMap[13]).TableRow, obj);
+  obj.trailing = callback(userId(analyticsLocations[16]).TableRowArrow, {});
+  return callback(userId(analyticsLocations[13]).TableRow, obj);
 }
 function renderItem(item) {
   item = item.item;
@@ -66,75 +73,66 @@ function keyExtractor(type) {
   return type.type === constants.USER ? type.userId : undefined;
 }
 function SettingsSecureFramesFooter() {
-  let obj = arg1(dependencyMap[17]);
-  const token = obj.useToken(importDefault(dependencyMap[6]).modules.mobile.TABLE_ROW_HEIGHT);
-  let obj1 = arg1(dependencyMap[18]);
-  const navigation = obj1.useNavigation();
-  const arg1 = navigation;
+  let obj = navigation(secureFramesVerifiedUserIds[17]);
+  const token = obj.useToken(callback(secureFramesVerifiedUserIds[6]).modules.mobile.TABLE_ROW_HEIGHT);
+  let obj1 = navigation(secureFramesVerifiedUserIds[18]);
+  navigation = obj1.useNavigation();
   const items = [navigation];
-  const callback = React.useCallback((userId) => {
-    navigation.navigate(constants.SECURE_FRAMES_VERIFIED_DEVICES, { userId });
+  callback = React.useCallback((userId) => {
+    navigation.navigate(outer1_6.SECURE_FRAMES_VERIFIED_DEVICES, { userId });
   }, items);
-  const importDefault = callback;
-  let obj2 = arg1(dependencyMap[19]);
-  const secureFramesVerifiedUserIds = obj2.useSecureFramesVerifiedUserIds();
-  const dependencyMap = secureFramesVerifiedUserIds;
+  let obj2 = navigation(secureFramesVerifiedUserIds[19]);
+  secureFramesVerifiedUserIds = obj2.useSecureFramesVerifiedUserIds();
   const items1 = [callback, secureFramesVerifiedUserIds];
   let tmp6 = null;
   if (0 !== secureFramesVerifiedUserIds.length) {
     obj = { style: tmp.list };
-    obj = { cachedAt: "explicit_content_friend_dm", edpbxy: "enum" };
-    const intl = arg1(dependencyMap[15]).intl;
-    obj.children = intl.string(arg1(dependencyMap[15]).t.5b3FNI);
-    const items2 = [callback(arg1(dependencyMap[20]).Text, obj), , ];
+    obj = { variant: "text-sm/semibold", color: "text-default" };
+    const intl = navigation(secureFramesVerifiedUserIds[15]).intl;
+    obj.children = intl.string(navigation(secureFramesVerifiedUserIds[15]).t["5b3FNI"]);
+    const items2 = [callback(navigation(secureFramesVerifiedUserIds[20]).Text, obj), , ];
     obj1 = {};
     obj2 = { minHeight: secureFramesVerifiedUserIds.length * token };
     obj1.style = obj2;
     const obj3 = { keyExtractor, getItemType, renderItem, data: tmp5 };
-    obj1.children = callback(arg1(dependencyMap[21]).FlashList, obj3);
+    obj1.children = callback(navigation(secureFramesVerifiedUserIds[21]).FlashList, obj3);
     items2[1] = callback(View, obj1);
-    const obj4 = { cachedAt: true, edpbxy: true };
-    const intl2 = arg1(dependencyMap[15]).intl;
-    const obj5 = { helpArticle: arg1(dependencyMap[23]).getSecureFramesVerifiedDevicesHelpdeskArticle() };
-    obj4.children = intl2.format(arg1(dependencyMap[15]).t.7w9ymD, obj5);
-    items2[2] = callback(arg1(dependencyMap[22]).TextWithIOSLinkWorkaround, obj4);
+    const obj4 = { variant: "text-xs/normal", color: "text-default" };
+    const intl2 = navigation(secureFramesVerifiedUserIds[15]).intl;
+    const obj5 = { helpArticle: navigation(secureFramesVerifiedUserIds[23]).getSecureFramesVerifiedDevicesHelpdeskArticle() };
+    obj4.children = intl2.format(navigation(secureFramesVerifiedUserIds[15]).t["7w9ymD"], obj5);
+    items2[2] = callback(navigation(secureFramesVerifiedUserIds[22]).TextWithIOSLinkWorkaround, obj4);
     obj.children = items2;
     tmp6 = callback2(View, obj);
-    const obj11 = arg1(dependencyMap[23]);
+    const obj11 = navigation(secureFramesVerifiedUserIds[23]);
   }
   return tmp6;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const UserSettingsSections = arg1(dependencyMap[3]).UserSettingsSections;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { flexGrow: 1, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_16 };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.header = { marginTop: importDefault(dependencyMap[6]).space.PX_24, gap: importDefault(dependencyMap[6]).space.PX_8 };
-const obj1 = { marginTop: importDefault(dependencyMap[6]).space.PX_24, gap: importDefault(dependencyMap[6]).space.PX_8 };
-obj.list = { flexGrow: 1, gap: importDefault(dependencyMap[6]).space.PX_8 };
-let closure_9 = obj.createStyles(obj);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexGrow: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.header = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.list = { flexGrow: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_10 = { USER: "USER" };
-const obj2 = { flexGrow: 1, gap: importDefault(dependencyMap[6]).space.PX_8 };
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesScreen.tsx");
+let obj2 = { flexGrow: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsSecureFramesScreen.tsx");
 
 export default function SettingsSecureFramesScreen() {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   obj = { style: tmp.header };
-  obj = {};
-  const intl = arg1(dependencyMap[15]).intl;
-  obj.children = intl.string(arg1(dependencyMap[15]).t.9Q/PQv);
-  const items = [callback(arg1(dependencyMap[20]).Text, obj), ];
-  const obj1 = {};
-  const intl2 = arg1(dependencyMap[15]).intl;
-  const obj2 = { helpArticle: arg1(dependencyMap[23]).getSecureFramesHelpdeskArticle() };
-  obj1.children = intl2.format(arg1(dependencyMap[15]).t.8IwQfG, obj2);
-  items[1] = callback(arg1(dependencyMap[22]).TextWithIOSLinkWorkaround, obj1);
+  obj = { variant: "heading-md/semibold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["9Q/PQv"]);
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  const obj1 = { variant: "text-sm/normal", color: "text-default" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  const obj2 = { helpArticle: require(8897) /* _createForOfIteratorHelperLoose */.getSecureFramesHelpdeskArticle() };
+  obj1.children = intl2.format(require(1212) /* getSystemLocale */.t["8IwQfG"], obj2);
+  items[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj1);
   obj.children = items;
   const items1 = [callback2(View, obj), callback(SettingsSecureFramesFooter, {})];
   obj.children = items1;

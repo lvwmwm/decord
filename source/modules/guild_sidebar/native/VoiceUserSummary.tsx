@@ -1,62 +1,66 @@
-// Module ID: 14864
-// Function ID: 111993
+// Module ID: 14980
+// Function ID: 114161
 // Name: VOICE_USER_SUMMARY_HEIGHT
-// Dependencies: []
+// Dependencies: [31, 27, 33, 1273, 4130, 8830, 8829, 4654, 4658, 2]
 
-// Module 14864 (VOICE_USER_SUMMARY_HEIGHT)
-const View = arg1(dependencyMap[1]).View;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_6 = Object.freeze({ direction: arg1(dependencyMap[3]).CutoutDirection.RIGHT, inset: -2 });
-const obj = { direction: arg1(dependencyMap[3]).CutoutDirection.RIGHT, inset: -2 };
-let closure_7 = arg1(dependencyMap[4]).createStyles({ container: { -9223372036854775808: 24, 0: 24, 0: null, -9223372036854775808: "119c03ecfe749b5d0f4e60c612bb714f" }, containerNoPadding: {}, iconContainer: { height: 40 }, redesignChannelIcon: { marginRight: 4 }, overflow: {}, transparentBorder: { borderColor: "transparent" } });
-const obj3 = arg1(dependencyMap[4]);
+// Module 14980 (VOICE_USER_SUMMARY_HEIGHT)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import importAllResult from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = Object.freeze({ direction: require("Button").CutoutDirection.RIGHT, inset: -2 });
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40 }, containerNoPadding: { flexDirection: "row", alignItems: "center", height: 40 }, iconContainer: { height: 40 }, redesignChannelIcon: { marginRight: 4 }, overflow: { height: 20, paddingHorizontal: 4, paddingVertical: 0, display: "flex", flexDirection: "row", alignItems: "center" }, transparentBorder: { borderColor: "transparent" } });
+let obj = { direction: require("Button").CutoutDirection.RIGHT, inset: -2 };
 const memoResult = importAllResult.memo((guildId) => {
   let max;
   let noPadding;
   let renderIcon;
   let stageIcon;
   let users;
-  const arg1 = guildId.guildId;
+  guildId = guildId.guildId;
   ({ users, max, renderIcon, noPadding, stageIcon } = guildId);
   const tmp = callback2();
   let transparentBorder = null;
-  if (importDefault(dependencyMap[5])()) {
+  if (importDefault(8830)()) {
     transparentBorder = tmp.transparentBorder;
   }
-  let obj = arg1(dependencyMap[6]);
+  let obj = guildId(8829);
   obj = {};
   const items = [noPadding ? tmp.containerNoPadding : tmp.container, obj.useClientThemesOverride()];
   obj.style = items;
   if (renderIcon) {
     if (stageIcon) {
-      let VoiceNormalIcon = arg1(dependencyMap[7]).StageIcon;
+      let VoiceNormalIcon = guildId(4654).StageIcon;
     }
-    obj = { "Bool(false)": false, "Bool(false)": false, style: tmp.redesignChannelIcon };
+    obj = { size: "sm", color: "channel-icon", style: tmp.redesignChannelIcon };
     const items1 = [tmp5(VoiceNormalIcon, obj), ];
     const obj1 = { offsetAmount: -6, style: tmp.iconContainer };
     const items2 = [tmp.overflow, transparentBorder];
     obj1.overflowStyle = items2;
-    obj1.overflowComponent = arg1(dependencyMap[3]).OverflowTextSmall;
+    obj1.overflowComponent = guildId(1273).OverflowTextSmall;
     obj1.items = users;
     obj1.max = max;
     obj1.renderItem = function renderItem(user) {
-      const obj = { user, guildId, size: guildId(closure_2[3]).AvatarSizes.XSMALL_20 };
+      const obj = { user, guildId, size: guildId(outer1_2[3]).AvatarSizes.XSMALL_20 };
       let tmp2;
       if (!arg1) {
-        tmp2 = closure_6;
+        tmp2 = outer1_6;
       }
       obj.cutout = tmp2;
-      return closure_4(guildId(closure_2[3]).CutoutableAvatarImage, obj);
+      return outer1_4(guildId(outer1_2[3]).CutoutableAvatarImage, obj);
     };
-    items1[1] = callback(arg1(dependencyMap[3]).SummarizedIconRow, obj1);
+    items1[1] = callback(guildId(1273).SummarizedIconRow, obj1);
     obj.children = items1;
     return tmp3(tmp4, obj);
   }
-  VoiceNormalIcon = arg1(dependencyMap[8]).VoiceNormalIcon;
+  VoiceNormalIcon = guildId(4658).VoiceNormalIcon;
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_sidebar/native/VoiceUserSummary.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/guild_sidebar/native/VoiceUserSummary.tsx");
 
 export default memoResult;
 export const VOICE_USER_SUMMARY_HEIGHT = 40;

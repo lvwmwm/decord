@@ -1,12 +1,13 @@
-// Module ID: 3847
-// Function ID: 32048
+// Module ID: 3849
+// Function ID: 32053
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 2]
 
-// Module 3847 (context)
-const obj = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": null, "Bool(true)": null, reducedMotion: {}, forcedColors: {} };
-const context = importAll(dependencyMap[0]).createContext(obj);
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityPreferencesContext/AccessibilityPreferencesContext.tsx");
+// Module 3849 (context)
+import importAllResult from "result";
+
+const obj = { reducedMotion: { enabled: false, rawValue: "no-preference" }, prefersCrossfades: false, forcedColors: { enabled: false, rawValue: "none" }, alwaysShowLinkDecorations: false, highContrastModeEnabled: false, keyboardModeEnabled: true, switchIconsEnabled: false };
+const context = require("result").createContext(obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityPreferencesContext/AccessibilityPreferencesContext.tsx");
 
 export const AccessibilityPreferencesContext = context;

@@ -1,37 +1,37 @@
-// Module ID: 14757
-// Function ID: 111253
-// Dependencies: []
+// Module ID: 14873
+// Function ID: 113421
+// Dependencies: [31, 33, 4130, 689, 3834, 14802, 3991, 4542, 7589, 2]
 
-// Module 14757
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+// Module 14873
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let obj = {};
-obj = { alignSelf: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015006194054165923, justifyContent: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001088538528827314, flexShrink: -26815615859885486000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, flexGrow: -87326474928580580000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[3]).colors.BORDER_SUBTLE, marginTop: importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_MARGIN, marginBottom: importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_MARGIN };
+obj = { height: 1, marginTop: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_MARGIN, marginBottom: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_MARGIN, marginLeft: 12, marginRight: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
 obj.separator = obj;
-let closure_5 = arg1(dependencyMap[2]).createStyles(obj);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_6 = { code: "function GuildsBarSeparatorTsx1(){const{withSpring,guildItemSize,panelX,HOME_DRAWER_FLING_PHYSICS}=this.__closure;return{maxWidth:withSpring(Math.max(guildItemSize,panelX.get()+guildItemSize),HOME_DRAWER_FLING_PHYSICS)};}" };
-const obj2 = arg1(dependencyMap[2]);
 const memoResult = importAllResult.memo(function GuildsBarSeparator() {
-  let obj = arg1(dependencyMap[4]);
-  const token = obj.useToken(importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const arg1 = token;
-  const panelX = importAllResult.useContext(arg1(dependencyMap[5]).HomeDrawerStateContext).panelX;
-  const importDefault = panelX;
+  let obj = token(3834);
+  token = obj.useToken(panelX(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  panelX = importAllResult.useContext(token(14802).HomeDrawerStateContext).panelX;
   const tmp = callback();
   const fn = function l() {
     const obj = {};
     const bound = Math.max(token, panelX.get() + token);
-    obj.maxWidth = token(closure_2[7]).withSpring(bound, token(closure_2[5]).HOME_DRAWER_FLING_PHYSICS);
+    obj.maxWidth = token(outer1_2[7]).withSpring(bound, token(outer1_2[5]).HOME_DRAWER_FLING_PHYSICS);
     return obj;
   };
-  obj = { withSpring: arg1(dependencyMap[7]).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: arg1(dependencyMap[5]).HOME_DRAWER_FLING_PHYSICS };
+  obj = { withSpring: token(4542).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: token(14802).HOME_DRAWER_FLING_PHYSICS };
   fn.__closure = obj;
   fn.__workletHash = 1425261651828;
   fn.__initData = closure_6;
-  const animatedStyle = arg1(dependencyMap[6]).useAnimatedStyle(fn);
+  const animatedStyle = token(3991).useAnimatedStyle(fn);
   const style = [tmp.separator, animatedStyle];
-  return jsx(importDefault(dependencyMap[8]), { style });
+  return jsx(panelX(7589), { style });
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarSeparator.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guilds_bar/native/GuildsBarSeparator.tsx");
 
 export default memoResult;

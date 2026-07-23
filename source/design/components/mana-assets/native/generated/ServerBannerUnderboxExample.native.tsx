@@ -1,13 +1,13 @@
-// Module ID: 6465
-// Function ID: 50630
+// Module ID: 6470
+// Function ID: 50659
 // Name: ServerBannerUnderboxExample
-// Dependencies: []
+// Dependencies: [33, 5085, 6471, 2]
 // Exports: ServerBannerUnderboxExample
 
-// Module 6465 (ServerBannerUnderboxExample)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerUnderboxExample.native.tsx");
+// Module 6470 (ServerBannerUnderboxExample)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerUnderboxExample.native.tsx");
 
 export const ServerBannerUnderboxExample = function ServerBannerUnderboxExample(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ServerBannerUnderboxExample = function ServerBannerUnderboxExample(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6471) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ServerBannerUnderboxExample = function ServerBannerUnderboxExample(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

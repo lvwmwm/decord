@@ -1,10 +1,14 @@
-// Module ID: 5764
-// Function ID: 49390
+// Module ID: 5769
+// Function ID: 49417
 // Name: _getCustomJoinSound
-// Dependencies: []
+// Dependencies: [1316, 4579, 566, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 5764 (_getCustomJoinSound)
+// Module 5769 (_getCustomJoinSound)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID as closure_3 } from "MAX_LENGTH_SOUND_NAME";
+
+const require = arg1;
 function _getCustomJoinSound(arg0, arg1) {
   let joinSound;
   if (null != arg1[arg0]) {
@@ -28,17 +32,15 @@ function _getCustomJoinSound(arg0, arg1) {
     obj["type"] = GLOBAL;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[1]).CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID;
-const obj = { GLOBAL: 0, [0]: "GLOBAL", GUILD: 1, [1]: "GUILD" };
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/soundboard/useCustomJoinSound.tsx");
+let obj = { GLOBAL: 0, [0]: "GLOBAL", GUILD: 1, [1]: "GUILD" };
+const result = require("initialize").fileFinishedImporting("modules/soundboard/useCustomJoinSound.tsx");
 
 export const CustomSoundType = obj;
 export const useCustomJoinSound = function useCustomJoinSound(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    let guilds = settings.settings.guilds;
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
+    let guilds = outer1_2.settings.guilds;
     guilds = undefined;
     if (null != guilds) {
       guilds = guilds.guilds;
@@ -46,7 +48,7 @@ export const useCustomJoinSound = function useCustomJoinSound(arg0) {
     if (null == guilds) {
       guilds = {};
     }
-    return callback(arg0, guilds);
+    return outer1_5(closure_0, guilds);
   });
 };
 export const getCustomJoinSound = function getCustomJoinSound(arg0) {

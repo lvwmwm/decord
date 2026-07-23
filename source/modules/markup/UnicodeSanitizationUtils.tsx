@@ -1,16 +1,16 @@
-// Module ID: 4565
-// Function ID: 40029
+// Module ID: 4569
+// Function ID: 40061
 // Name: makeMatcher
-// Dependencies: []
+// Dependencies: [1443, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 4565 (makeMatcher)
+// Module 4569 (makeMatcher)
 function makeMatcher(join) {
   const regExp = new RegExp(join.join("|"), "gu");
   return regExp;
 }
 function safelyPartiallyDecodeURIComponent(hash) {
-  const result = importDefault(dependencyMap[0]).safeDecodeURIComponent(hash);
+  const result = importDefault(1443).safeDecodeURIComponent(hash);
   if (null == result) {
     return hash;
   } else {
@@ -35,8 +35,8 @@ function safelyPartiallyDecodeURIComponent(hash) {
           }
           if (codePointAtResult1 >= 0) {
             if (codePointAtResult1 < 128) {
-              let tmp16 = closure_5;
-              let tmp7 = 1 !== closure_5[codePointAtResult1];
+              let tmp16 = table;
+              let tmp7 = 1 !== table[codePointAtResult1];
               let tmp17 = fromCodePointResult;
               if (tmp7) {
                 tmp17 = encodeURIComponentResult;
@@ -180,41 +180,41 @@ function safelyPartiallyDecodeURIComponent(hash) {
     }
     return str4;
   }
-  const obj = importDefault(dependencyMap[0]);
+  const obj = importDefault(1443);
 }
-const items = [];
-const regExp = new RegExp("" + /(?:[\xAD\u0600-\u0605\u061C\u06DD\u070F\u0890\u0891\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD80D[\uDC30-\uDC3F]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F])|\u2028|\u2029|[\0-\t\x0B-\x1F\x7F-\x9F]|[\xA0\u1680\u2000-\u200A\u202F\u205F\u3000]/g.source + "|" + items.join("|"), "gu");
+const items = ["\u034F", "\u17B4", "\u17B5", "\u1160", "\u3164", "\uFFA0"];
+let regExp = new RegExp("" + /(?:[\xAD\u0600-\u0605\u061C\u06DD\u070F\u0890\u0891\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD80D[\uDC30-\uDC3F]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F])|\u2028|\u2029|[\0-\t\x0B-\x1F\x7F-\x9F]|[\xA0\u1680\u2000-\u200A\u202F\u205F\u3000]/g.source + "|" + items.join("|"), "gu");
 const regExp1 = new RegExp("" + /(?:[\xAD\u0600-\u0605\u061C\u06DD\u070F\u0890\u0891\u08E2\u180E\u200B-\u200F\u202A-\u202E\u2060-\u2064\u2066-\u206F\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD80D[\uDC30-\uDC3F]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F])|\u2028|\u2029|[\0-\x08\x0B-\x1F\x7F-\x9F]|[\xA0\u1680\u2000-\u200A\u202F\u205F\u3000]/g.source + "|" + items.join("|"), "gu");
-let obj = { character: "h", matcher: makeMatcher([]) };
+let obj = { character: "h", matcher: makeMatcher(["H", "\u04BB", "\u0570", "\u13C2", "\u210E", "\u{1D421}", "\u{1D489}", "\u{1D4BD}", "\u{1D4F1}", "\u{1D525}", "\u{1D559}", "\u{1D58D}", "\u{1D5C1}", "\u{1D5F5}", "\u{1D629}", "\u{1D65D}", "\u{1D691}", "\uFF48"]) };
 const items1 = [obj, , , , , ];
-obj = { character: "t", matcher: makeMatcher([]) };
+obj = { character: "t", matcher: makeMatcher(["T", "\u{1D42D}", "\u{1D461}", "\u{1D495}", "\u{1D4C9}", "\u{1D4FD}", "\u{1D531}", "\u{1D565}", "\u{1D599}", "\u{1D5CD}", "\u{1D601}", "\u{1D635}", "\u{1D669}", "\u{1D69D}"]) };
 items1[1] = obj;
-obj = { character: "p", matcher: makeMatcher([]) };
+obj = { character: "p", matcher: makeMatcher(["P", "\u03C1", "\u03F1", "\u0440", "\u2374", "\u2CA3", "\u{1D429}", "\u{1D45D}", "\u{1D491}", "\u{1D4C5}", "\u{1D4F9}", "\u{1D52D}", "\u{1D561}", "\u{1D595}", "\u{1D5C9}", "\u{1D5FD}", "\u{1D631}", "\u{1D665}", "\u{1D699}", "\u{1D6D2}", "\u{1D6E0}", "\u{1D70C}", "\u{1D71A}", "\u{1D746}", "\u{1D754}", "\u{1D780}", "\u{1D78E}", "\u{1D7BA}", "\u{1D7C8}", "\uFF50", "\u048F"]) };
 items1[2] = obj;
-items1[3] = { character: "s", matcher: makeMatcher([]) };
-const obj1 = { character: "s", matcher: makeMatcher([]) };
-items1[4] = { character: ":", matcher: makeMatcher([]) };
-const obj2 = { character: ":", matcher: makeMatcher([]) };
-items1[5] = { character: "/", matcher: makeMatcher([-119189248, 1360387409, 1531030306, 1358954811, 1313190790, 1325400752, 553648530, -587201909, 721420909, 1358955207, -1404975966, 1358954979, -1135506081, -1432596012]) };
-let closure_5 = [];
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/markup/UnicodeSanitizationUtils.tsx");
+items1[3] = { character: "s", matcher: makeMatcher(["S", "\u01BD", "\u0455", "\uA731", "\uABAA", "\u{10448}", "\u{118C1}", "\u{1D42C}", "\u{1D460}", "\u{1D494}", "\u{1D4C8}", "\u{1D4FC}", "\u{1D530}", "\u{1D564}", "\u{1D598}", "\u{1D5CC}", "\u{1D600}", "\u{1D634}", "\u{1D668}", "\u{1D69C}", "\uFF53"]) };
+const obj1 = { character: "s", matcher: makeMatcher(["S", "\u01BD", "\u0455", "\uA731", "\uABAA", "\u{10448}", "\u{118C1}", "\u{1D42C}", "\u{1D460}", "\u{1D494}", "\u{1D4C8}", "\u{1D4FC}", "\u{1D530}", "\u{1D564}", "\u{1D598}", "\u{1D5CC}", "\u{1D600}", "\u{1D634}", "\u{1D668}", "\u{1D69C}", "\uFF53"]) };
+items1[4] = { character: ":", matcher: makeMatcher(["\u02D0", "\u02F8", "\u0589", "\u05C3", "\u0703", "\u0704", "\u0903", "\u0A83", "\u16EC", "\u1803", "\u1809", "\u205A", "\u2236", "\uA4FD", "\uA789", "\uFE30", "\uFF1A", ";", "\u037E"]) };
+const obj2 = { character: ":", matcher: makeMatcher(["\u02D0", "\u02F8", "\u0589", "\u05C3", "\u0703", "\u0704", "\u0903", "\u0A83", "\u16EC", "\u1803", "\u1809", "\u205A", "\u2236", "\uA4FD", "\uA789", "\uFE30", "\uFF1A", ";", "\u037E"]) };
+items1[5] = { character: "/", matcher: makeMatcher(["\u1735", "\u2041", "\u2044", "\u2215", "\u2571", "\u27CB", "\u29F8", "\u2CC6", "\u2F03", "\u3033", "\u30CE", "\u31D3", "\u4E3F", "\u{1D23A}"]) };
+let closure_5 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0];
+const obj3 = { character: "/", matcher: makeMatcher(["\u1735", "\u2041", "\u2044", "\u2215", "\u2571", "\u27CB", "\u29F8", "\u2CC6", "\u2F03", "\u3033", "\u30CE", "\u31D3", "\u4E3F", "\u{1D23A}"]) };
+let result = require("set").fileFinishedImporting("modules/markup/UnicodeSanitizationUtils.tsx");
 
 export const BLANK_CHARACTERS_TO_SANITIZE_REGEX = regExp;
 export const BLANK_CHARACTERS_TO_SANITIZE_REGEX_EXCLUDING_TABS = regExp1;
-export const sanitizeWhitespace = function sanitizeWhitespace(closure_0) {
-  return closure_0.replace(regExp, "");
+export const sanitizeWhitespace = function sanitizeWhitespace(outer1_0) {
+  return outer1_0.replace(regExp, "");
 };
 export const sanitizeWhitespaceExcludingTabs = function sanitizeWhitespaceExcludingTabs(str) {
   return str.replace(regExp1, "");
 };
 export const UNICODE_CONFUSABLES_FOR_URL_DETECTION = items1;
 export const sanitizeUnicodeConfusables = function sanitizeUnicodeConfusables(sanitizeWhitespaceResult) {
-  const importDefault = sanitizeWhitespaceResult;
+  let closure_0 = sanitizeWhitespaceResult;
   const item = items1.forEach((matcher) => {
 
   });
-  return importDefault;
+  return closure_0;
 };
 export const safelyMakeUrlHumanReadable = function safelyMakeUrlHumanReadable(origin) {
   let startsWithResult = "null" === origin.origin;
@@ -243,7 +243,7 @@ export const safelyMakeUrlHumanReadable = function safelyMakeUrlHumanReadable(or
     }
     const _HermesInternal = HermesInternal;
     protocol = "" + origin.protocol + str8 + text1 + origin.host;
-    const str6 = origin.href;
+    str6 = origin.href;
   }
   const sum = protocol + safelyPartiallyDecodeURIComponent(origin.pathname);
   const sum1 = sum + safelyPartiallyDecodeURIComponent(origin.search);

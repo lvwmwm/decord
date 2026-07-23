@@ -1,43 +1,50 @@
-// Module ID: 9550
-// Function ID: 74447
+// Module ID: 9557
+// Function ID: 74488
 // Name: getMentionTextWithUser
-// Dependencies: []
+// Dependencies: [31, 27, 1352, 1907, 3767, 1849, 653, 9558, 4567, 33, 4130, 689, 4320, 4974, 3969, 7191, 2]
 // Exports: getAutocompleteResultText, getItemLayout, getItemSeparator, getPrefix, getQuery
 
-// Module 9550 (getMentionTextWithUser)
+// Module 9557 (getMentionTextWithUser)
+import "result";
+import { isGuildSelectableChannelType as closure_3 } from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT";
+import MENTION_SENTINEL from "MENTION_SENTINEL";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getMentionTextWithUser(messageChannel, user) {
   if (obj.hasSameRoleAsUsername(messageChannel, user)) {
     const _HermesInternal2 = HermesInternal;
     let combined = "" + tmp + user.tag;
   } else {
     const _HermesInternal = HermesInternal;
-    combined = "" + tmp + importDefault(dependencyMap[14]).getUserTag(user);
-    const obj2 = importDefault(dependencyMap[14]);
+    combined = "" + tmp + importDefault(3969).getUserTag(user);
+    const obj2 = importDefault(3969);
   }
   return combined;
 }
 function AutocompleteFormDivider() {
-  const tmp = callback2();
-  return jsx(importDefault(dependencyMap[15]), { style: callback2().itemDivider });
+  const tmp = _createForOfIteratorHelperLoose();
+  return jsx(importDefault(7191), { style: _createForOfIteratorHelperLoose().itemDivider });
 }
-importAll(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[2]).isGuildSelectableChannelType;
-let closure_4 = importDefault(dependencyMap[3]);
-let closure_5 = importDefault(dependencyMap[4]);
-let closure_6 = importDefault(dependencyMap[5]);
-arg1(dependencyMap[6]).AutoCompleteResultTypes;
-({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_8, AUTOCOMPLETE_ROW_HEIGHT: closure_9 } = arg1(dependencyMap[7]));
-const tmp3 = arg1(dependencyMap[7]);
-({ CHANNEL_SENTINEL: closure_10, EMOJI_SENTINEL: closure_11, MENTION_SENTINEL: closure_12 } = arg1(dependencyMap[8]));
-const jsx = arg1(dependencyMap[9]).jsx;
-const hairlineWidth = arg1(dependencyMap[1]).StyleSheet.hairlineWidth;
-let obj = arg1(dependencyMap[10]);
-obj = {};
-obj = { marginLeft: 16, backgroundColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
-obj.itemDivider = obj;
-let closure_15 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/autocompleter/native/AutocompleteUtils.tsx");
+require("ME").AutoCompleteResultTypes;
+({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: closure_8, AUTOCOMPLETE_ROW_HEIGHT: closure_9 } = AUTOCOMPLETE_ROW_HEIGHT);
+({ CHANNEL_SENTINEL: closure_10, EMOJI_SENTINEL: closure_11, MENTION_SENTINEL: closure_12 } = MENTION_SENTINEL);
+const hairlineWidth = require("get ActivityIndicator").StyleSheet.hairlineWidth;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginLeft: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.itemDivider = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_callSuper").fileFinishedImporting("modules/autocompleter/native/AutocompleteUtils.tsx");
 
 export const getItemLayout = function getItemLayout(arg0, index) {
   let type;
@@ -67,9 +74,9 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
   } else if (AutoCompleteResultTypes.CHANNEL === type) {
     channel = type.channel;
     if (channel.isThread()) {
-      const obj3 = channel(dependencyMap[12]);
+      const obj3 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
       const _HermesInternal5 = HermesInternal;
-      return "#\"" + obj3.escapeChannelName(channel(dependencyMap[12]).computeChannelName(type.channel, closure_6, closure_5)) + "\"";
+      return "#\"" + obj3.escapeChannelName(require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5)) + "\"";
     } else {
       channel2 = type.channel;
       const guildId = channel2.getGuildId();
@@ -81,15 +88,15 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
             name = tmp18.name;
           }
           if (null == name) {
-            name = channel(dependencyMap[12]).computeChannelName(type.channel, closure_6, closure_5);
-            const obj2 = channel(dependencyMap[12]);
+            name = require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5);
+            const obj2 = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
           }
           const _HermesInternal4 = HermesInternal;
           return "" + closure_10 + name;
         }
       }
       const _HermesInternal3 = HermesInternal;
-      return "" + closure_10 + channel(dependencyMap[12]).computeChannelName(type.channel, closure_6, closure_5);
+      return "" + closure_10 + require(4320) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(type.channel, closure_6, closure_5);
     }
   } else if (AutoCompleteResultTypes.EMOJI === type) {
     const _HermesInternal2 = HermesInternal;

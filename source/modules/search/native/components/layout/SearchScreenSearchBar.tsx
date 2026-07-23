@@ -1,14 +1,17 @@
-// Module ID: 15204
-// Function ID: 114705
-// Dependencies: []
+// Module ID: 15320
+// Function ID: 116875
+// Dependencies: [31, 27, 33, 4130, 15321, 15323, 15330, 2]
 
-// Module 15204
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ header: { <string:4138288979>: null, <string:1685970655>: 16, <string:2493557563>: 8, <string:1407571810>: "heading-sm/normal" }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { "Bool(true)": "<string:2491613185>", "Bool(true)": "<string:2941583362>" }, headerControlsRight: { accessibilityRole: "Array", rejectWithError: "isArray" }, suggestionsAnchor: { height: 0 }, suggestions: {}, suggestionsWithBackButton: { left: -28 } });
-const obj2 = arg1(dependencyMap[3]);
+// Module 15320
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });
 const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) => {
   let backButton;
   let onSuggestionsLayoutMesure;
@@ -29,7 +32,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
   const items1 = [backButton, , ];
   obj = { style: tmp.headerSearch };
   obj = { ref, searchContext, setSuggestionsDismissed };
-  const items2 = [callback(importDefault(dependencyMap[4]), obj), ];
+  const items2 = [callback(importDefault(15321), obj), ];
   const obj1 = { style: tmp.suggestionsAnchor };
   const obj2 = { searchContext, onLayoutMeasure: onSuggestionsLayoutMesure, dismissed: suggestionsDismissed };
   const items3 = [tmp.suggestions, ];
@@ -39,18 +42,18 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
   }
   items3[1] = suggestionsWithBackButton;
   obj2.containerStyle = items3;
-  obj1.children = callback(importDefault(dependencyMap[5]), obj2);
+  obj1.children = callback(importDefault(15323), obj2);
   items2[1] = callback(View, obj1);
   obj.children = items2;
   items1[1] = closure_4(View, obj);
   const tmp2 = closure_4;
   const tmp3 = View;
   const tmp4 = closure_4;
-  const tmp7 = importDefault(dependencyMap[5]);
-  items1[2] = callback(View, { style: tmp.headerControlsRight, children: callback(importDefault(dependencyMap[6]), { searchContext }) });
+  const tmp7 = importDefault(15323);
+  items1[2] = callback(View, { style: tmp.headerControlsRight, children: callback(importDefault(15330), { searchContext }) });
   obj.children = items1;
   return tmp2(tmp3, obj);
 }));
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/search/native/components/layout/SearchScreenSearchBar.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/layout/SearchScreenSearchBar.tsx");
 
 export default memoResult;

@@ -1,9 +1,11 @@
 // Module ID: 797
-// Function ID: 8982
+// Function ID: 8983
 // Name: unwrapScopeFromWeakRef
-// Dependencies: []
+// Dependencies: [798, 799]
 
 // Module 797 (unwrapScopeFromWeakRef)
+const require = arg1;
+const dependencyMap = arg6;
 function unwrapScopeFromWeakRef(_sentryIsolationScope) {
   if (_sentryIsolationScope) {
     if ("object" === typeof obj) {
@@ -22,11 +24,11 @@ arg5.getCapturedScopesOnSpan = function getCapturedScopesOnSpan(_sentryScope) {
 };
 arg5.setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
   if (arg0) {
-    let addNonEnumerableProperty = arg1;
-    let result1 = arg6;
+    let addNonEnumerableProperty = require;
+    let result1 = dependencyMap;
     let num = 1;
     let result = arg2;
-    const _WeakRef = arg1(arg6[0]).GLOBAL_OBJ.WeakRef;
+    const _WeakRef = require(798).GLOBAL_OBJ.WeakRef;
     let tmp5 = _WeakRef;
     if ("function" === typeof _WeakRef) {
       const prototype = tmp5.prototype;
@@ -37,6 +39,6 @@ arg5.setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2
       num = addNonEnumerableProperty(arg0, "_sentryScope", arg1);
     }
     tmp5 = result;
-    const obj = arg1(arg6[1]);
+    obj = require(799) /* addNonEnumerableProperty */;
   }
 };

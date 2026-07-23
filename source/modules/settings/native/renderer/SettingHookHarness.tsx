@@ -1,26 +1,26 @@
-// Module ID: 13442
-// Function ID: 102081
+// Module ID: 13556
+// Function ID: 104237
 // Name: map
-// Dependencies: []
+// Dependencies: [57, 31, 13553, 10096, 13557, 2]
 // Exports: getCachedSettingSearchTerms, getCachedSettingTitle
 
-// Module 13442 (map)
-let closure_2 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const NodeType = arg1(dependencyMap[3]).NodeType;
+// Module 13556 (map)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import zustandStore from "zustandStore";
+import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
+
+const require = arg1;
 let closure_6 = [];
 const map = new Map();
 const map1 = new Map();
 const memoResult = importAllResult.memo(function SettingHookHarness() {
   let obj2;
   let tmp3;
-  const field = field.getField("blocklist");
+  field = field.getField("blocklist");
   const items = [];
-  const arg1 = items;
   const items1 = [];
-  const dependencyMap = items1;
-  const entries = Object.entries(arg1(dependencyMap[4]).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(items1[4]).SETTING_RENDERER_CONFIG);
   let num = 0;
   if (0 < entries.length) {
     while (true) {
@@ -68,19 +68,18 @@ const memoResult = importAllResult.memo(function SettingHookHarness() {
     }
   }
   const effect = importAllResult.useEffect(() => {
-    if (items.length > 0) {
+    if (set.length > 0) {
       const _Set = Set;
-      const set = new Set(store.getField("blocklist"));
-      const items = set;
-      const item = items.forEach((arg0) => set.add(arg0));
+      set = new Set(outer1_4.getField("blocklist"));
+      const item = set.forEach((arg0) => set.add(arg0));
       const item1 = items1.forEach((arg0) => set.delete(arg0));
       const obj = { blocklist: set };
-      store.setState(obj);
+      outer1_4.setState(obj);
     }
   });
   return null;
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/settings/native/renderer/SettingHookHarness.tsx");
+let result = require("zustandStore").fileFinishedImporting("modules/settings/native/renderer/SettingHookHarness.tsx");
 
 export default memoResult;
 export const getCachedSettingTitle = function getCachedSettingTitle(value) {

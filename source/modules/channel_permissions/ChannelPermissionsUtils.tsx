@@ -1,10 +1,23 @@
-// Module ID: 8407
-// Function ID: 66920
+// Module ID: 8413
+// Function ID: 66957
 // Name: isAdmin
-// Dependencies: []
+// Dependencies: [1352, 1391, 1911, 1917, 1849, 7485, 653, 1912, 1212, 483, 21, 3969, 1327, 3763, 8414, 1881, 4312, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, getExistingMembersRows, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8407 (isAdmin)
+// Module 8413 (isAdmin)
+import { isGuildVocalChannelType } from "_callSuper";
+import { isGuildOwner } from "isGuildOwner";
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { RowType } from "RowType";
+import ME from "ME";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_6;
+let closure_7;
 function isAdmin(colorString) {
   return callback(colorString, constants.ADMINISTRATOR);
 }
@@ -38,16 +51,16 @@ function sortRoles(guildId, id) {
   if (num2 !== num) {
     let diff = num2 - num;
   } else {
-    diff = require(dependencyMap[7]).compareGuildRoles(guildId, id);
-    const obj = require(dependencyMap[7]);
+    diff = require(1912) /* _createForOfIteratorHelperLoose */.compareGuildRoles(guildId, id);
+    const obj = require(1912) /* _createForOfIteratorHelperLoose */;
   }
   return diff;
 }
 function getNoRolesRow(intl) {
   let stringResult = intl;
   if (intl === undefined) {
-    intl = require(dependencyMap[8]).intl;
-    stringResult = intl.string(require(dependencyMap[8]).t.gnsna/);
+    intl = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1212) /* getSystemLocale */.t["gnsna/"]);
   }
   const obj = { rowType: RowType.EMPTY_STATE, colorString: closure_13, name: stringResult, disabled: true, id: "EMPTY_STATE" };
   const items = [obj];
@@ -70,23 +83,23 @@ function canAddPermissionInChannel(arg0, arg1, arg2, arg3) {
     }
     let tmp4 = null == tmp2;
     if (!tmp4) {
-      tmp4 = !importAll(dependencyMap[9]).has(tmp2.allow, arg2);
-      const obj = importAll(dependencyMap[9]);
+      tmp4 = !importAll(483).has(tmp2.allow, arg2);
+      const obj = importAll(483);
     }
     return tmp4;
   }
 }
 function getExistingRoles(guild, sortedRoles, channel, accessPermissions, arg4) {
-  const require = channel;
-  const importDefault = accessPermissions;
-  const importAll = arg4;
+  let closure_0 = channel;
+  let closure_1 = accessPermissions;
+  let closure_2 = arg4;
   return sortedRoles.filter((id) => {
-    let tmp = callback2(id);
+    let tmp = outer1_14(id);
     if (!tmp) {
-      const tmp6 = callback3(arg2, id.id, arg3, arg4);
+      const tmp6 = outer1_18(closure_0, id.id, closure_1, closure_2);
       let tmp7 = !tmp6;
       if (!tmp6) {
-        tmp7 = !callback(id);
+        tmp7 = !outer1_7(id);
       }
       tmp = tmp7;
     }
@@ -94,36 +107,36 @@ function getExistingRoles(guild, sortedRoles, channel, accessPermissions, arg4) 
   });
 }
 function getAllExistingRolesWithPermission(arg0, arr, channel, MODERATE_STAGE_CHANNEL_PERMISSIONS, arg4) {
-  const require = channel;
-  const importDefault = MODERATE_STAGE_CHANNEL_PERMISSIONS;
-  const importAll = arg4;
+  let closure_0 = channel;
+  let closure_1 = MODERATE_STAGE_CHANNEL_PERMISSIONS;
+  let closure_2 = arg4;
   return arr.filter((id) => {
-    let hasItem = callback2(id);
+    let hasItem = outer1_14(id);
     if (!hasItem) {
-      const tmp6 = callback3(arg2, id.id, arg3, arg4);
+      const tmp6 = outer1_18(permissionOverwrites, id.id, closure_1, callback);
       let tmp7 = !tmp6;
       if (!tmp6) {
-        tmp7 = !callback(id);
+        tmp7 = !outer1_7(id);
       }
       hasItem = tmp7;
     }
     if (!hasItem) {
-      const obj = arg4(closure_3[9]);
+      const obj = callback(outer1_3[9]);
       let allow;
-      if (null != arg2.permissionOverwrites[id.id]) {
+      if (null != permissionOverwrites.permissionOverwrites[id.id]) {
         allow = tmp12.allow;
       }
-      hasItem = obj.has(arg4(closure_3[9]).combine(id.permissions, allow), arg3);
-      const obj2 = arg4(closure_3[9]);
+      hasItem = obj.has(callback(outer1_3[9]).combine(id.permissions, allow), closure_1);
+      const obj2 = callback(outer1_3[9]);
     }
     return hasItem;
   });
 }
 function getDisplayName(id, id2) {
-  let nick = nick.getNick(id2.id, id.id);
+  nick = nick.getNick(id2.id, id.id);
   if (null == nick) {
-    nick = importDefault(dependencyMap[11]).getName(id);
-    const obj = importDefault(dependencyMap[11]);
+    nick = importDefault(3969).getName(id);
+    const obj = importDefault(3969);
   }
   return nick;
 }
@@ -132,7 +145,7 @@ function isDefaultMember(id, id2) {
 }
 function getMemberRowData(id, id2) {
   const tmp2 = isGuildOwner(id2, id) ? RowType.OWNER : RowType.MEMBER;
-  const obj = { rowType: tmp2, name: getDisplayName(id, id2), username: importDefault(dependencyMap[11]).getUserTag(id), id: id.id, avatarURL: id.getAvatarURL(id2.id, 24), bot: id.bot, verifiedBot: id.isVerifiedBot(), disabled: isDefaultMember(id, id2), key: "" + tmp2 + ":" + id.id };
+  const obj = { rowType: tmp2, name: getDisplayName(id, id2), username: importDefault(3969).getUserTag(id), id: id.id, avatarURL: id.getAvatarURL(id2.id, 24), bot: id.bot, verifiedBot: id.isVerifiedBot(), disabled: isDefaultMember(id, id2), key: "" + tmp2 + ":" + id.id };
   return obj;
 }
 function sortMembers(rowType, rowType2) {
@@ -147,17 +160,17 @@ function sortMembers(rowType, rowType2) {
   return diff;
 }
 function getExistingMembers(memberIds, channel, guild, accessPermissions, arg4) {
-  const require = channel;
-  const importDefault = guild;
-  const importAll = accessPermissions;
+  const _require = channel;
+  let closure_1 = guild;
+  let closure_2 = accessPermissions;
   const dependencyMap = arg4;
   const mapped = memberIds.map(authStore.getUser);
-  const found = mapped.filter(require(dependencyMap[12]).isNotNullish);
+  const found = mapped.filter(_require(1327).isNotNullish);
   return found.filter((id) => {
-    const tmp = callback(arg1, id.id, arg3, arg4);
+    const tmp = outer1_18(closure_0, id.id, closure_2, closure_3);
     let tmp2 = !tmp;
     if (tmp) {
-      tmp2 = callback2(id, arg2);
+      tmp2 = outer1_22(id, closure_1);
     }
     return tmp2;
   });
@@ -165,55 +178,46 @@ function getExistingMembers(memberIds, channel, guild, accessPermissions, arg4) 
 function flipEveryonePermission(guild_id, accessPermissions, result) {
   let everyoneOverwrite = guild_id.permissionOverwrites[guild_id.guild_id];
   if (null == everyoneOverwrite) {
-    let obj = importAll(dependencyMap[13]);
+    let obj = importAll(3763);
     everyoneOverwrite = obj.makeEveryoneOverwrite(guild_id.guild_id);
   }
   obj = {};
   const merged = Object.assign(everyoneOverwrite);
-  obj.deny = importAll(dependencyMap[9]).remove(obj.deny, accessPermissions);
-  const obj3 = importAll(dependencyMap[9]);
-  obj.allow = importAll(dependencyMap[9]).remove(obj.allow, accessPermissions);
+  obj.deny = importAll(483).remove(obj.deny, accessPermissions);
+  const obj3 = importAll(483);
+  obj.allow = importAll(483).remove(obj.allow, accessPermissions);
   if (!result) {
-    obj.deny = importAll(dependencyMap[9]).add(obj.deny, accessPermissions);
-    const obj5 = importAll(dependencyMap[9]);
+    obj.deny = importAll(483).add(obj.deny, accessPermissions);
+    const obj5 = importAll(483);
   }
   return obj;
 }
-const isGuildVocalChannelType = require(dependencyMap[0]).isGuildVocalChannelType;
-const isGuildOwner = require(dependencyMap[1]).isGuildOwner;
-const _module = require(dependencyMap[2]);
-({ hasPermission: closure_6, isEveryoneRole: closure_7 } = _module);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-const RowType = require(dependencyMap[5]).RowType;
-const _module1 = require(dependencyMap[6]);
-({ Permissions: closure_11, ChannelTypes: closure_12, DEFAULT_ROLE_COLOR_HEX: closure_13 } = _module1);
-const _module2 = require(dependencyMap[17]);
-const result = _module2.fileFinishedImporting("modules/channel_permissions/ChannelPermissionsUtils.tsx");
+({ hasPermission: closure_6, isEveryoneRole: closure_7 } = GuildRoleRecordTypeTag);
+({ Permissions: closure_11, ChannelTypes: closure_12, DEFAULT_ROLE_COLOR_HEX: closure_13 } = ME);
+const result = require("GuildRoleRecordTypeTag").fileFinishedImporting("modules/channel_permissions/ChannelPermissionsUtils.tsx");
 
 export { getRoleRowData };
 export { sortRoles };
 export { getNoRolesRow };
 export const isEveryoneRoleId = function isEveryoneRoleId(guildId, roleId) {
-  return importDefault(dependencyMap[10]).castGuildIdAsEveryoneGuildRoleId(guildId) === roleId;
+  return importDefault(21).castGuildIdAsEveryoneGuildRoleId(guildId) === roleId;
 };
 export const getRolesRows = function getRolesRows(guild, stateFromStores, channel, permission, filterByQuery) {
   let fn = filterByQuery;
-  const require = channel;
-  const importDefault = permission;
+  let closure_0 = channel;
+  let closure_1 = permission;
   if (filterByQuery === undefined) {
     fn = function a() {
       return true;
     };
   }
-  const importAll = fn;
   const found = stateFromStores.filter((id) => {
-    let tmp = !callback2(id);
+    let tmp = !outer1_14(id);
     if (tmp) {
-      tmp = callback4(arg2, id.id, arg3);
+      tmp = outer1_18(closure_0, id.id, closure_1);
     }
     if (tmp) {
-      tmp = !callback(id);
+      tmp = !outer1_7(id);
     }
     if (tmp) {
       tmp = fn(id.name);
@@ -221,25 +225,24 @@ export const getRolesRows = function getRolesRows(guild, stateFromStores, channe
     return tmp;
   });
   const sorted = found.sort(sortRoles);
-  return sorted.map((arg0) => callback3(arg0));
+  return sorted.map((arg0) => outer1_15(arg0));
 };
 export const getRolesRowsWithPermissionDisabled = function getRolesRowsWithPermissionDisabled(guild, stateFromStores, channel, permission, filterByQuery) {
   let fn = filterByQuery;
-  const require = channel;
-  const importDefault = permission;
+  let closure_0 = channel;
+  let closure_1 = permission;
   if (filterByQuery === undefined) {
     fn = function u() {
       return true;
     };
   }
-  const importAll = fn;
   const found = stateFromStores.filter((id) => {
-    let tmp = !callback3(id);
+    let tmp = !outer1_14(id);
     if (tmp) {
-      tmp = callback5(arg2, id.id, arg3);
+      tmp = outer1_18(closure_0, id.id, closure_1);
     }
     if (tmp) {
-      tmp = !callback2(id);
+      tmp = !outer1_7(id);
     }
     if (tmp) {
       tmp = fn(id.name);
@@ -247,49 +250,48 @@ export const getRolesRowsWithPermissionDisabled = function getRolesRowsWithPermi
     return tmp;
   });
   const sorted = found.sort(sortRoles);
-  return sorted.map((arg0) => callback4(arg0, callback(arg0, arg3)));
+  return sorted.map((arg0) => outer1_15(arg0, outer1_6(arg0, closure_1)));
 };
 export { getExistingRoles };
 export { getAllExistingRolesWithPermission };
 export const getExistingRolesRows = function getExistingRolesRows(guild, sortedGuildRoles, channel, accessPermissions) {
   const sorted = getExistingRoles(0, sortedGuildRoles, channel, accessPermissions, arg4).sort(sortRoles);
-  let mapped = sorted.map((arg0) => callback(arg0));
+  let mapped = sorted.map((arg0) => outer1_15(arg0));
   if (0 === mapped.length) {
-    const intl = require(dependencyMap[8]).intl;
-    mapped = getNoRolesRow(intl.string(require(dependencyMap[8]).t.nZfHsf));
+    const intl = require(1212) /* getSystemLocale */.intl;
+    mapped = getNoRolesRow(intl.string(require(1212) /* getSystemLocale */.t.nZfHsf));
   }
   return mapped;
 };
 export const getExistingRolesRowWithPermissionDisabled = function getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, MODERATE_STAGE_CHANNEL_PERMISSIONS) {
-  const require = MODERATE_STAGE_CHANNEL_PERMISSIONS;
+  const _require = MODERATE_STAGE_CHANNEL_PERMISSIONS;
   const sorted = getAllExistingRolesWithPermission(0, sortedGuildRoles, channel, MODERATE_STAGE_CHANNEL_PERMISSIONS, arg4).sort(sortRoles);
-  let mapped = sorted.map((arg0) => callback2(arg0, callback(arg0, arg3)));
+  let mapped = sorted.map((arg0) => outer1_15(arg0, outer1_6(arg0, closure_0)));
   if (0 === mapped.length) {
-    const intl = require(dependencyMap[8]).intl;
-    mapped = getNoRolesRow(intl.string(require(dependencyMap[8]).t.nZfHsf));
+    const intl = _require(1212).intl;
+    mapped = getNoRolesRow(intl.string(_require(1212).t.nZfHsf));
   }
   return mapped;
 };
 export const getMembersRows = function getMembersRows(stateFromStoresArray, channel, guild, permission, filterByQuery) {
   let fn = filterByQuery;
-  const require = channel;
-  const importDefault = guild;
-  const importAll = permission;
+  const _require = channel;
+  let closure_1 = guild;
+  let closure_2 = permission;
   if (filterByQuery === undefined) {
     fn = function a() {
       return true;
     };
   }
-  const dependencyMap = fn;
   const mapped = stateFromStoresArray.map(authStore.getUser);
-  const found = mapped.filter(require(dependencyMap[12]).isNotNullish);
+  const found = mapped.filter(_require(1327).isNotNullish);
   const found1 = found.filter((id) => {
-    let tmp = !callback(arg2, id);
+    let tmp = !outer1_5(closure_1, id);
     if (tmp) {
-      tmp = callback2(arg1, id.id, arg3);
+      tmp = outer1_18(closure_0, id.id, closure_2);
     }
     if (tmp) {
-      let tmp8 = fn(callback3(id, arg2));
+      let tmp8 = fn(outer1_21(id, closure_1));
       if (!tmp8) {
         tmp8 = fn(id.username);
       }
@@ -300,55 +302,55 @@ export const getMembersRows = function getMembersRows(stateFromStoresArray, chan
     }
     return tmp;
   });
-  const mapped1 = found1.map((arg0) => callback4(arg0, arg2));
+  const mapped1 = found1.map((arg0) => outer1_23(arg0, closure_1));
   return mapped1.sort(sortMembers);
 };
 export { getExistingMembers };
 export const getExistingMembersRows = function getExistingMembersRows(memberIds, channel, guild, accessPermissions) {
-  const require = guild;
-  const mapped = getExistingMembers(memberIds, channel, guild, accessPermissions, arg4).map((arg0) => callback(arg0, arg2));
+  let closure_0 = guild;
+  const mapped = getExistingMembers(memberIds, channel, guild, accessPermissions, arg4).map((arg0) => outer1_23(arg0, closure_0));
   return mapped.sort(sortMembers);
 };
 export const getRowTypeLabel = function getRowTypeLabel(rowType) {
   if (RowType.ROLE === rowType) {
-    const intl6 = require(dependencyMap[8]).intl;
-    return intl6.string(require(dependencyMap[8]).t.ZxoFOG);
+    const intl6 = require(1212) /* getSystemLocale */.intl;
+    return intl6.string(require(1212) /* getSystemLocale */.t.ZxoFOG);
   } else if (RowType.OWNER === rowType) {
-    const intl5 = require(dependencyMap[8]).intl;
-    return intl5.string(require(dependencyMap[8]).t.NWhYJg);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    return intl5.string(require(1212) /* getSystemLocale */.t.NWhYJg);
   } else if (RowType.ADMINISTRATOR === rowType) {
-    const intl4 = require(dependencyMap[8]).intl;
-    return intl4.string(require(dependencyMap[8]).t.dwlcc+);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(require(1212) /* getSystemLocale */.t["dwlcc+"]);
   } else if (RowType.MEMBER === rowType) {
     let stringResult = null;
     if (arg1) {
-      const intl3 = require(dependencyMap[8]).intl;
-      stringResult = intl3.string(require(dependencyMap[8]).t.UAJxZi);
+      const intl3 = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl3.string(require(1212) /* getSystemLocale */.t.UAJxZi);
     }
     return stringResult;
   } else if (RowType.USER === rowType) {
-    const intl2 = require(dependencyMap[8]).intl;
-    return intl2.string(require(dependencyMap[8]).t.KD6OJJ);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.KD6OJJ);
   } else if (RowType.GUILD === rowType) {
-    const intl = require(dependencyMap[8]).intl;
-    return intl.string(require(dependencyMap[8]).t.5qyruI);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["5qyruI"]);
   } else if (RowType.EMPTY_STATE === rowType) {
     return null;
   }
 };
 export const getRemoveTooltipHint = function getRemoveTooltipHint(arg0) {
   if (RowType.ROLE === arg0) {
-    const intl4 = require(dependencyMap[8]).intl;
-    return intl4.string(require(dependencyMap[8]).t.Gzc/a8);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(require(1212) /* getSystemLocale */.t["Gzc/a8"]);
   } else if (RowType.OWNER === arg0) {
-    const intl3 = require(dependencyMap[8]).intl;
-    return intl3.string(require(dependencyMap[8]).t.icuNBM);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.icuNBM);
   } else if (RowType.ADMINISTRATOR === arg0) {
-    const intl2 = require(dependencyMap[8]).intl;
-    return intl2.string(require(dependencyMap[8]).t.eTmN5a);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.eTmN5a);
   } else if (RowType.MEMBER === arg0) {
-    const intl = require(dependencyMap[8]).intl;
-    return intl.string(require(dependencyMap[8]).t.Gzc/a8);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["Gzc/a8"]);
   } else {
     const EMPTY_STATE = RowType.EMPTY_STATE;
     return null;
@@ -357,7 +359,7 @@ export const getRemoveTooltipHint = function getRemoveTooltipHint(arg0) {
 export { flipEveryonePermission };
 export const toggleChannelEveryonePermission = function toggleChannelEveryonePermission(guild_id, accessPermissions, result) {
   const tmp = flipEveryonePermission(guild_id, accessPermissions, result);
-  require(dependencyMap[14]).updatePermission(guild_id, tmp.id, tmp.allow, tmp.deny);
+  require(8414) /* _updatePermission */.updatePermission(guild_id, tmp.id, tmp.allow, tmp.deny);
 };
 export const grantUserChannelAccess = function grantUserChannelAccess(id, accessPermissions) {
   let allow;
@@ -365,14 +367,14 @@ export const grantUserChannelAccess = function grantUserChannelAccess(id, access
   const currentUser = authStore.getCurrentUser();
   if (null != currentUser) {
     if (null == id.permissionOverwrites[currentUser.id]) {
-      let obj = { id: currentUser.id, type: require(dependencyMap[15]).PermissionOverwriteType.MEMBER, allow: importAll(dependencyMap[9]).add(importAll(dependencyMap[13]).NONE, accessPermissions), deny: importAll(dependencyMap[13]).NONE };
-      const obj4 = importAll(dependencyMap[9]);
+      let obj = { id: currentUser.id, type: require(1881) /* PermissionOverwriteType */.PermissionOverwriteType.MEMBER, allow: importAll(483).add(importAll(3763).NONE, accessPermissions), deny: importAll(3763).NONE };
+      const obj4 = importAll(483);
       const items = [obj];
-      return require(dependencyMap[14]).savePermissionUpdates(id.id, items, true);
+      return require(8414) /* _updatePermission */.savePermissionUpdates(id.id, items, true);
     } else {
       ({ allow, deny } = tmp2);
-      obj = importAll(dependencyMap[9]);
-      const obj2 = require(dependencyMap[14]);
+      obj = importAll(483);
+      const obj2 = require(8414) /* _updatePermission */;
       return obj2.updatePermission(id, tmp2.id, obj.add(allow, accessPermissions), deny);
     }
   }
@@ -391,8 +393,8 @@ export const isPrivateGuildChannel = function isPrivateGuildChannel(channel) {
     }
     let hasItem = null != tmp;
     if (hasItem) {
-      hasItem = importAll(dependencyMap[9]).has(tmp.deny, channel.accessPermissions);
-      const obj = importAll(dependencyMap[9]);
+      hasItem = importAll(483).has(tmp.deny, channel.accessPermissions);
+      const obj = importAll(483);
     }
     return hasItem;
   }
@@ -403,19 +405,19 @@ export const isPrivateTextChannel = function isPrivateTextChannel(type) {
     hasItem = type.type === constants2.GUILD_TEXT;
   }
   if (hasItem) {
-    hasItem = importAll(dependencyMap[9]).has(tmp.deny, constants.VIEW_CHANNEL);
-    const obj = importAll(dependencyMap[9]);
+    hasItem = importAll(483).has(tmp.deny, constants.VIEW_CHANNEL);
+    const obj = importAll(483);
   }
   return hasItem;
 };
-export const canCreatePrivateChannel = function canCreatePrivateChannel(closure_10, canResult, canResult1) {
+export const canCreatePrivateChannel = function canCreatePrivateChannel(first1, canResult, canResult1) {
   let tmp = canResult;
-  if (closure_10 !== constants2.GUILD_TEXT) {
+  if (first1 !== constants2.GUILD_TEXT) {
     tmp = canResult;
-    if (closure_10 !== constants2.GUILD_ANNOUNCEMENT) {
-      let tmp4 = !isGuildVocalChannelType(closure_10);
+    if (first1 !== constants2.GUILD_ANNOUNCEMENT) {
+      let tmp4 = !isGuildVocalChannelType(first1);
       if (tmp4) {
-        tmp4 = closure_10 !== constants2.GUILD_CATEGORY;
+        tmp4 = first1 !== constants2.GUILD_CATEGORY;
       }
       if (!tmp4) {
         let tmp6 = canResult;
@@ -433,23 +435,22 @@ export const getPrivateChannelHintText = function getPrivateChannelHintText(firs
   if (constants2.GUILD_TEXT !== first1) {
     if (constants2.GUILD_ANNOUNCEMENT !== first1) {
       if (constants2.GUILD_VOICE === first1) {
-        const intl2 = require(dependencyMap[8]).intl;
-        return intl2.format(require(dependencyMap[8]).t.iZAMty, {});
+        const intl2 = require(1212) /* getSystemLocale */.intl;
+        return intl2.format(require(1212) /* getSystemLocale */.t.iZAMty, {});
       } else if (constants2.GUILD_CATEGORY === first1) {
-        const intl = require(dependencyMap[8]).intl;
-        return intl.format(require(dependencyMap[8]).t.PhnARV, {});
+        const intl = require(1212) /* getSystemLocale */.intl;
+        return intl.format(require(1212) /* getSystemLocale */.t.PhnARV, {});
       } else {
         return null;
       }
     }
   }
-  const intl3 = require(dependencyMap[8]).intl;
-  return intl3.format(require(dependencyMap[8]).t.ZDtA0T, {});
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  return intl3.format(require(1212) /* getSystemLocale */.t.ZDtA0T, {});
 };
 export const extractPermissionOverwrites = function extractPermissionOverwrites(arg0, arg1) {
-  const require = arg1;
+  let closure_0 = arg1;
   const items = [];
-  const importDefault = items;
   const values = Object.values(arg0);
   const item = values.forEach((row) => {
     row = row.row;
@@ -458,12 +459,12 @@ export const extractPermissionOverwrites = function extractPermissionOverwrites(
       tmp = "" !== row.id;
     }
     if (tmp) {
-      if (row.rowType === constants.ROLE) {
-        items.push(arg1(closure_3[16]).permissionOverwriteForRole(row.id, arg1));
-        const obj = arg1(closure_3[16]);
-      } else if (row.rowType === constants.MEMBER) {
-        items.push(arg1(closure_3[16]).permissionOverwriteForUser(row.id, arg1));
-        const obj2 = arg1(closure_3[16]);
+      if (row.rowType === outer1_10.ROLE) {
+        items.push(callback(outer1_3[16]).permissionOverwriteForRole(row.id, callback));
+        const obj = callback(outer1_3[16]);
+      } else if (row.rowType === outer1_10.MEMBER) {
+        items.push(callback(outer1_3[16]).permissionOverwriteForUser(row.id, callback));
+        const obj2 = callback(outer1_3[16]);
       }
     }
   });

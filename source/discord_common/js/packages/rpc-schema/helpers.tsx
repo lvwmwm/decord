@@ -1,16 +1,16 @@
-// Module ID: 13291
-// Function ID: 100943
+// Module ID: 13405
+// Function ID: 103099
 // Name: RPCCommands
-// Dependencies: []
+// Dependencies: [482, 2]
 // Exports: joiEnum, joiReqObj
 
-// Module 13291 (RPCCommands)
+// Module 13405 (RPCCommands)
+import sum from "sum";
+
 let RPCCommands;
 let RPCEvents;
-const _module = require(dependencyMap[0]);
-({ RPCCommands, RPCEvents } = _module);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("../discord_common/js/packages/rpc-schema/helpers.tsx");
+({ RPCCommands, RPCEvents } = sum);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rpc-schema/helpers.tsx");
 
 export const RPCCommand = RPCCommands;
 export const RPCEvent = RPCEvents;

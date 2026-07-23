@@ -1,35 +1,37 @@
-// Module ID: 14293
-// Function ID: 107973
+// Module ID: 14407
+// Function ID: 110126
 // Name: useBugReporterExperimentSettingPredicate
-// Dependencies: [33554484, 1929379840, 13631, 9880, 2, 1960053, 167168, 2582272, 3661824]
+// Dependencies: [10320, 4337, 10321, 1934, 10335, 10095, 1212, 14408, 2]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 14293 (useBugReporterExperimentSettingPredicate)
+// Module 14407 (useBugReporterExperimentSettingPredicate)
+import zustandStore from "zustandStore";
+import createToggle from "createToggle";
+
+const require = arg1;
 function useBugReporterExperimentSettingPredicate() {
-  return importDefault(dependencyMap[4]).useConfig({ location: "native-settings" }).hasBugReporterAccess;
+  return importDefault(10335).useConfig({ location: "native-settings" }).hasBugReporterAccess;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[5]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[6]).intl;
-    return intl.string(arg1(dependencyMap[6]).t./tZh0A);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["/tZh0A"]);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[7]).BugIcon,
+  IconComponent: require("BugIcon").BugIcon,
   onPress: function handleBugReporterSettingPress() {
     if (!store.getField("isReportOpen")) {
       const obj = { isReportOpen: true };
       store.setState(obj);
-      importDefault(dependencyMap[1]).pushLazy(arg1(dependencyMap[3])(dependencyMap[2], dependencyMap.paths));
-      const obj2 = importDefault(dependencyMap[1]);
+      importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(10321, dependencyMap.paths));
+      const obj2 = importDefault(4337);
     }
   },
   withArrow: true,
   usePredicate: useBugReporterExperimentSettingPredicate
 };
-const pressable = obj.createPressable(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/defs/native/BugReporterSetting.tsx");
+createToggle = createToggle.createPressable(createToggle);
+const result = require("handleClose").fileFinishedImporting("modules/user_settings/defs/native/BugReporterSetting.tsx");
 
-export default pressable;
+export default createToggle;
 export { useBugReporterExperimentSettingPredicate };

@@ -1,24 +1,26 @@
-// Module ID: 13772
-// Function ID: 104095
+// Module ID: 13886
+// Function ID: 106251
 // Name: PremiumScreen
-// Dependencies: []
+// Dependencies: [31, 33, 6653, 1456, 7375, 6650, 2]
 // Exports: default
 
-// Module 13772 (PremiumScreen)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/premium/native/PremiumSettingScreen.tsx");
+// Module 13886 (PremiumScreen)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("useSettingNavigationRoute").fileFinishedImporting("modules/user_settings/premium/native/PremiumSettingScreen.tsx");
 
 export default function PremiumScreen() {
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(6653) /* useSettingNavigationRoute */;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
-  const stackNavigation = arg1(dependencyMap[3]).useStackNavigation();
+  const stackNavigation = require(1456) /* useNavigation */.useStackNavigation();
   let close;
   if (!stackNavigation.canGoBack()) {
-    close = importDefault(dependencyMap[4]).close;
+    close = importDefault(7375).close;
   }
   obj = { onClose: close };
-  const obj2 = arg1(dependencyMap[3]);
+  const obj2 = require(1456) /* useNavigation */;
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(importDefault(dependencyMap[5]), obj);
+  return jsx(importDefault(6650), { onClose: close });
 };

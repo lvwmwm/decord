@@ -1,35 +1,39 @@
-// Module ID: 10965
-// Function ID: 85288
+// Module ID: 10975
+// Function ID: 85337
 // Name: useGuildIncidentsActionSheetStore
-// Dependencies: []
+// Dependencies: [7703, 621, 682, 2]
 // Exports: resetGuildIncidentsActionSheetStore, setInitialTime, setPauseDms, setPauseInvites, setTime
 
-// Module 10965 (useGuildIncidentsActionSheetStore)
-const DEFAULT_LOCKDOWN_DURATION = require(dependencyMap[0]).DEFAULT_LOCKDOWN_DURATION;
-const _module = require(dependencyMap[1]);
-const obj = _module.create(() => ({ time: DEFAULT_LOCKDOWN_DURATION }));
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/guild_antiraid/native/GuildIncidentsActionSheetStore.tsx");
+// Module 10975 (useGuildIncidentsActionSheetStore)
+import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY";
+import keys from "keys";
+
+let obj = keys.create(() => {
+  const obj = { time: DEFAULT_LOCKDOWN_DURATION, pauseInvites: true, pauseDms: true, hasTimeChanges: false };
+  return obj;
+});
+const result = require("batchUpdates").fileFinishedImporting("modules/guild_antiraid/native/GuildIncidentsActionSheetStore.tsx");
 
 export const useGuildIncidentsActionSheetStore = obj;
 export const setTime = function setTime(arg0) {
-  const require = arg0;
-  require(dependencyMap[2]).batchUpdates(() => state.setState({ time: arg0, hasTimeChanges: true }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_3.setState({ time: closure_0, hasTimeChanges: true }));
 };
 export const setInitialTime = function setInitialTime(arg0) {
-  const require = arg0;
-  require(dependencyMap[2]).batchUpdates(() => state.setState({ time: arg0, hasTimeChanges: false }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_3.setState({ time: closure_0, hasTimeChanges: false }));
 };
 export const setPauseInvites = function setPauseInvites(arg0) {
-  const require = arg0;
-  require(dependencyMap[2]).batchUpdates(() => state.setState({ pauseInvites: arg0 }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_3.setState({ pauseInvites: closure_0 }));
 };
 export const setPauseDms = function setPauseDms(arg0) {
-  const require = arg0;
-  require(dependencyMap[2]).batchUpdates(() => state.setState({ pauseDms: arg0 }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_3.setState({ pauseDms: closure_0 }));
 };
 export const resetGuildIncidentsActionSheetStore = function resetGuildIncidentsActionSheetStore() {
-  require(dependencyMap[2]).batchUpdates(() => {
-    state.setState({ time: closure_2 });
+  require(682) /* batchUpdates */.batchUpdates(() => {
+    const obj = { time: outer1_2, pauseInvites: true, pauseDms: true, hasTimeChanges: false };
+    outer1_3.setState(obj);
   });
 };

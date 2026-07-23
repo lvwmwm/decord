@@ -1,40 +1,41 @@
-// Module ID: 11371
-// Function ID: 88411
+// Module ID: 11381
+// Function ID: 88461
 // Name: ResourceChannelButtons
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 1457, 11382, 11383, 4543, 1273, 10005, 11385, 2]
 // Exports: default
 
-// Module 11371 (ResourceChannelButtons)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.wrapper = obj;
-obj.buttonWrapper = { flex: 1 };
-obj.spacer = { width: 8 };
-const tmp2 = arg1(dependencyMap[3]);
-obj.iconColor = { color: importDefault(dependencyMap[5]).colors.WHITE };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[5]).colors.WHITE };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_onboarding_home/native/ResourceChannelButtons.tsx");
+// Module 11381 (ResourceChannelButtons)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", padding: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.wrapper = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.buttonWrapper = { flex: 1 };
+_createForOfIteratorHelperLoose.spacer = { width: 8 };
+_createForOfIteratorHelperLoose.iconColor = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_onboarding_home/native/ResourceChannelButtons.tsx");
 
 export default function ResourceChannelButtons(channel) {
   channel = channel.channel;
-  const arg1 = channel;
-  let obj = arg1(dependencyMap[6]);
+  let obj = channel(first[6]);
   const navigation = obj.useNavigation();
-  const importDefault = navigation;
-  const tmp2 = callback3();
-  let obj1 = arg1(dependencyMap[7]);
+  const tmp2 = _createForOfIteratorHelperLoose();
+  let obj1 = channel(first[7]);
   const tmp3 = callback(obj1.usePreviousAndNextResourceChannel(channel.guild_id, channel.id), 2);
-  const first = tmp3[0];
-  const dependencyMap = first;
-  const callback = tmp5;
+  first = tmp3[0];
+  callback = tmp5;
   const items = [channel.guild_id, navigation];
-  const React = React.useCallback((channelId) => {
+  React = React.useCallback((channelId) => {
     navigation.goBack();
     const homeResourceChannel = channel(first[8]).selectHomeResourceChannel(channel.guild_id, channelId);
   }, items);
@@ -44,13 +45,13 @@ export default function ResourceChannelButtons(channel) {
     if (tmp9) {
       obj = { style: tmp2.buttonWrapper };
       obj1 = { variant: "secondary", text: first.title };
-      const obj2 = { color: tmp2.iconColor.color, source: importDefault(dependencyMap[11]) };
-      obj1.icon = callback2(arg1(dependencyMap[10]).Icon, obj2);
+      const obj2 = { color: tmp2.iconColor.color, source: navigation(first[11]) };
+      obj1.icon = callback2(channel(first[10]).Icon, obj2);
       obj1.onPress = function onPress() {
         return callback(first.channelId);
       };
       obj1.grow = true;
-      obj.children = callback2(arg1(dependencyMap[9]).Button, obj1);
+      obj.children = callback2(channel(first[9]).Button, obj1);
       tmp9 = callback2(View, obj);
     }
     const items1 = [tmp9, , ];
@@ -64,14 +65,14 @@ export default function ResourceChannelButtons(channel) {
     if (tmp18) {
       const obj4 = { style: tmp2.buttonWrapper };
       const obj5 = { text: tmp5.title };
-      const obj6 = { color: tmp2.iconColor.color, source: importDefault(dependencyMap[12]) };
-      obj5.icon = callback2(arg1(dependencyMap[10]).Icon, obj6);
+      const obj6 = { color: tmp2.iconColor.color, source: navigation(first[12]) };
+      obj5.icon = callback2(channel(first[10]).Icon, obj6);
       obj5.iconPosition = "end";
       obj5.onPress = function onPress() {
         return callback(tmp5.channelId);
       };
       obj5.grow = true;
-      obj4.children = callback2(arg1(dependencyMap[9]).Button, obj5);
+      obj4.children = callback2(channel(first[9]).Button, obj5);
       tmp18 = callback2(View, obj4);
     }
     items1[2] = tmp18;

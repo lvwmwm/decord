@@ -1,62 +1,56 @@
-// Module ID: 16263
-// Function ID: 125621
+// Module ID: 16380
+// Function ID: 127795
 // Name: _createCreatorMonetizationEnableRequest
-// Dependencies: []
+// Dependencies: [5, 653, 4156, 507, 686, 5465, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 16263 (_createCreatorMonetizationEnableRequest)
+// Module 16380 (_createCreatorMonetizationEnableRequest)
+import fetchApplication from "fetchApplication";
+import { Endpoints } from "ME";
+import { ApplicationTypes } from "ApplicationTypes";
+
+const require = arg1;
 function _createCreatorMonetizationEnableRequest() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _createCreatorMonetizationEnableRequest = obj;
   return obj(...arguments);
 }
 function _getCreatorMonetizationEligibility() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getCreatorMonetizationEligibility = obj;
   return obj(...arguments);
 }
 function _acceptCreatorMonetizationTerms() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _acceptCreatorMonetizationTerms = obj;
   return obj(...arguments);
 }
 function _acceptCreatorMonetizationTermsV() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _acceptCreatorMonetizationTermsV = obj;
   return obj(...arguments);
 }
 function _getCreatorMonetizationOnboardingMarketing() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getCreatorMonetizationOnboardingMarketing = obj;
   return obj(...arguments);
 }
 function _ownershipTransferOnboard() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _ownershipTransferOnboard = obj;
   return obj(...arguments);
 }
 function _requestRemoveMonetization() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _requestRemoveMonetization = obj;
   return obj(...arguments);
 }
 function _removeMonetization() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _removeMonetization = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const ApplicationTypes = arg1(dependencyMap[2]).ApplicationTypes;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityActionCreators.tsx");
+const result = require("ApplicationTypes").fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityActionCreators.tsx");
 
 export const createCreatorMonetizationEnableRequest = function createCreatorMonetizationEnableRequest(arg0) {
   return _createCreatorMonetizationEnableRequest(...arguments);
@@ -77,13 +71,13 @@ export const ownershipTransferOnboard = function ownershipTransferOnboard() {
   return _ownershipTransferOnboard(...arguments);
 };
 export const acceptNewTerms = function acceptNewTerms(arg0) {
-  const HTTP = arg1(dependencyMap[3]).HTTP;
-  const obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS(arg0), rejectWithError: arg1(dependencyMap[3]).rejectWithMigratedError() };
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  const obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS(arg0), rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
   return HTTP.post(obj);
 };
 export const acceptNewTermsDemonetized = function acceptNewTermsDemonetized(arg0) {
-  const HTTP = arg1(dependencyMap[3]).HTTP;
-  const obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED(arg0), rejectWithError: arg1(dependencyMap[3]).rejectWithMigratedError() };
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  const obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED(arg0), rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
   return HTTP.post(obj);
 };
 export const removeMonetization = function removeMonetization() {

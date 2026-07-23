@@ -1,20 +1,20 @@
 // Module ID: 746
-// Function ID: 8795
+// Function ID: 8796
 // Name: baseIsEqualDeep
-// Dependencies: []
+// Dependencies: [591, 747, 605, 752, 607, 758, 764, 768]
 
 // Module 746 (baseIsEqualDeep)
 
 export default function baseIsEqualDeep(value, value2) {
   let tmp = arg5;
-  const tmp2 = require(dependencyMap[0])(value);
+  const tmp2 = require(591)(value);
   let str = "[object Array]";
   let str2 = "[object Array]";
   if (!tmp2) {
-    str2 = require(dependencyMap[1])(value);
+    str2 = require(747) /* getTag */(value);
   }
   if (!tmp3) {
-    str = require(dependencyMap[1])(value2);
+    str = require(747) /* getTag */(value2);
   }
   if (str2 == "[object Arguments]") {
     str2 = "[object Object]";
@@ -28,10 +28,10 @@ export default function baseIsEqualDeep(value, value2) {
   if (str2 == str) {
     flag = tmp2;
     flag2 = tmp8;
-    if (require(dependencyMap[2])(value)) {
+    if (require(605) /* isBuffer */(value)) {
       flag = true;
       flag2 = false;
-      if (!require(dependencyMap[2])(value2)) {
+      if (!require(605) /* isBuffer */(value2)) {
         return false;
       }
     }
@@ -40,17 +40,17 @@ export default function baseIsEqualDeep(value, value2) {
     if (!flag2) {
       let tmp18 = tmp;
       if (!tmp) {
-        tmp18 = require(dependencyMap[3]);
+        tmp18 = require(752) /* Stack */;
         const prototype = tmp18.prototype;
         tmp18 = new tmp18();
       }
       if (!flag) {
-        if (!require(dependencyMap[4])(value)) {
-          let tmp32 = require(dependencyMap[6])(value, value2, str2, arg2, arg3, arg4, tmp18);
+        if (!require(607)(value)) {
+          let tmp32 = require(764) /* valueOf */(value, value2, str2, arg2, arg3, arg4, tmp18);
         }
         return tmp32;
       }
-      tmp32 = require(dependencyMap[5])(value, value2, arg2, arg3, arg4, tmp18);
+      tmp32 = require(758) /* equalArrays */(value, value2, arg2, arg3, arg4, tmp18);
     }
   }
   if (!(1 & arg2)) {
@@ -70,7 +70,7 @@ export default function baseIsEqualDeep(value, value2) {
     }
     let tmp48 = tmp;
     if (!tmp) {
-      tmp48 = require(dependencyMap[3]);
+      tmp48 = require(752) /* Stack */;
       const prototype2 = tmp48.prototype;
       tmp48 = new tmp48();
     }
@@ -79,11 +79,11 @@ export default function baseIsEqualDeep(value, value2) {
   let tmp56 = tmp10;
   if (str2 == str) {
     if (!tmp) {
-      const tmp59 = require(dependencyMap[3]);
+      const tmp59 = require(752) /* Stack */;
       const prototype3 = tmp59.prototype;
       tmp = new tmp59();
     }
-    tmp56 = require(dependencyMap[7])(value, value2, arg2, arg3, arg4, tmp);
+    tmp56 = require(768) /* equalObjects */(value, value2, arg2, arg3, arg4, tmp);
   }
   return tmp56;
 };

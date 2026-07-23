@@ -1,14 +1,16 @@
-// Module ID: 14433
-// Function ID: 108825
+// Module ID: 14547
+// Function ID: 110978
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: []
+// Dependencies: [6901, 566, 2]
 // Exports: useIsAllowGameFriendDMsSettingVisible
 
-// Module 14433 (useIsAllowGameFriendDMsSettingVisible)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/game_relationships/settings/useIsAllowGameFriendDMsSettingVisible.tsx");
+// Module 14547 (useIsAllowGameFriendDMsSettingVisible)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/game_relationships/settings/useIsAllowGameFriendDMsSettingVisible.tsx");
 
 export const useIsAllowGameFriendDMsSettingVisible = function useIsAllowGameFriendDMsSettingVisible() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => gameRelationshipCount.getGameRelationshipCount() > 0);
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getGameRelationshipCount() > 0);
 };

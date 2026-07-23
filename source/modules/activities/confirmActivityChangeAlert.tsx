@@ -1,46 +1,48 @@
-// Module ID: 10810
-// Function ID: 83977
+// Module ID: 10820
+// Function ID: 84026
 // Name: confirmActivityChangeModal
-// Dependencies: [357957632, 535691264, 283115520, 261292032, 709230592, 131072, 423821312]
+// Dependencies: [3767, 1849, 4320, 4470, 1212, 1832, 2]
 // Exports: default
 
-// Module 10810 (confirmActivityChangeModal)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activities/confirmActivityChangeAlert.tsx");
+// Module 10820 (confirmActivityChangeModal)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("computeDefaultGroupDmNameFromUserIds").fileFinishedImporting("modules/activities/confirmActivityChangeAlert.tsx");
 
 export default function confirmActivityChangeModal(name, channel, onConfirm, onCancel) {
   let str = "";
   if (null != channel) {
-    let obj = channel(dependencyMap[2]);
-    str = obj.computeChannelName(channel, closure_4, closure_3);
+    let obj = require(4320) /* computeDefaultGroupDmNameFromUserIds */;
+    str = obj.computeChannelName(channel, closure_4, _isNativeReflectConstruct);
   }
   obj = {};
-  const intl = channel(dependencyMap[4]).intl;
-  obj.title = intl.string(channel(dependencyMap[4]).t.XkIWkk);
-  const intl2 = channel(dependencyMap[4]).intl;
-  obj.cancelText = intl2.string(channel(dependencyMap[4]).t.ETE/oC);
-  const intl3 = channel(dependencyMap[4]).intl;
-  obj.confirmText = intl3.string(channel(dependencyMap[4]).t.cY+Oob);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.XkIWkk);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.cancelText = intl2.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.confirmText = intl3.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
   obj.onConfirm = onConfirm;
   obj.onCancel = onCancel;
-  const intl4 = channel(dependencyMap[4]).intl;
+  const intl4 = require(1212) /* getSystemLocale */.intl;
   obj = {};
   name = undefined;
   if (null != name) {
     name = name.name;
   }
   if (null == name) {
-    const intl5 = channel(dependencyMap[4]).intl;
-    name = intl5.string(channel(dependencyMap[4]).t.G99XFs);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    name = intl5.string(require(1212) /* getSystemLocale */.t.G99XFs);
   }
   obj.currentApplicationName = name;
-  const obj2 = importDefault(dependencyMap[3]);
+  const obj2 = importDefault(4470);
   if (obj5.isNullOrEmpty(str)) {
-    const intl6 = channel(dependencyMap[4]).intl;
-    str = intl6.string(channel(dependencyMap[4]).t.OGUjmt);
+    const intl6 = require(1212) /* getSystemLocale */.intl;
+    str = intl6.string(require(1212) /* getSystemLocale */.t.OGUjmt);
   }
   obj.currentApplicationChannelName = str;
-  obj.body = intl4.format(channel(dependencyMap[4]).t.5/Xort, obj);
+  obj.body = intl4.format(require(1212) /* getSystemLocale */.t["5/Xort"], obj);
   obj2.show(obj);
 };

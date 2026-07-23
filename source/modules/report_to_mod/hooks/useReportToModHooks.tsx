@@ -1,29 +1,29 @@
-// Module ID: 9534
-// Function ID: 74248
+// Module ID: 9541
+// Function ID: 74289
 // Name: useIsReportToModEnabled
-// Dependencies: []
+// Dependencies: [31, 1838, 4349, 566, 5647, 5668, 5655, 6691, 7889, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 9534 (useIsReportToModEnabled)
-const useEffect = require(dependencyMap[0]).useEffect;
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const _module = require(dependencyMap[9]);
-const result = _module.fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
+// Module 9541 (useIsReportToModEnabled)
+import { useEffect } from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
 
 export const useIsReportToModEnabled = function useIsReportToModEnabled(arg0) {
-  const require = arg0;
-  const items = [closure_4];
-  return require(dependencyMap[3]).useStateFromStores(items, () => {
-    if (null == arg0) {
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose];
+  return _require(566).useStateFromStores(items, () => {
+    if (null == closure_0) {
       return false;
     } else {
-      const guild = guild.getGuild(arg0);
+      const guild = outer1_4.getGuild(closure_0);
       let tmp4 = null != guild;
       if (tmp4) {
-        let tmp7 = callback(closure_2[4])(guild);
+        let tmp7 = outer1_1(outer1_2[4])(guild);
         if (tmp7) {
-          tmp7 = null != callback(closure_2[5])(guild);
+          tmp7 = null != outer1_1(outer1_2[5])(guild);
         }
         tmp4 = tmp7;
       }
@@ -32,16 +32,16 @@ export const useIsReportToModEnabled = function useIsReportToModEnabled(arg0) {
   });
 };
 export const useReportToModChannelId = function useReportToModChannelId(arg0) {
-  const require = arg0;
-  const items = [closure_4];
-  return require(dependencyMap[3]).useStateFromStores(items, () => {
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose];
+  return _require(566).useStateFromStores(items, () => {
     let guild = null;
-    if (null != arg0) {
-      guild = guild.getGuild(arg0);
+    if (null != closure_0) {
+      guild = outer1_4.getGuild(closure_0);
     }
     let tmp4 = null;
     if (null != guild) {
-      const tmp7 = callback(closure_2[5])(guild);
+      const tmp7 = outer1_1(outer1_2[5])(guild);
       let tmp8 = null;
       if (null != tmp7) {
         tmp8 = tmp7;
@@ -52,23 +52,21 @@ export const useReportToModChannelId = function useReportToModChannelId(arg0) {
   });
 };
 export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(channel) {
-  return require(dependencyMap[6]).isModeratorReportOrPostChannel(channel);
+  return require(5655) /* isModeratorReportOrPostChannelId */.isModeratorReportOrPostChannel(channel);
 };
 export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(channel) {
-  return require(dependencyMap[6]).isModeratorReportPostChannel(channel);
+  return require(5655) /* isModeratorReportOrPostChannelId */.isModeratorReportPostChannel(channel);
 };
 export const useLoadReportedMessage = function useLoadReportedMessage(messageReference) {
   messageReference = messageReference.messageReference;
-  const require = messageReference;
-  const items = [closure_5];
-  const stateFromStores = require(dependencyMap[3]).useStateFromStores(items, () => {
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = messageReference(566).useStateFromStores(items, () => {
     let message = null;
     if (null != messageReference) {
-      message = message.getMessage(messageReference.channel_id, messageReference.message_id);
+      message = outer1_5.getMessage(messageReference.channel_id, messageReference.message_id);
     }
     return message;
   });
-  const importDefault = stateFromStores;
   const items1 = [stateFromStores, messageReference];
   useEffect(() => {
     let tmp = null == stateFromStores;
@@ -76,7 +74,7 @@ export const useLoadReportedMessage = function useLoadReportedMessage(messageRef
       tmp = null != messageReference;
     }
     if (tmp) {
-      let obj = stateFromStores(closure_2[7]);
+      let obj = stateFromStores(outer1_2[7]);
       obj = { channelId: messageReference.channel_id };
       obj = { messageId: messageReference.message_id };
       obj.jump = obj;
@@ -97,7 +95,7 @@ export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSna
     }
   }
   if (null != reported_user_id) {
-    const user = require(dependencyMap[8]).getUser(reported_user_id);
-    const obj = require(dependencyMap[8]);
+    const user = require(7889) /* _fetchProfile */.getUser(reported_user_id);
+    const obj = require(7889) /* _fetchProfile */;
   }
 };

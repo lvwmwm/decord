@@ -1,20 +1,20 @@
-// Module ID: 7904
-// Function ID: 62926
+// Module ID: 7910
+// Function ID: 62963
 // Name: createVoiceChannelBadge
-// Dependencies: []
+// Dependencies: [27, 1348, 3758, 4146, 653, 7911, 4593, 4345, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 7904 (createVoiceChannelBadge)
-const Image = require(dependencyMap[0]).Image;
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const Permissions = require(dependencyMap[4]).Permissions;
-const _module = require(dependencyMap[8]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
+// Module 7910 (createVoiceChannelBadge)
+import { Image } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
 
 export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guildId) {
-  let obj = require(dependencyMap[5]);
+  let obj = require(7911) /* items */;
   obj = {};
   let tmp;
   if (null != guildId) {
@@ -24,24 +24,24 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
   obj.location = "VoiceChannelBadgeNative";
   if (obj.getVoiceChannelBadgeExperiment(obj).enabled) {
     if (null != guildId) {
-      const discoverableVoiceState = discoverableVoiceState.getDiscoverableVoiceState(guildId, id);
+      discoverableVoiceState = discoverableVoiceState.getDiscoverableVoiceState(guildId, id);
       if (null != discoverableVoiceState) {
         let channelId;
         if (null != discoverableVoiceState) {
           channelId = discoverableVoiceState.channelId;
         }
-        const channel = channel.getChannel(channelId);
+        channel = channel.getChannel(channelId);
         if (null != channel) {
-          const assetSource = Image.resolveAssetSource(require(dependencyMap[6]).getChannelIcon(channel));
+          const assetSource = Image.resolveAssetSource(require(4593) /* getThreadChannelIcon */.getChannelIcon(channel));
           let uri;
           if (null != assetSource) {
             uri = assetSource.uri;
           }
           if (null != uri) {
-            let result = require(dependencyMap[7]).shouldAgeVerifyForAgeGate();
+            let result = require(4345) /* shouldAgeVerifyForAgeGate */.shouldAgeVerifyForAgeGate();
             if (result) {
-              result = require(dependencyMap[7]).shouldShowAgeGateForChannelId(channel.id);
-              const obj4 = require(dependencyMap[7]);
+              result = require(4345) /* shouldAgeVerifyForAgeGate */.shouldShowAgeGateForChannelId(channel.id);
+              const obj4 = require(4345) /* shouldAgeVerifyForAgeGate */;
             }
             let isPrivateResult = channel.isPrivate();
             if (!isPrivateResult) {
@@ -57,9 +57,9 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
                 return obj;
               }
             }
-            const obj7 = require(dependencyMap[7]);
+            const obj7 = require(4345) /* shouldAgeVerifyForAgeGate */;
           }
-          const obj6 = require(dependencyMap[6]);
+          const obj6 = require(4593) /* getThreadChannelIcon */;
         }
       }
     }

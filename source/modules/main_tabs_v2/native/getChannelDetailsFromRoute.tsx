@@ -1,24 +1,23 @@
-// Module ID: 13366
-// Function ID: 101651
+// Module ID: 13480
+// Function ID: 103807
 // Name: getChannelDetailsFromRoute
-// Dependencies: []
+// Dependencies: [3981, 2]
 // Exports: default
 
-// Module 13366 (getChannelDetailsFromRoute)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/getChannelDetailsFromRoute.tsx");
+// Module 13480 (getChannelDetailsFromRoute)
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/getChannelDetailsFromRoute.tsx");
 
 export default function getChannelDetailsFromRoute(currentRoute) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  const coerceChannelRouteResult = require(dependencyMap[0]).coerceChannelRoute(currentRoute);
+  const coerceChannelRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceChannelRoute(currentRoute);
   if (null != coerceChannelRouteResult) {
     const items = [coerceChannelRouteResult.params.guildId, coerceChannelRouteResult.params.channelId];
     return items;
   } else if (flag) {
-    const coerceGuildsRouteResult = require(dependencyMap[0]).coerceGuildsRoute(currentRoute);
+    const coerceGuildsRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(currentRoute);
     if (null != coerceGuildsRouteResult) {
       const params = coerceGuildsRouteResult.params;
       let guildId;
@@ -41,5 +40,5 @@ export default function getChannelDetailsFromRoute(currentRoute) {
     const items3 = [undefined, undefined];
     return items3;
   }
-  const obj = require(dependencyMap[0]);
+  const obj = require(3981) /* _createForOfIteratorHelperLoose */;
 };

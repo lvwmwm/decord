@@ -1,9 +1,15 @@
-// Module ID: 9750
-// Function ID: 75862
+// Module ID: 9757
+// Function ID: 75903
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 27, 9758, 2]
 
-// Module 9750 (_isNativeReflectConstruct)
+// Module 9757 (_isNativeReflectConstruct)
+import StatusBarManager from "StatusBarManager";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +19,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const tmp2 = (StatusBar) => {
+const tmp2 = ((StatusBar) => {
   class StatusBarAndroid {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_2(this, StatusBarAndroid);
+      tmp = outer1_2(this, StatusBarAndroid);
       items1 = [...items];
-      obj = closure_5(StatusBarAndroid);
-      tmp2 = closure_4;
-      if (closure_7()) {
+      obj = outer1_5(StatusBarAndroid);
+      tmp2 = outer1_4;
+      if (outer1_7()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items1, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -40,26 +41,25 @@ const tmp2 = (StatusBar) => {
       return tmp2Result;
     }
   }
-  const importDefault = StatusBarAndroid;
   callback2(StatusBarAndroid, StatusBar);
   let obj = {
     key: "componentDidMount",
     value() {
-      this._stackEntry = StatusBarAndroid(closure_1[6]).pushStackEntry(this.props);
+      this._stackEntry = StatusBarAndroid(outer1_1[6]).pushStackEntry(this.props);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "componentDidUpdate",
     value() {
-      this._stackEntry = StatusBarAndroid(closure_1[6]).replaceStackEntry(this._stackEntry, this.props);
+      this._stackEntry = StatusBarAndroid(outer1_1[6]).replaceStackEntry(this._stackEntry, this.props);
     }
   };
   items[1] = obj;
   obj = {
     key: "componentWillUnmount",
     value() {
-      StatusBarAndroid(closure_1[6]).popStackEntry(this._stackEntry);
+      StatusBarAndroid(outer1_1[6]).popStackEntry(this._stackEntry);
       this._stackEntry = null;
     }
   };
@@ -71,7 +71,7 @@ const tmp2 = (StatusBar) => {
     }
   };
   return callback(StatusBarAndroid, items);
-}(arg1(dependencyMap[5]).StatusBar);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/status_bar/native/components/StatusBar.android.tsx");
+})(require("get ActivityIndicator").StatusBar);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/status_bar/native/components/StatusBar.android.tsx");
 
 export default tmp2;

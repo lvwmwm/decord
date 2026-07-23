@@ -1,39 +1,40 @@
-// Module ID: 4795
-// Function ID: 41696
+// Module ID: 4798
+// Function ID: 41714
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4468, 566, 686, 2]
 
-// Module 4795 (_isNativeReflectConstruct)
+// Module 4798 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { DraftType } from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const DraftType = arg1(dependencyMap[5]).DraftType;
 let closure_6 = {};
 let closure_7 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class StickerMessagePreviewStore {
     constructor() {
       self = this;
       tmp = StickerMessagePreviewStore(this, StickerMessagePreviewStore);
-      obj = closure_3(StickerMessagePreviewStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(StickerMessagePreviewStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,27 +43,26 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = StickerMessagePreviewStore;
   callback2(StickerMessagePreviewStore, Store);
   const items = [
     {
       key: "getStickerPreview",
       value(arg0, arg1) {
-        return arg1 === FirstThreadMessage.FirstThreadMessage ? closure_7 : closure_6[arg0];
+        return arg1 === outer1_5.FirstThreadMessage ? outer1_7 : outer1_6[arg0];
       }
     }
   ];
   return callback(StickerMessagePreviewStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "StickerMessagePreviewStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   ADD_STICKER_PREVIEW: function handleAddStickerPreview(sticker) {
     const items = [sticker.sticker];
     sticker.draftType === DraftType.FirstThreadMessage ? closure_7 : closure_6[sticker.channelId] = items;
   },
   CLEAR_STICKER_PREVIEW: function handleClearStickerPreview(arg0) {
     if (null != arg0.draftType === DraftType.FirstThreadMessage ? closure_7 : closure_6[arg0.channelId]) {
-      delete r0[r1];
+      delete tmp[tmp2];
     }
   },
   LOGOUT: function resetState() {
@@ -70,6 +70,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     let closure_7 = {};
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/stickers/StickerMessagePreviewStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stickers/StickerMessagePreviewStore.tsx");
 
 export default tmp2;

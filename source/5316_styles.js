@@ -1,9 +1,10 @@
 // Module ID: 5316
-// Function ID: 45824
+// Function ID: 45838
 // Name: styles
-// Dependencies: []
+// Dependencies: [27]
 
 // Module 5316 (styles)
-const StyleSheet = require(dependencyMap[0]).StyleSheet;
+import { StyleSheet } from "get ActivityIndicator";
 
-export const styles = StyleSheet.create({ container: StyleSheet.absoluteFillObject, background: { XgH9eh: "<string:1099973008>", incidentDateNew: true } });
+
+export const styles = StyleSheet.create({ container: { flexDirection: "column-reverse", position: "absolute", top: 0, left: 0, right: 0 } });

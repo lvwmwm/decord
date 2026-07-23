@@ -1,15 +1,16 @@
 // Module ID: 1600
-// Function ID: 17816
+// Function ID: 17817
 // Name: jSWorkletsModule
-// Dependencies: []
+// Dependencies: [1585, 1601, 1602]
 
 // Module 1600 (jSWorkletsModule)
-const _module = require(dependencyMap[0]);
-if (_module.shouldBeUseWeb()) {
-  const _module1 = require(dependencyMap[1]);
+import isJest from "isJest";
+
+if (isJest.shouldBeUseWeb()) {
+  const _module1 = require("JSWorklets");
   let jSWorkletsModule = _module1.createJSWorkletsModule();
 } else {
-  const _module2 = require(dependencyMap[2]);
+  const _module2 = require("NativeWorklets");
   jSWorkletsModule = _module2.createNativeWorkletsModule();
 }
 

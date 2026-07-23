@@ -1,46 +1,50 @@
-// Module ID: 12106
-// Function ID: 93316
+// Module ID: 12220
+// Function ID: 95467
 // Name: BlockedDomainActionSheet
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 5187, 4541, 5807, 4126, 1212, 12221, 4543, 4098, 2]
 // Exports: default
 
-// Module 12106 (BlockedDomainActionSheet)
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { padding: importDefault(dependencyMap[3]).space.PX_16 };
-obj.container = obj;
-obj.title = { textAlign: "center" };
-obj.warningMessage = { textAlign: "center" };
-let closure_5 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/blocked_domains/components/native/BlockedDomainActionSheet.tsx");
+// Module 12220 (BlockedDomainActionSheet)
+import "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.title = { textAlign: "center" };
+_createForOfIteratorHelperLoose.warningMessage = { textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/blocked_domains/components/native/BlockedDomainActionSheet.tsx");
 
 export default function BlockedDomainActionSheet(url) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { startExpanded: true };
-  obj = { style: tmp.container };
-  obj = {};
-  const items = [callback(arg1(dependencyMap[6]).TrafficConeSpotIllustration, {}), , ];
-  const obj1 = { style: tmp.title };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj1.children = intl.string(arg1(dependencyMap[8]).t.2B3wj8);
-  items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
+  obj = { spacing: 16, justify: "center", align: "center", style: tmp.container };
+  obj = { spacing: 8, justify: "center", align: "center" };
+  const items = [callback(require(5807) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
+  const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.string(require(1212) /* getSystemLocale */.t["2B3wj8"]);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
   const obj2 = { style: tmp.warningMessage, variant: "text-md/medium" };
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj2.children = intl2.format(arg1(dependencyMap[8]).t.jnHyYU, {});
-  items[2] = callback(arg1(dependencyMap[7]).Text, obj2);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl2.format(require(1212) /* getSystemLocale */.t.jnHyYU, {});
+  items[2] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items;
-  const items1 = [callback2(arg1(dependencyMap[5]).Stack, obj), callback(arg1(dependencyMap[9]).URLCallout, { url: url.url }), ];
+  const items1 = [callback2(require(4541) /* Stack */.Stack, obj), callback(require(12221) /* URLCallout */.URLCallout, { url: url.url }), ];
   const obj3 = { grow: true };
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj3.text = intl3.string(arg1(dependencyMap[8]).t./g10LC);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj3.text = intl3.string(require(1212) /* getSystemLocale */.t["/g10LC"]);
   obj3.onPress = function onPress() {
-    return callback(closure_2[11]).hideActionSheet();
+    return outer1_1(outer1_2[11]).hideActionSheet();
   };
-  items1[2] = callback(arg1(dependencyMap[10]).Button, obj3);
+  items1[2] = callback(require(4543) /* Button */.Button, obj3);
   obj.children = items1;
-  obj.children = callback2(arg1(dependencyMap[5]).Stack, obj);
-  return callback(arg1(dependencyMap[4]).BottomSheet, obj);
+  obj.children = callback2(require(4541) /* Stack */.Stack, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };

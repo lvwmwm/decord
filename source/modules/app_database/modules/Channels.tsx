@@ -1,57 +1,58 @@
-// Module ID: 6885
-// Function ID: 54644
+// Module ID: 6890
+// Function ID: 54678
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [0, 0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [6, 7, 1352, 1194, 1348, 1882, 2]
 
-// Module 6885 (_createForOfIteratorHelperLoose)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
+// Module 6890 (_createForOfIteratorHelperLoose)
+import set from "set";
+import _defineProperties from "_defineProperties";
+import { createChannelRecordFromServer as closure_4 } from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -62,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -88,12 +89,11 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_4 = arg1(dependencyMap[2]).createChannelRecordFromServer;
-let tmp2 = () => {
+let tmp2 = (() => {
   class Channels {
     constructor() {
-      Channels = this;
-      tmp = __exportStarResult1(this, Channels);
+      self = this;
+      tmp = outer1_2(this, self);
       this.privateChannels = [];
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {
@@ -130,17 +130,16 @@ let tmp2 = () => {
       return;
     }
   }
-  const importDefault = Channels;
   let obj = {
     key: "handleBackgroundSync",
     value(guilds) {
       let done;
-      const Channels = arg1;
+      let closure_0 = arg1;
       const self = this;
       function _loop(value) {
-        const arg1 = value;
+        let closure_0 = value;
         function asRecord(arg0) {
-          return callback(arg0, arg0.id);
+          return outer3_4(arg0, value.id);
         }
         const data_mode = value.data_mode;
         if ("unavailable" !== data_mode) {
@@ -160,16 +159,16 @@ let tmp2 = () => {
               deleted_channel_ids = [];
             }
             obj.deletes = deleted_channel_ids;
-            const result = self.handleGuildSynchronize(value.id, obj, arg1);
+            const result = self.handleGuildSynchronize(value.id, obj, closure_0);
           } else {
             obj = { op: "full_sync" };
             const channels1 = value.channels;
             obj.items = channels1.map(asRecord);
-            const result1 = self.handleGuildSynchronize(value.id, obj, arg1);
+            const result1 = self.handleGuildSynchronize(value.id, obj, closure_0);
           }
         }
       }
-      const tmp = callback2(guilds.guilds);
+      const tmp = outer1_7(guilds.guilds);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -181,21 +180,21 @@ let tmp2 = () => {
       }
     }
   };
-  const items = [obj, , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , ];
   obj = {
     key: "handleConnectionOpen",
-    value: function handleConnectionOpen(unavailableGuilds, value) {
+    value: function handleConnectionOpen(unavailableGuilds, closure_0) {
       let done;
       const self = this;
       const items = [...unavailableGuilds.unavailableGuilds];
-      const obj = Channels(closure_1[5]);
-      Channels(closure_1[5]).channelsTransaction(value).deleteAllExcept(items);
-      const tmp2 = callback2(unavailableGuilds.guilds);
+      const obj = Channels(outer1_1[5]);
+      Channels(outer1_1[5]).channelsTransaction(closure_0).deleteAllExcept(items);
+      const tmp2 = outer1_7(unavailableGuilds.guilds);
       let iter = tmp2();
       if (!iter.done) {
         do {
-          value = iter.value;
-          let result = self.handleGuildSynchronize(value.id, value.channels, value);
+          let value = iter.value;
+          let result = self.handleGuildSynchronize(value.id, value.channels, closure_0);
           let iter2 = tmp2();
           iter = iter2;
           done = iter2.done;
@@ -218,9 +217,9 @@ let tmp2 = () => {
     key: "handleChannelRecipientAdd",
     value: function handleChannelRecipientAdd(channelId, arg1) {
       const self = this;
-      const channel = store.getChannel(channelId.channelId);
+      const channel = outer1_6.getChannel(channelId.channelId);
       let isPrivateResult = null != channel;
-      const id = id.getId();
+      const id = outer1_5.getId();
       if (isPrivateResult) {
         isPrivateResult = channel.isPrivate();
       }
@@ -233,7 +232,7 @@ let tmp2 = () => {
     key: "handleChannelRecipientRemove",
     value: function handleChannelRecipientRemove(channelId, arg1) {
       const self = this;
-      const channel = store.getChannel(channelId.channelId);
+      const channel = outer1_6.getChannel(channelId.channelId);
       if (tmp) {
         self.putOne(channel.removeRecipient(channelId.user.id), arg1);
       }
@@ -241,8 +240,8 @@ let tmp2 = () => {
   };
   items[5] = {
     key: "handleGuildCreate",
-    value: function handleGuildCreate(guild, value) {
-      const result = this.handleGuildSynchronize(guild.guild.id, guild.guild.channels, value);
+    value: function handleGuildCreate(guild, closure_0) {
+      const result = this.handleGuildSynchronize(guild.guild.id, guild.guild.channels, closure_0);
     }
   };
   items[6] = {
@@ -259,14 +258,14 @@ let tmp2 = () => {
   };
   items[8] = {
     key: "handleGuildSynchronize",
-    value: function handleGuildSynchronize(id, channels, value) {
+    value: function handleGuildSynchronize(id, channels, closure_0) {
       let done;
       const self = this;
       const op = channels.op;
       if ("update" === op) {
-        const channelsTransactionResult = Channels(closure_1[5]).channelsTransaction(value);
+        const channelsTransactionResult = Channels(outer1_1[5]).channelsTransaction(closure_0);
         channelsTransactionResult.putAll(id, channels.writes);
-        const tmp5 = callback2(channels.deletes);
+        const tmp5 = outer1_7(channels.deletes);
         let iter = tmp5();
         if (!iter.done) {
           do {
@@ -276,25 +275,25 @@ let tmp2 = () => {
             done = iter2.done;
           } while (!done);
         }
-        const obj = Channels(closure_1[5]);
+        const obj = Channels(outer1_1[5]);
       } else if ("full_sync" === op) {
-        const replaced = self.replace(id, channels.items, value);
+        const replaced = self.replace(id, channels.items, closure_0);
       }
     }
   };
   items[9] = {
     key: "putOne",
     value: function putOne(channel, arg1) {
-      const obj = Channels(closure_1[5]);
-      Channels(closure_1[5]).channelsTransaction(arg1).put(channel.guild_id, channel);
+      const obj = Channels(outer1_1[5]);
+      Channels(outer1_1[5]).channelsTransaction(arg1).put(channel.guild_id, channel);
     }
   };
   items[10] = {
     key: "putMany",
     value: function putMany(channels, generation) {
       let done;
-      const obj = Channels(closure_1[5]);
-      const tmp = callback2(channels);
+      const obj = Channels(outer1_1[5]);
+      const tmp = outer1_7(channels);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -310,29 +309,29 @@ let tmp2 = () => {
   items[11] = {
     key: "replace",
     value: function replace(arg0, arg1, arg2) {
-      const obj = Channels(closure_1[5]);
-      const replaced = Channels(closure_1[5]).channelsTransaction(arg2).replaceAll(arg0, arg1);
+      const obj = Channels(outer1_1[5]);
+      const replaced = Channels(outer1_1[5]).channelsTransaction(arg2).replaceAll(arg0, arg1);
     }
   };
   items[12] = {
     key: "deleteOne",
     value: function deleteOne(guildId, channelId, id, arg3) {
-      const obj = Channels(closure_1[5]);
-      Channels(closure_1[5]).channelsTransaction(id).delete(guildId, channelId);
+      const obj = Channels(outer1_1[5]);
+      Channels(outer1_1[5]).channelsTransaction(id).delete(guildId, channelId);
     }
   };
   items[13] = {
     key: "deleteManySyncUnsafe",
     value: function deleteManySyncUnsafe(id) {
-      const channelsResult = Channels(closure_1[5]).channels();
+      const channelsResult = Channels(outer1_1[5]).channels();
       if (null != channelsResult) {
         channelsResult.deleteSyncUnsafe(id);
       }
     }
   };
   return callback(Channels, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = require("__exportStarResult1").fileFinishedImporting("modules/app_database/modules/Channels.tsx");
+let result = require("_callSuper").fileFinishedImporting("modules/app_database/modules/Channels.tsx");
 
 export default tmp2;

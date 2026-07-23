@@ -1,57 +1,57 @@
-// Module ID: 12044
-// Function ID: 93041
+// Module ID: 12158
+// Function ID: 95192
 // Name: rows
-// Dependencies: []
+// Dependencies: [57, 31, 1917, 1838, 10065, 6979, 653, 482, 566, 675, 10064, 2]
 // Exports: default
 
-// Module 12044 (rows)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const InviteTargetTypes = arg1(dependencyMap[5]).InviteTargetTypes;
-const AnalyticEvents = arg1(dependencyMap[6]).AnalyticEvents;
-const NOOP_NULL = arg1(dependencyMap[7]).NOOP_NULL;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/instant_invite/native/useInviteSuggestionRows.tsx");
+// Module 12158 (rows)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import { InviteTargetTypes } from "InviteSendStates";
+import { AnalyticEvents } from "ME";
+import { NOOP_NULL } from "sum";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/instant_invite/native/useInviteSuggestionRows.tsx");
 
 export default function _default(arg0, arg1, arg2, arg3) {
-  arg1 = arg0;
-  const importDefault = arg1;
+  const _require = arg0;
+  let closure_1 = arg1;
   const dependencyMap = arg2;
   const callback = arg3;
-  const items = [closure_7];
-  const rows = arg1(dependencyMap[8]).useStateFromStores(items, () => store.getInviteSuggestionRows());
-  const React = rows;
-  const tmp2 = callback(React.useState(true), 2);
+  let items = [closure_7];
+  const rows = _require(566).useStateFromStores(items, () => outer1_7.getInviteSuggestionRows());
+  const tmp2 = callback(rows.useState(true), 2);
   const isFetchingRows = tmp2[0];
-  let closure_5 = isFetchingRows;
-  let closure_6 = tmp2[1];
+  let _createForOfIteratorHelperLoose = tmp2[1];
   const items1 = [rows, arg0, isFetchingRows, arg3, arg1];
-  const effect = React.useEffect(() => {
+  const effect = rows.useEffect(() => {
     if (!isFetchingRows) {
-      const initialCounts = store.getInitialCounts();
-      let obj = arg1(arg2[9]);
-      obj = { location: arg1, num_suggestions: rows.length, guild_id: arg0.guild_id };
+      const initialCounts = outer1_7.getInitialCounts();
+      let obj = callback(675);
+      obj = { location: callback, num_suggestions: rows.length, guild_id: lib.guild_id };
       ({ numFriends: obj2.num_friends, numDms: obj2.num_dms, numGroupDms: obj2.num_group_dms } = initialCounts);
-      obj.application_id = arg3;
-      obj.track(constants2.INVITE_SUGGESTION_OPENED, obj);
+      obj.application_id = _slicedToArray;
+      obj.track(outer1_9.INVITE_SUGGESTION_OPENED, obj);
     }
   }, items1);
   const items2 = [arg0, arg2];
-  const effect1 = React.useEffect(() => {
+  const effect1 = rows.useEffect(() => {
     guild(true);
-    if (arg2 === constants.EMBEDDED_APPLICATION) {
+    if (dependencyMap === outer1_8.EMBEDDED_APPLICATION) {
       let items = [];
     } else {
-      items = isFetchingRows.getMemberIds(arg0.guild_id);
+      items = isFetchingRows.getMemberIds(lib.guild_id);
     }
-    let obj = arg0(arg2[10]);
-    obj = { omitUserIds: new Set(items), guild: guild.getGuild(arg0.guild_id), channel: arg0, inviteTargetType: arg2 };
+    let obj = lib(10064);
+    obj = { omitUserIds: new Set(items), guild: guild.getGuild(lib.guild_id), channel: lib, inviteTargetType: dependencyMap };
     const inviteSuggestions = obj.loadInviteSuggestions(obj);
     const set = new Set(items);
-    inviteSuggestions.catch(closure_10).finally(() => {
-      callback(false);
+    inviteSuggestions.catch(outer1_10).finally(() => {
+      outer1_6(false);
     });
   }, items2);
   return { rows, isFetchingRows };

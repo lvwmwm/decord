@@ -1,9 +1,19 @@
-// Module ID: 5031
-// Function ID: 43316
+// Module ID: 5034
+// Function ID: 43334
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1316, 5035, 662, 664, 4214, 22, 566, 686, 2]
 
-// Module 5031 (_isNativeReflectConstruct)
+// Module 5034 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import MAX_FAVORITES from "MAX_FAVORITES";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { UserSettingsTypes } from "MAX_FAVORITES";
+import importDefaultResult from "DEFAULT_FRECENCY";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -30,7 +40,7 @@ function handleUserSettingsProtoStoreChange() {
   if (null == stickers) {
     return false;
   } else {
-    const obj = importDefault(dependencyMap[10]);
+    obj = importDefault(22);
     importDefaultResult.overwriteHistory(obj.mapValues(stickers, (recentUses) => {
       const obj = {};
       const merged = Object.assign(recentUses);
@@ -41,16 +51,7 @@ function handleUserSettingsProtoStoreChange() {
     }), pendingUsages.pendingUsages);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-const UserSettingsTypes = arg1(dependencyMap[7]).UserSettingsTypes;
 let closure_10 = { pendingUsages: [] };
-let importDefaultResult = importDefault(dependencyMap[9]);
 let obj = {
   computeBonus() {
     return 100;
@@ -64,19 +65,19 @@ let obj = {
   numFrequentlyItems: 20
 };
 importDefaultResult = new importDefaultResult(obj);
-let tmp4 = (PersistedStore) => {
+let tmp4 = ((PersistedStore) => {
   class StickersPersistedStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, StickersPersistedStore);
-      obj = closure_5(StickersPersistedStore);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      tmp = outer1_2(this, StickersPersistedStore);
+      obj = outer1_5(StickersPersistedStore);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -85,42 +86,44 @@ let tmp4 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = StickersPersistedStore;
   callback2(StickersPersistedStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       const self = this;
-      this.waitFor(closure_8, closure_7);
-      const items = [closure_8];
-      self.syncWith(items, closure_14);
-      const items1 = [closure_7];
-      self.syncWith(items1, closure_15);
+      this.waitFor(outer1_8, outer1_7);
+      if (null != arg0) {
+        const outer1_10 = arg0;
+      }
+      const items = [outer1_8];
+      self.syncWith(items, outer1_14);
+      const items1 = [outer1_7];
+      self.syncWith(items1, outer1_15);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[1] = obj;
   obj = {
     key: "hasPendingUsage",
     value() {
-      return pendingUsages.pendingUsages.length > 0;
+      return outer1_10.pendingUsages.length > 0;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "stickerFrecencyWithoutFetchingLatest",
     get() {
-      return closure_11;
+      return outer1_11;
     }
   };
   return callback(StickersPersistedStore, items);
-}(importDefault(dependencyMap[11]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp4.displayName = "StickersPersistedStore";
 tmp4.persistKey = "StickersPersistedStoreV2";
 obj = {
@@ -128,8 +131,8 @@ obj = {
     stickerIds = stickerIds.stickerIds;
     if (null != stickerIds) {
       const item = stickerIds.forEach((key) => {
-        closure_11.track(key);
-        const pendingUsages = pendingUsages.pendingUsages;
+        outer1_11.track(key);
+        const pendingUsages = outer1_10.pendingUsages;
         pendingUsages.push({ key, timestamp: Date.now() });
       });
     }
@@ -144,8 +147,8 @@ obj = {
     return false;
   }
 };
-tmp4 = new tmp4(importDefault(dependencyMap[12]), obj);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/stickers/StickersPersistedStore.tsx");
+tmp4 = new tmp4(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stickers/StickersPersistedStore.tsx");
 
 export default tmp4;
-export const STICKER_PACK_NEW_TIMESTAMP_THRESHOLD = importDefault(dependencyMap[8]).Millis.DAY;
+export const STICKER_PACK_NEW_TIMESTAMP_THRESHOLD = require("set").Millis.DAY;

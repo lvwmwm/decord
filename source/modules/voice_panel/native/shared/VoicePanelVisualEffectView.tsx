@@ -1,29 +1,33 @@
-// Module ID: 15741
-// Function ID: 120386
+// Module ID: 15858
+// Function ID: 122559
 // Name: VoicePanelVisualEffectView
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 3834, 1324, 8372, 2]
 
-// Module 15741 (VoicePanelVisualEffectView)
-const tmp2 = arg1(dependencyMap[1]);
-const View = tmp2.View;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj1 = arg1(dependencyMap[3]);
+// Module 15858 (VoicePanelVisualEffectView)
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+const View = get_ActivityIndicator.View;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 let obj = {};
 obj = {};
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
 obj.wrapper = obj;
-obj1 = { borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[4]).modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
-obj.border = obj1;
-let closure_6 = obj1.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const memoResult = importAllResult.memo(function VoicePanelVisualEffectViewInner(matchAppTheme) {
+_createForOfIteratorHelperLoose = { position: "absolute", top: 1, left: 1, right: 1, bottom: 1, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
+obj.border = _createForOfIteratorHelperLoose;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function VoicePanelVisualEffectViewInner(matchAppTheme) {
   let flag = matchAppTheme.matchAppTheme;
   if (flag === undefined) {
     flag = false;
   }
-  let obj = arg1(dependencyMap[5]);
-  const token = obj.useToken(importDefault(dependencyMap[4]).colors.THEME_LOCKED_BLUR_FALLBACK);
+  let obj = require(3834) /* map */;
+  const token = obj.useToken(importDefault(689).colors.THEME_LOCKED_BLUR_FALLBACK);
   const tmp2 = callback3();
   obj = { blurTheme: "dark" };
   let tmp5;
@@ -31,7 +35,7 @@ const memoResult = importAllResult.memo(function VoicePanelVisualEffectViewInner
     tmp5 = token;
   }
   obj.android_fallbackColor = tmp5;
-  const tmp4Result = callback(arg1(dependencyMap[7]).BackgroundBlurFill, obj);
+  const tmp4Result = callback(require(8372) /* TwinButtons */.BackgroundBlurFill, obj);
   let tmp7 = tmp4Result;
   if (tmp3) {
     obj = { style: tmp2.wrapper };
@@ -43,6 +47,6 @@ const memoResult = importAllResult.memo(function VoicePanelVisualEffectViewInner
   }
   return tmp7;
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelVisualEffectView.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelVisualEffectView.tsx");
 
 export const VoicePanelVisualEffectView = memoResult;

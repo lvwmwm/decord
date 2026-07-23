@@ -1,31 +1,37 @@
 // Module ID: 1183
-// Function ID: 13475
+// Function ID: 13476
 // Name: warn
-// Dependencies: []
+// Dependencies: [31, 27, 978, 794, 42]
 
 // Module 1183 (warn)
-let closure_0 = importAll(dependencyMap[0]);
-({ UIManager: closure_1, View: closure_2 } = arg1(dependencyMap[1]));
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import isHermesEnabled from "isHermesEnabled";
+import { debug } from "registerSpanErrorInstrumentation";
+
+let closure_1;
+let closure_2;
+({ UIManager: closure_1, View: closure_2 } = get_ActivityIndicator);
 function warn(arg0) {
-  let closure_0 = arg0;
+  let result = arg0;
   const timerId = setTimeout(() => {
-    console.warn("[SentrySessionReplay] " + arg0 + " component is not supported on the current platform. If " + arg0 + " should be supported, please ensure that the application build is up to date.");
+    console.warn("[SentrySessionReplay] " + result + " component is not supported on the current platform. If " + result + " should be supported, please ensure that the application build is up to date.");
   }, 0);
 }
 class MaskFallback {
   constructor(arg0) {
     tmp = warn("Mask");
-    return importAll.createElement(View, Object.assign({}, global));
+    return result.createElement(View, Object.assign({}, global));
   }
 }
 class UnmaskFallback {
   constructor(arg0) {
     tmp = warn("Unmask");
-    return importAll.createElement(View, Object.assign({}, global));
+    return result.createElement(View, Object.assign({}, global));
   }
 }
 function hasViewManagerConfig(RNSentryReplayMask) {
-  const hasViewManagerConfig = hasViewManagerConfig.hasViewManagerConfig;
+  hasViewManagerConfig = hasViewManagerConfig.hasViewManagerConfig;
   let callResult;
   if (null !== hasViewManagerConfig) {
     if (undefined !== hasViewManagerConfig) {
@@ -34,28 +40,26 @@ function hasViewManagerConfig(RNSentryReplayMask) {
   }
   return callResult;
 }
-const tmp2 = arg1(dependencyMap[1]);
-if (!obj.isExpoGo()) {
+if (!isHermesEnabled.isExpoGo()) {
   if (hasViewManagerConfig("RNSentryReplayMask")) {
-    let value = arg1(dependencyMap[4]).get("RNSentryReplayMask", () => ({ uiViewClassName: "RNSentryReplayMask" }));
-    const obj2 = arg1(dependencyMap[4]);
+    let value = require("get").get("RNSentryReplayMask", () => ({ uiViewClassName: "RNSentryReplayMask" }));
+    const obj2 = require("get");
   }
   if (!obj3.isExpoGo()) {
     if (hasViewManagerConfig("RNSentryReplayUnmask")) {
-      value = arg1(dependencyMap[4]).get("RNSentryReplayUnmask", () => ({ uiViewClassName: "RNSentryReplayUnmask" }));
-      const obj4 = arg1(dependencyMap[4]);
+      value = require("get").get("RNSentryReplayUnmask", () => ({ uiViewClassName: "RNSentryReplayUnmask" }));
+      const obj4 = require("get");
     }
     exports.Mask = value;
     exports.Unmask = value;
     exports.MaskFallback = MaskFallback;
     exports.UnmaskFallback = UnmaskFallback;
   }
-  const debug2 = arg1(dependencyMap[3]).debug;
+  const debug2 = require("registerSpanErrorInstrumentation").debug;
   const _HermesInternal = HermesInternal;
   debug2.warn("[SentrySessionReplay] Can't load " + "RNSentryReplayUnmask" + ".");
   value = UnmaskFallback;
-  const obj3 = arg1(dependencyMap[2]);
+  obj3 = require("isHermesEnabled");
 }
-const debug = arg1(dependencyMap[3]).debug;
 debug.warn("[SentrySessionReplay] Can't load " + "RNSentryReplayMask" + ".");
 value = MaskFallback;

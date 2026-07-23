@@ -1,23 +1,25 @@
-// Module ID: 15310
-// Function ID: 116447
+// Module ID: 15427
+// Function ID: 118621
 // Name: getChannelOpenedRouteTrackingProps
-// Dependencies: []
+// Dependencies: [1348, 7016, 1198, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 15310 (getChannelOpenedRouteTrackingProps)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
+// Module 15427 (getChannelOpenedRouteTrackingProps)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("shouldNavigate").fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
 
 export const getChannelOpenedRouteTrackingProps = function getChannelOpenedRouteTrackingProps(selectedChannelId) {
-  let obj = arg1(dependencyMap[1]);
+  let obj = require(7016) /* collectThreadMetadata */;
   let result = obj.collectThreadMetadata(channel.getChannel(selectedChannelId), true);
   let _location;
   if (null != result) {
     _location = result.location;
   }
   if (null == _location) {
-    _location = arg1(dependencyMap[2]).getLastRouteChangeSource();
-    const obj3 = arg1(dependencyMap[2]);
+    _location = require(1198) /* shouldNavigate */.getLastRouteChangeSource();
+    const obj3 = require(1198) /* shouldNavigate */;
   }
   obj = {};
   if (null == result) {

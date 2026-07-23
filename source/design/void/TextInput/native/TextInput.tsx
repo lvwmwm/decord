@@ -1,49 +1,51 @@
-// Module ID: 8421
-// Function ID: 67122
+// Module ID: 8427
+// Function ID: 67159
 // Name: VoidTextInput
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 3976, 477, 3974, 2]
 
-// Module 8421 (VoidTextInput)
-const TextInput = arg1(dependencyMap[1]).TextInput;
-const tmp2 = arg1(dependencyMap[2]);
-const KeyboardThemes = tmp2.KeyboardThemes;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj1 = arg1(dependencyMap[4]);
+// Module 8427 (VoidTextInput)
+import { TextInput } from "get ActivityIndicator";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+const KeyboardThemes = ME.KeyboardThemes;
 let obj = {};
-obj = { fontFamily: tmp2.Fonts.PRIMARY_MEDIUM, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
+obj = { fontSize: 16, alignSelf: "center", fontFamily: ME.Fonts.PRIMARY_MEDIUM, color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
 obj.input = obj;
-obj1 = { color: importDefault(dependencyMap[5]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
-obj.placeholderTextColor = obj1;
-let closure_6 = obj1.createStyles(obj);
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef((style, ref) => {
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+obj.placeholderTextColor = _createForOfIteratorHelperLoose;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const forwardRefResult = require("result").forwardRef((style, ref) => {
   let obj = Object.create(null);
   obj.style = 0;
   const merged = Object.assign(style, obj);
   const tmp3 = callback();
-  obj = ref(dependencyMap[6]);
+  obj = require(3976) /* AccessibilityAnnouncer */;
   const theme = obj.useThemeContext().theme;
-  const obj2 = ref(dependencyMap[6]);
-  const unsafe_rawColors = importDefault(dependencyMap[5]).unsafe_rawColors;
-  const tmp5 = ref(dependencyMap[6]).isThemeDark(theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
+  const obj2 = require(3976) /* AccessibilityAnnouncer */;
+  const unsafe_rawColors = importDefault(689).unsafe_rawColors;
+  const tmp5 = require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
   obj = { ref, style: items };
-  const items = [tmp3.input, style.style];
-  const isThemeDarkResult = ref(dependencyMap[6]).isThemeDark(theme);
+  items = [tmp3.input, style.style];
+  const isThemeDarkResult = require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme);
   const tmp6 = jsx;
   const tmp7 = TextInput;
-  obj.keyboardAppearance = ref(dependencyMap[6]).isThemeDark(theme) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
+  obj.keyboardAppearance = require(3976) /* AccessibilityAnnouncer */.isThemeDark(theme) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   obj.placeholderTextColor = tmp3.placeholderTextColor.color;
-  const obj4 = ref(dependencyMap[6]);
+  const obj4 = require(3976) /* AccessibilityAnnouncer */;
   let hexWithOpacityResult = tmp5;
   if (obj5.isAndroid()) {
-    hexWithOpacityResult = ref(dependencyMap[8]).hexWithOpacity(tmp5, 0.5);
-    const obj6 = ref(dependencyMap[8]);
+    hexWithOpacityResult = require(3974) /* hexToRgb */.hexWithOpacity(tmp5, 0.5);
+    const obj6 = require(3974) /* hexToRgb */;
   }
   obj.selectionColor = hexWithOpacityResult;
   const merged1 = Object.assign(merged);
   return tmp6(tmp7, obj);
 });
 forwardRefResult.displayName = "VoidTextInput";
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/void/TextInput/native/TextInput.tsx");
+const result = require("ME").fileFinishedImporting("design/void/TextInput/native/TextInput.tsx");
 
 export default forwardRefResult;

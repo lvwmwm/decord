@@ -1,15 +1,18 @@
-// Module ID: 14528
-// Function ID: 109405
+// Module ID: 14642
+// Function ID: 111565
 // Name: MFAOptionScreen
-// Dependencies: []
+// Dependencies: [27, 33, 9197, 14643, 5121, 4541, 4126, 14644, 9222, 2]
 // Exports: default
 
-// Module 14528 (MFAOptionScreen)
-const ScrollView = require(dependencyMap[0]).ScrollView;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = _module);
-const _module1 = require(dependencyMap[9]);
-const result = _module1.fileFinishedImporting("modules/mfa/native/screens/MfaOptionScreen.tsx");
+// Module 14642 (MFAOptionScreen)
+import { ScrollView } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+
+let closure_4;
+let closure_5;
+let closure_6;
+({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = jsxProd);
+const result = require("useWideAuthView").fileFinishedImporting("modules/mfa/native/screens/MfaOptionScreen.tsx");
 
 export default function MFAOptionScreen(arg0) {
   let content;
@@ -23,8 +26,8 @@ export default function MFAOptionScreen(arg0) {
   let subtitle;
   ({ headerImage, subtitle, screenProps, error } = arg0);
   ({ headerText, input, submit, mfaMethod, content } = arg0);
-  const tmp = importDefault(dependencyMap[2])();
-  let obj = importDefault(dependencyMap[3]);
+  const tmp = importDefault(9197)();
+  let obj = importDefault(14643);
   const screenStyles = obj.useScreenStyles(tmp);
   const first = screenProps.mfaChallenge.methods[0];
   let type;
@@ -39,36 +42,36 @@ export default function MFAOptionScreen(arg0) {
   if (tmp7) {
     tmp7 = headerImage;
   }
-  const items = [tmp7, callback(require(dependencyMap[6]).Text, { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText }), , ];
+  const items = [tmp7, callback(require(4126) /* Text */.Text, { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText }), , ];
   let tmp8 = null != subtitle;
   if (tmp8) {
-    const obj3 = { cachedAt: "<string:3992342784>", edpbxy: "<string:410073697>", children: subtitle };
-    tmp8 = callback(require(dependencyMap[6]).Text, obj3);
+    const obj3 = { variant: "heading-sm/normal", color: "text-default", children: subtitle };
+    tmp8 = callback(require(4126) /* Text */.Text, obj3);
   }
   items[2] = tmp8;
   let tmp12 = null != error;
   if (tmp12) {
-    const obj4 = { cachedAt: "GESTURE_FULL", edpbxy: "Int8Array", children: error };
-    tmp12 = callback(require(dependencyMap[6]).Text, obj4);
+    const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
+    tmp12 = callback(require(4126) /* Text */.Text, obj4);
   }
   items[3] = tmp12;
   obj1.children = items;
-  const items1 = [closure_5(require(dependencyMap[5]).Stack, obj1), input];
+  const items1 = [closure_5(require(4541) /* Stack */.Stack, obj1), input];
   obj.children = items1;
-  const items2 = [closure_5(require(dependencyMap[5]).Stack, obj), content, ];
+  const items2 = [closure_5(require(4541) /* Stack */.Stack, obj), content, ];
   const obj5 = { style: screenStyles.submit };
   const items3 = [submit, ];
   if (tmp5) {
     const obj6 = { props: screenProps };
-    tmp5 = callback(importDefault(dependencyMap[7]), obj6);
+    tmp5 = callback(importDefault(14644), obj6);
   }
   items3[1] = tmp5;
   obj5.children = items3;
-  items2[2] = closure_5(require(dependencyMap[5]).Stack, obj5);
+  items2[2] = closure_5(require(4541) /* Stack */.Stack, obj5);
   obj.children = items2;
-  const tmp6Result = closure_5(require(dependencyMap[4]).SafeAreaPaddingView, obj);
+  const tmp6Result = closure_5(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
   const obj7 = {};
-  const items4 = [callback(importDefault(dependencyMap[8]), { backgroundImageCover: false }), ];
+  const items4 = [callback(importDefault(9222), { backgroundImageCover: false }), ];
   let tmp23 = tmp6Result;
   if (tmp) {
     const obj8 = { keyboardShouldPersistTaps: "handled", children: tmp6Result };

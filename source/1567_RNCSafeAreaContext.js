@@ -1,9 +1,10 @@
 // Module ID: 1567
-// Function ID: 17630
+// Function ID: 17631
 // Name: RNCSafeAreaContext
-// Dependencies: []
+// Dependencies: [27]
 
 // Module 1567 (RNCSafeAreaContext)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 
 export default TurboModuleRegistry.get("RNCSafeAreaContext");

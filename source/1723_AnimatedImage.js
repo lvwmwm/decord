@@ -1,9 +1,10 @@
 // Module ID: 1723
-// Function ID: 19368
+// Function ID: 19369
 // Name: AnimatedImage
-// Dependencies: []
+// Dependencies: [27, 1616]
 
 // Module 1723 (AnimatedImage)
-const _module = require(dependencyMap[1]);
+import createAnimatedComponent from "createAnimatedComponent";
 
-export const AnimatedImage = _module.createAnimatedComponent(require(dependencyMap[0]).Image);
+
+export const AnimatedImage = createAnimatedComponent.createAnimatedComponent(require("get ActivityIndicator").Image);

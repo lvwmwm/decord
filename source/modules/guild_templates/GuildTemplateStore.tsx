@@ -1,52 +1,59 @@
-// Module ID: 6688
-// Function ID: 51733
+// Module ID: 6693
+// Function ID: 51765
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5720, 5719, 566, 686, 2]
 
-// Module 6688 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6693 (_createForOfIteratorHelperLoose)
+import createResolvedGuildTemplate from "createResolvedGuildTemplate";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -104,7 +111,7 @@ function updateGuildTemplate(code) {
     arg1(obj);
     const _Map = Map;
     value = new.target;
-    const map = new Map(map);
+    map = new Map(map);
     const result = map.set(code, obj);
   }
 }
@@ -112,41 +119,36 @@ function handleGuildTemplateResolveSuccess(guildTemplate) {
   resolveGuildTemplate(guildTemplate.guildTemplate);
 }
 function resolveGuildTemplate(code) {
-  const importDefault = code;
+  let closure_0 = code;
   updateGuildTemplate(code.code, (arg0) => {
-    const tmp = arg0(closure_1[6])(arg0);
+    const tmp = code(outer1_1[6])(code);
     for (const key10011 in tmp) {
       let tmp2 = key10011;
       arg0[key10011] = tmp[key10011];
+      continue;
     }
   });
 }
 function handleGuildTemplateResolveFailure(code) {
   updateGuildTemplate(code.code, (arg0) => {
-    arg0.state = constants.EXPIRED;
+    arg0.state = outer1_7.EXPIRED;
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const GuildTemplateStates = arg1(dependencyMap[5]).GuildTemplateStates;
-const map = new Map();
-let closure_9 = null;
-let tmp3 = (Store) => {
+let map = new Map();
+let c9 = null;
+let tmp3 = ((Store) => {
   class GuildTemplateStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GuildTemplateStore);
-      obj = closure_5(GuildTemplateStore);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      tmp = outer1_2(this, GuildTemplateStore);
+      obj = outer1_5(GuildTemplateStore);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -155,13 +157,12 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = GuildTemplateStore;
   callback2(GuildTemplateStore, Store);
   let obj = {
     key: "getGuildTemplate",
     value(arg0) {
       if (null != arg0) {
-        return store.get(arg0);
+        return outer1_8.get(arg0);
       }
     }
   };
@@ -169,7 +170,7 @@ let tmp3 = (Store) => {
   obj = {
     key: "getGuildTemplates",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[1] = obj;
@@ -177,18 +178,18 @@ let tmp3 = (Store) => {
     key: "getForGuild",
     value(arg0) {
       let value;
-      const tmp = callback3(store.keys());
+      const tmp = outer1_10(outer1_8.keys());
       const iter = tmp();
       let iter2 = iter;
       if (!iter.done) {
         while (true) {
-          let tmp2 = store;
-          value = store.get(iter2.value);
+          let tmp2 = outer1_8;
+          value = outer1_8.get(iter2.value);
           if (null != value) {
             if ("sourceGuildId" in value) {
               if (value.sourceGuildId === arg0) {
-                let tmp4 = constants;
-                if (value.state !== constants.EXPIRED) {
+                let tmp4 = outer1_7;
+                if (value.state !== outer1_7.EXPIRED) {
                   break;
                 }
               }
@@ -205,16 +206,16 @@ let tmp3 = (Store) => {
   items[3] = {
     key: "getDisplayedGuildTemplateCode",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   return callback(GuildTemplateStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "GuildTemplateStore";
-tmp3 = new tmp3(importDefault(dependencyMap[8]), {
+tmp3 = new tmp3(require("dispatcher"), {
   GUILD_TEMPLATE_RESOLVE: function handleGuildTemplateResolve(code) {
     code = code.code;
-    const map = new Map(map);
+    map = new Map(map);
     const result = map.set(code, { code, state: GuildTemplateStates.RESOLVING });
   },
   GUILD_TEMPLATE_CREATE_SUCCESS: handleGuildTemplateResolveSuccess,
@@ -223,19 +224,19 @@ tmp3 = new tmp3(importDefault(dependencyMap[8]), {
   GUILD_TEMPLATE_LOAD_FOR_GUILD_SUCCESS: function handleGuildTemplateLoadForGuildSuccess(guildTemplates) {
     guildTemplates = guildTemplates.guildTemplates;
     const item = guildTemplates.forEach((arg0) => {
-      callback(arg0);
+      outer1_14(arg0);
     });
   },
   GUILD_TEMPLATE_RESOLVE_FAILURE: handleGuildTemplateResolveFailure,
   GUILD_TEMPLATE_DELETE_SUCCESS: handleGuildTemplateResolveFailure,
   GUILD_TEMPLATE_ACCEPT: function handleGuildTemplateAccept(code) {
     updateGuildTemplate(code.code, (arg0) => {
-      arg0.state = constants.ACCEPTING;
+      arg0.state = outer1_7.ACCEPTING;
     });
   },
   GUILD_TEMPLATE_ACCEPT_SUCCESS: function handleGuildTemplateAcceptSuccess(code) {
     updateGuildTemplate(code.code, (usageCount) => {
-      usageCount.state = constants.ACCEPTED;
+      usageCount.state = outer1_7.ACCEPTED;
       usageCount = usageCount.usageCount;
       let num = 0;
       if (null != usageCount) {
@@ -246,16 +247,16 @@ tmp3 = new tmp3(importDefault(dependencyMap[8]), {
   },
   GUILD_TEMPLATE_ACCEPT_FAILURE: function handleAcceptInviteFailure(code) {
     updateGuildTemplate(code.code, (arg0) => {
-      arg0.state = constants.RESOLVED;
+      arg0.state = outer1_7.RESOLVED;
     });
   },
   GUILD_TEMPLATE_MODAL_SHOW: function handleGuildTemplateModalShow(code) {
     code = code.code;
   },
   GUILD_TEMPLATE_MODAL_HIDE: function handleGuildTemplateModalHide() {
-    let closure_9 = null;
+    let c9 = null;
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_templates/GuildTemplateStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_templates/GuildTemplateStore.tsx");
 
 export default tmp3;

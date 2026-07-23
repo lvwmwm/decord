@@ -1,35 +1,35 @@
 // Module ID: 23
 // Function ID: 951
 // Name: extractTimestamp
-// Dependencies: []
+// Dependencies: [6, 7, 24, 2]
 // Exports: age, atNextMillisecond, atPreviousMillisecond, compare, fromTimestampWithSequence, isProbablyAValidSnowflake
 
 // Module 23 (extractTimestamp)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 function extractTimestamp(arg0) {
-  return Math.floor(Number(arg0) / 4194304) + closure_4;
+  return Math.floor(Number(arg0) / 4194304) + c4;
 }
 function fromTimestamp(arg0) {
-  const diff = arg0 - closure_4;
+  const diff = arg0 - c4;
   let str = "0";
   if (diff > 0) {
-    const obj = importDefault(dependencyMap[2])(diff);
-    str = importDefault(dependencyMap[2])(diff).shiftLeft(22).toString();
-    const str2 = importDefault(dependencyMap[2])(diff).shiftLeft(22);
+    const obj = importDefault(24)(diff);
+    str = importDefault(24)(diff).shiftLeft(22).toString();
+    const str2 = importDefault(24)(diff).shiftLeft(22);
   }
   return str;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = 1420070400000;
-const tmp2 = () => {
+let c4 = 1420070400000;
+let tmp2 = (() => {
   class SnowflakeSequence {
     constructor() {
-      tmp = closure_2(this, SnowflakeSequence);
+      tmp = outer1_2(this, SnowflakeSequence);
       this.seq = 0;
       return;
     }
   }
-  const importDefault = SnowflakeSequence;
   let obj = {
     key: "next",
     value() {
@@ -61,23 +61,23 @@ const tmp2 = () => {
   };
   items[2] = obj;
   return callback(SnowflakeSequence, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/shared/utils/SnowflakeUtils.tsx");
+})();
+const result = require("Integer").fileFinishedImporting("../discord_common/js/shared/utils/SnowflakeUtils.tsx");
 
 export const DISCORD_EPOCH = 1420070400000;
 export const MAX_SNOWFLAKE_SEQ = 4095;
 export { extractTimestamp };
 export { fromTimestamp };
 export const fromTimestampWithSequence = function fromTimestampWithSequence(arg0, next) {
-  const diff = arg0 - closure_4;
+  const diff = arg0 - c4;
   let num = 0;
   if (diff > 0) {
     num = diff;
   }
-  const tmp2 = importDefault(dependencyMap[2]);
-  const tmp2Result = importDefault(dependencyMap[2])(num);
-  const shiftLeftResult = importDefault(dependencyMap[2])(num).shiftLeft(22);
-  return importDefault(dependencyMap[2])(num).shiftLeft(22).add(next.next()).toString();
+  const tmp2 = importDefault(24);
+  const tmp2Result = importDefault(24)(num);
+  const shiftLeftResult = importDefault(24)(num).shiftLeft(22);
+  return importDefault(24)(num).shiftLeft(22).add(next.next()).toString();
 };
 export const atPreviousMillisecond = function atPreviousMillisecond(arg0) {
   return fromTimestamp(extractTimestamp(arg0) - 1);
@@ -121,11 +121,11 @@ export const isProbablyAValidSnowflake = function isProbablyAValidSnowflake(arg0
     return false;
   } else {
     if (obj.test(tmp)) {
-      return extractTimestamp(tmp) >= closure_4;
+      return extractTimestamp(tmp) >= c4;
     } else {
       return false;
     }
-    const obj = /^\d{17,19}$/;
+    obj = /^\d{17,19}$/;
   }
 };
 export const SnowflakeSequence = tmp2;

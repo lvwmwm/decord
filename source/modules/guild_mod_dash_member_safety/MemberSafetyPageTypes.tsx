@@ -1,20 +1,19 @@
-// Module ID: 15181
-// Function ID: 114469
+// Module ID: 15297
+// Function ID: 116639
 // Name: SUBMITTED
-// Dependencies: []
+// Dependencies: [3950, 2]
 
-// Module 15181 (SUBMITTED)
+// Module 15297 (SUBMITTED)
 const obj = { ALL_MEMBERS: "ALL_MEMBERS" };
-const SUBMITTED = require(dependencyMap[0]).GuildJoinRequestApplicationStatuses.SUBMITTED;
+const SUBMITTED = require("isTermsFormField").GuildJoinRequestApplicationStatuses.SUBMITTED;
 obj.PENDING = SUBMITTED;
 obj[SUBMITTED] = "PENDING";
-const REJECTED = require(dependencyMap[0]).GuildJoinRequestApplicationStatuses.REJECTED;
+const REJECTED = require("isTermsFormField").GuildJoinRequestApplicationStatuses.REJECTED;
 obj.REJECTED = REJECTED;
 obj[REJECTED] = "REJECTED";
-const APPROVED = require(dependencyMap[0]).GuildJoinRequestApplicationStatuses.APPROVED;
+const APPROVED = require("isTermsFormField").GuildJoinRequestApplicationStatuses.APPROVED;
 obj.APPROVED = APPROVED;
 obj[APPROVED] = "APPROVED";
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPageTypes.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyPageTypes.tsx");
 
 export const MemberSafetyPageTab = obj;

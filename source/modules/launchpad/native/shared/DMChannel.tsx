@@ -1,31 +1,33 @@
-// Module ID: 15556
-// Function ID: 118679
+// Module ID: 15673
+// Function ID: 120852
 // Name: usePrivateChannelPressEvents
-// Dependencies: []
+// Dependencies: [31, 4326, 33, 4138, 9099, 4130, 689, 15659, 14872, 14206, 21, 4549, 15660, 4660, 15672, 15663, 10255, 3808, 4320, 2]
 
-// Module 15556 (usePrivateChannelPressEvents)
+// Module 15673 (usePrivateChannelPressEvents)
+import importAllResult from "result";
+import { UnreadSetting } from "ReadStateTypes";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function usePrivateChannelPressEvents(channel, flag) {
-  flag = channel;
-  const importDefault = flag;
+  let closure_0 = channel;
+  let closure_1 = flag;
   const items = [channel.id, flag];
   const items1 = [channel.id];
   return {
     onPress: importAllResult.useCallback(() => {
-      let obj = arg0(closure_2[3]);
-      obj = { navigationReplace: arg1 };
-      obj.transitionToChannel(arg0.id, obj);
+      let obj = channel(outer1_2[3]);
+      obj = { navigationReplace: closure_1 };
+      obj.transitionToChannel(channel.id, obj);
     }, items),
-    onLongPress: importAllResult.useCallback(() => arg0(closure_2[4]).openChannelLongPressActionSheet(arg0.id), items1)
+    onLongPress: importAllResult.useCallback(() => channel(outer1_2[4]).openChannelLongPressActionSheet(channel.id), items1)
   };
 }
-const importAllResult = importAll(dependencyMap[0]);
-const UnreadSetting = arg1(dependencyMap[1]).UnreadSetting;
-const jsx = arg1(dependencyMap[2]).jsx;
 let obj = { pressable: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
 obj.pressableUnderlayColor = obj;
-let closure_6 = arg1(dependencyMap[5]).createStyles(obj);
-const obj2 = arg1(dependencyMap[5]);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function DMChannel(navigationReplace) {
   let channel;
   let muted;
@@ -38,13 +40,13 @@ const memoResult = importAllResult.memo(function DMChannel(navigationReplace) {
     flag = false;
   }
   const tmp = callback();
-  let obj = arg1(dependencyMap[8]);
+  let obj = require(14872) /* useBaseChannelUnreadBadgeState */;
   const baseChannelUnreadBadgeState = obj.useBaseChannelUnreadBadgeState(channel, muted);
   const unread = baseChannelUnreadBadgeState.unread;
-  const tmp4 = importDefault(dependencyMap[9])(channel, { unread });
+  const tmp4 = importDefault(14206)(channel, { unread });
   let extractTimestampResult;
   if (null != tmp4) {
-    let obj1 = importDefault(dependencyMap[10]);
+    let obj1 = importDefault(21);
     extractTimestampResult = obj1.extractTimestamp(tmp4.id);
   }
   let str = "text-muted";
@@ -54,29 +56,29 @@ const memoResult = importAllResult.memo(function DMChannel(navigationReplace) {
       str = "text-default";
     }
   }
-  let obj2 = arg1(dependencyMap[11]);
+  let obj2 = require(4549) /* getFontScale */;
   const fontScale = obj2.useFontScale();
-  const tmp2 = importDefault(dependencyMap[7])();
+  const tmp2 = importDefault(15659)();
   obj = { style: items, underlayColor: tmp.pressableUnderlayColor.backgroundColor };
-  const items = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
+  items = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
   const merged = Object.assign(usePrivateChannelPressEvents(channel, flag));
   obj = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount: baseChannelUnreadBadgeState.mentionCount };
   const tmp10 = jsx;
-  const tmp9 = importDefault(dependencyMap[12]);
+  const tmp9 = importDefault(15660);
   obj1 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted };
-  obj.unreadBadge = jsx(importDefault(dependencyMap[15]), obj1);
+  obj.unreadBadge = jsx(importDefault(15663), { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted });
   let tmp13 = null != tmp4;
   if (tmp13) {
-    obj2 = { channel, message: tmp4, color: str, muted, layout: arg1(dependencyMap[17]).ChannelListLayoutTypes.COMPACT };
-    tmp13 = jsx(arg1(dependencyMap[16]).ChannelRowPreview, obj2);
+    obj2 = { channel, message: tmp4, color: str, muted, layout: require(3808) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT };
+    tmp13 = jsx(require(10255) /* PreviewIcon */.ChannelRowPreview, { channel, message: tmp4, color: str, muted, layout: require(3808) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT });
   }
   obj.subtitle = tmp13;
   obj.latestMessageTimestamp = extractTimestampResult;
-  obj.channelName = importDefault(dependencyMap[18])(channel);
+  obj.channelName = importDefault(4320)(channel);
   obj.fontScale = fontScale;
-  obj["children"] = importDefault(dependencyMap[14])(obj);
-  return tmp9(tmp10(arg1(dependencyMap[13]).PressableHighlight, obj));
+  obj["children"] = importDefault(15672)(obj);
+  return tmp9(tmp10(require(4660) /* PressableBase */.PressableHighlight, obj));
 });
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/launchpad/native/shared/DMChannel.tsx");
 
 export default memoResult;

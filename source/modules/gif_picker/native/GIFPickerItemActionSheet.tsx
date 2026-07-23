@@ -1,60 +1,59 @@
-// Module ID: 9586
-// Function ID: 74675
+// Module ID: 9593
+// Function ID: 74716
 // Name: GIFPickerItemActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 477, 9583, 9576, 1450, 4098, 3831, 1212, 9594, 4543, 5187, 5085, 2]
 // Exports: default
 
-// Module 9586 (GIFPickerItemActionSheet)
+// Module 9593 (GIFPickerItemActionSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "jsxProd";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 let num = 0;
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
-let obj3 = arg1(dependencyMap[5]);
-if (obj3.isAndroid()) {
-  num = importDefault(dependencyMap[4]).space.PX_16;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+if (set.isAndroid()) {
+  num = require("_createForOfIteratorHelperLoose").space.PX_16;
 }
-obj.paddingBottom = num;
-obj.contentWrapper = obj;
-const obj1 = { <string:3814666730>: 8, <string:1280564396>: 18, marginTop: importDefault(dependencyMap[4]).space.PX_8 };
-obj.gifContainer = obj1;
-const tmp2 = arg1(dependencyMap[2]);
-obj.gifImage = { borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-obj3 = { positionOffsetY: "hidden", RowButtonIconProps: 1, canPostPolls: true, "Null": "/assets/design/components/Icon/native/redesign/generated/images", marginTop: importDefault(dependencyMap[4]).space.PX_16 };
-obj.favoriteButtonContainer = obj3;
-let closure_7 = obj.createStyles(obj);
-const obj2 = { borderRadius: importDefault(dependencyMap[4]).radii.xs, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/gif_picker/native/GIFPickerItemActionSheet.tsx");
+_createForOfIteratorHelperLoose.paddingBottom = num;
+_createForOfIteratorHelperLoose.contentWrapper = _createForOfIteratorHelperLoose;
+let obj1 = { flexDirection: "column", alignItems: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.gifContainer = obj1;
+_createForOfIteratorHelperLoose.gifImage = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+set = { flex: 1, flexDirection: "row", alignItems: "stretch", width: "100%", marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.favoriteButtonContainer = set;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = set.fileFinishedImporting("modules/gif_picker/native/GIFPickerItemActionSheet.tsx");
 
 export default function GIFPickerItemActionSheet(item) {
   item = item.item;
-  const arg1 = item;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[6]);
-  let obj1 = arg1(dependencyMap[7]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = item(width[6]);
+  let obj1 = item(width[7]);
   const isFavoriteGIF = obj.useIsFavoriteGIF(obj1.gifUrlKey(item.url));
-  const importDefault = isFavoriteGIF;
-  const size = importDefault(dependencyMap[8])();
-  const width = size.width;
-  const dependencyMap = width;
+  const size = isFavoriteGIF(width[8])();
+  width = size.width;
   const height = size.height;
-  const React = height;
   const items = [, , , ];
   ({ width: arr[0], height: arr[1] } = item);
   items[2] = width;
   items[3] = height;
-  const memo = React.useMemo(() => {
+  const memo = height.useMemo(() => {
     const bound = Math.min((width - 2 * isFavoriteGIF(width[4]).space.PX_16) / item.width, 0.5 * height / item.height);
     return { width: item.width * bound, height: item.height * bound };
   }, items);
-  const callback = React.useCallback(() => {
+  const callback = height.useCallback(() => {
     isFavoriteGIF(width[9]).hideActionSheet();
   }, []);
-  const View = callback;
   const items1 = [callback, isFavoriteGIF, item];
-  const callback1 = React.useCallback(() => {
+  const callback1 = height.useCallback(() => {
     callback();
     let obj = item(width[7]);
     if (isFavoriteGIF) {
@@ -76,7 +75,7 @@ export default function GIFPickerItemActionSheet(item) {
     }
   }, items1);
   const items2 = [callback1, isFavoriteGIF];
-  const callback2 = React.useCallback(() => {
+  const callback2 = height.useCallback(() => {
     const obj = {};
     let str = "primary";
     if (isFavoriteGIF) {
@@ -88,7 +87,7 @@ export default function GIFPickerItemActionSheet(item) {
     const string = intl.string;
     const t = item(width[11]).t;
     if (isFavoriteGIF) {
-      let stringResult = string(t.5/NS74);
+      let stringResult = string(t["5/NS74"]);
     } else {
       stringResult = string(t.nIH0v8);
     }
@@ -100,9 +99,9 @@ export default function GIFPickerItemActionSheet(item) {
   obj = { style: tmp.contentWrapper };
   obj1 = { style: tmp.gifContainer };
   const items3 = [tmp.gifImage, memo];
-  const items4 = [callback1(importDefault(dependencyMap[15]), { style: items3, source: { uri: item.src } }), callback1(View, { style: tmp.favoriteButtonContainer, children: callback2() })];
+  const items4 = [callback1(isFavoriteGIF(width[15]), { style: items3, source: { uri: item.src } }), callback1(callback, { style: tmp.favoriteButtonContainer, children: callback2() })];
   obj1.children = items4;
-  obj.children = callback(View, obj1);
-  obj.children = callback1(View, obj);
-  return callback1(arg1(dependencyMap[14]).BottomSheet, obj);
+  obj.children = callback(callback, obj1);
+  obj.children = callback1(callback, obj);
+  return callback1(item(width[14]).BottomSheet, obj);
 };

@@ -1,46 +1,51 @@
-// Module ID: 8513
-// Function ID: 67911
+// Module ID: 8519
+// Function ID: 67948
 // Name: useDisplayNameStylesEffectDefaultColors
-// Dependencies: []
+// Dependencies: [31, 1861, 665, 3834, 689, 1862, 2]
 // Exports: default
 
-// Module 8513 (useDisplayNameStylesEffectDefaultColors)
-let closure_3 = importAll(dependencyMap[0]);
-({ DISPLAY_NAME_STYLES_GRADIENT_PRESETS: closure_4, DISPLAY_NAME_STYLES_GUMMY_PRESETS: closure_5, DISPLAY_NAME_STYLES_PRISM_PRESETS: closure_6 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEffectDefaultColors.native.tsx");
+// Module 8519 (useDisplayNameStylesEffectDefaultColors)
+import result from "result";
+import items3 from "items3";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let require = arg1;
+({ DISPLAY_NAME_STYLES_GRADIENT_PRESETS: closure_4, DISPLAY_NAME_STYLES_GUMMY_PRESETS: closure_5, DISPLAY_NAME_STYLES_PRISM_PRESETS: closure_6 } = items3);
+const result = require("pad2").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEffectDefaultColors.native.tsx");
 
 export default function useDisplayNameStylesEffectDefaultColors() {
-  const obj = arg1(dependencyMap[2]);
-  const hex2intResult = obj.hex2int(arg1(dependencyMap[3]).useToken(importDefault(dependencyMap[4]).colors.TEXT_DEFAULT));
-  const arg1 = hex2intResult;
-  const items = [hex2intResult];
+  let obj = require(665) /* pad2 */;
+  const hex2intResult = obj.hex2int(require(3834) /* map */.useToken(importDefault(689).colors.TEXT_DEFAULT));
+  require = hex2intResult;
+  let items = [hex2intResult];
   return React.useMemo(() => {
-    const obj = { [closure_0(closure_2[5]).DisplayNameEffect.SOLID]: items };
-    const items = [hex2intResult];
+    const obj = { [outer1_0(outer1_2[5]).DisplayNameEffect.SOLID]: items };
+    items = [closure_0];
     const items1 = [];
-    HermesBuiltin.arraySpread(closure_4[0].colors, 0);
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.GRADIENT] = items1;
+    HermesBuiltin.arraySpread(outer1_4[0].colors, 0);
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.GRADIENT] = items1;
     const items2 = [];
-    HermesBuiltin.arraySpread(closure_4[0].colors, 0);
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.GLOW] = items2;
+    HermesBuiltin.arraySpread(outer1_4[0].colors, 0);
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.GLOW] = items2;
     const items3 = [];
-    HermesBuiltin.arraySpread(closure_5[0], 0);
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.GUMMY] = items3;
+    HermesBuiltin.arraySpread(outer1_5[0], 0);
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.GUMMY] = items3;
     const items4 = [];
-    HermesBuiltin.arraySpread(closure_6[0], 0);
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.PRISM] = items4;
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.TOON] = ["r"];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.NEON] = ["isArray"];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.POP] = ["<string:1075904514>"];
-    const items5 = [hex2intResult];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.TEST_1] = items5;
-    const items6 = [hex2intResult];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.TEST_2] = items6;
-    const items7 = [hex2intResult];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.TEST_3] = items7;
-    const items8 = [hex2intResult];
-    obj[hex2intResult(closure_2[5]).DisplayNameEffect.TEST_4] = items8;
+    HermesBuiltin.arraySpread(outer1_6[0], 0);
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.PRISM] = items4;
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.TOON] = [15999128];
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.NEON] = [6888941];
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.POP] = [1036166];
+    const items5 = [closure_0];
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.TEST_1] = items5;
+    const items6 = [closure_0];
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.TEST_2] = items6;
+    const items7 = [closure_0];
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.TEST_3] = items7;
+    const items8 = [closure_0];
+    obj[hex2intResult(outer1_2[5]).DisplayNameEffect.TEST_4] = items8;
     return obj;
   }, items);
 };

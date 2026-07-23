@@ -1,27 +1,29 @@
-// Module ID: 11408
-// Function ID: 88745
+// Module ID: 11418
+// Function ID: 88795
 // Name: useIsHubForGuild
-// Dependencies: []
+// Dependencies: [1838, 653, 566, 2]
 // Exports: default
 
-// Module 11408 (useIsHubForGuild)
-let closure_2 = importDefault(dependencyMap[0]);
-const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/hub/useIsHubForGuild.tsx");
+// Module 11418 (useIsHubForGuild)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { GuildFeatures } from "ME";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/hub/useIsHubForGuild.tsx");
 
 export default function useIsHubForGuild(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [arg0];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    if (null == arg0) {
+  return _require(566).useStateFromStores(items, () => {
+    if (null == closure_0) {
       return false;
     } else {
-      const guild = guild.getGuild(arg0);
+      const guild = outer1_2.getGuild(closure_0);
       let hasItem;
       if (null != guild) {
         const features = guild.features;
-        hasItem = features.has(constants.HUB);
+        hasItem = features.has(outer1_3.HUB);
       }
       return null != hasItem && hasItem;
     }

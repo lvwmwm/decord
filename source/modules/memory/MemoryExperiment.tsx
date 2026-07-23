@@ -1,14 +1,16 @@
-// Module ID: 13219
-// Function ID: 100260
-// Dependencies: []
+// Module ID: 13333
+// Function ID: 102416
+// Dependencies: [1428, 2]
 
-// Module 13219
-const _module = require(dependencyMap[0]);
-let closure_2 = _module.createApexExperiment({ defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } });
+// Module 13333
+import ApexExperiment from "ApexExperiment";
+
+let obj = { name: "2025-12-shadow-node-spike", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_2 = ApexExperiment.createApexExperiment(obj);
 const interval = setInterval(() => {
   if (undefined === enabled) {
     const obj = { location: "startMemoryExperiment" };
-    const enabled = config.getConfig(obj).enabled;
+    enabled = config.getConfig(obj).enabled;
   }
   if (enabled) {
     globalThis.gc();
@@ -17,5 +19,4 @@ const interval = setInterval(() => {
     clearInterval(closure_1);
   }
 }, 60000);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/memory/MemoryExperiment.tsx");
+const result = require("set").fileFinishedImporting("modules/memory/MemoryExperiment.tsx");

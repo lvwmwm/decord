@@ -1,31 +1,30 @@
-// Module ID: 16442
-// Function ID: 126985
+// Module ID: 16559
+// Function ID: 129159
 // Name: _getCurrentTask
-// Dependencies: []
+// Dependencies: [5, 653, 4942, 480, 4030, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 16442 (_getCurrentTask)
+// Module 16559 (_getCurrentTask)
+import set from "set";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _getCurrentTask() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getCurrentTask = obj;
   return obj(...arguments);
 }
 function _completeTask() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _completeTask = obj;
   return obj(...arguments);
 }
 function _resendVerificationCode() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _resendVerificationCode = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
+const result = require("makeRequest").fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
 
 export const getCurrentTask = function getCurrentTask() {
   return _getCurrentTask(...arguments);

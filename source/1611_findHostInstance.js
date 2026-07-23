@@ -1,9 +1,11 @@
 // Module ID: 1611
-// Function ID: 17883
+// Function ID: 17884
 // Name: findHostInstance
-// Dependencies: []
+// Dependencies: [1585, 119, 1593, 276]
 
 // Module 1611 (findHostInstance)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.findHostInstance = function findHostInstance(_componentRef) {
   _componentRef = _componentRef._componentRef;
   let tmp;
@@ -12,13 +14,13 @@ arg5.findHostInstance = function findHostInstance(_componentRef) {
       if (_componentRef.__nativeTag) {
         tmp = tmp2;
       }
-      const tmp2 = _componentRef;
+      tmp2 = _componentRef;
     }
   }
   if (undefined === tmp) {
     if (undefined === prop1) {
       if (obj2.isFabric()) {
-        const tmp11 = arg1(arg6[1]);
+        const tmp11 = require(119) /* ReactFabric */;
         let prop;
         if (null != tmp11) {
           if (null != tmp12.default) {
@@ -30,9 +32,9 @@ arg5.findHostInstance = function findHostInstance(_componentRef) {
         } else if (null != tmp12) {
           findHostInstance_DEPRECATED = tmp11.findHostInstance_DEPRECATED;
         }
-        let prop1 = findHostInstance_DEPRECATED;
+        prop1 = findHostInstance_DEPRECATED;
       } else {
-        const tmp5 = arg1(arg6[3]);
+        const tmp5 = require(276);
         prop1 = undefined;
         if (null != tmp5) {
           if (null != tmp5.default) {
@@ -47,7 +49,7 @@ arg5.findHostInstance = function findHostInstance(_componentRef) {
           prop1 = prop2;
         }
       }
-      const obj2 = arg1(arg6[0]);
+      obj2 = require(1585) /* isJest */;
     }
     if (!obj.isFabric()) {
       let _componentRef2 = _componentRef._componentRef;
@@ -55,7 +57,7 @@ arg5.findHostInstance = function findHostInstance(_componentRef) {
       _componentRef2 = _componentRef;
     }
     tmp = prop1(_componentRef2);
-    const obj = arg1(arg6[0]);
+    obj = require(1585) /* isJest */;
     const tmp19 = prop1;
   }
   return tmp;

@@ -1,10 +1,19 @@
-// Module ID: 9339
-// Function ID: 72972
+// Module ID: 9346
+// Function ID: 73013
 // Name: trackOnEmojiPickerOpened
-// Dependencies: []
+// Dependencies: [31, 4991, 1348, 1906, 653, 1852, 1314, 9334, 9335, 4324, 3775, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 9339 (trackOnEmojiPickerOpened)
+// Module 9346 (trackOnEmojiPickerOpened)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { EmojiIntention } from "set";
+import { ExpressionPickerViewType } from "ExpressionPickerViewType";
+
+const require = arg1;
 function trackOnEmojiPickerOpened(arg0) {
   let analyticsObject;
   let containerWidth;
@@ -17,7 +26,7 @@ function trackOnEmojiPickerOpened(arg0) {
   let visibleTopEmojis;
   ({ intention, analyticsObject } = arg0);
   ({ containerWidth, rowSize, isBurstReaction } = arg0);
-  const channel = channel.getChannel(channelId.getChannelId());
+  channel = channel.getChannel(channelId.getChannelId());
   let guildId;
   if (null != channel) {
     guildId = channel.getGuildId();
@@ -51,7 +60,7 @@ function trackOnEmojiPickerOpened(arg0) {
   }
   const disambiguatedEmojiContext = store.getDisambiguatedEmojiContext(guildId1);
   const customEmoji = disambiguatedEmojiContext.getCustomEmoji();
-  let obj2 = arg1(dependencyMap[7]);
+  let obj2 = require(9334) /* getTopAndNewlyAddedEmojis */;
   let obj = {};
   let guildId2;
   if (null != channel) {
@@ -61,9 +70,9 @@ function trackOnEmojiPickerOpened(arg0) {
   obj.pickerIntention = intention;
   const topAndNewlyAddedEmojis = obj2.getTopAndNewlyAddedEmojis(obj);
   ({ topEmojis, newlyAddedEmojis } = topAndNewlyAddedEmojis);
-  const emojiHotrail = arg1(dependencyMap[8]).getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
+  const emojiHotrail = require(9335) /* getEmojiHotrail */.getEmojiHotrail({ topEmojis, newlyAddedEmojis, rowSize });
   ({ visibleTopEmojis, visibleNewlyAddedEmojis } = emojiHotrail);
-  const obj5 = arg1(dependencyMap[8]);
+  const obj5 = require(9335) /* getEmojiHotrail */;
   if (intention === EmojiIntention.REACTION) {
     let EXPRESSION_PICKER_OPENED = AnalyticEvents.REACTION_PICKER_OPENED;
   } else {
@@ -81,7 +90,7 @@ function trackOnEmojiPickerOpened(arg0) {
       }
       return animated;
     }).length,
-    num_custom_expressions_favorites: prop.filter(importDefault(dependencyMap[10]).isCustomEmoji).length,
+    num_custom_expressions_favorites: prop.filter(importDefault(3775).isCustomEmoji).length,
     num_standard_expressions_favorites: prop.filter((id) => null == id.id).length,
     num_expressions_frecent: substr1.length,
     num_animated_expressions_frecent: substr1.filter((animated) => {
@@ -91,7 +100,7 @@ function trackOnEmojiPickerOpened(arg0) {
       }
       return animated;
     }).length,
-    num_custom_expressions_frecent: substr1.filter(importDefault(dependencyMap[10]).isCustomEmoji).length,
+    num_custom_expressions_frecent: substr1.filter(importDefault(3775).isCustomEmoji).length,
     num_standard_expressions_frecent: substr1.filter((id) => null == id.id).length,
     num_current_guild_expressions: guildEmoji.length,
     num_custom_expressions_total: customEmoji.size,
@@ -112,23 +121,16 @@ function trackOnEmojiPickerOpened(arg0) {
     tmp18 = obj2;
   }
   const merged1 = Object.assign(tmp18);
-  importDefault(dependencyMap[9]).trackWithMetadata(EXPRESSION_PICKER_OPENED, obj);
+  importDefault(4324).trackWithMetadata(EXPRESSION_PICKER_OPENED, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const EmojiIntention = arg1(dependencyMap[5]).EmojiIntention;
-const ExpressionPickerViewType = arg1(dependencyMap[6]).ExpressionPickerViewType;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/emoji_picker/analytics/trackOnEmojiPickerOpened.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/emoji_picker/analytics/trackOnEmojiPickerOpened.tsx");
 
 export default trackOnEmojiPickerOpened;
 export const useTrackOnEmojiPickerOpenedForReactions = function useTrackOnEmojiPickerOpenedForReactions(arg0) {
   let closure_0 = React.useRef(arg0);
   const effect = React.useEffect(() => {
-    if (ref.current.intention === constants.REACTION) {
-      callback(ref.current);
+    if (ref.current.intention === outer1_8.REACTION) {
+      outer1_10(ref.current);
     }
   }, []);
 };

@@ -1,10 +1,22 @@
 // Module ID: 1280
-// Function ID: 14451
+// Function ID: 14452
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1281, 662, 653, 1314, 1315, 566, 587, 22, 686, 2]
 
 // Module 1280 (_isNativeReflectConstruct)
+import MAX_FAVORITES from "MAX_FAVORITES";
+import closure_4 from "ME";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { SystemThemeState } from "SystemThemeState";
+import { ListDensityMode } from "MAX_FAVORITES";
+import ME from "ME";
+import { ExpressionPickerWidths } from "ExpressionPickerViewType";
+
 let CHANNEL_SIDEBAR_WIDTH;
+let closure_10;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,35 +26,26 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const SystemThemeState = arg1(dependencyMap[5]).SystemThemeState;
-const ListDensityMode = arg1(dependencyMap[6]).ListDensityMode;
-const tmp2 = arg1(dependencyMap[7]);
-({ DEFAULT_CHAT_SIDEBAR_WIDTH: closure_10, CHANNEL_SIDEBAR_WIDTH } = tmp2);
-let closure_12 = tmp2.DEFAULT_MESSAGE_REQUEST_SIDEBAR_WIDTH;
-const ExpressionPickerWidths = arg1(dependencyMap[8]).ExpressionPickerWidths;
+({ DEFAULT_CHAT_SIDEBAR_WIDTH: closure_10, CHANNEL_SIDEBAR_WIDTH } = ME);
+let closure_12 = ME.DEFAULT_MESSAGE_REQUEST_SIDEBAR_WIDTH;
 let obj = { DATA_SAVER: "data_saver", STANDARD: "standard", BEST: "best" };
 let closure_14 = (window.innerWidth - CHANNEL_SIDEBAR_WIDTH) / 2;
 const STANDARD = obj.STANDARD;
-let closure_16 = null;
+let c16 = null;
 let closure_17 = {};
-let tmp3 = (DeviceSettingsStore) => {
+let tmp3 = ((DeviceSettingsStore) => {
   class UnsyncedUserSettingsStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, UnsyncedUserSettingsStore);
-      obj = closure_6(UnsyncedUserSettingsStore);
-      tmp2 = closure_5;
-      if (closure_18()) {
+      tmp = outer1_3(this, UnsyncedUserSettingsStore);
+      obj = outer1_6(UnsyncedUserSettingsStore);
+      tmp2 = outer1_5;
+      if (outer1_18()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -51,7 +54,6 @@ let tmp3 = (DeviceSettingsStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = UnsyncedUserSettingsStore;
   callback2(UnsyncedUserSettingsStore, DeviceSettingsStore);
   let obj = {
     key: "initialize",
@@ -60,39 +62,40 @@ let tmp3 = (DeviceSettingsStore) => {
       if (null == arg0) {
         obj = {};
       }
+      const outer1_17 = obj;
       const useSystemTheme = obj.useSystemTheme;
       if (null != useSystemTheme) {
-        if (null != callback(closure_2[9])()) {
+        if (null != outer1_1(outer1_2[9])()) {
           let UNSET = useSystemTheme;
         }
         obj.useSystemTheme = UNSET;
-        let lowQualityImageMode = obj.dataSavingMode;
+        let lowQualityImageMode = outer1_17.dataSavingMode;
         if (null == lowQualityImageMode) {
-          lowQualityImageMode = obj.lowQualityImageMode;
+          lowQualityImageMode = outer1_17.lowQualityImageMode;
         }
-        obj.dataSavingMode = lowQualityImageMode;
-        const hdrDynamicRange = obj.hdrDynamicRange;
+        outer1_17.dataSavingMode = lowQualityImageMode;
+        const hdrDynamicRange = outer1_17.hdrDynamicRange;
         let str2 = "no-limit";
         if (null != hdrDynamicRange) {
           str2 = hdrDynamicRange;
         }
-        obj.hdrDynamicRange = str2;
+        outer1_17.hdrDynamicRange = str2;
       }
-      UNSET = constants.UNSET;
+      UNSET = outer1_8.UNSET;
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "getUserAgnosticState",
     value() {
-      return closure_17;
+      return outer1_17;
     }
   };
   items[1] = obj;
   obj = {
     key: "displayCompactAvatars",
     get() {
-      const displayCompactAvatars = closure_17.displayCompactAvatars;
+      const displayCompactAvatars = outer1_17.displayCompactAvatars;
       return null != displayCompactAvatars && displayCompactAvatars;
     }
   };
@@ -100,16 +103,16 @@ let tmp3 = (DeviceSettingsStore) => {
   items[3] = {
     key: "lowQualityImageMode",
     get() {
-      const lowQualityImageMode = closure_17.lowQualityImageMode;
+      const lowQualityImageMode = outer1_17.lowQualityImageMode;
       return null != lowQualityImageMode && lowQualityImageMode;
     }
   };
   items[4] = {
     key: "videoUploadQuality",
     get() {
-      let videoUploadQuality = closure_17.videoUploadQuality;
+      let videoUploadQuality = outer1_17.videoUploadQuality;
       if (null == videoUploadQuality) {
-        videoUploadQuality = closure_15;
+        videoUploadQuality = outer1_15;
       }
       return videoUploadQuality;
     }
@@ -117,9 +120,9 @@ let tmp3 = (DeviceSettingsStore) => {
   items[5] = {
     key: "dataSavingMode",
     get() {
-      let lowQualityImageMode = closure_17.dataSavingMode;
+      let lowQualityImageMode = outer1_17.dataSavingMode;
       if (null == lowQualityImageMode) {
-        lowQualityImageMode = closure_17.lowQualityImageMode;
+        lowQualityImageMode = outer1_17.lowQualityImageMode;
       }
       return null != lowQualityImageMode && lowQualityImageMode;
     }
@@ -127,9 +130,9 @@ let tmp3 = (DeviceSettingsStore) => {
   items[6] = {
     key: "expressionPickerWidth",
     get() {
-      let MIN = closure_17.expressionPickerWidth;
+      let MIN = outer1_17.expressionPickerWidth;
       if (null == MIN) {
-        MIN = constants3.MIN;
+        MIN = outer1_13.MIN;
       }
       return MIN;
     }
@@ -137,9 +140,9 @@ let tmp3 = (DeviceSettingsStore) => {
   items[7] = {
     key: "messageRequestSidebarWidth",
     get() {
-      let messageRequestSidebarWidth = closure_17.messageRequestSidebarWidth;
+      let messageRequestSidebarWidth = outer1_17.messageRequestSidebarWidth;
       if (null == messageRequestSidebarWidth) {
-        messageRequestSidebarWidth = closure_12;
+        messageRequestSidebarWidth = outer1_12;
       }
       return messageRequestSidebarWidth;
     }
@@ -147,9 +150,9 @@ let tmp3 = (DeviceSettingsStore) => {
   items[8] = {
     key: "threadSidebarWidth",
     get() {
-      let threadSidebarWidth = closure_17.threadSidebarWidth;
+      let threadSidebarWidth = outer1_17.threadSidebarWidth;
       if (null == threadSidebarWidth) {
-        threadSidebarWidth = closure_10;
+        threadSidebarWidth = outer1_10;
       }
       return threadSidebarWidth;
     }
@@ -157,9 +160,9 @@ let tmp3 = (DeviceSettingsStore) => {
   items[9] = {
     key: "postSidebarWidth",
     get() {
-      let postSidebarWidth = closure_17.postSidebarWidth;
+      let postSidebarWidth = outer1_17.postSidebarWidth;
       if (null == postSidebarWidth) {
-        postSidebarWidth = closure_14;
+        postSidebarWidth = outer1_14;
       }
       return postSidebarWidth;
     }
@@ -167,9 +170,9 @@ let tmp3 = (DeviceSettingsStore) => {
   items[10] = {
     key: "callChatSidebarWidth",
     get() {
-      let callChatSidebarWidth = closure_17.callChatSidebarWidth;
+      let callChatSidebarWidth = outer1_17.callChatSidebarWidth;
       if (null == callChatSidebarWidth) {
-        callChatSidebarWidth = closure_10;
+        callChatSidebarWidth = outer1_10;
       }
       return callChatSidebarWidth;
     }
@@ -177,14 +180,14 @@ let tmp3 = (DeviceSettingsStore) => {
   items[11] = {
     key: "homeSidebarWidth",
     get() {
-      let homeSidebarWidth = closure_17.homeSidebarWidth;
+      let homeSidebarWidth = outer1_17.homeSidebarWidth;
       if (null == homeSidebarWidth) {
-        if (null == closure_16) {
+        if (null == outer1_16) {
           const _Math = Math;
           const _window = window;
-          closure_16 = Math.max(0.4 * (window.innerWidth - closure_11), closure_10);
+          outer1_16 = Math.max(0.4 * (window.innerWidth - outer1_11), outer1_10);
         }
-        homeSidebarWidth = closure_16;
+        homeSidebarWidth = outer1_16;
       }
       return homeSidebarWidth;
     }
@@ -192,15 +195,15 @@ let tmp3 = (DeviceSettingsStore) => {
   items[12] = {
     key: "callHeaderHeight",
     get() {
-      return closure_17.callHeaderHeight;
+      return outer1_17.callHeaderHeight;
     }
   };
   items[13] = {
     key: "useSystemTheme",
     get() {
-      let UNSET = closure_17.useSystemTheme;
+      let UNSET = outer1_17.useSystemTheme;
       if (null == UNSET) {
-        UNSET = constants.UNSET;
+        UNSET = outer1_8.UNSET;
       }
       return UNSET;
     }
@@ -208,90 +211,90 @@ let tmp3 = (DeviceSettingsStore) => {
   items[14] = {
     key: "activityPanelHeight",
     get() {
-      return closure_17.activityPanelHeight;
+      return outer1_17.activityPanelHeight;
     }
   };
   items[15] = {
     key: "disableVoiceChannelChangeAlert",
     get() {
-      const disableVoiceChannelChangeAlert = closure_17.disableVoiceChannelChangeAlert;
+      const disableVoiceChannelChangeAlert = outer1_17.disableVoiceChannelChangeAlert;
       return null != disableVoiceChannelChangeAlert && disableVoiceChannelChangeAlert;
     }
   };
   items[16] = {
     key: "disableHardwareMuteSilenceAlert",
     get() {
-      const disableHardwareMuteSilenceAlert = closure_17.disableHardwareMuteSilenceAlert;
+      const disableHardwareMuteSilenceAlert = outer1_17.disableHardwareMuteSilenceAlert;
       return null != disableHardwareMuteSilenceAlert && disableHardwareMuteSilenceAlert;
     }
   };
   items[17] = {
     key: "disableEmbeddedActivityPopOutAlert",
     get() {
-      const disableEmbeddedActivityPopOutAlert = closure_17.disableEmbeddedActivityPopOutAlert;
+      const disableEmbeddedActivityPopOutAlert = outer1_17.disableEmbeddedActivityPopOutAlert;
       return null != disableEmbeddedActivityPopOutAlert && disableEmbeddedActivityPopOutAlert;
     }
   };
   items[18] = {
     key: "disableActivityHardwareAccelerationPrompt",
     get() {
-      const disableActivityHardwareAccelerationPrompt = closure_17.disableActivityHardwareAccelerationPrompt;
+      const disableActivityHardwareAccelerationPrompt = outer1_17.disableActivityHardwareAccelerationPrompt;
       return null != disableActivityHardwareAccelerationPrompt && disableActivityHardwareAccelerationPrompt;
     }
   };
   items[19] = {
     key: "disableInviteWithTextChannelActivityLaunch",
     get() {
-      const disableInviteWithTextChannelActivityLaunch = closure_17.disableInviteWithTextChannelActivityLaunch;
+      const disableInviteWithTextChannelActivityLaunch = outer1_17.disableInviteWithTextChannelActivityLaunch;
       return null != disableInviteWithTextChannelActivityLaunch && disableInviteWithTextChannelActivityLaunch;
     }
   };
   items[20] = {
     key: "disableHideSelfStreamAndVideoConfirmationAlert",
     get() {
-      const disableHideSelfStreamAndVideoConfirmationAlert = closure_17.disableHideSelfStreamAndVideoConfirmationAlert;
+      const disableHideSelfStreamAndVideoConfirmationAlert = outer1_17.disableHideSelfStreamAndVideoConfirmationAlert;
       return null != disableHideSelfStreamAndVideoConfirmationAlert && disableHideSelfStreamAndVideoConfirmationAlert;
     }
   };
   items[21] = {
     key: "pushUpsellUserSettingsDismissed",
     get() {
-      const pushUpsellDismissed = closure_17.pushUpsellDismissed;
+      const pushUpsellDismissed = outer1_17.pushUpsellDismissed;
       return null != pushUpsellDismissed && pushUpsellDismissed;
     }
   };
   items[22] = {
     key: "disableActivityHostLeftNitroUpsell",
     get() {
-      const disableActivityHostLeftNitroUpsell = closure_17.disableActivityHostLeftNitroUpsell;
+      const disableActivityHostLeftNitroUpsell = outer1_17.disableActivityHostLeftNitroUpsell;
       return null != disableActivityHostLeftNitroUpsell && disableActivityHostLeftNitroUpsell;
     }
   };
   items[23] = {
     key: "disableCallUserConfirmationPrompt",
     get() {
-      const disableCallUserConfirmationPrompt = closure_17.disableCallUserConfirmationPrompt;
+      const disableCallUserConfirmationPrompt = outer1_17.disableCallUserConfirmationPrompt;
       return null != disableCallUserConfirmationPrompt && disableCallUserConfirmationPrompt;
     }
   };
   items[24] = {
     key: "disableApplicationSubscriptionCancellationSurvey",
     get() {
-      const disableApplicationSubscriptionCancellationSurvey = closure_17.disableApplicationSubscriptionCancellationSurvey;
+      const disableApplicationSubscriptionCancellationSurvey = outer1_17.disableApplicationSubscriptionCancellationSurvey;
       return null != disableApplicationSubscriptionCancellationSurvey && disableApplicationSubscriptionCancellationSurvey;
     }
   };
   items[25] = {
     key: "darkSidebar",
     get() {
-      const darkSidebar = closure_17.darkSidebar;
+      const darkSidebar = outer1_17.darkSidebar;
       return null != darkSidebar && darkSidebar;
     }
   };
   items[26] = {
     key: "saveCameraUploadsToDevice",
     get() {
-      const saveCameraUploadsToDevice = closure_17.saveCameraUploadsToDevice;
+      const saveCameraUploadsToDevice = outer1_17.saveCameraUploadsToDevice;
       return null == saveCameraUploadsToDevice || saveCameraUploadsToDevice;
     }
   };
@@ -299,7 +302,7 @@ let tmp3 = (DeviceSettingsStore) => {
     key: "isVisualRefreshDisabled",
     value(arg0) {
       let tmp = arg0;
-      const disableVisualRefresh = closure_17.disableVisualRefresh;
+      const disableVisualRefresh = outer1_17.disableVisualRefresh;
       if (null != disableVisualRefresh) {
         tmp = disableVisualRefresh;
       }
@@ -309,9 +312,9 @@ let tmp3 = (DeviceSettingsStore) => {
   items[28] = {
     key: "listDensity",
     get() {
-      let COZY = closure_17.listDensity;
+      let COZY = outer1_17.listDensity;
       if (null == COZY) {
-        COZY = constants2.COZY;
+        COZY = outer1_9.COZY;
       }
       return COZY;
     }
@@ -319,7 +322,7 @@ let tmp3 = (DeviceSettingsStore) => {
   items[29] = {
     key: "hdrDynamicRange",
     get() {
-      const hdrDynamicRange = closure_17.hdrDynamicRange;
+      const hdrDynamicRange = outer1_17.hdrDynamicRange;
       let str = "no-limit";
       if (null != hdrDynamicRange) {
         str = hdrDynamicRange;
@@ -328,30 +331,30 @@ let tmp3 = (DeviceSettingsStore) => {
     }
   };
   return callback(UnsyncedUserSettingsStore, items);
-}(importDefault(dependencyMap[10]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp3.displayName = "UnsyncedUserSettingsStore";
 tmp3.persistKey = "UnsyncedUserSettingsStore";
-const items = [
+let items = [
   () => {
-    const Storage = arg1(dependencyMap[11]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     const value = Storage.get("UserSettingsStore");
-    const Storage2 = arg1(dependencyMap[11]).Storage;
+    const Storage2 = require(587) /* Storage */.Storage;
     Storage2.remove("UserSettingsStore");
-    return importDefault(dependencyMap[12]).pick(value, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHardwareMuteSilenceAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations");
+    return importDefault(22).pick(value, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHardwareMuteSilenceAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations");
   },
   (arg0) => {
-    delete r0.disableVisualRefresh;
+    delete tmp.disableVisualRefresh;
   }
 ];
 tmp3.migrations = items;
 obj = {
   UNSYNCED_USER_SETTINGS_UPDATE: function handleUnsyncedUserSettingsUpdate(settings) {
-    const merged = Object.assign(closure_17);
+    const obj = {};
+    const merged = Object.assign(obj);
     const merged1 = Object.assign(settings.settings);
-    closure_17 = {};
   },
   LOGOUT: function handleLogOut() {
-    const useSystemTheme = { useSystemTheme: useSystemTheme.useSystemTheme };
+    obj = { useSystemTheme: obj.useSystemTheme };
   },
   LOGIN_SUCCESS: function handleLogInSuccess() {
     if (null == closure_17) {
@@ -362,8 +365,8 @@ obj = {
     closure_17.useSystemTheme = SystemThemeState.ON;
   }
 };
-tmp3 = new tmp3(importDefault(dependencyMap[13]), obj);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_settings/UnsyncedUserSettingsStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/UnsyncedUserSettingsStore.tsx");
 
 export default tmp3;
 export const VideoQualitySettings = obj;

@@ -1,49 +1,56 @@
-// Module ID: 8458
-// Function ID: 67485
+// Module ID: 8464
+// Function ID: 67522
 // Name: GuildEventRecurrences
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 8465, 4126, 1212, 21, 8467, 4543, 2]
 // Exports: default
 
-// Module 8458 (GuildEventRecurrences)
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { marginTop: 16 } };
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
-obj.scrollView = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventRecurrences.tsx");
+// Module 8464 (GuildEventRecurrences)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { marginTop: 16 } };
+_createForOfIteratorHelperLoose = { marginTop: 8, marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, maxHeight: 140 };
+_createForOfIteratorHelperLoose.scrollView = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventRecurrences.tsx");
 
 export default function GuildEventRecurrences(guildEventId) {
   let canViewMoreRecurrences;
+  let closure_4;
+  let dependencyMap;
   let guildId;
   let hideViewMoreButton;
+  let importDefault;
   let recurrenceRule;
   let recurrenceStartTimes;
   guildEventId = guildEventId.guildEventId;
-  const arg1 = guildEventId;
-  ({ onRecurrencePress: closure_1, activeRecurrenceId: closure_2 } = guildEventId);
+  ({ onRecurrencePress: importDefault, activeRecurrenceId: dependencyMap } = guildEventId);
   ({ guildId, recurrenceRule, hideViewMoreButton } = guildEventId);
-  const ref = React.useRef(null);
-  const React = ref;
-  const tmp2 = callback2();
-  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: closure_4 } = importDefault(dependencyMap[5])(guildEventId, guildId, recurrenceRule));
+  ref = ref.useRef(null);
+  const tmp2 = _createForOfIteratorHelperLoose();
+  ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: closure_4 } = importDefault(8465)(guildEventId, guildId, recurrenceRule));
   let obj = { style: tmp2.container };
   obj = { variant: "heading-md/semibold" };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.children = intl.string(arg1(dependencyMap[7]).t.D/jjoa);
-  const items = [callback(arg1(dependencyMap[6]).Text, obj), , ];
+  const intl = guildEventId(1212).intl;
+  obj.children = intl.string(guildEventId(1212).t["D/jjoa"]);
+  const items = [callback(guildEventId(4126).Text, obj), , ];
   obj = {
     style: tmp2.scrollView,
     ref,
     children: recurrenceStartTimes.map((getTime) => {
-      let obj = callback(closure_2[8]);
+      let obj = outer1_1(outer1_2[8]);
       const fromTimestampResult = obj.fromTimestamp(getTime.getTime());
-      obj = { recurrenceId: fromTimestampResult, guildEventId, onPress: callback, isActive: fromTimestampResult === closure_2 };
-      return callback3(callback(closure_2[9]), obj, fromTimestampResult);
+      obj = { recurrenceId: fromTimestampResult, guildEventId, onPress: closure_1, isActive: fromTimestampResult === closure_2 };
+      return outer1_6(outer1_1(outer1_2[9]), obj, fromTimestampResult);
     })
   };
   items[1] = callback(closure_5, obj);
@@ -52,18 +59,18 @@ export default function GuildEventRecurrences(guildEventId) {
   }
   if (canViewMoreRecurrences) {
     const obj1 = {};
-    const intl2 = arg1(dependencyMap[7]).intl;
-    obj1.text = intl2.string(arg1(dependencyMap[7]).t.8O7Hpy);
+    const intl2 = guildEventId(1212).intl;
+    obj1.text = intl2.string(guildEventId(1212).t["8O7Hpy"]);
     obj1.onPress = function onPress(stopPropagation) {
       stopPropagation.stopPropagation();
-      callback2();
+      callback();
       const current = ref.current;
       if (null != current) {
         current.scrollToEnd();
       }
     };
     obj1.size = "sm";
-    canViewMoreRecurrences = callback(arg1(dependencyMap[10]).Button, obj1);
+    canViewMoreRecurrences = callback(guildEventId(4543).Button, obj1);
   }
   items[2] = canViewMoreRecurrences;
   obj.children = items;

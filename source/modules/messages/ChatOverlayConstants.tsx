@@ -1,10 +1,9 @@
-// Module ID: 10425
-// Function ID: 80326
+// Module ID: 10435
+// Function ID: 80376
 // Name: ChatOverlays
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 10425 (ChatOverlays)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/messages/ChatOverlayConstants.tsx");
+// Module 10435 (ChatOverlays)
+const result = require("set").fileFinishedImporting("modules/messages/ChatOverlayConstants.tsx");
 
 export const ChatOverlays = { NEW_MESSAGES: "new_messages", OPT_IN_CHANNEL: "opt_in_channel", SUMMARIES: "summaries" };

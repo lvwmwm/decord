@@ -1,37 +1,37 @@
-// Module ID: 7115
-// Function ID: 57172
+// Module ID: 7120
+// Function ID: 57206
 // Name: setGPlayAnalytics
-// Dependencies: []
+// Dependencies: [621, 682, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
-// Module 7115 (setGPlayAnalytics)
+// Module 7120 (setGPlayAnalytics)
+import keys from "keys";
+
 let closure_2 = Object.freeze({ analyticsByProductId: {} });
-const _module = require(dependencyMap[0]);
-const obj = _module.create(() => closure_2);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/gplay/native/GPlayAnalyticsStore.tsx");
+let obj = keys.create(() => closure_2);
+const result = require("set").fileFinishedImporting("modules/gplay/native/GPlayAnalyticsStore.tsx");
 
 export const setGPlayAnalytics = function setGPlayAnalytics(arg0, arg1) {
-  const require = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  require(dependencyMap[1]).batchUpdates(() => {
-    state.setState((analyticsByProductId) => {
+  _require(682).batchUpdates(() => {
+    outer1_3.setState((analyticsByProductId) => {
       let obj = {};
       obj = {};
       const merged = Object.assign(analyticsByProductId.analyticsByProductId);
-      obj[closure_0] = closure_1;
+      obj[outer1_0] = outer1_1;
       obj.analyticsByProductId = obj;
       return obj;
     });
   });
 };
 export const deleteGPlayAnalytics = function deleteGPlayAnalytics(arg0) {
-  const require = arg0;
-  require(dependencyMap[1]).batchUpdates(() => {
-    state.setState((analyticsByProductId) => {
+  const _require = arg0;
+  _require(682).batchUpdates(() => {
+    outer1_3.setState((analyticsByProductId) => {
       analyticsByProductId = {};
       const merged = Object.assign(analyticsByProductId.analyticsByProductId);
-      delete r1[r0];
+      delete tmp2[tmp];
       return { analyticsByProductId };
     });
   });

@@ -1,16 +1,20 @@
-// Module ID: 4958
-// Function ID: 42631
+// Module ID: 4961
+// Function ID: 42649
 // Name: getHighestHoistedRole
-// Dependencies: []
+// Dependencies: [1917, 1838, 3763, 566, 2]
 // Exports: default
 
-// Module 4958 (getHighestHoistedRole)
+// Module 4961 (getHighestHoistedRole)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function getHighestHoistedRole(guildId, id) {
   let obj;
   let obj2;
   let tmp = arg2;
   if (arg2 === undefined) {
-    const items = [closure_4, closure_3];
+    const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
     tmp = items;
   }
   [obj, obj2] = tmp;
@@ -23,8 +27,8 @@ function getHighestHoistedRole(guildId, id) {
         const member = obj2.getMember(guild.id, id);
         let highestHoistedRole = null;
         if (null != member) {
-          highestHoistedRole = importAll(dependencyMap[2]).getHighestHoistedRole(guild, member);
-          const obj3 = importAll(dependencyMap[2]);
+          highestHoistedRole = importAll(3763).getHighestHoistedRole(guild, member);
+          const obj3 = importAll(3763);
         }
         return highestHoistedRole;
       }
@@ -32,18 +36,16 @@ function getHighestHoistedRole(guildId, id) {
   }
   return null;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/stage_channels/useGuildMemberDisplayRole.tsx");
+const result = require("calculateElevatedPermissions").fileFinishedImporting("modules/stage_channels/useGuildMemberDisplayRole.tsx");
 
 export default function useGuildMemberDisplayRole(arg0, arg1) {
-  arg1 = arg0;
-  const importAll = arg1;
-  const items = [closure_4, closure_3];
+  const _require = arg0;
+  let closure_1 = arg1;
+  let items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
   const items1 = [arg0, arg1];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const items = [closure_4, closure_3];
-    return callback(arg0, arg1, items);
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_4, outer1_3];
+    return outer1_5(closure_0, closure_1, items);
   }, items1);
 };
 export { getHighestHoistedRole };

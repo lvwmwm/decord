@@ -5,7 +5,53 @@
 
 // Module 666 (t)
 let self = this;
-const fn = function t() {
+let fn = function t() {
+  let closure_100;
+  let closure_107;
+  let closure_108;
+  let closure_116;
+  let closure_117;
+  let closure_125;
+  let closure_126;
+  let closure_13;
+  let closure_131;
+  let closure_132;
+  let closure_14;
+  let closure_147;
+  let closure_148;
+  let closure_157;
+  let closure_158;
+  let closure_16;
+  let closure_17;
+  let closure_20;
+  let closure_209;
+  let closure_21;
+  let closure_210;
+  let closure_211;
+  let closure_4;
+  let closure_42;
+  let closure_43;
+  let closure_45;
+  let closure_46;
+  let closure_49;
+  let closure_5;
+  let closure_50;
+  let closure_57;
+  let closure_58;
+  let closure_6;
+  let closure_62;
+  let closure_63;
+  let closure_64;
+  let closure_65;
+  let closure_67;
+  let closure_68;
+  let closure_71;
+  let closure_72;
+  let closure_80;
+  let closure_81;
+  let closure_95;
+  let closure_96;
+  let closure_99;
   let length;
   let length2;
   function rgb2lrgb(arg0) {
@@ -47,7 +93,7 @@ const fn = function t() {
     return num;
   }
   let obj = {};
-  const items = [];
+  let items = ["Boolean", "Number", "String", "Function", "Array", "Date", "RegExp", "Undefined", "Null"];
   let num = 0;
   if (0 < items.length) {
     do {
@@ -72,11 +118,11 @@ const fn = function t() {
           if (tmp2) {
             arr._clipped = true;
           }
-          let tmp3 = closure_0;
-          arr[num] = closure_0(arr[num], 0, 255);
+          let tmp3 = limit$2;
+          arr[num] = limit$2(arr[num], 0, 255);
         } else if (3 === num) {
-          let tmp = closure_0;
-          arr[num] = closure_0(arr[num], 0, 1);
+          let tmp = limit$2;
+          arr[num] = limit$2(arr[num], 0, 1);
         }
         num = num + 1;
       } while (num <= 3);
@@ -86,7 +132,7 @@ const fn = function t() {
     type: type$p,
     unpack: function unpack$B(arg0, arg1) {
       let tmp = arg1;
-      const limit$2 = arg0;
+      let closure_0 = arg0;
       if (undefined === arg1) {
         tmp = null;
       }
@@ -97,8 +143,8 @@ const fn = function t() {
         if ("object" == type$p(arg0[0])) {
           if (tmp) {
             const parts = tmp.split("");
-            const found = parts.filter((arg0) => undefined !== arg0[0][arg0]);
-            callResult = found.map((arg0) => arg0[0][arg0]);
+            const found = parts.filter((arg0) => undefined !== dependencyMap[0][arg0]);
+            callResult = found.map((arg0) => dependencyMap[0][arg0]);
           }
         }
         callResult = arg0[0];
@@ -303,10 +349,10 @@ const fn = function t() {
       return substr;
     }
     rgba(arg0) {
-      closure_0 = arg0;
+      c0 = arg0;
       if (undefined === arg0) {
         flag = true;
-        closure_0 = true;
+        c0 = true;
       }
       _rgb = this._rgb;
       substr = _rgb.slice(0, 4);
@@ -314,8 +360,8 @@ const fn = function t() {
         let tmp = arg0;
         if (arg1 < 3) {
           let tmp3 = arg0;
-          if (false !== closure_0) {
-            tmp3 = callback(arg0);
+          if (false !== c0) {
+            tmp3 = outer1_133(arg0);
           }
           tmp = tmp3;
         }
@@ -422,7 +468,7 @@ const fn = function t() {
     }
     luminance(arg0) {
       self = this;
-      limit$2 = arg0;
+      closure_0 = arg0;
       if (undefined !== arg0) {
         tmp = type;
         str = "number";
@@ -431,7 +477,7 @@ const fn = function t() {
           if (0 === arg0) {
             tmp23 = Color;
             num4 = 3;
-            items = [];
+            items = [0, 0, 0];
             items[3] = self._rgb[3];
             prototype5 = Color.prototype;
             tmp24 = new.target;
@@ -446,7 +492,7 @@ const fn = function t() {
             if (1 === arg0) {
               tmp17 = Color;
               num3 = 3;
-              items1 = [null, null, null];
+              items1 = [255, 255, 255];
               items1[3] = self._rgb[3];
               prototype4 = Color.prototype;
               tmp18 = new.target;
@@ -458,16 +504,16 @@ const fn = function t() {
               return tmp21;
             } else {
               num6 = 20;
-              closure_1 = 20;
+              c1 = 20;
               test = function test(self, self2) {
                 const interpolateResult = self.interpolate(self2, 0.5, "rgb");
                 const luminanceResult = interpolateResult.luminance();
                 let tmp2 = interpolateResult;
-                if (Math.abs(self - luminanceResult) >= 0.0000001) {
+                if (Math.abs(closure_0 - luminanceResult) >= 0.0000001) {
                   let closure_1 = tmp4 - 1;
                   tmp2 = interpolateResult;
                   if (+closure_1) {
-                    if (luminanceResult > self) {
+                    if (luminanceResult > closure_0) {
                       let tmp7 = test(self, interpolateResult);
                     } else {
                       tmp7 = test(interpolateResult, self2);
@@ -481,7 +527,7 @@ const fn = function t() {
                 prototype2 = Color.prototype;
                 tmp8 = new.target;
                 tmp9 = new.target;
-                tmp10 = new Color([]);
+                tmp10 = new Color([0, 0, 0]);
                 tmp11 = tmp10;
                 isMatch = test(tmp10, self);
               } else {
@@ -489,7 +535,7 @@ const fn = function t() {
                 prototype = Color.prototype;
                 tmp3 = new.target;
                 tmp4 = new.target;
-                tmp5 = new Color([null, null, null]);
+                tmp5 = new Color([255, 255, 255]);
                 tmp6 = tmp5;
                 isMatch = test(self, tmp5);
               }
@@ -672,7 +718,7 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
+    const items1 = [null];
     let applyResult = bind.apply(chroma$k.Color, items1.concat(items));
     applyResult = new applyResult();
     return applyResult;
@@ -718,8 +764,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [0.0000000000000000000000000000000000000000000000000000000000000000000000011324704898856095]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["cmyk"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -742,7 +788,7 @@ const fn = function t() {
       num = arr2[4];
     }
     if (1 === arr2[3]) {
-      const items1 = [, , , num];
+      const items1 = [0, 0, 0, num];
       let items2 = items1;
     } else {
       let num2 = 0;
@@ -764,7 +810,7 @@ const fn = function t() {
     }
     return items2;
   };
-  const autodetect = obj.autodetect;
+  let autodetect = obj.autodetect;
   autodetect.push({
     p: 2,
     test() {
@@ -862,8 +908,8 @@ const fn = function t() {
     }
     arr2[0] = rnd(num);
     let num2 = 1;
-    arr2[1] = `${closure_18(100 * arr2[1])}%`;
-    arr2[2] = `${closure_18(100 * arr2[2])}%`;
+    arr2[1] = `${rnd(100 * arr2[1])}%`;
+    arr2[2] = `${rnd(100 * arr2[2])}%`;
     if ("hsla" === str) {
       if (arr2.length > 3) {
         num2 = arr2[3];
@@ -905,8 +951,8 @@ const fn = function t() {
         return items2;
       }
     } else {
-      const items3 = [];
-      const items4 = [];
+      const items3 = [0, 0, 0];
+      const items4 = [0, 0, 0];
       if (tmp4 < 0.5) {
         let result1 = tmp4 * (1 + num2);
       } else {
@@ -921,12 +967,12 @@ const fn = function t() {
       num2 = 0;
     }
   }
-  let closure_29 = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/;
-  let closure_30 = /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/;
-  let closure_31 = /^rgb\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/;
-  let closure_32 = /^rgba\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/;
-  let closure_33 = /^hsl\(\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/;
-  let closure_34 = /^hsla\(\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/;
+  const re29 = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/;
+  const re30 = /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/;
+  const re31 = /^rgb\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/;
+  const re32 = /^rgba\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/;
+  const re33 = /^hsl\(\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/;
+  const re34 = /^hsla\(\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/;
   round = Math.round;
   function css2rgb$1(str) {
     const str2 = str.toLowerCase().trim();
@@ -974,8 +1020,8 @@ const fn = function t() {
               let num19 = 3;
               let num20 = 0;
               do {
-                let tmp24 = closure_35;
-                substr2[num20] = closure_35(2.55 * substr2[num20]);
+                let tmp24 = round;
+                substr2[num20] = round(2.55 * substr2[num20]);
                 num20 = num20 + 1;
               } while (num20 < 3);
               substr2[3] = 1;
@@ -992,8 +1038,8 @@ const fn = function t() {
                 let num14 = 3;
                 let num15 = 0;
                 do {
-                  let tmp22 = closure_35;
-                  substr3[num15] = closure_35(2.55 * substr3[num15]);
+                  let tmp22 = round;
+                  substr3[num15] = round(2.55 * substr3[num15]);
                   num15 = num15 + 1;
                 } while (num15 < 3);
                 substr3[3] = +substr3[3];
@@ -1120,8 +1166,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, []));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["css"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1181,8 +1227,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [true]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["gl"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1242,8 +1288,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["p"]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["hcg"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1396,8 +1442,8 @@ const fn = function t() {
     }
     const tmp9 = round(tmp6) << 8;
   }
-  let closure_52 = /^#?([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
-  let closure_53 = /^#?([A-Fa-f0-9]{8}|[A-Fa-f0-9]{4})$/;
+  const re52 = /^#?([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+  const re53 = /^#?([A-Fa-f0-9]{8}|[A-Fa-f0-9]{4})$/;
   function hex2rgb$1(str) {
     if (str.match(closure_52)) {
       let tmp12 = 4 !== str.length;
@@ -1456,8 +1502,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [true]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["hex"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1479,7 +1525,7 @@ const fn = function t() {
       }
       if (!items.length) {
         if ("string" === type(arg0)) {
-          const items1 = ["formatToPlainString", "it", "bind", "message", "k", "Boolean", "textAlign"];
+          const items1 = [3, 4, 5, 6, 7, 8, 9];
           if (items1.indexOf(arg0.length) >= 0) {
             return "hex";
           }
@@ -1538,8 +1584,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["marginBottom"]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["hsi"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1639,8 +1685,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["passthroughCount"]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["hsl"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1730,8 +1776,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, []));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["hsv"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -1834,7 +1880,7 @@ const fn = function t() {
       }
     }
   });
-  const obj8 = {};
+  const obj8 = { Kn: 18, Xn: 0.95047, Yn: 1, Zn: 1.08883, t0: 0.137931034, t1: 0.206896552, t2: 0.12841855, t3: 0.008856452 };
   unpack = obj.unpack;
   function rgb_xyz(arg0) {
     const result = arg0 / 255;
@@ -1946,8 +1992,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [false]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["lab"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2080,8 +2126,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["<string:3819299667>"]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["lch"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2097,8 +2143,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, ["start"]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["hcl"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2117,11 +2163,11 @@ const fn = function t() {
     }
     return lch2rgb$1.apply(undefined, unpack(items, "hcl").reverse());
   };
-  const items1 = ["<string:1225129986>", "<string:121634818>"];
-  const item = items1.forEach((arg0) => {
-    const limit$2 = arg0;
+  let items1 = ["lch", "hcl"];
+  let item = items1.forEach((arg0) => {
+    let closure_0 = arg0;
     const autodetect = obj.autodetect;
-    const obj = {
+    obj = {
       p: 2,
       test() {
         let tmp3;
@@ -2135,17 +2181,17 @@ const fn = function t() {
             diff = tmp3 - 1;
           } while (tmp3);
         }
-        const arr2 = callback(items, arg0);
-        if ("array" === callback2(arr2)) {
+        const arr2 = outer1_116(items, closure_0);
+        if ("array" === outer1_117(arr2)) {
           if (3 === arr2.length) {
-            return arg0;
+            return closure_0;
           }
         }
       }
     };
     return autodetect.push(obj);
   });
-  const obj10 = {};
+  const obj10 = { aliceblue: "#f0f8ff", antiquewhite: "#faebd7", aqua: "#00ffff", aquamarine: "#7fffd4", azure: "#f0ffff", beige: "#f5f5dc", bisque: "#ffe4c4", black: "#000000", blanchedalmond: "#ffebcd", blue: "#0000ff", blueviolet: "#8a2be2", brown: "#a52a2a", burlywood: "#deb887", cadetblue: "#5f9ea0", chartreuse: "#7fff00", chocolate: "#d2691e", coral: "#ff7f50", cornflower: "#6495ed", cornflowerblue: "#6495ed", cornsilk: "#fff8dc", crimson: "#dc143c", cyan: "#00ffff", darkblue: "#00008b", darkcyan: "#008b8b", darkgoldenrod: "#b8860b", darkgray: "#a9a9a9", darkgreen: "#006400", darkgrey: "#a9a9a9", darkkhaki: "#bdb76b", darkmagenta: "#8b008b", darkolivegreen: "#556b2f", darkorange: "#ff8c00", darkorchid: "#9932cc", darkred: "#8b0000", darksalmon: "#e9967a", darkseagreen: "#8fbc8f", darkslateblue: "#483d8b", darkslategray: "#2f4f4f", darkslategrey: "#2f4f4f", darkturquoise: "#00ced1", darkviolet: "#9400d3", deeppink: "#ff1493", deepskyblue: "#00bfff", dimgray: "#696969", dimgrey: "#696969", dodgerblue: "#1e90ff", firebrick: "#b22222", floralwhite: "#fffaf0", forestgreen: "#228b22", fuchsia: "#ff00ff", gainsboro: "#dcdcdc", ghostwhite: "#f8f8ff", gold: "#ffd700", goldenrod: "#daa520", gray: "#808080", green: "#008000", greenyellow: "#adff2f", grey: "#808080", honeydew: "#f0fff0", hotpink: "#ff69b4", indianred: "#cd5c5c", indigo: "#4b0082", ivory: "#fffff0", khaki: "#f0e68c", laserlemon: "#ffff54", lavender: "#e6e6fa", lavenderblush: "#fff0f5", lawngreen: "#7cfc00", lemonchiffon: "#fffacd", lightblue: "#add8e6", lightcoral: "#f08080", lightcyan: "#e0ffff", lightgoldenrod: "#fafad2", lightgoldenrodyellow: "#fafad2", lightgray: "#d3d3d3", lightgreen: "#90ee90", lightgrey: "#d3d3d3", lightpink: "#ffb6c1", lightsalmon: "#ffa07a", lightseagreen: "#20b2aa", lightskyblue: "#87cefa", lightslategray: "#778899", lightslategrey: "#778899", lightsteelblue: "#b0c4de", lightyellow: "#ffffe0", lime: "#00ff00", limegreen: "#32cd32", linen: "#faf0e6", magenta: "#ff00ff", maroon: "#800000", maroon2: "#7f0000", maroon3: "#b03060", mediumaquamarine: "#66cdaa", mediumblue: "#0000cd", mediumorchid: "#ba55d3", mediumpurple: "#9370db", mediumseagreen: "#3cb371", mediumslateblue: "#7b68ee", mediumspringgreen: "#00fa9a", mediumturquoise: "#48d1cc", mediumvioletred: "#c71585", midnightblue: "#191970", mintcream: "#f5fffa", mistyrose: "#ffe4e1", moccasin: "#ffe4b5", navajowhite: "#ffdead", navy: "#000080", oldlace: "#fdf5e6", olive: "#808000", olivedrab: "#6b8e23", orange: "#ffa500", orangered: "#ff4500", orchid: "#da70d6", palegoldenrod: "#eee8aa", palegreen: "#98fb98", paleturquoise: "#afeeee", palevioletred: "#db7093", papayawhip: "#ffefd5", peachpuff: "#ffdab9", peru: "#cd853f", pink: "#ffc0cb", plum: "#dda0dd", powderblue: "#b0e0e6", purple: "#800080", purple2: "#7f007f", purple3: "#a020f0", rebeccapurple: "#663399", red: "#ff0000", rosybrown: "#bc8f8f", royalblue: "#4169e1", saddlebrown: "#8b4513", salmon: "#fa8072", sandybrown: "#f4a460", seagreen: "#2e8b57", seashell: "#fff5ee", sienna: "#a0522d", silver: "#c0c0c0", skyblue: "#87ceeb", slateblue: "#6a5acd", slategray: "#708090", slategrey: "#708090", snow: "#fffafa", springgreen: "#00ff7f", steelblue: "#4682b4", tan: "#d2b48c", teal: "#008080", thistle: "#d8bfd8", tomato: "#ff6347", turquoise: "#40e0d0", violet: "#ee82ee", wheat: "#f5deb3", white: "#ffffff", whitesmoke: "#f5f5f5", yellow: "#ffff00", yellowgreen: "#9acd32" };
   type = obj.type;
   obj.format.named = (str) => {
     const formatted = str.toLowerCase();
@@ -2210,8 +2256,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [0.3]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["num"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2267,8 +2313,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000495295569660755]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["rgb"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2311,8 +2357,8 @@ const fn = function t() {
       }
     }
   });
-  function temperature2rgb$1(arg0) {
-    const result = arg0 / 100;
+  function temperature2rgb$1(result) {
+    result = result / 100;
     if (result < 66) {
       let num2 = 0;
       if (result >= 6) {
@@ -2357,9 +2403,9 @@ const fn = function t() {
     let num = 1000;
     let num2 = 40000;
     do {
-      let tmp7 = closure_135;
+      let tmp7 = temperature2rgb$1;
       result = 0.5 * (num2 + num);
-      let tmp9 = closure_135(result);
+      let tmp9 = temperature2rgb$1(result);
       tmp10 = result;
       if (tmp9[2] / tmp9[0] >= tmp6 / tmp5) {
         tmp10 = num;
@@ -2369,7 +2415,7 @@ const fn = function t() {
     } while (num2 - tmp10 > 0.4);
     return round(result);
   }
-  const fn = function() {
+  let fn = function() {
     return rgb2temperature$1(this._rgb);
   };
   Color.prototype.temperature = fn;
@@ -2387,8 +2433,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [false]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["temp"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2465,8 +2511,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, [1795817476]));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["oklab"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2525,8 +2571,8 @@ const fn = function t() {
         diff = tmp3 - 1;
       } while (tmp3);
     }
-    const items1 = [true];
-    let applyResult = bind.apply(Color, items1.concat(items, []));
+    const items1 = [null];
+    let applyResult = bind.apply(Color, items1.concat(items, ["oklch"]));
     applyResult = new applyResult();
     return applyResult;
   };
@@ -2637,7 +2683,7 @@ const fn = function t() {
       const error = new Error("interpolation mode " + first + " is not defined");
       throw error;
     }
-    const tmp5 = obj16[first] || items.length;
+    tmp5 = obj16[first] || items.length;
   }
   const fn3 = function(arg0, arg1) {
     let tmp3;
@@ -2750,7 +2796,7 @@ const fn = function t() {
         diff = tmp6 - tmp5;
       }
       if (undefined === sum) {
-        let sum = tmp7 + sharedValue2 * (tmp8 - tmp7);
+        sum = tmp7 + sharedValue2 * (tmp8 - tmp7);
       }
       const sum1 = tmp9 + sharedValue2 * (tmp10 - tmp9);
       let tmp16 = Color;
@@ -2797,8 +2843,8 @@ const fn = function t() {
   }
   obj16.lch = lch;
   obj16.hcl = lch;
-  obj16.num = function num(TransitionItem, items) {
-    const numResult = TransitionItem.num();
+  obj16.num = function num(c4, items, arg2) {
+    const numResult = c4.num();
     return new Color(numResult + arg2 * (items.num() - numResult), "num");
   };
   obj16.hcg = function hcg(hsl, hsl2, sharedValue2) {
@@ -2830,18 +2876,18 @@ const fn = function t() {
   atan2 = Math.atan2;
   function _average_lrgb(mapped1, arg1) {
     let length;
-    const items = [139348659563046800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000118231045220236, 0.00000000000000000000000000000000000000000000000000002089509649731851, -0.000000000000000000000000000000000000000000000000000000000000000000000000000017285410812612244];
+    const items = [0, 0, 0, 0];
     let num = 0;
     if (0 < mapped1.length) {
       do {
         let result = arg1[num] / tmp;
         let _rgb = mapped1[num]._rgb;
-        let tmp3 = closure_195;
-        items[0] = items[0] + closure_195(_rgb[0], 2) * result;
-        let tmp4 = closure_195;
-        items[1] = items[1] + closure_195(_rgb[1], 2) * result;
-        let tmp5 = closure_195;
-        items[2] = items[2] + closure_195(_rgb[2], 2) * result;
+        let tmp3 = pow;
+        items[0] = items[0] + pow(_rgb[0], 2) * result;
+        let tmp4 = pow;
+        items[1] = items[1] + pow(_rgb[1], 2) * result;
+        let tmp5 = pow;
+        items[2] = items[2] + pow(_rgb[2], 2) * result;
         items[3] = items[3] + _rgb[3] * result;
         num = num + 1;
         length = mapped1.length;
@@ -2858,43 +2904,43 @@ const fn = function t() {
   type = obj.type;
   pow = Math.pow;
   function scale$2(items) {
-    let closure_0 = "rgb";
+    const rgb = "rgb";
     let closure_1 = chroma$k("#ccc");
-    let closure_2 = 0;
-    let closure_3 = [77601039, 1612144654];
+    let c2 = 0;
+    let closure_3 = [0, 1];
     let closure_4 = [];
-    let closure_5 = ["placeholder", "aria-label"];
-    let closure_6 = false;
+    let closure_5 = [0, 0];
+    let c6 = false;
     let closure_7 = [];
-    let closure_8 = false;
-    let closure_9 = 0;
-    let closure_10 = 1;
-    let closure_11 = false;
+    let c8 = false;
+    let c9 = 0;
+    let c10 = 1;
+    let c11 = false;
     let closure_12 = {};
-    let closure_13 = true;
-    let closure_14 = 1;
+    let c13 = true;
+    let c14 = 1;
     function setColors(items) {
       let length;
       let length2;
       if (!items) {
-        items = [];
+        items = ["#fff", "#000"];
       }
       let brewer = items;
       if (items) {
-        brewer = "string" === callback(items);
+        brewer = "string" === outer1_203(items);
       }
       if (brewer) {
-        brewer = Animated.brewer;
+        brewer = outer1_202.brewer;
       }
       if (brewer) {
-        brewer = Animated.brewer[items.toLowerCase(items)];
+        brewer = outer1_202.brewer[items.toLowerCase(items)];
       }
       let arr2 = items;
       if (brewer) {
-        arr2 = Animated.brewer[items.toLowerCase(items)];
+        arr2 = outer1_202.brewer[items.toLowerCase(items)];
       }
       let tmp5 = arr2;
-      if ("array" === callback(arr2)) {
+      if ("array" === outer1_203(arr2)) {
         let arr4 = arr2;
         if (1 === arr2.length) {
           const items1 = [arr2[0], arr2[0]];
@@ -2904,19 +2950,19 @@ const fn = function t() {
         let num3 = 0;
         if (0 < substr.length) {
           do {
-            let tmp6 = closure_202;
-            substr[num3] = closure_202(substr[num3]);
+            let tmp6 = outer1_202;
+            substr[num3] = outer1_202(substr[num3]);
             num3 = num3 + 1;
             length = substr.length;
           } while (num3 < length);
         }
-        closure_4.length = 0;
+        arr.length = 0;
         let num4 = 0;
         tmp5 = substr;
         if (0 < substr.length) {
           do {
-            let tmp8 = closure_4;
-            let arr = closure_4.push(num4 / (substr.length - 1));
+            let tmp8 = arr;
+            arr = arr.push(num4 / (substr.length - 1));
             num4 = num4 + 1;
             tmp5 = substr;
             length2 = substr.length;
@@ -2927,7 +2973,6 @@ const fn = function t() {
       let closure_7 = tmp5;
       return tmp5;
     }
-    const rgb2cmyk$1 = setColors;
     function tMapLightness(arg0) {
       return arg0;
     }
@@ -2943,23 +2988,23 @@ const fn = function t() {
         if (null !== arg0) {
           let result = arg0;
           if (!flag) {
-            if (closure_6) {
-              if (closure_6.length > 2) {
+            if (c6) {
+              if (c6.length > 2) {
                 let num4 = 0;
-                if (null != closure_6) {
-                  const diff = closure_6.length - 1;
+                if (null != c6) {
+                  const diff = c6.length - 1;
                   let num6 = 0;
                   if (0 < diff) {
                     let num7 = 0;
                     num6 = 0;
-                    if (arg0 >= closure_6[0]) {
+                    if (arg0 >= c6[0]) {
                       const sum = num7 + 1;
                       num6 = sum;
                       while (sum < diff) {
-                        let tmp14 = closure_6;
+                        let tmp14 = c6;
                         num7 = sum;
                         num6 = sum;
-                        if (arg0 < closure_6[sum]) {
+                        if (arg0 < c6[sum]) {
                           break;
                         }
                       }
@@ -2967,12 +3012,12 @@ const fn = function t() {
                   }
                   num4 = num6 - 1;
                 }
-                result = num4 / (closure_6.length - 2);
+                result = num4 / (c6.length - 2);
               }
             }
             let num2 = 1;
-            if (closure_10 !== closure_9) {
-              num2 = (arg0 - closure_9) / (closure_10 - closure_9);
+            if (c10 !== c9) {
+              num2 = (arg0 - c9) / (c10 - c9);
             }
             result = num2;
           }
@@ -2982,21 +3027,21 @@ const fn = function t() {
             tmp18 = tMapLightness(tmp17);
           }
           let tmp21 = tmp18;
-          if (1 !== closure_14) {
-            tmp21 = callback2(tmp18, closure_14);
+          if (1 !== c14) {
+            tmp21 = outer1_204(tmp18, c14);
           }
           const _Math = Math;
           const _Math2 = Math;
-          const bound = Math.min(1, Math.max(0, closure_5[0] + tmp21 * (1 - closure_5[0] - closure_5[1])));
+          const bound = Math.min(1, Math.max(0, dependencyMap2[0] + tmp21 * (1 - dependencyMap2[0] - dependencyMap2[1])));
           const _Math3 = Math;
           const rounded = Math.floor(10000 * bound);
-          if (closure_13) {
-            if (closure_12[rounded]) {
-              let tmp52 = closure_12[rounded];
+          if (c13) {
+            if (dependencyMap3[rounded]) {
+              let tmp52 = dependencyMap3[rounded];
             }
             return tmp52;
           }
-          if ("array" === callback(arr2)) {
+          if ("array" === outer1_203(arr2)) {
             let num11 = 0;
             if (0 < arr.length) {
               while (bound > arr[num11]) {
@@ -3011,12 +3056,12 @@ const fn = function t() {
                   let tmp41 = arr;
                   if (bound < arr[num11 + 1]) {
                     let tmp43 = arr;
-                    let tmp44 = Animated;
+                    let tmp44 = outer1_202;
                     let tmp45 = arr2;
                     let tmp46 = arr2;
-                    let tmp47 = closure_0;
-                    let tmp48 = Animated;
-                    interpolateResult = Animated.interpolate(arr2[num11], arr2[num11 + 1], (bound - tmp38) / (arr[num11 + 1] - tmp38), closure_0);
+                    let tmp47 = rgb;
+                    let tmp48 = outer1_202;
+                    interpolateResult = outer1_202.interpolate(arr2[num11], arr2[num11 + 1], (bound - tmp38) / (arr[num11 + 1] - tmp38), rgb);
                   }
                 }
                 num11 = num11 + 1;
@@ -3024,12 +3069,12 @@ const fn = function t() {
               }
               interpolateResult = arr2[num11];
             }
-          } else if ("function" === callback(arr2)) {
+          } else if ("function" === outer1_203(arr2)) {
             interpolateResult = arr2(bound);
           }
           tmp52 = interpolateResult;
-          if (closure_13) {
-            closure_12[rounded] = interpolateResult;
+          if (c13) {
+            dependencyMap3[rounded] = interpolateResult;
             tmp52 = interpolateResult;
           }
         }
@@ -3038,35 +3083,33 @@ const fn = function t() {
     }
     function resetCache() {
       const obj = {};
-      let closure_12 = obj;
       return obj;
     }
     setColors(items);
     const fn = function f(arg0) {
-      const tmp = Animated(getColor(arg0));
+      const tmp = outer1_202(getColor(arg0));
       let tmp2 = tmp;
-      if (closure_8) {
+      if (c8) {
         tmp2 = tmp;
-        if (tmp[closure_8]) {
-          tmp2 = tmp[closure_8]();
+        if (tmp[c8]) {
+          tmp2 = tmp[c8]();
         }
       }
       return tmp2;
     };
     fn.classes = (arg0) => {
       if (null != arg0) {
-        if ("array" === callback(arg0)) {
+        if ("array" === outer1_203(arg0)) {
           let closure_6 = arg0;
           const items = [arg0[0], arg0[arg0.length - 1]];
-          let closure_3 = items;
         } else {
-          const analyzeResult = Animated.analyze(closure_3);
+          const analyzeResult = outer1_202.analyze(items);
           if (0 === arg0) {
             const items1 = [, ];
             ({ min: arr[0], max: arr[1] } = analyzeResult);
             let limitsResult = items1;
           } else {
-            limitsResult = Animated.limits(analyzeResult, "e", arg0);
+            limitsResult = outer1_202.limits(analyzeResult, "e", arg0);
           }
           closure_6 = limitsResult;
         }
@@ -3089,18 +3132,17 @@ const fn = function t() {
             let num5 = 0;
             if (0 < arr.length) {
               do {
-                let tmp8 = closure_4;
+                let tmp8 = arr;
                 let tmp9 = closure_9;
                 let tmp10 = closure_10;
                 let tmp11 = closure_9;
-                arr = closure_4.push((arr[num5] - closure_9) / (closure_10 - closure_9));
+                arr = arr.push((arr[num5] - closure_9) / (closure_10 - closure_9));
                 num5 = num5 + 1;
                 length2 = arr.length;
               } while (num5 < length2);
             }
           }
           const items = [closure_9, closure_10];
-          let closure_3 = items;
           return fn;
         }
         for (let num3 = 0; num3 < length; num3 = num3 + 1) {
@@ -3108,10 +3150,9 @@ const fn = function t() {
           arr = arr.push(num3 / (length - 1));
         }
         if (arr.length > 2) {
-          let closure_1 = arr.map((arg0, arg1) => arg1 / (arg0.length - 1));
+          let closure_1 = arr.map((arg0, arg1) => arg1 / (arr.length - 1));
           const mapped = arr.map((arg0) => (arg0 - closure_9) / (closure_10 - closure_9));
-          let closure_2 = mapped;
-          if (!mapped.every((arg0, arg1) => closure_1[arg1] === arg0)) {
+          if (!mapped.every((arg0, arg1) => dependencyMap[arg1] === arg0)) {
             function tMapDomain(arg0) {
               let tmp3;
               if (arg0 > 0) {
@@ -3121,13 +3162,13 @@ const fn = function t() {
                   if (arg0 >= mapped[1]) {
                     do {
                       let sum = num + 1;
-                      let tmp2 = closure_2;
+                      let tmp2 = mapped;
                       num = sum;
                       num2 = sum;
-                      tmp3 = closure_2[sum + 1];
+                      tmp3 = mapped[sum + 1];
                     } while (arg0 >= tmp3);
                   }
-                  return closure_1[num2] + (arg0 - mapped[num2]) / (mapped[num2 + 1] - mapped[num2]) * (closure_1[num2 + 1] - closure_1[num2]);
+                  return dependencyMap[num2] + (arg0 - mapped[num2]) / (mapped[num2 + 1] - mapped[num2]) * (dependencyMap[num2 + 1] - dependencyMap[num2]);
                 }
               }
               return arg0;
@@ -3135,7 +3176,7 @@ const fn = function t() {
           }
         }
       } else {
-        return closure_3;
+        return items;
       }
     };
     fn.mode = (arg0) => {
@@ -3170,17 +3211,16 @@ const fn = function t() {
       if (null == arg0) {
         flag = true;
       }
-      let closure_11 = flag;
       resetCache();
-      let closure_16 = closure_11 ? function tMapLightness(arg0) {
-        const first = callback(0, true).lab()[0];
+      let closure_16 = flag ? (function tMapLightness(arg0) {
+        const first = outer1_18(0, true).lab()[0];
         let num = 1;
-        const obj = callback(0, true);
-        const first1 = callback(1, true).lab()[0];
-        const obj2 = callback(1, true);
+        const obj = outer1_18(0, true);
+        const first1 = outer1_18(1, true).lab()[0];
+        const obj2 = outer1_18(1, true);
         const tmp3 = first > first1;
         const sum = first + (first1 - first) * arg0;
-        const diff = callback(arg0, true).lab()[0] - sum;
+        const diff = outer1_18(arg0, true).lab()[0] - sum;
         let num2 = 19;
         let tmp6 = arg0;
         let tmp7 = diff;
@@ -3200,8 +3240,8 @@ const fn = function t() {
               sum1 = tmp6 + 0.5 * (num3 - tmp6);
               tmp11 = tmp6;
             }
-            let tmp12 = callback;
-            let obj4 = callback(sum1, true);
+            let tmp12 = outer1_18;
+            let obj4 = outer1_18(sum1, true);
             let diff1 = obj4.lab()[0] - sum;
             let _Math = Math;
             tmp8 = sum1;
@@ -3221,15 +3261,15 @@ const fn = function t() {
           }
         }
         return tmp8;
-      } : function tMapLightness(arg0) {
+      }) : (function tMapLightness(arg0) {
         return arg0;
-      };
+      });
       return fn;
     };
     fn.padding = (arg0) => {
       if (null != arg0) {
         let tmp3 = arg0;
-        if ("number" === callback(arg0)) {
+        if ("number" === outer1_203(arg0)) {
           const items = [arg0, arg0];
           tmp3 = items;
         }
@@ -3244,9 +3284,9 @@ const fn = function t() {
       let tmp7;
       let str = arg1;
       let closure_0 = arg0;
-      let closure_1 = arg1;
+      let hex = arg1;
       if (arguments.length < 2) {
-        closure_1 = "hex";
+        hex = "hex";
         str = "hex";
       }
       if (0 === arguments.length) {
@@ -3255,9 +3295,8 @@ const fn = function t() {
         const items = [fn(0.5)];
         substr = items;
       } else if (arg0 > 1) {
-        const first = closure_3[0];
-        let closure_2 = first;
-        closure_3 = closure_3[1] - first;
+        const first = dependencyMap[0];
+        dependencyMap = dependencyMap[1] - first;
         const items1 = [];
         let num3 = 0;
         if (0 < arg0 ? 0 < arg0 : 0 > arg0) {
@@ -3267,31 +3306,31 @@ const fn = function t() {
             num3 = tmp11 ? num3 + 1 : num3 - 1;
           } while (tmp11 ? num3 < arg0 : num3 > arg0);
         }
-        substr = items1.map((arg0) => callback(first + arg0 / (arg0 - 1) * closure_3));
+        substr = items1.map((arg0) => outer1_20(first + arg0 / (closure_0 - 1) * closure_3));
       } else {
         const items2 = [];
-        if (closure_6) {
-          if (closure_6.length > 2) {
+        if (c6) {
+          if (c6.length > 2) {
             let num2 = 1;
             arr = items2;
-            if (1 <= closure_6.length ? 1 < closure_6.length : 1 > closure_6.length) {
+            if (1 <= c6.length ? 1 < c6.length : 1 > c6.length) {
               do {
-                let tmp4 = closure_6;
-                let tmp5 = closure_6;
-                arr = items2.push(0.5 * (closure_6[num2 - 1] + closure_6[num2]));
+                let tmp4 = c6;
+                let tmp5 = c6;
+                arr = items2.push(0.5 * (c6[num2 - 1] + c6[num2]));
                 tmp7 = tmp3 ? num2 + 1 : num2 - 1;
                 num2 = tmp7;
                 arr = items2;
               } while (tmp3 ? tmp7 < length : tmp7 > length);
             }
           }
-          substr = arr.map((arg0) => callback(arg0));
+          substr = arr.map((arg0) => outer1_20(arg0));
         }
-        arr = closure_3;
+        arr = dependencyMap;
       }
       let mapped = substr;
-      if (closure_202[str]) {
-        mapped = substr.map((arg0) => arg0[closure_1]());
+      if (outer1_202[str]) {
+        mapped = substr.map((arg0) => arg0[hex]());
       }
       return mapped;
     };
@@ -3315,7 +3354,7 @@ const fn = function t() {
     };
     fn.nodata = (arg0) => {
       if (null != arg0) {
-        let closure_1 = Animated(arg0);
+        let closure_1 = outer1_202(arg0);
         let tmp = fn;
       } else {
         tmp = closure_1;
@@ -3334,17 +3373,17 @@ const fn = function t() {
     }
   }
   function blend_f(arg0) {
-    const limit$2 = arg0;
+    let closure_0 = arg0;
     return (arg0, arg1) => {
-      const obj = lib(arg1);
-      const rgbResult = lib(arg1).rgb();
-      return lib.rgb(arg0(rgbResult, lib(arg0).rgb()));
+      const obj = outer1_207(arg1);
+      const rgbResult = outer1_207(arg1).rgb();
+      return outer1_207.rgb(callback(rgbResult, outer1_207(arg0).rgb()));
     };
   }
-  function each(closure_30, disambiguateEmoji) {
-    const limit$2 = closure_30;
+  function each(closure_1, disambiguateEmoji) {
+    let closure_0 = closure_1;
     return (arg0, arg1) => {
-      const items = [arg0(arg0[0], arg1[0]), arg0(arg0[1], arg1[1]), arg0(arg0[2], arg1[2])];
+      const items = [callback(arg0[0], arg1[0]), callback(arg0[1], arg1[1]), callback(arg0[2], arg1[2])];
       return items;
     };
   }
@@ -3402,9 +3441,9 @@ const fn = function t() {
   pow = Math.pow;
   floor = Math.floor;
   function analyze(analyzeResult) {
-    let closure_0 = arg1;
+    let c0 = arg1;
     if (undefined === arg1) {
-      closure_0 = null;
+      c0 = null;
     }
     const obj = { min: Number.MAX_VALUE, max: -1 * Number.MAX_VALUE, sum: 0, values: [], count: 0 };
     let values = analyzeResult;
@@ -3413,13 +3452,13 @@ const fn = function t() {
       values = Object.values(analyzeResult);
     }
     const item = values.forEach((arg0) => {
-      let tmp = closure_0;
-      if (closure_0) {
-        tmp = "object" === callback(arg0);
+      let tmp = c0;
+      if (c0) {
+        tmp = "object" === outer1_219(arg0);
       }
       let tmp3 = arg0;
       if (tmp) {
-        tmp3 = arg0[closure_0];
+        tmp3 = arg0[c0];
       }
       let isNaNResult = null == tmp3;
       if (!isNaNResult) {
@@ -3442,7 +3481,7 @@ const fn = function t() {
     const items = [, ];
     ({ min: arr2[0], max: arr2[1] } = obj);
     obj.domain = items;
-    obj.limits = (arg0, arg1) => callback2(obj, arg0, arg1);
+    obj.limits = (arg0, arg1) => outer1_225(obj, arg0, arg1);
     return obj;
   }
   function limits(analyzeResult, arg1, arg2) {
@@ -3541,8 +3580,8 @@ const fn = function t() {
               let num8 = 0;
               if (0 < num) {
                 do {
-                  let tmp16 = closure_223;
-                  let tmp17 = closure_223(tmp9[num7] - tmp12);
+                  let tmp16 = abs;
+                  let tmp17 = abs(tmp9[num7] - tmp12);
                   if (tmp17 < MAX_VALUE) {
                     MAX_VALUE = tmp17;
                     let tmp13 = num7;
@@ -3561,7 +3600,7 @@ const fn = function t() {
               let tmp19 = tmp15;
               let tmp20 = num8;
               let tmp21 = tmp12;
-              let tmp10 = tmp11;
+              tmp10 = tmp11;
             } while (num6 < length);
           }
           let _Array = Array;
@@ -3644,8 +3683,8 @@ const fn = function t() {
   cos = Math.cos;
   sin = Math.sin;
   PI = Math.PI;
-  const obj19 = { OrRd: [], PuBu: [], BuPu: [], Oranges: [], BuGn: [false, false, false, false, false, false, false, false, false], YlOrBr: ["r", "createData", "Array", "moderator", "r", "PREMIUM_TENURE_6_MONTH", "r", "createEnvelope", "Array"], YlGn: [115236278171727350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -69282988691254510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -11035964431286800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 44647099200363820000000000000000000000000000, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000240409391215744, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003177794797185073, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001871366868834094, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000142956734515382, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011703658028104815], Reds: [null, null, null, null, null, null, null, null, null], RdPu: [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010166856212623937, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009144952599996552, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000662728470758104, -1115038800979469700000000000000000000000000000, -246143254895054400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -6246958736926196000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018833757561274483, 0.000000000000000000000000000000000000000000000000000000000000000000000000000017281828434252443, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000318333925678093], Greens: [149906924695325670000000000, 790801674005289400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 20.000034397933636, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002781346143969783, -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001239469346457, -3755773863282015000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 598337861878674600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9129892832391740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002912721133557865], YlGnBu: [true, true, true, true, true, true, true, true, true], Purples: [null, null, null, null, null, null, null, null, null], GnBu: [], Greys: [], YlOrRd: [-1224736340, 1275068716, -452984272, 1996489091, -16776633, "<string:1134690306>", "<string:1087504386>", "<string:160366594>", "<string:289734657>"], PuRd: [true, false, false, false, false, false, false, false, null], Blues: [], PuBuGn: [], Viridis: [null, null, null, null, null, null, null, null, null], Spectral: [false, false, false, false, false, false, false, false, false, false, false], RdYlGn: [], RdBu: [], PiYG: [], PRGn: [], RdYlBu: [null, null, null, null, null, null, null, null, null, null, null], BrBG: [], RdGy: ["r", "handleStreamWatch", "Array", "PrivateThreadMode", "Array", "screenshare", "r", "JOIN_ATTEMPTS", "Array", "createData", "Array"], PuOr: ["onCLS", "UZ", "showDoubleTapEmojiUpdatedToast", "ActivityJoiningRestrictedGuilds", "TP", "VOICE_CHANNEL_EFFECTS_COACH_MARK", "al", "call_count", "%Promise%", "guildRoomToggleLayout", "et"], Set2: [], Accent: [], Set1: [], Set3: ["cmyk", "css", null, null, null, null, null, null, null, null, null, null], Dark2: [1090519896, 956302145, 1358955350, -1656149522, 167772838, 218104208, -570424687, -100662860], Paired: [], Pastel2: [], Pastel1: [] };
-  const keys = Object.keys(obj19);
+  const obj19 = { OrRd: ["#fff7ec", "#fee8c8", "#fdd49e", "#fdbb84", "#fc8d59", "#ef6548", "#d7301f", "#b30000", "#7f0000"], PuBu: ["#fff7fb", "#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#045a8d", "#023858"], BuPu: ["#f7fcfd", "#e0ecf4", "#bfd3e6", "#9ebcda", "#8c96c6", "#8c6bb1", "#88419d", "#810f7c", "#4d004b"], Oranges: ["#fff5eb", "#fee6ce", "#fdd0a2", "#fdae6b", "#fd8d3c", "#f16913", "#d94801", "#a63603", "#7f2704"], BuGn: ["#f7fcfd", "#e5f5f9", "#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#006d2c", "#00441b"], YlOrBr: ["#ffffe5", "#fff7bc", "#fee391", "#fec44f", "#fe9929", "#ec7014", "#cc4c02", "#993404", "#662506"], YlGn: ["#ffffe5", "#f7fcb9", "#d9f0a3", "#addd8e", "#78c679", "#41ab5d", "#238443", "#006837", "#004529"], Reds: ["#fff5f0", "#fee0d2", "#fcbba1", "#fc9272", "#fb6a4a", "#ef3b2c", "#cb181d", "#a50f15", "#67000d"], RdPu: ["#fff7f3", "#fde0dd", "#fcc5c0", "#fa9fb5", "#f768a1", "#dd3497", "#ae017e", "#7a0177", "#49006a"], Greens: ["#f7fcf5", "#e5f5e0", "#c7e9c0", "#a1d99b", "#74c476", "#41ab5d", "#238b45", "#006d2c", "#00441b"], YlGnBu: ["#ffffd9", "#edf8b1", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#253494", "#081d58"], Purples: ["#fcfbfd", "#efedf5", "#dadaeb", "#bcbddc", "#9e9ac8", "#807dba", "#6a51a3", "#54278f", "#3f007d"], GnBu: ["#f7fcf0", "#e0f3db", "#ccebc5", "#a8ddb5", "#7bccc4", "#4eb3d3", "#2b8cbe", "#0868ac", "#084081"], Greys: ["#ffffff", "#f0f0f0", "#d9d9d9", "#bdbdbd", "#969696", "#737373", "#525252", "#252525", "#000000"], YlOrRd: ["#ffffcc", "#ffeda0", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c", "#bd0026", "#800026"], PuRd: ["#f7f4f9", "#e7e1ef", "#d4b9da", "#c994c7", "#df65b0", "#e7298a", "#ce1256", "#980043", "#67001f"], Blues: ["#f7fbff", "#deebf7", "#c6dbef", "#9ecae1", "#6baed6", "#4292c6", "#2171b5", "#08519c", "#08306b"], PuBuGn: ["#fff7fb", "#ece2f0", "#d0d1e6", "#a6bddb", "#67a9cf", "#3690c0", "#02818a", "#016c59", "#014636"], Viridis: ["#440154", "#482777", "#3f4a8a", "#31678e", "#26838f", "#1f9d8a", "#6cce5a", "#b6de2b", "#fee825"], Spectral: ["#9e0142", "#d53e4f", "#f46d43", "#fdae61", "#fee08b", "#ffffbf", "#e6f598", "#abdda4", "#66c2a5", "#3288bd", "#5e4fa2"], RdYlGn: ["#a50026", "#d73027", "#f46d43", "#fdae61", "#fee08b", "#ffffbf", "#d9ef8b", "#a6d96a", "#66bd63", "#1a9850", "#006837"], RdBu: ["#67001f", "#b2182b", "#d6604d", "#f4a582", "#fddbc7", "#f7f7f7", "#d1e5f0", "#92c5de", "#4393c3", "#2166ac", "#053061"], PiYG: ["#8e0152", "#c51b7d", "#de77ae", "#f1b6da", "#fde0ef", "#f7f7f7", "#e6f5d0", "#b8e186", "#7fbc41", "#4d9221", "#276419"], PRGn: ["#40004b", "#762a83", "#9970ab", "#c2a5cf", "#e7d4e8", "#f7f7f7", "#d9f0d3", "#a6dba0", "#5aae61", "#1b7837", "#00441b"], RdYlBu: ["#a50026", "#d73027", "#f46d43", "#fdae61", "#fee090", "#ffffbf", "#e0f3f8", "#abd9e9", "#74add1", "#4575b4", "#313695"], BrBG: ["#543005", "#8c510a", "#bf812d", "#dfc27d", "#f6e8c3", "#f5f5f5", "#c7eae5", "#80cdc1", "#35978f", "#01665e", "#003c30"], RdGy: ["#67001f", "#b2182b", "#d6604d", "#f4a582", "#fddbc7", "#ffffff", "#e0e0e0", "#bababa", "#878787", "#4d4d4d", "#1a1a1a"], PuOr: ["#7f3b08", "#b35806", "#e08214", "#fdb863", "#fee0b6", "#f7f7f7", "#d8daeb", "#b2abd2", "#8073ac", "#542788", "#2d004b"], Set2: ["#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3", "#a6d854", "#ffd92f", "#e5c494", "#b3b3b3"], Accent: ["#7fc97f", "#beaed4", "#fdc086", "#ffff99", "#386cb0", "#f0027f", "#bf5b17", "#666666"], Set1: ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00", "#ffff33", "#a65628", "#f781bf", "#999999"], Set3: ["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#ffed6f"], Dark2: ["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"], Paired: ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f", "#ff7f00", "#cab2d6", "#6a3d9a", "#ffff99", "#b15928"], Pastel2: ["#b3e2cd", "#fdcdac", "#cbd5e8", "#f4cae4", "#e6f5c9", "#fff2ae", "#f1e2cc", "#cccccc"], Pastel1: ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"] };
+  let keys = Object.keys(obj19);
   let num2 = 0;
   if (0 < keys.length) {
     do {
@@ -3658,14 +3697,14 @@ const fn = function t() {
   chroma$k.average = function average(arr) {
     let str = arg1;
     let tmp = arg2;
-    let closure_0 = arg1;
-    let obj = arg2;
+    let lrgb = arg1;
+    let mapped = arg2;
     if (undefined === arg1) {
-      closure_0 = "lrgb";
+      lrgb = "lrgb";
       str = "lrgb";
     }
     if (undefined === tmp) {
-      obj = null;
+      mapped = null;
       tmp = null;
     }
     if (!tmp) {
@@ -3673,20 +3712,19 @@ const fn = function t() {
       const _Array2 = Array;
       const array = new Array(length);
       arr = Array.from(array);
-      const mapped = arr.map(() => 1);
-      obj = mapped;
+      mapped = arr.map(() => 1);
       tmp = mapped;
     }
     let closure_2 = length / tmp.reduce((arg0, arg1) => arg0 + arg1);
     const item = tmp.forEach((arg0, arg1) => {
       mapped[arg1] = mapped[arg1] * closure_2;
     });
-    const mapped1 = arr.map((arg0) => new closure_193(arg0));
+    const mapped1 = arr.map((arg0) => new outer1_193(arg0));
     if ("lrgb" === str) {
       return _average_lrgb(mapped1, tmp);
     } else {
       arr = mapped1.shift();
-      const value = arr.get(str);
+      let value = arr.get(str);
       const type$p = value;
       const items = [];
       let closure_5 = 0;
@@ -3716,37 +3754,37 @@ const fn = function t() {
       }
       let closure_7 = arr.alpha() * tmp[0];
       const item1 = mapped1.forEach((get) => {
-        const value = get.get(closure_0);
+        const value = get.get(lrgb);
         closure_7 = closure_7 + get.alpha() * mapped[arg1 + 1];
         let num = 0;
         if (0 < value.length) {
           do {
             let _isNaN = isNaN;
             if (!isNaN(value[num])) {
-              let tmp2 = closure_4;
-              let tmp3 = closure_1;
-              closure_4[num] = closure_4[num] + closure_1[arg1 + 1];
-              let tmp4 = closure_0;
-              if ("h" === closure_0.charAt(num)) {
-                let tmp7 = closure_197;
-                let result = value[num] / 180 * closure_197;
+              let tmp2 = items;
+              let tmp3 = mapped;
+              items[num] = items[num] + mapped[arg1 + 1];
+              let tmp4 = lrgb;
+              if ("h" === lrgb.charAt(num)) {
+                let tmp7 = outer1_197;
+                let result = value[num] / 180 * outer1_197;
                 let tmp9 = closure_5;
-                let tmp10 = closure_198;
-                let tmp11 = closure_1;
-                closure_5 = closure_5 + closure_198(result) * closure_1[arg1 + 1];
+                let tmp10 = outer1_198;
+                let tmp11 = mapped;
+                closure_5 = closure_5 + outer1_198(result) * mapped[arg1 + 1];
                 let tmp12 = closure_6;
-                let tmp13 = closure_199;
-                let tmp14 = closure_1;
-                closure_6 = closure_6 + closure_199(result) * closure_1[arg1 + 1];
+                let tmp13 = outer1_199;
+                let tmp14 = mapped;
+                closure_6 = closure_6 + outer1_199(result) * mapped[arg1 + 1];
               } else {
-                let tmp5 = closure_3;
-                let tmp6 = closure_1;
-                closure_3[num] = closure_3[num] + value[num] * closure_1[arg1 + 1];
+                let tmp5 = value;
+                let tmp6 = mapped;
+                value[num] = value[num] + value[num] * mapped[arg1 + 1];
               }
             }
             num = num + 1;
-            let tmp15 = closure_3;
-          } while (num < closure_3.length);
+            let tmp15 = value;
+          } while (num < value.length);
         }
       });
       for (let num4 = 0; num4 < value.length; num4 = num4 + 1) {
@@ -3780,7 +3818,7 @@ const fn = function t() {
       }
       closure_7 = closure_7 / length;
       const prototype2 = Color.prototype;
-      obj = new Color(value, str);
+      const obj = new Color(value, str);
       let num6 = 1;
       if (closure_7 <= 0.99999) {
         num6 = closure_7;
@@ -3789,8 +3827,8 @@ const fn = function t() {
     }
   };
   chroma$k.bezier = function bezier_1(arr) {
-    const tmp = function bezier(arr) {
-      const mapped = arr.map((arg0) => new closure_205(arg0));
+    const tmp = (function bezier(arr) {
+      const mapped = arr.map((arg0) => new outer2_205(arg0));
       if (2 === mapped.length) {
         const mapped1 = mapped.map((lab) => lab.lab());
         let closure_0 = mapped1[0];
@@ -3798,8 +3836,8 @@ const fn = function t() {
         class I {
           constructor(arg0) {
             closure_0 = arr;
-            items = [];
-            tmp = new closure_205(items.map((arg0) => arg0[arg0] + arg0 * (closure_1[arg0] - arg0[arg0])), "lab");
+            items = [0, 1, 2];
+            tmp = new outer2_205(items.map((arg0) => dependencyMap[arg0] + dependencyMap * (outer1_1[arg0] - dependencyMap[arg0])), "lab");
             return tmp;
           }
         }
@@ -3810,8 +3848,8 @@ const fn = function t() {
         class I {
           constructor(arg0) {
             closure_0 = arr;
-            items = [];
-            tmp = new closure_205(items.map((arg0) => (1 - arg0) * (1 - arg0) * arg0[arg0] + 2 * (1 - arg0) * arg0 * closure_1[arg0] + arg0 * arg0 * closure_2[arg0]), "lab");
+            items = [0, 1, 2];
+            tmp = new outer2_205(items.map((arg0) => (1 - table) * (1 - table) * table[arg0] + 2 * (1 - table) * table * outer1_1[arg0] + table * table * outer1_2[arg0]), "lab");
             return tmp;
           }
         }
@@ -3822,93 +3860,100 @@ const fn = function t() {
         class I {
           constructor(arg0) {
             closure_0 = arr;
-            items = [];
-            tmp = new closure_205(items.map((arg0) => (1 - arg0) * (1 - arg0) * (1 - arg0) * arg0[arg0] + 3 * (1 - arg0) * (1 - arg0) * arg0 * closure_1[arg0] + 3 * (1 - arg0) * arg0 * arg0 * closure_2[arg0] + arg0 * arg0 * arg0 * closure_3[arg0]), "lab");
+            items = [0, 1, 2];
+            tmp = new outer2_205(items.map((arg0) => (1 - table) * (1 - table) * (1 - table) * table[arg0] + 3 * (1 - table) * (1 - table) * table * outer1_1[arg0] + 3 * (1 - table) * table * table * outer1_2[arg0] + table * table * table * outer1_3[arg0]), "lab");
             return tmp;
           }
         }
       } else if (mapped.length >= 5) {
         let closure_4 = mapped.map((lab) => lab.lab());
         let closure_6 = mapped.length - 1;
-        const items = [];
+        let items = [1, 1];
         class I {
           constructor(arg0) {
             closure_0 = arr;
-            closure_1 = 1 - arr;
-            items = [];
-            tmp = new closure_205(items.map((arg0) => closure_4.reduce((arg0, arg1, exponent) => {
-              const result = closure_5[exponent] * Math.pow(closure_1, closure_6 - exponent);
-              return arg0 + result * Math.pow(arg0, exponent) * arg1[closure_0];
-            }, 0)), "lab");
+            c1 = 1 - arr;
+            items = [0, 1, 2];
+            tmp = new outer2_205(items.map((arg0) => {
+              let closure_0 = arg0;
+              return outer1_4.reduce((arg0, arg1, closure_0) => {
+                const result = outer2_5[closure_0] * Math.pow(outer1_1, outer2_6 - closure_0);
+                return arg0 + result * Math.pow(closure_0, closure_0) * arg1[closure_0];
+              }, 0);
+            }), "lab");
             return tmp;
           }
         }
+        let closure_5 = tmp4;
       } else {
         const _RangeError = RangeError;
         class I {
           constructor(arg0) {
             closure_0 = arr;
-            closure_1 = 1 - arr;
-            items = [];
-            tmp = new closure_205(items.map((arg0) => closure_4.reduce((arg0, arg1, exponent) => {
-              const result = closure_5[exponent] * Math.pow(closure_1, closure_6 - exponent);
-              return arg0 + result * Math.pow(arg0, exponent) * arg1[closure_0];
-            }, 0)), "lab");
+            c1 = 1 - arr;
+            items = [0, 1, 2];
+            tmp = new outer2_205(items.map((arg0) => {
+              let closure_0 = arg0;
+              return outer1_4.reduce((arg0, arg1, closure_0) => {
+                const result = outer2_5[closure_0] * Math.pow(outer1_1, outer2_6 - closure_0);
+                return arg0 + result * Math.pow(closure_0, closure_0) * arg1[closure_0];
+              }, 0);
+            }), "lab");
             return tmp;
           }
         }
         throw tmp3;
       }
       return I;
-    }(arr);
+    })(arr);
     const limit$2 = tmp;
-    tmp.scale = () => callback(tmp);
+    tmp.scale = () => outer1_206(closure_0);
     return tmp;
   };
   chroma$k.blend = blend;
   chroma$k.cubehelix = function cubehelix(arg0, arg1, arg2, arg3, arg4) {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let closure_3 = arg3;
+    let c0 = arg0;
+    let c1 = arg1;
+    let c2 = arg2;
+    let c3 = arg3;
     let items = arg4;
     if (undefined === arg0) {
-      closure_0 = 300;
+      c0 = 300;
     }
-    if (undefined === closure_1) {
-      closure_1 = -1.5;
+    if (undefined === c1) {
+      c1 = -1.5;
     }
-    if (undefined === closure_2) {
-      closure_2 = 1;
+    if (undefined === c2) {
+      c2 = 1;
     }
-    if (undefined === closure_3) {
-      closure_3 = 1;
+    if (undefined === c3) {
+      c3 = 1;
     }
     if (undefined === items) {
-      items = [77601039, 1612144654];
+      items = [0, 1];
     }
-    let closure_6 = 0;
+    let c6 = 0;
     if ("array" === callback37(items)) {
-      let closure_5 = items[1] - items[0];
+      let c5 = items[1] - items[0];
     } else {
-      closure_5 = 0;
+      c5 = 0;
       items = [, ];
       items[0] = items;
       items[1] = items;
     }
     const fn = function f(arg0) {
-      const result = closure_211 * ((closure_0 + 120) / 360 + closure_1 * arg0);
-      const tmp2 = callback3(items[0] + closure_5 * arg0, closure_3);
-      if (0 !== closure_6) {
-        let sum = closure_2[0] + arg0 * closure_6;
+      const result = outer1_211 * ((c0 + 120) / 360 + c1 * arg0);
+      const tmp2 = outer1_212(items[0] + c5 * arg0, c3);
+      if (0 !== c6) {
+        let sum = dependencyMap[0] + arg0 * c6;
       } else {
-        sum = closure_2;
+        sum = dependencyMap;
       }
       const result1 = sum * tmp2 * (1 - tmp2) / 2;
-      const tmp7 = callback5(result);
-      const tmp8 = callback4(result);
-      const items = [255 * (tmp2 + result1 * (-0.14861 * tmp7 + 1.78277 * tmp8)), 255 * (tmp2 + result1 * (-0.29227 * tmp7 - 0.90649 * tmp8)), 255 * (tmp2 + result1 * (1.97294 * tmp7)), 1];
-      return lib(callback2(items));
+      const tmp7 = outer1_214(result);
+      const tmp8 = outer1_213(result);
+      items = [255 * (tmp2 + result1 * (-0.14861 * tmp7 + 1.78277 * tmp8)), 255 * (tmp2 + result1 * (-0.29227 * tmp7 - 0.90649 * tmp8)), 255 * (tmp2 + result1 * (1.97294 * tmp7)), 1];
+      return outer1_215(outer1_210(items));
     };
     fn.start = (arg0) => {
       if (null == arg0) {
@@ -3939,17 +3984,17 @@ const fn = function t() {
     };
     fn.hue = (arg0) => {
       if (null == arg0) {
-        let tmp6 = closure_2;
+        let tmp6 = dependencyMap;
       } else {
-        closure_2 = arg0;
-        if ("array" === callback(arg0)) {
-          const diff = closure_2[1] - closure_2[0];
-          let closure_6 = diff;
+        dependencyMap = arg0;
+        if ("array" === outer1_209(arg0)) {
+          const diff = dependencyMap[1] - dependencyMap[0];
+          let c6 = diff;
           if (0 == diff) {
-            closure_2 = closure_2[1];
+            dependencyMap = dependencyMap[1];
           }
         } else {
-          closure_6 = 0;
+          c6 = 0;
         }
         tmp6 = fn;
       }
@@ -3959,19 +4004,19 @@ const fn = function t() {
       if (null == arg0) {
         let tmp2 = items;
       } else {
-        if ("array" === callback(arg0)) {
-          let items = arg0;
-          let closure_5 = arg0[1] - arg0[0];
+        if ("array" === outer1_209(arg0)) {
+          items = arg0;
+          let c5 = arg0[1] - arg0[0];
         } else {
           items = [arg0, arg0];
-          closure_5 = 0;
+          c5 = 0;
         }
         tmp2 = fn;
       }
       return tmp2;
     };
-    fn.scale = () => lib.scale(fn);
-    fn.hue(closure_2);
+    fn.scale = () => outer1_215.scale(fn);
+    fn.hue(c2);
     return fn;
   };
   chroma$k.interpolate = mix$1;
@@ -3981,9 +4026,9 @@ const fn = function t() {
     let num = 0;
     do {
       let charAt = "0123456789abcdef".charAt;
-      let tmp2 = closure_217;
-      let tmp3 = closure_218;
-      text = `#${"0123456789abcdef".charAt(closure_217(16 * closure_218()))}`;
+      let tmp2 = floor;
+      let tmp3 = random;
+      text = `#${"0123456789abcdef".charAt(floor(16 * random()))}`;
       num = num + 1;
       let tmp = text;
     } while (num < 6);
@@ -4019,10 +4064,10 @@ const fn = function t() {
       num3 = 1;
     }
     function rad2deg(arg0) {
-      return 360 * arg0 / (2 * closure_237);
+      return 360 * arg0 / (2 * outer1_237);
     }
     function deg2rad(diff) {
-      return 2 * closure_237 * diff / 360;
+      return 2 * outer1_237 * diff / 360;
     }
     const obj = new Color(arg0);
     let arr = Array.from(obj.lab());
@@ -4106,7 +4151,7 @@ const fn = function t() {
         let tmp7 = value[tmp5] || 0;
         let diff = tmp6 - tmp7;
         num = num + diff * diff;
-        // continue
+        continue;
       }
     }
     return Math.sqrt(num2);
@@ -4125,7 +4170,7 @@ const fn = function t() {
         diff = tmp4 - 1;
       } while (tmp4);
     }
-    const items1 = [true];
+    const items1 = [null];
     let applyResult = bind.apply(Color, items1.concat(items));
     applyResult = new applyResult();
     return true;
@@ -4136,7 +4181,7 @@ const fn = function t() {
       return scale$2(items);
     },
     hot() {
-      return scale$2([]).mode("rgb");
+      return scale$2(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
     }
   };
   chroma$k.colors = obj10;

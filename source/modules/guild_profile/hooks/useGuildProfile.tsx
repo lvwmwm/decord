@@ -1,24 +1,26 @@
-// Module ID: 8412
-// Function ID: 67023
+// Module ID: 8418
+// Function ID: 67060
 // Name: useGuildProfile
-// Dependencies: []
+// Dependencies: [5, 31, 8417, 566, 8419, 2]
 // Exports: useGuildProfile
 
-// Module 8412 (useGuildProfile)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_profile/hooks/useGuildProfile.tsx");
+// Module 8418 (useGuildProfile)
+import set from "set";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfile.tsx");
 
 export const useGuildProfile = function useGuildProfile(guildId) {
-  const arg1 = guildId;
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => store.getProfile(arg0));
-  const items1 = [closure_4];
+  const _require = guildId;
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getProfile(closure_0));
+  const items1 = [_isNativeReflectConstruct];
   obj = { guildProfile: stateFromStores };
   // CreateGeneratorClosureLongIndex (0x67)
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => store.getFetchStatus(arg0));
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_4.getFetchStatus(closure_0));
   const items2 = [guildId];
   obj.fetchGuildProfile = React.useCallback(callback(tmp), items2);
   obj.fetchStatus = stateFromStores1;

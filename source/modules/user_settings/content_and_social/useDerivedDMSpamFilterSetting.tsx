@@ -1,24 +1,26 @@
-// Module ID: 13628
-// Function ID: 103238
+// Module ID: 13742
+// Function ID: 105394
 // Name: useDerivedDmSpamFilterSettingValue
-// Dependencies: []
+// Dependencies: [1849, 3805, 3803, 566, 3809, 3816, 1282, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 13628 (useDerivedDmSpamFilterSettingValue)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[1]).ExplicitContentFilterToDmSpamFilterV2;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/content_and_social/useDerivedDMSpamFilterSetting.tsx");
+// Module 13742 (useDerivedDmSpamFilterSettingValue)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ExplicitContentFilterToDmSpamFilterV2 as closure_3 } from "items";
+
+const require = arg1;
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/content_and_social/useDerivedDMSpamFilterSetting.tsx");
 
 export const useDerivedDmSpamFilterSettingValue = function useDerivedDmSpamFilterSettingValue() {
-  const DmSpamFilterV2 = arg1(dependencyMap[2]).DmSpamFilterV2;
+  const DmSpamFilterV2 = require(3803) /* explicitContentFromProto */.DmSpamFilterV2;
   const setting = DmSpamFilterV2.useSetting();
-  const ExplicitContentFilter = arg1(dependencyMap[2]).ExplicitContentFilter;
+  const ExplicitContentFilter = require(3803) /* explicitContentFromProto */.ExplicitContentFilter;
   const setting1 = ExplicitContentFilter.useSetting();
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = arg1(dependencyMap[3]);
-  const isSettingTeenByDefault = arg1(dependencyMap[4]).useIsSettingTeenByDefault(arg1(dependencyMap[5]).SettingsDefaultFeature.SPAM_FILTERS);
-  if (setting !== arg1(dependencyMap[6]).DmSpamFilterV2.DEFAULT_UNSET) {
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getCurrentUser());
+  const obj = require(566) /* initialize */;
+  const isSettingTeenByDefault = require(3809) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3816) /* SettingsDefaultFeature */.SettingsDefaultFeature.SPAM_FILTERS);
+  if (setting !== require(1282) /* _callSuper */.DmSpamFilterV2.DEFAULT_UNSET) {
     return setting;
   } else {
     let nsfwAllowed;
@@ -28,9 +30,9 @@ export const useDerivedDmSpamFilterSettingValue = function useDerivedDmSpamFilte
     if (false !== nsfwAllowed) {
       let FRIENDS_AND_NON_FRIENDS = closure_3.get(setting1);
       if (null == FRIENDS_AND_NON_FRIENDS) {
-        FRIENDS_AND_NON_FRIENDS = arg1(dependencyMap[6]).DmSpamFilterV2.NON_FRIENDS;
+        FRIENDS_AND_NON_FRIENDS = require(1282) /* _callSuper */.DmSpamFilterV2.NON_FRIENDS;
       }
     }
-    FRIENDS_AND_NON_FRIENDS = arg1(dependencyMap[6]).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
+    FRIENDS_AND_NON_FRIENDS = require(1282) /* _callSuper */.DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
   }
 };

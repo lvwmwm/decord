@@ -1,20 +1,20 @@
-// Module ID: 12308
-// Function ID: 94318
+// Module ID: 12422
+// Function ID: 96469
 // Name: usePremiumGroupMembers
-// Dependencies: []
+// Dependencies: [31, 12419, 566, 686, 2]
 // Exports: default
 
-// Module 12308 (usePremiumGroupMembers)
-const useEffect = require(dependencyMap[0]).useEffect;
-let closure_4 = importDefault(dependencyMap[1]);
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupMembers.tsx");
+// Module 12422 (usePremiumGroupMembers)
+import { useEffect } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("initialize").fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupMembers.tsx");
 
 export default function usePremiumGroupMembers(arg0) {
   let isUpdatingMembers;
   let premiumGroupMembers;
   let obj = arg1;
-  const require = arg0;
+  const _require = arg0;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -22,14 +22,12 @@ export default function usePremiumGroupMembers(arg0) {
   if (flag === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   let flag2 = obj.fetch;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const dependencyMap = flag2;
-  const items = [closure_4];
-  const stateFromStoresObject = require(dependencyMap[2]).useStateFromStoresObject(items, () => ({ premiumGroupMembers: closure_4.getMembers(), isFetchingMembers: closure_4.isFetchingMembers(), isUpdatingMembers: closure_4.isUpdatingMembers() }));
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = _require(flag2[2]).useStateFromStoresObject(items, () => ({ premiumGroupMembers: outer1_4.getMembers(), isFetchingMembers: outer1_4.isFetchingMembers(), isUpdatingMembers: outer1_4.isUpdatingMembers() }));
   let isFetchingMembers = stateFromStoresObject.isFetchingMembers;
   const items1 = [flag2, arg0, flag];
   ({ premiumGroupMembers, isUpdatingMembers } = stateFromStoresObject);
@@ -37,12 +35,12 @@ export default function usePremiumGroupMembers(arg0) {
     if (flag2) {
       let hasFetchedMembersResult = flag;
       if (flag) {
-        hasFetchedMembersResult = closure_4.hasFetchedMembers();
+        hasFetchedMembersResult = outer1_4.hasFetchedMembers();
       }
       if (!hasFetchedMembersResult) {
-        if (null != arg0) {
+        if (null != closure_0) {
           let obj = flag(flag2[3]);
-          obj = { type: "PREMIUM_GROUP_MEMBERS_REQUEST", subscriptionId: arg0 };
+          obj = { type: "PREMIUM_GROUP_MEMBERS_REQUEST", subscriptionId: closure_0 };
           obj.dispatch(obj);
         }
       }

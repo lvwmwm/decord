@@ -1,17 +1,21 @@
-// Module ID: 13474
-// Function ID: 102272
+// Module ID: 13588
+// Function ID: 104428
 // Name: GummyStripes
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 665, 2]
 // Exports: default
 
-// Module 13474 (GummyStripes)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, Fragment: closure_4 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ stripe: { flex: 1 }, stripeOverlap: { marginLeft: -1 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/display_name_styles/native/effects/GummyStripes.tsx");
+// Module 13588 (GummyStripes)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, Fragment: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ stripe: { flex: 1 }, stripeOverlap: { marginLeft: -1 } });
+const result = require("jsxProd").fileFinishedImporting("modules/display_name_styles/native/effects/GummyStripes.tsx");
 
 export default function GummyStripes(colors) {
   colors = colors.colors;
@@ -25,10 +29,10 @@ export default function GummyStripes(colors) {
         stripeOverlap = lib.stripeOverlap;
       }
       items[1] = stripeOverlap;
-      obj = { backgroundColor: lib(closure_1[4]).int2hex(color) };
+      obj = { backgroundColor: lib(outer1_1[4]).int2hex(color) };
       items[2] = obj;
       obj.style = items;
-      return closure_3(closure_2, obj, arg1);
+      return outer1_3(outer1_2, obj, arg1);
     })
   });
 };

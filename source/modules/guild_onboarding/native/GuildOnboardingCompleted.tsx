@@ -1,44 +1,48 @@
-// Module ID: 5482
-// Function ID: 46787
+// Module ID: 5485
+// Function ID: 46810
 // Name: GuildOnboardingCompleted
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 1910, 1838, 1849, 5058, 33, 4130, 689, 1456, 566, 5148, 3842, 5486, 1392, 1825, 1327, 4528, 3991, 4131, 5085, 5121, 4126, 1212, 1273, 5487, 5515, 3712, 5518, 4543, 2]
 // Exports: default
 
-// Module 5482 (GuildOnboardingCompleted)
-let closure_3 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const View = tmp2.View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = { screen: {}, container: { isNewWebImplementationEnabled: null, MAX_FORUM_TAGS: "hidden", xxs: 1, xs: 0, sm: 0 } };
-obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
-obj.containerWithoutSplash = obj;
-obj.backgroundImage = { "Null": null, "Null": null, "Null": null };
-obj.title = {};
-obj.subtitle = { marginTop: 16 };
-const tmp3 = arg1(dependencyMap[7]);
-obj.card = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
-obj.username = { marginTop: 16 };
-obj.rolesHeader = { marginTop: 8 };
-obj.roles = { <string:3427919713>: "enum", <string:1374118325>: null, <string:1632825022>: "\u{1F9CF}\u{1F3FB}\u200D\u2642\uFE0F", <string:1378301610>: true };
-obj.role = { marginRight: 8 };
-const obj1 = { borderRadius: importDefault(dependencyMap[9]).radii.sm, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH };
-obj.roleOverflow = { borderRadius: importDefault(dependencyMap[9]).radii.xs, borderWidth: tmp2.StyleSheet.hairlineWidth, borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
-const obj2 = { borderRadius: importDefault(dependencyMap[9]).radii.xs, borderWidth: tmp2.StyleSheet.hairlineWidth, borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE };
-obj.animation = { borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-const items = [{ translateX: 24 }, { rotate: "5deg" }];
-obj.wave = { transform: items };
-obj.animationText = { "Null": "<string:2126337>", "Null": "<string:2097152>" };
-obj.getStartedButton = { marginTop: 24 };
-let closure_12 = obj.createStyles(obj);
+// Module 5485 (GuildOnboardingCompleted)
+import set from "set";
+import get_ActivityIndicator from "makeSizeStyle";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+const require = arg1;
+const View = get_ActivityIndicator.View;
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = { screen: { flex: 1, position: "relative" }, container: { backgroundColor: "rgba(0, 0, 0, 0.5)", paddingHorizontal: 24, display: "flex", justifyContent: "center", flexGrow: 1 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.containerWithoutSplash = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.backgroundImage = { position: "absolute", width: "100%", height: "100%" };
+_createForOfIteratorHelperLoose.title = {};
+_createForOfIteratorHelperLoose.subtitle = { marginTop: 16 };
+let obj1 = { marginTop: 24, padding: 16, paddingBottom: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.card = obj1;
+_createForOfIteratorHelperLoose.username = { marginTop: 16 };
+_createForOfIteratorHelperLoose.rolesHeader = { marginTop: 8 };
+_createForOfIteratorHelperLoose.roles = { marginTop: 12, display: "flex", flexDirection: "row", flexWrap: "wrap" };
+_createForOfIteratorHelperLoose.role = { marginRight: 8 };
+let obj2 = { paddingHorizontal: 8, height: 28, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, display: "flex", justifyContent: "center", borderWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.roleOverflow = obj2;
+let obj3 = { marginTop: 24, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderWidth: 2, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: 12, display: "flex", flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.animation = obj3;
+let items = [{ translateX: 24 }, { rotate: "5deg" }];
+_createForOfIteratorHelperLoose.wave = { transform: items };
+_createForOfIteratorHelperLoose.animationText = { flexGrow: 1, marginLeft: 8 };
+_createForOfIteratorHelperLoose.getStartedButton = { marginTop: 24 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_13 = { code: "function GuildOnboardingCompletedTsx1(){const{withSequence,withTiming,withDelay,ANIMATION_DURATION,Easing,useReducedMotion}=this.__closure;const opacity=withSequence(withTiming(0,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(0.5,{duration:ANIMATION_DURATION})),withTiming(1,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const scale=withSequence(withTiming(1,{duration:0}),withDelay(ANIMATION_DURATION,withTiming(1.5,{duration:ANIMATION_DURATION,easing:Easing.out(Easing.ease)})),withTiming(1,{duration:useReducedMotion?1:ANIMATION_DURATION,easing:Easing.out(Easing.ease)}));const rawRotation=withSequence(withTiming('0deg',{duration:0}),withDelay(ANIMATION_DURATION,withTiming('-2deg',{duration:ANIMATION_DURATION})),withTiming('-5deg',{duration:ANIMATION_DURATION}));return{opacity:opacity,transform:[{rotate:rawRotation},{scale:scale}]};}" };
-const obj3 = { borderColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, borderRadius: importDefault(dependencyMap[9]).radii.sm };
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingCompleted.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingCompleted.tsx");
 
 export default function GuildOnboardingCompleted(guildId) {
   let allSelectedRoleIds;
@@ -46,33 +50,28 @@ export default function GuildOnboardingCompleted(guildId) {
   let numSharedRoleMembers;
   let prompts;
   guildId = guildId.guildId;
-  const arg1 = guildId;
   ({ prompts, completeOnboarding } = guildId);
-  const importDefault = completeOnboarding;
   const onClose = guildId.onClose;
-  const dependencyMap = onClose;
   let closure_7;
-  let closure_8;
-  let closure_9;
+  let found;
+  allSelectedRoleIds = undefined;
   let isScreenReaderEnabled;
   let callback;
-  let callback2;
-  const tmp = callback2();
+  let stateFromStores2;
+  const tmp = stateFromStores2();
   const React = tmp;
-  let obj = arg1(dependencyMap[10]);
+  let obj = guildId(onClose[10]);
   const navigation = obj.useNavigation();
-  const View = navigation;
-  let obj1 = arg1(dependencyMap[11]);
-  const items = [closure_8];
+  let obj1 = guildId(onClose[11]);
+  let items = [found];
   const stateFromStores = obj1.useStateFromStores(items, () => found.getCurrentUser());
-  let obj2 = arg1(dependencyMap[11]);
+  let obj2 = guildId(onClose[11]);
   const items1 = [closure_7];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => closure_7.getGuild(guildId));
-  let closure_5 = stateFromStores1;
-  const tmp5 = importDefault(dependencyMap[12])(guildId);
+  const tmp5 = completeOnboarding(onClose[12])(guildId);
   let closure_6 = tmp5;
-  let obj3 = arg1(dependencyMap[13]);
-  let obj4 = arg1(dependencyMap[14]);
+  let obj3 = guildId(onClose[13]);
+  let obj4 = guildId(onClose[14]);
   const profileThemeValues = obj4.useProfileThemeValues(obj3.useThemeContext().theme);
   obj = {};
   let prop;
@@ -82,40 +81,38 @@ export default function GuildOnboardingCompleted(guildId) {
   obj.backgroundColor = prop;
   let guildSplashURL = null;
   if (null != stateFromStores1) {
-    let obj6 = importDefault(dependencyMap[15]);
+    let obj6 = completeOnboarding(onClose[15]);
     obj = {};
     ({ id: obj8.id, splash: obj8.splash } = stateFromStores1);
-    obj.size = 400 * importDefault(dependencyMap[16])();
+    obj.size = 400 * completeOnboarding(onClose[16])();
     guildSplashURL = obj6.getGuildSplashURL(obj);
   }
-  let obj8 = arg1(dependencyMap[11]);
-  const items2 = [closure_9];
+  let obj8 = guildId(onClose[11]);
+  const items2 = [allSelectedRoleIds];
   const items3 = [guildId];
   closure_7 = obj8.useStateFromStoresArray(items2, () => allSelectedRoleIds.getOnboardingResponses(guildId), items3);
-  const mapped = prompts.map((options) => options.options);
-  const found = mapped.flat().filter((id) => closure_7.includes(id.id));
-  closure_8 = found;
+  let mapped = prompts.map((options) => options.options);
+  found = mapped.flat().filter((id) => closure_7.includes(id.id));
   const items4 = [tmp5, found];
   const memo = React.useMemo(() => {
     const mapped = found.map((roleIds) => roleIds.roleIds);
-    const found = mapped.flat().filter(guildId(onClose[17]).isNotNullish);
+    found = mapped.flat().filter(guildId(onClose[17]).isNotNullish);
     const obj = {};
     let num = 0;
-    if (null != tmp5) {
+    if (null != closure_6) {
       num = 0;
       if (found.length > 0) {
         const _Math = Math;
         const items = [];
         HermesBuiltin.arraySpread(found.map((arg0) => {
           let num = 0;
-          if (null != closure_6[arg0]) {
+          if (null != outer1_6[arg0]) {
             num = tmp;
           }
           return num;
         }), 0);
         const _Math2 = Math;
         num = HermesBuiltin.apply(items, Math);
-        const tmp5 = items;
       }
     }
     obj.numSharedRoleMembers = num;
@@ -123,8 +120,7 @@ export default function GuildOnboardingCompleted(guildId) {
     return obj;
   }, items4);
   ({ numSharedRoleMembers, allSelectedRoleIds } = memo);
-  closure_9 = allSelectedRoleIds;
-  let obj10 = arg1(dependencyMap[11]);
+  let obj10 = guildId(onClose[11]);
   const items5 = [closure_6];
   const items6 = [allSelectedRoleIds, guildId];
   const stateFromStoresArray = obj10.useStateFromStoresArray(items5, () => tmp5.getManyRoles(guildId, allSelectedRoleIds), items6);
@@ -136,7 +132,7 @@ export default function GuildOnboardingCompleted(guildId) {
       }
     });
   }, items7);
-  let obj11 = arg1(dependencyMap[18]);
+  let obj11 = guildId(onClose[18]);
   isScreenReaderEnabled = obj11.useIsScreenReaderEnabled();
   callback = React.useRef(false);
   const items8 = [completeOnboarding, onClose, isScreenReaderEnabled];
@@ -149,20 +145,19 @@ export default function GuildOnboardingCompleted(guildId) {
     } else {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
-        if (!ref.current) {
-          ref.current = true;
-          callback();
+        if (!outer1_11.current) {
+          outer1_11.current = true;
+          outer1_1();
         }
-        callback2();
+        outer1_2();
       }, 3600);
       return () => clearTimeout(closure_0);
     }
   }, items8);
-  let obj12 = arg1(dependencyMap[11]);
-  const items9 = [closure_5];
-  const stateFromStores2 = obj12.useStateFromStores(items9, () => stateFromStores1.useReducedMotion);
-  callback2 = stateFromStores2;
-  arg1(dependencyMap[19]);
+  let obj12 = guildId(onClose[11]);
+  const items9 = [stateFromStores1];
+  stateFromStores2 = obj12.useStateFromStores(items9, () => stateFromStores1.useReducedMotion);
+  guildId(onClose[19]);
   const fn = function k() {
     let obj = guildId(onClose[19]);
     let obj1 = guildId(onClose[20]);
@@ -207,7 +202,7 @@ export default function GuildOnboardingCompleted(guildId) {
     obj2.transform = items;
     return obj2;
   };
-  obj1 = { withSequence: arg1(dependencyMap[19]).withSequence, withTiming: arg1(dependencyMap[20]).withTiming, withDelay: arg1(dependencyMap[19]).withDelay, ANIMATION_DURATION: 400, Easing: arg1(dependencyMap[19]).Easing, useReducedMotion: stateFromStores2 };
+  obj1 = { withSequence: guildId(onClose[19]).withSequence, withTiming: guildId(onClose[20]).withTiming, withDelay: guildId(onClose[19]).withDelay, ANIMATION_DURATION: 400, Easing: guildId(onClose[19]).Easing, useReducedMotion: stateFromStores2 };
   fn.__closure = obj1;
   fn.__workletHash = 8282245217026;
   fn.__initData = closure_13;
@@ -221,10 +216,10 @@ export default function GuildOnboardingCompleted(guildId) {
         obj4 = { uri: guildSplashURL };
         obj3.source = obj4;
         obj3.style = tmp.backgroundImage;
-        tmp22 = isScreenReaderEnabled(importDefault(dependencyMap[21]), obj3);
+        tmp22 = isScreenReaderEnabled(completeOnboarding(onClose[21]), obj3);
       }
       const items10 = [tmp22, ];
-      const obj5 = { bottom: true };
+      let obj5 = { bottom: true };
       const items11 = [tmp.container, ];
       let prop1 = null;
       if (null == guildSplashURL) {
@@ -233,43 +228,43 @@ export default function GuildOnboardingCompleted(guildId) {
       items11[1] = prop1;
       obj5.style = items11;
       obj6 = {};
-      const obj7 = { style: tmp.title };
+      let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xxl/extrabold" };
       let str = "text-overlay-light";
       let str2 = "text-overlay-light";
       if (null == guildSplashURL) {
         str2 = "mobile-text-heading-primary";
       }
       obj7.color = str2;
-      const intl = arg1(dependencyMap[24]).intl;
-      obj7.children = intl.string(arg1(dependencyMap[24]).t.PFWIYe);
-      const items12 = [isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj7), , , ];
-      obj8 = { style: tmp.subtitle };
+      const intl = guildId(onClose[24]).intl;
+      obj7.children = intl.string(guildId(onClose[24]).t.PFWIYe);
+      const items12 = [isScreenReaderEnabled(guildId(onClose[23]).Text, obj7), , , ];
+      obj8 = { style: tmp.subtitle, accessibilityRole: "header", variant: "text-md/medium" };
       if (null == guildSplashURL) {
         str = "text-muted";
       }
       obj8.color = str;
-      const intl2 = arg1(dependencyMap[24]).intl;
-      obj8.children = intl2.string(arg1(dependencyMap[24]).t.og4NNr);
-      items12[1] = isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj8);
-      const obj9 = { style: tmp.card };
-      obj10 = { size: arg1(dependencyMap[25]).AvatarSizes.XXLARGE, user: stateFromStores, guildId, animate: false };
-      const items13 = [isScreenReaderEnabled(arg1(dependencyMap[25]).Avatar, obj10), , , , ];
-      obj11 = { style: tmp.username, children: stateFromStores.username };
-      items13[1] = isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj11);
+      const intl2 = guildId(onClose[24]).intl;
+      obj8.children = intl2.string(guildId(onClose[24]).t.og4NNr);
+      items12[1] = isScreenReaderEnabled(guildId(onClose[23]).Text, obj8);
+      let obj9 = { style: tmp.card };
+      obj10 = { size: guildId(onClose[25]).AvatarSizes.XXLARGE, user: stateFromStores, guildId, animate: false };
+      const items13 = [isScreenReaderEnabled(guildId(onClose[25]).Avatar, obj10), , , , ];
+      obj11 = { style: tmp.username, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stateFromStores.username };
+      items13[1] = isScreenReaderEnabled(guildId(onClose[23]).Text, obj11);
       let tmp40 = null;
       if (numSharedRoleMembers > 0) {
-        obj12 = { "Null": false, "Null": 400, alignItems: 20, style: tmp.rolesHeader };
-        const intl3 = arg1(dependencyMap[24]).intl;
+        obj12 = { style: tmp.rolesHeader, variant: "text-sm/normal", color: "text-muted" };
+        const intl3 = guildId(onClose[24]).intl;
         const obj13 = { numSharedRoleMembers };
-        obj12.children = intl3.format(arg1(dependencyMap[24]).t.l1Jc1n, obj13);
-        tmp40 = isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj12);
+        obj12.children = intl3.format(guildId(onClose[24]).t.l1Jc1n, obj13);
+        tmp40 = isScreenReaderEnabled(guildId(onClose[23]).Text, obj12);
       }
       items13[2] = tmp40;
       const obj14 = { style: tmp.roles };
       const substr = stateFromStoresArray.slice(0, 3);
       const items14 = [
         substr.map((id) => {
-              let obj = { style: tmp.role, children: isScreenReaderEnabled(guildId(onClose[26]).RoleItem, obj) };
+              obj = { style: tmp.role, children: isScreenReaderEnabled(guildId(onClose[26]).RoleItem, obj) };
               obj = { role: id, guildId: stateFromStores1.id, disableInteraction: true };
               return isScreenReaderEnabled(navigation, obj, id.id);
             }),
@@ -280,67 +275,67 @@ export default function GuildOnboardingCompleted(guildId) {
         const obj15 = {};
         const items15 = [tmp.roleOverflow, obj];
         obj15.style = items15;
-        const obj16 = { cachedAt: null, edpbxy: null };
+        let obj16 = { variant: "heading-deprecated-12/semibold", color: "mobile-text-heading-primary" };
         const _HermesInternal = HermesInternal;
         obj16.children = "+" + diff;
-        obj15.children = isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj16);
-        tmp46 = isScreenReaderEnabled(View, obj15);
+        obj15.children = isScreenReaderEnabled(guildId(onClose[23]).Text, obj16);
+        tmp46 = isScreenReaderEnabled(navigation, obj15);
       }
       items14[1] = tmp46;
       obj14.children = items14;
-      items13[3] = callback(View, obj14);
-      const obj17 = {};
+      items13[3] = callback(navigation, obj14);
+      let obj17 = {};
       const items16 = [tmp.animation, tmp18];
       obj17.style = items16;
-      const obj18 = { guild: stateFromStores1, size: arg1(dependencyMap[27]).GuildIconSizes.LARGE };
-      const items17 = [isScreenReaderEnabled(importDefault(dependencyMap[27]), obj18), , ];
-      const obj19 = { style: tmp.animationText };
-      const obj20 = {};
-      const intl4 = arg1(dependencyMap[24]).intl;
+      let obj18 = { guild: stateFromStores1, size: guildId(onClose[27]).GuildIconSizes.LARGE };
+      const items17 = [isScreenReaderEnabled(completeOnboarding(onClose[27]), obj18), , ];
+      let obj19 = { style: tmp.animationText };
+      const obj20 = { variant: "text-sm/medium", color: "mobile-text-heading-primary" };
+      const intl4 = guildId(onClose[24]).intl;
       const obj21 = { guildName: stateFromStores1.name };
-      obj20.children = intl4.format(arg1(dependencyMap[24]).t.FXREhf, obj21);
-      const items18 = [isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj20), ];
-      const obj22 = {};
+      obj20.children = intl4.format(guildId(onClose[24]).t.FXREhf, obj21);
+      const items18 = [isScreenReaderEnabled(guildId(onClose[23]).Text, obj20), ];
+      const obj22 = { variant: "text-xs/normal", color: "text-muted" };
       const tmp23 = isScreenReaderEnabled;
       const tmp27 = callback;
-      const tmp28 = View;
+      const tmp28 = navigation;
       const tmp29 = isScreenReaderEnabled;
       const tmp34 = isScreenReaderEnabled;
       const tmp37 = callback;
-      const tmp38 = View;
+      const tmp38 = navigation;
       const tmp44 = callback;
-      const tmp45 = View;
-      const tmp56 = importDefault(dependencyMap[27]);
+      const tmp45 = navigation;
+      const tmp56 = completeOnboarding(onClose[27]);
       const tmp67 = callback;
-      const tmp68 = View;
+      const tmp68 = navigation;
       const _HermesInternal2 = HermesInternal;
-      obj22.children = "" + importDefault(dependencyMap[28])().format("LL");
-      items18[1] = isScreenReaderEnabled(arg1(dependencyMap[23]).Text, obj22);
+      obj22.children = "" + completeOnboarding(onClose[28])().format("LL");
+      items18[1] = isScreenReaderEnabled(guildId(onClose[23]).Text, obj22);
       obj19.children = items18;
-      items17[1] = callback(View, obj19);
+      items17[1] = callback(navigation, obj19);
       const obj23 = {};
-      const obj35 = importDefault(dependencyMap[28])();
-      obj23.source = importDefault(dependencyMap[29]);
+      const obj35 = completeOnboarding(onClose[28])();
+      obj23.source = completeOnboarding(onClose[29]);
       obj23.style = tmp.wave;
-      items17[2] = isScreenReaderEnabled(importDefault(dependencyMap[21]), obj23);
+      items17[2] = isScreenReaderEnabled(completeOnboarding(onClose[21]), obj23);
       obj17.children = items17;
-      items13[4] = callback(importDefault(dependencyMap[19]).View, obj17);
+      items13[4] = callback(completeOnboarding(onClose[19]).View, obj17);
       obj9.children = items13;
       items12[2] = tmp37(tmp38, obj9);
       let tmp61 = null;
       if (isScreenReaderEnabled) {
         const obj24 = { style: tmp.getStartedButton };
-        const obj25 = {};
-        const intl5 = arg1(dependencyMap[24]).intl;
-        obj25.text = intl5.string(arg1(dependencyMap[24]).t.LhlgY9);
+        const obj25 = { variant: "primary", size: "md", grow: true };
+        const intl5 = guildId(onClose[24]).intl;
+        obj25.text = intl5.string(guildId(onClose[24]).t.LhlgY9);
         obj25.onPress = onClose;
-        obj24.children = isScreenReaderEnabled(arg1(dependencyMap[30]).Button, obj25);
-        tmp61 = isScreenReaderEnabled(View, obj24);
+        obj24.children = isScreenReaderEnabled(guildId(onClose[30]).Button, obj25);
+        tmp61 = isScreenReaderEnabled(navigation, obj24);
       }
       items12[3] = tmp61;
       obj6.children = items12;
       obj5.children = tmp27(tmp28, obj6);
-      items10[1] = tmp23(arg1(dependencyMap[22]).SafeAreaPaddingView, obj5);
+      items10[1] = tmp23(guildId(onClose[22]).SafeAreaPaddingView, obj5);
       obj2.children = items10;
       return tmp67(tmp68, obj2);
     }

@@ -1,15 +1,15 @@
 // Module ID: 781
-// Function ID: 8867
+// Function ID: 8868
 // Name: baseAssignValue
-// Dependencies: [794]
+// Dependencies: [782]
 
 // Module 781 (baseAssignValue)
 
 export default function baseAssignValue(arg0, arg1, value) {
   if ("__proto__" == arg1) {
-    if (require(dependencyMap[0])) {
-      const obj = { value };
-      require(dependencyMap[0])(arg0, arg1, obj);
+    if (require(782) /* getNative */) {
+      const obj = { configurable: true, enumerable: true, value, writable: true };
+      require(782) /* getNative */(arg0, arg1, obj);
     }
   }
   arg0[arg1] = value;

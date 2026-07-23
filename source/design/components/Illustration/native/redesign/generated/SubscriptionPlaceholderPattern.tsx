@@ -1,32 +1,34 @@
-// Module ID: 12319
-// Function ID: 94406
+// Module ID: 12433
+// Function ID: 96557
 // Name: getSubscriptionPlaceholderPatternSource
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 12434, 12435, 12436, 3976, 2]
 // Exports: SubscriptionPlaceholderPattern
 
-// Module 12319 (getSubscriptionPlaceholderPatternSource)
+// Module 12433 (getSubscriptionPlaceholderPatternSource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getSubscriptionPlaceholderPatternSource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useSubscriptionPlaceholderPatternSource() {
-  return getSubscriptionPlaceholderPatternSource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getSubscriptionPlaceholderPatternSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/SubscriptionPlaceholderPattern.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/SubscriptionPlaceholderPattern.tsx");
 
 export { getSubscriptionPlaceholderPatternSource };
 export { useSubscriptionPlaceholderPatternSource };
@@ -34,5 +36,5 @@ export const SubscriptionPlaceholderPattern = function SubscriptionPlaceholderPa
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useSubscriptionPlaceholderPatternSource();
-  return <Image {...obj} />;
+  return <Image />;
 };

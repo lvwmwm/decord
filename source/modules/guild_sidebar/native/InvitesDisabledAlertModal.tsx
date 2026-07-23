@@ -1,25 +1,27 @@
-// Module ID: 11387
-// Function ID: 88542
+// Module ID: 11397
+// Function ID: 88592
 // Name: InvitesDisabledAlertModal
-// Dependencies: []
+// Dependencies: [31, 33, 4475, 1212, 4475, 2]
 // Exports: default
 
-// Module 11387 (InvitesDisabledAlertModal)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_sidebar/native/InvitesDisabledAlertModal.tsx");
+// Module 11397 (InvitesDisabledAlertModal)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("getAlertModalItemKey").fileFinishedImporting("modules/guild_sidebar/native/InvitesDisabledAlertModal.tsx");
 
 export default function InvitesDisabledAlertModal() {
   let obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.title = intl.string(arg1(dependencyMap[3]).t.LpUfEt);
-  const intl2 = arg1(dependencyMap[3]).intl;
-  obj.content = intl2.string(arg1(dependencyMap[3]).t.QRXqzO);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.LpUfEt);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl2.string(require(1212) /* getSystemLocale */.t.QRXqzO);
   obj = {};
   obj = {};
-  const intl3 = arg1(dependencyMap[3]).intl;
-  obj.text = intl3.string(arg1(dependencyMap[3]).t.BddRzS);
-  obj.children = jsx(arg1(dependencyMap[2]).AlertActionButton, obj, "okay");
-  obj.actions = jsx(arg1(dependencyMap[4]).AlertActions, obj);
-  return jsx(arg1(dependencyMap[2]).AlertModal, obj);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl3.string(require(1212) /* getSystemLocale */.t.BddRzS);
+  obj.children = jsx(require(4475) /* getAlertModalItemKey */.AlertActionButton, {}, "okay");
+  obj.actions = jsx(require(4475) /* getAlertModalItemKey */.AlertActions, {});
+  return jsx(require(4475) /* getAlertModalItemKey */.AlertModal, {});
 };

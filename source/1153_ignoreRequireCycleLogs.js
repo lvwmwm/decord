@@ -1,11 +1,12 @@
 // Module ID: 1153
-// Function ID: 13135
+// Function ID: 13136
 // Name: ignoreRequireCycleLogs
-// Dependencies: []
+// Dependencies: [27]
 // Exports: ignoreRequireCycleLogs
 
 // Module 1153 (ignoreRequireCycleLogs)
-const LogBox = require(dependencyMap[0]).LogBox;
+import { LogBox } from "get ActivityIndicator";
+
 
 export const ignoreRequireCycleLogs = function ignoreRequireCycleLogs(version) {
   let tmp = version;
@@ -16,6 +17,6 @@ export const ignoreRequireCycleLogs = function ignoreRequireCycleLogs(version) {
     tmp = version.minor < 70;
   }
   if (tmp) {
-    LogBox.ignoreLogs([null]);
+    LogBox.ignoreLogs(["Require cycle:"]);
   }
 };

@@ -1,7 +1,7 @@
 // Module ID: 572
 // Function ID: 6945
 // Name: throttle
-// Dependencies: []
+// Dependencies: [573, 574]
 
 // Module 572 (throttle)
 
@@ -13,7 +13,7 @@ export default function throttle(arg0, maxWait, leading) {
   } else {
     let flag4 = true;
     let flag3 = true;
-    if (require(dependencyMap[0])(leading)) {
+    if (require(573) /* isObject */(leading)) {
       let flag = true;
       if ("leading" in leading) {
         flag = leading.leading;
@@ -26,6 +26,6 @@ export default function throttle(arg0, maxWait, leading) {
       flag4 = flag;
     }
     const obj = { leading: flag4, maxWait, trailing: flag3 };
-    return require(dependencyMap[1])(arg0, maxWait, obj);
+    return require(574) /* debounce */(arg0, maxWait, obj);
   }
 };

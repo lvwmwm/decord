@@ -1,14 +1,17 @@
 // Module ID: 1049
-// Function ID: 11245
+// Function ID: 11246
 // Name: createFrame
-// Dependencies: []
+// Dependencies: [57, 794]
 
 // Module 1049 (createFrame)
+import _slicedToArray from "_slicedToArray";
+import { createStackParser } from "registerSpanErrorInstrumentation";
+
 function createFrame(filename, arg1, lineno, colno) {
   let UNKNOWN_FUNCTION = arg1;
   const obj = { filename };
   if ("<anonymous>" === arg1) {
-    UNKNOWN_FUNCTION = require(dependencyMap[1]).UNKNOWN_FUNCTION;
+    UNKNOWN_FUNCTION = require(794) /* registerSpanErrorInstrumentation */.UNKNOWN_FUNCTION;
   }
   obj.function = UNKNOWN_FUNCTION;
   obj.in_app = true;
@@ -20,14 +23,13 @@ function createFrame(filename, arg1, lineno, colno) {
   }
   return obj;
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_3 = /^\s*at (\S+?)(?::(\d+))(?::(\d+))\s*$/i;
-let closure_4 = /^\s*at (?:(.+?\)(?: \[.+\])?|.*?) ?\((?:address at )?)?(?:async )?((?:<anonymous>|[-a-z]+:|.*bundle|\/)?.*?)(?::(\d+))?(?::(\d+))?\)?\s*$/i;
-let closure_5 = /\((\S*)(?::(\d+))(?::(\d+))\)/;
-let closure_6 = /at (.+?) ?\(data:(.+?),/;
-const items = [
-,
+const re3 = /^\s*at (\S+?)(?::(\d+))(?::(\d+))\s*$/i;
+const re4 = /^\s*at (?:(.+?\)(?: \[.+\])?|.*?) ?\((?:address at )?)?(?:async )?((?:<anonymous>|[-a-z]+:|.*bundle|\/)?.*?)(?::(\d+))?(?::(\d+))?\)?\s*$/i;
+const re5 = /\((\S*)(?::(\d+))(?::(\d+))\)/;
+const re6 = /at (.+?) ?\(data:(.+?),/;
+let items = [
+  30,
   function chromeStackParserFn(str) {
     let tmp13;
     let tmp15;
@@ -41,8 +43,8 @@ const items = [
     } else {
       const match1 = regex.exec(str);
       if (match1) {
-        const tmp23 = callback(match1, 4);
-        return createFrame(tmp23[1], require(dependencyMap[1]).UNKNOWN_FUNCTION, +tmp23[2], +tmp23[3]);
+        const tmp23 = _slicedToArray(match1, 4);
+        return createFrame(tmp23[1], require(794) /* registerSpanErrorInstrumentation */.UNKNOWN_FUNCTION, +tmp23[2], +tmp23[3]);
       } else {
         const match2 = regex2.exec(str);
         if (match2) {
@@ -55,13 +57,13 @@ const items = [
                 match2[4] = match3[3];
               }
             }
-            const arr = match2[2];
+            arr = match2[2];
           }
           let UNKNOWN_FUNCTION = match2[1];
           if (!UNKNOWN_FUNCTION) {
-            UNKNOWN_FUNCTION = require(dependencyMap[1]).UNKNOWN_FUNCTION;
+            UNKNOWN_FUNCTION = require(794) /* registerSpanErrorInstrumentation */.UNKNOWN_FUNCTION;
           }
-          [tmp13, tmp15] = callback(extractSafariExtensionDetails(UNKNOWN_FUNCTION, match2[2]), 2);
+          [tmp13, tmp15] = _slicedToArray(extractSafariExtensionDetails(UNKNOWN_FUNCTION, match2[2]), 2);
           let tmp16;
           if (match2[3]) {
             tmp16 = +match2[3];
@@ -76,10 +78,10 @@ const items = [
     }
   }
 ];
-let closure_7 = /^\s*(.*?)(?:\((.*?)\))?(?:^|@)?((?:[-a-z]+)?:\/.*?|\[native code\]|[^@]*(?:bundle|\d+\.js)|\/[\w\-. /=]+)(?::(\d+))?(?::(\d+))?\s*$/i;
-let closure_8 = /(\S+) line (\d+)(?: > eval line \d+)* > eval/i;
-const items1 = [
-,
+const re7 = /^\s*(.*?)(?:\((.*?)\))?(?:^|@)?((?:[-a-z]+)?:\/.*?|\[native code\]|[^@]*(?:bundle|\d+\.js)|\/[\w\-. /=]+)(?::(\d+))?(?::(\d+))?\s*$/i;
+const re8 = /(\S+) line (\d+)(?: > eval line \d+)* > eval/i;
+let items1 = [
+  50,
   function gecko(arg0) {
     let tmp11;
     let tmp9;
@@ -95,13 +97,13 @@ const items1 = [
             match[5] = "";
           }
         }
-        const arr = match[3];
+        arr = match[3];
       }
       let UNKNOWN_FUNCTION = match[1];
       if (!UNKNOWN_FUNCTION) {
-        UNKNOWN_FUNCTION = require(dependencyMap[1]).UNKNOWN_FUNCTION;
+        UNKNOWN_FUNCTION = require(794) /* registerSpanErrorInstrumentation */.UNKNOWN_FUNCTION;
       }
-      [tmp9, tmp11] = callback(extractSafariExtensionDetails(UNKNOWN_FUNCTION, match[3]), 2);
+      [tmp9, tmp11] = _slicedToArray(extractSafariExtensionDetails(UNKNOWN_FUNCTION, match[3]), 2);
       let tmp12;
       if (match[4]) {
         tmp12 = +match[4];
@@ -114,16 +116,16 @@ const items1 = [
     }
   }
 ];
-let closure_9 = /^\s*at (?:((?:\[object object\])?.+) )?\(?((?:[-a-z]+):.*?):(\d+)(?::(\d+))?\)?\s*$/i;
+const re9 = /^\s*at (?:((?:\[object object\])?.+) )?\(?((?:[-a-z]+):.*?):(\d+)(?::(\d+))?\)?\s*$/i;
 const items2 = [
-  "<string:1006305281>",
+  40,
   function winjs(arg0) {
     const match = regex6.exec(arg0);
     let tmp3Result;
     if (match) {
       let UNKNOWN_FUNCTION = match[1];
       if (!UNKNOWN_FUNCTION) {
-        UNKNOWN_FUNCTION = require(dependencyMap[1]).UNKNOWN_FUNCTION;
+        UNKNOWN_FUNCTION = require(794) /* registerSpanErrorInstrumentation */.UNKNOWN_FUNCTION;
       }
       let tmp8;
       if (match[4]) {
@@ -135,16 +137,16 @@ const items2 = [
     return tmp3Result;
   }
 ];
-let closure_10 = / line (\d+).*script (?:in )?(\S+)(?:: in function (\S+))?$/i;
+const re10 = / line (\d+).*script (?:in )?(\S+)(?:: in function (\S+))?$/i;
 const items3 = [
-  null,
+  10,
   function opera10(arg0) {
     const match = regex7.exec(arg0);
     let tmp3Result;
     if (match) {
       let UNKNOWN_FUNCTION = match[3];
       if (!UNKNOWN_FUNCTION) {
-        UNKNOWN_FUNCTION = require(dependencyMap[1]).UNKNOWN_FUNCTION;
+        UNKNOWN_FUNCTION = require(794) /* registerSpanErrorInstrumentation */.UNKNOWN_FUNCTION;
       }
       tmp3Result = createFrame(match[2], UNKNOWN_FUNCTION, +match[1]);
       const tmp3 = createFrame;
@@ -152,9 +154,9 @@ const items3 = [
     return tmp3Result;
   }
 ];
-let closure_11 = / line (\d+), column (\d+)\s*(?:in (?:<anonymous function: ([^>]+)>|([^)]+))\(.*\))? in (.*):\s*$/i;
+const re11 = / line (\d+), column (\d+)\s*(?:in (?:<anonymous function: ([^>]+)>|([^)]+))\(.*\))? in (.*):\s*$/i;
 const items4 = [
-,
+  20,
   function opera11(arg0) {
     const match = regex8.exec(arg0);
     let tmp3Result;
@@ -164,7 +166,7 @@ const items4 = [
         UNKNOWN_FUNCTION = match[4];
       }
       if (!UNKNOWN_FUNCTION) {
-        UNKNOWN_FUNCTION = require(dependencyMap[1]).UNKNOWN_FUNCTION;
+        UNKNOWN_FUNCTION = require(794) /* registerSpanErrorInstrumentation */.UNKNOWN_FUNCTION;
       }
       tmp3Result = createFrame(tmp4, UNKNOWN_FUNCTION, +match[1], +match[2]);
       const tmp3 = createFrame;
@@ -173,7 +175,6 @@ const items4 = [
   }
 ];
 const items5 = [items, items1];
-const createStackParser = require(dependencyMap[1]).createStackParser;
 function extractSafariExtensionDetails(UNKNOWN_FUNCTION, arg1) {
   const tmp = -1 !== UNKNOWN_FUNCTION.indexOf("safari-extension");
   if (!tmp) {
@@ -185,7 +186,7 @@ function extractSafariExtensionDetails(UNKNOWN_FUNCTION, arg1) {
   if (-1 !== UNKNOWN_FUNCTION.indexOf("@")) {
     UNKNOWN_FUNCTION = UNKNOWN_FUNCTION.split("@")[0];
   } else {
-    UNKNOWN_FUNCTION = require(dependencyMap[1]).UNKNOWN_FUNCTION;
+    UNKNOWN_FUNCTION = require(794) /* registerSpanErrorInstrumentation */.UNKNOWN_FUNCTION;
   }
   const items1 = [UNKNOWN_FUNCTION, ];
   if (tmp) {
@@ -198,7 +199,7 @@ function extractSafariExtensionDetails(UNKNOWN_FUNCTION, arg1) {
 
 export const chromeStackLineParser = items;
 export const defaultStackLineParsers = items5;
-export const defaultStackParser = createStackParser.apply(require(dependencyMap[1]), items5);
+export const defaultStackParser = createStackParser.apply(require("registerSpanErrorInstrumentation"), items5);
 export const geckoStackLineParser = items1;
 export const opera10StackLineParser = items3;
 export const opera11StackLineParser = items4;

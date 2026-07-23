@@ -1,31 +1,31 @@
-// Module ID: 11859
-// Function ID: 91833
+// Module ID: 11871
+// Function ID: 91886
 // Name: GameProfileReportButton
-// Dependencies: []
+// Dependencies: [31, 33, 4098, 8600, 4337, 11872, 1934, 11872, 4543, 1212, 2]
 // Exports: default
 
-// Module 11859 (GameProfileReportButton)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/game_profile/native/components/GameProfileReportButton.tsx");
+// Module 11871 (GameProfileReportButton)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("showActionSheet").fileFinishedImporting("modules/game_profile/native/components/GameProfileReportButton.tsx");
 
 export default function GameProfileReportButton(applicationId) {
   applicationId = applicationId.applicationId;
-  const arg1 = applicationId;
   const trackAction = applicationId.trackAction;
-  const importDefault = trackAction;
   const items = [applicationId, trackAction];
   const callback = React.useCallback(() => {
-    let obj = trackAction(paths[2]);
+    let obj = trackAction(outer1_2[2]);
     obj.hideActionSheet();
-    trackAction(applicationId(paths[3]).GameProfileTrackActionActions.Feedback);
+    trackAction(applicationId(outer1_2[3]).GameProfileTrackActionActions.Feedback);
     obj = { applicationId };
-    const obj2 = trackAction(paths[4]);
-    obj2.pushLazy(applicationId(paths[6])(paths[5], paths.paths), obj, applicationId(paths[7]).MODAL_KEY);
+    const obj2 = trackAction(outer1_2[4]);
+    obj2.pushLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), obj, applicationId(outer1_2[7]).MODAL_KEY);
   }, items);
-  const obj = {};
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.text = intl.string(arg1(dependencyMap[9]).t.qP2cXd);
+  let obj = { variant: "secondary", size: "md" };
+  const intl = applicationId(1212).intl;
+  obj.text = intl.string(applicationId(1212).t.qP2cXd);
   obj.onPress = callback;
-  return jsx(arg1(dependencyMap[8]).Button, obj);
+  return jsx(applicationId(4543).Button, { variant: "secondary", size: "md" });
 };

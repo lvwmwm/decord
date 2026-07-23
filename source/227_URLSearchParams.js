@@ -1,19 +1,20 @@
 // Module ID: 227
 // Function ID: 3139
 // Name: URLSearchParams
-// Dependencies: []
+// Dependencies: [65, 57, 6, 7]
 
 // Module 227 (URLSearchParams)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
+import _toConsumableArray from "_toConsumableArray";
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export const URLSearchParams = () => {
+
+export const URLSearchParams = (() => {
   class URLSearchParams {
     constructor(arg0) {
-      URLSearchParams = this;
-      tmp = closure_2(this, URLSearchParams);
+      self = this;
+      tmp = outer1_2(this, self);
       map = new Map();
       this._searchParams = map;
       if (null !== arg0) {
@@ -27,7 +28,7 @@ export const URLSearchParams = () => {
           item = parts.forEach((str) => {
             if (str) {
               const parts = str.split("=");
-              const tmp2 = callback(parts.map((str) => decodeURIComponent(str.replace(/\+/g, " "))), 2);
+              const tmp2 = outer2_1(parts.map((str) => decodeURIComponent(str.replace(/\+/g, " "))), 2);
               self.append(tmp2[0], tmp2[1]);
             }
           });
@@ -35,7 +36,7 @@ export const URLSearchParams = () => {
           _Array = Array;
           if (Array.isArray(arg0)) {
             item1 = arg0.forEach((arg0) => {
-              const tmp = callback(arg0, 2);
+              const tmp = outer2_1(arg0, 2);
               return self.append(tmp[0], tmp[1]);
             });
           } else {
@@ -44,7 +45,7 @@ export const URLSearchParams = () => {
               _Object = Object;
               entries = Object.entries(arg0);
               item2 = entries.forEach((arg0) => {
-                const tmp = callback(arg0, 2);
+                const tmp = outer2_1(arg0, 2);
                 return self.append(tmp[0], tmp[1]);
               });
             }
@@ -54,14 +55,13 @@ export const URLSearchParams = () => {
       return;
     }
   }
-  let closure_0 = URLSearchParams;
   let obj = {
     key: "size",
     get() {
       return this._searchParams.size;
     }
   };
-  const items = [obj, , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , ];
   obj = {
     key: "append",
     value: function append(arg0, arg1) {
@@ -136,36 +136,39 @@ export const URLSearchParams = () => {
   items[8] = {
     key: "values",
     value: function values() {
-      return function* generateValues(_searchParams) {
+      return (function* generateValues(_searchParams) {
         const values = _searchParams.values();
         for (const item10006 of values) {
           let tmp2 = item10006;
           for (const item10010 of item10006) {
             let tmp3 = yield item10010;
+            continue;
           }
+          continue;
         }
-      }(this._searchParams);
+      })(this._searchParams);
     }
   };
   items[9] = {
     key: "entries",
     value: function entries() {
-      return function* generateEntries(_searchParams) {
+      return (function* generateEntries(_searchParams) {
         let tmp5;
         let tmp6;
         while (tmp !== undefined) {
-          let tmp3 = callback;
-          let tmp4 = callback(tmp2, 2);
+          let tmp3 = outer3_1;
+          let tmp4 = outer3_1(tmp2, 2);
           [tmp5, tmp6] = tmp4;
           let tmp7 = tmp6;
           for (const item10015 of tmp6) {
             let tmp8 = tmp5;
             let items = [tmp5, item10015];
             let tmp9 = yield items;
+            continue;
           }
-          // continue
+          continue;
         }
-      }(this._searchParams);
+      })(this._searchParams);
     }
   };
   items[10] = {
@@ -174,16 +177,17 @@ export const URLSearchParams = () => {
       let tmp5;
       let tmp6;
       while (tmp !== undefined) {
-        let tmp3 = callback;
-        let tmp4 = callback(tmp2, 2);
+        let tmp3 = outer1_1;
+        let tmp4 = outer1_1(tmp2, 2);
         [tmp5, tmp6] = tmp4;
         let tmp7 = tmp6;
         for (const item10018 of tmp6) {
           let tmp8 = arg0;
           let tmp9 = tmp5;
           let tmp10 = arg0(item10018, tmp5, this);
+          continue;
         }
-        // continue
+        continue;
       }
     }
   };
@@ -193,8 +197,8 @@ export const URLSearchParams = () => {
       const _searchParams = this._searchParams;
       const obj = URLSearchParams(_searchParams.entries());
       this._searchParams = new Map(URLSearchParams(_searchParams.entries()).sort((arg0, arg1) => {
-        const first = callback(arg0, 1)[0];
-        return first.localeCompare(callback(arg1, 1)[0]);
+        const first = outer2_1(arg0, 1)[0];
+        return first.localeCompare(outer2_1(arg1, 1)[0]);
       }));
     }
   };
@@ -205,8 +209,8 @@ export const URLSearchParams = () => {
       let tmp6;
       const items = [];
       while (tmp !== undefined) {
-        let tmp3 = callback;
-        let tmp4 = callback(tmp2, 2);
+        let tmp3 = outer1_1;
+        let tmp4 = outer1_1(tmp2, 2);
         [tmp5, tmp6] = tmp4;
         let tmp7 = tmp6;
         for (const item10018 of tmp6) {
@@ -214,8 +218,9 @@ export const URLSearchParams = () => {
           let tmp9 = tmp5;
           let items1 = [tmp5, item10018];
           let arr = items.push(items1);
+          continue;
         }
-        // continue
+        continue;
       }
       return items[Symbol.iterator]();
     }
@@ -224,12 +229,12 @@ export const URLSearchParams = () => {
     key: "toString",
     value: function toString() {
       const _searchParams = this._searchParams;
-      const mapped = Array.from(_searchParams.entries()).map((arg0) => {
-        const tmp = callback(arg0, 2);
-        let closure_0 = tmp[0];
+      let mapped = Array.from(_searchParams.entries()).map((arg0) => {
+        const tmp = outer2_1(arg0, 2);
+        let _toConsumableArray = tmp[0];
         const mapped = tmp[1].map((arg0) => {
-          const replaced = encodeURIComponent(closure_0).replace(/%20/g, "+");
-          const str = encodeURIComponent(closure_0);
+          const replaced = encodeURIComponent(_toConsumableArray).replace(/%20/g, "+");
+          const str = encodeURIComponent(_toConsumableArray);
           return "" + replaced + "=" + encodeURIComponent(arg0).replace(/%20/g, "+");
         });
         return mapped.join("&");
@@ -238,4 +243,4 @@ export const URLSearchParams = () => {
     }
   };
   return callback(URLSearchParams, items);
-}();
+})();

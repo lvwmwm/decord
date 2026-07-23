@@ -1,13 +1,16 @@
 // Module ID: 1446
-// Function ID: 16834
+// Function ID: 16835
 // Name: error
 // Dependencies: []
 
 // Module 1446 (error)
-(arg0) => {
+const global = arg0;
+let dependencyMap = arg4;
+const exports = arg5;
+((arg0) => {
   let tmp = arg0;
   function error(arg0) {
-    const rangeError = new RangeError(closure_6[arg0]);
+    const rangeError = new RangeError(table[arg0]);
     throw rangeError;
   }
   function map(arg0, arg1) {
@@ -74,10 +77,10 @@
       let tmp = arg0;
       if (arg0 > 65535) {
         const diff = arg0 - 65536;
-        str = `${closure_8(tmp3 >>> 10 & 1023 | 55296)}`;
+        str = `${outer1_8(tmp3 >>> 10 & 1023 | 55296)}`;
         tmp = 56320 | 1023 & diff;
       }
-      return str + callback(tmp);
+      return str + outer1_8(tmp);
     }).join("");
   }
   function digitToBasic(arg0, arg1) {
@@ -95,10 +98,10 @@
     let tmp4 = sum;
     if (sum > 455) {
       do {
-        let tmp5 = closure_7;
-        sum = closure_7(sum / 35);
-        let tmp6 = closure_2;
-        num3 = num3 + closure_2;
+        let tmp5 = floor;
+        sum = floor(sum / 35);
+        let tmp6 = c2;
+        num3 = num3 + c2;
         num4 = num3;
         tmp4 = sum;
       } while (sum > 455);
@@ -127,7 +130,7 @@
     let num6 = 72;
     let num7 = 0;
     while (num4 < arr.length) {
-      let sum2 = closure_2;
+      let sum2 = c2;
       if (num4 >= length) {
         let tmp6 = error;
         let tmp7 = error("invalid-input");
@@ -140,14 +143,14 @@
       } else if (charCodeAtResult - 65 < 26) {
         diff = charCodeAtResult - 65;
       } else {
-        diff = charCodeAtResult - 97 < 26 ? charCodeAtResult - 97 : closure_2;
+        diff = charCodeAtResult - 97 < 26 ? charCodeAtResult - 97 : c2;
       }
-      let tmp12 = closure_2;
-      let tmp13 = diff >= closure_2;
+      let tmp12 = c2;
+      let tmp13 = diff >= c2;
       if (!tmp13) {
         let tmp14 = floor;
-        let tmp15 = closure_1;
-        tmp13 = diff > floor(closure_1 - num7);
+        let tmp15 = c1;
+        tmp13 = diff > floor(c1 - num7);
       }
       if (tmp13) {
         let tmp16 = error;
@@ -169,41 +172,41 @@
       let tmp21 = sum1;
       if (diff >= num8) {
         do {
-          let tmp22 = closure_7;
-          let tmp23 = closure_1;
-          let tmp24 = closure_2;
-          let diff1 = closure_2 - num8;
-          if (num10 > closure_7(closure_1 / diff1)) {
-            let tmp26 = closure_9;
-            let tmp27 = closure_9("overflow");
+          let tmp22 = floor;
+          let tmp23 = c1;
+          let tmp24 = c2;
+          let diff1 = c2 - num8;
+          if (num10 > floor(c1 / diff1)) {
+            let tmp26 = error;
+            let tmp27 = error("overflow");
           }
           num10 = num10 * diff1;
-          let tmp28 = closure_2;
-          sum2 = sum2 + closure_2;
+          let tmp28 = c2;
+          sum2 = sum2 + c2;
           if (tmp19 >= length) {
-            let tmp29 = closure_9;
-            let tmp30 = closure_9("invalid-input");
+            let tmp29 = error;
+            let tmp30 = error("invalid-input");
           }
           let tmp31 = +tmp19;
           let sum3 = tmp31 + 1;
           let charCodeAtResult1 = arr.charCodeAt(tmp31);
           if (charCodeAtResult1 - 48 < 10) {
-            let diff2 = charCodeAtResult1 - 22;
+            diff2 = charCodeAtResult1 - 22;
           } else if (charCodeAtResult1 - 65 < 26) {
             diff2 = charCodeAtResult1 - 65;
           } else {
-            diff2 = charCodeAtResult1 - 97 < 26 ? charCodeAtResult1 - 97 : closure_2;
+            diff2 = charCodeAtResult1 - 97 < 26 ? charCodeAtResult1 - 97 : c2;
           }
-          let tmp35 = closure_2;
-          let tmp36 = diff2 >= closure_2;
+          let tmp35 = c2;
+          let tmp36 = diff2 >= c2;
           if (!tmp36) {
-            let tmp37 = closure_7;
-            let tmp38 = closure_1;
-            tmp36 = diff2 > closure_7((closure_1 - tmp20) / num10);
+            let tmp37 = floor;
+            let tmp38 = c1;
+            tmp36 = diff2 > floor((c1 - tmp20) / num10);
           }
           if (tmp36) {
-            let tmp39 = closure_9;
-            let tmp40 = closure_9("overflow");
+            let tmp39 = error;
+            let tmp40 = error("overflow");
           }
           let sum4 = tmp20 + diff2 * num10;
           num8 = 1;
@@ -226,8 +229,8 @@
       let tmp46 = floor;
       let result = tmp21 / sum5;
       let tmp45 = adapt(tmp21 - num7, sum5, 0 === num7);
-      let tmp48 = closure_1;
-      if (floor(result) > closure_1 - num2) {
+      let tmp48 = c1;
+      if (floor(result) > c1 - num2) {
         let tmp49 = error;
         let tmp50 = error("overflow");
       }
@@ -250,8 +253,8 @@
       do {
         let tmp = arr1[num2];
         if (tmp < num) {
-          let tmp2 = closure_8;
-          let arr = items.push(closure_8(tmp));
+          let tmp2 = fromCharCode;
+          let arr = items.push(fromCharCode(tmp));
         }
         num2 = num2 + 1;
         let tmp4 = tmp;
@@ -265,9 +268,9 @@
     let tmp6 = length2;
     if (items.length < arr1.length) {
       do {
-        let tmp10 = closure_1;
+        let tmp10 = c1;
         let num5 = 0;
-        let tmp11 = closure_1;
+        let tmp11 = c1;
         if (0 < length) {
           do {
             let tmp12 = arr1[num5];
@@ -280,13 +283,13 @@
             let tmp14 = tmp12;
           } while (num5 < length);
         }
-        let tmp16 = closure_7;
-        let tmp17 = closure_1;
+        let tmp16 = floor;
+        let tmp17 = c1;
         let sum = tmp6 + 1;
         let diff = tmp11 - num;
-        if (diff > closure_7((closure_1 - num4) / sum)) {
-          let tmp19 = closure_9;
-          let tmp20 = closure_9("overflow");
+        if (diff > floor((c1 - num4) / sum)) {
+          let tmp19 = error;
+          let tmp20 = error("overflow");
         }
         let sum1 = num4 + (tmp11 - num) * sum;
         let tmp22 = tmp6;
@@ -303,21 +306,21 @@
             let tmp30 = sum1;
             if (tmp29) {
               let sum2 = sum1 + 1;
-              let tmp32 = closure_1;
-              tmp29 = sum2 > closure_1;
+              let tmp32 = c1;
+              tmp29 = sum2 > c1;
               tmp30 = sum2;
             }
             if (tmp29) {
-              let tmp33 = closure_9;
-              let tmp34 = closure_9("overflow");
+              let tmp33 = error;
+              let tmp34 = error("overflow");
             }
             let num7 = tmp30;
             let sum4 = tmp22;
             let tmp36 = tmp23;
             if (tmp28 == tmp11) {
-              let tmp58 = closure_2;
+              let tmp58 = c2;
               let num9 = 1;
-              if (closure_2 > tmp23) {
+              if (c2 > tmp23) {
                 let num8 = 26;
                 if (tmp58 < tmp23 + 26) {
                   num8 = tmp58 - tmp23;
@@ -333,16 +336,16 @@
               if (tmp30 >= num9) {
                 do {
                   let diff1 = tmp38 - tmp37;
-                  let tmp44 = closure_2;
-                  let diff2 = closure_2 - tmp37;
-                  let tmp46 = closure_8;
-                  let tmp47 = closure_14;
-                  arr1 = items.push(closure_8(closure_14(tmp37 + diff1 % diff2, 0)));
-                  let tmp49 = closure_7;
-                  let tmp50 = closure_7(diff1 / diff2);
-                  let tmp51 = closure_2;
-                  let sum3 = tmp39 + closure_2;
-                  let num10 = 1;
+                  let tmp44 = c2;
+                  let diff2 = c2 - tmp37;
+                  let tmp46 = fromCharCode;
+                  let tmp47 = digitToBasic;
+                  arr1 = items.push(fromCharCode(digitToBasic(tmp37 + diff1 % diff2, 0)));
+                  let tmp49 = floor;
+                  tmp50 = floor(diff1 / diff2);
+                  let tmp51 = c2;
+                  let sum3 = tmp39 + c2;
+                  num10 = 1;
                   if (sum3 > tmp23) {
                     let num11 = 26;
                     if (sum3 < tmp23 + 26) {
@@ -358,11 +361,11 @@
                   tmp42 = num10;
                 } while (tmp50 >= num10);
               }
-              let tmp53 = closure_8;
-              let tmp54 = closure_14;
-              let arr2 = items.push(closure_8(closure_14(tmp40, 0)));
-              let tmp56 = closure_15;
-              tmp36 = closure_15(tmp30, sum, tmp22 == length2);
+              let tmp53 = fromCharCode;
+              let tmp54 = digitToBasic;
+              let arr2 = items.push(fromCharCode(digitToBasic(tmp40, 0)));
+              let tmp56 = adapt;
+              tmp36 = adapt(tmp30, sum, tmp22 == length2);
               sum4 = tmp22 + 1;
               tmp24 = tmp40;
               tmp25 = tmp41;
@@ -376,9 +379,9 @@
             tmp27 = num7;
             tmp6 = sum4;
             num3 = tmp36;
-            let tmp7 = tmp24;
-            let tmp8 = tmp25;
-            let tmp9 = tmp26;
+            tmp7 = tmp24;
+            tmp8 = tmp25;
+            tmp9 = tmp26;
             let tmp57 = tmp28;
           } while (num6 < length);
         }
@@ -388,29 +391,29 @@
     }
     return items.join("");
   }
-  let tmp2 = "object" === typeof nodeType && nodeType;
+  let tmp2 = "object" === typeof _exports && _exports;
   if (tmp2) {
-    tmp2 = !nodeType.nodeType;
+    tmp2 = !_exports.nodeType;
   }
   if (tmp2) {
-    tmp2 = nodeType;
+    tmp2 = _exports;
   }
-  let tmp4 = "object" === typeof closure_1 && closure_1;
+  let tmp4 = "object" === typeof dependencyMap && dependencyMap;
   if (tmp4) {
-    tmp4 = !closure_1.nodeType;
+    tmp4 = !dependencyMap.nodeType;
   }
   if (tmp4) {
-    tmp4 = closure_1;
+    tmp4 = dependencyMap;
   }
   if (!tmp7) {
     tmp = tmp6;
   }
-  closure_1 = 2147483647;
-  const nodeType = 36;
-  let closure_3 = /^xn--/;
-  let closure_4 = /[^\x20-\x7E]/;
-  let closure_5 = /[\x2E\u3002\uFF0E\uFF61]/g;
-  let closure_6 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+  dependencyMap = 2147483647;
+  _exports = 36;
+  const re3 = /^xn--/;
+  const re4 = /[^\x20-\x7E]/;
+  const re5 = /[\x2E\u3002\uFF0E\uFF61]/g;
+  let closure_6 = { overflow: "Overflow: input needs wider integers to process", "not-basic": "Illegal input >= 0x80 (not a basic code point)", "invalid-input": "Invalid input" };
   const obj = {
     version: "1.4.1",
     ucs2: { decode: ucs2decode, encode: ucs2encode },
@@ -419,8 +422,8 @@
     toASCII(arg0) {
       return mapDomain(arg0, (arg0) => {
         let text = arg0;
-        if (regex.test(arg0)) {
-          text = `xn--${closure_17(arg0)}`;
+        if (outer1_4.test(arg0)) {
+          text = `xn--${outer1_17(arg0)}`;
         }
         return text;
       });
@@ -428,15 +431,14 @@
     toUnicode(arg0) {
       return mapDomain(arg0, (arr) => {
         let tmp = arr;
-        if (regex.test(arr)) {
-          tmp = callback(arr.slice(4).toLowerCase());
+        if (outer1_3.test(arr)) {
+          tmp = outer1_16(arr.slice(4).toLowerCase());
           const str = arr.slice(4);
         }
         return tmp;
       });
     }
   };
-  arg0 = obj;
   let tmp8 = typeof globalThis.define;
   if ("function" === tmp8) {
     tmp8 = typeof globalThis.define.amd;
@@ -448,7 +450,7 @@
   }
   if (tmp2) {
     if (tmp4) {
-      if (closure_1.exports == tmp2) {
+      if (dependencyMap.exports == tmp2) {
         tmp4.exports = obj;
       } else {
         for (const key10054 in obj) {
@@ -457,7 +459,7 @@
             continue;
           } else {
             tmp2[key10054] = obj[key10054];
-            // continue
+            continue;
           }
           continue;
         }
@@ -465,4 +467,4 @@
     }
   }
   tmp.punycode = obj;
-}(this);
+})(this);

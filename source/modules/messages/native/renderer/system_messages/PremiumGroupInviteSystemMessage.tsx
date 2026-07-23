@@ -1,32 +1,34 @@
-// Module ID: 7727
-// Function ID: 61459
+// Module ID: 7733
+// Function ID: 61496
 // Name: createPremiumGroupInviteSystemMessage
-// Dependencies: []
+// Dependencies: [1194, 1348, 4130, 689, 7734, 7652, 7635, 7738, 2]
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 7727 (createPremiumGroupInviteSystemMessage)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let obj = arg1(dependencyMap[2]);
-obj = { iconTintColor: importDefault(dependencyMap[3]).colors.ICON_STRONG, iconDividerColor: importDefault(dependencyMap[3]).colors.ICON_STRONG };
-let closure_5 = obj.createNativeStyleProperties(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/messages/native/renderer/system_messages/PremiumGroupInviteSystemMessage.tsx");
+// Module 7733 (createPremiumGroupInviteSystemMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = { iconTintColor: require("_createForOfIteratorHelperLoose").colors.ICON_STRONG, iconDividerColor: require("_createForOfIteratorHelperLoose").colors.ICON_STRONG };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createNativeStyleProperties(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/renderer/system_messages/PremiumGroupInviteSystemMessage.tsx");
 
 export const createPremiumGroupInviteSystemMessage = function createPremiumGroupInviteSystemMessage(message) {
   let theme;
   ({ message, theme } = message);
-  const channel = channel.getChannel(message.getChannelId());
-  const id = id.getId();
-  let obj = arg1(dependencyMap[4]);
+  channel = channel.getChannel(message.getChannelId());
+  id = id.getId();
+  let obj = require(7734) /* createPremiumGroupInviteEmbed */;
   const premiumGroupInviteEmbed = obj.createPremiumGroupInviteEmbed(message, theme, id, channel);
   if (null == premiumGroupInviteEmbed) {
     return null;
   } else {
-    const tmp5 = callback(theme);
+    const tmp5 = _createForOfIteratorHelperLoose(theme);
     obj = {};
-    const merged = Object.assign(importDefault(dependencyMap[5])(message));
+    const merged = Object.assign(importDefault(7652)(message));
     obj["premiumGroupInviteInfo"] = premiumGroupInviteEmbed;
-    obj["iconUrl"] = arg1(dependencyMap[6]).getAssetUriForEmbed(importDefault(dependencyMap[7]));
+    obj["iconUrl"] = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7738));
     obj["iconTintColor"] = tmp5.iconTintColor;
     obj["iconDividerColor"] = tmp5.iconDividerColor;
     return obj;

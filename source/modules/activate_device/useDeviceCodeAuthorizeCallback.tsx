@@ -1,14 +1,17 @@
-// Module ID: 12771
-// Function ID: 97894
+// Module ID: 12885
+// Function ID: 100050
 // Name: _createTwoWayLink
-// Dependencies: []
+// Dependencies: [5, 31, 12884, 4938, 8948, 44, 4939, 8961, 2]
 // Exports: useDeviceCodeAuthorizeCallback
 
-// Module 12771 (_createTwoWayLink)
+// Module 12885 (_createTwoWayLink)
+import invariant from "invariant";
+import result from "result";
+
+const require = arg1;
 function _createTwoWayLink() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _createTwoWayLink = obj;
   return obj(...arguments);
 }
 function silentlyFinishTwoWayLinkError() {
@@ -17,23 +20,20 @@ function silentlyFinishTwoWayLinkError() {
 function _silentlyFinishTwoWayLinkError() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _silentlyFinishTwoWayLinkError = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/activate_device/useDeviceCodeAuthorizeCallback.tsx");
+const result = require("clientIdToActivateDevicePlatform").fileFinishedImporting("modules/activate_device/useDeviceCodeAuthorizeCallback.tsx");
 
 export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCallback(callback, callback2, callback1) {
-  callback2 = callback;
-  const importDefault = callback2;
-  const dependencyMap = callback1;
+  let closure_0 = callback;
+  let closure_1 = callback2;
+  let closure_2 = callback1;
   const items = [callback, callback2, callback1];
-  return React.useCallback(() => {
+  return React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_3(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items);
+  })(), items);
 };

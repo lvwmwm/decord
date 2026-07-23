@@ -1,29 +1,30 @@
-// Module ID: 13951
-// Function ID: 106005
+// Module ID: 14065
+// Function ID: 108161
 // Name: route
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: [653, 10095, 1212, 10464, 13897, 14066, 2]
 
-// Module 13951 (route)
-let obj = {
+// Module 14065 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.BDUDau);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.BDUDau);
   },
   usePredicate() {
-    return require(dependencyMap[3]).useIsPreviewerOnAnyQuest();
+    return require(10464) /* _createForOfIteratorHelperLoose */.useIsPreviewerOnAnyQuest();
   },
   parent: null,
-  IconComponent: require("__exportStarResult1").QuestsIcon,
+  IconComponent: require("QuestsIcon").QuestsIcon,
   screen: obj
 };
 obj = {
-  route: require("__exportStarResult1").UserSettingsSections.QUEST_PREVIEW_TOOL_2,
+  route: require("ME").UserSettingsSections.QUEST_PREVIEW_TOOL_2,
   getComponent() {
-    return require(dependencyMap[5]).default;
+    return require(14066) /* SettingsQuestPreviewScreen */.default;
   }
 };
-const route = require("__exportStarResult1").createRoute(obj);
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/QuestPreviewToolSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/QuestPreviewToolSetting.tsx");
 
 export default route;

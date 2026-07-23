@@ -1,14 +1,16 @@
-// Module ID: 13659
-// Function ID: 103470
+// Module ID: 13773
+// Function ID: 105626
 // Name: useUserAgeGroup
-// Dependencies: []
+// Dependencies: [6769, 566, 2]
 // Exports: default
 
-// Module 13659 (useUserAgeGroup)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/parent_tools/hooks/useUserAgeGroup.tsx");
+// Module 13773 (useUserAgeGroup)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useUserAgeGroup.tsx");
 
 export default function useUserAgeGroup() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => ageGroup.getAgeGroup());
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getAgeGroup());
 };

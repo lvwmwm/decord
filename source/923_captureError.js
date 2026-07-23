@@ -1,14 +1,16 @@
 // Module ID: 923
-// Function ID: 10069
+// Function ID: 10070
 // Name: captureError
-// Dependencies: []
+// Dependencies: [825, 796, 817, 845]
 
 // Module 923 (captureError)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.captureError = function captureError(error, prompt_execution, arg2) {
-  let obj = prompt_execution(arg6[0]);
+  let obj = require(825) /* getCurrentScope */;
   if (obj.getClient()) {
-    let obj1 = prompt_execution(arg6[1]);
+    let obj1 = require(796) /* convertSpanLinksForEnvelope */;
     const activeSpan = obj1.getActiveSpan();
     let obj2 = activeSpan;
     let isRecordingResult = tmp5;
@@ -16,11 +18,11 @@ arg5.captureError = function captureError(error, prompt_execution, arg2) {
       isRecordingResult = obj2.isRecording();
     }
     if (isRecordingResult) {
-      obj = { code: prompt_execution(arg6[2]).SPAN_STATUS_ERROR, message: "internal_error" };
+      obj = { code: require(817) /* getSpanStatusFromHttpCode */.SPAN_STATUS_ERROR, message: "internal_error" };
       obj2.setStatus(obj);
     }
     obj = {};
-    obj1 = {};
+    obj1 = { type: "auto.ai.mcp_server", handled: false };
     obj2 = {};
     let str2 = prompt_execution;
     if (!prompt_execution) {
@@ -29,7 +31,7 @@ arg5.captureError = function captureError(error, prompt_execution, arg2) {
     obj2.error_type = str2;
     obj1.data = Object.assign(obj2, arg2);
     obj.mechanism = obj1;
-    prompt_execution(arg6[3]).captureException(error, obj);
-    const obj5 = prompt_execution(arg6[3]);
+    require(845) /* captureCheckIn */.captureException(error, obj);
+    const obj5 = require(845) /* captureCheckIn */;
   }
 };

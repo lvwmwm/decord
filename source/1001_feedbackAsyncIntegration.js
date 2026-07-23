@@ -1,10 +1,11 @@
 // Module ID: 1001
-// Function ID: 10733
+// Function ID: 10734
 // Name: feedbackAsyncIntegration
-// Dependencies: []
+// Dependencies: [1002, 1003]
 
 // Module 1001 (feedbackAsyncIntegration)
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
+import mergeOptions from "mergeOptions";
 
-export const feedbackAsyncIntegration = _module.buildFeedbackIntegration({ lazyLoadIntegration: require(dependencyMap[1]).lazyLoadIntegration });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const feedbackAsyncIntegration = mergeOptions.buildFeedbackIntegration({ lazyLoadIntegration: require("_lazyLoadIntegration").lazyLoadIntegration });

@@ -1,38 +1,39 @@
-// Module ID: 14442
-// Function ID: 108872
+// Module ID: 14556
+// Function ID: 111025
 // Name: toggle
-// Dependencies: []
+// Dependencies: [31, 6769, 7662, 653, 7125, 13728, 5793, 1360, 10095, 1212, 2]
 
-// Module 14442 (toggle)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const FriendSourceFlags = arg1(dependencyMap[3]).FriendSourceFlags;
-let obj = arg1(dependencyMap[8]);
-obj = {
+// Module 14556 (toggle)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FriendSourceFlags } from "ME";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[9]).intl;
-    return intl.string(arg1(dependencyMap[9]).t.IqlCSq);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.IqlCSq);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsMutualFriendsSettingValue() {
-    const selectedTeenId = arg1(dependencyMap[4]).useSelectedTeenId();
+    const selectedTeenId = controlledSetting(7125).useSelectedTeenId();
     let tmp2;
     if (null != selectedTeenId) {
       tmp2 = selectedTeenId;
     }
-    const ParentalControlledFriendSourceFlags = arg1(dependencyMap[5]).ParentalControlledFriendSourceFlags;
-    const controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(tmp2);
-    const arg1 = controlledSetting;
+    const ParentalControlledFriendSourceFlags = controlledSetting(13728).ParentalControlledFriendSourceFlags;
+    controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(tmp2);
     const items = [controlledSetting];
-    return React.useMemo(() => controlledSetting(closure_2[6]).computeFlags(controlledSetting), items).mutualFriends;
+    return React.useMemo(() => controlledSetting(outer1_2[6]).computeFlags(controlledSetting), items).mutualFriends;
   },
   onValueChange: function onFriendRequestsMutualFriendsSettingValueChange(arg0) {
-    const selectedTeenId = selectedTeenId.getSelectedTeenId();
+    selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      const ParentalControlledFriendSourceFlags = arg1(dependencyMap[5]).ParentalControlledFriendSourceFlags;
+      const ParentalControlledFriendSourceFlags = require(13728) /* result */.ParentalControlledFriendSourceFlags;
       const controlledSetting = ParentalControlledFriendSourceFlags.getControlledSetting(selectedTeenId);
-      const ParentalControlledFriendSourceFlags2 = arg1(dependencyMap[5]).ParentalControlledFriendSourceFlags;
-      const obj = importAll(dependencyMap[7]);
+      const ParentalControlledFriendSourceFlags2 = require(13728) /* result */.ParentalControlledFriendSourceFlags;
+      const obj = importAll(1360);
       if (arg0) {
         let addFlagResult = obj.addFlag(controlledSetting, FriendSourceFlags.MUTUAL_FRIENDS);
       } else {
@@ -43,7 +44,7 @@ obj = {
   },
   unsearchable: true
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsFriendRequestsMutualFriendsSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+let result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsFriendRequestsMutualFriendsSetting.tsx");
 
-export default toggle;
+export default createToggle;

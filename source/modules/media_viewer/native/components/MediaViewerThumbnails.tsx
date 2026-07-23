@@ -1,19 +1,31 @@
-// Module ID: 12119
-// Function ID: 93359
+// Module ID: 12233
+// Function ID: 95510
 // Name: ObscuredView
-// Dependencies: []
+// Dependencies: [57, 31, 27, 8295, 33, 12234, 3834, 689, 3991, 4533, 477, 4130, 5085, 8276, 3992, 7588, 2]
 // Exports: default
 
-// Module 12119 (ObscuredView)
+// Module 12233 (ObscuredView)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import THUMBNAIL_MARGIN from "THUMBNAIL_MARGIN";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let THUMBNAIL_HEIGHT;
 let THUMBNAIL_MARGIN;
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function ObscuredView(source) {
   let tmp2;
   let tmp3;
   source = source.source;
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(12234) /* useMediaItemSpoilerState */;
   [tmp2, tmp3] = callback(obj.useMediaItemSpoilerState(source.index), 2);
-  arg1(dependencyMap[6]);
+  require(3834) /* map */;
   let tmp7Result = null;
   if (tmp2) {
     if (source.spoiler) {
@@ -22,7 +34,7 @@ function ObscuredView(source) {
       obj.style = items;
       obj = {};
       const tmp11 = closure_8;
-      const tmp12 = importDefault(dependencyMap[9]);
+      const tmp12 = importDefault(4533);
       const tmp7 = closure_8;
       let str = "light";
       if (obj4.isAndroid()) {
@@ -32,24 +44,20 @@ function ObscuredView(source) {
       obj.style = closure_6.absoluteFill;
       obj.android_fallbackColor = tmp5;
       obj.children = tmp11(tmp12, obj);
-      tmp7Result = tmp7(importDefault(dependencyMap[8]).View, obj);
-      const obj4 = arg1(dependencyMap[10]);
+      tmp7Result = tmp7(importDefault(3991).View, obj);
+      obj4 = require(477) /* set */;
     } else {
       tmp7Result = null;
     }
   }
   return tmp7Result;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ Pressable: closure_5, StyleSheet: closure_6 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[3]);
-const THUMBNAIL_WIDTH_MARGIN = tmp3.THUMBNAIL_WIDTH_MARGIN;
-({ THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = tmp3);
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
-const tmp4 = arg1(dependencyMap[4]);
-let closure_10 = arg1(dependencyMap[11]).createStyles({ containerPortrait: { height: 60 }, thumbnailButtonPortrait: { marginHorizontal: THUMBNAIL_MARGIN }, thumbnailImagePortrait: { height: THUMBNAIL_HEIGHT, width: "100%" } });
+({ Pressable: closure_5, StyleSheet: closure_6 } = get_ActivityIndicator);
+const THUMBNAIL_WIDTH_MARGIN = THUMBNAIL_MARGIN.THUMBNAIL_WIDTH_MARGIN;
+({ THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = THUMBNAIL_MARGIN);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let obj = { overflow: "hidden", marginHorizontal: THUMBNAIL_MARGIN, borderRadius: 2 };
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ containerPortrait: { height: 60 }, thumbnailButtonPortrait: obj, thumbnailImagePortrait: { height: THUMBNAIL_HEIGHT, width: "100%" } });
 let closure_11 = importAllResult.memo((onSelect) => {
   let index;
   let numSources;
@@ -57,9 +65,7 @@ let closure_11 = importAllResult.memo((onSelect) => {
   let source;
   let useThumbnailStyle;
   ({ source, index } = onSelect);
-  const arg1 = index;
   onSelect = onSelect.onSelect;
-  const importDefault = onSelect;
   ({ numSources, selectedIndex, useThumbnailStyle } = onSelect);
   const tmp = callback3();
   let first = source;
@@ -70,8 +76,8 @@ let closure_11 = importAllResult.memo((onSelect) => {
   const thumbnailStyle = useThumbnailStyle(first, index);
   const callback = importAllResult.useCallback(() => onSelect(index), items);
   let obj = { style: items1 };
-  const items1 = [tmp.thumbnailButtonPortrait, thumbnailStyle];
-  obj = { ef: "<string:1899974754>", w: "Map", h: "<string:18647105>", ip: "<string:1371169024>", op: "<string:1215481027>", accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityState: { selected: selectedIndex === index }, onPress: callback };
+  items1 = [tmp.thumbnailButtonPortrait, thumbnailStyle];
+  obj = { needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, accessibilityRole: "imagebutton", accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityHint: "Double tap to focus", accessibilityState: { selected: selectedIndex === index }, onPress: callback };
   obj = { style: tmp.thumbnailImagePortrait };
   const thumbnail = first.thumbnail;
   let tmp10 = first;
@@ -80,16 +86,15 @@ let closure_11 = importAllResult.memo((onSelect) => {
   }
   obj.source = tmp10;
   obj.enableAnimation = false;
-  const items2 = [callback2(importDefault(dependencyMap[12]), obj), ];
+  const items2 = [callback2(onSelect(5085), obj), ];
   const obj1 = { source: first, index };
   items2[1] = callback2(ObscuredView, obj1);
   obj.children = items2;
   obj.children = closure_9(closure_5, obj);
-  return callback2(importDefault(dependencyMap[8]).View, obj);
+  return callback2(onSelect(3991).View, obj);
 });
 let closure_12 = { code: "function MediaViewerThumbnailsTsx1(){const{scrollEnabled}=this.__closure;return{scrollEnabled:scrollEnabled.get()};}" };
-const obj2 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/media_viewer/native/components/MediaViewerThumbnails.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/media_viewer/native/components/MediaViewerThumbnails.tsx");
 
 export default function MediaViewerThumbnails(syncer) {
   let footerBufferSize;
@@ -102,53 +107,48 @@ export default function MediaViewerThumbnails(syncer) {
   let screenWidth;
   syncer = syncer.syncer;
   const sources = syncer.sources;
-  const arg1 = sources;
   const index = syncer.index;
-  const importDefault = index;
   const variableWidthThumbnailsEnabled = syncer.variableWidthThumbnailsEnabled;
-  const dependencyMap = variableWidthThumbnailsEnabled;
   const thumbnailScrollPositions = syncer.thumbnailScrollPositions;
-  let callback = thumbnailScrollPositions;
   ({ onEndReached, onEndReachedThreshold } = syncer);
-  const thumbnailsProps = syncer.useThumbnailsProps(THUMBNAIL_WIDTH_MARGIN, sources.length - 1);
+  const thumbnailsProps = syncer.useThumbnailsProps(onSelect, sources.length - 1);
   const headerBufferStyle = thumbnailsProps.headerBufferStyle;
   const footerBufferStyle = thumbnailsProps.footerBufferStyle;
   const scrollEnabled = thumbnailsProps.scrollEnabled;
-  const onSelect = thumbnailsProps.onSelect;
-  const THUMBNAIL_WIDTH_MARGIN = onSelect;
+  onSelect = thumbnailsProps.onSelect;
   const useThumbnailStyle = thumbnailsProps.useThumbnailStyle;
-  const items = [thumbnailScrollPositions, variableWidthThumbnailsEnabled];
+  let items = [thumbnailScrollPositions, variableWidthThumbnailsEnabled];
   ({ ref, headerBufferSize, footerBufferSize, onScroll, screenWidth, itemSize } = thumbnailsProps);
-  const memo = importAllResult.useMemo(() => {
+  const memo = headerBufferStyle.useMemo(() => {
     const items = [];
     let num = 0;
     if (0 < thumbnailScrollPositions.length) {
       do {
-        let tmp = closure_2;
+        let tmp = variableWidthThumbnailsEnabled;
         let push = items.push;
-        if (closure_2) {
-          let tmp4 = closure_3;
-          let arr = push(closure_3[num].scrollStart);
+        if (variableWidthThumbnailsEnabled) {
+          let tmp4 = thumbnailScrollPositions;
+          let arr = push(thumbnailScrollPositions[num].scrollStart);
         } else {
-          let tmp2 = closure_7;
-          arr = push(num * closure_7);
+          let tmp2 = onSelect;
+          arr = push(num * onSelect);
         }
         num = num + 1;
-        let tmp6 = closure_3;
-      } while (num < closure_3.length);
+        let tmp6 = thumbnailScrollPositions;
+      } while (num < thumbnailScrollPositions.length);
     }
     return items;
   }, items);
-  let obj = arg1(dependencyMap[13]);
-  const first = callback(obj.useSelectedMediaSource(syncer), 1)[0];
+  let obj = sources(variableWidthThumbnailsEnabled[13]);
+  const first = thumbnailScrollPositions(obj.useSelectedMediaSource(syncer), 1)[0];
   const items1 = [sources, first, onSelect, useThumbnailStyle];
   const items2 = [sources.length];
-  callback = importAllResult.useCallback((arg0, index) => useThumbnailStyle(closure_11, { index, source: sources[index], numSources: sources.length, selectedIndex: first, onSelect, useThumbnailStyle }), items1);
-  const memo1 = importAllResult.useMemo(() => {
+  const callback = headerBufferStyle.useCallback((arg0, index) => useThumbnailStyle(outer1_11, { index, source: sources[index], numSources: sources.length, selectedIndex: first, onSelect, useThumbnailStyle }), items1);
+  const memo1 = headerBufferStyle.useMemo(() => {
     const items = [sources.length];
     return items;
   }, items2);
-  const tmp = callback3();
+  let tmp = callback3();
   const fn = function n() {
     return { scrollEnabled: scrollEnabled.get() };
   };
@@ -156,12 +156,12 @@ export default function MediaViewerThumbnails(syncer) {
   fn.__workletHash = 13439565264141;
   fn.__initData = closure_12;
   const items3 = [headerBufferStyle];
-  const animatedProps = arg1(dependencyMap[8]).useAnimatedProps(fn);
+  const animatedProps = sources(variableWidthThumbnailsEnabled[8]).useAnimatedProps(fn);
   const items4 = [footerBufferStyle];
-  const callback1 = importAllResult.useCallback(() => useThumbnailStyle(index(variableWidthThumbnailsEnabled[14]), { style: headerBufferStyle }), items3);
+  const callback1 = headerBufferStyle.useCallback(() => useThumbnailStyle(index(variableWidthThumbnailsEnabled[14]), { style: headerBufferStyle }), items3);
   const items5 = [index];
-  const callback2 = importAllResult.useCallback(() => useThumbnailStyle(index(variableWidthThumbnailsEnabled[14]), { style: footerBufferStyle }), items4);
-  const memo2 = importAllResult.useMemo(() => index.get(), items5);
-  obj = { ref, style: tmp.containerPortrait, sections: memo1, initialScrollItem: memo2, itemSize, renderItem: callback, onScroll, horizontal: true, headerSize: headerBufferSize, footerSize: footerBufferSize, renderHeader: callback1, renderFooter: callback2, onEndReached, endReachedThreshold: onEndReachedThreshold, chunkBase: screenWidth, snapToOffsets: memo, animatedProps };
-  return useThumbnailStyle(arg1(dependencyMap[15]).AnimatedFastList, obj);
+  const callback2 = headerBufferStyle.useCallback(() => useThumbnailStyle(index(variableWidthThumbnailsEnabled[14]), { style: footerBufferStyle }), items4);
+  const memo2 = headerBufferStyle.useMemo(() => index.get(), items5);
+  obj = { ref, style: tmp.containerPortrait, sections: memo1, stickyHeaderFooter: true, disableContentWrappers: true, automaticallyAdjustContentInsets: false, showsVerticalScrollIndicator: false, showsHorizontalScrollIndicator: false, initialScrollOrientation: "center", initialScrollItem: memo2, itemSize, renderItem: callback, onScroll, horizontal: true, headerSize: headerBufferSize, footerSize: footerBufferSize, renderHeader: callback1, renderFooter: callback2, onEndReached, endReachedThreshold: onEndReachedThreshold, chunkBase: screenWidth, snapToOffsets: memo, animatedProps };
+  return useThumbnailStyle(sources(variableWidthThumbnailsEnabled[15]).AnimatedFastList, obj);
 };

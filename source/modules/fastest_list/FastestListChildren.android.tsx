@@ -1,40 +1,34 @@
-// Module ID: 9248
-// Function ID: 72293
+// Module ID: 9255
+// Function ID: 72334
 // Name: map
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 9256, 620, 9257, 9258, 2]
 
-// Module 9248 (map)
-let closure_2 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles({ portal: { delete: 131420590, pos: -1717986767, items: -644245095, channel: 94527 } });
-const obj = { items: [] };
-const obj2 = arg1(dependencyMap[4]);
-obj.keys = new Map();
-obj.keyIndex = 0;
-const map = new Map();
+// Module 9255 (map)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, top: 0 } });
+let obj = { items: [], keys: new Map(), keyIndex: 0 };
+let map = new Map();
 const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAlwaysMounted) => {
   let horizontal;
-  ({ estimatedListSize: closure_0, horizontal } = listFooterAlwaysMounted);
+  let importDefault;
+  ({ estimatedListSize: importDefault, horizontal } = listFooterAlwaysMounted);
   if (horizontal === undefined) {
     horizontal = false;
   }
-  const dependencyMap = horizontal;
   listFooterAlwaysMounted = listFooterAlwaysMounted.listFooterAlwaysMounted;
-  const callback = listFooterAlwaysMounted;
   const listHeaderAlwaysMounted = listFooterAlwaysMounted.listHeaderAlwaysMounted;
   let flag = listFooterAlwaysMounted.placeholdersForceEnabled;
   if (flag === undefined) {
     flag = false;
   }
-  const View = flag;
   const marginEnd = listFooterAlwaysMounted.marginEnd;
-  const jsx = marginEnd;
   const marginStart = listFooterAlwaysMounted.marginStart;
-  const callback2 = marginStart;
   const sectionsVersioned = listFooterAlwaysMounted.sectionsVersioned;
-  let obj = sectionsVersioned;
   const renderItem = listFooterAlwaysMounted.renderItem;
   const renderListFooter = listFooterAlwaysMounted.renderListFooter;
   const renderListHeader = listFooterAlwaysMounted.renderListHeader;
@@ -44,34 +38,36 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let tmp;
+  let c14;
   let first;
   let closure_16;
   let closure_17;
   let memo1;
-  tmp = callback2();
-  const items = [tmp.portal, marginStart, marginEnd];
-  const memo = importAllResult.useMemo(() => {
-    const items = [tmp.portal, { left: marginStart, right: marginEnd }];
+  let tmp = marginStart();
+  c14 = tmp;
+  let items = [tmp.portal, marginStart, marginEnd];
+  const memo = listHeaderAlwaysMounted.useMemo(() => {
+    const items = [_undefined.portal, { left: marginStart, right: marginEnd }];
     return items;
   }, items);
-  const tmp3 = callback(listHeaderAlwaysMounted.useState(() => callback(horizontal[5])({ estimatedListSize: callback, sectionsVersioned })), 2);
+  const tmp3 = listFooterAlwaysMounted(listHeaderAlwaysMounted.useState(() => outer1_0(horizontal[5])({ estimatedListSize: closure_0, sectionsVersioned })), 2);
   first = tmp3[0];
   closure_16 = tmp3[1];
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+  const imperativeHandle = listHeaderAlwaysMounted.useImperativeHandle(arg1, () => ({
     setVisibleItems(nativeEvent) {
-      callback((arg0) => {
+      let closure_0 = nativeEvent;
+      outer1_16((arg0) => {
         let tmp = arg0;
-        if (!arg0(closure_1[6])(arg0, arg0)) {
-          tmp = arg0;
+        if (!outer3_0(horizontal[6])(arg0, closure_0)) {
+          tmp = closure_0;
         }
         return tmp;
       });
     }
   }), []);
-  closure_17 = importAllResult.useRef(obj);
-  const items1 = [horizontal, listFooterAlwaysMounted, listHeaderAlwaysMounted, flag, renderItem, renderListFooter, renderListHeader, renderSectionFooter, renderSectionHeader, sectionsVersioned, first, flag2];
-  memo1 = importAllResult.useMemo(() => {
+  closure_17 = listHeaderAlwaysMounted.useRef(sectionsVersioned);
+  let items1 = [horizontal, listFooterAlwaysMounted, listHeaderAlwaysMounted, flag, renderItem, renderListFooter, renderListHeader, renderSectionFooter, renderSectionHeader, sectionsVersioned, first, flag2];
+  memo1 = listHeaderAlwaysMounted.useMemo(() => {
     let first;
     let item;
     let itemEnd;
@@ -94,16 +90,16 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
     let sectionStart;
     let sections;
     function fastestListChildJSX(item, itemSize) {
-      if (closure_13) {
+      if (outer1_13) {
         let obj = {};
         obj = {};
         let tmp10;
-        if (closure_1) {
+        if (outer1_1) {
           tmp10 = itemSize;
         }
         obj.width = tmp10;
         let tmp12;
-        if (!closure_1) {
+        if (!outer1_1) {
           tmp12 = itemSize;
         }
         obj.height = tmp12;
@@ -111,8 +107,8 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
         obj.style = obj;
         obj.collapsable = false;
         obj.children = item;
-        return closure_5(closure_4, obj);
-      } else if (validElement.isValidElement(item)) {
+        return marginEnd(false, obj);
+      } else if (listHeaderAlwaysMounted.isValidElement(item)) {
         return item;
       } else {
         const _Error = Error;
@@ -141,22 +137,22 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
       arr6 = map1;
       const items = [];
       const items1 = [];
-      arr6 = callback;
+      arr6 = outer1_0;
       arr6 = horizontal;
       arr6 = first;
-      arr6 = callback(horizontal[7])(listId, first, sections);
+      arr6 = outer1_0(horizontal[7])(listId, first, sections);
       ({ sectionStart, sectionEnd, itemStart, itemEnd } = arr6);
       arr6 = null;
       let sum1 = sectionStart;
       if (sectionStart <= sectionEnd) {
         do {
-          let tmp4 = closure_4;
+          let tmp4 = flag;
           let tmp5 = tmp35;
           let tmp6 = tmp36;
           let tmp7 = tmp37;
           let tmp8 = tmp38;
           let tmp9 = tmp39;
-          if (!closure_4) {
+          if (!flag) {
             let num = 0;
             if (sum1 === sectionStart) {
               num = itemStart;
@@ -176,8 +172,8 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
             let tmp14 = diff;
             if (num <= diff) {
               do {
-                let tmp15 = closure_8;
-                let tmp16 = closure_8(sum1, sum);
+                let tmp15 = renderItem;
+                let tmp16 = renderItem(sum1, sum);
                 let tmp17 = sum;
                 if (arr6) {
                   first = itemSizes[0].sizes[0];
@@ -200,14 +196,14 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
                 if (null != value) {
                   let result = map1.set(combined1, value);
                   let deleteResult = map.delete(combined1);
-                  let tmp26 = closure_5;
-                  let tmp27 = closure_0;
-                  let tmp28 = closure_1;
+                  let tmp26 = marginEnd;
+                  let tmp27 = outer1_0;
+                  let tmp28 = horizontal;
                   let obj = { portalId: combined1 };
-                  let tmp29 = closure_0(closure_1[8]);
+                  let tmp29 = outer1_0(horizontal[8]);
                   obj.children = fastestListChildJSX(tmp16, first);
                   let _HermesInternal3 = HermesInternal;
-                  let arr = items.push(closure_5(tmp29, obj, "" + value));
+                  let arr = items.push(marginEnd(tmp29, obj, "" + value));
                 } else {
                   obj = { keyId: combined1, item: tmp16, itemSize: first };
                   arr = items1.push(obj);
@@ -225,11 +221,11 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
             }
           }
           sum1 = sum1 + 1;
-          let tmp35 = tmp5;
-          let tmp36 = tmp6;
-          let tmp37 = tmp7;
-          let tmp38 = tmp8;
-          let tmp39 = tmp9;
+          tmp35 = tmp5;
+          tmp36 = tmp6;
+          tmp37 = tmp7;
+          tmp38 = tmp8;
+          tmp39 = tmp9;
         } while (sum1 <= sectionEnd);
       }
       let tmp40 = keyIndex;
@@ -244,28 +240,28 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
             value = map.get(value);
             let result1 = map1.set(keyId, value);
             let deleteResult1 = map.delete(value);
-            let tmp54 = closure_5;
-            let tmp55 = closure_0;
-            let tmp56 = closure_1;
+            let tmp54 = marginEnd;
+            let tmp55 = outer1_0;
+            let tmp56 = horizontal;
             obj = { portalId: keyId };
-            let tmp57 = closure_0(closure_1[8]);
+            let tmp57 = outer1_0(horizontal[8]);
             obj.children = fastestListChildJSX(item, itemSize);
             let _HermesInternal5 = HermesInternal;
-            let arr1 = items.push(closure_5(tmp57, obj, "" + value));
+            let arr1 = items.push(marginEnd(tmp57, obj, "" + value));
             let sum2 = tmp40;
           } else {
             let tmp42 = +tmp40;
             sum2 = tmp42 + 1;
             let text = `key-${tmp42}`;
             let result2 = map1.set(keyId, `key-${tmp42}`);
-            let tmp46 = closure_5;
-            let tmp47 = closure_0;
-            let tmp48 = closure_1;
+            let tmp46 = marginEnd;
+            let tmp47 = outer1_0;
+            let tmp48 = horizontal;
             let obj1 = { portalId: keyId };
-            let tmp49 = closure_0(closure_1[8]);
+            let tmp49 = outer1_0(horizontal[8]);
             obj1.children = fastestListChildJSX(item, itemSize);
             let _HermesInternal4 = HermesInternal;
-            let arr2 = items.push(closure_5(tmp49, obj1, "" + `key-${tmp42}`));
+            let arr2 = items.push(marginEnd(tmp49, obj1, "" + `key-${tmp42}`));
           }
           num2 = num2 + 1;
           tmp40 = sum2;
@@ -284,10 +280,10 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
             const _HermesInternal6 = HermesInternal;
             obj2.portalId = "" + listId + "-" + str2;
             obj2.children = fastestListChildJSX(renderListHeader(), listHeaderSize);
-            items.push(marginEnd(callback(horizontal[8]), obj2, str2));
-            const tmp65 = callback(horizontal[8]);
+            items.push(marginEnd(outer1_0(horizontal[8]), obj2, str2));
+            const tmp65 = outer1_0(horizontal[8]);
           } else {
-            let flag = false;
+            flag = false;
             if (!flag) {
               flag = false;
               if (0 === itemStart) {
@@ -319,8 +315,8 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
             const _HermesInternal7 = HermesInternal;
             const combined2 = "" + listId + "-" + str3;
             const obj3 = { portalId: combined2, children: fastestListChildJSX(renderListFooter(), listFooterSize) };
-            items.push(marginEnd(callback(horizontal[8]), obj3, combined2));
-            const tmp75 = callback(horizontal[8]);
+            items.push(marginEnd(outer1_0(horizontal[8]), obj3, combined2));
+            const tmp75 = outer1_0(horizontal[8]);
           } else {
             let flag2 = false;
             if (!flag) {
@@ -364,11 +360,11 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
               let _HermesInternal9 = HermesInternal;
               let combined4 = "" + listId + "-" + combined3;
               let tmp88 = marginEnd;
-              let tmp89 = callback;
+              let tmp89 = outer1_0;
               let tmp90 = horizontal;
               let obj4 = { portalId: combined4 };
               let tmp92 = renderSectionFooter;
-              let tmp91 = callback(horizontal[8]);
+              let tmp91 = outer1_0(horizontal[8]);
               obj4.children = fastestListChildJSX(renderSectionFooter(sectionStart), tmp83);
               let arr5 = items.push(marginEnd(tmp91, obj4, combined4));
               tmp84 = tmp85;
@@ -395,11 +391,11 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
               let _HermesInternal11 = HermesInternal;
               let combined6 = "" + listId + "-" + combined5;
               arr6 = marginEnd;
-              arr6 = callback;
+              arr6 = outer1_0;
               arr6 = horizontal;
               let obj5 = { portalId: combined6 };
               arr6 = renderSectionHeader;
-              arr6 = callback(horizontal[8]);
+              arr6 = outer1_0(horizontal[8]);
               obj5.children = fastestListChildJSX(renderSectionHeader(sectionStart), tmp94);
               arr6 = items.push(marginEnd(arr6, obj5, combined6));
               arr6 = tmp83;
@@ -410,20 +406,19 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((listFooterAl
           }
         }
         sectionStart = sectionStart + 1;
-        let tmp78 = tmp81;
-        let tmp79 = tmp82;
+        tmp78 = tmp81;
+        tmp79 = tmp82;
       }
       const obj6 = { items, keys: map1, keyIndex: tmp41 };
       return obj6;
     }
   }, items1);
   const items2 = [memo1];
-  const effect = importAllResult.useEffect(() => {
+  const effect = listHeaderAlwaysMounted.useEffect(() => {
     closure_17.current = memo1;
   }, items2);
-  obj = { pointerEvents: "none", style: memo, children: memo1.items };
-  return <View {...obj} />;
+  return marginEnd(flag, { pointerEvents: "none", style: memo, children: memo1.items });
 }));
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/fastest_list/FastestListChildren.android.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/fastest_list/FastestListChildren.android.tsx");
 
 export default memoResult;

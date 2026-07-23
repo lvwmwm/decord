@@ -1,18 +1,19 @@
-// Module ID: 13575
-// Function ID: 102918
+// Module ID: 13689
+// Function ID: 105074
 // Name: styles
-// Dependencies: []
+// Dependencies: [653, 4130, 5052, 689, 2]
 
-// Module 13575 (styles)
-const _module = require(dependencyMap[1]);
-let obj = { text: { "Null": false, "Bool(false)": false, "Bool(false)": false } };
+// Module 13689 (styles)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let obj = { text: { textAlign: "center", marginLeft: 20, marginRight: 20 } };
 obj = {};
-const merged = Object.assign(importDefault(dependencyMap[2])(require(dependencyMap[0]).Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[3]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 obj.modalHeader = obj;
-const importDefaultResult = importDefault(dependencyMap[2]);
-obj.modalBody = { color: importDefault(dependencyMap[3]).colors.TEXT_SUBTLE, marginTop: 8 };
-const styles = _module.createStyles(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupStyles.tsx");
+obj.modalBody = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginTop: 8 };
+const styles = _createForOfIteratorHelperLoose.createStyles(obj);
+const obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginTop: 8 };
+const result = require("createTextStyle").fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupStyles.tsx");
 
 export const useTwoFASetupStyles = styles;

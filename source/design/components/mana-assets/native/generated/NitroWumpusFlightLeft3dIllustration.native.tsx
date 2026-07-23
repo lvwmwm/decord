@@ -1,14 +1,13 @@
-// Module ID: 6367
-// Function ID: 50483
+// Module ID: 6372
+// Function ID: 50512
 // Name: NitroWumpusFlightLeft3dIllustration
-// Dependencies: [131072, 561250304, 3657433088, 19]
+// Dependencies: [33, 5085, 6373, 2]
 // Exports: NitroWumpusFlightLeft3dIllustration
 
-// Module 6367 (NitroWumpusFlightLeft3dIllustration)
-import _setPrototypeOf from "_setPrototypeOf";
+// Module 6372 (NitroWumpusFlightLeft3dIllustration)
+import { jsx } from "jsxProd";
 
-const jsx = require(dependencyMap[0]).jsx;
-const result = _setPrototypeOf.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusFlightLeft3dIllustration.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusFlightLeft3dIllustration.native.tsx");
 
 export const NitroWumpusFlightLeft3dIllustration = function NitroWumpusFlightLeft3dIllustration(width) {
   let accessibilityLabel;
@@ -28,7 +27,7 @@ export const NitroWumpusFlightLeft3dIllustration = function NitroWumpusFlightLef
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6373) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +35,5 @@ export const NitroWumpusFlightLeft3dIllustration = function NitroWumpusFlightLef
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

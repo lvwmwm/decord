@@ -1,9 +1,18 @@
-// Module ID: 5608
-// Function ID: 47721
+// Module ID: 5613
+// Function ID: 47749
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1921, 1194, 566, 686, 2]
 
-// Module 5608 (_isNativeReflectConstruct)
+// Module 5613 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,11 +27,11 @@ function getGuildAndApplicationId(guildOrApplicationId) {
   if ("guild" === guildOrApplicationId.type) {
     let guildId = guildOrApplicationId.guildId;
   } else {
-    guildId = closure_23[guildOrApplicationId.applicationId];
+    guildId = table2[guildOrApplicationId.applicationId];
   }
   obj.guildId = guildId;
   if ("guild" === guildOrApplicationId.type) {
-    let applicationId = closure_22[guildOrApplicationId.guildId];
+    let applicationId = table[guildOrApplicationId.guildId];
   } else {
     applicationId = guildOrApplicationId.applicationId;
   }
@@ -32,27 +41,26 @@ function getGuildAndApplicationId(guildOrApplicationId) {
 function updateStorefrontFetchState(guildId, applicationId, arg2) {
   if (null != guildId) {
     let obj = {};
-    const merged = Object.assign(closure_9[guildId]);
+    const merged = Object.assign(obj[guildId]);
     const merged1 = Object.assign(arg2);
-    closure_9[guildId] = obj;
+    obj[guildId] = obj;
   }
   if (null != applicationId) {
     obj = {};
-    const merged2 = Object.assign(closure_10[applicationId]);
+    const merged2 = Object.assign(obj1[applicationId]);
     const merged3 = Object.assign(arg2);
-    closure_10[applicationId] = obj;
+    obj1[applicationId] = obj;
   }
   obj = {};
-  const merged4 = Object.assign(closure_9);
-  closure_9 = obj;
-  const merged5 = Object.assign(closure_10);
-  closure_10 = {};
+  const merged4 = Object.assign(obj);
+  obj1 = {};
+  const merged5 = Object.assign(obj1);
 }
 function handleUserSettingsStoreUpdate() {
   if (locale === closure_6.locale) {
     return false;
   } else {
-    const locale = closure_6.locale;
+    locale = closure_6.locale;
     let closure_8 = {};
     let closure_9 = {};
     let closure_10 = {};
@@ -63,13 +71,6 @@ function handleUserSettingsStoreUpdate() {
     let closure_15 = {};
   }
 }
-let closure_1 = importDefault(dependencyMap[0]);
-let closure_2 = importDefault(dependencyMap[1]);
-let closure_3 = importDefault(dependencyMap[2]);
-let closure_4 = importDefault(dependencyMap[3]);
-let closure_5 = importDefault(dependencyMap[4]);
-let closure_6 = importDefault(dependencyMap[5]);
-let closure_7 = importDefault(dependencyMap[6]);
 let closure_8 = {};
 let closure_9 = {};
 let closure_10 = {};
@@ -81,29 +82,28 @@ let closure_15 = {};
 let closure_16 = {};
 let closure_17 = {};
 let closure_18 = {};
-const set = new Set();
+let set = new Set();
 let closure_20 = { state: "idle" };
-const set1 = new Set();
+let set1 = new Set();
 let closure_22 = {};
 let closure_23 = {};
 let closure_24 = {};
 let closure_25 = {};
-const set2 = new Set();
-let closure_27 = null;
-let closure_28 = { state: "idle" };
-let tmp5 = (Store) => {
+let set2 = new Set();
+let c27 = null;
+let tmp5 = ((Store) => {
   class SocialLayerStorefrontStore {
     constructor() {
       self = this;
-      tmp = closure_1(this, SocialLayerStorefrontStore);
-      obj = closure_4(SocialLayerStorefrontStore);
-      tmp2 = closure_3;
-      if (closure_29()) {
+      tmp = outer1_1(this, SocialLayerStorefrontStore);
+      obj = outer1_4(SocialLayerStorefrontStore);
+      tmp2 = outer1_3;
+      if (outer1_28()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_4;
+        tmp7 = outer1_4;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_4(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -116,24 +116,24 @@ let tmp5 = (Store) => {
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7, locale);
-      const items = [locale];
-      this.syncWith(items, closure_32);
-      const SocialLayerStorefrontStore = locale.locale;
+      this.waitFor(outer1_7, outer1_6);
+      const items = [outer1_6];
+      this.syncWith(items, outer1_31);
+      const SocialLayerStorefrontStore = outer1_6.locale;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "getStorefrontData",
     value(arg0) {
-      return closure_9[arg0];
+      return outer1_9[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "getStorefrontDataForApplicationId",
     value(arg0) {
-      return closure_10[arg0];
+      return outer1_10[arg0];
     }
   };
   items[2] = obj;
@@ -142,11 +142,11 @@ let tmp5 = (Store) => {
     value(arg0) {
       let applicationId;
       let guildId;
-      ({ guildId, applicationId } = callback4(arg0));
+      ({ guildId, applicationId } = outer1_29(arg0));
       if (null != guildId) {
-        let tmp2 = closure_9[guildId];
+        let tmp2 = outer1_9[guildId];
       } else if (null != applicationId) {
-        tmp2 = closure_10[applicationId];
+        tmp2 = outer1_10[applicationId];
       }
       return tmp2;
     }
@@ -154,32 +154,32 @@ let tmp5 = (Store) => {
   items[4] = {
     key: "getSkuAssets",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[5] = {
     key: "getStorefrontMetadata",
     value(arg0) {
-      return closure_15[arg0];
+      return outer1_15[arg0];
     }
   };
   items[6] = {
     key: "getStorefrontEntries",
     value(arg0) {
-      return closure_11[arg0];
+      return outer1_11[arg0];
     }
   };
   items[7] = {
     key: "getStorefrontById",
     value(arg0) {
-      return closure_12[arg0];
+      return outer1_12[arg0];
     }
   };
   items[8] = {
     key: "getPreviewStorefrontId",
     value(arg0) {
       let tmp2 = null;
-      if (null != closure_13[arg0]) {
+      if (null != outer1_13[arg0]) {
         tmp2 = tmp;
       }
       return tmp2;
@@ -189,22 +189,22 @@ let tmp5 = (Store) => {
     key: "getStorefrontState",
     value(arg0) {
       if (null != arg0) {
-        return closure_8[arg0];
+        return outer1_8[arg0];
       }
     }
   };
   items[10] = {
     key: "getAnnouncement",
     value(arg0) {
-      return closure_16[arg0];
+      return outer1_16[arg0];
     }
   };
   items[11] = {
     key: "getConfig",
     value() {
       let config = null;
-      if ("success" === closure_20.state) {
-        config = closure_20.config;
+      if ("success" === outer1_20.state) {
+        config = outer1_20.config;
       }
       return config;
     }
@@ -212,19 +212,19 @@ let tmp5 = (Store) => {
   items[12] = {
     key: "getConfigForApplicationId",
     value(arg0) {
-      return closure_25[arg0];
+      return outer1_25[arg0];
     }
   };
   items[13] = {
     key: "getApplicationIdFromDetectableId",
     value(arg0) {
-      return closure_24[arg0];
+      return outer1_24[arg0];
     }
   };
   items[14] = {
     key: "getDetectableIdsToApplicationIds",
     value() {
-      return closure_24;
+      return outer1_24;
     }
   };
   items[15] = {
@@ -232,7 +232,7 @@ let tmp5 = (Store) => {
     value(arg0) {
       let tmp;
       if (null != arg0) {
-        tmp = closure_23[arg0];
+        tmp = outer1_23[arg0];
       }
       return tmp;
     }
@@ -242,7 +242,7 @@ let tmp5 = (Store) => {
     value(arg0) {
       let tmp;
       if (null != arg0) {
-        tmp = closure_22[arg0];
+        tmp = outer1_22[arg0];
       }
       return tmp;
     }
@@ -250,26 +250,26 @@ let tmp5 = (Store) => {
   items[17] = {
     key: "getConfigFetchState",
     value() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[18] = {
     key: "getStorefrontApplicationIds",
     value() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[19] = {
     key: "getStorefrontGuildIds",
     value() {
-      return closure_26;
+      return outer1_26;
     }
   };
   items[20] = {
     key: "getSKUEligibility",
     value(arg0) {
       let state;
-      if (null != closure_17[arg0]) {
+      if (null != outer1_17[arg0]) {
         state = tmp.state;
       }
       return state;
@@ -278,35 +278,29 @@ let tmp5 = (Store) => {
   items[21] = {
     key: "getSKUEligibilityEntry",
     value(arg0) {
-      return closure_17[arg0];
+      return outer1_17[arg0];
     }
   };
   items[22] = {
     key: "getNormalizedSKUEligibility",
     value(arg0) {
       let state;
-      if (null != closure_17[arg0]) {
+      if (null != outer1_17[arg0]) {
         state = tmp.state;
       }
       return "ineligible" !== state;
     }
   };
   items[23] = {
-    key: "getAnnouncementModalConfig",
+    key: "getAnnouncementModalContentConfig",
     value() {
-      return closure_27;
-    }
-  };
-  items[24] = {
-    key: "getStorefrontAffinity",
-    value() {
-      return closure_28;
+      return outer1_27;
     }
   };
   return callback(SocialLayerStorefrontStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "SocialLayerStorefrontStore";
-tmp5 = new tmp5(importDefault(dependencyMap[8]), {
+tmp5 = new tmp5(require("dispatcher"), {
   LOGOUT: function handleLogout() {
     let closure_14 = {};
     let closure_15 = {};
@@ -325,8 +319,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
     let closure_24 = {};
     let closure_25 = {};
     const set2 = new Set();
-    let closure_27 = null;
-    let closure_28 = { state: "idle" };
+    let c27 = null;
   },
   STOREFRONT_PROMOTION_ID_OVERRIDE_SET: function handleStorefrontPromotionIdOverrideSet() {
     let closure_10 = {};
@@ -339,23 +332,22 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
   },
   ENTITLEMENT_CREATE: function handleEntitlementCreate(entitlement) {
     entitlement = entitlement.entitlement;
-    if (null == closure_17[entitlement.sku_id]) {
+    if (null == obj[entitlement.sku_id]) {
       return false;
     } else {
-      const obj = {};
-      const merged = Object.assign(closure_17);
-      closure_17 = obj;
+      obj = {};
+      const merged = Object.assign(obj);
       const sku_id = entitlement.sku_id;
-      delete r1[r0];
+      delete tmp2[tmp];
     }
   },
   INTERACTION_FAILURE: function handleInteractionFailure(interactionId) {
     interactionId = interactionId.interactionId;
     if (null == interactionId) {
       return false;
-    } else if (null == closure_18[interactionId]) {
+    } else if (null == dependencyMap[interactionId]) {
       const _Object = Object;
-      const values = Object.values(closure_17);
+      const values = Object.values(obj);
       if (values.some((state) => "checking" === state.state)) {
         if (set.size >= 25) {
           set.delete(set.values().next().value);
@@ -365,18 +357,17 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
       }
       return false;
     } else {
-      const obj = {};
-      const merged = Object.assign(closure_17);
-      obj[tmp14] = { "Bool(true)": "cl", "Bool(true)": "targetFrames" };
-      closure_17 = obj;
-      delete r1[r2];
+      obj = {};
+      const merged = Object.assign(obj);
+      obj[tmp16] = { state: "error", reason: "interaction_failure" };
+      delete tmp[tmp2];
     }
   },
   INTERACTION_SUCCESS: function handleInteractionSuccess(arg0) {
-    if (null == closure_18[arg0.interactionId]) {
+    if (null == dependencyMap[arg0.interactionId]) {
       return false;
     } else {
-      delete r0[r1];
+      delete tmp[tmp2];
     }
   },
   SOCIAL_LAYER_STOREFRONT_LOAD: function handleSocialLayerStorefrontLoad(guildOrApplicationId) {
@@ -394,77 +385,71 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
     }
     let tmp2 = null != guildId;
     if (tmp2) {
-      tmp2 = null == closure_22[guildId];
+      tmp2 = null == obj[guildId];
     }
     if (tmp2) {
-      closure_22[guildId] = storefront.applicationId;
-      let obj = {};
-      const merged = Object.assign(closure_22);
-      closure_22 = obj;
+      obj[guildId] = storefront.applicationId;
+      obj = {};
+      const merged = Object.assign(obj);
     }
     let tmp8 = null != storefront.applicationId && null != guildId;
     if (tmp8) {
-      tmp8 = null == closure_23[storefront.applicationId];
+      tmp8 = null == obj[storefront.applicationId];
     }
     if (tmp8) {
-      closure_23[storefront.applicationId] = guildId;
+      obj[storefront.applicationId] = guildId;
       obj = {};
-      const merged1 = Object.assign(closure_23);
-      closure_23 = obj;
+      const merged1 = Object.assign(obj);
     }
     obj = { state: "fetched", fetchedAt: Date.now(), storefront };
     updateStorefrontFetchState(guildId, storefront.applicationId, obj);
     if (null != storefront.assets) {
       const obj1 = {};
-      const merged2 = Object.assign(closure_14);
+      const merged2 = Object.assign(obj1);
       const merged3 = Object.assign(storefront.assets);
-      closure_14 = obj1;
     }
   },
   SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: function handleSocialLayerStorefrontPartialLoadSuccess(assets) {
-    const merged = Object.assign(closure_14);
+    const obj = {};
+    const merged = Object.assign(obj);
     const merged1 = Object.assign(assets.assets);
-    closure_14 = {};
   },
   SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS: function handleSocialLayerStorefrontMetadataLoadSuccess(arg0) {
     let applicationId;
     let storefrontMetadata;
     const obj = {};
     ({ applicationId, storefrontMetadata } = arg0);
-    const merged = Object.assign(closure_15);
+    const merged = Object.assign(obj);
     obj[applicationId] = storefrontMetadata;
-    closure_15 = obj;
   },
   SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: function handleSocialLayerStorefrontLoadFailure(guildOrApplicationId) {
     let applicationId;
     let guildId;
     ({ guildId, applicationId } = getGuildAndApplicationId(guildOrApplicationId.guildOrApplicationId));
     if (null != guildId) {
-      let tmp2 = closure_9[guildId];
+      let tmp6 = obj[guildId];
     } else if (null != applicationId) {
-      tmp2 = closure_10[applicationId];
+      tmp6 = obj1[applicationId];
     }
-    if (null == tmp2) {
+    if (null == tmp6) {
       return false;
     } else if (guildOrApplicationId.eager) {
-      if ("loading" === tmp2.state) {
-        if (null != tmp2.storefront) {
-          let obj = { state: "fetched" };
+      if ("loading" === tmp6.state) {
+        if (null != tmp6.storefront) {
+          obj = { state: "fetched" };
           updateStorefrontFetchState(guildId, applicationId, obj);
         }
       }
       if (null != guildId) {
-        delete r5[r4];
+        delete tmp4[tmp3];
       }
       if (null != applicationId) {
-        delete r2[r3];
+        delete tmp[tmp2];
       }
       obj = {};
-      const merged = Object.assign(closure_9);
-      closure_9 = obj;
-      const obj1 = {};
-      const merged1 = Object.assign(closure_10);
-      closure_10 = obj1;
+      const merged = Object.assign(obj);
+      obj1 = {};
+      const merged1 = Object.assign(obj1);
     } else {
       obj = { state: "error" };
       const _Date = Date;
@@ -472,17 +457,16 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
       obj.storefront = undefined;
       updateStorefrontFetchState(guildId, applicationId, obj);
     }
-    const tmp = getGuildAndApplicationId(guildOrApplicationId.guildOrApplicationId);
+    const tmp5 = getGuildAndApplicationId(guildOrApplicationId.guildOrApplicationId);
   },
   SET_SOCIAL_LAYER_STOREFRONT_STATE: function handleSetSocialLayerStorefrontState(activePage) {
-    closure_8[activePage.applicationId] = { activePage: activePage.pageIndex, activeSkuId: activePage.skuId };
-    const merged = Object.assign(closure_8);
-    closure_8 = {};
+    obj[activePage.applicationId] = { activePage: activePage.pageIndex, activeSkuId: activePage.skuId };
+    obj = {};
+    const merged = Object.assign(obj);
   },
   SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_START: function handleSocialLayerStorefrontAnnouncementFetchStart(guildId) {
     const obj = {};
-    const merged = Object.assign(closure_16);
-    closure_16 = obj;
+    const merged = Object.assign(obj);
     obj[guildId.guildId] = { state: "loading" };
   },
   SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_SUCCESS: function handleSocialLayerStorefrontAnnouncementFetchSuccess(arg0) {
@@ -490,14 +474,12 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
     let guildId;
     const obj = {};
     ({ guildId, announcement } = arg0);
-    const merged = Object.assign(closure_16);
-    closure_16 = obj;
+    const merged = Object.assign(obj);
     obj[guildId] = { state: "success", announcement };
   },
   SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_FAILURE: function handleSocialLayerStorefrontAnnouncementFetchFailure(guildId) {
     const obj = {};
-    const merged = Object.assign(closure_16);
-    closure_16 = obj;
+    const merged = Object.assign(obj);
     obj[guildId.guildId] = { state: "error" };
   },
   SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_START: function handleStorefrontConfigFetchStart() {
@@ -505,13 +487,12 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
   },
   SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_SUCCESS: function handleStorefrontConfigFetchSuccess(config) {
     config = config.config;
-    let closure_20 = { state: "success", config, fetchedAt: Date.now() };
-    const storefronts = config.storefronts;
     const obj = { state: "success", config, fetchedAt: Date.now() };
-    let set1 = new Set(storefronts.map((applicationId) => applicationId.applicationId));
+    const storefronts = config.storefronts;
+    const set = new Set(storefronts.map((applicationId) => applicationId.applicationId));
     const storefronts1 = config.storefronts;
     const found = storefronts1.filter((guildId) => null != guildId.guildId);
-    set1 = new Set(found.map((guildId) => guildId.guildId));
+    const set1 = new Set(found.map((guildId) => guildId.guildId));
     const storefronts2 = config.storefronts;
     let closure_22 = storefronts2.reduce((arg0, guildId) => {
       if (null != guildId.guildId) {
@@ -536,38 +517,30 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
       arg0[applicationId.applicationId] = applicationId;
       return arg0;
     }, {});
-    const announcementModalConfig = config.announcementModalConfig;
-    let tmp3 = null;
-    if (null != announcementModalConfig) {
-      tmp3 = announcementModalConfig;
-    }
-    let closure_27 = tmp3;
   },
   SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_FAILURE: function handleStorefrontConfigFetchFailure() {
-    let closure_20 = { state: "error", fetchedAt: Date.now() };
+    const obj = { state: "error", fetchedAt: Date.now() };
   },
   SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_START: function handleSKUPurchaseEligibilityCheckStart(skuId) {
     const obj = {};
-    const merged = Object.assign(closure_17);
+    const merged = Object.assign(obj);
     obj[skuId.skuId] = { state: "checking" };
-    closure_17 = obj;
   },
   SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_CREATE: function handleSKUPurchaseEligibilityCheckCreate(arg0) {
     let interactionId;
     let skuId;
     ({ skuId, interactionId } = arg0);
     let state;
-    if (null != closure_17[skuId]) {
+    if (null != obj[skuId]) {
       state = tmp.state;
     }
     if ("checking" !== state) {
       return tmp3;
     } else if (set.has(interactionId)) {
       set.delete(interactionId);
-      const obj = {};
-      const merged = Object.assign(closure_17);
-      obj[skuId] = { "Bool(true)": "cl", "Bool(true)": "targetFrames" };
-      closure_17 = obj;
+      obj = {};
+      const merged = Object.assign(obj);
+      obj[skuId] = { state: "error", reason: "interaction_failure" };
     } else {
       closure_18[interactionId] = skuId;
     }
@@ -580,7 +553,7 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
       reason = "http_error";
     }
     let state;
-    if (null != closure_17[skuId]) {
+    if (null != obj[skuId]) {
       state = tmp.state;
     }
     if ("checking" !== state) {
@@ -588,11 +561,10 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
         return false;
       }
     }
-    let obj = {};
-    const merged = Object.assign(closure_17);
+    obj = {};
+    const merged = Object.assign(obj);
     obj = { state: "error", reason, httpStatus: httpStatus.httpStatus };
     obj[skuId] = obj;
-    closure_17 = obj;
   },
   SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_RESPONSE: function handleSKUPurchaseEligibilityResponse(arg0) {
     let eligible;
@@ -604,92 +576,81 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
       return false;
     } else {
       let obj = {};
-      const merged = Object.assign(closure_17);
+      const merged = Object.assign(obj);
       if (eligible) {
         obj = { state: "eligible" };
       } else {
         obj = { state: "ineligible", ineligibleReason };
       }
       obj[skuId] = obj;
-      closure_17 = obj;
     }
   },
   SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD: function handleSocialLayerStorefrontEntriesLoad(applicationId) {
     const obj = {};
-    const merged = Object.assign(closure_11);
+    const merged = Object.assign(obj);
     obj[applicationId.applicationId] = { state: "loading" };
-    closure_11 = obj;
   },
   SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD_SUCCESS: function handleSocialLayerStorefrontEntriesLoadSuccess(arg0) {
     let applicationId;
     let entries;
     let obj = {};
     ({ applicationId, entries } = arg0);
-    const merged = Object.assign(closure_11);
+    const merged = Object.assign(obj);
     obj = { state: "fetched", entries, fetchedAt: Date.now() };
     obj[applicationId] = obj;
-    closure_11 = obj;
   },
   SOCIAL_LAYER_STOREFRONT_ENTRIES_LOAD_FAILURE: function handleSocialLayerStorefrontEntriesLoadFailure(applicationId) {
     let obj = {};
-    const merged = Object.assign(closure_11);
+    const merged = Object.assign(obj);
     obj = { state: "error", fetchedAt: Date.now() };
     obj[applicationId.applicationId] = obj;
-    closure_11 = obj;
   },
   SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD: function handleSocialLayerStorefrontByIdLoad(storefrontId) {
     storefrontId = storefrontId.storefrontId;
     let obj = {};
-    const merged = Object.assign(closure_12);
+    const merged = Object.assign(obj);
     obj = {};
-    const merged1 = Object.assign(closure_12[storefrontId]);
+    const merged1 = Object.assign(obj[storefrontId]);
     obj["storefront"] = null;
     obj["state"] = "loading";
     obj["fetchedAt"] = null;
     obj[storefrontId] = obj;
-    closure_12 = obj;
   },
   SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD_SUCCESS: function handleSocialLayerStorefrontByIdLoadSuccess(storefront) {
     storefront = storefront.storefront;
     let obj = {};
-    const merged = Object.assign(closure_12);
+    const merged = Object.assign(obj);
     obj = { storefront, state: "fetched", fetchedAt: Date.now() };
     obj[storefront.storefrontId] = obj;
-    closure_12 = obj;
     if (null != storefront.assets) {
       obj = {};
-      const merged1 = Object.assign(closure_14);
+      const merged1 = Object.assign(obj);
       const merged2 = Object.assign(storefront.assets);
-      closure_14 = obj;
     }
   },
   SOCIAL_LAYER_STOREFRONT_BY_ID_LOAD_FAILURE: function handleSocialLayerStorefrontByIdLoadFailure(storefrontId) {
     let obj = {};
-    const merged = Object.assign(closure_12);
-    obj = { "Null": "{}", "Null": "Simulated failure", fetchedAt: Date.now() };
+    const merged = Object.assign(obj);
+    obj = { storefront: null, state: "error", fetchedAt: Date.now() };
     obj[storefrontId.storefrontId] = obj;
-    closure_12 = obj;
   },
   SOCIAL_LAYER_STOREFRONT_SET_PREVIEW: function handleSocialLayerStorefrontSetPreview(storefrontId) {
     storefrontId = storefrontId.storefrontId;
-    const merged = Object.assign(closure_13);
-    closure_13 = {};
+    const obj = {};
+    const merged = Object.assign(obj);
     if (null == storefrontId) {
-      delete r0[r1];
+      delete tmp[tmp2];
     } else {
-      closure_13[storefrontId.applicationId] = storefrontId;
+      obj[storefrontId.applicationId] = storefrontId;
     }
   },
-  SOCIAL_LAYER_STOREFRONT_AFFINITY_FETCH_START: function handleSocialLayerStorefrontAffinityFetchStart() {
-    let closure_28 = { state: "loading" };
+  SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT_FETCH_SUCCESS: function handleLaunchAnnouncementFetchSuccess(config) {
+    config = config.config;
   },
-  SOCIAL_LAYER_STOREFRONT_AFFINITY_FETCH_SUCCESS: function handleSocialLayerStorefrontAffinityFetchSuccess(affinity) {
-    let closure_28 = { state: "success", affinity: affinity.affinity };
-  },
-  SOCIAL_LAYER_STOREFRONT_AFFINITY_FETCH_FAILURE: function handleSocialLayerStorefrontAffinityFetchFailure() {
-    let closure_28 = { state: "error" };
+  SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT_FETCH_FAILURE: function handleLaunchAnnouncementFetchFailure() {
+    let c27 = null;
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontStore.tsx");
+let result = set.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontStore.tsx");
 
 export default tmp5;

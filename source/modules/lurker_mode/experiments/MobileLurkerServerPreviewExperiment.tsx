@@ -1,13 +1,14 @@
-// Module ID: 5693
-// Function ID: 49044
+// Module ID: 5698
+// Function ID: 49071
 // Name: MobileLurkerServerPreviewExperiment
-// Dependencies: []
+// Dependencies: [1325, 2]
 // Exports: getMobileLurkerServerPreview, useMobileLurkerServerPreview
 
-// Module 5693 (MobileLurkerServerPreviewExperiment)
-const obj = { y: 7, DateToSystemTimezoneSetter: 6, defaultConfig: { ầ: true, ằ: true }, variations: { [1]: { ầ: "<string:1040334421>", ằ: "<string:1040334338>" }, [2]: { ầ: null, ằ: null } } };
-const tmp2 = importDefault(dependencyMap[0])(obj);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/lurker_mode/experiments/MobileLurkerServerPreviewExperiment.tsx");
+// Module 5698 (MobileLurkerServerPreviewExperiment)
+const obj = { name: "2026-05-mobile-lurker-server-preview", kind: "user", defaultConfig: { enabled: false, stickyLurk: false }, variations: { [1]: { enabled: true, stickyLurk: false }, [2]: { enabled: true, stickyLurk: true } } };
+const tmp2 = require("getUnitId")(obj);
+let closure_0 = tmp2;
+const result = require("set").fileFinishedImporting("modules/lurker_mode/experiments/MobileLurkerServerPreviewExperiment.tsx");
 
 export default tmp2;
 export const MobileLurkerServerPreviewExperiment = tmp2;

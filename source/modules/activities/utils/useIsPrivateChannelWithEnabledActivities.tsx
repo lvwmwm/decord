@@ -1,18 +1,20 @@
-// Module ID: 10544
-// Function ID: 82384
+// Module ID: 10554
+// Function ID: 82434
 // Name: useIsPrivateChannelWithEnabledActivities
-// Dependencies: []
+// Dependencies: [1348, 624, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 10544 (useIsPrivateChannelWithEnabledActivities)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/activities/utils/useIsPrivateChannelWithEnabledActivities.tsx");
+// Module 10554 (useIsPrivateChannelWithEnabledActivities)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/activities/utils/useIsPrivateChannelWithEnabledActivities.tsx");
 
 export default function useIsPrivateChannelWithEnabledActivities(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   let isPrivateResult;
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[1]).useStateFromStores(items, () => channel.getChannel(arg0));
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_2.getChannel(closure_0));
   if (null != stateFromStores) {
     isPrivateResult = stateFromStores.isPrivate();
   }
@@ -22,7 +24,7 @@ export const isPrivateChannelWithEnabledActivities = function isPrivateChannelWi
   if (null == channelId) {
     return false;
   } else {
-    const channel = channel.getChannel(channelId);
+    channel = channel.getChannel(channelId);
     let isPrivateResult;
     if (null != channel) {
       isPrivateResult = channel.isPrivate();

@@ -1,10 +1,14 @@
-// Module ID: 12571
-// Function ID: 96728
+// Module ID: 12685
+// Function ID: 98884
 // Name: isSettingsRoutePresent
-// Dependencies: []
+// Dependencies: [57, 31, 3982, 2]
 // Exports: useIsUserSettingsOpen
 
-// Module 12571 (isSettingsRoutePresent)
+// Module 12685 (isSettingsRoutePresent)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
 function isSettingsRoutePresent(rootState) {
   let routes;
   if (null != rootState) {
@@ -16,7 +20,7 @@ function isSettingsRoutePresent(rootState) {
     someResult = routes.some((name) => {
       let tmp = "settings" === name.name;
       if (!tmp) {
-        tmp = callback(name.state);
+        tmp = outer1_4(name.state);
       }
       return tmp;
     });
@@ -24,7 +28,7 @@ function isSettingsRoutePresent(rootState) {
   return someResult;
 }
 function isUserSettingsOpen() {
-  const rootNavigationRef = arg1(dependencyMap[2]).getRootNavigationRef();
+  const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {
@@ -32,28 +36,27 @@ function isUserSettingsOpen() {
   }
   return tmp2;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/user_settings/core/isUserSettingsOpen.native.tsx");
+const result = require("getRootNavigationRef").fileFinishedImporting("modules/user_settings/core/isUserSettingsOpen.native.tsx");
 
 export { isUserSettingsOpen };
 export const useIsUserSettingsOpen = function useIsUserSettingsOpen() {
+  let require;
   let tmp2;
-  [tmp2, closure_0] = callback(React.useState(isUserSettingsOpen), 2);
+  [tmp2, require] = callback(React.useState(isUserSettingsOpen), 2);
   const effect = React.useEffect(() => {
     function handleStateChange() {
       if (null != rootNavigationRef) {
-        rootNavigationRef(callback(rootNavigationRef.getRootState()));
+        rootNavigationRef(outer2_4(rootNavigationRef.getRootState()));
       }
     }
-    const rootNavigationRef = rootNavigationRef(handleStateChange[2]).getRootNavigationRef();
+    const rootNavigationRef = outer1_0(outer1_1[2]).getRootNavigationRef();
     if (null != rootNavigationRef) {
       rootNavigationRef.addListener("state", handleStateChange);
       return () => {
         rootNavigationRef.removeListener("state", handleStateChange);
       };
     }
-    const obj = rootNavigationRef(handleStateChange[2]);
+    const obj = outer1_0(outer1_1[2]);
   }, []);
   return tmp2;
 };

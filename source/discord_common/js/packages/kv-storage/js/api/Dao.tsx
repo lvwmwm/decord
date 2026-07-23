@@ -1,34 +1,34 @@
 // Module ID: 1886
-// Function ID: 21013
+// Function ID: 21014
 // Name: Dao
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [6, 7, 1887, 1889, 2]
 
 // Module 1886 (Dao)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const tmp3 = () => {
+const require = arg1;
+const tmp3 = (() => {
   class DaoTransaction {
     constructor(arg0) {
-      tmp = __exportStarResult1(this, DaoTransaction);
+      tmp = outer1_2(this, DaoTransaction);
       this.transaction = arg0;
       return;
     }
   }
-  const arg1 = DaoTransaction;
   let obj = {
     key: "put",
     value(arg0, data) {
       let Replace = arg2;
       if (arg2 === undefined) {
-        Replace = DaoTransaction(closure_1[3]).ConflictOptions.Replace;
+        Replace = DaoTransaction(outer1_1[3]).ConflictOptions.Replace;
       }
       const transaction = this.transaction;
       const items = [arg0];
       transaction.put({ key: items, data, generation: null }, Replace);
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "delete",
     value(arg0) {
@@ -48,14 +48,15 @@ const tmp3 = () => {
   obj = {
     key: "fromDatabaseTransaction",
     value(prefix, tableId, transaction) {
-      const tableTransaction = new DaoTransaction(closure_1[2]).TableTransaction(prefix, tableId, transaction);
+      const tableTransaction = new DaoTransaction(outer1_1[2]).TableTransaction(prefix, tableId, transaction);
       return new DaoTransaction(tableTransaction);
     }
   };
   const items1 = [obj];
   return callback(DaoTransaction, items, items1);
-}();
-const tmp2 = () => {
+})();
+let closure_4 = tmp3;
+const tmp2 = (() => {
   class Dao {
     constructor(arg0, arg1, arg2) {
       flag = arg3;
@@ -63,23 +64,22 @@ const tmp2 = () => {
       if (arg3 === undefined) {
         flag = true;
       }
-      tmp = __exportStarResult1(self, Dao);
+      tmp = outer1_2(self, Dao);
       self.originalPrefix = arg0;
       items = [];
       items[0] = arg0;
-      table = new Dao(closure_1[2]).Table(items, arg1, arg2, flag);
+      table = new Dao(outer1_1[2]).Table(items, arg1, arg2, flag);
       self.table = table;
       return;
     }
   }
-  const arg1 = Dao;
   let obj = {
     key: "prefix",
     get() {
       return this.table.prefix;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , ];
   obj = {
     key: "withoutLogging",
     value() {
@@ -137,7 +137,7 @@ const tmp2 = () => {
     key: "getParentId",
     value(arg0) {
       const table = this.table;
-      const items = [true, arg0];
+      const items = [null, arg0];
       return table.getParentId(items);
     }
   };
@@ -146,7 +146,7 @@ const tmp2 = () => {
     value(arg0, data) {
       let Replace = arg2;
       if (arg2 === undefined) {
-        Replace = Dao(closure_1[3]).ConflictOptions.Replace;
+        Replace = Dao(outer1_1[3]).ConflictOptions.Replace;
       }
       const table = this.table;
       const items = [arg0];
@@ -171,16 +171,16 @@ const tmp2 = () => {
   items[11] = {
     key: "transaction",
     value(arg0, arg1) {
-      const Dao = arg0;
+      let closure_0 = arg0;
       const table = this.table;
-      return table.transaction((arg0) => arg0(new closure_4(arg0)), arg1);
+      return table.transaction((arg0) => callback(new outer2_4(arg0)), arg1);
     }
   };
   items[12] = {
     key: "upgradeTransaction",
     value(arg0) {
       const table = this.table;
-      return new closure_4(table.upgradeTransaction(arg0));
+      return new outer1_4(table.upgradeTransaction(arg0));
     }
   };
   items[13] = {
@@ -198,8 +198,8 @@ const tmp2 = () => {
     }
   };
   return callback(Dao, items);
-}();
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
+})();
+const result = require("prefixCell").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
 
 export const Dao = tmp2;
 export const DaoTransaction = tmp3;

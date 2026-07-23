@@ -1,14 +1,14 @@
-// Module ID: 9288
-// Function ID: 72574
+// Module ID: 9295
+// Function ID: 72615
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42, 2]
 
-// Module 9288 (__INTERNAL_VIEW_CONFIG)
+// Module 9295 (__INTERNAL_VIEW_CONFIG)
+import get from "get";
+
 const obj = { uiViewClassName: "DCDSystemMessageView", validAttributes: { row: true } };
-const _module = require(dependencyMap[0]);
-const value = _module.get("DCDSystemMessageView", () => obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/SystemMessageViewNativeComponent.tsx");
+const value = get.get("DCDSystemMessageView", () => obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/SystemMessageViewNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

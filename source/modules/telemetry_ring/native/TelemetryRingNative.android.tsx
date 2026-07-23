@@ -1,21 +1,20 @@
-// Module ID: 13001
-// Function ID: 98907
+// Module ID: 13115
+// Function ID: 101063
 // Name: TelemetryChannel
-// Dependencies: []
+// Dependencies: [13116, 2]
 
-// Module 13001 (TelemetryChannel)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/telemetry_ring/native/TelemetryRingNative.android.tsx");
+// Module 13115 (TelemetryChannel)
+const result = require("set").fileFinishedImporting("modules/telemetry_ring/native/TelemetryRingNative.android.tsx");
 
 export default {
   append(arg0, arg1, arg2, arg3, arg4) {
-    importDefault(dependencyMap[0]).append(arg0, arg1, arg2, arg3, arg4);
+    importDefault(13116).append(arg0, arg1, arg2, arg3, arg4);
   },
   snapshot(arg0, arg1, arg2, arg3) {
-    return importDefault(dependencyMap[0]).snapshot(arg0, arg1, arg2, arg3);
+    return importDefault(13116).snapshot(arg0, arg1, arg2, arg3);
   },
   clear() {
-    importDefault(dependencyMap[0]).clear();
+    importDefault(13116).clear();
   }
 };
 export const TelemetryChannel = { SENTRY: "SENTRY", NORMAL: "NORMAL", ZOOMED: "ZOOMED" };

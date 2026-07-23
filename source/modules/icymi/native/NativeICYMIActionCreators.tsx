@@ -1,15 +1,20 @@
-// Module ID: 15075
-// Function ID: 113472
-// Dependencies: []
+// Module ID: 15190
+// Function ID: 115641
+// Dependencies: [5, 653, 8320, 507, 686, 3831, 1212, 2]
 
-// Module 15075
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/icymi/native/NativeICYMIActionCreators.tsx");
+// Module 15190
+import dispatcher from "dispatcher";
+import { Endpoints } from "ME";
+
+const require = arg1;
+const result = require("generateHydrationId").fileFinishedImporting("modules/icymi/native/NativeICYMIActionCreators.tsx");
 
 export default {
   customScoreGuild(arg0) {
-    ({ guildId: closure_0, channelScores: closure_1, guildScore: closure_2 } = arg0);
+    let dependencyMap;
+    let importDefault;
+    let require;
+    ({ guildId: require, channelScores: importDefault, guildScore: dependencyMap } = arg0);
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   }

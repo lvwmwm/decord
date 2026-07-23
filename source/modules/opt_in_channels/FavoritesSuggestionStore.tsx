@@ -1,64 +1,63 @@
-// Module ID: 6757
-// Function ID: 52922
+// Module ID: 6762
+// Function ID: 52954
 // Name: _isNativeReflectConstruct
-// Dependencies: [664, 484, 1212, 2198, 2, 5, 6767, 6765, 653, 6768, 686]
+// Dependencies: [6, 7, 15, 17, 18, 1348, 1906, 4325, 566, 686, 2]
 
-// Module 6757 (_isNativeReflectConstruct)
-import module_664 from "module_664";
-import getAuthenticationPath from "getAuthenticationPath";
-import getSystemLocale from "getSystemLocale";
-import messagesProxy from "messagesProxy";
-import result2 from "result2";
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 6762 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import items from "items";
-import dispatcher from "dispatcher";
+import closure_1 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
 
 function _isNativeReflectConstruct() {
-  let module_664 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return module_664;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
 function handleChange() {
-  const channelId = channelId.getChannelId();
+  channelId = channelId.getChannelId();
   if (null != channelId) {
-    const channel = channel.getChannel(channelId);
+    channel = channel.getChannel(channelId);
     if (null != channel) {
       if (null != channel.guild_id) {
         const guild_id = channel.guild_id;
-        if (null == closure_10[channelId]) {
-          closure_10[channelId] = 0;
+        if (null == dependencyMap3[channelId]) {
+          dependencyMap3[channelId] = 0;
         }
         if (!channel.isThread()) {
-          closure_10[channelId] = closure_10[channelId] + 1;
-          if (null == closure_8[guild_id]) {
+          dependencyMap3[channelId] = dependencyMap3[channelId] + 1;
+          if (null == dependencyMap[guild_id]) {
             const _Set = Set;
             const set = new Set();
-            closure_8[guild_id] = set;
+            dependencyMap[guild_id] = set;
           }
-          if (items.isFavorite(guild_id, channelId)) {
-            closure_8[guild_id].delete(channelId);
-            const obj3 = closure_8[guild_id];
+          if (closure_7.isFavorite(guild_id, channelId)) {
+            dependencyMap[guild_id].delete(channelId);
+            const obj3 = dependencyMap[guild_id];
           } else {
-            if (null == closure_9[guild_id]) {
-              if (closure_10[channelId] > 50) {
-                closure_8[guild_id].add(channelId);
-                const obj2 = closure_8[guild_id];
+            if (null == dependencyMap2[guild_id]) {
+              if (dependencyMap3[channelId] > 50) {
+                dependencyMap[guild_id].add(channelId);
+                const obj2 = dependencyMap[guild_id];
               }
             } else {
-              const obj = closure_9[guild_id];
+              const obj = dependencyMap2[guild_id];
             }
             return flag;
           }
         }
-        delete r0[r3];
-        if (null != closure_8[guild_id]) {
-          closure_8[guild_id].delete(channelId);
-          const obj4 = closure_8[guild_id];
+        delete tmp[tmp2];
+        if (null != dependencyMap[guild_id]) {
+          dependencyMap[guild_id].delete(channelId);
+          const obj4 = dependencyMap[guild_id];
         }
       }
     }
@@ -67,19 +66,19 @@ function handleChange() {
 let closure_8 = {};
 let closure_9 = {};
 let closure_10 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class FavoritesSuggestionStore {
     constructor() {
       self = this;
       tmp = FavoritesSuggestionStore(this, FavoritesSuggestionStore);
-      obj = messagesProxy(FavoritesSuggestionStore);
-      tmp2 = getSystemLocale;
-      if (closure_11()) {
+      obj = outer1_3(FavoritesSuggestionStore);
+      tmp2 = outer1_2;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = messagesProxy;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, messagesProxy(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -88,7 +87,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let module_664 = FavoritesSuggestionStore;
   callback2(FavoritesSuggestionStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -96,9 +94,9 @@ let tmp2 = (PersistedStore) => {
       let channelOpensByChannelId;
       let dismissedSuggestions;
       let suggestedChannels;
-      this.waitFor(asyncGeneratorStep, _isNativeReflectConstruct, items);
-      const items = [_isNativeReflectConstruct];
-      this.syncWith(items, closure_12);
+      this.waitFor(outer1_5, outer1_6, outer1_7);
+      const items = [outer1_6];
+      this.syncWith(items, outer1_12);
       if (null != arg0) {
         ({ suggestedChannels, dismissedSuggestions, channelOpensByChannelId } = arg0);
         if (null != suggestedChannels) {
@@ -107,7 +105,7 @@ let tmp2 = (PersistedStore) => {
             let _Set3 = Set;
             let tmp15 = new.target;
             let tmp16 = new.target;
-            let tmp14 = closure_8;
+            let tmp14 = outer1_8;
             let set = new Set(suggestedChannels[key10016]);
             let set1 = set;
             if (null == set) {
@@ -117,6 +115,7 @@ let tmp2 = (PersistedStore) => {
               set1 = new Set();
             }
             tmp14[key10016] = set1;
+            continue;
           }
         }
         if (null != dismissedSuggestions) {
@@ -125,7 +124,7 @@ let tmp2 = (PersistedStore) => {
             let _Set4 = Set;
             let tmp20 = new.target;
             let tmp21 = new.target;
-            let tmp19 = closure_9;
+            let tmp19 = outer1_9;
             let set2 = new Set(dismissedSuggestions[key10026]);
             let set3 = set2;
             if (null == set2) {
@@ -135,15 +134,17 @@ let tmp2 = (PersistedStore) => {
               set3 = new Set();
             }
             tmp19[key10026] = set3;
+            continue;
           }
         }
         if (null == channelOpensByChannelId) {
           channelOpensByChannelId = {};
         }
+        const outer1_10 = channelOpensByChannelId;
       }
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "getSuggestedChannelId",
     value() {
@@ -159,24 +160,24 @@ let tmp2 = (PersistedStore) => {
   };
   items[2] = obj;
   return callback(FavoritesSuggestionStore, items);
-}(require("ME").PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "FavoritesSuggestionStore";
 tmp2.persistKey = "FavoritesSuggestionStore";
-tmp2 = new tmp2(require("_createForOfIteratorHelperLoose"), {
+tmp2 = new tmp2(require("dispatcher"), {
   DISMISS_FAVORITE_SUGGESTION: function handleFavoriteSuggestionDimissed(arg0) {
     let channelId;
     let guildId;
     ({ guildId, channelId } = arg0);
-    if (null == closure_9[guildId]) {
+    if (null == dependencyMap2[guildId]) {
       const _Set = Set;
       const set = new Set();
-      closure_9[guildId] = set;
+      dependencyMap2[guildId] = set;
     }
-    closure_9[guildId].add(channelId);
-    closure_8[guildId].delete(channelId);
+    dependencyMap2[guildId].add(channelId);
+    dependencyMap[guildId].delete(channelId);
     return true;
   }
 });
-const result = dispatcher.fileFinishedImporting("modules/opt_in_channels/FavoritesSuggestionStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/opt_in_channels/FavoritesSuggestionStore.tsx");
 
 export default tmp2;

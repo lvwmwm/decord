@@ -1,20 +1,20 @@
 // Module ID: 570
 // Function ID: 6917
 // Name: logger
-// Dependencies: [0, 4294967295, 4294967295, 4294967295, 0]
+// Dependencies: [6, 7, 4, 571, 2]
 
 // Module 570 (logger)
-import __exportStarResult1 from "__exportStarResult1";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-let closure_3 = importDefault(dependencyMap[1]);
-const logger = new arg1(dependencyMap[2]).Logger("Flux");
+const logger = new require("set").Logger("Flux");
 function batchEmitChanges(arg0) {
   return arg0();
 }
-let tmp3 = () => {
+let tmp3 = (() => {
   class Emitter {
     constructor() {
-      tmp = __exportStarResult1(this, Emitter);
+      tmp = outer1_2(this, Emitter);
       set = new Set();
       this.changedStores = set;
       set1 = new Set();
@@ -27,7 +27,6 @@ let tmp3 = () => {
       return;
     }
   }
-  const importAll = Emitter;
   let obj = {
     key: "destroy",
     value() {
@@ -35,16 +34,16 @@ let tmp3 = () => {
       changedStores.clear();
       const reactChangedStores = this.reactChangedStores;
       reactChangedStores.clear();
-      function batchEmitChanges(arg0) {
+      const outer1_5 = function batchEmitChanges(arg0) {
         return arg0();
-      }
+      };
     }
   };
   const items = [obj, , , , , , , , , , ];
   obj = {
     key: "injectBatchEmitChanges",
     value(arg0) {
-
+      const outer1_5 = arg0;
     }
   };
   items[1] = obj;
@@ -52,8 +51,8 @@ let tmp3 = () => {
     key: "pause",
     value() {
       let tmp = arg0;
-      const self = this;
-      const Emitter = this;
+      let self = this;
+      self = this;
       if (arg0 === undefined) {
         tmp = null;
       }
@@ -76,8 +75,8 @@ let tmp3 = () => {
     key: "resume",
     value() {
       let flag = arg0;
-      const self = this;
-      const Emitter = this;
+      let self = this;
+      self = this;
       if (arg0 === undefined) {
         flag = true;
       }
@@ -112,9 +111,9 @@ let tmp3 = () => {
   items[5] = {
     key: "emit",
     value() {
-      const Emitter = this;
+      const self = this;
       if (!tmp) {
-        callback2(() => {
+        outer1_5(() => {
           self.isBatchEmitting = true;
           self.changeSentinel = self.changeSentinel + 1;
           let num = 0;
@@ -128,7 +127,7 @@ let tmp3 = () => {
               let tmp20 = set1;
               let emitNonReactOnceResult = self.emitNonReactOnce(set, tmp3);
             }
-            closure_4.error("LastFewActions", self(closure_1[3]).serialize());
+            outer2_4.error("LastFewActions", Emitter(outer2_1[3]).serialize());
             const _Error2 = Error;
             throw Error("change emit loop detected, aborting");
           }
@@ -139,7 +138,7 @@ let tmp3 = () => {
               let tmp8 = self;
               let emitReactOnceResult = self.emitReactOnce();
             }
-            closure_4.error("LastFewActions", self(closure_1[3]).serialize());
+            outer2_4.error("LastFewActions", Emitter(outer2_1[3]).serialize());
             const _Error = Error;
             throw Error("react change emit loop detected, aborting");
           }
@@ -184,12 +183,14 @@ let tmp3 = () => {
   items[9] = {
     key: "emitNonReactOnce",
     value(arg0, arg1) {
-      const Emitter = this;
+      const self = this;
+      let closure_1 = arg0;
+      let _classCallCheck = arg1;
       const timestamp = Date.now();
-      const changedStores = this.changedStores;
+      let changedStores = this.changedStores;
       this.changedStores = new Set();
-      const item = changedStores.forEach((_changeCallbacks) => {
-        arg1.add(_changeCallbacks);
+      let item = changedStores.forEach((_changeCallbacks) => {
+        set.add(_changeCallbacks);
         _changeCallbacks._changeCallbacks.invokeAll();
         const changedStores = self.changedStores;
         changedStores.delete(_changeCallbacks);
@@ -200,12 +201,12 @@ let tmp3 = () => {
           let func;
           let store;
           ({ func, store } = arg0);
-          if (!set.has(func)) {
-            set.add(func);
+          if (!outer1_1.has(func)) {
+            outer1_1.add(func);
             if (false !== func()) {
-              if (!set2.has(store)) {
-                set2.add(store);
-                closure_0.markChanged(store);
+              if (!outer1_2.has(store)) {
+                outer1_2.add(store);
+                outer1_0.markChanged(store);
               }
             }
           }
@@ -215,17 +216,17 @@ let tmp3 = () => {
       if (timestamp1 - timestamp > 100) {
         const _HermesInternal = HermesInternal;
         const combined = "Slow batch emitChanges took " + timestamp1 - timestamp + "ms recentActions:";
-        closure_4.verbose(combined, Emitter(arg0[3]).serialize());
-        const obj = Emitter(arg0[3]);
+        outer1_4.verbose(combined, Emitter(outer1_1[3]).serialize());
+        const obj = Emitter(outer1_1[3]);
       }
     }
   };
   items[10] = {
     key: "emitReactOnce",
     value() {
-      const Emitter = this;
+      const self = this;
       const timestamp = Date.now();
-      const reactChangedStores = this.reactChangedStores;
+      let reactChangedStores = this.reactChangedStores;
       this.reactChangedStores = new Set();
       const item = reactChangedStores.forEach((_reactChangeCallbacks) => {
         _reactChangeCallbacks._reactChangeCallbacks.invokeAll();
@@ -236,14 +237,14 @@ let tmp3 = () => {
       if (timestamp1 - timestamp > 100) {
         const _HermesInternal = HermesInternal;
         const combined = "Slow batch emitReactChanges took " + timestamp1 - timestamp + "ms recentActions:";
-        closure_4.verbose(combined, Emitter(closure_1[3]).serialize());
-        const obj = Emitter(closure_1[3]);
+        outer1_4.verbose(combined, Emitter(outer1_1[3]).serialize());
+        const obj = Emitter(outer1_1[3]);
       }
     }
   };
   return callback(Emitter, items);
-}();
+})();
 tmp3 = new tmp3();
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/flux/Emitter.tsx");
+const result = require("log").fileFinishedImporting("../discord_common/js/packages/flux/Emitter.tsx");
 
 export default tmp3;

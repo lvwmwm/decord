@@ -1,35 +1,39 @@
-// Module ID: 9896
-// Function ID: 76590
+// Module ID: 9903
+// Function ID: 76631
 // Name: ShareChatInput
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 477, 7934, 7503, 1212, 4660, 8007, 2]
 // Exports: default
 
-// Module 9896 (ShareChatInput)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
+// Module 9903 (ShareChatInput)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 let num = 2;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.REDESIGN_CHAT_INPUT_BACKGROUND, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
-obj.container = obj;
-const obj1 = { zIndex: "gr", style: null, source: "Group 2", disableFocus: 1, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_4 };
-obj.chatInput = obj1;
-const obj2 = { fontFamily: arg1(dependencyMap[2]).Fonts.PRIMARY_NORMAL, color: importDefault(dependencyMap[5]).colors.TEXT_STRONG };
-const tmp3 = arg1(dependencyMap[3]);
-if (obj6.isAndroid()) {
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHAT_INPUT_BACKGROUND, borderRadius: 20, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+const obj1 = { flex: 1, paddingVertical: 0, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, maxHeight: 80 };
+_createForOfIteratorHelperLoose.chatInput = obj1;
+const obj2 = { fontSize: 16, lineHeight: 20, fontFamily: require("ME").Fonts.PRIMARY_NORMAL, color: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG };
+if (set.isAndroid()) {
   num = 0;
 }
-obj2.paddingTop = importDefault(dependencyMap[5]).space.PX_8 + num;
-obj2.paddingBottom = importDefault(dependencyMap[5]).space.PX_8;
-obj.chatText = obj2;
-const obj6 = arg1(dependencyMap[6]);
-obj.inputPlaceholder = { color: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
-const obj3 = { color: importDefault(dependencyMap[5]).colors.TEXT_MUTED };
-obj.emojiButton = { paddingTop: importDefault(dependencyMap[5]).space.PX_8, paddingBottom: importDefault(dependencyMap[5]).space.PX_8, alignSelf: "flex-end" };
-let closure_6 = obj.createStyles(obj);
-const obj4 = { paddingTop: importDefault(dependencyMap[5]).space.PX_8, paddingBottom: importDefault(dependencyMap[5]).space.PX_8, alignSelf: "flex-end" };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/share/native/ShareChatInput.tsx");
+obj2.paddingTop = require("_createForOfIteratorHelperLoose").space.PX_8 + num;
+obj2.paddingBottom = require("_createForOfIteratorHelperLoose").space.PX_8;
+_createForOfIteratorHelperLoose.chatText = obj2;
+_createForOfIteratorHelperLoose.inputPlaceholder = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+const obj3 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose.emojiButton = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, alignSelf: "flex-end" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = set.fileFinishedImporting("modules/share/native/ShareChatInput.tsx");
 
 export default function ShareChatInput(disabled) {
   let inputRef;
@@ -45,15 +49,15 @@ export default function ShareChatInput(disabled) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
-  obj = { ref: inputRef, maxLength: importDefault(dependencyMap[7])() };
-  const tmp2 = importDefault(dependencyMap[7])();
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.placeholder = intl.string(arg1(dependencyMap[9]).t.ZroO3G);
+  obj = { ref: inputRef, maxLength: importDefault(7934)() };
+  const tmp2 = importDefault(7934)();
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.placeholder = intl.string(require(1212) /* getSystemLocale */.t.ZroO3G);
   obj.placeholderTextColor = tmp.inputPlaceholder.color;
-  const intl2 = arg1(dependencyMap[9]).intl;
-  obj.accessibilityLabel = intl2.string(arg1(dependencyMap[9]).t./+MXmw);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t["/+MXmw"]);
   obj.onSubmitEditing = onSend;
   obj.onSelectionChange = onSelectionChange;
   obj.style = tmp.chatInput;
@@ -67,16 +71,16 @@ export default function ShareChatInput(disabled) {
   obj.textAlignVertical = "center";
   obj.inputTextStyle = tmp.chatText;
   obj.editable = !flag;
-  const items = [callback(importDefault(dependencyMap[8]), obj), ];
+  const items = [callback(importDefault(7503), obj), ];
   obj = {};
-  const intl3 = arg1(dependencyMap[9]).intl;
-  obj.accessibilityLabel = intl3.string(arg1(dependencyMap[9]).t.iZ7Mz9);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t.iZ7Mz9);
   obj.accessibilityRole = "button";
   obj.onPress = onPressEmoji;
   obj.style = tmp.emojiButton;
   obj.disabled = flag;
-  obj.children = callback(arg1(dependencyMap[11]).ReactionIcon, { size: "md" });
-  items[1] = callback(arg1(dependencyMap[10]).PressableOpacity, obj);
+  obj.children = callback(require(8007) /* ReactionIcon */.ReactionIcon, { size: "md" });
+  items[1] = callback(require(4660) /* PressableBase */.PressableOpacity, obj);
   obj.children = items;
   return callback2(View, obj);
 };

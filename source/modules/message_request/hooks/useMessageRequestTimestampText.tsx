@@ -1,59 +1,61 @@
-// Module ID: 15444
-// Function ID: 117843
+// Module ID: 15561
+// Function ID: 120017
 // Name: getMessageTimestampForChannel
-// Dependencies: []
+// Dependencies: [4142, 21, 11628, 566, 3712, 7023, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 15444 (getMessageTimestampForChannel)
+// Module 15561 (getMessageTimestampForChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function getMessageTimestampForChannel(loaded) {
   let lastMessageId;
   let message;
   ({ lastMessageId, message } = loaded);
   if (loaded.loaded) {
     if (null != message) {
-      let extractTimestampResult = importDefault(dependencyMap[1]).extractTimestamp(message.id);
-      const obj2 = importDefault(dependencyMap[1]);
+      let extractTimestampResult = importDefault(21).extractTimestamp(message.id);
+      const obj2 = importDefault(21);
     }
     return extractTimestampResult;
   }
   extractTimestampResult = null;
   if (null != lastMessageId) {
-    extractTimestampResult = importDefault(dependencyMap[1]).extractTimestamp(lastMessageId);
-    const obj = importDefault(dependencyMap[1]);
+    extractTimestampResult = importDefault(21).extractTimestamp(lastMessageId);
+    const obj = importDefault(21);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/message_request/hooks/useMessageRequestTimestampText.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/message_request/hooks/useMessageRequestTimestampText.tsx");
 
 export const useMessageRequestTimestampText = function useMessageRequestTimestampText(channel) {
-  const arg1 = channel;
-  let obj = arg1(dependencyMap[2]);
+  const _require = channel;
+  let obj = _require(11628);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = {};
-  const items = [closure_3];
-  obj.lastMessageId = arg1(dependencyMap[3]).useStateFromStores(items, () => closure_3.lastMessageId(arg0.id));
+  const items = [_isNativeReflectConstruct];
+  obj.lastMessageId = _require(566).useStateFromStores(items, () => outer1_3.lastMessageId(id.id));
   const merged = Object.assign(messageRequestPreview);
   const tmp3 = getMessageTimestampForChannel(obj);
   let str = "";
   if (null != tmp3) {
-    str = importDefault(dependencyMap[4])(tmp3).calendar();
-    const obj4 = importDefault(dependencyMap[4])(tmp3);
+    str = importDefault(3712)(tmp3).calendar();
+    const obj4 = importDefault(3712)(tmp3);
   }
   return str;
 };
 export const useMessageRequestRelativeTimestampText = function useMessageRequestRelativeTimestampText(channel) {
-  const arg1 = channel;
-  let obj = arg1(dependencyMap[2]);
+  const _require = channel;
+  let obj = _require(11628);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = {};
-  const items = [closure_3];
-  obj.lastMessageId = arg1(dependencyMap[3]).useStateFromStores(items, () => closure_3.lastMessageId(arg0.id));
+  const items = [_isNativeReflectConstruct];
+  obj.lastMessageId = _require(566).useStateFromStores(items, () => outer1_3.lastMessageId(id.id));
   const merged = Object.assign(messageRequestPreview);
   const tmp3 = getMessageTimestampForChannel(obj);
   let str = "";
   if (null != tmp3) {
-    str = arg1(dependencyMap[5]).getTimestampString(tmp3);
-    const obj4 = arg1(dependencyMap[5]);
+    str = _require(7023).getTimestampString(tmp3);
+    const obj4 = _require(7023);
   }
   return str;
 };

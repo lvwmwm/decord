@@ -1,20 +1,29 @@
-// Module ID: 14188
-// Function ID: 107403
+// Module ID: 14302
+// Function ID: 109559
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 3803, 14295, 2]
 
-// Module 14188 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14302 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.29xPVZ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["29xPVZ"]);
   },
-  parent: require(dependencyMap[0]).MobileSetting.CHAT,
-  useValue: require(dependencyMap[3]).IncludeStickersInAutocomplete.useSetting,
-  onValueChange: require(dependencyMap[4]).setStickerAutocomplete
+  parent: require("MobileSetting").MobileSetting.CHAT,
+  useValue: require("explicitContentFromProto").IncludeStickersInAutocomplete.useSetting,
+  onValueChange: require("trackSettingsUpdated").setStickerAutocomplete
 });
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/StickerAutocompleteSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["29xPVZ"]);
+  },
+  parent: require("MobileSetting").MobileSetting.CHAT,
+  useValue: require("explicitContentFromProto").IncludeStickersInAutocomplete.useSetting,
+  onValueChange: require("trackSettingsUpdated").setStickerAutocomplete
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/StickerAutocompleteSetting.tsx");
 
 export default toggle;

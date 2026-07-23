@@ -1,27 +1,27 @@
-// Module ID: 9256
-// Function ID: 72331
+// Module ID: 9263
+// Function ID: 72372
 // Name: SmsAutofillManager
-// Dependencies: []
+// Dependencies: [31, 27, 2]
 // Exports: default
 
-// Module 9256 (SmsAutofillManager)
-let closure_0 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const SmsAutofillManager = tmp2.NativeModules.SmsAutofillManager;
-const nativeEventEmitter = new tmp2.NativeEventEmitter(SmsAutofillManager);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/verification/native/hooks/useSmsAutofill.android.tsx");
+// Module 9263 (SmsAutofillManager)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+
+const SmsAutofillManager = get_ActivityIndicator.NativeModules.SmsAutofillManager;
+const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(SmsAutofillManager);
+const result = require("set").fileFinishedImporting("modules/verification/native/hooks/useSmsAutofill.android.tsx");
 
 export default function useSmsAutofill(arg0) {
   const React = arg0;
   const items = [arg0];
-  const callback = React.useCallback((code) => code(code.code), items);
-  const SmsAutofillManager = callback;
+  const callback = React.useCallback((code) => callback(code.code), items);
   const items1 = [callback];
   return React.useEffect(() => {
-    let closure_0 = closure_2.addListener("verificationCodeReceived", callback);
+    let result = outer1_2.addListener("verificationCodeReceived", callback);
     callback.startSmsRetriever();
     return () => {
-      closure_0.remove();
+      result.remove();
     };
   }, items1);
 };

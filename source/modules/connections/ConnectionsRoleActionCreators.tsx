@@ -1,43 +1,44 @@
-// Module ID: 9991
-// Function ID: 77252
+// Module ID: 9999
+// Function ID: 77292
 // Name: _putRoleConnectionsConfigurations
-// Dependencies: []
+// Dependencies: [5, 653, 507, 686, 5150, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 9991 (_putRoleConnectionsConfigurations)
+// Module 9999 (_putRoleConnectionsConfigurations)
+import set from "set";
+import { Endpoints } from "ME";
+
+const require = arg1;
 function _putRoleConnectionsConfigurations() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _putRoleConnectionsConfigurations = obj;
   return obj(...arguments);
 }
 function _fetchUserApplicationRoleConnections() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchUserApplicationRoleConnections = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/connections/ConnectionsRoleActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/connections/ConnectionsRoleActionCreators.tsx");
 
 export const fetchRoleConnectionsConfiguration = function fetchRoleConnectionsConfiguration(guildId, id) {
-  const HTTP = id(dependencyMap[2]).HTTP;
+  const _require = id;
+  const HTTP = _require(507).HTTP;
   const value = HTTP.get({ url: Endpoints.GUILD_ROLE_CONNECTIONS_CONFIGURATION(guildId, id), rejectWithError: true });
-  const obj = { url: Endpoints.GUILD_ROLE_CONNECTIONS_CONFIGURATION(guildId, id), rejectWithError: true };
+  let obj = { url: Endpoints.GUILD_ROLE_CONNECTIONS_CONFIGURATION(guildId, id), rejectWithError: true };
   value.then((body) => {
     if (body.body.length > 0) {
       body = body.body;
       const mapped = body.map((arr) => arr.map((connectionType) => ({ connectionType: connectionType.connection_type, connectionMetadataField: connectionType.connection_metadata_field, applicationId: connectionType.application_id, operator: connectionType.operator, value: connectionType.value })));
     }
-    let obj = callback(closure_2[3]);
-    obj = { type: "GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS", roleId: arg1, roleConnectionConfigurations: [] };
+    let obj = outer1_1(outer1_2[3]);
+    obj = { type: "GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS", roleId: closure_0, roleConnectionConfigurations: [] };
     obj.dispatch(obj);
   }).catch(() => {
 
   });
 };
-export const putRoleConnectionsConfigurations = function putRoleConnectionsConfigurations(closure_4, id, closure_2) {
+export const putRoleConnectionsConfigurations = function putRoleConnectionsConfigurations(id, id2, outer1_2) {
   return _putRoleConnectionsConfigurations(...arguments);
 };
 export const fetchUserApplicationRoleConnections = function fetchUserApplicationRoleConnections() {

@@ -1,45 +1,49 @@
-// Module ID: 13477
-// Function ID: 102294
+// Module ID: 13591
+// Function ID: 104450
 // Name: EditProfileThemeActionSheet
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 5500, 5186, 1212, 1273, 5503, 5165, 4098, 2]
 // Exports: default
 
-// Module 13477 (EditProfileThemeActionSheet)
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { tintColor: importDefault(dependencyMap[3]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.nitroWheel = obj;
-obj.titleWrapper = { flex: 0 };
-obj.titleContainer = { justifyContent: "flex-start" };
-let closure_5 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/profiles/native/EditProfileThemeActionSheet.tsx");
+// Module 13591 (EditProfileThemeActionSheet)
+import "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, marginLeft: 4, width: 20, height: 20 };
+_createForOfIteratorHelperLoose.nitroWheel = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.titleWrapper = { flex: 0 };
+_createForOfIteratorHelperLoose.titleContainer = { justifyContent: "flex-start" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/profiles/native/EditProfileThemeActionSheet.tsx");
 
 export default function EditProfileThemeActionSheet(onResetTheme) {
-  const arg1 = onResetTheme.onResetTheme;
-  const tmp = callback3();
+  onResetTheme = onResetTheme.onResetTheme;
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   obj = {};
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.title = intl.string(arg1(dependencyMap[6]).t.DMeO2X);
+  const intl = onResetTheme(1212).intl;
+  obj.title = intl.string(onResetTheme(1212).t.DMeO2X);
   obj = { style: tmp.nitroWheel };
-  obj.trailing = callback(arg1(dependencyMap[7]).NitroWheel, obj);
+  obj.trailing = callback(onResetTheme(1273).NitroWheel, obj);
   ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
-  const items = [callback(arg1(dependencyMap[5]).BottomSheetTitleHeader, obj), ];
+  const items = [callback(onResetTheme(5186).BottomSheetTitleHeader, obj), ];
   const obj1 = { hasIcons: false };
   const obj2 = {};
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj2.label = intl2.string(arg1(dependencyMap[6]).t.L+GmoR);
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj2.subLabel = intl3.string(arg1(dependencyMap[6]).t.MA9iNr);
+  const intl2 = onResetTheme(1212).intl;
+  obj2.label = intl2.string(onResetTheme(1212).t["L+GmoR"]);
+  const intl3 = onResetTheme(1212).intl;
+  obj2.subLabel = intl3.string(onResetTheme(1212).t.MA9iNr);
   obj2.onPress = function onPress() {
     onResetTheme();
-    callback(closure_2[10]).hideActionSheet();
+    outer1_1(outer1_2[10]).hideActionSheet();
   };
-  obj1.children = callback(arg1(dependencyMap[9]).TableRow, obj2);
-  items[1] = callback(arg1(dependencyMap[8]).TableRowGroup, obj1);
+  obj1.children = callback(onResetTheme(5165).TableRow, obj2);
+  items[1] = callback(onResetTheme(5503).TableRowGroup, obj1);
   obj.children = items;
-  return callback2(arg1(dependencyMap[4]).ActionSheet, obj);
+  return callback2(onResetTheme(5500).ActionSheet, obj);
 };

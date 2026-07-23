@@ -1,26 +1,28 @@
-// Module ID: 16419
-// Function ID: 126806
+// Module ID: 16536
+// Function ID: 128980
 // Name: AVErrorStreamSoundshareFailedDefinition
-// Dependencies: []
+// Dependencies: [4149, 4221, 653, 8857, 16528, 4194, 2]
 
-// Module 16419 (AVErrorStreamSoundshareFailedDefinition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const MediaEngineHookTypes = arg1(dependencyMap[2]).MediaEngineHookTypes;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSoundshareFailed.tsx");
+// Module 16536 (AVErrorStreamSoundshareFailedDefinition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { MediaEngineHookTypes } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSoundshareFailed.tsx");
 
 export const AVErrorStreamSoundshareFailedDefinition = {
   getActiveErrors() {
-    const currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+    currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
     let tmp2;
     if (null != currentUserActiveStream) {
       if (null != hookError.getHookError(MediaEngineHookTypes.SOUND)) {
-        const obj = { type: arg1(dependencyMap[3]).AVError.STREAM_SOUNDSHARE_FAILED };
-        const obj2 = arg1(dependencyMap[4]);
-        const merged = Object.assign(obj2.getStreamErrorContext(arg1(dependencyMap[5]).encodeStreamKey(currentUserActiveStream)));
+        const obj = { type: require(8857) /* validateUniqueErrorCodes */.AVError.STREAM_SOUNDSHARE_FAILED };
+        const obj2 = require(16528) /* getCommonErrorContext */;
+        const merged = Object.assign(obj2.getStreamErrorContext(require(4194) /* isStreamKey */.encodeStreamKey(currentUserActiveStream)));
         const items = [obj];
         tmp2 = items;
-        const obj3 = arg1(dependencyMap[5]);
+        const obj3 = require(4194) /* isStreamKey */;
       }
     }
     return tmp2;

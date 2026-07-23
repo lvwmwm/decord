@@ -1,113 +1,124 @@
-// Module ID: 12366
-// Function ID: 94580
+// Module ID: 12480
+// Function ID: 96736
 // Name: getViewerProductId
-// Dependencies: []
+// Dependencies: [31, 6663, 5621, 1851, 6648, 5624, 477, 5618, 3791, 566, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12366 (getViewerProductId)
+// Module 12480 (getViewerProductId)
+import result from "result";
+import { useNativeCheckoutStore } from "context";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import GuildFeatures from "GuildFeatures";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function getViewerProductId(subscription) {
   if (null == subscription) {
     return null;
   } else {
-    return arg1(dependencyMap[5]).getProductIdFromSubscription(tmp, false);
+    return require(6648) /* _createForOfIteratorHelperLoose */.getProductIdFromSubscription(tmp, false);
   }
 }
-let closure_2 = importAll(dependencyMap[0]);
-const useNativeCheckoutStore = arg1(dependencyMap[1]).useNativeCheckoutStore;
-let closure_4 = importDefault(dependencyMap[2]);
-({ PremiumTypes: closure_5, SubscriptionIntervalTypes: closure_6 } = arg1(dependencyMap[3]));
-const CurrencyCodes = arg1(dependencyMap[4]).CurrencyCodes;
-let closure_8 = { GuildBadgeDollarSign: "o", markAt: "o" };
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/hooks/usePremiumTier2DeltaPriceString.tsx");
+({ PremiumTypes: closure_5, SubscriptionIntervalTypes: closure_6 } = GuildFeatures);
+let closure_7 = { priceString: null, failure: null };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/hooks/usePremiumTier2DeltaPriceString.tsx");
 
 export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPriceString(plan, subscription, first, flag3) {
-  let productId = plan;
-  let currencyCode = first;
-  const callback = getViewerProductId(subscription);
-  let obj = callback(dependencyMap[11]);
-  const items = [closure_4];
+  const tmp = useNativeCheckoutStore((orderRequired) => ({ orderRequired: orderRequired.orderRequired, checkoutContext: orderRequired.getCheckoutContextRecord() }));
+  const checkoutContext = tmp.checkoutContext;
+  const _require = getViewerProductId(subscription);
+  let obj = _require(566);
+  let items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let product = null;
     if (null != closure_0) {
-      product = product.getProduct(closure_0);
+      product = outer1_4.getProduct(closure_0);
     }
     return product;
   });
-  let numPremiumGuild = flag3;
+  let obj1 = _require(477);
   let flag = false;
   if (flag3) {
     flag = false;
-    if (!tmp) {
-      numPremiumGuild = productId.premiumTier;
+    if (plan.premiumTier === TIER_2.TIER_2) {
       flag = false;
-      if (numPremiumGuild === TIER_2.TIER_2) {
-        numPremiumGuild = productId.interval;
+      if (plan.interval === constants.MONTH) {
         flag = false;
-        if (numPremiumGuild === constants.MONTH) {
-          numPremiumGuild = productId.numPremiumGuild;
-          flag = false;
-          if (numPremiumGuild >= 1) {
-            const tmp5 = getViewerProductId(subscription);
-            numPremiumGuild = null != tmp5;
-            let tmp7 = null;
-            if (numPremiumGuild) {
-              tmp7 = callback(dependencyMap[6]).AppStorePremiumProductIdsToPremiumBundledItems[tmp5];
-            }
-            let tmp10 = null != tmp7;
-            if (tmp10) {
-              tmp10 = tmp7.basePlanId === productId.basePlanId;
-            }
-            if (tmp10) {
-              tmp10 = 0 === tmp7.numPremiumGuild;
-            }
-            flag = tmp10;
+        if (plan.numPremiumGuild >= 1) {
+          let tmp6 = getViewerProductId(subscription);
+          let tmp8 = null;
+          if (null != tmp6) {
+            tmp8 = _require(5624).AppStorePremiumProductIdsToPremiumBundledItems[tmp6];
           }
+          let tmp11 = null != tmp8 && tmp8.basePlanId === plan.basePlanId;
+          if (tmp11) {
+            tmp11 = 0 === tmp8.numPremiumGuild;
+          }
+          flag = tmp11;
         }
       }
     }
   }
   if (flag) {
-    let obj4 = null;
-    if (null != currencyCode) {
-      if (obj4 != stateFromStores) {
-        numPremiumGuild = callback(dependencyMap[7]).getPlatformName();
-        if (currencyCode.currencyCode === stateFromStores.currencyCode) {
-          const diff = currencyCode.price - stateFromStores.price;
-          if (diff > 0) {
-            if (diff < currencyCode.price) {
-              obj4 = callback(dependencyMap[7]);
-              let result = diff;
-              if (obj4.isAndroid()) {
-                result = callback(dependencyMap[8]).convertToMajorCurrencyUnits(diff, CurrencyCodes.USD);
-                const obj6 = callback(dependencyMap[8]);
+    if (!tmp3) {
+      if (null != first) {
+        if (null != stateFromStores) {
+          const platformName = _require(477).getPlatformName();
+          if (first.currencyCode !== stateFromStores.currencyCode) {
+            obj = { priceString: null };
+            obj = { kind: "currency_mismatch", platform: platformName, productId: plan.productId, currencyCode: first.currencyCode };
+            obj.failure = obj;
+            let obj3 = obj;
+          } else {
+            const diff = first.price - stateFromStores.price;
+            if (diff > 0) {
+              if (diff < first.price) {
+                let obj4 = _require(477);
+                let result = diff;
+                if (obj4.isAndroid()) {
+                  result = diff / 100;
+                }
+                obj1 = {};
+                let obj6 = _require(5618);
+                const obj2 = { convertToMajorUnits: false };
+                obj1.priceString = obj6.formatPrice(result, first.currencyCode, obj2);
+                obj1.failure = null;
+                obj3 = obj1;
               }
-              obj = {};
-              obj = { convertToMajorUnits: false };
-              obj.priceString = callback(dependencyMap[9]).formatPrice(result, currencyCode.currencyCode, obj);
-              obj.failure = obj4;
-              let obj1 = obj;
-              const obj8 = callback(dependencyMap[9]);
             }
+            obj3 = { priceString: null };
+            obj4 = { kind: "delta_out_of_range", platform: platformName, productId: plan.productId, currencyCode: first.currencyCode };
+            obj3.failure = obj4;
           }
-          obj1 = { priceString: obj4 };
-          const obj2 = { kind: "delta_out_of_range", platform: numPremiumGuild, productId: productId.productId, currencyCode: currencyCode.currencyCode };
-          obj1.failure = obj2;
+          const obj14 = _require(477);
         }
-        const obj11 = callback(dependencyMap[7]);
       }
-      const obj3 = { priceString: obj4 };
-      obj4 = { kind: "currency_mismatch", platform: numPremiumGuild };
-      productId = productId.productId;
-      obj4.productId = productId;
-      currencyCode = currencyCode.currencyCode;
-      obj4.currencyCode = currencyCode;
-      obj3.failure = obj4;
-      obj1 = obj3;
+      obj3 = closure_7;
     }
-    obj1 = closure_8;
+    if (null == checkoutContext) {
+      let tmp20 = closure_7;
+    } else {
+      const availablePlanForItems = checkoutContext.getAvailablePlanForItems(_require(6648).getSubscriptionItemsForProduct(plan.productId));
+      if (null != availablePlanForItems) {
+        const addOnPrice = availablePlanForItems.getAddOnPrice();
+        if (null != addOnPrice) {
+          if (addOnPrice.majorUnits > 0) {
+            const obj5 = {};
+            obj6 = { convertToMajorUnits: false };
+            obj5.priceString = _require(5618).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, obj6);
+            obj5.failure = null;
+            tmp20 = obj5;
+            const obj12 = _require(5618);
+          }
+        }
+        tmp20 = closure_7;
+      }
+      const obj15 = _require(6648);
+    }
+    tmp20 = closure_7;
   } else {
-    function useReportDeltaFailure(failure) {
+    (function useReportDeltaFailure(failure) {
       let kind;
       if (null != failure) {
         kind = failure.kind;
@@ -125,6 +136,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
       if (null != platform) {
         tmp4 = platform;
       }
+      let closure_1 = tmp4;
       let currencyCode;
       if (null != failure) {
         currencyCode = failure.currencyCode;
@@ -133,6 +145,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
       if (null != currencyCode) {
         tmp6 = currencyCode;
       }
+      let result = tmp6;
       let productId;
       if (null != failure) {
         productId = failure.productId;
@@ -141,10 +154,11 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
       if (null != productId) {
         tmp8 = productId;
       }
+      let closure_3 = tmp8;
       const items = [tmp2, tmp4, tmp6, tmp8];
-      const effect = tmp6.useEffect(() => {
+      const effect = outer1_2.useEffect(() => {
         if (null != tmp2) {
-          let obj = tmp2(tmp4[10]);
+          let obj = tmp2(outer2_1[8]);
           const _Error = Error;
           const _HermesInternal = HermesInternal;
           const error = new Error("delta_price_integrity_" + tmp2);
@@ -152,24 +166,24 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
           obj = { source: "usePremiumTier2DeltaPriceString", delta_failure_kind: tmp2 };
           let str2 = "unknown";
           let str = "unknown";
-          if (null != tmp4) {
-            str = tmp4;
+          if (null != closure_1) {
+            str = closure_1;
           }
           obj.delta_platform = str;
-          let tmp2 = str2;
-          if (null != tmp4) {
-            tmp2 = tmp6;
+          tmp2 = str2;
+          if (null != result) {
+            tmp2 = result;
           }
           obj.delta_currency_code = tmp2;
-          if (null != tmp2) {
-            str2 = tmp8;
+          if (null != closure_3) {
+            str2 = closure_3;
           }
           obj.delta_product_id = str2;
           obj.tags = obj;
           const result = obj.captureBillingException(error, obj);
         }
       }, items);
-    }(closure_8.failure);
-    return closure_8.priceString;
+    })(closure_7.failure);
+    return closure_7.priceString;
   }
 };

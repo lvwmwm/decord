@@ -1,22 +1,25 @@
 // Module ID: 345
 // Function ID: 5062
 // Name: _combineCallbacks
-// Dependencies: [353, 6, 7, 15, 17, 102, 18, 355, 44, 39, 38, 348, 357, 356]
+// Dependencies: [346, 362, 363, 364, 365, 366, 367, 368, 358, 369, 370, 378, 379, 347, 377, 354, 380]
 
 // Module 345 (_combineCallbacks)
+const require = arg1;
+const module = arg2;
+const dependencyMap = arg6;
 function _combineCallbacks(arg0, onComplete) {
   let fn = arg0;
-  onComplete = arg0;
-  const arg2 = onComplete;
+  let closure_0 = arg0;
+  let closure_1 = onComplete;
   if (arg0) {
     if (onComplete.onComplete) {
       fn = () => {
-        if (arg1.onComplete) {
-          const onComplete = arg1.onComplete;
+        if (onComplete.onComplete) {
+          onComplete = onComplete.onComplete;
           onComplete(...arguments);
         }
-        if (arg0) {
-          arg0(...arguments);
+        if (callback) {
+          callback(...arguments);
         }
       };
     }
@@ -33,7 +36,7 @@ function maybeVectorAnim(arg0, obj, decayImpl) {
   let r;
   let x;
   let y;
-  if (arg0 instanceof decayImpl(arg6[6])) {
+  if (arg0 instanceof module(367)) {
     const _Object5 = Object;
     const merged = Object.assign({}, obj);
     const _Object6 = Object;
@@ -50,14 +53,14 @@ function maybeVectorAnim(arg0, obj, decayImpl) {
       } else {
         merged[key10062] = x;
         merged1[key10062] = y;
-        // continue
+        continue;
       }
       continue;
     }
     const items = [decayImpl(arg0.x, merged), decayImpl(arg0.y, merged1)];
     obj = { stopTogether: false };
     return parallelImpl(items, obj);
-  } else if (arg0 instanceof decayImpl(arg6[7])) {
+  } else if (arg0 instanceof module(368)) {
     const _Object = Object;
     const merged2 = Object.assign({}, obj);
     const _Object2 = Object;
@@ -86,7 +89,7 @@ function maybeVectorAnim(arg0, obj, decayImpl) {
         merged3[key10036] = g;
         merged4[key10036] = b;
         merged5[key10036] = a;
-        // continue
+        continue;
       }
       continue;
     }
@@ -100,18 +103,18 @@ function maybeVectorAnim(arg0, obj, decayImpl) {
   }
 }
 function springImpl(arg0, arg1) {
-  arg1 = arg0;
-  const arg2 = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   function start(stopTracking, toValue) {
-    const tmp = callback(arg2, toValue);
+    const tmp = outer1_3(arg2, toValue);
     stopTracking.stopTracking();
-    if (toValue.toValue instanceof toValue(start[8])) {
-      let tmp14 = toValue(start[9]);
+    if (toValue.toValue instanceof lib(start[8])) {
+      let tmp14 = lib(start[9]);
       const prototype2 = tmp14.prototype;
-      tmp14 = new tmp14(stopTracking, toValue.toValue, toValue(start[10]), toValue, tmp);
+      tmp14 = new tmp14(stopTracking, toValue.toValue, lib(start[10]), toValue, tmp);
       stopTracking.track(tmp14);
     } else {
-      let tmp5 = toValue(start[10]);
+      let tmp5 = lib(start[10]);
       const prototype = tmp5.prototype;
       tmp5 = new tmp5(toValue);
       stopTracking.animate(tmp5, tmp);
@@ -121,19 +124,19 @@ function springImpl(arg0, arg1) {
   if (!tmp) {
     const obj = {
       start(arg0) {
-          start(arg0, arg1, arg0);
+          start(closure_0, closure_1, arg0);
         },
       stop() {
-          arg0.stopAnimation();
+          closure_0.stopAnimation();
         },
       reset() {
-          arg0.resetAnimation();
+          closure_0.resetAnimation();
         },
       _startNativeLoop(iterations) {
-          start(iterations, Object.assign({}, arg1, { iterations }));
+          start(closure_0, Object.assign({}, closure_1, { iterations }));
         },
       _isUsingNativeDriver() {
-          return arg1.useNativeDriver || false;
+          return lib.useNativeDriver || false;
         }
     };
     tmp = obj;
@@ -141,18 +144,18 @@ function springImpl(arg0, arg1) {
   return tmp;
 }
 function timingImpl(arg0, arg1) {
-  arg1 = arg0;
-  const arg2 = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   function start(stopTracking, toValue) {
-    const tmp = callback(arg2, toValue);
+    const tmp = outer1_3(arg2, toValue);
     stopTracking.stopTracking();
-    if (toValue.toValue instanceof toValue(start[8])) {
-      let tmp14 = toValue(start[9]);
+    if (toValue.toValue instanceof lib(start[8])) {
+      let tmp14 = lib(start[9]);
       const prototype2 = tmp14.prototype;
-      tmp14 = new tmp14(stopTracking, toValue.toValue, toValue(start[11]), toValue, tmp);
+      tmp14 = new tmp14(stopTracking, toValue.toValue, lib(start[11]), toValue, tmp);
       stopTracking.track(tmp14);
     } else {
-      let tmp5 = toValue(start[11]);
+      let tmp5 = lib(start[11]);
       const prototype = tmp5.prototype;
       tmp5 = new tmp5(toValue);
       stopTracking.animate(tmp5, tmp);
@@ -162,19 +165,19 @@ function timingImpl(arg0, arg1) {
   if (!tmp) {
     const obj = {
       start(arg0, isLooping) {
-          start(arg0, Object.assign({}, isLooping, { isLooping }), arg0);
+          start(closure_0, Object.assign({}, closure_1, { isLooping }), arg0);
         },
       stop() {
-          arg0.stopAnimation();
+          closure_0.stopAnimation();
         },
       reset() {
-          arg0.resetAnimation();
+          closure_0.resetAnimation();
         },
       _startNativeLoop(iterations) {
-          start(iterations, Object.assign({}, arg1, { iterations }));
+          start(closure_0, Object.assign({}, closure_1, { iterations }));
         },
       _isUsingNativeDriver() {
-          return arg1.useNativeDriver || false;
+          return lib.useNativeDriver || false;
         }
     };
     tmp = obj;
@@ -182,31 +185,31 @@ function timingImpl(arg0, arg1) {
   return tmp;
 }
 function decayImpl(arg0, arg1) {
-  arg1 = arg0;
-  const arg2 = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   function start(stopTracking) {
     stopTracking.stopTracking();
-    let tmp3 = arg1(start[12]);
+    let tmp3 = lib(start[12]);
     tmp3 = new tmp3(arg1);
-    stopTracking.animate(tmp3, callback(arg2, arg1));
+    stopTracking.animate(tmp3, outer1_3(arg2, arg1));
   }
   let tmp = maybeVectorAnim(arg0, arg1, decayImpl);
   if (!tmp) {
     const obj = {
       start(arg0) {
-          start(arg0, arg1, arg0);
+          start(closure_0, closure_1, arg0);
         },
       stop() {
-          arg0.stopAnimation();
+          closure_0.stopAnimation();
         },
       reset() {
-          arg0.resetAnimation();
+          closure_0.resetAnimation();
         },
       _startNativeLoop(iterations) {
-          start(iterations, Object.assign({}, arg1, { iterations }));
+          start(closure_0, Object.assign({}, closure_1, { iterations }));
         },
       _isUsingNativeDriver() {
-          return arg1.useNativeDriver || false;
+          return lib.useNativeDriver || false;
         }
     };
     tmp = obj;
@@ -214,51 +217,52 @@ function decayImpl(arg0, arg1) {
   return tmp;
 }
 function sequenceImpl(arg0) {
-  const arg1 = arg0;
-  let closure_1 = 0;
+  let closure_0 = arg0;
+  let c1 = 0;
   return {
     start(arg0, arg1) {
+      let closure_0 = arg0;
       let closure_1 = arg1;
       function onComplete(finished) {
         if (finished.finished) {
           const sum = closure_1 + 1;
           closure_1 = sum;
-          if (sum === finished.length) {
+          if (sum === lib.length) {
             closure_1 = 0;
-            if (finished) {
-              finished(finished);
+            if (lib) {
+              lib(finished);
             }
           } else {
-            finished[closure_1].start(onComplete, closure_1);
-            const obj = finished[closure_1];
+            lib[closure_1].start(onComplete, closure_1);
+            const obj = lib[closure_1];
           }
-        } else if (finished) {
-          finished(finished);
+        } else if (lib) {
+          lib(finished);
         }
       }
-      if (0 === arg0.length) {
+      if (0 === closure_0.length) {
         if (arg0) {
           let obj = { finished: true };
           arg0(obj);
         }
       } else {
-        obj = arg0[closure_1];
+        obj = closure_0[closure_1];
         obj.start(onComplete, arg1);
       }
     },
     stop() {
-      if (closure_1 < arg0.length) {
-        arg0[closure_1].stop();
-        const obj = arg0[closure_1];
+      if (c1 < closure_0.length) {
+        closure_0[c1].stop();
+        const obj = closure_0[c1];
       }
     },
     reset() {
-      const item = arg0.forEach((reset) => {
-        if (arg1 <= closure_1) {
+      const item = closure_0.forEach((reset) => {
+        if (arg1 <= c1) {
           reset.reset();
         }
       });
-      let closure_1 = 0;
+      let c1 = 0;
     },
     _startNativeLoop() {
       const error = new Error("Loops run using the native driver cannot contain Animated.sequence animations");
@@ -270,58 +274,59 @@ function sequenceImpl(arg0) {
   };
 }
 function parallelImpl(items, stopTogether) {
-  stopTogether = items;
-  let closure_1 = 0;
+  let closure_0 = items;
+  let c1 = 0;
   let closure_2 = {};
   let tmp = stopTogether;
   if (stopTogether) {
     tmp = false === stopTogether.stopTogether;
   }
   let closure_3 = !tmp;
-  const obj = {
+  let obj = {
     start(arg0, arg1) {
+      const items = arg0;
       let closure_1 = arg1;
-      if (closure_1 !== arg0.length) {
-        const item = arg0.forEach((start) => {
-          start = arg1;
+      if (closure_1 !== items.length) {
+        const item = items.forEach((start) => {
+          let closure_0 = arg1;
           function cb(finished) {
-            closure_2[arg1] = true;
+            outer2_2[lib] = true;
             const sum = closure_1 + 1;
             closure_1 = sum;
-            if (sum === arg1.length) {
+            if (sum === lib.length) {
               closure_1 = 0;
-              if (arg1) {
-                arg1(finished);
+              if (lib) {
+                lib(finished);
               }
             } else if (tmp2) {
-              closure_4.stop();
+              outer2_4.stop();
             }
           }
           if (start) {
-            start.start(cb, arg1);
+            start.start(cb, closure_1);
           } else {
             const obj = { finished: true };
             cb(obj);
           }
         });
       } else if (arg0) {
-        const obj = { finished: true };
+        let obj = { finished: true };
         arg0(obj);
       }
     },
     stop() {
-      const item = arg0.forEach((stop) => {
-        if (!closure_2[arg1]) {
+      const item = items.forEach((stop) => {
+        if (!outer1_2[arg1]) {
           stop.stop();
         }
-        closure_2[arg1] = true;
+        outer1_2[arg1] = true;
       });
     },
     reset() {
-      const item = arg0.forEach((reset) => {
+      const item = items.forEach((reset) => {
         reset.reset();
-        closure_2[arg1] = false;
-        let closure_1 = 0;
+        outer1_2[arg1] = false;
+        const outer1_1 = 0;
       });
     },
     _startNativeLoop() {
@@ -332,51 +337,50 @@ function parallelImpl(items, stopTogether) {
       return false;
     }
   };
-  const maybeVectorAnim = obj;
   return obj;
 }
 function delayImpl(delay) {
-  let tmp = arg2(arg6[13]);
+  let tmp = module(347);
   tmp = new tmp(0);
-  const obj = { "Null": null, "Null": null, "Null": null, "Null": null, delay };
+  const obj = { toValue: 0, delay, duration: 0, useNativeDriver: false };
   return timingImpl(tmp, obj);
 }
 arg5.default = {
-  Value: require("A"),
-  ValueXY: require("_inherits"),
-  Color: require("module_355"),
-  Interpolation: arg2(arg6[15]),
-  Node: require("invariant"),
+  Value: require("_isNativeReflectConstruct"),
+  ValueXY: require("_isNativeReflectConstruct"),
+  Color: require("_isNativeReflectConstruct"),
+  Interpolation: require("_isNativeReflectConstruct"),
+  Node: require("_assertNativeAnimatedModule"),
   decay: decayImpl,
   timing: timingImpl,
   spring: springImpl,
   add: function addImpl(arg0, arg1) {
-    let tmp = arg2(arg6[0]);
+    let tmp = module(346);
     tmp = new tmp(arg0, arg1);
     return tmp;
   },
   subtract: function subtractImpl(arg0, arg1) {
-    let tmp = arg2(arg6[1]);
+    let tmp = module(362);
     tmp = new tmp(arg0, arg1);
     return tmp;
   },
   divide: function divideImpl(arg0, arg1) {
-    let tmp = arg2(arg6[2]);
+    let tmp = module(363);
     tmp = new tmp(arg0, arg1);
     return tmp;
   },
   multiply: function multiplyImpl(arg0, arg1) {
-    let tmp = arg2(arg6[3]);
+    let tmp = module(364);
     tmp = new tmp(arg0, arg1);
     return tmp;
   },
   modulo: function moduloImpl(arg0, arg1) {
-    let tmp = arg2(arg6[4]);
+    let tmp = module(365);
     tmp = new tmp(arg0, arg1);
     return tmp;
   },
   diffClamp: function diffClampImpl(arg0, arg1, arg2) {
-    let tmp = arg2(arg6[5]);
+    let tmp = module(366);
     tmp = new tmp(arg0, arg1, arg2);
     return tmp;
   },
@@ -384,14 +388,14 @@ arg5.default = {
   sequence: sequenceImpl,
   parallel: parallelImpl,
   stagger: function staggerImpl(arg0, arr) {
-    arr = arg0;
+    let closure_0 = arg0;
     return parallelImpl(arr.map((arg0, arg1) => {
-      const items = [callback2(arg0 * arg1), arg0];
-      return callback(items);
+      const items = [outer1_10(closure_0 * arg1), arg0];
+      return outer1_8(items);
     }));
   },
   loop: function loopImpl(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     if (arguments.length > 1) {
       if (undefined !== arguments[1]) {
         let obj = arguments[1];
@@ -401,66 +405,64 @@ arg5.default = {
       if (undefined !== iterations) {
         num = iterations;
       }
-      const arg2 = num;
       const resetBeforeIteration = obj.resetBeforeIteration;
       let closure_2 = undefined === resetBeforeIteration || resetBeforeIteration;
-      let closure_3 = false;
-      let closure_4 = 0;
+      let c3 = false;
+      let c4 = 0;
       obj = {
-        start(self) {
-            function restart(self) {
+        start(arg0) {
+            const navigation = arg0;
+            function restart() {
               if (arguments.length > 0) {
                 if (undefined !== arguments[0]) {
                   let first = arguments[0];
                 }
-                if (!closure_3) {
-                  if (closure_4 !== restart) {
+                if (!outer1_3) {
+                  if (outer1_4 !== restart) {
                     if (false !== first.finished) {
-                      closure_4 = closure_4 + 1;
-                      if (closure_2) {
-                        self.reset();
+                      outer1_4 = outer1_4 + 1;
+                      if (outer1_2) {
+                        navigation.reset();
                       }
-                      self.start(restart, -1 === restart);
+                      navigation.start(restart, -1 === restart);
                     }
                   }
                 }
-                if (self) {
-                  self(first);
+                if (navigation) {
+                  navigation(first);
                 }
               }
               first = { finished: true };
             }
-            let num = restart;
-            if (self) {
-              num = 0;
-              if (0 !== num) {
-                if (self._isUsingNativeDriver()) {
-                  self._startNativeLoop(num);
+            if (navigation) {
+              if (0 !== restart) {
+                if (navigation._isUsingNativeDriver()) {
+                  navigation._startNativeLoop(restart);
                 } else {
                   restart();
                 }
               }
             }
-            if (self) {
+            if (arg0) {
               const obj = { finished: true };
-              self(obj);
+              arg0(obj);
             }
           },
         stop() {
-            let closure_3 = true;
-            arg0.stop();
+            let c3 = true;
+            navigation.stop();
           },
         reset() {
-            let closure_4 = 0;
-            let closure_3 = false;
-            arg0.reset();
+            let c4 = 0;
+            let c3 = false;
+            navigation.reset();
           },
         _startNativeLoop() {
             const error = new Error("Loops run using the native driver cannot contain Animated.loop animations");
             throw error;
           },
         _isUsingNativeDriver() {
-            return arg0._isUsingNativeDriver();
+            return navigation._isUsingNativeDriver();
           }
       };
       return obj;
@@ -468,40 +470,40 @@ arg5.default = {
     obj = {};
   },
   event: function eventImpl(_argMapping, useNativeDriver) {
-    const animatedEvent = new useNativeDriver(arg6[14]).AnimatedEvent(_argMapping, useNativeDriver);
+    const animatedEvent = new require(377) /* attachNativeEventImpl */.AnimatedEvent(_argMapping, useNativeDriver);
     let __getHandlerResult = animatedEvent;
     if (!animatedEvent.__isNative) {
       __getHandlerResult = animatedEvent.__getHandler();
     }
     return __getHandlerResult;
   },
-  createAnimatedComponent: arg2(arg6[16]),
-  attachNativeEvent: arg1(arg6[14]).attachNativeEventImpl,
+  createAnimatedComponent: require("unstable_createAnimatedComponentWithAllowlist"),
+  attachNativeEvent: require("attachNativeEventImpl").attachNativeEventImpl,
   forkEvent: function forkEventImpl(__addListener, listener) {
-    listener = __addListener;
-    const arg2 = listener;
+    const _require = __addListener;
+    let closure_1 = listener;
     if (!__addListener) {
       return listener;
-    } else if (__addListener instanceof listener(arg6[14]).AnimatedEvent) {
+    } else if (__addListener instanceof _require(377).AnimatedEvent) {
       __addListener.__addListener(listener);
       let fn = __addListener;
     } else {
       fn = () => {
-        if ("function" === typeof arg0) {
-          arg0(...arguments);
+        if ("function" === typeof __addListener) {
+          __addListener(...arguments);
         }
-        arg1(...arguments);
+        listener(...arguments);
       };
     }
   },
   unforkEvent: function unforkEventImpl(__removeListener) {
     let tmp = __removeListener;
     if (__removeListener) {
-      tmp = __removeListener instanceof arg1(arg6[14]).AnimatedEvent;
+      tmp = __removeListener instanceof require(377) /* attachNativeEventImpl */.AnimatedEvent;
     }
     if (tmp) {
       __removeListener.__removeListener(arg1);
     }
   },
-  Event: arg1(arg6[14]).AnimatedEvent
+  Event: require("attachNativeEventImpl").AnimatedEvent
 };

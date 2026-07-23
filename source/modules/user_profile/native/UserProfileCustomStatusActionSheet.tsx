@@ -1,29 +1,32 @@
-// Module ID: 11896
-// Function ID: 92110
+// Module ID: 11908
+// Function ID: 92163
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [6851, 566, 2, 31, 27, 5509, 33, 4126, 1450, 2, 5, 57, 31, 7914, 653]
+// Dependencies: [31, 27, 1849, 5512, 33, 4130, 689, 566, 11893, 4319, 1212, 11637, 7880, 11898, 2]
 // Exports: default
 
-// Module 11896 (UserProfileCustomStatusActionSheet)
-import "_isNativeReflectConstruct";
-import { View } from "initialize";
-import result2 from "result2";
-import module_31 from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
+// Module 11908 (UserProfileCustomStatusActionSheet)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
-import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-const AVATAR_CONTAINER_SIZE = module_31.AVATAR_CONTAINER_SIZE;
-({ jsx: closure_5, jsxs: closure_6 } = get_ActivityIndicator);
-ARBITRARY_LARGE_OFFSET = {};
-ARBITRARY_LARGE_OFFSET = { flexDirection: "row", columnGap: module_31.AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: require("module_33").space.PX_16 };
-ARBITRARY_LARGE_OFFSET.statusPreviewContainer = ARBITRARY_LARGE_OFFSET;
-ARBITRARY_LARGE_OFFSET.avatarContainer = { height: AVATAR_CONTAINER_SIZE, width: AVATAR_CONTAINER_SIZE, alignItems: "center", justifyContent: "center" };
-ARBITRARY_LARGE_OFFSET.avatarStatus = { backgroundColor: require("module_33").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-const obj2 = { "Bool(false)": "password", "Bool(false)": "email", "Bool(false)": "name-prefix", marginTop: AVATAR_CONTAINER_SIZE / 2 + 10 };
-ARBITRARY_LARGE_OFFSET.customStatusBubble = obj2;
-ARBITRARY_LARGE_OFFSET = ARBITRARY_LARGE_OFFSET.createStyles(ARBITRARY_LARGE_OFFSET);
-const result = ME.fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx");
+let closure_5;
+let closure_6;
+const require = arg1;
+const AVATAR_CONTAINER_SIZE = ARBITRARY_LARGE_OFFSET.AVATAR_CONTAINER_SIZE;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", columnGap: ARBITRARY_LARGE_OFFSET.AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.statusPreviewContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.avatarContainer = { height: AVATAR_CONTAINER_SIZE, width: AVATAR_CONTAINER_SIZE, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.avatarStatus = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let obj2 = { marginTop: AVATAR_CONTAINER_SIZE / 2 + 10, flexShrink: 1, flexGrow: 1 };
+_createForOfIteratorHelperLoose.customStatusBubble = obj2;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx");
 
 export default function UserProfileCustomStatusActionSheet(user) {
   let channelId;
@@ -31,38 +34,37 @@ export default function UserProfileCustomStatusActionSheet(user) {
   let previewEmoji;
   let previewText;
   user = user.user;
-  const arg1 = user;
   ({ guildId, channelId, previewEmoji, previewText } = user);
-  const tmp = ARBITRARY_LARGE_OFFSET();
-  let obj = arg1(dependencyMap[7]);
-  const items = [result2];
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = user(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [user];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+    const currentUser = outer1_4.getCurrentUser();
     let id;
     if (null != currentUser) {
       id = currentUser.id;
     }
     return id === user.id;
   }, items1);
-  let obj1 = importDefault(dependencyMap[9]);
+  let obj1 = importDefault(4319);
   const name = obj1.useName(guildId, channelId, user);
-  const intl = arg1(dependencyMap[10]).intl;
+  const intl = user(1212).intl;
   if (stateFromStores) {
-    let stringResult = intl.string(tmp5(tmp6[10]).t.AHoLf4);
+    let stringResult = intl.string(tmp5(1212).t.AHoLf4);
   } else {
     obj = { username: name };
-    stringResult = intl.formatToPlainString(tmp5(tmp6[10]).t.pP5Aa+, obj);
+    stringResult = intl.formatToPlainString(tmp5(1212).t["pP5Aa+"], obj);
   }
   obj = { title: stringResult };
   obj1 = { style: tmp.statusPreviewContainer };
   const obj2 = { style: tmp.avatarContainer };
-  const tmp3 = importDefault(dependencyMap[8])(user.id);
-  obj2.children = callback(importDefault(dependencyMap[12]), { user, statusStyle: tmp.avatarStatus });
+  const tmp3 = importDefault(11893)(user.id);
+  obj2.children = callback(importDefault(7880), { user, statusStyle: tmp.avatarStatus });
   const items2 = [callback(View, obj2), ];
-  const obj4 = { "Null": 60, "Null": 0, "Null": 0, customStatusActivity: tmp3, style: tmp.customStatusBubble, previewEmoji, previewText };
-  items2[1] = callback(importDefault(dependencyMap[13]), obj4);
+  const obj4 = { customStatusActivity: tmp3, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText };
+  items2[1] = callback(importDefault(11898), obj4);
   obj1.children = items2;
   obj.children = callback2(View, obj1);
-  return callback(importDefault(dependencyMap[11]), obj);
+  return callback(importDefault(11637), obj);
 };

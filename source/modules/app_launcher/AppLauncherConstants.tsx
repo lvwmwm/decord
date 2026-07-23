@@ -1,11 +1,10 @@
-// Module ID: 11248
-// Function ID: 87550
+// Module ID: 11258
+// Function ID: 87600
 // Name: CommandListSortOrder
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 11248 (CommandListSortOrder)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/app_launcher/AppLauncherConstants.tsx");
+// Module 11258 (CommandListSortOrder)
+const result = require("set").fileFinishedImporting("modules/app_launcher/AppLauncherConstants.tsx");
 
 export const CommandListSortOrder = { POPULAR: 0, [0]: "POPULAR", ALPHABETICAL: 1, [1]: "ALPHABETICAL" };
 export const APP_LAUNCHER_ELEMENT_CLASSNAME = "app-launcher-element";
@@ -17,4 +16,4 @@ export const APP_LAUNCHER_PROFILE_FRIEND_ACTIVITY_ENTRY = "app-launcher-profile-
 export const APP_LAUNCHER_WIDTH = 500;
 export const APP_LAUNCHER_MAX_HEIGHT = 680;
 export const APP_LAUNCHER_HEIGHT = "min(100vh, 680px)";
-export const APP_LAUNCHER_SIZE_CSS_VARS = {};
+export const APP_LAUNCHER_SIZE_CSS_VARS = { "--custom-app-launcher-width": "500px", "--custom-app-launcher-height": "min(100vh, 680px)" };

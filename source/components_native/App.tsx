@@ -1,199 +1,199 @@
-// Module ID: 13212
-// Function ID: 100103
+// Module ID: 13326
+// Function ID: 102259
 // Name: App
-// Dependencies: []
+// Dependencies: [31, 27, 13327, 1194, 8840, 12612, 12621, 12638, 7130, 4200, 13328, 13329, 13330, 6887, 3782, 4122, 13331, 9196, 13332, 13333, 33, 13334, 1934, 13367, 4527, 13373, 13374, 13375, 13376, 6999, 13385, 7002, 13386, 13389, 7159, 13450, 10525, 10489, 8283, 13458, 13460, 13464, 13466, 13467, 13468, 13469, 4308, 13470, 477, 4696, 10804, 566, 5590, 13472, 14, 12601, 479, 13474, 10856, 13476, 14726, 2]
 // Exports: default
 
-// Module 13212 (App)
-let closure_3 = importAll(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-arg1(dependencyMap[4]);
-arg1(dependencyMap[5]);
-arg1(dependencyMap[6]);
-arg1(dependencyMap[7]);
-arg1(dependencyMap[8]);
-arg1(dependencyMap[9]);
-arg1(dependencyMap[10]);
-arg1(dependencyMap[11]);
-arg1(dependencyMap[12]);
-arg1(dependencyMap[13]);
-arg1(dependencyMap[14]);
-arg1(dependencyMap[15]);
-arg1(dependencyMap[16]);
-arg1(dependencyMap[17]);
-arg1(dependencyMap[18]);
-arg1(dependencyMap[19]);
-const jsx = arg1(dependencyMap[20]).jsx;
+// Module 13326 (App)
+import set from "set";
+import { NativeModules } from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import appDatabaseManager from "appDatabaseManager";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import module_13333 from "module_13333";
+import { jsx } from "module_13389";
+
+const require = arg1;
 if (global.__DEV__) {
-  arg1(dependencyMap[22])(dependencyMap[21], dependencyMap.paths);
+  require("getPluginOptions");
 }
-const result = arg1(dependencyMap[61]).fileFinishedImporting("components_native/App.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/App.tsx");
 
 export default function App() {
-  const renderApp = importDefault(dependencyMap[54]).renderApp;
+  const renderApp = importDefault(14).renderApp;
   renderApp.record();
-  function useManagers() {
-    const effect = React.useEffect(() => {
-      callback2(closure_2[23]).init();
-      const obj = callback2(closure_2[23]);
-      callback2(closure_2[24]).initialize();
-      const obj2 = callback2(closure_2[24]);
-      callback2(closure_2[25]).initialize();
-      const obj3 = callback2(closure_2[25]);
-      callback2(closure_2[26]).initialize();
-      const obj4 = callback2(closure_2[26]);
-      callback2(closure_2[27]).initialize();
-      const obj5 = callback2(closure_2[27]);
-      callback2(closure_2[28]).initialize();
-      const obj6 = callback2(closure_2[28]);
-      callback2(closure_2[29]).initialize();
-      const obj7 = callback2(closure_2[29]);
-      callback2(closure_2[30]).initialize();
-      const obj8 = callback2(closure_2[30]);
-      callback2(closure_2[31]).init();
-      const obj9 = callback2(closure_2[31]);
-      callback2(closure_2[32]).init();
-      const obj10 = callback2(closure_2[32]);
-      callback2(closure_2[33]).init();
-      const obj11 = callback2(closure_2[33]);
-      callback2(closure_2[34]).initialize();
-      const obj12 = callback2(closure_2[34]);
-      callback2(closure_2[35]).initialize();
-      const obj13 = callback2(closure_2[35]);
-      callback2(closure_2[36]).initialize();
-      const obj14 = callback2(closure_2[36]);
-      callback2(closure_2[37]).initialize();
-      const obj15 = callback2(closure_2[37]);
-      callback2(closure_2[38]).initialize();
-      const obj16 = callback2(closure_2[38]);
-      callback2(closure_2[39]).initialize();
-      const obj17 = callback2(closure_2[39]);
-      callback2(closure_2[40]).initialize();
-      const obj18 = callback2(closure_2[40]);
-      callback2(closure_2[41]).initialize();
-      closure_5.ensureInitialized();
-      const obj19 = callback2(closure_2[41]);
-      callback2(closure_2[42]).initialize();
-      const obj20 = callback2(closure_2[42]);
-      callback2(closure_2[43]).initialize();
-      const obj21 = callback2(closure_2[43]);
-      callback2(closure_2[44]).initialize();
-      const obj22 = callback2(closure_2[44]);
-      callback2(closure_2[45]).initialize();
-      const obj23 = callback2(closure_2[45]);
-      callback2(closure_2[46]).initialize();
-      const obj24 = callback2(closure_2[46]);
-      callback2(closure_2[47]).initialize();
-      const obj25 = callback2(closure_2[47]);
+  (function useManagers() {
+    const effect = outer1_3.useEffect(() => {
+      outer2_1(outer2_2[23]).init();
+      let obj = outer2_1(outer2_2[23]);
+      outer2_1(outer2_2[24]).initialize();
+      let obj2 = outer2_1(outer2_2[24]);
+      outer2_1(outer2_2[25]).initialize();
+      let obj3 = outer2_1(outer2_2[25]);
+      outer2_1(outer2_2[26]).initialize();
+      let obj4 = outer2_1(outer2_2[26]);
+      outer2_1(outer2_2[27]).initialize();
+      let obj5 = outer2_1(outer2_2[27]);
+      outer2_1(outer2_2[28]).initialize();
+      let obj6 = outer2_1(outer2_2[28]);
+      outer2_1(outer2_2[29]).initialize();
+      let obj7 = outer2_1(outer2_2[29]);
+      outer2_1(outer2_2[30]).initialize();
+      let obj8 = outer2_1(outer2_2[30]);
+      outer2_1(outer2_2[31]).init();
+      let obj9 = outer2_1(outer2_2[31]);
+      outer2_1(outer2_2[32]).init();
+      let obj10 = outer2_1(outer2_2[32]);
+      outer2_1(outer2_2[33]).init();
+      let obj11 = outer2_1(outer2_2[33]);
+      outer2_1(outer2_2[34]).initialize();
+      let obj12 = outer2_1(outer2_2[34]);
+      outer2_1(outer2_2[35]).initialize();
+      let obj13 = outer2_1(outer2_2[35]);
+      outer2_1(outer2_2[36]).initialize();
+      let obj14 = outer2_1(outer2_2[36]);
+      outer2_1(outer2_2[37]).initialize();
+      let obj15 = outer2_1(outer2_2[37]);
+      outer2_1(outer2_2[38]).initialize();
+      const obj16 = outer2_1(outer2_2[38]);
+      outer2_1(outer2_2[39]).initialize();
+      const obj17 = outer2_1(outer2_2[39]);
+      outer2_1(outer2_2[40]).initialize();
+      const obj18 = outer2_1(outer2_2[40]);
+      outer2_1(outer2_2[41]).initialize();
+      outer2_5.ensureInitialized();
+      const obj19 = outer2_1(outer2_2[41]);
+      outer2_1(outer2_2[42]).initialize();
+      const obj20 = outer2_1(outer2_2[42]);
+      outer2_1(outer2_2[43]).initialize();
+      const obj21 = outer2_1(outer2_2[43]);
+      outer2_1(outer2_2[44]).initialize();
+      const obj22 = outer2_1(outer2_2[44]);
+      outer2_1(outer2_2[45]).initialize();
+      const obj23 = outer2_1(outer2_2[45]);
+      outer2_1(outer2_2[46]).initialize();
+      const obj24 = outer2_1(outer2_2[46]);
+      outer2_1(outer2_2[47]).initialize();
+      const obj25 = outer2_1(outer2_2[47]);
       if (obj26.isIOS()) {
-        callback2(closure_2[49]).initialize();
-        const obj27 = callback2(closure_2[49]);
+        outer2_1(outer2_2[49]).initialize();
+        const obj27 = outer2_1(outer2_2[49]);
       }
-      const obj26 = callback(closure_2[48]);
-      const result = callback(closure_2[50]).initializeRouteManagerIfNeeded();
+      obj26 = outer2_0(outer2_2[48]);
+      const result = outer2_0(outer2_2[50]).initializeRouteManagerIfNeeded();
       return () => {
-        callback2(closure_2[27]).terminate();
-        const obj = callback2(closure_2[27]);
-        callback2(closure_2[24]).terminate();
-        const obj2 = callback2(closure_2[24]);
-        callback2(closure_2[34]).terminate();
-        const obj3 = callback2(closure_2[34]);
-        callback2(closure_2[35]).terminate();
-        const obj4 = callback2(closure_2[35]);
-        callback(closure_2[50]).cleanupRouteManager();
-        const obj5 = callback(closure_2[50]);
-        callback2(closure_2[47]).terminate();
-        const obj6 = callback2(closure_2[47]);
-        callback2(closure_2[39]).terminate();
-        const obj7 = callback2(closure_2[39]);
-        callback2(closure_2[38]).terminate();
-        const obj8 = callback2(closure_2[38]);
-        callback2(closure_2[33]).terminate();
-        const obj9 = callback2(closure_2[33]);
-        callback2(closure_2[25]).terminate();
-        const obj10 = callback2(closure_2[25]);
-        callback2(closure_2[41]).terminate();
-        const obj11 = callback2(closure_2[41]);
-        callback2(closure_2[42]).terminate();
-        const obj12 = callback2(closure_2[42]);
-        callback2(closure_2[43]).terminate();
-        const obj13 = callback2(closure_2[43]);
-        callback2(closure_2[45]).terminate();
-        const obj14 = callback2(closure_2[45]);
-        callback2(closure_2[46]).terminate();
-        const obj15 = callback2(closure_2[46]);
-        callback2(closure_2[30]).terminate();
+        outer3_1(outer3_2[27]).terminate();
+        const obj = outer3_1(outer3_2[27]);
+        outer3_1(outer3_2[24]).terminate();
+        const obj2 = outer3_1(outer3_2[24]);
+        outer3_1(outer3_2[34]).terminate();
+        const obj3 = outer3_1(outer3_2[34]);
+        outer3_1(outer3_2[35]).terminate();
+        const obj4 = outer3_1(outer3_2[35]);
+        outer3_0(outer3_2[50]).cleanupRouteManager();
+        const obj5 = outer3_0(outer3_2[50]);
+        outer3_1(outer3_2[47]).terminate();
+        const obj6 = outer3_1(outer3_2[47]);
+        outer3_1(outer3_2[39]).terminate();
+        const obj7 = outer3_1(outer3_2[39]);
+        outer3_1(outer3_2[38]).terminate();
+        const obj8 = outer3_1(outer3_2[38]);
+        outer3_1(outer3_2[33]).terminate();
+        const obj9 = outer3_1(outer3_2[33]);
+        outer3_1(outer3_2[25]).terminate();
+        const obj10 = outer3_1(outer3_2[25]);
+        outer3_1(outer3_2[41]).terminate();
+        const obj11 = outer3_1(outer3_2[41]);
+        outer3_1(outer3_2[42]).terminate();
+        const obj12 = outer3_1(outer3_2[42]);
+        outer3_1(outer3_2[43]).terminate();
+        const obj13 = outer3_1(outer3_2[43]);
+        outer3_1(outer3_2[45]).terminate();
+        const obj14 = outer3_1(outer3_2[45]);
+        outer3_1(outer3_2[46]).terminate();
+        const obj15 = outer3_1(outer3_2[46]);
+        outer3_1(outer3_2[30]).terminate();
       };
     }, []);
-  }();
-  function useAuthenticated() {
-    const items = [closure_6];
-    const stateFromStores = stateFromStores(closure_2[51]).useStateFromStores(items, () => closure_6.isAuthenticated());
+  })();
+  (function useAuthenticated() {
+    const items = [outer1_6];
+    const stateFromStores = outer1_0(outer1_2[51]).useStateFromStores(items, () => outer2_6.isAuthenticated());
     const items1 = [stateFromStores];
-    const effect = React.useEffect(() => {
+    const effect = outer1_3.useEffect(() => {
       if (stateFromStores) {
-        const token = closure_6.getToken();
+        const token = outer2_6.getToken();
         if (null == token) {
           const _Error = Error;
           const error = new Error("Authenticated without a token");
           throw error;
         } else {
-          const obj = callback(closure_2[52]);
-          obj.startSession(token);
-          callback(closure_2[53]).initialize();
-          const obj2 = callback(closure_2[53]);
+          outer2_1(outer2_2[52]).startSession(token);
+          const obj = outer2_1(outer2_2[52]);
+          outer2_1(outer2_2[53]).initialize();
+          const obj2 = outer2_1(outer2_2[53]);
           if (obj3.isAndroid()) {
-            const NativePermissionManager = obj.NativePermissionManager;
+            const NativePermissionManager = outer2_4.NativePermissionManager;
             const notificationAuthorization = NativePermissionManager.requestNotificationAuthorization();
           }
           return () => {
-            callback(closure_2[53]).terminate();
+            outer3_1(outer3_2[53]).terminate();
           };
         }
       }
     }, items1);
-    const effect1 = React.useEffect(() => {
-      callback(closure_2[54]).wasAuthenticated = closure_6.isAuthenticated();
+    const effect1 = outer1_3.useEffect(() => {
+      outer2_1(outer2_2[54]).wasAuthenticated = outer2_6.isAuthenticated();
     }, []);
-  }();
-  function useChannelObfuscationPersistence() {
-    const isChannelMetadataObfuscationEnabled = isChannelMetadataObfuscationEnabled(closure_2[55]).useIsChannelMetadataObfuscationEnabled("App");
+  })();
+  (function useChannelObfuscationPersistence() {
+    const isChannelMetadataObfuscationEnabled = outer1_0(outer1_2[55]).useIsChannelMetadataObfuscationEnabled("App");
     const items = [isChannelMetadataObfuscationEnabled];
-    const effect = React.useEffect(() => {
-      const obj = isChannelMetadataObfuscationEnabled(closure_2[48]);
+    const effect = outer1_3.useEffect(() => {
       if (obj.isAndroid()) {
-        const result = callback(closure_2[56]).setUseChannelObfuscation(isChannelMetadataObfuscationEnabled);
-        const obj2 = callback(closure_2[56]);
+        const result = outer2_1(outer2_2[56]).setUseChannelObfuscation(isChannelMetadataObfuscationEnabled);
+        const obj2 = outer2_1(outer2_2[56]);
       } else {
-        const DCDFastConnectManager = obj.DCDFastConnectManager;
+        const DCDFastConnectManager = outer2_4.DCDFastConnectManager;
         const result1 = DCDFastConnectManager.setUseChannelObfuscation(isChannelMetadataObfuscationEnabled);
       }
     }, items);
-  }();
-  function useAltGatewayPersistence() {
-    const shouldUseAltGateway = shouldUseAltGateway(closure_2[57]).useShouldUseAltGateway("App");
+  })();
+  (function useAltGatewayPersistence() {
+    const shouldUseAltGateway = outer1_0(outer1_2[57]).useShouldUseAltGateway("App");
     const items = [shouldUseAltGateway];
-    const effect = React.useEffect(() => {
-      const obj = shouldUseAltGateway(closure_2[48]);
+    const effect = outer1_3.useEffect(() => {
       if (obj.isAndroid()) {
-        callback(closure_2[56]).setUseAltGateway(shouldUseAltGateway);
-        const obj2 = callback(closure_2[56]);
+        outer2_1(outer2_2[56]).setUseAltGateway(shouldUseAltGateway);
+        const obj2 = outer2_1(outer2_2[56]);
       } else {
-        const DCDFastConnectManager = obj.DCDFastConnectManager;
+        const DCDFastConnectManager = outer2_4.DCDFastConnectManager;
         DCDFastConnectManager.setUseAltGateway(shouldUseAltGateway);
       }
     }, items);
-  }();
-  const effect = React.useEffect(() => {
-    const renderAppEffect = callback(closure_2[54]).renderAppEffect;
+  })();
+  let effect = React.useEffect(() => {
+    const renderAppEffect = outer1_1(outer1_2[54]).renderAppEffect;
     return renderAppEffect.record();
   }, []);
-  let obj = { profile: arg1(dependencyMap[58]).Profiles.App };
+  let obj = { profile: require(10856) /* setLevels */.Profiles.App };
   obj = { appEntryKey: "main" };
-  const tmp7 = importDefault(dependencyMap[58]);
-  obj.children = jsx(importDefault(dependencyMap[60]), {});
-  obj.children = jsx(importDefault(dependencyMap[59]), obj);
-  return <tmp7 {...obj} />;
+  const tmp7 = importDefault(10856);
+  obj.children = jsx(importDefault(14726), {});
+  obj.children = jsx(importDefault(13476), { appEntryKey: "main" });
+  return <tmp7 appEntryKey="main" />;
 };

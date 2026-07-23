@@ -1,22 +1,23 @@
-// Module ID: 14961
-// Function ID: 112591
+// Module ID: 15077
+// Function ID: 114759
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [0, 0, 0, 0, 0, 4294967295]
+// Dependencies: [1838, 653, 566, 12900, 5641, 2]
 // Exports: default
 
-// Module 14961 (useIsEligibleForTierTemplateUpsell)
-import __exportStarResult1 from "__exportStarResult1";
-import { GuildFeatures } from "__exportStarResult1";
+// Module 15077 (useIsEligibleForTierTemplateUpsell)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { GuildFeatures } from "ME";
 
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/useIsEligibleForTierTemplateUpsell.tsx");
+const require = arg1;
+let result = require("initialize").fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/useIsEligibleForTierTemplateUpsell.tsx");
 
 export default function useIsEligibleForTierTemplateUpsell(guildId) {
-  const arg1 = guildId;
-  const items = [__exportStarResult1];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => guild.getGuild(arg0));
-  const obj = arg1(dependencyMap[2]);
+  const _require = guildId;
+  const items = [_createForOfIteratorHelperLoose];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getGuild(closure_0));
+  const obj = _require(566);
   let hasItem;
-  const guildEligibleForTierTemplates = arg1(dependencyMap[3]).useGuildEligibleForTierTemplates(guildId);
+  const guildEligibleForTierTemplates = _require(12900).useGuildEligibleForTierTemplates(guildId);
   if (null != stateFromStores) {
     const features = stateFromStores.features;
     hasItem = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
@@ -30,7 +31,7 @@ export default function useIsEligibleForTierTemplateUpsell(guildId) {
     }
     result = false === hasItem1;
   }
-  const obj2 = arg1(dependencyMap[3]);
+  const obj2 = _require(12900);
   if (result) {
     result = obj3.canManageGuildRoleSubscriptions(stateFromStores);
   }

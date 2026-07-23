@@ -1,56 +1,60 @@
-// Module ID: 3769
-// Function ID: 28954
+// Module ID: 3771
+// Function ID: 28959
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 3772, 3773, 3774, 3775, 22, 12991, 2]
 // Exports: asUnicodeEmoji
 
-// Module 3769 (_createForOfIteratorHelperLoose)
+// Module 3771 (_createForOfIteratorHelperLoose)
+import apply from "apply";
+import module_12991 from "module_12991";
+import createText from "createText";
 import module_917631 from "module_917631";
 import module_127988 from "module_127988";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -61,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -88,29 +92,29 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getEmojiObjectByName(emojiName) {
-  const tmp = arg1(dependencyMap[3]).nameToEmoji[emojiName];
+  const tmp = require(3773).nameToEmoji[emojiName];
   let tmp2 = null;
   if (null != tmp) {
-    tmp2 = arg1(dependencyMap[3]).emojis[tmp];
+    tmp2 = require(3773).emojis[tmp];
   }
   return tmp2;
 }
 function getEmojiObjectBySurrogate(surrogate) {
-  const tmp = arg1(dependencyMap[3]).surrogateToEmoji[surrogate];
+  const tmp = require(3773).surrogateToEmoji[surrogate];
   let tmp2 = null;
   if (null != tmp) {
-    tmp2 = arg1(dependencyMap[3]).emojis[tmp];
+    tmp2 = require(3773).emojis[tmp];
   }
   return tmp2;
 }
-function parseRawEmojiObject(arg0) {
-  const value = weakMap.get(arg0);
+function parseRawEmojiObject(value) {
+  value = weakMap.get(value);
   if (null != value) {
     return value;
   } else {
     const prototype = tmp4.prototype;
-    const tmp6 = new new.target(arg0);
-    const result = weakMap.set(arg0, tmp6);
+    const tmp6 = new new.target(value);
+    const result = weakMap.set(value, tmp6);
     return tmp6;
   }
 }
@@ -199,7 +203,7 @@ function findInlineEmojisFromSurrogates(text, arg1) {
           }
           num = num + 1;
           str2 = sum;
-          let tmp2 = tmp7;
+          tmp2 = tmp7;
           tmp3 = tmp8;
           str3 = sum;
           if (num >= match.length) {
@@ -259,44 +263,42 @@ function convertSurrogateToName(name, arg1) {
   }
   return combined;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = null;
+let c6 = null;
 const weakMap = new WeakMap();
-const items = ["<string:2284978177>", "<string:3718447106>", "<string:982515713>", "<string:3059744769>", "<string:773390337>"];
-const tmp3 = /^:([^\s:]+?(?:::skin-tone-\d)?):/;
-let closure_10 = /[\u200d\ud800-\udfff\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff\ufe0e\ufe0f\u270b\u2b50\u2728\u26a1\u26c5\u26c4\u2614\u2615\u26bd\u26be\u26f3\u26f5\u2693\u26fd\u26f2\u26fa\u26ea\u231a\u23f0\u231b\u23f3\u26ce\u2648\u2649\u264a\u264b\u264c\u264d\u264e\u264f\u2650\u2651\u2652\u2653\u270a\u274c\u2b55\u26d4\u2757\u2755\u2753\u2754\u2705\u274e\u267f\u23e9\u23ea\u23eb\u23ec\u2795\u2796\u2797\u27b0\u27bf\u26aa\u26ab\u25fe\u25fd\u2b1b\u2b1c\u26a7]/;
-let closure_11 = /\ud83c[\udffb-\udfff](?=\ud83c[\udffb-\udfff])|(?:[^\ud800-\udfff][\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]?|[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g;
-const tmp4 = () => {
+let items = ["\u{1F3FB}", "\u{1F3FC}", "\u{1F3FD}", "\u{1F3FE}", "\u{1F3FF}"];
+let tmp3 = /^:([^\s:]+?(?:::skin-tone-\d)?):/;
+let closure_9 = tmp3;
+const re10 = /[\u200d\ud800-\udfff\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff\ufe0e\ufe0f\u270b\u2b50\u2728\u26a1\u26c5\u26c4\u2614\u2615\u26bd\u26be\u26f3\u26f5\u2693\u26fd\u26f2\u26fa\u26ea\u231a\u23f0\u231b\u23f3\u26ce\u2648\u2649\u264a\u264b\u264c\u264d\u264e\u264f\u2650\u2651\u2652\u2653\u270a\u274c\u2b55\u26d4\u2757\u2755\u2753\u2754\u2705\u274e\u267f\u23e9\u23ea\u23eb\u23ec\u2795\u2796\u2797\u27b0\u27bf\u26aa\u26ab\u25fe\u25fd\u2b1b\u2b1c\u26a7]/;
+const re11 = /\ud83c[\udffb-\udfff](?=\ud83c[\udffb-\udfff])|(?:[^\ud800-\udfff][\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]?|[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g;
+let tmp4 = (() => {
   class Emoji {
     constructor(arg0) {
-      tmp = closure_3(this, Emoji);
+      tmp = outer1_3(this, Emoji);
       this.emojiObject = arg0;
-      this.type = Emoji(closure_2[4]).EmojiTypes.UNICODE;
+      this.type = Emoji(outer1_2[4]).EmojiTypes.UNICODE;
       this.uniqueName = arg0.names[0];
       this.surrogates = arg0.surrogates;
       this.diversityChildren = {};
       if (null != arg0.diversityChildren) {
-        tmp12 = closure_17;
-        tmp13 = closure_17(arg0.diversityChildren);
+        tmp12 = outer1_17;
+        tmp13 = outer1_17(arg0.diversityChildren);
         iter2 = tmp13();
         str = "-";
         num = 3;
         if (!iter2.done) {
           do {
-            tmp2 = closure_0;
-            tmp3 = closure_2;
-            tmp4 = closure_0(closure_2[3]).emojis[iter2.value];
+            tmp2 = Emoji;
+            tmp3 = outer1_2;
+            tmp4 = Emoji(outer1_2[3]).emojis[iter2.value];
             if (null != tmp4.diversity) {
               diversity = tmp4.diversity;
-              tmp6 = closure_0;
-              prototype = closure_0.prototype;
+              tmp6 = Emoji;
+              prototype = Emoji.prototype;
               tmp7 = new.target;
               tmp8 = new.target;
               tmp9 = tmp4;
               joined = diversity.join("-");
-              tmp10 = new closure_0(tmp4);
+              tmp10 = new Emoji(tmp4);
               tmp11 = tmp10;
               this.diversityChildren[joined] = tmp10;
             }
@@ -308,7 +310,6 @@ const tmp4 = () => {
       return;
     }
   }
-  const arg1 = Emoji;
   let obj = {
     key: "names",
     get() {
@@ -384,9 +385,9 @@ const tmp4 = () => {
     key: "defaultDiversityChild",
     get() {
       if (this.hasDiversity) {
-        if (null != closure_6) {
-          const convert = convert.convert;
-          const toCodePointResult = convert.toCodePoint(closure_6);
+        if (null != outer1_6) {
+          const convert = outer1_5.convert;
+          const toCodePointResult = convert.toCodePoint(outer1_6);
           let str = "";
           if (null != toCodePointResult) {
             str = toCodePointResult;
@@ -402,11 +403,11 @@ const tmp4 = () => {
     get() {
       const defaultDiversityChild = this.defaultDiversityChild;
       if (null != defaultDiversityChild) {
-        let uRL = callback(closure_2[5]).getURL(defaultDiversityChild.surrogates);
-        const obj2 = callback(closure_2[5]);
+        let uRL = outer1_1(outer1_2[5]).getURL(defaultDiversityChild.surrogates);
+        const obj2 = outer1_1(outer1_2[5]);
       } else {
-        uRL = callback(closure_2[5]).getURL(tmp.surrogates);
-        const obj = callback(closure_2[5]);
+        uRL = outer1_1(outer1_2[5]).getURL(tmp.surrogates);
+        const obj = outer1_1(outer1_2[5]);
       }
       return uRL;
     }
@@ -416,8 +417,8 @@ const tmp4 = () => {
     get() {
       const self = this;
       if (this.hasDiversity) {
-        if (null != closure_6) {
-          const tmp5 = callback4(closure_6);
+        if (null != outer1_6) {
+          const tmp5 = outer1_20(outer1_6);
           let first;
           if (null != tmp5) {
             first = tmp5.names[0];
@@ -441,24 +442,25 @@ const tmp4 = () => {
     key: "forEachDiversity",
     value(disambiguateEmoji) {
       if (null != this.diversityChildren) {
-        callback(closure_2[6]).each(tmp.diversityChildren, disambiguateEmoji);
-        const obj = callback(closure_2[6]);
+        outer1_1(outer1_2[6]).each(tmp.diversityChildren, disambiguateEmoji);
+        const obj = outer1_1(outer1_2[6]);
       }
     }
   };
   items[14] = {
     key: "forEachName",
     value(disambiguateEmoji) {
-      callback(closure_2[6]).each(this.names, disambiguateEmoji);
+      outer1_1(outer1_2[6]).each(this.names, disambiguateEmoji);
     }
   };
   return callback(Emoji, items);
-}();
+})();
+let closure_12 = tmp4;
 const map = new Map();
-let closure_16 = /^(?:\uDB40[\uDC61-\uDC7A])$/;
-const obj = {
+const re16 = /^(?:\uDB40[\uDC61-\uDC7A])$/;
+let obj = {
   getDefaultDiversitySurrogate() {
-    return closure_6;
+    return c6;
   },
   setDefaultDiversitySurrogate(value) {
     let tmp = null;
@@ -468,28 +470,28 @@ const obj = {
         tmp = value;
       }
     }
-    let closure_6 = tmp;
+    let c6 = tmp;
   },
   getCategories() {
-    return Object.keys(arg1(dependencyMap[3]).emojisByCategory);
+    return Object.keys(require(3773).emojisByCategory);
   },
   getByName,
   getByCategory(name) {
     let value = map.get(name);
     if (null == value) {
-      const tmp4 = arg1(dependencyMap[3]).emojisByCategory[name];
-      const emojis = arg1(dependencyMap[3]).emojis;
-      const result = importDefault(dependencyMap[5]).filterUnsupportedEmojis(emojis.slice(tmp4[0], tmp4[1]));
+      const tmp4 = require(3773).emojisByCategory[name];
+      const emojis = require(3773).emojis;
+      const result = importDefault(3775).filterUnsupportedEmojis(emojis.slice(tmp4[0], tmp4[1]));
       const mapped = result.map(parseRawEmojiObject);
       const result1 = map.set(name, mapped);
       value = mapped;
-      const obj = importDefault(dependencyMap[5]);
+      const obj = importDefault(3775);
     }
     return value;
   },
   contentHasUnicodeOrEmoji,
   translateInlineEmojiToSurrogates(emojiName) {
-    return emojiName.replace(tmp3, (arg0, arg1) => callback(arg1, arg0));
+    return emojiName.replace(closure_9, (arg0, arg1) => outer1_26(arg1, arg0));
   },
   maybeTranslateSurrogatesToInlineEmoji(text) {
     if (contentHasUnicodeOrEmoji(text)) {
@@ -520,8 +522,8 @@ const obj = {
     if (str === undefined) {
       str = "";
     }
-    if (hasOwnProperty.call(arg1(dependencyMap[7]), arg0)) {
-      str = arg1(dependencyMap[7])[arg0];
+    if (hasOwnProperty.call(require(12991), arg0)) {
+      str = require(12991)[arg0];
     }
     let combined = str;
     if (flag) {
@@ -535,32 +537,32 @@ const obj = {
   },
   forEach(arg0) {
     let iter2;
-    const tmp = _createForOfIteratorHelperLoose(arg1(dependencyMap[3]).emojis);
+    const tmp = _createForOfIteratorHelperLoose(require(3773).emojis);
     let iter = tmp();
     if (!iter.done) {
       do {
         let value = iter.value;
         let tmp2 = value.hasDiversityParent || value.hasMultiDiversityParent;
         if (!tmp2) {
-          let tmp3 = closure_21;
-          let tmp4 = arg0(closure_21(value));
+          let tmp3 = parseRawEmojiObject;
+          let tmp4 = arg0(parseRawEmojiObject(value));
         }
         iter2 = tmp();
         iter = iter2;
       } while (!iter2.done);
     }
   },
-  numDiversitySprites: arg1(dependencyMap[3]).numDiversitySprites,
-  numNonDiversitySprites: arg1(dependencyMap[3]).numNonDiversitySprites,
+  numDiversitySprites: require("module_3773").numDiversitySprites,
+  numNonDiversitySprites: require("module_3773").numNonDiversitySprites,
   EMOJI_NAME_RE: /^:([^\s:]+?(?:::skin-tone-\d)?):/,
   EMOJI_NAME_AND_DIVERSITY_RE: tmp3,
   EMOJI_SHORTCUT_RE: /^(>:\(|>:\-\(|>=\(|>=\-\(|:"\)|:\-"\)|="\)|=\-"\)|<\/3|<\\3|:\-\\|:\-\/|=\-\\|=\-\/|:'\(|:'\-\(|:,\(|:,\-\(|='\(|='\-\(|=,\(|=,\-\(|:\(|:\-\(|=\(|=\-\(|<3|♡|\]:\(|\]:\-\(|\]=\(|\]=\-\(|o:\)|O:\)|o:\-\)|O:\-\)|0:\)|0:\-\)|o=\)|O=\)|o=\-\)|O=\-\)|0=\)|0=\-\)|:'D|:'\-D|:,D|:,\-D|='D|='\-D|=,D|=,\-D|:\*|:\-\*|=\*|=\-\*|x\-\)|X\-\)|:\||:\-\||=\||=\-\||:o|:\-o|:O|:\-O|=o|=\-o|=O|=\-O|:@|:\-@|=@|=\-@|:D|:\-D|=D|=\-D|:'\)|:'\-\)|:,\)|:,\-\)|='\)|='\-\)|=,\)|=,\-\)|:\)|:\-\)|=\)|=\-\)|\]:\)|\]:\-\)|\]=\)|\]=\-\)|:,'\(|:,'\-\(|;\(|;\-\(|=,'\(|=,'\-\(|:P|:\-P|=P|=\-P|8\-\)|B\-\)|,:\(|,:\-\(|,=\(|,=\-\(|,:\)|,:\-\)|,=\)|,=\-\)|:s|:\-S|:z|:\-Z|:\$|:\-\$|=s|=\-S|=z|=\-Z|=\$|=\-\$|;\)|;\-\))/,
   hasSurrogates(tags) {
-    const obj = importDefault(dependencyMap[6]);
-    return importDefault(dependencyMap[6]).toArray(tags).some((arg0) => null != callback(closure_2[3]).surrogateToEmoji[arg0]);
+    const obj = importDefault(22);
+    return importDefault(22).toArray(tags).some((arg0) => null != outer1_0(outer1_2[3]).surrogateToEmoji[arg0]);
   }
 };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/emojis/UnicodeEmojis.tsx");
+let result = require("createText").fileFinishedImporting("modules/emojis/UnicodeEmojis.tsx");
 
 export default obj;
 export const DIVERSITY_SURROGATES = items;

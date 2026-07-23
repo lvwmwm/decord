@@ -1,32 +1,34 @@
-// Module ID: 14109
-// Function ID: 107115
+// Module ID: 14223
+// Function ID: 109271
 // Name: useDisplayNameStylesPendingName
-// Dependencies: []
+// Dependencies: [7841, 1917, 3969, 566, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 14109 (useDisplayNameStylesPendingName)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx");
+// Module 14223 (useDisplayNameStylesPendingName)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("conceal").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx");
 
 export const useDisplayNameStylesPendingName = function useDisplayNameStylesPendingName(stateFromStores, guildId) {
-  guildId = stateFromStores;
+  const _require = stateFromStores;
   const importDefault = guildId;
-  let name = importDefault(dependencyMap[2]).useName(stateFromStores);
-  const obj = importDefault(dependencyMap[2]);
-  const items = [closure_3, closure_4];
+  let name = importDefault(3969).useName(stateFromStores);
+  const obj = importDefault(3969);
+  const items = [_isNativeReflectConstruct, closure_4];
   const items1 = [guildId, stateFromStores];
-  stateFromStores = guildId(dependencyMap[3]).useStateFromStores(items, () => {
-    const pendingChanges = pendingChanges.getPendingChanges(arg1);
-    if (null != arg1) {
+  stateFromStores = _require(566).useStateFromStores(items, () => {
+    const pendingChanges = outer1_3.getPendingChanges(closure_1);
+    if (null != closure_1) {
       let pendingNickname = pendingChanges.pendingNickname;
       if (null == pendingNickname) {
         let id;
-        if (null != arg0) {
-          id = arg0.id;
+        if (null != stateFromStores) {
+          id = stateFromStores.id;
         }
-        pendingNickname = nick.getNick(arg1, id);
-        const tmp3 = arg1;
+        pendingNickname = outer1_4.getNick(closure_1, id);
+        const tmp3 = closure_1;
       }
       let pendingGlobalName = pendingNickname;
     } else {

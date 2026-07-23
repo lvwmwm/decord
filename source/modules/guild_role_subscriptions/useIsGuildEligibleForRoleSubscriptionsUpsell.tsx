@@ -1,29 +1,29 @@
-// Module ID: 14960
-// Function ID: 112587
+// Module ID: 15076
+// Function ID: 114755
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: []
+// Dependencies: [1391, 1838, 1849, 653, 566, 5642, 2]
 // Exports: default
 
-// Module 14960 (useIsGuildEligibleForRoleSubscriptionsUpsell)
-const isGuildOwner = require(dependencyMap[0]).isGuildOwner;
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const GuildFeatures = require(dependencyMap[3]).GuildFeatures;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/useIsGuildEligibleForRoleSubscriptionsUpsell.tsx");
+// Module 15076 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+import { isGuildOwner } from "isGuildOwner";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GuildFeatures } from "ME";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/useIsGuildEligibleForRoleSubscriptionsUpsell.tsx");
 
 export default function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
-  const require = arg0;
-  const items = [closure_3];
-  const stateFromStores = require(dependencyMap[4]).useStateFromStores(items, () => guild.getGuild(arg0));
-  require(dependencyMap[4]);
-  [][0] = closure_4;
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_3.getGuild(closure_0));
+  _require(566);
+  [][0] = _isNativeReflectConstruct;
   let tmp4 = null != stateFromStores;
   if (tmp4) {
     tmp4 = isGuildOwner(stateFromStores, tmp3);
   }
-  const obj = require(dependencyMap[4]);
-  const isUserInCreatorMonetizationEligibleCountry = require(dependencyMap[5]).useIsUserInCreatorMonetizationEligibleCountry();
+  const obj = _require(566);
+  const isUserInCreatorMonetizationEligibleCountry = _require(5642).useIsUserInCreatorMonetizationEligibleCountry();
   if (tmp4) {
     let hasItem;
     if (null != stateFromStores) {

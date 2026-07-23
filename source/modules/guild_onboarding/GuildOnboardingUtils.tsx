@@ -1,53 +1,66 @@
-// Module ID: 5062
-// Function ID: 43888
+// Module ID: 5065
+// Function ID: 43906
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1348, 4812, 1907, 1838, 3758, 5059, 653, 3746, 566, 1360, 4623, 5060, 3763, 1327, 620, 1832, 5066, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 5062 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5065 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_9 from "_isNativeReflectConstruct";
+import { OnboardingConnectionType } from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import { GuildMemberFlags } from "GuildMemberFlags";
+
+let closure_11;
+let closure_12;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +71,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,10 +98,10 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getChannelCoverage(arr, arr2, arr) {
-  arr2 = new Set();
-  const item = arr.forEach((options) => {
+  const set = new Set();
+  let item = arr.forEach((options) => {
     options = options.options;
-    const item = options.forEach((channelIds) => {
+    let item = options.forEach((channelIds) => {
       let tmp = null == channelIds;
       if (!tmp) {
         channelIds = channelIds.channelIds;
@@ -97,7 +110,7 @@ function getChannelCoverage(arr, arr2, arr) {
       }
       if (!tmp) {
         const item = arr.forEach((arg0) => {
-          set.add(arg0);
+          outer2_0.add(arg0);
         });
       }
     });
@@ -106,7 +119,7 @@ function getChannelCoverage(arr, arr2, arr) {
   const found = arr.filter((isCategory) => {
     let tmp = !isCategory.isCategory() && !isCategory.isThread();
     if (tmp) {
-      tmp = !callback(closure_3[10])(isCategory);
+      tmp = !outer1_1(outer1_3[10])(isCategory);
     }
     return tmp;
   });
@@ -139,12 +152,12 @@ function getChannelCoverage(arr, arr2, arr) {
 function isChattableChannel(channel) {
   let tmp = null != channel;
   if (tmp) {
-    const tmp4 = !arg1(dependencyMap[11]).canChannelBeDefault(channel.guild_id, channel.id);
+    const tmp4 = !require(5060) /* getDefaultPermissionsForChannel */.canChannelBeDefault(channel.guild_id, channel.id);
     if (tmp4) {
       tmp = !tmp4;
     } else {
       const isForumChannelResult = channel.isForumChannel();
-      const canEveryoneRole = importAll(dependencyMap[12]).canEveryoneRole;
+      const canEveryoneRole = importAll(3763).canEveryoneRole;
       let SEND_MESSAGES_IN_THREADS = closure_12;
       if (isForumChannelResult) {
         SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
@@ -152,9 +165,9 @@ function isChattableChannel(channel) {
       } else {
         canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
       }
-      const tmp8 = importAll(dependencyMap[12]);
+      const tmp8 = importAll(3763);
     }
-    const obj = arg1(dependencyMap[11]);
+    const obj = require(5060) /* getDefaultPermissionsForChannel */;
   }
   return tmp;
 }
@@ -179,9 +192,9 @@ function getFlattenedDefaultChannels(guildId, arr, arg2, fn) {
   if (!iter.done) {
     do {
       let channel = iter2.value.channel;
-      let tmp3 = closure_0;
-      let tmp4 = closure_3;
-      let obj = closure_0(closure_3[11]);
+      let tmp3 = require;
+      let tmp4 = dependencyMap;
+      let obj = require(5060) /* getDefaultPermissionsForChannel */;
       let tmp5 = tmp2;
       if (obj.canChannelBeDefault(channel.guild_id, channel.id)) {
         if (!arr.includes(channel.id)) {
@@ -201,7 +214,7 @@ function getFlattenedDefaultChannels(guildId, arr, arg2, fn) {
         }
       }
       iter3 = tmp();
-      let tmp2 = tmp5;
+      tmp2 = tmp5;
       iter2 = iter3;
     } while (!iter3.done);
   }
@@ -213,40 +226,31 @@ function areStatesEqual(arg0, arg1) {
     tmp = arg0[1].length === arg1[1].length;
   }
   if (tmp) {
-    let tmp4 = importDefault(dependencyMap[14])(arg0[0], arg1[0]);
+    let tmp4 = importDefault(620)(arg0[0], arg1[0]);
     if (tmp4) {
-      tmp4 = importDefault(dependencyMap[14])(arg0[1], arg1[1]);
+      tmp4 = importDefault(620)(arg0[1], arg1[1]);
     }
     tmp = tmp4;
   }
   return tmp;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[2]).GUILD_SELECTABLE_CHANNELS_KEY;
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-const OnboardingConnectionType = arg1(dependencyMap[5]).OnboardingConnectionType;
-({ GuildFeatures: closure_11, Permissions: closure_12 } = arg1(dependencyMap[6]));
-const GuildMemberFlags = arg1(dependencyMap[7]).GuildMemberFlags;
-const date = new Date(1682488800000);
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_onboarding/GuildOnboardingUtils.tsx");
+({ GuildFeatures: closure_11, Permissions: closure_12 } = ME);
+let date = new Date(1682488800000);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/GuildOnboardingUtils.tsx");
 
 export const ONBOARDING_EPOCH = date;
 export const useGuildOnboardingSettingsAvailable = function useGuildOnboardingSettingsAvailable(arg0) {
-  const arg1 = arg0;
-  const items = [closure_8, closure_9];
-  return arg1(dependencyMap[8]).useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose, closure_9];
+  return _require(566).useStateFromStores(items, () => {
+    const guild = outer1_8.getGuild(closure_0);
     let tmp2 = null == guild;
     if (!tmp2) {
       const features = guild.features;
-      tmp2 = !features.has(constants.COMMUNITY);
+      tmp2 = !features.has(outer1_11.COMMUNITY);
     }
     let tmp4 = !tmp2;
-    const canResult = closure_9.can(constants2.MANAGE_GUILD, guild);
+    const canResult = outer1_9.can(outer1_12.MANAGE_GUILD, guild);
     if (!tmp2) {
       tmp4 = canResult;
     }
@@ -256,8 +260,8 @@ export const useGuildOnboardingSettingsAvailable = function useGuildOnboardingSe
     return tmp4;
   });
 };
-export const isGuildOnboardingSettingsAvailable = function isGuildOnboardingSettingsAvailable(guildId) {
-  const guild = guild.getGuild(guildId);
+export const isGuildOnboardingSettingsAvailable = function isGuildOnboardingSettingsAvailable(closure_0) {
+  guild = guild.getGuild(closure_0);
   let tmp2 = null == guild;
   if (!tmp2) {
     const features = guild.features;
@@ -289,10 +293,10 @@ export const isBlockedByOnboarding = function isBlockedByOnboarding(guild, selfM
             if (null != flags) {
               num = flags;
             }
-            let hasFlagResult = importAll(dependencyMap[9]).hasFlag(num, GuildMemberFlags.STARTED_ONBOARDING);
+            let hasFlagResult = importAll(1360).hasFlag(num, GuildMemberFlags.STARTED_ONBOARDING);
             if (hasFlagResult) {
-              hasFlagResult = !importAll(dependencyMap[9]).hasFlag(num, GuildMemberFlags.COMPLETED_ONBOARDING);
-              const obj2 = importAll(dependencyMap[9]);
+              hasFlagResult = !importAll(1360).hasFlag(num, GuildMemberFlags.COMPLETED_ONBOARDING);
+              const obj2 = importAll(1360);
             }
             return hasFlagResult;
           }
@@ -323,39 +327,38 @@ export const getChannelCoverageForOnboarding = function getChannelCoverageForOnb
   return getChannelCoverage(prompts, defaultChannelIds, store.getChannels(guildId)[closure_7].map((channel) => channel.channel));
 };
 export const useChannelCoverageForOnboarding = function useChannelCoverageForOnboarding(arg0, arr, arr2) {
-  arr = arg0;
+  const _require = arg0;
   const items = [closure_6];
-  const obj = arr(dependencyMap[8]);
-  return getChannelCoverage(arr, arr2, arr(dependencyMap[8]).useStateFromStores(items, () => channels.getChannels(arg0))[closure_7].map((channel) => channel.channel));
+  const obj = _require(566);
+  return getChannelCoverage(arr, arr2, _require(566).useStateFromStores(items, () => outer1_6.getChannels(closure_0))[closure_7].map((channel) => channel.channel));
 };
 export const isChattableChannelId = function isChattableChannelId(channelId) {
   return isChattableChannel(channel.getChannel(channelId));
 };
 export { isChattableChannel };
 export const useIsChattableChannel = function useIsChattableChannel(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4];
-  return arg1(dependencyMap[8]).useStateFromStores(items, () => {
-    const channel = channel.getChannel(arg0);
-    let isNotNullishResult = arg0(closure_3[13]).isNotNullish(channel);
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
+    const channel = outer1_4.getChannel(callback);
+    let isNotNullishResult = callback(outer1_3[13]).isNotNullish(channel);
     if (isNotNullishResult) {
-      isNotNullishResult = callback(channel);
+      isNotNullishResult = outer1_18(channel);
     }
     return isNotNullishResult;
   });
 };
 export const getMinimumSetOfDefaultChannelIds = function getMinimumSetOfDefaultChannelIds(guildId, defaultChannelIds1, onboardingPromptsForOnboarding, arg3) {
   let fn = arg3;
-  defaultChannelIds1 = guildId;
+  let closure_0 = guildId;
   if (arg3 === undefined) {
     fn = function a() {
       return true;
     };
   }
-  const importDefault = fn;
-  let importAll;
-  const tmp = getFlattenedDefaultChannels(guildId, defaultChannelIds1, (id) => id.id, fn);
-  importAll = tmp;
+  let c2;
+  let tmp = getFlattenedDefaultChannels(guildId, defaultChannelIds1, (id) => id.id, fn);
+  c2 = tmp;
   const item = onboardingPromptsForOnboarding.forEach((required) => {
     if (required.required) {
       const first = required.options[0];
@@ -367,17 +370,17 @@ export const getMinimumSetOfDefaultChannelIds = function getMinimumSetOfDefaultC
         channelIds = [];
       }
       const options = required.options;
-      const push = tmp.push;
+      const push = _undefined.push;
       const items = [];
       HermesBuiltin.arraySpread(options.reduce((arg0, channelIds) => {
         let arr = arg0;
         if (null == channelIds.channelIds) {
           return [];
         } else {
-          const arr2 = callback(closure_0, channelIds.channelIds, (id) => id.id, (arg0) => {
-            let tmp = callback(arg0);
+          const arr2 = outer2_19(outer1_0, channelIds.channelIds, (id) => id.id, (arg0) => {
+            let tmp = outer2_1(arg0);
             if (tmp) {
-              tmp = !closure_2.includes(arg0);
+              tmp = !outer2_2.includes(arg0);
             }
             return tmp;
           });
@@ -386,9 +389,10 @@ export const getMinimumSetOfDefaultChannelIds = function getMinimumSetOfDefaultC
           }
           return arr;
         }
-      }, closure_19(required, channelIds, (id) => id.id)), 0);
-      HermesBuiltin.apply(items, closure_19);
-      const tmp2 = required;
+      }, outer1_19(closure_0, channelIds, (id) => id.id)), 0);
+      HermesBuiltin.apply(items, _undefined);
+      let tmp = outer1_19;
+      const tmp2 = closure_0;
     }
   });
   return tmp;
@@ -409,40 +413,41 @@ export const getChattableDefaultChannels = function getChattableDefaultChannels(
     } while (!done);
   }
   const items = [
-    function filterChattableChannels(arr, arg1) {
+    (function filterChattableChannels(arr, arg1) {
+      let closure_0 = arg1;
       return arr.filter((arg0) => {
         let channel;
-        if (null != arg1[arg0]) {
+        if (null != table[arg0]) {
           channel = tmp2.channel;
         }
-        return closure_18(channel);
+        return outer2_18(channel);
       });
-    }(arr.map((id) => id.id), obj),
+    })(arr.map((id) => id.id), obj),
     arr
   ];
   return items;
 };
 export const useChattableDefaultChannels = function useChattableDefaultChannels(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const items = [closure_6];
-  const items1 = [arg0, arg1];
-  return arg1(dependencyMap[8]).useStateFromStores(items, () => {
+  const _require = arg0;
+  let closure_1 = arg1;
+  let items = [closure_6];
+  let items1 = [arg0, arg1];
+  return _require(566).useStateFromStores(items, () => {
     let iter2;
     const items = [];
     const items1 = [];
-    const tmp = callback(channels.getChannels(arg0)[closure_7]);
+    const tmp = outer1_15(outer1_6.getChannels(callback)[outer1_7]);
     let iter = tmp();
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp2 = closure_0;
-        let tmp3 = closure_3;
-        let obj = closure_0(closure_3[11]);
+        let tmp2 = callback;
+        let tmp3 = outer1_3;
+        let obj = callback(outer1_3[11]);
         let canChannelBeDefaultResult = obj.canChannelBeDefault(value.channel.guild_id, value.channel.id);
         if (canChannelBeDefaultResult) {
-          let tmp5 = closure_1;
-          let hasItem = closure_1.has(value.channel.id);
+          let tmp5 = set;
+          let hasItem = set.has(value.channel.id);
           if (hasItem) {
             let channel = value.channel;
             hasItem = !channel.isCategory();
@@ -451,8 +456,8 @@ export const useChattableDefaultChannels = function useChattableDefaultChannels(
             let channel2 = value.channel;
             let hasItem1 = !channel2.isThread() && null != value.channel.parent_id;
             if (hasItem1) {
-              let tmp8 = closure_1;
-              hasItem1 = closure_1.has(value.channel.parent_id);
+              let tmp8 = set;
+              hasItem1 = set.has(value.channel.parent_id);
             }
             hasItem = hasItem1;
           }
@@ -461,8 +466,8 @@ export const useChattableDefaultChannels = function useChattableDefaultChannels(
         if (canChannelBeDefaultResult) {
           {}[value.channel.id] = value;
           let arr = items.push(value.channel);
-          let tmp10 = closure_18;
-          if (closure_18(value.channel)) {
+          let tmp10 = outer1_18;
+          if (outer1_18(value.channel)) {
             arr = items1.push(value.channel.id);
           }
         }
@@ -477,23 +482,21 @@ export const useChattableDefaultChannels = function useChattableDefaultChannels(
 export const getSelectedRoleIds = function getSelectedRoleIds(found) {
   const mapped = found.map((roleIds) => roleIds.roleIds);
   const flatResult = mapped.flat();
-  return new Set(mapped.flat().filter(arg1(dependencyMap[13]).isNotNullish));
+  return new Set(mapped.flat().filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish));
 };
 export const getSelectedChannelIds = function getSelectedChannelIds(found) {
   const mapped = found.map((channelIds) => channelIds.channelIds);
   const flatResult = mapped.flat();
-  return new Set(mapped.flat().filter(arg1(dependencyMap[13]).isNotNullish));
+  return new Set(mapped.flat().filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish));
 };
 export const getProviderConnectionState = function getProviderConnectionState(stateFromStores) {
-  const found = stateFromStores.filter((connection_type) => connection_type.connection_type === constants.PROVIDER_CONNECTED_ACCOUNT && connection_type.provider_id);
+  const found = stateFromStores.filter((connection_type) => connection_type.connection_type === outer1_10.PROVIDER_CONNECTED_ACCOUNT && connection_type.provider_id);
   const connected = [];
-  const arg1 = connected;
   const notConnected = [];
-  const importDefault = notConnected;
   const item = found.forEach((provider_id) => {
     provider_id = provider_id.provider_id;
     if (!obj.isNullOrEmpty(provider_id)) {
-      const account = account.getAccount(null, provider_id);
+      const account = outer1_5.getAccount(null, provider_id);
       if (null != account) {
         if (!account.revoked) {
           connected.push(provider_id);
@@ -505,13 +508,11 @@ export const getProviderConnectionState = function getProviderConnectionState(st
   return { connected, notConnected };
 };
 export const getApplicationConnectionState = function getApplicationConnectionState(stateFromStores) {
-  const found = stateFromStores.filter((connection_type) => connection_type.connection_type === constants.APPLICATION && connection_type.application_id);
+  const found = stateFromStores.filter((connection_type) => connection_type.connection_type === outer1_10.APPLICATION && connection_type.application_id);
   const connected = [];
-  const arg1 = connected;
   const notConnected = [];
-  const importDefault = notConnected;
-  let closure_2 = arg1(dependencyMap[16]).default;
-  const dependencyMap = arg1(dependencyMap[16]).FetchState;
+  let closure_2 = connected(FetchState[16]).default;
+  FetchState = connected(FetchState[16]).FetchState;
   const item = found.forEach((application_id) => {
     application_id = application_id.application_id;
     if (!obj.isNullOrEmpty(application_id)) {

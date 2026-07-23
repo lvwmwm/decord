@@ -1,5 +1,5 @@
 // Module ID: 1286
-// Function ID: 15047
+// Function ID: 15048
 // Name: parts
 // Dependencies: []
 
@@ -130,21 +130,21 @@ arg5.base64encode = function base64encode(NumberResult) {
     do {
       let tmp = NumberResult[num3];
       if (0 === num) {
-        let tmp6 = closure_0;
-        let text = `${closure_0[tmp >> 2]}`;
+        let tmp6 = parts;
+        let text = `${parts[tmp >> 2]}`;
         let tmp3 = (3 & tmp) << 4;
         num = 1;
       } else if (1 === num) {
-        let tmp5 = closure_0;
-        text = `${closure_0[num2 | tmp >> 4]}`;
+        let tmp5 = parts;
+        text = `${parts[num2 | tmp >> 4]}`;
         tmp3 = (15 & tmp) << 2;
         num = 2;
       } else {
         text = str;
         tmp3 = num2;
         if (2 === num) {
-          let tmp4 = closure_0;
-          text = `` + closure_0[num2 | tmp >> 6] + closure_0[63 & tmp];
+          let tmp4 = parts;
+          text = `` + parts[num2 | tmp >> 6] + parts[63 & tmp];
           num = 0;
           tmp3 = num2;
         }
@@ -159,10 +159,10 @@ arg5.base64encode = function base64encode(NumberResult) {
   }
   let tmp7 = str2;
   if (num4) {
-    const text1 = `${str2 + closure_0[num5]}=`;
+    const text1 = `${str2 + parts[num5]}=`;
     let text2 = text1;
     if (1 === num4) {
-      text2 = `${str2 + closure_0[num5]}==`;
+      text2 = `${str2 + parts[num5]}==`;
     }
     tmp7 = text2;
   }

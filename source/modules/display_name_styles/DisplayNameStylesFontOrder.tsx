@@ -1,18 +1,19 @@
-// Module ID: 14111
-// Function ID: 107121
+// Module ID: 14225
+// Function ID: 109277
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 1861, 1863, 8515, 2]
 // Exports: useVisibleFontOrder
 
-// Module 14111 (items)
-let closure_2 = importAll(dependencyMap[0]);
-const items = [arg1(dependencyMap[2]).DisplayNameFont.DEFAULT, arg1(dependencyMap[2]).DisplayNameFont.ZILLA_SLAB, arg1(dependencyMap[2]).DisplayNameFont.CHERRY_BOMB, arg1(dependencyMap[2]).DisplayNameFont.CHICLE, arg1(dependencyMap[2]).DisplayNameFont.MUSEO_MODERNO, arg1(dependencyMap[2]).DisplayNameFont.NEO_CASTEL, arg1(dependencyMap[2]).DisplayNameFont.PIXELIFY, arg1(dependencyMap[2]).DisplayNameFont.SINISTRE];
-const items1 = [...arg1(dependencyMap[1]).FLYWHEEL_FONTS];
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFontOrder.tsx");
+// Module 14225 (items)
+import result from "result";
+
+const require = arg1;
+let items = [require("DisplayNameFont").DisplayNameFont.DEFAULT, require("DisplayNameFont").DisplayNameFont.ZILLA_SLAB, require("DisplayNameFont").DisplayNameFont.CHERRY_BOMB, require("DisplayNameFont").DisplayNameFont.CHICLE, require("DisplayNameFont").DisplayNameFont.MUSEO_MODERNO, require("DisplayNameFont").DisplayNameFont.NEO_CASTEL, require("DisplayNameFont").DisplayNameFont.PIXELIFY, require("DisplayNameFont").DisplayNameFont.SINISTRE];
+const items1 = [...require("items3").FLYWHEEL_FONTS];
+const result = require("DisplayNameFont").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFontOrder.tsx");
 
 export const useVisibleFontOrder = function useVisibleFontOrder() {
-  const isDisplayNameStylesFlywheelSettersEnabled = arg1(dependencyMap[3]).useIsDisplayNameStylesFlywheelSettersEnabled("font-order");
-  const arg1 = isDisplayNameStylesFlywheelSettersEnabled;
+  isDisplayNameStylesFlywheelSettersEnabled = isDisplayNameStylesFlywheelSettersEnabled(8515).useIsDisplayNameStylesFlywheelSettersEnabled("font-order");
   const items = [isDisplayNameStylesFlywheelSettersEnabled];
-  return React.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? closure_4 : closure_3, items);
+  return React.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? outer1_4 : outer1_3, items);
 };

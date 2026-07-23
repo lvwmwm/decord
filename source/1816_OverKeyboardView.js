@@ -1,9 +1,9 @@
 // Module ID: 1816
-// Function ID: 19977
+// Function ID: 19978
 // Name: OverKeyboardView
-// Dependencies: []
+// Dependencies: [1817, 1818]
 
 // Module 1816 (OverKeyboardView)
 
-export const OverKeyboardView = importDefault(dependencyMap[0]);
-export const KeyboardExtender = importDefault(dependencyMap[1]);
+export const OverKeyboardView = require("OverKeyboardView");
+export const KeyboardExtender = require("KeyboardExtender");

@@ -1,53 +1,58 @@
-// Module ID: 13816
-// Function ID: 104468
+// Module ID: 13930
+// Function ID: 106624
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 4222, 653, 10468, 491, 10474, 6959, 6970, 13916, 13931, 6837, 6842, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 13816 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 13930 (_createForOfIteratorHelperLoose)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,19 +89,13 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-let closure_6 = [];
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesModalVideoAnalytics.tsx");
+let closure_6 = [25, 50, 75];
+let result = require("ME").fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesModalVideoAnalytics.tsx");
 
 export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnalytics(bountyId) {
   bountyId = bountyId.bountyId;
-  const arg1 = bountyId;
   const sourceQuestContent = bountyId.sourceQuestContent;
-  const importDefault = sourceQuestContent;
   const rewardDurationMs = bountyId.rewardDurationMs;
-  const dependencyMap = rewardDurationMs;
   let num = bountyId.initialPlaybackTimeSec;
   if (num === undefined) {
     num = 0;
@@ -105,32 +104,26 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   if (num2 === undefined) {
     num2 = 0;
   }
-  const React = num2;
   let num3 = bountyId.initialVideoDurationSec;
   if (num3 === undefined) {
     num3 = 0;
   }
-  let closure_4 = num3;
   let flag = bountyId.wasPreloaded;
   if (flag === undefined) {
     flag = false;
   }
-  const AnalyticEvents = flag;
   let str = bountyId.startupPath;
   if (str === undefined) {
     str = "carousel";
   }
-  let closure_6 = str;
   let prop = bountyId.verticalScrollingPosition;
   if (prop === undefined) {
     prop = null;
   }
-  const _createForOfIteratorHelperLoose = prop;
   let flag2 = bountyId.isActive;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const _arrayLikeToArray = flag2;
   let questImpressionId;
   let memo;
   let closure_11;
@@ -157,9 +150,9 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   let callback14;
   let callback15;
   let callback16;
-  let obj = arg1(dependencyMap[3]);
+  let obj = bountyId(rewardDurationMs[3]);
   questImpressionId = obj.useQuestImpressionId();
-  memo = React.useMemo(() => bountyId(rewardDurationMs[4]).v4(), []);
+  memo = num2.useMemo(() => bountyId(rewardDurationMs[4]).v4(), []);
   const set = new Set();
   if (tmp5) {
     set.add("start");
@@ -167,19 +160,19 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   if (1000 * num2 >= rewardDurationMs) {
     set.add("threshold");
   }
-  closure_11 = React.useRef(set);
-  closure_12 = React.useRef(false);
-  closure_13 = React.useRef(num);
-  closure_14 = React.useRef(num3);
-  closure_15 = React.useRef(null);
-  closure_16 = React.useRef(null);
-  closure_17 = React.useRef(false);
-  closure_18 = React.useRef(false);
-  closure_19 = React.useRef(null);
-  closure_20 = React.useRef(null);
-  closure_21 = React.useRef(-1);
-  closure_22 = React.useRef({ "Null": true, "Null": 5, "Null": true, "Null": true });
-  callback = React.useCallback(() => {
+  closure_11 = num2.useRef(set);
+  closure_12 = num2.useRef(false);
+  closure_13 = num2.useRef(num);
+  closure_14 = num2.useRef(num3);
+  closure_15 = num2.useRef(null);
+  closure_16 = num2.useRef(null);
+  closure_17 = num2.useRef(false);
+  closure_18 = num2.useRef(false);
+  closure_19 = num2.useRef(null);
+  closure_20 = num2.useRef(null);
+  closure_21 = num2.useRef(-1);
+  closure_22 = num2.useRef({ bitrateBps: null, width: null, height: null, levelIndex: null });
+  callback = num2.useCallback(() => {
     if (null != closure_19.current) {
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_19.current);
@@ -187,13 +180,13 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, []);
   const items = [flag, str, prop, rewardDurationMs];
-  memo1 = React.useMemo(() => ({ was_preloaded: flag, startup_path: str, vertical_scrolling_position: prop, reward_timer_seconds: rewardDurationMs / 1000 }), items);
-  callback1 = React.useCallback(() => {
+  memo1 = num2.useMemo(() => ({ was_preloaded: flag, startup_path: str, vertical_scrolling_position: prop, reward_timer_seconds: rewardDurationMs / 1000 }), items);
+  callback1 = num2.useCallback(() => {
     const current = closure_22.current;
     return { hls_level_index: current.levelIndex, hls_segment_res_width: current.width, hls_segment_res_height: current.height };
   }, []);
   const items1 = [num2, num3];
-  callback2 = React.useCallback((current) => {
+  callback2 = num2.useCallback((current) => {
     let iter;
     let tmp = current;
     if (!ref.current) {
@@ -223,7 +216,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items1);
   const items2 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  callback3 = React.useCallback((arg0) => {
+  callback3 = num2.useCallback((arg0) => {
     let progress;
     let thresholdMet;
     let videoTimestampSeconds;
@@ -234,16 +227,16 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     obj.trackAdContentEvent(obj);
   }, items2);
   const items3 = [callback3];
-  callback4 = React.useCallback(() => {
+  callback4 = num2.useCallback(() => {
     const current = closure_11.current;
     if (!current.has("start")) {
       const current2 = closure_11.current;
       current2.add("start");
-      callback3({});
+      callback3({ videoTimestampSeconds: 0, progress: 0, thresholdMet: false });
     }
   }, items3);
   const items4 = [callback3, rewardDurationMs];
-  callback5 = React.useCallback((arg0, current) => {
+  callback5 = num2.useCallback((arg0, current) => {
     current = closure_11.current;
     if (!current.has("threshold")) {
       const current2 = closure_11.current;
@@ -258,18 +251,18 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items4);
   const items5 = [callback3];
-  callback6 = React.useCallback((arg0, arg1) => {
+  callback6 = num2.useCallback((arg0, arg1) => {
     const current = closure_11.current;
     if (!current.has("end")) {
       const current2 = closure_11.current;
       current2.add("end");
       const _Math = Math;
-      const obj = { videoTimestampSeconds: Math.max(arg0, arg1) };
+      const obj = { videoTimestampSeconds: Math.max(arg0, arg1), progress: 1, thresholdMet: true };
       callback3(obj);
     }
   }, items5);
   const items6 = [callback3, rewardDurationMs];
-  callback7 = React.useCallback((videoTimestampSeconds, current) => {
+  callback7 = num2.useCallback((videoTimestampSeconds, current) => {
     let iter;
     if (current > 0) {
       const result = bountyId(rewardDurationMs[5]).formatVideoProgressRatio(videoTimestampSeconds, current);
@@ -287,11 +280,11 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
               let tmp3 = closure_11;
               let current2 = closure_11.current;
               let addResult = current2.add(combined);
-              let tmp5 = closure_27;
+              let tmp5 = callback3;
               let obj = { videoTimestampSeconds, progress: result };
-              let tmp6 = closure_2;
-              obj.thresholdMet = 1000 * videoTimestampSeconds >= closure_2;
-              let tmp7 = closure_27(obj);
+              let tmp6 = rewardDurationMs;
+              obj.thresholdMet = 1000 * videoTimestampSeconds >= rewardDurationMs;
+              let tmp7 = callback3(obj);
             }
           }
           iter = tmp13();
@@ -303,7 +296,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   }, items6);
   const items7 = [callback2, callback4, callback5, callback7, rewardDurationMs];
   const items8 = [callback2, callback4, callback5, callback7, callback6];
-  const callback8 = React.useCallback((arg0, current, current2) => {
+  const callback8 = num2.useCallback((arg0, current, current2) => {
     closure_13.current = current2;
     closure_14.current = current;
     callback2(current);
@@ -316,7 +309,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     callback7(arg0, current);
   }, items7);
   const items9 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  const callback9 = React.useCallback((arg0, current, current2) => {
+  const callback9 = num2.useCallback((arg0, current, current2) => {
     closure_13.current = current2;
     closure_14.current = current;
     callback2(current);
@@ -328,7 +321,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     callback6(arg0, current);
   }, items8);
   const items10 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  const callback10 = React.useCallback((loop_count) => {
+  const callback10 = num2.useCallback((loop_count) => {
     closure_13.current = 0;
     let obj = bountyId(rewardDurationMs[6]);
     obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_LOOPED, properties: obj, sourceQuestContent };
@@ -336,7 +329,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     obj.trackAdContentEvent(obj);
   }, items9);
   const items11 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  const callback11 = React.useCallback((video_timestamp_seconds) => {
+  const callback11 = num2.useCallback((video_timestamp_seconds) => {
     if (arg1 === bountyId(rewardDurationMs[8]).PlaybackTriggerSource.USER_INTERACTION) {
       let obj = bountyId(rewardDurationMs[6]);
       obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_PAUSED };
@@ -347,7 +340,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items10);
   const items12 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
-  const callback12 = React.useCallback((video_timestamp_seconds) => {
+  const callback12 = num2.useCallback((video_timestamp_seconds) => {
     if (arg1 === bountyId(rewardDurationMs[8]).PlaybackTriggerSource.USER_INTERACTION) {
       let obj = bountyId(rewardDurationMs[6]);
       obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_RESUMED };
@@ -358,10 +351,10 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items11);
   const items13 = [bountyId, memo, questImpressionId, callback1, memo1, sourceQuestContent];
-  const callback13 = React.useCallback((error) => {
+  const callback13 = num2.useCallback((error) => {
     let obj = bountyId(rewardDurationMs[6]);
     obj = { adContentId: bountyId, adCreativeType: bountyId(rewardDurationMs[7]).AdCreativeType.BOUNTY, event: flag.AD_VIDEO_ERROR };
-    obj = { "Null": "mn", "Null": "description", "Null": "Array", video_progress: bountyId(rewardDurationMs[5]).formatVideoProgressRatio(ref2.current, ref3.current), video_session_id: memo };
+    obj = { video_progress: bountyId(rewardDurationMs[5]).formatVideoProgressRatio(ref2.current, ref3.current), video_error_type: null, network_connection_speed: null, video_session_id: memo };
     let code;
     if (null != error) {
       code = error.error.code;
@@ -387,12 +380,12 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     obj.trackAdContentEvent(obj);
     const obj4 = bountyId(rewardDurationMs[5]);
     if (obj5.isSourceError(error)) {
-      const obj1 = { name: bountyId(rewardDurationMs[11]).MetricEvents.QUEST_VIDEO_ERROR, tags: [null] };
+      const obj1 = { name: bountyId(rewardDurationMs[11]).MetricEvents.QUEST_VIDEO_ERROR, tags: ["error_type:SOURCE_ERROR"] };
       sourceQuestContent(rewardDurationMs[10]).increment(obj1);
       const obj6 = sourceQuestContent(rewardDurationMs[10]);
     }
   }, items12);
-  callback14 = React.useCallback(() => {
+  callback14 = num2.useCallback(() => {
     if (null != ref7.current) {
       const _Date = Date;
       ref7.current = null;
@@ -408,7 +401,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items13);
   const items14 = [bountyId, memo, questImpressionId, callback, callback1, memo1, sourceQuestContent];
-  callback15 = React.useCallback(() => {
+  callback15 = num2.useCallback(() => {
     let current = ref5.current;
     if (!current) {
       current = null == ref4.current;
@@ -430,7 +423,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items14);
   const items15 = [callback15];
-  callback16 = React.useCallback(() => {
+  callback16 = num2.useCallback(() => {
     let current = ref5.current;
     if (!current) {
       current = null == ref4.current;
@@ -443,8 +436,8 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
         if (null == closure_19.current) {
           const _setTimeout = setTimeout;
           closure_19.current = setTimeout(() => {
-            closure_19.current = null;
-            callback();
+            outer1_19.current = null;
+            outer1_33();
           }, 500);
         }
       } else {
@@ -453,15 +446,15 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items15);
   const items16 = [callback, callback14, callback15];
-  const effect = React.useEffect(() => () => {
-    if (null != ref.current) {
-      callback3();
+  const effect = num2.useEffect(() => () => {
+    if (null != outer1_19.current) {
+      outer1_33();
     }
-    callback();
-    callback2();
+    outer1_23();
+    outer1_32();
   }, items16);
   const items17 = [flag2, callback16, callback, callback14, callback15];
-  const effect1 = React.useEffect(() => {
+  const effect1 = num2.useEffect(() => {
     if (flag2) {
       callback16();
     } else {
@@ -479,22 +472,22 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     handleVideoPausedAnalytics: callback11,
     handleVideoResumedAnalytics: callback12,
     handleVideoErrorAnalytics: callback13,
-    handleLoadStartAnalytics: React.useCallback(() => {
+    handleLoadStartAnalytics: num2.useCallback(() => {
       callback14();
       callback();
       closure_15.current = Date.now();
       closure_16.current = null;
       closure_17.current = false;
       closure_18.current = false;
-      closure_22.current = { "Null": true, "Null": 5, "Null": true, "Null": true };
+      closure_22.current = { bitrateBps: null, width: null, height: null, levelIndex: null };
     }, items18),
-    handleVideoTracksAnalytics: React.useCallback((arg0) => {
-      closure_22.current = function getSelectedTrackInfo(arg0) {
+    handleVideoTracksAnalytics: num2.useCallback((arg0) => {
+      closure_22.current = (function getSelectedTrackInfo(arg0) {
         let selectedVideoTrackId;
         let videoTracks;
         ({ videoTracks, selectedVideoTrackId } = arg0);
         if (0 === videoTracks.length) {
-          return { "Null": true, "Null": 5, "Null": true, "Null": true };
+          return { bitrateBps: null, width: null, height: null, levelIndex: null };
         } else {
           let num = -1;
           if (null != selectedVideoTrackId) {
@@ -527,7 +520,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
           obj.levelIndex = tmp4;
           return obj;
         }
-      }(arg0);
+      })(arg0);
       let tmp = flag2;
       if (flag2) {
         tmp = null != closure_16.current;
@@ -539,7 +532,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
         callback15();
       }
     }, items19),
-    handleReadyForDisplayAnalytics: React.useCallback(() => {
+    handleReadyForDisplayAnalytics: num2.useCallback(() => {
       closure_18.current = true;
       if (null == closure_16.current) {
         const _Date = Date;
@@ -549,7 +542,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
         callback16();
       }
     }, items20),
-    handleBufferAnalytics: React.useCallback((arg0) => {
+    handleBufferAnalytics: num2.useCallback((arg0) => {
       if (ref6.current) {
         if (flag2) {
           if (arg0) {
@@ -572,9 +565,9 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
       }
     }, items21)
   };
-  const items18 = [callback, callback14];
-  const items19 = [callback15, flag2];
-  const items20 = [flag2, callback16];
-  const items21 = [bountyId, memo, questImpressionId, callback14, callback1, flag2, memo1, sourceQuestContent];
+  items18 = [callback, callback14];
+  items19 = [callback15, flag2];
+  items20 = [flag2, callback16];
+  items21 = [bountyId, memo, questImpressionId, callback14, callback1, flag2, memo1, sourceQuestContent];
   return obj;
 };

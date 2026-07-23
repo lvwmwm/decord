@@ -1,9 +1,9 @@
-// Module ID: 10251
-// Function ID: 79245
+// Module ID: 10263
+// Function ID: 79313
 // Name: isObject
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 10251 (isObject)
+// Module 10263 (isObject)
 function isObject(arg0) {
   if ("object" === typeof arg0) {
     if (null !== arg0) {
@@ -22,8 +22,10 @@ function isObject(arg0) {
   return false;
 }
 function merge(arg0) {
-  const items = [...arguments];
+  let items = [...arguments];
   return items.reduce((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     if (Array.isArray(arg1)) {
       const _TypeError = TypeError;
       const typeError = new TypeError("Arguments provided to ts-deepmerge must be objects, not arrays.");
@@ -34,40 +36,40 @@ function merge(arg0) {
       const item = keys.forEach((arg0) => {
         let _Array3;
         let _Set;
-        const items = [null, null, null];
+        const items = ["__proto__", "constructor", "prototype"];
         if (!items.includes(arg0)) {
           let tmp = globalThis;
           const _Array = Array;
-          if (Array.isArray(arg0[arg0])) {
+          if (Array.isArray(dependencyMap[arg0])) {
             const _Array2 = Array;
-            if (Array.isArray(arg1[arg0])) {
-              if (lib.options.mergeArrays) {
+            if (Array.isArray(dependencyMap2[arg0])) {
+              if (outer2_2.options.mergeArrays) {
                 ({ Array: _Array3, Set: _Set } = tmp);
                 const prototype = _Set.prototype;
                 tmp = new.target;
-                _Set = new _Set(arg0[arg0].concat(arg1[arg0]));
+                _Set = new _Set(dependencyMap[arg0].concat(dependencyMap2[arg0]));
                 let fromResult = _Array3.from(_Set);
-                const obj = arg0[arg0];
+                const obj = dependencyMap[arg0];
               } else {
-                fromResult = arg1[arg0];
+                fromResult = dependencyMap2[arg0];
               }
-              arg0[arg0] = fromResult;
-              const tmp13 = arg0;
+              dependencyMap[arg0] = fromResult;
+              const tmp13 = dependencyMap;
             }
           }
-          if (arg1(arg0[arg0])) {
-            if (arg1(arg1[arg0])) {
-              arg0[arg0] = lib(arg0[arg0], arg1[arg0]);
+          if (outer2_1(dependencyMap[arg0])) {
+            if (outer2_1(dependencyMap2[arg0])) {
+              dependencyMap[arg0] = outer2_2(dependencyMap[arg0], dependencyMap2[arg0]);
             }
           }
-          arg0[arg0] = arg1[arg0];
+          dependencyMap[arg0] = dependencyMap2[arg0];
         }
       });
       return arg0;
     }
   }, {});
 }
-const obj = { mergeArrays: true };
+let obj = { mergeArrays: true };
 merge.options = obj;
 merge.withOptions = (arg0, arg1) => {
   const substr = [...arguments].slice();
@@ -77,7 +79,6 @@ merge.withOptions = (arg0, arg1) => {
   merge.options = obj;
   return merge(...substr);
 };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/layouts/utils/deepmerge.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/layouts/utils/deepmerge.tsx");
 
 export default merge;

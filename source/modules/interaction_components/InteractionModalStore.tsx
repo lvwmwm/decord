@@ -1,9 +1,16 @@
-// Module ID: 13216
-// Function ID: 100159
+// Module ID: 13330
+// Function ID: 102315
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1881, 44, 7799, 664, 6691, 566, 686, 2]
 
-// Module 13216 (_isNativeReflectConstruct)
+// Module 13330 (_isNativeReflectConstruct)
+import invariant from "invariant";
+import _fetchMessageInteractionData from "_fetchMessageInteractionData";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +20,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
 let obj = { IN_FLIGHT: 0, [0]: "IN_FLIGHT", ERRORED: 1, [1]: "ERRORED", SUCCEEDED: 2, [2]: "SUCCEEDED" };
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class InteractionModalStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, InteractionModalStore);
-      obj = closure_6(InteractionModalStore);
-      tmp2 = closure_5;
-      if (closure_14()) {
+      tmp = outer1_3(this, InteractionModalStore);
+      obj = outer1_6(InteractionModalStore);
+      tmp2 = outer1_5;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,49 +42,48 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = InteractionModalStore;
   callback2(InteractionModalStore, Store);
   const items = [
     {
       key: "getModalState",
       value(arg0) {
         let tmp = null;
-        if (arg0 === closure_8) {
-          tmp = closure_9;
+        if (arg0 === outer1_8) {
+          tmp = outer1_9;
         }
         return tmp;
       }
     }
   ];
   return callback(InteractionModalStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "InteractionModalStore";
 obj = {
   LOGOUT: function handleInit() {
-    let closure_8 = null;
-    let closure_9 = null;
-    let closure_10 = null;
-    let closure_11 = null;
-    let closure_12 = null;
+    let c8 = null;
+    let c9 = null;
+    let c10 = null;
+    let c11 = null;
+    let c12 = null;
     return true;
   },
   INTERACTION_MODAL_CREATE: function handleInteractionModalCreate(nonce) {
-    if (nonce.nonce === closure_12) {
-      importDefault(dependencyMap[9]).deleteMessage(closure_11, closure_10, true);
-      closure_10 = null;
-      closure_11 = null;
-      closure_12 = null;
-      const obj = importDefault(dependencyMap[9]);
+    if (nonce.nonce === c12) {
+      importDefault(6691).deleteMessage(c11, c10, true);
+      c10 = null;
+      c11 = null;
+      c12 = null;
+      const obj = importDefault(6691);
     }
     return false;
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleInteractionIframeModalCreate(nonce) {
-    if (nonce.nonce === closure_12) {
-      importDefault(dependencyMap[9]).deleteMessage(closure_11, closure_10, true);
-      closure_10 = null;
-      closure_11 = null;
-      closure_12 = null;
-      const obj = importDefault(dependencyMap[9]);
+    if (nonce.nonce === c12) {
+      importDefault(6691).deleteMessage(c11, c10, true);
+      c10 = null;
+      c11 = null;
+      c12 = null;
+      const obj = importDefault(6691);
     }
     return false;
   },
@@ -90,15 +91,14 @@ obj = {
     let data;
     let preflight;
     nonce = nonce.nonce;
-    const arg1 = nonce;
     ({ data, preflight } = nonce);
-    let importDefault;
+    let startTimeout;
     const interactionType = data.interactionType;
-    if (arg1(dependencyMap[5]).InteractionTypes.APPLICATION_COMMAND === interactionType) {
+    if (nonce(1881).InteractionTypes.APPLICATION_COMMAND === interactionType) {
       const messageId = nonce.messageId;
       const channelId = data.channelId;
       return false;
-    } else if (arg1(dependencyMap[5]).InteractionTypes.MODAL_SUBMIT === interactionType) {
+    } else if (nonce(1881).InteractionTypes.MODAL_SUBMIT === interactionType) {
       let tmp6 = null == nonce;
       if (!tmp6) {
         tmp6 = IN_FLIGHT === obj.ERRORED;
@@ -106,27 +106,26 @@ obj = {
       if (!tmp6) {
         tmp6 = IN_FLIGHT === obj.SUCCEEDED;
       }
-      importDefault(dependencyMap[6])(tmp6, "cannot submit multiple modals at once");
-      const IN_FLIGHT = obj.IN_FLIGHT;
-      function startTimeout(arg0) {
+      startTimeout(44)(tmp6, "cannot submit multiple modals at once");
+      IN_FLIGHT = obj.IN_FLIGHT;
+      startTimeout = function startTimeout(arg0) {
         const timerId = setTimeout(() => {
-          let tmp = closure_8 === callback;
+          let tmp = nonce === outer1_0;
           if (tmp) {
-            tmp = closure_9 === constants.IN_FLIGHT;
+            tmp = IN_FLIGHT === outer2_13.IN_FLIGHT;
           }
           if (tmp) {
-            callback(closure_2[7]).setFailed(callback);
-            const obj = callback(closure_2[7]);
+            nonce(outer2_2[7]).setFailed(outer1_0);
+            const obj = nonce(outer2_2[7]);
           }
         }, arg0);
-      }
-      importDefault = startTimeout;
+      };
       if (null != preflight) {
-        startTimeout(2 * importDefault(dependencyMap[8]).Millis.MINUTE);
-        preflight.then(() => startTimeout(10 * startTimeout(closure_2[8]).Millis.SECOND)).catch(() => nonce(closure_2[7]).setFailed(nonce));
-        const nextPromise = preflight.then(() => startTimeout(10 * startTimeout(closure_2[8]).Millis.SECOND));
+        startTimeout(2 * startTimeout(664).Millis.MINUTE);
+        preflight.then(() => startTimeout(10 * startTimeout(outer1_2[8]).Millis.SECOND)).catch(() => nonce(outer1_2[7]).setFailed(nonce));
+        const nextPromise = preflight.then(() => startTimeout(10 * startTimeout(outer1_2[8]).Millis.SECOND));
       } else {
-        startTimeout(10 * importDefault(dependencyMap[8]).Millis.SECOND);
+        startTimeout(10 * startTimeout(664).Millis.SECOND);
       }
       return true;
     } else {
@@ -158,8 +157,8 @@ obj = {
     return flag;
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[11]), obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/interaction_components/InteractionModalStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/interaction_components/InteractionModalStore.tsx");
 
 export default tmp2;
 export const InteractionModalState = obj;

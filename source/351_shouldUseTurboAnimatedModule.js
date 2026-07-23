@@ -1,10 +1,12 @@
 // Module ID: 351
 // Function ID: 5223
 // Name: shouldUseTurboAnimatedModule
-// Dependencies: []
+// Dependencies: [79]
 
 // Module 351 (shouldUseTurboAnimatedModule)
+const exports = arg3;
+const dependencyMap = arg6;
 arg5.default = function shouldUseTurboAnimatedModule() {
-  const result = arg3(arg6[0]).cxxNativeAnimatedEnabled();
+  const result = exports(79).cxxNativeAnimatedEnabled();
   return false;
 };

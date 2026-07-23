@@ -1,10 +1,25 @@
-// Module ID: 8813
-// Function ID: 69462
+// Module ID: 8820
+// Function ID: 69503
 // Name: _toPropertyKey
-// Dependencies: []
+// Dependencies: [29, 6, 7, 57, 31, 6905, 6901, 6902, 1857, 3767, 1849, 653, 3754, 6900, 7098, 686, 6904, 5047, 22, 1212, 8821, 2]
 // Exports: default
 
-// Module 8813 (_toPropertyKey)
+// Module 8820 (_toPropertyKey)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import { RelationshipTypes } from "ME";
+import set from "_defineProperties";
+
+const require = arg1;
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -31,49 +46,49 @@ function _toPropertyKey(arg0) {
   }
   return text;
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -84,16 +99,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -112,6 +127,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function isMatch(arg0, arg1, arg2) {
   let obj = arg2;
+  let closure_0 = arg1;
   if (null == arg2) {
     obj = {};
   }
@@ -120,27 +136,27 @@ function isMatch(arg0, arg1, arg2) {
   const contains = obj.contains;
   let closure_2 = undefined !== contains && contains;
   function _loop(arr) {
-    const arg1 = arr;
+    let closure_0 = arr;
     if (arr.some((str) => {
-      if (closure_1) {
-        return str === str;
-      } else if (str.startsWith(str)) {
+      if (outer1_1) {
+        return str === arr;
+      } else if (str.startsWith(arr)) {
         return true;
       } else {
-        const joined = str.join(" ");
-        const tmp4 = !joined.startsWith(str);
+        const joined = arr.join(" ");
+        const tmp4 = !joined.startsWith(arr);
         let tmp5 = !tmp4;
         if (tmp4) {
-          let hasItem = closure_2;
-          if (closure_2) {
-            hasItem = joined.includes(str);
+          let hasItem = outer1_2;
+          if (outer1_2) {
+            hasItem = joined.includes(arr);
           }
           tmp5 = hasItem;
         }
         return tmp5;
       }
     })) {
-      const obj = { v: closure_3 };
+      const obj = { v: _objectWithoutProperties };
       return obj;
     }
   }
@@ -148,7 +164,7 @@ function isMatch(arg0, arg1, arg2) {
   let num = 0;
   if (0 < entries.length) {
     const tmp2 = callback3(entries[num], 2);
-    let closure_3 = tmp2[0];
+    let _objectWithoutProperties = tmp2[0];
     const _loopResult = _loop(tmp2[1]);
     while (!_loopResult) {
       num = num + 1;
@@ -188,7 +204,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   if (flag === undefined) {
     flag = true;
   }
-  let arg1;
+  let id;
   const AffinitySuggestions = closure_16.AffinitySuggestions;
   const FriendRequests = closure_16.FriendRequests;
   const FriendRequestsIncoming = closure_16.FriendRequestsIncoming;
@@ -230,19 +246,18 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
     items7 = [];
   }
   const items8 = [AffinitySuggestions, FriendRequests, FriendRequestsIncoming, FriendRequestsOutgoing, FriendRequestsSpam, FriendSuggestions, Friends, GuildMembers];
-  const currentUser = currentUser.getCurrentUser();
-  let id;
+  currentUser = currentUser.getCurrentUser();
+  id = undefined;
   if (null != currentUser) {
     id = currentUser.id;
   }
-  arg1 = id;
   let found = items7;
   if (excludeCurrentUser) {
     found = items7.filter((user) => user.user.id !== id);
   }
   if (withFriends) {
-    const mapped = importDefault(dependencyMap[18])(tmp).map((items, title) => ({ title, items }));
-    const arr12 = importDefault(dependencyMap[18])(tmp);
+    const mapped = importDefault(22)(tmp).map((items, title) => ({ title, items }));
+    const arr12 = importDefault(22)(tmp);
     items = mapped.sortBy((title) => title.title).value();
     const iter = mapped.sortBy((title) => title.title);
   } else {
@@ -251,10 +266,10 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   let obj = { title: null, items: items.flatMap((items) => items.items) };
   let items9 = [obj];
   obj = {};
-  const intl = arg1(dependencyMap[19]).intl;
-  obj.title = intl.string(arg1(dependencyMap[19]).t.HbJ7eD);
+  const intl = id(1212).intl;
+  obj.title = intl.string(id(1212).t.HbJ7eD);
   if (withAffinitySuggestions) {
-    let obj3 = importDefault(dependencyMap[18])(items);
+    let obj3 = importDefault(22)(items);
     const sortByResult = obj3.sortBy((affinity) => -affinity.affinity);
     let valueResult = obj3.sortBy((affinity) => -affinity.affinity).slice(0, num).value();
     const iter2 = obj3.sortBy((affinity) => -affinity.affinity).slice(0, num);
@@ -264,9 +279,9 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   obj.items = valueResult;
   const items10 = [obj, , , , , , , ];
   const obj1 = {};
-  const intl2 = arg1(dependencyMap[19]).intl;
+  const intl2 = id(1212).intl;
   const obj2 = { pendingRequestNumber: items1.length };
-  obj1.title = intl2.formatToPlainString(arg1(dependencyMap[19]).t.zsVtft, obj2);
+  obj1.title = intl2.formatToPlainString(id(1212).t.zsVtft, obj2);
   if (!withFriendRequests) {
     items1 = [];
   }
@@ -291,25 +306,25 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   obj5.items = items4;
   items10[4] = obj5;
   const obj6 = {};
-  const intl3 = arg1(dependencyMap[19]).intl;
+  const intl3 = id(1212).intl;
   const obj7 = { count: items5.length };
-  obj6.title = intl3.formatToPlainString(arg1(dependencyMap[19]).t.DYMZ/p, obj7);
+  obj6.title = intl3.formatToPlainString(id(1212).t["DYMZ/p"], obj7);
   if (!withFriendSuggestions) {
     items5 = [];
   }
   obj6.items = items5;
   items10[5] = obj6;
   const obj8 = {};
-  const intl4 = arg1(dependencyMap[19]).intl;
-  obj8.title = intl4.string(arg1(dependencyMap[19]).t.TdEu5X);
+  const intl4 = id(1212).intl;
+  obj8.title = intl4.string(id(1212).t.TdEu5X);
   if (!withFriends) {
     items6 = [];
   }
   obj8.items = items6;
   items10[6] = obj8;
   const obj9 = {};
-  const intl5 = arg1(dependencyMap[19]).intl;
-  obj9.title = intl5.string(arg1(dependencyMap[19]).t.y29JXs);
+  const intl5 = id(1212).intl;
+  obj9.title = intl5.string(id(1212).t.y29JXs);
   if (!withGuildMembers) {
     found = [];
   }
@@ -321,59 +336,47 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   HermesBuiltin.arraySpread(items9, 8);
   return items10;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importAll(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-const RelationshipTypes = arg1(dependencyMap[11]).RelationshipTypes;
-const items = [, , , ];
+let items = [, , , ];
 ({ FRIEND: arr[0], SUGGESTION: arr[1], PENDING_INCOMING: arr[2], PENDING_OUTGOING: arr[3] } = RelationshipTypes);
-const set = new Set(items);
+let set = new Set(items);
 let closure_16 = { AffinitySuggestions: "AFFINITY_SUGGESTIONS", Friends: "FRIENDS", FriendRequests: "FRIEND_REQUESTS", FriendRequestsIncoming: "FRIEND_REQUESTS_INCOMING", FriendRequestsOutgoing: "FRIEND_REQUESTS_OUTGOING", FriendRequestsSpam: "FRIEND_REQUESTS_SPAM", FriendSuggestions: "FRIEND_SUGGESTIONS", GuildMembers: "GUILD_MEMBERS" };
-const tmp3 = () => {
+let tmp3 = (() => {
   class UserSearch {
     constructor(arg0) {
       flag = arg1;
       self = this;
-      UserSearch = this;
-      arg0 = arg0;
+      self = this;
+      closure_1 = arg0;
       if (arg1 === undefined) {
         flag = false;
       }
-      tmp = closure_4(self, UserSearch);
+      tmp = outer1_4(self, self);
       self.currentQuery = "";
       self.affinities = {};
       self.userSearchContext = null;
-      secondaryIndexMap = new UserSearch(closure_2[12]).SecondaryIndexMap((arg0) => {
+      secondaryIndexMap = new UserSearch(outer1_2[12]).SecondaryIndexMap((arg0) => {
         let names;
         let type;
         ({ names, type } = arg0);
         const items = [];
-        if (constants.PENDING_INCOMING === type) {
-          items.push(closure_16.FriendRequests);
+        if (outer2_14.PENDING_INCOMING === type) {
+          items.push(outer2_16.FriendRequests);
           const push = items.push;
-          if (spam.isSpam(tmp3.id)) {
+          if (outer2_12.isSpam(tmp3.id)) {
             push(tmp19.FriendRequestsSpam);
           } else {
             push(tmp19.FriendRequestsIncoming);
           }
-        } else if (constants.PENDING_OUTGOING === type) {
-          items.push(closure_16.FriendRequests);
-          items.push(closure_16.FriendRequestsOutgoing);
-        } else if (constants.SUGGESTION === type) {
-          items.push(closure_16.FriendSuggestions);
-        } else if (constants.FRIEND === type) {
+        } else if (outer2_14.PENDING_OUTGOING === type) {
+          items.push(outer2_16.FriendRequests);
+          items.push(outer2_16.FriendRequestsOutgoing);
+        } else if (outer2_14.SUGGESTION === type) {
+          items.push(outer2_16.FriendSuggestions);
+        } else if (outer2_14.FRIEND === type) {
           if (tmp2 > 0) {
-            items.push(closure_16.AffinitySuggestions);
+            items.push(outer2_16.AffinitySuggestions);
           }
-          items.push(closure_16.Friends);
+          items.push(outer2_16.Friends);
           const keys = Object.keys();
           if (keys !== undefined) {
             if (keys[tmp] !== undefined) {
@@ -459,24 +462,24 @@ const tmp3 = () => {
       };
       self.handleGuildMembersChunkBatch = (chunks) => {
         let iter6;
-        const tmp = callback(chunks.chunks);
+        const tmp = outer2_19(chunks.chunks);
         const iter = tmp();
         let iter2 = iter;
         let flag = false;
         let flag2 = false;
         if (!iter.done) {
           do {
-            let tmp2 = closure_19;
-            let tmp3 = closure_19(iter2.value.members);
+            let tmp2 = outer2_19;
+            let tmp3 = outer2_19(iter2.value.members);
             let iter3 = tmp3();
             let tmp4 = flag;
             let iter4 = iter3;
             let tmp5 = flag;
             if (!iter3.done) {
               do {
-                let tmp6 = closure_0;
-                let tmp7 = closure_0.updateUser(iter4.value.user.id) || tmp4;
-                let iter5 = tmp3();
+                let tmp6 = self;
+                let tmp7 = self.updateUser(iter4.value.user.id) || tmp4;
+                iter5 = tmp3();
                 tmp4 = tmp7;
                 iter4 = iter5;
                 tmp5 = tmp7;
@@ -500,13 +503,13 @@ const tmp3 = () => {
         if (arg0 === undefined) {
           flag = false;
         }
-        if (!arg0(closure_2[13]).shouldUseCache) {
-          const userAffinities = userAffinities.getUserAffinities();
+        if (!outer2_1(outer2_2[13]).shouldUseCache) {
+          const userAffinities = outer2_10.getUserAffinities();
           const item = userAffinities.forEach((otherUserId) => {
             otherUserId = otherUserId.otherUserId;
-            closure_0.affinities[otherUserId] = otherUserId.communicationProbability;
+            outer1_0.affinities[otherUserId] = otherUserId.communicationProbability;
             if (otherUserId.communicationRank <= 5) {
-              closure_0.updateUser(otherUserId);
+              outer1_0.updateUser(otherUserId);
             }
           });
           if (!flag) {
@@ -520,12 +523,12 @@ const tmp3 = () => {
         }
       };
       self.withGameFriends = flag;
-      if (arg0(closure_2[13]).shouldUseCache) {
+      if (outer1_1(outer1_2[13]).shouldUseCache) {
         result = self.initializeUsersFromCache();
         nextPromise = result.then(() => {
           let tmp;
-          if (null != arg0) {
-            tmp = arg0();
+          if (null != callback) {
+            tmp = callback();
           }
           return tmp;
         });
@@ -535,33 +538,31 @@ const tmp3 = () => {
       return;
     }
   }
-  const arg1 = UserSearch;
   let obj = {
     key: "subscribe",
     value: function subscribe(onUpdate) {
       let flag = arg1;
-      const self = this;
-      const UserSearch = this;
+      let self = this;
+      self = this;
       if (arg1 === undefined) {
         flag = true;
       }
       self.onUpdate = onUpdate;
       let userSearchContext = null;
       if (flag) {
-        userSearchContext = callback(closure_2[14]).getUserSearchContext((results) => {
+        userSearchContext = outer1_1(outer1_2[14]).getUserSearchContext((results) => {
           results = results.results;
-          let self;
-          if (self.currentQuery === results.query) {
-            const items = [];
-            self = items;
+          let items;
+          if (items.currentQuery === results.query) {
+            items = [];
             if (results.reduce((arg0, id) => {
-              if (callback(closure_2[13]).shouldUseCache) {
+              if (outer3_1(outer3_2[13]).shouldUseCache) {
                 return false;
-              } else if (set.has(relationshipType.getRelationshipType(id.id))) {
+              } else if (outer3_15.has(outer3_12.getRelationshipType(id.id))) {
                 return arg0;
               } else {
                 if (items.withGameFriends) {
-                  if (gameFriendsForUser.getGameFriendsForUser(id.id).length > 0) {
+                  if (outer3_9.getGameFriendsForUser(id.id).length > 0) {
                     return arg0;
                   }
                 }
@@ -574,44 +575,44 @@ const tmp3 = () => {
                 return flag;
               }
             }, false)) {
-              self.filteredGuildMembers = items;
-              const onUpdate = self.onUpdate;
+              items.filteredGuildMembers = items;
+              const onUpdate = items.onUpdate;
               if (null != onUpdate) {
-                onUpdate.call(self);
+                onUpdate.call(items);
               }
             }
           }
         }, 20);
-        const obj = callback(closure_2[14]);
+        const obj = outer1_1(outer1_2[14]);
       }
       self.userSearchContext = userSearchContext;
-      const subscription = callback(closure_2[15]).subscribe("POST_CONNECTION_OPEN", self.handlePostConnectionOpen);
-      const obj2 = callback(closure_2[15]);
-      const subscription1 = callback(closure_2[15]).subscribe("RELATIONSHIP_ADD", self.handleRelationship);
-      const obj3 = callback(closure_2[15]);
-      const subscription2 = callback(closure_2[15]).subscribe("RELATIONSHIP_REMOVE", self.handleRelationship);
-      const obj4 = callback(closure_2[15]);
-      const subscription3 = callback(closure_2[15]).subscribe("RELATIONSHIP_UPDATE", self.handleRelationship);
-      const obj5 = callback(closure_2[15]);
-      const subscription4 = callback(closure_2[15]).subscribe("GAME_RELATIONSHIP_ADD", self.handleGameRelationshipAdd);
-      const obj6 = callback(closure_2[15]);
-      const subscription5 = callback(closure_2[15]).subscribe("GAME_RELATIONSHIP_REMOVE", self.handleGameRelationshipRemove);
-      const obj7 = callback(closure_2[15]);
-      const subscription6 = callback(closure_2[15]).subscribe("FRIEND_SUGGESTION_CREATE", self.handleFriendSuggestionCreate);
-      const obj8 = callback(closure_2[15]);
-      const subscription7 = callback(closure_2[15]).subscribe("FRIEND_SUGGESTION_DELETE", self.handleFriendSuggestionDelete);
-      const obj9 = callback(closure_2[15]);
-      const subscription8 = callback(closure_2[15]).subscribe("GUILD_MEMBER_ADD", self.handleGuildMember);
-      const obj10 = callback(closure_2[15]);
-      const subscription9 = callback(closure_2[15]).subscribe("GUILD_MEMBER_UPDATE", self.handleGuildMember);
-      const obj11 = callback(closure_2[15]);
-      const subscription10 = callback(closure_2[15]).subscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
-      const obj12 = callback(closure_2[15]);
-      const subscription11 = callback(closure_2[15]).subscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
-      closure_10.addChangeListener(self.handleUserAffinitiesUpdate);
+      const subscription = outer1_1(outer1_2[15]).subscribe("POST_CONNECTION_OPEN", self.handlePostConnectionOpen);
+      const obj2 = outer1_1(outer1_2[15]);
+      const subscription1 = outer1_1(outer1_2[15]).subscribe("RELATIONSHIP_ADD", self.handleRelationship);
+      const obj3 = outer1_1(outer1_2[15]);
+      const subscription2 = outer1_1(outer1_2[15]).subscribe("RELATIONSHIP_REMOVE", self.handleRelationship);
+      const obj4 = outer1_1(outer1_2[15]);
+      const subscription3 = outer1_1(outer1_2[15]).subscribe("RELATIONSHIP_UPDATE", self.handleRelationship);
+      const obj5 = outer1_1(outer1_2[15]);
+      const subscription4 = outer1_1(outer1_2[15]).subscribe("GAME_RELATIONSHIP_ADD", self.handleGameRelationshipAdd);
+      const obj6 = outer1_1(outer1_2[15]);
+      const subscription5 = outer1_1(outer1_2[15]).subscribe("GAME_RELATIONSHIP_REMOVE", self.handleGameRelationshipRemove);
+      const obj7 = outer1_1(outer1_2[15]);
+      const subscription6 = outer1_1(outer1_2[15]).subscribe("FRIEND_SUGGESTION_CREATE", self.handleFriendSuggestionCreate);
+      const obj8 = outer1_1(outer1_2[15]);
+      const subscription7 = outer1_1(outer1_2[15]).subscribe("FRIEND_SUGGESTION_DELETE", self.handleFriendSuggestionDelete);
+      const obj9 = outer1_1(outer1_2[15]);
+      const subscription8 = outer1_1(outer1_2[15]).subscribe("GUILD_MEMBER_ADD", self.handleGuildMember);
+      const obj10 = outer1_1(outer1_2[15]);
+      const subscription9 = outer1_1(outer1_2[15]).subscribe("GUILD_MEMBER_UPDATE", self.handleGuildMember);
+      const obj11 = outer1_1(outer1_2[15]);
+      const subscription10 = outer1_1(outer1_2[15]).subscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
+      const obj12 = outer1_1(outer1_2[15]);
+      const subscription11 = outer1_1(outer1_2[15]).subscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
+      outer1_10.addChangeListener(self.handleUserAffinitiesUpdate);
     }
   };
-  const items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , ];
   obj = {
     key: "unsubscribe",
     value: function unsubscribe() {
@@ -621,30 +622,30 @@ const tmp3 = () => {
       if (null != userSearchContext) {
         userSearchContext.destroy();
       }
-      callback(closure_2[15]).unsubscribe("POST_CONNECTION_OPEN", self.handlePostConnectionOpen);
-      const obj = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("RELATIONSHIP_ADD", self.handleRelationship);
-      const obj2 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("RELATIONSHIP_REMOVE", self.handleRelationship);
-      const obj3 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("RELATIONSHIP_UPDATE", self.handleRelationship);
-      const obj4 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("GAME_RELATIONSHIP_ADD", self.handleGameRelationshipAdd);
-      const obj5 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("GAME_RELATIONSHIP_REMOVE", self.handleGameRelationshipRemove);
-      const obj6 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("FRIEND_SUGGESTION_CREATE", self.handleFriendSuggestionCreate);
-      const obj7 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("FRIEND_SUGGESTION_DELETE", self.handleFriendSuggestionDelete);
-      const obj8 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("GUILD_MEMBER_ADD", self.handleGuildMember);
-      const obj9 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("GUILD_MEMBER_UPDATE", self.handleGuildMember);
-      const obj10 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
-      const obj11 = callback(closure_2[15]);
-      callback(closure_2[15]).unsubscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
-      closure_10.removeChangeListener(self.handleUserAffinitiesUpdate);
+      outer1_1(outer1_2[15]).unsubscribe("POST_CONNECTION_OPEN", self.handlePostConnectionOpen);
+      const obj = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("RELATIONSHIP_ADD", self.handleRelationship);
+      const obj2 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("RELATIONSHIP_REMOVE", self.handleRelationship);
+      const obj3 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("RELATIONSHIP_UPDATE", self.handleRelationship);
+      const obj4 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("GAME_RELATIONSHIP_ADD", self.handleGameRelationshipAdd);
+      const obj5 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("GAME_RELATIONSHIP_REMOVE", self.handleGameRelationshipRemove);
+      const obj6 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("FRIEND_SUGGESTION_CREATE", self.handleFriendSuggestionCreate);
+      const obj7 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("FRIEND_SUGGESTION_DELETE", self.handleFriendSuggestionDelete);
+      const obj8 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("GUILD_MEMBER_ADD", self.handleGuildMember);
+      const obj9 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("GUILD_MEMBER_UPDATE", self.handleGuildMember);
+      const obj10 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("GUILD_MEMBER_REMOVE", self.handleGuildMember);
+      const obj11 = outer1_1(outer1_2[15]);
+      outer1_1(outer1_2[15]).unsubscribe("GUILD_MEMBERS_CHUNK_BATCH", self.handleGuildMembersChunkBatch);
+      outer1_10.removeChangeListener(self.handleUserAffinitiesUpdate);
     }
   };
   items[1] = obj;
@@ -652,7 +653,7 @@ const tmp3 = () => {
     key: "fetch",
     value: function fetch(globalName) {
       const self = this;
-      let obj = UserSearch(closure_2[16]);
+      let obj = UserSearch(outer1_2[16]);
       const cleanStringResult = obj.cleanString(globalName);
       if ("" === cleanStringResult) {
         const userSearchContext2 = self.userSearchContext;
@@ -661,8 +662,8 @@ const tmp3 = () => {
         }
       } else {
         if (arg1) {
-          const members = callback(closure_2[17]).requestMembers(null, cleanStringResult);
-          const obj2 = callback(closure_2[17]);
+          const members = outer1_1(outer1_2[17]).requestMembers(null, cleanStringResult);
+          const obj2 = outer1_1(outer1_2[17]);
         }
         const userSearchContext = self.userSearchContext;
         if (null != userSearchContext) {
@@ -676,25 +677,26 @@ const tmp3 = () => {
   items[3] = {
     key: "filter",
     value: function filter(globalName) {
-      const self = this;
-      const UserSearch = this;
-      let obj = UserSearch(closure_2[16]);
+      let self = this;
+      self = this;
+      let obj = UserSearch(outer1_2[16]);
       const cleanStringResult = obj.cleanString(globalName);
+      let closure_1 = cleanStringResult;
       if (this.currentQuery === cleanStringResult) {
         if ("" === self.currentQuery) {
           obj = {};
           const indexMap2 = self.indexMap;
-          const merged = Object.assign(indexMap2.indexes());
-          const Friends = closure_16.Friends;
-          delete r0[r1];
+          let merged = Object.assign(indexMap2.indexes());
+          const Friends = outer1_16.Friends;
+          delete tmp[tmp2];
           return obj;
         } else {
           obj = {};
-          const obj4 = cleanStringResult(closure_2[18]);
-          obj[closure_16.Friends] = obj4.sortBy(cleanStringResult(closure_2[18]).uniqBy(self.filteredFriends, (user) => user.user.id), (names) => callback2(names.names, cleanStringResult), (affinity) => -affinity.affinity);
-          const obj5 = cleanStringResult(closure_2[18]);
-          const obj6 = cleanStringResult(closure_2[18]);
-          obj[closure_16.GuildMembers] = obj6.sortBy(cleanStringResult(closure_2[18]).uniqBy(self.filteredGuildMembers, (user) => user.user.id), (names) => callback2(names.names, cleanStringResult), (affinity) => -affinity.affinity);
+          const obj4 = outer1_1(outer1_2[18]);
+          obj[outer1_16.Friends] = obj4.sortBy(outer1_1(outer1_2[18]).uniqBy(self.filteredFriends, (user) => user.user.id), (names) => outer2_22(names.names, closure_1), (affinity) => -affinity.affinity);
+          const obj5 = outer1_1(outer1_2[18]);
+          const obj6 = outer1_1(outer1_2[18]);
+          obj[outer1_16.GuildMembers] = obj6.sortBy(outer1_1(outer1_2[18]).uniqBy(self.filteredGuildMembers, (user) => user.user.id), (names) => outer2_22(names.names, closure_1), (affinity) => -affinity.affinity);
           return obj;
         }
       } else {
@@ -704,9 +706,9 @@ const tmp3 = () => {
         } else {
           self.filteredFriends = [];
           const indexMap = self.indexMap;
-          const values = indexMap.values(closure_16.Friends);
+          const values = indexMap.values(outer1_16.Friends);
           const item = values.forEach((names) => {
-            const tmp = callback(names.names, cleanStringResult, { contains: true });
+            const tmp = outer2_21(names.names, closure_1, { contains: true });
             if (null != tmp) {
               const filteredFriends = self.filteredFriends;
               if (null != filteredFriends) {
@@ -727,10 +729,10 @@ const tmp3 = () => {
     value: function initializeUsersFromStores() {
       let done;
       let done2;
-      const self = this;
-      const UserSearch = this;
-      const mutableRelationships = mutableRelationships.getMutableRelationships();
-      const tmp = callback3(mutableRelationships.keys());
+      let self = this;
+      self = this;
+      const mutableRelationships = outer1_12.getMutableRelationships();
+      const tmp = outer1_19(mutableRelationships.keys());
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -741,13 +743,13 @@ const tmp3 = () => {
         } while (!done);
       }
       if (self.withGameFriends) {
-        const gameRelationships = authStore.getGameRelationships();
+        const gameRelationships = outer1_9.getGameRelationships();
         const values = gameRelationships.values();
         const item = values.forEach((id) => {
           self.updateUser(id.id);
         });
       }
-      const tmp5 = callback3(suggestions.getSuggestions());
+      const tmp5 = outer1_19(outer1_8.getSuggestions());
       let iter3 = tmp5();
       if (!iter3.done) {
         do {
@@ -763,16 +765,16 @@ const tmp3 = () => {
   items[5] = {
     key: "initializeUsersFromCache",
     value: function initializeUsersFromCache() {
-      const UserSearch = this;
-      const all = callback(closure_2[13]).getAll();
+      const self = this;
+      const all = outer1_1(outer1_2[13]).getAll();
       return all.then((arg0) => {
         let done;
-        const tmp = callback(arg0);
+        const tmp = outer2_19(arg0);
         let iter = tmp();
         if (!iter.done) {
           do {
-            let tmp2 = closure_0;
-            let updateUserCachedResult = closure_0.updateUserCached(iter.value);
+            let tmp2 = self;
+            let updateUserCachedResult = self.updateUserCached(iter.value);
             let iter2 = tmp();
             iter = iter2;
             done = iter2.done;
@@ -785,15 +787,15 @@ const tmp3 = () => {
     key: "updateUser",
     value: function updateUser(id) {
       const self = this;
-      if (callback(closure_2[13]).shouldUseCache) {
+      if (outer1_1(outer1_2[13]).shouldUseCache) {
         return false;
       } else {
         if (!self.withGameFriends) {
-          if (!set.has(obj.getRelationshipType(id))) {
+          if (!outer1_15.has(obj.getRelationshipType(id))) {
             const indexMap = self.indexMap;
             return indexMap.delete(id);
           }
-          const obj = UserSearch(closure_2[16]);
+          obj = UserSearch(outer1_2[16]);
         }
         const value = self.getItem(id);
         if (null == value) {
@@ -813,11 +815,11 @@ const tmp3 = () => {
       let names;
       let nick;
       const self = this;
-      const user = user.getUser(arg0);
+      const user = outer1_13.getUser(arg0);
       if (null == user) {
         return null;
       } else {
-        names = UserSearch(closure_2[16]).getNames(user);
+        names = UserSearch(outer1_2[16]).getNames(user);
         ({ nick, names } = names);
         let obj = { user, names };
         let num = 0;
@@ -827,13 +829,13 @@ const tmp3 = () => {
         obj.affinity = num;
         if ("" !== self.currentQuery) {
           obj = { contains: true };
-          nick = callback4(names, self.currentQuery, obj);
+          nick = outer1_21(names, self.currentQuery, obj);
         }
         obj.firstMatch = nick;
-        let obj1 = UserSearch(closure_2[16]);
+        let obj1 = UserSearch(outer1_2[16]);
         const relationshipType = obj1.getRelationshipType(user.id);
-        if (relationshipType !== constants.FRIEND) {
-          const gameFriendsForUser = authStore.getGameFriendsForUser(arg0);
+        if (relationshipType !== outer1_14.FRIEND) {
+          const gameFriendsForUser = outer1_9.getGameFriendsForUser(arg0);
           if (gameFriendsForUser.length > 0) {
             obj = {};
             const merged = Object.assign(obj);
@@ -852,7 +854,7 @@ const tmp3 = () => {
     key: "updateUserCached",
     value: function updateUserCached(value) {
       const self = this;
-      if (set.has(value.type)) {
+      if (outer1_15.has(value.type)) {
         const itemCached = self.getItemCached(value);
         if (null == itemCached) {
           const indexMap3 = self.indexMap;
@@ -877,13 +879,13 @@ const tmp3 = () => {
         return null;
       } else {
         const obj = { type: currentQuery.type };
-        const prototype = ctor.prototype;
-        const tmp4 = new ctor(currentQuery.user);
+        const prototype = outer1_11.prototype;
+        const tmp4 = new outer1_11(currentQuery.user);
         obj.user = tmp4;
         ({ names: obj.names, affinity: obj.affinity } = currentQuery);
         if ("" !== self.currentQuery) {
           currentQuery = self.currentQuery;
-          let nick = callback4(currentQuery.names, currentQuery);
+          let nick = outer1_21(currentQuery.names, currentQuery);
         } else {
           nick = currentQuery.nick;
         }
@@ -892,77 +894,64 @@ const tmp3 = () => {
     }
   };
   return callback2(UserSearch, items);
-}();
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserListData.tsx");
+})();
+let closure_17 = tmp3;
+let result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserListData.tsx");
 
 export default function useUserListData(query) {
   query = query.query;
-  const arg1 = query;
   const withGuildMembers = query.withGuildMembers;
-  const importDefault = withGuildMembers;
   const withAffinitySuggestions = query.withAffinitySuggestions;
-  const dependencyMap = withAffinitySuggestions;
   const withFriends = query.withFriends;
-  let closure_3 = withFriends;
   const withGameFriends = query.withGameFriends;
-  let closure_4 = withGameFriends;
   const withFriendSuggestions = query.withFriendSuggestions;
-  let closure_5 = withFriendSuggestions;
   const withFriendRequests = query.withFriendRequests;
-  const callback3 = withFriendRequests;
   const withFriendRequestsIncoming = query.withFriendRequestsIncoming;
-  const React = withFriendRequestsIncoming;
   const withFriendRequestsOutgoing = query.withFriendRequestsOutgoing;
-  let closure_8 = withFriendRequestsOutgoing;
   const withFriendRequestsSpam = query.withFriendRequestsSpam;
-  let closure_9 = withFriendRequestsSpam;
   let flag = query.excludeCurrentUser;
   if (flag === undefined) {
     flag = false;
   }
-  let closure_10 = flag;
   let num = query.affinitySuggestionsLimit;
   if (num === undefined) {
     num = 5;
   }
-  let closure_11 = num;
   let flag2 = query.withAlphabeticalSections;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  let closure_12 = flag2;
-  let closure_13;
-  let RelationshipTypes;
-  let closure_16;
-  const tmp = callback3(React.useState(0), 2);
-  const first = tmp[0];
-  closure_13 = first;
-  RelationshipTypes = tmp3;
-  const items = [tmp[1], withGameFriends];
-  const memo = React.useMemo(() => new closure_17(() => callback(Date.now()), withGameFriends), items);
+  let first;
+  let c14;
+  let memo;
+  let first1;
+  const tmp = withFriendRequests(withFriendRequestsIncoming.useState(0), 2);
+  first = tmp[0];
+  c14 = tmp3;
+  let items = [tmp[1], withGameFriends];
+  memo = withFriendRequestsIncoming.useMemo(() => new outer1_17(() => outer1_14(Date.now()), withGameFriends), items);
   const items1 = [first, memo, query];
-  const first1 = callback3(React.useMemo(() => {
+  first1 = withFriendRequests(withFriendRequestsIncoming.useMemo(() => {
     const items = [memo.filter(query), first];
     return items;
   }, items1), 1)[0];
-  closure_16 = first1;
   const items2 = [memo, withGuildMembers];
-  const effect = React.useEffect(() => {
-    let closure_0 = withGuildMembers(withAffinitySuggestions[18]).debounce(() => callback2(Date.now()), 0);
+  const effect = withFriendRequestsIncoming.useEffect(() => {
+    let closure_0 = withGuildMembers(withAffinitySuggestions[18]).debounce(() => outer1_14(Date.now()), 0);
     const subscription = memo.subscribe(() => {
       callback();
     }, withGuildMembers);
-    return () => closure_15.unsubscribe();
+    return () => outer1_15.unsubscribe();
   }, items2);
   const items3 = [memo, query, withGuildMembers];
-  const effect1 = React.useEffect(() => {
+  const effect1 = withFriendRequestsIncoming.useEffect(() => {
     const response = memo.fetch(query, withGuildMembers);
   }, items3);
-  const effect2 = React.useEffect(() => {
+  const effect2 = withFriendRequestsIncoming.useEffect(() => {
     const userAffinitiesV2 = query(withAffinitySuggestions[20]).fetchUserAffinitiesV2();
   }, []);
   const items4 = [first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, flag, num, flag2];
-  return React.useMemo(() => callback({ data: first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: flag, affinitySuggestionsLimit: num, withAlphabeticalSections: flag2 }), items4);
+  return withFriendRequestsIncoming.useMemo(() => outer1_23({ data: first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: flag, affinitySuggestionsLimit: num, withAlphabeticalSections: flag2 }), items4);
 };
 export const UserSearch = tmp3;
 export { parseUserSearchResults };

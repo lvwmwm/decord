@@ -1,37 +1,42 @@
-// Module ID: 4356
-// Function ID: 38643
+// Module ID: 4360
+// Function ID: 38675
 // Name: useNullableMessageAuthor
-// Dependencies: []
+// Dependencies: [1348, 1917, 1910, 1838, 3767, 1849, 44, 566, 3969, 4361, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4356 (useNullableMessageAuthor)
+// Module 4360 (useNullableMessageAuthor)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function useNullableMessageAuthor(message) {
-  const arg1 = message;
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_3];
+  const _require = message;
+  let obj = _require(id[7]);
+  const items = [guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let channel = null;
-    if (null != arg0) {
-      channel = guild_id.getChannel(arg0.channel_id);
+    if (null != message) {
+      channel = guild_id.getChannel(message.channel_id);
     }
     return channel;
   });
-  const importDefault = stateFromStores;
-  let id;
+  id = undefined;
   if (null != message) {
     let author = message.author;
     if (null != author) {
       id = author.id;
     }
   }
-  const dependencyMap = id;
-  let guild_id;
+  guild_id = undefined;
   if (null != stateFromStores) {
     guild_id = stateFromStores.guild_id;
   }
-  closure_3 = guild_id;
-  const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[7]).useStateFromStores(items1, () => {
+  const items1 = [colorRoleId];
+  const stateFromStores1 = _require(id[7]).useStateFromStores(items1, () => {
     let member = null;
     if (null != guild_id) {
       member = null;
@@ -41,11 +46,11 @@ function useNullableMessageAuthor(message) {
     }
     return member;
   });
-  const obj2 = arg1(dependencyMap[7]);
+  const obj2 = _require(id[7]);
   const items2 = [closure_8];
   const items3 = [id];
-  const stateFromStores2 = arg1(dependencyMap[7]).useStateFromStores(items2, () => user.getUser(id), items3);
-  const obj3 = arg1(dependencyMap[7]);
+  const stateFromStores2 = _require(id[7]).useStateFromStores(items2, () => outer1_8.getUser(id), items3);
+  const obj3 = _require(id[7]);
   let tmp6 = stateFromStores2;
   if (null != message) {
     tmp6 = stateFromStores2;
@@ -57,38 +62,37 @@ function useNullableMessageAuthor(message) {
       tmp6 = author;
     }
   }
-  const name = importDefault(dependencyMap[8]).useName(tmp6);
-  const obj4 = importDefault(dependencyMap[8]);
+  const name = stateFromStores(id[8]).useName(tmp6);
+  const obj4 = stateFromStores(id[8]);
   const items4 = [closure_6];
   const items5 = [guild_id];
-  let colorRoleId;
-  const stateFromStores3 = arg1(dependencyMap[7]).useStateFromStores(items4, () => guild.getGuild(guild_id), items5);
+  colorRoleId = undefined;
+  const stateFromStores3 = _require(id[7]).useStateFromStores(items4, () => outer1_6.getGuild(guild_id), items5);
   if (null != stateFromStores1) {
     colorRoleId = stateFromStores1.colorRoleId;
   }
-  closure_4 = colorRoleId;
-  const obj5 = arg1(dependencyMap[7]);
-  const items6 = [closure_5];
+  const obj5 = _require(id[7]);
+  const items6 = [_createForOfIteratorHelperLoose];
   const items7 = [guild_id, colorRoleId];
-  const stateFromStores4 = arg1(dependencyMap[7]).useStateFromStores(items6, () => {
+  const stateFromStores4 = _require(id[7]).useStateFromStores(items6, () => {
     let role;
     if (null != guild_id) {
       if (null != colorRoleId) {
-        role = role.getRole(guild_id, colorRoleId);
+        role = outer1_5.getRole(guild_id, colorRoleId);
       }
     }
     return role;
   }, items7);
-  const obj6 = arg1(dependencyMap[7]);
+  const obj6 = _require(id[7]);
   const items8 = [closure_7];
-  const stateFromStores5 = arg1(dependencyMap[7]).useStateFromStores(items8, () => {
+  const stateFromStores5 = _require(id[7]).useStateFromStores(items8, () => {
     let nickname = null;
     if (null != id) {
       nickname = null;
       if (null != stateFromStores) {
         nickname = null;
         if (stateFromStores.isPrivate()) {
-          nickname = nickname.getNickname(id);
+          nickname = outer1_7.getNickname(id);
         }
       }
     }
@@ -103,24 +107,23 @@ function useNullableMessageAuthor(message) {
   return tmp14;
 }
 function useNullableUserAuthor(stateFromStores1, channel) {
+  const _require = channel;
   let id;
   if (null != stateFromStores1) {
     id = stateFromStores1.id;
   }
-  const importDefault = id;
   let guild_id;
   if (null != channel) {
     guild_id = channel.guild_id;
   }
-  const dependencyMap = guild_id;
-  let obj = channel(dependencyMap[7]);
+  let obj = _require(guild_id[7]);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
     if (null != guild_id) {
       member = null;
       if (null != id) {
-        member = member.getMember(guild_id, id);
+        member = outer1_4.getMember(guild_id, id);
       }
     }
     return member;
@@ -128,40 +131,39 @@ function useNullableUserAuthor(stateFromStores1, channel) {
   const items1 = [closure_6];
   const items2 = [guild_id];
   let colorRoleId;
-  stateFromStores1 = channel(dependencyMap[7]).useStateFromStores(items1, () => guild.getGuild(guild_id), items2);
+  stateFromStores1 = _require(guild_id[7]).useStateFromStores(items1, () => outer1_6.getGuild(guild_id), items2);
   if (null != stateFromStores) {
     colorRoleId = stateFromStores.colorRoleId;
   }
-  let closure_3 = colorRoleId;
-  const obj2 = channel(dependencyMap[7]);
-  const items3 = [closure_5];
+  const obj2 = _require(guild_id[7]);
+  const items3 = [_createForOfIteratorHelperLoose];
   const items4 = [guild_id, colorRoleId];
-  const stateFromStores2 = channel(dependencyMap[7]).useStateFromStores(items3, () => {
+  const stateFromStores2 = _require(guild_id[7]).useStateFromStores(items3, () => {
     let role;
     if (null != guild_id) {
       if (null != colorRoleId) {
-        role = role.getRole(guild_id, colorRoleId);
+        role = outer1_5.getRole(guild_id, colorRoleId);
       }
     }
     return role;
   }, items4);
-  const obj3 = channel(dependencyMap[7]);
+  const obj3 = _require(guild_id[7]);
   const items5 = [closure_7];
-  const stateFromStores3 = channel(dependencyMap[7]).useStateFromStores(items5, () => {
+  const stateFromStores3 = _require(guild_id[7]).useStateFromStores(items5, () => {
     let nickname = null;
     if (null != id) {
       nickname = null;
-      if (null != arg1) {
+      if (null != _private) {
         nickname = null;
-        if (arg1.isPrivate()) {
-          nickname = nickname.getNickname(id);
+        if (_private.isPrivate()) {
+          nickname = outer1_7.getNickname(id);
         }
       }
     }
     return nickname;
   });
-  const obj4 = channel(dependencyMap[7]);
-  obj = { user: stateFromStores1, channel, guild: stateFromStores1, memberColorRole: stateFromStores2, member: stateFromStores, userName: importDefault(dependencyMap[8]).useName(stateFromStores1), friendNickname: stateFromStores3 };
+  const obj4 = _require(guild_id[7]);
+  obj = { user: stateFromStores1, channel, guild: stateFromStores1, memberColorRole: stateFromStores2, member: stateFromStores, userName: id(guild_id[8]).useName(stateFromStores1), friendNickname: stateFromStores3 };
   let displayNameStyles;
   if (null != stateFromStores1) {
     displayNameStyles = stateFromStores1.displayNameStyles;
@@ -179,7 +181,7 @@ function getUserAuthor(user, channel) {
     guild_id = channel.guild_id;
   }
   let member = null;
-  const guild = guild.getGuild(guild_id);
+  guild = guild.getGuild(guild_id);
   if (null != guild_id) {
     member = null;
     if (null != id) {
@@ -226,7 +228,7 @@ function computeMessageAuthor(channel) {
   let str = "???";
   if (null != user) {
     if (null == userName) {
-      let obj = importDefault(dependencyMap[8]);
+      let obj = importDefault(3969);
       userName = obj.getName(user);
     }
     str = userName;
@@ -242,7 +244,7 @@ function computeMessageAuthor(channel) {
         id1 = guild.id;
       }
       if (null == id1) {
-        obj = { 9223372036854775807: "mn", 9223372036854775807: "description", 0: "Array" };
+        obj = { nick: null, colorString: null, colorStrings: null };
         let tmp9 = str;
         if (null != friendNickname) {
           tmp9 = friendNickname;
@@ -251,7 +253,7 @@ function computeMessageAuthor(channel) {
         obj.displayNameStyles = displayNameStyles;
         let obj1 = obj;
       } else if (null == member) {
-        obj = { 9223372036854775807: "mn", 9223372036854775807: "description", 0: "Array", nick: str, displayNameStyles };
+        obj = { nick: str, colorString: null, colorStrings: null, displayNameStyles };
         obj1 = obj;
       } else {
         obj1 = {};
@@ -286,20 +288,14 @@ function computeMessageAuthor(channel) {
     }
     return obj1;
   }
-  const obj2 = { 9223372036854775807: "mn", 9223372036854775807: "description", 0: "Array", nick: str, displayNameStyles };
+  const obj2 = { nick: str, colorString: null, colorStrings: null, displayNameStyles };
   obj1 = obj2;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/messages/useMessageAuthor.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/useMessageAuthor.tsx");
 
 export default function useMessageNickAndColor(message) {
   let tmp = useNullableMessageAuthor(message);
-  importDefault(dependencyMap[6])(null != tmp, "Result cannot be null because the message is not null");
+  importDefault(44)(null != tmp, "Result cannot be null because the message is not null");
   if (null != arg1) {
     tmp = arg1;
   }
@@ -311,7 +307,7 @@ export const getMessageAuthor = function getMessageAuthor(message) {
 };
 export const useUserNickAndColor = function useUserNickAndColor(stateFromStores1, channel) {
   const tmp = useNullableUserAuthor(stateFromStores1, channel);
-  importDefault(dependencyMap[6])(null != tmp, "Result cannot be null because user and channel are not null");
+  importDefault(44)(null != tmp, "Result cannot be null because user and channel are not null");
   return tmp;
 };
 export { useNullableUserAuthor };

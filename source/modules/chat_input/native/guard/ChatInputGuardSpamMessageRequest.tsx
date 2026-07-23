@@ -1,43 +1,45 @@
-// Module ID: 11472
-// Function ID: 89371
-// Dependencies: []
+// Module ID: 11482
+// Function ID: 89421
+// Dependencies: [31, 1849, 33, 1456, 566, 11483, 11475, 3831, 1212, 9176, 11481, 4138, 2]
 
-// Module 11472
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 11482
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo(function ChatInputGuardSpamMessageRequest(channel) {
+  let closure_3;
+  let _isNativeReflectConstruct;
   let isOptimisticRejected;
   let isRejectLoading;
   let isUserProfileLoading;
   channel = channel.channel;
-  const arg1 = channel;
-  let obj = arg1(closure_2[3]);
+  let obj = channel(1456);
   const navigation = obj.useNavigation();
-  const importDefault = navigation;
-  const items = [closure_4];
-  const stateFromStores = arg1(closure_2[4]).useStateFromStores(items, () => user.getUser(channel.getRecipientId()));
-  const obj2 = arg1(closure_2[4]);
-  closure_2 = arg1(closure_2[5]).useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = channel(566).useStateFromStores(items, () => outer1_4.getUser(channel.getRecipientId()));
+  const obj2 = channel(566);
+  const dependencyMap = channel(11483).useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
   const callback = importAllResult.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj3 = arg1(closure_2[5]);
+  const obj3 = channel(11483);
   obj = {
     user: stateFromStores,
     onError() {
-      let obj = navigation(closure_2[7]);
+      let obj = navigation(3831);
       obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE" };
-      const intl = channel(closure_2[8]).intl;
-      obj.content = intl.string(channel(closure_2[8]).t.EDYbS+);
-      obj.icon = navigation(closure_2[9]);
+      const intl = channel(1212).intl;
+      obj.content = intl.string(channel(1212).t["EDYbS+"]);
+      obj.icon = navigation(9176);
       obj.open(obj);
     },
     onRejectSuccess: callback
   };
-  const messageRequestActions = arg1(closure_2[6]).useMessageRequestActions(obj);
-  ({ rejectMessageRequest: closure_3, isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam: closure_4 } = messageRequestActions);
+  const messageRequestActions = channel(11475).useMessageRequestActions(obj);
+  ({ rejectMessageRequest: closure_3, isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam: _isNativeReflectConstruct } = messageRequestActions);
   let tmp5 = isRejectLoading;
   if (!isRejectLoading) {
     tmp5 = isUserProfileLoading;
@@ -46,14 +48,14 @@ const memoResult = importAllResult.memo(function ChatInputGuardSpamMessageReques
     tmp5 = isOptimisticRejected;
   }
   obj = { type: "button-action" };
-  const obj4 = arg1(closure_2[6]);
+  const obj4 = channel(11475);
   const tmp6 = jsx;
-  const intl = arg1(closure_2[8]).intl;
-  obj.message = intl.string(arg1(closure_2[8]).t.fS08qB);
-  const intl2 = arg1(closure_2[8]).intl;
-  obj.subtext = intl2.string(arg1(closure_2[8]).t.8U5OXE);
-  const intl3 = arg1(closure_2[8]).intl;
-  obj.buttonPrimaryText = intl3.string(arg1(closure_2[8]).t.cpT0Cq);
+  let intl = channel(1212).intl;
+  obj.message = intl.string(channel(1212).t.fS08qB);
+  const intl2 = channel(1212).intl;
+  obj.subtext = intl2.string(channel(1212).t["8U5OXE"]);
+  const intl3 = channel(1212).intl;
+  obj.buttonPrimaryText = intl3.string(channel(1212).t.cpT0Cq);
   obj.buttonPrimaryOnPress = function buttonPrimaryOnPress(stopPropagation) {
     stopPropagation.stopPropagation();
     callback(channel.id);
@@ -64,16 +66,16 @@ const memoResult = importAllResult.memo(function ChatInputGuardSpamMessageReques
   }
   obj.buttonPrimaryLoading = isRejectLoading;
   obj.buttonPrimaryVariant = "destructive";
-  const intl4 = arg1(closure_2[8]).intl;
-  obj.buttonSecondaryText = intl4.string(arg1(closure_2[8]).t.olZgw5);
+  const intl4 = channel(1212).intl;
+  obj.buttonSecondaryText = intl4.string(channel(1212).t.olZgw5);
   obj.buttonSecondaryOnPress = function buttonSecondaryOnPress(stopPropagation) {
     stopPropagation.stopPropagation();
-    user(channel, closure_2, () => lib(closure_2[11]).transitionToChannel(lib.id, { navigationReplace: true }));
+    callback2(channel, closure_2, () => channel(table[11]).transitionToChannel(outer1_0.id, { navigationReplace: true }));
   };
   obj.buttonSecondaryDisabled = tmp5;
   obj.buttonSecondaryLoading = isUserProfileLoading;
-  return tmp6(importDefault(closure_2[10]), obj);
+  return tmp6(navigation(11481), obj);
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardSpamMessageRequest.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardSpamMessageRequest.tsx");
 
 export default memoResult;

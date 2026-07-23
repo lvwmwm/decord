@@ -1,17 +1,19 @@
-// Module ID: 3808
-// Function ID: 31414
+// Module ID: 3810
+// Function ID: 31419
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [6, 7, 15, 17, 18, 3811, 3815, 566, 686, 2]
 
-// Module 3808 (_isNativeReflectConstruct)
-import closure_2 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 3810 (_isNativeReflectConstruct)
+import SettingsConfig from "SettingsConfig";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import getCountryCodeByCountryName from "getCountryCodeByCountryName";
 
+let closure_7;
+let closure_8;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -29,25 +31,25 @@ function setUserCountryCode(countryCode) {
     if (null == tmp2) {
       tmp2 = callback3();
     }
-    let closure_10 = tmp2;
+    let c10 = tmp2;
   }
 }
-({ getDefaultCountryCode: closure_7, getCountryCodeByAlpha2: closure_8 } = __exportStarResult1);
-let closure_9 = null;
-let closure_10 = null;
-let tmp3 = (Store) => {
+({ getDefaultCountryCode: closure_7, getCountryCodeByAlpha2: closure_8 } = getCountryCodeByCountryName);
+let c9 = null;
+let c10 = null;
+let tmp3 = ((Store) => {
   class RegionalFeatureConfigStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, RegionalFeatureConfigStore);
-      obj = closure_5(RegionalFeatureConfigStore);
-      tmp2 = closure_4;
-      if (closure_11()) {
+      tmp = outer1_2(this, RegionalFeatureConfigStore);
+      obj = outer1_5(RegionalFeatureConfigStore);
+      tmp2 = outer1_4;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -56,12 +58,11 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = RegionalFeatureConfigStore;
   callback2(RegionalFeatureConfigStore, Store);
   let obj = {
     key: "getRegionalFeatureConfig",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   const items = [obj, , , , , ];
@@ -69,8 +70,8 @@ let tmp3 = (Store) => {
     key: "isFeatureAgeGated",
     value(AGE_GATED_SPACES) {
       let isFeatureAgeGatedResult;
-      if (null != closure_9) {
-        isFeatureAgeGatedResult = closure_9.isFeatureAgeGated(AGE_GATED_SPACES);
+      if (null != outer1_9) {
+        isFeatureAgeGatedResult = outer1_9.isFeatureAgeGated(AGE_GATED_SPACES);
       }
       return null != isFeatureAgeGatedResult && isFeatureAgeGatedResult;
     }
@@ -80,8 +81,8 @@ let tmp3 = (Store) => {
     key: "isSettingTeenByDefault",
     value(arg0) {
       let result;
-      if (null != closure_9) {
-        result = closure_9.isFeatureTeenByDefault(arg0);
+      if (null != outer1_9) {
+        result = outer1_9.isFeatureTeenByDefault(arg0);
       }
       return null != result && result;
     }
@@ -91,8 +92,8 @@ let tmp3 = (Store) => {
     key: "hasAgeGatedFeatures",
     value() {
       let hasAgeGatedFeaturesResult;
-      if (null != closure_9) {
-        hasAgeGatedFeaturesResult = closure_9.hasAgeGatedFeatures();
+      if (null != outer1_9) {
+        hasAgeGatedFeaturesResult = outer1_9.hasAgeGatedFeatures();
       }
       return null != hasAgeGatedFeaturesResult && hasAgeGatedFeaturesResult;
     }
@@ -101,8 +102,8 @@ let tmp3 = (Store) => {
     key: "hasTeenDefaults",
     value() {
       let hasTeenDefaultsResult;
-      if (null != closure_9) {
-        hasTeenDefaultsResult = closure_9.hasTeenDefaults();
+      if (null != outer1_9) {
+        hasTeenDefaultsResult = outer1_9.hasTeenDefaults();
       }
       return null != hasTeenDefaultsResult && hasTeenDefaultsResult;
     }
@@ -110,26 +111,26 @@ let tmp3 = (Store) => {
   items[5] = {
     key: "getUserCountryCode",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   return callback(RegionalFeatureConfigStore, items);
-}(require("__exportStarResult1").Store);
+})(require("initialize").Store);
 tmp3.displayName = "RegionalFeatureConfigStore";
-tmp3 = new tmp3(require("__exportStarResult1"), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(countryCode) {
     setUserCountryCode(countryCode.countryCode);
     let fromConnectionOpenResult = null;
     if (null != countryCode.regionalFeatureConfig) {
-      const RegionalFeatureConfig = arg1(dependencyMap[6]).RegionalFeatureConfig;
+      const RegionalFeatureConfig = require(3815) /* SettingsConfig */.RegionalFeatureConfig;
       fromConnectionOpenResult = RegionalFeatureConfig.fromConnectionOpen(countryCode.regionalFeatureConfig);
     }
-    let closure_9 = fromConnectionOpenResult;
+    let c9 = fromConnectionOpenResult;
   },
   SET_LOCATION_METADATA: function handleSetLocationMetadata(countryCode) {
     return setUserCountryCode(countryCode.countryCode);
   }
 });
-const result = __exportStarResult1.fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigStore.tsx");
 
 export default tmp3;

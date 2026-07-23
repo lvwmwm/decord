@@ -1,50 +1,46 @@
-// Module ID: 15608
-// Function ID: 119078
-// Dependencies: []
+// Module ID: 15725
+// Function ID: 121251
+// Dependencies: [31, 10479, 10480, 15700, 33, 566, 15699, 15723, 15726, 2]
 
-// Module 15608
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const FrameLayoutModes = arg1(dependencyMap[2]).FrameLayoutModes;
-let closure_6 = arg1(dependencyMap[3]).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
-const jsx = arg1(dependencyMap[4]).jsx;
+// Module 15725
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FrameLayoutModes } from "FrameLayoutModes";
+import { DEFAULT_PORTRAIT_LETTERBOX_CONFIG as closure_6 } from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo((transitionState) => {
   transitionState = transitionState.transitionState;
-  const arg1 = transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
-  const importDefault = transitionCleanUp;
-  let importAllResult;
-  let closure_4;
-  let FrameLayoutModes;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => stateFromStores1.getConnectedFrame());
-  const dependencyMap = stateFromStores;
   let applicationId;
+  let stateFromStores1;
+  let landscapeSafeAreasConfig;
+  const items = [stateFromStores1];
+  stateFromStores = transitionState(stateFromStores[5]).useStateFromStores(items, () => stateFromStores1.getConnectedFrame());
+  applicationId = undefined;
   if (null != stateFromStores) {
     applicationId = stateFromStores.applicationId;
   }
-  importAllResult = applicationId;
-  const obj = arg1(dependencyMap[5]);
-  const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items1, () => {
+  let obj = transitionState(stateFromStores[5]);
+  const items1 = [stateFromStores1];
+  stateFromStores1 = transitionState(stateFromStores[5]).useStateFromStores(items1, () => {
     let pipOrientationLockStateForApp;
     if (null != applicationId) {
       pipOrientationLockStateForApp = stateFromStores1.getPipOrientationLockStateForApp(applicationId);
     }
     return pipOrientationLockStateForApp;
   });
-  closure_4 = stateFromStores1;
-  const obj2 = arg1(dependencyMap[5]);
-  const landscapeSafeAreasConfig = arg1(dependencyMap[6]).useBaseActivityPanelPIPView().landscapeSafeAreasConfig;
-  FrameLayoutModes = landscapeSafeAreasConfig;
+  const obj2 = transitionState(stateFromStores[5]);
+  landscapeSafeAreasConfig = transitionState(stateFromStores[6]).useBaseActivityPanelPIPView().landscapeSafeAreasConfig;
   const items2 = [stateFromStores, landscapeSafeAreasConfig, stateFromStores1, transitionCleanUp, transitionState];
-  return importAllResult.useMemo(() => {
+  return applicationId.useMemo(() => {
     let obj = { transitionState, transitionCleanUp, pipOrientationLockState: stateFromStores1, hasActivity: null != stateFromStores, context: transitionCleanUp(stateFromStores[7]) };
-    obj = { layoutMode: landscapeSafeAreasConfig.PIP, portraitSafeAreasConfig: closure_6, landscapeSafeAreasConfig };
-    obj.children = callback(transitionCleanUp(stateFromStores[8]), obj);
-    return callback(transitionState(stateFromStores[6]).BaseActivityPanelPIPView, obj);
+    obj = { layoutMode: landscapeSafeAreasConfig.PIP, portraitSafeAreasConfig: outer1_6, landscapeSafeAreasConfig };
+    obj.children = outer1_7(transitionCleanUp(stateFromStores[8]), obj);
+    return outer1_7(transitionState(stateFromStores[6]).BaseActivityPanelPIPView, obj);
   }, items2);
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/frames/panel/native/FramePanelPIPView.tsx");
+const result = require("FrameLayoutModes").fileFinishedImporting("modules/frames/panel/native/FramePanelPIPView.tsx");
 
 export default memoResult;

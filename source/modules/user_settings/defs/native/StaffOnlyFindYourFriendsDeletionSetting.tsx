@@ -1,39 +1,41 @@
-// Module ID: 13630
-// Function ID: 103247
+// Module ID: 13744
+// Function ID: 105403
 // Name: setFindYourFriendsDeletionIsLoading
-// Dependencies: []
+// Dependencies: [5, 27, 7662, 33, 677, 682, 3743, 11709, 562, 3831, 10095, 13745, 2]
 
-// Module 13630 (setFindYourFriendsDeletionIsLoading)
+// Module 13744 (setFindYourFriendsDeletionIsLoading)
+import batchUpdates from "batchUpdates";
+import { ActivityIndicator } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+import createToggle from "createToggle";
+
+const require = arg1;
 function setFindYourFriendsDeletionIsLoading(arg0) {
-  const arg1 = arg0;
-  arg1(dependencyMap[5]).batchUpdates(() => state.setState({ isLoading: arg0 }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_6.setState({ isLoading: closure_0 }));
 }
 function useFindYourFriendsDeletionIsLoading() {
-  return callback2((isLoading) => isLoading.isLoading, arg1(dependencyMap[6]).shallow);
+  return callback2((isLoading) => isLoading.isLoading, require(3743) /* isIterable */.shallow);
 }
 function _onFindYourFriendsDeletionPress() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _onFindYourFriendsDeletionPress = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const ActivityIndicator = arg1(dependencyMap[1]).ActivityIndicator;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-let closure_6 = obj.createWithEqualityFn(() => ({ isLoading: false }));
-obj = {
+let closure_6 = useStoreWithEqualityFn.createWithEqualityFn(() => ({ isLoading: false }));
+useStoreWithEqualityFn = {
   useTitle() {
     return "STAFF ONLY - Find your friends deletion";
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
     return useFindYourFriendsDeletionIsLoading();
   },
   onPress: function onFindYourFriendsDeletionPress() {
     return _onFindYourFriendsDeletionPress(...arguments);
   },
-  usePredicate: arg1(dependencyMap[11]).useStaffOrDeveloperSettingPredicate,
+  usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
     if (useFindYourFriendsDeletionIsLoading()) {
@@ -42,8 +44,7 @@ obj = {
     return tmp;
   }
 };
-const pressable = arg1(dependencyMap[10]).createPressable(obj);
-const obj2 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
+useStoreWithEqualityFn = createToggle.createPressable(useStoreWithEqualityFn);
+const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
 
-export default pressable;
+export default useStoreWithEqualityFn;

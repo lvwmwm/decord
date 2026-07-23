@@ -1,16 +1,13 @@
 // Module ID: 565
 // Function ID: 6820
 // Name: APIError
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
 // Module 565 (APIError)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("../discord_common/js/packages/http-utils/V6OrEarlierAPIError.tsx");
-
-export const APIError = () => {
+const tmp2 = (() => {
   class APIError {
     constructor(arg0, arg1) {
       str = arg2;
@@ -87,7 +84,6 @@ export const APIError = () => {
       return;
     }
   }
-  let closure_0 = APIError;
   const items = [
     {
       key: "getFieldMessage",
@@ -101,4 +97,7 @@ export const APIError = () => {
     }
   ];
   return callback(APIError, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/http-utils/V6OrEarlierAPIError.tsx");
+
+export const APIError = tmp2;

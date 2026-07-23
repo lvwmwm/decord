@@ -1,53 +1,61 @@
-// Module ID: 10919
-// Function ID: 84909
+// Module ID: 10929
+// Function ID: 84958
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 6651, 10470, 653, 7879, 8284, 566, 10468, 10469, 6970, 2]
 // Exports: QuestContentImpressionTrackerNative
 
-// Module 10919 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10929 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE as closure_6 } from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN";
+import { AppStates } from "ME";
+import { createElement } from "result";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -148,32 +156,32 @@ function calculateVisibilityPercentage(visibilityRef) {
 }
 function useVisibilityData(adContentIds) {
   adContentIds = adContentIds.adContentIds;
-  const arg1 = adContentIds;
   const visibilityRef = adContentIds.visibilityRef;
-  const importDefault = visibilityRef;
   const overrideVisibility = adContentIds.overrideVisibility;
   const joined = adContentIds.join("_");
-  let obj = arg1(dependencyMap[5]);
+  let obj = adContentIds(7879);
   const items = [joined];
   const tmp2 = callback(obj.useRecyclingState(false, items), 2);
   let first = tmp2[0];
   const dependencyMap = tmp4;
   const items1 = [adContentIds, tmp2[1], visibilityRef];
   const effect = React.useEffect(() => {
-    function initHandlers(arg0) {
+    (function initHandlers(arg0) {
+      let children;
       let done;
       let visibilityRef;
-      ({ setVisible: closure_0, visibilityRef } = arg0);
+      ({ setVisible: children, visibilityRef } = arg0);
       if (null != visibilityRef) {
         function _loop(value) {
+          let closure_0 = value;
           const obj = {};
           const merged = Object.assign(visibilityRef.current.children[value]);
           obj["calculateVisibility"] = function calculateVisibility() {
-            arg0(callback({ visibilityRef: closure_1, entityId: arg0 }) >= closure_6);
+            value(outer4_11({ visibilityRef: outer1_1, entityId: value }) >= outer4_6);
           };
           visibilityRef.current.children[value] = obj;
         }
-        const tmp3 = callback(tmp);
+        const tmp3 = outer2_9(tmp);
         let iter = tmp3();
         if (!iter.done) {
           do {
@@ -184,24 +192,23 @@ function useVisibilityData(adContentIds) {
           } while (!done);
         }
       }
-    }({ adContentIds, setVisible: tmp4, visibilityRef });
-    let children;
+    })({ adContentIds: children, setVisible: closure_2, visibilityRef });
+    children = undefined;
     if (null != visibilityRef) {
       const current = visibilityRef.current;
       if (null != current) {
         children = current.children;
       }
     }
-    const adContentIds = children;
     return () => {
       let iter2;
       if (null != children) {
-        const tmp3 = callback(children);
+        const tmp3 = outer2_9(children);
         let iter = tmp3();
         if (!iter.done) {
           do {
-            let tmp4 = closure_0;
-            let tmp5 = closure_0[iter.value];
+            let tmp4 = children;
+            let tmp5 = children[iter.value];
             if (null != tmp5) {
               tmp5.calculateVisibility = undefined;
             }
@@ -215,29 +222,23 @@ function useVisibilityData(adContentIds) {
   if (null != overrideVisibility) {
     first = overrideVisibility;
   }
-  obj = { visible: first, visibleChanged: first !== importDefault(dependencyMap[6])(first) };
+  obj = { visible: first, visibleChanged: first !== visibilityRef(8284)(first) };
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE;
-const AppStates = arg1(dependencyMap[4]).AppStates;
-const createElement = arg1(dependencyMap[1]).createElement;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/quests/native/QuestContentImpressionTracker.native.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/native/QuestContentImpressionTracker.native.tsx");
 
 export const QuestContentImpressionTrackerNative = function QuestContentImpressionTrackerNative(skipRemountKey) {
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_5];
-  const tmp = obj.useStateFromStores(items, () => state.getState()) === AppStates.ACTIVE;
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const tmp = obj.useStateFromStores(items, () => outer1_5.getState()) === AppStates.ACTIVE;
   const ref = React.useRef(null);
-  let obj1 = arg1(dependencyMap[8]);
+  let obj1 = require(10468) /* useQuestImpressionRef */;
   const adContentImpressionTrackerProps = obj1.useAdContentImpressionTrackerProps(skipRemountKey);
   const adContentIds = adContentImpressionTrackerProps.adContentIds;
   obj = {};
   const merged = Object.assign(skipRemountKey);
   obj["adContentIds"] = adContentIds;
-  const tmp3 = importDefault(dependencyMap[6])(tmp);
+  const tmp3 = importDefault(8284)(tmp);
   obj = {};
   const merged1 = Object.assign(skipRemountKey);
   const merged2 = Object.assign(useVisibilityData(obj));
@@ -254,11 +255,11 @@ export const QuestContentImpressionTrackerNative = function QuestContentImpressi
   obj1["key"] = key;
   obj1["adContentIds"] = adContentIds;
   if (tmp11) {
-    obj1["adCreativeType"] = arg1(dependencyMap[10]).AdCreativeType.QUEST;
+    obj1["adCreativeType"] = require(6970) /* AdCreativeType */.AdCreativeType.QUEST;
     let tmp13 = obj1;
   } else {
     obj1["adCreativeType"] = skipRemountKey.adCreativeType;
     tmp13 = obj1;
   }
-  return createElement(arg1(dependencyMap[9]).QuestContentImpressionTracker, tmp13);
+  return createElement(require(10469) /* getQuestPlacementCombinationKey */.QuestContentImpressionTracker, tmp13);
 };

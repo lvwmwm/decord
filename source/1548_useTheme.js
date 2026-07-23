@@ -1,12 +1,13 @@
 // Module ID: 1548
-// Function ID: 17574
+// Function ID: 17575
 // Name: useTheme
-// Dependencies: []
+// Dependencies: [31, 1544]
 // Exports: default
 
 // Module 1548 (useTheme)
-let closure_2 = importAll(dependencyMap[0]);
+import result from "result";
+
 
 export default function useTheme() {
-  return React.useContext(importDefault(dependencyMap[1]));
+  return React.useContext(importDefault(1544));
 };

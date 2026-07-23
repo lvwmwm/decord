@@ -1,15 +1,14 @@
-// Module ID: 8857
-// Function ID: 69897
+// Module ID: 8864
+// Function ID: 69938
 // Name: setAudioOutputDevice
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: setAudioOutputDevice
 
-// Module 8857 (setAudioOutputDevice)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/voice_calls/native/AudioManagerActionCreator.tsx");
+// Module 8864 (setAudioOutputDevice)
+const result = require("set").fileFinishedImporting("modules/voice_calls/native/AudioManagerActionCreator.tsx");
 
 export const setAudioOutputDevice = function setAudioOutputDevice(deviceId) {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(686);
   obj = { type: "NATIVE_AUDIO_SET_OUTPUT_DEVICE", device: deviceId };
   obj.dispatch(obj);
 };

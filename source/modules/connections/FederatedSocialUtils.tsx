@@ -1,13 +1,13 @@
-// Module ID: 9000
-// Function ID: 70859
+// Module ID: 9007
+// Function ID: 70900
 // Name: validateHandle
-// Dependencies: []
+// Dependencies: [653, 2]
 // Exports: getExampleHandle, validateHandle
 
-// Module 9000 (validateHandle)
-const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/connections/FederatedSocialUtils.tsx");
+// Module 9007 (validateHandle)
+import { PlatformTypes } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/connections/FederatedSocialUtils.tsx");
 
 export const validateHandle = function validateHandle(first, platformType) {
   if (platformType === PlatformTypes.MASTODON) {

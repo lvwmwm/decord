@@ -1,31 +1,32 @@
-// Module ID: 16511
-// Function ID: 127496
+// Module ID: 16628
+// Function ID: 129670
 // Name: promise
-// Dependencies: []
+// Dependencies: [653, 16623, 675, 4324, 5484, 8922, 2]
 
-// Module 16511 (promise)
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/headless_tasks/android/DismissCallAction.tsx");
+// Module 16628 (promise)
+import { AnalyticEvents } from "ME";
+
+const result = require("expandLocation").fileFinishedImporting("modules/headless_tasks/android/DismissCallAction.tsx");
 
 export default (arg0) => {
-  const require = arg0;
+  let closure_0 = arg0;
   return new Promise((arg0) => {
-    callback(closure_2[1]).awaitStorage((self) => {
-      if (self.isFullscreenCallUI) {
-        let obj = callback(closure_2[2]);
+    let closure_0 = arg0;
+    outer1_1(outer1_2[1]).awaitStorage(() => {
+      if (lib.isFullscreenCallUI) {
+        let obj = outer2_1(outer2_2[2]);
         obj = { action_type: "decline" };
-        const merged = Object.assign(self(closure_2[3]).collectChannelAnalyticsMetadataFromId(self.channelId));
-        obj.track(constants.CALLKIT_CLICKED, obj);
-        const obj3 = self(closure_2[3]);
+        const merged = Object.assign(lib(outer2_2[3]).collectChannelAnalyticsMetadataFromId(lib.channelId));
+        obj.track(outer2_3.CALLKIT_CLICKED, obj);
+        const obj3 = lib(outer2_2[3]);
       }
-      obj = { location: callback(closure_2[4]).PUSH_NOTIFICATION, guild_id: self.guildId, ringer_user_id: self.userId };
-      const obj4 = callback(closure_2[2]);
-      const merged1 = Object.assign(self(closure_2[3]).collectChannelAnalyticsMetadataFromId(self.channelId));
-      obj4.track(constants.RING_CALL_DECLINED, obj);
-      const obj6 = self(closure_2[3]);
-      callback(closure_2[5]).stopRinging(self.channelId);
-      self(true);
+      obj = { location: outer2_1(outer2_2[4]).PUSH_NOTIFICATION, guild_id: lib.guildId, ringer_user_id: lib.userId };
+      const obj4 = outer2_1(outer2_2[2]);
+      const merged1 = Object.assign(lib(outer2_2[3]).collectChannelAnalyticsMetadataFromId(lib.channelId));
+      obj4.track(outer2_3.RING_CALL_DECLINED, obj);
+      const obj6 = lib(outer2_2[3]);
+      outer2_1(outer2_2[5]).stopRinging(lib.channelId);
+      lib(true);
     });
   });
 };

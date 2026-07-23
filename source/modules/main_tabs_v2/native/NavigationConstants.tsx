@@ -1,10 +1,9 @@
-// Module ID: 14612
-// Function ID: 110132
+// Module ID: 14727
+// Function ID: 112296
 // Name: StackNavigationAnimationSettings
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 14612 (StackNavigationAnimationSettings)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/NavigationConstants.tsx");
+// Module 14727 (StackNavigationAnimationSettings)
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/NavigationConstants.tsx");
 
-export const StackNavigationAnimationSettings = { placeholder: "targetFrames", value: "VOICE_CATEGORY_EXPAND", onChange: "ET" };
+export const StackNavigationAnimationSettings = { animation: "simple_push", duration: 250, fullScreenGestureEnabled: true };

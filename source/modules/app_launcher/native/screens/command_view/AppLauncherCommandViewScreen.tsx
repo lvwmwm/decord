@@ -1,33 +1,58 @@
-// Module ID: 11266
-// Function ID: 87615
+// Module ID: 11276
+// Function ID: 87665
 // Name: AppLauncherCommandViewFooter
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 4122, 7920, 1910, 1455, 653, 1552, 33, 4130, 689, 11277, 566, 3991, 4131, 4134, 4099, 4554, 3974, 4544, 1212, 4076, 10884, 4324, 5160, 11278, 6755, 8284, 11171, 682, 11152, 11280, 1881, 7919, 11225, 10831, 1450, 11156, 9652, 11281, 9653, 4674, 1820, 4665, 11282, 8182, 5189, 4126, 11283, 11284, 11312, 1273, 44, 11248, 8189, 6753, 7925, 8176, 11313, 11314, 11234, 11235, 2]
 // Exports: default
 
-// Module 11266 (AppLauncherCommandViewFooter)
+// Module 11276 (AppLauncherCommandViewFooter)
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import batchUpdates from "batchUpdates";
+import get_ActivityIndicator from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_13 from "_createForOfIteratorHelperLoose";
+import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+import ME from "ME";
+import { MediaKeyboardTarget } from "DRAG_HANDLE";
+import jsxProd from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let DEFAULT_CONTENT_PADDING;
+let closure_11;
+let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function AppLauncherCommandViewFooter(arg0) {
   let animatedStyle;
   let enableSubmit;
   let footerStickyInsetBottom;
   let isSending;
   let onSubmit;
-  ({ onHeightChange: closure_0, isSending } = arg0);
-  const importDefault = isSending;
+  let require;
+  ({ onHeightChange: require, isSending } = arg0);
   ({ enableSubmit, onSubmit, animatedStyle, footerStickyInsetBottom } = arg0);
-  const tmp = callback7();
-  const tmp2 = callback2(React.useState(0), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = callback(React.useState(0), 2);
   let closure_2 = tmp2[1];
-  let obj = arg1(dependencyMap[14]);
-  const items = [closure_10];
-  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const dependencyMap = stateFromStores;
-  const tmp4 = callback2(React.useState(false), 2);
+  let obj = require(stateFromStores[14]);
+  let items = [closure_10];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_10.useReducedMotion);
+  const tmp4 = callback(React.useState(false), 2);
   const first = tmp4[0];
-  let closure_4 = first;
-  const callback2 = tmp4[1];
-  let obj1 = arg1(dependencyMap[15]);
-  const fn = function h() {
+  callback = tmp4[1];
+  let obj1 = require(stateFromStores[15]);
+  let fn = function h() {
     if (stateFromStores) {
       let obj = {};
     } else {
@@ -35,40 +60,40 @@ function AppLauncherCommandViewFooter(arg0) {
       if (first) {
         obj.opacity = 1;
         obj = {};
-        const obj8 = callback(stateFromStores[16]);
+        const obj8 = outer1_0(stateFromStores[16]);
         const fn = function e() {
-          const obj = callback(closure_3[15]);
-          return callback(closure_3[15]).runOnJS(callback(closure_3[18]).triggerHapticFeedback)(callback(closure_3[18]).HapticFeedbackTypes.IMPACT_LIGHT);
+          const obj = outer2_0(stateFromStores[15]);
+          return outer2_0(stateFromStores[15]).runOnJS(outer2_0(stateFromStores[18]).triggerHapticFeedback)(outer2_0(stateFromStores[18]).HapticFeedbackTypes.IMPACT_LIGHT);
         };
-        let obj1 = { runOnJS: callback(stateFromStores[15]).runOnJS, triggerHapticFeedback: callback(stateFromStores[18]).triggerHapticFeedback, HapticFeedbackTypes: callback(stateFromStores[18]).HapticFeedbackTypes };
+        let obj1 = { runOnJS: outer1_0(stateFromStores[15]).runOnJS, triggerHapticFeedback: outer1_0(stateFromStores[18]).triggerHapticFeedback, HapticFeedbackTypes: outer1_0(stateFromStores[18]).HapticFeedbackTypes };
         fn.__closure = obj1;
         fn.__workletHash = 8545458901090;
-        fn.__initData = closure_25;
-        obj.translateX = callback(stateFromStores[15]).withDelay(100, obj8.withTiming(-4, callback(stateFromStores[17]).timingStandard, "respect-motion-settings", fn));
+        fn.__initData = outer1_25;
+        obj.translateX = outer1_0(stateFromStores[15]).withDelay(100, obj8.withTiming(-4, outer1_0(stateFromStores[17]).timingStandard, "respect-motion-settings", fn));
         const items = [obj];
         obj.transform = items;
-        const obj7 = callback(stateFromStores[15]);
+        const obj7 = outer1_0(stateFromStores[15]);
       } else {
-        obj1 = callback(stateFromStores[16]);
+        obj1 = outer1_0(stateFromStores[16]);
         let num2 = 1;
         if (isSending.get()) {
           num2 = 0;
         }
-        obj.opacity = obj1.withTiming(num2, callback(stateFromStores[17]).timingStandard);
+        obj.opacity = obj1.withTiming(num2, outer1_0(stateFromStores[17]).timingStandard);
         const obj2 = {};
         let num4 = 0;
         if (isSending.get()) {
           num4 = 100;
         }
-        obj2.translateX = callback(stateFromStores[16]).withTiming(num4, callback(stateFromStores[17]).timingStandard);
+        obj2.translateX = outer1_0(stateFromStores[16]).withTiming(num4, outer1_0(stateFromStores[17]).timingStandard);
         const items1 = [obj2];
         obj.transform = items1;
-        const obj4 = callback(stateFromStores[16]);
+        const obj4 = outer1_0(stateFromStores[16]);
       }
     }
     return obj;
   };
-  obj = { shouldReduceMotion: stateFromStores, isPressedDown: first, withDelay: arg1(dependencyMap[15]).withDelay, withTiming: arg1(dependencyMap[16]).withTiming, timingStandard: arg1(dependencyMap[17]).timingStandard, runOnJS: arg1(dependencyMap[15]).runOnJS, triggerHapticFeedback: arg1(dependencyMap[18]).triggerHapticFeedback, HapticFeedbackTypes: arg1(dependencyMap[18]).HapticFeedbackTypes, isSending };
+  obj = { shouldReduceMotion: stateFromStores, isPressedDown: first, withDelay: require(stateFromStores[15]).withDelay, withTiming: require(stateFromStores[16]).withTiming, timingStandard: require(stateFromStores[17]).timingStandard, runOnJS: require(stateFromStores[15]).runOnJS, triggerHapticFeedback: require(stateFromStores[18]).triggerHapticFeedback, HapticFeedbackTypes: require(stateFromStores[18]).HapticFeedbackTypes, isSending };
   fn.__closure = obj;
   fn.__workletHash = 576353278359;
   fn.__initData = closure_24;
@@ -83,16 +108,16 @@ function AppLauncherCommandViewFooter(arg0) {
     },
     style: items1
   };
-  const items1 = [tmp.footerContainer, animatedStyle];
+  items1 = [tmp.footerContainer, animatedStyle];
   obj1 = { style: obj2, start: constants.START, end: obj3 };
-  const obj2 = { bottom: -footerStickyInsetBottom, left: tmp.footerContainer.paddingHorizontal };
-  const obj3 = { x: 0, y: 12 / (tmp2[0] + 12) };
-  const tmp7 = importDefault(dependencyMap[19]);
-  const items2 = [arg1(dependencyMap[20]).hexWithOpacity(tmp.linearGradient.backgroundColor, 0), tmp.linearGradient.backgroundColor];
+  obj2 = { width: "100%", top: -12, bottom: -footerStickyInsetBottom, left: tmp.footerContainer.paddingHorizontal, position: "absolute" };
+  obj3 = { x: 0, y: 12 / (tmp2[0] + 12) };
+  const tmp7 = isSending(stateFromStores[19]);
+  const items2 = [require(stateFromStores[20]).hexWithOpacity(tmp.linearGradient.backgroundColor, 0), tmp.linearGradient.backgroundColor];
   obj1.colors = items2;
   obj1.pointerEvents = "none";
-  const items3 = [callback5(tmp7, obj1), ];
-  const obj4 = {
+  const items3 = [callback4(tmp7, obj1), ];
+  let obj4 = {
     onPress: onSubmit,
     onPressIn() {
       return callback3(true);
@@ -103,16 +128,16 @@ function AppLauncherCommandViewFooter(arg0) {
     disabled: !enableSubmit,
     style: tmp.submitButton
   };
-  const intl = arg1(dependencyMap[22]).intl;
-  obj4.text = intl.string(arg1(dependencyMap[22]).t.TXNS7S);
+  const intl = require(stateFromStores[22]).intl;
+  obj4.text = intl.string(require(stateFromStores[22]).t.TXNS7S);
   const obj5 = { style: animatedStyle };
-  const obj6 = { style: { marginLeft: 8 }, color: importDefault(dependencyMap[12]).unsafe_rawColors.WHITE, size: "sm" };
-  obj5.children = callback5(arg1(dependencyMap[23]).SendMessageIcon, obj6);
-  obj4.icon = callback5(importDefault(dependencyMap[15]).View, obj5);
+  const obj6 = { style: { marginLeft: 8 }, color: isSending(stateFromStores[12]).unsafe_rawColors.WHITE, size: "sm" };
+  obj5.children = callback4(require(stateFromStores[23]).SendMessageIcon, obj6);
+  obj4.icon = callback4(isSending(stateFromStores[15]).View, obj5);
   obj4.iconPosition = "end";
-  items3[1] = callback5(arg1(dependencyMap[21]).BaseTextButton, obj4);
+  items3[1] = callback4(require(stateFromStores[21]).BaseTextButton, obj4);
   obj.children = items3;
-  return callback6(importDefault(dependencyMap[15]).View, obj);
+  return callback5(isSending(stateFromStores[15]).View, obj);
 }
 function AppLauncherCommandViewInner(command) {
   let hasPermissions;
@@ -121,34 +146,28 @@ function AppLauncherCommandViewInner(command) {
   let preSelectedCommand;
   let section;
   command = command.command;
-  const arg1 = command;
   const context = command.context;
-  const importDefault = context;
   ({ preSelectedCommand, installOnDemand } = command);
-  const importAll = installOnDemand;
   const sectionName = command.sectionName;
-  const dependencyMap = sectionName;
   const analyticsLocation = command.analyticsLocation;
-  let callback = analyticsLocation;
   const onCommandExecuted = command.onCommandExecuted;
-  let callback2 = onCommandExecuted;
-  let tmp7;
+  let c16;
   let guild_id;
   let stateFromStores;
   let closure_19;
+  let callback4;
   let callback5;
-  let callback6;
   let closure_22;
-  let callback7;
-  let closure_24;
+  let _createForOfIteratorHelperLoose;
+  let first1;
   let closure_25;
   let closure_26;
-  let AppLauncherCommandViewFooter;
+  let first2;
   let closure_28;
   let closure_29;
   let closure_30;
   let closure_31;
-  let NoPermsState;
+  let first3;
   let closure_33;
   let closure_34;
   let first4;
@@ -162,8 +181,8 @@ function AppLauncherCommandViewInner(command) {
   let sharedValue;
   let sharedValue1;
   let callback1;
-  callback2 = undefined;
-  let tmp36;
+  let callback2;
+  let c47;
   let commandContext;
   let callback3;
   let height;
@@ -171,7 +190,7 @@ function AppLauncherCommandViewInner(command) {
   let bottomSheetPosition;
   let closure_53;
   callback5 = undefined;
-  callback6 = undefined;
+  let callback6;
   let closure_56;
   let setLatch;
   let tryCallback;
@@ -179,20 +198,20 @@ function AppLauncherCommandViewInner(command) {
   let closure_60;
   let closure_61;
   ({ section, loading, hasPermissions } = command);
-  let tmp = callback7();
+  let tmp = _createForOfIteratorHelperLoose();
   const React = tmp;
-  const tmp2 = callback4();
-  let obj = arg1(dependencyMap[24]);
+  const tmp2 = callback3();
+  let closure_7 = tmp2;
+  let obj = command(sectionName[24]);
   const requiredAppLauncherContext = obj.useRequiredAppLauncherContext();
   const keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
   const entrypoint = requiredAppLauncherContext.entrypoint;
   const chatInputRef = requiredAppLauncherContext.chatInputRef;
-  let closure_10 = chatInputRef;
   const ref = React.useRef(null);
-  callback3 = React.useRef({});
+  callback2 = React.useRef({});
   let closure_13 = React.useRef(0);
   let closure_14 = React.useRef(0);
-  let callback4 = React.useRef(0);
+  callback3 = React.useRef(0);
   let commandId;
   if (null != preSelectedCommand) {
     commandId = preSelectedCommand.commandId;
@@ -201,7 +220,7 @@ function AppLauncherCommandViewInner(command) {
   if (null != command) {
     id = command.id;
   }
-  tmp7 = null;
+  let tmp7 = null;
   if (commandId === id) {
     let prefilledOptions;
     if (null != preSelectedCommand) {
@@ -212,26 +231,27 @@ function AppLauncherCommandViewInner(command) {
       tmp7 = prefilledOptions;
     }
   }
+  c16 = tmp7;
   guild_id = context.channel.guild_id;
-  let obj1 = arg1(dependencyMap[14]);
-  const items = [closure_13];
+  let obj1 = command(sectionName[14]);
+  let items = [closure_13];
   stateFromStores = obj1.useStateFromStores(items, () => ref2.getRolesSnapshot(guild_id));
   closure_19 = React.useRef(false);
-  callback5 = React.useRef(Date.now());
-  callback6 = React.useRef(null);
+  callback4 = React.useRef(Date.now());
+  callback5 = React.useRef(null);
   closure_22 = React.useRef(false);
   const items1 = [command];
   const effect = React.useEffect(() => {
-    if (null != command) {
-      const command = ref6.current;
-      const context = ref5.current;
-      const installOnDemand = ref7.current;
+    if (null != current) {
+      current = ref6.current;
+      current = ref5.current;
+      current = ref7.current;
       return () => {
-        if (!ref.current) {
+        if (!outer1_22.current) {
           const _Date = Date;
           let length;
           const diff = Date.now() - current;
-          let obj = current(closure_3[25]);
+          let obj = command(sectionName[25]);
           obj = { time_spent: diff };
           const options = current.options;
           if (null != options) {
@@ -250,7 +270,7 @@ function AppLauncherCommandViewInner(command) {
     }
   }, items1);
   const items2 = [chatInputRef, keyboardCloseReasonRef, tmp2];
-  callback = React.useCallback(() => {
+  const callback = React.useCallback(() => {
     if (tmp2.canGoBack()) {
       tmp2.pop();
     } else {
@@ -261,46 +281,43 @@ function AppLauncherCommandViewInner(command) {
       }
     }
   }, items2);
-  const tmp12 = callback2(React.useState([]), 2);
+  const tmp12 = onCommandExecuted(React.useState([]), 2);
   const first = tmp12[0];
-  callback7 = tmp12[1];
-  const tmp13 = callback2(React.useState([]), 2);
-  const first1 = tmp13[0];
-  closure_24 = first1;
+  _createForOfIteratorHelperLoose = tmp12[1];
+  const tmp13 = onCommandExecuted(React.useState([]), 2);
+  first1 = tmp13[0];
   closure_25 = tmp13[1];
   closure_26 = React.useRef(new Set());
-  const tmp15 = callback2(React.useState([]), 2);
-  const first2 = tmp15[0];
-  AppLauncherCommandViewFooter = first2;
+  const tmp15 = onCommandExecuted(React.useState([]), 2);
+  first2 = tmp15[0];
   closure_28 = tmp15[1];
-  const set = new Set();
+  let set = new Set();
   closure_29 = React.useRef(new Set());
-  const tmp17 = callback2(React.useState([]), 2);
+  const tmp17 = onCommandExecuted(React.useState([]), 2);
   closure_30 = tmp17[1];
   closure_31 = React.useRef({});
-  const tmp18 = callback2(React.useState({}), 2);
-  const first3 = tmp18[0];
-  NoPermsState = first3;
+  const tmp18 = onCommandExecuted(React.useState({}), 2);
+  first3 = tmp18[0];
   closure_33 = tmp18[1];
-  const tmp20 = callback2(React.useState(true), 2);
+  const tmp20 = onCommandExecuted(React.useState(true), 2);
   closure_34 = tmp20[1];
   const set1 = new Set();
-  const tmp22 = callback2(React.useState(new Set()), 2);
+  const tmp22 = onCommandExecuted(React.useState(new Set()), 2);
   first4 = tmp22[0];
   closure_36 = tmp22[1];
-  const tmp24 = callback2(React.useState(0), 2);
+  const tmp24 = onCommandExecuted(React.useState(0), 2);
   first5 = tmp24[0];
   closure_38 = tmp24[1];
-  const tmp26 = callback2(React.useState(null), 2);
+  const tmp26 = onCommandExecuted(React.useState(null), 2);
   first6 = tmp26[0];
   closure_40 = tmp26[1];
-  const tmp28 = callback2(React.useState(0), 2);
-  const sum = importDefault(dependencyMap[26])({ -1397959526: 1766088043, 1449288620: 827788593 }).insets.bottom + tmp28[0];
-  sum1 = sum + importDefault(dependencyMap[12]).space.PX_16;
-  sum2 = importDefault(dependencyMap[26])({ -1397959526: 1766088043, 1449288620: 827788593 }).insets.bottom + importDefault(dependencyMap[12]).space.PX_16;
-  let obj2 = arg1(dependencyMap[15]);
+  const tmp28 = onCommandExecuted(React.useState(0), 2);
+  let sum = context(sectionName[26])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets.bottom + tmp28[0];
+  sum1 = sum + context(sectionName[12]).space.PX_16;
+  sum2 = context(sectionName[26])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets.bottom + context(sectionName[12]).space.PX_16;
+  let obj2 = command(sectionName[15]);
   sharedValue = obj2.useSharedValue(false);
-  let obj3 = arg1(dependencyMap[15]);
+  let obj3 = command(sectionName[15]);
   sharedValue1 = obj3.useSharedValue(0);
   const items3 = [first5, sum1, sharedValue1];
   callback1 = React.useCallback((required) => {
@@ -314,7 +331,7 @@ function AppLauncherCommandViewInner(command) {
       }
       const sum = ref.current[required.name] + current2;
       const diff2 = sum - command(sectionName[13]).COLLAPSED_HEADER_HEIGHT;
-      const sum1 = sharedValue1.get() + diff1;
+      sum1 = sharedValue1.get() + diff1;
       if (diff2 < sharedValue1.get()) {
         const current3 = ref.current;
         if (null != current3) {
@@ -330,7 +347,7 @@ function AppLauncherCommandViewInner(command) {
       if (sharedValue1.get() < 0) {
         const current = ref.current;
         if (null != current) {
-          current.scrollTo({ <string:1667345620>: null, <string:1638680913>: null });
+          current.scrollTo({ y: 0, animated: true });
         }
       } else if (diff3 > 0) {
         if (sharedValue1.get() > diff3) {
@@ -354,7 +371,8 @@ function AppLauncherCommandViewInner(command) {
     closure_19.current = true;
     closure_21.current = name.type;
   }, items4);
-  tmp36 = importDefault(dependencyMap[29])(command);
+  const tmp36 = context(sectionName[29])(command);
+  c47 = tmp36;
   const items5 = [guild_id, command, , , , ];
   let id1;
   if (null != tmp36) {
@@ -366,78 +384,77 @@ function AppLauncherCommandViewInner(command) {
   items5[5] = context.channel.id;
   const effect1 = React.useEffect(() => {
     let id;
-    if (null != command) {
-      id = command.id;
+    if (null != user) {
+      id = user.id;
     }
     let id1;
-    if (null != tmp36) {
-      id1 = tmp36.id;
+    if (null != _undefined2) {
+      id1 = _undefined2.id;
     }
     if (id !== id1) {
-      const command = [];
-      const items = [];
-      const context = items;
+      user = [];
+      let items = [];
       let closure_2 = [];
       let closure_3 = {};
       closure_31.current = {};
-      let tmp6 = null == command;
+      let tmp6 = null == user;
       if (!tmp6) {
-        const options = command.options;
+        const options = user.options;
         tmp6 = null == options;
-        const arr = options;
+        let arr = options;
       }
       if (!tmp6) {
         const item = arr.forEach((required) => {
           let arr = required;
           if (true !== required.required) {
-            if (null != closure_16) {
-              if (closure_16.some((name) => name.name === name.name)) {
+            if (null != outer1_16) {
+              if (outer1_16.some((name) => name.name === name.name)) {
                 arr = items.push(required);
-                let obj = arr(closure_3[30]);
-                obj = { option: required, prefilledValues: closure_16, guildId: closure_17, roles: closure_18 };
-                closure_31.current[required.name] = obj.getInitialOptionValues(obj);
-                let obj2 = arr(closure_3[27]);
-                obj = { option: required, content: closure_31.current[required.name], guildId: closure_17, channelId: items.channel.id, allowEmptyValues: false, commandOrigin: arr(closure_3[28]).CommandOrigin.APPLICATION_LAUNCHER };
+                let obj = command(sectionName[30]);
+                obj = { option: required, prefilledValues: outer1_16, guildId: outer1_17, roles: outer1_18 };
+                outer1_31.current[required.name] = obj.getInitialOptionValues(obj);
+                let obj2 = command(sectionName[27]);
+                obj = { option: required, content: outer1_31.current[required.name], guildId: outer1_17, channelId: items.channel.id, allowEmptyValues: false, commandOrigin: command(sectionName[28]).CommandOrigin.APPLICATION_LAUNCHER };
                 closure_3[required.name] = obj2.validateOptionContent(obj);
               }
             }
             arr = arr.push(required);
           } else {
             arr2.push(required);
-            const obj1 = { option: required, prefilledValues: closure_16, guildId: closure_17, roles: closure_18 };
-            closure_31.current[required.name] = arr(closure_3[30]).getInitialOptionValues(obj1);
-            const obj5 = arr(closure_3[30]);
-            obj2 = { option: required, content: closure_31.current[required.name], guildId: closure_17, channelId: items.channel.id, allowEmptyValues: false, commandOrigin: arr(closure_3[28]).CommandOrigin.APPLICATION_LAUNCHER };
-            closure_3[required.name] = arr(closure_3[27]).validateOptionContent(obj2);
-            const obj7 = arr(closure_3[27]);
+            const obj1 = { option: required, prefilledValues: outer1_16, guildId: outer1_17, roles: outer1_18 };
+            outer1_31.current[required.name] = command(sectionName[30]).getInitialOptionValues(obj1);
+            const obj5 = command(sectionName[30]);
+            obj2 = { option: required, content: outer1_31.current[required.name], guildId: outer1_17, channelId: items.channel.id, allowEmptyValues: false, commandOrigin: command(sectionName[28]).CommandOrigin.APPLICATION_LAUNCHER };
+            closure_3[required.name] = command(sectionName[27]).validateOptionContent(obj2);
+            const obj7 = command(sectionName[27]);
           }
         });
       }
-      command(closure_3[31]).batchUpdates(() => {
-        callback5(closure_3);
-        callback(closure_2);
-        const items = [...closure_1];
-        callback2(items);
-        callback3(items);
-        callback4(closure_0);
-        callback6(new Set());
+      command(sectionName[31]).batchUpdates(() => {
+        outer1_33(closure_3);
+        outer1_23(closure_2);
+        items = [...items];
+        outer1_25(items);
+        outer1_28(items);
+        outer1_30(closure_0);
+        outer1_36(new Set());
       });
-      const current = ref8.current;
+      let current = ref8.current;
       current.clear();
       const item1 = items.forEach((name) => {
-        const current = ref.current;
+        const current = outer1_26.current;
         return current.add(name.name);
       });
       const current2 = closure_29.current;
       current2.clear();
       const item2 = items.forEach((name) => {
-        const current = ref2.current;
+        const current = outer1_29.current;
         return current.add(name.name);
       });
-      const obj = command(closure_3[31]);
+      let obj = command(sectionName[31]);
     }
   }, items5);
-  let obj4 = arg1(dependencyMap[32]);
+  let obj4 = command(sectionName[32]);
   commandContext = obj4.useCommandContext(context);
   const items6 = [callback1, chatInputRef, command, commandContext, sharedValue, keyboardCloseReasonRef, onCommandExecuted, first3, sectionName];
   callback3 = React.useCallback(() => {
@@ -465,10 +482,10 @@ function AppLauncherCommandViewInner(command) {
         }
         obj.argument_type = command(sectionName[34]).ApplicationCommandOptionType[num3];
         obj.is_required = firstInvalidOption.required;
-        obj.trackWithMetadata(set.APPLICATION_COMMAND_VALIDATION_FAILED, obj);
+        obj.trackWithMetadata(_undefined.APPLICATION_COMMAND_VALIDATION_FAILED, obj);
       } else {
         callback4(false);
-        const result = sharedValue.set(true);
+        let result = sharedValue.set(true);
         closure_22.current = true;
         obj = { command };
         const obj4 = command(sectionName[35]);
@@ -479,31 +496,31 @@ function AppLauncherCommandViewInner(command) {
         const result1 = obj4.executeAppLauncherCommand(obj);
         const obj6 = command(sectionName[36]);
         result1.then(() => {
-          const result = callback(closure_3[18]).triggerHapticFeedback(callback(closure_3[18]).HapticFeedbackTypes.IMPACT_MEDIUM);
+          const result = command(sectionName[18]).triggerHapticFeedback(command(sectionName[18]).HapticFeedbackTypes.IMPACT_MEDIUM);
           const timerId = setTimeout(() => {
-            closure_8.current = callback(closure_3[24]).AppLauncherKeyboardCloseReason.COMMAND;
-            const current = ref.current;
+            outer2_8.current = command(sectionName[24]).AppLauncherKeyboardCloseReason.COMMAND;
+            const current = outer2_10.current;
             if (null != current) {
               current.closeCustomKeyboard();
             }
-            if (null != callback2) {
-              callback2();
+            if (null != outer2_5) {
+              outer2_5();
             }
           }, 300);
         }).catch(() => {
-          callback2(true);
-          const result = closure_43.set(false);
+          outer1_34(true);
+          const result = outer1_43.set(false);
         });
         const nextPromise = result1.then(() => {
-          const result = callback(closure_3[18]).triggerHapticFeedback(callback(closure_3[18]).HapticFeedbackTypes.IMPACT_MEDIUM);
+          const result = command(sectionName[18]).triggerHapticFeedback(command(sectionName[18]).HapticFeedbackTypes.IMPACT_MEDIUM);
           const timerId = setTimeout(() => {
-            closure_8.current = callback(closure_3[24]).AppLauncherKeyboardCloseReason.COMMAND;
-            const current = ref.current;
+            outer2_8.current = command(sectionName[24]).AppLauncherKeyboardCloseReason.COMMAND;
+            const current = outer2_10.current;
             if (null != current) {
               current.closeCustomKeyboard();
             }
-            if (null != callback2) {
-              callback2();
+            if (null != outer2_5) {
+              outer2_5();
             }
           }, 300);
         });
@@ -511,15 +528,15 @@ function AppLauncherCommandViewInner(command) {
       const obj3 = command(sectionName[33]);
     }
   }, items6);
-  callback3(true, true);
+  callback2(true, true);
   // CreateGeneratorClosureLongIndex (0x67)
   const items7 = [installOnDemand, command, context, callback3, sectionName, analyticsLocation, entrypoint];
-  callback4 = React.useCallback(callback(ref(context, true, true)), items7);
-  height = importDefault(dependencyMap[38])({ ignoreKeyboard: true }).height;
-  maximum = importDefault(dependencyMap[39])().maximum;
-  let obj5 = arg1(dependencyMap[24]);
+  callback4 = React.useCallback(analyticsLocation(ref(context, true, true)), items7);
+  height = context(sectionName[38])({ ignoreKeyboard: true }).height;
+  maximum = context(sectionName[39])().maximum;
+  let obj5 = command(sectionName[24]);
   bottomSheetPosition = obj5.useRequiredAppLauncherContext().bottomSheetPosition;
-  let obj6 = arg1(dependencyMap[15]);
+  let obj6 = command(sectionName[15]);
   function tt() {
     let obj = {};
     obj = { translateY: -bottomSheetPosition.get() - height + maximum - sum2 };
@@ -561,115 +578,120 @@ function AppLauncherCommandViewInner(command) {
       obj = {};
       ({ applicationId: obj2.application_id, id: obj2.command_id } = command);
       ({ name: obj2.option_name, type: obj2.option_type } = arg0);
-      obj.trackWithMetadata(tmp7.APPLICATION_COMMAND_OPTION_PRESSED, obj);
+      obj.trackWithMetadata(_undefined.APPLICATION_COMMAND_OPTION_PRESSED, obj);
     }
   }, items10);
   const items11 = [chatInputRef, context.channel, callback5, callback6];
   closure_56 = React.useCallback((option) => {
-    const command = option;
+    let analyticsLocation;
+    let onCommandExecuted;
+    let closure_0 = option;
     function onAttachFileParams(FILE_ATTACHMENT) {
-      const obj = {
+      let closure_0 = FILE_ATTACHMENT;
+      obj = {
         channel: obj.channel,
         uploadLimit: 1,
         extensions: allowedExtensions,
         onDismissKeyboard() {
-          return arg0(closure_3[42]).hideMediaKeyboardActionSheet();
+          return command(sectionName[42]).hideMediaKeyboardActionSheet();
         },
-        onRestoreKeyboard: closure_17,
+        onRestoreKeyboard: guild_id,
         onSelectFiles(arg0) {
-          if (length.length > 0) {
-            const items = [arg0(length[43]).getFileFromUploadItem(arg0[0]).filename];
-            if (!callback(items)) {
-              return callback2();
+          if (outer1_3.length > 0) {
+            const obj = command(sectionName[43]);
+            const items = [obj.getFileFromUploadItem(arg0[0]).filename];
+            if (!outer1_4(items)) {
+              return outer1_5();
             }
-            const obj = arg0(length[43]);
           }
-          const result = arg0(length[40]).addAttachmentForCommand(channel.channel.id, closure_10, arg0[0], channel, arg0);
+          const result = command(sectionName[40]).addAttachmentForCommand(obj.channel.id, outer2_10, arg0[0], outer1_1, closure_0);
         }
       };
       return obj;
     }
     let obj = { target: ref5.APP_LAUNCHER, option };
-    const context = obj;
     const mediaKeyboardDraftType = command(sectionName[40]).getMediaKeyboardDraftType(obj.target);
-    const installOnDemand = mediaKeyboardDraftType;
     let fileTypes;
     if (option.type === command(sectionName[34]).ApplicationCommandOptionType.ATTACHMENT) {
       fileTypes = option.fileTypes;
     }
-    const obj2 = command(sectionName[40]);
+    let obj2 = command(sectionName[40]);
     const fileTypeFiltering = command(sectionName[41]).getFileTypeFiltering(fileTypes);
     const allowedExtensions = fileTypeFiltering.allowedExtensions;
-    const sectionName = allowedExtensions;
-    ({ validateFilenames: closure_4, showInvalidFileTypeAlert: closure_5 } = fileTypeFiltering);
+    ({ validateFilenames: analyticsLocation, showInvalidFileTypeAlert: onCommandExecuted } = fileTypeFiltering);
     callback6(option);
-    const obj3 = command(sectionName[41]);
-    const result = command(sectionName[44]).dismissGlobalKeyboard();
+    let obj3 = command(sectionName[41]);
+    let result = command(sectionName[44]).dismissGlobalKeyboard();
     if (fileTypeFiltering.mediaFilesAllowed) {
       let tmp6Result = tmp6(tmp7[42]);
-      obj = { channel: context.channel, draftType: mediaKeyboardDraftType, extensions: allowedExtensions, uploadLimit: 1, disableWhenReachedLimit: false };
-      const items = [option.name];
+      obj = {};
+      obj.channel = obj.channel;
+      obj.draftType = mediaKeyboardDraftType;
+      obj.extensions = allowedExtensions;
+      obj.uploadLimit = 1;
+      obj.disableWhenReachedLimit = false;
+      let items = [option.name];
       obj.includedUploadIds = items;
       obj.onAttachPress = function onAttachPress() {
-        let obj = arg0(allowedExtensions[40]);
+        let obj = command(sectionName[40]);
         obj = {};
-        const merged = Object.assign(onAttachFileParams(arg0(allowedExtensions[45]).UploadOrigin.FILE_ATTACHMENT));
+        const merged = Object.assign(onAttachFileParams(command(sectionName[45]).UploadOrigin.FILE_ATTACHMENT));
         obj.handleAttachFile(obj);
       };
       obj.onPressCamera = function onPressCamera(arg0) {
-        let obj = arg0(allowedExtensions[40]);
+        let obj = command(sectionName[40]);
         obj = {};
-        const merged = Object.assign(onAttachFileParams(arg0(allowedExtensions[45]).UploadOrigin.IMAGE_PICKER));
+        const merged = Object.assign(onAttachFileParams(command(sectionName[45]).UploadOrigin.IMAGE_PICKER));
         obj["previewType"] = arg0;
         obj.handleCameraDialog(obj);
       };
       obj.onPressItem = function onPressItem(item) {
-        const obj = item(allowedExtensions[42]);
+        const obj = command(sectionName[42]);
         const result = obj.hideMediaKeyboardActionSheet();
-        const result1 = item(allowedExtensions[40]).mediaNodeToUploadItem(item.item);
+        const result1 = command(sectionName[40]).mediaNodeToUploadItem(item.item);
         if (allowedExtensions.length > 0) {
-          const items = [item(allowedExtensions[43]).getFileFromUploadItem(result1).filename];
+          const items = [command(sectionName[43]).getFileFromUploadItem(result1).filename];
           if (!callback(items)) {
             return callback2();
           }
-          const obj3 = item(allowedExtensions[43]);
+          const obj3 = command(sectionName[43]);
         }
-        const obj2 = item(allowedExtensions[40]);
-        const result2 = item(allowedExtensions[40]).addAttachmentForCommand(item.channelId, closure_10, result1, obj, item(allowedExtensions[45]).UploadOrigin.IMAGE_PICKER);
+        const obj2 = command(sectionName[40]);
+        const result2 = command(sectionName[40]).addAttachmentForCommand(item.channelId, outer1_10, result1, obj, command(sectionName[45]).UploadOrigin.IMAGE_PICKER);
       };
       obj.onViewAll = function onViewAll() {
-        let obj = arg0(allowedExtensions[40]);
+        let obj = command(sectionName[40]);
         obj = {};
-        const merged = Object.assign(onAttachFileParams(arg0(allowedExtensions[45]).UploadOrigin.IMAGE_PICKER));
+        const merged = Object.assign(onAttachFileParams(command(sectionName[45]).UploadOrigin.IMAGE_PICKER));
         obj["draftType"] = mediaKeyboardDraftType;
         obj.handleViewAllDialog(obj);
       };
       obj.onManageLimited = function onManageLimited() {
-        let obj = arg0(allowedExtensions[40]);
-        obj = { onDismissKeyboard: arg0(allowedExtensions[42]).hideMediaKeyboardActionSheet, onRestoreKeyboard: closure_17 };
+        let obj = command(sectionName[40]);
+        obj = { onDismissKeyboard: command(sectionName[42]).hideMediaKeyboardActionSheet, onRestoreKeyboard: guild_id };
         const result = obj.handleLimitedPickerDialog(obj);
       };
       obj.onClose = function onClose() {
-        callback3(arg0);
+        outer1_54(closure_0);
       };
       obj.onBack = function onBack() {
-        const result = arg0(allowedExtensions[42]).hideMediaKeyboardActionSheet();
+        const result = command(sectionName[42]).hideMediaKeyboardActionSheet();
       };
-      const result1 = tmp6Result.showMediaKeyboardActionSheet(obj);
+      let result1 = tmp6Result.showMediaKeyboardActionSheet(obj);
     } else {
       tmp6Result = tmp6(tmp7[40]);
       obj = {};
-      const merged = Object.assign(onAttachFileParams(tmp6(tmp7[45]).UploadOrigin.FILE_ATTACHMENT));
+      let merged = Object.assign(onAttachFileParams(tmp6(tmp7[45]).UploadOrigin.FILE_ATTACHMENT));
       tmp6Result.handleAttachFile(obj);
     }
   }, items11);
-  const tmp49 = importDefault(dependencyMap[46])(() => {
+  const tmp49 = context(sectionName[46])(() => {
     callback1(first6);
   });
   setLatch = tmp49.setLatch;
   tryCallback = tmp49.tryCallback;
   const items12 = [tryCallback];
-  callback7 = React.useCallback((nativeEvent) => {
+  const callback7 = React.useCallback((nativeEvent) => {
     closure_13.current = nativeEvent.nativeEvent.layout.y;
   }, []);
   const items13 = [first6, setLatch];
@@ -705,12 +727,12 @@ function AppLauncherCommandViewInner(command) {
   const items15 = [first2, first1, first3, first4, , , ];
   let name1;
   const callback9 = React.useCallback((name) => {
-    const current = ref8.current;
+    let current = ref8.current;
     current.add(name.name);
-    const items = [...closure_27, name];
+    const items = [...first2, name];
     callback(items);
     callback2(first1.filter((name) => {
-      const current = ref.current;
+      const current = outer1_26.current;
       return !current.has(name.name);
     }));
     callback7(name);
@@ -723,7 +745,6 @@ function AppLauncherCommandViewInner(command) {
     let applicationId;
     if (null != command) {
       applicationId = command.applicationId;
-      const tmp7 = command;
     }
     obj.application_id = applicationId;
     let id;
@@ -732,7 +753,7 @@ function AppLauncherCommandViewInner(command) {
     }
     obj.command_id = id;
     ({ name: obj4.option_name, type: obj4.option_type } = name);
-    command(sectionName[25]).trackWithMetadata(tmp7.APPLICATION_COMMAND_OPTIONAL_OPTION_ADDED, obj);
+    command(sectionName[25]).trackWithMetadata(_undefined.APPLICATION_COMMAND_OPTIONAL_OPTION_ADDED, obj);
   }, items14);
   if (null != first6) {
     name1 = first6.name;
@@ -749,19 +770,19 @@ function AppLauncherCommandViewInner(command) {
   }
   items15[6] = id3;
   closure_60 = React.useCallback((name) => {
-    const command = name;
-    const current = ref8.current;
+    const user = name;
+    let current = ref8.current;
     current.delete(name.name);
     const current2 = closure_29.current;
     current2.delete(name.name);
     callback(first2.filter((name) => name.name !== name.name));
     callback2(first1.filter((name) => {
-      const current = ref.current;
+      const current = outer1_26.current;
       return !current.has(name.name);
     }));
-    delete r2[r1];
-    delete r2[r1];
-    delete r2[r1];
+    delete tmp2[tmp];
+    delete tmp2[tmp];
+    delete tmp2[tmp];
     let obj = {};
     const merged = Object.assign(first3);
     callback3(obj);
@@ -777,17 +798,17 @@ function AppLauncherCommandViewInner(command) {
     const set = new Set(first4);
     obj = {};
     let applicationId;
-    if (null != command) {
-      applicationId = command.applicationId;
+    if (null != user) {
+      applicationId = user.applicationId;
     }
     obj.application_id = applicationId;
     let id;
-    if (null != command) {
-      id = command.id;
+    if (null != user) {
+      id = user.id;
     }
     obj.command_id = id;
     ({ name: obj3.option_name, type: obj3.option_type } = name);
-    command(sectionName[25]).trackWithMetadata(tmp7.APPLICATION_COMMAND_OPTIONAL_OPTION_REMOVED, obj);
+    command(sectionName[25]).trackWithMetadata(_undefined.APPLICATION_COMMAND_OPTIONAL_OPTION_REMOVED, obj);
   }, items15);
   const callback10 = React.useCallback((nativeEvent) => callback6(nativeEvent.nativeEvent.layout.height), []);
   let tmp63 = first1.length > 0;
@@ -804,20 +825,20 @@ function AppLauncherCommandViewInner(command) {
     prefilledOptions1 = preSelectedCommand.prefilledOptions;
   }
   closure_61 = null != prefilledOptions1;
-  if (entrypoint === arg1(dependencyMap[47]).AppLauncherEntrypoint.VOICE) {
+  if (entrypoint === command(sectionName[47]).AppLauncherEntrypoint.VOICE) {
     let BottomSheetScrollView = entrypoint;
   } else {
-    BottomSheetScrollView = arg1(dependencyMap[48]).BottomSheetScrollView;
+    BottomSheetScrollView = command(sectionName[48]).BottomSheetScrollView;
   }
   if (loading) {
-    tmp = callback5;
+    tmp = callback4;
     tmp = closure_30;
-    let tmp71Result = callback5(closure_30, {});
+    let tmp71Result = callback4(closure_30, {});
   } else if (null == command) {
-    tmp = callback5;
+    tmp = callback4;
     tmp = closure_31;
     obj = { onPressBack: callback };
-    tmp71Result = callback5(closure_31, obj);
+    tmp71Result = callback4(closure_31, obj);
   } else if (hasPermissions) {
     obj = {};
     obj1 = { ref };
@@ -835,12 +856,12 @@ function AppLauncherCommandViewInner(command) {
     obj1.onLayout = callback10;
     obj1.automaticallyAdjustsScrollIndicatorInsets = false;
     obj3 = { style: tmp.commandNameContainer };
-    obj4 = { cachedAt: null, edpbxy: null, children: command.displayName };
-    const items17 = [callback5(arg1(dependencyMap[49]).Text, obj4), ];
-    obj5 = { cachedAt: null, edpbxy: "153e24032a5a8790888aef41caaf4b2c", children: command.displayDescription };
-    items17[1] = callback5(arg1(dependencyMap[49]).Text, obj5);
+    obj4 = { variant: "heading-lg/bold", color: "text-default", children: command.displayName };
+    const items17 = [callback4(command(sectionName[49]).Text, obj4), ];
+    obj5 = { variant: "heading-sm/medium", color: "text-default", children: command.displayDescription };
+    items17[1] = callback4(command(sectionName[49]).Text, obj5);
     obj3.children = items17;
-    const items18 = [callback6(tmp2, obj3), , , , , ];
+    const items18 = [callback5(closure_7, obj3), , , , , ];
     let tmp79 = tmp62;
     if (tmp62) {
       obj6 = {
@@ -870,7 +891,7 @@ function AppLauncherCommandViewInner(command) {
               NONE = ref3.NONE;
             })
       };
-      tmp79 = callback5(tmp2, obj6);
+      tmp79 = callback4(closure_7, obj6);
     }
     items18[1] = tmp79;
     let tmp82 = !tmp62;
@@ -878,35 +899,35 @@ function AppLauncherCommandViewInner(command) {
       tmp82 = tmp64;
     }
     if (tmp82) {
-      const obj7 = { style: tmp.noRequiredOptionsCalloutContainer };
-      const obj8 = {};
+      let obj7 = { style: tmp.noRequiredOptionsCalloutContainer };
+      const obj8 = { variant: "text-sm/medium", color: "text-strong" };
       const obj9 = { textAlign: "center" };
       obj8.style = obj9;
-      const intl = arg1(dependencyMap[22]).intl;
-      obj8.children = intl.string(arg1(dependencyMap[22]).t.HS2KtY);
-      obj7.children = callback5(arg1(dependencyMap[49]).Text, obj8);
-      tmp82 = callback5(tmp2, obj7);
+      const intl = command(sectionName[22]).intl;
+      obj8.children = intl.string(command(sectionName[22]).t.HS2KtY);
+      obj7.children = callback4(command(sectionName[49]).Text, obj8);
+      tmp82 = callback4(closure_7, obj7);
     }
     items18[2] = tmp82;
     let tmp88 = !tmp64;
     if (!tmp64) {
       const obj10 = { style: tmp.noOptionCalloutContainer };
-      const obj11 = { cachedAt: "y", edpbxy: "isArray" };
+      const obj11 = { variant: "text-sm/medium", color: "text-muted" };
       const obj12 = { textAlign: "center" };
       obj11.style = obj12;
-      const intl2 = arg1(dependencyMap[22]).intl;
-      obj11.children = intl2.string(arg1(dependencyMap[22]).t.G8lEFB);
-      obj10.children = callback5(arg1(dependencyMap[49]).Text, obj11);
-      tmp88 = callback5(tmp2, obj10);
+      const intl2 = command(sectionName[22]).intl;
+      obj11.children = intl2.string(command(sectionName[22]).t.G8lEFB);
+      obj10.children = callback4(command(sectionName[49]).Text, obj11);
+      tmp88 = callback4(closure_7, obj10);
     }
     items18[3] = tmp88;
     if (tmp63) {
       const obj13 = {};
-      const obj14 = { "Null": null, "Null": 1, alignItems: 1, style: tmp.optionalOptionsSectionTitle };
-      const intl3 = arg1(dependencyMap[22]).intl;
-      obj14.children = intl3.string(arg1(dependencyMap[22]).t.5C107K);
-      const items19 = [callback5(arg1(dependencyMap[49]).Text, obj14), , ];
-      tmp = importDefault;
+      const obj14 = { style: tmp.optionalOptionsSectionTitle, variant: "text-md/normal", color: "text-default" };
+      const intl3 = command(sectionName[22]).intl;
+      obj14.children = intl3.string(command(sectionName[22]).t["5C107K"]);
+      const items19 = [callback4(command(sectionName[49]).Text, obj14), , ];
+      tmp = context;
       const obj15 = {
         style: tmp.optionalOptionsContainer,
         onLayout: callback8,
@@ -946,39 +967,39 @@ function AppLauncherCommandViewInner(command) {
               return closure_20(context(sectionName[50]), obj, option.name);
             })
       };
-      items19[1] = callback5(importDefault(dependencyMap[15]).View, obj15);
-      tmp = callback5;
-      const obj16 = { layout: arg1(dependencyMap[51]).LayoutAnimation, collapsable: false };
-      tmp = callback5;
+      items19[1] = callback4(context(sectionName[15]).View, obj15);
+      tmp = callback4;
+      const obj16 = { layout: command(sectionName[51]).LayoutAnimation, collapsable: false };
+      tmp = callback4;
       const obj17 = { style: tmp.optionalOptionList, options: tmp17[0], onSelectOption: callback9 };
-      obj16.children = callback5(importDefault(dependencyMap[52]), obj17);
-      items19[2] = callback5(importDefault(dependencyMap[15]).View, obj16);
+      obj16.children = callback4(context(sectionName[52]), obj17);
+      items19[2] = callback4(context(sectionName[15]).View, obj16);
       obj13.children = items19;
-      tmp63 = callback6(closure_22, obj13);
+      tmp63 = callback5(closure_22, obj13);
     }
     items18[4] = tmp63;
-    tmp = callback5;
-    tmp = arg1;
-    tmp = dependencyMap;
+    tmp = callback4;
+    tmp = command;
+    tmp = sectionName;
     const obj18 = { size: sum1 };
-    items18[5] = callback5(arg1(dependencyMap[53]).Spacer, obj18);
+    items18[5] = callback4(command(sectionName[53]).Spacer, obj18);
     obj1.children = items18;
-    const items20 = [callback6(BottomSheetScrollView, obj1), ];
-    tmp = callback5;
-    tmp = AppLauncherCommandViewFooter;
+    const items20 = [callback5(BottomSheetScrollView, obj1), ];
+    tmp = callback4;
+    tmp = first2;
     const obj19 = { enableSubmit: tmp20[0], onSubmit: callback4, animatedStyle, onHeightChange: tmp28[1], isSending: sharedValue, footerStickyInsetBottom: sum2 };
-    items20[1] = callback5(AppLauncherCommandViewFooter, obj19);
+    items20[1] = callback4(first2, obj19);
     obj.children = items20;
     tmp71Result = tmp71(closure_22, obj);
     const tmp72 = closure_22;
   } else {
     const obj20 = { command, onPressBack: callback };
-    tmp71Result = callback5(NoPermsState, obj20);
+    tmp71Result = callback4(first3, obj20);
   }
   const obj21 = { style: tmp.container };
-  const items21 = [tmp71Result, callback5(arg1(dependencyMap[13]).AppLauncherCommandViewHeader, { command, onPressBack: callback, scrollOffsetY: sharedValue1, section })];
+  const items21 = [tmp71Result, callback4(command(sectionName[13]).AppLauncherCommandViewHeader, { command, onPressBack: callback, scrollOffsetY: sharedValue1, section })];
   obj21.children = items21;
-  return callback6(tmp2, obj21);
+  return callback5(closure_7, obj21);
 }
 function AppLauncherCommandView(command) {
   let analyticsLocation;
@@ -993,34 +1014,32 @@ function AppLauncherCommandView(command) {
   let sectionDescriptor;
   let sectionName;
   command = command.command;
-  const arg1 = command;
   ({ context, section, preSelectedCommand, analyticsLocation, sectionName, expandBottomSheet } = command);
-  const importDefault = expandBottomSheet;
-  let closure_4;
-  let closure_5;
+  let bottomSheetExpandReasonRef;
+  let c5;
   ({ installOnDemand, onCommandExecuted } = command);
-  importDefault(dependencyMap[54])(null != context.channel, "channel should not be null");
-  const tmp2 = importDefault(dependencyMap[55])();
+  expandBottomSheet(loading[54])(null != context.channel, "channel should not be null");
+  let tmp2 = expandBottomSheet(loading[55])();
   const importAll = tmp2;
-  const tmp3 = function usePreSelectedCommand(channel, preSelectedCommand, analyticsLocation, sectionName) {
+  let tmp3 = (function usePreSelectedCommand(channel, preSelectedCommand, analyticsLocation, sectionName) {
     let context;
     let isImpersonating;
     let roleIds;
     let userId;
-    let command = analyticsLocation;
-    const expandBottomSheet = sectionName;
+    let closure_0 = analyticsLocation;
+    let closure_1 = sectionName;
     let obj = tmp2(loading[56]);
     obj = { channel, type: "channel" };
     let commandId;
     if (null != preSelectedCommand) {
       commandId = preSelectedCommand.commandId;
     }
-    command = obj.useCommand(obj, commandId);
+    let command = obj.useCommand(obj, commandId);
     command = command.command;
     const application = command.application;
     obj = { channel, type: "channel" };
-    const tmp3 = callback(obj, true, true);
-    const tmp4 = callback2(true, true);
+    const tmp3 = outer1_11(obj, true, true);
+    const tmp4 = outer1_12(true, true);
     let tmp5 = null;
     if (null != application) {
       const result = tmp4.result;
@@ -1040,7 +1059,7 @@ function AppLauncherCommandView(command) {
       }
       tmp5 = descriptor;
     }
-    const loading = tmp5;
+    loading = tmp5;
     let tmp9 = null != application;
     if (tmp9) {
       const result3 = tmp3.result;
@@ -1050,22 +1069,22 @@ function AppLauncherCommandView(command) {
       }
       tmp9 = null != tmp10;
     }
-    let closure_4 = React.useRef(false);
+    let closure_4 = outer1_6.useRef(false);
     const items = [command, tmp5, analyticsLocation, sectionName];
-    const effect = React.useEffect(() => {
+    const effect = outer1_6.useEffect(() => {
       let current = null == command;
       if (!current) {
-        current = null == tmp5;
+        current = null == closure_3;
       }
       if (!current) {
         current = ref.current;
       }
       if (!current) {
-        let obj = arg2(tmp5[57]);
-        obj = { command, triggerSection: arg2(command[57]).getCommandTriggerSection(command), location: arg2, sectionName: arg3 };
+        let obj = command(loading[57]);
+        obj = { command, triggerSection: command(loading[57]).getCommandTriggerSection(closure_3), location: closure_0, sectionName: closure_1 };
         obj.trackCommandSelected(obj);
         ref.current = true;
-        const obj3 = arg2(command[57]);
+        const obj3 = command(loading[57]);
       }
     }, items);
     let obj3 = command(loading[58]);
@@ -1101,20 +1120,18 @@ function AppLauncherCommandView(command) {
         return obj2;
       }
     }
-    obj3 = { a: "all", tag: true, paddingHorizontal: false, loading: tmp4.fetchState.fetching || tmp3.fetchState.fetching };
+    obj3 = { command: null, sectionDescriptor: null, hasPermission: false, loading: tmp4.fetchState.fetching || tmp3.fetchState.fetching };
     return obj3;
-  }(context.channel, preSelectedCommand, analyticsLocation, sectionName);
+  })(context.channel, preSelectedCommand, analyticsLocation, sectionName);
   ({ command: command2, sectionDescriptor, loading } = tmp3);
-  const dependencyMap = loading;
   if (null != command) {
     command2 = command;
   }
   if (null != section) {
     sectionDescriptor = section;
   }
-  let obj = arg1(dependencyMap[24]);
-  const bottomSheetExpandReasonRef = obj.useRequiredAppLauncherContext().bottomSheetExpandReasonRef;
-  closure_4 = bottomSheetExpandReasonRef;
+  let obj = command(loading[24]);
+  bottomSheetExpandReasonRef = obj.useRequiredAppLauncherContext().bottomSheetExpandReasonRef;
   let tmp4 = null != command2;
   if (tmp4) {
     let options = command2.options;
@@ -1123,13 +1140,13 @@ function AppLauncherCommandView(command) {
     }
     tmp4 = options.length > 0;
   }
-  closure_5 = tmp4;
-  const items = [command, tmp4, loading, tmp2, bottomSheetExpandReasonRef, expandBottomSheet];
-  const effect = React.useEffect(() => {
-    let tmp = tmp2;
-    if (tmp2) {
-      let tmp2 = tmp4;
-      if (!tmp4) {
+  c5 = tmp4;
+  let items = [command, tmp4, loading, tmp2, bottomSheetExpandReasonRef, expandBottomSheet];
+  let effect = React.useEffect(() => {
+    let tmp = closure_2;
+    if (closure_2) {
+      let tmp2 = c5;
+      if (!c5) {
         let tmp4 = !loading;
         if (tmp4) {
           tmp4 = null == command;
@@ -1171,108 +1188,98 @@ function AppLauncherCommandView(command) {
   return closure_20(AppLauncherCommandViewInner, obj);
 }
 function LoadingState() {
-  return callback5(closure_7, { style: {}, children: callback5(closure_8, { size: "large" }) });
+  return callback4(closure_7, { style: { flex: 1, justifyContent: "center", alignItems: "center" }, children: callback4(closure_8, { size: "large" }) });
 }
-function NotFoundState(onPress) {
-  const tmp = callback7();
-  let obj = arg1(dependencyMap[30]);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(arg1(dependencyMap[47]).AppLauncherEmptyStateType.COMMAND_NOT_FOUND);
+function NotFoundState(onPressBack) {
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(11171) /* handleApplicationSelected */;
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(8182) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.COMMAND_NOT_FOUND);
   obj = { style: tmp.emptyStateContainer };
-  obj = { style: tmp.emptyState, lightSource: importDefault(dependencyMap[60]), darkSource: importDefault(dependencyMap[61]) };
-  const intl = arg1(dependencyMap[22]).intl;
-  obj.title = intl.string(arg1(dependencyMap[22]).t.pX/qb9);
-  const intl2 = arg1(dependencyMap[22]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[22]).t.exOQVY);
-  const obj1 = { onPress: onPress.onPressBack, pillStyle: tmp.failureStateButtonPill, style: tmp.failureStateButtonWrapper };
-  const intl3 = arg1(dependencyMap[22]).intl;
-  obj1.text = intl3.string(arg1(dependencyMap[22]).t./g10LC);
-  obj.children = callback5(arg1(dependencyMap[21]).BaseTextButton, obj1);
-  obj.children = callback5(arg1(dependencyMap[53]).EmptyState, obj);
-  return callback5(closure_7, obj);
+  obj = { style: tmp.emptyState, lightSource: importDefault(11313), darkSource: importDefault(11314) };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["pX/qb9"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.exOQVY);
+  const obj1 = { shrink: true, size: "sm", variant: "secondary", onPress: onPressBack.onPressBack };
+  ({ failureStateButtonPill: obj4.pillStyle, failureStateButtonWrapper: obj4.style } = tmp);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj1.text = intl3.string(require(1212) /* getSystemLocale */.t["/g10LC"]);
+  obj.children = callback4(require(4544) /* CollapsingText */.BaseTextButton, obj1);
+  obj.children = callback4(require(1273) /* Button */.EmptyState, obj);
+  return callback4(closure_7, obj);
 }
 function NoPermsState(command) {
   command = command.command;
-  const tmp = callback7();
-  let obj = arg1(dependencyMap[30]);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(arg1(dependencyMap[47]).AppLauncherEmptyStateType.COMMAND_NO_PERMISSIONS);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(11171) /* handleApplicationSelected */;
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(8182) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.COMMAND_NO_PERMISSIONS);
   obj = { style: tmp.emptyStateContainer };
   obj = { style: tmp.commandNameContainer };
-  const obj1 = { cachedAt: null, edpbxy: null, children: command.displayName };
-  const items = [callback5(arg1(dependencyMap[49]).Text, obj1), ];
-  const obj2 = { cachedAt: null, edpbxy: "153e24032a5a8790888aef41caaf4b2c", children: command.displayDescription };
-  items[1] = callback5(arg1(dependencyMap[49]).Text, obj2);
+  const obj1 = { variant: "heading-lg/bold", color: "text-default", children: command.displayName };
+  const items = [callback4(require(4126) /* Text */.Text, obj1), ];
+  const obj2 = { variant: "heading-sm/medium", color: "text-default", children: command.displayDescription };
+  items[1] = callback4(require(4126) /* Text */.Text, obj2);
   obj.children = items;
-  const items1 = [callback6(closure_7, obj), ];
-  const obj3 = { style: tmp.emptyState, lightSource: importDefault(dependencyMap[62]), darkSource: importDefault(dependencyMap[63]) };
-  const intl = arg1(dependencyMap[22]).intl;
-  obj3.title = intl.string(arg1(dependencyMap[22]).t.TzufcR);
-  const intl2 = arg1(dependencyMap[22]).intl;
-  obj3.body = intl2.string(arg1(dependencyMap[22]).t.I/O+A1);
-  const obj4 = { onPress: command.onPressBack, pillStyle: tmp.failureStateButtonPill, style: tmp.failureStateButtonWrapper };
-  const intl3 = arg1(dependencyMap[22]).intl;
-  obj4.text = intl3.string(arg1(dependencyMap[22]).t./g10LC);
-  obj3.children = callback5(arg1(dependencyMap[21]).BaseTextButton, obj4);
-  items1[1] = callback5(arg1(dependencyMap[53]).EmptyState, obj3);
+  const items1 = [callback5(closure_7, obj), ];
+  const obj3 = { style: tmp.emptyState, lightSource: importDefault(11234), darkSource: importDefault(11235) };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj3.title = intl.string(require(1212) /* getSystemLocale */.t.TzufcR);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj3.body = intl2.string(require(1212) /* getSystemLocale */.t["I/O+A1"]);
+  const obj4 = { shrink: true, size: "sm", variant: "secondary", onPress: command.onPressBack };
+  ({ failureStateButtonPill: obj7.pillStyle, failureStateButtonWrapper: obj7.style } = tmp);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj4.text = intl3.string(require(1212) /* getSystemLocale */.t["/g10LC"]);
+  obj3.children = callback4(require(4544) /* CollapsingText */.BaseTextButton, obj4);
+  items1[1] = callback4(require(1273) /* Button */.EmptyState, obj3);
   obj.children = items1;
-  return callback6(closure_7, obj);
+  return callback5(closure_7, obj);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-({ View: closure_7, ActivityIndicator: closure_8, ScrollView: closure_9 } = arg1(dependencyMap[3]));
-let closure_10 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[3]);
-({ useContextIndexState: closure_11, useUserIndexState: closure_12 } = arg1(dependencyMap[5]));
-let closure_13 = importDefault(dependencyMap[6]);
-const tmp3 = arg1(dependencyMap[5]);
-({ AppLauncherOptionAutoFocusType: closure_14, useAppLauncherNavigation: closure_15, DEFAULT_CONTENT_PADDING } = arg1(dependencyMap[7]));
-const tmp4 = arg1(dependencyMap[7]);
-({ AnalyticEvents: closure_16, NOOP: closure_17, VerticalGradient: closure_18 } = arg1(dependencyMap[8]));
-const MediaKeyboardTarget = arg1(dependencyMap[9]).MediaKeyboardTarget;
-const tmp5 = arg1(dependencyMap[8]);
-({ jsx: closure_20, jsxs: closure_21, Fragment: closure_22 } = arg1(dependencyMap[10]));
-let obj = arg1(dependencyMap[11]);
-obj = {};
-obj = { height: "100%", backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-obj.container = obj;
-const obj1 = { paddingTop: arg1(dependencyMap[13]).EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + importDefault(dependencyMap[12]).space.PX_4, paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING, backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-obj.optionsContainer = obj1;
-obj.requiredOptionsContainer = {};
-obj.optionalOptionsContainer = {};
-obj.optionalOptionsChild = { marginBottom: 24 };
-obj.optionalOptionsFirstChild = { marginTop: 12 };
-obj.optionalOptionsLastChild = { marginBottom: 12 };
-const obj2 = { "Null": 131420590, "Null": -1717986767, "Null": -644245095, "Null": 94527, paddingHorizontal: DEFAULT_CONTENT_PADDING };
-obj.footerContainer = obj2;
-obj.submitButton = {};
-obj.optionalOptionsSectionTitle = { marginTop: 36 };
-obj.optionalOptionList = { marginTop: 12 };
-const obj3 = { 9223372036854775807: 229916945, 0: -2140012543, 9223372036854775807: -2147483648, 0: 16777216, backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[12]).radii.lg };
-obj.noRequiredOptionsCalloutContainer = obj3;
-const tmp6 = arg1(dependencyMap[10]);
-obj.noOptionCalloutContainer = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[12]).radii.lg };
-obj.emptyState = {};
-const obj5 = { paddingTop: arg1(dependencyMap[13]).EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + importDefault(dependencyMap[12]).space.PX_4, flex: 1 };
-obj.emptyStateContainer = obj5;
-obj.failureStateButtonWrapper = { -2124314034: true, 529464659: null };
-const obj4 = { backgroundColor: importDefault(dependencyMap[12]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[12]).radii.lg };
-obj.failureStateButtonPill = { borderRadius: importDefault(dependencyMap[12]).radii.xxl };
-obj.commandNameContainer = { opacity: 2, items: "notify_friends_on_go_live", triggerOnLongPress: "message" };
-const obj6 = { borderRadius: importDefault(dependencyMap[12]).radii.xxl };
-obj.linearGradient = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-let closure_23 = obj.createStyles(obj);
+({ View: closure_7, ActivityIndicator: closure_8, ScrollView: closure_9 } = get_ActivityIndicator);
+({ useContextIndexState: closure_11, useUserIndexState: closure_12 } = _isNativeReflectConstruct);
+({ AppLauncherOptionAutoFocusType: closure_14, useAppLauncherNavigation: closure_15, DEFAULT_CONTENT_PADDING } = APP_LAUNCHER_BUILT_IN_SECTION_ICON);
+({ AnalyticEvents: closure_16, NOOP: closure_17, VerticalGradient: closure_18 } = ME);
+({ jsx: closure_20, jsxs: closure_21, Fragment: closure_22 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { paddingTop: require("DEFAULT_CONTENT_PADDING").EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + require("_createForOfIteratorHelperLoose").space.PX_4, paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+_createForOfIteratorHelperLoose.optionsContainer = obj1;
+_createForOfIteratorHelperLoose.requiredOptionsContainer = { marginTop: 24, gap: 24 };
+_createForOfIteratorHelperLoose.optionalOptionsContainer = {};
+_createForOfIteratorHelperLoose.optionalOptionsChild = { marginBottom: 24 };
+_createForOfIteratorHelperLoose.optionalOptionsFirstChild = { marginTop: 12 };
+_createForOfIteratorHelperLoose.optionalOptionsLastChild = { marginBottom: 12 };
+let obj2 = { position: "absolute", left: 0, bottom: 0, right: 0, paddingHorizontal: DEFAULT_CONTENT_PADDING };
+_createForOfIteratorHelperLoose.footerContainer = obj2;
+_createForOfIteratorHelperLoose.submitButton = { flex: 1, overflow: "hidden" };
+_createForOfIteratorHelperLoose.optionalOptionsSectionTitle = { marginTop: 36 };
+_createForOfIteratorHelperLoose.optionalOptionList = { marginTop: 12 };
+let obj3 = { paddingVertical: 16, paddingHorizontal: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginTop: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose.noRequiredOptionsCalloutContainer = obj3;
+let obj4 = { padding: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, marginTop: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose.noOptionCalloutContainer = obj4;
+_createForOfIteratorHelperLoose.emptyState = { backgroundColor: "transparent", justifyContent: "flex-start", paddingTop: 30 };
+let obj5 = { paddingTop: require("DEFAULT_CONTENT_PADDING").EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + require("_createForOfIteratorHelperLoose").space.PX_4, flex: 1 };
+_createForOfIteratorHelperLoose.emptyStateContainer = obj5;
+_createForOfIteratorHelperLoose.failureStateButtonWrapper = { marginTop: 24, alignSelf: "center" };
+let obj6 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xxl, paddingHorizontal: 12, paddingVertical: 8 };
+_createForOfIteratorHelperLoose.failureStateButtonPill = obj6;
+_createForOfIteratorHelperLoose.commandNameContainer = { alignItems: "center", justifyContent: "center", textAlign: "center" };
+_createForOfIteratorHelperLoose.linearGradient = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_24 = { code: "function AppLauncherCommandViewScreenTsx1(){const{shouldReduceMotion,isPressedDown,withDelay,withTiming,timingStandard,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,isSending}=this.__closure;if(shouldReduceMotion)return{};if(isPressedDown){return{opacity:1,transform:[{translateX:withDelay(100,withTiming(-4,timingStandard,'respect-motion-settings',function(){return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}))}]};}return{opacity:withTiming(isSending.get()?0:1,timingStandard),transform:[{translateX:withTiming(isSending.get()?100:0,timingStandard)}]};}" };
 let closure_25 = { code: "function AppLauncherCommandViewScreenTsx2(){const{runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}" };
 let closure_26 = { code: "function AppLauncherCommandViewScreenTsx3(){const{bottomSheetPosition,screenHeight,maxHeight,footerStickyInsetBottom}=this.__closure;const animatedSheetOffset=bottomSheetPosition.get()-screenHeight+maxHeight;return{transform:[{translateY:-animatedSheetOffset-footerStickyInsetBottom}]};}" };
-const obj7 = { backgroundColor: importDefault(dependencyMap[12]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-const result = arg1(dependencyMap[64]).fileFinishedImporting("modules/app_launcher/native/screens/command_view/AppLauncherCommandViewScreen.tsx");
+let obj7 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+let result = require("result").fileFinishedImporting("modules/app_launcher/native/screens/command_view/AppLauncherCommandViewScreen.tsx");
 
 export default function AppLauncherCommandViewScreen(route) {
   const context = route.route.params.context;
   let tmp9 = null;
   if (null != context) {
     const obj = { command: tmp, context, section: tmp2, preSelectedCommand: tmp3, installOnDemand: tmp5, sectionName: tmp6, analyticsLocation: tmp4, expandBottomSheet: tmp7, onCommandExecuted: tmp8 };
-    tmp9 = callback5(AppLauncherCommandView, obj);
+    tmp9 = callback4(AppLauncherCommandView, obj);
   }
   return tmp9;
 };

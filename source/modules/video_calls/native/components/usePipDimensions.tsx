@@ -1,31 +1,29 @@
-// Module ID: 10535
-// Function ID: 82334
+// Module ID: 10545
+// Function ID: 82384
 // Name: usePipDimensions
-// Dependencies: []
+// Dependencies: [31, 10546, 1450, 8303, 2]
 // Exports: default
 
-// Module 10535 (usePipDimensions)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/video_calls/native/components/usePipDimensions.tsx");
+// Module 10545 (usePipDimensions)
+import result from "result";
+
+const require = arg1;
+const result = require("useWindowDimensions").fileFinishedImporting("modules/video_calls/native/components/usePipDimensions.tsx");
 
 export default function usePipDimensions(channelId) {
   let forcedOrientation = channelId.forcedOrientation;
   if (forcedOrientation === undefined) {
     forcedOrientation = null;
   }
-  const arg1 = forcedOrientation;
-  let importDefault;
-  let dependencyMap;
-  let React;
-  const isViewingActivity = arg1(dependencyMap[1]).useIsViewingActivity({ channelId: channelId.channelId });
-  importDefault = isViewingActivity;
-  const size = importDefault(dependencyMap[2])();
-  const width = size.width;
-  dependencyMap = width;
-  const height = size.height;
-  React = height;
+  let isViewingActivity;
+  let width;
+  let height;
+  isViewingActivity = forcedOrientation(width[1]).useIsViewingActivity({ channelId: channelId.channelId });
+  const size = isViewingActivity(width[2])();
+  width = size.width;
+  height = size.height;
   const items = [height, width, forcedOrientation, isViewingActivity];
-  return React.useMemo(() => {
+  return height.useMemo(() => {
     let tmp = width > height;
     let tmp2 = forcedOrientation === forcedOrientation(width[3]).OrientationType.LANDSCAPE;
     if (!tmp2) {

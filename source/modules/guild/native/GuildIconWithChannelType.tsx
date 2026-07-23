@@ -1,24 +1,27 @@
-// Module ID: 9901
-// Function ID: 76613
+// Module ID: 9908
+// Function ID: 76654
 // Name: GuildIconWithChannelTypeSizes
-// Dependencies: []
+// Dependencies: [31, 27, 33, 5515, 4130, 689, 4593, 9909, 7873, 1273, 2]
 // Exports: GuildIconWithChannelType
 
-// Module 9901 (GuildIconWithChannelTypeSizes)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
+// Module 9908 (GuildIconWithChannelTypeSizes)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = { SMALL_32: "SMALL_32" };
 obj = {};
-obj = { guildIconSize: arg1(dependencyMap[3]).GuildIconSizes.XSMALL };
+obj = { pileSize: 32, guildIconSize: require("makeSizeStyle").GuildIconSizes.XSMALL, typeIconSize: 12, typeIconPadding: 4, gap: 3 };
 obj[obj.SMALL_32] = obj;
-const tmp2 = arg1(dependencyMap[2]);
-const obj1 = {};
-const obj4 = arg1(dependencyMap[4]);
-obj1.typeIconWrapper = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[5]).radii.round, width: 20 };
-let closure_8 = obj4.createStyles(obj1);
-const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[5]).radii.round, width: 20 };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild/native/GuildIconWithChannelType.tsx");
+let obj1 = { typeIconWrapper: { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, width: 20 } };
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj1);
+const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, width: 20 };
+const result = require("jsxProd").fileFinishedImporting("modules/guild/native/GuildIconWithChannelType.tsx");
 
 export const GuildIconWithChannelTypeSizes = obj;
 export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) {
@@ -27,41 +30,38 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   let size;
   let tmp;
   let typeIconSize;
-  let obj = { tile_position: "spring", http: 0.4, REDESIGN_INPUT_CONTROL_ACTIVE_BG: 1 };
+  let obj = { "aria-label": 0, size: 0, channel: 0 };
   ({ aria-label: tmp, size, channel } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   ({ guildIconSize, typeIconSize } = obj[size]);
-  const arg1 = typeIconSize;
   const typeIconPadding = tmp5.typeIconPadding;
-  const importDefault = typeIconPadding;
   const gap = tmp5.gap;
-  const tmp6 = arg1(dependencyMap[3]).ImageSizes[guildIconSize];
+  const tmp6 = typeIconSize(5515).ImageSizes[guildIconSize];
   const dependencyMap = tmp6;
   const sum = typeIconSize + 2 * typeIconPadding;
-  const React = sum;
   const sum1 = 0.5 + gap / tmp6;
-  const items = [tmp6, sum];
+  let items = [tmp6, sum];
   const items1 = [typeIconPadding, sum];
-  const memo = React.useMemo(() => {
-    const items = [tmp6, sum];
+  const memo = sum.useMemo(() => {
+    const items = [closure_2, result];
     return items;
   }, items);
   const items2 = [typeIconSize];
-  const memo1 = React.useMemo(() => ({ width: sum, height: sum, padding: typeIconPadding }), items1);
-  const memo2 = React.useMemo(() => ({ width: typeIconSize, height: typeIconSize }), items2);
-  let obj1 = arg1(dependencyMap[6]);
+  const memo1 = sum.useMemo(() => ({ width: result, height: result, padding: typeIconPadding }), items1);
+  const memo2 = sum.useMemo(() => ({ width: typeIconSize, height: typeIconSize }), items2);
+  let obj1 = typeIconSize(4593);
   const channelIcon = obj1.getChannelIcon(channel);
-  obj = { aria-label: tmp, shape: arg1(dependencyMap[8]).CutoutShape.Circle, size: memo, gap, depthX: sum1, depthY: sum1 };
+  obj = { "aria-label": tmp, shape: typeIconSize(7873).CutoutShape.Circle, size: memo, gap, depthX: sum1, depthY: sum1 };
   obj = {};
   const tmp4 = callback3();
   const merged1 = Object.assign(merged);
   obj["size"] = guildIconSize;
-  const items3 = [callback(importDefault(dependencyMap[3]), obj), ];
-  obj1 = { style: items4, children: callback(arg1(dependencyMap[9]).Icon, { style: items5, source: channelIcon }) };
-  const items4 = [tmp4.typeIconWrapper, memo1];
-  const items5 = [memo2];
+  const items3 = [callback(typeIconPadding(5515), obj), ];
+  obj1 = { style: items4, children: callback(typeIconSize(1273).Icon, { style: items5, source: channelIcon }) };
+  items4 = [tmp4.typeIconWrapper, memo1];
+  items5 = [memo2];
   items3[1] = callback(View, obj1);
   obj.children = items3;
-  return callback2(arg1(dependencyMap[7]).Pile, obj);
+  return callback2(typeIconSize(9909).Pile, obj);
 };

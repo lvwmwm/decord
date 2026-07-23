@@ -1,17 +1,23 @@
-// Module ID: 14602
-// Function ID: 110024
+// Module ID: 14717
+// Function ID: 112188
 // Name: useScreenRecordingStore
-// Dependencies: []
+// Dependencies: [621, 14718, 2]
 
-// Module 14602 (useScreenRecordingStore)
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/screen_recording/native/ScreenRecordingStore.tsx");
+// Module 14717 (useScreenRecordingStore)
+import keys from "keys";
 
-export const useScreenRecordingStore = _module.create((arg0, arg1) => {
-  const require = arg0;
-  const dependencyMap = arg1;
-  return {
+let obj = keys.create((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let obj = {
+    isRecording: false,
+    microphoneEnabled: false,
+    isUploading: false,
+    currentStep: 0,
+    stepStartedTime: null,
+    isCompleted: false,
+    currentSurveyId: null,
+    currentSurveyConfig: null,
     startRecording() {
       let flag = arg0;
       let tmp = arg1;
@@ -26,16 +32,16 @@ export const useScreenRecordingStore = _module.create((arg0, arg1) => {
         tmp2 = null;
       }
       const obj = { isRecording: true, microphoneEnabled: flag, currentSurveyId: tmp, currentSurveyConfig: tmp2, stepStartedTime: Date.now() };
-      return arg0(obj);
+      return callback(obj);
     },
     stopRecording() {
-      return arg0({});
+      return callback({ isRecording: false, microphoneEnabled: false, currentStep: 0, stepStartedTime: null, isCompleted: false });
     },
     setIsUploading(isUploading) {
-      return isUploading({ isUploading });
+      return callback({ isUploading });
     },
     nextStep() {
-      const tmp = arg1();
+      const tmp = dependencyMap();
       const sum = tmp.currentStep + 1;
       const currentSurveyConfig = tmp.currentSurveyConfig;
       let steps;
@@ -52,15 +58,19 @@ export const useScreenRecordingStore = _module.create((arg0, arg1) => {
         const _Date = Date;
         obj.stepStartedTime = Date.now();
       }
-      arg0(obj);
+      closure_0(obj);
     },
     resetActionSheet() {
-      const obj = { Text: "decimal-pad", HTTP: "number-pad", guild: "phone-pad", stepStartedTime: Date.now() };
-      return arg0(obj);
+      const obj = { currentStep: 0, stepStartedTime: Date.now(), isCompleted: false };
+      return callback(obj);
     },
     completeActionSheet() {
-      arg0(arg1[1]).handleStopAndSend();
-      arg0({ Text: "decimal-pad", HTTP: "number-pad", guild: "phone-pad" });
+      callback(14718).handleStopAndSend();
+      callback({ currentStep: 0, stepStartedTime: null, isCompleted: false });
     }
   };
+  return obj;
 });
+const result = require("set").fileFinishedImporting("modules/screen_recording/native/ScreenRecordingStore.tsx");
+
+export const useScreenRecordingStore = obj;

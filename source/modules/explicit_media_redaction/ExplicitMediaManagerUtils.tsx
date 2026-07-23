@@ -1,10 +1,10 @@
-// Module ID: 6841
-// Function ID: 54095
+// Module ID: 6846
+// Function ID: 54127
 // Name: hasAttachmentsEmbedsOrComponents
-// Dependencies: []
+// Dependencies: [2]
 // Exports: hasAttachmentsEmbedsComponentsOrSnapshots
 
-// Module 6841 (hasAttachmentsEmbedsOrComponents)
+// Module 6846 (hasAttachmentsEmbedsOrComponents)
 function hasAttachmentsEmbedsOrComponents(attachments) {
   let tmp = null != attachments.attachments;
   if (tmp) {
@@ -26,8 +26,7 @@ function hasAttachmentsEmbedsOrComponents(attachments) {
   }
   return tmp;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx");
 
 export const hasAttachmentsEmbedsComponentsOrSnapshots = function hasAttachmentsEmbedsComponentsOrSnapshots(message) {
   if (null == message) {
@@ -40,7 +39,7 @@ export const hasAttachmentsEmbedsComponentsOrSnapshots = function hasAttachments
       if (tmp3) {
         let someResult;
         if (null != obj) {
-          someResult = obj.some((message) => callback(message.message));
+          someResult = obj.some((message) => outer1_0(message.message));
         }
         tmp3 = someResult;
       }

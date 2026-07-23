@@ -1,20 +1,17 @@
-// Module ID: 6747
-// Function ID: 52520
+// Module ID: 6752
+// Function ID: 52552
 // Name: splitQuery
-// Dependencies: []
+// Dependencies: [6753, 2]
 // Exports: splitQuery
 
-// Module 6747 (splitQuery)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearchUtils.tsx");
+// Module 6752 (splitQuery)
+const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearchUtils.tsx");
 
 export const splitQuery = function splitQuery(query) {
   const parts = query.split(",");
   const mapped = parts.map((str) => str.trim());
   const items = [];
-  const require = items;
   const items1 = [];
-  const dependencyMap = items1;
   const item = mapped.forEach((text) => {
     if (obj.isSnowflake(text)) {
       items.push(text);

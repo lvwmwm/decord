@@ -1,10 +1,19 @@
 // Module ID: 1841
-// Function ID: 20199
+// Function ID: 20200
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 1842, 3, 1844, 44, 2]
 // Exports: clearLibdiscoreExperimentCache, isExperimentSyncDisabled
 
 // Module 1841 (_callSuper)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import timestamp from "timestamp";
+import isBlockedDomain from "isBlockedDomain";
+import { ensureValidMode } from "ensureValidMode";
+import importDefaultResult from "_classCallCheck";
+
+const require = arg1;
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
   const obj = callback(arg1);
@@ -16,7 +25,7 @@ function _callSuper(arg0, arg1, arg2) {
   } else {
     constructResult = obj.apply(arg0, items);
   }
-  return closure_3(arg0, constructResult);
+  return _possibleConstructorReturn(arg0, constructResult);
 }
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
@@ -27,28 +36,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const ensureValidMode = arg1(dependencyMap[5]).ensureValidMode;
-let importDefaultResult = importDefault(dependencyMap[6]);
 importDefaultResult = new importDefaultResult("libdiscoreExperiments");
-const items = [];
+let items = [];
 let closure_11 = Symbol("unknown");
-const tmp4 = () => {
+const tmp4 = (() => {
   class LibdiscoreCachedExperiment {
     constructor(arg0) {
-      tmp = closure_6(this, LibdiscoreCachedExperiment);
+      tmp = outer1_6(this, LibdiscoreCachedExperiment);
       this.id = arg0;
       this.inner = null;
-      this.cachedConfig = closure_11;
-      arr = closure_10.push(this);
+      this.cachedConfig = outer1_11;
+      arr = outer1_10.push(this);
       return;
     }
   }
-  const arg1 = LibdiscoreCachedExperiment;
   let obj = {
     key: "getEnabledFeatureName",
     value() {
@@ -69,15 +70,15 @@ const tmp4 = () => {
     key: "getCachedConfig",
     value() {
       const self = this;
-      if (this.cachedConfig === closure_11) {
+      if (this.cachedConfig === outer1_11) {
         if (obj.isLibdiscoreInitialized()) {
-          const experimentCacher = LibdiscoreCachedExperiment(closure_2[7]).getExperimentCacher();
+          const experimentCacher = LibdiscoreCachedExperiment(outer1_2[7]).getExperimentCacher();
           self.cachedConfig = experimentCacher.getConfig(self.id);
-          const obj2 = LibdiscoreCachedExperiment(closure_2[7]);
+          const obj2 = LibdiscoreCachedExperiment(outer1_2[7]);
         } else {
           self.cachedConfig = undefined;
         }
-        const obj = LibdiscoreCachedExperiment(closure_2[7]);
+        obj = LibdiscoreCachedExperiment(outer1_2[7]);
       }
       return self.cachedConfig;
     }
@@ -93,7 +94,7 @@ const tmp4 = () => {
   items[3] = {
     key: "getCurrentConfig",
     value() {
-      callback(closure_2[8])(null != this.inner, "experiment must be set before calling getCurrentConfig");
+      outer1_1(outer1_2[8])(null != this.inner, "experiment must be set before calling getCurrentConfig");
       const inner = this.inner;
       if ("getCurrentConfig" in this.inner) {
         let obj = { location: "default" };
@@ -106,8 +107,8 @@ const tmp4 = () => {
     }
   };
   return callback3(LibdiscoreCachedExperiment, items);
-}();
-let tmp5 = (arg0) => {
+})();
+let tmp5 = ((arg0) => {
   class LibdiscoreWrapperSimpleExperiment {
     constructor(arg0, arg1) {
       flag = arg2;
@@ -115,16 +116,15 @@ let tmp5 = (arg0) => {
       if (arg2 === undefined) {
         flag = false;
       }
-      tmp = closure_6(self, LibdiscoreWrapperSimpleExperiment);
+      tmp = outer1_6(self, LibdiscoreWrapperSimpleExperiment);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_13(self, LibdiscoreWrapperSimpleExperiment, items);
+      tmp2 = outer1_13(self, LibdiscoreWrapperSimpleExperiment, items);
       tmp2.label = arg1;
       tmp2.defaultValue = flag;
       return tmp2;
     }
   }
-  const arg1 = LibdiscoreWrapperSimpleExperiment;
   callback2(LibdiscoreWrapperSimpleExperiment, arg0);
   let obj = {
     key: "getLabel",
@@ -132,7 +132,7 @@ let tmp5 = (arg0) => {
       return this.label;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "getTreatments",
     value() {
@@ -156,20 +156,19 @@ let tmp5 = (arg0) => {
   };
   items[2] = obj;
   return callback3(LibdiscoreWrapperSimpleExperiment, items);
-}(tmp4);
-let tmp6 = (arg0) => {
+})(tmp4);
+let tmp6 = ((arg0) => {
   class LibdiscoreBridgedStoreExperiment {
     constructor(arg0, arg1, arg2) {
-      tmp = closure_6(this, LibdiscoreBridgedStoreExperiment);
+      tmp = outer1_6(this, LibdiscoreBridgedStoreExperiment);
       items = [, ];
       items[0] = arg0;
       items[1] = arg2;
-      tmp2 = closure_13(this, LibdiscoreBridgedStoreExperiment, items);
+      tmp2 = outer1_13(this, LibdiscoreBridgedStoreExperiment, items);
       tmp2.storeName = arg1;
       return tmp2;
     }
   }
-  const arg1 = LibdiscoreBridgedStoreExperiment;
   callback2(LibdiscoreBridgedStoreExperiment, arg0);
   let obj = {
     key: "getCachedBridgedStoreMode",
@@ -191,10 +190,10 @@ let tmp6 = (arg0) => {
           str = "typescript";
         }
       }
-      return callback2(str);
+      return outer1_8(str);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getEnabledFeatureName",
     value() {
@@ -223,20 +222,19 @@ let tmp6 = (arg0) => {
     }
   };
   return callback3(LibdiscoreBridgedStoreExperiment, items);
-}(tmp4);
-let tmp7 = (arg0) => {
+})(tmp4);
+let tmp7 = ((arg0) => {
   class LibdiscoreTelemetryExperiment {
     constructor(arg0) {
       items = [...arguments];
-      tmp = closure_6(this, LibdiscoreTelemetryExperiment);
+      tmp = outer1_6(this, LibdiscoreTelemetryExperiment);
       items1 = [...items];
-      tmp2 = closure_13(this, LibdiscoreTelemetryExperiment, items1);
+      tmp2 = outer1_13(this, LibdiscoreTelemetryExperiment, items1);
       tmp2.MAX_EMISSIONS_PER_APP_LAUNCH = 5;
       tmp2.emissionsCount = 0;
       return tmp2;
     }
   }
-  const arg1 = LibdiscoreTelemetryExperiment;
   callback2(LibdiscoreTelemetryExperiment, arg0);
   let obj = {
     key: "getLabel",
@@ -244,7 +242,7 @@ let tmp7 = (arg0) => {
       return "libdiscore Telemetry";
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "getTreatments",
     value() {
@@ -301,23 +299,22 @@ let tmp7 = (arg0) => {
     }
   };
   return callback3(LibdiscoreTelemetryExperiment, items);
-}(tmp4);
+})(tmp4);
 tmp6 = new tmp6("2026-01-libdiscore-batch-store-refactor", "batch-store-refactor");
 tmp7 = new tmp7("2025-09-libdiscore-telemetry");
 tmp5 = new tmp5("2025-11-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded");
-let tmp11 = (arg0) => {
+let tmp11 = ((arg0) => {
   class LibdiscoreCustomTreatmentsExperiment {
     constructor(arg0, arg1, arg2) {
-      tmp = closure_6(this, LibdiscoreCustomTreatmentsExperiment);
+      tmp = outer1_6(this, LibdiscoreCustomTreatmentsExperiment);
       items = [];
       items[0] = arg0;
-      tmp2 = closure_13(this, LibdiscoreCustomTreatmentsExperiment, items);
+      tmp2 = outer1_13(this, LibdiscoreCustomTreatmentsExperiment, items);
       tmp2.label = arg1;
       tmp2.treatmentCount = arg2;
       return tmp2;
     }
   }
-  const arg1 = LibdiscoreCustomTreatmentsExperiment;
   callback2(LibdiscoreCustomTreatmentsExperiment, arg0);
   let obj = {
     key: "getLabel",
@@ -325,7 +322,7 @@ let tmp11 = (arg0) => {
       return this.label;
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "getTreatments",
     value() {
@@ -334,14 +331,14 @@ let tmp11 = (arg0) => {
   };
   items[1] = obj;
   return callback3(LibdiscoreCustomTreatmentsExperiment, items);
-}(tmp4);
+})(tmp4);
 tmp11 = new tmp11("2026-01-android-rmle", "Android Pull Mode Rendering", 4);
 tmp11 = new tmp11("2026-02-android-fresco-cache", "Android Fresco Cache", 3);
 tmp5 = new tmp5("2026-02-android-chat-mosaic-shared-pool", "Android Chat Mosaic Shared Pool");
 const tmp51 = new tmp5("2026-03-mobile-hermes-occupancy-target", "Android Hermes Occupancy Target");
-let closure_12 = false;
+let c12 = false;
 const tmp52 = new tmp5("2026-06-ios-ota-streaming", "iOS OTA Streaming Download");
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/libdiscore/libdiscoreExperiments.tsx");
+let result = require("_inherits").fileFinishedImporting("modules/libdiscore/libdiscoreExperiments.tsx");
 
 export const ALL_LIBDISCORE_EXPERIMENTS = items;
 export const LibdiscoreCachedExperiment = tmp4;
@@ -355,14 +352,14 @@ export const AndroidChatMosaicSharedPoolExperiment = tmp5;
 export const AndroidHermesOccupancyTargetExperiment = tmp51;
 export const IOSOtaStreamingExperiment = tmp52;
 export function isExperimentSyncDisabled() {
-  return closure_12;
+  return c12;
 }
 export const clearLibdiscoreExperimentCache = function clearLibdiscoreExperimentCache() {
   if (obj.isLibdiscoreInitialized()) {
     importDefaultResult.info("Clearing libdiscore experiment cache and disabling sync");
-    let closure_12 = true;
-    const experimentCacher = arg1(dependencyMap[7]).getExperimentCacher();
+    let c12 = true;
+    const experimentCacher = require(1844) /* isBlockedDomain */.getExperimentCacher();
     experimentCacher.clearCache();
-    const obj2 = arg1(dependencyMap[7]);
+    const obj2 = require(1844) /* isBlockedDomain */;
   }
 };

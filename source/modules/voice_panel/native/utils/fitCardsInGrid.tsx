@@ -1,10 +1,10 @@
-// Module ID: 10014
-// Function ID: 77415
+// Module ID: 10022
+// Function ID: 77455
 // Name: isNewLayoutBetter
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 10014 (isNewLayoutBetter)
+// Module 10022 (isNewLayoutBetter)
 function isNewLayoutBetter(unusedSpace, unusedSpace2) {
   if (0 !== unusedSpace2.unusedSpace) {
     if (unusedSpace.unusedSpace !== unusedSpace2.unusedSpace) {
@@ -47,8 +47,7 @@ function isNewLayoutBetter(unusedSpace, unusedSpace2) {
   }
   return false;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/voice_panel/native/utils/fitCardsInGrid.tsx");
+let result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/fitCardsInGrid.tsx");
 
 export default function fitCardsInGrid(arg0) {
   let availableHeight;
@@ -56,7 +55,7 @@ export default function fitCardsInGrid(arg0) {
   let cardCount;
   let gutterSize;
   ({ cardCount, gutterSize, availableWidth, availableHeight } = arg0);
-  let obj = {};
+  let obj = { columns: 1, rows: 0, cardSize: 0, overscroll: 0, unusedSpace: Infinity };
   let num = 1;
   let tmp = obj;
   if (1 <= cardCount) {
@@ -77,9 +76,9 @@ export default function fitCardsInGrid(arg0) {
       obj.overscroll = availableHeight - sum1;
       obj.rows = sum;
       obj.cardSize = result;
-      let tmp7 = closure_0;
+      let tmp7 = isNewLayoutBetter;
       let tmp8 = obj;
-      if (closure_0(obj, obj)) {
+      if (isNewLayoutBetter(obj, obj)) {
         tmp8 = obj;
       }
       let tmp9 = tmp8;
@@ -93,10 +92,10 @@ export default function fitCardsInGrid(arg0) {
         obj["unusedSpace"] = availableWidth * availableHeight - (result2 * obj.columns + (obj.columns - 1) * gutterSize) * sum2;
         obj["overscroll"] = availableHeight - sum2;
         obj["cardSize"] = result2;
-        let tmp16 = closure_0;
+        let tmp16 = isNewLayoutBetter;
         tmp9 = tmp8;
         let tmp17 = obj;
-        if (closure_0(obj, tmp8)) {
+        if (isNewLayoutBetter(obj, tmp8)) {
           tmp9 = obj;
           let tmp10 = obj;
         }

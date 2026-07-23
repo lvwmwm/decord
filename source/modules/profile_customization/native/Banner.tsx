@@ -1,17 +1,19 @@
-// Module ID: 8255
-// Function ID: 65128
+// Module ID: 8261
+// Function ID: 65165
 // Name: ProfileBanner
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 665, 5085, 2]
 // Exports: default
 
-// Module 8255 (ProfileBanner)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const BANNER_HEIGHT = arg1(dependencyMap[2]).BANNER_HEIGHT;
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_6 = arg1(dependencyMap[4]).createStyles({ root: { width: "100%" }, image: {} });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/profile_customization/native/Banner.tsx");
+// Module 8261 (ProfileBanner)
+import "result";
+import { View } from "get ActivityIndicator";
+import { BANNER_HEIGHT } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ root: { width: "100%" }, image: { width: "100%", height: "100%" } });
+const result = require("ME").fileFinishedImporting("modules/profile_customization/native/Banner.tsx");
 
 export default function ProfileBanner(bannerHeight) {
   let backgroundColor;
@@ -28,14 +30,14 @@ export default function ProfileBanner(bannerHeight) {
     bannerHeight = BANNER_HEIGHT;
   }
   const tmp = callback();
-  let obj = { backgroundColor: arg1(dependencyMap[5]).int2hex(backgroundColor), height: bannerHeight + bannerSafeArea };
+  let obj = { backgroundColor: require(665) /* pad2 */.int2hex(backgroundColor), height: bannerHeight + bannerSafeArea };
   obj = { style: items };
-  const items = [tmp.root, obj, style];
+  items = [tmp.root, obj, style];
   let tmp4 = null;
   if (null != bannerSource) {
     obj = { style: tmp.image, source: bannerSource };
-    tmp4 = jsx(importDefault(dependencyMap[6]), obj);
+    tmp4 = jsx(importDefault(5085), { style: tmp.image, source: bannerSource });
   }
   obj.children = tmp4;
-  return <View {...obj} />;
+  return <View style={items} />;
 };

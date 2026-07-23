@@ -1,14 +1,14 @@
-// Module ID: 15909
-// Function ID: 121903
+// Module ID: 16026
+// Function ID: 124076
 // Name: shouldShowLogUploadForCategory
-// Dependencies: []
+// Dependencies: [9500, 2]
 // Exports: shouldShowLogUploadForCategory
 
-// Module 15909 (shouldShowLogUploadForCategory)
-const FeedbackRating = require(dependencyMap[0]).FeedbackRating;
+// Module 16026 (shouldShowLogUploadForCategory)
+import { FeedbackRating } from "FeedbackRating";
+
 let closure_1 = {};
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/feedback/shouldShowLogUploadForCategory.tsx");
+const result = require("set").fileFinishedImporting("modules/feedback/shouldShowLogUploadForCategory.tsx");
 
 export const shouldShowLogUploadForCategory = function shouldShowLogUploadForCategory(rating, category, reason) {
   if (rating !== FeedbackRating.BAD) {
@@ -20,7 +20,7 @@ export const shouldShowLogUploadForCategory = function shouldShowLogUploadForCat
     return false;
   } else {
     let num2 = 0.01;
-    if (null != closure_1[category]) {
+    if (null != table[category]) {
       num2 = 0.01;
       if (null != tmp3[reason.value]) {
         num2 = tmp5;

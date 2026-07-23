@@ -1,37 +1,37 @@
-// Module ID: 11226
-// Function ID: 87401
+// Module ID: 11236
+// Function ID: 87451
 // Name: GlobalSearchCoachmark
-// Dependencies: []
+// Dependencies: [31, 27, 1455, 1345, 33, 4130, 689, 9075, 8572, 1212, 2]
 // Exports: default
 
-// Module 11226 (GlobalSearchCoachmark)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const DEFAULT_CONTENT_PADDING = arg1(dependencyMap[2]).DEFAULT_CONTENT_PADDING;
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-const jsx = arg1(dependencyMap[4]).jsx;
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round };
-obj.appsIcon = obj;
-obj.appsIconImage = { tintColor: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { tintColor: importDefault(dependencyMap[6]).unsafe_rawColors.WHITE };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherGlobalSearchOnboardingBanner.tsx");
+// Module 11236 (GlobalSearchCoachmark)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { height: 40, width: 40, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.appsIcon = _createForOfIteratorHelperLoose;
+const obj1 = { height: 24, width: 24, tintColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE };
+_createForOfIteratorHelperLoose.appsIconImage = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherGlobalSearchOnboardingBanner.tsx");
 
 export default function GlobalSearchCoachmark(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const arg1 = markAsDismissed;
   const visible = markAsDismissed.visible;
-  const importDefault = visible;
   const windowDimensions = markAsDismissed.windowDimensions;
-  let closure_2 = callback();
+  const dependencyMap = _createForOfIteratorHelperLoose();
   const diff = windowDimensions.width - 2 * DEFAULT_CONTENT_PADDING;
   const items = [markAsDismissed, visible];
   const effect = React.useEffect(() => () => {
-    if (closure_1) {
-      const obj = { actionType: constants.USER_DISMISS };
-      callback(obj);
+    if (outer1_1) {
+      const obj = { actionType: outer2_6.USER_DISMISS };
+      outer1_0(obj);
     }
   }, items);
   let tmp3 = null;
@@ -40,23 +40,23 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
       renderImgComponent: function appsIcon() {
           let obj = { style: closure_2.appsIcon };
           obj = { style: closure_2.appsIconImage, color: visible(closure_2[6]).colors.INTERACTIVE_TEXT_ACTIVE };
-          obj.children = callback(markAsDismissed(closure_2[7]).AppsIcon, obj);
-          return callback(closure_4, obj);
+          obj.children = outer1_7(markAsDismissed(closure_2[7]).AppsIcon, obj);
+          return outer1_7(outer1_4, obj);
         }
     };
-    const intl = arg1(closure_2[9]).intl;
-    obj.title = intl.string(arg1(closure_2[9]).t.bCPN5y);
-    const intl2 = arg1(closure_2[9]).intl;
-    obj.description = intl2.string(arg1(closure_2[9]).t.0TBExc);
+    const intl = markAsDismissed(1212).intl;
+    obj.title = intl.string(markAsDismissed(1212).t.bCPN5y);
+    const intl2 = markAsDismissed(1212).intl;
+    obj.description = intl2.string(markAsDismissed(1212).t["0TBExc"]);
     obj.onDismiss = function onDismiss() {
-      markAsDismissed({ actionType: constants.TAKE_ACTION });
+      markAsDismissed({ actionType: outer1_6.TAKE_ACTION });
     };
-    obj = { width: diff };
+    obj = { x: 0, y: -40, width: diff, height: 40 };
     obj.targetMeasurements = obj;
-    obj = { 0: 16125691841645983000000000000000000000000000000000000000000000000000000000000000000, 0: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000041137867350885615, width: diff, height: windowDimensions.height };
+    obj = { x: -140, y: -40, width: diff, height: windowDimensions.height };
     obj.surfaceMeasurements = obj;
     obj.position = "bottom";
-    tmp3 = jsx(arg1(closure_2[8]).Coachmark, obj);
+    tmp3 = jsx(markAsDismissed(8572).Coachmark, { x: -140, y: -40, width: diff, height: windowDimensions.height });
   }
   return tmp3;
 };

@@ -1,14 +1,14 @@
-// Module ID: 10850
-// Function ID: 84297
+// Module ID: 10860
+// Function ID: 84346
 // Name: useMessagePreviewHeightStore
-// Dependencies: []
+// Dependencies: [621, 682, 2]
 // Exports: setMesssagePreviewCollapsedHeight, setMesssagePreviewExpandedHeight, setMesssagePreviewHeight, useMessagePreviewCollapsedheight, useMessagePreviewExpandedHeight
 
-// Module 10850 (useMessagePreviewHeightStore)
-const _module = require(dependencyMap[0]);
-const obj = _module.create(() => ({ 1851909288: "%FunctionPrototype%", -362860719: "paddingStart" }));
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/media_viewer/native/useMessagePreviewHeight.tsx");
+// Module 10860 (useMessagePreviewHeightStore)
+import keys from "keys";
+
+const obj = keys.create(() => ({ collapsedHeight: 0, expandedHeight: 0 }));
+const result = require("set").fileFinishedImporting("modules/media_viewer/native/useMessagePreviewHeight.tsx");
 
 export const useMessagePreviewHeightStore = obj;
 export const useMessagePreviewCollapsedheight = function useMessagePreviewCollapsedheight() {
@@ -18,14 +18,14 @@ export const useMessagePreviewExpandedHeight = function useMessagePreviewExpande
   return obj().expandedHeight;
 };
 export const setMesssagePreviewHeight = function setMesssagePreviewHeight(arg0) {
-  const require = arg0;
-  require(dependencyMap[1]).batchUpdates(() => state.setState(arg0));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_2.setState(closure_0));
 };
 export const setMesssagePreviewCollapsedHeight = function setMesssagePreviewCollapsedHeight(arg0) {
-  const require = arg0;
-  require(dependencyMap[1]).batchUpdates(() => state.setState({ collapsedHeight: arg0 }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_2.setState({ collapsedHeight: closure_0 }));
 };
 export const setMesssagePreviewExpandedHeight = function setMesssagePreviewExpandedHeight(arg0) {
-  const require = arg0;
-  require(dependencyMap[1]).batchUpdates(() => state.setState({ expandedHeight: arg0 }));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_2.setState({ expandedHeight: closure_0 }));
 };

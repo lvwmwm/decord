@@ -1,21 +1,25 @@
-// Module ID: 5783
-// Function ID: 49472
+// Module ID: 5788
+// Function ID: 49501
 // Name: HeaderActionButton
-// Dependencies: []
+// Dependencies: [31, 1277, 33, 4130, 689, 4126, 4547, 4545, 4660, 2]
 
-// Module 5783 (HeaderActionButton)
-const ANDROID_FOREGROUND_RIPPLE = arg1(dependencyMap[1]).ANDROID_FOREGROUND_RIPPLE;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let obj = { button: {} };
-obj = { color: importDefault(dependencyMap[4]).colors.TEXT_BRAND, textTransform: "capitalize" };
+// Module 5788 (HeaderActionButton)
+import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let obj = { button: { flex: 1, alignItems: "center", justifyContent: "center", flexDirection: "row" } };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND, textTransform: "capitalize" };
 obj.text = obj;
-obj.buttonFont = { "Bool(true)": true, "Bool(true)": true };
+obj.buttonFont = { fontSize: 16, maxWidth: 80 };
 obj.buttonDisabled = { opacity: 0.6 };
-let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const forwardRefResult = require("result").forwardRef((arg0, ref) => {
   let IconComponent;
   let IconComponentSize;
   let accessibilityActions;
@@ -36,20 +40,20 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   ({ style, textStyle, imageStyle, accessibilityHint, accessibilityActions, onAccessibilityAction, icon, IconComponentSize, onPress, foregroundRipple, iconSize } = arg0);
   const tmp = callback2();
   if (null != text) {
-    let obj = {};
+    let obj = { style: null, variant: "text-md/semibold", lineClamp: 1 };
     const items = [, , ];
     ({ text: arr[0], buttonFont: arr[1] } = tmp);
     items[2] = textStyle;
     obj.style = items;
-    obj.maxFontSizeMultiplier = ref(dependencyMap[6]).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    obj.maxFontSizeMultiplier = require(4547) /* getButtonPadding */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
     obj.children = text;
-    let tmp2 = callback(ref(dependencyMap[5]).Text, obj);
+    let tmp2 = callback(require(4126) /* Text */.Text, obj);
   } else if (null != IconComponent) {
     obj = { size: IconComponentSize };
     tmp2 = callback(IconComponent, obj);
   } else if (null != source) {
     obj = { source, style: imageStyle, size: iconSize };
-    tmp2 = callback(importDefault(dependencyMap[7]), obj);
+    tmp2 = callback(importDefault(4545), obj);
   }
   const obj1 = { ref };
   if (null != accessibilityLabel) {
@@ -77,8 +81,8 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   obj1.disabled = disabled;
   const items2 = [tmp2, icon];
   obj1.children = items2;
-  return closure_5(ref(dependencyMap[8]).PressableOpacity, obj1);
+  return closure_5(require(4660) /* PressableBase */.PressableOpacity, obj1);
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/Navigator/native/HeaderActionButton.native.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Navigator/native/HeaderActionButton.native.tsx");
 
 export const HeaderActionButton = forwardRefResult;

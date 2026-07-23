@@ -1,12 +1,13 @@
 // Module ID: 284
 // Function ID: 4457
 // Name: PressabilityPerformanceEventEmitter
-// Dependencies: []
+// Dependencies: [6, 7]
 
 // Module 284 (PressabilityPerformanceEventEmitter)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let tmp2 = () => {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+let tmp2 = (() => {
   class PressabilityPerformanceEventEmitter {
     constructor() {
       tmp = PressabilityPerformanceEventEmitter(this, PressabilityPerformanceEventEmitter);
@@ -14,7 +15,6 @@ let tmp2 = () => {
       return;
     }
   }
-  let closure_0 = PressabilityPerformanceEventEmitter;
   let obj = {
     key: "addListener",
     value: function addListener(arg0) {
@@ -39,15 +39,15 @@ let tmp2 = () => {
     key: "emitEvent",
     value: function emitEvent(arg0) {
       if (0 !== this._listeners.length) {
-        let closure_0 = arg0();
+        let _classCallCheck = arg0();
         const _listeners = tmp._listeners;
-        const item = _listeners.forEach((arg0) => arg0(closure_0));
+        const item = _listeners.forEach((arg0) => arg0(_classCallCheck));
       }
     }
   };
   items[2] = obj;
   return callback(PressabilityPerformanceEventEmitter, items);
-}();
+})();
 tmp2 = new tmp2();
 
 export default tmp2;

@@ -1,30 +1,32 @@
-// Module ID: 5634
-// Function ID: 48200
+// Module ID: 5639
+// Function ID: 48227
 // Name: useGuildEligibleForGuildProducts
-// Dependencies: []
+// Dependencies: [1838, 653, 566, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 5634 (useGuildEligibleForGuildProducts)
-let closure_2 = importDefault(dependencyMap[0]);
-const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");
+// Module 5639 (useGuildEligibleForGuildProducts)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { GuildFeatures } from "ME";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");
 
 export const useGuildEligibleForGuildProducts = function useGuildEligibleForGuildProducts(id) {
-  const arg1 = id;
-  const items = [closure_2];
+  const _require = id;
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [id];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    if (null == arg0) {
+  return _require(566).useStateFromStores(items, () => {
+    if (null == closure_0) {
       return false;
     } else {
-      const guild = guild.getGuild(arg0);
+      const guild = outer1_2.getGuild(closure_0);
       let tmp4 = null != guild;
       if (tmp4) {
         const features = guild.features;
-        let hasItem = features.has(constants.COMMUNITY);
+        let hasItem = features.has(outer1_3.COMMUNITY);
         if (!hasItem) {
           const features2 = guild.features;
-          hasItem = features2.has(constants.GUILD_PRODUCTS);
+          hasItem = features2.has(outer1_3.GUILD_PRODUCTS);
         }
         tmp4 = hasItem;
       }
@@ -36,7 +38,7 @@ export const isGuildEligibleForGuildProducts = function isGuildEligibleForGuildP
   if (null == id) {
     return false;
   } else {
-    const guild = guild.getGuild(id);
+    guild = guild.getGuild(id);
     let tmp3 = null != guild;
     if (tmp3) {
       const features = guild.features;

@@ -1,64 +1,68 @@
-// Module ID: 14858
-// Function ID: 111960
+// Module ID: 14974
+// Function ID: 114128
 // Name: AudienceItem
-// Dependencies: []
+// Dependencies: [31, 27, 1917, 33, 4130, 689, 10261, 8830, 566, 14975, 9889, 1212, 11563, 4126, 14979, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 14858 (AudienceItem)
+// Module 14974 (AudienceItem)
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function AudienceItem(arg0) {
   let audienceCount;
   let collapsed;
   ({ audienceCount, collapsed } = arg0);
-  const tmp = callback2(importDefault(dependencyMap[7])());
+  const tmp = callback2(importDefault(8830)());
   let formatToPlainStringResult = audienceCount;
   if (!collapsed) {
-    const intl = arg1(dependencyMap[11]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     let obj = { count: audienceCount };
-    formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[11]).t.+v2pN2, obj);
+    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["+v2pN2"], obj);
   }
   obj = { style: collapsed ? tmp.listenersCollapsed : tmp.listeners };
-  obj = { style: tmp.listenersIconWrapper, children: callback(arg1(dependencyMap[12]).HeadphonesIcon, obj1) };
-  const obj1 = { GuildBadgeSnail: true, EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED: true, style: tmp.headphonesIcon };
+  obj = { style: tmp.listenersIconWrapper, children: callback(require(11563) /* HeadphonesIcon */.HeadphonesIcon, obj1) };
+  obj1 = { color: "redesign-channel-name-muted-text", size: "custom", style: tmp.headphonesIcon };
   const items = [callback(View, obj), ];
-  const obj2 = { style: tmp.listenersText, variant: closure_7, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult };
-  items[1] = callback(arg1(dependencyMap[13]).Text, obj2);
+  const obj2 = { style: tmp.listenersText, variant: c7, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult };
+  items[1] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items;
   return closure_6(View, obj);
 }
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let closure_7 = "text-sm/medium";
-const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles((arg0) => {
-  const colors = importDefault(dependencyMap[5]).colors;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let c7 = "text-sm/medium";
+let closure_8 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
+  const colors = importDefault(689).colors;
   const tmp = arg0 ? colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT : colors.BACKGROUND_BASE_LOWEST;
-  const round = importDefault(dependencyMap[5]).radii.round;
-  let obj = { listeners: { highestAncestorCache: false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false }, listenersCollapsed: { backgroundColor: tmp, borderRadius: round } };
-  obj = { backgroundColor: tmp, borderRadius: round };
-  const merged = Object.assign(arg1(dependencyMap[6]).makeSizeStyle(20));
+  const round = importDefault(689).radii.round;
+  obj = { listeners: { display: "flex", flexDirection: "row", alignItems: "center", padding: 4, marginTop: 4, marginLeft: -8 }, listenersCollapsed: obj };
+  obj = { flexDirection: "row", alignItems: "center", backgroundColor: tmp, borderRadius: round, marginLeft: -16, marginTop: 4, paddingLeft: 2, paddingRight: 6 };
+  obj = { alignItems: "center", justifyContent: "center", backgroundColor: tmp, marginRight: 8, marginLeft: 4, borderRadius: round };
+  const merged = Object.assign(require(10261) /* getLayoutStyles */.makeSizeStyle(20));
   obj.listenersIconWrapper = obj;
   obj.listenersText = { marginRight: 4 };
   obj.userCollapsedOverlap = { marginLeft: -20 };
-  const obj3 = arg1(dependencyMap[6]);
-  obj.headphonesIcon = arg1(dependencyMap[6]).makeSizeStyle(14);
+  const obj4 = require(10261) /* getLayoutStyles */;
+  obj.headphonesIcon = require(10261) /* getLayoutStyles */.makeSizeStyle(14);
   return obj;
 });
-let closure_9 = importAllResult.memo((voiceState) => {
+let closure_9 = require("result").memo((voiceState) => {
   let member;
   let voiceState2;
   voiceState = voiceState.voiceState;
   const user = voiceState.user;
-  const arg1 = user;
   ({ member, voiceState: voiceState2 } = voiceState);
   const channel = voiceState.channel;
-  const importDefault = channel;
   const collapsed = voiceState.collapsed;
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_4];
+  let obj = user(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [channel.guild_id, user.id];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ storeMember: closure_4.getMember(channel.guild_id, user.id), isGuest: closure_4.isGuestOrLurker(channel.guild_id, user.id) }), items1);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ storeMember: outer1_4.getMember(channel.guild_id, user.id), isGuest: outer1_4.isGuestOrLurker(channel.guild_id, user.id) }), items1);
   let storeMember = stateFromStoresObject.storeMember;
   obj = {};
   let userCollapsedOverlap = null;
@@ -70,7 +74,7 @@ let closure_9 = importAllResult.memo((voiceState) => {
   }
   obj.style = userCollapsedOverlap;
   obj = { user };
-  const tmp = callback2(importDefault(dependencyMap[7])());
+  tmp = callback2(channel(8830)());
   const tmp3 = closure_5;
   const tmp4 = View;
   const tmp6 = closure_5;
@@ -83,22 +87,21 @@ let closure_9 = importAllResult.memo((voiceState) => {
   obj.sessionId = voiceState2.sessionId;
   obj.channel = channel;
   obj.isGuest = stateFromStoresObject.isGuest;
-  obj.children = tmp6(importDefault(dependencyMap[9]), obj, user.id);
+  obj.children = tmp6(channel(14975), obj, user.id);
   return tmp3(tmp4, obj);
 });
-const obj2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");
 
 export default function VoiceUsers(collapsed) {
   let audienceCount;
+  let importDefault;
   let voiceStates;
   collapsed = collapsed.collapsed;
-  const arg1 = collapsed;
-  ({ channel: closure_1, voiceStates, audienceCount } = collapsed);
+  ({ channel: importDefault, voiceStates, audienceCount } = collapsed);
   let tmp = null;
   if (0 !== voiceStates.length) {
     let obj = { collapsed };
-    const items = [voiceStates.map((user) => callback(closure_9, { voiceState: user, channel: closure_1, collapsed, isFirst: 0 === arg1 }, "voice-user-item-" + user.user.id + "-" + user.voiceState.sessionId)), ];
+    const items = [voiceStates.map((user) => outer1_5(outer1_9, { voiceState: user, channel: closure_1, collapsed, isFirst: 0 === arg1 }, "voice-user-item-" + user.user.id + "-" + user.voiceState.sessionId)), ];
     let tmp6 = null != audienceCount && audienceCount > 0;
     if (tmp6) {
       obj = { audienceCount, collapsed };
@@ -106,12 +109,12 @@ export default function VoiceUsers(collapsed) {
     }
     items[1] = tmp6;
     obj.children = items;
-    tmp = closure_6(importDefault(dependencyMap[14]), obj);
+    tmp = closure_6(importDefault(14979), obj);
     const tmp2 = closure_6;
-    const tmp5 = importDefault(dependencyMap[14]);
+    const tmp5 = importDefault(14979);
   }
   return tmp;
 };
 export const getAudienceItemHeight = function getAudienceItemHeight(fontScale) {
-  return 8 + Math.max(20, arg1(dependencyMap[10]).scaleTextLineHeight(closure_7, fontScale));
+  return 8 + Math.max(20, require(9889) /* scaleLineHeight */.scaleTextLineHeight(c7, fontScale));
 };

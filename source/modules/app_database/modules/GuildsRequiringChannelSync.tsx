@@ -1,52 +1,72 @@
-// Module ID: 6890
-// Function ID: 54793
+// Module ID: 6895
+// Function ID: 54827
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 1352, 1194, 1348, 1917, 1910, 1838, 3758, 653, 1355, 482, 483, 3, 1882, 3749, 491, 675, 1360, 2]
 
-// Module 6890 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6895 (_createForOfIteratorHelperLoose)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_createForOfIteratorHelperLoose";
+import closure_12 from "_createForOfIteratorHelperLoose";
+import closure_13 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { ChannelFlags } from "set";
+import { Permissions } from "sum";
+import importDefaultResult from "_isNativeReflectConstruct";
+import importAllResult from "fromHexReverseArray";
+
+let closure_14;
+let closure_15;
+let closure_6;
+let closure_7;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,30 +103,17 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-({ createChannelRecordFromServer: closure_6, ChannelRecordBase: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]);
-let closure_13 = importDefault(dependencyMap[8]);
-const tmp2 = arg1(dependencyMap[2]);
-({ AnalyticEvents: closure_14, BasicPermissions: closure_15 } = arg1(dependencyMap[9]));
-const ChannelFlags = arg1(dependencyMap[10]).ChannelFlags;
-const Permissions = arg1(dependencyMap[11]).Permissions;
-const tmp3 = arg1(dependencyMap[9]);
-let closure_17 = importAll(dependencyMap[12]).combine(Permissions.VIEW_CHANNEL, Permissions.ADMINISTRATOR);
-let importDefaultResult = importDefault(dependencyMap[13]);
+({ createChannelRecordFromServer: closure_6, ChannelRecordBase: closure_7 } = _callSuper);
+({ AnalyticEvents: closure_14, BasicPermissions: closure_15 } = ME);
+let closure_17 = require("fromHexReverseArray").combine(Permissions.VIEW_CHANNEL, Permissions.ADMINISTRATOR);
 importDefaultResult = new importDefaultResult("GuildsRequiringChannelSync");
 let closure_19 = { NewGuild: "new_guild", OwnershipChange: "ownership_change", RolePermissions: "role_permissions", RoleSubscriptionTags: "role_subscription_tags", MemberRoles: "member_roles", ChannelVisibleParentHidden: "channel_visible_parent_hidden", Unknown: "unknown" };
 let closure_20 = { ConnectionOpen: "connection_open", GuildCreate: "guild_create", BackgroundSync: "background_sync" };
-let tmp6 = () => {
+let tmp6 = (() => {
   class GuildsRequiringChannelSync {
     constructor() {
-      GuildsRequiringChannelSync = this;
-      tmp = closure_4(this, GuildsRequiringChannelSync);
+      self = this;
+      tmp = outer1_4(this, self);
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {
               return self.handleBackgroundSync(arg0, arg1);
@@ -127,11 +134,10 @@ let tmp6 = () => {
       return;
     }
   }
-  const arg1 = GuildsRequiringChannelSync;
   let obj = {
     key: "getAll",
     value() {
-      const result = callback(closure_3[14]).guildsRequiringChannelSync();
+      const result = outer1_1(outer1_3[14]).guildsRequiringChannelSync();
       if (null == result) {
         let resolved = Promise.resolve([]);
       } else {
@@ -140,18 +146,18 @@ let tmp6 = () => {
       return resolved;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "handleConnectionOpen",
     value(guilds) {
       let done;
       const self = this;
-      const tmp = callback3(guilds.guilds);
+      const tmp = outer1_21(guilds.guilds);
       let iter = tmp();
       if (!iter.done) {
         do {
-          let tmp2 = closure_20;
-          let handleGuildResult = self.handleGuild(iter.value, arg1, closure_20.ConnectionOpen);
+          let tmp2 = outer1_20;
+          let handleGuildResult = self.handleGuild(iter.value, arg1, outer1_20.ConnectionOpen);
           let iter2 = tmp();
           iter = iter2;
           done = iter2.done;
@@ -166,7 +172,7 @@ let tmp6 = () => {
       const self = this;
       guild = guild.guild;
       if (true !== guild.unavailable) {
-        self.handleGuild(guild, arg1, closure_20.GuildCreate);
+        self.handleGuild(guild, arg1, outer1_20.GuildCreate);
       }
     }
   };
@@ -176,7 +182,7 @@ let tmp6 = () => {
     value(guilds) {
       let done;
       const self = this;
-      const tmp = callback3(guilds.guilds);
+      const tmp = outer1_21(guilds.guilds);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -194,7 +200,7 @@ let tmp6 = () => {
       let done;
       const self = this;
       guildIds = guildIds.guildIds;
-      const tmp = callback3(guildIds);
+      const tmp = outer1_21(guildIds);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -204,7 +210,7 @@ let tmp6 = () => {
           done = iter2.done;
         } while (!done);
       }
-      closure_18.verbose("Unmarked guilds " + JSON.stringify(guildIds));
+      outer1_18.verbose("Unmarked guilds " + JSON.stringify(guildIds));
     }
   };
   items[5] = {
@@ -216,51 +222,51 @@ let tmp6 = () => {
         let tmp21 = arg1[key10010];
         let isSubscriptionRoleResult = null != tmp21;
         if (isSubscriptionRoleResult) {
-          let tmp = closure_0;
-          let tmp2 = closure_3;
-          obj = closure_0(closure_3[15]);
+          let tmp = GuildsRequiringChannelSync;
+          let tmp2 = outer1_3;
+          obj = GuildsRequiringChannelSync(outer1_3[15]);
           isSubscriptionRoleResult = obj.isSubscriptionRole(tmp21);
         }
         if (isSubscriptionRoleResult) {
-          let tmp4 = closure_0;
-          let tmp5 = closure_3;
-          let obj2 = closure_0(closure_3[15]);
+          let tmp4 = GuildsRequiringChannelSync;
+          let tmp5 = outer1_3;
+          let obj2 = GuildsRequiringChannelSync(outer1_3[15]);
           isSubscriptionRoleResult = obj2.isSubscriptionRoleAvailableForPurchase(tmp21);
         }
-        let tmp6 = closure_0;
-        let tmp7 = closure_3;
-        let obj3 = closure_0(closure_3[15]);
+        let tmp6 = GuildsRequiringChannelSync;
+        let tmp7 = outer1_3;
+        let obj3 = GuildsRequiringChannelSync(outer1_3[15]);
         let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp20);
         if (isSubscriptionRoleResult1) {
-          let tmp9 = closure_0;
-          let tmp10 = closure_3;
-          let obj4 = closure_0(closure_3[15]);
+          let tmp9 = GuildsRequiringChannelSync;
+          let tmp10 = outer1_3;
+          let obj4 = GuildsRequiringChannelSync(outer1_3[15]);
           isSubscriptionRoleResult1 = obj4.isSubscriptionRoleAvailableForPurchase(tmp20);
         }
         if (!isSubscriptionRoleResult) {
           if (isSubscriptionRoleResult1) {
-            let tmp11 = closure_19;
-            return closure_19.RoleSubscriptionTags;
+            let tmp11 = outer1_19;
+            return outer1_19.RoleSubscriptionTags;
           }
         }
         if (key10010 === arg0) {
           if (null == tmp21) {
-            let tmp18 = closure_19;
-            return closure_19.RolePermissions;
+            let tmp18 = outer1_19;
+            return outer1_19.RolePermissions;
           } else {
-            let tmp12 = closure_2;
-            let tmp13 = closure_3;
-            let arr = closure_2(closure_3[12]);
-            let tmp14 = closure_17;
-            let found = arr.filter(tmp21.permissions, closure_17);
-            let arr2 = closure_2(closure_3[12]);
-            let found1 = arr2.filter(tmp20.permissions, closure_17);
-            let obj5 = closure_2(closure_3[12]);
+            let tmp12 = outer1_2;
+            let tmp13 = outer1_3;
+            let arr = outer1_2(outer1_3[12]);
+            let tmp14 = outer1_17;
+            let found = arr.filter(tmp21.permissions, outer1_17);
+            let arr2 = outer1_2(outer1_3[12]);
+            let found1 = arr2.filter(tmp20.permissions, outer1_17);
+            let obj5 = outer1_2(outer1_3[12]);
             if (obj5.equals(found, found1)) {
               continue;
             } else {
-              let tmp17 = closure_19;
-              return closure_19.RolePermissions;
+              let tmp17 = outer1_19;
+              return outer1_19.RolePermissions;
             }
           }
         }
@@ -274,11 +280,11 @@ let tmp6 = () => {
     value(arg0, arg1) {
       let done;
       if (arg0.length !== arg1.length) {
-        return {};
+        return { rolesAreDifferent: true, allRoleIds: null };
       } else {
         const _Set = Set;
         const set = new Set();
-        const tmp10 = callback3(arg0);
+        const tmp10 = outer1_21(arg0);
         let iter2 = tmp10();
         if (!iter2.done) {
           do {
@@ -288,7 +294,7 @@ let tmp6 = () => {
             done = iter.done;
           } while (!done);
         }
-        const tmp3 = callback3(arg1);
+        const tmp3 = outer1_21(arg1);
         let iter3 = tmp3();
         if (!iter3.done) {
           const value = iter3.value;
@@ -297,7 +303,7 @@ let tmp6 = () => {
             let iter4 = tmp3();
             iter3 = iter4;
           }
-          return {};
+          return { rolesAreDifferent: true, allRoleIds: null };
         }
         const obj = { rolesAreDifferent: false, allRoleIds: set };
         return obj;
@@ -323,25 +329,25 @@ let tmp6 = () => {
     value(id) {
       let iter;
       const self = this;
-      let selfMember = store3.getSelfMember(id.id);
+      let selfMember = outer1_10.getSelfMember(id.id);
       if (null == selfMember) {
-        selfMember = store3.getCachedSelfMember(id.id);
+        selfMember = outer1_10.getCachedSelfMember(id.id);
       }
       if (null != selfMember) {
         if ("partial" === id.data_mode) {
           if (self.backgroundSyncGuildHasObfuscatedChannels(id)) {
-            let ChannelVisibleParentHidden = closure_19.Unknown;
+            let ChannelVisibleParentHidden = outer1_19.Unknown;
             let obj = {};
             if (null != id.partial_updates.roles) {
-              const tmp35 = callback3(id.partial_updates.roles);
+              const tmp35 = outer1_21(id.partial_updates.roles);
               let iter2 = tmp35();
               if (!iter2.done) {
                 do {
                   let value = iter2.value;
                   obj = { id: value.id };
-                  let tmp5 = closure_2;
-                  let tmp6 = closure_3;
-                  let obj3 = closure_2(closure_3[12]);
+                  let tmp5 = outer1_2;
+                  let tmp6 = outer1_3;
+                  let obj3 = outer1_2(outer1_3[12]);
                   obj.permissions = obj3.deserialize(value.permissions);
                   let tags = value.tags;
                   if (null == tags) {
@@ -355,7 +361,7 @@ let tmp6 = () => {
               }
             }
             const properties = id.properties;
-            const guild = store5.getGuild(id.id);
+            const guild = outer1_12.getGuild(id.id);
             let ownerId;
             if (null != guild) {
               ownerId = guild.ownerId;
@@ -364,12 +370,12 @@ let tmp6 = () => {
             if (null != properties) {
               owner_id = properties.owner_id;
             }
-            const userBecameGuildOwnerResult = self.userBecameGuildOwner(ownerId, owner_id, store.getId());
+            const userBecameGuildOwnerResult = self.userBecameGuildOwner(ownerId, owner_id, outer1_8.getId());
             if (userBecameGuildOwnerResult) {
-              ChannelVisibleParentHidden = closure_19.OwnershipChange;
+              ChannelVisibleParentHidden = outer1_19.OwnershipChange;
               let flag = userBecameGuildOwnerResult;
             } else {
-              const unsafeMutableRoles = store4.getUnsafeMutableRoles(id.id);
+              const unsafeMutableRoles = outer1_11.getUnsafeMutableRoles(id.id);
               let _Set = Set;
               let roles;
               if (null != selfMember) {
@@ -400,11 +406,11 @@ let tmp6 = () => {
               result1 = self.hasNewlyVisibleChannelWithHiddenParent(id.id, channels, deleted_channel_ids);
             }
             if (result1) {
-              ChannelVisibleParentHidden = closure_19.ChannelVisibleParentHidden;
+              ChannelVisibleParentHidden = outer1_19.ChannelVisibleParentHidden;
               flag = true;
             }
             if (flag) {
-              self.markGuildForResync(id.id, arg1, closure_20.BackgroundSync, ChannelVisibleParentHidden);
+              self.markGuildForResync(id.id, arg1, outer1_20.BackgroundSync, ChannelVisibleParentHidden);
             }
           } else {
             self.unmarkGuildForResync(id.id, arg1);
@@ -423,9 +429,8 @@ let tmp6 = () => {
       let rolesAreDifferent;
       const self = this;
       if ("full_sync" !== channels.channels.op) {
-        const id = store.getId();
-        const GuildsRequiringChannelSync = id;
-        const guild = store5.getGuild(channels.id);
+        const id = outer1_8.getId();
+        const guild = outer1_12.getGuild(channels.id);
         if (null != guild) {
           const properties = channels.properties;
           let owner_id;
@@ -434,21 +439,21 @@ let tmp6 = () => {
           }
           const userBecameGuildOwnerResult = self.userBecameGuildOwner(guild.ownerId, owner_id, id);
           let flag = userBecameGuildOwnerResult;
-          let MemberRoles = closure_19.Unknown;
+          let MemberRoles = outer1_19.Unknown;
           if (userBecameGuildOwnerResult) {
-            MemberRoles = closure_19.OwnershipChange;
+            MemberRoles = outer1_19.OwnershipChange;
             flag = userBecameGuildOwnerResult;
           }
         } else {
-          MemberRoles = closure_19.NewGuild;
+          MemberRoles = outer1_19.NewGuild;
           flag = true;
         }
         let tmp12 = MemberRoles;
         let tmp13 = null;
         if (!flag) {
-          let selfMember = store3.getSelfMember(channels.id);
+          let selfMember = outer1_10.getSelfMember(channels.id);
           if (null == selfMember) {
-            selfMember = store3.getCachedSelfMember(channels.id);
+            selfMember = outer1_10.getCachedSelfMember(channels.id);
           }
           const members = channels.members;
           const found = members.find((user) => user.user.id === id);
@@ -461,7 +466,7 @@ let tmp6 = () => {
           }
           ({ rolesAreDifferent, allRoleIds } = self.processMemberRoleIds(null != selfMember ? selfMember.roles : [], roles));
           if (rolesAreDifferent) {
-            MemberRoles = closure_19.MemberRoles;
+            MemberRoles = outer1_19.MemberRoles;
           }
           flag = rolesAreDifferent;
           tmp12 = MemberRoles;
@@ -480,22 +485,22 @@ let tmp6 = () => {
           flag2 = flag;
           ChannelVisibleParentHidden = tmp12;
           if (null != tmp13) {
-            const unsafeMutableRoles = store4.getUnsafeMutableRoles(channels.id);
+            const unsafeMutableRoles = outer1_11.getUnsafeMutableRoles(channels.id);
             let obj = {};
             if ("full_sync" === channels.roles.op) {
               let writes = channels.roles.items;
             } else {
               writes = channels.roles.writes;
             }
-            const tmp39Result = closure_21(writes);
+            const tmp39Result = outer1_21(writes);
             let iter = tmp39Result();
             if (!iter.done) {
               do {
                 let value = iter.value;
                 obj = { id: value.id };
-                let tmp22 = closure_2;
-                let tmp23 = closure_3;
-                let obj2 = closure_2(closure_3[12]);
+                let tmp22 = outer1_2;
+                let tmp23 = outer1_3;
+                let obj2 = outer1_2(outer1_3[12]);
                 obj.permissions = obj2.deserialize(value.permissions);
                 let tags = value.tags;
                 if (null == tags) {
@@ -514,11 +519,11 @@ let tmp6 = () => {
               flag2 = true;
               ChannelVisibleParentHidden = result;
             }
-            const tmp39 = closure_21;
+            const tmp39 = outer1_21;
           }
         }
         if (tmp29) {
-          ChannelVisibleParentHidden = closure_19.ChannelVisibleParentHidden;
+          ChannelVisibleParentHidden = outer1_19.ChannelVisibleParentHidden;
           flag2 = true;
         }
         if (flag2) {
@@ -528,7 +533,7 @@ let tmp6 = () => {
             self.unmarkGuildForResync(channels.id, arg1);
           }
         }
-        const tmp29 = !flag2 && self.hasNewlyVisibleChannelWithHiddenParent(channels.id, channels.channels.writes, channels.channels.deletes);
+        tmp29 = !flag2 && self.hasNewlyVisibleChannelWithHiddenParent(channels.id, channels.channels.writes, channels.channels.deletes);
       } else {
         self.unmarkGuildForResync(channels.id, arg1);
       }
@@ -546,12 +551,12 @@ let tmp6 = () => {
   items[11] = {
     key: "markGuildForResync",
     value(guild_id, arg1, trigger, change_type) {
-      let obj = GuildsRequiringChannelSync(closure_3[16]);
+      let obj = GuildsRequiringChannelSync(outer1_3[16]);
       const v4Result = obj.v4();
       obj = { guild_id, request_id: v4Result, trigger, change_type };
-      callback(closure_3[17]).track(constants.GUILD_CHANNEL_RESYNC_REQUESTED, obj);
-      const obj2 = callback(closure_3[17]);
-      const result = callback(closure_3[14]).guildsRequiringChannelSyncTransaction(arg1);
+      outer1_1(outer1_3[17]).track(outer1_14.GUILD_CHANNEL_RESYNC_REQUESTED, obj);
+      const obj2 = outer1_1(outer1_3[17]);
+      const result = outer1_1(outer1_3[14]).guildsRequiringChannelSyncTransaction(arg1);
       obj = { id: guild_id, requestId: v4Result };
       result.put(obj);
     }
@@ -559,7 +564,7 @@ let tmp6 = () => {
   items[12] = {
     key: "unmarkGuildForResync",
     value(arg0, arg1) {
-      const result = callback(closure_3[14]).guildsRequiringChannelSyncTransaction(arg1);
+      const result = outer1_1(outer1_3[14]).guildsRequiringChannelSyncTransaction(arg1);
       result.delete(arg0);
     }
   };
@@ -573,28 +578,28 @@ let tmp6 = () => {
       if (0 === arg1.length) {
         return false;
       } else {
-        const mutableBasicGuildChannelsForGuild = store2.getMutableBasicGuildChannelsForGuild(arg0);
+        const mutableBasicGuildChannelsForGuild = outer1_9.getMutableBasicGuildChannelsForGuild(arg0);
         const _Set = Set;
         const set = new Set(items);
         const _Map = Map;
         const map = new Map();
-        const tmp43 = callback3(arg1);
+        const tmp43 = outer1_21(arg1);
         let iter2 = tmp43();
         if (!iter2.done) {
           do {
             let value = iter2.value;
-            let tmp = closure_7;
+            let tmp = outer1_7;
             let tmp2 = value;
-            if (!(value instanceof closure_7)) {
-              let tmp3 = closure_6;
-              tmp2 = closure_6(value, arg0);
+            if (!(value instanceof outer1_7)) {
+              let tmp3 = outer1_6;
+              tmp2 = outer1_6(value, arg0);
             }
             let result = map.set(tmp2.id, tmp2);
             iter = tmp43();
             iter2 = iter;
           } while (!iter.done);
         }
-        const tmp6 = callback3(map.values());
+        const tmp6 = outer1_21(map.values());
         const iter3 = tmp6();
         let iter4 = iter3;
         if (!iter3.done) {
@@ -606,9 +611,9 @@ let tmp6 = () => {
               let tmp12 = mutableBasicGuildChannelsForGuild[value.id];
               let canBasicChannelResult = null != tmp12;
               if (canBasicChannelResult) {
-                let tmp14 = closure_13;
-                let tmp15 = constants2;
-                canBasicChannelResult = closure_13.canBasicChannel(constants2.VIEW_CHANNEL, tmp12);
+                let tmp14 = outer1_13;
+                let tmp15 = outer1_15;
+                canBasicChannelResult = outer1_13.canBasicChannel(outer1_15.VIEW_CHANNEL, tmp12);
               }
               let tmp16 = !value.isObfuscated();
               if (canBasicChannelResult) {
@@ -644,13 +649,13 @@ let tmp6 = () => {
                       if (null == tmp27) {
                         break;
                       } else {
-                        let tmp28 = closure_13;
-                        let tmp29 = constants2;
+                        let tmp28 = outer1_13;
+                        let tmp29 = outer1_15;
                         let tmp30 = tmp12;
                         let tmp31 = tmp16;
                         tmp10 = parent_id;
                         tmp11 = tmp27;
-                        if (!closure_13.canBasicChannel(constants2.VIEW_CHANNEL, tmp27)) {
+                        if (!outer1_13.canBasicChannel(outer1_15.VIEW_CHANNEL, tmp27)) {
                           break;
                         }
                       }
@@ -660,8 +665,8 @@ let tmp6 = () => {
               }
             }
             let iter5 = tmp6();
-            let tmp8 = tmp10;
-            let tmp9 = tmp11;
+            tmp8 = tmp10;
+            tmp9 = tmp11;
             iter4 = iter5;
           }
           return true;
@@ -713,8 +718,7 @@ let tmp6 = () => {
       if (arg1 === undefined) {
         items = [];
       }
-      const GuildsRequiringChannelSync = items;
-      const values = Object.values(store2.getMutableGuildChannelsForGuild(arg0));
+      const values = Object.values(outer1_9.getMutableGuildChannelsForGuild(arg0));
       return self.anyChannelRecordsObfuscated(values.filter((id) => -1 === items.indexOf(id.id)));
     }
   };
@@ -733,7 +737,7 @@ let tmp6 = () => {
         if (null != flags) {
           num = flags;
         }
-        return callback(closure_3[18]).hasFlag(num, constants.OBFUSCATED);
+        return GuildsRequiringChannelSync(outer2_3[18]).hasFlag(num, outer2_16.OBFUSCATED);
       });
     }
   };
@@ -744,9 +748,8 @@ let tmp6 = () => {
     }
   };
   return callback(GuildsRequiringChannelSync, items);
-}();
+})();
 tmp6 = new tmp6();
-const importAllResult = importAll(dependencyMap[12]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/app_database/modules/GuildsRequiringChannelSync.tsx");
+let result = require("_callSuper").fileFinishedImporting("modules/app_database/modules/GuildsRequiringChannelSync.tsx");
 
 export default tmp6;

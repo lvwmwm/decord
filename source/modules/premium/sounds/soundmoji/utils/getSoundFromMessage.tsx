@@ -1,53 +1,57 @@
-// Module ID: 4580
-// Function ID: 40163
+// Module ID: 4584
+// Function ID: 40195
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4349, 4579, 4585, 671, 2]
 // Exports: default
 
-// Module 4580 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4584 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,15 +89,14 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getSoundFromSounds(arr, arg1) {
+  let closure_0 = arg1;
   let found;
   if (null != arr) {
-    found = arr.find((sound_id) => String(sound_id.sound_id) === String(arg1));
+    found = arr.find((sound_id) => String(sound_id.sound_id) === String(closure_0));
   }
   return found;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const DEFAULT_SOUND_GUILD_ID = arg1(dependencyMap[1]).DEFAULT_SOUND_GUILD_ID;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundFromMessage.tsx");
+const result = require("SoundButtonOverlay").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundFromMessage.tsx");
 
 export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
   const tmp = getSoundFromSounds(arr, arg2);
@@ -102,9 +105,9 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
     if (null == guild_id2) {
       guild_id2 = DEFAULT_SOUND_GUILD_ID;
     }
-    return arg1(dependencyMap[2]).soundboardSoundFromAPI(tmp, guild_id2);
+    return require(4585) /* SoundButtonOverlay */.soundboardSoundFromAPI(tmp, guild_id2);
   } else {
-    let message = message.getMessage(arg0, arg1);
+    message = message.getMessage(arg0, arg1);
     if (null != message) {
       let type;
       if (null != message) {
@@ -113,7 +116,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
           type = messageReference.type;
         }
       }
-      if (type === arg1(dependencyMap[3]).MessageReferenceTypes.FORWARD) {
+      if (type === require(671) /* MessageReferenceTypes */.MessageReferenceTypes.FORWARD) {
         let messageSnapshots;
         if (null != message) {
           messageSnapshots = message.messageSnapshots;
@@ -159,7 +162,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
         if (null == guild_id) {
           guild_id = DEFAULT_SOUND_GUILD_ID;
         }
-        return arg1(dependencyMap[2]).soundboardSoundFromAPI(tmp5Result, guild_id);
+        return require(4585) /* SoundButtonOverlay */.soundboardSoundFromAPI(tmp5Result, guild_id);
       }
     }
   }

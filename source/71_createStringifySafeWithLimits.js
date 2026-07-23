@@ -1,9 +1,11 @@
 // Module ID: 71
 // Function ID: 1458
 // Name: createStringifySafeWithLimits
-// Dependencies: []
+// Dependencies: [44]
 
 // Module 71 (createStringifySafeWithLimits)
+const module = arg2;
+const dependencyMap = arg6;
 function createStringifySafeWithLimits(maxDepth) {
   function replacer(arg0, arr) {
     const self = this;
@@ -20,7 +22,7 @@ function createStringifySafeWithLimits(maxDepth) {
     }
     if ("string" === typeof arr) {
       if (arr.length > POSITIVE_INFINITY2 + 17) {
-        let text = `${arr.substring(0, closure_1)}...(truncated)...`;
+        let text = `${arr.substring(0, POSITIVE_INFINITY2)}...(truncated)...`;
       } else {
         text = arr;
       }
@@ -54,8 +56,9 @@ function createStringifySafeWithLimits(maxDepth) {
                 let tmp13 = combined;
                 let tmp14 = arg1;
                 combined[item10037] = arg1[item10037];
+                continue;
               }
-              combined....(truncated keys)... = keys.length - POSITIVE_INFINITY4;
+              combined["...(truncated keys)..."] = keys.length - POSITIVE_INFINITY4;
             }
           }
           arr = arr.unshift(combined);
@@ -70,13 +73,11 @@ function createStringifySafeWithLimits(maxDepth) {
     const _Number = Number;
     POSITIVE_INFINITY = Number.POSITIVE_INFINITY;
   }
-  const arg2 = POSITIVE_INFINITY;
   let POSITIVE_INFINITY2 = maxDepth.maxStringLimit;
   if (undefined === POSITIVE_INFINITY2) {
     const _Number2 = Number;
     POSITIVE_INFINITY2 = Number.POSITIVE_INFINITY;
   }
-  const arg6 = POSITIVE_INFINITY2;
   let POSITIVE_INFINITY3 = maxDepth.maxArrayLimit;
   if (undefined === POSITIVE_INFINITY3) {
     const _Number3 = Number;
@@ -111,5 +112,5 @@ function createStringifySafeWithLimits(maxDepth) {
     }
   };
 }
-arg5.default = createStringifySafeWithLimits({});
+arg5.default = createStringifySafeWithLimits({ maxDepth: 10, maxStringLimit: 100, maxArrayLimit: 50, maxObjectKeysLimit: 50 });
 arg5.createStringifySafeWithLimits = createStringifySafeWithLimits;

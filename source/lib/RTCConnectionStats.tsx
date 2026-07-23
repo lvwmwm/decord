@@ -1,17 +1,19 @@
-// Module ID: 12618
-// Function ID: 96946
+// Module ID: 12732
+// Function ID: 99102
 // Name: StateHistory
-// Dependencies: []
+// Dependencies: [6, 7, 653, 4206, 22, 12733, 2]
 
-// Module 12618 (StateHistory)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const RTCConnectionStates = arg1(dependencyMap[2]).RTCConnectionStates;
-const tmp2 = () => {
+// Module 12732 (StateHistory)
+import set from "set";
+import _defineProperties from "_defineProperties";
+import { RTCConnectionStates } from "ME";
+
+const require = arg1;
+const tmp2 = (() => {
   class StateHistory {
     constructor(arg0) {
       self = this;
-      tmp = closure_3(this, StateHistory);
+      tmp = outer1_3(this, StateHistory);
       this.current = null;
       this.history = [];
       if (null != arg0) {
@@ -20,7 +22,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = StateHistory;
   let obj = {
     key: "reset",
     value(arg0) {
@@ -40,9 +41,9 @@ const tmp2 = () => {
       if (this.current !== current) {
         self.current = current;
         const history = self.history;
-        const obj = { state: current, startTime: StateHistory(closure_2[3]).now() };
+        const obj = { state: current, startTime: StateHistory(outer1_2[3]).now() };
         history.push(obj);
-        const obj2 = StateHistory(closure_2[3]);
+        const obj2 = StateHistory(outer1_2[3]);
       }
     }
   };
@@ -53,22 +54,22 @@ const tmp2 = () => {
       let nowResult = arg0;
       const self = this;
       if (arg0 === undefined) {
-        let obj = StateHistory(closure_2[3]);
+        let obj = StateHistory(outer1_2[3]);
         nowResult = obj.now();
       }
-      let StateHistory;
+      let stateDurations;
       function totalDuration(AUTHENTICATING) {
         let closure_0 = AUTHENTICATING;
-        return callback(closure_2[4]).sumBy(closure_0, (state) => {
+        return outer2_1(outer2_2[4]).sumBy(closure_0, (state) => {
           let num = 0;
-          if (state.state === state) {
+          if (state.state === closure_0) {
             num = state.durationMs;
           }
           return num;
         });
       }
-      StateHistory = self.getStateDurations(nowResult);
-      obj = { state_awaiting_endpoint_ms: totalDuration(constants.AWAITING_ENDPOINT), state_authenticating_ms: totalDuration(constants.AUTHENTICATING), state_connecting_ms: totalDuration(constants.CONNECTING), state_disconnected_ms: totalDuration(constants.DISCONNECTED), state_ice_checking_ms: totalDuration(constants.ICE_CHECKING), state_no_route_ms: totalDuration(constants.NO_ROUTE), state_rtc_connecting_ms: totalDuration(constants.RTC_CONNECTING), state_rtc_disconnected_ms: totalDuration(constants.RTC_DISCONNECTED) };
+      stateDurations = self.getStateDurations(nowResult);
+      obj = { state_awaiting_endpoint_ms: totalDuration(outer1_5.AWAITING_ENDPOINT), state_authenticating_ms: totalDuration(outer1_5.AUTHENTICATING), state_connecting_ms: totalDuration(outer1_5.CONNECTING), state_disconnected_ms: totalDuration(outer1_5.DISCONNECTED), state_ice_checking_ms: totalDuration(outer1_5.ICE_CHECKING), state_no_route_ms: totalDuration(outer1_5.NO_ROUTE), state_rtc_connecting_ms: totalDuration(outer1_5.RTC_CONNECTING), state_rtc_disconnected_ms: totalDuration(outer1_5.RTC_DISCONNECTED) };
       return obj;
     }
   };
@@ -80,8 +81,8 @@ const tmp2 = () => {
       if (0 === this.history.length) {
         return [];
       } else {
-        let arr = callback(closure_2[5])(self.history, (state, startTime) => ({ state: state.state, durationMs: startTime.startTime - state.startTime }));
-        let obj = callback(closure_2[4]);
+        let arr = outer1_1(outer1_2[5])(self.history, (state, startTime) => ({ state: state.state, durationMs: startTime.startTime - state.startTime }));
+        let obj = outer1_1(outer1_2[4]);
         const lastResult = obj.last(self.history);
         obj = { state: lastResult.state, durationMs: arg0 - lastResult.startTime };
         arr = arr.push(obj);
@@ -90,7 +91,7 @@ const tmp2 = () => {
     }
   };
   return callback(StateHistory, items);
-}();
-const result = arg1(dependencyMap[6]).fileFinishedImporting("lib/RTCConnectionStats.tsx");
+})();
+const result = require("ME").fileFinishedImporting("lib/RTCConnectionStats.tsx");
 
 export const StateHistory = tmp2;

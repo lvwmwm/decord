@@ -1,42 +1,44 @@
-// Module ID: 3790
-// Function ID: 29549
+// Module ID: 3792
+// Function ID: 29554
 // Name: getBraintreeSDK
-// Dependencies: []
+// Dependencies: [3793, 653, 3794, 3797, 1934, 3797, 2]
 // Exports: collectDeviceData
 
-// Module 3790 (getBraintreeSDK)
+// Module 3792 (getBraintreeSDK)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PaymentSettings } from "ME";
+
+const require = arg1;
 function getBraintreeSDK() {
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(3794);
   obj = {
     createPromise() {
-      return callback(paths[4])(paths[3], paths.paths);
+      return outer1_0(outer1_1[4])(outer1_1[3], outer1_1.paths);
     },
-    webpackId: dependencyMap[5]
+    webpackId: 3797
   };
   return obj.importWithRetry(obj).then((arg0) => arg0.default);
 }
 function getDeviceData(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   return getBraintreeSDK().then((dataCollector) => {
     dataCollector = dataCollector.dataCollector;
-    let obj = { client: dataCollector };
+    let obj = { client: closure_0 };
     obj = dataCollector.create(obj);
     return obj.then((deviceData) => deviceData.deviceData).catch(() => null);
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const PaymentSettings = arg1(dependencyMap[1]).PaymentSettings;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("utils/BraintreeUtils.tsx");
+const result = require("module_3794").fileFinishedImporting("utils/BraintreeUtils.tsx");
 
 export { getBraintreeSDK };
 export const collectDeviceData = function collectDeviceData() {
-  const client = client.getClient();
+  client = client.getClient();
   if (null == client) {
     let nextPromise = getBraintreeSDK().then((client) => {
       client = client.client;
-      let obj = { authorization: constants.BRAINTREE.KEY };
+      let obj = { authorization: outer1_3.BRAINTREE.KEY };
       obj = client.create(obj);
-      return obj.then((arg0) => callback(arg0)).catch(() => null);
+      return obj.then((arg0) => outer2_5(arg0)).catch(() => null);
     });
     const promise = getBraintreeSDK();
   } else {

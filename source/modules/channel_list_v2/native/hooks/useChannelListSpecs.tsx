@@ -1,33 +1,34 @@
-// Module ID: 14867
-// Function ID: 112004
+// Module ID: 14983
+// Function ID: 114172
 // Name: useChannelListSpecs
-// Dependencies: []
+// Dependencies: [31, 10260, 14984, 1450, 14807, 4549, 1557, 9891, 2]
 // Exports: default
 
-// Module 14867 (useChannelListSpecs)
-let closure_3 = importAll(dependencyMap[0]);
-({ STICKY_BANNER_ASPECT_RATIO: closure_4, BANNER_MAX_HEIGHT_PERCENTAGE: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/channel_list_v2/native/hooks/useChannelListSpecs.tsx");
+// Module 14983 (useChannelListSpecs)
+import result from "result";
+import hairlineWidth from "hairlineWidth";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ STICKY_BANNER_ASPECT_RATIO: closure_4, BANNER_MAX_HEIGHT_PERCENTAGE: closure_5 } = hairlineWidth);
+const result = require("GuildInfoHeader").fileFinishedImporting("modules/channel_list_v2/native/hooks/useChannelListSpecs.tsx");
 
 export default function useChannelListSpecs(banner) {
-  const redesignGuildHeaderHeight = arg1(dependencyMap[2]).useRedesignGuildHeaderHeight(banner);
-  const arg1 = redesignGuildHeaderHeight;
-  const height = importDefault(dependencyMap[3])().height;
-  const importDefault = height;
-  const tmp2 = importDefault(dependencyMap[4])();
+  redesignGuildHeaderHeight = redesignGuildHeaderHeight(14984).useRedesignGuildHeaderHeight(banner);
+  height = height(1450)().height;
+  const tmp2 = height(14807)();
   const dependencyMap = tmp2;
-  const obj = arg1(dependencyMap[2]);
-  const fontScale = arg1(dependencyMap[5]).useFontScale();
-  const React = fontScale;
-  const tmp4 = null != banner.banner;
-  const top = importDefault(dependencyMap[6])().top;
-  const items = [tmp4, tmp2, height, redesignGuildHeaderHeight, top, fontScale];
-  return React.useMemo(() => {
+  let obj = redesignGuildHeaderHeight(14984);
+  const fontScale = redesignGuildHeaderHeight(4549).useFontScale();
+  let closure_4 = tmp4;
+  const top = height(1557)().top;
+  const items = [null != banner.banner, tmp2, height, redesignGuildHeaderHeight, top, fontScale];
+  return fontScale.useMemo(() => {
     let num = 0;
-    if (tmp4) {
+    if (closure_4) {
       const _Math = Math;
-      num = Math.min(tmp2 / tmp4, height * top);
+      num = Math.min(tmp2 / closure_4, height * top);
     }
     const obj = { bannerHeight: height(tmp2[7])(num), bannerWidth: height(tmp2[7])(tmp2), headerHeight: height(tmp2[7])(redesignGuildHeaderHeight), fontScale, listTop: height(tmp2[7])(num + redesignGuildHeaderHeight), listBottom: 0, listPaddingBottom: height(tmp2[7])(24), listViewportHeight: height(tmp2[7])(height - top) };
     return obj;

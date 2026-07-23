@@ -1,17 +1,19 @@
-// Module ID: 9800
-// Function ID: 76110
+// Module ID: 9807
+// Function ID: 76151
 // Name: getNextTierForProgress
-// Dependencies: []
+// Dependencies: [8268, 2]
 // Exports: getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 9800 (getNextTierForProgress)
+// Module 9807 (getNextTierForProgress)
+import { getSingleRequirementThreshold as closure_0 } from "_isNativeReflectConstruct";
+
 function getNextTierForProgress(arr, arg1) {
   let closure_0 = arg1;
   return arr.reduce((arg0, arg1) => {
     let tmp = arg0;
-    const tmp2 = arg1(arg1);
+    const tmp2 = callback(arg1);
     let tmp3 = arg0;
-    if (arg1 < tmp2) {
+    if (callback < tmp2) {
       if (null == tmp) {
         tmp = arg1;
       }
@@ -20,17 +22,15 @@ function getNextTierForProgress(arr, arg1) {
     return tmp3;
   }, null);
 }
-let closure_0 = require(dependencyMap[0]).getSingleRequirementThreshold;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/premium/gifting/GiftingBadgeConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/premium/gifting/GiftingBadgeConstants.tsx");
 
 export const getTierForProgress = function getTierForProgress(arr) {
   let closure_0 = arg1;
   return arr.reduce((arg0, arg1) => {
     let tmp = arg0;
-    const tmp2 = arg1(arg1);
+    const tmp2 = callback(arg1);
     let tmp3 = arg0;
-    if (arg1 >= tmp2) {
+    if (callback >= tmp2) {
       if (null == tmp) {
         tmp = arg1;
       }

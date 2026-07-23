@@ -1,10 +1,12 @@
 // Module ID: 82
 // Function ID: 1488
 // Name: _getFilterAmount
-// Dependencies: []
+// Dependencies: [57, 38]
 // Exports: default
 
 // Module 82 (_getFilterAmount)
+import _slicedToArray from "_slicedToArray";
+
 function _getFilterAmount(arg0, arg1) {
   if ("string" === typeof arg1) {
     const _RegExp = RegExp;
@@ -48,7 +50,7 @@ function _getFilterAmount(arg0, arg1) {
 }
 function parseDropShadow(offsetX) {
   if ("string" !== typeof offsetX) {
-    let obj = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
+    let obj = { offsetX: 0, offsetY: 0 };
     let tmp25;
     const keys = Object.keys();
     if (keys !== undefined) {
@@ -91,20 +93,20 @@ function parseDropShadow(offsetX) {
               if (null != standardDeviation) {
                 if (standardDeviation >= 0) {
                   obj.standardDeviation = standardDeviation;
-                  // continue
+                  continue;
                 }
               }
               return null;
             } else if ("color" === tmp30) {
               let tmp31 = importDefault;
               let tmp32 = dependencyMap;
-              let tmp33 = importDefault(dependencyMap[1])(offsetX.color);
+              let tmp33 = importDefault(38)(offsetX.color);
               if (null == tmp33) {
                 return null;
               } else {
                 obj.color = tmp33;
                 let tmp34 = tmp33;
-                // continue
+                continue;
               }
             } else {
               return null;
@@ -127,7 +129,7 @@ function parseDropShadow(offsetX) {
     }
     return tmp38;
   } else {
-    obj = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
+    obj = { offsetX: 0, offsetY: 0 };
     let num = 0;
     let flag = false;
     const parts = offsetX.split(/\s+(?![^(]*\))/);
@@ -152,7 +154,7 @@ function parseDropShadow(offsetX) {
         let tmp39 = nextResult;
         let tmp43 = importDefault;
         let tmp44 = dependencyMap;
-        if (null != importDefault(dependencyMap[1])(nextResult)) {
+        if (null != importDefault(38)(nextResult)) {
           let tmp5 = obj;
           if (null != obj.color) {
             iter.return();
@@ -166,12 +168,12 @@ function parseDropShadow(offsetX) {
             let tmp8 = tmp39;
             obj.color = tmp39;
           }
-          // continue
+          continue;
         }
       }
       let tmp10 = num;
       if (0 === num) {
-        let tmp18 = tmp39;
+        tmp18 = tmp39;
         let tmp19 = num;
         num = num + 1;
       } else if (1 === num) {
@@ -180,7 +182,7 @@ function parseDropShadow(offsetX) {
           iter.return();
           tmp9 = null;
         } else {
-          let tmp16 = tmp39;
+          tmp16 = tmp39;
           let tmp17 = num;
           num = num + 1;
         }
@@ -224,7 +226,6 @@ function parseLength(arg0) {
   }
   return NumberResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
 
 export default function processFilter(str) {
   const items = [];
@@ -276,8 +277,8 @@ export default function processFilter(str) {
             }
           }
           match = obj4.exec(replaced);
-          let tmp26 = tmp32;
-          let tmp27 = tmp35;
+          tmp26 = tmp32;
+          tmp27 = tmp35;
         }
         return [];
       }
@@ -323,7 +324,7 @@ export default function processFilter(str) {
               let arr2 = items.push(obj2);
             }
           }
-          // continue
+          continue;
         }
       } else {
         const _TypeError = TypeError;

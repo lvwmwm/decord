@@ -1,27 +1,29 @@
 // Module ID: 1091
-// Function ID: 12507
+// Function ID: 12508
 // Name: createProcessEvent
-// Dependencies: []
+// Dependencies: [977, 794]
 
 // Module 1091 (createProcessEvent)
+const require = arg1;
+const dependencyMap = arg6;
 function createProcessEvent() {
-  const arg1 = this;
-  let closure_1 = false;
-  let closure_2 = null;
+  const self = this;
+  let c1 = false;
+  let c2 = null;
   return (arg0) => {
-    const self = arg0;
-    return _null(self, undefined, undefined, function*() {
-      if (closure_1) {
-        if (closure_2) {
+    let closure_0 = arg0;
+    return _null(closure_0, undefined, undefined, function*() {
+      if (outer2_1) {
+        if (outer2_2) {
           const _Object = Object;
           const _Object2 = Object;
-          lib.modules = Object.assign(Object.assign({}, closure_2), lib.modules);
+          outer1_0.modules = Object.assign(Object.assign({}, outer2_2), outer1_0.modules);
         }
-        return lib;
+        return outer1_0;
       } else {
-        const NATIVE = lib(closure_1[0]).NATIVE;
-        closure_2 = yield NATIVE.fetchModules();
-        closure_1 = true;
+        const NATIVE = self(table[0]).NATIVE;
+        outer2_2 = yield NATIVE.fetchModules();
+        outer2_1 = true;
         return true;
       }
     });
@@ -34,51 +36,54 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    arg1 = arg0;
-    const arg6 = arg1;
-    const createProcessEvent = arg3;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;

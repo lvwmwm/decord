@@ -1,43 +1,45 @@
-// Module ID: 4452
-// Function ID: 39249
+// Module ID: 4456
+// Function ID: 39281
 // Name: _createStripeSetupIntent
-// Dependencies: []
+// Dependencies: [5, 653, 507, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 4452 (_createStripeSetupIntent)
+// Module 4456 (_createStripeSetupIntent)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { Endpoints } from "ME";
+
+const require = arg1;
 async function _createStripeSetupIntent() {
-  const fn = function*(sendMessageOptionsForReply) {
+  let iter = (function*(sendMessageOptionsForReply) {
     let obj = sendMessageOptionsForReply;
     if (obj === undefined) {
       obj = {};
     }
     yield undefined;
-    const HTTP = callback(closure_1[2]).HTTP;
-    obj = { y: null, isArray: null, accessible: null, url: constants.BILLING_STRIPE_SETUP_INTENT_SECRET };
+    const HTTP = outer2_0(outer2_1[2]).HTTP;
+    obj = { url: outer2_3.BILLING_STRIPE_SETUP_INTENT_SECRET, oldFormErrors: true, rejectWithError: true };
     const merged = Object.assign(obj);
     return yield HTTP.post(obj).body;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
 async function _createSetupIntentForPaymentElements() {
-  const fn = function*(sendMessageOptionsForReply) {
+  let iter = (function*(sendMessageOptionsForReply) {
     let obj = sendMessageOptionsForReply;
     if (obj === undefined) {
       obj = {};
     }
     yield undefined;
-    const HTTP = callback(closure_1[2]).HTTP;
-    obj = { url: constants.BILLING_STRIPE_SETUP_INTENT_SECRET_FOR_PAYMENT_ELEMENTS };
+    const HTTP = outer2_0(outer2_1[2]).HTTP;
+    obj = { url: outer2_3.BILLING_STRIPE_SETUP_INTENT_SECRET_FOR_PAYMENT_ELEMENTS, oldFormErrors: true, rejectWithError: true, failImmediatelyWhenRateLimited: true };
     const merged = Object.assign(obj);
     return yield HTTP.post(obj).body;
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/billing/actions/StripeActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/billing/actions/StripeActionCreators.tsx");
 
 export const createStripeSetupIntent = function createStripeSetupIntent() {
   return _createStripeSetupIntent(...arguments);

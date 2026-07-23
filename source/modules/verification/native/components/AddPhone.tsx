@@ -1,46 +1,52 @@
-// Module ID: 9231
-// Function ID: 72194
+// Module ID: 9238
+// Function ID: 72235
 // Name: AddPhone
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 9196, 1342, 1849, 653, 482, 33, 4130, 689, 566, 9189, 9239, 4029, 4126, 1212, 9240, 9215, 4337, 9241, 1934, 4543, 4471, 9261, 2]
 // Exports: default
 
-// Module 9231 (AddPhone)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ View: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-const UserFlags = arg1(dependencyMap[7]).UserFlags;
-const NOOP_NULL = arg1(dependencyMap[8]).NOOP_NULL;
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
-let obj = arg1(dependencyMap[10]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BASE_LOW };
-obj.background = obj;
-obj.container = { "Bool(false)": null, "Bool(false)": "Group 11" };
-obj.title = { textAlign: "center" };
-obj.input = { marginTop: 24 };
-const tmp3 = arg1(dependencyMap[9]);
-obj.redesignInput = { borderRadius: importDefault(dependencyMap[11]).radii.lg };
-obj.button = { marginTop: 8 };
-let closure_15 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[11]).radii.lg };
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/verification/native/components/AddPhone.tsx");
+// Module 9238 (AddPhone)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { UserFlags } from "ME";
+import { NOOP_NULL } from "sum";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_13;
+let closure_14;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.background = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.container = { padding: 16, flex: 1 };
+_createForOfIteratorHelperLoose.title = { textAlign: "center" };
+_createForOfIteratorHelperLoose.input = { marginTop: 24 };
+_createForOfIteratorHelperLoose.redesignInput = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose.button = { marginTop: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+let result = require("result").fileFinishedImporting("modules/verification/native/components/AddPhone.tsx");
 
 export default function AddPhone(reason) {
   let header;
   let onDeletePhone;
-  ({ header, onComplete: closure_0, onDeletePhone } = reason);
-  const importDefault = onDeletePhone;
-  const dependencyMap = reason.reason;
+  let require;
+  ({ header, onComplete: require, onDeletePhone } = reason);
+  reason = reason.reason;
   let callback;
   let React;
   let first1;
   let closure_7;
-  let closure_8;
+  let first2;
   let closure_9;
   let closure_10;
   let closure_11;
@@ -51,22 +57,20 @@ export default function AddPhone(reason) {
   function _handleSubmit(Button, arg1) {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = stateFromStores(tmp);
-    const _handleSubmit = obj;
     return obj(...arguments);
   }
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[12]);
+  let tmp = _createForOfIteratorHelperLoose();
+  let obj = require(reason[12]);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let closure_3 = stateFromStores;
-  let obj1 = arg1(dependencyMap[12]);
+  let obj1 = require(reason[12]);
   const items1 = [closure_9];
   let phone;
   const stateFromStores1 = obj1.useStateFromStores(items1, () => action.getAction());
   if (null != stateFromStores) {
     phone = stateFromStores.phone;
   }
-  let obj2 = importDefault(dependencyMap[13]);
+  let obj2 = onDeletePhone(reason[13]);
   const result = obj2.isPhoneReverification(stateFromStores, stateFromStores1);
   callback = result;
   let tmp6 = null != onDeletePhone && null != phone;
@@ -80,8 +84,8 @@ export default function AddPhone(reason) {
   if (tmp6) {
     tmp6 = !result;
   }
-  let obj3 = arg1(dependencyMap[12]);
-  const items2 = [closure_8];
+  let obj3 = require(reason[12]);
+  const items2 = [first2];
   const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getCountryCode());
   const tmp9 = callback(stateFromStores2.code.split(" "), 2);
   const first = tmp9[0];
@@ -102,8 +106,7 @@ export default function AddPhone(reason) {
     }
   }
   const tmp15 = callback(React.useState(str3), 2);
-  const first2 = tmp15[0];
-  closure_8 = first2;
+  first2 = tmp15[0];
   closure_9 = tmp15[1];
   const tmp17 = callback(React.useState(null), 2);
   closure_10 = tmp17[1];
@@ -116,15 +119,16 @@ export default function AddPhone(reason) {
       ref.current = false;
     } else {
       let str = "";
-      if (null != tmp11) {
-        str = tmp11;
+      if (null != c5) {
+        str = c5;
       }
       closure_9(str);
       const tmp = closure_9;
     }
   }, items3);
-  obj = { style: items4 };
+  obj = { style: null, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
   const items4 = [tmp.background, reason.style];
+  obj.style = items4;
   obj = { style: tmp.container };
   if (null != header) {
     const items5 = [header, , , ];
@@ -132,8 +136,8 @@ export default function AddPhone(reason) {
     ({ input: obj7.style, redesignInput: obj7.textInputStyle } = tmp);
     if (null != phone) {
       if (!result) {
-        const intl3 = arg1(dependencyMap[17]).intl;
-        let stringResult = intl3.string(arg1(dependencyMap[17]).t.K6R0UP);
+        const intl3 = require(reason[17]).intl;
+        let stringResult = intl3.string(require(reason[17]).t.K6R0UP);
       }
       obj1.label = stringResult;
       obj1.alpha2 = stateFromStores2.alpha2;
@@ -141,14 +145,14 @@ export default function AddPhone(reason) {
       obj1.value = first2;
       obj1.onChangeText = function onChangeText(arg0, arg1) {
         action(arg0);
-        callback2(arg1);
+        callback(arg1);
       };
-      obj1.forceMode = arg1(dependencyMap[19]).PhoneOrEmailSelectorForceMode.PHONE;
+      obj1.forceMode = require(reason[19]).PhoneOrEmailSelectorForceMode.PHONE;
       obj1.returnKeyType = "done";
       obj1.onSubmitEditing = handleSubmit;
       obj1.error = tmp17[0];
       obj1.onPressCountrySelector = function onPressCountrySelector() {
-        return onDeletePhone(reason[20]).pushLazy(callback(reason[22])(reason[21], reason.paths));
+        return onDeletePhone(reason[20]).pushLazy(outer1_0(reason[22])(reason[21], reason.paths));
       };
       obj1.autoFocus = true;
       items5[1] = tmp30(tmp33, obj1);
@@ -159,31 +163,31 @@ export default function AddPhone(reason) {
         str6 = "md";
       }
       obj3.size = str6;
-      const intl5 = arg1(dependencyMap[17]).intl;
-      obj3.text = intl5.string(arg1(dependencyMap[17]).t.PDTjLN);
+      const intl5 = require(reason[17]).intl;
+      obj3.text = intl5.string(require(reason[17]).t.PDTjLN);
       obj3.onPress = handleSubmit;
       obj3.loading = tmp18[0];
-      obj2.children = _handleSubmit(arg1(dependencyMap[23]).Button, obj3);
+      obj2.children = _handleSubmit(require(reason[23]).Button, obj3);
       items5[2] = _handleSubmit(first1, obj2);
       let tmp45 = null;
       if (tmp6) {
         const obj4 = { style: tmp.button };
-        const obj5 = {};
-        const intl6 = arg1(dependencyMap[17]).intl;
-        obj5.text = intl6.string(arg1(dependencyMap[17]).t.kYvzoQ);
+        const obj5 = { variant: "secondary", size: "md" };
+        const intl6 = require(reason[17]).intl;
+        obj5.text = intl6.string(require(reason[17]).t.kYvzoQ);
         obj5.onPress = function onPress() {
           if (null != stateFromStores) {
             if (stateFromStores.hasFlag(ref.MFA_SMS)) {
               let obj = onDeletePhone(reason[24]);
               obj = {
                 importer() {
-                      return callback(paths[22])(paths[25], paths.paths).then((arg0) => {
+                      return outer2_0(reason[22])(reason[25], reason.paths).then((arg0) => {
                         let closure_0 = arg0.default;
                         return (arg0) => {
                           const obj = {};
                           const merged = Object.assign(arg0);
-                          obj["onConfirm"] = null != closure_1 ? closure_1 : closure_12;
-                          return closure_13(closure_0, obj);
+                          obj["onConfirm"] = null != outer3_1 ? outer3_1 : closure_12;
+                          return _handleSubmit(closure_0, obj);
                         };
                       });
                     }
@@ -194,7 +198,7 @@ export default function AddPhone(reason) {
             }
           }
         };
-        obj4.children = _handleSubmit(arg1(dependencyMap[23]).Button, obj5);
+        obj4.children = _handleSubmit(require(reason[23]).Button, obj5);
         tmp45 = _handleSubmit(first1, obj4);
       }
       items5[3] = tmp45;
@@ -202,21 +206,21 @@ export default function AddPhone(reason) {
       obj.children = tmp22(tmp23, obj);
       return tmp20(tmp21, obj);
     }
-    const intl4 = arg1(dependencyMap[17]).intl;
-    stringResult = intl4.string(arg1(dependencyMap[17]).t.64bX0M);
-    const tmp30 = _handleSubmit;
+    const intl4 = require(reason[17]).intl;
+    stringResult = intl4.string(require(reason[17]).t["64bX0M"]);
+    tmp30 = _handleSubmit;
   } else {
-    const obj6 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
+    const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
     if (null != phone) {
       if (!result) {
-        const intl = arg1(dependencyMap[17]).intl;
-        let stringResult1 = intl.string(arg1(dependencyMap[17]).t.WO0zBE);
+        const intl = require(reason[17]).intl;
+        let stringResult1 = intl.string(require(reason[17]).t.WO0zBE);
       }
       obj6.children = stringResult1;
       tmp50(tmp53, obj6);
     }
-    const intl2 = arg1(dependencyMap[17]).intl;
-    stringResult1 = intl2.string(arg1(dependencyMap[17]).t.hY8QTR);
-    const tmp50 = _handleSubmit;
+    const intl2 = require(reason[17]).intl;
+    stringResult1 = intl2.string(require(reason[17]).t.hY8QTR);
+    tmp50 = _handleSubmit;
   }
 };

@@ -1,12 +1,11 @@
-// Module ID: 7676
-// Function ID: 61331
+// Module ID: 7682
+// Function ID: 61368
 // Name: getApplicationSubscriptionSystemMessageASTContent
-// Dependencies: []
+// Dependencies: [1212, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 7676 (getApplicationSubscriptionSystemMessageASTContent)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");
+// Module 7682 (getApplicationSubscriptionSystemMessageASTContent)
+const result = require("set").fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");
 
 export const getApplicationSubscriptionSystemMessageASTContent = function getApplicationSubscriptionSystemMessageASTContent(arg0) {
   let application;
@@ -14,13 +13,13 @@ export const getApplicationSubscriptionSystemMessageASTContent = function getApp
   let usernameOnClick;
   ({ application, username, usernameOnClick } = arg0);
   if (null != application) {
-    const intl2 = require(dependencyMap[0]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     let obj = { username, applicationName: application.name, usernameOnClick };
-    let formatToPartsResult = intl2.formatToParts(require(dependencyMap[0]).t.Tes5Ou, obj);
+    let formatToPartsResult = intl2.formatToParts(require(1212) /* getSystemLocale */.t.Tes5Ou, obj);
   } else {
-    const intl = require(dependencyMap[0]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { username, usernameOnClick };
-    formatToPartsResult = intl.formatToParts(require(dependencyMap[0]).t.PUJtgi, obj);
+    formatToPartsResult = intl.formatToParts(require(1212) /* getSystemLocale */.t.PUJtgi, obj);
   }
   return formatToPartsResult;
 };

@@ -1,52 +1,57 @@
-// Module ID: 4994
-// Function ID: 43200
+// Module ID: 4997
+// Function ID: 43218
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 6, 7, 3, 1882, 2]
 
-// Module 4994 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4997 (_createForOfIteratorHelperLoose)
+import set from "set";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import importDefaultResult from "timestamp";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,16 +88,12 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let importDefaultResult = importDefault(dependencyMap[3]);
 importDefaultResult = new importDefaultResult("GuildEmojis");
-let tmp4 = () => {
+let tmp4 = (() => {
   class GuildEmojis {
     constructor() {
-      f43212 = this;
-      tmp = closure_3(this, GuildEmojis);
+      self = this;
+      tmp = outer1_3(this, GuildEmojis);
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {
               return self.handleBackgroundSync(arg0, arg1);
@@ -116,19 +117,18 @@ let tmp4 = () => {
       return;
     }
   }
-  const dependencyMap = GuildEmojis;
   let obj = { key: "getAsync" };
   let closure_0 = callback(async (arg0) => {
     const nowResult = performance.now();
-    const obj = callback(closure_1[4]);
-    const arr = yield callback(closure_1[4]).emojis(arg0).getMapEntries();
-    closure_5.log("asynchronously loaded in " + performance.now() - nowResult + "ms (guilds: " + arr.length + ")");
+    const obj = callback(GuildEmojis[4]);
+    const arr = yield callback(GuildEmojis[4]).emojis(arg0).getMapEntries();
+    outer2_5.log("asynchronously loaded in " + performance.now() - nowResult + "ms (guilds: " + arr.length + ")");
     return arr;
   });
   obj.value = function getAsync() {
     return callback(...arguments);
   };
-  const items = [obj, , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , ];
   obj = {
     key: "handleConnectionOpen",
     value(unavailableGuilds) {
@@ -137,7 +137,7 @@ let tmp4 = () => {
       const items = [...unavailableGuilds.unavailableGuilds];
       const obj = callback(GuildEmojis[4]);
       callback(GuildEmojis[4]).emojisTransaction(arg1).deleteAllExcept(items);
-      const tmp2 = callback3(unavailableGuilds.guilds);
+      const tmp2 = outer1_6(unavailableGuilds.guilds);
       let iter = tmp2();
       if (!iter.done) {
         do {
@@ -178,8 +178,8 @@ let tmp4 = () => {
   items[6] = {
     key: "handleBackgroundSync",
     value(promisesForBackgroundSyncToWaitOn) {
-      let closure_0 = this;
-      const GuildEmojis = arg1;
+      const self = this;
+      let closure_1 = arg1;
       const prop = promisesForBackgroundSyncToWaitOn.promisesForBackgroundSyncToWaitOn;
       const emojis = promisesForBackgroundSyncToWaitOn.emojis;
       prop.push(Promise.all(emojis.map((dataMode) => {
@@ -187,15 +187,15 @@ let tmp4 = () => {
           return Promise.resolve();
         } else if ("full" === dataMode.dataMode) {
           const _HermesInternal2 = HermesInternal;
-          closure_5.verbose("Replacing " + dataMode.entities.length + " emojis for " + dataMode.guildId);
-          const replaced = self.replace(dataMode.guildId, dataMode.entities, arg1);
+          outer2_5.verbose("Replacing " + dataMode.entities.length + " emojis for " + dataMode.guildId);
+          const replaced = self.replace(dataMode.guildId, dataMode.entities, closure_1);
         } else {
           if (tmp) {
             const _HermesInternal = HermesInternal;
-            closure_5.verbose("Updating " + dataMode.updatedEntities.length + " and deleting " + dataMode.deletedEntityIds.length + " emojis for " + dataMode.guildId);
-            self.update(dataMode.guildId, dataMode.updatedEntities, dataMode.deletedEntityIds, arg1);
+            outer2_5.verbose("Updating " + dataMode.updatedEntities.length + " and deleting " + dataMode.deletedEntityIds.length + " emojis for " + dataMode.guildId);
+            self.update(dataMode.guildId, dataMode.updatedEntities, dataMode.deletedEntityIds, closure_1);
           }
-          const tmp = dataMode.updatedEntities.length > 0 || dataMode.deletedEntityIds.length > 0;
+          tmp = dataMode.updatedEntities.length > 0 || dataMode.deletedEntityIds.length > 0;
         }
       })));
     }
@@ -240,7 +240,7 @@ let tmp4 = () => {
       let done;
       const emojisTransactionResult = callback(GuildEmojis[4]).emojisTransaction(arg3);
       emojisTransactionResult.putAll(arg0, arg1);
-      const tmp2 = callback3(arg2);
+      const tmp2 = outer1_6(arg2);
       let iter = tmp2();
       if (!iter.done) {
         do {
@@ -253,8 +253,8 @@ let tmp4 = () => {
     }
   };
   return callback2(GuildEmojis, items);
-}();
+})();
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/app_database/modules/GuildEmojis.tsx");
+const result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/GuildEmojis.tsx");
 
 export default tmp4;

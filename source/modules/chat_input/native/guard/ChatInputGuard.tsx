@@ -1,24 +1,31 @@
-// Module ID: 11471
-// Function ID: 89366
+// Module ID: 11481
+// Function ID: 89416
 // Name: ChatInputGuard
-// Dependencies: []
+// Dependencies: [31, 27, 9313, 33, 4130, 689, 783, 8830, 11366, 4662, 477, 11374, 5165, 7771, 10171, 10166, 4126, 4543, 4965, 8372, 2]
 // Exports: ChatInputGuardContainer, default
 
-// Module 11471 (ChatInputGuard)
-let closure_3 = importAll(dependencyMap[0]);
-({ StyleSheet: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = arg1(dependencyMap[2]).updateChatInputContainerHeight;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[4]).createStyles((arg0) => {
+// Module 11481 (ChatInputGuard)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { updateChatInputContainerHeight as closure_6 } from "getChatInputContainerHeight";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, paddingBottom: importDefault(dependencyMap[5]).space.PX_8 };
+  obj = { paddingHorizontal: importDefault(689).space.PX_12, paddingBottom: importDefault(689).space.PX_8 };
   obj.container = obj;
   obj = {};
   let lg;
   if (arg0) {
-    lg = importDefault(dependencyMap[5]).radii.lg;
+    lg = importDefault(689).radii.lg;
   }
   obj.borderRadius = lg;
   let str;
@@ -27,22 +34,21 @@ let closure_9 = arg1(dependencyMap[4]).createStyles((arg0) => {
   }
   obj.overflow = str;
   obj.content = obj;
-  const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWER, height: importDefault(dependencyMap[5]).space.PX_8 + arg1(dependencyMap[6]).Radius.lg };
+  const obj1 = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWER, height: importDefault(689).space.PX_8 + require(783) /* Radius */.Radius.lg };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   obj1["top"] = undefined;
   obj.underlay = obj1;
-  obj.wrapper = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, paddingTop: importDefault(dependencyMap[5]).space.PX_16, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1 };
-  const obj2 = { borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12, paddingTop: importDefault(dependencyMap[5]).space.PX_16, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).radii.lg, borderWidth: 1 };
-  obj.floating = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED, borderWidth: 1 };
+  obj.wrapper = { borderColor: importDefault(689).colors.BORDER_MUTED, paddingHorizontal: importDefault(689).space.PX_12, paddingTop: importDefault(689).space.PX_16, backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(689).radii.lg, borderWidth: 1 };
+  const obj2 = { borderColor: importDefault(689).colors.BORDER_MUTED, paddingHorizontal: importDefault(689).space.PX_12, paddingTop: importDefault(689).space.PX_16, backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(689).radii.lg, borderWidth: 1 };
+  obj.floating = { backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(689).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderColor: importDefault(689).colors.BORDER_MUTED, borderWidth: 1 };
   obj.text = { textAlign: "center" };
-  const obj3 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[5]).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderColor: importDefault(dependencyMap[5]).colors.BORDER_MUTED, borderWidth: 1 };
-  obj.subtext = { marginTop: importDefault(dependencyMap[5]).space.PX_4, textAlign: "center" };
-  const obj4 = { marginTop: importDefault(dependencyMap[5]).space.PX_4, textAlign: "center" };
-  obj.spacing = { marginTop: importDefault(dependencyMap[5]).space.PX_8 };
+  const obj3 = { backgroundColor: importDefault(689).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(689).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderColor: importDefault(689).colors.BORDER_MUTED, borderWidth: 1 };
+  obj.subtext = { marginTop: importDefault(689).space.PX_4, textAlign: "center" };
+  const obj4 = { marginTop: importDefault(689).space.PX_4, textAlign: "center" };
+  obj.spacing = { marginTop: importDefault(689).space.PX_8 };
   return obj;
 });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuard.tsx");
+const result = require("getChatInputContainerHeight").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuard.tsx");
 
 export default function ChatInputGuard(type) {
   let actionIcon;
@@ -64,28 +70,28 @@ export default function ChatInputGuard(type) {
   let message2;
   let subtext;
   let subtext2;
-  const tmp = callback3(importDefault(dependencyMap[7])());
+  const tmp = callback3(importDefault(8830)());
   if ("simple-action" === type.type) {
     ({ countdown, actionIcon, actionLabel, actionOnPress } = type);
     let obj = { style: tmp.floating };
     ({ icon, message, subtext } = type);
-    obj = { onPress: actionOnPress, icon };
+    obj = { arrow: false, accessibilityRole: "button", onPress: actionOnPress, icon, start: true, end: true };
     if (null != actionLabel) {
       if (null != actionOnPress) {
         const obj1 = { accessibilityLabel: actionLabel };
         if (null == actionIcon) {
-          const obj2 = { color: importDefault(dependencyMap[5]).colors.WHITE };
-          actionIcon = callback(arg1(dependencyMap[14]).ArrowSmallRightIcon, obj2);
+          const obj2 = { color: importDefault(689).colors.WHITE };
+          actionIcon = callback(require(10171) /* ArrowSmallRightIcon */.ArrowSmallRightIcon, obj2);
         }
         obj1.icon = actionIcon;
         obj1.size = "sm";
         obj1.onPress = actionOnPress;
-        let tmp28Result = callback(arg1(dependencyMap[13]).IconButton, obj1);
+        let tmp28Result = callback(require(7771) /* IconButton */.IconButton, obj1);
         const tmp28 = callback;
       }
       obj.trailing = tmp28Result;
       const obj3 = { variant: "text-sm/semibold", children: message };
-      obj.label = callback(arg1(dependencyMap[16]).Text, obj3);
+      obj.label = callback(require(4126) /* Text */.Text, obj3);
       obj.subLabel = subtext;
       obj.children = tmp18(tmp22, obj);
       return tmp18(tmp19, obj);
@@ -97,25 +103,25 @@ export default function ChatInputGuard(type) {
       ({ text: arr3[0], spacing: arr3[1] } = tmp);
       obj4.style = items;
       obj4.deadline = countdown;
-      tmp28Result = callback(importDefault(dependencyMap[15]), obj4);
+      tmp28Result = callback(importDefault(10166), obj4);
     }
-    const tmp19 = closure_5;
+    tmp19 = closure_5;
   } else {
     ({ subtext: subtext2, buttonSecondaryText, buttonSecondaryOnPress, countdown: countdown2 } = type);
     ({ message: message2, buttonPrimaryText, buttonPrimaryOnPress, buttonPrimaryDisabled, buttonPrimaryLoading, buttonPrimaryVariant, buttonSecondaryDisabled, buttonSecondaryLoading } = type);
     const obj5 = { disabled: buttonPrimaryDisabled, loading: buttonPrimaryLoading, text: buttonPrimaryText, onPress: buttonPrimaryOnPress, size: "sm", variant: buttonPrimaryVariant };
-    const tmp41 = callback(arg1(dependencyMap[17]).Button, obj5);
+    const tmp41 = callback(require(4543) /* Button */.Button, obj5);
     const obj6 = { style: tmp.wrapper };
     const obj7 = { style: tmp.text, variant: "text-sm/semibold", children: message2 };
-    const items1 = [callback(arg1(dependencyMap[16]).Text, obj7), , , ];
+    const items1 = [callback(require(4126) /* Text */.Text, obj7), , , ];
     let tmp2 = null;
     if (null != subtext2) {
       tmp2 = null;
       if ("string" === typeof subtext2) {
         tmp2 = null;
         if (subtext2.length > 0) {
-          obj = { style: tmp.subtext, children: subtext2 };
-          tmp2 = callback(arg1(dependencyMap[16]).Text, obj);
+          obj = { style: tmp.subtext, variant: "text-xs/medium", color: "text-muted", children: subtext2 };
+          tmp2 = callback(require(4126) /* Text */.Text, obj);
         }
       }
     }
@@ -128,13 +134,13 @@ export default function ChatInputGuard(type) {
         const obj9 = {};
         const items2 = [tmp41, ];
         const obj10 = { disabled: buttonSecondaryDisabled, loading: buttonSecondaryLoading, text: buttonSecondaryText, onPress: buttonSecondaryOnPress, variant: "secondary", size: "sm" };
-        items2[1] = callback(arg1(dependencyMap[17]).Button, obj10);
+        items2[1] = callback(require(4543) /* Button */.Button, obj10);
         obj9.children = items2;
-        tmp9 = callback2(arg1(dependencyMap[19]).TwinButtons, obj9);
+        tmp9 = callback2(require(8372) /* TwinButtons */.TwinButtons, obj9);
       }
     }
     obj8.children = tmp9;
-    items1[2] = callback(arg1(dependencyMap[18]).ButtonGroup, obj8);
+    items1[2] = callback(require(4965) /* ButtonGroup */.ButtonGroup, obj8);
     let tmp14 = null;
     if (null != countdown2) {
       const obj11 = {};
@@ -142,7 +148,7 @@ export default function ChatInputGuard(type) {
       ({ text: arr2[0], spacing: arr2[1] } = tmp);
       obj11.style = items3;
       obj11.deadline = countdown2;
-      tmp14 = callback(importDefault(dependencyMap[15]), obj11);
+      tmp14 = callback(importDefault(10166), obj11);
     }
     items1[3] = tmp14;
     obj6.children = items1;
@@ -153,18 +159,17 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   let children;
   let onJumpToPresent;
   screenIndex = screenIndex.screenIndex;
-  const arg1 = screenIndex;
   const channelId = screenIndex.channelId;
   ({ onJumpToPresent, children } = screenIndex);
-  const tmp = importDefault(dependencyMap[7])();
+  const tmp = importDefault(8830)();
   const tmp2 = callback3(tmp);
   const items = [screenIndex];
   let obj = {};
   const items1 = [tmp2.container, ];
   const callback = React.useCallback((nativeEvent) => {
-    callback(screenIndex, nativeEvent.nativeEvent.layout.height);
+    outer1_6(screenIndex, nativeEvent.nativeEvent.layout.height);
   }, items);
-  items1[1] = importDefault(dependencyMap[8])({ isCreatingThread: false });
+  items1[1] = importDefault(11366)({ isCreatingThread: false });
   obj.style = items1;
   obj.onLayout = callback;
   obj.collapsable = false;
@@ -177,7 +182,7 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   obj = { style: tmp2.content };
   let tmp11 = null;
   if (tmp) {
-    tmp11 = callback(importDefault(dependencyMap[9]), {});
+    tmp11 = callback(importDefault(4662), { absolute: true, wide: true, tall: true, mix: true });
   }
   const items3 = [tmp11, children];
   obj.children = items3;
@@ -187,7 +192,7 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
     tmp15 = null;
     if (null != channelId) {
       const obj1 = { channelId, screenIndex, onJumpToPresent };
-      tmp15 = callback(importDefault(dependencyMap[11]), obj1);
+      tmp15 = callback(importDefault(11374), obj1);
     }
   }
   items2[2] = tmp15;

@@ -1,16 +1,17 @@
-// Module ID: 4534
-// Function ID: 39797
+// Module ID: 4538
+// Function ID: 39829
 // Name: MODERN_ANDROID_BLURRING_AVAILABLE
-// Dependencies: []
+// Dependencies: [4110, 4536, 4537, 2]
 
-// Module 4534 (MODERN_ANDROID_BLURRING_AVAILABLE)
-const _module = require(dependencyMap[0]);
+// Module 4538 (MODERN_ANDROID_BLURRING_AVAILABLE)
+import getSystemVersion from "getSystemVersion";
+import importDefaultResult from "map";
+
 const obj = { componentName: "DCDVisualEffectView" };
-const tmp2 = _module.getSystemVersionMajor() >= 31;
-obj.componentFoundInstance = importDefault(dependencyMap[2]);
-const importDefaultResult = importDefault(dependencyMap[1]);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewAndroid.tsx");
+const tmp2 = getSystemVersion.getSystemVersionMajor() >= 31;
+obj.componentFoundInstance = require("__INTERNAL_VIEW_CONFIG");
+const importDefaultResultResult = require("map")(obj);
+const result = require("__INTERNAL_VIEW_CONFIG").fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewAndroid.tsx");
 
-export default importDefault(dependencyMap[1])(obj);
+export default importDefaultResultResult;
 export const MODERN_ANDROID_BLURRING_AVAILABLE = tmp2;

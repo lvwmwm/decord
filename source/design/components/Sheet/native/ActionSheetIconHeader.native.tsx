@@ -1,17 +1,21 @@
-// Module ID: 10339
-// Function ID: 79819
+// Module ID: 10349
+// Function ID: 79869
 // Name: ActionSheetIconHeader
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 4126, 2]
 // Exports: ActionSheetIconHeader
 
-// Module 10339 (ActionSheetIconHeader)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: {}, titles: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Sheet/native/ActionSheetIconHeader.native.tsx");
+// Module 10349 (ActionSheetIconHeader)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingVertical: 0, flexDirection: "row", alignItems: "center", gap: 12 }, titles: { justifyContent: "center", flex: 1 } });
+const result = require("jsxProd").fileFinishedImporting("design/components/Sheet/native/ActionSheetIconHeader.native.tsx");
 
 export const ActionSheetIconHeader = function ActionSheetIconHeader(subtitle) {
   let icon;
@@ -22,11 +26,12 @@ export const ActionSheetIconHeader = function ActionSheetIconHeader(subtitle) {
   let obj = { style: tmp.container };
   const items = [callback(View, { children: icon }), ];
   obj = { style: tmp.titles };
-  const items1 = [callback(arg1(dependencyMap[4]).Text, { children: title }), ];
+  obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title };
+  const items1 = [callback(require(4126) /* Text */.Text, obj), ];
   let tmp4 = null;
   if (null != subtitle) {
-    obj = { cachedAt: true, edpbxy: true, children: subtitle };
-    tmp4 = callback(arg1(dependencyMap[4]).Text, obj);
+    const obj1 = { variant: "text-xs/medium", color: "text-default", children: subtitle };
+    tmp4 = callback(require(4126) /* Text */.Text, obj1);
   }
   items1[1] = tmp4;
   obj.children = items1;

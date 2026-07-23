@@ -1,12 +1,14 @@
 // Module ID: 883
-// Function ID: 9769
+// Function ID: 9770
 // Name: winterCGHeadersToDict
-// Dependencies: []
+// Dependencies: [57]
 // Exports: httpHeadersToSpanAttributes, httpRequestToRequestData, winterCGRequestToRequestData
 
 // Module 883 (winterCGHeadersToDict)
+import _slicedToArray from "_slicedToArray";
+
 function winterCGHeadersToDict(arr) {
-  let closure_0 = {};
+  const obj = {};
   const item = arr.forEach((arg0, arg1) => {
     if ("string" === typeof arg0) {
       obj[arg1] = arg0;
@@ -14,7 +16,7 @@ function winterCGHeadersToDict(arr) {
   });
 }
 function headersToDict(arg0) {
-  let closure_0 = Object.create(null);
+  const obj = Object.create(null);
   const entries = Object.entries(arg0);
   const item = entries.forEach((arg0) => {
     const tmp3 = obj(arg0, 2)[1];
@@ -39,13 +41,14 @@ function addSpanAttribute(arg0, arg1, arg2, arr) {
   if (!arg2) {
     tmp4 = arg1;
   }
-  const tmp5 = function handleHttpHeader(arg0, arr, arg2) {
+  const tmp5 = (function handleHttpHeader(arg0, arr, arg2) {
+    let closure_0 = arg0;
     if (arg2) {
-      let someResult = closure_1.some((arg0) => arg0.includes(arg0));
+      let someResult = outer1_1.some((arg0) => closure_0.includes(arg0));
     } else {
       const items = [];
-      const combined = items.concat(closure_2, closure_1);
-      someResult = combined.some((arg0) => arg0.includes(arg0));
+      const combined = items.concat(outer1_2, outer1_1);
+      someResult = combined.some((arg0) => closure_0.includes(arg0));
     }
     if (someResult) {
       return "[Filtered]";
@@ -65,7 +68,7 @@ function addSpanAttribute(arg0, arg1, arg2, arr) {
         return "string" === typeof arr ? arr : undefined;
       }
     }
-  }(tmp4, arr, arg4);
+  })(tmp4, arr, arg4);
   if (undefined !== tmp5) {
     arg0[combined] = tmp5;
   }
@@ -83,21 +86,20 @@ function extractQueryParamsFromUrl(arg0) {
     return tmp9;
   }
 }
-let closure_0 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_1 = ["CarouselPagination", "service_name", "r", -2080377753.7812505, -42014398967552880000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -1507458263301350700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -47406902002726550000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 11039375300661160000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -10388869020367442000000000000000000, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031334227415278484, 131137.07080080392, 6839620.00007759, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007832331670125217, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002492501842200905, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002238875319550034, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006354831195257604, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011980256575828852];
-let closure_2 = [];
+let closure_1 = ["auth", "token", "secret", "session", "password", "passwd", "pwd", "key", "jwt", "bearer", "sso", "saml", "csrf", "xsrf", "credentials", "set-cookie", "cookie"];
+let closure_2 = ["x-forwarded-", "-user"];
 
 export { extractQueryParamsFromUrl };
 export { headersToDict };
 export const httpHeadersToSpanAttributes = function httpHeadersToSpanAttributes(arg0) {
-  const tmp = arguments.length > 1 && undefined !== arguments[1];
+  let tmp = arguments.length > 1 && undefined !== arguments[1];
   let tmp2 = tmp;
   if (tmp) {
     tmp2 = arguments[1];
   }
-  let closure_0 = tmp2;
-  let closure_1 = {};
+  const _slicedToArray = tmp2;
+  const obj = {};
   const entries = Object.entries(arg0);
   const item = entries.forEach((arg0) => {
     const tmp = tmp2(arg0, 2);
@@ -125,7 +127,7 @@ export const httpHeadersToSpanAttributes = function httpHeadersToSpanAttributes(
           }
         }
       }
-      callback(obj, formatted, "", arr, tmp2);
+      outer1_6(obj, formatted, "", arr, tmp2);
     }
   });
 };
@@ -135,8 +137,8 @@ export const httpRequestToRequestData = function httpRequestToRequestData(header
   let url;
   const tmp = headers.headers || {};
   let prop;
-  if ("string" === typeof tmp.x-forwarded-host) {
-    prop = tmp.x-forwarded-host;
+  if ("string" === typeof tmp["x-forwarded-host"]) {
+    prop = tmp["x-forwarded-host"];
   }
   if (!prop) {
     host = undefined;
@@ -146,8 +148,8 @@ export const httpRequestToRequestData = function httpRequestToRequestData(header
     prop = host;
   }
   let prop1;
-  if ("string" === typeof tmp.x-forwarded-proto) {
-    prop1 = tmp.x-forwarded-proto;
+  if ("string" === typeof tmp["x-forwarded-proto"]) {
+    prop1 = tmp["x-forwarded-proto"];
   }
   if (!prop1) {
     prop1 = headers.protocol;

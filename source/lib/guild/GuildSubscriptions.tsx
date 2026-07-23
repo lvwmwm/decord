@@ -1,9 +1,16 @@
-// Module ID: 5657
-// Function ID: 48583
+// Module ID: 5662
+// Function ID: 48610
 // Name: validateGuildId
-// Dependencies: []
+// Dependencies: [6, 7, 653, 5663, 5664, 5665, 4015, 22, 2]
 
-// Module 5657 (validateGuildId)
+// Module 5662 (validateGuildId)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import apply from "apply";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function validateGuildId(arg0) {
   let tmp = null != arg0;
   if (tmp) {
@@ -20,22 +27,19 @@ function validateGuildId(arg0) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ FAVORITES: closure_5, ME: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const tmp3 = () => {
+({ FAVORITES: closure_5, ME: closure_6 } = ME);
+const tmp3 = (() => {
   class GuildSubscriptions {
     constructor(arg0) {
-      GuildSubscriptions = this;
-      tmp = closure_3(this, GuildSubscriptions);
-      tmp2 = closure_1(closure_2[3]);
+      self = this;
+      tmp = outer1_3(this, self);
+      tmp2 = outer1_1(outer1_2[3]);
       tmp2 = new tmp2((arg0, members) => self._enqueue(arg0, { members }));
       this._members = tmp2;
-      tmp4 = closure_1(closure_2[4]);
+      tmp4 = outer1_1(outer1_2[4]);
       tmp4 = new tmp4((arg0, channels) => self._enqueue(arg0, { channels }));
       this._channels = tmp4;
-      tmp6 = closure_1(closure_2[5]);
+      tmp6 = outer1_1(outer1_2[5]);
       tmp6 = new tmp6((arg0, thread_member_lists) => self._enqueue(arg0, { thread_member_lists }));
       this._threadMemberLists = tmp6;
       set = new Set();
@@ -49,13 +53,12 @@ const tmp3 = () => {
       set4 = new Set();
       this._subscribed = set4;
       this._pending = {};
-      delayedCall = new GuildSubscriptions(closure_2[6]).DelayedCall(0, () => self.flush());
+      delayedCall = new GuildSubscriptions(outer1_2[6]).DelayedCall(0, () => self.flush());
       this._flush = delayedCall;
       this._onChange = arg0;
       return;
     }
   }
-  const arg1 = GuildSubscriptions;
   let obj = {
     key: "_enqueue",
     value(arg0, arg1) {
@@ -154,7 +157,7 @@ const tmp3 = () => {
         const _subscribed = self._subscribed;
         _subscribed.delete(arg0);
       }
-      delete r3[r2];
+      delete tmp2[tmp];
       const _members = self._members;
       _members.clear(arg0);
       const _channels = self._channels;
@@ -176,8 +179,8 @@ const tmp3 = () => {
   items[9] = {
     key: "flush",
     value() {
-      const GuildSubscriptions = this;
-      const item = callback(closure_2[7]).forEach(this._pending, (arg0, arg1) => {
+      const self = this;
+      const item = outer1_1(outer1_2[7]).forEach(this._pending, (arg0, arg1) => {
         const _subscribed = self._subscribed;
         _subscribed.add(arg1);
       });
@@ -188,7 +191,7 @@ const tmp3 = () => {
   items[10] = {
     key: "subscribeUser",
     value(arg0, arg1) {
-      if (callback3(arg0)) {
+      if (outer1_7(arg0)) {
         const self = this;
         const _members = this._members;
         const subscription = _members.subscribe(arg0, arg1);
@@ -198,7 +201,7 @@ const tmp3 = () => {
   items[11] = {
     key: "unsubscribeUser",
     value(arg0, arg1) {
-      if (callback3(arg0)) {
+      if (outer1_7(arg0)) {
         const self = this;
         const _members = this._members;
         _members.unsubscribe(arg0, arg1);
@@ -208,7 +211,7 @@ const tmp3 = () => {
   items[12] = {
     key: "subscribeChannel",
     value(arg0, arg1, arg2) {
-      const tmp = callback3(arg0);
+      const tmp = outer1_7(arg0);
       let subscription = tmp;
       if (tmp) {
         const self = this;
@@ -222,7 +225,7 @@ const tmp3 = () => {
     key: "subscribeToMemberUpdates",
     value(arg0) {
       const self = this;
-      if (callback3(arg0)) {
+      if (outer1_7(arg0)) {
         const obj = { member_updates: true };
         self._enqueue(arg0, obj);
         const _memberUpdates = self._memberUpdates;
@@ -236,7 +239,7 @@ const tmp3 = () => {
     key: "unsubscribeFromMemberUpdates",
     value(arg0) {
       const self = this;
-      if (callback3(arg0)) {
+      if (outer1_7(arg0)) {
         const obj = { member_updates: false };
         self._enqueue(arg0, obj);
       } else {
@@ -247,7 +250,7 @@ const tmp3 = () => {
   items[15] = {
     key: "subscribeThreadMemberList",
     value(arg0, arg1, arg2) {
-      const tmp = callback3(arg0);
+      const tmp = outer1_7(arg0);
       let subscription = tmp;
       if (tmp) {
         const self = this;
@@ -260,7 +263,7 @@ const tmp3 = () => {
   items[16] = {
     key: "unsubscribeThreadMemberList",
     value(arg0, arg1) {
-      const tmp = callback3(arg0);
+      const tmp = outer1_7(arg0);
       let unsubscribeResult = tmp;
       if (tmp) {
         const self = this;
@@ -282,7 +285,7 @@ const tmp3 = () => {
     key: "_subscribeToFeature",
     value(arg0, has) {
       const self = this;
-      if (callback3(arg0)) {
+      if (outer1_7(arg0)) {
         if (!has.has(arg0)) {
           has.add(arg0);
           self._enqueue(arg0, arg2);
@@ -291,9 +294,9 @@ const tmp3 = () => {
     }
   };
   return callback(GuildSubscriptions, items);
-}();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("lib/guild/GuildSubscriptions.tsx");
+})();
+let result = require("ME").fileFinishedImporting("lib/guild/GuildSubscriptions.tsx");
 
 export default tmp3;
-export const MINIMUM_RANGE = arg1(dependencyMap[4]).MINIMUM_RANGE;
-export const DEFAULT_RANGES = arg1(dependencyMap[4]).DEFAULT_RANGES;
+export const MINIMUM_RANGE = require("serializeChannelRanges").MINIMUM_RANGE;
+export const DEFAULT_RANGES = require("serializeChannelRanges").DEFAULT_RANGES;

@@ -1,19 +1,26 @@
 // Module ID: 1198
-// Function ID: 13755
+// Function ID: 13756
 // Name: shouldNavigate
-// Dependencies: []
+// Dependencies: [653, 3, 1199, 1207, 1210, 2]
 // Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, transitionToGuild
 
 // Module 1198 (shouldNavigate)
+import ME from "ME";
+import importDefaultResult from "reportDevtoolsEvent";
+import _extends from "_extends";
+
+let closure_5;
+let closure_6;
+let closure_7;
 function shouldNavigate() {
-  const ComponentDispatch = require(dependencyMap[3]).ComponentDispatch;
+  const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
   return !ComponentDispatch.hasSubscribers(constants2.MODAL_CLOSE);
 }
 function maybeExternallyNavigate(ME, assign) {
-  const require = ME;
+  let closure_0 = ME;
   let tmp = "string" !== typeof ME;
   if (!tmp) {
-    tmp = !items.some((arg0) => arg0.startsWith(arg0));
+    tmp = !items.some((arg0) => ME.startsWith(arg0));
   }
   let flag = !tmp;
   if (!tmp) {
@@ -43,7 +50,7 @@ function transitionTo(CHANNELResult, source) {
       sourceLocationStack = source.sourceLocationStack;
     }
     if (null == source) {
-      memoryHistory.push(CHANNELResult);
+      _extends.push(CHANNELResult);
     } else {
       const _URL = URL;
       const _window = window;
@@ -52,24 +59,20 @@ function transitionTo(CHANNELResult, source) {
       const obj = {};
       ({ pathname: obj.pathname, search: obj.search, hash: obj.hash } = uRL);
       const merged = Object.assign(source);
-      memoryHistory.push(obj);
+      _extends.push(obj);
     }
   }
 }
-const _module = require(dependencyMap[0]);
-({ Routes: closure_5, PageAnalyticsLocations: closure_6, ComponentActions: closure_7 } = _module);
-let importDefaultResult = importDefault(dependencyMap[1]);
+({ Routes: closure_5, PageAnalyticsLocations: closure_6, ComponentActions: closure_7 } = ME);
 importDefaultResult = new importDefaultResult("Routing/Utils");
-const items = [_module.RelativeMarketingURLs.DEVELOPER_PORTAL];
-const _module1 = require(dependencyMap[2]);
-const memoryHistory = _module1.createMemoryHistory();
-let closure_10 = memoryHistory.listen((arg0, arg1) => {
+const items = [ME.RelativeMarketingURLs.DEVELOPER_PORTAL];
+_extends = _extends.createMemoryHistory();
+let closure_10 = _extends.listen((arg0, arg1) => {
   if ("REPLACE" !== arg1) {
     callback();
   }
 });
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/routing/router_utils.tsx");
+const result = require("_extends").fileFinishedImporting("modules/routing/router_utils.tsx");
 
 export { shouldNavigate };
 export { transitionTo };
@@ -80,7 +83,7 @@ export const transitionToGuild = function transitionToGuild(guildId, channelId, 
 export const currentRouteHasBackNavigation = function currentRouteHasBackNavigation() {
   let hasItem = null != closure_3;
   if (hasItem) {
-    const ChannelBackNavigationSources = require(dependencyMap[4]).ChannelBackNavigationSources;
+    const ChannelBackNavigationSources = require(1210) /* set */.ChannelBackNavigationSources;
     hasItem = ChannelBackNavigationSources.has(closure_3);
   }
   return hasItem;
@@ -90,14 +93,15 @@ export const replaceWith = function replaceWith(ME, state) {
     const _HermesInternal = HermesInternal;
     importDefaultResult.log("Replacing route with " + ME);
     if ("string" === typeof ME) {
-      const replaced = memoryHistory.replace(ME, state);
+      const replaced = _extends.replace(ME, state);
     } else {
-      const replaced1 = memoryHistory.replace(ME);
+      const replaced1 = _extends.replace(ME);
     }
+    let closure_3 = arg2;
   }
 };
 export function getHistory() {
-  return memoryHistory;
+  return _extends;
 }
 export function getLastRouteChangeSource() {
   return closure_3;
@@ -111,7 +115,7 @@ export const isValidFingerprintRoute = function isValidFingerprintRoute(arg0) {
 export const getFingerprintLocation = function getFingerprintLocation(arg0) {
   let ACCOUNT_REVERT = arg0;
   if (null == arg0) {
-    const pathname = memoryHistory.location.pathname;
+    const pathname = _extends.location.pathname;
     let str = "";
     if (null != pathname) {
       str = pathname;
@@ -154,13 +158,13 @@ export function hasNavigated() {
 }
 export const back = function back() {
   if (shouldNavigate()) {
-    let closure_3 = null;
-    memoryHistory.goBack();
+    let c3 = null;
+    _extends.goBack();
   }
 };
 export const forward = function forward() {
   if (shouldNavigate()) {
-    let closure_3 = null;
-    memoryHistory.goForward();
+    let c3 = null;
+    _extends.goForward();
   }
 };

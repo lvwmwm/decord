@@ -1,18 +1,20 @@
-// Module ID: 11063
-// Function ID: 86099
+// Module ID: 11073
+// Function ID: 86149
 // Name: Modal
-// Dependencies: []
+// Dependencies: [31, 33, 1557, 5519, 5084, 2]
 // Exports: Modal
 
-// Module 11063 (Modal)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Modal/native/Modal.native.tsx");
+// Module 11073 (Modal)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("useSafeAreaInsets").fileFinishedImporting("design/components/Modal/native/Modal.native.tsx");
 
 export const Modal = function Modal(arg0) {
   let obj = {};
   const merged = Object.assign(arg0);
-  obj = { height: arg1(dependencyMap[4]).NAV_BAR_HEIGHT + importDefault(dependencyMap[2])().top };
+  obj = { height: require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + importDefault(1557)().top };
   obj["headerStyle"] = obj;
-  return jsx(arg1(dependencyMap[3]).Navigator, obj);
+  return jsx(require(5519) /* NavigationStack */.Navigator, { height: require(5084) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + importDefault(1557)().top });
 };

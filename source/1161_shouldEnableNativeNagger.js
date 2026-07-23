@@ -1,17 +1,18 @@
 // Module ID: 1161
-// Function ID: 13204
+// Function ID: 13205
 // Name: shouldEnableNativeNagger
-// Dependencies: []
+// Dependencies: [27, 978]
 // Exports: shouldEnableNativeNagger
 
 // Module 1161 (shouldEnableNativeNagger)
-const Platform = require(dependencyMap[0]).Platform;
+import { Platform } from "get ActivityIndicator";
+
 
 export const shouldEnableNativeNagger = function shouldEnableNativeNagger(enableNativeNagger) {
   let tmp = enableNativeNagger;
   if ("boolean" !== typeof enableNativeNagger) {
-    tmp = !require(dependencyMap[1]).isExpoGo();
-    const obj = require(dependencyMap[1]);
+    tmp = !require(978) /* isHermesEnabled */.isExpoGo();
+    const obj = require(978) /* isHermesEnabled */;
   }
   return tmp;
 };

@@ -1,47 +1,44 @@
-// Module ID: 10568
-// Function ID: 82530
+// Module ID: 10578
+// Function ID: 82580
 // Name: useVideoReadyTimeout
-// Dependencies: []
+// Dependencies: [31, 664, 4015, 10577, 4227, 10579, 10581, 2]
 // Exports: default
 
-// Module 10568 (useVideoReadyTimeout)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = 20 * importDefault(dependencyMap[1]).Millis.SECOND;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/errors/hooks/useVideoReadyTimeout.tsx");
+// Module 10578 (useVideoReadyTimeout)
+import result from "result";
+
+const require = arg1;
+let closure_3 = 20 * require("set").Millis.SECOND;
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/errors/hooks/useVideoReadyTimeout.tsx");
 
 export default function useVideoReadyTimeout(streamId) {
   let streamKey;
   let videoSpinnerContext;
   streamId = streamId.streamId;
-  const arg1 = streamId;
   const userId = streamId.userId;
-  const dependencyMap = userId;
   ({ videoSpinnerContext, streamKey } = streamId);
-  const React = streamKey;
   const loading = streamId.loading;
-  let closure_3 = loading;
   let flag = streamId.paused;
   if (flag === undefined) {
     flag = false;
   }
   let closure_5;
   let STREAM;
-  const timeout = new arg1(dependencyMap[2]).Timeout();
-  closure_5 = React.useRef(timeout);
-  if (videoSpinnerContext !== arg1(dependencyMap[3]).VideoSpinnerContext.SELF_STREAM) {
-    if (videoSpinnerContext !== arg1(dependencyMap[3]).VideoSpinnerContext.REMOTE_STREAM) {
-      STREAM = arg1(dependencyMap[4]).MediaEngineContextTypes.DEFAULT;
+  const timeout = new streamId(userId[2]).Timeout();
+  closure_5 = streamKey.useRef(timeout);
+  if (videoSpinnerContext !== streamId(userId[3]).VideoSpinnerContext.SELF_STREAM) {
+    if (videoSpinnerContext !== streamId(userId[3]).VideoSpinnerContext.REMOTE_STREAM) {
+      STREAM = streamId(userId[4]).MediaEngineContextTypes.DEFAULT;
     }
     const items = [flag, streamId, loading, STREAM, streamKey, userId];
-    const effect = React.useEffect(() => {
+    const effect = streamKey.useEffect(() => {
       if (loading) {
         if (!flag) {
           const WindowVisibilityVideoManager = streamId(userId[5]).WindowVisibilityVideoManager;
           if (WindowVisibilityVideoManager.isIncomingVideoEnabled()) {
             const current = ref.current;
-            const streamId = current;
             current.start(loading, () => {
-              current(closure_1[6]).videoStreamTimedOut(current, closure_1, closure_6, closure_2);
+              streamId(userId[6]).videoStreamTimedOut(current, outer1_1, outer1_6, outer1_2);
             });
             return () => {
               current.stop();
@@ -52,12 +49,12 @@ export default function useVideoReadyTimeout(streamId) {
     }, items);
     const obj = {};
     const items1 = [userId, STREAM];
-    obj.onReady = React.useCallback(() => {
+    obj.onReady = streamKey.useCallback(() => {
       const current = ref.current;
       current.stop();
       const result = streamId(userId[6]).clearVideoStreamTimeout(STREAM, userId);
     }, items1);
     return obj;
   }
-  STREAM = arg1(dependencyMap[4]).MediaEngineContextTypes.STREAM;
+  STREAM = streamId(userId[4]).MediaEngineContextTypes.STREAM;
 };

@@ -1,14 +1,14 @@
 // Module ID: 739
-// Function ID: 8781
+// Function ID: 8782
 // Name: toString
-// Dependencies: []
+// Dependencies: [740]
 
 // Module 739 (toString)
 
 export default function toString(arg0) {
   let str = "";
   if (null != arg0) {
-    str = require(dependencyMap[0])(arg0);
+    str = require(740) /* toString */(arg0);
   }
   return str;
 };

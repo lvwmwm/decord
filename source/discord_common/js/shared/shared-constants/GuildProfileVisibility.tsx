@@ -1,12 +1,15 @@
-// Module ID: 5129
-// Function ID: 44470
+// Module ID: 5132
+// Function ID: 44489
 // Name: set
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5129 (set)
-const obj = { VISIBLE: new Set([0.000000000000000000000000000000000000000000000000000020886642920001103, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001086461845159]) };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildProfileVisibility.tsx");
+// Module 5132 (set)
+import set from "set";
+
+const obj = {};
+let set = new Set([1, 3]);
+obj.VISIBLE = set;
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildProfileVisibility.tsx");
 
 export const GuildProfileVisibility = { NOT_SPECIFIED: 0, [0]: "NOT_SPECIFIED", PUBLIC: 1, [1]: "PUBLIC", RESTRICTED: 2, [2]: "RESTRICTED", PUBLIC_WITH_RECRUITMENT: 3, [3]: "PUBLIC_WITH_RECRUITMENT" };
 export const GuildProfileVisibilitySets = obj;

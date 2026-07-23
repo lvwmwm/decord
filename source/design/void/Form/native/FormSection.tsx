@@ -1,16 +1,26 @@
-// Module ID: 7185
-// Function ID: 57853
+// Module ID: 7190
+// Function ID: 57887
 // Name: hasTrailingError
-// Dependencies: []
+// Dependencies: [31, 27, 1277, 33, 4130, 689, 5164, 5158, 7191, 5503, 7192, 477, 2]
 // Exports: default
 
-// Module 7185 (hasTrailingError)
+// Module 7190 (hasTrailingError)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { TitleStyleType } from "semanticColor";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let Platform;
 let StyleSheet;
+let closure_4;
+let closure_6;
+let closure_7;
+const require = arg1;
 function hasTrailingError(found) {
   const element = found[found.length - 1];
   if (React.isValidElement(element)) {
-    if (element.type !== importDefault(dependencyMap[8])) {
+    if (element.type !== importDefault(7191)) {
       if (null != element.props) {
         const props = element.props;
         return "error" in props && null != props.error;
@@ -19,23 +29,18 @@ function hasTrailingError(found) {
   }
   return false;
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, StyleSheet, Platform } = arg1(dependencyMap[1]));
-const TitleStyleType = arg1(dependencyMap[2]).TitleStyleType;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { <string:4149313547>: false, <string:1374118212>: false, <string:3881940428>: false, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-obj.titledSectionHeader = obj;
-obj.titledSectionNoBorder = { marginTop: 24 };
-obj.titledSectionNoBorderOrMargin = {};
-obj.emptySectionHeader = { marginTop: 24 };
-obj.sectionBody = {};
-obj.sectionBodyIOSBorder = {};
-let closure_8 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("design/void/Form/native/FormSection.tsx");
+({ View: closure_4, StyleSheet, Platform } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderTopWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: 16 };
+_createForOfIteratorHelperLoose.titledSectionHeader = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.titledSectionNoBorder = { marginTop: 24 };
+_createForOfIteratorHelperLoose.titledSectionNoBorderOrMargin = {};
+_createForOfIteratorHelperLoose.emptySectionHeader = { marginTop: 24 };
+_createForOfIteratorHelperLoose.sectionBody = {};
+_createForOfIteratorHelperLoose.sectionBodyIOSBorder = {};
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("semanticColor").fileFinishedImporting("design/void/Form/native/FormSection.tsx");
 
 export default function FormSection(arg0) {
   let accessibilityLabel;
@@ -66,14 +71,14 @@ export default function FormSection(arg0) {
   }
   ({ error, hint, hasIcons } = arg0);
   ({ titleViewStyle, titleTextStyle, sectionBodyStyle, wrapperStyle } = arg0);
-  const tmp2 = callback2();
-  if (React.useContext(arg1(dependencyMap[6]).RedesignCompatContext)) {
+  let tmp2 = _createForOfIteratorHelperLoose();
+  if (React.useContext(require(5164) /* context */.RedesignCompatContext)) {
     const Children = React.Children;
     const toArrayResult = Children.toArray(children);
     let tmp23 = null != toArrayResult.find((type) => {
-      let isValidElementResult = closure_3.isValidElement(type);
+      let isValidElementResult = outer1_3.isValidElement(type);
       if (isValidElementResult) {
-        isValidElementResult = type.type === callback(closure_2[7]);
+        isValidElementResult = type.type === outer1_1(outer1_2[7]);
       }
       if (isValidElementResult) {
         const _Boolean = Boolean;
@@ -82,10 +87,10 @@ export default function FormSection(arg0) {
       return isValidElementResult;
     });
     const found = toArrayResult.filter((type) => {
-      const tmp = !closure_3.isValidElement(type);
+      const tmp = !outer1_3.isValidElement(type);
       let tmp2 = !tmp;
       if (!tmp) {
-        tmp2 = type.type !== callback(closure_2[8]);
+        tmp2 = type.type !== outer1_1(outer1_2[8]);
       }
       return tmp2;
     });
@@ -102,7 +107,7 @@ export default function FormSection(arg0) {
     obj3.hasIcons = tmp23;
     obj3.hasTrailingText = hasTrailingError(found);
     obj3.children = found;
-    obj1.children = callback(arg1(dependencyMap[9]).TableRowGroup, obj3);
+    obj1.children = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj3);
     const items = [callback(closure_4, obj1), ];
     let tmp31 = null;
     if (null != hint) {
@@ -131,8 +136,8 @@ export default function FormSection(arg0) {
       obj.thinTitle = thinTitle;
       obj.uppercaseTitle = uppercaseTitle;
       obj.inset = inset;
-      tmp4 = callback(importDefault(dependencyMap[10]), obj);
-      const tmp9 = importDefault(dependencyMap[10]);
+      tmp4 = callback(importDefault(7192), obj);
+      const tmp9 = importDefault(7192);
     }
     const emptySectionHeader = tmp2.emptySectionHeader;
     let titledSectionNoBorderOrMargin = emptySectionHeader;
@@ -140,7 +145,7 @@ export default function FormSection(arg0) {
       if (TitleStyleType.DEFAULT === titleStyleType) {
         titledSectionNoBorderOrMargin = tmp2.titledSectionHeader;
       } else if (TitleStyleType.ANDROID_NO_BORDER === titleStyleType) {
-        obj1 = arg1(dependencyMap[11]);
+        obj1 = require(477) /* set */;
         titledSectionNoBorderOrMargin = obj1.isAndroid() ? tmp2.titledSectionNoBorder : tmp2.titledSectionHeader;
       } else {
         titledSectionNoBorderOrMargin = emptySectionHeader;

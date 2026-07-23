@@ -1,17 +1,24 @@
 // Module ID: 1291
-// Function ID: 15093
+// Function ID: 15094
 // Name: _callSuper
-// Dependencies: []
+// Dependencies: [57, 15, 17, 18, 6, 7, 1290]
 
 // Module 1291 (_callSuper)
+import _slicedToArray from "_slicedToArray";
+import "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _classCallCheck from "varint64read";
+import _defineProperties from "_defineProperties";
+
 function _callSuper(arg0, arg1, arg2) {
   let items = arg2;
-  const obj = callback(arg1);
+  const obj = _getPrototypeOf(arg1);
   if (_isNativeReflectConstruct()) {
     if (!items) {
       items = [];
     }
-    let constructResult = Reflect.construct(obj, items, callback(arg0).constructor);
+    let constructResult = Reflect.construct(obj, items, _getPrototypeOf(arg0).constructor);
   } else {
     constructResult = obj.apply(arg0, items);
   }
@@ -33,12 +40,6 @@ function assertBi(arg0) {
     throw error;
   }
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
-let closure_6 = require(dependencyMap[4]);
-let closure_7 = require(dependencyMap[5]);
 const arrayBuffer = new ArrayBuffer(8);
 const dataView = new DataView(arrayBuffer);
 let tmp4;
@@ -47,7 +48,7 @@ if (undefined !== BigInt) {
     if ("function" === typeof dataView.getBigUint64) {
       if ("function" === typeof dataView.setBigInt64) {
         if ("function" === typeof dataView.setBigUint64) {
-          const obj = {};
+          let obj = {};
           const _BigInt = BigInt;
           obj.MIN = BigInt("-9223372036854775808");
           const _BigInt2 = BigInt;
@@ -65,17 +66,17 @@ if (undefined !== BigInt) {
     }
   }
 }
-let closure_9 = /^-?[0-9]+$/;
-const tmp5 = () => {
+let closure_8 = tmp4;
+const re9 = /^-?[0-9]+$/;
+const tmp5 = (() => {
   class SharedPbLong {
     constructor(arg0, arg1) {
-      tmp = closure_6(this, SharedPbLong);
+      tmp = outer1_6(this, SharedPbLong);
       this.lo = arg0 | 0;
       this.hi = arg1 | 0;
       return;
     }
   }
-  const require = SharedPbLong;
   let obj = {
     key: "isZero",
     value: function isZero() {
@@ -97,27 +98,26 @@ const tmp5 = () => {
     }
   };
   items[1] = obj;
-  return callback3(SharedPbLong, items);
-}();
-let tmp6 = (arg0) => {
+  return _defineProperties(SharedPbLong, items);
+})();
+let tmp6 = ((arg0) => {
   class PbULong {
     constructor() {
-      tmp = closure_6(this, PbULong);
-      return closure_10(this, PbULong, arguments);
+      tmp = outer1_6(this, PbULong);
+      return outer1_10(this, PbULong, arguments);
     }
   }
-  const require = PbULong;
-  callback2(PbULong, arg0);
+  _inherits(PbULong, arg0);
   let obj = {
     key: "toString",
     value: function toString() {
       const self = this;
-      if (closure_8) {
+      if (outer1_8) {
         let str = self.toBigInt();
         str = str.toString();
       } else {
-        str = PbULong(closure_1[6]).int64toString(self.lo, self.hi);
-        const obj = PbULong(closure_1[6]);
+        str = PbULong(outer1_1[6]).int64toString(self.lo, self.hi);
+        const obj = PbULong(outer1_1[6]);
       }
       return str;
     }
@@ -126,12 +126,12 @@ let tmp6 = (arg0) => {
   obj = {
     key: "toBigInt",
     value: function toBigInt() {
-      callback4(closure_8);
-      const V = closure_8.V;
+      outer1_12(outer1_8);
+      const V = outer1_8.V;
       V.setInt32(0, this.lo, true);
-      const V2 = closure_8.V;
+      const V2 = outer1_8.V;
       V2.setInt32(4, this.hi, true);
-      const V3 = closure_8.V;
+      const V3 = outer1_8.V;
       return V3.getBigUint64(0, true);
     }
   };
@@ -140,7 +140,7 @@ let tmp6 = (arg0) => {
     key: "from",
     value: function from(NumberResult) {
       const self = this;
-      if (closure_8) {
+      if (outer1_8) {
         if ("string" === tmp) {
           if ("0" == NumberResult) {
             return self.ZERO;
@@ -149,7 +149,7 @@ let tmp6 = (arg0) => {
             const error = new Error("string is no integer");
             throw error;
           } else {
-            let CResult = closure_8.C(NumberResult);
+            let CResult = outer1_8.C(NumberResult);
           }
         } else {
           CResult = NumberResult;
@@ -157,20 +157,20 @@ let tmp6 = (arg0) => {
             let CResult1 = NumberResult;
           }
           if (CResult1) {
-            if (CResult1 < closure_8.UMIN) {
+            if (CResult1 < outer1_8.UMIN) {
               const _Error6 = Error;
               const error1 = new Error("signed value for ulong");
               throw error1;
-            } else if (CResult1 > closure_8.UMAX) {
+            } else if (CResult1 > outer1_8.UMAX) {
               const _Error5 = Error;
               const error2 = new Error("ulong too large");
               throw error2;
             } else {
-              const V = closure_8.V;
+              const V = outer1_8.V;
               V.setBigUint64(0, CResult1, true);
-              const V2 = closure_8.V;
+              const V2 = outer1_8.V;
               const int32 = V2.getInt32(0, true);
-              const V3 = closure_8.V;
+              const V3 = outer1_8.V;
               const prototype7 = PbULong.prototype;
               const tmp50 = new PbULong(int32, V3.getInt32(4, true));
               return tmp50;
@@ -182,15 +182,15 @@ let tmp6 = (arg0) => {
         if (0 === CResult) {
           return self.ZERO;
         } else {
-          CResult1 = closure_8.C(CResult);
+          CResult1 = outer1_8.C(CResult);
         }
       } else if ("string" === tmp) {
         if ("0" == NumberResult) {
           return self.ZERO;
         } else {
           const trimmed = NumberResult.trim();
-          if (regex.test(trimmed)) {
-            const tmp24 = callback(PbULong(closure_1[6]).int64fromString(trimmed), 3);
+          if (outer1_9.test(trimmed)) {
+            const tmp24 = outer1_2(PbULong(outer1_1[6]).int64fromString(trimmed), 3);
             if (tmp24[0]) {
               const _Error4 = Error;
               const error3 = new Error("signed value");
@@ -200,7 +200,7 @@ let tmp6 = (arg0) => {
               const tmp32 = new PbULong(tmp25, tmp26);
               return tmp32;
             }
-            const obj = PbULong(closure_1[6]);
+            const obj = PbULong(outer1_1[6]);
           } else {
             const _Error3 = Error;
             const error4 = new Error("string is no integer");
@@ -234,19 +234,18 @@ let tmp6 = (arg0) => {
     }
   };
   const items1 = [obj];
-  return callback3(PbULong, items, items1);
-}(tmp5);
+  return _defineProperties(PbULong, items, items1);
+})(tmp5);
 tmp6 = new tmp6(0, 0);
 tmp6.ZERO = tmp6;
-let tmp8 = (arg0) => {
+let tmp8 = ((arg0) => {
   class PbLong {
     constructor() {
-      tmp = closure_6(this, PbLong);
-      return closure_10(this, PbLong, arguments);
+      tmp = outer1_6(this, PbLong);
+      return outer1_10(this, PbLong, arguments);
     }
   }
-  const require = PbLong;
-  callback2(PbLong, arg0);
+  _inherits(PbLong, arg0);
   let obj = {
     key: "isNegative",
     value: function isNegative() {
@@ -257,7 +256,6 @@ let tmp8 = (arg0) => {
   obj = {
     key: "negate",
     value: function negate() {
-      const tmp = ~this.hi;
       const lo = this.lo;
       if (lo) {
         let sum = 1 + ~lo;
@@ -274,13 +272,13 @@ let tmp8 = (arg0) => {
     key: "toString",
     value: function toString() {
       const self = this;
-      if (closure_8) {
+      if (outer1_8) {
         return self.toBigInt().toString();
       } else if (self.isNegative()) {
         const negateResult = self.negate();
-        return "-" + PbLong(closure_1[6]).int64toString(negateResult.lo, negateResult.hi);
+        return "-" + PbLong(outer1_1[6]).int64toString(negateResult.lo, negateResult.hi);
       } else {
-        return PbLong(closure_1[6]).int64toString(self.lo, self.hi);
+        return PbLong(outer1_1[6]).int64toString(self.lo, self.hi);
       }
     }
   };
@@ -288,12 +286,12 @@ let tmp8 = (arg0) => {
   items[3] = {
     key: "toBigInt",
     value: function toBigInt() {
-      callback4(closure_8);
-      const V = closure_8.V;
+      outer1_12(outer1_8);
+      const V = outer1_8.V;
       V.setInt32(0, this.lo, true);
-      const V2 = closure_8.V;
+      const V2 = outer1_8.V;
       V2.setInt32(4, this.hi, true);
-      const V3 = closure_8.V;
+      const V3 = outer1_8.V;
       return V3.getBigInt64(0, true);
     }
   };
@@ -302,7 +300,7 @@ let tmp8 = (arg0) => {
       key: "from",
       value: function from(NumberResult) {
         const self = this;
-        if (closure_8) {
+        if (outer1_8) {
           if ("string" === tmp) {
             if ("0" == NumberResult) {
               return self.ZERO;
@@ -311,7 +309,7 @@ let tmp8 = (arg0) => {
               const error = new Error("string is no integer");
               throw error;
             } else {
-              let CResult = closure_8.C(NumberResult);
+              let CResult = outer1_8.C(NumberResult);
             }
           } else {
             CResult = NumberResult;
@@ -319,20 +317,20 @@ let tmp8 = (arg0) => {
               let CResult1 = NumberResult;
             }
             if (CResult1) {
-              if (CResult1 < closure_8.MIN) {
+              if (CResult1 < outer1_8.MIN) {
                 const _Error4 = Error;
                 const error1 = new Error("ulong too small");
                 throw error1;
-              } else if (CResult1 > closure_8.MAX) {
+              } else if (CResult1 > outer1_8.MAX) {
                 const _Error3 = Error;
                 const error2 = new Error("ulong too large");
                 throw error2;
               } else {
-                const V = closure_8.V;
+                const V = outer1_8.V;
                 V.setBigInt64(0, CResult1, true);
-                const V2 = closure_8.V;
+                const V2 = outer1_8.V;
                 const int32 = V2.getInt32(0, true);
-                const V3 = closure_8.V;
+                const V3 = outer1_8.V;
                 const prototype6 = PbLong.prototype;
                 const tmp40 = new PbLong(int32, V3.getInt32(4, true));
                 return tmp40;
@@ -344,15 +342,15 @@ let tmp8 = (arg0) => {
           if (0 === CResult) {
             return self.ZERO;
           } else {
-            CResult1 = closure_8.C(CResult);
+            CResult1 = outer1_8.C(CResult);
           }
         } else if ("string" === tmp) {
           if ("0" == NumberResult) {
             return self.ZERO;
           } else {
             const trimmed = NumberResult.trim();
-            if (regex.test(trimmed)) {
-              const tmp23 = callback(PbLong(closure_1[6]).int64fromString(trimmed), 3);
+            if (outer1_9.test(trimmed)) {
+              const tmp23 = outer1_2(PbLong(outer1_1[6]).int64fromString(trimmed), 3);
               const prototype5 = PbLong.prototype;
               const obj3 = new PbLong(tmp23[1], tmp23[2]);
               let negateResult = obj3;
@@ -393,8 +391,8 @@ let tmp8 = (arg0) => {
       }
     }
   ];
-  return callback3(PbLong, items, items1);
-}(tmp5);
+  return _defineProperties(PbLong, items, items1);
+})(tmp5);
 tmp8 = new tmp8(0, 0);
 tmp8.ZERO = tmp8;
 

@@ -1,11 +1,10 @@
-// Module ID: 5866
-// Function ID: 49732
+// Module ID: 5871
+// Function ID: 49761
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5866 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarDecorationsAbstractUI-2x.png.js");
+// Module 5871 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarDecorationsAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/d7c293c0c55439cd47bb3fc657a254830b4ceb9a4aafff1b580a97d420bd1437.png";
 export const metadata = { fileBytes: 129506 };

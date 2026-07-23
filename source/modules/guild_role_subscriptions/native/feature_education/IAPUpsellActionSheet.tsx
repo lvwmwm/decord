@@ -1,32 +1,34 @@
-// Module ID: 14952
-// Function ID: 112556
+// Module ID: 15068
+// Function ID: 114724
 // Name: IAPUpsellActionSheet
-// Dependencies: []
+// Dependencies: [31, 653, 1355, 1345, 33, 15069, 15070, 1212, 1198, 2]
 // Exports: default
 
-// Module 14952 (IAPUpsellActionSheet)
-importAll(dependencyMap[0]);
-const Routes = arg1(dependencyMap[1]).Routes;
-const StaticChannelRoute = arg1(dependencyMap[2]).StaticChannelRoute;
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/IAPUpsellActionSheet.tsx");
+// Module 15068 (IAPUpsellActionSheet)
+import "result";
+import { Routes } from "ME";
+import { StaticChannelRoute } from "set";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/IAPUpsellActionSheet.tsx");
 
 export default function IAPUpsellActionSheet(arg0) {
   let markAsDismissed;
-  ({ guildId: closure_0, markAsDismissed } = arg0);
-  const importDefault = markAsDismissed;
-  const obj = { imageSource: importDefault(dependencyMap[6]) };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.header = intl.string(arg1(dependencyMap[7]).t.rBw4cE);
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[7]).t.mKHibc);
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj.cta = intl3.string(arg1(dependencyMap[7]).t.RzWDqY);
+  let require;
+  ({ guildId: require, markAsDismissed } = arg0);
+  const obj = { imageSource: markAsDismissed(15070) };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.header = intl.string(require(1212) /* getSystemLocale */.t.rBw4cE);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.mKHibc);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.cta = intl3.string(require(1212) /* getSystemLocale */.t.RzWDqY);
   obj.onCTAPress = function onCTAPress() {
-    callback(closure_2[8]).transitionTo(closure_3.CHANNEL(callback, constants.ROLE_SUBSCRIPTIONS));
-    markAsDismissed(constants2.UNKNOWN);
+    outer1_0(outer1_2[8]).transitionTo(outer1_3.CHANNEL(closure_0, outer1_4.ROLE_SUBSCRIPTIONS));
+    markAsDismissed(outer1_5.UNKNOWN);
   };
   obj.markAsDismissed = markAsDismissed;
-  return jsx(importDefault(dependencyMap[5]), obj);
+  return jsx(markAsDismissed(15069), { imageSource: markAsDismissed(15070) });
 };

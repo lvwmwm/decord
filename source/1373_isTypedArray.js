@@ -1,10 +1,10 @@
 // Module ID: 1373
-// Function ID: 16501
+// Function ID: 16502
 // Name: isTypedArray
-// Dependencies: []
+// Dependencies: [1374]
 
 // Module 1373 (isTypedArray)
 
 export default function isTypedArray(arg0) {
-  return require(dependencyMap[0])(arg0);
+  return require(1374)(arg0);
 };

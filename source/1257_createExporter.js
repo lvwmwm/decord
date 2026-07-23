@@ -1,14 +1,18 @@
 // Module ID: 1257
-// Function ID: 14129
+// Function ID: 14130
 // Name: createExporter
 // Dependencies: []
 
 // Module 1257 (createExporter)
-function(arg0) {
+const global = arg0;
+const dependencyMap = arg4;
+(function(arg0) {
   let _self = this;
+  let closure_0 = arg0;
   function createExporter(_self, exporter) {
-    _self = exporter;
-    if (_self !== _self) {
+    let closure_0 = _self;
+    let closure_1 = exporter;
+    if (_self !== closure_1) {
       const _Object = Object;
       if ("function" === typeof Object.create) {
         const _Object2 = Object;
@@ -19,15 +23,15 @@ function(arg0) {
     }
     return (arg0, arg1) => {
       let tmp2 = arg1;
-      if (arg1) {
-        tmp2 = arg1(arg0, arg1);
+      if (exporter) {
+        tmp2 = exporter(arg0, arg1);
       }
-      arg0[arg0] = tmp2;
+      closure_0[arg0] = tmp2;
       return tmp2;
     };
   }
-  if ("object" === typeof arg0) {
-    _self = arg0;
+  if ("object" === typeof closure_0) {
+    _self = closure_0;
   } else {
     _self = self;
     if ("object" === typeof self) {
@@ -36,30 +40,29 @@ function(arg0) {
       _self = {};
     }
   }
-  const arg4 = _self;
   if ("function" === typeof globalThis.define) {
     if (globalThis.define.amd) {
-      globalThis.define("tslib", [null], (_self) => {
-        _self(createExporter(_self, createExporter(_self)));
+      globalThis.define("tslib", ["exports"], (_self) => {
+        callback(createExporter(_self, createExporter(_self)));
       });
     }
   }
-  if ("object" === typeof arg4) {
-    if ("object" === typeof arg4.exports) {
-      arg0(createExporter(_self, createExporter(arg4.exports)));
+  if ("object" === typeof _self) {
+    if ("object" === typeof _self.exports) {
+      arg0(createExporter(_self, createExporter(_self.exports)));
     }
   }
   arg0(createExporter(_self));
-}((arg0) => {
+})((arg0) => {
   let fn = Object.setPrototypeOf;
   if (!fn) {
-    const _Array = Array;
-    fn = Object.create([]) instanceof Array && (arg0, arg1) => {
+    let _Array = Array;
+    fn = Object.create([]) instanceof Array && ((arg0, arg1) => {
       arg0.__proto__ = arg1;
-    };
-    const tmp = Object.create([]) instanceof Array && (arg0, arg1) => {
+    });
+    let tmp = Object.create([]) instanceof Array && ((arg0, arg1) => {
       arg0.__proto__ = arg1;
-    };
+    });
   }
   if (!fn) {
     fn = (arg0, obj) => {
@@ -70,16 +73,16 @@ function(arg0) {
           continue;
         } else {
           arg0[key10005] = arg1[key10005];
-          // continue
+          continue;
         }
         continue;
       }
     };
   }
-  arg0 = fn;
   let ownKeys = function __extends(arg0, Error) {
+    const lib = arg0;
     function __(tmpResult, arg1) {
-      this.constructor = tmpResult;
+      this.constructor = closure_0;
     }
     if ("function" !== typeof Error) {
       if (null !== Error) {
@@ -89,7 +92,7 @@ function(arg0) {
         throw typeError;
       }
     }
-    arg0(arg0, Error);
+    lib(arg0, Error);
     if (null === Error) {
       const _Object = Object;
       __ = Object.create(Error);
@@ -100,14 +103,14 @@ function(arg0) {
     }
     arg0.prototype = __;
   };
-  let closure_3 = Object.assign || (arg0) => {
+  let closure_3 = Object.assign || ((arg0) => {
     for (let num = 1; num < length; num = num + 1) {
       let tmp3 = arguments[num];
       let tmp4 = tmp3;
       let tmp5 = tmp2;
       let keys = Object.keys();
       if (keys !== undefined) {
-        let tmp2 = tmp5;
+        tmp2 = tmp5;
         let tmp7 = keys[tmp];
         while (tmp7 !== undefined) {
           let tmp8 = tmp7;
@@ -118,14 +121,14 @@ function(arg0) {
           } else {
             arg0[tmp7] = tmp3[tmp7];
             tmp5 = tmp7;
-            // continue
+            continue;
           }
           continue;
         }
       }
     }
     return arg0;
-  };
+  });
   function __rest(obj, arr) {
     obj = {};
     for (const key10007 in arg0) {
@@ -139,7 +142,7 @@ function(arg0) {
         continue;
       } else {
         obj[key10007] = arg0[key10007];
-        // continue
+        continue;
       }
       continue;
     }
@@ -215,13 +218,15 @@ function(arg0) {
     }
   }
   function __param(arg0, arg1) {
+    let closure_0 = arg0;
     let closure_1 = arg1;
     return (arg0, arg1) => {
-      arg1(arg0, arg1, arg0);
+      callback(arg0, arg1, closure_0);
     };
   }
   function __esDecorate(arg0, arg1, arg2, kind, arr) {
     let set;
+    let closure_0 = arg5;
     function accept(comma, arg1) {
       if (undefined !== comma) {
         if ("function" !== typeof comma) {
@@ -232,7 +237,6 @@ function(arg0) {
       }
       return comma;
     }
-    const ownKeys = accept;
     kind = kind.kind;
     let str = "get";
     if ("getter" !== kind) {
@@ -254,7 +258,7 @@ function(arg0) {
       }
     }
     if (arg1) {
-      let closure_1 = false;
+      let c1 = false;
       let diff = arg2.length - 1;
       if (diff >= 0) {
         while (true) {
@@ -269,11 +273,11 @@ function(arg0) {
             while (tmp12 !== undefined) {
               tmp9 = tmp12;
               obj[tmp9] = "access" === tmp12 ? {} : kind[tmp9];
-              // continue
+              continue;
             }
           }
           let tmp13 = tmp10;
-          let tmp7 = tmp10;
+          tmp7 = tmp10;
           let keys1 = Object.keys();
           if (keys1 !== undefined) {
             tmp7 = tmp13;
@@ -281,12 +285,12 @@ function(arg0) {
             while (tmp15 !== undefined) {
               tmp13 = tmp15;
               obj.access[tmp15] = kind.access[tmp15];
-              // continue
+              continue;
             }
           }
           obj.addInitializer = (arg0) => {
             let tmp = arg0;
-            if (closure_1) {
+            if (c1) {
               const _TypeError = TypeError;
               const typeError = new TypeError("Cannot add initializers after decoration has completed");
               throw typeError;
@@ -295,7 +299,7 @@ function(arg0) {
                 tmp = null;
               }
               accept(tmp);
-              arg5.push(tmp);
+              arr = arr.push(tmp);
             }
           };
           if (tmp5) {
@@ -348,17 +352,17 @@ function(arg0) {
             }
           }
           diff = diff - 1;
-          let tmp6 = tmp19;
+          tmp6 = tmp19;
         }
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Object expected");
+        let _TypeError = TypeError;
+        let typeError = new TypeError("Object expected");
         throw typeError;
       }
       if (tmp) {
         const _Object2 = Object;
         Object.defineProperty(tmp, kind.name, arg1);
       }
-      closure_1 = true;
+      c1 = true;
     } else if (tmp) {
       const _Object = Object;
       let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(tmp, kind.name);
@@ -425,70 +429,74 @@ function(arg0) {
   }
   function __awaiter(arg0, arg1, arg2, arg3) {
     let _Promise = arg2;
+    let closure_0 = arg0;
     let closure_1 = arg1;
-    let ownKeys = arg2;
     let closure_3 = arg3;
     if (!arg2) {
-      ownKeys = Promise;
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor(() => { ... });
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled(() => { ... });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor(() => { ... });
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled(() => { ... });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;
   }
   function __generator(arg0, arg1) {
+    let closure_0 = arg0;
     let closure_1 = arg1;
     function verb(arg0) {
+      let closure_0 = arg0;
       return (arg0) => {
-        const items = [arg0, arg0];
+        const items = [closure_0, arg0];
         let items2 = items;
-        if (closure_2) {
+        if (outer1_2) {
           const _TypeError = TypeError;
           const typeError = new TypeError("Generator is already executing.");
           throw typeError;
         } else {
-          if (closure_6) {
-            closure_6 = 0;
+          if (outer1_6) {
+            outer1_6 = 0;
             if (items2[0]) {
-              let closure_5 = 0;
+              let outer1_5 = 0;
             }
           }
-          if (!closure_5) {
+          if (!outer1_5) {
             if (5 & items2[0]) {
               throw items2[1];
             } else {
@@ -503,27 +511,27 @@ function(arg0) {
             }
           } else {
             while (true) {
-              closure_2 = 1;
-              let tmp4 = closure_3;
-              if (closure_3) {
+              outer1_2 = 1;
+              let tmp4 = outer1_3;
+              if (outer1_3) {
                 let tmp5 = items2;
                 if (2 & items2[0]) {
-                  let tmp11 = closure_3;
-                  let next = closure_3.return;
+                  let tmp11 = outer1_3;
+                  let next = outer1_3.return;
                 } else {
                   let tmp6 = items2;
-                  let iter = closure_3;
+                  let iter = outer1_3;
                   if (items2[0]) {
                     let _throw = iter.throw;
                     let num10 = _throw;
                     if (!_throw) {
-                      let tmp7 = closure_3;
-                      let _return = closure_3.return;
-                      let lib = _return;
+                      let tmp7 = outer1_3;
+                      let _return = outer1_3.return;
+                      let outer1_4 = _return;
                       if (_return) {
-                        let tmp8 = lib;
-                        let tmp9 = closure_3;
-                        let callResult = lib.call(closure_3);
+                        let tmp8 = outer1_4;
+                        let tmp9 = outer1_3;
+                        let callResult = outer1_4.call(outer1_3);
                       }
                       num10 = 0;
                     }
@@ -532,25 +540,25 @@ function(arg0) {
                     next = iter.next;
                   }
                 }
-                lib = next;
+                outer1_4 = next;
                 if (next) {
-                  let tmp12 = lib;
-                  let tmp13 = closure_3;
+                  let tmp12 = outer1_4;
+                  let tmp13 = outer1_3;
                   let tmp14 = items2;
-                  let iter2 = lib.call(closure_3, items2[1]);
-                  lib = iter2;
+                  let iter2 = outer1_4.call(outer1_3, items2[1]);
+                  outer1_4 = iter2;
                   if (!iter2.done) {
                     break;
                   }
                 }
               }
-              closure_3 = 0;
-              let tmp16 = lib;
-              if (lib) {
+              outer1_3 = 0;
+              let tmp16 = outer1_4;
+              if (outer1_4) {
                 let tmp17 = items2;
                 let items1 = [2 & items2[0], ];
-                let tmp18 = lib;
-                items1[1] = lib.value;
+                let tmp18 = outer1_4;
+                items1[1] = outer1_4.value;
                 items2 = items1;
               }
               let tmp19 = items2;
@@ -558,140 +566,140 @@ function(arg0) {
               if (0 !== first) {
                 if (1 !== first) {
                   if (4 === first) {
-                    let tmp57 = closure_5;
-                    closure_5.label = closure_5.label + 1;
+                    let tmp57 = outer1_5;
+                    outer1_5.label = outer1_5.label + 1;
                     obj = {};
                     let tmp58 = items2;
                     obj.value = items2[1];
                     let flag = false;
                     obj.done = false;
-                    lib = 0;
-                    closure_2 = 0;
+                    outer1_4 = 0;
+                    outer1_2 = 0;
                     tmp15 = obj;
                   } else {
                     if (5 === first) {
-                      let tmp55 = closure_5;
-                      closure_5.label = closure_5.label + 1;
+                      let tmp55 = outer1_5;
+                      outer1_5.label = outer1_5.label + 1;
                       let tmp56 = items2;
-                      closure_3 = items2[1];
-                      items2 = [0.229];
-                      lib = 0;
-                      closure_2 = 0;
+                      outer1_3 = items2[1];
+                      items2 = [0];
+                      outer1_4 = 0;
+                      outer1_2 = 0;
                     } else if (7 === first) {
-                      let tmp52 = closure_5;
-                      let ops = closure_5.ops;
+                      let tmp52 = outer1_5;
+                      let ops = outer1_5.ops;
                       items2 = ops.pop();
-                      let tmp53 = closure_5;
-                      let trys = closure_5.trys;
+                      let tmp53 = outer1_5;
+                      let trys = outer1_5.trys;
                       let arr = trys.pop();
-                      lib = 0;
-                      closure_2 = 0;
+                      outer1_4 = 0;
+                      outer1_2 = 0;
                     } else {
-                      let tmp76 = closure_5;
-                      let trys1 = closure_5.trys;
-                      lib = trys1;
+                      let tmp76 = outer1_5;
+                      let trys1 = outer1_5.trys;
+                      outer1_4 = trys1;
                       let tmp77 = trys1.length > 0;
                       let tmp22 = tmp77;
                       if (tmp77) {
-                        let tmp21 = lib;
-                        tmp22 = lib[closure_4.length - 1];
+                        let tmp21 = outer1_4;
+                        tmp22 = outer1_4[outer1_4.length - 1];
                       }
-                      lib = tmp22;
+                      outer1_4 = tmp22;
                       if (tmp22) {
                         let tmp25 = items2;
                         if (3 !== items2[0]) {
                           let tmp31 = items2;
                           if (6 === items2[0]) {
-                            let tmp32 = closure_5;
-                            let tmp33 = lib;
-                            if (closure_5.label < lib[1]) {
-                              let tmp47 = closure_5;
-                              let tmp48 = lib;
-                              closure_5.label = lib[1];
+                            let tmp32 = outer1_5;
+                            let tmp33 = outer1_4;
+                            if (outer1_5.label < outer1_4[1]) {
+                              let tmp47 = outer1_5;
+                              let tmp48 = outer1_4;
+                              outer1_5.label = outer1_4[1];
                               let tmp49 = items2;
-                              lib = items2;
+                              outer1_4 = items2;
                             }
                           }
-                          let tmp34 = lib;
-                          if (lib) {
-                            let tmp35 = closure_5;
-                            let tmp36 = lib;
-                            if (closure_5.label < lib[2]) {
-                              let tmp42 = closure_5;
-                              let tmp43 = lib;
-                              closure_5.label = lib[2];
-                              let tmp44 = closure_5;
-                              let ops1 = closure_5.ops;
+                          let tmp34 = outer1_4;
+                          if (outer1_4) {
+                            let tmp35 = outer1_5;
+                            let tmp36 = outer1_4;
+                            if (outer1_5.label < outer1_4[2]) {
+                              let tmp42 = outer1_5;
+                              let tmp43 = outer1_4;
+                              outer1_5.label = outer1_4[2];
+                              let tmp44 = outer1_5;
+                              let ops1 = outer1_5.ops;
                               let tmp45 = items2;
                               arr = ops1.push(items2);
                             }
                           }
-                          let tmp37 = lib;
-                          if (lib[2]) {
-                            let tmp38 = closure_5;
-                            let ops2 = closure_5.ops;
+                          let tmp37 = outer1_4;
+                          if (outer1_4[2]) {
+                            let tmp38 = outer1_5;
+                            let ops2 = outer1_5.ops;
                             let arr1 = ops2.pop();
                           }
-                          let tmp40 = closure_5;
-                          let trys2 = closure_5.trys;
+                          let tmp40 = outer1_5;
+                          let trys2 = outer1_5.trys;
                           let arr2 = trys2.pop();
-                          lib = 0;
-                          closure_2 = 0;
+                          outer1_4 = 0;
+                          outer1_2 = 0;
                         } else {
-                          let tmp26 = lib;
-                          if (lib) {
+                          let tmp26 = outer1_4;
+                          if (outer1_4) {
                             let tmp27 = items2;
-                            let tmp28 = lib;
-                            if (items2[1] > lib[0]) {
+                            let tmp28 = outer1_4;
+                            if (items2[1] > outer1_4[0]) {
                               let tmp29 = items2;
-                              let tmp30 = lib;
+                              let tmp30 = outer1_4;
                             }
                           }
-                          let tmp50 = closure_5;
+                          let tmp50 = outer1_5;
                           let tmp51 = items2;
-                          closure_5.label = items2[1];
+                          outer1_5.label = items2[1];
                         }
-                        let tmp60 = callback;
-                        let tmp61 = arg0;
-                        let tmp62 = closure_5;
-                        let callResult1 = callback.call(arg0, closure_5);
-                        lib = 0;
-                        closure_2 = 0;
+                        let tmp60 = outer1_1;
+                        let tmp61 = closure_0;
+                        let tmp62 = outer1_5;
+                        let callResult1 = outer1_1.call(closure_0, outer1_5);
+                        outer1_4 = 0;
+                        outer1_2 = 0;
                         while (true) {
-                          let items3 = ["discord_protos.discord_users.v1.DebugSettings", __exception];
+                          let items3 = [6, __exception];
                           let tmp64 = items3;
-                          closure_3 = 0;
-                          // continue
+                          outer1_3 = 0;
+                          continue;
                         }
                       } else {
                         let tmp23 = items2;
                         if (6 === items2[0]) {
-                          closure_5 = 0;
-                          lib = 0;
-                          closure_2 = 0;
+                          outer1_5 = 0;
+                          outer1_4 = 0;
+                          outer1_2 = 0;
                         } else {
                           let tmp24 = items2;
                         }
                       }
                     }
-                    let tmp65 = closure_6;
-                    if (closure_6) {
-                      closure_6 = 0;
+                    let tmp65 = outer1_6;
+                    if (outer1_6) {
+                      outer1_6 = 0;
                       let tmp66 = items2;
                       if (items2[0]) {
-                        closure_5 = 0;
+                        outer1_5 = 0;
                       }
                     }
-                    let tmp67 = closure_5;
+                    let tmp67 = outer1_5;
                   }
                 }
               }
               let tmp59 = items2;
-              lib = items2;
+              outer1_4 = items2;
             }
-            tmp15 = lib;
-            lib = 0;
-            closure_2 = 0;
+            tmp15 = outer1_4;
+            outer1_4 = 0;
+            outer1_2 = 0;
           }
           return tmp15;
         }
@@ -700,7 +708,7 @@ function(arg0) {
     let obj = {
       label: 0,
       sent() {
-        if (1 & closure_4[0]) {
+        if (1 & dependencyMap[0]) {
           throw tmp;
         } else {
           return tmp;
@@ -709,19 +717,17 @@ function(arg0) {
       trys: [],
       ops: []
     };
-    const __decorate = obj;
     obj = Object.create("function" === typeof globalThis.Iterator ? globalThis.Iterator : Object.prototype);
-    const __param = obj;
     obj.next = verb(0);
-    __param.throw = verb(1);
-    __param.return = verb(2);
+    obj.throw = verb(1);
+    obj.return = verb(2);
     if ("function" === typeof Symbol) {
       const _Symbol = Symbol;
-      __param[Symbol.iterator] = function() {
+      obj[Symbol.iterator] = function() {
         return this;
       };
     }
-    return __param;
+    return obj;
   }
   function __exportStar(obj, exports) {
     for (const key10007 in arg0) {
@@ -734,16 +740,17 @@ function(arg0) {
       if (callResult) {
         continue;
       } else {
-        let tmp2 = closure_30;
-        let tmp3 = closure_30(arg1, arg0, key10007);
-        // continue
+        let tmp2 = callback2;
+        let tmp3 = callback2(arg1, arg0, key10007);
+        continue;
       }
       continue;
     }
   }
-  let closure_30 = Object.create ? (arg0, arg1, arg2, arg3) => {
+  let closure_30 = Object.create ? ((arg0, arg1, arg2, arg3) => {
     let __esModule = arg1;
     let tmp = arg3;
+    let closure_0 = arg1;
     let closure_1 = arg2;
     if (undefined === arg3) {
       tmp = arg2;
@@ -754,7 +761,7 @@ function(arg0) {
         const obj = {
           enumerable: true,
           get() {
-                return arg1[closure_1];
+                return table[closure_1];
               }
         };
         ownPropertyDescriptor = obj;
@@ -767,14 +774,15 @@ function(arg0) {
     } else {
       tmp3 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
     }
-  } : (arg0, arg1, arg2, arg3) => {
+  }) : ((arg0, arg1, arg2, arg3) => {
     let tmp = arg3;
     if (undefined === arg3) {
       tmp = arg2;
     }
     arg0[tmp] = arg1[arg2];
-  };
+  });
   function __values(arg0) {
+    const lib = arg0;
     let iterator = "function" === typeof Symbol;
     if (iterator) {
       const _Symbol = Symbol;
@@ -782,14 +790,14 @@ function(arg0) {
     }
     let obj = iterator;
     if (iterator) {
-      obj = fn[iterator];
+      obj = lib[iterator];
     }
-    let closure_1 = 0;
+    let c1 = 0;
     if (obj) {
-      return obj.call(fn);
+      return obj.call(lib);
     } else {
-      if (fn) {
-        if ("number" === typeof fn.length) {
+      if (lib) {
+        if ("number" === typeof lib.length) {
           obj = {
             next() {
                     let tmp = length;
@@ -820,7 +828,7 @@ function(arg0) {
       throw _TypeError;
     }
   }
-  function __read(arg0, arg1) {
+  function __read(arg0) {
     let diff = arg1;
     let tmp3 = "function" === typeof Symbol;
     if (tmp3) {
@@ -869,7 +877,7 @@ function(arg0) {
         } else {
           let tmp20 = iter;
           tmp19 = !iter.done;
-          // break
+          break;
         }
         let tmp21 = tmp19;
         if (tmp19) {
@@ -902,8 +910,8 @@ function(arg0) {
     let tmp = items;
     if (0 < arguments.length) {
       do {
-        let tmp2 = closure_16;
-        items = items.concat(closure_16(arguments[num]));
+        let tmp2 = __read;
+        items = items.concat(__read(arguments[num]));
         num = num + 1;
         tmp = items;
         length = arguments.length;
@@ -962,7 +970,7 @@ function(arg0) {
             tmp5 = callResult;
           }
           num3 = num3 + 1;
-          let tmp3 = tmp5;
+          tmp3 = tmp5;
           let callResult1 = tmp5;
         } while (num3 < length);
       }
@@ -973,39 +981,42 @@ function(arg0) {
     }
     return items1.concat(callResult1);
   }
-  function __await(v) {
+  function __await(closure_0) {
     const self = this;
     if (this instanceof __await) {
-      self.v = v;
+      self.v = closure_0;
       let tmp5 = self;
     } else {
       const prototype = __await.prototype;
-      tmp5 = new __await(v);
+      tmp5 = new __await(closure_0);
     }
     return tmp5;
   }
   function __asyncGenerator(arg0, arg1, apply) {
     let items = arg1;
     function verb(next, arg1) {
-      if (closure_1[next]) {
-        obj[next] = (arg0) => new Promise((arg0, arg1) => {
-          const items = [arg0, arg0, arg0, arg1];
-          if (arr.push(items) <= 1) {
-            callback(arg0, arg0);
-          }
-        });
+      if (dependencyMap[next]) {
+        obj[next] = (arg0) => {
+          let closure_0 = arg0;
+          return new Promise((arg0, arg1) => {
+            const items = [closure_0, closure_0, arg0, arg1];
+            if (outer2_2.push(items) <= 1) {
+              outer2_3(closure_0, closure_0);
+            }
+          });
+        };
         if (arg1) {
           obj[next] = arg1(obj[next]);
         }
       }
     }
     function resume(arg0, arg1) {
-      const iter = closure_1[arg0](arg1);
-      if (iter.value instanceof closure_20) {
+      const iter = dependencyMap[arg0](arg1);
+      if (iter.value instanceof __await) {
         const resolved = Promise.resolve(iter.value.v);
         resolved.then(fulfill, reject);
       } else {
-        settle(closure_2[0][2], iter);
+        settle(arr[0][2], iter);
       }
     }
     function fulfill(arg0) {
@@ -1016,7 +1027,7 @@ function(arg0) {
     }
     function settle(arg0, arg1) {
       arg0(arg1);
-      const arr = arr.shift();
+      arr = arr.shift();
       if (arr.length) {
         resume(arr[0][0], arr[0][1]);
       }
@@ -1031,9 +1042,10 @@ function(arg0) {
       verb("next");
       verb("throw");
       verb("return", function awaitReturn(arg0) {
+        let closure_0 = arg0;
         return (arg0) => {
           const resolved = Promise.resolve(arg0);
-          return resolved.then(arg0, closure_5);
+          return resolved.then(closure_0, outer1_5);
         };
       });
       const _Symbol = Symbol;
@@ -1048,27 +1060,29 @@ function(arg0) {
     }
   }
   function __asyncDelegator(arg0) {
+    let closure_0 = arg0;
     function verb(next, arg1) {
       let fn = arg1;
-      if (next[next]) {
+      const table = next;
+      let closure_1 = arg1;
+      if (table[next]) {
         fn = (arg0) => {
-          closure_2 = !closure_2;
-          if (closure_2) {
+          outer1_2 = !outer1_2;
+          if (outer1_2) {
             let tmp5 = arg0;
-            if (arg1) {
-              tmp5 = arg1(arg0);
+            if (callback) {
+              tmp5 = callback(arg0);
             }
             let obj = tmp5;
           } else {
-            obj = { value: callback(arg0[closure_0](arg0)), done: false };
+            obj = { value: __await(next[next](arg0)), done: false };
           }
           return obj;
         };
       }
-      arg1[next] = fn;
+      closure_1[next] = fn;
     }
-    const obj = {};
-    let closure_1 = obj;
+    let obj = {};
     verb("next");
     verb("throw", (arg0) => {
       throw arg0;
@@ -1082,16 +1096,18 @@ function(arg0) {
   function __asyncValues(arg0) {
     let closure_0 = arg0;
     function verb(next) {
-      let closure_0 = next;
-      let fn = closure_0[next];
+      const table = next;
+      let fn = table[next];
       if (fn) {
-        fn = (arg0) => new Promise((arg0, arg1) => {
-          const iter = arg0[closure_0](arg0);
-          arg0 = iter;
-          function settle() { ... }(arg0, arg1, iter.done, arg0.value);
-        });
+        fn = (arg0) => {
+          let closure_0 = arg0;
+          return new Promise((arg0, arg1) => {
+            iter = dependencyMap[dependencyMap](iter);
+            (function settle() { ... })(arg0, arg1, iter.done, iter.value);
+          });
+        };
       }
-      callResult[next] = fn;
+      closure_1[next] = fn;
     }
     if (Symbol.asyncIterator) {
       const _Symbol = Symbol;
@@ -1126,13 +1142,13 @@ function(arg0) {
     }
     return arg0;
   }
-  let closure_1 = Object.create ? (arg0, value) => {
+  let closure_1 = Object.create ? ((arg0, value) => {
     Object.defineProperty(arg0, "default", { enumerable: true, value });
-  } : (arg0, arg1) => {
+  }) : ((arg0, arg1) => {
     arg0.default = arg1;
-  };
+  });
   ownKeys = function ownKeys(arg0) {
-    const tmp = Object.getOwnPropertyNames || (obj) => {
+    let tmp = Object.getOwnPropertyNames || ((obj) => {
       const items = [];
       for (const key10005 in arg0) {
         let tmp = key10005;
@@ -1141,12 +1157,12 @@ function(arg0) {
           continue;
         } else {
           items[items.length] = key10005;
-          // continue
+          continue;
         }
         continue;
       }
       return items;
-    };
+    });
     const ownKeys = tmp;
     return tmp(arg0);
   };
@@ -1159,15 +1175,11 @@ function(arg0) {
     const obj = {};
     if (null != __esModule) {
       const arr = ownKeys(__esModule);
-      let num = 0;
-      if (0 < arr.length) {
-        do {
-          if ("default" !== arr[num]) {
-            let tmp2 = closure_30;
-            let tmp3 = closure_30(obj, __esModule, arr[num]);
-          }
-          num = num + 1;
-        } while (num < arr.length);
+      for (let num = 0; num < arr.length; num = num + 1) {
+        if ("default" !== arr[num]) {
+          let tmp2 = callback2;
+          let tmp3 = callback2(obj, __esModule, arr[num]);
+        }
       }
     }
     callback(obj, __esModule);
@@ -1314,33 +1326,34 @@ function(arg0) {
     }
     return value;
   }
-  closure_3 = "function" === typeof globalThis.SuppressedError ? globalThis.SuppressedError : (error, suppressed) => {
+  closure_3 = "function" === typeof globalThis.SuppressedError ? globalThis.SuppressedError : ((error, suppressed) => {
     error = new Error(arg2);
     error.name = "SuppressedError";
     error.error = error;
     error.suppressed = suppressed;
     return error;
-  };
+  });
   function __disposeResources(arg0) {
+    let closure_0 = arg0;
     function fail(reconnect, error, arg2) {
       let tmp2 = reconnect;
-      if (reconnect.hasError) {
+      if (closure_0.hasError) {
         const prototype = fail.prototype;
-        tmp2 = new fail(reconnect, reconnect.error, "An error was suppressed during disposal.");
+        tmp2 = new fail(reconnect, closure_0.error, "An error was suppressed during disposal.");
       }
-      reconnect.error = tmp2;
-      reconnect.hasError = true;
+      closure_0.error = tmp2;
+      closure_0.hasError = true;
     }
-    let closure_2 = 0;
-    function next(self) {
-      const stack = self.stack;
+    let c2 = 0;
+    function next() {
+      const stack = closure_0.stack;
       let arr = stack.pop();
       if (arr) {
         while (true) {
           let tmp2 = arr;
           if (!arr.async) {
-            let tmp3 = closure_2;
-            if (1 === closure_2) {
+            let tmp3 = c2;
+            if (1 === c2) {
               break;
             }
           }
@@ -1352,51 +1365,50 @@ function(arg0) {
             let callResult = dispose.call(arr.value);
             let tmp14 = arr;
             if (arr.async) {
-              let tmp15 = closure_2;
+              let tmp15 = c2;
               let num2 = 2;
-              closure_2 = closure_2 | 2;
+              c2 = c2 | 2;
               let tmp16 = globalThis;
               let _Promise2 = Promise;
               let tmp17 = callResult;
               let resolved = Promise.resolve(callResult);
               let tmp18 = next;
               return resolved.then(next, (arg0) => {
-                callback(arg0);
-                return callback2();
+                outer1_3(arg0);
+                return outer1_4();
               });
             }
           } else {
-            let tmp10 = closure_2;
-            closure_2 = closure_2 | 1;
+            let tmp10 = c2;
+            c2 = c2 | 1;
           }
           do {
             let tmp19 = closure_0;
             let stack1 = closure_0.stack;
             arr = stack1.pop();
-            closure_1 = arr;
           } while (!arr);
         }
-        closure_2 = 0;
-        const stack2 = self.stack;
+        c2 = 0;
+        const stack2 = closure_0.stack;
         stack2.push(arr);
         const resolved1 = Promise.resolve();
         return resolved1.then(next);
       }
-      if (1 === closure_2) {
-        if (self.hasError) {
-          let rejectResult = _Promise3.reject(self.error);
+      if (1 === c2) {
+        if (closure_0.hasError) {
+          let rejectResult = _Promise3.reject(closure_0.error);
         } else {
           rejectResult = _Promise3.resolve();
         }
         return rejectResult;
-      } else if (self.hasError) {
-        throw self.error;
+      } else if (closure_0.hasError) {
+        throw closure_0.error;
       }
     }
-    const __rest = next;
     return next();
   }
   function __rewriteRelativeImportExtension(str) {
+    let closure_0 = arg1;
     let replaced = str;
     if ("string" === typeof str) {
       replaced = str;
@@ -1404,7 +1416,7 @@ function(arg0) {
         replaced = str.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, (arg0, arg1, arg2, arg3, arg4) => {
           if (arg1) {
             let str3 = ".js";
-            if (arg1) {
+            if (closure_0) {
               str3 = ".jsx";
             }
             let text = str3;
@@ -1420,7 +1432,7 @@ function(arg0) {
           return text;
         });
       }
-      const obj = /^\.\.?\//;
+      obj = /^\.\.?\//;
     }
     return replaced;
   }

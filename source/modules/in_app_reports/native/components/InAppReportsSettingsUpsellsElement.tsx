@@ -1,20 +1,35 @@
-// Module ID: 12227
-// Function ID: 93845
+// Module ID: 12341
+// Function ID: 95996
 // Name: SettingsUpsellsTableRow
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1348, 653, 33, 4130, 689, 4559, 7604, 12335, 5791, 566, 7612, 5503, 1212, 5459, 5796, 4324, 2]
 // Exports: default
 
-// Module 12227 (SettingsUpsellsTableRow)
+// Module 12341 (SettingsUpsellsTableRow)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function SettingsUpsellsTableRow(arg0) {
   let description;
   let disabledTitle;
+  let importDefault;
+  let require;
   let title;
-  ({ onButtonClick: closure_0, trackSettingsUpsellsAction: closure_1 } = arg0);
+  ({ onButtonClick: require, trackSettingsUpsellsAction: importDefault } = arg0);
   ({ title, disabledTitle, description } = arg0);
   const tmp = callback(React.useState(false), 2);
-  let closure_2 = tmp[1];
-  importDefault(closure_2[8])(() => {
-    callback2(callback(closure_2[9]).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
+  const dependencyMap = tmp[1];
+  importDefault(4559)(() => {
+    callback2(outer1_0(7604).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
   });
   const obj = {
     title,
@@ -23,85 +38,75 @@ function SettingsUpsellsTableRow(arg0) {
     disabled: tmp[0],
     onPress() {
       callback();
-      callback3(true);
-      callback2(callback(callback3[9]).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
+      dependencyMap(true);
+      callback2(outer1_0(7604).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
     },
-    icon: callback2(arg1(closure_2[11]).SettingsIcon, {})
+    icon: callback2(require(5791) /* SettingsIcon */.SettingsIcon, {})
   };
-  return callback2(importDefault(closure_2[10]), obj);
+  return callback2(importDefault(12335), obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16 };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[5]);
-obj.settingsContainer = { width: "100%", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-const obj1 = { width: "100%", marginBottom: importDefault(dependencyMap[7]).space.PX_8 };
-obj.goToSettingsText = { marginTop: importDefault(dependencyMap[7]).space.PX_4 };
-let closure_11 = obj.createStyles(obj);
-const obj2 = { marginTop: importDefault(dependencyMap[7]).space.PX_4 };
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsSettingsUpsellsElement.tsx");
+({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = ME);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.settingsContainer = { width: "100%", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { width: "100%", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.goToSettingsText = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsSettingsUpsellsElement.tsx");
 
 export default function SettingsUpsellElement(settingsUpsells) {
+  let importDefault;
   let reportId;
   settingsUpsells = settingsUpsells.settingsUpsells;
-  const arg1 = settingsUpsells;
-  ({ channelId: closure_1, reportId } = settingsUpsells);
-  const dependencyMap = reportId;
+  ({ channelId: importDefault, reportId } = settingsUpsells);
   const reportType = settingsUpsells.reportType;
-  let closure_3 = reportType;
   const reportSubType = settingsUpsells.reportSubType;
-  let closure_4 = reportSubType;
   let closure_5;
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[12]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(closure_1));
-  let obj1 = arg1(dependencyMap[13]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = settingsUpsells(reportId[12]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(closure_1));
+  let obj1 = settingsUpsells(reportId[13]);
   let type;
   if (null != stateFromStores) {
     type = stateFromStores.type;
   }
   const settingsUpsellsConfigs = obj1.useSettingsUpsellsConfigs(settingsUpsells, type);
-  let obj2 = arg1(dependencyMap[9]);
+  let obj2 = settingsUpsells(reportId[9]);
   closure_5 = obj2.useTrackSettingsUpsellsAction(reportType, reportSubType, reportId);
   let tmp4 = null;
   if (0 !== settingsUpsellsConfigs.length) {
     obj = { style: tmp.container };
     obj = { style: tmp.settingsContainer };
     obj1 = {};
-    const intl = arg1(dependencyMap[15]).intl;
-    obj1.title = intl.string(arg1(dependencyMap[15]).t.1yxTIJ);
+    const intl = settingsUpsells(reportId[15]).intl;
+    obj1.title = intl.string(settingsUpsells(reportId[15]).t["1yxTIJ"]);
     obj1.hasIcons = true;
     obj1.children = settingsUpsellsConfigs.map((getTitle) => {
       let getDescription;
       let getDisabledTitle;
       let onApply;
       ({ getDisabledTitle, getDescription, onApply } = getTitle);
-      return callback3(closure_12, { title: getTitle.getTitle(), disabledTitle: getDisabledTitle(), description: getDescription(), onButtonClick: onApply, trackSettingsUpsellsAction: callback2(settingsUpsells[arg1]) }, arg1);
+      return outer1_9(outer1_12, { title: getTitle.getTitle(), disabledTitle: getDisabledTitle(), description: getDescription(), onButtonClick: onApply, trackSettingsUpsellsAction: callback(settingsUpsells[arg1]) }, arg1);
     });
-    obj.children = callback2(arg1(dependencyMap[14]).TableRowGroup, obj1);
+    obj.children = callback2(settingsUpsells(reportId[14]).TableRowGroup, obj1);
     const items1 = [callback2(closure_5, obj), ];
     obj2 = { variant: "text-sm/medium", style: tmp.goToSettingsText };
-    const intl2 = arg1(dependencyMap[15]).intl;
+    const intl2 = settingsUpsells(reportId[15]).intl;
     const obj3 = {
       goToSettingsHook() {
           let obj = settingsUpsells(reportId[17]);
-          obj = { screen: constants2.CONTENT_AND_SOCIAL };
+          obj = { screen: outer1_8.CONTENT_AND_SOCIAL };
           obj.openUserSettings(obj);
           obj = { report_id: reportId, report_type: reportType.name, report_subtype: reportSubType, action: settingsUpsells(reportId[9]).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED };
-          callback(reportId[18]).trackWithMetadata(constants.IAR_SETTINGS_UPSELLS_ACTION, obj);
+          outer1_1(reportId[18]).trackWithMetadata(outer1_7.IAR_SETTINGS_UPSELLS_ACTION, obj);
         }
     };
-    obj2.children = intl2.format(arg1(dependencyMap[15]).t.u7mo+k, obj3);
-    items1[1] = callback2(arg1(dependencyMap[16]).TextWithIOSLinkWorkaround, obj2);
+    obj2.children = intl2.format(settingsUpsells(reportId[15]).t["u7mo+k"], obj3);
+    items1[1] = callback2(settingsUpsells(reportId[16]).TextWithIOSLinkWorkaround, obj2);
     obj.children = items1;
     tmp4 = callback3(closure_5, obj);
   }

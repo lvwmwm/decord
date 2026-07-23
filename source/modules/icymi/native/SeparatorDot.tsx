@@ -1,23 +1,24 @@
-// Module ID: 15124
-// Function ID: 114117
+// Module ID: 15239
+// Function ID: 116286
 // Name: SeparatorDot
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 // Exports: default
 
-// Module 15124 (SeparatorDot)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Null": null, "Null": null, borderRadius: importDefault(dependencyMap[4]).radii.round, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG };
-obj.separatorDot = obj;
-let closure_2 = obj.createStyles(obj);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/icymi/native/SeparatorDot.tsx");
+// Module 15239 (SeparatorDot)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: 4, height: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+_createForOfIteratorHelperLoose.separatorDot = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/icymi/native/SeparatorDot.tsx");
 
 export default function SeparatorDot() {
   const obj = {};
-  const items = [callback().separatorDot];
+  const items = [_createForOfIteratorHelperLoose().separatorDot];
   obj.style = items;
-  return <View {...obj} />;
+  return <View />;
 };

@@ -1,29 +1,29 @@
-// Module ID: 10822
-// Function ID: 84040
+// Module ID: 10832
+// Function ID: 84089
 // Name: openOAuth2Modal
-// Dependencies: []
+// Dependencies: [653, 10621, 675, 8336, 3827, 10833, 483, 4337, 9995, 1934, 8310, 2]
 // Exports: installApplication, installPrivateChannelIntegration
 
-// Module 10822 (openOAuth2Modal)
+// Module 10832 (openOAuth2Modal)
+import { AnalyticEvents } from "ME";
+import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY";
+
 function openOAuth2Modal(arg0) {
-  const require = arg0;
-  let obj = importDefault(dependencyMap[7]);
+  const _require = arg0;
+  let obj = importDefault(4337);
   obj.popWithKey(closure_5);
   obj = {};
-  const obj2 = importDefault(dependencyMap[7]);
+  const obj2 = importDefault(4337);
   const merged = Object.assign(arg0);
   obj["dismissOAuthModal"] = function dismissOAuthModal() {
-    if (null != arg0.dismissOAuthModal) {
-      arg0.dismissOAuthModal();
+    if (null != closure_0.dismissOAuthModal) {
+      closure_0.dismissOAuthModal();
     }
-    callback(closure_3[7]).popWithKey(closure_5);
+    outer1_1(outer1_3[7]).popWithKey(outer1_5);
   };
-  obj2.pushLazy(require(dependencyMap[9])(dependencyMap[8], dependencyMap.paths), obj, closure_5);
+  obj2.pushLazy(_require(1934)(9995, dependencyMap.paths), obj, closure_5);
 }
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-let closure_5 = require(dependencyMap[1]).OAUTH2_AUTHORIZE_MODAL_KEY;
-const _module = require(dependencyMap[11]);
-const result = _module.fileFinishedImporting("utils/native/ApplicationUtils.tsx");
+const result = require("expandLocation").fileFinishedImporting("utils/native/ApplicationUtils.tsx");
 
 export const installApplication = function installApplication(arg0) {
   let applicationId;
@@ -31,23 +31,23 @@ export const installApplication = function installApplication(arg0) {
   let customInstallUrl;
   let disableGuildSelect;
   let guildId;
+  let importDefault;
   let installParams;
   let integrationTypesConfig;
   let source;
   ({ applicationId, customInstallUrl } = arg0);
-  const require = customInstallUrl;
-  ({ installParams, integrationTypesConfig, guildId, channelId, disableGuildSelect, source, oauth2Callback: closure_1 } = arg0);
+  ({ installParams, integrationTypesConfig, guildId, channelId, disableGuildSelect, source, oauth2Callback: importDefault } = arg0);
   if (null != customInstallUrl) {
     let obj = { application_id: applicationId, auth_type: "custom_url", source, device_platform: "mobile_native" };
-    importDefault(dependencyMap[2]).track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj);
-    const obj6 = importDefault(dependencyMap[2]);
+    importDefault(675).track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj);
+    const obj6 = importDefault(675);
     obj = {
       href: customInstallUrl,
       onConfirm() {
-          callback(closure_3[4]).openURL(customInstallUrl);
+          outer1_1(outer1_3[4]).openURL(customInstallUrl);
         }
     };
-    return require(dependencyMap[3]).handleClick(obj);
+    return customInstallUrl(8336).handleClick(obj);
   } else {
     if (null != integrationTypesConfig) {
       const _Object = Object;
@@ -67,7 +67,7 @@ export const installApplication = function installApplication(arg0) {
         }
         return tmp2;
       })) {
-        let obj2 = importDefault(dependencyMap[2]);
+        let obj2 = importDefault(675);
         let obj1 = { application_id: applicationId, auth_type: "in_app", source, device_platform: "mobile_native" };
         obj2.track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj1);
         obj2 = {
@@ -76,7 +76,7 @@ export const installApplication = function installApplication(arg0) {
           channelId,
           disableGuildSelect,
           callback(arg0) {
-                  callback(closure_3[5])(arg0);
+                  outer1_1(outer1_3[5])(arg0);
                   if (null != callback) {
                     callback(arg0);
                   }
@@ -87,7 +87,7 @@ export const installApplication = function installApplication(arg0) {
     }
     if (null != installParams) {
       const obj3 = { application_id: applicationId, auth_type: "in_app", source, device_platform: "mobile_native" };
-      importDefault(dependencyMap[2]).track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj3);
+      importDefault(675).track(AnalyticEvents.APPLICATION_ADD_TO_SERVER_CLICKED, obj3);
       const obj4 = { clientId: applicationId, guildId, channelId, disableGuildSelect };
       let scopes;
       if (null != installParams) {
@@ -100,7 +100,7 @@ export const installApplication = function installApplication(arg0) {
       }
       let deserializeResult;
       if (null != permissions) {
-        obj1 = importAll(dependencyMap[6]);
+        obj1 = importAll(483);
         let permissions1;
         if (null != installParams) {
           permissions1 = installParams.permissions;
@@ -109,13 +109,13 @@ export const installApplication = function installApplication(arg0) {
       }
       obj4.permissions = deserializeResult;
       obj4.callback = function callback(arg0) {
-        callback(closure_3[5])(arg0);
+        outer1_1(outer1_3[5])(arg0);
         if (null != callback) {
           callback(arg0);
         }
       };
       openOAuth2Modal(obj4);
-      const obj10 = importDefault(dependencyMap[2]);
+      const obj10 = importDefault(675);
       const tmp24 = openOAuth2Modal;
     }
   }
@@ -126,15 +126,15 @@ export const installPrivateChannelIntegration = function installPrivateChannelIn
   let callback;
   let channelId;
   ({ applicationId, channelId, callback } = arg0);
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(4337);
   obj = { clientId: applicationId };
-  const items = [require(dependencyMap[10]).OAuth2Scopes.APPLICATIONS_COMMANDS];
+  const items = [require(8310) /* set */.OAuth2Scopes.APPLICATIONS_COMMANDS];
   obj.scopes = items;
   obj.channelId = channelId;
   obj.dismissOAuthModal = function dismissOAuthModal() {
-    return callback(closure_3[7]).popWithKey(closure_5);
+    return outer1_1(outer1_3[7]).popWithKey(outer1_5);
   };
   obj.disableGuildSelect = true;
   obj.callback = callback;
-  obj.pushLazy(require(dependencyMap[9])(dependencyMap[8], dependencyMap.paths), obj, closure_5);
+  obj.pushLazy(require(1934) /* maybeLoadBundle */(9995, dependencyMap.paths), obj, closure_5);
 };

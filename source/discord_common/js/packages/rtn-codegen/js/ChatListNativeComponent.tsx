@@ -1,14 +1,14 @@
-// Module ID: 10016
-// Function ID: 77423
+// Module ID: 10024
+// Function ID: 77463
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42, 2]
 
-// Module 10016 (__INTERNAL_VIEW_CONFIG)
+// Module 10024 (__INTERNAL_VIEW_CONFIG)
+import get from "get";
+
 const obj = { uiViewClassName: "DCDChatList", validAttributes: { floatingChatInputEnabled: true } };
-const _module = require(dependencyMap[0]);
-const value = _module.get("DCDChatList", () => obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ChatListNativeComponent.tsx");
+const value = get.get("DCDChatList", () => obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ChatListNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

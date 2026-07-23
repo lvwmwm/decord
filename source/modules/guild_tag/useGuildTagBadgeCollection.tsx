@@ -1,54 +1,53 @@
-// Module ID: 16163
-// Function ID: 124570
+// Module ID: 16280
+// Function ID: 126743
 // Name: useGuildTagBadgeCollection
-// Dependencies: []
+// Dependencies: [31, 8439, 4017, 7632, 566, 2]
 // Exports: default
 
-// Module 16163 (useGuildTagBadgeCollection)
-const useMemo = require(dependencyMap[0]).useMemo;
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const _module = require(dependencyMap[3]);
-({ BADGE_PACKS: closure_5, BADGES: closure_6, BADGE_PACK_TO_SKU_ID: closure_7 } = _module);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/guild_tag/useGuildTagBadgeCollection.tsx");
+// Module 16280 (useGuildTagBadgeCollection)
+import { useMemo } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import items from "items";
+
+let closure_5;
+let closure_6;
+let closure_7;
+({ BADGE_PACKS: closure_5, BADGES: closure_6, BADGE_PACK_TO_SKU_ID: closure_7 } = items);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_tag/useGuildTagBadgeCollection.tsx");
 
 export default function useGuildTagBadgeCollection() {
-  const items = [closure_3];
-  const stateFromStores = require(dependencyMap[4]).useStateFromStores(items, () => guild.getGuild());
-  const require = stateFromStores;
-  const obj = require(dependencyMap[4]);
-  const items1 = [closure_4];
-  const stateFromStores1 = require(dependencyMap[4]).useStateFromStores(items1, () => {
+  let items = [_isNativeReflectConstruct];
+  stateFromStores = stateFromStores(stateFromStores1[4]).useStateFromStores(items, () => outer1_3.getGuild());
+  const obj = stateFromStores(stateFromStores1[4]);
+  let items1 = [closure_4];
+  stateFromStores1 = stateFromStores(stateFromStores1[4]).useStateFromStores(items1, () => {
     let id;
     if (null != stateFromStores) {
       id = stateFromStores.id;
     }
-    const stateForGuild = stateForGuild.getStateForGuild(id);
+    const stateForGuild = outer1_4.getStateForGuild(id);
     let allPowerups;
     if (null != stateForGuild) {
       allPowerups = stateForGuild.allPowerups;
     }
     return allPowerups;
   });
-  const dependencyMap = stateFromStores1;
   let features;
   if (null != stateFromStores) {
     features = stateFromStores.features;
   }
   const items2 = [features, stateFromStores1];
   return useMemo(() => {
-    const unlockedBadges = closure_6.map((kind) => ({ kind }));
-    const stateFromStores = unlockedBadges;
+    const unlockedBadges = outer1_6.map((kind) => ({ kind }));
     const lockedBadges = [];
-    const stateFromStores1 = lockedBadges;
     let features;
-    if (null != stateFromStores) {
-      features = stateFromStores.features;
+    if (null != unlockedBadges) {
+      features = unlockedBadges.features;
     }
     if (null != features) {
       const _Object = Object;
-      const keys = Object.keys(closure_5);
+      const keys = Object.keys(outer1_5);
       const item = keys.forEach((arg0) => {
         let tmp2;
         if (null != lockedBadges) {
@@ -58,14 +57,13 @@ export default function useGuildTagBadgeCollection() {
         if (null != tmp2) {
           title = tmp2.title;
         }
-        const unlockedBadges = title;
-        const mapped = closure_5[arg0].map((kind) => ({ kind, packName: title }));
+        const mapped = outer2_5[arg0].map((kind) => ({ kind, packName: title }));
         const features = unlockedBadges.features;
         if (features.has(arg0)) {
-          const push2 = unlockedBadges.push;
+          const push2 = title.push;
           const items = [];
           HermesBuiltin.arraySpread(mapped, 0);
-          HermesBuiltin.apply(items, unlockedBadges);
+          HermesBuiltin.apply(items, title);
         } else {
           const push = lockedBadges.push;
           const items1 = [];

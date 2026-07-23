@@ -1,53 +1,59 @@
-// Module ID: 11374
-// Function ID: 88439
+// Module ID: 11384
+// Function ID: 88489
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1348, 653, 1327, 3763, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, settingsFromServer, settingsToServer
 
-// Module 11374 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11384 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -165,10 +171,8 @@ function isSettingsEmpty(welcomeMessage) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ ChannelTypes: closure_4, Permissions: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_onboarding_home/GuildOnboardingHomeTypes.tsx");
+({ ChannelTypes: closure_4, Permissions: closure_5 } = ME);
+const result = require("isDiscordFrontendDevelopment").fileFinishedImporting("modules/guild_onboarding_home/GuildOnboardingHomeTypes.tsx");
 
 export const WELCOME_MESSAGE_MIN_LENGTH = 7;
 export const WELCOME_MESSAGE_MAX_LENGTH = 300;
@@ -197,9 +201,9 @@ export const settingsFromServer = function settingsFromServer(body) {
     obj = {};
     ({ author_ids: obj2.authorIds, message: obj2.message } = welcome_message);
     obj.welcomeMessage = obj;
-    const found = new_member_actions.filter((channel_id) => callback(closure_2[2]).isNotNullish(store.getChannel(channel_id.channel_id)));
+    const found = new_member_actions.filter((channel_id) => outer1_0(outer1_2[2]).isNotNullish(outer1_3.getChannel(channel_id.channel_id)));
     obj.newMemberActions = found.map(newMemberActionFromServer);
-    const found1 = resource_channels.filter((channel_id) => callback(closure_2[2]).isNotNullish(store.getChannel(channel_id.channel_id)));
+    const found1 = resource_channels.filter((channel_id) => outer1_0(outer1_2[2]).isNotNullish(outer1_3.getChannel(channel_id.channel_id)));
     obj.resourceChannels = found1.map(resourceChannelFromServer);
     obj.enabled = body.enabled;
     return obj;
@@ -236,7 +240,7 @@ export const settingsToServer = function settingsToServer(guild_id, enabled) {
     if (null == newMemberActions) {
       newMemberActions = [];
     }
-    const found = newMemberActions.filter((channelId) => callback(closure_2[2]).isNotNullish(store.getChannel(channelId.channelId)));
+    const found = newMemberActions.filter((channelId) => outer1_0(outer1_2[2]).isNotNullish(outer1_3.getChannel(channelId.channelId)));
     obj.new_member_actions = found.map((channelId) => {
       let obj = { channel_id: channelId.channelId, action_type: channelId.actionType, title: channelId.title, description: channelId.description };
       obj = {};
@@ -282,7 +286,7 @@ export const settingsToServer = function settingsToServer(guild_id, enabled) {
     if (null == resourceChannels) {
       resourceChannels = [];
     }
-    const found1 = resourceChannels.filter((channelId) => callback(closure_2[2]).isNotNullish(store.getChannel(channelId.channelId)));
+    const found1 = resourceChannels.filter((channelId) => outer1_0(outer1_2[2]).isNotNullish(outer1_3.getChannel(channelId.channelId)));
     obj.resource_channels = found1.map((channelId) => {
       let obj = { channel_id: channelId.channelId, title: channelId.title, description: channelId.description };
       obj = {};
@@ -337,6 +341,7 @@ export const actionsFromServer = function actionsFromServer(body) {
     for (const key10005 in arg0.channel_actions) {
       let tmp = key10005;
       obj[key10005] = arg0.channel_actions[key10005].completed;
+      continue;
     }
     return obj;
   }
@@ -369,11 +374,11 @@ export const isSettingsValid = function isSettingsValid(welcomeMessage) {
                   const tmp4 = _createForOfIteratorHelperLoose(welcomeMessage.newMemberActions);
                   let iter = tmp4();
                   if (!iter.done) {
-                    const channel = channel.getChannel(iter.value.channelId);
+                    channel = channel.getChannel(iter.value.channelId);
                     while (null != channel) {
                       let tmp7 = importAll;
                       let tmp8 = dependencyMap;
-                      let obj = importAll(dependencyMap[3]);
+                      let obj = importAll(3763);
                       let tmp9 = constants2;
                       if (!obj.canEveryoneRole(constants2.VIEW_CHANNEL, channel)) {
                         break;
@@ -400,12 +405,12 @@ export const isSettingsValid = function isSettingsValid(welcomeMessage) {
 export const isChannelValidForResourceChannel = function isChannelValidForResourceChannel(type) {
   let canEveryoneRoleResult = type.type === constants.GUILD_TEXT;
   if (canEveryoneRoleResult) {
-    canEveryoneRoleResult = !importAll(dependencyMap[3]).canEveryoneRole(constants2.SEND_MESSAGES, type);
-    const obj = importAll(dependencyMap[3]);
+    canEveryoneRoleResult = !importAll(3763).canEveryoneRole(constants2.SEND_MESSAGES, type);
+    const obj = importAll(3763);
   }
   if (canEveryoneRoleResult) {
-    canEveryoneRoleResult = importAll(dependencyMap[3]).canEveryoneRole(constants2.VIEW_CHANNEL, type);
-    const obj2 = importAll(dependencyMap[3]);
+    canEveryoneRoleResult = importAll(3763).canEveryoneRole(constants2.VIEW_CHANNEL, type);
+    const obj2 = importAll(3763);
   }
   return canEveryoneRoleResult;
 };
@@ -420,6 +425,6 @@ export const isChannelValidForNewMemberAction = function isChannelValidForNewMem
       }
     }
   }
-  return importAll(dependencyMap[3]).canEveryoneRole(constants2.VIEW_CHANNEL, type);
+  return importAll(3763).canEveryoneRole(constants2.VIEW_CHANNEL, type);
 };
 export const ChannelEditBlockTypes = { DEFAULT: 0, [0]: "DEFAULT", TODO: 1, [1]: "TODO", RESOURCE: 2, [2]: "RESOURCE", RULES: 3, [3]: "RULES", UPDATES: 4, [4]: "UPDATES" };

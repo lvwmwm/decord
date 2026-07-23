@@ -1,48 +1,50 @@
-// Module ID: 13781
-// Function ID: 104119
+// Module ID: 13895
+// Function ID: 106275
 // Name: route
-// Dependencies: []
+// Dependencies: [31, 653, 33, 6656, 7227, 12393, 1273, 10095, 1212, 8773, 3789, 12485, 2]
 
-// Module 13781 (route)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[7]);
-obj = {
+// Module 13895 (route)
+import result from "result";
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[8]).intl;
-    return intl.string(arg1(dependencyMap[8]).t.jcSP+g);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["jcSP+g"]);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[9]).GiftIcon,
+  IconComponent: require("GiftIcon").GiftIcon,
   usePredicate() {
-    return arg1(dependencyMap[10]).isPremiumGiftingSupported();
+    return require(3789) /* isPremiumGiftingSupported */.isPremiumGiftingSupported();
   },
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
     return React.useCallback(() => {
-      let flag = !callback(closure_2[3]).getIsPaymentsBlocked();
+      let flag = !outer1_0(outer1_2[3]).getIsPaymentsBlocked();
       if (!flag) {
-        callback2(closure_2[4])();
+        outer1_1(outer1_2[4])();
         flag = false;
       }
       return flag;
     }, []);
   },
   useTrailing: function usePremiumGiftingSettingTrailing() {
-    let obj = arg1(dependencyMap[5]);
+    let obj = require(12393) /* useEligibleActiveOutboundPromotions */;
     const unseenOutboundPromotions = obj.useUnseenOutboundPromotions();
     obj = { value: unseenOutboundPromotions.length };
-    return jsx(arg1(dependencyMap[6]).Badge, obj);
+    return jsx(require(1273) /* Button */.Badge, { value: unseenOutboundPromotions.length });
   },
   unsearchable: true,
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[1]).UserSettingsSections.PREMIUM_GIFTING,
+createToggle = {
+  route: require("ME").UserSettingsSections.PREMIUM_GIFTING,
   getComponent() {
-    return arg1(dependencyMap[11]).default;
+    return require(12485) /* GiftingSectionTitle */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/defs/native/PremiumGiftingSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/defs/native/PremiumGiftingSetting.tsx");
 
-export default route;
+export default createToggle;

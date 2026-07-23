@@ -1,27 +1,27 @@
-// Module ID: 14260
-// Function ID: 107760
+// Module ID: 14374
+// Function ID: 109913
 // Name: route
-// Dependencies: []
+// Dependencies: [653, 10095, 1212, 4086, 14375, 2]
 
-// Module 14260 (route)
-const _module = require(dependencyMap[1]);
-let obj = {
+// Module 14374 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.LRmNAl);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.LRmNAl);
   },
   parent: null,
-  IconComponent: require(dependencyMap[3]).CircleInformationIcon,
+  IconComponent: require("CircleInformationIcon").CircleInformationIcon,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.CHANGE_LOG,
+  route: require("ME").UserSettingsSections.CHANGE_LOG,
   getComponent() {
-    return require(dependencyMap[4]).ChangeLogScreen;
+    return require(14375) /* _callSuper */.ChangeLogScreen;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ChangeLogSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ChangeLogSetting.tsx");
 
 export default route;

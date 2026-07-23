@@ -1,13 +1,15 @@
 // Module ID: 758
-// Function ID: 8815
+// Function ID: 8816
 // Name: equalArrays
-// Dependencies: [2, 4294967295, 4294967295]
+// Dependencies: [759, 762, 763]
 
 // Module 758 (equalArrays)
 
 export default function equalArrays(arg0, arg1, arg2, arg3, arg4, get) {
-  const require = arg2;
+  const _require = arg2;
   const dependencyMap = arg3;
+  let closure_2 = arg4;
+  let closure_3 = get;
   if (arg0.length != arg1.length) {
     return false;
   }
@@ -20,19 +22,20 @@ export default function equalArrays(arg0, arg1, arg2, arg3, arg4, get) {
   }
   let tmp7;
   if (2 & arg2) {
-    tmp7 = require(dependencyMap[0]);
+    tmp7 = _require(759);
     const prototype = tmp7.prototype;
     tmp7 = new tmp7();
   }
+  let closure_4 = tmp7;
   const result = get.set(arg0, arg1);
   const result1 = get.set(arg1, arg0);
   let num2 = 0;
   let flag2 = true;
   if (0 < arg0.length) {
-    const tmp12 = arg0[num2];
+    let closure_5 = tmp12;
     while (!arg3) {
       if (tmp7) {
-        let tmp33 = require;
+        let tmp33 = _require;
         let tmp34 = dependencyMap;
         flag2 = false;
       } else if (tmp12 !== tmp13) {

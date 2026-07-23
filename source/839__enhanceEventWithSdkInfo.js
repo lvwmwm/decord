@@ -1,10 +1,12 @@
 // Module ID: 839
-// Function ID: 9323
+// Function ID: 9324
 // Name: _enhanceEventWithSdkInfo
-// Dependencies: []
+// Dependencies: [65, 840, 814, 833, 835, 796]
 // Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
 
 // Module 839 (_enhanceEventWithSdkInfo)
+import _toConsumableArray from "_toConsumableArray";
+
 function _enhanceEventWithSdkInfo(sdk, name) {
   if (name) {
     const tmp = sdk.sdk || {};
@@ -28,7 +30,7 @@ function _enhanceEventWithSdkInfo(sdk, name) {
     if (!integrations1) {
       integrations1 = [];
     }
-    obj.integrations = items.concat(closure_2(integrations), closure_2(integrations1));
+    obj.integrations = items.concat(_toConsumableArray(integrations), _toConsumableArray(integrations1));
     const items1 = [];
     const sdk2 = sdk.sdk;
     let packages;
@@ -39,14 +41,14 @@ function _enhanceEventWithSdkInfo(sdk, name) {
       packages = [];
     }
     let packages1 = name.packages;
-    const tmp3 = closure_2;
-    const tmp3Result = closure_2(integrations);
-    const tmp6 = closure_2;
-    const tmp7 = closure_2;
+    const tmp3 = _toConsumableArray;
+    const tmp3Result = _toConsumableArray(integrations);
+    const tmp6 = _toConsumableArray;
+    const tmp7 = _toConsumableArray;
     if (!packages1) {
       packages1 = [];
     }
-    obj.packages = items1.concat(closure_2(packages), closure_2(packages1));
+    obj.packages = items1.concat(_toConsumableArray(packages), _toConsumableArray(packages1));
     const sdk3 = sdk.sdk;
     if (null == sdk3) {
       let merged;
@@ -60,18 +62,17 @@ function _enhanceEventWithSdkInfo(sdk, name) {
       settings = sdk4.settings;
     }
     merged = Object.assign({}, settings, name.settings);
-    const tmp7Result = closure_2(packages);
-    const tmp9 = closure_2;
+    const tmp7Result = _toConsumableArray(packages);
+    const tmp9 = _toConsumableArray;
   } else {
     return sdk;
   }
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export { _enhanceEventWithSdkInfo };
 export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk) {
-  let obj = require(dependencyMap[1]);
+  let obj = require(840) /* forEachEnvelopeItem */;
   const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
   let str = "event";
   if (type.type) {
@@ -85,17 +86,17 @@ export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk)
     sdk = sdk.sdk;
   }
   _enhanceEventWithSdkInfo(type, sdk);
-  const eventEnvelopeHeaders = require(dependencyMap[1]).createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
-  delete r6.sdkProcessingMetadata;
+  const eventEnvelopeHeaders = require(840) /* forEachEnvelopeItem */.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
+  delete tmp.sdkProcessingMetadata;
   obj = { type: str };
   const items = [obj, type];
-  const obj2 = require(dependencyMap[1]);
-  const tmp2 = _enhanceEventWithSdkInfo;
+  const obj2 = require(840) /* forEachEnvelopeItem */;
+  const tmp3 = _enhanceEventWithSdkInfo;
   const items1 = [items];
-  return require(dependencyMap[1]).createEnvelope(eventEnvelopeHeaders, items1);
+  return require(840) /* forEachEnvelopeItem */.createEnvelope(eventEnvelopeHeaders, items1);
 };
 export const createSessionEnvelope = function createSessionEnvelope(toJSON) {
-  let obj = require(dependencyMap[1]);
+  let obj = require(840) /* forEachEnvelopeItem */;
   const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
   obj = { sent_at: new Date().toISOString() };
   let tmp2 = sdkMetadataForEnvelopeHeader;
@@ -108,9 +109,9 @@ export const createSessionEnvelope = function createSessionEnvelope(toJSON) {
     tmp4 = arg1;
   }
   if (tmp4) {
-    const obj1 = { dsn: require(dependencyMap[2]).dsnToString(arg1) };
+    const obj1 = { dsn: require(814) /* dsnFromString */.dsnToString(arg1) };
     tmp4 = obj1;
-    const obj6 = require(dependencyMap[2]);
+    const obj6 = require(814) /* dsnFromString */;
   }
   const obj2 = {};
   const merged = Object.assign(obj, tmp2, tmp4);
@@ -124,10 +125,10 @@ export const createSessionEnvelope = function createSessionEnvelope(toJSON) {
   }
   const date = new Date();
   const items2 = [items1];
-  return require(dependencyMap[1]).createEnvelope(merged, items2);
+  return require(840) /* forEachEnvelopeItem */.createEnvelope(merged, items2);
 };
 export const createSpanEnvelope = function createSpanEnvelope(arr, getDsn) {
-  let obj = require(dependencyMap[3]);
+  let obj = beforeSendSpan(ignoreSpans[3]);
   const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arr[0]);
   if (null != getDsn) {
     const dsn = getDsn.getDsn();
@@ -150,9 +151,9 @@ export const createSpanEnvelope = function createSpanEnvelope(arr, getDsn) {
     tmp7 = dsn;
   }
   if (tmp7) {
-    const obj1 = { dsn: require(dependencyMap[2]).dsnToString(dsn) };
+    const obj1 = { dsn: beforeSendSpan(ignoreSpans[2]).dsnToString(dsn) };
     tmp7 = obj1;
-    const obj6 = require(dependencyMap[2]);
+    const obj6 = beforeSendSpan(ignoreSpans[2]);
   }
   const merged = Object.assign(obj, public_key, tmp7);
   let options;
@@ -162,10 +163,8 @@ export const createSpanEnvelope = function createSpanEnvelope(arr, getDsn) {
   if (!options) {
     options = {};
   }
-  const beforeSendSpan = options.beforeSendSpan;
-  const require = beforeSendSpan;
-  const ignoreSpans = options.ignoreSpans;
-  const dependencyMap = ignoreSpans;
+  beforeSendSpan = options.beforeSendSpan;
+  ignoreSpans = options.ignoreSpans;
   let num2 = arr;
   if (null != ignoreSpans) {
     num2 = arr;
@@ -194,7 +193,7 @@ export const createSpanEnvelope = function createSpanEnvelope(arr, getDsn) {
       return tmp2;
     };
   } else {
-    require(dependencyMap[5]).spanToJSON;
+    beforeSendSpan(ignoreSpans[5]).spanToJSON;
   }
   num2[Symbol.iterator]();
   num2 = 1;

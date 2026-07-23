@@ -1,10 +1,15 @@
-// Module ID: 7912
-// Function ID: 62943
+// Module ID: 7918
+// Function ID: 62980
 // Name: isActivityInTextSupportedForChannel
-// Dependencies: []
+// Dependencies: [1348, 3758, 482, 669, 566, 2]
 // Exports: isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 7912 (isActivityInTextSupportedForChannel)
+// Module 7918 (isActivityInTextSupportedForChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { Permissions } from "sum";
+
+const require = arg1;
 function isActivityInTextSupportedForChannel(channel) {
   if (null == channel) {
     return false;
@@ -16,10 +21,10 @@ function isActivityInTextSupportedForChannel(channel) {
       if (null != channel) {
         type = channel.type;
       }
-      hasItem = type === arg1(dependencyMap[3]).ChannelTypes.GUILD_CATEGORY;
+      hasItem = type === require(669) /* set */.ChannelTypes.GUILD_CATEGORY;
     }
     if (hasItem) {
-      const items = [arg1(dependencyMap[3]).ChannelTypes.GUILD_TEXT, arg1(dependencyMap[3]).ChannelTypes.GUILD_VOICE, arg1(dependencyMap[3]).ChannelTypes.GROUP_DM, arg1(dependencyMap[3]).ChannelTypes.DM];
+      const items = [require(669) /* set */.ChannelTypes.GUILD_TEXT, require(669) /* set */.ChannelTypes.GUILD_VOICE, require(669) /* set */.ChannelTypes.GROUP_DM, require(669) /* set */.ChannelTypes.DM];
       hasItem = items.includes(channel.type);
     }
     return hasItem;
@@ -53,29 +58,26 @@ function getIsAppLauncherEnabled(channel) {
   }
   return tmp2;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const Permissions = arg1(dependencyMap[2]).Permissions;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/ActivitiesInTextUtils.tsx");
+const result = require("sum").fileFinishedImporting("modules/activities/ActivitiesInTextUtils.tsx");
 
 export { isActivityInTextSupportedForChannel };
 export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(channel) {
   return isActivitiesInTextEnabledForChannelWithPermissions(channel, closure_3);
 };
 export const useIsActivitiesInTextEnabled = function useIsActivitiesInTextEnabled(id) {
-  const arg1 = id;
-  const items = [closure_2, closure_3];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => callback(channel.getChannel(arg0), closure_3));
+  const _require = id;
+  const items = [_isNativeReflectConstruct, closure_3];
+  return _require(566).useStateFromStores(items, () => outer1_6(outer1_2.getChannel(closure_0), outer1_3));
 };
 export { getIsAppLauncherEnabled };
 export const useIsAppLauncherEnabled = function useIsAppLauncherEnabled(id) {
-  const arg1 = id;
-  const items = [closure_2];
-  return arg1(dependencyMap[4]).useStateFromStores(items, () => {
-    const channel = channel.getChannel(arg0);
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
+    const channel = outer1_2.getChannel(closure_0);
     let tmp2 = null != channel;
     if (tmp2) {
-      tmp2 = callback(channel);
+      tmp2 = outer1_7(channel);
     }
     return tmp2;
   });

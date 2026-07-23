@@ -1,68 +1,68 @@
-// Module ID: 11841
-// Function ID: 91791
+// Module ID: 11853
+// Function ID: 91844
 // Name: GameProfileWebsiteButton
-// Dependencies: [0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 27, 8329, 33, 4130, 689, 3827, 8631, 1212, 1881, 3800, 11854, 11863, 4126, 2]
 // Exports: default
 
-// Module 11841 (GameProfileWebsiteButton)
-import closure_4 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { IGDB_ATTRIBUTION_LINK } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 11853 (GameProfileWebsiteButton)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { IGDB_ATTRIBUTION_LINK } from "ContentInventoryFeedKey";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function GameProfileWebsiteButton(action) {
   let icon;
   let title;
   action = action.action;
-  const arg1 = action;
   const trackAction = action.trackAction;
-  const importDefault = trackAction;
   const url = action.url;
-  const importAll = url;
   const items = [trackAction, action, url];
   ({ icon, title } = action);
   return callback(closure_6, {
     accessibilityRole: "button",
     accessibilityLabel: title,
     onPress: React.useCallback(() => {
-      trackAction(closure_3[6]).openURL(url);
+      trackAction(outer1_3[6]).openURL(url);
       trackAction(action);
     }, items),
-    hitSlop: importDefault(dependencyMap[5]).space.PX_4,
+    hitSlop: trackAction(689).space.PX_4,
     children: icon
   });
 }
-({ View: closure_5, Pressable: closure_6 } = __exportStarResult1);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { gap: require("__exportStarResult1").space.PX_8 };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.headerText = { paddingHorizontal: require("__exportStarResult1").space.PX_8 };
-const obj1 = { paddingHorizontal: require("__exportStarResult1").space.PX_8 };
-obj.detailsContainer = { borderRadius: require("__exportStarResult1").radii.lg, borderWidth: 1, borderColor: require("__exportStarResult1").colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
-const obj3 = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", padding: require("__exportStarResult1").space.PX_12 };
-obj.detailsRow = obj3;
-const obj4 = { flexDirection: "onAnimationFinishCapture", alignItems: "onAnimationFinish", paddingLeft: require("__exportStarResult1").space.PX_32 };
-obj.detailsRowValue = obj4;
-const obj2 = { borderRadius: require("__exportStarResult1").radii.lg, borderWidth: 1, borderColor: require("__exportStarResult1").colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: require("__exportStarResult1").colors.BACKGROUND_BASE_LOW };
-obj.detailsRowBottomBorder = { borderBottomWidth: 1, borderBottomColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-const obj6 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: require("__exportStarResult1").space.PX_12 };
-obj.platformsContainer = obj6;
-const obj7 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: require("__exportStarResult1").space.PX_12 };
-obj.linksContainer = obj7;
-let closure_10 = obj.createStyles(obj);
-const result = __exportStarResult1.fileFinishedImporting("modules/game_profile/native/components/GameProfileDetails.tsx");
+({ View: closure_5, Pressable: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerText = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.detailsContainer = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.detailsRow = obj3;
+let obj4 = { flexDirection: "column", flexShrink: 1, paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_32 };
+_createForOfIteratorHelperLoose.detailsRowValue = obj4;
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.detailsRowBottomBorder = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let obj6 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.platformsContainer = obj6;
+let obj7 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.linksContainer = obj7;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj5 = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+const result = require("ContentInventoryFeedKey").fileFinishedImporting("modules/game_profile/native/components/GameProfileDetails.tsx");
 
 export default function GameProfileDetails(game) {
   game = game.game;
-  const arg1 = game;
   const trackAction = game.trackAction;
-  const importDefault = trackAction;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const importAll = tmp;
-  const items = [, , , ];
+  let items = [, , , ];
   ({ linksContainer: arr[0], platformsContainer: arr[1] } = tmp);
   items[2] = game;
   items[3] = trackAction;
@@ -135,7 +135,7 @@ export default function GameProfileDetails(game) {
               if (null != game) {
                 const websites = game.websites;
                 if (null != websites) {
-                  const mapped3 = websites.map((arg0) => callback2(closure_3[12])(arg0, callback2(closure_3[5]).colors.ICON_SUBTLE));
+                  const mapped3 = websites.map((arg0) => trackAction(memo[12])(arg0, trackAction(memo[5]).colors.ICON_SUBTLE));
                   found = mapped3.filter((arg0) => null != arg0);
                 }
               }
@@ -149,23 +149,23 @@ export default function GameProfileDetails(game) {
               if (tmp67) {
                 obj = {};
                 const intl10 = game(memo[8]).intl;
-                obj.label = intl10.string(game(memo[8]).t.Oj3o1/);
+                obj.label = intl10.string(game(memo[8]).t["Oj3o1/"]);
                 const obj1 = {
                   style: tmp.linksContainer,
                   children: found.map((icon) => {
                                 const url = icon.url;
-                                return callback3(closure_11, { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction: closure_1 }, url);
+                                return outer2_8(outer2_11, { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction: outer1_1 }, url);
                               })
                 };
-                obj.value = callback(closure_5, obj1);
+                obj.value = outer1_8(outer1_5, obj1);
                 items.push(obj);
               }
               if (items.length > 0) {
                 const obj2 = {};
                 const intl11 = game(memo[8]).intl;
-                obj2.label = intl11.string(game(memo[8]).t.BwQ+9e);
+                obj2.label = intl11.string(game(memo[8]).t["BwQ+9e"]);
                 const intl12 = game(memo[8]).intl;
-                const obj3 = { igdbLink: closure_7 };
+                const obj3 = { igdbLink: outer1_7 };
                 obj2.value = intl12.format(game(memo[8]).t.XPFZVl, obj3);
                 items.push(obj2);
               }
@@ -177,17 +177,17 @@ export default function GameProfileDetails(game) {
                 let stringResult = intl9.string(game(memo[8]).t.PNqxNe);
               } else {
                 const intl8 = game(memo[8]).intl;
-                stringResult = intl8.string(game(memo[8]).t.UxAag+);
+                stringResult = intl8.string(game(memo[8]).t["UxAag+"]);
               }
               obj4.label = stringResult;
               const obj5 = {
                 style: tmp.platformsContainer,
                 children: platforms.map((platform) => {
-                            const obj = { platform, size: "md", color: callback2(closure_3[5]).colors.ICON_SUBTLE };
-                            return callback3(callback(closure_3[11]).GameUpdatePlatformIcon, obj, platform);
+                            const obj = { platform, size: "md", color: trackAction(memo[5]).colors.ICON_SUBTLE };
+                            return outer2_8(game(memo[11]).GameUpdatePlatformIcon, obj, platform);
                           })
               };
-              obj4.value = callback(closure_5, obj5);
+              obj4.value = outer1_8(outer1_5, obj5);
               obj4 = items.push(obj4);
             }
           } else {
@@ -210,7 +210,7 @@ export default function GameProfileDetails(game) {
             let stringResult2 = intl4.string(game(memo[8]).t.Hc7Enk);
           } else {
             const intl3 = game(memo[8]).intl;
-            stringResult2 = intl3.string(game(memo[8]).t.4Byy/G);
+            stringResult2 = intl3.string(game(memo[8]).t["4Byy/G"]);
           }
           obj7.label = stringResult2;
           obj7.value = joined1;
@@ -231,14 +231,13 @@ export default function GameProfileDetails(game) {
       }
     }
   }, items);
-  const dependencyMap = memo;
   let tmp2 = null;
   if (0 !== memo.length) {
     let obj = { style: tmp.container };
-    obj = { cachedAt: "polite", edpbxy: "column", style: tmp.headerText };
-    const intl = arg1(dependencyMap[8]).intl;
-    obj.children = intl.string(arg1(dependencyMap[8]).t.7OjmmH);
-    const items1 = [callback(arg1(dependencyMap[13]).Text, obj), ];
+    obj = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText };
+    let intl = game(memo[8]).intl;
+    obj.children = intl.string(game(memo[8]).t["7OjmmH"]);
+    let items1 = [callback(game(memo[13]).Text, obj), ];
     obj = {
       style: tmp.detailsContainer,
       children: memo.map((label) => {
@@ -253,17 +252,17 @@ export default function GameProfileDetails(game) {
           }
           items[1] = prop;
           obj.style = items;
-          obj = { 803799044: true, 1269170180: true, 711589892: true, children: label.label };
-          const items1 = [callback(game(memo[13]).Text, obj), ];
+          obj = { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, children: label.label };
+          const items1 = [outer1_8(game(memo[13]).Text, obj), ];
           if ("string" === typeof label.value) {
-            obj = { style: tmp.detailsRowValue, children: label.value };
-            let value = callback(game(memo[13]).Text, obj);
+            obj = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, style: tmp.detailsRowValue, children: label.value };
+            let value = outer1_8(game(memo[13]).Text, obj);
           } else {
             value = label.value;
           }
           items1[1] = value;
           obj.children = items1;
-          return closure_9(closure_5, obj, label.label);
+          return outer1_9(outer1_5, obj, label.label);
         })
     };
     items1[1] = callback(closure_5, obj);

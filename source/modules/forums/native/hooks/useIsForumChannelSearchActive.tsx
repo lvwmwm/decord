@@ -1,17 +1,19 @@
-// Module ID: 10115
-// Function ID: 78294
+// Module ID: 10123
+// Function ID: 78334
 // Name: useIsForumChannelSearchActive
-// Dependencies: []
+// Dependencies: [7010, 10102, 566, 2]
 // Exports: useIsForumChannelSearchActive
 
-// Module 10115 (useIsForumChannelSearchActive)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/forums/native/hooks/useIsForumChannelSearchActive.tsx");
+// Module 10123 (useIsForumChannelSearchActive)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/forums/native/hooks/useIsForumChannelSearchActive.tsx");
 
 export const useIsForumChannelSearchActive = function useIsForumChannelSearchActive(channelId) {
-  const arg1 = channelId;
-  let canSearchForumPostsByChannelId = arg1(dependencyMap[1]).useCanSearchForumPostsByChannelId(channelId);
-  arg1(dependencyMap[2]);
+  const _require = channelId;
+  let canSearchForumPostsByChannelId = _require(10102).useCanSearchForumPostsByChannelId(channelId);
+  _require(566);
   [][0] = channelId;
   if (canSearchForumPostsByChannelId) {
     canSearchForumPostsByChannelId = null != tmp3;

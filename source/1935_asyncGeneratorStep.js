@@ -1,5 +1,5 @@
 // Module ID: 1935
-// Function ID: 21821
+// Function ID: 21822
 // Name: asyncGeneratorStep
 // Dependencies: []
 
@@ -16,20 +16,20 @@ function asyncGeneratorStep(arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
 }
 
 export default function _asyncToGenerator(arg0) {
-  const asyncGeneratorStep = arg0;
+  let closure_0 = arg0;
   return function() {
-    const arg0 = this;
+    const self = this;
     let closure_1 = arguments;
     return new Promise((arg0, arg1) => {
-      const self = arg0;
+      let closure_0 = arg0;
       let closure_1 = arg1;
       function _next(arg0) {
-        arg0(closure_2, arg0, arg1, _next, _throw, "next", arg0);
+        callback(closure_2, callback, closure_1, _next, _throw, "next", arg0);
       }
       function _throw(arg0) {
-        arg0(closure_2, arg0, arg1, _next, _throw, "throw", arg0);
+        callback(closure_2, callback, closure_1, _next, _throw, "throw", arg0);
       }
-      let closure_2 = self.apply(self, closure_1);
+      let closure_2 = self.apply(closure_0, closure_1);
       _next(undefined);
     });
   };

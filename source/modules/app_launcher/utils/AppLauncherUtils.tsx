@@ -1,53 +1,63 @@
-// Module ID: 7913
-// Function ID: 62952
+// Module ID: 7919
+// Function ID: 62989
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [29, 5, 7920, 4153, 8181, 653, 4566, 4123, 1212, 7371, 8183, 477, 1881, 6755, 8184, 6924, 6691, 4470, 1392, 8182, 8190, 6753, 8191, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication
 
-// Module 7913 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 7919 (_createForOfIteratorHelperLoose)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import ME from "ME";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import closure_8 from "_isNativeReflectConstruct";
+import { ApplicationFlags } from "ME";
+import { BuiltInSectionId } from "TRUE_OPTION_NAME";
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -90,8 +100,8 @@ function isRealApplication(application) {
 function isEmbeddedApp(application) {
   let hasApplicationFlagResult = isRealApplication(application);
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = arg1(dependencyMap[9]).hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
-    const obj = arg1(dependencyMap[9]);
+    hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.EMBEDDED);
+    const obj = require(7371) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 }
@@ -99,9 +109,9 @@ function getShelfBadgeTypeIfActive(application) {
   const tmp = getEmbeddedActivityConfig(application);
   let tmp2;
   if (null != tmp) {
-    const obj = arg1(dependencyMap[11]);
-    tmp2 = tmp.client_platform_config[importDefault(dependencyMap[10])(undefined, obj.getOS(obj))];
-    const tmp5 = importDefault(dependencyMap[10]);
+    const obj = require(477) /* set */;
+    tmp2 = tmp.client_platform_config[importDefault(8183)(undefined, obj.getOS(obj))];
+    const tmp5 = importDefault(8183);
   }
   const timestamp = Date.now();
   let label_until;
@@ -127,7 +137,7 @@ function getShelfBadgeTypeIfActive(application) {
       }
     }
   }
-  label_type = arg1(dependencyMap[12]).EmbeddedActivityLabelTypes.NONE;
+  label_type = require(1881) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NONE;
 }
 function getEmbeddedActivityConfig(embeddedActivityConfig) {
   let tmp = null;
@@ -136,16 +146,8 @@ function getEmbeddedActivityConfig(embeddedActivityConfig) {
   }
   return tmp;
 }
-let closure_3 = [false];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const ApplicationFlags = arg1(dependencyMap[5]).ApplicationFlags;
-const BuiltInSectionId = arg1(dependencyMap[6]).BuiltInSectionId;
-const MessageSendLocation = arg1(dependencyMap[7]).MessageSendLocation;
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/app_launcher/utils/AppLauncherUtils.tsx");
+let closure_3 = ["fakeAppIconURL"];
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/utils/AppLauncherUtils.tsx");
 
 export const FAKE_BUILT_IN_APP = { id: BuiltInSectionId.BUILT_IN };
 export { isRealApplication };
@@ -153,8 +155,8 @@ export const getSectionName = function getSectionName(FAKE_BUILT_IN_APP) {
   if (isRealApplication(FAKE_BUILT_IN_APP)) {
     let name = FAKE_BUILT_IN_APP.name;
   } else {
-    const intl = arg1(dependencyMap[8]).intl;
-    name = intl.string(arg1(dependencyMap[8]).t.UB2gG2);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    name = intl.string(require(1212) /* getSystemLocale */.t.UB2gG2);
   }
   return name;
 };
@@ -162,8 +164,8 @@ export const getSectionDescription = function getSectionDescription(FAKE_BUILT_I
   if (isRealApplication(FAKE_BUILT_IN_APP)) {
     let description = FAKE_BUILT_IN_APP.description;
   } else {
-    const intl = arg1(dependencyMap[8]).intl;
-    description = intl.string(arg1(dependencyMap[8]).t.X9fusn);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    description = intl.string(require(1212) /* getSystemLocale */.t.X9fusn);
   }
   return description;
 };
@@ -171,25 +173,25 @@ export { isEmbeddedApp };
 export const isPartnerApplication = function isPartnerApplication(application) {
   let hasApplicationFlagResult = isRealApplication(application);
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = arg1(dependencyMap[9]).hasApplicationFlag(application, ApplicationFlags.PARTNER);
-    const obj = arg1(dependencyMap[9]);
+    hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARTNER);
+    const obj = require(7371) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 };
 export const isPromotedApplication = function isPromotedApplication(FAKE_BUILT_IN_APP2) {
   let hasApplicationFlagResult = isRealApplication(FAKE_BUILT_IN_APP2);
   if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = arg1(dependencyMap[9]).hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
-    const obj = arg1(dependencyMap[9]);
+    hasApplicationFlagResult = require(7371) /* getApplicationFlags */.hasApplicationFlag(FAKE_BUILT_IN_APP2, ApplicationFlags.PROMOTED);
+    const obj = require(7371) /* getApplicationFlags */;
   }
   return hasApplicationFlagResult;
 };
 export { getShelfBadgeTypeIfActive };
 export const getShelfBadgeNameIfActive = function getShelfBadgeNameIfActive(application) {
   const tmp = getShelfBadgeTypeIfActive(application);
-  if (arg1(dependencyMap[12]).EmbeddedActivityLabelTypes.NEW === tmp) {
+  if (require(1881) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.NEW === tmp) {
     return "New";
-  } else if (arg1(dependencyMap[12]).EmbeddedActivityLabelTypes.UPDATED === tmp) {
+  } else if (require(1881) /* PermissionOverwriteType */.EmbeddedActivityLabelTypes.UPDATED === tmp) {
     return "Updated";
   } else {
     return "";
@@ -197,36 +199,39 @@ export const getShelfBadgeNameIfActive = function getShelfBadgeNameIfActive(appl
 };
 export { getEmbeddedActivityConfig };
 export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0) {
+  let closure_3;
+  let _objectWithoutProperties;
+  let ME;
   let commandOrigin;
   let context;
-  ({ command: closure_0, optionValues: closure_1, context } = arg0);
-  const dependencyMap = context;
-  ({ commandTargetId: closure_3, maxSizeCallback: closure_4, sectionName: closure_5, commandOrigin } = arg0);
+  let importDefault;
+  let require;
+  ({ command: require, optionValues: importDefault, context } = arg0);
+  ({ commandTargetId: closure_3, maxSizeCallback: _objectWithoutProperties, sectionName: ME, commandOrigin } = arg0);
   if (commandOrigin === undefined) {
-    commandOrigin = arg1(dependencyMap[13]).CommandOrigin.APPLICATION_LAUNCHER;
+    commandOrigin = require(context[13]).CommandOrigin.APPLICATION_LAUNCHER;
   }
-  let closure_6 = commandOrigin;
   let channel;
-  let closure_8;
+  let c8;
   channel = context.channel;
-  const tmp3 = () => {
-    let closure_0 = callback(async () => {
-      let obj = { command: lib, optionValues: callback, context: closure_2, commandTargetId: closure_3, maxSizeCallback: closure_4, commandOrigin: closure_6, sectionName: closure_5, source: closure_8.entrypoint() };
-      const tmp2 = yield callback(closure_2[14])(obj);
-      if (lib.inputType === lib(closure_2[13]).ApplicationCommandInputType.BUILT_IN_TEXT) {
+  const tmp3 = (() => {
+    let closure_0 = outer1_5(async () => {
+      let obj = { command: inputType, optionValues: outer2_1, context: outer2_2, commandTargetId: outer2_3, maxSizeCallback: outer2_4, commandOrigin: outer2_6, sectionName: outer2_5, source: c8.entrypoint() };
+      const tmp2 = yield outer3_1(context[14])(obj);
+      if (inputType.inputType === outer3_0(context[13]).ApplicationCommandInputType.BUILT_IN_TEXT) {
         if (null != tmp3) {
-          if (null != closure_2.channel) {
-            const parsed = callback(closure_2[15]).parse(closure_7, tmp3.content);
+          if (null != outer2_2.channel) {
+            const parsed = outer3_1(context[15]).parse(outer2_7, tmp3.content);
             const tts = tmp3.tts;
             let tmp4 = tmp23;
             if (null != tts) {
               tmp4 = tts;
             }
             parsed.tts = tmp4;
-            const obj2 = callback(closure_2[16]);
-            obj = { location: constants.APP_COMMAND };
-            obj2.sendMessage(closure_2.channel.id, parsed, true, obj);
-            const obj4 = callback(closure_2[15]);
+            const obj2 = outer3_1(context[16]);
+            obj = { location: outer3_11.APP_COMMAND };
+            obj2.sendMessage(outer2_2.channel.id, parsed, true, obj);
+            const obj4 = outer3_1(context[15]);
             const tmp21 = parsed;
           }
         }
@@ -235,8 +240,8 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
     return function() {
       return callback(...arguments);
     };
-  }();
-  closure_8 = tmp3;
+  })();
+  c8 = tmp3;
   return tmp3();
 };
 export const getApplicationDetails = function getApplicationDetails(id, guildMember) {
@@ -252,20 +257,20 @@ export const getApplicationDetails = function getApplicationDetails(id, guildMem
     const merged = Object.assign(tmp);
     obj["id"] = id.id;
     obj["icon"] = id.icon;
-    obj.iconURL = importDefault(dependencyMap[18]).getApplicationIconURL(obj);
+    obj.iconURL = importDefault(1392).getApplicationIconURL(obj);
     ({ name: obj2.name, description: obj2.description } = id);
     let tmp5 = obj;
-    const obj3 = importDefault(dependencyMap[18]);
+    const obj3 = importDefault(1392);
   } else {
     let tmp2 = null;
     if (null != fakeAppIconURL) {
       tmp2 = fakeAppIconURL;
     }
     obj.iconURL = tmp2;
-    const intl = guildMember(dependencyMap[8]).intl;
-    obj.name = intl.string(guildMember(dependencyMap[8]).t.UB2gG2);
-    const intl2 = guildMember(dependencyMap[8]).intl;
-    obj.description = intl2.string(guildMember(dependencyMap[8]).t.X9fusn);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.name = intl.string(require(1212) /* getSystemLocale */.t.UB2gG2);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj.description = intl2.string(require(1212) /* getSystemLocale */.t.X9fusn);
     tmp5 = obj;
   }
   return tmp5;
@@ -281,7 +286,7 @@ export const isApplicationAdSupported = function isApplicationAdSupported(applic
   return null != tmp && tmp.displays_advertisements;
 };
 export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
-  return entrypoint === arg1(dependencyMap[19]).AppLauncherEntrypoint.TEXT;
+  return entrypoint === require(8182) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
 };
 export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
@@ -296,16 +301,16 @@ export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPoi
 export const ensureRecommendationSectionsOnlyContainActivities = function ensureRecommendationSectionsOnlyContainActivities(stateFromStores) {
   let iter2;
   const items = [];
-  const tmp = _createForOfIteratorHelperLoose(stateFromStores);
+  let tmp = _createForOfIteratorHelperLoose(stateFromStores);
   let iter = tmp();
   if (!iter.done) {
     do {
       let value = iter.value;
       let prop = value.application_directory_collection_items;
       let found = prop.filter((type) => {
-        let tmp = type.type === callback(closure_2[20]).ApplicationDirectoryCollectionItemType.APPLICATION;
+        let tmp = type.type === outer1_0(outer1_2[20]).ApplicationDirectoryCollectionItemType.APPLICATION;
         if (tmp) {
-          tmp = callback2(type.application);
+          tmp = outer1_15(type.application);
         }
         return tmp;
       });
@@ -328,7 +333,7 @@ export const getInstallAppPropsFromProfileApplication = function getInstallAppPr
 };
 export const getInstallAppProps = function getInstallAppProps(application) {
   const obj = { applicationId: application.id };
-  if (application instanceof closure_7) {
+  if (application instanceof _callSuper) {
     ({ customInstallUrl: obj.customInstallUrl, installParams: obj.installParams, integrationTypesConfig: obj.integrationTypesConfig } = application);
     let tmp = obj;
   } else {
@@ -344,9 +349,9 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
   }
   let result = null != guildState;
   if (result) {
-    result = arg1(dependencyMap[21]).hasCommandIndexForApp(id.id, guildState);
-    const obj = arg1(dependencyMap[21]);
+    result = require(6753) /* _createForOfIteratorHelperLoose */.hasCommandIndexForApp(id.id, guildState);
+    const obj = require(6753) /* _createForOfIteratorHelperLoose */;
   }
-  const obj2 = arg1(dependencyMap[22]);
-  return arg1(dependencyMap[22]).isAppUserInstallable(id) || result;
+  const obj2 = require(8191) /* canInstallApplication */;
+  return require(8191) /* canInstallApplication */.isAppUserInstallable(id) || result;
 };

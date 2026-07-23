@@ -1,11 +1,10 @@
-// Module ID: 11443
-// Function ID: 89126
+// Module ID: 11453
+// Function ID: 89176
 // Name: MAX_ACCOUNTS
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 11443 (MAX_ACCOUNTS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/multi_account/Constants.tsx");
+// Module 11453 (MAX_ACCOUNTS)
+const result = require("set").fileFinishedImporting("modules/multi_account/Constants.tsx");
 
 export const MAX_ACCOUNTS = 5;
 export const SWITCH_ACCOUNTS_MODAL_KEY = "switch-accounts-modal";

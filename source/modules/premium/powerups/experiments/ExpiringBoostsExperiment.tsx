@@ -1,13 +1,14 @@
-// Module ID: 11604
-// Function ID: 90181
+// Module ID: 11614
+// Function ID: 90230
 // Name: useExpiringBoostsEnabled
-// Dependencies: []
+// Dependencies: [1325, 2]
 // Exports: useExpiringBoostsEnabled
 
-// Module 11604 (useExpiringBoostsEnabled)
-const obj = { y: "2f876cc58ec4f702ded646dd5a7d0ecf", DateToSystemTimezoneSetter: "no_mutual_friends_light", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const tmp2 = importDefault(dependencyMap[0])(obj);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/premium/powerups/experiments/ExpiringBoostsExperiment.tsx");
+// Module 11614 (useExpiringBoostsEnabled)
+const obj = { name: "2026-05-expiring-boosts", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const tmp2 = require("getUnitId")(obj);
+let closure_0 = tmp2;
+const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/ExpiringBoostsExperiment.tsx");
 
 export default tmp2;
 export const useExpiringBoostsEnabled = function useExpiringBoostsEnabled(GuildPowerupsRecentActivity) {

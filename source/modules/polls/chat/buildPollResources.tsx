@@ -1,15 +1,16 @@
-// Module ID: 7902
-// Function ID: 62921
-// Dependencies: []
+// Module ID: 7908
+// Function ID: 62958
+// Dependencies: [7904, 22, 2]
 
-// Module 7902
-const _module = require(dependencyMap[1]);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/polls/chat/buildPollResources.tsx");
+// Module 7908
+import apply from "apply";
 
-export default _module.memoize(function buildPollResources(arg0) {
+const memoizeResult = apply.memoize(function buildPollResources(arg0) {
   let layoutType;
   let theme;
   ({ theme, layoutType } = arg0);
-  return require(dependencyMap[0]).buildPlatformPollResources(theme, layoutType);
+  return require(7904) /* buildPlatformPollResources */.buildPlatformPollResources(theme, layoutType);
 }, (theme) => "" + theme.theme + ":" + theme.layoutType);
+const result = require("set").fileFinishedImporting("modules/polls/chat/buildPollResources.tsx");
+
+export default memoizeResult;

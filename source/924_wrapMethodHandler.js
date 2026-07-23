@@ -1,17 +1,19 @@
 // Module ID: 924
-// Function ID: 10071
+// Function ID: 10072
 // Name: wrapMethodHandler
-// Dependencies: []
+// Dependencies: [65, 799, 800, 801, 923]
 // Exports: wrapAllMCPHandlers
 
 // Module 924 (wrapMethodHandler)
+import _toConsumableArray from "_toConsumableArray";
+
 function wrapMethodHandler(arg0, prompt) {
-  const require = prompt;
-  require(dependencyMap[1]).fill(arg0, prompt, (arg0) => {
-    const arg1 = arg0;
+  const _require = prompt;
+  _require(799).fill(arg0, prompt, (arg0) => {
+    let closure_0 = arg0;
     return function(arg0) {
-      const self = this;
-      const length = arguments.length;
+      let self = this;
+      let length = arguments.length;
       let num = 0;
       if (length > 1) {
         num = length - 1;
@@ -21,14 +23,17 @@ function wrapMethodHandler(arg0, prompt) {
         arr[num2 - 1] = arguments[num2];
       }
       if ("function" !== typeof arr[arr.length - 1]) {
-        const call2 = arg0.call;
+        const call2 = closure_0.call;
         const items = [self, arg0];
-        return call2.apply(arg0, items.concat(arr));
+        return call2.apply(closure_0, items.concat(arr));
       } else {
-        const call = arg0.call;
+        const call = closure_0.call;
         const items1 = [self, arg0];
         const items2 = [
-          function createWrappedHandler(arg0, arg1, arg2) {
+          (function createWrappedHandler(arg0, closure_0, arg2) {
+              closure_0 = arg0;
+              let closure_1 = closure_0;
+              let closure_2 = arg2;
               return function() {
                 const self = this;
                 const length = arguments.length;
@@ -37,25 +42,25 @@ function wrapMethodHandler(arg0, prompt) {
                   let tmp3 = array;
                   tmp2[num] = arguments[num];
                 }
-                return callback.call(self, arg0, arg1, arg2, array);
+                return outer4_4.call(self, closure_0, closure_1, closure_2, array);
               };
-            }(tmp, arg0, arg0)
+            })(tmp, closure_0, arg0)
         ];
-        return call.apply(arg0, items1.concat(callback(arr.slice(0, -1)), items2));
+        return call.apply(closure_0, items1.concat(outer2_2(arr.slice(0, -1)), items2));
       }
     };
   });
 }
 function createErrorCapturingHandler(apply) {
-  const require = arg1;
-  const dependencyMap = arg2;
+  let closure_0 = arg1;
+  let closure_1 = arg2;
   const applyResult = apply.apply(this, arg3);
   if (applyResult) {
     if ("object" === typeof promise) {
       if ("function" === typeof promise.then) {
         const resolved = Promise.resolve(applyResult);
         let catchPromise = resolved.catch((arg0) => {
-          callback(arg0, arg1, arg2);
+          outer1_5(arg0, closure_0, closure_1);
           throw arg0;
         });
       }
@@ -78,26 +83,26 @@ function captureHandlerError(name, arg1, tool_name) {
             if (!message2.includes("timed out")) {
               const message3 = name.message;
               if (!message3.includes("timeout")) {
-                require(dependencyMap[4]).captureError(name, "tool_execution", obj);
-                const obj3 = require(dependencyMap[4]);
+                require(923) /* captureError */.captureError(name, "tool_execution", obj);
+                const obj3 = require(923) /* captureError */;
               }
             }
           }
-          require(dependencyMap[4]).captureError(name, "timeout", obj);
-          const obj4 = require(dependencyMap[4]);
+          require(923) /* captureError */.captureError(name, "timeout", obj);
+          const obj4 = require(923) /* captureError */;
         }
       }
     }
-    require(dependencyMap[4]).captureError(name, "validation", obj);
-    const obj5 = require(dependencyMap[4]);
+    require(923) /* captureError */.captureError(name, "validation", obj);
+    const obj5 = require(923) /* captureError */;
   } else if ("resource" === arg1) {
     obj.resource_uri = tool_name;
-    require(dependencyMap[4]).captureError(name, "resource_execution", obj);
-    const obj2 = require(dependencyMap[4]);
+    require(923) /* captureError */.captureError(name, "resource_execution", obj);
+    const obj2 = require(923) /* captureError */;
   } else if ("prompt" === arg1) {
     obj.prompt_name = tool_name;
-    require(dependencyMap[4]).captureError(name, "prompt_execution", obj);
-    const obj6 = require(dependencyMap[4]);
+    require(923) /* captureError */.captureError(name, "prompt_execution", obj);
+    const obj6 = require(923) /* captureError */;
   }
 }
 function wrapToolHandlers(arg0) {
@@ -109,7 +114,6 @@ function wrapResourceHandlers(arg0) {
 function wrapPromptHandlers(arg0) {
   wrapMethodHandler(arg0, "prompt");
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {

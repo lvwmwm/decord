@@ -1,29 +1,31 @@
-// Module ID: 11824
-// Function ID: 91685
+// Module ID: 11834
+// Function ID: 91734
 // Name: useVirtualCurrencyBalance
-// Dependencies: []
+// Dependencies: [8724, 566, 2]
 // Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance
 
-// Module 11824 (useVirtualCurrencyBalance)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/virtual_currency/hooks/useVirtualCurrencyBalance.tsx");
+// Module 11834 (useVirtualCurrencyBalance)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/virtual_currency/hooks/useVirtualCurrencyBalance.tsx");
 
 export const useVirtualCurrencyBalance = function useVirtualCurrencyBalance() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => balance.balance);
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.balance);
 };
 export const useHasEnoughVirtualCurrency = function useHasEnoughVirtualCurrency(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => {
-    let tmp = null != arg0;
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
+    let tmp = null != closure_0;
     if (tmp) {
-      const balance = balance.balance;
+      const balance = outer1_2.balance;
       let num = 0;
       if (null != balance) {
         num = balance;
       }
-      tmp = num >= arg0;
+      tmp = num >= closure_0;
     }
     return tmp;
   });

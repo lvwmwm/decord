@@ -1,9 +1,18 @@
-// Module ID: 6769
-// Function ID: 53255
+// Module ID: 6774
+// Function ID: 53287
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1921, 6775, 664, 561, 686, 22, 6786, 566, 2]
 
-// Module 6769 (_isNativeReflectConstruct)
+// Module 6774 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,24 +102,23 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function updateCategoriesAndProducts(map) {
-  const items = [...closure_19.values()];
+  let items = [...closure_19.values()];
   map = new Map(items.map((storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   }));
-  const productsFromCategories = arg1(dependencyMap[11]).getProductsFromCategories(map, true);
-  const map1 = new Map(productsFromCategories.map((skuId) => {
+  const productsFromCategories = map1(6786).getProductsFromCategories(map, true);
+  map1 = new Map(productsFromCategories.map((skuId) => {
     const items = [skuId.skuId, skuId];
     return items;
   }));
-  const arg1 = map1;
   const item = map1.forEach((skuId) => {
     if (!map1.has(skuId.skuId)) {
       const result = map1.set(skuId.skuId, skuId);
     }
   });
-  const obj = arg1(dependencyMap[11]);
-  const productsFromCategories1 = arg1(dependencyMap[11]).getProductsFromCategories(map, false);
+  const obj = map1(6786);
+  const productsFromCategories1 = map1(6786).getProductsFromCategories(map, false);
   const map2 = new Map(productsFromCategories1.map((storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
@@ -120,52 +128,45 @@ function updateCategoriesAndProducts(map) {
 function reset() {
   let closure_19 = map;
   let closure_14 = map1;
-  let closure_23;
-  let closure_21 = false;
+  let c23;
+  let c21 = false;
   let closure_18 = {};
   const values = Object.values(closure_17);
   const item = values.forEach((cancel) => cancel.cancel());
   closure_17 = {};
-  let closure_22;
-  let closure_24;
+  let c22;
+  let c24;
   let closure_25 = {};
-  let closure_26 = 0;
+  let c26 = 0;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = 10 * importDefault(dependencyMap[7]).Millis.SECOND;
-let closure_11 = 10 * importDefault(dependencyMap[7]).Millis.MINUTE;
-const map = new Map();
-const map1 = new Map();
-const map2 = new Map();
+let closure_10 = 10 * require("set").Millis.SECOND;
+let closure_11 = 10 * require("set").Millis.MINUTE;
+let map = new Map();
+let map1 = new Map();
+let map2 = new Map();
 const map3 = new Map();
 let closure_16 = [];
 let closure_17 = {};
 let closure_18 = {};
-let closure_21 = false;
-let closure_22;
-let closure_23;
-let closure_24;
+let c21 = false;
+let c22;
+let c23;
+let c24;
 let closure_25 = {};
-let closure_26 = 0;
-let tmp6 = (Store) => {
+let c26 = 0;
+let tmp6 = ((Store) => {
   class CollectiblesCategoryStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, CollectiblesCategoryStore);
-      obj = closure_6(CollectiblesCategoryStore);
-      tmp2 = closure_5;
-      if (closure_27()) {
+      tmp = outer1_3(this, CollectiblesCategoryStore);
+      obj = outer1_6(CollectiblesCategoryStore);
+      tmp2 = outer1_5;
+      if (outer1_27()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -174,20 +175,19 @@ let tmp6 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = CollectiblesCategoryStore;
   callback2(CollectiblesCategoryStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      const items = [closure_8];
-      this.syncWith(items, closure_31);
+      const items = [outer1_8];
+      this.syncWith(items, outer1_31);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "isFetchingCategories",
     get() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[1] = obj;
@@ -197,7 +197,7 @@ let tmp6 = (Store) => {
       let tmp = null != arg0;
       if (tmp) {
         let state;
-        if (null != closure_18[arg0]) {
+        if (null != outer1_18[arg0]) {
           state = tmp3.state;
         }
         tmp = "fetching" === state;
@@ -212,7 +212,7 @@ let tmp6 = (Store) => {
       let tmp = null != arg0;
       if (tmp) {
         let pending;
-        if (null != closure_17[arg0]) {
+        if (null != outer1_17[arg0]) {
           pending = tmp3.pending;
         }
         tmp = true === pending;
@@ -223,49 +223,49 @@ let tmp6 = (Store) => {
   items[4] = {
     key: "error",
     get() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[5] = {
     key: "lastErrorTimestamp",
     get() {
-      return closure_24;
+      return outer1_24;
     }
   };
   items[6] = {
     key: "lastSuccessfulFetch",
     get() {
-      return closure_23;
+      return outer1_23;
     }
   };
   items[7] = {
     key: "lastFetchOptions",
     get() {
-      return closure_25;
+      return outer1_25;
     }
   };
   items[8] = {
     key: "categories",
     get() {
-      return closure_19;
+      return outer1_19;
     }
   };
   items[9] = {
     key: "products",
     get() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[10] = {
     key: "productsWithVariantsAsGroup",
     get() {
-      return closure_16;
+      return outer1_16;
     }
   };
   items[11] = {
     key: "skipNumCategories",
     get() {
-      return closure_26;
+      return outer1_26;
     }
   };
   items[12] = {
@@ -273,7 +273,7 @@ let tmp6 = (Store) => {
     value(arg0) {
       let value;
       if (null != arg0) {
-        value = closure_19.get(arg0);
+        value = outer1_19.get(arg0);
       }
       return value;
     }
@@ -283,7 +283,7 @@ let tmp6 = (Store) => {
     value(arg0) {
       let value;
       if (null != arg0) {
-        value = closure_14.get(arg0);
+        value = outer1_14.get(arg0);
       }
       return value;
     }
@@ -291,7 +291,7 @@ let tmp6 = (Store) => {
   items[14] = {
     key: "getProductsBySkus",
     value(arr) {
-      const mapped = arr.map((arg0) => closure_14.get(arg0));
+      const mapped = arr.map((arg0) => outer2_14.get(arg0));
       return mapped.filter((arg0) => null != arg0);
     }
   };
@@ -300,7 +300,7 @@ let tmp6 = (Store) => {
     value(arg0) {
       let tmp;
       if (null != arg0) {
-        tmp = closure_18[arg0];
+        tmp = outer1_18[arg0];
       }
       return tmp;
     }
@@ -310,7 +310,7 @@ let tmp6 = (Store) => {
     value(arg0) {
       let value;
       if (null != arg0) {
-        value = closure_15.get(arg0);
+        value = outer1_15.get(arg0);
       }
       return value;
     }
@@ -320,7 +320,7 @@ let tmp6 = (Store) => {
     value(arg0) {
       let value;
       if (null != arg0) {
-        value = closure_20.get(arg0);
+        value = outer1_20.get(arg0);
       }
       return value;
     }
@@ -337,13 +337,13 @@ let tmp6 = (Store) => {
     }
   };
   return callback(CollectiblesCategoryStore, items);
-}(importDefault(dependencyMap[12]).Store);
+})(require("initialize").Store);
 tmp6.displayName = "CollectiblesCategoryStore";
-tmp6 = new tmp6(importDefault(dependencyMap[9]), {
+tmp6 = new tmp6(require("dispatcher"), {
   COLLECTIBLES_CATEGORIES_FETCH: function handleFetchCategories(options) {
-    let closure_21 = true;
-    let closure_22;
-    let closure_24;
+    let c21 = true;
+    let c22;
+    let c24;
     options = options.options;
   },
   COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: function handleFetchCategoriesSuccess(categories) {
@@ -356,20 +356,18 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
     if (0 === mapped.length) {
       let closure_14 = map1;
     } else {
-      const obj = arg1(dependencyMap[10]);
-      const items = [];
+      obj = map(22);
+      let items = [];
       HermesBuiltin.arraySpread(map.values(), 0);
       if (!obj.isEqual(items, mapped)) {
         if (!categories.noOp) {
           const _Map = Map;
-          const map = new Map(mapped.map((skuId) => {
+          map = new Map(mapped.map((skuId) => {
             const items = [skuId.skuId, skuId];
             return items;
           }));
-          const arg1 = map;
           const _Date = Date;
           const date = new Date();
-          const importDefault = date;
           const item = map.forEach((unpublishedAt) => {
             let tmp = !map.has(arg1);
             if (tmp) {
@@ -388,14 +386,14 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
       }
     }
     let closure_23 = Date.now();
-    let closure_21 = false;
-    let closure_22;
-    let closure_24;
+    let c21 = false;
+    let c22;
+    let c24;
   },
   COLLECTIBLES_CATEGORIES_FETCH_FAILURE: function handleFetchCategoriesFailure(error) {
     let closure_19 = map;
     let closure_14 = map1;
-    let closure_21 = false;
+    let c21 = false;
     let closure_18 = {};
     error = error.error;
     let closure_24 = Date.now();
@@ -447,13 +445,13 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
     const result = map1.set(skuId, product);
     const obj = { state: "success" };
     let startedAt;
-    if (null != closure_18[skuId]) {
+    if (null != dependencyMap2[skuId]) {
       startedAt = tmp6.startedAt;
     }
     obj.startedAt = startedAt;
     obj.endedAt = endedAt.endedAt;
-    closure_18[skuId] = obj;
-    if (null != closure_17[skuId]) {
+    dependencyMap2[skuId] = obj;
+    if (null != dependencyMap[skuId]) {
       obj2.succeed();
     }
   },
@@ -461,35 +459,34 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
     let endedAt;
     let error;
     skuId = skuId.skuId;
-    const arg1 = skuId;
-    const obj = { state: "error" };
+    let obj = { state: "error" };
     let startedAt;
     ({ error, endedAt } = skuId);
-    if (null != closure_18[skuId]) {
+    if (null != dependencyMap2[skuId]) {
       startedAt = tmp2.startedAt;
     }
     obj.startedAt = startedAt;
     obj.endedAt = endedAt;
     obj.error = error;
-    closure_18[skuId] = obj;
-    let obj2 = closure_17[skuId];
+    dependencyMap2[skuId] = obj;
+    let obj2 = dependencyMap[skuId];
     if (null == obj2) {
-      let tmp6 = importDefault(dependencyMap[8]);
+      let tmp6 = importDefault(561);
       const prototype = tmp6.prototype;
       tmp6 = new tmp6(closure_10, closure_11);
-      closure_17[skuId] = tmp6;
+      dependencyMap[skuId] = tmp6;
       obj2 = tmp6;
     }
     if (!obj2.pending) {
       obj2.fail(() => {
-        let obj = callback(closure_2[9]);
+        let obj = outer1_1(outer1_2[9]);
         obj = { type: "COLLECTIBLES_PRODUCT_FETCH_BACKOFF_EXPIRED", skuId };
         return obj.dispatch(obj);
       });
     }
   },
   COLLECTIBLES_PRODUCT_FETCH_BACKOFF_EXPIRED: function handleProductFetchBackoffExpired(arg0) {
-    if (null != closure_17[arg0.skuId]) {
+    if (null != dependencyMap[arg0.skuId]) {
       obj.cancel();
     }
   },
@@ -502,7 +499,7 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
         return items;
       }));
       const _Map2 = Map;
-      const items = [];
+      let items = [];
       HermesBuiltin.arraySpread(map, HermesBuiltin.arraySpread(map, 0));
       const map1 = new Map(items);
       updateCategoriesAndProducts(map1);
@@ -513,6 +510,6 @@ tmp6 = new tmp6(importDefault(dependencyMap[9]), {
   },
   LOGOUT: reset
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/collectibles/CollectiblesCategoryStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/collectibles/CollectiblesCategoryStore.tsx");
 
 export default tmp6;

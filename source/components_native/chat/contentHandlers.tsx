@@ -1,12 +1,14 @@
-// Module ID: 10855
-// Function ID: 84464
+// Module ID: 10865
+// Function ID: 84513
 // Name: onLongPressLink
-// Dependencies: []
+// Dependencies: [5, 9525, 9581, 8341, 3827, 9528, 8492, 5484, 4098, 10866, 1934, 21, 3803, 1212, 5492, 3830, 4470, 9385, 2]
 
-// Module 10855 (onLongPressLink)
-const importDefaultResult = importDefault(dependencyMap[0]);
-const obj = { onLongPressLink };
-function onLongPressLink(nativeEvent) {
+// Module 10865 (onLongPressLink)
+import importDefaultResult from "castNativeSyntheticEventData";
+
+const require = arg1;
+let obj = { onLongPressLink };
+onLongPressLink = function onLongPressLink(nativeEvent) {
   const url = nativeEvent.nativeEvent.url;
   let tmp = null != url;
   if (tmp) {
@@ -14,9 +16,9 @@ function onLongPressLink(nativeEvent) {
   }
   if (tmp) {
     const obj = { urlString: url };
-    importDefault(dependencyMap[1])(obj);
+    importDefault(9525)(obj);
   }
-}
+};
 // CreateGeneratorClosureLongIndex (0x67)
 let closure_4 = importDefaultResult(onLongPressLink);
 const fn = function() {
@@ -35,58 +37,57 @@ obj.onTapMention = function onTapMention(nativeEvent) {
   let roleId;
   let roleName;
   let userId;
-  let obj = arg1(dependencyMap[5]);
+  let obj = parsedUserId(9528);
   const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
   ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
-  const arg1 = parsedUserId;
   ({ roleId, guildId } = nativeSyntheticEventData);
   if (null != userId) {
     obj = { userId, channelId };
-    const items = [importDefault(dependencyMap[7]).USER_MENTION];
+    const items = [importDefault(5484).USER_MENTION];
     obj.sourceAnalyticsLocations = items;
-    importDefault(dependencyMap[6])(obj);
-    const tmp22 = importDefault(dependencyMap[6]);
+    importDefault(8492)(obj);
+    const tmp22 = importDefault(8492);
   } else {
     if (null != roleId) {
       if (null != guildId) {
         obj = { guildId, roleId, channelId };
-        importDefault(dependencyMap[8]).openLazy(arg1(dependencyMap[10])(dependencyMap[9], dependencyMap.paths), "RoleMembersActionSheet", obj);
-        const obj9 = importDefault(dependencyMap[8]);
+        importDefault(4098).openLazy(parsedUserId(1934)(10866, dependencyMap.paths), "RoleMembersActionSheet", obj);
+        const obj9 = importDefault(4098);
       }
     }
     if ("@everyone" === roleName) {
       if (null != guildId) {
         const obj1 = { guildId };
-        const obj6 = importDefault(dependencyMap[8]);
-        const tmp14 = arg1(dependencyMap[10])(dependencyMap[9], dependencyMap.paths);
-        obj1.roleId = importDefault(dependencyMap[11]).castGuildIdAsEveryoneGuildRoleId(guildId);
+        const obj6 = importDefault(4098);
+        const tmp14 = parsedUserId(1934)(10866, dependencyMap.paths);
+        obj1.roleId = importDefault(21).castGuildIdAsEveryoneGuildRoleId(guildId);
         obj1.channelId = channelId;
         obj6.openLazy(tmp14, "RoleMembersActionSheet", obj1);
-        const obj8 = importDefault(dependencyMap[11]);
+        const obj8 = importDefault(21);
       }
     }
     if (null == roleName) {
-      const DeveloperMode = arg1(dependencyMap[12]).DeveloperMode;
+      const DeveloperMode = parsedUserId(3803).DeveloperMode;
       if (DeveloperMode.getSetting()) {
         if (null != parsedUserId) {
           const obj2 = {};
-          const intl = arg1(dependencyMap[13]).intl;
-          obj2.secondaryConfirmText = intl.string(arg1(dependencyMap[13]).t./AXYnE);
+          const intl = parsedUserId(1212).intl;
+          obj2.secondaryConfirmText = intl.string(parsedUserId(1212).t["/AXYnE"]);
           obj2.onConfirmSecondary = function onConfirmSecondary() {
-            parsedUserId(closure_2[14]).copy(parsedUserId);
-            const obj = parsedUserId(closure_2[14]);
-            const result = parsedUserId(closure_2[15]).presentCopiedToClipboard();
+            parsedUserId(outer1_2[14]).copy(parsedUserId);
+            const obj = parsedUserId(outer1_2[14]);
+            const result = parsedUserId(outer1_2[15]).presentCopiedToClipboard();
           };
           let obj4 = obj2;
         }
-        let obj3 = importDefault(dependencyMap[16]);
+        let obj3 = importDefault(4470);
         obj3 = {};
-        const intl2 = arg1(dependencyMap[13]).intl;
-        obj3.title = intl2.string(arg1(dependencyMap[13]).t.r0DLNm);
-        const intl3 = arg1(dependencyMap[13]).intl;
-        obj3.body = intl3.string(arg1(dependencyMap[13]).t.Fqqbhg);
-        const intl4 = arg1(dependencyMap[13]).intl;
-        obj3.confirmText = intl4.string(arg1(dependencyMap[13]).t.BddRzS);
+        const intl2 = parsedUserId(1212).intl;
+        obj3.title = intl2.string(parsedUserId(1212).t.r0DLNm);
+        const intl3 = parsedUserId(1212).intl;
+        obj3.body = intl3.string(parsedUserId(1212).t.Fqqbhg);
+        const intl4 = parsedUserId(1212).intl;
+        obj3.confirmText = intl4.string(parsedUserId(1212).t.BddRzS);
         const merged = Object.assign(obj4);
         obj3.show(obj3);
       }
@@ -95,7 +96,7 @@ obj.onTapMention = function onTapMention(nativeEvent) {
   }
 };
 obj.onTapTimestamp = function onTapTimestamp(nativeEvent) {
-  arg1(dependencyMap[15]).presentTimestamp(nativeEvent.nativeEvent.node.full);
+  require(3830) /* presentAddedFriendToast */.presentTimestamp(nativeEvent.nativeEvent.node.full);
 };
 obj.onTapInlineCode = function onTapInlineCode(nativeEvent) {
   const node = nativeEvent.nativeEvent.node;
@@ -104,15 +105,15 @@ obj.onTapInlineCode = function onTapInlineCode(nativeEvent) {
     tmp = "string" === typeof node.content;
   }
   if (tmp) {
-    arg1(dependencyMap[14]).copy(node.content);
-    const obj = arg1(dependencyMap[14]);
-    const result = arg1(dependencyMap[15]).presentCopiedToClipboard();
-    const obj2 = arg1(dependencyMap[15]);
+    require(5492) /* _copy */.copy(node.content);
+    const obj = require(5492) /* _copy */;
+    const result = require(3830) /* presentAddedFriendToast */.presentCopiedToClipboard();
+    const obj2 = require(3830) /* presentAddedFriendToast */;
   }
 };
 obj.onTapEmoji = function onTapEmoji(emojiNode) {
-  importDefault(dependencyMap[8]).openLazy(arg1(dependencyMap[10])(dependencyMap[17], dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(9385, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
 };
-const result = arg1(dependencyMap[18]).fileFinishedImporting("components_native/chat/contentHandlers.tsx");
+let result = require("isAttachmentUrl").fileFinishedImporting("components_native/chat/contentHandlers.tsx");
 
 export const contentHandlers = obj;

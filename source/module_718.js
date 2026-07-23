@@ -1,7 +1,7 @@
 // Module ID: 718
-// Function ID: 8741
-// Dependencies: []
+// Function ID: 8742
+// Dependencies: [580]
 
 // Module 718
 
-export default require(dependencyMap[0]).__core-js_shared__;
+export { "__core-js_shared__" as default } from "module_580";

@@ -1,25 +1,25 @@
-// Module ID: 5159
-// Function ID: 44940
+// Module ID: 5162
+// Function ID: 44959
 // Name: DeprecatedLayoutAnimation
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [27, 4122, 477, 2]
 // Exports: DeprecatedLayoutAnimationKeyboard
 
-// Module 5159 (DeprecatedLayoutAnimation)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+// Module 5162 (DeprecatedLayoutAnimation)
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import obj from "module_150";
 import obj from "module_150";
-import __exportStarResult1 from "__exportStarResult1";
 
 let LayoutAnimation;
+let closure_2;
 class DeprecatedLayoutAnimation {
   constructor(arg0) {
-    useReducedMotion = importDefault.useReducedMotion;
+    useReducedMotion = _isNativeReflectConstruct.useReducedMotion;
     if (!useReducedMotion) {
-      tmp = require;
-      tmp2 = dependencyMap;
+      tmp = closure_0;
+      tmp2 = closure_1;
       num = 2;
-      obj = require("__exportStarResult1");
+      obj = require("set");
       useReducedMotion = obj.isAndroid();
     }
     if (!useReducedMotion) {
@@ -35,8 +35,8 @@ class DeprecatedLayoutAnimation {
     return;
   }
 }
-({ Keyboard: closure_2, LayoutAnimation } = __exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/animations/native/DeprecatedLayoutAnimation.tsx");
+({ Keyboard: closure_2, LayoutAnimation } = get_ActivityIndicator);
+const result = require("set").fileFinishedImporting("modules/animations/native/DeprecatedLayoutAnimation.tsx");
 
 export const CONFIG_GUILD_FOLDER_OPACITY = obj;
 export const CONFIG_GUILD_FOLDER_SCALEXY = obj;
@@ -47,7 +47,7 @@ export const DeprecatedLayoutAnimationKeyboard = function DeprecatedLayoutAnimat
     flag = false;
   }
   if (flag) {
-    let obj = require(dependencyMap[2]);
+    let obj = require(477) /* set */;
     if (!obj.isAndroid()) {
       obj = { duration: keyboardDuration };
       return closure_2.scheduleLayoutAnimation(obj);

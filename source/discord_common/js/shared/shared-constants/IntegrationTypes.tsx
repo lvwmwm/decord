@@ -1,12 +1,15 @@
-// Module ID: 16173
-// Function ID: 124639
+// Module ID: 16290
+// Function ID: 126812
 // Name: set
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 16173 (set)
-const obj = { SYNCABLE: new Set([null, null]) };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationTypes.tsx");
+// Module 16290 (set)
+import set from "set";
+
+const obj = {};
+let set = new Set(["twitch", "youtube"]);
+obj.SYNCABLE = set;
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationTypes.tsx");
 
 export const IntegrationTypes = { DISCORD: "discord", TWITCH: "twitch", YOUTUBE: "youtube", GUILD_SUBSCRIPTION: "guild_subscription" };
 export const IntegrationTypesSets = obj;

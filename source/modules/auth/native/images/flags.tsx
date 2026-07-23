@@ -1,10 +1,10 @@
-// Module ID: 14142
-// Function ID: 107310
+// Module ID: 14256
+// Function ID: 109466
 // Name: flags
-// Dependencies: []
+// Dependencies: [14257, 14258, 14259, 14260, 14261, 14262, 14263, 14264, 14265, 14266, 14267, 14268, 14269, 14270, 14271, 14272, 14273, 14274, 14275, 14276, 14277, 14278, 14279, 14280, 14281, 14282, 14283, 14284, 14285, 14286, 14287, 2]
 
-// Module 14142 (flags)
-const _module = require(dependencyMap[31]);
-const result = _module.fileFinishedImporting("modules/auth/native/images/flags.tsx");
+// Module 14256 (flags)
+const obj = { bg: require("registerAsset"), cs: require("registerAsset"), da: require("registerAsset"), de: require("registerAsset"), el: require("registerAsset"), "en-GB": require("registerAsset"), "en-US": require("registerAsset"), "es-ES": require("registerAsset"), "es-419": require("registerAsset"), fi: require("registerAsset"), fr: require("registerAsset"), hi: require("registerAsset"), hr: require("registerAsset"), hu: require("registerAsset"), it: require("registerAsset"), ja: require("registerAsset"), ko: require("registerAsset"), lt: require("registerAsset"), nl: require("registerAsset"), no: require("registerAsset"), pl: require("registerAsset"), "pt-BR": require("registerAsset"), ro: require("registerAsset"), ru: require("registerAsset"), "sv-SE": require("registerAsset"), th: require("registerAsset"), tr: require("registerAsset"), uk: require("registerAsset"), vi: require("registerAsset"), "zh-CN": require("registerAsset"), "zh-TW": require("registerAsset") };
+const result = require("registerAsset").fileFinishedImporting("modules/auth/native/images/flags.tsx");
 
-export const flags = { bg: require(dependencyMap[0]), cs: require(dependencyMap[1]), da: require(dependencyMap[2]), de: require(dependencyMap[3]), el: require(dependencyMap[4]), en-GB: require(dependencyMap[5]), en-US: require(dependencyMap[6]), es-ES: require(dependencyMap[7]), es-419: require(dependencyMap[8]), fi: require(dependencyMap[9]), fr: require(dependencyMap[10]), hi: require(dependencyMap[11]), hr: require(dependencyMap[12]), hu: require(dependencyMap[13]), it: require(dependencyMap[14]), ja: require(dependencyMap[15]), ko: require(dependencyMap[16]), lt: require(dependencyMap[17]), nl: require(dependencyMap[18]), no: require(dependencyMap[19]), pl: require(dependencyMap[20]), pt-BR: require(dependencyMap[21]), ro: require(dependencyMap[22]), ru: require(dependencyMap[23]), sv-SE: require(dependencyMap[24]), th: require(dependencyMap[25]), tr: require(dependencyMap[26]), uk: require(dependencyMap[27]), vi: require(dependencyMap[28]), zh-CN: require(dependencyMap[29]), zh-TW: require(dependencyMap[30]) };
+export const flags = obj;

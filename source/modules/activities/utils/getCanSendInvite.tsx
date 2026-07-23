@@ -1,19 +1,21 @@
-// Module ID: 12194
-// Function ID: 93735
+// Module ID: 12308
+// Function ID: 95886
 // Name: getCanSendInvite
-// Dependencies: []
+// Dependencies: [653, 10906, 5689, 10907, 10908, 10909, 2]
 // Exports: getCanSendInvite
 
-// Module 12194 (getCanSendInvite)
-const _module = require(dependencyMap[0]);
-({ ActivityFlags: closure_3, ActivityActionTypes: closure_4 } = _module);
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/activities/utils/getCanSendInvite.tsx");
+// Module 12308 (getCanSendInvite)
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+({ ActivityFlags: closure_3, ActivityActionTypes: closure_4 } = ME);
+const result = require("hasFlag").fileFinishedImporting("modules/activities/utils/getCanSendInvite.tsx");
 
 export const getCanSendInvite = function getCanSendInvite(activity, author, applicationFromMessage, id1) {
   if (author.author.id === id1) {
     return false;
-  } else if (importDefault(dependencyMap[1])(activity, author, applicationFromMessage.id)) {
+  } else if (importDefault(10906)(activity, author, applicationFromMessage.id)) {
     activity = author.activity;
     let type;
     if (null != activity) {
@@ -21,13 +23,13 @@ export const getCanSendInvite = function getCanSendInvite(activity, author, appl
     }
     if (type !== constants2.JOIN_REQUEST) {
       return false;
-    } else if (importDefault(dependencyMap[2])(activity, constants.JOIN)) {
-      const partySize = require(dependencyMap[3]).getPartySize(activity);
-      const obj = require(dependencyMap[3]);
-      let isPartyFullResult = !require(dependencyMap[4]).hasPartySize(partySize);
+    } else if (importDefault(5689)(activity, constants.JOIN)) {
+      const partySize = require(10907) /* getPartySize */.getPartySize(activity);
+      const obj = require(10907) /* getPartySize */;
+      let isPartyFullResult = !require(10908) /* hasPartySize */.hasPartySize(partySize);
       if (!isPartyFullResult) {
-        isPartyFullResult = require(dependencyMap[5]).isPartyFull(partySize);
-        const obj3 = require(dependencyMap[5]);
+        isPartyFullResult = require(10909) /* isPartyFull */.isPartyFull(partySize);
+        const obj3 = require(10909) /* isPartyFull */;
       }
       return !isPartyFullResult;
     } else {

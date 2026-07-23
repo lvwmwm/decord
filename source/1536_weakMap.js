@@ -1,96 +1,95 @@
 // Module ID: 1536
-// Function ID: 17520
+// Function ID: 17521
 // Name: weakMap
-// Dependencies: []
+// Dependencies: [57, 29, 31, 33, 1537, 1459, 1538, 1539, 1540, 1542, 1534, 1543]
 
 // Module 1536 (weakMap)
-let closure_3 = [0, 0.053, 0.978, 1, 0];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
+import _slicedToArray from "_slicedToArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let closure_3 = ["theme", "linking", "fallback", "documentTitle", "onReady"];
 const weakMap = new WeakMap();
 global.REACT_NAVIGATION_DEVTOOLS = weakMap;
 
 export default importAllResult.forwardRef(function NavigationContainerInner(theme) {
   theme = theme.theme;
   if (undefined === theme) {
-    theme = importDefault(dependencyMap[4]);
+    theme = onReady(1537);
   }
   const linking = theme.linking;
-  const arg1 = linking;
   const fallback = theme.fallback;
   let tmp22Result = null;
   if (undefined !== fallback) {
     tmp22Result = fallback;
   }
-  const onReady = theme.onReady;
-  const importDefault = onReady;
-  const tmp4 = callback2(theme, closure_3);
+  onReady = theme.onReady;
+  const tmp4 = callback(theme, ref);
   let tmp6 = !tmp5;
   if (!!linking) {
     tmp6 = false !== linking.enabled;
   }
   const dependencyMap = tmp6;
   if (tmp7) {
-    let obj = arg1(dependencyMap[5]);
+    let obj = linking(1459);
     obj.validatePathConfig(linking.config);
   }
-  const ref = importAllResult.useRef(null);
-  closure_3 = ref;
-  importDefault(dependencyMap[6])(ref);
-  importDefault(dependencyMap[7])(ref, theme.documentTitle);
+  ref = importAllResult.useRef(null);
+  onReady(1538)(ref);
+  onReady(1539)(ref, theme.documentTitle);
   obj = { independent: tmp4.independent, enabled: tmp6, prefixes: [] };
   const effect = importAllResult.useEffect(() => {
     if (ref.current) {
-      const obj = {};
+      let obj = {};
       Object.defineProperty(obj, "linking", {
         get: () => {
-            const obj = { enabled: closure_2 };
+            const obj = { enabled: outer1_2 };
             let prefixes;
-            if (null != lib) {
-              prefixes = lib.prefixes;
+            if (null != outer1_0) {
+              prefixes = outer1_0.prefixes;
             }
             if (null == prefixes) {
               prefixes = [];
             }
             obj.prefixes = prefixes;
             let getStateFromPath;
-            if (null != lib) {
-              getStateFromPath = lib.getStateFromPath;
+            if (null != outer1_0) {
+              getStateFromPath = outer1_0.getStateFromPath;
             }
             if (null == getStateFromPath) {
-              getStateFromPath = lib(closure_2[5]).getStateFromPath;
+              getStateFromPath = linking(1459).getStateFromPath;
             }
             obj.getStateFromPath = getStateFromPath;
             let getPathFromState;
-            if (null != lib) {
-              getPathFromState = lib.getPathFromState;
+            if (null != outer1_0) {
+              getPathFromState = outer1_0.getPathFromState;
             }
             if (null == getPathFromState) {
-              getPathFromState = lib(closure_2[5]).getPathFromState;
+              getPathFromState = linking(1459).getPathFromState;
             }
             obj.getPathFromState = getPathFromState;
             let getActionFromState;
-            if (null != lib) {
-              getActionFromState = lib.getActionFromState;
+            if (null != outer1_0) {
+              getActionFromState = outer1_0.getActionFromState;
             }
             if (null == getActionFromState) {
-              getActionFromState = lib(closure_2[5]).getActionFromState;
+              getActionFromState = linking(1459).getActionFromState;
             }
             obj.getActionFromState = getActionFromState;
-            return Object.assign({}, lib, obj);
+            return Object.assign({}, outer1_0, obj);
           },
         set: undefined
       });
       const result = globalThis.REACT_NAVIGATION_DEVTOOLS.set(ref.current, obj);
     }
   });
-  const tmp16 = callback(importDefault(dependencyMap[9])(importDefault(dependencyMap[8])(ref, Object.assign(obj, linking)).getInitialState), 2);
+  const tmp16 = first(onReady(1542)(onReady(1540)(ref, Object.assign(obj, linking)).getInitialState), 2);
   let initialState = tmp16[1];
   const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ref.current);
   const items = [linking];
-  let first = null != tmp4.initialState;
+  first = null != tmp4.initialState;
   const memo = importAllResult.useMemo(() => ({ options: linking }), items);
   if (!first) {
     first = !tmp6;
@@ -98,10 +97,9 @@ export default importAllResult.forwardRef(function NavigationContainerInner(them
   if (!first) {
     first = tmp16[0];
   }
-  const callback = first;
-  const callback2 = importAllResult.useRef(onReady);
+  callback = importAllResult.useRef(onReady);
   const effect1 = importAllResult.useEffect(() => {
-    closure_5.current = onReady;
+    _objectWithoutProperties.current = onReady;
   });
   const items1 = [first];
   const effect2 = importAllResult.useEffect(() => {
@@ -120,10 +118,10 @@ export default importAllResult.forwardRef(function NavigationContainerInner(them
     }
     obj2.initialState = initialState;
     obj2.ref = ref;
-    obj1.children = jsx(arg1(dependencyMap[5]).BaseNavigationContainer, Object.assign({}, tmp4, obj2));
-    obj.children = jsx(importDefault(dependencyMap[11]), obj1);
-    tmp22Result = tmp22(importDefault(dependencyMap[10]).Provider, obj);
-    const tmp25 = importDefault(dependencyMap[11]);
+    obj1.children = jsx(linking(1459).BaseNavigationContainer, Object.assign({}, tmp4, obj2));
+    obj.children = jsx(onReady(1543), { value: theme });
+    tmp22Result = tmp22(onReady(1534).Provider, obj);
+    const tmp25 = onReady(1543);
   }
   return tmp22Result;
 });

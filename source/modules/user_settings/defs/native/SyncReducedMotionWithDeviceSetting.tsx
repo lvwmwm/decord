@@ -1,23 +1,25 @@
-// Module ID: 14134
-// Function ID: 107279
+// Module ID: 14248
+// Function ID: 109435
 // Name: toggle
-// Dependencies: []
+// Dependencies: [4122, 7662, 566, 13370, 10095, 1212, 2]
 
-// Module 14134 (toggle)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+// Module 14248 (toggle)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.St+DJK);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["St+DJK"]);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.ACCESSIBILITY,
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: function useReducedMotionSyncSettingValue() {
-    const items = [closure_2];
-    return arg1(dependencyMap[2]).useStateFromStores(items, () => "auto" === obj.rawPrefersReducedMotion);
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => "auto" === outer1_2.rawPrefersReducedMotion);
   },
   onValueChange: function onReducedMotionSyncSettingValueChange(arg0) {
-    const obj = arg1(dependencyMap[3]);
+    const obj = require(13370) /* setFontSize */;
     let str = "auto";
     if (!arg0) {
       str = obj.systemPrefersReducedMotion;
@@ -25,7 +27,7 @@ obj = {
     const result = obj.setPrefersReducedMotion(str);
   }
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/SyncReducedMotionWithDeviceSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+let result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/SyncReducedMotionWithDeviceSetting.tsx");
 
-export default toggle;
+export default createToggle;

@@ -1,13 +1,13 @@
-// Module ID: 6259
-// Function ID: 50321
+// Module ID: 6264
+// Function ID: 50350
 // Name: HeroIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6265, 2]
 // Exports: HeroIllocon
 
-// Module 6259 (HeroIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/HeroIllocon.native.tsx");
+// Module 6264 (HeroIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HeroIllocon.native.tsx");
 
 export const HeroIllocon = function HeroIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const HeroIllocon = function HeroIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6265) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const HeroIllocon = function HeroIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

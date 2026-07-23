@@ -1,41 +1,41 @@
-// Module ID: 9626
-// Function ID: 74982
-// Dependencies: []
+// Module ID: 9633
+// Function ID: 75023
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5189, 1273, 1212, 9634, 2]
 
-// Module 9626
-const importAllResult = importAll(dependencyMap[0]);
-const ScrollView = arg1(dependencyMap[1]).ScrollView;
-const EXPRESSION_FOOTER_HEIGHT = arg1(dependencyMap[2]).EXPRESSION_FOOTER_HEIGHT;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj1 = arg1(dependencyMap[4]);
-let obj = { emptyStateContainer: {} };
-obj = { color: importDefault(dependencyMap[5]).colors.TEXT_SUBTLE };
+// Module 9633
+import importAllResult from "result";
+import { ScrollView } from "get ActivityIndicator";
+import { EXPRESSION_FOOTER_HEIGHT } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let obj = { emptyStateContainer: { padding: 0, flex: 1 } };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
 obj.emptyStateBody = obj;
-obj1 = { marginBottom: importDefault(dependencyMap[5]).space.PX_8, marginTop: 0 };
-obj.emptyStateImage = obj1;
-let closure_7 = obj1.createStyles(obj);
+_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: 0 };
+obj.emptyStateImage = _createForOfIteratorHelperLoose;
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function StickerPickerListEmptyState(insetTop) {
   insetTop = insetTop.insetTop;
-  const arg1 = insetTop;
   const insetBottom = insetTop.insetBottom;
-  const importDefault = insetBottom;
   const items = [insetBottom, insetTop];
-  const memo = importAllResult.useMemo(() => ({ marginBottom: insetBottom + closure_5, marginTop: insetTop, flex: 1 }), items);
+  const memo = importAllResult.useMemo(() => ({ marginBottom: insetBottom + outer1_5, marginTop: insetTop, flex: 1 }), items);
   if (insetTop.inActionSheet) {
-    let BottomSheetScrollView = arg1(dependencyMap[6]).BottomSheetScrollView;
+    let BottomSheetScrollView = insetTop(5189).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
   let obj = { contentContainerStyle: memo, keyboardShouldPersistTaps: "always" };
   obj = {};
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.body = intl.string(arg1(dependencyMap[8]).t.jyiGfc);
+  const intl = insetTop(1212).intl;
+  obj.body = intl.string(insetTop(1212).t.jyiGfc);
   ({ emptyStateBody: obj2.bodyStyle, emptyStateContainer: obj2.containerStyle, emptyStateImage: obj2.imageStyle } = callback());
-  obj.source = importDefault(dependencyMap[9]);
+  obj.source = insetBottom(9634);
   obj.titleStyle = { marginBottom: 0 };
-  obj.children = jsx(arg1(dependencyMap[7]).RefreshEmptyState, obj);
-  return <BottomSheetScrollView {...obj} />;
+  obj.children = jsx(insetTop(1273).RefreshEmptyState, {});
+  return <BottomSheetScrollView />;
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/stickers/native/StickerPickerListEmptyState.tsx");
+const result = require("ME").fileFinishedImporting("modules/stickers/native/StickerPickerListEmptyState.tsx");
 
 export default memoResult;

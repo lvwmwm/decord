@@ -1,33 +1,35 @@
-// Module ID: 10933
-// Function ID: 85043
+// Module ID: 10943
+// Function ID: 85092
 // Name: getPendingFolderGuildIds
-// Dependencies: []
+// Dependencies: [3948, 1838, 566, 2]
 // Exports: default
 
-// Module 10933 (getPendingFolderGuildIds)
+// Module 10943 (getPendingFolderGuildIds)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function getPendingFolderGuildIds() {
   let obj;
   let obj2;
   let tmp = arg0;
   if (arg0 === undefined) {
-    const items = [closure_2, closure_3];
+    const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
     tmp = items;
   }
   [obj, obj2] = tmp;
   let guilds;
   const guildIds = obj.computeGuildIds();
   guilds = obj2.getGuilds();
-  return guildIds.filter((arg0) => null == closure_0[arg0]);
+  return guildIds.filter((arg0) => null == table[arg0]);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
+const result = require("initialize").fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
 
 export default function usePendingFolderGuildIds() {
-  const items = [closure_2, closure_3];
-  return arg1(dependencyMap[2]).useStateFromStoresArray(items, () => {
-    const items = [closure_2, closure_3];
-    return callback(items);
+  let items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
+  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
+    const items = [outer1_2, outer1_3];
+    return outer1_4(items);
   });
 };
 export { getPendingFolderGuildIds };

@@ -1,11 +1,16 @@
-// Module ID: 8478
-// Function ID: 67675
+// Module ID: 8484
+// Function ID: 67712
 // Name: makeOption
-// Dependencies: []
+// Dependencies: [1348, 1907, 3758, 653, 1212, 8363, 566, 2]
 // Exports: getInviteChannelId, shouldRenderInvite, useShouldShowInviteInActionBar
 
-// Module 8478 (makeOption)
-import option from "module_0";
+// Module 8484 (makeOption)
+import closure_2 from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+import option from "_isNativeReflectConstruct";
 import option1 from "module_604800";
 import option2 from "module_1209600";
 import option3 from "module_2592000";
@@ -16,34 +21,33 @@ import option7 from "module_21600";
 import option8 from "module_28800";
 import option9 from "module_3600";
 import option10 from "module_1800";
-import option11 from "module_0";
-import option12 from "module_1";
-import option13 from "module_5";
+import option11 from "_isNativeReflectConstruct";
+import option12 from "_isNativeReflectConstruct";
+import option13 from "canViewInviteModal";
 import option14 from "module_10";
 import option15 from "module_25";
 import option16 from "module_50";
 import option17 from "module_100";
 
+let closure_3;
+let closure_4;
+const require = arg1;
 function makeOption(value, arg1, arg2) {
   let tmp = arg2;
+  let closure_0 = arg1;
   if (arg2 === undefined) {
     tmp = arg1;
   }
   const dependencyMap = tmp;
   const obj = { value };
-  Object.defineProperty(obj, "label", { get: () => arg1(), set: undefined });
+  Object.defineProperty(obj, "label", { get: () => callback(), set: undefined });
   Object.defineProperty(obj, "descriptiveLabel", { get: () => tmp(), set: undefined });
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ GUILD_SELECTABLE_CHANNELS_KEY: closure_3, GUILD_VOCAL_CHANNELS_KEY: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-const Permissions = arg1(dependencyMap[3]).Permissions;
-const items = [option, option4, option3, option2, option1, option5, option6, option7, option9, option10];
-const items1 = [option11, option12, option13, option14, option15, option16, option17];
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("utils/native/InstantInviteUtils.tsx");
+({ GUILD_SELECTABLE_CHANNELS_KEY: closure_3, GUILD_VOCAL_CHANNELS_KEY: closure_4 } = _isNativeReflectConstruct);
+let items = [option, option4, option3, option2, option1, option5, option6, option7, option9, option10];
+let items1 = [option11, option12, option13, option14, option15, option16, option17];
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/native/InstantInviteUtils.tsx");
 
 export const INVITE_OPTIONS_FOREVER = option;
 export const INVITE_OPTIONS_7_DAYS = option1;
@@ -74,9 +78,9 @@ export const getInviteChannelId = function getInviteChannelId(channelId, stateFr
       const obj = { channelId };
       const result = closure_6.canWithPartialContext(Permissions.CREATE_INSTANT_INVITE, obj);
       const combined = stateFromStores[closure_3].concat(stateFromStores[closure_4]);
-      const found = combined.find((channel) => closure_6.can(constants.CREATE_INSTANT_INVITE, channel.channel));
+      const found = combined.find((channel) => outer1_6.can(outer1_7.CREATE_INSTANT_INVITE, channel.channel));
       if (result) {
-        const channel = channel.getChannel(channelId);
+        channel = channel.getChannel(channelId);
         let parent_id = channelId;
         if (null != channel) {
           parent_id = channelId;
@@ -106,16 +110,16 @@ export const shouldRenderInvite = function shouldRenderInvite(channels, guild) {
   }
   let tmp2 = null == vanityURLCode;
   if (!tmp2) {
-    tmp2 = !guild(dependencyMap[5]).canViewInviteModal(closure_6, guild);
-    const obj = guild(dependencyMap[5]);
+    tmp2 = !require(8363) /* canViewInviteModal */.canViewInviteModal(closure_6, guild);
+    const obj = require(8363) /* canViewInviteModal */;
   }
   let tmp6 = !tmp2;
   if (tmp2) {
     let tmp7 = null != channels;
     if (tmp7) {
-      let tmp9 = null != channels[closure_3].find((channel) => closure_6.can(constants.CREATE_INSTANT_INVITE, channel.channel));
+      let tmp9 = null != channels[closure_3].find((channel) => outer1_6.can(outer1_7.CREATE_INSTANT_INVITE, channel.channel));
       if (!tmp9) {
-        tmp9 = null != channels[closure_4].find((channel) => closure_6.can(constants.CREATE_INSTANT_INVITE, channel.channel));
+        tmp9 = null != channels[closure_4].find((channel) => outer1_6.can(outer1_7.CREATE_INSTANT_INVITE, channel.channel));
         const arr2 = channels[closure_4];
       }
       tmp7 = tmp9;
@@ -126,26 +130,26 @@ export const shouldRenderInvite = function shouldRenderInvite(channels, guild) {
   return tmp6;
 };
 export const useShouldShowInviteInActionBar = function useShouldShowInviteInActionBar(id) {
-  const arg1 = id;
+  const _require = id;
   const items = [closure_5];
   const items1 = [id.id];
-  const stateFromStoresObject = arg1(dependencyMap[6]).useStateFromStoresObject(items, () => channels.getChannels(arg0.id), items1);
+  const stateFromStoresObject = _require(566).useStateFromStoresObject(items, () => outer1_5.getChannels(id.id), items1);
   let vanityURLCode;
   if (null != id) {
     vanityURLCode = id.vanityURLCode;
   }
   let tmp3 = null == vanityURLCode;
   if (!tmp3) {
-    tmp3 = !arg1(dependencyMap[5]).canViewInviteModal(closure_6, id);
-    const obj2 = arg1(dependencyMap[5]);
+    tmp3 = !_require(8363).canViewInviteModal(closure_6, id);
+    const obj2 = _require(8363);
   }
   let tmp7 = !tmp3;
   if (tmp3) {
     let tmp8 = null == stateFromStoresObject;
     if (!tmp8) {
-      let tmp10 = null != stateFromStoresObject[closure_3].find((channel) => closure_6.can(constants.CREATE_INSTANT_INVITE, channel.channel));
+      let tmp10 = null != stateFromStoresObject[closure_3].find((channel) => outer1_6.can(outer1_7.CREATE_INSTANT_INVITE, channel.channel));
       if (!tmp10) {
-        tmp10 = null != stateFromStoresObject[closure_4].find((channel) => closure_6.can(constants.CREATE_INSTANT_INVITE, channel.channel));
+        tmp10 = null != stateFromStoresObject[closure_4].find((channel) => outer1_6.can(outer1_7.CREATE_INSTANT_INVITE, channel.channel));
         const arr4 = stateFromStoresObject[closure_4];
       }
       tmp8 = tmp10;

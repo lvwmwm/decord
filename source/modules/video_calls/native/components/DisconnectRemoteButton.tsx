@@ -1,41 +1,43 @@
-// Module ID: 10732
-// Function ID: 83448
+// Module ID: 10742
+// Function ID: 83497
 // Name: DisconnectRemoteButton
-// Dependencies: []
+// Dependencies: [31, 4144, 33, 566, 10549, 7607, 10705, 1212, 9040, 8836, 2]
 // Exports: DisconnectRemoteButton
 
-// Module 10732 (DisconnectRemoteButton)
-importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/video_calls/native/components/DisconnectRemoteButton.tsx");
+// Module 10742 (DisconnectRemoteButton)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/DisconnectRemoteButton.tsx");
 
 export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
-  const arg1 = channel.channel;
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_4];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ awaitingRemote: null != store.getAwaitingRemoteSessionInfo(), remoteSessionId: store.getRemoteSessionId() }));
-  const importDefault = stateFromStoresObject.remoteSessionId;
+  channel = channel.channel;
+  let obj = channel(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ awaitingRemote: null != outer1_4.getAwaitingRemoteSessionInfo(), remoteSessionId: outer1_4.getRemoteSessionId() }));
+  const remoteSessionId = stateFromStoresObject.remoteSessionId;
   obj = {};
   if (stateFromStoresObject.awaitingRemote) {
-    let tmp5 = tmp4[5];
+    let tmp5 = 7607;
   } else {
-    tmp5 = tmp4[6];
+    tmp5 = 10705;
   }
-  obj.source = importDefault(tmp5);
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[7]).t.6vrfgt);
+  obj.source = remoteSessionId(tmp5);
+  const intl = channel(1212).intl;
+  obj.accessibilityLabel = intl.string(channel(1212).t["6vrfgt"]);
   obj.isSmallSize = channel.isSmallSize;
   obj.onPress = function onPress() {
     if (null != remoteSessionId) {
-      channel(closure_3[8]).remoteDisconnect(remoteSessionId);
-      const obj2 = channel(closure_3[8]);
-      channel(closure_3[9]).handleDisconnect(channel);
-      const obj3 = channel(closure_3[9]);
+      channel(outer1_3[8]).remoteDisconnect(remoteSessionId);
+      const obj2 = channel(outer1_3[8]);
+      channel(outer1_3[9]).handleDisconnect(channel);
+      const obj3 = channel(outer1_3[9]);
     } else {
-      channel(closure_3[8]).disconnectRemote();
-      const obj = channel(closure_3[8]);
+      channel(outer1_3[8]).disconnectRemote();
+      const obj = channel(outer1_3[8]);
     }
   };
-  return jsx(importAll(dependencyMap[4]).PrimaryActionButton, obj);
+  return jsx(importAll(10549).PrimaryActionButton, {});
 };

@@ -1,28 +1,29 @@
-// Module ID: 11318
-// Function ID: 88079
+// Module ID: 11328
+// Function ID: 88129
 // Name: FocusHelperState
-// Dependencies: [469762069, 4177526800, 2063597572, 3154116629, 1006632964, 33554476]
+// Dependencies: [7, 6, 31, 44, 5450, 2]
 // Exports: default
 
-// Module 11318 (FocusHelperState)
-const importDefaultResult = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
+// Module 11328 (FocusHelperState)
+import importDefaultResult from "_defineProperties";
+import _classCallCheck from "_classCallCheck";
+import result from "result";
+
 class FocusHelperState {
   constructor() {
-    tmp = closure_3(this, FocusHelperState);
+    tmp = c3(this, FocusHelperState);
     this.refsByKey = {};
     this.keyOrder = [];
     return;
   }
 }
 let closure_5 = importDefaultResult(FocusHelperState);
-let closure_6 = () => {
+let closure_6 = (() => {
   class FocusHelperImpl {
     constructor() {
-      FocusHelperImpl = this;
-      tmp = closure_3(this, FocusHelperImpl);
-      tmp2 = new closure_5();
+      self = this;
+      tmp = outer1_3(this, self);
+      tmp2 = new outer1_5();
       this.validState = tmp2;
       this.focusNext = () => {
         let keyOrder;
@@ -86,11 +87,10 @@ let closure_6 = () => {
       return;
     }
   }
-  const importDefault = FocusHelperImpl;
   let obj = {
     key: "restartState",
     value() {
-      this.pendingState = new closure_5();
+      this.pendingState = new outer1_5();
     }
   };
   const items = [obj, , ];
@@ -110,13 +110,13 @@ let closure_6 = () => {
     key: "refWithKey",
     value(arg0) {
       const pendingState = this.pendingState;
-      FocusHelperImpl(closure_1[3])(null != pendingState, "Called refWithKey without a valid state");
+      FocusHelperImpl(outer1_1[3])(null != pendingState, "Called refWithKey without a valid state");
       const keyOrder = pendingState.keyOrder;
       keyOrder.push(arg0);
       if (null != pendingState.refsByKey[arg0]) {
         return tmp3;
       } else {
-        const ref = React.createRef();
+        const ref = outer1_4.createRef();
         pendingState.refsByKey[arg0] = ref;
         return ref;
       }
@@ -124,18 +124,17 @@ let closure_6 = () => {
   };
   items[2] = obj;
   return importDefaultResult(FocusHelperImpl, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/polls/native/useFocusHelper.tsx");
+})();
+const result = require("result").fileFinishedImporting("modules/polls/native/useFocusHelper.tsx");
 
 export default function useFocusHelper() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  const importDefault = obj.onAddAnswer;
-  let dependencyMap;
-  const obj2 = importDefault(dependencyMap[4])(() => new closure_6());
-  dependencyMap = obj2;
+  const onAddAnswer = obj.onAddAnswer;
+  let obj2;
+  obj2 = onAddAnswer(obj2[4])(() => new outer1_6());
   obj2.restartState();
   const effect = React.useEffect(() => {
     obj2.onAddAnswer = onAddAnswer;

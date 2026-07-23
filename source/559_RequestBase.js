@@ -1,7 +1,7 @@
 // Module ID: 559
 // Function ID: 6734
 // Name: RequestBase
-// Dependencies: [580, 581]
+// Dependencies: [509, 553]
 
 // Module 559 (RequestBase)
 class RequestBase {
@@ -12,9 +12,9 @@ class RequestBase {
     clearTimeoutResult = clearTimeout(this._timer);
     clearTimeoutResult1 = clearTimeout(this._responseTimeoutTimer);
     clearTimeoutResult2 = clearTimeout(this._uploadTimeoutTimer);
-    delete r0._timer;
-    delete r0._responseTimeoutTimer;
-    delete r0._uploadTimeoutTimer;
+    delete tmp._timer;
+    delete tmp._responseTimeoutTimer;
+    delete tmp._uploadTimeoutTimer;
     return this;
   }
   parse(arg0) {
@@ -45,25 +45,25 @@ class RequestBase {
           tmp4 = key10004;
           tmp5 = closure_0;
           tmp6 = closure_1;
-          obj = require("module_580");
+          obj = require("_createForOfIteratorHelper");
           if (!obj.hasOwn(arg0, key10004)) {
             continue;
           } else {
             if ("deadline" === key10004) {
               self._timeout = arg0.deadline;
-              // continue
+              continue;
             } else {
               if ("response" === key10004) {
                 self._responseTimeout = arg0.response;
-                // continue
+                continue;
               } else {
                 if ("upload" === key10004) {
                   self._uploadTimeout = arg0.upload;
-                  // continue
+                  continue;
                 } else {
                   _console = console;
                   warnResult = console.warn("Unknown timeout option", key10004);
-                  // continue
+                  continue;
                 }
                 continue;
               }
@@ -186,9 +186,8 @@ class RequestBase {
   }
   then(arg0, arg1) {
     self = this;
-    require = this;
+    self = this;
     if (!this._fullfilledPromise) {
-      dependencyMap = self;
       if (self._endCalled) {
         tmp = globalThis;
         _console = console;
@@ -201,27 +200,27 @@ class RequestBase {
       tmp4 = new.target;
       tmp5 = new.target;
       promise = new Promise((arg0, arg1) => {
-        let self = arg0;
-        self = arg1;
-        self.on("abort", (self) => {
-          if (!self._maxRetries) {
-            if (self.timedout) {
-              if (self.timedoutError) {
-                arg1(self.timedoutError);
+        let closure_0 = arg0;
+        const _self = arg1;
+        _self.on("abort", () => {
+          if (!lib._maxRetries) {
+            if (lib.timedout) {
+              if (lib.timedoutError) {
+                callback(lib.timedoutError);
               }
             }
             const _Error = Error;
             const error = new Error("Aborted");
             error.code = "ABORTED";
-            ({ status: tmp7.status, method: tmp7.method, url: tmp7.url } = self);
-            arg1(error);
+            ({ status: tmp7.status, method: tmp7.method, url: tmp7.url } = lib);
+            callback(error);
           }
         });
-        self.end((arg0, arg1) => {
+        _self.end((arg0, arg1) => {
           if (arg0) {
-            arg1(arg0);
+            callback(arg0);
           } else {
-            arg0(arg1);
+            lib(arg1);
           }
         });
       });
@@ -280,19 +279,19 @@ class RequestBase {
   }
   set(arg0, arg1) {
     self = this;
-    obj = require("module_580");
+    obj = require("_createForOfIteratorHelper");
     if (obj.isObject(global)) {
       tmp = global;
       for (const key10017 in arg0) {
         tmp3 = key10017;
         tmp4 = closure_0;
         tmp5 = closure_1;
-        obj2 = require("module_580");
+        obj2 = require("_createForOfIteratorHelper");
         if (!obj2.hasOwn(arg0, key10017)) {
           continue;
         } else {
           result = self.set(key10017, arg0[key10017]);
-          // continue
+          continue;
         }
         continue;
       }
@@ -305,8 +304,8 @@ class RequestBase {
   }
   unset(arg0) {
     formatted = global.toLowerCase();
-    delete r3[r1];
-    delete r1[r2];
+    delete tmp3[tmp];
+    delete tmp[tmp2];
     return this;
   }
   field(arg0, arg1, arg2) {
@@ -332,22 +331,22 @@ class RequestBase {
       tmp20 = error1;
       throw error1;
     } else {
-      tmp = require;
-      tmp2 = dependencyMap;
+      tmp = closure_0;
+      tmp2 = closure_1;
       num = 0;
-      obj = require("module_580");
+      obj = require("_createForOfIteratorHelper");
       if (obj.isObject(global)) {
         tmp14 = global;
         for (const key10041 in arg0) {
           tmp29 = key10041;
           tmp30 = closure_0;
           tmp31 = closure_1;
-          obj3 = require("module_580");
+          obj3 = require("_createForOfIteratorHelper");
           if (!obj3.hasOwn(arg0, key10041)) {
             continue;
           } else {
             fieldResult = self.field(key10041, arg0[key10041]);
-            // continue
+            continue;
           }
           continue;
         }
@@ -361,12 +360,12 @@ class RequestBase {
             tmp26 = key10035;
             tmp27 = closure_0;
             tmp28 = closure_1;
-            obj2 = require("module_580");
+            obj2 = require("_createForOfIteratorHelper");
             if (!obj2.hasOwn(arg1, key10035)) {
               continue;
             } else {
               fieldResult1 = self.field(arg0, arg1[key10035]);
-              // continue
+              continue;
             }
             continue;
           }
@@ -411,17 +410,17 @@ class RequestBase {
         abortResult = xhr.abort();
       }
       if (self.req) {
-        tmp2 = require;
-        tmp3 = dependencyMap;
+        tmp2 = closure_0;
+        tmp3 = closure_1;
         num = 1;
-        obj = require("module_581");
+        obj = require("module_553");
         tmp4 = globalThis;
         _process = process;
         str = "v13.0.0";
         if (obj.gte(process.version, "v13.0.0")) {
-          tmp5 = require;
-          tmp6 = dependencyMap;
-          obj2 = require("module_581");
+          tmp5 = closure_0;
+          tmp6 = closure_1;
+          obj2 = require("module_553");
           _process2 = process;
           str2 = "v14.0.0";
           if (obj2.lt(process.version, "v14.0.0")) {
@@ -511,9 +510,9 @@ class RequestBase {
   }
   send(arg0) {
     self = this;
-    obj = require("module_580");
+    obj = require("_createForOfIteratorHelper");
     isObjectResult = obj.isObject(global);
-    content-type = this._header.content-type;
+    content_type = this._header["content-type"];
     if (this._formData) {
       tmp36 = globalThis;
       _Error4 = Error;
@@ -536,9 +535,9 @@ class RequestBase {
           }
         }
         if (isObjectResult) {
-          tmp4 = require;
-          tmp5 = dependencyMap;
-          obj2 = require("module_580");
+          tmp4 = closure_0;
+          tmp5 = closure_1;
+          obj2 = require("_createForOfIteratorHelper");
           if (obj2.isObject(self._data)) {
             tmp19 = global;
             str9 = "bigint";
@@ -562,14 +561,14 @@ class RequestBase {
                     throw error1;
                   }
                 }
-                tmp27 = require;
-                tmp28 = dependencyMap;
-                obj3 = require("module_580");
+                tmp27 = closure_0;
+                tmp28 = closure_1;
+                obj3 = require("_createForOfIteratorHelper");
                 if (!obj3.hasOwn(global, tmp21)) {
                   continue;
                 } else {
                   self._data[tmp21] = global[tmp21];
-                  // continue
+                  continue;
                 }
                 continue;
               }
@@ -601,7 +600,7 @@ class RequestBase {
               str2 = "form";
               typeResult1 = self.type("form");
             }
-            str3 = self._header.content-type;
+            str3 = self._header["content-type"];
             trimmed = str3;
             if (str3) {
               str4 = str3.toLowerCase();
@@ -682,7 +681,7 @@ class RequestBase {
           sorted1 = parts.sort();
         }
         url2 = self.url;
-        str2 = require("module_580") + str2;
+        str2 = require("_createForOfIteratorHelper") + str2;
         self.url = str2 + parts.join("&");
       }
     }
@@ -721,7 +720,7 @@ class RequestBase {
   }
   _setTimeouts() {
     self = this;
-    require = this;
+    self = this;
     tmp = this._timeout && !self._timer;
     if (tmp) {
       tmp2 = globalThis;
@@ -741,8 +740,8 @@ class RequestBase {
     return;
   }
 }
-const set = new Set([]);
-const set1 = new Set([]);
+const set = new Set(["ETIMEDOUT", "ECONNRESET", "EADDRINUSE", "ECONNREFUSED", "EPIPE", "ENOTFOUND", "ENETUNREACH", "EAI_AGAIN"]);
+const set1 = new Set([408, 413, 429, 500, 502, 503, 504, 521, 522, 524]);
 RequestBase.prototype.getHeader = RequestBase.prototype.get;
 
 export default RequestBase;

@@ -1,13 +1,13 @@
-// Module ID: 6061
-// Function ID: 50024
+// Module ID: 6066
+// Function ID: 50053
 // Name: ForceIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6067, 2]
 // Exports: ForceIllocon
 
-// Module 6061 (ForceIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ForceIllocon.native.tsx");
+// Module 6066 (ForceIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ForceIllocon.native.tsx");
 
 export const ForceIllocon = function ForceIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const ForceIllocon = function ForceIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6067) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const ForceIllocon = function ForceIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

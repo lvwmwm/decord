@@ -1,12 +1,11 @@
-// Module ID: 8918
-// Function ID: 70383
+// Module ID: 8925
+// Function ID: 70424
 // Name: openNewUserAgeGateModal
-// Dependencies: []
+// Dependencies: [2]
 // Exports: openClaimAccountModal, openNewUserAgeGateModal
 
-// Module 8918 (openNewUserAgeGateModal)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/claim_account/ClaimAccountModalActionCreators.native.tsx");
+// Module 8925 (openNewUserAgeGateModal)
+const result = require("set").fileFinishedImporting("modules/claim_account/ClaimAccountModalActionCreators.native.tsx");
 
 export function openNewUserAgeGateModal() {
 

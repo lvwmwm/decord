@@ -1,15 +1,14 @@
-// Module ID: 4562
-// Function ID: 40013
+// Module ID: 4566
+// Function ID: 40045
 // Name: TRUE_OPTION_NAME
-// Dependencies: []
+// Dependencies: [1212, 1881, 2]
 // Exports: getValidationErrorText
 
-// Module 4562 (TRUE_OPTION_NAME)
-const items = [{ 0: 24, 0: 24, 0: null }, {}];
+// Module 4566 (TRUE_OPTION_NAME)
+const items = [{ name: "True", displayName: "True", value: "true" }, { name: "False", displayName: "False", value: "false" }];
 const frozen = Object.freeze([]);
 const frozen1 = Object.freeze([]);
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/application_commands/ApplicationCommandConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandConstants.tsx");
 
 export const TRUE_OPTION_NAME = "True";
 export const FALSE_OPTION_NAME = "False";
@@ -30,34 +29,34 @@ export const EMPTY_COMMANDS_SECTION = frozen1;
 export const APPLICATION_USER_INSTALL_BETA_USER_LIMIT = 200;
 export const getValidationErrorText = function getValidationErrorText(option) {
   if (null != option.choices) {
-    const intl9 = require(dependencyMap[0]).intl;
-    return intl9.string(require(dependencyMap[0]).t.xi5aah);
+    const intl9 = require(1212) /* getSystemLocale */.intl;
+    return intl9.string(require(1212) /* getSystemLocale */.t.xi5aah);
   } else {
     const type = option.type;
-    if (require(dependencyMap[1]).ApplicationCommandOptionType.BOOLEAN === type) {
-      const intl8 = require(dependencyMap[0]).intl;
-      return intl8.string(require(dependencyMap[0]).t.ATIx6O);
-    } else if (require(dependencyMap[1]).ApplicationCommandOptionType.CHANNEL === type) {
-      const intl7 = require(dependencyMap[0]).intl;
-      return intl7.string(require(dependencyMap[0]).t.Q0z2Gx);
-    } else if (require(dependencyMap[1]).ApplicationCommandOptionType.INTEGER === type) {
-      const intl6 = require(dependencyMap[0]).intl;
-      return intl6.string(require(dependencyMap[0]).t.d/9Rk4);
-    } else if (require(dependencyMap[1]).ApplicationCommandOptionType.NUMBER === type) {
-      const intl5 = require(dependencyMap[0]).intl;
-      return intl5.string(require(dependencyMap[0]).t.FDyk/V);
-    } else if (require(dependencyMap[1]).ApplicationCommandOptionType.ROLE === type) {
-      const intl4 = require(dependencyMap[0]).intl;
-      return intl4.string(require(dependencyMap[0]).t.vrRQn0);
-    } else if (require(dependencyMap[1]).ApplicationCommandOptionType.USER === type) {
-      const intl3 = require(dependencyMap[0]).intl;
-      return intl3.string(require(dependencyMap[0]).t.i2r7j5);
-    } else if (require(dependencyMap[1]).ApplicationCommandOptionType.MENTIONABLE === type) {
-      const intl2 = require(dependencyMap[0]).intl;
-      return intl2.string(require(dependencyMap[0]).t.I7imec);
+    if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.BOOLEAN === type) {
+      const intl8 = require(1212) /* getSystemLocale */.intl;
+      return intl8.string(require(1212) /* getSystemLocale */.t.ATIx6O);
+    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.CHANNEL === type) {
+      const intl7 = require(1212) /* getSystemLocale */.intl;
+      return intl7.string(require(1212) /* getSystemLocale */.t.Q0z2Gx);
+    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.INTEGER === type) {
+      const intl6 = require(1212) /* getSystemLocale */.intl;
+      return intl6.string(require(1212) /* getSystemLocale */.t["d/9Rk4"]);
+    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.NUMBER === type) {
+      const intl5 = require(1212) /* getSystemLocale */.intl;
+      return intl5.string(require(1212) /* getSystemLocale */.t["FDyk/V"]);
+    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.ROLE === type) {
+      const intl4 = require(1212) /* getSystemLocale */.intl;
+      return intl4.string(require(1212) /* getSystemLocale */.t.vrRQn0);
+    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.USER === type) {
+      const intl3 = require(1212) /* getSystemLocale */.intl;
+      return intl3.string(require(1212) /* getSystemLocale */.t.i2r7j5);
+    } else if (require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.MENTIONABLE === type) {
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      return intl2.string(require(1212) /* getSystemLocale */.t.I7imec);
     } else {
-      const intl = require(dependencyMap[0]).intl;
-      return intl.string(require(dependencyMap[0]).t.EkDo1i);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      return intl.string(require(1212) /* getSystemLocale */.t.EkDo1i);
     }
   }
 };

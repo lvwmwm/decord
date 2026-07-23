@@ -1,13 +1,13 @@
-// Module ID: 12566
-// Function ID: 96665
+// Module ID: 12680
+// Function ID: 98821
 // Name: getFrictionlessGDMsEnabled
-// Dependencies: []
+// Dependencies: [1325, 2]
 // Exports: getFrictionlessGDMsEnabled
 
-// Module 12566 (getFrictionlessGDMsEnabled)
-const obj = { "Bool(false)": "L", "Bool(false)": "GAME_CLAIM_NOTICE_MARGIN_BOTTOM", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const tmp2 = importDefault(dependencyMap[0])(obj);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/header_bar/FrictionlessGDMsExperiment.tsx");
+// Module 12680 (getFrictionlessGDMsEnabled)
+const obj = { kind: "user", name: "2026-05-frictionless-gdms", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const tmp2 = require("getUnitId")(obj);
+const result = require("set").fileFinishedImporting("modules/header_bar/FrictionlessGDMsExperiment.tsx");
 
 export default tmp2;
 export function getFrictionlessGDMsEnabled(PrivateChannelRecipientsInviteStore) {

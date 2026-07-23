@@ -1,25 +1,28 @@
-// Module ID: 5165
-// Function ID: 44966
+// Module ID: 5168
+// Function ID: 44985
 // Name: AnimatedPressableHighlight
-// Dependencies: []
+// Dependencies: [31, 27, 33, 3991, 4660, 5169, 3834, 689, 477, 2]
 
-// Module 5165 (AnimatedPressableHighlight)
-let closure_3 = importAll(dependencyMap[0]);
-const Pressable = arg1(dependencyMap[1]).Pressable;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_6 = importDefault(dependencyMap[3]).createAnimatedComponent(arg1(dependencyMap[4]).PressableHighlight);
-const importDefaultResult = importDefault(dependencyMap[3]);
-const obj2 = arg1(dependencyMap[8]);
-const tmp2 = arg1(dependencyMap[8]).isAndroid() ? function AnimatedPressableHighlightAndroid(children) {
+// Module 5168 (AnimatedPressableHighlight)
+import result from "result";
+import { Pressable } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import set from "set";
+import importDefaultResult from "module_3991";
+import set from "jsxProd";
+
+const require = arg1;
+let closure_6 = require("module_3991").createAnimatedComponent(require("PressableBase").PressableHighlight);
+const result = set.fileFinishedImporting("design/components/experimental/Pressables/native/AnimatedPressableHighlight.native.tsx");
+
+export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPressableHighlightAndroid(children) {
   let obj = Object.create(null);
   obj.children = 0;
   const merged = Object.assign(children, obj);
-  const arg1 = merged;
-  obj = arg1(dependencyMap[6]);
-  const token = obj.useToken(importDefault(dependencyMap[7]).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-  const importDefault = token;
+  obj = merged(3834);
+  token = obj.useToken(token(689).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
   const items = [token, ];
-  const androidRippleConfig = merged.androidRippleConfig;
+  let androidRippleConfig = merged.androidRippleConfig;
   let cornerRadius;
   if (null != androidRippleConfig) {
     cornerRadius = androidRippleConfig.cornerRadius;
@@ -43,20 +46,30 @@ const tmp2 = arg1(dependencyMap[8]).isAndroid() ? function AnimatedPressableHigh
   };
   const merged1 = Object.assign(merged);
   obj["children"] = children.children;
-  return <Pressable {...obj} />;
-} : function AnimatedPressableHighlightiOS(children) {
+  return <Pressable android_ripple={React.useMemo(() => {
+    const obj = { color: token };
+    const androidRippleConfig = merged.androidRippleConfig;
+    let cornerRadius;
+    if (null != androidRippleConfig) {
+      cornerRadius = androidRippleConfig.cornerRadius;
+    }
+    let num = 12;
+    if (null != cornerRadius) {
+      num = cornerRadius;
+    }
+    obj.cornerRadius = num;
+    return obj;
+  }, items)} />;
+}) : (function AnimatedPressableHighlightiOS(children) {
   let obj = Object.create(null);
   obj.children = 0;
   const merged = Object.assign(children, obj);
-  obj = arg1(dependencyMap[5]);
+  obj = require(5169) /* SPRING_CONFIG */;
   const iOSPressEffects = obj.useIOSPressEffects(4);
   obj = { accessibilityRole: "button", onPressIn: iOSPressEffects.onPressIn, onPressOut: iOSPressEffects.onPressOut };
   const merged1 = Object.assign(merged);
   const items = [iOSPressEffects.pressableStyles, merged.style];
   obj["style"] = items;
   obj["children"] = children.children;
-  return <closure_6 {...obj} />;
-};
-const result = arg1(dependencyMap[9]).fileFinishedImporting("design/components/experimental/Pressables/native/AnimatedPressableHighlight.native.tsx");
-
-export const AnimatedPressableHighlight = tmp2;
+  return <closure_6 accessibilityRole="button" onPressIn={iOSPressEffects.onPressIn} onPressOut={iOSPressEffects.onPressOut} />;
+});

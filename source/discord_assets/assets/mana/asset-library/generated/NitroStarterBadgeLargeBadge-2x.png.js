@@ -1,11 +1,10 @@
-// Module ID: 6354
-// Function ID: 50464
+// Module ID: 6359
+// Function ID: 50493
 // Name: vanityUrl
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6354 (vanityUrl)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroStarterBadgeLargeBadge-2x.png.js");
+// Module 6359 (vanityUrl)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroStarterBadgeLargeBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/ecb472e7a73088c8bcf7520bebcc3864325037cad88a1591ccbcce6cc765b197.png";
 export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/NitroStarterBadgeLargeBadge-2x.png";

@@ -1,10 +1,9 @@
-// Module ID: 8320
-// Function ID: 65935
+// Module ID: 8326
+// Function ID: 65972
 // Name: ContentInventoryAuthorType
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8320 (ContentInventoryAuthorType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryAuthorType.tsx");
+// Module 8326 (ContentInventoryAuthorType)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryAuthorType.tsx");
 
 export const ContentInventoryAuthorType = { AUTHOR_TYPE_UNSPECIFIED: 0, [0]: "AUTHOR_TYPE_UNSPECIFIED", USER: 1, [1]: "USER" };

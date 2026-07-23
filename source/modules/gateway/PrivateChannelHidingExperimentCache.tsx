@@ -1,15 +1,14 @@
-// Module ID: 12488
-// Function ID: 95397
+// Module ID: 12602
+// Function ID: 97553
 // Name: PRIVATE_CHANNEL_OBFUSCATION_KEY
-// Dependencies: []
+// Dependencies: [587, 2]
 // Exports: getCachedPrivateChannelObfuscation
 
-// Module 12488 (PRIVATE_CHANNEL_OBFUSCATION_KEY)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/gateway/PrivateChannelHidingExperimentCache.tsx");
+// Module 12602 (PRIVATE_CHANNEL_OBFUSCATION_KEY)
+const result = require("set").fileFinishedImporting("modules/gateway/PrivateChannelHidingExperimentCache.tsx");
 
 export const PRIVATE_CHANNEL_OBFUSCATION_KEY = "private_channel_obfuscation";
 export const getCachedPrivateChannelObfuscation = function getCachedPrivateChannelObfuscation() {
-  const Storage = require(dependencyMap[0]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   return null != Storage.get("private_channel_obfuscation");
 };

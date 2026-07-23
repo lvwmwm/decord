@@ -1,22 +1,27 @@
-// Module ID: 10738
-// Function ID: 83475
+// Module ID: 10748
+// Function ID: 83524
 // Name: getDeafStates
-// Dependencies: []
+// Dependencies: [1194, 4177, 4146, 566, 2]
 // Exports: default
 
-// Module 10738 (getDeafStates)
-function getDeafStates(channel, closure_12, closure_9, closure_7) {
-  let obj = closure_12;
-  let obj2 = closure_9;
-  let obj3 = closure_7;
-  if (closure_12 === undefined) {
+// Module 10748 (getDeafStates)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+function getDeafStates(channel, outer2_12, outer2_9, callback3) {
+  let obj = outer2_12;
+  let obj2 = outer2_9;
+  let obj3 = callback3;
+  if (outer2_12 === undefined) {
     obj = closure_4;
   }
   if (obj2 === undefined) {
     obj2 = closure_3;
   }
   if (obj3 === undefined) {
-    obj3 = closure_2;
+    obj3 = _isNativeReflectConstruct;
   }
   let voiceState = null;
   if (null != channel) {
@@ -31,15 +36,12 @@ function getDeafStates(channel, closure_12, closure_9, closure_7) {
   obj.deaf = null != deaf && deaf;
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/video_calls/useDeafStates.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/useDeafStates.tsx");
 
 export default function useDeafStates(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4, closure_3, closure_2];
+  const _require = arg0;
+  const items = [closure_4, closure_3, _isNativeReflectConstruct];
   const items1 = [arg0];
-  return arg1(dependencyMap[3]).useStateFromStoresObject(items, () => callback(arg0, closure_4, closure_3, closure_2), items1);
+  return _require(566).useStateFromStoresObject(items, () => outer1_5(closure_0, outer1_4, outer1_3, outer1_2), items1);
 };
 export { getDeafStates };

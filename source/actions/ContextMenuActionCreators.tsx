@@ -1,14 +1,14 @@
-// Module ID: 5130
-// Function ID: 44471
+// Module ID: 5133
+// Function ID: 44490
 // Name: open
-// Dependencies: [57, 31, 27, 4120, 4988, 1852]
+// Dependencies: [653, 686, 5134, 477, 5137, 2]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 5130 (open)
-import { AppContext } from "_slicedToArray";
+// Module 5133 (open)
+import { AppContext } from "ME";
 
 function open(contextMenu) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(686);
   obj = { type: "CONTEXT_MENU_OPEN", contextMenu };
   obj.dispatch(obj);
 }
@@ -111,14 +111,13 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
     const dOMRect = new DOMRect(tmp3, sum1, 0, 0);
     obj.rect = dOMRect;
     obj = {};
-    let APP = require(dependencyMap[2]).getCurrentlyInteractingAppContext();
+    let APP = obj(5134).getCurrentlyInteractingAppContext();
     if (null == APP) {
       APP = AppContext.APP;
     }
     obj.context = APP;
     const merged = Object.assign(enableSpellCheck);
     obj.config = obj;
-    const require = obj;
     let nativeEvent = stopPropagation;
     if ("nativeEvent" in stopPropagation) {
       nativeEvent = stopPropagation.nativeEvent;
@@ -127,24 +126,24 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
       if (enableSpellCheck.enableSpellCheck) {
         if (obj5.isDesktop()) {
           if (nativeEvent.isTrusted) {
-            let closure_1 = require(dependencyMap[4]).addResultListener(() => {
+            let closure_1 = obj(5137).addResultListener(() => {
               callback();
-              callback2(obj);
+              outer1_4(obj);
             });
-            const obj6 = require(dependencyMap[4]);
+            const obj6 = obj(5137);
           }
         }
-        const obj5 = require(dependencyMap[3]);
+        obj5 = obj(477);
       }
     }
     stopPropagation.preventDefault();
     open(obj);
-    const obj4 = require(dependencyMap[2]);
+    const obj4 = obj(5134);
   } else {
     const currentTarget = stopPropagation.currentTarget;
   }
 }
-const result = require("set").fileFinishedImporting("actions/ContextMenuActionCreators.tsx");
+const result = require("getWindowDispatchForElement").fileFinishedImporting("actions/ContextMenuActionCreators.tsx");
 
 export function closeContextMenu() {
 

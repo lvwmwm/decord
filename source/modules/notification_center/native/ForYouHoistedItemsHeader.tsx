@@ -1,20 +1,21 @@
-// Module ID: 15049
-// Function ID: 113304
+// Module ID: 15164
+// Function ID: 115473
 // Name: ForYouHoistedItemsHeader
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 // Exports: ForYouHoistedItemsHeader
 
-// Module 15049 (ForYouHoistedItemsHeader)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { marginTop: importDefault(dependencyMap[4]).space.PX_16 };
-obj.container = obj;
-let closure_2 = obj.createStyles(obj);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/notification_center/native/ForYouHoistedItemsHeader.tsx");
+// Module 15164 (ForYouHoistedItemsHeader)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/notification_center/native/ForYouHoistedItemsHeader.tsx");
 
 export const ForYouHoistedItemsHeader = function ForYouHoistedItemsHeader() {
-  return <View style={callback().container} />;
+  return <View style={_createForOfIteratorHelperLoose().container} />;
 };

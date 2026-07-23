@@ -1,12 +1,11 @@
-// Module ID: 13295
-// Function ID: 100966
+// Module ID: 13409
+// Function ID: 103122
 // Name: getActivitiesModalContextKey
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getActivitiesModalContextKey
 
-// Module 13295 (getActivitiesModalContextKey)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/activities/getActivitiesModalContextKey.native.tsx");
+// Module 13409 (getActivitiesModalContextKey)
+const result = require("set").fileFinishedImporting("modules/activities/getActivitiesModalContextKey.native.tsx");
 
 export const getActivitiesModalContextKey = function getActivitiesModalContextKey(arg0) {
   let application;

@@ -1,22 +1,26 @@
-// Module ID: 11065
-// Function ID: 86103
+// Module ID: 11075
+// Function ID: 86153
 // Name: _handleForwardBreadcrumb
-// Dependencies: []
+// Dependencies: [5, 1348, 1838, 653, 5736, 5048, 675, 5628, 2]
 // Exports: default
 
-// Module 11065 (_handleForwardBreadcrumb)
+// Module 11075 (_handleForwardBreadcrumb)
+import showTooManyUserGuildsAlert from "showTooManyUserGuildsAlert";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function _handleForwardBreadcrumb() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleForwardBreadcrumb = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ AnalyticEvents: closure_6, AnalyticsObjects: closure_7, Routes: closure_8 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/forwarding/handleForwardBreadcrumb.tsx");
+({ AnalyticEvents: closure_6, AnalyticsObjects: closure_7, Routes: closure_8 } = ME);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/forwarding/handleForwardBreadcrumb.tsx");
 
 export default function handleForwardBreadcrumb() {
   return _handleForwardBreadcrumb(...arguments);

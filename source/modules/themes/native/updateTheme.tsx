@@ -1,18 +1,18 @@
-// Module ID: 15523
-// Function ID: 118433
+// Module ID: 15640
+// Function ID: 120606
 // Name: updateTheme
-// Dependencies: []
+// Dependencies: [27, 477, 13372, 2]
 // Exports: updateTheme
 
-// Module 15523 (updateTheme)
-const NativeModules = require(dependencyMap[0]).NativeModules;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/themes/native/updateTheme.tsx");
+// Module 15640 (updateTheme)
+import { NativeModules } from "get ActivityIndicator";
+
+const result = require("enforcing").fileFinishedImporting("modules/themes/native/updateTheme.tsx");
 
 export const updateTheme = function updateTheme(arg0) {
   if (obj.isAndroid()) {
-    let updateThemeResult = importDefault(dependencyMap[2]).updateTheme(arg0);
-    const obj2 = importDefault(dependencyMap[2]);
+    let updateThemeResult = importDefault(13372).updateTheme(arg0);
+    const obj2 = importDefault(13372);
   } else {
     const DCDTheme = NativeModules.DCDTheme;
     updateThemeResult = DCDTheme.updateTheme(arg0);

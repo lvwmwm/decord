@@ -1,113 +1,124 @@
-// Module ID: 12052
-// Function ID: 93073
+// Module ID: 12166
+// Function ID: 95224
 // Name: SHARE_APPS_KEY
-// Dependencies: []
+// Dependencies: [27, 8487, 653, 10896, 12167, 689, 1212, 8481, 10177, 4075, 12168, 1553, 12169, 4098, 12170, 1934, 7001, 477, 12187, 12188, 4304, 6691, 4471, 12189, 11773, 12190, 12191, 12192, 12193, 12194, 12195, 2]
 
-// Module 12052 (SHARE_APPS_KEY)
-const Linking = require(dependencyMap[0]).Linking;
-const _module = require(dependencyMap[1]);
-const SHARE_APPS_KEY = _module.SHARE_APPS_KEY;
-const SHARE_URLS = _module.SHARE_URLS;
-const _module1 = require(dependencyMap[2]);
-({ InviteOptionsType: closure_6, SendTypes: closure_7 } = _module1);
+// Module 12166 (SHARE_APPS_KEY)
+import { Linking } from "registerAsset";
+import SHARE_APPS_KEY from "SHARE_APPS_KEY";
+import ME from "ME";
+import isMetaQuest from "isMetaQuest";
+import set from "set";
+import set from "set";
+import sendSMS from "sendSMS";
+import set from "set";
+import set from "set";
+import sendSMS from "sendSMS";
+import showInstantInviteActionSheet from "showInstantInviteActionSheet";
+import showInstantInviteActionSheet from "showInstantInviteActionSheet";
+import showInstantInviteActionSheet from "showInstantInviteActionSheet";
+import showInstantInviteActionSheet from "showInstantInviteActionSheet";
+import showInstantInviteActionSheet from "showInstantInviteActionSheet";
+import showInstantInviteActionSheet from "showInstantInviteActionSheet";
+import set from "ME";
+
+let closure_6;
+let closure_7;
+SHARE_APPS_KEY = SHARE_APPS_KEY.SHARE_APPS_KEY;
+const SHARE_URLS = SHARE_APPS_KEY.SHARE_URLS;
+({ InviteOptionsType: closure_6, SendTypes: closure_7 } = ME);
 let obj = { SHARE: 0, [0]: "SHARE", COPY: 1, [1]: "COPY", QR_CODE: 2, [2]: "QR_CODE", MESSAGES: 3, [3]: "MESSAGES", MAIL: 4, [4]: "MAIL", FB_MESSENGER: 5, [5]: "FB_MESSENGER", GMAIL: 6, [6]: "GMAIL", TELEGRAM: 7, [7]: "TELEGRAM", TWITTER: 8, [8]: "TWITTER", WHATSAPP: 9, [9]: "WHATSAPP", LINE: 10, [10]: "LINE" };
 obj = {
   type: obj.SHARE,
-  icon: importDefault(dependencyMap[3]),
+  icon: require("module_10896"),
   isAvailable: Promise.resolve(true),
-  IconComponent: importDefault(dependencyMap[4]),
-  backgroundColor: importDefault(dependencyMap[5]).unsafe_rawColors.BRAND_500,
+  IconComponent: require("registerAsset"),
+  backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500,
   getLabel() {
-    const intl = require(dependencyMap[6]).intl;
-    return intl.string(require(dependencyMap[6]).t.wPadMa);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.wPadMa);
   },
   onPress(code) {
     let _location;
     let channel;
     let message;
     ({ channel, message, location: _location } = code);
-    return require(dependencyMap[7]).handleOpenShareSheet(code.code, channel, message, _location);
+    return require(8481) /* showInstantInviteActionSheet */.handleOpenShareSheet(code.code, channel, message, _location);
   }
 };
 const items = [obj, , , , , , , , , , ];
 obj = {
   type: obj.COPY,
-  icon: importDefault(dependencyMap[8]),
+  icon: require("registerAsset"),
   isAvailable: Promise.resolve(true),
-  IconComponent: importDefault(dependencyMap[9]),
+  IconComponent: require("registerAsset"),
   getLabel() {
-    const intl = require(dependencyMap[6]).intl;
-    return intl.string(require(dependencyMap[6]).t.WqhZss);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.WqhZss);
   },
   onPress(arg0) {
     let _location;
     let channel;
     let code;
     ({ channel, code, location: _location } = arg0);
-    return require(dependencyMap[7]).handleCopy(code, channel, _location);
+    return require(8481) /* showInstantInviteActionSheet */.handleCopy(code, channel, _location);
   }
 };
 items[1] = obj;
-const obj1 = { type: obj.QR_CODE, icon: importDefault(dependencyMap[10]) };
-const _module2 = require(dependencyMap[11]);
-obj1.isAvailable = Promise.resolve(!_module2.isMetaQuest());
-obj1.IconComponent = importDefault(dependencyMap[12]);
+let obj1 = { type: obj.QR_CODE, icon: require("registerAsset") };
+obj1.isAvailable = Promise.resolve(!isMetaQuest.isMetaQuest());
+obj1.IconComponent = require("registerAsset");
 obj1.getLabel = function getLabel() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.rriLm1);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.rriLm1);
 };
 obj1.onPress = function onPress(code) {
   let _location;
   let channel;
   code = code.code;
   ({ channel, location: _location } = code);
-  let obj = importDefault(dependencyMap[13]);
+  let obj = importDefault(4098);
   obj = {};
   const combined = "InstantInviteQRCodeActionSheet-" + code;
-  obj.link = importDefault(dependencyMap[16])(code);
+  obj.link = importDefault(7001)(code);
   obj.location = _location;
   obj.channel = channel;
-  obj.openLazy(require(dependencyMap[15])(dependencyMap[14], dependencyMap.paths), combined, obj, "stack");
+  obj.openLazy(require(1934) /* maybeLoadBundle */(12170, dependencyMap.paths), combined, obj, "stack");
 };
 items[2] = obj1;
-const obj2 = { type: obj.MESSAGES };
-const _module3 = require(dependencyMap[17]);
+let obj2 = { type: obj.MESSAGES };
 let importDefaultResult;
-if (_module3.isIOS()) {
-  importDefaultResult = importDefault(dependencyMap[18]);
+if (set.isIOS()) {
+  importDefaultResult = require("registerAsset");
 }
 obj2.fullIcon = importDefaultResult;
-const _module4 = require(dependencyMap[17]);
 let importDefaultResult1;
-if (_module4.isAndroid()) {
-  importDefaultResult1 = importDefault(dependencyMap[19]);
+if (set.isAndroid()) {
+  importDefaultResult1 = require("registerAsset");
 }
 obj2.icon = importDefaultResult1;
-const _module5 = require(dependencyMap[20]);
-obj2.isAvailable = _module5.canSendSMS();
+obj2.isAvailable = sendSMS.canSendSMS();
 obj2.getLabel = function getLabel() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.AQKfCj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.AQKfCj);
 };
 obj2.onPress = function onPress(channel) {
   let _location;
   let message;
   channel = channel.channel;
-  const require = channel;
   const code = channel.code;
-  const importDefault = code;
   ({ message, location: _location } = channel);
-  require(dependencyMap[7]).trackOptionClicked(code, channel, constants.SMS, _location);
-  const obj = require(dependencyMap[7]);
+  channel(8481).trackOptionClicked(code, channel, constants.SMS, _location);
+  let obj = channel(8481);
   if (obj2.isIOS()) {
-    importDefault(dependencyMap[13]).hideActionSheet();
-    const obj3 = importDefault(dependencyMap[13]);
+    code(4098).hideActionSheet();
+    const obj3 = code(4098);
   }
-  const obj2 = require(dependencyMap[17]);
-  require(dependencyMap[20]).sendSMS({ body: message }, (arg0, arg1, arg2) => {
+  obj2 = channel(477);
+  channel(4304).sendSMS({ body: message }, (arg0, arg1, arg2) => {
     if (arg0) {
       let id;
-      let obj = code(closure_2[21]);
+      let obj = code(outer1_2[21]);
       obj = { inviteKey: code };
       if (null != channel) {
         id = channel.id;
@@ -119,59 +130,54 @@ obj2.onPress = function onPress(channel) {
       obj.channelId = tmp8;
       obj.messageId = null;
       obj.location = "SMS Option";
-      obj = { send_type: constants.SMS };
+      obj = { send_type: outer1_7.SMS };
       obj.overrideProperties = obj;
       obj.trackInvite(obj);
     }
     if (arg2) {
       const obj1 = {};
-      const intl = channel(closure_2[6]).intl;
-      obj1.body = intl.string(channel(closure_2[6]).t.1ieAR5);
+      const intl = channel(outer1_2[6]).intl;
+      obj1.body = intl.string(channel(outer1_2[6]).t["1ieAR5"]);
       obj1.isDismissable = true;
-      code(closure_2[22]).show(obj1);
-      const obj4 = code(closure_2[22]);
+      code(outer1_2[22]).show(obj1);
+      const obj4 = code(outer1_2[22]);
     }
   });
 };
 items[3] = obj2;
-const obj3 = { type: obj.MAIL };
-const _module6 = require(dependencyMap[17]);
+let obj3 = { type: obj.MAIL };
 let importDefaultResult2;
-if (_module6.isIOS()) {
-  importDefaultResult2 = importDefault(dependencyMap[23]);
+if (set.isIOS()) {
+  importDefaultResult2 = require("registerAsset");
 }
 obj3.fullIcon = importDefaultResult2;
-const _module7 = require(dependencyMap[17]);
 let importDefaultResult3;
-if (_module7.isAndroid()) {
-  importDefaultResult3 = importDefault(dependencyMap[24]);
+if (set.isAndroid()) {
+  importDefaultResult3 = require("registerAsset");
 }
 obj3.icon = importDefaultResult3;
-const _module8 = require(dependencyMap[20]);
-obj3.isAvailable = _module8.canSendMail();
+obj3.isAvailable = sendSMS.canSendMail();
 obj3.getLabel = function getLabel() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.QaAypP);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.QaAypP);
 };
 obj3.onPress = function onPress(channel) {
   let _location;
   let message;
   channel = channel.channel;
-  const require = channel;
   const code = channel.code;
-  const importDefault = code;
   ({ message, location: _location } = channel);
-  require(dependencyMap[7]).trackOptionClicked(code, channel, constants.EMAIL, _location);
-  const obj = require(dependencyMap[7]);
+  channel(8481).trackOptionClicked(code, channel, constants.EMAIL, _location);
+  let obj = channel(8481);
   if (obj2.isIOS()) {
-    importDefault(dependencyMap[13]).hideActionSheet();
-    const obj3 = importDefault(dependencyMap[13]);
+    code(4098).hideActionSheet();
+    const obj3 = code(4098);
   }
-  const obj2 = require(dependencyMap[17]);
-  require(dependencyMap[20]).sendMail({ subject: "", body: message }, (arg0, arg1, arg2) => {
+  obj2 = channel(477);
+  channel(4304).sendMail({ subject: "", body: message }, (arg0, arg1, arg2) => {
     if (arg0) {
       let id;
-      let obj = code(closure_2[21]);
+      let obj = code(outer1_2[21]);
       obj = { inviteKey: code };
       if (null != channel) {
         id = channel.id;
@@ -183,60 +189,57 @@ obj3.onPress = function onPress(channel) {
       obj.channelId = tmp8;
       obj.messageId = null;
       obj.location = "Email Option";
-      obj = { send_type: constants.EMAIL };
+      obj = { send_type: outer1_7.EMAIL };
       obj.overrideProperties = obj;
       obj.trackInvite(obj);
     }
     if (arg2) {
       const obj1 = {};
-      const intl = channel(closure_2[6]).intl;
-      obj1.body = intl.string(channel(closure_2[6]).t.1ieAR5);
+      const intl = channel(outer1_2[6]).intl;
+      obj1.body = intl.string(channel(outer1_2[6]).t["1ieAR5"]);
       obj1.isDismissable = true;
-      code(closure_2[22]).show(obj1);
-      const obj4 = code(closure_2[22]);
+      code(outer1_2[22]).show(obj1);
+      const obj4 = code(outer1_2[22]);
     }
   });
 };
 items[4] = obj3;
-const obj4 = { type: obj.FB_MESSENGER, fullIcon: importDefault(dependencyMap[25]) };
-const _module9 = require(dependencyMap[7]);
-obj4.isAvailable = _module9.isAppInstalled(SHARE_APPS_KEY.MESSENGER);
+let obj4 = { type: obj.FB_MESSENGER, fullIcon: require("registerAsset") };
+obj4.isAvailable = showInstantInviteActionSheet.isAppInstalled(SHARE_APPS_KEY.MESSENGER);
 obj4.getLabel = function getLabel() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.P0R3ZF);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.P0R3ZF);
 };
 obj4.onPress = function onPress(code) {
   let _location;
   let channel;
   code = code.code;
   ({ channel, location: _location } = code);
-  const tmp = importDefault(dependencyMap[16])(code);
-  require(dependencyMap[7]).trackOptionClicked(code, channel, constants.MESSENGER, _location);
-  Linking.openURL(SHARE_URLS[closure_4.MESSENGER](tmp));
+  const tmp = importDefault(7001)(code);
+  require(8481) /* showInstantInviteActionSheet */.trackOptionClicked(code, channel, constants.MESSENGER, _location);
+  Linking.openURL(SHARE_URLS[SHARE_APPS_KEY.MESSENGER](tmp));
 };
 items[5] = obj4;
-const obj5 = { type: obj.GMAIL, fullIcon: importDefault(dependencyMap[26]) };
-const _module10 = require(dependencyMap[7]);
-obj5.isAvailable = _module10.isAppInstalled(SHARE_APPS_KEY.GMAIL);
+const obj5 = { type: obj.GMAIL, fullIcon: require("registerAsset") };
+obj5.isAvailable = showInstantInviteActionSheet.isAppInstalled(SHARE_APPS_KEY.GMAIL);
 obj5.getLabel = function getLabel() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.14o9ZT);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t["14o9ZT"]);
 };
 obj5.onPress = function onPress(code) {
   let _location;
   let channel;
   let message;
   ({ channel, message, location: _location } = code);
-  require(dependencyMap[7]).trackOptionClicked(code.code, channel, constants.GMAIL, _location);
-  Linking.openURL(SHARE_URLS[closure_4.GMAIL]("", message));
+  require(8481) /* showInstantInviteActionSheet */.trackOptionClicked(code.code, channel, constants.GMAIL, _location);
+  Linking.openURL(SHARE_URLS[SHARE_APPS_KEY.GMAIL]("", message));
 };
 items[6] = obj5;
-const obj6 = { type: obj.TELEGRAM, fullIcon: importDefault(dependencyMap[27]) };
-const _module11 = require(dependencyMap[7]);
-obj6.isAvailable = _module11.isAppInstalled(SHARE_APPS_KEY.TELEGRAM);
+const obj6 = { type: obj.TELEGRAM, fullIcon: require("registerAsset") };
+obj6.isAvailable = showInstantInviteActionSheet.isAppInstalled(SHARE_APPS_KEY.TELEGRAM);
 obj6.getLabel = function getLabel() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.148qIV);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t["148qIV"]);
 };
 obj6.onPress = function onPress(code) {
   let _location;
@@ -244,63 +247,59 @@ obj6.onPress = function onPress(code) {
   let message;
   code = code.code;
   ({ channel, message, location: _location } = code);
-  const tmp = importDefault(dependencyMap[16])(code);
-  require(dependencyMap[7]).trackOptionClicked(code, channel, constants.TELEGRAM, _location);
-  Linking.openURL(SHARE_URLS[closure_4.TELEGRAM](message, tmp));
+  const tmp = importDefault(7001)(code);
+  require(8481) /* showInstantInviteActionSheet */.trackOptionClicked(code, channel, constants.TELEGRAM, _location);
+  Linking.openURL(SHARE_URLS[SHARE_APPS_KEY.TELEGRAM](message, tmp));
 };
 items[7] = obj6;
-const obj7 = { type: obj.TWITTER, fullIcon: importDefault(dependencyMap[28]) };
-const _module12 = require(dependencyMap[7]);
-obj7.isAvailable = _module12.isAppInstalled(SHARE_APPS_KEY.TWITTER);
+const obj7 = { type: obj.TWITTER, fullIcon: require("registerAsset") };
+obj7.isAvailable = showInstantInviteActionSheet.isAppInstalled(SHARE_APPS_KEY.TWITTER);
 obj7.getLabel = function getLabel() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.oAiltV);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.oAiltV);
 };
 obj7.onPress = function onPress(code) {
   let _location;
   let channel;
   let message;
   ({ channel, message, location: _location } = code);
-  require(dependencyMap[7]).trackOptionClicked(code.code, channel, constants.TWITTER, _location);
-  Linking.openURL(SHARE_URLS[closure_4.TWITTER](message));
+  require(8481) /* showInstantInviteActionSheet */.trackOptionClicked(code.code, channel, constants.TWITTER, _location);
+  Linking.openURL(SHARE_URLS[SHARE_APPS_KEY.TWITTER](message));
 };
 items[8] = obj7;
-const obj8 = { type: obj.WHATSAPP, fullIcon: importDefault(dependencyMap[29]) };
-const _module13 = require(dependencyMap[7]);
-obj8.isAvailable = _module13.isAppInstalled(SHARE_APPS_KEY.WHATSAPP);
+const obj8 = { type: obj.WHATSAPP, fullIcon: require("registerAsset") };
+obj8.isAvailable = showInstantInviteActionSheet.isAppInstalled(SHARE_APPS_KEY.WHATSAPP);
 obj8.getLabel = function getLabel() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.viazhS);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.viazhS);
 };
 obj8.onPress = function onPress(code) {
   let _location;
   let channel;
   let message;
   ({ channel, message, location: _location } = code);
-  require(dependencyMap[7]).trackOptionClicked(code.code, channel, constants.WHATSAPP, _location);
-  Linking.openURL(SHARE_URLS[closure_4.WHATSAPP](message));
+  require(8481) /* showInstantInviteActionSheet */.trackOptionClicked(code.code, channel, constants.WHATSAPP, _location);
+  Linking.openURL(SHARE_URLS[SHARE_APPS_KEY.WHATSAPP](message));
 };
 items[9] = obj8;
-const obj9 = { type: obj.LINE, fullIcon: importDefault(dependencyMap[30]) };
-const _module14 = require(dependencyMap[7]);
-obj9.isAvailable = _module14.isAppInstalled(SHARE_APPS_KEY.LINE);
+const obj9 = { type: obj.LINE, fullIcon: require("registerAsset") };
+obj9.isAvailable = showInstantInviteActionSheet.isAppInstalled(SHARE_APPS_KEY.LINE);
 obj9.getLabel = function getLabel() {
-  const intl = require(dependencyMap[6]).intl;
-  return intl.string(require(dependencyMap[6]).t.kqgslH);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t.kqgslH);
 };
 obj9.onPress = function onPress(code) {
   let _location;
   let channel;
   let message;
   ({ channel, message, location: _location } = code);
-  require(dependencyMap[7]).trackOptionClicked(code.code, channel, constants.LINE, _location);
-  Linking.openURL(SHARE_URLS[closure_4.LINE](message));
+  require(8481) /* showInstantInviteActionSheet */.trackOptionClicked(code.code, channel, constants.LINE, _location);
+  Linking.openURL(SHARE_URLS[SHARE_APPS_KEY.LINE](message));
 };
 items[10] = obj9;
 const items1 = [, ];
 [arr2[0], arr2[1]] = items;
-const _module15 = require(dependencyMap[31]);
-const result = _module15.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteConstants.tsx");
+const result = set.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteConstants.tsx");
 
 export const ShareItemType = obj;
 export const SHARE_ITEMS = items;

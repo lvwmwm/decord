@@ -1,24 +1,26 @@
 // Module ID: 1213
-// Function ID: 13912
+// Function ID: 13913
 // Name: getLanguages
-// Dependencies: []
+// Dependencies: [31, 1214, 1250, 1272, 2]
 // Exports: getAvailableLocales, getNormalizedLocale, useSyncMessages
 
 // Module 1213 (getLanguages)
+import result from "result";
+
+const require = arg1;
 function getLanguages() {
-  return arg1(dependencyMap[3]);
+  return require(1272) /* items */;
 }
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("intl/util.tsx");
+const result = require("module_1250").fileFinishedImporting("intl/util.tsx");
 
 export const getAvailableLocales = function getAvailableLocales() {
-  const callback = callback(dependencyMap[1]).default;
+  _require = _require(1214).default;
   const found = getLanguages().filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => {
     code = code.code;
     const obj = { value: code, name: code.name };
-    const obj2 = callback(closure_1[2]);
-    obj.localizedName = callback[obj2.runtimeHashMessageKey(obj2, code)];
+    const obj2 = dependencyMap(outer1_1[2]);
+    obj.localizedName = dependencyMap[obj2.runtimeHashMessageKey(obj2, code)];
     return obj;
   });
   return mapped.sort((name, name2) => {
@@ -44,7 +46,6 @@ export const getNormalizedLocale = function getNormalizedLocale(systemLocale, ar
     return systemLocale;
   } else {
     const parts = systemLocale.split("-");
-    arg1 = parts;
     const first = parts[0];
     if (mapped.includes(parts[0])) {
       let tmp5 = first;
@@ -71,7 +72,7 @@ export const getNormalizedLocale = function getNormalizedLocale(systemLocale, ar
   const arr = getLanguages();
 };
 export const useSyncMessages = function useSyncMessages(arg0, arg1) {
-  arg1 = arg0;
-  const dependencyMap = arg1;
-  const syncExternalStore = closure_2.useSyncExternalStore((arg0) => arg0.onChange(arg0), () => arg0.isLocaleLoaded(arg1.currentLocale));
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const syncExternalStore = result.useSyncExternalStore((arg0) => closure_0.onChange(arg0), () => closure_0.isLocaleLoaded(currentLocale.currentLocale));
 };

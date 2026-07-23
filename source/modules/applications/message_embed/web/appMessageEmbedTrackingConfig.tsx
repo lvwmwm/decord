@@ -1,13 +1,14 @@
-// Module ID: 6931
-// Function ID: 55283
+// Module ID: 6936
+// Function ID: 55317
 // Name: trackingConfigWithDefaults
-// Dependencies: []
+// Dependencies: [1194, 6930, 2]
 // Exports: trackingConfigWithDefaults
 
-// Module 6931 (trackingConfigWithDefaults)
-let closure_0 = importDefault(dependencyMap[0]);
-const LinkType = arg1(dependencyMap[1]).LinkType;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/applications/message_embed/web/appMessageEmbedTrackingConfig.tsx");
+// Module 6936 (trackingConfigWithDefaults)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { LinkType } from "LinkType";
+
+const result = require("set").fileFinishedImporting("modules/applications/message_embed/web/appMessageEmbedTrackingConfig.tsx");
 
 export const trackingConfigWithDefaults = function trackingConfigWithDefaults(id) {
   const obj = {};

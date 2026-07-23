@@ -1,57 +1,60 @@
-// Module ID: 10306
-// Function ID: 79548
+// Module ID: 10319
+// Function ID: 79622
 // Name: BugReporterNotification
-// Dependencies: []
+// Dependencies: [31, 27, 10320, 653, 33, 4130, 689, 10310, 10254, 10236, 4337, 10235, 10321, 1934, 5796, 2]
 // Exports: BugReporterNotification
 
-// Module 10306 (BugReporterNotification)
-let closure_3 = importAll(dependencyMap[0]);
-({ Image: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-const UserSettingsSections = arg1(dependencyMap[3]).UserSettingsSections;
-const jsx = arg1(dependencyMap[4]).jsx;
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { hideWhenScrolling: "<string:16961601>", autoCapitalize: "<string:553216>", borderRadius: importDefault(dependencyMap[6]).radii.sm };
-obj.preview = obj;
-const tmp2 = arg1(dependencyMap[1]);
-obj.rightAccessoryContainer = { marginLeft: importDefault(dependencyMap[6]).space.PX_12 };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { marginLeft: importDefault(dependencyMap[6]).space.PX_12 };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/bug_reporter/native/BugReporterNotification.tsx");
+// Module 10319 (BugReporterNotification)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import zustandStore from "zustandStore";
+import { UserSettingsSections } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ Image: closure_4, View: closure_5 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { height: 64, width: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.preview = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.rightAccessoryContainer = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_12 };
+const result = require("zustandStore").fileFinishedImporting("modules/bug_reporter/native/BugReporterNotification.tsx");
 
 export const BugReporterNotification = function BugReporterNotification(notification) {
   notification = notification.notification;
-  const arg1 = notification;
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.rightAccessoryContainer };
   obj = { source: { uri: notification.imageUri }, style: tmp.preview };
-  const memo = React.useMemo(() => ({}), []);
-  obj.children = <closure_4 {...obj} />;
-  obj = { header: memo, children: jsx(arg1(dependencyMap[8]).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }) };
-  obj.rightAccessory = <closure_5 {...obj} />;
+  const memo = React.useMemo(() => ({ type: "simple", text: "Bug Catcher Clyde" }), []);
+  obj.children = <closure_4 source={{ uri: notification.imageUri }} style={tmp.preview} />;
+  obj = { header: memo, children: jsx(notification(10254).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }) };
+  obj.rightAccessory = <closure_5 header={memo}>{jsx(notification(10254).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." })}</closure_5>;
   obj.onPress = function onPress() {
-    if (!store.getField("isReportOpen")) {
-      let obj = notification(paths[9]);
+    if (!outer1_6.getField("isReportOpen")) {
+      let obj = notification(outer1_2[9]);
       obj = { type: notification.type, dismissReason: "notification_clicked", inAppNotificationId: notification.inAppNotificationId };
       obj.trackDismissed(obj);
-      callback(paths[10]).popAll();
-      const obj3 = callback(paths[10]);
-      callback(paths[11]).clearNotification();
+      outer1_1(outer1_2[10]).popAll();
+      const obj3 = outer1_1(outer1_2[10]);
+      outer1_1(outer1_2[11]).clearNotification();
       obj = { isReportOpen: true };
-      store.setState(obj);
-      const obj4 = callback(paths[11]);
+      outer1_6.setState(obj);
+      const obj4 = outer1_1(outer1_2[11]);
       ({ imageUri: obj7.screenshotUri, image: obj7.screenshot } = notification);
-      callback(paths[10]).pushLazy(notification(paths[13])(paths[12], paths.paths), {});
+      outer1_1(outer1_2[10]).pushLazy(notification(outer1_2[13])(outer1_2[12], outer1_2.paths), {});
       const obj1 = {};
-      const obj6 = callback(paths[10]);
+      const obj6 = outer1_1(outer1_2[10]);
     }
   };
   obj.onSettingsPress = function onSettingsPress() {
-    let obj = notification(closure_2[14]);
-    obj = { screen: constants.OVERVIEW };
+    let obj = notification(outer1_2[14]);
+    obj = { screen: outer1_7.OVERVIEW };
     obj.openUserSettings(obj);
   };
   obj.notification = notification;
-  return jsx(arg1(dependencyMap[7]).NotificationPressable, obj);
+  return jsx(notification(10310).NotificationPressable, { header: memo, children: jsx(notification(10254).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }) });
 };

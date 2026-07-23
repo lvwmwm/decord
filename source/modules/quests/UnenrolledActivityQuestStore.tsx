@@ -1,9 +1,16 @@
-// Module ID: 15597
-// Function ID: 119010
+// Module ID: 15714
+// Function ID: 121183
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 21, 566, 686, 2]
 
-// Module 15597 (_isNativeReflectConstruct)
+// Module 15714 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,27 +20,22 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-new Set();
+let set = new Set();
 const set1 = new Set();
-let closure_8 = false;
-let tmp4 = (PersistedStore) => {
+let c8 = false;
+let tmp4 = ((PersistedStore) => {
   class UnenrolledActivityQuestStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, UnenrolledActivityQuestStore);
-      obj = closure_5(UnenrolledActivityQuestStore);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      tmp = outer1_2(this, UnenrolledActivityQuestStore);
+      obj = outer1_5(UnenrolledActivityQuestStore);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,7 +44,6 @@ let tmp4 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = UnenrolledActivityQuestStore;
   callback2(UnenrolledActivityQuestStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -54,22 +55,22 @@ let tmp4 = (PersistedStore) => {
       if (null == dismissedQuestIds) {
         dismissedQuestIds = [];
       }
-      const set = new Set(dismissedQuestIds);
+      const outer1_7 = new Set(dismissedQuestIds);
       let autoEnroll;
       if (null != dismissedQuestIds) {
         autoEnroll = dismissedQuestIds.autoEnroll;
       }
-      let closure_8 = null != autoEnroll && autoEnroll;
+      const outer1_8 = null != autoEnroll && autoEnroll;
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getState",
     value() {
       const obj = {};
-      const items = [...closure_7];
+      const items = [...outer1_7];
       obj.dismissedQuestIds = items;
-      obj.autoEnroll = closure_8;
+      obj.autoEnroll = outer1_8;
       return obj;
     }
   };
@@ -79,7 +80,7 @@ let tmp4 = (PersistedStore) => {
     value(arg0) {
       let hasItem = null != arg0;
       if (hasItem) {
-        hasItem = set.has(arg0);
+        hasItem = outer1_7.has(arg0);
       }
       return hasItem;
     }
@@ -88,25 +89,25 @@ let tmp4 = (PersistedStore) => {
   items[3] = {
     key: "getDismissedQuestIds",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   return callback(UnenrolledActivityQuestStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp4.displayName = "UnenrolledActivityQuestStore";
 tmp4.persistKey = "UnenrolledActivityQuestStore";
-tmp4 = new tmp4(importDefault(dependencyMap[7]), {
+tmp4 = new tmp4(require("dispatcher"), {
   UNENROLLED_ACTIVITY_QUEST_DISMISS: function handleDismissUnenrolledActivityQuest(questId) {
-    if (set1.size >= 20) {
+    if (set.size >= 20) {
       const _Array = Array;
-      const sorted = Array.from(set1).sort(importDefault(dependencyMap[5]).compare);
+      const sorted = Array.from(set).sort(importDefault(21).compare);
       const _Math = Math;
       const substr = sorted.slice(Math.floor(10));
       const _Set = Set;
-      const set = new Set(substr.map((arg0) => arg0.toString()));
-      const arr = Array.from(set1);
+      set = new Set(substr.map((arg0) => arg0.toString()));
+      const arr = Array.from(set);
     }
-    set1.add(questId.questId);
+    set.add(questId.questId);
     return true;
   },
   UNENROLLED_ACTIVITY_QUEST_AUTO_ENROLL: function handleSetAutoEnroll(autoEnroll) {
@@ -114,6 +115,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[7]), {
     return true;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/quests/UnenrolledActivityQuestStore.tsx");
+let result = set.fileFinishedImporting("modules/quests/UnenrolledActivityQuestStore.tsx");
 
 export default tmp4;

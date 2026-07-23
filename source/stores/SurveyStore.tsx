@@ -1,9 +1,26 @@
-// Module ID: 9270
-// Function ID: 72440
+// Module ID: 9277
+// Function ID: 72481
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4051, 1838, 3758, 3947, 1849, 653, 664, 9278, 483, 587, 3712, 566, 686, 2]
 
-// Module 9270 (_isNativeReflectConstruct)
+// Module 9277 (_isNativeReflectConstruct)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "t";
+import dispatcher from "dispatcher";
+import closure_8 from "set";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_createForOfIteratorHelperLoose";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import ME from "ME";
+import set from "_possibleConstructorReturn";
+
+let closure_14;
+let closure_15;
+let closure_16;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +30,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +83,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -101,8 +118,8 @@ function isSurveyDataStale() {
   return tmp;
 }
 function fetchSurveyIfNeeded() {
-  let tmp = closure_23;
-  if (!closure_23) {
+  let tmp = c23;
+  if (!c23) {
     const tmp3 = isSurveyDataStale();
     let tmp4 = !tmp3;
     if (!tmp3) {
@@ -111,22 +128,22 @@ function fetchSurveyIfNeeded() {
     tmp = tmp4;
   }
   if (!tmp) {
-    closure_23 = true;
-    const obj = arg1(dependencyMap[12]);
+    c23 = true;
+    obj = require(9278) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   }
 }
-function meetsSurveyRequirements(closure_22) {
+function meetsSurveyRequirements(c22) {
   let obj;
-  let guild_requirements = closure_22.guild_requirements;
+  let guild_requirements = c22.guild_requirements;
   if (undefined === guild_requirements) {
     guild_requirements = [];
   }
-  let guild_size = closure_22.guild_size;
+  let guild_size = c22.guild_size;
   if (undefined === guild_size) {
-    guild_size = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
+    guild_size = [null, null];
   }
-  let guild_permissions = closure_22.guild_permissions;
+  let guild_permissions = c22.guild_permissions;
   if (undefined === guild_permissions) {
     guild_permissions = [];
   }
@@ -147,7 +164,7 @@ function meetsSurveyRequirements(closure_22) {
           if (hasItem) {
             let tmp15 = memberCount;
             let tmp16 = value;
-            let memberCount = memberCount.getMemberCount(value.id);
+            memberCount = memberCount.getMemberCount(value.id);
             let flag4 = false;
             let tmp18 = memberCount;
             let tmp19 = tmp9;
@@ -159,11 +176,11 @@ function meetsSurveyRequirements(closure_22) {
               let iter7 = tmp6();
               flag2 = flag4;
               let tmp8 = tmp18;
-              let tmp9 = tmp19;
-              let tmp10 = tmp20;
-              let tmp11 = tmp21;
-              let tmp12 = tmp22;
-              let tmp13 = tmp23;
+              tmp9 = tmp19;
+              tmp10 = tmp20;
+              tmp11 = tmp21;
+              tmp12 = tmp22;
+              tmp13 = tmp23;
               iter4 = iter7;
               flag3 = flag4;
               break;
@@ -198,7 +215,7 @@ function meetsSurveyRequirements(closure_22) {
               let tmp30 = obj;
               if (!guild_requirements.includes(obj.GUILD_PERMISSIONS)) {
                 let tmp39 = currentUser;
-                let currentUser = currentUser.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 let id;
                 if (null != currentUser) {
                   id = currentUser.id;
@@ -215,12 +232,12 @@ function meetsSurveyRequirements(closure_22) {
                     let tmp49 = closure_21;
                     let tmp50 = null != closure_21 ? closure_21 : {};
                     closure_21 = tmp50;
-                    if (null == tmp50[closure_22.key]) {
+                    if (null == tmp50[c22.key]) {
                       let tmp51 = closure_21;
-                      closure_21[closure_22.key] = closure_22;
+                      closure_21[c22.key] = c22;
                     }
                     let tmp52 = guildId;
-                    let guildId = guildId.getGuildId();
+                    guildId = guildId.getGuildId();
                     let tmp54 = null != guildId;
                     if (tmp54) {
                       let tmp55 = value;
@@ -286,14 +303,14 @@ function meetsSurveyRequirements(closure_22) {
                     value = iter6.value;
                     let tmp32 = importAll;
                     let tmp33 = dependencyMap;
-                    obj = importAll(dependencyMap[13]);
+                    obj = importAll(483);
                     let tmp34 = value;
                     let tmp35 = closure_11;
                     let tmp36 = value;
                     while (!closure_11.can(obj.deserialize(value), value)) {
                       do {
                         let tmp37 = tmp60;
-                        let iter5 = tmp61();
+                        iter5 = tmp61();
                         iter6 = iter5;
                       } while (iter5.done);
                     }
@@ -355,7 +372,7 @@ function meetsSurveyRequirements(closure_22) {
 }
 function setSurvey(survey) {
   survey = survey.survey;
-  let closure_23 = false;
+  let c23 = false;
   obj.lastFetched = Date.now();
   if (survey.isActionTriggered) {
     const _Date = Date;
@@ -372,15 +389,15 @@ function setSurvey(survey) {
   if (tmp3) {
     tmp3 = meetsSurveyRequirements(survey);
   }
-  let tmp7 = closure_19;
-  if (!closure_19) {
-    tmp7 = closure_20;
+  let tmp7 = c19;
+  if (!c19) {
+    tmp7 = c20;
   }
-  const Storage = arg1(dependencyMap[14]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   const value = Storage.get(closure_16);
   let tmp9 = null == value;
   if (!tmp9) {
-    const obj = importDefault(dependencyMap[15])();
+    obj = importDefault(3712)();
     tmp9 = obj.diff(value, "day") < 7;
   }
   let tmp12 = null;
@@ -396,14 +413,14 @@ function setSurvey(survey) {
       }
     }
   }
-  let closure_22 = tmp12;
+  let c22 = tmp12;
 }
 function handleSelectedGuildChange() {
-  if (null != closure_22) {
-    const tmp3 = meetsSurveyRequirements(closure_22);
+  if (null != c22) {
+    const tmp3 = meetsSurveyRequirements(c22);
     let flag = tmp3;
     if (!tmp3) {
-      closure_22 = null;
+      c22 = null;
       flag = false;
     }
     if (flag) {
@@ -418,44 +435,34 @@ function handleSelectedGuildChange() {
       setSurvey(obj);
     }
   }
-  if (null != closure_22) {
-    closure_22 = null;
+  if (null != c22) {
+    c22 = null;
   }
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-({ GuildFeatures: closure_14, Permissions: closure_15, FIRST_RUN_DATE_KEY: closure_16 } = arg1(dependencyMap[10]));
-let obj = { accessibilityLabel: 1, text: "100%", split: "absolute", useStateFromStores: 0, T: 0, hiddenSurveys: {} };
-let closure_19 = false;
-let closure_20 = false;
+({ GuildFeatures: closure_14, Permissions: closure_15, FIRST_RUN_DATE_KEY: closure_16 } = ME);
+let obj = { hiddenSurveys: {}, surveyOverride: null, lastFetched: null, lastSeen: null, lastActionTriggered: null };
+let c19 = false;
+let c20 = false;
 let closure_21 = {};
-let closure_22 = null;
-let closure_23 = false;
-const DAY = importDefault(dependencyMap[11]).Millis.DAY;
-const result = 10 * importDefault(dependencyMap[11]).Millis.HOUR;
+let c22 = null;
+let c23 = false;
+const DAY = require("set").Millis.DAY;
+let result = 10 * require("set").Millis.HOUR;
 obj = { IS_OWNER: "is_owner", IS_ADMIN: "is_admin", IS_COMMUNITY: "is_community", GUILD_SIZE: "guild_size", IS_HUB: "is_hub", IS_VIEWING: "is_viewing", GUILD_PERMISSIONS: "guild_permissions", GUILD_SIZE_ALL: "guild_size_all" };
-const set = new Set(Object.values(obj));
-let tmp5 = (PersistedStore) => {
+let set = new Set(Object.values(obj));
+let tmp5 = ((PersistedStore) => {
   class SurveyStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, SurveyStore);
-      obj = closure_7(SurveyStore);
-      tmp2 = closure_6;
-      if (closure_28()) {
+      tmp = outer1_4(this, SurveyStore);
+      obj = outer1_7(SurveyStore);
+      tmp2 = outer1_6;
+      if (outer1_28()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -464,26 +471,26 @@ let tmp5 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SurveyStore;
   callback2(SurveyStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       let tmp = arg0;
       const self = this;
-      this.waitFor(closure_9, closure_10, closure_11, closure_12, closure_13);
+      this.waitFor(outer1_9, outer1_10, outer1_11, outer1_12, outer1_13);
       if (null == arg0) {
-        tmp = closure_17;
+        tmp = outer1_17;
       }
-      const items = [closure_12];
-      self.syncWith(items, closure_34);
+      const outer1_18 = tmp;
+      const items = [outer1_12];
+      self.syncWith(items, outer1_34);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_18;
+      return outer1_18;
     }
   };
   items[1] = obj;
@@ -491,8 +498,8 @@ let tmp5 = (PersistedStore) => {
     key: "getCurrentSurvey",
     value() {
       let tmp = null;
-      if (!callback4()) {
-        tmp = closure_22;
+      if (!outer1_31()) {
+        tmp = outer1_22;
       }
       return tmp;
     }
@@ -501,32 +508,32 @@ let tmp5 = (PersistedStore) => {
   items[3] = {
     key: "getSurveyOverride",
     value() {
-      return closure_18.surveyOverride;
+      return outer1_18.surveyOverride;
     }
   };
   items[4] = {
     key: "getLastSeenTimestamp",
     value() {
-      return closure_18.lastSeen;
+      return outer1_18.lastSeen;
     }
   };
   items[5] = {
     key: "shouldAllowSurveyAction",
     value() {
-      const lastActionTriggered = closure_18.lastActionTriggered;
+      const lastActionTriggered = outer1_18.lastActionTriggered;
       let num = 0;
       const timestamp = Date.now();
       if (null != lastActionTriggered) {
         num = lastActionTriggered;
       }
-      return timestamp - num >= closure_25;
+      return timestamp - num >= outer1_25;
     }
   };
   return callback(SurveyStore, items);
-}(importDefault(dependencyMap[16]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp5.displayName = "SurveyStore";
 tmp5.persistKey = "SurveyStore";
-const items = [
+let items = [
   (arg0) => {
     const merged = Object.assign(arg0);
     // DelByIdLong (0x48)
@@ -565,25 +572,25 @@ obj = {
   SURVEY_FETCHED: setSurvey,
   SURVEY_HIDE: function handleSurveyHide(key) {
     obj.hiddenSurveys[key.key] = true;
-    let closure_22 = null;
+    let c22 = null;
     closure_21 = null != closure_21 ? closure_21 : {};
-    delete r0[r1];
+    delete tmp[tmp2];
   },
   SURVEY_OVERRIDE: function handleSurveyOverride(id) {
     id = id.id;
     obj.surveyOverride = id;
     if (null != id) {
       const hiddenSurveys = obj.hiddenSurveys;
-      delete r0[r2];
+      delete tmp[tmp2];
     }
-    const obj = arg1(dependencyMap[12]);
+    obj = require(9278) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {
-    let closure_19 = true;
+    let c19 = true;
   },
   DISPLAYED_INVITE_SHOW: function handleInviteShow() {
-    let closure_20 = true;
+    let c20 = true;
   },
   LOGOUT: function handleLogout() {
     obj.hiddenSurveys = {};
@@ -592,9 +599,8 @@ obj = {
     obj.lastSeen = Date.now();
   }
 };
-tmp5 = new tmp5(importDefault(dependencyMap[17]), obj);
-const tmp2 = arg1(dependencyMap[10]);
-const result1 = arg1(dependencyMap[18]).fileFinishedImporting("stores/SurveyStore.tsx");
+tmp5 = new tmp5(require("dispatcher"), obj);
+const result1 = set.fileFinishedImporting("stores/SurveyStore.tsx");
 
 export default tmp5;
 export const SURVEY_REFETCH_INTERVAL = DAY;

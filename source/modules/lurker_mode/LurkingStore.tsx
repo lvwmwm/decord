@@ -1,73 +1,74 @@
-// Module ID: 3757
-// Function ID: 28735
+// Module ID: 3759
+// Function ID: 28740
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1194, 653, 3768, 3769]
+// Dependencies: [6, 7, 15, 17, 18, 1391, 1917, 1838, 1849, 653, 566, 686, 2]
 
-// Module 3757 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_1 from "__exportStarResult1";
-import closure_2 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { isGuildLurker } from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
+// Module 3759 (_isNativeReflectConstruct)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { isGuildLurker } from "isGuildOwner";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import ME from "ME";
 
+let closure_10;
+let closure_9;
 function _isNativeReflectConstruct() {
-  let __exportStarResult1 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return __exportStarResult1;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let __exportStarResult1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let _isNativeReflectConstruct = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -78,16 +79,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      __exportStarResult1 = tmp;
+      _isNativeReflectConstruct = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (_createForOfIteratorHelperLoose >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        _createForOfIteratorHelperLoose = tmp3 + 1;
+        obj.value = length[+_createForOfIteratorHelperLoose];
       }
       return obj;
     };
@@ -105,15 +106,14 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function removeLurkedGuild(id) {
-  const index = closure_11.indexOf(id);
+  const index = items.indexOf(id);
   if (index > -1) {
-    const items = [];
-    HermesBuiltin.arraySpread(closure_11, 0);
+    items = [];
+    HermesBuiltin.arraySpread(items, 0);
     items.splice(index, 1);
-    closure_11 = items;
-    delete r2[r1];
-    delete r2[r1];
-    delete r0[r1];
+    delete tmp3[tmp2];
+    delete tmp3[tmp2];
+    delete tmp[tmp2];
     return true;
   } else {
     return false;
@@ -122,13 +122,12 @@ function removeLurkedGuild(id) {
 function addLurkingGuild(guildId) {
   let tmp = guildId !== closure_10;
   if (tmp) {
-    let flag = !closure_11.includes(guildId);
+    let flag = !items.includes(guildId);
     if (flag) {
-      const items = [];
-      const arraySpreadResult = HermesBuiltin.arraySpread(closure_11, 0);
+      items = [];
+      const arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
       items[arraySpreadResult] = guildId;
       const sum = arraySpreadResult + 1;
-      closure_11 = items;
       flag = true;
     }
     tmp = flag;
@@ -137,29 +136,29 @@ function addLurkingGuild(guildId) {
 }
 function setLurkingSource(guildId, lurkingSource) {
   if (null == lurkingSource) {
-    delete r0[r1];
+    delete tmp[tmp2];
   } else {
     closure_13[guildId] = lurkingSource;
   }
 }
-({ JoinGuildSources: closure_9, ME: closure_10 } = _isNativeReflectConstruct);
+({ JoinGuildSources: closure_9, ME: closure_10 } = ME);
 let closure_11 = [];
 let closure_12 = {};
 let closure_13 = {};
 let closure_14 = {};
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class LurkingStore {
     constructor() {
       self = this;
       tmp = LurkingStore(this, LurkingStore);
-      obj = closure_3(LurkingStore);
-      tmp2 = closure_2;
-      if (closure_15()) {
+      obj = outer1_3(LurkingStore);
+      tmp2 = outer1_2;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -168,19 +167,18 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let __exportStarResult1 = LurkingStore;
   callback2(LurkingStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_6, closure_7, closure_8);
+      this.waitFor(outer1_6, outer1_7, outer1_8);
     }
   };
   const items = [obj, , , , , , , ];
   obj = {
     key: "lurkingGuildIds",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[1] = obj;
@@ -188,8 +186,8 @@ let tmp3 = (Store) => {
     key: "mostRecentLurkedGuildId",
     value() {
       let tmp = null;
-      if (0 !== length.length) {
-        tmp = length[closure_11.length - 1];
+      if (0 !== outer1_11.length) {
+        tmp = outer1_11[outer1_11.length - 1];
       }
       return tmp;
     }
@@ -198,13 +196,13 @@ let tmp3 = (Store) => {
   items[3] = {
     key: "isLurking",
     value(guildId) {
-      const guild = guild.getGuild(guildId);
+      const guild = outer1_7.getGuild(guildId);
       if (null == guild) {
         return false;
       } else {
-        let tmp6 = !currentUserGuest.isCurrentUserGuest(guildId);
+        let tmp6 = !outer1_6.isCurrentUserGuest(guildId);
         if (tmp6) {
-          tmp6 = callback2(guild);
+          tmp6 = outer1_5(guild);
         }
         return Boolean(tmp6);
       }
@@ -216,7 +214,7 @@ let tmp3 = (Store) => {
       let tmp = null;
       if (null != arg0) {
         let tmp4 = null;
-        if (null != closure_13[arg0]) {
+        if (null != outer1_13[arg0]) {
           tmp4 = tmp3;
         }
         tmp = tmp4;
@@ -229,7 +227,7 @@ let tmp3 = (Store) => {
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        tmp = closure_12[arg0];
+        tmp = outer1_12[arg0];
       }
       return tmp;
     }
@@ -237,7 +235,7 @@ let tmp3 = (Store) => {
   items[6] = {
     key: "getLurkingPreviewExpirations",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[7] = {
@@ -246,7 +244,7 @@ let tmp3 = (Store) => {
       let tmp = null;
       if (null != arg0) {
         let tmp4 = null;
-        if (null != closure_14[arg0]) {
+        if (null != outer1_14[arg0]) {
           tmp4 = tmp3;
         }
         tmp = tmp4;
@@ -255,12 +253,12 @@ let tmp3 = (Store) => {
     }
   };
   return callback(LurkingStore, items);
-}(require("ME").Store);
+})(require("initialize").Store);
 tmp3.displayName = "LurkingStore";
-tmp3 = new tmp3(require("AccountNotificationFlags"), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    const guildsArray = guildsArray.getGuildsArray();
-    const found = guildsArray.filter((arg0) => callback(arg0));
+    guildsArray = guildsArray.getGuildsArray();
+    const found = guildsArray.filter((arg0) => outer1_5(arg0));
     let closure_11 = found.map((id) => id.id);
     let closure_13 = {};
     let closure_14 = {};
@@ -275,12 +273,12 @@ tmp3 = new tmp3(require("AccountNotificationFlags"), {
       if (null != loadId) {
         closure_12[guildId] = loadId;
       }
-      delete r0[r3];
+      delete tmp[tmp2];
       if (constants.MOBILE_GUILD_DISCOVERY === source) {
         let obj = { type: constants.MOBILE_GUILD_DISCOVERY };
         setLurkingSource(guildId, obj);
       } else if (constants.DIRECTORY_ENTRY === source) {
-        obj = { type: constants.DIRECTORY_ENTRY, directoryChannelId: tmp };
+        obj = { type: constants.DIRECTORY_ENTRY, directoryChannelId: tmp3 };
         setLurkingSource(guildId, obj);
       } else {
         setLurkingSource(guildId, null);
@@ -291,23 +289,23 @@ tmp3 = new tmp3(require("AccountNotificationFlags"), {
     }
   },
   GUILD_STOP_LURKING: function handleGuildStopLurking(ignoredGuildIds) {
-    return function clearLurkingGuilds(ignoredGuildIds) {
+    return (function clearLurkingGuilds(ignoredGuildIds) {
       let items = ignoredGuildIds;
       if (null == ignoredGuildIds) {
         items = [];
       }
       const items1 = [...items];
       const set = new Set(items1);
-      const items2 = [...closure_11];
+      const items2 = [...outer1_11];
       return items2.reduce((arg0, arg1) => {
         let tmp = arg0;
         if (!set.has(arg1)) {
-          tmp = callback(arg1) || arg0;
-          const tmp3 = callback(arg1) || arg0;
+          tmp = outer2_18(arg1) || arg0;
+          const tmp3 = outer2_18(arg1) || arg0;
         }
         return tmp;
       }, false);
-    }(ignoredGuildIds.ignoredGuildIds);
+    })(ignoredGuildIds.ignoredGuildIds);
   },
   GUILD_STOP_LURKING_FOR_GUILD: function handleGuildStopLurkingForGuild(lurkingGuildId) {
     return removeLurkedGuild(lurkingGuildId.lurkingGuildId);
@@ -343,7 +341,7 @@ tmp3 = new tmp3(require("AccountNotificationFlags"), {
   },
   GUILD_MEMBER_ADD: function handleGuildMemberAdd(guildId, arg1) {
     guildId = guildId.guildId;
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let id;
     if (null != currentUser) {
       id = currentUser.id;
@@ -373,10 +371,10 @@ tmp3 = new tmp3(require("AccountNotificationFlags"), {
         let tmp2 = closure_11;
         let tmp3 = flag;
         if (closure_11.includes(value)) {
-          let tmp4 = closure_14;
-          if (closure_14[value] !== expiresAt) {
-            let tmp5 = closure_14;
-            closure_14[value] = expiresAt;
+          let tmp4 = table;
+          if (table[value] !== expiresAt) {
+            let tmp5 = table;
+            table[value] = expiresAt;
             flag = true;
           }
           tmp3 = flag;
@@ -390,6 +388,6 @@ tmp3 = new tmp3(require("AccountNotificationFlags"), {
     return flag2;
   }
 });
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/lurker_mode/LurkingStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/lurker_mode/LurkingStore.tsx");
 
 export default tmp3;

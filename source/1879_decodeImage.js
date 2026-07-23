@@ -1,10 +1,10 @@
 // Module ID: 1879
-// Function ID: 20895
+// Function ID: 20896
 // Name: decodeImage
 // Dependencies: []
 
 // Module 1879 (decodeImage)
-const tmp = () => {
+let tmp = (() => {
   function decodeImage(data, width, height, tabs) {
     let ctype;
     let depth;
@@ -348,19 +348,19 @@ const tmp = () => {
             }
           }
           num10 = num10 + 1;
-          let tmp6 = tmp9;
+          tmp6 = tmp9;
         } while (num10 < height);
       }
     }
     return uint8Array;
   }
-  function _decompress(size, arr3, width, height) {
+  function _decompress(size, arr4, width, height) {
     const timestamp = Date.now();
     const uint8Array = new Uint8Array((Math.ceil(width * _getBPP(size) / 8) + 1 + size.interlace) * height);
     if (size.tabs.CgBI) {
-      let tmp4 = callback(arr3, uint8Array);
+      let tmp4 = callback(arr4, uint8Array);
     } else {
-      tmp4 = _inflate(arr3, uint8Array);
+      tmp4 = _inflate(arr4, uint8Array);
     }
     const timestamp1 = Date.now();
     if (0 == size.interlace) {
@@ -375,12 +375,12 @@ const tmp = () => {
         const rounded = Math.ceil(width * tmp46 / 8);
         const _Uint8Array = Uint8Array;
         const uint8Array1 = new Uint8Array(height * rounded);
-        const items = [];
-        const items1 = [];
+        const items = [0, 0, 4, 0, 2, 0, 1];
+        const items1 = [0, 4, 0, 2, 0, 1, 0];
         let num9 = 0;
         let num8 = 0;
         do {
-          let tmp7 = ["<string:14876672>", "<string:16908288>", "<string:65470464>", "<string:65470464>", "<string:65470464>", "<string:552599552>", "isArray"][num8];
+          let tmp7 = [8, 8, 8, 4, 4, 2, 2][num8];
           let tmp8 = tmp53[num8];
           let sum = items[num8];
           let num = 0;
@@ -400,13 +400,13 @@ const tmp = () => {
           }
           let _Math = Math;
           let rounded1 = Math.ceil(num4 * tmp46 / 8);
-          let tmp12 = closure_6;
+          let tmp12 = _filterZero;
           let tmp13 = tmp4;
           let tmp14 = size;
           let tmp15 = num9;
           let tmp16 = num4;
           let tmp17 = num2;
-          let tmp18 = closure_6(tmp4, size, num9, num4, num2);
+          let tmp18 = _filterZero(tmp4, size, num9, num4, num2);
           let sum8 = items[num8];
           let num5 = 0;
           let tmp20 = tmp22;
@@ -462,8 +462,8 @@ const tmp = () => {
             let tmp36 = tmp27;
             tmp20 = tmp28;
             tmp21 = tmp29;
-            let tmp22 = tmp28;
-            let tmp23 = tmp29;
+            tmp22 = tmp28;
+            tmp23 = tmp29;
           }
           let sum9 = num9;
           if (num4 * num2 != 0) {
@@ -477,19 +477,19 @@ const tmp = () => {
     }
     return tmp38;
   }
-  function _inflate(arr2, uint8Array) {
-    uint8Array = new Uint8Array(arr2.buffer, 2, arr2.length - 6);
+  function _inflate(arr3, uint8Array) {
+    uint8Array = new Uint8Array(arr3.buffer, 2, arr3.length - 6);
     return callback(uint8Array, uint8Array);
   }
   function _getBPP(depth) {
-    return [false, false, false, false, false, false, false][depth.ctype] * depth.depth;
+    return [1, null, 3, 1, 2, null, 4][depth.ctype] * depth.depth;
   }
   function _filterZero(arg0, depth) {
     const tmp = _getBPP(depth);
     const rounded = Math.ceil(arg3 * tmp / 8);
     const rounded1 = Math.ceil(tmp / 8);
     if (arg0[arg2] > 1) {
-      arg0[arg2] = [][tmp4 - 2];
+      arg0[arg2] = [0, 0, 1][tmp4 - 2];
     }
     if (3 == arg0[arg2]) {
       let sum = rounded1;
@@ -549,18 +549,18 @@ const tmp = () => {
         let num5 = 0;
         if (0 < rounded1) {
           do {
-            let tmp10 = closure_7;
+            let tmp10 = _paeth;
             let sum3 = sum1 + num4;
-            arg0[sum3] = arg0[sum2 + num4] + closure_7(0, arg0[sum1 + num4 - rounded], 0);
+            arg0[sum3] = arg0[sum2 + num4] + _paeth(0, arg0[sum1 + num4 - rounded], 0);
             num4 = num4 + 1;
             num5 = num4;
           } while (num4 < rounded1);
         }
         if (num5 < rounded) {
           do {
-            let tmp12 = closure_7;
+            let tmp12 = _paeth;
             let sum4 = sum1 + num5;
-            arg0[sum4] = arg0[sum2 + num5] + closure_7(arg0[sum1 + num5 - rounded1], arg0[sum1 + num5 - rounded], arg0[sum1 + num5 - rounded1 - rounded]);
+            arg0[sum4] = arg0[sum2 + num5] + _paeth(arg0[sum1 + num5 - rounded1], arg0[sum1 + num5 - rounded], arg0[sum1 + num5 - rounded1 - rounded]);
             num5 = num5 + 1;
           } while (num5 < rounded);
         }
@@ -583,23 +583,23 @@ const tmp = () => {
     }
     return tmp;
   }
-  function _IHDR(arr2, sum2, arg2) {
-    arg2.width = obj.readUint(arr2, sum2);
+  function _IHDR(arr3, sum2, arg2) {
+    arg2.width = obj.readUint(arr3, sum2);
     const sum = sum2 + 4;
-    arg2.height = obj.readUint(arr2, sum);
+    arg2.height = obj.readUint(arr3, sum);
     const sum1 = sum + 4;
-    arg2.depth = arr2[sum1];
+    arg2.depth = arr3[sum1];
     sum2 = sum1 + 1;
-    arg2.ctype = arr2[sum2];
+    arg2.ctype = arr3[sum2];
     const sum3 = sum2 + 1;
-    arg2.compress = arr2[sum3];
+    arg2.compress = arr3[sum3];
     const sum4 = sum3 + 1;
-    arg2.filter = arr2[sum4];
-    arg2.interlace = arr2[sum4 + 1];
+    arg2.filter = arr3[sum4];
+    arg2.interlace = arr3[sum4 + 1];
   }
-  function _copyTile(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) {
-    const bound = Math.min(arg1, arg4);
-    const bound1 = Math.min(arg2, arg5);
+  function _copyTile(arg0, width2, height2, arg3, width, height, arg6, arg7, arg8) {
+    const bound = Math.min(width2, width);
+    const bound1 = Math.min(height2, height);
     for (let num = 0; num < bound1; num = num + 1) {
       let tmp13 = tmp3;
       let tmp14 = tmp4;
@@ -616,8 +616,8 @@ const tmp = () => {
         while (true) {
           if (arg6 >= 0) {
             if (arg7 >= 0) {
-              let tmp23 = num * arg1 + num2 << 2;
-              let tmp24 = (arg7 + num) * arg4 + arg6 + num2 << 2;
+              let tmp23 = num * width2 + num2 << 2;
+              let tmp24 = (arg7 + num) * width + arg6 + num2 << 2;
               if (0 == arg8) {
                 arg3[tmp24] = arg0[tmp23];
                 arg3[tmp24 + 1] = arg0[tmp23 + 1];
@@ -790,52 +790,52 @@ const tmp = () => {
               tmp22 = tmp34;
               let tmp59 = tmp23;
               let tmp60 = tmp24;
-              let tmp3 = tmp25;
-              let tmp4 = tmp26;
-              let tmp5 = tmp27;
-              let tmp6 = tmp28;
-              let tmp7 = tmp29;
-              let tmp8 = tmp30;
-              let tmp9 = tmp31;
-              let tmp10 = tmp32;
-              let tmp11 = tmp33;
-              let tmp12 = tmp34;
+              tmp3 = tmp25;
+              tmp4 = tmp26;
+              tmp5 = tmp27;
+              tmp6 = tmp28;
+              tmp7 = tmp29;
+              tmp8 = tmp30;
+              tmp9 = tmp31;
+              tmp10 = tmp32;
+              tmp11 = tmp33;
+              tmp12 = tmp34;
               if (num2 >= bound) {
                 break;
               }
             }
           }
-          tmp23 = (-arg7 + num) * arg1 - arg6 + num2 << 2;
-          tmp24 = num * arg4 + num2 << 2;
+          tmp23 = (-arg7 + num) * width2 - arg6 + num2 << 2;
+          tmp24 = num * width + num2 << 2;
         }
       }
     }
     return true;
   }
   let obj = {
-    nextZero(arr2, sum2) {
+    nextZero(arr3, sum2) {
       let tmp4;
       let tmp = sum2;
       let tmp2 = sum2;
-      if (0 != arr2[sum2]) {
+      if (0 != arr3[sum2]) {
         do {
           let sum = tmp + 1;
           tmp = sum;
           tmp2 = sum;
-          tmp4 = arr2[sum];
+          tmp4 = arr3[sum];
         } while (0 != tmp4);
       }
       return tmp2;
     },
-    readUshort(arr2, sum2) {
-      return arr2[sum2] << 8 | arr2[sum2 + 1];
+    readUshort(arr3, sum2) {
+      return arr3[sum2] << 8 | arr3[sum2 + 1];
     },
     writeUshort(uint8Array, sum40, arg2) {
       uint8Array[sum40] = arg2 >> 8 & 255;
       uint8Array[sum40 + 1] = 255 & arg2;
     },
-    readUint(arr2, sum2) {
-      return 16777216 * arr2[sum2] + (arr2[sum2 + 1] << 16 | arr2[sum2 + 2] << 8 | arr2[sum2 + 3]);
+    readUint(arr3, sum2) {
+      return 16777216 * arr3[sum2] + (arr3[sum2 + 1] << 16 | arr3[sum2 + 2] << 8 | arr3[sum2 + 3]);
     },
     writeUint(uint8Array, writeUintResult16, height) {
       uint8Array[writeUintResult16] = height >> 24 & 255;
@@ -843,14 +843,14 @@ const tmp = () => {
       uint8Array[writeUintResult16 + 2] = height >> 8 & 255;
       uint8Array[writeUintResult16 + 3] = 255 & height;
     },
-    readASCII(arr2, sum2, sum) {
+    readASCII(arr3, sum2, sum) {
       let num = 0;
       let str = "";
       let str2 = "";
       if (0 < sum) {
         do {
           let _String = String;
-          str = `${String.fromCharCode(arr2[sum2 + num])}`;
+          str = `${String.fromCharCode(arr3[sum2 + num])}`;
           num = num + 1;
           str2 = str;
         } while (num < sum);
@@ -869,10 +869,10 @@ const tmp = () => {
         } while (num < length);
       }
     },
-    readBytes(arr2, sum2, uint) {
+    readBytes(arr3, sum2, uint) {
       const items = [];
       for (let num = 0; num < uint; num = num + 1) {
-        let arr = items.push(arr2[sum2 + num]);
+        let arr = items.push(arr3[sum2 + num]);
       }
       return items;
     },
@@ -883,16 +883,16 @@ const tmp = () => {
       }
       return text;
     },
-    readUTF8(arr2, sum, length) {
+    readUTF8(arr3, sum, length) {
       let str = "";
       let num = 0;
       if (0 < length) {
         do {
           let tmp = str;
-          let tmp2 = closure_0;
-          let tmp4 = arr2;
+          let tmp2 = obj;
+          let tmp4 = arr3;
           let tmp5 = sum;
-          let str2 = arr2[sum + num];
+          let str2 = arr3[sum + num];
           str = `${"%" + tmp3(str2.toString(16))}`;
           num = num + 1;
           let tmp6 = length;
@@ -901,7 +901,7 @@ const tmp = () => {
       return decodeURIComponent(str);
     }
   };
-  let closure_1 = () => {
+  let closure_1 = (() => {
     function C(arg0, arg1) {
       const v = obj.v;
       for (let num = 0; num <= arg1; num = num + 1) {
@@ -989,8 +989,8 @@ const tmp = () => {
       let tmp5 = arg4;
       if (0 < arg2) {
         do {
-          let tmp6 = closure_6;
-          let tmp7 = arg0[closure_6(undefined, arg3, tmp) & arg1];
+          let tmp6 = w;
+          let tmp7 = arg0[w(undefined, arg3, tmp) & arg1];
           let sum = tmp + (15 & tmp7);
           let tmp9 = tmp7 >>> 4;
           if (tmp9 <= 15) {
@@ -1002,13 +1002,13 @@ const tmp = () => {
             let tmp19 = tmp4;
           } else {
             if (16 === tmp9) {
-              let tmp13 = closure_4;
-              let num3 = 3 + closure_4(arg3, sum, 2);
+              let tmp13 = F;
+              let num3 = 3 + F(arg3, sum, 2);
               let sum2 = sum + 2;
               let num2 = arg5[num - 1];
             } else if (17 === tmp9) {
-              let tmp12 = closure_4;
-              num3 = 3 + closure_4(arg3, sum, 3);
+              let tmp12 = F;
+              num3 = 3 + F(arg3, sum, 3);
               sum2 = sum + 3;
               num2 = 0;
             } else {
@@ -1016,8 +1016,8 @@ const tmp = () => {
               num2 = 0;
               num3 = 0;
               if (18 === tmp9) {
-                let tmp11 = closure_4;
-                num3 = 11 + closure_4(arg3, sum, 7);
+                let tmp11 = F;
+                num3 = 11 + F(arg3, sum, 7);
                 sum2 = sum + 7;
                 num2 = 0;
               }
@@ -1043,9 +1043,9 @@ const tmp = () => {
           }
           tmp = tmp16;
           num = sum1;
-          let tmp2 = tmp17;
-          let tmp3 = tmp18;
-          let tmp4 = tmp19;
+          tmp2 = tmp17;
+          tmp3 = tmp18;
+          tmp4 = tmp19;
           tmp5 = tmp16;
         } while (sum1 < arg2);
       }
@@ -1078,18 +1078,18 @@ const tmp = () => {
       }
       return num3;
     }
-    const obj = {};
+    let obj = {};
     const uint16Array = new Uint16Array(16);
     obj.m = uint16Array;
     const uint16Array1 = new Uint16Array(16);
     obj.v = uint16Array1;
-    obj.d = [];
-    obj.o = [];
-    obj.z = [];
+    obj.d = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];
+    obj.o = [3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 15, 17, 19, 23, 27, 31, 35, 43, 51, 59, 67, 83, 99, 115, 131, 163, 195, 227, 258, 999, 999, 999];
+    obj.z = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0, 0, 0, 0];
     const uint16Array2 = new Uint16Array(32);
     obj.B = uint16Array2;
-    obj.p = [];
-    obj.w = [];
+    obj.p = [1, 2, 3, 4, 5, 7, 9, 13, 17, 25, 33, 49, 65, 97, 129, 193, 257, 385, 513, 769, 1025, 1537, 2049, 3073, 4097, 6145, 8193, 12289, 16385, 24577, 65535, 65535];
+    obj.w = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, 0, 0];
     const uint32Array = new Uint32Array(32);
     obj.h = uint32Array;
     const uint16Array3 = new Uint16Array(512);
@@ -1122,7 +1122,7 @@ const tmp = () => {
     obj.q = uint16Array9;
     const uint16Array10 = new Uint16Array(32768);
     obj.j = uint16Array10;
-    () => {
+    (() => {
       let num2;
       class A {
         constructor(arg0, arg1, arg2) {
@@ -1144,20 +1144,20 @@ const tmp = () => {
         let tmp2 = (3435973836 & tmp) >>> 2 | (858993459 & tmp) << 2;
         let tmp3 = (4042322160 & tmp2) >>> 4 | (252645135 & tmp2) << 4;
         let tmp4 = (4278255360 & tmp3) >>> 8 | (16711935 & tmp3) << 8;
-        let tmp5 = closure_0;
-        closure_0.i[num] = (tmp4 >>> 16 | tmp4 << 16) >>> 17;
+        let tmp5 = obj;
+        obj.i[num] = (tmp4 >>> 16 | tmp4 << 16) >>> 17;
         num = num + 1;
         num2 = 0;
       } while (num < 32768);
       do {
-        let tmp6 = closure_0;
-        let tmp7 = closure_0;
-        let tmp8 = closure_0;
-        closure_0.B[num2] = closure_0.o[num2] << 3 | closure_0.z[num2];
-        let tmp9 = closure_0;
-        let tmp10 = closure_0;
-        let tmp11 = closure_0;
-        closure_0.h[num2] = closure_0.p[num2] << 4 | closure_0.w[num2];
+        let tmp6 = obj;
+        let tmp7 = obj;
+        let tmp8 = obj;
+        obj.B[num2] = obj.o[num2] << 3 | obj.z[num2];
+        let tmp9 = obj;
+        let tmp10 = obj;
+        let tmp11 = obj;
+        obj.h[num2] = obj.p[num2] << 4 | obj.w[num2];
         num2 = num2 + 1;
       } while (num2 < 32);
       A(obj.s, 144, 8);
@@ -1175,7 +1175,7 @@ const tmp = () => {
       A(obj.c, 286, 0);
       A(obj.e, 30, 0);
       A(obj.a, 320, 0);
-    }();
+    })();
     return function v(buffer) {
       let arr;
       let sum5;
@@ -1206,21 +1206,21 @@ const tmp = () => {
       let num8 = 0;
       let num9 = 0;
       do {
-        let tmp13 = closure_5;
-        tmp14 = closure_5(buffer, num9, 1);
-        let tmp15 = closure_5(buffer, num9 + 1, 2);
+        let tmp13 = s;
+        tmp14 = s(buffer, num9, 1);
+        let tmp15 = s(buffer, num9 + 1, 2);
         let sum = num9 + 3;
         if (0 !== tmp15) {
           let tmp41 = _Uint8Array1;
           if (tmp2) {
-            let tmp42 = closure_7;
-            tmp41 = closure_7(_Uint8Array1, num8 + 131072);
+            let tmp42 = H;
+            tmp41 = H(_Uint8Array1, num8 + 131072);
           }
           if (1 === tmp15) {
-            let tmp43 = closure_0;
-            let g = closure_0.g;
-            let tmp44 = closure_0;
-            let A = closure_0.A;
+            let tmp43 = obj;
+            let g = obj.g;
+            let tmp44 = obj;
+            let A = obj.A;
             num6 = 511;
             num7 = 31;
           }
@@ -1231,17 +1231,17 @@ const tmp = () => {
           let tmp49 = tmp9;
           let tmp50 = tmp10;
           if (2 === tmp15) {
-            _Uint8Array = closure_4;
-            _Uint8Array = closure_4(buffer, sum, 5) + 257;
-            _Uint8Array = closure_4(buffer, sum + 5, 5) + 1;
-            _Uint8Array = closure_4(buffer, sum + 10, 4) + 4;
+            _Uint8Array = F;
+            _Uint8Array = F(buffer, sum, 5) + 257;
+            _Uint8Array = F(buffer, sum + 5, 5) + 1;
+            _Uint8Array = F(buffer, sum + 10, 4) + 4;
             _Uint8Array = sum + 14;
             let num10 = 0;
             do {
-              let tmp51 = closure_0;
-              closure_0.b[num10] = 0;
-              let tmp52 = closure_0;
-              closure_0.b[num10 + 1] = 0;
+              let tmp51 = obj;
+              obj.b[num10] = 0;
+              let tmp52 = obj;
+              obj.b[num10 + 1] = 0;
               num10 = num10 + 2;
             } while (num10 < 38);
             let num11 = 1;
@@ -1250,57 +1250,57 @@ const tmp = () => {
             let num14 = 0;
             if (0 < _Uint8Array) {
               do {
-                let tmp53 = closure_4;
-                let tmp54 = closure_4(buffer, _Uint8Array + 3 * num12, 3);
-                let tmp55 = closure_0;
-                let tmp56 = closure_0;
-                closure_0.b[1 + (closure_0.d[num12] << 1)] = tmp54;
+                let tmp53 = F;
+                let tmp54 = F(buffer, _Uint8Array + 3 * num12, 3);
+                let tmp55 = obj;
+                let tmp56 = obj;
+                obj.b[1 + (obj.d[num12] << 1)] = tmp54;
                 if (tmp54 > num11) {
                   num11 = tmp54;
                 }
                 num12 = num12 + 1;
                 num13 = num11;
-                let tmp8 = tmp54;
+                tmp8 = tmp54;
                 num14 = num12;
               } while (num12 < _Uint8Array);
             }
-            let tmp57 = closure_1;
-            let tmp58 = closure_0;
-            let tmp59 = closure_1(closure_0.b, num13);
-            let tmp60 = closure_2;
-            let tmp61 = closure_0;
-            let tmp62 = closure_0;
-            let tmp63 = closure_2(closure_0.b, num13, closure_0.C);
-            let tmp64 = closure_0;
-            let k = closure_0.k;
-            let tmp65 = closure_0;
-            let n = closure_0.n;
-            let tmp66 = closure_8;
-            let tmp67 = closure_0;
-            let tmp68 = closure_0;
+            let tmp57 = C;
+            let tmp58 = obj;
+            let tmp59 = C(obj.b, num13);
+            let tmp60 = t;
+            let tmp61 = obj;
+            let tmp62 = obj;
+            let tmp63 = t(obj.b, num13, obj.C);
+            let tmp64 = obj;
+            let k = obj.k;
+            let tmp65 = obj;
+            let n = obj.n;
+            let tmp66 = B;
+            let tmp67 = obj;
+            let tmp68 = obj;
             let tmp69 = buffer;
-            tmp47 = closure_8(closure_0.C, (1 << num13) - 1, _Uint8Array + _Uint8Array, buffer, _Uint8Array + 3 * _Uint8Array, closure_0.a);
-            let tmp70 = closure_9;
-            let tmp71 = closure_0;
-            let tmp72 = closure_0;
+            tmp47 = B(obj.C, (1 << num13) - 1, _Uint8Array + _Uint8Array, buffer, _Uint8Array + 3 * _Uint8Array, obj.a);
+            let tmp70 = d;
+            let tmp71 = obj;
+            let tmp72 = obj;
             let num15 = 0;
             let tmp73 = _Uint8Array;
-            let tmp74 = closure_9(closure_0.a, 0, _Uint8Array, closure_0.c);
+            let tmp74 = d(obj.a, 0, _Uint8Array, obj.c);
             num6 = (1 << tmp74) - 1;
-            let tmp75 = closure_0;
-            let tmp76 = closure_0;
+            let tmp75 = obj;
+            let tmp76 = obj;
             let tmp77 = _Uint8Array;
             let tmp78 = _Uint8Array;
-            let tmp79 = closure_9(closure_0.a, _Uint8Array, _Uint8Array, closure_0.e);
+            let tmp79 = d(obj.a, _Uint8Array, _Uint8Array, obj.e);
             num7 = (1 << tmp79) - 1;
-            let tmp80 = closure_0;
-            let tmp81 = closure_1(closure_0.c, tmp74);
-            let tmp82 = closure_0;
-            let tmp83 = closure_2(closure_0.c, tmp74, k);
-            let tmp84 = closure_0;
-            let tmp85 = closure_1(closure_0.e, tmp79);
-            let tmp86 = closure_0;
-            let tmp87 = closure_2(closure_0.e, tmp79, n);
+            let tmp80 = obj;
+            let tmp81 = C(obj.c, tmp74);
+            let tmp82 = obj;
+            let tmp83 = t(obj.c, tmp74, k);
+            let tmp84 = obj;
+            let tmp85 = C(obj.e, tmp79);
+            let tmp86 = obj;
+            let tmp87 = t(obj.e, tmp79, n);
             let tmp6 = num13;
             let tmp7 = num14;
             tmp48 = tmp8;
@@ -1315,8 +1315,8 @@ const tmp = () => {
             tmp50 = tmp10;
           }
           while (true) {
-            let tmp88 = closure_6;
-            let tmp89 = g[closure_6(undefined, buffer, tmp47) & num6];
+            let tmp88 = w;
+            let tmp89 = g[w(undefined, buffer, tmp47) & num6];
             let sum1 = tmp47 + (15 & tmp89);
             let tmp91 = tmp89 >>> 4;
             let tmp92 = tmp45;
@@ -1328,7 +1328,7 @@ const tmp = () => {
               sum2 = _Uint8Array + 1;
               tmp45[_Uint8Array] = tmp91;
               tmp47 = sum1;
-              // continue
+              continue;
             } else {
               arr = tmp45;
               let tmp28 = g;
@@ -1354,26 +1354,26 @@ const tmp = () => {
                 _Uint8Array = sum2 + tmp91 - 254;
                 _Uint8Array = sum1;
                 if (tmp91 > 264) {
-                  _Uint8Array = closure_0;
-                  _Uint8Array = closure_0.B[tmp91 - 257];
-                  _Uint8Array = closure_4;
+                  _Uint8Array = obj;
+                  _Uint8Array = obj.B[tmp91 - 257];
+                  _Uint8Array = F;
                   _Uint8Array = sum2 + (_Uint8Array >>> 3);
-                  _Uint8Array = _Uint8Array + closure_4(buffer, sum1, 7 & _Uint8Array);
+                  _Uint8Array = _Uint8Array + F(buffer, sum1, 7 & _Uint8Array);
                   _Uint8Array = sum1 + (7 & _Uint8Array);
                 }
-                _Uint8Array = closure_6;
-                _Uint8Array = A[closure_6(undefined, buffer, _Uint8Array) & num7];
+                _Uint8Array = w;
+                _Uint8Array = A[w(undefined, buffer, _Uint8Array) & num7];
                 _Uint8Array = _Uint8Array + (15 & _Uint8Array);
-                _Uint8Array = closure_0;
-                _Uint8Array = closure_0.h[_Uint8Array >>> 4];
-                _Uint8Array = closure_5;
+                _Uint8Array = obj;
+                _Uint8Array = obj.h[_Uint8Array >>> 4];
+                _Uint8Array = s;
                 _Uint8Array = _Uint8Array >>> 4;
-                _Uint8Array = _Uint8Array + closure_5(buffer, _Uint8Array, 15 & _Uint8Array);
+                _Uint8Array = _Uint8Array + s(buffer, _Uint8Array, 15 & _Uint8Array);
                 _Uint8Array = _Uint8Array + (15 & _Uint8Array);
                 _Uint8Array = tmp45;
                 if (tmp2) {
-                  _Uint8Array = closure_7;
-                  _Uint8Array = closure_7(tmp45, sum2 + 131072);
+                  _Uint8Array = H;
+                  _Uint8Array = H(tmp45, sum2 + 131072);
                 }
                 tmp45 = _Uint8Array;
                 sum2 = _Uint8Array;
@@ -1412,7 +1412,7 @@ const tmp = () => {
                     tmp50 = _Uint8Array;
                     tmp49 = _Uint8Array;
                   } while (_Uint8Array < _Uint8Array);
-                  // continue
+                  continue;
                 }
                 continue;
               }
@@ -1426,10 +1426,10 @@ const tmp = () => {
           }
           sum4 = 4 + (sum3 >>> 3);
           let tmp19 = buffer[sum4 - 4] | buffer[sum4 - 3] << 8;
-          let obj = _Uint8Array1;
+          obj = _Uint8Array1;
           if (tmp2) {
-            let tmp20 = closure_7;
-            obj = closure_7(_Uint8Array1, num8 + tmp19);
+            let tmp20 = H;
+            obj = H(_Uint8Array1, num8 + tmp19);
           }
           let prototype2 = _Uint8Array.prototype;
           let tmp21 = new.target;
@@ -1465,10 +1465,10 @@ const tmp = () => {
         tmp6 = tmp35;
         tmp7 = tmp36;
         tmp8 = tmp37;
-        let tmp9 = tmp38;
-        let tmp10 = tmp39;
-        let tmp11 = sum4;
-        let tmp12 = tmp40;
+        tmp9 = tmp38;
+        tmp10 = tmp39;
+        tmp11 = sum4;
+        tmp12 = tmp40;
         _Uint8Array1 = arr;
         num8 = sum5;
       } while (0 === tmp14);
@@ -1478,7 +1478,7 @@ const tmp = () => {
       }
       return _Uint8Array;
     };
-  }();
+  })();
   obj = {
     decode(arg0) {
       let obj;
@@ -1486,14 +1486,13 @@ const tmp = () => {
       let readUshort;
       const uint8Array = new Uint8Array(arg0);
       let sum = uint8Array;
-      const arr2 = uint8Array;
+      const arr3 = uint8Array;
       let num = 8;
       ({ readUshort, readUint } = obj);
       const size = { tabs: {}, frames: [] };
-      const tmp3 = size;
       const uint8Array1 = new Uint8Array(uint8Array.length);
       let num2 = 0;
-      while (arr2[num2] == [][num2]) {
+      while (arr3[num2] == [137, 80, 78, 71, 13, 10, 26, 10][num2]) {
         sum = num2 + 1;
         num2 = sum;
         if (sum < 8) {
@@ -1538,23 +1537,23 @@ const tmp = () => {
           let num17 = 0;
           let num18 = 0;
           let num19 = 0;
-          if (num < arr2.length) {
+          if (num < arr3.length) {
             while (true) {
               let tmp15 = tmp2;
               let tmp16 = sum;
               let tmp17 = num;
-              let uint = obj.readUint(arr2, num);
+              let uint = obj.readUint(arr3, num);
               let sum1 = num + 4;
               let tmp20 = sum1;
-              let aSCII = obj.readASCII(arr2, sum1, 4);
+              let aSCII = obj.readASCII(arr3, sum1, 4);
               let tmp22 = aSCII;
               let sum2 = sum1 + 4;
               if ("IHDR" == aSCII) {
                 sum = _IHDR;
                 sum = sum2;
                 sum = size;
-                sum = _IHDR(arr2, sum2, tmp3);
-                let uint8Array2 = arr3;
+                sum = _IHDR(arr3, sum2, tmp3);
+                let uint8Array2 = arr4;
                 let sum3 = num17;
                 let sum4 = num18;
                 let num20 = sum;
@@ -1569,25 +1568,25 @@ const tmp = () => {
                 if ("iCCP" == tmp22) {
                   sum = sum2;
                   sum = sum2;
-                  if (0 != arr2[sum2]) {
+                  if (0 != arr3[sum2]) {
                     do {
                       sum = sum + 1;
-                      sum = arr2[sum];
+                      sum = arr3[sum];
                     } while (0 != sum);
                   }
                   sum = tmp2;
                   sum = sum2;
-                  sum = obj.readASCII(arr2, sum2, sum - sum2);
-                  sum = arr2[sum + 1];
+                  sum = obj.readASCII(arr3, sum2, sum - sum2);
+                  sum = arr3[sum + 1];
                   sum = uint;
-                  sum = arr2.slice(sum + 2, sum2 + uint);
+                  sum = arr3.slice(sum + 2, sum2 + uint);
                   sum = null;
                   sum = _inflate;
                   sum = _inflate(sum);
                   sum = size;
                   sum = aSCII;
                   tmp3.tabs[tmp22] = sum;
-                  uint8Array2 = arr3;
+                  uint8Array2 = arr4;
                   sum3 = num17;
                   sum4 = num18;
                   num20 = sum;
@@ -1603,8 +1602,8 @@ const tmp = () => {
                     sum = size;
                     sum = aSCII;
                     sum = sum2;
-                    tmp3.tabs[tmp22] = arr2.slice(sum2, sum2 + 4);
-                    uint8Array2 = arr3;
+                    tmp3.tabs[tmp22] = arr3.slice(sum2, sum2 + 4);
+                    uint8Array2 = arr4;
                     sum3 = num17;
                     sum4 = num18;
                     num20 = sum;
@@ -1623,7 +1622,7 @@ const tmp = () => {
                       if (0 < uint) {
                         do {
                           sum = sum2;
-                          uint8Array1[num17 + num27] = arr2[sum2 + num27];
+                          uint8Array1[num17 + num27] = arr3[sum2 + num27];
                           num27 = num27 + 1;
                           sum = uint;
                           num28 = num27;
@@ -1632,7 +1631,7 @@ const tmp = () => {
                       sum = uint;
                       sum3 = num17 + uint;
                       num20 = num28;
-                      uint8Array2 = arr3;
+                      uint8Array2 = arr4;
                       sum4 = num18;
                       tmp28 = tmp9;
                       tmp29 = tmp10;
@@ -1647,13 +1646,13 @@ const tmp = () => {
                         sum = aSCII;
                         obj = {};
                         sum = sum2;
-                        obj.num_frames = readUint(arr2, sum2);
-                        obj.num_plays = readUint(arr2, sum2 + 4);
+                        obj.num_frames = readUint(arr3, sum2);
+                        obj.num_plays = readUint(arr3, sum2 + 4);
                         tmp3.tabs[tmp22] = obj;
                         let _Uint8Array = Uint8Array;
                         sum = new.target;
                         sum = new.target;
-                        uint8Array2 = new Uint8Array(arr2.length);
+                        uint8Array2 = new Uint8Array(arr3.length);
                         sum3 = num17;
                         sum4 = num18;
                         num20 = sum;
@@ -1672,31 +1671,31 @@ const tmp = () => {
                             sum = tmp3.frames[tmp3.frames.length - 1];
                             sum = _decompress;
                             sum = tmp3;
-                            sum.data = _decompress(size, arr3.slice(0, num18), sum.rect.width, sum.rect.height);
+                            sum.data = _decompress(size, arr4.slice(0, num18), sum.rect.width, sum.rect.height);
                             num25 = 0;
                           }
                           obj = {};
                           sum = sum2;
-                          obj.x = readUint(arr2, sum2 + 12);
-                          obj.y = readUint(arr2, sum2 + 16);
-                          obj.width = readUint(arr2, sum2 + 4);
-                          obj.height = readUint(arr2, sum2 + 8);
-                          sum = readUshort(arr2, sum2 + 22);
+                          obj.x = readUint(arr3, sum2 + 12);
+                          obj.y = readUint(arr3, sum2 + 16);
+                          obj.width = readUint(arr3, sum2 + 4);
+                          obj.height = readUint(arr3, sum2 + 8);
+                          sum = readUshort(arr3, sum2 + 22);
                           let obj1 = { rect: obj };
                           let num26 = 100;
-                          sum = readUshort(arr2, sum2 + 20);
+                          sum = readUshort(arr3, sum2 + 20);
                           if (0 != sum) {
                             num26 = sum;
                           }
                           sum = sum / num26;
                           obj1.delay = 1000 * sum;
                           sum = sum2;
-                          obj1.dispose = arr2[sum2 + 24];
-                          obj1.blend = arr2[sum2 + 25];
+                          obj1.dispose = arr3[sum2 + 24];
+                          obj1.blend = arr3[sum2 + 25];
                           sum = size;
                           let frames = tmp3.frames;
                           sum = frames.push(obj1);
-                          uint8Array2 = arr3;
+                          uint8Array2 = arr4;
                           sum3 = num17;
                           sum4 = num25;
                           num20 = sum;
@@ -1715,7 +1714,7 @@ const tmp = () => {
                             if (0 < uint - 4) {
                               do {
                                 sum = sum2;
-                                arr3[num18 + num23] = arr2[sum2 + num23 + 4];
+                                arr4[num18 + num23] = arr3[sum2 + num23 + 4];
                                 num23 = num23 + 1;
                                 sum = uint;
                                 num24 = num23;
@@ -1725,7 +1724,7 @@ const tmp = () => {
                             sum = uint;
                             sum4 = num18 + (uint - 4);
                             num20 = num24;
-                            uint8Array2 = arr3;
+                            uint8Array2 = arr4;
                             sum3 = num17;
                             tmp28 = tmp9;
                             tmp29 = tmp10;
@@ -1740,9 +1739,9 @@ const tmp = () => {
                               sum = aSCII;
                               sum = tmp2;
                               sum = sum2;
-                              let items = [obj.readUint(arr2, sum2), obj.readUint(arr2, sum2 + 4), arr2[sum2 + 8]];
+                              let items = [obj.readUint(arr3, sum2), obj.readUint(arr3, sum2 + 4), arr3[sum2 + 8]];
                               tmp3.tabs[tmp22] = items;
-                              uint8Array2 = arr3;
+                              uint8Array2 = arr4;
                               sum3 = num17;
                               sum4 = num18;
                               num20 = sum;
@@ -1762,12 +1761,12 @@ const tmp = () => {
                                 do {
                                   sum = size;
                                   sum = aSCII;
-                                  let arr10 = tmp3.tabs[tmp22];
+                                  let arr11 = tmp3.tabs[tmp22];
                                   sum = tmp2;
                                   sum = sum2;
-                                  sum = arr10.push(obj.readUint(arr2, sum2 + 4 * num22));
+                                  sum = arr11.push(obj.readUint(arr3, sum2 + 4 * num22));
                                   num22 = num22 + 1;
-                                  uint8Array2 = arr3;
+                                  uint8Array2 = arr4;
                                   sum3 = num17;
                                   sum4 = num18;
                                   tmp28 = tmp9;
@@ -1796,36 +1795,36 @@ const tmp = () => {
                                       let tmp84 = sum2;
                                       let tmp85 = tmp2;
                                       let tmp86 = sum;
-                                      let nextZeroResult = obj.nextZero(arr2, sum2);
-                                      let aSCII1 = obj.readASCII(arr2, sum2, nextZeroResult - sum2);
+                                      let nextZeroResult = obj.nextZero(arr3, sum2);
+                                      let aSCII1 = obj.readASCII(arr3, sum2, nextZeroResult - sum2);
                                       let sum5 = nextZeroResult + 1;
                                       let tmp90 = sum5;
-                                      let tmp91 = arr2[sum5 + 1];
+                                      let tmp91 = arr3[sum5 + 1];
                                       let sum6 = sum5 + 2;
                                       let tmp93 = sum6;
-                                      let nextZeroResult1 = obj.nextZero(arr2, sum6);
-                                      let aSCII2 = obj.readASCII(arr2, sum6, nextZeroResult1 - sum6);
+                                      let nextZeroResult1 = obj.nextZero(arr3, sum6);
+                                      let aSCII2 = obj.readASCII(arr3, sum6, nextZeroResult1 - sum6);
                                       let sum7 = nextZeroResult1 + 1;
                                       let tmp97 = sum7;
-                                      let nextZeroResult2 = obj.nextZero(arr2, sum7);
-                                      let uTF8 = obj.readUTF8(arr2, sum7, nextZeroResult2 - sum7);
+                                      let nextZeroResult2 = obj.nextZero(arr3, sum7);
+                                      let uTF8 = obj.readUTF8(arr3, sum7, nextZeroResult2 - sum7);
                                       sum = uint;
                                       sum = nextZeroResult2 + 1;
                                       sum = uint - (sum - sum2);
-                                      if (0 == arr2[sum5]) {
+                                      if (0 == arr3[sum5]) {
                                         sum = tmp2;
-                                        sum = obj.readUTF8(arr2, sum, sum);
+                                        sum = obj.readUTF8(arr3, sum, sum);
                                       } else {
                                         sum = _inflate;
-                                        let arr8 = _inflate(arr2.slice(sum, sum + sum));
+                                        let arr9 = _inflate(arr3.slice(sum, sum + sum));
                                         sum = tmp2;
-                                        sum = obj.readUTF8(arr8, 0, arr8.length);
+                                        sum = obj.readUTF8(arr9, 0, arr9.length);
                                       }
                                       sum = size;
                                       sum = aSCII;
                                       tmp3.tabs[tmp22][aSCII1] = sum;
                                       tmp32 = sum;
-                                      uint8Array2 = arr3;
+                                      uint8Array2 = arr4;
                                       sum3 = num17;
                                       sum4 = num18;
                                       num20 = sum;
@@ -1843,8 +1842,8 @@ const tmp = () => {
                                         let tmp76 = sum;
                                         let tmp77 = sum2;
                                         let tmp78 = uint;
-                                        tmp3.tabs[tmp22] = obj.readBytes(arr2, sum2, uint);
-                                        uint8Array2 = arr3;
+                                        tmp3.tabs[tmp22] = obj.readBytes(arr3, sum2, uint);
+                                        uint8Array2 = arr4;
                                         sum3 = num17;
                                         sum4 = num18;
                                         num20 = sum;
@@ -1862,7 +1861,7 @@ const tmp = () => {
                                           let tmp67 = aSCII;
                                           tmp3.tabs[tmp22] = [];
                                           let num21 = 0;
-                                          uint8Array2 = arr3;
+                                          uint8Array2 = arr4;
                                           sum3 = num17;
                                           sum4 = num18;
                                           num20 = 0;
@@ -1876,12 +1875,12 @@ const tmp = () => {
                                             do {
                                               let tmp68 = size;
                                               let tmp69 = aSCII;
-                                              let arr7 = tmp3.tabs[tmp22];
+                                              let arr8 = tmp3.tabs[tmp22];
                                               let tmp70 = sum;
                                               let tmp71 = sum2;
-                                              let arr = arr7.push(readUshort(arr2, sum2 + 2 * num21));
+                                              let arr = arr8.push(readUshort(arr3, sum2 + 2 * num21));
                                               num21 = num21 + 1;
-                                              uint8Array2 = arr3;
+                                              uint8Array2 = arr4;
                                               sum3 = num17;
                                               sum4 = num18;
                                               tmp28 = tmp9;
@@ -1904,8 +1903,8 @@ const tmp = () => {
                                               let tmp62 = sum;
                                               let tmp63 = sum2;
                                               let tmp64 = uint;
-                                              tmp3.tabs[tmp22] = obj.readBytes(arr2, sum2, uint);
-                                              uint8Array2 = arr3;
+                                              tmp3.tabs[tmp22] = obj.readBytes(arr3, sum2, uint);
+                                              uint8Array2 = arr4;
                                               sum3 = num17;
                                               sum4 = num18;
                                               num20 = sum;
@@ -1922,8 +1921,8 @@ const tmp = () => {
                                                 let tmp56 = aSCII;
                                                 let tmp57 = sum;
                                                 let tmp58 = sum2;
-                                                tmp3.tabs[tmp22] = readUshort(arr2, sum2);
-                                                uint8Array2 = arr3;
+                                                tmp3.tabs[tmp22] = readUshort(arr3, sum2);
+                                                uint8Array2 = arr4;
                                                 sum3 = num17;
                                                 sum4 = num18;
                                                 num20 = sum;
@@ -1935,7 +1934,7 @@ const tmp = () => {
                                                 tmp33 = tmp14;
                                               } else {
                                                 sum = size;
-                                                uint8Array2 = arr3;
+                                                uint8Array2 = arr4;
                                                 sum3 = num17;
                                                 sum4 = num18;
                                                 num20 = sum;
@@ -1949,9 +1948,9 @@ const tmp = () => {
                                                   sum = size;
                                                   sum = aSCII;
                                                   sum = sum2;
-                                                  let items1 = [readUshort(arr2, sum2), readUshort(arr2, sum2 + 2), readUshort(arr2, sum2 + 4)];
+                                                  let items1 = [readUshort(arr3, sum2), readUshort(arr3, sum2 + 2), readUshort(arr3, sum2 + 4)];
                                                   tmp3.tabs[tmp22] = items1;
-                                                  uint8Array2 = arr3;
+                                                  uint8Array2 = arr4;
                                                   sum3 = num17;
                                                   sum4 = num18;
                                                   num20 = sum;
@@ -1972,8 +1971,8 @@ const tmp = () => {
                                               let tmp51 = tmp2;
                                               let tmp52 = sum;
                                               let tmp53 = sum2;
-                                              tmp3.tabs[tmp22] = obj.readUint(arr2, sum2) / 100000;
-                                              uint8Array2 = arr3;
+                                              tmp3.tabs[tmp22] = obj.readUint(arr3, sum2) / 100000;
+                                              uint8Array2 = arr4;
                                               sum3 = num17;
                                               sum4 = num18;
                                               num20 = sum;
@@ -1990,8 +1989,8 @@ const tmp = () => {
                                                 let tmp46 = aSCII;
                                                 let tmp47 = sum;
                                                 let tmp48 = sum2;
-                                                tmp3.tabs[tmp22] = arr2[sum2];
-                                                uint8Array2 = arr3;
+                                                tmp3.tabs[tmp22] = arr3[sum2];
+                                                uint8Array2 = arr4;
                                                 sum3 = num17;
                                                 sum4 = num18;
                                                 num20 = sum;
@@ -2013,7 +2012,7 @@ const tmp = () => {
                                                         let tmp35 = size;
                                                         if (6 != tmp3.ctype) {
                                                           let tmp36 = size;
-                                                          uint8Array2 = arr3;
+                                                          uint8Array2 = arr4;
                                                           sum3 = num17;
                                                           sum4 = num18;
                                                           num20 = sum;
@@ -2027,8 +2026,8 @@ const tmp = () => {
                                                             sum = size;
                                                             sum = aSCII;
                                                             sum = sum2;
-                                                            tmp3.tabs[tmp22] = arr2[sum2];
-                                                            uint8Array2 = arr3;
+                                                            tmp3.tabs[tmp22] = arr3[sum2];
+                                                            uint8Array2 = arr4;
                                                             sum3 = num17;
                                                             sum4 = num18;
                                                             num20 = sum;
@@ -2045,9 +2044,9 @@ const tmp = () => {
                                                       let tmp38 = aSCII;
                                                       let tmp39 = sum;
                                                       let tmp40 = sum2;
-                                                      let items2 = [readUshort(arr2, sum2), readUshort(arr2, sum2 + 2), readUshort(arr2, sum2 + 4)];
+                                                      let items2 = [readUshort(arr3, sum2), readUshort(arr3, sum2 + 2), readUshort(arr3, sum2 + 4)];
                                                       tmp3.tabs[tmp22] = items2;
-                                                      uint8Array2 = arr3;
+                                                      uint8Array2 = arr4;
                                                       sum3 = num17;
                                                       sum4 = num18;
                                                       num20 = sum;
@@ -2063,9 +2062,9 @@ const tmp = () => {
                                                   let tmp42 = aSCII;
                                                   let tmp43 = sum;
                                                   let tmp44 = sum2;
-                                                  let items3 = [readUshort(arr2, sum2)];
+                                                  let items3 = [readUshort(arr3, sum2)];
                                                   tmp3.tabs[tmp22] = items3;
-                                                  uint8Array2 = arr3;
+                                                  uint8Array2 = arr4;
                                                   sum3 = num17;
                                                   sum4 = num18;
                                                   num20 = sum;
@@ -2077,7 +2076,7 @@ const tmp = () => {
                                                   tmp33 = tmp14;
                                                 } else {
                                                   let tmp24 = aSCII;
-                                                  uint8Array2 = arr3;
+                                                  uint8Array2 = arr4;
                                                   sum3 = num17;
                                                   sum4 = num18;
                                                   num20 = sum;
@@ -2087,7 +2086,7 @@ const tmp = () => {
                                                   tmp31 = tmp12;
                                                   tmp32 = tmp13;
                                                   tmp33 = tmp14;
-                                                  let arr4 = arr3;
+                                                  let arr5 = arr4;
                                                   num19 = num18;
                                                   if ("IEND" == tmp22) {
                                                     break;
@@ -2112,25 +2111,25 @@ const tmp = () => {
                                 }
                                 sum = tmp2;
                                 sum = sum2;
-                                sum = obj.nextZero(arr2, sum2);
-                                sum = obj.readASCII(arr2, sum2, sum - sum2);
+                                sum = obj.nextZero(arr3, sum2);
+                                sum = obj.readASCII(arr3, sum2, sum - sum2);
                                 sum = uint;
                                 sum = sum2 + uint - sum - 1;
                                 sum = aSCII;
                                 if ("tEXt" == tmp22) {
                                   sum = tmp2;
-                                  sum = obj.readASCII(arr2, sum + 1, sum);
+                                  sum = obj.readASCII(arr3, sum + 1, sum);
                                 } else {
                                   sum = _inflate;
-                                  let arr9 = _inflate(arr2.slice(sum + 2, sum + 2 + sum));
+                                  let arr10 = _inflate(arr3.slice(sum + 2, sum + 2 + sum));
                                   sum = tmp2;
-                                  sum = obj.readUTF8(arr9, 0, arr9.length);
+                                  sum = obj.readUTF8(arr10, 0, arr10.length);
                                 }
                                 sum = size;
                                 sum = aSCII;
                                 tmp3.tabs[tmp22][sum] = sum;
                                 tmp32 = sum;
-                                uint8Array2 = arr3;
+                                uint8Array2 = arr4;
                                 sum3 = num17;
                                 sum4 = num18;
                                 num20 = sum;
@@ -2152,22 +2151,22 @@ const tmp = () => {
               sum = uint;
               sum = sum2 + uint;
               sum = tmp2;
-              sum = obj.readUint(arr2, sum);
+              sum = obj.readUint(arr3, sum);
               sum = sum + 4;
               num = sum;
-              let arr3 = uint8Array2;
+              arr4 = uint8Array2;
               num17 = sum3;
               num18 = sum4;
               sum = num20;
-              let tmp9 = tmp28;
-              let tmp10 = tmp29;
-              let tmp11 = tmp30;
-              let tmp12 = tmp31;
-              let tmp13 = tmp32;
-              let tmp14 = tmp33;
-              arr4 = uint8Array2;
+              tmp9 = tmp28;
+              tmp10 = tmp29;
+              tmp11 = tmp30;
+              tmp12 = tmp31;
+              tmp13 = tmp32;
+              tmp14 = tmp33;
+              arr5 = uint8Array2;
               num19 = sum4;
-              if (sum >= arr2.length) {
+              if (sum >= arr3.length) {
                 break;
               }
             }
@@ -2177,15 +2176,15 @@ const tmp = () => {
             sum = tmp3.frames[tmp3.frames.length - 1];
             sum = _decompress;
             sum = tmp3;
-            sum.data = _decompress(size, arr4.slice(0, num19), sum.rect.width, sum.rect.height);
+            sum.data = _decompress(size, arr5.slice(0, num19), sum.rect.width, sum.rect.height);
           }
           sum = _decompress;
           sum = size;
           sum = uint8Array1;
           size.data = _decompress(tmp3, tmp5, size.width, size.height);
-          delete r0.compress;
-          delete r0.interlace;
-          delete r0.filter;
+          delete arr.compress;
+          delete arr.interlace;
+          delete arr.filter;
           return size;
         }
       }
@@ -2218,11 +2217,11 @@ const tmp = () => {
             let y = tmp18.rect.y;
             let width2 = tmp18.rect.width;
             let height2 = tmp18.rect.height;
-            let tmp19 = closure_2;
+            let tmp19 = decodeImage;
             let tmp20 = width2;
             let tmp21 = height2;
             let tmp22 = img;
-            let tmp23 = closure_2(tmp18.data, width2, height2, img);
+            let tmp23 = decodeImage(tmp18.data, width2, height2, img);
             if (0 != num4) {
               let num6 = 0;
               let num5 = 0;
@@ -2235,7 +2234,7 @@ const tmp = () => {
               }
             }
             if (0 == tmp18.blend) {
-              let tmp34 = closure_9;
+              let tmp34 = _copyTile;
               let tmp35 = tmp23;
               let tmp36 = width2;
               let tmp37 = height2;
@@ -2245,9 +2244,9 @@ const tmp = () => {
               let tmp41 = x;
               let tmp42 = y;
               let num8 = 0;
-              let tmp43 = closure_9(tmp23, width2, height2, tmp7, width, height, x, y, 0);
+              let tmp43 = _copyTile(tmp23, width2, height2, tmp7, width, height, x, y, 0);
             } else if (1 == tmp18.blend) {
-              let tmp24 = closure_9;
+              let tmp24 = _copyTile;
               let tmp25 = tmp23;
               let tmp26 = width2;
               let tmp27 = height2;
@@ -2257,14 +2256,14 @@ const tmp = () => {
               let tmp31 = x;
               let tmp32 = y;
               let num7 = 1;
-              let tmp33 = closure_9(tmp23, width2, height2, tmp7, width, height, x, y, 1);
+              let tmp33 = _copyTile(tmp23, width2, height2, tmp7, width, height, x, y, 1);
             }
             let buffer = uint8Array.buffer;
             let arr = items1.push(buffer.slice(0));
             let num9 = num5;
             if (0 != tmp18.dispose) {
               if (1 == tmp18.dispose) {
-                let tmp45 = closure_9;
+                let tmp45 = _copyTile;
                 let tmp46 = uint8Array1;
                 let tmp47 = width2;
                 let tmp48 = height2;
@@ -2274,7 +2273,7 @@ const tmp = () => {
                 let tmp52 = x;
                 let tmp53 = y;
                 let num11 = 0;
-                let tmp54 = closure_9(tmp12, width2, height2, tmp7, width, height, x, y, 0);
+                let tmp54 = _copyTile(tmp12, width2, height2, tmp7, width, height, x, y, 0);
                 num9 = num5;
               } else {
                 num9 = num5;
@@ -2303,16 +2302,20 @@ const tmp = () => {
     _bin: obj
   };
   return obj;
-}();
-() => {
-  function addErr(arg0, arg1, arg2, arg3) {
-    arg1[arg2] = arg1[arg2] + (arg0[0] * arg3 >> 4);
+})();
+let closure_0 = tmp;
+(() => {
+  let closure_0;
+  let closure_1;
+  let closure_2;
+  function addErr(items5, arg1, arg2, arg3) {
+    arg1[arg2] = arg1[arg2] + (items5[0] * arg3 >> 4);
     const sum = arg2 + 1;
-    arg1[sum] = arg1[sum] + (arg0[1] * arg3 >> 4);
+    arg1[sum] = arg1[sum] + (items5[1] * arg3 >> 4);
     const sum1 = arg2 + 2;
-    arg1[sum1] = arg1[sum1] + (arg0[2] * arg3 >> 4);
+    arg1[sum1] = arg1[sum1] + (items5[2] * arg3 >> 4);
     const sum2 = arg2 + 3;
-    arg1[sum2] = arg1[sum2] + (arg0[3] * arg3 >> 4);
+    arg1[sum2] = arg1[sum2] + (items5[3] * arg3 >> 4);
   }
   function N(arg0) {
     return Math.max(0, Math.min(255, arg0));
@@ -2324,7 +2327,7 @@ const tmp = () => {
     const diff3 = arg0[3] - arg1[3];
     return diff * diff + diff1 * diff1 + diff2 * diff2 + diff3 * diff3;
   }
-  function dither(arg0, arg1, arg2, arg3, buffer) {
+  function dither(img, width, height, items1, first, first2) {
     let length2;
     let num = arg6;
     if (null == arg6) {
@@ -2332,12 +2335,12 @@ const tmp = () => {
     }
     const items = [];
     for (let num2 = 0; num2 < length; num2 = num2 + 1) {
-      let tmp = arg3[num2];
-      let items1 = [tmp >>> 0 & 255, tmp >>> 8 & 255, tmp >>> 16 & 255, tmp >>> 24 & 255];
+      let tmp = items1[num2];
+      items1 = [tmp >>> 0 & 255, tmp >>> 8 & 255, tmp >>> 16 & 255, tmp >>> 24 & 255];
       let arr = items.push(items1);
     }
     let num3 = 0;
-    if (0 < arg3.length) {
+    if (0 < items1.length) {
       do {
         let num4 = 4294967295;
         let num5 = 0;
@@ -2347,8 +2350,8 @@ const tmp = () => {
         let num9 = 0;
         if (0 < length) {
           do {
-            let tmp5 = closure_7;
-            let tmp6 = closure_7(items[num3], items[num6]);
+            let tmp5 = D;
+            let tmp6 = D(items[num3], items[num6]);
             let tmp7 = num6 != num3 && tmp6 < num4;
             if (tmp7) {
               num4 = tmp6;
@@ -2370,9 +2373,9 @@ const tmp = () => {
         let tmp4 = tmp3;
       } while (num3 < length);
     }
-    const uint32Array = new Uint32Array(buffer.buffer);
-    const int16Array = new Int16Array(arg1 * arg2 * 4);
-    const items2 = [];
+    const uint32Array = new Uint32Array(first.buffer);
+    const int16Array = new Int16Array(width * height * 4);
+    const items2 = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5];
     let num10 = 0;
     if (0 < items2.length) {
       do {
@@ -2382,28 +2385,28 @@ const tmp = () => {
         length2 = items2.length;
       } while (num10 < length2);
     }
-    for (let num11 = 0; num11 < arg2; num11 = num11 + 1) {
+    for (let num11 = 0; num11 < height; num11 = num11 + 1) {
       let tmp16 = tmp4;
       let tmp17 = tmp15;
       let num12 = 0;
-      if (0 < arg1) {
+      if (0 < width) {
         do {
-          let result1 = 4 * (num11 * arg1 + num12);
+          let result1 = 4 * (num11 * width + num12);
           if (2 != num) {
-            let tmp21 = closure_6;
-            let items3 = [closure_6(arg0[result1] + int16Array[result1]), , , ];
+            let tmp21 = N;
+            let items3 = [N(img[result1] + int16Array[result1]), , , ];
             let sum = result1 + 1;
-            items3[1] = closure_6(arg0[sum] + int16Array[sum]);
+            items3[1] = N(img[sum] + int16Array[sum]);
             let sum1 = result1 + 2;
-            items3[2] = closure_6(arg0[sum1] + int16Array[sum1]);
+            items3[2] = N(img[sum1] + int16Array[sum1]);
             let sum2 = result1 + 3;
-            items3[3] = closure_6(arg0[sum2] + int16Array[sum2]);
+            items3[3] = N(img[sum2] + int16Array[sum2]);
             let tmp19 = tmp16;
             let items4 = items3;
           } else {
             tmp19 = items2[4 * (3 & num11) + (3 & num12)];
-            let tmp20 = closure_6;
-            items4 = [closure_6(arg0[result1] + tmp19), closure_6(arg0[result1 + 1] + tmp19), closure_6(arg0[result1 + 2] + tmp19), closure_6(arg0[result1 + 3] + tmp19)];
+            let tmp20 = N;
+            items4 = [N(img[result1] + tmp19), N(img[result1 + 1] + tmp19), N(img[result1 + 2] + tmp19), N(img[result1 + 3] + tmp19)];
           }
           let num13 = 0;
           let num14 = 0;
@@ -2413,8 +2416,8 @@ const tmp = () => {
           let num18 = 16777215;
           if (0 < length) {
             do {
-              let tmp25 = closure_7;
-              let tmp26 = closure_7(items4, items[num14]);
+              let tmp25 = D;
+              let tmp26 = D(items4, items[num14]);
               if (tmp26 < num15) {
                 num13 = num14;
                 num15 = tmp26;
@@ -2430,38 +2433,38 @@ const tmp = () => {
           let items5 = [items4[0] - tmp27[0], items4[1] - tmp27[1], items4[2] - tmp27[2], items4[3] - tmp27[3]];
           let tmp28 = tmp17;
           if (1 == num) {
-            if (num12 != arg1 - 1) {
-              let tmp29 = closure_5;
+            if (num12 != width - 1) {
+              let tmp29 = addErr;
               let tmp30 = items5;
               let tmp31 = int16Array;
               let num19 = 7;
-              let tmp32 = closure_5(items5, tmp13, result1 + 4, 7);
+              let tmp32 = addErr(items5, tmp13, result1 + 4, 7);
             }
-            if (num11 != arg2 - 1) {
+            if (num11 != height - 1) {
               if (0 != num12) {
-                let tmp33 = closure_5;
+                let tmp33 = addErr;
                 let tmp34 = items5;
                 let tmp35 = int16Array;
                 let num20 = 3;
-                let tmp36 = closure_5(items5, tmp13, result1 + 4 * arg1 - 4, 3);
+                let tmp36 = addErr(items5, tmp13, result1 + 4 * width - 4, 3);
               }
-              let tmp37 = closure_5;
+              let tmp37 = addErr;
               let tmp38 = items5;
               let tmp39 = int16Array;
               let num21 = 5;
-              let tmp40 = closure_5(items5, tmp13, result1 + 4 * arg1, 5);
-              if (num12 != arg1 - 1) {
-                let tmp41 = closure_5;
+              let tmp40 = addErr(items5, tmp13, result1 + 4 * width, 5);
+              if (num12 != width - 1) {
+                let tmp41 = addErr;
                 let tmp42 = items5;
                 let tmp43 = int16Array;
                 let num22 = 1;
-                let tmp44 = closure_5(items5, tmp13, result1 + 4 * arg1 + 4, 1);
+                let tmp44 = addErr(items5, tmp13, result1 + 4 * width + 4, 1);
               }
             }
           }
           let tmp45 = result1 >> 2;
-          arg5[tmp45] = num16;
-          uint32Array[tmp45] = arg3[num16];
+          first2[tmp45] = num16;
+          uint32Array[tmp45] = items1[num16];
           num12 = num12 + 1;
           tmp16 = tmp19;
           let tmp46 = result1;
@@ -2470,9 +2473,9 @@ const tmp = () => {
           tmp4 = tmp19;
           let tmp49 = items4;
           let tmp50 = num18;
-          let tmp15 = tmp17;
+          tmp15 = tmp17;
           let tmp51 = items5;
-        } while (num12 < arg1);
+        } while (num12 < width);
       }
     }
   }
@@ -2481,7 +2484,7 @@ const tmp = () => {
     if (null == arg4) {
       obj = {};
     }
-    const crc = crc.crc;
+    crc = crc.crc;
     const writeUint = closure_1.writeUint;
     const writeUshort = closure_1.writeUshort;
     const writeASCII = closure_1.writeASCII;
@@ -2549,7 +2552,7 @@ const tmp = () => {
     const uint8Array = new Uint8Array(tmp10 + 12);
     let num15 = 0;
     do {
-      uint8Array[num15] = [][num15];
+      uint8Array[num15] = [137, 80, 78, 71, 13, 10, 26, 10][num15];
       num15 = num15 + 1;
     } while (num15 < 8);
     writeUint(uint8Array, 8, 13);
@@ -2735,22 +2738,22 @@ const tmp = () => {
         let tmp3 = new.target;
         let uint8Array = new Uint8Array(height * tmp.bpl + height);
         let tmp5 = uint8Array;
-        let tmp6 = closure_14;
+        let tmp6 = _filterZero;
         let tmp7 = height;
         let tmp8 = arg1;
         let tmp9 = arg2;
-        tmp.cimg = closure_14(tmp.img, height, tmp.bpp, tmp.bpl, uint8Array, arg1, arg2);
+        tmp.cimg = _filterZero(tmp.img, height, tmp.bpp, tmp.bpl, uint8Array, arg1, arg2);
         num = num + 1;
         length = frames.frames.length;
       } while (num < length);
     }
   }
-  function compress(arg0, arg1, arg2, arg3, arg4) {
+  function compress(arg0, arg1, arg2, arg3, first) {
     let length2;
     let length5;
     let length6;
     let length8;
-    let first = arg4[0];
+    first = first[0];
     let num = 255;
     let num2 = 0;
     let num3 = 255;
@@ -2975,7 +2978,7 @@ const tmp = () => {
               let tmp86 = new.target;
               let uint8Array4 = new Uint8Array(tmp44 * tmp45 * 4);
               let tmp88 = uint8Array4;
-              let tmp89 = closure_0;
+              let tmp89 = callback;
               let tmp90 = uint8Array3;
               let tmp91 = arg1;
               let tmp92 = arg2;
@@ -2983,8 +2986,8 @@ const tmp = () => {
               let tmp94 = tmp44;
               let tmp95 = tmp45;
               let num32 = 0;
-              let tmp96 = closure_0(tmp84, arg1, arg2, uint8Array4, tmp44, tmp45, -num17, -num18, 0);
-              let tmp97 = closure_0;
+              let tmp96 = callback(tmp84, arg1, arg2, uint8Array4, tmp44, tmp45, -num17, -num18, 0);
+              let tmp97 = callback;
               let tmp98 = uint8Array1;
               let tmp99 = arg1;
               first = arg2;
@@ -2993,18 +2996,18 @@ const tmp = () => {
               first = tmp45;
               let num33 = 3;
               let num34 = 0;
-              if (closure_0(tmp23, arg1, arg2, uint8Array4, tmp44, tmp45, -num17, -num18, 3)) {
+              if (callback(tmp23, arg1, arg2, uint8Array4, tmp44, tmp45, -num17, -num18, 3)) {
                 num34 = 1;
               }
               if (1 === num34) {
-                first = closure_13;
+                first = _prepareDiff;
                 let obj = { x: num17, y: num18, width: tmp44, height: tmp45 };
                 first = uint8Array1;
                 first = arg1;
                 first = arg2;
                 first = uint8Array4;
                 first = obj;
-                first = closure_13(tmp23, arg1, arg2, tmp88, obj);
+                first = _prepareDiff(tmp23, arg1, arg2, tmp88, obj);
                 let substr = uint8Array4;
                 let num9 = num17;
                 let num10 = num18;
@@ -3026,7 +3029,7 @@ const tmp = () => {
                 let tmp38 = tmp19;
                 let tmp39 = tmp47;
               } else {
-                first = closure_0;
+                first = callback;
                 first = uint8Array1;
                 first = arg1;
                 first = arg2;
@@ -3034,7 +3037,7 @@ const tmp = () => {
                 first = tmp44;
                 first = tmp45;
                 let num35 = 0;
-                first = closure_0(tmp23, arg1, arg2, tmp88, tmp44, tmp45, -num17, -num18, 0);
+                first = callback(tmp23, arg1, arg2, tmp88, tmp44, tmp45, -num17, -num18, 0);
                 substr = uint8Array4;
                 num9 = num17;
                 num10 = num18;
@@ -3089,9 +3092,9 @@ const tmp = () => {
         tmp15 = tmp34;
         tmp16 = tmp35;
         tmp17 = tmp36;
-        let tmp18 = tmp37;
+        tmp18 = tmp37;
         tmp19 = tmp38;
-        let tmp20 = tmp39;
+        tmp20 = tmp39;
       } while (num7 < arg0.length);
     }
     if (first) {
@@ -3239,9 +3242,9 @@ const tmp = () => {
           first = new Uint8Array(first.abuf, num53, length9);
           first = num53;
           if (tmp5) {
-            first = closure_8;
+            first = dither;
             first = items1;
-            first = closure_8(first.img, first.rect.width, first.rect.height, items1, first, first);
+            first = dither(first.img, first.rect.width, first.rect.height, items1, first, first);
           }
           let img = first.img;
           first = img.set(first);
@@ -3327,7 +3330,7 @@ const tmp = () => {
         num55 = num56;
       }
       const _Math = Math;
-      num54 = Math.max(num55, arg4[3]);
+      num54 = Math.max(num55, first[3]);
     }
     let num59 = 6;
     let num60 = 0;
@@ -3465,7 +3468,7 @@ const tmp = () => {
     const obj3 = { ctype: num61, depth: num54, plte: items1, frames: items };
     return obj3;
   }
-  function _updateFrame(arg0, arg1, arg2, items, arg4, height, arg6) {
+  function _updateFrame(arg0, arg1, arg2, items, arg4, height, first) {
     let _Uint8Array = Uint8Array;
     const uint8Array = new Uint8Array(arg0[arg4 - 1]);
     const uint32Array = new Uint32Array(arg0[arg4 - 1]);
@@ -3571,7 +3574,7 @@ const tmp = () => {
     }
     let tmp38 = num4;
     let tmp39 = num5;
-    if (arg6) {
+    if (first) {
       let diff = num4;
       if (!(1 & ~num4)) {
         diff = num4 - 1;
@@ -3600,7 +3603,7 @@ const tmp = () => {
   }
   function _filterZero(buffer, arg1, arg2, arg3, set) {
     const items = [];
-    let items1 = [null, null, null, null, null];
+    let items1 = [0, 1, 2, 3, 4];
     if (-1 != arg5) {
       const items2 = [arg5];
       items1 = items2;
@@ -3610,7 +3613,7 @@ const tmp = () => {
         tmp = 1 == arg2;
       }
       if (tmp) {
-        items1 = [0.229];
+        items1 = [0];
       }
     }
     if (arg6) {
@@ -3706,9 +3709,9 @@ const tmp = () => {
         let sum6 = arg4;
         if (arg4 < arg3) {
           do {
-            let tmp15 = closure_2;
+            let tmp15 = callback2;
             let sum5 = sum1 + sum6;
-            set[sum5] = buffer[result + sum6] - closure_2(buffer[result + sum6 - arg4], 0, 0) + 256 & 255;
+            set[sum5] = buffer[result + sum6] - callback2(buffer[result + sum6 - arg4], 0, 0) + 256 & 255;
             sum6 = sum6 + 1;
           } while (sum6 < arg3);
         }
@@ -3741,10 +3744,10 @@ const tmp = () => {
         let sum12 = arg4;
         if (arg4 < arg3) {
           do {
-            let tmp11 = closure_2;
+            let tmp11 = callback2;
             let sum10 = sum1 + sum12;
             let sum11 = buffer[result + sum12] + 256;
-            set[sum10] = sum11 - closure_2(buffer[result + sum12 - arg4], buffer[result + sum12 - arg3], buffer[result + sum12 - arg4 - arg3]) & 255;
+            set[sum10] = sum11 - callback2(buffer[result + sum12 - arg4], buffer[result + sum12 - arg3], buffer[result + sum12 - arg4 - arg3]) & 255;
             sum12 = sum12 + 1;
           } while (sum12 < arg3);
         }
@@ -3786,12 +3789,12 @@ const tmp = () => {
         let tmp13 = first;
         if (first.left) {
           do {
-            let tmp14 = closure_22;
+            let tmp14 = planeDst;
             let tmp15 = result;
             let tmp16 = result1;
             let tmp17 = result2;
             let tmp18 = result3;
-            let tmp19 = closure_22(rect.est, result, result1, result2, result3) <= 0 ? rect.left : rect.right;
+            tmp19 = planeDst(rect.est, result, result1, result2, result3) <= 0 ? rect.left : rect.right;
             rect = tmp19;
             tmp13 = tmp19;
           } while (tmp19.left);
@@ -3913,7 +3916,7 @@ const tmp = () => {
         items[num] = items[num] * items[num];
         num = num + 1;
         let tmp20 = num6;
-        let tmp3 = tmp11;
+        tmp3 = tmp11;
         let tmp4 = tmp11;
       } while (num < tmp);
     }
@@ -3993,7 +3996,9 @@ const tmp = () => {
       num = 0.0001;
     }
     const uint32Array = new Uint32Array(substr.buffer);
-    let obj = { i1: substr.length, bst: stats(substr, obj.i0, obj.i1), est: estats(obj.bst) };
+    let obj = { i0: 0, i1: substr.length, bst: null, est: null, tdst: 0, left: null, right: null };
+    obj.bst = stats(substr, obj.i0, obj.i1);
+    obj.est = estats(obj.bst);
     const items = [obj];
     if (items.length < arg1) {
       while (true) {
@@ -4023,12 +4028,12 @@ const tmp = () => {
           let tmp11 = splitPixels(substr, uint32Array, tmp7.i0, tmp7.i1, tmp7.est.e, tmp7.est.eMq255);
           if (tmp7.i0 < tmp11) {
             if (tmp7.i1 > tmp11) {
-              obj = { i0: tmp7.i0, i1: tmp11 };
+              obj = { i0: tmp7.i0, i1: tmp11, bst: null, est: null, tdst: 0, left: null, right: null };
               let tmp12 = stats;
               obj.bst = stats(substr, obj.i0, obj.i1);
               let tmp13 = estats;
               obj.est = estats(obj.bst);
-              obj = { i0: tmp11, i1: tmp7.i1 };
+              obj = { i0: tmp11, i1: tmp7.i1, bst: null, est: null, tdst: 0, left: null, right: null };
               let obj1 = { R: [], m: [], N: tmp7.bst.N - obj.bst.N };
               obj.bst = obj1;
               let num7 = 0;
@@ -4072,28 +4077,28 @@ const tmp = () => {
     const items1 = [obj, items];
     return items1;
   }
-  function getNearest(first, arg1, arg2, arg3, arg4) {
+  function getNearest(first, result, result1, result2, result3) {
     let left;
     let right;
     if (null == first.left) {
       const q = first.est.q;
-      const diff = arg1 - q[0];
-      const diff1 = arg2 - q[1];
-      const diff2 = arg3 - q[2];
-      const diff3 = arg4 - q[3];
+      const diff = result - q[0];
+      const diff1 = result1 - q[1];
+      const diff2 = result2 - q[2];
+      const diff3 = result3 - q[3];
       first.tdst = diff * diff + diff1 * diff1 + diff2 * diff2 + diff3 * diff3;
       return first;
     } else {
-      const tmp25 = planeDst(first.est, arg1, arg2, arg3, arg4);
+      const tmp25 = planeDst(first.est, result, result1, result2, result3);
       ({ left: right, right: left } = first);
       if (tmp25 > 0) {
         ({ right, left } = first);
       }
-      const tmp7 = getNearest(right, arg1, arg2, arg3, arg4);
+      const tmp7 = getNearest(right, result, result1, result2, result3);
       if (tmp7.tdst <= tmp25 * tmp25) {
         return tmp7;
       } else {
-        const tmp14 = getNearest(left, arg1, arg2, arg3, arg4);
+        const tmp14 = getNearest(left, result, result1, result2, result3);
         let tmp15 = tmp7;
         if (tmp14.tdst < tmp7.tdst) {
           tmp15 = tmp14;
@@ -4102,9 +4107,9 @@ const tmp = () => {
       }
     }
   }
-  function planeDst(est, arg1, arg2, arg3, arg4) {
+  function planeDst(est, result, result1, result2, result3) {
     const e = est.e;
-    return e[0] * arg1 + e[1] * arg2 + e[2] * arg3 + e[3] * arg4 - est.eMq;
+    return e[0] * result + e[1] * result1 + e[2] * result2 + e[3] * result3 - est.eMq;
   }
   function splitPixels(substr, uint32Array, i0, i1, arg4, eMq255) {
     let tmp21;
@@ -4119,10 +4124,10 @@ const tmp = () => {
         if (vecDot(substr, sum1, arg4) <= eMq255) {
           do {
             let sum = tmp5 + 4;
-            let tmp8 = closure_24;
+            let tmp8 = vecDot;
             tmp5 = sum;
             tmp6 = sum;
-            let tmp9 = closure_24(substr, sum, arg4);
+            tmp9 = vecDot(substr, sum, arg4);
           } while (tmp9 <= eMq255);
         }
         let tmp10 = vecDot;
@@ -4131,10 +4136,10 @@ const tmp = () => {
         if (vecDot(substr, diff, arg4) > eMq255) {
           do {
             let diff1 = tmp11 - 4;
-            let tmp14 = closure_24;
+            let tmp14 = vecDot;
             tmp11 = diff1;
             tmp12 = diff1;
-            let tmp15 = closure_24(substr, diff1, arg4);
+            tmp15 = vecDot(substr, diff1, arg4);
           } while (tmp15 > eMq255);
         }
         tmp3 = tmp6;
@@ -4158,10 +4163,10 @@ const tmp = () => {
     if (vecDot(substr, tmp3, arg4) > eMq255) {
       do {
         let diff2 = tmp17 - 4;
-        let tmp20 = closure_24;
+        let tmp20 = vecDot;
         tmp17 = diff2;
         tmp18 = diff2;
-        tmp21 = closure_24(substr, diff2, arg4);
+        tmp21 = vecDot(substr, diff2, arg4);
       } while (tmp21 > eMq255);
     }
     return tmp18 + 4;
@@ -4171,8 +4176,8 @@ const tmp = () => {
   }
   function stats(substr, i0, i1) {
     let sum = i0;
-    const R = ["night", "sleep", "sleeping", "sleepy", "tired", "zzz", true, true, true, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002137547005122759, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009192404999180679, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001427550462376186, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007956894974094079, 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009678217678751283, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006929651222466138, 13718649062344820000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000];
-    const m = [139348659563046800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000118231045220236, 0.00000000000000000000000000000000000000000000000000002089509649731851, -0.000000000000000000000000000000000000000000000000000000000000000000000000000017285410812612244];
+    const R = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    const m = [0, 0, 0, 0];
     const N = i1 - i0 >> 2;
     if (i0 < i1) {
       do {
@@ -4263,8 +4268,8 @@ const tmp = () => {
     obj.rgba = (tmp15 | tmp16 | Math.round(255 * items2[1]) << 8 | Math.round(255 * items2[0])) >>> 0;
     return obj;
   }
-  ({ _copyTile: closure_0, _bin: closure_1, _paeth: closure_2 } = tmp);
-  const uint32Array = new Uint32Array(256);
+  ({ _copyTile: closure_0, _bin: closure_1, _paeth: closure_2 } = closure_0);
+  let uint32Array = new Uint32Array(256);
   let num = 0;
   let tmp2 = num;
   let num2 = 0;
@@ -4278,6 +4283,6 @@ const tmp = () => {
     uint32Array[num] = tmp4;
     num = num + 1;
   } while (num < 256);
-}();
+})();
 
 export default tmp;

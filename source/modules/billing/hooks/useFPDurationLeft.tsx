@@ -1,10 +1,10 @@
-// Module ID: 12272
-// Function ID: 94087
+// Module ID: 12386
+// Function ID: 96238
 // Name: roundFPCountdownUnits
-// Dependencies: []
+// Dependencies: [1212, 6678, 3800, 1184, 2]
 // Exports: default
 
-// Module 12272 (roundFPCountdownUnits)
+// Module 12386 (roundFPCountdownUnits)
 function roundFPCountdownUnits(arg0) {
   let obj = {};
   const merged = Object.assign(arg0);
@@ -21,7 +21,7 @@ function roundFPCountdownUnits(arg0) {
     obj.hours = 0;
   }
   if (obj.days > 0) {
-    obj = {};
+    obj = { days: null, hours: 0, minutes: 0, seconds: 0 };
     if (obj.hours > 0) {
       let days = obj.days + 1;
     } else {
@@ -36,9 +36,9 @@ function roundFPCountdownUnits(arg0) {
       hours = obj.hours;
     }
     if (hours > 11) {
-      obj = {};
+      obj = { days: 1, hours: 0, minutes: 0, seconds: 0 };
     } else {
-      obj = { "Bool(true)": "angle", "Bool(true)": 180, "Bool(true)": null, "Bool(true)": 1, hours };
+      obj = { days: 0, hours, minutes: 0, seconds: 0 };
     }
     return obj;
   } else if (obj.minutes > 0) {
@@ -57,30 +57,29 @@ function roundFPCountdownUnits(arg0) {
   } else {
     let obj2 = obj;
     if (obj.seconds > 0) {
-      obj2 = { "Bool(true)": 324, "Bool(true)": 187, "Bool(true)": null, "Bool(true)": "c300172c07e69fb8041898afe2aa282d" };
+      obj2 = { days: 0, hours: 0, minutes: 1, seconds: 0 };
     }
     return obj2;
   }
 }
-const obj = { SHORT_TIME_LEFT: 0, [0]: "SHORT_TIME_LEFT", LONG_TIME_LEFT: 1, [1]: "LONG_TIME_LEFT", ENDS_IN: 2, [2]: "ENDS_IN", SHORT_TIME: 3, [3]: "SHORT_TIME", CREDITS_ENDS_IN: 4, [4]: "CREDITS_ENDS_IN" };
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/billing/hooks/useFPDurationLeft.tsx");
+let obj = { SHORT_TIME_LEFT: 0, [0]: "SHORT_TIME_LEFT", LONG_TIME_LEFT: 1, [1]: "LONG_TIME_LEFT", ENDS_IN: 2, [2]: "ENDS_IN", SHORT_TIME: 3, [3]: "SHORT_TIME", CREDITS_ENDS_IN: 4, [4]: "CREDITS_ENDS_IN" };
+const result = require("resetCache").fileFinishedImporting("modules/billing/hooks/useFPDurationLeft.tsx");
 
 export default function useFPDurationLeft(toDate) {
   if (obj.SHORT_TIME_LEFT === arg1) {
-    let obj = { days: require(dependencyMap[0]).t./wnvqA, hours: require(dependencyMap[0]).t.Jsq0XN, minutes: require(dependencyMap[0]).t.SBd+Bs };
+    obj = { days: require(1212) /* getSystemLocale */.t["/wnvqA"], hours: require(1212) /* getSystemLocale */.t.Jsq0XN, minutes: require(1212) /* getSystemLocale */.t["SBd+Bs"] };
     let tmp8 = obj;
   } else if (obj.LONG_TIME_LEFT === arg1) {
-    obj = { days: require(dependencyMap[0]).t.UD5nn5, hours: require(dependencyMap[0]).t.Hg8Fee, minutes: require(dependencyMap[0]).t.XSbQZZ };
+    obj = { days: require(1212) /* getSystemLocale */.t.UD5nn5, hours: require(1212) /* getSystemLocale */.t.Hg8Fee, minutes: require(1212) /* getSystemLocale */.t.XSbQZZ };
     tmp8 = obj;
   } else if (obj.ENDS_IN === arg1) {
-    const obj1 = { days: require(dependencyMap[0]).t.rLqNad, hours: require(dependencyMap[0]).t.d1LvCA, minutes: require(dependencyMap[0]).t.Z2LX7K };
+    const obj1 = { days: require(1212) /* getSystemLocale */.t.rLqNad, hours: require(1212) /* getSystemLocale */.t.d1LvCA, minutes: require(1212) /* getSystemLocale */.t.Z2LX7K };
     tmp8 = obj1;
   } else if (obj.CREDITS_ENDS_IN === arg1) {
-    const obj2 = { days: require(dependencyMap[0]).t.xQ3zuN, hours: require(dependencyMap[0]).t.SFU7QN, minutes: require(dependencyMap[0]).t.Y4FNdL };
+    const obj2 = { days: require(1212) /* getSystemLocale */.t.xQ3zuN, hours: require(1212) /* getSystemLocale */.t.SFU7QN, minutes: require(1212) /* getSystemLocale */.t.Y4FNdL };
     tmp8 = obj2;
   } else if (obj.SHORT_TIME === arg1) {
-    obj = { days: require(dependencyMap[0]).t.fYmirx, hours: require(dependencyMap[0]).t.C3RO+g, minutes: require(dependencyMap[0]).t.r77oHc };
+    obj = { days: require(1212) /* getSystemLocale */.t.fYmirx, hours: require(1212) /* getSystemLocale */.t["C3RO+g"], minutes: require(1212) /* getSystemLocale */.t.r77oHc };
     tmp8 = obj;
   } else {
     const _Error = Error;
@@ -88,9 +87,9 @@ export default function useFPDurationLeft(toDate) {
     const error = new Error("Unknown messageType (" + arg1 + ") when rendering time left");
     throw error;
   }
-  const tmp17 = importDefault(dependencyMap[1]);
-  const tmp18 = roundFPCountdownUnits(importDefault(dependencyMap[1])(toDate.toDate(), 60000));
-  require(dependencyMap[2]).unitsAsStrings(tmp18, tmp8);
+  const tmp17 = importDefault(6678);
+  const tmp18 = roundFPCountdownUnits(importDefault(6678)(toDate.toDate(), 60000));
+  require(3800) /* resetCache */.unitsAsStrings(tmp18, tmp8);
 };
 export const CountDownMessageTypes = obj;
 export { roundFPCountdownUnits };

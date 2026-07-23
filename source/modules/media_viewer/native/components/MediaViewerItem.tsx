@@ -1,16 +1,23 @@
-// Module ID: 12138
-// Function ID: 93510
+// Module ID: 12252
+// Function ID: 95661
 // Name: MediaViewerItem
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 477, 3989, 12253, 12254, 8276, 8275, 9537, 5217, 12255, 10583, 2]
 
-// Module 12138 (MediaViewerItem)
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const ScrollView = arg1(dependencyMap[2]).ScrollView;
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).isAndroid();
-const obj2 = arg1(dependencyMap[4]);
-const memoResult = importAllResult.memo((index) => {
+// Module 12252 (MediaViewerItem)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { ScrollView } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import set from "set";
+import set from "get ActivityIndicator";
+
+const require = arg1;
+set = set.isAndroid();
+let result = set.fileFinishedImporting("modules/media_viewer/native/components/MediaViewerItem.tsx");
+
+export const MediaViewerItem = importAllResult.memo((index) => {
+  let closure_10;
+  let closure_13;
   let entranceAnimationDriver;
   let originLayout;
   let renderMedia;
@@ -20,51 +27,45 @@ const memoResult = importAllResult.memo((index) => {
   let useItemVisible;
   let zoomed;
   index = index.index;
-  const arg1 = index;
   const onLongPress = index.onLongPress;
-  const importDefault = onLongPress;
   const panGestureConfig = index.panGestureConfig;
-  const dependencyMap = panGestureConfig;
   const panGesture = index.panGesture;
-  let callback = panGesture;
   ({ source, zoomed } = index);
   const windowWidth = index.windowWidth;
-  const ScrollView = windowWidth;
   const windowHeight = index.windowHeight;
-  const jsx = windowHeight;
   let obscure;
   let field;
   let memo;
-  let tmp16;
+  let c19;
   let callback3;
   let callback4;
   let callback5;
   let callback6;
   let closure_24;
   ({ entranceAnimationDriver, originLayout, renderMedia, useItemVisible } = index);
-  let closure_7 = importAllResult.useRef(windowWidth);
-  let closure_8 = importAllResult.useRef(windowHeight);
-  const tmp = callback(zoomed.useState(windowWidth), 2);
+  let closure_7 = zoomed.useRef(windowWidth);
+  let closure_8 = zoomed.useRef(windowHeight);
+  let tmp = panGesture(zoomed.useState(windowWidth), 2);
   const first = tmp[0];
   let closure_9 = tmp[1];
-  [tmp4, closure_10] = callback(zoomed.useState(windowHeight), 2);
-  const effect = importAllResult.useEffect(() => index(panGestureConfig[5]).dismissKeyboard(), []);
+  [tmp4, closure_10] = panGesture(zoomed.useState(windowHeight), 2);
+  const effect = zoomed.useEffect(() => index(panGestureConfig[5]).dismissKeyboard(), []);
   const items = [windowWidth, windowHeight];
-  const effect1 = importAllResult.useEffect(() => {
+  const effect1 = zoomed.useEffect(() => {
     const timeout = setTimeout(() => {
-      callback(closure_5);
-      callback2(closure_6);
-      closure_7.current = closure_5;
-      closure_8.current = closure_6;
+      outer1_9(outer1_5);
+      outer1_10(outer1_6);
+      outer1_7.current = outer1_5;
+      outer1_8.current = outer1_6;
     }, 20);
     return () => clearTimeout(closure_0);
   }, items);
-  const maximumZoomScale = importDefault(dependencyMap[6])(first, tmp4, source).maximumZoomScale;
-  const ref = importAllResult.useRef(null);
-  const ref1 = importAllResult.useRef(null);
-  const tmp3 = callback(zoomed.useState(windowHeight), 2);
-  [tmp10, closure_13] = callback(zoomed.useState(false), 2);
-  callback = importAllResult.useCallback((arg0, arg1) => {
+  const maximumZoomScale = onLongPress(panGestureConfig[6])(first, tmp4, source).maximumZoomScale;
+  const ref = zoomed.useRef(null);
+  const ref1 = zoomed.useRef(null);
+  let tmp3 = panGesture(zoomed.useState(windowHeight), 2);
+  [tmp10, closure_13] = panGesture(zoomed.useState(false), 2);
+  const callback = zoomed.useCallback((arg0, arg1) => {
     if (null != ref.current) {
       const size = { width: ref.current, height: ref2.current };
       const result = size.width / 2;
@@ -81,7 +82,7 @@ const memoResult = importAllResult.memo((index) => {
       }
     }
   }, []);
-  const callback1 = importAllResult.useCallback(() => {
+  const callback1 = zoomed.useCallback(() => {
     let height;
     let width;
     let flag = arg0;
@@ -93,7 +94,7 @@ const memoResult = importAllResult.memo((index) => {
       const current2 = ref.current;
       ({ width, height } = obj);
       const scrollResponder = current2.getScrollResponder();
-      obj = { 0: "%FunctionPrototype%", 0: "paddingStart", width, height, animated: flag };
+      obj = { x: 0, y: 0, width, height, animated: flag };
       const result = scrollResponder.scrollResponderZoomTo(obj);
     } else if (null !== ref1.current) {
       const current = ref1.current;
@@ -102,7 +103,7 @@ const memoResult = importAllResult.memo((index) => {
     }
   }, []);
   const items1 = [zoomed, panGestureConfig];
-  const callback2 = importAllResult.useCallback((nativeEvent) => {
+  const callback2 = zoomed.useCallback((nativeEvent) => {
     const result = zoomed.set(tmp);
     const isInteracting = panGestureConfig.isInteracting;
     const result1 = isInteracting.set(tmp);
@@ -118,29 +119,30 @@ const memoResult = importAllResult.memo((index) => {
       callback(true);
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        callback(false);
+        outer1_13(false);
       }, 500);
     }
   }, items1);
-  let obj = arg1(dependencyMap[8]);
+  let obj = index(panGestureConfig[8]);
   let flattenSourceResult = obj.flattenSource(source);
   if (null == flattenSourceResult) {
     flattenSourceResult = {};
   }
   obscure = flattenSourceResult.obscure;
-  const MediaViewerSourcesStore = arg1(dependencyMap[9]).MediaViewerSourcesStore;
+  const MediaViewerSourcesStore = index(panGestureConfig[9]).MediaViewerSourcesStore;
   field = MediaViewerSourcesStore.useField("spoilerIndexes");
   const items2 = [index, field];
-  memo = importAllResult.useMemo(() => field.has(index), items2);
-  tmp16 = importDefault(dependencyMap[10])(flattenSourceResult.channelId);
+  memo = zoomed.useMemo(() => field.has(index), items2);
+  const tmp16 = onLongPress(panGestureConfig[10])(flattenSourceResult.channelId);
+  c19 = tmp16;
   const items3 = [memo, index, onLongPress, tmp16];
-  callback3 = importAllResult.useCallback(() => {
+  callback3 = zoomed.useCallback(() => {
     if (memo) {
       index(panGestureConfig[9]).removeSpoiler(index);
       const obj = index(panGestureConfig[9]);
     } else {
-      let tmp = tmp16;
-      if (!tmp16) {
+      let tmp = c19;
+      if (!c19) {
         tmp = null == onLongPress;
       }
       if (!tmp) {
@@ -149,7 +151,7 @@ const memoResult = importAllResult.memo((index) => {
     }
   }, items3);
   const items4 = [zoomed, panGestureConfig];
-  callback4 = importAllResult.useCallback(() => {
+  callback4 = zoomed.useCallback(() => {
     let overlayEnabled;
     let overlayEnabled2;
     if (!zoomed.get()) {
@@ -158,7 +160,7 @@ const memoResult = importAllResult.memo((index) => {
     }
   }, items4);
   const items5 = [callback1, callback, zoomed];
-  callback5 = importAllResult.useCallback((arg0) => {
+  callback5 = zoomed.useCallback((arg0) => {
     let absoluteX;
     let absoluteY;
     ({ absoluteX, absoluteY } = arg0);
@@ -169,11 +171,11 @@ const memoResult = importAllResult.memo((index) => {
     }
   }, items5);
   const items6 = [index];
-  callback6 = importAllResult.useCallback(() => {
+  callback6 = zoomed.useCallback(() => {
     index(panGestureConfig[9]).removeSpoiler(index);
   }, items6);
   const items7 = [callback5, callback3, callback6, memo, obscure, panGesture, callback4];
-  const memo1 = importAllResult.useMemo(() => {
+  const memo1 = zoomed.useMemo(() => {
     const Gesture = index(panGestureConfig[11]).Gesture;
     const TapResult = Gesture.Tap();
     const runOnJSResult = Gesture.Tap().runOnJS(true);
@@ -184,7 +186,7 @@ const memoResult = importAllResult.memo((index) => {
     if (obj5.isAndroid()) {
       num2 = 20;
     }
-    const obj5 = index(panGestureConfig[4]);
+    obj5 = index(panGestureConfig[4]);
     const maxDistanceResult = numberOfTapsResult.maxDistance(num2);
     const Gesture2 = index(panGestureConfig[11]).Gesture;
     const onStartResult = numberOfTapsResult.maxDistance(num2).onStart(callback5);
@@ -196,7 +198,7 @@ const memoResult = importAllResult.memo((index) => {
     if (obj11.isAndroid()) {
       num3 = 20;
     }
-    const obj11 = index(panGestureConfig[4]);
+    obj11 = index(panGestureConfig[4]);
     const maxDistanceResult1 = numberOfTapsResult1.maxDistance(num3);
     const Gesture3 = index(panGestureConfig[11]).Gesture;
     const onStartResult1 = numberOfTapsResult1.maxDistance(num3).onStart(callback4);
@@ -211,7 +213,7 @@ const memoResult = importAllResult.memo((index) => {
     if (obj17.isAndroid()) {
       num = 20;
     }
-    const obj17 = index(panGestureConfig[4]);
+    obj17 = index(panGestureConfig[4]);
     const maxDistanceResult2 = numberOfTapsResult2.maxDistance(num);
     const Gesture4 = index(panGestureConfig[11]).Gesture;
     const onStartResult2 = numberOfTapsResult2.maxDistance(num).onStart(callback6);
@@ -223,17 +225,17 @@ const memoResult = importAllResult.memo((index) => {
     const Gesture6 = index(panGestureConfig[11]).Gesture;
     return Gesture6.Simultaneous(ExclusiveResult, Gesture5.LongPress().runOnJS(true).enabled(!memo).onStart(callback3), panGesture);
   }, items7);
-  closure_24 = importAllResult.useRef(false);
+  closure_24 = zoomed.useRef(false);
   const items8 = [callback1, first, tmp4];
-  const effect2 = importAllResult.useEffect(() => {
+  const effect2 = zoomed.useEffect(() => {
     if (ref3.current) {
       callback1(false);
     } else {
       ref3.current = true;
     }
   }, items8);
-  obj = { gesture: memo1, children: jsx(importDefault(dependencyMap[12]), { entranceAnimationDriver, index, originLayout, panGestureConfig, renderMedia, source, windowWidth: first, windowHeight: tmp4, useItemVisible }) };
-  const tmp23 = jsx(arg1(dependencyMap[11]).GestureDetector, obj);
+  obj = { gesture: memo1, children: windowHeight(onLongPress(panGestureConfig[12]), { entranceAnimationDriver, index, originLayout, panGestureConfig, renderMedia, source, windowWidth: first, windowHeight: tmp4, useItemVisible }) };
+  const tmp23 = windowHeight(index(panGestureConfig[11]).GestureDetector, obj);
   if (closure_7) {
     obj = { ref: ref1 };
     const obj1 = { width: first, height: tmp4 };
@@ -242,9 +244,9 @@ const memoResult = importAllResult.memo((index) => {
     obj.maximumZoomScale = maximumZoomScale;
     obj.onZoomChanged = callback2;
     obj.children = tmp23;
-    let tmp24Result = tmp24(importDefault(dependencyMap[13]), obj);
+    let tmp24Result = tmp24(onLongPress(panGestureConfig[13]), obj);
   } else {
-    const obj2 = { ref };
+    const obj2 = { ref, style: null, automaticallyAdjustContentInsets: false, showsHorizontalScrollIndicator: false, showsVerticalScrollIndicator: false, minimumZoomScale: 1, maximumZoomScale: null, centerContent: true, scrollEventThrottle: 16 };
     const obj3 = { width: first, height: tmp4 };
     obj2.style = obj3;
     obj2.maximumZoomScale = maximumZoomScale;
@@ -255,11 +257,8 @@ const memoResult = importAllResult.memo((index) => {
     }
     obj2.pointerEvents = str;
     obj2.children = tmp23;
-    tmp24Result = tmp24(ScrollView, obj2);
-    const tmp25 = ScrollView;
+    tmp24Result = tmp24(windowWidth, obj2);
+    const tmp25 = windowWidth;
   }
   return tmp24Result;
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/media_viewer/native/components/MediaViewerItem.tsx");
-
-export const MediaViewerItem = memoResult;

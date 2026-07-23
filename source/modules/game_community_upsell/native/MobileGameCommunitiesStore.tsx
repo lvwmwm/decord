@@ -1,9 +1,17 @@
-// Module ID: 14476
-// Function ID: 109066
+// Module ID: 14590
+// Function ID: 111226
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5736, 566, 686, 2]
 
-// Module 14476 (_isNativeReflectConstruct)
+// Module 14590 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +21,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +74,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,28 +100,24 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let obj = { guilds: [], lastFetchedAt: 0, lastFetchedGameIds: new Set() };
-const set = new Set();
+let obj = { guilds: [], lastFetchedAt: 0 };
+let set = new Set();
+obj.lastFetchedGameIds = set;
 obj.dismissedGuildIds = new Set();
 obj.guildGameIds = {};
-let tmp4 = (PersistedStore) => {
+let tmp4 = ((PersistedStore) => {
   class MobileGameCommunitiesStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, MobileGameCommunitiesStore);
-      obj = closure_5(MobileGameCommunitiesStore);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      tmp = outer1_2(this, MobileGameCommunitiesStore);
+      obj = outer1_5(MobileGameCommunitiesStore);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -122,13 +126,12 @@ let tmp4 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = MobileGameCommunitiesStore;
   callback2(MobileGameCommunitiesStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(guilds) {
       if (null != guilds) {
-        const obj = {};
+        let obj = {};
         guilds = guilds.guilds;
         obj.guilds = guilds.map((features) => {
           const obj = {};
@@ -148,14 +151,15 @@ let tmp4 = (PersistedStore) => {
           guildGameIds = {};
         }
         obj.guildGameIds = guildGameIds;
+        const outer1_7 = obj;
       }
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "getState",
     value() {
-      const obj = {
+      let obj = {
         guilds: guilds.map((features) => {
           const obj = {};
           const merged = Object.assign(features);
@@ -163,13 +167,13 @@ let tmp4 = (PersistedStore) => {
           obj["features"] = items;
           return obj;
         }),
-        lastFetchedAt: closure_7.lastFetchedAt
+        lastFetchedAt: outer1_7.lastFetchedAt
       };
-      const guilds = closure_7.guilds;
-      const items = [...closure_7.lastFetchedGameIds];
+      guilds = outer1_7.guilds;
+      let items = [...outer1_7.lastFetchedGameIds];
       obj.lastFetchedGameIds = items;
-      obj.dismissedGuildIds = [...closure_7.dismissedGuildIds];
-      obj.guildGameIds = closure_7.guildGameIds;
+      obj.dismissedGuildIds = [...outer1_7.dismissedGuildIds];
+      obj.guildGameIds = outer1_7.guildGameIds;
       return obj;
     }
   };
@@ -177,9 +181,9 @@ let tmp4 = (PersistedStore) => {
   obj = {
     key: "getPresentableUpsellGuilds",
     value() {
-      const guilds = closure_7.guilds;
+      const guilds = outer1_7.guilds;
       return guilds.filter((id) => {
-        const dismissedGuildIds = dismissedGuildIds.dismissedGuildIds;
+        const dismissedGuildIds = outer2_7.dismissedGuildIds;
         return !dismissedGuildIds.has(id.id);
       });
     }
@@ -194,36 +198,37 @@ let tmp4 = (PersistedStore) => {
   items[4] = {
     key: "getLastFetchedAt",
     value() {
-      return closure_7.lastFetchedAt;
+      return outer1_7.lastFetchedAt;
     }
   };
   items[5] = {
     key: "getLastFetchedGameIds",
     value() {
-      return closure_7.lastFetchedGameIds;
+      return outer1_7.lastFetchedGameIds;
     }
   };
   items[6] = {
     key: "getGuildGameIds",
     value() {
-      return closure_7.guildGameIds;
+      return outer1_7.guildGameIds;
     }
   };
   items[7] = {
     key: "getDismissedGuildIds",
     value() {
-      return closure_7.dismissedGuildIds;
+      return outer1_7.dismissedGuildIds;
     }
   };
   items[8] = {
     key: "DEV_clearFetchCache",
     value() {
       const obj = {};
-      const merged = Object.assign(obj);
+      const merged = Object.assign(outer1_7);
       obj["guilds"] = [];
       obj["lastFetchedAt"] = 0;
       obj["lastFetchedGameIds"] = new Set();
       obj["guildGameIds"] = {};
+      outer1_7 = obj;
       this.emitChange();
     }
   };
@@ -231,8 +236,9 @@ let tmp4 = (PersistedStore) => {
     key: "DEV_clearDismissedGuilds",
     value() {
       const obj = {};
-      const merged = Object.assign(obj);
+      const merged = Object.assign(outer1_7);
       obj["dismissedGuildIds"] = new Set();
+      outer1_7 = obj;
       this.emitChange();
     }
   };
@@ -243,11 +249,12 @@ let tmp4 = (PersistedStore) => {
       const set = new Set();
       obj.dismissedGuildIds = new Set();
       obj.guildGameIds = {};
+      const outer1_7 = obj;
       this.emitChange();
     }
   };
   return callback(MobileGameCommunitiesStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp4.displayName = "MobileGameCommunitiesStore";
 tmp4.persistKey = "MobileGameCommunitiesStore";
 obj = {
@@ -272,7 +279,7 @@ obj = {
     }
     obj = {};
     const merged1 = Object.assign(obj);
-    obj["guilds"] = guilds.map((body) => callback(closure_1[5]).makeDiscoverableGuild(body));
+    obj["guilds"] = guilds.map((body) => outer1_0(outer1_1[5]).makeDiscoverableGuild(body));
     obj["lastFetchedAt"] = Date.now();
     obj["lastFetchedGameIds"] = new Set(gameIds);
     obj["guildGameIds"] = obj;
@@ -280,7 +287,7 @@ obj = {
   MOBILE_GAME_COMMUNITIES_DISMISS_GUILD: function handleDismissGuildAction(guildId) {
     const obj = {};
     const merged = Object.assign(obj);
-    const items = [...closure_7.dismissedGuildIds, guildId.guildId];
+    const items = [...obj.dismissedGuildIds, guildId.guildId];
     obj["dismissedGuildIds"] = new Set(items);
   },
   LOGOUT: function handleLogout() {
@@ -290,8 +297,7 @@ obj = {
     obj.guildGameIds = {};
   }
 };
-tmp4 = new tmp4(importDefault(dependencyMap[7]), obj);
-const set1 = new Set();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesStore.tsx");
+tmp4 = new tmp4(require("dispatcher"), obj);
+let result = set.fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesStore.tsx");
 
 export default tmp4;

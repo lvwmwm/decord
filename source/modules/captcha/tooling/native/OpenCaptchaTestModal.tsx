@@ -1,16 +1,18 @@
-// Module ID: 14540
-// Function ID: 109482
+// Module ID: 14654
+// Function ID: 111642
 // Name: showCaptchaTestModal
-// Dependencies: []
+// Dependencies: [5, 31, 33, 4337, 14655, 1934, 2]
 // Exports: showCaptchaTestModal
 
-// Module 14540 (showCaptchaTestModal)
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/captcha/tooling/native/OpenCaptchaTestModal.tsx");
+// Module 14654 (showCaptchaTestModal)
+import maybeLoadBundle from "maybeLoadBundle";
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/captcha/tooling/native/OpenCaptchaTestModal.tsx");
 
 export const showCaptchaTestModal = function showCaptchaTestModal() {
   // CreateGeneratorClosureLongIndex (0x67)
-  importDefault(dependencyMap[3]).pushLazy(callback(tmp));
+  importDefault(4337).pushLazy(callback(tmp));
 };

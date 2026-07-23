@@ -1,69 +1,72 @@
-// Module ID: 8908
-// Function ID: 70300
+// Module ID: 8915
+// Function ID: 70341
 // Name: SecureFramesUserVerificationBottomSheet
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4202, 1849, 8899, 653, 33, 4130, 689, 8903, 8916, 8878, 8905, 566, 8908, 7889, 4319, 8897, 8907, 8694, 8917, 4098, 3831, 4091, 1212, 5187, 5186, 5501, 4126, 8909, 4541, 4543, 2]
 // Exports: default
 
-// Module 8908 (SecureFramesUserVerificationBottomSheet)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ ActivityIndicator: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[2]);
-({ AnalyticsSecureFramesUserVerification: closure_9, SECURE_FRAMES_PUBLIC_KEY_VERSION: closure_10, USER_VERIFIED_TOAST_KEY: closure_11 } = arg1(dependencyMap[5]));
-const AnalyticsLocations = arg1(dependencyMap[6]).AnalyticsLocations;
-const tmp3 = arg1(dependencyMap[5]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = {};
-obj = { 0: "337f717407aa04f32bdedf504de7310b", 0: "emoji", 9223372036854775807: "png", 0: true, 9223372036854775807: "/assets/modules/premium/native/images/perks", 0: 300, 0: 175, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_STRONG };
-obj.iconContainer = obj;
-obj.icon = {};
-obj.content = {};
-obj.subtitle = { <string:787648700>: true, justifyContent: true, alignItems: true };
-obj.buttons = { marginTop: 40 };
-obj.helpMessage = { marginTop: 16 };
-let closure_15 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[33]).fileFinishedImporting("modules/rtc/native/SecureFramesUserVerificationBottomSheet.tsx");
+// Module 8915 (SecureFramesUserVerificationBottomSheet)
+import _slicedToArray from "_slicedToArray";
+import Stack from "Stack";
+import get_ActivityIndicator from "RedesignBottomSheetTitleHeaderBase";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
+import { AnalyticsLocations } from "ME";
+import jsxProd from "set";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_13;
+let closure_14;
+let closure_5;
+let closure_6;
+let closure_9;
+const require = arg1;
+({ ActivityIndicator: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ AnalyticsSecureFramesUserVerification: closure_9, SECURE_FRAMES_PUBLIC_KEY_VERSION: closure_10, USER_VERIFIED_TOAST_KEY: closure_11 } = SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { height: 80, width: 80, borderRadius: 40, alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, marginBottom: 16 };
+_createForOfIteratorHelperLoose.iconContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.icon = { height: 48, width: 48 };
+_createForOfIteratorHelperLoose.content = { padding: 16, justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.subtitle = { textAlign: "center", marginTop: 8, marginBottom: 40 };
+_createForOfIteratorHelperLoose.buttons = { marginTop: 40 };
+_createForOfIteratorHelperLoose.helpMessage = { marginTop: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/rtc/native/SecureFramesUserVerificationBottomSheet.tsx");
 
 export default function SecureFramesUserVerificationBottomSheet(userId) {
   let tmp14;
   let tmp15;
   userId = userId.userId;
-  const arg1 = userId;
   const channelId = userId.channelId;
-  const importDefault = channelId;
   const fingerprint = userId.fingerprint;
-  const dependencyMap = fingerprint;
-  const tmp = callback2();
+  let tmp = _createForOfIteratorHelperLoose();
   let callback = tmp;
-  let obj = arg1(dependencyMap[10]);
+  let obj = userId(fingerprint[10]);
   const secureFramesPairwiseFingerprint = obj.useSecureFramesPairwiseFingerprint({ userId });
   const userKey = secureFramesPairwiseFingerprint.userKey;
-  const React = userKey;
   const fingerprint2 = secureFramesPairwiseFingerprint.fingerprint;
-  let obj1 = arg1(dependencyMap[11]);
+  let obj1 = userId(fingerprint[11]);
   const isSecureFramesUIEnabled = obj1.useIsSecureFramesUIEnabled({ channelId });
-  let obj2 = arg1(dependencyMap[12]);
+  let obj2 = userId(fingerprint[12]);
   const isUserSecureFramesVerified = obj2.useIsUserSecureFramesVerified({ userId, channelId });
-  let closure_7 = isUserSecureFramesVerified;
-  let obj3 = arg1(dependencyMap[13]);
+  let obj3 = userId(fingerprint[13]);
   const isPersistentSecureFramesFingerprint = obj3.useIsPersistentSecureFramesFingerprint({ userId });
   const isOtherUserKeyPersistent = isPersistentSecureFramesFingerprint.isOtherUserKeyPersistent;
-  let closure_8 = isOtherUserKeyPersistent;
   let loading = isPersistentSecureFramesFingerprint.loading;
-  let obj4 = arg1(dependencyMap[14]);
-  const items = [closure_7];
+  let obj4 = userId(fingerprint[14]);
+  const items = [isUserSecureFramesVerified];
   const stateFromStores = obj4.useStateFromStores(items, () => isUserSecureFramesVerified.isConnected());
-  let obj5 = arg1(dependencyMap[14]);
-  const items1 = [closure_7];
+  let obj5 = userId(fingerprint[14]);
+  const items1 = [isUserSecureFramesVerified];
   const stateFromStores1 = obj5.useStateFromStores(items1, () => isUserSecureFramesVerified.isUserConnected(userId));
-  let obj6 = arg1(dependencyMap[15]);
+  let obj6 = userId(fingerprint[15]);
   const isSecureFramesKeyInconsistent = obj6.useIsSecureFramesKeyInconsistent({ userId });
   const items2 = [fingerprint, channelId, fingerprint2, stateFromStores, isSecureFramesKeyInconsistent, stateFromStores1, isSecureFramesUIEnabled, isUserSecureFramesVerified];
-  const memo = React.useMemo(() => {
+  const memo = userKey.useMemo(() => {
     if (null != channelId) {
       if (stateFromStores) {
         if (!stateFromStores1) {
@@ -85,20 +88,19 @@ export default function SecureFramesUserVerificationBottomSheet(userId) {
     }
     return stateFromStores.CURRENT_USER_DISCONNECTED;
   }, items2);
-  const AnalyticsLocations = memo;
   const items3 = [userId];
-  const effect = React.useEffect(() => {
+  const effect = userKey.useEffect(() => {
     const user = userId(fingerprint[16]).getUser(userId);
   }, items3);
-  let obj7 = arg1(dependencyMap[14]);
-  const items4 = [closure_8];
+  let obj7 = userId(fingerprint[14]);
+  const items4 = [isOtherUserKeyPersistent];
   const stateFromStores2 = obj7.useStateFromStores(items4, () => isOtherUserKeyPersistent.getUser(userId));
-  let obj8 = importDefault(dependencyMap[17]);
+  let obj8 = channelId(fingerprint[17]);
   const name = obj8.useName(userId.guildId, channelId, stateFromStores2);
   const items5 = [memo, name];
   const items6 = [channelId, memo, userId];
-  [tmp14, tmp15] = callback(React.useMemo(() => userId(fingerprint[18]).getUserVerifyStateText(memo, name), items5), 2);
-  const effect1 = React.useEffect(() => {
+  [tmp14, tmp15] = callback(userKey.useMemo(() => userId(fingerprint[18]).getUserVerifyStateText(memo, name), items5), 2);
+  const effect1 = userKey.useEffect(() => {
     if (stateFromStores.OTHER_USER_ALREADY_VERIFIED !== memo) {
       if (stateFromStores.MATCH !== tmp) {
         let obj = userId(fingerprint[19]);
@@ -108,7 +110,7 @@ export default function SecureFramesUserVerificationBottomSheet(userId) {
     }
   }, items6);
   const items7 = [memo, tmp.icon];
-  let memo1 = React.useMemo(() => {
+  let memo1 = userKey.useMemo(() => {
     if (stateFromStores.OTHER_USER_ALREADY_VERIFIED !== memo) {
       if (stateFromStores.MATCH !== tmp) {
         let obj = { style: tmp.icon, color: channelId(fingerprint[9]).colors.TEXT_FEEDBACK_CRITICAL };
@@ -118,11 +120,11 @@ export default function SecureFramesUserVerificationBottomSheet(userId) {
     obj = { style: tmp.icon, color: channelId(fingerprint[9]).colors.TEXT_FEEDBACK_POSITIVE };
     return name(userId(fingerprint[20]).CheckmarkLargeBoldIcon, obj);
   }, items7);
-  callback = React.useCallback(() => {
+  callback = userKey.useCallback(() => {
     channelId(fingerprint[22]).hideActionSheet();
   }, []);
   const items8 = [channelId, userKey, isOtherUserKeyPersistent, name, userId];
-  const callback1 = React.useCallback(() => {
+  const callback1 = userKey.useCallback(() => {
     let tmp = null != channelId;
     if (tmp) {
       tmp = null != userKey;
@@ -141,37 +143,37 @@ export default function SecureFramesUserVerificationBottomSheet(userId) {
     }
   }, items8);
   obj = { startExpanded: true };
-  obj = { title: null, leading: name(arg1(dependencyMap[28]).ActionSheetCloseButton, { onPress: callback }) };
-  obj.header = name(arg1(dependencyMap[27]).BottomSheetTitleHeader, obj);
+  obj = { title: null, leading: name(userId(fingerprint[28]).ActionSheetCloseButton, { onPress: callback }) };
+  obj.header = name(userId(fingerprint[27]).BottomSheetTitleHeader, obj);
   obj1 = { style: tmp.content };
   obj2 = { style: tmp.iconContainer };
   if (!loading) {
     obj2.children = memo1;
     const items9 = [tmp20(tmp22, obj2), , , , ];
-    obj3 = { cachedAt: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, children: tmp14 };
-    items9[1] = name(arg1(dependencyMap[29]).Text, obj3);
-    obj4 = { style: tmp.subtitle, children: tmp15 };
-    items9[2] = name(arg1(dependencyMap[29]).Text, obj4);
+    obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp14 };
+    items9[1] = name(userId(fingerprint[29]).Text, obj3);
+    obj4 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: tmp15 };
+    items9[2] = name(userId(fingerprint[29]).Text, obj4);
     obj5 = { style: tmp.helpMessage, userId, userKey };
-    items9[3] = name(importDefault(dependencyMap[30]), obj5);
+    items9[3] = name(channelId(fingerprint[30]), obj5);
     obj6 = { spacing: 12, style: tmp.buttons };
     obj7 = { variant: "primary", onPress: callback1 };
-    const intl = arg1(dependencyMap[25]).intl;
-    obj7.text = intl.string(arg1(dependencyMap[25]).t.0tvNAn);
+    let intl = userId(fingerprint[25]).intl;
+    obj7.text = intl.string(userId(fingerprint[25]).t["0tvNAn"]);
     if (!loading) {
       loading = memo !== stateFromStores.MATCH;
     }
     obj7.disabled = loading;
-    const items10 = [name(arg1(dependencyMap[32]).Button, obj7), ];
+    const items10 = [name(userId(fingerprint[32]).Button, obj7), ];
     obj8 = { variant: "secondary", onPress: callback };
-    const intl2 = arg1(dependencyMap[25]).intl;
-    obj8.text = intl2.string(arg1(dependencyMap[25]).t.ETE/oC);
-    items10[1] = name(arg1(dependencyMap[32]).Button, obj8);
+    const intl2 = userId(fingerprint[25]).intl;
+    obj8.text = intl2.string(userId(fingerprint[25]).t["ETE/oC"]);
+    items10[1] = name(userId(fingerprint[32]).Button, obj8);
     obj6.children = items10;
-    items9[4] = closure_14(arg1(dependencyMap[31]).Stack, obj6);
+    items9[4] = closure_14(userId(fingerprint[31]).Stack, obj6);
     obj1.children = items9;
     obj.children = tmp21(tmp22, obj1);
-    return tmp20(arg1(dependencyMap[26]).BottomSheet, obj);
+    return tmp20(userId(fingerprint[26]).BottomSheet, obj);
   }
   memo1 = name(fingerprint2, {});
 };

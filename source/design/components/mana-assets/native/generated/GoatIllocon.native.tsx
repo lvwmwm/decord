@@ -1,14 +1,13 @@
-// Module ID: 6235
-// Function ID: 50285
+// Module ID: 6240
+// Function ID: 50314
 // Name: GoatIllocon
-// Dependencies: [33554456, 1946157056, 33, 5082]
+// Dependencies: [33, 5085, 6241, 2]
 // Exports: GoatIllocon
 
-// Module 6235 (GoatIllocon)
-import preload from "preload";
+// Module 6240 (GoatIllocon)
+import { jsx } from "jsxProd";
 
-const jsx = require(dependencyMap[0]).jsx;
-const result = preload.fileFinishedImporting("design/components/mana-assets/native/generated/GoatIllocon.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GoatIllocon.native.tsx");
 
 export const GoatIllocon = function GoatIllocon(size) {
   let accessibilityLabel;
@@ -20,7 +19,7 @@ export const GoatIllocon = function GoatIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6241) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -28,5 +27,5 @@ export const GoatIllocon = function GoatIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

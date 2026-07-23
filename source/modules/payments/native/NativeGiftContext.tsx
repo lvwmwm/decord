@@ -1,27 +1,32 @@
-// Module ID: 8802
-// Function ID: 69384
+// Module ID: 8809
+// Function ID: 69425
 // Name: importDefaultResult1
-// Dependencies: []
+// Dependencies: [5, 57, 31, 8268, 7130, 8194, 1849, 653, 5622, 1851, 33, 3, 6667, 6668, 3791, 8810, 8781, 1212, 8811, 3776, 5624, 8740, 7119, 566, 8812, 8776, 8271, 8265, 4471, 675, 5484, 7110, 686, 477, 7156, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 8802 (importDefaultResult1)
-let closure_3 = importDefault(dependencyMap[0]);
-const importDefaultResult = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const AnalyticEvents = arg1(dependencyMap[7]).AnalyticEvents;
-arg1(dependencyMap[8]).GPlayBillingResult;
-({ PremiumTypes: closure_12, SubscriptionIntervalTypes: closure_13, SubscriptionPlanInfo: closure_14 } = arg1(dependencyMap[9]));
-const jsx = arg1(dependencyMap[10]).jsx;
-let importDefaultResult1 = importDefault(dependencyMap[11]);
+// Module 8809 (importDefaultResult1)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "_slicedToArray";
+import dismissGiftIntent from "dismissGiftIntent";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import GuildFeatures from "GuildFeatures";
+import { jsx } from "set";
+import importDefaultResult1 from "_isNativeReflectConstruct";
+
+let closure_12;
+let closure_13;
+let closure_14;
+const require = arg1;
+require("GPlayConnectionState").GPlayBillingResult;
+({ PremiumTypes: closure_12, SubscriptionIntervalTypes: closure_13, SubscriptionPlanInfo: closure_14 } = GuildFeatures);
 importDefaultResult1 = new importDefaultResult1("NativeGiftContext");
-const importDefaultResultResult = importDefaultResult(importDefault(dependencyMap[12])(), 3);
+const importDefaultResultResult = importDefaultResult(require("createDefinedContext")(), 3);
 let closure_17 = importDefaultResultResult[0];
-const tmp3 = arg1(dependencyMap[9]);
-const result = arg1(dependencyMap[35]).fileFinishedImporting("modules/payments/native/NativeGiftContext.tsx");
+let result = require("result").fileFinishedImporting("modules/payments/native/NativeGiftContext.tsx");
 
 export const NativeGiftContextProvider = function NativeGiftContextProvider(basePurchaseAnalytics) {
   let children;
@@ -30,32 +35,29 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
   let planInterval;
   let premiumType;
   basePurchaseAnalytics = basePurchaseAnalytics.basePurchaseAnalytics;
-  const arg1 = basePurchaseAnalytics;
-  const recipientUserId = basePurchaseAnalytics.recipientUserId;
-  const importDefault = recipientUserId;
+  let recipientUserId = basePurchaseAnalytics.recipientUserId;
   ({ premiumType, planInterval, onClose } = basePurchaseAnalytics);
-  const dependencyMap = onClose;
   const setCurrentAnalyticsStep = basePurchaseAnalytics.setCurrentAnalyticsStep;
-  let closure_3 = setCurrentAnalyticsStep;
-  let importDefaultResult;
+  let first;
   let React;
-  let closure_6;
-  let closure_7;
-  let closure_8;
+  let first1;
+  let c7;
+  let first2;
   let closure_9;
-  let AnalyticEvents;
+  let first3;
   let closure_11;
   let first4;
   let closure_13;
   let first5;
   let jsx;
+  let first6;
   let redux;
   let first7;
   let closure_19;
   let first8;
-  let tmp31;
+  let c21;
   let first9;
-  let tmp34;
+  let c23;
   let first10;
   let closure_25;
   let orderContext;
@@ -66,10 +68,10 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
   let handlePremiumPurchase;
   let stateFromStoresArray;
   let fetchClaimableGiftingPromotionRewardSkuIds;
-  let tmp42;
+  let c34;
   let enabled;
   let stateFromStores;
-  let tmp50;
+  let c37;
   let callback;
   let callback1;
   let callback2;
@@ -78,52 +80,48 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
   if (null == premiumType) {
     premiumType = first4.TIER_2;
   }
-  const tmp3 = importDefaultResult(React.useState(premiumType), 2);
-  const first = tmp3[0];
-  importDefaultResult = first;
+  const tmp3 = first(React.useState(premiumType), 2);
+  first = tmp3[0];
   React = tmp5;
-  importDefault(dependencyMap[15]);
+  recipientUserId(onClose[15]);
   if (null != planInterval) {
-    const tmp11 = importDefaultResult(React.useState(planInterval), 2);
-    const first1 = tmp11[0];
-    closure_6 = first1;
-    closure_7 = tmp13;
-    let obj = arg1(dependencyMap[16]);
-    const tmp17 = importDefaultResult(React.useState(obj.useGiftStyles()[0]), 2);
-    const first2 = tmp17[0];
-    closure_8 = first2;
+    const tmp11 = first(React.useState(planInterval), 2);
+    first1 = tmp11[0];
+    c7 = tmp13;
+    let obj = basePurchaseAnalytics(onClose[16]);
+    const tmp17 = first(React.useState(obj.useGiftStyles()[0]), 2);
+    first2 = tmp17[0];
     closure_9 = tmp17[1];
-    const intl = arg1(dependencyMap[17]).intl;
-    const tmp19 = importDefaultResult(React.useState(intl.string(arg1(dependencyMap[17]).t.ZkOo1U)), 2);
-    const first3 = tmp19[0];
-    AnalyticEvents = first3;
+    let intl = basePurchaseAnalytics(onClose[17]).intl;
+    let tmp19 = first(React.useState(intl.string(basePurchaseAnalytics(onClose[17]).t.ZkOo1U)), 2);
+    first3 = tmp19[0];
     closure_11 = tmp19[1];
-    const tmp21 = importDefaultResult(React.useState(undefined), 2);
+    const tmp21 = first(React.useState(undefined), 2);
     first4 = tmp21[0];
     closure_13 = tmp21[1];
-    const tmp23 = importDefaultResult(React.useState(undefined), 2);
+    const tmp23 = first(React.useState(undefined), 2);
     first5 = tmp23[0];
     jsx = tmp23[1];
-    const tmp25 = importDefaultResult(React.useState(undefined), 2);
-    const first6 = tmp25[0];
+    const tmp25 = first(React.useState(undefined), 2);
+    first6 = tmp25[0];
     redux = tmp25[1];
-    const tmp27 = importDefaultResult(React.useState(false), 2);
+    const tmp27 = first(React.useState(false), 2);
     first7 = tmp27[0];
     closure_19 = tmp27[1];
-    const tmp29 = importDefaultResult(React.useState(null), 2);
+    const tmp29 = first(React.useState(null), 2);
     first8 = tmp29[0];
-    tmp31 = tmp29[1];
-    const tmp32 = importDefaultResult(React.useState(), 2);
+    c21 = tmp31;
+    const tmp32 = first(React.useState(), 2);
     first9 = tmp32[0];
-    tmp34 = tmp32[1];
-    const tmp35 = importDefaultResult(React.useState(null), 2);
+    c23 = tmp34;
+    const tmp35 = first(React.useState(null), 2);
     first10 = tmp35[0];
     closure_25 = tmp35[1];
-    let obj1 = arg1(dependencyMap[18]);
+    let obj1 = basePurchaseAnalytics(onClose[18]);
     orderContext = obj1.useOrderContext(initialOrder, "NativeGiftContext");
-    let obj2 = arg1(dependencyMap[19]);
+    let obj2 = basePurchaseAnalytics(onClose[19]);
     planIdForPremiumType = obj2.getPlanIdForPremiumType(first, first1);
-    let obj3 = arg1(dependencyMap[20]);
+    let obj3 = basePurchaseAnalytics(onClose[20]);
     productIdForGift = obj3.getProductIdForGift(planIdForPremiumType);
     if (null == first5[planIdForPremiumType]) {
       const _Error = Error;
@@ -133,8 +131,8 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     } else {
       skuId = tmp41.skuId;
       obj = { location: "NativeGiftContext" };
-      androidShopOrdersEnabled = arg1(dependencyMap[21]).useAndroidShopOrdersEnabled(obj);
-      const items = [androidShopOrdersEnabled, productIdForGift];
+      androidShopOrdersEnabled = basePurchaseAnalytics(onClose[21]).useAndroidShopOrdersEnabled(obj);
+      let items = [androidShopOrdersEnabled, productIdForGift];
       const memo = React.useMemo(() => {
         let tmp;
         if (androidShopOrdersEnabled) {
@@ -146,27 +144,27 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
         }
         return tmp;
       }, items);
-      const obj11 = arg1(dependencyMap[21]);
-      handlePremiumPurchase = arg1(dependencyMap[22]).useHandlePremiumPurchase();
-      const obj13 = arg1(dependencyMap[22]);
-      const items1 = [closure_7];
-      stateFromStoresArray = arg1(dependencyMap[23]).useStateFromStoresArray(items1, () => tmp13.getGiftPromotionRewardSkuIds());
-      const obj14 = arg1(dependencyMap[23]);
-      fetchClaimableGiftingPromotionRewardSkuIds = arg1(dependencyMap[24]).useFetchClaimableGiftingPromotionRewardSkuIds();
-      tmp42 = null != fetchClaimableGiftingPromotionRewardSkuIds && fetchClaimableGiftingPromotionRewardSkuIds.length > 0;
-      const obj15 = arg1(dependencyMap[24]);
+      const obj11 = basePurchaseAnalytics(onClose[21]);
+      handlePremiumPurchase = basePurchaseAnalytics(onClose[22]).useHandlePremiumPurchase();
+      const obj13 = basePurchaseAnalytics(onClose[22]);
+      const items1 = [c7];
+      stateFromStoresArray = basePurchaseAnalytics(onClose[23]).useStateFromStoresArray(items1, () => _undefined2.getGiftPromotionRewardSkuIds());
+      const obj14 = basePurchaseAnalytics(onClose[23]);
+      fetchClaimableGiftingPromotionRewardSkuIds = basePurchaseAnalytics(onClose[24]).useFetchClaimableGiftingPromotionRewardSkuIds();
+      c34 = tmp42;
+      const obj15 = basePurchaseAnalytics(onClose[24]);
       obj = { location: "NativeGiftContext" };
-      enabled = importDefault(dependencyMap[25]).useConfig(obj).enabled;
+      enabled = recipientUserId(onClose[25]).useConfig(obj).enabled;
       const items2 = [enabled];
-      const effect = React.useEffect(() => {
+      let effect = React.useEffect(() => {
         if (enabled) {
           const badge = basePurchaseAnalytics(onClose[26]).fetchBadge(basePurchaseAnalytics(onClose[27]).BadgeId.GIFTING);
           const obj = basePurchaseAnalytics(onClose[26]);
         }
       }, items2);
-      const obj5 = importDefault(dependencyMap[25]);
+      const obj5 = recipientUserId(onClose[25]);
       const items3 = [closure_9];
-      stateFromStores = arg1(dependencyMap[23]).useStateFromStores(items3, () => {
+      stateFromStores = basePurchaseAnalytics(onClose[23]).useStateFromStores(items3, () => {
         let user;
         if (null != recipientUserId) {
           user = authStore.getUser(recipientUserId);
@@ -174,20 +172,15 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
         return user;
       });
       obj1 = { giftStyle: first2, recipientUserId, customGiftMessage: first3, emojiConfetti: first5, soundEffect: first4, selectedGiftingPromotionReward: first9, premiumType: first };
-      tmp50 = function useGiftInfoOptions(giftStyle) {
+      const tmp50 = (function useGiftInfoOptions(giftStyle) {
         giftStyle = giftStyle.giftStyle;
-        const basePurchaseAnalytics = giftStyle;
         const recipientUserId = giftStyle.recipientUserId;
         const customGiftMessage = giftStyle.customGiftMessage;
-        const onClose = customGiftMessage;
         const emojiConfetti = giftStyle.emojiConfetti;
-        const setCurrentAnalyticsStep = emojiConfetti;
         const soundEffect = giftStyle.soundEffect;
-        const first = soundEffect;
         const selectedGiftingPromotionReward = giftStyle.selectedGiftingPromotionReward;
         const premiumType = giftStyle.premiumType;
-        const first1 = premiumType;
-        const items = [giftStyle, recipientUserId, customGiftMessage, , , , , ];
+        let items = [giftStyle, recipientUserId, customGiftMessage, , , , , ];
         let id;
         if (null != emojiConfetti) {
           id = emojiConfetti.id;
@@ -205,7 +198,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
         items[5] = soundId;
         items[6] = selectedGiftingPromotionReward;
         items[7] = premiumType;
-        return selectedGiftingPromotionReward.useMemo(() => {
+        return _undefined.useMemo(() => {
           const obj = { gift_style: giftStyle, recipient_id: recipientUserId, custom_message: customGiftMessage };
           let id;
           if (null != emojiConfetti) {
@@ -223,14 +216,15 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
           }
           obj.sound_id = soundId;
           if (null != selectedGiftingPromotionReward) {
-            if (premiumType === TIER_2.TIER_2) {
+            if (premiumType === first4.TIER_2) {
               const items = [selectedGiftingPromotionReward];
             }
             obj.reward_sku_ids = [];
             return obj;
           }
         }, items);
-      }(obj1);
+      })(obj1);
+      c37 = tmp50;
       const items4 = [first8];
       const effect1 = React.useEffect(() => {
         if (null != first8) {
@@ -241,12 +235,12 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
           const intl2 = basePurchaseAnalytics(onClose[17]).intl;
           obj.body = intl2.string(basePurchaseAnalytics(onClose[17]).t.CKsXk3);
           obj.show(obj);
-          tmp31(null);
+          _undefined3(null);
         }
       }, items4);
-      const items5 = [first9, tmp42];
+      const items5 = [first9, null != fetchClaimableGiftingPromotionRewardSkuIds && fetchClaimableGiftingPromotionRewardSkuIds.length > 0];
       const effect2 = React.useEffect(() => {
-        if (tmp42) {
+        if (c34) {
           const currentUser = authStore.getCurrentUser();
           let id;
           let obj = recipientUserId(onClose[29]);
@@ -270,55 +264,41 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
       obj2.setPremiumType = tmp5;
       obj2.setPlanInterval = tmp13;
       obj2.setError = tmp31;
-      function useSyncOrder(order) {
+      (function useSyncOrder(order) {
         order = order.order;
-        const basePurchaseAnalytics = order;
         const revision = order.revision;
-        const recipientUserId = revision;
         const setRevision = order.setRevision;
-        const onClose = setRevision;
-        const setOrder = order.setOrder;
-        const setCurrentAnalyticsStep = setOrder;
-        const planId = order.planId;
-        const first = planId;
+        let setOrder = order.setOrder;
+        let planId = order.planId;
         const externalGatewayFacet = order.externalGatewayFacet;
         const giftInfoOptions = order.giftInfoOptions;
-        const first1 = giftInfoOptions;
         const isPurchasing = order.isPurchasing;
         const premiumType = order.premiumType;
-        const first2 = premiumType;
         const planInterval = order.planInterval;
-        let closure_9 = planInterval;
         const setPremiumType = order.setPremiumType;
-        const first3 = setPremiumType;
         const setPlanInterval = order.setPlanInterval;
-        let closure_11 = setPlanInterval;
         const setError = order.setError;
-        const first4 = setError;
-        let closure_13 = tmp5.useRef({ orderId: undefined, planId: null, planSelection: { premiumType, planInterval }, giftInfo: null });
-        let closure_14 = tmp5.useRef(false);
-        const tmp = first(externalGatewayFacet.useState(0), 2);
+        let closure_13 = _undefined.useRef({ orderId: undefined, planId: null, planSelection: { premiumType, planInterval }, giftInfo: null });
+        let closure_14 = _undefined.useRef(false);
+        const tmp = first(_undefined.useState(0), 2);
         let closure_15 = tmp[1];
         const items = [order, revision, planId, externalGatewayFacet, giftInfoOptions, isPurchasing, premiumType, planInterval, setPremiumType, setPlanInterval, setRevision, setOrder, setError, tmp[0]];
-        const effect = tmp5.useEffect(() => {
+        const effect = _undefined.useEffect(() => {
           let id;
-          if (null != order) {
-            id = order.id;
+          if (null != id) {
+            id = id.id;
           }
-          const order = id;
           let first;
-          if (null != order) {
-            const order_line_items = order.order_line_items;
+          if (null != id) {
+            const order_line_items = id.order_line_items;
             if (null != order_line_items) {
               first = order_line_items[0];
             }
           }
-          const revision = first;
           let id1;
           if (null != first) {
             id1 = first.id;
           }
-          const setRevision = id1;
           if (null != first) {
             const sku_id = first.sku_id;
           }
@@ -330,20 +310,20 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
           if (null != subscription_plan_id) {
             tmp7 = subscription_plan_id;
           }
-          let tmp8 = null != order;
+          let tmp8 = null != id;
           if (tmp8) {
-            tmp8 = closure_13.current.orderId !== order.id;
+            tmp8 = closure_13.current.orderId !== id.id;
           }
           if (tmp8) {
-            closure_13.current.orderId = order.id;
+            closure_13.current.orderId = id.id;
             closure_13.current.planId = tmp7;
-            const obj = { premiumType, planInterval };
+            let obj = { premiumType, planInterval };
             closure_13.current.planSelection = obj;
           }
           if (null != id) {
             if (null != first) {
               if (null != id1) {
-                if (null != revision) {
+                if (null != first) {
                   if (!closure_7) {
                     if (!ref.current) {
                       let tmp18 = closure_13.current.planId !== planId;
@@ -351,7 +331,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                         let tmp19 = null == sku_id;
                         if (!tmp19) {
                           let skuId;
-                          if (null != ref[closure_4]) {
+                          if (null != first5[planId]) {
                             skuId = tmp22.skuId;
                           }
                           tmp19 = skuId === sku_id;
@@ -359,34 +339,33 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                         tmp18 = tmp19;
                       }
                       const setOrder = tmp18;
-                      const planId = tmp26;
-                      let closure_5 = false;
+                      planId = tmp26;
+                      let c5 = false;
                       let id2;
-                      if (null != order) {
-                        id2 = order.id;
+                      if (null != id) {
+                        id2 = id.id;
                       }
-                      const giftInfoOptions = id2;
                       ref.current = true;
-                      closure_7 = revision;
+                      closure_7 = first;
                       // CreateGeneratorClosureLongIndex (0x67)
-                      const promise = setOrder(revision)();
-                      setOrder(revision)().catch((error) => {
-                        let obj = id(id1[14]);
-                        obj = { orderId: id, planId: tmp26, needsPlanSync: tmp18, needsGiftSync: tmp26 };
+                      const promise = setCurrentAnalyticsStep(first)();
+                      setCurrentAnalyticsStep(first)().catch((error) => {
+                        let obj = basePurchaseAnalytics(onClose[14]);
+                        obj = { orderId: id, planId: closure_4, needsPlanSync: _isNativeReflectConstruct, needsGiftSync: closure_4 };
                         const result = obj.captureBillingException(error, { tags: { source: "NativeGiftContext_syncOrder" }, extra: obj });
                         obj = { error, orderId: id };
-                        closure_16.error("Failed to sync order", obj);
-                        if (!closure_5) {
-                          callback(error);
+                        first6.error("Failed to sync order", obj);
+                        if (!c5) {
+                          outer1_12(error);
                         }
                       }).finally(() => {
-                        closure_14.current = false;
-                        if (ref.current.orderId !== id2) {
-                          callback2((arg0) => arg0 + 1);
+                        outer1_14.current = false;
+                        if (outer1_13.current.orderId !== id2) {
+                          outer1_15((arg0) => arg0 + 1);
                         }
                       });
                       return () => {
-                        let closure_5 = true;
+                        let c5 = true;
                       };
                     }
                   }
@@ -395,20 +374,20 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
             }
           }
         }, items);
-      }(obj2);
+      })(obj2);
       const items6 = [planIdForPremiumType, recipientUserId, basePurchaseAnalytics];
       callback = React.useCallback((arg0) => {
-        const basePurchaseAnalytics = arg0;
+        let closure_0 = arg0;
         function handleGiftCodeCreate(giftCode) {
-          const fromServer = closure_8.createFromServer(giftCode.giftCode);
-          if (fromServer.subscriptionPlanId === closure_27) {
-            callback(fromServer);
+          const fromServer = first2.createFromServer(giftCode.giftCode);
+          if (fromServer.subscriptionPlanId === outer1_27) {
+            outer1_17(fromServer);
             let tmp6 = null != handleGiftCodeCreate;
             if (tmp6) {
-              const location_stack = giftCode.location_stack;
+              const location_stack = lib.location_stack;
               let hasItem;
               if (null != location_stack) {
-                hasItem = location_stack.includes(handleGiftCodeCreate(closure_2[30]).PREMIUM_GIFT_INTENT_CARD);
+                hasItem = location_stack.includes(recipientUserId(onClose[30]).PREMIUM_GIFT_INTENT_CARD);
               }
               tmp6 = null != hasItem;
               const tmp7 = hasItem;
@@ -417,46 +396,44 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
               tmp6 = tmp7;
             }
             if (tmp6) {
-              const result = giftCode(closure_2[31]).logGiftIntentFlowPurchasedGift(handleGiftCodeCreate);
-              const obj = giftCode(closure_2[31]);
+              const result = basePurchaseAnalytics(onClose[31]).logGiftIntentFlowPurchasedGift(handleGiftCodeCreate);
+              const obj = basePurchaseAnalytics(onClose[31]);
             }
-            if (null != giftCode) {
-              giftCode();
+            if (null != lib) {
+              lib();
             }
-            handleGiftCodeCreate(closure_2[32]).unsubscribe("GIFT_CODE_CREATE", handleGiftCodeCreate);
-            const obj2 = handleGiftCodeCreate(closure_2[32]);
+            recipientUserId(onClose[32]).unsubscribe("GIFT_CODE_CREATE", handleGiftCodeCreate);
+            const obj2 = recipientUserId(onClose[32]);
           }
-          callback2(false);
+          outer1_19(false);
         }
-        const recipientUserId = handleGiftCodeCreate;
         return handleGiftCodeCreate;
       }, items6);
       const items7 = [skuId, orderContext.orderId];
-      callback1 = React.useCallback(() => {
+      callback1 = React.useCallback((() => {
         // CreateGeneratorClosureLongIndex (0x67)
         let closure_0 = setCurrentAnalyticsStep(tmp);
         return function() {
           return callback(...arguments);
         };
-      }(), items7);
+      })(), items7);
       const items8 = [setCurrentAnalyticsStep];
       callback2 = React.useCallback((arg0) => {
         recipientUserId(onClose[32]).unsubscribe("GIFT_CODE_CREATE", arg0);
         setCurrentAnalyticsStep(basePurchaseAnalytics(onClose[34]).PaymentFlowStep.PLAN_SELECT);
-        callback2(false);
+        callback(false);
       }, items8);
       const items9 = [callback, setCurrentAnalyticsStep, tmp50, handlePremiumPurchase, productIdForGift, basePurchaseAnalytics, callback1, callback2, orderContext.orderId, first3];
       callback3 = React.useCallback((arg0) => {
         function handleGPlayUpdatePurchaseAction(isActivePurchase) {
           if (isActivePurchase.isActivePurchase) {
-            callback2(handleGPlayUpdatePurchaseAction[32]).unsubscribe("GPLAY_UPDATE_PURCHASE_STATE", handleGPlayUpdatePurchaseAction);
+            recipientUserId(onClose[32]).unsubscribe("GPLAY_UPDATE_PURCHASE_STATE", handleGPlayUpdatePurchaseAction);
             if (isActivePurchase.billingResult !== constants.OK) {
-              callback3(callback2);
+              outer1_40(closure_1);
             }
-            const obj = callback2(handleGPlayUpdatePurchaseAction[32]);
+            const obj = recipientUserId(onClose[32]);
           }
         }
-        const onClose = handleGPlayUpdatePurchaseAction;
         if (null != first1.getNextTier(basePurchaseAnalytics(onClose[27]).BadgeId.GIFTING)) {
           const singleRequirementProgress = first1.getSingleRequirementProgress(basePurchaseAnalytics(onClose[27]).BadgeId.GIFTING);
           let current;
@@ -467,26 +444,26 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
           if (null != current) {
             tmp9 = current;
           }
-          callback3(tmp9);
+          callback2(tmp9);
         } else {
-          callback3(null);
+          callback2(null);
         }
-        callback2(true);
-        const callback = callback(arg0);
+        callback(true);
+        let closure_1 = callback(arg0);
         let obj = basePurchaseAnalytics(onClose[33]);
         if (obj.isAndroid()) {
-          let obj1 = callback(onClose[32]);
+          let obj1 = recipientUserId(onClose[32]);
           const subscription = obj1.subscribe("GPLAY_UPDATE_PURCHASE_STATE", handleGPlayUpdatePurchaseAction);
         }
         setCurrentAnalyticsStep(basePurchaseAnalytics(onClose[34]).PaymentFlowStep.REVIEW);
-        obj = { productId: productIdForGift, isGift: true, analyticsLoadId: basePurchaseAnalytics.load_id, analyticsLocation: basePurchaseAnalytics.location, analyticsLocations: basePurchaseAnalytics.location_stack, allowPlanChange: false, giftInfoOptions: tmp50 };
+        obj = { productId: productIdForGift, isGift: true, analyticsLoadId: basePurchaseAnalytics.load_id, analyticsLocation: basePurchaseAnalytics.location, analyticsLocations: basePurchaseAnalytics.location_stack, allowPlanChange: false, giftInfoOptions: c37 };
         // CreateGeneratorClosureLongIndex (0x67)
-        const basePurchaseAnalytics = setCurrentAnalyticsStep(tmp);
+        basePurchaseAnalytics = setCurrentAnalyticsStep(tmp);
         obj.onPurchaseComplete = function() {
           return callback(...arguments);
         };
         obj.onPurchaseError = function onPurchaseError() {
-          return callback3(closure_1);
+          return outer1_40(closure_1);
         };
         obj.orderId = orderContext.orderId;
         obj = { load_id: basePurchaseAnalytics.load_id };
@@ -517,8 +494,8 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
               obj["prePurchaseGiftingBadgeProgress"] = first10;
               obj["basePurchaseAnalytics"] = basePurchaseAnalytics;
               obj["setCurrentAnalyticsStep"] = setCurrentAnalyticsStep;
-              obj["setPremiumType"] = tmp5;
-              obj["setPlanInterval"] = tmp13;
+              obj["setPremiumType"] = c5;
+              obj["setPlanInterval"] = c7;
               obj["setGiftStyle"] = closure_9;
               obj["setCustomGiftMessage"] = closure_11;
               obj["setSoundEffect"] = closure_13;
@@ -528,12 +505,42 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
               obj["allRewards"] = stateFromStoresArray;
               obj["claimableRewards"] = fetchClaimableGiftingPromotionRewardSkuIds;
               obj["selectedGiftingPromotionReward"] = first9;
-              obj["setSelectedGiftingPromotionReward"] = tmp34;
+              obj["setSelectedGiftingPromotionReward"] = c23;
               return obj;
             }, items10),
         children
       };
-      return <redux.Provider {...obj3} />;
+      return <redux.Provider value={React.useMemo(() => {
+        const obj = {};
+        const merged = Object.assign(orderContext);
+        obj["recipientUserId"] = recipientUserId;
+        obj["recipientUser"] = stateFromStores;
+        obj["giftStyle"] = first2;
+        obj["premiumType"] = first;
+        obj["planInterval"] = first1;
+        obj["productId"] = productIdForGift;
+        obj["customGiftMessage"] = first3;
+        obj["soundEffect"] = first4;
+        obj["emojiConfetti"] = first5;
+        obj["giftCodeRecord"] = first6;
+        obj["isPurchasing"] = first7;
+        obj["prePurchaseGiftingBadgeProgress"] = first10;
+        obj["basePurchaseAnalytics"] = basePurchaseAnalytics;
+        obj["setCurrentAnalyticsStep"] = setCurrentAnalyticsStep;
+        obj["setPremiumType"] = c5;
+        obj["setPlanInterval"] = c7;
+        obj["setGiftStyle"] = closure_9;
+        obj["setCustomGiftMessage"] = closure_11;
+        obj["setSoundEffect"] = closure_13;
+        obj["setEmojiConfetti"] = closure_15;
+        obj["onClose"] = onClose;
+        obj["onPurchase"] = callback3;
+        obj["allRewards"] = stateFromStoresArray;
+        obj["claimableRewards"] = fetchClaimableGiftingPromotionRewardSkuIds;
+        obj["selectedGiftingPromotionReward"] = first9;
+        obj["setSelectedGiftingPromotionReward"] = c23;
+        return obj;
+      }, items10)}>{children}</redux.Provider>;
     }
   }
 };

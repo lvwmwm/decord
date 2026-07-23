@@ -1,15 +1,14 @@
-// Module ID: 9773
-// Function ID: 76002
+// Module ID: 9780
+// Function ID: 76043
 // Name: getProfileChangesForUpdateRequest
-// Dependencies: []
+// Dependencies: [7855, 9781, 1876, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 9773 (getProfileChangesForUpdateRequest)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
+// Module 9780 (getProfileChangesForUpdateRequest)
+const result = require("CollectiblesItemType").fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 
 export const getProfileChangesForUpdateRequest = function getProfileChangesForUpdateRequest(pendingBanner, id) {
-  const obj = {};
+  let obj = {};
   if (undefined !== pendingBanner.pendingBanner) {
     obj.banner = pendingBanner.pendingBanner;
     if (null !== pendingBanner.pendingBanner) {
@@ -33,7 +32,7 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
   if (undefined !== pendingBanner.pendingThemeColors) {
     obj.theme_colors = pendingBanner.pendingThemeColors;
   }
-  const tmp3 = function getCollectiblesChangesForUpdateRequest(pendingBanner, id) {
+  const tmp3 = (function getCollectiblesChangesForUpdateRequest(pendingBanner, id) {
     let pendingProfileEffect;
     let pendingProfileFrame;
     ({ pendingProfileEffect, pendingProfileFrame } = pendingBanner);
@@ -42,7 +41,7 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
         return {};
       }
     }
-    const tmp = callback2(closure_2[1])(id);
+    const tmp = outer1_1(outer1_2[1])(id);
     let collectibles;
     if (null != tmp) {
       collectibles = tmp.collectibles;
@@ -52,17 +51,17 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
     }
     const items = [...collectibles];
     if (undefined !== pendingProfileEffect) {
-      const found = items.filter((type) => type.type !== callback(closure_2[2]).CollectiblesItemType.PROFILE_EFFECT);
+      const found = items.filter((type) => type.type !== outer2_0(outer2_2[2]).CollectiblesItemType.PROFILE_EFFECT);
       let arr3 = found;
       if (null !== pendingProfileEffect) {
-        let obj = { skuId: pendingProfileEffect.skuId, type: callback(closure_2[2]).CollectiblesItemType.PROFILE_EFFECT };
+        let obj = { skuId: pendingProfileEffect.skuId, type: outer1_0(outer1_2[2]).CollectiblesItemType.PROFILE_EFFECT };
         found.push(obj);
         arr3 = found;
       }
     }
     let arr5 = arr3;
     if (undefined !== pendingProfileFrame) {
-      const found1 = arr3.filter((type) => type.type !== callback(closure_2[2]).CollectiblesItemType.PROFILE_FRAME);
+      const found1 = arr3.filter((type) => type.type !== outer2_0(outer2_2[2]).CollectiblesItemType.PROFILE_FRAME);
       arr5 = found1;
       if (null !== pendingProfileFrame) {
         found1.push(pendingProfileFrame);
@@ -71,7 +70,7 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
     }
     obj = { collectibles_sku_ids: arr5.map((skuId) => skuId.skuId) };
     return obj;
-  }(pendingBanner, id);
+  })(pendingBanner, id);
   if (undefined !== tmp3.collectibles_sku_ids) {
     obj.collectibles_sku_ids = tmp3.collectibles_sku_ids;
   }
@@ -89,7 +88,7 @@ export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpda
     const pendingAvatar = pendingGlobalName.pendingAvatar;
     if (null === pendingAvatar) {
       obj.avatar = null;
-    } else if (pendingAvatar.assetOrigin === require(dependencyMap[0]).AssetOriginTypes.ARCHIVED_ASSET) {
+    } else if (pendingAvatar.assetOrigin === require(7855) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
       obj.avatarId = pendingAvatar.originalAsset.id;
     } else {
       ({ imageUri: obj.avatar, description: obj.avatarDescription, originalMd5: obj.avatarOriginalMd5 } = pendingAvatar);
@@ -109,7 +108,7 @@ export const getGuildMemberChangesForUpdateRequest = function getGuildMemberChan
     pendingAvatar = pendingAvatar.pendingAvatar;
     if (null === pendingAvatar) {
       obj.avatar = null;
-    } else if (pendingAvatar.assetOrigin === require(dependencyMap[0]).AssetOriginTypes.ARCHIVED_ASSET) {
+    } else if (pendingAvatar.assetOrigin === require(7855) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
       obj.avatarId = pendingAvatar.originalAsset.id;
     } else {
       ({ imageUri: obj.avatar, description: obj.avatarDescription, originalMd5: obj.avatarOriginalMd5 } = pendingAvatar);

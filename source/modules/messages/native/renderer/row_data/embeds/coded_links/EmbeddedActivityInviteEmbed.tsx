@@ -1,29 +1,31 @@
-// Module ID: 12176
-// Function ID: 93631
+// Module ID: 12290
+// Function ID: 95782
 // Name: createEmbeddedActivityInviteEmbed
-// Dependencies: []
+// Dependencies: [57, 27, 1347, 7821, 4167, 1194, 1348, 4115, 3767, 1849, 9479, 6979, 686, 7820, 7633, 4593, 1212, 4320, 12291, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 12176 (createEmbeddedActivityInviteEmbed)
-let closure_3 = importDefault(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const FetchState = arg1(dependencyMap[3]).FetchState;
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-const CodedLinkExtendedType = arg1(dependencyMap[10]).CodedLinkExtendedType;
-const InviteTargetTypes = arg1(dependencyMap[11]).InviteTargetTypes;
-let closure_16 = ["ETHERNET"];
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/EmbeddedActivityInviteEmbed.tsx");
+// Module 12290 (createEmbeddedActivityInviteEmbed)
+import _slicedToArray from "_slicedToArray";
+import { Image } from "get ActivityIndicator";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import { CodedLinkExtendedType } from "CodedLinkExtendedType";
+import { InviteTargetTypes } from "InviteSendStates";
+
+const require = arg1;
+let closure_16 = ["embedded_cover"];
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/EmbeddedActivityInviteEmbed.tsx");
 
 export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivityInviteEmbed(inviteCode) {
-  let arg1;
-  const invite = invite.getInvite(inviteCode.inviteCode);
+  let id;
+  invite = invite.getInvite(inviteCode.inviteCode);
   if (null == invite) {
     return null;
   } else {
@@ -31,17 +33,16 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
     if (invite.target_type === InviteTargetTypes.EMBEDDED_APPLICATION) {
       if (null != target_application) {
         if (null == application.getApplication(target_application.id)) {
-          let obj = importDefault(dependencyMap[12]);
+          let obj = importDefault(686);
           obj = { type: "APPLICATION_UPDATE", application: target_application };
           obj.dispatch(obj);
         }
-        let id = target_application.id;
-        arg1 = id;
+        id = target_application.id;
         if (applicationAssetFetchState.getApplicationAssetFetchState(id) === FetchState.NOT_FETCHED) {
-          let obj2 = arg1(dependencyMap[13]);
+          let obj2 = id(7820);
           const assetIds = obj2.fetchAssetIds(id, closure_16);
         }
-        const tmp13 = importDefault(dependencyMap[14])(inviteCode.theme);
+        const tmp13 = importDefault(7633)(inviteCode.theme);
         const baseColors = tmp13.baseColors;
         const guild = invite.guild;
         let name;
@@ -63,7 +64,7 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
         }
         let simpleChannelIcon = null;
         if (null != channel) {
-          let obj3 = arg1(dependencyMap[15]);
+          let obj3 = id(4593);
           simpleChannelIcon = obj3.getSimpleChannelIcon(channel);
         }
         if (null != simpleChannelIcon) {
@@ -82,17 +83,17 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
         if (null != name1) {
           tmp26 = name1;
         }
-        const string = arg1(dependencyMap[16]).intl.string;
+        const string = id(1212).intl.string;
         if (null != channel) {
           if (null != name) {
-            const intl2 = arg1(dependencyMap[16]).intl;
-            obj = { channelName: arg1(dependencyMap[17]).computeChannelName(channel, closure_13, closure_12), guildName: name };
-            let formatToPartsResult = intl2.formatToParts(arg1(dependencyMap[16]).t.omZR7L, obj);
-            const obj7 = arg1(dependencyMap[17]);
+            const intl2 = id(1212).intl;
+            obj = { channelName: id(4320).computeChannelName(channel, closure_13, closure_12), guildName: name };
+            let formatToPartsResult = intl2.formatToParts(id(1212).t.omZR7L, obj);
+            const obj7 = id(4320);
           }
           let tmp37 = null != id;
           if (tmp37) {
-            const embeddedActivitiesForChannel = embeddedActivitiesForChannel.getEmbeddedActivitiesForChannel(id);
+            embeddedActivitiesForChannel = embeddedActivitiesForChannel.getEmbeddedActivitiesForChannel(id);
             const found = embeddedActivitiesForChannel.find((applicationId) => applicationId.applicationId === id);
             let hasItem;
             if (null != found) {
@@ -106,29 +107,29 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
           if (null != id) {
             if (null != id2) {
               const obj1 = { channelId: id, guildId: id2, applicationId: id };
-              let embeddedActivityParticipantAvatarUris = arg1(dependencyMap[18]).getEmbeddedActivityParticipantAvatarUris(obj1);
-              const obj8 = arg1(dependencyMap[18]);
+              let embeddedActivityParticipantAvatarUris = id(12291).getEmbeddedActivityParticipantAvatarUris(obj1);
+              const obj8 = id(12291);
             }
-            const string2 = arg1(dependencyMap[16]).intl.string;
+            const string2 = id(1212).intl.string;
             if (0 === embeddedActivityParticipantAvatarUris.length) {
-              const intl4 = arg1(dependencyMap[16]).intl;
-              let stringResult = intl4.string(arg1(dependencyMap[16]).t.I0v0Qv);
+              const intl4 = id(1212).intl;
+              let stringResult = intl4.string(id(1212).t.I0v0Qv);
             } else {
               stringResult = tmp46;
               if (tmp37) {
-                const intl3 = arg1(dependencyMap[16]).intl;
-                stringResult = intl3.string(arg1(dependencyMap[16]).t.KC26NR);
+                const intl3 = id(1212).intl;
+                stringResult = intl3.string(id(1212).t.KC26NR);
               }
             }
-            let assetIds1 = arg1(dependencyMap[13]).getAssetIds(id, closure_16);
+            let assetIds1 = id(7820).getAssetIds(id, closure_16);
             if (null == assetIds1) {
               assetIds1 = [];
             }
             const first = callback(assetIds1, 1)[0];
             let assetImage;
             if (null != first) {
-              assetImage = arg1(dependencyMap[13]).getAssetImage(id, first, 1024);
-              const obj11 = arg1(dependencyMap[13]);
+              assetImage = id(7820).getAssetImage(id, first, 1024);
+              const obj11 = id(7820);
             }
             obj2 = {};
             const merged = Object.assign(baseColors);
@@ -142,8 +143,8 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
             obj2["participantAvatarUris"] = embeddedActivityParticipantAvatarUris;
             obj2["acceptLabelText"] = stringResult;
             obj2["splashUrl"] = assetImage;
-            const intl5 = arg1(dependencyMap[16]).intl;
-            obj2["noParticipantsText"] = intl5.string(arg1(dependencyMap[16]).t.PZLnuD);
+            const intl5 = id(1212).intl;
+            obj2["noParticipantsText"] = intl5.string(id(1212).t.PZLnuD);
             obj2["ctaEnabled"] = !tmp37;
             return obj2;
           }
@@ -151,9 +152,9 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
         }
         formatToPartsResult = null;
         if (null != name) {
-          const intl = arg1(dependencyMap[16]).intl;
+          const intl = id(1212).intl;
           obj3 = { guildName: name };
-          formatToPartsResult = intl.formatToParts(arg1(dependencyMap[16]).t.u0vaDE, obj3);
+          formatToPartsResult = intl.formatToParts(id(1212).t.u0vaDE, obj3);
         }
       }
     }

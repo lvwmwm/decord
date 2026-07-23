@@ -1,7 +1,7 @@
 // Module ID: 9
 // Function ID: 146
 // Name: toPrimitive
-// Dependencies: []
+// Dependencies: [10]
 
 // Module 9 (toPrimitive)
 
@@ -22,7 +22,7 @@ export default function toPrimitive(defaultResult1) {
           const typeError = new TypeError("@@toPrimitive must return a primitive value.");
           throw typeError;
         }
-        const obj3 = require(dependencyMap[0]);
+        obj3 = require(10) /* _typeof */;
       } else {
         return "string" === str ? String : Number(defaultResult1);
       }

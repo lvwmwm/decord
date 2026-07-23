@@ -1,107 +1,109 @@
-// Module ID: 10673
-// Function ID: 83199
-// Dependencies: []
+// Module ID: 10683
+// Function ID: 83249
+// Dependencies: [31, 27, 33, 4130, 4948, 10684, 10628, 10367, 10648, 4950, 10645, 10732, 2]
 
-// Module 10673
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[3]).createStyles({ container: { explicitContentGuilds: "\u{1F9D1}\u{1F3FC}\u200D\u{1F9BD}\u200D\u27A1\uFE0F", CHANNEL_ICON_EMOJIS_GENERATED: true, questDockHeaderActionDisclosures: null, savedMessageDeleteObjectToClient: 15.1, FJD: null } });
-const obj2 = arg1(dependencyMap[3]);
+// Module 10683
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingHorizontal: 12, justifyContent: "center", alignItems: "center", flexDirection: "row", position: "relative" } });
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
-  const arg1 = channel;
-  let View;
-  let isStageVideoEnabledResult;
+  let c4;
   let callback;
-  let obj = arg1(dependencyMap[4]);
+  callback = undefined;
+  let obj = channel(actionBarPrimaryButton[4]);
   const canModerateRequestToSpeak = obj.useCanModerateRequestToSpeak(channel.id);
-  const importDefault = canModerateRequestToSpeak;
-  const tmp = callback();
-  const actionBarPrimaryButton = arg1(dependencyMap[5]).useActionBarPrimaryButton({ channel });
-  const dependencyMap = actionBarPrimaryButton;
-  const obj2 = arg1(dependencyMap[5]);
-  const getActionBarHeight = arg1(dependencyMap[6]).useGetActionBarHeight(channel.id);
-  const tmp5 = importDefault(dependencyMap[7])(channel.id);
-  const obj3 = arg1(dependencyMap[6]);
-  const tmp6 = arg1(dependencyMap[8]).useShowStageMusicMuteButton(channel.id) && !tmp5;
-  View = tmp6;
-  const obj4 = arg1(dependencyMap[8]);
-  isStageVideoEnabledResult = arg1(dependencyMap[9]).isStageVideoEnabled(channel.guild_id);
-  const items = [actionBarPrimaryButton, channel];
+  let tmp = callback2();
+  actionBarPrimaryButton = channel(actionBarPrimaryButton[5]).useActionBarPrimaryButton({ channel });
+  let obj2 = channel(actionBarPrimaryButton[5]);
+  const getActionBarHeight = channel(actionBarPrimaryButton[6]).useGetActionBarHeight(channel.id);
+  const tmp5 = canModerateRequestToSpeak(actionBarPrimaryButton[7])(channel.id);
+  let obj3 = channel(actionBarPrimaryButton[6]);
+  const tmp6 = channel(actionBarPrimaryButton[8]).useShowStageMusicMuteButton(channel.id) && !tmp5;
+  c4 = tmp6;
+  let obj4 = channel(actionBarPrimaryButton[8]);
+  const isStageVideoEnabledResult = channel(actionBarPrimaryButton[9]).isStageVideoEnabled(channel.guild_id);
+  callback = isStageVideoEnabledResult;
+  let items = [actionBarPrimaryButton, channel];
   callback = importAllResult.useCallback((isSmallSize) => {
     if (actionBarPrimaryButton === channel(actionBarPrimaryButton[5]).ActionBarPrimaryButton.END_STREAM) {
       let obj = { channel, isSmallSize };
-      let tmp4 = isStageVideoEnabledResult(channel(actionBarPrimaryButton[5]).DisconnectStreamButton, obj);
+      let tmp4 = _undefined(channel(actionBarPrimaryButton[5]).DisconnectStreamButton, obj);
     } else {
       tmp4 = null;
       if (actionBarPrimaryButton === channel(actionBarPrimaryButton[5]).ActionBarPrimaryButton.END_CALL) {
         obj = { channel, isSmallSize };
-        tmp4 = isStageVideoEnabledResult(channel(actionBarPrimaryButton[10]).DisconnectStageButton, obj);
+        tmp4 = _undefined(channel(actionBarPrimaryButton[10]).DisconnectStageButton, obj);
       }
     }
     return tmp4;
   }, items);
-  const items1 = [tmp6, channel, canModerateRequestToSpeak, tmp5, callback, isStageVideoEnabledResult];
+  let items1 = [tmp6, channel, canModerateRequestToSpeak, tmp5, callback, isStageVideoEnabledResult];
   obj = {
     pointerEvents: "box-none",
     style: items2,
     children: importAllResult.useMemo(() => {
-      if (tmp5) {
+      if (closure_3) {
         let obj = {};
-        let tmp26 = isStageVideoEnabledResult;
-        if (isStageVideoEnabledResult) {
+        let tmp26 = _undefined;
+        if (_undefined) {
           obj = { channel, isSmallSize: tmp23 };
-          tmp26 = isStageVideoEnabledResult(channel(actionBarPrimaryButton[5]).VideoButton, obj);
+          tmp26 = _undefined(channel(actionBarPrimaryButton[5]).VideoButton, obj);
         }
         const items = [tmp26, , , , ];
-        const obj1 = { channel, isSmallSize: isStageVideoEnabledResult };
-        items[1] = isStageVideoEnabledResult(channel(actionBarPrimaryButton[11]).ChannelCallMicButton, obj1);
+        const obj1 = { channel, isSmallSize: _undefined };
+        items[1] = _undefined(channel(actionBarPrimaryButton[11]).ChannelCallMicButton, obj1);
         let ChatButton = channel(actionBarPrimaryButton[10]);
-        const obj2 = { channel, isSmallSize: isStageVideoEnabledResult };
-        items[2] = isStageVideoEnabledResult(canModerateRequestToSpeak ? ChatButton.RequestToSpeakListButton : ChatButton.MoveToAudienceButton, obj2);
+        const obj2 = { channel, isSmallSize: _undefined };
+        items[2] = _undefined(canModerateRequestToSpeak ? ChatButton.RequestToSpeakListButton : ChatButton.MoveToAudienceButton, obj2);
         ChatButton = channel(actionBarPrimaryButton[10]).ChatButton;
-        const obj3 = { channel, isSmallSize: isStageVideoEnabledResult };
-        items[3] = isStageVideoEnabledResult(ChatButton, obj3);
-        items[4] = callback(isStageVideoEnabledResult);
+        const obj3 = { channel, isSmallSize: _undefined };
+        items[3] = _undefined(ChatButton, obj3);
+        items[4] = callback(_undefined);
         obj.children = items;
-        closure_7(callback, obj);
-        const tmp24 = closure_7;
+        outer1_7(callback, obj);
+        const tmp24 = outer1_7;
         const tmp25 = callback;
-        const tmp31 = isStageVideoEnabledResult;
+        const tmp31 = _undefined;
       } else {
-        let tmp = tmp6;
-        if (tmp6) {
+        let tmp = c4;
+        if (c4) {
           tmp = canModerateRequestToSpeak;
         }
         obj = {};
-        let tmp4 = tmp6;
-        if (tmp6) {
+        let tmp4 = c4;
+        if (c4) {
           const obj4 = { channel, isSmallSize: tmp };
-          tmp4 = isStageVideoEnabledResult(channel(actionBarPrimaryButton[10]).MusicMuteButton, obj4);
-          const tmp5 = isStageVideoEnabledResult;
+          tmp4 = _undefined(channel(actionBarPrimaryButton[10]).MusicMuteButton, obj4);
         }
         const items1 = [tmp4, , , , ];
         const obj5 = { channel, isSmallSize: tmp };
-        items1[1] = isStageVideoEnabledResult(channel(actionBarPrimaryButton[10]).RequestToSpeakButton, obj5);
+        items1[1] = _undefined(channel(actionBarPrimaryButton[10]).RequestToSpeakButton, obj5);
         let tmp13 = canModerateRequestToSpeak;
         if (canModerateRequestToSpeak) {
           const obj6 = { channel, isSmallSize: tmp };
-          tmp13 = isStageVideoEnabledResult(channel(actionBarPrimaryButton[10]).RequestToSpeakListButton, obj6);
+          tmp13 = _undefined(channel(actionBarPrimaryButton[10]).RequestToSpeakListButton, obj6);
         }
         items1[2] = tmp13;
         const obj7 = { channel, isSmallSize: tmp };
-        items1[3] = isStageVideoEnabledResult(channel(actionBarPrimaryButton[10]).ChatButton, obj7);
+        items1[3] = _undefined(channel(actionBarPrimaryButton[10]).ChatButton, obj7);
         items1[4] = callback(tmp);
         obj.children = items1;
-        return closure_7(callback, obj);
+        return outer1_7(callback, obj);
       }
     }, items1)
   };
-  const items2 = [tmp.container, { height: getActionBarHeight }];
-  return isStageVideoEnabledResult(View, obj);
+  items2 = [tmp.container, { height: getActionBarHeight }];
+  return callback(c4, obj);
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/stage_channels/native/components/StageActionBar.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/StageActionBar.tsx");
 
 export default memoResult;

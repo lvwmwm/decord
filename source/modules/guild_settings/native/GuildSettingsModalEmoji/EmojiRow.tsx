@@ -1,80 +1,83 @@
-// Module ID: 16137
-// Function ID: 124403
+// Module ID: 16254
+// Function ID: 126576
 // Name: num2
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1838, 33, 4130, 689, 477, 566, 8402, 9391, 3775, 16255, 4528, 4126, 1273, 5165, 3831, 1212, 1392, 4319, 3969, 4660, 16257, 2]
 // Exports: EmojiRow
 
-// Module 16137 (num2)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, Image: closure_6, Pressable: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = { flex: { flex: 1 }, flexCenterRow: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
-obj = { borderRadius: importDefault(dependencyMap[6]).radii.xs };
-obj.nameContainer = obj;
-const obj1 = {};
-let obj4 = arg1(dependencyMap[7]);
+// Module 16254 (num2)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "set";
+import set from "get ActivityIndicator";
+
+let closure_10;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_9;
+const require = arg1;
+({ View: closure_5, Image: closure_6, Pressable: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = { flex: { flex: 1 }, flexCenterRow: { flexDirection: "row", alignItems: "center" } };
+_createForOfIteratorHelperLoose = { paddingVertical: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, alignItems: "center", flexDirection: "row" };
+_createForOfIteratorHelperLoose.nameContainer = _createForOfIteratorHelperLoose;
+let obj1 = {};
 let num = 4;
-if (obj4.isAndroid()) {
+if (set.isAndroid()) {
   num = 0;
 }
 obj1.padding = num;
-obj1.borderRadius = importDefault(dependencyMap[6]).radii.xs;
+obj1.borderRadius = require("_createForOfIteratorHelperLoose").radii.xs;
 obj1.alignItems = "center";
 obj1.flexDirection = "row";
-obj.activeNameContainer = obj1;
-obj.usernameContainer = { -1359384322: "characters", 1365005922: false, 1650553089: 48 };
-const obj2 = { fontSize: 16 };
-const tmp3 = arg1(dependencyMap[4]);
+_createForOfIteratorHelperLoose.activeNameContainer = obj1;
+_createForOfIteratorHelperLoose.usernameContainer = { marginRight: 8, maxWidth: 150, flexShrink: 1 };
+let obj2 = { fontSize: 16 };
 let num2;
-if (obj7.isAndroid()) {
+if (set.isAndroid()) {
   num2 = 0;
 }
 obj2.padding = num2;
-obj2.color = importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY;
-obj.emojiText = obj2;
-obj.colon = { width: 4 };
-const obj7 = arg1(dependencyMap[7]);
-obj.username = { fontSize: 13, color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
-obj.emojiImage = {};
-obj4 = { "Null": null, "Null": null, "Null": null, "Null": null, paddingLeft: importDefault(dependencyMap[6]).space.PX_8 };
-obj.overflowIcon = obj4;
-let closure_11 = obj.createStyles(obj);
-const obj3 = { fontSize: 13, color: importDefault(dependencyMap[6]).colors.TEXT_MUTED };
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalEmoji/EmojiRow.tsx");
+obj2.color = require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY;
+_createForOfIteratorHelperLoose.emojiText = obj2;
+_createForOfIteratorHelperLoose.colon = { width: 4 };
+_createForOfIteratorHelperLoose.username = { fontSize: 13, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose.emojiImage = { width: 30, height: 30, resizeMode: "contain" };
+set = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center", flexDirection: "row", height: "100%" };
+_createForOfIteratorHelperLoose.overflowIcon = set;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = set.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalEmoji/EmojiRow.tsx");
 
 export const EmojiRow = function EmojiRow(guildId) {
   let end;
   let start;
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const emoji = guildId.emoji;
-  const importDefault = emoji;
   let flag = guildId.disabled;
   if (flag === undefined) {
     flag = false;
   }
   const onSelectRolesForEmoji = guildId.onSelectRolesForEmoji;
-  const dependencyMap = onSelectRolesForEmoji;
-  let callback;
+  let first;
   let React;
   let closure_5;
-  callback = undefined;
+  let callback;
   ({ start, end } = guildId);
-  const tmp = callback4();
-  const tmp2 = callback(React.useState(emoji.name), 2);
-  const first = tmp2[0];
-  callback = first;
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = first(React.useState(emoji.name), 2);
+  first = tmp2[0];
   React = tmp2[1];
-  const tmp4 = callback(React.useState(false), 2);
+  const tmp4 = first(React.useState(false), 2);
   closure_5 = tmp4[1];
-  let obj = arg1(dependencyMap[8]);
+  let obj = guildId(onSelectRolesForEmoji[8]);
   const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId));
-  let obj1 = arg1(dependencyMap[9]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(guildId));
+  let obj1 = guildId(onSelectRolesForEmoji[9]);
   const items1 = [guildId, emoji, onSelectRolesForEmoji];
   const result = obj1.useManageResourcePermissions(stateFromStores).canManageGuildExpression(emoji);
   callback = React.useCallback(() => {
@@ -82,7 +85,7 @@ export const EmojiRow = function EmojiRow(guildId) {
       guildId,
       emoji,
       onEdit() {
-        callback(true);
+        outer1_5(true);
       },
       onSelectRolesForEmoji
     });
@@ -112,43 +115,48 @@ export const EmojiRow = function EmojiRow(guildId) {
   };
   obj1 = { style: tmp.emojiImage };
   const obj2 = {};
-  let obj6 = importDefault(dependencyMap[19]);
+  let obj6 = emoji(onSelectRolesForEmoji[19]);
   obj2.uri = obj6.getEmojiURL({ id: emoji.id, animated: emoji.animated, size: 48 });
   obj1.source = obj2;
-  obj.children = callback2(callback, obj1);
-  obj.icon = callback2(closure_7, obj);
-  let obj8 = importDefault(dependencyMap[20]);
+  obj.children = callback(callback, obj1);
+  obj.icon = callback(closure_7, obj);
+  let obj8 = emoji(onSelectRolesForEmoji[20]);
   const nickname = obj8.getNickname(guildId, undefined, emoji.user);
   const obj4 = { style: tmp.flexCenterRow };
   const obj5 = { style: tmp.usernameContainer };
   let tmp14 = null;
   if (null != nickname) {
     obj6 = { numberOfLines: 1, style: tmp.username, children: nickname };
-    tmp14 = callback2(arg1(dependencyMap[15]).LegacyText, obj6);
+    tmp14 = callback(guildId(onSelectRolesForEmoji[15]).LegacyText, obj6);
   }
   const items4 = [tmp14, ];
   const obj7 = { numberOfLines: 1, style: tmp.username };
-  let obj13 = importDefault(dependencyMap[21]);
+  let obj13 = emoji(onSelectRolesForEmoji[21]);
   obj7.children = obj13.getUserTag(emoji.user);
-  items4[1] = callback2(arg1(dependencyMap[15]).LegacyText, obj7);
+  items4[1] = callback(guildId(onSelectRolesForEmoji[15]).LegacyText, obj7);
   obj5.children = items4;
-  const items5 = [callback3(closure_5, obj5), , ];
-  obj8 = { user: emoji.user, guildId, size: arg1(dependencyMap[15]).AvatarSizes.XSMALL };
-  items5[1] = callback2(arg1(dependencyMap[15]).Avatar, obj8);
+  const items5 = [callback2(closure_5, obj5), , ];
+  obj8 = { user: emoji.user, guildId, size: guildId(onSelectRolesForEmoji[15]).AvatarSizes.XSMALL };
+  items5[1] = callback(guildId(onSelectRolesForEmoji[15]).Avatar, obj8);
   let tmp18 = null;
   if (!flag) {
     const obj9 = { style: tmp.overflowIcon, onPress: callback, hitSlop: 8 };
-    const obj10 = { source: importDefault(dependencyMap[23]), size: arg1(dependencyMap[15]).IconSizes.REFRESH_SMALL_16 };
-    obj9.children = callback2(arg1(dependencyMap[15]).Icon, obj10);
-    tmp18 = callback2(arg1(dependencyMap[22]).PressableOpacity, obj9);
+    const obj10 = { source: emoji(onSelectRolesForEmoji[23]), size: guildId(onSelectRolesForEmoji[15]).IconSizes.REFRESH_SMALL_16 };
+    obj9.children = callback(guildId(onSelectRolesForEmoji[15]).Icon, obj10);
+    tmp18 = callback(guildId(onSelectRolesForEmoji[22]).PressableOpacity, obj9);
   }
   items5[2] = tmp18;
   obj4.children = items5;
-  obj.trailing = callback3(closure_5, obj4);
+  obj.trailing = callback2(closure_5, obj4);
   if (tmp4[0]) {
     if (result) {
       const obj11 = { style: tmp.activeNameContainer };
       const obj12 = {
+        autoCorrect: false,
+        numberOfLines: 1,
+        returnKeyType: "done",
+        autoCapitalize: "none",
+        autoFocus: true,
         onBlur: function handleNameBlur() {
               if (first !== emoji.name) {
                 let obj = guildId(onSelectRolesForEmoji[10]);
@@ -166,8 +174,8 @@ export const EmojiRow = function EmojiRow(guildId) {
         callback(arg0);
       };
       obj12.value = first;
-      obj11.children = callback2(arg1(dependencyMap[15]).TextInput, obj12);
-      let tmp23 = callback2(closure_5, obj11);
+      obj11.children = callback(guildId(onSelectRolesForEmoji[15]).TextInput, obj12);
+      let tmp23 = callback(closure_5, obj11);
     }
     obj.label = tmp23;
     obj.disabled = flag;
@@ -175,10 +183,15 @@ export const EmojiRow = function EmojiRow(guildId) {
     obj.onLongPress = callback2;
     obj.start = start;
     obj.end = end;
-    return callback2(arg1(dependencyMap[16]).TableRow, obj);
+    return callback(guildId(onSelectRolesForEmoji[16]).TableRow, obj);
   }
   obj13 = { style: tmp.nameContainer };
-  const items7 = [callback2(arg1(dependencyMap[14]).Text, { style: tmp.colon }), callback2(arg1(dependencyMap[14]).Text, { style: tmp.emojiText, children: first }), callback2(arg1(dependencyMap[14]).Text, { style: tmp.colon })];
+  const obj14 = { style: tmp.colon, variant: "text-md/medium", color: "text-muted", children: ":" };
+  const items7 = [callback(guildId(onSelectRolesForEmoji[14]).Text, obj14), , ];
+  const obj15 = { lineClamp: 1, style: tmp.emojiText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: first };
+  items7[1] = callback(guildId(onSelectRolesForEmoji[14]).Text, obj15);
+  const obj16 = { style: tmp.colon, variant: "text-md/medium", color: "text-muted", children: ":" };
+  items7[2] = callback(guildId(onSelectRolesForEmoji[14]).Text, obj16);
   obj13.children = items7;
-  tmp23 = callback3(closure_5, obj13);
+  tmp23 = callback2(closure_5, obj13);
 };

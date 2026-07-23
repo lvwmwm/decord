@@ -1,68 +1,76 @@
-// Module ID: 6823
-// Function ID: 53787
+// Module ID: 6828
+// Function ID: 53819
 // Name: getActivityTypeTextConfigs
-// Dependencies: []
+// Dependencies: [6769, 6770, 1212, 2198, 3712, 6771, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 6823 (getActivityTypeTextConfigs)
+// Module 6828 (getActivityTypeTextConfigs)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import items from "items";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function getActivityTypeTextConfigs() {
   return new Map(closure_4);
 }
 function hasActiveParentLinks() {
   const values = Object.values(authStore.getLinkedUsers());
   return values.some((link_status) => {
-    let tmp = link_status.link_status === constants.ACTIVE;
+    let tmp = link_status.link_status === outer1_8.ACTIVE;
     if (tmp) {
-      tmp = link_status.link_type === constants2.PARENT;
+      tmp = link_status.link_type === outer1_9.PARENT;
     }
     return tmp;
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: closure_5, FamilyCenterFailureCode: closure_6, TeenActionDisplayType: closure_7, UserLinkStatus: closure_8, UserLinkType: closure_9 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/parent_tools/FamilyCenterUtils.tsx");
+({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: closure_5, FamilyCenterFailureCode: closure_6, TeenActionDisplayType: closure_7, UserLinkStatus: closure_8, UserLinkType: closure_9 } = items);
+let result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/FamilyCenterUtils.tsx");
 
 export const getEmptyActivityFormatter = function getEmptyActivityFormatter() {
   const obj = {};
-  const intl = arg1(dependencyMap[2]).intl;
-  obj.today = intl.string(importDefault(dependencyMap[3]).VjIAQQ);
-  const intl2 = arg1(dependencyMap[2]).intl;
-  obj.yesterday = intl2.string(importDefault(dependencyMap[3]).2a8xHY);
-  obj.days = importDefault(dependencyMap[3]).Xt6oND;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.today = intl.string(importDefault(2198).VjIAQQ);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.yesterday = intl2.string(importDefault(2198)["2a8xHY"]);
+  obj.days = importDefault(2198).Xt6oND;
   return obj;
 };
 export const getActivityWindowTimestampFormatter = function getActivityWindowTimestampFormatter(arg0) {
   const obj = {};
-  const intl = arg1(dependencyMap[2]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  const tmp4 = importDefault(dependencyMap[3]);
+  const tmp4 = importDefault(2198);
   if (arg0) {
-    obj.today = string(tmp4.2AtcIs);
-    const intl3 = tmp(tmp2[2]).intl;
-    obj.yesterday = intl3.string(tmp3(tmp2[3]).stOECr);
-    obj.days = tmp3(tmp2[3]).n8n5Ba;
+    obj.today = string(tmp4["2AtcIs"]);
+    const intl3 = tmp(1212).intl;
+    obj.yesterday = intl3.string(tmp3(2198).stOECr);
+    obj.days = tmp3(2198).n8n5Ba;
     let tmp5 = obj;
   } else {
     obj.today = string(tmp4.g1ZX6m);
-    const intl2 = tmp(tmp2[2]).intl;
-    obj.yesterday = intl2.string(tmp3(tmp2[3]).s3qSVt);
-    obj.days = tmp3(tmp2[3]).f1UJiC;
+    const intl2 = tmp(1212).intl;
+    obj.yesterday = intl2.string(tmp3(2198).s3qSVt);
+    obj.days = tmp3(2198).f1UJiC;
     tmp5 = obj;
   }
   return tmp5;
 };
 export const formatUserActivityTimestamp = function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
-  let obj = importDefault(dependencyMap[4])();
-  const diffResult = obj.diff(importDefault(dependencyMap[4])(time), "s");
+  let obj = importDefault(3712)();
+  const diffResult = obj.diff(importDefault(3712)(time), "s");
   const tmp2 = timestampFormatter();
-  importDefault(dependencyMap[4])(time).format("LL");
+  importDefault(3712)(time).format("LL");
   if (diffResult < 86400) {
     let yesterday = tmp2.today;
   } else if (diffResult < 172800) {
     yesterday = tmp2.yesterday;
   } else {
-    const intl = timestampFormatter(dependencyMap[2]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = {};
     const _Math = Math;
     let num2 = 999;
@@ -76,20 +84,20 @@ export const formatUserActivityTimestamp = function formatUserActivityTimestamp(
   return yesterday;
 };
 export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
-  let obj = importDefault(dependencyMap[4])();
-  const diffResult = obj.diff(importDefault(dependencyMap[4])(arg0), "s");
+  let obj = importDefault(3712)();
+  const diffResult = obj.diff(importDefault(3712)(arg0), "s");
   const tmp2 = SENT_TIMESTAMP_FORMATTER();
-  importDefault(dependencyMap[4])(arg0);
+  importDefault(3712)(arg0);
   if (diffResult < 60) {
     let yesterday = tmp2.seconds;
   } else if (diffResult < 3600) {
-    const intl4 = SENT_TIMESTAMP_FORMATTER(dependencyMap[2]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
     obj = {};
     const _Math3 = Math;
     obj.count = Math.floor(diffResult / 60);
     yesterday = intl4.formatToPlainString(tmp2.minutes, obj);
   } else if (diffResult < 86400) {
-    const intl3 = SENT_TIMESTAMP_FORMATTER(dependencyMap[2]).intl;
+    const intl3 = require(1212) /* getSystemLocale */.intl;
     obj = {};
     const _Math2 = Math;
     obj.count = Math.floor(diffResult / 3600);
@@ -97,13 +105,13 @@ export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMES
   } else if (diffResult < 172800) {
     yesterday = tmp2.yesterday;
   } else if (diffResult < 604800) {
-    const intl2 = SENT_TIMESTAMP_FORMATTER(dependencyMap[2]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj1 = {};
     const _Math = Math;
     obj1.count = Math.floor(diffResult / 86400);
     yesterday = intl2.formatToPlainString(tmp2.days, obj1);
   } else {
-    const intl = SENT_TIMESTAMP_FORMATTER(dependencyMap[2]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj2 = { date: tmp4 };
     yesterday = intl.formatToPlainString(tmp2.date, obj2);
   }
@@ -143,7 +151,7 @@ export const displayTypeFromString = function displayTypeFromString(arg0) {
   }
 };
 export const getFailureCodeForAPIError = function getFailureCodeForAPIError(arg0) {
-  let GENERIC_ERROR = closure_5[arg0.code];
+  let GENERIC_ERROR = table[arg0.code];
   if (null == GENERIC_ERROR) {
     GENERIC_ERROR = constants.GENERIC_ERROR;
   }
@@ -177,7 +185,7 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
   if (authStore.getAreLinkedUsersProcessed()) {
     return authStore.getLinkedUsers();
   } else {
-    const linkedUsers = importDefault(dependencyMap[5]).fetchLinkedUsers();
+    const linkedUsers = importDefault(6771).fetchLinkedUsers();
   }
 };
 export { hasActiveParentLinks };
@@ -187,20 +195,20 @@ export const isParentallyControlled = function isParentallyControlled() {
 export const getTopUserOrGuildDescription = function getTopUserOrGuildDescription(dms_sent, call_count) {
   if (call_count > 0) {
     if (0 === dms_sent) {
-      const intl3 = call_count(dependencyMap[2]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       let obj = { callCount: call_count };
-      let formatToPlainStringResult = intl3.formatToPlainString(importDefault(dependencyMap[3]).L/Cj7S, obj);
+      let formatToPlainStringResult = intl3.formatToPlainString(importDefault(2198)["L/Cj7S"], obj);
     }
     return formatToPlainStringResult;
   }
   if (dms_sent > 0) {
     if (0 === call_count) {
-      const intl2 = call_count(dependencyMap[2]).intl;
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       obj = { messageCount: dms_sent };
-      formatToPlainStringResult = intl2.formatToPlainString(importDefault(dependencyMap[3]).6X1F0i, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(importDefault(2198)["6X1F0i"], obj);
     }
   }
-  const intl = call_count(dependencyMap[2]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { messageCount: dms_sent, callCount: call_count };
-  formatToPlainStringResult = intl.formatToPlainString(importDefault(dependencyMap[3]).IYqGMG, obj);
+  formatToPlainStringResult = intl.formatToPlainString(importDefault(2198).IYqGMG, obj);
 };

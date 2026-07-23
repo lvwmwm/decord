@@ -1,12 +1,20 @@
-// Module ID: 7883
-// Function ID: 62753
+// Module ID: 7889
+// Function ID: 62790
 // Name: _fetchProfile
-// Dependencies: []
+// Dependencies: [5, 1857, 1849, 653, 654, 3, 507, 686, 4942, 640, 44, 4029, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 7883 (_fetchProfile)
+// Module 7889 (_fetchProfile)
+import timestamp from "timestamp";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import { PSEUDO_GUILD_IDS } from "APP_WITH_INVITE_AND_GUILD_ONBOARDING";
+import importDefaultResult from "ME";
+
+const require = arg1;
 async function _fetchProfile(arg0, arg1) {
-  const fn = function*(userId) {
+  let iter = (function*(userId) {
     let abortSignal;
     let connectionsRoleId;
     let guildId;
@@ -23,17 +31,17 @@ async function _fetchProfile(arg0, arg1) {
     ({ type, withMutualGuilds, connectionsRoleId, joinRequestId, abortSignal } = obj);
     yield undefined;
     const timestamp = Date.now();
-    let obj1 = callback2(closure_2[7]);
+    let obj1 = outer2_1(outer2_2[7]);
     obj = { type: "USER_PROFILE_FETCH_START", userId, guildId, withMutualFriends };
     obj1.dispatch(obj);
     let tmp4;
     if (null != guildId) {
-      if (!closure_7.includes(guildId)) {
+      if (!outer2_7.includes(guildId)) {
         tmp4 = guildId;
       }
     }
-    const HTTP = callback(closure_2[6]).HTTP;
-    obj = { url: closure_6.USER_PROFILE(userId) };
+    const HTTP = outer2_0(outer2_2[6]).HTTP;
+    obj = { url: outer2_6.USER_PROFILE(userId) };
     obj1 = { type, with_mutual_guilds: withMutualGuilds, with_mutual_friends: withMutualFriends };
     let tmp7 = withMutualFriendsCount;
     if (withMutualFriendsCount) {
@@ -54,64 +62,58 @@ async function _fetchProfile(arg0, arg1) {
     if (null != arg2) {
       arg2(tmp12.body, guildId);
     }
-    callback2(closure_2[7]).dispatch({ type: "USER_UPDATE", user: tmp11.body.user });
+    outer2_1(outer2_2[7]).dispatch({ type: "USER_UPDATE", user: tmp11.body.user });
     const obj2 = { type: "USER_UPDATE", user: tmp11.body.user };
-    const obj6 = callback2(closure_2[7]);
-    callback2(closure_2[7]).dispatch({ type: "USER_PROFILE_FETCH_SUCCESS", userProfile: tmp11.body, fetchStartedAt: timestamp, guildId });
+    const obj6 = outer2_1(outer2_2[7]);
+    outer2_1(outer2_2[7]).dispatch({ type: "USER_PROFILE_FETCH_SUCCESS", userProfile: tmp11.body, fetchStartedAt: timestamp, guildId });
     let tmp20 = tmp19;
     if (null != guildId) {
       tmp20 = null != tmp12.body.guild_member;
     }
     if (tmp20) {
       const obj4 = { type: "GUILD_MEMBER_PROFILE_UPDATE", guildId, guildMember: tmp11.body.guild_member };
-      callback2(closure_2[7]).dispatch(obj4);
-      const obj10 = callback2(closure_2[7]);
+      outer2_1(outer2_2[7]).dispatch(obj4);
+      const obj10 = outer2_1(outer2_2[7]);
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-async function _fetchMutualFriends(userId, signal, arg2) {
-  let obj = callback2(closure_2[7]);
-  obj = { type: "MUTUAL_FRIENDS_FETCH_START", userId };
+async function _fetchMutualFriends(arg0, arg1, arg2) {
+  let obj = outer2_1(outer2_2[7]);
+  obj = { type: "MUTUAL_FRIENDS_FETCH_START", userId: arg0 };
   obj.dispatch(obj);
-  const HTTP = callback(closure_2[6]).HTTP;
-  obj = { url: closure_6.USER_RELATIONSHIPS(userId), oldFormErrors: true, signal, rejectWithError: callback(closure_2[6]).rejectWithMigratedError() };
-  const obj4 = callback(closure_2[6]);
-  const tmp = userId;
+  const HTTP = outer2_0(outer2_2[6]).HTTP;
+  obj = { url: outer2_6.USER_RELATIONSHIPS(arg0), oldFormErrors: true, signal: arg1, rejectWithError: outer2_0(outer2_2[6]).rejectWithMigratedError() };
+  const obj4 = outer2_0(outer2_2[6]);
+  const tmp = arg0;
   const tmp3 = yield HTTP.get(obj);
-  callback2(closure_2[7]).dispatch({ type: "MUTUAL_FRIENDS_FETCH_SUCCESS", userId: tmp, mutualFriends: tmp3.body });
+  outer2_1(outer2_2[7]).dispatch({ type: "MUTUAL_FRIENDS_FETCH_SUCCESS", userId: tmp, mutualFriends: tmp3.body });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const PSEUDO_GUILD_IDS = arg1(dependencyMap[4]).PSEUDO_GUILD_IDS;
-let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult("UserProfileModalActionCreators");
-const result = arg1(dependencyMap[12]).fileFinishedImporting("actions/UserActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/UserActionCreators.tsx");
 
 export const fetchCurrentUser = function fetchCurrentUser() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  let arg1;
+  let _require;
   const withAnalyticsToken = obj.withAnalyticsToken;
-  arg1 = tmp;
-  const HTTP = arg1(dependencyMap[6]).HTTP;
-  obj = { url: Endpoints.ME, query: { with_analytics_token: tmp }, oldFormErrors: true, rejectWithError: arg1(dependencyMap[6]).rejectWithMigratedError() };
+  _require = tmp;
+  const HTTP = _require(507).HTTP;
+  obj = { url: Endpoints.ME, query: { with_analytics_token: tmp }, oldFormErrors: true, rejectWithError: _require(507).rejectWithMigratedError() };
   const value = HTTP.get(obj);
   return value.then((body) => {
     let analytics_token;
-    let obj = callback(closure_2[7]);
+    let obj = outer1_1(outer1_2[7]);
     obj = { type: "CURRENT_USER_UPDATE", user: body.body };
-    if (tmp) {
+    if (c0) {
       analytics_token = body.body.analytics_token;
     }
     obj.analyticsToken = analytics_token;
     obj.dispatch(obj);
-    return new closure_4(body.body);
+    return new outer1_4(body.body);
   });
 };
 export const acceptAgreements = function acceptAgreements() {
@@ -123,52 +125,52 @@ export const acceptAgreements = function acceptAgreements() {
   if (flag2 === undefined) {
     flag2 = true;
   }
-  let obj = importDefault(dependencyMap[8]);
+  let obj = importDefault(4942);
   obj = { url: Endpoints.USER_AGREEMENTS };
-  obj = { event: arg1(dependencyMap[9]).NetworkActionNames.USER_ACCEPT_AGREEMENTS };
+  obj = { event: require(640) /* ImpressionNames */.NetworkActionNames.USER_ACCEPT_AGREEMENTS };
   obj.trackedActionData = obj;
   const obj1 = { terms: flag, privacy: flag2 };
   obj.body = obj1;
   obj.oldFormErrors = true;
-  obj.rejectWithError = arg1(dependencyMap[6]).rejectWithMigratedError();
-  const obj5 = arg1(dependencyMap[6]);
+  obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
+  const obj5 = require(507) /* _isNativeReflectConstruct */;
   return obj.patch(obj).then(() => true, () => false);
 };
 export const setFlag = function setFlag(arg0, arg1) {
   const currentUser = authStore.getCurrentUser();
-  importDefault(dependencyMap[10])(null != currentUser, "setFlag: user cannot be undefined");
+  importDefault(44)(null != currentUser, "setFlag: user cannot be undefined");
   const flags = currentUser.flags;
   if (arg1) {
     let tmp3 = flags | arg0;
   } else {
     tmp3 = flags & ~arg0;
   }
-  const HTTP = arg1(dependencyMap[6]).HTTP;
-  let obj = { url: Endpoints.ME, oldFormErrors: true, body: obj };
-  obj = { flags: tmp3, rejectWithError: arg1(dependencyMap[6]).rejectWithMigratedError() };
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  obj = { url: Endpoints.ME, oldFormErrors: true, body: obj };
+  obj = { flags: tmp3, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
   return HTTP.patch(obj);
 };
 export const getUser = function getUser(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const user = authStore.getUser(arg0);
   if (null != user) {
     let resolved = Promise.resolve(user);
   } else {
-    const HTTP = arg1(dependencyMap[6]).HTTP;
-    const obj = { url: Endpoints.USER(arg0), oldFormErrors: true, rejectWithError: arg1(dependencyMap[6]).rejectWithMigratedError() };
+    const HTTP = _require(507).HTTP;
+    let obj = { url: Endpoints.USER(arg0), oldFormErrors: true, rejectWithError: _require(507).rejectWithMigratedError() };
     const value = HTTP.get(obj);
     resolved = value.then((body) => {
-      let obj = callback(closure_2[7]);
+      let obj = outer1_1(outer1_2[7]);
       obj = { type: "USER_UPDATE", user: body.body };
       obj.dispatch(obj);
-      return user.getUser(body);
+      return outer1_5.getUser(closure_0);
     });
-    const obj2 = arg1(dependencyMap[6]);
+    const obj2 = _require(507);
   }
   return resolved;
 };
 export const insertStaticUser = function insertStaticUser(id) {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(686);
   obj = { type: "USER_UPDATE", user: id };
   obj.dispatch(obj);
   return authStore.getUser(id.id);

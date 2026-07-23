@@ -1,31 +1,35 @@
-// Module ID: 11201
-// Function ID: 87243
-// Dependencies: []
+// Module ID: 11211
+// Function ID: 87293
+// Dependencies: [31, 27, 1857, 653, 33, 4130, 10884, 11203, 10614, 5085, 7887, 8260, 1392, 7812, 2]
 
-// Module 11201
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-({ BANNER_HEIGHT: closure_6, EMPTY_STRING_SNOWFLAKE_ID: closure_7 } = arg1(dependencyMap[3]));
-const jsx = arg1(dependencyMap[4]).jsx;
-const tmp2 = arg1(dependencyMap[3]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ imageContainer: {}, image: {} });
+// Module 11211
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ BANNER_HEIGHT: closure_6, EMPTY_STRING_SNOWFLAKE_ID: closure_7 } = ME);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ imageContainer: { width: "100%", height: "100%" }, image: { width: "100%", height: "100%" } });
 let closure_10 = importAllResult.memo((applicationId) => {
   let imageSource;
   let imageStyle;
-  let obj = arg1(dependencyMap[6]);
-  let obj1 = arg1(dependencyMap[7]);
-  const heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
-  const arg1 = heroMediaDimensions;
-  obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["ETHERNET"] };
-  const tmp2 = importDefault(dependencyMap[8])(obj);
-  const importDefault = tmp2;
-  const items = [heroMediaDimensions, tmp2];
+  let obj = heroMediaDimensions(10884);
+  let obj1 = heroMediaDimensions(11203);
+  heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
+  obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
+  const tmp2 = importDefault(10614)(obj);
+  importDefault = tmp2;
+  let items = [heroMediaDimensions, tmp2];
   const memo = importAllResult.useMemo(() => {
-    let obj = { imageStyle: obj };
+    obj = { imageStyle: obj };
     obj = { backgroundColor: "black", height: heroMediaDimensions.height, width: heroMediaDimensions.width, transform: items };
-    obj = { translateY: (closure_6 - heroMediaDimensions.height) / 2 };
-    const items = [obj];
+    obj = { translateY: (outer1_6 - heroMediaDimensions.height) / 2 };
+    items = [obj];
     let tmp;
     if (null != tmp2.url) {
       const obj1 = { uri: tmp2.url };
@@ -37,10 +41,10 @@ let closure_10 = importAllResult.memo((applicationId) => {
   ({ imageStyle, imageSource } = memo);
   if (null != imageSource) {
     obj = { style: imageStyle, source: imageSource, resizeMode: "cover" };
-    let tmp6 = jsx(importDefault(dependencyMap[9]), obj);
+    let tmp6 = jsx(importDefault(5085), { style: imageStyle, source: imageSource, resizeMode: "cover" });
   } else {
     obj1 = { style: imageStyle };
-    tmp6 = <View {...obj1} />;
+    tmp6 = <View style={imageStyle} />;
   }
   return tmp6;
 });
@@ -53,14 +57,13 @@ let closure_11 = importAllResult.memo((applicationBot) => {
   if (null == id) {
     id = closure_7;
   }
-  const tmp = importDefault(dependencyMap[10]);
-  const obj = { displayProfile: importDefault(dependencyMap[10])(id) };
-  const tmpResult = importDefault(dependencyMap[10])(id);
-  const tmp4 = importDefault(dependencyMap[11]);
-  obj.user = new closure_5(applicationBot);
-  return <tmp4 {...obj} />;
+  const tmp = importDefault(7887);
+  const obj = { displayProfile: importDefault(7887)(id) };
+  const tmpResult = importDefault(7887)(id);
+  const tmp4 = importDefault(8260);
+  obj.user = new _isNativeReflectConstruct(applicationBot);
+  return <tmp4 displayProfile={importDefault(7887)(id)} />;
 });
-const obj2 = arg1(dependencyMap[5]);
 const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   let applicationBot;
   let applicationEmbedded;
@@ -70,9 +73,9 @@ const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   ({ applicationId, applicationBot, overrideImageUrl } = arg0);
   ({ applicationEmbedded, applicationIcon } = arg0);
   const tmp = callback();
-  let obj = importDefault(dependencyMap[12]);
+  let obj = importDefault(1392);
   const applicationIconSource = obj.getApplicationIconSource({ id: applicationId, icon: applicationIcon, bot: applicationBot, botIconFirst: true });
-  importDefault(dependencyMap[13]);
+  importDefault(7812);
   if ("number" !== typeof applicationIconSource) {
     let uri;
     if (null != applicationIconSource) {
@@ -85,22 +88,22 @@ const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
     const obj1 = { uri: overrideImageUrl };
     obj.source = obj1;
     obj.resizeMode = "cover";
-    obj.children = jsx(importDefault(dependencyMap[9]), obj);
-    let tmp10 = <View {...obj} />;
+    obj.children = jsx(importDefault(5085), { style: tmp.image });
+    let tmp10 = <View style={tmp.image} />;
   } else if (applicationEmbedded) {
     const obj2 = { applicationId };
-    tmp10 = <closure_10 {...obj2} />;
+    tmp10 = <closure_10 applicationId={applicationId} />;
   } else if (null != applicationBot) {
     const obj3 = { applicationBot };
-    tmp10 = <closure_11 {...obj3} />;
+    tmp10 = <closure_11 applicationBot={applicationBot} />;
   } else {
     const obj4 = {};
     const obj5 = { backgroundColor: tmp7 };
     obj4.style = obj5;
-    tmp10 = <View {...obj4} />;
+    tmp10 = <View />;
   }
   return tmp10;
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/app_launcher/native/screens/home/recommendations/RecommendationsBanner.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/screens/home/recommendations/RecommendationsBanner.tsx");
 
 export default memoResult;

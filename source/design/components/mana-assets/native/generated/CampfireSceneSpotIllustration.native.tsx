@@ -1,13 +1,13 @@
-// Module ID: 5923
-// Function ID: 49817
+// Module ID: 5928
+// Function ID: 49846
 // Name: CampfireSceneSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 5929, 2]
 // Exports: CampfireSceneSpotIllustration
 
-// Module 5923 (CampfireSceneSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CampfireSceneSpotIllustration.native.tsx");
+// Module 5928 (CampfireSceneSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CampfireSceneSpotIllustration.native.tsx");
 
 export const CampfireSceneSpotIllustration = function CampfireSceneSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const CampfireSceneSpotIllustration = function CampfireSceneSpotIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5929) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const CampfireSceneSpotIllustration = function CampfireSceneSpotIllustrat
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

@@ -1,13 +1,12 @@
-// Module ID: 9643
-// Function ID: 75104
+// Module ID: 9650
+// Function ID: 75145
 // Name: showUploadPreviewActionSheet
-// Dependencies: []
+// Dependencies: [4098, 9651, 1934, 2]
 // Exports: default
 
-// Module 9643 (showUploadPreviewActionSheet)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/media_uploads/native/showUploadPreviewActionSheet.tsx");
+// Module 9650 (showUploadPreviewActionSheet)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/media_uploads/native/showUploadPreviewActionSheet.tsx");
 
 export default function showUploadPreviewActionSheet(arg0) {
-  importDefault(dependencyMap[0]).openLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), "UploadPreviewActionSheet", arg0);
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(9651, dependencyMap.paths), "UploadPreviewActionSheet", arg0);
 };

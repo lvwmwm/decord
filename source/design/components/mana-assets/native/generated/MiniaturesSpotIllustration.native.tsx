@@ -1,13 +1,13 @@
-// Module ID: 6293
-// Function ID: 50372
+// Module ID: 6298
+// Function ID: 50401
 // Name: MiniaturesSpotIllustration
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 6299, 2]
 // Exports: MiniaturesSpotIllustration
 
-// Module 6293 (MiniaturesSpotIllustration)
-import { jsx } from "__exportStarResult1";
+// Module 6298 (MiniaturesSpotIllustration)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MiniaturesSpotIllustration.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MiniaturesSpotIllustration.native.tsx");
 
 export const MiniaturesSpotIllustration = function MiniaturesSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const MiniaturesSpotIllustration = function MiniaturesSpotIllustration(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6299) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const MiniaturesSpotIllustration = function MiniaturesSpotIllustration(wi
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

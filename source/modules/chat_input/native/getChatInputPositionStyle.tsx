@@ -1,15 +1,14 @@
-// Module ID: 11356
-// Function ID: 88331
+// Module ID: 11366
+// Function ID: 88381
 // Name: getChatInputPositionStyle
-// Dependencies: []
+// Dependencies: [27, 477, 2]
 // Exports: default
 
-// Module 11356 (getChatInputPositionStyle)
-const obj = {};
-const merged = Object.assign(require(dependencyMap[0]).StyleSheet.absoluteFillObject);
+// Module 11366 (getChatInputPositionStyle)
+let obj = {};
+const merged = Object.assign(require("get ActivityIndicator").StyleSheet.absoluteFillObject);
 obj["top"] = undefined;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/chat_input/native/getChatInputPositionStyle.tsx");
+const result = require("set").fileFinishedImporting("modules/chat_input/native/getChatInputPositionStyle.tsx");
 
 export default function getChatInputPositionStyle() {
   let tmp = arg0;
@@ -22,7 +21,7 @@ export default function getChatInputPositionStyle() {
     if (obj2.isIOS()) {
       tmp2 = obj;
     }
-    const obj2 = require(dependencyMap[1]);
+    obj2 = require(477) /* set */;
   }
   return tmp2;
 };

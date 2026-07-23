@@ -1,21 +1,20 @@
-// Module ID: 10508
-// Function ID: 82059
+// Module ID: 10518
+// Function ID: 82109
 // Name: isActivitySupportedOnClientPlatform
-// Dependencies: []
+// Dependencies: [477, 1881, 2]
 // Exports: default
 
-// Module 10508 (isActivitySupportedOnClientPlatform)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/activities/utils/isActivitySupportedOnClientPlatform.tsx");
+// Module 10518 (isActivitySupportedOnClientPlatform)
+const result = require("set").fileFinishedImporting("modules/activities/utils/isActivitySupportedOnClientPlatform.tsx");
 
 export default function isActivitySupportedOnClientPlatform(arr) {
   if (obj.isIOS()) {
-    let IOS = tmp(tmp2[1]).EmbeddedActivitySupportedPlatforms.IOS;
+    let IOS = tmp(1881).EmbeddedActivitySupportedPlatforms.IOS;
   } else {
-    const tmpResult = tmp(tmp2[0]);
-    const EmbeddedActivitySupportedPlatforms = require(dependencyMap[1]).EmbeddedActivitySupportedPlatforms;
-    IOS = tmp(tmp2[0]).isAndroid() ? EmbeddedActivitySupportedPlatforms.ANDROID : EmbeddedActivitySupportedPlatforms.WEB;
-    const isAndroidResult = tmp(tmp2[0]).isAndroid();
+    const tmpResult = tmp(477);
+    const EmbeddedActivitySupportedPlatforms = require(1881) /* PermissionOverwriteType */.EmbeddedActivitySupportedPlatforms;
+    IOS = tmp(477).isAndroid() ? EmbeddedActivitySupportedPlatforms.ANDROID : EmbeddedActivitySupportedPlatforms.WEB;
+    const isAndroidResult = tmp(477).isAndroid();
   }
   let hasItem;
   if (null != arr) {

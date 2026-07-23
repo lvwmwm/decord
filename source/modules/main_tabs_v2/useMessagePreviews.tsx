@@ -1,17 +1,21 @@
-// Module ID: 14092
-// Function ID: 106964
+// Module ID: 14206
+// Function ID: 109120
 // Name: useMessagePreviewSetting
-// Dependencies: []
+// Dependencies: [1316, 4142, 3803, 566, 9136, 3808, 14207, 2]
 // Exports: default
 
-// Module 14092 (useMessagePreviewSetting)
+// Module 14206 (useMessagePreviewSetting)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function useMessagePreviewSetting(guild_id) {
-  const arg1 = guild_id;
-  const items = [closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const guilds = settings.settings.guilds;
+  const _require = guild_id;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
+    const guilds = outer1_3.settings.guilds;
     let tmp2 = null;
-    if (null != arg0) {
+    if (null != guild_id) {
       let messagePreviews;
       if (null != guilds) {
         if (null != guilds.guilds[tmp]) {
@@ -24,42 +28,40 @@ function useMessagePreviewSetting(guild_id) {
       tmp2 = messagePreviews;
     }
     if (null != tmp2) {
-      const ValidMessagePreviewTypes = arg0(closure_2[2]).ValidMessagePreviewTypes;
+      const ValidMessagePreviewTypes = guild_id(outer1_2[2]).ValidMessagePreviewTypes;
       if (ValidMessagePreviewTypes.has(tmp2.value)) {
         let setting = tmp2.value;
       }
       return setting;
     }
-    const MessagePreviewSetting = arg0(closure_2[2]).MessagePreviewSetting;
+    const MessagePreviewSetting = guild_id(outer1_2[2]).MessagePreviewSetting;
     setting = MessagePreviewSetting.getSetting();
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/main_tabs_v2/useMessagePreviews.tsx");
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/main_tabs_v2/useMessagePreviews.tsx");
 
 export default function useMessagePreview(guild_id) {
   let disabled;
   let unread;
-  const arg1 = guild_id;
+  const _require = guild_id;
   ({ unread, disabled } = arg1);
   const tmp = useMessagePreviewSetting(guild_id.guild_id);
   const items = [closure_4];
-  let stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    let hasUnreadResult = null != arg0;
+  let stateFromStores = _require(566).useStateFromStores(items, () => {
+    let hasUnreadResult = null != guild_id;
     if (hasUnreadResult) {
-      hasUnreadResult = closure_4.hasUnread(arg0.id);
+      hasUnreadResult = outer1_4.hasUnread(guild_id.id);
     }
     return hasUnreadResult;
   });
   if (!disabled) {
-    disabled = importDefault(dependencyMap[4])(guild_id);
+    disabled = importDefault(9136)(guild_id);
   }
   if (!disabled) {
-    disabled = tmp === arg1(dependencyMap[5]).MessagePreviewTypes.NONE;
+    disabled = tmp === _require(3808).MessagePreviewTypes.NONE;
   }
   if (!disabled) {
-    let tmp7 = tmp === arg1(dependencyMap[5]).MessagePreviewTypes.UNREADS;
+    let tmp7 = tmp === _require(3808).MessagePreviewTypes.UNREADS;
     if (tmp7) {
       if (null != unread) {
         stateFromStores = unread;
@@ -68,6 +70,6 @@ export default function useMessagePreview(guild_id) {
     }
     disabled = tmp7;
   }
-  return importDefault(dependencyMap[6])(guild_id, disabled);
+  return importDefault(14207)(guild_id, disabled);
 };
 export { useMessagePreviewSetting };

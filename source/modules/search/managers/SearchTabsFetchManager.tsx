@@ -1,9 +1,22 @@
-// Module ID: 10078
-// Function ID: 78033
+// Module ID: 10086
+// Function ID: 78073
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 9103, 653, 10087, 10088, 2]
 
-// Module 10078 (_isNativeReflectConstruct)
+// Module 10086 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import closure_4 from "SearchAutocompleteSelectAnalyticsActions";
+import ME from "ME";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import { SearchTypes } from "ME";
+
+let closure_10;
+let closure_11;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,28 +26,21 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = [null, null];
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ SEARCH_FILTERS_BY_TAB: closure_9, SEARCH_QUERY_BY_SEARCH_FILTER: closure_10, SEARCH_QUERY_DEFAULT_FILTERS: closure_11 } = arg1(dependencyMap[6]));
-const SearchTypes = arg1(dependencyMap[7]).SearchTypes;
-let tmp3 = (AbstractSearchFetchManager) => {
+let closure_2 = ["include_nsfw", "channel_id"];
+({ SEARCH_FILTERS_BY_TAB: closure_9, SEARCH_QUERY_BY_SEARCH_FILTER: closure_10, SEARCH_QUERY_DEFAULT_FILTERS: closure_11 } = SearchAutocompleteSelectAnalyticsActions);
+let tmp3 = ((AbstractSearchFetchManager) => {
   class SearchTabsFetchManager {
     constructor() {
       self = this;
-      tmp = closure_4(this, SearchTabsFetchManager);
-      obj = closure_7(SearchTabsFetchManager);
-      tmp2 = closure_6;
-      if (closure_13()) {
+      tmp = outer1_4(this, SearchTabsFetchManager);
+      obj = outer1_7(SearchTabsFetchManager);
+      tmp2 = outer1_6;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -43,27 +49,28 @@ let tmp3 = (AbstractSearchFetchManager) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SearchTabsFetchManager;
   callback2(SearchTabsFetchManager, AbstractSearchFetchManager);
   let obj = {
     key: "createRequestPayload",
     value(trackExactTotalHits) {
+      let SearchTabsFetchManager;
       let channel_id;
+      let closure_1;
       let include_nsfw;
       let searchQuery;
       let searchTabs;
-      ({ searchQuery, searchTabs, getLimit: closure_0, pagination: closure_1 } = trackExactTotalHits);
+      ({ searchQuery, searchTabs, getLimit: SearchTabsFetchManager, pagination: closure_1 } = trackExactTotalHits);
       ({ include_nsfw, channel_id } = searchQuery);
-      closure_2 = obj(searchQuery, closure_2);
-      const obj = { include_nsfw, channel_ids: channel_id, tabs: {}, track_exact_total_hits: trackExactTotalHits.trackExactTotalHits };
+      let closure_2 = outer1_3(searchQuery, outer1_2);
+      let obj = { include_nsfw, channel_ids: channel_id, tabs: {}, track_exact_total_hits: trackExactTotalHits.trackExactTotalHits };
       const item = searchTabs.forEach((arg0) => {
-        if (null != closure_9[arg0]) {
-          let obj = closure_10[tmp2];
+        if (null != outer2_9[arg0]) {
+          let obj = outer2_10[tmp2];
         } else {
           obj = {};
         }
         obj = {};
-        const merged = Object.assign(closure_11);
+        const merged = Object.assign(outer2_11);
         const merged1 = Object.assign(obj);
         const merged2 = Object.assign(closure_2);
         const merged3 = Object.assign(closure_1);
@@ -82,16 +89,16 @@ let tmp3 = (AbstractSearchFetchManager) => {
       ({ searchContext, searchQuery } = searchTabs);
       const requestPayload = this.createRequestPayload({ searchQuery, searchTabs: searchTabs.searchTabs, getLimit: searchTabs.getLimit, pagination: searchTabs.pagination, trackExactTotalHits: searchTabs.trackExactTotalHits });
       const type = searchContext.type;
-      if (constants.GUILD !== type) {
-        if (constants.GUILD_CHANNEL !== type) {
-          if (constants.THREAD !== type) {
-            if (constants.CHANNEL === type) {
-              const SearchTabFetcherImpl2 = SearchTabsFetchManager(closure_1[8]).SearchTabFetcherImpl;
+      if (outer1_12.GUILD !== type) {
+        if (outer1_12.GUILD_CHANNEL !== type) {
+          if (outer1_12.THREAD !== type) {
+            if (outer1_12.CHANNEL === type) {
+              const SearchTabFetcherImpl2 = SearchTabsFetchManager(outer1_1[8]).SearchTabFetcherImpl;
               const prototype3 = SearchTabFetcherImpl2.prototype;
               const searchTabFetcherImpl2 = new SearchTabFetcherImpl2(searchContext.channelId, searchContext.type, searchQuery, requestPayload);
               return searchTabFetcherImpl2;
-            } else if (constants.DMS === type) {
-              const SearchTabFetcherImpl = SearchTabsFetchManager(closure_1[8]).SearchTabFetcherImpl;
+            } else if (outer1_12.DMS === type) {
+              const SearchTabFetcherImpl = SearchTabsFetchManager(outer1_1[8]).SearchTabFetcherImpl;
               const prototype2 = SearchTabFetcherImpl.prototype;
               const searchTabFetcherImpl = new SearchTabFetcherImpl(searchContext.type, searchContext.type, searchQuery, requestPayload);
               return searchTabFetcherImpl;
@@ -104,7 +111,7 @@ let tmp3 = (AbstractSearchFetchManager) => {
           }
         }
       }
-      const searchTabFetcherImpl1 = new SearchTabsFetchManager(closure_1[8]).SearchTabFetcherImpl(searchContext.guildId, searchContext.type, searchQuery, requestPayload);
+      const searchTabFetcherImpl1 = new SearchTabsFetchManager(outer1_1[8]).SearchTabFetcherImpl(searchContext.guildId, searchContext.type, searchQuery, requestPayload);
       return searchTabFetcherImpl1;
     }
   };
@@ -128,9 +135,8 @@ let tmp3 = (AbstractSearchFetchManager) => {
   };
   items[2] = obj;
   return callback(SearchTabsFetchManager, items);
-}(arg1(dependencyMap[9]).AbstractSearchFetchManager);
+})(require("AbstractSearchFetchManager").AbstractSearchFetchManager);
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/search/managers/SearchTabsFetchManager.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/search/managers/SearchTabsFetchManager.tsx");
 
 export default tmp3;

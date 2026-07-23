@@ -1,14 +1,15 @@
-// Module ID: 12221
-// Function ID: 93815
+// Module ID: 12335
+// Function ID: 95966
 // Name: InAppReportsUpsellsTableRow
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [31, 33, 5165, 2]
 // Exports: default
 
-// Module 12221 (InAppReportsUpsellsTableRow)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 12335 (InAppReportsUpsellsTableRow)
+import "result";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUpsellsTableRow.tsx");
+const require = arg1;
+const result = require("TableRowInner").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUpsellsTableRow.tsx");
 
 export default function InAppReportsUpsellsTableRow(disabled) {
   let disabledTitle;
@@ -40,5 +41,5 @@ export default function InAppReportsUpsellsTableRow(disabled) {
   obj.icon = icon;
   obj.disabled = disabled;
   obj.variant = variant;
-  return jsx(arg1(dependencyMap[2]).TableRow, obj);
+  return jsx(require(5165) /* TableRowInner */.TableRow, {});
 };

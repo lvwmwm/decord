@@ -1,10 +1,9 @@
-// Module ID: 11475
-// Function ID: 89388
+// Module ID: 11485
+// Function ID: 89438
 // Name: QUARANTINE_APPEAL_LINK
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 11475 (QUARANTINE_APPEAL_LINK)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/quarantine/QuarantineConstants.tsx");
+// Module 11485 (QUARANTINE_APPEAL_LINK)
+const result = require("set").fileFinishedImporting("modules/quarantine/QuarantineConstants.tsx");
 
 export const QUARANTINE_APPEAL_LINK = "https://dis.gd/appeal";

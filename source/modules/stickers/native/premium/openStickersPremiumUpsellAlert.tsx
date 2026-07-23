@@ -1,22 +1,25 @@
-// Module ID: 9616
-// Function ID: 74914
+// Module ID: 9623
+// Function ID: 74955
 // Name: _openStickersPremiumUpsellAlert
-// Dependencies: []
+// Dependencies: [5, 31, 653, 33, 675, 5638, 4451, 4471, 9624, 1934, 2]
 // Exports: default
 
-// Module 9616 (_openStickersPremiumUpsellAlert)
+// Module 9623 (_openStickersPremiumUpsellAlert)
+import fetchSubscriptionPlansForSKU from "fetchSubscriptionPlansForSKU";
+import "result";
+import ME from "ME";
+import { jsx } from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function _openStickersPremiumUpsellAlert() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _openStickersPremiumUpsellAlert = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-({ AnalyticEvents: closure_4, AnalyticsSections: closure_5 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/stickers/native/premium/openStickersPremiumUpsellAlert.tsx");
+({ AnalyticEvents: closure_4, AnalyticsSections: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/stickers/native/premium/openStickersPremiumUpsellAlert.tsx");
 
 export default function openStickersPremiumUpsellAlert() {
   return _openStickersPremiumUpsellAlert(...arguments);

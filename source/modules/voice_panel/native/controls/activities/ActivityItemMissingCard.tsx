@@ -1,45 +1,45 @@
-// Module ID: 15711
-// Function ID: 120074
+// Module ID: 15828
+// Function ID: 122247
 // Name: ActivityItemEmptyCard
-// Dependencies: []
+// Dependencies: [5, 31, 27, 33, 4130, 689, 10014, 5464, 10519, 10614, 4660, 15829, 15830, 5517, 2]
 
-// Module 15711 (ActivityItemEmptyCard)
+// Module 15828 (ActivityItemEmptyCard)
+import closure_3 from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+import { ActivityIndicator } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function ActivityItemEmptyCard(activity) {
   activity = activity.activity;
-  const arg1 = activity;
   const application = activity.application;
-  const importDefault = application;
-  const context = importAllResult.useContext(importDefault(dependencyMap[6]));
-  const channelId = context.channelId;
-  const dependencyMap = channelId;
+  const context = importAllResult.useContext(application(channelId[6]));
+  channelId = context.channelId;
   const layoutManager = context.layoutManager;
   const size = layoutManager.getTargetDimensions(undefined);
   const width = size.width;
-  const analyticsLocations = importDefault(dependencyMap[7])().analyticsLocations;
-  let callback = analyticsLocations;
+  const analyticsLocations = application(channelId[7])().analyticsLocations;
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [activity.launchId, analyticsLocations, application, channelId];
-  callback = importAllResult.useCallback(callback(tmp), items);
-  let obj = { applicationId: activity.applicationId, size: width, names: [240518194] };
-  const tmp2 = callback4();
+  const callback = importAllResult.useCallback(analyticsLocations(tmp), items);
+  let obj = { applicationId: activity.applicationId, size: width, names: ["embedded_background"] };
+  const tmp2 = callback3();
   obj = { activeOpacity: 0.7, onPress: callback, style: tmp2.disabledActivity };
-  obj = { imageBackground: importDefault(dependencyMap[9])(obj), aspectRatio: width / size.height };
-  const items1 = [callback2(importDefault(dependencyMap[11]), obj), callback2(importDefault(dependencyMap[12]), { channelId, applicationId: application.id, applicationName: application.name })];
+  obj = { imageBackground: application(channelId[9])(obj), aspectRatio: width / size.height };
+  const items1 = [callback(application(channelId[11]), obj), callback(application(channelId[12]), { channelId, applicationId: application.id, applicationName: application.name })];
   obj.children = items1;
-  return callback3(arg1(dependencyMap[10]).PressableOpacity, obj);
+  return callback2(activity(channelId[10]).PressableOpacity, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const ActivityIndicator = arg1(dependencyMap[2]).ActivityIndicator;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj1 = arg1(dependencyMap[4]);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
+obj = { width: "100%", height: "100%", alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
 obj.loadingActivity = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.disabledActivity = obj1;
-let closure_8 = obj1.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
+_createForOfIteratorHelperLoose = { width: "100%", height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+obj.disabledActivity = _createForOfIteratorHelperLoose;
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function ActivityItemMissingCard(arg0) {
   let activity;
   let application;
@@ -47,15 +47,15 @@ const memoResult = importAllResult.memo(function ActivityItemMissingCard(arg0) {
   if (null != activity) {
     if (null != application) {
       let obj = { activity, application };
-      let tmp4 = callback2(ActivityItemEmptyCard, obj);
+      let tmp4 = callback(ActivityItemEmptyCard, obj);
     }
     return tmp4;
   }
-  obj = { style: callback4().loadingActivity };
-  const tmp = callback4();
-  obj.children = callback2(ActivityIndicator, { size: "large" });
-  tmp4 = callback2(importDefault(dependencyMap[13]), obj);
+  obj = { style: callback3().loadingActivity };
+  const tmp = callback3();
+  obj.children = callback(ActivityIndicator, { size: "large" });
+  tmp4 = callback(importDefault(5517), obj);
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityItemMissingCard.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityItemMissingCard.tsx");
 
 export default memoResult;

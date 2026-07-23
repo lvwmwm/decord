@@ -1,61 +1,70 @@
-// Module ID: 12570
-// Function ID: 96713
+// Module ID: 12684
+// Function ID: 98869
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5599, 1838, 653, 566, 686, 2]
 
-// Module 12570 (_isNativeReflectConstruct)
+// Module 12684 (_isNativeReflectConstruct)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import { GuildFeatures } from "ME";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _createForOfIteratorHelperLoose = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _createForOfIteratorHelperLoose;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let _createForOfIteratorHelperLoose = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _createForOfIteratorHelperLoose = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (ME >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        ME = tmp3 + 1;
+        obj.value = length[+ME];
       }
       return obj;
     };
@@ -93,14 +102,14 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function checkGuildIsHub(id) {
-  const guild = guild.getGuild(id);
+  guild = guild.getGuild(id);
   let tmp2 = null != guild;
   if (tmp2) {
     const features = guild.features;
     const tmp4 = !features.has(GuildFeatures.HUB);
     let flag = !tmp4;
     if (!tmp4) {
-      let closure_8 = true;
+      let c8 = true;
       flag = true;
     }
     tmp2 = flag;
@@ -110,28 +119,20 @@ function checkGuildIsHub(id) {
 function handleHotspotUpdates() {
   return true;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
-const GuildFeatures = arg1(dependencyMap[7]).GuildFeatures;
-let closure_8 = false;
-let tmp2 = (Store) => {
+let c8 = false;
+let tmp2 = ((Store) => {
   class HubLinkNoticeStore {
     constructor() {
       self = this;
       tmp = HubLinkNoticeStore(this, HubLinkNoticeStore);
-      obj = closure_3(HubLinkNoticeStore);
-      tmp2 = closure_2;
-      if (closure_9()) {
+      obj = outer1_3(HubLinkNoticeStore);
+      tmp2 = outer1_2;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -140,34 +141,33 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = HubLinkNoticeStore;
   callback2(HubLinkNoticeStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_6, closure_5);
-      const items = [closure_5];
-      this.syncWith(items, closure_13);
+      this.waitFor(outer1_6, outer1_5);
+      const items = [outer1_5];
+      this.syncWith(items, outer1_13);
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "channelNoticePredicate",
     value(features) {
       features = features.features;
-      const tmp = !features.has(constants.LINKED_TO_HUB);
+      const tmp = !features.has(outer1_7.LINKED_TO_HUB);
       let tmp2 = !tmp;
       if (!tmp) {
-        tmp2 = !closure_8;
+        tmp2 = !outer1_8;
       }
       return tmp2;
     }
   };
   items[1] = obj;
   return callback(HubLinkNoticeStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "HubLinkNoticeStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     const tmp = _createForOfIteratorHelperLoose(guilds.guilds);
     let iter = tmp();
@@ -184,6 +184,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     return checkGuildIsHub(guild.guild.id);
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("stores/channel_notices/HubLinkNoticeStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/channel_notices/HubLinkNoticeStore.tsx");
 
 export default tmp2;

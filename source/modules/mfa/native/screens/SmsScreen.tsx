@@ -1,72 +1,74 @@
-// Module ID: 14536
-// Function ID: 109457
+// Module ID: 14650
+// Function ID: 111617
 // Name: SmsScreen
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 653, 33, 9197, 14643, 1212, 507, 14647, 14642, 7512, 4543, 14645, 2]
 // Exports: default
 
-// Module 14536 (SmsScreen)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-const Endpoints = arg1(dependencyMap[4]).Endpoints;
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/mfa/native/screens/SmsScreen.tsx");
+// Module 14650 (SmsScreen)
+import closure_3 from "jsxProd";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { Endpoints } from "ME";
+import jsxProd from "jsxProd";
+
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+const result = require("result").fileFinishedImporting("modules/mfa/native/screens/SmsScreen.tsx");
 
 export default function SmsScreen(mfaChallenge) {
+  let c3;
+  let c6;
+  let c7;
   let tmp10;
   let tmp5;
   let tmp8;
   mfaChallenge = mfaChallenge.mfaChallenge;
-  const arg1 = mfaChallenge;
   const finish = mfaChallenge.finish;
-  const importDefault = finish;
-  let closure_2;
-  let closure_3;
+  let dependencyMap;
+  c3 = undefined;
   let React;
-  let closure_6;
-  let closure_7;
+  c6 = undefined;
+  c7 = undefined;
   function handleChange(Button, arg1) {
     return _handleChange(...arguments);
   }
-  function _handleChange(closure_6, arg1) {
+  function _handleChange(c6, arg1) {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = _undefined(tmp);
-    const _handleChange = obj;
     return obj(...arguments);
   }
   function _handleResend() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = _undefined(tmp);
-    const _handleResend = obj;
     return obj(...arguments);
   }
-  let obj = importDefault(closure_2[7]);
-  const screenStyles = obj.useScreenStyles(importDefault(closure_2[6])());
-  const tmp3 = callback(React.useState(null), 2);
-  closure_2 = tmp3[1];
-  const tmp = importDefault(closure_2[6])();
-  [tmp5, closure_3] = callback(React.useState(false), 2);
-  const tmp6 = callback(React.useState(""), 2);
-  const first = tmp6[0];
-  const callback = first;
+  let obj = finish(14643);
+  const screenStyles = obj.useScreenStyles(finish(9197)());
+  const tmp3 = first(React.useState(null), 2);
+  dependencyMap = tmp3[1];
+  const tmp = finish(9197)();
+  [tmp5, c3] = first(React.useState(false), 2);
+  const tmp6 = first(React.useState(""), 2);
+  first = tmp6[0];
   React = tmp6[1];
-  const intl = arg1(closure_2[8]).intl;
-  const tmp4 = callback(React.useState(false), 2);
-  [tmp8, closure_6] = callback(React.useState(intl.string(arg1(closure_2[8]).t.LQdCQE)), 2);
-  const tmp7 = callback(React.useState(intl.string(arg1(closure_2[8]).t.LQdCQE)), 2);
-  [tmp10, closure_7] = callback(React.useState(false), 2);
+  let intl = mfaChallenge(1212).intl;
+  const tmp4 = first(React.useState(false), 2);
+  [tmp8, c6] = first(React.useState(intl.string(mfaChallenge(1212).t.LQdCQE)), 2);
+  const tmp7 = first(React.useState(intl.string(mfaChallenge(1212).t.LQdCQE)), 2);
+  [tmp10, c7] = first(React.useState(false), 2);
   const items = [mfaChallenge.ticket];
   const effect = React.useEffect(() => {
-    callback(null);
-    const HTTP = mfaChallenge(callback[9]).HTTP;
-    let obj = { url: constants.LOGIN_SMS_SEND, body: obj, oldFormErrors: true, rejectWithError: false };
+    dependencyMap(null);
+    const HTTP = mfaChallenge(507).HTTP;
+    obj = { url: _undefined2.LOGIN_SMS_SEND, body: obj, oldFormErrors: true, rejectWithError: false };
     obj = { ticket: mfaChallenge.ticket };
     const postResult = HTTP.post(obj);
     HTTP.post(obj).then((body) => {
-      const intl = callback(closure_2[8]).intl;
-      callback2(intl.formatToPlainString(callback(closure_2[8]).t.8r6h7+, { phoneNumber: body.body.phone }));
+      const intl = mfaChallenge(1212).intl;
+      outer1_6(intl.formatToPlainString(mfaChallenge(1212).t["8r6h7+"], { phoneNumber: body.body.phone }));
     }).catch((body) => {
       body = body.body;
       let message;
@@ -76,38 +78,38 @@ export default function SmsScreen(mfaChallenge) {
       if (null == message) {
         message = body.message;
       }
-      closure_2(message);
-      callback2(undefined);
+      outer1_2(message);
+      outer1_6(undefined);
     });
   }, items);
   obj = {};
-  const tmp9 = callback(React.useState(false), 2);
-  const intl2 = arg1(closure_2[8]).intl;
-  obj.headerText = intl2.string(arg1(closure_2[8]).t.o4JNrO);
+  const tmp9 = first(React.useState(false), 2);
+  const intl2 = mfaChallenge(1212).intl;
+  obj.headerText = intl2.string(mfaChallenge(1212).t.o4JNrO);
   obj.subtitle = tmp8;
   obj = { style: screenStyles.inputContainer };
-  const obj1 = { maxLength: arg1(closure_2[10]).SMS_CODE_LENGTH, onChange: handleChange };
-  const intl3 = arg1(closure_2[8]).intl;
-  obj1.label = intl3.string(arg1(closure_2[8]).t./sHnXc);
-  const intl4 = arg1(closure_2[8]).intl;
-  obj1.accessibilityLabel = intl4.string(arg1(closure_2[8]).t.HZPBOd);
-  const intl5 = arg1(closure_2[8]).intl;
-  obj1.placeholder = intl5.string(arg1(closure_2[8]).t.tARzgo);
+  const obj1 = { autoFocus: true, autoCapitalize: "characters", maxLength: mfaChallenge(14647).SMS_CODE_LENGTH, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: handleChange };
+  const intl3 = mfaChallenge(1212).intl;
+  obj1.label = intl3.string(mfaChallenge(1212).t["/sHnXc"]);
+  const intl4 = mfaChallenge(1212).intl;
+  obj1.accessibilityLabel = intl4.string(mfaChallenge(1212).t.HZPBOd);
+  const intl5 = mfaChallenge(1212).intl;
+  obj1.placeholder = intl5.string(mfaChallenge(1212).t.tARzgo);
   obj1.errorMessage = tmp3[0];
-  const items1 = [handleChange(arg1(closure_2[12]).TextInput, obj1), ];
-  const obj2 = { EMOJI_PICKER_EMOJI_CLICKED: 44, overflow: null, getOwnPropertyNames: true };
-  const intl6 = arg1(closure_2[8]).intl;
-  obj2.text = intl6.string(arg1(closure_2[8]).t.WbaP3r);
+  const items1 = [handleChange(mfaChallenge(7512).TextInput, obj1), ];
+  const obj2 = { text: null, variant: "secondary", size: "sm" };
+  const intl6 = mfaChallenge(1212).intl;
+  obj2.text = intl6.string(mfaChallenge(1212).t.WbaP3r);
   obj2.onPress = function handleResend() {
     return _handleResend(...arguments);
   };
-  items1[1] = handleChange(arg1(closure_2[13]).Button, obj2);
+  items1[1] = handleChange(mfaChallenge(4543).Button, obj2);
   obj.children = items1;
-  obj.input = _handleChange(closure_6, obj);
+  obj.input = _handleChange(c6, obj);
   const obj3 = { variant: "primary" };
-  const tmp13 = importDefault(closure_2[11]);
-  const intl7 = arg1(closure_2[8]).intl;
-  obj3.text = intl7.string(arg1(closure_2[8]).t.geKm7t);
+  const tmp13 = finish(14642);
+  const intl7 = mfaChallenge(1212).intl;
+  obj3.text = intl7.string(mfaChallenge(1212).t.geKm7t);
   let tmp15 = tmp5;
   if (!tmp5) {
     tmp15 = tmp10;
@@ -120,10 +122,10 @@ export default function SmsScreen(mfaChallenge) {
     tmp5 = tmp10;
   }
   if (!tmp5) {
-    tmp5 = first.length !== arg1(closure_2[10]).SMS_CODE_LENGTH;
+    tmp5 = first.length !== mfaChallenge(14647).SMS_CODE_LENGTH;
   }
   obj3.disabled = tmp5;
-  obj.submit = handleChange(importDefault(closure_2[14]), obj3);
+  obj.submit = handleChange(finish(14645), obj3);
   obj.screenProps = { mfaChallenge, finish };
   obj.mfaMethod = "sms";
   return handleChange(tmp13, obj);

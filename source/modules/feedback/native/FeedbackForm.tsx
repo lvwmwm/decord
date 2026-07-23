@@ -1,23 +1,27 @@
-// Module ID: 9495
-// Function ID: 73989
+// Module ID: 9502
+// Function ID: 74030
 // Name: FeedbackForm
-// Dependencies: []
+// Dependencies: [57, 31, 9500, 33, 4130, 689, 8284, 22, 9503, 4559, 7495, 4126, 5167, 9504, 1212, 2]
 // Exports: FeedbackForm
 
-// Module 9495 (FeedbackForm)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const FeedbackRating = arg1(dependencyMap[2]).FeedbackRating;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { ratingsLabel: { textAlign: "center" }, reasonsHeader: { marginBottom: 8 }, reasonsList: { 242550644: null, -1047526311: null, 534116827: null } };
-obj = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.reason = obj;
-const obj1 = { "Bool(false)": null, "Bool(false)": null, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.doNotShowAgainContainer = obj1;
-let closure_8 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/feedback/native/FeedbackForm.tsx");
+// Module 9502 (FeedbackForm)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { FeedbackRating } from "FeedbackRating";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { ratingsLabel: { textAlign: "center" }, reasonsHeader: { marginBottom: 8 }, reasonsList: { overflow: "hidden", marginBottom: 12, padding: 0 } };
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+_createForOfIteratorHelperLoose.reason = _createForOfIteratorHelperLoose;
+let obj1 = { paddingHorizontal: 0, paddingVertical: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.doNotShowAgainContainer = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("FeedbackRating").fileFinishedImporting("modules/feedback/native/FeedbackForm.tsx");
 
 export const FeedbackForm = function FeedbackForm(otherKey) {
   let ratingsBodyLabel;
@@ -25,33 +29,29 @@ export const FeedbackForm = function FeedbackForm(otherKey) {
   let reasonsHeaderLabel;
   let showDoNotShowAgainCheckbox;
   ({ ratingsBodyLabel, reasons } = otherKey);
-  const arg1 = reasons;
   otherKey = otherKey.otherKey;
-  const importDefault = otherKey;
   const onFeedbackChanged = otherKey.onFeedbackChanged;
-  const dependencyMap = onFeedbackChanged;
-  let callback = otherKey.trackOpen;
+  const trackOpen = otherKey.trackOpen;
   ({ showDoNotShowAgainCheckbox, reasonsHeaderLabel } = otherKey);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const React = tmp;
-  const tmp2 = importDefault(dependencyMap[6])(reasons);
+  let tmp2 = otherKey(onFeedbackChanged[6])(reasons);
   const FeedbackRating = tmp2;
-  let obj = importDefault(dependencyMap[7]);
-  const tmp3 = callback(React.useState(obj.shuffle(reasons)), 2);
+  let obj = otherKey(onFeedbackChanged[7]);
+  const tmp3 = trackOpen(React.useState(obj.shuffle(reasons)), 2);
   const first = tmp3[0];
-  const callback2 = tmp3[1];
-  const items = [reasons, tmp2, otherKey];
+  let callback = tmp3[1];
+  let items = [reasons, tmp2, otherKey];
   const effect = React.useEffect(() => {
-    if (!obj.isEqual(tmp2, reasons)) {
+    if (!obj.isEqual(closure_5, reasons)) {
       callback(reasons(onFeedbackChanged[8]).shuffleProblems(reasons, otherKey));
       const obj2 = reasons(onFeedbackChanged[8]);
-      const tmp2 = reasons;
     }
   }, items);
-  const tmp5 = callback(React.useState({}), 2);
+  const tmp5 = trackOpen(React.useState({}), 2);
   const first1 = tmp5[0];
-  const callback3 = tmp5[1];
-  importDefault(dependencyMap[9])(() => {
+  _createForOfIteratorHelperLoose = tmp5[1];
+  otherKey(onFeedbackChanged[9])(() => {
     trackOpen();
   });
   const items1 = [first1, onFeedbackChanged];
@@ -69,19 +69,19 @@ export const FeedbackForm = function FeedbackForm(otherKey) {
     tmp11 = null;
     if (first1.rating !== FeedbackRating.GOOD) {
       obj = {};
-      obj = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp.reasonsHeader, children: reasonsHeaderLabel };
-      const items2 = [callback2(arg1(dependencyMap[11]).Text, obj), ];
+      obj = { style: tmp.reasonsHeader, variant: "eyebrow", color: "text-default", children: reasonsHeaderLabel };
+      const items2 = [callback(reasons(onFeedbackChanged[11]).Text, obj), ];
       const obj1 = { border: "subtle", style: tmp.reasonsList, children: tmp10 };
-      items2[1] = callback2(arg1(dependencyMap[12]).Card, obj1);
+      items2[1] = callback(reasons(onFeedbackChanged[12]).Card, obj1);
       obj.children = items2;
       tmp11 = first1(React.Fragment, obj);
     }
   }
-  const obj2 = {};
+  let obj2 = {};
   let tmp14 = null;
   if (null != ratingsBodyLabel) {
-    const obj3 = { style: tmp.ratingsLabel, children: ratingsBodyLabel };
-    tmp14 = callback2(arg1(dependencyMap[11]).Text, obj3);
+    const obj3 = { style: tmp.ratingsLabel, variant: "heading-md/semibold", color: "text-default", children: ratingsBodyLabel };
+    tmp14 = callback(reasons(onFeedbackChanged[11]).Text, obj3);
   }
   const items3 = [tmp14, , , ];
   const obj4 = {};
@@ -95,7 +95,7 @@ export const FeedbackForm = function FeedbackForm(otherKey) {
     let reason = null;
     if (arg0 !== tmp2.GOOD) {
       reason = first1.reason;
-      const tmp2 = first1;
+      tmp2 = first1;
     }
     const obj = {};
     const merged = Object.assign(first1);
@@ -104,25 +104,25 @@ export const FeedbackForm = function FeedbackForm(otherKey) {
     callback2(obj);
     onFeedbackChanged(obj);
   };
-  items3[1] = callback2(importDefault(dependencyMap[13]), obj4);
+  items3[1] = callback(otherKey(onFeedbackChanged[13]), obj4);
   items3[2] = tmp11;
   let tmp22Result = null;
   if (showDoNotShowAgainCheckbox) {
     const obj5 = { style: tmp.doNotShowAgainContainer };
     const obj6 = {};
-    const doNotShowAgain = first1.doNotShowAgain;
+    let doNotShowAgain = first1.doNotShowAgain;
     let tmp25 = null != doNotShowAgain;
     if (tmp25) {
       tmp25 = doNotShowAgain;
     }
     obj6.selected = tmp25;
-    obj5.leading = callback2(arg1(dependencyMap[10]).FormRow.Checkbox, obj6);
+    obj5.leading = callback(reasons(onFeedbackChanged[10]).FormRow.Checkbox, obj6);
     const obj7 = {};
-    const intl = arg1(dependencyMap[14]).intl;
-    obj7.text = intl.string(arg1(dependencyMap[14]).t.5E9SB9);
-    obj5.label = callback2(arg1(dependencyMap[10]).FormRow.Label, obj7);
+    const intl = reasons(onFeedbackChanged[14]).intl;
+    obj7.text = intl.string(reasons(onFeedbackChanged[14]).t["5E9SB9"]);
+    obj5.label = callback(reasons(onFeedbackChanged[10]).FormRow.Label, obj7);
     obj5.onPress = callback;
-    tmp22Result = tmp22(arg1(dependencyMap[10]).FormRow, obj5);
+    tmp22Result = tmp22(reasons(onFeedbackChanged[10]).FormRow, obj5);
   }
   items3[3] = tmp22Result;
   obj2.children = items3;

@@ -1,9 +1,16 @@
-// Module ID: 6785
-// Function ID: 53573
+// Module ID: 6790
+// Function ID: 53605
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 22, 566, 686, 2]
 
-// Module 6785 (_isNativeReflectConstruct)
+// Module 6790 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,30 +20,25 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const map = new Map();
-let closure_9 = false;
-let closure_10;
-let closure_11;
-let closure_12;
-let closure_13 = false;
-let tmp3 = (Store) => {
+let map = new Map();
+let c9 = false;
+let c10;
+let c11;
+let c12;
+let c13 = false;
+let tmp3 = ((Store) => {
   class CollectiblesPurchaseStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, CollectiblesPurchaseStore);
-      obj = closure_5(CollectiblesPurchaseStore);
-      tmp2 = closure_4;
-      if (closure_14()) {
+      tmp = outer1_2(this, CollectiblesPurchaseStore);
+      obj = outer1_5(CollectiblesPurchaseStore);
+      tmp2 = outer1_4;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -45,45 +47,44 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = CollectiblesPurchaseStore;
   callback2(CollectiblesPurchaseStore, Store);
   let obj = {
     key: "isFetching",
     get() {
-      return closure_9;
+      return outer1_9;
     }
   };
   const items = [obj, , , , , , , ];
   obj = {
     key: "isClaiming",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[1] = obj;
   obj = {
     key: "purchases",
     get() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "fetchError",
     get() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[4] = {
     key: "claimError",
     get() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[5] = {
     key: "hasPreviouslyFetched",
     get() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[6] = {
@@ -91,7 +92,7 @@ let tmp3 = (Store) => {
     value(arg0) {
       let value;
       if (null != arg0) {
-        value = closure_8.get(arg0);
+        value = outer1_8.get(arg0);
       }
       return value;
     }
@@ -99,77 +100,79 @@ let tmp3 = (Store) => {
   items[7] = {
     key: "getPurchases",
     value(arr) {
-      const mapped = arr.map((arg0) => closure_8.get(arg0));
+      const mapped = arr.map((arg0) => outer2_8.get(arg0));
       return mapped.filter((arg0) => null != arg0);
     }
   };
   return callback(CollectiblesPurchaseStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "CollectiblesPurchaseStore";
-tmp3 = new tmp3(importDefault(dependencyMap[7]), {
+tmp3 = new tmp3(require("dispatcher"), {
   COLLECTIBLES_PURCHASES_FETCH: function handlePurchasesFetch() {
-    let closure_9 = true;
-    let closure_11;
+    let c9 = true;
+    let c11;
   },
   COLLECTIBLES_PURCHASES_FETCH_SUCCESS: function handlePurchasesFetchSuccess(purchases) {
     if (0 !== purchases.purchases.length) {
-      const items = [];
+      let items = [];
       HermesBuiltin.arraySpread(map.values(), 0);
       if (!obj.isEqual(items, purchases.purchases)) {
         const _Map = Map;
         purchases = purchases.purchases;
-        const map = new Map(purchases.map((skuId) => {
+        map = new Map(purchases.map((skuId) => {
           const items = [skuId.skuId, skuId];
           return items;
         }));
       }
-      const obj = arg1(dependencyMap[5]);
+      obj = require(22) /* apply */;
     }
-    let closure_13 = true;
-    let closure_9 = false;
-    let closure_11;
+    let c13 = true;
+    let c9 = false;
+    let c11;
   },
   COLLECTIBLES_PURCHASES_FETCH_FAILURE: function handlePurchasesFetchFailure(error) {
     let closure_8 = map;
-    let closure_9 = false;
+    let c9 = false;
     error = error.error;
-    let closure_13 = true;
+    let c13 = true;
   },
   COLLECTIBLES_CLAIM: function handleClaim(skuId) {
     skuId = skuId.skuId;
-    let closure_12;
+    let c12;
   },
   COLLECTIBLES_CLAIM_SUCCESS: function handleClaimSuccess(purchases) {
     if (null != purchases.purchases) {
       if (0 !== purchases.purchases.length) {
-        const items = [];
+        let items = [];
         HermesBuiltin.arraySpread(map.values(), 0);
         if (!obj.isEqual(items, purchases.purchases)) {
           const _Map = Map;
           purchases = purchases.purchases;
-          const map = new Map(purchases.map((skuId) => {
+          map = new Map(purchases.map((skuId) => {
             const items = [skuId.skuId, skuId];
             return items;
           }));
         }
-        const obj = arg1(dependencyMap[5]);
+        obj = require(22) /* apply */;
       }
-      let closure_10;
-      let closure_12;
+      let c10;
+      let c12;
     }
   },
   COLLECTIBLES_CLAIM_FAILURE: function handleClaimFailure(arg0) {
-    ({ skuId: closure_10, error: closure_12 } = arg0);
+    let c10;
+    let c12;
+    ({ skuId: c10, error: c12 } = arg0);
   },
   LOGOUT: function handleLogout() {
     let closure_8 = map;
-    let closure_9 = false;
-    let closure_10;
-    let closure_11;
-    let closure_12;
-    let closure_13 = false;
+    let c9 = false;
+    let c10;
+    let c11;
+    let c12;
+    let c13 = false;
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/collectibles/CollectiblesPurchaseStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/collectibles/CollectiblesPurchaseStore.tsx");
 
 export default tmp3;

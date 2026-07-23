@@ -1,6 +1,6 @@
 // Module ID: 527
 // Function ID: 6635
-// Dependencies: []
+// Dependencies: [519, 528]
 
 // Module 527
 const tmp = [].__proto__ === Array.prototype;
@@ -12,8 +12,8 @@ while (true) {
     let tmp3 = require;
     let tmp4 = dependencyMap;
     let num = 0;
-    _module = require(dependencyMap[0]);
-    // break
+    _module = require("module_519");
+    break;
   }
   let tmp5 = _module;
   if (_module) {
@@ -23,7 +23,7 @@ while (true) {
     let tmp8 = globalThis;
     let _Object = Object;
     let str = "__proto__";
-    tmp5 = require(dependencyMap[0])(Object.prototype, "__proto__");
+    tmp5 = require("module_519")(Object.prototype, "__proto__");
   }
   let tmp10 = globalThis;
   let _Object2 = Object;
@@ -35,7 +35,7 @@ while (true) {
       let tmp14 = dependencyMap;
       let num3 = 1;
       let items = [tmp5.get];
-      let getDunder = require(dependencyMap[1])(items);
+      let getDunder = require("callBindBasic")(items);
     }
     module.exports = getDunder;
   }

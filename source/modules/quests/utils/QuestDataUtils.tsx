@@ -1,53 +1,62 @@
-// Module ID: 6935
-// Function ID: 55301
+// Module ID: 6940
+// Function ID: 55335
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1921, 6941, 6942, 4976, 4979, 1360, 6957, 1184, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdTrafficMetadataSealed, getIsQuestExpiredButWithinThirtyDayLookback, getQuestForPlacement, getQuestFormattedDate, hasUnclaimedReward, isBillableQuestContent, isDismissed
 
-// Module 6935 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6940 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+import QuestsExperimentLocations from "QuestsExperimentLocations";
+
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +67,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,7 +95,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function isDismissible(ACTIVITY_PANEL) {
   const keys = Object.keys(closure_6);
-  return keys.includes(arg1(dependencyMap[4]).QuestContent[ACTIVITY_PANEL]);
+  return keys.includes(require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent[ACTIVITY_PANEL]);
 }
 function isQuestConfigExpired(config) {
   const date = new Date(config.expiresAt);
@@ -97,23 +106,23 @@ function isQuestExpired(value) {
 }
 function getQuestPlacementFromQuestContent(questContent) {
   const obj = {};
-  obj[arg1(dependencyMap[4]).QuestContent.QUEST_BAR] = arg1(dependencyMap[4]).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
-  obj[arg1(dependencyMap[4]).QuestContent.QUEST_BAR_V2] = arg1(dependencyMap[4]).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
-  obj[arg1(dependencyMap[4]).QuestContent.QUEST_BAR_MOBILE] = arg1(dependencyMap[4]).AdPlacement.MOBILE_HOME_DOCK_AREA;
-  obj[arg1(dependencyMap[4]).QuestContent.QUEST_HOME_HERO] = arg1(dependencyMap[4]).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
-  obj[arg1(dependencyMap[4]).QuestContent.QUEST_HOME_HERO_SHELF] = arg1(dependencyMap[4]).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
-  obj[arg1(dependencyMap[4]).QuestContent.QUEST_HOME_MOBILE_CAROUSEL] = arg1(dependencyMap[4]).AdPlacement.QUEST_HOME_MOBILE_CAROUSEL;
-  obj[arg1(dependencyMap[4]).QuestContent.VIDEO_MODAL_MOBILE] = arg1(dependencyMap[4]).AdPlacement.VIDEO_MODAL_MOBILE;
+  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
+  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_V2] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
+  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.MOBILE_HOME_DOCK_AREA;
+  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_HERO] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_BANNER_DESKTOP;
+  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_HERO_SHELF] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_BANNER_DESKTOP;
+  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_HOME_MOBILE_CAROUSEL] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_MOBILE_CAROUSEL;
+  obj[require(4979) /* QuestsVisibleMessagesChangedSource */.QuestContent.VIDEO_MODAL_MOBILE] = require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.VIDEO_MODAL_MOBILE;
   return obj[questContent];
 }
 function mapQuestAdDecision(value) {
   return { questId: value.questId, adCreativeId: value.adCreativeId, adDecisionData: value.adDecisionData, adContext: value.adContext, metadataSealed: value.metadataSealed, trafficMetadataSealed: value.trafficMetadataSealed };
 }
 function getQuestDeliveryDataForPlacement(arg0, adContentId) {
-  if (arg0 === adContentId(dependencyMap[4]).AdPlacement.QUEST_HOME_MOBILE_CAROUSEL) {
+  if (arg0 === require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_MOBILE_CAROUSEL) {
     let tmp3 = null;
     if (null != adContentId) {
-      const adDecisionByPlacementAndAdCreativeId = adDecisionByPlacementAndAdCreativeId.getAdDecisionByPlacementAndAdCreativeId(arg0, adContentId);
+      adDecisionByPlacementAndAdCreativeId = adDecisionByPlacementAndAdCreativeId.getAdDecisionByPlacementAndAdCreativeId(arg0, adContentId);
       let tmp7 = null;
       if (null != adDecisionByPlacementAndAdCreativeId) {
         tmp7 = mapQuestAdDecision(adDecisionByPlacementAndAdCreativeId);
@@ -129,7 +138,7 @@ function getQuestDeliveryDataForPlacement(arg0, adContentId) {
     let obj = { location: "getQuestDeliveryDataForPlacement" };
     const questAdDecisionByPlacement = quest.questAdDecisionByPlacement;
     let value = questAdDecisionByPlacement.get(arg0);
-    if (arg0 === adContentId(dependencyMap[4]).AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
+    if (arg0 === require(4979) /* QuestsVisibleMessagesChangedSource */.AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
       if (null != value) {
         return mapQuestAdDecision(value);
       }
@@ -151,15 +160,11 @@ function getQuestDeliveryDataForPlacement(arg0, adContentId) {
       }
       return tmp11;
     }
-    const obj2 = importDefault(dependencyMap[6]);
+    obj2 = importDefault(6957);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ DismissibleQuestContentFlags: closure_6, BILLABLE_PLACEMENTS: closure_7, EMPTY_AD_DECISION_DATA: closure_8 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/quests/utils/QuestDataUtils.tsx");
+({ DismissibleQuestContentFlags: closure_6, BILLABLE_PLACEMENTS: closure_7, EMPTY_AD_DECISION_DATA: closure_8 } = QuestsExperimentLocations);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/quests/utils/QuestDataUtils.tsx");
 
 export const THIRTY_DAYS_MS = 2592000000;
 export const earnedDecisionIsValid = function earnedDecisionIsValid(value) {
@@ -207,7 +212,7 @@ export const findQuestOrReplacement = function findQuestOrReplacement(scrollToQu
 export { isDismissible };
 export const isDismissed = function isDismissed(userStatus, ACTIVITY_PANEL) {
   if (isDismissible(ACTIVITY_PANEL)) {
-    return ACTIVITY_PANEL(dependencyMap[5]).hasFlag(userStatus.dismissedQuestContent, closure_6[closure_0(undefined, closure_2[4]).QuestContent[ACTIVITY_PANEL]]);
+    return require(1360) /* hasFlag */.hasFlag(userStatus.dismissedQuestContent, table[require(undefined, 4979) /* QuestsVisibleMessagesChangedSource */.QuestContent[ACTIVITY_PANEL]]);
   } else {
     return false;
   }
@@ -347,7 +352,7 @@ export const getAdTrafficMetadataSealed = function getAdTrafficMetadataSealed(so
     }
   }
   if (null != adCreativeId) {
-    const quest = quest.getQuest(adCreativeId);
+    quest = quest.getQuest(adCreativeId);
     let prop;
     if (null != quest) {
       prop = quest.trafficMetadataSealed;
@@ -367,7 +372,7 @@ export const getAdContext = function getAdContext(questContent, adContentId) {
   }
 };
 export const captureQuestsException = function captureQuestsException(error, tags) {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(1184);
   obj = {};
   const merged = Object.assign(tags);
   obj = {};

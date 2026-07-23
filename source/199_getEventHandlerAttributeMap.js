@@ -55,7 +55,7 @@ arg5.setEventHandlerAttribute = function setEventHandlerAttribute(arg0, error, h
     } else {
       let num = 0;
       tmp28 = 0 === obj2.size;
-      // break
+      break;
     }
     if (tmp28) {
       let tmp29 = setEventHandlerAttributeMap;

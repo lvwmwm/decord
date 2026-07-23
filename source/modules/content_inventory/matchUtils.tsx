@@ -1,10 +1,14 @@
-// Module ID: 8302
-// Function ID: 65739
+// Module ID: 8308
+// Function ID: 65776
 // Name: isSpotifyEntry
-// Dependencies: []
+// Dependencies: [653, 8309, 8311, 8312, 8314, 8315, 7815, 2]
 // Exports: findMatchingEntry
 
-// Module 8302 (isSpotifyEntry)
+// Module 8308 (isSpotifyEntry)
+import { ActivityTypes } from "ME";
+import { CRUNCHYROLL_CLIENT_ID } from "CRUNCHYROLL_LINK_DEST_ORIGIN";
+import { isSpotifyParty } from "spotifyUtmParams";
+
 function isSpotifyEntry(extra) {
   if (obj.isListenedSessionEntry(extra)) {
     const first = extra.extra.entries[0];
@@ -15,28 +19,28 @@ function isSpotifyEntry(extra) {
         provider = media.provider;
       }
     }
-    let tmp4 = provider === require(dependencyMap[4]).ContentInventoryListenedMediaProvider.SPOTIFY;
+    let tmp4 = provider === require(8314) /* ContentInventoryListenedMediaProvider */.ContentInventoryListenedMediaProvider.SPOTIFY;
   } else {
-    const tmp3 = !require(dependencyMap[3]).isTopArtistEntry(extra);
+    const tmp3 = !require(8312) /* isPlayedGameEntry */.isTopArtistEntry(extra);
     tmp4 = !tmp3;
     if (!tmp3) {
-      tmp4 = extra.extra.media.provider === require(dependencyMap[4]).ContentInventoryListenedMediaProvider.SPOTIFY;
+      tmp4 = extra.extra.media.provider === require(8314) /* ContentInventoryListenedMediaProvider */.ContentInventoryListenedMediaProvider.SPOTIFY;
     }
-    const obj2 = require(dependencyMap[3]);
+    const obj2 = require(8312) /* isPlayedGameEntry */;
   }
   return tmp4;
 }
 function isCrunchyrollEntry(extra) {
-  const tmp = !require(dependencyMap[3]).isWatchedMediaEntry(extra);
+  const tmp = !require(8312) /* isPlayedGameEntry */.isWatchedMediaEntry(extra);
   let tmp2 = !tmp;
   if (!tmp) {
     tmp2 = extra.extra.application_id === CRUNCHYROLL_CLIENT_ID;
   }
   return tmp2;
 }
-function isMatchingApplicationActivity(extra, type) {
+function isMatchingApplicationActivity(closure_0, type) {
   let name = type;
-  let game_name = extra.extra;
+  let game_name = closure_0.extra;
   let tmp = null != game_name;
   if (tmp) {
     if ("application_id" in name && name.application_id === game_name.application_id) {
@@ -51,8 +55,8 @@ function isMatchingApplicationActivity(extra, type) {
   }
   return tmp;
 }
-function isMatchingListeningActivity(extra, party) {
-  const tmp = isSpotifyEntry(extra);
+function isMatchingListeningActivity(closure_0, party) {
+  const tmp = isSpotifyEntry(closure_0);
   let tmp3Result = tmp;
   if (tmp) {
     party = party.party;
@@ -65,22 +69,18 @@ function isMatchingListeningActivity(extra, party) {
   }
   return tmp3Result;
 }
-function isMatchingWatchActivity(extra, details) {
-  let tmp = !importDefault(dependencyMap[5])(details);
+function isMatchingWatchActivity(closure_0, details) {
+  let tmp = !importDefault(8315)(details);
   if (!tmp) {
-    tmp = !isCrunchyrollEntry(extra);
+    tmp = !isCrunchyrollEntry(closure_0);
   }
   let tmp3 = !tmp;
   if (!tmp) {
-    tmp3 = extra.extra.media_title === details.details;
+    tmp3 = closure_0.extra.media_title === details.details;
   }
   return tmp3;
 }
-const ActivityTypes = require(dependencyMap[0]).ActivityTypes;
-const CRUNCHYROLL_CLIENT_ID = require(dependencyMap[1]).CRUNCHYROLL_CLIENT_ID;
-const isSpotifyParty = require(dependencyMap[2]).isSpotifyParty;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/content_inventory/matchUtils.tsx");
+const result = require("spotifyUtmParams").fileFinishedImporting("modules/content_inventory/matchUtils.tsx");
 
 export { isSpotifyEntry };
 export { isCrunchyrollEntry };
@@ -88,17 +88,17 @@ export { isMatchingApplicationActivity };
 export { isMatchingListeningActivity };
 export { isMatchingWatchActivity };
 export const findMatchingEntry = function findMatchingEntry(entries, activity) {
-  const require = activity;
-  const found = entries.filter(require(dependencyMap[6]).isEntryActive);
+  const _require = activity;
+  const found = entries.filter(_require(7815).isEntryActive);
   if (activity.type === ActivityTypes.PLAYING) {
-    const found1 = found.filter(require(dependencyMap[3]).isGamingLikeEntry);
-    let found2 = found1.find((arg0) => callback(arg0, arg1));
+    const found1 = found.filter(_require(8312).isGamingLikeEntry);
+    let found2 = found1.find((arg0) => outer1_8(arg0, closure_0));
   } else if (activity.type === ActivityTypes.LISTENING) {
-    const found3 = found.filter(require(dependencyMap[3]).isListenedSessionEntry);
-    found2 = found3.find((arg0) => callback2(arg0, arg1));
+    const found3 = found.filter(_require(8312).isListenedSessionEntry);
+    found2 = found3.find((arg0) => outer1_9(arg0, closure_0));
   } else if (activity.type === ActivityTypes.WATCHING) {
-    const found4 = entries.filter(require(dependencyMap[3]).isWatchedMediaEntry);
-    found2 = found4.find((arg0) => callback3(arg0, arg1));
+    const found4 = entries.filter(_require(8312).isWatchedMediaEntry);
+    found2 = found4.find((arg0) => outer1_10(arg0, closure_0));
   }
   return found2;
 };

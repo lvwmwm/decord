@@ -1,18 +1,19 @@
-// Module ID: 10527
-// Function ID: 82227
+// Module ID: 10537
+// Function ID: 82277
 // Name: _isNativeReflectConstruct
-// Dependencies: [57, 31, 587, 10531, 2, 57, 31, 27, 10198, 653, 33, 4126]
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 621, 682, 477, 1569, 2]
 
-// Module 10527 (_isNativeReflectConstruct)
-import _slicedToArray from "_slicedToArray";
-import module_31 from "module_31";
-import Storage from "Storage";
-import PictureInPicturePositions from "PictureInPicturePositions";
-import result2 from "result2";
-import { NativeModules } from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 10537 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import closure_4 from "keys";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { NativeModules } from "get ActivityIndicator";
+import keys from "keys";
+import importAllResult from "result";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -25,21 +26,21 @@ function _isNativeReflectConstruct() {
 function createStackEntry(prefersHidden) {
   return { prefersHidden: prefersHidden.prefersHidden, prefersDeferringSystemGestures: prefersHidden.prefersDeferringSystemGestures };
 }
-get ActivityIndicator = get_ActivityIndicator.create(() => ({ autoHideHomeIndicator: false }));
-const tmp4 = (Component) => {
+keys = keys.create(() => ({ autoHideHomeIndicator: false }));
+const tmp4 = ((Component) => {
   class HomeIndicator {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = _slicedToArray(this, HomeIndicator);
+      tmp = outer1_3(this, HomeIndicator);
       items1 = [...items];
-      obj = PictureInPicturePositions(HomeIndicator);
-      tmp2 = Storage;
-      if (closure_10()) {
+      obj = outer1_6(HomeIndicator);
+      tmp2 = outer1_5;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = PictureInPicturePositions;
-        constructResult = Reflect.construct(obj, items1, PictureInPicturePositions(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -48,7 +49,6 @@ const tmp4 = (Component) => {
       return tmp2Result;
     }
   }
-  const arg1 = HomeIndicator;
   callback2(HomeIndicator, Component);
   let obj = {
     key: "componentDidMount",
@@ -56,7 +56,7 @@ const tmp4 = (Component) => {
       this._stackEntry = HomeIndicator.pushStackEntry(this.props);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "componentDidUpdate",
     value() {
@@ -78,11 +78,11 @@ const tmp4 = (Component) => {
       return null;
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "pushStackEntry",
       value(arg0) {
-        const tmp = callback4(arg0);
+        const tmp = outer1_11(arg0);
         const _propsStack = HomeIndicator._propsStack;
         _propsStack.push(tmp);
         HomeIndicator._updatePropsStack();
@@ -107,7 +107,7 @@ const tmp4 = (Component) => {
     {
       key: "replaceStackEntry",
       value(arg0, arg1) {
-        const tmp = callback4(arg1);
+        const tmp = outer1_11(arg1);
         let num = -1;
         if (null != arg0) {
           const _propsStack = HomeIndicator._propsStack;
@@ -125,23 +125,23 @@ const tmp4 = (Component) => {
       value() {
         clearImmediate(HomeIndicator._updateImmediate);
         HomeIndicator._updateImmediate = setImmediate(() => {
-          let obj = tmp._propsStack[closure_0._propsStack.length - 1];
+          let obj = outer1_0._propsStack[outer1_0._propsStack.length - 1];
           if (null == obj) {
             obj = {};
           }
           const prefersHidden = obj.prefersHidden;
-          const tmp = undefined !== prefersHidden && prefersHidden;
+          let closure_0 = tmp;
           const prefersDeferringSystemGestures = obj.prefersDeferringSystemGestures;
-          tmp(closure_2[8]).batchUpdates(() => state.setState({ autoHideHomeIndicator: tmp }));
-          const obj2 = tmp(closure_2[8]);
+          HomeIndicator(outer2_2[8]).batchUpdates(() => outer3_9.setState({ autoHideHomeIndicator: closure_0 }));
+          const obj2 = HomeIndicator(outer2_2[8]);
           const tmp2 = undefined !== prefersDeferringSystemGestures && prefersDeferringSystemGestures;
           if (obj3.isAndroid()) {
-            const result = callback(closure_2[10]).setNavigationBarVisible(!tmp);
-            const obj4 = callback(closure_2[10]);
-          } else if (closure_8.DCDHomeIndicator) {
-            const DCDHomeIndicator = closure_8.DCDHomeIndicator;
+            const result = outer2_1(outer2_2[10]).setNavigationBarVisible(!tmp);
+            const obj4 = outer2_1(outer2_2[10]);
+          } else if (outer2_8.DCDHomeIndicator) {
+            const DCDHomeIndicator = outer2_8.DCDHomeIndicator;
             DCDHomeIndicator.setPrefersAutoHidden(tmp);
-            const DCDHomeIndicator2 = closure_8.DCDHomeIndicator;
+            const DCDHomeIndicator2 = outer2_8.DCDHomeIndicator;
             const result1 = DCDHomeIndicator2.setPrefersDeferringSystemGestures(tmp2);
           }
         });
@@ -149,11 +149,11 @@ const tmp4 = (Component) => {
     }
   ];
   return callback(HomeIndicator, items, items1);
-}(require("_slicedToArray").Component);
-tmp4.defaultProps = { subheader: true, videoLink: true };
+})(require("result").Component);
+tmp4.defaultProps = { prefersHidden: false, prefersDeferringSystemGestures: false };
 tmp4._propsStack = [];
 tmp4._updateImmediate = null;
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/voice_panel/native/HomeIndicator.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_panel/native/HomeIndicator.tsx");
 
 export default tmp4;
-export const useHomeIndicatorStore = get_ActivityIndicator;
+export const useHomeIndicatorStore = keys;

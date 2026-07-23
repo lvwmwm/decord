@@ -1,18 +1,27 @@
-// Module ID: 8725
-// Function ID: 69051
+// Module ID: 8732
+// Function ID: 69092
 // Name: VariantOption
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 8713, 8733, 5154, 8734, 8664, 6785, 2]
 
-// Module 8725 (VariantOption)
+// Module 8732 (VariantOption)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function VariantOption(variant) {
   variant = variant.variant;
   const tmp = callback3(variant.isSelected);
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(8713) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   obj = { style: items };
-  const items = [tmp.variantOption, { zIndex: variant.zIndex }];
+  items = [tmp.variantOption, { zIndex: variant.zIndex }];
   obj = { style: items1 };
-  const items1 = [tmp.variantOptionInner, { backgroundColor: variant.variantValue }];
+  items1 = [tmp.variantOptionInner, { backgroundColor: variant.variantValue }];
   if (isPurchased) {
     const obj1 = { variant };
     isPurchased = callback(VariantCheckmark, obj1);
@@ -23,53 +32,47 @@ function VariantOption(variant) {
 }
 function VariantCheckmark(variant) {
   const obj = {};
-  const colors = importDefault(dependencyMap[4]).colors;
-  obj.color = importDefault(dependencyMap[6])(variant.variant) ? colors.BLACK : colors.WHITE;
+  const colors = importDefault(689).colors;
+  obj.color = importDefault(8733)(variant.variant) ? colors.BLACK : colors.WHITE;
   obj.size = "xxs";
-  return closure_4(arg1(dependencyMap[7]).CheckmarkSmallIcon, obj);
+  return closure_4(require(5154) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, obj);
 }
 function VariantOverflowOption(isSelected) {
   const tmp = callback3(isSelected.isSelected);
   let obj = { style: items };
-  const items = [tmp.variantOption, { zIndex: isSelected.zIndex }];
+  items = [tmp.variantOption, { zIndex: isSelected.zIndex }];
   obj = { style: items1 };
-  const items1 = [, ];
+  items1 = [, ];
   ({ variantOptionInner: arr2[0], variantOverflowInner: arr2[1] } = tmp);
-  obj = { color: importDefault(dependencyMap[4]).colors.WHITE, size: "xxs" };
-  obj.children = callback(arg1(dependencyMap[8]).PlusSmallIcon, obj);
+  obj = { color: importDefault(689).colors.WHITE, size: "xxs" };
+  obj.children = callback(require(8734) /* PlusSmallIcon */.PlusSmallIcon, obj);
   obj.children = callback(View, obj);
   return callback(View, obj);
 }
-const View = arg1(dependencyMap[1]).View;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 let obj = {};
-obj = { id: 8, title: null, options: "\u270A\u{1F3FF}", paddingStart: importDefault(dependencyMap[4]).space.PX_4 };
+obj = { display: "flex", flexDirection: "row", alignItems: "center", paddingStart: require("_createForOfIteratorHelperLoose").space.PX_4 };
 obj.variantsContainer = obj;
-let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[3]).createStyles((arg0) => {
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { <string:1694692740>: "init", <string:2875367675>: "instance", <string:2899595606>: "ip", <string:2879454053>: "is", <string:3562103382>: "key", <string:385373100>: "language", <string:2988756154>: "labeled", <string:1985210209>: "level", marginStart: -importDefault(dependencyMap[4]).space.PX_4, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(dependencyMap[4]).radii.round };
+  obj = { marginStart: -importDefault(689).space.PX_4, width: 14, height: 14, borderWidth: 1, borderColor: importDefault(689).colors.BACKGROUND_BASE_LOW, borderRadius: importDefault(689).radii.round, justifyContent: "center", alignItems: "center" };
   obj.variantOption = obj;
-  obj = { borderRadius: importDefault(dependencyMap[4]).radii.round };
+  obj = { width: "100%", height: "100%", justifyContent: "center", alignItems: "center", borderRadius: importDefault(689).radii.round };
   let num = 0;
   if (arg0) {
     num = 1;
   }
   obj.borderWidth = num;
-  obj.borderColor = importDefault(dependencyMap[4]).colors.BUTTON_OUTLINE_PRIMARY_TEXT;
+  obj.borderColor = importDefault(689).colors.BUTTON_OUTLINE_PRIMARY_TEXT;
   obj.variantOptionInner = obj;
-  obj.variantOverflowInner = { backgroundColor: importDefault(dependencyMap[4]).colors.ICON_MUTED };
+  obj.variantOverflowInner = { backgroundColor: importDefault(689).colors.ICON_MUTED };
   return obj;
 });
-const obj5 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function CardProductVariants(product) {
+const memoResult = require("result").memo(function CardProductVariants(product) {
   product = product.product;
-  let obj = arg1(dependencyMap[9]);
-  const defaultVariantIndex = obj.useDefaultVariantIndex(product);
-  const arg1 = defaultVariantIndex;
+  let obj = defaultVariantIndex(8664);
+  defaultVariantIndex = obj.useDefaultVariantIndex(product);
   const tmp = callback2();
   if (obj2.getIsVariantProduct(product)) {
     let num3 = 3;
@@ -79,7 +82,7 @@ const memoResult = importAllResult.memo(function CardProductVariants(product) {
     obj = { style: tmp.variantsContainer };
     const variants = product.variants;
     const substr = variants.slice(0, num3);
-    const items = [substr.map((variant) => callback(closure_8, { variant, isSelected: arg1 === defaultVariantIndex, zIndex: 4 - Math.abs(defaultVariantIndex - arg1) }, variant.variantValue)), ];
+    const items = [substr.map((variant) => outer1_4(outer1_8, { variant, isSelected: arg1 === defaultVariantIndex, zIndex: 4 - Math.abs(defaultVariantIndex - arg1) }, variant.variantValue)), ];
     let tmp7Result = num3 !== length;
     if (tmp7Result) {
       obj = { isSelected: defaultVariantIndex >= 3 };
@@ -98,8 +101,8 @@ const memoResult = importAllResult.memo(function CardProductVariants(product) {
   } else {
     return null;
   }
-  const obj2 = arg1(dependencyMap[10]);
+  obj2 = defaultVariantIndex(6785);
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardVariants.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardVariants.tsx");
 
 export default memoResult;

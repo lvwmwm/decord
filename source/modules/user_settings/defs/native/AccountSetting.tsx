@@ -1,27 +1,27 @@
-// Module ID: 13507
-// Function ID: 102485
+// Module ID: 13621
+// Function ID: 104641
 // Name: route
-// Dependencies: []
+// Dependencies: [653, 10095, 1212, 9104, 13622, 2]
 
-// Module 13507 (route)
-const _module = require(dependencyMap[1]);
-let obj = {
+// Module 13621 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.ldCE/p);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["ldCE/p"]);
   },
   parent: null,
-  IconComponent: require(dependencyMap[3]).UserCircleIcon,
+  IconComponent: require("UserCircleIcon").UserCircleIcon,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.ACCOUNT,
+  route: require("ME").UserSettingsSections.ACCOUNT,
   getComponent() {
-    return require(dependencyMap[4]).default;
+    return require(13622) /* PasswordlessUpsell */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AccountSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/AccountSetting.tsx");
 
 export default route;

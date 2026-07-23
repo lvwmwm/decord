@@ -1,13 +1,13 @@
-// Module ID: 6621
-// Function ID: 50864
+// Module ID: 6626
+// Function ID: 50893
 // Name: WordBalloonIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6627, 2]
 // Exports: WordBalloonIllocon
 
-// Module 6621 (WordBalloonIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/WordBalloonIllocon.native.tsx");
+// Module 6626 (WordBalloonIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WordBalloonIllocon.native.tsx");
 
 export const WordBalloonIllocon = function WordBalloonIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const WordBalloonIllocon = function WordBalloonIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6627) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const WordBalloonIllocon = function WordBalloonIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

@@ -1,24 +1,23 @@
-// Module ID: 6728
-// Function ID: 52409
+// Module ID: 6733
+// Function ID: 52441
 // Name: getMemberSupplementalByGuildId
-// Dependencies: []
+// Dependencies: [6734, 2]
 // Exports: hasMemberSupplemental, syncMemberSupplemental
 
-// Module 6728 (getMemberSupplementalByGuildId)
+// Module 6733 (getMemberSupplementalByGuildId)
 function getMemberSupplementalByGuildId(guildId) {
-  if (null == closure_2[guildId]) {
-    closure_2[guildId] = {};
+  if (null == dependencyMap[guildId]) {
+    dependencyMap[guildId] = {};
   }
-  return closure_2[guildId];
+  return dependencyMap[guildId];
 }
 let closure_2 = {};
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyStoreSupplemental.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyStoreSupplemental.tsx");
 
 export const hasMemberSupplemental = function hasMemberSupplemental(arg0, arg1) {
-  let tmp = null != closure_2[arg0];
+  let tmp = null != dependencyMap[arg0];
   if (tmp) {
-    tmp = null != closure_2[arg0][arg1];
+    tmp = null != dependencyMap[arg0][arg1];
   }
   return tmp;
 };
@@ -42,13 +41,13 @@ export const syncMemberSupplemental = function syncMemberSupplemental(guildId, m
       }
       let tmp4 = null != INVITE;
       if (tmp4) {
-        tmp4 = INVITE !== callback(closure_1[0]).JoinSourceType.UNSPECIFIED;
+        tmp4 = INVITE !== dependencyMap(outer1_1[0]).JoinSourceType.UNSPECIFIED;
       }
       if (!tmp4) {
         tmp4 = null == joinSourceType.sourceInviteCode;
       }
       if (!tmp4) {
-        INVITE = callback(closure_1[0]).JoinSourceType.INVITE;
+        INVITE = dependencyMap(outer1_1[0]).JoinSourceType.INVITE;
       }
       const obj = { userId: joinSourceType.userId };
       let sourceInviteCode = joinSourceType.sourceInviteCode;
@@ -113,7 +112,7 @@ export const syncMemberSupplemental = function syncMemberSupplemental(guildId, m
         tmp19 = joinSourceChannelId;
       }
       obj.joinSourceChannelId = tmp19;
-      callback[joinSourceType.userId] = obj;
+      dependencyMap[joinSourceType.userId] = obj;
     });
     return true;
   }

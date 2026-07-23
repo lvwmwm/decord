@@ -1,17 +1,18 @@
-// Module ID: 7879
-// Function ID: 62731
+// Module ID: 7885
+// Function ID: 62768
 // Name: useGetIsMounted
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: default
 
-// Module 7879 (useGetIsMounted)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("hooks/useGetIsMounted.tsx");
+// Module 7885 (useGetIsMounted)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("hooks/useGetIsMounted.tsx");
 
 export default function useGetIsMounted() {
-  const React = React.useRef(true);
+  React = React.useRef(true);
   const effect = React.useEffect(() => () => {
-    closure_0.current = false;
+    outer1_0.current = false;
   }, []);
   return React.useCallback(() => ref.current, []);
 };

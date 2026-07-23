@@ -1,11 +1,10 @@
-// Module ID: 11094
-// Function ID: 86329
+// Module ID: 11104
+// Function ID: 86379
 // Name: VoiceMessageAnimationState
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 11094 (VoiceMessageAnimationState)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/voice_messages/VoiceMessageConstants.tsx");
+// Module 11104 (VoiceMessageAnimationState)
+const result = require("set").fileFinishedImporting("modules/voice_messages/VoiceMessageConstants.tsx");
 
 export const VoiceMessageAnimationState = { SENDING: 0, [0]: "SENDING", CANCELLING: 1, [1]: "CANCELLING", LOCKING: 2, [2]: "LOCKING", LOCKED: 3, [3]: "LOCKED" };
 export const VOICE_RECORDING_MIN_DB = -100;
@@ -17,4 +16,4 @@ export const VOICE_RECORDING_WARN_DURATION_MILLIS = 1169500;
 export const VOICE_RECORDING_REALLY_WARN_DURATION_MILLIS = 1184500;
 export const WAVEFORM_WAVE_MAX_VALUE = 255;
 export const WAVEFORM_MAX_SAMPLES = 256;
-export const PLAYBACK_RATES = ["<string:1075222413>", "construct", "<string:3745198848>", "<string:1855425871>"];
+export const PLAYBACK_RATES = [0.75, 1, 1.5, 2];

@@ -1,12 +1,13 @@
-// Module ID: 12650
-// Function ID: 97310
+// Module ID: 12764
+// Function ID: 99466
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 12650 (apexExperiment)
-let obj = { width: false, position: null, left: false, top: false };
-const _module = require(dependencyMap[0]);
-obj = { y: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015379710535465725, DateToSystemTimezoneSetter: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016518948354734905 };
+// Module 12764 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+let obj = { showPTTJoinTooltip: false, showPTTIconIndicator: false, showPTTNoKeybindWarning: false, showPTTSpeakingIndicator: false };
+obj = { name: "2025-12-09-ptt-education", kind: "user" };
 obj.defaultConfig = obj;
 obj = {};
 const obj1 = {};
@@ -20,8 +21,7 @@ const merged1 = Object.assign(obj);
 obj2["showPTTIconIndicator"] = true;
 obj[2] = obj2;
 obj.variations = obj;
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/voice_calls/PTTEducationExperiment.tsx");
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/voice_calls/PTTEducationExperiment.tsx");
 
 export default apexExperiment;

@@ -1,28 +1,36 @@
-// Module ID: 9876
-// Function ID: 76470
+// Module ID: 9883
+// Function ID: 76511
 // Name: SearchableDestinationList
-// Dependencies: []
+// Dependencies: [57, 31, 27, 653, 8818, 33, 4130, 689, 9884, 5584, 7089, 7094, 6904, 1327, 8832, 9889, 9891, 8825, 9892, 1212, 4662, 5772, 2]
 // Exports: default
 
-// Module 9876 (SearchableDestinationList)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, Keyboard: closure_6 } = arg1(dependencyMap[2]));
-const NOOP = arg1(dependencyMap[3]).NOOP;
-const UserRowModes = arg1(dependencyMap[4]).UserRowModes;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_16, paddingBottom: importDefault(dependencyMap[7]).space.PX_8, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.searchBarContainer = obj;
-const tmp3 = arg1(dependencyMap[5]);
-obj.noResults = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-let closure_12 = obj.createStyles(obj);
-const obj1 = { flex: 1, backgroundColor: importDefault(dependencyMap[7]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/share/native/SearchableDestinationList.tsx");
+// Module 9883 (SearchableDestinationList)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { NOOP } from "ME";
+import { UserRowModes } from "UserRowModes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_5;
+let closure_6;
+let closure_9;
+const require = arg1;
+({ View: closure_5, Keyboard: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+_createForOfIteratorHelperLoose.searchBarContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.noResults = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/share/native/SearchableDestinationList.tsx");
 
 export default function SearchableDestinationList(originDestination) {
+  let c13;
   let defaultNoResultsFound;
   let disableGradient;
   let disableSelection;
@@ -31,25 +39,20 @@ export default function SearchableDestinationList(originDestination) {
   let initialSelectedDestinations;
   let tmp13;
   ({ initialSelectedDestinations, disabledDestinations } = originDestination);
-  const arg1 = disabledDestinations;
   const getRowIsUnavailable = originDestination.getRowIsUnavailable;
-  const importDefault = getRowIsUnavailable;
   const onSelectedDestinationChange = originDestination.onSelectedDestinationChange;
-  const dependencyMap = onSelectedDestinationChange;
   const onSearchTextChange = originDestination.onSearchTextChange;
-  let callback = onSearchTextChange;
   let NONE = originDestination.rowMode;
   if (NONE === undefined) {
-    NONE = UserRowModes.NONE;
+    NONE = first.NONE;
   }
-  const React = NONE;
   let PX_8 = originDestination.insetStart;
   if (PX_8 === undefined) {
-    PX_8 = importDefault(dependencyMap[7]).space.PX_8;
+    PX_8 = getRowIsUnavailable(onSelectedDestinationChange[7]).space.PX_8;
   }
   let PX_12 = originDestination.insetEnd;
   if (PX_12 === undefined) {
-    PX_12 = importDefault(dependencyMap[7]).space.PX_12;
+    PX_12 = getRowIsUnavailable(onSelectedDestinationChange[7]).space.PX_12;
   }
   let flag = originDestination.autoFocusSearch;
   if (flag === undefined) {
@@ -61,50 +64,48 @@ export default function SearchableDestinationList(originDestination) {
   }
   ({ defaultNoResultsFound, disableSelection } = originDestination);
   const disableLongPress = originDestination.disableLongPress;
-  let NOOP;
-  let UserRowModes;
-  let callback2;
+  let ref;
+  first = undefined;
+  let callback;
   let results;
   let updateSearchText;
-  let callback3;
-  let closure_13;
+  let _createForOfIteratorHelperLoose;
+  c13 = undefined;
   let closure_14;
   callback = undefined;
   let memo1;
   let memo2;
-  callback2 = undefined;
-  callback3 = undefined;
+  let callback2;
+  let callback3;
   let callback4;
   let callback5;
   let ref1;
-  let tmp25;
+  let c23;
   let scaledTextLineHeight;
   ({ disableGradient, disableStickySections } = originDestination);
-  const tmp6 = callback3();
-  const ref = React.useRef(null);
-  NOOP = ref;
+  const tmp6 = _createForOfIteratorHelperLoose();
+  ref = NONE.useRef(null);
   if (null == initialSelectedDestinations) {
     initialSelectedDestinations = [];
   }
-  const tmp9 = callback(React.useState(initialSelectedDestinations), 2);
-  const first = tmp9[0];
-  UserRowModes = first;
-  callback2 = tmp9[1];
-  let obj = arg1(dependencyMap[8]);
+  const tmp9 = onSearchTextChange(NONE.useState(initialSelectedDestinations), 2);
+  first = tmp9[0];
+  callback = tmp9[1];
+  let obj = disabledDestinations(onSelectedDestinationChange[8]);
   const shareSearchResults = obj.useShareSearchResults({ selectedDestinations: first, originDestination: originDestination.originDestination, includeMissingDMs: true });
   results = shareSearchResults.results;
   updateSearchText = shareSearchResults.updateSearchText;
-  callback3 = React.useRef("");
-  [tmp13, closure_13] = callback(React.useState(false), 2);
-  closure_14 = React.useRef(null);
-  const effect = React.useEffect(() => () => {
-    const current = ref.current;
+  _createForOfIteratorHelperLoose = NONE.useRef("");
+  [tmp13, c13] = onSearchTextChange(NONE.useState(false), 2);
+  closure_14 = NONE.useRef(null);
+  const effect = NONE.useEffect(() => () => {
+    const current = outer1_14.current;
     if (null != current) {
       current.cancel();
     }
   }, []);
-  const items = [onSearchTextChange, updateSearchText];
-  callback = React.useCallback((current) => {
+  let items = [onSearchTextChange, updateSearchText];
+  callback = NONE.useCallback((current) => {
     let flag = arg1;
     if (arg1 === undefined) {
       flag = false;
@@ -123,7 +124,7 @@ export default function SearchableDestinationList(originDestination) {
       }
       _undefined(current.trim().length > 0);
       closure_14.current = disabledDestinations(onSelectedDestinationChange[9]).runAfterInteractions(() => {
-        const current = ref.current;
+        const current = outer1_22.current;
         if (null != current) {
           current.scrollToTop(false);
         }
@@ -131,24 +132,24 @@ export default function SearchableDestinationList(originDestination) {
       const obj = disabledDestinations(onSelectedDestinationChange[9]);
     }
   }, items);
-  const items1 = [first, onSelectedDestinationChange, callback];
-  const effect1 = React.useEffect(() => {
+  let items1 = [first, onSelectedDestinationChange, callback];
+  const effect1 = NONE.useEffect(() => {
     onSelectedDestinationChange(first);
     const timerId = setTimeout(() => {
-      closure_6.dismiss();
+      disableLongPress.dismiss();
     }, 0);
     const timerId1 = setTimeout(() => {
-      callback("", true);
+      outer1_15("", true);
     }, 50);
   }, items1);
   const items2 = [results.length];
-  const memo = React.useMemo(() => {
+  const memo = NONE.useMemo(() => {
     const items = [results.length];
     return items;
   }, items2);
   const items3 = [disabledDestinations];
-  const callback1 = React.useCallback(() => ({ type: "section", props: { hideTitle: true } }), []);
-  memo1 = React.useMemo(() => {
+  const callback1 = NONE.useCallback(() => ({ type: "section", props: { hideTitle: true } }), []);
+  memo1 = NONE.useMemo(() => {
     let mapped;
     if (null != disabledDestinations) {
       mapped = disabledDestinations.map(disabledDestinations(onSelectedDestinationChange[10]).destinationKey);
@@ -159,7 +160,7 @@ export default function SearchableDestinationList(originDestination) {
     return mapped;
   }, items3);
   const items4 = [first];
-  memo2 = React.useMemo(() => {
+  memo2 = NONE.useMemo(() => {
     let mapped;
     if (null != first) {
       mapped = first.map(disabledDestinations(onSelectedDestinationChange[10]).destinationKey);
@@ -170,15 +171,15 @@ export default function SearchableDestinationList(originDestination) {
     return mapped;
   }, items4);
   const items5 = [disableSelection];
-  callback2 = React.useCallback((arg0) => {
-    const disabledDestinations = arg0;
+  callback2 = NONE.useCallback((arg0) => {
+    let closure_0 = arg0;
     callback((arr) => {
-      const findIndexResult = arr.findIndex((id) => id.id === id.id);
+      const findIndexResult = arr.findIndex((id) => id.id === outer1_0.id);
       if (-1 === findIndexResult) {
-        if (closure_5) {
+        if (outer1_5) {
           return arr;
         } else {
-          const items = [arr];
+          const items = [closure_0];
           HermesBuiltin.arraySpread(arr, 1);
           let items1 = items;
         }
@@ -191,11 +192,11 @@ export default function SearchableDestinationList(originDestination) {
     });
   }, items5);
   const items6 = [callback2];
-  callback3 = React.useCallback((id) => callback2({ type: "user", id: id.id }), items6);
+  callback3 = NONE.useCallback((id) => callback2({ type: "user", id: id.id }), items6);
   const items7 = [callback2];
-  callback4 = React.useCallback((id) => callback2({ type: "channel", id: id.id }), items7);
+  callback4 = NONE.useCallback((id) => callback2({ type: "channel", id: id.id }), items7);
   const items8 = [results, getRowIsUnavailable, memo2, memo1, disableSelection, disableLongPress, NONE, callback3, callback4];
-  callback5 = React.useCallback((arg0, arg1) => {
+  callback5 = NONE.useCallback((arg0, arg1) => {
     let record;
     let type;
     ({ type, record } = results[arg1]);
@@ -302,12 +303,13 @@ export default function SearchableDestinationList(originDestination) {
       }
     }
   }, items8);
-  ref1 = React.useRef(null);
-  tmp25 = importDefault(dependencyMap[14])();
-  let obj2 = arg1(dependencyMap[15]);
+  ref1 = NONE.useRef(null);
+  const tmp25 = getRowIsUnavailable(onSelectedDestinationChange[14])();
+  c23 = tmp25;
+  let obj2 = disabledDestinations(onSelectedDestinationChange[15]);
   scaledTextLineHeight = obj2.useScaledTextLineHeight("text-xs/medium");
   const items9 = [callback5, tmp25, scaledTextLineHeight];
-  const callback6 = React.useCallback((arg0, arg1) => {
+  const callback6 = NONE.useCallback((arg0, arg1) => {
     const element = callback5(arg0, arg1);
     let type;
     if (null != element) {
@@ -326,13 +328,13 @@ export default function SearchableDestinationList(originDestination) {
       }
       if (null != subLabelLineClamp) {
         if (subLabelLineClamp > 1) {
-          let tmp4 = getRowIsUnavailable(onSelectedDestinationChange[16])(tmp25 + (subLabelLineClamp - 1) * scaledTextLineHeight);
+          let tmp4 = getRowIsUnavailable(onSelectedDestinationChange[16])(c23 + (subLabelLineClamp - 1) * scaledTextLineHeight);
         }
         return tmp4;
       }
-      tmp4 = tmp25;
+      tmp4 = c23;
     }
-    const subLabelLineClamp = element.props.subLabelLineClamp;
+    subLabelLineClamp = element.props.subLabelLineClamp;
   }, items9);
   const someResult = memo.some((arg0) => arg0 > 0);
   if (someResult) {
@@ -345,7 +347,7 @@ export default function SearchableDestinationList(originDestination) {
     obj.insetStart = PX_8;
     obj.insetEnd = PX_12;
     obj.disableStickySections = disableStickySections;
-    let tmp29Result = tmp29(arg1(dependencyMap[17]).UsersFastList, obj);
+    let tmp29Result = tmp29(disabledDestinations(onSelectedDestinationChange[17]).UsersFastList, obj);
   } else {
     if (!tmp13) {
       if (null != defaultNoResultsFound) {
@@ -356,19 +358,19 @@ export default function SearchableDestinationList(originDestination) {
       }
       tmp29Result = tmp29(tmp30, obj);
     }
-    const obj1 = { style: tmp6.noResults };
+    let obj1 = { style: tmp6.noResults };
     obj2 = {};
-    const intl = arg1(dependencyMap[19]).intl;
-    obj2.title = intl.string(arg1(dependencyMap[19]).t.V6nAfF);
-    obj1.children = callback2(importDefault(dependencyMap[18]), obj2);
+    const intl = disabledDestinations(onSelectedDestinationChange[19]).intl;
+    obj2.title = intl.string(disabledDestinations(onSelectedDestinationChange[19]).t.V6nAfF);
+    obj1.children = callback(getRowIsUnavailable(onSelectedDestinationChange[18]), obj2);
     obj = obj1;
-    const tmp34 = importDefault(dependencyMap[18]);
+    const tmp34 = getRowIsUnavailable(onSelectedDestinationChange[18]);
   }
-  const obj3 = {};
+  let obj3 = {};
   let tmp42 = !disableGradient;
   if (tmp42) {
-    const obj4 = { absolute: true };
-    tmp42 = callback2(importDefault(dependencyMap[20]), obj4);
+    let obj4 = { absolute: true };
+    tmp42 = callback(getRowIsUnavailable(onSelectedDestinationChange[20]), obj4);
   }
   const items11 = [tmp42, , ];
   if (flag2) {
@@ -380,14 +382,14 @@ export default function SearchableDestinationList(originDestination) {
     obj3.children = items11;
     return updateSearchText(results, obj3);
   }
-  const obj5 = { style: tmp6.searchBarContainer };
-  const obj6 = { ref, size: "md", onChange: callback };
+  let obj5 = { style: tmp6.searchBarContainer };
+  let obj6 = { ref, size: "md", onChange: callback };
   if (flag) {
     flag = someResult;
   }
   obj6.autoFocus = flag;
-  const intl2 = arg1(dependencyMap[19]).intl;
-  obj6.accessibilityLabel = intl2.string(arg1(dependencyMap[19]).t.CaEER6);
-  obj5.children = callback2(arg1(dependencyMap[21]).SearchField, obj6);
+  const intl2 = disabledDestinations(onSelectedDestinationChange[19]).intl;
+  obj6.accessibilityLabel = intl2.string(disabledDestinations(onSelectedDestinationChange[19]).t.CaEER6);
+  obj5.children = callback(disabledDestinations(onSelectedDestinationChange[21]).SearchField, obj6);
   tmp47Result = tmp47(disableSelection, obj5);
 };

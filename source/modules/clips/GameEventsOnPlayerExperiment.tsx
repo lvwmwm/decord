@@ -1,14 +1,15 @@
-// Module ID: 4665
-// Function ID: 40519
+// Module ID: 4668
+// Function ID: 40537
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 4665 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { enableGameEventsOnPlayer: false }, variations: { [1]: { enableGameEventsOnPlayer: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/clips/GameEventsOnPlayerExperiment.tsx");
+// Module 4668 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-07-clips-game-events-on-player", defaultConfig: { enableGameEventsOnPlayer: false }, variations: { [1]: { enableGameEventsOnPlayer: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/clips/GameEventsOnPlayerExperiment.tsx");
 
 export default apexExperiment;
 export const isGameEventsOnPlayerEnabled = function isGameEventsOnPlayerEnabled(getClipEventsTimeline) {

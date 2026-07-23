@@ -1,16 +1,16 @@
-// Module ID: 11088
-// Function ID: 86229
-// Dependencies: []
+// Module ID: 11098
+// Function ID: 86279
+// Dependencies: [653, 507, 2]
 
-// Module 11088
-const Endpoints = require(dependencyMap[0]).Endpoints;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/private_channel_recipient/PrivateChannelRecipientActionCreators.tsx");
+// Module 11098
+import { Endpoints } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/private_channel_recipient/PrivateChannelRecipientActionCreators.tsx");
 
 export default {
   updatePrivateChannelRecipientFlags(id, setFlagResult) {
-    const HTTP = require(dependencyMap[1]).HTTP;
-    let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: obj, rejectWithError: false };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: obj, rejectWithError: false };
     obj = { flags: setFlagResult };
     return HTTP.patch(obj);
   }

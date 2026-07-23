@@ -1,39 +1,41 @@
 // Module ID: 1602
-// Function ID: 17822
+// Function ID: 17823
 // Name: NativeWorklets
-// Dependencies: []
+// Dependencies: [6, 7, 99, 100, 1603, 1604, 1593]
 // Exports: createNativeWorkletsModule
 
 // Module 1602 (NativeWorklets)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3])("workletsModuleProxy");
-let closure_7 = () => {
+import processStack from "processStack";
+import _defineProperties from "_defineProperties";
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+
+const require = arg1;
+let closure_6 = require("_classPrivateFieldKey")("workletsModuleProxy");
+let closure_7 = (() => {
   class NativeWorklets {
     constructor() {
-      tmp = closure_3(this, NativeWorklets);
-      definePropertyResult = Object.defineProperty(this, closure_6, { writable: true, value: undefined });
+      tmp = outer1_3(this, NativeWorklets);
+      definePropertyResult = Object.defineProperty(this, outer1_6, { writable: true, value: undefined });
       if (undefined === NativeWorklets.__workletsModuleProxy) {
-        tmp3 = closure_1;
-        tmp4 = closure_2;
+        tmp3 = outer1_1;
+        tmp4 = outer1_2;
         num = 4;
-        obj = closure_1(closure_2[4]);
+        obj = outer1_1(outer1_2[4]);
         num2 = 5;
         valueUnpackerCode = obj.getValueUnpackerCode();
         tmp6 = null;
-        if (null != closure_1(closure_2[5]).WorkletsTurboModule) {
-          tmp7 = closure_1;
-          tmp8 = closure_2;
-          WorkletsTurboModule = closure_1(closure_2[5]).WorkletsTurboModule;
+        if (null != outer1_1(outer1_2[5]).WorkletsTurboModule) {
+          tmp7 = outer1_1;
+          tmp8 = outer1_2;
+          WorkletsTurboModule = outer1_1(outer1_2[5]).WorkletsTurboModule;
           installTurboModuleResult = WorkletsTurboModule.installTurboModule(valueUnpackerCode);
         }
       }
       if (undefined === NativeWorklets.__workletsModuleProxy) {
-        tmp13 = closure_1;
-        tmp14 = closure_2;
+        tmp13 = outer1_1;
+        tmp14 = outer1_2;
         num3 = 6;
-        ReanimatedError = closure_1(closure_2[6]).ReanimatedError;
+        ReanimatedError = outer1_1(outer1_2[6]).ReanimatedError;
         prototype = ReanimatedError.prototype;
         tmp15 = new.target;
         str = "Native part of Reanimated doesn't seem to be initialized (Worklets).\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#native-part-of-reanimated-doesnt-seem-to-be-initialized for more details.";
@@ -42,25 +44,24 @@ let closure_7 = () => {
         tmp18 = reanimatedError;
         throw reanimatedError;
       } else {
-        tmp10 = closure_5;
-        tmp11 = closure_6;
+        tmp10 = outer1_5;
+        tmp11 = outer1_6;
         tmp12 = NativeWorklets;
-        closure_5(this, closure_6)[closure_6] = NativeWorklets.__workletsModuleProxy;
+        outer1_5(this, outer1_6)[outer1_6] = NativeWorklets.__workletsModuleProxy;
         return;
       }
     }
   }
-  const global = NativeWorklets;
   const items = [
     {
       key: "makeShareableClone",
       value: function makeShareableClone(arg0, arg1, arg2) {
-        return callback3(this, closure_6)[closure_6].makeShareableClone(arg0, arg1, arg2);
+        return outer1_5(this, outer1_6)[outer1_6].makeShareableClone(arg0, arg1, arg2);
       }
     }
   ];
   return callback(NativeWorklets, items);
-}();
+})();
 
 export const createNativeWorkletsModule = function createNativeWorkletsModule() {
   return new closure_7();

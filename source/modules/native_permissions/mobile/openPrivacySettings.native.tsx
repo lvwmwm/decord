@@ -1,18 +1,18 @@
-// Module ID: 4680
-// Function ID: 40798
+// Module ID: 4683
+// Function ID: 40816
 // Name: openPrivacySettings
-// Dependencies: []
+// Dependencies: [27, 477, 4684, 2]
 // Exports: default
 
-// Module 4680 (openPrivacySettings)
-const NativeModules = require(dependencyMap[0]).NativeModules;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/native_permissions/mobile/openPrivacySettings.native.tsx");
+// Module 4683 (openPrivacySettings)
+import { NativeModules } from "get ActivityIndicator";
+
+const result = require("enforcing").fileFinishedImporting("modules/native_permissions/mobile/openPrivacySettings.native.tsx");
 
 export default function openPrivacySettings() {
   if (obj.isAndroid()) {
-    importDefault(dependencyMap[2]).openPrivacySettings();
-    const obj2 = importDefault(dependencyMap[2]);
+    importDefault(4684).openPrivacySettings();
+    const obj2 = importDefault(4684);
   } else {
     const DeviceSettingsManager = NativeModules.DeviceSettingsManager;
     DeviceSettingsManager.openPrivacySettings();

@@ -1,13 +1,13 @@
 // Module ID: 1787
-// Function ID: 19812
+// Function ID: 19813
 // Name: KeyboardAvoidingView
-// Dependencies: []
+// Dependencies: [1788, 1791, 1792, 1798, 1810]
 
 // Module 1787 (KeyboardAvoidingView)
 
-export const KeyboardAvoidingView = importDefault(dependencyMap[0]);
-export const KeyboardStickyView = importDefault(dependencyMap[1]);
-export const KeyboardAwareScrollView = importDefault(dependencyMap[2]);
-export const KeyboardToolbar = importDefault(dependencyMap[3]);
-export const DefaultKeyboardToolbarTheme = arg1(dependencyMap[3]).DefaultKeyboardToolbarTheme;
-export const KeyboardChatScrollView = importDefault(dependencyMap[4]);
+export const KeyboardAvoidingView = require("forwardRef");
+export const KeyboardStickyView = require("forwardRef");
+export const KeyboardAwareScrollView = require("forwardRef");
+export const KeyboardToolbar = require("KeyboardToolbar");
+export const DefaultKeyboardToolbarTheme = require("KeyboardToolbar").DefaultKeyboardToolbarTheme;
+export const KeyboardChatScrollView = require("forwardRef");

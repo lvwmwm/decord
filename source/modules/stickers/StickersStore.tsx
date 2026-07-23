@@ -1,9 +1,21 @@
-// Module ID: 5032
-// Function ID: 43337
+// Module ID: 5035
+// Function ID: 43355
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5, 1350, 1838, 5036, 5037, 1882, 1901, 20, 5038, 686, 566, 2]
 
-// Module 5032 (_isNativeReflectConstruct)
+// Module 5035 (_isNativeReflectConstruct)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_createForOfIteratorHelperLoose";
+import initialize from "initialize";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,47 +29,38 @@ function loadSavedGuildStickers() {
   return _loadSavedGuildStickers(...arguments);
 }
 async function _loadSavedGuildStickers() {
-  let databaseResult;
-  if (Loaded === closure_13.Unloaded) {
-    databaseResult = callback(closure_2[10]).database();
+  let c0;
+  if (outer2_14 === outer2_13.Unloaded) {
+    const databaseResult = outer2_1(outer2_2[10]).database();
+    c0 = databaseResult;
     if (null != databaseResult) {
-      const Loaded = closure_13.Loaded;
-      let obj = databaseResult(closure_2[11]);
-      const tmp4 = yield obj.tryLoadOrResetCacheGatewayAsync("StickerStore.loadSavedGuildStickers", () => callback(closure_2[12]).timeAsync("\u{1F4BE}", "loadSavedGuildStickers", () => callback(closure_2[13]).getAsync(closure_0)));
+      outer2_14 = outer2_13.Loaded;
+      let obj = outer2_0(outer2_2[11]);
+      const tmp4 = yield obj.tryLoadOrResetCacheGatewayAsync("StickerStore.loadSavedGuildStickers", () => outer3_1(outer3_2[12]).timeAsync("\u{1F4BE}", "loadSavedGuildStickers", () => outer4_1(outer4_2[13]).getAsync(outer1_0)));
       if (null != tmp4) {
         obj = { type: "CACHED_STICKERS_LOADED", stickers: tmp4 };
-        callback(closure_2[14]).dispatch(obj);
-        const obj2 = callback(closure_2[14]);
+        outer2_1(outer2_2[14]).dispatch(obj);
+        const obj2 = outer2_1(outer2_2[14]);
       }
     }
-    const obj4 = callback(closure_2[10]);
+    const obj4 = outer2_1(outer2_2[10]);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
 let obj = { Unloaded: 0, [0]: "Unloaded", Loaded: 1, [1]: "Loaded" };
-const Unloaded = obj.Unloaded;
-let tmp2 = (Store) => {
+let Unloaded = obj.Unloaded;
+let tmp2 = ((Store) => {
   class StickersStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, StickersStore);
-      obj = closure_6(StickersStore);
-      tmp2 = closure_5;
-      if (closure_15()) {
+      tmp = outer1_3(this, StickersStore);
+      obj = outer1_6(StickersStore);
+      tmp2 = outer1_5;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -66,58 +69,57 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = StickersStore;
   callback2(StickersStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_9, closure_11, closure_10, closure_12);
-      const items = [closure_11, closure_12];
+      this.waitFor(outer1_9, outer1_11, outer1_10, outer1_12);
+      const items = [outer1_11, outer1_12];
       this.syncWith(items, () => true);
     }
   };
-  const items = [obj, , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , ];
   obj = {
     key: "isLoaded",
     get() {
-      return closure_14 !== Unloaded.Unloaded;
+      return outer1_14 !== outer1_13.Unloaded;
     }
   };
   items[1] = obj;
   obj = {
     key: "loadState",
     get() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getStickerMetadataArrays",
     value() {
-      callback4();
-      const items = [store.getStickerMetadataMap(), store2.getStickerMetadataMap()];
+      outer1_16();
+      const items = [outer1_11.getStickerMetadataMap(), outer1_12.getStickerMetadataMap()];
       return items;
     }
   };
   items[4] = {
     key: "hasLoadedStickerPacks",
     get() {
-      return store2.hasLoadedStickerPacks;
+      return outer1_12.hasLoadedStickerPacks;
     }
   };
   items[5] = {
     key: "isFetchingStickerPacks",
     get() {
-      return store2.isFetchingStickerPacks;
+      return outer1_12.isFetchingStickerPacks;
     }
   };
   items[6] = {
     key: "getStickerById",
     value(arg0) {
-      callback4();
-      let stickerById = store.getStickerById(arg0);
+      outer1_16();
+      let stickerById = outer1_11.getStickerById(arg0);
       if (null == stickerById) {
-        stickerById = store2.getStickerById(arg0);
+        stickerById = outer1_12.getStickerById(arg0);
       }
       return stickerById;
     }
@@ -125,49 +127,49 @@ let tmp2 = (Store) => {
   items[7] = {
     key: "getStickerPack",
     value(arg0) {
-      return store2.getStickerPack(arg0);
+      return outer1_12.getStickerPack(arg0);
     }
   };
   items[8] = {
     key: "getPremiumPacks",
     value() {
-      return store2.getPremiumPacks();
+      return outer1_12.getPremiumPacks();
     }
   };
   items[9] = {
     key: "isPremiumPack",
     value(arg0) {
-      return store2.isPremiumPack(arg0);
+      return outer1_12.isPremiumPack(arg0);
     }
   };
   items[10] = {
     key: "getRawStickersByGuild",
     value() {
-      return store.getAllGuildStickers();
+      return outer1_11.getAllGuildStickers();
     }
   };
   items[11] = {
     key: "getAllGuildStickers",
     value() {
-      callback4();
-      return store.getAllGuildStickers();
+      outer1_16();
+      return outer1_11.getAllGuildStickers();
     }
   };
   items[12] = {
     key: "getAllPackStickers",
     value() {
-      return store2.getAllPackStickers();
+      return outer1_12.getAllPackStickers();
     }
   };
   items[13] = {
     key: "getStickersByGuildId",
     value(arg0) {
-      callback4();
-      return store.getStickersByGuildId(arg0);
+      outer1_16();
+      return outer1_11.getStickersByGuildId(arg0);
     }
   };
   return callback(StickersStore, items);
-}(importDefault(dependencyMap[15]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "StickersStore";
 obj = {
   BACKGROUND_SYNC: function handleBackgroundSync() {
@@ -186,7 +188,7 @@ obj = {
     const Unloaded = obj.Unloaded;
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[14]), obj);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/stickers/StickersStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stickers/StickersStore.tsx");
 
 export default tmp2;

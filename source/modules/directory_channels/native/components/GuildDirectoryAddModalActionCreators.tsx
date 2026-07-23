@@ -1,16 +1,15 @@
-// Module ID: 10030
-// Function ID: 77497
-// Dependencies: [616693760, 609157120, 508887040, 587268096]
+// Module ID: 10038
+// Function ID: 77537
+// Dependencies: [4337, 10039, 1934, 2]
 
-// Module 10030
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryAddModalActionCreators.tsx");
+// Module 10038
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryAddModalActionCreators.tsx");
 
 export default {
-  open(closure_2) {
-    importDefault(dependencyMap[0]).pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), closure_2, "GUILD_DIRECTORY_ADD_MODAL_KEY");
+  open(merged) {
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(10039, dependencyMap.paths), merged, "GUILD_DIRECTORY_ADD_MODAL_KEY");
   },
   close() {
-    importDefault(dependencyMap[0]).popWithKey("GUILD_DIRECTORY_ADD_MODAL_KEY");
+    importDefault(4337).popWithKey("GUILD_DIRECTORY_ADD_MODAL_KEY");
   }
 };

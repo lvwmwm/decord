@@ -1,17 +1,16 @@
-// Module ID: 15902
-// Function ID: 121775
+// Module ID: 16019
+// Function ID: 123948
 // Name: trackEvent
-// Dependencies: [670, 2, 6]
+// Dependencies: [653, 675, 2]
 // Exports: trackEvent
 
-// Module 15902 (trackEvent)
-import { AnalyticEvents } from "MessageEmbedTypes";
-import _classCallCheck from "_classCallCheck";
+// Module 16019 (trackEvent)
+import { AnalyticEvents } from "ME";
 
-const result = _classCallCheck.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellUtils.tsx");
 
 export const trackEvent = function trackEvent(action, guild_id) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(675);
   obj = { action, guild_id };
   obj.track(AnalyticEvents.DM_SETTINGS_UPSELL_ACTION, obj);
 };

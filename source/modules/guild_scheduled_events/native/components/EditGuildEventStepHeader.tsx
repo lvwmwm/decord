@@ -1,30 +1,34 @@
-// Module ID: 8430
-// Function ID: 67170
+// Module ID: 8436
+// Function ID: 67207
 // Name: EditGuildEventStepHeader
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 4126, 2]
 // Exports: default
 
-// Module 8430 (EditGuildEventStepHeader)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ header: { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 }, headerTitle: { y: 800, channelId: 16 }, headerSubtitle: { textAlign: "center" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventStepHeader.tsx");
+// Module 8436 (EditGuildEventStepHeader)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-export default function EditGuildEventStepHeader(children) {
-  const subtitle = children.subtitle;
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 8, marginBottom: 8 }, headerSubtitle: { textAlign: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventStepHeader.tsx");
+
+export default function EditGuildEventStepHeader(subtitle) {
+  subtitle = subtitle.subtitle;
   const tmp = callback2();
   let obj = { style: tmp.header };
-  obj = { style: tmp.headerTitle, children: children.title };
-  const items = [callback(arg1(dependencyMap[4]).Text, obj), ];
+  obj = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: subtitle.title };
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
   let tmp4 = null;
   if (null != subtitle) {
     tmp4 = null;
     if ("" !== subtitle) {
-      obj = { style: tmp.headerSubtitle, children: subtitle };
-      tmp4 = callback(arg1(dependencyMap[4]).Text, obj);
+      obj = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
+      tmp4 = callback(require(4126) /* Text */.Text, obj);
     }
   }
   items[1] = tmp4;

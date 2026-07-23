@@ -1,9 +1,24 @@
-// Module ID: 5072
-// Function ID: 44115
+// Module ID: 5075
+// Function ID: 44134
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 5, 5076, 1348, 653, 664, 507, 5078, 2]
 
-// Module 5072 (_isNativeReflectConstruct)
+// Module 5075 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+import tmp3 from "AutomaticLifecycleManager";
+
+let closure_10;
+let closure_11;
+let closure_12;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,104 +29,105 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleConnectionOpen() {
+  const obj = {};
   const merged = Object.assign(store.getCollapsedCategories());
-  let closure_13 = {};
 }
 function scheduleSync() {
   clearTimeout(timeout);
-  const timeout = setTimeout(() => callback({}), closure_15);
+  timeout = setTimeout(() => outer1_21({}), closure_15);
 }
 function saveUserGuildSettings(id, muteSettings) {
   return _saveUserGuildSettings(...arguments);
 }
-async function _saveUserGuildSettings(arg0, body, arg2) {
+async function _saveUserGuildSettings(arg0, arg1, arg2) {
   let tmp = arg0;
   if (null != tmp) {
-    if (tmp !== closure_12) {
-      if (null != body) {
+    if (tmp !== outer2_12) {
+      if (null != arg1) {
         let obj = {};
         if (null == tmp) {
-          tmp = closure_12;
+          tmp = outer2_12;
         }
-        obj[tmp] = body;
+        obj[tmp] = arg1;
       } else {
         obj = {};
       }
-      return yield closure_21(obj);
+      return yield outer2_21(obj);
     }
   }
-  const HTTP = callback(closure_1[10]).HTTP;
-  obj = { url: closure_10.USER_GUILD_SETTINGS(closure_12), body, rejectWithError: false };
+  const HTTP = outer2_0(outer2_1[10]).HTTP;
+  obj = { url: outer2_10.USER_GUILD_SETTINGS(outer2_12), body: arg1, rejectWithError: false };
   yield HTTP.patch(obj);
 }
 function saveUserGuildSettingsBulk(arg0) {
   return _saveUserGuildSettingsBulk(...arguments);
 }
-async function _saveUserGuildSettingsBulk(guilds, arg1) {
-  clearTimeout(closure_14);
-  const tmp2 = 0 !== Object.keys(guilds).length;
-  const collapsedCategories = store.getCollapsedCategories();
+async function _saveUserGuildSettingsBulk(arg0, arg1) {
+  clearTimeout(outer2_14);
+  const tmp4 = 0 !== Object.keys(arg0).length;
+  const collapsedCategories = outer2_8.getCollapsedCategories();
   let obj = {};
-  const collapsedCategories1 = store.getCollapsedCategories();
+  const collapsedCategories1 = outer2_8.getCollapsedCategories();
   for (const key10022 in collapsedCategories1) {
-    let tmp19 = key10022;
-    let tmp20 = closure_13;
-    if (collapsedCategories1[key10022] === closure_13[key10022]) {
+    let tmp21 = key10022;
+    let tmp22 = outer2_13;
+    if (collapsedCategories1[key10022] === outer2_13[key10022]) {
       continue;
     } else {
       obj[key10022] = true;
-      // continue
+      continue;
     }
     continue;
   }
-  for (const key10025 in closure_13) {
-    let tmp21 = key10025;
-    let tmp22 = closure_13;
-    if (collapsedCategories1[key10025] === closure_13[key10025]) {
+  for (const key10025 in outer2_13) {
+    let tmp23 = key10025;
+    let tmp24 = outer2_13;
+    if (collapsedCategories1[key10025] === outer2_13[key10025]) {
       continue;
     } else {
       obj[key10025] = true;
-      // continue
+      continue;
     }
     continue;
   }
-  let flag = tmp2;
-  let tmp6 = tmp2;
+  let flag = tmp4;
+  let tmp8 = tmp4;
   const keys = Object.keys();
   if (keys !== undefined) {
-    tmp6 = flag;
-    while (keys[tmp5] !== undefined) {
-      let tmp23 = tmp8;
-      let tmp24 = channel;
-      let channel = channel.getChannel(tmp8);
-      let tmp9 = null != channel && null != channel.guild_id;
-      if (!tmp9) {
+    tmp8 = flag;
+    while (keys[tmp7] !== undefined) {
+      let tmp25 = tmp10;
+      let tmp26 = outer2_9;
+      let channel = outer2_9.getChannel(tmp10);
+      let tmp11 = null != channel && null != channel.guild_id;
+      if (!tmp11) {
         continue;
       } else {
-        if (!(channel.guild_id in guilds)) {
-          guilds[channel.guild_id] = {};
+        if (!(channel.guild_id in arg0)) {
+          arg0[channel.guild_id] = {};
         }
-        if (null == guilds[channel.guild_id].channel_overrides) {
-          guilds[channel.guild_id].channel_overrides = {};
+        if (null == arg0[channel.guild_id].channel_overrides) {
+          arg0[channel.guild_id].channel_overrides = {};
         }
         obj = {};
-        let tmp10 = obj;
-        let merged = Object.assign(guilds[channel.guild_id].channel_overrides[channel.id]);
+        let tmp12 = obj;
+        let merged = Object.assign(arg0[channel.guild_id].channel_overrides[channel.id]);
         obj["collapsed"] = channel.id in collapsedCategories;
-        guilds[channel.guild_id].channel_overrides[channel.id] = obj;
+        arg0[channel.guild_id].channel_overrides[channel.id] = obj;
         flag = true;
-        // continue
+        continue;
       }
       continue;
     }
   }
-  if (tmp6) {
+  if (tmp8) {
     obj = {};
     const merged1 = Object.assign(collapsedCategories);
-    delete r6[r1];
-    const HTTP = callback(closure_1[10]).HTTP;
-    const obj1 = { url: constants.USER_GUILD_SETTINGS_BULK };
-    const obj2 = { guilds };
+    const outer2_13 = obj;
+    delete tmp2[tmp];
+    const HTTP = outer2_0(outer2_1[10]).HTTP;
+    const obj1 = { url: outer2_10.USER_GUILD_SETTINGS_BULK };
+    const obj2 = { guilds: arg0 };
     obj1.body = obj2;
     obj1.rejectWithError = false;
     let body = yield HTTP.patch(obj1).body;
@@ -121,52 +137,14 @@ async function _saveUserGuildSettingsBulk(guilds, arg1) {
   return body;
 }
 function handleUserGuildSettingsFullUpdate() {
+  const obj = {};
   const merged = Object.assign(store.getCollapsedCategories());
-  let closure_13 = {};
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-({ Endpoints: closure_10, FAVORITES: closure_11, ME: closure_12 } = arg1(dependencyMap[8]));
+({ Endpoints: closure_10, FAVORITES: closure_11, ME: closure_12 } = ME);
 let closure_13 = {};
-let closure_14 = 0;
-let closure_15 = 15 * importDefault(dependencyMap[9]).Millis.SECOND;
-let tmp3 = (arg0) => {
-  class UserGuildSettingsManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, UserGuildSettingsManager);
-      items1 = [...items];
-      obj = closure_5(UserGuildSettingsManager);
-      tmp2 = closure_4;
-      if (closure_16()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = { CATEGORY_COLLAPSE: closure_18, CATEGORY_EXPAND: closure_18, CATEGORY_COLLAPSE_ALL: closure_18, CATEGORY_EXPAND_ALL: closure_18, POST_CONNECTION_OPEN: closure_17, USER_GUILD_SETTINGS_FULL_UPDATE: closure_23 };
-      tmp2Result.actions = obj;
-      tmp2Result.saveUserGuildSettings = closure_19;
-      tmp2Result.saveUserGuildSettingsBulk = closure_21;
-      return tmp2Result;
-    }
-  }
-  const arg1 = UserGuildSettingsManager;
-  callback2(UserGuildSettingsManager, arg0);
-  return callback(UserGuildSettingsManager);
-}(importDefault(dependencyMap[11]));
+let c14 = 0;
+let closure_15 = 15 * require("set").Millis.SECOND;
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/UserGuildSettingsManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/UserGuildSettingsManager.tsx");
 
 export default tmp3;

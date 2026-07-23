@@ -1,16 +1,15 @@
-// Module ID: 13693
-// Function ID: 103630
+// Module ID: 13807
+// Function ID: 105786
 // Name: formatGiftDate
-// Dependencies: []
+// Dependencies: [1212, 3355, 5618, 2198, 2]
 // Exports: getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 13693 (formatGiftDate)
+// Module 13807 (formatGiftDate)
 function formatGiftDate(offeredAt) {
-  const dateTimeFormat = new Intl.DateTimeFormat(require(dependencyMap[0]).intl.currentLocale, {});
-  return dateTimeFormat.format(require(dependencyMap[1]).parseISO(offeredAt));
+  const dateTimeFormat = new Intl.DateTimeFormat(require(1212) /* getSystemLocale */.intl.currentLocale, { month: "short", day: "numeric" });
+  return dateTimeFormat.format(require(3355).parseISO(offeredAt));
 }
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
+const result = require("formatSingleCurrencyPrice").fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
 
 export const getGiftRowDisplayInfo = function getGiftRowDisplayInfo(giftInfo) {
   return { skuId: giftInfo.sku_id, subscriptionPlanId: giftInfo.subscription_plan_id, price: giftInfo.price, gifterUserId: giftInfo.gifter_user_id, claimed: giftInfo.claimed, offeredAt: giftInfo.offered_at, claimedAt: giftInfo.claimed_at };
@@ -24,19 +23,19 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
   ({ price, gifterName, offeredAt, claimedAt } = claimed);
   let formatPriceResult = null;
   if (null != price) {
-    let obj = require(dependencyMap[2]);
+    let obj = require(5618) /* formatSingleCurrencyPrice */;
     formatPriceResult = obj.formatPrice(price.amount, price.currency);
   }
   if (null != formatPriceResult) {
     if (null != gifterName) {
-      const intl = require(dependencyMap[0]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       obj = { price: formatPriceResult, username: gifterName };
-      let formatToPlainStringResult = intl.formatToPlainString(importDefault(dependencyMap[3]).o44n/1, obj);
+      let formatToPlainStringResult = intl.formatToPlainString(importDefault(2198)["o44n/1"], obj);
     }
     const items = [formatToPlainStringResult, ];
-    const intl2 = require(dependencyMap[0]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const tmp11 = importDefault(dependencyMap[3]);
+    const tmp11 = importDefault(2198);
     if (claimed.claimed) {
       obj = {};
       if (null != claimedAt) {

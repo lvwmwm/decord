@@ -1,25 +1,26 @@
-// Module ID: 9890
-// Function ID: 76574
+// Module ID: 9897
+// Function ID: 76615
 // Name: useForwardPreviewContent
-// Dependencies: []
+// Dependencies: [3758, 566, 4464, 2]
 // Exports: useForwardPreviewContent
 
-// Module 9890 (useForwardPreviewContent)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");
+// Module 9897 (useForwardPreviewContent)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("validateSize").fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");
 
 export const useForwardPreviewContent = function useForwardPreviewContent(message) {
+  let dependencyMap;
   let forwardOptions;
   message = message.message;
-  const arg1 = message;
-  ({ channel: closure_1, forwardOptions } = message);
-  let closure_2;
-  let onlyEmbedIndices;
+  ({ channel: dependencyMap, forwardOptions } = message);
   let onlyAttachmentIds;
+  let onlyEmbedIndices;
+  onlyAttachmentIds = undefined;
   if (null != forwardOptions) {
     onlyAttachmentIds = forwardOptions.onlyAttachmentIds;
   }
-  closure_2 = onlyAttachmentIds;
   onlyEmbedIndices = undefined;
   if (null != forwardOptions) {
     onlyEmbedIndices = forwardOptions.onlyEmbedIndices;
@@ -37,17 +38,17 @@ export const useForwardPreviewContent = function useForwardPreviewContent(messag
     attachments = [];
   }
   const items = [];
-  let obj = arg1(dependencyMap[1]);
-  const items1 = [closure_2];
+  let obj = message(566);
+  const items1 = [onlyAttachmentIds];
   if (obj.useStateFromStores(items1, () => {
     let shouldStripEmbedsResult = null != closure_1;
     if (shouldStripEmbedsResult) {
-      shouldStripEmbedsResult = !message(closure_1[2]).canEmbedLinks(closure_1, onlyAttachmentIds);
-      const obj = message(closure_1[2]);
+      shouldStripEmbedsResult = !message(outer1_1[2]).canEmbedLinks(closure_1, onlyAttachmentIds);
+      const obj = message(outer1_1[2]);
     }
     if (shouldStripEmbedsResult) {
-      shouldStripEmbedsResult = message(closure_1[2]).shouldStripEmbeds(message);
-      const obj2 = message(closure_1[2]);
+      shouldStripEmbedsResult = message(outer1_1[2]).shouldStripEmbeds(message);
+      const obj2 = message(outer1_1[2]);
     }
     return shouldStripEmbedsResult;
   })) {

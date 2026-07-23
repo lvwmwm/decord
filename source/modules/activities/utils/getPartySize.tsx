@@ -1,12 +1,13 @@
-// Module ID: 10897
-// Function ID: 84727
+// Module ID: 10907
+// Function ID: 84776
 // Name: getPartySize
-// Dependencies: []
+// Dependencies: [57, 2]
 // Exports: getPartySize
 
-// Module 10897 (getPartySize)
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/activities/utils/getPartySize.tsx");
+// Module 10907 (getPartySize)
+import _slicedToArray from "_slicedToArray";
+
+const result = require("set").fileFinishedImporting("modules/activities/utils/getPartySize.tsx");
 
 export const getPartySize = function getPartySize(activity) {
   if (null != activity) {
@@ -20,5 +21,5 @@ export const getPartySize = function getPartySize(activity) {
       }
     }
   }
-  return { "Bool(false)": "pow", "Bool(false)": "decorationCutout" };
+  return { partySize: -1, maxPartySize: -1 };
 };

@@ -1,31 +1,35 @@
-// Module ID: 16014
-// Function ID: 122870
+// Module ID: 16131
+// Function ID: 125043
 // Name: RedesignSkipAvatarUploadAlertModal
-// Dependencies: []
+// Dependencies: [31, 33, 4475, 1212, 4475, 2]
 // Exports: default
 
-// Module 16014 (RedesignSkipAvatarUploadAlertModal)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/avatar/native/components/RedesignSkipAvatarUploadAlertModal.tsx");
+// Module 16131 (RedesignSkipAvatarUploadAlertModal)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+const result = require("getAlertModalItemKey").fileFinishedImporting("modules/avatar/native/components/RedesignSkipAvatarUploadAlertModal.tsx");
 
 export default function RedesignSkipAvatarUploadAlertModal(onConfirm) {
   let obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.title = intl.string(arg1(dependencyMap[3]).t.DnKHuV);
-  const intl2 = arg1(dependencyMap[3]).intl;
-  obj.content = intl2.string(arg1(dependencyMap[3]).t.1EPySE);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.DnKHuV);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl2.string(require(1212) /* getSystemLocale */.t["1EPySE"]);
   obj = {};
   obj = { onPress: onConfirm.onConfirm };
-  const intl3 = arg1(dependencyMap[3]).intl;
-  obj.text = intl3.string(arg1(dependencyMap[3]).t.nhJ8OC);
-  const items = [callback(arg1(dependencyMap[2]).AlertActionButton, obj, "confirm"), ];
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl3.string(require(1212) /* getSystemLocale */.t.nhJ8OC);
+  const items = [callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary" };
-  const intl4 = arg1(dependencyMap[3]).intl;
-  obj1.text = intl4.string(arg1(dependencyMap[3]).t.7eZ3ji);
-  items[1] = callback(arg1(dependencyMap[2]).AlertActionButton, obj1, "add-profile-picture");
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj1.text = intl4.string(require(1212) /* getSystemLocale */.t["7eZ3ji"]);
+  items[1] = callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj1, "add-profile-picture");
   obj.children = items;
-  obj.actions = callback2(arg1(dependencyMap[4]).AlertActions, obj);
-  return callback(arg1(dependencyMap[2]).AlertModal, obj);
+  obj.actions = callback2(require(4475) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4475) /* getAlertModalItemKey */.AlertModal, obj);
 };

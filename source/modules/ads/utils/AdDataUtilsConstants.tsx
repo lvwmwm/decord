@@ -1,10 +1,9 @@
-// Module ID: 6968
-// Function ID: 55727
+// Module ID: 6973
+// Function ID: 55761
 // Name: DEFAULT_TIMEOUT_MS
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6968 (DEFAULT_TIMEOUT_MS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/ads/utils/AdDataUtilsConstants.tsx");
+// Module 6973 (DEFAULT_TIMEOUT_MS)
+const result = require("set").fileFinishedImporting("modules/ads/utils/AdDataUtilsConstants.tsx");
 
 export const DEFAULT_TIMEOUT_MS = 5000;

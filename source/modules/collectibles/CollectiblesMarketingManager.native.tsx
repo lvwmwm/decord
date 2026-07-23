@@ -1,9 +1,18 @@
-// Module ID: 13354
-// Function ID: 101509
+// Module ID: 13468
+// Function ID: 103665
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4129, 6773, 6826, 686, 4530, 2]
 
-// Module 13354 (_isNativeReflectConstruct)
+// Module 13468 (_isNativeReflectConstruct)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import CollectiblesMarketingReleaseType from "CollectiblesMarketingReleaseType";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import tmp2 from "LifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,60 +22,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let tmp2 = (arg0) => {
-  class CollectiblesMarketingManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, CollectiblesMarketingManager);
-      items1 = [...items];
-      obj = closure_6(CollectiblesMarketingManager);
-      tmp2 = closure_5;
-      if (closure_9()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.handlePostConnectionOpen = () => {
-        const value = closure_8.get("shop_include_unpublished");
-        let obj = callback(closure_2[6]);
-        obj = {};
-        const CollectiblesMarketingReleaseType = callback(closure_2[7]).CollectiblesMarketingReleaseType;
-        obj.release = value ? CollectiblesMarketingReleaseType.BETA : CollectiblesMarketingReleaseType.PROD;
-        const collectiblesMarketings = obj.fetchCollectiblesMarketings(obj);
-      };
-      return tmp2Result;
-    }
-  }
-  const arg1 = CollectiblesMarketingManager;
-  callback2(CollectiblesMarketingManager, arg0);
-  let obj = {
-    key: "_initialize",
-    value() {
-      const subscription = callback(closure_2[8]).subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "_terminate",
-    value() {
-      callback(closure_2[8]).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
-    }
-  };
-  items[1] = obj;
-  return callback(CollectiblesMarketingManager, items);
-}(importDefault(dependencyMap[9]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/collectibles/CollectiblesMarketingManager.native.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/collectibles/CollectiblesMarketingManager.native.tsx");
 
 export default tmp2;

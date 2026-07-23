@@ -1,71 +1,87 @@
 // Module ID: 5271
-// Function ID: 45481
+// Function ID: 45470
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 5256]
 
 // Module 5271 (_isNativeReflectConstruct)
+import _callSuper from "_callSuper";
+import _defineProperties from "_defineProperties";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _callSuper = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _callSuper;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
+let closure_6 = { code: "function changeEventCalculator_Pnpm_pinchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={scaleChange:current.scale};}else{changePayload={scaleChange:current.scale/previous.scale};}return{...current,...changePayload};}" };
+let closure_7 = (() => {
+  function changeEventCalculator(scale, scale2) {
+    if (undefined === scale2) {
+      let obj = { scaleChange: scale.scale };
+    } else {
+      obj = { scaleChange: scale.scale / scale2.scale };
+    }
+    return Object.assign({}, scale, obj);
+  }
+  changeEventCalculator.__closure = {};
+  changeEventCalculator.__workletHash = 9876979738005;
+  changeEventCalculator.__initData = closure_6;
+  return changeEventCalculator;
+})();
 
-export const LongPressGesture = (BaseGesture) => {
-  class LongPressGesture {
+export const PinchGesture = ((ContinousBaseGesture) => {
+  class PinchGesture {
     constructor() {
       self = this;
-      tmp = LongPressGesture(this, LongPressGesture);
-      obj = closure_3(LongPressGesture);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      tmp = PinchGesture(this, PinchGesture);
+      obj = outer1_3(PinchGesture);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, [], closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, [], outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, undefined);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.config = {};
-      tmp2Result.handlerName = "LongPressGestureHandler";
-      result = tmp2Result.shouldCancelWhenOutside(true);
+      tmp2Result.handlerName = "PinchGestureHandler";
       return tmp2Result;
     }
   }
-  let closure_0 = LongPressGesture;
-  callback2(LongPressGesture, BaseGesture);
-  let obj = {
-    key: "minDuration",
-    value: function minDuration(CONTEXT_MENU_LONG_PRESS_DURATION_MS) {
-      this.config.minDurationMs = CONTEXT_MENU_LONG_PRESS_DURATION_MS;
-      return this;
+  callback2(PinchGesture, ContinousBaseGesture);
+  let items = [
+    {
+      key: "onChange",
+      value: function onChange(arg0) {
+        this.handlers.changeEventCalculator = outer1_7;
+        const items = [arg0];
+        return (function _superPropGet(PinchGesture, onChange, arg2, arg3) {
+          let _callSuper = arg2;
+          let prototype = PinchGesture;
+          if (1) {
+            prototype = PinchGesture.prototype;
+          }
+          const tmpResult = outer2_4(outer2_3(prototype), "onChange", arg2);
+          let _defineProperties = tmpResult;
+          let fn = tmpResult;
+          if (2) {
+            fn = tmpResult;
+            if ("function" === typeof tmpResult) {
+              fn = (arg0) => tmpResult.apply(_callSuper, arg0);
+            }
+          }
+          return fn;
+        })(PinchGesture, "onChange", this, 3)(items);
+      }
     }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "maxDistance",
-    value: function maxDistance(maxDist) {
-      this.config.maxDist = maxDist;
-      return this;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "numberOfPointers",
-    value: function numberOfPointers(numberOfPointers) {
-      this.config.numberOfPointers = numberOfPointers;
-      return this;
-    }
-  };
-  items[2] = obj;
-  return callback(LongPressGesture, items);
-}(arg1(dependencyMap[5]).BaseGesture);
+  ];
+  return callback(PinchGesture, items);
+})(require("_callSuper").ContinousBaseGesture);

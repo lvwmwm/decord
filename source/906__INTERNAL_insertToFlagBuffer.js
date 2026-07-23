@@ -1,21 +1,23 @@
 // Module ID: 906
-// Function ID: 9952
+// Function ID: 9953
 // Name: _INTERNAL_insertToFlagBuffer
-// Dependencies: []
+// Dependencies: [65, 825, 800, 801, 796]
 // Exports: _INTERNAL_addFeatureFlagToActiveSpan, _INTERNAL_copyFlagsFromScopeToEvent, _INTERNAL_insertFlagToScope
 
 // Module 906 (_INTERNAL_insertToFlagBuffer)
+import _toConsumableArray from "_toConsumableArray";
+
 function _INTERNAL_insertToFlagBuffer(values, flag, result, arg3) {
-  const require = flag;
+  const _require = flag;
   if ("boolean" === typeof result) {
     if (values.length > arg3) {
-      if (require(dependencyMap[2]).DEBUG_BUILD) {
-        const debug = require(dependencyMap[3]).debug;
+      if (_require(800).DEBUG_BUILD) {
+        const debug = _require(801).debug;
         const _HermesInternal = HermesInternal;
         debug.error("[Feature Flags] insertToFlagBuffer called on a buffer larger than maxSize=" + arg3);
       }
     } else {
-      const findIndexResult = values.findIndex((flag) => flag.flag === arg1);
+      const findIndexResult = values.findIndex((flag) => flag.flag === closure_0);
       if (-1 !== findIndexResult) {
         values.splice(findIndexResult, 1);
       }
@@ -27,7 +29,6 @@ function _INTERNAL_insertToFlagBuffer(values, flag, result, arg3) {
     }
   }
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const _INTERNAL_FLAG_BUFFER_SIZE = 100;
@@ -41,9 +42,9 @@ export const _INTERNAL_addFeatureFlagToActiveSpan = function _INTERNAL_addFeatur
     }
   }
   if ("boolean" === typeof value) {
-    const activeSpan = require(dependencyMap[4]).getActiveSpan();
+    const activeSpan = require(796) /* convertSpanLinksForEnvelope */.getActiveSpan();
     if (activeSpan) {
-      const data = require(dependencyMap[4]).spanToJSON(activeSpan).data;
+      const data = require(796) /* convertSpanLinksForEnvelope */.spanToJSON(activeSpan).data;
       const _HermesInternal = HermesInternal;
       if ("" + "flag.evaluation." + first in data) {
         const _HermesInternal3 = HermesInternal;
@@ -56,13 +57,13 @@ export const _INTERNAL_addFeatureFlagToActiveSpan = function _INTERNAL_addFeatur
           const attr1 = activeSpan.setAttribute("" + "flag.evaluation." + first, value);
         }
       }
-      const obj = require(dependencyMap[4]);
+      const obj = require(796) /* convertSpanLinksForEnvelope */;
     }
-    const obj2 = require(dependencyMap[4]);
+    const obj2 = require(796) /* convertSpanLinksForEnvelope */;
   }
 };
 export const _INTERNAL_copyFlagsFromScopeToEvent = function _INTERNAL_copyFlagsFromScopeToEvent(contexts) {
-  let obj = require(dependencyMap[1]);
+  let obj = require(825) /* getCurrentScope */;
   const currentScope = obj.getCurrentScope();
   const flags = currentScope.getScopeData().contexts.flags;
   const arr = flags ? flags.values : [];
@@ -70,7 +71,7 @@ export const _INTERNAL_copyFlagsFromScopeToEvent = function _INTERNAL_copyFlagsF
     if (undefined === contexts.contexts) {
       contexts.contexts = {};
     }
-    obj = { values: callback(arr) };
+    obj = { values: _toConsumableArray(arr) };
     contexts.contexts.flags = obj;
   }
   return contexts;
@@ -83,7 +84,7 @@ export const _INTERNAL_insertFlagToScope = function _INTERNAL_insertFlagToScope(
       num = arguments[2];
     }
   }
-  let obj = require(dependencyMap[1]);
+  let obj = require(825) /* getCurrentScope */;
   const currentScope = obj.getCurrentScope();
   const contexts = currentScope.getScopeData().contexts;
   if (!contexts.flags) {

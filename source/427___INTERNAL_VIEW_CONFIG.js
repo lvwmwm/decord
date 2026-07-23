@@ -1,13 +1,14 @@
 // Module ID: 427
 // Function ID: 5953
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [110, 42]
 
 // Module 427 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "VirtualView", directEventTypes: { topModeChange: { registrationName: "onModeChange" } } };
-const _module = require(dependencyMap[0]);
-obj.validAttributes = Object.assign({ "Bool(false)": null, "Bool(false)": null }, _module.ConditionallyIgnoredEventHandlers({ onModeChange: true }));
-const _module1 = require(dependencyMap[1]);
+import weakSet from "weakSet";
+import get from "get";
 
-export default _module1.get("VirtualView", () => obj);
+const obj = { uiViewClassName: "VirtualView", directEventTypes: { topModeChange: { registrationName: "onModeChange" } } };
+obj.validAttributes = Object.assign({ initialHidden: true, renderState: true }, weakSet.ConditionallyIgnoredEventHandlers({ onModeChange: true }));
+
+export default get.get("VirtualView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

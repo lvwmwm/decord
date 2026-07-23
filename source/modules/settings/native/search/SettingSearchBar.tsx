@@ -1,39 +1,41 @@
-// Module ID: 14469
-// Function ID: 109021
+// Module ID: 14583
+// Function ID: 111174
 // Name: SettingSearchBar
-// Dependencies: []
+// Dependencies: [31, 27, 13552, 33, 4130, 689, 1820, 5795, 5772, 2]
 // Exports: default
 
-// Module 14469 (SettingSearchBar)
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { marginTop: importDefault(dependencyMap[5]).modules.mobile.SETTINGS_PADDING_TOP };
-obj.container = obj;
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/settings/native/search/SettingSearchBar.tsx");
+// Module 14583 (SettingSearchBar)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import zustandStore from "zustandStore";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").modules.mobile.SETTINGS_PADDING_TOP };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("zustandStore").fileFinishedImporting("modules/settings/native/search/SettingSearchBar.tsx");
 
 export default function SettingSearchBar() {
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   const callback = React.useCallback(() => {
-    store.setState({ <string:2937152404>: "resizeMode", <string:2874959295>: "formatToPlainString", <string:1492885590>: "construct" });
-    const result = callback(closure_1[6]).dismissGlobalKeyboard();
+    outer1_4.setState({ isActive: false, query: "", isFocused: false });
+    const result = outer1_0(outer1_1[6]).dismissGlobalKeyboard();
   }, []);
   const callback1 = React.useCallback(() => {
-    const result = callback(closure_1[7]).trackSettingSearchInputFocused();
-    store.setState({ FITNESS: null, useIsNewGamesCoachmarkEnabled: null });
+    const result = outer1_0(outer1_1[7]).trackSettingSearchInputFocused();
+    outer1_4.setState({ isActive: true, isFocused: true });
   }, []);
   const callback2 = React.useCallback(() => {
-    store.setState({ isFocused: false });
+    outer1_4.setState({ isFocused: false });
   }, []);
   let obj = { style: tmp.container };
   const callback3 = React.useCallback((query) => {
-    store.setState({ query });
+    outer1_4.setState({ query });
   }, []);
   obj = { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: field.getField("query"), onChange: callback3 };
-  obj.children = jsx(arg1(dependencyMap[8]).SearchField, obj);
-  return <View {...obj} />;
+  obj.children = jsx(require(5772) /* SearchField */.SearchField, { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: field.getField("query"), onChange: callback3 });
+  return <View ref={React.useRef(null)} size="md" onFocus={callback1} onBlur={callback2} onClear={callback} defaultValue={field.getField("query")} onChange={callback3} />;
 };

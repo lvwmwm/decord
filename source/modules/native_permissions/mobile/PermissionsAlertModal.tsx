@@ -1,14 +1,18 @@
-// Module ID: 4682
-// Function ID: 40801
+// Module ID: 4685
+// Function ID: 40819
 // Name: PermissionsAlertModal
-// Dependencies: []
+// Dependencies: [31, 33, 4475, 4475, 1212, 2]
 // Exports: default
 
-// Module 4682 (PermissionsAlertModal)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/native_permissions/mobile/PermissionsAlertModal.tsx");
+// Module 4685 (PermissionsAlertModal)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+const result = require("getAlertModalItemKey").fileFinishedImporting("modules/native_permissions/mobile/PermissionsAlertModal.tsx");
 
 export default function PermissionsAlertModal(arg0) {
   let body;
@@ -18,14 +22,14 @@ export default function PermissionsAlertModal(arg0) {
   let obj = { title, content: body };
   obj = {};
   obj = { onPress: onConfirm };
-  const intl = arg1(dependencyMap[4]).intl;
-  obj.text = intl.string(arg1(dependencyMap[4]).t.jVcuVY);
-  const items = [callback(arg1(dependencyMap[2]).AlertActionButton, obj, "confirm"), ];
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl.string(require(1212) /* getSystemLocale */.t.jVcuVY);
+  const items = [callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary" };
-  const intl2 = arg1(dependencyMap[4]).intl;
-  obj1.text = intl2.string(arg1(dependencyMap[4]).t.cpT0Cq);
-  items[1] = callback(arg1(dependencyMap[2]).AlertActionButton, obj1, "close");
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.text = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
+  items[1] = callback(require(4475) /* getAlertModalItemKey */.AlertActionButton, obj1, "close");
   obj.children = items;
-  obj.actions = callback2(arg1(dependencyMap[3]).AlertActions, obj);
-  return callback(arg1(dependencyMap[2]).AlertModal, obj);
+  obj.actions = callback2(require(4475) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4475) /* getAlertModalItemKey */.AlertModal, obj);
 };

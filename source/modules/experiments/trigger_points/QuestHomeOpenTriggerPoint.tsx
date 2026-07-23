@@ -1,11 +1,10 @@
-// Module ID: 13873
-// Function ID: 104915
+// Module ID: 13987
+// Function ID: 107071
 // Name: commonTriggerPointConfiguration
-// Dependencies: []
+// Dependencies: [4045, 7158, 2]
 
-// Module 13873 (commonTriggerPointConfiguration)
-const commonTriggerPointConfiguration = new require(dependencyMap[1]).CommonTriggerPointConfiguration([], require(dependencyMap[0]).CommonTriggerPoints.QUEST_HOME_OPEN, { location: "open quest home" });
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/experiments/trigger_points/QuestHomeOpenTriggerPoint.tsx");
+// Module 13987 (commonTriggerPointConfiguration)
+const commonTriggerPointConfiguration = new require("CommonTriggerPointConfiguration").CommonTriggerPointConfiguration([], require("ExperimentBuckets").CommonTriggerPoints.QUEST_HOME_OPEN, { location: "open quest home" });
+const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/QuestHomeOpenTriggerPoint.tsx");
 
 export const QuestHomeOpenTriggerPoint = commonTriggerPointConfiguration;

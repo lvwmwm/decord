@@ -1,10 +1,18 @@
 // Module ID: 1262
-// Function ID: 14241
+// Function ID: 14242
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [65, 6, 7, 15, 17, 18, 57, 1254]
 // Exports: formatToAst
 
 // Module 1262 (_isNativeReflectConstruct)
+import _toConsumableArray from "_toConsumableArray";
+import _classCallCheck from "_slicedToArray";
+import _defineProperties from "_isNativeReflectConstruct";
+import "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -23,18 +31,11 @@ function formatToAst(content) {
     const items = [obj];
     let bindFormatValuesResult = items;
   } else {
-    bindFormatValuesResult = self.bindFormatValues(tmp2, content, arg1);
+    bindFormatValuesResult = self.bindFormatValues(closure_9, content, arg1);
   }
   return bindFormatValuesResult;
 }
-let closure_1 = require(dependencyMap[0]);
-let closure_2 = require(dependencyMap[1]);
-let closure_3 = require(dependencyMap[2]);
-let closure_4 = require(dependencyMap[3]);
-let closure_5 = require(dependencyMap[4]);
-let closure_6 = require(dependencyMap[5]);
-let closure_7 = require(dependencyMap[6]);
-const obj = {};
+let obj = {};
 obj.Text = "text";
 obj.Strong = "strong";
 obj.Emphasis = "em";
@@ -44,43 +45,43 @@ obj.Link = "link";
 obj.Paragraph = "paragraph";
 let closure_8 = {
   $b(content) {
-    const obj = { type: obj.Strong, content };
+    obj = { type: obj.Strong, content };
     return obj;
   },
   $i(content) {
-    const obj = { type: obj.Emphasis, content };
+    obj = { type: obj.Emphasis, content };
     return obj;
   },
   $del(content) {
-    const obj = { type: obj.Strikethrough, content };
+    obj = { type: obj.Strikethrough, content };
     return obj;
   },
   $code(content) {
-    const obj = { type: obj.Code, content };
+    obj = { type: obj.Code, content };
     return obj;
   },
   $link(content) {
-    const obj = { type: obj.Link, target: callback3(arg2, 1)[0], content };
+    obj = { type: obj.Link, target: _slicedToArray(arg2, 1)[0], content };
     return obj;
   },
   $p(content) {
-    const obj = { type: obj.Paragraph, content };
+    obj = { type: obj.Paragraph, content };
     return obj;
   }
 };
-const tmp2 = (FormatBuilder) => {
+const tmp2 = ((FormatBuilder) => {
   class AstBuilder {
     constructor() {
       self = this;
-      tmp = closure_2(this, AstBuilder);
-      obj = closure_5(AstBuilder);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, AstBuilder);
+      obj = outer1_5(AstBuilder);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -91,25 +92,24 @@ const tmp2 = (FormatBuilder) => {
       return tmp2Result;
     }
   }
-  let obj = AstBuilder;
-  callback2(AstBuilder, FormatBuilder);
-  obj = {
+  _inherits(AstBuilder, FormatBuilder);
+  let obj = {
     key: "pushRichTextTag",
-    value: function pushRichTextTag(arg0, arg1, arg2) {
-      if (arg0 in closure_8) {
-        const tmp5 = closure_8[arg0](arg1, "", arg2);
+    value: function pushRichTextTag(formatting) {
+      if (formatting in outer1_8) {
+        const tmp5 = outer1_8[formatting](arg1, "", arg2);
         const _Array = Array;
         const self = this;
         const result = this.result;
         const push = result.push;
         if (Array.isArray(tmp5)) {
-          push.apply(result, callback(tmp5));
+          push.apply(result, outer1_1(tmp5));
         } else {
           push(tmp5);
         }
       } else {
         const _HermesInternal = HermesInternal;
-        throw "" + arg0 + " is not a known rich text formatting tag";
+        throw "" + formatting + " is not a known rich text formatting tag";
       }
     }
   };
@@ -117,8 +117,7 @@ const tmp2 = (FormatBuilder) => {
   obj = {
     key: "pushLiteralText",
     value: function pushLiteralText(content) {
-      const tmp = this.result[this.result.length - 1];
-      if (null != tmp) {
+      if (null != this.result[this.result.length - 1]) {
         if (tmp.type === AstBuilder.Text) {
           tmp.content = tmp.content + content;
         }
@@ -142,8 +141,9 @@ const tmp2 = (FormatBuilder) => {
       return this.result;
     }
   };
-  return callback(AstBuilder, items);
-}(require(dependencyMap[7]).FormatBuilder);
+  return _defineProperties(AstBuilder, items);
+})(require("_isNativeReflectConstruct").FormatBuilder);
+let closure_9 = tmp2;
 
 export { formatToAst };
 export const RichTextNodeType = obj;

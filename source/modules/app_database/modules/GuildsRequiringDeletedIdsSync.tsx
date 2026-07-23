@@ -1,17 +1,18 @@
-// Module ID: 6889
-// Function ID: 54773
+// Module ID: 6894
+// Function ID: 54807
 // Name: GuildsRequiringDeletedIdsSync
-// Dependencies: []
+// Dependencies: [5, 6, 7, 1882, 2]
 
-// Module 6889 (GuildsRequiringDeletedIdsSync)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let tmp2 = () => {
+// Module 6894 (GuildsRequiringDeletedIdsSync)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+let tmp2 = (() => {
   class GuildsRequiringDeletedIdsSync {
     constructor() {
-      f54780 = this;
-      tmp = closure_3(this, GuildsRequiringDeletedIdsSync);
+      self = this;
+      tmp = outer1_3(this, GuildsRequiringDeletedIdsSync);
       this.actions = {
         BACKGROUND_SYNC(arg0, arg1) {
               return self.handleBackgroundSync(arg0, arg1);
@@ -29,10 +30,9 @@ let tmp2 = () => {
       return;
     }
   }
-  const dependencyMap = GuildsRequiringDeletedIdsSync;
   let obj = { key: "getAll" };
   let closure_0 = callback(async () => {
-    const result = callback(closure_1[3]).guildsRequiringDeletedIdsSync();
+    const result = callback(GuildsRequiringDeletedIdsSync[3]).guildsRequiringDeletedIdsSync();
     if (null == result) {
       const _Set2 = Set;
       const set = new Set();
@@ -42,7 +42,7 @@ let tmp2 = () => {
       const set1 = new Set(yield result.getMany().map((id) => id.id));
       return set1;
     }
-    const obj = callback(closure_1[3]);
+    const obj = callback(GuildsRequiringDeletedIdsSync[3]);
   });
   obj.value = function getAll() {
     return callback(...arguments);
@@ -102,8 +102,8 @@ let tmp2 = () => {
     }
   };
   return callback2(GuildsRequiringDeletedIdsSync, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/app_database/modules/GuildsRequiringDeletedIdsSync.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/GuildsRequiringDeletedIdsSync.tsx");
 
 export default tmp2;

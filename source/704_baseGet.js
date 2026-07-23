@@ -1,12 +1,12 @@
 // Module ID: 704
-// Function ID: 8711
+// Function ID: 8712
 // Name: baseGet
-// Dependencies: []
+// Dependencies: [705, 702]
 
 // Module 704 (baseGet)
 
 export default function baseGet(arg0, arg1) {
-  const arr = require(dependencyMap[0])(arg1, arg0);
+  const arr = require(705) /* castPath */(arg1, arg0);
   let tmp = arg0;
   let num = 0;
   if (null != arg0) {
@@ -16,9 +16,10 @@ export default function baseGet(arg0, arg1) {
     num = 0;
     if (0 < length) {
       const sum = tmp5 + 1;
+      const tmp7 = tmp2[require(undefined, 702) /* toKey */(undefined, arr[+num3])];
       tmp = tmp7;
       num = sum;
-      while (null != tmp2[closure_0(undefined, closure_1[1])(undefined, arr[+num3])]) {
+      while (null != tmp7) {
         tmp2 = tmp7;
         num3 = sum;
         tmp = tmp7;

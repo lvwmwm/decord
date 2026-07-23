@@ -1,15 +1,17 @@
-// Module ID: 4616
-// Function ID: 40256
+// Module ID: 4620
+// Function ID: 40288
 // Name: isValidFormResponse
-// Dependencies: []
+// Dependencies: [4621, 653, 3950, 1327, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 4616 (isValidFormResponse)
-const _module = require(dependencyMap[0]);
-({ AUTOMATIC_APPROVAL_FORM_FIELDS: closure_2, MANUAL_APPROVAL_FORM_FIELDS: closure_3 } = _module);
-const GuildFeatures = require(dependencyMap[1]).GuildFeatures;
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/guild_member_verification/MemberVerificationUtils.tsx");
+// Module 4620 (isValidFormResponse)
+import items from "items";
+import { GuildFeatures } from "ME";
+
+let closure_2;
+let closure_3;
+({ AUTOMATIC_APPROVAL_FORM_FIELDS: closure_2, MANUAL_APPROVAL_FORM_FIELDS: closure_3 } = items);
+const result = require("isTermsFormField").fileFinishedImporting("modules/guild_member_verification/MemberVerificationUtils.tsx");
 
 export const isValidFormResponse = function isValidFormResponse(required) {
   let field_type;
@@ -19,14 +21,14 @@ export const isValidFormResponse = function isValidFormResponse(required) {
     if (null == response) {
       return false;
     } else {
-      if (require(dependencyMap[2]).VerificationFormFieldTypes.TERMS !== field_type) {
-        if (require(dependencyMap[2]).VerificationFormFieldTypes.VERIFICATION !== field_type) {
-          if (require(dependencyMap[2]).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
-            if (require(dependencyMap[2]).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
-              if (require(dependencyMap[2]).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+      if (require(3950) /* isTermsFormField */.VerificationFormFieldTypes.TERMS !== field_type) {
+        if (require(3950) /* isTermsFormField */.VerificationFormFieldTypes.VERIFICATION !== field_type) {
+          if (require(3950) /* isTermsFormField */.VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
+            if (require(3950) /* isTermsFormField */.VerificationFormFieldTypes.PARAGRAPH !== field_type) {
+              if (require(3950) /* isTermsFormField */.VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
                 return "number" === typeof response;
               } else {
-                return require(dependencyMap[3]).assertNever(field_type);
+                return require(1327) /* isDiscordFrontendDevelopment */.assertNever(field_type);
               }
             }
           }
@@ -45,7 +47,7 @@ export const isValidFormResponse = function isValidFormResponse(required) {
   }
 };
 export const removeInternalFields = function removeInternalFields(arr) {
-  return arr.filter((field_type) => field_type.field_type !== callback(closure_1[2]).VerificationFormFieldTypes.VERIFICATION);
+  return arr.filter((field_type) => field_type.field_type !== outer1_0(outer1_1[2]).VerificationFormFieldTypes.VERIFICATION);
 };
 export const isAutomaticApprovalFormField = function isAutomaticApprovalFormField(field_type) {
   field_type = undefined;

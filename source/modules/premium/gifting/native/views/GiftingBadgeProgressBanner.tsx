@@ -1,23 +1,27 @@
-// Module ID: 9686
-// Function ID: 75381
+// Module ID: 9693
+// Function ID: 75422
 // Name: GiftingBadgeProgressBanner
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5464, 8559, 480, 9686, 4126, 1212, 2294, 2]
 // Exports: default
 
-// Module 9686 (GiftingBadgeProgressBanner)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { -9223372036854775808: 1, 0: 58, 9223372036854775807: 58, 9223372036854775807: "row", -9223372036854775808: 15, -9223372036854775808: "center", 0: "center", padding: importDefault(dependencyMap[4]).space.PX_8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
-const merged = Object.assign(importDefault(dependencyMap[4]).shadows.SHADOW_LOW);
-obj.container = obj;
-const obj1 = { <string:3596066964>: null, <string:3638417373>: null, padding: importDefault(dependencyMap[4]).space.PX_8, marginInlineEnd: importDefault(dependencyMap[4]).space.PX_8 };
-obj.iconContainer = obj1;
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgressBanner.tsx");
+// Module 9693 (GiftingBadgeProgressBanner)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
+const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { alignItems: "center", justifyContent: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_8, marginInlineEnd: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.iconContainer = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgressBanner.tsx");
 
 export default function GiftingBadgeProgressBanner(arg0) {
   let analyticsLocation;
@@ -25,7 +29,7 @@ export default function GiftingBadgeProgressBanner(arg0) {
   let nextTierIcon;
   let nextTierName;
   ({ giftsToNextTier, nextTierName, nextTierIcon, analyticsLocation } = arg0);
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   if (null != analyticsLocation) {
     const items = [analyticsLocation];
     let items1 = items;
@@ -33,24 +37,24 @@ export default function GiftingBadgeProgressBanner(arg0) {
     items1 = [];
   }
   let obj = {};
-  const tmp2 = importDefault(dependencyMap[5]);
-  obj.name = arg1(dependencyMap[7]).ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER;
-  obj.type = arg1(dependencyMap[7]).ImpressionTypes.VIEW;
+  const tmp2 = importDefault(5464);
+  obj.name = require(480) /* isThrottled */.ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER;
+  obj.type = require(480) /* isThrottled */.ImpressionTypes.VIEW;
   obj.properties = { gifts_to_next_tier: giftsToNextTier, next_tier: nextTierName, location_stack: tmp2(...items1).analyticsLocations };
-  importDefault(dependencyMap[6])(obj, { trackOnInitialLoad: true });
+  importDefault(8559)(obj, { trackOnInitialLoad: true });
   obj = { style: tmp.container };
   obj = { style: tmp.iconContainer };
   let tmp8 = null != nextTierIcon;
   if (tmp8) {
     const obj1 = { icon: nextTierIcon, size: 24 };
-    tmp8 = callback(importDefault(dependencyMap[8]), obj1);
+    tmp8 = callback(importDefault(9686), obj1);
   }
   obj.children = tmp8;
   const items2 = [callback(View, obj), ];
   const obj2 = { variant: "text-md/semibold" };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj2.children = intl.formatToPlainString(importDefault(dependencyMap[11]).0+xfd9, { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
-  items2[1] = callback(arg1(dependencyMap[9]).Text, obj2);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl.formatToPlainString(importDefault(2294)["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
+  items2[1] = callback(require(4126) /* Text */.Text, obj2);
   obj.children = items2;
   return closure_5(View, obj);
 };

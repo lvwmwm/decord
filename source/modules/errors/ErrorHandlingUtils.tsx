@@ -1,16 +1,17 @@
-// Module ID: 5729
-// Function ID: 49266
+// Module ID: 5734
+// Function ID: 49293
 // Name: items
-// Dependencies: []
+// Dependencies: [653, 1184, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 5729 (items)
+// Module 5734 (items)
+import set from "set";
+
 const items = [, , ];
-({ UNAUTHORIZED: arr[0], EMAIL_VERIFICATION_REQUIRED: arr[1], USER_BANNED: arr[2] } = require(dependencyMap[0]).AbortCodes);
-const set = new Set([true, true, true, true]);
-const set1 = new Set([]);
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/errors/ErrorHandlingUtils.tsx");
+({ UNAUTHORIZED: arr[0], EMAIL_VERIFICATION_REQUIRED: arr[1], USER_BANNED: arr[2] } = require("ME").AbortCodes);
+let set = new Set([500, 502, 503, 504]);
+const set1 = new Set([401, 403, 405, 409, 429]);
+const result = set.fileFinishedImporting("modules/errors/ErrorHandlingUtils.tsx");
 
 export const captureOrIgnoreApiError = function captureOrIgnoreApiError(cause) {
   let tmp = null == cause;
@@ -81,7 +82,7 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(cause) {
     tmp = flag;
   }
   if (!tmp) {
-    importDefault(dependencyMap[1]).captureException(cause);
-    const obj = importDefault(dependencyMap[1]);
+    importDefault(1184).captureException(cause);
+    const obj = importDefault(1184);
   }
 };

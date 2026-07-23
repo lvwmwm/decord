@@ -1,30 +1,30 @@
-// Module ID: 3822
-// Function ID: 31795
-// Dependencies: []
+// Module ID: 3824
+// Function ID: 31800
+// Dependencies: [27, 477, 3825, 2]
 
-// Module 3822
-const NativeModules = require(dependencyMap[0]).NativeModules;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/links/native/LinkingModule.tsx");
+// Module 3824
+import { NativeModules } from "get ActivityIndicator";
+
+let result = require("enforcing").fileFinishedImporting("modules/links/native/LinkingModule.tsx");
 
 export default {
-  tryOpenUrlAsUniversalLink(arg0) {
+  tryOpenUrlAsUniversalLink(closure_0) {
     if (obj.isAndroid()) {
-      let result = importDefault(dependencyMap[2]).tryOpenUrlAsUniversalLink(arg0);
-      const obj2 = importDefault(dependencyMap[2]);
+      let result = importDefault(3825).tryOpenUrlAsUniversalLink(closure_0);
+      const obj2 = importDefault(3825);
     } else {
       const DCDLinkingManager = NativeModules.DCDLinkingManager;
-      result = DCDLinkingManager.tryOpenUrlAsUniversalLink(arg0);
+      result = DCDLinkingManager.tryOpenUrlAsUniversalLink(closure_0);
     }
     return result;
   },
-  tryOpenScheme(arg0) {
+  tryOpenScheme(closure_0) {
     if (obj.isAndroid()) {
-      let tryOpenSchemeResult = importDefault(dependencyMap[2]).tryOpenScheme(arg0);
-      const obj2 = importDefault(dependencyMap[2]);
+      let tryOpenSchemeResult = importDefault(3825).tryOpenScheme(closure_0);
+      const obj2 = importDefault(3825);
     } else {
       const DCDLinkingManager = NativeModules.DCDLinkingManager;
-      tryOpenSchemeResult = DCDLinkingManager.tryOpenScheme(arg0);
+      tryOpenSchemeResult = DCDLinkingManager.tryOpenScheme(closure_0);
     }
     return tryOpenSchemeResult;
   }

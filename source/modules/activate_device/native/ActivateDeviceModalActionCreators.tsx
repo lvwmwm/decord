@@ -1,18 +1,17 @@
-// Module ID: 12766
-// Function ID: 97867
-// Dependencies: []
+// Module ID: 12880
+// Function ID: 100023
+// Dependencies: [4337, 12881, 1934, 2]
 
-// Module 12766
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/activate_device/native/ActivateDeviceModalActionCreators.tsx");
+// Module 12880
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/activate_device/native/ActivateDeviceModalActionCreators.tsx");
 
 export default {
   showModal(userCode) {
-    let obj = importDefault(dependencyMap[0]);
+    let obj = importDefault(4337);
     obj = { userCode };
-    obj.pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), obj, "ACTIVATE_DEVICE_MODAL_KEY");
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(12881, dependencyMap.paths), obj, "ACTIVATE_DEVICE_MODAL_KEY");
   },
   hideModal() {
-    importDefault(dependencyMap[0]).popWithKey("ACTIVATE_DEVICE_MODAL_KEY");
+    importDefault(4337).popWithKey("ACTIVATE_DEVICE_MODAL_KEY");
   }
 };

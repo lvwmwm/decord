@@ -1,19 +1,21 @@
-// Module ID: 12914
-// Function ID: 98508
+// Module ID: 13028
+// Function ID: 100664
 // Name: AccessibilityFocusView
-// Dependencies: []
+// Dependencies: [31, 27, 33, 477, 13029, 2]
 // Exports: default
 
-// Module 12914 (AccessibilityFocusView)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[2]).jsx;
-if (obj.isAndroid()) {
-  let importDefaultResult = importDefault(dependencyMap[4]);
+// Module 13028 (AccessibilityFocusView)
+import "result";
+import { jsx } from "jsxProd";
+import set from "set";
+import set from "jsxProd";
+
+if (set.isAndroid()) {
+  let importDefaultResult = require("__INTERNAL_VIEW_CONFIG");
 } else {
-  importDefaultResult = arg1(dependencyMap[1]).requireNativeComponent("AccessibilityFocusView");
+  importDefaultResult = require("get ActivityIndicator").requireNativeComponent("AccessibilityFocusView");
 }
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/void/AccessibilityFocusView/native/AccessibilityFocusView.tsx");
+const result = set.fileFinishedImporting("design/void/AccessibilityFocusView/native/AccessibilityFocusView.tsx");
 
 export default function AccessibilityFocusView(arg0) {
   let onAccessibilityBlur;
@@ -26,5 +28,5 @@ export default function AccessibilityFocusView(arg0) {
   const merged = Object.assign(Object.assign(arg0, obj));
   obj["onAccessibilityFocus"] = onAccessibilityFocus;
   obj["onAccessibilityBlur"] = onAccessibilityBlur;
-  return <importDefaultResult {...obj} />;
+  return <closure_1 />;
 };

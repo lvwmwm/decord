@@ -1,34 +1,36 @@
-// Module ID: 14539
-// Function ID: 109479
+// Module ID: 14653
+// Function ID: 111639
 // Name: updateClientPremiumTypeOverride
-// Dependencies: []
+// Dependencies: [1849, 686, 6995, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 14539 (updateClientPremiumTypeOverride)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/OverridePremiumTypeActions.tsx");
+// Module 14653 (updateClientPremiumTypeOverride)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
-export const updateClientPremiumTypeOverride = function updateClientPremiumTypeOverride(premiumType, closure_2) {
-  let currentUser = closure_2;
-  let obj = importDefault(dependencyMap[1]);
+const require = arg1;
+const result = require("userRecordToServer").fileFinishedImporting("modules/premium/OverridePremiumTypeActions.tsx");
+
+export const updateClientPremiumTypeOverride = function updateClientPremiumTypeOverride(premiumType, outer1_2) {
+  let currentUser = outer1_2;
+  let obj = importDefault(686);
   obj = { type: "SET_PREMIUM_TYPE_OVERRIDE", premiumType };
   obj.dispatch(obj);
-  if (null == closure_2) {
+  if (null == outer1_2) {
     currentUser = currentUser.getCurrentUser();
   }
   if (null != currentUser) {
     obj = { type: "UPDATE_CLIENT_PREMIUM_TYPE", user: currentUser };
-    importDefault(dependencyMap[1]).dispatch(obj);
-    const obj3 = importDefault(dependencyMap[1]);
+    importDefault(686).dispatch(obj);
+    const obj3 = importDefault(686);
     const obj1 = { type: "CURRENT_USER_UPDATE" };
-    const obj5 = importDefault(dependencyMap[1]);
-    obj1.user = closure_2(dependencyMap[2]).userRecordToServer(currentUser);
+    const obj5 = importDefault(686);
+    obj1.user = require(6995) /* userRecordToServer */.userRecordToServer(currentUser);
     obj5.dispatch(obj1);
-    const obj7 = closure_2(dependencyMap[2]);
+    const obj7 = require(6995) /* userRecordToServer */;
   }
 };
 export const updateClientCreatedAtOverride = function updateClientCreatedAtOverride(createdAt) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(686);
   obj = { type: "SET_CREATED_AT_OVERRIDE", createdAt };
   obj.dispatch(obj);
 };

@@ -1,17 +1,19 @@
-// Module ID: 13925
-// Function ID: 105821
+// Module ID: 14039
+// Function ID: 107977
 // Name: logger
-// Dependencies: []
+// Dependencies: [6, 7, 4, 14035, 14037, 2]
 
-// Module 13925 (logger)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const logger = new arg1(dependencyMap[2]).Logger("MobileCustomMuxIntegration");
-const tmp3 = () => {
+// Module 14039 (logger)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const logger = new require("U").Logger("MobileCustomMuxIntegration");
+const tmp3 = (() => {
   class MobileCustomMuxIntegration {
     constructor(arg0) {
-      MobileCustomMuxIntegration = this;
-      tmp = closure_3(this, MobileCustomMuxIntegration);
+      self = this;
+      tmp = outer1_3(this, self);
       this.isInitialized = false;
       this.viewInitEmitted = false;
       this.playerReadyEmitted = false;
@@ -22,10 +24,16 @@ const tmp3 = () => {
       this.getPlayheadTime = () => self.currentPlayheadTime * 1000;
       this.getStateData = () => self.videoState;
       this.config = arg0;
-      SessionManager = MobileCustomMuxIntegration(closure_2[3]).SessionManager;
+      SessionManager = MobileCustomMuxIntegration(outer1_2[3]).SessionManager;
       this.sessionId = SessionManager.generateSessionId();
       this.playerId = "discord-mobile-" + this.sessionId;
-      obj = { video_series: arg0.contentMetadata.questId, video_producer: arg0.contentMetadata.gameId, video_brand: arg0.contentMetadata.gameName, video_title: arg0.contentMetadata.title, video_stream_type: arg0.contentMetadata.videoStreamType, video_source_url: arg0.contentMetadata.contentId };
+      obj = { player_is_paused: true, player_width: 0, player_height: 0, player_autoplay_on: false, player_preload_on: true, video_cdn: "Cloudflare" };
+      obj.video_series = arg0.contentMetadata.questId;
+      obj.video_producer = arg0.contentMetadata.gameId;
+      obj.video_brand = arg0.contentMetadata.gameName;
+      obj.video_title = arg0.contentMetadata.title;
+      obj.video_stream_type = arg0.contentMetadata.videoStreamType;
+      obj.video_source_url = arg0.contentMetadata.contentId;
       str = "video/mp4";
       if ("hls" === arg0.contentMetadata.videoStreamType) {
         str = "application/x-mpegURL";
@@ -36,7 +44,6 @@ const tmp3 = () => {
       return;
     }
   }
-  const arg1 = MobileCustomMuxIntegration;
   let obj = {
     key: "initialize",
     value() {
@@ -44,7 +51,7 @@ const tmp3 = () => {
       const muxEnvKey = this.getMuxEnvKey();
       if (null != muxEnvKey) {
         if (0 !== arr.length) {
-          let obj = callback(closure_2[4]);
+          let obj = outer1_1(outer1_2[4]);
           obj = {};
           const debug = self.config.debug;
           let tmp8 = tmp7;
@@ -57,10 +64,10 @@ const tmp3 = () => {
           obj.init(self.playerId, obj);
           self.isInitialized = true;
           obj = { playerId: self.playerId };
-          closure_5.info("Mux Data mobile integration initialized", obj);
+          outer1_5.info("Mux Data mobile integration initialized", obj);
         }
       }
-      closure_5.info("Mux environment key not available, skipping QoE tracking");
+      outer1_5.info("Mux environment key not available, skipping QoE tracking");
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
@@ -113,9 +120,9 @@ const tmp3 = () => {
       const self = this;
       if (this.isInitialized) {
         if (!self.playerReadyEmitted) {
-          callback(closure_2[4]).emit(self.playerId, "playerready");
+          outer1_1(outer1_2[4]).emit(self.playerId, "playerready");
           self.playerReadyEmitted = true;
-          const obj = callback(closure_2[4]);
+          const obj = outer1_1(outer1_2[4]);
         }
       }
     }
@@ -126,9 +133,9 @@ const tmp3 = () => {
       const self = this;
       if (this.isInitialized) {
         if (!self.viewInitEmitted) {
-          callback(closure_2[4]).emit(self.playerId, "viewinit");
+          outer1_1(outer1_2[4]).emit(self.playerId, "viewinit");
           self.viewInitEmitted = true;
-          const obj = callback(closure_2[4]);
+          const obj = outer1_1(outer1_2[4]);
         }
       }
     }
@@ -160,10 +167,10 @@ const tmp3 = () => {
           self.emitViewInit();
         }
         self.updatePlayerState(false);
-        callback(closure_2[4]).emit(self.playerId, "play");
+        outer1_1(outer1_2[4]).emit(self.playerId, "play");
         self.playStarted = true;
         self.playingEmitted = false;
-        const obj = callback(closure_2[4]);
+        const obj = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -173,8 +180,8 @@ const tmp3 = () => {
       const self = this;
       if (this.isInitialized) {
         self.updatePlayerState(true);
-        callback(closure_2[4]).emit(self.playerId, "pause");
-        const obj = callback(closure_2[4]);
+        outer1_1(outer1_2[4]).emit(self.playerId, "pause");
+        const obj = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -188,13 +195,13 @@ const tmp3 = () => {
             self.emitViewInit();
           }
           if (!self.playStarted) {
-            callback(closure_2[4]).emit(self.playerId, "play");
+            outer1_1(outer1_2[4]).emit(self.playerId, "play");
             self.playStarted = true;
-            const obj = callback(closure_2[4]);
+            const obj = outer1_1(outer1_2[4]);
           }
-          callback(closure_2[4]).emit(self.playerId, "playing");
+          outer1_1(outer1_2[4]).emit(self.playerId, "playing");
           self.playingEmitted = true;
-          const obj2 = callback(closure_2[4]);
+          const obj2 = outer1_1(outer1_2[4]);
         }
       }
     }
@@ -203,8 +210,8 @@ const tmp3 = () => {
     key: "emitWaiting",
     value() {
       if (this.isInitialized) {
-        callback(closure_2[4]).emit(tmp.playerId, "waiting");
-        const obj = callback(closure_2[4]);
+        outer1_1(outer1_2[4]).emit(tmp.playerId, "waiting");
+        const obj = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -218,8 +225,8 @@ const tmp3 = () => {
     key: "emitSeeking",
     value() {
       if (this.isInitialized) {
-        callback(closure_2[4]).emit(tmp.playerId, "seeking");
-        const obj = callback(closure_2[4]);
+        outer1_1(outer1_2[4]).emit(tmp.playerId, "seeking");
+        const obj = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -227,8 +234,8 @@ const tmp3 = () => {
     key: "emitSeeked",
     value() {
       if (this.isInitialized) {
-        callback(closure_2[4]).emit(tmp.playerId, "seeked");
-        const obj = callback(closure_2[4]);
+        outer1_1(outer1_2[4]).emit(tmp.playerId, "seeked");
+        const obj = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -237,9 +244,9 @@ const tmp3 = () => {
     value() {
       const self = this;
       if (this.isInitialized) {
-        callback(closure_2[4]).emit(self.playerId, "ended");
+        outer1_1(outer1_2[4]).emit(self.playerId, "ended");
         self.emitViewEnd();
-        const obj = callback(closure_2[4]);
+        const obj = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -247,8 +254,8 @@ const tmp3 = () => {
     key: "emitError",
     value(arg0) {
       if (this.isInitialized) {
-        callback(closure_2[4]).emit(tmp.playerId, "error", arg0);
-        const obj = callback(closure_2[4]);
+        outer1_1(outer1_2[4]).emit(tmp.playerId, "error", arg0);
+        const obj = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -265,7 +272,7 @@ const tmp3 = () => {
         if (tmp) {
           self.emitPlaying();
         }
-        let obj = callback(closure_2[4]);
+        let obj = outer1_1(outer1_2[4]);
         obj = { player_playhead_time: self.currentPlayheadTime * 1000 };
         obj.emit(self.playerId, "timeupdate", obj);
       }
@@ -280,8 +287,8 @@ const tmp3 = () => {
         self.currentRendition = obj;
         const result = self.updateVideoSourceDimensions(width, height);
         obj = { video_source_width: width, video_source_height: height, video_source_bitrate: bitrate };
-        callback(closure_2[4]).emit(self.playerId, "renditionchange", obj);
-        const obj2 = callback(closure_2[4]);
+        outer1_1(outer1_2[4]).emit(self.playerId, "renditionchange", obj);
+        const obj2 = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -291,11 +298,11 @@ const tmp3 = () => {
       const self = this;
       if (this.isInitialized) {
         self.emitViewEnd();
-        let obj = callback(closure_2[4]);
+        let obj = outer1_1(outer1_2[4]);
         obj.emit(self.playerId, "destroy");
         self.isInitialized = false;
         obj = { playerId: self.playerId };
-        closure_5.info("Mux Data mobile integration destroyed", obj);
+        outer1_5.info("Mux Data mobile integration destroyed", obj);
       }
     }
   };
@@ -303,8 +310,8 @@ const tmp3 = () => {
     key: "emitViewEnd",
     value() {
       if (this.isInitialized) {
-        callback(closure_2[4]).emit(tmp.playerId, "viewend");
-        const obj = callback(closure_2[4]);
+        outer1_1(outer1_2[4]).emit(tmp.playerId, "viewend");
+        const obj = outer1_1(outer1_2[4]);
       }
     }
   };
@@ -324,7 +331,7 @@ const tmp3 = () => {
     key: "mapConfigToMuxData",
     value(env_key) {
       const self = this;
-      const obj = { env_key, session_id: this.sessionId, video_id: this.config.contentMetadata.contentId, video_title: this.config.contentMetadata.title, video_duration: this.config.contentMetadata.durationMs, video_content_type: this.config.contentMetadata.contentType, video_series: this.config.contentMetadata.questId, video_producer: this.config.contentMetadata.gameId };
+      const obj = { env_key, session_id: this.sessionId, player_name: "discord-mobile", player_version: "1.0.0", player_software_name: "react-native-video", player_software_version: "5.2.1-discord", player_mux_plugin_name: "discord-mobile-custom-integration", player_mux_plugin_version: "1.0.0", video_id: this.config.contentMetadata.contentId, video_title: this.config.contentMetadata.title, video_duration: this.config.contentMetadata.durationMs, video_content_type: this.config.contentMetadata.contentType, video_series: this.config.contentMetadata.questId, video_producer: this.config.contentMetadata.gameId };
       const gameName = this.config.contentMetadata.gameName;
       let str = "Discord";
       if (null != gameName) {
@@ -368,7 +375,7 @@ const tmp3 = () => {
     }
   };
   return callback(MobileCustomMuxIntegration, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/video-qoe/integrations/MobileCustomMuxIntegration.tsx");
+})();
+let result = require("log").fileFinishedImporting("modules/video-qoe/integrations/MobileCustomMuxIntegration.tsx");
 
 export const MobileCustomMuxIntegration = tmp3;

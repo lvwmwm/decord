@@ -1,20 +1,22 @@
-// Module ID: 8771
-// Function ID: 69320
+// Module ID: 8778
+// Function ID: 69361
 // Name: UnifiedGiftModal
-// Dependencies: []
+// Dependencies: [57, 31, 33, 4337, 5519, 8779, 1212, 5087, 8780, 8817, 5464, 2]
 // Exports: default
 
-// Module 8771 (UnifiedGiftModal)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModal.tsx");
+// Module 8778 (UnifiedGiftModal)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModal.tsx");
 
 export default function UnifiedGiftModal(skuId) {
   let obj = { skuId: skuId.skuId, applicationId: skuId.applicationId, lockedRecipientUser: skuId.lockedRecipientUser, onGiftModalDismiss: skuId.onGiftModalDismiss, validateRecipient: skuId.validateRecipient, renderProductDetails: skuId.renderProductDetails, renderPurchaseSection: skuId.renderPurchaseSection };
   obj = { value: skuId.analyticsLocations };
-  obj = { initialRouteName: arg1(dependencyMap[5]).UnifiedGiftModalScreens.GIFT_DETAIL };
-  obj.screens = function useScreens(skuId) {
+  obj = { initialRouteName: require(8779) /* UnifiedGiftModalScreens */.UnifiedGiftModalScreens.GIFT_DETAIL };
+  obj.screens = (function useScreens(skuId) {
     skuId = skuId.skuId;
     const applicationId = skuId.applicationId;
     const lockedRecipientUser = skuId.lockedRecipientUser;
@@ -22,40 +24,40 @@ export default function UnifiedGiftModal(skuId) {
     const validateRecipient = skuId.validateRecipient;
     const renderProductDetails = skuId.renderProductDetails;
     const renderPurchaseSection = skuId.renderPurchaseSection;
-    const tmp = onGiftModalDismiss(validateRecipient.useState(lockedRecipientUser), 2);
+    const tmp = outer1_3(outer1_4.useState(lockedRecipientUser), 2);
     const first = tmp[0];
     let closure_8 = tmp[1];
     const items = [onGiftModalDismiss];
-    const callback = validateRecipient.useCallback(() => {
-      let arr = applicationId(lockedRecipientUser[3]);
+    const callback = outer1_4.useCallback(() => {
+      let arr = outer2_1(outer2_2[3]);
       arr = arr.pop();
       if (null != onGiftModalDismiss) {
         onGiftModalDismiss();
       }
     }, items);
     const items1 = [lockedRecipientUser, first, skuId, applicationId, callback, validateRecipient, renderProductDetails, renderPurchaseSection];
-    return skuId(lockedRecipientUser[4]).useNavigatorScreens(() => {
+    return outer1_0(outer1_2[4]).useNavigatorScreens(() => {
       let obj = {};
       obj = {};
-      const intl = skuId(lockedRecipientUser[6]).intl;
-      obj.title = intl.string(skuId(lockedRecipientUser[6]).t.JCFN/y);
-      obj.headerLeft = skuId(lockedRecipientUser[7]).getHeaderCloseButton(callback);
+      const intl = outer2_0(outer2_2[6]).intl;
+      obj.title = intl.string(outer2_0(outer2_2[6]).t["JCFN/y"]);
+      obj.headerLeft = outer2_0(outer2_2[7]).getHeaderCloseButton(callback);
       obj.render = function render() {
-        return callback2(callback(closure_2[8]), { skuId: closure_0, applicationId: callback, recipientUser: closure_7, setRecipientUser: closure_8, lockedRecipient: null != closure_2, validateRecipient: closure_4, renderProductDetails: callback2, renderPurchaseSection: closure_6 });
+        return outer3_5(outer3_1(outer3_2[8]), { skuId: outer1_0, applicationId: outer1_1, recipientUser: outer1_7, setRecipientUser: outer1_8, lockedRecipient: null != outer1_2, validateRecipient: outer1_4, renderProductDetails: outer1_5, renderPurchaseSection: outer1_6 });
       };
-      obj[skuId(lockedRecipientUser[5]).UnifiedGiftModalScreens.GIFT_DETAIL] = obj;
+      obj[outer2_0(outer2_2[5]).UnifiedGiftModalScreens.GIFT_DETAIL] = obj;
       obj = {};
-      const intl2 = skuId(lockedRecipientUser[6]).intl;
-      obj.title = intl2.string(skuId(lockedRecipientUser[6]).t.R0vK0N);
-      const obj3 = skuId(lockedRecipientUser[7]);
-      obj.headerLeft = skuId(lockedRecipientUser[7]).getHeaderBackButton();
+      const intl2 = outer2_0(outer2_2[6]).intl;
+      obj.title = intl2.string(outer2_0(outer2_2[6]).t.R0vK0N);
+      const obj3 = outer2_0(outer2_2[7]);
+      obj.headerLeft = outer2_0(outer2_2[7]).getHeaderBackButton();
       obj.render = function render() {
-        return callback2(callback(closure_2[9]), { setRecipientUser: closure_8 });
+        return outer3_5(outer3_1(outer3_2[9]), { setRecipientUser: outer1_8 });
       };
-      obj[skuId(lockedRecipientUser[5]).UnifiedGiftModalScreens.RECIPENT_SELECT] = obj;
+      obj[outer2_0(outer2_2[5]).UnifiedGiftModalScreens.RECIPENT_SELECT] = obj;
       return obj;
     }, items1);
-  }(obj);
-  obj.children = jsx(arg1(dependencyMap[4]).Navigator, obj);
-  return jsx(arg1(dependencyMap[10]).AnalyticsLocationProvider, obj);
+  })(obj);
+  obj.children = jsx(require(5519) /* NavigationStack */.Navigator, { initialRouteName: require(8779) /* UnifiedGiftModalScreens */.UnifiedGiftModalScreens.GIFT_DETAIL });
+  return jsx(require(5464) /* mergeLocations */.AnalyticsLocationProvider, { initialRouteName: require(8779) /* UnifiedGiftModalScreens */.UnifiedGiftModalScreens.GIFT_DETAIL });
 };

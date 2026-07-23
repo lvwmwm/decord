@@ -1,25 +1,27 @@
-// Module ID: 12635
-// Function ID: 97167
+// Module ID: 12749
+// Function ID: 99323
 // Name: VoiceDuration
-// Dependencies: []
+// Dependencies: [6, 7, 4206, 4282, 2]
 
-// Module 12635 (VoiceDuration)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = [];
-let closure_5 = [-1453678490817343600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -409174164379682900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 115172291392722340000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -231678782666041000000000000000000000000000000000000000000000000000000000000000];
-const tmp2 = () => {
+// Module 12749 (VoiceDuration)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+let closure_4 = [1, 100, 1000, 10000];
+let closure_5 = [100, 500, 1000, 5000];
+const tmp2 = (() => {
   class VoiceDuration {
     constructor(arg0, arg1) {
       TimeStampProducer = arg2;
       self = this;
       if (arg2 === undefined) {
         tmp = VoiceDuration;
-        tmp2 = closure_1;
+        tmp2 = outer1_1;
         num = 2;
-        TimeStampProducer = VoiceDuration(closure_1[2]).TimeStampProducer;
+        TimeStampProducer = VoiceDuration(outer1_1[2]).TimeStampProducer;
       }
-      tmp3 = closure_2(self, VoiceDuration);
+      tmp3 = outer1_2(self, VoiceDuration);
       self.userId = arg0;
       self.connection = arg1;
       self.timestampProducer = TimeStampProducer;
@@ -32,33 +34,32 @@ const tmp2 = () => {
       map2 = new Map();
       self.speakingMinimumChunkCounts = map2;
       self.speechEventCount = 0;
-      stopWatch = new VoiceDuration(closure_1[2]).StopWatch(self.timestampProducer);
+      stopWatch = new VoiceDuration(outer1_1[2]).StopWatch(self.timestampProducer);
       self.listening = stopWatch;
-      stopWatch1 = new VoiceDuration(closure_1[2]).StopWatch(self.timestampProducer);
+      stopWatch1 = new VoiceDuration(outer1_1[2]).StopWatch(self.timestampProducer);
       self.speaking = stopWatch1;
-      stopWatch2 = new VoiceDuration(closure_1[2]).StopWatch(self.timestampProducer);
+      stopWatch2 = new VoiceDuration(outer1_1[2]).StopWatch(self.timestampProducer);
       self.participation = stopWatch2;
-      stopWatch3 = new VoiceDuration(closure_1[2]).StopWatch(self.timestampProducer);
+      stopWatch3 = new VoiceDuration(outer1_1[2]).StopWatch(self.timestampProducer);
       self.connected = stopWatch3;
-      stopWatch4 = new VoiceDuration(closure_1[2]).StopWatch(self.timestampProducer);
+      stopWatch4 = new VoiceDuration(outer1_1[2]).StopWatch(self.timestampProducer);
       self.muted = stopWatch4;
-      stopWatch5 = new VoiceDuration(closure_1[2]).StopWatch(self.timestampProducer);
+      stopWatch5 = new VoiceDuration(outer1_1[2]).StopWatch(self.timestampProducer);
       self.deafened = stopWatch5;
-      durationEnabled = new VoiceDuration(closure_1[2]).DurationEnabled(arg1.getNoiseCancellation(), self.timestampProducer);
+      durationEnabled = new VoiceDuration(outer1_1[2]).DurationEnabled(arg1.getNoiseCancellation(), self.timestampProducer);
       self.noiseCancellation = durationEnabled;
-      durationEnabled1 = new VoiceDuration(closure_1[2]).DurationEnabled(arg1.getSpatialAudioEnabled(), self.timestampProducer);
+      durationEnabled1 = new VoiceDuration(outer1_1[2]).DurationEnabled(arg1.getSpatialAudioEnabled(), self.timestampProducer);
       self.spatialAudio = durationEnabled1;
       return;
     }
   }
-  const arg1 = VoiceDuration;
   let obj = {
     key: "start",
     value() {
       let flag = arg0;
       let flag2 = arg1;
-      const self = this;
-      const VoiceDuration = this;
+      let self = this;
+      self = this;
       if (arg0 === undefined) {
         flag = false;
       }
@@ -93,7 +94,7 @@ const tmp2 = () => {
       const connected2 = self.connected;
       connected2.start();
       const connection = self.connection;
-      connection.on(VoiceDuration(closure_1[3]).BaseConnectionEvent.Speaking, (arg0, arg1) => {
+      connection.on(VoiceDuration(outer1_1[3]).BaseConnectionEvent.Speaking, (arg0, arg1) => {
         if (self.userId === arg0) {
           self.onSpeaking(0 !== arg1);
         } else {
@@ -103,11 +104,11 @@ const tmp2 = () => {
       self.onMuted(flag);
       self.onDeafened(flag2);
       const connection2 = self.connection;
-      connection2.on(VoiceDuration(closure_1[3]).BaseConnectionEvent.Mute, (arg0) => {
+      connection2.on(VoiceDuration(outer1_1[3]).BaseConnectionEvent.Mute, (arg0) => {
         self.onMuted(arg0);
       });
       const connection3 = self.connection;
-      connection3.on(VoiceDuration(closure_1[3]).BaseConnectionEvent.Deafen, (arg0) => {
+      connection3.on(VoiceDuration(outer1_1[3]).BaseConnectionEvent.Deafen, (arg0) => {
         self.onDeafened(arg0);
       });
     }
@@ -191,19 +192,22 @@ const tmp2 = () => {
   items[5] = {
     key: "computeSpeakingDurationMilestones",
     value(arg0, arg1, arg2) {
-      const VoiceDuration = this;
+      const self = this;
+      let closure_1 = arg0;
+      let _classCallCheck = arg1;
+      let _defineProperties = arg2;
       if (null != arg0) {
         if (null != arg1) {
           const speaking = this.speaking;
           let closure_4 = speaking.elapsed().asMilliseconds();
-          const found = closure_4.filter((arg0) => {
+          const found = outer1_4.filter((arg0) => {
             const timesUntilSpeakingDurationMilestonesMs = self.timesUntilSpeakingDurationMilestonesMs;
             return !timesUntilSpeakingDurationMilestonesMs.has(arg0);
           });
           const found1 = found.filter((arg0) => closure_4 >= arg0);
           const item = found1.forEach((arg0) => {
             const timesUntilSpeakingDurationMilestonesMs = self.timesUntilSpeakingDurationMilestonesMs;
-            const result = timesUntilSpeakingDurationMilestonesMs.set(arg0, arg1 - arg0 + arg0 - arg2);
+            const result = timesUntilSpeakingDurationMilestonesMs.set(arg0, _classCallCheck - closure_1 + arg0 - _defineProperties);
           });
           const elapsedResult = speaking.elapsed();
         }
@@ -213,12 +217,12 @@ const tmp2 = () => {
   items[6] = {
     key: "addSpeechChunk",
     value() {
-      const VoiceDuration = this;
+      const self = this;
       const lastStartTime = this.speaking.lastStartTime;
       if (null != lastStartTime) {
         const timestampProducer = this.timestampProducer;
         let closure_1 = timestampProducer.now() - lastStartTime;
-        const found = closure_5.filter((arg0) => closure_1 >= arg0);
+        const found = outer1_5.filter((arg0) => closure_1 >= arg0);
         const item = found.forEach((arg0) => {
           const speakingMinimumChunks = self.speakingMinimumChunks;
           let value = speakingMinimumChunks.get(arg0);
@@ -274,8 +278,8 @@ const tmp2 = () => {
   items[10] = {
     key: "getDurationStats",
     value() {
-      const self = this;
-      const VoiceDuration = this;
+      let self = this;
+      self = this;
       const lastStartTime = this.speaking.lastStartTime;
       const timestampProducer = this.timestampProducer;
       let num = 0;
@@ -283,7 +287,7 @@ const tmp2 = () => {
         num = timestampProducer.now() - lastStartTime;
       }
       const speakingDurationMilestones = self.computeSpeakingDurationMilestones(self.connected.lastStartTime, self.speaking.lastStartTime, self.speaking.lastElapsed);
-      const obj = {};
+      let obj = {};
       const listening = self.listening;
       obj.duration_listening_ms = listening.elapsed().asMilliseconds();
       const speaking = self.speaking;
@@ -306,11 +310,11 @@ const tmp2 = () => {
       const spatialAudio = self.spatialAudio;
       obj.duration_spatial_ms = spatialAudio.totalDuration();
       obj.speech_event_count = self.speechEventCount;
-      const found = closure_4.filter((arg0) => {
+      const found = outer1_4.filter((arg0) => {
         const timesUntilSpeakingDurationMilestonesMs = self.timesUntilSpeakingDurationMilestonesMs;
         return timesUntilSpeakingDurationMilestonesMs.has(arg0);
       });
-      const merged = Object.assign(found.reduce((arg0, arg1) => {
+      let merged = Object.assign(found.reduce((arg0, arg1) => {
         const obj = {};
         const merged = Object.assign(arg0);
         const timesUntilSpeakingDurationMilestonesMs = self.timesUntilSpeakingDurationMilestonesMs;
@@ -318,7 +322,7 @@ const tmp2 = () => {
         obj[combined] = timesUntilSpeakingDurationMilestonesMs.get(arg1);
         return obj;
       }, {}));
-      const found1 = closure_5.filter((arg0) => {
+      const found1 = outer1_5.filter((arg0) => {
         const speakingMinimumChunks = self.speakingMinimumChunks;
         let hasItem = speakingMinimumChunks.has(arg0);
         if (!hasItem) {
@@ -359,7 +363,7 @@ const tmp2 = () => {
     }
   };
   return callback(VoiceDuration, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("lib/VoiceDuration.tsx");
+})();
+let result = require("sleep").fileFinishedImporting("lib/VoiceDuration.tsx");
 
 export default tmp2;

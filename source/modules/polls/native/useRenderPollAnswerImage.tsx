@@ -1,32 +1,32 @@
-// Module ID: 11322
-// Function ID: 88109
+// Module ID: 11332
+// Function ID: 88159
 // Name: useRenderPollAnswerImage
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4468, 4467, 1852, 33, 566, 11326, 5085, 5151, 3774, 1392, 2]
 // Exports: default
 
-// Module 11322 (useRenderPollAnswerImage)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const ActivityIndicator = arg1(dependencyMap[2]).ActivityIndicator;
-const DraftType = arg1(dependencyMap[3]).DraftType;
-let closure_7 = importDefault(dependencyMap[4]);
-const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[5]).EMOJI_URL_BASE_SIZE;
-const jsx = arg1(dependencyMap[6]).jsx;
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/polls/native/useRenderPollAnswerImage.tsx");
+// Module 11332 (useRenderPollAnswerImage)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { ActivityIndicator } from "get ActivityIndicator";
+import { DraftType } from "_isNativeReflectConstruct";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { EMOJI_URL_BASE_SIZE } from "set";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/polls/native/useRenderPollAnswerImage.tsx");
 
 export default function useRenderPollAnswerImage(arg0, arg1, mediaAttachmentState) {
-  arg1 = arg0;
-  const importDefault = arg1;
+  const _require = arg0;
+  let closure_1 = arg1;
   const dependencyMap = mediaAttachmentState;
   const callback = arg3;
   const React = arg4;
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => tmp5.getUpload(arg0, arg1, first.Poll));
-  const ActivityIndicator = stateFromStores;
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => tmp5.getUpload(closure_0, closure_1, first.Poll));
   const tmp2 = callback(React.useState(), 2);
   const first = tmp2[0];
-  const DraftType = first;
   let status;
   if (null != mediaAttachmentState) {
     mediaAttachmentState = mediaAttachmentState.mediaAttachmentState;
@@ -34,33 +34,33 @@ export default function useRenderPollAnswerImage(arg0, arg1, mediaAttachmentStat
       status = mediaAttachmentState.status;
     }
   }
-  const tmp5 = status === arg1(dependencyMap[8]).PollMediaUploadAttachmentStatus.PREPARING;
-  closure_7 = tmp5;
+  const tmp5 = status === _require(11326).PollMediaUploadAttachmentStatus.PREPARING;
+  _isNativeReflectConstruct = tmp5;
   obj = {
     renderImage: React.useMemo(() => {
-      if (tmp5) {
-        return callback(stateFromStores, {});
+      if (_isNativeReflectConstruct) {
+        return outer1_9(stateFromStores, {});
       } else if (null != stateFromStores) {
-        const tmp19 = null != arg3 ? arg3 : first;
+        const tmp19 = null != _slicedToArray ? _slicedToArray : first;
         let obj = {};
         obj = { width: tmp19, height: tmp19 };
         obj.style = obj;
         const obj1 = { uri: stateFromStores.item.uri };
         obj.source = obj1;
-        return callback(arg1(arg2[9]), obj);
+        return outer1_9(callback2(mediaAttachmentState[9]), obj);
       } else {
         let emoji;
-        if (null != arg2) {
-          emoji = arg2.emoji;
+        if (null != mediaAttachmentState) {
+          emoji = mediaAttachmentState.emoji;
         }
         if (null != emoji) {
-          emoji = arg2.emoji;
+          emoji = mediaAttachmentState.emoji;
           obj = {};
-          const obj2 = { width: arg4, height: arg4 };
+          const obj2 = { width: result, height: result };
           obj.fastImageStyle = obj2;
-          let obj3 = { fontSize: arg4 };
+          let obj3 = { fontSize: result };
           obj.textEmojiStyle = obj3;
-          const tmp12 = emoji.type === arg0(arg2[11]).EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
+          const tmp12 = emoji.type === callback(mediaAttachmentState[11]).EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
           let str = "";
           if (null != tmp12) {
             str = tmp12;
@@ -68,20 +68,20 @@ export default function useRenderPollAnswerImage(arg0, arg1, mediaAttachmentStat
           obj.name = str;
           let emojiURL;
           if (null != emoji.id) {
-            obj3 = arg1(arg2[12]);
+            obj3 = callback2(mediaAttachmentState[12]);
             const obj4 = {};
             ({ id: obj5.id, animated: obj5.animated } = emoji);
-            obj4.size = closure_8;
+            obj4.size = outer1_8;
             emojiURL = obj3.getEmojiURL(obj4);
           }
           obj.src = emojiURL;
-          return callback(arg1(arg2[10]), obj);
+          return outer1_9(callback2(mediaAttachmentState[10]), obj);
         }
       }
     }, items1),
     upload: stateFromStores,
     setUploadSize: tmp2[1]
   };
-  const items1 = [mediaAttachmentState, arg4, arg3, stateFromStores, tmp5, first];
+  items1 = [mediaAttachmentState, arg4, arg3, stateFromStores, tmp5, first];
   return obj;
 };

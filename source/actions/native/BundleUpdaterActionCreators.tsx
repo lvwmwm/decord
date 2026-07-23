@@ -1,37 +1,37 @@
-// Module ID: 16471
-// Function ID: 127248
-// Dependencies: []
+// Module ID: 16588
+// Function ID: 129422
+// Dependencies: [27, 4470, 1212, 2]
 
-// Module 16471
-const NativeModules = require(dependencyMap[0]).NativeModules;
-let closure_4 = false;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("actions/native/BundleUpdaterActionCreators.tsx");
+// Module 16588
+import { NativeModules } from "get ActivityIndicator";
+
+let c4 = false;
+const result = require("getSystemLocale").fileFinishedImporting("actions/native/BundleUpdaterActionCreators.tsx");
 
 export default {
   prepareUpdate(versionRequired) {
     if (versionRequired) {
-      let obj = importDefault(dependencyMap[1]);
+      let obj = importDefault(4470);
       obj = {};
-      const intl = require(dependencyMap[2]).intl;
-      obj.title = intl.string(require(dependencyMap[2]).t.GQZdmI);
-      const intl2 = require(dependencyMap[2]).intl;
-      obj.body = intl2.string(require(dependencyMap[2]).t.Fizu9y);
-      const intl3 = require(dependencyMap[2]).intl;
-      obj.confirmText = intl3.string(require(dependencyMap[2]).t.UefCDS);
-      const intl4 = require(dependencyMap[2]).intl;
-      obj.cancelText = intl4.string(require(dependencyMap[2]).t.1SzcG6);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj.title = intl.string(require(1212) /* getSystemLocale */.t.GQZdmI);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      obj.body = intl2.string(require(1212) /* getSystemLocale */.t.Fizu9y);
+      const intl3 = require(1212) /* getSystemLocale */.intl;
+      obj.confirmText = intl3.string(require(1212) /* getSystemLocale */.t.UefCDS);
+      const intl4 = require(1212) /* getSystemLocale */.intl;
+      obj.cancelText = intl4.string(require(1212) /* getSystemLocale */.t["1SzcG6"]);
       obj.onConfirm = function onConfirm() {
-        const BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
+        const BundleUpdaterManager = outer1_3.BundleUpdaterManager;
         return BundleUpdaterManager.reload();
       };
       obj.show(obj);
-      let closure_4 = true;
+      let c4 = true;
     }
   },
   deferUpdate() {
-    if (closure_4) {
-      closure_4 = false;
+    if (c4) {
+      c4 = false;
       const BundleUpdaterManager = NativeModules.BundleUpdaterManager;
       BundleUpdaterManager.reload();
     }

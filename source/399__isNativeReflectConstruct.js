@@ -1,9 +1,17 @@
 // Module ID: 399
 // Function ID: 5772
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 33, 303]
 
 // Module 399 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import jsxProd from "jsxProd";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { jsx } from "jsxProd";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,20 +21,13 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = [];
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const jsx = arg1(dependencyMap[7]).jsx;
+let closure_2 = ["stickySectionHeadersEnabled"];
 
-export default (PureComponent) => {
+export default ((PureComponent) => {
   class SectionList {
     constructor() {
       self = this;
-      tmp = closure_4(this, SectionList);
+      tmp = outer1_4(this, apply);
       length = arguments.length;
       array = new Array(length);
       for (let num = 0; num < length; num = num + 1) {
@@ -34,26 +35,25 @@ export default (PureComponent) => {
       }
       items = [];
       combined = items.concat(array);
-      obj = closure_7(SectionList);
-      tmp3 = closure_6;
-      if (closure_10()) {
+      obj = outer1_7(apply);
+      tmp3 = outer1_6;
+      if (outer1_10()) {
         if (!combined) {
           combined = [];
         }
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, combined, closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, combined, outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, combined);
       }
       tmp3Result = tmp3(self, constructResult);
-      SectionList = tmp3Result;
+      apply = tmp3Result;
       tmp3Result._captureRef = (_wrapperListRef) => {
-        tmp3Result._wrapperListRef = _wrapperListRef;
+        closure_0._wrapperListRef = _wrapperListRef;
       };
       return tmp3Result;
     }
   }
-  const importDefault = SectionList;
   callback2(SectionList, PureComponent);
   let obj = {
     key: "scrollToLocation",
@@ -64,7 +64,7 @@ export default (PureComponent) => {
       }
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "recordInteraction",
     value: function recordInteraction() {
@@ -147,8 +147,8 @@ export default (PureComponent) => {
           return arg0[arg1];
         }
       };
-      return callback4(SectionList(closure_1[8]).VirtualizedSectionList, Object.assign({}, callback(props, closure_2), obj));
+      return outer1_9(SectionList(outer1_1[8]).VirtualizedSectionList, Object.assign({}, outer1_3(props, outer1_2), obj));
     }
   };
   return callback(SectionList, items);
-}(importAll(dependencyMap[6]).PureComponent);
+})(require("result").PureComponent);

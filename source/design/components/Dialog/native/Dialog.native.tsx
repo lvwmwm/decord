@@ -1,30 +1,32 @@
-// Module ID: 4520
-// Function ID: 39732
+// Module ID: 4524
+// Function ID: 39764
 // Name: Dialog
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4525, 2]
 // Exports: Dialog
 
-// Module 4520 (Dialog)
-let closure_2 = importAll(dependencyMap[0]);
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Dialog/native/Dialog.native.tsx");
+// Module 4524 (Dialog)
+import result from "result";
+import { StyleSheet } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("design/components/Dialog/native/Dialog.native.tsx");
 
 export const Dialog = function Dialog(dialogKey) {
   let onDismiss;
   let zIndex;
   dialogKey = dialogKey.dialogKey;
-  let obj = { children: "spring", androidRippleConfig: 0.4, style: 1 };
+  let obj = { dialogKey: 0, onDismiss: 0, zIndex: 0 };
   ({ onDismiss, zIndex } = dialogKey);
   Object.setPrototypeOf(null);
   const merged = Object.assign(dialogKey, obj);
-  let id = closure_2.useId();
+  let id = result.useId();
   obj = { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss };
-  const items = [StyleSheet.absoluteFill, { zIndex }];
+  items = [StyleSheet.absoluteFill, { zIndex }];
   if (null != dialogKey) {
     id = dialogKey;
   }
   obj.nativeID = id;
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).AccessibilityView, obj);
+  return jsx(require(4525) /* AccessibilityView */.AccessibilityView, { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss });
 };

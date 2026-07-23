@@ -1,12 +1,11 @@
-// Module ID: 7930
-// Function ID: 63342
+// Module ID: 7936
+// Function ID: 63379
 // Name: sanitizeThreadName
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 7930 (sanitizeThreadName)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/threads/sanitizeThreadName.tsx");
+// Module 7936 (sanitizeThreadName)
+const result = require("set").fileFinishedImporting("modules/threads/sanitizeThreadName.tsx");
 
 export default function sanitizeThreadName(str) {
   let trimmed = str;

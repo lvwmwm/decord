@@ -1,17 +1,17 @@
-// Module ID: 15880
-// Function ID: 121581
+// Module ID: 15997
+// Function ID: 123754
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 99, 100, 10235]
+// Dependencies: [6, 7, 15, 17, 18, 1844, 5078, 2]
 
-// Module 15880 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 15997 (_isNativeReflectConstruct)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+import set from "set";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _inherits from "_inherits";
-import tmp2 from "_classPrivateFieldKey";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import tmp2 from "AutomaticLifecycleManager";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,6 +22,6 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 tmp2 = new tmp2();
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/blocked_domains/BlockedDomainManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/blocked_domains/BlockedDomainManager.tsx");
 
 export default tmp2;

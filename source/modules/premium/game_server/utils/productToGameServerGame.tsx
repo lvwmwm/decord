@@ -1,12 +1,11 @@
-// Module ID: 11508
-// Function ID: 89682
+// Module ID: 11518
+// Function ID: 89732
 // Name: productToGameServerGame
-// Dependencies: []
+// Dependencies: [2]
 // Exports: productToGameServerGame
 
-// Module 11508 (productToGameServerGame)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/premium/game_server/utils/productToGameServerGame.tsx");
+// Module 11518 (productToGameServerGame)
+const result = require("set").fileFinishedImporting("modules/premium/game_server/utils/productToGameServerGame.tsx");
 
 export const productToGameServerGame = function productToGameServerGame(id) {
   const skus = id.skus;

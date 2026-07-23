@@ -1,26 +1,29 @@
 // Module ID: 1277
-// Function ID: 14404
+// Function ID: 14405
 // Name: semanticColor
-// Dependencies: []
+// Dependencies: [1278, 477, 689, 4110, 3976, 2]
 // Exports: getThemedRippleConfig
 
 // Module 1277 (semanticColor)
-let closure_2 = importDefault(dependencyMap[0]);
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import set from "set";
+import { internal } from "_createForOfIteratorHelperLoose";
+import { internal as internal2 } from "_createForOfIteratorHelperLoose";
+import getSystemVersion from "getSystemVersion";
+import set from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let num = 24;
-if (obj.isAndroid()) {
+if (set.isAndroid()) {
   num = 32;
 }
-const internal = importDefault(dependencyMap[2]).internal;
-const semanticColor = internal.resolveSemanticColor(importDefault(dependencyMap[2]).themes.DARK, importDefault(dependencyMap[2]).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-const internal2 = importDefault(dependencyMap[2]).internal;
-const semanticColor1 = internal2.resolveSemanticColor(importDefault(dependencyMap[2]).themes.LIGHT, importDefault(dependencyMap[2]).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-const obj = arg1(dependencyMap[1]);
-const systemVersionMajor = arg1(dependencyMap[3]).getSystemVersionMajor();
-const frozen = Object.freeze({ foreground: true });
+const semanticColor = internal.resolveSemanticColor(require("_createForOfIteratorHelperLoose").themes.DARK, require("_createForOfIteratorHelperLoose").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+const semanticColor1 = internal2.resolveSemanticColor(require("_createForOfIteratorHelperLoose").themes.LIGHT, require("_createForOfIteratorHelperLoose").colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+getSystemVersion = getSystemVersion.getSystemVersionMajor();
+let frozen = Object.freeze({ foreground: true });
 let closure_6 = Object.freeze({});
 const map = new Map();
-const obj2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/void/Form/native/FormConstants.tsx");
+let result = set.fileFinishedImporting("design/void/Form/native/FormConstants.tsx");
 
 export const FORM_ROW_VERTICAL_PADDING = num;
 export const RIPPLE_DARK_COLOR = semanticColor;
@@ -35,7 +38,7 @@ export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
   let radius;
   ({ radius, cornerRadius, color } = arg0);
   ({ foreground, borderless } = arg0);
-  let obj = arg1(dependencyMap[1]);
+  let obj = require(477) /* set */;
   if (obj.isAndroid()) {
     if (null != color) {
       const sum = "" + color.toString() + cornerRadius + radius + tmp3;
@@ -50,8 +53,8 @@ export const getThemedRippleConfig = function getThemedRippleConfig(arg0) {
         return frozen;
       }
     } else {
-      arg1(dependencyMap[4]).isThemeLight(theme.theme) ? semanticColor1 : semanticColor;
-      const obj2 = arg1(dependencyMap[4]);
+      require(3976) /* AccessibilityAnnouncer */.isThemeLight(theme.theme) ? semanticColor1 : semanticColor;
+      const obj2 = require(3976) /* AccessibilityAnnouncer */;
     }
   } else {
     return closure_6;

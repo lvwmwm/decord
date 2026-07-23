@@ -1,10 +1,22 @@
-// Module ID: 15238
-// Function ID: 115046
+// Module ID: 15354
+// Function ID: 117216
 // Name: ChannelContentComponent
-// Dependencies: []
+// Dependencies: [31, 27, 10260, 4326, 33, 4130, 477, 10261, 4623, 15355, 4652, 7576, 14971, 4126, 2]
 // Exports: renderChannelContent
 
-// Module 15238 (ChannelContentComponent)
+// Module 15354 (ChannelContentComponent)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { UnreadSetting } from "ReadStateTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "set";
+import set from "hairlineWidth";
+
+let closure_6;
+let closure_7;
+const require = arg1;
 function ChannelContentComponent(arg0) {
   let channel;
   let connected;
@@ -22,13 +34,13 @@ function ChannelContentComponent(arg0) {
   let unread;
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, muted, connected, needSubscriptionToAccess } = arg0);
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[7]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(10261) /* getLayoutStyles */;
   let tmp3 = null != channel;
   const layoutStyles = obj.getLayoutStyles(layout);
   if (tmp3) {
     if (!locked) {
-      locked = importDefault(dependencyMap[8])(channel);
+      locked = importDefault(4623)(channel);
     }
     tmp3 = locked;
   }
@@ -54,7 +66,7 @@ function ChannelContentComponent(arg0) {
   items[1] = obj2;
   obj1.style = items;
   const obj3 = {};
-  const obj4 = { <string:1509384864>: "text-lg/normal", <string:1335723603>: "text-default", <string:1637180967>: true };
+  const obj4 = { flexDirection: "row", paddingRight: null, alignItems: "center" };
   let num2 = 0;
   if (tmp9) {
     num2 = 30;
@@ -68,7 +80,7 @@ function ChannelContentComponent(arg0) {
   obj5.resolvedUnreadSetting = resolvedUnreadSetting;
   obj5.connected = connected;
   obj5.layout = layout;
-  const items1 = [callback(importDefault(dependencyMap[9]), obj5), ];
+  const items1 = [callback(importDefault(15355), obj5), ];
   let tmp22Result = tmp3;
   if (!tmp3) {
     tmp22Result = isNSFWResult;
@@ -88,18 +100,18 @@ function ChannelContentComponent(arg0) {
     items2[1] = obj7;
     obj6.style = items2;
     if (tmp3) {
-      const obj8 = { style: tmp.channelTraitIcon };
-      tmp3 = callback(arg1(dependencyMap[10]).LockIcon, obj8);
+      const obj8 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
+      tmp3 = callback(require(4652) /* LockIcon */.LockIcon, obj8);
     }
     const items3 = [tmp3, , ];
     if (isNSFWResult) {
-      const obj9 = { style: tmp.channelTraitIcon };
-      isNSFWResult = callback(arg1(dependencyMap[11]).WarningIcon, obj9);
+      const obj9 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
+      isNSFWResult = callback(require(7576) /* WarningIcon */.WarningIcon, obj9);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj10 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = callback(importDefault(dependencyMap[12]), obj10);
+      isSubscriptionGated = callback(importDefault(14971), obj10);
     }
     items3[2] = isSubscriptionGated;
     obj6.children = items3;
@@ -138,15 +150,15 @@ function ChannelContentComponent(arg0) {
   const obj14 = { style: tmp9 ? tmp.rightContentAbsolute : tmp.rightBox };
   let tmp38 = tmp8;
   if (tmp8) {
-    const obj15 = {};
+    const obj15 = { variant: "text-xs/medium", color: "text-muted", style: null, maxFontSizeMultiplier: 1.75 };
     const obj16 = { marginLeft: "auto" };
     obj15.style = obj16;
     obj15.children = lastMessageTimestampString;
-    tmp38 = callback(arg1(dependencyMap[13]).Text, obj15);
+    tmp38 = callback(require(4126) /* Text */.Text, obj15);
   }
   const items7 = [tmp38, , ];
   const obj17 = {};
-  const items8 = [{ "Null": "/assets/design/components/Illustration/native/redesign/generated/images", "Null": 160 }, ];
+  const items8 = [{ alignItems: "center", paddingLeft: 4 }, ];
   if (tmp8) {
     const obj18 = { marginTop: 5 };
     tmp8 = obj18;
@@ -168,36 +180,29 @@ function ChannelContentComponent(arg0) {
   obj.children = closure_7(View, obj);
   return callback(View, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const UnreadSetting = arg1(dependencyMap[3]).UnreadSetting;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { flex: 1 };
-const tmp2 = arg1(dependencyMap[4]);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1 };
 let num = -1;
-if (obj4.isIOS()) {
+if (set.isIOS()) {
   num = 2;
 }
-obj.marginTop = num;
-obj.channelContent = obj;
-obj.channelContainer = { "Null": null, "Null": null, "Null": null, "Null": null };
-obj.leftBox = {};
-obj.rightBox = { <string:3814666730>: "<string:1459617792>", <string:1280564396>: "<string:1275068417>" };
-obj.rightContentAbsolute = {};
-obj.channelTraits = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
-const obj1 = { opacity: arg1(dependencyMap[2]).SUBTITLE_OPACITY_NORMAL, marginRight: 4 };
-const obj4 = arg1(dependencyMap[6]);
+_createForOfIteratorHelperLoose.marginTop = num;
+_createForOfIteratorHelperLoose.channelContent = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.channelContainer = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+_createForOfIteratorHelperLoose.leftBox = { flexDirection: "column", alignItems: "flex-start", flexShrink: 1 };
+_createForOfIteratorHelperLoose.rightBox = { flexDirection: "column", alignItems: "flex-end" };
+_createForOfIteratorHelperLoose.rightContentAbsolute = { position: "absolute", right: 0, top: 0 };
+_createForOfIteratorHelperLoose.channelTraits = { display: "flex", flexDirection: "row", alignItems: "center" };
+let obj1 = { opacity: require("hairlineWidth").SUBTITLE_OPACITY_NORMAL, marginRight: 4 };
 let num2 = 0;
-if (obj6.isAndroid()) {
+if (set.isAndroid()) {
   num2 = 2;
 }
 obj1.marginTop = num2;
-obj.channelTraitIcon = obj1;
-let closure_8 = obj.createStyles(obj);
-const obj6 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelContent.tsx");
+_createForOfIteratorHelperLoose.channelTraitIcon = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelContent.tsx");
 
 export const renderChannelContent = function renderChannelContent(arg0) {
   const merged = Object.assign(arg0);

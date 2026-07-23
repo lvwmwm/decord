@@ -1,38 +1,39 @@
-// Module ID: 10578
-// Function ID: 82571
+// Module ID: 10588
+// Function ID: 82621
 // Name: useStreamError
-// Dependencies: []
+// Dependencies: [10566, 8857, 566, 2]
 // Exports: default
 
-// Module 10578 (useStreamError)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = { [arg1(dependencyMap[1]).AVError.STREAM_SOUNDSHARE_FAILED]: 0, [arg1(dependencyMap[1]).AVError.STREAM_SEND_HIGH_PACKET_LOSS]: 1, [arg1(dependencyMap[1]).AVError.STREAM_VIEW_HIGH_PACKET_LOSS]: 1, [arg1(dependencyMap[1]).AVError.STREAM_SEND_LOW_FPS]: 2, [arg1(dependencyMap[1]).AVError.STREAM_VIEW_LOW_FPS]: 2, [arg1(dependencyMap[1]).AVError.STREAM_BAD_NETWORK_QUALITY]: 3 };
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/go_live/useStreamError.tsx");
+// Module 10588 (useStreamError)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_3 = { [arg1(8857).AVError.STREAM_SOUNDSHARE_FAILED]: 0, [arg1(8857).AVError.STREAM_SEND_HIGH_PACKET_LOSS]: 1, [arg1(8857).AVError.STREAM_VIEW_HIGH_PACKET_LOSS]: 1, [arg1(8857).AVError.STREAM_SEND_LOW_FPS]: 2, [arg1(8857).AVError.STREAM_VIEW_LOW_FPS]: 2, [arg1(8857).AVError.STREAM_BAD_NETWORK_QUALITY]: 3 };
+const result = require("initialize").fileFinishedImporting("modules/go_live/useStreamError.tsx");
 
 export default function useStreamError(id) {
   id = id.id;
-  const arg1 = id;
-  const items = [closure_2];
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [id];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const activeErrors = activeErrors.getActiveErrors();
+  return id(566).useStateFromStores(items, () => {
+    const activeErrors = outer1_2.getActiveErrors();
     const found = Array.from(activeErrors.values()).filter((streamKey) => {
       let tmp = "streamKey" in streamKey;
       if (tmp) {
-        tmp = streamKey.streamKey === closure_0;
+        tmp = streamKey.streamKey === outer1_0;
       }
       if (tmp) {
-        tmp = null != closure_3[streamKey.type];
+        tmp = null != outer2_3[streamKey.type];
       }
       return tmp;
     });
     const first = found.sort((arg0, arg1) => {
       let num = 0;
-      if (null != closure_3[arg0.type]) {
+      if (null != outer2_3[arg0.type]) {
         num = tmp;
       }
       let num2 = 0;
-      if (null != closure_3[arg1.type]) {
+      if (null != outer2_3[arg1.type]) {
         num2 = tmp2;
       }
       return num - num2;

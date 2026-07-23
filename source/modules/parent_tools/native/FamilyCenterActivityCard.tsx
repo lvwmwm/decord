@@ -1,32 +1,47 @@
-// Module ID: 13678
-// Function ID: 103537
+// Module ID: 13792
+// Function ID: 105693
 // Name: FamilyCenterActivityCardPrefaceText
-// Dependencies: []
+// Dependencies: [31, 27, 6770, 653, 33, 4130, 689, 7124, 7123, 6828, 11064, 1212, 2198, 1273, 13793, 4126, 8474, 4337, 13794, 1934, 7415, 13795, 13796, 11061, 4098, 3830, 3969, 8382, 675, 10681, 13797, 13798, 13799, 13802, 13809, 2]
 // Exports: default
 
-// Module 13678 (FamilyCenterActivityCardPrefaceText)
+// Module 13792 (FamilyCenterActivityCardPrefaceText)
+import importAllResult from "FamilyCenterActivityTotal";
+import { View } from "ItemSelectorActionSheet";
+import items from "items";
+import { AnalyticEvents } from "ME";
+import jsxProd from "FamilyCenterActivitySectionHeader";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+let require = arg1;
 function FamilyCenterActivityCardPrefaceText() {
   const tmp = callback3();
-  const tmp2 = importDefault(dependencyMap[7])();
-  let obj = arg1(dependencyMap[8]);
+  const tmp2 = importDefault(7124)();
+  let obj = require(7123) /* useUserIdsForLinkStatus */;
   const activeLinkUserIds = obj.useActiveLinkUserIds();
-  let obj1 = arg1(dependencyMap[9]);
+  let obj1 = require(6828) /* getActivityTypeTextConfigs */;
   const activityWindowTimestampFormatter = obj1.getActivityWindowTimestampFormatter(tmp2);
-  let obj2 = arg1(dependencyMap[8]);
+  let obj2 = require(7123) /* useUserIdsForLinkStatus */;
   const activityWindowTimeStamp = obj2.useActivityWindowTimeStamp(activityWindowTimestampFormatter);
-  let obj3 = arg1(dependencyMap[10]);
-  const intl = arg1(dependencyMap[11]).intl;
+  let obj3 = require(11064) /* useAgeSpecificText */;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { activeLinks: activeLinkUserIds.length };
-  const intl2 = arg1(dependencyMap[11]).intl;
-  const ageSpecificText = obj3.useAgeSpecificText(intl.formatToPlainString(importDefault(dependencyMap[12]).tazvHQ, obj), intl2.string(importDefault(dependencyMap[12]).KrLnkE));
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  const ageSpecificText = obj3.useAgeSpecificText(intl.formatToPlainString(importDefault(2198).tazvHQ, obj), intl2.string(importDefault(2198).KrLnkE));
   obj = { style: tmp.container };
   let tmp9 = null;
   if (!tmp2) {
-    obj1 = { color: tmp.icon.color, source: importDefault(dependencyMap[14]), style: tmp.icon };
-    tmp9 = callback(arg1(dependencyMap[13]).Icon, obj1);
+    obj1 = { color: tmp.icon.color, source: importDefault(13793), style: tmp.icon };
+    tmp9 = callback(require(1273) /* Button */.Icon, obj1);
   }
   const items = [tmp9, , ];
-  obj2 = { style: tmp.text };
+  obj2 = { style: tmp.text, variant: "text-xs/semibold", color: "text-subtle" };
   let tmp15 = ageSpecificText;
   if (activeLinkUserIds.length > 1) {
     tmp15 = ageSpecificText;
@@ -35,31 +50,31 @@ function FamilyCenterActivityCardPrefaceText() {
     }
   }
   obj2.children = tmp15;
-  items[1] = callback(arg1(dependencyMap[15]).Text, obj2);
+  items[1] = callback(require(4126) /* Text */.Text, obj2);
   obj3 = {
     onPress() {
-      callback2(paths[17]).pushLazy(callback(paths[19])(paths[18], paths.paths));
+      outer1_1(outer1_2[17]).pushLazy(outer1_0(outer1_2[19])(outer1_2[18], outer1_2.paths));
     }
   };
-  const formatToPlainStringResult = intl.formatToPlainString(importDefault(dependencyMap[12]).tazvHQ, obj);
+  const formatToPlainStringResult = intl.formatToPlainString(importDefault(2198).tazvHQ, obj);
   const tmp14 = callback;
   const tmp7 = closure_9;
   const tmp8 = View;
-  const obj4 = { color: tmp.icon.color, source: importDefault(dependencyMap[20]), size: arg1(dependencyMap[13]).Icon.Sizes.EXTRA_SMALL, style: tmp.icon };
-  obj3.children = callback(arg1(dependencyMap[13]).Icon, obj4);
-  items[2] = callback(importDefault(dependencyMap[16]), obj3);
+  const obj4 = { color: tmp.icon.color, source: importDefault(7415), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL, style: tmp.icon };
+  obj3.children = callback(require(1273) /* Button */.Icon, obj4);
+  items[2] = callback(importDefault(8474), obj3);
   obj.children = items;
   return tmp7(tmp8, obj);
 }
 function FamilyCenterHeaderSubText() {
-  const tmp = importDefault(dependencyMap[7])();
-  let obj = arg1(dependencyMap[8]);
+  const tmp = importDefault(7124)();
+  let obj = require(7123) /* useUserIdsForLinkStatus */;
   const activeLinkUserIds = obj.useActiveLinkUserIds();
-  const activityWindowTimestampFormatter = arg1(dependencyMap[9]).getActivityWindowTimestampFormatter(tmp);
-  arg1(dependencyMap[8]);
+  const activityWindowTimestampFormatter = require(6828) /* getActivityTypeTextConfigs */.getActivityWindowTimestampFormatter(tmp);
+  require(7123) /* useUserIdsForLinkStatus */;
   if (!tmp) {
-    obj = { cachedAt: "y", edpbxy: "isArray", children: tmp4 };
-    let tmp5 = callback(arg1(dependencyMap[15]).Text, obj);
+    obj = { variant: "text-sm/medium", color: "text-muted", children: tmp4 };
+    let tmp5 = callback(require(4126) /* Text */.Text, obj);
   } else {
     tmp5 = null;
   }
@@ -67,10 +82,10 @@ function FamilyCenterHeaderSubText() {
 }
 class FamilyCenterActivityCardHeader {
   constructor() {
-    obj = arg1(dependencyMap[8]);
+    obj = require("useUserIdsForLinkStatus");
     activeLinkUserIds = obj.useActiveLinkUserIds();
-    tmp = importDefault(dependencyMap[7])();
-    obj2 = arg1(dependencyMap[22]);
+    tmp = require("useIsInAdultAgeGroup")();
+    obj2 = require("useSelectedTeenUser");
     selectedTeenUser = obj2.useSelectedTeenUser();
     if (undefined === selectedTeenUser) {
       return null;
@@ -79,10 +94,10 @@ class FamilyCenterActivityCardHeader {
         tmp3 = jsx;
         tmp4 = View;
         obj = {};
-        tmp5 = f103550;
+        tmp5 = f105706;
         obj1 = {};
         obj1.user = selectedTeenUser;
-        obj.children = jsx(f103550, obj1);
+        obj.children = jsx(f105706, obj1);
         tmp6 = jsx(View, obj);
         tmp9 = tmp6;
       } else {
@@ -97,31 +112,31 @@ class FamilyCenterActivityCardHeader {
 }
 class FamilyCenterActivityCardAccountSelect {
   constructor() {
-    tmp = closure_14();
-    obj = arg1(dependencyMap[8]);
+    tmp = FamilyCenterActivityCardAccount();
+    obj = require("useUserIdsForLinkStatus");
     activeLinkUsers = obj.useActiveLinkUsers();
-    arg1 = activeLinkUsers;
-    obj2 = arg1(dependencyMap[22]);
+    useActiveLinkUsers = activeLinkUsers;
+    obj2 = require("useSelectedTeenUser");
     selectedTeenUser = obj2.useSelectedTeenUser();
-    importDefault = selectedTeenUser;
-    obj3 = arg1(dependencyMap[23]);
+    closure_1 = selectedTeenUser;
+    obj3 = require("useFamilyCenterActions");
     obj = {
       onSuccess() {
-            return selectedTeenUser(selectTeenUser[24]).hideActionSheet(closure_10);
+            return selectedTeenUser(selectTeenUser[24]).hideActionSheet(outer1_10);
           },
       onError() {
             const intl = activeLinkUsers(selectTeenUser[11]).intl;
             return activeLinkUsers(selectTeenUser[25]).presentFailedToast(intl.string(selectedTeenUser(selectTeenUser[12]).Wu8BK2));
           }
     };
-    dependencyMap = obj3.useFamilyCenterActions(obj).selectTeenUser;
+    selectTeenUser = obj3.useFamilyCenterActions(obj).selectTeenUser;
     items = [];
     items[0] = activeLinkUsers;
-    f103545 = f103545.useMemo(() => activeLinkUsers.map((id) => {
+    f105701 = f105701.useMemo(() => activeLinkUsers.map((id) => {
       const obj = {};
-      const name = callback(closure_2[26]).getName(id);
-      const obj2 = callback(closure_2[26]);
-      obj.label = "" + name + " (" + callback(closure_2[26]).getUserTag(id) + ")";
+      const name = selectedTeenUser(selectTeenUser[26]).getName(id);
+      const obj2 = selectedTeenUser(selectTeenUser[26]);
+      obj.label = "" + name + " (" + selectedTeenUser(selectTeenUser[26]).getUserTag(id) + ")";
       obj.value = id.id;
       return obj;
     }), items);
@@ -131,8 +146,8 @@ class FamilyCenterActivityCardAccountSelect {
       tmp6 = View;
       obj1 = {};
       tmp7 = jsxs;
-      tmp8 = importDefault;
-      tmp9 = dependencyMap;
+      tmp8 = closure_1;
+      tmp9 = selectTeenUser;
       num = 16;
       obj2 = {};
       obj2.style = tmp.touch;
@@ -148,42 +163,42 @@ class FamilyCenterActivityCardAccountSelect {
           obj.onItemSelect = function onItemSelect(arg0) {
             let tmp = null != arg0;
             if (tmp) {
-              tmp = arg0 !== lib.id;
+              tmp = arg0 !== outer1_1.id;
             }
             if (tmp) {
-              callback(arg0);
-              let obj = lib(callback[28]);
-              obj = { action: SelectTeen.SelectTeen };
-              obj.track(constants.FAMILY_CENTER_ACTION, obj);
+              outer1_2(arg0);
+              let obj = selectedTeenUser(selectTeenUser[28]);
+              obj = { action: outer2_5.SelectTeen };
+              obj.track(outer2_7.FAMILY_CENTER_ACTION, obj);
             }
             setImmediate(() => {
-              callback(closure_2[24]).hideActionSheet(closure_10);
+              selectedTeenUser(selectTeenUser[24]).hideActionSheet(outer3_10);
             });
           };
           obj.selectedItem = selectedTeenUser.id;
           obj.hasIcons = false;
-          obj.openLazy(activeLinkUsers(selectTeenUser[19])(selectTeenUser[27], selectTeenUser.paths), closure_10, obj);
+          obj.openLazy(activeLinkUsers(selectTeenUser[19])(selectTeenUser[27], selectTeenUser.paths), outer1_10, obj);
           const tmp4 = activeLinkUsers(selectTeenUser[19])(selectTeenUser[27], selectTeenUser.paths);
         }
       };
       tmp11 = jsx;
-      tmp12 = f103550;
+      tmp12 = f105706;
       obj3 = {};
       obj3.user = selectedTeenUser;
       flag = true;
       obj3.inSelector = true;
-      tmp10 = importDefault(dependencyMap[16]);
+      tmp10 = require("_isNativeReflectConstruct");
       items1 = [, ];
-      items1[0] = jsx(f103550, obj3);
+      items1[0] = jsx(f105706, obj3);
       tmp13 = jsx;
-      tmp14 = arg1;
+      tmp14 = useActiveLinkUsers;
       num2 = 13;
       obj4 = {};
       obj4.style = tmp.icon;
-      obj4.size = arg1(dependencyMap[13]).Icon.Sizes.MEDIUM;
+      obj4.size = require("Button").Icon.Sizes.MEDIUM;
       num3 = 29;
-      obj4.source = importDefault(dependencyMap[29]);
-      items1[1] = jsx(arg1(dependencyMap[13]).Icon, obj4);
+      obj4.source = require("registerAsset");
+      items1[1] = jsx(require("Button").Icon, obj4);
       obj2.children = items1;
       obj1.children = jsxs(tmp10, obj2);
       tmp4 = jsx(View, obj1);
@@ -191,41 +206,34 @@ class FamilyCenterActivityCardAccountSelect {
     return tmp4;
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ FamilyCenterAction: closure_5, TeenActionDisplayType: closure_6 } = arg1(dependencyMap[2]));
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[4]));
-let closure_10 = "FamilyCenterTeenAccountSelect";
-let obj1 = arg1(dependencyMap[5]);
-let obj = { container: { id: 8, title: null, options: "\u270A\u{1F3FF}" } };
-obj = { color: importDefault(dependencyMap[6]).colors.ICON_SUBTLE, width: importDefault(dependencyMap[6]).space.PX_16, height: importDefault(dependencyMap[6]).space.PX_16 };
+({ FamilyCenterAction: closure_5, TeenActionDisplayType: closure_6 } = items);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+const FamilyCenterTeenAccountSelect = "FamilyCenterTeenAccountSelect";
+let obj = { container: { display: "flex", flexDirection: "row", alignItems: "center" } };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.ICON_SUBTLE, width: require("_createForOfIteratorHelperLoose").space.PX_16, height: require("_createForOfIteratorHelperLoose").space.PX_16 };
 obj.icon = obj;
-obj1 = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_4 };
-obj.text = obj1;
-let closure_11 = obj1.createStyles(obj);
-let obj5 = arg1(dependencyMap[5]);
-const obj2 = {};
-const obj3 = { "Bool(true)": -1577057855, "Bool(true)": 285212940, "Bool(true)": 38881089, "Bool(true)": 22508032, "Bool(true)": 9764864, padding: importDefault(dependencyMap[6]).space.PX_12, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: importDefault(dependencyMap[6]).radii.md, borderTopRightRadius: importDefault(dependencyMap[6]).radii.md };
+_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4 };
+obj.text = _createForOfIteratorHelperLoose;
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj2 = {};
+let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_12, flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.md, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.md };
 obj2.header = obj3;
-const obj4 = { borderRadius: arg1(dependencyMap[13]).AVATAR_SIZE_MAP[arg1(undefined, dependencyMap[13]).AvatarSizes.NORMAL] / 2, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH };
+let obj4 = { borderRadius: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
 obj2.avatar = obj4;
-obj5 = { marginRight: importDefault(dependencyMap[6]).space.PX_12, alignItems: "flex-start" };
-obj2.avatarContainer = obj5;
-const tmp3 = arg1(dependencyMap[4]);
-obj2.userHeader = { paddingRight: importDefault(dependencyMap[6]).space.PX_16 };
-const obj6 = { paddingRight: importDefault(dependencyMap[6]).space.PX_16 };
-obj2.nonSelectorHeader = { flex: 1, paddingRight: importDefault(dependencyMap[6]).space.PX_16 };
-let closure_12 = obj5.createStyles(obj2);
+_createForOfIteratorHelperLoose = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "flex-start" };
+obj2.avatarContainer = _createForOfIteratorHelperLoose;
+const obj6 = { display: "flex", flexDirection: "column", width: "100%", paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16 };
+obj2.userHeader = obj6;
+obj2.nonSelectorHeader = { flex: 1, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj2);
 const memoResult = importAllResult.memo((arg0) => {
   let inSelector;
   let user;
   ({ user, inSelector } = arg0);
   const tmp = callback4();
-  const AvatarSizes = arg1(dependencyMap[13]).AvatarSizes;
+  const AvatarSizes = require(1273) /* Button */.AvatarSizes;
   let obj = { style: tmp.header };
-  obj = { style: tmp.avatarContainer, children: callback(arg1(dependencyMap[13]).Avatar, obj) };
+  obj = { style: tmp.avatarContainer, children: callback(require(1273) /* Button */.Avatar, obj) };
   obj = { avatarStyle: tmp.avatar, user, guildId: undefined, disablePlaceholder: true, avatarDecoration: user.avatarDecoration, size: inSelector ? AvatarSizes.SMALL : AvatarSizes.NORMAL };
   const items = [callback(View, obj), ];
   const obj1 = {};
@@ -236,54 +244,52 @@ const memoResult = importAllResult.memo((arg0) => {
   }
   items1[1] = nonSelectorHeader;
   obj1.style = items1;
-  const items2 = [callback(importDefault(dependencyMap[21]), { user }), callback(FamilyCenterHeaderSubText, {})];
+  const items2 = [callback(importDefault(13795), { user }), callback(FamilyCenterHeaderSubText, {})];
   obj1.children = items2;
   items[1] = closure_9(View, obj1);
   obj.children = items;
   return closure_9(View, obj);
 });
 memoResult.displayName = "FamilyCenterActivityCardAccount";
-let obj12 = arg1(dependencyMap[5]);
 const obj8 = {};
-const obj7 = { flex: 1, paddingRight: importDefault(dependencyMap[6]).space.PX_16 };
-const merged = Object.assign(importDefault(dependencyMap[6]).shadows.SHADOW_LOW);
-obj8.touch = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST };
-const obj9 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGHEST };
-const items = [{ rotate: "90deg" }];
-obj8.icon = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT, width: importDefault(dependencyMap[6]).space.PX_24, height: importDefault(dependencyMap[6]).space.PX_24, transform: items, marginHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
-let closure_14 = obj12.createStyles(obj8);
-let obj16 = arg1(dependencyMap[5]);
+const obj9 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST };
+const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
+obj8.touch = obj9;
+const obj7 = { flex: 1, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16 };
+items = [{ rotate: "90deg" }];
+obj8.icon = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, width: require("_createForOfIteratorHelperLoose").space.PX_24, height: require("_createForOfIteratorHelperLoose").space.PX_24, transform: items, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj8);
 const obj11 = {};
-obj12 = { marginTop: importDefault(dependencyMap[6]).space.PX_16 };
-obj11.card = obj12;
-const obj10 = { color: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_DEFAULT, width: importDefault(dependencyMap[6]).space.PX_24, height: importDefault(dependencyMap[6]).space.PX_24, transform: items, marginHorizontal: importDefault(dependencyMap[6]).space.PX_8 };
-obj11.preface = { display: "flex", marginBottom: importDefault(dependencyMap[6]).space.PX_12 };
-const obj13 = { display: "flex", marginBottom: importDefault(dependencyMap[6]).space.PX_12 };
-obj11.container = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
-const obj15 = { st: -645848117953284700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Date: 683517066491165300000000000000000000000000000000000000000000000000000000000000000000000000000000000, transform: 12290128766944652000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, padding: importDefault(dependencyMap[6]).space.PX_16, gap: importDefault(dependencyMap[6]).space.PX_32 };
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+obj11.card = _createForOfIteratorHelperLoose;
+const obj10 = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, width: require("_createForOfIteratorHelperLoose").space.PX_24, height: require("_createForOfIteratorHelperLoose").space.PX_24, transform: items, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj11.preface = { display: "flex", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
+const obj13 = { display: "flex", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
+obj11.container = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+const obj15 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, display: "flex", flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_32 };
 obj11.content = obj15;
-obj16 = { <string:2385789280>: "isArray", <string:3194028036>: "construct", <string:73463874>: "Map", <string:76344320>: "isArray", gap: importDefault(dependencyMap[6]).space.PX_8 };
-obj11.totals = obj16;
+_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj11.totals = _createForOfIteratorHelperLoose;
 obj11.first = { width: "100%" };
 obj11.other = { width: "48.5%" };
-const obj17 = { position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, location: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[6]).space.PX_32 };
+const obj17 = { display: "flex", flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_32 };
 obj11.activities = obj17;
-const obj14 = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[6]).radii.md };
-obj11.settingsControls = { marginTop: importDefault(dependencyMap[6]).space.PX_24 };
-let closure_15 = obj16.createStyles(obj11);
-const obj18 = { marginTop: importDefault(dependencyMap[6]).space.PX_24 };
-const result = arg1(dependencyMap[35]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityCard.tsx");
+const obj14 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+obj11.settingsControls = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj11);
+const obj18 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+const result = require("items").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityCard.tsx");
 
 export default function FamilyCenterActivityCard() {
   const tmp = callback6();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[22]);
+  const require = tmp;
+  let obj = require(13796) /* useSelectedTeenUser */;
   const selectedTeenUser = obj.useSelectedTeenUser();
-  arg1(dependencyMap[30]);
+  require(13797) /* useActionTotalsForDisplayType */;
   if (undefined === selectedTeenUser) {
     return null;
   } else {
-    let obj3 = arg1(dependencyMap[9]);
+    let obj3 = require(6828) /* getActivityTypeTextConfigs */;
     const sortedActivityTypeConfigs = obj3.getSortedActivityTypeConfigs();
     obj = { style: tmp.card };
     obj = { style: tmp.preface, children: callback(FamilyCenterActivityCardPrefaceText, {}) };
@@ -295,7 +301,7 @@ export default function FamilyCenterActivityCard() {
     const found = sortedActivityTypeConfigs.filter((arg0) => {
       let tmp;
       [tmp] = arg0;
-      return tmp !== constants.GIFTS;
+      return tmp !== outer1_6.GIFTS;
     });
     obj3.children = found.map((arg0, arg1) => {
       let tmp;
@@ -307,10 +313,10 @@ export default function FamilyCenterActivityCard() {
         other = tmp.other;
       }
       obj.style = other;
-      obj.children = callback2(callback(closure_2[31]), { displayType: tmp });
-      return callback2(closure_4, obj, "total-" + tmp);
+      obj.children = outer1_8(outer1_1(outer1_2[31]), { displayType: tmp });
+      return outer1_8(outer1_4, obj, "total-" + tmp);
     });
-    const items2 = [callback(View, obj3), callback(importDefault(dependencyMap[32]), {}), ];
+    const items2 = [callback(View, obj3), callback(importDefault(13799), {}), ];
     let tmp7 = null;
     if (tmp4) {
       const obj4 = {
@@ -318,7 +324,7 @@ export default function FamilyCenterActivityCard() {
         children: sortedActivityTypeConfigs.map((arg0) => {
               let tmp;
               [tmp, ] = arg0;
-              return callback2(callback(closure_2[33]), { displayType }, "section-" + displayType);
+              return outer1_8(outer1_1(outer1_2[33]), { displayType }, "section-" + displayType);
             })
       };
       tmp7 = callback(View, obj4);
@@ -328,7 +334,7 @@ export default function FamilyCenterActivityCard() {
     items1[1] = closure_9(View, obj2);
     obj1.children = items1;
     items[1] = closure_9(View, obj1);
-    const obj5 = { style: tmp.settingsControls, children: callback(importDefault(dependencyMap[34]), {}) };
+    const obj5 = { style: tmp.settingsControls, children: callback(importDefault(13809), {}) };
     items[2] = callback(View, obj5);
     obj.children = items;
     return closure_9(View, obj);

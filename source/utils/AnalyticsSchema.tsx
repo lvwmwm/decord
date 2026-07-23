@@ -1,8 +1,9 @@
-// Module ID: 13014
-// Function ID: 99012
-// Dependencies: []
+// Module ID: 13128
+// Function ID: 101168
+// Name: ME
+// Dependencies: [653, 2]
 
-// Module 13014
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/AnalyticsSchema.tsx");
+// Module 13128 (ME)
+import { AnalyticEvents } from "ME";
+
+const result = require("set").fileFinishedImporting("utils/AnalyticsSchema.tsx");

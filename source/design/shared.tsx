@@ -1,26 +1,25 @@
-// Module ID: 3974
-// Function ID: 32976
+// Module ID: 3976
+// Function ID: 32981
 // Name: AccessibilityAnnouncer
-// Dependencies: []
+// Dependencies: [2, 3945, 3840, 3939]
 
-// Module 3974 (AccessibilityAnnouncer)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("design/shared.tsx");
+// Module 3976 (AccessibilityAnnouncer)
+const result = require("isThemeLight").fileFinishedImporting("design/shared.tsx");
 
-export const AccessibilityAnnouncer = require(dependencyMap[1]).AccessibilityAnnouncer;
-export const AccessibilityPreferencesContext = require(dependencyMap[1]).AccessibilityPreferencesContext;
-export const LOW_SATURATION_THRESHOLD = require(dependencyMap[1]).LOW_SATURATION_THRESHOLD;
-export const ContrastPreference = require(dependencyMap[1]).ContrastPreference;
-export const ForcedColorsPreference = require(dependencyMap[1]).ForcedColorsPreference;
-export const MotionPreference = require(dependencyMap[1]).MotionPreference;
-export const RoleStyle = require(dependencyMap[1]).RoleStyle;
-export const AccessibilityPreferences = require(dependencyMap[1]).AccessibilityPreferences;
-export const useThemeContext = require(dependencyMap[1]).useThemeContext;
-export const ThemeContextType = require(dependencyMap[1]).ThemeContextType;
-export const isThemeDark = require(dependencyMap[2]).isThemeDark;
-export const isThemeLight = require(dependencyMap[2]).isThemeLight;
-export const getContrastingColor = require(dependencyMap[3]).getContrastingColor;
-export const darkenColor = require(dependencyMap[3]).darkenColor;
-export const brightenColor = require(dependencyMap[3]).brightenColor;
-export const setColorOpacity = require(dependencyMap[3]).setColorOpacity;
-export const WCAGContrastRatios = require(dependencyMap[3]).WCAGContrastRatios;
+export const AccessibilityAnnouncer = require("module_3945").AccessibilityAnnouncer;
+export const AccessibilityPreferencesContext = require("module_3945").AccessibilityPreferencesContext;
+export const LOW_SATURATION_THRESHOLD = require("module_3945").LOW_SATURATION_THRESHOLD;
+export const ContrastPreference = require("module_3945").ContrastPreference;
+export const ForcedColorsPreference = require("module_3945").ForcedColorsPreference;
+export const MotionPreference = require("module_3945").MotionPreference;
+export const RoleStyle = require("module_3945").RoleStyle;
+export const AccessibilityPreferences = require("module_3945").AccessibilityPreferences;
+export const useThemeContext = require("module_3945").useThemeContext;
+export const ThemeContextType = require("module_3945").ThemeContextType;
+export const isThemeDark = require("isThemeLight").isThemeDark;
+export const isThemeLight = require("isThemeLight").isThemeLight;
+export const getContrastingColor = require("toRGBAString").getContrastingColor;
+export const darkenColor = require("toRGBAString").darkenColor;
+export const brightenColor = require("toRGBAString").brightenColor;
+export const setColorOpacity = require("toRGBAString").setColorOpacity;
+export const WCAGContrastRatios = require("toRGBAString").WCAGContrastRatios;

@@ -1,10 +1,10 @@
 // Module ID: 188
 // Function ID: 2648
 // Name: ExceptionsManager
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 188 (ExceptionsManager)
-const enforcing = importAll(dependencyMap[0]).getEnforcing("ExceptionsManager");
+const enforcing = require("requireModule").getEnforcing("ExceptionsManager");
 const obj = {
   reportFatalException(message, stack, id) {
     closure_0.reportFatalException(message, stack, id);

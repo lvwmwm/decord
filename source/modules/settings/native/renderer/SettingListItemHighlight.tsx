@@ -1,24 +1,24 @@
-// Module ID: 14463
-// Function ID: 108975
-// Dependencies: []
+// Module ID: 14577
+// Function ID: 111128
+// Dependencies: [31, 27, 13552, 33, 4130, 689, 3991, 4131, 2]
 
-// Module 14463
-const importAllResult = importAll(dependencyMap[0]);
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
+// Module 14577
+import importAllResult from "result";
+import { StyleSheet } from "get ActivityIndicator";
+import zustandStore from "zustandStore";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_HOVER };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_HOVER };
 obj.background = obj;
-let closure_7 = arg1(dependencyMap[4]).createStyles(obj);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_8 = { code: "function SettingListItemHighlightTsx1(){const{withSequence,withDelay,withTiming,Easing,runOnJS,clearSelectedSearchResult}=this.__closure;return{opacity:withSequence(withDelay(500,withTiming(0,{duration:0})),withTiming(0.2,{duration:300,easing:Easing.ease}),withTiming(0,{duration:300,easing:Easing.ease},'respect-motion-settings',function(finished){if(finished){runOnJS(clearSelectedSearchResult);}}))};}" };
 let closure_9 = { code: "function SettingListItemHighlightTsx2(finished){const{runOnJS,clearSelectedSearchResult}=this.__closure;if(finished){runOnJS(clearSelectedSearchResult);}}" };
-const obj2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((start) => {
   start = start.start;
-  const arg1 = start;
   const end = start.end;
-  const importDefault = end;
   const items = [end, start];
   const memo = importAllResult.useMemo(() => {
     const obj = {};
@@ -45,11 +45,10 @@ const memoResult = importAllResult.memo((start) => {
     return obj;
   }, items);
   const callback = importAllResult.useCallback(() => {
-    state.setState({ selected: null });
+    outer1_5.setState({ selected: null });
   }, []);
-  const dependencyMap = callback;
-  let obj = arg1(dependencyMap[6]);
-  const fn = function _() {
+  let obj = start(callback[6]);
+  let fn = function _() {
     let obj = {};
     let obj1 = start(callback[6]);
     const obj3 = start(callback[6]);
@@ -61,25 +60,25 @@ const memoResult = importAllResult.memo((start) => {
     obj = { duration: 300, easing: start(callback[6]).Easing.ease };
     const fn = function t(arg0) {
       if (arg0) {
-        callback(closure_2[6]).runOnJS(closure_2);
-        const obj = callback(closure_2[6]);
+        start(callback[6]).runOnJS(outer1_2);
+        const obj = start(callback[6]);
       }
     };
     obj1 = { runOnJS: start(callback[6]).runOnJS, clearSelectedSearchResult: callback };
     fn.__closure = obj1;
     fn.__workletHash = 13391094209244;
-    fn.__initData = closure_9;
+    fn.__initData = outer1_9;
     obj.opacity = obj1.withSequence(withDelayResult, withTimingResult, start(callback[7]).withTiming(0, obj, "respect-motion-settings", fn));
     return obj;
   };
-  obj = { withSequence: arg1(dependencyMap[6]).withSequence, withDelay: arg1(dependencyMap[6]).withDelay, withTiming: arg1(dependencyMap[7]).withTiming, Easing: arg1(dependencyMap[6]).Easing, runOnJS: arg1(dependencyMap[6]).runOnJS, clearSelectedSearchResult: callback };
+  obj = { withSequence: start(callback[6]).withSequence, withDelay: start(callback[6]).withDelay, withTiming: start(callback[7]).withTiming, Easing: start(callback[6]).Easing, runOnJS: start(callback[6]).runOnJS, clearSelectedSearchResult: callback };
   fn.__closure = obj;
   fn.__workletHash = 13630242918990;
   fn.__initData = closure_8;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const style = [StyleSheet.absoluteFill, callback().background, memo, animatedStyle, start.style];
-  return jsx(importDefault(dependencyMap[6]).View, { pointerEvents: "none", style });
+  return jsx(end(callback[6]).View, { pointerEvents: "none", style });
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/settings/native/renderer/SettingListItemHighlight.tsx");
+const result = require("zustandStore").fileFinishedImporting("modules/settings/native/renderer/SettingListItemHighlight.tsx");
 
 export default memoResult;

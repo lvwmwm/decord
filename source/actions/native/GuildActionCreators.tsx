@@ -1,41 +1,41 @@
-// Module ID: 16194
-// Function ID: 125075
+// Module ID: 16311
+// Function ID: 127248
 // Name: batchChannelUpdate
-// Dependencies: []
+// Dependencies: [653, 686, 507, 2]
 // Exports: batchChannelUpdate, batchRoleUpdate
 
-// Module 16194 (batchChannelUpdate)
-function batchChannelUpdate(closure_0, body) {
+// Module 16311 (batchChannelUpdate)
+import { Endpoints } from "ME";
+
+function batchChannelUpdate(outer1_0, body) {
   function onEnd() {
-    return callback(closure_2[1]).dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
+    return outer1_1(outer1_2[1]).dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
   }
   if (body.length > 0) {
-    let obj = importDefault(dependencyMap[1]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_SETTINGS_SUBMIT" };
     obj.dispatch(obj);
-    const HTTP = require(dependencyMap[2]).HTTP;
-    obj = { url: Endpoints.GUILD_CHANNELS(closure_0), body, oldFormErrors: true, rejectWithError: true };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: Endpoints.GUILD_CHANNELS(outer1_0), body, oldFormErrors: true, rejectWithError: true };
     HTTP.patch(obj).then(onEnd, onEnd);
     const patchResult = HTTP.patch(obj);
   }
 }
-function batchRoleUpdate(closure_0, body) {
+function batchRoleUpdate(outer1_0, body) {
   function onEnd() {
-    return callback(closure_2[1]).dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
+    return outer1_1(outer1_2[1]).dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
   }
   if (body.length > 0) {
-    let obj = importDefault(dependencyMap[1]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_SETTINGS_SUBMIT" };
     obj.dispatch(obj);
-    const HTTP = require(dependencyMap[2]).HTTP;
-    obj = { url: Endpoints.GUILD_ROLES(closure_0), body, oldFormErrors: true, rejectWithError: true };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: Endpoints.GUILD_ROLES(outer1_0), body, oldFormErrors: true, rejectWithError: true };
     HTTP.patch(obj).then(onEnd, onEnd);
     const patchResult = HTTP.patch(obj);
   }
 }
-const Endpoints = require(dependencyMap[0]).Endpoints;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("actions/native/GuildActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/native/GuildActionCreators.tsx");
 
 export default { batchChannelUpdate, batchRoleUpdate };
 export { batchChannelUpdate };

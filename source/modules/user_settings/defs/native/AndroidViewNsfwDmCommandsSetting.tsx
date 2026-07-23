@@ -1,40 +1,41 @@
-// Module ID: 13629
-// Function ID: 103241
+// Module ID: 13743
+// Function ID: 105397
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 7926, 4345, 7927, 4347, 477, 7536, 7538, 3803, 10095, 1212, 2]
 
-// Module 13629 (toggle)
-const _module = require(dependencyMap[9]);
-const toggle = _module.createToggle({
+// Module 13743 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[10]).intl;
-    return intl.string(require(dependencyMap[10]).t.VGWIAo);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.VGWIAo);
   },
   useDescription() {
-    const intl = require(dependencyMap[10]).intl;
-    return intl.string(require(dependencyMap[10]).t.J4zza/);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["J4zza/"]);
   },
-  parent: require(dependencyMap[0]).MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useViewNsfwDmCommandsSettingValue() {
-    return require(dependencyMap[1]).useViewNsfwCommandsOrDefault();
+    return require(7926) /* resolveNsfwTogglesWithDefaults */.useViewNsfwCommandsOrDefault();
   },
   onValueChange: function handleValueChange(addFlagResult) {
-    let obj = require(dependencyMap[2]);
+    let obj = require(4345) /* shouldAgeVerifyForAgeGate */;
     if (obj.shouldAgeVerifyForSettingsToggles()) {
       if (addFlagResult) {
-        obj = { entryPoint: require(dependencyMap[7]).AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS };
-        const result = importDefault(dependencyMap[6]).showAgeVerificationGetStartedModal(obj);
-        const obj2 = importDefault(dependencyMap[6]);
+        obj = { entryPoint: require(7538) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS };
+        const result = importDefault(7536).showAgeVerificationGetStartedModal(obj);
+        const obj2 = importDefault(7536);
       }
     }
-    const ViewNsfwCommands = require(dependencyMap[8]).ViewNsfwCommands;
+    const ViewNsfwCommands = require(3803) /* explicitContentFromProto */.ViewNsfwCommands;
     ViewNsfwCommands.updateSetting(addFlagResult);
   },
   usePredicate() {
-    let shouldAgeVerifyForSettingsToggles = require(dependencyMap[2]).useShouldAgeVerifyForSettingsToggles();
-    const obj = require(dependencyMap[2]);
-    const nSFWAllowed = require(dependencyMap[3]).useNSFWAllowed();
-    const obj2 = require(dependencyMap[3]);
+    let shouldAgeVerifyForSettingsToggles = require(4345) /* shouldAgeVerifyForAgeGate */.useShouldAgeVerifyForSettingsToggles();
+    const obj = require(4345) /* shouldAgeVerifyForAgeGate */;
+    const nSFWAllowed = require(7927) /* useNSFWAllowed */.useNSFWAllowed();
+    const obj2 = require(7927) /* useNSFWAllowed */;
     const tmp3 = null == nSFWAllowed || nSFWAllowed;
     if (shouldAgeVerifyForSettingsToggles) {
       shouldAgeVerifyForSettingsToggles = !obj3.useIsVerifiedTeen();
@@ -43,14 +44,57 @@ const toggle = _module.createToggle({
       shouldAgeVerifyForSettingsToggles = tmp3;
     }
     if (shouldAgeVerifyForSettingsToggles) {
-      shouldAgeVerifyForSettingsToggles = require(dependencyMap[5]).isAndroid();
-      const obj4 = require(dependencyMap[5]);
+      shouldAgeVerifyForSettingsToggles = require(477) /* set */.isAndroid();
+      const obj4 = require(477) /* set */;
     }
     return shouldAgeVerifyForSettingsToggles;
   }
 });
-const _module1 = require(dependencyMap[11]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AndroidViewNsfwDmCommandsSetting.tsx");
+let obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.VGWIAo);
+  },
+  useDescription() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["J4zza/"]);
+  },
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: function useViewNsfwDmCommandsSettingValue() {
+    return require(7926) /* resolveNsfwTogglesWithDefaults */.useViewNsfwCommandsOrDefault();
+  },
+  onValueChange: function handleValueChange(addFlagResult) {
+    let obj = require(4345) /* shouldAgeVerifyForAgeGate */;
+    if (obj.shouldAgeVerifyForSettingsToggles()) {
+      if (addFlagResult) {
+        obj = { entryPoint: require(7538) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS };
+        const result = importDefault(7536).showAgeVerificationGetStartedModal(obj);
+        const obj2 = importDefault(7536);
+      }
+    }
+    const ViewNsfwCommands = require(3803) /* explicitContentFromProto */.ViewNsfwCommands;
+    ViewNsfwCommands.updateSetting(addFlagResult);
+  },
+  usePredicate() {
+    let shouldAgeVerifyForSettingsToggles = require(4345) /* shouldAgeVerifyForAgeGate */.useShouldAgeVerifyForSettingsToggles();
+    const obj = require(4345) /* shouldAgeVerifyForAgeGate */;
+    const nSFWAllowed = require(7927) /* useNSFWAllowed */.useNSFWAllowed();
+    const obj2 = require(7927) /* useNSFWAllowed */;
+    const tmp3 = null == nSFWAllowed || nSFWAllowed;
+    if (shouldAgeVerifyForSettingsToggles) {
+      shouldAgeVerifyForSettingsToggles = !obj3.useIsVerifiedTeen();
+    }
+    if (!shouldAgeVerifyForSettingsToggles) {
+      shouldAgeVerifyForSettingsToggles = tmp3;
+    }
+    if (shouldAgeVerifyForSettingsToggles) {
+      shouldAgeVerifyForSettingsToggles = require(477) /* set */.isAndroid();
+      const obj4 = require(477) /* set */;
+    }
+    return shouldAgeVerifyForSettingsToggles;
+  }
+};
+let result = require("shouldAgeVerifyForAgeGate").fileFinishedImporting("modules/user_settings/defs/native/AndroidViewNsfwDmCommandsSetting.tsx");
 
 export default toggle;
 export const AndroidViewNsfwDmCommandsSettingV2 = toggle;

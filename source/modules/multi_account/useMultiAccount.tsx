@@ -1,27 +1,29 @@
-// Module ID: 14621
-// Function ID: 110247
+// Module ID: 14736
+// Function ID: 112411
 // Name: useMultiAccountUsers
-// Dependencies: []
+// Dependencies: [31, 1849, 11452, 566, 686, 11456, 2]
 // Exports: useMultiAccountUsers
 
-// Module 14621 (useMultiAccountUsers)
-let closure_4 = importAll(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-const MultiAccountTokenStatus = arg1(dependencyMap[2]).MultiAccountTokenStatus;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/multi_account/useMultiAccount.tsx");
+// Module 14736 (useMultiAccountUsers)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { MultiAccountTokenStatus } from "_isNativeReflectConstruct";
+
+const require = arg1;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/multi_account/useMultiAccount.tsx");
 
 export const useMultiAccountUsers = function useMultiAccountUsers() {
-  const items = [closure_6, closure_5];
-  const stateFromStoresObject = arg1(dependencyMap[3]).useStateFromStoresObject(items, () => {
-    const users = authStore.getUsers();
-    const currentUser = currentUser.getCurrentUser();
+  let items = [closure_6, _isNativeReflectConstruct];
+  const stateFromStoresObject = require(566) /* initialize */.useStateFromStoresObject(items, () => {
+    const users = outer1_6.getUsers();
+    const currentUser = outer1_5.getCurrentUser();
     if (null != currentUser) {
       if (!users.some((id) => id.id === currentUser.id)) {
-        let obj = { isLoading: authStore.getIsValidatingUsers() };
+        let obj = { isLoading: outer1_6.getIsValidatingUsers() };
         obj = {};
         ({ id: obj3.id, avatar: obj3.avatar, username: obj3.username, discriminator: obj3.discriminator } = currentUser);
-        obj.tokenStatus = constants.VALID;
+        obj.tokenStatus = outer1_7.VALID;
         obj.pushSyncToken = null;
         const items = [obj];
         HermesBuiltin.arraySpread(users, 1);
@@ -29,11 +31,11 @@ export const useMultiAccountUsers = function useMultiAccountUsers() {
       }
       return obj;
     }
-    obj = { isLoading: authStore.getIsValidatingUsers(), multiAccountUsers: users };
+    obj = { isLoading: outer1_6.getIsValidatingUsers(), multiAccountUsers: users };
   });
   const effect = React.useEffect(() => {
-    callback(closure_3[4]).wait(() => {
-      const result = callback(closure_3[5]).validateMultiAccountTokens();
+    outer1_1(outer1_3[4]).wait(() => {
+      const result = outer2_2(outer2_3[5]).validateMultiAccountTokens();
     });
   }, []);
   return stateFromStoresObject;

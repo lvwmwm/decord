@@ -1,15 +1,14 @@
 // Module ID: 1258
-// Function ID: 14216
+// Function ID: 14217
 // Name: parseDateTimeSkeleton
 // Dependencies: []
 
 // Module 1258 (parseDateTimeSkeleton)
 arg5.parseDateTimeSkeleton = undefined;
-let closure_0 = /(?:[Eec]{1,6}|G{1,5}|[Qq]{1,5}|(?:[yYur]+|U{1,5})|[ML]{1,5}|d{1,2}|D{1,3}|F{1}|[abB]{1,5}|[hkHK]{1,2}|w{1,2}|W{1}|m{1,2}|s{1,2}|[zZOvVxX]{1,4})(?=([^']*'[^']*')*[^']*$)/g;
+const re0 = /(?:[Eec]{1,6}|G{1,5}|[Qq]{1,5}|(?:[yYur]+|U{1,5})|[ML]{1,5}|d{1,2}|D{1,3}|F{1}|[abB]{1,5}|[hkHK]{1,2}|w{1,2}|W{1}|m{1,2}|s{1,2}|[zZOvVxX]{1,4})(?=([^']*'[^']*')*[^']*$)/g;
 arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResult) {
   const obj = {};
-  let closure_0 = obj;
-  const replaced = pushLiteralTextResult.replace(closure_0, (arg0) => {
+  const replaced = pushLiteralTextResult.replace(obj, (arg0) => {
     const first = arg0[0];
     if ("G" === first) {
       let str25 = "long";
@@ -41,7 +40,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                       if ("w" !== first) {
                         if ("W" !== first) {
                           if ("d" === first) {
-                            obj.day = ["discord_protos.discord_users.v1.StatusSettings", "discord_protos.discord_users.v1.CustomStatus"][length - 1];
+                            obj.day = ["numeric", "2-digit"][length - 1];
                           } else {
                             if ("D" !== first) {
                               if ("F" !== first) {
@@ -63,7 +62,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                                       const rangeError = new RangeError("`e..eee` (weekday) patterns are not supported");
                                       throw rangeError;
                                     } else {
-                                      obj.weekday = ["discord_protos.discord_users.v1.ChannelListSettings", "discord_protos.discord_users.v1.AppearanceSettings", "discord_protos.discord_users.v1.Theme", "discord_protos.discord_users.v1.TimestampHourCycle"][length - 4];
+                                      obj.weekday = ["short", "long", "narrow", "short"][length - 4];
                                     }
                                   } else if ("c" === first) {
                                     if (length < 4) {
@@ -71,7 +70,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                                       const rangeError1 = new RangeError("`c..ccc` (weekday) patterns are not supported");
                                       throw rangeError1;
                                     } else {
-                                      obj.weekday = ["discord_protos.discord_users.v1.ChannelListSettings", "discord_protos.discord_users.v1.AppearanceSettings", "discord_protos.discord_users.v1.Theme", "discord_protos.discord_users.v1.TimestampHourCycle"][length - 4];
+                                      obj.weekday = ["short", "long", "narrow", "short"][length - 4];
                                     }
                                   } else if ("a" === first) {
                                     obj.hour12 = true;
@@ -80,24 +79,24 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                                       if ("B" !== first) {
                                         if ("h" === first) {
                                           obj.hourCycle = "h12";
-                                          obj.hour = ["discord_protos.discord_users.v1.StatusSettings", "discord_protos.discord_users.v1.CustomStatus"][length - 1];
+                                          obj.hour = ["numeric", "2-digit"][length - 1];
                                         } else if ("H" === first) {
                                           obj.hourCycle = "h23";
-                                          obj.hour = ["discord_protos.discord_users.v1.StatusSettings", "discord_protos.discord_users.v1.CustomStatus"][length - 1];
+                                          obj.hour = ["numeric", "2-digit"][length - 1];
                                         } else if ("K" === first) {
                                           obj.hourCycle = "h11";
-                                          obj.hour = ["discord_protos.discord_users.v1.StatusSettings", "discord_protos.discord_users.v1.CustomStatus"][length - 1];
+                                          obj.hour = ["numeric", "2-digit"][length - 1];
                                         } else if ("k" === first) {
                                           obj.hourCycle = "h24";
-                                          obj.hour = ["discord_protos.discord_users.v1.StatusSettings", "discord_protos.discord_users.v1.CustomStatus"][length - 1];
+                                          obj.hour = ["numeric", "2-digit"][length - 1];
                                         } else {
                                           if ("j" !== first) {
                                             if ("J" !== first) {
                                               if ("C" !== first) {
                                                 if ("m" === first) {
-                                                  obj.minute = ["discord_protos.discord_users.v1.StatusSettings", "discord_protos.discord_users.v1.CustomStatus"][length - 1];
+                                                  obj.minute = ["numeric", "2-digit"][length - 1];
                                                 } else if ("s" === first) {
-                                                  obj.second = ["discord_protos.discord_users.v1.StatusSettings", "discord_protos.discord_users.v1.CustomStatus"][length - 1];
+                                                  obj.second = ["numeric", "2-digit"][length - 1];
                                                 } else {
                                                   if ("S" !== first) {
                                                     if ("A" !== first) {
@@ -146,7 +145,7 @@ arg5.parseDateTimeSkeleton = function parseDateTimeSkeleton(pushLiteralTextResul
                       throw rangeError7;
                     }
                   }
-                  obj.month = ["discord_protos.discord_users.v1.StatusSettings", "discord_protos.discord_users.v1.CustomStatus", "discord_protos.discord_users.v1.LocalizationSettings", "discord_protos.discord_users.v1.ChannelListSettings", "discord_protos.discord_users.v1.AppearanceSettings"][length - 1];
+                  obj.month = ["numeric", "2-digit", "short", "long", "narrow"][length - 1];
                 }
               }
               const _RangeError9 = RangeError;

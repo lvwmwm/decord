@@ -1,9 +1,11 @@
 // Module ID: 967
-// Function ID: 10440
+// Function ID: 10441
 // Name: filenameIsInApp
-// Dependencies: [1056965592]
+// Dependencies: [810]
 
 // Module 967 (filenameIsInApp)
+const require = arg1;
+const dependencyMap = arg6;
 function filenameIsInApp(str) {
   let tmp = arguments.length > 1 && undefined !== arguments[1] && arguments[1];
   if (!tmp) {
@@ -29,10 +31,10 @@ function filenameIsInApp(str) {
   return tmp3;
 }
 function node(arg0) {
-  const arg1 = arg0;
-  let closure_1 = /^\s*[-]{4,}$/;
-  let closure_2 = /at (?:async )?(?:(.+?)\s+\()?(?:(.+):(\d+):(\d+)?|([^)]+))\)?/;
-  let closure_3 = /at (?:async )?(.+?) \(data:(.*?),/;
+  let closure_0 = arg0;
+  const re1 = /^\s*[-]{4,}$/;
+  const re2 = /at (?:async )?(?:(.+?)\s+\()?(?:(.+):(\d+):(\d+)?|([^)]+))\)?/;
+  const re3 = /at (?:async )?(.+?) \(data:(.*?),/;
   return (str) => {
     const match = str.match(closure_3);
     if (match) {
@@ -77,7 +79,7 @@ function node(arg0) {
         }
         if (undefined === tmp8) {
           if (!UNKNOWN_FUNCTION) {
-            UNKNOWN_FUNCTION = str(closure_1[0]).UNKNOWN_FUNCTION;
+            UNKNOWN_FUNCTION = callback(re1[0]).UNKNOWN_FUNCTION;
           }
           let combined = UNKNOWN_FUNCTION;
           if (tmp16) {
@@ -86,7 +88,7 @@ function node(arg0) {
           }
           tmp8 = combined;
         }
-        let str6 = str(closure_1[0]).normalizeStackTracePath(match1[2]);
+        let str6 = callback(re1[0]).normalizeStackTracePath(match1[2]);
         let tmp24 = str6;
         if (!str6) {
           tmp24 = !match1[5];
@@ -105,17 +107,17 @@ function node(arg0) {
         }
         obj.filename = decodeURIResult;
         let tmp28;
-        if (str) {
-          tmp28 = str(str6);
+        if (callback) {
+          tmp28 = callback(str6);
         }
         obj.module = tmp28;
         obj.function = tmp8;
-        obj.lineno = callback(match1[3]);
-        obj.colno = callback(match1[4]);
+        obj.lineno = outer1_4(match1[3]);
+        obj.colno = outer1_4(match1[4]);
         if (!str6) {
           str6 = "";
         }
-        obj.in_app = closure_2(str6, "native" === match1[5]);
+        obj.in_app = re2(str6, "native" === match1[5]);
         return obj;
       } else {
         let tmp5;
@@ -139,6 +141,6 @@ Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.filenameIsInApp = filenameIsInApp;
 arg5.node = node;
 arg5.nodeStackLineParser = function nodeStackLineParser(arg0) {
-  const items = ["<string:176378432>", node(arg0)];
+  const items = [90, node(arg0)];
   return items;
 };

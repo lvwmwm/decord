@@ -1,21 +1,23 @@
 // Module ID: 1027
-// Function ID: 11087
+// Function ID: 11088
 // Name: items
-// Dependencies: []
+// Dependencies: [1014, 1016, 1020, 1025, 1028, 1018, 1022, 1023, 1024, 1029, 1017]
 
 // Module 1027 (items)
+const require = arg1;
+let dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = [];
+let items = [2500, 4000];
 arg5.LCPThresholds = items;
 arg5.onLCP = function onLCP(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   if (arguments.length > 1) {
-    let closure_1 = {};
-    arg1(closure_1[0]).whenActivated(() => {
+    const dependencyMap = {};
+    _require(1014).whenActivated(() => {
       let obj = callback(reportAllChanges[1]);
-      const reportAllChanges = obj.getVisibilityWatcher();
+      reportAllChanges = obj.getVisibilityWatcher();
       const metric = callback(reportAllChanges[2]).initMetric("LCP");
-      const obj2 = callback(reportAllChanges[2]);
+      let obj2 = callback(reportAllChanges[2]);
       let closure_3 = callback(reportAllChanges[3]).initUnique(reportAllChanges, callback(reportAllChanges[4]).LCPEntryManager);
       function handleEntries(arr) {
         let substr = arr;
@@ -42,14 +44,14 @@ arg5.onLCP = function onLCP(arg0, arg1) {
             let tmp7 = callback;
             let tmp8 = callback();
           }
-          // continue
+          continue;
         }
       }
       const obj3 = callback(reportAllChanges[3]);
       const observeResult = callback(reportAllChanges[6]).observe("largest-contentful-paint", handleEntries);
       if (observeResult) {
         const obj5 = callback(reportAllChanges[7]);
-        const callback = obj5.bindReporter(callback, metric, metric, reportAllChanges.reportAllChanges);
+        callback = obj5.bindReporter(callback, metric, outer1_2, reportAllChanges.reportAllChanges);
         let closure_6 = callback(reportAllChanges[8]).runOnce(() => {
           handleEntries(observeResult.takeRecords());
           observeResult.disconnect();
@@ -64,7 +66,7 @@ arg5.onLCP = function onLCP(arg0, arg1) {
             const obj2 = callback(closure_1[10]);
           }
         }
-        const tmp11 = [][Symbol.iterator]();
+        const tmp11 = ["keydown", "click", "visibilitychange"][Symbol.iterator]();
         while (tmp11 !== undefined) {
           let tmp14 = callback;
           let tmp15 = reportAllChanges;
@@ -72,10 +74,10 @@ arg5.onLCP = function onLCP(arg0, arg1) {
           let tmp16 = stopListeningWrapper;
           obj = { capture: true };
           let addPageListenerResult = obj7.addPageListener(tmp12, tmp10, obj);
-          // continue
+          continue;
         }
         const obj6 = callback(reportAllChanges[8]);
-        const tmp10 = stopListeningWrapper;
+        tmp10 = stopListeningWrapper;
       }
     });
   }

@@ -1,12 +1,13 @@
-// Module ID: 8217
-// Function ID: 64952
+// Module ID: 8223
+// Function ID: 64989
 // Name: allowableMinInterval
-// Dependencies: []
+// Dependencies: [31, 44, 4559, 2]
 // Exports: default
 
-// Module 8217 (allowableMinInterval)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");
+// Module 8223 (allowableMinInterval)
+import result from "result";
+
+const result = require("useMountLayoutEffect").fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");
 
 export default function _default(arg0) {
   let obj = arg1;
@@ -18,9 +19,7 @@ export default function _default(arg0) {
   if (num === undefined) {
     num = 41.666666666666664;
   }
-  const dependencyMap = num;
   const allowableMinInterval = obj.allowableMinInterval;
-  const React = allowableMinInterval;
   const droppedFramesCallbackThreshold = obj.droppedFramesCallbackThreshold;
   const droppedFramesCallback = obj.droppedFramesCallback;
   let num2 = obj.droppedFramesResetTime;
@@ -37,14 +36,14 @@ export default function _default(arg0) {
   let callback;
   let stop;
   let callback2;
-  closure_6 = React.useRef(num);
-  closure_7 = React.useRef(0);
-  closure_8 = React.useRef(undefined);
-  closure_9 = React.useRef(undefined);
-  ticking = React.useRef(true);
-  closure_11 = React.useRef(0);
-  closure_12 = React.useRef(undefined);
-  callback = React.useCallback(() => {
+  closure_6 = allowableMinInterval.useRef(num);
+  closure_7 = allowableMinInterval.useRef(0);
+  closure_8 = allowableMinInterval.useRef(undefined);
+  closure_9 = allowableMinInterval.useRef(undefined);
+  ticking = allowableMinInterval.useRef(true);
+  closure_11 = allowableMinInterval.useRef(0);
+  closure_12 = allowableMinInterval.useRef(undefined);
+  callback = allowableMinInterval.useCallback(() => {
     closure_11.current = 0;
     if (null != closure_12.current) {
       const _clearTimeout = clearTimeout;
@@ -52,13 +51,13 @@ export default function _default(arg0) {
       closure_12.current = undefined;
     }
   }, []);
-  stop = React.useCallback(() => {
+  stop = allowableMinInterval.useCallback(() => {
     ticking.current = false;
     cancelAnimationFrame(ref2.current);
     clearTimeout(closure_12.current);
   }, []);
   const items = [allowableMinInterval, callback, num2, droppedFramesCallbackThreshold, droppedFramesCallback, arg0];
-  callback2 = React.useCallback((current) => {
+  callback2 = allowableMinInterval.useCallback((current) => {
     if (ticking.current) {
       if (null == ref3.current) {
         ref3.current = current;
@@ -82,7 +81,7 @@ export default function _default(arg0) {
         closure_12.current = setTimeout(callback, num2);
         if (null != droppedFramesCallbackThreshold) {
           if (ref5.current > droppedFramesCallbackThreshold) {
-            current(num[1])(null != droppedFramesCallback, "useClock - If you set a dropped frames threshold, you must provide a droppedFramesCallback to do something when that threshold is hit");
+            callback(num[1])(null != droppedFramesCallback, "useClock - If you set a dropped frames threshold, you must provide a droppedFramesCallback to do something when that threshold is hit");
             if (droppedFramesCallback()) {
               ref5.current = 0;
             }
@@ -92,7 +91,7 @@ export default function _default(arg0) {
       ref3.current = current;
       if (diff >= ref.current - 3) {
         ref4.current = current;
-        current(diff);
+        callback(diff);
       }
       const _requestAnimationFrame = requestAnimationFrame;
       closure_7.current = requestAnimationFrame(callback2);
@@ -100,18 +99,18 @@ export default function _default(arg0) {
   }, items);
   const items1 = [callback2];
   const items2 = [num];
-  const reset = React.useCallback(() => {
+  const reset = allowableMinInterval.useCallback(() => {
     ticking.current = true;
     closure_9.current = undefined;
     cancelAnimationFrame(ref2.current);
     ref2.current = requestAnimationFrame(callback2);
   }, items1);
-  const effect = React.useEffect(() => {
+  const effect = allowableMinInterval.useEffect(() => {
     closure_6.current = num;
   }, items2);
-  importDefault(dependencyMap[2])(() => {
+  importDefault(num[2])(() => {
     closure_7.current = requestAnimationFrame(callback2);
-    return () => callback();
+    return () => outer1_14();
   });
   return { stop, reset, ticking };
 };

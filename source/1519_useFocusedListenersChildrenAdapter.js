@@ -1,23 +1,21 @@
 // Module ID: 1519
-// Function ID: 17435
+// Function ID: 17436
 // Name: useFocusedListenersChildrenAdapter
-// Dependencies: []
+// Dependencies: [31, 1478]
 // Exports: default
 
 // Module 1519 (useFocusedListenersChildrenAdapter)
-let closure_2 = importAll(dependencyMap[0]);
+import result from "result";
+
 
 export default function useFocusedListenersChildrenAdapter(navigation) {
   navigation = navigation.navigation;
-  const importDefault = navigation;
   const focusedListeners = navigation.focusedListeners;
-  const dependencyMap = focusedListeners;
-  const addListener = React.useContext(importDefault(dependencyMap[1])).addListener;
-  const React = addListener;
+  addListener = addListener.useContext(navigation(focusedListeners[1])).addListener;
   const items = [focusedListeners, navigation];
-  const callback = React.useCallback((arg0) => {
+  const callback = addListener.useCallback((arg0) => {
     if (navigation.isFocused()) {
-      for (const item10011 of closure_1) {
+      for (const item10011 of focusedListeners) {
         let tmp3 = arg0;
         let item10011Result = item10011(arg0);
         let handled = item10011Result.handled;
@@ -26,18 +24,16 @@ export default function useFocusedListenersChildrenAdapter(navigation) {
           let obj = { handled, result: tmp6 };
           obj.return();
           return obj;
-        } else {
-          // continue
         }
       }
       obj = { handled: true, result: arg0(navigation) };
       return obj;
     } else {
-      return { ORBS_QUESTS_BALANCE_MENU_CTA: "L", roundingIncrement: "L" };
+      return { handled: false, result: null };
     }
   }, items);
   const items1 = [addListener, callback];
-  const effect = React.useEffect(() => {
+  const effect = addListener.useEffect(() => {
     let tmp;
     if (null != addListener) {
       tmp = addListener("focus", callback);

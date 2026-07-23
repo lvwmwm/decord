@@ -1,16 +1,17 @@
 // Module ID: 112
 // Function ID: 1614
 // Name: View
-// Dependencies: []
+// Dependencies: [29, 113, 31, 33, 114, 79, 115]
 
 // Module 112 (View)
-let closure_3 = [];
-let closure_4 = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
-let closure_5 = importDefault(dependencyMap[0]);
-let closure_6 = importDefault(dependencyMap[1]);
-const use = arg1(dependencyMap[2]).use;
-const jsx = arg1(dependencyMap[3]).jsx;
-const forwardRefResult = importAll(dependencyMap[2]).forwardRef(function View_withRef(arg0, ref) {
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _objectDestructuringEmpty from "_objectDestructuringEmpty";
+import { use } from "result";
+import { jsx } from "jsxProd";
+
+let closure_3 = ["accessibilityState", "accessibilityValue", "aria-busy", "aria-checked", "aria-disabled", "aria-expanded", "aria-hidden", "aria-label", "aria-labelledby", "aria-live", "aria-selected", "aria-valuemax", "aria-valuemin", "aria-valuenow", "aria-valuetext", "id", "tabIndex"];
+let closure_4 = ["accessibilityElementsHidden", "accessibilityLabel", "accessibilityLabelledBy", "accessibilityLiveRegion", "accessibilityState", "accessibilityValue", "aria-busy", "aria-checked", "aria-disabled", "aria-expanded", "aria-hidden", "aria-label", "aria-labelledby", "aria-live", "aria-selected", "aria-valuemax", "aria-valuemin", "aria-valuenow", "aria-valuetext", "focusable", "id", "importantForAccessibility", "nativeID", "tabIndex"];
+const forwardRefResult = require("result").forwardRef(function View_withRef(arg0, ref) {
   let accessibilityElementsHidden;
   let accessibilityLabel;
   let accessibilityLabelledBy;
@@ -54,7 +55,7 @@ const forwardRefResult = importAll(dependencyMap[2]).forwardRef(function View_wi
   let obj = globalThis;
   callback2(arg0);
   const merged = Object.assign({}, arg0);
-  let obj1 = importAll(dependencyMap[5]);
+  let obj1 = importAll(79);
   if (obj1.reduceDefaultPropsInView()) {
     ({ accessibilityState: accessibilityState2, accessibilityValue: accessibilityValue2, aria-busy: tmp37, aria-checked: tmp38, aria-disabled: tmp39, aria-expanded: tmp40, aria-hidden: tmp41, aria-label: tmp42, aria-labelledby: str5, aria-live: tmp43, aria-selected: tmp44, aria-valuemax: tmp45, aria-valuemin: tmp46, aria-valuenow: tmp47, aria-valuetext: tmp48, id: id2, tabIndex: tabIndex2 } = merged);
     const tmp51 = callback(merged, closure_3);
@@ -167,11 +168,11 @@ const forwardRefResult = importAll(dependencyMap[2]).forwardRef(function View_wi
       const obj2 = { ref };
       obj1 = Object.assign({}, tmp51, obj2);
     }
-    jsx(importDefault(dependencyMap[6]), obj1);
-    const tmp54 = null == accessibilityState2 && null == tmp37 && null == tmp38 && null == tmp39 && null == tmp40 && null == tmp44;
-    const tmp60 = null == accessibilityValue2 && null == tmp45 && null == tmp46 && null == tmp47 && null == tmp48;
+    jsx(importDefault(115), obj1);
+    tmp54 = null == accessibilityState2 && null == tmp37 && null == tmp38 && null == tmp39 && null == tmp40 && null == tmp44;
+    tmp60 = null == accessibilityValue2 && null == tmp45 && null == tmp46 && null == tmp47 && null == tmp48;
     const tmp65 = jsx;
-    const tmp68 = importDefault(dependencyMap[6]);
+    const tmp68 = importDefault(115);
   } else {
     ({ accessibilityElementsHidden, accessibilityLabel, accessibilityLabelledBy, accessibilityLiveRegion, accessibilityState, accessibilityValue, aria-busy: tmp4, aria-checked: tmp5, aria-disabled: tmp6, aria-expanded: tmp7, aria-hidden: tmp8, aria-label: tmp9, aria-labelledby: str, aria-live: tmp10, aria-selected: tmp11, aria-valuemax: tmp12, aria-valuemin: tmp13, aria-valuenow: tmp14, aria-valuetext: tmp15, focusable, id, nativeID, tabIndex } = merged);
     let parts1;
@@ -222,15 +223,15 @@ const forwardRefResult = importAll(dependencyMap[2]).forwardRef(function View_wi
                   }
                   obj3.nativeID = nativeID;
                   obj3.ref = ref;
-                  const tmp32Result = jsx(importDefault(dependencyMap[6]), Object.assign({}, tmp18, obj3));
+                  const tmp32Result = jsx(importDefault(115), Object.assign({}, tmp18, obj3));
                   if (tmp3) {
                     const obj4 = { value: false, children: tmp32Result };
-                    return jsx(importDefault(dependencyMap[4]), obj4);
+                    return jsx(importDefault(114), { value: false, children: tmp32Result });
                   } else {
                     return tmp32Result;
                   }
                   const tmp32 = jsx;
-                  const tmp35 = importDefault(dependencyMap[6]);
+                  const tmp35 = importDefault(115);
                 }
               }
             }
@@ -263,7 +264,7 @@ const forwardRefResult = importAll(dependencyMap[2]).forwardRef(function View_wi
               }
             }
             obj5.text = tmp15;
-            const tmp27 = obj5;
+            tmp27 = obj5;
           }
         }
       }
@@ -304,8 +305,8 @@ const forwardRefResult = importAll(dependencyMap[2]).forwardRef(function View_wi
       }
     }
     obj6.selected = tmp11;
-    const tmp18 = callback(merged, closure_4);
-    const tmp21 = obj6;
+    tmp18 = callback(merged, closure_4);
+    tmp21 = obj6;
   }
 });
 forwardRefResult.displayName = "View";

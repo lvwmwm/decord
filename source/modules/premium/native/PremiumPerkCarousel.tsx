@@ -1,18 +1,22 @@
-// Module ID: 12265
-// Function ID: 94046
+// Module ID: 12379
+// Function ID: 96197
 // Name: PremiumPerkCarousel
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 7428, 4126, 7998, 1273, 2]
 // Exports: default
 
-// Module 12265 (PremiumPerkCarousel)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ title: { marginLeft: 24 }, indicators: { marginBottom: -36 }, carousel: { marginTop: 16 }, carouselCard: { marginLeft: 8 }, lastCarouselCard: { marginRight: 8 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/native/PremiumPerkCarousel.tsx");
+// Module 12379 (PremiumPerkCarousel)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ title: { marginLeft: 24 }, indicators: { marginBottom: -36 }, carousel: { marginTop: 16 }, carouselCard: { marginLeft: 8 }, lastCarouselCard: { marginRight: 8 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/PremiumPerkCarousel.tsx");
 
 export default function PremiumPerkCarousel(arg0) {
   let onItemChange;
@@ -20,18 +24,16 @@ export default function PremiumPerkCarousel(arg0) {
   let style;
   let title;
   ({ perks, onItemChange } = arg0);
-  const arg1 = onItemChange;
   ({ title, style } = arg0);
   const tmp = callback4();
   const importDefault = tmp;
-  let obj = arg1(dependencyMap[5]);
-  const perkCardHeight = obj.usePerkCardHeight(arg1(dependencyMap[5]).PerkCardVariant.NARROW);
-  const tmp3 = callback(React.useState(0), 2);
-  const first = tmp3[0];
-  const dependencyMap = first;
-  let callback = tmp3[1];
-  const items = [first, onItemChange];
-  callback = React.useCallback((arg0) => {
+  let obj = onItemChange(first[5]);
+  const perkCardHeight = obj.usePerkCardHeight(onItemChange(first[5]).PerkCardVariant.NARROW);
+  const tmp3 = callback(length.useState(0), 2);
+  first = tmp3[0];
+  callback = tmp3[1];
+  let items = [first, onItemChange];
+  callback = length.useCallback((arg0) => {
     if (arg0 !== first) {
       callback(arg0);
       if (null != onItemChange) {
@@ -39,13 +41,13 @@ export default function PremiumPerkCarousel(arg0) {
       }
     }
   }, items);
-  const width = arg1(dependencyMap[5]).PERK_CARD_SIZES[closure_0(undefined, closure_2[5]).PerkCardVariant.NARROW].width;
-  const React = perks.length;
+  const width = onItemChange(first[5]).PERK_CARD_SIZES[onItemChange(undefined, first[5]).PerkCardVariant.NARROW].width;
   obj = { style };
-  obj = { style: tmp.title, children: title };
-  const items1 = [callback2(arg1(dependencyMap[6]).Text, obj), , ];
+  obj = { style: tmp.title, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
+  const items1 = [callback2(onItemChange(first[6]).Text, obj), , ];
   const obj1 = { style: items2, width, onPageChange: callback, pageIndictor: false, scrollViewProps: obj3 };
-  const items2 = [tmp.carousel, { height: perkCardHeight + 8 }];
+  items2 = [tmp.carousel, { height: perkCardHeight + 8 }];
+  obj3 = { overScrollMode: "always", snapToInterval: width + 8 + 0.2, snapToStart: true, snapToAlignment: "start", decelerationRate: "normal" };
   obj1.children = perks.map((arg0, arg1) => {
     const items = [tmp.carouselCard, ];
     let lastCarouselCard = null;
@@ -57,10 +59,10 @@ export default function PremiumPerkCarousel(arg0) {
     const merged = Object.assign(arg0);
     obj["variant"] = onItemChange(first[5]).PerkCardVariant.NARROW;
     obj["style"] = items;
-    return callback2(tmp(first[5]), obj, arg1);
+    return outer1_6(tmp(first[5]), obj, arg1);
   });
-  items1[1] = callback2(importDefault(dependencyMap[7]), obj1);
-  items1[2] = callback2(arg1(dependencyMap[8]).CarouselPagination, { containerStyle: tmp.indicators, numberOfItems: perks.length, currentIndex: first });
+  items1[1] = callback2(importDefault(first[7]), obj1);
+  items1[2] = callback2(onItemChange(first[8]).CarouselPagination, { containerStyle: tmp.indicators, numberOfItems: perks.length, currentIndex: first });
   obj.children = items1;
   return callback3(View, obj);
 };

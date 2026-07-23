@@ -1,20 +1,24 @@
-// Module ID: 13595
-// Function ID: 103027
+// Module ID: 13709
+// Function ID: 105183
 // Name: handleUnblockUser
-// Dependencies: []
+// Dependencies: [31, 1849, 33, 8923, 5464, 5165, 1273, 1212, 8492, 4543, 566, 2]
 // Exports: default
 
-// Module 13595 (handleUnblockUser)
+// Module 13709 (handleUnblockUser)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function handleUnblockUser(id) {
-  importDefault(dependencyMap[3]).unblockUser(id, { location: "blocked-users-list-mobile-v2" });
+  importDefault(8923).unblockUser(id, { location: "blocked-users-list-mobile-v2" });
 }
 function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
-  const arg1 = userRecord;
-  const importDefault = importDefault(dependencyMap[4])().analyticsLocations;
-  let obj = {};
-  obj = { user: userRecord, guildId: undefined, size: arg1(dependencyMap[6]).AvatarSizes.REFRESH_MEDIUM_32 };
-  obj.icon = jsx(arg1(dependencyMap[6]).Avatar, obj);
+  analyticsLocations = analyticsLocations(5464)().analyticsLocations;
+  let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button" };
+  obj = { user: userRecord, guildId: undefined, size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 };
+  obj.icon = jsx(userRecord(1273).Avatar, { user: userRecord, guildId: undefined, size: userRecord(1273).AvatarSizes.REFRESH_MEDIUM_32 });
   let tmp2 = null != userRecord;
   if (tmp2) {
     let username = userRecord.globalName;
@@ -38,41 +42,38 @@ function BlockedUserRow(userRecord) {
   }
   obj.subLabel = tmp4;
   obj = { name: "unblock" };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.label = intl.string(arg1(dependencyMap[7]).t.XyHpKH);
+  const intl = userRecord(1212).intl;
+  obj.label = intl.string(userRecord(1212).t.XyHpKH);
   const items = [obj];
   obj.accessibilityActions = items;
   obj.onAccessibilityAction = function onAccessibilityAction(nativeEvent) {
     if ("unblock" === nativeEvent.nativeEvent.actionName) {
-      callback(userRecord.id);
+      outer1_5(userRecord.id);
     }
   };
   obj.onPress = function onPress() {
-    return analyticsLocations(closure_2[8])({ userId: userRecord.id, sourceAnalyticsLocations: analyticsLocations });
+    return analyticsLocations(outer1_2[8])({ userId: userRecord.id, sourceAnalyticsLocations: analyticsLocations });
   };
-  const obj1 = {};
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj1.text = intl2.string(arg1(dependencyMap[7]).t.PR/xUz);
+  const obj1 = { size: "sm", variant: "secondary" };
+  const intl2 = userRecord(1212).intl;
+  obj1.text = intl2.string(userRecord(1212).t["PR/xUz"]);
   obj1.onPress = function onPress() {
-    callback(userRecord.id);
+    outer1_5(userRecord.id);
   };
-  obj.trailing = jsx(arg1(dependencyMap[9]).Button, obj1);
-  return jsx(arg1(dependencyMap[5]).TableRow, obj);
+  obj.trailing = jsx(userRecord(4543).Button, { size: "sm", variant: "secondary" });
+  return jsx(userRecord(5165).TableRow, { name: "unblock" });
 }
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
 
 export default function ConnectedBlockedUserRow(userId) {
-  const arg1 = userId.userId;
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => user.getUser(userId));
+  userId = userId.userId;
+  let obj = userId(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getUser(userId));
   let tmp2 = null;
   if (null != stateFromStores) {
     obj = { userRecord: stateFromStores };
-    tmp2 = <BlockedUserRow {...obj} />;
+    tmp2 = <BlockedUserRow userRecord={stateFromStores} />;
   }
   return tmp2;
 };

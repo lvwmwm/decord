@@ -1,15 +1,19 @@
-// Module ID: 15398
-// Function ID: 117466
+// Module ID: 15515
+// Function ID: 119640
 // Name: isGuildEligibleForStageChannels
-// Dependencies: []
+// Dependencies: [1838, 653, 566, 2]
 // Exports: useGuildEligibleForStageChannels
 
-// Module 15398 (isGuildEligibleForStageChannels)
+// Module 15515 (isGuildEligibleForStageChannels)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { GuildFeatures } from "ME";
+
+const require = arg1;
 function isGuildEligibleForStageChannels(id) {
   let obj;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [closure_2];
+    const items = [_createForOfIteratorHelperLoose];
     tmp = items;
   }
   [obj] = tmp;
@@ -21,17 +25,15 @@ function isGuildEligibleForStageChannels(id) {
   }
   return Boolean(hasItem);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/useGuildEligibleForStageChannels.tsx");
+const result = require("initialize").fileFinishedImporting("modules/stage_channels/useGuildEligibleForStageChannels.tsx");
 
 export { isGuildEligibleForStageChannels };
 export const useGuildEligibleForStageChannels = function useGuildEligibleForStageChannels(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
+  const _require = arg0;
+  let items = [_createForOfIteratorHelperLoose];
   const items1 = [arg0];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const items = [closure_2];
-    return callback(arg0, items);
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_2];
+    return outer1_4(closure_0, items);
   }, items1);
 };

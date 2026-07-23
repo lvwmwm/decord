@@ -1,13 +1,13 @@
-// Module ID: 15886
-// Function ID: 121627
+// Module ID: 16003
+// Function ID: 123800
 // Name: openChangelog
-// Dependencies: []
+// Dependencies: [1905, 3981, 4337, 14375, 1934, 2]
 // Exports: openChangelog
 
-// Module 15886 (openChangelog)
-const CHANGELOG_MODAL_KEY = require(dependencyMap[0]).CHANGELOG_MODAL_KEY;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/changelog/openChangelog.native.tsx");
+// Module 16003 (openChangelog)
+import { CHANGELOG_MODAL_KEY } from "CHANGELOG_MODAL_KEY";
+
+const result = require("module_4337").fileFinishedImporting("modules/changelog/openChangelog.native.tsx");
 
 export const openChangelog = function openChangelog() {
   let flag = arg0;
@@ -16,11 +16,11 @@ export const openChangelog = function openChangelog() {
   }
   let isModalOpenResult = !flag;
   if (isModalOpenResult) {
-    isModalOpenResult = require(dependencyMap[1]).isModalOpen();
-    const obj = require(dependencyMap[1]);
+    isModalOpenResult = require(3981) /* _createForOfIteratorHelperLoose */.isModalOpen();
+    const obj = require(3981) /* _createForOfIteratorHelperLoose */;
   }
   if (!isModalOpenResult) {
-    importDefault(dependencyMap[2]).pushLazy(require(dependencyMap[4])(dependencyMap[3], dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
-    const obj2 = importDefault(dependencyMap[2]);
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(14375, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
+    const obj2 = importDefault(4337);
   }
 };

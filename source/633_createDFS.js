@@ -5,65 +5,67 @@
 
 // Module 633 (createDFS)
 function createDFS(incomingEdges, arg1, items, circular) {
-  const DepGraph = incomingEdges;
-  const createDFS = items;
+  let closure_0 = incomingEdges;
+  let closure_1 = arg1;
+  let closure_2 = items;
+  let closure_3 = circular;
   let closure_4 = [];
   let closure_5 = {};
   let closure_6 = {};
   let closure_7 = {};
   class DFS {
     constructor(arg0) {
-      circular[incomingEdges] = true;
-      arr = circular.push(incomingEdges);
-      circular[incomingEdges] = true;
+      closure_5[incomingEdges] = true;
+      arr = closure_4.push(incomingEdges);
+      closure_7[incomingEdges] = true;
       num = 0;
-      if (0 < incomingEdges[incomingEdges].length) {
+      if (0 < closure_0[incomingEdges].length) {
         while (true) {
-          tmp2 = incomingEdges;
-          tmp3 = incomingEdges[incomingEdges][num];
-          tmp4 = circular;
-          if (circular[tmp3]) {
-            tmp7 = circular;
-            if (circular[tmp3]) {
-              tmp8 = circular;
-              arr1 = circular.push(tmp3);
-              tmp10 = circular;
-              if (!circular) {
+          tmp4 = closure_0;
+          tmp5 = closure_0[incomingEdges][num];
+          tmp6 = closure_5;
+          if (closure_5[tmp5]) {
+            tmp9 = closure_7;
+            if (closure_7[tmp5]) {
+              tmp10 = closure_4;
+              arr1 = closure_4.push(tmp5);
+              tmp12 = closure_3;
+              if (!closure_3) {
                 break;
               }
             }
           } else {
-            tmp5 = DFS;
-            tmp6 = DFS(tmp3);
+            tmp7 = DFS;
+            tmp8 = DFS(tmp5);
           }
           num = num + 1;
-          tmp17 = incomingEdges;
+          tmp19 = closure_0;
         }
-        tmp11 = arg1;
-        tmp12 = circular;
-        prototype = arg1.prototype;
-        tmp13 = new.target;
-        tmp14 = new.target;
-        tmp15 = new arg1(circular);
-        tmp16 = tmp15;
-        throw tmp15;
+        tmp13 = closure_1;
+        tmp14 = closure_4;
+        prototype = closure_1.prototype;
+        tmp15 = new.target;
+        tmp16 = new.target;
+        tmp17 = new closure_1(closure_4);
+        tmp18 = tmp17;
+        throw tmp17;
       }
-      arr2 = circular.pop();
-      delete r4[r3];
-      tmp19 = arg1;
-      if (arg1) {
-        tmp20 = incomingEdges;
-        tmp19 = 0 !== incomingEdges[incomingEdges].length;
+      arr2 = closure_4.pop();
+      delete tmp2[tmp];
+      tmp21 = closure_1;
+      if (closure_1) {
+        tmp22 = closure_0;
+        tmp21 = 0 !== closure_0[incomingEdges].length;
       }
-      if (!tmp19) {
-        tmp21 = circular;
-        tmp19 = circular[incomingEdges];
+      if (!tmp21) {
+        tmp23 = closure_6;
+        tmp21 = closure_6[incomingEdges];
       }
-      if (!tmp19) {
-        tmp22 = items;
-        arr3 = items.push(incomingEdges);
-        tmp24 = circular;
-        circular[incomingEdges] = true;
+      if (!tmp21) {
+        tmp24 = closure_2;
+        arr3 = closure_2.push(incomingEdges);
+        tmp26 = closure_6;
+        closure_6[incomingEdges] = true;
       }
       return;
     }
@@ -102,23 +104,24 @@ DepGraph.prototype = {
   },
   removeNode(arg0) {
     const self = this;
-    const DepGraph = arg0;
+    let closure_0 = arg0;
     if (this.hasNode(arg0)) {
       const nodes = self.nodes;
-      delete r2[r3];
+      delete tmp[tmp2];
       const outgoingEdges = self.outgoingEdges;
-      delete r2[r3];
+      delete tmp[tmp2];
       const incomingEdges = self.incomingEdges;
-      delete r2[r3];
+      delete tmp[tmp2];
       const items = [, ];
       ({ incomingEdges: arr[0], outgoingEdges: arr[1] } = self);
-      const item = items.forEach(function(arg0) {
+      let item = items.forEach(function(arg0) {
+        let closure_0 = arg0;
         const keys = Object.keys(arg0);
         const item = keys.forEach((arg0) => {
-          const index = arg0[arg0].indexOf(arg0);
+          const index = dependencyMap[arg0].indexOf(dependencyMap);
           if (index >= 0) {
-            arg0[arg0].splice(index, 1);
-            const arr2 = arg0[arg0];
+            dependencyMap[arg0].splice(index, 1);
+            const arr2 = dependencyMap[arg0];
           }
         }, this);
       });
@@ -197,8 +200,9 @@ DepGraph.prototype = {
     }
   },
   clone() {
-    const DepGraph = this;
-    const tmp = new DepGraph();
+    const self = this;
+    const tmp = new self();
+    let closure_1 = tmp;
     const keys = Object.keys(this.nodes);
     const item = keys.forEach((arg0) => {
       tmp.nodes[arg0] = self.nodes[arg0];
@@ -240,8 +244,8 @@ DepGraph.prototype = {
     }
   },
   overallOrder(arg0) {
-    const self = this;
-    const DepGraph = this;
+    let self = this;
+    self = this;
     const items = [];
     const keys = Object.keys(this.nodes);
     if (0 === keys.length) {
@@ -251,7 +255,7 @@ DepGraph.prototype = {
       const item = keys.forEach((arg0) => {
         callback(arg0);
       });
-      const createDFS = createDFS(self.outgoingEdges, arg0, items, self.circular);
+      createDFS = createDFS(self.outgoingEdges, arg0, items, self.circular);
       const found = keys.filter((arg0) => 0 === self.incomingEdges[arg0].length);
       const item1 = found.forEach((arg0) => {
         callback2(arg0);
@@ -274,6 +278,7 @@ class tmp {
   }
 }
 arg5.DepGraphCycleError = tmp;
-const obj = { 1837105156: 1, 894631940: "column", 65904547: 200, 1233076609: "", value: Error };
+let closure_1 = tmp;
+const obj = { value: Error, enumerable: false, writable: true, configurable: true };
 tmp.prototype = Object.create(Error.prototype, { constructor: obj });
 Object.setPrototypeOf(tmp, Error);

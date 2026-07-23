@@ -1,57 +1,61 @@
-// Module ID: 15957
-// Function ID: 122386
+// Module ID: 16074
+// Function ID: 124559
 // Name: renderComponents
-// Dependencies: []
+// Dependencies: [31, 33, 1881, 16075, 14683, 16076, 14686, 14687, 16077, 16078, 16080, 16081, 16082, 2]
 
-// Module 15957 (renderComponents)
+// Module 16074 (renderComponents)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function renderComponents(components) {
-  return components.map((arg0, arg1) => callback(arg0, arg1.toString()));
+  return components.map((arg0, arg1) => outer1_5(arg0, arg1.toString()));
 }
 function renderComponent(component, arg1) {
   const type = component.type;
-  if (arg1(dependencyMap[2]).ComponentType.ACTION_ROW === type) {
+  if (require(1881) /* PermissionOverwriteType */.ComponentType.ACTION_ROW === type) {
     let obj = {};
     const merged = Object.assign(component);
     obj["renderComponents"] = renderComponents;
-    return jsx(importDefault(dependencyMap[3]), obj, arg1);
-  } else if (arg1(dependencyMap[2]).ComponentType.STRING_SELECT === type) {
+    return jsx(importDefault(16075), {}, arg1);
+  } else if (require(1881) /* PermissionOverwriteType */.ComponentType.STRING_SELECT === type) {
     obj = {};
     const merged1 = Object.assign(component);
-    return jsx(importDefault(dependencyMap[4]), obj, arg1);
-  } else if (arg1(dependencyMap[2]).ComponentType.TEXT_INPUT === type) {
+    return jsx(importDefault(14683), {}, arg1);
+  } else if (require(1881) /* PermissionOverwriteType */.ComponentType.TEXT_INPUT === type) {
     const obj1 = {};
     const merged2 = Object.assign(component);
-    return jsx(importDefault(dependencyMap[5]), obj1, arg1);
+    return jsx(importDefault(16076), {}, arg1);
   } else {
-    if (arg1(dependencyMap[2]).ComponentType.USER_SELECT !== type) {
-      if (arg1(dependencyMap[2]).ComponentType.ROLE_SELECT !== type) {
-        if (arg1(dependencyMap[2]).ComponentType.MENTIONABLE_SELECT !== type) {
-          if (arg1(dependencyMap[2]).ComponentType.CHANNEL_SELECT !== type) {
-            if (arg1(dependencyMap[2]).ComponentType.TEXT_DISPLAY === type) {
+    if (require(1881) /* PermissionOverwriteType */.ComponentType.USER_SELECT !== type) {
+      if (require(1881) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT !== type) {
+        if (require(1881) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT !== type) {
+          if (require(1881) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT !== type) {
+            if (require(1881) /* PermissionOverwriteType */.ComponentType.TEXT_DISPLAY === type) {
               const obj2 = {};
               const merged3 = Object.assign(component);
-              return jsx(importDefault(dependencyMap[7]), obj2, arg1);
-            } else if (arg1(dependencyMap[2]).ComponentType.LABEL === type) {
+              return jsx(importDefault(14687), {}, arg1);
+            } else if (require(1881) /* PermissionOverwriteType */.ComponentType.LABEL === type) {
               const obj3 = {};
               const merged4 = Object.assign(component);
               obj3["renderComponent"] = renderComponent;
-              return jsx(importDefault(dependencyMap[8]), obj3, arg1);
-            } else if (arg1(dependencyMap[2]).ComponentType.FILE_UPLOAD === type) {
+              return jsx(importDefault(16077), {}, arg1);
+            } else if (require(1881) /* PermissionOverwriteType */.ComponentType.FILE_UPLOAD === type) {
               const obj4 = {};
               const merged5 = Object.assign(component);
-              return jsx(importDefault(dependencyMap[9]), obj4, arg1);
-            } else if (arg1(dependencyMap[2]).ComponentType.RADIO_GROUP === type) {
+              return jsx(importDefault(16078), {}, arg1);
+            } else if (require(1881) /* PermissionOverwriteType */.ComponentType.RADIO_GROUP === type) {
               const obj5 = {};
               const merged6 = Object.assign(component);
-              return jsx(importDefault(dependencyMap[10]), obj5, arg1);
-            } else if (arg1(dependencyMap[2]).ComponentType.CHECKBOX_GROUP === type) {
+              return jsx(importDefault(16080), {}, arg1);
+            } else if (require(1881) /* PermissionOverwriteType */.ComponentType.CHECKBOX_GROUP === type) {
               const obj6 = {};
               const merged7 = Object.assign(component);
-              return jsx(importDefault(dependencyMap[11]), obj6, arg1);
-            } else if (arg1(dependencyMap[2]).ComponentType.CHECKBOX === type) {
+              return jsx(importDefault(16081), {}, arg1);
+            } else if (require(1881) /* PermissionOverwriteType */.ComponentType.CHECKBOX === type) {
               obj = {};
               const merged8 = Object.assign(component);
-              return jsx(importDefault(dependencyMap[12]), obj, arg1);
+              return jsx(importDefault(16082), {}, arg1);
             }
           }
         }
@@ -59,11 +63,9 @@ function renderComponent(component, arg1) {
     }
     const obj7 = {};
     const merged9 = Object.assign(component);
-    return jsx(importDefault(dependencyMap[6]), obj7, arg1);
+    return jsx(importDefault(14686), {}, arg1);
   }
 }
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/interaction_components/native/renderComponents.tsx");
+const result = require("PermissionOverwriteType").fileFinishedImporting("modules/interaction_components/native/renderComponents.tsx");
 
 export { renderComponents };

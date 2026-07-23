@@ -1,11 +1,19 @@
-// Module ID: 4529
-// Function ID: 39779
+// Module ID: 4533
+// Function ID: 39811
 // Name: getIOSBlurEffect
-// Dependencies: []
+// Dependencies: [31, 27, 4534, 33, 477, 4535, 3834, 689, 4538, 3974, 2]
 
-// Module 4529 (getIOSBlurEffect)
+// Module 4533 (getIOSBlurEffect)
+import { View } from "get ActivityIndicator";
+import { useVisualEffectViewOverrides as closure_4 } from "useVisualEffectViewOverrides";
+import { jsx } from "jsxProd";
+import set from "set";
+import importAllResult from "result";
+import set from "useVisualEffectViewOverrides";
+
+const require = arg1;
 function getIOSBlurEffect(blurTheme, blurStyle) {
-  if (blurStyle(dependencyMap[5]).MODERN_IOS_BLURS_EFFECTS_AVAILABLE) {
+  if (require(4535) /* BLUR_EFFECT_NAMES */.MODERN_IOS_BLURS_EFFECTS_AVAILABLE) {
     if ("default" !== blurStyle) {
       let str3 = "UIBlurEffectStyleSystemUltraThinMaterialDark";
       if ("light" === blurTheme) {
@@ -33,12 +41,12 @@ function getAndroidBlurAmount(blurTheme, blurAmount) {
 }
 function isBlurDisabled(merged) {
   let android_softwareBlurDisabled = merged.android_softwareBlurDisabled;
-  let tmp2 = closure_6;
-  if (closure_6) {
+  let tmp2 = set;
+  if (set) {
     let tmp4 = null == tmp;
     if (!tmp4) {
       if (android_softwareBlurDisabled) {
-        android_softwareBlurDisabled = !arg1(dependencyMap[8]).MODERN_ANDROID_BLURRING_AVAILABLE;
+        android_softwareBlurDisabled = !require(4538) /* MODERN_ANDROID_BLURRING_AVAILABLE */.MODERN_ANDROID_BLURRING_AVAILABLE;
       }
       tmp4 = true === android_softwareBlurDisabled;
     }
@@ -46,13 +54,10 @@ function isBlurDisabled(merged) {
   }
   return tmp2;
 }
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = arg1(dependencyMap[2]).useVisualEffectViewOverrides;
-const jsx = arg1(dependencyMap[3]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_6 = arg1(dependencyMap[4]).isAndroid();
-const obj2 = arg1(dependencyMap[4]);
-const forwardRefResult = importAllResult.forwardRef(function VisualEffectView(blurAmount, ref) {
+set = set.isAndroid();
+const result = set.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectView.tsx");
+
+export default require("result").forwardRef(function VisualEffectView(blurAmount, ref) {
   let android_blurTargetViewNativeId;
   let android_fallbackColor;
   let android_fallbackColor2;
@@ -78,17 +83,17 @@ const forwardRefResult = importAllResult.forwardRef(function VisualEffectView(bl
   if (android_softwareBlurDisabled === undefined) {
     android_softwareBlurDisabled = false;
   }
-  let obj = { name: "ThreadLockIcon", fontStack: "png", uppercase: true, size: "/assets/design/components/Icon/native/redesign/generated/images", lineHeight: 24, weight: 24, letterSpacing: null };
+  let obj = { blurTheme: 0, blurStyle: 0, blurAmount: 0, blurTintRgba: 0, android_fallbackColor: 0, android_blurTargetViewNativeId: 0, android_softwareBlurDisabled: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(blurAmount, obj);
   ({ blurAmountOverride, blurTintRgbaOverride, blurEffectNameOverride } = callback());
   obj = { blurTheme, blurStyle, style: merged.style, android_fallbackColor };
   ({ blurTheme: blurTheme2, android_fallbackColor: android_fallbackColor2 } = obj);
   ({ style, blurStyle: blurStyle2 } = obj);
-  let obj2 = ref(dependencyMap[6]);
-  const token = obj2.useToken(importDefault(dependencyMap[7]).colors.LEGACY_BLUR_FALLBACK_DEFAULT, blurTheme2);
-  let obj3 = ref(dependencyMap[6]);
-  let token1 = obj3.useToken(importDefault(dependencyMap[7]).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN, blurTheme2);
+  let obj2 = require(3834) /* map */;
+  const token = obj2.useToken(importDefault(689).colors.LEGACY_BLUR_FALLBACK_DEFAULT, blurTheme2);
+  let obj3 = require(3834) /* map */;
+  let token1 = obj3.useToken(importDefault(689).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN, blurTheme2);
   obj = {};
   if ("default" === blurStyle2) {
     token1 = token;
@@ -102,8 +107,8 @@ const forwardRefResult = importAllResult.forwardRef(function VisualEffectView(bl
   }
   items[2] = tmp6;
   const tmp3 = callback();
-  const token2 = ref(dependencyMap[6]).useToken(importDefault(dependencyMap[7]).colors.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT, blurTheme);
-  ref(dependencyMap[6]);
+  const token2 = require(3834) /* map */.useToken(importDefault(689).colors.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT, blurTheme);
+  require(3834) /* map */;
   if ("default" === blurStyle) {
     let tmp10 = token2;
   } else {
@@ -114,15 +119,15 @@ const forwardRefResult = importAllResult.forwardRef(function VisualEffectView(bl
     obj3 = { ref };
     const merged1 = Object.assign(merged);
     obj3["style"] = items;
-    let tmp12Result = <View {...obj3} />;
-  } else if (closure_6) {
+    let tmp12Result = <View ref={arg1} />;
+  } else if (set) {
     const obj4 = { ref };
-    let tmp13Result = tmp13(tmp14[8]);
+    let tmp13Result = tmp13(4538);
     if (null == blurAmountOverride) {
       blurAmountOverride = getAndroidBlurAmount(blurTheme, num);
     }
     obj4.blurAmount = blurAmountOverride;
-    obj4.blurTintIOSParityCompensationRgba = ref(dependencyMap[9]).hexToRgbaString(tmp10);
+    obj4.blurTintIOSParityCompensationRgba = require(3974) /* hexToRgb */.hexToRgbaString(tmp10);
     if (null != blurTintRgbaOverride) {
       blurTintRgba = blurTintRgbaOverride;
     }
@@ -130,10 +135,10 @@ const forwardRefResult = importAllResult.forwardRef(function VisualEffectView(bl
     obj4.blurTargetViewNativeId = android_blurTargetViewNativeId;
     const merged2 = Object.assign(merged);
     tmp12Result = tmp12(tmp13Result, obj4);
-    const obj11 = ref(dependencyMap[9]);
+    const obj11 = require(3974) /* hexToRgb */;
   } else {
     const obj5 = { ref };
-    tmp13Result = tmp13(tmp14[5]);
+    tmp13Result = tmp13(4535);
     if (null == blurEffectNameOverride) {
       blurEffectNameOverride = getIOSBlurEffect(blurTheme, blurStyle);
     }
@@ -153,7 +158,4 @@ const forwardRefResult = importAllResult.forwardRef(function VisualEffectView(bl
   }
   return tmp12Result;
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/visual_effect_view/native/VisualEffectView.tsx");
-
-export default forwardRefResult;
 export { isBlurDisabled };

@@ -1,9 +1,0 @@
-// Module ID: 15175
-// Function ID: 114430
-// Dependencies: []
-
-// Module 15175
-const _module = require(dependencyMap[0]);
-const obj = { 1358955657: 1375732005, 1279501871: 1156252101, -100662186: -399, -134216521: 23350081, 1375732845: 1602048, -1598249400: 1572864, -117286062: 1107361792, 978739886: 149470, scales: [-1509949129, 1895825713, 855638518] };
-
-export default _module.registerAsset(obj);

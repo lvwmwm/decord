@@ -1,10 +1,9 @@
-// Module ID: 5776
-// Function ID: 49443
+// Module ID: 5781
+// Function ID: 49470
 // Name: InputHeights
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5776 (InputHeights)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("design/components/Input/native/InputTypes.native.tsx");
+// Module 5781 (InputHeights)
+const result = require("set").fileFinishedImporting("design/components/Input/native/InputTypes.native.tsx");
 
 export const InputHeights = { SM: 32, [32]: "SM", MD: 40, [40]: "MD", LG: 48, [48]: "LG" };

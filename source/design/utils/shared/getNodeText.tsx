@@ -1,11 +1,12 @@
-// Module ID: 3835
-// Function ID: 31996
+// Module ID: 3837
+// Function ID: 32001
 // Name: getNodeText
-// Dependencies: []
+// Dependencies: [31, 2]
 
-// Module 3835 (getNodeText)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("design/utils/shared/getNodeText.tsx");
+// Module 3837 (getNodeText)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("design/utils/shared/getNodeText.tsx");
 function getNodeText(children) {
   let mapped = children;
   let tmp2 = children;

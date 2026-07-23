@@ -1,37 +1,34 @@
-// Module ID: 11355
-// Function ID: 88327
+// Module ID: 11365
+// Function ID: 88377
 // Name: useChatInputFloatingWidth
-// Dependencies: []
+// Dependencies: [31, 11105, 3991, 4131, 2]
 // Exports: default
 
-// Module 11355 (useChatInputFloatingWidth)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[1]).CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG;
+// Module 11365 (useChatInputFloatingWidth)
+import result from "result";
+import { CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG as closure_3 } from "TextAreaCta";
+
+const require = arg1;
 let closure_4 = { code: "function useChatInputFloatingWidthTsx1(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");
+let result = require("module_3991").fileFinishedImporting("modules/chat_input/native/action_buttons/useChatInputFloatingWidth.tsx");
 
 export default function useChatInputFloatingWidth(expanded) {
   expanded = expanded.expanded;
-  const arg1 = expanded;
   const collapsedWidth = expanded.collapsedWidth;
-  const dependencyMap = collapsedWidth;
   const expandedWidth = expanded.expandedWidth;
-  const React = expandedWidth;
   let num = expanded.enterDelayMs;
   if (num === undefined) {
     num = 0;
   }
-  let closure_3 = num;
-  let closure_4;
-  let obj = arg1(dependencyMap[2]);
+  let sharedValue;
+  let obj = expanded(collapsedWidth[2]);
   let num2 = 0;
   if (expanded) {
     num2 = 1;
   }
-  const sharedValue = obj.useSharedValue(num2);
-  closure_4 = sharedValue;
+  sharedValue = obj.useSharedValue(num2);
   const items = [expanded, num, sharedValue];
-  const effect = React.useEffect(() => {
+  const effect = expandedWidth.useEffect(() => {
     if (expanded) {
       if (0 > 0) {
         const obj2 = expanded(collapsedWidth[2]);
@@ -52,7 +49,7 @@ export default function useChatInputFloatingWidth(expanded) {
   };
   fn.__closure = { collapsedWidth, expandedWidth, progress: sharedValue };
   fn.__workletHash = 2289574047387;
-  fn.__initData = closure_4;
-  obj.animatedStyle = arg1(dependencyMap[2]).useAnimatedStyle(fn);
+  fn.__initData = sharedValue;
+  obj.animatedStyle = expanded(collapsedWidth[2]).useAnimatedStyle(fn);
   return obj;
 };

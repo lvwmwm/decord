@@ -1,10 +1,12 @@
-// Module ID: 8550
-// Function ID: 67974
+// Module ID: 8556
+// Function ID: 68011
 // Name: getTenureBadgeRequirementString
-// Dependencies: []
+// Dependencies: [1851, 8557, 6877, 1212, 2]
 // Exports: useTenureBadgeRequirementString
 
-// Module 8550 (getTenureBadgeRequirementString)
+// Module 8556 (getTenureBadgeRequirementString)
+import { TieredTenureBadge } from "GuildFeatures";
+
 function getTenureBadgeRequirementString(id, tenureReqNumMonths) {
   if (TieredTenureBadge.PREMIUM_TENURE_1_MONTH !== id) {
     if (TieredTenureBadge.PREMIUM_TENURE_3_MONTH !== id) {
@@ -20,28 +22,26 @@ function getTenureBadgeRequirementString(id, tenureReqNumMonths) {
             }
           }
         }
-        const intl = require(dependencyMap[3]).intl;
+        const intl = require(1212) /* getSystemLocale */.intl;
         let obj = { years: tenureReqNumMonths / 12 };
-        return intl.formatToPlainString(require(dependencyMap[3]).t.qOdyDe, obj);
+        return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.qOdyDe, obj);
       }
     }
   }
-  const intl2 = require(dependencyMap[3]).intl;
+  const intl2 = require(1212) /* getSystemLocale */.intl;
   obj = { months: tenureReqNumMonths };
-  return intl2.formatToPlainString(require(dependencyMap[3]).t.erUSmA, obj);
+  return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.erUSmA, obj);
 }
-const TieredTenureBadge = require(dependencyMap[0]).TieredTenureBadge;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTenureBadgeRequirementString.tsx");
+const result = require("getTieredTenureBadgeData").fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTenureBadgeRequirementString.tsx");
 
 export const useTenureBadgeRequirementString = function useTenureBadgeRequirementString() {
-  const tieredTenureBadge = require(dependencyMap[1]).useTieredTenureBadge();
+  const tieredTenureBadge = require(8557) /* useTieredTenureBadge */.useTieredTenureBadge();
   if (null == tieredTenureBadge) {
     return null;
   } else {
-    const tieredTenureBadgeData = require(dependencyMap[2]).getTieredTenureBadgeData(tieredTenureBadge);
+    const tieredTenureBadgeData = require(6877) /* getTieredTenureBadgeData */.getTieredTenureBadgeData(tieredTenureBadge);
     return getTenureBadgeRequirementString(tieredTenureBadgeData.id, tieredTenureBadgeData.tenureReqNumMonths);
   }
-  const obj = require(dependencyMap[1]);
+  const obj = require(8557) /* useTieredTenureBadge */;
 };
 export { getTenureBadgeRequirementString };

@@ -1,18 +1,20 @@
-// Module ID: 9120
-// Function ID: 71431
+// Module ID: 9127
+// Function ID: 71472
 // Name: MaskedBadge
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 1273, 9128, 2]
 // Exports: default
 
-// Module 9120 (MaskedBadge)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = { maskStyle: { position: "relative", right: undefined }, unreadDot: { "Null": "%FunctionPrototype%", "Null": "paddingStart" }, badgeStyle: { nestedScrollEnabled: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, scrollEventThrottle: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 }, unreadBadge: {} };
-obj = { backgroundColor: importDefault(dependencyMap[3]).unsafe_rawColors.PRIMARY_400 };
-obj.lowPriorityBadge = obj;
-let closure_5 = obj.createStyles(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx");
+// Module 9127 (MaskedBadge)
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = { maskStyle: { position: "relative", right: undefined }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_400 };
+_createForOfIteratorHelperLoose.lowPriorityBadge = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx");
 
 export default function MaskedBadge(backgroundColor) {
   let lowPriority;
@@ -21,10 +23,9 @@ export default function MaskedBadge(backgroundColor) {
   let style;
   let unread;
   backgroundColor = backgroundColor.backgroundColor;
-  const arg1 = backgroundColor;
   const value = backgroundColor.value;
   ({ unread, maxValue, lowPriority, size, style } = backgroundColor);
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   [][0] = backgroundColor;
   if (value > 0) {
     let obj = {};
@@ -41,13 +42,13 @@ export default function MaskedBadge(backgroundColor) {
     obj.style = items1;
     obj.value = value;
     obj.maxValue = maxValue;
-    let tmp7Result = jsx(arg1(dependencyMap[4]).MaskedBadge, obj);
+    let tmp7Result = jsx(backgroundColor(1273).MaskedBadge, {});
     const tmp7 = jsx;
   } else {
     tmp7Result = null;
     if (unread) {
       obj = { size, maskColor: backgroundColor, style: tmp.unreadBadge };
-      tmp7Result = jsx(importDefault(dependencyMap[5]), obj);
+      tmp7Result = jsx(importDefault(9128), { size, maskColor: backgroundColor, style: tmp.unreadBadge });
     }
   }
   return tmp7Result;

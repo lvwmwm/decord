@@ -1,13 +1,12 @@
-// Module ID: 11467
-// Function ID: 89350
+// Module ID: 11477
+// Function ID: 89400
 // Name: useRequireConfirmationOnAccept
-// Dependencies: []
+// Dependencies: [11478, 2]
 // Exports: default
 
-// Module 11467 (useRequireConfirmationOnAccept)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/message_request/hooks/useRequireConfirmationOnAccept.tsx");
+// Module 11477 (useRequireConfirmationOnAccept)
+const result = require("set").fileFinishedImporting("modules/message_request/hooks/useRequireConfirmationOnAccept.tsx");
 
 export default function useRequireConfirmationOnAccept() {
-  return importDefault(dependencyMap[0])();
+  return importDefault(11478)();
 };

@@ -1,20 +1,22 @@
-// Module ID: 12251
-// Function ID: 93958
+// Module ID: 12365
+// Function ID: 96109
 // Name: useNextTenureBadge
-// Dependencies: []
+// Dependencies: [1851, 8557, 2]
 // Exports: useNextTenureBadge
 
-// Module 12251 (useNextTenureBadge)
-const _module = require(dependencyMap[0]);
-({ TIERED_TENURE_BADGE_ORDER: closure_2, TENURE_BADGES: closure_3 } = _module);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useNextTenureBadge.tsx");
+// Module 12365 (useNextTenureBadge)
+import GuildFeatures from "GuildFeatures";
+
+let closure_2;
+let closure_3;
+({ TIERED_TENURE_BADGE_ORDER: closure_2, TENURE_BADGES: closure_3 } = GuildFeatures);
+const result = require("set").fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useNextTenureBadge.tsx");
 
 export const useNextTenureBadge = function useNextTenureBadge() {
-  const tieredTenureBadgeData = require(dependencyMap[1]).useTieredTenureBadgeData();
+  const tieredTenureBadgeData = require(8557) /* useTieredTenureBadge */.useTieredTenureBadgeData();
   if (null == tieredTenureBadgeData) {
     return null;
-  } else if (tieredTenureBadgeData.status === require(dependencyMap[1]).TieredTenureBadgeStatus.UPCOMING) {
+  } else if (tieredTenureBadgeData.status === require(8557) /* useTieredTenureBadge */.TieredTenureBadgeStatus.UPCOMING) {
     return tieredTenureBadgeData;
   } else {
     const index = closure_2.indexOf(tieredTenureBadgeData.id);
@@ -22,10 +24,10 @@ export const useNextTenureBadge = function useNextTenureBadge() {
     if (null != closure_2[index + 1]) {
       tmp7 = null;
       if (-1 !== index) {
-        tmp7 = closure_3[tmp6];
+        tmp7 = table[tmp6];
       }
     }
     return tmp7;
   }
-  const obj = require(dependencyMap[1]);
+  const obj = require(8557) /* useTieredTenureBadge */;
 };

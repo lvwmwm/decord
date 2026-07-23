@@ -1,53 +1,56 @@
-// Module ID: 4349
-// Function ID: 38586
+// Module ID: 4353
+// Function ID: 38618
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4354, 3, 1392, 1212, 4355, 1881, 4357, 4358, 491, 1327, 4359, 665, 21, 2]
 // Exports: canSelectBeEmpty, deserializeComponentUploadId, getAllTextDisplayContent, getFileUploadComponentSubtitle, getFirstInteractionComponentMedia, getLayoutComponentErrorText, getParents, getSelectPlaceholder, makeComponentUploadId, transformComponents
 
-// Module 4349 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4353 (_createForOfIteratorHelperLoose)
+import { CheckpointVersions } from "CheckpointPersonas";
+import importDefaultResult from "getSystemLocale";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +61,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -91,8 +94,8 @@ function flattenComponents(components) {
   let iter = tmp2();
   if (!iter.done) {
     do {
-      let tmp3 = closure_9;
-      let tmp4 = closure_9(map, iter.value);
+      let tmp3 = flattenComponent;
+      let tmp4 = flattenComponent(map, iter.value);
       let iter2 = tmp2();
       iter = iter2;
       done = iter2.done;
@@ -100,54 +103,54 @@ function flattenComponents(components) {
   }
   return map;
 }
-function flattenComponent(set, accessory) {
-  const require = set;
-  const result = set.set(accessory.id, accessory);
+function flattenComponent(map, accessory) {
+  const _require = map;
+  const result = map.set(accessory.id, accessory);
   const type = accessory.type;
-  if (require(dependencyMap[5]).ComponentType.ACTION_ROW === type) {
+  if (_require(1881).ComponentType.ACTION_ROW === type) {
     const components = accessory.components;
     const item = components.forEach((arg0) => {
-      callback(arg0, arg0);
+      outer1_9(closure_0, arg0);
     });
-  } else if (require(dependencyMap[5]).ComponentType.SECTION === type) {
+  } else if (_require(1881).ComponentType.SECTION === type) {
     const components1 = accessory.components;
     const item1 = components1.forEach((arg0) => {
-      callback(arg0, arg0);
+      outer1_9(closure_0, arg0);
     });
-    flattenComponent(set, accessory.accessory);
-  } else if (require(dependencyMap[5]).ComponentType.CONTAINER === type) {
+    flattenComponent(map, accessory.accessory);
+  } else if (_require(1881).ComponentType.CONTAINER === type) {
     const components2 = accessory.components;
     const item2 = components2.forEach((arg0) => {
-      callback(arg0, arg0);
+      outer1_9(closure_0, arg0);
     });
   }
 }
 function findChildComponent(type, componentId) {
-  const require = componentId;
+  const _require = componentId;
   type = type.type;
-  if (require(dependencyMap[5]).ComponentType.ACTION_ROW === type) {
+  if (_require(1881).ComponentType.ACTION_ROW === type) {
     const components = type.components;
-    const found = components.find((id) => id.id === arg1);
+    const found = components.find((id) => id.id === closure_0);
     let tmp8 = null;
     if (null != found) {
       tmp8 = found;
     }
     return tmp8;
-  } else if (require(dependencyMap[5]).ComponentType.SECTION === type) {
+  } else if (_require(1881).ComponentType.SECTION === type) {
     if (type.accessory.id === componentId) {
       let accessory = type.accessory;
     } else {
       const components1 = type.components;
-      const found1 = components1.find((id) => id.id === arg1);
+      const found1 = components1.find((id) => id.id === closure_0);
       accessory = null;
       if (null != found1) {
         accessory = found1;
       }
     }
     return accessory;
-  } else if (require(dependencyMap[5]).ComponentType.CONTAINER === type) {
+  } else if (_require(1881).ComponentType.CONTAINER === type) {
     const components2 = type.components;
-    const found2 = components2.find((id) => id.id === arg1);
+    const found2 = components2.find((id) => id.id === closure_0);
     let tmp4 = null;
     if (null != found2) {
       tmp4 = found2;
@@ -157,38 +160,38 @@ function findChildComponent(type, componentId) {
 }
 function getComponentChildren(type) {
   type = type.type;
-  if (require(dependencyMap[5]).ComponentType.ACTION_ROW === type) {
+  if (require(1881) /* PermissionOverwriteType */.ComponentType.ACTION_ROW === type) {
     return type.components;
-  } else if (require(dependencyMap[5]).ComponentType.SECTION === type) {
+  } else if (require(1881) /* PermissionOverwriteType */.ComponentType.SECTION === type) {
     const items = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(type.components, 0);
     items[arraySpreadResult] = type.accessory;
     const sum = arraySpreadResult + 1;
     return items;
-  } else if (require(dependencyMap[5]).ComponentType.CONTAINER === type) {
+  } else if (require(1881) /* PermissionOverwriteType */.ComponentType.CONTAINER === type) {
     return type.components;
-  } else if (require(dependencyMap[5]).ComponentType.LABEL === type) {
+  } else if (require(1881) /* PermissionOverwriteType */.ComponentType.LABEL === type) {
     const items1 = [type.component];
     return items1;
   } else {
-    if (require(dependencyMap[5]).ComponentType.BUTTON !== type) {
-      if (require(dependencyMap[5]).ComponentType.STRING_SELECT !== type) {
-        if (require(dependencyMap[5]).ComponentType.TEXT_INPUT !== type) {
-          if (require(dependencyMap[5]).ComponentType.USER_SELECT !== type) {
-            if (require(dependencyMap[5]).ComponentType.ROLE_SELECT !== type) {
-              if (require(dependencyMap[5]).ComponentType.MENTIONABLE_SELECT !== type) {
-                if (require(dependencyMap[5]).ComponentType.CHANNEL_SELECT !== type) {
-                  if (require(dependencyMap[5]).ComponentType.TEXT_DISPLAY !== type) {
-                    if (require(dependencyMap[5]).ComponentType.THUMBNAIL !== type) {
-                      if (require(dependencyMap[5]).ComponentType.MEDIA_GALLERY !== type) {
-                        if (require(dependencyMap[5]).ComponentType.FILE !== type) {
-                          if (require(dependencyMap[5]).ComponentType.SEPARATOR !== type) {
-                            if (require(dependencyMap[5]).ComponentType.CONTENT_INVENTORY_ENTRY !== type) {
-                              if (require(dependencyMap[5]).ComponentType.FILE_UPLOAD !== type) {
-                                if (require(dependencyMap[5]).ComponentType.CHECKPOINT_CARD !== type) {
-                                  if (require(dependencyMap[5]).ComponentType.RADIO_GROUP !== type) {
-                                    if (require(dependencyMap[5]).ComponentType.CHECKBOX_GROUP !== type) {
-                                      if (require(dependencyMap[5]).ComponentType.CHECKBOX !== type) {
+    if (require(1881) /* PermissionOverwriteType */.ComponentType.BUTTON !== type) {
+      if (require(1881) /* PermissionOverwriteType */.ComponentType.STRING_SELECT !== type) {
+        if (require(1881) /* PermissionOverwriteType */.ComponentType.TEXT_INPUT !== type) {
+          if (require(1881) /* PermissionOverwriteType */.ComponentType.USER_SELECT !== type) {
+            if (require(1881) /* PermissionOverwriteType */.ComponentType.ROLE_SELECT !== type) {
+              if (require(1881) /* PermissionOverwriteType */.ComponentType.MENTIONABLE_SELECT !== type) {
+                if (require(1881) /* PermissionOverwriteType */.ComponentType.CHANNEL_SELECT !== type) {
+                  if (require(1881) /* PermissionOverwriteType */.ComponentType.TEXT_DISPLAY !== type) {
+                    if (require(1881) /* PermissionOverwriteType */.ComponentType.THUMBNAIL !== type) {
+                      if (require(1881) /* PermissionOverwriteType */.ComponentType.MEDIA_GALLERY !== type) {
+                        if (require(1881) /* PermissionOverwriteType */.ComponentType.FILE !== type) {
+                          if (require(1881) /* PermissionOverwriteType */.ComponentType.SEPARATOR !== type) {
+                            if (require(1881) /* PermissionOverwriteType */.ComponentType.CONTENT_INVENTORY_ENTRY !== type) {
+                              if (require(1881) /* PermissionOverwriteType */.ComponentType.FILE_UPLOAD !== type) {
+                                if (require(1881) /* PermissionOverwriteType */.ComponentType.CHECKPOINT_CARD !== type) {
+                                  if (require(1881) /* PermissionOverwriteType */.ComponentType.RADIO_GROUP !== type) {
+                                    if (require(1881) /* PermissionOverwriteType */.ComponentType.CHECKBOX_GROUP !== type) {
+                                      if (require(1881) /* PermissionOverwriteType */.ComponentType.CHECKBOX !== type) {
                                         importDefaultResult.warn("getComponentChildren: Unknown component type", type.type);
                                         return [];
                                       }
@@ -222,102 +225,101 @@ function transformComponent(type, join) {
   let required7;
   let required8;
   let required9;
-  const require = join;
+  const _require = join;
   function getChildComponent(accessory, length) {
     const items = [...closure_0, length];
-    const tmp = callback2(accessory, items);
+    const tmp = outer1_12(accessory, items);
     let tmp2 = null;
     if (null != tmp) {
       tmp2 = tmp;
     }
     return tmp2;
   }
-  const dependencyMap = getChildComponent;
   type = type.type;
   let flag = true;
-  if (require(dependencyMap[5]).ComponentType.ACTION_ROW !== type) {
-    let found = require;
-    found = dependencyMap;
+  if (_require(getChildComponent[5]).ComponentType.ACTION_ROW !== type) {
+    let found = _require;
+    found = getChildComponent;
     flag = true;
-    if (require(dependencyMap[5]).ComponentType.BUTTON !== type) {
-      found = require;
-      found = dependencyMap;
+    if (_require(getChildComponent[5]).ComponentType.BUTTON !== type) {
+      found = _require;
+      found = getChildComponent;
       flag = true;
-      if (require(dependencyMap[5]).ComponentType.STRING_SELECT !== type) {
-        found = require;
-        found = dependencyMap;
+      if (_require(getChildComponent[5]).ComponentType.STRING_SELECT !== type) {
+        found = _require;
+        found = getChildComponent;
         flag = true;
-        if (require(dependencyMap[5]).ComponentType.TEXT_INPUT !== type) {
-          found = require;
-          found = dependencyMap;
+        if (_require(getChildComponent[5]).ComponentType.TEXT_INPUT !== type) {
+          found = _require;
+          found = getChildComponent;
           flag = true;
-          if (require(dependencyMap[5]).ComponentType.USER_SELECT !== type) {
-            found = require;
-            found = dependencyMap;
+          if (_require(getChildComponent[5]).ComponentType.USER_SELECT !== type) {
+            found = _require;
+            found = getChildComponent;
             flag = true;
-            if (require(dependencyMap[5]).ComponentType.ROLE_SELECT !== type) {
-              found = require;
-              found = dependencyMap;
+            if (_require(getChildComponent[5]).ComponentType.ROLE_SELECT !== type) {
+              found = _require;
+              found = getChildComponent;
               flag = true;
-              if (require(dependencyMap[5]).ComponentType.MENTIONABLE_SELECT !== type) {
-                found = require;
-                found = dependencyMap;
+              if (_require(getChildComponent[5]).ComponentType.MENTIONABLE_SELECT !== type) {
+                found = _require;
+                found = getChildComponent;
                 flag = true;
-                if (require(dependencyMap[5]).ComponentType.CHANNEL_SELECT !== type) {
-                  found = require;
-                  found = dependencyMap;
+                if (_require(getChildComponent[5]).ComponentType.CHANNEL_SELECT !== type) {
+                  found = _require;
+                  found = getChildComponent;
                   flag = true;
-                  if (require(dependencyMap[5]).ComponentType.SECTION !== type) {
-                    found = require;
-                    found = dependencyMap;
+                  if (_require(getChildComponent[5]).ComponentType.SECTION !== type) {
+                    found = _require;
+                    found = getChildComponent;
                     flag = true;
-                    if (require(dependencyMap[5]).ComponentType.TEXT_DISPLAY !== type) {
-                      found = require;
-                      found = dependencyMap;
+                    if (_require(getChildComponent[5]).ComponentType.TEXT_DISPLAY !== type) {
+                      found = _require;
+                      found = getChildComponent;
                       flag = true;
-                      if (require(dependencyMap[5]).ComponentType.THUMBNAIL !== type) {
-                        found = require;
-                        found = dependencyMap;
+                      if (_require(getChildComponent[5]).ComponentType.THUMBNAIL !== type) {
+                        found = _require;
+                        found = getChildComponent;
                         flag = true;
-                        if (require(dependencyMap[5]).ComponentType.MEDIA_GALLERY !== type) {
-                          found = require;
-                          found = dependencyMap;
+                        if (_require(getChildComponent[5]).ComponentType.MEDIA_GALLERY !== type) {
+                          found = _require;
+                          found = getChildComponent;
                           flag = true;
-                          if (require(dependencyMap[5]).ComponentType.FILE !== type) {
-                            found = require;
-                            found = dependencyMap;
+                          if (_require(getChildComponent[5]).ComponentType.FILE !== type) {
+                            found = _require;
+                            found = getChildComponent;
                             flag = true;
-                            if (require(dependencyMap[5]).ComponentType.SEPARATOR !== type) {
-                              found = require;
-                              found = dependencyMap;
+                            if (_require(getChildComponent[5]).ComponentType.SEPARATOR !== type) {
+                              found = _require;
+                              found = getChildComponent;
                               flag = true;
-                              if (require(dependencyMap[5]).ComponentType.CONTAINER !== type) {
-                                found = require;
-                                found = dependencyMap;
+                              if (_require(getChildComponent[5]).ComponentType.CONTAINER !== type) {
+                                found = _require;
+                                found = getChildComponent;
                                 flag = true;
-                                if (require(dependencyMap[5]).ComponentType.LABEL !== type) {
-                                  found = require;
-                                  found = dependencyMap;
+                                if (_require(getChildComponent[5]).ComponentType.LABEL !== type) {
+                                  found = _require;
+                                  found = getChildComponent;
                                   flag = true;
-                                  if (require(dependencyMap[5]).ComponentType.FILE_UPLOAD !== type) {
-                                    found = require;
-                                    found = dependencyMap;
+                                  if (_require(getChildComponent[5]).ComponentType.FILE_UPLOAD !== type) {
+                                    found = _require;
+                                    found = getChildComponent;
                                     flag = true;
-                                    if (require(dependencyMap[5]).ComponentType.CHECKPOINT_CARD !== type) {
-                                      found = require;
-                                      found = dependencyMap;
+                                    if (_require(getChildComponent[5]).ComponentType.CHECKPOINT_CARD !== type) {
+                                      found = _require;
+                                      found = getChildComponent;
                                       flag = true;
-                                      if (require(dependencyMap[5]).ComponentType.RADIO_GROUP !== type) {
-                                        found = require;
-                                        found = dependencyMap;
+                                      if (_require(getChildComponent[5]).ComponentType.RADIO_GROUP !== type) {
+                                        found = _require;
+                                        found = getChildComponent;
                                         flag = true;
-                                        if (require(dependencyMap[5]).ComponentType.CHECKBOX_GROUP !== type) {
-                                          found = require;
+                                        if (_require(getChildComponent[5]).ComponentType.CHECKBOX_GROUP !== type) {
+                                          found = _require;
                                           flag = true;
-                                          if (require(dependencyMap[5]).ComponentType.CHECKBOX !== type) {
+                                          if (_require(getChildComponent[5]).ComponentType.CHECKBOX !== type) {
                                             flag = true;
-                                            if (require(dependencyMap[5]).ComponentType.CONTENT_INVENTORY_ENTRY !== type) {
-                                              const UNKNOWN = require(dependencyMap[5]).ComponentType.UNKNOWN;
+                                            if (_require(getChildComponent[5]).ComponentType.CONTENT_INVENTORY_ENTRY !== type) {
+                                              const UNKNOWN = _require(getChildComponent[5]).ComponentType.UNKNOWN;
                                               flag = false;
                                             }
                                           }
@@ -344,30 +346,30 @@ function transformComponent(type, join) {
   if (flag) {
     const importDefault = true;
     const type2 = type.type;
-    if (require(dependencyMap[5]).ComponentType.ACTION_ROW === type2) {
+    if (_require(getChildComponent[5]).ComponentType.ACTION_ROW === type2) {
       const components = type.components;
       const mapped = components.map((arg0, arg1) => getChildComponent(arg0, arg1));
-      found = require;
-      found = dependencyMap;
+      found = _require;
+      found = getChildComponent;
       let obj = {};
-      found = mapped.filter(require(dependencyMap[9]).isNotNullish);
-      obj.type = require(dependencyMap[5]).ComponentType.ACTION_ROW;
+      found = mapped.filter(_require(getChildComponent[9]).isNotNullish);
+      obj.type = _require(getChildComponent[5]).ComponentType.ACTION_ROW;
       found = indicesToId;
       obj.id = indicesToId(join);
       obj.components = found;
       return obj;
     } else {
-      found = require;
-      found = dependencyMap;
-      if (require(dependencyMap[5]).ComponentType.BUTTON === type2) {
+      found = _require;
+      found = getChildComponent;
+      if (_require(getChildComponent[5]).ComponentType.BUTTON === type2) {
         let tmp98;
         if (null != type.emoji) {
           tmp98 = getEmoji(type.emoji, true);
         }
         obj = {};
-        found = require;
-        found = dependencyMap;
-        obj.type = require(dependencyMap[5]).ComponentType.BUTTON;
+        found = _require;
+        found = getChildComponent;
+        obj.type = _require(getChildComponent[5]).ComponentType.BUTTON;
         found = indicesToId;
         obj.id = indicesToId(join);
         ({ custom_id: obj27.customId, style: obj27.style, disabled: obj27.disabled, url: obj27.url, label: obj27.label } = type);
@@ -375,18 +377,18 @@ function transformComponent(type, join) {
         obj.skuId = type.sku_id;
         return obj;
       } else {
-        found = require;
-        found = dependencyMap;
-        if (require(dependencyMap[5]).ComponentType.STRING_SELECT === type2) {
-          const obj1 = { type: require(dependencyMap[5]).ComponentType.STRING_SELECT, id: indicesToId(join) };
+        found = _require;
+        found = getChildComponent;
+        if (_require(getChildComponent[5]).ComponentType.STRING_SELECT === type2) {
+          const obj1 = { type: _require(getChildComponent[5]).ComponentType.STRING_SELECT, id: indicesToId(join) };
           ({ custom_id: obj26.customId, disabled: obj26.disabled, required: required9 } = type);
           obj1.required = null != required9 && required9;
           const options = type.options;
           obj1.options = options.map((label) => {
-            const obj = { type: arg1(getChildComponent[10]).SelectOptionType.STRING, label: label.label, value: label.value, default: label.default, description: label.description };
+            const obj = { type: join(getChildComponent[10]).SelectOptionType.STRING, label: label.label, value: label.value, default: label.default, description: label.description };
             let tmp;
             if (null != label.emoji) {
-              tmp = callback(label.emoji, closure_1);
+              tmp = outer1_5(label.emoji, c1);
             }
             obj.emoji = tmp;
             return obj;
@@ -394,139 +396,139 @@ function transformComponent(type, join) {
           ({ placeholder: obj26.placeholder, min_values: obj26.minValues, max_values: obj26.maxValues } = type);
           return obj1;
         } else {
-          found = require;
-          found = dependencyMap;
-          if (require(dependencyMap[5]).ComponentType.TEXT_INPUT === type2) {
+          found = _require;
+          found = getChildComponent;
+          if (_require(getChildComponent[5]).ComponentType.TEXT_INPUT === type2) {
             const obj2 = { type: type.type, id: indicesToId(join) };
             ({ style: obj25.style, custom_id: obj25.customId, label: obj25.label, value: obj25.value, placeholder: obj25.placeholder, disabled: obj25.disabled, required: required8 } = type);
             obj2.required = null != required8 && required8;
             ({ min_length: obj25.minLength, max_length: obj25.maxLength } = type);
             return obj2;
           } else {
-            found = require;
-            found = dependencyMap;
-            if (require(dependencyMap[5]).ComponentType.USER_SELECT === type2) {
-              const obj3 = { type: require(dependencyMap[5]).ComponentType.USER_SELECT, id: indicesToId(join) };
+            found = _require;
+            found = getChildComponent;
+            if (_require(getChildComponent[5]).ComponentType.USER_SELECT === type2) {
+              const obj3 = { type: _require(getChildComponent[5]).ComponentType.USER_SELECT, id: indicesToId(join) };
               ({ custom_id: obj24.customId, disabled: obj24.disabled, required: required7 } = type);
               obj3.required = null != required7 && required7;
               ({ placeholder: obj24.placeholder, min_values: obj24.minValues, max_values: obj24.maxValues, default_values: obj24.defaultValues } = type);
               return obj3;
             } else {
-              found = require;
-              found = dependencyMap;
-              if (require(dependencyMap[5]).ComponentType.ROLE_SELECT === type2) {
-                const obj4 = { type: require(dependencyMap[5]).ComponentType.ROLE_SELECT, id: indicesToId(join) };
+              found = _require;
+              found = getChildComponent;
+              if (_require(getChildComponent[5]).ComponentType.ROLE_SELECT === type2) {
+                const obj4 = { type: _require(getChildComponent[5]).ComponentType.ROLE_SELECT, id: indicesToId(join) };
                 ({ custom_id: obj23.customId, disabled: obj23.disabled, required: required6 } = type);
                 obj4.required = null != required6 && required6;
                 ({ placeholder: obj23.placeholder, min_values: obj23.minValues, max_values: obj23.maxValues, default_values: obj23.defaultValues } = type);
                 return obj4;
               } else {
-                found = require;
-                found = dependencyMap;
-                if (require(dependencyMap[5]).ComponentType.MENTIONABLE_SELECT === type2) {
-                  let obj5 = { type: require(dependencyMap[5]).ComponentType.MENTIONABLE_SELECT, id: indicesToId(join) };
+                found = _require;
+                found = getChildComponent;
+                if (_require(getChildComponent[5]).ComponentType.MENTIONABLE_SELECT === type2) {
+                  let obj5 = { type: _require(getChildComponent[5]).ComponentType.MENTIONABLE_SELECT, id: indicesToId(join) };
                   ({ custom_id: obj22.customId, disabled: obj22.disabled, required: required5 } = type);
                   obj5.required = null != required5 && required5;
                   ({ placeholder: obj22.placeholder, min_values: obj22.minValues, max_values: obj22.maxValues, default_values: obj22.defaultValues } = type);
                   return obj5;
                 } else {
-                  found = require;
-                  found = dependencyMap;
-                  if (require(dependencyMap[5]).ComponentType.CHANNEL_SELECT === type2) {
-                    const obj6 = { type: require(dependencyMap[5]).ComponentType.CHANNEL_SELECT, id: indicesToId(join) };
+                  found = _require;
+                  found = getChildComponent;
+                  if (_require(getChildComponent[5]).ComponentType.CHANNEL_SELECT === type2) {
+                    const obj6 = { type: _require(getChildComponent[5]).ComponentType.CHANNEL_SELECT, id: indicesToId(join) };
                     ({ custom_id: obj21.customId, disabled: obj21.disabled, required: required4 } = type);
                     obj6.required = null != required4 && required4;
                     ({ placeholder: obj21.placeholder, min_values: obj21.minValues, max_values: obj21.maxValues, channel_types: obj21.channelTypes, default_values: obj21.defaultValues } = type);
                     return obj6;
                   } else {
-                    found = require;
-                    found = dependencyMap;
-                    if (require(dependencyMap[5]).ComponentType.SECTION === type2) {
+                    found = _require;
+                    found = getChildComponent;
+                    if (_require(getChildComponent[5]).ComponentType.SECTION === type2) {
                       const components1 = type.components;
                       const mapped1 = components1.map((arg0, arg1) => getChildComponent(arg0, arg1));
-                      const found1 = mapped1.filter(require(dependencyMap[9]).isNotNullish);
+                      const found1 = mapped1.filter(_require(getChildComponent[9]).isNotNullish);
                       const childComponent = getChildComponent(type.accessory, found1.length);
                       let tmp71 = null;
                       if (0 !== found1.length) {
                         tmp71 = null;
                         if (null != childComponent) {
-                          const obj7 = { type: require(dependencyMap[5]).ComponentType.SECTION, id: indicesToId(join), components: found1, accessory: childComponent };
+                          const obj7 = { type: _require(getChildComponent[5]).ComponentType.SECTION, id: indicesToId(join), components: found1, accessory: childComponent };
                           tmp71 = obj7;
                         }
                       }
                       return tmp71;
                     } else {
-                      found = require;
-                      found = dependencyMap;
-                      if (require(dependencyMap[5]).ComponentType.TEXT_DISPLAY === type2) {
-                        const obj8 = { type: require(dependencyMap[5]).ComponentType.TEXT_DISPLAY, id: indicesToId(join), content: type.content };
+                      found = _require;
+                      found = getChildComponent;
+                      if (_require(getChildComponent[5]).ComponentType.TEXT_DISPLAY === type2) {
+                        const obj8 = { type: _require(getChildComponent[5]).ComponentType.TEXT_DISPLAY, id: indicesToId(join), content: type.content };
                         return obj8;
                       } else {
-                        found = require;
-                        found = dependencyMap;
-                        if (require(dependencyMap[5]).ComponentType.THUMBNAIL === type2) {
-                          const obj9 = { type: require(dependencyMap[5]).ComponentType.THUMBNAIL, id: indicesToId(join) };
-                          let obj17 = require(dependencyMap[7]);
+                        found = _require;
+                        found = getChildComponent;
+                        if (_require(getChildComponent[5]).ComponentType.THUMBNAIL === type2) {
+                          const obj9 = { type: _require(getChildComponent[5]).ComponentType.THUMBNAIL, id: indicesToId(join) };
+                          let obj17 = _require(getChildComponent[7]);
                           obj9.media = obj17.toUnfurledMediaItem(type.media);
                           ({ description: obj17.description, spoiler: obj17.spoiler } = type);
                           return obj9;
                         } else {
-                          found = require;
-                          found = dependencyMap;
-                          if (require(dependencyMap[5]).ComponentType.MEDIA_GALLERY === type2) {
-                            let obj10 = { type: require(dependencyMap[5]).ComponentType.MEDIA_GALLERY, id: indicesToId(join) };
-                            const items = type.items;
+                          found = _require;
+                          found = getChildComponent;
+                          if (_require(getChildComponent[5]).ComponentType.MEDIA_GALLERY === type2) {
+                            let obj10 = { type: _require(getChildComponent[5]).ComponentType.MEDIA_GALLERY, id: indicesToId(join) };
+                            let items = type.items;
                             obj10.items = items.map((media) => {
-                              const obj = { media: arg1(getChildComponent[7]).toUnfurledMediaItem(media.media) };
+                              const obj = { media: join(getChildComponent[7]).toUnfurledMediaItem(media.media) };
                               ({ description: obj.description, spoiler: obj.spoiler } = media);
                               return obj;
                             });
                             return obj10;
                           } else {
-                            found = require;
-                            found = dependencyMap;
-                            if (require(dependencyMap[5]).ComponentType.FILE === type2) {
-                              const obj11 = { type: require(dependencyMap[5]).ComponentType.FILE, id: indicesToId(join) };
-                              let obj14 = require(dependencyMap[7]);
+                            found = _require;
+                            found = getChildComponent;
+                            if (_require(getChildComponent[5]).ComponentType.FILE === type2) {
+                              const obj11 = { type: _require(getChildComponent[5]).ComponentType.FILE, id: indicesToId(join) };
+                              let obj14 = _require(getChildComponent[7]);
                               obj11.file = obj14.toUnfurledMediaItem(type.file);
                               ({ name: obj14.name, size: obj14.size, spoiler: obj14.spoiler } = type);
                               return obj11;
                             } else {
-                              found = require;
-                              found = dependencyMap;
-                              if (require(dependencyMap[5]).ComponentType.SEPARATOR === type2) {
-                                const obj12 = { type: require(dependencyMap[5]).ComponentType.SEPARATOR, id: indicesToId(join) };
+                              found = _require;
+                              found = getChildComponent;
+                              if (_require(getChildComponent[5]).ComponentType.SEPARATOR === type2) {
+                                const obj12 = { type: _require(getChildComponent[5]).ComponentType.SEPARATOR, id: indicesToId(join) };
                                 const divider = type.divider;
                                 obj12.divider = null == divider || divider;
                                 let SMALL = type.spacing;
                                 if (null == SMALL) {
-                                  SMALL = require(dependencyMap[5]).SeparatorSpacingSize.SMALL;
+                                  SMALL = _require(getChildComponent[5]).SeparatorSpacingSize.SMALL;
                                 }
                                 obj12.spacing = SMALL;
                                 return obj12;
                               } else {
-                                found = require;
-                                found = dependencyMap;
-                                if (require(dependencyMap[5]).ComponentType.CONTENT_INVENTORY_ENTRY === type2) {
+                                found = _require;
+                                found = getChildComponent;
+                                if (_require(getChildComponent[5]).ComponentType.CONTENT_INVENTORY_ENTRY === type2) {
                                   let tmp45 = null;
                                   if (null != type.content_inventory_entry) {
-                                    const obj13 = { type: require(dependencyMap[5]).ComponentType.CONTENT_INVENTORY_ENTRY, id: indicesToId(join), contentInventoryEntry: type.content_inventory_entry };
+                                    const obj13 = { type: _require(getChildComponent[5]).ComponentType.CONTENT_INVENTORY_ENTRY, id: indicesToId(join), contentInventoryEntry: type.content_inventory_entry };
                                     tmp45 = obj13;
                                   }
                                   return tmp45;
                                 } else {
-                                  found = require;
-                                  found = dependencyMap;
-                                  if (require(dependencyMap[5]).ComponentType.CONTAINER === type2) {
+                                  found = _require;
+                                  found = getChildComponent;
+                                  if (_require(getChildComponent[5]).ComponentType.CONTAINER === type2) {
                                     const components2 = type.components;
                                     const mapped2 = components2.map((arg0, arg1) => getChildComponent(arg0, arg1));
                                     obj14 = {};
-                                    const found2 = mapped2.filter(require(dependencyMap[9]).isNotNullish);
-                                    obj14.type = require(dependencyMap[5]).ComponentType.CONTAINER;
+                                    const found2 = mapped2.filter(_require(getChildComponent[9]).isNotNullish);
+                                    obj14.type = _require(getChildComponent[5]).ComponentType.CONTAINER;
                                     obj14.id = indicesToId(join);
                                     let int2hslResult;
                                     if (null != type.accent_color) {
-                                      obj10 = require(dependencyMap[11]);
+                                      obj10 = _require(getChildComponent[11]);
                                       int2hslResult = obj10.int2hsl(type.accent_color, false);
                                     }
                                     obj14.accentColor = int2hslResult;
@@ -534,31 +536,31 @@ function transformComponent(type, join) {
                                     obj14.components = found2;
                                     return obj14;
                                   } else {
-                                    found = require;
-                                    found = dependencyMap;
-                                    if (require(dependencyMap[5]).ComponentType.LABEL === type2) {
+                                    found = _require;
+                                    found = getChildComponent;
+                                    if (_require(getChildComponent[5]).ComponentType.LABEL === type2) {
                                       const childComponent1 = getChildComponent(type.component, 0);
                                       let tmp33 = null;
                                       if (null != childComponent1) {
-                                        const obj15 = { type: require(dependencyMap[5]).ComponentType.LABEL, id: indicesToId(join) };
+                                        const obj15 = { type: _require(getChildComponent[5]).ComponentType.LABEL, id: indicesToId(join) };
                                         ({ label: obj9.label, description: obj9.description } = type);
                                         obj15.component = childComponent1;
                                         tmp33 = obj15;
                                       }
                                       return tmp33;
                                     } else {
-                                      found = require;
-                                      found = dependencyMap;
-                                      if (require(dependencyMap[5]).ComponentType.FILE_UPLOAD === type2) {
+                                      found = _require;
+                                      found = getChildComponent;
+                                      if (_require(getChildComponent[5]).ComponentType.FILE_UPLOAD === type2) {
                                         const obj16 = { type: type.type, id: indicesToId(join) };
                                         ({ custom_id: obj8.customId, disabled: obj8.disabled, required: required3 } = type);
                                         obj16.required = null != required3 && required3;
                                         ({ min_values: obj8.minValues, max_values: obj8.maxValues, file_types: obj8.fileTypes } = type);
                                         return obj16;
                                       } else {
-                                        found = require;
-                                        found = dependencyMap;
-                                        if (require(dependencyMap[5]).ComponentType.CHECKPOINT_CARD === type2) {
+                                        found = _require;
+                                        found = getChildComponent;
+                                        if (_require(getChildComponent[5]).ComponentType.CHECKPOINT_CARD === type2) {
                                           const checkpoint_data = type.checkpoint_data;
                                           let tmp22 = null;
                                           if (checkpoint_data.version === CheckpointVersions.V2025) {
@@ -576,7 +578,7 @@ function transformComponent(type, join) {
                                             let tmp24;
                                             if (null != checkpoint_data.top_emoji) {
                                               const obj20 = {};
-                                              obj5 = importDefault(dependencyMap[12]);
+                                              obj5 = importDefault(getChildComponent[12]);
                                               let emoji_id;
                                               if (obj5.isProbablyAValidSnowflake(checkpoint_data.top_emoji.emoji_id)) {
                                                 emoji_id = checkpoint_data.top_emoji.emoji_id;
@@ -602,22 +604,22 @@ function transformComponent(type, join) {
                                           }
                                           return tmp22;
                                         } else {
-                                          found = require;
-                                          found = dependencyMap;
-                                          if (require(dependencyMap[5]).ComponentType.RADIO_GROUP === type2) {
+                                          found = _require;
+                                          found = getChildComponent;
+                                          if (_require(getChildComponent[5]).ComponentType.RADIO_GROUP === type2) {
                                             const obj22 = { type: type.type, id: indicesToId(join) };
                                             ({ custom_id: obj3.customId, options: obj3.options, required: required2 } = type);
                                             obj22.required = null != required2 && required2;
                                             return obj22;
                                           } else {
-                                            found = require;
-                                            found = dependencyMap;
-                                            if (require(dependencyMap[5]).ComponentType.CHECKBOX_GROUP === type2) {
+                                            found = _require;
+                                            found = getChildComponent;
+                                            if (_require(getChildComponent[5]).ComponentType.CHECKBOX_GROUP === type2) {
                                               const obj23 = { type: type.type, id: indicesToId(join) };
                                               ({ custom_id: obj2.customId, options: obj2.options, min_values: obj2.minValues, max_values: obj2.maxValues, required } = type);
                                               obj23.required = null != required && required;
                                               return obj23;
-                                            } else if (require(dependencyMap[5]).ComponentType.CHECKBOX === type2) {
+                                            } else if (_require(getChildComponent[5]).ComponentType.CHECKBOX === type2) {
                                               obj = { type: type.type, id: indicesToId(join) };
                                               ({ custom_id: obj.customId, default: obj.default } = type);
                                               return obj;
@@ -650,10 +652,8 @@ function transformComponent(type, join) {
   }
 }
 function indicesToId(join) {
-  return require(dependencyMap[10]).asComponentId(join.join(","));
+  return require(4359) /* ActionComponentState */.asComponentId(join.join(","));
 }
-const CheckpointVersions = require(dependencyMap[0]).CheckpointVersions;
-let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult("InteractionComponentUtils");
 function getEmoji(id) {
   let animated;
@@ -668,15 +668,14 @@ function getEmoji(id) {
       }
       obj.animated = animated;
       obj.size = 48;
-      emojiURL = importDefault(dependencyMap[2]).getEmojiURL(obj);
-      const obj2 = importDefault(dependencyMap[2]);
+      emojiURL = importDefault(1392).getEmojiURL(obj);
+      const obj2 = importDefault(1392);
     }
   }
   obj.src = emojiURL;
   return obj;
 }
-const _module = require(dependencyMap[13]);
-const result = _module.fileFinishedImporting("modules/interaction_components/InteractionComponentUtils.tsx");
+let result = require("getAvatarURL").fileFinishedImporting("modules/interaction_components/InteractionComponentUtils.tsx");
 
 export const getLayoutComponentErrorText = function getLayoutComponentErrorText(interaction, message, type) {
   let interactionType;
@@ -684,13 +683,13 @@ export const getLayoutComponentErrorText = function getLayoutComponentErrorText(
     interactionType = interaction.data.interactionType;
   }
   let componentId = null;
-  if (interactionType === require(dependencyMap[5]).InteractionTypes.MESSAGE_COMPONENT) {
+  if (interactionType === require(1881) /* PermissionOverwriteType */.InteractionTypes.MESSAGE_COMPONENT) {
     let state;
     if (null != interaction) {
       state = interaction.state;
     }
     componentId = null;
-    if (state === require(dependencyMap[6]).InteractionState.FAILED) {
+    if (state === require(4357) /* InteractionState */.InteractionState.FAILED) {
       componentId = interaction.data.componentId;
     }
   }
@@ -711,19 +710,19 @@ export const getLayoutComponentErrorText = function getLayoutComponentErrorText(
         errorCode = interaction.errorCode;
       }
       if (429 === errorCode) {
-        const intl2 = require(dependencyMap[3]).intl;
-        let stringResult = intl2.string(require(dependencyMap[3]).t.fitPBS);
+        const intl2 = require(1212) /* getSystemLocale */.intl;
+        let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.fitPBS);
       } else {
         let reasonCode;
         if (null != interaction) {
           reasonCode = interaction.reasonCode;
         }
         if (null == reasonCode) {
-          const intl = require(dependencyMap[3]).intl;
-          stringResult = intl.string(require(dependencyMap[3]).t.VCsUJu);
+          const intl = require(1212) /* getSystemLocale */.intl;
+          stringResult = intl.string(require(1212) /* getSystemLocale */.t.VCsUJu);
         } else {
-          stringResult = require(dependencyMap[4]).interactionCallbackErrorReason(interaction.reasonCode, interaction.data.applicationId);
-          const obj = require(dependencyMap[4]);
+          stringResult = require(4355) /* interactionCallbackErrorReason */.interactionCallbackErrorReason(interaction.reasonCode, interaction.data.applicationId);
+          const obj = require(4355) /* interactionCallbackErrorReason */;
         }
       }
     }
@@ -732,14 +731,14 @@ export const getLayoutComponentErrorText = function getLayoutComponentErrorText(
 export const getSelectPlaceholder = function getSelectPlaceholder(placeholder) {
   placeholder = placeholder.placeholder;
   if (null == placeholder) {
-    const intl = require(dependencyMap[3]).intl;
-    placeholder = intl.string(require(dependencyMap[3]).t.Otr6W2);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    placeholder = intl.string(require(1212) /* getSystemLocale */.t.Otr6W2);
   }
   return placeholder;
 };
-export const canSelectBeEmpty = function canSelectBeEmpty(value, modal) {
+export const canSelectBeEmpty = function canSelectBeEmpty(closure_0, modal) {
   if ("modal" === modal) {
-    let tmp2 = !value.required;
+    let tmp2 = !closure_0.required;
   } else {
     tmp2 = 0 === tmp;
   }
@@ -749,7 +748,7 @@ export { flattenComponents };
 export { findChildComponent };
 export const getAllTextDisplayContent = function getAllTextDisplayContent(components) {
   const obj = flattenComponents(components);
-  const found = Array.from(flattenComponents(components).values()).filter((type) => type.type === callback(closure_2[5]).ComponentType.TEXT_DISPLAY);
+  const found = Array.from(flattenComponents(components).values()).filter((type) => type.type === outer1_0(outer1_2[5]).ComponentType.TEXT_DISPLAY);
   const mapped = found.map((content) => content.content);
   const joined = mapped.join("\n");
   let tmp2 = null;
@@ -770,7 +769,7 @@ export const getFirstInteractionComponentMedia = function getFirstInteractionCom
       let value = iter2.value;
       let tmp5 = require;
       let tmp6 = dependencyMap;
-      if (value.type === require(dependencyMap[5]).ComponentType.MEDIA_GALLERY) {
+      if (value.type === require(1881) /* PermissionOverwriteType */.ComponentType.MEDIA_GALLERY) {
         first = value.items[0];
         let tmp8 = tmp3;
         let tmp9 = tmp4;
@@ -778,7 +777,7 @@ export const getFirstInteractionComponentMedia = function getFirstInteractionCom
         if (null != first) {
           let tmp11 = require;
           let tmp12 = dependencyMap;
-          let obj2 = require(dependencyMap[7]);
+          let obj2 = require(4358) /* toContentScanMetadata */;
           unfurledMediaItemType = obj2.getUnfurledMediaItemType(first.media);
           tmp10 = first;
           tmp9 = tmp4;
@@ -793,10 +792,10 @@ export const getFirstInteractionComponentMedia = function getFirstInteractionCom
         tmp10 = tmp2;
         tmp8 = tmp3;
         tmp9 = tmp4;
-        if (value.type === require(dependencyMap[5]).ComponentType.THUMBNAIL) {
+        if (value.type === require(1881) /* PermissionOverwriteType */.ComponentType.THUMBNAIL) {
           let tmp18 = require;
           let tmp19 = dependencyMap;
-          let obj4 = require(dependencyMap[7]);
+          let obj4 = require(4358) /* toContentScanMetadata */;
           let unfurledMediaItemType1 = obj4.getUnfurledMediaItemType(value.media);
           tmp10 = tmp2;
           tmp8 = tmp3;
@@ -814,9 +813,9 @@ export const getFirstInteractionComponentMedia = function getFirstInteractionCom
         }
       }
       let iter3 = tmp();
-      let tmp2 = tmp10;
-      let tmp3 = tmp8;
-      let tmp4 = tmp9;
+      tmp2 = tmp10;
+      tmp3 = tmp8;
+      tmp4 = tmp9;
       iter2 = iter3;
     }
     obj = {};
@@ -828,20 +827,20 @@ export const getFirstInteractionComponentMedia = function getFirstInteractionCom
   return null;
 };
 export const getParents = function getParents(arg0, arg1) {
-  const require = arg1;
+  let closure_0 = arg1;
   function search(arg0) {
     let items = arg1;
     if (arg1 === undefined) {
       items = [];
     }
-    const tmp = callback(arg0);
+    const tmp = outer1_6(arg0);
     const iter = tmp();
     let iter2 = iter;
     if (!iter.done) {
       const value = iter2.value;
-      const obj = callback2(value);
+      const obj = outer1_11(value);
       const items1 = [];
-      while (!obj.some((id) => id.id === id.id)) {
+      while (!obj.some((id) => id.id === outer1_0.id)) {
         let tmp3 = search;
         items1[0] = value;
         let tmp4 = items1;
@@ -862,7 +861,6 @@ export const getParents = function getParents(arg0, arg1) {
     }
     return null;
   }
-  const importDefault = search;
   return search(arg0);
 };
 export const makeComponentUploadId = function makeComponentUploadId(containerId) {
@@ -873,8 +871,8 @@ export const makeComponentUploadId = function makeComponentUploadId(containerId)
     randomUUIDResult = crypto.randomUUID();
   }
   if (null == randomUUIDResult) {
-    randomUUIDResult = require(dependencyMap[8]).v4();
-    const obj2 = require(dependencyMap[8]);
+    randomUUIDResult = require(491) /* v1 */.v4();
+    const obj2 = require(491) /* v1 */;
   }
   obj.uniqueId = randomUUIDResult;
   return JSON.stringify(obj);
@@ -900,39 +898,39 @@ export const deserializeComponentUploadId = function deserializeComponentUploadI
 export const getFileUploadComponentSubtitle = function getFileUploadComponentSubtitle(minValues, maxValues, types, formatSizeResult) {
   if (null != types) {
     if (minValues <= 1) {
-      const intl4 = require(dependencyMap[3]).intl;
+      const intl4 = require(1212) /* getSystemLocale */.intl;
       let obj = { maxValues, types, maxSize: formatSizeResult };
-      intl4.format(require(dependencyMap[3]).t.QLrHJG, obj);
+      intl4.format(require(1212) /* getSystemLocale */.t.QLrHJG, obj);
     }
     if (minValues === maxValues) {
-      const intl6 = require(dependencyMap[3]).intl;
+      const intl6 = require(1212) /* getSystemLocale */.intl;
       obj = { minValues, types, maxSize: formatSizeResult };
-      let formatResult1 = intl6.format(require(dependencyMap[3]).t.Xp4xMV, obj);
+      let formatResult1 = intl6.format(require(1212) /* getSystemLocale */.t.Xp4xMV, obj);
     } else {
-      const intl5 = require(dependencyMap[3]).intl;
+      const intl5 = require(1212) /* getSystemLocale */.intl;
       const obj1 = { minValues, maxValues, types, maxSize: formatSizeResult };
-      formatResult1 = intl5.format(require(dependencyMap[3]).t.05AyNA, obj1);
+      formatResult1 = intl5.format(require(1212) /* getSystemLocale */.t["05AyNA"], obj1);
     }
   } else if (minValues > 1) {
     if (minValues === maxValues) {
-      const intl3 = require(dependencyMap[3]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       const obj2 = { minValues, maxSize: formatSizeResult };
-      let formatResult2 = intl3.format(require(dependencyMap[3]).t.SAr31z, obj2);
+      let formatResult2 = intl3.format(require(1212) /* getSystemLocale */.t.SAr31z, obj2);
     } else {
-      const intl2 = require(dependencyMap[3]).intl;
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       const obj3 = { minValues, maxValues, maxSize: formatSizeResult };
-      formatResult2 = intl2.format(require(dependencyMap[3]).t.ZG+3Ck, obj3);
+      formatResult2 = intl2.format(require(1212) /* getSystemLocale */.t["ZG+3Ck"], obj3);
     }
   } else {
-    const intl = require(dependencyMap[3]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { maxValues, maxSize: formatSizeResult };
-    return intl.format(require(dependencyMap[3]).t.tyxwW1, obj);
+    return intl.format(require(1212) /* getSystemLocale */.t.tyxwW1, obj);
   }
 };
 export const transformComponents = function transformComponents(arr) {
   const mapped = arr.map((arg0, arg1) => {
     const items = [arg1];
-    return callback(arg0, items);
+    return outer1_12(arg0, items);
   });
   return mapped.filter((arg0) => null != arg0);
 };

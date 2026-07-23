@@ -1,15 +1,16 @@
-// Module ID: 15895
-// Function ID: 121717
+// Module ID: 16012
+// Function ID: 123890
 // Name: items
-// Dependencies: []
+// Dependencies: [4045, 4042, 2]
 
-// Module 15895 (items)
-const _module = require(dependencyMap[1]);
-const obj = { shapes: null, flex: null, sk: null, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false } };
-const items = [{ config: { enabled: true } }];
+// Module 16012 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2026-04_voice_call_trigger_point", label: "Voice Call Trigger Point Experiment", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false } };
+obj = { id: 1, label: "Treatment", config: { enabled: true } };
+const items = [obj];
 obj.treatments = items;
-const experiment = _module.createExperiment(obj);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/voice_calls/VoiceCallTriggerPointExperiment.tsx");
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/voice_calls/VoiceCallTriggerPointExperiment.tsx");
 
 export default experiment;

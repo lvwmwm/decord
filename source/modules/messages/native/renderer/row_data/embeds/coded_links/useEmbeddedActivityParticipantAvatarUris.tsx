@@ -1,22 +1,22 @@
-// Module ID: 12177
-// Function ID: 93634
+// Module ID: 12291
+// Function ID: 95785
 // Name: useEmbeddedActivityParticipantAvatarUris
-// Dependencies: []
+// Dependencies: [31, 1347, 1849, 1327, 624, 2]
 // Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 12177 (useEmbeddedActivityParticipantAvatarUris)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/useEmbeddedActivityParticipantAvatarUris.tsx");
+// Module 12291 (useEmbeddedActivityParticipantAvatarUris)
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/useEmbeddedActivityParticipantAvatarUris.tsx");
 
 export default function useEmbeddedActivityParticipantAvatarUris(activity) {
   activity = activity.activity;
-  const arg1 = activity;
   const guildId = activity.guildId;
-  const dependencyMap = guildId;
   const items = [activity];
-  const memo = React.useMemo(() => {
+  memo = memo.useMemo(() => {
     let userIds;
     if (null != activity) {
       userIds = activity.userIds;
@@ -26,22 +26,22 @@ export default function useEmbeddedActivityParticipantAvatarUris(activity) {
     }
     return Array.from(userIds);
   }, items);
-  const React = memo;
-  const items1 = [closure_4];
+  const items1 = [_isNativeReflectConstruct];
   const items2 = [memo];
-  const stateFromStoresArray = arg1(dependencyMap[4]).useStateFromStoresArray(items1, () => memo.map((arg0) => user.getUser(arg0)), items2);
-  let closure_3 = stateFromStoresArray;
+  const stateFromStoresArray = activity(guildId[4]).useStateFromStoresArray(items1, () => memo.map((arg0) => outer2_4.getUser(arg0)), items2);
   const items3 = [guildId, stateFromStoresArray];
-  return React.useMemo(() => {
+  return memo.useMemo(() => {
     const found = stateFromStoresArray.filter(activity(guildId[3]).isNotNullish);
-    return found.map((getAvatarURL) => "" + getAvatarURL.getAvatarURL(closure_1, 64));
+    return found.map((getAvatarURL) => "" + getAvatarURL.getAvatarURL(outer1_1, 64));
   }, items3);
 };
 export const getEmbeddedActivityParticipantAvatarUris = function getEmbeddedActivityParticipantAvatarUris(arg0) {
   let activity;
-  ({ guildId: closure_0, applicationId: closure_1, activity } = arg0);
+  let dependencyMap;
+  let require;
+  ({ guildId: require, applicationId: dependencyMap, activity } = arg0);
   if (null == activity) {
-    const embeddedActivitiesForChannel = embeddedActivitiesForChannel.getEmbeddedActivitiesForChannel(tmp);
+    embeddedActivitiesForChannel = embeddedActivitiesForChannel.getEmbeddedActivitiesForChannel(tmp);
     activity = embeddedActivitiesForChannel.find((applicationId) => applicationId.applicationId === closure_1);
   }
   let userIds;
@@ -52,12 +52,12 @@ export const getEmbeddedActivityParticipantAvatarUris = function getEmbeddedActi
     userIds = [];
   }
   const mapped = Array.from(userIds).map((arg0) => {
-    const user = user.getUser(arg0);
+    const user = outer1_4.getUser(arg0);
     let avatarURL;
     if (null != user) {
       avatarURL = user.getAvatarURL(closure_0, 64);
     }
     return "" + avatarURL;
   });
-  return mapped.filter(arg1(dependencyMap[3]).isNotNullish);
+  return mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
 };

@@ -1,14 +1,15 @@
 // Module ID: 119
 // Function ID: 1639
 // Name: ReactFabric
-// Dependencies: []
+// Dependencies: [120, 261]
 
 // Module 119 (ReactFabric)
-const _module = require(dependencyMap[0]);
-global.RN$stopSurface = _module.stopSurface;
+import describeBuiltInComponentFrame from "describeBuiltInComponentFrame";
+
+global.RN$stopSurface = describeBuiltInComponentFrame.stopSurface;
 if (true !== global.RN$Bridgeless) {
-  const BatchedBridge = require(dependencyMap[1]).BatchedBridge;
-  const result = BatchedBridge.registerCallableModule("ReactFabric", _module);
+  const BatchedBridge = require("get BatchedBridge").BatchedBridge;
+  const result = BatchedBridge.registerCallableModule("ReactFabric", describeBuiltInComponentFrame);
 }
 
-export default _module;
+export default describeBuiltInComponentFrame;

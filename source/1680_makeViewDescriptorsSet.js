@@ -1,16 +1,17 @@
 // Module ID: 1680
-// Function ID: 18616
+// Function ID: 18617
 // Name: makeViewDescriptorsSet
-// Dependencies: []
+// Dependencies: [1626]
 
 // Module 1680 (makeViewDescriptorsSet)
+const require = arg1;
+const dependencyMap = arg6;
 let closure_2 = { code: "function pnpm_ViewDescriptorsSetTs1(descriptors){const{item,updater}=this.__closure;var _updater;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===item.tag;});if(index!==-1){descriptors[index]=item;}else{descriptors.push(item);}(_updater=updater)===null||_updater===void 0||_updater(true);return descriptors;}" };
 let closure_3 = { code: "function pnpm_ViewDescriptorsSetTs2(descriptors){const{viewTag}=this.__closure;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===viewTag;});if(index!==-1){descriptors.splice(index,1);}return descriptors;}" };
 arg5.makeViewDescriptorsSet = function makeViewDescriptorsSet() {
-  let obj = arg1(arg6[0]);
-  const mutable = obj.makeMutable([]);
-  const arg1 = mutable;
-  const arg6 = new Set();
+  let obj = mutable(set[0]);
+  mutable = obj.makeMutable([]);
+  set = new Set();
   obj = {
     shareableViewDescriptors: mutable,
     add(item, current) {
@@ -24,7 +25,7 @@ arg5.makeViewDescriptorsSet = function makeViewDescriptorsSet() {
       const obj = { item, updater: current };
       pnpm_ViewDescriptorsSetTs1.__closure = obj;
       pnpm_ViewDescriptorsSetTs1.__workletHash = 1368679644593;
-      pnpm_ViewDescriptorsSetTs1.__initData = closure_2;
+      pnpm_ViewDescriptorsSetTs1.__initData = outer1_2;
       mutable.modify(pnpm_ViewDescriptorsSetTs1, false);
     },
     remove(viewTag) {
@@ -33,7 +34,7 @@ arg5.makeViewDescriptorsSet = function makeViewDescriptorsSet() {
       /* worklet (recovered source) */ function pnpm_ViewDescriptorsSetTs2(descriptors){const{viewTag}=this.__closure;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===viewTag;});if(index!==-1){descriptors.splice(index,1);}return descriptors;}
       pnpm_ViewDescriptorsSetTs2.__closure = { viewTag };
       pnpm_ViewDescriptorsSetTs2.__workletHash = 5508648561577;
-      pnpm_ViewDescriptorsSetTs2.__initData = closure_3;
+      pnpm_ViewDescriptorsSetTs2.__initData = outer1_3;
       mutable.modify(pnpm_ViewDescriptorsSetTs2, false);
     },
     has(arg0) {

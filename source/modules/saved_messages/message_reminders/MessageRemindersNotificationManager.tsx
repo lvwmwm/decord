@@ -1,9 +1,17 @@
-// Module ID: 16051
-// Function ID: 123228
+// Module ID: 16168
+// Function ID: 125401
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 9532, 9535, 686, 664, 5078, 2]
 
-// Module 16051 (_isNativeReflectConstruct)
+// Module 16168 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import apexExperiment from "apexExperiment";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import tmp2 from "AutomaticLifecycleManager";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -19,7 +27,7 @@ function scheduleNextNotification() {
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
     }
-    const messageReminders = messageReminders.getMessageReminders();
+    messageReminders = messageReminders.getMessageReminders();
     const found = messageReminders.find((saveData) => {
       let tmp = null != saveData.saveData.dueAt;
       if (tmp) {
@@ -29,7 +37,6 @@ function scheduleNextNotification() {
       }
       return tmp;
     });
-    const importDefault = found;
     let dueAt;
     if (null != found) {
       const saveData = found.saveData;
@@ -38,22 +45,22 @@ function scheduleNextNotification() {
       }
     }
     if (null != dueAt) {
-      const _Date = Date;
+      let _Date = Date;
       const timestamp = Date.now();
       dueAt = found.saveData.dueAt;
-      const sum = timestamp + importDefault(dependencyMap[8]).Millis.WEEK;
+      const sum = timestamp + found(664).Millis.WEEK;
       if (dueAt.getTime() <= sum) {
         const dueAt2 = found.saveData.dueAt;
         const _Date2 = Date;
         const time = dueAt2.getTime();
         const _setTimeout = setTimeout;
-        let timeout = setTimeout(() => {
-          let obj = found(closure_1[6]);
+        timeout = setTimeout(() => {
+          let obj = found(outer1_1[6]);
           if (obj.getConfig({ location: "MessageRemindersNotificationManager" }).enabled) {
             obj = { type: "MESSAGE_REMINDER_DUE", savedMessage: found };
-            found(closure_1[7]).dispatch(obj);
-            callback();
-            const obj2 = found(closure_1[7]);
+            found(outer1_1[7]).dispatch(obj);
+            outer1_10();
+            const obj2 = found(outer1_1[7]);
           }
         }, time - Date.now());
       }
@@ -62,54 +69,8 @@ function scheduleNextNotification() {
     }
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = null;
-let tmp2 = (arg0) => {
-  class MessageRemindersNotificationManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, MessageRemindersNotificationManager);
-      items1 = [...items];
-      obj = closure_5(MessageRemindersNotificationManager);
-      tmp2 = closure_4;
-      if (closure_9()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      MessageRemindersNotificationManager = tmp2Result;
-      tmp2Result.actions = {
-        SAVED_MESSAGES_UPDATE() {
-              return tmp2Result.handleUpdates();
-            },
-        SAVED_MESSAGE_CREATE() {
-              return tmp2Result.handleUpdates();
-            },
-        SAVED_MESSAGE_DELETE() {
-              return tmp2Result.handleUpdates();
-            }
-      };
-      tmp2Result.handleUpdates = () => {
-        callback();
-      };
-      return tmp2Result;
-    }
-  }
-  const importDefault = MessageRemindersNotificationManager;
-  callback2(MessageRemindersNotificationManager, arg0);
-  return callback(MessageRemindersNotificationManager);
-}(importDefault(dependencyMap[9]));
+let c8 = null;
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/saved_messages/message_reminders/MessageRemindersNotificationManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/saved_messages/message_reminders/MessageRemindersNotificationManager.tsx");
 
 export default tmp2;

@@ -1,18 +1,19 @@
-// Module ID: 15309
-// Function ID: 116445
+// Module ID: 15426
+// Function ID: 118619
 // Name: collectGuildThemeAnalyticsMetadata
-// Dependencies: []
+// Dependencies: [1838, 2]
 // Exports: collectGuildThemeAnalyticsMetadata
 
-// Module 15309 (collectGuildThemeAnalyticsMetadata)
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/guild_themes/GuildThemeAnalyticsUtils.tsx");
+// Module 15426 (collectGuildThemeAnalyticsMetadata)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const result = require("set").fileFinishedImporting("modules/guild_themes/GuildThemeAnalyticsUtils.tsx");
 
 export const collectGuildThemeAnalyticsMetadata = function collectGuildThemeAnalyticsMetadata(selectedGuildId) {
   if (null == selectedGuildId) {
     return null;
   } else {
-    const guild = guild.getGuild(selectedGuildId);
+    guild = guild.getGuild(selectedGuildId);
     if (null == guild) {
       return null;
     } else {
@@ -37,7 +38,7 @@ export const collectGuildThemeAnalyticsMetadata = function collectGuildThemeAnal
           return obj;
         }
       }
-      return { 0: true, 0: true };
+      return { guild_theme_enabled: false, guild_theme_is_custom: false };
     }
   }
 };

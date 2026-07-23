@@ -1,12 +1,14 @@
 // Module ID: 1209
-// Function ID: 13883
+// Function ID: 13884
 // Name: ComponentDispatcher
-// Dependencies: []
+// Dependencies: [6, 7, 631, 2]
 
 // Module 1209 (ComponentDispatcher)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class ComponentDispatcher {
     constructor() {
       obj = arg0;
@@ -14,11 +16,11 @@ const tmp2 = () => {
       if (arg0 === undefined) {
         obj = {};
       }
-      tmp = closure_2(self, ComponentDispatcher);
-      eventEmitter = new ComponentDispatcher(closure_1[2]).EventEmitter();
+      tmp = outer1_2(self, ComponentDispatcher);
+      eventEmitter = new ComponentDispatcher(outer1_1[2]).EventEmitter();
       self.emitter = eventEmitter;
       self._savedDispatches = {};
-      obj = { 389648952: "isArray", -625213786: "WireType" };
+      obj = { maxListeners: 100, enableDevtools: false };
       num = 100;
       merged = Object.assign(obj);
       self.options = obj;
@@ -31,7 +33,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = ComponentDispatcher;
   let obj = {
     key: "safeDispatch",
     value(arg0, arg1) {
@@ -53,7 +54,7 @@ const tmp2 = () => {
       }
     }
   };
-  const items = [obj, , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , ];
   obj = {
     key: "dispatch",
     value(arg0, arg1) {
@@ -109,11 +110,11 @@ const tmp2 = () => {
   items[4] = {
     key: "_checkSavedDispatches",
     value(arg0) {
-      const ComponentDispatcher = this;
-      const arr = this._savedDispatches[arg0];
-      if (null != arr) {
+      const self = this;
+      let closure_1 = arg0;
+      if (null != this._savedDispatches[arg0]) {
         const item = arr.forEach((arg0) => {
-          self.dispatch(arg0, arg0);
+          self.dispatch(closure_1, arg0);
         });
         tmp._savedDispatches[arg0] = undefined;
       }
@@ -200,7 +201,7 @@ const tmp2 = () => {
     }
   };
   return callback(ComponentDispatcher, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/shared/utils/ComponentDispatchUtils.tsx");
+})();
+let result = require("EventEmitter").fileFinishedImporting("../discord_common/js/shared/utils/ComponentDispatchUtils.tsx");
 
 export const ComponentDispatcher = tmp2;

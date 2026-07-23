@@ -1,14 +1,16 @@
-// Module ID: 4537
-// Function ID: 39809
+// Module ID: 4541
+// Function ID: 39841
 // Name: Stack
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 2]
 // Exports: Stack
 
-// Module 4537 (Stack)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_2 = arg1(dependencyMap[3]).createStyles((gap, arg1, alignItems, justifyContent) => {
+// Module 4541 (Stack)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2 = _createForOfIteratorHelperLoose.createStyles((gap, arg1, alignItems, justifyContent) => {
   let obj = {};
   obj = { width: "100%", gap, alignItems, justifyContent };
   let str = "column";
@@ -19,8 +21,7 @@ let closure_2 = arg1(dependencyMap[3]).createStyles((gap, arg1, alignItems, just
   obj.stack = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Stack/native/Stack.native.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Stack/native/Stack.native.tsx");
 
 export const Stack = function Stack(spacing) {
   let children;
@@ -52,5 +53,5 @@ export const Stack = function Stack(spacing) {
   obj.style = items;
   obj.onLayout = onLayout;
   obj.children = children;
-  return <View {...obj} />;
+  return <View />;
 };

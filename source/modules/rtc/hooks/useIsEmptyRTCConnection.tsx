@@ -1,15 +1,15 @@
-// Module ID: 8912
-// Function ID: 70318
+// Module ID: 8919
+// Function ID: 70359
 // Name: isEmpty
-// Dependencies: [57, 31, 27, 33, 4126]
+// Dependencies: [1194, 4202, 4216, 566, 2]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 8912 (isEmpty)
-import _slicedToArray from "_slicedToArray";
-import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 8919 (isEmpty)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function isEmpty(size) {
   let tmp = 0 === size.size;
   if (!tmp) {
@@ -21,31 +21,31 @@ function isEmpty(size) {
   }
   return tmp;
 }
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/rtc/hooks/useIsEmptyRTCConnection.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rtc/hooks/useIsEmptyRTCConnection.tsx");
 
 export const useIsStreamRTCConnectionEmpty = function useIsStreamRTCConnectionEmpty(stateFromStores4) {
-  const arg1 = stateFromStores4;
-  const items = [getActivityIndicator, _slicedToArray];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    if (null == arg0) {
+  const _require = stateFromStores4;
+  const items = [closure_4, _isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
+    if (null == closure_0) {
       return true;
     } else {
-      const userIds = userIds.getUserIds(arg0);
+      const userIds = outer1_4.getUserIds(closure_0);
       let tmp4 = null == userIds;
       if (!tmp4) {
-        tmp4 = callback(userIds, id.getId());
+        tmp4 = outer1_5(userIds, outer1_2.getId());
       }
       return tmp4;
     }
   });
 };
 export const useIsCallRTCConnectionEmpty = function useIsCallRTCConnectionEmpty() {
-  const items = [module_31, _slicedToArray];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const userIds = userIds.getUserIds();
+  const items = [closure_3, _isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const userIds = outer1_3.getUserIds();
     let tmp2 = null == userIds;
     if (!tmp2) {
-      tmp2 = callback(userIds, id.getId());
+      tmp2 = outer1_5(userIds, outer1_2.getId());
     }
     return tmp2;
   });

@@ -1,40 +1,40 @@
-// Module ID: 8239
-// Function ID: 65058
+// Module ID: 8245
+// Function ID: 65095
 // Name: _readFile
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [5, 3, 1247, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8239 (_readFile)
-import __exportStarResult1 from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
+// Module 8245 (_readFile)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import importDefaultResult from "set";
 
-async function _readFile(arg0, arg1, filePathForGif, arg3) {
-  if (null == callback(closure_1[2])) {
+async function _readFile(arg0, arg1, arg2, arg3) {
+  if (null == outer2_0(outer2_1[2])) {
     if (null == null) {
       return null;
     } else {
       if (yield obj4.fileExists(tmp7 + "/" + arg1)) {
-        return yield callback(closure_1[2]).readFile(null + "/" + arg1, filePathForGif);
+        return yield outer2_0(outer2_1[2]).readFile(null + "/" + arg1, arg2);
       } else {
         return null;
       }
-      const obj4 = callback(closure_1[2]);
+      obj4 = outer2_0(outer2_1[2]);
     }
   } else if ("cache" === arg0) {
-    let DocumentsDirPath = callback(closure_1[2]).getConstants().CacheDirPath;
-    const obj2 = callback(closure_1[2]);
+    let DocumentsDirPath = outer2_0(outer2_1[2]).getConstants().CacheDirPath;
+    const obj2 = outer2_0(outer2_1[2]);
   } else {
-    DocumentsDirPath = callback(closure_1[2]).getConstants().DocumentsDirPath;
-    const obj = callback(closure_1[2]);
+    DocumentsDirPath = outer2_0(outer2_1[2]).getConstants().DocumentsDirPath;
+    const obj = outer2_0(outer2_1[2]);
   }
 }
 importDefaultResult = new importDefaultResult("FileManagerUtils");
-const result = require("__exportStarResult1").fileFinishedImporting("utils/FileManagerUtils.android.tsx");
+const result = require("enforcing").fileFinishedImporting("utils/FileManagerUtils.android.tsx");
 
 export const writeFile = function writeFile(cache, combined1, arg2, utf8) {
   let nextPromise;
-  if (null != importDefault(dependencyMap[2])) {
-    const obj = importDefault(dependencyMap[2]);
+  if (null != importDefault(1247)) {
+    const obj = importDefault(1247);
     nextPromise = obj.writeFile(cache, combined1, arg2, utf8).then((arg0) => "file:" + arg0);
     const writeFileResult = obj.writeFile(cache, combined1, arg2, utf8);
   }
@@ -45,9 +45,9 @@ export const writeFile = function writeFile(cache, combined1, arg2, utf8) {
 };
 export const moveFile = function moveFile(arg0, arg1, filePathForGif) {
   let moveFileResult;
-  if (null != importDefault(dependencyMap[2])) {
-    moveFileResult = importDefault(dependencyMap[2]).moveFile(arg0, arg1, filePathForGif);
-    const obj = importDefault(dependencyMap[2]);
+  if (null != importDefault(1247)) {
+    moveFileResult = importDefault(1247).moveFile(arg0, arg1, filePathForGif);
+    const obj = importDefault(1247);
   }
   if (null == moveFileResult) {
     moveFileResult = Promise.reject(false);
@@ -56,9 +56,9 @@ export const moveFile = function moveFile(arg0, arg1, filePathForGif) {
 };
 export const removeFile = function removeFile(cache, filePathForGif) {
   let removeFileResult;
-  if (null != importDefault(dependencyMap[2])) {
-    removeFileResult = importDefault(dependencyMap[2]).removeFile(cache, filePathForGif);
-    const obj = importDefault(dependencyMap[2]);
+  if (null != importDefault(1247)) {
+    removeFileResult = importDefault(1247).removeFile(cache, filePathForGif);
+    const obj = importDefault(1247);
   }
   if (null == removeFileResult) {
     removeFileResult = Promise.reject(false);
@@ -67,9 +67,9 @@ export const removeFile = function removeFile(cache, filePathForGif) {
 };
 export const clearFolder = function clearFolder(cache, arg1) {
   let clearFolderResult;
-  if (null != importDefault(dependencyMap[2])) {
-    clearFolderResult = importDefault(dependencyMap[2]).clearFolder(cache, arg1);
-    const obj = importDefault(dependencyMap[2]);
+  if (null != importDefault(1247)) {
+    clearFolderResult = importDefault(1247).clearFolder(cache, arg1);
+    const obj = importDefault(1247);
   }
   if (null == clearFolderResult) {
     clearFolderResult = Promise.reject(false);

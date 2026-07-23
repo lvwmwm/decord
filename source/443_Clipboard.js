@@ -1,8 +1,8 @@
 // Module ID: 443
 // Function ID: 6015
 // Name: Clipboard
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 443 (Clipboard)
 
-export default importAll(dependencyMap[0]).getEnforcing("Clipboard");
+export default require("requireModule").getEnforcing("Clipboard");

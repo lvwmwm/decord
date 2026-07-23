@@ -1,102 +1,105 @@
-// Module ID: 14994
-// Function ID: 112914
+// Module ID: 15110
+// Function ID: 115082
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 33, 664, 1212, 10230, 5500, 5503, 5165, 2]
 // Exports: default
 
-// Module 14994 (items)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
+// Module 15110 (items)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
 let obj = {
-  duration: 30 * importDefault(dependencyMap[2]).Millis.MINUTE,
+  duration: 30 * require("set").Millis.MINUTE,
   label() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.RxJGbL);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.RxJGbL);
   }
 };
-const items = [obj, , , , , ];
+let items = [obj, , , , , ];
 obj = {
-  duration: importDefault(dependencyMap[2]).Millis.HOUR,
+  duration: require("set").Millis.HOUR,
   label() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.UMWBZr);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.UMWBZr);
   }
 };
 items[1] = obj;
 obj = {
-  duration: 3 * importDefault(dependencyMap[2]).Millis.HOUR,
+  duration: 3 * require("set").Millis.HOUR,
   label() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.QmYWtu);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.QmYWtu);
   }
 };
 items[2] = obj;
-const tmp3 = arg1(dependencyMap[1]);
 items[3] = {
-  duration: 8 * importDefault(dependencyMap[2]).Millis.HOUR,
+  duration: 8 * require("set").Millis.HOUR,
   label() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.EpAXPC);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.EpAXPC);
   }
 };
-const obj1 = {
-  duration: 8 * importDefault(dependencyMap[2]).Millis.HOUR,
+let obj1 = {
+  duration: 8 * require("set").Millis.HOUR,
   label() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.EpAXPC);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.EpAXPC);
   }
 };
 items[4] = {
-  duration: importDefault(dependencyMap[2]).Millis.DAY,
+  duration: require("set").Millis.DAY,
   label() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.755t4q);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["755t4q"]);
   }
 };
 items[5] = {
   duration: undefined,
   label() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.46dqJY);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["46dqJY"]);
   }
 };
 const obj2 = {
-  duration: importDefault(dependencyMap[2]).Millis.DAY,
+  duration: require("set").Millis.DAY,
   label() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.755t4q);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["755t4q"]);
   }
 };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx");
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx");
 
 export default function FocusModeOptionsActionSheet(onSelect) {
-  const arg1 = onSelect.onSelect;
-  let obj = arg1(dependencyMap[4]);
+  onSelect = onSelect.onSelect;
+  let obj = onSelect(10230);
   const focusModeEnabled = obj.useFocusModeEnabled();
   obj = {};
   obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.title = intl.string(arg1(dependencyMap[3]).t.sNX1E+);
+  const intl = onSelect(1212).intl;
+  obj.title = intl.string(onSelect(1212).t["sNX1E+"]);
   obj.hasIcons = false;
   let tmp4 = null;
   if (focusModeEnabled) {
     const obj1 = {};
-    const intl2 = arg1(dependencyMap[3]).intl;
-    obj1.accessibilityLabel = intl2.string(arg1(dependencyMap[3]).t.rk35Gm);
-    const intl3 = arg1(dependencyMap[3]).intl;
-    obj1.accessibilityHint = intl3.string(arg1(dependencyMap[3]).t.rk35Gm);
+    const intl2 = onSelect(1212).intl;
+    obj1.accessibilityLabel = intl2.string(onSelect(1212).t.rk35Gm);
+    const intl3 = onSelect(1212).intl;
+    obj1.accessibilityHint = intl3.string(onSelect(1212).t.rk35Gm);
     obj1.onPress = function onPress() {
       onSelect(false, undefined);
     };
     obj1.trailing = null;
-    const intl4 = arg1(dependencyMap[3]).intl;
-    obj1.label = intl4.string(arg1(dependencyMap[3]).t.rk35Gm);
-    tmp4 = callback(arg1(dependencyMap[7]).TableRow, obj1);
+    const intl4 = onSelect(1212).intl;
+    obj1.label = intl4.string(onSelect(1212).t.rk35Gm);
+    tmp4 = callback(onSelect(5165).TableRow, obj1);
   }
   const items = [tmp4, ];
   items[1] = items.map((duration) => {
     duration = duration.duration;
-    const onSelect = duration;
     const label = duration.label;
     const obj = {
       accessibilityLabel: label(),
@@ -107,9 +110,9 @@ export default function FocusModeOptionsActionSheet(onSelect) {
       trailing: null,
       label: label()
     };
-    return callback(onSelect(closure_1[7]).TableRow, obj, "" + duration);
+    return outer1_2(onSelect(outer1_1[7]).TableRow, obj, "" + duration);
   });
   obj.children = items;
-  obj.children = closure_3(arg1(dependencyMap[6]).TableRowGroup, obj);
-  return callback(arg1(dependencyMap[5]).ActionSheet, obj);
+  obj.children = closure_3(onSelect(5503).TableRowGroup, obj);
+  return callback(onSelect(5500).ActionSheet, obj);
 };

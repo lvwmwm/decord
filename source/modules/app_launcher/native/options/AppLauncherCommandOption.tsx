@@ -1,45 +1,50 @@
-// Module ID: 11276
-// Function ID: 87765
+// Module ID: 11286
+// Function ID: 87815
 // Name: AppLauncherCommandOption
-// Dependencies: []
+// Dependencies: [31, 27, 1455, 33, 4130, 689, 1881, 11287, 11293, 11295, 11298, 11300, 11301, 11303, 5044, 11306, 11307, 11310, 4660, 5776, 2]
 // Exports: default
 
-// Module 11276 (AppLauncherCommandOption)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = arg1(dependencyMap[2]).AppLauncherOptionAutoFocusType;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { dismissableOptionWrapper: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, optionViewContainer: { flex: 1 } };
-obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, borderRadius: importDefault(dependencyMap[5]).radii.round };
-obj.dismissButton = obj;
-obj.option = { flex: 1 };
-let closure_7 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOption.tsx");
+// Module 11286 (AppLauncherCommandOption)
+import "result";
+import { View } from "get ActivityIndicator";
+import { AppLauncherOptionAutoFocusType as closure_4 } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { dismissableOptionWrapper: { flexDirection: "row", alignItems: "center" }, optionViewContainer: { flex: 1 } };
+_createForOfIteratorHelperLoose = { marginLeft: 8, marginRight: -4, padding: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
+_createForOfIteratorHelperLoose.dismissButton = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.option = { flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOption.tsx");
 
 export default function AppLauncherCommandOption(option) {
+  let View;
   let autoFocusType;
   let channel;
   let command;
+  let dependencyMap;
   let hasError;
+  let importDefault;
   let onFocus;
   let onPress;
   let onPressAttachmentOption;
   let optionValues;
   option = option.option;
-  const arg1 = option;
-  ({ onStartEditing: closure_1, onEndEditing: closure_2, onOptionValueChange: closure_3, onPress } = option);
-  const constants = onPress;
+  ({ onStartEditing: importDefault, onEndEditing: dependencyMap, onOptionValueChange: View, onPress } = option);
   const onDismiss = option.onDismiss;
   ({ channel, autoFocusType, optionValues, hasError } = option);
   ({ onPressAttachmentOption, onFocus, command } = option);
-  const tmp = callback2();
-  const type = option.type;
-  if (arg1(dependencyMap[6]).ApplicationCommandOptionType.STRING !== type) {
-    if (arg1(dependencyMap[6]).ApplicationCommandOptionType.INTEGER !== type) {
-      if (arg1(dependencyMap[6]).ApplicationCommandOptionType.NUMBER !== type) {
-        if (arg1(dependencyMap[6]).ApplicationCommandOptionType.ATTACHMENT === type) {
+  const tmp = _createForOfIteratorHelperLoose();
+  let type = option.type;
+  if (option(1881).ApplicationCommandOptionType.STRING !== type) {
+    if (option(1881).ApplicationCommandOptionType.INTEGER !== type) {
+      if (option(1881).ApplicationCommandOptionType.NUMBER !== type) {
+        if (option(1881).ApplicationCommandOptionType.ATTACHMENT === type) {
           let obj = {
             style: tmp.option,
             option,
@@ -55,12 +60,12 @@ export default function AppLauncherCommandOption(option) {
                       closure_3(option, items1);
                     },
             channel,
-            autoFocus: autoFocusType === constants.OPTIONAL_OPTION_ADDED,
+            autoFocus: autoFocusType === onPress.OPTIONAL_OPTION_ADDED,
             hasError,
             onPress: onPressAttachmentOption
           };
-          let tmp28Result = onDismiss(importDefault(dependencyMap[10]), obj, option.name);
-        } else if (arg1(dependencyMap[6]).ApplicationCommandOptionType.BOOLEAN === type) {
+          let tmp28Result = onDismiss(importDefault(11298), obj, option.name);
+        } else if (option(1881).ApplicationCommandOptionType.BOOLEAN === type) {
           obj = { style: tmp.option, option };
           let first;
           if (null != optionValues.current[option.name]) {
@@ -74,10 +79,10 @@ export default function AppLauncherCommandOption(option) {
             callback3(option, items);
           };
           obj.hasError = hasError;
-          tmp28Result = onDismiss(importDefault(dependencyMap[11]), obj, option.name);
+          tmp28Result = onDismiss(importDefault(11300), obj, option.name);
           const tmp36 = onDismiss;
-          const tmp39 = importDefault(dependencyMap[11]);
-        } else if (arg1(dependencyMap[6]).ApplicationCommandOptionType.MENTIONABLE === type) {
+          const tmp39 = importDefault(11300);
+        } else if (option(1881).ApplicationCommandOptionType.MENTIONABLE === type) {
           const obj1 = { option };
           let first1;
           if (null != optionValues.current[option.name]) {
@@ -88,25 +93,25 @@ export default function AppLauncherCommandOption(option) {
             mentionable = mentionable.mentionable;
             if (null != mentionable) {
               const type = mentionable.type;
-              if (option(closure_2[13]).MentionableItemTypes.USER === type) {
+              if (option(outer1_2[13]).MentionableItemTypes.USER === type) {
                 let obj = { type: "userMention", userId: mentionable.result.user.id };
                 const items = [obj];
                 callback3(option, items);
-              } else if (option(closure_2[13]).MentionableItemTypes.ROLE === type) {
+              } else if (option(outer1_2[13]).MentionableItemTypes.ROLE === type) {
                 obj = { type: "roleMention", roleId: mentionable.result.id };
                 const items1 = [obj];
                 callback3(option, items1);
-              } else if (option(closure_2[13]).MentionableItemTypes.GLOBAL === type) {
+              } else if (option(outer1_2[13]).MentionableItemTypes.GLOBAL === type) {
                 const result = mentionable.result;
                 if (result.text === obj4.MENTION_EVERYONE().text) {
-                  const items2 = [{}];
+                  const items2 = [{ type: "textMention", text: "@everyone" }];
                   callback3(option, items2);
                 } else {
                   obj = { type: "text", text: result.text };
                   const items3 = [obj];
                   callback3(option, items3);
                 }
-                const obj4 = callback(closure_2[14]);
+                obj4 = outer1_1(outer1_2[14]);
               }
             } else {
               callback3(option, []);
@@ -116,13 +121,13 @@ export default function AppLauncherCommandOption(option) {
             return callback2(option);
           };
           obj1.channel = channel;
-          obj1.autoFocus = autoFocusType === constants.OPTIONAL_OPTION_ADDED;
+          obj1.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
           obj1.hasError = hasError;
           obj1.onPress = onPress;
-          tmp28Result = onDismiss(importDefault(dependencyMap[12]), obj1);
+          tmp28Result = onDismiss(importDefault(11301), obj1);
           const tmp28 = onDismiss;
-          const tmp31 = importDefault(dependencyMap[12]);
-        } else if (arg1(dependencyMap[6]).ApplicationCommandOptionType.ROLE === type) {
+          const tmp31 = importDefault(11301);
+        } else if (option(1881).ApplicationCommandOptionType.ROLE === type) {
           const obj2 = { style: tmp.option, option };
           let first2;
           if (null != optionValues.current[option.name]) {
@@ -143,13 +148,13 @@ export default function AppLauncherCommandOption(option) {
             callback2(option);
           };
           obj2.channel = channel;
-          obj2.autoFocus = autoFocusType === constants.OPTIONAL_OPTION_ADDED;
+          obj2.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
           obj2.hasError = hasError;
           obj2.onPress = onPress;
-          tmp28Result = onDismiss(importDefault(dependencyMap[15]), obj2, option.name);
+          tmp28Result = onDismiss(importDefault(11306), obj2, option.name);
           const tmp20 = onDismiss;
-          const tmp23 = importDefault(dependencyMap[15]);
-        } else if (arg1(dependencyMap[6]).ApplicationCommandOptionType.USER === type) {
+          const tmp23 = importDefault(11306);
+        } else if (option(1881).ApplicationCommandOptionType.USER === type) {
           const obj3 = { style: tmp.option, option };
           let first3;
           if (null != optionValues.current[option.name]) {
@@ -175,13 +180,13 @@ export default function AppLauncherCommandOption(option) {
             return callback2(option);
           };
           obj3.channel = channel;
-          obj3.autoFocus = autoFocusType === constants.OPTIONAL_OPTION_ADDED;
+          obj3.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
           obj3.hasError = hasError;
           obj3.onPress = onPress;
-          tmp28Result = onDismiss(importDefault(dependencyMap[16]), obj3, option.name);
+          tmp28Result = onDismiss(importDefault(11307), obj3, option.name);
           const tmp12 = onDismiss;
-          const tmp15 = importDefault(dependencyMap[16]);
-        } else if (arg1(dependencyMap[6]).ApplicationCommandOptionType.CHANNEL === type) {
+          const tmp15 = importDefault(11307);
+        } else if (option(1881).ApplicationCommandOptionType.CHANNEL === type) {
           obj = { style: tmp.option, option };
           let first4;
           if (null != optionValues.current[option.name]) {
@@ -203,21 +208,21 @@ export default function AppLauncherCommandOption(option) {
             callback2(option);
           };
           obj.channel = channel;
-          obj.autoFocus = autoFocusType === constants.OPTIONAL_OPTION_ADDED;
+          obj.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
           obj.hasError = hasError;
           obj.onPress = onPress;
-          tmp28Result = onDismiss(importDefault(dependencyMap[17]), obj, option.name);
+          tmp28Result = onDismiss(importDefault(11310), obj, option.name);
           const tmp3 = onDismiss;
-          const tmp6 = importDefault(dependencyMap[17]);
+          const tmp6 = importDefault(11310);
         } else {
           return null;
         }
       }
       let tmp63 = tmp28Result;
       if (null != onDismiss) {
-        const obj4 = { style: tmp.dismissableOptionWrapper };
+        let obj4 = { style: tmp.dismissableOptionWrapper };
         const obj5 = { style: tmp.optionViewContainer, children: tmp28Result };
-        const items = [onDismiss(View, obj5), ];
+        let items = [onDismiss(View, obj5), ];
         const obj6 = {
           style: tmp.dismissButton,
           onPress() {
@@ -225,8 +230,8 @@ export default function AppLauncherCommandOption(option) {
                 }
         };
         const obj7 = { size: "md" };
-        obj6.children = onDismiss(arg1(dependencyMap[19]).CircleXIcon, obj7);
-        items[1] = onDismiss(arg1(dependencyMap[18]).PressableOpacity, obj6);
+        obj6.children = onDismiss(option(5776).CircleXIcon, obj7);
+        items[1] = onDismiss(option(4660).PressableOpacity, obj6);
         obj4.children = items;
         tmp63 = callback(View, obj4);
       }
@@ -255,27 +260,27 @@ export default function AppLauncherCommandOption(option) {
       const items = [obj];
       closure_3(option, items);
     };
-    obj8.onOpenChoicesSheet = function onOpenChoicesSheet() {
+    obj8.onOpenChoicesSheet = function onOpenChoicesSheet(onDismissChoicesSheet, arg1) {
       onPress();
       callback(option);
     };
     obj8.onDismissChoicesSheet = function onDismissChoicesSheet() {
       return callback2(option);
     };
-    obj8.autoFocus = autoFocusType === constants.OPTIONAL_OPTION_ADDED;
+    obj8.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
     obj8.hasError = hasError;
-    tmp28Result = onDismiss(importDefault(dependencyMap[7]), obj8, option.name);
+    tmp28Result = onDismiss(importDefault(11287), obj8, option.name);
     const tmp55 = onDismiss;
-    const tmp58 = importDefault(dependencyMap[7]);
+    const tmp58 = importDefault(11287);
   } else if (option.autocomplete) {
     const obj9 = { style: tmp.option, channel, option, activeCommand: command, optionValues };
     let first6;
-    let tmp81Result = tmp81(tmp82[8]);
+    let tmp81Result = tmp81(11293);
     if (null != optionValues.current[option.name]) {
       first6 = tmp52[0];
     }
     obj9.initialValue = first6;
-    obj9.autoFocus = autoFocusType === constants.OPTIONAL_OPTION_ADDED;
+    obj9.autoFocus = autoFocusType === onPress.OPTIONAL_OPTION_ADDED;
     obj9.onSelect = function onSelect(displayName) {
       callback2(option);
       const obj = { type: "text" };
@@ -303,7 +308,7 @@ export default function AppLauncherCommandOption(option) {
   } else {
     const obj10 = { style: tmp.option, option, guildId: channel.guild_id };
     let first7;
-    tmp81Result = tmp81(tmp82[9]);
+    tmp81Result = tmp81(11295);
     if (null != optionValues.current[option.name]) {
       first7 = tmp48[0];
     }
@@ -317,8 +322,8 @@ export default function AppLauncherCommandOption(option) {
       callback3(option, items);
     };
     obj10.onFocus = onFocus;
-    const items1 = [, ];
-    ({ FIRST_REQUIRED_OPTION: arr[0], OPTIONAL_OPTION_ADDED: arr[1] } = constants);
+    let items1 = [, ];
+    ({ FIRST_REQUIRED_OPTION: arr[0], OPTIONAL_OPTION_ADDED: arr[1] } = onPress);
     obj10.autoFocus = items1.includes(autoFocusType);
     obj10.hasError = hasError;
     obj10.onPressIn = onPress;

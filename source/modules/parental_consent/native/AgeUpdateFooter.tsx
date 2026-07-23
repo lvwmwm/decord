@@ -1,26 +1,34 @@
-// Module ID: 16457
-// Function ID: 127116
+// Module ID: 16574
+// Function ID: 129290
 // Name: AgeUpdateFooter
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 4126, 1212, 2460, 7536, 7538, 2]
 // Exports: default
 
-// Module 16457 (AgeUpdateFooter)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_4 = arg1(dependencyMap[2]).createStyles({ text: { textAlign: "center" } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/parental_consent/native/AgeUpdateFooter.tsx");
+// Module 16574 (AgeUpdateFooter)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ text: { textAlign: "center" } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/parental_consent/native/AgeUpdateFooter.tsx");
 
 export default function AgeUpdateFooter() {
-  let obj = { cachedAt: "FrameEffect_02-4_Out", edpbxy: 0, style: callback().text };
-  const intl = arg1(dependencyMap[4]).intl;
+  let obj = { variant: "text-md/medium", color: "text-muted", style: callback().text };
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = {
     handleAgeVerifyHook() {
-      let obj = callback2(closure_2[6]);
-      obj = { entryPoint: callback(closure_2[7]).AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT };
+      let obj = outer1_1(outer1_2[6]);
+      obj = { entryPoint: outer1_0(outer1_2[7]).AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT };
       return obj.showAgeVerificationGetStartedModal(obj);
     }
   };
-  obj.children = intl.format(importDefault(dependencyMap[5]).ifObbX, obj);
-  return jsx(arg1(dependencyMap[3]).Text, obj);
+  obj.children = intl.format(importDefault(2460).ifObbX, obj);
+  return jsx(require(4126) /* Text */.Text, {
+    handleAgeVerifyHook() {
+      let obj = outer1_1(outer1_2[6]);
+      obj = { entryPoint: outer1_0(outer1_2[7]).AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT };
+      return obj.showAgeVerificationGetStartedModal(obj);
+    }
+  });
 };

@@ -1,13 +1,13 @@
-// Module ID: 6157
-// Function ID: 50168
+// Module ID: 6162
+// Function ID: 50197
 // Name: GemIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 6163, 2]
 // Exports: GemIllocon
 
-// Module 6157 (GemIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GemIllocon.native.tsx");
+// Module 6162 (GemIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemIllocon.native.tsx");
 
 export const GemIllocon = function GemIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const GemIllocon = function GemIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6163) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const GemIllocon = function GemIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

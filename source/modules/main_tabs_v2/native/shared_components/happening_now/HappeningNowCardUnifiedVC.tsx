@@ -1,28 +1,35 @@
-// Module ID: 14819
-// Function ID: 111704
+// Module ID: 14935
+// Function ID: 113872
 // Name: useCallActivityData
-// Dependencies: []
+// Dependencies: [31, 1347, 4149, 3767, 33, 14936, 14948, 14949, 624, 14926, 2]
 // Exports: default
 
-// Module 14819 (useCallActivityData)
+// Module 14935 (useCallActivityData)
+import "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function useCallActivityData(channelId) {
-  const arg1 = channelId;
-  const items = [closure_3, closure_4, closure_5];
+  const _require = channelId;
+  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct, closure_5];
   const items1 = [channelId];
-  return arg1(dependencyMap[8]).useStateFromStoresObject(items, () => {
-    if (null == arg0) {
+  return _require(624).useStateFromStoresObject(items, () => {
+    if (null == closure_0) {
       return {};
     } else {
-      const allApplicationStreamsForChannel = allApplicationStreamsForChannel.getAllApplicationStreamsForChannel(arg0);
+      const allApplicationStreamsForChannel = outer1_4.getAllApplicationStreamsForChannel(closure_0);
       if (allApplicationStreamsForChannel.length > 0) {
-        const found = allApplicationStreamsForChannel.find((ownerId) => friend.isFriend(ownerId.ownerId));
+        const found = allApplicationStreamsForChannel.find((ownerId) => outer2_5.isFriend(ownerId.ownerId));
         if (null != found) {
           let obj = { stream: found };
           return obj;
         }
       }
-      const embeddedActivitiesForChannel = embeddedActivitiesForChannel.getEmbeddedActivitiesForChannel(arg0);
-      const tmp7 = callback(closure_2[9])(embeddedActivitiesForChannel);
+      const embeddedActivitiesForChannel = outer1_3.getEmbeddedActivitiesForChannel(closure_0);
+      const tmp7 = outer1_1(outer1_2[9])(embeddedActivitiesForChannel);
       if (null != tmp7) {
         obj = { activity: tmp7 };
       } else if (tmp10) {
@@ -35,12 +42,7 @@ function useCallActivityData(channelId) {
     }
   }, items1);
 }
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardUnifiedVC.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardUnifiedVC.tsx");
 
 export default function HappeningNowCardUnifiedVC(arg0) {
   let activity;
@@ -60,13 +62,13 @@ export default function HappeningNowCardUnifiedVC(arg0) {
   ({ stream, activity } = useCallActivityData(voiceState.channelId));
   if (null != stream) {
     let obj = { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant };
-    let tmp5 = jsx(importDefault(dependencyMap[5]), obj);
+    let tmp5 = jsx(importDefault(14936), { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant });
   } else if (null != activity) {
     obj = { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant };
-    tmp5 = jsx(importDefault(dependencyMap[6]), obj);
+    tmp5 = jsx(importDefault(14948), { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant });
   } else {
     obj = { index, voiceState, fullwidth, guildId, panelVariant };
-    tmp5 = jsx(importDefault(dependencyMap[7]), obj);
+    tmp5 = jsx(importDefault(14949), { index, voiceState, fullwidth, guildId, panelVariant });
   }
   return tmp5;
 };

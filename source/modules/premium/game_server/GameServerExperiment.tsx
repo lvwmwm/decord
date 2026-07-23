@@ -1,16 +1,18 @@
-// Module ID: 4039
-// Function ID: 33639
-// Name: experiment
-// Dependencies: []
+// Module ID: 4041
+// Function ID: 33648
+// Name: items
+// Dependencies: [4042, 2]
 // Exports: getGameServerEnabled, useGameServerEnabled
 
-// Module 4039 (experiment)
-const _module = require(dependencyMap[0]);
-const obj = { displayNameStylesEnabled: false, submitButtonEnabled: false, config: { enabled: true } };
+// Module 4041 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2025-08_portkey_enabled", label: "GameServer Enabled", defaultConfig: { enabled: false } };
+obj = { id: 1, label: "Enable GameServer", config: { enabled: true } };
 const items = [obj];
-const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, treatments: items });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/premium/game_server/GameServerExperiment.tsx");
+obj.treatments = items;
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/premium/game_server/GameServerExperiment.tsx");
 
 export const GameServerExperiment = experiment;
 export const getGameServerEnabled = function getGameServerEnabled(guildId, GuildPowerupsBoostCount) {

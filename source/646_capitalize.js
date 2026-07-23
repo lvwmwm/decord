@@ -4,7 +4,12 @@
 // Dependencies: []
 
 // Module 646 (capitalize)
-const fn = function() {
+const global = arg0;
+let dependencyMap = arg4;
+const exports = arg5;
+let fn = function() {
+  let closure_4;
+  let closure_5;
   function capitalize(arg0) {
     const str = String(arg0);
     const formatted = str.charAt(0).toUpperCase();
@@ -21,12 +26,12 @@ const fn = function() {
   function forOwn(parsed, arg1) {
     for (const key10005 in arg0) {
       let tmp2 = key10005;
-      let tmp3 = closure_4;
-      if (!closure_4.call(arg0, key10005)) {
+      let tmp3 = callback;
+      if (!callback.call(arg0, key10005)) {
         continue;
       } else {
         let tmp = arg1(arg0[key10005], key10005, arg0);
-        // continue
+        continue;
       }
       continue;
     }
@@ -44,9 +49,11 @@ const fn = function() {
     return String(arg0).replace(/([ -])(?!$)/g, "$1?");
   }
   function reduce(arg0, arg1) {
-    let closure_2 = null;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c2 = null;
     const fn = (arg0, arg1, arg2) => {
-      closure_2 = arg1(closure_2, arg0, arg1, arg0);
+      closure_2 = callback(closure_2, arg0, arg1, closure_0);
     };
     let num = 0;
     if (arg0) {
@@ -54,12 +61,12 @@ const fn = function() {
     }
     if ("number" === typeof num) {
       if (num > -1) {
-        if (num <= closure_2) {
+        if (num <= c2) {
           for (let num3 = 0; num3 < num; num3 = num3 + 1) {
             let fnResult = fn(arg0[num3], num3, arg0);
           }
         }
-        return closure_2;
+        return c2;
       }
     }
     forOwn(arg0, fn);
@@ -67,7 +74,7 @@ const fn = function() {
   function trim(arg0) {
     return String(arg0).replace(/^ +| +$/g, "");
   }
-  const obj = { "Bool(false)": null, "Bool(false)": null };
+  let obj = { function: true, object: true };
   let self = obj[typeof window];
   if (self) {
     self = window;
@@ -75,24 +82,23 @@ const fn = function() {
   if (!self) {
     self = this;
   }
-  let arg0 = self;
-  const arg4 = tmp;
-  let tmp2 = obj[typeof closure_1] && arg4;
+  const dependencyMap = tmp;
+  let tmp2 = obj[typeof dependencyMap] && dependencyMap;
   if (tmp2) {
-    tmp2 = !arg4.nodeType;
+    tmp2 = !dependencyMap.nodeType;
   }
   if (tmp2) {
-    tmp2 = arg4;
+    tmp2 = dependencyMap;
   }
   let tmp4 = tmp;
   if (obj[typeof closure_2] && closure_2) {
     tmp4 = tmp2;
   }
   if (tmp4) {
-    tmp4 = "object" === typeof arg0;
+    tmp4 = "object" === typeof self;
   }
   if (tmp4) {
-    tmp4 = arg0;
+    tmp4 = self;
   }
   let tmp6 = !tmp4;
   if (!tmp6) {
@@ -100,41 +106,40 @@ const fn = function() {
     const tmp7 = tmp4.global !== tmp4 && tmp4.window !== tmp4 && tmp4.self !== tmp4;
   }
   if (!tmp6) {
-    arg0 = tmp4;
+    self = tmp4;
     self = tmp4;
   }
   closure_2 = Math.pow(2, 53) - 1;
-  let closure_3 = /\bOpera/;
+  const re3 = /\bOpera/;
   ({ hasOwnProperty: closure_4, toString: closure_5 } = Object.prototype);
   function parse(arg0) {
     let manufacturer;
     let product;
-    let tmp;
-    let closure_0 = arg0;
+    let c0 = arg0;
     function getProduct(items3) {
-      return callback(items3, (arg0, pattern) => {
+      return outer1_12(items3, (arg0, pattern) => {
         let tmp = arg0;
         pattern = pattern.pattern;
         if (!pattern) {
-          pattern = callback2(pattern);
+          pattern = outer2_11(pattern);
         }
         let tmp3 = !tmp;
         if (tmp3) {
           const _RegExp = RegExp;
-          let match = RegExp(`\b${pattern} *\d+[.\w_]*`, "i").exec(closure_0);
+          let match = RegExp(`\\b${pattern} *\\d+[.\\w_]*`, "i").exec(outer1_0);
           if (!match) {
             const _RegExp2 = RegExp;
-            match = RegExp(`\b${pattern} *\w+-[\w]*`, "i").exec(closure_0);
-            const RegExpResult1 = RegExp(`\b${pattern} *\w+-[\w]*`, "i");
+            match = RegExp(`\\b${pattern} *\\w+-[\\w]*`, "i").exec(outer1_0);
+            const RegExpResult1 = RegExp(`\\b${pattern} *\\w+-[\\w]*`, "i");
           }
           if (!match) {
             const _RegExp3 = RegExp;
-            match = RegExp(`\b${pattern}(?:; *(?:[a-z]+[_-])?[a-z]+\d+|[^ ();-]*)`, "i").exec(closure_0);
-            const RegExpResult2 = RegExp(`\b${pattern}(?:; *(?:[a-z]+[_-])?[a-z]+\d+|[^ ();-]*)`, "i");
+            match = RegExp(`\\b${pattern}(?:; *(?:[a-z]+[_-])?[a-z]+\\d+|[^ ();-]*)`, "i").exec(outer1_0);
+            const RegExpResult2 = RegExp(`\\b${pattern}(?:; *(?:[a-z]+[_-])?[a-z]+\\d+|[^ ();-]*)`, "i");
           }
           tmp3 = match;
           tmp = match;
-          const RegExpResult = RegExp(`\b${pattern} *\d+[.\w_]*`, "i");
+          const RegExpResult = RegExp(`\\b${pattern} *\\d+[.\\w_]*`, "i");
         }
         let tmp9 = tmp;
         if (tmp3) {
@@ -145,7 +150,7 @@ const fn = function() {
             if (!RegExpResult3.test(pattern.label)) {
               label = pattern.label;
             }
-            const RegExpResult3 = RegExp(pattern, "i");
+            RegExpResult3 = RegExp(pattern, "i");
           }
           const parts = String(label).split("/");
           let tmp12 = parts[1];
@@ -162,20 +167,20 @@ const fn = function() {
           const _RegExp6 = RegExp;
           const str12 = parts[0].replace(RegExp(pattern, "i"), pattern.label || pattern);
           const _RegExp7 = RegExp;
-          tmp9 = callback(parts[0].replace(RegExp(pattern, "i"), pattern.label || pattern).replace(RegExp(`; *(?:${pattern.label || pattern}[_-])?`, "i"), " ").replace(RegExp(`(${tmp13})[-_.]?(\w)`, "i"), "$1 $2"));
+          tmp9 = outer2_8(parts[0].replace(RegExp(pattern, "i"), pattern.label || pattern).replace(RegExp(`; *(?:${pattern.label || pattern}[_-])?`, "i"), " ").replace(RegExp(`(${tmp13})[-_.]?(\\w)`, "i"), "$1 $2"));
           const str16 = parts[0].replace(RegExp(pattern, "i"), pattern.label || pattern).replace(RegExp(`; *(?:${pattern.label || pattern}[_-])?`, "i"), " ");
         }
         return tmp9;
       });
     }
     function getVersion(Chrome) {
-      return callback(Chrome, (arg0, arg1) => {
+      return outer1_12(Chrome, (arg0, arg1) => {
         let tmp = arg0;
         if (!arg0) {
           const _RegExp = RegExp;
-          const RegExpResult = RegExp(`${arg1}(?:-[\d.]+/|(?: for [\w-]+)?[ /-])([\d.]+[^ ();/_-]*)`, "i");
-          tmp = RegExp(`${arg1}(?:-[\d.]+/|(?: for [\w-]+)?[ /-])([\d.]+[^ ();/_-]*)`, "i").exec(closure_0) || 0[1];
-          const tmp5 = RegExp(`${arg1}(?:-[\d.]+/|(?: for [\w-]+)?[ /-])([\d.]+[^ ();/_-]*)`, "i").exec(closure_0) || 0;
+          const RegExpResult = RegExp(`${arg1}(?:-[\\d.]+/|(?: for [\\w-]+)?[ /-])([\\d.]+[^ ();/_-]*)`, "i");
+          tmp = RegExp(`${arg1}(?:-[\\d.]+/|(?: for [\\w-]+)?[ /-])([\\d.]+[^ ();/_-]*)`, "i").exec(outer1_0) || 0[1];
+          const tmp5 = RegExp(`${arg1}(?:-[\\d.]+/|(?: for [\\w-]+)?[ /-])([\\d.]+[^ ();/_-]*)`, "i").exec(outer1_0) || 0;
         }
         if (!tmp) {
           tmp = null;
@@ -183,7 +188,7 @@ const fn = function() {
         return tmp;
       });
     }
-    let obj = closure_0;
+    let obj = c0;
     let tmp2 = arg0;
     if (arg0) {
       let str = "object";
@@ -195,12 +200,12 @@ const fn = function() {
     let tmp4 = arg0;
     if (tmp2) {
       obj = arg0;
-      closure_0 = null;
+      c0 = null;
       tmp4 = null;
     }
-    const tmp6 = obj.navigator || {};
+    let tmp6 = obj.navigator || {};
     if (!tmp4) {
-      closure_0 = tmp7;
+      c0 = tmp7;
       tmp4 = tmp7;
     }
     if (tmp2) {
@@ -254,7 +259,7 @@ const fn = function() {
     }
     if (tmp2) {
       if (opera) {
-        [[Class]] = opera.[[Class]];
+        __Class__ = opera["[[Class]]"];
       }
       let tmp23 = null;
       let tmp24 = null;
@@ -275,92 +280,92 @@ const fn = function() {
         versionResult = tmp23.version();
       }
       let version = versionResult;
-      const items1 = [{}, "Trident", {}, "iCab", , , , , ];
+      const items1 = [{ label: "EdgeHTML", pattern: "Edge" }, "Trident", { label: "WebKit", pattern: "AppleWebKit" }, "iCab", , , , , ];
       let str13 = "Presto";
       items1[4] = "Presto";
       items1[5] = "NetFront";
       items1[6] = "Tasman";
       items1[7] = "KHTML";
       items1[8] = "Gecko";
-      const tmp28 = function getLayout(items1) {
-        return callback(items1, (arg0, pattern) => {
+      const tmp28 = (function getLayout(items1) {
+        return outer1_12(items1, (arg0, pattern) => {
           let tmp = arg0;
           if (!arg0) {
             pattern = pattern.pattern;
             if (!pattern) {
-              pattern = callback(pattern);
+              pattern = outer2_11(pattern);
             }
-            let match = RegExp(`\b${pattern}\b`, "i").exec(closure_0);
+            let match = RegExp(`\\b${pattern}\\b`, "i").exec(outer1_0);
             if (match) {
               match = pattern.label || pattern;
               const tmp6 = pattern.label || pattern;
             }
             tmp = match;
-            const RegExpResult = RegExp(`\b${pattern}\b`, "i");
+            const RegExpResult = RegExp(`\\b${pattern}\\b`, "i");
           }
           return tmp;
         });
-      }(items1);
-      const items2 = [, , , , , , , , , , , , , , , , , {}, "Midori", "Nook Browser", "PaleMoon", "PhantomJS", "Raven", "Rekonq", "RockMelt", {}, "SeaMonkey", {}, "Sleipnir", "SlimBrowser", {}, "Sunrise", "Swiftfox", "Vivaldi", "Waterfox", "WebPositive", {}, {}, "Opera Mini", {}, "Opera", {}, "Chromium", "Chrome", {}, {}, {}, {}, {}, {}, "Safari"];
-      let text1 = function getName(items2) {
-        return callback(items2, (arg0, pattern) => {
+      })(items1);
+      const items2 = ["Adobe AIR", "Arora", "Avant Browser", "Breach", "Camino", "Electron", "Epiphany", "Fennec", "Flock", "Galeon", "GreenBrowser", "iCab", "Iceweasel", "K-Meleon", "Konqueror", "Lunascape", "Maxthon", { label: "Microsoft Edge", pattern: "(?:Edge|Edg|EdgA|EdgiOS)" }, "Midori", "Nook Browser", "PaleMoon", "PhantomJS", "Raven", "Rekonq", "RockMelt", { label: "Samsung Internet", pattern: "SamsungBrowser" }, "SeaMonkey", { label: "Silk", pattern: "(?:Cloud9|Silk-Accelerated)" }, "Sleipnir", "SlimBrowser", { label: "SRWare Iron", pattern: "Iron" }, "Sunrise", "Swiftfox", "Vivaldi", "Waterfox", "WebPositive", { label: "Yandex Browser", pattern: "YaBrowser" }, { label: "UC Browser", pattern: "UCBrowser" }, "Opera Mini", { label: "Opera Mini", pattern: "OPiOS" }, "Opera", { label: "Opera", pattern: "OPR" }, "Chromium", "Chrome", { label: "Chrome", pattern: "(?:HeadlessChrome)" }, { label: "Chrome Mobile", pattern: "(?:CriOS|CrMo)" }, { label: "Firefox", pattern: "(?:Firefox|Minefield)" }, { label: "Firefox for iOS", pattern: "FxiOS" }, { label: "IE", pattern: "IEMobile" }, { label: "IE", pattern: "MSIE" }, "Safari"];
+      let text1 = (function getName(items2) {
+        return outer1_12(items2, (arg0, pattern) => {
           let tmp = arg0;
           if (!arg0) {
             pattern = pattern.pattern;
             if (!pattern) {
-              pattern = callback(pattern);
+              pattern = outer2_11(pattern);
             }
-            let match = RegExp(`\b${pattern}\b`, "i").exec(closure_0);
+            let match = RegExp(`\\b${pattern}\\b`, "i").exec(outer1_0);
             if (match) {
               match = pattern.label || pattern;
               const tmp6 = pattern.label || pattern;
             }
             tmp = match;
-            const RegExpResult = RegExp(`\b${pattern}\b`, "i");
+            const RegExpResult = RegExp(`\\b${pattern}\\b`, "i");
           }
           return tmp;
         });
-      }(items2);
-      const items3 = [{}, "BlackBerry", {}, {}, {}, {}, {}, {}, {}, {}, {}, "Google TV", "Lumia", "iPad", "iPod", "iPhone", "Kindle", {}, "Nexus", "Nook", "PlayBook", "PlayStation Vita", "PlayStation", "TouchPad", "Transformer", {}, "Wii", "Xbox One", {}, "Xoom"];
+      })(items2);
+      const items3 = [{ label: "BlackBerry", pattern: "BB10" }, "BlackBerry", { label: "Galaxy S", pattern: "GT-I9000" }, { label: "Galaxy S2", pattern: "GT-I9100" }, { label: "Galaxy S3", pattern: "GT-I9300" }, { label: "Galaxy S4", pattern: "GT-I9500" }, { label: "Galaxy S5", pattern: "SM-G900" }, { label: "Galaxy S6", pattern: "SM-G920" }, { label: "Galaxy S6 Edge", pattern: "SM-G925" }, { label: "Galaxy S7", pattern: "SM-G930" }, { label: "Galaxy S7 Edge", pattern: "SM-G935" }, "Google TV", "Lumia", "iPad", "iPod", "iPhone", "Kindle", { label: "Kindle Fire", pattern: "(?:Cloud9|Silk-Accelerated)" }, "Nexus", "Nook", "PlayBook", "PlayStation Vita", "PlayStation", "TouchPad", "Transformer", { label: "Wii U", pattern: "WiiU" }, "Wii", "Xbox One", { label: "Xbox 360", pattern: "Xbox" }, "Xoom"];
       product = getProduct(items3);
-      let closure_2 = product;
-      obj = { Apple: {}, Alcatel: {}, Archos: {}, Amazon: { bjd: "<string:2491613185>", bjq: "<string:2941583362>" } };
+      let replaced = product;
+      obj = { Apple: { iPad: 1, iPhone: 1, iPod: 1 }, Alcatel: {}, Archos: {}, Amazon: { Kindle: 1, "Kindle Fire": 1 } };
       obj = { Transformer: 1 };
       obj.Asus = obj;
       obj1 = { Nook: 1 };
-      obj.Barnes & Noble = obj1;
+      obj["Barnes & Noble"] = obj1;
       obj2 = { PlayBook: 1 };
       obj.BlackBerry = obj2;
-      obj.Google = { y: "<string:2491613185>", POsVOt: "<string:2941583362>" };
+      obj.Google = { "Google TV": 1, Nexus: 1 };
       obj3 = { TouchPad: 1 };
       obj.HP = obj3;
       obj.HTC = {};
       obj.Huawei = {};
       obj.Lenovo = {};
       obj.LG = {};
-      obj.Microsoft = { "Null": "<string:2491613185>", "Null": "<string:2941583362>" };
-      const obj4 = { Xoom: 1 };
+      obj.Microsoft = { Xbox: 1, "Xbox One": 1 };
+      let obj4 = { Xoom: 1 };
       obj.Motorola = obj4;
-      obj.Nintendo = { "Null": "<string:2491613185>", "Null": "<string:2941583362>" };
-      const obj5 = { Lumia: 1 };
+      obj.Nintendo = { "Wii U": 1, Wii: 1 };
+      let obj5 = { Lumia: 1 };
       obj.Nokia = obj5;
       obj.Oppo = {};
-      obj.Samsung = { KIDS: false, textInputRef: false, APRIL_FOOLS_2026_COACHMARK: false, currentScreen: false };
-      obj.Sony = {};
-      obj.Xiaomi = { "Null": "<string:2491613185>", "Null": "<string:2941583362>" };
-      const tmp31 = function getManufacturer(arg0) {
-        return callback(arg0, (arg0, arg1, arg2) => {
+      obj.Samsung = { "Galaxy S": 1, "Galaxy S2": 1, "Galaxy S3": 1, "Galaxy S4": 1 };
+      obj.Sony = { PlayStation: 1, "PlayStation Vita": 1 };
+      obj.Xiaomi = { Mi: 1, Redmi: 1 };
+      const tmp31 = (function getManufacturer(arg0) {
+        return outer1_12(arg0, (arg0, arg1, arg2) => {
           let tmp = arg0;
           if (!arg0) {
-            let match = arg1[closure_2];
+            let match = arg1[outer1_2];
             if (!match) {
               const obj = /^[a-z]+(?: +[a-z]+\b)*/i;
-              match = arg1[obj.exec(obj, closure_2)];
+              match = arg1[obj.exec(obj, outer1_2)];
             }
             if (!match) {
               const _RegExp = RegExp;
-              match = RegExp(`\b${closure_11(arg2)}(?:\b|\w*\d)`, "i").exec(closure_0);
-              const RegExpResult = RegExp(`\b${closure_11(arg2)}(?:\b|\w*\d)`, "i");
+              match = RegExp(`\\b${outer2_11(arg2)}(?:\\b|\\w*\\d)`, "i").exec(outer1_0);
+              const RegExpResult = RegExp(`\\b${outer2_11(arg2)}(?:\\b|\\w*\\d)`, "i");
             }
             if (match) {
               match = arg2;
@@ -369,25 +374,25 @@ const fn = function() {
           }
           return tmp;
         });
-      }(obj);
-      const items4 = [, , , , {}, "Debian", {}, "Fedora", "FreeBSD", "Gentoo", "Haiku", "Kubuntu", "Linux Mint", "OpenBSD", "Red Hat", "SuSE", "Ubuntu", "Xubuntu", "Cygwin", "Symbian OS", "hpwOS", "webOS ", "webOS", "Tablet OS", "Tizen", "Linux", "Mac OS X", "Macintosh", "Mac", "Windows 98;", "Windows "];
-      let str86 = function getOS(items4) {
-        return callback(items4, (arg0, pattern) => {
+      })(obj);
+      const items4 = ["Windows Phone", "KaiOS", "Android", "CentOS", { label: "Chrome OS", pattern: "CrOS" }, "Debian", { label: "DragonFly BSD", pattern: "DragonFly" }, "Fedora", "FreeBSD", "Gentoo", "Haiku", "Kubuntu", "Linux Mint", "OpenBSD", "Red Hat", "SuSE", "Ubuntu", "Xubuntu", "Cygwin", "Symbian OS", "hpwOS", "webOS ", "webOS", "Tablet OS", "Tizen", "Linux", "Mac OS X", "Macintosh", "Mac", "Windows 98;", "Windows "];
+      let str86 = (function getOS(items4) {
+        return outer1_12(items4, (arg0, pattern) => {
           let tmp = arg0;
           pattern = pattern.pattern;
           if (!pattern) {
-            pattern = callback2(pattern);
+            pattern = outer2_11(pattern);
           }
           let match = !tmp;
           if (match) {
             const _RegExp = RegExp;
-            match = RegExp(`\b${pattern}(?:/[\d.]+|[ \w.]*)`, "i").exec(closure_0);
+            match = RegExp(`\\b${pattern}(?:/[\\d.]+|[ \\w.]*)`, "i").exec(outer1_0);
             tmp = match;
-            const RegExpResult = RegExp(`\b${pattern}(?:/[\d.]+|[ \w.]*)`, "i");
+            const RegExpResult = RegExp(`\\b${pattern}(?:/[\\d.]+|[ \\w.]*)`, "i");
           }
           let tmp6 = tmp;
           if (match) {
-            const obj = { hasSearch: "100%", withDelay: "contain", replyContainer: false, ActionSheetHeaderBar: false, useAutoDismissGuildPowerupsNewBadge: false, isFullMatch: false, i-klingon: null, pendingScrollUpdateCount: 0, isRecapPageRevealed: 0, getCustomChannelScore: 0, getEmbeddedActivityLaunchabilityForChannel: 0, user_guild_settings: 0 };
+            const obj = { "10.0": "10", "6.4": "10 Technical Preview", "6.3": "8.1", "6.2": "8", "6.1": "Server 2008 R2 / 7", "6.0": "Server 2008 / Vista", "5.2": "Server 2003 / XP 64-bit", "5.1": "XP", "5.01": "2000 SP1", "5.0": "2000", "4.0": "NT", "4.90": "ME" };
             let isMatch = pattern;
             if (pattern) {
               isMatch = tmp7;
@@ -431,12 +436,12 @@ const fn = function() {
             const str24 = str6.replace(/ ce$/i, " CE").replace(/\bhpw/i, "web").replace(/\bMacintosh\b/, "Mac OS").replace(/_PowerPC\b/i, " OS").replace(/\b(OS X) [^ \d]+/i, "$1").replace(/\bMac (OS X)\b/, "$1").replace(/\/(\d)/, " $1").replace(/_/g, ".").replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, "");
             const str26 = str6.replace(/ ce$/i, " CE").replace(/\bhpw/i, "web").replace(/\bMacintosh\b/, "Mac OS").replace(/_PowerPC\b/i, " OS").replace(/\b(OS X) [^ \d]+/i, "$1").replace(/\bMac (OS X)\b/, "$1").replace(/\/(\d)/, " $1").replace(/_/g, ".").replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, "").replace(/\bx86\.64\b/gi, "x86_64");
             const str27 = str6.replace(/ ce$/i, " CE").replace(/\bhpw/i, "web").replace(/\bMacintosh\b/, "Mac OS").replace(/_PowerPC\b/i, " OS").replace(/\b(OS X) [^ \d]+/i, "$1").replace(/\bMac (OS X)\b/, "$1").replace(/\/(\d)/, " $1").replace(/_/g, ".").replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, "").replace(/\bx86\.64\b/gi, "x86_64").replace(/\b(Windows Phone) OS\b/, "$1");
-            tmp6 = callback(str6.replace(/ ce$/i, " CE").replace(/\bhpw/i, "web").replace(/\bMacintosh\b/, "Mac OS").replace(/_PowerPC\b/i, " OS").replace(/\b(OS X) [^ \d]+/i, "$1").replace(/\bMac (OS X)\b/, "$1").replace(/\/(\d)/, " $1").replace(/_/g, ".").replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, "").replace(/\bx86\.64\b/gi, "x86_64").replace(/\b(Windows Phone) OS\b/, "$1").replace(/\b(Chrome OS \w+) [\d.]+\b/, "$1").split(" on ")[0]);
+            tmp6 = outer2_8(str6.replace(/ ce$/i, " CE").replace(/\bhpw/i, "web").replace(/\bMacintosh\b/, "Mac OS").replace(/_PowerPC\b/i, " OS").replace(/\b(OS X) [^ \d]+/i, "$1").replace(/\bMac (OS X)\b/, "$1").replace(/\/(\d)/, " $1").replace(/_/g, ".").replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, "").replace(/\bx86\.64\b/gi, "x86_64").replace(/\b(Windows Phone) OS\b/, "$1").replace(/\b(Chrome OS \w+) [\d.]+\b/, "$1").split(" on ")[0]);
             const str28 = str6.replace(/ ce$/i, " CE").replace(/\bhpw/i, "web").replace(/\bMacintosh\b/, "Mac OS").replace(/_PowerPC\b/i, " OS").replace(/\b(OS X) [^ \d]+/i, "$1").replace(/\bMac (OS X)\b/, "$1").replace(/\/(\d)/, " $1").replace(/_/g, ".").replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, "").replace(/\bx86\.64\b/gi, "x86_64").replace(/\b(Windows Phone) OS\b/, "$1").replace(/\b(Chrome OS \w+) [\d.]+\b/, "$1");
           }
           return tmp6;
         });
-      }(items4);
+      })(items4);
       let tmp32 = tmp28;
       if (tmp28) {
         const items5 = [tmp28];
@@ -444,7 +449,7 @@ const fn = function() {
       }
       let tmp34 = /\bAndroid\b/.test(str86) && !product;
       if (tmp34) {
-        const match = /\bAndroid[^;]*;(.*?)(?:Build|\) AppleWebKit)\b/i.exec(tmp4);
+        let match = /\bAndroid[^;]*;(.*?)(?:Build|\) AppleWebKit)\b/i.exec(tmp4);
         let isMatch2 = match;
         tmp34 = match;
         const obj13 = /\bAndroid[^;]*;(.*?)(?:Build|\) AppleWebKit)\b/i;
@@ -452,7 +457,7 @@ const fn = function() {
       let str87 = product;
       if (tmp34) {
         const tmp38 = trim(isMatch2[1]).replace(/^[a-z]{2}-[a-z]{2};\s*/i, "") || null;
-        closure_2 = tmp38;
+        replaced = tmp38;
         str87 = tmp38;
         const str88 = trim(isMatch2[1]);
       }
@@ -460,7 +465,7 @@ const fn = function() {
         if (!str87) {
           const items6 = [tmp31];
           const product1 = getProduct(items6);
-          closure_2 = product1;
+          replaced = product1;
           let tmp40 = product1;
         }
         const match1 = /\bGoogle TV\b/.exec(tmp40);
@@ -468,7 +473,7 @@ const fn = function() {
         let tmp47 = tmp40;
         if (match1) {
           const first = tmp46[0];
-          closure_2 = first;
+          replaced = first;
           tmp47 = first;
         }
         let tmp50 = tmp47;
@@ -477,8 +482,8 @@ const fn = function() {
           if (tmp47) {
             str97 = `${tmp47} `;
           }
-          const text = `${str97}Simulator`;
-          closure_2 = text;
+          let text = `${str97}Simulator`;
+          replaced = text;
           tmp50 = text;
         }
         let isMatch1 = "Opera Mini" == text1;
@@ -496,14 +501,14 @@ const fn = function() {
             str = "";
             isMatch2 = parse(tmp4.replace(/like iPhone OS/, ""));
             ({ manufacturer, product } = isMatch2);
-            closure_2 = product;
+            replaced = product;
             str = product;
           }
           isMatch2 = version;
           if (!version) {
             isMatch2 = qualify;
             isMatch2 = text1;
-            const items7 = [false, false, qualify(text1)];
+            const items7 = ["(?:Cloud9|CriOS|CrMo|Edge|Edg|EdgA|EdgiOS|FxiOS|HeadlessChrome|IEMobile|Iron|Opera ?Mini|OPiOS|OPR|Raven|SamsungBrowser|Silk(?!/[\\d.]+$)|UCBrowser|YaBrowser)", "Version", qualify(text1)];
             str = "(?:Firefox|Minefield|NetFront)";
             items7[3] = "(?:Firefox|Minefield|NetFront)";
             version = getVersion(items7);
@@ -516,7 +521,7 @@ const fn = function() {
                 str13 = "Blink";
               }
               isMatch2 = str13;
-              const obj40 = /\bOPR\b/;
+              obj40 = /\bOPR\b/;
             }
             str = isMatch2;
             const obj39 = /\bOpera\b/;
@@ -592,7 +597,7 @@ const fn = function() {
               isMatch2 = items;
               str = "desktop mode";
               isMatch2 = items.unshift("desktop mode");
-              const obj50 = /\+$/;
+              obj50 = /\+$/;
             }
             const obj46 = /; *(?:XBLWP|ZuneWP)(\d+)/i;
           }
@@ -684,7 +689,7 @@ const fn = function() {
                   } else {
                     text1 = "Rhino";
                     items10 = isMatch2;
-                    // break
+                    break;
                   }
                   break;
                 }
@@ -805,7 +810,7 @@ const fn = function() {
                       isMatch2 = text1;
                       if ("IE" == text1) {
                         isMatch2 = globalThis;
-                        const _String = String;
+                        let _String = String;
                         isMatch2 = items9;
                         isMatch2 = String(isMatch2[1].toFixed(1));
                         const obj54 = isMatch2[1];
@@ -836,7 +841,7 @@ const fn = function() {
                     isMatch2 = items.push(`masking as ${tmp29} ${tmp27}`);
                     text1 = "IE";
                     version = "11.0";
-                    items10 = ["right"];
+                    items10 = ["Trident"];
                     str86 = "Windows";
                     isMatch2 = tmp4;
                   }
@@ -883,12 +888,12 @@ const fn = function() {
             }
             isMatch2 = version;
             isMatch2 = globalThis;
-            const _RegExp3 = RegExp;
+            let _RegExp3 = RegExp;
             isMatch2 = obj45;
             str = "\\+?$";
             str = "";
             str = "beta";
-            isMatch2 = version.replace(RegExp(`${obj45}\+?$`), "");
+            isMatch2 = version.replace(RegExp(`${obj45}\\+?$`), "");
             if ("beta" === str) {
               str7 = str8;
             }
@@ -897,7 +902,7 @@ const fn = function() {
             isMatch2 = /\d+\+?/.exec(obj45) || "";
             version = isMatch2 + isMatch2;
             isMatch2 = str;
-            const obj59 = /b/i;
+            obj59 = /b/i;
             const obj60 = /\d+\+?/;
           }
           isMatch2 = text1;
@@ -913,7 +918,7 @@ const fn = function() {
                   break;
                 } else {
                   num12 = 0;
-                  // break
+                  break;
                 }
                 isMatch2 = num12[1];
                 str = isMatch2;
@@ -962,7 +967,7 @@ const fn = function() {
                       isMatch2 = "WebKit" == items12;
                     }
                     if (isMatch2) {
-                      let items12 = ["1409898408042303629"];
+                      items12 = ["Blink"];
                     }
                     if (isMatch3) {
                       if (!isMatch) {
@@ -1346,7 +1351,7 @@ const fn = function() {
                     isMatch2 = text1;
                     str = " *";
                     str = "";
-                    str86 = str86.replace(RegExp(` *${closure_11(tmp29)} *`), "");
+                    str86 = str86.replace(RegExp(` *${qualify(tmp29)} *`), "");
                   }
                   isMatch2 = arr15;
                   if (arr15) {
@@ -1429,7 +1434,6 @@ const fn = function() {
                       str = "/";
                       isMatch2 = "/" == str86.charAt(str86.length - isMatch2[0].length - 1);
                     }
-                    tmp = isMatch2;
                     let obj6 = {};
                     let num96 = 32;
                     obj6.architecture = 32;
@@ -1510,7 +1514,7 @@ const fn = function() {
                       }
                     }
                     if (!tmp4) {
-                      closure_0 = null;
+                      c0 = null;
                       tmp4 = null;
                     }
                     obj = { description: tmp4 };
@@ -1533,9 +1537,9 @@ const fn = function() {
                     isMatch2 = str86;
                     if (!str86) {
                       obj = {
-                        "Bool(false)": "mn",
-                        "Bool(false)": "description",
-                        "Null": "Array",
+                        architecture: null,
+                        family: null,
+                        version: null,
                         toString() {
                                             return "null";
                                           }
@@ -1645,7 +1649,7 @@ const fn = function() {
                 str = ".x";
                 version = version.replace(/\.[\d.]+/, ".x");
                 items12 = isMatch2;
-                let arr13 = str;
+                arr13 = str;
                 isMatch2 = manufacturer;
               }
             }
@@ -1707,11 +1711,11 @@ const fn = function() {
               }
               if (obj65.test(str)) {
                 isMatch2 = globalThis;
-                const _RegExp4 = RegExp;
+                let _RegExp4 = RegExp;
                 str = " *";
                 str = "/([.\\d]+)";
                 str = "i";
-                isMatch2 = RegExp(`${str.replace(/ +/g, " *")}/([.\d]+)`, "i").exec(tmp4) || 0;
+                isMatch2 = RegExp(`${str.replace(/ +/g, " *")}/([.\\d]+)`, "i").exec(tmp4) || 0;
                 isMatch2 = isMatch2[1] || version;
                 obj45 = isMatch2;
                 if (isMatch2) {
@@ -1722,7 +1726,7 @@ const fn = function() {
                   str = manufacturer;
                   isMatch2 = items14;
                   if (items14[1]) {
-                    closure_2 = null;
+                    replaced = null;
                     isMatch2 = null;
                     str = "BlackBerry";
                     str = "BlackBerry";
@@ -1736,7 +1740,7 @@ const fn = function() {
                   items12 = isMatch2;
                   const obj76 = /BB10/;
                 }
-                const RegExpResult1 = RegExp(`${str.replace(/ +/g, " *")}/([.\d]+)`, "i");
+                let RegExpResult1 = RegExp(`${str.replace(/ +/g, " *")}/([.\\d]+)`, "i");
               } else {
                 const obj66 = /\bBB10\b/;
               }
@@ -1862,25 +1866,25 @@ const fn = function() {
                   if (!isMatch3) {
                     version = null;
                   }
-                  const obj74 = /\bIE\b/;
+                  obj74 = /\bIE\b/;
                 }
-                items12 = ["r"];
+                items12 = ["Presto"];
                 isMatch2 = items;
                 isMatch2 = items.push(isMatch2);
                 arr13 = str;
                 isMatch2 = manufacturer;
               }
-              const obj63 = /^(?:Chrome|IE|Opera)$/;
-              const obj65 = /\bBlackBerry\b/;
+              obj63 = /^(?:Chrome|IE|Opera)$/;
+              obj65 = /\bBlackBerry\b/;
             }
-            const obj62 = /\bXbox\b/i;
+            obj62 = /\bXbox\b/i;
           }
           text1 = "Firefox Mobile";
           items12 = isMatch2;
           arr13 = str;
           isMatch2 = manufacturer;
-          const obj17 = /\blike iPhone OS\b/;
-          const obj47 = /\bWPDesktop\b/i;
+          obj17 = /\blike iPhone OS\b/;
+          obj47 = /\bWPDesktop\b/i;
         }
         if (obj18.test(tmp50)) {
           if (!text1) {
@@ -1908,7 +1912,7 @@ const fn = function() {
               str = tmp50;
               manufacturer = tmp31;
             }
-            const obj19 = /^Linux\b/i;
+            obj19 = /^Linux\b/i;
           }
           if (tmp31) {
             str = "Google";
@@ -1918,7 +1922,7 @@ const fn = function() {
               } else {
                 const obj21 = /\bMobile Safari\b/i;
               }
-              const obj20 = /Chrome/;
+              obj20 = /Chrome/;
             }
             text1 = "Android Browser";
             str = "Android";
@@ -1928,13 +1932,13 @@ const fn = function() {
             str86 = str;
             str = tmp50;
             manufacturer = tmp31;
-            const obj37 = /\bAndroid\b/;
+            obj37 = /\bAndroid\b/;
           }
           if (obj23.test(str86)) {
             if (obj24.test(text1)) {
               const obj25 = /\bVersion\//i;
             }
-            const obj24 = /^Chrome/;
+            obj24 = /^Chrome/;
           }
           if ("Silk" == text1) {
             if (!obj35.test(tmp4)) {
@@ -1950,8 +1954,8 @@ const fn = function() {
               str = tmp50;
               manufacturer = tmp31;
             }
-            const obj35 = /\bMobi/i;
-            const obj36 = /Accelerated *= *true/i;
+            obj35 = /\bMobi/i;
+            obj36 = /Accelerated *= *true/i;
           } else {
             isMatch2 = text1;
             if ("UC Browser" == text1) {
@@ -1961,7 +1965,7 @@ const fn = function() {
                 str = tmp50;
                 manufacturer = tmp31;
               }
-              const obj26 = /\bUCWEB\b/;
+              obj26 = /\bUCWEB\b/;
             }
             if ("PaleMoon" == text1) {
               const match3 = /\bFirefox\/([\d.]+)\b/.exec(tmp4);
@@ -1984,7 +1988,7 @@ const fn = function() {
                 str = tmp50;
                 manufacturer = tmp31;
                 if (!tmp50) {
-                  closure_2 = tmp88;
+                  replaced = tmp88;
                   str = tmp88;
                   manufacturer = tmp31;
                 }
@@ -2058,13 +2062,13 @@ const fn = function() {
               manufacturer = tmp31;
               const obj34 = /\bAndroid\b/;
             }
-            const tmp80 = tmp79;
+            tmp80 = tmp79;
           }
-          const obj23 = /\bAndroid\b/;
+          obj23 = /\bAndroid\b/;
         }
         const obj14 = /\bGoogle TV\b/;
-        const obj15 = /\bSimulator\b/i;
-        const obj18 = /^iP/;
+        obj15 = /\bSimulator\b/i;
+        obj18 = /^iP/;
       }
       let tmp41 = tmp31;
       if (tmp31) {
@@ -2072,16 +2076,15 @@ const fn = function() {
       }
       tmp40 = str87;
       if (tmp41) {
-        const _RegExp = RegExp;
-        const _RegExp2 = RegExp;
-        const replaced = str87.replace(RegExp(`^(${closure_11(tmp31)})[-_.\s]`, "i"), `${tmp31} `).replace(RegExp(`^(${closure_11(tmp31)})[-_.]?(\w)`, "i"), `${tmp31} $2`);
-        closure_2 = replaced;
+        let _RegExp = RegExp;
+        let _RegExp2 = RegExp;
+        replaced = str87.replace(RegExp(`^(${qualify(tmp31)})[-_.\\s]`, "i"), `${tmp31} `).replace(RegExp(`^(${qualify(tmp31)})[-_.]?(\\w)`, "i"), `${tmp31} $2`);
         tmp40 = replaced;
-        const str94 = str87.replace(RegExp(`^(${closure_11(tmp31)})[-_.\s]`, "i"), `${tmp31} `);
+        const str94 = str87.replace(RegExp(`^(${qualify(tmp31)})[-_.\\s]`, "i"), `${tmp31} `);
       }
       const obj12 = /\bAndroid\b/;
     }
-    [[Class]] = getClassOf(opera);
+    __Class__ = getClassOf(opera);
   }
   const parsed = parse();
   if ("function" === typeof globalThis.define) {
@@ -2095,7 +2098,7 @@ const fn = function() {
   if (obj[typeof closure_2] && closure_2) {
     if (tmp2) {
       forOwn(parsed, (arg0, arg1) => {
-        tmp[arg1] = arg0;
+        closure_1[arg1] = arg0;
       });
     }
   }

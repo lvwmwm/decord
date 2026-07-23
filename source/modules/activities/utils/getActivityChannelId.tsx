@@ -1,21 +1,21 @@
-// Module ID: 11944
-// Function ID: 92370
+// Module ID: 11956
+// Function ID: 92423
 // Name: getActivityChannelId
-// Dependencies: []
+// Dependencies: [1352, 1348, 4146, 2]
 // Exports: default
 
-// Module 11944 (getActivityChannelId)
-const isTextChannel = require(dependencyMap[0]).isTextChannel;
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/activities/utils/getActivityChannelId.tsx");
+// Module 11956 (getActivityChannelId)
+import { isTextChannel } from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_2 from "_isNativeReflectConstruct";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/utils/getActivityChannelId.tsx");
 
 export default function getActivityChannelId(userId) {
   let activity;
   let channelId;
   ({ channelId, activity } = userId);
-  const channel = channel.getChannel(channelId);
+  channel = channel.getChannel(channelId);
   let session_id;
   if (null != activity) {
     session_id = activity.session_id;
@@ -27,7 +27,7 @@ export default function getActivityChannelId(userId) {
       if (null != activity) {
         session_id1 = activity.session_id;
       }
-      const voiceStateForSession = voiceStateForSession.getVoiceStateForSession(userId.userId, session_id1);
+      voiceStateForSession = voiceStateForSession.getVoiceStateForSession(userId.userId, session_id1);
       channelId = undefined;
       if (null != voiceStateForSession) {
         channelId = voiceStateForSession.channelId;

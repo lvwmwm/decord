@@ -1,27 +1,28 @@
-// Module ID: 11238
-// Function ID: 87486
+// Module ID: 11248
+// Function ID: 87536
 // Name: useNavigationTransitionEnded
-// Dependencies: []
+// Dependencies: [57, 31, 1455, 1457, 2]
 // Exports: default
 
-// Module 11238 (useNavigationTransitionEnded)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const useAppLauncherNavigation = arg1(dependencyMap[2]).useAppLauncherNavigation;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/app_launcher/native/hooks/useNavigationTransitionEnded.tsx");
+// Module 11248 (useNavigationTransitionEnded)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { useAppLauncherNavigation } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+
+let require = arg1;
+const result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/hooks/useNavigationTransitionEnded.tsx");
 
 export default function useNavigationTransitionEnded() {
-  const tmp = callback(React.useState(false), 2);
-  const arg1 = tmp2;
+  const tmp = route(React.useState(false), 2);
+  const require = tmp2;
   const tmp3 = useAppLauncherNavigation();
   const dependencyMap = tmp3;
-  const route = arg1(dependencyMap[3]).useRoute();
-  const callback = route;
+  route = require(1457) /* Link */.useRoute();
   const items = [tmp3, route, tmp[1]];
   const effect = React.useEffect(() => tmp3.addListener("transitionEnd", () => {
-    const state = state.getState();
-    if (state.routes[state.index].key === key.key) {
-      callback(true);
+    const state = outer1_1.getState();
+    if (state.routes[state.index].key === outer1_2.key) {
+      outer1_0(true);
     }
   }), items);
   return tmp[0];

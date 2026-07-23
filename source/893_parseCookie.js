@@ -1,5 +1,5 @@
 // Module ID: 893
-// Function ID: 9843
+// Function ID: 9844
 // Name: parseCookie
 // Dependencies: []
 
@@ -51,7 +51,7 @@ arg5.parseCookie = function parseCookie(arr) {
         let tmp14 = trimmed;
         let tmp15 = substr;
         obj[tmp4] = substr;
-        // continue
+        continue;
       }
     }
   }

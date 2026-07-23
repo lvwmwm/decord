@@ -1,59 +1,56 @@
-// Module ID: 15203
-// Function ID: 114697
-// Dependencies: []
+// Module ID: 15319
+// Function ID: 116867
+// Dependencies: [31, 10077, 9132, 9102, 33, 4130, 11415, 10075, 10076, 11406, 15320, 4660, 1212, 9589, 2]
 
-// Module 15203
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = arg1(dependencyMap[2]).setIsChannelDetailsSearchActive;
-const jsx = arg1(dependencyMap[4]).jsx;
+// Module 15319
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { setIsChannelDetailsSearchActive as closure_5 } from "createChannelState";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let obj = {};
-obj = { justifyContent: "center", height: arg1(dependencyMap[6]).SEARCH_BAR_HEIGHT, paddingStart: arg1(dependencyMap[3]).CHANNEL_DETAILS_MARGIN, paddingEnd: 8 };
+obj = { justifyContent: "center", height: require("SEARCH_BAR_HEIGHT").SEARCH_BAR_HEIGHT, paddingStart: require("ChannelDetailsNavigatorScreens").CHANNEL_DETAILS_MARGIN, paddingEnd: 8 };
 obj.back = obj;
-let closure_7 = arg1(dependencyMap[5]).createStyles(obj);
-const obj2 = arg1(dependencyMap[5]);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId, ref) => {
   let guildId;
   let onSuggestionsLayoutMesure;
   let setSuggestionsDismissed;
   let suggestionsDismissed;
   channelId = channelId.channelId;
-  ref = channelId;
   const onBackPress = channelId.onBackPress;
-  const importDefault = onBackPress;
   let flag = channelId.showBackButton;
   ({ guildId, onSuggestionsLayoutMesure, suggestionsDismissed, setSuggestionsDismissed } = channelId);
   if (flag === undefined) {
     flag = true;
   }
-  let dependencyMap;
-  let importAllResult;
-  let closure_4;
-  let obj = ref(dependencyMap[7]);
-  const channelDetailsSearchContext = obj.useChannelDetailsSearchContext(channelId, guildId);
-  dependencyMap = channelDetailsSearchContext;
+  let channelDetailsSearchContext;
+  let callback;
+  let callback1;
+  let obj = channelId(channelDetailsSearchContext[7]);
+  channelDetailsSearchContext = obj.useChannelDetailsSearchContext(channelId, guildId);
   const items = [channelId, channelDetailsSearchContext];
-  const effect = importAllResult.useEffect(() => () => {
-    let obj = callback(closure_2[8]);
-    obj = { searchContext: closure_2 };
+  const effect = callback.useEffect(() => () => {
+    let obj = onBackPress(channelDetailsSearchContext[8]);
+    obj = { searchContext: outer1_2 };
     obj.trackSearchClosed(obj);
   }, items);
   const items1 = [channelDetailsSearchContext];
-  const callback = importAllResult.useCallback(() => {
+  callback = callback.useCallback(() => {
     if (!callback1.isInitialSearchQuery(channelDetailsSearchContext)) {
       onBackPress(channelDetailsSearchContext[9]).updateSearchQuery(channelDetailsSearchContext, (reset) => reset.reset());
       const obj = onBackPress(channelDetailsSearchContext[9]);
     }
   }, items1);
-  importAllResult = callback;
   const items2 = [channelId, callback];
-  const callback1 = importAllResult.useCallback(() => {
+  callback1 = callback.useCallback(() => {
     callback();
-    callback(channelId, false, "action");
+    outer1_5(channelId, false, "action");
   }, items2);
-  closure_4 = callback1;
   const items3 = [onBackPress, callback1, callback];
-  const callback2 = importAllResult.useCallback(() => {
+  const callback2 = callback.useCallback(() => {
     callback();
     if (undefined !== onBackPress) {
       onBackPress();
@@ -67,14 +64,14 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId, r
   const tmp7 = jsx;
   if (flag) {
     obj = { accessibilityRole: "button", onPress: callback2, style: tmp.back };
-    const intl = ref(dependencyMap[12]).intl;
-    obj.accessibilityLabel = intl.string(ref(dependencyMap[12]).t.13/7kX);
-    obj.children = jsx(ref(dependencyMap[13]).ChevronLargeLeftIcon, {});
-    tmp9 = jsx(ref(dependencyMap[11]).PressableOpacity, obj);
+    const intl = channelId(channelDetailsSearchContext[12]).intl;
+    obj.accessibilityLabel = intl.string(channelId(channelDetailsSearchContext[12]).t["13/7kX"]);
+    obj.children = jsx(channelId(channelDetailsSearchContext[13]).ChevronLargeLeftIcon, { size: "sm", color: "interactive-text-default" });
+    tmp9 = jsx(channelId(channelDetailsSearchContext[11]).PressableOpacity, { accessibilityRole: "button", onPress: callback2, style: tmp.back });
   }
   obj.backButton = tmp9;
-  return tmp7(importDefault(dependencyMap[10]), obj);
+  return tmp7(onBackPress(channelDetailsSearchContext[10]), obj);
 }));
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsSearchBar.tsx");
+const result = require("createChannelState").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsSearchBar.tsx");
 
 export default memoResult;

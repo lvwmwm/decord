@@ -1,10 +1,9 @@
-// Module ID: 4977
-// Function ID: 42949
+// Module ID: 4980
+// Function ID: 42967
 // Name: QuestRewardCodePlatforms
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4977 (QuestRewardCodePlatforms)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardCodePlatforms.tsx");
+// Module 4980 (QuestRewardCodePlatforms)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardCodePlatforms.tsx");
 
 export const QuestRewardCodePlatforms = { CROSS_PLATFORM: 0, [0]: "CROSS_PLATFORM", XBOX: 1, [1]: "XBOX", PLAYSTATION: 2, [2]: "PLAYSTATION", SWITCH: 3, [3]: "SWITCH", PC: 4, [4]: "PC" };

@@ -1,52 +1,69 @@
 // Module ID: 1347
-// Function ID: 15829
+// Function ID: 15830
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 15, 17, 18, 6, 7, 1194, 1348, 1906, 1849, 4155, 10226, 653, 10535, 10536, 3748, 10481, 12992, 1207, 10523, 686, 10438, 8183, 477, 1881, 6755, 566, 2]
 
 // Module 1347 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import _slicedToArray from "_slicedToArray";
+import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId";
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession";
+import reportDevtoolsEvent from "reportDevtoolsEvent";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import ActivityPanelModes from "ActivityPanelModes";
+import ME from "ME";
+import set from "_getPrototypeOf";
+
+let closure_15;
+let closure_16;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +74,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -123,11 +140,10 @@ function updateEmbeddedActivities(instance) {
   let obj = { applicationId: instance.application_id, launchId: instance.launch_id, compositeInstanceId: instance.composite_instance_id, location: instance.location, participants: participants.map(participantFromServer), contentClassification: instance.content_classification };
   participants = instance.participants;
   const applicationId = obj.applicationId;
-  const arg1 = applicationId;
   ({ launchId, compositeInstanceId, location: _location, participants } = obj);
-  const tmp = importDefault(dependencyMap[16])(applicationId);
+  let tmp = importDefault(10481)(applicationId);
   if (null != tmp) {
-    const embeddedActivityLocationChannelId = arg1(dependencyMap[15]).getEmbeddedActivityLocationChannelId(_location);
+    let embeddedActivityLocationChannelId = applicationId(3748).getEmbeddedActivityLocationChannelId(_location);
     if (null != embeddedActivityLocationChannelId) {
       let value = map2.get(embeddedActivityLocationChannelId);
       let items;
@@ -145,13 +161,13 @@ function updateEmbeddedActivities(instance) {
     }
     const found = items1.find((applicationId) => applicationId.applicationId === applicationId);
     const mapped = participants.map((userId) => userId.userId);
-    const importDefault = store.getId();
+    importDefault = store.getId();
     const someResult = mapped.some((arg0) => arg0 === closure_1);
     const found1 = participants.find((userId) => userId.userId === closure_1);
     if (null != found1) {
       const sessionId = found1.sessionId;
     }
-    const obj14 = arg1(dependencyMap[15]);
+    const obj14 = applicationId(3748);
     const value1 = map.get(applicationId);
     let tmp15 = null;
     if (null != embeddedActivityLocationChannelId) {
@@ -162,8 +178,8 @@ function updateEmbeddedActivities(instance) {
       const launchParams = value2.launchParams;
     }
     obj = { applicationId, location: _location, launchId, compositeInstanceId, url: tmp };
-    const _Set = Set;
-    const set = new Set(mapped);
+    let _Set = Set;
+    let set = new Set(mapped);
     obj.userIds = set;
     obj.participants = participants;
     obj.contentClassification = obj.contentClassification;
@@ -206,7 +222,7 @@ function updateEmbeddedActivities(instance) {
           proxyTicket = value1.proxyTicket;
         }
         obj["proxyTicket"] = proxyTicket;
-        const result = map.set(value1.applicationId, obj);
+        let result = map.set(value1.applicationId, obj);
       }
     }
     if (null != value1) {
@@ -219,15 +235,15 @@ function updateEmbeddedActivities(instance) {
             }
             getOrCreateBucket(map3, _location.id).upsert(applicationId, _location.id, tmp44);
             const obj9 = getOrCreateBucket(map3, _location.id);
-            const embeddedActivityLocationChannelId1 = arg1(dependencyMap[15]).getEmbeddedActivityLocationChannelId(_location);
+            const embeddedActivityLocationChannelId1 = applicationId(3748).getEmbeddedActivityLocationChannelId(_location);
             if (null != embeddedActivityLocationChannelId1) {
               getOrCreateBucket(map2, embeddedActivityLocationChannelId1).upsert(applicationId, _location.id, tmp44);
               const obj11 = getOrCreateBucket(map2, embeddedActivityLocationChannelId1);
-              const obj12 = arg1(dependencyMap[15]);
-              getOrCreateBucket(map1, getNormalizedGuildId(arg1(dependencyMap[15]).getEmbeddedActivityLocationGuildId(_location))).upsert(applicationId, _location.id, tmp44);
-              const obj13 = getOrCreateBucket(map1, getNormalizedGuildId(arg1(dependencyMap[15]).getEmbeddedActivityLocationGuildId(_location)));
+              const obj12 = applicationId(3748);
+              getOrCreateBucket(map1, getNormalizedGuildId(applicationId(3748).getEmbeddedActivityLocationGuildId(_location))).upsert(applicationId, _location.id, tmp44);
+              const obj13 = getOrCreateBucket(map1, getNormalizedGuildId(applicationId(3748).getEmbeddedActivityLocationGuildId(_location)));
             }
-            const obj10 = arg1(dependencyMap[15]);
+            const obj10 = applicationId(3748);
           } else {
             const _Array = Array;
             const arr = Array.from(value1.userIds);
@@ -246,7 +262,7 @@ function updateEmbeddedActivities(instance) {
         }
         obj1.inviterUserId = inviterUserId;
         obj1.proxyTicket = obj.proxyTicket;
-        function openActivity(arg0) {
+        (function openActivity(arg0) {
           let _location;
           let applicationId;
           let compositeInstanceId;
@@ -260,10 +276,10 @@ function updateEmbeddedActivities(instance) {
           let referrerId;
           ({ applicationId, location: _location, participants } = arg0);
           ({ launchId, compositeInstanceId, isFirstActivityInChannel, isStart, referrerId, customId, inviterUserId, proxyTicket } = arg0);
-          const tmp = callback(closure_2[16])(applicationId);
+          const tmp = callback(outer1_2[16])(applicationId);
           if (null != tmp) {
-            if (null != sessionId.getSessionId()) {
-              const value = store.get(applicationId);
+            if (null != outer1_9.getSessionId()) {
+              const value = outer1_21.get(applicationId);
               let id;
               if (null != value) {
                 id = value.location.id;
@@ -271,12 +287,12 @@ function updateEmbeddedActivities(instance) {
               if (id === _location.id) {
                 return false;
               } else {
-                const embeddedActivityLocationChannelId = applicationId(closure_2[15]).getEmbeddedActivityLocationChannelId(_location);
-                const channel = channel.getChannel(embeddedActivityLocationChannelId);
+                const embeddedActivityLocationChannelId = applicationId(outer1_2[15]).getEmbeddedActivityLocationChannelId(_location);
+                const channel = outer1_10.getChannel(embeddedActivityLocationChannelId);
                 if (null != channel) {
                   const guildId = channel.getGuildId();
                 }
-                if (null == currentUser.getCurrentUser()) {
+                if (null == outer1_12.getCurrentUser()) {
                   return false;
                 } else {
                   if (null == guildId) {
@@ -286,6 +302,7 @@ function updateEmbeddedActivities(instance) {
                     }
                     return false;
                   }
+                  const outer1_34 = _location;
                   let obj = { applicationId, url: tmp };
                   const _Set = Set;
                   const set = new Set(participants.map((userId) => userId.userId));
@@ -299,36 +316,37 @@ function updateEmbeddedActivities(instance) {
                   obj.referrerId = referrerId;
                   obj.customId = customId;
                   obj.proxyTicket = proxyTicket;
-                  const result = store.set(applicationId, obj);
-                  const ComponentDispatch = applicationId(closure_2[18]).ComponentDispatch;
+                  const result = outer1_21.set(applicationId, obj);
+                  const ComponentDispatch = applicationId(outer1_2[18]).ComponentDispatch;
                   obj = { location: _location, applicationId, isFirstActivityInChannel, isStart, participants };
                   obj.embeddedActivity = obj;
                   obj.inviterUserId = inviterUserId;
-                  ComponentDispatch.dispatch(constants2.OPEN_EMBEDDED_ACTIVITY, obj);
+                  ComponentDispatch.dispatch(outer1_15.OPEN_EMBEDDED_ACTIVITY, obj);
                   if (obj3.shouldOpenActivityInPopoutWindow()) {
-                    let PIP = constants.ACTIVITY_POPOUT_WINDOW;
-                    callback(closure_2[20]).wait(() => {
-                      callback(closure_2[20]).dispatch({ type: "ACTIVITY_POPOUT_WINDOW_OPEN" });
+                    let outer1_35 = outer1_13.ACTIVITY_POPOUT_WINDOW;
+                    callback(outer1_2[20]).wait(() => {
+                      callback(outer2_2[20]).dispatch({ type: "ACTIVITY_POPOUT_WINDOW_OPEN" });
                     });
-                    const obj4 = callback(closure_2[20]);
+                    const obj4 = callback(outer1_2[20]);
                   } else {
-                    if (embeddedActivityLocationChannelId === channelId.getChannelId()) {
-                      if (!callback(closure_2[21])(embeddedActivityLocationChannelId)) {
-                        PIP = constants.PANEL;
+                    if (embeddedActivityLocationChannelId === outer1_11.getChannelId()) {
+                      if (!callback(outer1_2[21])(embeddedActivityLocationChannelId)) {
+                        let PIP = outer1_13.PANEL;
                       }
+                      outer1_35 = PIP;
                     }
-                    PIP = constants.PIP;
+                    PIP = outer1_13.PIP;
                   }
                   const _Date2 = Date;
-                  const obj3 = applicationId(closure_2[19]);
-                  const result1 = closure_33.set(callback2(_location.id, applicationId), Date.now());
+                  obj3 = applicationId(outer1_2[19]);
+                  const result1 = outer1_33.set(outer1_50(_location.id, applicationId), Date.now());
                 }
-                const obj5 = applicationId(closure_2[15]);
+                const obj5 = applicationId(outer1_2[15]);
               }
             }
           }
           return false;
-        }(obj1);
+        })(obj1);
       }
       const obj2 = {};
       let tmp42 = null;
@@ -340,7 +358,7 @@ function updateEmbeddedActivities(instance) {
       handleEmbeddedActivityLaunchEnd(obj2);
       const tmp41 = handleEmbeddedActivityLaunchEnd;
     }
-    const someResult1 = participants.some((userId) => applicationId(closure_2[17]).isActivityParticipantCurrentUserCurrentSession(userId));
+    const someResult1 = participants.some((userId) => applicationId(outer1_2[17]).isActivityParticipantCurrentUserCurrentSession(userId));
     const tmp14 = getLaunchStatesKey;
   }
 }
@@ -348,13 +366,13 @@ function updateEmbeddedActivitiesForGuild(guild) {
   const activity_instances = guild.activity_instances;
   if (null != activity_instances) {
     const item = activity_instances.forEach((arg0) => {
-      callback(arg0);
+      outer1_46(arg0);
     });
   }
 }
 function disconnectEmbeddedActivity(value1) {
   map.delete(value1.applicationId);
-  const ComponentDispatch = arg1(dependencyMap[18]).ComponentDispatch;
+  const ComponentDispatch = require(1207) /* reportDevtoolsEvent */.ComponentDispatch;
   ComponentDispatch.dispatch(constants.RELEASE_ACTIVITY_WEB_VIEW);
 }
 function handleEmbeddedActivityLaunchEnd(channelId) {
@@ -363,51 +381,34 @@ function handleEmbeddedActivityLaunchEnd(channelId) {
 function getActivityKey(arg0, arg1) {
   return "" + arg0 + ":" + arg1;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-const tmp2 = arg1(dependencyMap[11]);
-const ActivityPanelModes = tmp2.ActivityPanelModes;
-const FocusedActivityLayouts = tmp2.FocusedActivityLayouts;
-({ ComponentActions: closure_15, PopoutWindowKeys: closure_16 } = arg1(dependencyMap[12]));
-const tmp3 = arg1(dependencyMap[12]);
-let obj = {};
-const set = new Set([]);
-obj.everLaunchedActivities = new Set();
-obj.seenNewActivities = {};
-obj.seenUpdatedActivities = {};
-obj.lastCheckedForBadgeableActivities = null;
-obj.dateRangesForSurfaces = {};
-const items = [];
-const items1 = [];
-let closure_20 = () => {
+ActivityPanelModes = ActivityPanelModes.ActivityPanelModes;
+const FocusedActivityLayouts = ActivityPanelModes.FocusedActivityLayouts;
+({ ComponentActions: closure_15, PopoutWindowKeys: closure_16 } = ME);
+let set = new Set([]);
+let obj = { everLaunchedActivities: new Set(), seenNewActivities: {}, seenUpdatedActivities: {}, lastCheckedForBadgeableActivities: null, dateRangesForSurfaces: {} };
+let items = [];
+let items1 = [];
+let closure_20 = (() => {
   class ActivityBucket {
     constructor() {
-      tmp = closure_7(this, ActivityBucket);
+      tmp = outer1_7(this, ActivityBucket);
       this.items = [];
       this.cachedVisible = null;
       this.cachedHidden = null;
       return;
     }
   }
-  const arg1 = ActivityBucket;
   let obj = {
     key: "upsert",
     value(arg0, arg1, arg2) {
       const self = this;
-      const ActivityBucket = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       const items = this.items;
       this.items = items.filter((applicationId) => {
-        let tmp = applicationId.applicationId === applicationId;
+        let tmp = applicationId.applicationId === closure_0;
         if (tmp) {
-          tmp = applicationId.location.id === arg1;
+          tmp = applicationId.location.id === closure_1;
         }
         return !tmp;
       });
@@ -418,13 +419,13 @@ let closure_20 = () => {
       self.invalidate();
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "removeWhere",
     value(arg0) {
-      const ActivityBucket = arg0;
+      let closure_0 = arg0;
       const items = this.items;
-      this.items = items.filter((arg0) => !arg0(arg0));
+      this.items = items.filter((arg0) => !callback(arg0));
       this.invalidate();
     }
   };
@@ -441,14 +442,14 @@ let closure_20 = () => {
     key: "getItems",
     value(arg0) {
       const self = this;
-      const ContentClassificationEmbeddedActivityFilterExperiment = ActivityBucket(closure_2[13]).ContentClassificationEmbeddedActivityFilterExperiment;
+      const ContentClassificationEmbeddedActivityFilterExperiment = ActivityBucket(outer1_2[13]).ContentClassificationEmbeddedActivityFilterExperiment;
       if (ContentClassificationEmbeddedActivityFilterExperiment.getConfig({ location: "embedded_activity_store" }).enabled) {
         if ("all" !== arg0) {
           if ("visible" === arg0) {
             let cachedVisible = self.cachedVisible;
             if (cachedVisible == null) {
               const items = self.items;
-              const found = items.filter((contentClassification) => !callback(closure_2[14]).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
+              const found = items.filter((contentClassification) => !ActivityBucket(outer2_2[14]).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
               self.cachedVisible = found;
               cachedVisible = found;
             }
@@ -457,7 +458,7 @@ let closure_20 = () => {
             let cachedHidden = self.cachedHidden;
             if (cachedHidden == null) {
               const items1 = self.items;
-              const found1 = items1.filter((contentClassification) => callback(closure_2[14]).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
+              const found1 = items1.filter((contentClassification) => ActivityBucket(outer2_2[14]).isAgeRestrictedClassificationReference(contentClassification.contentClassification));
               self.cachedHidden = found1;
               cachedHidden = found1;
             }
@@ -476,8 +477,8 @@ let closure_20 = () => {
     }
   };
   return callback2(ActivityBucket, items);
-}();
-const map = new Map();
+})();
+let map = new Map();
 const map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
@@ -490,23 +491,23 @@ const map8 = new Map();
 const map9 = new Map();
 const map10 = new Map();
 const map11 = new Map();
-let closure_34;
+let c34;
 const DISCONNECTED = ActivityPanelModes.DISCONNECTED;
-const RESIZABLE = FocusedActivityLayouts.RESIZABLE;
-const NORMAL = arg1(dependencyMap[10]).ActivityPopoutWindowLayouts.NORMAL;
-let tmp19 = (PersistedStore) => {
+let RESIZABLE = FocusedActivityLayouts.RESIZABLE;
+const NORMAL = require("items3").ActivityPopoutWindowLayouts.NORMAL;
+let tmp19 = ((PersistedStore) => {
   class EmbeddedActivitiesStoreClass {
     constructor() {
       self = this;
-      tmp = closure_7(this, EmbeddedActivitiesStoreClass);
-      obj = closure_5(EmbeddedActivitiesStoreClass);
-      tmp2 = closure_4;
-      if (closure_41()) {
+      tmp = outer1_7(this, EmbeddedActivitiesStoreClass);
+      obj = outer1_5(EmbeddedActivitiesStoreClass);
+      tmp2 = outer1_4;
+      if (outer1_41()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -515,12 +516,11 @@ let tmp19 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = EmbeddedActivitiesStoreClass;
   callback(EmbeddedActivitiesStoreClass, PersistedStore);
   let obj = {
     key: "initialize",
     value: function initialize(everLaunchedActivities) {
-      this.waitFor(closure_9, closure_10, closure_11, closure_12);
+      this.waitFor(outer1_9, outer1_10, outer1_11, outer1_12);
       let prop;
       if (null != everLaunchedActivities) {
         prop = everLaunchedActivities.everLaunchedActivities;
@@ -532,31 +532,32 @@ let tmp19 = (PersistedStore) => {
         const obj = {};
         const merged = Object.assign(everLaunchedActivities);
         obj["everLaunchedActivities"] = set;
+        const outer1_17 = obj;
       }
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "getState",
     value: function getState() {
-      return closure_17;
+      return outer1_17;
     }
   };
   items[1] = obj;
   obj = {
     key: "getSelfEmbeddedActivityForChannel",
     value: function getSelfEmbeddedActivityForChannel(channelId) {
-      const EmbeddedActivitiesStoreClass = channelId;
+      let closure_0 = channelId;
       let tmp = null;
       if (null != channelId) {
         const _Array = Array;
-        const found = Array.from(closure_21.values()).find((location) => location(closure_2[15]).getEmbeddedActivityLocationChannelId(location.location) === location);
+        const found = Array.from(outer1_21.values()).find((location) => EmbeddedActivitiesStoreClass(outer2_2[15]).getEmbeddedActivityLocationChannelId(location.location) === closure_0);
         let tmp5 = null;
         if (null != found) {
           tmp5 = found;
         }
         tmp = tmp5;
-        const arr = Array.from(closure_21.values());
+        const arr = Array.from(outer1_21.values());
       }
       return tmp;
     }
@@ -565,17 +566,17 @@ let tmp19 = (PersistedStore) => {
   items[3] = {
     key: "getSelfEmbeddedActivityForLocation",
     value: function getSelfEmbeddedActivityForLocation(connectedActivityLocation) {
-      const EmbeddedActivitiesStoreClass = connectedActivityLocation;
+      let closure_0 = connectedActivityLocation;
       let tmp = null;
       if (null != connectedActivityLocation) {
         const _Array = Array;
-        const found = Array.from(closure_21.values()).find((location) => location.location.id === location.id);
+        const found = Array.from(outer1_21.values()).find((location) => location.location.id === id.id);
         let tmp5 = null;
         if (null != found) {
           tmp5 = found;
         }
         tmp = tmp5;
-        const arr = Array.from(closure_21.values());
+        const arr = Array.from(outer1_21.values());
       }
       return tmp;
     }
@@ -583,19 +584,19 @@ let tmp19 = (PersistedStore) => {
   items[4] = {
     key: "getSelfEmbeddedActivities",
     value: function getSelfEmbeddedActivities() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[5] = {
     key: "getEmbeddedActivitiesForGuild",
-    value: function getEmbeddedActivitiesForGuild(guildId) {
-      const value = store.get(guildId);
+    value: function getEmbeddedActivitiesForGuild(closure_0) {
+      const value = outer1_22.get(closure_0);
       let items;
       if (null != value) {
         items = value.getItems("visible");
       }
       if (null == items) {
-        items = closure_18;
+        items = outer1_18;
       }
       return items;
     }
@@ -603,13 +604,13 @@ let tmp19 = (PersistedStore) => {
   items[6] = {
     key: "getEmbeddedActivitiesForChannel",
     value: function getEmbeddedActivitiesForChannel(id) {
-      const value = store2.get(id);
+      const value = outer1_23.get(id);
       let items;
       if (null != value) {
         items = value.getItems("visible");
       }
       if (null == items) {
-        items = closure_18;
+        items = outer1_18;
       }
       return items;
     }
@@ -617,13 +618,13 @@ let tmp19 = (PersistedStore) => {
   items[7] = {
     key: "getEmbeddedActivitiesForLocation",
     value: function getEmbeddedActivitiesForLocation(id) {
-      const value = store3.get(id.id);
+      const value = outer1_24.get(id.id);
       let items;
       if (null != value) {
         items = value.getItems("visible");
       }
       if (null == items) {
-        items = closure_18;
+        items = outer1_18;
       }
       return items;
     }
@@ -631,13 +632,13 @@ let tmp19 = (PersistedStore) => {
   items[8] = {
     key: "getEmbeddedActivitiesForGuildIncludingHidden",
     value: function getEmbeddedActivitiesForGuildIncludingHidden(arg0) {
-      const value = store.get(arg0);
+      const value = outer1_22.get(arg0);
       let items;
       if (null != value) {
         items = value.getItems("all");
       }
       if (null == items) {
-        items = closure_18;
+        items = outer1_18;
       }
       return items;
     }
@@ -645,13 +646,13 @@ let tmp19 = (PersistedStore) => {
   items[9] = {
     key: "getEmbeddedActivitiesForChannelIncludingHidden",
     value: function getEmbeddedActivitiesForChannelIncludingHidden(channelId) {
-      const value = store2.get(channelId);
+      const value = outer1_23.get(channelId);
       let items;
       if (null != value) {
         items = value.getItems("all");
       }
       if (null == items) {
-        items = closure_18;
+        items = outer1_18;
       }
       return items;
     }
@@ -659,13 +660,13 @@ let tmp19 = (PersistedStore) => {
   items[10] = {
     key: "getEmbeddedActivitiesForLocationIncludingHidden",
     value: function getEmbeddedActivitiesForLocationIncludingHidden(location) {
-      const value = store3.get(location.id);
+      const value = outer1_24.get(location.id);
       let items;
       if (null != value) {
         items = value.getItems("all");
       }
       if (null == items) {
-        items = closure_18;
+        items = outer1_18;
       }
       return items;
     }
@@ -674,8 +675,7 @@ let tmp19 = (PersistedStore) => {
     key: "getEmbeddedActivitiesByChannel",
     value: function getEmbeddedActivitiesByChannel() {
       const map = new Map();
-      const EmbeddedActivitiesStoreClass = map;
-      const item = store2.forEach((getItems) => {
+      const item = outer1_23.forEach((getItems) => {
         const items = getItems.getItems("visible");
         if (items.length > 0) {
           const result = map.set(arg1, items);
@@ -687,7 +687,7 @@ let tmp19 = (PersistedStore) => {
   items[12] = {
     key: "getEmbeddedActivityDurationMs",
     value: function getEmbeddedActivityDurationMs(id, applicationId) {
-      const value = closure_33.get(callback6(id, applicationId));
+      const value = outer1_33.get(outer1_50(id, applicationId));
       let diff = null;
       if (null != value) {
         const _Date = Date;
@@ -699,15 +699,15 @@ let tmp19 = (PersistedStore) => {
   items[13] = {
     key: "isLaunchingActivity",
     value: function isLaunchingActivity() {
-      return closure_25.size > 0;
+      return outer1_25.size > 0;
     }
   };
   items[14] = {
     key: "getShelfActivities",
     value: function getShelfActivities(embeddedActivityLocationGuildId) {
-      let value = closure_27.get(callback5(embeddedActivityLocationGuildId));
+      let value = outer1_27.get(outer1_43(embeddedActivityLocationGuildId));
       if (null == value) {
-        value = closure_19;
+        value = outer1_19;
       }
       return value;
     }
@@ -715,13 +715,13 @@ let tmp19 = (PersistedStore) => {
   items[15] = {
     key: "getShelfFetchStatus",
     value: function getShelfFetchStatus(arg0) {
-      return store4.get(callback5(arg0));
+      return outer1_28.get(outer1_43(arg0));
     }
   };
   items[16] = {
     key: "shouldFetchShelf",
     value: function shouldFetchShelf(arg0) {
-      let value = store4.get(callback5(arg0));
+      let value = outer1_28.get(outer1_43(arg0));
       if (null == value) {
         const obj = { isFetching: false };
         value = obj;
@@ -745,14 +745,14 @@ let tmp19 = (PersistedStore) => {
   items[17] = {
     key: "getOrientationLockStateForApp",
     value: function getOrientationLockStateForApp(applicationId) {
-      return closure_29.get(applicationId);
+      return outer1_29.get(applicationId);
     }
   };
   items[18] = {
     key: "getPipOrientationLockStateForApp",
     value: function getPipOrientationLockStateForApp(applicationId) {
       const self = this;
-      let orientationLockStateForApp = store5.get(applicationId);
+      let orientationLockStateForApp = outer1_30.get(applicationId);
       if (null == orientationLockStateForApp) {
         orientationLockStateForApp = self.getOrientationLockStateForApp(applicationId);
       }
@@ -763,9 +763,9 @@ let tmp19 = (PersistedStore) => {
     key: "getGridOrientationLockStateForApp",
     value: function getGridOrientationLockStateForApp(applicationId) {
       const self = this;
-      let orientationLockStateForApp = closure_31.get(applicationId);
+      let orientationLockStateForApp = outer1_31.get(applicationId);
       if (null == orientationLockStateForApp) {
-        orientationLockStateForApp = store5.get(applicationId);
+        orientationLockStateForApp = outer1_30.get(applicationId);
       }
       if (null == orientationLockStateForApp) {
         orientationLockStateForApp = self.getOrientationLockStateForApp(applicationId);
@@ -776,33 +776,33 @@ let tmp19 = (PersistedStore) => {
   items[20] = {
     key: "getLayoutModeForApp",
     value: function getLayoutModeForApp(id) {
-      return closure_32.get(id);
+      return outer1_32.get(id);
     }
   };
   items[21] = {
     key: "getConnectedActivityChannelId",
     value: function getConnectedActivityChannelId() {
-      if (null != closure_34) {
-        return EmbeddedActivitiesStoreClass(closure_2[15]).getEmbeddedActivityLocationChannelId(closure_34);
+      if (null != outer1_34) {
+        return EmbeddedActivitiesStoreClass(outer1_2[15]).getEmbeddedActivityLocationChannelId(outer1_34);
       }
     }
   };
   items[22] = {
     key: "getConnectedActivityLocation",
     value: function getConnectedActivityLocation() {
-      return closure_34;
+      return outer1_34;
     }
   };
   items[23] = {
     key: "getActivityPanelMode",
     value: function getActivityPanelMode() {
-      return closure_35;
+      return outer1_35;
     }
   };
   items[24] = {
     key: "getFocusedLayout",
     value: function getFocusedLayout() {
-      return closure_36;
+      return outer1_36;
     }
   };
   items[25] = {
@@ -819,7 +819,7 @@ let tmp19 = (PersistedStore) => {
   items[26] = {
     key: "isProxyTicketRefreshing",
     value: function isProxyTicketRefreshing(arg0) {
-      return set.has(arg0);
+      return outer1_26.has(arg0);
     }
   };
   items[27] = {
@@ -827,18 +827,18 @@ let tmp19 = (PersistedStore) => {
     value: function getEmbeddedActivityForUserId(author_id, id) {
       let iter5;
       if (undefined !== id) {
-        const tmp3 = callback3(closure_24);
+        const tmp3 = outer1_39(outer1_24);
         const iter = tmp3();
         let iter2 = iter;
         let tmp4;
         if (!iter.done) {
           do {
-            let tmp5 = closure_3;
-            let tmp6 = closure_3(iter2.value, 2);
+            let tmp5 = outer1_3;
+            let tmp6 = outer1_3(iter2.value, 2);
             let first = tmp6[0];
-            let tmp8 = closure_39;
+            let tmp8 = outer1_39;
             let obj = tmp6[1];
-            let tmp9 = closure_39(obj.getItems("visible"));
+            let tmp9 = outer1_39(obj.getItems("visible"));
             let iter3 = tmp9();
             if (!iter3.done) {
               while (true) {
@@ -869,7 +869,7 @@ let tmp19 = (PersistedStore) => {
   items[28] = {
     key: "hasActivityEverBeenLaunched",
     value: function hasActivityEverBeenLaunched(applicationId) {
-      const everLaunchedActivities = obj.everLaunchedActivities;
+      const everLaunchedActivities = outer1_17.everLaunchedActivities;
       return everLaunchedActivities.has(applicationId);
     }
   };
@@ -881,24 +881,24 @@ let tmp19 = (PersistedStore) => {
         if (null != id) {
           tmp3 = id;
         }
-        return closure_25.get(closure_42(tmp3, applicationId));
+        return outer1_25.get(outer1_42(tmp3, applicationId));
       }
     }
   };
   items[30] = {
     key: "getLaunchStates",
     value: function getLaunchStates() {
-      return closure_25;
+      return outer1_25;
     }
   };
   items[31] = {
     key: "getActivityPopoutWindowLayout",
     value: function getActivityPopoutWindowLayout() {
-      return closure_37;
+      return outer1_37;
     }
   };
   return callback2(EmbeddedActivitiesStoreClass, items);
-}(importDefault(dependencyMap[26]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp19.displayName = "EmbeddedActivitiesStore";
 tmp19.persistKey = "EmbeddedActivities";
 const items2 = [
@@ -953,9 +953,9 @@ const items2 = [
     shouldShowNewActivityIndicator.surfacesToShowNewActivityIndicator = new Set();
     if (shouldShowNewActivityIndicator.shouldShowNewActivityIndicator) {
       const surfacesToShowNewActivityIndicator = shouldShowNewActivityIndicator.surfacesToShowNewActivityIndicator;
-      surfacesToShowNewActivityIndicator.add(arg1(dependencyMap[24]).EmbeddedActivitySurfaces.VOICE_LAUNCHER);
+      surfacesToShowNewActivityIndicator.add(require(1881) /* PermissionOverwriteType */.EmbeddedActivitySurfaces.VOICE_LAUNCHER);
     }
-    delete r1.shouldShowNewActivityIndicator;
+    delete tmp.shouldShowNewActivityIndicator;
     const merged = Object.assign(shouldShowNewActivityIndicator);
     return {};
   },
@@ -966,7 +966,7 @@ const items2 = [
     return obj;
   },
   (arg0) => {
-    delete r1.surfacesToShowNewActivityIndicator;
+    delete tmp.surfacesToShowNewActivityIndicator;
     const obj = {};
     const merged = Object.assign(arg0);
     obj["dateRangesForSurfaces"] = {};
@@ -985,24 +985,24 @@ obj = {
     map1.clear();
     map3.clear();
     const item = guilds.forEach((arg0) => {
-      callback(arg0);
+      outer1_47(arg0);
     });
     const id = store.getId();
     function _loop(location) {
       let closure_0 = location;
-      const embeddedActivitiesForLocationIncludingHidden = embeddedActivitiesForLocationIncludingHidden.getEmbeddedActivitiesForLocationIncludingHidden(location.location);
+      const embeddedActivitiesForLocationIncludingHidden = outer1_38.getEmbeddedActivitiesForLocationIncludingHidden(location.location);
       if (!embeddedActivitiesForLocationIncludingHidden.some((applicationId) => {
-        let hasItem = applicationId.applicationId === applicationId.applicationId;
+        let hasItem = applicationId.applicationId === _location.applicationId;
         if (hasItem) {
-          hasItem = applicationId.launchId === applicationId.launchId;
+          hasItem = applicationId.launchId === _location.launchId;
         }
         if (hasItem) {
           const userIds = applicationId.userIds;
-          hasItem = userIds.has(applicationId);
+          hasItem = userIds.has(_location);
         }
         return hasItem;
       })) {
-        callback2(location);
+        outer1_48(location);
       }
     }
     const arr = Array.from(map.values());
@@ -1020,7 +1020,6 @@ obj = {
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     channel = channel.channel;
-    const arg1 = channel;
     let value = map2.get(channel.id);
     let items;
     if (null != value) {
@@ -1029,10 +1028,10 @@ obj = {
     map2.delete(channel.id);
     value = map1.get(getNormalizedGuildId(channel.guild_id));
     if (null != value) {
-      value.removeWhere((location) => channel(closure_2[15]).getEmbeddedActivityLocationChannelId(location.location) === channel.id);
+      value.removeWhere((location) => channel(outer1_2[15]).getEmbeddedActivityLocationChannelId(location.location) === channel.id);
     }
     const item = items.forEach((location) => {
-      set.delete(location.location.id);
+      outer1_24.delete(location.location.id);
     });
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function handleEmbeddedActivityLaunchStart(channelId) {
@@ -1042,7 +1041,7 @@ obj = {
     let launchParams;
     ({ componentId, commandOrigin, launchParams, inviterUserId } = channelId);
     const result = map4.set(getLaunchStatesKey(channelId.channelId, channelId.applicationId), { isLaunching: true, componentId, inviterUserId, launchParams });
-    if (commandOrigin === arg1(dependencyMap[25]).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON) {
+    if (commandOrigin === require(6755) /* ApplicationCommandSectionType */.CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON) {
       let RESIZABLE = FocusedActivityLayouts.NO_CHAT;
     } else {
       RESIZABLE = FocusedActivityLayouts.RESIZABLE;
@@ -1101,15 +1100,15 @@ obj = {
       id = value.location.id;
     }
     let id1;
-    if (null != id) {
-      id1 = id.id;
+    if (null != _undefined) {
+      id1 = _undefined.id;
     }
     if (id === id1) {
-      id = undefined;
+      _undefined = undefined;
     }
   },
   EMBEDDED_ACTIVITY_UPDATE_POPOUT_WINDOW_LAYOUT: function handleUpdatePopoutWindowLayout(layout) {
-    const NORMAL = layout.layout;
+    layout = layout.layout;
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     updateEmbeddedActivities(instance.instance);
@@ -1157,31 +1156,33 @@ obj = {
   },
   EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: function handleEmbeddedActivityFetchShelfSuccess(activities) {
     activities = activities.activities;
-    const tmp = getNormalizedGuildId(activities.guildId);
+    let tmp = getNormalizedGuildId(activities.guildId);
     const result = map5.set(tmp, activities);
     const timestamp = Date.now();
-    function handleShowingNewActivityIndicator(arg0) {
+    (function handleShowingNewActivityIndicator(arg0) {
       let activities;
+      let closure_0;
       ({ activities, now: closure_0 } = arg0);
-      const tmp = callback2(closure_2[22]);
-      const callback2 = tmp(callback(closure_2[23]).getOS());
-      closure_17.dateRangesForSurfaces = activities.reduce((arg0, arg1) => {
+      const tmp = outer1_1(outer1_2[22]);
+      let closure_1 = tmp(outer1_0(outer1_2[23]).getOS());
+      outer1_17.dateRangesForSurfaces = activities.reduce((arg0, arg1) => {
+        let closure_0 = arg0;
         let closure_1 = tmp;
         if (null != arg1.client_platform_config[closure_1].label_from) {
           if (null != tmp.label_until) {
             const obj = {};
             ({ label_from: obj.fromDate, label_until: obj.untilDate } = tmp);
-            const _Date = Date;
-            const date = new Date(tmp.label_from);
+            let _Date = Date;
+            let date = new Date(tmp.label_from);
             const time = date.getTime();
             const _Date2 = Date;
-            let tmp3 = time > arg0;
+            let tmp3 = time > closure_0;
             if (!tmp3) {
-              tmp3 = tmp16 < arg0;
+              tmp3 = tmp16 < closure_0;
             }
             if (!tmp3) {
               const _Object = Object;
-              const values = Object.values(arg0(obj[24]).EmbeddedActivitySurfaces);
+              const values = Object.values(outer2_0(outer2_2[24]).EmbeddedActivitySurfaces);
               const found = values.filter((arg0) => {
                 const omit_badge_from_surfaces = tmp.omit_badge_from_surfaces;
                 return !omit_badge_from_surfaces.includes(arg0);
@@ -1194,7 +1195,7 @@ obj = {
                   tmp2 = date.getTime() < time;
                 }
                 if (tmp2) {
-                  arg0[arg0] = obj;
+                  table[arg0] = obj;
                 }
               });
             }
@@ -1203,7 +1204,7 @@ obj = {
         }
         return arg0;
       }, {});
-    }({ activities, now: timestamp });
+    })({ activities, now: timestamp });
     const result1 = map6.set(tmp, { isFetching: false, lastFetchTimestampMs: timestamp });
   },
   EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL: function handleEmbeddedActivityFetchShelfFail(guildId) {
@@ -1240,33 +1241,33 @@ obj = {
     }
   },
   EMBEDDED_ACTIVITY_SET_PANEL_MODE: function handleSetPanelMode(activityPanelMode) {
-    const DISCONNECTED = activityPanelMode.activityPanelMode;
+    activityPanelMode = activityPanelMode.activityPanelMode;
   },
   EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT: function handleSetFocusedLayout(focusedActivityLayout) {
-    const RESIZABLE = focusedActivityLayout.focusedActivityLayout;
+    focusedActivityLayout = focusedActivityLayout.focusedActivityLayout;
   },
   CHANNEL_SELECT: function handleChannelSelect(arg0) {
-    if (null != closure_34) {
-      const embeddedActivityLocationChannelId = arg1(dependencyMap[15]).getEmbeddedActivityLocationChannelId(closure_34);
+    if (null != c34) {
+      const embeddedActivityLocationChannelId = require(3748) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(c34);
       let tmp6 = null != embeddedActivityLocationChannelId && embeddedActivityLocationChannelId !== tmp;
       if (tmp6) {
-        tmp6 = DISCONNECTED === ActivityPanelModes.PANEL;
+        tmp6 = PIP === ActivityPanelModes.PANEL;
       }
       if (tmp6) {
-        const DISCONNECTED = ActivityPanelModes.PIP;
+        PIP = ActivityPanelModes.PIP;
       }
-      const obj = arg1(dependencyMap[15]);
+      const obj = require(3748) /* getEmbeddedActivityLocationChannelId */;
     }
   },
   POPOUT_WINDOW_CLOSE: function handlePopoutWindowClose(key) {
     if (key.key === constants2.ACTIVITY_POPOUT) {
-      const DISCONNECTED = ActivityPanelModes.PIP;
+      const PIP = ActivityPanelModes.PIP;
     }
   }
 };
-tmp19 = new tmp19(importDefault(dependencyMap[20]), obj);
-const set1 = new Set();
-const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/activities/EmbeddedActivitiesStore.tsx");
+tmp19 = new tmp19(require("dispatcher"), obj);
+let closure_38 = tmp19;
+let result = set.fileFinishedImporting("modules/activities/EmbeddedActivitiesStore.tsx");
 
 export default tmp19;
 export const FEATURED_ACTIVITY_IDS = set;

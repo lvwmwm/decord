@@ -1,12 +1,13 @@
-// Module ID: 5447
-// Function ID: 46576
+// Module ID: 5450
+// Function ID: 46595
 // Name: useInitialValue
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: default
 
-// Module 5447 (useInitialValue)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("hooks/useInitialValue.tsx");
+// Module 5450 (useInitialValue)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("hooks/useInitialValue.tsx");
 
 export default function useInitialValue(arg0) {
   return React.useState(arg0)[0];

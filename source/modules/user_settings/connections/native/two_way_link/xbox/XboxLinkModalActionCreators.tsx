@@ -1,18 +1,17 @@
-// Module ID: 8929
-// Function ID: 70416
-// Dependencies: []
+// Module ID: 8936
+// Function ID: 70457
+// Dependencies: [4337, 8937, 1934, 2]
 
-// Module 8929
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkModalActionCreators.tsx");
+// Module 8936
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkModalActionCreators.tsx");
 
 export default {
   showModal(locationStack) {
-    let obj = importDefault(dependencyMap[0]);
+    let obj = importDefault(4337);
     obj = { locationStack };
-    obj.pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), obj, "USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY");
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(8937, dependencyMap.paths), obj, "USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY");
   },
   hideModal() {
-    importDefault(dependencyMap[0]).popWithKey("USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY");
+    importDefault(4337).popWithKey("USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY");
   }
 };

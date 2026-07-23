@@ -1,11 +1,22 @@
 // Module ID: 5287
-// Function ID: 45640
+// Function ID: 45639
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 33, 5284]
 
 // Module 5287 (_isNativeReflectConstruct)
-let I18nManager;
-let StyleSheet;
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import getActivityIndicator from "get ActivityIndicator";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_10 from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+let closure_11;
+let closure_12;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,459 +26,113 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-importAll(dependencyMap[5]);
-({ Animated: closure_7, StyleSheet, View: closure_8, I18nManager } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[7]));
-const tmp5 = (Component) => {
-  class Swipeable {
+let closure_3 = ["style"];
+({ StyleSheet: closure_11, View: closure_12 } = get_ActivityIndicator);
+let tmp3 = ((Component) => {
+  class TouchableHighlight {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, Swipeable);
+      tmp = outer1_5(this, apply);
       items = [];
       items[0] = Component;
-      obj = closure_5(Swipeable);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      obj = outer1_8(apply);
+      tmp2 = outer1_7;
+      if (outer1_14()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_8;
+        constructResult = Reflect.construct(obj, items, outer1_8(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      Swipeable = tmp2Result;
-      tmp2Result.updateAnimatedEvent = (overshootFriction, rowWidth) => {
-        let dragX;
-        let leftWidth;
-        overshootFriction = overshootFriction.overshootFriction;
-        ({ dragX, leftWidth } = rowWidth);
-        let num = 0;
-        if (undefined !== leftWidth) {
-          num = leftWidth;
-        }
-        rowWidth = rowWidth.rowWidth;
-        let num2 = 0;
-        if (undefined !== rowWidth) {
-          num2 = rowWidth;
-        }
-        let rightOffset = rowWidth.rightOffset;
-        if (undefined === rightOffset) {
-          rightOffset = num2;
-        }
-        const bound = Math.max(0, num2 - rightOffset);
-        let overshootLeft = overshootFriction.overshootLeft;
-        if (undefined === overshootLeft) {
-          overshootLeft = num > 0;
-        }
-        let overshootRight = overshootFriction.overshootRight;
-        if (undefined === overshootRight) {
-          overshootRight = bound > 0;
-        }
-        const items = [0.229, overshootFriction.friction];
-        let obj = { inputRange: items1 };
-        const items1 = [-bound - 1, -bound, num, num + 1];
-        let num3 = 0;
-        if (overshootRight) {
-          num3 = 1 / overshootFriction;
-        }
-        const items2 = [-bound - num3, -bound, num, ];
-        let num4 = 0;
-        if (overshootLeft) {
-          num4 = 1 / overshootFriction;
-        }
-        items2[3] = num + num4;
-        obj.outputRange = items2;
-        const interpolateResult = set.add(rowWidth.rowTranslation, dragX.interpolate({ inputRange: items, outputRange: [77601039, 1612144654] })).interpolate(obj);
-        tmp2Result.transX = interpolateResult;
-        if (num > 0) {
-          obj = {};
-          const items3 = [-1, 0, num];
-          obj.inputRange = items3;
-          obj.outputRange = [];
-          let interpolateResult1 = interpolateResult.interpolate(obj);
-        } else {
-          const Value = set.Value;
-          const prototype = Value.prototype;
-          interpolateResult1 = new Value(0);
-        }
-        tmp2Result.showLeftAction = interpolateResult1;
-        const showLeftAction = tmp2Result.showLeftAction;
-        const items4 = [0.229, Number.MIN_VALUE];
-        const items5 = [-10000, 0];
-        tmp2Result.leftActionTranslate = showLeftAction.interpolate({ inputRange: items4, outputRange: items5, extrapolate: "clamp" });
-        if (bound > 0) {
-          const obj1 = {};
-          const items6 = [-bound, 0, 1];
-          obj1.inputRange = items6;
-          obj1.outputRange = [];
-          let interpolateResult2 = interpolateResult.interpolate(obj1);
-        } else {
-          const Value2 = set.Value;
-          const prototype2 = Value2.prototype;
-          interpolateResult2 = new Value2(0);
-        }
-        tmp2Result.showRightAction = interpolateResult2;
-        const showRightAction = tmp2Result.showRightAction;
-        const items7 = [0.229, Number.MIN_VALUE];
-        const items8 = [-10000, 0];
-        tmp2Result.rightActionTranslate = showRightAction.interpolate({ inputRange: items7, outputRange: items8, extrapolate: "clamp" });
-      };
-      tmp2Result.onTapHandlerStateChange = (nativeEvent) => {
-        if (nativeEvent.nativeEvent.oldState === tmp2Result(closure_1[8]).State.ACTIVE) {
-          tmp2Result.close();
-        }
-      };
-      tmp2Result.onHandlerStateChange = (nativeEvent) => {
-        if (nativeEvent.nativeEvent.oldState === tmp2Result(closure_1[8]).State.ACTIVE) {
-          tmp2Result.handleRelease(nativeEvent);
-        }
-        if (nativeEvent.nativeEvent.state === tmp2Result(closure_1[8]).State.ACTIVE) {
-          nativeEvent = nativeEvent.nativeEvent;
-          const rowState = tmp2Result.state.rowState;
-          let str = "right";
-          let str2 = "right";
-          if (-1 !== rowState) {
-            if (1 === rowState) {
-              str = "left";
-            }
-            str2 = str;
-          }
-          if (0 === rowState) {
-            if (null != tmp2Result.props.onSwipeableOpenStartDrag) {
-              const props2 = tmp2Result.props;
-              const result = props2.onSwipeableOpenStartDrag(str2);
-            }
-          } else if (null != tmp2Result.props.onSwipeableCloseStartDrag) {
+      apply = tmp2Result;
+      tmp2Result.showUnderlay = () => {
+        if (tmp2Result.hasPressHandler()) {
+          let obj = {};
+          obj = { opacity: tmp2Result.props.activeOpacity };
+          obj.extraChildStyle = obj;
+          obj = { backgroundColor: tmp2Result.props.underlayColor };
+          obj.extraUnderlayStyle = obj;
+          tmp2Result.setState(obj);
+          if (null != tmp2Result.props.onShowUnderlay) {
             const props = tmp2Result.props;
-            const result1 = props.onSwipeableCloseStartDrag(str2);
+            props.onShowUnderlay();
           }
         }
       };
-      tmp2Result.handleRelease = (nativeEvent) => {
-        let friction;
-        let leftThreshold;
-        let translationX;
-        let velocityX;
-        ({ velocityX, translationX } = nativeEvent.nativeEvent);
-        const state = tmp2Result.state;
-        const leftWidth = state.leftWidth;
-        let num = 0;
-        if (undefined !== leftWidth) {
-          num = leftWidth;
+      tmp2Result.hasPressHandler = () => {
+        let onLongPress = tmp2Result.props.onPress;
+        if (!onLongPress) {
+          onLongPress = tmp2Result.props.onPressIn;
         }
-        const rowWidth = state.rowWidth;
-        let num2 = 0;
-        if (undefined !== rowWidth) {
-          num2 = rowWidth;
+        if (!onLongPress) {
+          onLongPress = tmp2Result.props.onPressOut;
         }
-        const rowState = state.rowState;
-        let rightOffset = tmp2Result.state.rightOffset;
-        if (undefined === rightOffset) {
-          rightOffset = num2;
+        if (!onLongPress) {
+          onLongPress = tmp2Result.props.onLongPress;
         }
-        const diff = num2 - rightOffset;
-        const props = tmp2Result.props;
-        ({ friction, leftThreshold } = props);
-        if (undefined === leftThreshold) {
-          leftThreshold = num / 2;
+        return onLongPress;
+      };
+      tmp2Result.hideUnderlay = () => {
+        tmp2Result.setState({ extraChildStyle: null, extraUnderlayStyle: null });
+        if (null != tmp2Result.props.onHideUnderlay) {
+          const props = tmp2Result.props;
+          props.onHideUnderlay();
         }
-        let rightThreshold = props.rightThreshold;
-        if (undefined === rightThreshold) {
-          rightThreshold = diff / 2;
-        }
-        const result = (translationX + 0.05 * velocityX) / friction;
-        const sum = tmp2Result.currentOffset() + translationX / friction;
-        if (0 === rowState) {
-          let num6 = num;
-          if (result <= leftThreshold) {
-            num6 = 0;
-            if (result < -rightThreshold) {
-              num6 = -diff;
-            }
-          }
-        } else if (1 === rowState) {
-          num6 = 0;
-          if (result > -leftThreshold) {
-            num6 = num;
-          }
+      };
+      tmp2Result.onStateChange = (arg0, arg1) => {
+        if (arg1 === TouchableHighlight(outer2_2[9]).TOUCHABLE_STATE.BEGAN) {
+          tmp2Result.showUnderlay();
         } else {
-          num6 = 0;
-          if (result < rightThreshold) {
-            num6 = -diff;
+          let tmp3 = arg1 !== TouchableHighlight(outer2_2[9]).TOUCHABLE_STATE.UNDETERMINED;
+          if (tmp3) {
+            tmp3 = arg1 !== TouchableHighlight(outer2_2[9]).TOUCHABLE_STATE.MOVED_OUTSIDE;
           }
-        }
-        tmp2Result.animateRow(sum, num6, velocityX / friction);
-      };
-      tmp2Result.animateRow = (arg0, toValue, velocity) => {
-        let dragX;
-        let rowTranslation;
-        ({ dragX, rowTranslation } = arg0.state);
-        dragX.setValue(0);
-        rowTranslation.setValue(arg0);
-        let obj = { rowState: Math.sign(toValue) };
-        arg0.setState(obj);
-        obj = { flex: "/assets/images/native/icons", position: 16, overflow: 16, width: null, velocity, toValue, useNativeDriver: arg0.props.useNativeAnimations };
-        set.spring(rowTranslation, Object.assign(obj, arg0.props.animationOptions)).start((finished) => {
-          if (finished.finished) {
-            if (arg1 > 0) {
-              if (null != finished.props.onSwipeableLeftOpen) {
-                const props3 = finished.props;
-                props3.onSwipeableLeftOpen();
-              }
-              if (null != finished.props.onSwipeableOpen) {
-                const props4 = finished.props;
-                props4.onSwipeableOpen("left", finished);
-              }
-            } else if (arg1 < 0) {
-              if (null != finished.props.onSwipeableRightOpen) {
-                const props = finished.props;
-                props.onSwipeableRightOpen();
-              }
-              if (null != finished.props.onSwipeableOpen) {
-                const props2 = finished.props;
-                props2.onSwipeableOpen("right", finished);
-              }
-            } else {
-              let str = "right";
-              if (finished > 0) {
-                str = "left";
-              }
-              if (null != finished.props.onSwipeableClose) {
-                const props5 = finished.props;
-                props5.onSwipeableClose(str, finished);
-              }
-            }
-          }
-        });
-        if (toValue > 0) {
-          if (null != tmp2Result.props.onSwipeableLeftWillOpen) {
-            const props3 = tmp2Result.props;
-            const result = props3.onSwipeableLeftWillOpen();
-          }
-          if (null != tmp2Result.props.onSwipeableWillOpen) {
-            const props4 = tmp2Result.props;
-            props4.onSwipeableWillOpen("left");
-          }
-        } else if (toValue < 0) {
-          if (null != tmp2Result.props.onSwipeableRightWillOpen) {
-            const props = tmp2Result.props;
-            const result1 = props.onSwipeableRightWillOpen();
-          }
-          if (null != tmp2Result.props.onSwipeableWillOpen) {
-            const props2 = tmp2Result.props;
-            props2.onSwipeableWillOpen("right");
-          }
-        } else {
-          let str = "right";
-          if (arg0 > 0) {
-            str = "left";
-          }
-          if (null != tmp2Result.props.onSwipeableWillClose) {
-            const props5 = tmp2Result.props;
-            props5.onSwipeableWillClose(str);
+          if (!tmp3) {
+            tmp2Result.hideUnderlay();
           }
         }
       };
-      tmp2Result.onRowLayout = (nativeEvent) => {
-        tmp2Result.setState({ rowWidth: nativeEvent.nativeEvent.layout.width });
-      };
-      tmp2Result.currentOffset = () => {
-        const state = tmp2Result.state;
-        const leftWidth = state.leftWidth;
-        let num = 0;
-        if (undefined !== leftWidth) {
-          num = leftWidth;
-        }
-        const rowWidth = state.rowWidth;
-        let num2 = 0;
-        if (undefined !== rowWidth) {
-          num2 = rowWidth;
-        }
-        const rowState = state.rowState;
-        let rightOffset = tmp2Result.state.rightOffset;
-        if (1 !== rowState) {
-          let num4 = 0;
-          if (-1 === rowState) {
-            if (undefined === rightOffset) {
-              rightOffset = num2;
-            }
-            num4 = -num2 - rightOffset;
-          }
-          num = num4;
-        }
-        return num;
-      };
-      tmp2Result.close = () => {
-        tmp2Result.animateRow(tmp2Result.currentOffset(), 0);
-      };
-      tmp2Result.openLeft = () => {
-        const leftWidth = tmp2Result.state.leftWidth;
-        let num = 0;
-        if (undefined !== leftWidth) {
-          num = leftWidth;
-        }
-        tmp2Result.animateRow(tmp2Result.currentOffset(), num);
-      };
-      tmp2Result.openRight = () => {
-        const rowWidth = tmp2Result.state.rowWidth;
-        let num = 0;
-        if (undefined !== rowWidth) {
-          num = rowWidth;
-        }
-        let rightOffset = tmp2Result.state.rightOffset;
-        if (undefined === rightOffset) {
-          rightOffset = num;
-        }
-        const diff = num - rightOffset;
-        tmp2Result.animateRow(tmp2Result.currentOffset(), -diff);
-      };
-      tmp2Result.reset = () => {
-        let dragX;
-        let rowTranslation;
-        ({ dragX, rowTranslation } = tmp2Result.state);
-        dragX.setValue(0);
-        rowTranslation.setValue(0);
-        tmp2Result.setState({ rowState: 0 });
-      };
-      value = new closure_7.Value(0);
-      obj = { dragX: value };
-      value1 = new closure_7.Value(0);
-      obj.rowTranslation = value1;
-      obj.rowState = 0;
-      obj.leftWidth = undefined;
-      obj.rightOffset = undefined;
-      obj.rowWidth = undefined;
-      tmp2Result.state = obj;
-      updateAnimatedEventResult = tmp2Result.updateAnimatedEvent(Component, tmp2Result.state);
-      items1 = [];
-      items1[0] = { nativeEvent: { translationX: value } };
-      obj1 = { useNativeDriver: Component.useNativeAnimations };
-      tmp2Result.onGestureEvent = closure_7.event(items1, obj1);
+      tmp2Result.state = { extraChildStyle: null, extraUnderlayStyle: null };
       return tmp2Result;
     }
   }
-  const arg1 = Swipeable;
-  callback2(Swipeable, Component);
+  callback2(TouchableHighlight, Component);
   let obj = {
-    key: "shouldComponentUpdate",
-    value: function shouldComponentUpdate(friction, leftWidth) {
+    key: "renderChildren",
+    value: function renderChildren() {
       const self = this;
-      if (!tmp) {
-        self.updateAnimatedEvent(friction, leftWidth);
+      if (this.props.children) {
+        const Children = outer1_10.Children;
+        const onlyResult = Children.only(self.props.children);
+        const obj = { style: outer1_11.compose(onlyResult.props.style, self.state.extraChildStyle) };
+        return outer1_10.cloneElement(onlyResult, obj);
+      } else {
+        return outer1_13(outer1_12, {});
       }
-      return true;
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "render",
     value: function render() {
-      let dragOffsetFromLeftEdge;
-      let renderLeftActions;
-      let renderRightActions;
       const self = this;
-      const Swipeable = this;
-      const rowState = this.state.rowState;
       const props = this.props;
-      ({ renderLeftActions, renderRightActions, dragOffsetFromLeftEdge } = props);
-      let num = 10;
-      if (undefined !== dragOffsetFromLeftEdge) {
-        num = dragOffsetFromLeftEdge;
+      let style = props.style;
+      if (undefined === style) {
+        style = {};
       }
-      const dragOffsetFromRightEdge = props.dragOffsetFromRightEdge;
-      let num2 = 10;
-      if (undefined !== dragOffsetFromRightEdge) {
-        num2 = dragOffsetFromRightEdge;
-      }
-      let tmp = renderLeftActions;
-      if (renderLeftActions) {
-        let obj = {};
-        const items = [closure_11.leftActions, ];
-        obj = {};
-        obj = { translateX: self.leftActionTranslate };
-        const items1 = [obj];
-        obj.transform = items1;
-        items[1] = obj;
-        obj.style = items;
-        const items2 = [renderLeftActions(self.showLeftAction, self.transX, self), ];
-        const obj1 = {
-          onLayout(leftWidth) {
-              return self.setState({ leftWidth: leftWidth.nativeEvent.layout.x });
-            }
-        };
-        items2[1] = callback3(closure_8, obj1);
-        obj.children = items2;
-        tmp = callback4(RN.View, obj);
-      }
-      let tmp7 = renderRightActions;
-      if (renderRightActions) {
-        const obj2 = {};
-        const items3 = [closure_11.rightActions, ];
-        const obj3 = {};
-        const obj4 = { translateX: self.rightActionTranslate };
-        const items4 = [obj4];
-        obj3.transform = items4;
-        items3[1] = obj3;
-        obj2.style = items3;
-        const items5 = [renderRightActions(self.showRightAction, self.transX, self), ];
-        const obj5 = {
-          onLayout(nativeEvent) {
-              return self.setState({ rightOffset: nativeEvent.nativeEvent.layout.x });
-            }
-        };
-        items5[1] = callback3(closure_8, obj5);
-        obj2.children = items5;
-        tmp7 = callback4(RN.View, obj2);
-      }
-      const activeOffsetX = [-num2, num];
-      const obj6 = { onGestureEvent: self.onGestureEvent, onHandlerStateChange: self.onHandlerStateChange };
-      const obj7 = { onLayout: self.onRowLayout, style: items7 };
-      const items7 = [closure_11.container, self.props.containerStyle];
-      const items8 = [tmp, tmp7, ];
-      const obj8 = { enabled: 0 !== rowState, touchAction: "pan-y", onHandlerStateChange: self.onTapHandlerStateChange };
-      const obj9 = {};
-      let str = "box-only";
-      if (0 === rowState) {
-        str = "auto";
-      }
-      obj9.pointerEvents = str;
-      const items9 = [{ translateX: self.transX }];
-      const items10 = [{ transform: items9 }, self.props.childrenContainerStyle];
-      obj9.style = items10;
-      obj9.children = props.children;
-      obj8.children = callback3(RN.View, obj9);
-      items8[2] = callback3(Swipeable(closure_1[10]).TapGestureHandler, obj8);
-      obj7.children = items8;
-      obj6.children = callback4(RN.View, obj7);
-      return callback3(Swipeable(closure_1[9]).PanGestureHandler, Object.assign({ activeOffsetX, touchAction: "pan-y" }, self.props, obj6));
+      const obj = { style: items, onStateChange: self.onStateChange };
+      items = [style, self.state.extraUnderlayStyle];
+      const tmp = outer1_4(props, outer1_3);
+      obj.children = self.renderChildren();
+      return outer1_13(outer1_1(outer1_2[9]), Object.assign({}, tmp, obj));
     }
   };
   items[1] = obj;
-  return callback(Swipeable, items);
-}(arg1(dependencyMap[5]).Component);
-tmp5.defaultProps = { "Null": "accessibilityRole", "Null": "no", "Null": "Date" };
-let obj = { container: { overflow: "hidden" } };
-obj = {};
-let str = "row";
-if (I18nManager.isRTL) {
-  str = "row-reverse";
-}
-obj.flexDirection = str;
-obj.leftActions = Object.assign({}, StyleSheet.absoluteFillObject, obj);
-obj = {};
-let str2 = "row-reverse";
-if (I18nManager.isRTL) {
-  str2 = "row";
-}
-obj.flexDirection = str2;
-obj.rightActions = Object.assign({}, StyleSheet.absoluteFillObject, obj);
-const styles = StyleSheet.create(obj);
+  return callback(TouchableHighlight, items);
+})(require("result").Component);
+tmp3.defaultProps = Object.assign({}, require("_isNativeReflectConstruct").defaultProps, { activeOpacity: 0.85, delayPressOut: 100, underlayColor: "black" });
 
-export default tmp5;
+export default tmp3;

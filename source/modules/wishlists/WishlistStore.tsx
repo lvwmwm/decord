@@ -1,9 +1,20 @@
-// Module ID: 8670
-// Function ID: 68624
+// Module ID: 8677
+// Function ID: 68664
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 8678, 1184, 6856, 566, 686, 2]
 
-// Module 8670 (_isNativeReflectConstruct)
+// Module 8677 (_isNativeReflectConstruct)
+import isNonEmptyString from "isNonEmptyString";
+import closure_4 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,35 +25,29 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getOrCreateEntry(wishlistId) {
-  let tmp2 = closure_11[wishlistId];
+  let tmp2 = dependencyMap[wishlistId];
   if (tmp2 == null) {
-    const obj = { 9223372036854775807: "IconComponent", 0: "useStateFromStores" };
+    const obj = { data: null, status: "not_loaded" };
     tmp[wishlistId] = obj;
     tmp2 = obj;
   }
   return tmp2;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ getWishlistSkuIds: closure_8, wishlistHasSkuId: closure_9 } = arg1(dependencyMap[5]));
-let closure_10 = importDefault(dependencyMap[5]);
+({ getWishlistSkuIds: closure_8, wishlistHasSkuId: closure_9 } = _isNativeReflectConstruct);
 let closure_11 = {};
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class WishlistStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, WishlistStore);
-      obj = closure_6(WishlistStore);
-      tmp2 = closure_5;
-      if (closure_12()) {
+      tmp = outer1_3(this, WishlistStore);
+      obj = outer1_6(WishlistStore);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -51,19 +56,18 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = WishlistStore;
   callback2(WishlistStore, Store);
   let obj = {
     key: "get",
     value(arg0) {
-      let obj = closure_11[arg0];
+      let obj = outer1_11[arg0];
       if (null == obj) {
-        obj = { 9223372036854775807: "IconComponent", 0: "useStateFromStores" };
+        obj = { data: null, status: "not_loaded" };
       }
       return obj;
     }
   };
-  const items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , ];
   obj = {
     key: "getWishlist",
     value(arg0) {
@@ -76,7 +80,7 @@ let tmp3 = (Store) => {
     value(arg0) {
       const data = this.get(arg0).data;
       if (null != data) {
-        let items = callback3(data);
+        let items = outer1_8(data);
       } else {
         items = [];
       }
@@ -90,7 +94,7 @@ let tmp3 = (Store) => {
       const data = this.get(arg0).data;
       let tmp = null != data;
       if (tmp) {
-        tmp = callback4(data, arg1);
+        tmp = outer1_9(data, arg1);
       }
       return tmp;
     }
@@ -132,8 +136,8 @@ let tmp3 = (Store) => {
     }
   };
   return callback(WishlistStore, items);
-}(importDefault(dependencyMap[8]).Store);
-tmp3 = new tmp3(importDefault(dependencyMap[9]), {
+})(require("initialize").Store);
+tmp3 = new tmp3(require("dispatcher"), {
   WISHLIST_FETCH_START: function handleFetchStart(wishlistId) {
     const tmp = getOrCreateEntry(wishlistId.wishlistId);
     tmp.status = "fetching";
@@ -163,10 +167,10 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
     tmp.lastFetchedAt = Date.now();
   },
   WISHLIST_ADD_SKU_FAILURE: function handleAddSkuFailure(error) {
-    importDefault(dependencyMap[6]).captureException(error.error);
+    importDefault(1184).captureException(error.error);
   },
   WISHLIST_REMOVE_SKU_START: function handleRemoveSkuStart(skuId) {
-    const arg1 = skuId.skuId;
+    skuId = skuId.skuId;
     const tmp = getOrCreateEntry(skuId.wishlistId);
     if (null != tmp.data) {
       const obj = { id: tmp.data.id, userId: tmp.data.userId };
@@ -187,7 +191,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
   },
   WISHLIST_REMOVE_SKU_FAILURE: function handleRemoveSkuFailure(wishlistId) {
     getOrCreateEntry(wishlistId.wishlistId).updatedAt = undefined;
-    importDefault(dependencyMap[6]).captureException(wishlistId.error);
+    importDefault(1184).captureException(wishlistId.error);
   },
   WISHLIST_UPDATE_VISIBILITY_SUCCESS: function handleUpdateVisibilitySuccess(wishlistId) {
     const tmp = getOrCreateEntry(wishlistId.wishlistId);
@@ -196,7 +200,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
     tmp.lastFetchedAt = Date.now();
   },
   WISHLIST_UPDATE_VISIBILITY_FAILURE: function handleUpdateVisibilityFailure(error) {
-    importDefault(dependencyMap[6]).captureException(error.error);
+    importDefault(1184).captureException(error.error);
   },
   WISHLIST_REORDER_START: function handleReorderStart(wishlistId) {
     getOrCreateEntry(wishlistId.wishlistId).data = wishlistId.newWishlistData;
@@ -210,128 +214,28 @@ tmp3 = new tmp3(importDefault(dependencyMap[9]), {
   },
   WISHLIST_REORDER_FAILURE: function handleReorderFailure(wishlistId) {
     getOrCreateEntry(wishlistId.wishlistId).updatedAt = undefined;
-    importDefault(dependencyMap[6]).captureException(wishlistId.error);
+    importDefault(1184).captureException(wishlistId.error);
   },
   WISHLIST_ITEM_PURCHASED: function handleWishlistItemPurchased(arg0) {
     let recipientId;
     let skuId;
     ({ recipientId, skuId } = arg0);
-    const firstWishlistId = arg1(dependencyMap[7]).default.getFirstWishlistId(recipientId);
+    const firstWishlistId = require(6856) /* _isNativeReflectConstruct */.default.getFirstWishlistId(recipientId);
     let tmp2 = null != firstWishlistId;
     if (tmp2) {
-      tmp2 = null != closure_11[firstWishlistId];
+      tmp2 = null != dependencyMap[firstWishlistId];
     }
     if (tmp2) {
-      tmp2 = null != closure_11[firstWishlistId].data;
+      tmp2 = null != dependencyMap[firstWishlistId].data;
     }
     if (tmp2) {
-      tmp2 = callback3(closure_11[firstWishlistId].data, skuId);
+      tmp2 = callback3(dependencyMap[firstWishlistId].data, skuId);
     }
     if (tmp2) {
-      closure_11[firstWishlistId].updatedAt = undefined;
+      dependencyMap[firstWishlistId].updatedAt = undefined;
     }
   }
 });
-const obj = {
-  WISHLIST_FETCH_START: function handleFetchStart(wishlistId) {
-    const tmp = getOrCreateEntry(wishlistId.wishlistId);
-    tmp.status = "fetching";
-    tmp.error = undefined;
-  },
-  WISHLIST_FETCH_SUCCESS: function handleFetchSuccess(wishlistId) {
-    let updatedAt;
-    let wishlistData;
-    ({ wishlistData, updatedAt } = wishlistId);
-    const tmp = getOrCreateEntry(wishlistId.wishlistId);
-    tmp.data = wishlistData;
-    tmp.status = "success";
-    tmp.error = undefined;
-    tmp.updatedAt = updatedAt;
-    tmp.lastFetchedAt = Date.now();
-  },
-  WISHLIST_FETCH_FAILURE: function handleFetchFailure(wishlistId) {
-    const tmp = getOrCreateEntry(wishlistId.wishlistId);
-    tmp.status = "error";
-    tmp.error = wishlistId.error;
-  },
-  WISHLIST_ADD_SKU_SUCCESS: function handleAddSkuSuccess(wishlistId) {
-    const tmp = getOrCreateEntry(wishlistId.wishlistId);
-    tmp.data = wishlistId.wishlistData;
-    tmp.status = "success";
-    tmp.error = undefined;
-    tmp.lastFetchedAt = Date.now();
-  },
-  WISHLIST_ADD_SKU_FAILURE: function handleAddSkuFailure(error) {
-    importDefault(dependencyMap[6]).captureException(error.error);
-  },
-  WISHLIST_REMOVE_SKU_START: function handleRemoveSkuStart(skuId) {
-    const arg1 = skuId.skuId;
-    const tmp = getOrCreateEntry(skuId.wishlistId);
-    if (null != tmp.data) {
-      const obj = { id: tmp.data.id, userId: tmp.data.userId };
-      const items = tmp.data.items;
-      obj.items = items.filter((skuId) => skuId.skuId !== skuId);
-      obj.applications = tmp.data.applications;
-      const prototype = ctor.prototype;
-      const tmp6 = new ctor(obj);
-      tmp.data = tmp6;
-    }
-  },
-  WISHLIST_REMOVE_SKU_SUCCESS: function handleRemoveSkuSuccess(wishlistId) {
-    const tmp = getOrCreateEntry(wishlistId.wishlistId);
-    tmp.data = wishlistId.wishlistData;
-    tmp.status = "success";
-    tmp.error = undefined;
-    tmp.lastFetchedAt = Date.now();
-  },
-  WISHLIST_REMOVE_SKU_FAILURE: function handleRemoveSkuFailure(wishlistId) {
-    getOrCreateEntry(wishlistId.wishlistId).updatedAt = undefined;
-    importDefault(dependencyMap[6]).captureException(wishlistId.error);
-  },
-  WISHLIST_UPDATE_VISIBILITY_SUCCESS: function handleUpdateVisibilitySuccess(wishlistId) {
-    const tmp = getOrCreateEntry(wishlistId.wishlistId);
-    tmp.status = "success";
-    tmp.error = undefined;
-    tmp.lastFetchedAt = Date.now();
-  },
-  WISHLIST_UPDATE_VISIBILITY_FAILURE: function handleUpdateVisibilityFailure(error) {
-    importDefault(dependencyMap[6]).captureException(error.error);
-  },
-  WISHLIST_REORDER_START: function handleReorderStart(wishlistId) {
-    getOrCreateEntry(wishlistId.wishlistId).data = wishlistId.newWishlistData;
-  },
-  WISHLIST_REORDER_SUCCESS: function handleReorderSuccess(wishlistId) {
-    const tmp = getOrCreateEntry(wishlistId.wishlistId);
-    tmp.data = wishlistId.wishlistData;
-    tmp.status = "success";
-    tmp.error = undefined;
-    tmp.lastFetchedAt = Date.now();
-  },
-  WISHLIST_REORDER_FAILURE: function handleReorderFailure(wishlistId) {
-    getOrCreateEntry(wishlistId.wishlistId).updatedAt = undefined;
-    importDefault(dependencyMap[6]).captureException(wishlistId.error);
-  },
-  WISHLIST_ITEM_PURCHASED: function handleWishlistItemPurchased(arg0) {
-    let recipientId;
-    let skuId;
-    ({ recipientId, skuId } = arg0);
-    const firstWishlistId = arg1(dependencyMap[7]).default.getFirstWishlistId(recipientId);
-    let tmp2 = null != firstWishlistId;
-    if (tmp2) {
-      tmp2 = null != closure_11[firstWishlistId];
-    }
-    if (tmp2) {
-      tmp2 = null != closure_11[firstWishlistId].data;
-    }
-    if (tmp2) {
-      tmp2 = callback3(closure_11[firstWishlistId].data, skuId);
-    }
-    if (tmp2) {
-      closure_11[firstWishlistId].updatedAt = undefined;
-    }
-  }
-};
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/wishlists/WishlistStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/wishlists/WishlistStore.tsx");
 
 export default tmp3;

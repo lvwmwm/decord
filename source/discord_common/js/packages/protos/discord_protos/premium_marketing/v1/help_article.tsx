@@ -1,9 +1,17 @@
-// Module ID: 7132
-// Function ID: 57440
+// Module ID: 7137
+// Function ID: 57474
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 7136, 1284, 2]
 
-// Module 7132 (_isNativeReflectConstruct)
+// Module 7137 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import _callSuper from "_callSuper";
+import module_1284 from "module_1284";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,57 +21,50 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let tmp2 = (MessageType) => {
+let tmp2 = ((MessageType) => {
   class HelpArticle$Type {
     constructor() {
       self = this;
-      tmp = closure_3(this, HelpArticle$Type);
+      tmp = outer1_3(this, HelpArticle$Type);
       items = [, , ];
-      items[0] = {};
-      items[1] = {};
-      items[2] = {
-        T() {
-              return callback(closure_1[6]).LocalizedString;
-            }
+      items[0] = { no: 1, name: "id", kind: "scalar", T: 9 };
+      items[1] = { no: 2, name: "link_text", kind: "scalar", T: 9 };
+      obj = { no: 3, name: "link_text_localized", kind: "message" };
+      obj.T = function T() {
+        return HelpArticle$Type(outer2_1[6]).LocalizedString;
       };
-      items1 = [1817285918700075700000000000];
+      items[2] = obj;
+      items1 = ["discord_protos.premium_marketing.v1.HelpArticle"];
       items1[1] = items;
-      obj = closure_6(HelpArticle$Type);
-      tmp2 = closure_5;
-      if (closure_8()) {
+      obj2 = outer1_6(HelpArticle$Type);
+      tmp2 = outer1_5;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj2, items1, outer1_6(self).constructor);
       } else {
-        constructResult = obj.apply(self, items1);
+        constructResult = obj2.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = HelpArticle$Type;
   callback2(HelpArticle$Type, MessageType);
   let obj = {
     key: "create",
     value(arr) {
-      let obj = { 1481739105: "Normal", 1544673627: true };
+      let obj = { id: "", linkText: "" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, HelpArticle$Type(closure_1[7]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, HelpArticle$Type(outer1_1[7]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = HelpArticle$Type(closure_1[7]).reflectionMergePartial(this, obj, arr);
-        const obj3 = HelpArticle$Type(closure_1[7]);
+        const result = HelpArticle$Type(outer1_1[7]).reflectionMergePartial(this, obj, arr);
+        const obj3 = HelpArticle$Type(outer1_1[7]);
       }
       return obj;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "internalBinaryRead",
     value(pos, arg1, readUnknownField) {
@@ -76,8 +77,8 @@ let tmp2 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           obj.id = pos.string();
@@ -89,8 +90,8 @@ let tmp2 = (MessageType) => {
           tmp11 = tmp4;
         } else if (3 === tmp7) {
           let tmp26 = HelpArticle$Type;
-          let tmp27 = closure_1;
-          let LocalizedString = HelpArticle$Type(closure_1[6]).LocalizedString;
+          let tmp27 = outer1_1;
+          let LocalizedString = HelpArticle$Type(outer1_1[6]).LocalizedString;
           let tmp28 = LocalizedString;
           let tmp29 = pos;
           let tmp30 = readUnknownField;
@@ -123,8 +124,8 @@ let tmp2 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = HelpArticle$Type;
-                let tmp13 = closure_1;
-                onRead = HelpArticle$Type(closure_1[7]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = HelpArticle$Type(outer1_1[7]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -136,8 +137,8 @@ let tmp2 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -147,23 +148,23 @@ let tmp2 = (MessageType) => {
     key: "internalBinaryWrite",
     value(id, tag, writeUnknownFields) {
       if ("" !== id.id) {
-        tag.tag(1, HelpArticle$Type(closure_1[7]).WireType.LengthDelimited).string(id.id);
-        const tagResult = tag.tag(1, HelpArticle$Type(closure_1[7]).WireType.LengthDelimited);
+        tag.tag(1, HelpArticle$Type(outer1_1[7]).WireType.LengthDelimited).string(id.id);
+        const tagResult = tag.tag(1, HelpArticle$Type(outer1_1[7]).WireType.LengthDelimited);
       }
       if ("" !== id.linkText) {
-        tag.tag(2, HelpArticle$Type(closure_1[7]).WireType.LengthDelimited).string(id.linkText);
-        const tagResult1 = tag.tag(2, HelpArticle$Type(closure_1[7]).WireType.LengthDelimited);
+        tag.tag(2, HelpArticle$Type(outer1_1[7]).WireType.LengthDelimited).string(id.linkText);
+        const tagResult1 = tag.tag(2, HelpArticle$Type(outer1_1[7]).WireType.LengthDelimited);
       }
       if (id.linkTextLocalized) {
-        const LocalizedString = HelpArticle$Type(closure_1[6]).LocalizedString;
-        const tagResult2 = tag.tag(3, HelpArticle$Type(closure_1[7]).WireType.LengthDelimited);
-        const joined = LocalizedString.internalBinaryWrite(id.linkTextLocalized, tag.tag(3, HelpArticle$Type(closure_1[7]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(id.linkTextLocalized, tag.tag(3, HelpArticle$Type(closure_1[7]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const LocalizedString = HelpArticle$Type(outer1_1[6]).LocalizedString;
+        const tagResult2 = tag.tag(3, HelpArticle$Type(outer1_1[7]).WireType.LengthDelimited);
+        const joined = LocalizedString.internalBinaryWrite(id.linkTextLocalized, tag.tag(3, HelpArticle$Type(outer1_1[7]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(id.linkTextLocalized, tag.tag(3, HelpArticle$Type(outer1_1[7]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = HelpArticle$Type(closure_1[7]).UnknownFieldHandler.onWrite;
+          onWrite = HelpArticle$Type(outer1_1[7]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, id, tag);
@@ -173,8 +174,8 @@ let tmp2 = (MessageType) => {
   };
   items[2] = obj;
   return callback(HelpArticle$Type, items);
-}(arg1(dependencyMap[7]).MessageType);
+})(require("module_1284").MessageType);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[8]).fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/help_article.tsx");
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/help_article.tsx");
 
 export const HelpArticle = tmp2;

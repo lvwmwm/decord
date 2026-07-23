@@ -1,43 +1,43 @@
-// Module ID: 15246
-// Function ID: 115098
+// Module ID: 15362
+// Function ID: 117268
 // Name: MediaGrid
-// Dependencies: []
+// Dependencies: [31, 27, 9103, 33, 4130, 15358, 11398, 7879, 15343, 2]
 // Exports: default
 
-// Module 15246 (MediaGrid)
+// Module 15362 (MediaGrid)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let SEARCH_LIST_HORIZONTAL_PADDING;
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ SEARCH_LIST_HORIZONTAL_PADDING, MEDIA_NUM_COLUMNS: closure_5, MEDIA_ITEM_GAP_WIDTH: closure_6 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = { paddingLeft: SEARCH_LIST_HORIZONTAL_PADDING - 2, paddingRight: SEARCH_LIST_HORIZONTAL_PADDING + 4 };
-let closure_8 = obj.createStyles({ container: obj });
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/search/native/components/list/rows/MediaGrid.tsx");
+let closure_5;
+let closure_6;
+const require = arg1;
+({ SEARCH_LIST_HORIZONTAL_PADDING, MEDIA_NUM_COLUMNS: closure_5, MEDIA_ITEM_GAP_WIDTH: closure_6 } = SearchAutocompleteSelectAnalyticsActions);
+_createForOfIteratorHelperLoose = { paddingLeft: SEARCH_LIST_HORIZONTAL_PADDING - 2, paddingRight: SEARCH_LIST_HORIZONTAL_PADDING + 4 };
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: _createForOfIteratorHelperLoose });
+const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/rows/MediaGrid.tsx");
 
 export default function MediaGrid(media) {
   media = media.media;
-  const arg1 = media;
   const mediaSize = media.mediaSize;
-  const importDefault = mediaSize;
   const onPress = media.onPress;
-  const dependencyMap = onPress;
   const animate = media.animate;
-  const React = animate;
   const items = [media.length, mediaSize, onPress, animate];
   let obj = { style: callback().container };
-  const callback = React.useCallback((arg0) => {
+  callback = animate.useCallback((arg0) => {
     let index;
     let item;
     ({ item, index } = arg0);
     let obj = { animate, size: mediaSize, media: item, onPress };
     const tmp = mediaSize(onPress[5]);
-    obj = { itemIndex: index, numItems: media.length, numColumns: closure_5, spacing: closure_6 };
+    obj = { itemIndex: index, numItems: media.length, numColumns: outer1_5, spacing: outer1_6 };
     obj.containerStyle = media(onPress[6]).getMediaGridItemStyles(obj);
-    return callback(tmp, obj);
+    return outer1_7(tmp, obj);
   }, items);
-  obj = { numColumns: closure_5, data: media, renderItem: callback, ItemSeparatorComponent: arg1(dependencyMap[8]).MediaVerticalSeparator, scrollEnabled: false };
-  obj.children = jsx(arg1(dependencyMap[7]).FlashList, obj);
-  return <View {...obj} />;
+  obj = { numColumns: closure_5, data: media, renderItem: callback, ItemSeparatorComponent: media(onPress[8]).MediaVerticalSeparator, scrollEnabled: false };
+  obj.children = jsx(media(onPress[7]).FlashList, { numColumns: closure_5, data: media, renderItem: callback, ItemSeparatorComponent: media(onPress[8]).MediaVerticalSeparator, scrollEnabled: false });
+  return <View numColumns={closure_5} data={media} renderItem={callback} ItemSeparatorComponent={media(onPress[8]).MediaVerticalSeparator} scrollEnabled={false} />;
 };

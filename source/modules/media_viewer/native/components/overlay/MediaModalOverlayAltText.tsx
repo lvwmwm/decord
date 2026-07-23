@@ -1,26 +1,27 @@
-// Module ID: 12126
-// Function ID: 93388
-// Dependencies: []
+// Module ID: 12240
+// Function ID: 95539
+// Dependencies: [31, 33, 4130, 689, 1557, 3803, 4660, 10858, 4126, 1212, 2]
 
-// Module 12126
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[2]).createStyles((arg0) => {
+// Module 12240
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { backgroundColor: importDefault(dependencyMap[3]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE, marginVertical: importDefault(dependencyMap[3]).space.PX_8, marginHorizontal: importDefault(dependencyMap[3]).space.PX_8, marginRight: importDefault(dependencyMap[3]).space.PX_8 + arg0, paddingHorizontal: importDefault(dependencyMap[3]).space.PX_8, paddingVertical: importDefault(dependencyMap[3]).space.PX_4, borderRadius: importDefault(dependencyMap[3]).radii.sm, alignSelf: "flex-end" };
+  obj = { backgroundColor: importDefault(689).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE, marginVertical: importDefault(689).space.PX_8, marginHorizontal: importDefault(689).space.PX_8, marginRight: importDefault(689).space.PX_8 + arg0, paddingHorizontal: importDefault(689).space.PX_8, paddingVertical: importDefault(689).space.PX_4, borderRadius: importDefault(689).radii.sm, alignSelf: "flex-end" };
   obj.container = obj;
   return obj;
 });
-const obj2 = arg1(dependencyMap[2]);
-const memoResult = importAllResult.memo(function MediaModalOverlayAltTextButton(description) {
+const memoResult = require("result").memo(function MediaModalOverlayAltTextButton(description) {
   description = description.description;
-  let arg1;
-  let str = "";
+  let str;
+  str = "";
   if (null != description) {
     str = description;
   }
-  arg1 = str;
-  const ViewImageDescriptions = arg1(dependencyMap[5]).ViewImageDescriptions;
+  const ViewImageDescriptions = str(3803).ViewImageDescriptions;
   let tmp2 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp2 = null;
@@ -31,19 +32,19 @@ const memoResult = importAllResult.memo(function MediaModalOverlayAltTextButton(
               const obj = {};
               const str = "";
               obj.description = str;
-              callback(closure_2[7])(obj);
+              outer1_1(outer1_2[7])(obj);
             },
-        hitSlop: {}
+        hitSlop: { top: 6, bottom: 6, left: 6, right: 6 }
       };
-      obj = { cachedAt: null, edpbxy: "none" };
-      const intl = arg1(dependencyMap[9]).intl;
-      obj.children = intl.string(arg1(dependencyMap[9]).t.Q5VqrN);
-      obj.children = jsx(arg1(dependencyMap[8]).Text, obj);
-      tmp2 = jsx(arg1(dependencyMap[6]).PressableOpacity, obj);
+      obj = { variant: "text-xs/semibold", color: "text-overlay-light" };
+      const intl = str(1212).intl;
+      obj.children = intl.string(str(1212).t.Q5VqrN);
+      obj.children = jsx(str(4126).Text, { variant: "text-xs/semibold", color: "text-overlay-light" });
+      tmp2 = jsx(str(4660).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light" });
     }
   }
   return tmp2;
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltText.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltText.tsx");
 
 export default memoResult;

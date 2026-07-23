@@ -1,28 +1,41 @@
-// Module ID: 9940
-// Function ID: 76900
+// Module ID: 9948
+// Function ID: 76940
 // Name: DoubleTapEmojiEditNudgeInner
-// Dependencies: []
+// Dependencies: [5, 31, 27, 4122, 1451, 653, 1852, 33, 4130, 689, 3803, 7656, 1453, 566, 1392, 9326, 675, 9339, 4126, 1212, 5151, 4660, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 9940 (DoubleTapEmojiEditNudgeInner)
+// Module 9948 (DoubleTapEmojiEditNudgeInner)
+import ME from "ME";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import { AnalyticEvents } from "ME";
+import set from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "get ActivityIndicator";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_9;
+const require = arg1;
 function DoubleTapEmojiEditNudgeInner(location) {
   const _location = location.location;
-  const arg1 = _location;
   const emoji = location.emoji;
-  const importDefault = emoji;
-  let obj = arg1(closure_2[12]);
-  closure_2 = obj.useAppEntryKey();
-  let obj1 = arg1(closure_2[13]);
-  const items = [closure_6];
-  const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let closure_3 = stateFromStores;
+  let obj = _location(1453);
+  const dependencyMap = obj.useAppEntryKey();
+  let obj1 = _location(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.useReducedMotion);
   const tmp3 = callback3(callback((arg0) => arg0.byAppEntry[closure_2].fontScale));
   const items1 = [emoji, stateFromStores];
   const items2 = [_location];
   const memo = React.useMemo(() => {
     if (null != emoji.id) {
-      let obj = emoji(closure_2[14]);
-      obj = { id: emoji.id, size: closure_9 };
+      let obj = emoji(1392);
+      obj = { id: emoji.id, size: outer1_9 };
       let animated = !stateFromStores;
       if (animated) {
         animated = emoji.animated;
@@ -35,21 +48,21 @@ function DoubleTapEmojiEditNudgeInner(location) {
     return url;
   }, items1);
   obj = { style: tmp3.doubleTapEmojiEditNudgeContainer };
-  const callback = React.useCallback(() => {
-    let obj = _location(closure_2[15]);
-    obj = { pickerIntention: constants.DEFAULT_REACT_EMOJI };
+  callback = React.useCallback(() => {
+    let obj = _location(9326);
+    obj = { pickerIntention: outer1_10.DEFAULT_REACT_EMOJI };
     // CreateGeneratorClosureLongIndex (0x67)
-    const _location = stateFromStores(tmp);
+    let closure_0 = stateFromStores(tmp);
     obj.onPressEmoji = function() {
       return callback(...arguments);
     };
     obj.startExpanded = true;
     const result = obj.openEmojiPickerActionSheet(obj, "stack");
   }, items2);
-  obj = { "Null": true, "Null": "/assets/images/native/community" };
-  const intl = arg1(closure_2[19]).intl;
-  obj.children = intl.string(arg1(closure_2[19]).t.1EUr/W);
-  const items3 = [callback2(arg1(closure_2[18]).Text, obj), , ];
+  obj = { color: "text-subtle", variant: "text-sm/normal" };
+  const intl = _location(1212).intl;
+  obj.children = intl.string(_location(1212).t["1EUr/W"]);
+  const items3 = [callback2(_location(4126).Text, obj), , ];
   obj1 = { style: tmp3.doubleTapEmojiContainer, fastImageStyle: tmp3.doubleTapCustomEmoji, textEmojiStyle: tmp3.doubleTapTextEmoji, src: memo };
   let str = "";
   const tmp = callback((arg0) => arg0.byAppEntry[closure_2].fontScale);
@@ -60,50 +73,40 @@ function DoubleTapEmojiEditNudgeInner(location) {
     str = emoji.surrogates;
   }
   obj1.name = str;
-  items3[1] = tmp8(importDefault(closure_2[20]), obj1);
+  items3[1] = tmp8(emoji(5151), obj1);
   const obj2 = { accessibilityRole: "button", onPress: callback, hitSlop: closure_13, style: tmp3.editButton };
-  const obj3 = {};
-  const intl2 = arg1(closure_2[19]).intl;
-  obj3.children = intl2.string(arg1(closure_2[19]).t.bt75uw);
-  obj2.children = callback2(arg1(closure_2[18]).Text, obj3);
-  items3[2] = callback2(arg1(closure_2[21]).PressableOpacity, obj2);
+  const obj3 = { color: "text-brand", variant: "text-sm/normal" };
+  const intl2 = _location(1212).intl;
+  obj3.children = intl2.string(_location(1212).t.bt75uw);
+  obj2.children = callback2(_location(4126).Text, obj3);
+  items3[2] = callback2(_location(4660).PressableOpacity, obj2);
   obj.children = items3;
   return tmp6(tmp7, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-({ EMOJI_URL_BASE_SIZE: closure_9, EmojiIntention: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let closure_13 = { -9223372036854775808: 800, -9223372036854775808: 16 };
-const tmp3 = arg1(dependencyMap[7]);
-let closure_14 = arg1(dependencyMap[8]).createStyles((arg0) => {
+({ EMOJI_URL_BASE_SIZE: closure_9, EmojiIntention: closure_10 } = set);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+let closure_13 = { left: 8, right: 8 };
+let closure_14 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { marginHorizontal: importDefault(dependencyMap[9]).space.PX_4 };
+  obj = { marginHorizontal: importDefault(689).space.PX_4 };
   obj.doubleTapEmojiContainer = obj;
-  obj = { fontSize: 12 * arg0, color: importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj = { fontSize: 12 * arg0, color: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
   obj.doubleTapTextEmoji = obj;
   obj.doubleTapCustomEmoji = { height: 16 * arg0, width: 16 * arg0 };
-  const obj2 = { "Bool(false)": -504174744802397100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008933615662179, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005057815473403747, "Bool(false)": 823173918013946000000000000000000000000000000000000000000000000, "Bool(false)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013098963996324588, marginTop: importDefault(dependencyMap[9]).space.PX_8 };
+  const obj2 = { marginTop: importDefault(689).space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "center", flexWrap: "wrap" };
   obj.doubleTapEmojiEditNudgeContainer = obj2;
-  obj.editButton = { marginHorizontal: importDefault(dependencyMap[9]).space.PX_4 };
+  obj.editButton = { marginHorizontal: importDefault(689).space.PX_4 };
   return obj;
 });
-const obj = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapEmojiEditNudge.tsx");
+let result = set.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapEmojiEditNudge.tsx");
 
 export const DoubleTapEmojiEditNudge = function DoubleTapEmojiEditNudge(location) {
   const _location = location.location;
-  const DoubleTapReactionEmoji = arg1(dependencyMap[10]).DoubleTapReactionEmoji;
-  const setting = DoubleTapReactionEmoji.useSetting();
-  const arg1 = setting;
+  const DoubleTapReactionEmoji = setting(3803).DoubleTapReactionEmoji;
+  setting = DoubleTapReactionEmoji.useSetting();
   const items = [setting];
-  const memo = React.useMemo(() => setting(closure_2[11]).disambiguatedEmojiFromSettingsValue(setting), items);
-  const memo1 = React.useMemo(() => setting(closure_2[11]).getFallbackDoubleTapDisambiguatedEmoji(), []);
+  const memo = React.useMemo(() => setting(outer1_2[11]).disambiguatedEmojiFromSettingsValue(setting), items);
+  const memo1 = React.useMemo(() => setting(outer1_2[11]).getFallbackDoubleTapDisambiguatedEmoji(), []);
   [][0] = setting;
   let tmp5 = null;
   if (true === setting.disableDoubleTap) {
@@ -121,6 +124,6 @@ export const DoubleTapEmojiEditNudge = function DoubleTapEmojiEditNudge(location
       tmp5 = callback2(DoubleTapEmojiEditNudgeInner, obj);
     }
     tmp8 = tmp5;
-    const tmp9 = tmp5 != memo;
+    tmp9 = tmp5 != memo;
   }
 };

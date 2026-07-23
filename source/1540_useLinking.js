@@ -1,16 +1,20 @@
 // Module ID: 1540
-// Function ID: 17536
+// Function ID: 17537
 // Name: useLinking
-// Dependencies: [117047296, 117112832, 119013376, 460849152]
+// Dependencies: [31, 27, 1459, 1541]
 // Exports: default
 
 // Module 1540 (useLinking)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+
 let Platform;
-let closure_3 = importAll(dependencyMap[0]);
-({ Linking: closure_4, Platform } = arg1(dependencyMap[1]));
+let closure_4;
+const require = arg1;
+({ Linking: closure_4, Platform } = get_ActivityIndicator);
 
 export default function useLinking(arg0, enabled) {
-  enabled = arg0;
+  const _require = arg0;
   enabled = enabled.enabled;
   let tmp = undefined === enabled;
   if (!tmp) {
@@ -18,9 +22,7 @@ export default function useLinking(arg0, enabled) {
   }
   const importDefault = tmp;
   const prefixes = enabled.prefixes;
-  const dependencyMap = prefixes;
-  const filter = enabled.filter;
-  const React = filter;
+  let filter = enabled.filter;
   const config = enabled.config;
   let fn = enabled.getInitialURL;
   if (undefined === fn) {
@@ -32,8 +34,9 @@ export default function useLinking(arg0, enabled) {
   let fn2 = enabled.subscribe;
   if (undefined === fn2) {
     fn2 = (arg0) => {
+      let closure_0 = arg0;
       function callback(url) {
-        return url(url.url);
+        return callback(url.url);
       }
       let closure_2 = config.addEventListener("url", callback);
       const removeEventListener = config.removeEventListener;
@@ -56,25 +59,25 @@ export default function useLinking(arg0, enabled) {
   }
   let getStateFromPath = enabled.getStateFromPath;
   if (undefined === getStateFromPath) {
-    getStateFromPath = enabled(dependencyMap[2]).getStateFromPath;
+    getStateFromPath = _require(prefixes[2]).getStateFromPath;
   }
   let getActionFromState = enabled.getActionFromState;
   if (undefined === getActionFromState) {
-    getActionFromState = enabled(dependencyMap[2]).getActionFromState;
+    getActionFromState = _require(prefixes[2]).getActionFromState;
   }
-  const items = [tmp, enabled.independent];
-  const effect = React.useEffect(() => {
+  let items = [tmp, enabled.independent];
+  const effect = filter.useEffect(() => {
 
   }, items);
-  let closure_9 = React.useRef(tmp);
-  let closure_10 = React.useRef(prefixes);
-  let closure_11 = React.useRef(filter);
-  let closure_12 = React.useRef(config);
-  let closure_13 = React.useRef(fn);
-  let closure_14 = React.useRef(getStateFromPath);
-  let closure_15 = React.useRef(getActionFromState);
-  const effect1 = React.useEffect(() => {
-    closure_9.current = tmp;
+  let closure_9 = filter.useRef(tmp);
+  let closure_10 = filter.useRef(prefixes);
+  let closure_11 = filter.useRef(filter);
+  let closure_12 = filter.useRef(config);
+  let closure_13 = filter.useRef(fn);
+  let closure_14 = filter.useRef(getStateFromPath);
+  let closure_15 = filter.useRef(getActionFromState);
+  const effect1 = filter.useEffect(() => {
+    closure_9.current = closure_1;
     closure_10.current = prefixes;
     closure_11.current = filter;
     closure_12.current = config;
@@ -82,7 +85,7 @@ export default function useLinking(arg0, enabled) {
     closure_14.current = getStateFromPath;
     closure_15.current = getActionFromState;
   });
-  const callback = React.useCallback((arg0) => {
+  let callback = filter.useCallback((arg0) => {
     if (arg0) {
       let currentResult;
       const tmp7 = ref3(prefixes[3])(ref2.current, arg0);
@@ -94,12 +97,12 @@ export default function useLinking(arg0, enabled) {
   }, []);
   const items1 = [callback];
   const items2 = [tmp, callback, arg0, fn2];
-  const getInitialState = React.useCallback(() => {
+  const getInitialState = filter.useCallback(() => {
     if (ref.current) {
       const currentResult = ref5.current();
       if (null != currentResult) {
         if ("string" !== typeof currentResult) {
-          return currentResult.then((arg0) => callback(arg0));
+          return currentResult.then((arg0) => outer1_16(arg0));
         }
       }
       let closure_0 = callback(currentResult);
@@ -119,20 +122,20 @@ export default function useLinking(arg0, enabled) {
     };
     return obj;
   }, items1);
-  const effect2 = React.useEffect(() => fn2(function listener(arg0) {
-    if (closure_1) {
-      const current = ref.current;
+  const effect2 = filter.useEffect(() => fn2(function listener(arg0) {
+    if (outer1_1) {
+      const current = outer1_0.current;
       if (current) {
-        const tmp2 = callback(arg0);
+        const tmp2 = outer1_16(arg0);
       }
       if (current) {
         if (tmp2) {
-          const ref = obj.getRootState();
+          const rootState = obj.getRootState();
           const routes = tmp2.routes;
           if (routes.some((name) => {
             let hasItem = null != routeNames;
             if (hasItem) {
-              const routeNames = routeNames.routeNames;
+              routeNames = routeNames.routeNames;
               hasItem = routeNames.includes(name.name);
             }
             return !hasItem;
@@ -140,7 +143,7 @@ export default function useLinking(arg0, enabled) {
             const _console = console;
             console.warn("The navigation state parsed from the URL contains routes not present in the root navigator. This usually means that the linking configuration doesn't match the navigation structure. See https://reactnavigation.org/docs/configuring-links for more details on how to specify a linking configuration.");
           } else {
-            const currentResult = ref3.current(tmp2, ref2.current);
+            const currentResult = outer1_15.current(tmp2, outer1_12.current);
             if (undefined !== currentResult) {
               obj.dispatch(currentResult);
             } else {

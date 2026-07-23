@@ -1,10 +1,18 @@
-// Module ID: 10510
-// Function ID: 82072
+// Module ID: 10520
+// Function ID: 82122
 // Name: getEmbeddedActivityJoinability
-// Dependencies: []
+// Dependencies: [1348, 1838, 3758, 1849, 4146, 653, 10518, 4312, 10517, 566, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 10510 (getEmbeddedActivityJoinability)
+// Module 10520 (getEmbeddedActivityJoinability)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
 function getEmbeddedActivityJoinability(arg0) {
   let ChannelStore;
   let GuildStore;
@@ -78,8 +86,8 @@ function getEmbeddedActivityJoinability(arg0) {
                   return obj.IS_AFK_CHANNEL;
                 } else {
                   const currentClientVoiceChannelId = VoiceStateStore.getCurrentClientVoiceChannelId(channel.getGuildId());
-                  const obj2 = arg1(dependencyMap[7]);
-                  const isChannelFullResult = arg1(dependencyMap[7]).isChannelFull(channel, VoiceStateStore, GuildStore);
+                  const obj2 = require(4312) /* _createForOfIteratorHelperLoose */;
+                  const isChannelFullResult = require(4312) /* _createForOfIteratorHelperLoose */.isChannelFull(channel, VoiceStateStore, GuildStore);
                   if (PermissionStore.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
                     if (channel.isVocal()) {
                       if (currentClientVoiceChannelId !== tmp10) {
@@ -93,7 +101,7 @@ function getEmbeddedActivityJoinability(arg0) {
                   } else {
                     return obj.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION;
                   }
-                  const canResult = PermissionStore.can(Permissions.CONNECT, channel);
+                  canResult = PermissionStore.can(Permissions.CONNECT, channel);
                 }
               }
             }
@@ -103,40 +111,28 @@ function getEmbeddedActivityJoinability(arg0) {
       } else {
         return obj.ACTIVITY_NOT_SUPPORTED_ON_OS;
       }
-      const tmp7 = importDefault(dependencyMap[6]);
+      tmp7 = importDefault(10518);
     } else {
       return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS;
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const Permissions = arg1(dependencyMap[5]).Permissions;
-const obj = { CAN_JOIN: 0, [0]: "CAN_JOIN", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 1, [1]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", NO_CHANNEL_CONNECT_PERMISSION: 2, [2]: "NO_CHANNEL_CONNECT_PERMISSION", CHANNEL_FULL: 3, [3]: "CHANNEL_FULL", NO_CHANNEL: 4, [4]: "NO_CHANNEL", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 5, [5]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", ACTIVITY_NOT_SUPPORTED_ON_OS: 6, [6]: "ACTIVITY_NOT_SUPPORTED_ON_OS", ACTIVITY_AGE_GATED: 7, [7]: "ACTIVITY_AGE_GATED", NO_USER: 8, [8]: "NO_USER", IS_AFK_CHANNEL: 9, [9]: "IS_AFK_CHANNEL", NO_GUILD: 10, [10]: "NO_GUILD" };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/activities/utils/getEmbeddedActivityJoinability.tsx");
+let obj = { CAN_JOIN: 0, [0]: "CAN_JOIN", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 1, [1]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", NO_CHANNEL_CONNECT_PERMISSION: 2, [2]: "NO_CHANNEL_CONNECT_PERMISSION", CHANNEL_FULL: 3, [3]: "CHANNEL_FULL", NO_CHANNEL: 4, [4]: "NO_CHANNEL", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 5, [5]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", ACTIVITY_NOT_SUPPORTED_ON_OS: 6, [6]: "ACTIVITY_NOT_SUPPORTED_ON_OS", ACTIVITY_AGE_GATED: 7, [7]: "ACTIVITY_AGE_GATED", NO_USER: 8, [8]: "NO_USER", IS_AFK_CHANNEL: 9, [9]: "IS_AFK_CHANNEL", NO_GUILD: 10, [10]: "NO_GUILD" };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/utils/getEmbeddedActivityJoinability.tsx");
 
 export default getEmbeddedActivityJoinability;
 export const EmbeddedActivityJoinability = obj;
 export const useEmbeddedActivityJoinability = function useEmbeddedActivityJoinability(userId) {
   userId = userId.userId;
-  const arg1 = userId;
   const activity = userId.activity;
-  const importDefault = activity;
   const channelId = userId.channelId;
-  const dependencyMap = channelId;
   const application = userId.application;
-  let closure_3 = application;
-  const isActivitiesEnabledForCurrentPlatform = arg1(dependencyMap[8]).useIsActivitiesEnabledForCurrentPlatform();
-  let closure_4 = isActivitiesEnabledForCurrentPlatform;
-  const obj = arg1(dependencyMap[8]);
+  const isActivitiesEnabledForCurrentPlatform = userId(channelId[8]).useIsActivitiesEnabledForCurrentPlatform();
+  const obj = userId(channelId[8]);
   const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[9]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  let closure_5 = stateFromStores;
-  const obj2 = arg1(dependencyMap[9]);
-  const items1 = [closure_3, closure_7, closure_5, closure_4];
+  const stateFromStores = userId(channelId[9]).useStateFromStores(items, () => outer1_6.getCurrentUser());
+  const obj2 = userId(channelId[9]);
+  const items1 = [application, closure_7, stateFromStores, isActivitiesEnabledForCurrentPlatform];
   const items2 = [activity, application, channelId, stateFromStores, isActivitiesEnabledForCurrentPlatform, userId];
-  return arg1(dependencyMap[9]).useStateFromStores(items1, () => callback({ userId, activity, application, channelId, currentUser: stateFromStores, isActivitiesEnabledForCurrentPlatform, ChannelStore: application, VoiceStateStore: closure_7, PermissionStore: stateFromStores, GuildStore: isActivitiesEnabledForCurrentPlatform }), items2);
+  return userId(channelId[9]).useStateFromStores(items1, () => outer1_10({ userId, activity, application, channelId, currentUser: stateFromStores, isActivitiesEnabledForCurrentPlatform, ChannelStore: application, VoiceStateStore: outer1_7, PermissionStore: stateFromStores, GuildStore: isActivitiesEnabledForCurrentPlatform }), items2);
 };

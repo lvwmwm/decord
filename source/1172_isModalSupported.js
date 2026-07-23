@@ -1,15 +1,17 @@
 // Module ID: 1172
-// Function ID: 13338
+// Function ID: 13339
 // Name: isModalSupported
-// Dependencies: []
+// Dependencies: [65, 27, 973, 978, 793]
 // Exports: base64ToUint8Array, feedbackAlertDialog, isModalSupported, isNativeDriverSupportedForColorAnimations, isValidEmail
 
 // Module 1172 (isModalSupported)
-let closure_2 = importDefault(dependencyMap[0]);
-const Alert = arg1(dependencyMap[1]).Alert;
+import _toConsumableArray from "_toConsumableArray";
+import { Alert } from "get ActivityIndicator";
+
+const require = arg1;
 
 export const isModalSupported = function isModalSupported() {
-  const ReactNativeVersion = arg1(dependencyMap[2]).ReactNativeLibraries.ReactNativeVersion;
+  const ReactNativeVersion = require(973) /* reactNativeVersion */.ReactNativeLibraries.ReactNativeVersion;
   let version;
   if (null !== ReactNativeVersion) {
     if (undefined !== ReactNativeVersion) {
@@ -20,7 +22,7 @@ export const isModalSupported = function isModalSupported() {
     version = {};
   }
   const minor = version.minor;
-  let isFabricEnabledResult = arg1(dependencyMap[3]).isFabricEnabled();
+  let isFabricEnabledResult = require(978) /* isHermesEnabled */.isFabricEnabled();
   if (isFabricEnabledResult) {
     isFabricEnabledResult = 0 === version.major;
   }
@@ -35,7 +37,7 @@ export const isModalSupported = function isModalSupported() {
 export const isNativeDriverSupportedForColorAnimations = function isNativeDriverSupportedForColorAnimations() {
   let major;
   let minor;
-  const ReactNativeVersion = arg1(dependencyMap[2]).ReactNativeLibraries.ReactNativeVersion;
+  const ReactNativeVersion = require(973) /* reactNativeVersion */.ReactNativeLibraries.ReactNativeVersion;
   let version;
   if (null !== ReactNativeVersion) {
     if (undefined !== ReactNativeVersion) {
@@ -65,23 +67,23 @@ export const isNativeDriverSupportedForColorAnimations = function isNativeDriver
 export const isValidEmail = function isValidEmail(arr) {
   return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(arr);
 };
-export const base64ToUint8Array = function base64ToUint8Array(base64) {
+export const base64ToUint8Array = function base64ToUint8Array(arr) {
   if ("function" === typeof atob) {
     if (obj.isWeb()) {
       const _atob = atob;
       const _Uint8Array = Uint8Array;
-      const uint8Array = new Uint8Array(callback(atob(base64)).map((str) => str.charCodeAt(0)));
+      const uint8Array = new Uint8Array(callback(atob(arr)).map((str) => str.charCodeAt(0)));
       return uint8Array;
     }
-    const obj = arg1(dependencyMap[3]);
+    obj = require(978) /* isHermesEnabled */;
   }
   const error = new Error("atob is not available in this environment.");
   throw error;
 };
 export const feedbackAlertDialog = function feedbackAlertDialog(errorTitle, captureScreenshotError) {
   if (obj.isWeb()) {
-    if (undefined !== captureScreenshotError(dependencyMap[4]).RN_GLOBAL_OBJ.alert) {
-      const RN_GLOBAL_OBJ = captureScreenshotError(dependencyMap[4]).RN_GLOBAL_OBJ;
+    if (undefined !== require(793) /* RN_GLOBAL_OBJ */.RN_GLOBAL_OBJ.alert) {
+      const RN_GLOBAL_OBJ = require(793) /* RN_GLOBAL_OBJ */.RN_GLOBAL_OBJ;
       const _HermesInternal = HermesInternal;
       RN_GLOBAL_OBJ.alert("" + errorTitle + "\n" + captureScreenshotError);
     }

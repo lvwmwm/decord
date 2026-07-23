@@ -1,11 +1,12 @@
 // Module ID: 1565
-// Function ID: 17627
+// Function ID: 17628
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42]
 
 // Module 1565 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "RNCSafeAreaView", validAttributes: { <string:1141285382>: null, <string:499857316>: null } };
-const _module = require(dependencyMap[0]);
+import get from "get";
 
-export default _module.get("RNCSafeAreaView", () => obj);
+const obj = { uiViewClassName: "RNCSafeAreaView", validAttributes: { mode: true, edges: true } };
+
+export default get.get("RNCSafeAreaView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

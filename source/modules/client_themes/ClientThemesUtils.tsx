@@ -1,18 +1,21 @@
-// Module ID: 3971
-// Function ID: 32898
+// Module ID: 3973
+// Function ID: 32903
 // Name: getThemeForColor
-// Dependencies: []
+// Dependencies: [3943, 1281, 482, 688, 2]
 // Exports: areThemesEqualForGradientThemes, getBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName
 
-// Module 3971 (getThemeForColor)
+// Module 3973 (getThemeForColor)
+import items1 from "items1";
+import SystemThemeState from "SystemThemeState";
+import { ThemeTypes } from "sum";
+
 let PROTO_THEME_MAP_WEB_REFRESH;
-const _module = require(dependencyMap[0]);
-({ LEGACY_STANDARD_BACKGROUND_THEMES: closure_2, REFRESH_STANDARD_BACKGROUND_THEMES: closure_3 } = _module);
-const _module1 = require(dependencyMap[1]);
-({ PROTO_THEME_MAP_MOBILE: closure_4, PROTO_THEME_MAP_WEB_REFRESH } = _module1);
-const ThemeTypes = require(dependencyMap[2]).ThemeTypes;
-const _module2 = require(dependencyMap[4]);
-const result = _module2.fileFinishedImporting("modules/client_themes/ClientThemesUtils.tsx");
+let closure_2;
+let closure_3;
+let closure_4;
+({ LEGACY_STANDARD_BACKGROUND_THEMES: closure_2, REFRESH_STANDARD_BACKGROUND_THEMES: closure_3 } = items1);
+({ PROTO_THEME_MAP_MOBILE: closure_4, PROTO_THEME_MAP_WEB_REFRESH } = SystemThemeState);
+const result = require("sum").fileFinishedImporting("modules/client_themes/ClientThemesUtils.tsx");
 
 export const getThemeForColor = function getThemeForColor(l) {
   if (l.l <= 0.3) {
@@ -30,7 +33,7 @@ export const getLinearGradientForBackgroundGradient = function getLinearGradient
     let stop;
     let token;
     ({ token, stop } = arg0);
-    return "" + callback(closure_1[3]).unsafe_getResolvedRawColor(token, { saturation: 1 }) + " " + stop + "%";
+    return "" + outer1_0(outer1_1[3]).unsafe_getResolvedRawColor(token, { saturation: 1 }) + " " + stop + "%";
   });
   return "linear-gradient(" + angle + "deg, " + mapped.join(", ") + ")";
 };
@@ -53,11 +56,11 @@ export const areThemesEqualForGradientThemes = function areThemesEqualForGradien
   return tmp;
 };
 export const getBaseTheme = function getBaseTheme(base_theme) {
-  return closure_4[base_theme];
+  return table[base_theme];
 };
 export const getThemeName = function getThemeName(DARK, closure_1) {
-  const require = DARK;
-  const found = closure_1 ? closure_3 : closure_2.find((theme) => theme.theme === theme);
+  let closure_0 = DARK;
+  const found = closure_1 ? closure_3 : closure_2.find((theme) => theme.theme === closure_0);
   let name;
   if (null != found) {
     name = found.getName();

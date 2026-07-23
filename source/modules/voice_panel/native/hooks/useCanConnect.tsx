@@ -1,37 +1,39 @@
-// Module ID: 15691
-// Function ID: 119863
+// Module ID: 15808
+// Function ID: 122036
 // Name: useCanConnect
-// Dependencies: []
+// Dependencies: [1348, 1838, 3758, 4146, 482, 566, 4312, 2]
 // Exports: default
 
-// Module 15691 (useCanConnect)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const Permissions = arg1(dependencyMap[4]).Permissions;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/voice_panel/native/hooks/useCanConnect.tsx");
+// Module 15808 (useCanConnect)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { Permissions } from "sum";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/hooks/useCanConnect.tsx");
 
 export default function useCanConnect(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2, closure_4, closure_3, closure_5];
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct, closure_4, _createForOfIteratorHelperLoose, closure_5];
   const items1 = [arg0];
-  return arg1(dependencyMap[5]).useStateFromStoresObject(items, () => {
-    const channel = channel.getChannel(arg0);
+  return _require(566).useStateFromStoresObject(items, () => {
+    const channel = outer1_2.getChannel(callback);
     const obj = {};
     let tmp = null != channel;
     if (tmp) {
       let isPrivateResult = channel.isPrivate();
       if (!isPrivateResult) {
-        isPrivateResult = closure_4.can(constants.CONNECT, channel);
+        isPrivateResult = outer1_4.can(outer1_6.CONNECT, channel);
       }
       tmp = isPrivateResult;
     }
     obj.canConnect = tmp;
     let isChannelFullResult = null == channel;
     if (!isChannelFullResult) {
-      isChannelFullResult = arg0(closure_1[6]).isChannelFull(channel, closure_5, closure_3);
-      const obj3 = arg0(closure_1[6]);
+      isChannelFullResult = callback(outer1_1[6]).isChannelFull(channel, outer1_5, outer1_3);
+      const obj3 = callback(outer1_1[6]);
     }
     obj.isAtMaxCapacity = isChannelFullResult;
     return obj;

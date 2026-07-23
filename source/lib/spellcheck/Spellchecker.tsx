@@ -1,17 +1,26 @@
-// Module ID: 5135
-// Function ID: 44538
+// Module ID: 5138
+// Function ID: 44557
 // Name: normalizeLocale
-// Dependencies: []
+// Dependencies: [5, 57, 6, 7, 1921, 3, 3741, 5139, 5140, 5141, 22, 1835, 1327, 2]
 // Exports: install
 
-// Module 5135 (normalizeLocale)
+// Module 5138 (normalizeLocale)
+import timestamp from "timestamp";
+import _slicedToArray from "_slicedToArray";
+import set from "set";
+import closure_6 from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "_defineProperties";
+import importDefaultResult1 from "apply";
+
+const require = arg1;
 function normalizeLocale(arg0) {
   let str = arg0;
-  const tmp = importDefault(dependencyMap[7])[arg0];
+  const tmp = importDefault(5139)[arg0];
   if (null != tmp) {
     str = tmp;
   }
-  const parsed = arg1(dependencyMap[8]).parse(str.replace(/[_-]/g, "-"));
+  const parsed = require(5140) /* parse */.parse(str.replace(/[_-]/g, "-"));
   if (null != parsed) {
     if (null != parsed.langtag.language) {
       if (null != parsed.langtag.region) {
@@ -25,56 +34,51 @@ function normalizeLocale(arg0) {
   importDefaultResult.error("" + str + " is not a valid locale.");
 }
 async function _install() {
-  const tmp = yield closure_9.getAvailableDictionaries();
+  const tmp = yield outer2_9.getAvailableDictionaries();
   let items = tmp;
   if (null == tmp) {
     items = [];
   }
-  const mapped = items.map(closure_12);
-  const tmp2 = new closure_10(mapped.filter(callback(closure_2[12]).isNotNullish));
-  function attachToInput(arg0) {
+  const mapped = items.map(outer2_12);
+  const tmp2 = new outer2_10(mapped.filter(outer2_0(outer2_2[12]).isNotNullish));
+  (function attachToInput(arg0) {
+    let closure_0 = arg0;
     if (null != document.body) {
       const _document = document;
-      const listener = body.addEventListener("beforeinput", (target) => callback(target, target.target), true);
+      const listener = body.addEventListener("beforeinput", (target) => outer4_11(closure_0, target.target), true);
     }
-  }(tmp2);
+  })(tmp2);
   return tmp2;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let importDefaultResult = importDefault(dependencyMap[5]);
 importDefaultResult = new importDefaultResult("Spellchecker");
 let spellCheck;
-if (null != importDefault(dependencyMap[6])) {
-  spellCheck = importDefault(dependencyMap[6]).spellCheck;
+if (null != require("set")) {
+  spellCheck = require("set").spellCheck;
 }
-const tmp5 = () => {
+const tmp5 = (() => {
   class Spellchecker {
     constructor(arg0) {
-      Spellchecker = this;
-      arg0 = arg0;
-      tmp = closure_5(this, Spellchecker);
+      self = this;
+      closure_1 = arg0;
+      tmp = outer1_5(this, self);
       this._enabled = true;
       this.misspelledWord = "";
       this.corrections = [];
-      str = closure_7.locale;
-      tmp2 = closure_4(str.split("-"), 2);
+      str = outer1_7.locale;
+      tmp2 = outer1_4(str.split("-"), 2);
       first = tmp2[0];
       locale = first;
       this.regionPreference = tmp2[1];
       getAvailableLanguages = this.getAvailableLanguages(arg0);
-      tmp4 = arg0(locale[9]);
+      tmp4 = outer1_1(outer1_2[9]);
       tmp4 = new tmp4(first, (arg0) => {
         const combined = "" + arg0 + "-" + self.regionPreference;
-        if (-1 !== arg0.indexOf(combined)) {
+        if (-1 !== closure_1.indexOf(combined)) {
           self.setLocale(combined);
         } else {
-          let tmp3 = closure_3[arg0];
+          let tmp3 = table[arg0];
           if (null == tmp3) {
-            tmp3 = arg0(first[7])[closure_2];
+            tmp3 = outer2_1(outer2_2[7])[first];
           }
           if (null != tmp3) {
             self.setLocale(tmp3);
@@ -82,7 +86,7 @@ const tmp5 = () => {
         }
       });
       this.languageDetector = tmp4;
-      onResult = closure_9.on("spellcheck-result", (arg0, arg1) => {
+      onResult = outer1_9.on("spellcheck-result", (arg0, arg1) => {
         let items = arg1;
         let str = "";
         if (null != arg0) {
@@ -97,7 +101,6 @@ const tmp5 = () => {
       return;
     }
   }
-  const arg1 = Spellchecker;
   let obj = {
     key: "enabled",
     get() {
@@ -107,27 +110,27 @@ const tmp5 = () => {
       this._enabled = _enabled;
     }
   };
-  const items = [obj, , , , , , , , , ];
+  let items = [obj, , , , , , , , , ];
   obj = {
     key: "setLearnedWords",
     value(arg0) {
-      store.setLearnedWords(arg0);
+      outer1_9.setLearnedWords(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "setLocale",
     value(combined) {
-      const Spellchecker = combined;
-      const setLocaleResult = store.setLocale(combined);
+      let closure_0 = combined;
+      const setLocaleResult = outer1_9.setLocale(combined);
       if (null != setLocaleResult) {
         setLocaleResult.then((arg0) => {
           let str = "(unavailable)";
-          const combined = "Switching to " + arg0;
+          const combined = "Switching to " + closure_0;
           if (arg0) {
             str = "(available)";
           }
-          closure_8.info(combined, str);
+          outer2_8.info(combined, str);
         });
       }
     }
@@ -152,10 +155,9 @@ const tmp5 = () => {
     key: "getAvailableLanguages",
     value(arr) {
       const obj = {};
-      const Spellchecker = obj;
       const item = arr.forEach((arg0) => {
         let tmp = arg0;
-        const first = callback(arg0.split("-"), 1)[0];
+        const first = outer2_4(arg0.split("-"), 1)[0];
         if (null != obj[first]) {
           tmp = tmp4;
         }
@@ -189,12 +191,13 @@ const tmp5 = () => {
   items[9] = {
     key: "replaceMisspelling",
     value(arg0) {
-      store.replaceMisspelling(arg0);
+      outer1_9.replaceMisspelling(arg0);
     }
   };
   return callback2(Spellchecker, items);
-}();
-let closure_11 = importDefault(dependencyMap[10]).debounce((detectLanguage, hasAttribute) => {
+})();
+let closure_10 = tmp5;
+let closure_11 = require("apply").debounce((detectLanguage, hasAttribute) => {
   let textContent = null;
   if (null != hasAttribute) {
     if (!obj.isElement(hasAttribute, globalThis.HTMLInputElement)) {
@@ -204,19 +207,18 @@ let closure_11 = importDefault(dependencyMap[10]).debounce((detectLanguage, hasA
             textContent = hasAttribute.textContent;
           }
         }
-        const obj3 = hasAttribute(dependencyMap[11]);
+        obj3 = require(1835) /* set */;
       }
-      const obj2 = hasAttribute(dependencyMap[11]);
+      obj2 = require(1835) /* set */;
     }
     textContent = hasAttribute.value;
-    const obj = hasAttribute(dependencyMap[11]);
+    obj = require(1835) /* set */;
   }
   if (null != textContent) {
     detectLanguage.detectLanguage(textContent);
   }
 }, 250);
-const importDefaultResult1 = importDefault(dependencyMap[10]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("lib/spellcheck/Spellchecker.tsx");
+const result = require("_classCallCheck").fileFinishedImporting("lib/spellcheck/Spellchecker.tsx");
 
 export const Spellchecker = tmp5;
 export const install = function install() {

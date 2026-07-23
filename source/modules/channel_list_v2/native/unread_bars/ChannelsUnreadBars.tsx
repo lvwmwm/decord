@@ -1,52 +1,68 @@
-// Module ID: 14893
-// Function ID: 112146
+// Module ID: 15009
+// Function ID: 114314
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 1348, 6879, 4142, 4325, 10260, 4326, 33, 4130, 6760, 4549, 7588, 13999, 574, 620, 566, 3991, 14983, 8133, 4099, 4100, 15010, 2]
 
-// Module 14893 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15009 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import { getScaledChannelRowHeight } from "hairlineWidth";
+import { UnreadSetting } from "ReadStateTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_13;
+let closure_14;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,8 +100,8 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function shouldSkipSection(section) {
-  if (arg1(dependencyMap[12]).SECTION_INDEX_CHANNEL_NOTICES !== section) {
-    if (arg1(dependencyMap[12]).SECTION_INDEX_GUILD_ACTIONS !== section) {
+  if (require(6760) /* _superPropGet */.SECTION_INDEX_CHANNEL_NOTICES !== section) {
+    if (require(6760) /* _superPropGet */.SECTION_INDEX_GUILD_ACTIONS !== section) {
       return false;
     }
   }
@@ -167,7 +183,7 @@ function findNearestUnreadItem(containerSize, id) {
     return closure_17;
   } else {
     const scrollPosValue = containerSize.scrollPosValue;
-    const result = getScaledChannelRowHeight(id(dependencyMap[13]).getFontScale()) / 2;
+    const result = getScaledChannelRowHeight(require(4549) /* getFontScale */.getFontScale()) / 2;
     let value = scrollPosValue.get();
     const item = containerSize.getSectionItemFromPosition(arg2 + value + result).item;
     let layoutStart;
@@ -178,7 +194,7 @@ function findNearestUnreadItem(containerSize, id) {
     if (null != layoutStart) {
       tmp7 = layoutStart;
     }
-    let obj = { borderWidth: "pow", backgroundColor: "decorationCutout" };
+    let obj = { section: -1, item: -1 };
     const diff = tmp7 + containerSize.containerSize - arg2 - arg3;
     const tmp11 = _createForOfIteratorHelperLoose(containerSize.state.items);
     const iter = tmp11();
@@ -198,9 +214,9 @@ function findNearestUnreadItem(containerSize, id) {
             break;
           }
         } else {
-          let tmp64 = id;
+          let tmp64 = require;
           let tmp65 = dependencyMap;
-          if (value.type === id(dependencyMap[14]).FastListItemTypes.ITEM) {
+          if (value.type === require(7588) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
             tmp13 = tmp12;
             if (value.layoutStart > diff) {
               break;
@@ -208,10 +224,10 @@ function findNearestUnreadItem(containerSize, id) {
               if (-1 === obj.section) {
                 ({ section: obj.section, item: obj.item } = value);
               }
-              let tmp17 = id;
+              let tmp17 = require;
               let tmp18 = dependencyMap;
               tmp14 = value;
-              if (value.type === id(dependencyMap[14]).FastListItemTypes.ITEM) {
+              if (value.type === require(7588) /* _isNativeReflectConstruct */.FastListItemTypes.ITEM) {
                 let tmp19 = shouldSkipSection;
                 tmp14 = tmp12;
                 if (!shouldSkipSection(value.section)) {
@@ -227,7 +243,7 @@ function findNearestUnreadItem(containerSize, id) {
               }
             }
           } else {
-            let tmp15 = id;
+            let tmp15 = require;
             let tmp16 = dependencyMap;
             tmp14 = tmp12;
           }
@@ -273,7 +289,7 @@ function findNearestUnreadItem(containerSize, id) {
           }
         }
         section = section - 1;
-        let tmp24 = tmp27;
+        tmp24 = tmp27;
       }
     }
     section = undefined;
@@ -331,59 +347,39 @@ function findNearestUnreadItem(containerSize, id) {
           }
         }
         num4 = num4 + 1;
-        let tmp39 = tmp42;
+        tmp39 = tmp42;
       }
     }
     return closure_17;
   }
-  const tmp = mentionCount.getMentionCount(id.id) > 0;
+  tmp = mentionCount.getMentionCount(id.id) > 0;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-const View = tmp2.View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const getScaledChannelRowHeight = arg1(dependencyMap[8]).getScaledChannelRowHeight;
-const UnreadSetting = arg1(dependencyMap[9]).UnreadSetting;
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[10]));
-const tmp3 = arg1(dependencyMap[10]);
-let closure_15 = arg1(dependencyMap[11]).createStyles({ wrapper: tmp2.StyleSheet.absoluteFillObject });
+const View = get_ActivityIndicator.View;
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+let closure_15 = _createForOfIteratorHelperLoose.createStyles({ wrapper: get_ActivityIndicator.StyleSheet.absoluteFillObject });
 let closure_16 = { MENTION: "mention", UNREAD: "unread" };
-let closure_17 = { 9223372036854775807: "o", -9223372036854775808: "o" };
+let closure_17 = { beforeItem: null, afterItem: null };
 let closure_18 = { code: "function ChannelsUnreadBarsTsx1(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
 let closure_19 = { code: "function ChannelsUnreadBarsTsx2(position,lastPosition){const{runOnJS,debouncedUpdate}=this.__closure;if(position!==lastPosition){runOnJS(debouncedUpdate)();}}" };
-const obj = { wrapper: tmp2.StyleSheet.absoluteFillObject };
-const obj2 = arg1(dependencyMap[11]);
 const memoResult = importAllResult.memo(function ChannelUnreadBarsComponent(fastList) {
   fastList = fastList.fastList;
-  const arg1 = fastList;
   const guildChannels = fastList.guildChannels;
-  const importDefault = guildChannels;
   const headerHeight = fastList.headerHeight;
-  const dependencyMap = headerHeight;
   const id = guildChannels.id;
-  let callback = id;
-  let obj = React;
-  const React = React.useRef(-1);
-  let closure_5 = React.useRef(null);
-  let obj1 = arg1(dependencyMap[15]);
+  let obj = importAllResult;
+  importAllResult = importAllResult.useRef(-1);
+  let closure_5 = importAllResult.useRef(null);
+  let obj1 = fastList(headerHeight[15]);
   const youBarTotalHeight = obj1.useYouBarTotalHeight();
-  let closure_6 = youBarTotalHeight;
-  const tmp4 = callback(React.useState(() => callback(fastList, guildChannels, headerHeight, youBarTotalHeight)), 2);
+  let tmp4 = id(importAllResult.useState(() => outer1_24(fastList, guildChannels, headerHeight, youBarTotalHeight)), 2);
   const first = tmp4[0];
-  const beforeItem = first.beforeItem;
-  let closure_7 = beforeItem;
-  const afterItem = first.afterItem;
-  let closure_8 = afterItem;
+  let beforeItem = first.beforeItem;
+  let afterItem = first.afterItem;
   let closure_9 = tmp4[1];
-  const items = [fastList, guildChannels, headerHeight, youBarTotalHeight];
-  const memo = React.useMemo(() => guildChannels(headerHeight[16])(() => {
-    closure_0 = callback2(closure_0, closure_1, closure_2, closure_6);
-    callback((afterItem) => {
+  let items = [fastList, guildChannels, headerHeight, youBarTotalHeight];
+  const memo = importAllResult.useMemo(() => guildChannels(headerHeight[16])(() => {
+    let closure_0 = outer2_24(outer1_0, outer1_1, outer1_2, outer1_6);
+    outer1_9((afterItem) => {
       let tmp = afterItem;
       if (afterItem !== closure_0) {
         const afterItem2 = afterItem.afterItem;
@@ -410,38 +406,35 @@ const memoResult = importAllResult.memo(function ChannelUnreadBarsComponent(fast
             tmp10 = beforeItem2;
           }
           tmp = afterItem;
-          const tmp7 = callback(closure_2[17]);
+          const tmp7 = guildChannels(headerHeight[17]);
         }
-        const tmp13 = callback(closure_2[17]);
+        tmp13 = guildChannels(headerHeight[17]);
       }
       return tmp;
     });
   }, 100), items);
-  let closure_10 = memo;
   const items1 = [memo, id];
-  const effect = React.useEffect(() => {
+  const effect = importAllResult.useEffect(() => {
     const items = [afterItem, closure_9];
     const batchedStoreListener = new fastList(headerHeight[18]).BatchedStoreListener(items, () => {
-      const guildUnreadsSentinel = guildUnreadsSentinel.getGuildUnreadsSentinel(closure_3);
-      let tmp3 = closure_3 === ref2.current;
+      guildUnreadsSentinel = guildUnreadsSentinel.getGuildUnreadsSentinel(outer1_3);
+      let tmp3 = outer1_3 === outer1_5.current;
       if (tmp3) {
-        tmp3 = guildUnreadsSentinel === ref.current;
+        tmp3 = guildUnreadsSentinel === outer1_4.current;
       }
       if (!tmp3) {
-        ref2.current = closure_3;
-        ref.current = guildUnreadsSentinel;
-        callback();
+        outer1_5.current = outer1_3;
+        outer1_4.current = guildUnreadsSentinel;
+        outer1_10();
       }
     });
-    const fastList = batchedStoreListener;
     batchedStoreListener.attach("channel-list-unread-bars");
     return () => {
       batchedStoreListener.detach();
     };
   }, items1);
   const scrollPosValue = fastList.scrollPosValue;
-  const getScaledChannelRowHeight = scrollPosValue;
-  let obj2 = arg1(dependencyMap[19]);
+  let obj2 = fastList(headerHeight[19]);
   class A {
     constructor() {
       return scrollPosValue.get();
@@ -456,24 +449,24 @@ const memoResult = importAllResult.memo(function ChannelUnreadBarsComponent(fast
       const obj = fastList(headerHeight[19]);
     }
   };
-  obj = { runOnJS: arg1(dependencyMap[19]).runOnJS, debouncedUpdate: memo };
+  obj = { runOnJS: fastList(headerHeight[19]).runOnJS, debouncedUpdate: memo };
   fn.__closure = obj;
   fn.__workletHash = 17498480935002;
   fn.__initData = closure_19;
   const animatedReaction = obj2.useAnimatedReaction(A, fn);
-  const tmp9 = callback2();
+  const tmp9 = callback();
   const UnreadSetting = tmp9;
-  const tmp11 = importDefault(dependencyMap[20])(fastList.guild);
+  const tmp11 = guildChannels(headerHeight[20])(fastList.guild);
   const bannerWidth = tmp11.bannerWidth;
   const listBottom = tmp11.listBottom;
-  const tmp12 = importDefault(dependencyMap[21])();
-  const callback2 = tmp12;
+  const tmp12 = guildChannels(headerHeight[21])();
+  callback = tmp12;
   const items2 = [tmp9.wrapper, bannerWidth, listBottom, tmp12];
-  const memo1 = React.useMemo(() => {
+  const memo1 = importAllResult.useMemo(() => {
     const items = [tmp9.wrapper, ];
     const obj = { width: bannerWidth };
     let num = 0;
-    if (!tmp12) {
+    if (!closure_15) {
       num = listBottom;
     }
     obj.bottom = num;
@@ -498,9 +491,8 @@ const memoResult = importAllResult.memo(function ChannelUnreadBarsComponent(fast
   } else {
     str = "before";
   }
-  const items3 = [closure_6];
-  const stateFromStores = arg1(dependencyMap[18]).useStateFromStores(items3, () => youBarTotalHeight.useReducedMotion);
-  let closure_16 = stateFromStores;
+  const items3 = [youBarTotalHeight];
+  const stateFromStores = fastList(headerHeight[18]).useStateFromStores(items3, () => youBarTotalHeight.useReducedMotion);
   const items4 = [beforeItem, stateFromStores, fastList];
   const items5 = [afterItem, stateFromStores, fastList];
   callback = obj.useCallback(() => {
@@ -528,12 +520,12 @@ const memoResult = importAllResult.memo(function ChannelUnreadBarsComponent(fast
   }, items5);
   obj1 = { position: "top", shown: "before" === str, onPress: callback };
   let isMention;
-  const tmp = arg1;
-  const tmp10 = importDefault;
+  let tmp = fastList;
+  let tmp10 = guildChannels;
   const tmp17 = listBottom;
   const tmp18 = closure_5;
   const tmp19 = bannerWidth;
-  const tmpResult = arg1(dependencyMap[18]);
+  const tmpResult = fastList(headerHeight[18]);
   if (null != beforeItem) {
     isMention = beforeItem.isMention;
   }
@@ -541,10 +533,10 @@ const memoResult = importAllResult.memo(function ChannelUnreadBarsComponent(fast
   obj1.scrollPosition = fastList.scrollPosValue;
   obj1.listPaddingTop = 0;
   obj1.headerHeight = headerHeight;
-  const items6 = [tmp19(importDefault(dependencyMap[24]), obj1), ];
+  const items6 = [tmp19(guildChannels(headerHeight[24]), obj1), ];
   obj2 = { position: "bottom", shown: "after" === str, onPress: callback1 };
   let isMention1;
-  const tmp10Result = importDefault(dependencyMap[24]);
+  const tmp10Result = guildChannels(headerHeight[24]);
   const tmp22 = bannerWidth;
   if (null != afterItem) {
     isMention1 = afterItem.isMention;
@@ -553,10 +545,11 @@ const memoResult = importAllResult.memo(function ChannelUnreadBarsComponent(fast
   obj2.scrollPosition = fastList.scrollPosValue;
   obj2.listPaddingTop = 0;
   obj2.headerHeight = headerHeight;
-  items6[1] = tmp22(importDefault(dependencyMap[24]), obj2);
+  items6[1] = tmp22(guildChannels(headerHeight[24]), obj2);
   obj.children = items6;
   return tmp17(tmp18, obj);
 });
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/channel_list_v2/native/unread_bars/ChannelsUnreadBars.tsx");
+let obj = { wrapper: get_ActivityIndicator.StyleSheet.absoluteFillObject };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/channel_list_v2/native/unread_bars/ChannelsUnreadBars.tsx");
 
 export default memoResult;

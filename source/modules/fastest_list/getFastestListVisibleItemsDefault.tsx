@@ -1,12 +1,11 @@
-// Module ID: 9249
-// Function ID: 72303
+// Module ID: 9256
+// Function ID: 72344
 // Name: getFastestListVisibleItemsDefault
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 9249 (getFastestListVisibleItemsDefault)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/fastest_list/getFastestListVisibleItemsDefault.tsx");
+// Module 9256 (getFastestListVisibleItemsDefault)
+const result = require("set").fileFinishedImporting("modules/fastest_list/getFastestListVisibleItemsDefault.tsx");
 
 export default function getFastestListVisibleItemsDefault(arg0) {
   let estimatedListSize;
@@ -18,7 +17,7 @@ export default function getFastestListVisibleItemsDefault(arg0) {
   let sectionsVersioned;
   ({ estimatedListSize, sectionsVersioned } = arg0);
   ({ itemSizes, listHeaderSize, sections, sectionFooterSizes, sectionHeaderSizes } = sectionsVersioned);
-  const obj = { 9223372036854775807: true, 0: "/assets/design/components/Icon/native/redesign/generated/images", 9223372036854775807: 24, 9223372036854775807: 24, 9223372036854775807: null, sectionsId: sectionsVersioned.sectionsId };
+  const obj = { sectionsId: sectionsVersioned.sectionsId, sectionStart: 0, sectionEnd: 0, itemStart: 0, itemEnd: -1 };
   if (listHeaderSize >= estimatedListSize) {
     return obj;
   } else {
@@ -29,7 +28,7 @@ export default function getFastestListVisibleItemsDefault(arg0) {
         if (0 !== sections[num3]) {
           obj.sectionEnd = num3;
           obj.itemEnd = 0;
-          let sum = listHeaderSize + tmp3 ? sectionHeaderSizes[0] : sectionHeaderSizes[num3];
+          let sum = listHeaderSize + (tmp3 ? sectionHeaderSizes[0] : sectionHeaderSizes[num3]);
           if (sum >= estimatedListSize) {
             break;
           } else {
@@ -58,7 +57,7 @@ export default function getFastestListVisibleItemsDefault(arg0) {
               }
               return obj;
             }
-            sum2 = tmp7 + tmp2 ? sectionFooterSizes[0] : sectionFooterSizes[num3];
+            sum2 = tmp7 + (tmp2 ? sectionFooterSizes[0] : sectionFooterSizes[num3]);
             let tmp10 = num2;
             if (sum2 >= estimatedListSize) {
               return obj;

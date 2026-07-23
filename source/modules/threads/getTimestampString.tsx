@@ -1,27 +1,25 @@
-// Module ID: 6726
-// Function ID: 52403
+// Module ID: 6731
+// Function ID: 52435
 // Name: getTimestampString
-// Dependencies: []
+// Dependencies: [1212, 3712, 2]
 // Exports: default
 
-// Module 6726 (getTimestampString)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/threads/getTimestampString.tsx");
+// Module 6731 (getTimestampString)
+const result = require("set").fileFinishedImporting("modules/threads/getTimestampString.tsx");
 
 export default function getTimestampString(arg0, arg1) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
-  const require = flag;
   let importDefault;
-  let dependencyMap;
+  let obj;
   function formatString(minutes, diffResult) {
     let tmp2;
     if (flag) {
       tmp2 = obj;
     }
-    const tmp3 = function getString(minutes, arg1, arg2) {
+    let tmp3 = (function getString(minutes, arg1, arg2) {
       if (tmp) {
         let tmp4 = arg1[minutes];
         if (null == tmp4) {
@@ -47,28 +45,27 @@ export default function getTimestampString(arg0, arg1) {
         }
       }
       return tmp3;
-    }(minutes, tmp2, tmp2);
+    })(minutes, c1, tmp2);
     let tmp4 = null;
     if (null != tmp3) {
       let formatToPlainStringResult = tmp3;
       if ("string" !== typeof tmp3) {
         const intl = flag(obj[0]).intl;
-        const obj = { count: diffResult };
+        obj = { count: diffResult };
         formatToPlainStringResult = intl.formatToPlainString(tmp3, obj);
       }
       tmp4 = formatToPlainStringResult;
     }
     return tmp4;
   }
-  let obj = importDefault(dependencyMap[1])();
-  const diffResult = obj.diff(importDefault(dependencyMap[1])(arg0), "s");
+  obj = importDefault(obj[1])();
+  const diffResult = obj.diff(importDefault(obj[1])(arg0), "s");
   let tmp2;
   if (null != arg1) {
     tmp2 = arg1();
   }
   importDefault = tmp2;
-  obj = { seconds: require(dependencyMap[0]).t.sMPmtq, minutes: require(dependencyMap[0]).t.N9M4N1, hours: require(dependencyMap[0]).t.p0KedC, days: require(dependencyMap[0]).t.gjK5av, months: require(dependencyMap[0]).t.kHo4Or, years: require(dependencyMap[0]).t.KjKr2P };
-  dependencyMap = obj;
+  obj = { seconds: flag(obj[0]).t.sMPmtq, minutes: flag(obj[0]).t.N9M4N1, hours: flag(obj[0]).t.p0KedC, days: flag(obj[0]).t.gjK5av, months: flag(obj[0]).t.kHo4Or, years: flag(obj[0]).t.KjKr2P };
   if (diffResult < 60) {
     let seconds;
     if (null != tmp2) {
@@ -124,5 +121,5 @@ export default function getTimestampString(arg0, arg1) {
       }
     }
   }
-  return importDefault(dependencyMap[1])(arg0).format("LL");
+  return importDefault(obj[1])(arg0).format("LL");
 };

@@ -1,25 +1,26 @@
-// Module ID: 15209
-// Function ID: 114783
+// Module ID: 15325
+// Function ID: 116953
 // Name: CalendarMinusIcon
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 33, 689, 3833, 15326, 2]
 // Exports: CalendarMinusIcon
 
-// Module 15209 (CalendarMinusIcon)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 15325 (CalendarMinusIcon)
+import "result";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/Icon/native/redesign/generated/CalendarMinusIcon.tsx");
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/CalendarMinusIcon.tsx");
 
 export const CalendarMinusIcon = function CalendarMinusIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[2]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: INTERACTIVE_ICON_DEFAULT, style: color.style };
+  obj = { source: require(15326) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(15326) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

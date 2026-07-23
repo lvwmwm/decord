@@ -1,72 +1,76 @@
-// Module ID: 9180
-// Function ID: 71911
+// Module ID: 9187
+// Function ID: 71952
 // Name: ChangeEmailWarning
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 9185, 653, 33, 4130, 689, 1456, 566, 675, 668, 5807, 4126, 1212, 5459, 4543, 9181, 2]
 // Exports: default
 
-// Module 9180 (ChangeEmailWarning)
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[3]).COMMON_SCAMS_EDUCATION_HC_ARTICLE;
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { padding: importDefault(dependencyMap[7]).space.PX_16 };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[5]);
-obj.title = { marginTop: importDefault(dependencyMap[7]).space.PX_16 };
-const obj1 = { marginTop: importDefault(dependencyMap[7]).space.PX_16 };
-obj.body = { marginTop: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center" };
-const obj2 = { marginTop: importDefault(dependencyMap[7]).space.PX_8, textAlign: "center" };
-obj.buttonContainer = { flexDirection: "row", gap: importDefault(dependencyMap[7]).space.PX_8, marginTop: importDefault(dependencyMap[7]).space.PX_16 };
-let closure_11 = obj.createStyles(obj);
-const obj3 = { flexDirection: "row", gap: importDefault(dependencyMap[7]).space.PX_8, marginTop: importDefault(dependencyMap[7]).space.PX_16 };
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/verification/native/components/ChangeEmailWarning.tsx");
+// Module 9187 (ChangeEmailWarning)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { COMMON_SCAMS_EDUCATION_HC_ARTICLE as closure_7 } from "ChangeEmailReasons";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_4;
+let closure_5;
+let closure_9;
+const require = arg1;
+({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, padding: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.title = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj1 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.body = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8, textAlign: "center" };
+_createForOfIteratorHelperLoose.buttonContainer = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/verification/native/components/ChangeEmailWarning.tsx");
 
 export default function ChangeEmailWarning(changeEmailReason) {
   changeEmailReason = changeEmailReason.changeEmailReason;
-  const arg1 = changeEmailReason;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[8]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = changeEmailReason(1456);
   const navigation = obj.useNavigation();
-  const importDefault = navigation;
-  let obj1 = arg1(dependencyMap[9]);
-  const items = [closure_6];
+  let obj1 = changeEmailReason(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [navigation, changeEmailReason];
-  const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getCurrentUser());
   let tmp5 = null;
   if (null != stateFromStores) {
-    obj = { "Bool(true)": true, "Bool(true)": true };
+    obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false };
     obj = { style: tmp.container };
-    const items2 = [callback(arg1(dependencyMap[12]).TrafficConeSpotIllustration, {}), , , ];
-    obj1 = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
-    const intl = arg1(dependencyMap[14]).intl;
-    obj1.children = intl.string(arg1(dependencyMap[14]).t.hhR7gX);
-    items2[1] = callback(arg1(dependencyMap[13]).Text, obj1);
-    const obj2 = { alignSelf: null, justifyContent: null, alignItems: null, backgroundColor: null, style: tmp.body };
-    const intl2 = arg1(dependencyMap[14]).intl;
+    const items2 = [callback(changeEmailReason(5807).TrafficConeSpotIllustration, {}), , , ];
+    obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+    const intl = changeEmailReason(1212).intl;
+    obj1.children = intl.string(changeEmailReason(1212).t.hhR7gX);
+    items2[1] = callback(changeEmailReason(4126).Text, obj1);
+    const obj2 = { style: tmp.body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary" };
+    const intl2 = changeEmailReason(1212).intl;
     const obj3 = { hcArticle: closure_7 };
-    const items3 = [intl2.format(arg1(dependencyMap[14]).t.rqWXUf, obj3), "\n\n", ];
-    const intl3 = arg1(dependencyMap[14]).intl;
-    items3[2] = intl3.string(arg1(dependencyMap[14]).t.3LW10C);
+    const items3 = [intl2.format(changeEmailReason(1212).t.rqWXUf, obj3), "\n\n", ];
+    const intl3 = changeEmailReason(1212).intl;
+    items3[2] = intl3.string(changeEmailReason(1212).t["3LW10C"]);
     obj2.children = items3;
-    items2[2] = callback2(arg1(dependencyMap[15]).TextWithIOSLinkWorkaround, obj2);
+    items2[2] = callback2(changeEmailReason(5459).TextWithIOSLinkWorkaround, obj2);
     const obj4 = { style: tmp.buttonContainer };
-    const obj5 = { 0: 0.6, 0: "400", 0: null, 9223372036854775807: 0, 9223372036854775807: 0 };
-    const intl4 = arg1(dependencyMap[14]).intl;
-    obj5.text = intl4.string(arg1(dependencyMap[14]).t.rwTBFs);
+    const obj5 = { size: "md", variant: "tertiary", text: null, onPress: null, shrink: true };
+    const intl4 = changeEmailReason(1212).intl;
+    obj5.text = intl4.string(changeEmailReason(1212).t.rwTBFs);
     obj5.onPress = tmp4;
-    const items4 = [callback(arg1(dependencyMap[16]).Button, obj5), ];
-    const obj6 = {};
-    const intl5 = arg1(dependencyMap[14]).intl;
-    obj6.text = intl5.string(arg1(dependencyMap[14]).t.ETE/oC);
+    const items4 = [callback(changeEmailReason(4543).Button, obj5), ];
+    const obj6 = { size: "md", variant: "primary", text: null, onPress: null, shrink: true };
+    const intl5 = changeEmailReason(1212).intl;
+    obj6.text = intl5.string(changeEmailReason(1212).t["ETE/oC"]);
     obj6.onPress = function onPress() {
-      return navigation(closure_2[17]).close();
+      return navigation(outer1_2[17]).close();
     };
-    items4[1] = callback(arg1(dependencyMap[16]).Button, obj6);
+    items4[1] = callback(changeEmailReason(4543).Button, obj6);
     obj4.children = items4;
     items2[3] = callback2(closure_4, obj4);
     obj.children = items2;

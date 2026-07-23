@@ -1,22 +1,23 @@
-// Module ID: 6909
-// Function ID: 55038
+// Module ID: 6914
+// Function ID: 55072
 // Name: AppStartInfo
-// Dependencies: []
+// Dependencies: [57, 5, 6915, 3988, 2]
 
-// Module 6909 (AppStartInfo)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+// Module 6914 (AppStartInfo)
+import _slicedToArray from "_slicedToArray";
+import asyncGeneratorStep from "asyncGeneratorStep";
+
 let closure_4 = {};
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/tti_analytics/native/AppStartInfo.android.tsx");
+const result = require("enforcing").fileFinishedImporting("modules/tti_analytics/native/AppStartInfo.android.tsx");
 
 export const AppStartInfo = {
   getAppUIViewed() {
-    const mainActivityCreationTime = importDefault(dependencyMap[2]).getMainActivityCreationTime();
+    const mainActivityCreationTime = importDefault(6915).getMainActivityCreationTime();
     let tmp2 = null != mainActivityCreationTime;
     if (tmp2) {
       let flag = !tmp4;
-      if (!closure_4[mainActivityCreationTime]) {
-        closure_4[mainActivityCreationTime] = true;
+      if (!table[mainActivityCreationTime]) {
+        table[mainActivityCreationTime] = true;
         flag = false;
       }
       tmp2 = flag;
@@ -25,23 +26,23 @@ export const AppStartInfo = {
   },
   getAppStartInfo() {
     return callback(async () => {
-      let obj = callback(closure_1[3]);
+      let obj = outer2_0(outer2_1[3]);
       const tmp = yield obj.getAppStartedTimestamp();
       if (tmp <= 0) {
         const _Error = Error;
         const error = new Error("NativeTTIManager.getAppStartedTimestamp() returned an invalid timestamp. That's unexpected!");
         throw error;
       } else {
-        const items = [callback(closure_1[3]).getAppStartType(), , ];
-        const obj5 = callback(closure_1[3]);
-        items[1] = callback(closure_1[3]).getLaunchScenario();
-        const obj6 = callback(closure_1[3]);
-        items[2] = callback(closure_1[3]).getAppFirstVisibleTimestamp();
-        const tmp3 = callback2(yield Promise.all(items), 3);
+        const items = [outer2_0(outer2_1[3]).getAppStartType(), , ];
+        const obj5 = outer2_0(outer2_1[3]);
+        items[1] = outer2_0(outer2_1[3]).getLaunchScenario();
+        const obj6 = outer2_0(outer2_1[3]);
+        items[2] = outer2_0(outer2_1[3]).getAppFirstVisibleTimestamp();
+        const tmp3 = outer2_2(yield Promise.all(items), 3);
         obj = {};
         [obj2.app_start_type, obj2.app_launch_scenario] = tmp3;
-        const obj7 = callback(closure_1[3]);
-        const mainActivityCreationTime = callback(closure_1[2]).getMainActivityCreationTime();
+        const obj7 = outer2_0(outer2_1[3]);
+        const mainActivityCreationTime = outer2_0(outer2_1[2]).getMainActivityCreationTime();
         if (null != mainActivityCreationTime) {
           obj.android_time_creation_to_create_main_activity = mainActivityCreationTime - tmp;
         }

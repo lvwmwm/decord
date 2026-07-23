@@ -1,7 +1,7 @@
 // Module ID: 510
 // Function ID: 6562
-// Dependencies: []
+// Dependencies: [511, 512, 514]
 
 // Module 510
 
-export default { formats: require(dependencyMap[0]), parse: require(dependencyMap[1]), stringify: require(dependencyMap[2]) };
+export default { formats: require("module_511"), parse: require("interpretNumericEntities"), stringify: require("pushToArray") };

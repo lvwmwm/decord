@@ -1,9 +1,23 @@
-// Module ID: 10534
-// Function ID: 82321
+// Module ID: 10544
+// Function ID: 82371
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4149, 1194, 4177, 4952, 4143, 4148, 4194, 22, 566, 686, 2]
 
-// Module 10534 (_isNativeReflectConstruct)
+// Module 10544 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import { ParticipantTypes } from "ParticipantTypes";
+import importDefaultResult from "apply";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +27,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +80,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -108,7 +122,7 @@ function updateSpeaker() {
     if (result) {
       selectedParticipantId = null;
     }
-    const lastActiveStream = lastActiveStream.getLastActiveStream();
+    lastActiveStream = lastActiveStream.getLastActiveStream();
     let participant = null;
     if (null != selectedParticipantId) {
       participant = store.getParticipant(closure_2, selectedParticipantId);
@@ -139,7 +153,7 @@ function updateSpeaker() {
     if (null != lastActiveStream) {
       tmp21 = tmp20;
       if (null == tmp20) {
-        let obj = arg1(dependencyMap[11]);
+        let obj = require(4194) /* isStreamKey */;
         const participant1 = store.getParticipant(closure_2, obj.encodeStreamKey(lastActiveStream));
         let id;
         if (null != participant1) {
@@ -170,16 +184,16 @@ function updateSpeaker() {
           let value = iter2.value;
           let tmp31 = tmp38;
           if (value.user.id !== id1) {
-            let tmp57 = closure_11;
+            let tmp57 = localVideoDisabled;
             tmp31 = tmp38;
-            if (!closure_11.isLocalVideoDisabled(value.user.id)) {
-              let tmp32 = closure_13;
+            if (!localVideoDisabled.isLocalVideoDisabled(value.user.id)) {
+              let tmp32 = store;
               let tmp33 = closure_2;
               tmp31 = tmp38;
-              if (!closure_13.isParticipantPoppedOut(closure_2, value.id)) {
+              if (!store.isParticipantPoppedOut(closure_2, value.id)) {
                 let arr = items.push(value.user.id);
-                let tmp35 = closure_12;
-                let speakingDuration = closure_12.getSpeakingDuration(value.user.id, timestamp);
+                let tmp35 = speakingDuration;
+                speakingDuration = speakingDuration.getSpeakingDuration(value.user.id, timestamp);
                 tmp31 = speakingDuration;
                 if (0 !== speakingDuration) {
                   obj = { userId: value.user.id, duration: speakingDuration };
@@ -190,7 +204,7 @@ function updateSpeaker() {
             }
           }
           iter = tmp56();
-          let tmp38 = tmp31;
+          tmp38 = tmp31;
           iter2 = iter;
         } while (!iter.done);
       }
@@ -206,7 +220,7 @@ function updateSpeaker() {
           }
           if (tmp42) {
             let userId = tmp41.userId;
-            let tmp39 = duration;
+            tmp39 = duration;
           }
           num2 = num2 + 1;
           tmp40 = userId;
@@ -214,13 +228,14 @@ function updateSpeaker() {
       }
       tmp = tmp40;
       if (null == tmp40) {
-        if (null == tmp) {
+        if (null == closure_3) {
           const first = items[0];
         }
       }
     }
   }
-  if (tmp !== tmp) {
+  if (closure_3 !== tmp) {
+    closure_3 = tmp;
     if (flag) {
       tmp2.emitChange();
     }
@@ -230,31 +245,20 @@ function handleChannelRTCUpdate() {
   callback3();
   return false;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-const ParticipantTypes = arg1(dependencyMap[10]).ParticipantTypes;
-let closure_15 = importDefault(dependencyMap[12]).throttle(updateSpeaker, 300, { trailing: true });
-let tmp2 = (Store) => {
+let closure_15 = require("apply").throttle(updateSpeaker, 300, { trailing: true });
+let tmp2 = ((Store) => {
   class VideoSpeakerStoreClass {
     constructor() {
       self = this;
-      tmp = closure_4(this, VideoSpeakerStoreClass);
-      obj = closure_7(VideoSpeakerStoreClass);
-      tmp2 = closure_6;
-      if (closure_17()) {
+      tmp = outer1_4(this, VideoSpeakerStoreClass);
+      obj = outer1_7(VideoSpeakerStoreClass);
+      tmp2 = outer1_6;
+      if (outer1_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -263,39 +267,39 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = VideoSpeakerStoreClass;
   callback2(VideoSpeakerStoreClass, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_13, closure_10, closure_12, closure_9, closure_11);
-      const items = [closure_13, closure_9];
-      this.syncWith(items, closure_21);
+      this.waitFor(outer1_13, outer1_10, outer1_12, outer1_9, outer1_11);
+      const items = [outer1_13, outer1_9];
+      this.syncWith(items, outer1_21);
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "getSpeaker",
     value(arg0) {
-      if (arg0 !== arg0) {
-        let closure_3 = null;
-        callback4(false);
+      if (outer1_2 !== arg0) {
+        outer1_2 = arg0;
+        const outer1_3 = null;
+        outer1_20(false);
       }
-      if (null != closure_3) {
-        let id = closure_3;
+      if (null != outer1_3) {
+        let id = outer1_3;
       } else {
-        id = id.getId();
+        id = outer1_10.getId();
       }
       return id;
     }
   };
   items[1] = obj;
   return callback(VideoSpeakerStoreClass, items);
-}(importDefault(dependencyMap[13]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "VideoSpeakerStore";
-tmp2 = new tmp2(importDefault(dependencyMap[14]), { AUDIO_SET_LOCAL_VIDEO_DISABLED: handleChannelRTCUpdate });
-const importDefaultResult = importDefault(dependencyMap[12]);
-const obj = { AUDIO_SET_LOCAL_VIDEO_DISABLED: handleChannelRTCUpdate };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/calls/VideoSpeakerStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), { AUDIO_SET_LOCAL_VIDEO_DISABLED: handleChannelRTCUpdate });
+let closure_16 = tmp2;
+let obj = { AUDIO_SET_LOCAL_VIDEO_DISABLED: handleChannelRTCUpdate };
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/calls/VideoSpeakerStore.tsx");
 
 export default tmp2;

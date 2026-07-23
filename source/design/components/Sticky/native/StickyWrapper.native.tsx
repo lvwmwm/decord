@@ -1,23 +1,28 @@
-// Module ID: 10390
-// Function ID: 80109
+// Module ID: 10400
+// Function ID: 80159
 // Name: StickyWrapper
-// Dependencies: []
+// Dependencies: [31, 27, 33, 478, 2]
 // Exports: StickyWrapper
 
-// Module 10390 (StickyWrapper)
+// Module 10400 (StickyWrapper)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+
 let StyleSheet;
-importAll(dependencyMap[0]);
-({ StyleSheet, View: closure_2 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-const styles = StyleSheet.create({ wrapper: {}, header: { zIndex: 1 }, androidHeader: { "Null": 131420590, "Null": -1717986767, "Null": -644245095, "Null": 94527 } });
-const tmp4 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/Sticky/native/StickyWrapper.native.tsx");
+let closure_2;
+let closure_3;
+let closure_4;
+const require = arg1;
+({ StyleSheet, View: closure_2 } = get_ActivityIndicator);
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+const styles = StyleSheet.create({ wrapper: { height: "100%", width: "100%" }, header: { zIndex: 1 }, androidHeader: { position: "absolute", top: 0, left: 0, right: 0 } });
+const result = require("jsxProd").fileFinishedImporting("design/components/Sticky/native/StickyWrapper.native.tsx");
 
 export const StickyWrapper = function StickyWrapper(header) {
   header = header.header;
   let obj = { style: items, pointerEvents: header.pointerEvents };
-  const items = [header.style, closure_5.wrapper];
+  items = [header.style, closure_5.wrapper];
   let tmp4Result = null;
   if (null != header) {
     obj = {};
@@ -30,7 +35,7 @@ export const StickyWrapper = function StickyWrapper(header) {
     obj.style = items1;
     obj.children = header;
     tmp4Result = closure_3(closure_2, obj);
-    const obj3 = arg1(dependencyMap[3]);
+    obj3 = require(478) /* isWindows */;
     const tmp4 = closure_3;
     const tmp5 = closure_2;
   }

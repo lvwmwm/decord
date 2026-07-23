@@ -1,49 +1,48 @@
-// Module ID: 5467
-// Function ID: 46720
+// Module ID: 5470
+// Function ID: 46739
 // Name: useGetOrFetchApplications
-// Dependencies: [5, 31, 4809, 566, 4935, 2, 31, 27]
+// Dependencies: [31, 4167, 620, 5465, 22, 1327, 566, 2]
 // Exports: useGetOrFetchApplication
 
-// Module 5467 (useGetOrFetchApplications)
-import asyncGeneratorStep from "asyncGeneratorStep";
-import module_31 from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
+// Module 5470 (useGetOrFetchApplications)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 
+const require = arg1;
 function useGetOrFetchApplications(arg0) {
   let flag = arg1;
-  const arg1 = arg0;
+  const _require = arg0;
   if (arg1 === undefined) {
     flag = true;
   }
-  const importDefault = flag;
-  let closure_2;
-  closure_2 = React.useRef([]);
+  let dependencyMap;
+  dependencyMap = React.useRef([]);
   const items = [arg0, flag];
   const effect = React.useEffect(() => {
     let tmp = flag;
     if (flag) {
-      tmp = !arg0(ref[2]).areArraysShallowEqual(arg0, ref.current);
-      const obj = arg0(ref[2]);
+      tmp = !lib(ref[2]).areArraysShallowEqual(lib, ref.current);
+      const obj = lib(ref[2]);
     }
     if (tmp) {
       const obj2 = flag(ref[3]);
-      const found = flag(ref[4])(arg0).filter(arg0(ref[5]).isNotNullish);
-      const arr = flag(ref[4])(arg0);
+      const found = flag(ref[4])(lib).filter(lib(ref[5]).isNotNullish);
+      const arr = flag(ref[4])(lib);
       const applications = obj2.fetchApplications(found.uniq().value(), false);
-      ref.current = arg0;
+      ref.current = lib;
       const iter = found.uniq();
     }
   }, items);
-  const items1 = [module_31];
-  return arg1(closure_2[6]).useStateFromStoresArray(items1, () => arg0.map((applicationId) => {
+  const items1 = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStoresArray(items1, () => lib.map((applicationId) => {
     let application;
     if (null != applicationId) {
-      application = application.getApplication(applicationId);
+      application = outer2_4.getApplication(applicationId);
     }
     return application;
   }));
 }
-const result = get_ActivityIndicator.fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
+const result = require("shallowEqual").fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");
 
 export default useGetOrFetchApplications;
 export const useGetOrFetchApplication = function useGetOrFetchApplication(applicationId, fetchesApplication) {

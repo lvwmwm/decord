@@ -1,13 +1,13 @@
 // Module ID: 721
-// Function ID: 8746
+// Function ID: 8747
 // Name: hashGet
-// Dependencies: []
+// Dependencies: [713]
 
 // Module 721 (hashGet)
 
 export default function hashGet(arg0) {
   const __data__ = this.__data__;
-  if (require(dependencyMap[0])) {
+  if (require(713) /* getNative */) {
     let tmp4;
     if ("__lodash_hash_undefined__" !== __data__[arg0]) {
       tmp4 = tmp3;

@@ -1,21 +1,20 @@
-// Module ID: 14375
-// Function ID: 108514
+// Module ID: 14489
+// Function ID: 110667
 // Name: calculateTotalGaps
-// Dependencies: []
+// Dependencies: [8663, 1450, 2]
 // Exports: useCardLayout
 
-// Module 14375 (calculateTotalGaps)
+// Module 14489 (calculateTotalGaps)
 function calculateTotalGaps(arg0, arg1) {
-  return arg1 + require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_GAP * (arg0 - 1);
+  return arg1 + require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP * (arg0 - 1);
 }
 function calculateCardWidth(arg0, arg1, arg2) {
   return (arg1 - calculateTotalGaps(arg0, arg2)) / arg0;
 }
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
+let result = require("set").fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
 
 export const useCardLayout = function useCardLayout() {
-  const width = importDefault(dependencyMap[1])().width;
+  const width = importDefault(1450)().width;
   let num = 1;
   if (width >= 320) {
     num = 2;
@@ -28,18 +27,18 @@ export const useCardLayout = function useCardLayout() {
     if (width >= 768) {
       num2 = 4;
     }
-    const result = require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_WIDTH * num;
-    const diff = width - (result + require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_GAP * (num - 1));
-    if (diff < 2 * require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_GAP) {
+    const result = require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_WIDTH * num;
+    const diff = width - (result + require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP * (num - 1));
+    if (diff < 2 * require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP) {
       const _Math = Math;
       let bound = Math.max(4, diff);
     } else {
-      bound = 2 * require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_GAP;
+      bound = 2 * require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP;
     }
     const tmp10 = calculateCardWidth(num, width, bound);
     let tmp14 = num;
     let tmp15 = tmp10;
-    if (tmp10 > require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_MAX_WIDTH) {
+    if (tmp10 > require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_MAX_WIDTH) {
       let tmp16 = num;
       tmp15 = tmp10;
       tmp14 = num;
@@ -48,7 +47,7 @@ export const useCardLayout = function useCardLayout() {
         const tmp19 = calculateCardWidth(sum, width, bound);
         tmp14 = sum;
         tmp15 = tmp19;
-        while (tmp19 > require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_MAX_WIDTH) {
+        while (tmp19 > require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_MAX_WIDTH) {
           tmp16 = sum;
           tmp15 = tmp19;
           tmp14 = sum;
@@ -60,8 +59,8 @@ export const useCardLayout = function useCardLayout() {
     }
     const _Math2 = Math;
     const _Math3 = Math;
-    const bound1 = Math.max(tmp15, require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_WIDTH);
-    const bound2 = Math.min(bound1, require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
+    const bound1 = Math.max(tmp15, require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_WIDTH);
+    const bound2 = Math.min(bound1, require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
     const result1 = bound2 * tmp14;
     if (result1 + calculateTotalGaps(tmp14, bound) > width) {
       if (tmp14 > 1) {
@@ -71,6 +70,6 @@ export const useCardLayout = function useCardLayout() {
     }
     obj = { columns: tmp14, cardWidth: bound2 };
     const result2 = bound2 * tmp14;
-    obj.rowWidth = result2 + require(dependencyMap[0]).COLLECTIBLES_SHOP_CARD_GAP * (tmp14 - 1) + bound;
+    obj.rowWidth = result2 + require(8663) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP * (tmp14 - 1) + bound;
   }
 };

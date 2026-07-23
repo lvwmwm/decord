@@ -1,24 +1,26 @@
 // Module ID: 560
 // Function ID: 6770
 // Name: _createForOfIteratorHelper
-// Dependencies: []
+// Dependencies: [65]
 
 // Module 560 (_createForOfIteratorHelper)
+import _toConsumableArray from "_toConsumableArray";
+
 let length;
-function _createForOfIteratorHelper(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelper(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  let closure_1 = Symbol_iterator;
-  if (Symbol_iterator) {
+  let arr = iterable;
+  if (iterable) {
     const _arrayLikeToArray = true;
-    let closure_5 = false;
+    let c5 = false;
     let obj = {
       s() {
 
@@ -29,17 +31,18 @@ function _createForOfIteratorHelper(@@iterator) {
           return iter;
         },
       e(arg0) {
-          let closure_5 = true;
+          let c5 = true;
+          let closure_3 = arg0;
         },
       f() {
-          let tmp = closure_4;
-          if (!closure_4) {
+          let tmp = c4;
+          if (!c4) {
             tmp = null == arr.return;
           }
           if (!tmp) {
             arr.return();
           }
-          if (closure_5) {
+          if (c5) {
             throw closure_3;
           }
         }
@@ -47,14 +50,14 @@ function _createForOfIteratorHelper(@@iterator) {
     return obj;
   } else {
     const _Array = Array;
-    if (!Array.isArray(Symbol_iterator)) {
-      let arr;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          arr = _arrayLikeToArray(Symbol_iterator, undefined);
+    if (!Array.isArray(iterable)) {
+      arr = undefined;
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          arr = _arrayLikeToArray(iterable, undefined);
         } else {
           const _Object = Object;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           class F {
             constructor() {
               return;
@@ -62,24 +65,23 @@ function _createForOfIteratorHelper(@@iterator) {
           }
           let name = substr;
           if (tmp2) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                arr = _arrayLikeToArray(iterable, undefined);
               } else {
                 obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp2 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp2 = "Object" === substr && iterable.constructor;
         }
       }
-      closure_1 = arr;
       if (!arr) {
         const _TypeError = TypeError;
         const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
@@ -91,10 +93,10 @@ function _createForOfIteratorHelper(@@iterator) {
         throw typeError;
       }
     }
-    if (closure_1) {
-      closure_0 = closure_1;
+    if (arr) {
+      closure_0 = arr;
     }
-    let closure_2 = 0;
+    let c2 = 0;
     class F {
       constructor() {
         return;
@@ -160,26 +162,25 @@ class Agent {
   }
 }
 let num = 0;
-let closure_0 = require(dependencyMap[0]);
-let closure_1 = 0;
-const items = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+let c1 = 0;
+const items = ["use", "on", "once", "set", "query", "type", "accept", "auth", "withCredentials", "sortQuery", "retry", "ok", "redirects", "timeout", "buffer", "serialize", "parse", "ca", "key", "pfx", "cert", "disableTLSCerts"];
 if (0 < items.length) {
   do {
-    let tmp = function _loop() {
-      let closure_0 = tmp;
-      Agent.prototype[items[closure_1]] = function() {
+    let tmp = (function _loop() {
+      const _toConsumableArray = tmp;
+      Agent.prototype[items[c1]] = function() {
         const self = this;
         const length = arguments.length;
         const array = new Array(length);
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        self._defaults.push({ fn: tmp, args: array });
+        self._defaults.push({ fn: closure_0, args: array });
         return self;
       };
-    }();
+    })();
     num = num + 1;
-    closure_1 = num;
+    c1 = num;
     length = items.length;
   } while (num < length);
 }

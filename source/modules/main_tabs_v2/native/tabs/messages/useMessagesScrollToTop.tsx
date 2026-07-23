@@ -1,41 +1,41 @@
-// Module ID: 14799
-// Function ID: 111521
+// Module ID: 14915
+// Function ID: 113689
 // Name: useMessagesScrollToTop
-// Dependencies: []
+// Dependencies: [31, 4122, 3981, 10887, 1457, 2]
 // Exports: default
 
-// Module 14799 (useMessagesScrollToTop)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesScrollToTop.tsx");
+// Module 14915 (useMessagesScrollToTop)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesScrollToTop.tsx");
 
 export default function useMessagesScrollToTop(listRef) {
   listRef = listRef.listRef;
-  const arg1 = listRef;
   const listRefHappeningNow = listRef.listRefHappeningNow;
-  const importDefault = listRefHappeningNow;
   const items = [listRef, listRefHappeningNow];
   const ref = React.useRef(React.useMemo(() => ({
     scrollToTopTimeout: -1,
     scrollToTop() {
       const self = this;
-      if (null != obj.coerceGuildsRoute(callback2(closure_2[3])())) {
+      if (null != obj.coerceGuildsRoute(listRefHappeningNow(outer2_2[3])())) {
         if (-1 === self.scrollToTopTimeout) {
           const _setTimeout = setTimeout;
           self.scrollToTopTimeout = setTimeout(() => {
-            let tmp = null == ref;
+            let tmp = null == outer2_0;
             if (!tmp) {
-              const current = ref.current;
+              const current = outer2_0.current;
               tmp = null == current;
               let obj = current;
             }
             if (!tmp) {
-              obj = { borderWidth: "%FunctionPrototype%", backgroundColor: "paddingStart", animated: !closure_4.useReducedMotion };
+              obj = { section: 0, item: 0, animated: !outer3_4.useReducedMotion };
               obj.scrollToLocation(obj);
             }
-            const current2 = ref2.current;
+            const current2 = outer2_1.current;
             if (null != current2) {
-              obj = { offset: 0, animated: !closure_4.useReducedMotion };
+              obj = { offset: 0, animated: !outer3_4.useReducedMotion };
               current2.scrollToOffset(obj);
             }
           }, 300);
@@ -47,5 +47,5 @@ export default function useMessagesScrollToTop(listRef) {
       }
     }
   }), items));
-  const scrollToTop = arg1(dependencyMap[4]).useScrollToTop(ref);
+  const scrollToTop = listRef(1457).useScrollToTop(ref);
 };

@@ -1,28 +1,33 @@
-// Module ID: 14130
-// Function ID: 107260
+// Module ID: 14244
+// Function ID: 109416
 // Name: slider
-// Dependencies: []
+// Dependencies: [31, 4122, 7662, 33, 13370, 14201, 11254, 10095, 1212, 1273, 2]
 
-// Module 14130 (slider)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[7]);
-obj = {
+// Module 14244 (slider)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[8]).intl;
-    return intl.string(arg1(dependencyMap[8]).t.TYyfO/);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["TYyfO/"]);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.ACCESSIBILITY,
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useTrailing() {
-    const obj = { size: arg1(dependencyMap[9]).BetaSizes.SMALL };
-    return jsx(arg1(dependencyMap[9]).BetaTag, obj);
+    const obj = { size: require(1273) /* Button */.BetaSizes.SMALL };
+    return jsx(require(1273) /* Button */.BetaTag, { size: require(1273) /* Button */.BetaSizes.SMALL });
   },
   useProps: function useContrastSettingProps() {
-    return React.useMemo(() => ({ value: contrast.contrast, onSlidingComplete: callback(closure_1[4]).setContrast, startIcon: callback2(callback(closure_1[5]).CircleMinusIcon, {}), endIcon: callback2(callback(closure_1[6]).CirclePlusIcon, {}) }), []);
+    return React.useMemo(() => {
+      const obj = { value: outer1_3.contrast, onSlidingComplete: outer1_0(outer1_1[4]).setContrast, minimumValue: 0, maximumValue: 2, step: 0.1, startIcon: outer1_4(outer1_0(outer1_1[5]).CircleMinusIcon, {}), endIcon: outer1_4(outer1_0(outer1_1[6]).CirclePlusIcon, {}) };
+      return obj;
+    }, []);
   }
 };
-const slider = obj.createSlider(obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/defs/native/ContrastModeSetting.tsx");
+createToggle = createToggle.createSlider(createToggle);
+const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/ContrastModeSetting.tsx");
 
-export default slider;
+export default createToggle;

@@ -1,16 +1,18 @@
-// Module ID: 13549
-// Function ID: 102769
+// Module ID: 13663
+// Function ID: 104925
 // Name: useUsernameStatus
-// Dependencies: []
+// Dependencies: [57, 31, 13664, 2]
 // Exports: useUsernameStatus
 
-// Module 13549 (useUsernameStatus)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/unique_usernames/useUsernameStatus.tsx");
+// Module 13663 (useUsernameStatus)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+const result = require("useUsernameLiveCheck").fileFinishedImporting("modules/unique_usernames/useUsernameStatus.tsx");
 
 export const useUsernameStatus = (arg0, flag, flag2) => {
-  flag = arg0;
+  const _require = arg0;
   if (flag === undefined) {
     flag = true;
   }
@@ -18,16 +20,15 @@ export const useUsernameStatus = (arg0, flag, flag2) => {
     flag2 = false;
   }
   const dependencyMap = tmp;
-  let callback;
+  let usernameLiveCheck;
   let React;
-  const usernameLiveCheck = flag(dependencyMap[2]).useUsernameLiveCheck(arg0, flag, flag2);
-  callback = usernameLiveCheck;
-  const tmp3 = callback(React.useState(undefined), 2);
+  usernameLiveCheck = _require(13664).useUsernameLiveCheck(arg0, flag, flag2);
+  const tmp3 = usernameLiveCheck(React.useState(undefined), 2);
   React = tmp3[1];
   const items = [usernameLiveCheck, arg0, arg3];
   const effect = React.useEffect(() => {
-    if ("" !== arg0) {
-      if (arg0 !== arg0) {
+    if ("" !== closure_0) {
+      if (closure_0 !== closure_1) {
         if (null != usernameLiveCheck) {
           callback(usernameLiveCheck);
         }

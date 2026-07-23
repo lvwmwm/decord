@@ -1,15 +1,15 @@
-// Module ID: 4708
-// Function ID: 40967
+// Module ID: 4711
+// Function ID: 40985
 // Name: getKestrelConfig
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getEffectiveKestrelLimit, getKestrelConfig, getKestrelVariantName
 
-// Module 4708 (getKestrelConfig)
-const _module = require(dependencyMap[0]);
-const obj = { y: false, DateToSystemTimezoneSetter: false, defaultConfig: {}, variations: { [0]: {}, [1]: {}, [2]: {}, [3]: {} } };
-let closure_0 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_uploads/experiments/KestrelExperiment.tsx");
+// Module 4711 (getKestrelConfig)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-kestrel", kind: "user", defaultConfig: { enabled: false, threshold: 0 }, variations: { [0]: { enabled: false, threshold: 0 }, [1]: { enabled: true, threshold: 15 }, [2]: { enabled: true, threshold: 20 }, [3]: { enabled: true, threshold: 25 } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_uploads/experiments/KestrelExperiment.tsx");
 
 export const getKestrelConfig = function getKestrelConfig(location) {
   return config.getConfig({ location: location.location });

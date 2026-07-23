@@ -1,8 +1,8 @@
 // Module ID: 985
-// Function ID: 10632
+// Function ID: 10633
 // Name: utf8ToBytes
-// Dependencies: []
+// Dependencies: [986]
 
 // Module 985 (utf8ToBytes)
 
-export const utf8ToBytes = require(dependencyMap[0]).utf8ToBytes;
+export const utf8ToBytes = require("utf8ToBytes").utf8ToBytes;

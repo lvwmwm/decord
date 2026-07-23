@@ -1,79 +1,79 @@
-// Module ID: 12928
-// Function ID: 98533
+// Module ID: 13042
+// Function ID: 100689
 // Name: NOOP
-// Dependencies: []
+// Dependencies: [57, 31, 27, 653, 33, 13032, 4130, 689, 3991, 3849, 1557, 1450, 477, 3843, 1212, 4539, 4131, 13036, 13030, 4542, 2]
 // Exports: Menu
 
-// Module 12928 (NOOP)
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-const ScrollView = tmp2.ScrollView;
-const NOOP = arg1(dependencyMap[3]).NOOP;
-const jsx = arg1(dependencyMap[4]).jsx;
-let closure_8 = { "Bool(true)": null, "Bool(true)": "5f77547974eb8f3f02aedbb78b4b73bc", "Bool(true)": "NitroGem12", "Bool(true)": "lottie", "Bool(true)": true };
-let obj = { duration: 250, easing: arg1(dependencyMap[5]).STANDARD_EASING };
-let obj2 = arg1(dependencyMap[6]);
+// Module 13042 (NOOP)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { NOOP } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const ScrollView = get_ActivityIndicator.ScrollView;
+let closure_8 = { mass: 1, stiffness: 300, damping: 25, restSpeedThreshold: 0.01, restDisplacementThreshold: 0.01 };
+let obj = { duration: 250, easing: require("STANDARD_EASING").STANDARD_EASING };
 obj = {};
-const obj1 = {};
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
+let obj1 = {};
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
 obj1["zIndex"] = 1;
 obj.backdrop = obj1;
-obj2 = { position: "absolute", backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[7]).radii.sm, width: 220 };
-obj.menu = obj2;
-let closure_10 = obj2.createStyles(obj);
+_createForOfIteratorHelperLoose = { position: "absolute", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, width: 220 };
+obj.menu = _createForOfIteratorHelperLoose;
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
 const context = importAllResult.createContext({ menuClose: NOOP, menuDismiss: NOOP });
 let closure_12 = { code: "function measureButtonRef_MenuTsx1(ref,setDimensions){const{measure,runOnJS}=this.__closure;const measurements=measure(ref);if(measurements==null)return;runOnJS(setDimensions)(measurements);}" };
-let closure_13 = () => {
+let closure_13 = (() => {
   function measureButtonRef(arg0, arg1) {
-    const measureResult = callback(closure_2[8]).measure(arg0);
+    const measureResult = outer1_0(outer1_2[8]).measure(arg0);
     if (null != measureResult) {
-      callback(closure_2[8]).runOnJS(arg1)(measureResult);
-      const obj2 = callback(closure_2[8]);
+      outer1_0(outer1_2[8]).runOnJS(arg1)(measureResult);
+      const obj2 = outer1_0(outer1_2[8]);
     }
   }
-  measureButtonRef.__closure = { measure: arg1(dependencyMap[8]).measure, runOnJS: arg1(dependencyMap[8]).runOnJS };
+  measureButtonRef.__closure = { measure: require(3991).measure, runOnJS: require(3991).runOnJS };
   measureButtonRef.__workletHash = 15651320687527;
   measureButtonRef.__initData = closure_12;
   return measureButtonRef;
-}();
+})();
 let closure_14 = { code: "function MenuTsx2(){const{runOnJS,openMenuCallback}=this.__closure;return runOnJS(openMenuCallback)();}" };
 let closure_15 = { code: "function MenuTsx3(){const{runOnJS,closeMenuCallback}=this.__closure;return runOnJS(closeMenuCallback)();}" };
 let closure_16 = { code: "function MenuTsx4(){const{visible,useReducedMotion,interpolate,dirX,size,offsetAnimated,dirY}=this.__closure;var _offsetAnimated,_offsetAnimated$get,_offsetAnimated2,_offsetAnimated$get2;return{opacity:visible.get(),transform:useReducedMotion?[]:[{translateX:interpolate(visible.get(),[0,1],[(dirX==='left'?-1:1)*size.get().width/4,((_offsetAnimated=offsetAnimated)===null||_offsetAnimated===void 0||(_offsetAnimated=_offsetAnimated.get())===null||_offsetAnimated===void 0?void 0:_offsetAnimated.x)!=null?(_offsetAnimated$get=offsetAnimated.get())===null||_offsetAnimated$get===void 0?void 0:_offsetAnimated$get.x:0])},{translateY:interpolate(visible.get(),[0,1],[(dirY==='top'?-1:1)*size.get().height/4,((_offsetAnimated2=offsetAnimated)===null||_offsetAnimated2===void 0||(_offsetAnimated2=_offsetAnimated2.get())===null||_offsetAnimated2===void 0?void 0:_offsetAnimated2.y)!=null?(_offsetAnimated$get2=offsetAnimated.get())===null||_offsetAnimated$get2===void 0?void 0:_offsetAnimated$get2.y:0])},{scale:visible.get()/2+0.5}]};}" };
-const result = arg1(dependencyMap[20]).fileFinishedImporting("design/components/Menu/native/Menu.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Menu/native/Menu.tsx");
 
 export const MENU_OFFSET = 10;
 export const MenuContext = context;
 export const Menu = function Menu(toggleButtonRef) {
   let children;
+  let _slicedToArray;
   let offsetAnimated;
   let onClose;
   let position;
   let style;
   toggleButtonRef = toggleButtonRef.toggleButtonRef;
-  const arg1 = toggleButtonRef;
   ({ onClose, position } = toggleButtonRef);
   if (position === undefined) {
     position = "right";
   }
-  const importDefault = position;
   let str = toggleButtonRef.align;
   if (str === undefined) {
     str = "start";
   }
-  const dependencyMap = str;
-  ({ offset: closure_3, offsetAnimated } = toggleButtonRef);
-  let ScrollView;
+  ({ offset: _slicedToArray, offsetAnimated } = toggleButtonRef);
+  let enabled;
   let closure_6;
   let jsx;
   let closure_8;
-  let obj;
+  let first;
   let callback2;
-  let context;
-  let closure_12;
-  let closure_13;
-  let closure_14;
-  let closure_15;
+  let sharedValue;
+  let sharedValue1;
+  onClose = undefined;
+  let c14;
+  let c15;
   function openMenuCallback() {
     let obj = toggleButtonRef(str[12]);
     if (obj.isAndroid()) {
@@ -87,12 +87,12 @@ export const Menu = function Menu(toggleButtonRef) {
   function handleClose() {
     let obj = toggleButtonRef(str[16]);
     const fn = function t() {
-      return callback(closure_2[8]).runOnJS(closure_13)();
+      return toggleButtonRef(str[8]).runOnJS(outer1_13)();
     };
     obj = { runOnJS: toggleButtonRef(str[8]).runOnJS, closeMenuCallback: onClose };
     fn.__closure = obj;
     fn.__workletHash = 5879184549724;
-    fn.__initData = tmp10;
+    fn.__initData = c15;
     const result = sharedValue.set(obj.withTiming(0, first, "respect-motion-settings", fn));
   }
   function handleDismiss() {
@@ -103,23 +103,19 @@ export const Menu = function Menu(toggleButtonRef) {
   }
   ({ style, children } = toggleButtonRef);
   const tmp = callback2();
-  const enabled = importAllResult.useContext(arg1(dependencyMap[9]).AccessibilityPreferencesContext).reducedMotion.enabled;
-  ScrollView = enabled;
-  closure_6 = importDefault(dependencyMap[10])();
-  jsx = importDefault(dependencyMap[11])();
-  closure_8 = importAllResult.useRef(null);
+  enabled = offsetAnimated.useContext(toggleButtonRef(str[9]).AccessibilityPreferencesContext).reducedMotion.enabled;
+  closure_6 = position(str[10])();
+  jsx = position(str[11])();
+  closure_8 = offsetAnimated.useRef(null);
   const tmp2 = callback(offsetAnimated.useState(null), 2);
-  const first = tmp2[0];
-  obj = first;
+  first = tmp2[0];
   callback2 = tmp2[1];
-  obj = arg1(dependencyMap[8]);
-  const sharedValue = obj.useSharedValue(0);
-  context = sharedValue;
-  let obj1 = arg1(dependencyMap[8]);
-  const sharedValue1 = obj1.useSharedValue({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
-  closure_12 = sharedValue1;
-  const items = [toggleButtonRef, first];
-  const layoutEffect = importAllResult.useLayoutEffect(() => {
+  let obj = toggleButtonRef(str[8]);
+  sharedValue = obj.useSharedValue(0);
+  let obj1 = toggleButtonRef(str[8]);
+  sharedValue1 = obj1.useSharedValue({ width: 0, height: 0 });
+  let items = [toggleButtonRef, first];
+  const layoutEffect = offsetAnimated.useLayoutEffect(() => {
     let current;
     if (null != toggleButtonRef) {
       current = toggleButtonRef.current;
@@ -136,10 +132,9 @@ export const Menu = function Menu(toggleButtonRef) {
   if (null == onClose) {
     onClose = closure_6;
   }
-  closure_13 = onClose;
-  let obj2 = arg1(dependencyMap[17]);
-  const boxShadowStyle = obj2.generateBoxShadowStyle(arg1(dependencyMap[17]).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
-  const tmp8 = callback(() => {
+  let obj2 = toggleButtonRef(str[17]);
+  const boxShadowStyle = obj2.generateBoxShadowStyle(toggleButtonRef(str[17]).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
+  let tmp8 = callback((() => {
     let pageX;
     let pageY;
     if ("left" === position) {
@@ -148,7 +143,7 @@ export const Menu = function Menu(toggleButtonRef) {
       str = "row";
     }
     if (null == first) {
-      let point = { 0: "%FunctionPrototype%", 0: "paddingStart" };
+      let point = { x: 0, y: 0 };
     } else {
       let num = 0;
       ({ pageX, pageY } = first);
@@ -202,9 +197,9 @@ export const Menu = function Menu(toggleButtonRef) {
     }
     const y = point.y;
     const tmp17 = "top" === str11 ? y : height - y;
-    if (null != closure_3) {
-      let sum4 = x + closure_3.x;
-      let sum5 = tmp17 + closure_3.y;
+    if (null != _slicedToArray) {
+      let sum4 = x + _slicedToArray.x;
+      let sum5 = tmp17 + _slicedToArray.y;
     } else {
       let num5 = 0;
       if ("column" === str) {
@@ -221,31 +216,31 @@ export const Menu = function Menu(toggleButtonRef) {
     const obj = {};
     obj[str8] = sum4;
     obj[str11] = sum5;
-    obj["maxHeight"] = height - sum5 - "top" === str11 ? rect.bottom : rect.top - 12;
+    obj["maxHeight"] = height - sum5 - ("top" === str11 ? rect.bottom : rect.top) - 12;
     const items = [obj, str8, str11];
     return items;
-  }(), 3);
-  closure_14 = tmp9;
-  closure_15 = tmp10;
-  let obj3 = arg1(dependencyMap[8]);
+  })(), 3);
+  c14 = tmp9;
+  c15 = tmp10;
+  let obj3 = toggleButtonRef(str[8]);
   class P {
     constructor() {
-      obj = { opacity: closure_11.get() };
+      obj = { opacity: c11.get() };
       if (enabled) {
         items = [];
       } else {
         obj = {};
         tmp = toggleButtonRef;
-        tmp2 = closure_2;
+        tmp2 = start;
         num = 8;
-        obj3 = toggleButtonRef(closure_2[8]);
-        tmp3 = closure_11;
-        tmp5 = closure_14;
+        obj3 = toggleButtonRef(start[8]);
+        tmp3 = c11;
+        tmp5 = c14;
         num2 = 1;
         str = "left";
         num3 = 1;
-        value = closure_11.get();
-        if ("left" === closure_14) {
+        value = c11.get();
+        if ("left" === c14) {
           num3 = -1;
         }
         tmp6 = useSharedValue;
@@ -273,17 +268,17 @@ export const Menu = function Menu(toggleButtonRef) {
           num5 = x1;
         }
         items1[1] = num5;
-        obj.translateX = obj3.interpolate(value, [77601039, 1612144654], items1);
+        obj.translateX = obj3.interpolate(value, [0, 1], items1);
         items = [, , ];
         items[0] = obj;
         obj1 = {};
         tmp15 = toggleButtonRef;
-        tmp16 = closure_2;
-        obj5 = toggleButtonRef(closure_2[8]);
-        tmp17 = closure_11;
+        tmp16 = start;
+        obj5 = toggleButtonRef(start[8]);
+        tmp17 = c11;
         tmp19 = generateBoxShadowStyle;
         str2 = "top";
-        value3 = closure_11.get();
+        value3 = c11.get();
         if ("top" === generateBoxShadowStyle) {
           num2 = -1;
         }
@@ -310,26 +305,29 @@ export const Menu = function Menu(toggleButtonRef) {
           num6 = y1;
         }
         items2[1] = num6;
-        obj1.translateY = obj5.interpolate(value3, [77601039, 1612144654], items2);
+        obj1.translateY = obj5.interpolate(value3, [0, 1], items2);
         items[1] = obj1;
         obj2 = {};
-        tmp28 = closure_11;
+        tmp28 = c11;
         num7 = 2;
         num8 = 0.5;
-        obj2.scale = closure_11.get() / 2 + 0.5;
+        obj2.scale = c11.get() / 2 + 0.5;
         items[2] = obj2;
       }
       obj.transform = items;
       return obj;
     }
   }
-  obj = { visible: sharedValue, useReducedMotion: enabled, interpolate: arg1(dependencyMap[8]).interpolate, dirX: tmp9, size: sharedValue1, offsetAnimated, dirY: tmp10 };
+  obj = { visible: sharedValue, useReducedMotion: enabled, interpolate: toggleButtonRef(str[8]).interpolate, dirX: tmp9, size: sharedValue1, offsetAnimated, dirY: tmp10 };
   P.__closure = obj;
   P.__workletHash = 7884133597410;
   P.__initData = openMenuCallback;
   const animatedStyle = obj3.useAnimatedStyle(P);
-  obj = { style: items1, onTouchDown: handleDismiss, onAccessibilityEscape: handleDismiss };
-  const items1 = [tmp.backdrop];
+  obj = { style: null, accessibilityViewIsModal: true, importantForAccessibility: "yes" };
+  let items1 = [tmp.backdrop];
+  obj.style = items1;
+  obj.onTouchDown = handleDismiss;
+  obj.onAccessibilityEscape = handleDismiss;
   obj1 = {
     accessibilityRole: "list",
     style: items2,
@@ -337,19 +335,19 @@ export const Menu = function Menu(toggleButtonRef) {
       let obj = { width: nativeEvent.nativeEvent.layout.width, height: nativeEvent.nativeEvent.layout.height };
       const result = sharedValue1.set(obj);
       const fn = function n() {
-        return callback(closure_2[8]).runOnJS(closure_16)();
+        return toggleButtonRef(str[8]).runOnJS(outer1_16)();
       };
       obj = { runOnJS: toggleButtonRef(str[8]).runOnJS, openMenuCallback };
       fn.__closure = obj;
       fn.__workletHash = 14966618105405;
-      fn.__initData = tmp9;
+      fn.__initData = c14;
       const result1 = sharedValue.set(toggleButtonRef(str[19]).withSpring(1, closure_8, "respect-motion-settings", fn));
     }
   };
-  const items2 = [tmp.menu, boxShadowStyle, tmp8[0], animatedStyle, style];
+  items2 = [tmp.menu, boxShadowStyle, tmp8[0], animatedStyle, style];
   obj2 = {};
   obj3 = { value: { menuClose: handleClose, menuDismiss: handleDismiss } };
-  const Children = importAllResult.Children;
+  const Children = offsetAnimated.Children;
   obj3.children = Children.map(children, (icon) => {
     let cloneElementResult = icon;
     if (0 === arg1) {
@@ -361,8 +359,23 @@ export const Menu = function Menu(toggleButtonRef) {
     }
     return cloneElementResult;
   });
-  obj2.children = <context.Provider {...obj3} />;
-  obj1.children = <ScrollView {...obj2} />;
-  obj.children = jsx(importDefault(dependencyMap[8]).View, obj1);
-  return jsx(importDefault(dependencyMap[18]), obj);
+  obj2.children = <sharedValue.Provider value={{ menuClose: handleClose, menuDismiss: handleDismiss }} />;
+  obj1.children = <enabled />;
+  obj.children = jsx(position(str[8]).View, {
+    accessibilityRole: "list",
+    style: items2,
+    onLayout(nativeEvent) {
+      let obj = { width: nativeEvent.nativeEvent.layout.width, height: nativeEvent.nativeEvent.layout.height };
+      const result = sharedValue1.set(obj);
+      const fn = function n() {
+        return toggleButtonRef(str[8]).runOnJS(outer1_16)();
+      };
+      obj = { runOnJS: toggleButtonRef(str[8]).runOnJS, openMenuCallback };
+      fn.__closure = obj;
+      fn.__workletHash = 14966618105405;
+      fn.__initData = c14;
+      const result1 = sharedValue.set(toggleButtonRef(str[19]).withSpring(1, closure_8, "respect-motion-settings", fn));
+    }
+  });
+  return jsx(position(str[18]), { style: null, accessibilityViewIsModal: true, importantForAccessibility: "yes" });
 };

@@ -1,17 +1,21 @@
-// Module ID: 10600
-// Function ID: 82727
+// Module ID: 10610
+// Function ID: 82777
 // Name: safeAreaInitJs
-// Dependencies: []
+// Dependencies: [5, 27, 477, 1247, 1184, 2]
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 10600 (safeAreaInitJs)
+// Module 10610 (safeAreaInitJs)
+import set from "set";
+import { NativeModules } from "get ActivityIndicator";
+
+const require = arg1;
 function safeAreaInitJs(arg0) {
   let iframeWindowVarName;
   let insets;
   let isIframeLoadedVarName;
   ({ insets, iframeWindowVarName, isIframeLoadedVarName } = arg0);
   if (null == insets) {
-    insets = { wideBannerAnimatedUrl: -24, SPACE_32: null, np: 1, linkedUsers: "Malaysia" };
+    insets = { top: 0, bottom: 0, left: 0, right: 0 };
   }
   return "\n  " + iframeWindowVarName + ".addEventListener(\"load\", () => {\n    var iframeDoc = " + iframeWindowVarName + ".document;\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-left', '" + insets.left + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-right', '" + insets.right + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-top', '" + insets.top + "px');\n    iframeDoc.documentElement.style.setProperty('--discord-safe-area-inset-bottom', '" + insets.bottom + "px');\n    " + isIframeLoadedVarName + " = true;\n  });\n";
 }
@@ -22,17 +26,14 @@ function safeAreasUpdateListenerJs(iframeWindowVarName) {
 function _createWebviewHtmlFile() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _createWebviewHtmlFile = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/native/createWebviewHtmlFile.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/native/createWebviewHtmlFile.tsx");
 
 export default function createWebviewHtmlFile() {
   return _createWebviewHtmlFile(...arguments);
 };
 export const createInjectedJavascriptForIOS = function createInjectedJavascriptForIOS(insets) {
-  const obj = { imageStyle: 24, children: 24, source: null, insets };
-  return "\nvar iframeWindow = window;\nvar isIframeLoaded = false;\n" + safeAreaInitJs(obj) + "\n" + safeAreasUpdateListenerJs({ "Bool(false)": true, "Bool(false)": true }) + "\n";
+  const obj = { insets, iframeWindowVarName: "iframeWindow", isIframeLoadedVarName: "isIframeLoaded" };
+  return "\nvar iframeWindow = window;\nvar isIframeLoaded = false;\n" + safeAreaInitJs(obj) + "\n" + safeAreasUpdateListenerJs({ iframeWindowVarName: "iframeWindow", isIframeLoadedVarName: "isIframeLoaded" }) + "\n";
 };

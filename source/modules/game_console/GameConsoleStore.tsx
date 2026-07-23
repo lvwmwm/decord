@@ -1,61 +1,70 @@
-// Module ID: 4140
-// Function ID: 34803
+// Module ID: 4144
+// Function ID: 34833
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4145, 4146, 566, 686, 2]
 
-// Module 4140 (_isNativeReflectConstruct)
+// Module 4144 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let _isNativeReflectConstruct = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _isNativeReflectConstruct = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (initialize >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        initialize = tmp3 + 1;
+        obj.value = length[+initialize];
       }
       return obj;
     };
@@ -92,33 +101,26 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
-let closure_7 = null;
-let closure_8 = null;
-const set = new Set();
+let c7 = null;
+let c8 = null;
+let set = new Set();
 let closure_10 = {};
 let closure_11 = {};
 const set1 = new Set();
 let closure_13 = Object.freeze({});
-let tmp4 = (DeviceSettingsStore) => {
+let tmp4 = ((DeviceSettingsStore) => {
   class GameConsoleStore {
     constructor() {
       self = this;
       tmp = GameConsoleStore(this, GameConsoleStore);
-      obj = closure_3(GameConsoleStore);
-      tmp2 = closure_2;
-      if (closure_14()) {
+      obj = outer1_3(GameConsoleStore);
+      tmp2 = outer1_2;
+      if (outer1_14()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -127,32 +129,31 @@ let tmp4 = (DeviceSettingsStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GameConsoleStore;
   callback2(GameConsoleStore, DeviceSettingsStore);
   let obj = {
     key: "initialize",
     value(lastSelectedDeviceByPlatform) {
       const self = this;
       if (null != lastSelectedDeviceByPlatform) {
-        let closure_11 = lastSelectedDeviceByPlatform.lastSelectedDeviceByPlatform;
+        const outer1_11 = lastSelectedDeviceByPlatform.lastSelectedDeviceByPlatform;
       }
-      self.waitFor(closure_5, closure_6);
+      self.waitFor(outer1_5, outer1_6);
     }
   };
   const items = [obj, , , , , , , , ];
   obj = {
     key: "getUserAgnosticState",
     value() {
-      return { lastSelectedDeviceByPlatform: closure_11 };
+      return { lastSelectedDeviceByPlatform: outer1_11 };
     }
   };
   items[1] = obj;
   obj = {
     key: "getDevicesForPlatform",
     value(arg0) {
-      let tmp = closure_10[arg0];
+      let tmp = outer1_10[arg0];
       if (null == tmp) {
-        tmp = closure_13;
+        tmp = outer1_13;
       }
       return tmp;
     }
@@ -161,14 +162,14 @@ let tmp4 = (DeviceSettingsStore) => {
   items[3] = {
     key: "getLastSelectedDeviceByPlatform",
     value(arg0) {
-      return closure_11[arg0];
+      return outer1_11[arg0];
     }
   };
   items[4] = {
     key: "getDevice",
     value(arg0, arg1) {
       let tmp2;
-      if (null != closure_10[arg0]) {
+      if (null != outer1_10[arg0]) {
         tmp2 = tmp[arg1];
       }
       return tmp2;
@@ -177,45 +178,45 @@ let tmp4 = (DeviceSettingsStore) => {
   items[5] = {
     key: "getFetchingDevices",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_12.has(arg0);
     }
   };
   items[6] = {
     key: "getPendingDeviceCommands",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[7] = {
     key: "getRemoteSessionId",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[8] = {
     key: "getAwaitingRemoteSessionInfo",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   return callback(GameConsoleStore, items);
-}(importDefault(dependencyMap[7]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp4.displayName = "GameConsoleStore";
 tmp4.persistKey = "GameConsoleStore";
-tmp4 = new tmp4(importDefault(dependencyMap[8]), {
+tmp4 = new tmp4(require("dispatcher"), {
   REMOTE_SESSION_CONNECT: function handleRemoteSessionConnect(sessionId) {
     sessionId = sessionId.sessionId;
-    let closure_8 = null;
+    let c8 = null;
   },
   REMOTE_SESSION_DISCONNECT: function handleRemoteSessionDisconnect() {
-    let closure_7 = null;
-    let closure_8 = null;
+    let c7 = null;
+    let c8 = null;
   },
   WAIT_FOR_REMOTE_SESSION: function handleWaitForRemoteSession(sessionType) {
     let commandId;
     let deviceId;
+    const obj = { type: sessionType.sessionType, nonce: sessionType.nonce, channelId: sessionType.channelId, startedAt: Date.now(), deviceId, commandId };
     ({ deviceId, commandId } = sessionType);
-    let closure_8 = { type: sessionType.sessionType, nonce: sessionType.nonce, channelId: sessionType.channelId, startedAt: Date.now(), deviceId, commandId };
   },
   GAME_CONSOLE_FETCH_DEVICES_START: function handleFetchDevicesStart(platform) {
     set1.add(platform.platform);
@@ -233,15 +234,14 @@ tmp4 = new tmp4(importDefault(dependencyMap[8]), {
       do {
         let value = iter.value;
         obj[value.id] = value;
-        let tmp3 = closure_11;
-        if (closure_11[platform] === value.id) {
+        let tmp3 = obj;
+        if (obj[platform] === value.id) {
           obj[platform] = value.id;
         }
         iter2 = tmp2();
         iter = iter2;
       } while (!iter2.done);
     }
-    let closure_11 = obj;
   },
   GAME_CONSOLE_FETCH_DEVICES_FAIL: function handleFetchDevicesFail(platform) {
     set1.delete(platform.platform);
@@ -250,6 +250,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[8]), {
     closure_11[platform.platform] = platform.deviceId;
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/game_console/GameConsoleStore.tsx");
+let result = set.fileFinishedImporting("modules/game_console/GameConsoleStore.tsx");
 
 export default tmp4;

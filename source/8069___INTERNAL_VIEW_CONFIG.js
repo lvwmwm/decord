@@ -1,11 +1,12 @@
 // Module ID: 8069
-// Function ID: 64014
+// Function ID: 64021
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42]
 
 // Module 8069 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "RNSVGFeMerge", validAttributes: {} };
-const _module = require(dependencyMap[0]);
+import get from "get";
 
-export default _module.get("RNSVGFeMerge", () => obj);
+const obj = { uiViewClassName: "RNSVGFeGaussianBlur", validAttributes: { x: true, y: true, width: true, height: true, result: true, in1: true, stdDeviationX: true, stdDeviationY: true, edgeMode: true } };
+
+export default get.get("RNSVGFeGaussianBlur", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

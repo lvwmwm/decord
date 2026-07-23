@@ -1,17 +1,19 @@
-// Module ID: 4050
-// Function ID: 33797
+// Module ID: 4052
+// Function ID: 33806
 // Name: trackExposureToExperiment
-// Dependencies: []
+// Dependencies: [4044, 4045, 686, 2]
 // Exports: overrideBucket, registerGuildExperiment, registerUserExperiment, trackExposureToExperiment
 
-// Module 4050 (trackExposureToExperiment)
+// Module 4052 (trackExposureToExperiment)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { registerExperiment } from "_isNativeReflectConstruct";
+import ExperimentBuckets from "ExperimentBuckets";
+
 let ExposureTypes;
-let closure_2 = importDefault(dependencyMap[0]);
-const registerExperiment = arg1(dependencyMap[0]).registerExperiment;
-({ ExperimentTypes: closure_4, ExposureTypes } = arg1(dependencyMap[1]));
-const obj = { LEGACY: "legacy", APEX: "apex" };
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/experiments/ExperimentManager.tsx");
+let closure_4;
+({ ExperimentTypes: closure_4, ExposureTypes } = ExperimentBuckets);
+let obj = { LEGACY: "legacy", APEX: "apex" };
+const result = require("dispatcher").fileFinishedImporting("modules/experiments/ExperimentManager.tsx");
 
 export const trackExposureToExperiment = function trackExposureToExperiment(id, descriptor, location) {
   const obj = { experimentId: id, descriptor };
@@ -40,7 +42,7 @@ export const trackExposureToExperiment = function trackExposureToExperiment(id, 
     exposureType = location.exposureType;
   }
   obj.exposureType = exposureType;
-  closure_2.trackExposure(obj);
+  _isNativeReflectConstruct.trackExposure(obj);
 };
 export const registerUserExperiment = function registerUserExperiment(id) {
   id = id.id;
@@ -55,21 +57,21 @@ export const registerGuildExperiment = function registerGuildExperiment(id) {
 export const ExperimentSystem = obj;
 export const overrideBucket = function overrideBucket(system, map, id) {
   if (obj.LEGACY === system) {
-    let obj = { type: "EXPERIMENT_OVERRIDE_BUCKET", experimentId: map };
+    obj = { type: "EXPERIMENT_OVERRIDE_BUCKET", experimentId: map };
     let tmp9 = null;
     if (null != id) {
       tmp9 = id;
     }
     obj.experimentBucket = tmp9;
-    importDefault(dependencyMap[2]).dispatch(obj);
-    const obj5 = importDefault(dependencyMap[2]);
+    importDefault(686).dispatch(obj);
+    const obj5 = importDefault(686);
   } else if (obj.APEX === system) {
     if (null == id) {
       obj = { type: "APEX_EXPERIMENT_OVERRIDE_DELETE", experimentName: map };
-      importDefault(dependencyMap[2]).dispatch(obj);
-      const obj3 = importDefault(dependencyMap[2]);
+      importDefault(686).dispatch(obj);
+      const obj3 = importDefault(686);
     } else {
-      obj = importDefault(dependencyMap[2]);
+      obj = importDefault(686);
       const obj1 = { type: "APEX_EXPERIMENT_OVERRIDE_CREATE", experimentName: map, variantId: id };
       obj.dispatch(obj1);
     }

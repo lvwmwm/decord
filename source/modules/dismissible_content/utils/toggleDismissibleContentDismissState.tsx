@@ -1,57 +1,56 @@
-// Module ID: 14472
-// Function ID: 109047
+// Module ID: 14586
+// Function ID: 111207
 // Name: toggleDismissibleContentShared
-// Dependencies: [704643093, 3791650836, 3103784964, 469762065, 2399141904, 2936012856, 33554488, 4026531840, 311074, 3706880, 3707136, 3707392]
+// Dependencies: [31, 3947, 12996, 1346, 1336, 1331, 21, 566, 3946, 664, 1335, 2]
 // Exports: default
 
-// Module 14472 (toggleDismissibleContentShared)
+// Module 14586 (toggleDismissibleContentShared)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function toggleDismissibleContentShared(dismissibleContent, arg1, guildId) {
   let tmp = null;
   if (!arg1) {
     tmp = dismissibleContent;
   }
-  const result = require(dependencyMap[2]).overrideDCFLastDCDismissed(tmp, guildId);
+  const result = require(12996) /* handleDCShownToUser */.overrideDCFLastDCDismissed(tmp, guildId);
 }
-require(dependencyMap[0]).useCallback;
-let closure_4 = importDefault(dependencyMap[1]);
-const _module = require(dependencyMap[11]);
-const result = _module.fileFinishedImporting("modules/dismissible_content/utils/toggleDismissibleContentDismissState.tsx");
+require("result").useCallback;
+let result = require("handleDCShownToUser").fileFinishedImporting("modules/dismissible_content/utils/toggleDismissibleContentDismissState.tsx");
 
 export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER) {
-  const require = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER;
-  let obj = require(dependencyMap[7]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => guildId.getGuildId());
-  const importDefault = stateFromStores;
-  obj = { cooldownDurationMs: importDefault(dependencyMap[9]).Millis.WEEK, guildId: stateFromStores };
-  const result = require(dependencyMap[8]).useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
+  const _require = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER;
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuildId());
+  obj = { cooldownDurationMs: stateFromStores(664).Millis.WEEK, guildId: stateFromStores };
+  let result = _require(3946).useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
   const dependencyMap = result;
   const items1 = [APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, stateFromStores, result];
   obj = {
     isDismissed: result,
     handleToggleDismissState: useCallback(() => {
-      if (obj.isVersionedDismissibleContent(arg0)) {
-        const versionedDismissibleContentCurrentVersion = arg0(result[3]).getVersionedDismissibleContentCurrentVersion(arg0);
-        const obj22 = arg0(result[3]);
-        const nextNumTimesDismissed = arg0(result[4]).getNextNumTimesDismissed(arg0, {});
-        callback(arg0, result);
-        let obj24 = arg0;
-        if (result) {
+      if (obj.isVersionedDismissibleContent(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER)) {
+        const versionedDismissibleContentCurrentVersion = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[3]).getVersionedDismissibleContentCurrentVersion(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+        const obj22 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[3]);
+        const nextNumTimesDismissed = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]).getNextNumTimesDismissed(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, {});
+        outer1_5(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, closure_2);
+        let obj24 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER;
+        if (closure_2) {
           obj24 = obj24(tmp96[5]);
-          const result = obj24.removeDismissedRecurringContent(tmp88);
+          result = obj24.removeDismissedRecurringContent(tmp88);
           let flag10 = false;
         } else {
           const result1 = obj24(tmp96[4]).addVersionedDismissedContent(tmp88, versionedDismissibleContentCurrentVersion, nextNumTimesDismissed);
           flag10 = true;
           const obj24Result = obj24(tmp96[4]);
         }
-        const obj23 = arg0(result[4]);
+        const obj23 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]);
       } else {
-        if (obj2.isSnowflakeBoundDismissibleContent(arg0)) {
-          const nextNumTimesDismissed1 = arg0(result[4]).getNextNumTimesDismissed(arg0, {});
-          callback(arg0, result);
-          let obj19 = arg0;
-          if (result) {
+        if (obj2.isSnowflakeBoundDismissibleContent(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER)) {
+          const nextNumTimesDismissed1 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]).getNextNumTimesDismissed(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, {});
+          outer1_5(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, closure_2);
+          let obj19 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER;
+          if (closure_2) {
             obj19 = obj19(tmp81[5]);
             const result2 = obj19.removeDismissedRecurringContent(tmp74);
             let flag9 = false;
@@ -63,12 +62,12 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
             flag9 = true;
             const obj21 = stateFromStores(tmp81[6]);
           }
-          const obj18 = arg0(result[4]);
+          const obj18 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]);
         } else {
-          if (obj3.isTimeRecurringDismissibleContent(arg0)) {
-            callback(arg0, result);
-            let obj15 = arg0;
-            if (result) {
+          if (obj3.isTimeRecurringDismissibleContent(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER)) {
+            outer1_5(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, closure_2);
+            let obj15 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER;
+            if (closure_2) {
               obj15 = obj15(tmp70[5]);
               const result4 = obj15.removeDismissedRecurringContent(tmp66);
               let flag8 = false;
@@ -79,17 +78,17 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
               flag8 = true;
             }
           } else {
-            if (obj4.isSingleUseGuildDismissibleContent(arg0)) {
+            if (obj4.isSingleUseGuildDismissibleContent(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER)) {
               if (null == stateFromStores) {
                 let flag = false;
               } else {
                 let num12 = 1;
                 if (null != tmp55) {
-                  num12 = arg0(result[4]).getGuildNextNumTimesDismissed(tmp54, tmp55);
-                  const obj13 = arg0(result[4]);
+                  num12 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]).getGuildNextNumTimesDismissed(tmp54, tmp55);
+                  const obj13 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]);
                 }
-                callback(tmp54, tmp56, tmp55);
-                const obj14 = arg0(result[4]);
+                outer1_5(tmp54, tmp56, tmp55);
+                const obj14 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]);
                 if (tmp56) {
                   num12 = obj14.UNSAFE_removeGuildDismissedContent(tmp54, tmp55, num12 - 1);
                   let flag7 = false;
@@ -99,17 +98,17 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
                 }
               }
             } else {
-              if (obj5.isTimeRecurringGuildDismissibleContent(arg0)) {
+              if (obj5.isTimeRecurringGuildDismissibleContent(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER)) {
                 if (null == stateFromStores) {
                   flag = false;
                 } else {
                   let num8 = 1;
                   if (null != tmp43) {
-                    num8 = arg0(result[4]).getGuildNextNumTimesDismissed(tmp42, tmp43);
-                    const obj11 = arg0(result[4]);
+                    num8 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]).getGuildNextNumTimesDismissed(tmp42, tmp43);
+                    const obj11 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]);
                   }
-                  callback(tmp42, tmp44, tmp43);
-                  const obj12 = arg0(result[4]);
+                  outer1_5(tmp42, tmp44, tmp43);
+                  const obj12 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]);
                   if (tmp44) {
                     num8 = obj12.UNSAFE_removeTimeRecurringGuildDismissedContent(tmp42, tmp43, num8 - 1);
                     let flag5 = false;
@@ -119,17 +118,17 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
                   }
                 }
               } else {
-                if (obj6.isSnowflakeBoundGuildDismissibleContent(arg0)) {
+                if (obj6.isSnowflakeBoundGuildDismissibleContent(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER)) {
                   if (null == stateFromStores) {
                     flag = false;
                   } else {
                     let num3 = 1;
                     if (null != tmp24) {
-                      num3 = arg0(result[4]).getGuildNextNumTimesDismissed(tmp16, tmp24);
-                      const obj8 = arg0(result[4]);
+                      num3 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]).getGuildNextNumTimesDismissed(tmp16, tmp24);
+                      const obj8 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]);
                     }
-                    callback(tmp16, tmp25, tmp24);
-                    const obj9 = arg0(result[4]);
+                    outer1_5(tmp16, tmp25, tmp24);
+                    const obj9 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[4]);
                     if (tmp25) {
                       num3 = obj9.UNSAFE_removeSnowflakeBoundGuildDismissedContent(tmp16, tmp24, num3 - 1);
                       let flag3 = false;
@@ -140,12 +139,12 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
                       flag3 = true;
                       const obj10 = stateFromStores(tmp32[6]);
                     }
-                    const tmp31 = arg0;
+                    tmp31 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER;
                   }
                 } else {
-                  callback(tmp16, result);
-                  const obj7 = arg0(result[5]);
-                  if (result) {
+                  outer1_5(tmp16, closure_2);
+                  const obj7 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[5]);
+                  if (closure_2) {
                     const result9 = obj7.removeDismissedContent(tmp16);
                     flag = false;
                   } else {
@@ -153,15 +152,15 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
                     flag = true;
                   }
                 }
-                const obj6 = arg0(result[10]);
+                obj6 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[10]);
               }
-              const obj5 = arg0(result[10]);
+              obj5 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[10]);
             }
             return flag;
           }
-          const obj3 = arg0(result[10]);
+          obj3 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[10]);
         }
-        const obj2 = arg0(result[10]);
+        obj2 = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER(result[10]);
       }
     }, items1)
   };

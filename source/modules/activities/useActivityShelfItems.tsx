@@ -1,53 +1,57 @@
-// Module ID: 11149
-// Function ID: 86698
+// Module ID: 11159
+// Function ID: 86748
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 7370, 566, 11160, 11161, 11162, 2]
 // Exports: default
 
-// Module 11149 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11159 (_createForOfIteratorHelperLoose)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,54 +88,48 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activities/useActivityShelfItems.tsx");
+const result = require("initialize").fileFinishedImporting("modules/activities/useActivityShelfItems.tsx");
 
 export default function useActivityShelfItems(enableFilter) {
   let flag = enableFilter.enableFilter;
   if (flag === undefined) {
     flag = false;
   }
-  const arg1 = flag;
-  let importDefault;
+  let filter;
   let dependencyMap;
-  let React;
-  const items = [closure_4];
-  const filter = arg1(dependencyMap[2]).useStateFromStoresObject(items, () => ({ filter: filter.getFilter() })).filter;
-  importDefault = filter;
-  const obj = arg1(dependencyMap[2]);
-  const activityShelfData = arg1(dependencyMap[3]).useActivityShelfData(enableFilter.guildId);
-  const tmp2 = importDefault(dependencyMap[4])(activityShelfData);
+  let developerActivityShelfItems;
+  let items = [_isNativeReflectConstruct];
+  filter = flag(566).useStateFromStoresObject(items, () => ({ filter: outer1_4.getFilter() })).filter;
+  const obj = flag(566);
+  const activityShelfData = flag(11160).useActivityShelfData(enableFilter.guildId);
+  let tmp2 = filter(11161)(activityShelfData);
   dependencyMap = tmp2;
-  const obj2 = arg1(dependencyMap[3]);
-  const developerActivityShelfItems = arg1(dependencyMap[5]).useDeveloperActivityShelfItems();
-  React = developerActivityShelfItems;
+  const obj2 = flag(11160);
+  developerActivityShelfItems = flag(11162).useDeveloperActivityShelfItems();
   const items1 = [developerActivityShelfItems, flag, filter, tmp2];
-  return React.useMemo(() => {
+  return developerActivityShelfItems.useMemo(() => {
     let iter2;
-    let tmp2;
     function shouldKeepShelfItem(value) {
-      let tmp = !closure_0;
+      let tmp = !outer1_0;
       if (!tmp) {
-        let hasItem = "" === closure_1;
+        let hasItem = "" === outer1_1;
         if (!hasItem) {
           const formatted = value.application.name.toLowerCase();
-          hasItem = formatted.includes(closure_1.toLowerCase());
+          hasItem = formatted.includes(outer1_1.toLowerCase());
           const str2 = value.application.name;
         }
         tmp = hasItem;
       }
       return tmp;
     }
-    const items = [...closure_3];
+    const items = [...developerActivityShelfItems];
     const found = items.filter(shouldKeepShelfItem);
-    const tmp = callback(tmp2);
+    let tmp = outer1_5(c2);
     let iter = tmp();
     if (!iter.done) {
       do {
         let value = iter.value;
-        tmp2 = !set.has(value.application.id) && shouldKeepShelfItem(value);
+        let tmp2 = !set.has(value.application.id) && shouldKeepShelfItem(value);
         if (tmp2) {
           let arr = found.push(value);
         }

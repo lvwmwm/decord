@@ -1,59 +1,78 @@
-// Module ID: 10239
-// Function ID: 79125
+// Module ID: 10251
+// Function ID: 79197
 // Name: NotificationWrapper
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [57, 31, 27, 9547, 4142, 10237, 653, 33, 3991, 4130, 10252, 7658, 7663, 10253, 10317, 10318, 10319, 10336, 10337, 10354, 10355, 10358, 10359, 10236, 8277, 566, 3946, 1334, 4098, 4324, 4540, 1450, 21, 5069, 4131, 4559, 675, 5217, 4542, 1273, 4531, 1212, 5121, 10278, 2]
 // Exports: default
 
-// Module 10239 (NotificationWrapper)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import closure_9 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import { Easing } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 10251 (NotificationWrapper)
+import _slicedToArray from "_slicedToArray";
+import useWindowDimensions from "useWindowDimensions";
+import get_ActivityIndicator from "DismissibleContent";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import set from "set";
+import ME from "ME";
+import jsxProd from "_createForOfIteratorHelperLoose";
+import { Easing } from "module_3991";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "get ActivityIndicator";
 
+let NOTIFICATION_CONTAINER_MARGIN;
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function NotificationWrapper(notification) {
   notification = notification.notification;
   const type = notification.type;
   if (constants.MESSAGE === type) {
     let obj = { notification };
-    return callback2(importDefault(dependencyMap[13]), obj);
+    return callback(importDefault(10253), obj);
   } else if (constants.MESSAGE_FAILED_TO_SEND === type) {
     obj = { notification };
-    return callback2(importDefault(dependencyMap[14]), obj);
+    return callback(importDefault(10317), obj);
   } else if (constants.FORUM_THREAD_CREATED === type) {
     const obj1 = { notification };
-    return callback2(importDefault(dependencyMap[15]), obj1);
+    return callback(importDefault(10318), obj1);
   } else if (constants.BUG_REPORTER === type) {
     const obj2 = { notification };
-    return callback2(arg1(dependencyMap[16]).BugReporterNotification, obj2);
+    return callback(require(10319) /* BugReporterNotification */.BugReporterNotification, obj2);
   } else if (constants.ALERT === type) {
     const obj3 = { notification };
-    return callback2(importDefault(dependencyMap[17]), obj3);
+    return callback(importDefault(10336), obj3);
   } else if (constants.REACTION === type) {
     const obj4 = { notification };
-    return callback2(importDefault(dependencyMap[18]), obj4);
+    return callback(importDefault(10337), obj4);
   } else if (constants.MESSAGE_REMINDER === type) {
     const obj5 = { notification };
-    return callback2(importDefault(dependencyMap[19]), obj5);
+    return callback(importDefault(10354), obj5);
   } else {
     if (constants.RESTRICTED_HOURS_WARNING !== type) {
       if (constants.RESTRICTED_SCHEDULE_UPDATED !== type) {
         if (constants.MESSAGE_REQUEST === type) {
           obj = { notification };
-          return callback2(importDefault(dependencyMap[21]), obj);
+          return callback(importDefault(10358), obj);
         } else {
           return null;
         }
       }
     }
     const obj6 = { notification };
-    return callback2(importDefault(dependencyMap[20]), obj6);
+    return callback(importDefault(10355), obj6);
   }
 }
 function DetachedNotificationContent(notification) {
@@ -61,17 +80,17 @@ function DetachedNotificationContent(notification) {
   let tmp = null;
   if (notification.type === constants.MESSAGE) {
     const obj = { notification };
-    tmp = callback2(arg1(dependencyMap[22]).MessageNotificationDetachedContent, obj);
+    tmp = callback(require(10359) /* MessageNotificationDetachedContent */.MessageNotificationDetachedContent, obj);
   }
   return tmp;
 }
-({ View: closure_5, StyleSheet: closure_6, Keyboard: closure_7 } = __exportStarResult1);
-({ DEFAULT_ANIMATION_TIMING: closure_10, extrapolateConfig: closure_11, MIN_SWIPE_DISTANCE: closure_12, MIN_SWIPE_VELOCITY: closure_13, NOTIFICATION_BOB_RANGE: closure_14, EXPANDABLE_MIN_WINDOW_HEIGHT: closure_15, PAN_INPUT_RANGE: closure_16 } = __exportStarResult1);
-({ InAppNotificationTypes: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, AnalyticsObjects: closure_20, AnalyticsObjectTypes: closure_21 } = __exportStarResult1);
-({ jsx: closure_22, jsxs: closure_23 } = __exportStarResult1);
-const obj = { duration: 200 };
-obj.easing = Easing.in(require("__exportStarResult1").Easing.ease);
-let closure_25 = __exportStarResult1.createStyles({ safeAreaContainer: { "Bool(true)": "flex", "Bool(true)": "row", "Bool(true)": "center", "Bool(true)": "space-between", "Bool(true)": 16, "Bool(true)": "flex-start", "Bool(true)": "100%" }, backdrop: { 0: 40, 0: 40 }, animatedContainer: { <string:4224476331>: null, <string:1415819756>: null } });
+({ View: closure_5, StyleSheet: closure_6, Keyboard: closure_7 } = get_ActivityIndicator);
+({ DEFAULT_ANIMATION_TIMING: closure_10, extrapolateConfig: closure_11, MIN_SWIPE_DISTANCE: closure_12, MIN_SWIPE_VELOCITY: closure_13, NOTIFICATION_BOB_RANGE: closure_14, EXPANDABLE_MIN_WINDOW_HEIGHT: closure_15, PAN_INPUT_RANGE: closure_16, NOTIFICATION_CONTAINER_MARGIN } = set);
+({ InAppNotificationTypes: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, AnalyticsObjects: closure_20, AnalyticsObjectTypes: closure_21 } = ME);
+({ jsx: closure_22, jsxs: closure_23 } = jsxProd);
+let obj = { duration: 200 };
+obj.easing = Easing.in(require("module_3991").Easing.ease);
+let closure_25 = _createForOfIteratorHelperLoose.createStyles({ safeAreaContainer: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8, top: 0, bottom: 0 }, backdrop: { position: "absolute", zIndex: 0 }, animatedContainer: { marginLeft: NOTIFICATION_CONTAINER_MARGIN, marginRight: NOTIFICATION_CONTAINER_MARGIN } });
 let closure_26 = { code: "function InAppNotificationContainerTsx1(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('autodismissed');}}" };
 let closure_27 = { code: "function InAppNotificationContainerTsx2(){const{runOnJS,setInitialized}=this.__closure;return runOnJS(setInitialized)(true);}" };
 let closure_28 = { code: "function InAppNotificationContainerTsx3(){const{withTiming,expandedSV,DEFAULT_ANIMATION_TIMING}=this.__closure;return{opacity:withTiming(expandedSV.get()?1:0,DEFAULT_ANIMATION_TIMING)};}" };
@@ -81,61 +100,55 @@ let closure_31 = { code: "function InAppNotificationContainerTsx6(event){const{s
 let closure_32 = { code: "function InAppNotificationContainerTsx7(){const{startY,notificationGestureY,velocityY,runOnJS,setPanning}=this.__closure;startY.set(notificationGestureY.get());velocityY.set(0);runOnJS(setPanning)(true);}" };
 let closure_33 = { code: "function InAppNotificationContainerTsx8(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('swipe');}}" };
 let closure_34 = { code: "function InAppNotificationContainerTsx9(){const{notificationGestureY,scale,isExpandableNotification,interpolate,MIN_SWIPE_DISTANCE,PAN_INPUT_RANGE,NOTIFICATION_BOB_RANGE,extrapolateConfig,initialized}=this.__closure;const gestureY=notificationGestureY.get();const scaleValue=scale.get();if(isExpandableNotification&&gestureY>0){return{transform:[{translateY:interpolate(gestureY,[0,MIN_SWIPE_DISTANCE,PAN_INPUT_RANGE[2]],[0,0,NOTIFICATION_BOB_RANGE],extrapolateConfig)},{scale:initialized?1:scaleValue}],opacity:initialized?1:scaleValue};}const scaleTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0.3,1,0.3],extrapolateConfig):scaleValue;const opacityTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0,1,0],extrapolateConfig):scaleValue;return{transform:[{translateY:gestureY},{scale:scaleTransform}],opacity:opacityTransform};}" };
-const result = __exportStarResult1.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContainer.tsx");
+let result = set.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContainer.tsx");
 
 export default function InAppNotificationContainer(notification) {
   let channel;
   let message;
   notification = notification.notification;
-  const arg1 = notification;
-  const tmp = callback3();
-  let obj = React;
-  const items = [notification];
-  const memo = React.useMemo(() => notification(channelId[23]).extractMetadataFromNotification(notification), items);
+  let tmp = isExpandableNotification();
+  let obj = channelType;
+  let items = [notification];
+  const memo = channelType.useMemo(() => notification(channelId[23]).extractMetadataFromNotification(notification), items);
   const guildId = memo.guildId;
-  const importDefault = guildId;
   const channelId = memo.channelId;
-  const dependencyMap = channelId;
   const messageId = memo.messageId;
-  let callback = messageId;
-  const channelType = memo.channelType;
-  const React = channelType;
-  let obj1 = arg1(dependencyMap[8]);
+  channelType = memo.channelType;
+  let obj1 = notification(channelId[8]);
   const sharedValue = obj1.useSharedValue(0);
-  let obj2 = arg1(dependencyMap[8]);
+  let obj2 = notification(channelId[8]);
   const sharedValue1 = obj2.useSharedValue(0);
-  let obj3 = arg1(dependencyMap[8]);
+  let obj3 = notification(channelId[8]);
   const sharedValue2 = obj3.useSharedValue(0);
-  let obj4 = arg1(dependencyMap[8]);
+  let obj4 = notification(channelId[8]);
   const sharedValue3 = obj4.useSharedValue(0);
-  let closure_8 = sharedValue3;
-  const tmp9 = callback(React.useState(null), 2);
-  const first = tmp9[0];
-  let closure_9 = first;
-  const tmp11 = tmp9[1];
-  const tmp12 = callback(React.useState(false), 2);
+  const tmp9 = messageId(channelType.useState(null), 2);
+  let first = tmp9[0];
+  let closure_10 = tmp11;
+  const tmp12 = messageId(channelType.useState(false), 2);
   const first1 = tmp12[0];
   let closure_12 = tmp12[1];
-  const tmp14 = callback(React.useState(false), 2);
+  const tmp14 = messageId(channelType.useState(false), 2);
   const first2 = tmp14[0];
   let closure_14 = tmp14[1];
-  let obj5 = arg1(dependencyMap[8]);
+  let obj5 = notification(channelId[8]);
   const sharedValue4 = obj5.useSharedValue(false);
-  const tmp18 = importDefault(dependencyMap[24])(sharedValue4);
-  const tmp19 = callback(React.useState(false), 2);
+  const tmp18 = guildId(channelId[24])(sharedValue4);
+  let closure_16 = tmp18;
+  const tmp19 = messageId(channelType.useState(false), 2);
   const first3 = tmp19[0];
   let closure_18 = tmp19[1];
-  const tmp21 = callback(React.useState(false), 2);
+  const tmp21 = messageId(channelType.useState(false), 2);
   const first4 = tmp21[0];
-  const tmp23 = tmp21[1];
-  let obj6 = arg1(dependencyMap[25]);
-  const items1 = [closure_8];
+  let closure_20 = tmp23;
+  let obj6 = notification(channelId[25]);
+  let items1 = [sharedValue3];
   const stateFromStores = obj6.useStateFromStores(items1, () => sharedValue3.isOpen());
-  callback = React.useCallback(() => {
+  const callback = channelType.useCallback(() => {
     const result = notification(channelId[26]).UNSAFE_markDismissibleContentAsDismissed(notification(channelId[27]).DismissibleContent.IN_APP_NOTIFICATION_EXPAND_NUX);
   }, []);
-  const items2 = [sharedValue4, notification, guildId, channelId, messageId, callback];
-  const callback1 = React.useCallback((arg0, arg1) => {
+  let items2 = [sharedValue4, notification, guildId, channelId, messageId, callback];
+  const callback1 = channelType.useCallback((arg0, arg1) => {
     const result = sharedValue4.set(arg0);
     if (arg0) {
       let obj = guildId(channelId[28]);
@@ -156,32 +169,32 @@ export default function InAppNotificationContainer(notification) {
     }
     guildId(channelId[28]).setActionSheetZIndex(num3);
   }, items2);
-  const items3 = [tmp18, callback1];
-  const callback2 = React.useCallback(() => {
+  let items3 = [tmp18, callback1];
+  const callback2 = channelType.useCallback(() => {
     let flag = !tmp;
-    if (!!tmp18) {
+    if (!!closure_16) {
       callback1(false);
       flag = true;
     }
     return flag;
   }, items3);
-  importDefault(dependencyMap[30])(callback2, tmp18);
-  const size = importDefault(dependencyMap[31])({ ignoreKeyboard: true });
+  guildId(channelId[30])(callback2, tmp18);
+  const size = guildId(channelId[31])({ ignoreKeyboard: true });
   const height = size.height;
   obj = { notification, windowHeight: height };
   const notification2 = obj.notification;
-  let obj8 = arg1(dependencyMap[10]);
+  let obj8 = notification(channelId[10]);
   const canExpandInAppNotification = obj8.useCanExpandInAppNotification("InAppNotificationContainer");
   let canExpand = canExpandInAppNotification.canExpand;
   if (notification2.type !== first3.MESSAGE) {
-    obj = { 1398012375: true, -1042490024: false, 1643143918: false };
+    obj = { showReactionBar: false, showReplyInput: false, isExpandableNotification: false };
   } else {
     ({ message, channel } = notification2);
     if (canExpand) {
       canExpand = obj.windowHeight > sharedValue4;
     }
-    let obj9 = arg1(dependencyMap[11]);
-    let obj10 = arg1(dependencyMap[12]);
+    let obj9 = notification(channelId[11]);
+    let obj10 = notification(channelId[12]);
     obj = {};
     let tmp36 = canExpand;
     const canReactToMessageResult = obj9.canReactToMessage(message, channel);
@@ -200,15 +213,13 @@ export default function InAppNotificationContainer(notification) {
       tmp36 = canExpand;
     }
     obj.isExpandableNotification = tmp36;
-    const canReplyToMessageResult = obj10.canReplyToMessage(channel, message);
+    canReplyToMessageResult = obj10.canReplyToMessage(channel, message);
   }
   const showReactionBar = obj.showReactionBar;
   const showReplyInput = obj.showReplyInput;
-  obj = showReplyInput;
-  const isExpandableNotification = obj.isExpandableNotification;
-  let callback3 = isExpandableNotification;
+  isExpandableNotification = obj.isExpandableNotification;
   const items4 = [first3, notification, guildId, channelId, messageId];
-  callback3 = obj.useCallback((dismissReason) => {
+  const callback3 = obj.useCallback((dismissReason) => {
     if (null != dismissReason) {
       let obj = notification(channelId[23]);
       obj = { type: notification.type, guildId, channelId, dismissReason, inAppNotificationId: notification.inAppNotificationId, messageId };
@@ -236,7 +247,6 @@ export default function InAppNotificationContainer(notification) {
       notification.onDismiss();
     }
   }, items4);
-  let closure_26 = callback3;
   let closure_27 = obj.useRef(null);
   const items5 = [first2, sharedValue, callback3];
   const effect = obj.useEffect(() => {
@@ -247,18 +257,18 @@ export default function InAppNotificationContainer(notification) {
     if (tmp) {
       const _setTimeout = setTimeout;
       ref.current = setTimeout(() => {
-        let obj = callback(closure_2[34]);
+        let obj = notification(channelId[34]);
         const fn = function t(arg0) {
           if (arg0) {
-            callback(closure_2[8]).runOnJS(closure_26)("autodismissed");
-            const obj = callback(closure_2[8]);
+            notification(channelId[8]).runOnJS(outer2_26)("autodismissed");
+            const obj = notification(channelId[8]);
           }
         };
-        obj = { runOnJS: callback(closure_2[8]).runOnJS, handleDismissNotification: closure_26 };
+        obj = { runOnJS: notification(channelId[8]).runOnJS, handleDismissNotification: outer1_26 };
         fn.__closure = obj;
         fn.__workletHash = 1150739008183;
-        fn.__initData = closure_26;
-        const result = closure_5.set(obj.withTiming(closure_16[0], closure_10, "respect-motion-settings", fn));
+        fn.__initData = callback3;
+        const result = outer1_5.set(obj.withTiming(table[0], closure_10, "respect-motion-settings", fn));
       }, 2000);
     }
   }, items5);
@@ -272,17 +282,17 @@ export default function InAppNotificationContainer(notification) {
       const obj2 = notification(channelId[8]);
     }
   });
-  importDefault(dependencyMap[35])(() => {
+  guildId(channelId[35])(() => {
     let obj = notification(channelId[34]);
     const fn = function t() {
-      return callback(closure_2[8]).runOnJS(closure_12)(true);
+      return notification(channelId[8]).runOnJS(outer1_12)(true);
     };
     obj = { runOnJS: notification(channelId[8]).runOnJS, setInitialized: closure_12 };
     fn.__closure = obj;
     fn.__workletHash = 11548697745556;
     fn.__initData = closure_27;
     const result = sharedValue3.set(obj.withTiming(1, showReplyInput, "respect-motion-settings", fn));
-    return () => callback(closure_2[8]).cancelAnimation(closure_8);
+    return () => notification(channelId[8]).cancelAnimation(outer1_8);
   });
   const items6 = [first1, notification.type, guildId, channelId, notification.inAppNotificationId, messageId, channelType];
   const effect1 = obj.useEffect(() => {
@@ -299,10 +309,10 @@ export default function InAppNotificationContainer(notification) {
     if (sharedValue4.get()) {
       num = 1;
     }
-    obj.opacity = notification(channelId[34]).withTiming(num, tmp11);
+    obj.opacity = notification(channelId[34]).withTiming(num, closure_10);
     return obj;
   }
-  obj1 = { withTiming: tmp3(tmp4[34]).withTiming, expandedSV: sharedValue4, DEFAULT_ANIMATION_TIMING: tmp11 };
+  obj1 = { withTiming: tmp3(tmp4[34]).withTiming, expandedSV: sharedValue4, DEFAULT_ANIMATION_TIMING: closure_10 };
   xi.__closure = obj1;
   xi.__workletHash = 2841593511002;
   xi.__initData = closure_28;
@@ -313,16 +323,20 @@ export default function InAppNotificationContainer(notification) {
     tmp43 = !first2;
   }
   const PanResult = Gesture.Pan();
-  const tmp17 = importDefault;
-  function bi() {
-    const result = sharedValue2.set(sharedValue.get());
-    const result1 = sharedValue1.set(0);
-    notification(channelId[8]).runOnJS(tmp23)(true);
+  const tmp17 = guildId;
+  class Ri {
+    constructor() {
+      result = closure_7.set(closure_5.get());
+      result1 = closure_6.set(0);
+      obj = notification(channelId[8]);
+      tmp3 = obj.runOnJS(closure_20)(true);
+      return;
+    }
   }
-  obj2 = { startY: sharedValue2, notificationGestureY: sharedValue, velocityY: sharedValue1, runOnJS: arg1(dependencyMap[8]).runOnJS, setPanning: tmp23 };
-  bi.__closure = obj2;
-  bi.__workletHash = 11316955045022;
-  bi.__initData = closure_32;
+  obj2 = { startY: sharedValue2, notificationGestureY: sharedValue, velocityY: sharedValue1, runOnJS: notification(channelId[8]).runOnJS, setPanning: tmp23 };
+  Ri.__closure = obj2;
+  Ri.__workletHash = 11316955045022;
+  Ri.__initData = closure_32;
   const enabledResult = Gesture.Pan().enabled(tmp43);
   class Gi {
     constructor(arg0) {
@@ -344,7 +358,7 @@ export default function InAppNotificationContainer(notification) {
   Gi.__closure = { startY: sharedValue2, isExpandableNotification, notificationGestureY: sharedValue, velocityY: sharedValue1 };
   Gi.__workletHash = 16677375054247;
   Gi.__initData = closure_31;
-  const onBeginResult = Gesture.Pan().enabled(tmp43).onBegin(bi);
+  const onBeginResult = Gesture.Pan().enabled(tmp43).onBegin(Ri);
   function vi(translationY) {
     let tmp = Math.abs(sharedValue1.get()) >= first2;
     if (!tmp) {
@@ -357,7 +371,6 @@ export default function InAppNotificationContainer(notification) {
         const result1 = sharedValue4.set(true);
         notification(channelId[8]).runOnJS(callback1)(true, "swipe");
         const obj6 = notification(channelId[8]);
-        const tmp23 = sharedValue4;
       }
     }
     if (tmp) {
@@ -370,27 +383,27 @@ export default function InAppNotificationContainer(notification) {
         }
         const fn = function n(arg0) {
           if (arg0) {
-            callback(closure_2[8]).runOnJS(closure_26)("swipe");
-            const obj = callback(closure_2[8]);
+            notification(channelId[8]).runOnJS(outer1_26)("swipe");
+            const obj = notification(channelId[8]);
           }
         };
         let obj = { runOnJS: notification(channelId[8]).runOnJS, handleDismissNotification: callback3 };
         fn.__closure = obj;
         fn.__workletHash = 1684596854482;
-        fn.__initData = closure_33;
-        const result2 = sharedValue.set(obj4.withTiming(first, tmp11, "animate-always", fn));
+        fn.__initData = outer1_33;
+        const result2 = sharedValue.set(obj4.withTiming(first, closure_10, "animate-always", fn));
       }
     }
     obj = notification(channelId[8]);
-    obj.runOnJS(tmp23)(false);
-    obj = { velocity: sharedValue1.get() };
+    obj.runOnJS(closure_20)(false);
+    obj = { damping: 10, mass: 1, stiffness: 100, velocity: sharedValue1.get() };
     const result3 = sharedValue.set(notification(channelId[38]).withSpring(0, obj, "animate-always"));
   }
-  obj3 = { velocityY: sharedValue1, MIN_SWIPE_VELOCITY: first2, MIN_SWIPE_DISTANCE: closure_12, isExpandableNotification, notificationGestureY: sharedValue, expandedSV: sharedValue4, runOnJS: arg1(dependencyMap[8]).runOnJS, setExpanded: callback1, withTiming: arg1(dependencyMap[34]).withTiming, PAN_INPUT_RANGE: tmp18, DEFAULT_ANIMATION_TIMING: tmp11, handleDismissNotification: callback3, setPanning: tmp23, withSpring: arg1(dependencyMap[38]).withSpring };
+  obj3 = { velocityY: sharedValue1, MIN_SWIPE_VELOCITY: first2, MIN_SWIPE_DISTANCE: closure_12, isExpandableNotification, notificationGestureY: sharedValue, expandedSV: sharedValue4, runOnJS: notification(channelId[8]).runOnJS, setExpanded: callback1, withTiming: notification(channelId[34]).withTiming, PAN_INPUT_RANGE: closure_16, DEFAULT_ANIMATION_TIMING: closure_10, handleDismissNotification: callback3, setPanning: tmp23, withSpring: notification(channelId[38]).withSpring };
   vi.__closure = obj3;
   vi.__workletHash = 5165226193044;
   vi.__initData = closure_30;
-  const onUpdateResult = Gesture.Pan().enabled(tmp43).onBegin(bi).onUpdate(Gi);
+  const onUpdateResult = Gesture.Pan().enabled(tmp43).onBegin(Ri).onUpdate(Gi);
   class Mi {
     constructor() {
       obj = notification(channelId[8]);
@@ -398,105 +411,68 @@ export default function InAppNotificationContainer(notification) {
       return;
     }
   }
-  obj4 = { runOnJS: arg1(dependencyMap[8]).runOnJS, setPanning: tmp23 };
+  obj4 = { runOnJS: notification(channelId[8]).runOnJS, setPanning: tmp23 };
   Mi.__closure = obj4;
   Mi.__workletHash = 2178187669683;
   Mi.__initData = closure_29;
-  const onEndResult = Gesture.Pan().enabled(tmp43).onBegin(bi).onUpdate(Gi).onEnd(vi);
-  const onFinalizeResult = Gesture.Pan().enabled(tmp43).onBegin(bi).onUpdate(Gi).onEnd(vi).onFinalize(Mi);
-  class Ri {
-    constructor() {
-      value = closure_5.get();
-      value1 = closure_8.get();
-      if (isExpandableNotification) {
-        num = 0;
-        if (value > 0) {
-          obj = {};
-          obj1 = {};
-          tmp17 = notification;
-          tmp18 = channelId;
-          num4 = 8;
-          obj7 = notification(channelId[8]);
-          tmp19 = useState;
-          items = [0.229];
-          items[1] = useState;
-          tmp20 = closure_16;
-          num5 = 2;
-          items[2] = closure_16[2];
-          tmp21 = useState;
-          items1 = ["placeholder", "aria-label"];
-          items1[2] = useState;
-          tmp22 = closure_11;
-          tmp23 = obj7;
-          tmp24 = value;
-          tmp25 = items;
-          tmp26 = items1;
-          obj1.translateY = obj7.interpolate(value, items, items1, closure_11);
-          items2 = [, ];
-          items2[0] = obj1;
-          obj2 = {};
-          tmp27 = closure_11;
-          num6 = 1;
-          num7 = 1;
-          if (!closure_11) {
-            num7 = value1;
-          }
-          obj2.scale = num7;
-          items2[1] = obj2;
-          obj.transform = items2;
-          tmp28 = closure_11;
-          if (!closure_11) {
-            num6 = value1;
-          }
-          obj.opacity = num6;
+  const onEndResult = Gesture.Pan().enabled(tmp43).onBegin(Ri).onUpdate(Gi).onEnd(vi);
+  const onFinalizeResult = Gesture.Pan().enabled(tmp43).onBegin(Ri).onUpdate(Gi).onEnd(vi).onFinalize(Mi);
+  function bi() {
+    let value = sharedValue.get();
+    value = sharedValue3.get();
+    if (isExpandableNotification) {
+      if (value > 0) {
+        let obj = {};
+        obj = {};
+        const obj7 = notification(channelId[8]);
+        const items = [0, closure_12, channelId[2]];
+        const items1 = [0, 0, closure_14];
+        obj.translateY = obj7.interpolate(value, items, items1, first1);
+        const items2 = [obj, ];
+        const obj1 = {};
+        let num6 = 1;
+        let num7 = 1;
+        if (!first1) {
+          num7 = value;
         }
-        return obj;
+        obj1.scale = num7;
+        items2[1] = obj1;
+        obj.transform = items2;
+        if (!first1) {
+          num6 = value;
+        }
+        obj.opacity = num6;
       }
-      obj = {};
-      items3 = [, ];
-      items3[0] = { translateY: value };
-      obj3 = {};
-      interpolateResult = value1;
-      if (closure_11) {
-        tmp4 = notification;
-        tmp5 = channelId;
-        num2 = 8;
-        obj3 = notification(channelId[8]);
-        tmp6 = closure_16;
-        tmp7 = closure_11;
-        tmp8 = obj3;
-        tmp9 = value;
-        interpolateResult = obj3.interpolate(value, closure_16, [], closure_11);
-      }
-      obj3.scale = interpolateResult;
-      items3[1] = obj3;
-      obj.transform = items3;
-      interpolateResult1 = value1;
-      if (closure_11) {
-        tmp11 = notification;
-        tmp12 = channelId;
-        num3 = 8;
-        obj4 = notification(channelId[8]);
-        tmp13 = closure_16;
-        tmp14 = closure_11;
-        tmp15 = obj4;
-        tmp16 = value;
-        interpolateResult1 = obj4.interpolate(value, closure_16, [255, 235, 205], closure_11);
-      }
-      obj.opacity = interpolateResult1;
-      return;
+      return obj;
     }
+    obj = {};
+    const items3 = [{ translateY: value }, ];
+    let obj2 = {};
+    let interpolateResult = value;
+    if (first1) {
+      obj2 = notification(channelId[8]);
+      interpolateResult = obj2.interpolate(value, tmp18, [0.3, 1, 0.3], first1);
+    }
+    obj2.scale = interpolateResult;
+    items3[1] = obj2;
+    obj.transform = items3;
+    let interpolateResult1 = value;
+    if (first1) {
+      const obj4 = notification(channelId[8]);
+      interpolateResult1 = obj4.interpolate(value, tmp18, [0, 1, 0], first1);
+    }
+    obj.opacity = interpolateResult1;
   }
-  obj5 = { notificationGestureY: sharedValue, scale: sharedValue3, isExpandableNotification, interpolate: arg1(dependencyMap[8]).interpolate, MIN_SWIPE_DISTANCE: closure_12, PAN_INPUT_RANGE: tmp18, NOTIFICATION_BOB_RANGE: closure_14, extrapolateConfig: first1, initialized: first1 };
-  Ri.__closure = obj5;
-  Ri.__workletHash = 14122965198084;
-  Ri.__initData = closure_34;
-  const items7 = [first2, sharedValue4, callback3, first1, tmp18, sharedValue, sharedValue3, callback1, sharedValue1, first4, isExpandableNotification, showReactionBar, showReplyInput, first, tmp11];
-  const animatedStyle1 = arg1(dependencyMap[8]).useAnimatedStyle(Ri);
-  const memo1 = React.useMemo(() => ({ notificationGestureY: sharedValue, velocityY: sharedValue1, containerScale: sharedValue3, initialized: first1, autoDismissing: first2, setAutoDismissing: closure_14, setActionTaken: closure_18, isExpanded: tmp18, expandedSV: sharedValue4, setExpanded: callback1, handleDismissNotification: callback3, panning: first4, isExpandableNotification, showReactionBar, showReplyInput, confirmation: first, setConfirmation: tmp11 }), items7);
+  obj5 = { notificationGestureY: sharedValue, scale: sharedValue3, isExpandableNotification, interpolate: notification(channelId[8]).interpolate, MIN_SWIPE_DISTANCE: closure_12, PAN_INPUT_RANGE: closure_16, NOTIFICATION_BOB_RANGE: closure_14, extrapolateConfig: first1, initialized: first1 };
+  bi.__closure = obj5;
+  bi.__workletHash = 14122965198084;
+  bi.__initData = closure_34;
+  const items7 = [first2, sharedValue4, callback3, first1, tmp18, sharedValue, sharedValue3, callback1, sharedValue1, first4, isExpandableNotification, showReactionBar, showReplyInput, first, tmp9[1]];
+  const animatedStyle1 = notification(channelId[8]).useAnimatedStyle(bi);
+  const memo1 = channelType.useMemo(() => ({ notificationGestureY: sharedValue, velocityY: sharedValue1, containerScale: sharedValue3, initialized: first1, autoDismissing: first2, setAutoDismissing: closure_14, setActionTaken: closure_18, isExpanded: closure_16, expandedSV: sharedValue4, setExpanded: callback1, handleDismissNotification: callback3, panning: first4, isExpandableNotification, showReactionBar, showReplyInput, confirmation: first, setConfirmation: closure_10 }), items7);
   obj6 = { style: sharedValue1.absoluteFill, pointerEvents: "box-none" };
-  const obj7 = { style: items8 };
-  const items8 = [tmp.backdrop, { width: size.width, height }];
+  let obj7 = { style: items8 };
+  items8 = [tmp.backdrop, { width: size.width, height }];
   let str = "none";
   if (tmp18) {
     str = "auto";
@@ -509,11 +485,11 @@ export default function InAppNotificationContainer(notification) {
       callback1(false);
     }
   };
-  const intl = arg1(dependencyMap[41]).intl;
-  obj8.accessibilityLabel = intl.string(arg1(dependencyMap[41]).t.9sewOj);
-  obj7.children = callback1(arg1(dependencyMap[40]).Backdrop, obj8);
+  const intl = notification(channelId[41]).intl;
+  obj8.accessibilityLabel = intl.string(notification(channelId[41]).t["9sewOj"]);
+  obj7.children = callback1(notification(channelId[40]).Backdrop, obj8);
   const items9 = [callback1(sharedValue, obj7), ];
-  obj9 = { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, "Bool(true)": true, style: tmp.safeAreaContainer };
+  obj9 = { top: true, bottom: true, left: true, right: true, style: tmp.safeAreaContainer, pointerEvents: "box-none" };
   let str2;
   if (stateFromStores) {
     str2 = "no-hide-descendants";
@@ -522,13 +498,13 @@ export default function InAppNotificationContainer(notification) {
   obj10 = { value: memo1 };
   const obj11 = { gesture: onFinalizeResult };
   const obj12 = { style: items10, pointerEvents: "box-none" };
-  const items10 = [tmp.animatedContainer, animatedStyle1];
+  items10 = [tmp.animatedContainer, animatedStyle1];
   obj12.children = callback1(NotificationWrapper, { notification });
-  obj11.children = callback1(importDefault(dependencyMap[8]).View, obj12);
-  const items11 = [callback1(arg1(dependencyMap[37]).GestureDetector, obj11), callback1(DetachedNotificationContent, { notification })];
+  obj11.children = callback1(guildId(channelId[8]).View, obj12);
+  const items11 = [callback1(notification(channelId[37]).GestureDetector, obj11), callback1(DetachedNotificationContent, { notification })];
   obj10.children = items11;
-  obj9.children = showReactionBar(arg1(dependencyMap[43]).InAppNotificationContext.Provider, obj10);
-  items9[1] = callback1(arg1(dependencyMap[42]).SafeAreaPaddingView, obj9);
+  obj9.children = showReactionBar(notification(channelId[43]).InAppNotificationContext.Provider, obj10);
+  items9[1] = callback1(notification(channelId[42]).SafeAreaPaddingView, obj9);
   obj6.children = items9;
-  return showReactionBar(arg1(dependencyMap[39]).OverlayView, obj6);
+  return showReactionBar(notification(channelId[39]).OverlayView, obj6);
 };

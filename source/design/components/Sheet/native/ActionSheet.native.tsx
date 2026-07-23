@@ -1,25 +1,27 @@
-// Module ID: 5497
-// Function ID: 46887
+// Module ID: 5500
+// Function ID: 46910
 // Name: ActionSheet
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 5187, 2]
 
-// Module 5497 (ActionSheet)
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 5500 (ActionSheet)
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
 let obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[3]).space.PX_16 };
+obj = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
 obj.content = obj;
 obj.body = { gap: 24 };
-let closure_3 = arg1(dependencyMap[2]).createStyles(obj);
-const obj2 = arg1(dependencyMap[2]);
-const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
+let closure_3 = _createForOfIteratorHelperLoose.createStyles(obj);
+const forwardRefResult = require("result").forwardRef((arg0, ref) => {
   const tmp = callback();
   const obj = { ref };
   const merged = Object.assign(arg0);
   obj["contentStyles"] = tmp.content;
   obj["bodyStyles"] = tmp.body;
-  return jsx(ref(dependencyMap[4]).BottomSheet, obj);
+  return jsx(require(5187) /* Background */.BottomSheet, { ref });
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Sheet/native/ActionSheet.native.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Sheet/native/ActionSheet.native.tsx");
 
 export const ActionSheet = forwardRefResult;

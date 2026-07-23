@@ -1,35 +1,37 @@
-// Module ID: 11675
-// Function ID: 90579
+// Module ID: 11685
+// Function ID: 90628
 // Name: useShowWelcomeModal
-// Dependencies: []
+// Dependencies: [31, 11686, 1907, 1838, 3958, 11687, 566, 11688, 4098, 11689, 1934, 2]
 // Exports: openWelcomeActionSheet, useShowWelcomeModal
 
-// Module 11675 (useShowWelcomeModal)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const NO_WELCOME_SCREEN = arg1(dependencyMap[1]).NO_WELCOME_SCREEN;
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
+// Module 11685 (useShowWelcomeModal)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { NO_WELCOME_SCREEN } from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: undefined };
-const result = arg1(dependencyMap[11]).fileFinishedImporting("utils/native/WelcomeScreenUtils.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/native/WelcomeScreenUtils.tsx");
 
 export const useShowWelcomeModal = function useShowWelcomeModal(guildId, channelId) {
-  channelId = guildId;
+  const _require = guildId;
   const importDefault = channelId;
-  const dependencyMap = channelId(dependencyMap[4]).useLocation().welcomeModalChannelId;
-  const React = importDefault(dependencyMap[5])(channelId, guildId);
-  const obj = channelId(dependencyMap[4]);
-  const items = [closure_7, closure_4, closure_6];
-  const stateFromStoresObject = channelId(dependencyMap[6]).useStateFromStoresObject(items, () => {
-    if (closure_3) {
-      const guild = guild.getGuild(arg0);
-      const selectableChannelIds = selectableChannelIds.getSelectableChannelIds(arg0);
-      const value = shouldFetchGuildId.get(arg0);
-      const hasSeenResult = shouldFetchGuildId.hasSeen(arg0);
+  welcomeModalChannelId = _require(welcomeModalChannelId[4]).useLocation().welcomeModalChannelId;
+  const React = importDefault(welcomeModalChannelId[5])(channelId, guildId);
+  let obj = _require(welcomeModalChannelId[4]);
+  const items = [_createForOfIteratorHelperLoose, shouldFetchGuildId, closure_6];
+  const stateFromStoresObject = _require(welcomeModalChannelId[6]).useStateFromStoresObject(items, () => {
+    if (result) {
+      const guild = outer1_7.getGuild(closure_0);
+      const selectableChannelIds = outer1_6.getSelectableChannelIds(closure_0);
+      const value = shouldFetchGuildId.get(closure_0);
+      const hasSeenResult = shouldFetchGuildId.hasSeen(closure_0);
       let tmp11 = !hasSeenResult;
       const hasErrorResult = shouldFetchGuildId.hasError();
       if (tmp11) {
-        tmp11 = welcomeModalChannelId === arg1;
+        tmp11 = welcomeModalChannelId === closure_1;
       }
       const obj = {};
       let tmp14 = tmp11;
@@ -37,7 +39,7 @@ export const useShowWelcomeModal = function useShowWelcomeModal(guildId, channel
         tmp14 = null != value;
       }
       if (tmp14) {
-        tmp14 = value !== closure_5;
+        tmp14 = value !== outer1_5;
       }
       if (tmp14) {
         tmp14 = !isFetchingResult;
@@ -60,22 +62,21 @@ export const useShowWelcomeModal = function useShowWelcomeModal(guildId, channel
       obj.shouldFetchGuildId = id;
       return obj;
     } else {
-      return closure_8;
+      return outer1_8;
     }
   });
-  const shouldFetchGuildId = stateFromStoresObject.shouldFetchGuildId;
-  closure_4 = shouldFetchGuildId;
+  shouldFetchGuildId = stateFromStoresObject.shouldFetchGuildId;
   const items1 = [shouldFetchGuildId];
   const effect = React.useEffect(() => {
     if (null != shouldFetchGuildId) {
-      const welcomeScreen = arg0(welcomeModalChannelId[7]).fetchWelcomeScreen(shouldFetchGuildId);
-      const obj = arg0(welcomeModalChannelId[7]);
+      const welcomeScreen = guildId(welcomeModalChannelId[7]).fetchWelcomeScreen(shouldFetchGuildId);
+      const obj = guildId(welcomeModalChannelId[7]);
     }
   }, items1);
   return stateFromStoresObject.welcomeScreenModalVisible;
 };
 export const openWelcomeActionSheet = function openWelcomeActionSheet(onHide) {
   const guildId = onHide.guildId;
-  const obj = importDefault(dependencyMap[8]);
-  obj.openLazy(arg1(dependencyMap[10])(dependencyMap[9], dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
+  const obj = importDefault(4098);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(11689, dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
 };

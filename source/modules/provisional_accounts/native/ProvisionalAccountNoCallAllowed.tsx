@@ -1,33 +1,35 @@
-// Module ID: 12615
-// Function ID: 96941
+// Module ID: 12729
+// Function ID: 99097
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: []
+// Dependencies: [31, 653, 33, 4130, 4475, 7507, 1212, 1920, 4475, 2]
 // Exports: default
 
-// Module 12615 (ProvisionalAccountNoCallAllowed)
-importAll(dependencyMap[0]);
-const HelpdeskArticles = arg1(dependencyMap[1]).HelpdeskArticles;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles({ header: { alignSelf: "center" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
+// Module 12729 (ProvisionalAccountNoCallAllowed)
+import "result";
+import { HelpdeskArticles } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ header: { alignSelf: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
 
 export default function ProvisionalAccountNoCallAllowed() {
   let obj = {};
   obj = { size: "lg", style: callback().header };
-  obj.header = jsx(arg1(dependencyMap[5]).CircleErrorIcon, obj);
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.title = intl.string(arg1(dependencyMap[6]).t.vh+Zpq);
-  const intl2 = arg1(dependencyMap[6]).intl;
+  obj.header = jsx(require(7507) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["vh+Zpq"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
   obj = {};
   const tmp = callback();
-  obj.helpdeskArticle = importDefault(dependencyMap[7]).getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS);
-  obj.content = intl2.format(arg1(dependencyMap[6]).t.tx08s+, obj);
+  obj.helpdeskArticle = importDefault(1920).getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS);
+  obj.content = intl2.format(require(1212) /* getSystemLocale */.t["tx08s+"], obj);
   const obj1 = {};
   const obj2 = { variant: "secondary" };
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj2.text = intl3.string(arg1(dependencyMap[6]).t.NX+WJN);
-  obj1.children = jsx(arg1(dependencyMap[4]).AlertActionButton, obj2, "got-it");
-  obj.actions = jsx(arg1(dependencyMap[8]).AlertActions, obj1);
-  return jsx(arg1(dependencyMap[4]).AlertModal, obj);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj2.text = intl3.string(require(1212) /* getSystemLocale */.t["NX+WJN"]);
+  obj1.children = jsx(require(4475) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary" }, "got-it");
+  obj.actions = jsx(require(4475) /* getAlertModalItemKey */.AlertActions, {});
+  return jsx(require(4475) /* getAlertModalItemKey */.AlertModal, {});
 };

@@ -1,23 +1,27 @@
 // Module ID: 1691
-// Function ID: 18712
+// Function ID: 18713
 // Name: unprocessProps
-// Dependencies: []
+// Dependencies: [1590, 1692]
 
 // Module 1691 (unprocessProps)
+const require = arg1;
+const dependencyMap = arg6;
 function unprocessProps(styleProps) {
-  const result = arg1(arg6[1]).unprocessColorsInProps(styleProps);
-  function unprocessBoxShadow(boxShadow) {
+  const result = require(1692) /* pnpm_colorsTs1 */.unprocessColorsInProps(styleProps);
+  (function unprocessBoxShadow(boxShadow) {
     if (Array.isArray(boxShadow.boxShadow)) {
       boxShadow = boxShadow.boxShadow;
       boxShadow.boxShadow = boxShadow.map((color) => {
-        const obj = { color: callback(closure_1[1]).unprocessColor(color.color) };
+        const obj = { color: outer2_0(outer2_1[1]).unprocessColor(color.color) };
         return Object.assign({}, color, obj);
       });
     }
-  }(styleProps);
+  })(styleProps);
 }
-const obj = {
+let obj = {
+  viewsCount: 0,
   viewsMap: new Map(),
+  intervalId: null,
   registerView(componentViewTag, self) {
     self = this;
     const viewsMap = this.viewsMap;
@@ -40,7 +44,7 @@ const obj = {
     }
   },
   syncPropsBackToReact() {
-    const ReanimatedModule = arg1(arg6[0]).ReanimatedModule;
+    const ReanimatedModule = require(1590) /* ReanimatedModule */.ReanimatedModule;
     const settledUpdates = ReanimatedModule.getSettledUpdates();
     const iter = settledUpdates[Symbol.iterator]();
     const nextResult = iter.next();
@@ -57,7 +61,7 @@ const obj = {
         let tmp8 = styleProps;
         let result = obj._syncStylePropsBackToReact(tmp3);
       }
-      // continue
+      continue;
     }
   },
   registerInterval(arg0) {

@@ -1,19 +1,20 @@
-// Module ID: 13650
-// Function ID: 103414
-// Dependencies: []
+// Module ID: 13764
+// Function ID: 105570
+// Dependencies: [31, 27, 33, 4130, 689, 13765, 2]
 
-// Module 13650
-const tmp2 = arg1(dependencyMap[1]);
-const View = tmp2.View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
+// Module 13764
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const View = get_ActivityIndicator.View;
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
 obj.container = obj;
-let closure_4 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(() => <View style={callback().container}>{jsx(importDefault(dependencyMap[5]), {})}</View>);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/privacy_and_safety/native/RequestDataScreen.tsx");
+let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(() => <View style={callback().container}>{jsx(importDefault(13765), {})}</View>);
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/RequestDataScreen.tsx");
 
 export default memoResult;

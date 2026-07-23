@@ -1,27 +1,28 @@
-// Module ID: 5581
-// Function ID: 47386
+// Module ID: 5584
+// Function ID: 47409
 // Name: runAfterInteractions
-// Dependencies: []
+// Dependencies: [27, 4015, 2]
 // Exports: runAfterInteractions
 
-// Module 5581 (runAfterInteractions)
-function runAfterInteractions(arg0, closure_5) {
-  let num = closure_5;
-  const require = arg0;
-  if (closure_5 === undefined) {
+// Module 5584 (runAfterInteractions)
+import { InteractionManager } from "get ActivityIndicator";
+
+function runAfterInteractions(arg0, outer1_5) {
+  let num = outer1_5;
+  const _require = arg0;
+  if (outer1_5 === undefined) {
     num = 2000;
   }
-  let closure_1;
-  let InteractionManager;
-  closure_1 = InteractionManager.runAfterInteractions(() => {
+  let dependencyMap;
+  let delayedCall;
+  dependencyMap = delayedCall.runAfterInteractions(() => {
     delayedCall.cancel();
-    arg0();
+    callback();
   });
-  const delayedCall = new require(closure_1[1]).DelayedCall(num, () => {
+  delayedCall = new _require(4015).DelayedCall(num, () => {
     closure_1.cancel();
-    arg0();
+    callback();
   });
-  InteractionManager = delayedCall;
   delayedCall.delay();
   return {
     cancel() {
@@ -30,9 +31,7 @@ function runAfterInteractions(arg0, closure_5) {
     }
   };
 }
-const InteractionManager = require(dependencyMap[0]).InteractionManager;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("utils/native/RunAfterInteractionsUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/native/RunAfterInteractionsUtils.tsx");
 
 export default { runAfterInteractions };
 export { runAfterInteractions };

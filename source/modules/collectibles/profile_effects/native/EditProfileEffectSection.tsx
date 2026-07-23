@@ -1,33 +1,40 @@
-// Module ID: 13482
-// Function ID: 102322
+// Module ID: 13596
+// Function ID: 104478
 // Name: memoResult1
-// Dependencies: []
+// Dependencies: [31, 27, 6780, 8200, 33, 4130, 7865, 13595, 7866, 5484, 8225, 5085, 8698, 8218, 2]
 
-// Module 13482 (memoResult1)
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const isProfileEffectRecord = arg1(dependencyMap[2]).isProfileEffectRecord;
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj1 = arg1(dependencyMap[5]);
+// Module 13596 (memoResult1)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { isProfileEffectRecord } from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = {};
-obj = { 9223372036854775807: "Array", 9223372036854775807: "isArray", 0: "accessibilityRole", paddingHorizontal: arg1(dependencyMap[6]).GUTTER_SIZE };
+obj = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: require("useCollectibleListLayout").GUTTER_SIZE };
 obj.row = obj;
-obj1 = { height: arg1(dependencyMap[6]).GUTTER_SIZE };
-obj.rowSpacer = obj1;
-obj.profileEffect = { fr: 2085683.2, a: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010811969863144788, k: 0.0000000000000000000000000000000000000000000000000000000000000000000000012058167407260115 };
-obj.sampleProfile = { aspectRatio: arg1(dependencyMap[3]).SAMPLE_PROFILE_ASPECT_RATIO, width: "100%" };
-let closure_9 = obj1.createStyles(obj);
+_createForOfIteratorHelperLoose = { height: require("useCollectibleListLayout").GUTTER_SIZE };
+obj.rowSpacer = _createForOfIteratorHelperLoose;
+obj.profileEffect = { overflow: "hidden", width: "100%", height: "100%" };
+obj.sampleProfile = { aspectRatio: require("SAMPLE_PROFILE_ASPECT_RATIO").SAMPLE_PROFILE_ASPECT_RATIO, width: "100%" };
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((size) => {
+  let dependencyMap;
   let isTryItOut;
   let items;
+  let require;
   let setSelectedProfileEffect;
-  ({ items, selectedSkuId: closure_0, setSelectedProfileEffect } = size);
-  const importDefault = setSelectedProfileEffect;
-  ({ guildId: closure_2, isTryItOut } = size);
+  ({ items, selectedSkuId: require, setSelectedProfileEffect } = size);
+  ({ guildId: dependencyMap, isTryItOut } = size);
   if (isTryItOut === undefined) {
     isTryItOut = false;
   }
-  const View = size.size;
+  size = size.size;
   let closure_5;
   const tmp = callback3();
   items = [setSelectedProfileEffect];
@@ -37,43 +44,41 @@ const memoResult = importAllResult.memo((size) => {
   let obj = {};
   obj = { style: tmp.row };
   const items1 = [...items, null, null];
-  const substr = items1.slice(0, arg1(dependencyMap[6]).ROW_SIZE);
+  const substr = items1.slice(0, require(7865) /* useCollectibleListLayout */.ROW_SIZE);
   obj.children = substr.map((item) => {
-    if (item === callback(closure_2[7]).NONE_ITEM) {
-      let obj = { size, onPress: callback2, isSelected: null == callback, asDefault: null != closure_2 };
-      return callback3(callback(closure_2[8]).EditCollectiblesListItemNone, obj, "none");
-    } else if (item === callback(closure_2[7]).SHOP_ITEM) {
-      obj = { size, analyticsSource: setSelectedProfileEffect(closure_2[9]).EDIT_PROFILE_EFFECT_SHEET };
-      return callback3(callback(closure_2[8]).EditCollectiblesListItemShop, obj, "shop");
-    } else if (callback2(item)) {
-      const obj1 = { item, isSelected: callback === item.skuId, setSelectedProfileEffect, isTryItOut, size };
-      return callback3(closure_10, obj1, item.skuId);
+    if (item === outer1_0(outer1_2[7]).NONE_ITEM) {
+      let obj = { size, onPress: callback, isSelected: null == closure_0, asDefault: null != closure_2 };
+      return outer1_6(outer1_0(outer1_2[8]).EditCollectiblesListItemNone, obj, "none");
+    } else if (item === outer1_0(outer1_2[7]).SHOP_ITEM) {
+      obj = { size, analyticsSource: setSelectedProfileEffect(outer1_2[9]).EDIT_PROFILE_EFFECT_SHEET };
+      return outer1_6(outer1_0(outer1_2[8]).EditCollectiblesListItemShop, obj, "shop");
+    } else if (callback(item)) {
+      const obj1 = { item, isSelected: closure_0 === item.skuId, setSelectedProfileEffect, isTryItOut, size };
+      return outer1_6(outer1_10, obj1, item.skuId);
     } else {
       obj = {};
       const obj2 = { height: size, width: size };
       obj.style = obj2;
-      return callback3(size, obj, arg1);
+      return outer1_6(size, obj, arg1);
     }
   });
-  const items2 = [callback(View, obj), ];
+  const items2 = [callback(size, obj), ];
   obj = { style: tmp.rowSpacer };
-  items2[1] = callback(View, obj);
+  items2[1] = callback(size, obj);
   obj.children = items2;
   return callback2(closure_7, obj);
 });
 memoResult.displayName = "EditProfileEffectRow";
 const memoResult1 = importAllResult.memo((isSelected) => {
   const item = isSelected.item;
-  const arg1 = item;
   const setSelectedProfileEffect = isSelected.setSelectedProfileEffect;
-  const importDefault = setSelectedProfileEffect;
   let flag = isSelected.isTryItOut;
   if (flag === undefined) {
     flag = false;
   }
   let dependencyMap;
   const tmp = callback3();
-  const tmp2 = importDefault(dependencyMap[10])(item.skuId);
+  const tmp2 = setSelectedProfileEffect(8225)(item.skuId);
   dependencyMap = tmp2;
   const items = [setSelectedProfileEffect, item];
   let thumbnailPreviewSrc;
@@ -86,18 +91,18 @@ const memoResult1 = importAllResult.memo((isSelected) => {
   const items1 = [thumbnailPreviewSrc];
   const memo = importAllResult.useMemo(() => {
     let thumbnailPreviewSrc;
-    if (null != tmp2) {
-      thumbnailPreviewSrc = tmp2.thumbnailPreviewSrc;
+    if (null != _undefined) {
+      thumbnailPreviewSrc = _undefined.thumbnailPreviewSrc;
     }
     if (null == thumbnailPreviewSrc) {
       let thumbnailPreviewSrc1;
-      if (null != tmp2) {
-        thumbnailPreviewSrc1 = tmp2.thumbnailPreviewSrc;
+      if (null != _undefined) {
+        thumbnailPreviewSrc1 = _undefined.thumbnailPreviewSrc;
       }
       let combined = thumbnailPreviewSrc1;
     } else {
       const _HermesInternal = HermesInternal;
-      combined = "" + tmp2.thumbnailPreviewSrc + "?width=100&height=195";
+      combined = "" + _undefined.thumbnailPreviewSrc + "?width=100&height=195";
     }
     return combined;
   }, items1);
@@ -107,23 +112,22 @@ const memoResult1 = importAllResult.memo((isSelected) => {
     accessibilityLabel = tmp2.accessibilityLabel;
   }
   obj.accessibilityLabel = accessibilityLabel;
-  obj = { <string:3798542332>: null, <string:2195412909>: null, <string:1614302748>: null };
+  obj = { style: null, accessible: false, importantForAccessibility: "no" };
   const items2 = [tmp.profileEffect, { borderRadius: 6 }];
   obj.style = items2;
   obj = {};
-  const obj1 = { uri: importDefault(dependencyMap[12]) };
+  const obj1 = { uri: setSelectedProfileEffect(8698) };
   obj.source = obj1;
   obj.style = tmp.sampleProfile;
   obj.resizeMode = "cover";
-  const items3 = [callback(importDefault(dependencyMap[11]), obj), ];
-  const obj2 = { style: "<string:4149346306>", value: "<string:295619838>", minimumValue: "<string:20046913>", skuId: item.skuId, thumbnailUrlOverride: memo };
-  items3[1] = callback(importDefault(dependencyMap[13]), obj2);
+  const items3 = [callback(setSelectedProfileEffect(5085), obj), ];
+  const obj2 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true, thumbnailUrlOverride: memo };
+  items3[1] = callback(setSelectedProfileEffect(8218), obj2);
   obj.children = items3;
   obj.children = callback2(View, obj);
-  return callback(arg1(dependencyMap[8]).EditCollectiblesListItemProduct, obj);
+  return callback(item(7866).EditCollectiblesListItemProduct, obj);
 });
 memoResult1.displayName = "EditProfileEffectItem";
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/collectibles/profile_effects/native/EditProfileEffectSection.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/profile_effects/native/EditProfileEffectSection.tsx");
 
 export const EditProfileEffectRow = memoResult;

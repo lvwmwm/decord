@@ -1,14 +1,28 @@
-// Module ID: 5484
-// Function ID: 46810
+// Module ID: 5487
+// Function ID: 46833
 // Name: RoleDot
-// Dependencies: []
+// Dependencies: [31, 27, 1917, 1910, 653, 33, 4130, 689, 5488, 3803, 5491, 5492, 3830, 1212, 5489, 5497, 5508, 4126, 4660, 566, 5510, 5511, 2]
 // Exports: default
 
-// Module 5484 (RoleDot)
+// Module 5487 (RoleDot)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function RoleDot(color) {
   color = color.color;
   let obj = {};
-  const items = [callback2().roleDot, ];
+  const items = [_createForOfIteratorHelperLoose().roleDot, ];
   obj = {};
   if (null == color) {
     color = closure_7;
@@ -21,17 +35,15 @@ function RoleDot(color) {
 class RoleItem {
   constructor(arg0) {
     role = global.role;
-    arg1 = role;
     guildId = global.guildId;
-    importDefault = guildId;
     colorString = global.color;
-    dependencyMap = undefined;
-    importAll = undefined;
-    closure_4 = undefined;
-    closure_5 = undefined;
+    concat = undefined;
+    colorString = undefined;
+    c4 = undefined;
+    guild_connections = undefined;
     renderContent = function renderContent() {
       let obj = {};
-      if (closure_5) {
+      if (_isNativeReflectConstruct) {
         obj = { roleId: role.id, guildId };
         let colorString;
         if (null != role) {
@@ -53,14 +65,14 @@ class RoleItem {
           tmp7 = colorString;
         }
         obj.color = tmp7;
-        tmp3Result = tmp3(closure_13, obj);
-        const tmp4 = closure_13;
+        tmp3Result = tmp3(outer1_13, obj);
+        const tmp4 = outer1_13;
       }
-      const items = [tmp3Result, roleIcon, callback(role(name[17]).Text, { variant: "text-xs/medium", children: name })];
+      const items = [tmp3Result, roleIcon, outer1_9(role(name[17]).Text, { variant: "text-xs/medium", children: name })];
       obj.children = items;
-      return closure_11(closure_10, obj);
+      return outer1_11(outer1_10, obj);
     };
-    tmp = closure_12();
+    tmp = c12();
     if (role.name.length <= MAX_VISUAL_ROLE_LENGTH) {
       name = role.name;
     } else {
@@ -71,26 +83,25 @@ class RoleItem {
       _HermesInternal = HermesInternal;
       str = "";
       str2 = "...";
-      name = "" + require("module_0") + "...";
+      name = "" + require("result") + "...";
     }
-    dependencyMap = name;
+    concat = name;
     if (null == colorString) {
       colorString = role.colorString;
     }
-    importAll = colorString;
-    obj = arg1(dependencyMap[8]);
+    obj = require("useRoleIcon");
     obj = { guildId, roleId: role.id, size: 12 };
     roleIcon = obj.useRoleIcon(obj);
-    closure_4 = roleIcon;
+    c4 = roleIcon;
     tags = role.tags;
     guild_connections = undefined;
     if (null != tags) {
       guild_connections = tags.guild_connections;
     }
-    closure_5 = undefined !== guild_connections;
-    DeveloperMode = arg1(dependencyMap[9]).DeveloperMode;
+    guild_connections = undefined !== guild_connections;
+    DeveloperMode = require("explicitContentFromProto").DeveloperMode;
     setting = DeveloperMode.useSetting();
-    obj3 = importDefault(dependencyMap[10]);
+    obj3 = require("items");
     items = [, ];
     items[0] = role.id;
     items[1] = name;
@@ -98,15 +109,15 @@ class RoleItem {
     items1[0] = role;
     items1[1] = name;
     items1[2] = roleIcon;
-    callback = importAll.useCallback(() => {
+    callback = colorString.useCallback(() => {
       role(name[11]).copy(role.id);
       const obj = role(name[11]);
       role(name[12]).roleIdCopied(name);
     }, items);
     tmp9 = jsx;
     if (setting) {
-      tmp12 = arg1;
-      tmp13 = dependencyMap;
+      tmp12 = role;
+      tmp13 = concat;
       num2 = 18;
       obj1 = {};
       obj1.onPress = callback;
@@ -120,69 +131,58 @@ class RoleItem {
       str3 = "button";
       obj1.accessibilityRole = "button";
       obj1.accessibilityLabel = name;
-      tmp15 = arg1;
-      tmp16 = dependencyMap;
+      tmp15 = role;
+      tmp16 = concat;
       num3 = 13;
-      intl = arg1(dependencyMap[13]).intl;
-      obj1.accessibilityHint = intl.string(arg1(dependencyMap[13]).t.sMsaLg);
+      intl = require("getSystemLocale").intl;
+      obj1.accessibilityHint = intl.string(require("getSystemLocale").t.sMsaLg);
       obj1.style = tmp.role;
       obj1.children = renderContent();
-      tmp9Result = tmp9(arg1(dependencyMap[18]).PressableHighlight, obj1);
+      tmp9Result = tmp9(require("PressableBase").PressableHighlight, obj1);
     } else {
-      tmp10 = closure_4;
+      tmp10 = c4;
       obj2 = {};
       obj2.style = tmp.role;
       obj2.children = renderContent();
-      tmp9Result = tmp9(closure_4, obj2);
+      tmp9Result = tmp9(c4, obj2);
     }
     return tmp9Result;
   }
 }
 function RolesList(guildMemberRoleIds) {
   guildMemberRoleIds = guildMemberRoleIds.guildMemberRoleIds;
-  const arg1 = guildMemberRoleIds;
   const guildId = guildMemberRoleIds.guildId;
-  const importDefault = guildId;
-  let obj = arg1(dependencyMap[19]);
+  let obj = guildMemberRoleIds(566);
   const items = [closure_6];
   const items1 = [guildMemberRoleIds, guildId];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const manyRoles = manyRoles.getManyRoles(guildId, guildMemberRoleIds);
-    return manyRoles.sort(guildMemberRoleIds(closure_2[20]).sortRolesByVerification);
+    const manyRoles = outer1_6.getManyRoles(guildId, guildMemberRoleIds);
+    return manyRoles.sort(guildMemberRoleIds(outer1_2[20]).sortRolesByVerification);
   }, items1);
   let tmp2 = null;
   if (0 !== stateFromStoresArray.length) {
-    obj = { style: tmp.roleContainer, children: stateFromStoresArray.map((id) => callback(closure_14, { role: id, guildId }, id.id)) };
+    obj = { style: tmp.roleContainer, children: stateFromStoresArray.map((id) => outer1_9(outer1_14, { role: id, guildId }, id.id)) };
     tmp2 = callback(View, obj);
   }
   return tmp2;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ DEFAULT_ROLE_COLOR_HEX: closure_7, MAX_VISUAL_ROLE_LENGTH: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = { roleContainer: {} };
-obj = { -871710126: 65535, -1878764875: 1912668160, -1956545097: 1, 76486723: 1, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_MOD_MUTED, borderRadius: importDefault(dependencyMap[7]).radii.sm };
-obj.role = obj;
-const obj1 = { "Bool(false)": "headerChannelContainer", "Bool(false)": "targetFrames", "Bool(false)": "jest", borderRadius: importDefault(dependencyMap[7]).radii.round };
-obj.roleDot = obj1;
-let closure_12 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_profile/native/UserProfileRolesCard.tsx");
+({ DEFAULT_ROLE_COLOR_HEX: closure_7, MAX_VISUAL_ROLE_LENGTH: closure_8 } = ME);
+({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = { roleContainer: { flexDirection: "row", gap: 8, flexWrap: "wrap" } };
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", columnGap: 4, padding: 6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.role = _createForOfIteratorHelperLoose;
+let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, height: 12, width: 12 };
+_createForOfIteratorHelperLoose.roleDot = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/native/UserProfileRolesCard.tsx");
 
 export default function UserProfileRolesCard(userId) {
   userId = userId.userId;
-  const arg1 = userId;
   const guildId = userId.guildId;
-  const importDefault = guildId;
-  let obj = arg1(dependencyMap[19]);
-  const items = [closure_5];
+  let obj = userId(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [userId, guildId];
-  const stateFromStores = obj.useStateFromStores(items, () => member.getMember(guildId, userId), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getMember(guildId, userId), items1);
   let roles;
   if (null != stateFromStores) {
     roles = stateFromStores.roles;
@@ -193,13 +193,13 @@ export default function UserProfileRolesCard(userId) {
   let tmp2 = null;
   if (0 !== roles.length) {
     obj = {};
-    const intl = arg1(dependencyMap[13]).intl;
-    obj.title = intl.string(arg1(dependencyMap[13]).t.LPJmL/);
+    const intl = userId(1212).intl;
+    obj.title = intl.string(userId(1212).t["LPJmL/"]);
     obj.style = userId.style;
     obj = { guildId, guildMemberRoleIds: roles };
     obj.children = callback(RolesList, obj);
-    tmp2 = callback(importDefault(dependencyMap[21]), obj);
-    const tmp6 = importDefault(dependencyMap[21]);
+    tmp2 = callback(guildId(5511), obj);
+    const tmp6 = guildId(5511);
   }
   return tmp2;
 };

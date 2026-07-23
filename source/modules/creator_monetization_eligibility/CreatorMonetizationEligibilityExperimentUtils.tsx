@@ -1,12 +1,18 @@
-// Module ID: 5637
-// Function ID: 48217
+// Module ID: 5642
+// Function ID: 48244
 // Name: getCreatorMonetizationEligibleCountry
-// Dependencies: []
+// Dependencies: [1849, 3778, 653, 566, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, useIsExpeditedOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry
 
-// Module 5637 (getCreatorMonetizationEligibleCountry)
+// Module 5642 (getCreatorMonetizationEligibleCountry)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { GuildFeatures } from "ME";
+import set from "ME";
+
+const require = arg1;
 function getCreatorMonetizationEligibleCountry() {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   let country;
   if (null != currentUser) {
     const storeCountry = currentUser.storeCountry;
@@ -41,19 +47,16 @@ function isWhitegloveOnboardingGuild(features) {
   }
   return hasItem;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const GuildFeatures = arg1(dependencyMap[2]).GuildFeatures;
-const set = new Set([]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityExperimentUtils.tsx");
+let set = new Set(["US"]);
+const result = set.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityExperimentUtils.tsx");
 
 export const useIsUserInCreatorMonetizationEligibleCountry = function useIsUserInCreatorMonetizationEligibleCountry() {
-  const items = [closure_2, closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const tmp = callback();
+  const items = [_isNativeReflectConstruct, closure_3];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const tmp = outer1_6();
     let hasItem = null != tmp;
     if (hasItem) {
-      hasItem = set.has(tmp);
+      hasItem = outer1_5.has(tmp);
     }
     return hasItem;
   });

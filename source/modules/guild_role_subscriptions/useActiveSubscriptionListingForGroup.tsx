@@ -1,53 +1,60 @@
-// Module ID: 15149
-// Function ID: 114304
+// Module ID: 15264
+// Function ID: 116473
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [31, 3781, 3782, 3752, 653, 566, 14103, 5638, 2]
 // Exports: default
 
-// Module 15149 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15264 (_createForOfIteratorHelperLoose)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { SubscriptionTypes } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,49 +91,39 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const SubscriptionTypes = arg1(dependencyMap[4]).SubscriptionTypes;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_role_subscriptions/useActiveSubscriptionListingForGroup.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/useActiveSubscriptionListingForGroup.tsx");
 
 export default function useActiveSubscriptionListingForGroup(arg0) {
-  const arg1 = arg0;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => sku_id.getSubscriptions());
-  const dependencyMap = stateFromStores;
+  const _require = arg0;
+  const items = [sku_id];
+  stateFromStores = _require(stateFromStores[5]).useStateFromStores(items, () => sku_id.getSubscriptions());
   const items1 = [stateFromStores];
-  const React = React.useMemo(() => {
+  React = React.useMemo(() => {
     if (null == stateFromStores) {
       return {};
     } else {
       const obj = {};
       const _Object = Object;
       const values = Object.values(stateFromStores);
-      let num = 0;
-      if (0 < values.length) {
-        do {
-          let tmp3 = values[num];
-          let tmp4 = closure_6;
-          if (tmp3.type === closure_6.GUILD) {
-            let tmp5 = closure_0;
-            let tmp6 = closure_1;
-            let obj2 = closure_0(closure_1[6]);
-            obj[obj2.getRoleSubscriptionPlanId(tmp3)] = tmp3;
-          }
-          num = num + 1;
-        } while (num < values.length);
+      for (let num = 0; num < values.length; num = num + 1) {
+        let tmp3 = values[num];
+        let tmp4 = soft_deleted;
+        if (tmp3.type === soft_deleted.GUILD) {
+          let tmp5 = callback;
+          let tmp6 = stateFromStores;
+          let obj2 = callback(stateFromStores[6]);
+          obj[obj2.getRoleSubscriptionPlanId(tmp3)] = tmp3;
+        }
       }
       return obj;
     }
   }, items1);
-  const obj = arg1(dependencyMap[5]);
-  const items2 = [closure_5];
-  const activeSubscription = arg1(dependencyMap[5]).useStateFromStoresObject(items2, () => {
+  let obj = _require(stateFromStores[5]);
+  const items2 = [activeSubscriptionPlanFromStore];
+  const activeSubscription = _require(stateFromStores[5]).useStateFromStoresObject(items2, () => {
     let subscriptionGroupListing = null;
-    if (null != arg0) {
-      subscriptionGroupListing = activeSubscriptionPlanFromStore.getSubscriptionGroupListing(arg0);
+    if (null != closure_0) {
+      subscriptionGroupListing = activeSubscriptionPlanFromStore.getSubscriptionGroupListing(closure_0);
     }
     let prop;
     if (null != subscriptionGroupListing) {
@@ -135,7 +132,7 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
     if (null == prop) {
       prop = [];
     }
-    const tmp4Result = closure_7(prop);
+    const tmp4Result = outer1_7(prop);
     const iter = tmp4Result();
     let iter2 = iter;
     let tmp6;
@@ -156,8 +153,8 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
             break;
           }
         } else {
-          let tmp11 = closure_2;
-          let tmp12 = closure_2[id];
+          let tmp11 = table;
+          let tmp12 = table[id];
           tmp6 = subscriptionListing;
           tmp7 = tmp12;
           if (null != tmp12) {
@@ -179,27 +176,23 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
   if (null != first) {
     id = first.id;
   }
-  let closure_3 = id;
-  let sku_id;
+  sku_id = undefined;
   if (null != first) {
     sku_id = first.sku_id;
   }
-  closure_4 = sku_id;
-  const obj2 = arg1(dependencyMap[5]);
-  const items3 = [closure_3];
-  const activeSubscriptionPlanFromStore = arg1(dependencyMap[5]).useStateFromStores(items3, () => {
+  let obj2 = _require(stateFromStores[5]);
+  const items3 = [id];
+  activeSubscriptionPlanFromStore = _require(stateFromStores[5]).useStateFromStores(items3, () => {
     let value = null;
     if (null != id) {
       value = id.get(id);
     }
     return value;
   });
-  closure_5 = activeSubscriptionPlanFromStore;
   let soft_deleted;
   if (null != activeSubscriptionListing) {
     soft_deleted = activeSubscriptionListing.soft_deleted;
   }
-  const SubscriptionTypes = soft_deleted;
   const items4 = [activeSubscriptionPlanFromStore, sku_id, soft_deleted];
   const effect = React.useEffect(() => {
     let isFetchingForSKUResult = null != activeSubscriptionPlanFromStore;
@@ -210,7 +203,7 @@ export default function useActiveSubscriptionListingForGroup(arg0) {
       isFetchingForSKUResult = id.isFetchingForSKU(sku_id);
     }
     if (!isFetchingForSKUResult) {
-      const obj = arg0(stateFromStores[7]);
+      const obj = callback(stateFromStores[7]);
       const subscriptionPlansForSKU = obj.fetchSubscriptionPlansForSKU(sku_id, undefined, undefined, soft_deleted);
     }
   }, items4);

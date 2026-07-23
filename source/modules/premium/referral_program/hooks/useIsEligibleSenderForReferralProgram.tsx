@@ -1,20 +1,22 @@
-// Module ID: 7418
-// Function ID: 59624
+// Module ID: 7423
+// Function ID: 59658
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: []
+// Dependencies: [6689, 7424, 566, 2]
 // Exports: useIsEligibleSenderForReferralProgram
 
-// Module 7418 (useIsEligibleSenderForReferralProgram)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/referral_program/hooks/useIsEligibleSenderForReferralProgram.tsx");
+// Module 7423 (useIsEligibleSenderForReferralProgram)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/premium/referral_program/hooks/useIsEligibleSenderForReferralProgram.tsx");
 
 export const useIsEligibleSenderForReferralProgram = function useIsEligibleSenderForReferralProgram(result) {
   let flag = result;
   if (result === undefined) {
     flag = false;
   }
-  const maybeFetchReferralsRemaining = arg1(dependencyMap[1]).useMaybeFetchReferralsRemaining(flag);
-  const obj = arg1(dependencyMap[1]);
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => isEligibleToSendReferrals.getIsEligibleToSendReferrals());
+  const maybeFetchReferralsRemaining = require(7424) /* useMaybeFetchReferralsRemaining */.useMaybeFetchReferralsRemaining(flag);
+  const obj = require(7424) /* useMaybeFetchReferralsRemaining */;
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getIsEligibleToSendReferrals());
 };

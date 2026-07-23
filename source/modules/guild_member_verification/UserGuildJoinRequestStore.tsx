@@ -1,9 +1,17 @@
-// Module ID: 3946
-// Function ID: 32587
+// Module ID: 3948
+// Function ID: 32592
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1849, 3949, 1387, 566, 686, 2]
 
-// Module 3946 (_isNativeReflectConstruct)
+// Module 3948 (_isNativeReflectConstruct)
+import isActionedApplicationStatus from "isActionedApplicationStatus";
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,9 +25,9 @@ function joinRequestFromServer(request) {
   return { joinRequestId: request.join_request_id, guildId: request.guild_id, userId: request.user_id, user: request.user, createdAt: request.created_at, formResponses: request.form_responses, rejectionReason: request.rejection_reason, applicationStatus: request.application_status, actionedAt: request.actioned_at, actionedByUser: request.actioned_by_user, lastSeen: request.last_seen, interviewChannelId: request.interview_channel_id };
 }
 function deleteJoinRequest(guildId) {
-  delete r0[r2];
-  if (closure_8 === guildId) {
-    closure_8 = null;
+  delete tmp[tmp2];
+  if (c8 === guildId) {
+    c8 = null;
   }
 }
 function handleGatewayJoinRequestUpdate(arg0) {
@@ -28,7 +36,7 @@ function handleGatewayJoinRequestUpdate(arg0) {
   ({ guildId, request } = arg0);
   if (null != request) {
     const tmp2 = joinRequestFromServer(request);
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     if (null != currentUser) {
       if (tmp2.userId !== currentUser.id) {
         return false;
@@ -39,32 +47,26 @@ function handleGatewayJoinRequestUpdate(arg0) {
     } else {
       closure_9[guildId] = tmp2;
     }
-    const obj = arg1(dependencyMap[6]);
+    obj = require(3949) /* isActionedApplicationStatus */;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = null;
+let c8 = null;
 let closure_9 = {};
-let closure_10 = false;
+let c10 = false;
 let closure_11 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class UserGuildJoinRequestStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, UserGuildJoinRequestStore);
-      obj = closure_5(UserGuildJoinRequestStore);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      tmp = outer1_2(this, UserGuildJoinRequestStore);
+      obj = outer1_5(UserGuildJoinRequestStore);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -73,26 +75,25 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = UserGuildJoinRequestStore;
   callback2(UserGuildJoinRequestStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
     }
   };
   const items = [obj, , , , , ];
   obj = {
     key: "getRequest",
     value(arg0) {
-      return closure_9[arg0];
+      return outer1_9[arg0];
     }
   };
   items[1] = obj;
   obj = {
     key: "computeGuildIds",
     value() {
-      const values = Object.values(closure_9);
+      const values = Object.values(outer1_9);
       const mapped = values.map((guildId) => {
         guildId = undefined;
         if (null != guildId) {
@@ -108,9 +109,9 @@ let tmp2 = (Store) => {
     key: "getJoinRequestGuild",
     value(arg0) {
       let fromGuildBasicResult = null;
-      if (null != closure_11[arg0]) {
-        fromGuildBasicResult = UserGuildJoinRequestStore(closure_1[7]).fromGuildBasic(closure_11[arg0]);
-        const obj = UserGuildJoinRequestStore(closure_1[7]);
+      if (null != outer1_11[arg0]) {
+        fromGuildBasicResult = UserGuildJoinRequestStore(outer1_1[7]).fromGuildBasic(outer1_11[arg0]);
+        const obj = UserGuildJoinRequestStore(outer1_1[7]);
       }
       return fromGuildBasicResult;
     }
@@ -118,28 +119,28 @@ let tmp2 = (Store) => {
   items[4] = {
     key: "hasFetchedRequestToJoinGuilds",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[5] = {
     key: "hasJoinRequestCoackmark",
     value() {
-      return null != closure_8;
+      return null != outer1_8;
     }
   };
   return callback(UserGuildJoinRequestStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "UserGuildJoinRequestStore";
-tmp2 = new tmp2(importDefault(dependencyMap[9]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guildJoinRequests) {
     guildJoinRequests = guildJoinRequests.guildJoinRequests;
-    let closure_10 = false;
+    let c10 = false;
     let closure_11 = {};
     let closure_9 = {};
     const item = guildJoinRequests.forEach((guild_id) => {
       guild_id = guild_id.guild_id;
       if (null != guild_id) {
-        closure_9[guild_id] = callback(guild_id);
+        closure_9[guild_id] = outer1_13(guild_id);
       }
     });
   },
@@ -159,7 +160,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
       } else {
         closure_9[guildId] = tmp4;
       }
-      const obj = arg1(dependencyMap[6]);
+      obj = require(3949) /* isActionedApplicationStatus */;
     } else {
       deleteJoinRequest(guildId);
     }
@@ -169,10 +170,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
   },
   USER_JOIN_REQUEST_GUILDS_FETCH: function handleJoinRequestGuildsFetch(guilds) {
     guilds = guilds.guilds;
-    let closure_10 = true;
+    let c10 = true;
     const item = guilds.forEach((id) => {
       id = id.id;
-      closure_11[id] = { id, name: id.name, features: id.features, icon: id.icon, splash: id.splash };
+      outer1_11[id] = { id, name: id.name, features: id.features, icon: id.icon, splash: id.splash };
     });
   },
   MEMBER_VERIFICATION_FORM_UPDATE: function handleVerificationFormUpdate(form) {
@@ -226,10 +227,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[9]), {
     guildId = guildId.guildId;
   },
   USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR: function handleClearCoachmark() {
-    let closure_8 = null;
+    let c8 = null;
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_member_verification/UserGuildJoinRequestStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_member_verification/UserGuildJoinRequestStore.tsx");
 
 export default tmp2;
 export { joinRequestFromServer };

@@ -1,14 +1,15 @@
-// Module ID: 7153
-// Function ID: 57723
+// Module ID: 7158
+// Function ID: 57757
 // Name: CommonTriggerPointConfiguration
-// Dependencies: []
+// Dependencies: [6, 7, 1188, 4045, 2]
 
-// Module 7153 (CommonTriggerPointConfiguration)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-const CommonTriggerPoints = arg1(dependencyMap[3]).CommonTriggerPoints;
-const tmp2 = () => {
+// Module 7158 (CommonTriggerPointConfiguration)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { CommonTriggerPoints } from "ExperimentBuckets";
+
+const tmp2 = (() => {
   class CommonTriggerPointConfiguration {
     constructor(arg0, arg1, arg2) {
       tmp = CommonTriggerPointConfiguration(this, CommonTriggerPointConfiguration);
@@ -18,7 +19,6 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = CommonTriggerPointConfiguration;
   let obj = {
     key: "registeredExperimentIds",
     value() {
@@ -35,15 +35,16 @@ const tmp2 = () => {
       if (arg0 === undefined) {
         obj = {};
       }
-      const result = closure_2.trackCommonTriggerPointExposures(self.params.location);
+      const result = outer1_2.trackCommonTriggerPointExposures(self.params.location);
       obj = {};
       const merged = Object.assign(self.params);
       const merged1 = Object.assign(obj);
-      function triggerCommonExperiments(arg0, experiments, arg2) {
+      (function triggerCommonExperiments(arg0, experiments, arg2) {
+        let _classCallCheck = arg2;
         const item = experiments.forEach((trackExposure) => {
-          trackExposure.trackExposure(arg2);
+          trackExposure.trackExposure(_classCallCheck);
         });
-      }(undefined, self.experiments, obj);
+      })(undefined, self.experiments, obj);
     }
   };
   items[1] = obj;
@@ -55,7 +56,7 @@ const tmp2 = () => {
   };
   items[2] = obj;
   return callback(CommonTriggerPointConfiguration, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/experiments/trigger_points/Helpers.tsx");
+})();
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/trigger_points/Helpers.tsx");
 
 export const CommonTriggerPointConfiguration = tmp2;

@@ -1,23 +1,22 @@
 // Module ID: 1550
-// Function ID: 17580
+// Function ID: 17581
 // Name: useScrollToTop
-// Dependencies: []
+// Dependencies: [31, 1459]
 // Exports: default
 
 // Module 1550 (useScrollToTop)
-let closure_2 = importAll(dependencyMap[0]);
+import result from "result";
+
+const require = arg1;
 
 export default function useScrollToTop(ref) {
-  const arg1 = ref;
-  const navigation = arg1(dependencyMap[1]).useNavigation();
-  const dependencyMap = navigation;
-  const obj = arg1(dependencyMap[1]);
-  const route = arg1(dependencyMap[1]).useRoute();
-  const React = route;
-  const items = [navigation, ref, route.key];
-  const effect = React.useEffect(() => {
+  const _require = ref;
+  navigation = _require(navigation[1]).useNavigation();
+  const obj = _require(navigation[1]);
+  const route = _require(navigation[1]).useRoute();
+  let items = [navigation, ref, route.key];
+  const effect = route.useEffect(() => {
     const items = [];
-    const arg0 = items;
     for (let parent = closure_1; parent; parent = parent.getParent()) {
       let tmp = parent;
       if ("tab" === parent.getState().type) {
@@ -25,14 +24,15 @@ export default function useScrollToTop(ref) {
       }
     }
     if (0 !== items.length) {
-      let closure_1 = items.map((addListener) => addListener.addListener("tabPress", (arg0) => {
+      closure_1 = items.map((addListener) => addListener.addListener("tabPress", (arg0) => {
+        let closure_0 = arg0;
         closure_1 = closure_1.isFocused();
-        let hasItem = arg0.includes(closure_1);
+        let hasItem = outer1_0.includes(closure_1);
         if (!hasItem) {
-          hasItem = closure_1.getState().routes[0].key === hasItem.key;
+          hasItem = closure_1.getState().routes[0].key === outer2_2.key;
         }
-        const animationFrame = requestAnimationFrame((self) => {
-          if (null == self.current) {
+        const animationFrame = requestAnimationFrame(() => {
+          if (null == items.current) {
             let tmp3 = closure_1;
             if (closure_1) {
               tmp3 = hasItem;
@@ -41,17 +41,17 @@ export default function useScrollToTop(ref) {
               tmp3 = null;
             }
             if (tmp3) {
-              tmp3 = !self.defaultPrevented;
+              tmp3 = !defaultPrevented.defaultPrevented;
             }
             if (tmp3) {
               if ("scrollToTop" in null) {
                 null.scrollToTop();
               } else if ("scrollTo" in null) {
-                null.scrollTo({ <string:1667345620>: null, <string:1638680913>: null });
+                null.scrollTo({ y: 0, animated: true });
               } else if ("scrollToOffset" in null) {
-                null.scrollToOffset({ <string:1438146821>: null, <string:39547134>: null });
+                null.scrollToOffset({ offset: 0, animated: true });
               } else if ("scrollResponderScrollTo" in null) {
-                const result = null.scrollResponderScrollTo({ <string:1667345620>: null, <string:1638680913>: null });
+                const result = null.scrollResponderScrollTo({ y: 0, animated: true });
               }
             }
           } else {

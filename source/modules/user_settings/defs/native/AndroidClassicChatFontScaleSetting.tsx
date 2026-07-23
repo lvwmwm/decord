@@ -1,31 +1,50 @@
-// Module ID: 14090
-// Function ID: 106951
+// Module ID: 14204
+// Function ID: 109107
 // Name: toggle
-// Dependencies: []
+// Dependencies: [14152, 7662, 3743, 682, 1212, 10095, 477, 2]
 
-// Module 14090 (toggle)
-const useFontScaleStore = require(dependencyMap[0]).useFontScaleStore;
-const _module = require(dependencyMap[5]);
-const toggle = _module.createToggle({
+// Module 14204 (toggle)
+import { useFontScaleStore } from "customFontScale";
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[4]).intl;
-    return intl.string(require(dependencyMap[4]).t.gFob3e);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.gFob3e);
   },
-  parent: require(dependencyMap[1]).MobileSetting.APPEARANCE,
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useValue: function useClassicChatFontScaleValue() {
-    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(dependencyMap[2]).shallow);
+    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3743) /* isIterable */.shallow);
   },
   onValueChange: function onClassicChatFontScaleChange(arg0) {
-    const require = arg0;
-    return require(dependencyMap[3]).batchUpdates(() => state.setState({ isClassicChatFontScaleEnabled: arg0 }));
+    const _require = arg0;
+    return _require(682).batchUpdates(() => outer1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
   },
   useDescription: function useClassicChatFontScaleDescription() {
-    const intl = require(dependencyMap[4]).intl;
-    return intl.string(require(dependencyMap[4]).t.OU3q8a);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.OU3q8a);
   },
-  usePredicate: require(dependencyMap[6]).isAndroid
+  usePredicate: require("set").isAndroid
 });
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AndroidClassicChatFontScaleSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.gFob3e);
+  },
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  useValue: function useClassicChatFontScaleValue() {
+    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3743) /* isIterable */.shallow);
+  },
+  onValueChange: function onClassicChatFontScaleChange(arg0) {
+    const _require = arg0;
+    return _require(682).batchUpdates(() => outer1_2.setState({ isClassicChatFontScaleEnabled: closure_0 }));
+  },
+  useDescription: function useClassicChatFontScaleDescription() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.OU3q8a);
+  },
+  usePredicate: require("set").isAndroid
+};
+const result = require("isIterable").fileFinishedImporting("modules/user_settings/defs/native/AndroidClassicChatFontScaleSetting.tsx");
 
 export default toggle;

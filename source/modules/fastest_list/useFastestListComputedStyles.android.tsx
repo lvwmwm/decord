@@ -1,19 +1,19 @@
-// Module ID: 9239
-// Function ID: 72265
+// Module ID: 9246
+// Function ID: 72306
 // Name: useFastestListComputedStyles
-// Dependencies: []
+// Dependencies: [31, 27, 2]
 // Exports: default
 
-// Module 9239 (useFastestListComputedStyles)
-let closure_0 = importAll(dependencyMap[0]);
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/fastest_list/useFastestListComputedStyles.android.tsx");
+// Module 9246 (useFastestListComputedStyles)
+import result from "result";
+import { StyleSheet } from "get ActivityIndicator";
+
+const result = require("set").fileFinishedImporting("modules/fastest_list/useFastestListComputedStyles.android.tsx");
 
 export default function useFastestListComputedStyles(style) {
   style = style.style;
-  const React = style;
-  const items = [style];
-  return React.useMemo(() => {
+  let items = [style];
+  return style.useMemo(() => {
     if (null != style) {
       if (null != style) {
         let obj = style;

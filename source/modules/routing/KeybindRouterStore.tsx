@@ -1,21 +1,26 @@
-// Module ID: 10802
-// Function ID: 83903
+// Module ID: 10812
+// Function ID: 83952
 // Name: getMatchData
-// Dependencies: []
+// Dependencies: [653, 3952, 3965, 677, 682, 2]
 
-// Module 10802 (getMatchData)
+// Module 10812 (getMatchData)
+import ME from "ME";
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+
+let closure_2;
+let closure_3;
 function getMatchData(pathname) {
   let channelId;
   let guildId;
-  let obj = require(dependencyMap[1]);
+  let obj = require(3952) /* matchPath */;
   let str = "";
   let str2 = "";
   if (null != pathname) {
     str2 = pathname;
   }
   obj = {};
-  const RouteParam = require(dependencyMap[2]).RouteParam;
-  const RouteParam2 = require(dependencyMap[2]).RouteParam;
+  const RouteParam = require(3965) /* isPseudoGuildId */.RouteParam;
+  const RouteParam2 = require(3965) /* isPseudoGuildId */.RouteParam;
   obj.path = closure_2.CHANNEL(RouteParam.guildId(), RouteParam2.channelId({ optional: true }), ":messageId?");
   const matchPathResult = obj.matchPath(str2, obj);
   if (null != matchPathResult) {
@@ -37,38 +42,46 @@ function getMatchData(pathname) {
       str = pathname;
     }
     const obj1 = {};
-    const RouteParam3 = require(dependencyMap[2]).RouteParam;
+    const RouteParam3 = require(3965) /* isPseudoGuildId */.RouteParam;
     obj1.path = closure_2.GUILD_BOOSTING_MARKETING(RouteParam3.guildId());
-    const matchPathResult1 = require(dependencyMap[1]).matchPath(str, obj1);
+    const matchPathResult1 = require(3952) /* matchPath */.matchPath(str, obj1);
     if (null != matchPathResult1) {
       const obj2 = { guildId: matchPathResult1.params.guildId, channelId: null };
       let obj3 = obj2;
     } else {
-      obj3 = { "Null": "o", "Null": "o" };
+      obj3 = { guildId: null, channelId: null };
     }
     return obj3;
   }
   const guildIdResult = RouteParam.guildId();
 }
-const _module = require(dependencyMap[0]);
-({ Routes: closure_2, ME: closure_3 } = _module);
-const _module1 = require(dependencyMap[3]);
-const withEqualityFn = _module1.createWithEqualityFn((arg0) => {
-  const require = arg0;
-  return {
+({ Routes: closure_2, ME: closure_3 } = ME);
+const withEqualityFn = useStoreWithEqualityFn.createWithEqualityFn((arg0) => {
+  let closure_0 = arg0;
+  const obj = {
+    path: null,
+    basePath: "/",
+    guildId: null,
+    channelId: null,
     updatePath(arg0) {
-      ({ guildId: closure_1, channelId: closure_2 } = callback(arg0));
-      const tmp = callback(arg0);
-      arg0(closure_1[4]).batchUpdates(() => arg0({ path: arg0, guildId: closure_1, channelId: closure_2 }));
+      let closure_1;
+      let closure_2;
+      const callback = arg0;
+      ({ guildId: closure_1, channelId: closure_2 } = outer1_4(arg0));
+      const tmp = outer1_4(arg0);
+      callback(outer1_1[4]).batchUpdates(() => callback({ path: callback, guildId: closure_1, channelId: closure_2 }));
     },
     resetPath(pathname) {
-      ({ guildId: closure_1, channelId: closure_2 } = callback(pathname));
-      const tmp = callback(pathname);
-      pathname(closure_1[4]).batchUpdates(() => arg0({ path: null, guildId: closure_1, channelId: closure_2, basePath: arg0 }));
+      let closure_1;
+      let closure_2;
+      const callback = pathname;
+      ({ guildId: closure_1, channelId: closure_2 } = outer1_4(pathname));
+      const tmp = outer1_4(pathname);
+      callback(outer1_1[4]).batchUpdates(() => pathname({ path: null, guildId: closure_1, channelId: closure_2, basePath: pathname }));
     }
   };
+  return obj;
 });
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/routing/KeybindRouterStore.tsx");
+const result = require("isPseudoGuildId").fileFinishedImporting("modules/routing/KeybindRouterStore.tsx");
 
 export default withEqualityFn;

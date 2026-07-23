@@ -1,46 +1,46 @@
 // Module ID: 1296
-// Function ID: 15151
+// Function ID: 15152
 // Name: MessageType
-// Dependencies: []
+// Dependencies: [6, 7, 1297, 1299, 1301, 1303, 1304, 1306, 1307, 1308, 1309, 1289, 1294, 1292, 1285]
 
 // Module 1296 (MessageType)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
+import _classCallCheck from "ReflectionBinaryReader";
+import _defineProperties from "ReflectionBinaryWriter";
 
-export const MessageType = () => {
+
+export const MessageType = (() => {
   class MessageType {
     constructor(arg0, arg1, arg2) {
       obj = arg2;
       self = this;
-      tmp = closure_2(this, MessageType);
+      tmp = outer1_2(this, MessageType);
       this.defaultCheckDepth = 16;
       this.typeName = arg0;
-      this.fields = arg1.map(MessageType(closure_1[2]).normalizeFieldInfo);
+      this.fields = arg1.map(MessageType(outer1_1[2]).normalizeFieldInfo);
       if (null == arg2) {
         obj = {};
       }
       self.options = obj;
-      reflectionTypeCheck = new MessageType(closure_1[3]).ReflectionTypeCheck(self);
+      reflectionTypeCheck = new MessageType(outer1_1[3]).ReflectionTypeCheck(self);
       self.refTypeCheck = reflectionTypeCheck;
-      reflectionJsonReader = new MessageType(closure_1[4]).ReflectionJsonReader(self);
+      reflectionJsonReader = new MessageType(outer1_1[4]).ReflectionJsonReader(self);
       self.refJsonReader = reflectionJsonReader;
-      reflectionJsonWriter = new MessageType(closure_1[5]).ReflectionJsonWriter(self);
+      reflectionJsonWriter = new MessageType(outer1_1[5]).ReflectionJsonWriter(self);
       self.refJsonWriter = reflectionJsonWriter;
-      reflectionBinaryReader = new MessageType(closure_1[6]).ReflectionBinaryReader(self);
+      reflectionBinaryReader = new MessageType(outer1_1[6]).ReflectionBinaryReader(self);
       self.refBinReader = reflectionBinaryReader;
-      reflectionBinaryWriter = new MessageType(closure_1[7]).ReflectionBinaryWriter(self);
+      reflectionBinaryWriter = new MessageType(outer1_1[7]).ReflectionBinaryWriter(self);
       self.refBinWriter = reflectionBinaryWriter;
       return;
     }
   }
-  const require = MessageType;
   let obj = {
     key: "create",
     value: function create(arr) {
-      const reflectionCreateResult = MessageType(closure_1[8]).reflectionCreate(this);
+      const reflectionCreateResult = MessageType(outer1_1[8]).reflectionCreate(this);
       if (undefined !== arr) {
-        const result = MessageType(closure_1[9]).reflectionMergePartial(this, reflectionCreateResult, arr);
-        const obj2 = MessageType(closure_1[9]);
+        const result = MessageType(outer1_1[9]).reflectionMergePartial(this, reflectionCreateResult, arr);
+        const obj2 = MessageType(outer1_1[9]);
       }
       return reflectionCreateResult;
     }
@@ -50,7 +50,7 @@ export const MessageType = () => {
     key: "clone",
     value: function clone(arr) {
       let obj = this.create();
-      obj = MessageType(closure_1[9]);
+      obj = MessageType(outer1_1[9]);
       const result = obj.reflectionMergePartial(this, obj, arr);
       return obj;
     }
@@ -59,7 +59,7 @@ export const MessageType = () => {
   obj = {
     key: "equals",
     value: function equals(arg0, arg1) {
-      return MessageType(closure_1[10]).reflectionEquals(this, arg0, arg1);
+      return MessageType(outer1_1[10]).reflectionEquals(this, arg0, arg1);
     }
   };
   items[2] = obj;
@@ -94,20 +94,20 @@ export const MessageType = () => {
   items[5] = {
     key: "mergePartial",
     value: function mergePartial(reflectionCreateResult, arr) {
-      const result = MessageType(closure_1[9]).reflectionMergePartial(this, reflectionCreateResult, arr);
+      const result = MessageType(outer1_1[9]).reflectionMergePartial(this, reflectionCreateResult, arr);
     }
   };
   items[6] = {
     key: "fromBinary",
     value: function fromBinary(toBinaryResult, BINARY_READ_OPTIONS) {
-      const binaryReadOptionsResult = MessageType(closure_1[11]).binaryReadOptions(BINARY_READ_OPTIONS);
+      const binaryReadOptionsResult = MessageType(outer1_1[11]).binaryReadOptions(BINARY_READ_OPTIONS);
       return this.internalBinaryRead(binaryReadOptionsResult.readerFactory(toBinaryResult), toBinaryResult.byteLength, binaryReadOptionsResult);
     }
   };
   items[7] = {
     key: "fromJson",
     value: function fromJson(prepareResult) {
-      return this.internalJsonRead(prepareResult, MessageType(closure_1[12]).jsonReadOptions(arg1));
+      return this.internalJsonRead(prepareResult, MessageType(outer1_1[12]).jsonReadOptions(arg1));
     }
   };
   items[8] = {
@@ -119,7 +119,7 @@ export const MessageType = () => {
   items[9] = {
     key: "toJson",
     value: function toJson(arg0, prettySpaces) {
-      return this.internalJsonWrite(arg0, MessageType(closure_1[12]).jsonWriteOptions(prettySpaces));
+      return this.internalJsonWrite(arg0, MessageType(outer1_1[12]).jsonWriteOptions(prettySpaces));
     }
   };
   items[10] = {
@@ -142,8 +142,8 @@ export const MessageType = () => {
   items[11] = {
     key: "toBinary",
     value: function toBinary(favoriteGifs) {
-      const binaryWriteOptionsResult = MessageType(closure_1[13]).binaryWriteOptions(arg1);
-      const obj = MessageType(closure_1[13]);
+      const binaryWriteOptionsResult = MessageType(outer1_1[13]).binaryWriteOptions(arg1);
+      const obj = MessageType(outer1_1[13]);
       return this.internalBinaryWrite(favoriteGifs, binaryWriteOptionsResult.writerFactory(), binaryWriteOptionsResult).finish();
     }
   };
@@ -165,7 +165,7 @@ export const MessageType = () => {
           }
         }
       }
-      obj = MessageType(closure_1[14]);
+      obj = MessageType(outer1_1[14]);
       const error = new Error("Unable to parse message " + self.typeName + " from JSON " + obj.typeofJsonValue(prepareResult) + ".");
       throw error;
     }
@@ -198,5 +198,5 @@ export const MessageType = () => {
       return obj;
     }
   };
-  return callback(MessageType, items);
-}();
+  return _defineProperties(MessageType, items);
+})();

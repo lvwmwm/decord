@@ -1,10 +1,28 @@
-// Module ID: 14978
-// Function ID: 112732
+// Module ID: 15094
+// Function ID: 114900
 // Name: getGuildIconSize
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 4122, 1838, 653, 33, 1450, 4130, 689, 566, 1392, 1426, 675, 5048, 5737, 1212, 7873, 5701, 1273, 4126, 4543, 9302, 7771, 8968, 2]
 // Exports: default
 
-// Module 14978 (getGuildIconSize)
+// Module 15094 (getGuildIconSize)
+import closure_3 from "_createForOfIteratorHelperLoose";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_6;
+let closure_7;
+const require = arg1;
 function getGuildIconSize(variant) {
   let num = 50;
   if ("one-column" === variant) {
@@ -22,32 +40,24 @@ function getGuildIconTop(variant) {
   return diff;
 }
 function getCardWidth(arg0) {
-  const width = arg1(dependencyMap[8]).getWindowDimensions().width;
+  const width = require(1450) /* useWindowDimensions */.getWindowDimensions().width;
   let result = width;
   if ("one-column" !== arg0) {
     result = width / 2;
   }
   return result;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ Image: closure_6, View: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[3]);
-({ GuildFeatures: closure_10, JoinGuildSources: closure_11, AnalyticEvents: closure_12 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[7]));
-const tmp4 = arg1(dependencyMap[7]);
-let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
+({ Image: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ GuildFeatures: closure_10, JoinGuildSources: closure_11, AnalyticEvents: closure_12 } = ME);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+let closure_15 = _createForOfIteratorHelperLoose.createStyles((variant) => {
   let num = 10;
   if ("one-column" === variant) {
     num = 12;
   }
   const tmp2 = getGuildIconSize(variant);
   let obj = {};
-  obj = { 9223372036854775807: true, -9223372036854775808: true, 0: true, 9223372036854775807: true, 0: true, 0: true, backgroundColor: importDefault(dependencyMap[10]).colors.BG_SURFACE_RAISED, borderColor: importDefault(dependencyMap[10]).colors.BORDER_MUTED, borderRadius: importDefault(dependencyMap[10]).radii.lg, marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
+  obj = { backgroundColor: importDefault(689).colors.BG_SURFACE_RAISED, borderColor: importDefault(689).colors.BORDER_MUTED, borderWidth: 1, borderRadius: importDefault(689).radii.lg, overflow: "hidden", flex: 1, marginBottom: importDefault(689).space.PX_16 };
   obj.card = obj;
   obj = {};
   let num2 = 80;
@@ -55,75 +65,69 @@ let closure_15 = arg1(dependencyMap[9]).createStyles((variant) => {
     num2 = 88;
   }
   obj.height = num2;
-  obj.backgroundColor = importDefault(dependencyMap[10]).colors.CARD_BACKGROUND_DEFAULT;
+  obj.backgroundColor = importDefault(689).colors.CARD_BACKGROUND_DEFAULT;
   obj.bannerContainer = obj;
   obj.banner = { flex: 1 };
-  const obj1 = { "Null": 0.129, "Null": 1 };
+  const obj1 = { flex: 1, justifyContent: "space-between" };
   let num3 = 28;
   if ("one-column" === variant) {
     num3 = 32;
   }
   obj1.marginTop = num3;
-  obj1.marginBottom = importDefault(dependencyMap[10]).space.PX_12;
-  obj1.marginHorizontal = importDefault(dependencyMap[10]).space.PX_12;
+  obj1.marginBottom = importDefault(689).space.PX_12;
+  obj1.marginHorizontal = importDefault(689).space.PX_12;
   obj.content = obj1;
-  obj.guildIconContainer = { top: getGuildIconTop(variant) };
-  const obj2 = { top: getGuildIconTop(variant) };
-  obj.guildIcon = { width: tmp2, height: tmp2, borderRadius: importDefault(dependencyMap[10]).radii.lg };
-  const obj4 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", marginBottom: importDefault(dependencyMap[10]).space.PX_4 };
+  const obj2 = { position: "absolute", top: getGuildIconTop(variant), left: 16 };
+  obj.guildIconContainer = obj2;
+  obj.guildIcon = { width: tmp2, height: tmp2, borderRadius: importDefault(689).radii.lg };
+  const obj4 = { flexDirection: "row", alignItems: "center", marginBottom: importDefault(689).space.PX_4 };
   obj.guildNameRow = obj4;
   const obj5 = {};
-  const space = importDefault(dependencyMap[10]).space;
+  const space = importDefault(689).space;
   obj5.marginRight = "one-column" === variant ? space.PX_8 : space.PX_4;
   obj.guildBadge = obj5;
-  obj.guildName = { backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001288835093747774, flexDirection: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005740555781694437 };
+  obj.guildName = { flex: 1, minWidth: 0 };
   const obj6 = {};
-  const space2 = importDefault(dependencyMap[10]).space;
+  const space2 = importDefault(689).space;
   obj6.marginBottom = "one-column" === variant ? space2.PX_8 : space2.PX_4;
   obj.description = obj6;
-  const obj3 = { width: tmp2, height: tmp2, borderRadius: importDefault(dependencyMap[10]).radii.lg };
-  obj.memberCounts = { flexDirection: "row", gap: importDefault(dependencyMap[10]).space.PX_16 };
-  const obj8 = { <string:3327959291>: 231584265132739040000000000000000000000000000000000000000000000000000000000000, <string:657871202>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000858413609814, <string:1666624354>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000169759663475, <string:1392078417>: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004342148194607104, <string:3391647669>: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015006194110467344 };
-  const space3 = importDefault(dependencyMap[10]).space;
+  const obj3 = { width: tmp2, height: tmp2, borderRadius: importDefault(689).radii.lg };
+  obj.memberCounts = { flexDirection: "row", gap: importDefault(689).space.PX_16 };
+  const obj8 = { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: null, gap: 6 };
+  const space3 = importDefault(689).space;
   obj8.marginBottom = "one-column" === variant ? space3.PX_12 : space3.PX_8;
   obj.memberCount = obj8;
   const obj9 = { width: num, height: num };
   const result = num / 2;
   obj9.borderRadius = result;
-  obj9.backgroundColor = importDefault(dependencyMap[10]).colors.TEXT_STATUS_OFFLINE;
+  obj9.backgroundColor = importDefault(689).colors.TEXT_STATUS_OFFLINE;
   obj.dot = obj9;
-  const obj10 = { width: num, height: num, borderRadius: result, backgroundColor: importDefault(dependencyMap[10]).colors.TEXT_STATUS_ONLINE };
+  const obj10 = { width: num, height: num, borderRadius: result, backgroundColor: importDefault(689).colors.TEXT_STATUS_ONLINE };
   obj.dotOnline = obj10;
-  const obj11 = { convertShortcutToName: "Array", hasUnreadMessages: "parseSemver", CreatorMonetizationRestrictions: "Array", width: 2 * importDefault(dependencyMap[10]).radii.lg, height: 2 * importDefault(dependencyMap[10]).radii.lg, borderRadius: importDefault(dependencyMap[10]).radii.lg, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
+  const obj11 = { position: "absolute", top: 8, right: 8, width: 2 * importDefault(689).radii.lg, height: 2 * importDefault(689).radii.lg, borderRadius: importDefault(689).radii.lg, backgroundColor: importDefault(689).colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
   obj.dismissButton = obj11;
   return obj;
 });
-const obj = arg1(dependencyMap[9]);
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/game_community_upsell/native/GameCommunityMultiGuildUpsellCard.tsx");
+let result = require("result").fileFinishedImporting("modules/game_community_upsell/native/GameCommunityMultiGuildUpsellCard.tsx");
 
 export default function GameCommunityMultiGuildUpsellCard(guild) {
   guild = guild.guild;
-  const arg1 = guild;
   const gameId = guild.gameId;
-  const importDefault = gameId;
   const variant = guild.variant;
-  const dependencyMap = variant;
   const onDismiss = guild.onDismiss;
-  let callback = onDismiss;
-  let closure_9;
-  const tmp = callback5(variant);
-  const tmp2 = callback2(React.useState(false), 2);
-  const first = tmp2[0];
-  const callback2 = first;
-  const React = tmp2[1];
-  let obj = arg1(dependencyMap[11]);
-  const items = [closure_8];
+  let c9;
+  let tmp = callback3(variant);
+  const tmp2 = first(React.useState(false), 2);
+  first = tmp2[0];
+  React = tmp2[1];
+  let obj = guild(variant[11]);
+  let items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => tmp6.useReducedMotion);
-  let obj1 = arg1(dependencyMap[11]);
-  const items1 = [closure_9];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => null != tmp8.getGuild(guild.id));
+  let obj1 = guild(variant[11]);
+  const items1 = [c9];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => null != _undefined.getGuild(guild.id));
   const tmp6 = getGuildIconSize(variant);
-  closure_8 = tmp6;
+  _isNativeReflectConstruct = tmp6;
   const items2 = [, , , ];
   ({ id: arr3[0], icon: arr3[1] } = guild);
   items2[2] = stateFromStores;
@@ -136,14 +140,14 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
       tmp = icon;
     }
     let obj = gameId(variant[12]);
-    obj = { id: guild.id, icon: tmp, canAnimate: !stateFromStores, size: tmp6 * guild(variant[13]).getDevicePixelRatio() };
+    obj = { id: guild.id, icon: tmp, canAnimate: !stateFromStores, size: _isNativeReflectConstruct * guild(variant[13]).getDevicePixelRatio() };
     return obj.getGuildIconSource(obj);
   }, items2);
   if (tmp8) {
     const features = guild.features;
     tmp8 = true === features.has(constants.ANIMATED_BANNER);
   }
-  closure_9 = tmp8;
+  c9 = tmp8;
   const items3 = [, , , , ];
   ({ id: arr4[0], splash: arr4[1], banner: arr4[2] } = guild);
   items3[3] = tmp8;
@@ -151,12 +155,11 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   const fn = () => {
     let banner;
     let splash;
-    ({ splash, banner } = guild);
-    const guild = banner;
+    ({ splash, banner } = banner);
     if (null != splash) {
-      let obj = { id: guild.id, splash };
+      let obj = { id: banner.id, splash };
       const obj2 = gameId(variant[12]);
-      const tmp10 = callback2(variant);
+      const tmp10 = outer1_18(variant);
       obj.size = tmp10 * guild(variant[13]).getDevicePixelRatio();
       let guildSplashSource = obj2.getGuildSplashSource(obj);
       const obj4 = guild(variant[13]);
@@ -164,8 +167,8 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
       guildSplashSource = null;
       if (null != banner) {
         obj = gameId(variant[12]);
-        guildSplashSource = obj.getAnimatableSourceWithFallback(tmp8, (hasItem) => {
-          let obj = callback(closure_2[12]);
+        guildSplashSource = obj.getAnimatableSourceWithFallback(c9, (hasItem) => {
+          let obj = gameId(variant[12]);
           obj = { id: banner.id, banner };
           return obj.getGuildBannerSource(obj, hasItem);
         });
@@ -177,7 +180,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   // CreateGeneratorClosureLongIndex (0x67)
   const items4 = [guild.id, stateFromStores1, first, gameId, variant];
   const items5 = [guild.id];
-  callback = React.useCallback(callback(fn), items4);
+  const callback = React.useCallback(onDismiss(fn), items4);
   const items6 = [guild.id, gameId, onDismiss];
   const callback1 = React.useCallback(() => {
     guild(variant[16]).transitionToGuild(guild.id);
@@ -191,7 +194,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
       obj.label = intl.string(guild(variant[17]).t.XW1okC);
       obj.variant = "destructive";
       obj.action = function action() {
-        return callback(id.id, closure_1);
+        return outer1_3(outer1_0.id, outer1_1);
       };
       items = [obj];
     }
@@ -211,38 +214,38 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   obj = { style: tmp.card };
   obj = { style: tmp.bannerContainer };
   obj1 = { style: tmp.banner };
-  const obj2 = { shape: arg1(dependencyMap[18]).CutoutShape.RoundedRect, x: 12, y: getGuildIconTop(variant) - 4 };
+  let obj2 = { shape: guild(variant[18]).CutoutShape.RoundedRect, x: 12, y: getGuildIconTop(variant) - 4 };
   const sum = tmp6 + 8;
   obj2.width = sum;
   obj2.height = sum;
-  obj2.cornerRadius = importDefault(dependencyMap[10]).radii.lg + 4;
+  obj2.cornerRadius = gameId(variant[10]).radii.lg + 4;
   const items7 = [obj2];
   obj1.cutouts = items7;
   if (null != memo1) {
     const obj3 = { style: tmp.banner, source: memo1, resizeMode: "cover" };
-    let tmp20 = callback3(stateFromStores, obj3);
+    let tmp20 = callback(stateFromStores, obj3);
   } else {
-    const obj4 = { style: tmp.banner };
-    tmp20 = callback3(stateFromStores1, obj4);
+    let obj4 = { style: tmp.banner };
+    tmp20 = callback(stateFromStores1, obj4);
   }
   obj1.children = tmp20;
-  obj.children = callback3(importDefault(dependencyMap[18]), obj1);
-  const items8 = [callback3(stateFromStores1, obj), , , ];
-  const tmp13 = callback4;
-  const tmp16 = importDefault(dependencyMap[18]);
-  items8[1] = callback3(stateFromStores1, { style: tmp.guildIconContainer, children: callback3(stateFromStores, obj6) });
+  obj.children = callback(gameId(variant[18]), obj1);
+  const items8 = [callback(stateFromStores1, obj), , , ];
+  const tmp13 = callback2;
+  const tmp16 = gameId(variant[18]);
+  items8[1] = callback(stateFromStores1, { style: tmp.guildIconContainer, children: callback(stateFromStores, obj6) });
   const obj7 = { style: tmp.content };
   const obj8 = {};
   const obj9 = { style: tmp.guildNameRow };
   const obj10 = { guild };
   let tmp27 = "one-column" === variant;
-  const obj5 = { style: tmp.guildIconContainer, children: callback3(stateFromStores, obj6) };
-  const tmp23 = callback3;
-  const Sizes = arg1(dependencyMap[20]).Icon.Sizes;
+  const obj5 = { style: tmp.guildIconContainer, children: callback(stateFromStores, obj6) };
+  const tmp23 = callback;
+  const Sizes = guild(variant[20]).Icon.Sizes;
   obj10.size = tmp27 ? Sizes.REFRESH_SMALL_16 : Sizes.EXTRA_SMALL;
   obj10.style = tmp.guildBadge;
-  const items9 = [tmp23(importDefault(dependencyMap[19]), obj10), ];
-  const obj11 = {};
+  const items9 = [tmp23(gameId(variant[19]), obj10), ];
+  const obj11 = { variant: null, color: "mobile-text-heading-primary", accessibilityRole: "header", style: null, lineClamp: 1 };
   let str2 = "heading-sm/bold";
   if (tmp27) {
     str2 = "heading-md/bold";
@@ -250,9 +253,9 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   obj11.variant = str2;
   obj11.style = tmp.guildName;
   obj11.children = guild.name;
-  items9[1] = callback3(arg1(dependencyMap[21]).Text, obj11);
+  items9[1] = callback(guild(variant[21]).Text, obj11);
   obj9.children = items9;
-  const items10 = [callback4(stateFromStores1, obj9), ];
+  const items10 = [callback2(stateFromStores1, obj9), ];
   let tmp30Result = null != description && description.length > 0;
   if (tmp30Result) {
     const obj12 = {};
@@ -264,26 +267,26 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
     obj12.style = tmp.description;
     obj12.lineClamp = 3;
     obj12.children = description;
-    tmp30Result = callback3(arg1(dependencyMap[21]).Text, obj12);
-    const tmp30 = callback3;
+    tmp30Result = callback(guild(variant[21]).Text, obj12);
+    const tmp30 = callback;
   }
   items10[1] = tmp30Result;
   obj8.children = items10;
-  const items11 = [callback4(stateFromStores1, obj8), ];
+  const items11 = [callback2(stateFromStores1, obj8), ];
   const obj13 = {};
   const obj14 = { style: tmp.memberCounts };
   let tmp35 = num > 0;
   if (tmp35) {
     const obj15 = { style: tmp.memberCount };
     const obj16 = { style: tmp.dotOnline };
-    const items12 = [callback3(stateFromStores1, obj16), ];
-    const obj17 = { cachedAt: null, edpbxy: null };
-    const intl = arg1(dependencyMap[17]).intl;
+    const items12 = [callback(stateFromStores1, obj16), ];
+    const obj17 = { variant: "text-xs/medium", color: "text-subtle" };
+    let intl = guild(variant[17]).intl;
     const obj18 = { membersOnline: num };
-    obj17.children = intl.format(arg1(dependencyMap[17]).t.LC+S+m, obj18);
-    items12[1] = callback3(arg1(dependencyMap[21]).Text, obj17);
+    obj17.children = intl.format(guild(variant[17]).t["LC+S+m"], obj18);
+    items12[1] = callback(guild(variant[21]).Text, obj17);
     obj15.children = items12;
-    tmp35 = callback4(stateFromStores1, obj15);
+    tmp35 = callback2(stateFromStores1, obj15);
   }
   const items13 = [tmp35, ];
   if (tmp27) {
@@ -292,36 +295,36 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
   if (tmp27) {
     const obj19 = { style: tmp.memberCount };
     const obj20 = { style: tmp.dot };
-    const items14 = [callback3(stateFromStores1, obj20), ];
-    const obj21 = { cachedAt: null, edpbxy: null };
-    const intl2 = arg1(dependencyMap[17]).intl;
+    const items14 = [callback(stateFromStores1, obj20), ];
+    const obj21 = { variant: "text-xs/medium", color: "text-subtle" };
+    const intl2 = guild(variant[17]).intl;
     const obj22 = { count: num2 };
-    obj21.children = intl2.format(arg1(dependencyMap[17]).t.zRl6XR, obj22);
-    items14[1] = callback3(arg1(dependencyMap[21]).Text, obj21);
+    obj21.children = intl2.format(guild(variant[17]).t.zRl6XR, obj22);
+    items14[1] = callback(guild(variant[21]).Text, obj21);
     obj19.children = items14;
-    tmp27 = callback4(stateFromStores1, obj19);
+    tmp27 = callback2(stateFromStores1, obj19);
   }
   items13[1] = tmp27;
   obj14.children = items13;
-  const items15 = [callback4(stateFromStores1, obj14), ];
+  const items15 = [callback2(stateFromStores1, obj14), ];
   if (stateFromStores1) {
-    const obj23 = { <string:3562165089>: "<string:1275069015>", <string:1383310252>: "<string:2617246295>", <string:3767060185>: "<string:1375732179>", <string:74212417>: "<string:1306077004>", <string:2982962944>: "<string:2034307329>" };
-    const intl4 = arg1(dependencyMap[17]).intl;
-    obj23.text = intl4.string(arg1(dependencyMap[17]).t.KLOhbO);
+    const obj23 = { variant: "active", size: "sm", text: null, onPress: null, grow: true };
+    const intl4 = guild(variant[17]).intl;
+    obj23.text = intl4.string(guild(variant[17]).t.KLOhbO);
     obj23.onPress = callback1;
     let obj24 = obj23;
   } else {
-    obj24 = { loading: first };
-    const intl3 = arg1(dependencyMap[17]).intl;
-    obj24.text = intl3.string(arg1(dependencyMap[17]).t.VJlc0S);
+    obj24 = { variant: "primary", size: "sm", loading: first };
+    const intl3 = guild(variant[17]).intl;
+    obj24.text = intl3.string(guild(variant[17]).t.VJlc0S);
     obj24.onPress = callback;
     obj24.grow = true;
   }
-  items15[1] = callback3(arg1(dependencyMap[22]).Button, obj24);
+  items15[1] = callback(guild(variant[22]).Button, obj24);
   obj13.children = items15;
-  items11[1] = callback4(stateFromStores1, obj13);
+  items11[1] = callback2(stateFromStores1, obj13);
   obj7.children = items11;
-  items8[2] = callback4(stateFromStores1, obj7);
+  items8[2] = callback2(stateFromStores1, obj7);
   let tmp51 = memo2.length > 0;
   if (tmp51) {
     const obj25 = { style: tmp.dismissButton };
@@ -333,16 +336,16 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           const merged = Object.assign(ref, obj);
           obj = { ref: ref.ref };
           const merged1 = Object.assign(merged);
-          obj["icon"] = callback(guild(variant[25]).MoreHorizontalIcon, { size: "sm" });
+          obj["icon"] = outer1_13(guild(variant[25]).MoreHorizontalIcon, { size: "sm" });
           obj["size"] = "sm";
           obj["variant"] = "secondary-overlay";
           const intl = guild(variant[17]).intl;
           obj["accessibilityLabel"] = intl.string(guild(variant[17]).t.ogxXGq);
-          return callback(guild(variant[24]).IconButton, obj);
+          return outer1_13(guild(variant[24]).IconButton, obj);
         }
     };
-    obj25.children = callback3(arg1(dependencyMap[23]).ContextMenu, obj26);
-    tmp51 = callback3(stateFromStores1, obj25);
+    obj25.children = callback(guild(variant[23]).ContextMenu, obj26);
+    tmp51 = callback(stateFromStores1, obj25);
   }
   items8[3] = tmp51;
   obj.children = items8;

@@ -1,5 +1,5 @@
 // Module ID: 823
-// Function ID: 9211
+// Function ID: 9212
 // Name: merge
 // Dependencies: []
 
@@ -30,9 +30,9 @@ function merge(arg0, obj) {
           if (!hasOwnProperty.call(arg1, key10024)) {
             continue;
           } else {
-            let tmp5 = closure_0;
-            merged[key10024] = closure_0(merged[key10024], arg1[key10024], num - 1);
-            // continue
+            let tmp5 = merge;
+            merged[key10024] = merge(merged[key10024], arg1[key10024], num - 1);
+            continue;
           }
           continue;
         }

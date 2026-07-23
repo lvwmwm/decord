@@ -1,27 +1,29 @@
-// Module ID: 16418
-// Function ID: 126802
+// Module ID: 16535
+// Function ID: 128976
 // Name: AVErrorStreamBadNetworkQualityDefinition
-// Dependencies: []
+// Dependencies: [4216, 653, 8857, 16528, 1327, 2]
 
-// Module 16418 (AVErrorStreamBadNetworkQualityDefinition)
-let closure_2 = importDefault(dependencyMap[0]);
-const RTCConnectionQuality = arg1(dependencyMap[1]).RTCConnectionQuality;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamBadNetworkQuality.tsx");
+// Module 16535 (AVErrorStreamBadNetworkQualityDefinition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { RTCConnectionQuality } from "ME";
+
+const require = arg1;
+const result = require("validateUniqueErrorCodes").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamBadNetworkQuality.tsx");
 
 export const AVErrorStreamBadNetworkQualityDefinition = {
   getActiveErrors() {
-    const allActiveStreamKeys = allActiveStreamKeys.getAllActiveStreamKeys();
+    allActiveStreamKeys = allActiveStreamKeys.getAllActiveStreamKeys();
     const mapped = allActiveStreamKeys.map((streamKey) => {
       let tmp = null;
-      if (quality.getQuality(streamKey) === constants.BAD) {
-        const obj = { type: callback(closure_1[2]).AVError.STREAM_BAD_NETWORK_QUALITY };
-        const merged = Object.assign(callback(closure_1[3]).getStreamErrorContext(streamKey));
+      if (outer1_2.getQuality(streamKey) === outer1_3.BAD) {
+        const obj = { type: outer1_0(outer1_1[2]).AVError.STREAM_BAD_NETWORK_QUALITY };
+        const merged = Object.assign(outer1_0(outer1_1[3]).getStreamErrorContext(streamKey));
         tmp = obj;
-        const obj2 = callback(closure_1[3]);
+        const obj2 = outer1_0(outer1_1[3]);
       }
       return tmp;
     });
-    return mapped.filter(arg1(dependencyMap[4]).isNotNullish);
+    return mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
   },
   makeErrorContextKey(streamKey) {
     return "" + streamKey.streamKey + ":" + streamKey.mediaSessionId;

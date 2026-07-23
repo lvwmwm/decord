@@ -1,21 +1,23 @@
-// Module ID: 10839
-// Function ID: 84125
+// Module ID: 10849
+// Function ID: 84174
 // Name: useChatWidth
-// Dependencies: []
+// Dependencies: [31, 3984, 3986, 10850, 10851, 2]
 // Exports: default, getChatWidth
 
-// Module 10839 (useChatWidth)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/chat/native/useChatWidth.tsx");
+// Module 10849 (useChatWidth)
+import result from "result";
+
+const require = arg1;
+const result = require("useBaseAppContainerDimensions").fileFinishedImporting("modules/chat/native/useChatWidth.tsx");
 
 export default function useChatWidth(arg0) {
-  let context = React.useContext(importDefault(dependencyMap[4]));
-  const width = importDefault(dependencyMap[2])().width;
-  arg1(dependencyMap[3]);
+  let context = React.useContext(importDefault(10851));
+  const width = importDefault(3986)().width;
+  require(10850) /* computeTabletDrawerWidth */;
   if (null == context) {
     if (null == arg0) {
       let diff = width;
-      if (importDefault(dependencyMap[1])().isChatLockedOpen) {
+      if (importDefault(3984)().isChatLockedOpen) {
         diff = width - tmp3;
       }
       let tmp4 = diff;
@@ -27,13 +29,13 @@ export default function useChatWidth(arg0) {
   return context;
 };
 export const getChatWidth = function getChatWidth(arg0) {
-  const obj = arg1(dependencyMap[1]);
-  const width = arg1(dependencyMap[2]).getBaseAppContainerDimensions().width;
+  const obj = require(3984) /* useChatLayout */;
+  const width = require(3986) /* useBaseAppContainerDimensions */.getBaseAppContainerDimensions().width;
   if (null == arg0) {
     let diff = width;
     if (obj.getChatLayout().isChatLockedOpen) {
-      diff = width - arg1(dependencyMap[3]).getDrawerWidth();
-      const obj3 = arg1(dependencyMap[3]);
+      diff = width - require(10850) /* computeTabletDrawerWidth */.getDrawerWidth();
+      const obj3 = require(10850) /* computeTabletDrawerWidth */;
     }
     let tmp = diff;
   } else {

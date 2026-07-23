@@ -1,29 +1,31 @@
-// Module ID: 14802
-// Function ID: 111532
+// Module ID: 14918
+// Function ID: 113700
 // Name: PX_12
-// Dependencies: []
+// Dependencies: [31, 27, 33, 689, 4130, 2]
 
-// Module 14802 (PX_12)
+// Module 14918 (PX_12)
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
 let StyleSheet;
-const importAllResult = importAll(dependencyMap[0]);
-({ StyleSheet, View: closure_0 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const PX_12 = importDefault(dependencyMap[3]).space.PX_12;
-const tmp2 = arg1(dependencyMap[1]);
+let closure_0;
+({ StyleSheet, View: closure_0 } = get_ActivityIndicator);
+const PX_12 = require("_createForOfIteratorHelperLoose").space.PX_12;
 let obj = { container: { height: PX_12 } };
-obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BORDER_SUBTLE, height: StyleSheet.hairlineWidth };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, height: StyleSheet.hairlineWidth };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj["top"] = undefined;
 obj.separator = obj;
-let closure_2 = arg1(dependencyMap[4]).createStyles(obj);
-const obj2 = arg1(dependencyMap[4]);
-const memoResult = importAllResult.memo(function MessagesItemSeperator() {
+let closure_2 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function MessagesItemSeperator() {
   const tmp = callback();
-  let obj = { style: tmp.container, collapsable: false, children: <closure_0 {...obj} /> };
+  obj = { style: tmp.container, collapsable: false, children: <closure_0 {...obj} /> };
   obj = { style: tmp.separator };
-  return <closure_0 {...obj} />;
+  return <closure_0 style={tmp.separator} />;
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSeparator.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSeparator.tsx");
 
 export default memoResult;
 export const MESSAGES_ITEM_SEPERATOR_HEIGHT = PX_12;

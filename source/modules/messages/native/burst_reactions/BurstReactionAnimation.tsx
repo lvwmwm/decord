@@ -1,16 +1,18 @@
-// Module ID: 7063
-// Function ID: 56476
+// Module ID: 7068
+// Function ID: 56510
 // Name: BurstReactionAnimation
-// Dependencies: []
+// Dependencies: [31, 4122, 33, 4130, 7026, 566, 7069, 5453, 2]
 // Exports: default
 
-// Module 7063 (BurstReactionAnimation)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles({ content: { width: "100%" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimation.tsx");
+// Module 7068 (BurstReactionAnimation)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ content: { width: "100%" } });
+const result = require("jsxProd").fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimation.tsx");
 
 export default function BurstReactionAnimation(arg0) {
   let channelId;
@@ -24,20 +26,20 @@ export default function BurstReactionAnimation(arg0) {
   if (withFadeOut === undefined) {
     withFadeOut = true;
   }
-  let obj = { flexDirection: "Text", gap: "resizeMode", alignItems: "from", paddingHorizontal: "Array", paddingVertical: "isArray", borderRadius: "braintreemasterpasslanding" };
+  let obj = { channelId: 0, messageId: 0, emoji: 0, isFullscreen: 0, onComplete: 0, withFadeOut: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
   const tmp3 = callback();
-  const burstReactionAnimationSource = arg1(dependencyMap[4]).useBurstReactionAnimationSource({ emoji, messageId, channelId, isFullscreen });
-  arg1(dependencyMap[5]);
-  [][0] = closure_3;
+  const burstReactionAnimationSource = require(7026) /* _generateAnimationSource */.useBurstReactionAnimationSource({ emoji, messageId, channelId, isFullscreen });
+  require(566) /* initialize */;
+  [][0] = _isNativeReflectConstruct;
   if (null == burstReactionAnimationSource) {
     return null;
   } else {
     if (withFadeOut) {
-      let tmp7 = tmp18[6];
+      let tmp7 = 7069;
     } else {
-      tmp7 = tmp18[7];
+      tmp7 = 5453;
     }
     obj = {};
     if (withFadeOut) {
@@ -56,7 +58,7 @@ export default function BurstReactionAnimation(arg0) {
     const merged1 = Object.assign(merged);
     const merged2 = Object.assign(tmp9);
     obj["source"] = burstReactionAnimationSource;
-    return jsx(importDefault(tmp7), obj);
+    return jsx(importDefault(tmp7), { style: tmp3.content, loop: false });
   }
-  const obj2 = arg1(dependencyMap[4]);
+  const obj2 = require(7026) /* _generateAnimationSource */;
 };

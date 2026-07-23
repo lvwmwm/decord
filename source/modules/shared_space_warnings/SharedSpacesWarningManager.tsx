@@ -1,9 +1,27 @@
-// Module ID: 12544
-// Function ID: 96381
+// Module ID: 12658
+// Function ID: 98537
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1348, 4202, 3767, 12659, 12657, 664, 12660, 668, 12664, 5078, 2]
 
-// Module 12544 (_isNativeReflectConstruct)
+// Module 12658 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import set from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import useSharedSpacesWarningStore from "useSharedSpacesWarningStore";
+import closure_15 from "_isNativeReflectConstruct";
+import tmp3 from "AutomaticLifecycleManager";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -16,13 +34,13 @@ function _isNativeReflectConstruct() {
 function handleChannelSelect(channelId) {
   channelId = channelId.channelId;
   if (null != channelId) {
-    const channel = channel.getChannel(channelId);
+    channel = channel.getChannel(channelId);
     if (null != channel) {
       if (channel.isGroupDM()) {
         const recipients = channel.recipients;
-        const found = recipients.filter((arg0) => closure_9.isBlocked(arg0));
+        const found = recipients.filter((arg0) => outer1_9.isBlocked(arg0));
         const recipients1 = channel.recipients;
-        const found1 = recipients1.filter((arg0) => closure_9.isIgnored(arg0));
+        const found1 = recipients1.filter((arg0) => outer1_9.isIgnored(arg0));
         if (tmp) {
           let blockedUserWarningDismissed = channel.blockedUserWarningDismissed;
           if (!blockedUserWarningDismissed) {
@@ -35,19 +53,19 @@ function handleChannelSelect(channelId) {
             blockedUserWarningDismissed = num2 > Date.now() - closure_16;
           }
           if (!blockedUserWarningDismissed) {
-            let obj = arg1(dependencyMap[11]);
+            let obj = require(12660) /* showGdmBlockedUserModal */;
             obj = { channelId, blockedUserIds: found, ignoredUserIds: found1 };
             const result = obj.showGdmBlockedUserModal(obj);
           }
         }
-        const tmp = found.length > 0 || found1.length > 0;
+        tmp = found.length > 0 || found1.length > 0;
       }
     }
   }
 }
 function handleAppStateChanged(state) {
-  if (state.state === arg1(dependencyMap[12]).AppStates.ACTIVE) {
-    const channelId = channelId.getChannelId();
+  if (state.state === require(668) /* keys */.AppStates.ACTIVE) {
+    channelId = channelId.getChannelId();
     if (null != channelId) {
       const blockedUsersForVoiceChannel = authStore.getBlockedUsersForVoiceChannel(channelId);
       const ignoredUsersForVoiceChannel = authStore.getIgnoredUsersForVoiceChannel(channelId);
@@ -60,8 +78,8 @@ function handleAppStateChanged(state) {
           if (!voiceBlockedWarningInCooldownForUsers(set)) {
             const items1 = [];
             HermesBuiltin.arraySpread(ignoredUsersForVoiceChannel, HermesBuiltin.arraySpread(blockedUsersForVoiceChannel, 0));
-            const result = arg1(dependencyMap[13]).showVoiceChannelBlockedUserWarning(channelId, items1[0]);
-            const obj = arg1(dependencyMap[13]);
+            const result = require(12664) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, items1[0]);
+            const obj = require(12664) /* showVoiceChannelBlockedUserWarning */;
           }
         }
       }
@@ -83,7 +101,7 @@ function voiceBlockedWarningInCooldownForUsers(set) {
   let everyResult = isGlobalDismissTimestampInCooldown();
   if (!everyResult) {
     const _Array = Array;
-    everyResult = Array.from(set).every((arg0) => callback(arg0, true));
+    everyResult = Array.from(set).every((arg0) => outer1_24(arg0, true));
     const arr = Array.from(set);
   }
   return everyResult;
@@ -108,65 +126,12 @@ function userBlockedWarningInCooldown(arg0) {
   }
   return tmp2;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-({ getChannelDismissTimestamp: closure_10, getUserDismissTimestamp: closure_11, getGlobalDismissTimestamp: closure_12, isBlockedWarningQueued: closure_13, dequeueBlockWarning: closure_14 } = arg1(dependencyMap[8]));
-let closure_15 = importDefault(dependencyMap[9]);
-let closure_16 = 3 * importDefault(dependencyMap[10]).Millis.DAY;
-let closure_17 = 2 * importDefault(dependencyMap[10]).Millis.DAY;
-const HOUR = importDefault(dependencyMap[10]).Millis.HOUR;
-let tmp3 = (arg0) => {
-  class SharedSpacesWarningManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_2(this, SharedSpacesWarningManager);
-      items1 = [...items];
-      obj = closure_5(SharedSpacesWarningManager);
-      tmp2 = closure_4;
-      if (closure_19()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = { CHANNEL_SELECT: closure_20, APP_STATE_UPDATE: closure_21 };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const arg1 = SharedSpacesWarningManager;
-  callback2(SharedSpacesWarningManager, arg0);
-  const items = [
-    {
-      key: "handleBlockedOrIgnoredUserVoiceChannelJoin",
-      value(channelId, blockedUserId) {
-        channelId = channelId.getChannelId();
-        if (channelId === channelId) {
-          if (null != channel.getChannel(channelId)) {
-            if (!callback4(blockedUserId)) {
-              const result = SharedSpacesWarningManager(closure_1[13]).showVoiceChannelBlockedUserWarning(channelId, blockedUserId);
-              const obj = SharedSpacesWarningManager(closure_1[13]);
-            }
-          }
-        }
-      }
-    }
-  ];
-  return callback(SharedSpacesWarningManager, items);
-}(importDefault(dependencyMap[14]));
+({ getChannelDismissTimestamp: closure_10, getUserDismissTimestamp: closure_11, getGlobalDismissTimestamp: closure_12, isBlockedWarningQueued: closure_13, dequeueBlockWarning: closure_14 } = useSharedSpacesWarningStore);
+let closure_16 = 3 * require("set").Millis.DAY;
+let closure_17 = 2 * require("set").Millis.DAY;
+const HOUR = require("set").Millis.HOUR;
 tmp3 = new tmp3();
-const tmp2 = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/shared_space_warnings/SharedSpacesWarningManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/shared_space_warnings/SharedSpacesWarningManager.tsx");
 
 export default tmp3;
 export { voiceBlockedWarningInCooldownForUsers };

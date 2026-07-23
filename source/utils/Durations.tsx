@@ -1,9 +1,10 @@
 // Module ID: 664
 // Function ID: 8032
-// Dependencies: []
+// Name: set
+// Dependencies: [2]
 
-// Module 664
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/Durations.tsx");
+// Module 664 (set)
+const obj = { Millis: Object.freeze({ HALF_SECOND: 500, SECOND: 1000, MINUTE: 60000, HOUR: 3600000, DAY: 86400000, WEEK: 604800000, DAYS_30: 2592000000 }), Seconds: Object.freeze({ SECOND: 1, MINUTE: 60, HOUR: 3600, DAY: 86400, WEEK: 604800, DAYS_30: 2592000 }), Minutes: Object.freeze({ MINUTE: 1, HOUR: 60, DAY: 1440, WEEK: 10080, DAYS_30: 43200 }) };
+const result = require("set").fileFinishedImporting("utils/Durations.tsx");
 
-export default { Millis: Object.freeze({ ./is-edge: true, searchRecentMembers: true, abandonPermissions: null, ind: null, Text: null, T: true, Reflect: true }), Seconds: Object.freeze({ "Bool(true)": "int32", "Bool(true)": "useValidOrderedFilterTokens", "Bool(true)": "JPEGInterchangeFormatLength", -9223372036854775808: "OKzaN3", -9223372036854775808: "%PromisePrototype%", -9223372036854775808: "deepLinkToSubscriptionsAmazon" }), Minutes: Object.freeze({}) };
+export default obj;

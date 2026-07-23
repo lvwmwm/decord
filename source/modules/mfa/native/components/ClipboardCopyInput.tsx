@@ -1,19 +1,21 @@
-// Module ID: 14534
-// Function ID: 109433
+// Module ID: 14648
+// Function ID: 111593
 // Name: ClipboardCopyInput
-// Dependencies: []
+// Dependencies: [5, 31, 27, 6651, 653, 33, 4130, 566, 8391, 5584, 5492, 7512, 2]
 // Exports: default
 
-// Module 14534 (ClipboardCopyInput)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-const AppStates = arg1(dependencyMap[4]).AppStates;
-const jsx = arg1(dependencyMap[5]).jsx;
-let closure_9 = arg1(dependencyMap[6]).createStyles({ inputContainer: {} });
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/mfa/native/components/ClipboardCopyInput.tsx");
+// Module 14648 (ClipboardCopyInput)
+import jsxProd from "jsxProd";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AppStates } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ inputContainer: { flexDirection: "column", alignSelf: "stretch" } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/mfa/native/components/ClipboardCopyInput.tsx");
 
 export default function ClipboardCopyInput(arg0) {
   let autoComplete;
@@ -32,35 +34,32 @@ export default function ClipboardCopyInput(arg0) {
   if (autoFocus === undefined) {
     autoFocus = true;
   }
-  let callback;
-  let importDefault;
-  let dependencyMap;
-  let closure_3;
-  callback = React.useRef(null);
-  const ref = React.useRef(null);
-  importDefault = ref;
-  let obj = callback(dependencyMap[7]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => state.getState());
-  dependencyMap = stateFromStores;
-  const tmp = callback2();
-  const tmp5 = importDefault(dependencyMap[8])(isValidClipboardCode);
-  closure_3 = tmp5;
-  const items1 = [stateFromStores, tmp5, importDefault(dependencyMap[8])(onChangeCode)];
+  let _require;
+  let ref;
+  let stateFromStores;
+  let c3;
+  _require = React.useRef(null);
+  ref = React.useRef(null);
+  let obj = _require(stateFromStores[7]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_6.getState());
+  const tmp = callback();
+  const tmp5 = ref(stateFromStores[8])(isValidClipboardCode);
+  c3 = tmp5;
+  const items1 = [stateFromStores, tmp5, ref(stateFromStores[8])(onChangeCode)];
   const effect = React.useEffect(() => {
     function _run() {
       // CreateGeneratorClosureLongIndex (0x67)
       const obj = callback(tmp);
-      const _run = obj;
       return obj(...arguments);
     }
-    if (stateFromStores === constants.ACTIVE) {
-      function run() {
+    if (stateFromStores === outer1_7.ACTIVE) {
+      (function run() {
         return _run(...arguments);
-      }();
+      })();
     }
   }, items1);
-  obj = { style: tmp.inputContainer, children: jsx(callback(dependencyMap[11]).TextInput, obj) };
+  obj = { style: tmp.inputContainer, children: jsx(_require(stateFromStores[11]).TextInput, obj) };
   obj = { ref, autoFocus, autoCorrect: false, autoCapitalize: "none", errorMessage: error, maxLength, onChange: onChangeCode, label, accessibilityLabel: label, placeholder, isClearable: true, textContentType, autoComplete, keyboardType, isDisabled };
-  return <View {...obj} />;
+  return <View ref={ref} autoFocus={autoFocus} autoCorrect={false} autoCapitalize="none" errorMessage={error} maxLength={maxLength} onChange={onChangeCode} label={label} accessibilityLabel={label} placeholder={placeholder} isClearable textContentType={textContentType} autoComplete={autoComplete} keyboardType={keyboardType} isDisabled={isDisabled} />;
 };

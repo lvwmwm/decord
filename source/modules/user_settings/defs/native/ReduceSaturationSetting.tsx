@@ -1,31 +1,33 @@
-// Module ID: 14131
-// Function ID: 107265
+// Module ID: 14245
+// Function ID: 109421
 // Name: slider
-// Dependencies: []
+// Dependencies: [31, 4122, 7662, 33, 13370, 14201, 11254, 10095, 1212, 1273, 2]
 
-// Module 14131 (slider)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[7]);
-obj = {
+// Module 14245 (slider)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[8]).intl;
-    return intl.string(arg1(dependencyMap[8]).t.5PWWCY);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["5PWWCY"]);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.ACCESSIBILITY,
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useTrailing() {
-    const obj = { size: arg1(dependencyMap[9]).BetaSizes.SMALL };
-    return jsx(arg1(dependencyMap[9]).BetaTag, obj);
+    const obj = { size: require(1273) /* Button */.BetaSizes.SMALL };
+    return jsx(require(1273) /* Button */.BetaTag, { size: require(1273) /* Button */.BetaSizes.SMALL });
   },
   useProps: function useSaturationSettingProps() {
     return React.useMemo(() => {
-      const obj = { 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001494846569107, 9223372036854775807: 2986870784.0000224, 9223372036854775807: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002590303707574168, 9223372036854775807: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024971239198298815, 0: 139264.0000896454, value: saturation.saturation, onSlidingComplete: callback(closure_1[4]).setSaturation, startIcon: callback2(callback(closure_1[5]).CircleMinusIcon, {}), endIcon: callback2(callback(closure_1[6]).CirclePlusIcon, {}) };
+      const obj = { value: outer1_3.saturation, onSlidingComplete: outer1_0(outer1_1[4]).setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: outer1_4(outer1_0(outer1_1[5]).CircleMinusIcon, {}), endIcon: outer1_4(outer1_0(outer1_1[6]).CirclePlusIcon, {}) };
       return obj;
     }, []);
   }
 };
-const slider = obj.createSlider(obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/user_settings/defs/native/ReduceSaturationSetting.tsx");
+createToggle = createToggle.createSlider(createToggle);
+const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/ReduceSaturationSetting.tsx");
 
-export default slider;
+export default createToggle;

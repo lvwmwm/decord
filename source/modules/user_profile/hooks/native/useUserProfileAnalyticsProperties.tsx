@@ -1,19 +1,18 @@
-// Module ID: 8489
-// Function ID: 67789
+// Module ID: 8495
+// Function ID: 67826
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: []
+// Dependencies: [31, 8264, 2]
 // Exports: default
 
-// Module 8489 (useUserProfileAnalyticsProperties)
-let closure_0 = importAll(dependencyMap[0]);
-const UserProfileAnalyticsTypes = arg1(dependencyMap[1]).UserProfileAnalyticsTypes;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileAnalyticsProperties.tsx");
+// Module 8495 (useUserProfileAnalyticsProperties)
+import result from "result";
+import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY";
+
+let result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileAnalyticsProperties.tsx");
 
 export default function useUserProfileAnalyticsProperties(userId) {
   userId = userId.userId;
-  const React = userId;
   const user = userId.user;
-  const UserProfileAnalyticsTypes = user;
   const channelId = userId.channelId;
   const guildId = userId.guildId;
   const displayProfile = userId.displayProfile;
@@ -35,7 +34,7 @@ export default function useUserProfileAnalyticsProperties(userId) {
   items[5] = avatarDecoration1;
   items[6] = profileEffectSkuId;
   items[7] = type;
-  memo = React.useMemo(() => {
+  memo = userId.useMemo(() => {
     const obj = {};
     if (null != type) {
       let USER_SHEET = type;
@@ -82,7 +81,7 @@ export default function useUserProfileAnalyticsProperties(userId) {
     return obj;
   }, items);
   const items1 = [displayProfile, guildMember];
-  memo1 = React.useMemo(() => {
+  memo1 = userId.useMemo(() => {
     const obj = {};
     let nick;
     if (null != guildMember) {
@@ -107,7 +106,7 @@ export default function useUserProfileAnalyticsProperties(userId) {
     return obj;
   }, items1);
   const items2 = [guildId, memo, memo1];
-  return React.useMemo(() => {
+  return userId.useMemo(() => {
     if (null == guildId) {
       let obj = memo;
     } else {

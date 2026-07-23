@@ -1,21 +1,25 @@
-// Module ID: 13690
-// Function ID: 103614
+// Module ID: 13804
+// Function ID: 105770
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 7857, 13805, 5618, 13806, 4126, 2]
 // Exports: default
 
-// Module 13690 (FamilyCenterActivityPurchaseRow)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { <string:1291358328>: "title", <string:2381877063>: "__closure", <string:115617528>: "construct", <string:112989421>: "Boolean", <string:2629566652>: "isArray", <string:213651783>: "isArray", borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-obj.container = obj;
-obj.textContainer = {};
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityPurchaseRow.tsx");
+// Module 13804 (FamilyCenterActivityPurchaseRow)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.textContainer = { display: "flex", flexDirection: "column", flexShrink: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityPurchaseRow.tsx");
 
 export default function FamilyCenterActivityPurchaseRow(arg0) {
   let currency;
@@ -27,9 +31,9 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
   let typeName;
   ({ skuId, subscriptionPlanId } = arg0);
   ({ total, currency } = arg0);
-  const tmp = callback3();
-  const product = importDefault(dependencyMap[5])(skuId).product;
-  let obj = arg1(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  const product = importDefault(7857)(skuId).product;
+  let obj = require(13805) /* getCollectibleTypeName */;
   let tmp2 = null;
   if (null != product) {
     tmp2 = product;
@@ -47,7 +51,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const obj7 = arg1(dependencyMap[7]);
+    const obj7 = require(5618) /* formatSingleCurrencyPrice */;
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
@@ -55,7 +59,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj = { style: tmp.container };
     obj = { displayName };
     let tmp12 = null;
-    const formatPriceResult = arg1(dependencyMap[7]).formatPrice(total, currency);
+    const formatPriceResult = require(5618) /* formatSingleCurrencyPrice */.formatPrice(total, currency);
     const tmp6 = callback2;
     const tmp7 = View;
     const tmp8 = callback;
@@ -65,12 +69,12 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj.product = tmp12;
     obj.isSubscription = isSubscription;
     obj.subscriptionPlanId = subscriptionPlanId;
-    const items = [tmp8(importDefault(dependencyMap[8]), obj), ];
+    const items = [tmp8(importDefault(13806), obj), ];
     const obj1 = { style: tmp.textContainer };
-    const obj2 = { children: combined };
-    const items1 = [callback(arg1(dependencyMap[9]).Text, obj2), ];
-    const obj3 = { cachedAt: "center", edpbxy: "center", children: formatPriceResult };
-    items1[1] = callback(arg1(dependencyMap[9]).Text, obj3);
+    const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: combined };
+    const items1 = [callback(require(4126) /* Text */.Text, obj2), ];
+    const obj3 = { variant: "text-xs/medium", color: "text-muted", children: formatPriceResult };
+    items1[1] = callback(require(4126) /* Text */.Text, obj3);
     obj1.children = items1;
     items[1] = callback2(View, obj1);
     obj.children = items;

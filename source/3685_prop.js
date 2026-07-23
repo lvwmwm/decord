@@ -1,5 +1,5 @@
 // Module ID: 3685
-// Function ID: 28057
+// Function ID: 28060
 // Name: prop
 // Dependencies: []
 
@@ -10,14 +10,14 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, narrow: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, short: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" } };
+    obj = { long: { end: "{0} and {1}", middle: "{0}, {1}", pair: "{0} and {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} and {1}", middle: "{0}, {1}", pair: "{0} and {1}", start: "{0}, {1}" } };
     obj.conjunction = obj;
-    const obj1 = { long: {}, narrow: {}, short: {} };
+    const obj1 = { long: { end: "{0} or {1}", middle: "{0}, {1}", pair: "{0} or {1}", start: "{0}, {1}" }, narrow: { end: "{0} or {1}", middle: "{0}, {1}", pair: "{0} or {1}", start: "{0}, {1}" }, short: { end: "{0} or {1}", middle: "{0}, {1}", pair: "{0} or {1}", start: "{0}, {1}" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, narrow: {}, short: { accessibilityHint: "isArray", legacyCompat_selected: "accessible", legacyCompat_onPress: "height", eventTarget: "a" } };
+    const obj2 = { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
     obj.unit = obj2;
     obj.data = obj;
-    obj.locale = "es";
+    obj.locale = "en-GB";
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, narrow: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, short: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { accessibilityHint: "track", legacyCompat_selected: "textAlign", legacyCompat_onPress: "r", eventTarget: "isArray" }, narrow: {}, short: { accessibilityHint: "isArray", legacyCompat_selected: "accessible", legacyCompat_onPress: "height", eventTarget: "a" } } }, locale: "es" });
+prop.push({ data: { conjunction: { long: { end: "{0} and {1}", middle: "{0}, {1}", pair: "{0} and {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} and {1}", middle: "{0}, {1}", pair: "{0} and {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} or {1}", middle: "{0}, {1}", pair: "{0} or {1}", start: "{0}, {1}" }, narrow: { end: "{0} or {1}", middle: "{0}, {1}", pair: "{0} or {1}", start: "{0}, {1}" }, short: { end: "{0} or {1}", middle: "{0}, {1}", pair: "{0} or {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "en-GB" });

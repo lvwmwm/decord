@@ -1,33 +1,35 @@
 // Module ID: 857
-// Function ID: 9617
+// Function ID: 9618
 // Name: _getTraceInfoFromScope
-// Dependencies: []
+// Dependencies: [825, 796, 833]
 
 // Module 857 (_getTraceInfoFromScope)
+const require = arg1;
+let dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5._getTraceInfoFromScope = function _getTraceInfoFromScope(arg0, arg1) {
-  arg1 = arg0;
-  const arg6 = arg1;
+  const _require = arg0;
+  const dependencyMap = arg1;
   if (arg1) {
-    let withScopeResult = arg1(arg6[0]).withScope(arg1, () => {
-      const activeSpan = arg0(arg1[1]).getActiveSpan();
+    let withScopeResult = _require(825).withScope(arg1, () => {
+      const activeSpan = callback(796).getActiveSpan();
       if (activeSpan) {
-        let tmp2Result = tmp2(tmp3[1]);
+        let tmp2Result = tmp2(796);
         let spanToTraceContextResult = tmp2Result.spanToTraceContext(activeSpan);
       } else {
-        tmp2Result = tmp2(tmp3[0]);
-        spanToTraceContextResult = tmp2Result.getTraceContextFromScope(arg1);
+        tmp2Result = tmp2(825);
+        spanToTraceContextResult = tmp2Result.getTraceContextFromScope(dependencyMap);
       }
-      const obj4 = arg0(arg1[2]);
+      const obj4 = callback(833);
       if (activeSpan) {
         let dynamicSamplingContextFromSpan = obj4.getDynamicSamplingContextFromSpan(activeSpan);
       } else {
-        dynamicSamplingContextFromSpan = obj4.getDynamicSamplingContextFromScope(arg0, arg1);
+        dynamicSamplingContextFromSpan = obj4.getDynamicSamplingContextFromScope(callback, dependencyMap);
       }
       const items = [dynamicSamplingContextFromSpan, spanToTraceContextResult];
       return items;
     });
-    const obj = arg1(arg6[0]);
+    const obj = _require(825);
   } else {
     withScopeResult = [undefined, undefined];
   }

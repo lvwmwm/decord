@@ -1,63 +1,64 @@
-// Module ID: 15368
-// Function ID: 117031
-// Dependencies: []
+// Module ID: 15485
+// Function ID: 119205
+// Dependencies: [57, 31, 6689, 7420, 1345, 33, 7423, 566, 5802, 1334, 15480, 15482, 7871, 1212, 2]
 
-// Module 15368
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const NitroHomeSectionId = arg1(dependencyMap[3]).NitroHomeSectionId;
-const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType;
-const jsx = arg1(dependencyMap[5]).jsx;
+// Module 15485
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import zustandStore from "zustandStore";
+import { NitroHomeSectionId } from "zustandStore";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
   onPress = onPress.onPress;
-  const arg1 = onPress;
   let showReferralNotificationDot = onPress.showReferralNotificationDot;
-  let importDefault;
+  showReferralNotificationDot = undefined;
   let dependencyMap;
   let callback;
-  let obj = arg1(dependencyMap[6]);
+  let obj = onPress(7423);
   if (showReferralNotificationDot) {
     showReferralNotificationDot = obj.useIsEligibleSenderForReferralProgram(!showReferralNotificationDot);
   }
-  importDefault = showReferralNotificationDot;
-  const items = [closure_5];
+  const items = [_isNativeReflectConstruct];
   const items1 = [showReferralNotificationDot];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => referralsRemaining.getReferralsRemaining({ bypassFetch: !showReferralNotificationDot }), items1);
-  const obj2 = arg1(dependencyMap[7]);
+  const stateFromStores = onPress(566).useStateFromStores(items, () => outer1_5.getReferralsRemaining({ bypassFetch: !showReferralNotificationDot }), items1);
+  const obj2 = onPress(566);
   let prop = null;
   if (showReferralNotificationDot) {
     prop = null;
     if (null != stateFromStores) {
       prop = null;
       if (stateFromStores > 0) {
-        prop = arg1(dependencyMap[9]).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
+        prop = onPress(1334).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
       }
     }
   }
-  obj = { cooldownDurationMs: arg1(dependencyMap[10]).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
-  const tmp5 = callback(arg1(dependencyMap[8]).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
+  obj = { cooldownDurationMs: onPress(15480).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
+  const tmp5 = callback(onPress(5802).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   dependencyMap = tmp6;
-  const tmp7 = tmp5[0] === arg1(dependencyMap[9]).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
+  const tmp7 = tmp5[0] === onPress(1334).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
   callback = tmp7;
   const items2 = [tmp7, tmp5[1], onPress];
   callback = importAllResult.useCallback(() => {
-    if (tmp7) {
-      tmp6(constants2.TAKE_ACTION);
-      const obj = { scrollToSectionId: constants.REFERRAL_PROGRAM };
-      state.setState(obj);
+    if (c3) {
+      _undefined(outer1_8.TAKE_ACTION);
+      const obj = { scrollToSectionId: outer1_7.REFERRAL_PROGRAM };
+      outer1_6.setState(obj);
     }
+    onPress();
   }, items2);
   obj = {};
-  const obj3 = arg1(dependencyMap[8]);
-  obj.IconComponent = arg1(dependencyMap[12]).NitroWheelIcon;
-  const intl = arg1(dependencyMap[13]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.Ipxkog);
+  const obj3 = onPress(5802);
+  obj.IconComponent = onPress(7871).NitroWheelIcon;
+  const intl = onPress(1212).intl;
+  obj.accessibilityLabel = intl.string(onPress(1212).t.Ipxkog);
   obj.onPress = callback;
   obj.showRedDot = tmp7;
-  return jsx(importDefault(dependencyMap[11]), obj);
+  return jsx(showReferralNotificationDot(15482), {});
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIconNitroSubscriber.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIconNitroSubscriber.tsx");
 
 export default memoResult;

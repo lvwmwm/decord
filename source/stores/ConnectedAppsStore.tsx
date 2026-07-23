@@ -1,9 +1,15 @@
-// Module ID: 5064
-// Function ID: 43967
+// Module ID: 5067
+// Function ID: 43986
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 22, 566, 686, 2]
 
-// Module 5064 (_isNativeReflectConstruct)
+// Module 5067 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +19,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class ConnectedAppsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ConnectedAppsStore);
-      obj = closure_5(ConnectedAppsStore);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      tmp = outer1_2(this, ConnectedAppsStore);
+      obj = outer1_5(ConnectedAppsStore);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,24 +41,23 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = ConnectedAppsStore;
   callback2(ConnectedAppsStore, Store);
   let obj = {
     key: "isConnected",
     value(arg0) {
-      return null != closure_7[arg0];
+      return null != outer1_7[arg0];
     }
   };
   const items = [obj, , , , ];
   obj = {
     key: "isChildConnected",
     value(arg0) {
-      const ConnectedAppsStore = arg0;
+      let closure_0 = arg0;
       let someResult = null != arg0;
       if (someResult) {
         const _Object = Object;
-        const values = Object.values(closure_7);
-        someResult = values.some((parentId) => parentId.parentId === parentId);
+        const values = Object.values(outer1_7);
+        someResult = values.some((parentId) => parentId.parentId === closure_0);
       }
       return someResult;
     }
@@ -66,29 +66,29 @@ let tmp2 = (Store) => {
   obj = {
     key: "connections",
     get() {
-      return ConnectedAppsStore(closure_1[5]).values(closure_7);
+      return ConnectedAppsStore(outer1_1[5]).values(outer1_7);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getApplication",
     value(arg0) {
-      return closure_7[arg0];
+      return outer1_7[arg0];
     }
   };
   items[4] = {
     key: "getAllConnections",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   return callback(ConnectedAppsStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "ConnectedAppsStore";
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   OVERLAY_INITIALIZE: function handleOverlayInitialize(connectedApps) {
+    const obj = {};
     const merged = Object.assign(connectedApps.connectedApps);
-    let closure_7 = {};
   },
   RPC_APP_CONNECTED: function handleAppConnection(application) {
     application = application.application;
@@ -96,40 +96,40 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       return false;
     } else {
       const id = application.id;
-      if (null == closure_7[id]) {
+      if (null == dependencyMap[id]) {
         const obj = { count: 0 };
         ({ id: obj.id, parentId: obj.parentId, name: obj.name, icon: obj.icon, coverImage: obj.coverImage } = application);
         obj.authenticated = false;
-        closure_7[id] = obj;
+        dependencyMap[id] = obj;
       }
-      closure_7[id].count = closure_7[id].count + 1;
+      dependencyMap[id].count = dependencyMap[id].count + 1;
     }
   },
   RPC_APP_AUTHENTICATED: function handleAppAuthenticated(application) {
     application = application.application;
     let tmp = null != application.id;
     if (tmp) {
-      tmp = null != closure_7[application.id];
+      tmp = null != dependencyMap[application.id];
     }
     if (tmp) {
-      closure_7[application.id].authenticated = true;
+      dependencyMap[application.id].authenticated = true;
     }
   },
   RPC_APP_DISCONNECTED: function handleAppDisconnection(application) {
     application = application.application;
-    let tmp = null != application.id;
-    if (tmp) {
-      tmp = null != closure_7[application.id];
+    let tmp3 = null != application.id;
+    if (tmp3) {
+      tmp3 = null != dependencyMap[application.id];
     }
-    if (tmp) {
-      closure_7[application.id].count = closure_7[application.id].count - 1;
-      if (0 === closure_7[application.id].count) {
+    if (tmp3) {
+      dependencyMap[application.id].count = dependencyMap[application.id].count - 1;
+      if (0 === dependencyMap[application.id].count) {
         const id = application.id;
-        delete r1[r0];
+        delete tmp2[tmp];
       }
     }
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("stores/ConnectedAppsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/ConnectedAppsStore.tsx");
 
 export default tmp2;

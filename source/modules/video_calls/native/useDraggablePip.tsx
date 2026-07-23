@@ -1,14 +1,19 @@
-// Module ID: 10537
-// Function ID: 82340
+// Module ID: 10547
+// Function ID: 82390
 // Name: clamp
-// Dependencies: []
+// Dependencies: [57, 10210, 10529, 3991, 4131, 1273, 9423, 5217, 4542, 2]
 // Exports: useDraggablePip
 
-// Module 10537 (clamp)
-let closure_2 = importDefault(dependencyMap[0]);
-const useChannelCallStore = arg1(dependencyMap[1]).useChannelCallStore;
-({ PIP_FOCUS_SCALE: closure_4, PIP_GESTURE_ACTIVE_OFFSET: closure_5 } = arg1(dependencyMap[2]));
-let closure_6 = { libvpx: true, numOfEmbeds: true, it-CH: true, EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: true, fontSize: true, fontFamily: true };
+// Module 10547 (clamp)
+import _slicedToArray from "_slicedToArray";
+import { useChannelCallStore } from "resetFocusTimer";
+import PIP_GESTURE_ACTIVE_OFFSET from "PIP_GESTURE_ACTIVE_OFFSET";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ PIP_FOCUS_SCALE: closure_4, PIP_GESTURE_ACTIVE_OFFSET: closure_5 } = PIP_GESTURE_ACTIVE_OFFSET);
+let closure_6 = { mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001, damping: 20 };
 let closure_7 = { code: "function useDraggablePipTsx1(){const{withTiming,pipFocus,PIP_FOCUS_SCALE,STANDARD_EASING}=this.__closure;return withTiming(pipFocus?PIP_FOCUS_SCALE:1,{easing:STANDARD_EASING,duration:250});}" };
 let closure_8 = { code: "function useDraggablePipTsx2(){const{width}=this.__closure;return width;}" };
 let closure_9 = { code: "function useDraggablePipTsx3(){const{height}=this.__closure;return height;}" };
@@ -25,7 +30,7 @@ let closure_19 = { code: "function useDraggablePipTsx13(event){const{xPosition,x
 let closure_20 = { code: "function useDraggablePipTsx14(){const{onPress,runOnJS}=this.__closure;if(onPress!=null){runOnJS(onPress)();}}" };
 let closure_21 = { code: "function useDraggablePipTsx15(){const{xPosition,scaledWidthDv,widthDv,yPosition,scaledHeightDv,heightDv,pipScale}=this.__closure;return{transform:[{translateX:xPosition.get()+(scaledWidthDv.get()-widthDv.get())/2},{translateY:yPosition.get()+(scaledHeightDv.get()-heightDv.get())/2},{scale:pipScale.get()}]};}" };
 let closure_22 = { code: "function clamp_useDraggablePipTsx16(value,min,max){return Math.min(Math.max(value,min),max);}" };
-let closure_23 = () => {
+let closure_23 = (() => {
   function clamp(arg0, arg1, arg2) {
     return Math.min(Math.max(arg0, arg1), arg2);
   }
@@ -33,26 +38,20 @@ let closure_23 = () => {
   clamp.__workletHash = 1988116204206;
   clamp.__initData = closure_22;
   return clamp;
-}();
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/video_calls/native/useDraggablePip.tsx");
+})();
+let result = require("PIP_GESTURE_ACTIVE_OFFSET").fileFinishedImporting("modules/video_calls/native/useDraggablePip.tsx");
 
 export const useDraggablePip = function useDraggablePip(width) {
   width = width.width;
-  const arg1 = width;
   const height = width.height;
-  const dependencyMap = height;
   const containerWidth = width.containerWidth;
-  let closure_2 = containerWidth;
   const containerHeight = width.containerHeight;
-  const useChannelCallStore = containerHeight;
   const onPress = width.onPress;
   const onMoved = width.onMoved;
   const snapToCorners = width.snapToCorners;
-  let closure_6 = snapToCorners;
-  const tmp = useChannelCallStore((pipFocus) => pipFocus.pipFocus);
+  let tmp = containerHeight((pipFocus) => pipFocus.pipFocus);
   let closure_7 = tmp;
-  let obj = arg1(dependencyMap[3]);
+  let obj = width(height[3]);
   class X {
     constructor() {
       obj = width(height[4]);
@@ -64,13 +63,12 @@ export const useDraggablePip = function useDraggablePip(width) {
       return obj.withTiming(num, obj);
     }
   }
-  obj = { withTiming: arg1(dependencyMap[4]).withTiming, pipFocus: tmp, PIP_FOCUS_SCALE: onPress, STANDARD_EASING: arg1(dependencyMap[5]).STANDARD_EASING };
+  obj = { withTiming: width(height[4]).withTiming, pipFocus: tmp, PIP_FOCUS_SCALE: onPress, STANDARD_EASING: width(height[5]).STANDARD_EASING };
   X.__closure = obj;
   X.__workletHash = 7848271415351;
   X.__initData = closure_7;
   const derivedValue = obj.useDerivedValue(X);
-  let closure_8 = derivedValue;
-  let obj2 = arg1(dependencyMap[3]);
+  let obj2 = width(height[3]);
   class Y {
     constructor() {
       return width;
@@ -78,10 +76,9 @@ export const useDraggablePip = function useDraggablePip(width) {
   }
   Y.__closure = { width };
   Y.__workletHash = 14810909441301;
-  Y.__initData = closure_8;
+  Y.__initData = derivedValue;
   const derivedValue1 = obj2.useDerivedValue(Y);
-  let closure_9 = derivedValue1;
-  let obj3 = arg1(dependencyMap[3]);
+  let obj3 = width(height[3]);
   class N {
     constructor() {
       return height;
@@ -89,10 +86,9 @@ export const useDraggablePip = function useDraggablePip(width) {
   }
   N.__closure = { height };
   N.__workletHash = 15343935194036;
-  N.__initData = closure_9;
+  N.__initData = derivedValue1;
   const derivedValue2 = obj3.useDerivedValue(N);
-  let closure_10 = derivedValue2;
-  let obj4 = arg1(dependencyMap[3]);
+  let obj4 = width(height[3]);
   class V {
     constructor() {
       return useDerivedValue.get() * width;
@@ -100,10 +96,9 @@ export const useDraggablePip = function useDraggablePip(width) {
   }
   V.__closure = { pipScale: derivedValue, width };
   V.__workletHash = 3468337829868;
-  V.__initData = closure_10;
+  V.__initData = derivedValue2;
   const derivedValue3 = obj4.useDerivedValue(V);
-  let closure_11 = derivedValue3;
-  let obj5 = arg1(dependencyMap[3]);
+  let obj5 = width(height[3]);
   class F {
     constructor() {
       return useDerivedValue.get() * height;
@@ -111,9 +106,8 @@ export const useDraggablePip = function useDraggablePip(width) {
   }
   F.__closure = { pipScale: derivedValue, height };
   F.__workletHash = 7163944260205;
-  F.__initData = closure_11;
+  F.__initData = derivedValue3;
   const derivedValue4 = obj5.useDerivedValue(F);
-  let closure_12 = derivedValue4;
   class G {
     constructor() {
       return containerWidth;
@@ -121,10 +115,9 @@ export const useDraggablePip = function useDraggablePip(width) {
   }
   G.__closure = { containerWidth };
   G.__workletHash = 13449836478609;
-  G.__initData = closure_12;
-  const derivedValue5 = arg1(dependencyMap[3]).useDerivedValue(G);
-  let closure_13 = derivedValue5;
-  const obj7 = arg1(dependencyMap[3]);
+  G.__initData = derivedValue4;
+  const derivedValue5 = width(height[3]).useDerivedValue(G);
+  const obj7 = width(height[3]);
   class I {
     constructor() {
       return containerHeight;
@@ -132,36 +125,30 @@ export const useDraggablePip = function useDraggablePip(width) {
   }
   I.__closure = { containerHeight };
   I.__workletHash = 4105281399152;
-  I.__initData = closure_13;
-  const derivedValue6 = arg1(dependencyMap[3]).useDerivedValue(I);
-  let closure_14 = derivedValue6;
-  const obj8 = arg1(dependencyMap[3]);
-  const sharedValue = arg1(dependencyMap[3]).useSharedValue(0);
-  let closure_15 = sharedValue;
-  const obj9 = arg1(dependencyMap[3]);
-  const sharedValue1 = arg1(dependencyMap[3]).useSharedValue(sharedValue.get());
-  let closure_16 = sharedValue1;
-  const obj11 = arg1(dependencyMap[3]);
-  const sharedValue2 = arg1(dependencyMap[3]).useSharedValue(0);
-  let closure_17 = sharedValue2;
-  const obj12 = arg1(dependencyMap[3]);
-  const sharedValue3 = arg1(dependencyMap[3]).useSharedValue(sharedValue2.get());
-  let closure_18 = sharedValue3;
-  const obj14 = arg1(dependencyMap[3]);
-  const sharedValue4 = arg1(dependencyMap[3]).useSharedValue(false);
-  let closure_19 = sharedValue4;
-  const obj15 = arg1(dependencyMap[3]);
+  I.__initData = derivedValue5;
+  const derivedValue6 = width(height[3]).useDerivedValue(I);
+  const obj8 = width(height[3]);
+  const sharedValue = width(height[3]).useSharedValue(0);
+  const obj9 = width(height[3]);
+  const sharedValue1 = width(height[3]).useSharedValue(sharedValue.get());
+  const obj11 = width(height[3]);
+  const sharedValue2 = width(height[3]).useSharedValue(0);
+  const obj12 = width(height[3]);
+  const sharedValue3 = width(height[3]).useSharedValue(sharedValue2.get());
+  const obj14 = width(height[3]);
+  const sharedValue4 = width(height[3]).useSharedValue(false);
+  const obj15 = width(height[3]);
   class J {
     constructor() {
       items = [, ];
-      items[0] = containerWidth - closure_11.get();
-      items[1] = closure_16.get();
+      items[0] = containerWidth - c11.get();
+      items[1] = c16.get();
       return items;
     }
   }
   J.__closure = { containerWidth, scaledWidthDv: derivedValue3, xPosition: sharedValue1 };
   J.__workletHash = 2741340788440;
-  J.__initData = closure_14;
+  J.__initData = derivedValue6;
   const fn = function q(arg0, arg1) {
     let tmp;
     if (null != arg1) {
@@ -172,12 +159,12 @@ export const useDraggablePip = function useDraggablePip(width) {
       const first = tmp3[0];
       let items = arg1;
       if (null == arg1) {
-        items = ["placeholder", "aria-label"];
+        items = [0, 0];
       }
       const first1 = containerWidth(items, 1)[0];
       if (null != arg1) {
         if (first !== first1) {
-          const tmp7 = callback(tmp3[1] * (first / first1), 0, first);
+          const tmp7 = outer1_23(tmp3[1] * (first / first1), 0, first);
           const result = sharedValue1.set(tmp7);
           const result1 = sharedValue.set(tmp7);
         }
@@ -185,12 +172,12 @@ export const useDraggablePip = function useDraggablePip(width) {
       const tmp2 = containerWidth;
     }
   };
-  obj = { cheapWorkletArrayShallowEqual: arg1(dependencyMap[6]).cheapWorkletArrayShallowEqual, clamp: closure_23, xPosition: sharedValue1, xDestination: sharedValue };
+  obj = { cheapWorkletArrayShallowEqual: width(height[6]).cheapWorkletArrayShallowEqual, clamp: closure_23, xPosition: sharedValue1, xDestination: sharedValue };
   fn.__closure = obj;
   fn.__workletHash = 15748808822770;
-  fn.__initData = closure_15;
-  const animatedReaction = arg1(dependencyMap[3]).useAnimatedReaction(J, fn);
-  const obj16 = arg1(dependencyMap[3]);
+  fn.__initData = sharedValue;
+  const animatedReaction = width(height[3]).useAnimatedReaction(J, fn);
+  const obj16 = width(height[3]);
   class U {
     constructor() {
       items = [, ];
@@ -201,7 +188,7 @@ export const useDraggablePip = function useDraggablePip(width) {
   }
   U.__closure = { containerHeight, scaledHeightDv: derivedValue4, yPosition: sharedValue3 };
   U.__workletHash = 11475249153313;
-  U.__initData = closure_16;
+  U.__initData = sharedValue1;
   class R {
     constructor(arg0, arg1) {
       obj = width(height[6]);
@@ -218,13 +205,13 @@ export const useDraggablePip = function useDraggablePip(width) {
         num3 = 1;
         items = arg1;
         if (null == arg1) {
-          items = ["placeholder", "aria-label"];
+          items = [0, 0];
         }
         first1 = tmp2(items, 1)[0];
         if (null != arg1) {
           if (first !== first1) {
-            tmp6 = closure_23;
-            tmp7 = closure_23(tmp3[1] * (first / first1), 0, first);
+            tmp6 = outer1_23;
+            tmp7 = outer1_23(tmp3[1] * (first / first1), 0, first);
             tmp8 = useSharedValue;
             result = useSharedValue.set(tmp7);
             tmp10 = closure_17;
@@ -235,14 +222,14 @@ export const useDraggablePip = function useDraggablePip(width) {
       return;
     }
   }
-  const obj18 = arg1(dependencyMap[3]);
-  R.__closure = { cheapWorkletArrayShallowEqual: arg1(dependencyMap[6]).cheapWorkletArrayShallowEqual, clamp: closure_23, yPosition: sharedValue3, yDestination: sharedValue2 };
+  const obj18 = width(height[3]);
+  R.__closure = { cheapWorkletArrayShallowEqual: width(height[6]).cheapWorkletArrayShallowEqual, clamp: closure_23, yPosition: sharedValue3, yDestination: sharedValue2 };
   R.__workletHash = 7685377389843;
-  R.__initData = closure_17;
+  R.__initData = sharedValue2;
   const animatedReaction1 = obj18.useAnimatedReaction(U, R);
-  const Gesture = arg1(dependencyMap[7]).Gesture;
-  const obj1 = { cheapWorkletArrayShallowEqual: arg1(dependencyMap[6]).cheapWorkletArrayShallowEqual, clamp: closure_23, yPosition: sharedValue3, yDestination: sharedValue2 };
-  const items = [-onMoved, onMoved];
+  const Gesture = width(height[7]).Gesture;
+  const obj1 = { cheapWorkletArrayShallowEqual: width(height[6]).cheapWorkletArrayShallowEqual, clamp: closure_23, yPosition: sharedValue3, yDestination: sharedValue2 };
+  let items = [-onMoved, onMoved];
   const PanResult = Gesture.Pan();
   const items1 = [-onMoved, onMoved];
   const activeOffsetXResult = Gesture.Pan().activeOffsetX(items);
@@ -257,20 +244,20 @@ export const useDraggablePip = function useDraggablePip(width) {
       const result2 = sharedValue4.set(true);
     }
   }
-  obj2 = { xPosition: sharedValue1, xDestination: sharedValue, yPosition: sharedValue3, yDestination: sharedValue2, trackedVoiceControlsToggleMovedForGestureSv: sharedValue4, onMoved, runOnJS: arg1(dependencyMap[3]).runOnJS };
+  obj2 = { xPosition: sharedValue1, xDestination: sharedValue, yPosition: sharedValue3, yDestination: sharedValue2, trackedVoiceControlsToggleMovedForGestureSv: sharedValue4, onMoved, runOnJS: width(height[3]).runOnJS };
   ae.__closure = obj2;
   ae.__workletHash = 14964390506971;
-  ae.__initData = closure_19;
+  ae.__initData = sharedValue4;
   const activeOffsetYResult = Gesture.Pan().activeOffsetX(items).activeOffsetY(items1);
   function se(velocityX) {
     const sum = sharedValue1.get() + 0.0875 * velocityX.velocityX;
     let value = derivedValue5.get();
     const diff = value - derivedValue3.get();
-    const tmp4 = callback(sum, 0, diff);
+    const tmp4 = outer1_23(sum, 0, diff);
     const sum1 = sharedValue3.get() + 0.0875 * velocityX.velocityY;
     value = derivedValue6.get();
     const diff1 = value - derivedValue4.get();
-    const tmp8 = callback(sum1, 0, diff1);
+    const tmp8 = outer1_23(sum1, 0, diff1);
     const value1 = derivedValue6.get();
     const diff2 = value1 - derivedValue4.get() - tmp8;
     const value2 = derivedValue5.get();
@@ -337,12 +324,12 @@ export const useDraggablePip = function useDraggablePip(width) {
     const result2 = sharedValue3.set(width(height[8]).withSpring(num2, obj));
     const result3 = sharedValue2.set(num2);
   }
-  obj3 = { xPosition: sharedValue1, containerWidthDv: derivedValue5, scaledWidthDv: derivedValue3, clamp: closure_23, yPosition: sharedValue3, containerHeightDv: derivedValue6, scaledHeightDv: derivedValue4, snapToCorners, withSpring: arg1(dependencyMap[8]).withSpring, spring: closure_6, xDestination: sharedValue, yDestination: sharedValue2 };
+  obj3 = { xPosition: sharedValue1, containerWidthDv: derivedValue5, scaledWidthDv: derivedValue3, clamp: closure_23, yPosition: sharedValue3, containerHeightDv: derivedValue6, scaledHeightDv: derivedValue4, snapToCorners, withSpring: width(height[8]).withSpring, spring: snapToCorners, xDestination: sharedValue, yDestination: sharedValue2 };
   se.__closure = obj3;
   se.__workletHash = 690760681755;
-  se.__initData = closure_18;
+  se.__initData = sharedValue3;
   const onUpdateResult = Gesture.Pan().activeOffsetX(items).activeOffsetY(items1).onUpdate(ae);
-  const Gesture2 = arg1(dependencyMap[7]).Gesture;
+  const Gesture2 = width(height[7]).Gesture;
   const onEndResult = Gesture.Pan().activeOffsetX(items).activeOffsetY(items1).onUpdate(ae).onEnd(se);
   function re() {
     if (null != onPress) {
@@ -350,13 +337,13 @@ export const useDraggablePip = function useDraggablePip(width) {
       const obj = width(height[3]);
     }
   }
-  obj4 = { onPress, runOnJS: arg1(dependencyMap[3]).runOnJS };
+  obj4 = { onPress, runOnJS: width(height[3]).runOnJS };
   re.__closure = obj4;
   re.__workletHash = 4692146362189;
   re.__initData = closure_20;
   obj5 = {};
   const TapResult = Gesture2.Tap();
-  const Gesture3 = arg1(dependencyMap[7]).Gesture;
+  const Gesture3 = width(height[7]).Gesture;
   obj5.gesture = Gesture3.Race(onEndResult, Gesture2.Tap().onStart(re));
   const onStartResult = Gesture2.Tap().onStart(re);
   function le() {
@@ -378,6 +365,6 @@ export const useDraggablePip = function useDraggablePip(width) {
   le.__closure = { xPosition: sharedValue1, scaledWidthDv: derivedValue3, widthDv: derivedValue1, yPosition: sharedValue3, scaledHeightDv: derivedValue4, heightDv: derivedValue2, pipScale: derivedValue };
   le.__workletHash = 12534173786665;
   le.__initData = closure_21;
-  obj5.draggableGridItemStyles = arg1(dependencyMap[3]).useAnimatedStyle(le);
+  obj5.draggableGridItemStyles = width(height[3]).useAnimatedStyle(le);
   return obj5;
 };

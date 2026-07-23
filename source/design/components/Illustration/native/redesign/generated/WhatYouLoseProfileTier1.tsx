@@ -1,32 +1,34 @@
-// Module ID: 7397
-// Function ID: 59507
+// Module ID: 7402
+// Function ID: 59541
 // Name: getWhatYouLoseProfileTier1Source
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 7404, 7405, 7406, 3976, 2]
 // Exports: WhatYouLoseProfileTier1
 
-// Module 7397 (getWhatYouLoseProfileTier1Source)
+// Module 7402 (getWhatYouLoseProfileTier1Source)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getWhatYouLoseProfileTier1Source(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useWhatYouLoseProfileTier1Source() {
-  return getWhatYouLoseProfileTier1Source(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getWhatYouLoseProfileTier1Source(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/WhatYouLoseProfileTier1.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WhatYouLoseProfileTier1.tsx");
 
 export { getWhatYouLoseProfileTier1Source };
 export { useWhatYouLoseProfileTier1Source };
@@ -34,5 +36,5 @@ export const WhatYouLoseProfileTier1 = function WhatYouLoseProfileTier1(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useWhatYouLoseProfileTier1Source();
-  return <Image {...obj} />;
+  return <Image />;
 };

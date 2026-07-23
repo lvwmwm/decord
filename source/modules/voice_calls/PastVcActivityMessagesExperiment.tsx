@@ -1,15 +1,18 @@
-// Module ID: 15894
-// Function ID: 121714
-// Name: experiment
-// Dependencies: []
+// Module ID: 16011
+// Function ID: 123887
+// Name: items
+// Dependencies: [4045, 4042, 2]
 // Exports: isPastVcActivityMessagesEnabled, useIsPastVcActivityMessagesEnabled
 
-// Module 15894 (experiment)
-const _module = require(dependencyMap[1]);
-const items = [{ config: { enabled: true } }];
-const experiment = _module.createExperiment({ commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false }, treatments: items });
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/voice_calls/PastVcActivityMessagesExperiment.tsx");
+// Module 16011 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2026-02_past_vc_activity_messages", label: "Past VC Activity Messages", commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false } };
+obj = { id: 1, label: "Show past VC activity messages in system channel", config: { enabled: true } };
+const items = [obj];
+obj.treatments = items;
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/voice_calls/PastVcActivityMessagesExperiment.tsx");
 
 export default experiment;
 export const isPastVcActivityMessagesEnabled = function isPastVcActivityMessagesEnabled(id, GuildSettingsModalOverview) {

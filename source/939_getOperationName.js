@@ -1,46 +1,47 @@
 // Module ID: 939
-// Function ID: 10178
+// Function ID: 10179
 // Name: getOperationName
-// Dependencies: []
+// Dependencies: [77, 934, 940]
 // Exports: addChatCompletionAttributes, addConversationAttributes, addEmbeddingsAttributes, addResponsesApiAttributes, buildMethodPath, extractRequestParameters, getSpanOperation, isChatCompletionChunk, isChatCompletionResponse, isConversationResponse, isEmbeddingsResponse, isResponsesApiResponse, isResponsesApiStreamEvent, shouldInstrument
 
 // Module 939 (getOperationName)
-function getOperationName(first) {
-  if (first.includes("chat.completions")) {
-    let CONVERSATIONS = require(dependencyMap[1]).OPENAI_OPERATIONS.CHAT;
-  } else if (first.includes("responses")) {
-    CONVERSATIONS = require(dependencyMap[1]).OPENAI_OPERATIONS.RESPONSES;
-  } else if (first.includes("embeddings")) {
-    CONVERSATIONS = require(dependencyMap[1]).OPENAI_OPERATIONS.EMBEDDINGS;
-  } else if (first.includes("conversations")) {
-    CONVERSATIONS = require(dependencyMap[1]).OPENAI_OPERATIONS.CONVERSATIONS;
+import _defineProperty from "_defineProperty";
+
+function getOperationName(outer2_1) {
+  if (outer2_1.includes("chat.completions")) {
+    let CONVERSATIONS = require(934).OPENAI_OPERATIONS.CHAT;
+  } else if (outer2_1.includes("responses")) {
+    CONVERSATIONS = require(934).OPENAI_OPERATIONS.RESPONSES;
+  } else if (outer2_1.includes("embeddings")) {
+    CONVERSATIONS = require(934).OPENAI_OPERATIONS.EMBEDDINGS;
+  } else if (outer2_1.includes("conversations")) {
+    CONVERSATIONS = require(934).OPENAI_OPERATIONS.CONVERSATIONS;
   } else {
-    const parts = first.split(".");
+    const parts = outer2_1.split(".");
     CONVERSATIONS = parts.pop() || "unknown";
   }
   return CONVERSATIONS;
 }
 function setTokenUsageAttributes(setAttributes) {
   if (undefined !== arg1) {
-    setAttributes.setAttributes(callback(callback({}, require(dependencyMap[1]).OPENAI_USAGE_PROMPT_TOKENS_ATTRIBUTE, arg1), require(dependencyMap[1]).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE, arg1));
-    const tmp4 = callback({}, require(dependencyMap[1]).OPENAI_USAGE_PROMPT_TOKENS_ATTRIBUTE, arg1);
+    setAttributes.setAttributes(_defineProperty(_defineProperty({}, require(934).OPENAI_USAGE_PROMPT_TOKENS_ATTRIBUTE, arg1), require(934).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE, arg1));
+    const tmp4 = _defineProperty({}, require(934).OPENAI_USAGE_PROMPT_TOKENS_ATTRIBUTE, arg1);
   }
   if (undefined !== arg2) {
-    setAttributes.setAttributes(callback(callback({}, require(dependencyMap[1]).OPENAI_USAGE_COMPLETION_TOKENS_ATTRIBUTE, arg2), require(dependencyMap[1]).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE, arg2));
-    const tmp9 = callback({}, require(dependencyMap[1]).OPENAI_USAGE_COMPLETION_TOKENS_ATTRIBUTE, arg2);
+    setAttributes.setAttributes(_defineProperty(_defineProperty({}, require(934).OPENAI_USAGE_COMPLETION_TOKENS_ATTRIBUTE, arg2), require(934).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE, arg2));
+    const tmp9 = _defineProperty({}, require(934).OPENAI_USAGE_COMPLETION_TOKENS_ATTRIBUTE, arg2);
   }
   if (undefined !== arg3) {
-    setAttributes.setAttributes(callback({}, require(dependencyMap[1]).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE, arg3));
+    setAttributes.setAttributes(_defineProperty({}, require(934).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE, arg3));
   }
 }
 function setCommonResponseAttributes(setAttributes, id, model, created) {
-  setAttributes.setAttributes(callback(callback({}, require(dependencyMap[1]).OPENAI_RESPONSE_ID_ATTRIBUTE, id), require(dependencyMap[1]).GEN_AI_RESPONSE_ID_ATTRIBUTE, id));
-  const tmp = callback({}, require(dependencyMap[1]).OPENAI_RESPONSE_ID_ATTRIBUTE, id);
-  setAttributes.setAttributes(callback(callback({}, require(dependencyMap[1]).OPENAI_RESPONSE_MODEL_ATTRIBUTE, model), require(dependencyMap[1]).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, model));
-  const tmp3 = callback({}, require(dependencyMap[1]).OPENAI_RESPONSE_MODEL_ATTRIBUTE, model);
-  setAttributes.setAttributes(callback({}, require(dependencyMap[1]).OPENAI_RESPONSE_TIMESTAMP_ATTRIBUTE, new Date(1000 * created).toISOString()));
+  setAttributes.setAttributes(_defineProperty(_defineProperty({}, require(934).OPENAI_RESPONSE_ID_ATTRIBUTE, id), require(934).GEN_AI_RESPONSE_ID_ATTRIBUTE, id));
+  const tmp = _defineProperty({}, require(934).OPENAI_RESPONSE_ID_ATTRIBUTE, id);
+  setAttributes.setAttributes(_defineProperty(_defineProperty({}, require(934).OPENAI_RESPONSE_MODEL_ATTRIBUTE, model), require(934).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, model));
+  const tmp3 = _defineProperty({}, require(934).OPENAI_RESPONSE_MODEL_ATTRIBUTE, model);
+  setAttributes.setAttributes(_defineProperty({}, require(934).OPENAI_RESPONSE_TIMESTAMP_ATTRIBUTE, new Date(1000 * created).toISOString()));
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const addChatCompletionAttributes = function addChatCompletionAttributes(setAttributes, id, recordOutputs) {
@@ -54,7 +55,7 @@ export const addChatCompletionAttributes = function addChatCompletionAttributes(
     const found = mapped.filter((arg0) => null !== arg0);
     if (found.length > 0) {
       const _JSON = JSON;
-      setAttributes.setAttributes(callback({}, require(dependencyMap[1]).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, JSON.stringify(found)));
+      setAttributes.setAttributes(_defineProperty({}, require(934).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, JSON.stringify(found)));
     }
     if (recordOutputs) {
       const choices1 = id.choices;
@@ -76,7 +77,7 @@ export const addChatCompletionAttributes = function addChatCompletionAttributes(
       const flatResult = found1.flat();
       if (flatResult.length > 0) {
         const _JSON2 = JSON;
-        setAttributes.setAttributes(callback({}, require(dependencyMap[1]).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(flatResult)));
+        setAttributes.setAttributes(_defineProperty({}, require(934).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(flatResult)));
       }
     }
   }
@@ -85,16 +86,16 @@ export const addConversationAttributes = function addConversationAttributes(setA
   let created_at;
   let id;
   ({ id, created_at } = choices);
-  const tmp = callback({}, require(dependencyMap[1]).OPENAI_RESPONSE_ID_ATTRIBUTE, id);
-  setAttributes.setAttributes(callback(callback(callback({}, require(dependencyMap[1]).OPENAI_RESPONSE_ID_ATTRIBUTE, id), require(dependencyMap[1]).GEN_AI_RESPONSE_ID_ATTRIBUTE, id), require(dependencyMap[1]).GEN_AI_CONVERSATION_ID_ATTRIBUTE, id));
+  const tmp = _defineProperty({}, require(934).OPENAI_RESPONSE_ID_ATTRIBUTE, id);
+  setAttributes.setAttributes(_defineProperty(_defineProperty(_defineProperty({}, require(934).OPENAI_RESPONSE_ID_ATTRIBUTE, id), require(934).GEN_AI_RESPONSE_ID_ATTRIBUTE, id), require(934).GEN_AI_CONVERSATION_ID_ATTRIBUTE, id));
   if (created_at) {
     const _Date = Date;
     const date = new Date(1000 * created_at);
-    setAttributes.setAttributes(callback({}, require(dependencyMap[1]).OPENAI_RESPONSE_TIMESTAMP_ATTRIBUTE, date.toISOString()));
+    setAttributes.setAttributes(_defineProperty({}, require(934).OPENAI_RESPONSE_TIMESTAMP_ATTRIBUTE, date.toISOString()));
   }
 };
 export const addEmbeddingsAttributes = function addEmbeddingsAttributes(setAttributes, model) {
-  setAttributes.setAttributes(callback(callback({}, require(dependencyMap[1]).OPENAI_RESPONSE_MODEL_ATTRIBUTE, model.model), require(dependencyMap[1]).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, model.model));
+  setAttributes.setAttributes(_defineProperty(_defineProperty({}, require(934).OPENAI_RESPONSE_MODEL_ATTRIBUTE, model.model), require(934).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, model.model));
   if (model.usage) {
     setTokenUsageAttributes(setAttributes, model.usage.prompt_tokens, undefined, model.usage.total_tokens);
   }
@@ -104,7 +105,7 @@ export const addResponsesApiAttributes = function addResponsesApiAttributes(setA
   if (id.status) {
     const _JSON = JSON;
     const items = [id.status];
-    setAttributes.setAttributes(callback({}, require(dependencyMap[1]).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, JSON.stringify(items)));
+    setAttributes.setAttributes(_defineProperty({}, require(934).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, JSON.stringify(items)));
   }
   if (id.usage) {
     setTokenUsageAttributes(setAttributes, id.usage.input_tokens, id.usage.output_tokens, id.usage.total_tokens);
@@ -126,7 +127,7 @@ export const addResponsesApiAttributes = function addResponsesApiAttributes(setA
         });
         if (found.length > 0) {
           const _JSON2 = JSON;
-          setAttributes.setAttributes(callback({}, require(dependencyMap[1]).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(found)));
+          setAttributes.setAttributes(_defineProperty({}, require(934).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, JSON.stringify(found)));
         }
       }
     }
@@ -146,34 +147,34 @@ export const extractRequestParameters = function extractRequestParameters(first)
   if (null != model) {
     str = model;
   }
-  const tmpResult = closure_2({}, require(dependencyMap[1]).GEN_AI_REQUEST_MODEL_ATTRIBUTE, str);
+  const tmpResult = _defineProperty({}, require(934).GEN_AI_REQUEST_MODEL_ATTRIBUTE, str);
   if ("temperature" in first) {
-    tmpResult[require(dependencyMap[1]).GEN_AI_REQUEST_TEMPERATURE_ATTRIBUTE] = first.temperature;
+    tmpResult[require(934).GEN_AI_REQUEST_TEMPERATURE_ATTRIBUTE] = first.temperature;
   }
   if ("top_p" in first) {
-    tmpResult[require(dependencyMap[1]).GEN_AI_REQUEST_TOP_P_ATTRIBUTE] = first.top_p;
+    tmpResult[require(934).GEN_AI_REQUEST_TOP_P_ATTRIBUTE] = first.top_p;
   }
   if ("frequency_penalty" in first) {
-    tmpResult[require(dependencyMap[1]).GEN_AI_REQUEST_FREQUENCY_PENALTY_ATTRIBUTE] = first.frequency_penalty;
+    tmpResult[require(934).GEN_AI_REQUEST_FREQUENCY_PENALTY_ATTRIBUTE] = first.frequency_penalty;
   }
   if ("presence_penalty" in first) {
-    tmpResult[require(dependencyMap[1]).GEN_AI_REQUEST_PRESENCE_PENALTY_ATTRIBUTE] = first.presence_penalty;
+    tmpResult[require(934).GEN_AI_REQUEST_PRESENCE_PENALTY_ATTRIBUTE] = first.presence_penalty;
   }
   if ("stream" in first) {
-    tmpResult[require(dependencyMap[1]).GEN_AI_REQUEST_STREAM_ATTRIBUTE] = first.stream;
+    tmpResult[require(934).GEN_AI_REQUEST_STREAM_ATTRIBUTE] = first.stream;
   }
   if ("encoding_format" in first) {
-    tmpResult[require(dependencyMap[1]).GEN_AI_REQUEST_ENCODING_FORMAT_ATTRIBUTE] = first.encoding_format;
+    tmpResult[require(934).GEN_AI_REQUEST_ENCODING_FORMAT_ATTRIBUTE] = first.encoding_format;
   }
   if ("dimensions" in first) {
-    tmpResult[require(dependencyMap[1]).GEN_AI_REQUEST_DIMENSIONS_ATTRIBUTE] = first.dimensions;
+    tmpResult[require(934).GEN_AI_REQUEST_DIMENSIONS_ATTRIBUTE] = first.dimensions;
   }
   if ("conversation" in first) {
     if ("string" === typeof first.conversation) {
       let previous_response_id = first.conversation;
     }
     if (previous_response_id) {
-      tmpResult[require(dependencyMap[1]).GEN_AI_CONVERSATION_ID_ATTRIBUTE] = previous_response_id;
+      tmpResult[require(934).GEN_AI_CONVERSATION_ID_ATTRIBUTE] = previous_response_id;
     }
     return tmpResult;
   }
@@ -184,8 +185,8 @@ export const extractRequestParameters = function extractRequestParameters(first)
   }
 };
 export { getOperationName };
-export const getSpanOperation = function getSpanOperation(first) {
-  return "gen_ai." + getOperationName(first);
+export const getSpanOperation = function getSpanOperation(outer2_1) {
+  return "gen_ai." + getOperationName(outer2_1);
 };
 export const isChatCompletionChunk = function isChatCompletionChunk(value) {
   let tmp = null !== value;
@@ -278,6 +279,6 @@ export const isResponsesApiStreamEvent = function isResponsesApiStreamEvent(type
 export { setCommonResponseAttributes };
 export { setTokenUsageAttributes };
 export const shouldInstrument = function shouldInstrument(arg0) {
-  const INSTRUMENTED_METHODS = require(dependencyMap[2]).INSTRUMENTED_METHODS;
+  const INSTRUMENTED_METHODS = require(940) /* items */.INSTRUMENTED_METHODS;
   return INSTRUMENTED_METHODS.includes(arg0);
 };

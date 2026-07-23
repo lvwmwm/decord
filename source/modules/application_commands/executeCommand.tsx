@@ -1,53 +1,68 @@
-// Module ID: 8178
-// Function ID: 64551
+// Module ID: 8184
+// Function ID: 64588
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 4991, 1921, 1838, 4467, 1849, 7022, 653, 4123, 6755, 686, 7007, 6753, 1881, 8185, 8187, 44, 8188, 4324, 7020, 7938, 3771, 1327, 6996, 7799, 7076, 7798, 8189, 7889, 6995, 6691, 4670, 1212, 4666, 7083, 2]
 // Exports: default, retryCommandMessage
 
-// Module 8178 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8184 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { DEFAULT_MOBILE_PRE_COMPRESSION_MAX_ATTACHMENT_SIZE as closure_15 } from "MESSAGE_GROUP_SPACING";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,7 +100,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 async function _executeCommand(arg0, arg1) {
-  const fn = function*(source) {
+  let iter = (function*(source) {
     let command;
     let commandOrigin;
     let commandTargetId;
@@ -100,41 +115,41 @@ async function _executeCommand(arg0, arg1) {
     ({ command, optionValues } = source);
     ({ context, commandTargetId, commandOrigin, maxSizeCallback } = source);
     if (commandOrigin === undefined) {
-      source = optionValues;
-      commandOrigin = optionValues(closure_3[9]).CommandOrigin.CHAT;
+      source = outer2_0;
+      commandOrigin = outer2_0(outer2_3[9]).CommandOrigin.CHAT;
     }
     ({ interactionLifecycleOptionsFactory, sectionName } = source);
     if (interactionLifecycleOptionsFactory === undefined) {
-      interactionLifecycleOptionsFactory = closure_22;
+      interactionLifecycleOptionsFactory = outer2_22;
     }
     source = source.source;
     yield undefined;
     if (null != context.channel) {
-      source = store;
-      source = store.getSource(context.channel.id);
-      commandOrigin = store.getCommandOrigin(context.channel.id);
+      source = outer2_10;
+      source = outer2_10.getSource(context.channel.id);
+      commandOrigin = outer2_10.getCommandOrigin(context.channel.id);
       if (null == context.autocomplete) {
-        let obj = callback(closure_3[10]);
+        let obj = outer2_1(outer2_3[10]);
         obj = { type: "APPLICATION_COMMAND_USED", context, command, commandOrigin };
         obj.dispatch(obj);
       }
-      let obj2 = callback(closure_3[11]);
+      let obj2 = outer2_1(outer2_3[11]);
       yield obj2.unarchiveThreadIfNecessary(context.channel.id);
-      const items = [];
+      let items = [];
       const items1 = [];
-      let obj3 = optionValues(closure_3[12]);
+      let obj3 = outer2_0(outer2_3[12]);
       const commandAttachmentDraftType = obj3.getCommandAttachmentDraftType(commandOrigin);
       if (null != command.options) {
-        source = callback2;
-        source = callback2(command.options);
+        source = outer2_16;
+        source = outer2_16(command.options);
         const iter3 = source();
         source = globalThis;
         let iter2 = iter3;
         if (!iter3.done) {
           do {
             let value = iter2.value;
-            let tmp15 = closure_0;
-            let tmp16 = closure_3;
+            let tmp15 = outer2_0;
+            let tmp16 = outer2_3;
             let tmp17 = source;
             let tmp18 = source;
             let tmp19 = source;
@@ -158,9 +173,9 @@ async function _executeCommand(arg0, arg1) {
             let tmp37 = source;
             let tmp38 = source;
             let tmp39 = source;
-            if (value.type !== closure_0(closure_3[13]).ApplicationCommandOptionType.SUB_COMMAND) {
-              source = closure_0;
-              source = closure_3;
+            if (value.type !== outer2_0(outer2_3[13]).ApplicationCommandOptionType.SUB_COMMAND) {
+              source = outer2_0;
+              source = outer2_3;
               tmp17 = source;
               tmp18 = source;
               tmp19 = source;
@@ -184,7 +199,7 @@ async function _executeCommand(arg0, arg1) {
               tmp37 = source;
               tmp38 = source;
               tmp39 = source;
-              if (value.type !== closure_0(closure_3[13]).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+              if (value.type !== outer2_0(outer2_3[13]).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
                 tmp17 = source;
                 tmp18 = source;
                 tmp19 = source;
@@ -215,19 +230,19 @@ async function _executeCommand(arg0, arg1) {
                     name = autocomplete.name;
                   }
                   let tmp41 = name === value.name || undefined;
-                  let tmp42 = closure_0;
-                  let tmp43 = closure_3;
-                  if (value.type !== closure_0(closure_3[13]).ApplicationCommandOptionType.STRING) {
-                    let tmp56 = closure_0;
-                    let tmp57 = closure_3;
-                    if (value.type !== closure_0(closure_3[13]).ApplicationCommandOptionType.ATTACHMENT) {
-                      let tmp62 = closure_2;
-                      let tmp63 = closure_3;
-                      let obj8 = closure_2(closure_3[14]);
+                  let tmp42 = outer2_0;
+                  let tmp43 = outer2_3;
+                  if (value.type !== outer2_0(outer2_3[13]).ApplicationCommandOptionType.STRING) {
+                    let tmp56 = outer2_0;
+                    let tmp57 = outer2_3;
+                    if (value.type !== outer2_0(outer2_3[13]).ApplicationCommandOptionType.ATTACHMENT) {
+                      let tmp62 = outer2_2;
+                      let tmp63 = outer2_3;
+                      let obj8 = outer2_2(outer2_3[14]);
                       let filterEmptyResult = obj8.filterEmpty(optionValues[value.name]);
-                      let tmp64 = closure_1;
+                      let tmp64 = outer2_1;
                       let tmp66 = null != context.autocomplete;
-                      let tmp65 = closure_1(closure_3[16]);
+                      let tmp65 = outer2_1(outer2_3[16]);
                       if (!tmp66) {
                         tmp66 = 1 === filterEmptyResult.length;
                       }
@@ -237,12 +252,12 @@ async function _executeCommand(arg0, arg1) {
                         let first = filterEmptyResult[0];
                         obj = first;
                         if (null == first) {
-                          obj = { -1298326025: "JPEGInterchangeFormatLength", -291407389: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM" };
+                          obj = { type: "text", text: "" };
                         }
                         let type = value.type;
-                        let tmp69 = closure_0;
-                        let tmp70 = closure_3;
-                        if (closure_0(closure_3[13]).ApplicationCommandOptionType.CHANNEL === type) {
+                        let tmp69 = outer2_0;
+                        let tmp70 = outer2_3;
+                        if (outer2_0(outer2_3[13]).ApplicationCommandOptionType.CHANNEL === type) {
                           if ("channelMention" === obj.type) {
                             let roleId = obj.channelId;
                             let tmp75 = source;
@@ -273,9 +288,9 @@ async function _executeCommand(arg0, arg1) {
                             tmp86 = source;
                             tmp87 = source;
                             if ("text" === obj.type) {
-                              source = closure_0;
-                              source = closure_3;
-                              let obj33 = closure_0(closure_3[12]);
+                              source = outer2_0;
+                              source = outer2_3;
+                              let obj33 = outer2_0(outer2_3[12]);
                               if (obj33.isSnowflake(obj.text)) {
                                 let str7 = obj.text;
                                 roleId = str7.trim();
@@ -293,19 +308,19 @@ async function _executeCommand(arg0, arg1) {
                                 tmp86 = source;
                                 tmp87 = source;
                               } else {
-                                source = closure_0;
-                                source = closure_3;
-                                let obj21 = closure_0(closure_3[17]);
+                                source = outer2_0;
+                                source = outer2_3;
+                                let obj21 = outer2_0(outer2_3[17]);
                                 let guild6 = context.guild;
                                 source = undefined;
                                 if (null != guild6) {
                                   source = guild6.id;
                                 }
                                 source = obj21.resolveApplicationCommandOption(obj.text, source, context.channel.id);
-                                source = closure_1;
-                                source = closure_3;
+                                source = outer2_1;
+                                source = outer2_3;
                                 source = undefined;
-                                source = closure_1(closure_3[16]);
+                                source = outer2_1(outer2_3[16]);
                                 if (null != source) {
                                   source = source.type;
                                 }
@@ -329,9 +344,9 @@ async function _executeCommand(arg0, arg1) {
                             }
                           }
                         } else {
-                          source = closure_0;
-                          source = closure_3;
-                          if (closure_0(closure_3[13]).ApplicationCommandOptionType.ROLE === type) {
+                          source = outer2_0;
+                          source = outer2_3;
+                          if (outer2_0(outer2_3[13]).ApplicationCommandOptionType.ROLE === type) {
                             if ("roleMention" === obj.type) {
                               roleId = obj.roleId;
                               tmp75 = source;
@@ -348,9 +363,9 @@ async function _executeCommand(arg0, arg1) {
                               tmp86 = source;
                               tmp87 = source;
                             } else if ("text" === obj.type) {
-                              source = closure_0;
-                              source = closure_3;
-                              let obj18 = closure_0(closure_3[12]);
+                              source = outer2_0;
+                              source = outer2_3;
+                              let obj18 = outer2_0(outer2_3[12]);
                               if (obj18.isSnowflake(obj.text)) {
                                 let str6 = obj.text;
                                 roleId = str6.trim();
@@ -368,9 +383,9 @@ async function _executeCommand(arg0, arg1) {
                                 tmp86 = source;
                                 tmp87 = source;
                               } else {
-                                source = closure_0;
-                                source = closure_3;
-                                let obj19 = closure_0(closure_3[17]);
+                                source = outer2_0;
+                                source = outer2_3;
+                                let obj19 = outer2_0(outer2_3[17]);
                                 let text2 = obj.text;
                                 let guild5 = context.guild;
                                 source = undefined;
@@ -382,10 +397,10 @@ async function _executeCommand(arg0, arg1) {
                                 source = text2;
                                 source = obj1;
                                 source = obj19.resolveApplicationCommandOption(text2, source, context.channel.id, obj1);
-                                source = closure_1;
-                                source = closure_3;
+                                source = outer2_1;
+                                source = outer2_3;
                                 source = undefined;
-                                source = closure_1(closure_3[16]);
+                                source = outer2_1(outer2_3[16]);
                                 if (null != source) {
                                   source = source.type;
                                 }
@@ -458,9 +473,9 @@ async function _executeCommand(arg0, arg1) {
                               }
                             }
                           } else {
-                            source = closure_0;
-                            source = closure_3;
-                            if (closure_0(closure_3[13]).ApplicationCommandOptionType.USER === type) {
+                            source = outer2_0;
+                            source = outer2_3;
+                            if (outer2_0(outer2_3[13]).ApplicationCommandOptionType.USER === type) {
                               if ("userMention" === obj.type) {
                                 roleId = obj.userId;
                                 tmp75 = source;
@@ -491,9 +506,9 @@ async function _executeCommand(arg0, arg1) {
                                 tmp86 = source;
                                 tmp87 = source;
                                 if ("text" === obj.type) {
-                                  source = closure_0;
-                                  source = closure_3;
-                                  let obj32 = closure_0(closure_3[12]);
+                                  source = outer2_0;
+                                  source = outer2_3;
+                                  let obj32 = outer2_0(outer2_3[12]);
                                   if (obj32.isSnowflake(obj.text)) {
                                     let str5 = obj.text;
                                     roleId = str5.trim();
@@ -511,9 +526,9 @@ async function _executeCommand(arg0, arg1) {
                                     tmp86 = source;
                                     tmp87 = source;
                                   } else {
-                                    source = closure_0;
-                                    source = closure_3;
-                                    let obj16 = closure_0(closure_3[17]);
+                                    source = outer2_0;
+                                    source = outer2_3;
+                                    let obj16 = outer2_0(outer2_3[17]);
                                     let text = obj.text;
                                     let guild4 = context.guild;
                                     source = undefined;
@@ -525,10 +540,10 @@ async function _executeCommand(arg0, arg1) {
                                     source = text;
                                     source = obj2;
                                     source = obj16.resolveApplicationCommandOption(text, source, context.channel.id, obj2);
-                                    source = closure_1;
-                                    source = closure_3;
+                                    source = outer2_1;
+                                    source = outer2_3;
                                     source = undefined;
-                                    source = closure_1(closure_3[16]);
+                                    source = outer2_1(outer2_3[16]);
                                     if (null != source) {
                                       source = source.type;
                                     }
@@ -552,9 +567,9 @@ async function _executeCommand(arg0, arg1) {
                                 }
                               }
                             } else {
-                              source = closure_0;
-                              source = closure_3;
-                              if (closure_0(closure_3[13]).ApplicationCommandOptionType.MENTIONABLE === type) {
+                              source = outer2_0;
+                              source = outer2_3;
+                              if (outer2_0(outer2_3[13]).ApplicationCommandOptionType.MENTIONABLE === type) {
                                 if ("userMention" === obj.type) {
                                   roleId = obj.userId;
                                   tmp75 = source;
@@ -623,9 +638,9 @@ async function _executeCommand(arg0, arg1) {
                                   tmp86 = source;
                                   tmp87 = source;
                                   if ("text" === obj.type) {
-                                    source = closure_0;
-                                    source = closure_3;
-                                    let obj31 = closure_0(closure_3[12]);
+                                    source = outer2_0;
+                                    source = outer2_3;
+                                    let obj31 = outer2_0(outer2_3[12]);
                                     if (obj31.isSnowflake(obj.text)) {
                                       let str4 = obj.text;
                                       roleId = str4.trim();
@@ -643,9 +658,9 @@ async function _executeCommand(arg0, arg1) {
                                       tmp86 = source;
                                       tmp87 = source;
                                     } else {
-                                      let tmp98 = closure_0;
-                                      let tmp99 = closure_3;
-                                      let obj15 = closure_0(closure_3[17]);
+                                      let tmp98 = outer2_0;
+                                      let tmp99 = outer2_3;
+                                      let obj15 = outer2_0(outer2_3[17]);
                                       let guild = context.guild;
                                       source = undefined;
                                       if (null != guild) {
@@ -719,10 +734,10 @@ async function _executeCommand(arg0, arg1) {
                                               tmp87 = source;
                                             }
                                           }
-                                          source = closure_1;
-                                          source = closure_3;
+                                          source = outer2_1;
+                                          source = outer2_3;
                                           let _HermesInternal4 = HermesInternal;
-                                          source = closure_1(closure_3[16]);
+                                          source = outer2_1(outer2_3[16]);
                                           source = source(false, "Failed to resolve " + obj.text);
                                           tmp75 = source;
                                           tmp76 = source;
@@ -743,9 +758,9 @@ async function _executeCommand(arg0, arg1) {
                                   }
                                 }
                               } else {
-                                source = closure_0;
-                                source = closure_3;
-                                if (closure_0(closure_3[13]).ApplicationCommandOptionType.BOOLEAN === type) {
+                                source = outer2_0;
+                                source = outer2_3;
+                                if (outer2_0(outer2_3[13]).ApplicationCommandOptionType.BOOLEAN === type) {
                                   tmp75 = source;
                                   tmp76 = source;
                                   tmp77 = source;
@@ -760,9 +775,9 @@ async function _executeCommand(arg0, arg1) {
                                   tmp86 = source;
                                   tmp87 = source;
                                   if ("text" === obj.type) {
-                                    source = closure_0;
-                                    source = closure_3;
-                                    let obj30 = closure_0(closure_3[15]);
+                                    source = outer2_0;
+                                    source = outer2_3;
+                                    let obj30 = outer2_0(outer2_3[15]);
                                     let str24 = obj.text;
                                     roleId = obj30.toChoiceBooleanValue(str24.trim());
                                     tmp75 = source;
@@ -780,9 +795,9 @@ async function _executeCommand(arg0, arg1) {
                                     tmp87 = source;
                                   }
                                 } else {
-                                  source = closure_0;
-                                  source = closure_3;
-                                  if (closure_0(closure_3[13]).ApplicationCommandOptionType.INTEGER === type) {
+                                  source = outer2_0;
+                                  source = outer2_3;
+                                  if (outer2_0(outer2_3[13]).ApplicationCommandOptionType.INTEGER === type) {
                                     tmp75 = source;
                                     tmp76 = source;
                                     tmp77 = source;
@@ -800,9 +815,9 @@ async function _executeCommand(arg0, arg1) {
                                       let str23 = obj.text;
                                       source = str23.trim();
                                       if (null != value.choices) {
-                                        let tmp96 = closure_0;
-                                        let tmp97 = closure_3;
-                                        let obj14 = closure_0(closure_3[15]);
+                                        let tmp96 = outer2_0;
+                                        let tmp97 = outer2_3;
+                                        let obj14 = outer2_0(outer2_3[15]);
                                         let query3 = obj14.findChoiceNumberValue(value.choices, source);
                                       } else if (value.autocomplete) {
                                         if (null != context.autocomplete) {
@@ -810,9 +825,9 @@ async function _executeCommand(arg0, arg1) {
                                             query3 = context.autocomplete.query;
                                           }
                                         }
-                                        let tmp93 = closure_0;
-                                        let tmp94 = closure_3;
-                                        let obj13 = closure_0(closure_3[15]);
+                                        let tmp93 = outer2_0;
+                                        let tmp94 = outer2_3;
+                                        let obj13 = outer2_0(outer2_3[15]);
                                         let result = obj13.findAutocompleteChoiceNumberValue(context.channel.id, value.name, source);
                                       }
                                       roleId = query3;
@@ -831,11 +846,11 @@ async function _executeCommand(arg0, arg1) {
                                       tmp87 = source;
                                       if (null == query3) {
                                         let _Number2 = Number;
-                                        source = closure_2;
-                                        source = closure_3;
-                                        let obj29 = closure_2(closure_3[14]);
-                                        source = closure_6;
-                                        roleId = Number(obj29.normalizeNumericString(closure_6.locale, source));
+                                        source = outer2_2;
+                                        source = outer2_3;
+                                        let obj29 = outer2_2(outer2_3[14]);
+                                        source = outer2_6;
+                                        roleId = Number(obj29.normalizeNumericString(outer2_6.locale, source));
                                         tmp75 = source;
                                         tmp76 = source;
                                         tmp77 = source;
@@ -852,9 +867,9 @@ async function _executeCommand(arg0, arg1) {
                                       }
                                     }
                                   } else {
-                                    source = closure_0;
-                                    source = closure_3;
-                                    if (closure_0(closure_3[13]).ApplicationCommandOptionType.NUMBER === type) {
+                                    source = outer2_0;
+                                    source = outer2_3;
+                                    if (outer2_0(outer2_3[13]).ApplicationCommandOptionType.NUMBER === type) {
                                       tmp75 = source;
                                       tmp76 = source;
                                       tmp77 = source;
@@ -872,9 +887,9 @@ async function _executeCommand(arg0, arg1) {
                                         let str22 = obj.text;
                                         source = str22.trim();
                                         if (null != value.choices) {
-                                          let tmp91 = closure_0;
-                                          let tmp92 = closure_3;
-                                          let obj12 = closure_0(closure_3[15]);
+                                          let tmp91 = outer2_0;
+                                          let tmp92 = outer2_3;
+                                          let obj12 = outer2_0(outer2_3[15]);
                                           let query2 = obj12.findChoiceNumberValue(value.choices, source);
                                         } else if (value.autocomplete) {
                                           if (null != context.autocomplete) {
@@ -882,9 +897,9 @@ async function _executeCommand(arg0, arg1) {
                                               query2 = context.autocomplete.query;
                                             }
                                           }
-                                          let tmp88 = closure_0;
-                                          let tmp89 = closure_3;
-                                          let obj11 = closure_0(closure_3[15]);
+                                          let tmp88 = outer2_0;
+                                          let tmp89 = outer2_3;
+                                          let obj11 = outer2_0(outer2_3[15]);
                                           let result1 = obj11.findAutocompleteChoiceNumberValue(context.channel.id, value.name, source);
                                         }
                                         roleId = query2;
@@ -903,11 +918,11 @@ async function _executeCommand(arg0, arg1) {
                                         tmp87 = source;
                                         if (null == query2) {
                                           let _Number = Number;
-                                          source = closure_2;
-                                          source = closure_3;
-                                          let obj28 = closure_2(closure_3[14]);
-                                          source = closure_6;
-                                          roleId = Number(obj28.normalizeNumericString(closure_6.locale, source));
+                                          source = outer2_2;
+                                          source = outer2_3;
+                                          let obj28 = outer2_2(outer2_3[14]);
+                                          source = outer2_6;
+                                          roleId = Number(obj28.normalizeNumericString(outer2_6.locale, source));
                                           tmp75 = source;
                                           tmp76 = source;
                                           tmp77 = source;
@@ -964,10 +979,10 @@ async function _executeCommand(arg0, arg1) {
                         tmp38 = source;
                         tmp39 = source;
                         if (source) {
-                          source = closure_1;
-                          source = closure_3;
+                          source = outer2_1;
+                          source = outer2_3;
                           source = null != context.autocomplete;
-                          source = closure_1(closure_3[16]);
+                          source = outer2_1(outer2_3[16]);
                           if (!source) {
                             source = null != roleId;
                           }
@@ -1075,8 +1090,8 @@ async function _executeCommand(arg0, arg1) {
                       tmp38 = source;
                       tmp39 = source;
                       if (null == context.autocomplete) {
-                        let tmp58 = closure_8;
-                        let upload = closure_8.getUpload(context.channel.id, value.name, commandAttachmentDraftType);
+                        let tmp58 = outer2_8;
+                        let upload = outer2_8.getUpload(context.channel.id, value.name, commandAttachmentDraftType);
                         tmp17 = autocomplete;
                         tmp18 = source;
                         tmp19 = tmp41;
@@ -1132,9 +1147,9 @@ async function _executeCommand(arg0, arg1) {
                       }
                     }
                   } else {
-                    source = closure_2;
-                    source = closure_3;
-                    let obj27 = closure_2(closure_3[14]);
+                    source = outer2_2;
+                    source = outer2_3;
+                    let obj27 = outer2_2(outer2_3[14]);
                     let str21 = obj27.getOptionalString(optionValues, value.name);
                     let trimmed;
                     if (null != str21) {
@@ -1145,9 +1160,9 @@ async function _executeCommand(arg0, arg1) {
                       str2 = trimmed;
                     }
                     if (null != value.choices) {
-                      let tmp48 = closure_0;
-                      let tmp49 = closure_3;
-                      let obj5 = closure_0(closure_3[15]);
+                      let tmp48 = outer2_0;
+                      let tmp49 = outer2_3;
+                      let obj5 = outer2_0(outer2_3[15]);
                       let query = obj5.findChoiceStringValue(value.choices, str2);
                     } else if (value.autocomplete) {
                       if (null != context.autocomplete) {
@@ -1155,9 +1170,9 @@ async function _executeCommand(arg0, arg1) {
                           query = context.autocomplete.query;
                         }
                       }
-                      let tmp45 = closure_0;
-                      let tmp46 = closure_3;
-                      obj4 = closure_0(closure_3[15]);
+                      let tmp45 = outer2_0;
+                      let tmp46 = outer2_3;
+                      obj4 = outer2_0(outer2_3[15]);
                       let result2 = obj4.findAutocompleteChoiceStringValue(context.channel.id, value.name, str2);
                     }
                     if (null == query) {
@@ -1190,10 +1205,10 @@ async function _executeCommand(arg0, arg1) {
                         tmp39 = str2;
                       }
                     }
-                    let tmp50 = closure_1;
-                    let tmp51 = closure_3;
+                    let tmp50 = outer2_1;
+                    let tmp51 = outer2_3;
                     let tmp53 = null != context.autocomplete;
-                    let tmp52 = closure_1(closure_3[16]);
+                    let tmp52 = outer2_1(outer2_3[16]);
                     if (!tmp53) {
                       tmp53 = null != query;
                     }
@@ -1276,26 +1291,26 @@ async function _executeCommand(arg0, arg1) {
         }
       }
       if (null != command.execute) {
-        source = callback;
-        source = closure_3;
-        source = constants;
+        source = outer2_1;
+        source = outer2_3;
+        source = outer2_12;
         const obj7 = {};
         ({ id: obj26.command_id, applicationId: obj26.application_id, type: obj26.command_type } = command);
-        source = callback3;
-        obj7.location = callback3(commandOrigin);
+        source = outer2_24;
+        obj7.location = outer2_24(commandOrigin);
         obj7.source = source;
-        source = callback(closure_3[18]).trackWithMetadata(constants.APPLICATION_COMMAND_USED, obj7);
+        source = outer2_1(outer2_3[18]).trackWithMetadata(outer2_12.APPLICATION_COMMAND_USED, obj7);
         return command.execute(source, context);
       } else {
-        source = optionValues;
-        source = closure_3;
-        if (command.inputType !== optionValues(closure_3[9]).ApplicationCommandInputType.BUILT_IN) {
-          source = optionValues;
-          source = closure_3;
-          if (command.inputType !== optionValues(closure_3[9]).ApplicationCommandInputType.BUILT_IN_TEXT) {
-            source = optionValues;
-            source = closure_3;
-            if (command.inputType !== optionValues(closure_3[9]).ApplicationCommandInputType.BUILT_IN_INTEGRATION) {
+        source = outer2_0;
+        source = outer2_3;
+        if (command.inputType !== outer2_0(outer2_3[9]).ApplicationCommandInputType.BUILT_IN) {
+          source = outer2_0;
+          source = outer2_3;
+          if (command.inputType !== outer2_0(outer2_3[9]).ApplicationCommandInputType.BUILT_IN_TEXT) {
+            source = outer2_0;
+            source = outer2_3;
+            if (command.inputType !== outer2_0(outer2_3[9]).ApplicationCommandInputType.BUILT_IN_INTEGRATION) {
               obj8 = {};
               ({ version: obj34.version, rootCommand: rootCommand2 } = command);
               source = undefined;
@@ -1322,68 +1337,68 @@ async function _executeCommand(arg0, arg1) {
                 obj8.target_id = commandTargetId;
               }
               if (null != context.autocomplete) {
-                source = optionValues;
-                source = closure_3;
-                source = optionValues(closure_3[19]).performAutocomplete(command, context, obj8);
-                const obj24 = optionValues(closure_3[19]);
+                source = outer2_0;
+                source = outer2_3;
+                source = outer2_0(outer2_3[19]).performAutocomplete(command, context, obj8);
+                const obj24 = outer2_0(outer2_3[19]);
               } else {
-                source = callback;
-                source = closure_3;
-                source = callback(closure_3[20]).clearAll(context.channel.id, commandAttachmentDraftType);
+                source = outer2_1;
+                source = outer2_3;
+                source = outer2_1(outer2_3[20]).clearAll(context.channel.id, commandAttachmentDraftType);
                 const obj9 = {
                   applicationId: command.applicationId,
                   data: obj8,
                   context,
                   attachments: items1,
                   maxSizeCallback,
-                  onMessageSuccess() {
-                                function trackEmojiUsage(optionValues) {
+                  onMessageSuccess(arg0) {
+                                (function trackEmojiUsage(optionValues) {
                                   const values = Object.values(optionValues);
                                   const flatMapResult = values.flatMap((arr) => {
                                     const mapped = arr.map(() => { ... });
-                                    return mapped.filter(callback(closure_3[22]).isNotNullish);
+                                    return mapped.filter(outer5_0(outer5_3[22]).isNotNullish);
                                   });
                                   if (flatMapResult.length > 0) {
-                                    const obj = { type: "EMOJI_TRACK_USAGE", emojiUsed: flatMapResult };
-                                    callback(closure_3[10]).dispatch(obj);
-                                    const obj2 = callback(closure_3[10]);
+                                    let obj = { type: "EMOJI_TRACK_USAGE", emojiUsed: flatMapResult };
+                                    outer4_1(outer4_3[10]).dispatch(obj);
+                                    const obj2 = outer4_1(outer4_3[10]);
                                   }
-                                }(optionValues);
+                                })(optionValues);
                               }
                 };
-                source = callback3;
-                source = closure_20;
-                obj9.analytics_location = callback3(commandOrigin);
+                source = outer2_24;
+                source = outer2_20;
+                obj9.analytics_location = outer2_24(commandOrigin);
                 obj9.sectionName = sectionName;
                 obj9.source = source;
                 obj9.interactionLifecycleOptions = yield interactionLifecycleOptionsFactory(command, context, obj8);
                 source = source(obj9);
-                const obj35 = callback(closure_3[20]);
+                const obj35 = outer2_1(outer2_3[20]);
               }
             }
           }
         }
       }
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-async function _retryCommandMessage(isCommandType, channel, command, arg3) {
-  if (isCommandType.isCommandType()) {
-    if (null != isCommandType.interactionData) {
-      if (null != command.command) {
-        let obj = { channel };
+async function _retryCommandMessage(arg0, arg1, arg2, arg3) {
+  if (arg0.isCommandType()) {
+    if (null != arg0.interactionData) {
+      if (null != arg2.command) {
+        let obj = { channel: arg1 };
         let guild = null;
-        if (null != channel.guild_id) {
-          guild = guild.getGuild(channel.guild_id);
+        if (null != arg1.guild_id) {
+          guild = outer2_7.getGuild(arg1.guild_id);
         }
         obj.guild = guild;
-        obj = { applicationId: command.command.applicationId, data: isCommandType.interactionData };
+        obj = { applicationId: arg2.command.applicationId, data: arg0.interactionData };
         obj.context = obj;
-        obj.interactionLifecycleOptions = yield closure_22(command.command, obj, isCommandType.interactionData);
-        closure_20(obj);
-        const tmp4 = closure_20;
+        obj.interactionLifecycleOptions = yield outer2_22(arg2.command, obj, arg0.interactionData);
+        outer2_20(obj);
+        const tmp4 = outer2_20;
       }
     }
   }
@@ -1395,9 +1410,8 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
   let maxSizeCallback;
   let onMessageSuccess;
   ({ applicationId, context, attachments, maxSizeCallback, onMessageSuccess } = interactionLifecycleOptions);
-  const arg1 = onMessageSuccess;
   interactionLifecycleOptions = interactionLifecycleOptions.interactionLifecycleOptions;
-  let importDefault;
+  let obj;
   if (null != context.channel) {
     const guild = context.guild;
     let id = context.channel.id;
@@ -1405,11 +1419,11 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     if (null != guild) {
       id = guild.id;
     }
-    let obj = { applicationId, channelId: id, guildId: id, data: tmp };
+    obj = { applicationId, channelId: id, guildId: id, data: tmp };
     let nonce = interactionLifecycleOptions.nonce;
     if (null == nonce) {
-      nonce = arg1(dependencyMap[23]).createNonce();
-      const obj2 = arg1(dependencyMap[23]);
+      nonce = onMessageSuccess(6996).createNonce();
+      const obj2 = onMessageSuccess(6996);
     }
     obj.nonce = nonce;
     obj.attachments = attachments;
@@ -1417,65 +1431,66 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj.analytics_location = tmp2;
     obj.sectionName = tmp3;
     obj.source = tmp4;
-    importDefault = obj;
     obj = {};
     ({ messageId: obj4.messageId, onCreate: obj4.onCreate, onSuccess: obj4.onSuccess, onFailure: obj4.onFailure } = interactionLifecycleOptions);
-    obj = { interactionType: arg1(dependencyMap[13]).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
+    obj = { interactionType: onMessageSuccess(1881).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     obj.data = obj;
-    importAll(dependencyMap[24]).addQueued(obj.nonce, obj);
+    importAll(7799).addQueued(obj.nonce, obj);
     if (null != attachments) {
       if (attachments.length > 0) {
-        function stageAttachments(attachments, nonce, id, maxSizeCallback) {
-          return callback2(...arguments);
-        }(attachments, obj.nonce, id, maxSizeCallback).then((arg0) => {
+        (function stageAttachments(attachments, nonce, id, maxSizeCallback) {
+          return outer1_27(...arguments);
+        })(attachments, obj.nonce, id, maxSizeCallback).then((arg0) => {
           if (arg0) {
-            callback(obj, onMessageSuccess);
+            outer1_21(obj, onMessageSuccess);
           }
         });
-        const promise = function stageAttachments(attachments, nonce, id, maxSizeCallback) {
-          return callback2(...arguments);
-        }(attachments, obj.nonce, id, maxSizeCallback);
+        const promise = (function stageAttachments(attachments, nonce, id, maxSizeCallback) {
+          return outer1_27(...arguments);
+        })(attachments, obj.nonce, id, maxSizeCallback);
       }
     }
     queueCommand(obj, onMessageSuccess);
-    const obj3 = importAll(dependencyMap[24]);
+    const obj3 = importAll(7799);
   }
 }
 function queueCommand(message, onMessageSuccess) {
-  onMessageSuccess = message;
+  const _require = message;
   const importDefault = onMessageSuccess;
-  let obj = importDefault(dependencyMap[25]);
-  obj = { type: onMessageSuccess(dependencyMap[25]).MessageDataType.COMMAND, message };
+  let obj = importDefault(7076);
+  obj = { type: _require(7076).MessageDataType.COMMAND, message };
   obj.enqueue(obj, (ok) => {
     let applicationId;
     let channelId;
     let guildId;
     let nonce;
-    ({ nonce, applicationId, channelId, guildId } = ok);
+    ({ nonce, applicationId, channelId, guildId } = message);
     let tmp = null;
     if (null != guildId) {
       tmp = guildId;
     }
-    const result = ok(closure_3[26]).handleInteractionResponse(nonce, ok, applicationId, channelId, tmp);
+    const result = message(outer1_3[26]).handleInteractionResponse(nonce, ok, applicationId, channelId, tmp);
     ok = ok.ok;
     if (ok) {
-      ok = null != arg1;
+      ok = null != onMessageSuccess;
     }
     if (ok) {
-      arg1();
+      onMessageSuccess();
     }
   });
 }
 function displayInteractionLifecycleInChat() {
   return _displayInteractionLifecycleInChat(...arguments);
 }
-async function _displayInteractionLifecycleInChat(applicationId, channel, type, arg3) {
+async function _displayInteractionLifecycleInChat(arg0, arg1, arg2, arg3) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   let obj;
-  if (null == channel.channel) {
+  if (null == arg1.channel) {
     return {};
   } else {
-    obj = { channel: channel.channel, type: "channel" };
-    const cachedApplicationSection = obj(closure_3[27]).getCachedApplicationSection(obj, type.type, applicationId.applicationId);
+    obj = { channel: arg1.channel, type: "channel" };
+    const cachedApplicationSection = outer2_2(outer2_3[27]).getCachedApplicationSection(obj, arg2.type, arg0.applicationId);
     if (null == cachedApplicationSection) {
       return {};
     } else {
@@ -1486,35 +1501,35 @@ async function _displayInteractionLifecycleInChat(applicationId, channel, type, 
       }
       if (null == bot) {
         if (null != tmp28.botId) {
-          obj = obj(closure_3[28]);
+          obj = outer2_2(outer2_3[28]);
           yield obj.getUser(tmp28.botId);
         }
       }
       while (true) {
         obj = {};
-        let tmp7 = channel;
-        let tmp8 = closure_3;
+        let tmp7 = outer2_1;
+        let tmp8 = outer2_3;
         let num2 = 29;
-        let obj1 = { channelId: channel.channel.id };
+        let obj1 = { channelId: arg1.channel.id };
         let str = "";
         obj1.content = "";
-        let tmp10 = applicationId;
+        let tmp10 = outer2_0;
         let num3 = 13;
-        let tmp9 = channel(closure_3[29]);
-        if (type.type === applicationId(closure_3[13]).ApplicationCommandType.CHAT) {
-          let tmp12 = constants;
-          let CONTEXT_MENU_COMMAND = constants.CHAT_INPUT_COMMAND;
+        let tmp9 = outer2_1(outer2_3[29]);
+        if (arg2.type === outer2_0(outer2_3[13]).ApplicationCommandType.CHAT) {
+          let tmp12 = outer2_13;
+          let CONTEXT_MENU_COMMAND = outer2_13.CHAT_INPUT_COMMAND;
         } else {
-          let tmp11 = constants;
-          CONTEXT_MENU_COMMAND = constants.CONTEXT_MENU_COMMAND;
+          let tmp11 = outer2_13;
+          CONTEXT_MENU_COMMAND = outer2_13.CONTEXT_MENU_COMMAND;
         }
         obj1.type = CONTEXT_MENU_COMMAND;
         if (null == bot) {
           let obj2 = {};
           let tmp13 = cachedApplicationSection;
           ({ id: obj4.id, name: obj4.username } = tmp28);
-          let tmp14 = closure_14;
-          obj2.discriminator = closure_14;
+          let tmp14 = outer2_14;
+          obj2.discriminator = outer2_14;
           obj2.avatar = null;
           let flag = true;
           obj2.bot = true;
@@ -1526,27 +1541,27 @@ async function _displayInteractionLifecycleInChat(applicationId, channel, type, 
         let str2 = "application";
         obj["application"] = cachedApplicationSection.application;
         let obj3 = {};
-        ({ id: obj5.id, name: obj5.name } = type);
-        obj3.name_localized = applicationId.displayName;
-        let tmp17 = applicationId;
-        let tmp18 = closure_3;
-        obj3.type = applicationId(closure_3[13]).InteractionTypes.APPLICATION_COMMAND;
-        let obj5 = applicationId(closure_3[29]);
-        let tmp19 = currentUser;
-        obj3.user = obj5.userRecordToServer(currentUser.getCurrentUser());
+        ({ id: obj5.id, name: obj5.name } = arg2);
+        obj3.name_localized = arg0.displayName;
+        let tmp17 = outer2_0;
+        let tmp18 = outer2_3;
+        obj3.type = outer2_0(outer2_3[13]).InteractionTypes.APPLICATION_COMMAND;
+        let obj5 = outer2_0(outer2_3[29]);
+        let tmp19 = outer2_9;
+        obj3.user = obj5.userRecordToServer(outer2_9.getCurrentUser());
         let str3 = "interaction";
         obj["interaction"] = obj3;
         let str4 = "interaction_data";
-        obj["interaction_data"] = type;
-        let tmp20 = channel;
+        obj["interaction_data"] = arg2;
+        let tmp20 = outer2_1;
         let num4 = 30;
-        let obj7 = channel(closure_3[30]);
-        let obj4 = { applicationId: applicationId.applicationId, command: applicationId };
+        let obj7 = outer2_1(outer2_3[30]);
+        let obj4 = { applicationId: arg0.applicationId, command: arg0 };
         let flag2 = true;
         let tmp21 = obj7;
         let tmp22 = obj;
         let tmp23 = obj4;
-        let receiveMessageResult = obj7.receiveMessage(channel.channel.id, obj, true, obj4);
+        let receiveMessageResult = obj7.receiveMessage(arg1.channel.id, obj, true, obj4);
         obj5 = {};
         let str5 = "messageId";
         Object.defineProperty(obj5, "messageId", { get: () => obj.id, set: undefined });
@@ -1562,59 +1577,59 @@ async function _displayInteractionLifecycleInChat(applicationId, channel, type, 
         };
         obj5.onFailure = function onFailure(code, arg1, arg2, reason) {
           let result = arg1;
-          if (null != arg1.channel) {
+          if (null != channel.channel) {
             if (tmp2) {
-              let obj = arg1(closure_3[30]);
-              obj.sendClydeError(arg1.channel.id, code);
+              let obj = outer3_1(outer3_3[30]);
+              obj.sendClydeError(channel.channel.id, code);
             }
             if (tmp7) {
-              result = code(closure_3[26]).interactionCallbackErrorReason(reason, code.applicationId);
-              const obj2 = code(closure_3[26]);
+              result = outer3_0(outer3_3[26]).interactionCallbackErrorReason(reason, applicationId.applicationId);
+              const obj2 = outer3_0(outer3_3[26]);
             }
             obj = { type: "MESSAGE_SEND_FAILED" };
             obj.messageId = obj.id;
-            obj.channelId = arg1.channel.id;
+            obj.channelId = channel.channel.id;
             obj.reason = result;
-            arg1(closure_3[10]).dispatch(obj);
-            const obj3 = arg1(closure_3[10]);
-            const tmp2 = null == result && null != code;
-            const tmp7 = null == result && null != reason;
+            outer3_1(outer3_3[10]).dispatch(obj);
+            const obj3 = outer3_1(outer3_3[10]);
+            tmp2 = null == result && null != code;
+            tmp7 = null == result && null != reason;
           }
         };
         return obj5;
       }
     }
-    const obj10 = obj(closure_3[27]);
+    const obj10 = outer2_2(outer2_3[27]);
   }
 }
 function getAnalyticsLocationFromCommandOrigin(arg0) {
-  if (arg1(dependencyMap[9]).CommandOrigin.APPLICATION_LAUNCHER === arg0) {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.APP_LAUNCHER;
-  } else if (arg1(dependencyMap[9]).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
-  } else if (arg1(dependencyMap[9]).CommandOrigin.IMAGE_RECS_MENU === arg0) {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
-  } else if (arg1(dependencyMap[9]).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
-  } else if (arg1(dependencyMap[9]).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
-  } else if (arg1(dependencyMap[9]).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
-  } else if (arg1(dependencyMap[9]).CommandOrigin.MINI_SHELF === arg0) {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
-  } else if (arg1(dependencyMap[9]).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
-  } else if (arg1(dependencyMap[9]).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
+  if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.APP_LAUNCHER;
+  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
+  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.IMAGE_RECS_MENU === arg0) {
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
+  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
+  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
+  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
+  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.MINI_SHELF === arg0) {
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
+  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
+  } else if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
   } else {
-    return arg1(dependencyMap[9]).ApplicationCommandTriggerLocations.SLASH_UI;
+    return require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerLocations.SLASH_UI;
   }
 }
 function getMaxAndTotalFileSize() {
   return _getMaxAndTotalFileSize(...arguments);
 }
 async function _getMaxAndTotalFileSize(arg0, arg1, arg2) {
-  const tmp = callback(arg0);
+  const tmp = outer2_16(arg0);
   const iter = tmp();
   let iter2 = iter;
   let num = 0;
@@ -1647,31 +1662,34 @@ async function _getMaxAndTotalFileSize(arg0, arg1, arg2) {
   const obj = { totalSize: num3, largestUploadedFileSize: num4 };
   return obj;
 }
-async function _stageAttachments(arg0, arg1, guildId, arg3, arg4) {
+async function _stageAttachments(arg0, arg1, arg2, arg3, arg4) {
   let largestUploadedFileSize;
   let totalSize;
-  let maxFileSizeResult;
+  let closure_0 = arg1;
+  let closure_1 = arg3;
+  let c2;
   function handleUploadsTooLarge(largestUploadedFileSize) {
-    if (null != arg3) {
-      arg3(maxFileSizeResult, largestUploadedFileSize);
+    if (null != callback) {
+      callback(c2, largestUploadedFileSize);
     }
-    let obj = maxFileSizeResult(closure_3[24]);
-    const intl = arg1(closure_3[32]).intl;
-    obj = { maxSize: arg1(closure_3[31]).sizeString(maxFileSizeResult) };
-    obj.setFailed(arg1, constants.ENTITY_TOO_LARGE, intl.formatToPlainString(arg1(closure_3[32]).t.fxEKdS, obj));
+    let obj = outer3_2(outer3_3[24]);
+    const intl = outer3_0(outer3_3[32]).intl;
+    obj = { maxSize: outer3_0(outer3_3[31]).sizeString(c2) };
+    obj.setFailed(closure_0, outer3_11.ENTITY_TOO_LARGE, intl.formatToPlainString(outer3_0(outer3_3[32]).t.fxEKdS, obj));
   }
-  maxFileSizeResult = arg1(closure_3[31]).maxFileSize(guildId);
-  const obj2 = arg1(closure_3[31]);
-  ({ totalSize, largestUploadedFileSize } = yield closure_25(arg0, false));
-  if (largestUploadedFileSize <= Math.max(maxFileSizeResult, closure_15)) {
-    if (totalSize <= arg1(closure_3[33]).MAX_TOTAL_ATTACHMENT_SIZE) {
-      yield closure_1(closure_3[34])(obj);
-      const tmp5 = yield closure_25(obj, true);
+  const maxFileSizeResult = outer2_0(outer2_3[31]).maxFileSize(arg2);
+  c2 = maxFileSizeResult;
+  const obj2 = outer2_0(outer2_3[31]);
+  ({ totalSize, largestUploadedFileSize } = yield outer2_25(arg0, false));
+  if (largestUploadedFileSize <= Math.max(maxFileSizeResult, outer2_15)) {
+    if (totalSize <= outer2_0(outer2_3[33]).MAX_TOTAL_ATTACHMENT_SIZE) {
+      yield outer2_1(outer2_3[34])(obj);
+      const tmp5 = yield outer2_25(obj, true);
       const largestUploadedFileSize2 = tmp5.largestUploadedFileSize;
-      const someResult = obj.some((error) => error.error === constants.ENTITY_TOO_LARGE);
+      const someResult = obj.some((error) => error.error === outer3_11.ENTITY_TOO_LARGE);
       let tmp8 = someResult;
       if (!someResult) {
-        tmp8 = tmp5.totalSize > arg1(closure_3[33]).MAX_TOTAL_ATTACHMENT_SIZE;
+        tmp8 = tmp5.totalSize > outer2_0(outer2_3[33]).MAX_TOTAL_ATTACHMENT_SIZE;
       }
       let flag2 = tmp11;
       if (!!tmp8) {
@@ -1684,17 +1702,8 @@ async function _stageAttachments(arg0, arg1, guildId, arg3, arg4) {
   const result1 = handleUploadsTooLarge(largestUploadedFileSize);
   return false;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-({ AbortCodes: closure_11, AnalyticEvents: closure_12, MessageTypes: closure_13, NON_USER_BOT_DISCRIMINATOR: closure_14 } = arg1(dependencyMap[7]));
-let closure_15 = arg1(dependencyMap[8]).DEFAULT_MOBILE_PRE_COMPRESSION_MAX_ATTACHMENT_SIZE;
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[35]).fileFinishedImporting("modules/application_commands/executeCommand.tsx");
+({ AbortCodes: closure_11, AnalyticEvents: closure_12, MessageTypes: closure_13, NON_USER_BOT_DISCRIMINATOR: closure_14 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/application_commands/executeCommand.tsx");
 
 export default function executeCommand() {
   return _executeCommand(...arguments);

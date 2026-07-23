@@ -1,9 +1,23 @@
-// Module ID: 14788
-// Function ID: 111458
+// Module ID: 14904
+// Function ID: 113626
 // Name: MessagesItemChannelContentIcon
-// Dependencies: []
+// Dependencies: [31, 27, 4142, 10260, 4326, 33, 4130, 689, 1273, 8496, 8497, 10284, 9958, 3840, 4066, 1324, 566, 14206, 3712, 8340, 14905, 21, 4320, 14906, 3834, 8513, 8514, 4126, 8577, 8523, 10255, 3808, 9063, 1212, 14908, 2]
 
-// Module 14788 (MessagesItemChannelContentIcon)
+// Module 14904 (MessagesItemChannelContentIcon)
+import { View } from "Text";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
+import { UnreadSetting } from "ReadStateTypes";
+import jsxProd from "getSystemLocale";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "ChannelListLayoutTypes";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function MessagesItemChannelContentIcon(selected) {
   let blocked;
   let favorite;
@@ -12,67 +26,59 @@ function MessagesItemChannelContentIcon(selected) {
   ({ muted, favorite, ignored, blocked } = selected);
   const tmp = callback4(selected.selected);
   if (blocked) {
-    let obj = { source: importDefault(dependencyMap[9]), size: arg1(dependencyMap[8]).Icon.Sizes.EXTRA_SMALL };
+    let obj = { source: importDefault(8496), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL };
     const items = [, ];
     ({ channelIcon: arr4[0], channelMutedIcon: arr4[1] } = tmp);
     obj.style = items;
-    let tmp2 = callback(arg1(dependencyMap[8]).Icon, obj);
+    let tmp2 = callback(require(1273) /* Button */.Icon, obj);
   } else if (ignored) {
-    obj = { source: importDefault(dependencyMap[10]), size: arg1(dependencyMap[8]).Icon.Sizes.EXTRA_SMALL };
+    obj = { source: importDefault(8497), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL };
     const items1 = [, ];
     ({ channelIcon: arr3[0], channelIgnoredIcon: arr3[1] } = tmp);
     obj.style = items1;
-    tmp2 = callback(arg1(dependencyMap[8]).Icon, obj);
+    tmp2 = callback(require(1273) /* Button */.Icon, obj);
   } else if (muted) {
-    const obj1 = { source: importDefault(dependencyMap[11]), size: arg1(dependencyMap[8]).Icon.Sizes.EXTRA_SMALL };
+    const obj1 = { source: importDefault(10284), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL };
     const items2 = [, ];
     ({ channelIcon: arr2[0], channelMutedIcon: arr2[1] } = tmp);
     obj1.style = items2;
-    tmp2 = callback(arg1(dependencyMap[8]).Icon, obj1);
+    tmp2 = callback(require(1273) /* Button */.Icon, obj1);
   } else {
     tmp2 = null;
     if (favorite) {
-      obj = { source: importDefault(dependencyMap[12]), size: arg1(dependencyMap[8]).Icon.Sizes.EXTRA_SMALL };
+      obj = { source: importDefault(9958), size: require(1273) /* Button */.Icon.Sizes.EXTRA_SMALL };
       const items3 = [, ];
       ({ channelIcon: arr[0], channelFavoriteIcon: arr[1] } = tmp);
       obj.style = items3;
-      tmp2 = callback(arg1(dependencyMap[8]).Icon, obj);
+      tmp2 = callback(require(1273) /* Button */.Icon, obj);
     }
   }
   return tmp2;
 }
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-const SUBTITLE_OPACITY_NORMAL = arg1(dependencyMap[3]).SUBTITLE_OPACITY_NORMAL;
-const UnreadSetting = arg1(dependencyMap[4]).UnreadSetting;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = arg1(dependencyMap[5]));
-let obj1 = arg1(dependencyMap[6]);
-let obj = { content: { flex: 1 }, channelIcon: { alignSelf: "center" }, channelNameAndAccessories: { channel: null, ref: "\u{1F43F}\uFE0F", style: 7 }, channelIcons: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
-obj = { 1630231121: true, 1568559575: true, 1391519586: true, marginLeft: importDefault(dependencyMap[7]).space.PX_4 };
+({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
+let obj = { content: { flex: 1 }, channelIcon: { alignSelf: "center" }, channelNameAndAccessories: { flexDirection: "row", alignItems: "center", width: "100%" }, channelIcons: { flexDirection: "row", alignItems: "center" } };
+obj = { flexDirection: "row", justifyContent: "flex-end", marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
 obj.channelAccessoriesContainer = obj;
-obj1 = { borderRadius: importDefault(dependencyMap[7]).radii.xs, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_4 };
-obj.channelAccessories = obj1;
-const obj2 = { width: null, marginTop: "d66ecc5b57601bd45d541b2c12ca7702", display: "UserPlusIcon", flexDirection: "png", alignSelf: true, gap: importDefault(dependencyMap[7]).space.PX_4 };
+_createForOfIteratorHelperLoose = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_4, paddingVertical: 1 };
+obj.channelAccessories = _createForOfIteratorHelperLoose;
+let obj2 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4, flex: 1, minWidth: 0 };
 obj.channelNameAndBadge = obj2;
-const tmp2 = arg1(dependencyMap[5]);
-obj.botTag = { marginRight: importDefault(dependencyMap[7]).space.PX_4 };
-const obj3 = { marginRight: importDefault(dependencyMap[7]).space.PX_4 };
-obj.contentPadded = { paddingRight: importDefault(dependencyMap[7]).space.PX_40 };
-let closure_10 = obj1.createStyles(obj);
-const obj4 = { paddingRight: importDefault(dependencyMap[7]).space.PX_40 };
-let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1, arg2, arg3, arg4) => {
+obj.botTag = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj3 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_4 };
+obj.contentPadded = { paddingRight: require("_createForOfIteratorHelperLoose").space.PX_40 };
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2, arg3, arg4) => {
   let obj = {};
   obj = {};
   if (arg2) {
-    let MOBILE_TEXT_HEADING_PRIMARY = importDefault(dependencyMap[7]).colors.TEXT_MUTED;
+    let MOBILE_TEXT_HEADING_PRIMARY = importDefault(689).colors.TEXT_MUTED;
   } else {
     if (!arg0) {
       if (!arg1) {
-        MOBILE_TEXT_HEADING_PRIMARY = importDefault(dependencyMap[7]).colors.MESSAGES_ITEM_CHANNEL_TEXT_DEFAULT;
+        MOBILE_TEXT_HEADING_PRIMARY = importDefault(689).colors.MESSAGES_ITEM_CHANNEL_TEXT_DEFAULT;
       }
     }
-    MOBILE_TEXT_HEADING_PRIMARY = importDefault(dependencyMap[7]).colors.MOBILE_TEXT_HEADING_PRIMARY;
+    MOBILE_TEXT_HEADING_PRIMARY = importDefault(689).colors.MOBILE_TEXT_HEADING_PRIMARY;
   }
   obj.color = MOBILE_TEXT_HEADING_PRIMARY;
   obj.channelText = obj;
@@ -88,7 +94,7 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1, arg2, arg3, ar
   }
   obj.opacity = tmp9;
   if (arg4) {
-    const obj1 = { color: importDefault(dependencyMap[7]).colors.TEXT_SUBTLE };
+    const obj1 = { color: importDefault(689).colors.TEXT_SUBTLE };
     let obj2 = obj1;
   } else {
     obj2 = {};
@@ -97,26 +103,25 @@ let closure_11 = arg1(dependencyMap[6]).createStyles((arg0, arg1, arg2, arg3, ar
   obj.timestamp = obj;
   return obj;
 });
-const obj9 = arg1(dependencyMap[6]);
-let closure_12 = arg1(dependencyMap[6]).createStyles((arg0) => {
+let closure_12 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { marginRight: importDefault(dependencyMap[7]).space.PX_4 };
+  obj = { marginRight: importDefault(689).space.PX_4 };
   obj.channelIcon = obj;
   obj = {};
-  const colors = importDefault(dependencyMap[7]).colors;
+  const colors = importDefault(689).colors;
   obj.tintColor = arg0 ? colors.ICON_SUBTLE : colors.ICON_MUTED;
   obj.channelMutedIcon = obj;
   const obj1 = {};
-  const colors2 = importDefault(dependencyMap[7]).colors;
+  const colors2 = importDefault(689).colors;
   obj1.tintColor = arg0 ? colors2.ICON_SUBTLE : colors2.ICON_MUTED;
   obj.channelFavoriteIcon = obj1;
   const obj2 = {};
-  const colors3 = importDefault(dependencyMap[7]).colors;
+  const colors3 = importDefault(689).colors;
   obj2.tintColor = arg0 ? colors3.ICON_SUBTLE : colors3.ICON_MUTED;
   obj.channelIgnoredIcon = obj2;
   return obj;
 });
-const obj10 = arg1(dependencyMap[6]);
+let obj4 = { paddingRight: require("_createForOfIteratorHelperLoose").space.PX_40 };
 const memoResult = importAllResult.memo(function MessagesItemChannelContent(channel) {
   let blocked;
   let channelSelected;
@@ -128,11 +133,10 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
   let muted;
   let resolvedUnreadSetting;
   channel = channel.channel;
-  const arg1 = channel;
   ({ channelSelected, muted, ignored, blocked, hasUnreadMessages, hasNameplate } = channel);
   ({ favorite, hasActivity, resolvedUnreadSetting } = channel);
-  let obj = arg1(dependencyMap[13]);
-  const isThemeLightResult = obj.isThemeLight(importDefault(dependencyMap[14])());
+  let obj = channel(3840);
+  const isThemeLightResult = obj.isThemeLight(importDefault(4066)());
   let tmp3 = hasUnreadMessages;
   if (hasUnreadMessages) {
     tmp3 = resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES;
@@ -148,23 +152,23 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
     tmp5 = !channelSelected;
   }
   const tmp6 = callback2();
-  const tmp7 = callback3(channelSelected, tmp3, tmp5, hasNameplate, importDefault(dependencyMap[15])("MessagesItemChannelContent"));
-  let obj1 = arg1(dependencyMap[16]);
-  const items = [closure_4];
-  const stateFromStores = obj1.useStateFromStores(items, () => closure_4.lastMessageId(channel.id));
-  const tmp9 = importDefault(dependencyMap[17])(channel, { unread: hasUnreadMessages });
+  const tmp7 = callback3(channelSelected, tmp3, tmp5, hasNameplate, importDefault(1324)("MessagesItemChannelContent"));
+  let obj1 = channel(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_4.lastMessageId(channel.id));
+  const tmp9 = importDefault(14206)(channel, { unread: hasUnreadMessages });
   let tmp10 = null != tmp9;
   if (tmp10) {
-    let obj2 = importDefault(dependencyMap[18])();
+    let obj2 = importDefault(3712)();
     tmp10 = obj2.diff(tmp9.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
     const tmp13 = obj2.diff(tmp9.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
   }
   if (tmp10) {
-    tmp10 = !importDefault(dependencyMap[19])(channel.id);
+    tmp10 = !importDefault(8340)(channel.id);
   }
-  let obj3 = arg1(dependencyMap[20]);
+  let obj3 = channel(14905);
   obj = {};
-  let obj5 = importDefault(dependencyMap[21]);
+  let obj5 = importDefault(21);
   let id = stateFromStores;
   if (null == stateFromStores) {
     id = channel.id;
@@ -175,12 +179,12 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
   if (tmp17) {
     tmp17 = channel.recipients.length > 0;
   }
-  const tmp18 = importDefault(dependencyMap[22])(channel);
-  const tmp19 = importDefault(dependencyMap[23])(channel, stateFromStores);
+  const tmp18 = importDefault(4320)(channel);
+  const tmp19 = importDefault(14906)(channel, stateFromStores);
   const waveShouldShow = tmp19.waveShouldShow;
   obj = {};
-  let obj7 = arg1(dependencyMap[24]);
-  obj.variant = obj7.useToken(importDefault(dependencyMap[7]).modules.mobile.MESSAGES_ITEM_CHANNEL_NAME_TEXT_STYLE);
+  let obj7 = channel(3834);
+  obj.variant = obj7.useToken(importDefault(689).modules.mobile.MESSAGES_ITEM_CHANNEL_NAME_TEXT_STYLE);
   const items1 = [, ];
   ({ channelText: arr2[0], channelName: arr2[1] } = tmp7);
   obj.style = items1;
@@ -193,30 +197,30 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
     if (null != channel.recipients) {
       if (channel.recipients.length > 0) {
         const obj4 = { userId: channel.recipients[0], userName: tmp18 };
-        const EffectDisplayType = arg1(dependencyMap[26]).EffectDisplayType;
+        const EffectDisplayType = channel(8514).EffectDisplayType;
         obj4.effectDisplayType = channelSelected ? EffectDisplayType.STATIC : EffectDisplayType.PLAIN;
         obj = Object.assign(obj);
-        callback(importDefault(dependencyMap[25]), obj4);
+        callback(importDefault(8513), obj4);
         const tmp23 = callback;
-        const tmp26 = importDefault(dependencyMap[25]);
+        const tmp26 = importDefault(8513);
       }
     }
   }
   obj5 = {};
   const merged = Object.assign(obj);
   obj5["children"] = tmp18;
-  const items2 = [callback(arg1(dependencyMap[27]).Text, obj5), , ];
+  const items2 = [callback(channel(4126).Text, obj5), , ];
   let tmp32 = null;
   if (tmp17) {
     const obj6 = { userId: channel.recipients[0], disabledTooltip: true };
-    tmp32 = callback(importDefault(dependencyMap[28]), obj6);
+    tmp32 = callback(importDefault(8577), obj6);
   }
   items2[1] = tmp32;
   let tmp36 = null;
   if (channel.isSystemDM()) {
-    obj7 = { style: tmp6.botTag, type: importDefault(dependencyMap[29]).Types.SYSTEM_DM, verified: true };
-    tmp36 = callback(importDefault(dependencyMap[29]), obj7);
-    const tmp40 = importDefault(dependencyMap[29]);
+    obj7 = { style: tmp6.botTag, type: importDefault(8523).Types.SYSTEM_DM, verified: true };
+    tmp36 = callback(importDefault(8523), obj7);
+    const tmp40 = importDefault(8523);
   }
   items2[2] = tmp36;
   obj3.children = items2;
@@ -251,12 +255,12 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
     const items6 = [callback(View, obj12), ];
     let tmp54 = !waveShouldShow;
     if (tmp54) {
-      const obj14 = {};
+      const obj14 = { style: null, variant: "text-xs/medium", lineClamp: 1 };
       const items7 = [, ];
       ({ channelText: arr8[0], timestamp: arr8[1] } = tmp7);
       obj14.style = items7;
       obj14.children = relativeTimestamp;
-      tmp54 = callback(arg1(dependencyMap[27]).Text, obj14);
+      tmp54 = callback(channel(4126).Text, obj14);
     }
     items6[1] = tmp54;
     obj10.children = items6;
@@ -283,9 +287,9 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
         str7 = str6;
       }
       obj16.color = str7;
-      obj16.layout = arg1(dependencyMap[31]).ChannelListLayoutTypes.COZY_DRAWER_SMOL;
+      obj16.layout = channel(3808).ChannelListLayoutTypes.COZY_DRAWER_SMOL;
       obj16.muted = muted;
-      let tmp67Result = callback(arg1(dependencyMap[30]).ChannelRowPreview, obj16);
+      let tmp67Result = callback(channel(10255).ChannelRowPreview, obj16);
       const tmp72 = callback;
     } else if (channel.isDM()) {
       const obj17 = { textStyle: tmp7.channelText, userId: channel.getRecipientId() };
@@ -294,16 +298,16 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
         guild_id = channel.guild_id;
       }
       obj17.guildId = guild_id;
-      tmp67Result = callback(importDefault(dependencyMap[32]), obj17);
+      tmp67Result = callback(importDefault(9063), obj17);
       const tmp67 = callback;
-      const tmp70 = importDefault(dependencyMap[32]);
+      const tmp70 = importDefault(9063);
     } else {
       tmp67Result = null;
-      if (importDefault(dependencyMap[19])(channel.id)) {
-        const obj18 = { guild_id: "7", exports: "channel-row", body: "10", style: tmp7.channelText };
-        const intl = arg1(dependencyMap[33]).intl;
-        obj18.children = intl.string(arg1(dependencyMap[33]).t.FL5T01);
-        tmp67Result = callback(arg1(dependencyMap[27]).Text, obj18);
+      if (importDefault(8340)(channel.id)) {
+        const obj18 = { variant: "text-xs/medium", style: tmp7.channelText, lineClamp: 1 };
+        const intl = channel(1212).intl;
+        obj18.children = intl.string(channel(1212).t.FL5T01);
+        tmp67Result = callback(channel(4126).Text, obj18);
       }
     }
     obj15.children = tmp67Result;
@@ -314,7 +318,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
     let tmp79 = null;
     if (waveShouldShow) {
       const obj20 = { wavePressed: tmp19.wavePressed, hasNameplate };
-      tmp79 = callback(importDefault(dependencyMap[34]), obj20);
+      tmp79 = callback(importDefault(14908), obj20);
     }
     items9[1] = tmp79;
     obj19.children = items9;
@@ -339,6 +343,6 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
     obj21.backgroundColor = combined;
   }
 });
-const result = arg1(dependencyMap[35]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelContent.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelContent.tsx");
 
 export default memoResult;

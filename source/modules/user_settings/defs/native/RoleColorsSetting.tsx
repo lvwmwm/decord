@@ -1,54 +1,56 @@
-// Module ID: 14105
-// Function ID: 107073
+// Module ID: 14219
+// Function ID: 109229
 // Name: useRoleColorSettingValue
-// Dependencies: []
+// Dependencies: [31, 4122, 7662, 566, 13370, 1212, 10095, 2]
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 14105 (useRoleColorSettingValue)
+// Module 14219 (useRoleColorSettingValue)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
 function useRoleColorSettingValue() {
-  const items = [closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => roleStyle.roleStyle);
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.roleStyle);
 }
 function onRoleColorSettingValueChange(roleStyle) {
-  arg1(dependencyMap[4]).setRoleStyle(roleStyle);
+  require(13370) /* setFontSize */.setRoleStyle(roleStyle);
 }
 function useRoleColorSettingOptions() {
   return React.useMemo(() => {
     let obj = {};
-    const intl = callback(closure_1[5]).intl;
-    obj.label = intl.string(callback(closure_1[5]).t.YEOEi6);
+    const intl = outer1_0(outer1_1[5]).intl;
+    obj.label = intl.string(outer1_0(outer1_1[5]).t.YEOEi6);
     obj.value = "username";
     const items = [obj, , ];
     obj = {};
-    const intl2 = callback(closure_1[5]).intl;
-    obj.label = intl2.string(callback(closure_1[5]).t.mQaro3);
+    const intl2 = outer1_0(outer1_1[5]).intl;
+    obj.label = intl2.string(outer1_0(outer1_1[5]).t.mQaro3);
     obj.value = "dot";
     items[1] = obj;
     obj = {};
-    const intl3 = callback(closure_1[5]).intl;
-    obj.label = intl3.string(callback(closure_1[5]).t.Ji2EVJ);
+    const intl3 = outer1_0(outer1_1[5]).intl;
+    obj.label = intl3.string(outer1_0(outer1_1[5]).t.Ji2EVJ);
     obj.value = "hidden";
     items[2] = obj;
     return items;
   }, []);
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let obj = arg1(dependencyMap[6]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.uSOPWm);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.uSOPWm);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.ACCESSIBILITY,
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: useRoleColorSettingValue,
   onValueChange: onRoleColorSettingValueChange,
   useOptions: useRoleColorSettingOptions
 };
-const radio = obj.createRadio(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/RoleColorsSetting.tsx");
+createToggle = createToggle.createRadio(createToggle);
+const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/RoleColorsSetting.tsx");
 
-export default radio;
+export default createToggle;
 export { useRoleColorSettingValue };
 export { onRoleColorSettingValueChange };
 export { useRoleColorSettingOptions };

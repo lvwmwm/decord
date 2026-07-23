@@ -1,52 +1,52 @@
-// Module ID: 13469
-// Function ID: 102256
+// Module ID: 13583
+// Function ID: 104412
 // Name: EditIcon
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 9106, 2]
 // Exports: default
 
-// Module 13469 (EditIcon)
-let closure_2 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { <string:3596066964>: null, <string:3638417373>: null, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH };
-obj.editIcon = obj;
-obj.xs = { borderRadius: importDefault(dependencyMap[4]).radii.md };
-const obj2 = { "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[4]).radii.lg };
-obj.sm = obj2;
-let closure_5 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.md };
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/profile_customization/native/EditIcon.tsx");
+// Module 13583 (EditIcon)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.editIcon = _createForOfIteratorHelperLoose;
+const obj1 = { width: 24, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+_createForOfIteratorHelperLoose.xs = obj1;
+const obj2 = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg };
+_createForOfIteratorHelperLoose.sm = obj2;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/profile_customization/native/EditIcon.tsx");
 
 export default function EditIcon(style) {
   style = style.style;
-  const arg1 = style;
   let str = style.size;
   if (str === undefined) {
     str = "xs";
   }
-  const dependencyMap = str;
   let React;
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   React = tmp;
-  const items = [tmp, style, str];
-  let obj = {
+  let items = [tmp, style, str];
+  obj = {
     style: React.useMemo(() => {
       const obj = {};
-      const items = [tmp.editIcon, , ];
+      const items = [_undefined.editIcon, , ];
       if ("sm" === str) {
-        let xs = tmp.sm;
+        let xs = _undefined.sm;
       } else {
-        xs = tmp.xs;
+        xs = _undefined.xs;
       }
       items[1] = xs;
       items[2] = style;
       obj.iconContainerStyle = items;
       return obj;
     }, items).iconContainerStyle,
-    children: jsx(arg1(dependencyMap[5]).PencilIcon, obj)
+    children: jsx(style(str[5]).PencilIcon, obj)
   };
   obj = { size: str };
-  return <View {...obj} />;
+  return <View size={str} />;
 };

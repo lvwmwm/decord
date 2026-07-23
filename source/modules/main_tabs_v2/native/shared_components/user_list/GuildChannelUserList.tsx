@@ -1,24 +1,33 @@
-// Module ID: 10857
-// Function ID: 84483
-// Dependencies: []
+// Module ID: 10867
+// Function ID: 84532
+// Dependencies: [57, 31, 27, 5658, 1348, 1917, 1838, 1906, 1849, 653, 33, 7094, 5047, 572, 5688, 5464, 566, 8832, 3763, 10868, 8413, 4319, 3969, 1212, 8492, 689, 5772, 8825, 2]
 
-// Module 10857
-let closure_4 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ EVERYONE_CHANNEL_ID: closure_7, MemberListRowTypes: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = importDefault(dependencyMap[4]);
-let closure_11 = importDefault(dependencyMap[5]);
-let closure_12 = importDefault(dependencyMap[6]);
-let closure_13 = importDefault(dependencyMap[7]);
-let closure_14 = importDefault(dependencyMap[8]);
-const tmp2 = arg1(dependencyMap[3]);
-({ RelationshipTypes: closure_15, StatusTypes: closure_16 } = arg1(dependencyMap[9]));
-const tmp3 = arg1(dependencyMap[9]);
-({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = arg1(dependencyMap[10]));
+// Module 10867
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { View } from "Placeholder";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ EVERYONE_CHANNEL_ID: closure_7, MemberListRowTypes: closure_8 } = _isNativeReflectConstruct);
+({ RelationshipTypes: closure_15, StatusTypes: closure_16 } = ME);
+({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = jsxProd);
 let closure_20 = [];
-const tmp4 = arg1(dependencyMap[10]);
 const memoResult = importAllResult.memo(function GuildChannelUserList(searchable) {
   let canShowDisplayNameStylesFont;
   let disableBottomSafeZone;
@@ -38,80 +47,68 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
   if (flag === undefined) {
     flag = false;
   }
-  const channelId = searchable.channelId;
-  const arg1 = channelId;
-  const guildId = searchable.guildId;
-  const importDefault = guildId;
+  let channelId = searchable.channelId;
+  let guildId = searchable.guildId;
   const roleId = searchable.roleId;
-  const importAll = roleId;
   ({ headerShown, searchableEmptyState } = searchable);
   if (headerShown === undefined) {
     headerShown = true;
   }
   const onUserPress = searchable.onUserPress;
-  const dependencyMap = onUserPress;
   const onUserLongPress = searchable.onUserLongPress;
-  let closure_4 = onUserLongPress;
   let flag2 = searchable.opensUserProfileOnUserPress;
   if (flag2 === undefined) {
     flag2 = true;
   }
   const isNameplatedList = searchable.isNameplatedList;
-  const View = isNameplatedList;
   ({ canShowDisplayNameStylesFont, disableStickySections, inActionSheet, disableThemedGradient, listStyleOverride, disableBottomSafeZone, insetEnd } = searchable);
   if (canShowDisplayNameStylesFont === undefined) {
     canShowDisplayNameStylesFont = false;
   }
   let analyticsLocations;
-  let closure_9;
-  let closure_10;
-  let closure_11;
-  let closure_12;
-  let closure_13;
-  let closure_14;
+  let hasQuery;
+  let queryResults;
+  let groups;
+  let rows;
+  let stateFromStores;
+  let stateFromStores1;
   let memo;
   let ref1;
   let ref2;
-  let tmp10;
+  let c18;
   let stateFromStoresArray;
-  let closure_20;
+  let c20;
   let memo1;
-  analyticsLocations = importDefault(dependencyMap[15])().analyticsLocations;
-  const ref = flag2.useRef(null);
+  analyticsLocations = guildId(onUserPress[15])().analyticsLocations;
+  let ref = flag2.useRef(null);
   let obj = { guildId, listRef: ref, searchable: flag, searchableEmptyState };
-  const tmp2 = function useSearchableConfig(guildId) {
+  let tmp2 = (function useSearchableConfig(guildId) {
     guildId = guildId.guildId;
-    const channelId = guildId;
     const listRef = guildId.listRef;
-    guildId = listRef;
     const searchable = guildId.searchable;
-    const roleId = searchable;
     const searchableEmptyState = guildId.searchableEmptyState;
-    const onUserPress = searchableEmptyState;
     const ref = flag2.useRef(null);
-    const onUserLongPress = ref;
     const tmp2 = onUserLongPress(flag2.useState(""), 2);
+    const str = tmp2[0];
     let closure_6 = tmp2[1];
-    const tmp3 = onUserLongPress(tmp2[0].useState(tmp17), 2);
+    const tmp3 = onUserLongPress(flag2.useState(c20), 2);
     const first = tmp3[0];
-    const canShowDisplayNameStylesFont = first;
     let closure_8 = tmp3[1];
     const first1 = onUserLongPress(flag2.useState(() => {
-      let tmp = listRef(searchableEmptyState[11]);
-      const items = [guildId(searchableEmptyState[11]).AutocompleterResultTypes.USER];
-      let obj = { userFilters: obj };
+      let tmp = guildId(onUserPress[11]);
+      const items = [channelId(onUserPress[11]).AutocompleterResultTypes.USER];
+      obj = { userFilters: obj };
       obj = { guild: guildId, strict: true };
       tmp = new tmp((arg0, str) => {
         if ("" === str.trim()) {
-          callback(closure_20);
+          outer1_8(c20);
         } else {
-          callback(arg0);
+          outer1_8(arg0);
         }
       }, items, undefined, obj);
       return tmp;
     }), 1)[0];
-    const hasQuery = first1;
-    const items = [searchable, first1];
+    let items = [searchable, first1];
     const effect = flag2.useEffect(() => {
       if (searchable) {
         const searchContext = first1.createSearchContext();
@@ -124,18 +121,17 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
         }
       }
     }, items);
-    const tmp7 = "" !== tmp2[0].trim();
-    const tmp8 = onUserLongPress(tmp2[0].useState(searchable), 2);
+    const tmp7 = "" !== str.trim();
+    const tmp8 = onUserLongPress(flag2.useState(searchable), 2);
     const first2 = tmp8[0];
-    const groups = first2;
-    let closure_12 = tmp8[1];
+    let _createForOfIteratorHelperLoose = tmp8[1];
     const items1 = [first, tmp7];
     const effect1 = flag2.useEffect(() => {
       if (first.length <= 0) {
-        if (tmp7) {
+        if (closure_10) {
           const _setTimeout = setTimeout;
           const timeout = setTimeout(() => {
-            callback(false);
+            outer1_12(false);
           }, 300);
           return () => {
             clearTimeout(closure_0);
@@ -144,7 +140,7 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
       }
       callback2(true);
     }, items1);
-    const items2 = [listRef, tmp2[0]];
+    const items2 = [listRef, str];
     const layoutEffect = flag2.useLayoutEffect(() => {
       const current = listRef.current;
       if (null != current) {
@@ -152,13 +148,13 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
       }
     }, items2);
     const items3 = [first1, guildId];
-    const items4 = [searchable, searchableEmptyState, first2, tmp2[0]];
+    const items4 = [searchable, searchableEmptyState, first2, str];
     const callback = flag2.useCallback((str) => {
       first1.search(str);
       callback(str);
       if ("" !== str.trim()) {
-        const members = listRef(searchableEmptyState[12]).requestMembers(guildId, str);
-        const obj = listRef(searchableEmptyState[12]);
+        const members = guildId(onUserPress[12]).requestMembers(guildId, str);
+        const obj = guildId(onUserPress[12]);
       }
     }, items3);
     return {
@@ -166,7 +162,7 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
       queryResults: first,
       onChangeText: callback,
       searchBarRef: ref,
-      searchBarEmptyState: tmp2[0].useMemo(() => {
+      searchBarEmptyState: flag2.useMemo(() => {
         let tmp = null;
         if (searchable) {
           tmp = null;
@@ -181,13 +177,12 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
         return tmp;
       }, items4)
     };
-  }(obj);
-  const hasQuery = tmp2.hasQuery;
-  closure_9 = hasQuery;
-  closure_10 = queryResults;
+  })(obj);
+  hasQuery = tmp2.hasQuery;
+  queryResults = tmp2.queryResults;
   ({ onChangeText, searchBarRef, searchBarEmptyState } = tmp2);
-  let obj1 = arg1(dependencyMap[16]);
-  const items = [closure_9];
+  let obj1 = channelId(onUserPress[16]);
+  let items = [hasQuery];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items, () => {
     let tmp3 = null;
     if (channelId !== canShowDisplayNameStylesFont) {
@@ -195,24 +190,20 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
     }
     return hasQuery.getProps(guildId, tmp3);
   });
-  let groups = stateFromStoresObject.groups;
-  closure_11 = groups;
-  const rows = stateFromStoresObject.rows;
-  closure_12 = rows;
-  let obj2 = arg1(dependencyMap[16]);
-  const items1 = [closure_10];
-  const stateFromStores = obj2.useStateFromStores(items1, () => {
+  groups = stateFromStoresObject.groups;
+  rows = stateFromStoresObject.rows;
+  let obj2 = channelId(onUserPress[16]);
+  let items1 = [queryResults];
+  stateFromStores = obj2.useStateFromStores(items1, () => {
     if (channelId !== canShowDisplayNameStylesFont) {
       return queryResults.getChannel(channelId);
     }
   });
-  closure_13 = stateFromStores;
-  let obj3 = arg1(dependencyMap[16]);
-  const items2 = [closure_13];
-  const stateFromStores1 = obj3.useStateFromStores(items2, () => stateFromStores.getChannelId());
-  closure_14 = stateFromStores1;
-  const items3 = [guildId];
-  memo = importAllResult.useMemo(() => {
+  let obj3 = channelId(onUserPress[16]);
+  let items2 = [stateFromStores];
+  stateFromStores1 = obj3.useStateFromStores(items2, () => stateFromStores.getChannelId());
+  let items3 = [guildId];
+  memo = flag2.useMemo(() => {
     const guild = rows.getGuild(guildId);
     let guildVisualOwnerId;
     if (null != guild) {
@@ -221,66 +212,61 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
     }
     return guildVisualOwnerId;
   }, items3);
-  ref1 = importAllResult.useRef(0);
-  ref2 = importAllResult.useRef(0);
-  tmp10 = function useThrottledUpdateSubscription(guildId) {
+  ref1 = flag2.useRef(0);
+  ref2 = flag2.useRef(0);
+  const tmp10 = (function useThrottledUpdateSubscription(guildId) {
     guildId = guildId.guildId;
-    let channelId = guildId;
-    channelId = guildId.channelId;
-    guildId = channelId;
+    const channelId = guildId.channelId;
     const hasQuery = guildId.hasQuery;
-    const roleId = hasQuery;
     const listRef = guildId.listRef;
-    const onUserPress = listRef;
     const scrollOffsetRef = guildId.scrollOffsetRef;
-    const onUserLongPress = scrollOffsetRef;
     const heightRef = guildId.heightRef;
     const scaledRowHeight = guildId.scaledRowHeight;
-    const isNameplatedList = scaledRowHeight;
     const items = [channelId, guildId, hasQuery, scaledRowHeight, heightRef, listRef, scrollOffsetRef];
-    return heightRef.useMemo(() => channelId(listRef[13])(() => {
-      let tmp = null == ref.current || closure_2;
+    return flag2.useMemo(() => guildId(onUserPress[13])(() => {
+      let tmp = null == outer1_3.current || outer1_2;
       if (!tmp) {
-        let tmp4 = closure_1 !== closure_7;
+        let tmp4 = outer1_1 !== canShowDisplayNameStylesFont;
         if (tmp4) {
-          tmp4 = null == channel.getChannel(closure_1);
+          tmp4 = null == queryResults.getChannel(outer1_1);
         }
         tmp = tmp4;
       }
       if (!tmp) {
-        let obj = callback(ref[14]);
-        obj = { guildId: callback, channelId: closure_1, y: ref2.current, height: ref3.current, rowHeight: closure_6 };
+        let obj = channelId(onUserPress[14]);
+        obj = { guildId: outer1_0, channelId: outer1_1, y: outer1_4.current, height: outer1_5.current, rowHeight: outer1_6 };
         const result = obj.subscribeChannelDimensions(obj);
       }
     }, 50), items);
-  }({ guildId, channelId, hasQuery, listRef: ref, scrollOffsetRef: ref2, heightRef: ref1, scaledRowHeight: importDefault(dependencyMap[17])() });
-  const items4 = [tmp10];
+  })({ guildId, channelId, hasQuery, listRef: ref, scrollOffsetRef: ref2, heightRef: ref1, scaledRowHeight: guildId(onUserPress[17])() });
+  c18 = tmp10;
+  let items4 = [tmp10];
   const items5 = [tmp10];
-  const callback = importAllResult.useCallback((nativeEvent) => {
+  let callback = flag2.useCallback((nativeEvent) => {
     ref1.current = nativeEvent.nativeEvent.layout.height;
-    tmp10();
+    _undefined();
   }, items4);
-  const callback1 = importAllResult.useCallback((nativeEvent) => {
+  const callback1 = flag2.useCallback((nativeEvent) => {
     ref2.current = nativeEvent.nativeEvent.contentOffset.y;
-    tmp10();
+    _undefined();
   }, items5);
   obj = { channel: stateFromStores };
   let tmp14 = hasQuery;
-  const tmp6 = importDefault(dependencyMap[17])();
+  let tmp6 = guildId(onUserPress[17])();
   if (!hasQuery) {
     tmp14 = !headerShown;
   }
   obj.disable = tmp14;
-  const tmp13 = importDefault(dependencyMap[19]);
+  const tmp13 = guildId(onUserPress[19]);
   const items6 = [stateFromStores, tmp10];
-  ({ listActionRenderer, listActionHeight } = importDefault(dependencyMap[19])(obj));
-  const effect = importAllResult.useEffect(() => {
+  ({ listActionRenderer, listActionHeight } = guildId(onUserPress[19])(obj));
+  let effect = flag2.useEffect(() => {
     if (null != stateFromStores) {
-      tmp10();
+      _undefined();
     }
   }, items6);
-  let obj5 = arg1(dependencyMap[16]);
-  const items7 = [closure_11, closure_14];
+  let obj5 = channelId(onUserPress[16]);
+  const items7 = [groups, stateFromStores1];
   stateFromStoresArray = obj5.useStateFromStoresArray(items7, () => {
     if (null != roleId) {
       if (!obj2.isEveryoneRoleId(guildId, roleId)) {
@@ -288,29 +274,29 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
         if (channelId !== canShowDisplayNameStylesFont) {
           tmp3 = channelId;
         }
-        const channelId = tmp3;
+        channelId = tmp3;
         const members = groups.getMembers(guildId);
         const found = members.filter((roles) => {
           roles = roles.roles;
-          let hasItem = roles.includes(closure_2);
+          let hasItem = roles.includes(outer1_2);
           if (hasItem) {
-            hasItem = null != authStore.getUser(roles.userId);
+            hasItem = null != stateFromStores1.getUser(roles.userId);
           }
           return hasItem;
         });
         return found.sort((userId, userId2) => {
-          const user = authStore.getUser(userId.userId);
-          const user1 = authStore.getUser(userId2.userId);
-          let nickname = callback(closure_3[21]).getNickname(callback, tmp3, user);
+          const user = stateFromStores1.getUser(userId.userId);
+          const user1 = stateFromStores1.getUser(userId2.userId);
+          let nickname = guildId(onUserPress[21]).getNickname(outer1_1, closure_0, user);
           if (null == nickname) {
-            nickname = callback(closure_3[22]).getGlobalName(user);
-            const obj2 = callback(closure_3[22]);
+            nickname = guildId(onUserPress[22]).getGlobalName(user);
+            const obj2 = guildId(onUserPress[22]);
           }
-          const obj = callback(closure_3[21]);
-          let nickname1 = callback(closure_3[21]).getNickname(callback, tmp3, user1);
+          const obj = guildId(onUserPress[21]);
+          let nickname1 = guildId(onUserPress[21]).getNickname(outer1_1, closure_0, user1);
           if (null == nickname1) {
-            nickname1 = callback(closure_3[22]).getGlobalName(user1);
-            const obj4 = callback(closure_3[22]);
+            nickname1 = guildId(onUserPress[22]).getGlobalName(user1);
+            const obj4 = guildId(onUserPress[22]);
           }
           let str = "";
           let str2 = "";
@@ -323,27 +309,27 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
           return str2.localeCompare(str);
         });
       }
-      const obj2 = channelId(onUserPress[20]);
+      obj2 = channelId(onUserPress[20]);
     }
     return [];
   });
   let tmp17 = null != roleId;
   if (tmp17) {
-    tmp17 = !arg1(dependencyMap[20]).isEveryoneRoleId(guildId, roleId);
-    const obj7 = arg1(dependencyMap[20]);
+    tmp17 = !channelId(onUserPress[20]).isEveryoneRoleId(guildId, roleId);
+    const obj7 = channelId(onUserPress[20]);
   }
-  closure_20 = tmp17;
-  const items8 = [guildId, roleId, tmp17, hasQuery, tmp2.queryResults];
-  memo1 = importAllResult.useMemo(() => {
-    if (tmp17) {
+  c20 = tmp17;
+  const items8 = [guildId, roleId, tmp17, hasQuery, queryResults];
+  memo1 = flag2.useMemo(() => {
+    if (c20) {
       if (hasQuery) {
         let found = queryResults.filter((record) => {
-          const member = member.getMember(closure_1, record.record.id);
+          const member = groups.getMember(outer1_1, record.record.id);
           let found;
           if (null != member) {
             const roles = member.roles;
             if (null != roles) {
-              found = roles.find((arg0) => arg0 === closure_2);
+              found = roles.find((arg0) => arg0 === outer2_2);
             }
           }
           return null != found;
@@ -355,17 +341,17 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
   }, items8);
   const items9 = [groups, memo1, tmp17];
   const items10 = [tmp17, stateFromStoresArray, memo1, hasQuery, guildId, rows, groups, memo, onUserPress, flag2, channelId, stateFromStores1, onUserLongPress, analyticsLocations, isNameplatedList, canShowDisplayNameStylesFont];
-  const callback2 = importAllResult.useCallback((arg0) => {
+  const callback2 = flag2.useCallback((arg0) => {
     let count;
     let title;
     if (memo1.length > 0) {
       let obj = { type: "section" };
       obj = {};
       const intl = channelId(onUserPress[23]).intl;
-      obj.title = intl.string(channelId(onUserPress[23]).t.zkoeq/);
+      obj.title = intl.string(channelId(onUserPress[23]).t["zkoeq/"]);
       obj.props = obj;
       return obj;
-    } else if (!tmp17) {
+    } else if (!c20) {
       ({ title, count } = groups[arg0]);
       if (null != title) {
         if (0 !== count) {
@@ -386,31 +372,32 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
   }, items9);
   obj = {};
   let tmp24 = null;
-  const callback3 = importAllResult.useCallback((arg0, guildId) => {
+  const callback3 = flag2.useCallback((arg0, guildId) => {
     let comparator;
     let guildMember;
-    const channelId = arg0;
+    let closure_0 = arg0;
+    let closure_1 = guildId;
     function getIndex(arg0) {
-      if (!closure_20) {
-        if (!closure_9) {
+      if (!outer1_20) {
+        if (!outer1_9) {
           let num = 0;
           let num2 = 0;
           let num3 = 0;
-          if (0 < arg0) {
+          if (0 < closure_0) {
             do {
-              let tmp3 = closure_11;
-              num2 = num2 + closure_11[num3].count;
+              let tmp3 = outer1_11;
+              num2 = num2 + outer1_11[num3].count;
               num3 = num3 + 1;
               let tmp4 = closure_0;
               num = num2;
             } while (num3 < closure_0);
           }
-          return num + arg1;
+          return num + closure_1;
         }
       }
-      return arg1;
+      return closure_1;
     }
-    if (tmp17) {
+    if (c20) {
       if (!hasQuery) {
         if (guildId < stateFromStoresArray.length) {
           let user = stateFromStores1.getUser(tmp5.userId);
@@ -422,9 +409,7 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
       }
       if (null != tmp3) {
         user = tmp3.user;
-        const roleId = user;
         const memberListMember = tmp3.memberListMember;
-        const onUserPress = memberListMember;
         ({ guildMember, comparator } = tmp3);
         obj = { type: "user" };
         obj = { type: memo.NONE, user };
@@ -490,26 +475,26 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
           isOwner = memo === user.id;
         }
         obj.isOwner = isOwner;
-        obj.guildId = guildId;
+        obj.guildId = closure_1;
         obj.canShowDisplayNameStylesFont = canShowDisplayNameStylesFont;
         obj.onPress = function onPress(user) {
           if (null != memberListMember) {
             let obj = { user, index: getIndex() };
             memberListMember(obj);
           }
-          if (closure_5) {
-            obj = { userId: user.id, channelId: user !== closure_7 ? user : closure_14 };
+          if (outer1_5) {
+            obj = { userId: user.id, channelId: closure_0 !== canShowDisplayNameStylesFont ? closure_0 : outer1_14 };
             let colorRoleId;
             if (null != memberListMember) {
               colorRoleId = memberListMember.colorRoleId;
             }
             obj.roleId = colorRoleId;
-            obj.sourceAnalyticsLocations = closure_8;
-            arg1(memberListMember[24])(obj);
-            const tmp6 = arg1(memberListMember[24]);
+            obj.sourceAnalyticsLocations = outer1_8;
+            guildId(onUserPress[24])(obj);
+            const tmp6 = guildId(onUserPress[24]);
           }
         };
-        obj.onLongPress = () => null != getIndex ? () => callback({ user: closure_2, index: callback() }) : undefined();
+        obj.onLongPress = (() => null != getIndex ? (() => getIndex({ user: outer1_2, index: outer1_4() })) : undefined)();
         obj.start = tmp23;
         obj.end = tmp3.end;
         obj.props = obj;
@@ -529,11 +514,11 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
       }
       if (null != tmp16) {
         const record = tmp16.record;
-        const member = groups.getMember(guildId, record.id);
+        const member = groups.getMember(closure_1, record.id);
         if (null != member) {
           const obj3 = { user: record, guildMember: member };
           comparator = undefined;
-          if (!tmp17) {
+          if (!c20) {
             comparator = tmp16.comparator;
           }
           obj3.comparator = comparator;
@@ -541,23 +526,26 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
           tmp3 = obj3;
         }
       }
-    } else if (null != rows[closure_11[arg0].index + 1 + guildId]) {
-      if (tmp12.type === analyticsLocations.MEMBER) {
-        const obj4 = { user: tmp12.user, memberListMember: tmp12, end: guildId === groups[arg0].count - 1 };
-        tmp3 = obj4;
+    } else {
+      const tmp12 = rows[groups[arg0].index + 1 + guildId];
+      if (null != tmp12) {
+        if (tmp12.type === analyticsLocations.MEMBER) {
+          const obj4 = { user: tmp12.user, memberListMember: tmp12, end: guildId === groups[arg0].count - 1 };
+          tmp3 = obj4;
+        }
       }
     }
   }, items10);
   if (flag) {
     obj1 = {};
     obj2 = {};
-    obj3 = { marginHorizontal: importDefault(dependencyMap[25]).space.PX_16 };
+    obj3 = { marginHorizontal: guildId(onUserPress[25]).space.PX_16 };
     obj2.style = obj3;
-    const obj4 = { size: "md", onChange: onChangeText, ref: searchBarRef };
-    obj2.children = ref2(arg1(dependencyMap[26]).SearchField, obj4);
-    const items11 = [ref2(View, obj2), searchBarEmptyState];
+    let obj4 = { size: "md", onChange: onChangeText, ref: searchBarRef };
+    obj2.children = ref2(channelId(onUserPress[26]).SearchField, obj4);
+    const items11 = [ref2(isNameplatedList, obj2), searchBarEmptyState];
     obj1.children = items11;
-    tmp24 = stateFromStoresArray(tmp10, obj1);
+    tmp24 = stateFromStoresArray(c18, obj1);
   }
   const items12 = [tmp24, ];
   obj5 = { ref };
@@ -583,7 +571,7 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
       }
       items12[1] = ref2(tmp33, obj5, str2);
       obj.children = items12;
-      return stateFromStoresArray(tmp10, obj);
+      return stateFromStoresArray(c18, obj);
     }
   }
   if (hasQuery) {
@@ -595,6 +583,6 @@ const memoResult = importAllResult.memo(function GuildChannelUserList(searchable
     mapped = groups.map((count) => count.count);
   }
 });
-const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/GuildChannelUserList.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/GuildChannelUserList.tsx");
 
 export default memoResult;

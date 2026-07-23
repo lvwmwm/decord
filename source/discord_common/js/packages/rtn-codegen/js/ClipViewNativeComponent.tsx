@@ -1,14 +1,14 @@
-// Module ID: 7868
-// Function ID: 62674
+// Module ID: 7875
+// Function ID: 62712
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42, 2]
 
-// Module 7868 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "ClipView", validAttributes: { "Bool(false)": null, "Bool(false)": null } };
-const _module = require(dependencyMap[0]);
-const value = _module.get("ClipView", () => obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ClipViewNativeComponent.tsx");
+// Module 7875 (__INTERNAL_VIEW_CONFIG)
+import get from "get";
+
+const obj = { uiViewClassName: "ClipView", validAttributes: { cutouts: true } };
+const value = get.get("ClipView", () => obj);
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ClipViewNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

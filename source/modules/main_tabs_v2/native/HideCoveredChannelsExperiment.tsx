@@ -1,13 +1,13 @@
-// Module ID: 15142
-// Function ID: 114261
+// Module ID: 15257
+// Function ID: 116430
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 15142 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: 291327, DateToSystemTimezoneSetter: 1090584576, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/main_tabs_v2/native/HideCoveredChannelsExperiment.tsx");
+// Module 15257 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-hide-covered-channels", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/HideCoveredChannelsExperiment.tsx");
 
 export default apexExperiment;

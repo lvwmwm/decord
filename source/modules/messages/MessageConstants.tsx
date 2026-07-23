@@ -1,26 +1,26 @@
-// Module ID: 4121
-// Function ID: 34289
+// Module ID: 4123
+// Function ID: 34298
 // Name: MESSAGE_GROUP_SPACING
-// Dependencies: []
+// Dependencies: [653, 664, 561, 2]
 // Exports: isChannelStreamMessage
 
-// Module 4121 (MESSAGE_GROUP_SPACING)
-const ChannelStreamTypes = require(dependencyMap[0]).ChannelStreamTypes;
+// Module 4123 (MESSAGE_GROUP_SPACING)
+import { ChannelStreamTypes } from "ME";
+import importDefaultResult from "Backoff";
+
 let obj = {};
 obj = {};
-const frozen = Object.freeze({ "Bool(true)": -1882570463, detectableGamesEtag: 1360068610, detectableGames: 1361143520, blocklistEtag: 1340580, total: 1310720, progress: 1310720, mode: 1310720, modeOptions: -952041472, echoCancellation: 1895826512, noiseSuppression: 1, automaticGainControl: -873112494 });
-obj.response = 10 * importDefault(dependencyMap[1]).Millis.SECOND;
-obj.deadline = importDefault(dependencyMap[1]).Millis.MINUTE;
+const frozen = Object.freeze({ referencedAvatarProfile: false, referencedUsernameProfile: false, interactionAvatarProfile: false, interactionUsernameProfile: false, interactionData: false, avatarProfile: false, usernameProfile: false, emojiPicker: false, emojiBurstPicker: false, moreUtilities: false, contextMenu: false });
+obj.response = 10 * require("set").Millis.SECOND;
+obj.deadline = require("set").Millis.MINUTE;
 obj.timeout = obj;
-let importDefaultResult = importDefault(dependencyMap[2]);
-const result = 0.5 * importDefault(dependencyMap[1]).Millis.SECOND;
-importDefaultResult = new importDefaultResult(result, 60 * importDefault(dependencyMap[1]).Millis.SECOND);
+const result = 0.5 * require("set").Millis.SECOND;
+importDefaultResult = new importDefaultResult(result, 60 * require("set").Millis.SECOND);
 obj.backoff = importDefaultResult;
 obj.retries = 8;
-const _module = require(dependencyMap[3]);
-const result1 = _module.fileFinishedImporting("modules/messages/MessageConstants.tsx");
+const result1 = require("Backoff").fileFinishedImporting("modules/messages/MessageConstants.tsx");
 
-export const MESSAGE_GROUP_SPACING = [680568770041389000000000000000000000000, null, null, null, null];
+export const MESSAGE_GROUP_SPACING = [0, 4, 8, 16, 24];
 export const DEFAULT_COZY_SPACING = 16;
 export const DEFAULT_COMPACT_SPACING = 0;
 export const DEFAULT_POPOUTS = frozen;

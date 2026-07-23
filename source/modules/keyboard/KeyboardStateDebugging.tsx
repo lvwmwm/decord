@@ -1,29 +1,31 @@
 // Module ID: 1819
-// Function ID: 19984
-// Dependencies: []
+// Function ID: 19985
+// Dependencies: [3, 478, 2]
 
 // Module 1819
-let importDefaultResult = importDefault(dependencyMap[0]);
+import importDefaultResult from "timestamp";
+
+const require = arg1;
 importDefaultResult = new importDefaultResult("KeyboardStateDebugging");
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/keyboard/KeyboardStateDebugging.tsx");
+const result = require("set").fileFinishedImporting("modules/keyboard/KeyboardStateDebugging.tsx");
 
 export default {
   channelSafeAreaBottomLayoutHeightChanged(layoutHeight) {
-    let obj = arg1(dependencyMap[1]);
+    let obj = require(478) /* isWindows */;
     if (!obj.isIOS()) {
       obj = { layoutHeight };
       importDefaultResult.info("ChannelSafeAreaBottom layout height changed.", obj);
     }
   },
   channelSafeAreaBottomLayoutHeightMismatch(layoutHeight, reportedKeyboardHeight) {
-    let obj = reportedKeyboardHeight(dependencyMap[1]);
+    let obj = require(478) /* isWindows */;
     if (!obj.isIOS()) {
       obj = { layoutHeight, reportedKeyboardHeight };
       importDefaultResult.warn("ChannelSafeAreaBottom layout height mismatch.", obj);
     }
   },
   keyboardControllerKeyboardWillShow(height) {
-    let obj = arg1(dependencyMap[1]);
+    let obj = require(478) /* isWindows */;
     if (!obj.isIOS()) {
       obj = { height };
       importDefaultResult.info("KeyboardController keyboardWillShow.", obj);
@@ -34,7 +36,7 @@ export default {
     if (arg1 === undefined) {
       flag = false;
     }
-    let obj = arg1(dependencyMap[1]);
+    let obj = require(478) /* isWindows */;
     if (!obj.isIOS()) {
       obj = { height, rootProvider: flag };
       importDefaultResult.info("KeyboardController keyboardDidShow.", obj);
@@ -45,7 +47,7 @@ export default {
     if (arg2 === undefined) {
       flag = false;
     }
-    let obj = height(dependencyMap[1]);
+    let obj = require(478) /* isWindows */;
     if (!obj.isIOS()) {
       const _HermesInternal = HermesInternal;
       obj = { height, rootProvider: flag };
@@ -62,21 +64,21 @@ export default {
     if (arg0 === undefined) {
       flag = false;
     }
-    let obj = arg1(dependencyMap[1]);
+    let obj = require(478) /* isWindows */;
     if (!obj.isIOS()) {
       obj = { rootProvider: flag };
       importDefaultResult.info("KeyboardController keyboardDidHide.", obj);
     }
   },
   reactNativeKeyboardDidShow(height, KeyboardUIStore) {
-    let obj = KeyboardUIStore(dependencyMap[1]);
+    let obj = require(478) /* isWindows */;
     if (!obj.isIOS()) {
       obj = { height, location: KeyboardUIStore };
       importDefaultResult.info("ReactNativeKeyboard didShow.", obj);
     }
   },
   reactNativeKeyboardDidHide(KeyboardUIStore) {
-    let obj = arg1(dependencyMap[1]);
+    let obj = require(478) /* isWindows */;
     if (!obj.isIOS()) {
       obj = { location: KeyboardUIStore };
       importDefaultResult.info("ReactNativeKeyboard didHide.", obj);

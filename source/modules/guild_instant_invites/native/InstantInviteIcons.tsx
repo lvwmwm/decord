@@ -1,17 +1,17 @@
-// Module ID: 10165
-// Function ID: 78591
+// Module ID: 10173
+// Function ID: 78631
 // Name: get more
-// Dependencies: []
+// Dependencies: [27, 10174, 10175, 10176, 10177, 2]
 
-// Module 10165 (get more)
-const Platform = require(dependencyMap[0]).Platform;
+// Module 10173 (get more)
+import { Platform } from "get ActivityIndicator";
+
 const obj = {};
-Object.defineProperty(obj, "more", { get: () => require(dependencyMap[1]), set: undefined });
-Object.defineProperty(obj, "share", { get: () => require(dependencyMap[2]), set: undefined });
-Object.defineProperty(obj, "revoke", { get: () => require(dependencyMap[3]), set: undefined });
-Object.defineProperty(obj, "copy", { get: () => require(dependencyMap[4]), set: undefined });
+Object.defineProperty(obj, "more", { get: () => require(10174) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "share", { get: () => require(10175) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "revoke", { get: () => require(10176) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "copy", { get: () => require(10177) /* registerAsset */, set: undefined });
 const frozen = Object.freeze(obj);
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteIcons.tsx");
+const result = require("registerAsset").fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteIcons.tsx");
 
 export default frozen;

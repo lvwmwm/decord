@@ -1,14 +1,15 @@
-// Module ID: 10415
-// Function ID: 80251
+// Module ID: 10425
+// Function ID: 80301
 // Name: MoreYouCanDoRow
-// Dependencies: [0, 0, 0, 0]
+// Dependencies: [31, 33, 5165, 2]
 // Exports: default
 
-// Module 10415 (MoreYouCanDoRow)
-import "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 10425 (MoreYouCanDoRow)
+import "result";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/MoreYouCanDoRow.tsx");
+const require = arg1;
+const result = require("TableRowInner").fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/MoreYouCanDoRow.tsx");
 
 export default function MoreYouCanDoRow(arg0) {
   let description;
@@ -18,5 +19,5 @@ export default function MoreYouCanDoRow(arg0) {
   let title;
   let variant;
   ({ title, description, variant, onClick, icon, disabled } = arg0);
-  return jsx(arg1(dependencyMap[2]).TableRow, { label, subLabel, onPress, icon, variant, disabled });
+  return jsx(require(5165) /* TableRowInner */.TableRow, { label, subLabel, onPress, icon, variant, disabled });
 };

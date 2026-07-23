@@ -1,45 +1,47 @@
-// Module ID: 7997
-// Function ID: 63580
+// Module ID: 8003
+// Function ID: 63617
 // Name: useStoreFrontPrice
-// Dependencies: []
+// Dependencies: [31, 653, 3776, 2]
 // Exports: default
 
-// Module 7997 (useStoreFrontPrice)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[1]).PriceSetAssignmentPurchaseTypes;
-const obj = { PRICE_AVAILABLE: "PRICE_AVAILABLE", SUBSCRIPTION_PLAN_UNAVAILABLE: "SUBSCRIPTION_PLAN_UNAVAILABLE", STOREFRONT_UNAVAILABLE: "STOREFRONT_UNAVAILABLE", MISMATCHING_COUNTRIES: "MISMATCHING_COUNTRIES", COUNTRY_PRICE_UNAVAILABLE: "COUNTRY_PRICE_UNAVAILABLE" };
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/billing/native/subscription/useStoreFrontPrice.tsx");
+// Module 8003 (useStoreFrontPrice)
+import result from "result";
+import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME";
+
+const require = arg1;
+let obj = { PRICE_AVAILABLE: "PRICE_AVAILABLE", SUBSCRIPTION_PLAN_UNAVAILABLE: "SUBSCRIPTION_PLAN_UNAVAILABLE", STOREFRONT_UNAVAILABLE: "STOREFRONT_UNAVAILABLE", MISMATCHING_COUNTRIES: "MISMATCHING_COUNTRIES", COUNTRY_PRICE_UNAVAILABLE: "COUNTRY_PRICE_UNAVAILABLE" };
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/billing/native/subscription/useStoreFrontPrice.tsx");
 
 export default function useStoreFrontPrice(arg0, arg1) {
-  arg1 = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   const items = [arg0, arg1];
-  return React.useMemo((self, self2) => {
-    if (null == self) {
-      let PRICE_AVAILABLE = constants2.SUBSCRIPTION_PLAN_UNAVAILABLE;
-    } else if (null == self2) {
-      PRICE_AVAILABLE = constants2.STOREFRONT_UNAVAILABLE;
+  return React.useMemo(() => {
+    if (null == lib) {
+      let PRICE_AVAILABLE = outer1_4.SUBSCRIPTION_PLAN_UNAVAILABLE;
+    } else if (null == closure_1) {
+      PRICE_AVAILABLE = outer1_4.STOREFRONT_UNAVAILABLE;
     } else {
-      const prices = self.prices;
+      const prices = lib.prices;
       let tmp2;
       if (null != prices) {
-        tmp2 = prices[closure_3.MOBILE];
+        tmp2 = prices[outer1_3.MOBILE];
       }
       if (null == tmp2) {
-        PRICE_AVAILABLE = constants2.COUNTRY_PRICE_UNAVAILABLE;
+        PRICE_AVAILABLE = outer1_4.COUNTRY_PRICE_UNAVAILABLE;
       } else {
-        const countryPrices = self(self2[2]).getCountryPrices(self.id, constants.MOBILE);
-        const obj2 = self(self2[2]);
-        let obj = { purchaseType: constants.MOBILE, currency: self2.currency };
-        const experimentalGetPriceResult = self(self2[2]).experimentalGetPrice(self.id, obj);
-        if (countryPrices.countryCode !== self2.country) {
-          PRICE_AVAILABLE = constants2.MISMATCHING_COUNTRIES;
+        const countryPrices = lib(closure_1[2]).getCountryPrices(lib.id, outer1_3.MOBILE);
+        const obj2 = lib(closure_1[2]);
+        let obj = { purchaseType: outer1_3.MOBILE, currency: closure_1.currency };
+        const experimentalGetPriceResult = lib(closure_1[2]).experimentalGetPrice(lib.id, obj);
+        if (countryPrices.countryCode !== closure_1.country) {
+          PRICE_AVAILABLE = outer1_4.MISMATCHING_COUNTRIES;
         } else if (null == experimentalGetPriceResult) {
-          PRICE_AVAILABLE = constants2.COUNTRY_PRICE_UNAVAILABLE;
+          PRICE_AVAILABLE = outer1_4.COUNTRY_PRICE_UNAVAILABLE;
         } else {
-          PRICE_AVAILABLE = constants2.PRICE_AVAILABLE;
+          PRICE_AVAILABLE = outer1_4.PRICE_AVAILABLE;
         }
-        const obj3 = self(self2[2]);
+        const obj3 = lib(closure_1[2]);
       }
     }
     obj = { price: experimentalGetPriceResult, priceState: PRICE_AVAILABLE };

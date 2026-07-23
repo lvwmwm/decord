@@ -1,46 +1,46 @@
-// Module ID: 16118
-// Function ID: 124263
+// Module ID: 16235
+// Function ID: 126436
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1849, 16226, 653, 33, 4130, 689, 1212, 3969, 16228, 1557, 1456, 5045, 16236, 10179, 7520, 5165, 1273, 10759, 16237, 5772, 8502, 7879, 5448, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 16118 (GuildSettingsModalAuditLogFilter)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const AuditLogFilterTypes = arg1(dependencyMap[5]).AuditLogFilterTypes;
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12, paddingVertical: importDefault(dependencyMap[8]).space.PX_16 };
-obj.searchBar = obj;
-obj.allUsersIconContainer = { disableControlsUpdate: "Array", addWindow: "GiftCardFan3dIllustration", parseRoom: "r" };
-let closure_12 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/guild_settings/audit_log/native/GuildSettingsModalAuditLogFilter.tsx");
+// Module 16235 (GuildSettingsModalAuditLogFilter)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { AuditLogFilterTypes } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_9;
+const require = arg1;
+({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.searchBar = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.allUsersIconContainer = { height: 30, width: 30, alignItems: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_settings/audit_log/native/GuildSettingsModalAuditLogFilter.tsx");
 
 export default function GuildSettingsModalAuditLogFilter(data) {
   data = data.data;
-  const arg1 = data;
   const filterType = data.filterType;
-  const importDefault = filterType;
   const guildId = data.guildId;
-  const dependencyMap = guildId;
-  const tmp = callback3();
+  let tmp = _createForOfIteratorHelperLoose();
   let callback = tmp;
-  let obj = arg1(dependencyMap[13]);
+  let obj = data(guildId[13]);
   const navigation = obj.useNavigation();
-  const React = navigation;
-  const tmp3 = callback(React.useState(""), 2);
+  const tmp3 = callback(navigation.useState(""), 2);
   const first = tmp3[0];
-  const View = first;
   const items = [first, data];
-  const memo = React.useMemo(() => ({
+  const memo = navigation.useMemo(() => ({
     data: data.filter((label) => {
-      const formatted = closure_5.toLowerCase();
-      return callback(closure_2[14])(formatted, label.label.toLowerCase());
+      const formatted = outer1_5.toLowerCase();
+      return filterType(guildId[14])(formatted, label.label.toLowerCase());
     }),
     keyExtractor(value) {
       if (null != value.value) {
@@ -54,14 +54,13 @@ export default function GuildSettingsModalAuditLogFilter(data) {
     }
   }), items);
   data = memo.data;
-  let closure_6 = data;
   const items1 = [filterType, navigation];
-  const effect = React.useEffect(() => {
+  const effect = navigation.useEffect(() => {
     const obj = {};
-    if (constants.USER === filterType) {
+    if (outer1_8.USER === filterType) {
       const intl3 = data(guildId[9]).intl;
-      let stringResult = intl3.string(data(guildId[9]).t.hxnY/q);
-    } else if (constants.ACTION === tmp2) {
+      let stringResult = intl3.string(data(guildId[9]).t["hxnY/q"]);
+    } else if (outer1_8.ACTION === tmp2) {
       const intl2 = data(guildId[9]).intl;
       stringResult = intl2.string(data(guildId[9]).t.rautds);
     } else {
@@ -72,17 +71,17 @@ export default function GuildSettingsModalAuditLogFilter(data) {
     navigation.setOptions(obj);
   }, items1);
   const items2 = [filterType, guildId, navigation];
-  callback = React.useCallback((arg0, action) => {
+  callback = navigation.useCallback((arg0, action) => {
     let tmp = action;
     if (arg0) {
-      if (filterType === constants.USER) {
+      if (filterType === outer1_8.USER) {
         let id = null;
         if (null != tmp) {
           id = tmp.id;
         }
         data(guildId[15]).filterByUserId(id, guildId);
         const obj2 = data(guildId[15]);
-      } else if (filterType === constants.ACTION) {
+      } else if (filterType === outer1_8.ACTION) {
         data(guildId[15]).filterByAction(tmp, guildId);
         const obj = data(guildId[15]);
       }
@@ -90,17 +89,15 @@ export default function GuildSettingsModalAuditLogFilter(data) {
       navigation.pop();
     }
   }, items2);
-  let closure_7 = callback;
   const items3 = [filterType, guildId, callback, data.length, tmp.allUsersIconContainer];
   obj = {};
   obj = { style: tmp.searchBar };
-  const callback1 = React.useCallback((item) => {
+  const callback1 = navigation.useCallback((item) => {
     const value = iter.value;
     const data = value;
     const selected = iter.selected;
-    const filterType = selected;
     const index = item.index;
-    if (filterType === constants.USER) {
+    if (selected === outer1_8.USER) {
       if (null !== value) {
         let obj = {
           start: 0 === index,
@@ -108,93 +105,92 @@ export default function GuildSettingsModalAuditLogFilter(data) {
           userId: value.id,
           guildId,
           onPress() {
-                return callback(!selected, value);
+                return outer1_7(!selected, closure_0);
               }
         };
         obj = { selected };
-        obj.trailing = callback(data(guildId[17]).FormRadio, obj);
-        let tmp2Result = callback(filterType(guildId[16]), obj);
+        obj.trailing = outer1_9(data(guildId[17]).FormRadio, obj);
+        let tmp2Result = outer1_9(filterType(guildId[16]), obj);
         const tmp17 = filterType(guildId[16]);
       }
       return tmp2Result;
     }
     obj = { start: 0 === index, end: index === data.length - 1 };
-    if (filterType === constants.USER) {
+    if (selected === outer1_8.USER) {
       const obj1 = { style: tmp.allUsersIconContainer };
       const obj2 = { size: data(guildId[19]).Icon.Sizes.MEDIUM, source: filterType(guildId[20]) };
-      obj1.children = callback(data(guildId[19]).Icon, obj2);
-      let tmp6 = callback(first, obj1);
+      obj1.children = outer1_9(data(guildId[19]).Icon, obj2);
+      let tmp6 = outer1_9(first, obj1);
     } else {
       const obj3 = { action: value };
-      tmp6 = callback(filterType(guildId[21]), obj3);
+      tmp6 = outer1_9(filterType(guildId[21]), obj3);
     }
     obj.icon = tmp6;
     obj.label = item.item.label;
     obj.onPress = function onPress() {
-      return callback(!selected, value);
+      return outer1_7(!selected, closure_0);
     };
-    obj.trailing = callback(data(guildId[17]).FormRadio, { selected });
-    tmp2Result = callback(data(guildId[18]).TableRow, obj);
+    obj.trailing = outer1_9(data(guildId[17]).FormRadio, { selected });
+    tmp2Result = outer1_9(data(guildId[18]).TableRow, obj);
   }, items3);
-  const obj1 = { size: "md" };
+  let obj1 = { size: "md" };
   if (filterType === AuditLogFilterTypes.USER) {
-    const intl3 = arg1(dependencyMap[9]).intl;
-    let stringResult = intl3.string(arg1(dependencyMap[9]).t.pYHobK);
+    let intl3 = data(guildId[9]).intl;
+    let stringResult = intl3.string(data(guildId[9]).t.pYHobK);
   } else if (filterType === AuditLogFilterTypes.ACTION) {
-    const intl2 = arg1(dependencyMap[9]).intl;
-    stringResult = intl2.string(arg1(dependencyMap[9]).t.I288Zx);
+    let intl2 = data(guildId[9]).intl;
+    stringResult = intl2.string(data(guildId[9]).t.I288Zx);
   } else {
-    const intl = arg1(dependencyMap[9]).intl;
-    stringResult = intl.string(arg1(dependencyMap[9]).t.5h0QOP);
+    let intl = data(guildId[9]).intl;
+    stringResult = intl.string(data(guildId[9]).t["5h0QOP"]);
   }
   obj1.placeholder = stringResult;
   obj1.onChange = tmp3[1];
-  obj.children = callback2(arg1(dependencyMap[22]).SearchField, obj1);
-  const items4 = [callback2(View, obj), , ];
+  obj.children = callback2(data(guildId[22]).SearchField, obj1);
+  const items4 = [callback2(first, obj), , ];
   if (0 === data.length) {
-    const obj2 = {};
-    const intl4 = arg1(dependencyMap[9]).intl;
-    obj2.body = intl4.string(arg1(dependencyMap[9]).t.V6nAfF);
-    const intl5 = arg1(dependencyMap[9]).intl;
-    const obj3 = { count: 0 };
-    obj2.title = intl5.formatToPlainString(arg1(dependencyMap[9]).t.ZGVL3g, obj3);
-    obj2.Illustration = arg1(dependencyMap[23]).NoResults;
-    let tmp24 = callback2(arg1(dependencyMap[19]).EmptyState, obj2);
+    let obj2 = {};
+    const intl4 = data(guildId[9]).intl;
+    obj2.body = intl4.string(data(guildId[9]).t.V6nAfF);
+    const intl5 = data(guildId[9]).intl;
+    let obj3 = { count: 0 };
+    obj2.title = intl5.formatToPlainString(data(guildId[9]).t.ZGVL3g, obj3);
+    obj2.Illustration = data(guildId[23]).NoResults;
+    let tmp24 = callback2(data(guildId[19]).EmptyState, obj2);
   } else {
     const obj4 = { keyExtractor: memo.keyExtractor, renderItem: callback1, data };
-    const obj5 = { paddingHorizontal: importDefault(dependencyMap[8]).space.PX_12, paddingBottom: importDefault(dependencyMap[12])().bottom };
+    const obj5 = { paddingHorizontal: filterType(guildId[8]).space.PX_12, paddingBottom: filterType(guildId[12])().bottom };
     obj4.contentContainerStyle = obj5;
-    tmp24 = callback2(arg1(dependencyMap[24]).FlashList, obj4);
+    tmp24 = callback2(data(guildId[24]).FlashList, obj4);
   }
   items4[1] = tmp24;
-  items4[2] = callback2(arg1(dependencyMap[25]).NavScrim, {});
+  items4[2] = callback2(data(guildId[25]).NavScrim, {});
   obj.children = items4;
   return closure_11(closure_10, obj);
 };
 export const createAuditLogFilterUserData = function createAuditLogFilterUserData(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   function userIdResolver(userId) {
     if (null != userId) {
-      const user = user.getUser(userId);
+      const user = outer1_6.getUser(userId);
       if (!tmp) {
         set.add(userId);
-        const obj = { label: items(set[10]).getUserTag(user), value: user, selected: user.id === userId, index: items.length };
+        const obj = { label: items(set[10]).getUserTag(user), value: user, selected: user.id === closure_0, index: items.length };
         items.push(obj);
         const obj2 = items(set[10]);
       }
-      const tmp = set.has(userId) || null == user;
+      tmp = set.has(userId) || null == user;
     }
   }
   const items = [];
-  const importDefault = items;
-  const obj = {};
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.label = intl.string(arg1(dependencyMap[9]).t.ZRFdsL);
+  let obj = {};
+  const intl = _require(set[9]).intl;
+  obj.label = intl.string(_require(set[9]).t.ZRFdsL);
   obj.value = null;
   obj.selected = null == arg0;
   obj.index = 0;
   items.push(obj);
-  const dependencyMap = new Set();
+  set = new Set();
   const logs = closure_7.logs;
   const item = logs.forEach((userId) => {
     userIdResolver(userId.userId);
@@ -216,10 +212,10 @@ export const createAuditLogFilterUserData = function createAuditLogFilterUserDat
   });
   return items;
 };
-export const createAuditLogFilterActionData = function createAuditLogFilterActionData(closure_4) {
-  const arg1 = closure_4;
-  const obj = arg1(dependencyMap[11]);
-  const mapped = arg1(dependencyMap[11]).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: label === label.value, index }));
+export const createAuditLogFilterActionData = function createAuditLogFilterActionData(outer1_4) {
+  const _require = outer1_4;
+  const obj = _require(16228);
+  const mapped = _require(16228).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
   return mapped.sort((selected, selected2) => {
     let num = -1;
     if (!selected.selected) {

@@ -1,21 +1,21 @@
-// Module ID: 6651
-// Function ID: 51081
+// Module ID: 6656
+// Function ID: 51110
 // Name: items
-// Dependencies: []
+// Dependencies: [4042, 1428, 6657, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 6651 (items)
-const _module = require(dependencyMap[0]);
-let obj = { shapes: "r", flex: "BottomLeft", sk: "User", defaultConfig: { paymentsBlocked: false } };
-obj = { displayNameStylesEnabled: 0.6392156862745098, submitButtonEnabled: "NEUTRAL_34", config: { paymentsBlocked: true } };
+// Module 6656 (items)
+import createExperiment from "createExperiment";
+import ApexExperiment from "ApexExperiment";
+
+let obj = { kind: "user", id: "2022-03_block_russian_purchases", label: "Block purchases based on country", defaultConfig: { paymentsBlocked: false } };
+obj = { id: 1, label: "Payments Blocked", config: { paymentsBlocked: true } };
 const items = [obj];
 obj.treatments = items;
-let closure_2 = _module.createExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const obj1 = { y: "title", DateToSystemTimezoneSetter: "__closure", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_3 = _module1.createApexExperiment(obj1);
-const _module2 = require(dependencyMap[3]);
-const result = _module2.fileFinishedImporting("modules/billing/experiments/BlockedPaymentsCountryExperiment.tsx");
+let closure_2 = createExperiment.createExperiment(obj);
+const obj1 = { name: "2026-03-block-purchases", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+let closure_3 = ApexExperiment.createApexExperiment(obj1);
+const result = require("useGeoForUser").fileFinishedImporting("modules/billing/experiments/BlockedPaymentsCountryExperiment.tsx");
 
 export const useBlockedPaymentsConfig = function useBlockedPaymentsConfig() {
   let enabled = closure_2.useExperiment({ location: "c519a9_1" }, { autoTrackExposure: false }).paymentsBlocked;
@@ -23,7 +23,7 @@ export const useBlockedPaymentsConfig = function useBlockedPaymentsConfig() {
     enabled = closure_3.useConfig({ location: "c519a9_1" }).enabled;
   }
   if (!enabled) {
-    enabled = "RU" === importDefault(dependencyMap[2])().defaultBillingCountryCode;
+    enabled = "RU" === importDefault(6657)().defaultBillingCountryCode;
   }
   return enabled;
 };

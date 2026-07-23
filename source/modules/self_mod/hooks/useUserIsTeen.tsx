@@ -1,17 +1,19 @@
-// Module ID: 7610
-// Function ID: 61010
+// Module ID: 7616
+// Function ID: 61047
 // Name: useUserIsTeen
-// Dependencies: []
+// Dependencies: [1849, 566, 2]
 // Exports: useUserIsTeen
 
-// Module 7610 (useUserIsTeen)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/self_mod/hooks/useUserIsTeen.tsx");
+// Module 7616 (useUserIsTeen)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/self_mod/hooks/useUserIsTeen.tsx");
 
 export const useUserIsTeen = function useUserIsTeen() {
-  const items = [closure_2];
-  return false === arg1(dependencyMap[1]).useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  const items = [_isNativeReflectConstruct];
+  return false === require(566) /* initialize */.useStateFromStores(items, () => {
+    const currentUser = outer1_2.getCurrentUser();
     let nsfwAllowed;
     if (null != currentUser) {
       nsfwAllowed = currentUser.nsfwAllowed;

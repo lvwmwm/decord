@@ -1,81 +1,86 @@
-// Module ID: 11460
-// Function ID: 89292
-// Dependencies: []
+// Module ID: 11470
+// Function ID: 89342
+// Dependencies: [31, 27, 1838, 11105, 653, 33, 4130, 689, 566, 4098, 8578, 1934, 4324, 4660, 5515, 4126, 5701, 1273, 5514, 1212, 11471, 2]
 
-// Module 11460
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-const TextAreaCta = arg1(dependencyMap[3]).TextAreaCta;
-({ AnalyticEvents: closure_7, JoinGuildSources: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj1 = arg1(dependencyMap[6]);
+// Module 11470
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import { TextAreaCta } from "TextAreaCta";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ AnalyticEvents: closure_7, JoinGuildSources: closure_8 } = ME);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: importDefault(dependencyMap[7]).modules.mobile.TABLE_ROW_BORDER_RADIUS, paddingHorizontal: importDefault(dependencyMap[7]).space.PX_12, paddingVertical: importDefault(dependencyMap[7]).space.PX_12, gap: importDefault(dependencyMap[7]).space.PX_12, borderColor: importDefault(dependencyMap[7]).colors.BORDER_SUBTLE, borderWidth: 1 };
-const merged = Object.assign(importDefault(dependencyMap[7]).shadows.SHADOW_HIGH);
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, gap: require("_createForOfIteratorHelperLoose").space.PX_12, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderWidth: 1 };
+const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
 obj.cardContainer = obj;
-obj1 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_12 };
-obj.headerRow = obj1;
-const tmp3 = arg1(dependencyMap[5]);
-obj.guildIcon = { borderRadius: importDefault(dependencyMap[7]).radii.md };
-obj.textColumn = {};
-const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_4 };
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
+obj.headerRow = _createForOfIteratorHelperLoose;
+obj.guildIcon = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+obj.textColumn = { flex: 1, flexShrink: 1, minWidth: 0 };
+let obj3 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
 obj.nameRow = obj3;
 obj.chevron = { marginLeft: -2 };
 obj.badge = { flexShrink: 0 };
-let closure_11 = obj1.createStyles(obj);
-const obj2 = { borderRadius: importDefault(dependencyMap[7]).radii.md };
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
 const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const tmp = callback3();
-  let obj = arg1(dependencyMap[8]);
+  let obj = guildId(566);
   const items = [closure_5];
   const items1 = [guildId];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(guildId), items1);
   const items2 = [guildId];
   const callback = importAllResult.useCallback(() => {
-    let obj = callback(paths[9]);
+    let obj = outer1_1(outer1_2[9]);
     obj = { guildId };
-    obj.openLazy(guildId(paths[11])(paths[10], paths.paths), "GuildProfileActionSheet:" + guildId, obj);
+    obj.openLazy(guildId(outer1_2[11])(outer1_2[10], outer1_2.paths), "GuildProfileActionSheet:" + guildId, obj);
   }, items2);
   let tmp5 = null;
   if (null != stateFromStores) {
     obj = { style: tmp.cardContainer };
     obj = { style: tmp.headerRow, onPress: callback, accessibilityRole: "button", accessibilityLabel: stateFromStores.name };
-    const obj1 = { guild: stateFromStores, size: arg1(dependencyMap[14]).GuildIconSizes.LARGE, style: tmp.guildIcon };
-    const items3 = [callback(importDefault(dependencyMap[14]), obj1), ];
+    const obj1 = { guild: stateFromStores, size: guildId(5515).GuildIconSizes.LARGE, style: tmp.guildIcon };
+    const items3 = [callback(importDefault(5515), obj1), ];
     const obj2 = { style: tmp.textColumn };
     const obj3 = { style: tmp.nameRow };
-    const obj4 = { children: stateFromStores.name };
-    const items4 = [callback(arg1(dependencyMap[15]).Text, obj4), , ];
+    const obj4 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: stateFromStores.name };
+    const items4 = [callback(guildId(4126).Text, obj4), , ];
     const obj5 = {};
-    const tmp12 = importDefault(dependencyMap[14]);
-    obj5.size = arg1(dependencyMap[17]).Icon.Sizes.SMALL;
+    const tmp12 = importDefault(5515);
+    obj5.size = guildId(1273).Icon.Sizes.SMALL;
     obj5.guild = stateFromStores;
     obj5.style = tmp.badge;
-    items4[1] = callback(importDefault(dependencyMap[16]), obj5);
-    const obj6 = { size: "xs", color: importDefault(dependencyMap[7]).colors.TEXT_MUTED, style: tmp.chevron };
-    items4[2] = callback(arg1(dependencyMap[18]).ChevronSmallRightIcon, obj6);
+    items4[1] = callback(importDefault(5701), obj5);
+    const obj6 = { size: "xs", color: importDefault(689).colors.TEXT_MUTED, style: tmp.chevron };
+    items4[2] = callback(guildId(5514).ChevronSmallRightIcon, obj6);
     obj3.children = items4;
     const items5 = [callback2(View, obj3), ];
-    const obj7 = { 803799044: 400, 1269170180: 20, 711589892: 24 };
-    const intl = arg1(dependencyMap[19]).intl;
-    obj7.children = intl.string(arg1(dependencyMap[19]).t.BRSnEj);
-    items5[1] = callback(arg1(dependencyMap[15]).Text, obj7);
+    const obj7 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 1 };
+    const intl = guildId(1212).intl;
+    obj7.children = intl.string(guildId(1212).t.BRSnEj);
+    items5[1] = callback(guildId(4126).Text, obj7);
     obj2.children = items5;
     items3[1] = callback2(View, obj2);
     obj.children = items3;
-    const items6 = [callback2(arg1(dependencyMap[13]).PressableOpacity, obj), ];
+    const items6 = [callback2(guildId(4660).PressableOpacity, obj), ];
     const obj8 = { guildId, joinSource: constants.CHAT_INPUT_BLOCKER, onBeforeJoin: tmp4 };
-    items6[1] = callback(importDefault(dependencyMap[20]), obj8);
+    items6[1] = callback(importDefault(11471), obj8);
     obj.children = items6;
     tmp5 = callback2(View, obj);
-    const tmp13 = importDefault(dependencyMap[16]);
+    const tmp13 = importDefault(5701);
   }
   return tmp5;
 });
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardLurkingPreviewBar.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardLurkingPreviewBar.tsx");
 
 export default memoResult;

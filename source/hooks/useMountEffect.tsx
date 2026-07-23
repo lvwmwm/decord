@@ -1,12 +1,11 @@
-// Module ID: 4555
-// Function ID: 39914
+// Module ID: 4559
+// Function ID: 39946
 // Name: useMountLayoutEffect
-// Dependencies: []
+// Dependencies: [2, 4560]
 
-// Module 4555 (useMountLayoutEffect)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("hooks/useMountEffect.tsx");
+// Module 4559 (useMountLayoutEffect)
+const result = require("set").fileFinishedImporting("hooks/useMountEffect.tsx");
 
-export default importDefault(dependencyMap[1]);
-export const useMountLayoutEffect = require(dependencyMap[1]).useMountLayoutEffect;
-export const useUnmountEffect = require(dependencyMap[1]).useUnmountEffect;
+export { default } from "useMountEffect";
+export const useMountLayoutEffect = require("useMountEffect").useMountLayoutEffect;
+export const useUnmountEffect = require("useMountEffect").useUnmountEffect;

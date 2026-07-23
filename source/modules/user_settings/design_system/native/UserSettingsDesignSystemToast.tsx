@@ -1,16 +1,17 @@
-// Module ID: 14333
-// Function ID: 108221
+// Module ID: 14447
+// Function ID: 110374
 // Name: UserSettingsDesignSystemToast
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 2]
 // Exports: default
 
-// Module 14333 (UserSettingsDesignSystemToast)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_2 = arg1(dependencyMap[3]).createStyles({ container: { split: true, pos: true, borderRadius: true } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemToast.tsx");
+// Module 14447 (UserSettingsDesignSystemToast)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemToast.tsx");
 
 export default function UserSettingsDesignSystemToast() {
   return <View style={callback().container} />;

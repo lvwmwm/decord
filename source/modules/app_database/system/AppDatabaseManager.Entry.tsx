@@ -1,16 +1,13 @@
-// Module ID: 6884
-// Function ID: 54636
+// Module ID: 6889
+// Function ID: 54670
 // Name: Entry
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
-// Module 6884 (Entry)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+// Module 6889 (Entry)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");
-
-export const Entry = () => {
+const tmp2 = (() => {
   class Entry {
     constructor(arg0, arg1) {
       tmp = Entry(this, Entry);
@@ -20,7 +17,6 @@ export const Entry = () => {
       return;
     }
   }
-  let closure_0 = Entry;
   let obj = {
     key: "actions",
     get() {
@@ -68,4 +64,7 @@ export const Entry = () => {
     }
   };
   return callback(Entry, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");
+
+export const Entry = tmp2;

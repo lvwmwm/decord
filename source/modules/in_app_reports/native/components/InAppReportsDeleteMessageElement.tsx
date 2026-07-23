@@ -1,51 +1,50 @@
-// Module ID: 12225
-// Function ID: 93834
+// Module ID: 12339
+// Function ID: 95985
 // Name: DeleteMessageElement
-// Dependencies: []
+// Dependencies: [57, 31, 4349, 653, 33, 566, 4324, 6691, 12335, 1212, 4089, 2]
 // Exports: default
 
-// Module 12225 (DeleteMessageElement)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsDeleteMessageElement.tsx");
+// Module 12339 (DeleteMessageElement)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsDeleteMessageElement.tsx");
 
 export default function DeleteMessageElement(message) {
   message = message.message;
-  const arg1 = message;
   const reportId = message.reportId;
-  const importDefault = reportId;
-  const tmp = callback(React.useState(false), 2);
-  let closure_2 = tmp[1];
-  let obj = arg1(closure_2[5]);
-  const items = [closure_5];
+  const tmp = stateFromStores(React.useState(false), 2);
+  const dependencyMap = tmp[1];
+  let obj = message(566);
+  const items = [_isNativeReflectConstruct];
   const items1 = [message];
-  const stateFromStores = obj.useStateFromStores(items, () => null == message.getMessage(message.getChannelId(), message.id), items1);
-  let callback = stateFromStores;
+  stateFromStores = obj.useStateFromStores(items, () => null == outer1_5.getMessage(message.getChannelId(), message.id), items1);
   const items2 = [stateFromStores];
   const effect = React.useEffect(() => {
-    callback(stateFromStores);
+    dependencyMap(stateFromStores);
   }, items2);
   const items3 = [message, reportId];
-  callback = React.useCallback(() => {
-    callback(true);
-    let obj = reportId(callback[6]);
+  const callback = React.useCallback(() => {
+    dependencyMap(true);
+    let obj = reportId(4324);
     obj = { report_id: reportId };
-    obj.trackWithMetadata(constants.IAR_DELETE_MESSAGE_BUTTON_CLICKED, obj);
-    reportId(callback[7]).deleteMessage(message.getChannelId(), message.id);
+    obj.trackWithMetadata(outer1_6.IAR_DELETE_MESSAGE_BUTTON_CLICKED, obj);
+    reportId(6691).deleteMessage(message.getChannelId(), message.id);
   }, items3);
   obj = {};
-  const intl = arg1(closure_2[9]).intl;
-  obj.title = intl.string(arg1(closure_2[9]).t.c9BHL9);
-  const intl2 = arg1(closure_2[9]).intl;
-  obj.disabledTitle = intl2.string(arg1(closure_2[9]).t.AT2KSd);
-  const intl3 = arg1(closure_2[9]).intl;
-  obj.description = intl3.string(arg1(closure_2[9]).t.dK8S0w);
+  const intl = message(1212).intl;
+  obj.title = intl.string(message(1212).t.c9BHL9);
+  const intl2 = message(1212).intl;
+  obj.disabledTitle = intl2.string(message(1212).t.AT2KSd);
+  const intl3 = message(1212).intl;
+  obj.description = intl3.string(message(1212).t.dK8S0w);
   obj.disabled = tmp[0];
   obj.variant = "danger";
   obj.onPress = callback;
-  obj.icon = jsx(arg1(closure_2[10]).TrashIcon, { color: "text-feedback-critical" });
-  return jsx(importDefault(closure_2[8]), obj);
+  obj.icon = jsx(message(4089).TrashIcon, { color: "text-feedback-critical" });
+  return jsx(reportId(12335), {});
 };

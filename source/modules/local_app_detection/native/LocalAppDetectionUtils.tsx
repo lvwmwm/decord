@@ -1,53 +1,60 @@
-// Module ID: 12522
-// Function ID: 96061
+// Module ID: 12636
+// Function ID: 98217
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 5592, 653, 12637, 12635, 478, 4304, 675, 686, 2]
 // Exports: detectLocalApps
 
-// Module 12522 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12636 (_createForOfIteratorHelperLoose)
+import isWindows from "isWindows";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,73 +92,69 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function isGameCommunityUpsellMultiExperimentEnabled() {
-  const GameCommunityUpsellMultiExperiment = arg1(dependencyMap[3]).GameCommunityUpsellMultiExperiment;
+  const GameCommunityUpsellMultiExperiment = require(12637) /* GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT */.GameCommunityUpsellMultiExperiment;
   return GameCommunityUpsellMultiExperiment.getConfig({ location: "LocalAppDetectionUtils" }).enabled;
 }
 function getDetectableApp(arg0) {
-  if (arg1(dependencyMap[4]).DetectableAppNames.ROBLOX === arg0) {
-    return { "Null": null, "Null": null };
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.MINECRAFT === arg0) {
-    let obj = { "Null": 1358954496, "Null": -1603116150, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  if (require(12635) /* DetectableAppNames */.DetectableAppNames.ROBLOX === arg0) {
+    return { androidScheme: "roblox", iosScheme: "roblox" };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.MINECRAFT === arg0) {
+    let obj = { androidScheme: "minecraft", iosScheme: "minecraft", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.FORTNITE === arg0) {
-    obj = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.FORTNITE === arg0) {
+    obj = { androidScheme: "fortnite", iosScheme: "com.epicgames.fortnite", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.GENSHIN === arg0) {
-    const obj1 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.GENSHIN === arg0) {
+    const obj1 = { androidScheme: "genshin", iosScheme: "genshin", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj1;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.PUBG_MOBILE === arg0) {
-    const obj2 = { "Null": "<string:10514944>", "Null": "<string:11534336>", predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.PUBG_MOBILE === arg0) {
+    const obj2 = { androidScheme: "pubgmobile", iosScheme: "igame1320", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj2;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.CALL_OF_DUTY_MOBILE === arg0) {
-    const obj3 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.CALL_OF_DUTY_MOBILE === arg0) {
+    const obj3 = { androidScheme: "codm", iosScheme: "codm", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj3;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.CLASH_OF_CLANS === arg0) {
-    const obj4 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.CLASH_OF_CLANS === arg0) {
+    const obj4 = { androidScheme: "clashofclans", iosScheme: "clashofclans", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj4;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.MOBILE_LEGENDS_BANG_BANG === arg0) {
-    const obj5 = { predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.MOBILE_LEGENDS_BANG_BANG === arg0) {
+    const obj5 = { androidScheme: "mobilelegends", iosScheme: "mobilelegends", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj5;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.GARENA_FREE_FIRE === arg0) {
-    const obj6 = { "Null": null, "Null": null, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.GARENA_FREE_FIRE === arg0) {
+    const obj6 = { androidScheme: "garenafreefire", iosScheme: "freefire", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj6;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.POKEMON_GO === arg0) {
-    const obj7 = { "Null": 123, "Null": 102, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.POKEMON_GO === arg0) {
+    const obj7 = { androidScheme: "pokemongo", iosScheme: "pokemongo", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj7;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.POKEMON_TCG_POCKET === arg0) {
-    const obj8 = { "Null": 54, "Null": 12, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.POKEMON_TCG_POCKET === arg0) {
+    const obj8 = { androidScheme: "pokemontcgp", iosScheme: "pokemontcgp", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj8;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.CLASH_ROYALE === arg0) {
-    const obj9 = { "Null": -79, "Null": 102, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.CLASH_ROYALE === arg0) {
+    const obj9 = { androidScheme: "clashroyale", iosScheme: "clashroyale", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj9;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.AMONG_US === arg0) {
-    const obj10 = { "Null": 2, "Null": 894, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.AMONG_US === arg0) {
+    const obj10 = { androidScheme: "amongus", iosScheme: "amongus", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj10;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.MONOPOLY_GO === arg0) {
-    const obj11 = { "Null": "<string:33554436>", "Null": "<string:1924265809>", predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.MONOPOLY_GO === arg0) {
+    const obj11 = { androidScheme: "monopolygo", iosScheme: "monopolygo", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj11;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.BRAWL_STARS === arg0) {
-    const obj12 = { "Null": -1660944384, "Null": 1912602624, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.BRAWL_STARS === arg0) {
+    const obj12 = { androidScheme: "brawlstars", iosScheme: "brawlstars", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj12;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.BRAWLHALLA === arg0) {
-    const obj13 = { "Null": 9766999210.250008, "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000270028208532988, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.BRAWLHALLA === arg0) {
+    const obj13 = { androidScheme: "brawlhalla", iosScheme: null, predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj13;
-  } else if (arg1(dependencyMap[4]).DetectableAppNames.WUTHERING_WAVES === arg0) {
-    obj = { "Null": 13336032442761393000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003437633181225, predicate: isGameCommunityUpsellMultiExperimentEnabled };
+  } else if (require(12635) /* DetectableAppNames */.DetectableAppNames.WUTHERING_WAVES === arg0) {
+    obj = { androidScheme: "wutheringwaves", iosScheme: "akioversea", predicate: isGameCommunityUpsellMultiExperimentEnabled };
     return obj;
   }
 }
 function _detectLocalApps() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _detectLocalApps = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ AnalyticEvents: closure_5, Consents: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/local_app_detection/native/LocalAppDetectionUtils.tsx");
+({ AnalyticEvents: closure_5, Consents: closure_6 } = ME);
+const result = require("ME").fileFinishedImporting("modules/local_app_detection/native/LocalAppDetectionUtils.tsx");
 
 export const detectLocalApps = function detectLocalApps(ALL_DETECTABLE_APP_NAMES) {
   return _detectLocalApps(...arguments);

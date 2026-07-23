@@ -1,8 +1,8 @@
 // Module ID: 219
 // Function ID: 3057
 // Name: WebSocketModule
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 219 (WebSocketModule)
 
-export default importAll(dependencyMap[0]).getEnforcing("WebSocketModule");
+export default require("requireModule").getEnforcing("WebSocketModule");

@@ -1,10 +1,18 @@
 // Module ID: 507
 // Function ID: 6456
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 162, 4, 508, 561, 562, 563, 2, 564, 565]
 // Exports: getAPIBaseURL, rejectWithMigratedError, setAwaitOnline, setRejectWithMigratedError, setRequestPatch
 
 // Module 507 (_isNativeReflectConstruct)
+import _createForOfIteratorHelper from "_createForOfIteratorHelper";
+import log from "log";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -17,15 +25,15 @@ function _isNativeReflectConstruct() {
 function isRateLimitedStatus(status) {
   return set1.has(status);
 }
-function parseRetryAfter(retry-after, retry_after) {
+function parseRetryAfter(retry_after, retry_after) {
   let prop;
   if (null != retry_after) {
-    prop = retry_after.retry-after;
+    prop = retry_after["retry-after"];
   }
   if (null == prop) {
     let prop1;
     if (null != retry_after) {
-      prop1 = retry_after.Retry-After;
+      prop1 = retry_after["Retry-After"];
     }
     prop = prop1;
   }
@@ -62,13 +70,12 @@ function getRateLimitFloorMs(headers, body) {
   return 1000 * num;
 }
 function sendRequest(arg0, url) {
-  url = arg0;
+  let closure_0 = arg0;
   const importDefault = url;
   const dependencyMap = arg2;
-  let closure_3 = arg3;
-  let closure_4 = arg4;
-  const promise = importDefault(dependencyMap[7])[arg0](url.url);
-  let closure_5 = promise;
+  let _createForOfIteratorHelper = arg3;
+  let log = arg4;
+  const promise = importDefault(508)[arg0](url.url);
   if (null != url.onRequestCreated) {
     url.onRequestCreated(promise);
   }
@@ -77,13 +84,12 @@ function sendRequest(arg0, url) {
     let tmp3 = query;
     if ("object" === typeof query) {
       let obj = {};
-      const merged = Object.assign(query);
-      let closure_6 = obj;
+      let merged = Object.assign(query);
       const _Object = Object;
       const keys = Object.keys(obj);
       const mapped = keys.map((arg0) => {
         if (null == obj[arg0]) {
-          delete r0[r1];
+          delete tmp[tmp2];
         }
       });
       tmp3 = obj;
@@ -141,88 +147,88 @@ function sendRequest(arg0, url) {
   }
   if (null != url.onRequestProgress) {
     promise.on("progress", (arg0) => {
-      if (null != arg1.onRequestProgress) {
-        arg1.onRequestProgress(arg0);
+      if (null != url.onRequestProgress) {
+        url.onRequestProgress(arg0);
       }
     });
   }
-  function retry(arg0, self) {
-    if (null != self.backoff) {
-      let backoff = self.backoff;
+  function retry() {
+    if (null != url.backoff) {
+      let backoff = url.backoff;
     } else {
-      const tmp4 = self(arg2[8]);
+      const tmp4 = url(561);
       const prototype = tmp4.prototype;
       backoff = new tmp4();
     }
-    self.backoff = backoff;
+    url.backoff = backoff;
     let num2 = 0;
-    if (null != self.retried) {
-      num2 = self.retried;
+    if (null != url.retried) {
+      num2 = url.retried;
     }
-    self.retried = num2 + 1;
-    const backoff2 = self.backoff;
-    backoff2.fail(() => callback(url.url).then(() => {
-      callback(closure_0, closure_1, closure_2, closure_3, closure_4);
+    url.retried = num2 + 1;
+    const backoff2 = url.backoff;
+    backoff2.fail(() => outer2_14(outer1_1.url).then(() => {
+      outer3_20(outer2_0, outer2_1, outer2_2, outer2_3, outer2_4);
     }));
   }
   let prepareRequestResult;
-  if (null != closure_13) {
+  if (null != c13) {
     if (null != obj2.prepareRequest) {
       prepareRequestResult = obj2.prepareRequest(promise);
     }
   }
   const logger = prepareRequestResult;
   promise.ok((status) => null != status.status);
-  promise.then((ok, self) => {
-    if (null != self.retries) {
-      self.retries = +self.retries - 1;
-      if (+self.retries > 0) {
-        if (set.has(ok.status)) {
+  promise.then((ok) => {
+    if (null != url.retries) {
+      url.retries = +url.retries - 1;
+      if (+url.retries > 0) {
+        if (outer1_9.has(ok.status)) {
           return retry();
         }
       }
     }
-    let obj = { ok: ok.ok, headers: ok.headers, body: ok.body, text: ok.text, status: ok.status, retryAfter: callback2(ok.headers, ok.body) };
-    callback3(self, obj);
-    const callback = false;
+    let obj = { ok: ok.ok, headers: ok.headers, body: ok.body, text: ok.text, status: ok.status, retryAfter: outer1_18(ok.headers, ok.body) };
+    outer1_22(url, obj);
+    let c0 = false;
     function interceptRetry(arg0, arg1) {
       let obj = {};
-      const merged = Object.assign(headers);
+      const merged = Object.assign(outer1_1);
       obj = {};
-      const merged1 = Object.assign(headers.headers);
+      const merged1 = Object.assign(outer1_1.headers);
       const merged2 = Object.assign(arg0);
       obj["headers"] = obj;
       obj["interceptResponse"] = arg1;
-      let closure_0 = true;
-      callback3(closure_0, obj, closure_2, closure_3, closure_4);
+      let c0 = true;
+      outer2_20(c0, obj, outer1_2, outer1_3, outer1_4);
     }
     function interceptCancel(err) {
-      if (!closure_0) {
-        callback(err);
-        if (null != callback2) {
-          const obj = { err };
-          callback2(obj);
+      if (!c0) {
+        outer1_3(err);
+        if (null != outer1_4) {
+          const obj = { ok: false, hasErr: true, err };
+          outer1_4(obj);
         }
       }
     }
     let interceptResponseResult;
-    if (null != self) {
-      if (null != self.interceptResponse) {
-        interceptResponseResult = self.interceptResponse(ok, interceptRetry, interceptCancel);
+    if (null != url) {
+      if (null != url.interceptResponse) {
+        interceptResponseResult = url.interceptResponse(ok, interceptRetry, interceptCancel);
       }
     }
     if (true !== interceptResponseResult) {
       let interceptResponseResult1;
-      if (null != closure_13) {
+      if (null != outer1_13) {
         if (null != obj5.interceptResponse) {
-          interceptResponseResult1 = obj5.interceptResponse(ok, interceptRetry, interceptCancel, prepareRequestResult);
+          interceptResponseResult1 = obj5.interceptResponse(ok, interceptRetry, interceptCancel, closure_8);
         }
       }
       if (true !== interceptResponseResult1) {
         if (ok.ok) {
-          arg2(obj);
+          dependencyMap(obj);
         } else {
-          if (self.oldFormErrors) {
+          if (url.oldFormErrors) {
             let code;
             if (null != obj) {
               const body = obj.body;
@@ -230,45 +236,45 @@ function sendRequest(arg0, url) {
                 code = body.code;
               }
             }
-            if (code === callback(arg2[9]).INVALID_FORM_BODY_ERROR_CODE) {
+            if (code === callback(562).INVALID_FORM_BODY_ERROR_CODE) {
               const errors = obj.body.errors;
               if (null != errors) {
-                obj.body = callback(arg2[10]).convertSkemaError(errors);
-                const obj2 = callback(arg2[10]);
+                obj.body = callback(563).convertSkemaError(errors);
+                const obj2 = callback(563);
               }
             }
           }
-          if (self.rejectWithError) {
-            obj = { method: callback, url: self.url };
+          if (url.rejectWithError) {
+            obj = { method: c0, url: url.url };
             ({ ok: obj3.ok, status: obj3.status, body: obj3.body, text: obj3.text, headers: obj3.headers, retryAfter: obj3.retryAfter } = obj);
-            const prototype = ctor.prototype;
-            const tmp29 = new ctor(obj);
-            arg3(tmp29);
+            const prototype = outer1_11.prototype;
+            const tmp29 = new outer1_11(obj);
+            callback2(tmp29);
           } else {
-            arg3(obj);
+            callback2(obj);
           }
         }
-        if (null != arg4) {
+        if (null != callback3) {
           obj = { hasErr: false };
-          const merged = Object.assign(obj);
-          arg4(obj);
+          let merged = Object.assign(obj);
+          callback3(obj);
         }
       }
     }
   }, (code) => {
-    if (null != arg1.retries) {
-      arg1.retries = +arg1.retries - 1;
-      if (+arg1.retries > 0) {
+    if (null != url.retries) {
+      url.retries = +url.retries - 1;
+      if (+url.retries > 0) {
         if ("ABORTED" !== code.code) {
           retry();
         }
       }
     }
-    callback3(arg1);
-    arg3(code);
-    if (null != arg4) {
-      const obj = { err: code };
-      arg4(obj);
+    outer1_22(url);
+    callback2(code);
+    if (null != callback3) {
+      const obj = { ok: false, hasErr: true, err: code };
+      callback3(obj);
     }
   });
   const signal = url.signal;
@@ -300,7 +306,7 @@ function rateLimitExpirationHandler(url) {
   }
 }
 function cleanupRequestEntry(url, status) {
-  status = url;
+  let closure_0 = url;
   const value = map.get(url.url);
   if (null != status) {
     if (isRateLimitedStatus(status.status)) {
@@ -309,7 +315,7 @@ function cleanupRequestEntry(url, status) {
         backoff = value.backoff;
       }
       if (null == backoff) {
-        const tmp12 = importDefault(dependencyMap[8]);
+        const tmp12 = importDefault(561);
         const prototype = tmp12.prototype;
         backoff = new tmp12(1000, 60000);
       }
@@ -332,7 +338,7 @@ function cleanupRequestEntry(url, status) {
       const obj = {};
       let queue;
       const timerId = setTimeout(() => {
-        callback(arg0.url);
+        outer1_21(url.url);
       }, failResult);
       if (null != value) {
         queue = value.queue;
@@ -365,70 +371,66 @@ function cleanupRequestEntry(url, status) {
   }
 }
 function makeRateLimitedResponse(status, message, retry_after) {
-  let obj = { status, body: obj };
+  obj = { status, body: obj };
   obj = { message, retry_after };
   return obj;
 }
 function makeRequest(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const dependencyMap = arg2;
-  return new Promise((bindResult1, self) => {
-    if ("string" === typeof self) {
-      let obj = { url: self, rejectWithError: false };
-      self = obj;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  return new Promise((bindResult1, bindResult) => {
+    if ("string" === typeof obj) {
+      obj = {};
+      obj.url = obj;
+      obj.rejectWithError = false;
     }
-    const value = closure_12.get(self.url);
+    const value = outer1_12.get(obj.url);
     if (null != value) {
-      if (self.failImmediatelyWhenRateLimited) {
+      if (obj.failImmediatelyWhenRateLimited) {
         const _Date = Date;
         const _Math = Math;
-        const tmp26 = callback2(value.status, value.latestErrorMessage, Math.round((value.retryAfterTimestamp - Date.now()) / 1000));
-        self(tmp26);
-        if (null != arg2) {
-          obj = {};
+        const tmp26 = outer1_23(value.status, value.latestErrorMessage, Math.round((value.retryAfterTimestamp - Date.now()) / 1000));
+        bindResult(tmp26);
+        if (null != closure_2) {
+          obj = { ok: true, hasErr: false, status: null, body: null, text: "" };
           ({ status: obj2.status, body: obj2.body } = tmp26);
           obj.headers = {};
-          arg2(obj);
+          closure_2(obj);
         }
       }
     }
     if (null != value) {
-      closure_8.verbose("makeRequest: queueing request for ", self.url);
+      outer1_8.verbose("makeRequest: queueing request for ", obj.url);
       const queue = value.queue;
-      queue.push(callback.bind(null, bindResult1, self, bindResult1, self, arg2));
+      queue.push(outer1_20.bind(null, closure_0, obj, bindResult1, bindResult, closure_2));
     } else {
-      callback(bindResult1, self, bindResult1, self, arg2);
+      outer1_20(closure_0, obj, bindResult1, bindResult, closure_2);
     }
   });
 }
 function encodeProperties(arg0) {
   return Buffer.from(JSON.stringify(arg0)).toString("base64");
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const logger = new arg1(dependencyMap[6]).Logger("HTTPUtils");
-const set = new Set(["isArray", "isArray", "resolve", "ct", "code", "from", "top", "Text"]);
-const set1 = new Set([-1331045302, -108471716]);
-const tmp6 = (arg0) => {
+let logger = new require("_inherits").Logger("HTTPUtils");
+let set = new Set([502, 504, 507, 598, 599, 522, 523, 524]);
+const set1 = new Set([429, 503]);
+const tmp6 = ((arg0) => {
   class HTTPResponseError {
     constructor(arg0, arg1) {
       self = this;
       ({ method, url, status } = arg0);
       ({ ok, body, text, headers, retryAfter } = arg0);
       substr = [...arguments].slice();
-      tmp2 = closure_4(this, HTTPResponseError);
+      tmp2 = outer1_4(this, HTTPResponseError);
       replaced = url.replace(/\d+/g, "xxx");
       items = ["" + method.toUpperCase() + " " + replaced + " [" + status + "]", ...substr];
-      obj = closure_6(HTTPResponseError);
-      tmp4 = closure_5;
-      if (closure_16()) {
+      obj = outer1_6(HTTPResponseError);
+      tmp4 = outer1_5;
+      if (outer1_16()) {
         _Reflect = Reflect;
-        tmp6 = closure_6;
-        constructResult = Reflect.construct(obj, items, closure_6(self).constructor);
+        tmp6 = outer1_6;
+        constructResult = Reflect.construct(obj, items, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -445,20 +447,20 @@ const tmp6 = (arg0) => {
       return tmp4Result;
     }
   }
-  const arg1 = HTTPResponseError;
   callback2(HTTPResponseError, arg0);
   return callback(HTTPResponseError);
-}(importDefault(dependencyMap[5])(Error));
+})(require("_wrapNativeSuper")(Error));
+let closure_11 = tmp6;
 const map = new Map();
 let noop = makeRequest.bind(null, "get");
 let bindResult = makeRequest.bind(null, "post");
 let bindResult1 = makeRequest.bind(null, "put");
 let bindResult2 = makeRequest.bind(null, "patch");
 let bindResult3 = makeRequest.bind(null, "del");
-const obj = { get: noop, post: bindResult, put: bindResult1, patch: bindResult2, del: bindResult3 };
+let obj = { get: noop, post: bindResult, put: bindResult1, patch: bindResult2, del: bindResult3 };
 if (global.isServerRendering) {
   noop = function noop() {
-    const obj = { visible: true, hardwareAccelerated: true, textAlign: true, flex: true, lineHeight: true, headers: {} };
+    const obj = { ok: true, status: 200, headers: {}, body: null, text: "" };
     return Promise.resolve(obj);
   };
   bindResult = noop;
@@ -466,21 +468,20 @@ if (global.isServerRendering) {
   bindResult2 = noop;
   bindResult3 = noop;
 }
-let closure_13 = null;
+let c13 = null;
 function awaitOnline() {
   return Promise.resolve();
 }
 function migratedRejectEnabled() {
   return true;
 }
-const importDefaultResult = importDefault(dependencyMap[5]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("../discord_common/js/packages/http-utils/HTTPUtils.tsx");
+let result = set.fileFinishedImporting("../discord_common/js/packages/http-utils/HTTPUtils.tsx");
 
-export const INVALID_FORM_BODY_ERROR_CODE = arg1(dependencyMap[9]).INVALID_FORM_BODY_ERROR_CODE;
-export const convertSkemaError = arg1(dependencyMap[10]).convertSkemaError;
-export const stringifyErrors = arg1(dependencyMap[12]).stringifyErrors;
-export const V6OrEarlierAPIError = arg1(dependencyMap[13]).APIError;
-export const V8APIError = arg1(dependencyMap[9]).APIError;
+export const INVALID_FORM_BODY_ERROR_CODE = require("_isNativeReflectConstruct").INVALID_FORM_BODY_ERROR_CODE;
+export const convertSkemaError = require("convertSkemaError").convertSkemaError;
+export const stringifyErrors = require("stringifyErrors").stringifyErrors;
+export const V6OrEarlierAPIError = require("APIError").APIError;
+export const V8APIError = require("_isNativeReflectConstruct").APIError;
 export { isRateLimitedStatus };
 export const DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS = 5;
 export const HTTPResponseError = tmp6;
@@ -507,14 +508,14 @@ export const getAPIBaseURL = function getAPIBaseURL(arg0) {
   }
   return text + str;
 };
-export function setRequestPatch(arg0) {
-  let closure_13 = arg0;
+export function setRequestPatch(ApexExperiment) {
+  let closure_13 = ApexExperiment;
 }
 export function setAwaitOnline(arg0) {
-  const awaitOnline = arg0;
+  let closure_14 = arg0;
 }
 export function setRejectWithMigratedError(arg0) {
-  const migratedRejectEnabled = arg0;
+  let closure_15 = arg0;
 }
 export const rejectWithMigratedError = function rejectWithMigratedError() {
   return migratedRejectEnabled();

@@ -1,30 +1,37 @@
 // Module ID: 1326
-// Function ID: 15554
+// Function ID: 15555
 // Name: createApexExperimentCommon
-// Dependencies: []
+// Dependencies: [57, 31, 566, 2]
 // Exports: default
 
 // Module 1326 (createApexExperimentCommon)
-let closure_2 = importDefault(dependencyMap[0]);
-const useEffect = arg1(dependencyMap[1]).useEffect;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/apex/ApexExperiment.tsx");
+import _slicedToArray from "_slicedToArray";
+import { useEffect } from "result";
+
+const require = arg1;
+let result = require("initialize").fileFinishedImporting("../discord_common/js/packages/apex/ApexExperiment.tsx");
 
 export default function createApexExperimentCommon(definition, registerExperiment) {
-  const dependencyMap = arg2;
-  let closure_2 = arg3;
-  ({ name: closure_3, kind: closure_4, variations: closure_5, defaultConfig: closure_6 } = definition);
+  let closure_4;
+  let closure_5;
+  let closure_6;
+  let useEffect;
+  let closure_0 = registerExperiment;
+  let closure_1 = arg2;
+  let _slicedToArray = arg3;
+  ({ name: useEffect, kind: closure_4, variations: closure_5, defaultConfig: closure_6 } = definition);
   registerExperiment.registerExperiment(definition);
   return {
     definition,
     useConfig(location) {
-      const arg1 = location;
-      const tmp = arg3(tmp8, location);
-      const arg2 = tmp;
-      const tmp2 = arg3("user", location);
-      const arg3 = tmp2;
-      const items = [arg1];
+      const lib = location;
+      let tmp = callback(closure_4, location);
+      const dependencyMap = tmp;
+      const tmp2 = callback("user", location);
+      callback = tmp2;
+      const items = [lib];
       const items1 = [tmp, tmp2];
-      const tmp3 = arg3(arg1(arg2[2]).useStateFromStoresArray(items, () => arg0.getEvaluationAndAssignment(tmp8, tmp, first, tmp2), items1), 2);
+      const tmp3 = callback(lib(566).useStateFromStoresArray(items, () => _location.getEvaluationAndAssignment(closure_4, closure_1, first, _slicedToArray), items1), 2);
       const first = tmp3[0];
       let variantId;
       if (null != tmp3[1]) {
@@ -38,6 +45,7 @@ export default function createApexExperimentCommon(definition, registerExperimen
       if (null != trackedVariantId) {
         tmp8 = trackedVariantId;
       }
+      closure_4 = tmp8;
       let revision;
       if (null != tmp3[1]) {
         revision = tmp5.revision;
@@ -55,10 +63,10 @@ export default function createApexExperimentCommon(definition, registerExperimen
         useAsEligibility = tmp5.useAsEligibility;
       }
       const items2 = [tmp, first, tmp8, revision, location.location, isOverride, prop, useAsEligibility];
-      first((self) => {
+      outer1_3(() => {
         let tmp = null != first;
         if (tmp) {
-          tmp = null != tmp8;
+          tmp = null != closure_4;
         }
         if (tmp) {
           tmp = null != revision;
@@ -73,7 +81,7 @@ export default function createApexExperimentCommon(definition, registerExperimen
           tmp = true !== useAsEligibility;
         }
         if (tmp) {
-          const result = self.trackExperimentExposure(first, first, self.location, tmp8, revision, tmp8, tmp);
+          const result = _location.trackExperimentExposure(first, first, _location.location, closure_4, revision, closure_4, closure_1);
         }
       }, items2);
       if (null != variantId) {
@@ -87,14 +95,14 @@ export default function createApexExperimentCommon(definition, registerExperimen
       }
       return isOverride;
     },
-    getConfig(location, self) {
-      const tmp = arg2(closure_4, location);
+    getConfig(location) {
+      const tmp = dependencyMap(closure_4, location);
       let tmp2;
       if ("guild" === closure_4) {
         const obj = { location: location.location };
-        tmp2 = arg2("user", obj);
+        tmp2 = dependencyMap("user", obj);
       }
-      const tmp4 = arg3(self.getEvaluationAndAssignment(closure_4, tmp, closure_3, tmp2), 2);
+      const tmp4 = callback(lib.getEvaluationAndAssignment(closure_4, tmp, closure_3, tmp2), 2);
       const first = tmp4[0];
       let variantId;
       if (null != tmp4[1]) {
@@ -132,11 +140,11 @@ export default function createApexExperimentCommon(definition, registerExperimen
         tmp11 = true !== useAsEligibility;
       }
       if (tmp11) {
-        const result = self.trackExperimentExposure(first, closure_3, location.location, closure_4, revision, tmp9, tmp);
+        const result = lib.trackExperimentExposure(first, closure_3, location.location, closure_4, revision, tmp9, tmp);
       }
       if (null != variantId) {
         if (true !== useAsEligibility) {
-          let tmp22 = closure_5[variantId];
+          let tmp22 = table[variantId];
           if (null == tmp22) {
             tmp22 = closure_6;
           }

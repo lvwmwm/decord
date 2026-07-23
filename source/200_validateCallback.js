@@ -1,9 +1,14 @@
 // Module ID: 200
 // Function ID: 2845
 // Name: validateCallback
-// Dependencies: []
+// Dependencies: [6, 7, 201, 202, 203, 129]
 
 // Module 200 (validateCallback)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import setPlatformObject from "setPlatformObject";
+
+const require = arg1;
 function validateCallback(arg0, arg1) {
   if ("function" !== typeof arg0) {
     if ("object" !== tmp) {
@@ -21,46 +26,46 @@ function dispatch(arg0, arg1) {
   if (null != arg0) {
     do {
       let arr = items.push(tmp4);
-      let tmp6 = closure_1;
-      let tmp7 = closure_3;
-      tmp4 = tmp4[closure_1(undefined, closure_3[4]).EVENT_TARGET_GET_THE_PARENT_KEY]();
+      let tmp6 = require;
+      let tmp7 = dependencyMap;
+      tmp4 = tmp4[require(undefined, 203) /* SymbolResult1 */.EVENT_TARGET_GET_THE_PARENT_KEY]();
     } while (null != tmp4);
   }
-  arg1(dependencyMap[3]).setComposedPath(arg1, items);
-  const obj = arg1(dependencyMap[3]);
-  arg1(dependencyMap[3]).setTarget(arg1, arg0);
+  require(202) /* SymbolResult1 */.setComposedPath(arg1, items);
+  const obj = require(202) /* SymbolResult1 */;
+  require(202) /* SymbolResult1 */.setTarget(arg1, arg0);
   let diff = items.length - 1;
   if (diff >= 0) {
     if (!obj11.getStopPropagationFlag(tmp2)) {
       while (true) {
         let tmp11 = items[diff];
-        let tmp12 = arg1;
+        let tmp12 = require;
         let tmp13 = dependencyMap;
-        let obj3 = arg1(dependencyMap[3]);
+        let obj3 = require(202) /* SymbolResult1 */;
         let tmp14 = arg1;
         let tmp15 = arg0;
         if (tmp11 === tmp) {
           let tmp18 = importDefault;
           let tmp19 = dependencyMap;
-          let CAPTURING_PHASE = importDefault(dependencyMap[2]).AT_TARGET;
+          let CAPTURING_PHASE = importDefault(201).AT_TARGET;
         } else {
           let tmp16 = importDefault;
           let tmp17 = dependencyMap;
-          CAPTURING_PHASE = importDefault(dependencyMap[2]).CAPTURING_PHASE;
+          CAPTURING_PHASE = importDefault(201).CAPTURING_PHASE;
         }
         let setEventPhaseResult = obj3.setEventPhase(tmp2, CAPTURING_PHASE);
         let tmp21 = invoke;
         let tmp22 = arg1;
         let tmp23 = importDefault;
         let tmp24 = dependencyMap;
-        let tmp25 = invoke(tmp11, tmp2, importDefault(dependencyMap[2]).CAPTURING_PHASE);
+        let tmp25 = invoke(tmp11, tmp2, importDefault(201).CAPTURING_PHASE);
         diff = diff - 1;
         if (diff < 0) {
           break;
         } else {
-          let tmp26 = arg1;
+          let tmp26 = require;
           let tmp27 = dependencyMap;
-          let obj4 = arg1(dependencyMap[3]);
+          let obj4 = require(202) /* SymbolResult1 */;
           let tmp28 = arg1;
           if (obj4.getStopPropagationFlag(tmp2)) {
             break;
@@ -68,19 +73,19 @@ function dispatch(arg0, arg1) {
         }
       }
     }
-    const obj11 = arg1(dependencyMap[3]);
+    obj11 = require(202) /* SymbolResult1 */;
   }
   const iter = items[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp62 = nextResult;
-    let tmp63 = arg1;
+    let tmp63 = require;
     let tmp64 = dependencyMap;
-    let obj12 = arg1(dependencyMap[3]);
+    let obj12 = require(202) /* SymbolResult1 */;
     let tmp65 = arg1;
     if (obj12.getStopPropagationFlag(tmp2)) {
       iter.return();
-      // break
+      break;
     } else {
       let tmp30 = arg1;
       if (!tmp2.bubbles) {
@@ -88,24 +93,24 @@ function dispatch(arg0, arg1) {
         let tmp32 = arg0;
         if (tmp62 !== tmp) {
           iter.return();
-          // break
+          break;
         }
         break;
       }
-      let tmp33 = arg1;
+      let tmp33 = require;
       let tmp34 = dependencyMap;
-      let obj5 = arg1(dependencyMap[3]);
+      let obj5 = require(202) /* SymbolResult1 */;
       let tmp35 = arg1;
       let tmp36 = nextResult;
       let tmp37 = arg0;
       if (tmp62 === tmp) {
         let tmp40 = importDefault;
         let tmp41 = dependencyMap;
-        let BUBBLING_PHASE = importDefault(dependencyMap[2]).AT_TARGET;
+        let BUBBLING_PHASE = importDefault(201).AT_TARGET;
       } else {
         let tmp38 = importDefault;
         let tmp39 = dependencyMap;
-        BUBBLING_PHASE = importDefault(dependencyMap[2]).BUBBLING_PHASE;
+        BUBBLING_PHASE = importDefault(201).BUBBLING_PHASE;
       }
       let setEventPhaseResult1 = obj5.setEventPhase(tmp2, BUBBLING_PHASE);
       let tmp43 = invoke;
@@ -113,30 +118,30 @@ function dispatch(arg0, arg1) {
       let tmp45 = arg1;
       let tmp46 = importDefault;
       let tmp47 = dependencyMap;
-      let tmp48 = invoke(tmp62, tmp2, importDefault(dependencyMap[2]).BUBBLING_PHASE);
-      // continue
+      let tmp48 = invoke(tmp62, tmp2, importDefault(201).BUBBLING_PHASE);
+      continue;
     }
-    let tmp49 = arg1;
+    let tmp49 = require;
     let tmp50 = dependencyMap;
-    let obj6 = arg1(dependencyMap[3]);
+    let obj6 = require(202) /* SymbolResult1 */;
     let tmp51 = importDefault;
-    let setEventPhaseResult2 = obj6.setEventPhase(arg1, importDefault(dependencyMap[2]).NONE);
-    let obj7 = arg1(dependencyMap[3]);
+    let setEventPhaseResult2 = obj6.setEventPhase(arg1, importDefault(201).NONE);
+    let obj7 = require(202) /* SymbolResult1 */;
     let setCurrentTargetResult = obj7.setCurrentTarget(arg1, null);
-    let obj8 = arg1(dependencyMap[3]);
+    let obj8 = require(202) /* SymbolResult1 */;
     let setComposedPathResult1 = obj8.setComposedPath(arg1, []);
     let tmp55 = setEventDispatchFlag;
     let flag = false;
     let tmp56 = setEventDispatchFlag(arg1, false);
-    let obj9 = arg1(dependencyMap[3]);
+    let obj9 = require(202) /* SymbolResult1 */;
     let result = obj9.setStopImmediatePropagationFlag(arg1, false);
-    let obj10 = arg1(dependencyMap[3]);
+    let obj10 = require(202) /* SymbolResult1 */;
     let result1 = obj10.setStopPropagationFlag(arg1, false);
   }
 }
 function invoke(arg0, arg1, arg2) {
-  const obj2 = getListenersForPhase(arg0, arg2 === importDefault(dependencyMap[2]).CAPTURING_PHASE);
-  arg1(dependencyMap[3]).setCurrentTarget(arg1, arg0);
+  const obj2 = getListenersForPhase(arg0, arg2 === importDefault(201).CAPTURING_PHASE);
+  require(202) /* SymbolResult1 */.setCurrentTarget(arg1, arg0);
   let value;
   if (null != obj2) {
     value = obj2.get(tmp.type);
@@ -144,7 +149,7 @@ function invoke(arg0, arg1, arg2) {
   if (null != value) {
     const _Array = Array;
     const arr = Array.from(value.values());
-    arg1(dependencyMap[3]).setCurrentTarget(tmp, obj);
+    require(202) /* SymbolResult1 */.setCurrentTarget(tmp, obj);
     const iter = arr[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
@@ -158,13 +163,13 @@ function invoke(arg0, arg1, arg2) {
           let tmp12 = arg2;
           let tmp13 = importDefault;
           let tmp14 = dependencyMap;
-          let removed = obj.removeEventListener(tmp.type, tmp51.callback, arg2 === importDefault(dependencyMap[2]).CAPTURING_PHASE);
+          let removed = obj.removeEventListener(tmp.type, tmp51.callback, arg2 === importDefault(201).CAPTURING_PHASE);
         }
         let tmp16 = nextResult;
         if (tmp51.passive) {
-          let tmp17 = arg1;
+          let tmp17 = require;
           let tmp18 = dependencyMap;
-          let obj4 = arg1(dependencyMap[3]);
+          let obj4 = require(202) /* SymbolResult1 */;
           let tmp19 = arg1;
           let result = obj4.setInPassiveListenerFlag(tmp, true);
         }
@@ -193,30 +198,30 @@ function invoke(arg0, arg1, arg2) {
           if (!tmp51.passive) {
             break;
           } else {
-            let tmp34 = arg1;
+            let tmp34 = require;
             let tmp35 = dependencyMap;
-            let obj5 = arg1(dependencyMap[3]);
+            let obj5 = require(202) /* SymbolResult1 */;
             let tmp36 = arg1;
             let result1 = obj5.setInPassiveListenerFlag(tmp, false);
-            // break
+            break;
           }
           let tmp38 = global;
           let tmp39 = event;
           global.event = event;
-          let tmp40 = arg1;
+          let tmp40 = require;
           let tmp41 = dependencyMap;
-          let obj6 = arg1(dependencyMap[3]);
+          let obj6 = require(202) /* SymbolResult1 */;
           let tmp42 = arg1;
           if (obj6.getStopImmediatePropagationFlag(tmp)) {
             iter.return();
-            // break label0
+            break label0;
           }
           break label0;
         }
       }
-      // continue
+      continue;
     }
-    const obj7 = arg1(dependencyMap[3]);
+    const obj7 = require(202) /* SymbolResult1 */;
   }
 }
 function getListenersForPhase(arg0, arg1) {
@@ -230,21 +235,18 @@ function getListenersForPhase(arg0, arg1) {
 function setEventDispatchFlag(arg0, arg1) {
   arg0[closure_8] = arg1;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+let tmp2 = (() => {
   class EventTarget {
     constructor() {
-      tmp = closure_4(this, EventTarget);
+      tmp = outer1_4(this, EventTarget);
       return;
     }
   }
-  const global = EventTarget;
   let obj = {
     key: "addEventListener",
     value: function addEventListener(arg0, callback) {
       const self = this;
-      const EventTarget = callback;
+      let closure_0 = callback;
       if (arguments.length > 2) {
         if (undefined !== arguments[2]) {
           let obj = arguments[2];
@@ -255,14 +257,14 @@ const tmp2 = () => {
           const typeError = new TypeError("Failed to execute 'addEventListener' on 'EventTarget': 2 arguments required, but only " + arguments.length + " present.");
           throw typeError;
         } else if (null != callback) {
-          callback4(callback, "addEventListener");
+          outer1_9(callback, "addEventListener");
           let tmp20 = globalThis;
           const _String = String;
           const StringResult = String(arg0);
           if (null != obj) {
             if ("object" !== typeof obj) {
               if (null == tmp5) {
-                const obj2 = callback6(self, BooleanResult3);
+                const obj2 = outer1_12(self, BooleanResult3);
                 let value;
                 if (null != obj2) {
                   value = obj2.get(StringResult);
@@ -279,21 +281,22 @@ const tmp2 = () => {
                     const _Map = Map;
                     result = new Map();
                     if (!BooleanResult3) {
-                      self[closure_7] = result;
+                      self[outer1_7] = result;
                       obj3 = result;
                     }
                   }
-                  self[closure_6] = result;
+                  self[outer1_6] = result;
                   obj3 = result;
                 } else if (!value.has(callback)) {
                   obj = { callback, passive: flag, once: flag2, removed: false };
                   const result1 = value.set(callback, obj);
+                  let closure_2 = value;
                   if (null != tmp5) {
                     obj = { once: true };
                     const listener = tmp5.addEventListener("abort", () => {
                       obj.removed = true;
-                      if (value.get(arg1) === obj) {
-                        value.delete(arg1);
+                      if (value.get(closure_0) === obj) {
+                        value.delete(closure_0);
                       }
                     }, obj);
                   }
@@ -310,10 +313,10 @@ const tmp2 = () => {
             const _Boolean3 = Boolean;
             const BooleanResult2 = Boolean(obj.once);
             const signal = obj.signal;
-            let BooleanResult3 = BooleanResult;
-            let flag = BooleanResult1;
-            let flag2 = BooleanResult2;
-            let tmp5 = signal;
+            BooleanResult3 = BooleanResult;
+            flag = BooleanResult1;
+            flag2 = BooleanResult2;
+            tmp5 = signal;
             if (undefined !== signal) {
               const _AbortSignal = AbortSignal;
               BooleanResult3 = BooleanResult;
@@ -351,7 +354,7 @@ const tmp2 = () => {
           const typeError = new TypeError("Failed to execute 'removeEventListener' on 'EventTarget': 2 arguments required, but only " + arguments.length + " present.");
           throw typeError;
         } else if (null != arg1) {
-          callback4(arg1, "removeEventListener");
+          outer1_9(arg1, "removeEventListener");
           const _String = String;
           let BooleanResult = obj;
           if ("boolean" !== typeof obj) {
@@ -359,7 +362,7 @@ const tmp2 = () => {
             BooleanResult = Boolean(obj.capture);
           }
           const self = this;
-          const tmp16Result = closure_12(this, BooleanResult);
+          const tmp16Result = outer1_12(this, BooleanResult);
           let value;
           if (null != tmp16Result) {
             value = tmp16Result.get(StringResult);
@@ -371,8 +374,8 @@ const tmp2 = () => {
               value.delete(arg1);
             }
           }
-          const StringResult = String(arg0);
-          const tmp16 = closure_12;
+          StringResult = String(arg0);
+          const tmp16 = outer1_12;
         }
       }
       obj = {};
@@ -382,15 +385,15 @@ const tmp2 = () => {
   obj = {
     key: "dispatchEvent",
     value: function dispatchEvent(defaultPrevented) {
-      if (defaultPrevented instanceof callback2(closure_3[2])) {
-        if (defaultPrevented[closure_8]) {
+      if (defaultPrevented instanceof outer1_2(outer1_3[2])) {
+        if (defaultPrevented[outer1_8]) {
           const _Error = Error;
           const error = new Error("Failed to execute 'dispatchEvent' on 'EventTarget': The event is already being dispatched.");
           throw error;
         } else {
-          callback(closure_3[3]).setIsTrusted(defaultPrevented, false);
+          outer1_1(outer1_3[3]).setIsTrusted(defaultPrevented, false);
           const self = this;
-          callback5(this, defaultPrevented);
+          outer1_10(this, defaultPrevented);
           return !defaultPrevented.defaultPrevented;
         }
       } else {
@@ -402,26 +405,26 @@ const tmp2 = () => {
   };
   items[2] = obj;
   items[3] = {
-    key: arg1(dependencyMap[4]).EVENT_TARGET_GET_THE_PARENT_KEY,
+    key: require(203) /* SymbolResult1 */.EVENT_TARGET_GET_THE_PARENT_KEY,
     value() {
       return null;
     }
   };
   const obj1 = {
-    key: arg1(dependencyMap[4]).EVENT_TARGET_GET_THE_PARENT_KEY,
+    key: require(203) /* SymbolResult1 */.EVENT_TARGET_GET_THE_PARENT_KEY,
     value() {
       return null;
     }
   };
   items[4] = {
-    key: arg1(dependencyMap[4]).INTERNAL_DISPATCH_METHOD_KEY,
+    key: require(203) /* SymbolResult1 */.INTERNAL_DISPATCH_METHOD_KEY,
     value(arg0) {
-      callback5(this, arg0);
+      outer1_10(this, arg0);
     }
   };
   return callback(EventTarget, items);
-}();
-arg1(dependencyMap[5]).setPlatformObject(tmp2);
+})();
+setPlatformObject.setPlatformObject(tmp2);
 let closure_6 = Symbol("capturingListeners");
 let closure_7 = Symbol("bubblingListeners");
 let closure_8 = Symbol("Event.dispatch");

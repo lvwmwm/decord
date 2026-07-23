@@ -1,22 +1,25 @@
-// Module ID: 5689
-// Function ID: 48997
+// Module ID: 5694
+// Function ID: 49024
 // Name: SimpleLoadingModal
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 5586, 2]
 // Exports: default
 
-// Module 5689 (SimpleLoadingModal)
-let closure_2 = importAll(dependencyMap[0]);
-({ Modal: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const tmp2 = arg1(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ modalBackground: { "Null": "mp1N/2", "Null": "ng", "Null": "EXPRESSION_PICKER_EXPRESSION_FOCUS", "Null": "ignoreClass" } });
+// Module 5694 (SimpleLoadingModal)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ Modal: closure_3, View: closure_4 } = get_ActivityIndicator);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ modalBackground: { flex: 1, alignItems: "center", flexDirection: "column", justifyContent: "center" } });
 let closure_7 = { OPENING: 0, [0]: "OPENING", SHOWN: 1, [1]: "SHOWN", DISMISSED: 2, [2]: "DISMISSED" };
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/mobile_web_handoff/native/SimpleLoadingModalUI.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/mobile_web_handoff/native/SimpleLoadingModalUI.tsx");
 
 export default function SimpleLoadingModal(operation) {
   operation = operation.operation;
-  const arg1 = operation;
   const S = operation.onResolved;
   if (S === undefined) {
     class S {
@@ -51,11 +54,12 @@ export default function SimpleLoadingModal(operation) {
       }
     }
   }
+  let closure_4 = D;
   let jsx;
   let callback;
-  let constants;
+  let callback1;
   let callback2;
-  jsx = React.useRef(constants.OPENING);
+  jsx = React.useRef(callback1.OPENING);
   const items = [D];
   callback = React.useCallback(() => {
     if (ref.current === callback1.SHOWN) {
@@ -64,11 +68,10 @@ export default function SimpleLoadingModal(operation) {
     ref.current = callback1.DISMISSED;
   }, items);
   const items1 = [callback, S];
-  const callback1 = React.useCallback((arg0) => {
+  callback1 = React.useCallback((arg0) => {
     S(arg0);
     callback();
   }, items1);
-  constants = callback1;
   const items2 = [callback, I];
   callback2 = React.useCallback((arg0) => {
     I(arg0);
@@ -77,11 +80,11 @@ export default function SimpleLoadingModal(operation) {
   const items3 = [operation, callback1, callback2];
   const effect = React.useEffect(() => {
     const promise = operation();
-    operation().then((arg0) => callback(arg0)).catch((arg0) => callback2(arg0));
+    operation().then((arg0) => outer1_7(arg0)).catch((arg0) => outer1_8(arg0));
   }, items3);
   let obj = {
-    "Null": false,
-    "Null": false,
+    transparent: true,
+    animationType: "none",
     onShow() {
       if (ref.current === callback1.DISMISSED) {
         D();
@@ -95,7 +98,7 @@ export default function SimpleLoadingModal(operation) {
       }
     }
   };
-  obj = { style: callback().modalBackground, children: jsx(arg1(dependencyMap[4]).ActivityIndicator, {}) };
-  obj.children = <D {...obj} />;
-  return <cancelable {...obj} />;
+  obj = { style: callback().modalBackground, children: jsx(operation(5586).ActivityIndicator, {}) };
+  obj.children = <closure_4 style={callback().modalBackground}>{jsx(operation(5586).ActivityIndicator, {})}</closure_4>;
+  return <cancelable style={callback().modalBackground}>{jsx(operation(5586).ActivityIndicator, {})}</cancelable>;
 };

@@ -1,36 +1,42 @@
-// Module ID: 10277
-// Function ID: 79407
+// Module ID: 10290
+// Function ID: 79480
 // Name: NotificationSettingsMuteBanner
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 4543, 1212, 2]
 // Exports: NotificationSettingsMuteBanner, getMuteBannerSubtitleFromConfig
 
-// Module 10277 (NotificationSettingsMuteBanner)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.lg + 8, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
-obj.card = obj;
-let closure_5 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMuteBanner.tsx");
+// Module 10290 (NotificationSettingsMuteBanner)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-export const NotificationSettingsMuteBanner = function NotificationSettingsMuteBanner(children) {
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: 16, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderRadius: require("_createForOfIteratorHelperLoose").radii.lg + 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMuteBanner.tsx");
+
+export const NotificationSettingsMuteBanner = function NotificationSettingsMuteBanner(style) {
   let obj = {};
-  const items = [children.style, callback3().card];
+  const items = [style.style, _createForOfIteratorHelperLoose().card];
   obj.style = items;
-  obj = { style: { WEBP_RE_IOS: "<string:2126337>", kkk: "<string:2097152>" } };
-  obj = { children: children.title };
-  const items1 = [callback(arg1(dependencyMap[5]).Text, obj), callback(arg1(dependencyMap[5]).Text, { children: children.subtitle })];
+  obj = { style: { flex: 1, marginRight: 8 } };
+  obj = { variant: "text-md/semibold", color: "text-overlay-light", children: style.title };
+  const items1 = [callback(require(4126) /* Text */.Text, obj), ];
+  const obj1 = { variant: "text-xs/medium", color: "text-overlay-light", children: style.subtitle };
+  items1[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items1;
   const items2 = [callback2(View, obj), ];
   const obj2 = {};
-  const intl = arg1(dependencyMap[7]).intl;
-  obj2.text = intl.string(arg1(dependencyMap[7]).t.YqAjXy);
-  obj2.onPress = children.onPressUnmute;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj2.text = intl.string(require(1212) /* getSystemLocale */.t.YqAjXy);
+  obj2.onPress = style.onPressUnmute;
   obj2.variant = "primary-overlay";
-  items2[1] = callback(arg1(dependencyMap[6]).Button, obj2);
+  items2[1] = callback(require(4543) /* Button */.Button, obj2);
   obj.children = items2;
   return callback2(View, obj);
 };
@@ -40,15 +46,15 @@ export const getMuteBannerSubtitleFromConfig = function getMuteBannerSubtitleFro
     end_time = config.end_time;
   }
   if (null == end_time) {
-    const intl = arg1(dependencyMap[7]).intl;
-    let stringResult = intl.string(arg1(dependencyMap[7]).t.tFqP/P);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl.string(require(1212) /* getSystemLocale */.t["tFqP/P"]);
   } else {
-    const intl2 = arg1(dependencyMap[7]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj = {};
     const _Date = Date;
     const date = new Date(config.end_time);
-    obj.endTime = date.toLocaleString(arg1(dependencyMap[7]).intl.currentLocale, {});
-    stringResult = intl2.formatToPlainString(arg1(dependencyMap[7]).t.C7m4oh, obj);
+    obj.endTime = date.toLocaleString(require(1212) /* getSystemLocale */.intl.currentLocale, { month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" });
+    stringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.C7m4oh, obj);
   }
   return stringResult;
 };

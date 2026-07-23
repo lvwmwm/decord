@@ -51,14 +51,17 @@ class Promise {
   then(arg0, arg1) {
     self = this;
     if (this.constructor !== Promise) {
-      return function safeThen(self, arg1, arg2) {
+      return (function safeThen(self, arg1, arg2) {
+        let closure_0 = self;
+        let closure_1 = arg1;
+        let closure_2 = arg2;
         const constructor = new self.constructor((arg0, arg1) => {
-          const promise = new closure_3(arg2);
+          const promise = new outer2_3(outer2_2);
           promise.then(arg0, arg1);
-          callback(arg0, new closure_8(arg1, arg2, promise));
+          outer2_4(closure_0, new outer2_8(closure_1, closure_2, promise));
         });
         return constructor;
-      }(self, global, require);
+      })(self, global, require);
     } else {
       tmp = Promise;
       tmp2 = noop;
@@ -110,36 +113,38 @@ function handle(_y, _A) {
     }
     return tmp7;
   } else {
-    function handleResolved(_y, _A) {
-      setImmediate((self, self2) => {
-        if (1 === self._y) {
-          let onRejected = self2.onFulfilled;
+    (function handleResolved(_y, _A) {
+      let closure_0 = _y;
+      let closure_1 = _A;
+      setImmediate(() => {
+        if (1 === _y._y) {
+          let onRejected = _A.onFulfilled;
         } else {
-          onRejected = self2.onRejected;
+          onRejected = _A.onRejected;
         }
         if (null !== onRejected) {
-          const _z = self._z;
+          const _z = _y._z;
           const onRejectedResult = onRejected(_z);
           while (true) {
-            let tmp18 = self2;
-            if (onRejectedResult === self2) {
-              let tmp22 = callback2;
-              let tmp23 = self2;
-              let tmp24 = self;
-              let tmp25 = callback2(self2.promise, self);
+            let tmp18 = outer2_1;
+            if (onRejectedResult === outer2_1) {
+              let tmp22 = outer2_6;
+              let tmp23 = _A;
+              let tmp24 = outer2_0;
+              let tmp25 = outer2_6(_A.promise, outer2_0);
             } else {
-              let tmp19 = callback;
-              let tmp20 = self2;
-              let tmp21 = callback(self2.promise, onRejectedResult);
+              let tmp19 = outer2_5;
+              let tmp20 = _A;
+              let tmp21 = outer2_5(_A.promise, onRejectedResult);
             }
           }
-        } else if (1 === self._y) {
-          callback(self2.promise, self._z);
+        } else if (1 === _y._y) {
+          outer2_5(_A.promise, _y._z);
         } else {
-          callback2(self2.promise, self._z);
+          outer2_6(_A.promise, _y._z);
         }
       });
-    }(tmp2, _A);
+    })(tmp2, _A);
   }
 }
 function resolve(arg0, _z) {
@@ -155,8 +160,8 @@ function resolve(arg0, _z) {
           let tmp3 = closure_1;
           if (then === closure_1) {
             let tmp11 = reject;
-            let tmp12 = closure_0;
-            let tmp13 = reject(arg0, closure_0);
+            let tmp12 = c0;
+            let tmp13 = reject(arg0, c0);
           } else {
             if (then === arg0.then) {
               let tmp4 = Promise;
@@ -200,8 +205,8 @@ function finale(_x) {
     let num = 0;
     if (0 < _x._A.length) {
       do {
-        let tmp4 = closure_4;
-        let tmp5 = closure_4(_x, _x._A[num]);
+        let tmp4 = handle;
+        let tmp5 = handle(_x, _x._A[num]);
         num = num + 1;
         length = _x._A.length;
       } while (num < length);
@@ -225,39 +230,39 @@ function Handler(arg0, arg1, promise) {
 }
 function doResolve(arg0, arg1) {
   let closure_0 = arg1;
-  let closure_1 = false;
+  let c1 = false;
   const fn = (arg0) => {
-    if (!closure_1) {
-      closure_1 = true;
-      callback(arg1, arg0);
+    if (!c1) {
+      c1 = true;
+      outer1_5(closure_0, arg0);
     }
   };
   const fn2 = (arg0) => {
-    if (!closure_1) {
-      closure_1 = true;
-      callback2(arg1, arg0);
+    if (!c1) {
+      c1 = true;
+      outer1_6(closure_0, arg0);
     }
   };
   arg0(fn, fn2);
   while (true) {
-    let tmp3 = closure_1;
-    if (closure_1) {
+    let tmp3 = c1;
+    if (c1) {
       break;
     } else {
-      let tmp4 = closure_1;
-      tmp3 = tmp2 !== closure_1;
-      // break
+      let tmp4 = c1;
+      tmp3 = tmp2 !== c1;
+      break;
     }
     if (!tmp3) {
       let flag = true;
-      closure_1 = true;
+      c1 = true;
       let tmp5 = reject;
       let tmp6 = closure_0;
       let tmp7 = reject(arg1, closure_0);
     }
   }
 }
-let closure_0 = null;
+let c0 = null;
 let closure_1 = {};
 Promise._B = null;
 Promise._C = null;

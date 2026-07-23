@@ -1,9 +1,11 @@
 // Module ID: 1054
-// Function ID: 11292
+// Function ID: 11293
 // Name: _getUnhandledRejectionError
-// Dependencies: []
+// Dependencies: [794, 1004, 1007, 1048]
 
 // Module 1054 (_getUnhandledRejectionError)
+import registerSpanErrorInstrumentation from "registerSpanErrorInstrumentation";
+
 function _getUnhandledRejectionError(arg0) {
   if (obj.isPrimitive(arg0)) {
     return arg0;
@@ -25,15 +27,15 @@ function _eventFromRejectionWithPrimitive(reason) {
   return obj;
 }
 function globalHandlerLog(arg0) {
-  if (require(dependencyMap[3]).DEBUG_BUILD) {
-    const debug = require(dependencyMap[0]).debug;
+  if (require(1048).DEBUG_BUILD) {
+    const debug = require(794) /* registerSpanErrorInstrumentation */.debug;
     const _HermesInternal = HermesInternal;
     debug.log("Global Handler attached: " + arg0);
   }
 }
 function getOptions() {
   let options;
-  let obj = require(dependencyMap[0]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   const client = obj.getClient();
   if (null != client) {
     options = client.getOptions();
@@ -50,44 +52,44 @@ function getOptions() {
   return options;
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
 
 export { _eventFromRejectionWithPrimitive };
 export { _getUnhandledRejectionError };
-export const globalHandlersIntegration = _module.defineIntegration(function _globalHandlersIntegration() {
+export const globalHandlersIntegration = registerSpanErrorInstrumentation.defineIntegration(function _globalHandlersIntegration() {
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
       const first = arguments[0];
     }
     const _Object = Object;
-    let closure_0 = Object.assign({ 24740291: null, 33554432: null }, {});
-    const obj = {
+    let closure_0 = Object.assign({ onerror: true, onunhandledrejection: true }, {});
+    let obj = {
       name: "GlobalHandlers",
       setupOnce() {
           Error.stackTraceLimit = 50;
         },
       setup(arg0) {
           if (closure_0.onerror) {
-            function _installGlobalOnErrorHandler(arg0) {
-              const result = arg0(closure_1[0]).addGlobalErrorInstrumentationHandler((msg) => {
+            (function _installGlobalOnErrorHandler(arg0) {
+              const callback = arg0;
+              let result = callback(outer2_1[0]).addGlobalErrorInstrumentationHandler((msg) => {
                 let attachStacktrace;
                 let column;
                 let error;
                 let line;
                 let stackParser;
                 let url;
-                ({ stackParser, attachStacktrace } = callback());
-                let obj = msg(closure_1[0]);
-                if (obj.getClient() === msg) {
+                ({ stackParser, attachStacktrace } = outer3_5());
+                let obj = callback(outer3_1[0]);
+                if (obj.getClient() === callback) {
                   if (!obj5.shouldIgnoreOnError()) {
                     ({ url, line, column, error } = msg);
-                    const obj2 = msg(closure_1[2]);
+                    let obj2 = callback(outer3_1[2]);
                     msg = error;
                     if (!error) {
                       msg = msg.msg;
                     }
                     const result = obj2.eventFromUnknownInput(stackParser, msg, undefined, attachStacktrace, false);
-                    function _enhanceEventWithInitialFrame(result, url, line, column) {
+                    (function _enhanceEventWithInitialFrame(result, url, line, column) {
                       const tmp = result.exception || {};
                       result.exception = tmp;
                       const tmp2 = tmp.values || [];
@@ -98,70 +100,71 @@ export const globalHandlersIntegration = _module.defineIntegration(function _glo
                       tmp3.stacktrace = tmp4;
                       let arr = tmp4.frames || [];
                       tmp4.frames = arr;
-                      let obj = callback(closure_1[0]);
+                      let obj = callback(outer4_1[0]);
                       let combined;
                       if (obj.isString(url)) {
                         if (0 !== url.length) {
                           combined = url;
                           if (url.startsWith("data:")) {
                             const _HermesInternal = HermesInternal;
-                            combined = "<" + callback(closure_1[0]).stripDataUrlContent(url, false) + ">";
-                            const obj2 = callback(closure_1[0]);
+                            combined = "<" + callback(outer4_1[0]).stripDataUrlContent(url, false) + ">";
+                            const obj2 = callback(outer4_1[0]);
                           }
                         }
                       }
                       if (null == combined) {
-                        combined = callback(closure_1[0]).getLocationHref();
-                        const obj3 = callback(closure_1[0]);
+                        combined = callback(outer4_1[0]).getLocationHref();
+                        const obj3 = callback(outer4_1[0]);
                       }
                       if (0 === arr.length) {
-                        obj = { colno: column, filename: combined, function: callback(closure_1[0]).UNKNOWN_FUNCTION, in_app: true, lineno: line };
+                        obj = { colno: column, filename: combined, function: callback(outer4_1[0]).UNKNOWN_FUNCTION, in_app: true, lineno: line };
                         arr = arr.push(obj);
                       }
                       return result;
-                    }(result, url, line, column);
+                    })(result, url, line, column);
                     result.level = "error";
-                    obj = { originalException: error, mechanism: {} };
-                    msg(closure_1[0]).captureEvent(result, obj);
-                    const obj3 = msg(closure_1[0]);
+                    obj = { originalException: error, mechanism: { handled: false, type: "auto.browser.global_handlers.onerror" } };
+                    callback(outer3_1[0]).captureEvent(result, obj);
+                    let obj3 = callback(outer3_1[0]);
                   }
-                  const obj5 = msg(closure_1[1]);
+                  obj5 = callback(outer3_1[1]);
                 }
               });
-            }(arg0);
-            callback("onerror");
+            })(arg0);
+            outer1_4("onerror");
           }
           if (closure_0.onunhandledrejection) {
-            function _installGlobalOnUnhandledRejectionHandler(arg0) {
-              const result = arg0(closure_1[0]).addGlobalUnhandledRejectionInstrumentationHandler((arg0) => {
+            (function _installGlobalOnUnhandledRejectionHandler(arg0) {
+              const callback = arg0;
+              let result = callback(outer2_1[0]).addGlobalUnhandledRejectionInstrumentationHandler((arg0) => {
                 let attachStacktrace;
                 let stackParser;
-                ({ stackParser, attachStacktrace } = callback3());
+                ({ stackParser, attachStacktrace } = outer3_5());
                 let num = 0;
-                let obj = arg0(closure_1[0]);
-                if (obj.getClient() === arg0) {
+                let obj = callback(outer3_1[0]);
+                if (obj.getClient() === callback) {
                   if (!obj6.shouldIgnoreOnError()) {
-                    obj = callback(arg0);
+                    obj = outer3_2(arg0);
                     if (obj3.isPrimitive(obj)) {
-                      let result = callback2(obj);
+                      let result = outer3_3(obj);
                     } else {
-                      const obj4 = arg0(closure_1[2]);
+                      const obj4 = callback(outer3_1[2]);
                       result = obj4.eventFromUnknownInput(stackParser, obj, undefined, attachStacktrace, true);
                     }
                     result.level = "error";
-                    num = arg0(closure_1[num]);
+                    num = callback(outer3_1[num]);
                     obj = {};
                     obj.originalException = obj;
-                    obj = {};
+                    obj = { handled: false, type: "auto.browser.global_handlers.onunhandledrejection" };
                     obj.mechanism = obj;
                     num.captureEvent(result, obj);
-                    const obj3 = arg0(closure_1[num]);
+                    obj3 = callback(outer3_1[num]);
                   }
-                  const obj6 = arg0(closure_1[1]);
+                  obj6 = callback(outer3_1[1]);
                 }
               });
-            }(arg0);
-            callback("onunhandledrejection");
+            })(arg0);
+            outer1_4("onunhandledrejection");
           }
         }
     };

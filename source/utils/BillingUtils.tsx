@@ -1,16 +1,20 @@
-// Module ID: 3789
-// Function ID: 29539
+// Module ID: 3791
+// Function ID: 29544
 // Name: _createGatewayCheckoutContext
-// Dependencies: []
+// Dependencies: [5, 482, 3792, 1184, 507, 3798, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError
 
-// Module 3789 (_createGatewayCheckoutContext)
-async function _createGatewayCheckoutContext(paymentGateway, arg1) {
+// Module 3791 (_createGatewayCheckoutContext)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PaymentGateways } from "sum";
+
+const require = arg1;
+async function _createGatewayCheckoutContext(arg0, arg1) {
   let tmp = null;
-  if (null != paymentGateway) {
+  if (null != arg0) {
     tmp = null;
-    if (paymentGateway.paymentGateway === constants.BRAINTREE) {
-      let obj = callback(closure_2[2]);
+    if (arg0.paymentGateway === outer2_4.BRAINTREE) {
+      let obj = outer2_0(outer2_2[2]);
       const tmp5 = yield obj.collectDeviceData();
       tmp = null;
       if (null != tmp5) {
@@ -21,9 +25,7 @@ async function _createGatewayCheckoutContext(paymentGateway, arg1) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const PaymentGateways = arg1(dependencyMap[1]).PaymentGateways;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("utils/BillingUtils.tsx");
+const result = require("getBraintreeSDK").fileFinishedImporting("utils/BillingUtils.tsx");
 
 export const getLocalizedDisplayMonth = function getLocalizedDisplayMonth(arg0, arg1) {
   const date = new Date();
@@ -34,7 +36,7 @@ export const createGatewayCheckoutContext = function createGatewayCheckoutContex
   return _createGatewayCheckoutContext(...arguments);
 };
 export const captureBillingException = function captureBillingException(error, tags) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(1184);
   obj = {};
   const merged = Object.assign(tags);
   obj = {};
@@ -48,7 +50,7 @@ export const captureBillingException = function captureBillingException(error, t
   obj.captureException(error, obj);
 };
 export const isExpectedHttpClientError = function isExpectedHttpClientError(status) {
-  let tmp = status instanceof arg1(dependencyMap[4]).HTTPResponseError;
+  let tmp = status instanceof require(507) /* _isNativeReflectConstruct */.HTTPResponseError;
   if (tmp) {
     tmp = status.status >= 400;
   }
@@ -56,7 +58,7 @@ export const isExpectedHttpClientError = function isExpectedHttpClientError(stat
     tmp = status.status < 500;
   }
   if (!tmp) {
-    let tmp4 = status instanceof importDefault(dependencyMap[5]);
+    let tmp4 = status instanceof importDefault(3798);
     if (tmp4) {
       tmp4 = null != status.status;
     }
@@ -71,7 +73,7 @@ export const isExpectedHttpClientError = function isExpectedHttpClientError(stat
   return tmp;
 };
 export const captureBillingMessage = function captureBillingMessage(arg0, tags) {
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(1184);
   obj = {};
   const merged = Object.assign(tags);
   obj = {};

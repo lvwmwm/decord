@@ -1,10 +1,9 @@
-// Module ID: 13857
-// Function ID: 104798
+// Module ID: 13971
+// Function ID: 106954
 // Name: CollectibleSearchCurrencyFilter
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 13857 (CollectibleSearchCurrencyFilter)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectibleSearchCurrencyFilter.tsx");
+// Module 13971 (CollectibleSearchCurrencyFilter)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectibleSearchCurrencyFilter.tsx");
 
 export const CollectibleSearchCurrencyFilter = { ORBS: "orbs" };

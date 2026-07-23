@@ -1,79 +1,78 @@
-// Module ID: 9934
-// Function ID: 76870
+// Module ID: 9942
+// Function ID: 76910
 // Name: AppInteractionInfoActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 1857, 1838, 1849, 33, 4130, 1557, 9943, 8180, 566, 7889, 5515, 4126, 1212, 4660, 8492, 1273, 5187, 2]
 // Exports: default
 
-// Module 9934 (AppInteractionInfoActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ itemContainer: { position: 14, left: "default_guilds_activity_restricted", right: "enum", top: null }, itemLabel: {} });
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/applications/native/AppInteractionInfoActionSheet.tsx");
+// Module 9942 (AppInteractionInfoActionSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ itemContainer: { flexDirection: "row", paddingVertical: 12, paddingHorizontal: 16, alignItems: "center" }, itemLabel: { flexDirection: "column", alignItems: "flex-start", paddingLeft: 12 } });
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/applications/native/AppInteractionInfoActionSheet.tsx");
 
 export default function AppInteractionInfoActionSheet(message) {
   let guildId;
   let onBack;
   message = message.message;
-  const arg1 = message;
   ({ guildId, onBack } = message);
-  const importDefault = onBack;
   let dependencyMap;
   let React;
-  let View;
-  let closure_5;
-  let closure_6;
-  const tmp = callback3();
+  let id;
+  let stateFromStores;
+  let stateFromStores2;
+  let tmp = callback3();
   const items = [onBack];
   const interactionMetadata = message.interactionMetadata;
   let tmp3;
-  const memo = React.useMemo(() => callback(onBack(tmp3[8]), { onBack }), items);
+  const memo = React.useMemo(() => outer1_8(onBack(_undefined[8]), { onBack }), items);
   if (null != interactionMetadata) {
-    tmp3 = interactionMetadata.authorizing_integration_owners[closure_0(undefined, closure_2[9]).ApplicationIntegrationType.USER_INSTALL];
+    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 8180).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp3;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp6;
   if (null != interactionMetadata2) {
-    tmp6 = interactionMetadata2.authorizing_integration_owners[closure_0(undefined, closure_2[9]).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 8180).ApplicationIntegrationType.GUILD_INSTALL];
   }
   React = tmp6;
   const interactionMetadata3 = message.interactionMetadata;
-  let id;
+  id = undefined;
   if (null != interactionMetadata3) {
     id = interactionMetadata3.user.id;
   }
-  View = id;
-  let obj = arg1(dependencyMap[10]);
+  let obj = message(566);
   const items1 = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items1, () => authStore.getUser(tmp3));
-  closure_5 = stateFromStores;
-  let obj1 = arg1(dependencyMap[10]);
-  const items2 = [closure_6];
-  const stateFromStores1 = obj1.useStateFromStores(items2, () => tmp15.getGuild(tmp6));
-  let obj2 = arg1(dependencyMap[10]);
+  stateFromStores = obj.useStateFromStores(items1, () => outer1_7.getUser(c2));
+  let obj1 = message(566);
+  const items2 = [stateFromStores2];
+  const stateFromStores1 = obj1.useStateFromStores(items2, () => stateFromStores2.getGuild(c3));
+  let obj2 = message(566);
   const items3 = [closure_7];
-  const stateFromStores2 = obj2.useStateFromStores(items3, () => authStore.getUser(id));
-  closure_6 = stateFromStores2;
+  stateFromStores2 = obj2.useStateFromStores(items3, () => outer1_7.getUser(id));
   const items4 = [stateFromStores, tmp3];
   const effect = React.useEffect(() => {
     let tmp = null == stateFromStores;
     if (tmp) {
-      tmp = null != tmp3;
+      tmp = null != _undefined;
     }
     if (tmp) {
-      const user = message(message[11]).getUser(tmp3);
-      const obj = message(message[11]);
+      const user = message(_undefined[11]).getUser(_undefined);
+      const obj = message(_undefined[11]);
     }
   }, items4);
   let tmp14 = stateFromStores2;
   if (null == stateFromStores2) {
-    let tmp15 = closure_5;
+    let tmp15 = stateFromStores;
     const interactionMetadata4 = message.interactionMetadata;
     let user;
     if (null != interactionMetadata4) {
@@ -81,78 +80,78 @@ export default function AppInteractionInfoActionSheet(message) {
     }
     const prototype = tmp15.prototype;
     tmp15 = new tmp15(user);
-    closure_6 = tmp15;
+    stateFromStores2 = tmp15;
     tmp14 = tmp15;
   }
   if (null != stateFromStores1) {
     obj = { style: tmp.itemContainer };
-    obj = { guild: stateFromStores1, size: arg1(dependencyMap[12]).GuildIconSizes.SMALL_32 };
-    const items5 = [callback(importDefault(dependencyMap[12]), obj), ];
+    obj = { guild: stateFromStores1, size: message(5515).GuildIconSizes.SMALL_32 };
+    const items5 = [callback(onBack(5515), obj), ];
     obj1 = { style: tmp.itemLabel };
-    obj2 = { children: stateFromStores1.name };
-    const items6 = [callback(arg1(dependencyMap[13]).Text, obj2), ];
-    const obj3 = { cachedAt: null, edpbxy: null };
-    const intl2 = arg1(dependencyMap[14]).intl;
+    obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores1.name };
+    const items6 = [callback(message(4126).Text, obj2), ];
+    const obj3 = { variant: "text-xs/medium", color: "text-subtle" };
+    const intl2 = message(1212).intl;
     const obj4 = { application: message.author.username };
-    obj3.children = intl2.format(arg1(dependencyMap[14]).t.ShLXXB, obj4);
-    items6[1] = callback(arg1(dependencyMap[13]).Text, obj3);
+    obj3.children = intl2.format(message(1212).t.ShLXXB, obj4);
+    items6[1] = callback(message(4126).Text, obj3);
     obj1.children = items6;
-    items5[1] = callback2(View, obj1);
+    items5[1] = callback2(id, obj1);
     obj.children = items5;
-    let tmp27 = callback2(View, obj);
-    const tmp33 = importDefault(dependencyMap[12]);
+    let tmp27 = callback2(id, obj);
+    const tmp33 = onBack(5515);
   } else {
     tmp27 = null;
     if (null != stateFromStores) {
       const obj5 = {
         onPress() {
-              return onBack(tmp3[16])({ userId: stateFromStores.id, channelId: message.channel_id });
+              return onBack(_undefined[16])({ userId: stateFromStores.id, channelId: message.channel_id });
             }
       };
       const obj6 = { style: tmp.itemContainer };
-      const obj7 = { user: stateFromStores, size: arg1(dependencyMap[17]).AvatarSizes.REFRESH_MEDIUM_32, guildId };
-      const items7 = [callback(arg1(dependencyMap[17]).Avatar, obj7), ];
+      const obj7 = { user: stateFromStores, size: message(1273).AvatarSizes.REFRESH_MEDIUM_32, guildId };
+      const items7 = [callback(message(1273).Avatar, obj7), ];
       const obj8 = { style: tmp.itemLabel };
-      const obj9 = { children: stateFromStores.username };
-      const items8 = [callback(arg1(dependencyMap[13]).Text, obj9), ];
-      const obj10 = { cachedAt: null, edpbxy: null };
-      const intl = arg1(dependencyMap[14]).intl;
+      const obj9 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.username };
+      const items8 = [callback(message(4126).Text, obj9), ];
+      const obj10 = { variant: "text-xs/medium", color: "text-subtle" };
+      const intl = message(1212).intl;
       const obj11 = { application: message.author.username };
-      obj10.children = intl.format(arg1(dependencyMap[14]).t.ShLXXB, obj11);
-      items8[1] = callback(arg1(dependencyMap[13]).Text, obj10);
+      obj10.children = intl.format(message(1212).t.ShLXXB, obj11);
+      items8[1] = callback(message(4126).Text, obj10);
       obj8.children = items8;
-      items7[1] = callback2(View, obj8);
+      items7[1] = callback2(id, obj8);
       obj6.children = items7;
-      obj5.children = callback2(View, obj6);
-      tmp27 = callback(arg1(dependencyMap[15]).PressableOpacity, obj5);
+      obj5.children = callback2(id, obj6);
+      tmp27 = callback(message(4660).PressableOpacity, obj5);
     }
   }
-  const obj12 = { header: memo, bodyStyles: { paddingBottom: importDefault(dependencyMap[7])().bottom } };
+  const obj12 = { header: memo, bodyStyles: { paddingBottom: onBack(1557)().bottom } };
   const items9 = [tmp27, ];
   let tmp36 = null;
   if (null != tmp14) {
     const obj13 = {
       onPress() {
-          return onBack(tmp3[16])({ userId: tmp15.id, channelId: message.channel_id });
+          return onBack(_undefined[16])({ userId: stateFromStores2.id, channelId: message.channel_id });
         }
     };
     const obj14 = { style: tmp.itemContainer };
-    const obj15 = { user: tmp14, size: arg1(dependencyMap[17]).AvatarSizes.REFRESH_MEDIUM_32, guildId };
-    const items10 = [callback(arg1(dependencyMap[17]).Avatar, obj15), ];
+    const obj15 = { user: tmp14, size: message(1273).AvatarSizes.REFRESH_MEDIUM_32, guildId };
+    const items10 = [callback(message(1273).Avatar, obj15), ];
     const obj16 = { style: tmp.itemLabel };
-    const obj17 = { children: tmp14.username };
-    const items11 = [callback(arg1(dependencyMap[13]).Text, obj17), ];
-    const obj18 = { cachedAt: null, edpbxy: null };
-    const intl3 = arg1(dependencyMap[14]).intl;
-    obj18.children = intl3.string(arg1(dependencyMap[14]).t.04gxNg);
-    items11[1] = callback(arg1(dependencyMap[13]).Text, obj18);
+    const obj17 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp14.username };
+    const items11 = [callback(message(4126).Text, obj17), ];
+    const obj18 = { variant: "text-xs/medium", color: "text-subtle" };
+    const intl3 = message(1212).intl;
+    obj18.children = intl3.string(message(1212).t["04gxNg"]);
+    items11[1] = callback(message(4126).Text, obj18);
     obj16.children = items11;
-    items10[1] = callback2(View, obj16);
+    items10[1] = callback2(id, obj16);
     obj14.children = items10;
-    obj13.children = callback2(View, obj14);
-    tmp36 = callback(arg1(dependencyMap[15]).PressableOpacity, obj13);
+    obj13.children = callback2(id, obj14);
+    tmp36 = callback(message(4660).PressableOpacity, obj13);
   }
   items9[1] = tmp36;
   obj12.children = items9;
-  return callback2(arg1(dependencyMap[18]).BottomSheet, obj12);
+  return callback2(message(5187).BottomSheet, obj12);
 };

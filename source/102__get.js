@@ -1,7 +1,7 @@
 // Module ID: 102
 // Function ID: 1587
 // Name: _get
-// Dependencies: []
+// Dependencies: [103]
 
 // Module 102 (_get)
 function _get() {
@@ -11,13 +11,12 @@ function _get() {
       const _Reflect2 = Reflect;
       let fn = get.bind();
     }
-    const _get = fn;
     tmp.exports = fn;
-    return _get(...arguments);
+    return fn(...arguments);
   }
   fn = (arg0, arg1, arg2) => {
     let tmp = arg2;
-    const tmp2 = callback(closure_2[0])(arg0, arg1);
+    const tmp2 = outer1_0(outer1_2[0])(arg0, arg1);
     if (tmp2) {
       const _Object = Object;
       const iter = Object.getOwnPropertyDescriptor(tmp2, arg1);

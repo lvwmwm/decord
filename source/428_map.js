@@ -1,10 +1,13 @@
 // Module ID: 428
 // Function ID: 5955
 // Name: map
-// Dependencies: []
+// Dependencies: [429, 101, 268, 117]
 
 // Module 428 (map)
-const items = [[], [null, null], [], [], [], [], []];
+const require = arg1;
+const module = arg2;
+const dependencyMap = arg6;
+const items = [["change", "touchExplorationDidChange"], ["reduceMotionChanged", "reduceMotionDidChange"], ["highTextContrastChanged", "highTextContrastDidChange"], ["screenReaderChanged", "touchExplorationDidChange"], ["accessibilityServiceChanged", "accessibilityServiceDidChange"], ["invertColorsChanged", "invertColorDidChange"], ["grayscaleChanged", "grayscaleModeDidChange"]];
 const map = new Map(items);
 arg5.default = {
   isBoldTextEnabled() {
@@ -13,12 +16,12 @@ arg5.default = {
   isGrayscaleEnabled(arg0) {
     return new Promise((arg0, arg1) => {
       let isGrayscaleEnabled;
-      if (null != callback(closure_2[0])) {
-        isGrayscaleEnabled = callback(closure_2[0]).isGrayscaleEnabled;
+      if (null != outer1_1(outer1_2[0])) {
+        isGrayscaleEnabled = outer1_1(outer1_2[0]).isGrayscaleEnabled;
       }
       if (null != isGrayscaleEnabled) {
-        callback(closure_2[0]).isGrayscaleEnabled(arg0);
-        const obj = callback(closure_2[0]);
+        outer1_1(outer1_2[0]).isGrayscaleEnabled(arg0);
+        const obj = outer1_1(outer1_2[0]);
       } else {
         arg1(null);
       }
@@ -27,12 +30,12 @@ arg5.default = {
   isInvertColorsEnabled(arg0) {
     return new Promise((arg0, arg1) => {
       let prop;
-      if (null != callback(closure_2[0])) {
-        prop = callback(closure_2[0]).isInvertColorsEnabled;
+      if (null != outer1_1(outer1_2[0])) {
+        prop = outer1_1(outer1_2[0]).isInvertColorsEnabled;
       }
       if (null != prop) {
-        const result = callback(closure_2[0]).isInvertColorsEnabled(arg0);
-        const obj = callback(closure_2[0]);
+        const result = outer1_1(outer1_2[0]).isInvertColorsEnabled(arg0);
+        const obj = outer1_1(outer1_2[0]);
       } else {
         arg1(null);
       }
@@ -40,9 +43,9 @@ arg5.default = {
   },
   isReduceMotionEnabled(arg0) {
     return new Promise((arg0, arg1) => {
-      if (null != callback(closure_2[0])) {
-        const result = callback(closure_2[0]).isReduceMotionEnabled(arg0);
-        const obj = callback(closure_2[0]);
+      if (null != outer1_1(outer1_2[0])) {
+        const result = outer1_1(outer1_2[0]).isReduceMotionEnabled(arg0);
+        const obj = outer1_1(outer1_2[0]);
       } else {
         arg1(null);
       }
@@ -51,12 +54,12 @@ arg5.default = {
   isHighTextContrastEnabled(arg0) {
     return new Promise((arg0, arg1) => {
       let prop;
-      if (null != callback(closure_2[0])) {
-        prop = callback(closure_2[0]).isHighTextContrastEnabled;
+      if (null != outer1_1(outer1_2[0])) {
+        prop = outer1_1(outer1_2[0]).isHighTextContrastEnabled;
       }
       if (null != prop) {
-        const result = callback(closure_2[0]).isHighTextContrastEnabled(arg0);
-        const obj = callback(closure_2[0]);
+        const result = outer1_1(outer1_2[0]).isHighTextContrastEnabled(arg0);
+        const obj = outer1_1(outer1_2[0]);
       } else {
         arg1(null);
       }
@@ -73,9 +76,9 @@ arg5.default = {
   },
   isScreenReaderEnabled(Text, arg1, id) {
     return new Promise((arg0, arg1) => {
-      if (null != callback(closure_2[0])) {
-        const result = callback(closure_2[0]).isTouchExplorationEnabled(arg0);
-        const obj = callback(closure_2[0]);
+      if (null != outer1_1(outer1_2[0])) {
+        const result = outer1_1(outer1_2[0]).isTouchExplorationEnabled(arg0);
+        const obj = outer1_1(outer1_2[0]);
       } else {
         arg1(null);
       }
@@ -83,10 +86,10 @@ arg5.default = {
   },
   isAccessibilityServiceEnabled(arg0) {
     return new Promise((arg0, arg1) => {
-      if (null != callback(closure_2[0])) {
-        if (null != callback(closure_2[0]).isAccessibilityServiceEnabled) {
-          const result = callback(closure_2[0]).isAccessibilityServiceEnabled(arg0);
-          const obj = callback(closure_2[0]);
+      if (null != outer1_1(outer1_2[0])) {
+        if (null != outer1_1(outer1_2[0]).isAccessibilityServiceEnabled) {
+          const result = outer1_1(outer1_2[0]).isAccessibilityServiceEnabled(arg0);
+          const obj = outer1_1(outer1_2[0]);
         }
       }
       arg1(null);
@@ -102,39 +105,38 @@ arg5.default = {
       };
       let addListenerResult = obj;
     } else {
-      obj = arg2(arg6[1]);
+      obj = module(101);
       addListenerResult = obj.addListener(value, arg1);
     }
     return addListenerResult;
   },
   setAccessibilityFocus(arg0) {
-    arg2(arg6[2])(arg0, "focus");
+    module(268)(arg0, "focus");
   },
   sendAccessibilityEvent(arg0, arg1) {
-    const result = arg1(arg6[3]).sendAccessibilityEvent(arg0, arg1);
+    const result = require(117) /* renderElement */.sendAccessibilityEvent(arg0, arg1);
   },
   announceForAccessibility(intl) {
-    if (null != arg2(arg6[0])) {
-      const result = arg2(arg6[0]).announceForAccessibility(intl);
-      const obj = arg2(arg6[0]);
+    if (null != module(429)) {
+      const result = module(429).announceForAccessibility(intl);
+      const obj = module(429);
     }
   },
   announceForAccessibilityWithOptions(intl) {
-    if (null != arg2(arg6[0])) {
-      const result = arg2(arg6[0]).announceForAccessibility(intl);
-      const obj = arg2(arg6[0]);
+    if (null != module(429)) {
+      const result = module(429).announceForAccessibility(intl);
+      const obj = module(429);
     }
   },
-  getRecommendedTimeoutMillis(arg0, arg1) {
-    arg1 = arg0;
+  getRecommendedTimeoutMillis(closure_0, arg1) {
     return new Promise((arg0, arg1) => {
-      if (null != callback(closure_2[0])) {
-        if (callback(closure_2[0]).getRecommendedTimeoutMillis) {
-          const recommendedTimeoutMillis = callback(closure_2[0]).getRecommendedTimeoutMillis(arg0, arg0);
-          const obj = callback(closure_2[0]);
+      if (null != outer1_1(outer1_2[0])) {
+        if (outer1_1(outer1_2[0]).getRecommendedTimeoutMillis) {
+          const recommendedTimeoutMillis = outer1_1(outer1_2[0]).getRecommendedTimeoutMillis(closure_0, arg0);
+          const obj = outer1_1(outer1_2[0]);
         }
       }
-      arg0(arg0);
+      arg0(closure_0);
     });
   }
 };

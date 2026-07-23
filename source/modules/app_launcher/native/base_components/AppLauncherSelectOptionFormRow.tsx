@@ -1,35 +1,37 @@
-// Module ID: 11289
-// Function ID: 87861
+// Module ID: 11299
+// Function ID: 87911
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 11292, 7495, 4126, 1273, 5173, 2]
 // Exports: default
 
-// Module 11289 (AppLauncherSelectOptionFormRow)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { marginTop: -8364235112957370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginBottom: 13341915728910038000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, style: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050927898995, lineClamp: -0.0003662114645140158, maxFontSizeMultiplier: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009444688877583723, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[3]).radii.lg };
-obj.formRow = obj;
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherSelectOptionFormRow.tsx");
+// Module 11299 (AppLauncherSelectOptionFormRow)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", flex: 1 };
+_createForOfIteratorHelperLoose.formRow = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherSelectOptionFormRow.tsx");
 
 export default function AppLauncherSelectOptionFormRow(arg0) {
   let autoFocus;
   let option;
+  let require;
   let selected;
   let style;
   let unselectedSubLabel;
-  ({ selected, selectedItemName: closure_0, unselectedSubLabel } = arg0);
-  const importDefault = unselectedSubLabel;
-  let obj = { "Bool(false)": "Text", "Bool(false)": "resizeMode", "Bool(false)": "from", "Bool(false)": "Array", "Bool(false)": "isArray", "Bool(false)": "braintreemasterpasslanding" };
+  ({ selected, selectedItemName: require, unselectedSubLabel } = arg0);
+  let obj = { style: 0, option: 0, selected: 0, selectedItemName: 0, unselectedSubLabel: 0, autoFocus: 0 };
   ({ style, option, autoFocus } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
-  let obj1 = arg1(dependencyMap[4]);
+  let obj1 = require(11292) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
-  obj = { 400888199: null, 2091392542: null };
-  const items = [callback().formRow, style];
+  obj = { start: true, end: true };
+  const items = [_createForOfIteratorHelperLoose().formRow, style];
   obj.style = items;
   obj = {};
   let str = "text-md/medium";
@@ -44,24 +46,24 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   obj.color = str2;
   obj.lineClamp = 1;
   obj.children = option.displayName;
-  obj.label = jsx(arg1(dependencyMap[6]).Text, obj);
+  obj.label = jsx(require(4126) /* Text */.Text, {});
   if (selected) {
     let fn = () => {
-      const obj = { 803799044: true, 1269170180: true, 711589892: true, children: callback };
-      return callback2(callback(closure_2[6]).Text, obj);
+      const obj = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: closure_0 };
+      return outer1_3(outer1_0(outer1_2[6]).Text, obj);
     };
   } else {
     fn = null;
     if (null != unselectedSubLabel) {
       fn = () => {
-        const obj = { 803799044: 400, 1269170180: 20, 711589892: 24, children: unselectedSubLabel };
-        return callback2(callback(closure_2[6]).Text, obj);
+        const obj = { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel };
+        return outer1_3(outer1_0(outer1_2[6]).Text, obj);
       };
     }
   }
   obj.subLabel = fn;
-  obj1 = { source: importDefault(dependencyMap[8]), size: arg1(dependencyMap[7]).IconSizes.SMALL_20 };
-  obj.trailing = jsx(arg1(dependencyMap[7]).Icon, obj1);
+  obj1 = { source: unselectedSubLabel(5173), size: require(1273) /* Button */.IconSizes.SMALL_20 };
+  obj.trailing = jsx(require(1273) /* Button */.Icon, { source: unselectedSubLabel(5173), size: require(1273) /* Button */.IconSizes.SMALL_20 });
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[5]).FormRow, obj);
+  return jsx(require(7495) /* Form */.FormRow, {});
 };

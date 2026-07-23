@@ -1,17 +1,19 @@
 // Module ID: 1640
-// Function ID: 18332
+// Function ID: 18333
 // Name: convertAnimationObjectToKeyframes
-// Dependencies: []
+// Dependencies: [57, 1641]
 // Exports: convertAnimationObjectToKeyframes
 
 // Module 1640 (convertAnimationObjectToKeyframes)
-let closure_2 = importDefault(dependencyMap[0]);
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
 
 export const convertAnimationObjectToKeyframes = function convertAnimationObjectToKeyframes(BounceIn) {
   let tmp33;
   let tmp35;
-  let closure_0 = "@keyframes " + BounceIn.name + " { ";
-  const entries = Object.entries(BounceIn.style);
+  let _require = "@keyframes " + BounceIn.name + " { ";
+  let entries = Object.entries(BounceIn.style);
   while (tmp2 !== undefined) {
     let tmp31 = callback;
     let tmp32 = callback(tmp3, 2);
@@ -25,16 +27,16 @@ export const convertAnimationObjectToKeyframes = function convertAnimationObject
       }
       num2 = num;
     }
-    let tmp5 = closure_0;
+    let tmp5 = _require;
     let _HermesInternal = HermesInternal;
-    closure_0 = closure_0 + "" + num2 + "% { ";
+    _require = _require + "" + num2 + "% { ";
     let _Object = Object;
     let tmp6 = tmp35;
     let entries1 = Object.entries(tmp35);
     let tmp8 = entries1;
     for (const item10058 of entries1) {
-      let tmp36 = closure_2;
-      let tmp37 = closure_2(item10058, 2);
+      let tmp36 = callback;
+      let tmp37 = callback(item10058, 2);
       let first = tmp37[0];
       let tmp39 = first;
       let arr = tmp37[1];
@@ -45,76 +47,77 @@ export const convertAnimationObjectToKeyframes = function convertAnimationObject
           if ("originY" !== tmp39) {
             let tmp22 = first;
             if ("transform" === tmp39) {
-              let tmp26 = closure_0;
-              closure_0 = closure_0 + "transform:";
+              let tmp26 = _require;
+              _require = _require + "transform:";
               let tmp27 = arr;
               let item = arr.forEach((arg0) => {
                 const entries = Object.entries(arg0);
                 while (tmp2 !== undefined) {
-                  let tmp4 = callback;
-                  let tmp5 = callback(tmp3, 2);
+                  let tmp4 = outer1_2;
+                  let tmp5 = outer1_2(tmp3, 2);
                   let tmp6 = closure_0;
                   let _HermesInternal = HermesInternal;
                   let str = " ";
                   let str2 = "(";
                   let str3 = ")";
                   closure_0 = closure_0 + " " + tmp5[0] + "(" + tmp5[1] + ")";
-                  // continue
+                  continue;
                 }
               });
-              let tmp29 = closure_0;
-              closure_0 = closure_0 + "; ";
+              let tmp29 = _require;
+              _require = _require + "; ";
             } else {
-              let tmp23 = closure_0;
+              let tmp23 = _require;
               let tmp24 = first;
               let tmp25 = arr;
               let _HermesInternal5 = HermesInternal;
               let str3 = "";
               let str4 = ": ";
               let str5 = "; ";
-              closure_0 = closure_0 + "" + tmp39 + ": " + arr + "; ";
+              _require = _require + "" + tmp39 + ": " + arr + "; ";
             }
           } else {
-            let tmp20 = closure_0;
+            let tmp20 = _require;
             let tmp21 = arr;
             let _HermesInternal4 = HermesInternal;
-            closure_0 = closure_0 + "top: " + arr + "px; ";
+            _require = _require + "top: " + arr + "px; ";
           }
         } else {
-          let tmp17 = closure_0;
+          let tmp17 = _require;
           let tmp18 = arr;
           let _HermesInternal3 = HermesInternal;
-          closure_0 = closure_0 + "left: " + arr + "px; ";
+          _require = _require + "left: " + arr + "px; ";
         }
       } else {
         let str = "linear";
         let tmp40 = arr;
-        let tmp41 = closure_0;
-        let tmp42 = closure_1;
+        let tmp41 = _require;
+        let tmp42 = dependencyMap;
         let tmp43 = arr;
-        if (arr in closure_0(closure_1[1]).WebEasings) {
+        if (arr in _require(1641).WebEasings) {
           str = arr;
         } else {
-          let tmp9 = closure_0;
-          let tmp10 = closure_1;
-          if (arr.name in closure_0(closure_1[1]).WebEasings) {
+          let tmp9 = _require;
+          let tmp10 = dependencyMap;
+          if (arr.name in _require(1641).WebEasings) {
             let tmp11 = arr;
             str = arr.name;
           }
         }
-        let tmp12 = closure_0;
-        let tmp13 = closure_0;
-        let tmp14 = closure_1;
+        let tmp12 = _require;
+        let tmp13 = _require;
+        let tmp14 = dependencyMap;
         let tmp15 = str;
-        let str2 = closure_0(closure_1[1]).WebEasings[str];
+        let str2 = _require(1641).WebEasings[str];
         let _HermesInternal2 = HermesInternal;
-        closure_0 = closure_0 + "animation-timing-function: cubic-bezier(" + str2.toString() + ");";
+        _require = _require + "animation-timing-function: cubic-bezier(" + str2.toString() + ");";
       }
+      continue;
     }
-    let tmp30 = closure_0;
-    closure_0 = `${closure_0}} `;
-    // continue
+    let tmp30 = _require;
+    _require = `${closure_0}} `;
+    continue;
   }
-  closure_0 = `${closure_0}} `;
+  _require = `${closure_0}} `;
   return `${closure_0}} `;
 };

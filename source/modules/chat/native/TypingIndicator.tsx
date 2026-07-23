@@ -1,37 +1,44 @@
-// Module ID: 11362
-// Function ID: 88360
+// Module ID: 11372
+// Function ID: 88410
 // Name: TypingIndicatorInner
-// Dependencies: []
+// Dependencies: [31, 27, 9313, 6928, 33, 4130, 689, 1324, 11144, 3991, 4476, 4542, 4546, 3834, 1273, 4126, 11373, 11107, 2]
 
-// Module 11362 (TypingIndicatorInner)
+// Module 11372 (TypingIndicatorInner)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { useChatShowingAutoComplete as closure_5 } from "getChatInputContainerHeight";
+import { SlowmodeType } from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function TypingIndicatorInner(cleanUp) {
   let channel;
   let transitionState;
   ({ channel, transitionState } = cleanUp);
-  const arg1 = transitionState;
   cleanUp = cleanUp.cleanUp;
-  const importDefault = cleanUp;
-  let obj = arg1(dependencyMap[7]);
+  let obj = transitionState(sharedValue[7]);
   obj = { channelId: channel.id, guildId: channel.getGuildId(), typingUserIds: cleanUp.typingUserIds };
-  const tmpResult = importDefault(dependencyMap[8])(obj);
-  let obj2 = arg1(dependencyMap[9]);
-  const sharedValue = obj2.useSharedValue(undefined);
-  const dependencyMap = sharedValue;
-  const items = [sharedValue];
-  const callback = importAllResult.useCallback((nativeEvent) => {
+  const tmpResult = cleanUp(sharedValue[8])(obj);
+  let obj2 = transitionState(sharedValue[9]);
+  sharedValue = obj2.useSharedValue(undefined);
+  let items = [sharedValue];
+  const callback = sharedValue1.useCallback((nativeEvent) => {
     const result = sharedValue.set(nativeEvent.nativeEvent.layout);
   }, items);
   const tmp5 = callback3();
-  let obj3 = arg1(dependencyMap[9]);
-  const sharedValue1 = obj3.useSharedValue(0);
+  let obj3 = transitionState(sharedValue[9]);
+  sharedValue1 = obj3.useSharedValue(0);
   const items1 = [cleanUp, transitionState, sharedValue1];
-  const effect = importAllResult.useEffect(() => {
+  const effect = sharedValue1.useEffect(() => {
     if (transitionState === transitionState(sharedValue[10]).TransitionStates.YEETED) {
       const result = sharedValue1.set(0);
       cleanUp();
     }
   }, items1);
-  let obj4 = arg1(dependencyMap[9]);
+  let obj4 = transitionState(sharedValue[9]);
   class S {
     constructor() {
       return closure_2.get();
@@ -57,12 +64,12 @@ function TypingIndicatorInner(cleanUp) {
       const tmp7 = -arg0.height;
     }
   };
-  obj = { translateYValue: sharedValue1, withSpring: arg1(dependencyMap[11]).withSpring, springStandard: arg1(dependencyMap[12]).springStandard };
+  obj = { translateYValue: sharedValue1, withSpring: transitionState(sharedValue[11]).withSpring, springStandard: transitionState(sharedValue[12]).springStandard };
   fn.__closure = obj;
   fn.__workletHash = 14874351700395;
   fn.__initData = closure_11;
   const animatedReaction = obj4.useAnimatedReaction(S, fn);
-  let obj6 = arg1(dependencyMap[9]);
+  let obj6 = transitionState(sharedValue[9]);
   class E {
     constructor() {
       value = closure_2.get();
@@ -72,7 +79,7 @@ function TypingIndicatorInner(cleanUp) {
       } else {
         tmp2 = transitionState;
         tmp3 = transitionState;
-        tmp4 = closure_2;
+        tmp4 = outer1_2;
         num = 10;
         num2 = 1;
       }
@@ -89,13 +96,13 @@ function TypingIndicatorInner(cleanUp) {
       return obj;
     }
   }
-  const tmp = importDefault(dependencyMap[8]);
-  E.__closure = { typingIndicatorLayout: sharedValue, translateYValue: sharedValue1, transitionState, TransitionStates: arg1(dependencyMap[10]).TransitionStates };
+  let tmp = cleanUp(sharedValue[8]);
+  E.__closure = { typingIndicatorLayout: sharedValue, translateYValue: sharedValue1, transitionState, TransitionStates: transitionState(sharedValue[10]).TransitionStates };
   E.__workletHash = 15240163018691;
   E.__initData = closure_12;
   const animatedStyle = obj6.useAnimatedStyle(E);
-  const obj1 = { typingIndicatorLayout: sharedValue, translateYValue: sharedValue1, transitionState, TransitionStates: arg1(dependencyMap[10]).TransitionStates };
-  const token = arg1(dependencyMap[13]).useToken(importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING);
+  const obj1 = { typingIndicatorLayout: sharedValue, translateYValue: sharedValue1, transitionState, TransitionStates: transitionState(sharedValue[10]).TransitionStates };
+  const token = transitionState(sharedValue[13]).useToken(cleanUp(sharedValue[6]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING);
   obj2 = {};
   const items2 = [tmp5.typingWrapper, , ];
   let tmp12;
@@ -113,22 +120,22 @@ function TypingIndicatorInner(cleanUp) {
   const obj5 = { style: tmp5.horiz };
   let tmp17 = null;
   if (null != tmpResult) {
-    tmp17 = callback2(arg1(dependencyMap[14]).Ellipsis, {});
+    tmp17 = callback2(transitionState(sharedValue[14]).Ellipsis, {});
   }
   const items4 = [tmp17, ];
-  obj6 = { style: tmp5.text, children: tmpResult };
-  items4[1] = callback2(arg1(dependencyMap[15]).Text, obj6);
+  obj6 = { style: tmp5.text, lineClamp: 1, maxFontSizeMultiplier: 2, variant: "text-xs/medium", color: "interactive-text-default", ellipsizeMode: "tail", children: tmpResult };
+  items4[1] = callback2(transitionState(sharedValue[15]).Text, obj6);
   obj5.children = items4;
   const items5 = [closure_8(View, obj5), ];
   let tmp21 = null;
   if (channel.rateLimitPerUser > 0) {
     const obj7 = { channel, hasTypingText: null != tmpResult, slowmodeType: SlowmodeType.SendMessage };
-    tmp21 = callback2(importDefault(dependencyMap[16]), obj7);
+    tmp21 = callback2(cleanUp(sharedValue[16]), obj7);
   }
   items5[1] = tmp21;
   obj4.children = items5;
   obj2.children = closure_8(View, obj4);
-  return callback2(importDefault(dependencyMap[9]).View, obj2);
+  return callback2(cleanUp(sharedValue[9]).View, obj2);
 }
 function renderTypingIndicator(arg0, arg1, arg2, arg3) {
   const obj = {};
@@ -137,38 +144,30 @@ function renderTypingIndicator(arg0, arg1, arg2, arg3) {
   obj["cleanUp"] = arg3;
   return callback2(TypingIndicatorInner, obj, arg0);
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = arg1(dependencyMap[2]).useChatShowingAutoComplete;
-const SlowmodeType = arg1(dependencyMap[3]).SlowmodeType;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj1 = arg1(dependencyMap[5]);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = {};
-obj = { -2130739457: false, -2063629569: false, 2147452671: false, -2080407041: false, paddingTop: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_PADDING_TOP, backgroundColor: importDefault(dependencyMap[6]).colors.MOBILE_TYPING_INDICATOR_BACKGROUND_DEFAULT };
+obj = { paddingTop: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_PADDING_TOP, paddingBottom: 4, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TYPING_INDICATOR_BACKGROUND_DEFAULT };
 obj.typingWrapper = obj;
-obj1 = { backgroundColor: "transparent", paddingRight: importDefault(dependencyMap[6]).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
-obj.floatingWrapper = obj1;
-obj.wrapperHoriz = { "Null": "w", "Null": "Array", "Null": "isArray" };
-const obj2 = { backgroundColor: null, accessibilityRole: 0, "Null": null, "Null": 128, marginRight: importDefault(dependencyMap[6]).space.PX_8 };
+_createForOfIteratorHelperLoose = { backgroundColor: "transparent", paddingRight: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING };
+obj.floatingWrapper = _createForOfIteratorHelperLoose;
+obj.wrapperHoriz = { justifyContent: "space-between", flexDirection: "row", alignItems: "center" };
+let obj2 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center", flexDirection: "row", flex: 1 };
 obj.horiz = obj2;
 obj.text = { flex: 1 };
-let closure_9 = obj1.createStyles(obj);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_10 = { code: "function TypingIndicatorTsx1(){const{typingIndicatorLayout}=this.__closure;return typingIndicatorLayout.get();}" };
 let closure_11 = { code: "function TypingIndicatorTsx2(current,prev){const{translateYValue,withSpring,springStandard}=this.__closure;if(current===prev)return;if(current==null)return;if(current.y.toFixed(2)!==current.height.toFixed(2))return;translateYValue.set(withSpring(-current.height,springStandard,'respect-motion-settings'));}" };
 let closure_12 = { code: "function TypingIndicatorTsx3(){const{typingIndicatorLayout,translateYValue,transitionState,TransitionStates}=this.__closure;const layout=typingIndicatorLayout.get();return{opacity:translateYValue.get()===0||transitionState===TransitionStates.YEETED?0:1,top:layout===null||layout===void 0?void 0:layout.height,transform:[{translateY:translateYValue.get()}]};}" };
-const tmp2 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
-  const arg1 = channel;
   const tmp = callback(channel.screenIndex);
   const importDefault = tmp;
-  let obj = arg1(dependencyMap[17]);
-  const typingUserIds = obj.useTypingUserIds(channel.id, 4);
-  const dependencyMap = typingUserIds;
+  let obj = channel(typingUserIds[17]);
+  typingUserIds = obj.useTypingUserIds(channel.id, 4);
   const items = [channel, typingUserIds, tmp];
   const memo = importAllResult.useMemo(() => {
     if (channel.rateLimitPerUser > 0) {
-      if (!tmp) {
+      if (!closure_1) {
         const obj = { channel, typingUserIds };
         const tmp2 = obj;
       }
@@ -176,8 +175,8 @@ const memoResult = importAllResult.memo((channel) => {
     return tmp2;
   }, items);
   obj = { item: memo, renderItem: renderTypingIndicator };
-  return callback2(arg1(dependencyMap[10]).TransitionItem, obj);
+  return callback2(channel(typingUserIds[10]).TransitionItem, obj);
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/chat/native/TypingIndicator.tsx");
+let result = require("getChatInputContainerHeight").fileFinishedImporting("modules/chat/native/TypingIndicator.tsx");
 
 export default memoResult;

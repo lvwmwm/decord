@@ -1,59 +1,61 @@
-// Module ID: 14106
-// Function ID: 107080
+// Module ID: 14220
+// Function ID: 109236
 // Name: useOfficialMessageStyleSettingValue
-// Dependencies: []
+// Dependencies: [31, 4122, 7662, 566, 13370, 1212, 10095, 2]
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 14106 (useOfficialMessageStyleSettingValue)
+// Module 14220 (useOfficialMessageStyleSettingValue)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
 function useOfficialMessageStyleSettingValue() {
-  const items = [closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.officialMessageStyle);
 }
 function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
-  const result = arg1(dependencyMap[4]).setOfficialMessageStyle(officialMessageStyle);
+  const result = require(13370) /* setFontSize */.setOfficialMessageStyle(officialMessageStyle);
 }
 function useOfficialMessageStyleSettingOptions() {
   return React.useMemo(() => {
     let obj = {};
-    const intl = callback(closure_1[5]).intl;
-    obj.label = intl.string(callback(closure_1[5]).t.ERaS6f);
+    const intl = outer1_0(outer1_1[5]).intl;
+    obj.label = intl.string(outer1_0(outer1_1[5]).t.ERaS6f);
     obj.value = "default";
     const items = [obj, , , ];
     obj = {};
-    const intl2 = callback(closure_1[5]).intl;
-    obj.label = intl2.string(callback(closure_1[5]).t.JKfipk);
+    const intl2 = outer1_0(outer1_1[5]).intl;
+    obj.label = intl2.string(outer1_0(outer1_1[5]).t.JKfipk);
     obj.value = "no_text_color";
     items[1] = obj;
     obj = {};
-    const intl3 = callback(closure_1[5]).intl;
-    obj.label = intl3.string(callback(closure_1[5]).t.O2vBoY);
+    const intl3 = outer1_0(outer1_1[5]).intl;
+    obj.label = intl3.string(outer1_0(outer1_1[5]).t.O2vBoY);
     obj.value = "no_gradient";
     items[2] = obj;
     const obj1 = {};
-    const intl4 = callback(closure_1[5]).intl;
-    obj1.label = intl4.string(callback(closure_1[5]).t.+loyQl);
+    const intl4 = outer1_0(outer1_1[5]).intl;
+    obj1.label = intl4.string(outer1_0(outer1_1[5]).t["+loyQl"]);
     obj1.value = "hidden";
     items[3] = obj1;
     return items;
   }, []);
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let obj = arg1(dependencyMap[6]);
-obj = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.nC2XBl);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.nC2XBl);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.ACCESSIBILITY,
+  parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: useOfficialMessageStyleSettingValue,
   onValueChange: onOfficialMessageStyleSettingValueChange,
   useOptions: useOfficialMessageStyleSettingOptions
 };
-const radio = obj.createRadio(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/OfficialMessageStyleSetting.tsx");
+createToggle = createToggle.createRadio(createToggle);
+let result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/OfficialMessageStyleSetting.tsx");
 
-export default radio;
+export default createToggle;
 export { useOfficialMessageStyleSettingValue };
 export { onOfficialMessageStyleSettingValueChange };
 export { useOfficialMessageStyleSettingOptions };

@@ -1,9 +1,25 @@
-// Module ID: 15559
-// Function ID: 118714
+// Module ID: 15676
+// Function ID: 120887
 // Name: user
-// Dependencies: []
+// Dependencies: [31, 4122, 1921, 1348, 4217, 11108, 4325, 653, 4326, 33, 4130, 689, 15659, 4140, 4549, 566, 21, 6884, 15660, 4660, 15661, 15663, 1273, 7882, 15664, 3969, 10255, 3808, 15666, 14872, 14206, 2]
 
-// Module 15559 (user)
+// Module 15676 (user)
+import importAllResult from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { StatusTypes } from "ME";
+import { UnreadSetting } from "ReadStateTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+let closure_14;
+const require = arg1;
 function UserResult(user) {
   let activities;
   let channel;
@@ -13,7 +29,6 @@ function UserResult(user) {
   let lastMessage;
   let unread;
   user = user.user;
-  const arg1 = user;
   ({ comparator, channel, lastMessage, unread } = user);
   if (unread === undefined) {
     unread = false;
@@ -31,33 +46,33 @@ function UserResult(user) {
     flag2 = false;
   }
   const tmp = callback2();
-  const tmp2 = importDefault(dependencyMap[12])();
-  const items = [user.id];
+  const tmp2 = importDefault(15659)();
+  let items = [user.id];
   const callback = importAllResult.useCallback(() => {
     const items = [user.id];
-    callback(closure_2[13]).openPrivateChannel({ recipientIds: items });
+    outer1_1(outer1_2[13]).openPrivateChannel({ recipientIds: items });
   }, items);
-  let obj = arg1(dependencyMap[14]);
+  let obj = user(4549);
   const fontScale = obj.useFontScale();
-  let obj1 = arg1(dependencyMap[15]);
+  let obj1 = user(566);
   const items1 = [closure_5];
-  const stateFromStores = obj1.useStateFromStores(items1, () => locale.locale);
-  let obj2 = arg1(dependencyMap[15]);
-  const items2 = [closure_4];
-  const stateFromStores1 = obj2.useStateFromStores(items2, () => useReducedMotion.useReducedMotion);
-  let obj3 = arg1(dependencyMap[15]);
+  const stateFromStores = obj1.useStateFromStores(items1, () => outer1_5.locale);
+  let obj2 = user(566);
+  const items2 = [_isNativeReflectConstruct];
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => outer1_4.useReducedMotion);
+  let obj3 = user(566);
   const items3 = [closure_7];
-  const stateFromStoresObject = obj3.useStateFromStoresObject(items3, () => ({ isMobileOnline: store.isMobileOnline(user.id), isVROnline: store.isVROnline(user.id), status: store.getStatus(user.id), activities: store.getActivities(user.id) }));
+  const stateFromStoresObject = obj3.useStateFromStoresObject(items3, () => ({ isMobileOnline: outer1_7.isMobileOnline(user.id), isVROnline: outer1_7.isVROnline(user.id), status: outer1_7.getStatus(user.id), activities: outer1_7.getActivities(user.id) }));
   const status = stateFromStoresObject.status;
   let extractTimestampResult;
   ({ isMobileOnline, isVROnline, activities } = stateFromStoresObject);
   if (null != lastMessage) {
-    let obj4 = importDefault(dependencyMap[16]);
+    let obj4 = importDefault(21);
     extractTimestampResult = obj4.extractTimestamp(lastMessage.id);
   }
   let relativeTimestamp = null;
   if (null != extractTimestampResult) {
-    let obj5 = arg1(dependencyMap[17]);
+    let obj5 = user(6884);
     relativeTimestamp = obj5.getRelativeTimestamp(extractTimestampResult);
   }
   let str = "text-muted";
@@ -68,12 +83,12 @@ function UserResult(user) {
     }
   }
   obj = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items4 };
-  const items4 = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
+  items4 = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
   obj = {};
-  const tmp14 = importDefault(dependencyMap[18]);
+  const tmp14 = importDefault(15660);
   const tmp15 = callback;
   obj1 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
-  const items5 = [callback(importDefault(dependencyMap[21]), obj1), , ];
+  const items5 = [callback(importDefault(15663), obj1), , ];
   obj2 = { user, guildId: undefined, isMobileOnline, isVROnline };
   let tmp20 = null;
   if (!user.isSystemUser()) {
@@ -83,7 +98,7 @@ function UserResult(user) {
     }
   }
   obj2.status = tmp20;
-  obj2.streaming = importDefault(dependencyMap[23])(activities);
+  obj2.streaming = importDefault(7882)(activities);
   obj2.style = tmp2.icon.margin;
   obj2.size = tmp2.icon.avatarSize;
   let tmp22 = !stateFromStores1;
@@ -97,22 +112,22 @@ function UserResult(user) {
   obj2.animate = tmp22;
   obj2.typing = flag2;
   obj2.autoStatusCutout = true;
-  items5[1] = callback(arg1(dependencyMap[22]).Avatar, obj2);
+  items5[1] = callback(user(1273).Avatar, obj2);
   obj3 = {};
-  const tmp16 = importDefault(dependencyMap[20]);
+  const tmp16 = importDefault(15661);
   const tmp17 = closure_14;
   const tmp18 = closure_13;
   const tmp19 = callback;
   if (null == comparator) {
-    comparator = importDefault(dependencyMap[25]).getUserTag(user);
-    const obj12 = importDefault(dependencyMap[25]);
+    comparator = importDefault(3969).getUserTag(user);
+    const obj12 = importDefault(3969);
   }
   obj3.name = comparator;
   let tmp27;
   if (null != lastMessage) {
     if (null != channel) {
-      obj4 = { channel, message: lastMessage, color: str, muted: flag, layout: arg1(dependencyMap[27]).ChannelListLayoutTypes.COMPACT };
-      tmp27 = callback(arg1(dependencyMap[26]).ChannelRowPreview, obj4);
+      obj4 = { channel, message: lastMessage, color: str, muted: flag, layout: user(3808).ChannelListLayoutTypes.COMPACT };
+      tmp27 = callback(user(10255).ChannelRowPreview, obj4);
     }
   }
   obj3.subtitle = tmp27;
@@ -122,60 +137,49 @@ function UserResult(user) {
   obj3.lastMessageTimestampString = relativeTimestamp;
   obj3.mentionCount = num;
   obj5 = { mentionCount: num, locale: stateFromStores };
-  obj3.mentionBadge = importDefault(dependencyMap[28])(obj5);
-  items5[2] = importDefault(dependencyMap[24])(obj3);
+  obj3.mentionBadge = importDefault(15666)(obj5);
+  items5[2] = importDefault(15664)(obj3);
   obj.children = items5;
   obj.children = tmp16(tmp17(tmp18, obj), { fontScale });
-  return tmp14(tmp15(arg1(dependencyMap[19]).PressableHighlight, obj));
+  return tmp14(tmp15(user(4660).PressableHighlight, obj));
 }
 function UserResultWithChannel(arg0) {
   let channel;
   let mentionCount;
+  let require;
   let unread;
-  ({ user: closure_0, channel } = arg0);
-  const importDefault = channel;
-  let obj = arg1(dependencyMap[15]);
+  ({ user: require, channel } = arg0);
+  let obj = require(566) /* initialize */;
   const items = [closure_9];
-  const stateFromStores = obj.useStateFromStores(items, () => channelMuted.isChannelMuted(undefined, channel.id));
-  const baseChannelUnreadBadgeState = arg1(dependencyMap[29]).useBaseChannelUnreadBadgeState(channel, stateFromStores);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.isChannelMuted(undefined, channel.id));
+  const baseChannelUnreadBadgeState = require(14872) /* useBaseChannelUnreadBadgeState */.useBaseChannelUnreadBadgeState(channel, stateFromStores);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
-  const obj2 = arg1(dependencyMap[29]);
+  const obj2 = require(14872) /* useBaseChannelUnreadBadgeState */;
   const items1 = [closure_8];
-  const stateFromStores1 = arg1(dependencyMap[15]).useStateFromStores(items1, () => typing.isTyping(channel.id, id.id));
+  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_8.isTyping(channel.id, id.id));
   obj = {};
-  const obj3 = arg1(dependencyMap[15]);
+  const obj3 = require(566) /* initialize */;
   const merged = Object.assign(arg0);
   obj["channel"] = channel;
-  obj["lastMessage"] = importDefault(dependencyMap[30])(channel, { unread });
+  obj["lastMessage"] = channel(14206)(channel, { unread });
   obj["unread"] = unread;
   obj["mentionCount"] = mentionCount;
   obj["muted"] = stateFromStores;
   obj["isTyping"] = stateFromStores1;
   return callback(UserResult, obj);
 }
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const StatusTypes = arg1(dependencyMap[7]).StatusTypes;
-const UnreadSetting = arg1(dependencyMap[8]).UnreadSetting;
-({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
-const tmp2 = arg1(dependencyMap[9]);
+({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = jsxProd);
 let obj = { pressable: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
 obj.pressableUnderlayColor = obj;
-let closure_15 = arg1(dependencyMap[10]).createStyles(obj);
-const obj2 = arg1(dependencyMap[10]);
+let closure_15 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((user) => {
-  const arg1 = user.user;
-  let obj = arg1(dependencyMap[15]);
+  user = user.user;
+  let obj = user(566);
   const items = [closure_6];
-  let closure_1 = obj.useStateFromStores(items, () => authStore.getDMFromUserId(user.id));
+  let closure_1 = obj.useStateFromStores(items, () => outer1_6.getDMFromUserId(user.id));
   const items1 = [closure_6];
-  const stateFromStores = arg1(dependencyMap[15]).useStateFromStores(items1, () => authStore.getChannel(closure_1));
+  const stateFromStores = user(566).useStateFromStores(items1, () => outer1_6.getChannel(closure_1));
   if (null != stateFromStores) {
     obj = {};
     const merged = Object.assign(user);
@@ -188,6 +192,6 @@ const memoResult = importAllResult.memo((user) => {
   }
   return tmp7;
 });
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/launchpad/native/LaunchPadSearchResultUser.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/launchpad/native/LaunchPadSearchResultUser.tsx");
 
 export default memoResult;

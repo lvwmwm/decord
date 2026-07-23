@@ -1,7 +1,7 @@
 // Module ID: 1837
-// Function ID: 20058
+// Function ID: 20059
 // Name: cloneCustomUserThemeSettings
-// Dependencies: []
+// Dependencies: [2]
 // Exports: cloneGuildTheme, fromServerGuildTheme, toServerGuildThemeSettings
 
 // Module 1837 (cloneCustomUserThemeSettings)
@@ -72,8 +72,7 @@ function fromServerGuildThemeSettings(preset_id) {
   }
   return tmp;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild_themes/guildThemeSerialization.tsx");
+const result = require("set").fileFinishedImporting("modules/guild_themes/guildThemeSerialization.tsx");
 
 export { cloneGuildThemeSettings };
 export const cloneGuildTheme = function cloneGuildTheme(guildTheme) {
@@ -86,7 +85,7 @@ export const cloneGuildTheme = function cloneGuildTheme(guildTheme) {
 };
 export const toServerGuildThemeSettings = function toServerGuildThemeSettings(themeSettings) {
   if (null == themeSettings) {
-    let obj = { "Null": "o", "Null": "o" };
+    let obj = { preset_id: null, custom_user_theme_settings: null };
   } else {
     obj = {};
     const presetId = themeSettings.presetId;

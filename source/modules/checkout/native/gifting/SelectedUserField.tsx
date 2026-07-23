@@ -1,37 +1,44 @@
-// Module ID: 8808
-// Function ID: 69440
+// Module ID: 8815
+// Function ID: 69481
 // Name: SelectedUserField
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5780, 1212, 3969, 5786, 1273, 4126, 5776, 2]
 // Exports: default
 
-// Module 8808 (SelectedUserField)
-importAll(dependencyMap[0]);
-({ Pressable: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { marginHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
-obj.container = obj;
-obj.content = {};
-const tmp4 = arg1(dependencyMap[2]);
-obj.opener = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
-obj.openerWithClearButton = { paddingRight: 0 };
-const obj1 = { paddingHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
-obj.searchIcon = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
-const obj3 = { <string:3159517537>: true, <string:1468736940>: "/assets/images/native/icons/voice_calls", <string:1903353148>: 24, <string:3093014844>: 24, <string:2595485336>: null, <string:2673977675>: "01b615b81a2755a195f3be7dbb482eef", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.lg };
-obj.userPill = obj3;
-obj.userPillText = { marginLeft: 6 };
-const obj4 = { 751154927: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008090826109680138, 2104241004: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000410125039584637, 143479472: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007927036650347631, 1449329397: 0.00000000000000000001715903478031357, paddingRight: importDefault(dependencyMap[4]).space.PX_16, paddingLeft: importDefault(dependencyMap[4]).space.PX_8 };
-obj.clearButton = obj4;
-let closure_7 = obj.createStyles(obj);
-const obj2 = { marginRight: importDefault(dependencyMap[4]).space.PX_8 };
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/checkout/native/gifting/SelectedUserField.tsx");
+// Module 8815 (SelectedUserField)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ Pressable: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.content = { flexDirection: "row", overflow: "hidden", alignItems: "center", display: "flex" };
+let obj1 = { flexDirection: "row", alignItems: "center", flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: 6 };
+_createForOfIteratorHelperLoose.opener = obj1;
+_createForOfIteratorHelperLoose.openerWithClearButton = { paddingRight: 0 };
+_createForOfIteratorHelperLoose.searchIcon = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj3 = { flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, paddingVertical: 6, paddingHorizontal: 6 };
+_createForOfIteratorHelperLoose.userPill = obj3;
+_createForOfIteratorHelperLoose.userPillText = { marginLeft: 6 };
+let obj4 = { alignItems: "center", justifyContent: "center", minWidth: 44, minHeight: 44, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_16, paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.clearButton = obj4;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("jsxProd").fileFinishedImporting("modules/checkout/native/gifting/SelectedUserField.tsx");
 
 export default function SelectedUserField(onPress) {
+  let require;
   let selectedUser;
-  ({ selectedUser, setSelectedUser: closure_0 } = onPress);
-  const tmp = callback3();
+  ({ selectedUser, setSelectedUser: require } = onPress);
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   obj = {};
   obj = { style: tmp.content };
@@ -46,34 +53,35 @@ export default function SelectedUserField(onPress) {
   obj1.onPress = onPress.onPress;
   obj1.accessibilityRole = "button";
   if (null != selectedUser) {
-    const intl = arg1(dependencyMap[6]).intl;
-    let obj4 = importDefault(dependencyMap[7]);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    let obj4 = importDefault(3969);
     const _HermesInternal = HermesInternal;
-    let combined = "" + intl.string(arg1(dependencyMap[6]).t.xFn72s) + ", " + obj4.getName(selectedUser);
-    const stringResult = intl.string(arg1(dependencyMap[6]).t.xFn72s);
+    let combined = "" + intl.string(require(1212) /* getSystemLocale */.t.xFn72s) + ", " + obj4.getName(selectedUser);
+    const stringResult = intl.string(require(1212) /* getSystemLocale */.t.xFn72s);
   } else {
-    const intl4 = arg1(dependencyMap[6]).intl;
-    const intl5 = arg1(dependencyMap[6]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    const intl5 = require(1212) /* getSystemLocale */.intl;
     const _HermesInternal2 = HermesInternal;
-    combined = "" + intl4.string(arg1(dependencyMap[6]).t.xFn72s) + ", " + intl5.string(arg1(dependencyMap[6]).t.R0vK0N);
-    const stringResult1 = intl4.string(arg1(dependencyMap[6]).t.xFn72s);
+    combined = "" + intl4.string(require(1212) /* getSystemLocale */.t.xFn72s) + ", " + intl5.string(require(1212) /* getSystemLocale */.t.R0vK0N);
+    const stringResult1 = intl4.string(require(1212) /* getSystemLocale */.t.xFn72s);
   }
   obj1.accessibilityLabel = combined;
-  const items1 = [callback(arg1(dependencyMap[8]).MagnifyingGlassIcon, { style: tmp.searchIcon }), ];
+  const obj2 = { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" };
+  const items1 = [callback(require(5786) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, obj2), ];
   if (null != selectedUser) {
     const obj3 = { style: tmp.userPill };
-    obj4 = { user: selectedUser, guildId: undefined, size: arg1(dependencyMap[9]).AvatarSizes.XSMALL_20 };
-    const items2 = [callback(arg1(dependencyMap[9]).Avatar, obj4), ];
-    const obj5 = { variant: "text-md/medium", style: tmp.userPillText, children: importDefault(dependencyMap[7]).getName(selectedUser) };
-    items2[1] = callback(arg1(dependencyMap[10]).Text, obj5);
+    obj4 = { user: selectedUser, guildId: undefined, size: require(1273) /* Button */.AvatarSizes.XSMALL_20 };
+    const items2 = [callback(require(1273) /* Button */.Avatar, obj4), ];
+    const obj5 = { variant: "text-md/medium", style: tmp.userPillText, children: importDefault(3969).getName(selectedUser) };
+    items2[1] = callback(require(4126) /* Text */.Text, obj5);
     obj3.children = items2;
     let tmp15 = callback2(closure_4, obj3);
-    const obj11 = importDefault(dependencyMap[7]);
+    const obj11 = importDefault(3969);
   } else {
-    const obj6 = { cachedAt: true, edpbxy: true, style: tmp.userPillText };
-    const intl2 = arg1(dependencyMap[6]).intl;
-    obj6.children = intl2.string(arg1(dependencyMap[6]).t.R0vK0N);
-    tmp15 = callback(arg1(dependencyMap[10]).Text, obj6);
+    const obj6 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText };
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj6.children = intl2.string(require(1212) /* getSystemLocale */.t.R0vK0N);
+    tmp15 = callback(require(4126) /* Text */.Text, obj6);
   }
   items1[1] = tmp15;
   obj1.children = items1;
@@ -87,17 +95,17 @@ export default function SelectedUserField(onPress) {
         },
       accessibilityRole: "button"
     };
-    const intl3 = arg1(dependencyMap[6]).intl;
-    const obj8 = { text: importDefault(dependencyMap[7]).getName(selectedUser) };
-    obj7.accessibilityLabel = intl3.formatToPlainString(arg1(dependencyMap[6]).t.0Vb9FQ, obj8);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    const obj8 = { text: importDefault(3969).getName(selectedUser) };
+    obj7.accessibilityLabel = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["0Vb9FQ"], obj8);
     const obj9 = { size: "xs" };
-    obj7.children = callback(arg1(dependencyMap[11]).CircleXIcon, obj9);
+    obj7.children = callback(require(5776) /* CircleXIcon */.CircleXIcon, obj9);
     tmp22 = callback(closure_3, obj7);
-    const obj14 = importDefault(dependencyMap[7]);
+    const obj14 = importDefault(3969);
   }
   items3[1] = tmp22;
   obj.children = items3;
   obj.children = callback2(closure_4, obj);
-  obj.children = callback(arg1(dependencyMap[5]).InputFieldContainer, obj);
+  obj.children = callback(require(5780) /* useInputStyles */.InputFieldContainer, obj);
   return callback(closure_4, obj);
 };

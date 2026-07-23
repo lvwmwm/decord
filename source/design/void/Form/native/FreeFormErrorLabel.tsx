@@ -1,19 +1,20 @@
-// Module ID: 8997
-// Function ID: 70845
+// Module ID: 9004
+// Function ID: 70886
 // Name: Label
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 33, 3836, 3976, 4126, 2]
 // Exports: default
 
-// Module 8997 (Label)
-import __exportStarResult1 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
+// Module 9004 (Label)
+import result from "result";
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
+const require = arg1;
+const result = require("getNodeText").fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
 
-export default function Label(style) {
-  const children = style.children;
-  const nodeText = arg1(dependencyMap[2]).getNodeText(children);
-  const arg1 = nodeText;
+export default function Label(children) {
+  children = children.children;
+  let obj = nodeText(3836);
+  nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = React.useEffect(() => {
     let tmp = null != nodeText;
@@ -21,9 +22,10 @@ export default function Label(style) {
       tmp = "" !== nodeText;
     }
     if (tmp) {
-      const AccessibilityAnnouncer = nodeText(closure_1[3]).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = nodeText(outer1_1[3]).AccessibilityAnnouncer;
       AccessibilityAnnouncer.announce(nodeText);
     }
   }, items);
-  return jsx(arg1(dependencyMap[4]).Text, { style: style.style, children });
+  obj = { style: children.style, variant: "text-xs/medium", color: "text-feedback-critical", children };
+  return jsx(nodeText(4126).Text, { style: children.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
 };

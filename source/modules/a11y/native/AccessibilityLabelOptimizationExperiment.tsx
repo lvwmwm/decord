@@ -1,23 +1,23 @@
-// Module ID: 7635
-// Function ID: 61149
+// Module ID: 7641
+// Function ID: 61186
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 4528, 2]
 // Exports: shouldSkipAccessibilityLabels
 
-// Module 7635 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": null, "Bool(false)": null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
+// Module 7641 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+let obj = { kind: "user", name: "2026-03-mobile-accessibility-label-optimization", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const config = apexExperiment.getConfig({ location: "default" });
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/a11y/native/AccessibilityLabelOptimizationExperiment.tsx");
+const result = require("set").fileFinishedImporting("modules/a11y/native/AccessibilityLabelOptimizationExperiment.tsx");
 
 export default apexExperiment;
 export const shouldSkipAccessibilityLabels = function shouldSkipAccessibilityLabels() {
-  let enabled = enabled.enabled;
+  enabled = enabled.enabled;
   if (enabled) {
-    enabled = !require(dependencyMap[1]).getIsScreenReaderEnabled();
-    const obj = require(dependencyMap[1]);
+    enabled = !require(4528) /* SCREEN_READER_ENABLED_GETTER */.getIsScreenReaderEnabled();
+    const obj = require(4528) /* SCREEN_READER_ENABLED_GETTER */;
   }
   return enabled;
 };

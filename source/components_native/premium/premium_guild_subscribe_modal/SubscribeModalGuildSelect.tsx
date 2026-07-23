@@ -1,42 +1,46 @@
-// Module ID: 4966
-// Function ID: 42674
+// Module ID: 4969
+// Function ID: 42692
 // Name: SubscribeModalGuildSelect
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1838, 4970, 4968, 33, 4130, 689, 4973, 1456, 566, 4974, 5121, 5771, 1212, 4966, 4660, 5515, 1273, 2]
 // Exports: default
 
-// Module 4966 (SubscribeModalGuildSelect)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-const ScrollView = arg1(dependencyMap[2]).ScrollView;
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).PremiumGuildSubscribeModalScenes;
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { borderRadius: "password", nestedScrollEnabled: "email", scrollEventThrottle: "name-prefix", backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
-obj.safeArea = obj;
-obj.guildList = { padding: 16 };
-obj.guildOption = { <string:3814666730>: "<string:17891332>", <string:1280564396>: "iNR25n", <string:2650527326>: "<string:3393257728>" };
-const obj1 = { title: "absolute", options: 0, accessible: null, color: arg1(dependencyMap[9]).DARK_WHITE_500_LIGHT_PRIMARY_660 };
-obj.guildName = obj1;
-let closure_12 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalGuildSelect.tsx");
+// Module 4969 (SubscribeModalGuildSelect)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { ScrollView } from "get ActivityIndicator";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { PremiumGuildSubscribeModalScenes as closure_9 } from "PremiumGuildSubscribeModalScenes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+const require = arg1;
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flexGrow: 1, flexShrink: 1 };
+_createForOfIteratorHelperLoose.safeArea = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.guildList = { padding: 16 };
+_createForOfIteratorHelperLoose.guildOption = { flexDirection: "row", alignItems: "center", paddingVertical: 10 };
+let obj1 = { marginLeft: 32, fontSize: 16, lineHeight: 20, color: require("result").DARK_WHITE_500_LIGHT_PRIMARY_660 };
+_createForOfIteratorHelperLoose.guildName = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalGuildSelect.tsx");
 
 export default function SubscribeModalGuildSelect(guildBoostSlots) {
+  let importAll;
+  let importDefault;
   guildBoostSlots = guildBoostSlots.guildBoostSlots;
-  const arg1 = guildBoostSlots;
-  ({ intent: closure_1, onResult: closure_2 } = guildBoostSlots);
-  const tmp = callback4();
+  ({ intent: importDefault, onResult: importAll } = guildBoostSlots);
+  let tmp = _createForOfIteratorHelperLoose();
   const dependencyMap = tmp;
-  let obj = arg1(dependencyMap[10]);
+  let obj = guildBoostSlots(1456);
   const callback = obj.useNavigation();
-  const tmp2 = callback(React.useState(""), 2);
-  const first = tmp2[0];
-  const React = first;
-  const items = [guildBoostSlots];
-  const memo = React.useMemo(() => {
+  const tmp2 = callback(first.useState(""), 2);
+  first = tmp2[0];
+  let items = [guildBoostSlots];
+  const memo = first.useMemo(() => {
     if (null == guildBoostSlots) {
       const _Set2 = Set;
       let set = new Set();
@@ -61,20 +65,19 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
     }
     return set;
   }, items);
-  const ScrollView = memo;
-  let obj1 = arg1(dependencyMap[11]);
-  const items1 = [closure_7, closure_8];
+  let obj1 = guildBoostSlots(566);
+  const items1 = [closure_7, _isNativeReflectConstruct];
   const items2 = [first, memo];
   const stateFromStoresArray = obj1.useStateFromStoresArray(items1, () => {
     if (0 === first.length) {
-      const flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+      const flattenedGuildIds = outer1_8.getFlattenedGuildIds();
       const _Array2 = Array;
       let array = new Array();
       let reduced = flattenedGuildIds.reduce((arr, guildId) => {
-        const guild = guild.getGuild(guildId);
+        const guild = outer2_7.getGuild(guildId);
         let hasItem = null == guild;
         if (!hasItem) {
-          hasItem = set.has(guild.id);
+          hasItem = outer1_6.has(guild.id);
         }
         if (!hasItem) {
           arr.push(guild);
@@ -82,13 +85,13 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
         return arr;
       }, array);
     } else {
-      let obj = callback(tmp[12]);
+      let obj = outer1_1(tmp[12]);
       obj = { query: first };
       const _Array = Array;
       array = new Array();
       reduced = obj.queryGuilds(obj).reduce((arr, record) => {
         record = record.record;
-        if (!set.has(record.id)) {
+        if (!outer1_6.has(record.id)) {
           arr.push(record);
         }
         return arr;
@@ -99,36 +102,36 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   }, items2);
   obj = { top: true, style: tmp.safeArea };
   obj = {};
-  const intl = arg1(dependencyMap[15]).intl;
-  obj.placeholder = intl.string(arg1(dependencyMap[15]).t.vf3ZTa);
+  const intl = guildBoostSlots(1212).intl;
+  obj.placeholder = intl.string(guildBoostSlots(1212).t.vf3ZTa);
   obj.onChange = tmp2[1];
-  obj.onClose = importAll(dependencyMap[16]).closeApplyBoostModal;
-  const items3 = [callback2(importDefault(dependencyMap[14]), obj), ];
+  obj.onClose = importAll(4966).closeApplyBoostModal;
+  const items3 = [callback2(importDefault(5771), obj), ];
   obj1 = { style: tmp.guildList, keyboardShouldPersistTaps: "always" };
   const obj2 = {
     bottom: true,
     children: stateFromStoresArray.map((children) => {
-      const guildBoostSlots = children;
+      let closure_0 = children;
       let obj = {
         accessibilityRole: "button",
         style: tmp.guildOption,
         onPress() {
-          const replaced = closure_4.replace(constants.CONFIRMATION, { guildId: arg0.id, guildBoostSlots: arg0, intent: closure_1, onResult: closure_2 });
+          const replaced = outer1_4.replace(outer2_9.CONFIRMATION, { guildId: id.id, guildBoostSlots: id, intent: outer1_1, onResult: outer1_2 });
         }
       };
       obj = { guild: children };
-      const tmp = callback(tmp[18]);
+      tmp = outer1_1(tmp[18]);
       obj.size = guildBoostSlots(tmp[18]).GuildIconSizes.SMALL;
       obj.selected = false;
-      const items = [callback2(tmp, obj), ];
+      const items = [outer1_10(tmp, obj), ];
       obj = { style: tmp.guildName, children: children.name };
-      items[1] = callback2(guildBoostSlots(tmp[19]).LegacyText, obj);
+      items[1] = outer1_10(guildBoostSlots(tmp[19]).LegacyText, obj);
       obj.children = items;
-      return callback3(guildBoostSlots(tmp[17]).PressableOpacity, obj, children.id);
+      return outer1_11(guildBoostSlots(tmp[17]).PressableOpacity, obj, children.id);
     })
   };
-  obj1.children = callback2(arg1(dependencyMap[13]).SafeAreaPaddingView, obj2);
-  items3[1] = callback2(ScrollView, obj1);
+  obj1.children = callback2(guildBoostSlots(5121).SafeAreaPaddingView, obj2);
+  items3[1] = callback2(memo, obj1);
   obj.children = items3;
-  return callback3(arg1(dependencyMap[13]).SafeAreaPaddingView, obj);
+  return callback3(guildBoostSlots(5121).SafeAreaPaddingView, obj);
 };

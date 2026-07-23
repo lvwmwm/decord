@@ -1,115 +1,120 @@
-// Module ID: 13680
-// Function ID: 103556
+// Module ID: 13794
+// Function ID: 105712
 // Name: Row
-// Dependencies: []
+// Dependencies: [31, 27, 6770, 33, 4629, 11065, 3832, 12521, 4631, 11067, 4094, 8773, 4130, 689, 4126, 11064, 1212, 2198, 7124, 6828, 7572, 7573, 11071, 4543, 4337, 5087, 11073, 2]
 // Exports: default
 
-// Module 13680 (Row)
+// Module 13794 (Row)
+import result from "result";
+import { View } from "set";
+import { TeenActionDisplayType } from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function Row(arg0) {
   let IconComponent;
   let description;
   let header;
   ({ header, description, IconComponent } = arg0);
-  const tmp = callback4();
+  const tmp = callback3();
   let obj = { style: tmp.row };
-  obj = { style: tmp.iconContainer, children: callback2(IconComponent, obj) };
+  obj = { style: tmp.iconContainer, children: callback(IconComponent, obj) };
   obj = { style: tmp.icon };
-  const items = [callback2(View, obj), ];
+  const items = [callback(View, obj), ];
   const obj1 = { style: tmp.content };
-  const obj2 = { "Null": -162463742, "Null": 2034307565, alignItems: 1912603216, style: tmp.header, children: header };
-  const items1 = [callback2(arg1(dependencyMap[14]).Text, obj2), ];
-  const obj3 = { cachedAt: true, edpbxy: true, children: description };
-  items1[1] = callback2(arg1(dependencyMap[14]).Text, obj3);
+  const obj2 = { style: tmp.header, variant: "text-sm/bold", color: "mobile-text-heading-primary", children: header };
+  const items1 = [callback(require(4126) /* Text */.Text, obj2), ];
+  const obj3 = { variant: "text-xs/medium", color: "text-default", children: description };
+  items1[1] = callback(require(4126) /* Text */.Text, obj3);
   obj1.children = items1;
-  items[1] = callback3(View, obj1);
+  items[1] = callback2(View, obj1);
   obj.children = items;
-  return callback3(View, obj);
+  return callback2(View, obj);
 }
 function FamilyCenterModalDataTooltipScreen() {
-  const tmp = callback5();
-  let obj = callback(dependencyMap[15]);
-  const intl = callback(dependencyMap[16]).intl;
-  const intl2 = callback(dependencyMap[16]).intl;
-  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(dependencyMap[17]).n6LOrh), intl2.string(importDefault(dependencyMap[17]).JNLpDZ));
-  const callback = importDefault(dependencyMap[18])();
-  let obj1 = callback(dependencyMap[19]);
+  const tmp = callback4();
+  let obj = _require(11064);
+  const intl = _require(1212).intl;
+  const intl2 = _require(1212).intl;
+  const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2198).n6LOrh), intl2.string(importDefault(2198).JNLpDZ));
+  _require = importDefault(7124)();
+  let obj1 = _require(6828);
   const sortedActivityTypeConfigs = obj1.getSortedActivityTypeConfigs();
   obj = {};
   obj = {};
   obj1 = { style: tmp.container };
+  const obj2 = { style: tmp.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText };
   const items = [
-    callback2(callback(dependencyMap[14]).Text, { style: tmp.groupHeader, children: ageSpecificText }),
+    callback(_require(4126).Text, obj2),
     sortedActivityTypeConfigs.map((arg0) => {
       let obj;
       let tmp;
       [tmp, obj] = arg0;
-      obj = { IconComponent: closure_7[tmp], header: obj.tooltipHeader() };
+      obj = { IconComponent: outer1_7[tmp], header: obj.tooltipHeader() };
       let tmp4;
       if (null != closure_0) {
         tmp4 = closure_0;
       }
       obj.description = obj.tooltipDescription(tmp4);
-      return closure_5(closure_10, obj, tmp);
+      return outer1_5(outer1_10, obj, tmp);
     })
   ];
   obj1.children = items;
-  obj.children = callback3(View, obj1);
-  const items1 = [callback2(callback(dependencyMap[21]).ModalContent, obj), ];
+  obj.children = callback2(View, obj1);
+  const items1 = [callback(_require(7573).ModalContent, obj), ];
   const obj3 = {};
   const obj4 = { variant: "primary" };
-  const intl3 = callback(dependencyMap[16]).intl;
-  obj4.text = intl3.string(callback(dependencyMap[16]).t.NX+WJN);
-  obj4.onPress = importDefault(dependencyMap[24]).pop;
-  obj3.children = callback2(callback(dependencyMap[23]).Button, obj4);
-  items1[1] = callback2(callback(dependencyMap[22]).ModalFooter, obj3);
+  const intl3 = _require(1212).intl;
+  obj4.text = intl3.string(_require(1212).t["NX+WJN"]);
+  obj4.onPress = importDefault(4337).pop;
+  obj3.children = callback(_require(4543).Button, obj4);
+  items1[1] = callback(_require(11071).ModalFooter, obj3);
   obj.children = items1;
-  return callback3(callback(dependencyMap[20]).ModalScreen, obj);
+  return callback2(_require(7572).ModalScreen, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const TeenActionDisplayType = arg1(dependencyMap[2]).TeenActionDisplayType;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = { [TeenActionDisplayType.USER_INTERACTION]: arg1(dependencyMap[4]).ChatIcon, [TeenActionDisplayType.USER_CALLED]: arg1(dependencyMap[5]).PhoneIcon, [TeenActionDisplayType.USER_ADD]: arg1(dependencyMap[6]).FriendsIcon, [TeenActionDisplayType.GUILD_ADD]: arg1(dependencyMap[7]).ServerGridIcon, [TeenActionDisplayType.GUILD_INTERACTION]: arg1(dependencyMap[8]).ThreadIcon, [TeenActionDisplayType.PURCHASES]: arg1(dependencyMap[9]).CreditCardIcon, [TeenActionDisplayType.TOTAL_VOICE_MINUTES]: arg1(dependencyMap[10]).ClockIcon, [TeenActionDisplayType.GIFTS]: arg1(dependencyMap[11]).GiftIcon };
-let obj1 = arg1(dependencyMap[12]);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let obj = { [TeenActionDisplayType.USER_INTERACTION]: require("ChatIcon").ChatIcon, [TeenActionDisplayType.USER_CALLED]: require("PhoneIcon").PhoneIcon, [TeenActionDisplayType.USER_ADD]: require("FriendsIcon").FriendsIcon, [TeenActionDisplayType.GUILD_ADD]: require("ServerGridIcon").ServerGridIcon, [TeenActionDisplayType.GUILD_INTERACTION]: require("ThreadIcon").ThreadIcon, [TeenActionDisplayType.PURCHASES]: require("CreditCardIcon").CreditCardIcon, [TeenActionDisplayType.TOTAL_VOICE_MINUTES]: require("ClockIcon").ClockIcon, [TeenActionDisplayType.GIFTS]: require("GiftIcon").GiftIcon };
 obj = {};
-obj = { 9223372036854775807: 338756322700776100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0: 563425272922222.6, 0: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000501408507554953, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005346336074022313, marginBottom: importDefault(dependencyMap[13]).space.PX_8, paddingVertical: importDefault(dependencyMap[13]).space.PX_12, paddingHorizontal: importDefault(dependencyMap[13]).space.PX_12, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+obj = { display: "flex", flexDirection: "row", width: "100%", alignItems: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
 obj.row = obj;
 obj.content = { flexShrink: 1 };
-obj1 = { 1158868722: 3300916203029480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 2002887155: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011323354746030731, 1727167313: -1670633869937242200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, -866931909: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006722484548951601, -865675087: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000032467266268848934, -1414408093: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010208446403291421, 1314541984: 0.00000000000000000000000000000000000000000000000000000004333218402095115, 1415356514: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015325689405340065, backgroundColor: importDefault(dependencyMap[13]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[13]).radii.round, marginRight: importDefault(dependencyMap[13]).space.PX_12 };
-obj.iconContainer = obj1;
-const tmp2 = arg1(dependencyMap[3]);
-obj.header = { marginBottom: importDefault(dependencyMap[13]).space.PX_4 };
-const obj2 = { marginBottom: importDefault(dependencyMap[13]).space.PX_4 };
-obj.icon = { tintColor: importDefault(dependencyMap[13]).colors.TEXT_BRAND };
-let closure_8 = obj1.createStyles(obj);
-const obj3 = { tintColor: importDefault(dependencyMap[13]).colors.TEXT_BRAND };
-const obj4 = {};
-const obj8 = arg1(dependencyMap[12]);
-obj4.container = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
-const obj5 = { paddingHorizontal: importDefault(dependencyMap[13]).space.PX_16 };
-obj4.groupHeader = { marginBottom: importDefault(dependencyMap[13]).space.PX_24 };
-let closure_9 = obj8.createStyles(obj4);
-const obj6 = { marginBottom: importDefault(dependencyMap[13]).space.PX_24 };
-const result = arg1(dependencyMap[27]).fileFinishedImporting("modules/parent_tools/native/FamilyCenterModalDataTooltip.tsx");
+_createForOfIteratorHelperLoose = { display: "flex", alignItems: "center", justifyContent: "center", width: 40, height: 40, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, flexShrink: 0, marginRight: require("_createForOfIteratorHelperLoose").space.PX_12 };
+obj.iconContainer = _createForOfIteratorHelperLoose;
+obj.header = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+obj.icon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj4 = {};
+const obj5 = { display: "flex", alignItems: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, width: "100%" };
+obj4.container = obj5;
+let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
+obj4.groupHeader = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj4);
+const obj6 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+const result = require("items").fileFinishedImporting("modules/parent_tools/native/FamilyCenterModalDataTooltip.tsx");
 
 export default function FamilyCenterModalDataTooltip() {
-  const memo = React.useMemo(() => function getScreens() {
+  const memo = React.useMemo(() => (function getScreens() {
     let obj = {};
     obj = {
       headerShown: true,
-      headerLeft: callback(closure_2[25]).getHeaderCloseButton(callback2(closure_2[24]).pop),
+      headerLeft: outer2_0(outer2_2[25]).getHeaderCloseButton(outer2_1(outer2_2[24]).pop),
       headerTitle() {
         return null;
       },
       render() {
-        return callback(closure_11, {});
+        return outer3_5(outer3_11, {});
       }
     };
     obj.DATA_TOOLTIP = obj;
     return obj;
-  }(), []);
-  const obj = { initialRouteName: "DATA_TOOLTIP", screens: memo };
-  const intl = arg1(dependencyMap[16]).intl;
-  obj.headerBackTitle = intl.string(arg1(dependencyMap[16]).t.13/7kX);
-  return callback2(arg1(dependencyMap[26]).Modal, obj);
+  })(), []);
+  let obj = { initialRouteName: "DATA_TOOLTIP", screens: memo };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
+  return callback(require(11073) /* Modal */.Modal, obj);
 };

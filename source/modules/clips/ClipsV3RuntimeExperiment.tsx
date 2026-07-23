@@ -1,18 +1,19 @@
-// Module ID: 4666
-// Function ID: 40521
+// Module ID: 4669
+// Function ID: 40539
 // Name: isClipsV3Enabled
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getClipsRuntime, isClipsV3MLEnabled, setActiveClipsRuntime, useIsClipsV3Enabled, useIsClipsV3MLEnabled
 
-// Module 4666 (isClipsV3Enabled)
+// Module 4669 (isClipsV3Enabled)
+import ApexExperiment from "ApexExperiment";
+
 function isClipsV3Enabled(location) {
   return apexExperiment.getConfig({ location }).enableClipsV3;
 }
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { "Bool(false)": true, "Bool(false)": true }, variations: { [1]: { "Bool(false)": "<string:1040334421>", "Bool(false)": "<string:1040334338>" }, [2]: { "Bool(false)": null, "Bool(false)": null } } });
-let closure_1 = null;
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/clips/ClipsV3RuntimeExperiment.tsx");
+const obj = { kind: "user", name: "2026-04-clips-v3-runtime", defaultConfig: { enableClipsV3: false, enableClipsV3ML: false }, variations: { [1]: { enableClipsV3: true, enableClipsV3ML: false }, [2]: { enableClipsV3: true, enableClipsV3ML: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+let c1 = null;
+const result = require("set").fileFinishedImporting("modules/clips/ClipsV3RuntimeExperiment.tsx");
 
 export const ClipsV3RuntimeExperiment = apexExperiment;
 export { isClipsV3Enabled };
@@ -23,8 +24,8 @@ export function setActiveClipsRuntime(arg0) {
   let closure_1 = arg0;
 }
 export const getClipsRuntime = function getClipsRuntime(classifyHardwareAndTrack) {
-  if (null != closure_1) {
-    let str = closure_1;
+  if (null != c1) {
+    let str = c1;
   } else {
     str = "v1";
     if (isClipsV3Enabled(classifyHardwareAndTrack)) {

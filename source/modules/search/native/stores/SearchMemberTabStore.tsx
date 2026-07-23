@@ -1,9 +1,18 @@
-// Module ID: 11399
-// Function ID: 88652
+// Module ID: 11409
+// Function ID: 88702
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 1348, 653, 7094, 3763, 5047, 566, 686, 2]
 
-// Module 11399 (_isNativeReflectConstruct)
+// Module 11409 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import ME from "ME";
+import sortByMatchScore from "sortByMatchScore";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,52 +22,44 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const Permissions = arg1(dependencyMap[6]).Permissions;
 let closure_11 = [];
-let closure_12 = () => {
+let closure_12 = (() => {
   class GuildMemberSearchManager {
     constructor() {
-      GuildMemberSearchManager = this;
-      tmp = closure_7(this, GuildMemberSearchManager);
+      self = this;
+      tmp = outer1_7(this, self);
       this.count = null;
       this.isFetching = false;
       this.searchQueryString = "";
       this.targetChannelId = null;
       this.results = [];
       this.onAutocompleterResultsChange = (arr) => {
-        if (arg1 === self.searchQueryString) {
-          self.isFetching = false;
-          let items = [];
-          const self = items;
-          const channel2 = channel.getChannel(self.targetChannelId);
+        if (arg1 === items.searchQueryString) {
+          items.isFetching = false;
+          items = [];
+          const channel = outer2_9.getChannel(items.targetChannelId);
           const item = arr.forEach((type) => {
-            if (type.type === items(closure_3[7]).AutocompleterResultTypes.USER) {
+            if (type.type === GuildMemberSearchManager(outer3_3[7]).AutocompleterResultTypes.USER) {
               if (null != closure_1) {
-                let obj = callback(closure_3[8]);
-                obj = { permission: constants.VIEW_CHANNEL, user: type.record, context: closure_1 };
+                let obj = outer3_2(outer3_3[8]);
+                obj = { permission: outer3_10.VIEW_CHANNEL, user: type.record, context: closure_1 };
               }
               items.push(type);
             }
           });
-          self.results = items;
-          if (self.searchQueryString.length > 0) {
-            self.count = items.length;
+          items.results = items;
+          if (items.searchQueryString.length > 0) {
+            items.count = items.length;
           } else {
-            self.count = null;
+            items.count = null;
           }
-          items = closure_14;
-          closure_14.emitChange();
+          items = outer2_14;
+          outer2_14.emitChange();
         }
       };
-      tmp2 = closure_1(closure_3[7]);
+      tmp2 = outer1_1(outer1_3[7]);
       items = [];
-      items[0] = GuildMemberSearchManager(closure_3[7]).AutocompleterResultTypes.USER;
+      items[0] = GuildMemberSearchManager(outer1_3[7]).AutocompleterResultTypes.USER;
       tmp2 = new tmp2(this.onAutocompleterResultsChange, items, 50);
       this.autocompleter = tmp2;
       autocompleter = this.autocompleter;
@@ -66,7 +67,6 @@ let closure_12 = () => {
       return;
     }
   }
-  const arg1 = GuildMemberSearchManager;
   let obj = {
     key: "setAutocompleteOptions",
     value(arg0) {
@@ -74,7 +74,7 @@ let closure_12 = () => {
       autocompleter.setOptions(arg0);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "teardown",
     value() {
@@ -91,7 +91,7 @@ let closure_12 = () => {
       const trimmed = str.toLowerCase().trim();
       this.searchQueryString = trimmed;
       str = str.toLowerCase();
-      const members = callback(closure_3[9]).requestMembers(arg0, trimmed, 50);
+      const members = outer1_1(outer1_3[9]).requestMembers(arg0, trimmed, 50);
       const autocompleter = this.autocompleter;
       autocompleter.search(trimmed);
     }
@@ -116,21 +116,21 @@ let closure_12 = () => {
     }
   };
   return callback2(GuildMemberSearchManager, items);
-}();
+})();
 const map = new Map();
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class SearchGuildMemberTabStoreImpl {
     constructor() {
       self = this;
-      tmp = closure_7(this, SearchGuildMemberTabStoreImpl);
-      obj = closure_5(SearchGuildMemberTabStoreImpl);
-      tmp2 = closure_4;
-      if (closure_15()) {
+      tmp = outer1_7(this, SearchGuildMemberTabStoreImpl);
+      obj = outer1_5(SearchGuildMemberTabStoreImpl);
+      tmp2 = outer1_4;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -139,25 +139,24 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SearchGuildMemberTabStoreImpl;
   callback(SearchGuildMemberTabStoreImpl, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_9);
+      this.waitFor(outer1_9);
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getResults",
     value(arg0) {
-      const value = store.get(arg0);
+      const value = outer1_13.get(arg0);
       let results;
       if (null != value) {
         results = value.getResults();
       }
       if (null == results) {
-        results = closure_11;
+        results = outer1_11;
       }
       return results;
     }
@@ -166,7 +165,7 @@ let tmp3 = (Store) => {
   obj = {
     key: "getCount",
     value(arg0) {
-      const value = store.get(arg0);
+      const value = outer1_13.get(arg0);
       let count;
       if (null != value) {
         count = value.getCount();
@@ -182,7 +181,7 @@ let tmp3 = (Store) => {
   items[3] = {
     key: "getIsFetching",
     value(arg0) {
-      const value = store.get(arg0);
+      const value = outer1_13.get(arg0);
       let isFetching;
       if (null != value) {
         isFetching = value.getIsFetching();
@@ -191,9 +190,9 @@ let tmp3 = (Store) => {
     }
   };
   return callback2(SearchGuildMemberTabStoreImpl, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "SearchGuildMemberTabStore";
-tmp3 = new tmp3(importDefault(dependencyMap[11]), {
+tmp3 = new tmp3(require("dispatcher"), {
   SEARCH_GUILD_MEMBER_TAB_SEARCH: function handleSearchGuildMemberTabSearch(arg0) {
     let channelId;
     let guildId;
@@ -208,7 +207,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
       value = new ctor();
     }
     const result = map.set(id, value);
-    let obj = { -9223372036854775808: null, 9223372036854775807: null };
+    let obj = { frecencyBoosters: true, allowSnowflake: true };
     obj = { guild: guildId, strict: true };
     let tmp5;
     if (null != threadId) {
@@ -228,6 +227,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[11]), {
     map.delete(id);
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/search/native/stores/SearchMemberTabStore.tsx");
+let closure_14 = tmp3;
+let result = require("_inherits").fileFinishedImporting("modules/search/native/stores/SearchMemberTabStore.tsx");
 
 export default tmp3;

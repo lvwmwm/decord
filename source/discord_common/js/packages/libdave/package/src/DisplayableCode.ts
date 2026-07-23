@@ -1,12 +1,11 @@
-// Module ID: 8877
-// Function ID: 69990
+// Module ID: 8884
+// Function ID: 70031
 // Name: generateDisplayableCode
-// Dependencies: []
+// Dependencies: [2]
 // Exports: generateDisplayableCode
 
-// Module 8877 (generateDisplayableCode)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/DisplayableCode.ts");
+// Module 8884 (generateDisplayableCode)
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/DisplayableCode.ts");
 
 export const generateDisplayableCode = function generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize) {
   if (toByteArrayResult.byteLength < desiredLength) {
@@ -24,7 +23,7 @@ export const generateDisplayableCode = function generateDisplayableCode(toByteAr
   } else {
     const _BigInt3 = BigInt;
     let str2 = "";
-    const bigint = 6n;
+    const bigint = 8n;
     let num = 0;
     let str3 = "";
     if (0 < desiredLength) {
@@ -37,7 +36,7 @@ export const generateDisplayableCode = function generateDisplayableCode(toByteAr
           let tmp4 = toByteArrayResult[num + (chunkSize - diff)];
           while (undefined !== tmp4) {
             let _BigInt2 = BigInt;
-            let tmp5 = BigIntResult << 6n;
+            let tmp5 = BigIntResult << 8n;
             BigIntResult = tmp5 | BigInt(tmp4);
             diff = diff - 1;
             tmp2 = BigIntResult;

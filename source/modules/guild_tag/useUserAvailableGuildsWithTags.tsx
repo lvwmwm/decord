@@ -1,22 +1,24 @@
-// Module ID: 13493
-// Function ID: 102391
+// Module ID: 13607
+// Function ID: 104547
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: []
+// Dependencies: [1917, 1838, 566, 7845, 2]
 // Exports: useUserAvailableGuildsWithTags
 
-// Module 13493 (useUserAvailableGuildsWithTags)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");
+// Module 13607 (useUserAvailableGuildsWithTags)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");
 
 export const useUserAvailableGuildsWithTags = function useUserAvailableGuildsWithTags() {
-  const items = [closure_3, closure_2];
-  return arg1(dependencyMap[2]).useStateFromStoresArray(items, () => {
-    const guildsArray = guildsArray.getGuildsArray();
+  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
+    const guildsArray = outer1_3.getGuildsArray();
     return guildsArray.filter((id) => {
-      let guildSupportsTagsResult = callback(closure_1[3]).guildSupportsTags(id);
+      let guildSupportsTagsResult = outer2_0(outer2_1[3]).guildSupportsTags(id);
       if (guildSupportsTagsResult) {
-        const selfMember = selfMember.getSelfMember(id.id);
+        const selfMember = outer2_2.getSelfMember(id.id);
         let joinedAt;
         if (null != selfMember) {
           joinedAt = selfMember.joinedAt;

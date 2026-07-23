@@ -1,10 +1,15 @@
 // Module ID: 952
-// Function ID: 10312
+// Function ID: 10313
 // Name: AsyncFromSyncIterator
-// Dependencies: []
+// Dependencies: [77, 65, 942, 944, 817, 845, 934]
 // Exports: instrumentStream
 
 // Module 952 (AsyncFromSyncIterator)
+import _defineProperty from "_defineProperty";
+import _toConsumableArray from "_toConsumableArray";
+import _awaitAsyncGenerator from "_awaitAsyncGenerator";
+import AsyncGenerator from "AsyncGenerator";
+
 function AsyncFromSyncIterator(arg0) {
   function AsyncFromSyncIteratorContinuation(done) {
     if (Object(done) !== done) {
@@ -12,7 +17,7 @@ function AsyncFromSyncIterator(arg0) {
       const typeError = new TypeError(done + " is not an object.");
       return Promise.reject(typeError);
     } else {
-      const AsyncFromSyncIteratorContinuation = done.done;
+      done = done.done;
       const resolved = Promise.resolve(done.value);
       return resolved.then((value) => ({ value, done }));
     }
@@ -24,9 +29,9 @@ function AsyncFromSyncIterator(arg0) {
       return;
     }
   }
-  const obj = {
-    accessibilityRole: "o",
-    HermesInternal: "o",
+  let obj = {
+    s: null,
+    n: null,
     next() {
       const n = this.n;
       return AsyncFromSyncIteratorContinuation(n(...arguments));
@@ -69,15 +74,15 @@ function processChunk(promptFeedback, arg1, arg2, setStatus) {
         if (null == blockReason) {
           blockReason = promptFeedback.blockReason;
         }
-        let obj = { code: require(dependencyMap[4]).SPAN_STATUS_ERROR };
+        let obj = { code: require(817) /* getSpanStatusFromHttpCode */.SPAN_STATUS_ERROR };
         const _HermesInternal = HermesInternal;
         obj.message = "Content blocked: " + blockReason;
         setStatus.setStatus(obj);
         const _HermesInternal2 = HermesInternal;
-        obj = { mechanism: { priority: null, "Bool(false)": null } };
-        require(dependencyMap[5]).captureException("Content blocked: " + blockReason, obj);
+        obj = { mechanism: { handled: false, type: "auto.ai.google_genai" } };
+        require(845) /* captureCheckIn */.captureException("Content blocked: " + blockReason, obj);
         flag = true;
-        const obj2 = require(dependencyMap[5]);
+        const obj2 = require(845) /* captureCheckIn */;
       }
     }
     tmp = !flag;
@@ -105,7 +110,7 @@ function processChunk(promptFeedback, arg1, arg2, setStatus) {
     if (Array.isArray(promptFeedback.functionCalls)) {
       const toolCalls = tmp9.toolCalls;
       const push = toolCalls.push;
-      push.apply(toolCalls, callback(promptFeedback.functionCalls));
+      push.apply(toolCalls, _toConsumableArray(promptFeedback.functionCalls));
     }
     let candidates = promptFeedback.candidates;
     if (null == candidates) {
@@ -156,7 +161,7 @@ function processChunk(promptFeedback, arg1, arg2, setStatus) {
     }
   }
 }
-async function _instrumentStream(arg0, setAttributes, arg2, arg3) {
+async function _instrumentStream(arg0, arg1, arg2, arg3) {
   let obj2;
   const obj = { responseTexts: [], finishReasons: [], toolCalls: [] };
   if ("undefined" !== typeof Symbol) {
@@ -178,35 +183,35 @@ async function _instrumentStream(arg0, setAttributes, arg2, arg3) {
       let obj3 = arg0[str2];
       let tmp4 = obj3;
       if (null != obj3) {
-        let tmp10 = ctor;
-        let prototype2 = ctor.prototype;
+        let tmp10 = outer2_6;
+        let prototype2 = outer2_6.prototype;
         let tmp11 = new.target;
         let tmp12 = new.target;
-        let iter = new ctor(obj3.call(arg0));
+        let iter = new outer2_6(obj3.call(arg0));
       }
       let iter2 = iter;
-      let tmp13 = closure_4;
-      let iter3 = yield closure_4(iter.next());
+      let tmp13 = outer2_4;
+      let iter3 = yield outer2_4(iter.next());
       let iter4 = iter3;
       let tmp14 = !iter3.done;
       let tmp15 = tmp14;
       if (tmp14) {
         let tmp16 = iter4;
         let value = iter4.value;
-        let tmp17 = callback3;
+        let tmp17 = outer2_7;
         let tmp18 = obj;
         let tmp19 = arg2;
-        let tmp20 = setAttributes;
+        let tmp20 = arg1;
         let tmp21 = value;
-        let tmp22 = callback3(value, tmp2, arg2, setAttributes);
+        let tmp22 = outer2_7(value, tmp2, arg2, arg1);
         let tmp23 = yield value;
         do {
           let flag2 = false;
-          let tmp24 = closure_4;
+          let tmp24 = outer2_4;
           let tmp25 = iter;
-          let iter5 = yield closure_4(iter2.next());
+          let iter5 = yield outer2_4(iter2.next());
           iter4 = iter5;
-          let tmp26 = !iter5.done;
+          tmp26 = !iter5.done;
           tmp15 = tmp26;
         } while (tmp26);
       }
@@ -219,73 +224,73 @@ async function _instrumentStream(arg0, setAttributes, arg2, arg3) {
           let tmp29 = iter;
           let tmp30 = null;
           tmp28 = null != iter2.return;
-          // break
+          break;
         }
         if (tmp28) {
-          let tmp31 = closure_4;
+          let tmp31 = outer2_4;
           let tmp32 = iter;
-          let tmp33 = yield closure_4(iter2.return());
+          let tmp33 = yield outer2_4(iter2.return());
         }
         let tmp34 = flag;
         if (flag) {
           let tmp87 = tmp;
           throw tmp;
         } else {
-          let tmp35 = callback2;
-          let tmp36 = callback;
-          let tmp37 = closure_1;
+          let tmp35 = outer2_2;
+          let tmp36 = outer2_0;
+          let tmp37 = outer2_1;
           let num2 = 6;
           let flag3 = true;
-          let tmp38 = callback2({}, callback(closure_1[6]).GEN_AI_RESPONSE_STREAMING_ATTRIBUTE, true);
+          let tmp38 = outer2_2({}, outer2_0(outer2_1[6]).GEN_AI_RESPONSE_STREAMING_ATTRIBUTE, true);
           let tmp39 = obj;
           if (tmp2.responseId) {
             let tmp40 = tmp38;
-            let tmp41 = callback;
-            let tmp42 = closure_1;
+            let tmp41 = outer2_0;
+            let tmp42 = outer2_1;
             let tmp43 = obj;
-            tmp38[callback(closure_1[6]).GEN_AI_RESPONSE_ID_ATTRIBUTE] = tmp2.responseId;
+            tmp38[outer2_0(outer2_1[6]).GEN_AI_RESPONSE_ID_ATTRIBUTE] = tmp2.responseId;
           }
           let tmp44 = obj;
           if (tmp2.responseModel) {
             let tmp45 = tmp38;
-            let tmp46 = callback;
-            let tmp47 = closure_1;
+            let tmp46 = outer2_0;
+            let tmp47 = outer2_1;
             let tmp48 = obj;
-            tmp38[callback(closure_1[6]).GEN_AI_RESPONSE_MODEL_ATTRIBUTE] = tmp2.responseModel;
+            tmp38[outer2_0(outer2_1[6]).GEN_AI_RESPONSE_MODEL_ATTRIBUTE] = tmp2.responseModel;
           }
           let tmp49 = obj;
           if (undefined !== tmp2.promptTokens) {
             let tmp50 = tmp38;
-            let tmp51 = callback;
-            let tmp52 = closure_1;
+            let tmp51 = outer2_0;
+            let tmp52 = outer2_1;
             let tmp53 = obj;
-            tmp38[callback(closure_1[6]).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = tmp2.promptTokens;
+            tmp38[outer2_0(outer2_1[6]).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = tmp2.promptTokens;
           }
           let tmp54 = obj;
           if (undefined !== tmp2.completionTokens) {
             let tmp55 = tmp38;
-            let tmp56 = callback;
-            let tmp57 = closure_1;
+            let tmp56 = outer2_0;
+            let tmp57 = outer2_1;
             let tmp58 = obj;
-            tmp38[callback(closure_1[6]).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE] = tmp2.completionTokens;
+            tmp38[outer2_0(outer2_1[6]).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE] = tmp2.completionTokens;
           }
           let tmp59 = obj;
           if (undefined !== tmp2.totalTokens) {
             let tmp60 = tmp38;
-            let tmp61 = callback;
-            let tmp62 = closure_1;
+            let tmp61 = outer2_0;
+            let tmp62 = outer2_1;
             let tmp63 = obj;
-            tmp38[callback(closure_1[6]).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE] = tmp2.totalTokens;
+            tmp38[outer2_0(outer2_1[6]).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE] = tmp2.totalTokens;
           }
           let tmp64 = obj;
           if (tmp2.finishReasons.length) {
             let tmp65 = tmp38;
-            let tmp66 = callback;
-            let tmp67 = closure_1;
+            let tmp66 = outer2_0;
+            let tmp67 = outer2_1;
             let tmp68 = globalThis;
             let _JSON = JSON;
             let tmp69 = obj;
-            tmp38[callback(closure_1[6]).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE] = JSON.stringify(tmp2.finishReasons);
+            tmp38[outer2_0(outer2_1[6]).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE] = JSON.stringify(tmp2.finishReasons);
           }
           let tmp70 = arg2;
           let length = arg2;
@@ -295,12 +300,12 @@ async function _instrumentStream(arg0, setAttributes, arg2, arg3) {
           }
           if (length) {
             let tmp72 = tmp38;
-            let tmp73 = callback;
-            let tmp74 = closure_1;
+            let tmp73 = outer2_0;
+            let tmp74 = outer2_1;
             let tmp75 = obj;
             let responseTexts = tmp2.responseTexts;
             let str4 = "";
-            tmp38[callback(closure_1[6]).GEN_AI_RESPONSE_TEXT_ATTRIBUTE] = responseTexts.join("");
+            tmp38[outer2_0(outer2_1[6]).GEN_AI_RESPONSE_TEXT_ATTRIBUTE] = responseTexts.join("");
           }
           let tmp76 = arg2;
           let length2 = arg2;
@@ -310,17 +315,17 @@ async function _instrumentStream(arg0, setAttributes, arg2, arg3) {
           }
           if (length2) {
             let tmp78 = tmp38;
-            let tmp79 = callback;
-            let tmp80 = closure_1;
+            let tmp79 = outer2_0;
+            let tmp80 = outer2_1;
             let tmp81 = globalThis;
             let _JSON2 = JSON;
             let tmp82 = obj;
-            tmp38[callback(closure_1[6]).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE] = JSON.stringify(tmp2.toolCalls);
+            tmp38[outer2_0(outer2_1[6]).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE] = JSON.stringify(tmp2.toolCalls);
           }
-          let tmp83 = setAttributes;
+          let tmp83 = arg1;
           let tmp84 = tmp38;
-          let setAttributesResult = setAttributes.setAttributes(tmp38);
-          let endResult = setAttributes.end();
+          let setAttributesResult = arg1.setAttributes(tmp38);
+          let endResult = arg1.end();
         }
       }
     }
@@ -342,10 +347,6 @@ async function _instrumentStream(arg0, setAttributes, arg2, arg3) {
   }
   iter = obj2.call(arg0);
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const instrumentStream = function instrumentStream(arg0, arg1, arg2) {

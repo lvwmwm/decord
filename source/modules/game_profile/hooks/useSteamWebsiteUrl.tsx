@@ -1,54 +1,56 @@
-// Module ID: 8598
-// Function ID: 68280
+// Module ID: 8605
+// Function ID: 68320
 // Name: buildSteamStoreUrl
-// Dependencies: []
+// Dependencies: [4151, 653, 566, 8606, 8604, 1832, 2]
 // Exports: useSteamWebsiteUrl
 
-// Module 8598 (buildSteamStoreUrl)
+// Module 8605 (buildSteamStoreUrl)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Distributors } from "ME";
+
+const require = arg1;
 function buildSteamStoreUrl(arg0) {
   return "https://store.steampowered.com/app/" + encodeURIComponent(arg0);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const Distributors = arg1(dependencyMap[1]).Distributors;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/game_profile/hooks/useSteamWebsiteUrl.tsx");
+const result = require("initialize").fileFinishedImporting("modules/game_profile/hooks/useSteamWebsiteUrl.tsx");
 
 export { buildSteamStoreUrl };
 export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
-  const arg1 = id;
-  const items = [closure_2];
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
   const items1 = [id];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    if (null == arg0) {
+  return _require(566).useStateFromStores(items, () => {
+    if (null == id) {
       return null;
     } else {
-      const game = game.getGame(arg0);
+      const game = outer1_2.getGame(id);
       if (null == game) {
         return null;
-      } else if (game.steamReleaseStatus === arg0(closure_1[3]).SteamReleaseStatus.RETIRED_ABANDONED) {
+      } else if (game.steamReleaseStatus === id(outer1_1[3]).SteamReleaseStatus.RETIRED_ABANDONED) {
         return null;
       } else {
         const websites = game.websites;
-        const found = websites.find((category) => category.category === callback(closure_1[4]).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+        const found = websites.find((category) => category.category === callback(outer2_1[4]).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         if (null != found) {
           const url = found.url;
         }
         const thirdPartySkus = game.thirdPartySkus;
         const found1 = thirdPartySkus.filter((distributor) => {
-          let tmp = distributor.distributor === constants.STEAM;
+          let tmp = distributor.distributor === outer2_3.STEAM;
           if (tmp) {
-            tmp = !callback(closure_1[5]).isNullOrEmpty(distributor.id);
-            const obj = callback(closure_1[5]);
+            tmp = !callback(outer2_1[5]).isNullOrEmpty(distributor.id);
+            const obj = callback(outer2_1[5]);
           }
           return tmp;
         });
         const first = found1[0];
-        let id;
+        id = undefined;
         if (null != first) {
           id = first.id;
         }
         let tmp6 = null;
         if (!obj.isNullOrEmpty(id)) {
-          tmp6 = callback(id);
+          tmp6 = outer1_4(id);
         }
         if (found1.length <= 1) {
           if (null == tmp6) {

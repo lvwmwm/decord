@@ -1,9 +1,11 @@
 // Module ID: 1109
-// Function ID: 12644
+// Function ID: 12645
 // Name: _getClientIntegration
-// Dependencies: []
+// Dependencies: [794]
 
 // Module 1109 (_getClientIntegration)
+const require = arg1;
+const dependencyMap = arg6;
 let fn = this;
 if (this) {
   fn = this.__rest;
@@ -22,7 +24,7 @@ if (!fn) {
         continue;
       } else {
         obj[key10007] = arg0[key10007];
-        // continue
+        continue;
       }
       continue;
     }
@@ -46,13 +48,13 @@ if (!fn) {
     return obj;
   };
 }
-let closure_3 = "MobileFeedback";
+const MobileFeedback = "MobileFeedback";
 function _getClientIntegration() {
-  const client = arg1(arg6[0]).getClient();
+  const client = require(794) /* registerSpanErrorInstrumentation */.getClient();
   let integrationByName;
   if (null !== client) {
     if (undefined !== client) {
-      integrationByName = client.getIntegrationByName(closure_3);
+      integrationByName = client.getIntegrationByName(MobileFeedback);
     }
   }
   return integrationByName;
@@ -69,7 +71,7 @@ arg5.feedbackIntegration = function feedbackIntegration() {
       let first = arguments[0];
     }
     ({ buttonOptions, screenshotButtonOptions, colorScheme, themeLight, themeDark } = first);
-    const obj = { name: closure_3, options: fn(first, [2079089.3031479314, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040279199267464873, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001661887407414695, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000267335934521505, -82223345903602040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]) };
+    const obj = { name: MobileFeedback, options: fn(first, ["buttonOptions", "screenshotButtonOptions", "colorScheme", "themeLight", "themeDark"]) };
     if (!buttonOptions) {
       buttonOptions = {};
     }

@@ -1,25 +1,26 @@
-// Module ID: 11360
-// Function ID: 88353
+// Module ID: 11370
+// Function ID: 88403
 // Name: getDmHasMessageHistory
-// Dependencies: []
+// Dependencies: [1348, 653, 675, 2]
 // Exports: trackWaveCtaClicked
 
-// Module 11360 (getDmHasMessageHistory)
+// Module 11370 (getDmHasMessageHistory)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
 function getDmHasMessageHistory(channelId) {
-  const channel = channel.getChannel(channelId);
+  channel = channel.getChannel(channelId);
   let lastMessageId;
   if (null != channel) {
     lastMessageId = channel.lastMessageId;
   }
   return null != lastMessageId;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/channel/trackWaveCtaClicked.tsx");
+const result = require("expandLocation").fileFinishedImporting("modules/channel/trackWaveCtaClicked.tsx");
 
 export { getDmHasMessageHistory };
 export const trackWaveCtaClicked = function trackWaveCtaClicked(channelId) {
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(675);
   obj = { channel_id: channelId.channelId, source: channelId.source, dm_has_message_history: getDmHasMessageHistory(channelId.channelId) };
   obj.track(AnalyticEvents.WAVE_CTA_CLICKED, obj);
 };

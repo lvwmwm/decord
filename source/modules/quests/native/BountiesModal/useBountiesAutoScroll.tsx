@@ -1,16 +1,19 @@
-// Module ID: 13799
-// Function ID: 104328
+// Module ID: 13913
+// Function ID: 106484
 // Name: set
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4976, 10840, 13912, 3991, 4131, 4134, 4096, 2]
 // Exports: clearDismissedScrollAffordanceBountyIds, useBountiesAutoScroll
 
-// Module 13799 (set)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const AppState = arg1(dependencyMap[2]).AppState;
-const QuestsExperimentLocations = arg1(dependencyMap[3]).QuestsExperimentLocations;
-const set = new Set();
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesAutoScroll.tsx");
+// Module 13913 (set)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { AppState } from "get ActivityIndicator";
+import { QuestsExperimentLocations } from "QuestsExperimentLocations";
+import set from "get ActivityIndicator";
+
+const require = arg1;
+let set = new Set();
+let result = set.fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesAutoScroll.tsx");
 
 export const AUTO_SCROLL_PEEK_SCALE = 0.83;
 export const AUTO_SCROLL_PEEK_TOP_OFFSET = 54;
@@ -18,6 +21,10 @@ export const clearDismissedScrollAffordanceBountyIds = function clearDismissedSc
   set.clear();
 };
 export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
+  let closure_11;
+  let closure_12;
+  let closure_13;
+  let closure_14;
   let tmp10;
   let tmp12;
   let tmp20;
@@ -25,17 +32,11 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
   let tmp6;
   let tmp8;
   listRef = listRef.listRef;
-  const arg1 = listRef;
   const enabled = listRef.enabled;
-  const dependencyMap = enabled;
   const mode = listRef.mode;
-  let callback = mode;
   const activeIndex = listRef.activeIndex;
-  const React = activeIndex;
   const activeBountyId = listRef.activeBountyId;
-  const AppState = activeBountyId;
   const slotHeight = listRef.slotHeight;
-  const QuestsExperimentLocations = slotHeight;
   const onCountdownCancelled = listRef.onCountdownCancelled;
   let callback5;
   let callback6;
@@ -45,35 +46,35 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
   let callback10;
   let callback11;
   let callback12;
-  const BountiesVerticalScrollExperiment = arg1(dependencyMap[4]).BountiesVerticalScrollExperiment;
-  let obj = { location: QuestsExperimentLocations.VIDEO_MODAL_MOBILE };
+  const BountiesVerticalScrollExperiment = listRef(enabled[4]).BountiesVerticalScrollExperiment;
+  let obj = { location: slotHeight.VIDEO_MODAL_MOBILE };
   const config = BountiesVerticalScrollExperiment.useConfig(obj);
   const ctaTimerMilliSeconds = config.ctaTimerMilliSeconds;
-  const result = config.autoScrollLeadMs / 1000;
+  let result = config.autoScrollLeadMs / 1000;
   const sum = result + config.autoScrollEndCardMs / 1000;
-  const first = callback(arg1(dependencyMap[5]).useForceBountiesSwipeUpNux(), 1)[0];
-  const obj2 = arg1(dependencyMap[5]);
-  [tmp6, closure_11] = callback(React.useState(false), 2);
-  const tmp5 = callback(React.useState(false), 2);
-  [tmp8, closure_12] = callback(React.useState(false), 2);
-  const tmp7 = callback(React.useState(false), 2);
-  [tmp10, closure_13] = callback(React.useState(0), 2);
-  const tmp9 = callback(React.useState(0), 2);
-  [tmp12, closure_14] = callback(React.useState(false), 2);
-  let closure_15 = React.useRef(false);
-  let closure_16 = React.useRef(false);
-  let closure_17 = React.useRef(false);
-  let closure_18 = React.useRef(false);
-  let closure_19 = React.useRef(null);
-  let closure_20 = React.useRef(null);
-  let closure_21 = React.useRef(0);
-  let closure_22 = React.useRef(null);
-  let closure_23 = React.useRef(false);
-  let closure_24 = React.useRef(false);
-  const tmp11 = callback(React.useState(false), 2);
-  const sharedValue = arg1(dependencyMap[6]).useSharedValue(1);
-  let closure_26 = React.useRef(sum);
-  callback = React.useCallback(() => {
+  const first = mode(listRef(enabled[5]).useForceBountiesSwipeUpNux(), 1)[0];
+  const obj2 = listRef(enabled[5]);
+  [tmp6, closure_11] = mode(activeIndex.useState(false), 2);
+  const tmp5 = mode(activeIndex.useState(false), 2);
+  [tmp8, closure_12] = mode(activeIndex.useState(false), 2);
+  let tmp7 = mode(activeIndex.useState(false), 2);
+  [tmp10, closure_13] = mode(activeIndex.useState(0), 2);
+  const tmp9 = mode(activeIndex.useState(0), 2);
+  [tmp12, closure_14] = mode(activeIndex.useState(false), 2);
+  let closure_15 = activeIndex.useRef(false);
+  let closure_16 = activeIndex.useRef(false);
+  let closure_17 = activeIndex.useRef(false);
+  let closure_18 = activeIndex.useRef(false);
+  let closure_19 = activeIndex.useRef(null);
+  let closure_20 = activeIndex.useRef(null);
+  let closure_21 = activeIndex.useRef(0);
+  let closure_22 = activeIndex.useRef(null);
+  let closure_23 = activeIndex.useRef(false);
+  let closure_24 = activeIndex.useRef(false);
+  const tmp11 = mode(activeIndex.useState(false), 2);
+  const sharedValue = listRef(enabled[6]).useSharedValue(1);
+  let closure_26 = activeIndex.useRef(sum);
+  const callback = activeIndex.useCallback(() => {
     if (null != closure_19.current) {
       const _clearInterval = clearInterval;
       clearInterval(closure_19.current);
@@ -81,7 +82,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
     closure_22.current = null;
   }, []);
-  const callback1 = React.useCallback(() => {
+  const callback1 = activeIndex.useCallback(() => {
     if (null != ref.current) {
       const _clearTimeout = clearTimeout;
       clearTimeout(ref.current);
@@ -89,7 +90,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, []);
   const items = [first];
-  const callback2 = React.useCallback((arg0) => {
+  const callback2 = activeIndex.useCallback((arg0) => {
     let tmp = first;
     if (!first) {
       tmp = null == arg0;
@@ -99,7 +100,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, items);
   const items1 = [first];
-  const callback3 = React.useCallback((arg0) => {
+  const callback3 = activeIndex.useCallback((arg0) => {
     let hasItem = !first;
     if (hasItem) {
       hasItem = null != arg0;
@@ -109,15 +110,15 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
     return hasItem;
   }, items1);
-  const callback4 = React.useCallback(() => {
+  const callback4 = activeIndex.useCallback(() => {
     callback(false);
     callback2(false);
     callback3(0);
     callback4(false);
   }, []);
-  const obj3 = arg1(dependencyMap[6]);
-  [tmp20, tmp21] = callback(React.useState(activeIndex), 2);
-  const tmp22 = callback(React.useState(activeBountyId), 2);
+  const obj3 = listRef(enabled[6]);
+  [tmp20, tmp21] = mode(activeIndex.useState(activeIndex), 2);
+  const tmp22 = mode(activeIndex.useState(activeBountyId), 2);
   let tmp23 = tmp20 === activeIndex;
   if (tmp23) {
     tmp23 = tmp22[0] === activeBountyId;
@@ -128,7 +129,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     callback4();
   }
   const items2 = [activeIndex, activeBountyId, callback, callback1, sharedValue, callback3];
-  const effect = React.useEffect(() => {
+  const effect = activeIndex.useEffect(() => {
     callback();
     callback1();
     closure_15.current = callback3(activeBountyId);
@@ -141,16 +142,16 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     const result = sharedValue.set(1);
   }, items2);
   const items3 = [callback, callback1];
-  const effect1 = React.useEffect(() => () => {
-    callback();
-    callback2();
+  const effect1 = activeIndex.useEffect(() => () => {
+    outer1_27();
+    outer1_28();
   }, items3);
   const items4 = [sum];
-  const effect2 = React.useEffect(() => {
-    closure_26.current = sum;
+  const effect2 = activeIndex.useEffect(() => {
+    closure_26.current = closure_9;
   }, items4);
   const items5 = [activeBountyId, callback1, callback2, sharedValue, callback3];
-  callback5 = React.useCallback(() => {
+  callback5 = activeIndex.useCallback(() => {
     let num = arg0;
     if (arg0 === undefined) {
       num = 0;
@@ -167,28 +168,28 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
       closure_16.current = true;
       callback2(activeBountyId);
       callback1();
-      const _setTimeout = setTimeout;
+      let _setTimeout = setTimeout;
       closure_20.current = setTimeout(() => {
-        closure_20.current = null;
-        let current = ref.current;
+        outer1_20.current = null;
+        let current = outer1_15.current;
         if (!current) {
-          current = ref2.current;
+          current = outer1_18.current;
         }
         if (!current) {
-          const result = closure_25.set(callback(closure_1[7]).withTiming(0.83, callback(closure_1[8]).timingSlow));
-          callback2(true);
+          const result = outer1_25.set(listRef(enabled[7]).withTiming(0.83, listRef(enabled[8]).timingSlow));
+          outer1_12(true);
           const _setTimeout = setTimeout;
-          closure_20.current = setTimeout(() => {
-            closure_20.current = null;
-            let current = ref.current;
+          outer1_20.current = setTimeout(() => {
+            outer2_20.current = null;
+            let current = outer2_15.current;
             if (!current) {
-              current = ref2.current;
+              current = outer2_18.current;
             }
             if (!current) {
-              callback(true);
+              outer2_11(true);
             }
           }, 500);
-          const obj = callback(closure_1[7]);
+          const obj = listRef(enabled[7]);
         }
       }, num);
       flag = true;
@@ -196,7 +197,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     return flag;
   }, items5);
   const items6 = [activeBountyId, activeIndex, callback, callback1, listRef, callback2, sharedValue, callback4, slotHeight];
-  callback6 = React.useCallback(() => {
+  callback6 = activeIndex.useCallback(() => {
     let current = closure_18.current;
     if (!current) {
       current = closure_15.current;
@@ -216,7 +217,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, items6);
   const items7 = [callback6];
-  callback7 = React.useCallback(() => {
+  callback7 = activeIndex.useCallback(() => {
     if (!closure_15.current) {
       if (!closure_23.current) {
         const _Date = Date;
@@ -236,7 +237,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, items7);
   const items8 = [callback7];
-  callback8 = React.useCallback(() => {
+  callback8 = activeIndex.useCallback(() => {
     let current = closure_17.current;
     if (!current) {
       current = null != closure_19.current;
@@ -256,7 +257,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, items8);
   const items9 = [callback];
-  callback9 = React.useCallback(() => {
+  callback9 = activeIndex.useCallback(() => {
     if (closure_17.current) {
       if (!closure_23.current) {
         if (null != closure_19.current) {
@@ -271,7 +272,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, items9);
   const items10 = [callback7];
-  callback10 = React.useCallback(() => {
+  callback10 = activeIndex.useCallback(() => {
     let current = closure_17.current;
     if (current) {
       current = closure_23.current;
@@ -291,14 +292,14 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, items10);
   const items11 = [callback9];
-  callback11 = React.useCallback(() => {
+  callback11 = activeIndex.useCallback(() => {
     if (!closure_23.current) {
       callback9();
       closure_24.current = true;
     }
   }, items11);
   const items12 = [callback10];
-  callback12 = React.useCallback(() => {
+  callback12 = activeIndex.useCallback(() => {
     let current = ref3.current;
     if (current) {
       current = !listRef(enabled[9]).getIsInAppBrowserOpen();
@@ -310,19 +311,19 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, items12);
   const items13 = [callback11, callback12];
-  const effect3 = React.useEffect(() => {
-    const listRef = activeBountyId.addEventListener("change", (arg0) => {
+  const effect3 = activeIndex.useEffect(() => {
+    let closure_0 = activeBountyId.addEventListener("change", (arg0) => {
       if ("active" === arg0) {
-        callback3();
+        outer1_39();
       } else {
-        callback2();
+        outer1_38();
       }
     });
-    closure_1 = listRef(closure_1[9]).subscribeToIsInAppBrowserOpen((arg0) => {
+    let closure_1 = listRef(enabled[9]).subscribeToIsInAppBrowserOpen((arg0) => {
       if (arg0) {
-        callback2();
+        outer1_38();
       } else {
-        callback3();
+        outer1_39();
       }
     });
     return () => {
@@ -332,7 +333,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
   }, items13);
   const items14 = [activeBountyId, callback, callback1, callback2, mode, onCountdownCancelled, sharedValue, callback4];
   const items15 = [activeBountyId, callback, callback1, callback2, sharedValue, callback4];
-  const callback13 = React.useCallback((arg0) => {
+  const callback13 = activeIndex.useCallback((arg0) => {
     let current = !closure_16.current;
     if (!current) {
       current = closure_15.current;
@@ -358,7 +359,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, items14);
   const items16 = [callback1, callback4];
-  const callback14 = React.useCallback(() => {
+  const callback14 = activeIndex.useCallback(() => {
     if (closure_16.current) {
       closure_15.current = true;
       callback2(activeBountyId);
@@ -369,14 +370,14 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     }
   }, items15);
   const items17 = [result, ctaTimerMilliSeconds, enabled, mode, callback5, callback8];
-  const callback15 = React.useCallback(() => {
+  const callback15 = activeIndex.useCallback(() => {
     closure_18.current = false;
     callback1();
     callback4();
     return closure_18.current;
   }, items16);
   const items18 = [activeBountyId, enabled, mode, callback10, callback5, callback8, callback3];
-  const callback16 = React.useCallback((arg0, arg1, arg2, arg3, arg4) => {
+  const callback16 = activeIndex.useCallback((arg0, arg1, arg2, arg3, arg4) => {
     let tmp = arg2;
     let tmp2 = arg4;
     let current = !enabled;
@@ -407,7 +408,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
         tmp = !closure_17.current;
       }
       if (tmp) {
-        if (arg1 - arg0 <= result) {
+        if (arg1 - arg0 <= closure_8) {
           callback8();
         }
       }
@@ -423,7 +424,7 @@ export const useBountiesAutoScroll = function useBountiesAutoScroll(listRef) {
     dismissOnClose: callback14,
     takeDidAutoScroll: callback15,
     onPlaybackTimeChange: callback16,
-    onEndCardVisible: React.useCallback(() => {
+    onEndCardVisible: activeIndex.useCallback(() => {
       let current = !enabled;
       if (!current) {
         current = closure_15.current;

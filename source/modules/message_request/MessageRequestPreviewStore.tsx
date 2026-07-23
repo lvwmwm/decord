@@ -1,9 +1,20 @@
-// Module ID: 11619
-// Function ID: 90237
+// Module ID: 11629
+// Function ID: 90286
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1849, 5604, 5605, 4351, 566, 686, 2]
 
-// Module 11619 (_isNativeReflectConstruct)
+// Module 11629 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +24,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,10 +103,10 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-function isMessagePreviewEnabledForChannel(channelId) {
-  let isMessageRequestResult = messageRequest.isMessageRequest(channelId);
+function isMessagePreviewEnabledForChannel(id) {
+  let isMessageRequestResult = messageRequest.isMessageRequest(id);
   if (!isMessageRequestResult) {
-    isMessageRequestResult = spam.isSpam(channelId);
+    isMessageRequestResult = spam.isSpam(id);
   }
   return isMessageRequestResult;
 }
@@ -108,7 +119,7 @@ function storeMessagePreview(channel_id, message) {
     if (null == message) {
       let messageRecord = null;
       if (null != message) {
-        let obj = message(dependencyMap[8]);
+        let obj = require(4351) /* createMinimalMessageRecord */;
         messageRecord = obj.createMessageRecord(message);
       }
       obj = { loaded: true, error: flag, message: messageRecord };
@@ -121,29 +132,21 @@ function storeMessagePreview(channel_id, message) {
     }
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
 let closure_10 = {};
-const set = new Set();
-let tmp3 = (Store) => {
+let set = new Set();
+let tmp3 = ((Store) => {
   class MessageRequestPreviewStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, MessageRequestPreviewStore);
-      obj = closure_5(MessageRequestPreviewStore);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      tmp = outer1_2(this, MessageRequestPreviewStore);
+      obj = outer1_5(MessageRequestPreviewStore);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -152,36 +155,35 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = MessageRequestPreviewStore;
   callback2(MessageRequestPreviewStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_9, closure_7);
+      this.waitFor(outer1_8, outer1_9, outer1_7);
     }
   };
   const items = [obj, , ];
   obj = {
     key: "shouldLoadMessageRequestPreview",
     value(arg0) {
-      return !set.has(arg0);
+      return !outer1_11.has(arg0);
     }
   };
   items[1] = obj;
   obj = {
     key: "getMessageRequestPreview",
     value(arg0) {
-      if (!(arg0 in closure_10)) {
-        closure_10[arg0] = {};
+      if (!(arg0 in outer1_10)) {
+        outer1_10[arg0] = { loaded: false, error: false, message: null };
       }
-      return closure_10[arg0];
+      return outer1_10[arg0];
     }
   };
   items[2] = obj;
   return callback(MessageRequestPreviewStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "MessageRequestPreviewStore";
-tmp3 = new tmp3(importDefault(dependencyMap[10]), {
+tmp3 = new tmp3(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     let closure_10 = {};
     set.clear();
@@ -194,27 +196,27 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
   },
   CHANNEL_UPDATES: function handleChannelUpdates(channels) {
     let iter2;
-    const tmp = _createForOfIteratorHelperLoose(channels.channels);
-    let iter = tmp();
+    const tmp3 = _createForOfIteratorHelperLoose(channels.channels);
+    let iter = tmp3();
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp2 = closure_15;
-        if (!closure_15(value.id)) {
-          let tmp3 = closure_11;
-          let deleteResult = closure_11.delete(value.id);
-          let tmp5 = closure_10;
+        let tmp4 = isMessagePreviewEnabledForChannel;
+        if (!isMessagePreviewEnabledForChannel(value.id)) {
+          let tmp5 = set;
+          let deleteResult = set.delete(value.id);
+          let tmp7 = closure_10;
           let id = value.id;
-          delete r5[r1];
+          delete tmp2[tmp];
         }
-        iter2 = tmp();
+        iter2 = tmp3();
         iter = iter2;
       } while (!iter2.done);
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     set.delete(channel.channel.id);
-    delete r1[r0];
+    delete tmp2[tmp];
   },
   MESSAGE_CREATE: function handleMessageCreate(isPushNotification) {
     if (isPushNotification.isPushNotification) {
@@ -233,9 +235,9 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
         if (null != tmp2.message) {
           const obj = {};
           const merged = Object.assign(tmp2);
-          obj["message"] = arg1(dependencyMap[8]).updateMessageRecord(tmp2.message, message.message);
-          closure_10[channel_id] = obj;
-          const obj2 = arg1(dependencyMap[8]);
+          obj["message"] = require(4351) /* createMinimalMessageRecord */.updateMessageRecord(tmp2.message, message.message);
+          table[channel_id] = obj;
+          const obj2 = require(4351) /* createMinimalMessageRecord */;
         }
         tmp3 = tmp4;
       }
@@ -244,7 +246,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
   },
   MESSAGE_DELETE: function handleMessageDelete(channelId) {
     if (isMessagePreviewEnabledForChannel(channelId.channelId)) {
-      closure_10[channelId.channelId] = { marginTop: "<string:1040334421>", marginRight: "<string:1040334338>", borderColor: "<string:1694645762>" };
+      closure_10[channelId.channelId] = { loaded: true, error: false, message: null };
     } else {
       return false;
     }
@@ -255,16 +257,15 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
     const items = [...supplementalData.requestedChannelIds];
     let num = 0;
     const set = new Set(items);
-    const arg1 = set;
     const item = supplementalData.forEach((channel_id) => {
-      callback(channel_id.channel_id, channel_id.message_preview);
+      outer1_16(channel_id.channel_id, channel_id.message_preview);
       set.delete(channel_id.channel_id);
     });
     const arr = Array.from(set);
     if (0 < arr.length) {
       do {
-        let tmp3 = closure_16;
-        let tmp4 = closure_16(arr[num], null);
+        let tmp3 = storeMessagePreview;
+        let tmp4 = storeMessagePreview(arr[num], null);
         num = num + 1;
         length = arr.length;
       } while (num < length);
@@ -273,10 +274,10 @@ tmp3 = new tmp3(importDefault(dependencyMap[10]), {
   LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR: function handleLoadMessageRequestsSupplementalDataError(requestedChannelIds) {
     requestedChannelIds = requestedChannelIds.requestedChannelIds;
     const item = requestedChannelIds.forEach((arg0) => {
-      callback(arg0, null, true);
+      outer1_16(arg0, null, true);
     });
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/message_request/MessageRequestPreviewStore.tsx");
+let result = set.fileFinishedImporting("modules/message_request/MessageRequestPreviewStore.tsx");
 
 export default tmp3;

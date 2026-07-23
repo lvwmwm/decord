@@ -1,41 +1,45 @@
-// Module ID: 12283
-// Function ID: 94167
+// Module ID: 12397
+// Function ID: 96318
 // Name: Header
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 4066, 5085, 1212, 3976, 12398, 12399, 4126, 2]
 // Exports: default
 
-// Module 12283 (Header)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { <string:3814666730>: 8, <string:1280564396>: 18 }, headerText: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/premium/native/Header.tsx");
+// Module 12397 (Header)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "column", alignItems: "center" }, headerText: { marginTop: 16, marginBottom: 24 } });
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/premium/native/Header.tsx");
 
 export default function Header(style) {
   const tmp = callback2();
   let obj = { style: items };
-  const items = [tmp.container, style.style];
-  obj = { GAMES_YOU_PLAY: "r", v: "BackgroundGradientPresetId", decorationCutout: "Array" };
-  const tmp2 = importDefault(dependencyMap[4])();
+  items = [tmp.container, style.style];
+  obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header" };
+  const tmp2 = importDefault(4066)();
   const tmp3 = closure_5;
   const tmp4 = View;
   const tmp5 = callback;
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[6]).t.lpNrPu);
-  const tmp6 = importDefault(dependencyMap[5]);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lpNrPu);
+  const tmp6 = importDefault(5085);
   if (obj3.isThemeDark(tmp2)) {
-    let tmp7Result = tmp7(tmp8[8]);
+    let tmp7Result = tmp7(12398);
   } else {
-    tmp7Result = tmp7(tmp8[9]);
+    tmp7Result = tmp7(12399);
   }
   obj.source = tmp7Result;
   const items1 = [tmp5(tmp6, obj), ];
-  obj = { style: tmp.headerText };
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj.children = intl2.string(arg1(dependencyMap[6]).t.SD5MJW);
-  items1[1] = callback(arg1(dependencyMap[10]).Text, obj);
+  obj = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.SD5MJW);
+  items1[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items1;
   return tmp3(tmp4, obj);
 };

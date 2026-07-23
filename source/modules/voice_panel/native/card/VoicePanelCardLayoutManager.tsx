@@ -1,53 +1,71 @@
-// Module ID: 10009
-// Function ID: 77352
+// Module ID: 10017
+// Function ID: 77392
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 57, 31, 27, 4143, 10015, 10018, 4148, 3991, 10019, 620, 10020, 10021, 10022, 682, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 10009 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10017 (_createForOfIteratorHelperLoose)
+import closure_3 from "VoicePanelModes";
+import closure_4 from "CARD_SIZE";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { PixelRatio } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import VoicePanelModes from "VoicePanelModes";
+import CARD_SIZE from "CARD_SIZE";
+import { ParticipantTypes } from "ParticipantTypes";
+import set from "_slicedToArray";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -111,7 +129,7 @@ function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
   if ("portrait" === arg0) {
     if (fillAspectRatio.fillAspectRatio) {
       if (arg1) {
-        let obj = { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" };
+        let obj = { width: 2, height: 2 };
       } else {
         obj = { width: 2 };
         let num5 = 0;
@@ -121,7 +139,7 @@ function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
         obj.height = 3 + num5;
       }
     } else {
-      return { "Null": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
+      return { width: 1, height: 2 };
     }
   } else if ("landscape" === arg0) {
     if (fillAspectRatio.fillAspectRatio) {
@@ -134,13 +152,13 @@ function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
         obj.width = 3 + num;
         obj.height = 2;
       } else {
-        obj = { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" };
+        obj = { width: 2, height: 2 };
       }
     } else {
-      return { "Null": "\u{1F4A0}", "Null": 6 };
+      return { width: 2, height: 1 };
     }
   } else if ("square" === arg0) {
-    return fillAspectRatio.enlargeSquare ? { "Null": "GeoTiffDirectory", "Null": "GeoTiffDoubleParams" } : { "Null": "<string:2491613185>", "Null": "<string:2941583362>" };
+    return fillAspectRatio.enlargeSquare ? { width: 2, height: 2 } : { width: 1, height: 1 };
   }
 }
 function getTargetCardSize(windowWidth) {
@@ -154,38 +172,30 @@ function getTargetCardSize(windowWidth) {
   }
   return Math.max(closure_10, (windowWidth - safeAreaLeft - safeAreaRight - closure_15 * (num - 1)) / num);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importAll(dependencyMap[3]);
-const PixelRatio = arg1(dependencyMap[4]).PixelRatio;
-let closure_8 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[6]);
-const VoicePanelCardItemType = tmp2.VoicePanelCardItemType;
-({ BASE_TARGET_CARD_SIZE: closure_10, VoicePanelCTACardDimensionKeys: closure_11, VoicePanelCTACardDimensions: closure_12, VOICE_PANEL_CHUNK_DIVISOR: closure_13 } = tmp2);
-({ EDGE_GUTTER: closure_14, CALL_TILE_GUTTER: closure_15 } = arg1(dependencyMap[7]));
-const ParticipantTypes = arg1(dependencyMap[8]).ParticipantTypes;
-let obj = { 0: null, 9223372036854775807: null, 0: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, 9223372036854775807: null, type: VoicePanelCardItemType.PARTICIPANT };
-const set = new Set();
-let closure_19 = { text: true, ty: true };
-obj = {};
-const tmp3 = arg1(dependencyMap[7]);
-obj.match = new Set([]);
-const items = [{ text: "<string:1040334421>", ty: "<string:1040334338>" }];
+const VoicePanelCardItemType = VoicePanelModes.VoicePanelCardItemType;
+({ BASE_TARGET_CARD_SIZE: closure_10, VoicePanelCTACardDimensionKeys: closure_11, VoicePanelCTACardDimensions: closure_12, VOICE_PANEL_CHUNK_DIVISOR: closure_13 } = VoicePanelModes);
+({ EDGE_GUTTER: closure_14, CALL_TILE_GUTTER: closure_15 } = CARD_SIZE);
+let obj = { id: "invalid", type: VoicePanelCardItemType.PARTICIPANT, x: 0, y: 0, width: 0, height: 0, zIndex: 0 };
+let set = new Set();
+let closure_19 = { enlargeSquare: false, fillAspectRatio: false };
+obj = { match: new Set(["1,camera", "2,camera", "2,camera,camera"]) };
+let items = [{ enlargeSquare: true, fillAspectRatio: false }];
 obj.layouts = items;
 obj.global = true;
-const items1 = [obj, ];
+let items1 = [obj, ];
 obj = {};
-const set1 = new Set([]);
-obj.match = new Set([-229780751, 1065152063, 490364469, 1271345472, -532575945, 40976419, 822083584, 103079215]);
-const items2 = [{ text: null, ty: null }, { text: true, ty: true }, { text: true, ty: true }];
+let set1 = new Set(["1,camera", "2,camera", "2,camera,camera"]);
+obj.match = new Set(["1,stream", "2,stream", "3,stream", "2,stream,camera", "3,stream,camera", "3,stream,camera,camera", "3,camera", "3,camera,stream"]);
+let items2 = [{ enlargeSquare: true, fillAspectRatio: true }, { enlargeSquare: false, fillAspectRatio: false }, { enlargeSquare: false, fillAspectRatio: false }];
 obj.layouts = items2;
 items1[1] = obj;
-const set2 = new Set([-229780751, 1065152063, 490364469, 1271345472, -532575945, 40976419, 822083584, 103079215]);
-const tmp7 = () => {
+let set2 = new Set(["1,stream", "2,stream", "3,stream", "2,stream,camera", "3,stream,camera", "3,stream,camera,camera", "3,camera", "3,camera,stream"]);
+let result = set.fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCardLayoutManager.tsx");
+
+export default (() => {
   class VoicePanelCardLayoutManager {
     constructor(arg0) {
-      tmp = closure_3(this, VoicePanelCardLayoutManager);
+      tmp = outer1_3(this, VoicePanelCardLayoutManager);
       this.dirty = true;
       map = new Map();
       this.targetDimensions = map;
@@ -193,7 +203,7 @@ const tmp7 = () => {
       this.cardCoords = map1;
       map2 = new Map();
       this.chunkedCoords = map2;
-      this.contentDimensions = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
+      this.contentDimensions = { width: 0, height: 0 };
       set = new Set();
       this.layoutCallbacks = set;
       set1 = new Set();
@@ -203,13 +213,12 @@ const tmp7 = () => {
       this.mounted = false;
       this.layoutKey = 0;
       this.emitTimeout = -1;
-      this.props = {};
-      this.defaultTargetCoords = { "Null": "%FunctionPrototype%", "Null": "paddingStart" };
+      this.props = { windowWidth: 0, windowHeight: 0, chunkSize: 0, safeAreaLeft: 0, safeAreaRight: 0, safeAreaTop: 0, safeAreaBottom: 0, gutter: 0, controlBarSize: 0 };
+      this.defaultTargetCoords = { width: 0, height: 0 };
       this.channelId = arg0;
       return;
     }
   }
-  const arg1 = VoicePanelCardLayoutManager;
   let obj = {
     key: "setDirty",
     value(arg0) {
@@ -224,7 +233,7 @@ const tmp7 = () => {
       }
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "handleLayoutEffect",
     value() {
@@ -249,15 +258,16 @@ const tmp7 = () => {
       let safeAreaTop;
       const self = this;
       windowHeight = windowHeight.windowHeight;
-      const obj = { windowHeight, windowWidth: windowHeight.windowWidth, chunkSize: windowHeight / closure_13, safeAreaLeft: Math.max(windowHeight.safeAreaLeft, closure_14), safeAreaRight: Math.max(safeAreaRight, closure_14), safeAreaBottom: Math.max(safeAreaBottom, closure_14), safeAreaTop, gutter: closure_15, controlBarSize };
+      const obj = { windowHeight, windowWidth: windowHeight.windowWidth, chunkSize: windowHeight / outer1_13, safeAreaLeft: Math.max(windowHeight.safeAreaLeft, outer1_14), safeAreaRight: Math.max(safeAreaRight, outer1_14), safeAreaBottom: Math.max(safeAreaBottom, outer1_14), safeAreaTop, gutter: outer1_15, controlBarSize };
       ({ safeAreaRight, safeAreaTop, safeAreaBottom, controlBarSize } = windowHeight);
-      if (!callback(closure_2[11])(obj, this.props)) {
+      if (!outer1_1(outer1_2[11])(obj, this.props)) {
         self.props = obj;
         self.setDirty(true);
       }
-      self.setDirty(!function areArraysShallowEqual(arr, items) {
-        return arr.length === items.length && !arr.some((arg0, arg1) => arg1[arg1] !== arg0);
-      }(items, self.items));
+      self.setDirty(!(function areArraysShallowEqual(arr, items) {
+        let closure_0 = items;
+        return arr.length === items.length && !arr.some((arg0, arg1) => items[arg1] !== arg0);
+      })(items, self.items));
       self.items = items;
       return self.getContentDimensions();
     }
@@ -274,7 +284,7 @@ const tmp7 = () => {
       const chunkedCoords = this.chunkedCoords;
       let value = chunkedCoords.get(arg0);
       if (null == value) {
-        value = closure_18;
+        value = outer1_18;
       }
       return value;
     }
@@ -313,8 +323,8 @@ const tmp7 = () => {
       const self = this;
       if (null == arg0) {
         let defaultTargetCoords = self.defaultTargetCoords;
-      } else if (set.has(arg0)) {
-        defaultTargetCoords = closure_12[arg0];
+      } else if (outer1_11.has(arg0)) {
+        defaultTargetCoords = outer1_12[arg0];
       } else {
         const targetDimensions = self.targetDimensions;
         defaultTargetCoords = targetDimensions.get(arg0);
@@ -357,11 +367,11 @@ const tmp7 = () => {
     value(arg0, arg1) {
       const self = this;
       if ("portrait" === arg1) {
-        let size = { "Null": -2923740127827069600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Null": -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001257033793555892 };
+        let size = { width: 1, height: 2 };
       } else if ("landscape" === arg1) {
-        size = { "Null": "\u{1F4A0}", "Null": 6 };
+        size = { width: 2, height: 1 };
       } else if ("square" === arg1) {
-        size = { "Null": "<string:2491613185>", "Null": "<string:2941583362>" };
+        size = { width: 1, height: 1 };
       }
       const size2 = self.getTargetDimensions(arg0);
       if (!tmp) {
@@ -384,7 +394,7 @@ const tmp7 = () => {
       let safeAreaRight;
       let safeAreaTop;
       let self = this;
-      const VoicePanelCardLayoutManager = this;
+      self = this;
       self = this;
       if (this.dirty) {
         const _Map = Map;
@@ -397,9 +407,9 @@ const tmp7 = () => {
         const windowWidth = props.windowWidth;
         const windowHeight = props.windowHeight;
         ({ safeAreaLeft, safeAreaRight, safeAreaBottom, gutter } = props);
-        const _Set = Set;
+        let _Set = Set;
         ({ safeAreaTop, controlBarSize } = props);
-        const set = new Set();
+        let set = new Set();
         const _Set2 = Set;
         const set1 = new Set();
         const _Set3 = Set;
@@ -407,14 +417,14 @@ const tmp7 = () => {
         const _Set4 = Set;
         const set3 = new Set(self.items);
         const _HermesInternal = HermesInternal;
-        let closure_8 = "" + self.items.length;
+        let _isNativeReflectConstruct = "" + self.items.length;
         let bound2 = 0;
         function _loop(value) {
-          let participant = participant.getParticipant(self.channelId, value.id);
-          if (value.type === bound2.CTA) {
+          const participant = outer2_8.getParticipant(self.channelId, value.id);
+          if (value.type === outer2_9.CTA) {
             const targetDimensions = self.getTargetDimensions(value.id);
           } else if (null != participant) {
-            if (participant.type === constants.USER) {
+            if (participant.type === outer2_16.USER) {
               let defaultTargetCoords = self.defaultTargetCoords;
             } else {
               defaultTargetCoords = self.getTargetDimensions(value.id);
@@ -422,30 +432,30 @@ const tmp7 = () => {
           }
           if (null != targetDimensions) {
             if (null != participant) {
-              const obj = { type: "custom", item: value, forceSquare: participant.type === constants.USER };
+              const obj = { type: "custom", item: value, forceSquare: participant.type === outer2_16.USER };
               const type = participant.type;
-              if (constants.ACTIVITY === type) {
+              if (outer2_16.ACTIVITY === type) {
                 set.add(obj);
-              } else if (constants.STREAM === type) {
+              } else if (outer2_16.STREAM === type) {
                 set1.add(obj);
-              } else if (constants.USER === type) {
+              } else if (outer2_16.USER === type) {
                 set2.add(obj);
               }
               let str = "stream";
-              if (participant.type !== constants.STREAM) {
+              if (participant.type !== outer2_16.STREAM) {
                 let str2 = "activity";
-                if (participant.type === constants.USER) {
+                if (participant.type === outer2_16.USER) {
                   str2 = "camera";
                 }
                 str = str2;
               }
-              participant = `${participant},${str}`;
+              _isNativeReflectConstruct = `${_isNativeReflectConstruct},${str}`;
               set3.delete(value);
             }
           }
           return 1;
         }
-        const tmp27 = callback3(set3);
+        const tmp27 = outer1_21(set3);
         let iter = tmp27();
         if (!iter.done) {
           while (!_loop(iter.value)) {
@@ -458,14 +468,14 @@ const tmp7 = () => {
         }
         let found = null;
         if (0 === set.size) {
-          found = closure_20.find((arg0) => {
+          found = outer1_20.find((arg0) => {
             const match = arg0.match;
-            return match.has(closure_8);
+            return match.has(_isNativeReflectConstruct);
           });
         }
         const _Math = Math;
         let obj = { top: safeAreaTop, left: safeAreaLeft, right: safeAreaRight, bottom: safeAreaBottom };
-        const bound = Math.max(120, windowHeight - self(windowWidth[13])(obj, closure_14).height - closure_14 - controlBarSize - safeAreaBottom);
+        let bound = Math.max(120, windowHeight - outer1_1(outer1_2[13])(obj, outer1_14).height - outer1_14 - controlBarSize - safeAreaBottom);
         const _Math2 = Math;
         if (null == found) {
           if (set.size <= 0) {
@@ -473,7 +483,7 @@ const tmp7 = () => {
             if (self.items.length < 7) {
               if (0 !== self.items.length) {
                 obj = { cardCount: self.items.length, gutterSize: gutter, availableWidth: tmp35, availableHeight: bound };
-                const tmp38 = self(windowWidth[14])(obj);
+                const tmp38 = outer1_1(outer1_2[14])(obj);
                 const columns = tmp38.columns;
                 bound2 = columns;
                 let cardSize = tmp38.cardSize;
@@ -482,12 +492,12 @@ const tmp7 = () => {
               }
             }
             const _Math3 = Math;
-            const bound1 = Math.max((windowWidth - safeAreaLeft - safeAreaRight) / callback4(obj) | 0, 1);
+            let bound1 = Math.max((windowWidth - safeAreaLeft - safeAreaRight) / outer1_26(obj) | 0, 1);
             bound2 = bound1;
-            cardSize = set3.roundToNearestPixel((windowWidth - safeAreaLeft - safeAreaRight - closure_15 * (bound1 - 1)) / bound1);
+            cardSize = outer1_7.roundToNearestPixel((windowWidth - safeAreaLeft - safeAreaRight - outer1_15 * (bound1 - 1)) / bound1);
             tmp39 = bound1;
             tmp40 = bound1;
-            const tmp82 = callback4(obj);
+            const tmp82 = outer1_26(obj);
           }
           let _global;
           if (null != found) {
@@ -502,7 +512,7 @@ const tmp7 = () => {
           if (self.items.length % tmp40 == 0) {
             num9 = 0;
           }
-          const sum = rounded + num9;
+          let sum = rounded + num9;
           const obj1 = {};
           let diff = cardSize;
           if (null == found) {
@@ -532,17 +542,17 @@ const tmp7 = () => {
             }
           }
           obj1.height = tmp51;
-          if (!self(windowWidth[11])(obj1, self.defaultTargetCoords)) {
+          if (!outer1_1(outer1_2[11])(obj1, self.defaultTargetCoords)) {
             self.defaultTargetCoords = obj1;
           }
           const obj2 = { cardWidth: self.defaultTargetCoords.width, cardHeight: self.defaultTargetCoords.height, gutter, totalItems: self.items.length, windowWidth };
           const _Array = Array;
           const array = new Array(tmp40);
-          const items = [array.fill(0)];
-          closure_14 = -1;
-          closure_15 = -1;
+          let items = [array.fill(0)];
+          let c14 = -1;
+          let c15 = -1;
           let closure_16 = -1;
-          let closure_17 = 0;
+          let c17 = 0;
           const items1 = [];
           function placeItem(id, type, width, height) {
             let columns;
@@ -551,7 +561,7 @@ const tmp7 = () => {
             let size;
             let startCol;
             let startRow;
-            let obj = { grid: items, lastFullyFilledRow: closure_14, width, height, columns: bound2 };
+            let obj = { grid: items, lastFullyFilledRow: c14, width, height, columns: bound2 };
             ({ grid, height, columns } = obj);
             const bound = Math.min(obj.width, columns);
             if (1 === columns) {
@@ -561,8 +571,8 @@ const tmp7 = () => {
             let num = -1;
             let num2 = -1;
             while (true) {
-              let tmp6 = callback;
-              let arr = callback(sum, columns, grid);
+              let tmp6 = outer2_23;
+              let arr = outer2_23(sum, columns, grid);
               let tmp7 = sum;
               let num3 = 0;
               let tmp8 = num;
@@ -596,8 +606,8 @@ const tmp7 = () => {
                   let tmp17 = tmp8;
                   if (tmp8 <= tmp8 + (height - 1)) {
                     while (true) {
-                      let tmp18 = callback;
-                      let tmp19 = callback(sum2, columns, grid);
+                      let tmp18 = outer2_23;
+                      let tmp19 = outer2_23(sum2, columns, grid);
                       let tmp20 = sum2;
                       let sum1 = tmp13;
                       let num4 = tmp12;
@@ -681,7 +691,7 @@ const tmp7 = () => {
               tmp10 = tmp4;
               tmp11 = tmp5;
             }
-            let tmp29 = closure_14;
+            let tmp29 = c14;
             ({ startRow, startCol, width, height: height2 } = size);
             let sum5 = startRow;
             if (startRow < startRow + height2) {
@@ -691,7 +701,7 @@ const tmp7 = () => {
                   do {
                     tmp45[sum5][sum3] = 1;
                     sum3 = sum3 + 1;
-                    let sum4 = startCol + width;
+                    sum4 = startCol + width;
                   } while (sum3 < sum4);
                 }
                 sum5 = sum5 + 1;
@@ -704,20 +714,20 @@ const tmp7 = () => {
               } else {
                 tmp29 = sum6;
                 sum6 = sum6 + 1;
-                // continue
+                continue;
               }
             }
-            closure_14 = tmp29;
+            c14 = tmp29;
             closure_16 = Math.min(Math.max(closure_16, size.startCol + (size.width - 1)), bound2);
-            obj = { id, type, x: size.startCol * (obj2.gutter + obj2.cardWidth), y: size.startRow * (obj2.gutter + obj2.cardHeight), width: obj2.cardWidth * size.width + (size.width - 1) * obj2.gutter, height: obj2.cardHeight * size.height + (size.height - 1) * obj2.gutter, zIndex: obj2.totalItems - closure_17 };
+            obj = { id, type, x: size.startCol * (obj2.gutter + obj2.cardWidth), y: size.startRow * (obj2.gutter + obj2.cardHeight), width: obj2.cardWidth * size.width + (size.width - 1) * obj2.gutter, height: obj2.cardHeight * size.height + (size.height - 1) * obj2.gutter, zIndex: obj2.totalItems - c17 };
             const y = obj.y;
             const chunkSize = self.props.chunkSize;
-            const items = [y / chunkSize | 0, (y + obj.height) / chunkSize | 0];
+            items = [y / chunkSize | 0, (y + obj.height) / chunkSize | 0];
             let first = items[0];
             if (first <= items[1]) {
               do {
-                let tmp31 = closure_0;
-                let chunkedCoords = closure_0.chunkedCoords;
+                let tmp31 = self;
+                let chunkedCoords = self.chunkedCoords;
                 let value = chunkedCoords.get(first);
                 let tmp32 = first;
                 if (null == value) {
@@ -726,8 +736,8 @@ const tmp7 = () => {
                   let tmp34 = new.target;
                   let set = new Set();
                   let tmp36 = set;
-                  let tmp37 = closure_0;
-                  let chunkedCoords2 = closure_0.chunkedCoords;
+                  let tmp37 = self;
+                  let chunkedCoords2 = self.chunkedCoords;
                   let result = chunkedCoords2.set(first, set);
                   value = set;
                 }
@@ -737,21 +747,20 @@ const tmp7 = () => {
             }
             const cardCoords = self.cardCoords;
             const result1 = cardCoords.set(id, obj);
-            const bound1 = Math.max(closure_15, size.startRow + size.height - 1);
-            closure_15 = bound1;
-            if (bound1 !== closure_14) {
+            bound1 = Math.max(bound1, size.startRow + size.height - 1);
+            if (bound1 !== c14) {
               if (1 === size.height) {
-                if (size.startRow === closure_15) {
+                if (size.startRow === bound1) {
                   arr = items1.push(id);
                 }
               }
             }
             items1.length = 0;
           }
-          closure_20 = 1 === self.items.length;
+          let closure_20 = 1 === self.items.length;
           const items2 = [set, set1, set2, set3];
           for (let num12 = 0; num12 < items2.length; num12 = num12 + 1) {
-            let tmp58 = callback3;
+            let tmp58 = outer1_21;
             function _loop2(type) {
               let dimensions;
               let item;
@@ -762,37 +771,37 @@ const tmp7 = () => {
                   tmp13 = found.layouts[closure_17];
                 }
                 if (null == tmp13) {
-                  tmp13 = placeItem;
+                  tmp13 = outer2_19;
                 }
                 let str2 = "square";
                 if (!type.forceSquare) {
-                  str2 = callback2(self.getTargetDimensions(type.item.id));
+                  str2 = outer2_24(self.getTargetDimensions(type.item.id));
                 }
-                let obj = { item: type.item, dimensions: callback3(str2, windowWidth > windowHeight, tmp13, closure_20) };
+                let obj = { item: type.item, dimensions: outer2_25(str2, windowWidth > windowHeight, tmp13, closure_20) };
               } else {
                 obj = { item: type };
-                const tmp6 = null != closure_10 ? closure_10 : placeItem;
-                obj.dimensions = callback3("square", windowWidth > windowHeight, tmp6, closure_20);
+                const tmp6 = null != closure_10 ? closure_10 : outer2_19;
+                obj.dimensions = outer2_25("square", windowWidth > windowHeight, tmp6, closure_20);
               }
               ({ item, dimensions } = obj);
               placeItem(item.id, item.type, dimensions.width, dimensions.height);
               closure_17 = closure_17 + 1;
             }
-            let tmp59 = callback3(items2[num12]);
+            let tmp59 = outer1_21(items2[num12]);
             let iter3 = tmp59();
             if (!iter3.done) {
               do {
                 let _loop2Result = _loop2(iter3.value);
                 let iter4 = tmp59();
                 iter3 = iter4;
-                let done = iter4.done;
+                done = iter4.done;
               } while (!done);
             }
           }
-          if (closure_14 !== closure_15) {
-            if (-1 !== closure_14) {
+          if (c14 !== c15) {
+            if (-1 !== c14) {
               let flag2 = 0 === tmp85[0];
-              const tmp87 = callback3(items[closure_15]);
+              const tmp87 = outer1_21(items[c15]);
               const iter9 = tmp87();
               let iter6 = iter9;
               let flag3 = false;
@@ -827,7 +836,7 @@ const tmp7 = () => {
               }
               if (!tmp67) {
                 const diff1 = tmp40 - num14;
-                const tmp72 = callback3(items1);
+                const tmp72 = outer1_21(items1);
                 let iter7 = tmp72();
                 if (!iter7.done) {
                   do {
@@ -840,7 +849,7 @@ const tmp7 = () => {
                     iter7 = iter8;
                   } while (!iter8.done);
                 }
-                const roundToNearestPixelResult = set3.roundToNearestPixel((diff1 * self.defaultTargetCoords.width + diff1 * gutter) / 2);
+                roundToNearestPixelResult = outer1_7.roundToNearestPixel((diff1 * self.defaultTargetCoords.width + diff1 * gutter) / 2);
               }
             }
           }
@@ -871,7 +880,7 @@ const tmp7 = () => {
                 }
               }
             }
-            const sum3 = tmp79 + 1;
+            let sum3 = tmp79 + 1;
             num16 = sum3 * self.defaultTargetCoords.height + gutter * (sum3 - 1);
           }
           obj3.height = num16;
@@ -882,8 +891,8 @@ const tmp7 = () => {
         const obj4 = { windowWidth, windowHeight, safeAreaLeft, safeAreaRight };
         const _Math4 = Math;
         const _Math5 = Math;
-        bound2 = Math.max(Math.min((windowWidth - safeAreaLeft - safeAreaRight) / callback4(obj4) | 0, 4), 1);
-        cardSize = set3.roundToNearestPixel((windowWidth - safeAreaLeft - safeAreaRight - gutter * (bound2 - 1)) / bound2);
+        bound2 = Math.max(Math.min((windowWidth - safeAreaLeft - safeAreaRight) / outer1_26(obj4) | 0, 4), 1);
+        cardSize = outer1_7.roundToNearestPixel((windowWidth - safeAreaLeft - safeAreaRight - gutter * (bound2 - 1)) / bound2);
         tmp39 = bound2;
         tmp40 = bound2;
       }
@@ -892,36 +901,38 @@ const tmp7 = () => {
   items[15] = {
     key: "subscribeFromItem",
     value: function subscribeFromItem(updateSharedValues) {
-      const VoicePanelCardLayoutManager = this;
+      const self = this;
+      let closure_1 = updateSharedValues;
       this.layoutCallbacks.add(updateSharedValues);
       return () => {
-        self.layoutCallbacks.delete(arg0);
+        self.layoutCallbacks.delete(closure_1);
       };
     }
   };
   items[16] = {
     key: "subscribeToManager",
     value: function subscribeToManager(arg0) {
-      const VoicePanelCardLayoutManager = this;
-      const managerSubscriptions = this.managerSubscriptions;
+      const self = this;
+      let closure_1 = arg0;
+      let managerSubscriptions = this.managerSubscriptions;
       managerSubscriptions.add(arg0);
       return () => {
         const managerSubscriptions = self.managerSubscriptions;
-        managerSubscriptions.delete(arg0);
+        managerSubscriptions.delete(closure_1);
       };
     }
   };
   items[17] = {
     key: "emitLayoutChanges",
     value: function emitLayoutChanges() {
-      const self = this;
-      const VoicePanelCardLayoutManager = this;
+      let self = this;
+      self = this;
       if (tmp) {
         self.emitItemChanges = false;
-        VoicePanelCardLayoutManager(closure_2[15]).batchUpdates(() => {
+        VoicePanelCardLayoutManager(outer1_2[15]).batchUpdates(() => {
           let done;
           let done2;
-          const tmp = callback(self.managerSubscriptions);
+          const tmp = outer2_21(self.managerSubscriptions);
           let iter = tmp();
           if (!iter.done) {
             do {
@@ -931,7 +942,7 @@ const tmp7 = () => {
               done = iter2.done;
             } while (!done);
           }
-          const tmp3 = callback(self.layoutCallbacks);
+          const tmp3 = outer2_21(self.layoutCallbacks);
           let iter3 = tmp3();
           if (!iter3.done) {
             do {
@@ -942,15 +953,15 @@ const tmp7 = () => {
             } while (!done2);
           }
         });
-        const obj = VoicePanelCardLayoutManager(closure_2[15]);
+        const obj = VoicePanelCardLayoutManager(outer1_2[15]);
       }
     }
   };
   items[18] = {
     key: "deferredLayoutChange",
     value: function deferredLayoutChange() {
-      const self = this;
-      const VoicePanelCardLayoutManager = this;
+      let self = this;
+      self = this;
       if (tmp) {
         const _setTimeout = setTimeout;
         self.emitTimeout = setTimeout(() => {
@@ -975,58 +986,54 @@ const tmp7 = () => {
     }
   };
   return callback(VoicePanelCardLayoutManager, items);
-}();
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCardLayoutManager.tsx");
-
-export default tmp7;
+})();
 export const useCardLayoutCoordsSubscription = function useCardLayoutCoordsSubscription(id, layoutManager) {
-  layoutManager = id;
-  const importDefault = layoutManager;
-  let obj = layoutManager(dependencyMap[9]);
+  const _require = id;
+  let closure_1 = layoutManager;
+  let obj = _require(sharedValue[9]);
   obj = {};
   let cardCoords = layoutManager.getCardCoords(id);
   if (null == cardCoords) {
     cardCoords = obj;
   }
   const merged = Object.assign(cardCoords);
-  const sharedValue = obj.useSharedValue(obj);
-  const dependencyMap = sharedValue;
+  sharedValue = obj.useSharedValue(obj);
   const items = [id, layoutManager, sharedValue];
   const layoutEffect = React.useLayoutEffect(() => {
     function updateSharedValues() {
-      const cardCoords = cardCoords.getCardCoords(closure_0);
+      const cardCoords = outer1_1.getCardCoords(outer1_0);
       if (null != cardCoords) {
-        cardCoords(closure_2[10])(closure_2, cardCoords);
+        callback(sharedValue[10])(outer1_2, cardCoords);
       }
     }
     updateSharedValues();
-    return arg1.subscribeFromItem(updateSharedValues);
+    return layoutManager.subscribeFromItem(updateSharedValues);
   }, items);
   return sharedValue;
 };
 export const useTargetDimensionsSubscription = function useTargetDimensionsSubscription(participantId, layoutManager) {
-  layoutManager = participantId;
-  const importDefault = layoutManager;
-  let obj = layoutManager(dependencyMap[9]);
+  const _require = participantId;
+  let closure_1 = layoutManager;
+  let obj = _require(sharedValue[9]);
   obj = {};
   const merged = Object.assign(layoutManager.getTargetDimensions(participantId));
-  const sharedValue = obj.useSharedValue(obj);
-  const dependencyMap = sharedValue;
+  sharedValue = obj.useSharedValue(obj);
   const items = [participantId, layoutManager, sharedValue];
   const layoutEffect = React.useLayoutEffect(() => {
     function updateSharedValues() {
-      const targetDimensions = targetDimensions.getTargetDimensions(closure_0);
-      targetDimensions(closure_2[10])(closure_2, targetDimensions);
+      const targetDimensions = outer1_1.getTargetDimensions(outer1_0);
+      callback(sharedValue[10])(outer1_2, targetDimensions);
     }
     updateSharedValues();
-    return arg1.subscribeFromItem(updateSharedValues);
+    return layoutManager.subscribeFromItem(updateSharedValues);
   }, items);
   return sharedValue;
 };
 export const useManagerSubscription = function useManagerSubscription(layoutManager) {
+  let importDefault;
   let tmp2;
-  const arg1 = layoutManager;
-  [tmp2, closure_1] = callback2(React.useState(layoutManager.getLayoutKey()), 2);
-  const layoutEffect = React.useLayoutEffect(() => arg0.subscribeToManager(() => callback(layoutKey.getLayoutKey())));
+  let closure_0 = layoutManager;
+  [tmp2, importDefault] = callback2(React.useState(layoutManager.getLayoutKey()), 2);
+  const layoutEffect = React.useLayoutEffect(() => layoutManager.subscribeToManager(() => outer1_1(outer1_0.getLayoutKey())));
   return tmp2;
 };

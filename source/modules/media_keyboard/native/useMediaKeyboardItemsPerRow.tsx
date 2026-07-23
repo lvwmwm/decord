@@ -1,23 +1,25 @@
-// Module ID: 9659
-// Function ID: 75250
+// Module ID: 9666
+// Function ID: 75291
 // Name: useMediaKeyboardItemsPerRow
-// Dependencies: []
+// Dependencies: [31, 3985, 2]
 // Exports: useMediaKeyboardItemsPerRow
 
-// Module 9659 (useMediaKeyboardItemsPerRow)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/media_keyboard/native/useMediaKeyboardItemsPerRow.tsx");
+// Module 9666 (useMediaKeyboardItemsPerRow)
+import result from "result";
+
+const require = arg1;
+let result = require("set").fileFinishedImporting("modules/media_keyboard/native/useMediaKeyboardItemsPerRow.tsx");
 
 export const useMediaKeyboardItemsPerRow = function useMediaKeyboardItemsPerRow() {
-  const tmp = importDefault(dependencyMap[1])();
+  const tmp = ref(3985)();
   let num = 8;
-  if (arg1(dependencyMap[1]).WindowSizeClassifier.XLARGE !== tmp) {
+  if (num(3985).WindowSizeClassifier.XLARGE !== tmp) {
     num = 6;
-    if (arg1(dependencyMap[1]).WindowSizeClassifier.LARGE !== tmp) {
+    if (num(3985).WindowSizeClassifier.LARGE !== tmp) {
       num = 4;
-      if (arg1(dependencyMap[1]).WindowSizeClassifier.NORMAL !== tmp) {
+      if (num(3985).WindowSizeClassifier.NORMAL !== tmp) {
         num = 3;
-        if (arg1(dependencyMap[1]).WindowSizeClassifier.SMALL !== tmp) {
+        if (num(3985).WindowSizeClassifier.SMALL !== tmp) {
           const _Error = Error;
           const _HermesInternal = HermesInternal;
           const error = new Error("Unknown window size classifier: " + tmp);
@@ -26,10 +28,8 @@ export const useMediaKeyboardItemsPerRow = function useMediaKeyboardItemsPerRow(
       }
     }
   }
-  const arg1 = num;
   const result = 17 * num;
-  const ref = React.useRef(result);
-  const importDefault = ref;
+  ref = React.useRef(result);
   const items = [num];
   const effect = React.useEffect(() => {
     ref.current = 17 * num;

@@ -1,12 +1,13 @@
-// Module ID: 12491
-// Function ID: 95415
+// Module ID: 12605
+// Function ID: 97571
 // Name: StateManager
-// Dependencies: []
+// Dependencies: [6, 7, 636, 2]
 
-// Module 12491 (StateManager)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 12605 (StateManager)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const tmp2 = (() => {
   class StateManager {
     constructor() {
       flag = arg0;
@@ -14,14 +15,13 @@ const tmp2 = () => {
       if (arg0 === undefined) {
         flag = true;
       }
-      tmp = closure_2(self, StateManager);
+      tmp = outer1_2(self, StateManager);
       self.alwaysUpdateState = flag;
       self.dirty = false;
       self.state = self.getInitialState();
       return;
     }
   }
-  const importDefault = StateManager;
   let obj = {
     key: "shouldCommit",
     value() {
@@ -69,24 +69,20 @@ const tmp2 = () => {
       const merged1 = Object.assign(obj);
       const nextState = self.getNextState(obj);
       if (flag) {
-        self.dirty = !StateManager(closure_1[2])(nextState, self.getInitialState());
-        const tmp10 = StateManager(closure_1[2]);
+        self.dirty = !StateManager(outer1_1[2])(nextState, self.getInitialState());
+        const tmp10 = StateManager(outer1_1[2]);
       } else {
         const _Object = Object;
         const keys = Object.keys(nextState);
-        let num = 0;
-        if (0 < keys.length) {
-          do {
-            let tmp5 = keys[num];
-            let dirty = self.dirty;
-            if (!dirty) {
-              let tmp6 = closure_0;
-              let tmp7 = closure_1;
-              dirty = !closure_0(closure_1[2])(self.state[tmp5], nextState[tmp5]);
-            }
-            self.dirty = dirty;
-            num = num + 1;
-          } while (num < keys.length);
+        for (let num = 0; num < keys.length; num = num + 1) {
+          let tmp5 = keys[num];
+          let dirty = self.dirty;
+          if (!dirty) {
+            let tmp6 = StateManager;
+            let tmp7 = outer1_1;
+            dirty = !StateManager(outer1_1[2])(self.state[tmp5], nextState[tmp5]);
+          }
+          self.dirty = dirty;
         }
       }
       const tmp11 = self.dirty && self.shouldCommit();
@@ -114,7 +110,7 @@ const tmp2 = () => {
     }
   };
   return callback(StateManager, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/StateManager.tsx");
+})();
+const result = require("isUndefinedOrNull").fileFinishedImporting("lib/StateManager.tsx");
 
 export default tmp2;

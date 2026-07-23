@@ -1,30 +1,34 @@
-// Module ID: 14399
-// Function ID: 108630
+// Module ID: 14513
+// Function ID: 110783
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [31, 27, 1849, 33, 4126, 8890, 5162, 1212, 4656, 5116]
+// Dependencies: [31, 27, 33, 4130, 1456, 12384, 9122, 9126, 1212, 2]
 // Exports: default
 
-// Module 14399 (CollectiblesShopViewAllCategoryItemsHeader)
-import "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_33 from "module_33";
-import XSmallIcon from "XSmallIcon";
+// Module 14513 (CollectiblesShopViewAllCategoryItemsHeader)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 ({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = _isNativeReflectConstruct);
-let closure_7 = module_33.createStyles({ headerContainer: {}, backButton: { flex: 1 }, logo: { backgroundColor: null, borderWidth: null }, dummyRightButton: { flex: 1 } });
-const result = XSmallIcon.fileFinishedImporting("modules/collectibles/native/CollectiblesShopViewAllCategoryItemsHeader.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ headerContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: 12, paddingLeft: 8 }, backButton: { flex: 1 }, logo: { flex: 2, height: 36 }, dummyRightButton: { flex: 1 } });
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesShopViewAllCategoryItemsHeader.tsx");
 
 export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
   let buttonColor;
   let categoryName;
   let logoUrl;
   ({ logoUrl, buttonColor, categoryName } = arg0);
-  let obj = callback(dependencyMap[4]);
-  const callback = obj.useStackNavigation();
-  const tmp = callback4();
-  let obj1 = callback(dependencyMap[5]);
+  let obj = _require(1456);
+  _require = obj.useStackNavigation();
+  const tmp = callback3();
+  let obj1 = _require(12384);
   obj = {};
   obj = {};
   const youBarSettingsCustomHeaderPaddingTop = obj1.useYouBarSettingsCustomHeaderPaddingTop();
@@ -32,20 +36,20 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
   obj["paddingTop"] = youBarSettingsCustomHeaderPaddingTop;
   obj.style = obj;
   obj1 = { style: tmp.backButton };
-  const obj2 = { source: importDefault(dependencyMap[7]), color: buttonColor };
-  const intl = callback(dependencyMap[8]).intl;
-  obj2.accessibilityLabel = intl.string(callback(dependencyMap[8]).t.13/7kX);
+  const obj2 = { source: importDefault(9126), color: buttonColor };
+  const intl = _require(1212).intl;
+  obj2.accessibilityLabel = intl.string(_require(1212).t["13/7kX"]);
   obj2.onPress = function onPress() {
     navigation.goBack();
   };
-  obj1.children = callback2(callback(dependencyMap[6]).HeaderIconButton, obj2);
-  const items = [callback2(closure_4, obj1), , ];
+  obj1.children = callback(_require(9122).HeaderIconButton, obj2);
+  const items = [callback(closure_4, obj1), , ];
   const obj3 = { resizeMode: "contain", style: tmp.logo, source: { uri: logoUrl } };
-  const intl2 = callback(dependencyMap[8]).intl;
-  obj3.accessibilityLabel = intl2.formatToPlainString(callback(dependencyMap[8]).t.FNtLb3, { category: categoryName });
+  const intl2 = _require(1212).intl;
+  obj3.accessibilityLabel = intl2.formatToPlainString(_require(1212).t.FNtLb3, { category: categoryName });
   obj3.accessibilityRole = "header";
-  items[1] = callback2(closure_3, obj3);
-  items[2] = callback2(closure_4, { style: tmp.dummyRightButton });
+  items[1] = callback(closure_3, obj3);
+  items[2] = callback(closure_4, { style: tmp.dummyRightButton });
   obj.children = items;
-  return callback3(closure_4, obj);
+  return callback2(closure_4, obj);
 };

@@ -1,9 +1,20 @@
-// Module ID: 13213
-// Function ID: 100118
+// Module ID: 13327
+// Function ID: 102274
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4112, 3, 686, 12913, 566, 2]
 
-// Module 13213 (_isNativeReflectConstruct)
+// Module 13327 (_isNativeReflectConstruct)
+import timestamp from "timestamp";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import currentUpdateConfig from "currentUpdateConfig";
+import importDefaultResult from "_getPrototypeOf";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,72 +24,65 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ UPDATE_CONFIG: closure_8, UPDATE_CHECK_INTERVAL: closure_9 } = arg1(dependencyMap[5]));
-let importDefaultResult = importDefault(dependencyMap[6]);
+({ UPDATE_CONFIG: closure_8, UPDATE_CHECK_INTERVAL: closure_9 } = currentUpdateConfig);
 importDefaultResult = new importDefaultResult("MobileNativeUpdateStore");
-let closure_11 = { label: null, onPress: null, disabled: null };
-let closure_12 = null;
-let tmp5 = (Store) => {
+let closure_11 = { lastCheck: null, checking: false, newBuild: null };
+let c12 = null;
+let tmp5 = ((Store) => {
   class MobileNativeUpdateStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, MobileNativeUpdateStore);
+      tmp = outer1_3(this, MobileNativeUpdateStore);
       items1 = [...items];
-      obj = closure_6(MobileNativeUpdateStore);
-      tmp2 = closure_5;
-      if (closure_13()) {
+      obj = outer1_6(MobileNativeUpdateStore);
+      tmp2 = outer1_5;
+      if (outer1_13()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.hasUpdatesConfigured = null !== closure_8;
+      tmp2Result.hasUpdatesConfigured = null !== outer1_8;
       return tmp2Result;
     }
   }
-  const arg1 = MobileNativeUpdateStore;
   callback2(MobileNativeUpdateStore, Store);
   let obj = {
     key: "checkForNewerBuild",
     value() {
-      if (true !== checking.checking) {
-        let obj = callback(closure_2[7]);
+      if (true !== outer1_11.checking) {
+        let obj = outer1_1(outer1_2[7]);
         obj = { type: "MOBILE_NATIVE_UPDATE_CHECK_STARTED" };
         obj.dispatch(obj);
-        const obj3 = MobileNativeUpdateStore(closure_2[8]);
-        MobileNativeUpdateStore(closure_2[8]).checkForNewerBuild().then((newBuild) => {
-          let obj = callback(closure_2[7]);
+        const obj3 = MobileNativeUpdateStore(outer1_2[8]);
+        MobileNativeUpdateStore(outer1_2[8]).checkForNewerBuild().then((newBuild) => {
+          let obj = outer2_1(outer2_2[7]);
           obj = { type: "MOBILE_NATIVE_UPDATE_CHECK_FINISHED", newBuild };
           obj.dispatch(obj);
         }, () => {
-          callback(closure_2[7]).dispatch({ type: "MOBILE_NATIVE_UPDATE_CHECK_FAILED" });
+          outer2_1(outer2_2[7]).dispatch({ type: "MOBILE_NATIVE_UPDATE_CHECK_FAILED" });
         });
-        const checkForNewerBuildResult = MobileNativeUpdateStore(closure_2[8]).checkForNewerBuild();
+        const checkForNewerBuildResult = MobileNativeUpdateStore(outer1_2[8]).checkForNewerBuild();
       }
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "ensureInitialized",
     value() {
-      const MobileNativeUpdateStore = this;
+      const self = this;
       if (this.hasUpdatesConfigured) {
-        if (null === interval) {
+        if (null === outer1_12) {
           function backgroundUpdateCheck() {
-            closure_10.info("Checking for new native builds in the background");
+            outer2_10.info("Checking for new native builds in the background");
             self.checkForNewerBuild();
           }
           const _setInterval = setInterval;
-          const interval = setInterval(backgroundUpdateCheck, closure_9.asMilliseconds());
+          outer1_12 = setInterval(backgroundUpdateCheck, outer1_9.asMilliseconds());
           const _setTimeout = setTimeout;
           const timerId = setTimeout(backgroundUpdateCheck, 1000);
         }
@@ -90,50 +94,28 @@ let tmp5 = (Store) => {
     key: "latestFetchedBuild",
     value() {
       this.ensureInitialized();
-      return closure_11;
+      return outer1_11;
     }
   };
   items[2] = obj;
   return callback(MobileNativeUpdateStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "MobileNativeUpdateStore";
-tmp5 = new tmp5(importDefault(dependencyMap[7]), {
+tmp5 = new tmp5(require("dispatcher"), {
   MOBILE_NATIVE_UPDATE_CHECK_STARTED: function handleCheckStarted() {
     const obj = {};
-    const merged = Object.assign(closure_11);
+    const merged = Object.assign(obj);
     obj["checking"] = true;
-    closure_11 = obj;
   },
   MOBILE_NATIVE_UPDATE_CHECK_FAILED: function handleCheckFailed() {
     const obj = {};
-    const merged = Object.assign(closure_11);
+    const merged = Object.assign(obj);
     obj["checking"] = false;
-    closure_11 = obj;
   },
   MOBILE_NATIVE_UPDATE_CHECK_FINISHED: function handleCheckFinished(newBuild) {
     const obj = { lastCheck: new Date(), checking: false, newBuild: newBuild.newBuild };
-    let closure_11 = obj;
   }
 });
-const obj = {
-  MOBILE_NATIVE_UPDATE_CHECK_STARTED: function handleCheckStarted() {
-    const obj = {};
-    const merged = Object.assign(closure_11);
-    obj["checking"] = true;
-    closure_11 = obj;
-  },
-  MOBILE_NATIVE_UPDATE_CHECK_FAILED: function handleCheckFailed() {
-    const obj = {};
-    const merged = Object.assign(closure_11);
-    obj["checking"] = false;
-    closure_11 = obj;
-  },
-  MOBILE_NATIVE_UPDATE_CHECK_FINISHED: function handleCheckFinished(newBuild) {
-    const obj = { lastCheck: new Date(), checking: false, newBuild: newBuild.newBuild };
-    let closure_11 = obj;
-  }
-};
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateStore.tsx");
 
 export default tmp5;

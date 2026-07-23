@@ -1,62 +1,64 @@
-// Module ID: 7084
-// Function ID: 56749
+// Module ID: 7089
+// Function ID: 56783
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 7091, 7092, 1907, 3765, 1849, 5040, 4971, 22, 5043, 7093, 1331, 5044]
+// Dependencies: [5, 7090, 1348, 3758, 1849, 7107, 653, 4140, 7094, 7105, 1212, 1327, 22, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getOrResolveChannelIdFromDestinationId
 
-// Module 7084 (_createForOfIteratorHelperLoose)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
+// Module 7089 (_createForOfIteratorHelperLoose)
+import ALLOWED_TYPES from "ALLOWED_TYPES";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
 import closure_5 from "_isNativeReflectConstruct";
 import closure_6 from "_isNativeReflectConstruct";
 import closure_7 from "_isNativeReflectConstruct";
-import { isAllowedType } from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import requestMembersDebounced from "requestMembersDebounced";
+import { isAllowedType } from "ALLOWED_TYPES";
+import ME from "ME";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_10;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -67,16 +69,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -105,37 +107,37 @@ function getChannelIdFromDestinationId(type) {
     return tmp4;
   }
 }
-async function _getOrResolveChannelIdFromDestinationId(id, arg1) {
-  const tmp2 = callback2(id);
+async function _getOrResolveChannelIdFromDestinationId(arg0, arg1) {
+  const tmp2 = outer2_13(arg0);
   if (null != tmp2) {
     return tmp2;
   } else if ("user" === tmp.type) {
-    return yield callback(closure_2[7]).getOrEnsurePrivateChannel(id.id);
+    return yield outer2_1(outer2_2[7]).getOrEnsurePrivateChannel(arg0.id);
   }
-  const tmp = id;
+  tmp = arg0;
 }
 function createAutocompleterResultForDestination(targetDestination) {
   if ("user" === targetDestination.type) {
-    const user = user.getUser(targetDestination.id);
+    user = user.getUser(targetDestination.id);
     let tmp5 = null;
     if (null != user) {
-      const obj = { type: arg1(dependencyMap[8]).AutocompleterResultTypes.USER, record: user, score: 0 };
+      const obj = { type: require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER, record: user, score: 0 };
       tmp5 = obj;
     }
     return tmp5;
   } else {
-    return importDefault(dependencyMap[9])(targetDestination.id);
+    return importDefault(7105)(targetDestination.id);
   }
 }
 function canShareToChannel(type) {
   let tmp = arg1;
-  if (type.type === arg1(dependencyMap[8]).AutocompleterResultTypes.USER) {
+  if (type.type === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER) {
     if (!tmp) {
       tmp = null != authStore.getDMChannelFromUserId(type.record.id);
     }
     let tmp10 = tmp;
   } else {
-    tmp10 = type.type === arg1(dependencyMap[8]).AutocompleterResultTypes.GROUP_DM;
+    tmp10 = type.type === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.GROUP_DM;
     if (!tmp10) {
       let tmp3 = type.record.type !== constants2.GUILD_FORUM;
       if (tmp3) {
@@ -179,11 +181,11 @@ function mergeAndDedupeResultsWithHeaders(tmp4Result, items1) {
       let tmp7 = tmp5;
       let tmp8 = tmp6;
       if (null != value) {
-        let tmp9 = closure_0;
-        let tmp10 = closure_2;
+        let tmp9 = require;
+        let tmp10 = dependencyMap;
         tmp7 = value;
         tmp8 = tmp6;
-        if (value.type !== closure_0(closure_2[8]).AutocompleterResultTypes.HEADER) {
+        if (value.type !== require(7094) /* sortByMatchScore */.AutocompleterResultTypes.HEADER) {
           let id = value.record.id;
           tmp7 = tmp5;
           tmp8 = id;
@@ -200,8 +202,8 @@ function mergeAndDedupeResultsWithHeaders(tmp4Result, items1) {
         }
       }
       iter5 = tmp4();
-      let tmp5 = tmp7;
-      let tmp6 = tmp8;
+      tmp5 = tmp7;
+      tmp6 = tmp8;
       iter4 = iter5;
     } while (!iter5.done);
   }
@@ -211,12 +213,12 @@ function getLastChannelResult(selectedChannelId) {
   if (null == selectedChannelId) {
     return null;
   } else {
-    const tmp11 = importDefault(dependencyMap[9])(selectedChannelId);
+    const tmp11 = importDefault(7105)(selectedChannelId);
     let tmp8 = null;
     if (null != tmp11) {
       let tmp2 = null;
       if (isAllowedType(tmp11)) {
-        let canResult = tmp11.type === arg1(dependencyMap[8]).AutocompleterResultTypes.USER;
+        let canResult = tmp11.type === require(7094) /* sortByMatchScore */.AutocompleterResultTypes.USER;
         if (!canResult) {
           canResult = closure_6.can(constants.VIEW_CHANNEL, tmp11.record);
         }
@@ -232,18 +234,19 @@ function getLastChannelResult(selectedChannelId) {
 }
 function filterResults(arr, includeMissingDMs, channelFilter) {
   let tmp = channelFilter;
+  let closure_0 = includeMissingDMs;
   if (channelFilter === undefined) {
     tmp = canShareToChannel;
   }
   const importDefault = tmp;
   return arr.filter((type) => {
-    let isNotNullishResult = arg1(closure_2[11]).isNotNullish(type);
+    let isNotNullishResult = includeMissingDMs(outer1_2[11]).isNotNullish(type);
     if (isNotNullishResult) {
-      let tmp4 = type.type === arg1(closure_2[8]).AutocompleterResultTypes.HEADER;
+      let tmp4 = type.type === includeMissingDMs(outer1_2[8]).AutocompleterResultTypes.HEADER;
       if (!tmp4) {
-        let tmp6 = callback(type);
+        let tmp6 = outer1_8(type);
         if (tmp6) {
-          tmp6 = tmp(type, arg1);
+          tmp6 = tmp(type, includeMissingDMs);
         }
         tmp4 = tmp6;
       }
@@ -252,8 +255,8 @@ function filterResults(arr, includeMissingDMs, channelFilter) {
     return isNotNullishResult;
   });
 }
-({ Permissions: closure_9, ChannelTypes: closure_10 } = _isNativeReflectConstruct);
-const result = requestMembersDebounced.fileFinishedImporting("modules/share/formatResults.tsx");
+({ Permissions: closure_9, ChannelTypes: closure_10 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/share/formatResults.tsx");
 
 export default function formatResults(queryMode) {
   let channelFilter;
@@ -264,25 +267,23 @@ export default function formatResults(queryMode) {
   let selectedDestinations;
   let targetDestination;
   queryMode = queryMode.queryMode;
-  const arg1 = queryMode;
   ({ frequentChannels, targetDestination, selectedDestinations, pinnedDestinations, originDestination } = queryMode);
-  const importDefault = originDestination;
   ({ channelFilter, includeMissingDMs } = queryMode);
   if (queryMode.hasQuery) {
     return mergeAndDedupeResultsWithHeaders(filterResults(tmp, includeMissingDMs, channelFilter));
   } else {
     if (null != pinnedDestinations) {
       if (pinnedDestinations.length > 0) {
-        let mapped = pinnedDestinations.map((arg0) => callback(arg0));
+        let mapped = pinnedDestinations.map((arg0) => outer1_15(arg0));
       }
-      const channelHistory = channelHistory.getChannelHistory();
+      channelHistory = channelHistory.getChannelHistory();
       if (channelHistory.length > 0) {
-        let mapped1 = channelHistory.map((arg0) => originDestination(closure_2[9])(arg0));
+        let mapped1 = channelHistory.map((arg0) => originDestination(outer1_2[9])(arg0));
       } else {
         mapped1 = [];
       }
       if (frequentChannels.length > 0) {
-        let mapped2 = frequentChannels.map((id) => originDestination(closure_2[9])(id.id));
+        let mapped2 = frequentChannels.map((id) => originDestination(outer1_2[9])(id.id));
       } else {
         mapped2 = [];
       }
@@ -296,7 +297,7 @@ export default function formatResults(queryMode) {
       arraySpreadResult = HermesBuiltin.arraySpread(mapped2, HermesBuiltin.arraySpread(mapped1, arraySpreadResult + 1));
       const tmp4Result = filterResults(items, includeMissingDMs, channelFilter);
       if (null != selectedDestinations) {
-        const found = selectedDestinations.find((arg0) => queryMode(closure_2[12]).isEqual(arg0, originDestination));
+        const found = selectedDestinations.find((arg0) => queryMode(outer1_2[12]).isEqual(arg0, originDestination));
       }
       if (null != originDestination) {
         if (null == found) {
@@ -343,7 +344,6 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(freque
   let selectedChannelId;
   let selectedResult;
   ({ results, selectedResult, queryMode } = frequentChannels);
-  const arg1 = queryMode;
   frequentChannels = frequentChannels.frequentChannels;
   ({ hasNonEmptyQuery, selectedChannelId } = frequentChannels);
   if (null != selectedResult) {
@@ -352,27 +352,27 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(freque
   } else {
     items1 = [];
   }
-  const intl = arg1(dependencyMap[10]).intl;
-  const headerResult = arg1(dependencyMap[8]).createHeaderResult(intl.string(arg1(dependencyMap[10]).t.qm9dSj));
+  const intl = queryMode(1212).intl;
+  const headerResult = queryMode(7094).createHeaderResult(intl.string(queryMode(1212).t.qm9dSj));
   if (hasNonEmptyQuery) {
     const items2 = [headerResult];
     HermesBuiltin.arraySpread(mergeAndDedupeResultsWithHeaders(results.filter(isAllowedType), items1), 1);
     return items2;
   } else {
-    const mapped = frequentChannels.map((id) => callback(closure_2[9])(id.id));
-    const found = mapped.filter(arg1(dependencyMap[11]).isNotNullish);
+    const mapped = frequentChannels.map((id) => outer1_1(outer1_2[9])(id.id));
+    const found = mapped.filter(queryMode(1327).isNotNullish);
     const found1 = found.filter(isAllowedType);
     if (null != queryMode) {
       const items3 = [headerResult];
       HermesBuiltin.arraySpread(found1.filter((type) => type.type === queryMode), 1);
       let items4 = items3;
     } else {
-      const intl2 = arg1(dependencyMap[10]).intl;
-      items4 = [arg1(dependencyMap[8]).createHeaderResult(intl2.string(arg1(dependencyMap[10]).t.80lOZ1)), getLastChannelResult(selectedChannelId), headerResult];
+      const intl2 = queryMode(1212).intl;
+      items4 = [queryMode(7094).createHeaderResult(intl2.string(queryMode(1212).t["80lOZ1"])), getLastChannelResult(selectedChannelId), headerResult];
       HermesBuiltin.arraySpread(found1, 3);
-      const obj2 = arg1(dependencyMap[8]);
+      const obj2 = queryMode(7094);
     }
     return mergeAndDedupeResultsWithHeaders(items4, items1);
   }
-  const obj = arg1(dependencyMap[8]);
+  const obj = queryMode(7094);
 };

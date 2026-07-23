@@ -1,34 +1,39 @@
-// Module ID: 11707
-// Function ID: 90957
+// Module ID: 11717
+// Function ID: 91006
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [57, 31, 27, 653, 11718, 33, 4126, 689, 5081, 4545]
+// Dependencies: [31, 27, 33, 4130, 5084, 689, 4126, 4543, 1212, 2]
 // Exports: default
 
-// Module 11707 (NewUserPermissionsOnboarding)
-import "_slicedToArray";
-import module_31 from "module_31";
-import get ActivityIndicator from "get ActivityIndicator";
-import ME from "ME";
-import getFontScale from "getFontScale";
+// Module 11717 (NewUserPermissionsOnboarding)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-({ View: closure_2, ScrollView: closure_3 } = module_31);
-({ jsx: closure_4, jsxs: closure_5 } = get_ActivityIndicator);
-ME = { scrollContainer: { minHeight: "100%" }, container: {} };
-ME = { paddingTop: 80 + require("SuggestedFriendSource").NAV_BAR_HEIGHT };
-ME.alertContainer = ME;
-const merged = Object.assign(require("module_33").shadows.SHADOW_HIGH);
-ME.alert = { backgroundColor: require("module_33").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_33").radii.xl, borderColor: require("module_33").colors.INTERACTIVE_BACKGROUND_ACTIVE };
-ME.alertContent = {};
-ME.alertTitle = { isHighlighted: null, isPressable: null };
-const obj1 = { backgroundColor: require("module_33").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("module_33").radii.xl, borderColor: require("module_33").colors.INTERACTIVE_BACKGROUND_ACTIVE };
-ME.alertSubtitle = { paddingBottom: require("module_33").space.PX_16, textAlign: "center" };
-ME.buttonWrapper = { flexDirection: "row" };
-const obj2 = { paddingBottom: require("module_33").space.PX_16, textAlign: "center" };
-ME.primaryButtonContainer = { marginBottom: require("module_33").space.PX_12 };
-const obj3 = { marginBottom: require("module_33").space.PX_12 };
-ME.trailing = { flexGrow: 0, padding: require("module_33").space.PX_16 };
-ME = ME.createStyles(ME);
-const result = getFontScale.fileFinishedImporting("modules/nuf/native/components/NewUserPermissionsOnboarding.android.tsx");
+let closure_2;
+let closure_3;
+let closure_4;
+let closure_5;
+const require = arg1;
+({ View: closure_2, ScrollView: closure_3 } = get_ActivityIndicator);
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { scrollContainer: { minHeight: "100%" }, container: { flexGrow: 1, alignItems: "center", justifyContent: "center" } };
+_createForOfIteratorHelperLoose = { paddingTop: 80 + require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
+_createForOfIteratorHelperLoose.alertContainer = _createForOfIteratorHelperLoose;
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.xl, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE, alignItems: "center", maxWidth: 290 };
+const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
+_createForOfIteratorHelperLoose.alert = obj1;
+_createForOfIteratorHelperLoose.alertContent = { paddingVertical: 24, paddingHorizontal: 24, alignItems: "center" };
+_createForOfIteratorHelperLoose.alertTitle = { paddingBottom: 8, textAlign: "center" };
+_createForOfIteratorHelperLoose.alertSubtitle = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
+_createForOfIteratorHelperLoose.buttonWrapper = { flexDirection: "row" };
+let obj2 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_16, textAlign: "center" };
+_createForOfIteratorHelperLoose.primaryButtonContainer = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
+let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.trailing = { flexGrow: 0, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { flexGrow: 0, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("jsxProd").fileFinishedImporting("modules/nuf/native/components/NewUserPermissionsOnboarding.android.tsx");
 
 export default function NewUserPermissionsOnboarding(showSkip) {
   let header;
@@ -44,7 +49,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
     flag = true;
   }
   ({ onAllow, onDontAllow } = showSkip);
-  const tmp = ME();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { contentContainerStyle: tmp.scrollContainer };
   obj = { style: tmp.container };
   obj = { style: tmp.alertContainer };
@@ -52,8 +57,10 @@ export default function NewUserPermissionsOnboarding(showSkip) {
   const items = [header, ];
   const obj2 = { style: tmp.alert };
   const obj3 = { style: tmp.alertContent };
-  const obj4 = { "Null": "r", "Null": 59, alignItems: 85.5, style: tmp.alertTitle, children: title };
-  const items1 = [callback(arg1(dependencyMap[6]).Text, obj4), callback(arg1(dependencyMap[6]).Text, { style: tmp.alertSubtitle, children: subtitle }), , ];
+  const obj4 = { style: tmp.alertTitle, variant: "heading-lg/bold", color: "text-default", children: title };
+  const items1 = [callback(require(4126) /* Text */.Text, obj4), , , ];
+  const obj5 = { style: tmp.alertSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
+  items1[1] = callback(require(4126) /* Text */.Text, obj5);
   const obj6 = {};
   const items2 = [tmp.buttonWrapper, ];
   let primaryButtonContainer = flag;
@@ -62,22 +69,22 @@ export default function NewUserPermissionsOnboarding(showSkip) {
   }
   items2[1] = primaryButtonContainer;
   obj6.style = items2;
-  const obj7 = {};
-  const intl = arg1(dependencyMap[8]).intl;
-  obj7.text = intl.string(arg1(dependencyMap[8]).t.2nYlT2);
+  const obj7 = { variant: "primary", size: "md" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj7.text = intl.string(require(1212) /* getSystemLocale */.t["2nYlT2"]);
   obj7.onPress = onAllow;
   obj7.loading = loading;
   obj7.grow = true;
-  obj6.children = callback(arg1(dependencyMap[7]).Button, obj7);
+  obj6.children = callback(require(4543) /* Button */.Button, obj7);
   items1[2] = callback(closure_2, obj6);
   if (flag) {
     const obj8 = { style: tmp.buttonWrapper };
     const obj9 = { variant: "secondary" };
-    const intl2 = arg1(dependencyMap[8]).intl;
-    obj9.text = intl2.string(arg1(dependencyMap[8]).t.5Wxrcd);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj9.text = intl2.string(require(1212) /* getSystemLocale */.t["5Wxrcd"]);
     obj9.onPress = onDontAllow;
     obj9.grow = true;
-    obj8.children = callback(arg1(dependencyMap[7]).Button, obj9);
+    obj8.children = callback(require(4543) /* Button */.Button, obj9);
     flag = callback(closure_2, obj8);
   }
   items1[3] = flag;

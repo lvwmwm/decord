@@ -1,19 +1,19 @@
-// Module ID: 12559
-// Function ID: 96556
+// Module ID: 12673
+// Function ID: 98712
 // Name: getApplicationIdForActivity
-// Dependencies: []
+// Dependencies: [12303, 12674, 12675, 4155, 9081, 7882, 11922, 2]
 // Exports: default
 
-// Module 12559 (getApplicationIdForActivity)
-const SpotifyApplication = require(dependencyMap[0]).SpotifyApplication;
-let closure_3 = require(dependencyMap[1]).TWITCH_APPLICATION_ID_PREFIX;
-let closure_4 = require(dependencyMap[2]).XBOX_APPLICATION_ID_PREFIX;
-let closure_5 = require(dependencyMap[3]).XBOX_ACTIVITY_APPLICATION_ID;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/now_playing/getApplicationIdForActivity.tsx");
+// Module 12673 (getApplicationIdForActivity)
+import { SpotifyApplication } from "_isNativeReflectConstruct";
+import { TWITCH_APPLICATION_ID_PREFIX as closure_3 } from "_isNativeReflectConstruct";
+import { XBOX_APPLICATION_ID_PREFIX as closure_4 } from "_isNativeReflectConstruct";
+import { XBOX_ACTIVITY_APPLICATION_ID as closure_5 } from "items3";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/now_playing/getApplicationIdForActivity.tsx");
 
 export default function getApplicationIdForActivity(party) {
-  if (importDefault(dependencyMap[4])(party)) {
+  if (importDefault(9081)(party)) {
     if (null != party.party) {
       if (null != party.party.id) {
         let id = SpotifyApplication.id;
@@ -21,7 +21,7 @@ export default function getApplicationIdForActivity(party) {
       return id;
     }
   }
-  if (importDefault(dependencyMap[5])(party)) {
+  if (importDefault(7882)(party)) {
     if (null != party.url) {
       id = closure_3 + party.url;
     }
@@ -32,7 +32,7 @@ export default function getApplicationIdForActivity(party) {
     }
   }
   id = null;
-  if (importDefault(dependencyMap[6])(party)) {
+  if (importDefault(11922)(party)) {
     id = closure_4 + party.name;
   }
 };

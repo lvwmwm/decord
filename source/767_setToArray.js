@@ -1,17 +1,17 @@
 // Module ID: 767
-// Function ID: 8834
+// Function ID: 8835
 // Name: setToArray
 // Dependencies: []
 
 // Module 767 (setToArray)
 
 export default function setToArray(size) {
-  let closure_0 = -1;
+  let c0 = -1;
   const ArrayResult = Array(size.size);
   const item = size.forEach((arg0) => {
-    const sum = closure_0 + 1;
-    closure_0 = sum;
-    ArrayResult[sum] = arg0;
+    const sum = c0 + 1;
+    c0 = sum;
+    closure_1[sum] = arg0;
   });
   return ArrayResult;
 };

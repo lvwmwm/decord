@@ -1,24 +1,24 @@
-// Module ID: 9520
-// Function ID: 74097
+// Module ID: 9527
+// Function ID: 74138
 // Name: fetchSummary
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [5, 31, 4808, 1348, 9484, 653, 664, 686, 507, 4029, 22, 9486, 624, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries
 
-// Module 9520 (fetchSummary)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import closure_7 from "__exportStarResult1";
-import { Routes } from "__exportStarResult1";
+// Module 9527 (fetchSummary)
+import ME from "ME";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { Routes } from "ME";
 
+const require = arg1;
 function fetchSummary(channelId, summaryId) {
   return _fetchSummary(...arguments);
 }
 function _fetchSummary() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchSummary = obj;
   return obj(...arguments);
 }
 function fetchSummaries(channelId) {
@@ -27,11 +27,10 @@ function fetchSummaries(channelId) {
 function _fetchSummaries() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchSummaries = obj;
   return obj(...arguments);
 }
 function setHighlightedSummary(channelId) {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(686);
   obj = { type: "SET_HIGHLIGHTED_SUMMARY", channelId };
   let tmp = null;
   if (null != arg1) {
@@ -44,7 +43,7 @@ function setSelectedSummary(channelId, summaryId) {
   if (tmp) {
     fetchSummary(channelId, summaryId);
   }
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(686);
   obj = { type: "SET_SELECTED_SUMMARY", channelId };
   let tmp4 = null;
   if (null != summaryId) {
@@ -54,7 +53,7 @@ function setSelectedSummary(channelId, summaryId) {
   obj.dispatch(obj);
 }
 function updateVisibleMessages(arg0, arg1) {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(686);
   obj = { type: "UPDATE_VISIBLE_MESSAGES" };
   let tmp = null;
   if (null != arg0) {
@@ -69,18 +68,18 @@ function updateVisibleMessages(arg0, arg1) {
   obj.dispatch(obj);
 }
 function updateCount(arg0, arg1) {
-  if (null == closure_10[arg0]) {
-    closure_10[arg0] = 0;
+  if (null == dependencyMap[arg0]) {
+    dependencyMap[arg0] = 0;
   }
   if (null === arg1) {
-    closure_10[arg0] = 0;
+    dependencyMap[arg0] = 0;
   } else {
-    closure_10[arg0] = closure_10[arg0] + arg1;
+    dependencyMap[arg0] = dependencyMap[arg0] + arg1;
   }
-  return closure_10[arg0];
+  return dependencyMap[arg0];
 }
 function setSummaryFeedback(summary, rating) {
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(686);
   obj = { type: "SET_SUMMARY_FEEDBACK", summary, rating };
   obj.dispatch(obj);
 }
@@ -90,7 +89,6 @@ function fetchChannelAffinities() {
 function _fetchChannelAffinities() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchChannelAffinities = obj;
   return obj(...arguments);
 }
 function fetchSummariesBulk() {
@@ -99,7 +97,6 @@ function fetchSummariesBulk() {
 function _fetchSummariesBulk() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchSummariesBulk = obj;
   return obj(...arguments);
 }
 function useMaybeFetchChannelAffinitiesAndSummaries(channelIds) {
@@ -107,27 +104,23 @@ function useMaybeFetchChannelAffinitiesAndSummaries(channelIds) {
   if (channelIds === undefined) {
     items = [];
   }
-  const arg1 = items;
-  let importDefault;
-  let dependencyMap;
-  const items1 = [closure_5];
-  const stateFromStores = arg1(dependencyMap[12]).useStateFromStores(items1, () => connected.isConnected());
-  importDefault = stateFromStores;
+  let stateFromStores;
+  let memo;
+  const items1 = [_isNativeReflectConstruct];
+  stateFromStores = items(memo[12]).useStateFromStores(items1, () => outer1_5.isConnected());
   const items2 = [items];
-  const memo = React.useMemo(() => items.join(","), items2);
-  dependencyMap = memo;
+  memo = React.useMemo(() => items.join(","), items2);
   const items3 = [memo, stateFromStores];
   const effect = React.useEffect(() => {
     function _fetch() {
       // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback(tmp);
-      const _fetch = obj;
+      const obj = outer2_3(tmp);
       return obj(...arguments);
     }
     if (stateFromStores) {
-      function fetch() {
+      (function fetch() {
         return _fetch(...arguments);
-      }();
+      })();
     }
   }, items3);
 }
@@ -138,7 +131,7 @@ function useChannelSummaries(channelIds) {
   }
   useMaybeFetchChannelAffinitiesAndSummaries(channelIds);
   const items = [closure_7];
-  return arg1(dependencyMap[12]).useStateFromStoresArray(items, () => closure_7.topSummaries(), []);
+  return require(624) /* defaultAreStatesEqual */.useStateFromStoresArray(items, () => outer1_7.topSummaries(), []);
 }
 function deleteSummary(arg0) {
   return _deleteSummary(...arguments);
@@ -146,20 +139,19 @@ function deleteSummary(arg0) {
 function _deleteSummary() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _deleteSummary = obj;
   return obj(...arguments);
 }
-let closure_9 = 30 * require("__exportStarResult1").Millis.SECOND;
+let closure_9 = 30 * require("set").Millis.SECOND;
 let closure_10 = {};
 let closure_11 = {};
-const result = require("__exportStarResult1").fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/summaries/SummaryActionCreators.tsx");
 
 export default { setSummaryFeedback, updateVisibleMessages, setSelectedSummary, setHighlightedSummary, fetchSummaries, fetchSummariesBulk, useChannelSummaries, deleteSummary };
 export { fetchSummary };
 export { fetchSummaries };
 export { setHighlightedSummary };
 export const toggleTopicsBar = function toggleTopicsBar() {
-  importDefault(dependencyMap[7]).dispatch({ type: "TOGGLE_TOPICS_BAR" });
+  importDefault(686).dispatch({ type: "TOGGLE_TOPICS_BAR" });
 };
 export { setSelectedSummary };
 export { updateVisibleMessages };
@@ -167,7 +159,7 @@ export const stopPolling = function stopPolling(arg0) {
   if (updateCount(arg0, -1) <= 0) {
     updateCount(arg0, 0);
     const _clearInterval = clearInterval;
-    clearInterval(closure_11[arg0]);
+    clearInterval(table[arg0]);
   }
 };
 export { setSummaryFeedback };

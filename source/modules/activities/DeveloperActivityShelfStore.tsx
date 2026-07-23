@@ -1,9 +1,17 @@
-// Module ID: 7365
-// Function ID: 59365
+// Module ID: 7370
+// Function ID: 59399
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 7371, 3803, 566, 686, 2]
 
-// Module 7365 (_isNativeReflectConstruct)
+// Module 7370 (_isNativeReflectConstruct)
+import getApplicationFlags from "getApplicationFlags";
+import explicitContentFromProto from "explicitContentFromProto";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { ApplicationFlags } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,29 +21,23 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const ApplicationFlags = arg1(dependencyMap[5]).ApplicationFlags;
-let obj = { "Null": "long_press", "Null": "item_header", justifyContent: "open", gap: null, lastUsedObject: {} };
+let obj = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
 obj = { INITIALIZED: "INITIALIZED", LOADING: "LOADING", LOADED: "LOADED", ERROR: "ERROR" };
-const INITIALIZED = obj.INITIALIZED;
+let INITIALIZED = obj.INITIALIZED;
 let closure_11 = [];
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class DeveloperActivityShelfStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, DeveloperActivityShelfStore);
-      obj = closure_5(DeveloperActivityShelfStore);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      tmp = outer1_2(this, DeveloperActivityShelfStore);
+      obj = outer1_5(DeveloperActivityShelfStore);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -44,34 +46,34 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = DeveloperActivityShelfStore;
   callback2(DeveloperActivityShelfStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       let obj = arg0;
-      obj = { "Null": "long_press", "Null": "item_header", justifyContent: "open", gap: null, lastUsedObject: {} };
+      obj = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
       if (null == arg0) {
         obj = {};
       }
       const merged = Object.assign(obj);
+      const outer1_8 = obj;
     }
   };
   const items = [obj, , , , , , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[1] = obj;
   obj = {
     key: "getIsEnabled",
     value() {
-      const DeveloperMode = DeveloperActivityShelfStore(closure_1[7]).DeveloperMode;
+      const DeveloperMode = DeveloperActivityShelfStore(outer1_1[7]).DeveloperMode;
       let setting = DeveloperMode.getSetting();
       if (setting) {
-        setting = closure_11.length > 0;
+        setting = outer1_11.length > 0;
       }
       return setting;
     }
@@ -80,7 +82,7 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getLastUsedObject",
     value() {
-      return closure_8.lastUsedObject;
+      return outer1_8.lastUsedObject;
     }
   };
   items[4] = {
@@ -88,7 +90,7 @@ let tmp2 = (PersistedStore) => {
     value() {
       let useActivityUrlOverride = this.getIsEnabled();
       if (useActivityUrlOverride) {
-        useActivityUrlOverride = closure_8.useActivityUrlOverride;
+        useActivityUrlOverride = outer1_8.useActivityUrlOverride;
       }
       return useActivityUrlOverride;
     }
@@ -98,7 +100,7 @@ let tmp2 = (PersistedStore) => {
     value() {
       let activityUrlOverride = null;
       if (this.getIsEnabled()) {
-        activityUrlOverride = closure_8.activityUrlOverride;
+        activityUrlOverride = outer1_8.activityUrlOverride;
       }
       return activityUrlOverride;
     }
@@ -106,7 +108,7 @@ let tmp2 = (PersistedStore) => {
   items[6] = {
     key: "getFetchState",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[7] = {
@@ -114,7 +116,7 @@ let tmp2 = (PersistedStore) => {
     value() {
       let str = "";
       if (this.getIsEnabled()) {
-        str = closure_8.filter;
+        str = outer1_8.filter;
       }
       return str;
     }
@@ -122,27 +124,27 @@ let tmp2 = (PersistedStore) => {
   items[8] = {
     key: "getDeveloperShelfItems",
     value() {
-      return this.getIsEnabled() ? closure_11 : [];
+      return this.getIsEnabled() ? outer1_11 : [];
     }
   };
   items[9] = {
     key: "inDevModeForApplication",
     value(arg0) {
-      const DeveloperActivityShelfStore = arg0;
+      let closure_0 = arg0;
       let isEnabled = this.getIsEnabled();
       if (isEnabled) {
-        isEnabled = null != closure_11.find((id) => id.id === id);
+        isEnabled = null != outer1_11.find((id) => id.id === closure_0);
       }
       return isEnabled;
     }
   };
   return callback(DeveloperActivityShelfStore, items);
-}(importDefault(dependencyMap[8]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "DeveloperActivityShelfStore";
 tmp2.persistKey = "DeveloperActivityShelfStore";
-const items = [
+let items = [
   (arg0) => {
-    delete r1.isEnabled;
+    delete tmp.isEnabled;
     const merged = Object.assign(arg0);
     return {};
   }
@@ -150,7 +152,7 @@ const items = [
 tmp2.migrations = items;
 obj = {
   LOGOUT: function reset() {
-    const obj = { "Null": "long_press", "Null": "item_header", justifyContent: "open", gap: null, lastUsedObject: {} };
+    const obj = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
     const INITIALIZED = obj.INITIALIZED;
     let closure_11 = [];
   },
@@ -162,7 +164,6 @@ obj = {
   },
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: function handleMarkActivityUsed(applicationId) {
     applicationId = applicationId.applicationId;
-    const arg1 = applicationId;
     if (null == closure_11.find((id) => id.id === applicationId)) {
       return false;
     } else {
@@ -170,15 +171,15 @@ obj = {
     }
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
-    const INITIALIZED = obj.LOADING;
+    const LOADING = obj.LOADING;
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: function handleEmbeddedActivitiesFetchDeveloperApplicationsSuccess(applications) {
     applications = applications.applications;
-    const INITIALIZED = obj.LOADED;
-    let closure_11 = applications.filter((application) => callback(closure_1[6]).hasApplicationFlag(application, constants.EMBEDDED));
+    const LOADED = obj.LOADED;
+    let closure_11 = applications.filter((application) => outer1_0(outer1_1[6]).hasApplicationFlag(application, outer1_7.EMBEDDED));
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: function handleEmbeddedActivitiesFetchDeveloperApplicationsFail(arg0) {
-    const INITIALIZED = obj.ERROR;
+    const ERROR = obj.ERROR;
   },
   DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: function handleUpdateFilter(arg0) {
     obj.filter = arg0.filter;
@@ -187,8 +188,8 @@ obj = {
 
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[9]), obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/activities/DeveloperActivityShelfStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/activities/DeveloperActivityShelfStore.tsx");
 
 export default tmp2;
 export const DevShelfFetchState = obj;

@@ -1,11 +1,11 @@
 // Module ID: 564
 // Function ID: 6816
 // Name: stringifyErrors
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 564 (stringifyErrors)
 function stringifyErrors(arr) {
-  const stringifyErrors = arr;
+  let closure_0 = arr;
   let str = "";
   let str2 = "";
   if (null != arr) {
@@ -37,7 +37,6 @@ function stringifyErrors(arr) {
   }
   return str2;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/http-utils/stringifyErrors.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/http-utils/stringifyErrors.tsx");
 
 export { stringifyErrors };

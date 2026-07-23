@@ -1,20 +1,29 @@
-// Module ID: 8286
-// Function ID: 65396
+// Module ID: 8292
+// Function ID: 65433
 // Name: MediaModal
-// Dependencies: []
+// Dependencies: [31, 27, 8293, 6651, 653, 33, 8275, 8294, 8282, 8298, 566, 477, 8276, 8279, 8299, 8301, 8302, 1820, 8303, 4099, 4100, 4098, 8305, 1934, 12228, 8283, 12246, 12248, 5085, 12250, 2]
 // Exports: default
 
-// Module 8286 (MediaModal)
-let closure_4 = importAll(dependencyMap[0]);
-({ Image: closure_5, Modal: closure_6, StyleSheet: closure_7, View: closure_8 } = arg1(dependencyMap[1]));
-let closure_9 = importDefault(dependencyMap[2]);
-let closure_10 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[1]);
-({ Base64JPEGPrefix: closure_11, Base64GIFPrefix: closure_12, AppStates: closure_13 } = arg1(dependencyMap[4]));
-const jsx = arg1(dependencyMap[5]).jsx;
-const createElement = arg1(dependencyMap[0]).createElement;
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/media_viewer/native/components/MediaModal.tsx");
+// Module 8292 (MediaModal)
+import result from "result";
+import get_ActivityIndicator from "module_12248";
+import module_8293 from "module_8293";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import { createElement } from "result";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ Image: closure_5, Modal: closure_6, StyleSheet: closure_7, View: closure_8 } = get_ActivityIndicator);
+({ Base64JPEGPrefix: closure_11, Base64GIFPrefix: closure_12, AppStates: closure_13 } = ME);
+let result = require("module_8293").fileFinishedImporting("modules/media_viewer/native/components/MediaModal.tsx");
 
 export default function MediaModal(initialIndex) {
   let onEndReached;
@@ -23,9 +32,7 @@ export default function MediaModal(initialIndex) {
   if (num === undefined) {
     num = 0;
   }
-  const arg1 = num;
   const initialIndexVideoStartTime = initialIndex.initialIndexVideoStartTime;
-  const importDefault = initialIndexVideoStartTime;
   let flag = initialIndex.isRNModal;
   if (flag === undefined) {
     flag = false;
@@ -35,25 +42,21 @@ export default function MediaModal(initialIndex) {
     num2 = 1000;
   }
   const onClose = initialIndex.onClose;
-  const importAll = onClose;
-  const dependencyMap = onCloseCallback;
+  const onCloseCallback = initialIndex.onCloseCallback;
   let flag2 = initialIndex.shareable;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const React = flag2;
   const disableDownload = initialIndex.disableDownload;
   const disableMediaOverlayButton = initialIndex.disableMediaOverlayButton;
   const disableMediaOverlayFooter = initialIndex.disableMediaOverlayFooter;
   const contextName = initialIndex.contextName;
   const contextIcon = initialIndex.contextIcon;
-  let closure_9 = contextIcon;
   const onIndexChange = initialIndex.onIndexChange;
-  let closure_10 = onIndexChange;
   let mediaViewerSyncer;
   let videoStateStore;
   let rnvHttpEngine;
-  let jsx;
+  let stateFromStores;
   let closure_15;
   let closure_16;
   let id;
@@ -63,16 +66,16 @@ export default function MediaModal(initialIndex) {
   let callback2;
   let mediaPlayerMutedStore;
   ({ onEndReached, onEndReachedThreshold } = initialIndex);
-  const MediaViewerSourcesStore = arg1(dependencyMap[6]).MediaViewerSourcesStore;
+  let MediaViewerSourcesStore = num(onCloseCallback[6]).MediaViewerSourcesStore;
   const field = MediaViewerSourcesStore.useField("sources");
-  let obj = arg1(dependencyMap[7]);
+  let obj = num(onCloseCallback[7]);
   obj = { sources: field, initialIndex: num, onEndReached, onEndReachedThreshold };
   mediaViewerSyncer = obj.useMediaViewerSyncer(obj);
-  let obj2 = arg1(dependencyMap[8]);
+  let obj2 = num(onCloseCallback[8]);
   videoStateStore = obj2.useVideoStateStore((paused) => paused.paused);
-  rnvHttpEngine = arg1(dependencyMap[9]).useRnvHttpEngine();
-  const items = [initialIndex.onCloseCallback, onClose];
-  const callback = React.useCallback(() => {
+  rnvHttpEngine = num(onCloseCallback[9]).useRnvHttpEngine();
+  const items = [onCloseCallback, onClose];
+  let callback = flag2.useCallback(() => {
     if (null != onClose) {
       onClose();
     }
@@ -80,28 +83,27 @@ export default function MediaModal(initialIndex) {
       onCloseCallback();
     }
   }, items);
-  const effect = React.useEffect(() => () => {
-    const MediaViewerSourcesStore = callback(closure_3[6]).MediaViewerSourcesStore;
+  const effect = flag2.useEffect(() => () => {
+    const MediaViewerSourcesStore = num(onCloseCallback[6]).MediaViewerSourcesStore;
     MediaViewerSourcesStore.resetState();
   }, []);
-  const obj4 = arg1(dependencyMap[9]);
-  const items1 = [closure_10];
-  const stateFromStores = arg1(dependencyMap[10]).useStateFromStores(items1, () => onIndexChange.getState());
-  jsx = stateFromStores;
-  closure_15 = React.useRef(stateFromStores);
-  closure_16 = React.useRef(videoStateStore);
-  id = React.useId();
+  let obj4 = num(onCloseCallback[9]);
+  const items1 = [onIndexChange];
+  stateFromStores = num(onCloseCallback[10]).useStateFromStores(items1, () => onIndexChange.getState());
+  closure_15 = flag2.useRef(stateFromStores);
+  closure_16 = flag2.useRef(videoStateStore);
+  id = flag2.useId();
   const items2 = [id];
-  const effect1 = React.useEffect(() => {
-    const state = contextIcon.getState();
-    const freezeLock = state.requestFreezeLock({ lockEnabled: true, key: id });
+  const effect1 = flag2.useEffect(() => {
+    let state = contextIcon.getState();
+    let freezeLock = state.requestFreezeLock({ lockEnabled: true, key: id });
     return () => {
-      const state = state.getState();
-      const freezeLock = state.requestFreezeLock({ lockEnabled: false, key: closure_17 });
+      const state = contextIcon.getState();
+      const freezeLock = state.requestFreezeLock({ lockEnabled: false, key: outer1_17 });
     };
   }, items2);
   const items3 = [stateFromStores, videoStateStore];
-  const effect2 = React.useEffect(() => {
+  const effect2 = flag2.useEffect(() => {
     if (obj.isIOS()) {
       if (ref.current !== stateFromStores) {
         if (rnvHttpEngine.BACKGROUND === stateFromStores) {
@@ -123,8 +125,8 @@ export default function MediaModal(initialIndex) {
       }
     }
   }, items3);
-  closure_18 = React.useRef({});
-  callback1 = React.useCallback((arg0, portal) => {
+  closure_18 = flag2.useRef({});
+  callback1 = flag2.useCallback((arg0, portal) => {
     const videoSourceType = num(onCloseCallback[12]).getVideoSourceType(portal);
     const combined = "" + portal + "_" + arg0;
     if (null != ref3.current[combined]) {
@@ -148,18 +150,19 @@ export default function MediaModal(initialIndex) {
     }
     const obj = num(onCloseCallback[12]);
   }, []);
-  closure_20 = React.useRef({});
+  closure_20 = flag2.useRef({});
   const items4 = [callback1, num, initialIndexVideoStartTime];
-  callback2 = React.useCallback((arg0, arg1, oldOnLoad) => {
+  callback2 = flag2.useCallback((arg0, arg1, oldOnLoad) => {
+    let closure_0 = oldOnLoad;
     function callback() {
       if (null != closure_1) {
         closure_1.seek(closure_1);
-        if (null != arg2) {
-          arg2();
+        if (null != oldOnLoad) {
+          oldOnLoad();
         }
       }
     }
-    if (arg0 === oldOnLoad) {
+    if (arg0 === closure_0) {
       if (null != closure_1) {
         if (null != ref4.current[arg0]) {
           if (tmp4.oldOnLoad === oldOnLoad) {
@@ -174,15 +177,15 @@ export default function MediaModal(initialIndex) {
     }
     return oldOnLoad;
   }, items4);
-  const effect3 = React.useEffect(() => {
+  const effect3 = flag2.useEffect(() => {
     const result = onClose(onCloseCallback[17]).clearCurrentFocusAndDismissKeyboard();
     const obj = onClose(onCloseCallback[17]);
     num(onCloseCallback[18]).unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
-    return () => callback(closure_3[18]).lockOrientationForiOS();
+    return () => num(onCloseCallback[18]).lockOrientationForiOS();
   }, []);
   const items5 = [disableDownload, flag2, mediaViewerSyncer];
   const items6 = [mediaViewerSyncer, callback1, flag2, disableDownload, disableMediaOverlayButton, disableMediaOverlayFooter, contextName, contextIcon, onIndexChange];
-  const callback3 = React.useCallback(() => {
+  const callback3 = flag2.useCallback(() => {
     if (flag2) {
       let obj = num(onCloseCallback[12]);
       const selectedMediaSource = obj.getSelectedMediaSource(mediaViewerSyncer);
@@ -195,18 +198,18 @@ export default function MediaModal(initialIndex) {
       }
     }
   }, items5);
-  const callback4 = React.useCallback((onClose, overlayEnabled) => stateFromStores(initialIndexVideoStartTime(onCloseCallback[24]), { syncer: mediaViewerSyncer, getVideoControls: callback1, onClose, shareable: flag2, disableDownload, disableMediaOverlayButton, disableMediaOverlayFooter, contextName, contextIcon, overlayEnabled, onIndexChange }), items6);
-  const obj5 = arg1(dependencyMap[10]);
-  mediaPlayerMutedStore = arg1(dependencyMap[25]).useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
+  const callback4 = flag2.useCallback((onClose, overlayEnabled) => stateFromStores(initialIndexVideoStartTime(onCloseCallback[24]), { syncer: mediaViewerSyncer, getVideoControls: callback1, onClose, shareable: flag2, disableDownload, disableMediaOverlayButton, disableMediaOverlayFooter, contextName, contextIcon, overlayEnabled, onIndexChange }), items6);
+  let obj5 = num(onCloseCallback[10]);
+  mediaPlayerMutedStore = num(onCloseCallback[25]).useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
   const items7 = [callback1, callback2, mediaPlayerMutedStore, videoStateStore, rnvHttpEngine];
-  const callback5 = React.useCallback((hasSpoiler) => {
+  const callback5 = flag2.useCallback((hasSpoiler) => {
     let index;
     let key;
     let pointerEvents;
     let source;
     let visible;
     ({ source, index, key, visible, pointerEvents } = hasSpoiler);
-    let obj = { 9223372036854775807: "Text", 0: "resizeMode", 9223372036854775807: "from", 9223372036854775807: "Array", -9223372036854775808: "isArray", 9223372036854775807: "braintreemasterpasslanding" };
+    let obj = { source: 0, index: 0, key: 0, visible: 0, hasSpoiler: 0, pointerEvents: 0 };
     Object.setPrototypeOf(null);
     const merged = Object.assign(hasSpoiler, obj);
     let tmp4 = mediaPlayerMutedStore;
@@ -240,7 +243,7 @@ export default function MediaModal(initialIndex) {
         obj1["muted"] = tmp4;
         return ref(initialIndexVideoStartTime(onCloseCallback[13]), obj1);
       }
-      const obj14 = num(onCloseCallback[13]);
+      obj14 = num(onCloseCallback[13]);
     }
     if (null != source.embedURI) {
       if (!source.isGIFV) {
@@ -316,13 +319,13 @@ export default function MediaModal(initialIndex) {
     return tmp37;
   }, items7);
   obj = { originLayout: initialIndex.originLayout, swipeVelocityThreshold: num2, onClose: callback, onLongPress: callback3, syncer: mediaViewerSyncer, renderMedia: callback5, renderOverlay: callback4 };
-  const tmp18 = jsx(importDefault(dependencyMap[29]), obj);
+  const tmp18 = stateFromStores(initialIndexVideoStartTime(onCloseCallback[29]), obj);
   let tmp19 = tmp18;
   if (flag) {
-    const obj1 = { "Null": "NOTIFICATION_SETTINGS_PERMISSION_HEADER", "Null": "values", "Null": "isArray", "Null": "type", "Null": "isArray", onRequestClose: callback };
+    let obj1 = { transparent: true, animationType: "none", visible: true, onRequestClose: callback, statusBarTranslucent: true };
     obj2 = { style: disableMediaOverlayFooter.absoluteFill, children: tmp18 };
-    obj1.children = <contextName {...obj2} />;
-    tmp19 = <disableMediaOverlayButton {...obj1} />;
+    obj1.children = stateFromStores(contextName, obj2);
+    tmp19 = stateFromStores(disableMediaOverlayButton, obj1);
   }
   return tmp19;
 };

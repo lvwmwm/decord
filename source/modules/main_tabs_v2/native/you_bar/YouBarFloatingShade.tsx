@@ -1,77 +1,81 @@
-// Module ID: 15006
-// Function ID: 113003
-// Dependencies: []
+// Module ID: 15122
+// Function ID: 115171
+// Dependencies: [31, 27, 3942, 13997, 14813, 33, 4130, 566, 3834, 689, 13999, 1450, 3984, 14807, 3991, 3941, 665, 4554, 2]
 
-// Module 15006
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).YOU_BAR_GRADIENT_EXTRA_HEIGHT;
-const GUILD_LIST_WIDTH = arg1(dependencyMap[4]).GUILD_LIST_WIDTH;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { canAnimate: 131420590, style: -1717986767, url: -644245095, isStageCall: 94527 } });
+// Module 15122
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { YOU_BAR_GRADIENT_EXTRA_HEIGHT as closure_5 } from "CONNECTION_BANNER_HEIGHT";
+import { GUILD_LIST_WIDTH } from "GUILD_ITEM_SIZE";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_7;
+let closure_8;
+let closure_9;
+let require = arg1;
+({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { position: "absolute", bottom: 0, left: 0, right: 0 } });
 let closure_11 = { code: "function YouBarFloatingShadeTsx1(){const{gradientHeight,drawerWidth}=this.__closure;return{height:gradientHeight,opacity:1,width:drawerWidth};}" };
-const obj2 = arg1(dependencyMap[6]);
-const memoResult = importAllResult.memo(function YouBarFloatingShade() {
+const memoResult = require("result").memo(function YouBarFloatingShade() {
   const tmp = callback3();
-  let obj = arg1(dependencyMap[10]);
+  let obj = require(13999) /* useYouBarTotalHeight */;
   const youBarTotalHeight = obj.useYouBarTotalHeight();
   const sum = youBarTotalHeight + closure_5;
-  const arg1 = sum;
-  let width = importDefault(dependencyMap[11])().width;
-  if (importDefault(dependencyMap[12])().isChatBesideChannelList) {
+  require = sum;
+  width = width(1450)().width;
+  if (width(3984)().isChatBesideChannelList) {
     width = tmp4 + GUILD_LIST_WIDTH;
   }
-  const importDefault = width;
-  let obj1 = arg1(dependencyMap[14]);
+  let obj1 = require(3991);
   const fn = function v() {
-    return { height: sum, opacity: 1, width };
+    return { height: closure_0, opacity: 1, width };
   };
   obj = { gradientHeight: sum, drawerWidth: width };
   fn.__closure = obj;
   fn.__workletHash = 7609004216185;
   fn.__initData = closure_11;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  const gradientValue = arg1(dependencyMap[15]).useGradientValue(arg1(dependencyMap[15]).GradientPercentage.END);
-  const obj4 = arg1(dependencyMap[15]);
-  const token = arg1(dependencyMap[8]).useToken(importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER);
-  let tmp9 = function useYouBarGradientBackground() {
-    const items = [closure_4];
-    const stateFromStores = sum(closure_2[7]).useStateFromStores(items, () => gradientPreset.gradientPreset);
-    const obj = sum(closure_2[7]);
+  const gradientValue = require(3941) /* colorToHex */.useGradientValue(require(3941) /* colorToHex */.GradientPercentage.END);
+  const obj4 = require(3941) /* colorToHex */;
+  let token = require(3834) /* map */.useToken(width(689).colors.BACKGROUND_BASE_LOWER);
+  let tmp9 = (function useYouBarGradientBackground() {
+    const items = [outer1_4];
+    const stateFromStores = sum(outer1_2[7]).useStateFromStores(items, () => outer2_4.gradientPreset);
+    const obj = sum(outer1_2[7]);
     let token = null;
     if (null != stateFromStores) {
-      token = obj2.useToken(width(closure_2[9]).colors.MOBILE_FLOATINGBAR_BACKGROUND_SCRIM);
+      token = obj2.useToken(width(outer1_2[9]).colors.MOBILE_FLOATINGBAR_BACKGROUND_SCRIM);
     }
     return token;
-  }();
+  })();
   if (null == tmp9) {
     tmp9 = token;
     if (null != gradientValue) {
       tmp9 = gradientValue;
     }
   }
-  const obj5 = arg1(dependencyMap[8]);
-  const hex2rgbResult = arg1(dependencyMap[16]).hex2rgb(tmp9, 1);
+  const obj5 = require(3834) /* map */;
+  const hex2rgbResult = require(665) /* pad2 */.hex2rgb(tmp9, 1);
   let str = "transparent";
   let str2 = "transparent";
   if (null != hex2rgbResult) {
     str2 = hex2rgbResult;
   }
-  const obj6 = arg1(dependencyMap[16]);
-  const hex2rgbResult1 = arg1(dependencyMap[16]).hex2rgb(tmp9, 0);
+  const obj6 = require(665) /* pad2 */;
+  const hex2rgbResult1 = require(665) /* pad2 */.hex2rgb(tmp9, 0);
   if (null != hex2rgbResult1) {
     str = hex2rgbResult1;
   }
   obj = {};
-  const items = [tmp.container, animatedStyle, { height: youBarTotalHeight, opacity: 0 }];
+  let items = [tmp.container, animatedStyle, { height: youBarTotalHeight, opacity: 0 }];
   const items1 = [callback(View, { style: items, pointerEvents: "box-only" }), , ];
   const items2 = [tmp.container, ];
   obj1 = { bottom: sum / 2, height: sum / 2, width };
   items2[1] = obj1;
   const items3 = [str, str2];
-  items1[1] = callback(importDefault(dependencyMap[17]), { style: items2, colors: items3, start: { 0: "%FunctionPrototype%", 0: "paddingStart" }, end: {}, locations: [77601039, 1612144654], pointerEvents: "none" });
+  items1[1] = callback(width(4554), { style: items2, colors: items3, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 1], pointerEvents: "none" });
   const items4 = [tmp.container, ];
   const obj2 = { width, height: sum / 2, backgroundColor: str2 };
   items4[1] = obj2;
@@ -79,6 +83,6 @@ const memoResult = importAllResult.memo(function YouBarFloatingShade() {
   obj.children = items1;
   return callback2(closure_8, obj);
 });
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarFloatingShade.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarFloatingShade.tsx");
 
 export default memoResult;

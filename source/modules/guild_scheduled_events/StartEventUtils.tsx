@@ -1,25 +1,34 @@
-// Module ID: 8465
-// Function ID: 67531
+// Module ID: 8471
+// Function ID: 67568
 // Name: createStageChannelForEvent
-// Dependencies: []
+// Dependencies: [5, 1352, 1348, 1838, 1354, 653, 8411, 44, 7490, 8344, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8465 (createStageChannelForEvent)
+// Module 8471 (createStageChannelForEvent)
+import ME from "ME";
+import { createChannelRecordFromServer as closure_4 } from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
+import { ChannelTypes } from "ME";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function createStageChannelForEvent(guild, name, arg2) {
   return _createStageChannelForEvent(...arguments);
 }
 function _createStageChannelForEvent() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _createStageChannelForEvent = obj;
   return obj(...arguments);
 }
 function findOrCreateEventChannel(guild_id) {
-  const guild = guild.getGuild(guild_id.guild_id);
+  guild = guild.getGuild(guild_id.guild_id);
   if (null == guild) {
     return Promise.resolve(null);
   } else {
-    const channel = channel.getChannel(guild_id.channel_id);
+    channel = channel.getChannel(guild_id.channel_id);
     if (null == channel) {
       let resolved = createStageChannelForEvent(guild, guild_id.name, arg1);
     } else {
@@ -31,23 +40,15 @@ function findOrCreateEventChannel(guild_id) {
 function _preStartEventActions() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _preStartEventActions = obj;
   return obj(...arguments);
 }
 function _setEventAsActive() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _setEventAsActive = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).createChannelRecordFromServer;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ GuildScheduledEventEntityTypes: closure_7, GuildScheduledEventPrivacyLevel: closure_8 } = arg1(dependencyMap[4]));
-const ChannelTypes = arg1(dependencyMap[5]).ChannelTypes;
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_scheduled_events/StartEventUtils.tsx");
+({ GuildScheduledEventEntityTypes: closure_7, GuildScheduledEventPrivacyLevel: closure_8 } = GUILD_EVENT_MAX_NAME_LENGTH);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/StartEventUtils.tsx");
 
 export { createStageChannelForEvent };
 export { findOrCreateEventChannel };

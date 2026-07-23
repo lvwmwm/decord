@@ -1,12 +1,12 @@
-// Module ID: 13255
-// Function ID: 100567
+// Module ID: 13369
+// Function ID: 102723
 // Name: A11Y_FEATURE_MAP
-// Dependencies: []
+// Dependencies: [13127, 2, 13040]
 
-// Module 13255 (A11Y_FEATURE_MAP)
-const AccessibilityFeatureFlags = require(dependencyMap[0]).AccessibilityFeatureFlags;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/a11y/native/AccessibilityPreferencesSharedValue.tsx");
+// Module 13369 (A11Y_FEATURE_MAP)
+import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags";
+
+const result = require("AccessibilityAnnouncer").fileFinishedImporting("modules/a11y/native/AccessibilityPreferencesSharedValue.tsx");
 
 export const A11Y_FEATURE_MAP = { [AccessibilityFeatureFlags.REDUCED_MOTION]: "reduceMotion", [AccessibilityFeatureFlags.REDUCED_MOTION_PREFERS_CROSSFADES]: "prefersCrossfades", [AccessibilityFeatureFlags.SCREENREADER]: "screenReaderEnabled" };
-export const accessibilityPreferencesSharedValue = require(dependencyMap[2]).accessibilityPreferencesSharedValue;
+export const accessibilityPreferencesSharedValue = require("AccessibilityAnnouncer").accessibilityPreferencesSharedValue;

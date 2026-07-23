@@ -1,20 +1,21 @@
-// Module ID: 10043
-// Function ID: 77636
+// Module ID: 10051
+// Function ID: 77676
 // Name: _onAddDirectoryGuildEntry
-// Dependencies: []
+// Dependencies: [5, 31, 33, 10046, 4471, 10052, 1934, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 10043 (_onAddDirectoryGuildEntry)
+// Module 10051 (_onAddDirectoryGuildEntry)
+import GuildDirectoryAddAlert from "GuildDirectoryAddAlert";
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function _onAddDirectoryGuildEntry() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _onAddDirectoryGuildEntry = obj;
   return obj(...arguments);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/directory_channels/native/GuildDirectoryUtils.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/directory_channels/native/GuildDirectoryUtils.tsx");
 
 export const onAddDirectoryGuildEntry = function onAddDirectoryGuildEntry(arg0) {
   return _onAddDirectoryGuildEntry(...arguments);

@@ -1,13 +1,15 @@
-// Module ID: 13641
-// Function ID: 103342
+// Module ID: 13755
+// Function ID: 105498
 // Name: ProfileToActivityUpsellActionSheet
-// Dependencies: []
+// Dependencies: [31, 33, 13754, 3803, 4098, 13756, 2]
 // Exports: default
 
-// Module 13641 (ProfileToActivityUpsellActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/activity_privacy/native/ProfileToActivityUpsellActionSheet.tsx");
+// Module 13755 (ProfileToActivityUpsellActionSheet)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("getPermissiveness").fileFinishedImporting("modules/activity_privacy/native/ProfileToActivityUpsellActionSheet.tsx");
 
 export default function ProfileToActivityUpsellActionSheet(direction) {
   let confirmText;
@@ -15,12 +17,9 @@ export default function ProfileToActivityUpsellActionSheet(direction) {
   let title;
   let toastContent;
   direction = direction.direction;
-  const arg1 = direction;
   const affectedGuildIds = direction.affectedGuildIds;
-  const importDefault = affectedGuildIds;
   const mappedActivityValue = direction.mappedActivityValue;
-  const dependencyMap = mappedActivityValue;
-  const profileToActivityUpsellStrings = arg1(dependencyMap[2]).getProfileToActivityUpsellStrings(direction === arg1(dependencyMap[2]).ChangeDirection.RESTRICTING, direction.settingName);
+  const profileToActivityUpsellStrings = direction(mappedActivityValue[2]).getProfileToActivityUpsellStrings(direction === direction(mappedActivityValue[2]).ChangeDirection.RESTRICTING, direction.settingName);
   const items = [mappedActivityValue, direction, affectedGuildIds];
   ({ title, subtitle, confirmText, toastContent } = profileToActivityUpsellStrings);
   const onConfirm = React.useCallback(() => {
@@ -31,5 +30,5 @@ export default function ProfileToActivityUpsellActionSheet(direction) {
   const onCardPress = React.useCallback(() => {
     affectedGuildIds(mappedActivityValue[4]).hideActionSheet();
   }, []);
-  return jsx(importDefault(dependencyMap[5]), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm, onCardPress });
+  return jsx(affectedGuildIds(mappedActivityValue[5]), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm, onCardPress });
 };

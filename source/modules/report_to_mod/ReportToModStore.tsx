@@ -1,51 +1,52 @@
-// Module ID: 9524
-// Function ID: 74161
+// Module ID: 9531
+// Function ID: 74202
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 3947, 566, 686, 2]
 
-// Module 9524 (_isNativeReflectConstruct)
+// Module 9531 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
 function handleSelectedGuildChange() {
-  const lastSelectedGuildId = lastSelectedGuildId.getLastSelectedGuildId();
-  if (lastSelectedGuildId !== closure_6) {
+  lastSelectedGuildId = lastSelectedGuildId.getLastSelectedGuildId();
+  if (lastSelectedGuildId !== c6) {
     let tmp2 = null;
-    let closure_7 = null;
+    let c7 = null;
     if (null != lastSelectedGuildId) {
       tmp2 = lastSelectedGuildId;
     }
-    closure_6 = tmp2;
+    c6 = tmp2;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = null;
-let closure_7 = null;
+let c6 = null;
+let c7 = null;
 let closure_8 = { reportedMessages: {} };
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class ReportToModStore {
     constructor() {
       self = this;
       tmp = ReportToModStore(this, ReportToModStore);
-      obj = closure_3(ReportToModStore);
-      tmp2 = closure_2;
-      if (closure_9()) {
+      obj = outer1_3(ReportToModStore);
+      tmp2 = outer1_2;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -54,7 +55,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ReportToModStore;
   callback2(ReportToModStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -64,7 +64,7 @@ let tmp2 = (PersistedStore) => {
         const _Object = Object;
         const _Object2 = Object;
         const entries = Object.entries(reportedMessages.reportedMessages);
-        closure_8.reportedMessages = Object.fromEntries(entries.map((arg0) => {
+        outer1_8.reportedMessages = Object.fromEntries(entries.map((arg0) => {
           let tmp;
           let tmp2;
           [tmp, tmp2] = arg0;
@@ -72,15 +72,15 @@ let tmp2 = (PersistedStore) => {
           return items;
         }));
       }
-      const items = [closure_5];
-      self.syncWith(items, closure_10);
+      let items = [outer1_5];
+      self.syncWith(items, outer1_10);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[1] = obj;
@@ -88,8 +88,8 @@ let tmp2 = (PersistedStore) => {
     key: "isUserBanned",
     value(arg0) {
       let value;
-      if (null != closure_7) {
-        value = closure_7.get(arg0);
+      if (null != outer1_7) {
+        value = outer1_7.get(arg0);
       }
       let tmp3 = null;
       if (null != value) {
@@ -102,24 +102,24 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getReportedMessages",
     value() {
-      return closure_8.reportedMessages;
+      return outer1_8.reportedMessages;
     }
   };
   items[4] = {
     key: "hasReportedMessage",
     value(arg0, arg1) {
       let hasItem;
-      if (null != closure_8.reportedMessages[arg0]) {
+      if (null != outer1_8.reportedMessages[arg0]) {
         hasItem = obj.has(arg1);
       }
       return null != hasItem && hasItem;
     }
   };
   return callback(ReportToModStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "ReportToModStore";
 tmp2.persistKey = "ReportToModStore";
-const items = [
+let items = [
   (reportedMessages) => {
     const obj = {};
     reportedMessages = undefined;
@@ -134,7 +134,7 @@ const items = [
   }
 ];
 tmp2.migrations = items;
-tmp2 = new tmp2(importDefault(dependencyMap[7]), {
+tmp2 = new tmp2(require("dispatcher"), {
   REPORT_TO_MOD_REPORT_MESSAGE_SUCCESS: function handleMessageReportSuccess(channelId) {
     channelId = channelId.channelId;
     if (null == closure_8.reportedMessages[channelId]) {
@@ -145,31 +145,31 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     closure_8.reportedMessages[channelId].add(channelId.messageId);
   },
   GUILD_BAN_ADD: function handleGuildBanAdd(guildId) {
-    let tmp = guildId.guildId === closure_6;
+    let tmp = guildId.guildId === c6;
     if (tmp) {
-      tmp = null != store;
+      tmp = null != _null;
     }
     if (tmp) {
-      const result = store.set(guildId.user.id, true);
+      const result = _null.set(guildId.user.id, true);
     }
   },
   GUILD_BAN_REMOVE: function handleGuildBanRemove(guildId) {
-    let tmp = guildId.guildId === closure_6;
+    let tmp = guildId.guildId === c6;
     if (tmp) {
-      tmp = null != store;
+      tmp = null != _null;
     }
     if (tmp) {
-      const result = store.set(guildId.user.id, false);
+      const result = _null.set(guildId.user.id, false);
     }
   },
   GUILD_SETTINGS_LOADED_BANS_BATCH: function handleGuildBansLoaded(guildId) {
     let bans;
     let userIds;
     ({ bans, userIds } = guildId);
-    let closure_0;
-    if (guildId.guildId === closure_6) {
+    let set;
+    if (guildId.guildId === c6) {
       const _Set = Set;
-      const set = new Set(bans.map((user) => {
+      set = new Set(bans.map((user) => {
         user = user.user;
         let id;
         if (null != user) {
@@ -177,7 +177,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
         }
         return id;
       }));
-      closure_0 = set;
       let _Set2 = Set;
       if (null == userIds) {
         userIds = [];
@@ -185,10 +184,9 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
       const prototype = _Set2.prototype;
       _Set2 = new _Set2(userIds);
       const found = Array.from(_Set2).filter((arg0) => !set.has(arg0));
-      if (null == closure_7) {
+      if (null == map) {
         const _Map = Map;
-        const map = new Map();
-        closure_7 = map;
+        map = new Map();
       }
       const item = set.forEach((arg0) => {
         if (null != map) {
@@ -204,11 +202,11 @@ tmp2 = new tmp2(importDefault(dependencyMap[7]), {
     }
   },
   LOGOUT: function handleLogout() {
-    let closure_6 = null;
-    let closure_7 = null;
+    let c6 = null;
+    let c7 = null;
     closure_8.reportedMessages = {};
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/report_to_mod/ReportToModStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/report_to_mod/ReportToModStore.tsx");
 
 export default tmp2;

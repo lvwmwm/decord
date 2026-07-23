@@ -1,13 +1,13 @@
-// Module ID: 6435
-// Function ID: 50585
+// Module ID: 6440
+// Function ID: 50614
 // Name: ReactionsSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6441, 2]
 // Exports: ReactionsSpotIllustration
 
-// Module 6435 (ReactionsSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ReactionsSpotIllustration.native.tsx");
+// Module 6440 (ReactionsSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ReactionsSpotIllustration.native.tsx");
 
 export const ReactionsSpotIllustration = function ReactionsSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ReactionsSpotIllustration = function ReactionsSpotIllustration(widt
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6441) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ReactionsSpotIllustration = function ReactionsSpotIllustration(widt
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

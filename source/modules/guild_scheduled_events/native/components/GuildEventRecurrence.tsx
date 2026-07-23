@@ -1,62 +1,63 @@
-// Module ID: 8461
-// Function ID: 67499
+// Module ID: 8467
+// Function ID: 67536
 // Name: GuildEventRecurrence
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 1838, 6758, 33, 4130, 689, 566, 8351, 8402, 8352, 8346, 1212, 4660, 8361, 4126, 8365, 1273, 8468, 2]
 // Exports: default
 
-// Module 8461 (GuildEventRecurrence)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = { container: { useFramePreviewOverrideStore: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008691694761874, stickerOpaque: -53728521742446590000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, lineHeight: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020451186863600537, youtube_video_id: -139311843875643900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, eventHeader: {} };
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.INTERACTIVE_BACKGROUND_SELECTED, borderRadius: importDefault(dependencyMap[7]).radii.xs };
-obj.active = obj;
-obj.actions = { -9223372036854775808: true, 9223372036854775807: true, 0: true };
-const obj1 = { "Null": "/assets/images/native/icons", "Null": 24, "Null": 24, "Null": null, "Null": "d7e806908635ad007fa68ad7fb2ccc9f", borderRadius: importDefault(dependencyMap[7]).radii.xs };
-obj.secondarySmallButton = obj1;
-const tmp2 = arg1(dependencyMap[5]);
-obj.secondarySmallIcon = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_STRONG };
-let closure_10 = obj.createStyles(obj);
-const obj2 = { tintColor: importDefault(dependencyMap[7]).colors.TEXT_STRONG };
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventRecurrence.tsx");
+// Module 8467 (GuildEventRecurrence)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { alignSelf: "stretch", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, eventHeader: { marginStart: 8, flexShrink: 0, flexGrow: 1 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_SELECTED, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+_createForOfIteratorHelperLoose.active = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.actions = { alignItems: "center", flexDirection: "row", flexShrink: 0 };
+let obj1 = { flexShrink: 0, alignItems: "center", flexDirection: "row", padding: 8, marginLeft: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+_createForOfIteratorHelperLoose.secondarySmallButton = obj1;
+_createForOfIteratorHelperLoose.secondarySmallIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventRecurrence.tsx");
 
 export default function GuildEventRecurrence(recurrenceId) {
+  let dependencyMap;
   let isActive;
   recurrenceId = recurrenceId.recurrenceId;
-  const arg1 = recurrenceId;
   const guildEventId = recurrenceId.guildEventId;
-  const importDefault = guildEventId;
-  ({ onPress: closure_2, isActive } = recurrenceId);
-  let View;
-  let closure_5;
-  let closure_6;
-  let closure_7;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => tmp10.getGuildScheduledEvent(guildEventId));
-  const React = stateFromStores;
+  ({ onPress: dependencyMap, isActive } = recurrenceId);
+  let stateFromStores1;
+  let _isNativeReflectConstruct;
+  let c6;
+  let c7;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = recurrenceId(566);
+  const items = [c7];
+  const stateFromStores = obj.useStateFromStores(items, () => _undefined2.getGuildScheduledEvent(guildEventId));
   let id;
   if (null != stateFromStores) {
     id = stateFromStores.id;
   }
-  obj = importDefault(dependencyMap[9])(recurrenceId, id);
-  let obj3 = arg1(dependencyMap[8]);
-  const items1 = [closure_6];
-  let stateFromStores1 = obj3.useStateFromStores(items1, () => {
+  obj = guildEventId(8351)(recurrenceId, id);
+  let obj3 = recurrenceId(566);
+  const items1 = [c6];
+  stateFromStores1 = obj3.useStateFromStores(items1, () => {
     let guild_id;
     if (null != stateFromStores) {
       guild_id = stateFromStores.guild_id;
     }
-    return toISOStringResult.getGuild(guild_id);
+    return _undefined.getGuild(guild_id);
   });
-  View = stateFromStores1;
-  let obj4 = arg1(dependencyMap[8]);
-  const items2 = [closure_5];
+  let obj4 = recurrenceId(566);
+  const items2 = [_isNativeReflectConstruct];
   const stateFromStores2 = obj4.useStateFromStores(items2, () => {
     let channel_id;
     if (null != stateFromStores) {
@@ -64,25 +65,25 @@ export default function GuildEventRecurrence(recurrenceId) {
     }
     return channel.getChannel(channel_id);
   });
-  let obj5 = arg1(dependencyMap[10]);
+  let obj5 = recurrenceId(8402);
   if (null != stateFromStores2) {
     stateFromStores1 = stateFromStores2;
   }
-  closure_5 = obj5.useManageResourcePermissions(stateFromStores1).canManageGuildEvent(stateFromStores);
-  let obj6 = arg1(dependencyMap[11]);
+  _isNativeReflectConstruct = obj5.useManageResourcePermissions(stateFromStores1).canManageGuildEvent(stateFromStores);
+  let obj6 = recurrenceId(8352);
   const eventScheduleById = obj6.useEventScheduleById(guildEventId, recurrenceId);
   let toISOStringResult;
   if (null != eventScheduleById) {
     const startTime = eventScheduleById.startTime;
     toISOStringResult = startTime.toISOString();
   }
-  closure_6 = toISOStringResult;
+  c6 = toISOStringResult;
   const items3 = [toISOStringResult];
-  const memo = React.useMemo(() => {
+  const memo = stateFromStores.useMemo(() => {
     let eventTimeData = null;
-    if (null != toISOStringResult) {
-      eventTimeData = recurrenceId(closure_2[12]).getEventTimeData(toISOStringResult);
-      const obj = recurrenceId(closure_2[12]);
+    if (null != c6) {
+      eventTimeData = recurrenceId(outer1_2[12]).getEventTimeData(c6);
+      const obj = recurrenceId(outer1_2[12]);
     }
     return eventTimeData;
   }, items3);
@@ -94,12 +95,12 @@ export default function GuildEventRecurrence(recurrenceId) {
     }
     const is_canceled = obj.is_canceled;
     let tmp10 = undefined !== is_canceled && is_canceled;
-    closure_7 = tmp10;
+    c7 = tmp10;
     let str2 = "";
     if (tmp10) {
-      const intl = arg1(dependencyMap[13]).intl;
+      const intl = recurrenceId(1212).intl;
       const _HermesInternal = HermesInternal;
-      str2 = "" + intl.string(arg1(dependencyMap[13]).t.fyBVRm) + ", ";
+      str2 = "" + intl.string(recurrenceId(1212).t.fyBVRm) + ", ";
     }
     let str4 = "";
     const sum = str2 + stateFromStores.name;
@@ -117,13 +118,13 @@ export default function GuildEventRecurrence(recurrenceId) {
     items4[1] = active;
     obj.style = items4;
     const obj1 = {
-      marginBottom: null,
-      borderWidth: null,
+      accessible: true,
+      accessibilityRole: "button",
       accessibilityLabel: sum1,
       onPress(stopPropagation) {
           stopPropagation.stopPropagation();
-          let tmp2 = tmp10;
-          if (!tmp10) {
+          let tmp2 = c7;
+          if (!c7) {
             tmp2 = null == callback;
           }
           if (!tmp2) {
@@ -133,37 +134,37 @@ export default function GuildEventRecurrence(recurrenceId) {
       style: tmp.eventHeader
     };
     const obj2 = { isActive, event: stateFromStores, showUserCount: false, showCreator: false, recurrenceId };
-    obj1.children = callback(arg1(dependencyMap[15]).GuildEventCardHeader, obj2);
-    const items5 = [callback(arg1(dependencyMap[14]).PressableOpacity, obj1), ];
+    obj1.children = callback(recurrenceId(8361).GuildEventCardHeader, obj2);
+    const items5 = [callback(recurrenceId(4660).PressableOpacity, obj1), ];
     obj3 = { style: tmp.actions };
     if (tmp10) {
-      obj4 = {};
-      const intl2 = arg1(dependencyMap[13]).intl;
-      obj4.children = intl2.string(arg1(dependencyMap[13]).t.fyBVRm);
-      tmp10 = callback(arg1(dependencyMap[16]).Text, obj4);
+      obj4 = { variant: "text-sm/semibold", color: "text-feedback-critical" };
+      const intl2 = recurrenceId(1212).intl;
+      obj4.children = intl2.string(recurrenceId(1212).t.fyBVRm);
+      tmp10 = callback(recurrenceId(4126).Text, obj4);
     }
     const items6 = [tmp10, ];
-    obj5 = { marginBottom: null, borderWidth: null };
-    const intl3 = arg1(dependencyMap[13]).intl;
+    obj5 = { accessible: true, accessibilityRole: "button" };
+    const intl3 = recurrenceId(1212).intl;
     const _HermesInternal3 = HermesInternal;
-    obj5.accessibilityLabel = "" + intl3.string(arg1(dependencyMap[13]).t.HIgA5a) + ", " + sum1;
+    obj5.accessibilityLabel = "" + intl3.string(recurrenceId(1212).t.HIgA5a) + ", " + sum1;
     obj5.onPress = function onPress(stopPropagation) {
       if (null != stateFromStores) {
         stopPropagation.stopPropagation();
         if (null != stateFromStores1) {
-          const result = recurrenceId(closure_2[17]).showGuildEventModeratorActionSheet(stateFromStores, closure_5, recurrenceId);
-          const obj = recurrenceId(closure_2[17]);
+          const result = recurrenceId(outer1_2[17]).showGuildEventModeratorActionSheet(stateFromStores, _isNativeReflectConstruct, recurrenceId);
+          const obj = recurrenceId(outer1_2[17]);
         }
       }
     };
     obj5.style = tmp.secondarySmallButton;
-    obj6 = { source: importDefault(dependencyMap[19]), size: arg1(dependencyMap[18]).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
-    obj5.children = callback(arg1(dependencyMap[18]).Icon, obj6);
-    items6[1] = callback(arg1(dependencyMap[14]).PressableOpacity, obj5);
+    obj6 = { source: guildEventId(8468), size: recurrenceId(1273).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
+    obj5.children = callback(recurrenceId(1273).Icon, obj6);
+    items6[1] = callback(recurrenceId(4660).PressableOpacity, obj5);
     obj3.children = items6;
-    items5[1] = closure_9(View, obj3);
+    items5[1] = closure_9(stateFromStores1, obj3);
     obj.children = items5;
-    return closure_9(View, obj);
+    return closure_9(stateFromStores1, obj);
   }
-  const tmp3 = importDefault(dependencyMap[9]);
+  const tmp3 = guildEventId(8351);
 };

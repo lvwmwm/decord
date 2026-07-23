@@ -1,40 +1,41 @@
-// Module ID: 11153
-// Function ID: 86741
+// Module ID: 11163
+// Function ID: 86791
 // Name: result
-// Dependencies: []
+// Dependencies: [57, 1348, 4051, 1849, 11164, 11165, 4566, 664, 566, 21, 1334, 5802, 3946, 2]
 // Exports: default
 
-// Module 11153 (result)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const BuiltInSectionId = arg1(dependencyMap[6]).BuiltInSectionId;
-const result = 5 * importDefault(dependencyMap[7]).Millis.SECOND;
-let closure_11 = 5 * importDefault(dependencyMap[7]).Millis.SECOND;
-let closure_12 = 14 * importDefault(dependencyMap[7]).Millis.DAY;
-const HOUR = importDefault(dependencyMap[7]).Millis.HOUR;
-const DAY = importDefault(dependencyMap[7]).Millis.DAY;
-const result1 = arg1(dependencyMap[13]).fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useCanShowAppLauncherOnboarding.tsx");
+// Module 11163 (result)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { BuiltInSectionId } from "TRUE_OPTION_NAME";
+
+const require = arg1;
+let result = 5 * require("set").Millis.SECOND;
+let closure_11 = 5 * require("set").Millis.SECOND;
+let closure_12 = 14 * require("set").Millis.DAY;
+const HOUR = require("set").Millis.HOUR;
+const DAY = require("set").Millis.DAY;
+let result1 = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/onboarding/hooks/useCanShowAppLauncherOnboarding.tsx");
 
 export default function useCanShowAppLauncherOnboarding(channelId) {
   let recentApplicationCommandMetadata;
   let recentMessageMetadata;
   channelId = channelId.channelId;
-  const arg1 = channelId;
-  const timestamp = Date.now();
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId));
+  let timestamp = Date.now();
+  let obj = channelId(566);
+  let items = [_isNativeReflectConstruct];
+  let stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(channelId));
   let guild_id;
   if (null != stateFromStores) {
     guild_id = stateFromStores.guild_id;
   }
-  let tmp4 = function useIsNewUser() {
-    const items = [closure_6];
-    const stateFromStores = channelId(closure_2[8]).useStateFromStores(items, () => currentUser.getCurrentUser());
+  let tmp4 = (function useIsNewUser() {
+    const items = [outer1_6];
+    const stateFromStores = channelId(outer1_2[8]).useStateFromStores(items, () => outer2_6.getCurrentUser());
     let createdAt;
     if (null != stateFromStores) {
       createdAt = stateFromStores.createdAt;
@@ -43,48 +44,48 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
     if (tmp3) {
       const _Date = Date;
       const timestamp = Date.now();
-      tmp3 = timestamp < callback(closure_2[9]).extractTimestamp(stateFromStores.id) + closure_12;
-      const obj2 = callback(closure_2[9]);
+      tmp3 = timestamp < outer1_1(outer1_2[9]).extractTimestamp(stateFromStores.id) + outer1_12;
+      const obj2 = outer1_1(outer1_2[9]);
     }
     return tmp3;
-  }();
+  })();
   obj = { guildId: guild_id };
-  const isInCooldown = function useIsInCooldown(currentTimeMs) {
-    const items = [closure_7];
-    const stateFromStores = channelId(closure_2[8]).useStateFromStores(items, () => lastSeenTimeMs.getLastSeenTimeMs());
+  const isInCooldown = (function useIsInCooldown(currentTimeMs) {
+    const items = [outer1_7];
+    const stateFromStores = channelId(outer1_2[8]).useStateFromStores(items, () => outer2_7.getLastSeenTimeMs());
     let tmp2 = null != stateFromStores;
     if (tmp2) {
-      tmp2 = currentTimeMs.currentTimeMs < stateFromStores + closure_13;
+      tmp2 = currentTimeMs.currentTimeMs < stateFromStores + outer1_13;
     }
     return tmp2;
-  }({ currentTimeMs: timestamp });
+  })({ currentTimeMs: timestamp });
   const items1 = [];
   if (!{ isInCooldown }.isInCooldown) {
-    items1.push(arg1(dependencyMap[10]).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
+    items1.push(channelId(1334).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
   }
-  let obj2 = arg1(dependencyMap[11]);
-  obj = { willShowGlobalSearchOnboarding: callback(obj2.useSelectedDismissibleContent(items1), 1)[0] === arg1(dependencyMap[10]).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING };
-  const tmp5 = function useIsInSmallContext(guildId) {
-    const channelId = guildId.guildId;
-    const items = [closure_5];
-    const stateFromStores = channelId(closure_2[8]).useStateFromStores(items, () => memberCount.getMemberCount(guildId));
+  let obj2 = channelId(5802);
+  obj = { willShowGlobalSearchOnboarding: callback(obj2.useSelectedDismissibleContent(items1), 1)[0] === channelId(1334).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING };
+  const tmp5 = (function useIsInSmallContext(guildId) {
+    guildId = guildId.guildId;
+    const items = [outer1_5];
+    const stateFromStores = channelId(outer1_2[8]).useStateFromStores(items, () => outer2_5.getMemberCount(guildId));
     let tmp2 = null != stateFromStores;
     if (tmp2) {
       tmp2 = stateFromStores < 200;
     }
     return tmp2;
-  }(obj);
+  })(obj);
   const items2 = [closure_8];
-  const stateFromStoresObject = arg1(dependencyMap[8]).useStateFromStoresObject(items2, () => ({ recentMessageMetadata: store.getRecentMessageMetadata(), recentApplicationCommandMetadata: store.getRecentApplicationCommandMetadata() }));
+  const stateFromStoresObject = channelId(566).useStateFromStoresObject(items2, () => ({ recentMessageMetadata: outer1_8.getRecentMessageMetadata(), recentApplicationCommandMetadata: outer1_8.getRecentApplicationCommandMetadata() }));
   ({ recentApplicationCommandMetadata, recentMessageMetadata } = stateFromStoresObject);
-  const obj5 = arg1(dependencyMap[8]);
+  const obj5 = channelId(566);
   const items3 = [closure_7];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items3, () => triggeredOnboardingContentMetadata.getTriggeredOnboardingContentMetadata());
+  const stateFromStores1 = channelId(566).useStateFromStores(items3, () => outer1_7.getTriggeredOnboardingContentMetadata());
   const obj1 = { currentTimeMs: timestamp, recentMessageMetadata, channelId };
   const recentMessageMetadata2 = obj1.recentMessageMetadata;
   let tmp13 = null != recentMessageMetadata2;
   if (tmp13) {
-    tmp13 = tmp12 < recentMessageMetadata2.timeMs + result;
+    tmp13 = tmp12 < recentMessageMetadata2.timeMs + closure_10;
   }
   if (tmp13) {
     channelId = undefined;
@@ -110,15 +111,15 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   if (null != recentApplicationCommandMetadata) {
     applicationId = recentApplicationCommandMetadata.applicationId;
   }
-  const obj6 = arg1(dependencyMap[8]);
+  const obj6 = channelId(566);
   const tmp21 = applicationId === BuiltInSectionId.BUILT_IN;
-  const result = arg1(dependencyMap[12]).useIsDismissibleContentDismissed_UNSAFE(arg1(dependencyMap[10]).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
-  const obj9 = arg1(dependencyMap[12]);
-  let result1 = arg1(dependencyMap[12]).useIsDismissibleContentDismissed_UNSAFE(arg1(dependencyMap[10]).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-  const obj10 = arg1(dependencyMap[12]);
-  const obj3 = { alignItems: null, justifyContent: "rgba(0, 0, 0, 0.251)", placeholderCount: "RFC3986", limit: null, includeFrecency: "RFC1738" };
+  const result = channelId(3946).useIsDismissibleContentDismissed_UNSAFE(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+  const obj9 = channelId(3946);
+  let result1 = channelId(3946).useIsDismissibleContentDismissed_UNSAFE(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+  const obj10 = channelId(3946);
+  const obj3 = { canShowOnboarding: false, canShowBotsBanner: false, canShowAppsOrActivitiesBanner: false, willShowGlobalSearchOnboarding: false, fromTriggeredOnboarding: false };
   let tmp25 = null != stateFromStores1;
-  const result2 = arg1(dependencyMap[12]).useIsDismissibleContentDismissed_UNSAFE(arg1(dependencyMap[10]).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+  const result2 = channelId(3946).useIsDismissibleContentDismissed_UNSAFE(channelId(1334).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp25) {
     tmp25 = stateFromStores1.channelId === channelId;
   }
@@ -168,7 +169,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
       ({ canShowBotsBanner: obj12.canShowBotsBanner, canShowAppsOrActivitiesBanner: obj12.canShowAppsOrActivitiesBanner, willShowGlobalSearchOnboarding: obj12.willShowGlobalSearchOnboarding } = stateFromStores1);
       obj3.fromTriggeredOnboarding = true;
     }
-    const tmp28 = !obj3.canShowOnboarding && tmp25;
+    tmp28 = !obj3.canShowOnboarding && tmp25;
   }
   return obj3;
 };

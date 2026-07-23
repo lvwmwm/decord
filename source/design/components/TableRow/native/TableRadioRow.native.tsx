@@ -1,43 +1,46 @@
-// Module ID: 7513
-// Function ID: 60183
+// Module ID: 7518
+// Function ID: 60217
 // Name: TableRadioRow
-// Dependencies: []
+// Dependencies: [31, 33, 7519, 3836, 3848, 5165, 7520, 2]
 // Exports: TableRadioRow
 
-// Module 7513 (TableRadioRow)
-let closure_2 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/TableRow/native/TableRadioRow.native.tsx");
+// Module 7518 (TableRadioRow)
+import result from "result";
+import { jsx } from "jsxProd";
+
+let require = arg1;
+const result = require("context").fileFinishedImporting("design/components/TableRow/native/TableRadioRow.native.tsx");
 
 export const TableRadioRow = function TableRadioRow(value) {
   let accessibilityRole;
   let accessibilityState;
+  let dependencyMap;
   let disabled;
   let label;
   let legacyCompat_selected;
   let subLabel;
   value = value.value;
-  const arg1 = value;
+  const require = value;
   ({ label, subLabel, disabled } = value);
   if (disabled === undefined) {
     disabled = false;
   }
-  ({ legacyCompat_selected, legacyCompat_onPress: closure_1 } = value);
-  let obj = { name: "ThreadLockIcon", rawSpec: "png", spec: true, type: "/assets/design/components/Icon/native/redesign/generated/images", quality: 24, latestId: 24, invokeId: null };
+  ({ legacyCompat_selected, legacyCompat_onPress: dependencyMap } = value);
+  let obj = { value: 0, label: 0, subLabel: 0, disabled: 0, accessibilityHint: 0, legacyCompat_selected: 0, legacyCompat_onPress: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(value, obj);
-  let React;
-  const context = React.useContext(arg1(dependencyMap[2]).TableRadioGroupContext);
-  React = context.onSelect;
+  let onSelect;
+  const context = onSelect.useContext(require(7519) /* context */.TableRadioGroupContext);
+  onSelect = context.onSelect;
   if (null == legacyCompat_selected) {
     legacyCompat_selected = context.selectedValue === value;
   }
-  let obj1 = arg1(dependencyMap[3]);
+  let obj1 = require(3836) /* getNodeText */;
   const nodeText = obj1.getNodeText(label);
-  const nodeText1 = arg1(dependencyMap[3]).getNodeText(subLabel);
-  const obj3 = arg1(dependencyMap[3]);
+  const nodeText1 = require(3836) /* getNodeText */.getNodeText(subLabel);
+  const obj3 = require(3836) /* getNodeText */;
   obj = { selected: legacyCompat_selected, disabled };
-  const radioA11yNative = arg1(dependencyMap[4]).useRadioA11yNative(obj);
+  const radioA11yNative = require(3848) /* useCheckboxA11yNative */.useRadioA11yNative(obj);
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   obj = {};
   const merged1 = Object.assign(merged);
@@ -58,9 +61,9 @@ export const TableRadioRow = function TableRadioRow(value) {
     if (null != callback) {
       callback(arg0);
     }
-    onSelect(value);
+    onSelect(closure_0);
   };
   obj1 = { selected: legacyCompat_selected };
-  obj["trailing"] = jsx(arg1(dependencyMap[6]).FormRadio, obj1);
-  return jsx(arg1(dependencyMap[5]).TableRow, obj);
+  obj["trailing"] = jsx(require(7520) /* FormRadio */.FormRadio, { selected: legacyCompat_selected });
+  return jsx(require(5165) /* TableRowInner */.TableRow, {});
 };

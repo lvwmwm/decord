@@ -1,34 +1,35 @@
-// Module ID: 11070
-// Function ID: 86119
+// Module ID: 11080
+// Function ID: 86169
 // Name: toggleMemberListContentFeedHidden
-// Dependencies: [905969671, 1241513986]
+// Dependencies: [1348, 1906, 3947, 1849, 11081, 653, 686, 675, 11082, 5484, 2]
 // Exports: clearDeleteHistoryError, onGameProfileOpen, onTapContentInventoryEntryEmbed, toggleMemberListContentFeedHidden
 
-// Module 11070 (toggleMemberListContentFeedHidden)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/content_inventory/ContentInventoryActionCreators.tsx");
+// Module 11080 (toggleMemberListContentFeedHidden)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/content_inventory/ContentInventoryActionCreators.tsx");
 
 export const toggleMemberListContentFeedHidden = function toggleMemberListContentFeedHidden() {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj.dispatch({ type: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN" });
   obj = { channel_id: channelId.getChannelId(), guild_id: guildId.getGuildId(), hidden: hidden.hidden };
-  importDefault(dependencyMap[7]).track(AnalyticEvents.MEMBERLIST_CONTENT_FEED_HIDDEN, obj);
+  importDefault(675).track(AnalyticEvents.MEMBERLIST_CONTENT_FEED_HIDDEN, obj);
 };
 export const onGameProfileOpen = function onGameProfileOpen() {
-  importDefault(dependencyMap[6]).dispatch({ type: "GAME_PROFILE_OPEN" });
+  importDefault(686).dispatch({ type: "GAME_PROFILE_OPEN" });
 };
 export const onTapContentInventoryEntryEmbed = function onTapContentInventoryEntryEmbed(authorId) {
   let message;
   let tappedElement;
   ({ message, tappedElement } = authorId);
-  const channel = channel.getChannel(message.channel_id);
+  channel = channel.getChannel(message.channel_id);
   if ("avatar" === tappedElement) {
-    const user = user.getUser(authorId.authorId);
+    user = user.getUser(authorId.authorId);
     if (null != user) {
       let showUserProfileResult = { userId: user.id };
       let id;
@@ -37,7 +38,7 @@ export const onTapContentInventoryEntryEmbed = function onTapContentInventoryEnt
       }
       showUserProfileResult.channelId = id;
       showUserProfileResult.messageId = message.id;
-      let items = importDefault(dependencyMap[9]);
+      let items = importDefault(5484);
       if (tmp2) {
         items = [];
         items[0] = items.AVATAR;
@@ -46,11 +47,11 @@ export const onTapContentInventoryEntryEmbed = function onTapContentInventoryEnt
         items1 = [items.USERNAME];
       }
       showUserProfileResult.sourceAnalyticsLocations = items1;
-      showUserProfileResult = importAll(dependencyMap[8]).showUserProfile(showUserProfileResult);
-      const obj2 = importAll(dependencyMap[8]);
+      showUserProfileResult = importAll(11082).showUserProfile(showUserProfileResult);
+      const obj2 = importAll(11082);
     }
   }
 };
 export const clearDeleteHistoryError = function clearDeleteHistoryError() {
-  importDefault(dependencyMap[6]).dispatch({ type: "CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR" });
+  importDefault(686).dispatch({ type: "CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR" });
 };

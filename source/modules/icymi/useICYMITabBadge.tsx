@@ -1,19 +1,21 @@
-// Module ID: 15002
-// Function ID: 112978
+// Module ID: 15118
+// Function ID: 115146
 // Name: useICYMITabBadge
-// Dependencies: []
+// Dependencies: [8306, 566, 2]
 // Exports: default, icymiTabBadgeShown
 
-// Module 15002 (useICYMITabBadge)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/icymi/useICYMITabBadge.tsx");
+// Module 15118 (useICYMITabBadge)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/icymi/useICYMITabBadge.tsx");
 
 export default function useICYMITabBadge() {
   const obj = { value: 0 };
-  const items = [closure_2];
-  obj.showDot = arg1(dependencyMap[1]).useStateFromStores(items, () => closure_2.hasNewContent(), []);
+  const items = [_isNativeReflectConstruct];
+  obj.showDot = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.hasNewContent(), []);
   return obj;
 };
 export const icymiTabBadgeShown = function icymiTabBadgeShown() {
-  return closure_2.hasNewContent();
+  return _isNativeReflectConstruct.hasNewContent();
 };

@@ -1,38 +1,46 @@
-// Module ID: 15190
-// Function ID: 114560
+// Module ID: 15306
+// Function ID: 116730
 // Name: JoinRequestActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 1857, 1849, 653, 33, 4130, 566, 7887, 7186, 3991, 8236, 4066, 5486, 3834, 689, 665, 7893, 7108, 1904, 7888, 5187, 1273, 8502, 1212, 3842, 5189, 15307, 5446, 2]
 
-// Module 15190 (JoinRequestActionSheet)
+// Module 15306 (JoinRequestActionSheet)
+import importAllResult from "result";
+import { View } from "BottomSheetModal";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 class JoinRequestActionSheet {
   constructor(arg0) {
     joinRequest = global.joinRequest;
-    arg1 = joinRequest;
-    closure_5 = undefined;
-    tmp = closure_11();
+    c5 = undefined;
+    tmp = c11();
     user = joinRequest.user;
-    importDefault = user;
     userId = joinRequest.userId;
-    dependencyMap = userId;
     guildId = joinRequest.guildId;
-    defineProperty = guildId;
-    obj = arg1(dependencyMap[8]);
+    obj = require("initialize");
     items = [];
-    items[0] = closure_7;
+    items[0] = c7;
     items1 = [, ];
     items1[0] = user;
     items1[1] = userId;
     stateFromStores = obj.useStateFromStores(items, () => {
-      let user = user.getUser(userId);
+      let user = outer1_7.getUser(userId);
       if (null == user) {
-        const prototype = ctor.prototype;
-        user = new ctor(user);
+        const prototype = outer1_6.prototype;
+        user = new outer1_6(user);
       }
       return user;
     }, items1);
     View = stateFromStores;
     id = undefined;
-    tmp3 = importDefault(dependencyMap[9]);
+    tmp3 = require("useDisplayProfile");
     if (null != user) {
       id = user.id;
     }
@@ -40,30 +48,30 @@ class JoinRequestActionSheet {
       id = EMPTY_STRING_SNOWFLAKE_ID;
     }
     tmp3Result = tmp3(id);
-    obj2 = arg1(dependencyMap[10]);
+    obj2 = require("useBottomSheetRef");
     bottomSheetRef = obj2.useBottomSheetRef();
     ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
-    ref = defineProperty.useRef(null);
-    obj3 = arg1(dependencyMap[11]);
-    sharedValue = require("module_0");
-    closure_5 = sharedValue;
+    ref = guildId.useRef(null);
+    obj3 = require("module_3991");
+    sharedValue = require("result");
+    c5 = sharedValue;
     items2 = [];
     items2[0] = sharedValue;
-    callback = defineProperty.useCallback((nativeEvent) => {
+    callback = guildId.useCallback((nativeEvent) => {
       const result = sharedValue.set(nativeEvent.nativeEvent.contentOffset.y);
     }, items2);
-    tmp10 = importDefault(dependencyMap[12])({ user: stateFromStores, displayProfile: tmp3Result });
+    tmp10 = require("useProfileTheme")({ user: stateFromStores, displayProfile: tmp3Result });
     ({ theme, secondaryColor, primaryColor } = tmp10);
-    obj4 = arg1(dependencyMap[8]);
+    obj4 = require("initialize");
     items3 = [];
-    items3[0] = closure_5;
+    items3[0] = c5;
     stateFromStores1 = obj4.useStateFromStores(items3, () => sharedValue.syncProfileThemeWithUserTheme);
-    tmp12 = importDefault(dependencyMap[13])();
-    obj5 = arg1(dependencyMap[14]);
+    tmp12 = require("useTheme")();
+    obj5 = require("useProfileThemeValues");
     profileThemeValues = obj5.useProfileThemeValues(theme);
-    obj6 = arg1(dependencyMap[15]);
+    obj6 = require("map");
     tmp15 = null == profileThemeValues;
-    token = obj6.useToken(importDefault(dependencyMap[16]).colors.INTERACTIVE_TEXT_HOVER, theme);
+    token = obj6.useToken(require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_HOVER, theme);
     if (stateFromStores1) {
       prop = undefined;
       if (!tmp15) {
@@ -73,20 +81,20 @@ class JoinRequestActionSheet {
     } else if (!tmp15) {
       overlay = profileThemeValues.overlay;
     }
-    obj7 = arg1(dependencyMap[15]);
-    token1 = obj7.useToken(importDefault(dependencyMap[16]).colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT, tmp12);
+    obj7 = require("map");
+    token1 = obj7.useToken(require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT, tmp12);
     int2hexResult = token1;
     if (null != secondaryColor) {
       int2hexResult = token1;
       if (null != profileThemeValues) {
         int2hexResult = token1;
         if (null != overlay) {
-          tmp19 = arg1;
-          tmp20 = dependencyMap;
+          tmp19 = joinRequest;
+          tmp20 = userId;
           num = 17;
-          obj8 = arg1(dependencyMap[17]);
+          obj8 = require("pad2");
           num2 = 18;
-          obj9 = arg1(dependencyMap[18]);
+          obj9 = require("getProfileTheme");
           int2hexResult = obj8.int2hex(obj9.calculateOverlayedColor(secondaryColor, overlay));
         }
       }
@@ -94,7 +102,7 @@ class JoinRequestActionSheet {
     items4 = [, , ];
     items4[0] = guildId;
     ({ applicationStatus: arr5[1], userId: arr5[2] } = joinRequest);
-    effect = defineProperty.useEffect(() => {
+    effect = guildId.useEffect(() => {
       let obj = joinRequest(userId[19]);
       obj = { guildId, applicationStatus: joinRequest.applicationStatus, applicationUserId: joinRequest.userId };
       const result = obj.trackMemberApplicationViewed(obj);
@@ -102,7 +110,7 @@ class JoinRequestActionSheet {
     items5 = [, ];
     items5[0] = guildId;
     items5[1] = stateFromStores;
-    effect1 = defineProperty.useEffect(() => {
+    effect1 = guildId.useEffect(() => {
       let tmp = null == stateFromStores;
       if (!tmp) {
         let isNonUserBotResult = stateFromStores.isNonUserBot();
@@ -112,15 +120,15 @@ class JoinRequestActionSheet {
         tmp = isNonUserBotResult;
       }
       if (!tmp) {
-        const obj = { 0: 11945304078997316000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 2888286052403451000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: -8364226554049099000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 9223372036854775807: 0.0000000000000000000000000000000000000000000000000000000000000000000742174258080857, guildId };
+        const obj = { type: "action_sheet", withMutualGuilds: true, withMutualFriends: true, dispatchWait: true, guildId };
         user(userId[21])(stateFromStores.id, stateFromStores.getAvatarURL(guildId, 80), obj);
         const tmp9 = user(userId[21]);
       }
     }, items5);
     if (null == user) {
       tmp23 = jsx;
-      tmp24 = arg1;
-      tmp25 = dependencyMap;
+      tmp24 = joinRequest;
+      tmp25 = userId;
       num3 = 22;
       obj = {};
       tmp26 = jsx;
@@ -131,16 +139,16 @@ class JoinRequestActionSheet {
       obj2.marginTop = 42;
       obj1.style = obj2;
       num6 = 24;
-      obj1.Illustration = arg1(dependencyMap[24]).NoResults;
+      obj1.Illustration = require("getNoResultsSource").NoResults;
       num7 = 25;
-      intl = arg1(dependencyMap[25]).intl;
-      obj1.body = intl.string(arg1(dependencyMap[25]).t.eAn6z2);
-      obj.children = jsx(arg1(dependencyMap[23]).EmptyState, obj1);
-      tmp27 = jsx(arg1(dependencyMap[22]).BottomSheet, obj);
+      intl = require("getSystemLocale").intl;
+      obj1.body = intl.string(require("getSystemLocale").t.eAn6z2);
+      obj.children = jsx(require("Button").EmptyState, obj1);
+      tmp27 = jsx(require("Background").BottomSheet, obj);
     } else {
       tmp28 = jsx;
-      tmp29 = arg1;
-      tmp30 = dependencyMap;
+      tmp29 = joinRequest;
+      tmp30 = userId;
       num8 = 26;
       obj3 = {};
       obj3.theme = theme;
@@ -148,7 +156,7 @@ class JoinRequestActionSheet {
       obj3.secondaryColor = secondaryColor;
       tmp31 = jsxs;
       num9 = 22;
-      obj4 = {};
+      obj4 = { ref: null, handleDisabled: true, scrollable: true, startExpanded: true };
       obj4.ref = bottomSheetRef;
       obj4.contentStyles = tmp.noPadding;
       tmp32 = jsx;
@@ -170,17 +178,17 @@ class JoinRequestActionSheet {
       obj8 = {};
       obj8.style = tmp.profileContainer;
       tmp35 = jsx;
-      tmp36 = importDefault;
+      tmp36 = user;
       num11 = 28;
       obj9 = {};
       obj9.joinRequest = joinRequest;
       obj9.user = stateFromStores;
       obj9.displayProfile = tmp3Result;
-      obj8.children = jsx(importDefault(dependencyMap[28]), obj9);
+      obj8.children = jsx(require("OpenInterviewButton"), obj9);
       obj7.children = jsx(View, obj8);
       obj5.children = jsx(View, obj7);
       items7 = [, ];
-      items7[0] = jsx(arg1(dependencyMap[27]).BottomSheetScrollView, obj5);
+      items7[0] = jsx(require("BottomSheetModal").BottomSheetScrollView, obj5);
       tmp37 = jsx;
       num12 = 29;
       obj10 = {};
@@ -190,26 +198,18 @@ class JoinRequestActionSheet {
       obj11.backgroundColor = token;
       obj10.tabStyle = obj11;
       obj10.onPress = bottomSheetClose;
-      items7[1] = jsx(arg1(dependencyMap[29]).ActionSheetHeaderBar, obj10);
+      items7[1] = jsx(require("ActionSheetHeaderBar").ActionSheetHeaderBar, obj10);
       obj4.children = items7;
-      obj3.children = jsxs(arg1(dependencyMap[22]).BottomSheet, obj4);
-      tmp27 = jsx(arg1(dependencyMap[26]).ThemeContextProvider, obj3);
+      obj3.children = jsxs(require("Background").BottomSheet, obj4);
+      tmp27 = jsx(require("ManaContext").ThemeContextProvider, obj3);
     }
     return tmp27;
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const EMPTY_STRING_SNOWFLAKE_ID = arg1(dependencyMap[5]).EMPTY_STRING_SNOWFLAKE_ID;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createStyles({ container: { flex: 1 }, profileContainer: { position: "relative" }, noPadding: { paddingHorizontal: 0 } });
-const obj2 = arg1(dependencyMap[7]);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 }, profileContainer: { position: "relative" }, noPadding: { paddingHorizontal: 0 } });
 const memoResult = importAllResult.memo(JoinRequestActionSheet);
-const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestActionSheet.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestActionSheet.tsx");
 
 export default memoResult;
 export { JoinRequestActionSheet };

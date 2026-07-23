@@ -1,31 +1,31 @@
-// Module ID: 13964
-// Function ID: 106143
+// Module ID: 14078
+// Function ID: 108299
 // Name: useQuestDockAnimatedBorderRadius
-// Dependencies: []
+// Dependencies: [31, 13998, 3991, 2]
 // Exports: default
 
-// Module 13964 (useQuestDockAnimatedBorderRadius)
-let closure_2 = importAll(dependencyMap[0]);
+// Module 14078 (useQuestDockAnimatedBorderRadius)
+import result from "result";
+
+const require = arg1;
 let closure_3 = { code: "function useQuestDockAnimatedBorderRadiusTsx1(){const{interpolate,questDockOffset,minBorder,maxBorder,Extrapolation}=this.__closure;return interpolate(questDockOffset.get(),[0,50],[minBorder,maxBorder],Extrapolation.CLAMP);}" };
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/quests/native/QuestDock/useQuestDockAnimatedBorderRadius.tsx");
+const result = require("module_3991").fileFinishedImporting("modules/quests/native/QuestDock/useQuestDockAnimatedBorderRadius.tsx");
 
 export default function useQuestDockAnimatedBorderRadius(maxBorder) {
   let num = arg1;
-  const arg1 = maxBorder;
+  const _require = maxBorder;
   if (arg1 === undefined) {
     num = 0;
   }
-  const dependencyMap = num;
-  let React;
-  const questDockOffset = React.useContext(arg1(dependencyMap[1]).QuestDockExternalCoordinationContext).questDockOffset;
-  React = questDockOffset;
-  let obj = arg1(dependencyMap[2]);
+  let questDockOffset;
+  questDockOffset = questDockOffset.useContext(_require(num[1]).QuestDockExternalCoordinationContext).questDockOffset;
+  let obj = _require(num[2]);
   const fn = function u() {
     const value = questDockOffset.get();
-    const items = [num, arg0];
-    return arg0(num[2]).interpolate(value, ["<string:3573412790>", "<string:826270072>"], items, arg0(num[2]).Extrapolation.CLAMP);
+    const items = [num, maxBorder];
+    return maxBorder(num[2]).interpolate(value, [0, 50], items, maxBorder(num[2]).Extrapolation.CLAMP);
   };
-  obj = { interpolate: arg1(dependencyMap[2]).interpolate, questDockOffset, minBorder: num, maxBorder, Extrapolation: arg1(dependencyMap[2]).Extrapolation };
+  obj = { interpolate: _require(num[2]).interpolate, questDockOffset, minBorder: num, maxBorder, Extrapolation: _require(num[2]).Extrapolation };
   fn.__closure = obj;
   fn.__workletHash = 17005846780112;
   fn.__initData = closure_3;

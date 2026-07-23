@@ -1,96 +1,102 @@
-// Module ID: 11037
-// Function ID: 85944
+// Module ID: 11047
+// Function ID: 85994
 // Name: AppealSignalRadioRow
-// Dependencies: []
+// Dependencies: [31, 27, 7544, 33, 4130, 689, 3848, 7495, 7543, 11031, 686, 4098, 11048, 1934, 1212, 11041, 5459, 2]
 // Exports: default
 
-// Module 11037 (AppealSignalRadioRow)
+// Module 11047 (AppealSignalRadioRow)
+import "result";
+import { View } from "get ActivityIndicator";
+import SafetyHubLinks from "SafetyHubLinks";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function AppealSignalRadioRow(signal) {
   let accessibilityRole;
   let accessibilityState;
+  let importDefault;
   let selected;
   signal = signal.signal;
-  const arg1 = signal;
-  ({ selected, onSelect: closure_1 } = signal);
-  let obj = arg1(dependencyMap[6]);
+  ({ selected, onSelect: importDefault } = signal);
+  let obj = signal(3848);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   obj = { style: signal.rowStyle };
-  obj = { text: arg1(dependencyMap[8]).getAppealSignalDisplayText(signal) };
-  obj.label = callback(arg1(dependencyMap[7]).FormRow.Label, obj);
+  obj = { text: signal(7543).getAppealSignalDisplayText(signal) };
+  obj.label = callback(signal(7495).FormRow.Label, obj);
   obj.onPress = function onPress() {
     return callback(signal);
   };
-  obj.trailing = callback(arg1(dependencyMap[7]).FormRow.Radio, { selected });
+  obj.trailing = callback(signal(7495).FormRow.Radio, { selected });
   obj.accessibilityRole = accessibilityRole;
   obj.accessibilityState = accessibilityState;
-  return callback(arg1(dependencyMap[7]).FormRow, obj);
+  return callback(signal(7495).FormRow, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ AppealIngestionSignal: closure_4, AppealIngestionSignalOrder: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: { "Null": "vertical", "Null": false } };
-obj = { marginBottom: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.form = obj;
-const tmp4 = arg1(dependencyMap[3]);
-obj.formRow = { paddingVertical: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-obj.formSection = { gap: 8 };
-obj.disclaimer = { marginTop: 24 };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { paddingVertical: 16, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/safety_hub/native/AppealIngestionCollectSignal.tsx");
+({ AppealIngestionSignal: closure_4, AppealIngestionSignalOrder: closure_5 } = SafetyHubLinks);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flex: 1, paddingHorizontal: 16 } };
+_createForOfIteratorHelperLoose = { marginBottom: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.form = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.formRow = { paddingVertical: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.formSection = { gap: 8 };
+_createForOfIteratorHelperLoose.disclaimer = { marginTop: 24 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { paddingVertical: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+const result = require("SafetyHubLinks").fileFinishedImporting("modules/safety_hub/native/AppealIngestionCollectSignal.tsx");
 
 export default function AppealIngestionCollectSignal(isDsaEligible) {
-  const arg1 = isDsaEligible.isDsaEligible;
+  isDsaEligible = isDsaEligible.isDsaEligible;
   function handleAppealSignalSelect(signal) {
     let obj = tmp(paths[10]);
     obj = { type: "SAFETY_HUB_APPEAL_SIGNAL_SELECT", signal };
     obj.dispatch(obj);
     let tmp2 = isDsaEligible;
     if (isDsaEligible) {
-      tmp2 = signal === constants.SOMETHING_ELSE;
+      tmp2 = signal === outer1_4.SOMETHING_ELSE;
     }
     if (tmp2) {
       obj = {
         onSave(userInput) {
-            let obj = callback(closure_2[10]);
+            let obj = callback(686);
             obj = { type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE", userInput };
             obj.dispatch(obj);
-            callback(closure_2[11]).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
+            callback(4098).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
           },
         onClose() {
-            return callback(closure_2[11]).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
+            return callback(4098).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
           }
       };
       tmp(paths[11]).openLazy(isDsaEligible(paths[13])(paths[12], paths.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj);
       const obj3 = tmp(paths[11]);
     }
   }
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  let obj = arg1(closure_2[9]);
-  closure_2 = obj.useSafetyHubAppealSignal();
-  const intl = arg1(closure_2[14]).intl;
-  const intl2 = arg1(closure_2[14]).intl;
-  const stringResult = intl.string(arg1(closure_2[14]).t.C5q+pW);
+  let obj = isDsaEligible(11031);
+  const dependencyMap = obj.useSafetyHubAppealSignal();
+  const intl = isDsaEligible(1212).intl;
+  const intl2 = isDsaEligible(1212).intl;
+  const stringResult = intl.string(isDsaEligible(1212).t["C5q+pW"]);
   obj = {};
-  const items = [callback(arg1(closure_2[15]).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(arg1(closure_2[14]).t.VEcRhw) }), ];
+  const items = [callback(isDsaEligible(11041).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(isDsaEligible(1212).t.VEcRhw) }), ];
   obj = { style: tmp.container };
   const obj1 = { style: tmp.form };
-  const obj2 = { sectionBodyStyle: tmp.formSection, accessibilityRole: "radiogroup", children: closure_5.map((signal) => callback(closure_9, { signal, selected: signal === closure_2, rowStyle: tmp.formRow, onSelect: handleAppealSignalSelect }, "formrow-" + arg1)) };
-  const items1 = [callback(arg1(closure_2[7]).FormSection, obj2), ];
-  const obj3 = { style: tmp.disclaimer };
+  const obj2 = { sectionBodyStyle: tmp.formSection, accessibilityRole: "radiogroup", children: closure_5.map((signal) => outer1_6(outer1_9, { signal, selected: signal === closure_2, rowStyle: tmp.formRow, onSelect: handleAppealSignalSelect }, "formrow-" + arg1)) };
+  const items1 = [callback(isDsaEligible(7495).FormSection, obj2), ];
+  let obj3 = { style: tmp.disclaimer };
   const obj4 = { variant: "text-sm/normal" };
-  const intl3 = arg1(closure_2[14]).intl;
-  obj4.children = intl3.format(arg1(closure_2[14]).t.8k9GCW, {});
-  obj3.children = callback(arg1(closure_2[16]).TextWithIOSLinkWorkaround, obj4);
+  const intl3 = isDsaEligible(1212).intl;
+  obj4.children = intl3.format(isDsaEligible(1212).t["8k9GCW"], {});
+  obj3.children = callback(isDsaEligible(5459).TextWithIOSLinkWorkaround, obj4);
   items1[1] = callback(handleAppealSignalSelect, obj3);
   obj1.children = items1;
-  obj.children = callback2(arg1(closure_2[7]).Form, obj1);
+  obj.children = callback2(isDsaEligible(7495).Form, obj1);
   items[1] = callback(handleAppealSignalSelect, obj);
   obj.children = items;
-  return callback2(arg1(closure_2[15]).AppealIngestionModalScreen, obj);
+  return callback2(isDsaEligible(11041).AppealIngestionModalScreen, obj);
 };

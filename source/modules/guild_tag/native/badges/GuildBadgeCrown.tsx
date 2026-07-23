@@ -1,20 +1,24 @@
-// Module ID: 12838
-// Function ID: 98200
+// Module ID: 12952
+// Function ID: 100356
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 33, 12924, 8018, 2]
 // Exports: GuildBadgeCrown
 
-// Module 12838 (items)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = [0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001035362663295543, -93842671379306990000000000000000000000000000000000000000000000];
-let closure_5 = ["Array", "onChangeRating"];
-const items = [{ accessibilityRole: "Array", s: "isArray" }, { accessibilityRole: "Array", s: "isArray" }];
-let closure_7 = [true, true];
-let closure_8 = [-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002413129770385472, 77961545182515430000000000000000000000000000000000000000000000000000000000000000000000000000000000];
-const items1 = [{ accessibilityRole: null, s: 0 }, { accessibilityRole: "Array", s: "isArray" }];
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeCrown.tsx");
+// Module 12952 (items)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+let closure_4 = ["#FFB84B", "#FFE361"];
+let closure_5 = [0.56, 0.77];
+let items = [{ base: 3, tint: 1 }, { base: 3, tint: 1 }];
+let closure_7 = ["#FF1C90", "#FF7FC0"];
+let closure_8 = [0.2, 0.4];
+const items1 = [{ base: 7, tint: 1 }, { base: 3, tint: 1 }];
+const result = require("getTransformedBadgeColors").fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeCrown.tsx");
 
 export const GuildBadgeCrown = function GuildBadgeCrown(width) {
   let primaryColorsTransformed;
@@ -29,11 +33,11 @@ export const GuildBadgeCrown = function GuildBadgeCrown(width) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { 9223372036854775807: -24, -9223372036854775808: null, -9223372036854775808: 1, 9223372036854775807: "Malaysia" };
+  let obj = { width: 0, height: 0, primaryTintColor: 0, secondaryTintColor: 0 };
   ({ primaryTintColor, secondaryTintColor } = width);
   Object.setPrototypeOf(null);
   const merged = Object.assign(width, obj);
-  let obj1 = arg1(dependencyMap[2]);
+  let obj1 = require(12924) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_4, primaryTintColor, primaryTintLuminances: closure_5, primaryLuminanceWeights: items, secondaryBaseColors: closure_7, secondaryTintColor, secondaryTintLuminances: closure_8, secondaryLuminanceWeights: items1 };
   const transformedBadgeColors = obj1.getTransformedBadgeColors(obj);
   ({ primaryColorsTransformed, secondaryColorsTransformed } = transformedBadgeColors);
@@ -44,7 +48,7 @@ export const GuildBadgeCrown = function GuildBadgeCrown(width) {
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
   obj1 = { d: "M0.999985 2V14H1.99998V15H14V14H15V2H14V3H13V4H11V3H9.99998V2H8.99998V1H6.99998V2H5.99998V3H4.99998V4H2.99998V3H1.99998V2H0.999985Z", fill: primaryColorsTransformed[1] };
-  const items = [callback(arg1(dependencyMap[3]).Path, obj1), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M1 6.99998H2L2 3.99998H1L1 6.99998Z", "Bool(true)": "white" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M3 6.99998H4L4 3.99998H3L3 6.99998Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M12 6.99998H13V3.99998H12V6.99998Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M4.99998 8.99998H3.99998V9.99998H4.99998V8.99998Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M14 3.99998V2.99998H12V3.99998H14Z", "Bool(true)": "white" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M8 10H7V12H8V10Z", "Bool(true)": "white" }), callback(arg1(dependencyMap[3]).Path, { d: "M13 5.00002V4.00002H14V15H12V5.00002H13Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[3]).Path, { d: "M4.99999 5.00002H3V15H4.99999V5.00002Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M1.99998 6.99998H0.999985V7.99998H1.99998V6.99998Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { d: "M10 7.00002V6.00002H9V5.00002H7V6.00002H6V7.00002H5V8.00001H6V11H7V12H9V11H10V8.00001H11V7.00002H10Z", fill: secondaryColorsTransformed[0] }), callback(arg1(dependencyMap[3]).Path, { d: "M6.99998 12H8.99998V10H6.99998V12Z", fill: secondaryColorsTransformed[1] }), callback(arg1(dependencyMap[3]).Path, { d: "M9 7.00002V6.00002H7V7.00002H6V9.00001H10V7.00002H9Z", fill: secondaryColorsTransformed[1] }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M1.99998 2.99998H0.999985V3.99998H1.99998V2.99998Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M10 12V11H11V10H9V13H12V12H10Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M14 8.99998V7.99998H12V8.99998H14Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M16 3.99998H15V6.99998H16V3.99998Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M13 2V0H3V2H2V3H4V1H12V3H14V2H13Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M11 9.99998H12V8.99998H11V9.99998Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M14 7.99998H15V6.99998H14V7.99998Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M14 3.99998H15V2.99998H14V3.99998Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M7 13H4V14H7V13Z", "Bool(true)": "white" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M4 1V8H5V2H6V7H7V2H12V1H4Z", "Bool(true)": "white" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M14 15H1.99999V16H14V15Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M0.999996 15H2V14H0.999996L0.999996 15Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M0.999996 9H2V8H0.999996L0.999996 9Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M1.99999 9H2.99999V8H1.99999V9Z", "Bool(true)": "white" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M2.99999 8H3.99999V7H2.99999V8Z", "Bool(true)": "white" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M8.99999 12H9.99999V8H8.99999V12Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M5.99999 12H6.99999L6.99999 8H5.99999V12Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M1.99999 8H2.99999V7H1.99999V8Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M2.99999 7H3.99999V6H2.99999V7Z", "Bool(true)": "black" }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": "M2.99999 3H3.99999V2L2.99999 2V3Z", "Bool(true)": "black" })];
+  items = [callback(require(8018) /* inlineStyles */.Path, obj1), callback(require(8018) /* inlineStyles */.Path, { d: "M0.999985 3H1.99998L1.99998 2L0.999985 2L0.999985 3Z", fill: "white" }), callback(require(8018) /* inlineStyles */.Path, { d: "M1.99998 4H2.99998V3H1.99998V4Z", fill: "white" }), callback(require(8018) /* inlineStyles */.Path, { d: "M4.99998 4H5.99998V3H4.99998V4Z", fill: "white" }), callback(require(8018) /* inlineStyles */.Path, { d: "M9.99998 4H11V3H9.99998V4Z", fill: "white" }), callback(require(8018) /* inlineStyles */.Path, { d: "M9 2.00002V1.00002H7V2.00002H6V3.00002H7V5.00002H9V3.00002H10V2.00002H9Z", fill: "white" }), callback(require(8018) /* inlineStyles */.Path, { d: "M2 5.00002V4.00002H1V13H2V14H3V5.00002H2Z", fill: "white" }), callback(require(8018) /* inlineStyles */.Path, { d: "M13 5.00002V4.00002H14V15H12V5.00002H13Z", fill: primaryColorsTransformed[0] }), callback(require(8018) /* inlineStyles */.Path, { d: "M4.99999 5.00002H3V15H4.99999V5.00002Z", fill: primaryColorsTransformed[0] }), callback(require(8018) /* inlineStyles */.Path, { d: "M6.99998 15H8.99998V13H6.99998V15Z", fill: "white" }), callback(require(8018) /* inlineStyles */.Path, { d: "M10 7.00002V6.00002H9V5.00002H7V6.00002H6V7.00002H5V8.00001H6V11H7V12H9V11H10V8.00001H11V7.00002H10Z", fill: secondaryColorsTransformed[0] }), callback(require(8018) /* inlineStyles */.Path, { d: "M6.99998 12H8.99998V10H6.99998V12Z", fill: secondaryColorsTransformed[1] }), callback(require(8018) /* inlineStyles */.Path, { d: "M9 7.00002V6.00002H7V7.00002H6V9.00001H10V7.00002H9Z", fill: secondaryColorsTransformed[1] }), callback(require(8018) /* inlineStyles */.Path, { d: "M6.99998 9.00002H8.99998V7.00002H6.99998V9.00002Z", fill: "white" }), callback(require(8018) /* inlineStyles */.Path, { d: "M0.999985 15H1.99998L1.99998 14H0.999985L0.999985 15Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M1.99998 3H2.99998V2L1.99998 2V3Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M4.99998 3H5.99998V2L4.99998 2V3Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M5.99998 2L6.99998 2V1L5.99998 1V2Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M6.99998 1L8.99998 1V0L6.99998 0V1Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M2.99998 4L4.99998 4V3H2.99998V4Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M8.99998 2L9.99998 2V1L8.99998 1V2Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M9.99998 3H11V2L9.99998 2V3Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M13 3H14V2L13 2V3Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M11 4L13 4V3H11V4Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M14 15H15V14H14V15Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M1 1.00002V1.52588e-05H0V14H1V2.00002H2V1.00002H1Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M15 1.52588e-05V1.00002H14V2.00002H15V14H16V1.52588e-05H15Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M14 15H1.99998V16H14V15Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M6.99998 13H8.99998V12H6.99998V13Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M8.99998 12H9.99998V11H8.99998V12Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M5.99998 12H6.99998V11H5.99998V12Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M4.99998 11H5.99998V8H4.99998V11Z", fill: "black" }), callback(require(8018) /* inlineStyles */.Path, { d: "M9.99998 11H11V8H9.99998V11Z", fill: "black" })];
   obj["children"] = items;
-  return callback2(arg1(dependencyMap[3]).Svg, obj);
+  return callback2(require(8018) /* inlineStyles */.Svg, obj);
 };

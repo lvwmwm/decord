@@ -1,22 +1,22 @@
-// Module ID: 11993
-// Function ID: 92685
+// Module ID: 12109
+// Function ID: 94862
 // Name: useWishlistViewerCoachmark
-// Dependencies: []
+// Dependencies: [57, 31, 1334, 5802, 2]
 // Exports: useWishlistViewerCoachmark
 
-// Module 11993 (useWishlistViewerCoachmark)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_profile/hooks/native/useWishlistViewerCoachmark.tsx");
+// Module 12109 (useWishlistViewerCoachmark)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+const result = require("DismissibleContent").fileFinishedImporting("modules/user_profile/hooks/native/useWishlistViewerCoachmark.tsx");
 
 export const useWishlistViewerCoachmark = function useWishlistViewerCoachmark(isCurrentUser) {
   let tmp3;
   let tmp4;
   isCurrentUser = isCurrentUser.isCurrentUser;
-  const arg1 = isCurrentUser;
   const shouldShowWishlistTab = isCurrentUser.shouldShowWishlistTab;
-  const dependencyMap = shouldShowWishlistTab;
-  const items = [isCurrentUser, shouldShowWishlistTab];
+  let items = [isCurrentUser, shouldShowWishlistTab];
   const memo = React.useMemo(() => {
     if (!isCurrentUser) {
       if (shouldShowWishlistTab) {
@@ -26,8 +26,8 @@ export const useWishlistViewerCoachmark = function useWishlistViewerCoachmark(is
     }
     items = [];
   }, items);
-  let obj = arg1(dependencyMap[3]);
-  obj = { isVisible: tmp3 === arg1(dependencyMap[2]).DismissibleContent.WISHLIST_MOBILE_VIEWER_COACHMARK, markAsDismissed: tmp4 };
+  let obj = isCurrentUser(shouldShowWishlistTab[3]);
+  obj = { isVisible: tmp3 === isCurrentUser(shouldShowWishlistTab[2]).DismissibleContent.WISHLIST_MOBILE_VIEWER_COACHMARK, markAsDismissed: tmp4 };
   [tmp3, tmp4] = callback(obj.useSelectedDismissibleContent(memo), 2);
   return obj;
 };

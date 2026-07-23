@@ -1,31 +1,32 @@
-// Module ID: 8277
-// Function ID: 65357
+// Module ID: 8283
+// Function ID: 65394
 // Name: nativeEventEmitter
-// Dependencies: []
+// Dependencies: [6, 7, 27, 621, 682, 2]
 
-// Module 8277 (nativeEventEmitter)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-let obj = arg1(dependencyMap[3]);
-obj = obj.create(() => ({ isMuted: false }));
-const nativeEventEmitter = new tmp2.NativeEventEmitter(tmp2.NativeModules.MediaPlayerManager);
-let tmp5 = () => {
+// Module 8283 (nativeEventEmitter)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import get_ActivityIndicator from "get ActivityIndicator";
+import keys from "keys";
+
+const require = arg1;
+keys = keys.create(() => ({ isMuted: false }));
+const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(get_ActivityIndicator.NativeModules.MediaPlayerManager);
+let tmp5 = (() => {
   class MediaPlayerMuteManager {
     constructor() {
-      tmp = closure_2(this, MediaPlayerMuteManager);
+      tmp = outer1_2(this, MediaPlayerMuteManager);
       this.muteSubscription = undefined;
       return;
     }
   }
-  const arg1 = MediaPlayerMuteManager;
   let obj = {
     key: "initialize",
     value() {
-      this.muteSubscription = closure_5.addListener("MediaPlayerMuteStateChanged", (isMuted) => {
+      this.muteSubscription = outer1_5.addListener("MediaPlayerMuteStateChanged", (isMuted) => {
         isMuted = isMuted.isMuted;
-        isMuted(closure_1[4]).batchUpdates(() => {
-          state.setState({ isMuted });
+        MediaPlayerMuteManager(outer2_1[4]).batchUpdates(() => {
+          outer3_4.setState({ isMuted });
         });
       });
     }
@@ -42,9 +43,9 @@ let tmp5 = () => {
   };
   items[1] = obj;
   return callback(MediaPlayerMuteManager, items);
-}();
+})();
 tmp5 = new tmp5();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/media_viewer/native/MediaPlayerMuteManager.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/media_viewer/native/MediaPlayerMuteManager.tsx");
 
 export default tmp5;
-export const useMediaPlayerMutedStore = obj;
+export const useMediaPlayerMutedStore = keys;

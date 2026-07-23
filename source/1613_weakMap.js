@@ -1,19 +1,20 @@
 // Module ID: 1613
-// Function ID: 17913
+// Function ID: 17914
 // Name: weakMap
-// Dependencies: []
+// Dependencies: [1585]
 
 // Module 1613 (weakMap)
-const _module = require(dependencyMap[0]);
-const shouldBeUseWebResult = _module.shouldBeUseWeb();
+import isJest from "isJest";
+
+isJest = isJest.shouldBeUseWeb();
 const SymbolResult = Symbol("shareable flag");
 let weakMap = null;
-if (!shouldBeUseWebResult) {
+if (!isJest) {
   const _WeakMap = WeakMap;
   weakMap = new WeakMap();
 }
 const obj = {};
-if (shouldBeUseWebResult) {
+if (isJest) {
   obj.set = function set() {
 
   };
@@ -25,7 +26,7 @@ if (shouldBeUseWebResult) {
   obj.set = function set(arg0, arg1) {
     let tmp = arg1;
     if (!arg1) {
-      tmp = SymbolResult;
+      tmp = closure_0;
     }
     const result = weakMap.set(arg0, tmp);
   };

@@ -1,16 +1,26 @@
-// Module ID: 15520
-// Function ID: 118420
+// Module ID: 15637
+// Function ID: 120593
 // Name: ToastIcon
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 3834, 1273, 4126, 2]
 // Exports: default
 
-// Module 15520 (ToastIcon)
+// Module 15637 (ToastIcon)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function ToastIcon(recolorLegacyIcon) {
   let IconComponent;
   let icon;
   let iconColor;
   ({ icon, IconComponent, iconColor } = recolorLegacyIcon);
-  let obj = arg1(dependencyMap[6]);
+  let obj = require(3834) /* map */;
   let str = "mobile-text-heading-primary";
   if (null != iconColor) {
     str = iconColor;
@@ -35,38 +45,33 @@ function ToastIcon(recolorLegacyIcon) {
     if (null != icon) {
       const obj2 = { resizeMode: "contain", source: icon };
       const merged = Object.assign(tmp2);
-      tmp3 = callback2(arg1(dependencyMap[7]).Icon, obj2);
+      tmp3 = callback2(require(1273) /* Button */.Icon, obj2);
     }
   }
   return tmp3;
 }
 function ToastContent(content) {
   content = content.content;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   if ("function" === typeof content) {
     let obj = { style: tmp.contentContainer, children: content() };
     let tmp5 = callback2(View, obj);
   } else {
-    obj = { onTextLayout: content.onTextLayout, style: tmp.contentContainer, children: content };
-    tmp5 = callback2(arg1(dependencyMap[8]).Text, obj);
+    obj = { onTextLayout: content.onTextLayout, style: tmp.contentContainer, lineClamp: 3, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: content };
+    tmp5 = callback2(require(4126) /* Text */.Text, obj);
   }
   return tmp5;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", borderRadius: importDefault(dependencyMap[5]).radii.xxl, padding: importDefault(dependencyMap[5]).space.PX_8, paddingRight: importDefault(dependencyMap[5]).space.PX_12, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE, borderWidth: 1 };
-const merged = Object.assign(importDefault(dependencyMap[5]).shadows.SHADOW_HIGH);
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[3]);
-obj.multilineContainer = { paddingLeft: importDefault(dependencyMap[5]).space.PX_12 };
-obj.contentContainer = { "Null": null, "Null": null };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { paddingLeft: importDefault(dependencyMap[5]).space.PX_12 };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/toast/native/Toast.tsx");
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.xxl, padding: require("_createForOfIteratorHelperLoose").space.PX_8, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderWidth: 1 };
+let merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.multilineContainer = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.contentContainer = { marginLeft: 8, flexShrink: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/toast/native/Toast.tsx");
 
 export default function Toast(arg0) {
   let IconComponent;
@@ -75,15 +80,16 @@ export default function Toast(arg0) {
   let icon;
   let iconColor;
   let recolorLegacyIcon;
+  let require;
   let tmp3;
   ({ icon, iconColor, IconComponent, content, containerStyle, recolorLegacyIcon } = arg0);
-  const tmp = callback3();
-  [tmp3, closure_0] = callback(React.useState(false), 2);
+  const tmp = _createForOfIteratorHelperLoose();
+  [tmp3, require] = callback(React.useState(false), 2);
   let closure_1 = React.useRef(false);
   const obj = {};
   const items = [tmp.container, , ];
   let multilineContainer = null;
-  const callback = React.useCallback((nativeEvent) => {
+  callback = React.useCallback((nativeEvent) => {
     if (!ref.current) {
       ref.current = true;
       callback(nativeEvent.nativeEvent.lines.length > 1);

@@ -1,24 +1,24 @@
-// Module ID: 14761
-// Function ID: 111276
+// Module ID: 14877
+// Function ID: 113444
 // Name: GuildsBarFooterWrapper
-// Dependencies: []
+// Dependencies: [14813, 33, 4130, 689, 3834, 3987, 5517, 2]
 // Exports: default
 
-// Module 14761 (GuildsBarFooterWrapper)
-const GUILD_ITEM_HIT_SLOP = require(dependencyMap[0]).GUILD_ITEM_HIT_SLOP;
-const jsx = require(dependencyMap[1]).jsx;
-const _module = require(dependencyMap[2]);
+// Module 14877 (GuildsBarFooterWrapper)
+import { GUILD_ITEM_HIT_SLOP } from "GUILD_ITEM_SIZE";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let obj = {};
-obj = { EXPANDED_DRAWER_SHOW_POSITION: null, lineClamp: null, noMargin: "center", gap: importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_PADDING };
+obj = { display: "flex", alignSelf: "stretch", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_PADDING };
 obj.footerWrapper = obj;
-let closure_5 = _module.createStyles(obj);
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFooterWrapper.tsx");
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFooterWrapper.tsx");
 
 export default function GuildsBarFooterWrapper(children) {
-  let obj = require(dependencyMap[4]);
-  const token = obj.useToken(importDefault(dependencyMap[3]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const MobileHomeDrawerExperiment = require(dependencyMap[5]).MobileHomeDrawerExperiment;
+  let obj = require(3834) /* map */;
+  const token = obj.useToken(importDefault(689).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const MobileHomeDrawerExperiment = require(3987) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
   obj = {};
   const items = [callback().footerWrapper, ];
   let tmp5 = null;
@@ -31,5 +31,5 @@ export default function GuildsBarFooterWrapper(children) {
   items[1] = tmp5;
   obj.style = items;
   obj.children = children.children;
-  return tmp3(importDefault(dependencyMap[6]), obj);
+  return tmp3(importDefault(5517), obj);
 };

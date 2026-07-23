@@ -1,26 +1,26 @@
-// Module ID: 4674
-// Function ID: 40726
+// Module ID: 4677
+// Function ID: 40744
 // Name: ProcessArgs
-// Dependencies: []
+// Dependencies: [6, 7, 3741, 2]
 
-// Module 4674 (ProcessArgs)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 4677 (ProcessArgs)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const tmp2 = (() => {
   class ProcessArgs {
     constructor() {
-      tmp = closure_2(this, ProcessArgs);
+      tmp = outer1_2(this, ProcessArgs);
       return;
     }
   }
-  const importDefault = ProcessArgs;
   let obj = {
     key: "get",
     value() {
       if (null == ProcessArgs.cached) {
         let mainArgvSync;
-        if (null != ProcessArgs(closure_1[2])) {
-          const processUtils = ProcessArgs(closure_1[2]).processUtils;
+        if (null != ProcessArgs(outer1_1[2])) {
+          const processUtils = ProcessArgs(outer1_1[2]).processUtils;
           if (null != processUtils) {
             if (null != processUtils.getMainArgvSync) {
               mainArgvSync = processUtils.getMainArgvSync();
@@ -55,12 +55,12 @@ const tmp2 = () => {
   obj = {
     key: "isEnvVariableTrue",
     value(arg0) {
-      if (undefined === ProcessArgs(closure_1[2])) {
+      if (undefined === ProcessArgs(outer1_1[2])) {
         return false;
       } else {
         let tmp4;
-        if (null != ProcessArgs(closure_1[2])) {
-          const _process = ProcessArgs(closure_1[2]).process;
+        if (null != ProcessArgs(outer1_1[2])) {
+          const _process = ProcessArgs(outer1_1[2]).process;
           if (null != _process) {
             const env = _process.env;
             if (null != env) {
@@ -101,7 +101,7 @@ const tmp2 = () => {
     }
   };
   return callback(ProcessArgs, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("utils/ProcessArgs.tsx");
+})();
+const result = require("set").fileFinishedImporting("utils/ProcessArgs.tsx");
 
 export const ProcessArgs = tmp2;

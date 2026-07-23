@@ -1,44 +1,47 @@
-// Module ID: 12216
-// Function ID: 93796
+// Module ID: 12330
+// Function ID: 95947
 // Name: GuildScheduledEventPreview
-// Dependencies: []
+// Dependencies: [31, 27, 1838, 33, 4130, 689, 566, 3974, 4126, 1212, 5515, 2]
 // Exports: default
 
-// Module 12216 (GuildScheduledEventPreview)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: {} };
-obj = { color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.borderColor = obj;
-obj.title = {};
-const tmp3 = arg1(dependencyMap[3]);
-obj.itemContainer = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.guildInfo = { id: 8, title: null, options: "\u270A\u{1F3FF}" };
-obj.guildName = {};
-obj.eventName = {};
-let closure_7 = obj.createStyles(obj);
-const obj1 = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsGuildScheduledEventPreview.tsx");
+// Module 12330 (GuildScheduledEventPreview)
+import "result";
+import { View } from "get ActivityIndicator";
+import closure_4 from "_createForOfIteratorHelperLoose";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 } };
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+_createForOfIteratorHelperLoose.borderColor = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.title = { lineHeight: 16, marginBottom: 8 };
+let obj1 = { minHeight: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, padding: 8 };
+_createForOfIteratorHelperLoose.itemContainer = obj1;
+_createForOfIteratorHelperLoose.guildInfo = { display: "flex", flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.guildName = { lineHeight: 18, marginStart: 8 };
+_createForOfIteratorHelperLoose.eventName = { lineHeight: 20, marginTop: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsGuildScheduledEventPreview.tsx");
 
 export default function GuildScheduledEventPreview(event) {
   event = event.event;
-  const arg1 = event;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = event(566);
   const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(event.guild_id));
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(event.guild_id));
   if (null == stateFromStores) {
     return null;
   } else {
-    let obj1 = arg1(dependencyMap[7]);
+    let obj1 = event(3974);
     obj = { style: tmp.container };
-    obj = { 9223372036854775807: true, 0: true, 0: true, style: tmp.title };
-    const intl = arg1(dependencyMap[9]).intl;
-    obj.children = intl.string(arg1(dependencyMap[9]).t.SDTOL7);
-    const items1 = [callback(arg1(dependencyMap[8]).Text, obj), ];
+    obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
+    const intl = event(1212).intl;
+    obj.children = intl.string(event(1212).t.SDTOL7);
+    const items1 = [callback(event(4126).Text, obj), ];
     obj1 = {};
     const items2 = [tmp.itemContainer, ];
     const obj2 = { borderColor: obj1.hexWithOpacity(tmp.borderColor.color, 0.08) };
@@ -47,15 +50,15 @@ export default function GuildScheduledEventPreview(event) {
     const obj3 = { style: tmp.guildInfo };
     const obj4 = { guild: stateFromStores };
     const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
-    obj4.size = arg1(dependencyMap[10]).GuildIconSizes.XXSMALL;
+    obj4.size = event(5515).GuildIconSizes.XXSMALL;
     obj4.selected = false;
-    const items3 = [callback(importDefault(dependencyMap[10]), obj4), ];
-    const obj5 = { style: tmp.guildName, children: stateFromStores.name };
-    items3[1] = callback(arg1(dependencyMap[8]).Text, obj5);
+    const items3 = [callback(importDefault(5515), obj4), ];
+    const obj5 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
+    items3[1] = callback(event(4126).Text, obj5);
     obj3.children = items3;
     const items4 = [callback2(View, obj3), ];
-    const obj6 = { "Null": "useStateFromStores", "Null": "track", alignItems: "Array", style: tmp.eventName, children: event.name };
-    items4[1] = callback(arg1(dependencyMap[8]).Text, obj6);
+    const obj6 = { style: tmp.eventName, variant: "text-md/bold", color: "mobile-text-heading-primary", children: event.name };
+    items4[1] = callback(event(4126).Text, obj6);
     obj1.children = items4;
     items1[1] = callback2(View, obj1);
     obj.children = items1;

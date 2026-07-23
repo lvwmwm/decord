@@ -1,28 +1,30 @@
-// Module ID: 14067
-// Function ID: 106840
+// Module ID: 14181
+// Function ID: 108996
 // Name: ActivityCardsItem
-// Dependencies: []
+// Dependencies: [31, 33, 7879, 689, 14182, 2]
 // Exports: default
 
-// Module 14067 (ActivityCardsItem)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardsItem.tsx");
+// Module 14181 (ActivityCardsItem)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("defaultMVCPConfig").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardsItem.tsx");
 
 export default function ActivityCardsItem(animatedStyles) {
-  const arg1 = animatedStyles.animatedStyles;
+  animatedStyles = animatedStyles.animatedStyles;
   let obj = {};
-  obj = { paddingVertical: importDefault(dependencyMap[3]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[3]).space.PX_16 };
+  obj = { paddingVertical: importDefault(689).space.PX_16, paddingHorizontal: importDefault(689).space.PX_16 };
   obj.contentContainerStyle = obj;
   obj.data = animatedStyles.cards;
   obj.renderItem = function renderItem(item) {
     const merged = Object.assign(item.item);
-    return callback2(callback(closure_2[4]), { animatedStyles });
+    return outer1_3(outer1_1(outer1_2[4]), { animatedStyles });
   };
   obj.keyExtractor = function keyExtractor(title) {
     return title.title;
   };
   obj.showsHorizontalScrollIndicator = false;
   obj.horizontal = true;
-  return jsx(arg1(dependencyMap[2]).FlashList, obj);
+  return jsx(animatedStyles(7879).FlashList, { paddingVertical: importDefault(689).space.PX_16, paddingHorizontal: importDefault(689).space.PX_16 });
 };

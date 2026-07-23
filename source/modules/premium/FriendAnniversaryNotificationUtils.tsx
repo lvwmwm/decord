@@ -1,19 +1,19 @@
-// Module ID: 14217
-// Function ID: 107526
+// Module ID: 14331
+// Function ID: 109682
 // Name: onFriendAnniversaryNotificationSettingsChanged
-// Dependencies: []
+// Dependencies: [653, 3770, 3803, 675, 2]
 // Exports: onFriendAnniversaryNotificationSettingsChanged
 
-// Module 14217 (onFriendAnniversaryNotificationSettingsChanged)
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-let closure_4 = require(dependencyMap[1]).NotificationSettingsUpdateType;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/premium/FriendAnniversaryNotificationUtils.tsx");
+// Module 14331 (onFriendAnniversaryNotificationSettingsChanged)
+import { AnalyticEvents } from "ME";
+import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
+
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/premium/FriendAnniversaryNotificationUtils.tsx");
 
 export const onFriendAnniversaryNotificationSettingsChanged = function onFriendAnniversaryNotificationSettingsChanged(friend_anniversary_notifications) {
-  const EnableFriendAnniversaryNotifications = require(dependencyMap[2]).EnableFriendAnniversaryNotifications;
+  const EnableFriendAnniversaryNotifications = require(3803) /* explicitContentFromProto */.EnableFriendAnniversaryNotifications;
   EnableFriendAnniversaryNotifications.updateSetting(friend_anniversary_notifications);
-  let obj = importDefault(dependencyMap[3]);
+  let obj = importDefault(675);
   obj = { update_type: constants.ACCOUNT, friend_anniversary_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
 };

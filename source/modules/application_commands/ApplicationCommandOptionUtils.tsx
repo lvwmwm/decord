@@ -1,53 +1,55 @@
-// Module ID: 8179
-// Function ID: 64591
+// Module ID: 8185
+// Function ID: 64628
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4566, 44, 8186, 4118, 1881, 2]
 // Exports: getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, normalizeNumericString
 
-// Module 8179 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 8185 (_createForOfIteratorHelperLoose)
+import { TRUE_OPTION_NAME } from "TRUE_OPTION_NAME";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,7 +87,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function filterEmpty(arr) {
-  const require = arr;
+  let closure_0 = arr;
   if (null == arr) {
     let items = [];
   } else {
@@ -107,46 +109,46 @@ function filterEmpty(arr) {
 }
 function getBoolean(arg0, arg1) {
   const arr = filterEmpty(arg0[arg1]);
-  importDefault(dependencyMap[1])(1 === arr.length, "Contains multiple values");
+  importDefault(44)(1 === arr.length, "Contains multiple values");
   const first = arr[0];
   let type;
   if (null != first) {
     type = first.type;
   }
-  importDefault(dependencyMap[1])("text" === type, "First value is not text");
+  importDefault(44)("text" === type, "First value is not text");
   return arr[0].text === TRUE_OPTION_NAME;
 }
 function getChannelId(guildId, arg1) {
   const arr = filterEmpty(guildId[arg1]);
-  importDefault(dependencyMap[1])(1 === arr.length, "Contains multiple values");
+  importDefault(44)(1 === arr.length, "Contains multiple values");
   const first = arr[0];
   let type;
   if (null != first) {
     type = first.type;
   }
-  importDefault(dependencyMap[1])("channelMention" === type, "First value is not a channel mention");
+  importDefault(44)("channelMention" === type, "First value is not a channel mention");
   return arr[0].channelId;
 }
 function getUserId(arg0, arg1) {
   const arr = filterEmpty(arg0[arg1]);
-  importDefault(dependencyMap[1])(1 === arr.length, "Contains multiple values");
+  importDefault(44)(1 === arr.length, "Contains multiple values");
   const first = arr[0];
   let type;
   if (null != first) {
     type = first.type;
   }
-  importDefault(dependencyMap[1])("userMention" === type, "First value is not a user mention");
+  importDefault(44)("userMention" === type, "First value is not a user mention");
   return arr[0].userId;
 }
 function getRoleId(arg0, arg1) {
   const arr = filterEmpty(arg0[arg1]);
-  importDefault(dependencyMap[1])(1 === arr.length, "Contains multiple values");
+  importDefault(44)(1 === arr.length, "Contains multiple values");
   const first = arr[0];
   let type;
   if (null != first) {
     type = first.type;
   }
-  importDefault(dependencyMap[1])("roleMention" === type, "First value is not a role mention");
+  importDefault(44)("roleMention" === type, "First value is not a role mention");
   return arr[0].roleId;
 }
 function getString(arg0, arg1) {
@@ -204,9 +206,7 @@ function getString(arg0, arg1) {
   }
   return str2;
 }
-const TRUE_OPTION_NAME = require(dependencyMap[0]).TRUE_OPTION_NAME;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/application_commands/ApplicationCommandOptionUtils.tsx");
+const result = require("numberParts").fileFinishedImporting("modules/application_commands/ApplicationCommandOptionUtils.tsx");
 
 export { filterEmpty };
 export { getBoolean };
@@ -252,33 +252,34 @@ export const getOptionalString = function getOptionalString(optionValues, name) 
 export const normalizeNumericString = function normalizeNumericString(locale, source) {
   let decimal;
   let group;
-  if (locale !== locale) {
-    en-US = require(dependencyMap[2]).numberParts[locale];
+  if (locale !== closure_5) {
+    closure_5 = locale;
+    en_US = require(8186) /* numberParts */.numberParts[locale];
     if (null == en_US) {
-      en-US = require(dependencyMap[2]).numberParts.en-US;
+      en_US = require(8186) /* numberParts */.numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = en_US);
-    const regExp = new RegExp(importDefault(dependencyMap[3]).escape(group), "g");
+    const regExp = new RegExp(importDefault(4118).escape(group), "g");
     const _RegExp2 = RegExp;
-    const obj = importDefault(dependencyMap[3]);
-    const regExp1 = new RegExp(importDefault(dependencyMap[3]).escape(decimal), "g");
-    const obj2 = importDefault(dependencyMap[3]);
+    const obj = importDefault(4118);
+    const regExp1 = new RegExp(importDefault(4118).escape(decimal), "g");
+    const obj2 = importDefault(4118);
   }
   return source.replace(regExp, "").replace(regExp1, ".");
 };
 export const getInitialValuesFromInteractionOptions = function getInitialValuesFromInteractionOptions(command, interactionOptions) {
   let done;
-  const require = command;
+  let closure_0 = command;
   const obj = {};
-  const importDefault = obj;
   function _loop(value) {
-    const options = value.options;
+    const command = value;
+    const options = command.options;
     if (null != options) {
-      const found = options.find((name) => name.name === name.name);
+      const found = options.find((name) => name.name === value.name);
     }
     let num = 0;
-    if (value.type !== value(closure_2[4]).ApplicationCommandOptionType.ATTACHMENT) {
+    if (value.type !== command(outer1_2[4]).ApplicationCommandOptionType.ATTACHMENT) {
       if (null == found) {
         obj[value.name] = value;
       } else {

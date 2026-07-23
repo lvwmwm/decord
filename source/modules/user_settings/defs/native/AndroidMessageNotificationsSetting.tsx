@@ -1,37 +1,47 @@
-// Module ID: 14209
-// Function ID: 107499
+// Module ID: 14323
+// Function ID: 109655
 // Name: useAndroidMessageNotificationsSettingValue
-// Dependencies: []
+// Dependencies: [14312, 7662, 477, 10095, 1212, 2]
 // Exports: useAndroidMessageNotificationsSettingValue, useHasAndroidMessageNotificationsSetting
 
-// Module 14209 (useAndroidMessageNotificationsSettingValue)
+// Module 14323 (useAndroidMessageNotificationsSettingValue)
+import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore";
+import createToggle from "createToggle";
+
 function useAndroidMessageNotificationsSettingValue() {
   const tmp = callback();
   return null != tmp && tmp;
 }
 function useHasAndroidMessageNotificationsSetting() {
   const tmp = callback();
-  let isAndroidResult = require(dependencyMap[2]).isAndroid();
+  let isAndroidResult = require(477) /* set */.isAndroid();
   if (isAndroidResult) {
     isAndroidResult = null != tmp;
   }
   return isAndroidResult;
 }
-const _module = require(dependencyMap[0]);
-let closure_2 = _module.useAndroidMessageNotificationsEnabled;
-const _module1 = require(dependencyMap[3]);
-const toggle = _module1.createToggle({
+let closure_2 = _initializeAndroidNotificationSettingsStore.useAndroidMessageNotificationsEnabled;
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[4]).intl;
-    return intl.string(require(dependencyMap[4]).t.zViLy+);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["zViLy+"]);
   },
-  parent: require(dependencyMap[1]).MobileSetting.NOTIFICATIONS,
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: useAndroidMessageNotificationsSettingValue,
-  onValueChange: _module.setAndroidMessageNotificationsEnabled,
+  onValueChange: _initializeAndroidNotificationSettingsStore.setAndroidMessageNotificationsEnabled,
   usePredicate: useHasAndroidMessageNotificationsSetting
 });
-const _module2 = require(dependencyMap[5]);
-const result = _module2.fileFinishedImporting("modules/user_settings/defs/native/AndroidMessageNotificationsSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["zViLy+"]);
+  },
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  useValue: useAndroidMessageNotificationsSettingValue,
+  onValueChange: _initializeAndroidNotificationSettingsStore.setAndroidMessageNotificationsEnabled,
+  usePredicate: useHasAndroidMessageNotificationsSetting
+};
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AndroidMessageNotificationsSetting.tsx");
 
 export default toggle;
 export { useAndroidMessageNotificationsSettingValue };

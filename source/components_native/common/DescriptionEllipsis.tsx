@@ -1,28 +1,31 @@
-// Module ID: 11436
-// Function ID: 89018
+// Module ID: 11446
+// Function ID: 89068
 // Name: DescriptionEllipsis
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 // Exports: default
 
-// Module 11436 (DescriptionEllipsis)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_1, jsxs: closure_2 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { flexDirection: true, alignItems: "/assets/images/native/icons/voice_calls", padding: 24, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderWidth: null, shouldShow: "897ada03fe806525383ec1a77806ad61", title: "screenshare_end", description: "png", borderRadius: importDefault(dependencyMap[4]).radii.xs };
-obj.topicEllipsis = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.topicEllipsisDot = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
-let closure_3 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_MUTED };
-const result = arg1(dependencyMap[5]).fileFinishedImporting("components_native/common/DescriptionEllipsis.tsx");
+// Module 11446 (DescriptionEllipsis)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_1;
+let closure_2;
+({ jsx: closure_1, jsxs: closure_2 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", flexDirection: "row", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, marginTop: 4, height: 12, width: 24 };
+_createForOfIteratorHelperLoose.topicEllipsis = _createForOfIteratorHelperLoose;
+const obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, borderRadius: 2, margin: 1, height: 4, width: 4 };
+_createForOfIteratorHelperLoose.topicEllipsisDot = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("components_native/common/DescriptionEllipsis.tsx");
 
 export default function DescriptionEllipsis(dotStyle) {
   dotStyle = dotStyle.dotStyle;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const obj = { style: items };
-  const items = [tmp.topicEllipsis, dotStyle.style];
+  items = [tmp.topicEllipsis, dotStyle.style];
   const items1 = [tmp.topicEllipsisDot, dotStyle];
   const items2 = [callback(View, { style: items1 }), , ];
   const items3 = [tmp.topicEllipsisDot, dotStyle];

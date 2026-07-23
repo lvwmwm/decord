@@ -1,53 +1,74 @@
-// Module ID: 9645
-// Function ID: 75120
+// Module ID: 9652
+// Function ID: 75161
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 1280, 1348, 4468, 1906, 4467, 1552, 653, 4344, 4665, 7938, 4672, 4674, 4675, 675, 4686, 477, 4110, 9653, 1207, 9679, 4539, 9811, 9812, 22, 2]
 // Exports: addAttachmentForCommand, cropResultToUploadItem, handleSelectGift, handleSelectThread
 
-// Module 9645 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 9652 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { DraftType } from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import DRAG_HANDLE from "DRAG_HANDLE";
+import ME from "ME";
+import { NativePermissionTypes } from "NativePermissionStatus";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +79,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,51 +106,57 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function addImagesFromPicker(id, items, IMAGE_PICKER) {
-  items = id;
+  const _require = id;
   const importDefault = IMAGE_PICKER;
-  if (IMAGE_PICKER !== items(dependencyMap[9]).UploadOrigin.FILE_ATTACHMENT) {
+  if (IMAGE_PICKER !== _require(4665).UploadOrigin.FILE_ATTACHMENT) {
     const found = items.filter((uri) => {
-      let tmp = null != uri && null != uri.uri;
+      let closure_0 = uri;
+      let tmp = null != closure_0 && null != uri.uri;
       if (tmp) {
         tmp = "" !== uri.uri;
       }
       if (tmp) {
-        tmp = null == closure_8.findUpload(uri, ChannelMessage.ChannelMessage, (id) => id(closure_2[11]).doesImageMatchUpload(id, id));
+        tmp = null == outer1_8.findUpload(closure_0, outer1_6.ChannelMessage, (closure_0) => uri(outer2_2[11]).doesImageMatchUpload(uri, closure_0));
       }
       return tmp;
     });
     const mapped = found.map((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["origin"] = arg2;
+      obj["origin"] = closure_1;
       return obj;
     });
     let obj = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
-    importDefault(dependencyMap[10]).addFiles(obj);
-    const obj3 = importDefault(dependencyMap[10]);
+    importDefault(7938).addFiles(obj);
+    const obj3 = importDefault(7938);
   } else {
-    obj = importDefault(dependencyMap[10]);
+    obj = importDefault(7938);
     obj = { files: items, channelId: id, draftType: DraftType.ChannelMessage };
     obj.addFiles(obj);
   }
 }
 function handleCameraDialog(arg0) {
-  ({ channel: closure_0, previewType: closure_1, onDismissKeyboard: closure_2, onRestoreKeyboard: closure_3, onSelectFiles: closure_4 } = arg0);
-  const permission = importDefault(dependencyMap[13]).requestPermission(NativePermissionTypes.CAMERA);
+  let _isNativeReflectConstruct;
+  let closure_4;
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ channel: require, previewType: importDefault, onDismissKeyboard: dependencyMap, onRestoreKeyboard: _isNativeReflectConstruct, onSelectFiles: closure_4 } = arg0);
+  const permission = importDefault(4675).requestPermission(NativePermissionTypes.CAMERA);
   permission.then((arg0) => {
     if (arg0) {
-      let obj = callback2(callback3[14]);
-      obj = { type: constants2.CAMERA };
-      ({ id: obj2.channel_id, guild_id: obj2.guild_id } = callback);
-      obj.track(constants.CHAT_INPUT_COMPONENT_VIEWED, obj);
-      callback3();
-      obj = {};
-      const obj3 = callback2(callback3[15]);
-      obj.quality = callback(callback3[12]).getImageCompressionQuality();
-      obj.saveToPhotos = obj.saveCameraUploadsToDevice;
+      let obj = outer1_1(outer1_2[14]);
+      obj = { type: outer1_16.CAMERA };
+      ({ id: obj2.channel_id, guild_id: obj2.guild_id } = closure_0);
+      obj.track(outer1_11.CHAT_INPUT_COMPONENT_VIEWED, obj);
+      callback();
+      obj = { mediaType: "mixed", includeBase64: false, quality: null, videoQuality: "high", saveToPhotos: null, skipProcessing: true };
+      const obj3 = outer1_1(outer1_2[15]);
+      obj.quality = outer1_0(outer1_2[12]).getImageCompressionQuality();
+      obj.saveToPhotos = outer1_4.saveCameraUploadsToDevice;
       obj3.launchCamera(obj, (didCancel) => {
         if (didCancel.didCancel) {
-          callback3();
+          outer1_3();
         } else if (null == didCancel.errorCode) {
           if (null != didCancel.assets) {
             if (didCancel.assets.length > 0) {
@@ -164,15 +191,15 @@ function handleCameraDialog(arg0) {
                         }
                         obj.filename = fileName;
                         obj.playableDuration = size.duration;
-                        obj.platform = callback(closure_2[9]).UploadPlatform.REACT_NATIVE;
+                        obj.platform = outer2_0(outer2_2[9]).UploadPlatform.REACT_NATIVE;
                         obj.createdUsingInAppCamera = true;
                         obj.mimeType = str8;
                         const items = [obj];
-                        callback4(items);
-                        obj = { camera_view: constants.FULLY_EXPANDED, camera_preview_type: callback2 };
-                        callback2(closure_2[14]).track(constants2.IN_APP_CAMERA_USED, obj);
-                        callback3();
-                        const obj2 = callback2(closure_2[14]);
+                        outer1_4(items);
+                        obj = { camera_view: outer2_10.FULLY_EXPANDED, camera_preview_type: outer1_1 };
+                        outer2_1(outer2_2[14]).track(outer2_11.IN_APP_CAMERA_USED, obj);
+                        outer1_3();
+                        const obj2 = outer2_1(outer2_2[14]);
                       }
                       const tmp4 = str8.split("/")[1];
                       let str11 = "jpeg";
@@ -189,60 +216,68 @@ function handleCameraDialog(arg0) {
           }
         }
       });
-      const obj5 = callback(callback3[12]);
+      const obj5 = outer1_0(outer1_2[12]);
     }
   });
 }
 function handleViewAllDialog(arg0) {
-  ({ channel: closure_0, draftType: closure_1, uploadLimit: closure_2, includedUploadIds: closure_3, onDismissKeyboard: closure_4, onRestoreKeyboard: closure_5, onSelectFiles: closure_6 } = arg0);
+  let DraftType;
+  let _isNativeReflectConstruct;
+  let closure_4;
+  let closure_5;
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ channel: require, draftType: importDefault, uploadLimit: dependencyMap, includedUploadIds: _isNativeReflectConstruct, onDismissKeyboard: closure_4, onRestoreKeyboard: closure_5, onSelectFiles: DraftType } = arg0);
   if (obj.isIOS()) {
     if (obj2.getSystemVersionMajor() >= 14) {
       let resolved = Promise.resolve(true);
     }
     resolved.then((arg0) => {
       if (arg0) {
-        let obj = callback(closure_2[14]);
-        obj = { type: constants2.NATIVE_MEDIA_PICKER };
+        let obj = outer1_1(outer1_2[14]);
+        obj = { type: outer1_16.NATIVE_MEDIA_PICKER };
         ({ id: obj2.channel_id, guild_id: obj2.guild_id } = found);
-        obj.track(constants.CHAT_INPUT_COMPONENT_VIEWED, obj);
-        callback2();
-        const uploads = uploads.getUploads(found.id, callback);
-        let found = uploads;
+        obj.track(outer1_11.CHAT_INPUT_COMPONENT_VIEWED, obj);
+        callback();
+        const uploads = outer1_8.getUploads(found.id, closure_1);
+        found = uploads;
         let arr2 = uploads;
-        if (null != closure_3) {
-          found = uploads.filter((id) => closure_3.includes(id.id));
+        if (null != _isNativeReflectConstruct) {
+          found = uploads.filter((id) => outer1_3.includes(id.id));
           arr2 = found;
         }
-        obj = { -9223372036854775808: "<string:2664235009>", 9223372036854775807: "<string:3550216193>" };
+        obj = { mediaType: "any", includeBase64: false };
         if (closure_2 <= 1) {
           obj.selectionLimit = 1;
           obj.selections = arr2.map((id) => id.id);
-          obj.includeExtra = !found(closure_2[16]).isIOS();
+          obj.includeExtra = !outer1_0(outer1_2[16]).isIOS();
           obj.skipProcessing = true;
-          const obj5 = found(closure_2[16]);
-          callback(closure_2[15]).launchImageLibrary(obj, (didCancel) => {
+          const obj5 = outer1_0(outer1_2[16]);
+          outer1_1(outer1_2[15]).launchImageLibrary(obj, (didCancel) => {
             let iter2;
-            const found = didCancel;
-            callback();
+            let closure_0 = didCancel;
+            outer1_5();
             if (!didCancel.didCancel) {
               if (null == didCancel.errorCode) {
-                if (0 !== found.length) {
+                if (0 !== closure_0.length) {
                   if (didCancel.replaceSelection) {
-                    const item = found.forEach((origin) => {
-                      let tmp = origin.origin !== origin(closure_2[9]).UploadOrigin.IMAGE_PICKER;
+                    const item = closure_0.forEach((origin) => {
+                      const didCancel = origin;
+                      let tmp = origin.origin !== outer3_0(outer3_2[9]).UploadOrigin.IMAGE_PICKER;
                       if (!tmp) {
-                        const assets = origin.assets;
-                        tmp = null != assets && assets.some((image) => image(closure_2[11]).doesImageMatchUpload(image, image));
-                        const tmp4 = null != assets && assets.some((image) => image(closure_2[11]).doesImageMatchUpload(image, image));
+                        const assets = didCancel.assets;
+                        tmp = null != assets && assets.some((image) => outer4_0(outer4_2[11]).doesImageMatchUpload(image, closure_0));
+                        const tmp4 = null != assets && assets.some((image) => outer4_0(outer4_2[11]).doesImageMatchUpload(image, closure_0));
                       }
                       if (!tmp) {
-                        callback(closure_2[10]).remove(origin.id, origin.id, ChannelMessage.ChannelMessage);
-                        const obj = callback(closure_2[10]);
+                        outer3_1(outer3_2[10]).remove(found.id, origin.id, outer3_6.ChannelMessage);
+                        const obj = outer3_1(outer3_2[10]);
                       }
                     });
                   }
                   const items = [];
-                  const tmp6 = callback3(didCancel.assets);
+                  const tmp6 = outer2_21(didCancel.assets);
                   let iter = tmp6();
                   if (!iter.done) {
                     do {
@@ -250,9 +285,9 @@ function handleViewAllDialog(arg0) {
                       if (null != value.uri) {
                         let obj = {};
                         ({ id: obj.id, uri: obj.uri, uri: obj.originalUri, mimeType: obj.mimeType, width: obj.width, height: obj.height, fileName: obj.filename, duration: obj.playableDuration } = value);
-                        let tmp10 = closure_0;
-                        let tmp11 = closure_2;
-                        obj.platform = closure_0(closure_2[9]).UploadPlatform.REACT_NATIVE;
+                        let tmp10 = outer2_0;
+                        let tmp11 = outer2_2;
+                        obj.platform = outer2_0(outer2_2[9]).UploadPlatform.REACT_NATIVE;
                         let arr = items.push(obj);
                       }
                       iter2 = tmp6();
@@ -260,28 +295,28 @@ function handleViewAllDialog(arg0) {
                     } while (!iter2.done);
                   }
                   if (items.length > 0) {
-                    callback2(items);
+                    outer1_6(items);
                   }
                 }
               }
             }
           });
-          const obj6 = callback(closure_2[15]);
+          const obj6 = outer1_1(outer1_2[15]);
         } else {
           if (obj4.isIOS()) {
-            let length = arr2.filter((origin) => origin.origin !== found(closure_2[9]).UploadOrigin.IMAGE_PICKER).length;
+            let length = arr2.filter((origin) => origin.origin !== outer2_0(outer2_2[9]).UploadOrigin.IMAGE_PICKER).length;
           } else {
             length = arr2.length;
           }
           const diff = closure_2 - length;
-          const obj4 = found(closure_2[16]);
+          obj4 = outer1_0(outer1_2[16]);
           const tmp15 = closure_2;
         }
       }
     });
   }
-  const obj = arg1(dependencyMap[16]);
-  resolved = importDefault(dependencyMap[13]).requestPermission(NativePermissionTypes.PHOTOS);
+  obj = require(477) /* set */;
+  resolved = importDefault(4675).requestPermission(NativePermissionTypes.PHOTOS);
 }
 function handleLimitedPickerDialog(arg0) {
   return _handleLimitedPickerDialog(...arguments);
@@ -289,7 +324,6 @@ function handleLimitedPickerDialog(arg0) {
 function _handleLimitedPickerDialog() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleLimitedPickerDialog = obj;
   return obj(...arguments);
 }
 function handleAttachFile(arg0) {
@@ -298,7 +332,6 @@ function handleAttachFile(arg0) {
 function _handleAttachFile() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleAttachFile = obj;
   return obj(...arguments);
 }
 function mediaNodeToUploadItem(item, createdUsingInAppCamera) {
@@ -309,9 +342,9 @@ function mediaNodeToUploadItem(item, createdUsingInAppCamera) {
     uri = image.uri;
   }
   obj.id = uri;
-  obj.origin = createdUsingInAppCamera(dependencyMap[9]).UploadOrigin.IMAGE_PICKER;
+  obj.origin = require(4665) /* _isNativeReflectConstruct */.UploadOrigin.IMAGE_PICKER;
   ({ uri: obj.uri, uri: obj.originalUri, mimeType: obj.mimeType, width: obj.width, height: obj.height, filename: obj.filename, playableDuration: obj.playableDuration } = image);
-  obj.platform = createdUsingInAppCamera(dependencyMap[9]).UploadPlatform.REACT_NATIVE;
+  obj.platform = require(4665) /* _isNativeReflectConstruct */.UploadPlatform.REACT_NATIVE;
   let tmp = null != createdUsingInAppCamera;
   if (tmp) {
     obj = { createdUsingInAppCamera };
@@ -321,15 +354,15 @@ function mediaNodeToUploadItem(item, createdUsingInAppCamera) {
   return obj;
 }
 function handleSelectKeyboardItem(channelId, item, isIncluded, createdUsingInAppCamera) {
-  item = item.node.image;
+  const image = item.node.image;
   if (isIncluded) {
-    const findUploadResult = closure_8.findUpload(channelId, DraftType.ChannelMessage, (id) => image(closure_2[11]).doesImageMatchUpload(image, id));
+    const findUploadResult = closure_8.findUpload(channelId, DraftType.ChannelMessage, (closure_0) => image(outer1_2[11]).doesImageMatchUpload(image, closure_0));
     if (null != findUploadResult) {
-      importDefault(dependencyMap[10]).remove(channelId, findUploadResult.id, DraftType.ChannelMessage);
-      const obj3 = importDefault(dependencyMap[10]);
+      importDefault(7938).remove(channelId, findUploadResult.id, DraftType.ChannelMessage);
+      const obj3 = importDefault(7938);
     }
   } else {
-    let obj = importDefault(dependencyMap[10]);
+    let obj = importDefault(7938);
     obj = { channelId, file: mediaNodeToUploadItem(item, createdUsingInAppCamera), draftType: DraftType.ChannelMessage };
     obj.addFile(obj);
   }
@@ -345,20 +378,11 @@ function getMediaKeyboardDraftType(target) {
     return DraftType.InteractionModal;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const DraftType = arg1(dependencyMap[3]).DraftType;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ MediaKeyboardTarget: closure_9, InAppCameraUsedViews: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-({ AnalyticEvents: closure_11, AnalyticsObjects: closure_12, AnalyticsObjectTypes: closure_13, AnalyticsPages: closure_14, AnalyticsSections: closure_15, ChatInputComponentViewedTypes: closure_16, ComponentActions: closure_17, MAX_UPLOAD_COUNT: closure_18 } = arg1(dependencyMap[7]));
-const NativePermissionTypes = arg1(dependencyMap[8]).NativePermissionTypes;
+({ MediaKeyboardTarget: closure_9, InAppCameraUsedViews: closure_10 } = DRAG_HANDLE);
+({ AnalyticEvents: closure_11, AnalyticsObjects: closure_12, AnalyticsObjectTypes: closure_13, AnalyticsPages: closure_14, AnalyticsSections: closure_15, ChatInputComponentViewedTypes: closure_16, ComponentActions: closure_17, MAX_UPLOAD_COUNT: closure_18 } = ME);
 let closure_20 = { code: "function animatedIndexThreshold_MediaKeyboardUtilsTsx1(animatedSnapPoints,thresholdPercent){return animatedSnapPoints.get().length===1?thresholdPercent-1:thresholdPercent*(animatedSnapPoints.get().length-1);}" };
-const tmp3 = arg1(dependencyMap[7]);
-const tmp4 = () => {
-  function animatedIndexThreshold(get) {
+let tmp4 = (() => {
+  export function animatedIndexThreshold(get) {
     if (1 === get.get().length) {
       let diff = arg1 - 1;
     } else {
@@ -370,22 +394,23 @@ const tmp4 = () => {
   animatedIndexThreshold.__workletHash = 97398083076;
   animatedIndexThreshold.__initData = closure_20;
   return animatedIndexThreshold;
-}();
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardUtils.tsx");
+})();
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_keyboard/native/MediaKeyboardUtils.tsx");
 function showSimpleMediaKeyboard(channel) {
-  const arg1 = channel;
+  const _require = channel;
   function onAttachFileParams(arg0) {
+    let closure_0 = arg0;
     return {
-      channel: arg0,
-      uploadLimit: closure_18,
+      channel: closure_0,
+      uploadLimit: outer1_18,
       onDismissKeyboard() {
-        return arg0(closure_2[18]).hideMediaKeyboardActionSheet();
+        return lib(onAttachFileParams[18]).hideMediaKeyboardActionSheet();
       },
       onRestoreKeyboard() {
-        callback2(arg0);
+        outer2_33(closure_0);
       },
       onSelectFiles(arg0) {
-        callback(arg0.id, arg0, arg0);
+        outer2_23(lib.id, arg0, lib);
       }
     };
   }
@@ -398,59 +423,59 @@ function showSimpleMediaKeyboard(channel) {
     uploadLimit: closure_18,
     disableWhenReachedLimit: true,
     onAttachPress() {
-      const merged = Object.assign(onAttachFileParams(arg0(onAttachFileParams[9]).UploadOrigin.FILE_ATTACHMENT));
-      callback4({});
+      const merged = Object.assign(onAttachFileParams(channel(onAttachFileParams[9]).UploadOrigin.FILE_ATTACHMENT));
+      outer1_28({});
     },
     onPressCamera(arg0) {
       const obj = {};
-      const merged = Object.assign(onAttachFileParams(arg0(onAttachFileParams[9]).UploadOrigin.IMAGE_PICKER));
+      const merged = Object.assign(onAttachFileParams(channel(onAttachFileParams[9]).UploadOrigin.IMAGE_PICKER));
       obj["previewType"] = arg0;
-      callback(obj);
+      outer1_24(obj);
     },
     onPressItem(arg0) {
       let channelId;
       let isIncluded;
       let item;
       ({ channelId, item, isIncluded } = arg0);
-      const result = arg0(onAttachFileParams[18]).hideMediaKeyboardActionSheet();
-      callback5(channelId, item, isIncluded);
+      const result = channel(onAttachFileParams[18]).hideMediaKeyboardActionSheet();
+      outer1_31(channelId, item, isIncluded);
     },
     onViewAll() {
       const obj = {};
-      const merged = Object.assign(onAttachFileParams(arg0(onAttachFileParams[9]).UploadOrigin.IMAGE_PICKER));
-      obj["draftType"] = tmp;
-      callback2(obj);
+      const merged = Object.assign(onAttachFileParams(channel(onAttachFileParams[9]).UploadOrigin.IMAGE_PICKER));
+      obj["draftType"] = closure_1;
+      outer1_25(obj);
     },
     onManageLimited() {
-      callback3({
-        onDismissKeyboard: arg0(onAttachFileParams[18]).hideMediaKeyboardActionSheet,
+      outer1_26({
+        onDismissKeyboard: channel(onAttachFileParams[18]).hideMediaKeyboardActionSheet,
         onRestoreKeyboard() {
-          callback(closure_0);
+          outer2_33(outer1_0);
         }
       });
     },
-    onClose: arg1(onAttachFileParams[18]).hideMediaKeyboardActionSheet,
-    onBack: arg1(onAttachFileParams[18]).hideMediaKeyboardActionSheet
+    onClose: _require(onAttachFileParams[18]).hideMediaKeyboardActionSheet,
+    onBack: _require(onAttachFileParams[18]).hideMediaKeyboardActionSheet
   };
-  const result = arg1(onAttachFileParams[18]).showMediaKeyboardActionSheet(obj);
+  let result = _require(onAttachFileParams[18]).showMediaKeyboardActionSheet(obj);
 }
 
 export { addImagesFromPicker };
-export const addAttachmentForCommand = function addAttachmentForCommand(channelId, closure_10, result1, closure_5, IMAGE_PICKER) {
-  const option = closure_5.option;
-  let obj = closure_10(dependencyMap[12]);
+export const addAttachmentForCommand = function addAttachmentForCommand(channelId, onSelectFiles, result1, outer1_5, IMAGE_PICKER) {
+  const option = outer1_5.option;
+  let obj = require(4674) /* openImagePickerUnhandled */;
   const filename = obj.getFileFromUploadItem(result1).filename;
-  if (closure_5.target === constants.COMMAND) {
-    const current = closure_10.current;
+  if (outer1_5.target === constants.COMMAND) {
+    const current = onSelectFiles.current;
     const applicationCommandManager = current.getApplicationCommandManager();
     if (null != applicationCommandManager) {
       obj = { displayText: filename, preferred: true };
       const result = applicationCommandManager.insertOrJumpCommandOption(option, undefined, false, obj);
     }
   }
-  const tmp7 = getMediaKeyboardDraftType(closure_5.target);
-  importDefault(dependencyMap[10]).remove(channelId, closure_5.option.name, tmp7);
-  const obj4 = importDefault(dependencyMap[10]);
+  const tmp7 = getMediaKeyboardDraftType(outer1_5.target);
+  importDefault(7938).remove(channelId, outer1_5.option.name, tmp7);
+  const obj4 = importDefault(7938);
   obj = { channelId };
   const obj1 = {};
   const merged = Object.assign(result1);
@@ -460,18 +485,18 @@ export const addAttachmentForCommand = function addAttachmentForCommand(channelI
   obj.file = obj1;
   obj.draftType = tmp7;
   obj.allowOptimization = false;
-  importDefault(dependencyMap[10]).addFile(obj);
+  importDefault(7938).addFile(obj);
 };
 export { handleCameraDialog };
 export { handleViewAllDialog };
 export { handleLimitedPickerDialog };
 export const handleSelectGift = function handleSelectGift(analyticsLocations, chatInput, current2) {
-  chatInput = current2;
+  const _require = current2;
   let current = chatInput.current;
-  const channelId = channelId.getChannelId();
+  channelId = channelId.getChannelId();
   current.closeCustomKeyboard();
-  const channel = channel.getChannel(channelId);
-  const ComponentDispatch = chatInput(dependencyMap[19]).ComponentDispatch;
+  channel = channel.getChannel(channelId);
+  const ComponentDispatch = _require(1207).ComponentDispatch;
   ComponentDispatch.dispatch(constants8.MEDIA_KEYBOARD_GIFT_SELECTED);
   let obj = { section: constants6.CHANNEL_TEXT_AREA, object: constants3.BUTTON_ICON, objectType: constants4.GIFT };
   let guild_id;
@@ -495,8 +520,8 @@ export const handleSelectGift = function handleSelectGift(analyticsLocations, ch
     guild_id1 = channel.guild_id;
   }
   obj.guild_id = guild_id1;
-  importDefault(dependencyMap[14]).track(constants2.CHAT_INPUT_COMPONENT_VIEWED, obj);
-  const obj3 = importDefault(dependencyMap[14]);
+  importDefault(675).track(constants2.CHAT_INPUT_COMPONENT_VIEWED, obj);
+  const obj3 = importDefault(675);
   const obj1 = {};
   let recipientId;
   if (null != channel) {
@@ -515,16 +540,16 @@ export const handleSelectGift = function handleSelectGift(analyticsLocations, ch
   let fn;
   if (null != current) {
     fn = () => {
-      let obj = arg2(closure_2[21]);
-      obj = { ref: arg2 };
+      let obj = current2(outer1_2[21]);
+      obj = { ref: current2 };
       return obj.setAccessibilityFocus(obj);
     };
   }
   obj1.onDismiss = fn;
-  chatInput(dependencyMap[20]).openGiftModal(obj1);
+  _require(9679).openGiftModal(obj1);
 };
 export const handleSelectThread = function handleSelectThread(channel, chatInput) {
-  let obj = importDefault(dependencyMap[14]);
+  let obj = importDefault(675);
   obj = { type: constants7.START_THREAD, channel_id: channel.id };
   let guild_id;
   if (null != channel) {
@@ -539,9 +564,9 @@ export const handleSelectThread = function handleSelectThread(channel, chatInput
       const current2 = chatInput.current;
       current2.blur();
     }
-    const obj3 = chatInput(dependencyMap[16]);
-    const result = chatInput(dependencyMap[22]).navigateToThreadCreation(channel, "Plus Button");
-    const obj4 = chatInput(dependencyMap[22]);
+    obj3 = require(477) /* set */;
+    const result = require(9811) /* navigateToThreadCreation */.navigateToThreadCreation(channel, "Plus Button");
+    const obj4 = require(9811) /* navigateToThreadCreation */;
   }
 };
 export { handleAttachFile };
@@ -559,15 +584,14 @@ export const cropResultToUploadItem = function cropResultToUploadItem(path) {
   const obj = {};
   const arr = parts.pop();
   const str = path.path;
-  obj.id = importDefault(dependencyMap[24]).uniqueId(path.path);
+  obj.id = importDefault(22).uniqueId(path.path);
   obj.uri = combined;
   obj.originalUri = combined;
   ({ mime: obj.mimeType, width: obj.width, height: obj.height } = path);
   obj.filename = arr;
-  obj.platform = arg1(dependencyMap[9]).UploadPlatform.REACT_NATIVE;
+  obj.platform = require(4665) /* _isNativeReflectConstruct */.UploadPlatform.REACT_NATIVE;
   return obj;
 };
 export { handleSelectKeyboardItem };
 export { showSimpleMediaKeyboard };
-export const animatedIndexThreshold = tmp4;
 export { getMediaKeyboardDraftType };

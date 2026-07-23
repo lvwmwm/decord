@@ -1,27 +1,27 @@
-// Module ID: 13726
-// Function ID: 103838
+// Module ID: 13840
+// Function ID: 105994
 // Name: route
-// Dependencies: []
+// Dependencies: [653, 10095, 1212, 9210, 13841, 2]
 
-// Module 13726 (route)
-const _module = require(dependencyMap[1]);
-let obj = {
+// Module 13840 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.f6kk+r);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["f6kk+r"]);
   },
   parent: null,
-  IconComponent: require(dependencyMap[3]).KeyIcon,
+  IconComponent: require("KeyIcon").KeyIcon,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.AUTHORIZED_APPS,
+  route: require("ME").UserSettingsSections.AUTHORIZED_APPS,
   getComponent() {
-    return require(dependencyMap[4]).default;
+    return require(13841) /* UserSettingsAuthedApps */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AuthorizedAppsSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/AuthorizedAppsSetting.tsx");
 
 export default route;

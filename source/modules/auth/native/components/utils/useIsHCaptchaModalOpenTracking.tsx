@@ -1,39 +1,42 @@
-// Module ID: 14665
-// Function ID: 110578
+// Module ID: 14780
+// Function ID: 112742
 // Name: useIsHCaptchaModalOpenTracking
-// Dependencies: []
+// Dependencies: [31, 14731, 14732, 14729, 3982, 3981, 2]
 // Exports: useIsHCaptchaModalOpenTracking
 
-// Module 14665 (useIsHCaptchaModalOpenTracking)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[1]).doesRegistrationHaveIdentityType;
-({ RegisterTransitionSteps: closure_4, RegistrationTransitionActionTypes: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/auth/native/components/utils/useIsHCaptchaModalOpenTracking.tsx");
+// Module 14780 (useIsHCaptchaModalOpenTracking)
+import result from "result";
+import { doesRegistrationHaveIdentityType as closure_3 } from "useRegistrationUIStore";
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ RegisterTransitionSteps: closure_4, RegistrationTransitionActionTypes: closure_5 } = RegistrationTransitionActionTypes);
+const result = require("RegistrationTransitionActionTypes").fileFinishedImporting("modules/auth/native/components/utils/useIsHCaptchaModalOpenTracking.tsx");
 
 export const useIsHCaptchaModalOpenTracking = function useIsHCaptchaModalOpenTracking() {
-  const context = React.useContext(arg1(dependencyMap[3]).TrackRegistrationContext);
-  const arg1 = context;
+  context = React.useContext(context(14729).TrackRegistrationContext);
   const items = [context];
   const layoutEffect = React.useLayoutEffect(() => {
-    const rootNavigationRef = context(closure_1[4]).getRootNavigationRef();
+    const rootNavigationRef = context(outer1_1[4]).getRootNavigationRef();
     let current;
     if (null != rootNavigationRef) {
       current = rootNavigationRef.current;
     }
     if (null != current) {
       return rootNavigationRef.addListener("state", () => {
-        let obj = callback(closure_1[5]);
+        let obj = context(outer2_1[5]);
         let isModalOpenResult = obj.isModalOpen("hcaptcha");
         if (isModalOpenResult) {
-          isModalOpenResult = callback2();
+          isModalOpenResult = outer2_3();
         }
         if (isModalOpenResult) {
-          obj = { step: constants.CAPTCHA, actionType: constants2.VIEWED };
-          callback(obj);
+          obj = { step: outer2_4.CAPTCHA, actionType: outer2_5.VIEWED };
+          outer1_0(obj);
         }
       });
     }
-    const obj = context(closure_1[4]);
+    let obj = context(outer1_1[4]);
   }, items);
 };

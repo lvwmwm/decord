@@ -1,9 +1,18 @@
-// Module ID: 12534
-// Function ID: 96271
+// Module ID: 12648
+// Function ID: 98427
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1849, 12649, 3374, 3402, 3357, 12650, 664, 12653, 566, 686, 2]
 
-// Module 12534 (_isNativeReflectConstruct)
+// Module 12648 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import NetworkTtlCache from "NetworkTtlCache";
+import dispatcher from "dispatcher";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_9 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -119,7 +128,7 @@ function updateTtl() {
         } else {
           let tmp4 = importDefault;
           let tmp5 = dependencyMap;
-          let tmp6 = importDefault(dependencyMap[8])(date1, 10);
+          let tmp6 = importDefault(3374)(date1, 10);
           if (date >= tmp6) {
             break;
           } else if (date >= date1) {
@@ -129,20 +138,20 @@ function updateTtl() {
             obj = {};
             let tmp12 = closure_13;
             obj.state = closure_13.LESS_THAN_24H_BEFORE_REWARD;
-            obj.msUntilReward = importDefault(dependencyMap[9])(tmp6, date);
+            obj.msUntilReward = importDefault(3402)(tmp6, date);
             obj1 = obj;
           } else {
             let tmp7 = importDefault;
             let tmp8 = dependencyMap;
             let tmp9 = tmp6;
-            if (date >= importDefault(dependencyMap[10])(date1, -1)) {
+            if (date >= importDefault(3357)(date1, -1)) {
               let tmp28 = importDefault;
               let tmp29 = dependencyMap;
               let num5 = 9;
               obj1 = {};
               let tmp30 = closure_13;
               obj1.state = closure_13.LESS_THAN_24H_BEFORE_REWARD;
-              obj1.msUntilReward = importDefault(dependencyMap[9])(tmp6, date);
+              obj1.msUntilReward = importDefault(3402)(tmp6, date);
             }
           }
         }
@@ -156,48 +165,41 @@ function updateTtl() {
   ({ state, msUntilReward } = obj1);
   if (closure_13.LESS_THAN_24H_BEFORE_REWARD === state) {
     if (null == msUntilReward) {
-      msUntilReward = closure_11;
+      msUntilReward = c11;
     }
     let tmp19 = msUntilReward;
   } else {
     if (closure_13.MORE_THAN_24H_BEFORE_REWARD !== state) {
       const PAST_REWARD_DATE = closure_13.PAST_REWARD_DATE;
     }
-    tmp19 = closure_11;
+    tmp19 = c11;
   }
   networkTtlCache.setTtl(tmp19);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
 let obj = { NOT_ELIGIBLE_FOR_ANY_PROGRAM_REWARD: "NOT_ELIGIBLE_FOR_ANY_PROGRAM_REWARD", CACHE_SHOULD_NOT_FETCH: "CACHE_SHOULD_NOT_FETCH" };
-let closure_11 = 86400000;
+let c11 = 86400000;
 obj = { ttlMs: 86400000 };
-const networkTtlCache = new arg1(dependencyMap[7]).NetworkTtlCache(obj);
+const networkTtlCache = new require("NetworkTtlCache").NetworkTtlCache(obj);
 let closure_13 = { MORE_THAN_24H_BEFORE_REWARD: "MORE_THAN_24H_BEFORE_REWARD", LESS_THAN_24H_BEFORE_REWARD: "LESS_THAN_24H_BEFORE_REWARD", PAST_REWARD_DATE: "PAST_REWARD_DATE" };
-let tmp3 = (PersistedStore) => {
+let tmp3 = ((PersistedStore) => {
   class ProgramRewardsStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_4(this, ProgramRewardsStore);
+      tmp = outer1_4(this, apply);
       items1 = [...items];
-      obj = closure_7(ProgramRewardsStore);
-      tmp2 = closure_6;
-      if (closure_14()) {
+      obj = outer1_7(apply);
+      tmp2 = outer1_6;
+      if (outer1_14()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items1, closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, items1, outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      ProgramRewardsStore = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.__getLocalVars = () => {
         let iter3;
         const state = tmp2Result.getState();
@@ -209,16 +211,16 @@ let tmp3 = (PersistedStore) => {
         if (null == items) {
           items = [];
         }
-        const tmp2Result = closure_15(items);
+        tmp2Result = outer2_15(items);
         let iter2 = tmp2Result();
         if (!iter2.done) {
           do {
-            let tmp4 = closure_3;
-            let tmp5 = closure_3(iter2.value, 2);
+            let tmp4 = outer2_3;
+            let tmp5 = outer2_3(iter2.value, 2);
             let first = tmp5[0];
-            let tmp7 = closure_0;
-            let tmp8 = closure_2;
-            let StringResult = closure_0(closure_2[11]).RewardProgram[first];
+            let tmp7 = ProgramRewardsStore;
+            let tmp8 = outer2_2;
+            let StringResult = ProgramRewardsStore(outer2_2[11]).RewardProgram[first];
             if (null == StringResult) {
               let _String = String;
               StringResult = String(first);
@@ -269,7 +271,7 @@ let tmp3 = (PersistedStore) => {
                   [tmp, tmp2] = arg0;
                   const obj = {};
                   const merged = Object.assign(tmp2);
-                  let NumberResult = callback(closure_2[11]).RewardProgram[tmp];
+                  let NumberResult = ProgramRewardsStore(outer4_2[11]).RewardProgram[tmp];
                   if (null == NumberResult) {
                     const _Number = Number;
                     NumberResult = Number(tmp);
@@ -290,12 +292,11 @@ let tmp3 = (PersistedStore) => {
       return tmp2Result;
     }
   }
-  const arg1 = ProgramRewardsStore;
   callback2(ProgramRewardsStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(cache) {
-      this.waitFor(closure_9);
+      this.waitFor(outer1_9);
       cache = undefined;
       if (null != cache) {
         cache = cache.cache;
@@ -304,16 +305,16 @@ let tmp3 = (PersistedStore) => {
         const _Map = Map;
         const map = new Map(cache.cache.value);
         const obj = { value: map, fetchedAt: cache.cache.fetchedAt };
-        assert.restore(obj);
+        outer1_12.restore(obj);
       }
-      callback5();
+      outer1_17();
     }
   };
-  const items = [obj, , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , ];
   obj = {
     key: "getState",
     value() {
-      const iter = assert.serialize();
+      const iter = outer1_12.serialize();
       let obj = {};
       let tmp = null;
       if (null != iter) {
@@ -342,7 +343,7 @@ let tmp3 = (PersistedStore) => {
           rounded = null;
           if (total_countdown_duration_ms > 0) {
             const _Math = Math;
-            rounded = Math.ceil(total_countdown_duration_ms / callback(closure_2[12]).Millis.DAY);
+            rounded = Math.ceil(total_countdown_duration_ms / outer1_1(outer1_2[12]).Millis.DAY);
           }
         }
         return rounded;
@@ -353,19 +354,19 @@ let tmp3 = (PersistedStore) => {
   items[3] = {
     key: "isFetching",
     value() {
-      return assert.isLoading();
+      return outer1_12.isLoading();
     }
   };
   items[4] = {
     key: "isFetched",
     value() {
-      return assert.isValid();
+      return outer1_12.isValid();
     }
   };
   items[5] = {
     key: "hasCachedValue",
     value() {
-      return null != assert.getValue();
+      return null != outer1_12.getValue();
     }
   };
   items[6] = {
@@ -376,8 +377,8 @@ let tmp3 = (PersistedStore) => {
       if (tmp) {
         let hasCachedValueResult = self.hasCachedValue();
         if (!hasCachedValueResult) {
-          hasCachedValueResult = !ProgramRewardsStore(closure_2[13]).canFetchAnyProgramReward("ProgramRewardsStore");
-          const obj = ProgramRewardsStore(closure_2[13]);
+          hasCachedValueResult = !ProgramRewardsStore(outer1_2[13]).canFetchAnyProgramReward("ProgramRewardsStore");
+          const obj = ProgramRewardsStore(outer1_2[13]);
         }
         if (!hasCachedValueResult) {
           hasCachedValueResult = self.isError();
@@ -390,15 +391,15 @@ let tmp3 = (PersistedStore) => {
   items[7] = {
     key: "shouldFetch",
     value() {
-      let obj = ProgramRewardsStore(closure_2[13]);
+      let obj = ProgramRewardsStore(outer1_2[13]);
       if (obj.canFetchAnyProgramReward("ProgramRewardsStore.shouldFetch")) {
-        if (assert.shouldFetch()) {
+        if (outer1_12.shouldFetch()) {
           obj = { shouldFetch: true };
         } else {
-          obj = { shouldFetch: false, reason: constants.CACHE_SHOULD_NOT_FETCH };
+          obj = { shouldFetch: false, reason: outer1_10.CACHE_SHOULD_NOT_FETCH };
         }
       } else {
-        const obj1 = { shouldFetch: false, reason: constants.NOT_ELIGIBLE_FOR_ANY_PROGRAM_REWARD };
+        const obj1 = { shouldFetch: false, reason: outer1_10.NOT_ELIGIBLE_FOR_ANY_PROGRAM_REWARD };
         return obj1;
       }
     }
@@ -406,19 +407,19 @@ let tmp3 = (PersistedStore) => {
   items[8] = {
     key: "isError",
     value() {
-      return assert.isError();
+      return outer1_12.isError();
     }
   };
   items[9] = {
     key: "getStatus",
     value() {
-      return assert.getStatus();
+      return outer1_12.getStatus();
     }
   };
   items[10] = {
     key: "getRewardForProgram",
     value(arg0) {
-      let value = assert.getValue();
+      let value = outer1_12.getValue();
       value = undefined;
       if (null != value) {
         value = value.get(arg0);
@@ -429,11 +430,11 @@ let tmp3 = (PersistedStore) => {
   items[11] = {
     key: "forceExpire",
     value() {
-      assert.forceExpire();
+      outer1_12.forceExpire();
     }
   };
   return callback(ProgramRewardsStore, items);
-}(importDefault(dependencyMap[14]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp3.displayName = "ProgramRewardsStore";
 tmp3.persistKey = "ProgramRewardsStore";
 obj = {
@@ -445,11 +446,10 @@ obj = {
   },
   PROGRAM_REWARDS_FETCH_SUCCESS: function handleProgramRewardsFetchSuccess(programRewards) {
     programRewards = programRewards.programRewards;
-    let arg1;
+    let map;
     if (networkTtlCache.isLoading()) {
       const _Map = Map;
-      const map = new Map();
-      arg1 = map;
+      map = new Map();
       const item = programRewards.forEach((reward_program) => {
         const result = map.set(reward_program.reward_program, reward_program);
       });
@@ -469,8 +469,8 @@ obj = {
   CURRENT_USER_UPDATE: updateTtl,
   CONNECTION_OPEN: updateTtl
 };
-tmp3 = new tmp3(importDefault(dependencyMap[15]), obj);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/rewards/ProgramRewardsStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), obj);
+let result = require("_defineProperties").fileFinishedImporting("modules/rewards/ProgramRewardsStore.tsx");
 
 export default tmp3;
 export const DidNotFetchReason = obj;

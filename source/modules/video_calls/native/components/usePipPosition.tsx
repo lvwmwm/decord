@@ -1,24 +1,26 @@
-// Module ID: 10530
-// Function ID: 82296
+// Module ID: 10540
+// Function ID: 82346
 // Name: usePipPosition
-// Dependencies: []
+// Dependencies: [57, 31, 587, 10541, 2]
 // Exports: default
 
-// Module 10530 (usePipPosition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/video_calls/native/components/usePipPosition.tsx");
+// Module 10540 (usePipPosition)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+let result = require("Storage").fileFinishedImporting("modules/video_calls/native/components/usePipPosition.tsx");
 
 export default function usePipPosition() {
   const tmp = callback(React.useState(() => {
-    const Storage = callback(closure_1[2]).Storage;
-    return Storage.get("CameraPreviewPosition", callback(closure_1[3]).DEFAULT_PIP_POSITION);
+    const Storage = callback(outer1_1[2]).Storage;
+    return Storage.get("CameraPreviewPosition", callback(outer1_1[3]).DEFAULT_PIP_POSITION);
   }), 2);
   let closure_0 = tmp[1];
   const items = [
     tmp[0],
     React.useCallback((arg0) => {
-      const Storage = callback(closure_1[2]).Storage;
+      const Storage = callback(outer1_1[2]).Storage;
       const result = Storage.set("CameraPreviewPosition", arg0);
       callback(arg0);
     }, [])

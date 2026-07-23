@@ -1,21 +1,21 @@
-// Module ID: 8854
-// Function ID: 69875
+// Module ID: 8861
+// Function ID: 69916
 // Name: showAudioOutputSelector
-// Dependencies: []
+// Dependencies: [27, 8862, 477, 4098, 8863, 1934, 2]
 // Exports: showAudioOutputSelector
 
-// Module 8854 (showAudioOutputSelector)
-const NativeModules = require(dependencyMap[0]).NativeModules;
-let closure_4 = require(dependencyMap[1]).VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/voice_calls/native/audio_output_selector/showAudioOutputSelector.tsx");
+// Module 8861 (showAudioOutputSelector)
+import { NativeModules } from "get ActivityIndicator";
+import { VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY as closure_4 } from "VOICE_PANEL_SETTINGS_KEY";
+
+const result = require("set").fileFinishedImporting("modules/voice_calls/native/audio_output_selector/showAudioOutputSelector.tsx");
 
 export const showAudioOutputSelector = function showAudioOutputSelector(channelId, closure_1) {
-  let obj = require(dependencyMap[2]);
+  let obj = require(477) /* set */;
   if (obj.isAndroid()) {
     obj = { channelId, isConnectedToVoiceChannel: closure_1 };
-    importDefault(dependencyMap[3]).openLazy(require(dependencyMap[5])(dependencyMap[4], dependencyMap.paths), closure_4, obj);
-    const obj2 = importDefault(dependencyMap[3]);
+    importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(8863, dependencyMap.paths), closure_4, obj);
+    const obj2 = importDefault(4098);
   } else {
     const AudioRoutePicker = NativeModules.AudioRoutePicker;
     if (null != AudioRoutePicker) {

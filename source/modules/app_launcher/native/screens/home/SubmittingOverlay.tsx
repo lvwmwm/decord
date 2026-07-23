@@ -1,46 +1,45 @@
-// Module ID: 11170
-// Function ID: 86884
+// Module ID: 11180
+// Function ID: 86934
 // Name: SubmittingOverlay
-// Dependencies: [37093376, 535691264, 732626944, 732758016, 131072, 108658688, 117440512, 251658240]
+// Dependencies: [33, 4130, 689, 3991, 4542, 4546, 4558, 2]
 // Exports: SubmittingOverlay
 
-// Module 11170 (SubmittingOverlay)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[1]);
+// Module 11180 (SubmittingOverlay)
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let obj = {};
-obj = { __v_isVNode: "string", _$esjava$I_x: "string", EmbeddedActivitiesStore: "color", backgroundColor: importDefault(dependencyMap[2]).colors.BACKGROUND_SCRIM };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM, justifyContent: "center", alignItems: "center" };
 obj.ellipsis = obj;
-let closure_4 = _module.createStyles(obj);
+let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_5 = { code: "function SubmittingOverlayTsx1(){const{withSpring,submitting,SUBTLE_SPRING}=this.__closure;return{opacity:withSpring(submitting?1:0,SUBTLE_SPRING,'animate-always')};}" };
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("modules/app_launcher/native/screens/home/SubmittingOverlay.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/screens/home/SubmittingOverlay.tsx");
 
 export const SubmittingOverlay = function SubmittingOverlay(submitting) {
   submitting = submitting.submitting;
-  const require = submitting;
-  let obj = require(dependencyMap[3]);
+  let obj = submitting(3991);
   class S {
     constructor() {
       obj = {};
-      obj2 = submitting(closure_2[4]);
+      obj2 = submitting(outer1_2[4]);
       num = 0;
       if (submitting) {
         num = 1;
       }
-      obj.opacity = obj2.withSpring(num, submitting(closure_2[5]).SUBTLE_SPRING, "animate-always");
+      obj.opacity = obj2.withSpring(num, submitting(outer1_2[5]).SUBTLE_SPRING, "animate-always");
       return obj;
     }
   }
-  obj = { withSpring: require(dependencyMap[4]).withSpring, submitting, SUBTLE_SPRING: require(dependencyMap[5]).SUBTLE_SPRING };
+  obj = { withSpring: submitting(4542).withSpring, submitting, SUBTLE_SPRING: submitting(4546).SUBTLE_SPRING };
   S.__closure = obj;
   S.__workletHash = 492443733468;
   S.__initData = closure_5;
   const animatedStyle = obj.useAnimatedStyle(S);
   obj = { style: items };
-  const items = [submitting.style, callback().ellipsis, animatedStyle];
+  items = [submitting.style, callback().ellipsis, animatedStyle];
   if (submitting) {
-    submitting = jsx(require(dependencyMap[6]).Ellipsis, {});
+    submitting = jsx(submitting(4558).Ellipsis, { variant: "active", size: "md" });
   }
   obj.children = submitting;
-  return jsx(importDefault(dependencyMap[3]).View, obj);
+  return jsx(importDefault(3991).View, { style: items });
 };

@@ -1,23 +1,25 @@
-// Module ID: 9922
-// Function ID: 76756
+// Module ID: 9928
+// Function ID: 76793
 // Name: ForLaterCardReminderHeader
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 689, 9920, 4094, 4126, 2]
 // Exports: ForLaterCardReminderHeader
 
-// Module 9922 (ForLaterCardReminderHeader)
-const View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = _module);
-const _module1 = require(dependencyMap[2]);
+// Module 9928 (ForLaterCardReminderHeader)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 let obj = {};
-obj = { padding: 29183, flexDirection: 1680932864, gap: -1924145349, flex: 1908425207, justifyContent: 10, alignItems: 115, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_BASE_LOWER, marginEnd: 1024, flexDirection: 1962950912, alignItems: 24182786, width: 16777216, borderTopLeftRadius: importDefault(dependencyMap[3]).radii.lg, borderTopRightRadius: importDefault(dependencyMap[3]).radii.lg };
+obj = { flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden", gap: 8, marginHorizontal: -16, marginTop: -16, paddingHorizontal: 16, paddingVertical: 12 };
 obj.container = obj;
-const obj1 = { "Null": "$", "Null": "prefixTag", "Null": "ti", "Null": "isArray", "Bool(false)": "ti", "Bool(false)": "isArray", borderRadius: importDefault(dependencyMap[3]).radii.sm, backgroundColor: importDefault(dependencyMap[3]).colors.CARD_BACKGROUND_DEFAULT };
+let obj1 = { width: 24, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT, alignItems: "center", justifyContent: "center" };
 obj.icon = obj1;
-obj.actionsContainer = {};
-let closure_6 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[7]);
-const result = _module2.fileFinishedImporting("modules/saved_messages/native/ForLaterCardReminderHeader.tsx");
+obj.actionsContainer = { marginVertical: -4, marginLeft: "auto" };
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/saved_messages/native/ForLaterCardReminderHeader.tsx");
 
 export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(savedMessage) {
   let actions;
@@ -25,7 +27,7 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   savedMessage = savedMessage.savedMessage;
   ({ throttledNow, actions } = savedMessage);
   const tmp = callback3();
-  let obj = require(dependencyMap[4]);
+  let obj = require(9920) /* _savedMessageJumpToMessage */;
   obj = {};
   let dueAt;
   if (null != savedMessage) {
@@ -33,7 +35,7 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   }
   obj.dueAt = dueAt;
   obj.now = throttledNow;
-  obj.type = require(dependencyMap[4]).DueInStringTypes.SHORT;
+  obj.type = require(9920) /* _savedMessageJumpToMessage */.DueInStringTypes.SHORT;
   const dueInString = obj.useDueInString(obj);
   const isOverdue = dueInString.isOverdue;
   if (null == savedMessage.saveData.dueAt) {
@@ -43,14 +45,14 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
     if (isOverdue) {
       str = "text-feedback-critical";
     }
-    const colors = importDefault(dependencyMap[3]).colors;
+    const colors = importDefault(689).colors;
     obj = { style: tmp.container };
     const obj1 = { style: tmp.icon };
     const obj2 = { size: "xxs", color: isOverdue ? colors.TEXT_FEEDBACK_CRITICAL : colors.INTERACTIVE_TEXT_DEFAULT };
-    obj1.children = callback(require(dependencyMap[5]).ClockIcon, obj2);
+    obj1.children = callback(require(4094) /* ClockIcon */.ClockIcon, obj2);
     const items = [callback(View, obj1), , ];
     const obj3 = { variant: "text-md/semibold", color: str, children: tmp4 };
-    items[1] = callback(require(dependencyMap[6]).Text, obj3);
+    items[1] = callback(require(4126) /* Text */.Text, obj3);
     const obj4 = { style: tmp.actionsContainer, children: actions };
     items[2] = callback(View, obj4);
     obj.children = items;

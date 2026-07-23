@@ -1,53 +1,71 @@
-// Module ID: 4679
-// Function ID: 40772
+// Module ID: 4682
+// Function ID: 40790
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5, 31, 27, 4344, 33, 477, 1553, 3, 4683, 4685, 1934, 4472, 1212, 4679, 2]
 
-// Module 4679 (_createForOfIteratorHelperLoose)
+// Module 4682 (_createForOfIteratorHelperLoose)
+import result from "result";
+import getActivityIndicator from "get ActivityIndicator";
+import maybeLoadBundle from "maybeLoadBundle";
+import getSystemLocale from "getSystemLocale";
+import NativePermissionBaseUtils from "NativePermissionBaseUtils";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import closure_9 from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import NativePermissionStatus from "NativePermissionStatus";
+import { jsx } from "jsxProd";
+import set from "set";
+import isMetaQuest from "isMetaQuest";
+import set from "set";
+import set from "set";
+import set from "_possibleConstructorReturn";
+
 let NativePermissionTypes;
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_11;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -97,11 +115,11 @@ function combineStatuses(items) {
   return _combineStatuses(...arguments);
 }
 async function _combineStatuses(arg0, arg1) {
-  const tmp = callback(arg0);
+  const tmp = outer2_15(arg0);
   if (!iter.done) {
     while (true) {
-      let tmp4 = constants;
-      if (tmp3 !== constants.AUTHORIZED) {
+      let tmp4 = outer2_11;
+      if (tmp3 !== outer2_11.AUTHORIZED) {
         break;
       } else {
         let iter2 = tmp();
@@ -109,42 +127,31 @@ async function _combineStatuses(arg0, arg1) {
       }
     }
   }
-  return constants.AUTHORIZED;
+  return outer2_11.AUTHORIZED;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importAll(dependencyMap[6]);
-const tmp2 = arg1(dependencyMap[7]);
-const NativeModules = tmp2.NativeModules;
-({ NativePermissionTypes, NativePermissionStatus: closure_11 } = arg1(dependencyMap[8]));
-const jsx = arg1(dependencyMap[9]).jsx;
-let obj = arg1(dependencyMap[10]);
-let isAndroidResult = obj.isAndroid();
-if (isAndroidResult) {
-  isAndroidResult = tmp2.Platform.constants.Version <= 28;
+const NativeModules = get_ActivityIndicator.NativeModules;
+({ NativePermissionTypes, NativePermissionStatus: closure_11 } = NativePermissionStatus);
+set = set.isAndroid();
+if (set) {
+  set = get_ActivityIndicator.Platform.constants.Version <= 28;
 }
-const tmp3 = arg1(dependencyMap[8]);
-const isMetaQuestResult = arg1(dependencyMap[11]).isMetaQuest();
-if (isAndroidResult) {
-  const items = [NativeModules.NativePermissionManager.requestExternalStorageAuthorization];
+isMetaQuest = isMetaQuest.isMetaQuest();
+if (set) {
+  let items = [NativeModules.NativePermissionManager.requestExternalStorageAuthorization];
   let items1 = items;
 } else {
   items1 = [];
 }
 const items2 = [...items1];
 const NativePermissionManager = NativeModules.NativePermissionManager;
-if (isMetaQuestResult) {
+if (isMetaQuest) {
   const items3 = [NativePermissionManager.requestAvatarCameraAuthorization];
   let items4 = items3;
 } else {
   items4 = [NativePermissionManager.requestCameraAuthorization];
 }
 HermesBuiltin.arraySpread(items4, tmp6);
-if (isAndroidResult) {
+if (set) {
   const items5 = [NativeModules.NativePermissionManager.hasExternalStorageAuthorization];
   let items6 = items5;
 } else {
@@ -152,26 +159,26 @@ if (isAndroidResult) {
 }
 const items7 = [...items6];
 const NativePermissionManager2 = NativeModules.NativePermissionManager;
-if (isMetaQuestResult) {
+if (isMetaQuest) {
   const items8 = [NativePermissionManager2.hasAvatarCameraAuthorization];
   let items9 = items8;
 } else {
   items9 = [NativePermissionManager2.hasCameraAuthorization];
 }
 HermesBuiltin.arraySpread(items9, tmp8);
-let tmp10 = (NativePermissionBaseUtils) => {
+let tmp10 = ((NativePermissionBaseUtils) => {
   class NativePermissionIOSUtils {
     constructor() {
       self = this;
-      tmp = closure_3(this, NativePermissionIOSUtils);
-      obj = closure_6(NativePermissionIOSUtils);
-      tmp2 = closure_5;
-      if (closure_17()) {
+      tmp = outer1_3(this, NativePermissionIOSUtils);
+      obj = outer1_6(NativePermissionIOSUtils);
+      tmp2 = outer1_5;
+      if (outer1_17()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -180,7 +187,6 @@ let tmp10 = (NativePermissionBaseUtils) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = NativePermissionIOSUtils;
   callback2(NativePermissionIOSUtils, NativePermissionBaseUtils);
   let obj = {
     key: "requestPermissionCore",
@@ -201,7 +207,7 @@ let tmp10 = (NativePermissionBaseUtils) => {
     value(arg0, arg1, arg2) {
       const self = this;
       if (null == arg0[arg1]) {
-        let tmp6 = callback(closure_2[12]);
+        let tmp6 = outer1_1(outer1_2[12]);
         const prototype = tmp6.prototype;
         tmp6 = new tmp6("NativePermissionUtils");
         const _HermesInternal = HermesInternal;
@@ -224,7 +230,7 @@ let tmp10 = (NativePermissionBaseUtils) => {
   items[4] = {
     key: "openSettings",
     value() {
-      callback(closure_2[13])();
+      outer1_1(outer1_2[13])();
     }
   };
   items[5] = {
@@ -233,20 +239,19 @@ let tmp10 = (NativePermissionBaseUtils) => {
       let body;
       let onConfirm;
       ({ body, onConfirm } = arg0);
-      let obj = NativePermissionIOSUtils(closure_2[16]);
+      let obj = NativePermissionIOSUtils(outer1_2[16]);
       obj = {};
-      const intl = NativePermissionIOSUtils(closure_2[17]).intl;
-      obj.title = intl.string(NativePermissionIOSUtils(closure_2[17]).t.sMFVrS);
+      const intl = NativePermissionIOSUtils(outer1_2[17]).intl;
+      obj.title = intl.string(NativePermissionIOSUtils(outer1_2[17]).t.sMFVrS);
       obj.body = body;
       obj.onConfirm = onConfirm;
-      obj.openAlert("permission-denied", callback4(React.lazy(() => callback(paths[15])(paths[14], paths.paths)), obj));
+      obj.openAlert("permission-denied", outer1_12(outer1_9.lazy(() => NativePermissionIOSUtils(outer2_2[15])(outer2_2[14], outer2_2.paths)), obj));
     }
   };
   return callback(NativePermissionIOSUtils, items);
-}(arg1(dependencyMap[18]).NativePermissionBaseUtils);
-obj = { [NativePermissionTypes.CAMERA]: () => combineStatuses(items2), [NativePermissionTypes.HEADSET_CAMERA]: NativeModules.NativePermissionManager.requestHeadsetCameraAuthorization };
-const obj2 = arg1(dependencyMap[11]);
-if (obj4.isAndroid()) {
+})(require("NativePermissionBaseUtils").NativePermissionBaseUtils);
+set = { [NativePermissionTypes.CAMERA]: () => combineStatuses(items2), [NativePermissionTypes.HEADSET_CAMERA]: NativeModules.NativePermissionManager.requestHeadsetCameraAuthorization };
+if (set.isAndroid()) {
   let fn = () => {
     const items = [NativeModules.NativePermissionManager.requestMicrophoneAuthorization, NativeModules.NativePermissionManager.requestModifyAudioAuthorization];
     return combineStatuses(items);
@@ -254,14 +259,13 @@ if (obj4.isAndroid()) {
 } else {
   fn = NativeModules.NativePermissionManager.requestMicrophoneAuthorization;
 }
-obj[NativePermissionTypes.AUDIO] = fn;
-obj[NativePermissionTypes.PHOTOS] = NativeModules.NativePermissionManager.requestPhotoAuthorization;
-obj[NativePermissionTypes.CONTACTS] = NativeModules.NativePermissionManager.requestContactsAuthorization;
-obj[NativePermissionTypes.INPUT_MONITORING] = () => Promise.resolve(constants.AUTHORIZED);
-tmp10.requestPermissionLookup = obj;
-obj = { [NativePermissionTypes.CAMERA]: () => combineStatuses(items7), [NativePermissionTypes.HEADSET_CAMERA]: NativeModules.NativePermissionManager.hasHeadsetCameraAuthorization };
-const obj4 = arg1(dependencyMap[10]);
-if (obj6.isAndroid()) {
+set[NativePermissionTypes.AUDIO] = fn;
+set[NativePermissionTypes.PHOTOS] = NativeModules.NativePermissionManager.requestPhotoAuthorization;
+set[NativePermissionTypes.CONTACTS] = NativeModules.NativePermissionManager.requestContactsAuthorization;
+set[NativePermissionTypes.INPUT_MONITORING] = () => Promise.resolve(constants.AUTHORIZED);
+tmp10.requestPermissionLookup = set;
+set = { [NativePermissionTypes.CAMERA]: () => combineStatuses(items7), [NativePermissionTypes.HEADSET_CAMERA]: NativeModules.NativePermissionManager.hasHeadsetCameraAuthorization };
+if (set.isAndroid()) {
   let fn2 = () => {
     const items = [NativeModules.NativePermissionManager.hasMicrophoneAuthorization, NativeModules.NativePermissionManager.hasModifyAudioAuthorization];
     return combineStatuses(items);
@@ -269,11 +273,10 @@ if (obj6.isAndroid()) {
 } else {
   fn2 = NativeModules.NativePermissionManager.hasMicrophoneAuthorization;
 }
-obj[NativePermissionTypes.AUDIO] = fn2;
-obj[NativePermissionTypes.INPUT_MONITORING] = () => Promise.resolve(constants.AUTHORIZED);
-tmp10.hasPermissionLookup = obj;
+set[NativePermissionTypes.AUDIO] = fn2;
+set[NativePermissionTypes.INPUT_MONITORING] = () => Promise.resolve(constants.AUTHORIZED);
+tmp10.hasPermissionLookup = set;
 tmp10 = new tmp10();
-const obj6 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/native_permissions/mobile/NativePermissionUtils.native.tsx");
+let result = set.fileFinishedImporting("modules/native_permissions/mobile/NativePermissionUtils.native.tsx");
 
 export default tmp10;

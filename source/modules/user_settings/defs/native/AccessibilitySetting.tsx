@@ -1,24 +1,26 @@
-// Module ID: 14100
-// Function ID: 107050
+// Module ID: 14214
+// Function ID: 109206
 // Name: items
-// Dependencies: []
+// Dependencies: [57, 31, 653, 1345, 33, 1334, 5802, 1273, 1212, 10095, 14215, 14217, 2]
 
-// Module 14100 (items)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-const jsx = arg1(dependencyMap[4]).jsx;
-const items = [arg1(dependencyMap[5]).DismissibleContent.MOBILE_ACCESSIBILITY_COLOR_SETTINGS];
-let obj = arg1(dependencyMap[9]);
-obj = {
+// Module 14214 (items)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const require = arg1;
+let items = [require("DismissibleContent").DismissibleContent.MOBILE_ACCESSIBILITY_COLOR_SETTINGS];
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[8]).intl;
-    return intl.string(arg1(dependencyMap[8]).t.G0neg7);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.G0neg7);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[10]).AccessibilityIcon,
+  IconComponent: require("AccessibilityIcon").AccessibilityIcon,
   useTrailing() {
-    let obj = arg1(dependencyMap[6]);
+    let obj = require(5802) /* useSelectedDismissibleContent */;
     const first = callback(obj.useSelectedDismissibleContent(items), 2)[0];
     let tmp3 = null;
     if (null != first) {
@@ -29,42 +31,41 @@ obj = {
       tmp3 = null;
       if (hasItem) {
         obj = {};
-        const intl = arg1(dependencyMap[8]).intl;
-        obj.text = intl.string(arg1(dependencyMap[8]).t.y2b7CA);
-        tmp3 = jsx(arg1(dependencyMap[7]).TextBadge, obj);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        obj.text = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
+        tmp3 = jsx(require(1273) /* Button */.TextBadge, {});
       }
     }
     return tmp3;
   },
   usePreNavigationAction() {
-    const tmp = callback(arg1(dependencyMap[6]).useSelectedDismissibleContent(items), 2);
-    const first = tmp[0];
-    const arg1 = first;
+    const tmp = callback(first(5802).useSelectedDismissibleContent(items), 2);
+    first = tmp[0];
     const dependencyMap = tmp3;
-    const items = [tmp[1], first];
+    items = [tmp[1], first];
     return React.useCallback(() => {
       let hasItem = null != first;
       if (hasItem) {
-        hasItem = null != closure_6;
+        hasItem = null != outer1_6;
       }
       if (hasItem) {
-        hasItem = closure_6.includes(first);
+        hasItem = outer1_6.includes(first);
       }
       if (hasItem) {
-        tmp3(constants.TAKE_ACTION);
+        tmp3(outer1_4.TAKE_ACTION);
       }
       return true;
     }, items);
   },
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[2]).UserSettingsSections.ACCESSIBILITY,
+createToggle = {
+  route: require("ME").UserSettingsSections.ACCESSIBILITY,
   getComponent() {
-    return arg1(dependencyMap[11]).default;
+    return require(14217) /* getAccessibilitySettingScreen */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/defs/native/AccessibilitySetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AccessibilitySetting.tsx");
 
-export default route;
+export default createToggle;

@@ -1,9 +1,14 @@
 // Module ID: 310
 // Function ID: 4759
 // Name: _isViewable
-// Dependencies: []
+// Dependencies: [57, 6, 7, 44]
 
 // Module 310 (_isViewable)
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
 function _isViewable(arg0, arg1, arg2, arg3, arg4, arg5) {
   if (tmp) {
     return true;
@@ -20,13 +25,10 @@ function _isViewable(arg0, arg1, arg2, arg3, arg4, arg5) {
     }
     return 100 * result >= arg1;
   }
-  const tmp = arg2 >= 0 && arg3 <= arg4 && arg3 > arg2;
+  tmp = arg2 >= 0 && arg3 <= arg4 && arg3 > arg2;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
 
-export default () => {
+export default (() => {
   class ViewabilityHelper {
     constructor() {
       self = this;
@@ -34,9 +36,9 @@ export default () => {
         if (undefined !== arguments[0]) {
           first = arguments[0];
         }
-        tmp2 = closure_3;
+        tmp2 = outer1_3;
         tmp3 = ViewabilityHelper;
-        tmp4 = closure_3(self, ViewabilityHelper);
+        tmp4 = outer1_3(self, ViewabilityHelper);
         flag = false;
         self._hasInteracted = false;
         tmp5 = globalThis;
@@ -61,7 +63,6 @@ export default () => {
       return;
     }
   }
-  const arg1 = ViewabilityHelper;
   let obj = {
     key: "dispose",
     value: function dispose() {
@@ -69,7 +70,7 @@ export default () => {
       const item = _timers.forEach(clearTimeout);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "computeViewableItems",
     value: function computeViewableItems(getItemCount, arg1, arg2, getCellMetrics, renderRange) {
@@ -87,7 +88,7 @@ export default () => {
       if (tmp5) {
         tmp5 = null != itemVisiblePercentThreshold !== (null != viewAreaCoveragePercentThreshold);
       }
-      ViewabilityHelper(closure_1[3])(tmp5, "Must set exactly one of itemVisiblePercentThreshold or viewAreaCoveragePercentThreshold");
+      ViewabilityHelper(outer1_1[3])(tmp5, "Must set exactly one of itemVisiblePercentThreshold or viewAreaCoveragePercentThreshold");
       const items = [];
       if (0 === itemCount) {
         return items;
@@ -124,7 +125,7 @@ export default () => {
                 let rounded1 = Math.floor(rounded + cellMetrics.length);
                 if (rounded < arg2) {
                   if (rounded1 > 0) {
-                    let tmp14 = callback2;
+                    let tmp14 = outer1_5;
                     let tmp15 = tmp2;
                     let tmp16 = tmp3;
                     let tmp17 = rounded;
@@ -133,7 +134,7 @@ export default () => {
                     tmp9 = first;
                     let tmp20 = rounded;
                     let tmp21 = rounded1;
-                    if (callback2(tmp2, tmp3, rounded, rounded1, arg2, cellMetrics.length)) {
+                    if (outer1_5(tmp2, tmp3, rounded, rounded1, arg2, cellMetrics.length)) {
                       let arr = items.push(first);
                       tmp9 = first;
                       let tmp23 = rounded;
@@ -154,15 +155,15 @@ export default () => {
           return items;
         }
       }
-      const tmp4 = ViewabilityHelper(closure_1[3]);
+      const tmp4 = ViewabilityHelper(outer1_1[3]);
     }
   };
   items[1] = obj;
   obj = {
     key: "onUpdate",
-    value: function onUpdate(getItemCount, arg1, arg2, getCellMetrics, arg4, arg5, renderRange) {
+    value: function onUpdate(getItemCount, arg1, arg2, getCellMetrics, closure_1, _slicedToArray, renderRange) {
       let self = this;
-      const ViewabilityHelper = getItemCount;
+      let closure_0 = getItemCount;
       self = this;
       const itemCount = getItemCount.getItemCount(getItemCount.data);
       if (!this._config.waitForInteraction) {
@@ -181,12 +182,12 @@ export default () => {
                 const timerId = setTimeout(() => {
                   const _timers = self._timers;
                   _timers.delete(timerId);
-                  self._onUpdateSync(arg0, viewableItems, arg5, arg4);
+                  self._onUpdateSync(closure_0, viewableItems, _slicedToArray, closure_1);
                 }, self._config.minimumViewTime);
-                const _timers = self._timers;
+                let _timers = self._timers;
                 _timers.add(timerId);
               } else {
-                self._onUpdateSync(getItemCount, items, arg5, arg4);
+                self._onUpdateSync(getItemCount, items, _slicedToArray, closure_1);
               }
             } else {
               const _viewableIndices = self._viewableIndices;
@@ -211,9 +212,8 @@ export default () => {
   };
   items[5] = {
     key: "_onUpdateSync",
-    value: function _onUpdateSync(getItemCount, items, arg2, arg3) {
+    value: function _onUpdateSync(closure_0, items, _slicedToArray, closure_1) {
       let self = this;
-      const ViewabilityHelper = getItemCount;
       self = this;
       const found = items.filter((arg0) => {
         const _viewableIndices = self._viewableIndices;
@@ -221,15 +221,15 @@ export default () => {
       });
       const _viewableItems = this._viewableItems;
       const map = new Map(found.map((arg0) => {
-        const tmp = arg3(arg0, true, arg0);
+        const tmp = callback(arg0, true, closure_0);
         const items = [tmp.key, tmp];
         return items;
       }));
       let obj = map;
       items = [];
       while (tmp3 !== undefined) {
-        let tmp5 = self;
-        let tmp6 = self(tmp4, 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(tmp4, 2);
         let tmp7 = tmp6[1];
         let tmp8 = _viewableItems;
         if (!_viewableItems.has(tmp6[0])) {
@@ -237,12 +237,12 @@ export default () => {
           let tmp10 = tmp7;
           let arr = items.push(tmp7);
         }
-        // continue
+        continue;
       }
-      const tmp3 = map[Symbol.iterator]();
+      tmp3 = map[Symbol.iterator]();
       while (tmp12 !== undefined) {
-        let tmp14 = self;
-        let tmp15 = self(tmp13, 2);
+        let tmp14 = outer1_2;
+        let tmp15 = outer1_2(tmp13, 2);
         let tmp16 = tmp15[1];
         let tmp17 = tmp2;
         if (!obj.has(tmp15[0])) {
@@ -252,7 +252,7 @@ export default () => {
           obj = { isViewable: false };
           arr = items.push(Object.assign({}, tmp16, obj));
         }
-        // continue
+        continue;
       }
       if (items.length > 0) {
         self._viewableItems = obj;
@@ -261,9 +261,9 @@ export default () => {
         obj.viewableItems = Array.from(obj.values());
         obj.changed = items;
         obj.viewabilityConfig = self._config;
-        arg2(obj);
+        _slicedToArray(obj);
       }
     }
   };
   return callback(ViewabilityHelper, items);
-}();
+})();

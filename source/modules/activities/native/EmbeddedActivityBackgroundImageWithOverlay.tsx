@@ -1,22 +1,26 @@
-// Module ID: 10603
-// Function ID: 82740
+// Module ID: 10613
+// Function ID: 82790
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 10614, 2]
 // Exports: default
 
-// Module 10603 (EmbeddedActivityBackgroundImageWithOverlay)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-({ ImageBackground: closure_4, View: closure_5, StyleSheet: closure_6 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BLACK };
-obj.overlay = obj;
-let closure_8 = obj.createStyles(obj);
-let closure_9 = [240518194];
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/activities/native/EmbeddedActivityBackgroundImageWithOverlay.tsx");
+// Module 10613 (EmbeddedActivityBackgroundImageWithOverlay)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+({ ImageBackground: closure_4, View: closure_5, StyleSheet: closure_6 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, opacity: 0.6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
+_createForOfIteratorHelperLoose.overlay = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let closure_9 = ["embedded_background"];
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/activities/native/EmbeddedActivityBackgroundImageWithOverlay.tsx");
 
 export default function EmbeddedActivityBackgroundImageWithOverlay(arg0) {
   let application;
@@ -32,7 +36,7 @@ export default function EmbeddedActivityBackgroundImageWithOverlay(arg0) {
   importDefault = tmp2[1];
   let obj = {};
   let id;
-  const tmp = callback2();
+  const tmp = _createForOfIteratorHelperLoose();
   if (null != application) {
     id = application.id;
   }
@@ -43,7 +47,7 @@ export default function EmbeddedActivityBackgroundImageWithOverlay(arg0) {
   obj.applicationId = str;
   obj.names = closure_9;
   obj.size = 1024;
-  const url = importDefault(dependencyMap[6])(obj).url;
+  const url = importDefault(10614)(obj).url;
   let tmp10Result = null;
   if (!tmp2[0]) {
     tmp10Result = null;
@@ -72,8 +76,8 @@ export default function EmbeddedActivityBackgroundImageWithOverlay(arg0) {
         const obj3 = { borderRadius };
         items[1] = obj3;
         obj2.style = items;
-        obj.children = <closure_5 {...obj2} />;
-        tmp10Result = <closure_4 {...obj} />;
+        obj.children = <closure_5 />;
+        tmp10Result = <closure_4 />;
         const tmp10 = jsx;
         const tmp11 = closure_4;
       }

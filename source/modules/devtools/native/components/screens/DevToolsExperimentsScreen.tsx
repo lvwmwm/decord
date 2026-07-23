@@ -1,52 +1,67 @@
-// Module ID: 10947
-// Function ID: 85114
+// Module ID: 10957
+// Function ID: 85163
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4044, 1194, 1838, 4045, 33, 4130, 689, 10461, 10462, 5160, 8832, 10958, 22, 1273, 8502, 5772, 9244, 7783, 4052, 4098, 5165, 4126, 490, 10955, 5503, 7781, 5492, 3831, 4091, 5187, 5186, 2]
 
-// Module 10947 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10957 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "CircleCheckIcon";
+import { View } from "TableRowGroupTitle";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import ExperimentBuckets from "ExperimentBuckets";
+import jsxProd from "RedesignBottomSheetTitleHeaderBase";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +72,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -91,7 +106,7 @@ function UserExperimentDebugView(id) {
   const installationForTracking = store2.getInstallationForTracking();
   let maybeExtractIdResult = null;
   if (null != installationForTracking) {
-    let obj = arg1(dependencyMap[25]);
+    let obj = require(490) /* extractId */;
     maybeExtractIdResult = obj.maybeExtractId(installationForTracking);
   }
   let tmp7 = id;
@@ -101,12 +116,12 @@ function UserExperimentDebugView(id) {
       tmp7 = maybeExtractIdResult;
     }
   }
-  let obj1 = arg1(dependencyMap[26]);
+  let obj1 = require(10955) /* getExperimentServerAssignment */;
   const experimentAssignment = obj1.useExperimentAssignment(experiment, tmp7);
-  let obj2 = arg1(dependencyMap[26]);
+  let obj2 = require(10955) /* getExperimentServerAssignment */;
   const experimentServerAssignment = obj2.useExperimentServerAssignment(experiment, tmp7);
-  let obj3 = importDefault(dependencyMap[15]);
-  const tmp = callback4();
+  let obj3 = importDefault(22);
+  const tmp = callback3();
   const mapped = obj3.sortBy(store.getRecentExposures(constants2.USER, id.id), (arg0) => {
     let tmp;
     [, tmp] = arg0;
@@ -117,7 +132,7 @@ function UserExperimentDebugView(id) {
     [tmp, tmp2] = arg0;
     return "" + new Date(tmp2).toLocaleString() + " (" + tmp + ")";
   });
-  if (experiment.system === arg1(dependencyMap[21]).ExperimentSystem.LEGACY) {
+  if (experiment.system === require(4052) /* trackExposureToExperiment */.ExperimentSystem.LEGACY) {
     let NOT_ELIGIBLE = experimentAssignment;
     if (null == experimentAssignment) {
       NOT_ELIGIBLE = constants.NOT_ELIGIBLE;
@@ -132,16 +147,16 @@ function UserExperimentDebugView(id) {
     }
   }
   obj = { style: tmp.debugContainer };
-  obj = {};
+  obj = { title: "Overview", hasIcons: false };
   obj1 = { label: str };
   let str4;
   if (null == experimentServerAssignment) {
     str4 = "Warning: Server did not send any experiment config. You may need to check the \"Send to Client\" box in the admin UI.";
   }
   obj1.subLabel = str4;
-  obj.children = callback2(arg1(dependencyMap[23]).TableRow, obj1);
-  const items = [callback2(arg1(dependencyMap[27]).TableRowGroup, obj), callback2(arg1(dependencyMap[16]).Spacer, { size: 16 }), , , , , ];
-  obj2 = {};
+  obj.children = callback(require(5165) /* TableRowInner */.TableRow, obj1);
+  const items = [callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj), callback(require(1273) /* Button */.Spacer, { size: 16 }), , , , , ];
+  obj2 = { title: "Server Descriptor", hasIcons: false };
   obj3 = {};
   let str5 = "None";
   let str6 = "None";
@@ -150,10 +165,10 @@ function UserExperimentDebugView(id) {
     str6 = JSON.stringify(experimentServerAssignment, undefined, 2);
   }
   obj3.label = str6;
-  obj2.children = callback2(arg1(dependencyMap[23]).TableRow, obj3);
-  items[2] = callback2(arg1(dependencyMap[27]).TableRowGroup, obj2);
-  items[3] = callback2(arg1(dependencyMap[16]).Spacer, { size: 16 });
-  const obj4 = {};
+  obj2.children = callback(require(5165) /* TableRowInner */.TableRow, obj3);
+  items[2] = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj2);
+  items[3] = callback(require(1273) /* Button */.Spacer, { size: 16 });
+  const obj4 = { title: "Override Descriptor", hasIcons: false };
   const obj5 = {};
   let json = str5;
   if (null != override) {
@@ -161,17 +176,17 @@ function UserExperimentDebugView(id) {
     json = JSON.stringify(override.originalDescriptor, undefined, 2);
   }
   obj5.label = json;
-  obj4.children = callback2(arg1(dependencyMap[23]).TableRow, obj5);
-  items[4] = callback2(arg1(dependencyMap[27]).TableRowGroup, obj4);
-  items[5] = callback2(arg1(dependencyMap[16]).Spacer, { size: 16 });
-  const obj6 = { -9223372036854775808: "e53950ae8b4e55a0d929557716fe168b", 9223372036854775807: "img_kick_member" };
+  obj4.children = callback(require(5165) /* TableRowInner */.TableRow, obj5);
+  items[4] = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj4);
+  items[5] = callback(require(1273) /* Button */.Spacer, { size: 16 });
+  const obj6 = { title: "Recent Exposures", hasIcons: false };
   const obj7 = {};
   if (0 !== mapped.length) {
     str5 = mapped.join("\n");
   }
   obj7.label = str5;
-  obj6.children = callback2(arg1(dependencyMap[23]).TableRow, obj7);
-  items[6] = callback2(arg1(dependencyMap[27]).TableRowGroup, obj6);
+  obj6.children = callback(require(5165) /* TableRowInner */.TableRow, obj7);
+  items[6] = callback(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj6);
   obj.children = items;
   return closure_12(View, obj);
 }
@@ -181,8 +196,8 @@ function GuildExperimentDebugView(arg0) {
   let override;
   ({ id, override } = arg0);
   const loadedGuildExperiment = store.getLoadedGuildExperiment(id);
-  let obj = importDefault(dependencyMap[15]);
-  const tmp = callback4();
+  let obj = importDefault(22);
+  const tmp = callback3();
   const mapped = obj.sortBy(store.getRecentExposures(constants2.GUILD, id), (arg0) => {
     let tmp;
     [, tmp] = arg0;
@@ -193,24 +208,23 @@ function GuildExperimentDebugView(arg0) {
     [tmp, tmp2] = arg0;
     return "" + new Date(tmp2).toLocaleString() + " (" + tmp + ")";
   });
-  let obj1 = importDefault(dependencyMap[15]);
+  let obj1 = importDefault(22);
   obj = {};
-  const arg1 = obj;
   const items = [];
   const tmp3 = _createForOfIteratorHelperLoose(obj1.sortBy(guildsArray.getGuildsArray(), (name) => name.name.toLowerCase()));
   let iter = tmp3();
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp4 = closure_6;
-      let guildExperimentDescriptor = closure_6.getGuildExperimentDescriptor(id, value.id);
+      let tmp4 = store;
+      let guildExperimentDescriptor = store.getGuildExperimentDescriptor(id, value.id);
       let bucket;
       if (null != guildExperimentDescriptor) {
         bucket = guildExperimentDescriptor.bucket;
       }
       if (null == bucket) {
-        let tmp7 = closure_9;
-        bucket = closure_9.NOT_ELIGIBLE;
+        let tmp7 = constants;
+        bucket = constants.NOT_ELIGIBLE;
       }
       if (!(bucket in obj)) {
         obj[bucket] = 0;
@@ -222,28 +236,28 @@ function GuildExperimentDebugView(arg0) {
       iter = iter2;
     } while (!iter2.done);
   }
-  let obj3 = importDefault(dependencyMap[15])(obj);
+  let obj3 = importDefault(22)(obj);
   const keys = obj3.keys();
   const mapped1 = keys.map(Number);
   const sorted = mapped1.sort();
   const mapped2 = sorted.map((arg0) => "" + obj[arg0] + " guilds are in bucket " + arg0);
   obj = { style: tmp.debugContainer };
   const joined = mapped2.join(", ");
-  obj1 = {};
+  obj1 = { title: "Overview", hasIcons: false };
   const obj2 = { label: "Current Assignments: " + joined };
   let str = null;
   if (null == loadedGuildExperiment) {
     str = "Warning: Server did not send any experiment config. You may need to check the 'Send to Client' box in the admin UI.";
   }
   obj2.subLabel = str;
-  obj1.children = callback2(arg1(dependencyMap[23]).TableRow, obj2);
-  const items1 = [callback2(arg1(dependencyMap[27]).TableRowGroup, obj1), callback2(arg1(dependencyMap[16]).Spacer, { size: 16 }), , , , , , , ];
-  obj3 = { -9223372036854775808: null, 9223372036854775807: null };
+  obj1.children = callback(obj(5165).TableRow, obj2);
+  const items1 = [callback(obj(5503).TableRowGroup, obj1), callback(obj(1273).Spacer, { size: 16 }), , , , , , , ];
+  obj3 = { title: "Guild Assignments", hasIcons: false };
   const obj4 = { label: items.join("\n") };
-  obj3.children = callback2(arg1(dependencyMap[23]).TableRow, obj4);
-  items1[2] = callback2(arg1(dependencyMap[27]).TableRowGroup, obj3);
-  items1[3] = callback2(arg1(dependencyMap[16]).Spacer, { size: 16 });
-  const obj5 = {};
+  obj3.children = callback(obj(5165).TableRow, obj4);
+  items1[2] = callback(obj(5503).TableRowGroup, obj3);
+  items1[3] = callback(obj(1273).Spacer, { size: 16 });
+  const obj5 = { title: "Server Descriptor", hasIcons: false };
   const obj6 = {};
   let str2 = "None";
   let str3 = "None";
@@ -252,62 +266,61 @@ function GuildExperimentDebugView(arg0) {
     str3 = JSON.stringify(loadedGuildExperiment, undefined, 2);
   }
   obj6.label = str3;
-  obj5.children = callback2(arg1(dependencyMap[23]).TableRow, obj6);
-  items1[4] = callback2(arg1(dependencyMap[27]).TableRowGroup, obj5);
-  items1[5] = callback2(arg1(dependencyMap[16]).Spacer, { size: 16 });
-  const obj7 = {};
+  obj5.children = callback(obj(5165).TableRow, obj6);
+  items1[4] = callback(obj(5503).TableRowGroup, obj5);
+  items1[5] = callback(obj(1273).Spacer, { size: 16 });
+  const obj7 = { title: "Override Descriptor", hasIcons: false };
   const obj8 = {};
   if (null != override) {
     const _JSON2 = JSON;
     str2 = JSON.stringify(override, undefined, 2);
   }
   obj8.label = str2;
-  obj7.children = callback2(arg1(dependencyMap[23]).TableRow, obj8);
-  items1[6] = callback2(arg1(dependencyMap[27]).TableRowGroup, obj7);
-  items1[7] = callback2(arg1(dependencyMap[16]).Spacer, { size: 16 });
-  const obj9 = { -9223372036854775808: "e53950ae8b4e55a0d929557716fe168b", 9223372036854775807: "img_kick_member" };
+  obj7.children = callback(obj(5165).TableRow, obj8);
+  items1[6] = callback(obj(5503).TableRowGroup, obj7);
+  items1[7] = callback(obj(1273).Spacer, { size: 16 });
+  const obj9 = { title: "Recent Exposures", hasIcons: false };
   if (0 === mapped.length) {
     const obj10 = { label: "none" };
-    let mapped3 = callback2(arg1(dependencyMap[23]).TableRow, obj10);
+    let mapped3 = callback(obj(5165).TableRow, obj10);
   } else {
     mapped3 = mapped.map((label) => {
       const obj = { label, labelLineClamp: 1 };
-      return callback(obj(closure_2[23]).TableRow, obj, label);
+      return outer1_11(obj(outer1_2[23]).TableRow, obj, label);
     });
   }
   obj9.children = mapped3;
-  items1[8] = callback2(arg1(dependencyMap[27]).TableRowGroup, obj9);
+  items1[8] = callback(obj(5503).TableRowGroup, obj9);
   obj.children = items1;
   return closure_12(View, obj);
 }
 class ExperimentDetails {
   constructor(arg0) {
     ({ experiment, override, id, options, onCopyLink } = global);
-    arg1 = onCopyLink;
-    tmp = closure_13();
-    obj = arg1(dependencyMap[28]);
+    tmp = c13();
+    obj = require("regExp");
     uRLForExperiment = obj.getURLForExperiment(id);
-    importDefault = uRLForExperiment;
+    closure_1 = uRLForExperiment;
     items = [, ];
     items[0] = uRLForExperiment;
     items[1] = onCopyLink;
     obj = {};
     obj1 = {};
     callback = closure_4.useCallback(() => {
-      onCopyLink(closure_2[29]).copy(uRLForExperiment, () => {
-        let obj = callback2(closure_2[30]);
-        obj = { IconComponent: callback(closure_2[31]).CircleCheckIcon };
+      onCopyLink(outer1_2[29]).copy(uRLForExperiment, () => {
+        let obj = uRLForExperiment(outer2_2[30]);
+        obj = { key: "experiment-link-copied", content: "Copied experiment link", IconComponent: onCopyLink(outer2_2[31]).CircleCheckIcon, iconColor: "status-positive" };
         obj.open(obj);
-        if (null != callback) {
-          callback();
+        if (null != outer1_0) {
+          outer1_0();
         }
       });
     }, items);
     tmp4 = jsxs;
     tmp5 = View;
-    obj1.paddingHorizontal = importDefault(dependencyMap[9]).space.PX_12;
+    obj1.paddingHorizontal = require("_createForOfIteratorHelperLoose").space.PX_12;
     obj.style = obj1;
-    obj2 = { -9223372036854775808: true, 9223372036854775807: "/assets/images/native" };
+    obj2 = { title: "Experiment Assignments", hasIcons: false };
     obj2.children = options.map((arg0, arg1) => {
       let isDestructive;
       let label;
@@ -321,14 +334,14 @@ class ExperimentDetails {
       obj.variant = str;
       obj.label = label;
       obj.onPress = onPress;
-      return closure_11(onCopyLink(closure_2[23]).TableRow, obj, arg1);
+      return outer1_11(onCopyLink(outer1_2[23]).TableRow, obj, arg1);
     });
     items1 = [, , ];
-    items1[0] = jsx(arg1(dependencyMap[27]).TableRowGroup, obj2);
+    items1[0] = jsx(require("TableRowGroupTitle").TableRowGroup, obj2);
     obj3 = { style: tmp.copyExperimentLink };
-    obj4 = { -9223372036854775808: 184, 9223372036854775807: 152 };
-    obj4.children = jsx(arg1(dependencyMap[23]).TableRow, { label: "Copy Link", subLabel: uRLForExperiment, onPress: callback });
-    obj3.children = jsx(arg1(dependencyMap[27]).TableRowGroup, obj4);
+    obj4 = { title: "Share", hasIcons: false };
+    obj4.children = jsx(require("TableRowInner").TableRow, { label: "Copy Link", subLabel: uRLForExperiment, onPress: callback });
+    obj3.children = jsx(require("TableRowGroupTitle").TableRowGroup, obj4);
     items1[1] = jsx(View, obj3);
     if ("guild" === experiment.kind) {
       tmp9 = jsx;
@@ -361,82 +374,70 @@ function ExperimentActionSheet(arg0) {
   ({ override, options, onCopyLink } = arg0);
   let obj = {};
   obj = { title: experiment.title, subtitle: id };
-  obj.header = callback2(arg1(dependencyMap[33]).BottomSheetTitleHeader, obj);
-  obj.children = callback2(ExperimentDetails, { experiment, override, id, options, onCopyLink });
-  return callback2(arg1(dependencyMap[32]).BottomSheet, obj);
+  obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj.children = callback(ExperimentDetails, { experiment, override, id, options, onCopyLink });
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ ExperimentBuckets: closure_9, ExperimentTypes: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[7]));
-let obj1 = arg1(dependencyMap[8]);
+({ ExperimentBuckets: closure_9, ExperimentTypes: closure_10 } = ExperimentBuckets);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOW, flex: 1 };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj.container = obj;
-obj1 = { paddingHorizontal: importDefault(dependencyMap[9]).space.PX_12 };
-obj.listContainer = obj1;
-const tmp3 = arg1(dependencyMap[7]);
-obj.searchBar = { paddingVertical: importDefault(dependencyMap[9]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_12 };
-const obj2 = { paddingVertical: importDefault(dependencyMap[9]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[9]).space.PX_12 };
-obj.debugContainer = { marginTop: importDefault(dependencyMap[9]).space.PX_16 };
-const obj3 = { marginTop: importDefault(dependencyMap[9]).space.PX_16 };
-obj.copyExperimentLink = { marginTop: importDefault(dependencyMap[9]).space.PX_16 };
-let closure_13 = obj1.createStyles(obj);
-const obj4 = { marginTop: importDefault(dependencyMap[9]).space.PX_16 };
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+obj.listContainer = _createForOfIteratorHelperLoose;
+obj.searchBar = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+let obj2 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+obj.debugContainer = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+obj.copyExperimentLink = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
 let closure_14 = importAllResult.memo((id) => {
   let end;
   let start;
   id = id.id;
-  const arg1 = id;
   const override = id.override;
-  const importDefault = override;
   const experiment = id.experiment;
-  const dependencyMap = experiment;
-  const items = [experiment];
+  let items = [experiment];
   ({ start, end } = id);
   const memo = importAllResult.useMemo(() => id(experiment[20]).getExperimentVariantsForDevTools(experiment), items);
-  let closure_3 = memo;
   const items1 = [id, experiment, override, memo];
   let variantId;
   const callback = importAllResult.useCallback(() => {
     const map = new Map();
-    const id = map;
     const item = memo.forEach((id) => {
       const result = map.set(id.id, id);
     });
     const items = [];
-    const override = items;
     const item1 = map.forEach((label) => {
+      let closure_0 = label;
       items.push({
         label: label.label,
         onPress() {
-          arg0(system[21]).overrideBucket(system.system, arg0, arg0.id);
-          const obj = arg0(system[21]);
-          callback(system[22]).hideActionSheet("UserSettingsExperimentBucket");
+          id(experiment[21]).overrideBucket(outer2_2.system, map, label.id);
+          const obj = id(experiment[21]);
+          override(experiment[22]).hideActionSheet("UserSettingsExperimentBucket");
         }
       });
     });
     let obj = {
+      label: "Clear Override",
+      isDestructive: true,
       onPress() {
-        map(system[21]).overrideBucket(system.system, map, null);
-        const obj = map(system[21]);
-        items(system[22]).hideActionSheet("UserSettingsExperimentBucket");
+        id(experiment[21]).overrideBucket(outer1_2.system, map, null);
+        const obj = id(experiment[21]);
+        override(experiment[22]).hideActionSheet("UserSettingsExperimentBucket");
       }
     };
     items.push(obj);
-    obj = { default: closure_20 };
+    obj = { default: outer1_20 };
     obj = {
-      id,
+      id: map,
       experiment,
-      override,
+      override: items,
       options: items,
       onCopyLink(arg0) {
-        return items(closure_2[22]).hideActionSheet("UserSettingsExperimentBucket");
+        return override(experiment[22]).hideActionSheet("UserSettingsExperimentBucket");
       }
     };
     override(experiment[22]).openLazy(Promise.resolve(obj), "UserSettingsExperimentBucket", obj);
@@ -446,14 +447,14 @@ let closure_14 = importAllResult.memo((id) => {
   }
   let obj = { height: "100%", start, end, label: experiment.title, labelLineClamp: 1, onPress: callback };
   obj = {
-    cachedAt: "FrameEffect_02-4_Out",
-    edpbxy: 0,
-    children: function getVariantLabel(memo, variantId) {
-      const id = variantId;
+    variant: "text-md/medium",
+    color: "text-muted",
+    children: (function getVariantLabel(memo, variantId) {
+      let closure_0 = variantId;
       if (null == variantId) {
         return "N/A";
       } else {
-        const found = memo.find((id) => id.id === arg1);
+        const found = memo.find((id) => id.id === closure_0);
         if (null != found) {
           let label = found.label;
         } else {
@@ -462,72 +463,67 @@ let closure_14 = importAllResult.memo((id) => {
         }
         return label;
       }
-    }(memo, variantId)
+    })(memo, variantId)
   };
-  obj.trailing = callback2(arg1(dependencyMap[24]).Text, obj);
-  return callback2(arg1(dependencyMap[23]).TableRow, obj);
+  obj.trailing = callback(id(experiment[24]).Text, obj);
+  return callback(id(experiment[23]).TableRow, obj);
 });
 const memoResult = importAllResult.memo(() => {
   let tmp3;
   let tmp4;
-  const tmp = callback4();
-  [tmp3, tmp4] = callback(importAllResult.useState(""), 2);
-  let obj = arg1(dependencyMap[10]);
+  const tmp = callback3();
+  [tmp3, tmp4] = overridesInfo2(memo1.useState(""), 2);
+  let obj = experiments(experiments2[10]);
   const legacyExperiments = obj.useLegacyExperiments();
-  const experiments = legacyExperiments.experiments;
-  const arg1 = experiments;
+  experiments = legacyExperiments.experiments;
   const overridesInfo = legacyExperiments.overridesInfo;
-  const importDefault = overridesInfo;
-  let obj1 = arg1(dependencyMap[11]);
+  let obj1 = experiments(experiments2[11]);
   const apexExperiments = obj1.useApexExperiments();
-  const experiments2 = apexExperiments.experiments;
-  const dependencyMap = experiments2;
-  const overridesInfo2 = apexExperiments.overridesInfo;
-  let callback = overridesInfo2;
-  const items = [experiments, experiments2];
-  const memo = importAllResult.useMemo(() => {
+  experiments2 = apexExperiments.experiments;
+  overridesInfo2 = apexExperiments.overridesInfo;
+  let items = [experiments, experiments2];
+  const memo = memo1.useMemo(() => {
     const merged = Object.assign(experiments);
     const merged1 = Object.assign(experiments2);
     return {};
   }, items);
   const items1 = [overridesInfo, overridesInfo2];
-  const memo1 = importAllResult.useMemo(() => {
+  memo1 = memo1.useMemo(() => {
     const merged = Object.assign(overridesInfo);
     const merged1 = Object.assign(overridesInfo2);
     return {};
   }, items1);
-  const tmp2 = callback(importAllResult.useState(""), 2);
-  let obj2 = arg1(dependencyMap[14]);
-  let obj3 = arg1(dependencyMap[14]);
-  const tmp9 = importDefault(dependencyMap[13])();
-  const bestMatches = obj2.getBestMatches(obj3.sortEntries(arg1(dependencyMap[14]).getEntries(memo), memo1), tmp3);
-  const View = bestMatches;
+  const tmp2 = overridesInfo2(memo1.useState(""), 2);
+  let obj2 = experiments(experiments2[14]);
+  let obj3 = experiments(experiments2[14]);
+  const tmp9 = overridesInfo(experiments2[13])();
+  const bestMatches = obj2.getBestMatches(obj3.sortEntries(experiments(experiments2[14]).getEntries(memo), memo1), tmp3);
   const items2 = [bestMatches.length];
   const items3 = [bestMatches, memo1];
-  const memo2 = importAllResult.useMemo(() => {
+  const memo2 = memo1.useMemo(() => {
     const items = [bestMatches.length];
     return items;
   }, items2);
-  callback = importAllResult.useCallback((arg0, arg1) => callback(closure_14, { id: bestMatches[arg1].id, experiment: bestMatches[arg1].experiment, override: memo1[bestMatches[arg1].id], start: 0 === arg1, end: arg1 === bestMatches.length - 1 }), items3);
-  const obj5 = arg1(dependencyMap[14]);
+  const callback = memo1.useCallback((arg0, arg1) => outer1_11(outer1_14, { id: bestMatches[arg1].id, experiment: bestMatches[arg1].experiment, override: memo1[bestMatches[arg1].id], start: 0 === arg1, end: arg1 === bestMatches.length - 1 }), items3);
+  const obj5 = experiments(experiments2[14]);
   if (obj6.isEmpty(memo)) {
-    obj = { -9223372036854775808: "Text", 9223372036854775807: "keys", 9223372036854775807: "HTTP", Illustration: arg1(dependencyMap[17]).NoResults };
-    let tmp22 = callback2(arg1(dependencyMap[16]).EmptyState, obj);
+    obj = { Illustration: experiments(experiments2[17]).NoResults, title: "No Experiments", body: "No experiments are currently running." };
+    let tmp22 = callback(experiments(experiments2[16]).EmptyState, obj);
   } else {
     obj = { style: tmp.container };
     obj1 = { style: tmp.searchBar };
     obj2 = { size: "md", onChange: tmp4 };
-    obj1.children = callback2(arg1(dependencyMap[18]).SearchField, obj2);
-    const items4 = [callback2(View, obj1), ];
-    obj3 = { style: tmp.listContainer, sections: memo2, estimatedListSize: "windowSize", itemSize: tmp9, insetEnd: importDefault(dependencyMap[12])({ includeKeyboardHeight: true }).insets.bottom + importDefault(dependencyMap[9]).space.PX_16, renderItem: callback };
-    items4[1] = callback2(importDefault(dependencyMap[19]), obj3);
+    obj1.children = callback(experiments(experiments2[18]).SearchField, obj2);
+    const items4 = [callback(bestMatches, obj1), ];
+    obj3 = { style: tmp.listContainer, sections: memo2, estimatedListSize: "windowSize", itemSize: tmp9, insetEnd: overridesInfo(experiments2[12])({ includeKeyboardHeight: true }).insets.bottom + overridesInfo(experiments2[9]).space.PX_16, renderItem: callback };
+    items4[1] = callback(overridesInfo(experiments2[19]), obj3);
     obj.children = items4;
-    tmp22 = callback3(View, obj);
-    const tmp21 = importDefault(dependencyMap[19]);
+    tmp22 = callback2(bestMatches, obj);
+    const tmp21 = overridesInfo(experiments2[19]);
   }
   return tmp22;
 });
-const result = arg1(dependencyMap[34]).fileFinishedImporting("modules/devtools/native/components/screens/DevToolsExperimentsScreen.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsExperimentsScreen.tsx");
 
 export default memoResult;
 export { ExperimentDetails };

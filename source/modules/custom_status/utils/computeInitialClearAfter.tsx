@@ -1,18 +1,18 @@
-// Module ID: 11891
-// Function ID: 92096
+// Module ID: 11903
+// Function ID: 92149
 // Name: ClearAfterValues
-// Dependencies: []
+// Dependencies: [11901, 3803, 2]
 // Exports: default
 
-// Module 11891 (ClearAfterValues)
-const ClearAfterValues = require(dependencyMap[0]).ClearAfterValues;
+// Module 11903 (ClearAfterValues)
+import { ClearAfterValues } from "StatusTypes";
+
 const items = [, , ];
 ({ MINUTES_30: arr[0], HOURS_1: arr[1], HOURS_4: arr[2] } = ClearAfterValues);
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/custom_status/utils/computeInitialClearAfter.tsx");
+const result = require("set").fileFinishedImporting("modules/custom_status/utils/computeInitialClearAfter.tsx");
 
 export default function computeInitialClearAfter() {
-  const CustomStatusSetting = callback(dependencyMap[1]).CustomStatusSetting;
+  const CustomStatusSetting = _require(3803).CustomStatusSetting;
   const setting = CustomStatusSetting.getSetting();
   if (null != setting) {
     if ("" !== setting.expiresAtMs) {
@@ -41,7 +41,7 @@ export default function computeInitialClearAfter() {
         if (tmp3) {
           const _Number = Number;
           const _Date = Date;
-          const callback = Number(NumberResult) - Date.now();
+          _require = Number(NumberResult) - Date.now();
           let TODAY = items.find((arg0) => closure_0 <= arg0);
           if (null == TODAY) {
             TODAY = ClearAfterValues.TODAY;

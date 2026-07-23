@@ -1,47 +1,52 @@
 // Module ID: 1650
-// Function ID: 18346
+// Function ID: 18347
 // Name: RollInData
-// Dependencies: []
+// Dependencies: [1640]
 
 // Module 1650 (RollInData)
-let obj = { RollInLeft: obj, RollInRight: { style: { [0]: { transform: items2 }, [100]: { transform: items3 } } } };
-obj = { "Bool(false)": -1, "Bool(false)": -1, "Bool(false)": 1090650111 };
-const items = [{ 140586312: "\u{1F383}", 1434737489: 6 }];
-const items1 = [{ 140586312: "<string:475070466>", 1434737489: "<string:858849663>" }];
+import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
+import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
+import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
+import convertAnimationObjectToKeyframes from "convertAnimationObjectToKeyframes";
+
+obj = { RollInLeft: obj, RollInRight: obj };
+obj = { name: "RollInLeft", style: null, duration: 0.3 };
+const items = [{ translateX: "-100vw", rotate: "-180deg" }];
+const items1 = [{ translateX: "0vw", rotate: "0deg" }];
 obj.style = { [0]: { transform: items }, [100]: { transform: items1 } };
-const items2 = [{}];
-const items3 = [{ 140586312: "<string:475070466>", 1434737489: "<string:858849663>" }];
-obj = { RollOutLeft: obj1, RollOutRight: { style: { [0]: { transform: items6 }, [100]: { transform: items7 } } } };
-const obj1 = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
-const items4 = [{ 140586312: "<string:475070466>", 1434737489: "<string:858849663>" }];
-const items5 = [{ 140586312: "\u{1F383}", 1434737489: 6 }];
-obj1.style = { [0]: { transform: items4 }, [100]: { transform: items5 } };
-const items6 = [{ 140586312: "<string:475070466>", 1434737489: "<string:858849663>" }];
-const items7 = [{}];
-const obj2 = {};
-const obj3 = {};
-const _module = require(dependencyMap[0]);
-obj3.style = _module.convertAnimationObjectToKeyframes(obj.RollInLeft);
-obj3.duration = obj.RollInLeft.duration;
-obj2.RollInLeft = obj3;
+obj = { name: "RollInRight", style: null, duration: 0.3 };
+const items2 = [{ translateX: "100vw", rotate: "180deg" }];
+const items3 = [{ translateX: "0vw", rotate: "0deg" }];
+obj.style = { [0]: { transform: items2 }, [100]: { transform: items3 } };
+const obj1 = { RollOutLeft: obj2, RollOutRight: obj3 };
+obj2 = { name: "RollOutLeft", style: null, duration: 0.3 };
+const items4 = [{ translateX: "0vw", rotate: "0deg" }];
+const items5 = [{ translateX: "-100vw", rotate: "-180deg" }];
+obj2.style = { [0]: { transform: items4 }, [100]: { transform: items5 } };
+obj3 = { name: "RollOutRight", style: null, duration: 0.3 };
+const items6 = [{ translateX: "0vw", rotate: "0deg" }];
+const items7 = [{ translateX: "100vw", rotate: "180deg" }];
+obj3.style = { [0]: { transform: items6 }, [100]: { transform: items7 } };
 const obj4 = {};
-const _module1 = require(dependencyMap[0]);
-obj4.style = _module1.convertAnimationObjectToKeyframes(obj.RollInRight);
-obj4.duration = obj.RollInRight.duration;
-obj2.RollInRight = obj4;
 const obj5 = {};
+obj5.style = convertAnimationObjectToKeyframes.convertAnimationObjectToKeyframes(obj.RollInLeft);
+obj5.duration = obj.RollInLeft.duration;
+obj4.RollInLeft = obj5;
 const obj6 = {};
-const _module2 = require(dependencyMap[0]);
-obj6.style = _module2.convertAnimationObjectToKeyframes(obj.RollOutLeft);
-obj6.duration = obj.RollOutLeft.duration;
-obj5.RollOutLeft = obj6;
+obj6.style = convertAnimationObjectToKeyframes.convertAnimationObjectToKeyframes(obj.RollInRight);
+obj6.duration = obj.RollInRight.duration;
+obj4.RollInRight = obj6;
 const obj7 = {};
-const _module3 = require(dependencyMap[0]);
-obj7.style = _module3.convertAnimationObjectToKeyframes(obj.RollOutRight);
-obj7.duration = obj.RollOutRight.duration;
-obj5.RollOutRight = obj7;
+const obj8 = {};
+obj8.style = convertAnimationObjectToKeyframes.convertAnimationObjectToKeyframes(obj1.RollOutLeft);
+obj8.duration = obj1.RollOutLeft.duration;
+obj7.RollOutLeft = obj8;
+const obj9 = {};
+obj9.style = convertAnimationObjectToKeyframes.convertAnimationObjectToKeyframes(obj1.RollOutRight);
+obj9.duration = obj1.RollOutRight.duration;
+obj7.RollOutRight = obj9;
 
 export const RollInData = obj;
-export const RollOutData = obj;
-export const RollIn = obj2;
-export const RollOut = obj5;
+export const RollOutData = obj1;
+export const RollIn = obj4;
+export const RollOut = obj7;

@@ -1,16 +1,20 @@
-// Module ID: 9327
-// Function ID: 72913
+// Module ID: 9334
+// Function ID: 72954
 // Name: getTopAndNewlyAddedEmojis
-// Dependencies: []
+// Dependencies: [4991, 1852, 624, 2]
 // Exports: default
 
-// Module 9327 (getTopAndNewlyAddedEmojis)
+// Module 9334 (getTopAndNewlyAddedEmojis)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { EmojiIntention } from "set";
+
+const require = arg1;
 function getTopAndNewlyAddedEmojis(emojiStoreInstance) {
   let guildId;
   let pickerIntention;
   emojiStoreInstance = emojiStoreInstance.emojiStoreInstance;
   if (emojiStoreInstance === undefined) {
-    emojiStoreInstance = closure_2;
+    emojiStoreInstance = _isNativeReflectConstruct;
   }
   ({ guildId, pickerIntention } = emojiStoreInstance);
   const obj = {};
@@ -28,16 +32,14 @@ function getTopAndNewlyAddedEmojis(emojiStoreInstance) {
   obj.newlyAddedEmojis = newlyAddedEmoji;
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const EmojiIntention = arg1(dependencyMap[1]).EmojiIntention;
 let closure_4 = [];
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/emoji_picker/hooks/useTopAndNewlyAddedEmojis.tsx");
+const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/emoji_picker/hooks/useTopAndNewlyAddedEmojis.tsx");
 
 export default function useTopAndNewlyAddedEmojis(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_2];
+  const items = [_isNativeReflectConstruct];
   const items1 = [arg0, arg1];
-  return arg1(dependencyMap[2]).useStateFromStoresObject(items, () => callback({ emojiStoreInstance: closure_2, guildId: arg0, pickerIntention: arg1 }), items1);
+  return _require(624).useStateFromStoresObject(items, () => outer1_5({ emojiStoreInstance: outer1_2, guildId: closure_0, pickerIntention: closure_1 }), items1);
 };
 export { getTopAndNewlyAddedEmojis };

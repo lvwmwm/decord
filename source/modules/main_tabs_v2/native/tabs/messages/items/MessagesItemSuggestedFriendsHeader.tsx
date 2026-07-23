@@ -1,35 +1,38 @@
-// Module ID: 14803
-// Function ID: 111534
+// Module ID: 14919
+// Function ID: 113702
 // Name: sum
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4126, 689, 4130, 3991, 8277, 4662, 1212, 2]
 
-// Module 14803 (sum)
-const importAllResult = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const View = tmp2.View;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-const sum = arg1(dependencyMap[3]).TextStyleSheet.text-md/semibold.lineHeight + importDefault(dependencyMap[4]).space.PX_24;
-let obj1 = arg1(dependencyMap[5]);
-let obj = { headerContainer: { height: sum } };
-obj = {};
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
-obj["backgroundColor"] = importDefault(dependencyMap[4]).colors.PANEL_BG;
-obj.stickyOverlay = obj;
-obj1 = { marginHorizontal: importDefault(dependencyMap[4]).space.PX_16 };
-obj.headerText = obj1;
-let closure_8 = obj1.createStyles(obj);
+// Module 14919 (sum)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+const View = get_ActivityIndicator.View;
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+const sum = require("Text").TextStyleSheet["text-md/semibold"].lineHeight + require("_createForOfIteratorHelperLoose").space.PX_24;
+obj = { headerContainer: obj };
+obj = { height: sum, justifyContent: "center", overflow: "hidden" };
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
+_createForOfIteratorHelperLoose["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.PANEL_BG;
+obj.stickyOverlay = _createForOfIteratorHelperLoose;
+obj.headerText = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_9 = { code: "function MessagesItemSuggestedFriendsHeaderTsx1(){const{stickyAt,scrollPosition}=this.__closure;return stickyAt!=null&&scrollPosition.get()>=stickyAt;}" };
-const tmp3 = arg1(dependencyMap[2]);
+let obj2 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
 const memoResult = importAllResult.memo(function MessagesItemSuggestedFriendsHeader(stickyAt) {
   stickyAt = stickyAt.stickyAt;
-  const arg1 = stickyAt;
   const scrollPosition = stickyAt.scrollPosition;
-  const importDefault = scrollPosition;
   const stickyLeft = stickyAt.stickyLeft;
-  const dependencyMap = stickyLeft;
   const stickyTop = stickyAt.stickyTop;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[6]);
+  let tmp = callback3();
+  let obj = stickyAt(stickyLeft[6]);
   const fn = function x() {
     let tmp = null != stickyAt;
     if (tmp) {
@@ -46,22 +49,22 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriendsHea
   let tmp7 = null;
   if (tmp3) {
     obj = {};
-    const obj1 = { <string:2898570406>: "%JSONStringify%", <string:2858420019>: "gradientOverlay", <string:1379639394>: "<string:1156272384>", <string:2858527328>: "<string:4294948978>", <string:1370183266>: "SET", componentStyles: tmp4 };
-    const items1 = [callback(importDefault(dependencyMap[8]), obj1), ];
+    const obj1 = { absolute: true, wide: true, componentStyles: tmp4, tall: true, mix: true };
+    const items1 = [callback(scrollPosition(stickyLeft[8]), obj1), ];
     const obj2 = { style: tmp.stickyOverlay };
     items1[1] = callback(View, obj2);
     obj.children = items1;
     tmp7 = callback2(closure_6, obj);
   }
   const items2 = [tmp7, ];
-  const obj3 = { "Bool(false)": "isArray", "Bool(false)": "EXPRESSION_PICKER_EXPRESSION_FOCUS", "Bool(false)": "isArray", "Bool(false)": "isArrayBuffer", "Bool(false)": "18d0a2a6cf6cc6fa0358c3bbfd2bce6e", "Bool(false)": "wumpus-mario", style: tmp.headerText };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj3.children = intl.string(arg1(dependencyMap[9]).t.1uAmCw);
-  items2[1] = callback(arg1(dependencyMap[3]).Text, obj3);
+  const obj3 = { style: tmp.headerText, maxFontSizeMultiplier: 2, lineClamp: 1, accessibilityRole: "header", variant: "text-md/semibold", color: "text-default" };
+  const intl = stickyAt(stickyLeft[9]).intl;
+  obj3.children = intl.string(stickyAt(stickyLeft[9]).t["1uAmCw"]);
+  items2[1] = callback(stickyAt(stickyLeft[3]).Text, obj3);
   obj.children = items2;
   return callback2(View, obj);
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSuggestedFriendsHeader.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSuggestedFriendsHeader.tsx");
 
 export default memoResult;
 export const MESSAGES_ITEM_SUGGESTED_FRIENDS_HEADER_HEIGHT = sum;

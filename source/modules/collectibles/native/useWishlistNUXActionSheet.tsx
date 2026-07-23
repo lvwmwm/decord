@@ -1,20 +1,26 @@
-// Module ID: 8663
-// Function ID: 68560
+// Module ID: 8670
+// Function ID: 68600
 // Name: useHasNeverWishlisted
-// Dependencies: []
+// Dependencies: [31, 6856, 1194, 1345, 566, 3946, 1334, 1336, 4098, 8671, 1934, 2]
 // Exports: default
 
-// Module 8663 (useHasNeverWishlisted)
+// Module 8670 (useHasNeverWishlisted)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { ContentDismissActionType } from "ContentDismissActionType";
+
+const require = arg1;
 function useHasNeverWishlisted() {
   const items = [closure_5];
-  const callback = callback(dependencyMap[4]).useStateFromStores(items, () => id.getId());
-  const obj = callback(dependencyMap[4]);
-  const items1 = [closure_4];
-  const stateFromStores = callback(dependencyMap[4]).useStateFromStores(items1, () => authStore.getFirstWishlistId(closure_0));
-  const obj2 = callback(dependencyMap[4]);
-  const items2 = [closure_4];
-  let stateFromStores1 = callback(dependencyMap[4]).useStateFromStores(items2, () => {
-    const userProfile = authStore.getUserProfile(closure_0);
+  _require = _require(566).useStateFromStores(items, () => outer1_5.getId());
+  const obj = _require(566);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items1, () => outer1_4.getFirstWishlistId(closure_0));
+  const obj2 = _require(566);
+  const items2 = [_isNativeReflectConstruct];
+  let stateFromStores1 = _require(566).useStateFromStores(items2, () => {
+    const userProfile = outer1_4.getUserProfile(closure_0);
     let tmp2 = null != userProfile;
     if (tmp2) {
       tmp2 = userProfile.fetchEndedAt > 0;
@@ -26,28 +32,24 @@ function useHasNeverWishlisted() {
   }
   return stateFromStores1;
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const ContentDismissActionType = arg1(dependencyMap[3]).ContentDismissActionType;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/collectibles/native/useWishlistNUXActionSheet.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/useWishlistNUXActionSheet.tsx");
 
 export default function useWishlistNUXActionSheet() {
   let tmp = useHasNeverWishlisted();
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
   obj = {};
   if (tmp) {
-    tmp = !obj.useIsDismissibleContentDismissed_UNSAFE(arg1(dependencyMap[6]).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
+    tmp = !obj.useIsDismissibleContentDismissed_UNSAFE(require(1334) /* DismissibleContent */.DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
   }
   obj.shouldShowWishlistNUXActionSheet = tmp;
   obj.showWishlistNUXActionSheet = React.useCallback((product) => {
-    let obj = callback(paths[7]);
-    const result = obj.trackDismissibleContentShown(callback(paths[6]).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
+    let obj = outer1_0(outer1_2[7]);
+    const result = obj.trackDismissibleContentShown(outer1_0(outer1_2[6]).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET);
     obj = { product };
-    callback2(paths[8]).openLazy(callback(paths[10])(paths[9], paths.paths), "WishlistNUXAddedItemActionSheet", obj, "stack");
-    const obj2 = callback2(paths[8]);
-    obj = { dismissAction: constants.USER_DISMISS, forceTrack: true };
-    const result1 = callback(paths[5]).UNSAFE_markDismissibleContentAsDismissed(callback(paths[6]).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET, obj);
+    outer1_1(outer1_2[8]).openLazy(outer1_0(outer1_2[10])(outer1_2[9], outer1_2.paths), "WishlistNUXAddedItemActionSheet", obj, "stack");
+    const obj2 = outer1_1(outer1_2[8]);
+    obj = { dismissAction: outer1_6.USER_DISMISS, forceTrack: true };
+    const result1 = outer1_0(outer1_2[5]).UNSAFE_markDismissibleContentAsDismissed(outer1_0(outer1_2[6]).DismissibleContent.WISHLIST_MOBILE_NUX_ACTION_SHEET, obj);
   }, []);
   return obj;
 };

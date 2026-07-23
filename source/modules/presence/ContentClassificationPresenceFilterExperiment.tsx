@@ -1,13 +1,13 @@
-// Module ID: 12577
-// Function ID: 96754
+// Module ID: 12691
+// Function ID: 98910
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 12577 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": "Array", "Bool(false)": "Qf3ptv", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/presence/ContentClassificationPresenceFilterExperiment.tsx");
+// Module 12691 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-02-content-classification-presence-filter", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/presence/ContentClassificationPresenceFilterExperiment.tsx");
 
 export const ContentClassificationPresenceFilterExperiment = apexExperiment;

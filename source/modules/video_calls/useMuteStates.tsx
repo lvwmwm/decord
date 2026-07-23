@@ -1,10 +1,18 @@
-// Module ID: 5735
-// Function ID: 49333
+// Module ID: 5740
+// Function ID: 49360
 // Name: getMuteStates
-// Dependencies: []
+// Dependencies: [1909, 1194, 4177, 3758, 4146, 653, 566, 2]
 // Exports: default
 
-// Module 5735 (getMuteStates)
+// Module 5740 (getMuteStates)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+
+const require = arg1;
 function getMuteStates(voiceStateStore) {
   let authenticationStore;
   let channel;
@@ -26,7 +34,7 @@ function getMuteStates(voiceStateStore) {
   }
   let impersonateStore = voiceStateStore.impersonateStore;
   if (impersonateStore === undefined) {
-    impersonateStore = closure_2;
+    impersonateStore = _isNativeReflectConstruct;
   }
   let voiceState = null;
   if (null != channel) {
@@ -57,17 +65,11 @@ function getMuteStates(voiceStateStore) {
   obj.mute = null != mute && mute;
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const Permissions = arg1(dependencyMap[5]).Permissions;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/video_calls/useMuteStates.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/useMuteStates.tsx");
 
 export default function useMuteStates(arg0) {
-  const arg1 = arg0;
-  const items = [closure_3, closure_6, closure_4, closure_5, closure_2];
-  return arg1(dependencyMap[6]).useStateFromStoresObject(items, () => callback({ channel: arg0, authenticationStore: closure_3, voiceStateStore: closure_6, mediaEngineStore: closure_4, permissionStore: closure_5, impersonateStore: closure_2 }));
+  const _require = arg0;
+  const items = [closure_3, closure_6, closure_4, closure_5, _isNativeReflectConstruct];
+  return _require(566).useStateFromStoresObject(items, () => outer1_8({ channel: closure_0, authenticationStore: outer1_3, voiceStateStore: outer1_6, mediaEngineStore: outer1_4, permissionStore: outer1_5, impersonateStore: outer1_2 }));
 };
 export { getMuteStates };

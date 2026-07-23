@@ -1,32 +1,36 @@
-// Module ID: 9857
-// Function ID: 76301
-// Dependencies: []
+// Module ID: 9864
+// Function ID: 76342
+// Dependencies: [5, 9865, 653, 7007, 507, 4029, 1212, 4470, 686, 2]
 
-// Module 9857
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const FetchState = arg1(dependencyMap[1]).FetchState;
-({ AbortCodes: closure_6, Endpoints: closure_7, MAX_PINS_PER_CHANNEL: closure_8 } = arg1(dependencyMap[2]));
-const obj = {
-  pinMessage(arg0, id) {
-    id = arg0;
-    const importDefault = id;
+// Module 9864
+import V6OrEarlierAPIError from "V6OrEarlierAPIError";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ AbortCodes: closure_6, Endpoints: closure_7, MAX_PINS_PER_CHANNEL: closure_8 } = ME);
+let obj = {
+  pinMessage(closure_0, id) {
+    let closure_1 = id;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
-  unpinMessage(arg0, id) {
-    id = arg0;
-    const importDefault = id;
+  unpinMessage(closure_0, id) {
+    let closure_1 = id;
     // CreateGeneratorClosureLongIndex (0x67)
     return callback(tmp)();
   },
   ackPins(timestamp) {
-    let obj = importDefault(dependencyMap[8]);
+    let obj = importDefault(686);
     obj = { type: "CHANNEL_PINS_ACK", channelId: timestamp };
     obj.dispatch(obj);
   },
   fetchPins(channelId, reset) {
-    reset = channelId;
+    const _require = channelId;
     reset = undefined;
     if (null != reset) {
       reset = reset.reset;
@@ -70,11 +74,11 @@ const obj = {
       tmp4 = flag;
     }
     if (tmp4) {
-      let obj = importDefault(dependencyMap[8]);
+      let obj = importDefault(686);
       obj = { type: "LOAD_PINNED_MESSAGES", channelId, reset: tmp2 };
       obj.dispatch(obj);
-      const HTTP = reset(dependencyMap[4]).HTTP;
-      obj = { applicationCommands: "jsx", isEncryptionAvailable: "r", flexGrow: "isArray", flexShrink: "accessibilityRole", alignSelf: "track", url: closure_7.PINS(channelId) };
+      const HTTP = _require(507).HTTP;
+      obj = { url: closure_7.PINS(channelId), query: null, retries: 2, oldFormErrors: true, rejectWithError: true };
       const obj1 = { limit: num };
       let toISOStringResult;
       if (null != before) {
@@ -84,18 +88,17 @@ const obj = {
       obj.query = obj1;
       const value = HTTP.get(obj);
       value.then((body) => {
-        let obj = callback(closure_2[8]);
-        obj = { type: "LOAD_PINNED_MESSAGES_SUCCESS", pins: body.body.items, channelId: body, hasMore: body.body.has_more };
+        let obj = outer1_1(outer1_2[8]);
+        obj = { type: "LOAD_PINNED_MESSAGES_SUCCESS", pins: body.body.items, channelId: closure_0, hasMore: body.body.has_more };
         obj.dispatch(obj);
       }, () => {
-        let obj = callback(closure_2[8]);
-        obj = { type: "LOAD_PINNED_MESSAGES_FAILURE", channelId: arg0 };
+        let obj = outer1_1(outer1_2[8]);
+        obj = { type: "LOAD_PINNED_MESSAGES_FAILURE", channelId: closure_0 };
         obj.dispatch(obj);
       });
     }
   }
 };
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("actions/ChannelPinActionCreators.tsx");
+const result = require("ME").fileFinishedImporting("actions/ChannelPinActionCreators.tsx");
 
 export default obj;

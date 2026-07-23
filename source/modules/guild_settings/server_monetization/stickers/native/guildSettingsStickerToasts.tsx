@@ -1,24 +1,23 @@
-// Module ID: 16153
-// Function ID: 124490
+// Module ID: 16270
+// Function ID: 126663
 // Name: showGuildSettingsStickerError
-// Dependencies: []
+// Dependencies: [3831, 7507, 1212, 4086, 2]
 // Exports: showGuildSettingsStickerError, showGuildSettingsStickerSuccess
 
-// Module 16153 (showGuildSettingsStickerError)
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx");
+// Module 16270 (showGuildSettingsStickerError)
+const result = require("getSystemLocale").fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx");
 
 export const showGuildSettingsStickerError = function showGuildSettingsStickerError() {
-  let obj = importDefault(dependencyMap[0]);
-  obj = { key: "GUILD_SETTINGS_STICKER_ERROR", IconComponent: require(dependencyMap[1]).CircleErrorIcon };
-  const intl = require(dependencyMap[2]).intl;
-  obj.content = intl.string(require(dependencyMap[2]).t.5NMPSS);
+  let obj = importDefault(3831);
+  obj = { key: "GUILD_SETTINGS_STICKER_ERROR", IconComponent: require(7507) /* CircleErrorIcon */.CircleErrorIcon };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl.string(require(1212) /* getSystemLocale */.t["5NMPSS"]);
   obj.open(obj);
 };
 export const showGuildSettingsStickerSuccess = function showGuildSettingsStickerSuccess() {
-  let obj = importDefault(dependencyMap[0]);
-  obj = { key: "GUILD_SETTINGS_STICKER_SUCCESS", IconComponent: require(dependencyMap[3]).CircleInformationIcon };
-  const intl = require(dependencyMap[2]).intl;
-  obj.content = intl.string(require(dependencyMap[2]).t.+c5xtT);
+  let obj = importDefault(3831);
+  obj = { key: "GUILD_SETTINGS_STICKER_SUCCESS", IconComponent: require(4086) /* CircleInformationIcon */.CircleInformationIcon };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.content = intl.string(require(1212) /* getSystemLocale */.t["+c5xtT"]);
   obj.open(obj);
 };

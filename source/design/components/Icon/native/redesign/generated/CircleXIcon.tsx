@@ -1,15 +1,19 @@
-// Module ID: 5771
-// Function ID: 49424
+// Module ID: 5776
+// Function ID: 49451
 // Name: CircleXIcon
-// Dependencies: []
+// Dependencies: [31, 27, 33, 689, 3833, 5777, 5778, 2]
 // Exports: CircleXIcon
 
-// Module 5771 (CircleXIcon)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/Icon/native/redesign/generated/CircleXIcon.tsx");
+// Module 5776 (CircleXIcon)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/redesign/generated/CircleXIcon.tsx");
 
 export const CircleXIcon = function CircleXIcon(color) {
   let secondaryColor;
@@ -20,21 +24,21 @@ export const CircleXIcon = function CircleXIcon(color) {
   }
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
-    INTERACTIVE_ICON_DEFAULT = importDefault(dependencyMap[3]).colors.INTERACTIVE_ICON_DEFAULT;
+    INTERACTIVE_ICON_DEFAULT = importDefault(689).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = { -1435702126: "spring", -1718953382: 0.4, 2085832679: 1 };
+  let obj = { style: 0, secondaryColor: 0, color: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(color, obj);
   obj = {};
-  obj = { source: arg1(dependencyMap[5]), color: secondaryColor, style };
+  obj = { source: require(5777) /* registerAsset */, color: secondaryColor, style };
   const merged1 = Object.assign(merged);
-  const items = [callback(arg1(dependencyMap[4]).BaseIconImage, obj), ];
-  const obj1 = { source: arg1(dependencyMap[6]), color: INTERACTIVE_ICON_DEFAULT };
+  const items = [callback(require(3833) /* BaseIconImage */.BaseIconImage, obj), ];
+  const obj1 = { source: require(5778) /* registerAsset */, color: INTERACTIVE_ICON_DEFAULT };
   const items1 = [style];
-  const items2 = [...items1.flat(), { 10360: 40, 10496: 40 }];
+  const items2 = [...items1.flat(), { position: "absolute", top: 0 }];
   obj1.style = items2;
   const merged2 = Object.assign(merged);
-  items[1] = callback(arg1(dependencyMap[4]).BaseIconImage, obj1);
+  items[1] = callback(require(3833) /* BaseIconImage */.BaseIconImage, obj1);
   obj.children = items;
   return callback2(View, obj);
 };

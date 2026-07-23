@@ -1,32 +1,36 @@
-// Module ID: 11221
-// Function ID: 87393
+// Module ID: 11231
+// Function ID: 87443
 // Name: EmptyState
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 11171, 8182, 11232, 4126, 1212, 2]
 // Exports: default
 
-// Module 11221 (EmptyState)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Bool(false)": "mentionChannelName", "Bool(false)": "%Math%", "Bool(false)": "SET_GUILD_MEMBER", "Bool(false)": "StretchOutY", "Bool(false)": "StretchOutY", "Bool(false)": "stopCallback", backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.lg };
-obj.container = obj;
-obj.textContainer = { textAlign: "center" };
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/app_launcher/native/screens/home/EmptyState.tsx");
+// Module 11231 (EmptyState)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: 16, gap: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.textContainer = { textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/screens/home/EmptyState.tsx");
 
 export default function EmptyState() {
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[5]);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(arg1(dependencyMap[6]).AppLauncherEmptyStateType.HOME_EMPTY);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(11171) /* handleApplicationSelected */;
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(8182) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_EMPTY);
   obj = { style: tmp.container };
-  const items = [callback(importDefault(dependencyMap[7]), {}), ];
-  obj = { "Null": "<string:1895908587>", "Null": "r", alignItems: "<string:44592193>", style: tmp.textContainer };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.children = intl.string(arg1(dependencyMap[9]).t.V7+xhH);
-  items[1] = callback(arg1(dependencyMap[8]).Text, obj);
+  const items = [callback(importDefault(11232), {}), ];
+  obj = { style: tmp.textContainer, variant: "text-md/semibold", color: "text-default" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["V7+xhH"]);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 };

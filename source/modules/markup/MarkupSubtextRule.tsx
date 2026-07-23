@@ -1,16 +1,13 @@
-// Module ID: 4587
-// Function ID: 40199
-// Dependencies: []
+// Module ID: 4591
+// Function ID: 40231
+// Dependencies: [3829, 2]
 
-// Module 4587
-let closure_2 = /\n$/;
-let closure_3 = /^ *-# +((?!(-#)+)[^\n]+?) *(?:\n|$)/;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/markup/MarkupSubtextRule.tsx");
-
-export default {
-  order: importDefault(dependencyMap[0]).defaultRules.heading.order,
-  requiredFirstCharacters: ["translation"],
+// Module 4591
+const re2 = /\n$/;
+const re3 = /^ *-# +((?!(-#)+)[^\n]+?) *(?:\n|$)/;
+let obj = {
+  order: require("t").defaultRules.heading.order,
+  requiredFirstCharacters: ["-"],
   match(arg0, arg1, str) {
     if (null != str) {
       if ("" !== str) {
@@ -18,10 +15,13 @@ export default {
       }
       return tmp2;
     }
-    tmp2 = require(dependencyMap[0]).anyScopeRegex(closure_3)(arg0, arg1, str);
+    tmp2 = require(3829) /* t */.anyScopeRegex(closure_3)(arg0, arg1, str);
   },
   parse(arg0, arg1, inline) {
-    const obj = { content: require(dependencyMap[0]).parseInline(arg1, arg0[1].trim(), inline) };
+    const obj = { content: require(3829) /* t */.parseInline(arg1, arg0[1].trim(), inline) };
     return obj;
   }
 };
+const result = require("set").fileFinishedImporting("modules/markup/MarkupSubtextRule.tsx");
+
+export default obj;

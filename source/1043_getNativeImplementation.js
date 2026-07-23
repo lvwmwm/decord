@@ -1,21 +1,23 @@
 // Module ID: 1043
-// Function ID: 11210
+// Function ID: 11211
 // Name: getNativeImplementation
-// Dependencies: []
+// Dependencies: [1015, 794, 1011]
 
 // Module 1043 (getNativeImplementation)
+const require = arg1;
+const dependencyMap = arg6;
 function getNativeImplementation(fetch) {
-  if (closure_2[fetch]) {
+  if (table[fetch]) {
     return tmp2;
   } else {
-    const tmp6 = arg1(arg6[0]).WINDOW[tmp];
+    const tmp6 = require(1015) /* WINDOW */.WINDOW[tmp];
     let obj = tmp6;
     if (obj2.isNativeFunction(tmp6)) {
-      const bindResult = obj.bind(arg1(arg6[0]).WINDOW);
-      closure_2[fetch] = bindResult;
+      const bindResult = obj.bind(require(1015) /* WINDOW */.WINDOW);
+      table[fetch] = bindResult;
       return bindResult;
     } else {
-      const _document = arg1(arg6[0]).WINDOW.document;
+      const _document = require(1015) /* WINDOW */.WINDOW.document;
       if (_document) {
         if ("function" === typeof obj3.createElement) {
           const element = <iframe />;
@@ -37,13 +39,13 @@ function getNativeImplementation(fetch) {
       while (true) {
         let tmp16 = obj;
         if (obj) {
-          let tmp18 = closure_2;
+          let tmp18 = table;
           let tmp19 = fetch;
           let tmp20 = obj;
-          let tmp21 = arg1;
-          let tmp22 = arg6;
-          let bindResult1 = obj.bind(arg1(arg6[0]).WINDOW);
-          closure_2[tmp] = bindResult1;
+          let tmp21 = require;
+          let tmp22 = dependencyMap;
+          let bindResult1 = obj.bind(require(1015) /* WINDOW */.WINDOW);
+          table[tmp] = bindResult1;
           let tmp17 = bindResult1;
         } else {
           tmp17 = obj;
@@ -51,7 +53,7 @@ function getNativeImplementation(fetch) {
         return tmp17;
       }
     }
-    const obj2 = arg1(arg6[1]);
+    obj2 = require(794) /* registerSpanErrorInstrumentation */;
   }
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });

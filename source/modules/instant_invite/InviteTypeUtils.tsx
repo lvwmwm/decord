@@ -1,10 +1,18 @@
-// Module ID: 6973
-// Function ID: 55739
+// Module ID: 6978
+// Function ID: 55773
 // Name: isGroupDMInvite
-// Dependencies: []
+// Dependencies: [6758, 1352, 6979, 6980, 2]
 // Exports: getGuildInviteExtendedType, getInviteType, isRoleSubscriptionInvite, isStreamInvite
 
-// Module 6973 (isGroupDMInvite)
+// Module 6978 (isGroupDMInvite)
+import { isEventUpcoming } from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import InviteSendStates from "InviteSendStates";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
 function isGroupDMInvite(invite) {
   let tmp = invite.type === constants2.GROUP_DM;
   if (!tmp) {
@@ -42,16 +50,12 @@ function isVoiceChannelInvite(value) {
   }
   return tmp;
 }
-const isEventUpcoming = require(dependencyMap[0]).isEventUpcoming;
-const _module = require(dependencyMap[1]);
-({ isGuildVocalChannelType: closure_3, isMultiUserDM: closure_4 } = _module);
-const _module1 = require(dependencyMap[2]);
-({ InviteTargetTypes: closure_5, InviteTypes: closure_6 } = _module1);
-const obj = { EVENT: "event", APPLICATION: "application", PROFILE: "profile", DEFAULT: "default", VOICE_CHANNEL: "voice_channel" };
-const _module2 = require(dependencyMap[4]);
-const result = _module2.fileFinishedImporting("modules/instant_invite/InviteTypeUtils.tsx");
+({ isGuildVocalChannelType: closure_3, isMultiUserDM: closure_4 } = _callSuper);
+({ InviteTargetTypes: closure_5, InviteTypes: closure_6 } = InviteSendStates);
+let obj = { EVENT: "event", APPLICATION: "application", PROFILE: "profile", DEFAULT: "default", VOICE_CHANNEL: "voice_channel" };
+const result = require("InviteSendStates").fileFinishedImporting("modules/instant_invite/InviteTypeUtils.tsx");
 
-export const InviteTypes = require(dependencyMap[2]).InviteTypes;
+export const InviteTypes = require("InviteSendStates").InviteTypes;
 export { isGroupDMInvite };
 export { isGuildScheduledEventInviteEmbed };
 export const isRoleSubscriptionInvite = function isRoleSubscriptionInvite(invite) {
@@ -84,7 +88,7 @@ export const getGuildInviteExtendedType = function getGuildInviteExtendedType(in
   } else if (isEmbeddedApplicationInvite(invite)) {
     PROFILE = obj.APPLICATION;
   } else {
-    const obj = require(dependencyMap[3]);
+    obj = require(6980) /* getEstablishedDate */;
     if (obj.guildInviteCanEmbedProfile(invite)) {
       PROFILE = obj.PROFILE;
     } else {

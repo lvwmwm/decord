@@ -1,16 +1,17 @@
-// Module ID: 15561
-// Function ID: 118729
-// Dependencies: []
+// Module ID: 15678
+// Function ID: 120902
+// Dependencies: [31, 33, 4130, 15128, 2]
 
-// Module 15561
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_3 = arg1(dependencyMap[2]).createStyles({ wrapper: { height: "100%" } });
-const obj2 = arg1(dependencyMap[2]);
-const memoResult = importAllResult.memo(function NotificationsContent() {
+// Module 15678
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_3 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { height: "100%" } });
+const memoResult = require("result").memo(function NotificationsContent() {
   const tmp = callback();
-  return jsx(importDefault(dependencyMap[3]), { style: callback().wrapper, nestedInLaunchPad: true });
+  return jsx(importDefault(15128), { style: callback().wrapper, nestedInLaunchPad: true });
 });
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/launchpad/native/LaunchPadNotificationCenter.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/launchpad/native/LaunchPadNotificationCenter.tsx");
 
 export default memoResult;

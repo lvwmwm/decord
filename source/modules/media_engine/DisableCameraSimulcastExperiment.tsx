@@ -1,13 +1,13 @@
-// Module ID: 12723
-// Function ID: 97641
+// Module ID: 12837
+// Function ID: 99797
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 12723 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: false, DateToSystemTimezoneSetter: false, defaultConfig: { enableSimulcast: true }, variations: { [1]: { enableSimulcast: false } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/DisableCameraSimulcastExperiment.tsx");
+// Module 12837 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-05-disable-camera-simulcast", kind: "user", defaultConfig: { enableSimulcast: true }, variations: { [1]: { enableSimulcast: false } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/DisableCameraSimulcastExperiment.tsx");
 
 export const DisableCameraSimulcastExperiment = apexExperiment;

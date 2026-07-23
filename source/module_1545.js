@@ -1,10 +1,12 @@
 // Module ID: 1545
-// Function ID: 17568
-// Dependencies: []
+// Function ID: 17569
+// Dependencies: [31, 33, 1546, 1459]
 
 // Module 1545
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 
 export default importAllResult.forwardRef(function ServerContainer(arg0, arg1) {
   let _location;
@@ -14,7 +16,6 @@ export default importAllResult.forwardRef(function ServerContainer(arg0, arg1) {
     console.error("'ServerContainer' should only be used on the server with 'react-dom/server' for SSR.");
   }, []);
   let obj = {};
-  arg1 = obj;
   if (arg1) {
     obj = {
       getCurrentOptions() {
@@ -28,6 +29,6 @@ export default importAllResult.forwardRef(function ServerContainer(arg0, arg1) {
     }
   }
   obj = { value: { location: _location } };
-  obj.children = jsx(arg1(dependencyMap[3]).CurrentRenderContext.Provider, { value: obj, children });
-  return jsx(importDefault(dependencyMap[2]).Provider, obj);
+  obj.children = jsx(obj(1459).CurrentRenderContext.Provider, { value: obj, children });
+  return jsx(importDefault(1546).Provider, { value: { location: _location } });
 });

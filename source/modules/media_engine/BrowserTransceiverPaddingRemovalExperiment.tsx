@@ -1,13 +1,13 @@
-// Module ID: 12624
-// Function ID: 97086
+// Module ID: 12738
+// Function ID: 99242
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 12624 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: "user", DateToSystemTimezoneSetter: "2025-08-browser-hevc", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/BrowserTransceiverPaddingRemovalExperiment.tsx");
+// Module 12738 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-browser-transceiver-padding-removal", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/BrowserTransceiverPaddingRemovalExperiment.tsx");
 
 export const BrowserTransceiverPaddingRemovalExperiment = apexExperiment;

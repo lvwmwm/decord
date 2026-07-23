@@ -1,30 +1,31 @@
-// Module ID: 10084
-// Function ID: 78121
+// Module ID: 10092
+// Function ID: 78161
 // Name: createDefaultSessionState
-// Dependencies: []
+// Dependencies: [6, 7, 491, 10078, 2]
 
-// Module 10084 (createDefaultSessionState)
+// Module 10092 (createDefaultSessionState)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
 function createDefaultSessionState() {
-  const obj = { sessionId: arg1(dependencyMap[2]).v4(), searchQueryId: null };
+  const obj = { sessionId: require(491) /* v1 */.v4(), searchQueryId: null };
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+let tmp2 = (() => {
   class AbstractSearchSessionAnalyticsManager {
     constructor() {
-      tmp = closure_2(this, AbstractSearchSessionAnalyticsManager);
+      tmp = outer1_2(this, AbstractSearchSessionAnalyticsManager);
       map = new Map();
       this.sessions = map;
       return;
     }
   }
-  const arg1 = AbstractSearchSessionAnalyticsManager;
   let obj = {
     key: "getSession",
     value(searchContext) {
       const sessions = this.sessions;
-      const value = sessions.get(AbstractSearchSessionAnalyticsManager(closure_1[3]).getSearchContextId(searchContext));
+      const value = sessions.get(AbstractSearchSessionAnalyticsManager(outer1_1[3]).getSearchContextId(searchContext));
       let tmp2 = null;
       if (null != value) {
         tmp2 = value;
@@ -32,16 +33,16 @@ const tmp2 = () => {
       return tmp2;
     }
   };
-  const items = [obj, , , , , , , , ];
+  let items = [obj, , , , , , , , ];
   obj = {
     key: "setSession",
     value(searchContext) {
-      let obj = AbstractSearchSessionAnalyticsManager(closure_1[3]);
+      let obj = AbstractSearchSessionAnalyticsManager(outer1_1[3]);
       const searchContextId = obj.getSearchContextId(searchContext);
       const sessions = this.sessions;
       let value = sessions.get(searchContextId);
       if (null == value) {
-        value = callback2();
+        value = outer1_4();
       }
       const sessions2 = this.sessions;
       obj = {};
@@ -55,7 +56,7 @@ const tmp2 = () => {
     key: "deleteSession",
     value(searchContext) {
       const sessions = this.sessions;
-      sessions.delete(AbstractSearchSessionAnalyticsManager(closure_1[3]).getSearchContextId(searchContext));
+      sessions.delete(AbstractSearchSessionAnalyticsManager(outer1_1[3]).getSearchContextId(searchContext));
     }
   };
   items[2] = obj;
@@ -92,7 +93,7 @@ const tmp2 = () => {
   items[5] = {
     key: "refreshQueryId",
     value(arg0) {
-      const obj = { searchQueryId: AbstractSearchSessionAnalyticsManager(closure_1[2]).v4() };
+      const obj = { searchQueryId: AbstractSearchSessionAnalyticsManager(outer1_1[2]).v4() };
       this.setSession(arg0, obj);
     }
   };
@@ -101,7 +102,7 @@ const tmp2 = () => {
     value(arg0, arg1) {
       const items = [arg0, ...HermesBuiltin.copyRestArgs()];
       this._initialize.apply(items);
-      const obj = { sessionId: AbstractSearchSessionAnalyticsManager(closure_1[2]).v4(), searchQueryId: null };
+      const obj = { sessionId: AbstractSearchSessionAnalyticsManager(outer1_1[2]).v4(), searchQueryId: null };
       this.setSession(arg0, obj);
     }
   };
@@ -119,16 +120,16 @@ const tmp2 = () => {
       this._transferSession(arg0, searchContext);
       let session = this.getSession(arg0);
       const sessions = this.sessions;
-      const searchContextId = AbstractSearchSessionAnalyticsManager(closure_1[3]).getSearchContextId(searchContext);
+      const searchContextId = AbstractSearchSessionAnalyticsManager(outer1_1[3]).getSearchContextId(searchContext);
       if (null == session) {
-        session = callback2();
+        session = outer1_4();
       }
       const result = sessions.set(searchContextId, session);
       self.deleteSession(arg0);
     }
   };
   return callback(AbstractSearchSessionAnalyticsManager, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/search/managers/AbstractSearchSessionAnalyticsManager.tsx");
+})();
+let result = require("v1").fileFinishedImporting("modules/search/managers/AbstractSearchSessionAnalyticsManager.tsx");
 
 export default tmp2;

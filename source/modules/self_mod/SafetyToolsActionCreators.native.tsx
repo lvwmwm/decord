@@ -1,26 +1,26 @@
-// Module ID: 10125
-// Function ID: 78383
+// Module ID: 10133
+// Function ID: 78423
 // Name: openSafetyToolsActionSheet
-// Dependencies: []
+// Dependencies: [10134, 4098, 10135, 1934, 2]
 // Exports: openSafetyToolsActionSheet
 
-// Module 10125 (openSafetyToolsActionSheet)
-let closure_3 = require(dependencyMap[0]).getSafetyToolsActionSheetKey;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/self_mod/SafetyToolsActionCreators.native.tsx");
+// Module 10133 (openSafetyToolsActionSheet)
+import { getSafetyToolsActionSheetKey as closure_3 } from "LOCATION_CONTEXT_MOBILE";
+
+const result = require("SafetyToolsActionSheet").fileFinishedImporting("modules/self_mod/SafetyToolsActionCreators.native.tsx");
 
 export const openSafetyToolsActionSheet = function openSafetyToolsActionSheet(channelId, recipientId, warningId, warningType) {
   const tmp = callback(channelId);
   const require = tmp;
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(4098);
   obj = {
     channelId,
     warningId,
     warningType,
     recipientId,
     onClose() {
-      callback(closure_2[1]).hideActionSheet(tmp);
+      outer1_1(outer1_2[1]).hideActionSheet(closure_0);
     }
   };
-  obj.openLazy(require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), tmp, obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(10135, dependencyMap.paths), tmp, obj);
 };

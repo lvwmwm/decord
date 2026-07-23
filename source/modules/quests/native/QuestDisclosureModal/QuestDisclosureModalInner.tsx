@@ -1,30 +1,33 @@
-// Module ID: 13892
-// Function ID: 105075
+// Module ID: 14006
+// Function ID: 107231
 // Name: QuestDisclosureModalInner
-// Dependencies: []
+// Dependencies: [27, 653, 33, 4130, 689, 3803, 9009, 1212, 9023, 10970, 8940, 5807, 4126, 9468, 5167, 5459, 1920, 4543, 2]
 // Exports: default
 
-// Module 13892 (QuestDisclosureModalInner)
-const View = require(dependencyMap[0]).View;
-const HelpdeskArticles = require(dependencyMap[1]).HelpdeskArticles;
-const _module = require(dependencyMap[2]);
-({ jsx: closure_5, jsxs: closure_6 } = _module);
-const _module1 = require(dependencyMap[3]);
+// Module 14006 (QuestDisclosureModalInner)
+import { View } from "get ActivityIndicator";
+import { HelpdeskArticles } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = {};
-obj = { flex: 1, padding: importDefault(dependencyMap[4]).space.PX_24, gap: importDefault(dependencyMap[4]).space.PX_16, maxWidth: 480 };
+obj = { flex: 1, padding: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_16, maxWidth: 480 };
 obj.container = obj;
-obj.illustration = { alignSelf: "center", marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
-const obj1 = { alignSelf: "center", marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
-obj.closeButton = { marginTop: "auto", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
+obj.illustration = { alignSelf: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { alignSelf: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj.closeButton = { marginTop: "auto", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
 obj.targetList = { padding: 0 };
-const obj3 = { onValueChange: "r", value: "isArray", start: "Boolean", paddingLeft: importDefault(dependencyMap[4]).space.PX_16, gap: importDefault(dependencyMap[4]).space.PX_16 };
+let obj3 = { flexDirection: "row", flexWrap: "nowrap", alignItems: "center", paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
 obj.targetItem = obj3;
 obj.lastTargetItem = { borderBottomWidth: 0 };
-const obj2 = { marginTop: "auto", paddingHorizontal: importDefault(dependencyMap[4]).space.PX_8, marginBottom: importDefault(dependencyMap[4]).space.PX_24 };
-obj.disclosureText = { paddingVertical: importDefault(dependencyMap[4]).space.PX_12, borderBottomColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-let closure_7 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[18]);
-const result = _module2.fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalInner.tsx");
+let obj4 = { flex: 1, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+obj.disclosureText = obj4;
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj2 = { marginTop: "auto", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+const result = require("jsxProd").fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalInner.tsx");
 
 export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   let cosponsorName;
@@ -33,47 +36,46 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   let isVideoQuest;
   let onClose;
   isTargetedDisclosure = isTargetedDisclosure.isTargetedDisclosure;
-  let importDefault;
+  let items1;
   ({ gamePublisher, gameTitle, isVideoQuest, onClose, cosponsorName } = isTargetedDisclosure);
   const tmp = callback2();
   const require = tmp;
-  const DropsOptedOut = require(dependencyMap[5]).DropsOptedOut;
+  const DropsOptedOut = require(3803) /* explicitContentFromProto */.DropsOptedOut;
   const setting = DropsOptedOut.useSetting();
   let obj = {};
   if (setting) {
     obj = { size: "xs" };
-    obj.icon = tmp3(tmp4(tmp5[6]).ServerIcon, obj);
-    const intl4 = tmp4(tmp5[7]).intl;
-    obj.text = intl4.string(tmp4(tmp5[7]).t.2bL0wT);
-    const items = [obj];
-    let items1 = items;
+    obj.icon = tmp3(tmp4(9009).ServerIcon, obj);
+    const intl4 = tmp4(1212).intl;
+    obj.text = intl4.string(tmp4(1212).t["2bL0wT"]);
+    let items = [obj];
+    items1 = items;
   } else {
     obj = { size: "xs" };
-    obj.icon = tmp3(tmp4(tmp5[8]).GlobeEarthIcon, obj);
-    const intl = tmp4(tmp5[7]).intl;
-    obj.text = intl.string(tmp4(tmp5[7]).t.xQSdPv);
+    obj.icon = tmp3(tmp4(9023).GlobeEarthIcon, obj);
+    const intl = tmp4(1212).intl;
+    obj.text = intl.string(tmp4(1212).t.xQSdPv);
     items1 = [obj, , ];
     const obj1 = {};
     const obj2 = { size: "xs" };
-    obj1.icon = tmp3(tmp4(tmp5[9]).UserIcon, obj2);
-    const intl2 = tmp4(tmp5[7]).intl;
-    obj1.text = intl2.string(tmp4(tmp5[7]).t.mYt7hQ);
+    obj1.icon = tmp3(tmp4(10970).UserIcon, obj2);
+    const intl2 = tmp4(1212).intl;
+    obj1.text = intl2.string(tmp4(1212).t.mYt7hQ);
     items1[1] = obj1;
     const obj3 = {};
     const obj4 = { size: "xs" };
-    obj3.icon = tmp3(tmp4(tmp5[10]).GameControllerIcon, obj4);
-    const intl3 = tmp4(tmp5[7]).intl;
-    obj3.text = intl3.string(tmp4(tmp5[7]).t.XAsWxQ);
+    obj3.icon = tmp3(tmp4(8940).GameControllerIcon, obj4);
+    const intl3 = tmp4(1212).intl;
+    obj3.text = intl3.string(tmp4(1212).t.XAsWxQ);
     items1[2] = obj3;
   }
-  importDefault = items1;
   const obj5 = { style: tmp.container };
-  const items2 = [callback(View, { style: tmp.illustration, children: callback(require(dependencyMap[11]).WumpusCouchSpotIllustration, {}) }), , , , ];
-  const obj7 = {};
-  let obj10 = require(dependencyMap[13]);
+  const items2 = [callback(View, { style: tmp.illustration, children: callback(require(5807) /* AccountAgeTier10LargeBadge */.WumpusCouchSpotIllustration, {}) }), , , , ];
+  const obj7 = { variant: "text-md/normal", color: "mobile-text-heading-primary" };
+  let obj10 = require(9468) /* getQuestUrl */;
   const obj8 = { gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest };
   obj7.children = obj10.getDisclosureText(obj8);
-  items2[1] = callback(require(dependencyMap[12]).Text, obj7);
+  items2[1] = callback(require(4126) /* Text */.Text, obj7);
   if (isTargetedDisclosure) {
     const obj9 = {
       radius: 16,
@@ -89,30 +91,30 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
           }
           items1[1] = lastTargetItem;
           obj.style = items1;
-          obj.children = callback(closure_6(closure_2[12]).Text, { variant: "text-md/semibold", children: children.text });
-          items[1] = callback(closure_3, obj);
+          obj.children = outer1_5(outer1_6(outer1_2[12]).Text, { variant: "text-md/semibold", children: children.text });
+          items[1] = outer1_5(outer1_3, obj);
           obj.children = items;
-          return closure_6(closure_3, obj, arg1);
+          return outer1_6(outer1_3, obj, arg1);
         })
     };
-    isTargetedDisclosure = callback(require(dependencyMap[14]).Card, obj9);
+    isTargetedDisclosure = callback(require(5167) /* getCardBackgroundToken */.Card, obj9);
   }
   items2[2] = isTargetedDisclosure;
-  obj10 = {};
-  const intl5 = require(dependencyMap[7]).intl;
+  obj10 = { variant: "text-md/medium", color: "mobile-text-heading-primary" };
+  const intl5 = require(1212) /* getSystemLocale */.intl;
   const obj11 = {};
-  const obj6 = { style: tmp.illustration, children: callback(require(dependencyMap[11]).WumpusCouchSpotIllustration, {}) };
+  const obj6 = { style: tmp.illustration, children: callback(require(5807) /* AccountAgeTier10LargeBadge */.WumpusCouchSpotIllustration, {}) };
   const tmp6 = closure_6;
   const tmp7 = View;
-  obj11.privacySettingsUrl = importDefault(dependencyMap[16]).getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
-  obj10.children = intl5.format(require(dependencyMap[7]).t.tzq9Wa, obj11);
-  items2[3] = callback(require(dependencyMap[15]).TextWithIOSLinkWorkaround, obj10);
+  obj11.privacySettingsUrl = items1(1920).getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
+  obj10.children = intl5.format(require(1212) /* getSystemLocale */.t.tzq9Wa, obj11);
+  items2[3] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj10);
   const obj12 = { style: tmp.closeButton };
-  const obj13 = {};
-  const intl6 = require(dependencyMap[7]).intl;
-  obj13.text = intl6.string(require(dependencyMap[7]).t.cpT0Cq);
+  const obj13 = { variant: "primary", grow: true, size: "lg" };
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj13.text = intl6.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj13.onPress = onClose;
-  obj12.children = callback(require(dependencyMap[17]).Button, obj13);
+  obj12.children = callback(require(4543) /* Button */.Button, obj13);
   items2[4] = callback(View, obj12);
   obj5.children = items2;
   return tmp6(tmp7, obj5);

@@ -1,11 +1,12 @@
 // Module ID: 605
 // Function ID: 7040
 // Name: isBuffer
-// Dependencies: []
+// Dependencies: [580, 606]
 
 // Module 605 (isBuffer)
+const tmp = "object" === typeof exports && exports && !exports.nodeType && exports;
 let tmp2 = tmp;
-if ("object" === typeof exports && exports && !exports.nodeType && exports) {
+if (tmp) {
   tmp2 = "object" === typeof module;
 }
 if (tmp2) {
@@ -20,7 +21,7 @@ if (tmp2) {
 let _Buffer;
 if (tmp2) {
   if (tmp2.exports === tmp) {
-    _Buffer = require(dependencyMap[0]).Buffer;
+    _Buffer = require("module_580").Buffer;
   }
 }
 let isBuffer;
@@ -28,7 +29,7 @@ if (_Buffer) {
   isBuffer = _Buffer.isBuffer;
 }
 if (!isBuffer) {
-  isBuffer = require(dependencyMap[1]);
+  isBuffer = require("stubFalse");
 }
 
 export default isBuffer;

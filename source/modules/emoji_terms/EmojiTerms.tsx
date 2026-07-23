@@ -1,14 +1,16 @@
-// Module ID: 4996
-// Function ID: 43233
+// Module ID: 4999
+// Function ID: 43251
 // Name: importDefaultResult2
-// Dependencies: []
+// Dependencies: [7, 6, 5000, 5001, 2]
 
-// Module 4996 (importDefaultResult2)
-importDefault(dependencyMap[0]);
-importDefault(dependencyMap[1]);
-let importDefaultResult2 = importDefault(dependencyMap[2]);
+// Module 4999 (importDefaultResult2)
+import "_defineProperties";
+import "_classCallCheck";
+import importDefaultResult2 from "LazyPromiseInitializer";
+
+const require = arg1;
 importDefaultResult2 = new importDefaultResult2(function loadEmoji(arg0) {
-  const tmp = arg1(dependencyMap[3]).emojiTermsImporter[arg0];
+  const tmp = require(5001) /* emojiTermsImporter */.emojiTermsImporter[arg0];
   if (undefined !== tmp) {
     let nextPromise = tmp().then((arg0) => arg0.default);
     const tmpResult = tmp();
@@ -17,7 +19,7 @@ importDefaultResult2 = new importDefaultResult2(function loadEmoji(arg0) {
   }
   return nextPromise;
 });
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/emoji_terms/EmojiTerms.tsx");
+const result = require("LazyPromiseInitializer").fileFinishedImporting("modules/emoji_terms/EmojiTerms.tsx");
 
 export default {
   setEmojiLocale(locale) {

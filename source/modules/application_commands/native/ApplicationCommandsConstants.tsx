@@ -1,16 +1,17 @@
-// Module ID: 9551
-// Function ID: 74455
+// Module ID: 9558
+// Function ID: 74496
 // Name: AUTOCOMPLETE_ROW_HEIGHT
-// Dependencies: []
+// Dependencies: [477, 2]
 
-// Module 9551 (AUTOCOMPLETE_ROW_HEIGHT)
-const _module = require(dependencyMap[0]);
+// Module 9558 (AUTOCOMPLETE_ROW_HEIGHT)
+import set from "set";
+import set from "set";
+
 let num = 56;
-if (_module.isAndroid()) {
+if (set.isAndroid()) {
   num = 64;
 }
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/application_commands/native/ApplicationCommandsConstants.tsx");
+const result = set.fileFinishedImporting("modules/application_commands/native/ApplicationCommandsConstants.tsx");
 
 export const AUTOCOMPLETE_ROW_HEIGHT = 48;
 export const AUTOCOMPLETE_EMOJI_ROW_HEIGHT = num;

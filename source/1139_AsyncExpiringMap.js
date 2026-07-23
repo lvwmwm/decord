@@ -1,14 +1,15 @@
 // Module ID: 1139
-// Function ID: 12980
+// Function ID: 12981
 // Name: AsyncExpiringMap
-// Dependencies: []
+// Dependencies: [57, 6, 7]
 
 // Module 1139 (AsyncExpiringMap)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-export const AsyncExpiringMap = () => {
+
+export const AsyncExpiringMap = (() => {
   class AsyncExpiringMap {
     constructor() {
       self = this;
@@ -26,9 +27,9 @@ export const AsyncExpiringMap = () => {
         if (undefined !== ttl) {
           num2 = ttl;
         }
-        tmp = closure_1;
+        tmp = outer1_1;
         tmp2 = AsyncExpiringMap;
-        tmp3 = closure_1(self, AsyncExpiringMap);
+        tmp3 = outer1_1(self, AsyncExpiringMap);
         self._ttl = num2;
         tmp4 = globalThis;
         _Map = Map;
@@ -46,12 +47,11 @@ export const AsyncExpiringMap = () => {
       return;
     }
   }
-  let closure_0 = AsyncExpiringMap;
   let obj = {
     key: "set",
     value: function set(arg0, promise) {
-      const self = this;
-      const AsyncExpiringMap = this;
+      let self = this;
+      self = this;
       if (!this._cleanupInterval) {
         self.startCleanup();
       }
@@ -185,7 +185,7 @@ export const AsyncExpiringMap = () => {
           let tmp13 = tmp7;
           let deleteResult = _map2.delete(tmp7);
         }
-        // continue
+        continue;
       }
       if (!self._map.size) {
         self.stopCleanup();
@@ -216,9 +216,9 @@ export const AsyncExpiringMap = () => {
   items[8] = {
     key: "startCleanup",
     value: function startCleanup() {
-      const AsyncExpiringMap = this;
+      const self = this;
       this._cleanupInterval = setInterval(() => self.cleanup(), this._cleanupIntervalMs);
     }
   };
   return callback(AsyncExpiringMap, items);
-}();
+})();

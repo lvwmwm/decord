@@ -1,14 +1,15 @@
 // Module ID: 1808
-// Function ID: 19934
+// Function ID: 19935
 // Name: Next
-// Dependencies: [27, 477, 1821, 2, 648, 2, 1212]
+// Dependencies: [31, 33, 1801, 1802, 1807, 1774, 1800]
 // Exports: default
 
 // Module 1808 (Next)
-import "get ActivityIndicator";
-import { jsx } from "module_477";
+import "result";
+import { jsx } from "jsxProd";
 
-require("get ActivityIndicator").useCallback;
+const require = arg1;
+require("result").useCallback;
 
 export default function Next(icon) {
   let button;
@@ -20,17 +21,16 @@ export default function Next(icon) {
   let style;
   let theme;
   ({ children, onPress } = icon);
-  const arg1 = onPress;
   ({ disabled, button } = icon);
   ({ rippleRadius, style } = icon);
   if (undefined === button) {
-    button = importDefault(dependencyMap[2]);
+    button = importDefault(1801);
   }
   icon = icon.icon;
   if (undefined === icon) {
-    icon = importDefault(dependencyMap[3]);
+    icon = importDefault(1802);
   }
-  let obj = arg1(dependencyMap[4]);
+  let obj = onPress(1807);
   const toolbarContext = obj.useToolbarContext();
   ({ theme, isNextDisabled } = toolbarContext);
   if (null != disabled) {
@@ -38,25 +38,35 @@ export default function Next(icon) {
   }
   const items = [onPress];
   obj = {
+    accessibilityHint: "Moves focus to the next field",
+    accessibilityLabel: "Next",
     disabled: isNextDisabled,
     rippleRadius,
     style,
-    testID: arg1(dependencyMap[6]).TEST_ID_KEYBOARD_TOOLBAR_NEXT,
+    testID: onPress(1800).TEST_ID_KEYBOARD_TOOLBAR_NEXT,
     theme,
     onPress: useCallback((isDefaultPrevented) => {
       if (null != onPress) {
         onPress(isDefaultPrevented);
       }
       if (!isDefaultPrevented.isDefaultPrevented()) {
-        const KeyboardController = onPress(closure_2[5]).KeyboardController;
+        const KeyboardController = onPress(outer1_2[5]).KeyboardController;
         KeyboardController.setFocusTo("next");
       }
     }, items)
   };
   if (null == children) {
     obj = { disabled: isNextDisabled, theme, type: "next" };
-    children = <icon {...obj} />;
+    children = <icon disabled={isNextDisabled} theme={theme} type="next" />;
   }
   obj.children = children;
-  return <button {...obj} />;
+  return <button accessibilityHint="Moves focus to the next field" accessibilityLabel="Next" disabled={isNextDisabled} rippleRadius={rippleRadius} style={style} testID={onPress(1800).TEST_ID_KEYBOARD_TOOLBAR_NEXT} theme={theme} onPress={useCallback((isDefaultPrevented) => {
+    if (null != onPress) {
+      onPress(isDefaultPrevented);
+    }
+    if (!isDefaultPrevented.isDefaultPrevented()) {
+      const KeyboardController = onPress(outer1_2[5]).KeyboardController;
+      KeyboardController.setFocusTo("next");
+    }
+  }, items)} />;
 };

@@ -1,22 +1,23 @@
-// Module ID: 11092
-// Function ID: 86299
+// Module ID: 11102
+// Function ID: 86349
 // Name: INITIAL_STATE
-// Dependencies: []
+// Dependencies: [621, 2]
 // Exports: useDiceRollState
 
-// Module 11092 (INITIAL_STATE)
-let obj = { <string:377406052>: "/assets/images/native/premium/logos", <string:2519880203>: 163.5, <string:2288111497>: 20, <string:1644462929>: null, <string:3882058268>: "cd3f012d84fd9fd0e06d08e5556058d7", <string:3262802425>: "img_logo_nitro_tier_0_horizontal_dark" };
-const _module = require(dependencyMap[0]);
-obj = _module.create(() => obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/dice_roll/DiceRollStore.tsx");
+// Module 11102 (INITIAL_STATE)
+import keys from "keys";
+
+let obj = { channelId: null, rolling: false, dismissing: false, diceCount: 1, diceSides: 6, results: null };
+obj = keys.create(() => obj);
+const result = require("set").fileFinishedImporting("modules/dice_roll/DiceRollStore.tsx");
 
 export default obj;
 export const INITIAL_STATE = obj;
 export const useDiceRollState = function useDiceRollState(channelId) {
-  return channelId((channelId) => {
+  let closure_0 = channelId;
+  return obj((channelId) => {
     let tmp = null;
-    if (channelId.channelId === channelId) {
+    if (channelId.channelId === closure_0) {
       tmp = channelId;
     }
     return tmp;

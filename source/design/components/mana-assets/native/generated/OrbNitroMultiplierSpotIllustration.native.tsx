@@ -1,13 +1,13 @@
-// Module ID: 6391
-// Function ID: 50519
+// Module ID: 6396
+// Function ID: 50548
 // Name: OrbNitroMultiplierSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6397, 2]
 // Exports: OrbNitroMultiplierSpotIllustration
 
-// Module 6391 (OrbNitroMultiplierSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/OrbNitroMultiplierSpotIllustration.native.tsx");
+// Module 6396 (OrbNitroMultiplierSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/OrbNitroMultiplierSpotIllustration.native.tsx");
 
 export const OrbNitroMultiplierSpotIllustration = function OrbNitroMultiplierSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const OrbNitroMultiplierSpotIllustration = function OrbNitroMultiplierSpo
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6397) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const OrbNitroMultiplierSpotIllustration = function OrbNitroMultiplierSpo
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

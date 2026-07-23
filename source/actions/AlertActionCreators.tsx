@@ -1,9 +1,9 @@
-// Module ID: 4466
-// Function ID: 39468
-// Dependencies: []
+// Module ID: 4470
+// Function ID: 39500
+// Name: set
+// Dependencies: [2, 4471]
 
-// Module 4466
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("actions/AlertActionCreators.tsx");
+// Module 4470 (set)
+const result = require("set").fileFinishedImporting("actions/AlertActionCreators.tsx");
 
-export default require(dependencyMap[1]).default;
+export { default as default } from "module_4471";

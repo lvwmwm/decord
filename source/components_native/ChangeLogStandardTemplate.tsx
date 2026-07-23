@@ -1,11 +1,26 @@
-// Module ID: 7760
-// Function ID: 61621
+// Module ID: 7766
+// Function ID: 61658
 // Name: LHeading
-// Dependencies: []
+// Dependencies: [31, 27, 1921, 653, 33, 689, 4130, 1273, 624, 7767, 675, 3827, 3829, 7769, 4120, 5121, 7771, 7773, 1212, 3742, 7775, 7777, 2]
 
-// Module 7760 (LHeading)
+// Module 7766 (LHeading)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_4;
+let closure_5;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function LHeading(className) {
-  const arg1 = className.className;
+  className = className.className;
   function getStyles(lheadingLine, arg1) {
     const className = arg1;
     if (null != className) {
@@ -16,7 +31,7 @@ function LHeading(className) {
           let tmp4 = obj;
         } else {
           obj = {};
-          if (arg1) {
+          if (closure_0) {
             obj.color = tmp3;
             tmp4 = obj;
           } else {
@@ -32,7 +47,7 @@ function LHeading(className) {
   const tmp = callback3();
   let obj = { style: tmp.lheading };
   obj = { accessibilityRole: "header", style: getStyles(tmp.lheadingText, true), children: className.children };
-  const items = [callback(arg1(dependencyMap[7]).LegacyText, obj), ];
+  const items = [callback(className(1273).LegacyText, obj), ];
   obj = { style: getStyles(tmp.lheadingLine, false) };
   items[1] = callback(closure_4, obj);
   obj.children = items;
@@ -42,17 +57,17 @@ function LinkInner(target) {
   let changelogId;
   let children;
   let className;
-  const arg1 = target.target;
+  target = target.target;
   ({ changelogId, className, children } = target);
-  let obj = arg1(dependencyMap[8]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  const importDefault = arg1(dependencyMap[9]).useChangelog(changelogId, stateFromStores).changelog;
+  let obj = target(624);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.locale);
+  const changelog = target(7767).useChangelog(changelogId, stateFromStores).changelog;
   obj = {
     accessibilityRole: "link",
     style: className,
     onPress() {
-      let obj = changelog(closure_2[10]);
+      let obj = changelog(outer1_2[10]);
       obj = {};
       let date;
       if (null != changelog) {
@@ -74,21 +89,21 @@ function LinkInner(target) {
       obj.change_log_id = "" + date + ":" + num;
       obj.cta_type = "inline_link";
       obj.target = target;
-      obj.track(constants.CHANGE_LOG_CTA_CLICKED, obj);
-      const obj3 = changelog(closure_2[11]);
-      obj3.openURL(target(closure_2[12]).sanitizeUrl(target));
+      obj.track(outer1_9.CHANGE_LOG_CTA_CLICKED, obj);
+      const obj3 = changelog(outer1_2[11]);
+      obj3.openURL(target(outer1_2[12]).sanitizeUrl(target));
     },
     children
   };
-  return callback(arg1(dependencyMap[7]).LegacyText, obj);
+  return callback(target(1273).LegacyText, obj);
 }
 function getLinkComponent(changelogId) {
-  const arg1 = changelogId;
+  let closure_0 = changelogId;
   return (arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj["changelogId"] = arg0;
-    return callback(closure_16, obj);
+    obj["changelogId"] = closure_0;
+    return outer1_10(outer1_16, obj);
   };
 }
 function changelogRules(changelogId, arg1) {
@@ -96,48 +111,40 @@ function changelogRules(changelogId, arg1) {
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(dependencyMap[13]);
+  let obj = importDefault(7769);
   if (flag) {
     obj = {};
-    obj = { Link: getLinkComponent(changelogId), ListItem: memoResult, LHeading, Heading: LHeading };
+    obj = { Link: getLinkComponent(changelogId), ListItem: closure_14, LHeading, Heading: LHeading };
     obj.components = obj;
     let messageRules = obj.getMessageRules(obj);
   } else {
     const obj1 = {};
-    const obj2 = { Link: getLinkComponent(changelogId), ListItem: memoResult, LHeading, Heading: LHeading };
+    const obj2 = { Link: getLinkComponent(changelogId), ListItem: closure_14, LHeading, Heading: LHeading };
     obj1.components = obj2;
     messageRules = obj.getDefaultRules(obj1);
   }
   return messageRules;
 }
 function getRenderChangelog(changeLog) {
-  return importDefault(dependencyMap[14]).reactParserFor(changelogRules(changeLog.id));
+  return importDefault(4120).reactParserFor(changelogRules(changeLog.id));
 }
-const importAllResult = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-({ View: closure_4, ScrollView: closure_5 } = tmp2);
-let closure_6 = importDefault(dependencyMap[2]);
-const tmp3 = arg1(dependencyMap[3]);
-({ LocalizedLinks: closure_7, SOCIAL_LINKS: closure_8, AnalyticEvents: closure_9 } = tmp3);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[4]));
-let obj = { added: importDefault(dependencyMap[5]).unsafe_rawColors.GREEN_360, fixed: importDefault(dependencyMap[5]).unsafe_rawColors.RED_400, progress: importDefault(dependencyMap[5]).unsafe_rawColors.YELLOW_300, improved: importDefault(dependencyMap[5]).unsafe_rawColors.BRAND_500 };
-let obj2 = arg1(dependencyMap[6]);
-obj = { flex: { flex: 1 } };
-const tmp4 = arg1(dependencyMap[4]);
-obj.container = { padding: 18, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj2 = { "Bool(false)": null, "Bool(false)": "\u{1F43F}\uFE0F", borderTopWidth: tmp2.StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, borderTopColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG, gap: importDefault(dependencyMap[5]).space.PX_12, paddingHorizontal: 18, paddingVertical: importDefault(dependencyMap[5]).space.PX_12 };
-obj.footer = obj2;
+({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+({ LocalizedLinks: closure_7, SOCIAL_LINKS: closure_8, AnalyticEvents: closure_9 } = ME);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+let obj = { added: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360, fixed: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, progress: require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300, improved: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BRAND_500 };
+obj = { flex: { flex: 1 }, container: { padding: 18, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW } };
+_createForOfIteratorHelperLoose = { flexDirection: "row", justifyContent: "center", borderTopWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: 18, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12 };
+obj.footer = _createForOfIteratorHelperLoose;
 obj.scrollViewContainer = { flex: 1 };
-obj.lheading = {};
-obj.lheadingText = { fontSize: 16, fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
-obj.lheadingLine = {};
-const obj1 = { padding: 18, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-const obj3 = { fontSize: 16, fontFamily: tmp3.Fonts.PRIMARY_SEMIBOLD };
-obj.bulletPoint = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
-obj.listItem = {};
-const obj4 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_STRONG };
-obj.listText = { color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
-let closure_13 = obj2.createStyles(obj);
+obj.lheading = { marginBottom: 14, flexDirection: "row", alignItems: "center" };
+obj.lheadingText = { fontSize: 16, fontFamily: ME.Fonts.PRIMARY_SEMIBOLD };
+obj.lheadingLine = { flexGrow: 1, flexShrink: 1, flexBasis: "auto", marginLeft: 10, height: 2 };
+const obj4 = { width: 7, height: 7, borderRadius: 3.5, marginRight: 13, marginTop: 7, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
+obj.bulletPoint = obj4;
+obj.listItem = { flexDirection: "row", marginLeft: 4, marginBottom: 8 };
+const obj5 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, fontSize: 14, lineHeight: 18, flex: 1 };
+obj.listText = obj5;
+let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((children) => {
   children = children.children;
   const tmp = callback3();
@@ -155,12 +162,12 @@ const memoResult = importAllResult.memo((children) => {
   obj.children = items;
   return closure_11(closure_4, obj);
 });
-const obj5 = { color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
+let obj1 = { padding: 18, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+let obj3 = { fontSize: 16, fontFamily: ME.Fonts.PRIMARY_SEMIBOLD };
 const memoResult1 = importAllResult.memo((video) => {
   let changeLog;
   let onScroll;
   ({ changeLog, onScroll } = video);
-  const arg1 = onScroll;
   const tmp = callback3();
   const items = [onScroll];
   let obj = { style: tmp.flex };
@@ -176,33 +183,33 @@ const memoResult1 = importAllResult.memo((video) => {
   obj.children = items1;
   const items2 = [callback2(closure_5, obj), ];
   obj = { bottom: true, style: tmp.footer };
-  const obj1 = { "Null": 21, "Null": "cached_notification_channel_id", "Null": "scalar", icon: callback(arg1(dependencyMap[17]).XNeutralIcon, {}) };
-  const intl = arg1(dependencyMap[18]).intl;
-  obj1.accessibilityLabel = intl.string(arg1(dependencyMap[18]).t./lXfom);
+  const obj1 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7773).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
+  const intl = onScroll(1212).intl;
+  obj1.accessibilityLabel = intl.string(onScroll(1212).t["/lXfom"]);
   obj1.onPress = function onPress() {
-    callback(closure_2[11]).openURL(callback(closure_2[19])(constants.TWITTER));
+    outer1_1(outer1_2[11]).openURL(outer1_1(outer1_2[19])(outer1_7.TWITTER));
   };
-  const items3 = [callback(arg1(dependencyMap[16]).IconButton, obj1), , ];
-  const obj2 = { "Null": 21, "Null": "cached_notification_channel_id", "Null": "scalar", icon: callback(arg1(dependencyMap[20]).FacebookNeutralIcon, {}) };
-  const intl2 = arg1(dependencyMap[18]).intl;
-  obj2.accessibilityLabel = intl2.string(arg1(dependencyMap[18]).t.h0or/l);
+  const items3 = [callback(onScroll(7771).IconButton, obj1), , ];
+  const obj2 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7775).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
+  const intl2 = onScroll(1212).intl;
+  obj2.accessibilityLabel = intl2.string(onScroll(1212).t["h0or/l"]);
   obj2.onPress = function onPress() {
-    callback(closure_2[11]).openURL(constants2.FACEBOOK_URL);
+    outer1_1(outer1_2[11]).openURL(outer1_8.FACEBOOK_URL);
   };
-  items3[1] = callback(arg1(dependencyMap[16]).IconButton, obj2);
-  const obj3 = { "Null": 21, "Null": "cached_notification_channel_id", "Null": "scalar", icon: callback(arg1(dependencyMap[21]).InstagramNeutralIcon, {}) };
-  const intl3 = arg1(dependencyMap[18]).intl;
-  obj3.accessibilityLabel = intl3.string(arg1(dependencyMap[18]).t.5uVPyf);
+  items3[1] = callback(onScroll(7771).IconButton, obj2);
+  const obj3 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(onScroll(7777).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }) };
+  const intl3 = onScroll(1212).intl;
+  obj3.accessibilityLabel = intl3.string(onScroll(1212).t["5uVPyf"]);
   obj3.onPress = function onPress() {
-    callback(closure_2[11]).openURL(constants2.INSTAGRAM_URL);
+    outer1_1(outer1_2[11]).openURL(outer1_8.INSTAGRAM_URL);
   };
-  items3[2] = callback(arg1(dependencyMap[16]).IconButton, obj3);
+  items3[2] = callback(onScroll(7771).IconButton, obj3);
   obj.children = items3;
-  items2[1] = callback2(arg1(dependencyMap[15]).SafeAreaPaddingView, obj);
+  items2[1] = callback2(onScroll(5121).SafeAreaPaddingView, obj);
   obj.children = items2;
   return callback2(closure_4, obj);
 });
-const result = arg1(dependencyMap[22]).fileFinishedImporting("components_native/ChangeLogStandardTemplate.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/ChangeLogStandardTemplate.tsx");
 
 export default memoResult1;
 export const ListItem = memoResult;

@@ -1,30 +1,46 @@
-// Module ID: 10745
-// Function ID: 83500
+// Module ID: 10755
+// Function ID: 83549
 // Name: SingleStream
-// Dependencies: []
+// Dependencies: [31, 10210, 33, 10564, 10574, 4323, 2]
 // Exports: default
 
-// Module 10745 (SingleStream)
-importAll(dependencyMap[0]);
-({ toggleFocus: closure_3, resetFocus: closure_4 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/video_calls/native/components/SingleStream.tsx");
+// Module 10755 (SingleStream)
+import "result";
+import resetFocusTimer from "resetFocusTimer";
+import { jsx } from "jsxProd";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ toggleFocus: closure_3, resetFocus: closure_4 } = resetFocusTimer);
+const result = require("jsxProd").fileFinishedImporting("modules/video_calls/native/components/SingleStream.tsx");
 
 export default function SingleStream(channel) {
-  const arg1 = channel.channel;
+  channel = channel.channel;
   const obj = {
     gestureEnabled: true,
-    resizeMode: arg1(dependencyMap[4]).ResizeMode.CONTAIN,
+    resizeMode: channel(10574).ResizeMode.CONTAIN,
     onSingleTap() {
-      callback2();
+      outer1_3();
     },
     onDoubleTap() {
-      callback3();
-      const participant = callback(closure_2[5]).selectParticipant(channel.id, null);
+      outer1_4();
+      const participant = outer1_1(outer1_2[5]).selectParticipant(channel.id, null);
     },
     participant: channel.participant,
     style: { flex: 1 }
   };
-  return jsx(importDefault(dependencyMap[3]), obj);
+  return jsx(importDefault(10564), {
+    gestureEnabled: true,
+    resizeMode: channel(10574).ResizeMode.CONTAIN,
+    onSingleTap() {
+      outer1_3();
+    },
+    onDoubleTap() {
+      outer1_4();
+      const participant = outer1_1(outer1_2[5]).selectParticipant(channel.id, null);
+    },
+    participant: channel.participant,
+    style: { flex: 1 }
+  });
 };

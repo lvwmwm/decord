@@ -1,34 +1,37 @@
-// Module ID: 14204
-// Function ID: 107479
+// Module ID: 14318
+// Function ID: 109635
 // Name: _handleEnableSystemNotification
-// Dependencies: []
+// Dependencies: [5, 27, 7662, 653, 4344, 11449, 11457, 675, 10638, 10095, 1212, 2]
 
-// Module 14204 (_handleEnableSystemNotification)
+// Module 14318 (_handleEnableSystemNotification)
+import closure_3 from "EventActionType";
+import { NativeModules } from "get ActivityIndicator";
+import { AnalyticEvents } from "ME";
+import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionStatus";
+import EventActionType from "EventActionType";
+import createToggle from "createToggle";
+
+let closure_7;
+let closure_8;
+const require = arg1;
 function _handleEnableSystemNotification() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _handleEnableSystemNotification = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const NativeModules = arg1(dependencyMap[1]).NativeModules;
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-let closure_6 = arg1(dependencyMap[4]).NotificationAuthorizationStatus;
-({ EventActionType: closure_7, EventActionLocation: closure_8 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[9]);
-obj = {
+({ EventActionType: closure_7, EventActionLocation: closure_8 } = EventActionType);
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[10]).intl;
-    return intl.string(arg1(dependencyMap[10]).t.nl2Dqx);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.nl2Dqx);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.NOTIFICATIONS,
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   onPress: function handleEnableSystemNotification() {
     return _handleEnableSystemNotification(...arguments);
   },
   withArrow: true
 };
-const pressable = obj.createPressable(obj);
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/defs/native/SystemNotificationsSetting.tsx");
+createToggle = createToggle.createPressable(createToggle);
+const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/SystemNotificationsSetting.tsx");
 
-export default pressable;
+export default createToggle;

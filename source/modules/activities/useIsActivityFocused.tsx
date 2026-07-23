@@ -1,10 +1,14 @@
-// Module ID: 10521
-// Function ID: 82161
+// Module ID: 10531
+// Function ID: 82211
 // Name: isActivityFocused
-// Dependencies: []
+// Dependencies: [4143, 1347, 10532, 566, 2]
 // Exports: default
 
-// Module 10521 (isActivityFocused)
+// Module 10531 (isActivityFocused)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 function isActivityFocused(channelId) {
   let ChannelRTCStore;
   let EmbeddedActivitiesStore;
@@ -14,7 +18,7 @@ function isActivityFocused(channelId) {
   let tmp3 = null != selectedParticipant && null != currentEmbeddedActivity;
   if (tmp3) {
     let compositeInstanceId;
-    let obj = arg1(dependencyMap[2]);
+    let obj = require(10532) /* getEmbeddedActivityParticipantId */;
     obj = { applicationId: currentEmbeddedActivity.applicationId };
     if (null != currentEmbeddedActivity) {
       compositeInstanceId = currentEmbeddedActivity.compositeInstanceId;
@@ -24,13 +28,11 @@ function isActivityFocused(channelId) {
   }
   return tmp3;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/activities/useIsActivityFocused.tsx");
+const result = require("getEmbeddedActivityParticipantId").fileFinishedImporting("modules/activities/useIsActivityFocused.tsx");
 
 export default function useIsActivityFocused(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2, closure_3];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => callback({ channelId: arg0, ChannelRTCStore: closure_2, EmbeddedActivitiesStore: closure_3 }));
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct, _createForOfIteratorHelperLoose];
+  return _require(566).useStateFromStores(items, () => outer1_4({ channelId: closure_0, ChannelRTCStore: outer1_2, EmbeddedActivitiesStore: outer1_3 }));
 };
 export { isActivityFocused };

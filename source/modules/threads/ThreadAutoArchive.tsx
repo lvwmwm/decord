@@ -1,53 +1,53 @@
-// Module ID: 7931
-// Function ID: 63344
+// Module ID: 7937
+// Function ID: 63381
 // Name: getAutoArchiveOptions
-// Dependencies: [57, 31, 27, 4120, 1278, 1280]
+// Dependencies: [1211, 664, 1212, 708, 3712, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 7931 (getAutoArchiveOptions)
-import { DEFAULT_AUTO_ARCHIVE_DURATION as closure_3 } from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7937 (getAutoArchiveOptions)
+import { DEFAULT_AUTO_ARCHIVE_DURATION as closure_3 } from "AbortCodes";
 
 function getAutoArchiveOptions() {
   let obj = { id: "1hour" };
-  const intl = require(dependencyMap[2]).intl;
-  obj.label = intl.string(require(dependencyMap[2]).t.cs8A1c);
-  obj.value = importDefault(dependencyMap[1]).Minutes.HOUR;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t.cs8A1c);
+  obj.value = importDefault(664).Minutes.HOUR;
   const items = [obj, , , ];
   obj = { id: "24hours" };
-  const intl2 = require(dependencyMap[2]).intl;
-  obj.label = intl2.string(require(dependencyMap[2]).t.zFKbrF);
-  obj.value = importDefault(dependencyMap[1]).Minutes.DAY;
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl2.string(require(1212) /* getSystemLocale */.t.zFKbrF);
+  obj.value = importDefault(664).Minutes.DAY;
   items[1] = obj;
   obj = { id: "3days" };
-  const intl3 = require(dependencyMap[2]).intl;
-  obj.label = intl3.string(require(dependencyMap[2]).t.TmPIZX);
-  obj.value = 3 * importDefault(dependencyMap[1]).Minutes.DAY;
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl3.string(require(1212) /* getSystemLocale */.t.TmPIZX);
+  obj.value = 3 * importDefault(664).Minutes.DAY;
   items[2] = obj;
   const obj1 = { id: "1week" };
-  const intl4 = require(dependencyMap[2]).intl;
-  obj1.label = intl4.string(require(dependencyMap[2]).t./7i2el);
-  obj1.value = importDefault(dependencyMap[1]).Minutes.WEEK;
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj1.label = intl4.string(require(1212) /* getSystemLocale */.t["/7i2el"]);
+  obj1.value = importDefault(664).Minutes.WEEK;
   items[3] = obj1;
   return items;
 }
-const items = [require("module_31").Minutes.HOUR, require("module_31").Minutes.DAY, 3 * require("module_31").Minutes.DAY, require("module_31").Minutes.WEEK];
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/threads/ThreadAutoArchive.tsx");
+let items = [require("set").Minutes.HOUR, require("set").Minutes.DAY, 3 * require("set").Minutes.DAY, require("set").Minutes.WEEK];
+const tmp2 = require("memoize")(() => getAutoArchiveOptions().map((value) => value.value));
+const result = require("getSystemLocale").fileFinishedImporting("modules/threads/ThreadAutoArchive.tsx");
 
 export const AUTO_ARCHIVE_OPTION_VALUES = items;
 export { getAutoArchiveOptions };
-export const getAutoArchiveDurations = require("_isNativeReflectConstruct")(() => getAutoArchiveOptions().map((value) => value.value));
+export const getAutoArchiveDurations = tmp2;
 export const getAutoArchiveDurationText = function getAutoArchiveDurationText(arg0) {
-  const require = arg0;
-  const found = getAutoArchiveOptions().find((value) => value.value === value);
+  let closure_0 = arg0;
+  const found = getAutoArchiveOptions().find((value) => value.value === closure_0);
   let label;
   if (null != found) {
     label = found.label;
   }
   if (null == label) {
-    const obj = importDefault(dependencyMap[4]);
-    label = importDefault(dependencyMap[4]).duration(arg0, "minutes").humanize();
-    const durationResult = importDefault(dependencyMap[4]).duration(arg0, "minutes");
+    const obj = importDefault(3712);
+    label = importDefault(3712).duration(arg0, "minutes").humanize();
+    const durationResult = importDefault(3712).duration(arg0, "minutes");
   }
   return label;
 };

@@ -1,9 +1,17 @@
-// Module ID: 6994
-// Function ID: 55921
+// Module ID: 6999
+// Function ID: 55955
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 27, 652, 636, 4530, 2]
 
-// Module 6994 (_isNativeReflectConstruct)
+// Module 6999 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import addToken from "addToken";
+import isUndefinedOrNull from "isUndefinedOrNull";
+import { NativeModules } from "get ActivityIndicator";
+import tmp4 from "LifecycleManager";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -16,43 +24,36 @@ function _isNativeReflectConstruct() {
 function socketToken(arg0) {
   return "ForegroundService:" + arg0;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const NativeModules = arg1(dependencyMap[5]).NativeModules;
-let tmp2 = () => {
+let tmp2 = (() => {
   class ForegroundServiceManager {
     constructor() {
-      ForegroundServiceManager = this;
-      tmp = closure_6(this, ForegroundServiceManager);
+      self = this;
+      tmp = outer1_6(this, self);
       map = new Map();
       this.serviceNotifications = map;
       this.serviceNotificationIdentifier = 1;
       this.handleChange = () => {
         if (self.serviceNotifications.size > 0) {
-          const ForegroundServiceModule2 = closure_8.ForegroundServiceModule;
+          const ForegroundServiceModule2 = outer2_8.ForegroundServiceModule;
           const serviceNotifications = self.serviceNotifications;
           const items = [];
           HermesBuiltin.arraySpread(serviceNotifications.values(), 0);
           ForegroundServiceModule2.startService(items);
         } else {
-          const ForegroundServiceModule = closure_8.ForegroundServiceModule;
+          const ForegroundServiceModule = outer2_8.ForegroundServiceModule;
           ForegroundServiceModule.stopService();
         }
       };
       return;
     }
   }
-  const importDefault = ForegroundServiceManager;
   let obj = {
     key: "initialize",
     value() {
 
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "terminate",
     value() {
@@ -63,11 +64,12 @@ let tmp2 = () => {
   obj = {
     key: "addServiceHandler",
     value(arg0) {
-      const ForegroundServiceManager = this;
+      const self = this;
+      let closure_1 = arg0;
       return new Promise((arg0) => {
         const serviceNotificationIdentifier = self.serviceNotificationIdentifier;
         self.serviceNotificationIdentifier = self.serviceNotificationIdentifier + 1;
-        self.updateServiceHandler(serviceNotificationIdentifier, arg0);
+        self.updateServiceHandler(serviceNotificationIdentifier, closure_1);
         arg0(serviceNotificationIdentifier);
       });
     }
@@ -80,26 +82,26 @@ let tmp2 = () => {
       if (null == usesGateway) {
         const serviceNotifications2 = self.serviceNotifications;
         if (serviceNotifications2.has(arg0)) {
-          callback(closure_2[6]).stopRequest(callback3(arg0));
+          outer1_1(outer1_2[6]).stopRequest(outer1_11(arg0));
           const serviceNotifications3 = self.serviceNotifications;
           serviceNotifications3.delete(arg0);
           self.handleChange();
-          const obj2 = callback(closure_2[6]);
+          const obj2 = outer1_1(outer1_2[6]);
         }
       } else {
         const serviceNotifications4 = self.serviceNotifications;
         if (!tmp17(serviceNotifications4.get(arg0), usesGateway)) {
-          const obj = callback(closure_2[6]);
+          const obj = outer1_1(outer1_2[6]);
           if (usesGateway.usesGateway) {
-            obj.setRequestedBy(callback3(arg0));
+            obj.setRequestedBy(outer1_11(arg0));
           } else {
-            obj.stopRequest(callback3(arg0));
+            obj.stopRequest(outer1_11(arg0));
           }
           const serviceNotifications = self.serviceNotifications;
           const result = serviceNotifications.set(arg0, usesGateway);
           self.handleChange();
         }
-        const tmp17 = ForegroundServiceManager(closure_2[7]);
+        tmp17 = ForegroundServiceManager(outer1_2[7]);
       }
     }
   };
@@ -112,78 +114,15 @@ let tmp2 = () => {
   items[5] = {
     key: "isForegroundServiceRunning",
     value(arg0) {
-      const ForegroundServiceModule = obj.ForegroundServiceModule;
+      const ForegroundServiceModule = outer1_8.ForegroundServiceModule;
       ForegroundServiceModule.isServiceRunning(arg0);
     }
   };
   return callback2(ForegroundServiceManager, items);
-}();
+})();
 tmp2 = new tmp2();
-let tmp4 = (arg0) => {
-  class ForegroundServiceLifecycleManager {
-    constructor() {
-      self = this;
-      tmp = closure_6(this, ForegroundServiceLifecycleManager);
-      obj = closure_4(ForegroundServiceLifecycleManager);
-      tmp2 = closure_3;
-      if (closure_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = closure_4;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_4(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  const importDefault = ForegroundServiceLifecycleManager;
-  callback(ForegroundServiceLifecycleManager, arg0);
-  let obj = {
-    key: "_initialize",
-    value() {
-      closure_9.initialize();
-    }
-  };
-  const items = [obj, , , , , ];
-  obj = {
-    key: "_terminate",
-    value() {
-      closure_9.terminate();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "addServiceHandler",
-    value(arg0) {
-      return closure_9.addServiceHandler(arg0);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "updateServiceHandler",
-    value(arg0, arg1) {
-      closure_9.updateServiceHandler(arg0, arg1);
-    }
-  };
-  items[4] = {
-    key: "removeServiceHandler",
-    value(arg0) {
-      closure_9.removeServiceHandler(arg0);
-    }
-  };
-  items[5] = {
-    key: "isForegroundServiceRunning",
-    value(arg0) {
-      const result = closure_9.isForegroundServiceRunning(arg0);
-    }
-  };
-  return callback2(ForegroundServiceLifecycleManager, items);
-}(importDefault(dependencyMap[8]));
+let closure_9 = tmp2;
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/foreground_service/mobile/ForegroundServiceManager.android.tsx");
+let result = require("_inherits").fileFinishedImporting("modules/foreground_service/mobile/ForegroundServiceManager.android.tsx");
 
 export default tmp4;

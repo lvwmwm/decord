@@ -1,18 +1,20 @@
-// Module ID: 7498
-// Function ID: 60132
-// Dependencies: []
+// Module ID: 7503
+// Function ID: 60166
+// Dependencies: [31, 653, 33, 4130, 689, 477, 3842, 3976, 5164, 7504, 7512, 1273, 2]
 
-// Module 7498
-const importAllResult = importAll(dependencyMap[0]);
-const KeyboardThemes = arg1(dependencyMap[1]).KeyboardThemes;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj1 = arg1(dependencyMap[3]);
-let obj = { inputViewContainer: { "Bool(false)": null, "Bool(false)": null } };
-obj = { color: importDefault(dependencyMap[4]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+// Module 7503
+import importAllResult from "result";
+import { KeyboardThemes } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let obj = { inputViewContainer: { paddingVertical: 13, paddingHorizontal: 15 } };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.placeholderText = obj;
-obj1 = { color: importDefault(dependencyMap[4]).colors.TEXT_DEFAULT };
-obj.inputText = obj1;
-let closure_5 = obj1.createStyles(obj);
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
+obj.inputText = _createForOfIteratorHelperLoose;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
 const forwardRefResult = importAllResult.forwardRef((helpText) => {
   let autoCapitalize;
   let autoCorrect;
@@ -62,7 +64,7 @@ const forwardRefResult = importAllResult.forwardRef((helpText) => {
   }
   ({ clearButtonVisibility, autoCapitalize, autoCorrect, showBorder } = helpText);
   if (showBorder === undefined) {
-    let obj = arg1(dependencyMap[5]);
+    let obj = _require(str3[5]);
     showBorder = obj.isAndroid();
   }
   let flag5 = helpText.showCharactersRemaining;
@@ -77,22 +79,22 @@ const forwardRefResult = importAllResult.forwardRef((helpText) => {
   if (flag7 === undefined) {
     flag7 = true;
   }
-  obj = {};
+  obj = { onChange: 0, keyboardAppearance: 0, keyboardType: 0, style: 0, inputTextStyle: 0, value: 0, title: 0, helpText: 0, error: 0, placeholder: 0, secureTextEntry: 0, disabled: 0, multiline: 0, autoFocus: 0, numberOfLines: 0, clearButtonVisibility: 0, autoCapitalize: 0, autoCorrect: 0, showBorder: 0, showCharactersRemaining: 0, enableAndroidSanitizedInputWorkaround: 0, allowRedesignTextInput: 0 };
   let tmp3 = null;
   Object.setPrototypeOf(null);
   let merged = Object.assign(helpText, obj);
-  let arg1;
-  let dependencyMap;
-  let importAllResult;
+  _require = undefined;
+  str3 = undefined;
+  let ref;
   let color = callback();
-  arg1(dependencyMap[6]);
+  _require(str3[6]);
   if (null != keyboardAppearance) {
-    const tmp15 = importAllResult.useContext(arg1(dependencyMap[8]).RedesignCompatContext) && flag7;
-    arg1 = tmp15;
+    const tmp15 = ref.useContext(_require(str3[8]).RedesignCompatContext) && flag7;
+    _require = tmp15;
     let tmp16 = !flag6;
     if (!tmp16) {
-      tmp16 = !arg1(dependencyMap[5]).isAndroid();
-      const obj4 = arg1(dependencyMap[5]);
+      tmp16 = !_require(str3[5]).isAndroid();
+      const obj4 = _require(str3[5]);
     }
     let tmp19 = !tmp16;
     if (tmp16) {
@@ -102,15 +104,13 @@ const forwardRefResult = importAllResult.forwardRef((helpText) => {
       let str2 = keyboardType;
     } else {
       str2 = "visible-password";
-      const obj5 = arg1(dependencyMap[5]);
+      const obj5 = _require(str3[5]);
     }
-    let str3 = importAllResult.useRef(tmp3);
-    dependencyMap = str3;
-    const ref = importAllResult.useRef(tmp3);
-    importAllResult = ref;
-    const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+    str3 = ref.useRef(tmp3);
+    ref = ref.useRef(tmp3);
+    const imperativeHandle = ref.useImperativeHandle(arg1, () => ({
       isFocused() {
-        const current = closure_0 ? closure_1 : closure_2.current;
+        const current = outer1_0 ? outer1_1 : outer1_2.current;
         let isFocusedResult;
         if (null != current) {
           isFocusedResult = current.isFocused();
@@ -118,25 +118,25 @@ const forwardRefResult = importAllResult.forwardRef((helpText) => {
         return true === isFocusedResult;
       },
       focus() {
-        const current = closure_0 ? closure_1 : closure_2.current;
+        const current = outer1_0 ? outer1_1 : outer1_2.current;
         if (null != current) {
           current.focus();
         }
       },
       blur() {
-        const current = closure_0 ? closure_1 : closure_2.current;
+        const current = outer1_0 ? outer1_1 : outer1_2.current;
         if (null != current) {
           current.blur();
         }
       },
       setText(arg0) {
-        const current = closure_0 ? closure_1 : closure_2.current;
+        const current = outer1_0 ? outer1_1 : outer1_2.current;
         if (null != current) {
           current.setText(arg0);
         }
       },
       getText() {
-        const current = closure_0 ? closure_1 : closure_2.current;
+        const current = outer1_0 ? outer1_1 : outer1_2.current;
         let text;
         if (null != current) {
           text = current.getText();
@@ -148,25 +148,25 @@ const forwardRefResult = importAllResult.forwardRef((helpText) => {
         return str;
       },
       measure(arg0) {
-        const current = closure_0 ? closure_1 : closure_2.current;
+        const current = outer1_0 ? outer1_1 : outer1_2.current;
         if (null != current) {
           current.measure(arg0);
         }
       },
       measureInWindow(arg0) {
-        const current = closure_0 ? closure_1 : closure_2.current;
+        const current = outer1_0 ? outer1_1 : outer1_2.current;
         if (null != current) {
           current.measureInWindow(arg0);
         }
       },
       measureLayout(arg0, arg1, arg2) {
-        const current = closure_0 ? closure_1 : closure_2.current;
+        const current = outer1_0 ? outer1_1 : outer1_2.current;
         if (null != current) {
           current.measureLayout(arg0, arg1, arg2);
         }
       }
     }));
-    let TextArea = arg1;
+    let TextArea = _require;
     if (tmp15) {
       if (flag3) {
         TextArea = TextArea(tmp27[9]).TextArea;
@@ -245,17 +245,17 @@ const forwardRefResult = importAllResult.forwardRef((helpText) => {
       }
       obj2.value = str5;
       if (flag3) {
-        clearButtonVisibility = arg1(dependencyMap[11]).ClearButtonVisibility.NEVER;
+        clearButtonVisibility = _require(str3[11]).ClearButtonVisibility.NEVER;
       }
       obj2.clearButtonVisibility = clearButtonVisibility;
       const merged1 = Object.assign(merged);
       return tmp26(TextArea(tmp27[11]).InputView, obj2);
     }
   } else {
-    obj2 = arg1(dependencyMap[7]);
+    obj2 = _require(str3[7]);
     obj2.isThemeDark(tmp7) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   }
 });
-const result = arg1(dependencyMap[12]).fileFinishedImporting("design/void/Form/native/FormInput.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormInput.tsx");
 
 export default forwardRefResult;

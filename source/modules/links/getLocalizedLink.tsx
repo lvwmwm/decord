@@ -1,14 +1,13 @@
-// Module ID: 3740
-// Function ID: 28569
+// Module ID: 3742
+// Function ID: 28574
 // Name: getLocalizedLink
-// Dependencies: []
+// Dependencies: [1212, 2]
 // Exports: default
 
-// Module 3740 (getLocalizedLink)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/links/getLocalizedLink.tsx");
+// Module 3742 (getLocalizedLink)
+const result = require("set").fileFinishedImporting("modules/links/getLocalizedLink.tsx");
 
 export default function getLocalizedLink(arg0) {
-  const formatted = require(dependencyMap[0]).intl.currentLocale.toLowerCase();
+  const formatted = require(1212) /* getSystemLocale */.intl.currentLocale.toLowerCase();
   return formatted in arg0 ? arg0[formatted] : arg0.default;
 };

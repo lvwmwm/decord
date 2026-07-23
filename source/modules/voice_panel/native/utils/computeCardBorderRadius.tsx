@@ -1,13 +1,14 @@
-// Module ID: 15699
-// Function ID: 120008
+// Module ID: 15816
+// Function ID: 122181
 // Name: VoicePanelModes
-// Dependencies: []
+// Dependencies: [10015, 2]
 // Exports: default
 
-// Module 15699 (VoicePanelModes)
-const _module = require(dependencyMap[0]);
-const VoicePanelModes = _module.VoicePanelModes;
-const DEFAULT_BORDER_RADIUS_PIP = _module.DEFAULT_BORDER_RADIUS_PIP;
+// Module 15816 (VoicePanelModes)
+import VoicePanelModes from "VoicePanelModes";
+
+VoicePanelModes = VoicePanelModes.VoicePanelModes;
+const DEFAULT_BORDER_RADIUS_PIP = VoicePanelModes.DEFAULT_BORDER_RADIUS_PIP;
 const fn = function o(arg0) {
   let defaultBorderRadius;
   let focused;
@@ -33,7 +34,6 @@ const fn = function o(arg0) {
 fn.__closure = { VoicePanelModes, DEFAULT_BORDER_RADIUS_PIP };
 fn.__workletHash = 10593808953118;
 fn.__initData = { code: "function computeCardBorderRadius_computeCardBorderRadiusTsx1({id:id,mode:mode,focused:focused,isSelf:isSelf,defaultBorderRadius:defaultBorderRadius}){const{VoicePanelModes,DEFAULT_BORDER_RADIUS_PIP}=this.__closure;if(mode===VoicePanelModes.PANEL){if(focused!=null){if(focused===id){return 0;}else if(isSelf){return DEFAULT_BORDER_RADIUS_PIP;}}return defaultBorderRadius;}if(mode===VoicePanelModes.PIP){return DEFAULT_BORDER_RADIUS_PIP;}return defaultBorderRadius;}" };
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/voice_panel/native/utils/computeCardBorderRadius.tsx");
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/computeCardBorderRadius.tsx");
 
 export default fn;

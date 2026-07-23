@@ -1,9 +1,11 @@
 // Module ID: 822
-// Function ID: 9206
+// Function ID: 9207
 // Name: updateSession
-// Dependencies: []
+// Dependencies: [815, 807]
 
 // Module 822 (updateSession)
+const require = arg1;
+const dependencyMap = arg6;
 function updateSession(ipAddress) {
   if (arguments.length > 1) {
     if (undefined !== arguments[1]) {
@@ -16,13 +18,13 @@ function updateSession(ipAddress) {
       if (!tmp2) {
         ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
       }
-      const tmp = !ipAddress.ipAddress && obj.user.ip_address;
-      const tmp2 = ipAddress.did || obj.did;
+      tmp = !ipAddress.ipAddress && obj.user.ip_address;
+      tmp2 = ipAddress.did || obj.did;
     }
     let timestamp = obj.timestamp;
     if (!timestamp) {
-      timestamp = arg1(arg6[0]).timestampInSeconds();
-      const obj2 = arg1(arg6[0]);
+      timestamp = require(815) /* dateTimestampInSeconds */.timestampInSeconds();
+      const obj2 = require(815) /* dateTimestampInSeconds */;
     }
     ipAddress.timestamp = timestamp;
     if (obj.abnormal_mechanism) {
@@ -76,8 +78,8 @@ function updateSession(ipAddress) {
       if (32 === obj.sid.length) {
         let sid = obj.sid;
       } else {
-        sid = arg1(arg6[1]).uuid4();
-        const obj3 = arg1(arg6[1]);
+        sid = require(807) /* getFirstException */.uuid4();
+        const obj3 = require(807) /* getFirstException */;
       }
       ipAddress.sid = sid;
     }
@@ -94,29 +96,27 @@ arg5.closeSession = function closeSession(status, status2) {
   updateSession(status, {});
 };
 arg5.makeSession = function makeSession(arg0) {
-  let obj = arg1(arg6[0]);
+  obj = obj(815);
   const timestampInSecondsResult = obj.timestampInSeconds();
-  obj = {
-    sid: arg1(arg6[1]).uuid4(),
-    timestamp: timestampInSecondsResult,
-    started: timestampInSecondsResult,
-    toJSON() {
-      const obj = { sid: "" + obj.sid, init: obj.init };
-      obj.started = new Date(1000 * obj.started).toISOString();
-      const date = new Date(1000 * obj.started);
-      obj.timestamp = new Date(1000 * obj.timestamp).toISOString();
-      ({ status: obj.status, errors: obj.errors } = obj);
-      if ("number" === typeof obj.did) {
-        const _HermesInternal = HermesInternal;
-        const combined = "" + tmp.did;
-      }
-      obj.did = combined;
-      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj);
-      obj.attrs = { release: obj.release, environment: obj.environment, ip_address: obj.ipAddress, user_agent: obj.userAgent };
-      return obj;
+  obj = { sid: null, init: true, timestamp: null, started: null, duration: 0, status: "ok", errors: 0, ignoreDuration: false };
+  obj.sid = obj(807).uuid4();
+  obj.timestamp = timestampInSecondsResult;
+  obj.started = timestampInSecondsResult;
+  obj.toJSON = function toJSON() {
+    obj = { sid: "" + obj.sid, init: obj.init };
+    obj.started = new Date(1000 * obj.started).toISOString();
+    const date = new Date(1000 * obj.started);
+    obj.timestamp = new Date(1000 * obj.timestamp).toISOString();
+    ({ status: obj.status, errors: obj.errors } = obj);
+    if ("number" === typeof obj.did) {
+      const _HermesInternal = HermesInternal;
+      const combined = "" + tmp.did;
     }
+    obj.did = combined;
+    ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj);
+    obj.attrs = { release: obj.release, environment: obj.environment, ip_address: obj.ipAddress, user_agent: obj.userAgent };
+    return obj;
   };
-  const arg1 = obj;
   if (arg0) {
     updateSession(obj, arg0);
   }

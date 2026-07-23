@@ -1,20 +1,25 @@
-// Module ID: 4347
-// Function ID: 38562
+// Module ID: 4351
+// Function ID: 38594
 // Name: createMinimalMessageRecord
-// Dependencies: [31, 1917, 1849, 4358, 566, 4360, 2, 31, 4120, 566, 4359, 2, 1348, 1917, 1838, 2, 5, 57]
+// Dependencies: [4352, 3768, 1857, 1194, 3767, 1849, 653, 4353, 4114, 4360, 21, 4365, 4366, 4463, 3712, 4464, 4466, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 4347 (createMinimalMessageRecord)
-import module_31 from "module_31";
+// Module 4351 (createMinimalMessageRecord)
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import closure_6 from "_callSuper";
 import importDefaultResult from "_isNativeReflectConstruct";
-import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled";
-import initialize from "initialize";
-import context from "context";
-import result2 from "result2";
-import _slicedToArray from "_slicedToArray";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import ME from "ME";
 
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_4;
+let closure_5;
+const require = arg1;
 function createMinimalMessageRecord(timestamp) {
   let tmp = closure_5;
   const obj = {};
@@ -37,12 +42,12 @@ function createMinimalMessageRecord(timestamp) {
   if (null == components) {
     components = [];
   }
-  obj["components"] = arg1(dependencyMap[7]).transformComponents(components);
+  obj["components"] = require(4353) /* _createForOfIteratorHelperLoose */.transformComponents(components);
   const NON_PARSED = constants3.NON_PARSED;
   if (NON_PARSED.has(timestamp.type)) {
     let items = [];
   } else {
-    items = importDefault(dependencyMap[8])(timestamp.content);
+    items = importDefault(4114)(timestamp.content);
   }
   obj["codedLinks"] = items;
   tmp = new tmp(obj);
@@ -78,7 +83,7 @@ function createMessageRecord(message, message) {
     mention_games = [];
   }
   if (null == message.author) {
-    let user = importDefaultResult;
+    let user = closure_14;
   } else if (null != message.webhook_id) {
     const prototype2 = importDefaultResult.prototype;
     user = new importDefaultResult(message.author);
@@ -90,14 +95,14 @@ function createMessageRecord(message, message) {
     }
   }
   obj = { channel_id: message.channel_id, author: user };
-  const messageAuthor = message(dependencyMap[9]).getMessageAuthor(obj);
+  const messageAuthor = require(4360) /* useNullableMessageAuthor */.getMessageAuthor(obj);
   let gift_info;
   if (null != message) {
     gift_info = message.gift_info;
   }
   let fromServer = null;
   if (null != message.interaction) {
-    fromServer = module_31.createFromServer(message.interaction);
+    fromServer = _isNativeReflectConstruct.createFromServer(message.interaction);
   }
   if (message.type === constants2.THREAD_STARTER_MESSAGE) {
     const referenced_message = message.referenced_message;
@@ -118,7 +123,7 @@ function createMessageRecord(message, message) {
     }
     str = "";
     tmp15 = content;
-    const obj5 = importDefault(dependencyMap[10]);
+    obj5 = importDefault(21);
   }
   let tmp19;
   if (message.type === constants2.PREMIUM_GROUP_INVITE) {
@@ -128,7 +133,7 @@ function createMessageRecord(message, message) {
     }
     str = "";
     tmp19 = content1;
-    const obj6 = importDefault(dependencyMap[10]);
+    obj6 = importDefault(21);
   }
   let tmp23 = closure_6;
   obj = {};
@@ -137,20 +142,20 @@ function createMessageRecord(message, message) {
   const merged2 = Object.assign(obj1.toJS());
   obj["author"] = user;
   obj["webhookId"] = message.webhook_id;
-  let isBlockedForMessageResult = initialize.isBlockedForMessage(message);
+  let isBlockedForMessageResult = closure_9.isBlockedForMessage(message);
   if (!isBlockedForMessageResult) {
     let isBlockedResult = null != tmp13;
     if (isBlockedResult) {
-      isBlockedResult = initialize.isBlocked(tmp13);
+      isBlockedResult = closure_9.isBlocked(tmp13);
     }
     isBlockedForMessageResult = isBlockedResult;
   }
   obj["blocked"] = isBlockedForMessageResult;
-  let isIgnoredForMessageResult = initialize.isIgnoredForMessage(message);
+  let isIgnoredForMessageResult = closure_9.isIgnoredForMessage(message);
   if (!isIgnoredForMessageResult) {
     let isIgnoredResult = null != tmp13;
     if (isIgnoredResult) {
-      isIgnoredResult = initialize.isIgnored(tmp13);
+      isIgnoredResult = closure_9.isIgnored(tmp13);
     }
     isIgnoredForMessageResult = isIgnoredResult;
   }
@@ -161,17 +166,17 @@ function createMessageRecord(message, message) {
   obj["mentionChannels"] = mention_channels;
   obj["mentionGames"] = mention_games;
   obj["messageReference"] = message.message_reference;
-  const obj3 = message(dependencyMap[9]);
+  const obj3 = require(4360) /* useNullableMessageAuthor */;
   obj1 = { userId: store.getId(), channelId: message.channel_id, mentionEveryone: tmp33 };
   const mention_everyone = message.mention_everyone;
   obj1.mentionUsers = mapped;
   obj1.mentionRoles = mention_roles;
-  obj["mentioned"] = message(dependencyMap[11]).isMentioned(obj1);
-  const obj8 = message(dependencyMap[11]);
-  const tmp33 = null != mention_everyone && mention_everyone;
-  const obj10 = message(dependencyMap[12]);
-  const isGiftCodeEmbedResult = message(dependencyMap[12]).isGiftCodeEmbed(message);
-  const findGiftCodes = message(dependencyMap[12]).findGiftCodes;
+  obj["mentioned"] = require(4365) /* isMentioned */.isMentioned(obj1);
+  const obj8 = require(4365) /* isMentioned */;
+  tmp33 = null != mention_everyone && mention_everyone;
+  const obj10 = require(4366) /* unambiguousRegex */;
+  const isGiftCodeEmbedResult = require(4366) /* unambiguousRegex */.isGiftCodeEmbed(message);
+  const findGiftCodes = require(4366) /* unambiguousRegex */.findGiftCodes;
   if (isGiftCodeEmbedResult) {
     let url;
     if (null != message) {
@@ -201,7 +206,7 @@ function createMessageRecord(message, message) {
   obj["purchaseNotification"] = message.purchase_notification;
   let tmp39;
   if (null != message.poll) {
-    tmp39 = importDefault(dependencyMap[13])(message.poll);
+    tmp39 = importDefault(4463)(message.poll);
   }
   obj["poll"] = tmp39;
   obj["sharedClientTheme"] = message.shared_client_theme;
@@ -221,12 +226,12 @@ function transformMessageCall(call, timestamp) {
     if (null != call.ended_timestamp) {
       const _Date = Date;
       const date = new Date(call.ended_timestamp);
-      tmp = importDefault(dependencyMap[14])(date);
-      const tmp4 = importDefault(dependencyMap[14]);
+      tmp = importDefault(3712)(date);
+      const tmp4 = importDefault(3712);
     }
     let durationResult = null;
     if (null != tmp) {
-      let obj = importDefault(dependencyMap[14]);
+      let obj = importDefault(3712);
       durationResult = obj.duration(tmp.diff(timestamp));
     }
     obj = { participants: call.participants, endedTimestamp: tmp, duration: durationResult };
@@ -236,13 +241,13 @@ function transformMessageCall(call, timestamp) {
   }
 }
 function transformEmbeds(embeds) {
-  const arg1 = embeds;
+  const _require = embeds;
   if (null == embeds.embeds) {
     return [];
   } else {
     embeds = embeds.embeds;
-    const mapped = embeds.map((self) => self(closure_2[15]).sanitizeEmbed(self.channel_id, self.id, self));
-    return arg1(dependencyMap[15]).mergeEmbedsOnURL(mapped);
+    const mapped = embeds.map((footer) => embeds(outer1_2[15]).sanitizeEmbed(embeds.channel_id, embeds.id, footer));
+    return _require(4464).mergeEmbedsOnURL(mapped);
   }
 }
 function transformReactions(arg0, results) {
@@ -262,9 +267,9 @@ function transformReactions(arg0, results) {
     if (null != results) {
       const answer_counts = results.answer_counts;
       mapped = answer_counts.map((me_vote) => {
-        let obj = { count_details: obj, me_vote: me_vote.me_voted };
+        obj = { count_details: obj, me_vote: me_vote.me_voted };
         obj = { vote: me_vote.count };
-        obj = { id: str.toString() };
+        obj = { id: me_vote.id.toString(), name: "", animated: false };
         obj.emoji = obj;
         obj.me = false;
         obj.me_burst = false;
@@ -318,16 +323,16 @@ function transformMessageSnapshots(message_snapshots) {
   } else {
     message_snapshots = message_snapshots.message_snapshots;
     items = message_snapshots.map((message) => {
-      const obj = { message: callback(message.message), moderator_report: message.moderator_report };
-      return new closure_4({ message: callback(message.message), moderator_report: message.moderator_report });
+      const obj = { message: outer1_15(message.message), moderator_report: message.moderator_report };
+      return new outer1_4({ message: outer1_15(message.message), moderator_report: message.moderator_report });
     });
   }
   return items;
 }
-({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: closure_5 } = _isNativeReflectConstruct);
-({ MessageFlags: closure_11, MessageTypes: closure_12, MessageTypesSets: closure_13 } = result2);
-importDefaultResult = new importDefaultResult({ -70491014: null, 72461115: null });
-const result = _slicedToArray.fileFinishedImporting("modules/messages/MessageRecordUtils.tsx");
+({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: closure_5 } = _callSuper);
+({ MessageFlags: closure_11, MessageTypes: closure_12, MessageTypesSets: closure_13 } = ME);
+importDefaultResult = new importDefaultResult({ id: "???", username: "???" });
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/MessageRecordUtils.tsx");
 
 export { createMessageRecord };
 export const updateServerMessage = function updateServerMessage(message, message2) {
@@ -397,8 +402,8 @@ export const updateMessageRecord = function updateMessageRecord(message, message
     }
     let result10 = result9;
     if (null != message2.components) {
-      result10 = result9.set("components", message2(dependencyMap[7]).transformComponents(message2.components));
-      const obj12 = message2(dependencyMap[7]);
+      result10 = result9.set("components", require(4353) /* _createForOfIteratorHelperLoose */.transformComponents(message2.components));
+      const obj12 = require(4353) /* _createForOfIteratorHelperLoose */;
     }
     let result11 = result10;
     if (null != message2.role_subscription_data) {
@@ -415,7 +420,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
     }
     let result13 = result12;
     if (null != message2.poll) {
-      result13 = result12.set("poll", importDefault(dependencyMap[13])(message2.poll));
+      result13 = result12.set("poll", importDefault(4463)(message2.poll));
     }
     let result14 = result13;
     let flag = false;
@@ -437,14 +442,14 @@ export const updateMessageRecord = function updateMessageRecord(message, message
     let result17 = result16;
     if (flag) {
       obj = { message: result16, userId: store.getId() };
-      result17 = result16.set("mentioned", importDefault(dependencyMap[11])(obj));
-      const tmp20 = importDefault(dependencyMap[11]);
+      result17 = result16.set("mentioned", importDefault(4365)(obj));
+      const tmp20 = importDefault(4365);
     }
     return result17;
   }
 };
 export const canEditMessageWithStickers = function canEditMessageWithStickers(content) {
-  let tmp = 0 === arg1(dependencyMap[16]).getMessageStickers(content).length;
+  let tmp = 0 === require(4466) /* getStickerPackPreviewSticker */.getMessageStickers(content).length;
   if (!tmp) {
     tmp = "" !== content.content;
   }

@@ -1,41 +1,42 @@
-// Module ID: 14631
-// Function ID: 110331
+// Module ID: 14746
+// Function ID: 112495
 // Name: isFirstStep
-// Dependencies: []
+// Dependencies: [31, 1194, 5592, 14731, 14730, 566, 5590, 2]
 // Exports: default
 
-// Module 14631 (isFirstStep)
+// Module 14746 (isFirstStep)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { resetRegistration } from "useRegistrationUIStore";
+
+const require = arg1;
 function isFirstStep(arg0) {
-  return arg0 === arg1(dependencyMap[4]).getRegistrationSteps()[1];
+  return arg0 === require(14730) /* getRegistrationSteps */.getRegistrationSteps()[1];
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const resetRegistration = arg1(dependencyMap[3]).resetRegistration;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/auth/native/useInitialRegistrationStep.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/auth/native/useInitialRegistrationStep.tsx");
 
 export default function useInitialRegistrationStep(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => authenticationConsentRequired.getAuthenticationConsentRequired());
-  const importDefault = stateFromStores;
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getAuthenticationConsentRequired());
   const items1 = [stateFromStores, arg0];
   const effect = React.useEffect(() => {
-    let tmp = callback(arg0);
+    let tmp = outer1_7(closure_0);
     if (tmp) {
       tmp = null == stateFromStores;
     }
     if (tmp) {
-      const locationMetadata = stateFromStores(closure_2[6]).getLocationMetadata();
-      const obj = stateFromStores(closure_2[6]);
+      const locationMetadata = stateFromStores(outer1_2[6]).getLocationMetadata();
+      const obj = stateFromStores(outer1_2[6]);
     }
   }, items1);
   const items2 = [arg0];
-  const effect1 = React.useEffect(() => callback(arg0) ? () => {
-    callback2();
-    if (!authenticated.isAuthenticated()) {
-      callback(closure_2[6]).loginReset();
-      const obj = callback(closure_2[6]);
+  const effect1 = React.useEffect(() => outer1_7(closure_0) ? (() => {
+    outer2_6();
+    if (!outer2_4.isAuthenticated()) {
+      stateFromStores(outer2_2[6]).loginReset();
+      const obj = stateFromStores(outer2_2[6]);
     }
-  } : undefined, items2);
+  }) : undefined, items2);
 };

@@ -1,24 +1,22 @@
-// Module ID: 12006
-// Function ID: 92788
+// Module ID: 12120
+// Function ID: 94939
 // Name: useUserProfileConnections
-// Dependencies: []
+// Dependencies: [31, 6856, 6735, 566, 4814, 2]
 // Exports: default
 
-// Module 12006 (useUserProfileConnections)
-const useMemo = require(dependencyMap[0]).useMemo;
-let closure_4 = importDefault(dependencyMap[1]);
+// Module 12120 (useUserProfileConnections)
+import { useMemo } from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 let closure_5 = [];
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/user_profile/hooks/useUserProfileConnections.tsx");
+const result = require("usePlatformAllowed").fileFinishedImporting("modules/user_profile/hooks/useUserProfileConnections.tsx");
 
 export default function useUserProfileConnections(arg0) {
-  const require = arg0;
-  const platformAllowed = require(dependencyMap[2]).usePlatformAllowed({ forUserProfile: true });
-  const importDefault = platformAllowed;
-  const obj = require(dependencyMap[2]);
-  const items = [closure_4];
-  const stateFromStores = require(dependencyMap[3]).useStateFromStores(items, () => userProfile.getUserProfile(arg0));
-  const dependencyMap = stateFromStores;
+  const _require = arg0;
+  const platformAllowed = _require(stateFromStores[2]).usePlatformAllowed({ forUserProfile: true });
+  const obj = _require(stateFromStores[2]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = _require(stateFromStores[3]).useStateFromStores(items, () => outer1_4.getUserProfile(closure_0));
   let connectedAccounts;
   if (null != stateFromStores) {
     connectedAccounts = stateFromStores.connectedAccounts;
@@ -30,19 +28,19 @@ export default function useUserProfileConnections(arg0) {
       connectedAccounts = stateFromStores.connectedAccounts;
     }
     if (null == connectedAccounts) {
-      let found = closure_5;
+      let found = outer1_5;
     } else {
       const connectedAccounts1 = stateFromStores.connectedAccounts;
       found = connectedAccounts1.filter((type) => {
         type = type.type;
-        const value = callback(closure_2[4]).get(type);
+        const value = platformAllowed(stateFromStores[4]).get(type);
         let isSupportedResult = null != value;
         if (isSupportedResult) {
-          isSupportedResult = callback(closure_2[4]).isSupported(type);
-          const obj2 = callback(closure_2[4]);
+          isSupportedResult = platformAllowed(stateFromStores[4]).isSupported(type);
+          const obj2 = platformAllowed(stateFromStores[4]);
         }
         if (isSupportedResult) {
-          isSupportedResult = callback(value);
+          isSupportedResult = outer1_1(value);
         }
         return isSupportedResult;
       });

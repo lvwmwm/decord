@@ -1,17 +1,17 @@
 // Module ID: 708
-// Function ID: 8721
+// Function ID: 8722
 // Name: memoize
-// Dependencies: []
+// Dependencies: [709]
 
 // Module 708 (memoize)
 function memoize(arg0, arg1) {
-  const require = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
   if ("function" === typeof arg0) {
     function memoized() {
       const self = this;
-      if (arg1) {
-        let applyResult = arg1(...arguments);
+      if (callback2) {
+        let applyResult = callback2(...arguments);
       } else {
         applyResult = arguments[0];
       }
@@ -19,24 +19,23 @@ function memoize(arg0, arg1) {
       if (cache.has(applyResult)) {
         return cache.get(applyResult);
       } else {
-        const applyResult1 = arg0(...arguments);
+        const applyResult1 = callback(...arguments);
         memoized.cache = cache.set(applyResult, applyResult1) || cache;
         return applyResult1;
       }
     }
-    const memoize = memoized;
-    let Cache = memoize.Cache;
+    let Cache = memoized.Cache;
     if (!Cache) {
-      Cache = require(dependencyMap[0]);
+      Cache = _require(709);
     }
     const prototype = Cache.prototype;
-    const cache = new Cache();
+    let cache = new Cache();
     memoized.cache = cache;
     return memoized;
   }
   const typeError = new TypeError("Expected a function");
   throw typeError;
 }
-memoize.Cache = require(dependencyMap[0]);
+memoize.Cache = require("MapCache");
 
 export default memoize;

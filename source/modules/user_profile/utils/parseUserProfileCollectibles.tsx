@@ -1,53 +1,53 @@
-// Module ID: 6873
-// Function ID: 54352
+// Module ID: 6878
+// Function ID: 54386
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1876, 2]
 // Exports: default
 
-// Module 6873 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6878 (_createForOfIteratorHelperLoose)
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +58,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,8 +84,7 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/user_profile/utils/parseUserProfileCollectibles.tsx");
+const result = require("set").fileFinishedImporting("modules/user_profile/utils/parseUserProfileCollectibles.tsx");
 
 export default function parseUserProfileCollectibles(collectibles) {
   let iter;
@@ -117,9 +116,9 @@ export default function parseUserProfileCollectibles(collectibles) {
         }
         obj.expiresAt = date;
         let arr = items.push(obj);
-        let tmp6 = closure_0;
-        let tmp7 = closure_1;
-        if (value.type === closure_0(closure_1[0]).CollectiblesItemType.PROFILE_EFFECT) {
+        let tmp6 = require;
+        let tmp7 = dependencyMap;
+        if (value.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
           obj = { skuId: value.sku_id };
           let rounded;
           if (null != value.expires_at) {
@@ -135,15 +134,15 @@ export default function parseUserProfileCollectibles(collectibles) {
           let tmp11 = obj;
           let tmp12 = tmp18;
         } else {
-          let tmp24 = closure_0;
-          let tmp25 = closure_1;
+          let tmp24 = require;
+          let tmp25 = dependencyMap;
           tmp11 = tmp17;
           tmp12 = tmp18;
-          if (value.type === closure_0(closure_1[0]).CollectiblesItemType.PROFILE_FRAME) {
+          if (value.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME) {
             let obj1 = { skuId: value.sku_id };
-            let tmp26 = closure_0;
-            let tmp27 = closure_1;
-            obj1.type = closure_0(closure_1[0]).CollectiblesItemType.PROFILE_FRAME;
+            let tmp26 = require;
+            let tmp27 = dependencyMap;
+            obj1.type = require(1876) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
             let date2;
             if (null != value.expires_at) {
               let _Date2 = Date;
@@ -157,8 +156,8 @@ export default function parseUserProfileCollectibles(collectibles) {
           }
         }
         iter = tmp22();
-        let tmp17 = tmp11;
-        let tmp18 = tmp12;
+        tmp17 = tmp11;
+        tmp18 = tmp12;
         iter2 = iter;
         tmp19 = tmp11;
         tmp20 = tmp12;

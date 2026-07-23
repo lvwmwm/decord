@@ -1,41 +1,49 @@
-// Module ID: 11823
-// Function ID: 91678
+// Module ID: 11833
+// Function ID: 91727
 // Name: OrbCheckoutErrorCard
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4541, 7507, 4126, 11813, 1212, 11815, 11832, 5625, 5459, 4066, 11834, 4543, 3976, 8708, 2]
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
 
-// Module 11823 (OrbCheckoutErrorCard)
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ActivityIndicator: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { topRowWrapper: { "Bool(false)": true, "Bool(false)": true }, rowWrapper: { 1858522211: true, 1633627985: true } };
-obj = { borderRadius: importDefault(dependencyMap[4]).radii.lg, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, padding: importDefault(dependencyMap[4]).space.PX_16 };
-obj.rowDetailsContainer = obj;
-obj.orbPaymentSourceDetails = { "Null": "<string:3435973836>", "Null": "<string:1903247380>", "Null": "r" };
-const tmp3 = arg1(dependencyMap[2]);
-obj.sectionTitle = { marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
-const obj1 = { marginBottom: importDefault(dependencyMap[4]).space.PX_8 };
-obj.spinner = { paddingVertical: importDefault(dependencyMap[4]).space.PX_16, alignItems: "center" };
-obj.disclaimer = { opacity: 0.5 };
-const obj2 = { paddingVertical: importDefault(dependencyMap[4]).space.PX_16, alignItems: "center" };
-obj.errorCard = { borderRadius: importDefault(dependencyMap[4]).radii.sm, padding: importDefault(dependencyMap[4]).space.PX_12, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_CRITICAL };
-let closure_8 = obj.createStyles(obj);
-const obj3 = { borderRadius: importDefault(dependencyMap[4]).radii.sm, padding: importDefault(dependencyMap[4]).space.PX_12, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_CRITICAL };
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/virtual_currency/checkout/native/OrbCheckoutModalComponents.tsx");
+// Module 11833 (OrbCheckoutErrorCard)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-export const OrbCheckoutErrorCard = function OrbCheckoutErrorCard(children) {
-  let obj = { style: callback3().errorCard };
-  obj = {};
-  const items = [callback(arg1(dependencyMap[6]).CircleErrorIcon, { "Bool(false)": "%JSONStringify%", "Bool(false)": "isArrayBuffer" }), callback(arg1(dependencyMap[7]).Text, { children: children.error })];
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_4, ActivityIndicator: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { topRowWrapper: { width: "100%", marginBottom: 10 }, rowWrapper: { width: "100%", marginVertical: 10 } };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.rowDetailsContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.orbPaymentSourceDetails = { flexDirection: "row", justifyContent: "space-between", alignItems: "center" };
+_createForOfIteratorHelperLoose.sectionTitle = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.spinner = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center" };
+_createForOfIteratorHelperLoose.disclaimer = { opacity: 0.5 };
+let obj2 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center" };
+_createForOfIteratorHelperLoose.errorCard = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_CRITICAL };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj3 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_CRITICAL };
+const result = require("jsxProd").fileFinishedImporting("modules/virtual_currency/checkout/native/OrbCheckoutModalComponents.tsx");
+
+export const OrbCheckoutErrorCard = function OrbCheckoutErrorCard(error) {
+  let obj = { style: _createForOfIteratorHelperLoose().errorCard };
+  obj = { direction: "horizontal", spacing: 8, align: "flex-start" };
+  const items = [callback(require(7507) /* CircleErrorIcon */.CircleErrorIcon, { size: "sm", color: "mobile-text-heading-primary" }), ];
+  obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: error.error };
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
-  obj.children = callback2(arg1(dependencyMap[5]).Stack, obj);
+  obj.children = callback2(require(4541) /* Stack */.Stack, obj);
   return callback(closure_4, obj);
 };
 export const OrbCheckoutOrderSummary = function OrbCheckoutOrderSummary(product) {
   product = product.product;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   if (null == product) {
     let obj = {};
     const items = [, ];
@@ -46,57 +54,56 @@ export const OrbCheckoutOrderSummary = function OrbCheckoutOrderSummary(product)
     let tmp5 = callback(closure_4, obj);
   } else {
     obj = { product, useOrbPrice: true };
-    tmp5 = callback(importDefault(dependencyMap[8]), obj);
+    tmp5 = callback(importDefault(11813), obj);
   }
   const obj1 = { style: tmp.topRowWrapper };
-  const obj2 = { cachedAt: "scalar", edpbxy: 8, style: tmp.sectionTitle };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj2.children = intl.string(arg1(dependencyMap[9]).t.hws7bC);
-  const items1 = [callback(arg1(dependencyMap[7]).Text, obj2), tmp5];
+  const obj2 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: tmp.sectionTitle };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl.string(require(1212) /* getSystemLocale */.t.hws7bC);
+  const items1 = [callback(require(4126) /* Text */.Text, obj2), tmp5];
   obj1.children = items1;
   return callback2(closure_4, obj1);
 };
 export const OrbCheckoutPaymentSourceDetails = function OrbCheckoutPaymentSourceDetails(orbAmount) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.rowWrapper };
-  obj = { cachedAt: "scalar", edpbxy: 8, style: tmp.sectionTitle };
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.children = intl.string(arg1(dependencyMap[9]).t.zLch/S);
-  const items = [callback(arg1(dependencyMap[7]).Text, obj), ];
+  obj = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: tmp.sectionTitle };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t["zLch/S"]);
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
   obj = { style: items1 };
-  const items1 = [, ];
+  items1 = [, ];
   ({ rowDetailsContainer: arr2[0], orbPaymentSourceDetails: arr2[1] } = tmp);
-  const obj1 = {};
-  const intl2 = arg1(dependencyMap[9]).intl;
-  obj1.children = intl2.string(arg1(dependencyMap[9]).t.y0WGqP);
-  const items2 = [callback(arg1(dependencyMap[7]).Text, obj1), callback(importDefault(dependencyMap[10]), { orbAmount: orbAmount.orbBalance })];
+  const obj1 = { variant: "text-md/medium", color: "mobile-text-heading-primary" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.y0WGqP);
+  const items2 = [callback(require(4126) /* Text */.Text, obj1), callback(importDefault(11815), { orbAmount: orbAmount.orbBalance })];
   obj.children = items2;
   items[1] = callback2(closure_4, obj);
   obj.children = items;
   return callback2(closure_4, obj);
 };
 export const OrbCheckoutLegalFinePrint = function OrbCheckoutLegalFinePrint() {
-  let obj = arg1(dependencyMap[11]);
-  const skuId = obj.useOrbCheckoutModalContext().skuId;
-  const arg1 = skuId;
+  let obj = skuId(11832);
+  skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
-  const memo = React.useMemo(() => skuId(closure_2[12]).getOrbCheckoutDisclaimerMessage(skuId), items);
-  obj = { "Null": null, "Null": "Path 3", alignItems: "ADBE Vector Shape - Group", style: callback3().disclaimer, children: memo };
-  return callback(arg1(dependencyMap[13]).TextWithIOSLinkWorkaround, obj);
+  const memo = React.useMemo(() => skuId(outer1_2[12]).getOrbCheckoutDisclaimerMessage(skuId), items);
+  obj = { style: _createForOfIteratorHelperLoose().disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: memo };
+  return callback(skuId(5459).TextWithIOSLinkWorkaround, obj);
 };
 export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPress) {
   let isRedeeming;
   let orbProductContext;
-  const tmp = importDefault(dependencyMap[14])();
-  let obj = arg1(dependencyMap[11]);
+  const tmp = importDefault(4066)();
+  let obj = require(11832) /* useOrbCheckoutModalContextProvider */;
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   ({ isRedeeming, orbProductContext } = orbCheckoutModalContext);
-  const virtualCurrencyBalance = arg1(dependencyMap[15]).useVirtualCurrencyBalance();
+  const virtualCurrencyBalance = require(11834) /* useVirtualCurrencyBalance */.useVirtualCurrencyBalance();
   if (null != orbProductContext) {
     const orbPriceAmount = orbProductContext.orbPriceAmount;
   }
   obj = {};
-  const obj2 = arg1(dependencyMap[15]);
+  const obj2 = require(11834) /* useVirtualCurrencyBalance */;
   const tmp4 = closure_6;
   let str = "primary";
   if (obj4.isThemeDark(tmp)) {
@@ -104,17 +111,17 @@ export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPr
   }
   obj.variant = str;
   obj.size = "lg";
-  const intl = arg1(dependencyMap[9]).intl;
-  obj.text = intl.string(arg1(dependencyMap[9]).t.zLch/S);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl.string(require(1212) /* getSystemLocale */.t["zLch/S"]);
   obj = { size: "md" };
-  const obj4 = arg1(dependencyMap[17]);
+  obj4 = require(3976) /* AccessibilityAnnouncer */;
   const tmp5 = closure_6;
   let str2 = "control-primary-text-default";
   if (obj6.isThemeDark(tmp)) {
     str2 = "control-overlay-primary-text-default";
   }
   obj.color = str2;
-  obj.icon = tmp5(arg1(dependencyMap[18]).OrbsIcon, obj);
+  obj.icon = tmp5(require(8708) /* OrbsIcon */.OrbsIcon, obj);
   obj.iconPosition = "start";
   obj.loading = isRedeeming;
   obj.onPress = onPress.onPress;
@@ -128,5 +135,5 @@ export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPr
     isRedeeming = virtualCurrencyBalance < orbPriceAmount;
   }
   obj.disabled = isRedeeming;
-  return tmp4(arg1(dependencyMap[16]).Button, obj);
+  return tmp4(require(4543) /* Button */.Button, obj);
 };

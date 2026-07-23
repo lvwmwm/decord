@@ -1,15 +1,16 @@
-// Module ID: 15369
-// Function ID: 117035
+// Module ID: 15486
+// Function ID: 119209
 // Name: View
-// Dependencies: []
+// Dependencies: [27, 477, 15487, 2]
 
-// Module 15369 (View)
-let View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[1]);
-if (_module.isAndroid()) {
-  View = importDefault(dependencyMap[2]);
+// Module 15486 (View)
+import { View } from "get ActivityIndicator";
+import set from "set";
+import set from "__INTERNAL_VIEW_CONFIG";
+
+if (set.isAndroid()) {
+  View = require("__INTERNAL_VIEW_CONFIG");
 }
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewTarget.tsx");
+const result = set.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewTarget.tsx");
 
 export default View;

@@ -1,11 +1,10 @@
-// Module ID: 12536
-// Function ID: 96324
+// Module ID: 12650
+// Function ID: 98480
 // Name: RewardProgram
-// Dependencies: []
+// Dependencies: [2, 12651, 12652]
 
-// Module 12536 (RewardProgram)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/rewards/ProgramRewardsTypes.tsx");
+// Module 12650 (RewardProgram)
+const result = require("ProgramCurrentState").fileFinishedImporting("modules/rewards/ProgramRewardsTypes.tsx");
 
-export const RewardProgram = require(dependencyMap[1]).RewardProgram;
-export const ProgramCurrentState = require(dependencyMap[2]).ProgramCurrentState;
+export const RewardProgram = require("RewardProgram").RewardProgram;
+export const ProgramCurrentState = require("ProgramCurrentState").ProgramCurrentState;

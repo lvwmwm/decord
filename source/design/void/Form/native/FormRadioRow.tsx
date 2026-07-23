@@ -1,13 +1,15 @@
-// Module ID: 7512
-// Function ID: 60181
+// Module ID: 7517
+// Function ID: 60215
 // Name: FormRadioRow
-// Dependencies: []
+// Dependencies: [31, 33, 5164, 3848, 7518, 5158, 5180, 2]
 // Exports: default
 
-// Module 7512 (FormRadioRow)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/void/Form/native/FormRadioRow.tsx");
+// Module 7517 (FormRadioRow)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("context").fileFinishedImporting("design/void/Form/native/FormRadioRow.tsx");
 
 export default function FormRadioRow(arg0) {
   let align;
@@ -21,17 +23,17 @@ export default function FormRadioRow(arg0) {
     align = "left";
   }
   ({ leading, onPress } = arg0);
-  let obj = { alignSelf: "Text", justifyContent: "resizeMode", alignItems: "from", 758616325: "Array", -1724212937: "isArray", 592615367: "braintreemasterpasslanding" };
+  let obj = { selected: 0, align: 0, leading: 0, value: 0, onPress: 0, style: 0 };
   ({ value, style } = arg0);
   Object.setPrototypeOf(null);
   const merged = Object.assign(arg0, obj);
-  const context = React.useContext(arg1(dependencyMap[2]).RedesignCompatContext);
-  let obj1 = arg1(dependencyMap[3]);
+  const context = React.useContext(require(5164) /* context */.RedesignCompatContext);
+  let obj1 = require(3848) /* useCheckboxA11yNative */;
   const radioA11yNative = obj1.useRadioA11yNative({ selected });
   if (context) {
     obj = { icon: leading, value, legacyCompat_selected: selected, legacyCompat_onPress: onPress };
     const merged1 = Object.assign(merged);
-    let tmp7Result = tmp7(arg1(dependencyMap[4]).TableRadioRow, obj);
+    let tmp7Result = tmp7(require(7518) /* TableRadioRow */.TableRadioRow, obj);
   } else {
     obj = {};
     const merged2 = Object.assign(merged);
@@ -42,17 +44,17 @@ export default function FormRadioRow(arg0) {
     let tmp14 = null;
     if ("right" === align) {
       obj1 = { selected };
-      tmp14 = jsx(importDefault(dependencyMap[6]), obj1);
+      tmp14 = jsx(importDefault(5180), { selected });
     }
     obj["trailing"] = tmp14;
     let tmp18 = leading;
     if ("left" === align) {
       const obj2 = { selected };
-      tmp18 = jsx(importDefault(dependencyMap[6]), obj2);
+      tmp18 = jsx(importDefault(5180), { selected });
     }
     obj["leading"] = tmp18;
-    tmp7Result = tmp7(importDefault(dependencyMap[5]), obj);
-    const tmp10 = importDefault(dependencyMap[5]);
+    tmp7Result = tmp7(importDefault(5158), obj);
+    const tmp10 = importDefault(5158);
   }
   return tmp7Result;
 };

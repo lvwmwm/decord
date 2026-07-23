@@ -1,5 +1,5 @@
 // Module ID: 3704
-// Function ID: 28076
+// Function ID: 28079
 // Name: prop
 // Dependencies: []
 
@@ -10,14 +10,14 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, narrow: {}, short: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null } };
+    obj = { long: { end: "{0} ve {1}", middle: "{0}, {1}", pair: "{0} ve {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} ve {1}", middle: "{0}, {1}", pair: "{0} ve {1}", start: "{0}, {1}" } };
     obj.conjunction = obj;
-    const obj1 = { long: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" }, narrow: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" }, short: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" } };
+    const obj1 = { long: { end: "{0} veya {1}", middle: "{0}, {1}", pair: "{0} veya {1}", start: "{0}, {1}" }, narrow: { end: "{0} veya {1}", middle: "{0}, {1}", pair: "{0} veya {1}", start: "{0}, {1}" }, short: { end: "{0} veya {1}", middle: "{0}, {1}", pair: "{0} veya {1}", start: "{0}, {1}" } };
     obj.disjunction = obj1;
-    const obj2 = { long: {}, narrow: {}, short: {} };
+    const obj2 = { long: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" } };
     obj.unit = obj2;
     obj.data = obj;
-    obj.locale = "vi";
+    obj.locale = "tr";
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null }, narrow: {}, short: { accessibilityHint: null, legacyCompat_selected: null, legacyCompat_onPress: null, eventTarget: null } }, disjunction: { long: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" }, narrow: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" }, short: { accessibilityHint: "H:mm", legacyCompat_selected: "H:mm:ss", legacyCompat_onPress: "D.MM.YYYY", eventTarget: "D MMMM YYYY" } }, unit: { long: {}, narrow: {}, short: {} } }, locale: "vi" });
+prop.push({ data: { conjunction: { long: { end: "{0} ve {1}", middle: "{0}, {1}", pair: "{0} ve {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} ve {1}", middle: "{0}, {1}", pair: "{0} ve {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} veya {1}", middle: "{0}, {1}", pair: "{0} veya {1}", start: "{0}, {1}" }, narrow: { end: "{0} veya {1}", middle: "{0}, {1}", pair: "{0} veya {1}", start: "{0}, {1}" }, short: { end: "{0} veya {1}", middle: "{0}, {1}", pair: "{0} veya {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" } } }, locale: "tr" });

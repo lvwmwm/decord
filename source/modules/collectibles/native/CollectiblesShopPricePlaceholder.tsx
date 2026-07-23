@@ -1,37 +1,38 @@
-// Module ID: 8721
-// Function ID: 69040
+// Module ID: 8728
+// Function ID: 69081
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 3991, 4131, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 8721 (CollectiblesShopPricePlaceholder)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let obj = arg1(dependencyMap[2]);
-obj = {};
-obj = { isDisabled: null, disabledReason: "Group 11", borderRadius: importDefault(dependencyMap[3]).radii.xs, backgroundColor: importDefault(dependencyMap[3]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
-obj.skeletonContainer = obj;
-let closure_5 = obj.createStyles(obj);
+// Module 8728 (CollectiblesShopPricePlaceholder)
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { height: 16, flex: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+_createForOfIteratorHelperLoose.skeletonContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_6 = { code: "function CollectiblesShopPricePlaceholderTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/collectibles/native/CollectiblesShopPricePlaceholder.tsx");
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/native/CollectiblesShopPricePlaceholder.tsx");
 
 export const CollectiblesShopPricePlaceholder = function CollectiblesShopPricePlaceholder(style) {
-  const tmp = callback();
-  const sharedValue = arg1(dependencyMap[4]).useSharedValue(0.3);
-  const arg1 = sharedValue;
+  const tmp = _createForOfIteratorHelperLoose();
+  sharedValue = sharedValue(3991).useSharedValue(0.3);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
-    const obj = sharedValue(closure_2[4]);
-    const result = sharedValue.set(obj.withRepeat(sharedValue(closure_2[5]).withTiming(1, { duration: 650 }), -1, true));
+    const obj = sharedValue(outer1_2[4]);
+    const result = sharedValue.set(obj.withRepeat(sharedValue(outer1_2[5]).withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  const obj = arg1(dependencyMap[4]);
+  let obj = sharedValue(3991);
   const fn = function h() {
     return { opacity: sharedValue.get() };
   };
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 10107093534072;
   fn.__initData = closure_6;
-  const animatedStyle = arg1(dependencyMap[4]).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(3991).useAnimatedStyle(fn);
   style = [tmp.skeletonContainer, style.style, animatedStyle];
-  return jsx(importDefault(dependencyMap[4]).View, { style });
+  return jsx(importDefault(3991).View, { style });
 };

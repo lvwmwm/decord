@@ -1,10 +1,23 @@
-// Module ID: 5078
-// Function ID: 44193
+// Module ID: 5081
+// Function ID: 44212
 // Name: headerTitle
-// Dependencies: []
+// Dependencies: [31, 5082, 1348, 1838, 1906, 5058, 5055, 653, 33, 1198, 5083, 5087, 5461, 5065, 5485, 5123, 566, 5063, 5128, 5519, 1212, 2]
 // Exports: default
 
-// Module 5078 (headerTitle)
+// Module 5081 (headerTitle)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { GuildOnboardingModalStates as closure_9 } from "GUILD_ONBOARDING_MODAL_KEY";
+import ME from "ME";
+import { jsx } from "jsxProd";
+
+let closure_10;
+let closure_11;
+const require = arg1;
 function headerTitle() {
   return null;
 }
@@ -12,13 +25,20 @@ function headerRight() {
   return null;
 }
 function getScreens(guildId) {
+  let result;
+  let _isNativeReflectConstruct;
+  let closure_5;
+  let _createForOfIteratorHelperLoose;
+  let closure_7;
+  let closure_8;
   let connections;
+  let dependencyMap;
+  let importDefault;
   guildId = guildId.guildId;
-  const arg1 = guildId;
-  ({ prompts: closure_1, connections, selectOption: closure_2, completeOnboarding: closure_3, onFinish: closure_4, onClose: closure_5, landingAnimation: closure_6, isFirstOpen: closure_7, backShouldLeaveGuild: closure_8 } = guildId);
+  ({ prompts: importDefault, connections, selectOption: dependencyMap, completeOnboarding: result, onFinish: _isNativeReflectConstruct, onClose: closure_5, landingAnimation: _createForOfIteratorHelperLoose, isFirstOpen: closure_7, backShouldLeaveGuild: closure_8 } = guildId);
   const constants = guild.getGuild(guildId);
   const rulesPrompt2 = rulesPrompt.getRulesPrompt(guildId);
-  let obj = { [closure_9.PROMPT]: obj };
+  obj = { [closure_9.PROMPT]: obj };
   obj = {
     fullscreen: true,
     headerTitle,
@@ -34,46 +54,46 @@ function getScreens(guildId) {
         num = currentPrompt;
       }
       obj.currentPromptIdx = num;
-      obj.prompts = lib;
+      obj.prompts = closure_1;
       obj.selectOption = closure_2;
       obj.onClose = closure_5;
-      obj.landingAnimation = closure_6;
+      obj.landingAnimation = _createForOfIteratorHelperLoose;
       obj.isFirstOpen = closure_7;
       obj.backShouldLeaveGuild = closure_8;
-      return closure_12(lib(closure_2[10]), obj);
+      return outer1_12(outer1_1(outer1_2[10]), obj);
     }
   };
   obj = {
     fullscreen: true,
     headerTitle,
     headerRight,
-    headerLeft: arg1(dependencyMap[11]).getHeaderCloseButton(() => {
+    headerLeft: guildId(5087).getHeaderCloseButton(() => {
       if (closure_8) {
-        let channel = channel.getChannel(lastSelectedChannelId.getLastSelectedChannelId());
+        let channel = outer1_5.getChannel(outer1_7.getLastSelectedChannelId());
         if (null == channel) {
-          let obj = guildId(closure_2[9]);
+          let obj = guildId(outer1_2[9]);
           obj = { navigationReplace: true };
-          obj.transitionTo(closure_11.ME, obj);
+          obj.transitionTo(outer1_11.ME, obj);
           channel = tmp4();
         }
-        guildId(closure_2[9]).transitionTo(closure_11.CHANNEL(channel.guild_id, channel.id));
-        const obj3 = guildId(closure_2[9]);
+        guildId(outer1_2[9]).transitionTo(outer1_11.CHANNEL(channel.guild_id, channel.id));
+        const obj3 = guildId(outer1_2[9]);
         const tmp3 = guildId;
-        const tmp4 = channel;
+        tmp4 = callback;
       } else {
-        channel();
+        callback();
       }
     }),
     render() {
       const obj = { guildId };
-      let tmp3 = 0 === lib.length;
+      let tmp3 = 0 === length.length;
       if (tmp3) {
-        tmp3 = !guildId(closure_2[13]).showRulesInOnboarding(closure_9, closure_10);
-        const obj2 = guildId(closure_2[13]);
+        tmp3 = !guildId(outer1_2[13]).showRulesInOnboarding(closure_9, closure_10);
+        const obj2 = guildId(outer1_2[13]);
       }
       obj.isLastStep = tmp3;
-      obj.onComplete = closure_3;
-      return closure_12(lib(closure_2[12]), obj);
+      obj.onComplete = result;
+      return outer1_12(outer1_1(outer1_2[12]), obj);
     }
   };
   obj[constants.CONNECTIONS] = obj;
@@ -82,13 +102,13 @@ function getScreens(guildId) {
     headerTitle,
     headerRight,
     render() {
-      return callback(lib(closure_2[14]), {
+      return outer1_12(outer1_1(outer1_2[14]), {
         guildId,
-        prompts: lib,
-        completeOnboarding: closure_3,
+        prompts: closure_1,
+        completeOnboarding: result,
         onClose() {
-          callback2();
-          callback();
+          outer1_5();
+          outer1_4();
         }
       });
     }
@@ -98,39 +118,24 @@ function getScreens(guildId) {
     headerTitle,
     headerRight,
     render() {
-      return callback(guildId(closure_2[15]).RulesPrompt, { guildId, onClose: closure_5 });
+      return outer1_12(guildId(outer1_2[15]).RulesPrompt, { guildId, onClose: closure_5 });
     }
   };
   return obj;
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = arg1(dependencyMap[6]).GuildOnboardingModalStates;
-({ GuildFeatures: closure_10, Routes: closure_11 } = arg1(dependencyMap[7]));
-const jsx = arg1(dependencyMap[8]).jsx;
-const tmp2 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingModal.tsx");
+({ GuildFeatures: closure_10, Routes: closure_11 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingModal.tsx");
 
 export default function GuildOnboardingModal(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const onFinish = guildId.onFinish;
-  const importDefault = onFinish;
   const onClose = guildId.onClose;
-  const dependencyMap = onClose;
   const landingAnimation = guildId.landingAnimation;
-  const React = landingAnimation;
   const isFirstOpen = guildId.isFirstOpen;
-  let closure_4 = isFirstOpen;
   const backShouldLeaveGuild = guildId.backShouldLeaveGuild;
-  let closure_5 = backShouldLeaveGuild;
-  let obj = arg1(dependencyMap[16]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  let obj = guildId(onClose[16]);
+  const items = [stateFromStores];
+  stateFromStores = obj.useStateFromStores(items, () => {
     const guild = stateFromStores.getGuild(guildId);
     let tmp2 = null != guild;
     if (tmp2) {
@@ -144,25 +149,21 @@ export default function GuildOnboardingModal(guildId) {
     }
     return tmp2;
   });
-  closure_6 = stateFromStores;
-  const items1 = [closure_8];
-  const stateFromStoresArray = arg1(dependencyMap[16]).useStateFromStoresArray(items1, () => stateFromStores1.getOnboardingPromptsForOnboarding(guildId));
-  let closure_7 = stateFromStoresArray;
-  const obj2 = arg1(dependencyMap[16]);
-  const items2 = [closure_8];
-  const stateFromStores1 = arg1(dependencyMap[16]).useStateFromStores(items2, () => stateFromStores1.getOnboardingConnections(guildId));
-  closure_8 = stateFromStores1;
+  const items1 = [stateFromStores1];
+  const stateFromStoresArray = guildId(onClose[16]).useStateFromStoresArray(items1, () => stateFromStores1.getOnboardingPromptsForOnboarding(guildId));
+  const obj2 = guildId(onClose[16]);
+  const items2 = [stateFromStores1];
+  stateFromStores1 = guildId(onClose[16]).useStateFromStores(items2, () => stateFromStores1.getOnboardingConnections(guildId));
   const items3 = [guildId];
-  const callback = React.useCallback((id, id2, selected) => {
+  const callback = landingAnimation.useCallback((id, id2, selected) => {
     const option = onFinish(onClose[17]).selectOption(guildId, id, id2, selected);
   }, items3);
-  const constants = callback;
   const items4 = [guildId, stateFromStoresArray];
-  const callback1 = React.useCallback(() => {
+  const callback1 = landingAnimation.useCallback(() => {
     onFinish(onClose[17]).completeOnboarding(guildId, stateFromStoresArray);
   }, items4);
   const items5 = [guildId, stateFromStores];
-  const effect = React.useEffect(() => {
+  const effect = landingAnimation.useEffect(() => {
     if (stateFromStores) {
       const verificationForm = onFinish(onClose[18]).fetchVerificationForm(guildId);
       const obj = onFinish(onClose[18]);
@@ -171,12 +172,12 @@ export default function GuildOnboardingModal(guildId) {
   const items6 = [guildId, stateFromStoresArray, stateFromStores1, callback, callback1, onFinish, onClose, landingAnimation, isFirstOpen, backShouldLeaveGuild];
   if (isFirstOpen) {
     if (stateFromStores1.length > 0) {
-      let PROMPT = constants.CONNECTIONS;
+      let PROMPT = callback.CONNECTIONS;
     }
     obj = { screens: tmp6, initialRouteName: PROMPT };
-    const intl = arg1(dependencyMap[20]).intl;
-    obj.headerBackTitle = intl.string(arg1(dependencyMap[20]).t.13/7kX);
-    return jsx(arg1(dependencyMap[19]).Navigator, obj);
+    const intl = guildId(onClose[20]).intl;
+    obj.headerBackTitle = intl.string(guildId(onClose[20]).t["13/7kX"]);
+    return jsx(guildId(onClose[19]).Navigator, { screens: tmp6, initialRouteName: PROMPT });
   }
-  PROMPT = constants.PROMPT;
+  PROMPT = callback.PROMPT;
 };

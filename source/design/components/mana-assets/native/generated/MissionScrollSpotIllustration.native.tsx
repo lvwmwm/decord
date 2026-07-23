@@ -1,13 +1,13 @@
-// Module ID: 6295
-// Function ID: 50375
+// Module ID: 6300
+// Function ID: 50404
 // Name: MissionScrollSpotIllustration
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 6301, 2]
 // Exports: MissionScrollSpotIllustration
 
-// Module 6295 (MissionScrollSpotIllustration)
-import { jsx } from "__exportStarResult1";
+// Module 6300 (MissionScrollSpotIllustration)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MissionScrollSpotIllustration.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MissionScrollSpotIllustration.native.tsx");
 
 export const MissionScrollSpotIllustration = function MissionScrollSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const MissionScrollSpotIllustration = function MissionScrollSpotIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6301) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const MissionScrollSpotIllustration = function MissionScrollSpotIllustrat
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

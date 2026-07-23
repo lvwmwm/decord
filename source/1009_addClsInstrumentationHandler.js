@@ -1,35 +1,35 @@
 // Module ID: 1009
-// Function ID: 11015
+// Function ID: 11016
 // Name: addClsInstrumentationHandler
-// Dependencies: [67633152, 66846720, 67174400, 67698688, 67436544, 66977792, 67043328, 4268818432, 1929379843, 6, 7]
+// Dependencies: [1010, 1034, 1040, 1035, 1041, 1042, 1043, 1044, 1045, 1039, 1046]
 
 // Module 1009 (addClsInstrumentationHandler)
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addClsInstrumentationHandler = require(dependencyMap[0]).addClsInstrumentationHandler;
-export const addInpInstrumentationHandler = require(dependencyMap[0]).addInpInstrumentationHandler;
-export const addLcpInstrumentationHandler = require(dependencyMap[0]).addLcpInstrumentationHandler;
-export const addPerformanceInstrumentationHandler = require(dependencyMap[0]).addPerformanceInstrumentationHandler;
-export const addTtfbInstrumentationHandler = require(dependencyMap[0]).addTtfbInstrumentationHandler;
-export const addPerformanceEntries = require(dependencyMap[1]).addPerformanceEntries;
-export const startTrackingInteractions = require(dependencyMap[1]).startTrackingInteractions;
-export const startTrackingLongAnimationFrames = require(dependencyMap[1]).startTrackingLongAnimationFrames;
-export const startTrackingLongTasks = require(dependencyMap[1]).startTrackingLongTasks;
-export const startTrackingWebVitals = require(dependencyMap[1]).startTrackingWebVitals;
-export const startTrackingElementTiming = require(dependencyMap[2]).startTrackingElementTiming;
-export const extractNetworkProtocol = require(dependencyMap[3]).extractNetworkProtocol;
-export const addClickKeypressInstrumentationHandler = require(dependencyMap[4]).addClickKeypressInstrumentationHandler;
-export const addHistoryInstrumentationHandler = require(dependencyMap[5]).addHistoryInstrumentationHandler;
-export const clearCachedImplementation = require(dependencyMap[6]).clearCachedImplementation;
-export const fetch = require(dependencyMap[6]).fetch;
-export const getNativeImplementation = require(dependencyMap[6]).getNativeImplementation;
-export const setTimeout = require(dependencyMap[6]).setTimeout;
-export const SENTRY_XHR_DATA_KEY = require(dependencyMap[7]).SENTRY_XHR_DATA_KEY;
-export const addXhrInstrumentationHandler = require(dependencyMap[7]).addXhrInstrumentationHandler;
-export const getBodyString = require(dependencyMap[8]).getBodyString;
-export const getFetchRequestArgBody = require(dependencyMap[8]).getFetchRequestArgBody;
-export const parseXhrResponseHeaders = require(dependencyMap[8]).parseXhrResponseHeaders;
-export const serializeFormData = require(dependencyMap[8]).serializeFormData;
-export const resourceTimingToSpanAttributes = require("_classCallCheck").resourceTimingToSpanAttributes;
-export const registerInpInteractionListener = require("_defineProperties").registerInpInteractionListener;
-export const startTrackingINP = require("_defineProperties").startTrackingINP;
+export const addClsInstrumentationHandler = require("triggerHandlers").addClsInstrumentationHandler;
+export const addInpInstrumentationHandler = require("triggerHandlers").addInpInstrumentationHandler;
+export const addLcpInstrumentationHandler = require("triggerHandlers").addLcpInstrumentationHandler;
+export const addPerformanceInstrumentationHandler = require("triggerHandlers").addPerformanceInstrumentationHandler;
+export const addTtfbInstrumentationHandler = require("triggerHandlers").addTtfbInstrumentationHandler;
+export const addPerformanceEntries = require("_addMeasureSpans").addPerformanceEntries;
+export const startTrackingInteractions = require("_addMeasureSpans").startTrackingInteractions;
+export const startTrackingLongAnimationFrames = require("_addMeasureSpans").startTrackingLongAnimationFrames;
+export const startTrackingLongTasks = require("_addMeasureSpans").startTrackingLongTasks;
+export const startTrackingWebVitals = require("_addMeasureSpans").startTrackingWebVitals;
+export const startTrackingElementTiming = require("_onElementTiming").startTrackingElementTiming;
+export const extractNetworkProtocol = require("extractNetworkProtocol").extractNetworkProtocol;
+export const addClickKeypressInstrumentationHandler = require("instrumentDOM").addClickKeypressInstrumentationHandler;
+export const addHistoryInstrumentationHandler = require("instrumentHistory").addHistoryInstrumentationHandler;
+export const clearCachedImplementation = require("getNativeImplementation").clearCachedImplementation;
+export const fetch = require("getNativeImplementation").fetch;
+export const getNativeImplementation = require("getNativeImplementation").getNativeImplementation;
+export const setTimeout = require("getNativeImplementation").setTimeout;
+export const SENTRY_XHR_DATA_KEY = require("instrumentXHR").SENTRY_XHR_DATA_KEY;
+export const addXhrInstrumentationHandler = require("instrumentXHR").addXhrInstrumentationHandler;
+export const getBodyString = require("serializeFormData").getBodyString;
+export const getFetchRequestArgBody = require("serializeFormData").getFetchRequestArgBody;
+export const parseXhrResponseHeaders = require("serializeFormData").parseXhrResponseHeaders;
+export const serializeFormData = require("serializeFormData").serializeFormData;
+export const resourceTimingToSpanAttributes = require("getAbsoluteTime").resourceTimingToSpanAttributes;
+export const registerInpInteractionListener = require("_trackINP").registerInpInteractionListener;
+export const startTrackingINP = require("_trackINP").startTrackingINP;

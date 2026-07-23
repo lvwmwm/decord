@@ -1,10 +1,13 @@
-// Module ID: 5726
-// Function ID: 49219
+// Module ID: 5731
+// Function ID: 49246
 // Name: getGuildChannelPosition
-// Dependencies: []
+// Dependencies: [1348, 653, 2]
 // Exports: default
 
-// Module 5726 (getGuildChannelPosition)
+// Module 5731 (getGuildChannelPosition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+
 function getGuildChannelPosition(record) {
   if (null == record.parent_id) {
     if (record.type === ChannelTypes.GUILD_CATEGORY) {
@@ -14,7 +17,7 @@ function getGuildChannelPosition(record) {
     }
     return position;
   } else {
-    const channel = channel.getChannel(record.parent_id);
+    channel = channel.getChannel(record.parent_id);
     position = undefined;
     if (null != channel) {
       position = channel.position;
@@ -33,9 +36,7 @@ function getGuildChannelPosition(record) {
     return sum2;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-const ChannelTypes = arg1(dependencyMap[1]).ChannelTypes;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/channel_text_area/compareChannelsByScoreAndPosition.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_text_area/compareChannelsByScoreAndPosition.tsx");
 
 export default function compareChannelsByScoreAndPosition(score, score2) {
   if (score.score !== score2.score) {

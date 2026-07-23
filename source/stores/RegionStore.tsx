@@ -1,9 +1,16 @@
-// Module ID: 15380
-// Function ID: 117241
+// Module ID: 15497
+// Function ID: 119415
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1838, 22, 566, 686, 2]
 
-// Module 15380 (_isNativeReflectConstruct)
+// Module 15497 (_isNativeReflectConstruct)
+import apply from "apply";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,27 +20,21 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = null;
+let c8 = null;
 let closure_9 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class RegionStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, RegionStore);
-      obj = closure_5(RegionStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, RegionStore);
+      obj = outer1_5(RegionStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,12 +43,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = RegionStore;
   callback2(RegionStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
     }
   };
   const items = [obj, , , , , ];
@@ -64,8 +64,8 @@ let tmp2 = (Store) => {
       if (null != regions) {
         let found = regions.find((optimal) => optimal.optimal);
         if (null == found) {
-          found = RegionStore(closure_1[6]).sample(regions);
-          const obj = RegionStore(closure_1[6]);
+          found = RegionStore(outer1_1[6]).sample(regions);
+          const obj = RegionStore(outer1_1[6]);
         }
         tmp2 = found;
       }
@@ -101,8 +101,8 @@ let tmp2 = (Store) => {
       const regions = self.getRegions(tmp);
       let sampleResult = null;
       if (null != regions) {
-        sampleResult = RegionStore(closure_1[6]).sample(regions);
-        const obj = RegionStore(closure_1[6]);
+        sampleResult = RegionStore(outer1_1[6]).sample(regions);
+        const obj = RegionStore(outer1_1[6]);
       }
       return sampleResult;
     }
@@ -127,29 +127,29 @@ let tmp2 = (Store) => {
     key: "getRegions",
     value(arg0) {
       if (null != arg0) {
-        let tmp = closure_9[arg0];
+        let tmp = outer1_9[arg0];
       } else {
-        tmp = closure_8;
+        tmp = outer1_8;
       }
       return tmp;
     }
   };
   return callback(RegionStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "RegionStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   LOAD_REGIONS: function handleLoadRegions(regions) {
-    const sortByResult = importDefault(dependencyMap[6]).sortBy(regions.regions, (name) => name.name);
+    const sortByResult = importDefault(22).sortBy(regions.regions, (name) => name.name);
     if (null != regions.guildId) {
       closure_9[regions.guildId] = sortByResult;
     } else {
-      let closure_8 = sortByResult;
+      let c8 = sortByResult;
     }
   },
   GUILD_DELETE: function handleDeleteGuild(arg0) {
-    delete r1[r0];
+    delete tmp2[tmp];
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/RegionStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/RegionStore.tsx");
 
 export default tmp2;

@@ -1,55 +1,65 @@
-// Module ID: 6748
-// Function ID: 52524
+// Module ID: 6753
+// Function ID: 52556
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [1352, 4468, 4566, 653, 482, 6754, 1881, 6755, 483, 22, 44, 24, 4324, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 6748 (_createForOfIteratorHelperLoose)
-import deserializeResult from "module_0";
+// Module 6753 (_createForOfIteratorHelperLoose)
+import { isReadableType } from "_callSuper";
+import { DraftType } from "_isNativeReflectConstruct";
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
+import ME from "ME";
+import { Permissions } from "sum";
+import deserializeResult from "_callSuper";
+import importAllResult from "fromHexReverseArray";
 
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -60,16 +70,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,7 +103,7 @@ function buildCommand(arg0) {
   let subCommandPath;
   let useKeyedPermissions;
   ({ rootCommand, command, subCommandPath } = arg0);
-  let require;
+  let obj;
   let tmp = null != rootCommand.permissions;
   ({ applicationId, useKeyedPermissions } = arg0);
   if (tmp) {
@@ -110,7 +120,7 @@ function buildCommand(arg0) {
       items1 = [];
     }
     const mapped1 = items1.map((displayName) => displayName.displayName);
-    let obj = {};
+    obj = {};
     ({ version: obj3.version, guild_id: obj3.guildId } = rootCommand);
     const items2 = [rootCommand.id];
     HermesBuiltin.arraySpread(mapped, 1);
@@ -122,18 +132,18 @@ function buildCommand(arg0) {
     obj.applicationId = applicationId;
     let CHAT = rootCommand.type;
     if (null == CHAT) {
-      CHAT = require(dependencyMap[6]).ApplicationCommandType.CHAT;
+      CHAT = obj(1881).ApplicationCommandType.CHAT;
     }
     obj.type = CHAT;
-    obj.inputType = require(dependencyMap[7]).ApplicationCommandInputType.BOT;
+    obj.inputType = obj(6755).ApplicationCommandInputType.BOT;
     obj.untranslatedDescription = command.description;
     obj.options = mapOptions(command.options);
     obj.rootCommand = rootCommand;
     obj.subCommandPath = subCommandPath;
     let deserializeResult;
     if (null != rootCommand.default_member_permissions) {
-      deserializeResult = importAll(dependencyMap[8]).deserialize(rootCommand.default_member_permissions);
-      const obj4 = importAll(dependencyMap[8]);
+      deserializeResult = importAll(483).deserialize(rootCommand.default_member_permissions);
+      const obj4 = importAll(483);
     }
     obj.defaultMemberPermissions = deserializeResult;
     obj.dmPermission = rootCommand.dm_permission;
@@ -153,13 +163,12 @@ function buildCommand(arg0) {
     ({ nsfw: obj3.nsfw, contexts: obj3.contexts, integration_types: obj3.integration_types, global_popularity_rank: obj3.global_popularity_rank, handler: obj3.handler } = rootCommand);
     return obj;
   } else if (useKeyedPermissions) {
-    const keyPermissionsResult = require(dependencyMap[5]).keyPermissions(rootCommand.permissions);
-    require = keyPermissionsResult;
+    const keyPermissionsResult = obj(6754).keyPermissions(rootCommand.permissions);
     obj = keyPermissionsResult;
-    const obj2 = require(dependencyMap[5]);
+    obj = keyPermissionsResult;
+    const obj2 = obj(6754);
   } else {
     obj = {};
-    require = obj;
     const permissions = rootCommand.permissions;
     const item = permissions.forEach((id) => {
       obj[id.id] = id;
@@ -172,7 +181,7 @@ function mapOptions(options) {
     mapped = options.map((choices) => {
       let name_localized;
       let obj = {};
-      const merged = Object.assign(choices);
+      let merged = Object.assign(choices);
       choices = choices.choices;
       let mapped;
       if (null != choices) {
@@ -188,7 +197,7 @@ function mapOptions(options) {
         });
       }
       obj["choices"] = mapped;
-      obj["options"] = callback2(choices.options);
+      obj["options"] = outer1_15(choices.options);
       ({ name_localized: obj["serverLocalizedName"], name_localized } = choices);
       if (null == name_localized) {
         name_localized = choices.name;
@@ -199,7 +208,7 @@ function mapOptions(options) {
         description = choices.description;
       }
       obj["displayDescription"] = description;
-      if (choices.type === callback(closure_3[6]).ApplicationCommandOptionType.CHANNEL) {
+      if (choices.type === outer1_0(outer1_3[6]).ApplicationCommandOptionType.CHANNEL) {
         if ("channel_types" in choices) {
           obj = {};
           const merged1 = Object.assign(obj);
@@ -207,15 +216,15 @@ function mapOptions(options) {
         }
         return obj;
       }
-      if (choices.type === callback(closure_3[6]).ApplicationCommandOptionType.NUMBER) {
+      if (choices.type === outer1_0(outer1_3[6]).ApplicationCommandOptionType.NUMBER) {
         obj = {};
         const merged2 = Object.assign(obj);
         obj["minValue"] = choices.min_value;
         obj["maxValue"] = choices.max_value;
       }
-      if (choices.type !== callback(closure_3[6]).ApplicationCommandOptionType.STRING) {
+      if (choices.type !== outer1_0(outer1_3[6]).ApplicationCommandOptionType.STRING) {
         let tmp10 = obj;
-        if (choices.type === callback(closure_3[6]).ApplicationCommandOptionType.ATTACHMENT) {
+        if (choices.type === outer1_0(outer1_3[6]).ApplicationCommandOptionType.ATTACHMENT) {
           tmp10 = obj;
           if ("file_types" in choices) {
             const obj1 = {};
@@ -245,8 +254,8 @@ function buildSubCommands(arg0) {
     let obj = { rootCommand, command, applicationId, subCommandPath, useKeyedPermissions };
     const items = [buildCommand(obj)];
     return items;
-  } else if (command.type !== require(dependencyMap[6]).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (command.type !== require(dependencyMap[6]).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  } else if (command.type !== require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND) {
+    if (command.type !== require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       obj = { rootCommand, command, applicationId, subCommandPath, useKeyedPermissions };
       const items1 = [buildCommand(obj)];
       return items1;
@@ -257,7 +266,7 @@ function buildSubCommands(arg0) {
     return items2;
   } else {
     const options = command.options;
-    const found = options.filter((type) => type.type === callback(closure_3[6]).ApplicationCommandOptionType.SUB_COMMAND_GROUP);
+    const found = options.filter((type) => type.type === outer1_0(outer1_3[6]).ApplicationCommandOptionType.SUB_COMMAND_GROUP);
     for (let num4 = 0; num4 < found.length; num4 = num4 + 1) {
       let push = items2.push;
       obj = { rootCommand, command: found[num4], applicationId };
@@ -269,7 +278,7 @@ function buildSubCommands(arg0) {
       let obj1 = { name: found[num4].name };
       let tmp7 = require;
       let tmp8 = dependencyMap;
-      obj1.type = require(dependencyMap[6]).ApplicationCommandOptionType.SUB_COMMAND_GROUP;
+      obj1.type = require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND_GROUP;
       let name = found[num4].name_localized;
       if (null == name) {
         name = found[num4].name;
@@ -288,7 +297,7 @@ function buildSubCommands(arg0) {
       let applyResult = HermesBuiltin.apply(items5, items2);
     }
     const options1 = command.options;
-    const found1 = options1.filter((type) => type.type === callback(closure_3[6]).ApplicationCommandOptionType.SUB_COMMAND);
+    const found1 = options1.filter((type) => type.type === outer1_0(outer1_3[6]).ApplicationCommandOptionType.SUB_COMMAND);
     for (let num5 = 0; num5 < found1.length; num5 = num5 + 1) {
       let obj2 = { rootCommand, command: found1[num5], applicationId };
       let items6 = subCommandPath;
@@ -299,7 +308,7 @@ function buildSubCommands(arg0) {
       let obj3 = { name: found1[num5].name };
       let tmp16 = require;
       let tmp17 = dependencyMap;
-      obj3.type = require(dependencyMap[6]).ApplicationCommandOptionType.SUB_COMMAND;
+      obj3.type = require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.SUB_COMMAND;
       let name2 = found1[num5].name_localized;
       if (null == name2) {
         name2 = found1[num5].name;
@@ -318,8 +327,9 @@ function buildSubCommands(arg0) {
   }
 }
 function hasAccessGivenPerms(selfMember, id, commandLevelPermissions) {
-  const obj = require(dependencyMap[5]);
-  if (null != commandLevelPermissions[obj.toPermissionKey(obj, selfMember.userId, closure_0(undefined, closure_3[7]).ApplicationCommandPermissionType.USER)]) {
+  const obj = require(6754) /* toPermissionKey */;
+  const tmp = commandLevelPermissions[obj.toPermissionKey(obj, selfMember.userId, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER)];
+  if (null != tmp) {
     return tmp.permission;
   } else {
     const tmp11 = _createForOfIteratorHelperLoose(selfMember.roles);
@@ -331,8 +341,8 @@ function hasAccessGivenPerms(selfMember, id, commandLevelPermissions) {
       while (true) {
         let tmp2 = require;
         let tmp3 = dependencyMap;
-        let obj2 = require(dependencyMap[5]);
-        let tmp4 = commandLevelPermissions[obj2.toPermissionKey(obj2, iter2.value, closure_0(undefined, closure_3[7]).ApplicationCommandPermissionType.ROLE)];
+        let obj2 = require(6754) /* toPermissionKey */;
+        let tmp4 = commandLevelPermissions[obj2.toPermissionKey(obj2, iter2.value, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
         if (null != tmp4) {
           flag = true;
           if (tmp4.permission) {
@@ -348,31 +358,26 @@ function hasAccessGivenPerms(selfMember, id, commandLevelPermissions) {
     if (flag2) {
       return false;
     } else {
-      const obj3 = require(dependencyMap[5]);
+      const obj3 = require(6754) /* toPermissionKey */;
+      const tmp8 = commandLevelPermissions[obj3.toPermissionKey(obj3, id, require(undefined, 6755) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE)];
       let permission = null;
-      if (null != commandLevelPermissions[obj3.toPermissionKey(obj3, id, closure_0(undefined, closure_3[7]).ApplicationCommandPermissionType.ROLE)]) {
+      if (null != tmp8) {
         permission = tmp8.permission;
       }
       return permission;
     }
   }
 }
-const isReadableType = require(dependencyMap[0]).isReadableType;
-const DraftType = require(dependencyMap[1]).DraftType;
-const _module = require(dependencyMap[2]);
-({ BuiltInSectionId: closure_6, SUB_COMMAND_KEY_SEPARATOR: closure_7 } = _module);
-const _module1 = require(dependencyMap[3]);
-({ AnalyticEvents: closure_8, ID_REGEX: closure_9 } = _module1);
-const Permissions = require(dependencyMap[4]).Permissions;
-const _module2 = require(dependencyMap[13]);
-const result = _module2.fileFinishedImporting("modules/application_commands/ApplicationCommandUtils.tsx");
+({ BuiltInSectionId: closure_6, SUB_COMMAND_KEY_SEPARATOR: closure_7 } = TRUE_OPTION_NAME);
+({ AnalyticEvents: closure_8, ID_REGEX: closure_9 } = ME);
+let result = require("TRUE_OPTION_NAME").fileFinishedImporting("modules/application_commands/ApplicationCommandUtils.tsx");
 
 export { buildCommand };
 export const buildApplicationCommands = function buildApplicationCommands(application_commands, arg1) {
-  const require = arg1;
-  return importDefault(dependencyMap[9]).flatMap(application_commands, (id) => {
-    callback(closure_3[10])(null != id.id, "Missing command id");
-    return callback2({ rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: undefined, useKeyedPermissions: arg1 });
+  let closure_0 = arg1;
+  return importDefault(22).flatMap(application_commands, (id) => {
+    outer1_1(outer1_3[10])(null != id.id, "Missing command id");
+    return outer1_16({ rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: undefined, useKeyedPermissions: closure_0 });
   });
 };
 export const applicationPermissionsList = function applicationPermissionsList(arr) {
@@ -393,16 +398,15 @@ export const isSnowflake = function isSnowflake(text) {
   return regex.test(text.trim());
 };
 export const getMatchingGroupCommands = function getMatchingGroupCommands(contextCommands, regExp, closure_3, arg3) {
-  const require = regExp;
+  let closure_0 = regExp;
   const importDefault = closure_3;
   const items = [];
-  const importAll = items;
-  const item = importDefault(dependencyMap[9])(contextCommands).forEach((displayName) => {
-    let isMatch = arg1.test(displayName.displayName);
+  const item = importDefault(22)(contextCommands).forEach((displayName) => {
+    let isMatch = regex.test(displayName.displayName);
     if (isMatch) {
       let predicateResult = null == displayName.predicate;
       if (!predicateResult) {
-        predicateResult = displayName.predicate(arg2);
+        predicateResult = displayName.predicate(closure_1);
       }
       isMatch = predicateResult;
     }
@@ -413,14 +417,14 @@ export const getMatchingGroupCommands = function getMatchingGroupCommands(contex
   return items.slice(0, arg3);
 };
 export const getApplicationCommandOptionQueryOptions = function getApplicationCommandOptionQueryOptions(activeOption) {
-  const tmp = activeOption.type === require(dependencyMap[6]).ApplicationCommandOptionType.STRING;
-  let tmp3 = activeOption.type === require(dependencyMap[6]).ApplicationCommandOptionType.USER;
+  const tmp = activeOption.type === require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.STRING;
+  let tmp3 = activeOption.type === require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.USER;
   if (!tmp3) {
-    tmp3 = activeOption.type === require(dependencyMap[6]).ApplicationCommandOptionType.MENTIONABLE;
+    tmp3 = activeOption.type === require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.MENTIONABLE;
   }
-  let tmp6 = activeOption.type === require(dependencyMap[6]).ApplicationCommandOptionType.ROLE;
+  let tmp6 = activeOption.type === require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.ROLE;
   if (!tmp6) {
-    tmp6 = activeOption.type === require(dependencyMap[6]).ApplicationCommandOptionType.MENTIONABLE;
+    tmp6 = activeOption.type === require(1881) /* PermissionOverwriteType */.ApplicationCommandOptionType.MENTIONABLE;
   }
   const obj = {};
   let tmp9 = tmp;
@@ -450,8 +454,8 @@ export const getApplicationCommandOptionQueryOptions = function getApplicationCo
   return obj;
 };
 export const allChannelsSentinel = function allChannelsSentinel(guild_id) {
-  const obj = importDefault(dependencyMap[11])(guild_id);
-  return importDefault(dependencyMap[11])(guild_id).subtract(1).toString();
+  const obj = importDefault(24)(guild_id);
+  return importDefault(24)(guild_id).subtract(1).toString();
 };
 export const canUseApplicationCommands = function canUseApplicationCommands(can, arg1, isMultiUserDM) {
   let tmp = !arg1;
@@ -462,14 +466,14 @@ export const canUseApplicationCommands = function canUseApplicationCommands(can,
     } else if (isMultiUserDM.isDM()) {
       let canResult = !isMultiUserDM.isSystemDM();
     } else if (isMultiUserDM.isArchivedLockedThread()) {
-      canResult = can.can(importAll(dependencyMap[8]).combine(Permissions.USE_APPLICATION_COMMANDS, Permissions.MANAGE_THREADS), isMultiUserDM);
-      const obj2 = importAll(dependencyMap[8]);
+      canResult = can.can(importAll(483).combine(Permissions.USE_APPLICATION_COMMANDS, Permissions.MANAGE_THREADS), isMultiUserDM);
+      const obj2 = importAll(483);
     } else {
       const tmp4 = !isReadableType(isMultiUserDM.type);
       canResult = !tmp4;
       if (!tmp4) {
-        canResult = can.can(importAll(dependencyMap[8]).combine(Permissions.USE_APPLICATION_COMMANDS, Permissions.SEND_MESSAGES), isMultiUserDM);
-        const obj = importAll(dependencyMap[8]);
+        canResult = can.can(importAll(483).combine(Permissions.USE_APPLICATION_COMMANDS, Permissions.SEND_MESSAGES), isMultiUserDM);
+        const obj = importAll(483);
       }
     }
   }
@@ -497,9 +501,9 @@ export const hasAccess = function hasAccess(arg0) {
       if (!("boolean" === typeof tmp6 && !tmp6)) {
         let tmp9 = null == defaultMemberPermissions;
         if (!tmp9) {
-          const obj = importAll(dependencyMap[8]);
-          tmp9 = !importAll(dependencyMap[8]).equals(defaultMemberPermissions, deserializeResult) && PermissionStore.can(defaultMemberPermissions, guild);
-          const tmp13 = !importAll(dependencyMap[8]).equals(defaultMemberPermissions, deserializeResult) && PermissionStore.can(defaultMemberPermissions, guild);
+          const obj = importAll(483);
+          tmp9 = !importAll(483).equals(defaultMemberPermissions, closure_11) && PermissionStore.can(defaultMemberPermissions, guild);
+          const tmp13 = !importAll(483).equals(defaultMemberPermissions, closure_11) && PermissionStore.can(defaultMemberPermissions, guild);
         }
         tmp8 = tmp9;
       }
@@ -509,7 +513,7 @@ export const hasAccess = function hasAccess(arg0) {
   return true;
 };
 export const getCommandAttachmentDraftType = function getCommandAttachmentDraftType(commandOrigin) {
-  if (require(dependencyMap[7]).CommandOrigin.CHAT === commandOrigin) {
+  if (require(6755) /* ApplicationCommandSectionType */.CommandOrigin.CHAT === commandOrigin) {
     return DraftType.SlashCommand;
   } else {
     return DraftType.ApplicationLauncherCommand;
@@ -518,18 +522,18 @@ export const getCommandAttachmentDraftType = function getCommandAttachmentDraftT
 export const getCommandTriggerSection = function getCommandTriggerSection(closure_3) {
   if (null != closure_3) {
     if (closure_3.id === constants.BUILT_IN) {
-      let APP = require(dependencyMap[7]).ApplicationCommandTriggerSections.BUILT_IN;
+      let APP = require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.BUILT_IN;
     } else if (closure_3.id === constants.FRECENCY) {
-      APP = require(dependencyMap[7]).ApplicationCommandTriggerSections.FRECENCY;
+      APP = require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.FRECENCY;
     } else {
-      APP = require(dependencyMap[7]).ApplicationCommandTriggerSections.APP;
+      APP = require(6755) /* ApplicationCommandSectionType */.ApplicationCommandTriggerSections.APP;
     }
     return APP;
   }
 };
 export const getApplicationCommandSection = function getApplicationCommandSection(application, arg1, arg2) {
   let name = arg2;
-  const obj = { type: require(dependencyMap[7]).ApplicationCommandSectionType.APPLICATION, id: application.id };
+  const obj = { type: require(6755) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION, id: application.id };
   if (null == arg2) {
     let username;
     if (null != application) {
@@ -555,7 +559,7 @@ export const extractInteractionDataProps = function extractInteractionDataProps(
   ({ id, options } = parsed);
   let found;
   if (null != options) {
-    found = options.find((type) => type.type === callback(closure_3[6]).ApplicationCommandOptionType.SUB_COMMAND_GROUP);
+    found = options.find((type) => type.type === outer1_0(outer1_3[6]).ApplicationCommandOptionType.SUB_COMMAND_GROUP);
   }
   let sum = id;
   if (null != found) {
@@ -565,7 +569,7 @@ export const extractInteractionDataProps = function extractInteractionDataProps(
   }
   let found1;
   if (null != options) {
-    found1 = options.find((type) => type.type === callback(closure_3[6]).ApplicationCommandOptionType.SUB_COMMAND);
+    found1 = options.find((type) => type.type === outer1_0(outer1_3[6]).ApplicationCommandOptionType.SUB_COMMAND);
   }
   let sum1 = sum;
   if (null != found1) {
@@ -586,7 +590,7 @@ export const trackCommandSelected = function trackCommandSelected(command) {
   let triggerSection;
   command = command.command;
   ({ location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source } = command);
-  let obj = require(dependencyMap[12]);
+  let obj = require(4324) /* _createForOfIteratorHelperLoose */;
   obj = {};
   const rootCommand = command.rootCommand;
   let id;

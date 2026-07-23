@@ -1,7 +1,7 @@
 // Module ID: 525
 // Function ID: 6633
-// Dependencies: []
+// Dependencies: [526]
 
 // Module 525
 
-export default require(dependencyMap[0]).getPrototypeOf || null;
+export default require("module_526").getPrototypeOf || null;

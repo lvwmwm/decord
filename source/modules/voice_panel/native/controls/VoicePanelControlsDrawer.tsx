@@ -1,33 +1,40 @@
-// Module ID: 15766
-// Function ID: 120509
+// Module ID: 15883
+// Function ID: 122682
 // Name: renderChat
-// Dependencies: []
+// Dependencies: [57, 31, 27, 10015, 33, 4130, 689, 5122, 4489, 11377, 10014, 3991, 11378, 4542, 9423, 15884, 15895, 2]
 
-// Module 15766 (renderChat)
+// Module 15883 (renderChat)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import VoicePanelModes from "VoicePanelModes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function renderChat(shown) {
-  let obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback2(importDefault(dependencyMap[9]), obj) };
+  obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback(importDefault(11377), obj) };
   obj = { shown };
-  return callback2(closure_6, obj);
+  return callback(closure_6, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ StyleSheet: closure_5, View: closure_6 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ MODE_CHANGE_PHYSICS: closure_7, VoicePanelModes: closure_8 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-const tmp4 = arg1(dependencyMap[4]);
+({ StyleSheet: closure_5, View: closure_6 } = get_ActivityIndicator);
+({ MODE_CHANGE_PHYSICS: closure_7, VoicePanelModes: closure_8 } = VoicePanelModes);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let obj = {};
-obj = { "Null": "<string:2491613185>", "Null": "<string:2941583362>", backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BASE_LOWER };
+obj = { flex: 1, zIndex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
 obj.drawer = obj;
-let closure_11 = arg1(dependencyMap[5]).createStyles(obj);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo((shown) => {
   shown = shown.shown;
-  const arg1 = shown;
   const renderContent = shown.renderContent;
-  const importDefault = renderContent;
-  let callback;
-  const tmp = callback(importAllResult.useState(!shown), 2);
+  let ref;
+  const tmp = ref(importAllResult.useState(!shown), 2);
   const first = tmp[0];
   const dependencyMap = tmp3;
   let tmp4 = shown;
@@ -37,8 +44,7 @@ const memoResult = importAllResult.memo((shown) => {
   if (tmp4) {
     tmp3(false);
   }
-  const ref = importAllResult.useRef(shown);
-  callback = ref;
+  ref = importAllResult.useRef(shown);
   const effect = importAllResult.useEffect(() => {
     let current = ref.current;
     if (!current) {
@@ -54,9 +60,9 @@ const memoResult = importAllResult.memo((shown) => {
   }, items);
   const items1 = [renderContent, shown];
   const memo = importAllResult.useMemo(() => renderContent(shown), items1);
-  if (importDefault(dependencyMap[7])(ref)) {
+  if (renderContent(5122)(ref)) {
     const obj = { freeze: first, children: memo };
-    let tmp10 = callback2(arg1(dependencyMap[8]).Freeze, obj);
+    let tmp10 = callback(shown(4489).Freeze, obj);
   } else {
     tmp10 = null;
   }
@@ -65,30 +71,25 @@ const memoResult = importAllResult.memo((shown) => {
 let closure_13 = { code: "function VoicePanelControlsDrawerTsx1(){const{getControlsDrawerOpenWidth,windowDimensions,safeArea,withSpring,wrapperSpecs,TRANSITIONAL_HEIGHT,MODE_CHANGE_PHYSICS}=this.__closure;return{width:getControlsDrawerOpenWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right),opacity:withSpring(wrapperSpecs.get().height>=TRANSITIONAL_HEIGHT?1:0,MODE_CHANGE_PHYSICS)};}" };
 let closure_14 = { code: "function VoicePanelControlsDrawerTsx2(){const{wrapperSpecs,mode}=this.__closure;return[wrapperSpecs.get().drawerMode,mode.get()];}" };
 let closure_15 = { code: "function VoicePanelControlsDrawerTsx3(props,previous){const{cheapWorkletArrayShallowEqual,VoicePanelModes,runOnJS,setFreeze}=this.__closure;if(cheapWorkletArrayShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const[isDrawer,mode]=props;if(previous!=null&&isDrawer===previous[0]&&mode===previous[1]){return;}if(mode!==VoicePanelModes.PANEL||!isDrawer){runOnJS(setFreeze)(true);}else{runOnJS(setFreeze)(false);}}" };
-const obj2 = arg1(dependencyMap[5]);
 const memoResult1 = importAllResult.memo(function VoicePanelControlsDrawer(gestureSpecs) {
   let sharedTab;
   let tab;
   let wrapperSpecs;
   ({ tab, sharedTab, wrapperSpecs } = gestureSpecs);
-  const arg1 = wrapperSpecs;
   gestureSpecs = gestureSpecs.gestureSpecs;
-  const importDefault = gestureSpecs;
   const openTab = gestureSpecs.openTab;
-  const dependencyMap = openTab;
-  const context = importAllResult.useContext(importDefault(dependencyMap[10]));
+  const context = windowDimensions.useContext(gestureSpecs(openTab[10]));
   const mode = context.mode;
-  let callback = mode;
-  const windowDimensions = context.windowDimensions;
+  windowDimensions = context.windowDimensions;
   const safeArea = context.safeArea;
-  const tmp3 = callback(windowDimensions.useState(null == tab), 2);
-  const first = tmp3[0];
-  const tmp5 = tmp3[1];
-  const tmp2 = callback3();
+  let tmp3 = mode(windowDimensions.useState(null == tab), 2);
+  let first = tmp3[0];
+  let closure_6 = tmp5;
+  const tmp2 = callback2();
   if (tmp6) {
     tmp5(false);
   }
-  let obj = arg1(dependencyMap[11]);
+  let obj = wrapperSpecs(openTab[11]);
   const fn = function b() {
     const obj = { width: wrapperSpecs(openTab[12]).getControlsDrawerOpenWidth(windowDimensions.get().width, safeArea.get().left, safeArea.get().right) };
     const obj2 = wrapperSpecs(openTab[12]);
@@ -96,15 +97,15 @@ const memoResult1 = importAllResult.memo(function VoicePanelControlsDrawer(gestu
     if (wrapperSpecs.get().height >= 200) {
       num = 1;
     }
-    obj.opacity = wrapperSpecs(openTab[13]).withSpring(num, closure_7);
+    obj.opacity = wrapperSpecs(openTab[13]).withSpring(num, outer1_7);
     return obj;
   };
-  obj = { getControlsDrawerOpenWidth: arg1(dependencyMap[12]).getControlsDrawerOpenWidth, windowDimensions, safeArea, withSpring: arg1(dependencyMap[13]).withSpring, wrapperSpecs, TRANSITIONAL_HEIGHT: 200, MODE_CHANGE_PHYSICS: closure_7 };
+  obj = { getControlsDrawerOpenWidth: wrapperSpecs(openTab[12]).getControlsDrawerOpenWidth, windowDimensions, safeArea, withSpring: wrapperSpecs(openTab[13]).withSpring, wrapperSpecs, TRANSITIONAL_HEIGHT: 200, MODE_CHANGE_PHYSICS: closure_7 };
   fn.__closure = obj;
   fn.__workletHash = 8777106499672;
   fn.__initData = closure_13;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = arg1(dependencyMap[11]);
+  let obj2 = wrapperSpecs(openTab[11]);
   class V {
     constructor() {
       items = [, ];
@@ -133,8 +134,8 @@ const memoResult1 = importAllResult.memo(function VoicePanelControlsDrawer(gestu
         tmp5 = tmp3[1];
         tmp6 = null != arg1 && first === arg1[0] && tmp5 === arg1[1];
         if (!tmp6) {
-          tmp7 = closure_8;
-          if (tmp5 === closure_8.PANEL) {
+          tmp7 = outer1_8;
+          if (tmp5 === outer1_8.PANEL) {
             if (first) {
               tmp12 = wrapperSpecs;
               tmp13 = openTab;
@@ -157,17 +158,17 @@ const memoResult1 = importAllResult.memo(function VoicePanelControlsDrawer(gestu
       return;
     }
   }
-  obj = { cheapWorkletArrayShallowEqual: arg1(dependencyMap[14]).cheapWorkletArrayShallowEqual, VoicePanelModes: closure_8, runOnJS: arg1(dependencyMap[11]).runOnJS, setFreeze: tmp5 };
+  obj = { cheapWorkletArrayShallowEqual: wrapperSpecs(openTab[14]).cheapWorkletArrayShallowEqual, VoicePanelModes: closure_8, runOnJS: wrapperSpecs(openTab[11]).runOnJS, setFreeze: tmp5 };
   M.__closure = obj;
   M.__workletHash = 10375596551326;
   M.__initData = closure_15;
   const animatedReaction = obj2.useAnimatedReaction(V, M);
-  const items = [openTab];
+  let items = [openTab];
   const items1 = [gestureSpecs];
-  callback = importAllResult.useCallback((isVisible) => callback(gestureSpecs(openTab[15]), { isVisible, openTab }), items);
-  const callback1 = importAllResult.useCallback(() => callback(gestureSpecs(openTab[16]), { gestureSpecs }), items1);
+  const callback = windowDimensions.useCallback((isVisible) => outer1_9(gestureSpecs(openTab[15]), { isVisible, openTab }), items);
+  const callback1 = windowDimensions.useCallback(() => outer1_9(gestureSpecs(openTab[16]), { gestureSpecs }), items1);
   const obj1 = { style: items2 };
-  const items2 = [tmp2.drawer, animatedStyle];
+  items2 = [tmp2.drawer, animatedStyle];
   obj2 = {};
   let tmp15 = !first;
   if (tmp15) {
@@ -175,15 +176,15 @@ const memoResult1 = importAllResult.memo(function VoicePanelControlsDrawer(gestu
   }
   obj2.shown = tmp15;
   obj2.renderContent = renderChat;
-  const items3 = [closure_9(memoResult, obj2), , ];
-  const obj3 = {};
+  const items3 = [closure_9(closure_12, obj2), , ];
+  let obj3 = {};
   let tmp18 = !first;
   if (tmp18) {
     tmp18 = "settings" === tab;
   }
   obj3.shown = tmp18;
   obj3.renderContent = callback;
-  items3[1] = closure_9(memoResult, obj3);
+  items3[1] = closure_9(closure_12, obj3);
   const obj4 = {};
   let tmp21 = !first;
   if (tmp21) {
@@ -191,11 +192,11 @@ const memoResult1 = importAllResult.memo(function VoicePanelControlsDrawer(gestu
   }
   obj4.shown = tmp21;
   obj4.renderContent = callback1;
-  items3[2] = closure_9(memoResult, obj4);
+  items3[2] = closure_9(closure_12, obj4);
   obj1.children = items3;
-  return closure_10(importDefault(dependencyMap[11]).View, obj1);
+  return closure_10(gestureSpecs(openTab[11]).View, obj1);
 });
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsDrawer.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsDrawer.tsx");
 
 export default memoResult1;
 export const LazyContentFreezer = memoResult;

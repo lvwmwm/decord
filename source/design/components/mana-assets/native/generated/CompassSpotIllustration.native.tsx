@@ -1,13 +1,13 @@
-// Module ID: 5961
-// Function ID: 49874
+// Module ID: 5966
+// Function ID: 49903
 // Name: CompassSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 5967, 2]
 // Exports: CompassSpotIllustration
 
-// Module 5961 (CompassSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CompassSpotIllustration.native.tsx");
+// Module 5966 (CompassSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CompassSpotIllustration.native.tsx");
 
 export const CompassSpotIllustration = function CompassSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const CompassSpotIllustration = function CompassSpotIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5967) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const CompassSpotIllustration = function CompassSpotIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

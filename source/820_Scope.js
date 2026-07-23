@@ -1,19 +1,20 @@
 // Module ID: 820
-// Function ID: 9162
+// Function ID: 9163
 // Name: Scope
-// Dependencies: []
+// Dependencies: [77, 65, 6, 7, 806, 808, 821, 822, 804, 815, 809, 823, 807, 800, 801]
 
 // Module 820 (Scope)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
+import _defineProperty from "_defineProperty";
+import _toConsumableArray from "_toConsumableArray";
+import _classCallCheck from "_getSpanForScope";
+import _defineProperties from "updateSession";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const Scope = () => {
+export const Scope = (() => {
   class Scope {
     constructor() {
-      tmp = closure_4(this, Scope);
+      tmp = outer1_4(this, Scope);
       this._notifyingListeners = false;
       this._scopeListeners = [];
       this._eventProcessors = [];
@@ -26,37 +27,36 @@ export const Scope = () => {
       this._contexts = {};
       this._sdkProcessingMetadata = {};
       obj = {};
-      obj2 = Scope(closure_1[4]);
+      obj2 = Scope(outer1_1[4]);
       obj.traceId = obj2.generateTraceId();
-      obj3 = Scope(closure_1[5]);
+      obj3 = Scope(outer1_1[5]);
       obj.sampleRand = obj3.safeMathRandom();
       this._propagationContext = obj;
       return;
     }
   }
-  const require = Scope;
   let obj = {
     key: "clone",
     value: function clone() {
       const self = this;
       const tmp = new Scope();
-      tmp._breadcrumbs = callback2(this._breadcrumbs);
+      tmp._breadcrumbs = outer1_3(this._breadcrumbs);
       tmp._tags = Object.assign({}, this._tags);
       tmp._attributes = Object.assign({}, this._attributes);
       tmp._extra = Object.assign({}, this._extra);
       tmp._contexts = Object.assign({}, this._contexts);
       if (this._contexts.flags) {
-        const obj = { values: callback2(self._contexts.flags.values) };
+        const obj = { values: outer1_3(self._contexts.flags.values) };
         tmp._contexts.flags = obj;
       }
       ({ _user: tmp._user, _level: tmp._level, _session: tmp._session, _transactionName: tmp._transactionName, _fingerprint: tmp._fingerprint } = self);
-      tmp._eventProcessors = callback2(self._eventProcessors);
-      tmp._attachments = callback2(self._attachments);
+      tmp._eventProcessors = outer1_3(self._eventProcessors);
+      tmp._attachments = outer1_3(self._attachments);
       tmp._sdkProcessingMetadata = Object.assign({}, self._sdkProcessingMetadata);
       tmp._propagationContext = Object.assign({}, self._propagationContext);
       ({ _client: tmp._client, _lastEventId: tmp._lastEventId } = self);
-      const obj2 = Scope(closure_1[6]);
-      obj2._setSpanForScope(tmp, Scope(closure_1[6])._getSpanForScope(self));
+      const obj2 = Scope(outer1_1[6]);
+      obj2._setSpanForScope(tmp, Scope(outer1_1[6])._getSpanForScope(self));
       return tmp;
     }
   };
@@ -114,8 +114,8 @@ export const Scope = () => {
       self._user = tmp;
       if (self._session) {
         obj = { user };
-        Scope(closure_1[7]).updateSession(self._session, obj);
-        const obj2 = Scope(closure_1[7]);
+        Scope(outer1_1[7]).updateSession(self._session, obj);
+        const obj2 = Scope(outer1_1[7]);
       }
       const result = self._notifyScopeListeners();
       return self;
@@ -138,7 +138,7 @@ export const Scope = () => {
   items[10] = {
     key: "setTag",
     value: function setTag(arg0, arg1) {
-      return this.setTags(callback({}, arg0, arg1));
+      return this.setTags(outer1_2({}, arg0, arg1));
     }
   };
   items[11] = {
@@ -152,7 +152,7 @@ export const Scope = () => {
   items[12] = {
     key: "setAttribute",
     value: function setAttribute(arg0, arg1) {
-      return this.setAttributes(callback({}, arg0, arg1));
+      return this.setAttributes(outer1_2({}, arg0, arg1));
     }
   };
   items[13] = {
@@ -161,7 +161,7 @@ export const Scope = () => {
       const self = this;
       if (crossorigin in this._attributes) {
         const _attributes = self._attributes;
-        delete r1[r2];
+        delete tmp[tmp2];
         const result = self._notifyScopeListeners();
       }
       return self;
@@ -178,7 +178,7 @@ export const Scope = () => {
   items[15] = {
     key: "setExtra",
     value: function setExtra(arg0, arg1) {
-      this._extra = Object.assign({}, this._extra, callback({}, arg0, arg1));
+      this._extra = Object.assign({}, this._extra, outer1_2({}, arg0, arg1));
       const result = this._notifyScopeListeners();
       return this;
     }
@@ -213,7 +213,7 @@ export const Scope = () => {
       const self = this;
       if (null === arg1) {
         const _contexts = self._contexts;
-        delete r1[r2];
+        delete tmp[tmp2];
       } else {
         self._contexts[arg0] = arg1;
       }
@@ -228,7 +228,7 @@ export const Scope = () => {
       if (_session) {
         self._session = _session;
       } else {
-        delete r0._session;
+        delete tmp._session;
       }
       const result = self._notifyScopeListeners();
       return self;
@@ -262,7 +262,7 @@ export const Scope = () => {
           if (obj3.isPlainObject(obj)) {
             scopeData = arg0;
           }
-          const obj3 = Scope(closure_1[8]);
+          obj3 = Scope(outer1_1[8]);
         }
         if (!scopeData) {
           scopeData = {};
@@ -317,12 +317,12 @@ export const Scope = () => {
       this._transactionName = undefined;
       this._fingerprint = undefined;
       this._session = undefined;
-      let obj = Scope(closure_1[6]);
+      let obj = Scope(outer1_1[6]);
       obj._setSpanForScope(this, undefined);
       this._attachments = [];
-      obj = { traceId: Scope(closure_1[4]).generateTraceId() };
-      const obj3 = Scope(closure_1[4]);
-      obj.sampleRand = Scope(closure_1[5]).safeMathRandom();
+      obj = { traceId: Scope(outer1_1[4]).generateTraceId() };
+      const obj3 = Scope(outer1_1[4]);
+      obj.sampleRand = Scope(outer1_1[5]).safeMathRandom();
       const result = this.setPropagationContext(obj);
       const result1 = this._notifyScopeListeners();
       return this;
@@ -339,10 +339,10 @@ export const Scope = () => {
       if (num <= 0) {
         return self;
       } else {
-        let obj = { timestamp: Scope(closure_1[9]).dateTimestampInSeconds() };
+        let obj = { timestamp: Scope(outer1_1[9]).dateTimestampInSeconds() };
         obj = {};
         if (message.message) {
-          obj = Scope(closure_1[10]);
+          obj = Scope(outer1_1[10]);
           message = obj.truncate(message.message, 2048);
         } else {
           message = message.message;
@@ -396,14 +396,14 @@ export const Scope = () => {
     key: "getScopeData",
     value: function getScopeData() {
       const self = this;
-      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, attributes: this._attributes, extra: this._extra, user: this._user, level: this._level, fingerprint: tmp, eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: Scope(closure_1[6])._getSpanForScope(self) };
+      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, attributes: this._attributes, extra: this._extra, user: this._user, level: this._level, fingerprint: tmp, eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: Scope(outer1_1[6])._getSpanForScope(self) };
       return obj;
     }
   };
   items[30] = {
     key: "setSDKProcessingMetadata",
     value: function setSDKProcessingMetadata(arg0) {
-      this._sdkProcessingMetadata = Scope(closure_1[11]).merge(this._sdkProcessingMetadata, arg0, 2);
+      this._sdkProcessingMetadata = Scope(outer1_1[11]).merge(this._sdkProcessingMetadata, arg0, 2);
       return this;
     }
   };
@@ -429,7 +429,7 @@ export const Scope = () => {
         event_id = event_id.event_id;
       }
       if (!event_id) {
-        let obj = Scope(closure_1[12]);
+        let obj = Scope(outer1_1[12]);
         event_id = obj.uuid4();
       }
       if (self._client) {
@@ -442,8 +442,8 @@ export const Scope = () => {
         _client.captureException(originalException, Object.assign(obj, event_id, obj), self);
         return event_id;
       } else {
-        if (Scope(closure_1[13]).DEBUG_BUILD) {
-          const debug = Scope(closure_1[14]).debug;
+        if (Scope(outer1_1[13]).DEBUG_BUILD) {
+          const debug = Scope(outer1_1[14]).debug;
           debug.warn("No client configured on scope - will not capture exception!");
         }
         return event_id;
@@ -459,7 +459,7 @@ export const Scope = () => {
         event_id = event_id.event_id;
       }
       if (!event_id) {
-        let obj = Scope(closure_1[12]);
+        let obj = Scope(outer1_1[12]);
         event_id = obj.uuid4();
       }
       if (self._client) {
@@ -478,8 +478,8 @@ export const Scope = () => {
         _client.captureMessage(originalException, arg1, Object.assign(obj, event_id, obj), self);
         return event_id;
       } else {
-        if (Scope(closure_1[13]).DEBUG_BUILD) {
-          const debug = Scope(closure_1[14]).debug;
+        if (Scope(outer1_1[13]).DEBUG_BUILD) {
+          const debug = Scope(outer1_1[14]).debug;
           debug.warn("No client configured on scope - will not capture message!");
         }
         return event_id;
@@ -495,7 +495,7 @@ export const Scope = () => {
         event_id = event_id.event_id;
       }
       if (!event_id) {
-        let obj = Scope(closure_1[12]);
+        let obj = Scope(outer1_1[12]);
         event_id = obj.uuid4();
       }
       if (self._client) {
@@ -503,8 +503,8 @@ export const Scope = () => {
         const _Object = Object;
         obj = { event_id };
         _client.captureEvent(arg0, Object.assign({}, event_id, obj), self);
-      } else if (Scope(closure_1[13]).DEBUG_BUILD) {
-        const debug = Scope(closure_1[14]).debug;
+      } else if (Scope(outer1_1[13]).DEBUG_BUILD) {
+        const debug = Scope(outer1_1[14]).debug;
         debug.warn("No client configured on scope - will not capture event!");
       }
       return event_id;
@@ -513,8 +513,8 @@ export const Scope = () => {
   items[36] = {
     key: "_notifyScopeListeners",
     value: function _notifyScopeListeners() {
-      const self = this;
-      const Scope = this;
+      let self = this;
+      self = this;
       if (!this._notifyingListeners) {
         self._notifyingListeners = true;
         const _scopeListeners = self._scopeListeners;
@@ -525,5 +525,5 @@ export const Scope = () => {
       }
     }
   };
-  return callback(Scope, items);
-}();
+  return _defineProperties(Scope, items);
+})();

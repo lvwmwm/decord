@@ -1,11 +1,25 @@
-// Module ID: 15458
-// Function ID: 117902
+// Module ID: 15575
+// Function ID: 120076
 // Name: PendingSpamMessageRequestRow
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1212, 11483, 3831, 9176, 4138, 4337, 11475, 675, 4660, 15560, 1273, 10332, 13826, 7495, 1557, 15569, 15576, 15567, 4559, 6837, 6842, 15570, 477, 4126, 2]
 // Exports: default
 
-// Module 15458 (PendingSpamMessageRequestRow)
+// Module 15575 (PendingSpamMessageRequestRow)
+import result from "result";
+import get_ActivityIndicator from "MessageRequestEmpty";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
 function PendingSpamMessageRequestRow(isLastRow) {
+  let c6;
+  let c7;
   let hasSingleMessageRequest;
   let isAcceptLoading;
   let isOptimisticAccepted;
@@ -13,13 +27,13 @@ function PendingSpamMessageRequestRow(isLastRow) {
   let isRejectLoading;
   let isUserProfileLoading;
   let messageRequest;
-  ({ messageRequest, goToMessageRequestPreview: closure_0, hasSingleMessageRequest } = isLastRow);
-  const importDefault = hasSingleMessageRequest;
-  let dependencyMap;
-  let React;
+  let require;
+  ({ messageRequest, goToMessageRequestPreview: require, hasSingleMessageRequest } = isLastRow);
+  let str;
+  let channel;
   let closure_5;
-  let closure_6;
-  let closure_7;
+  c6 = undefined;
+  c7 = undefined;
   function handleRejectMessageRequest(Icon, arg1) {
     _undefined(channel.id);
   }
@@ -32,35 +46,32 @@ function PendingSpamMessageRequestRow(isLastRow) {
     obj.track(_undefined2.MESSAGE_REQUEST_PREVIEW_VIEWED, obj);
     callback();
   }
-  const callback2 = handleSelectRow;
-  const tmp = callback2();
-  let str = messageRequest.user;
-  dependencyMap = str;
-  const channel = messageRequest.channel;
-  React = channel;
+  const tmp = handleSelectRow();
+  str = messageRequest.user;
+  channel = messageRequest.channel;
   const id = channel.id;
-  let obj = arg1(dependencyMap[7]);
+  let obj = require(str[7]);
   closure_5 = obj.useLongestChannelMessageBeforeReply(id, channel.getRecipientId());
   const items = [id, hasSingleMessageRequest];
-  const callback = React.useCallback(() => {
+  const callback = channel.useCallback(() => {
     let obj = hasSingleMessageRequest(str[8]);
     obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE" };
-    const intl = callback(str[6]).intl;
-    obj.content = intl.string(callback(str[6]).t.pIQ3h4);
+    const intl = outer1_0(str[6]).intl;
+    obj.content = intl.string(outer1_0(str[6]).t.pIQ3h4);
     obj.icon = hasSingleMessageRequest(str[9]);
     obj.open(obj);
   }, []);
-  const callback1 = React.useCallback(() => {
+  const callback1 = channel.useCallback(() => {
     if (hasSingleMessageRequest) {
-      callback(str[10]).transitionToChannel(id);
+      outer1_0(str[10]).transitionToChannel(id);
       let arr = hasSingleMessageRequest(str[11]);
       arr = arr.pop();
-      const obj = callback(str[10]);
+      const obj = outer1_0(str[10]);
     }
   }, items);
-  let obj1 = arg1(dependencyMap[12]);
+  let obj1 = require(str[12]);
   const messageRequestActions = obj1.useMessageRequestActions({ user: str, onAcceptSuccess: callback1, onError: callback });
-  ({ rejectMessageRequest: closure_6, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected, markAsNotSpam: closure_7 } = messageRequestActions);
+  ({ rejectMessageRequest: c6, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected, markAsNotSpam: c7 } = messageRequestActions);
   let tmp5 = isAcceptLoading;
   if (!isAcceptLoading) {
     tmp5 = isRejectLoading;
@@ -76,41 +87,41 @@ function PendingSpamMessageRequestRow(isLastRow) {
   }
   obj = { onPress: handleSelectRow, accessibilityRole: "button" };
   obj = { name: constants.ACCEPT_SPAM_MESSAGE };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.label = intl.string(arg1(dependencyMap[6]).t.apePSa);
+  let intl = require(str[6]).intl;
+  obj.label = intl.string(require(str[6]).t.apePSa);
   const items1 = [obj, , ];
   obj1 = { name: constants.IGNORE_SPAM_MESSAGE };
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj1.label = intl2.string(arg1(dependencyMap[6]).t.MWOV9D);
+  const intl2 = require(str[6]).intl;
+  obj1.label = intl2.string(require(str[6]).t.MWOV9D);
   items1[1] = obj1;
   const obj2 = { name: constants.PREVIEW_SPAM_MESSAGE };
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj2.label = intl3.string(arg1(dependencyMap[6]).t.I6PFLB);
+  const intl3 = require(str[6]).intl;
+  obj2.label = intl3.string(require(str[6]).t.I6PFLB);
   items1[2] = obj2;
   obj.accessibilityActions = items1;
   obj.onAccessibilityAction = function onAccessibilityAction(nativeEvent) {
     const actionName = nativeEvent.nativeEvent.actionName;
-    if (constants.ACCEPT_SPAM_MESSAGE === actionName) {
+    if (outer1_11.ACCEPT_SPAM_MESSAGE === actionName) {
       handleAcceptMessageRequest();
-    } else if (constants.IGNORE_SPAM_MESSAGE === actionName) {
+    } else if (outer1_11.IGNORE_SPAM_MESSAGE === actionName) {
       handleRejectMessageRequest();
-    } else if (constants.PREVIEW_SPAM_MESSAGE === actionName) {
+    } else if (outer1_11.PREVIEW_SPAM_MESSAGE === actionName) {
       handleSelectRow();
     }
   };
   obj.style = tmp.pressableRow;
   const obj3 = { style: tmp.rowContainer };
-  const items2 = [handleRejectMessageRequest(importDefault(dependencyMap[15]), { channel: messageRequest.channel, otherUser: messageRequest.user }), ];
+  const items2 = [handleRejectMessageRequest(hasSingleMessageRequest(str[15]), { channel: messageRequest.channel, otherUser: messageRequest.user }), ];
   const obj5 = { style: tmp.actionContainer };
   const obj6 = { accessibilityRole: "button" };
-  const intl4 = arg1(dependencyMap[6]).intl;
+  const intl4 = require(str[6]).intl;
   const obj7 = {};
   str = undefined;
   if (null != str) {
     str = str.toString();
   }
   obj7.name = str;
-  obj6.accessibilityLabel = intl4.formatToPlainString(arg1(dependencyMap[6]).t.6p0yBo, obj7);
+  obj6.accessibilityLabel = intl4.formatToPlainString(require(str[6]).t["6p0yBo"], obj7);
   obj6.onPress = handleAcceptMessageRequest;
   obj6.disabled = tmp5;
   const items3 = [, ];
@@ -119,98 +130,92 @@ function PendingSpamMessageRequestRow(isLastRow) {
   if (!isAcceptLoading) {
     if (!isUserProfileLoading) {
       if (!isOptimisticAccepted) {
-        const obj8 = { size: arg1(dependencyMap[16]).Icon.Sizes.SMALL, disableColor: true, source: importDefault(dependencyMap[17]) };
-        let tmp17 = handleRejectMessageRequest(arg1(dependencyMap[16]).Icon, obj8);
+        const obj8 = { size: require(str[16]).Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[17]) };
+        let tmp17 = handleRejectMessageRequest(require(str[16]).Icon, obj8);
       }
       obj6.children = tmp17;
-      const items4 = [handleRejectMessageRequest(arg1(dependencyMap[14]).PressableOpacity, obj6), ];
+      const items4 = [handleRejectMessageRequest(require(str[14]).PressableOpacity, obj6), ];
       const obj9 = { accessibilityRole: "button" };
-      const intl5 = arg1(dependencyMap[6]).intl;
+      const intl5 = require(str[6]).intl;
       const obj10 = {};
       let str1;
       if (null != str) {
         str1 = str.toString();
       }
       obj10.name = str1;
-      obj9.accessibilityLabel = intl5.formatToPlainString(arg1(dependencyMap[6]).t.C9Xe6+, obj10);
+      obj9.accessibilityLabel = intl5.formatToPlainString(require(str[6]).t["C9Xe6+"], obj10);
       obj9.onPress = handleRejectMessageRequest;
       obj9.disabled = tmp5;
       obj9.style = tmp.actionButton;
       if (!isRejectLoading) {
         if (!isOptimisticRejected) {
-          const obj11 = { size: arg1(dependencyMap[16]).Icon.Sizes.SMALL, disableColor: true, source: importDefault(dependencyMap[18]) };
-          let tmp26 = handleRejectMessageRequest(arg1(dependencyMap[16]).Icon, obj11);
+          const obj11 = { size: require(str[16]).Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[18]) };
+          let tmp26 = handleRejectMessageRequest(require(str[16]).Icon, obj11);
         }
         obj9.children = tmp26;
-        items4[1] = tmp18(arg1(dependencyMap[14]).PressableOpacity, obj9);
+        items4[1] = tmp18(require(str[14]).PressableOpacity, obj9);
         obj5.children = items4;
         items2[1] = handleAcceptMessageRequest(closure_5, obj5);
         obj3.children = items2;
         const items5 = [handleAcceptMessageRequest(closure_5, obj3), ];
         let tmp29 = null;
         if (!isLastRow.isLastRow) {
-          tmp29 = handleRejectMessageRequest(arg1(dependencyMap[19]).FormDivider, { "Bool(true)": null, "Bool(true)": null });
+          tmp29 = handleRejectMessageRequest(require(str[19]).FormDivider, { iconPush: true, outer: true });
         }
         items5[1] = tmp29;
         obj.children = items5;
-        return handleAcceptMessageRequest(arg1(dependencyMap[14]).PressableOpacity, obj);
+        return handleAcceptMessageRequest(require(str[14]).PressableOpacity, obj);
       }
       const obj12 = { style: tmp.activityIndicator };
       tmp26 = handleRejectMessageRequest(id, obj12);
-      const tmp18 = handleRejectMessageRequest;
+      tmp18 = handleRejectMessageRequest;
     }
   }
   tmp17 = handleRejectMessageRequest(id, { style: tmp.activityIndicator });
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ ActivityIndicator: closure_4, View: closure_5, FlatList: closure_6 } = arg1(dependencyMap[1]));
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { "Bool(false)": 1744764930, "Bool(false)": -162463743, "Bool(false)": 1262555629, "Bool(false)": 1912602980, "Bool(false)": 23, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.sectionContainer = obj;
-obj.rowContainer = {};
-obj.actionContainer = { ellipsizeMode: -1023409591, lineClamp: 1358954962, variant: 426962422 };
-const tmp3 = arg1(dependencyMap[3]);
-obj.actionButton = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, tintColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.acceptButton = { marginRight: 16 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH, tintColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: importDefault(dependencyMap[5]).radii.lg };
-obj.pressableRow = { borderRadius: importDefault(dependencyMap[5]).radii.md };
-obj.activityIndicator = { hideWhenScrolling: null, autoCapitalize: null };
-const obj3 = { 2022013060: false, 2022144134: false, 395540617: false, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.list = obj3;
-let closure_10 = obj.createStyles(obj);
+({ ActivityIndicator: closure_4, View: closure_5, FlatList: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flexDirection: "row", justifyContent: "space-between", marginTop: 6, marginBottom: 10 };
+_createForOfIteratorHelperLoose.sectionContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.rowContainer = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 12 };
+_createForOfIteratorHelperLoose.actionContainer = { flexDirection: "row", alignItems: "flex-start", height: "100%" };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
+_createForOfIteratorHelperLoose.actionButton = obj1;
+_createForOfIteratorHelperLoose.acceptButton = { marginRight: 16 };
+_createForOfIteratorHelperLoose.pressableRow = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+_createForOfIteratorHelperLoose.activityIndicator = { height: 16, width: 16 };
+let obj3 = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.list = obj3;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_11 = { ACCEPT_SPAM_MESSAGE: "accept-spam-message-request", IGNORE_SPAM_MESSAGE: "ignore-spam-message-request", PREVIEW_SPAM_MESSAGE: "preview-spam-message-request" };
-const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.md };
-const result = arg1(dependencyMap[30]).fileFinishedImporting("modules/message_request/native/spam/SpamMessageList.tsx");
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+const result = require("ME").fileFinishedImporting("modules/message_request/native/spam/SpamMessageList.tsx");
 
 export default function SpamMessageList(goToMessageRequestPreview) {
-  const arg1 = goToMessageRequestPreview.goToMessageRequestPreview;
-  const tmp = callback2();
+  goToMessageRequestPreview = goToMessageRequestPreview.goToMessageRequestPreview;
+  const tmp = _createForOfIteratorHelperLoose();
   const importDefault = tmp;
-  const bottom = importDefault(closure_2[20])().bottom;
-  let obj = arg1(closure_2[21]);
-  closure_2 = obj.useSpamMessageRequestCount();
-  const arr = importDefault(closure_2[22])();
-  let closure_3 = arr;
-  let obj1 = arg1(closure_2[23]);
+  const bottom = importDefault(1557)().bottom;
+  let obj = goToMessageRequestPreview(15569);
+  const dependencyMap = obj.useSpamMessageRequestCount();
+  const arr = importDefault(15576)();
+  let obj1 = goToMessageRequestPreview(15567);
   let closure_4 = obj1.useListHasSingleSpamMessageRequest();
-  importDefault(closure_2[24])(() => {
-    let obj = tmp(closure_2[13]);
-    obj = { num_spam_message_requests: closure_2 };
-    obj.track(constants.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
-    obj = { name: goToMessageRequestPreview(closure_2[26]).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
-    tmp(closure_2[25]).increment(obj);
+  importDefault(4559)(() => {
+    let obj = tmp(675);
+    obj = { num_spam_message_requests: dependencyMap };
+    obj.track(outer1_7.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
+    obj = { name: goToMessageRequestPreview(6842).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
+    tmp(6837).increment(obj);
   });
   if (0 === arr.length) {
     obj = {};
-    const intl = arg1(closure_2[6]).intl;
-    obj.bodyText = intl.string(arg1(closure_2[6]).t.hasFPQ);
-    return callback(importDefault(closure_2[27]), obj);
+    let intl = goToMessageRequestPreview(1212).intl;
+    obj.bodyText = intl.string(goToMessageRequestPreview(1212).t.hasFPQ);
+    return callback(importDefault(15570), obj);
   } else {
-    const items = [1649885696];
+    const items = ["header-section"];
     HermesBuiltin.arraySpread(arr, 1);
     obj = {};
     const items1 = [tmp.list, ];
@@ -228,15 +233,14 @@ export default function SpamMessageList(goToMessageRequestPreview) {
     obj.contentContainerStyle = obj3;
     obj.renderItem = function renderItem(item) {
       item = item.item;
-      const goToMessageRequestPreview = item;
       if ("string" === typeof item) {
         let obj = { style: tmp.sectionContainer };
-        obj = { cachedAt: "/assets/images/native/premium/illustrations", edpbxy: 51 };
-        const intl = goToMessageRequestPreview(closure_2[6]).intl;
+        obj = { variant: "eyebrow", color: "text-default" };
+        const intl = goToMessageRequestPreview(1212).intl;
         obj = { count: arr.length };
-        obj.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj);
-        obj.children = callback(goToMessageRequestPreview(closure_2[29]).Text, obj);
-        let tmp11Result = callback(closure_5, obj);
+        obj.children = intl.format(goToMessageRequestPreview(1212).t.aNh5Kf, obj);
+        obj.children = outer1_8(goToMessageRequestPreview(4126).Text, obj);
+        let tmp11Result = outer1_8(outer1_5, obj);
       } else {
         const obj1 = {
           messageRequest: item,
@@ -245,14 +249,14 @@ export default function SpamMessageList(goToMessageRequestPreview) {
             }
         };
         let id;
-        if (null != arr[closure_3.length - 1]) {
+        if (null != arr[arr.length - 1]) {
           id = tmp14.channel.id;
         }
         obj1.isLastRow = item.channel.id === id;
         obj1.hasSingleMessageRequest = closure_4;
-        tmp11Result = callback(closure_12, obj1, item.channel.id);
-        const tmp11 = callback;
-        const tmp12 = closure_12;
+        tmp11Result = outer1_8(outer1_12, obj1, item.channel.id);
+        const tmp11 = outer1_8;
+        const tmp12 = outer1_12;
       }
       return tmp11Result;
     };

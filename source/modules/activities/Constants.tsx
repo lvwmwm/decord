@@ -1,21 +1,24 @@
-// Module ID: 4151
-// Function ID: 35104
+// Module ID: 4155
+// Function ID: 35136
 // Name: items3
-// Dependencies: []
+// Dependencies: [653, 1881, 2]
 // Exports: getAppIntentScheme
 
-// Module 4151 (items3)
-const ChannelTypes = require(dependencyMap[0]).ChannelTypes;
+// Module 4155 (items3)
+import { ChannelTypes } from "ME";
+import set from "set";
+
 const items = ["1037680572660727838", "235088799074484224", "1007373802981822582", "1067803140071620628", "1194351737264406548", "1245041113882955918", "1245040907732910201", "1245040436427489471", "1208090049871351890", "1235205910863806484", "1227719606223765687"];
 const items1 = ["1247266306231898122", "1257458870390099989", "1276239071764680926"];
 let obj = { UNLOCKED: 1, [1]: "UNLOCKED", PORTRAIT: 2, [2]: "PORTRAIT", LANDSCAPE: 3, [3]: "LANDSCAPE" };
 const items2 = ["755600276941176913", "880218832743055411", "1050941315912835122", "880218394199220334"];
-obj = { label_type: require(dependencyMap[1]).EmbeddedActivityLabelTypes.NONE, omit_badge_from_surfaces: [] };
-obj = { <string:7611998>: 0.12841855, <string:16777216>: 0.008856452, <string:33554432>: 958236370018977700000000000000000000000000 };
+let set = new Set(items2);
+obj = { label_type: require("PermissionOverwriteType").EmbeddedActivityLabelTypes.NONE, release_phase: "", label_from: null, label_until: null, omit_badge_from_surfaces: [] };
+obj = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_ratio: false };
 ({ UNLOCKED: obj3.default_orientation_lock_state, UNLOCKED: obj3.tablet_default_orientation_lock_state } = obj);
-const items3 = [require(dependencyMap[1]).EmbeddedActivitySupportedPlatforms.WEB];
+const items3 = [require("PermissionOverwriteType").EmbeddedActivitySupportedPlatforms.WEB];
 obj.supported_platforms = items3;
-obj.client_platform_config = { [require(dependencyMap[1]).EmbeddedActivitySupportedPlatforms.WEB]: obj, [require(dependencyMap[1]).EmbeddedActivitySupportedPlatforms.IOS]: obj, [require(dependencyMap[1]).EmbeddedActivitySupportedPlatforms.ANDROID]: obj };
+obj.client_platform_config = { [require(1881).EmbeddedActivitySupportedPlatforms.WEB]: obj, [require(1881).EmbeddedActivitySupportedPlatforms.IOS]: obj, [require(1881).EmbeddedActivitySupportedPlatforms.ANDROID]: obj };
 obj.has_csp_exception = false;
 obj.displays_advertisements = false;
 obj.blocked_locales = [];
@@ -23,8 +26,7 @@ obj.supported_locales = [];
 const items4 = [, , ];
 ({ GUILD_TEXT: arr5[0], DM: arr5[1], GROUP_DM: arr5[2] } = ChannelTypes);
 const items5 = [...items4, ChannelTypes.GUILD_VOICE];
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/activities/Constants.tsx");
+const result = set.fileFinishedImporting("modules/activities/Constants.tsx");
 
 export const ACTIVITY_INVITE_COVER_IMAGE_SIZE = 160;
 export const validStreamURL = /^https?:\/\/(?:www\.)?(twitch\.tv\/(.+)|youtube.com\/watch\?v=)/;
@@ -74,8 +76,8 @@ export const TWELVE_BULLETS_STG = "1257458870390099989";
 export const TWELVE_BULLETS_PRD = "1276239071764680926";
 export const EMBEDDED_ACTIVITY_SURVEY_URL = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu";
 export const EMBEDDED_ACTIVITIES_BLOG_POST_URL = "https://discord.com/blog/server-activities-games-voice-watch-together";
-export const ImageSizes = {};
-export const STAFF_RELEASE_PHASES = [null, null, null];
+export const ImageSizes = { SMALL: 64, LARGE: 160 };
+export const STAFF_RELEASE_PHASES = ["in_development", "activities_team", "employee_release"];
 export const EXCLUDE_FULL_SCREEN_APPS = items;
 export const SHARE_INTERACTION_APPS = items1;
 export const ActivityFeedbackReasons = { ADS: "ADS", FAILED_LOAD: "FAILED_LOAD", LAGGING: "LAGGING", CONFUSING: "CONFUSING", NOT_FUN: "NOT_FUN", OTHER: "OTHER" };
@@ -83,7 +85,7 @@ export const ActivityIntent = { PLAY: 0, [0]: "PLAY", SPECTATE: 1, [1]: "SPECTAT
 export const ActivityPlatform = { DESKTOP: "desktop", MOBILE: "mobile" };
 export const ActivityTooltipName = { BETRAYAL_MARKETING_TOOLTIP: "BETRAYAL_MARKETING_TOOLTIP", FISHINGTON_MARKETING_TOOLTIP: "FISHINGTON_MARKETING_TOOLTIP", POKER_MARKETING_TOOLTIP: "POKER_MARKETING_TOOLTIP", YOUTUBE_MARKETING_TOOLTIP: "YOUTUBE_MARKETING_TOOLTIP" };
 export const OrientationLockState = obj;
-export const APPLICATIONS_WITH_ALLOWED_POPUPS = new Set(items2);
+export const APPLICATIONS_WITH_ALLOWED_POPUPS = set;
 export const ActivityScreenOrientation = { PORTRAIT: 0, [0]: "PORTRAIT", LANDSCAPE: 1, [1]: "LANDSCAPE" };
 export const ActivityLayoutMode = { FOCUSED: 0, [0]: "FOCUSED", PIP: 1, [1]: "PIP", GRID: 2, [2]: "GRID" };
 export const DEFAULT_EMBEDDED_ACTIVITY_CONFIG = obj;

@@ -1,11 +1,10 @@
-// Module ID: 4992
-// Function ID: 43192
+// Module ID: 4995
+// Function ID: 43210
 // Name: EmojiCategoryTypes
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4992 (EmojiCategoryTypes)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/emoji_picker/EmojiPickerConstants.tsx");
+// Module 4995 (EmojiCategoryTypes)
+const result = require("set").fileFinishedImporting("modules/emoji_picker/EmojiPickerConstants.tsx");
 
 export const EmojiCategoryTypes = { GUILD: "GUILD", UNICODE: "UNICODE", RECENT: "RECENT", CUSTOM: "CUSTOM", SEARCH_RESULTS: "SEARCH_RESULTS", FAVORITES: "FAVORITES", TOP_GUILD_EMOJI: "TOP_GUILD_EMOJI", PREMIUM_UPSELL: "PREMIUM_UPSELL", SOUNDMOJI: "SOUNDMOJI", KAOMOJI: "KAOMOJI" };
 export const GRID_NAVIGATOR_ID = "emoji-picker-grid";
@@ -23,5 +22,5 @@ export const KAOMOJI_PICKER_TAB_PANEL_ID = "kaomoji-picker-tab-panel";
 export const KAOMOJI_PICKER_TAB_ID = "kaomoji-picker-tab";
 export const GIF_PICKER_TAB_PANEL_ID = "gif-picker-tab-panel";
 export const GIF_PICKER_TAB_ID = "gif-picker-tab";
-export const EMOJI_SIZE_MAP = { stickerOpaque: true, flexShrink: true, displayProfile: true };
+export const EMOJI_SIZE_MAP = { reaction: 40, default: 44, jumbo: 96 };
 export const EMOJI_ROW_SIZE = 9;

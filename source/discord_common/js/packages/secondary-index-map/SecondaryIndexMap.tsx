@@ -1,12 +1,16 @@
-// Module ID: 3752
-// Function ID: 28657
+// Module ID: 3754
+// Function ID: 28662
 // Name: sortedInsert
-// Dependencies: []
+// Dependencies: [57, 6, 7, 3755, 2]
 
-// Module 3752 (sortedInsert)
+// Module 3754 (sortedInsert)
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 function sortedInsert(arr) {
   if (null != arg1) {
-    const tmp3 = importDefault(dependencyMap[3])(arr, arg1, arg3);
+    const tmp3 = importDefault(3755)(arr, arg1, arg3);
     let tmp4 = tmp3;
     if (arr[tmp3] !== arg1) {
       let tmp5 = tmp3;
@@ -26,14 +30,11 @@ function sortedInsert(arr) {
     arr.splice(tmp4, 1);
   }
   if (null != arg2) {
-    arr.splice(importDefault(dependencyMap[3])(arr, arg2, arg3), 0, arg2);
+    arr.splice(importDefault(3755)(arr, arg2, arg3), 0, arg2);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
 let closure_5 = [];
-const tmp2 = () => {
+let tmp2 = (() => {
   class SecondaryIndexMap {
     constructor(arg0, arg1) {
       fn = arg2;
@@ -43,7 +44,7 @@ const tmp2 = () => {
           return arg0 === arg1;
         };
       }
-      tmp = closure_3(self, SecondaryIndexMap);
+      tmp = outer1_3(self, SecondaryIndexMap);
       map = new Map();
       self.valueMap = map;
       self.valueArray = [];
@@ -57,14 +58,13 @@ const tmp2 = () => {
       return;
     }
   }
-  const importDefault = SecondaryIndexMap;
   let obj = {
     key: "version",
     get() {
       return this._version;
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "indexes",
     value() {
@@ -85,8 +85,8 @@ const tmp2 = () => {
             let num4 = 0;
             if (0 < entries.length) {
               do {
-                let tmp2 = closure_2;
-                let tmp3 = closure_2(entries[num4], 2);
+                let tmp2 = outer1_2;
+                let tmp3 = outer1_2(entries[num4], 2);
                 let items = [];
                 let tmp4 = items;
                 let num5 = 0;
@@ -126,7 +126,7 @@ const tmp2 = () => {
       } else {
         valueArray = self.indexes(flag)[arg0];
         if (null == valueArray) {
-          valueArray = closure_5;
+          valueArray = outer1_5;
         }
       }
       return valueArray;
@@ -178,8 +178,9 @@ const tmp2 = () => {
   items[8] = {
     key: "set",
     value(arg0, value) {
-      const self = this;
-      const SecondaryIndexMap = this;
+      let self = this;
+      self = this;
+      let closure_1 = value;
       value = this.get(arg0);
       let tmp2 = null != value || null != value;
       if (tmp2) {
@@ -192,16 +193,16 @@ const tmp2 = () => {
             valueMap = self.valueMap;
             valueMap.delete(arg0);
           }
-          callback2(self.valueArray, value, value, self.sortBy);
+          outer1_6(self.valueArray, value, value, self.sortBy);
           if (null != value) {
             const item = self.indexBy(value).forEach((arg0) => {
-              callback(self.getIndex(arg0), value, null, self.sortBy);
+              outer2_6(self.getIndex(arg0), _slicedToArray, null, self.sortBy);
             });
             const indexByResult = self.indexBy(value);
           }
           if (null != value) {
             const item1 = self.indexBy(value).forEach((arg0) => {
-              callback(self.getIndex(arg0), null, arg1, self.sortBy);
+              outer2_6(self.getIndex(arg0), null, closure_1, self.sortBy);
             });
             const indexByResult1 = self.indexBy(value);
           }
@@ -233,7 +234,7 @@ const tmp2 = () => {
     }
   };
   return callback(SecondaryIndexMap, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("../discord_common/js/packages/secondary-index-map/SecondaryIndexMap.tsx");
+})();
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/secondary-index-map/SecondaryIndexMap.tsx");
 
 export const SecondaryIndexMap = tmp2;

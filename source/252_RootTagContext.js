@@ -1,13 +1,14 @@
 // Module ID: 252
 // Function ID: 3315
 // Name: RootTagContext
-// Dependencies: []
+// Dependencies: [31]
 // Exports: createRootTag
 
 // Module 252 (RootTagContext)
-importAll(dependencyMap[0]);
+import "result";
 
-export const RootTagContext = require("module_0");
+
+export const RootTagContext = require("result");
 export function createRootTag(rootTag) {
   return rootTag;
 }

@@ -1,33 +1,33 @@
-// Module ID: 8192
-// Function ID: 64777
+// Module ID: 8198
+// Function ID: 64814
 // Name: GiftCodeRedeemModal
-// Dependencies: [0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [31, 8193, 1849, 33, 5087, 4337, 8199, 12261, 12262, 566, 8201, 5519, 2]
 // Exports: default
 
-// Module 8192 (GiftCodeRedeemModal)
-import "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import { jsx } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 8198 (GiftCodeRedeemModal)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import HeaderBackImage from "HeaderBackImage";
 
-let closure_3 = importDefault(dependencyMap[1]);
-const obj = { START: "giftcode-start", SUCCESS: "giftcode-success", ERROR: "giftcode-error" };
-__exportStarResult1 = __exportStarResult1.getHeaderNoTitle();
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemModal.tsx");
+const require = arg1;
+let obj = { START: "giftcode-start", SUCCESS: "giftcode-success", ERROR: "giftcode-error" };
+HeaderBackImage = HeaderBackImage.getHeaderNoTitle();
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemModal.tsx");
 
 export default function GiftCodeRedeemModal(code) {
   code = code.code;
-  const arg1 = code;
   let obj = Object.create(null);
   obj.code = 0;
   let merged = Object.assign(code, obj);
-  obj = arg1(dependencyMap[9]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => closure_3.get(code));
-  let obj1 = arg1(dependencyMap[9]);
+  obj = code(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.get(code));
+  let obj1 = code(566);
   const items1 = [closure_4];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const tmp5 = importDefault(dependencyMap[10])(code, stateFromStores1);
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_4.getCurrentUser());
+  const tmp5 = importDefault(8201)(code, stateFromStores1);
   if (null == stateFromStores1) {
     return null;
   } else if (null == stateFromStores) {
@@ -42,14 +42,14 @@ export default function GiftCodeRedeemModal(code) {
       const items2 = [obj1];
       let items3 = items2;
     } else {
-      const obj3 = { name: obj.START };
+      let obj3 = { name: obj.START };
       const obj4 = { giftCode: stateFromStores };
       const merged1 = Object.assign(merged);
       obj3.params = obj4;
       items3 = [obj3];
     }
     obj.initialRouteStack = items3;
-    jsx(arg1(dependencyMap[11]).Navigator, obj);
+    jsx(code(5519).Navigator, { screens: tmp17 });
     const tmp6 = jsx;
   }
 };

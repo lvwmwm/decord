@@ -1,24 +1,24 @@
-// Module ID: 9856
-// Function ID: 76299
+// Module ID: 9863
+// Function ID: 76340
 // Name: LongPressMessageChatItemPreview
-// Dependencies: []
+// Dependencies: [33, 4130, 689, 7621, 9293, 2]
 // Exports: default
 
-// Module 9856 (LongPressMessageChatItemPreview)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[1]);
+// Module 9863 (LongPressMessageChatItemPreview)
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "RowManager";
+
 let obj = {};
-obj = { maxHeight: 2 * importDefault(dependencyMap[2]).space.PX_80 };
+obj = { maxHeight: 2 * require("_createForOfIteratorHelperLoose").space.PX_80 };
 obj.chatItem = obj;
-let closure_3 = _module.createStyles(obj);
-let importDefaultResult = importDefault(dependencyMap[3]);
+let closure_3 = _createForOfIteratorHelperLoose.createStyles(obj);
 importDefaultResult = new importDefaultResult();
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/messages/native/long_press/LongPressMessageChatItemPreview.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/native/long_press/LongPressMessageChatItemPreview.tsx");
 
 export default function LongPressMessageChatItemPreview(message) {
-  const obj = { rowGenerator: importDefaultResult, message: message.message, maxHeight: callback().chatItem.maxHeight };
+  const obj = { rowGenerator: closure_4, message: message.message, maxHeight: callback().chatItem.maxHeight };
   const tmp = callback();
-  obj.backgroundColor = importDefault(dependencyMap[2]).colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
-  return jsx(importDefault(dependencyMap[4]), obj);
+  obj.backgroundColor = importDefault(689).colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
+  return jsx(importDefault(9293), { rowGenerator: closure_4, message: message.message, maxHeight: callback().chatItem.maxHeight });
 };

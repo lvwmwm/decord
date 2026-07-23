@@ -1,12 +1,11 @@
 // Module ID: 674
 // Function ID: 8284
 // Name: getGlobalObject
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getGlobalObject
 
 // Module 674 (getGlobalObject)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/utils/GlobalUtils.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/GlobalUtils.tsx");
 
 export const getGlobalObject = function getGlobalObject() {
   if ("undefined" !== typeof globalThis) {

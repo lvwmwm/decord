@@ -1,66 +1,78 @@
-// Module ID: 8703
-// Function ID: 68899
+// Module ID: 8710
+// Function ID: 68939
 // Name: WishlistButtonBase
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 1194, 1849, 655, 482, 33, 3991, 4547, 4130, 689, 3842, 5513, 3976, 3849, 3831, 1212, 4131, 4542, 4546, 8711, 8674, 566, 8670, 8702, 8713, 8668, 2]
 // Exports: default
 
-// Module 8703 (WishlistButtonBase)
+// Module 8710 (WishlistButtonBase)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "getProductPurchaseState";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { ShopCtaEnum } from "items";
+import { ThemeTypes } from "sum";
+import jsxProd from "jsxProd";
+import { Easing } from "module_3991";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+let closure_6;
+let closure_7;
+let require = arg1;
 class WishlistButtonBase {
   constructor(arg0) {
     isWishlisted = global.isWishlisted;
-    arg1 = isWishlisted;
     onPress = global.onPress;
-    importDefault = onPress;
     busy = global.busy;
-    dependencyMap = busy;
     disabled = global.disabled;
     flag = global.accessibilityHidden;
     if (flag === undefined) {
       flag = false;
     }
-    ({ style: closure_4, size } = global);
+    ({ style, size } = global);
     if (size === undefined) {
       size = "sm";
     }
     onTrackPress = global.onTrackPress;
-    importAll = onTrackPress;
-    closure_6 = undefined;
-    View = undefined;
-    closure_8 = undefined;
-    closure_9 = undefined;
-    ShopCtaEnum = undefined;
-    closure_11 = undefined;
-    jsx = undefined;
-    closure_13 = undefined;
-    closure_14 = undefined;
-    tmp = f68918(size);
-    closure_6 = tmp;
-    tmp2 = arg1(dependencyMap[14]).ICON_SIZE[closure_16[size]];
-    obj = arg1(dependencyMap[13]);
+    c6 = undefined;
+    MIDNIGHT = undefined;
+    dark = undefined;
+    darkPressed = undefined;
+    enabled = undefined;
+    c11 = undefined;
+    useState = undefined;
+    c13 = undefined;
+    c14 = undefined;
+    tmp = f68958(size);
+    c6 = tmp;
+    tmp2 = require("ICON_SIZE").ICON_SIZE[jsxs[size]];
+    obj = require("ManaContext");
     theme = obj.useThemeContext().theme;
-    obj2 = arg1(dependencyMap[15]);
+    obj2 = require("AccessibilityAnnouncer");
     isThemeLightResult = obj2.isThemeLight(theme);
-    View = theme === closure_11.MIDNIGHT;
-    closure_8 = isThemeLightResult ? tmp.light : tmp.dark;
-    closure_9 = isThemeLightResult ? tmp.lightPressed : tmp.darkPressed;
-    enabled = importAll.useContext(arg1(dependencyMap[16]).AccessibilityPreferencesContext).reducedMotion.enabled;
-    ShopCtaEnum = enabled;
-    tmp4 = style(importAll.useState(false), 2);
+    MIDNIGHT = theme === c11.MIDNIGHT;
+    dark = isThemeLightResult ? tmp.light : tmp.dark;
+    darkPressed = isThemeLightResult ? tmp.lightPressed : tmp.darkPressed;
+    enabled = onTrackPress.useContext(require("context").AccessibilityPreferencesContext).reducedMotion.enabled;
+    tmp4 = style(onTrackPress.useState(false), 2);
     first = tmp4[0];
-    closure_11 = first;
-    jsx = tmp4[1];
+    c11 = first;
+    useState = tmp4[1];
     tmp6 = isWishlisted;
     if (!isWishlisted) {
       tmp6 = first;
     }
-    closure_13 = tmp6;
-    obj3 = arg1(dependencyMap[9]);
+    c13 = tmp6;
+    obj3 = require("module_3991");
     num = 0;
     if (isWishlisted) {
       num = 1;
     }
     sharedValue = obj3.useSharedValue(num);
-    closure_14 = sharedValue;
+    c14 = sharedValue;
     items = [, , , , , , ];
     items[0] = disabled;
     items[1] = busy;
@@ -73,12 +85,12 @@ class WishlistButtonBase {
     items1[0] = isWishlisted;
     items1[1] = first;
     items1[2] = sharedValue;
-    callback = importAll.useCallback(() => {
+    callback = onTrackPress.useCallback(() => {
       if (disabled) {
         let obj = onPress(busy[17]);
         obj = { key: "WISHLIST_DISABLED" };
         const intl = isWishlisted(busy[18]).intl;
-        obj.content = intl.string(isWishlisted(busy[18]).t.50TX9k);
+        obj.content = intl.string(isWishlisted(busy[18]).t["50TX9k"]);
         obj.open(obj);
       } else if (!busy) {
         if (null == onTrackPress) {
@@ -103,7 +115,7 @@ class WishlistButtonBase {
         }
       }
     }, items);
-    effect = importAll.useEffect(() => {
+    effect = onTrackPress.useEffect(() => {
       if (!first) {
         let num = 0;
         if (isWishlisted) {
@@ -115,108 +127,108 @@ class WishlistButtonBase {
     items2 = [, ];
     items2[0] = first;
     items2[1] = sharedValue;
-    effect1 = importAll.useEffect(() => {
+    effect1 = onTrackPress.useEffect(() => {
       if (first) {
-        const result = sharedValue.set(0);
+        let result = sharedValue.set(0);
         const _requestAnimationFrame = requestAnimationFrame;
         let closure_0 = requestAnimationFrame(() => {
-          let obj = callback(closure_2[19]);
+          let obj = isWishlisted(busy[19]);
           const fn = function t(arg0) {
             if (arg0) {
-              callback(closure_2[9]).runOnJS(closure_12)(false);
-              const obj = callback(closure_2[9]);
+              isWishlisted(busy[9]).runOnJS(outer2_12)(false);
+              const obj = isWishlisted(busy[9]);
             }
           };
-          obj = { runOnJS: callback(closure_2[9]).runOnJS, setIsClickAnimating: closure_12 };
+          obj = { runOnJS: isWishlisted(busy[9]).runOnJS, setIsClickAnimating: outer1_12 };
           fn.__closure = obj;
           fn.__workletHash = 13061953734403;
-          fn.__initData = closure_18;
-          const result = closure_14.set(obj.withTiming(1, closure_14, "animate-always", fn));
+          fn.__initData = outer2_18;
+          const result = outer1_14.set(obj.withTiming(1, sharedValue, "animate-always", fn));
         });
         return () => cancelAnimationFrame(closure_0);
       }
     }, items2);
-    obj4 = arg1(dependencyMap[9]);
+    obj4 = require("module_3991");
     class J {
       constructor() {
         obj = {};
-        merged = Object.assign(closure_6.animationFill);
-        obj2 = isWishlisted(busy[20]);
+        merged = Object.assign(c6.animationFill);
+        obj2 = require("withSpring");
         num = 1;
         num2 = 1;
-        if (closure_13) {
+        if (c13) {
           num2 = 0;
         }
-        obj["opacity"] = obj2.withSpring(num2, isWishlisted(busy[21]).SUBTLE_SPRING, "animate-always");
+        obj["opacity"] = obj2.withSpring(num2, require("SUBTLE_SPRING").SUBTLE_SPRING, "animate-always");
         obj = {};
-        obj4 = isWishlisted(busy[20]);
-        if (closure_13) {
+        obj4 = require("withSpring");
+        if (c13) {
           num = 0.9;
         }
-        obj.scale = obj4.withSpring(num, isWishlisted(busy[21]).SUBTLE_SPRING, "animate-always");
+        obj.scale = obj4.withSpring(num, require("SUBTLE_SPRING").SUBTLE_SPRING, "animate-always");
         items = [];
         items[0] = obj;
         obj["transform"] = items;
         return obj;
       }
     }
-    obj = { styles: tmp, withSpring: arg1(dependencyMap[20]).withSpring };
+    obj = { styles: tmp, withSpring: require("withSpring").withSpring };
     obj.showFilled = tmp6;
-    obj.SUBTLE_SPRING = arg1(dependencyMap[21]).SUBTLE_SPRING;
+    obj.SUBTLE_SPRING = require("SUBTLE_SPRING").SUBTLE_SPRING;
     J.__closure = obj;
     J.__workletHash = 1357254413161;
-    J.__initData = f68918;
+    J.__initData = f68958;
     animatedStyle = obj4.useAnimatedStyle(J);
-    obj6 = arg1(dependencyMap[9]);
+    obj6 = require("module_3991");
     class Y {
       constructor() {
-        value = closure_14.get();
+        value = c14.get();
         obj = {};
-        merged = Object.assign(closure_6.animationFill);
-        obj2 = isWishlisted(busy[20]);
+        merged = Object.assign(c6.animationFill);
+        obj2 = require("withSpring");
         num = 0;
-        if (closure_13) {
+        if (c13) {
           num = 1;
         }
-        obj["opacity"] = obj2.withSpring(num, isWishlisted(busy[21]).SUBTLE_SPRING, "animate-always");
+        obj["opacity"] = obj2.withSpring(num, require("SUBTLE_SPRING").SUBTLE_SPRING, "animate-always");
         obj = {};
-        obj4 = isWishlisted(busy[9]);
-        obj.scale = obj4.interpolate(value, [null, null, false], [], isWishlisted(busy[9]).Extrapolation.CLAMP);
+        obj4 = require("module_3991");
+        obj.scale = obj4.interpolate(value, [0, 0.625, 1], [0, 1.35, 1], require("module_3991").Extrapolation.CLAMP);
         items = [];
         items[0] = obj;
         obj["transform"] = items;
         return obj;
       }
     }
-    obj1 = { animationFillProgress: sharedValue, styles: tmp, withSpring: arg1(dependencyMap[20]).withSpring };
+    obj1 = { animationFillProgress: sharedValue, styles: tmp, withSpring: require("withSpring").withSpring };
     obj1.showFilled = tmp6;
-    obj1.SUBTLE_SPRING = arg1(dependencyMap[21]).SUBTLE_SPRING;
-    obj1.interpolate = arg1(dependencyMap[9]).interpolate;
-    obj1.Extrapolation = arg1(dependencyMap[9]).Extrapolation;
+    obj1.SUBTLE_SPRING = require("SUBTLE_SPRING").SUBTLE_SPRING;
+    obj1.interpolate = require("module_3991").interpolate;
+    obj1.Extrapolation = require("module_3991").Extrapolation;
     Y.__closure = obj1;
     Y.__workletHash = 15039903885060;
-    Y.__initData = f68918;
+    Y.__initData = f68958;
     animatedStyle1 = obj6.useAnimatedStyle(Y);
-    obj8 = arg1(dependencyMap[9]);
+    obj8 = require("module_3991");
     class K {
       constructor() {
-        value = closure_14.get();
+        value = c14.get();
         obj = {};
-        merged = Object.assign(closure_6.animationFill);
+        merged = Object.assign(c6.animationFill);
         num = 0;
-        if (closure_13) {
+        if (c13) {
           tmp3 = isWishlisted;
           tmp4 = busy;
           num2 = 9;
-          obj2 = isWishlisted(busy[9]);
+          obj2 = require("module_3991");
           tmp5 = obj2;
           tmp6 = value;
-          num = obj2.interpolate(value, [-900634271, 1368089016], [true, true], isWishlisted(busy[9]).Extrapolation.CLAMP);
+          num = obj2.interpolate(value, [0, 0.7], [1, 0], require("module_3991").Extrapolation.CLAMP);
         }
         obj["opacity"] = num;
         obj = {};
-        obj4 = isWishlisted(busy[9]);
-        obj.scale = obj4.interpolate(value, [null, null, false], [], isWishlisted(busy[9]).Extrapolation.CLAMP);
+        obj4 = require("module_3991");
+        obj.scale = obj4.interpolate(value, [0, 0.625, 1], [0, 1.35, 1], require("module_3991").Extrapolation.CLAMP);
         items = [];
         items[0] = obj;
         obj["transform"] = items;
@@ -225,18 +237,18 @@ class WishlistButtonBase {
     }
     obj2 = { animationFillProgress: sharedValue, styles: tmp };
     obj2.showFilled = tmp6;
-    obj2.interpolate = arg1(dependencyMap[9]).interpolate;
-    obj2.Extrapolation = arg1(dependencyMap[9]).Extrapolation;
+    obj2.interpolate = require("module_3991").interpolate;
+    obj2.Extrapolation = require("module_3991").Extrapolation;
     K.__closure = obj2;
     K.__workletHash = 12429379889426;
-    K.__initData = f68918;
+    K.__initData = f68958;
     obj3 = {
       style(pressed) {
             pressed = pressed.pressed;
-            const items = [tmp.button, closure_8, , , , ];
+            const items = [_undefined.button, closure_8, , , , ];
             let midnight = closure_7;
             if (closure_7) {
-              midnight = tmp.midnight;
+              midnight = _undefined.midnight;
             }
             items[2] = midnight;
             if (pressed) {
@@ -247,18 +259,18 @@ class WishlistButtonBase {
             }
             items[3] = pressed;
             if (disabled) {
-              const disabled = tmp.disabled;
+              disabled = _undefined.disabled;
             }
             items[4] = disabled;
-            items[5] = closure_4;
+            items[5] = _slicedToArray;
             return items;
           },
       onPress: callback
     };
     str = "togglebutton";
     animatedStyle2 = obj8.useAnimatedStyle(K);
-    tmp14 = jsx;
-    tmp15 = closure_6;
+    tmp14 = useState;
+    tmp15 = c6;
     if (flag) {
       str = "none";
     }
@@ -290,80 +302,76 @@ class WishlistButtonBase {
     obj6 = { style: animatedStyle, pointerEvents: "none" };
     obj7 = {};
     obj7.size = jsxs[size];
-    obj7.color = importDefault(dependencyMap[12]).colors.INTERACTIVE_ICON_DEFAULT;
-    obj6.children = jsx(arg1(dependencyMap[22]).HeartOutlineIcon, obj7);
+    obj7.color = require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_ICON_DEFAULT;
+    obj6.children = useState(require("HeartOutlineIcon").HeartOutlineIcon, obj7);
     items4 = [, , ];
-    items4[0] = jsx(importDefault(dependencyMap[9]).View, obj6);
+    items4[0] = useState(require("module_3991").View, obj6);
     obj8 = { style: animatedStyle1, pointerEvents: "none" };
     obj9 = {};
     obj9.size = jsxs[size];
-    obj9.color = importDefault(dependencyMap[12]).unsafe_rawColors.RED_NEW_50;
-    obj8.children = jsx(arg1(dependencyMap[23]).HeartIcon, obj9);
-    items4[1] = jsx(importDefault(dependencyMap[9]).View, obj8);
+    obj9.color = require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_NEW_50;
+    obj8.children = useState(require("HeartIcon").HeartIcon, obj9);
+    items4[1] = useState(require("module_3991").View, obj8);
     obj10 = { style: animatedStyle2, pointerEvents: "none" };
     obj11 = {};
     obj11.size = jsxs[size];
     obj11.color = "white";
-    obj10.children = jsx(arg1(dependencyMap[23]).HeartIcon, obj11);
-    items4[2] = jsx(importDefault(dependencyMap[9]).View, obj10);
+    obj10.children = useState(require("HeartIcon").HeartIcon, obj11);
+    items4[2] = useState(require("module_3991").View, obj10);
     obj5.children = items4;
-    obj3.children = closure_13(View, obj5);
+    obj3.children = c13(MIDNIGHT, obj5);
     return tmp14(tmp15, obj3);
   }
 }
 class WishlistButton {
   constructor(arg0) {
     product = global.product;
-    arg1 = product;
+    closure_0 = product;
     onPress = global.onPress;
-    importDefault = onPress;
     onTrackPress = global.onTrackPress;
-    dependencyMap = onTrackPress;
-    obj = { <string:1314541995>: -24, <string:305966933>: null, <string:4056559677>: 1, <string:1641718481>: "Malaysia" };
+    obj = { skuId: 0, product: 0, onPress: 0, onTrackPress: 0 };
     tmp = null;
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
-    obj2 = arg1(dependencyMap[24]);
+    obj2 = require("initialize");
     items = [];
-    items[0] = closure_8;
-    stateFromStores = obj2.useStateFromStores(items, () => id.getId());
-    obj3 = arg1(dependencyMap[24]);
+    items[0] = c8;
+    stateFromStores = obj2.useStateFromStores(items, () => outer1_8.getId());
+    obj3 = require("initialize");
     items1 = [];
-    items1[0] = closure_9;
-    stateFromStores1 = obj3.useStateFromStores(items1, () => currentUser.getCurrentUser());
-    tmp6 = importDefault(dependencyMap[25])();
+    items1[0] = c9;
+    stateFromStores1 = obj3.useStateFromStores(items1, () => outer1_9.getCurrentUser());
+    tmp6 = require("useHasNeverWishlisted")();
     shouldShowWishlistNUXActionSheet = tmp6.shouldShowWishlistNUXActionSheet;
     useStateFromStores = shouldShowWishlistNUXActionSheet;
     showWishlistNUXActionSheet = tmp6.showWishlistNUXActionSheet;
-    closure_4 = showWishlistNUXActionSheet;
-    intl = arg1(dependencyMap[18]).intl;
+    _slicedToArray = showWishlistNUXActionSheet;
+    intl = require("getSystemLocale").intl;
     obj = { productName: product.name };
     items2 = [, , ];
     items2[0] = shouldShowWishlistNUXActionSheet;
     items2[1] = showWishlistNUXActionSheet;
     items2[2] = product;
-    formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[18]).t.7kFjeK, obj);
-    callback = importAll.useCallback(() => {
+    formatToPlainStringResult = intl.formatToPlainString(require("getSystemLocale").t["7kFjeK"], obj);
+    callback = F8FvUy.useCallback(() => {
       if (shouldShowWishlistNUXActionSheet) {
-        showWishlistNUXActionSheet(product);
+        showWishlistNUXActionSheet(closure_0);
       }
     }, items2);
-    intl2 = arg1(dependencyMap[18]).intl;
-    stringResult = intl2.string(arg1(dependencyMap[18]).t.F8FvUy);
-    importAll = stringResult;
+    intl2 = require("getSystemLocale").intl;
+    stringResult = intl2.string(require("getSystemLocale").t.F8FvUy);
+    F8FvUy = stringResult;
     items3 = [];
     items3[0] = stringResult;
-    callback1 = importAll.useCallback(() => {
+    callback1 = F8FvUy.useCallback(() => {
       let obj = onPress(onTrackPress[17]);
-      obj = { key: "WISHLIST_ERROR", content: stringResult };
+      obj = { key: "WISHLIST_ERROR", content: result };
       obj.open(obj);
     }, items3);
-    obj5 = arg1(dependencyMap[26]);
+    obj5 = require("useWishlistButtonState");
     wishlistButtonState = obj5.useWishlistButtonState({ userId: stateFromStores, skuId: global.skuId, onAddSuccess: callback, onError: callback1, skipAddAnnouncement: shouldShowWishlistNUXActionSheet });
     isWishlisted = wishlistButtonState.isWishlisted;
-    Pressable = isWishlisted;
     handleToggle = wishlistButtonState.handleToggle;
-    View = handleToggle;
     // CreateGeneratorClosureLongIndex (0x67)
     items4 = [, , , ];
     items4[0] = onPress;
@@ -386,49 +394,42 @@ class WishlistButton {
     return tmp;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-({ Pressable: closure_6, View: closure_7 } = arg1(dependencyMap[3]));
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const ShopCtaEnum = arg1(dependencyMap[6]).ShopCtaEnum;
-const ThemeTypes = arg1(dependencyMap[7]).ThemeTypes;
-const tmp2 = arg1(dependencyMap[3]);
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
+({ Pressable: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
 let obj = { duration: 400 };
-const Easing = arg1(dependencyMap[9]).Easing;
 obj.easing = Easing.bezier(0.67, 0, 0.26, 1);
-obj = { sm: arg1(dependencyMap[10]).SMALL_BUTTON_HEIGHT, md: arg1(dependencyMap[10]).MEDIUM_BUTTON_HEIGHT };
-let closure_16 = { isNewWebImplementationEnabled: "d6d04f6fd100db0e028d8a7cb876c1d6", GuildBadgeSnail: "PlusSmallIcon" };
-const tmp3 = arg1(dependencyMap[8]);
-let closure_17 = arg1(dependencyMap[11]).createStyles((arg0) => {
+obj = { sm: require("getButtonPadding").SMALL_BUTTON_HEIGHT, md: require("getButtonPadding").MEDIUM_BUTTON_HEIGHT };
+let closure_16 = { sm: "sm", md: "md" };
+let closure_17 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
   let obj = {};
-  obj = { width: obj[arg0], height: obj[arg0], borderRadius: importDefault(dependencyMap[12]).radii.round, borderColor: importDefault(dependencyMap[12]).colors.CONTROL_SECONDARY_BORDER_DEFAULT };
+  obj = { width: null, height: null, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: null, borderWidth: 1 };
+  obj.width = obj[arg0];
+  obj.height = obj[arg0];
+  obj.borderRadius = importDefault(689).radii.round;
+  obj.borderColor = importDefault(689).colors.CONTROL_SECONDARY_BORDER_DEFAULT;
   obj.button = obj;
   obj = {};
-  let obj3 = arg1(dependencyMap[13]);
+  let obj3 = require(3842) /* ManaContext */;
   obj.backgroundColor = obj3.setColorOpacity("white", 0.72);
   obj.light = obj;
-  const obj1 = { backgroundColor: arg1(dependencyMap[13]).setColorOpacity("white", 0.62) };
+  const obj1 = { backgroundColor: require(3842) /* ManaContext */.setColorOpacity("white", 0.62) };
   obj.lightPressed = obj1;
-  const obj6 = arg1(dependencyMap[13]);
-  obj.dark = { backgroundColor: importDefault(dependencyMap[12]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
-  obj3 = { backgroundColor: importDefault(dependencyMap[12]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE };
+  const obj6 = require(3842) /* ManaContext */;
+  obj.dark = { backgroundColor: importDefault(689).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+  obj3 = { backgroundColor: importDefault(689).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE };
   obj.darkPressed = obj3;
-  const obj2 = { backgroundColor: importDefault(dependencyMap[12]).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
-  obj.midnight = { borderColor: importDefault(dependencyMap[12]).colors.BORDER_STRONG };
+  const obj2 = { backgroundColor: importDefault(689).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
+  obj.midnight = { borderColor: importDefault(689).colors.BORDER_STRONG };
   obj.disabled = { opacity: 0.5 };
-  obj.iconContainer = { "Bool(true)": 2017525761, "Bool(true)": 1895826561, "Bool(true)": 1 };
-  obj.animationFill = { variant: "<string:4150329345>", accessibilityRole: "<string:27139649>", color: "<string:947200>", flexDirection: "<string:917504>" };
+  obj.iconContainer = { position: "relative", alignItems: "center", justifyContent: "center" };
+  obj.animationFill = { position: "absolute", inset: 0, alignItems: "center", justifyContent: "center" };
   return obj;
 });
 let closure_18 = { code: "function WishlistButtonTsx1(done){const{runOnJS,setIsClickAnimating}=this.__closure;if(done){runOnJS(setIsClickAnimating)(false);}}" };
 let closure_19 = { code: "function WishlistButtonTsx2(){const{styles,withSpring,showFilled,SUBTLE_SPRING}=this.__closure;return{...styles.animationFill,opacity:withSpring(showFilled?0:1,SUBTLE_SPRING,'animate-always'),transform:[{scale:withSpring(showFilled?0.9:1,SUBTLE_SPRING,'animate-always')}]};}" };
 let closure_20 = { code: "function WishlistButtonTsx3(){const{animationFillProgress,styles,withSpring,showFilled,SUBTLE_SPRING,interpolate,Extrapolation}=this.__closure;const progress=animationFillProgress.get();return{...styles.animationFill,opacity:withSpring(showFilled?1:0,SUBTLE_SPRING,'animate-always'),transform:[{scale:interpolate(progress,[0,0.625,1],[0,1.35,1],Extrapolation.CLAMP)}]};}" };
 let closure_21 = { code: "function WishlistButtonTsx4(){const{animationFillProgress,styles,showFilled,interpolate,Extrapolation}=this.__closure;const progress=animationFillProgress.get();return{...styles.animationFill,opacity:showFilled?interpolate(progress,[0,0.7],[1,0],Extrapolation.CLAMP):0,transform:[{scale:interpolate(progress,[0,0.625,1],[0,1.35,1],Extrapolation.CLAMP)}]};}" };
-const obj3 = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[29]).fileFinishedImporting("modules/collectibles/native/WishlistButton.tsx");
+let result = require("result").fileFinishedImporting("modules/collectibles/native/WishlistButton.tsx");
 
 export default function CollectiblesWishlistButton(selectedProduct) {
   selectedProduct = selectedProduct.selectedProduct;
@@ -437,8 +438,8 @@ export default function CollectiblesWishlistButton(selectedProduct) {
   obj.selectedProduct = 0;
   obj.onTrackPress = 0;
   const merged = Object.assign(selectedProduct, obj);
-  obj = arg1(dependencyMap[27]);
-  arg1(dependencyMap[28]);
+  obj = require(8713) /* getProductPurchaseState */;
+  require(8668) /* getProductNameAndTypeFromSku */;
   if (!obj.useProductPurchaseState(selectedProduct).isPurchased) {
     obj = { skuId: selectedProduct.skuId, product: selectedProduct, disabled: !tmp5, onTrackPress: selectedProduct.onTrackPress };
     const merged1 = Object.assign(merged);

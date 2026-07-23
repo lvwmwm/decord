@@ -1,38 +1,42 @@
-// Module ID: 7614
-// Function ID: 61025
+// Module ID: 7620
+// Function ID: 61062
 // Name: MessagePreview
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 7621, 3974, 4126, 1212, 9293, 2]
 // Exports: default
 
-// Module 7614 (MessagePreview)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: {} };
-obj = { color: importDefault(dependencyMap[4]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.borderColor = obj;
-obj.title = {};
-const tmp3 = arg1(dependencyMap[2]);
-obj.chatItemContainer = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
-let closure_6 = obj.createStyles(obj);
-let importDefaultResult = importDefault(dependencyMap[5]);
+// Module 7620 (MessagePreview)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "RowManager";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 } };
+_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+_createForOfIteratorHelperLoose.borderColor = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.title = { lineHeight: 16, marginBottom: 8 };
+const obj1 = { minHeight: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderWidth: 1, padding: 8 };
+_createForOfIteratorHelperLoose.chatItemContainer = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 importDefaultResult = new importDefaultResult();
-importDefaultResult.setOptions({});
-const obj1 = { borderRadius: importDefault(dependencyMap[4]).radii.sm };
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMessagePreview.tsx");
+importDefaultResult.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: false, inlineEmbedMedia: true, renderReactions: false });
+const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMessagePreview.tsx");
 
 export default function MessagePreview(message) {
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[6]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(3974) /* hexToRgb */;
   obj = { style: tmp.container };
-  obj = { 9223372036854775807: true, 0: true, 0: true, style: tmp.title };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.children = intl.string(arg1(dependencyMap[8]).t.iouM3a);
-  const items = [callback(arg1(dependencyMap[7]).Text, obj), ];
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.iouM3a);
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   const items1 = [tmp.chatItemContainer, { borderColor: hexWithOpacityResult }];
-  items[1] = callback(View, { style: items1, children: callback(importDefault(dependencyMap[9]), obj2) });
+  items[1] = callback(View, { style: items1, children: callback(importDefault(9293), obj2) });
   obj.children = items;
   return callback2(View, obj);
 };

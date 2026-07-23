@@ -1,61 +1,67 @@
-// Module ID: 13525
-// Function ID: 102596
+// Module ID: 13639
+// Function ID: 104752
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 13525 (_isNativeReflectConstruct)
+// Module 13639 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let dispatcher = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +72,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      dispatcher = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (set >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        set = tmp3 + 1;
+        obj.value = length[+set];
       }
       return obj;
     };
@@ -95,25 +101,20 @@ function _arrayLikeToArray(arg0, arg1) {
 function handleInit() {
   let closure_5 = [];
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = [];
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class AuthSessionsStore {
     constructor() {
       self = this;
       tmp = AuthSessionsStore(this, AuthSessionsStore);
-      obj = closure_3(AuthSessionsStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(AuthSessionsStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -122,20 +123,19 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = AuthSessionsStore;
   callback2(AuthSessionsStore, Store);
   const items = [
     {
       key: "getSessions",
       value() {
-        return closure_5;
+        return outer1_5;
       }
     }
   ];
   return callback(AuthSessionsStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "AuthSessionsStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   LOGOUT: handleInit,
   LOGIN_SUCCESS: handleInit,
   FETCH_AUTH_SESSIONS_SUCCESS: function handleFetchAuthSessionsSuccess(sessions) {
@@ -149,15 +149,14 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
   },
   LOGOUT_AUTH_SESSIONS_SUCCESS: function handleLogoutAuthSessionsSuccess(sessionIdHashes) {
     let done;
-    const items = [...closure_5];
-    let closure_0 = items;
-    let closure_1 = false;
+    items = [...items];
+    let c1 = false;
     function _loop(value) {
       const items = value;
-      const findIndexResult = items.findIndex((id_hash) => id_hash.id_hash === id_hash);
+      const findIndexResult = items.findIndex((id_hash) => id_hash.id_hash === dispatcher);
       if (findIndexResult >= 0) {
         items.splice(findIndexResult, 1);
-        let closure_1 = true;
+        let c1 = true;
       }
     }
     const tmp = _createForOfIteratorHelperLoose(sessionIdHashes.sessionIdHashes);
@@ -170,13 +169,11 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
         done = iter2.done;
       } while (!done);
     }
-    if (closure_1) {
-      let closure_5 = items;
-    } else {
+    if (!c1) {
       return false;
     }
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/auth_sessions/AuthSessionsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/auth_sessions/AuthSessionsStore.tsx");
 
 export default tmp2;

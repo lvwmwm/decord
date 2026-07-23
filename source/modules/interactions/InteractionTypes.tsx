@@ -1,10 +1,9 @@
-// Module ID: 4353
-// Function ID: 38630
+// Module ID: 4357
+// Function ID: 38662
 // Name: InteractionState
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4353 (InteractionState)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/interactions/InteractionTypes.tsx");
+// Module 4357 (InteractionState)
+const result = require("set").fileFinishedImporting("modules/interactions/InteractionTypes.tsx");
 
 export const InteractionState = { QUEUED: 0, [0]: "QUEUED", CREATED: 1, [1]: "CREATED", FAILED: 2, [2]: "FAILED" };

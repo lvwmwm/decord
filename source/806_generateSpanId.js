@@ -1,14 +1,16 @@
 // Module ID: 806
-// Function ID: 9048
+// Function ID: 9049
 // Name: generateSpanId
-// Dependencies: []
+// Dependencies: [807]
 
 // Module 806 (generateSpanId)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.generateSpanId = function generateSpanId() {
-  const obj = arg1(arg6[0]);
-  return arg1(arg6[0]).uuid4().substring(16);
+  const obj = require(807) /* getFirstException */;
+  return require(807) /* getFirstException */.uuid4().substring(16);
 };
 arg5.generateTraceId = function generateTraceId() {
-  return arg1(arg6[0]).uuid4();
+  return require(807) /* getFirstException */.uuid4();
 };

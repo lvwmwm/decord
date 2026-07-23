@@ -1,24 +1,26 @@
 // Module ID: 1728
-// Function ID: 19379
+// Function ID: 19380
 // Name: buildWorkletsHash
-// Dependencies: []
+// Dependencies: [1607, 1593]
 
 // Module 1728 (buildWorkletsHash)
+const require = arg1;
+const dependencyMap = arg6;
 function buildWorkletsHash(found) {
   const values = Object.values(found);
   return values.reduce((arg0, __workletHash) => arg0 + __workletHash.__workletHash.toString(), "");
 }
 function areWorkletsEqual(__workletHash, __workletHash2) {
-  __workletHash2 = __workletHash;
-  const arg6 = __workletHash2;
+  let closure_0 = __workletHash;
+  let closure_1 = __workletHash2;
   if (__workletHash.__workletHash === __workletHash2.__workletHash) {
     const _Object = Object;
     const keys = Object.keys(__workletHash.__closure);
     const _Object2 = Object;
     return keys.length === Object.keys(__workletHash2.__closure).length && keys.every((arg0) => {
-      let tmp = arg0 in arg1.__closure;
+      let tmp = arg0 in __workletHash2.__closure;
       if (tmp) {
-        tmp = arg0.__closure[arg0] === arg1.__closure[arg0];
+        tmp = __closure.__closure[arg0] === __workletHash2.__closure[arg0];
       }
       return tmp;
     });
@@ -106,16 +108,16 @@ arg5.areDependenciesEqual = function areDependenciesEqual(dependencies, savedDep
                 break;
               }
             } else {
-              let tmp3 = savedDependencies;
-              let tmp4 = arg6;
-              let obj = savedDependencies(arg6[0]);
+              let tmp3 = require;
+              let tmp4 = dependencyMap;
+              let obj = require(1607) /* isWorkletFunction */;
               flag = false;
               if (!obj.isWorkletFunction(tmp)) {
                 break;
               } else {
-                let tmp5 = savedDependencies;
-                let tmp6 = arg6;
-                let obj2 = savedDependencies(arg6[0]);
+                let tmp5 = require;
+                let tmp6 = dependencyMap;
+                let obj2 = require(1607) /* isWorkletFunction */;
                 flag = false;
                 if (!obj2.isWorkletFunction(tmp2)) {
                   break;
@@ -137,7 +139,7 @@ arg5.areDependenciesEqual = function areDependenciesEqual(dependencies, savedDep
   return flag;
 };
 arg5.isAnimated = isAnimated;
-arg5.shallowEqual = () => {
+arg5.shallowEqual = (() => {
   function shallowEqual(arg0, arg1) {
     const keys = Object.keys(arg0);
     if (keys.length !== Object.keys(arg1).length) {
@@ -157,11 +159,11 @@ arg5.shallowEqual = () => {
   shallowEqual.__workletHash = 6945711106539;
   shallowEqual.__initData = closure_3;
   return shallowEqual;
-}();
-arg5.validateAnimatedStyles = () => {
+})();
+arg5.validateAnimatedStyles = (() => {
   function validateAnimatedStyles(arg0) {
     if ("object" !== typeof arg0) {
-      const ReanimatedError2 = callback(closure_1[1]).ReanimatedError;
+      const ReanimatedError2 = outer1_0(outer1_1[1]).ReanimatedError;
       const _HermesInternal = HermesInternal;
       const prototype2 = ReanimatedError2.prototype;
       const reanimatedError2 = new ReanimatedError2("`useAnimatedStyle` has to return an object, found " + tmp + " instead.");
@@ -169,7 +171,7 @@ arg5.validateAnimatedStyles = () => {
     } else {
       const _Array = Array;
       if (Array.isArray(arg0)) {
-        const ReanimatedError = callback(closure_1[1]).ReanimatedError;
+        const ReanimatedError = outer1_0(outer1_1[1]).ReanimatedError;
         const prototype = ReanimatedError.prototype;
         const reanimatedError = new ReanimatedError("`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.");
         throw reanimatedError;
@@ -180,4 +182,4 @@ arg5.validateAnimatedStyles = () => {
   validateAnimatedStyles.__workletHash = 9250446401049;
   validateAnimatedStyles.__initData = closure_4;
   return validateAnimatedStyles;
-}();
+})();

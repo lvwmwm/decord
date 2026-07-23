@@ -1,12 +1,13 @@
 // Module ID: 1035
-// Function ID: 11154
+// Function ID: 11155
 // Name: extractNetworkProtocol
-// Dependencies: []
+// Dependencies: [57, 113, 794, 1015, 1036]
 // Exports: extractNetworkProtocol, getBrowserPerformanceAPI, isMeasurementValue, listenForWebVitalReportEvents, msToSec, startAndEndSpan, startStandaloneWebVitalSpan, supportsWebVital
 
 // Module 1035 (extractNetworkProtocol)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
+import _slicedToArray from "_slicedToArray";
+import _objectDestructuringEmpty from "_objectDestructuringEmpty";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const extractNetworkProtocol = function extractNetworkProtocol(nextHopProtocol) {
@@ -19,15 +20,15 @@ export const extractNetworkProtocol = function extractNetworkProtocol(nextHopPro
     let tmp11 = nextResult;
     if ("/" === nextResult) {
       let tmp7 = nextHopProtocol;
-      let tmp8 = callback;
+      let tmp8 = _slicedToArray;
       let num2 = 2;
-      let tmp9 = callback(str.split("/"), 2);
+      let tmp9 = _slicedToArray(str.split("/"), 2);
       let num3 = 0;
       str2 = tmp9[0];
       let num4 = 1;
       str3 = tmp9[1];
       iter.return();
-      // break
+      break;
     } else {
       let _isNaN = isNaN;
       let _Number = Number;
@@ -36,7 +37,7 @@ export const extractNetworkProtocol = function extractNetworkProtocol(nextHopPro
       if (isNaN(Number(tmp11))) {
         let tmp6 = nextResult;
         str4 = `${tmp11}`;
-        // continue
+        continue;
       } else {
         let str5 = "http";
         let str6 = "h";
@@ -49,7 +50,7 @@ export const extractNetworkProtocol = function extractNetworkProtocol(nextHopPro
         let num = 1;
         str3 = str.split(str4)[1];
         iter.return();
-        // break
+        break;
       }
       break;
     }
@@ -62,9 +63,9 @@ export const extractNetworkProtocol = function extractNetworkProtocol(nextHopPro
   }
 };
 export const getBrowserPerformanceAPI = function getBrowserPerformanceAPI() {
-  let _performance = require(dependencyMap[3]).WINDOW.addEventListener;
+  let _performance = require(1015) /* WINDOW */.WINDOW.addEventListener;
   if (_performance) {
-    _performance = require(dependencyMap[3]).WINDOW.performance;
+    _performance = require(1015) /* WINDOW */.WINDOW.performance;
   }
   return _performance;
 };
@@ -77,42 +78,42 @@ export const isMeasurementValue = function isMeasurementValue(deviceMemory) {
   return isFiniteResult;
 };
 export const listenForWebVitalReportEvents = function listenForWebVitalReportEvents(on, arg1) {
-  const require = arg1;
+  const _require = arg1;
   function _runCollectorCallbackOnce(navigation) {
-    let tmp = !closure_2;
-    if (!closure_2) {
+    let tmp = !c2;
+    if (!c2) {
       tmp = closure_1;
     }
     if (tmp) {
-      arg1(navigation, closure_1);
+      callback(navigation, closure_1);
     }
-    closure_2 = true;
+    c2 = true;
   }
-  let closure_2 = false;
-  require(dependencyMap[4]).onHidden(() => {
+  let c2 = false;
+  _require(1036).onHidden(() => {
     _runCollectorCallbackOnce("pagehide");
   });
   let closure_3 = on.on("beforeStartNavigationSpan", (arg0, isRedirect) => {
     if (!tmp) {
       _runCollectorCallbackOnce("navigation");
-      callback();
       callback2();
+      callback3();
     }
   });
   let closure_4 = on.on("afterStartPageLoadSpan", (spanContext) => {
     const spanId = spanContext.spanContext().spanId;
-    callback2();
+    callback3();
   });
 };
 export const msToSec = function msToSec(duration) {
   return duration / 1000;
 };
 export const startAndEndSpan = function startAndEndSpan(activeSpan, sum, sum1, arg3) {
-  const require = sum;
+  const _require = sum;
   const dependencyMap = sum1;
-  callback2(arg3);
+  _objectDestructuringEmpty(arg3);
   let closure_2 = Object.assign({}, arg3);
-  const start_timestamp = require(dependencyMap[2]).spanToJSON(activeSpan).start_timestamp;
+  const start_timestamp = _require(794).spanToJSON(activeSpan).start_timestamp;
   let tmp2 = start_timestamp;
   if (start_timestamp) {
     tmp2 = start_timestamp > sum;
@@ -123,13 +124,13 @@ export const startAndEndSpan = function startAndEndSpan(activeSpan, sum, sum1, a
   if (tmp2) {
     activeSpan.updateStartTime(sum);
   }
-  const obj = require(dependencyMap[2]);
-  return require(dependencyMap[2]).withActiveSpan(activeSpan, () => {
-    let obj = arg1(arg2[2]);
-    obj = { startTime: arg1 };
+  let obj = _require(794);
+  return _require(794).withActiveSpan(activeSpan, () => {
+    let obj = sum(sum1[2]);
+    obj = { startTime: sum };
     const startInactiveSpanResult = obj.startInactiveSpan(Object.assign(obj, closure_2));
     if (startInactiveSpanResult) {
-      startInactiveSpanResult.end(arg2);
+      startInactiveSpanResult.end(sum1);
     }
     return startInactiveSpanResult;
   });
@@ -141,7 +142,7 @@ export const startStandaloneWebVitalSpan = function startStandaloneWebVitalSpan(
   let release;
   let startTime;
   let transaction;
-  let obj = require(dependencyMap[2]);
+  let obj = require(794) /* registerSpanErrorInstrumentation */;
   const client = obj.getClient();
   if (client) {
     ({ name, transaction, attributes, startTime } = arg0);
@@ -153,7 +154,7 @@ export const startStandaloneWebVitalSpan = function startStandaloneWebVitalSpan(
     if (null != integrationByName) {
       replayId = integrationByName.getReplayId();
     }
-    const currentScope = require(dependencyMap[2]).getCurrentScope();
+    const currentScope = require(794) /* registerSpanErrorInstrumentation */.getCurrentScope();
     const user = currentScope.getUser();
     let tmp8;
     if (undefined !== user) {
@@ -168,7 +169,7 @@ export const startStandaloneWebVitalSpan = function startStandaloneWebVitalSpan(
       if (tmp8) {
         break;
       } else {
-        // break
+        break;
       }
       obj.user = tmp13;
       let tmp14 = profile_id;
@@ -179,23 +180,23 @@ export const startStandaloneWebVitalSpan = function startStandaloneWebVitalSpan(
       let tmp16 = require;
       let tmp17 = dependencyMap;
       let num = 3;
-      let _navigator = require(dependencyMap[3]).WINDOW.navigator;
+      let _navigator = require(1015) /* WINDOW */.WINDOW.navigator;
       let tmp18 = _navigator;
       let userAgent;
       if (null != _navigator) {
         userAgent = _navigator.userAgent;
       }
-      obj.user_agent.original = userAgent;
+      obj["user_agent.original"] = userAgent;
       let tmp20 = sendDefaultPii;
       let str2;
       if (sendDefaultPii) {
         str2 = "{{auto}}";
       }
-      obj.client.address = str2;
+      obj["client.address"] = str2;
       let tmp22 = require;
       let tmp23 = dependencyMap;
       let merged = Object.assign(obj, attributes);
-      let obj8 = require(dependencyMap[2]);
+      let obj8 = require(794) /* registerSpanErrorInstrumentation */;
       obj = { name, attributes: merged, startTime };
       let obj1 = {};
       let flag = true;
@@ -203,7 +204,7 @@ export const startStandaloneWebVitalSpan = function startStandaloneWebVitalSpan(
       obj.experimental = obj1;
       return obj8.startInactiveSpan(obj);
     }
-    const obj4 = require(dependencyMap[2]);
+    const obj4 = require(794) /* registerSpanErrorInstrumentation */;
     const obj6 = currentScope;
   }
 };

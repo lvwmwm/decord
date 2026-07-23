@@ -1,7 +1,7 @@
 // Module ID: 521
 // Function ID: 6624
 // Name: hasNativeSymbols
-// Dependencies: []
+// Dependencies: [522]
 
 // Module 521 (hasNativeSymbols)
 let closure_2 = "undefined" !== typeof Symbol && Symbol;
@@ -17,7 +17,7 @@ export default function hasNativeSymbols() {
         const _Symbol2 = Symbol;
         let tmp6 = "symbol" === typeof Symbol("bar");
         if (tmp6) {
-          tmp6 = require(dependencyMap[0])();
+          tmp6 = require(522) /* hasSymbols */();
         }
         tmp5 = tmp6;
       }

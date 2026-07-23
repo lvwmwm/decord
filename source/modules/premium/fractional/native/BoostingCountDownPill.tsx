@@ -1,33 +1,37 @@
-// Module ID: 12333
-// Function ID: 94437
+// Module ID: 12447
+// Function ID: 96588
 // Name: handlePress
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 689, 4098, 12448, 1934, 1212, 4126, 2]
 // Exports: default
 
-// Module 12333 (handlePress)
+// Module 12447 (handlePress)
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
 function handlePress() {
-  let obj = importDefault(dependencyMap[4]);
+  let obj = importDefault(4098);
   obj = {};
-  const intl = require(dependencyMap[7]).intl;
-  obj.aboutText = intl.string(require(dependencyMap[7]).t.07lzz7);
-  obj.openLazy(require(dependencyMap[6])(dependencyMap[5], dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.aboutText = intl.string(require(1212) /* getSystemLocale */.t["07lzz7"]);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(12448, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
 }
-const _module = require(dependencyMap[0]);
-({ TouchableOpacity: closure_3, View: closure_4 } = _module);
-const _module1 = require(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = _module1);
-const _module2 = require(dependencyMap[2]);
+({ TouchableOpacity: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_SURFACE_HIGH, borderColor: importDefault(dependencyMap[3]).colors.STATUS_WARNING, borderRadius: importDefault(dependencyMap[3]).radii.lg };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, marginBottom: 12 };
 obj.fractionalPremiumBanner = obj;
-const obj1 = { height: -1429651183, marginLeft: 410124289, marginRight: 402653184, flexDirection: 16777216, alignItems: 21823553, marginLeft: -1480502784, backgroundColor: importDefault(dependencyMap[3]).colors.BACKGROUND_MOD_STRONG, borderRadius: importDefault(dependencyMap[3]).radii.xxl };
+let obj1 = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: require("_createForOfIteratorHelperLoose").radii.xxl, justifyContent: "center" };
 obj.fpDurationPill = obj1;
-obj.fpDurationText = { marginLeft: true, marginRight: true };
-obj.fpUnavailable = { "Null": "<string:3942646034>", "Null": "<string:3355444267>" };
+obj.fpDurationText = { textAlign: "center", color: "#FFEAA0" };
+obj.fpUnavailable = { flex: 1, justifyContent: "center" };
 obj.fpUnavailableTextNoCountdown = { textAlign: "center" };
-let closure_7 = _module2.createStyles(obj);
-const _module3 = require(dependencyMap[9]);
-const result = _module3.fileFinishedImporting("modules/premium/fractional/native/BoostingCountDownPill.tsx");
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/fractional/native/BoostingCountDownPill.tsx");
 
 export default function BoostingCountDownPill(style) {
   let fpDurationText;
@@ -41,25 +45,25 @@ export default function BoostingCountDownPill(style) {
   }
   obj.onPress = tmp4;
   obj = { style: items };
-  const items = [tmp.fractionalPremiumBanner, style.style];
+  items = [tmp.fractionalPremiumBanner, style.style];
   let tmp7 = !isInReverseTrial;
   if (tmp7) {
     obj = { style: tmp.fpDurationPill };
     const obj1 = { variant: "text-sm/bold", style: tmp.fpDurationText, children: fpDurationText.toUpperCase() };
-    obj.children = callback(require(dependencyMap[8]).Text, obj1);
+    obj.children = callback(require(4126) /* Text */.Text, obj1);
     tmp7 = callback(closure_4, obj);
   }
   const items1 = [tmp7, ];
   const obj2 = { style: tmp.fpUnavailable };
-  const obj3 = {};
+  const obj3 = { variant: "text-md/normal", color: "interactive-text-active" };
   let prop;
   if (isInReverseTrial) {
     prop = tmp.fpUnavailableTextNoCountdown;
   }
   obj3.style = prop;
-  const intl = require(dependencyMap[7]).intl;
-  obj3.children = intl.string(require(dependencyMap[7]).t.5nrJDO);
-  obj2.children = callback(require(dependencyMap[8]).Text, obj3);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj3.children = intl.string(require(1212) /* getSystemLocale */.t["5nrJDO"]);
+  obj2.children = callback(require(4126) /* Text */.Text, obj3);
   items1[1] = callback(closure_4, obj2);
   obj.children = items1;
   obj.children = closure_6(closure_4, obj);

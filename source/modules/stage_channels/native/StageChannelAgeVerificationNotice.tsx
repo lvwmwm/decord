@@ -1,50 +1,66 @@
-// Module ID: 7529
-// Function ID: 60243
+// Module ID: 7535
+// Function ID: 60280
 // Name: StageChannelAgeVerificationNoticeContent
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 4347, 1212, 4126, 3821, 1920, 7536, 7538, 4086, 7576, 1273, 4955, 2]
 // Exports: default
 
-// Module 7529 (StageChannelAgeVerificationNoticeContent)
+// Module 7535 (StageChannelAgeVerificationNoticeContent)
+import "result";
+import { View } from "get ActivityIndicator";
+import { HelpdeskArticles } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
-  const arg1 = onConfirmPress.onConfirmPress;
-  let closure_1 = callback2();
-  let obj = arg1(dependencyMap[6]);
+  onConfirmPress = onConfirmPress.onConfirmPress;
+  let closure_1 = _createForOfIteratorHelperLoose();
+  let obj = onConfirmPress(4347);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  const intl = arg1(dependencyMap[7]).intl;
+  const intl = onConfirmPress(1212).intl;
   const format = intl.format;
-  const t = arg1(dependencyMap[7]).t;
+  const t = onConfirmPress(1212).t;
   if (isVerifiedTeen) {
     obj = {
       hook(children) {
-          return callback(onConfirmPress(closure_2[8]).Text, {
+          const obj = {
+            variant: "text-sm/medium",
+            color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const tmp = callback2(closure_2[9]);
-              tmp(callback2(closure_2[10]).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
-              if (null != callback) {
-                callback();
+              const tmp = callback(outer2_2[9]);
+              tmp(callback(outer2_2[10]).getArticleURL(outer2_4.TIGGER_PAWTECT_LEARN_MORE));
+              if (null != outer1_0) {
+                outer1_0();
               }
             },
             children
-          });
+          };
+          return outer1_5(onConfirmPress(outer1_2[8]).Text, obj);
         }
     };
     let formatResult = format(t.iWGjcg, obj);
   } else {
     obj = {
       hook(children) {
-          return callback(onConfirmPress(closure_2[8]).Text, {
+          let obj = {
+            variant: "text-sm/medium",
+            color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              let obj = callback2(closure_2[11]);
-              obj = { entryPoint: callback(closure_2[12]).AgeVerificationModalEntryPoint.START_STAGE_PROMPT };
+              let obj = callback(outer2_2[11]);
+              obj = { entryPoint: onConfirmPress(outer2_2[12]).AgeVerificationModalEntryPoint.START_STAGE_PROMPT };
               const result = obj.showAgeVerificationGetStartedModal(obj);
-              if (null != callback) {
-                callback();
+              if (null != outer1_0) {
+                outer1_0();
               }
             },
             children
-          });
+          };
+          return outer1_5(onConfirmPress(outer1_2[8]).Text, obj);
         }
     };
     formatResult = format(t.edpbxy, obj);
@@ -53,25 +69,23 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
 }
 function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
-  let tmp = callback2();
-  let obj = arg1(dependencyMap[6]);
+  let tmp = _createForOfIteratorHelperLoose();
+  let obj = require(4347) /* isReactiveCheckEnabled */;
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   if (onConfirmPress.noBackground) {
     obj = { style: tmp.noticeContainer };
     let Text = callback;
-    let tmp12 = arg1;
-    let tmp13 = dependencyMap;
+    let tmp12 = require;
     if (isVerifiedTeen) {
-      let WarningIcon = tmp12(tmp13[13]).CircleInformationIcon;
+      let WarningIcon = tmp12(4086).CircleInformationIcon;
     } else {
-      WarningIcon = tmp12(tmp13[14]).WarningIcon;
+      WarningIcon = tmp12(7576).WarningIcon;
     }
-    obj = { size: "refresh_sm", color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT, style: tmp.icon };
+    obj = { size: "refresh_sm", color: importDefault(689).colors.TEXT_DEFAULT, style: tmp.icon };
     const items = [Text(WarningIcon, obj), ];
     tmp12 = callback;
-    Text = arg1(dependencyMap[8]).Text;
-    const obj1 = { cachedAt: true, edpbxy: true, style: tmp.contentText };
-    tmp13 = callback;
+    Text = require(4126) /* Text */.Text;
+    const obj1 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.contentText };
     tmp = StageChannelAgeVerificationNoticeContent;
     const obj2 = { onConfirmPress };
     obj1.children = callback(StageChannelAgeVerificationNoticeContent, obj2);
@@ -82,34 +96,29 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
     const tmp11 = View;
   } else {
     const obj3 = {};
-    const HelpMessageTypes = arg1(dependencyMap[15]).HelpMessageTypes;
+    const HelpMessageTypes = require(1273) /* Button */.HelpMessageTypes;
     obj3.messageType = isVerifiedTeen ? HelpMessageTypes.INFO : HelpMessageTypes.WARNING;
     const obj4 = { onConfirmPress };
     obj3.children = callback(StageChannelAgeVerificationNoticeContent, obj4);
-    return callback(arg1(dependencyMap[15]).HelpMessage, obj3);
+    return callback(require(1273) /* Button */.HelpMessage, obj3);
   }
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { marginTop: importDefault(dependencyMap[5]).space.PX_16 };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.containerWithDivider = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
-const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_16 };
-obj.divider = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_8, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.noticeContainer = obj3;
-obj.icon = { flexShrink: 0 };
-obj.linkText = { textDecorationLine: "underline" };
-obj.contentText = { flex: 1 };
-let closure_8 = obj.createStyles(obj);
-const obj4 = { TOP: 0, [0]: "TOP", BOTTOM: 1, [1]: "BOTTOM" };
-const obj2 = { borderBottomWidth: 1, borderBottomColor: importDefault(dependencyMap[5]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/stage_channels/native/StageChannelAgeVerificationNotice.tsx");
+({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.containerWithDivider = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj1 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.divider = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let obj3 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.noticeContainer = obj3;
+_createForOfIteratorHelperLoose.icon = { flexShrink: 0 };
+_createForOfIteratorHelperLoose.linkText = { textDecorationLine: "underline" };
+_createForOfIteratorHelperLoose.contentText = { flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { TOP: 0, [0]: "TOP", BOTTOM: 1, [1]: "BOTTOM" };
+let obj2 = { borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let result = require("ME").fileFinishedImporting("modules/stage_channels/native/StageChannelAgeVerificationNotice.tsx");
 
 export default function StageChannelAgeVerificationNotice(arg0) {
   let channelId;
@@ -119,8 +128,8 @@ export default function StageChannelAgeVerificationNotice(arg0) {
   let style;
   ({ divider, channelId } = arg0);
   ({ noBackground, onConfirmPress, style } = arg0);
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[16]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(4955) /* useIsStageSpeakingDisabledForCurrentUser */;
   let tmp2;
   if (null != channelId) {
     tmp2 = channelId;

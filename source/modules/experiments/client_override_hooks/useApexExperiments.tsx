@@ -1,45 +1,52 @@
-// Module ID: 10452
-// Function ID: 80712
+// Module ID: 10462
+// Function ID: 80762
 // Name: makeClientVariant
-// Dependencies: []
+// Dependencies: [57, 31, 1188, 7784, 4052, 1429, 10463, 566, 2]
 // Exports: getApexExperiments, useApexExperiments
 
-// Module 10452 (makeClientVariant)
+// Module 10462 (makeClientVariant)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function makeClientVariant(id) {
-  return { id, label: "Variant " + id, shortLabel: "Variant " + id, type: arg1(dependencyMap[3]).Variation_Type.UNSPECIFIED };
+  return { id, label: "Variant " + id, shortLabel: "Variant " + id, type: require(7784) /* _callSuper */.Variation_Type.UNSPECIFIED };
 }
 function mergeApexExperiments(experimentsMetadata, registeredExperiments) {
   let length;
   let tmp6;
   let tmp7;
+  const _require = registeredExperiments;
   let obj = {};
-  const dependencyMap = obj;
   function _loop() {
     const variants = closure_3.variants;
     const mapped = variants.map((id) => ({ id: id.id, label: "Variant " + id.id + ": " + id.label, shortLabel: "Variant " + id.id, type: id.type }));
-    const arg1 = new Set(mapped.map((id) => id.id));
-    if (null != arg1[closure_2]) {
+    const set = new Set(mapped.map((id) => id.id));
+    if (null != set[_slicedToArray]) {
       const _Object = Object;
       const keys = Object.keys(tmp2.variations);
       const mapped1 = keys.map((arg0) => Number(arg0));
       const found = mapped1.filter((arg0) => !set.has(arg0));
-      let mapped2 = found.map(closure_6);
+      let mapped2 = found.map(outer1_6);
     } else {
       mapped2 = [];
     }
-    const obj = { system: arg1(obj[4]).ExperimentSystem.APEX, kind: arg1(obj[5]).UnitTypeToKind[closure_3.unitType], name: closure_3.name, title: closure_3.title };
+    obj = { system: callback(obj[4]).ExperimentSystem.APEX, kind: callback(obj[5]).UnitTypeToKind[closure_3.unitType], name: closure_3.name, title: closure_3.title };
     const items = [...mapped2];
     obj.variants = items.sort((id, id2) => id.id - id2.id);
-    obj[closure_2] = obj;
+    obj[_slicedToArray] = obj;
   }
   const entries = Object.entries(experimentsMetadata);
   let num = 0;
   if (0 < entries.length) {
     do {
-      let tmp = closure_2;
-      let tmp2 = closure_2(entries[num], 2);
-      closure_2 = tmp2[0];
-      closure_3 = tmp2[1];
+      let tmp = callback;
+      let tmp2 = callback(entries[num], 2);
+      callback = tmp2[0];
+      let closure_3 = tmp2[1];
       let _loopResult = _loop();
       num = num + 1;
       length = entries.length;
@@ -52,13 +59,13 @@ function mergeApexExperiments(experimentsMetadata, registeredExperiments) {
     [tmp6, tmp7] = tmp5;
     if (null == obj[tmp6]) {
       obj = {};
-      let tmp8 = registeredExperiments;
-      let tmp9 = dependencyMap;
-      obj.system = registeredExperiments(dependencyMap[4]).ExperimentSystem.APEX;
+      let tmp8 = _require;
+      let tmp9 = obj;
+      obj.system = _require(obj[4]).ExperimentSystem.APEX;
       ({ kind: obj2.kind, name: obj2.name, name: obj2.title } = tmp7);
       let _Object = Object;
       let keys = Object.keys(tmp7.variations);
-      obj.variants = keys.map((arg0) => callback(Number(arg0)));
+      obj.variants = keys.map((arg0) => outer1_6(Number(arg0)));
       obj[tmp6] = obj;
     }
   }
@@ -71,8 +78,8 @@ function getApexExperimentOverridesInfo(clientOverrides) {
   let num = 0;
   if (0 < entries.length) {
     do {
-      let tmp = closure_2;
-      let tmp2 = closure_2(entries[num], 2);
+      let tmp = callback;
+      let tmp2 = callback(entries[num], 2);
       let first = tmp2[0];
       let tmp4 = tmp2[1];
       obj = { experimentId: first, variantId: tmp4.variantId, originalDescriptor: tmp4 };
@@ -83,11 +90,8 @@ function getApexExperimentOverridesInfo(clientOverrides) {
   }
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ useEffect: closure_3, useMemo: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = importDefault(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/experiments/client_override_hooks/useApexExperiments.tsx");
+({ useEffect: closure_3, useMemo: closure_4 } = result);
+result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/client_override_hooks/useApexExperiments.tsx");
 
 export { mergeApexExperiments };
 export { getApexExperimentOverridesInfo };
@@ -102,20 +106,17 @@ export const useApexExperiments = function useApexExperiments() {
   callback2(() => {
     const apexExperimentsMetadata = stateFromStores(stateFromStores1[6]).fetchApexExperimentsMetadata(stateFromStores(stateFromStores1[3]).Experiment_Surface.APP);
   }, []);
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => store.getExperimentsMetadata());
-  const arg1 = stateFromStores;
-  const items1 = [closure_5];
-  const stateFromStores1 = arg1(dependencyMap[7]).useStateFromStores(items1, () => store.getRegisteredExperiments());
-  const dependencyMap = stateFromStores1;
+  let obj = stateFromStores(stateFromStores1[7]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_5.getExperimentsMetadata());
+  const items1 = [_isNativeReflectConstruct];
+  stateFromStores1 = stateFromStores(stateFromStores1[7]).useStateFromStores(items1, () => outer1_5.getRegisteredExperiments());
   const items2 = [stateFromStores, stateFromStores1];
-  const obj2 = arg1(dependencyMap[7]);
-  const tmp4 = callback3(() => callback(stateFromStores, stateFromStores1), items2);
-  const items3 = [closure_5];
-  const stateFromStores2 = arg1(dependencyMap[7]).useStateFromStores(items3, () => store.getClientOverrides());
-  let closure_2 = stateFromStores2;
-  obj = { experiments: tmp4, overridesInfo: callback3(() => callback2(stateFromStores2), items4) };
-  const items4 = [stateFromStores2];
+  const obj2 = stateFromStores(stateFromStores1[7]);
+  const tmp4 = callback3(() => outer1_7(stateFromStores, stateFromStores1), items2);
+  const items3 = [_isNativeReflectConstruct];
+  const stateFromStores2 = stateFromStores(stateFromStores1[7]).useStateFromStores(items3, () => outer1_5.getClientOverrides());
+  obj = { experiments: tmp4, overridesInfo: callback3(() => outer1_8(stateFromStores2), items4) };
+  items4 = [stateFromStores2];
   return obj;
 };

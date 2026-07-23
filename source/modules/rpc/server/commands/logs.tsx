@@ -1,18 +1,18 @@
-// Module ID: 13299
-// Function ID: 100993
-// Dependencies: []
+// Module ID: 13413
+// Function ID: 103149
+// Dependencies: [653, 3, 10499, 10501, 2]
 
-// Module 13299
-const _module = require(dependencyMap[0]);
-let importDefaultResult = importDefault(dependencyMap[1]);
-importDefaultResult = new importDefaultResult(_module.RPC_APPLICATION_LOGGING_CATEGORY);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/rpc/server/commands/logs.tsx");
+// Module 13413
+import ME from "ME";
+import importDefaultResult from "recurseReplaceContentTree";
+
+importDefaultResult = new importDefaultResult(ME.RPC_APPLICATION_LOGGING_CATEGORY);
+let result = require("createRpcJoiSchemaObject").fileFinishedImporting("modules/rpc/server/commands/logs.tsx");
 
 export default {
-  [_module.RPCCommands.CAPTURE_LOG]: {
+  [ME.RPCCommands.CAPTURE_LOG]: {
     validation(string) {
-      let obj = importDefault(dependencyMap[2])(string);
+      let obj = importDefault(10499)(string);
       obj = {};
       const requiredResult = obj.required();
       const stringResult = string.string();
@@ -27,7 +27,7 @@ export default {
       let socket;
       ({ socket, args } = arg0);
       const level = args.level;
-      const result = require(dependencyMap[3]).validatePostMessageTransport(socket.transport);
+      const result = require(10501) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.transport);
       const combined = "" + socket.application.id + " - " + args.message;
       if ("log" === level) {
         importDefaultResult.log(combined);

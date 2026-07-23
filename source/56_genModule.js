@@ -1,43 +1,45 @@
 // Module ID: 56
 // Function ID: 1388
 // Name: genModule
-// Dependencies: []
+// Dependencies: [57, 44, 63, 50]
 
 // Module 56 (genModule)
+import _slicedToArray from "_slicedToArray";
+
+let require = arg1;
 function genModule(arg0, arg1) {
-  const global = arg1;
+  let closure_0 = arg1;
   if (arg0) {
     const tmp3 = callback(arg0, 5);
     const first = tmp3[0];
-    arg1 = tmp4;
-    let closure_2 = tmp3[3];
-    const callback = tmp3[4];
+    const require = tmp4;
+    const dependencyMap = tmp3[3];
+    callback = tmp3[4];
     let tmp8 = !first.startsWith("RCT");
     if (tmp8) {
       tmp8 = !first.startsWith("RK");
     }
-    arg1(closure_2[1])(tmp8, `Module name prefixes should've been stripped by the native side but wasn't for ${obj}`);
+    require(44) /* invariant */(tmp8, `Module name prefixes should've been stripped by the native side but wasn't for ${obj}`);
     if (!tmp3[1]) {
       if (!arr) {
-        let obj = { name: first };
+        obj = { name: first };
         return obj;
       }
     }
     obj = {};
-    const nativeModuleProxy = obj;
     if (tmp3[2]) {
       const item = arr.forEach((arg0, arg1) => {
-        let flag = closure_2;
-        if (closure_2) {
-          flag = callback(closure_2, arg1);
+        let flag = table;
+        if (table) {
+          flag = outer1_7(table, arg1);
         }
         if (!flag) {
           flag = false;
         }
-        let flag2 = closure_3;
-        if (closure_3) {
-          flag2 = callback(closure_3, arg1);
-          const tmp4 = closure_3;
+        let flag2 = _slicedToArray;
+        if (_slicedToArray) {
+          flag2 = outer1_7(_slicedToArray, arg1);
+          const tmp4 = _slicedToArray;
         }
         if (!flag2) {
           flag2 = false;
@@ -46,7 +48,7 @@ function genModule(arg0, arg1) {
         if (!tmp6) {
           tmp6 = !flag2;
         }
-        tmp4(closure_2[1])(tmp6, "Cannot have a method that is both async and a sync hook");
+        tmp4(table[1])(tmp6, "Cannot have a method that is both async and a sync hook");
         let str = "promise";
         if (!flag) {
           let str2 = "async";
@@ -55,20 +57,21 @@ function genModule(arg0, arg1) {
           }
           str = str2;
         }
-        obj[arg0] = function genMethod(arg0, arg1, type) {
-          const tmp = "promise" === type ? function promiseMethodWrapper() {
+        obj[arg0] = (function genMethod(closure_0, arg1, type) {
+          let closure_1 = arg1;
+          let closure_2 = type;
+          let tmp = "promise" === type ? (function promiseMethodWrapper() {
             const length = arguments.length;
             const array = new Array(length);
-            const arg0 = array;
             for (let num = 0; num < length; num = num + 1) {
               array[num] = arguments[num];
             }
-            const error = new Error();
-            const arg1 = error;
-            return new Promise((array, error) => {
-              error(closure_2[2]).default.enqueueNativeCall(array, error, array, () => { ... }, () => { ... });
+            let error = new Error();
+            return new Promise((closure_0) => {
+              const error = arg1;
+              error(table[2]).default.enqueueNativeCall(array, error, closure_0, () => { ... }, () => { ... });
             });
-          } : function nonPromiseMethodWrapper() {
+          }) : (function nonPromiseMethodWrapper() {
             const length = arguments.length;
             const arr = new Array(length);
             for (let num = 0; num < length; num = num + 1) {
@@ -83,7 +86,7 @@ function genModule(arg0, arg1) {
               tmp2 = arr[arr.length - 2];
             }
             if ("function" === typeof tmp2) {
-              arg1(arg2[1])(tmp3, "Cannot have a non-function arg after a function arg.");
+              callback(type[1])(tmp3, "Cannot have a non-function arg after a function arg.");
             }
             let tmp8 = null;
             if ("function" === typeof tmp) {
@@ -94,25 +97,25 @@ function genModule(arg0, arg1) {
               tmp9 = tmp2;
             }
             const substr = arr.slice(0, arr.length - (tmp3 + tmp4));
-            if ("sync" === arg2) {
-              const _default2 = arg1(arg2[2]).default;
-              return _default2.callNativeSyncHook(arg0, arg1, substr, tmp9, tmp8);
+            if ("sync" === type) {
+              const _default2 = callback(type[2]).default;
+              return _default2.callNativeSyncHook(closure_0, callback, substr, tmp9, tmp8);
             } else {
-              const _default = arg1(arg2[2]).default;
-              _default.enqueueNativeCall(arg0, arg1, substr, tmp9, tmp8);
+              const _default = callback(type[2]).default;
+              _default.enqueueNativeCall(closure_0, callback, substr, tmp9, tmp8);
             }
-          };
+          });
           tmp.type = type;
           return tmp;
-        }(arg1, arg1, str);
+        })(closure_0, arg1, str);
       });
     }
-    const _Object = Object;
+    let _Object = Object;
     const merged = Object.assign(obj, tmp4);
     if (null == obj.getConstants) {
       obj.getConstants = () => {
-        let frozen = tmp4;
-        if (!tmp4) {
+        let frozen = closure_1;
+        if (!closure_1) {
           const _Object = Object;
           frozen = Object.freeze({});
         }
@@ -132,7 +135,6 @@ function genModule(arg0, arg1) {
 function arrayContains(arr) {
   return -1 !== arr.indexOf(arg1);
 }
-let closure_3 = importDefault(dependencyMap[0]);
 global.__fbGenNativeModule = genModule;
 let obj = {};
 let nativeModuleProxy = obj;
@@ -141,20 +143,20 @@ if (global.nativeModuleProxy) {
   obj = nativeModuleProxy;
 } else {
   const __fbBatchedBridgeConfig = global.__fbBatchedBridgeConfig;
-  arg1(dependencyMap[1])(__fbBatchedBridgeConfig, "__fbBatchedBridgeConfig is not set, cannot invoke native modules");
-  let closure_5 = arg1(dependencyMap[3]).default;
-  const item = __fbBatchedBridgeConfig.remoteModuleConfig || [].forEach((arg0, arg1) => {
-    const global = arg1;
-    const tmp = genModule(arg0, arg1);
-    arg1 = tmp;
+  require("invariant")(__fbBatchedBridgeConfig, "__fbBatchedBridgeConfig is not set, cannot invoke native modules");
+  let closure_5 = require("defineLazyObjectProperty").default;
+  let item = __fbBatchedBridgeConfig.remoteModuleConfig || [].forEach((arg0, arg1) => {
+    let closure_0 = arg1;
+    let tmp = genModule(arg0, arg1);
+    const require = tmp;
     if (tmp) {
       if (tmp.module) {
         nativeModuleProxy[tmp.name] = tmp.module;
       } else {
         const obj = {
           get() {
-                const tmp = tmp(closure_2[1])(arg1.nativeRequireModuleConfig, "Can't lazily create module without nativeRequireModuleConfig");
-                const tmp2 = callback(arg1.nativeRequireModuleConfig(tmp.name), arg1);
+                tmp = tmp(outer1_2[1])(closure_0.nativeRequireModuleConfig, "Can't lazily create module without nativeRequireModuleConfig");
+                const tmp2 = outer1_6(closure_0.nativeRequireModuleConfig(tmp.name), closure_0);
                 let _module = tmp2;
                 if (tmp2) {
                   _module = tmp2.module;
@@ -166,7 +168,7 @@ if (global.nativeModuleProxy) {
       }
     }
   });
-  const arr = __fbBatchedBridgeConfig.remoteModuleConfig || [];
+  let arr = __fbBatchedBridgeConfig.remoteModuleConfig || [];
 }
 
 export default obj;

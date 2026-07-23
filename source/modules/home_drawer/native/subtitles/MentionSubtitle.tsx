@@ -1,15 +1,19 @@
-// Module ID: 14738
-// Function ID: 111154
+// Module ID: 14854
+// Function ID: 113322
 // Name: MentionSubtitle
-// Dependencies: []
+// Dependencies: [31, 27, 33, 14855, 4593, 4638, 4126, 1212, 2]
 // Exports: default
 
-// Module 14738 (MentionSubtitle)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/home_drawer/native/subtitles/MentionSubtitle.tsx");
+// Module 14854 (MentionSubtitle)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+const result = require("jsxProd").fileFinishedImporting("modules/home_drawer/native/subtitles/MentionSubtitle.tsx");
 
 export default function MentionSubtitle(channel) {
   let channelName;
@@ -17,29 +21,29 @@ export default function MentionSubtitle(channel) {
   let guild;
   channel = channel.channel;
   ({ guild, channelName, count } = channel);
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(14855) /* styles */;
   const subtitleStyles = obj.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {
-    let obj1 = arg1(dependencyMap[4]);
+    let obj1 = require(4593) /* getThreadChannelIcon */;
     channelIconComponentWithGuild = obj1.getChannelIconComponentWithGuild(channel, guild);
   }
   if (null == channelIconComponentWithGuild) {
-    channelIconComponentWithGuild = arg1(dependencyMap[5]).TextIcon;
+    channelIconComponentWithGuild = require(4638) /* TextIcon */.TextIcon;
   }
   obj = { style: subtitleStyles.subtitleRow };
-  obj = { style: subtitleStyles.channelIcon };
+  obj = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   const items = [callback(channelIconComponentWithGuild, obj), ];
-  obj1 = { 803799044: 3309567, 1269170180: 601874432, 711589892: 4319821, style: subtitleStyles.subtitleText };
-  const intl = arg1(dependencyMap[7]).intl;
-  obj1.children = intl.format(arg1(dependencyMap[7]).t.L9YdGH, {
+  obj1 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.format(require(1212) /* getSystemLocale */.t.L9YdGH, {
     channelName,
     count: count - 1,
     channelHook(children) {
-      return callback2(callback(closure_1[6]).Text, { variant: "text-xs/medium", children }, arg1);
+      return outer1_3(outer1_0(outer1_1[6]).Text, { variant: "text-xs/medium", children }, arg1);
     }
   });
-  items[1] = callback(arg1(dependencyMap[6]).Text, obj1);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items;
   return callback2(View, obj);
 };

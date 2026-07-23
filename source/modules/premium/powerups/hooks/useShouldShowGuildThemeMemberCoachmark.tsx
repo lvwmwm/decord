@@ -1,22 +1,22 @@
-// Module ID: 14873
-// Function ID: 112040
+// Module ID: 14989
+// Function ID: 114208
 // Name: useShouldShowGuildThemeMemberCoachmark
-// Dependencies: []
+// Dependencies: [4018, 11545, 4060, 4059, 14990, 4037, 2]
 // Exports: default
 
-// Module 14873 (useShouldShowGuildThemeMemberCoachmark)
-let closure_3 = require(dependencyMap[0]).GUILD_THEME_POWERUP_BOOST_PRICE;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/premium/powerups/hooks/useShouldShowGuildThemeMemberCoachmark.tsx");
+// Module 14989 (useShouldShowGuildThemeMemberCoachmark)
+import { GUILD_THEME_POWERUP_BOOST_PRICE as closure_3 } from "BoostedGuildTiers";
+
+const result = require("items").fileFinishedImporting("modules/premium/powerups/hooks/useShouldShowGuildThemeMemberCoachmark.tsx");
 
 export default function useShouldShowGuildThemeMemberCoachmark(guildId) {
-  const tmp = importDefault(dependencyMap[1])(guildId);
-  let serverThemeEnabled = require(dependencyMap[2]).useServerThemeEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
-  const obj = require(dependencyMap[2]);
-  const serverThemeUserEnabled = require(dependencyMap[3]).useServerThemeUserEnabled("useShouldShowGuildThemeMemberCoachmark");
-  const obj2 = require(dependencyMap[3]);
-  const tmp4 = importDefault(dependencyMap[4])(guildId);
-  let tmp7 = !importDefault(dependencyMap[5])(guildId).isLoading;
+  const tmp = importDefault(11545)(guildId);
+  let serverThemeEnabled = require(4060) /* items */.useServerThemeEnabled(guildId, "useShouldShowGuildThemeMemberCoachmark");
+  const obj = require(4060) /* items */;
+  const serverThemeUserEnabled = require(4059) /* apexExperiment */.useServerThemeUserEnabled("useShouldShowGuildThemeMemberCoachmark");
+  const obj2 = require(4059) /* apexExperiment */;
+  const tmp4 = importDefault(14990)(guildId);
+  let tmp7 = !importDefault(4037)(guildId).isLoading;
   if (tmp7) {
     if (serverThemeEnabled) {
       serverThemeEnabled = serverThemeUserEnabled;

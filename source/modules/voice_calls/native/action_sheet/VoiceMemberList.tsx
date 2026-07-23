@@ -1,18 +1,44 @@
-// Module ID: 12599
-// Function ID: 96838
+// Module ID: 12713
+// Function ID: 98994
 // Name: ItemSeparator
-// Dependencies: []
+// Dependencies: [57, 5, 31, 27, 1347, 1857, 4149, 3758, 1849, 4203, 653, 1277, 5188, 482, 33, 4130, 12709, 10679, 566, 7495, 12391, 1212, 10196, 3981, 8481, 4126, 9383, 5464, 1820, 4944, 10522, 4341, 12714, 12715, 1450, 12722, 22, 4098, 8492, 3842, 12723, 7588, 2]
 
-// Module 12599 (ItemSeparator)
+// Module 12713 (ItemSeparator)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "getVoiceChannelKeyByChannelId";
+import get_ActivityIndicator from "mergeLocations";
+import closure_9 from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { FORM_ROW_VERTICAL_PADDING } from "semanticColor";
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
+import { ThemeTypes } from "sum";
+import jsxProd from "StreamingUserRow";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_7;
+let closure_8;
+const require = arg1;
 function ItemSeparator() {
   const tmp = callback4();
-  return callback2(arg1(dependencyMap[19]).FormDivider, { style: callback4().rowFormDivider });
+  return callback2(require(7495) /* Form */.FormDivider, { style: callback4().rowFormDivider });
 }
 function VoiceMemberListSectionHeader(title) {
   const tmp = callback4();
   let obj = { style: tmp.sectionContainer };
-  obj = { "Null": true, "Null": true, alignItems: true, style: tmp.sectionTitle, children: title.title.toUpperCase() };
-  obj.children = callback2(arg1(dependencyMap[25]).Text, obj);
+  obj = { style: tmp.sectionTitle, variant: "text-xs/bold", color: "text-default", children: title.title.toUpperCase() };
+  obj.children = callback2(require(4126) /* Text */.Text, obj);
   return callback2(closure_8, obj);
 }
 function renderSectionHeader(section) {
@@ -43,19 +69,17 @@ function VoiceSectionRow(arg0) {
   let item;
   let onPressUser;
   ({ item, isActionSheet } = arg0);
-  const arg1 = isActionSheet;
   let importDefault;
-  let importAll;
+  let analyticsLocations;
   function _onItemPress() {
     // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    const _onItemPress = obj;
+    const obj = outer1_5(tmp);
     return obj(...arguments);
   }
   ({ channelId, onPressUser } = arg0);
-  let obj = arg1(_onItemPress[26]);
+  let obj = isActionSheet(_onItemPress[26]);
   importDefault = obj.useAnalyticsContext();
-  importAll = importDefault(_onItemPress[27])().analyticsLocations;
+  analyticsLocations = importDefault(_onItemPress[27])().analyticsLocations;
   if (isEmbeddedActivity(item)) {
     obj = {
       embeddedActivity: item,
@@ -74,30 +98,14 @@ function VoiceSectionRow(arg0) {
     return tmp(tmp2(tmp3[33]), obj);
   }
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-({ SectionList: closure_7, View: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-let closure_12 = importDefault(dependencyMap[7]);
-let closure_13 = importDefault(dependencyMap[8]);
-let closure_14 = importDefault(dependencyMap[9]);
-const tmp2 = arg1(dependencyMap[3]);
-({ AnalyticsPages: closure_15, InstantInviteSources: closure_16, Permissions: closure_17 } = arg1(dependencyMap[10]));
-const FORM_ROW_VERTICAL_PADDING = arg1(dependencyMap[11]).FORM_ROW_VERTICAL_PADDING;
-const ACTION_SHEET_MAX_WIDTH = arg1(dependencyMap[12]).ACTION_SHEET_MAX_WIDTH;
-const ThemeTypes = arg1(dependencyMap[13]).ThemeTypes;
-const tmp3 = arg1(dependencyMap[10]);
-({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = arg1(dependencyMap[14]));
-const tmp4 = arg1(dependencyMap[14]);
-let closure_24 = arg1(dependencyMap[15]).createStyles({ container: { <string:3429165147>: "<string:2491613185>", <string:1389933036>: "<string:2941583362>" }, sectionContainer: { -9223372036854775808: null, 9223372036854775807: null }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: {}, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
-let closure_25 = importAllResult.memo((channel) => callback2(importDefault(dependencyMap[16]), { channel: channel.channel }));
+({ SectionList: closure_7, View: closure_8 } = get_ActivityIndicator);
+({ AnalyticsPages: closure_15, InstantInviteSources: closure_16, Permissions: closure_17 } = ME);
+({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
+let closure_24 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, flexShrink: 1 }, sectionContainer: { paddingTop: 16, paddingHorizontal: 16 }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { overflow: "hidden", flexGrow: 1, flexShrink: 1, minHeight: 1 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
+let closure_25 = importAllResult.memo((channel) => callback2(importDefault(12709), { channel: channel.channel }));
 let closure_26 = importAllResult.memo((channel) => {
   channel = channel.channel;
-  const arg1 = channel;
-  arg1(dependencyMap[18]);
+  channel(566);
   [][0] = channel;
   let tmp4 = null;
   if (!tmp) {
@@ -107,25 +115,25 @@ let closure_26 = importAllResult.memo((channel) => {
       const items = [callback2(ItemSeparator, {}), ];
       obj = {};
       obj = {};
-      const intl = arg1(dependencyMap[21]).intl;
-      obj.accessibilityLabel = intl.string(arg1(dependencyMap[21]).t.6Qgrev);
+      const intl = channel(1212).intl;
+      obj.accessibilityLabel = intl.string(channel(1212).t["6Qgrev"]);
       obj.accessibilityHidden = true;
-      obj.source = importDefault(dependencyMap[22]);
-      obj.size = arg1(dependencyMap[20]).CircularIconButton.Sizes.MEDIUM_32;
-      obj.leading = callback2(arg1(dependencyMap[20]).CircularIconButton, obj);
-      const intl2 = arg1(dependencyMap[21]).intl;
-      obj.label = intl2.string(arg1(dependencyMap[21]).t.6Qgrev);
+      obj.source = importDefault(10196);
+      obj.size = channel(12391).CircularIconButton.Sizes.MEDIUM_32;
+      obj.leading = callback2(channel(12391).CircularIconButton, obj);
+      const intl2 = channel(1212).intl;
+      obj.label = intl2.string(channel(1212).t["6Qgrev"]);
       obj.onPress = function onPress() {
         if (channel.isPrivate()) {
           let tmpResult = tmp(tmp2[23]);
-          tmpResult.navigateToNewGroupDM(channel.id, constants.CHANNEL_CALL);
+          tmpResult.navigateToNewGroupDM(channel.id, outer1_15.CHANNEL_CALL);
         } else {
           tmpResult = tmp(tmp2[24]);
-          const obj = { source: constants2.VOICE_CHANNEL };
+          const obj = { source: outer1_16.VOICE_CHANNEL };
           const result = tmpResult.showInstantInviteActionSheet(channel, obj);
         }
       };
-      items[1] = callback2(arg1(dependencyMap[19]).FormRow, obj);
+      items[1] = callback2(channel(7495).FormRow, obj);
       obj.children = items;
       tmp4 = callback3(importAllResult.Fragment, obj);
     }
@@ -133,65 +141,60 @@ let closure_26 = importAllResult.memo((channel) => {
   return tmp4;
 });
 let closure_27 = { VOICE: 0, [0]: "VOICE", SPECTATING: 1, [1]: "SPECTATING", DISCONNECTED: 2, [2]: "DISCONNECTED" };
-const obj2 = arg1(dependencyMap[15]);
 const forwardRefResult = importAllResult.forwardRef(function VoiceMemberList(channel, ref) {
   channel = channel.channel;
-  ref = channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
     flag = true;
   }
-  const importDefault = flag;
   let flag2 = channel.disableFooter;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = { <string:3662980731>: "spring", <string:3077322678>: 0.4, <string:1378379006>: 1 };
+  let obj = { channel: 0, isActionSheet: 0, disableFooter: 0 };
   Object.setPrototypeOf(null);
-  const merged = Object.assign(channel, obj);
-  let importAll;
-  let dependencyMap;
+  let merged = Object.assign(channel, obj);
+  let c2;
+  let analyticsLocations;
   let callback;
-  let closure_5;
-  let importAllResult;
+  let c5;
+  let stateFromStoresArray;
   let set;
   let items5;
-  let closure_9;
-  let closure_10;
+  callback = undefined;
+  let callback1;
   const tmp3 = callback4();
-  importAll = tmp3;
-  const analyticsLocations = importDefault(dependencyMap[27])().analyticsLocations;
-  dependencyMap = analyticsLocations;
-  callback = Math.min(importDefault(dependencyMap[34])().width, ACTION_SHEET_MAX_WIDTH);
-  let obj1 = ref(dependencyMap[18]);
-  const items = [closure_14];
+  c2 = tmp3;
+  analyticsLocations = flag(analyticsLocations[27])().analyticsLocations;
+  callback = Math.min(flag(analyticsLocations[34])().width, ACTION_SHEET_MAX_WIDTH);
+  let obj1 = channel(analyticsLocations[18]);
+  let items = [closure_14];
   const items1 = [channel];
-  const stateFromStores = obj1.useStateFromStores(items, () => voiceStatesForChannel.getVoiceStatesForChannel(channel), items1);
-  const tmp4 = importDefault(dependencyMap[35])(channel);
-  closure_5 = tmp4;
-  let obj2 = ref(dependencyMap[18]);
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_14.getVoiceStatesForChannel(channel), items1);
+  const tmp4 = flag(analyticsLocations[35])(channel);
+  c5 = tmp4;
+  let obj2 = channel(analyticsLocations[18]);
   const items2 = [closure_11];
-  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, () => {
-    if (null != tmp4) {
-      let viewerIds = viewerIds.getViewerIds(tmp4);
+  stateFromStoresArray = obj2.useStateFromStoresArray(items2, () => {
+    if (null != c5) {
+      let viewerIds = outer1_11.getViewerIds(c5);
     } else {
       viewerIds = [];
     }
     return viewerIds;
   });
-  importAllResult = stateFromStoresArray;
-  let obj3 = ref(dependencyMap[23]);
-  let obj4 = ref(dependencyMap[31]);
+  let obj3 = channel(analyticsLocations[23]);
+  let obj4 = channel(analyticsLocations[31]);
   const isModalOpen = obj3.useIsModalOpen(obj4.getVoiceChannelKey(channel.id));
-  let obj5 = ref(dependencyMap[18]);
-  const items3 = [closure_9];
+  let obj5 = channel(analyticsLocations[18]);
+  const items3 = [callback];
   const stateFromStores1 = obj5.useStateFromStores(items3, () => callback.getEmbeddedActivitiesForChannel(channel.id));
   set = new Set(stateFromStores.map((voiceState) => voiceState.voiceState.userId));
   const items4 = [];
   if (channel.isPrivate()) {
     const recipients = channel.recipients;
     let reduced = recipients.reduce((arr) => {
-      const user = user.getUser(arg1);
+      const user = outer1_13.getUser(arg1);
       let hasItem = null == user;
       if (!hasItem) {
         hasItem = set.has(user.id);
@@ -208,7 +211,7 @@ const forwardRefResult = importAllResult.forwardRef(function VoiceMemberList(cha
   if (null != tmp4) {
     if (null != stateFromStoresArray) {
       if (isModalOpen) {
-        const found = stateFromStores.find((user) => user.user.id === tmp4.ownerId);
+        const found = stateFromStores.find((user) => user.user.id === _undefined2.ownerId);
         let nick;
         if (null != found) {
           nick = found.nick;
@@ -217,71 +220,69 @@ const forwardRefResult = importAllResult.forwardRef(function VoiceMemberList(cha
         if (null != nick) {
           str = nick;
         }
-        let obj8 = importDefault(dependencyMap[36]);
+        let obj8 = flag(analyticsLocations[36]);
         const tmp14 = callback(obj8.partition(stateFromStores, (user) => stateFromStoresArray.includes(user.user.id)), 2);
         const first = tmp14[0];
         if (first.length > 0) {
           obj = { type: constants.SPECTATING };
-          const intl = ref(dependencyMap[21]).intl;
+          const intl = channel(analyticsLocations[21]).intl;
           obj = { username: str };
-          obj.title = intl.formatToPlainString(ref(dependencyMap[21]).t.Fb0eT9, obj);
+          obj.title = intl.formatToPlainString(channel(analyticsLocations[21]).t.Fb0eT9, obj);
           obj.data = first;
           items5.push(obj);
         }
         if (tmp14[1].length > 0) {
           obj1 = { type: constants.VOICE };
-          const intl2 = ref(dependencyMap[21]).intl;
-          obj1.title = intl2.string(ref(dependencyMap[21]).t.C7iIKB);
+          const intl2 = channel(analyticsLocations[21]).intl;
+          obj1.title = intl2.string(channel(analyticsLocations[21]).t.C7iIKB);
           obj1.data = stateFromStores1.concat(arr11);
           items5.push(obj1);
         }
         if (reduced.length > 0) {
           obj2 = { type: constants.DISCONNECTED };
-          const intl3 = ref(dependencyMap[21]).intl;
-          obj2.title = intl3.string(ref(dependencyMap[21]).t.BnSq1I);
+          const intl3 = channel(analyticsLocations[21]).intl;
+          obj2.title = intl3.string(channel(analyticsLocations[21]).t.BnSq1I);
           obj2.data = reduced;
           items5.push(obj2);
         }
       }
       const items6 = [channel.id, analyticsLocations];
-      callback = importAllResult.useCallback((id) => {
+      callback = stateFromStoresArray.useCallback((id) => {
         let obj = flag(analyticsLocations[37]);
         obj.hideActionSheet();
         obj = { userId: id.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations };
         flag(analyticsLocations[38])(obj);
       }, items6);
-      closure_9 = callback;
       const items7 = [channel, flag, callback];
-      const callback1 = importAllResult.useCallback((item) => {
+      callback1 = stateFromStoresArray.useCallback((item) => {
         item = item.item;
         const type = item.section.type;
-        if (constants.VOICE === type) {
+        if (outer1_27.VOICE === type) {
           let tmp18 = null;
           if (!(item instanceof callback1)) {
             let obj = { item, channelId: channel.id, onPressUser: callback, isActionSheet: flag };
-            tmp18 = callback(closure_33, obj);
+            tmp18 = outer1_21(outer1_33, obj);
           }
           return tmp18;
-        } else if (constants.SPECTATING === type) {
+        } else if (outer1_27.SPECTATING === type) {
           obj = {};
           const merged = Object.assign(item);
           obj["onPress"] = callback;
           obj["isSpectating"] = true;
           obj["isActionSheet"] = true;
-          return callback(true(analyticsLocations[33]), obj);
-        } else if (constants.DISCONNECTED === type) {
+          return outer1_21(true(analyticsLocations[33]), obj);
+        } else if (outer1_27.DISCONNECTED === type) {
           obj = { user: item, channel, isActionSheet: flag, onPress: callback };
-          return callback(channel(analyticsLocations[33]).DisconnectedUserRow, obj);
+          return outer1_21(channel(analyticsLocations[33]).DisconnectedUserRow, obj);
         }
       }, items7);
-      closure_10 = callback1;
       if (flag) {
         obj3 = { theme: ThemeTypes.DARK };
         obj4 = { style: tmp3.container };
         obj5 = { channel };
-        const items8 = [callback2(ref(dependencyMap[40]).VoiceChannelHeader, obj5), , ];
+        const items8 = [callback2(channel(analyticsLocations[40]).VoiceChannelHeader, obj5), , ];
         const obj6 = { style: tmp3.headerFormDivider };
-        items8[1] = callback2(ref(dependencyMap[19]).FormDivider, obj6);
+        items8[1] = callback2(channel(analyticsLocations[19]).FormDivider, obj6);
         const obj7 = { inActionSheet: true, style: tmp3.voiceChannelContainer };
         const merged1 = Object.assign(merged);
         obj7["renderItem"] = function renderRow(arg0, arg1) {
@@ -291,10 +292,10 @@ const forwardRefResult = importAllResult.forwardRef(function VoiceMemberList(cha
             let obj = { item: tmp, section: items5[arg0] };
             obj = {};
             const items = [callback1(obj), ];
-            obj = { style: items5.rowFormDivider };
-            items[1] = callback(channel(analyticsLocations[19]).FormDivider, obj);
+            obj = { style: _undefined.rowFormDivider };
+            items[1] = outer1_21(channel(analyticsLocations[19]).FormDivider, obj);
             obj.children = items;
-            return callback2(closure_23, obj);
+            return outer1_22(outer1_23, obj);
           }
         };
         obj7["itemSize"] = function getRowHeight(arg0, arg1) {
@@ -303,12 +304,12 @@ const forwardRefResult = importAllResult.forwardRef(function VoiceMemberList(cha
           } else if (null == items5[arg0].data[arg1]) {
             return 0;
           } else {
-            const diff = closure_4 - 2 * channel(analyticsLocations[33]).STREAM_PREVIEW_MARGIN;
-            const sum = closure_18 + 32;
+            const diff = _slicedToArray - 2 * channel(analyticsLocations[33]).STREAM_PREVIEW_MARGIN;
+            const sum = outer1_18 + 32;
             if (tmp9 instanceof callback1) {
               return sum;
-            } else if (callback3(tmp9)) {
-              let result = channel(analyticsLocations[32]).calculateActivityRowHeight(closure_4);
+            } else if (outer1_32(tmp9)) {
+              let result = channel(analyticsLocations[32]).calculateActivityRowHeight(_slicedToArray);
               const obj = channel(analyticsLocations[32]);
             } else {
               const voiceState = tmp9.voiceState;
@@ -323,11 +324,11 @@ const forwardRefResult = importAllResult.forwardRef(function VoiceMemberList(cha
           }
         };
         obj7["sections"] = items5.map((data) => data.data.length);
-        items8[2] = callback2(importDefault(dependencyMap[41]), obj7);
+        items8[2] = callback2(flag(analyticsLocations[41]), obj7);
         obj4.children = items8;
         obj3.children = callback3(items5, obj4);
-        let tmp30Result = tmp30(ref(dependencyMap[39]).ThemeContextProvider, obj3);
-        const tmp54 = importDefault(dependencyMap[41]);
+        let tmp30Result = tmp30(channel(analyticsLocations[39]).ThemeContextProvider, obj3);
+        const tmp54 = flag(analyticsLocations[41]);
       } else {
         obj8 = { ref, sections: items5, renderSectionHeader, renderItem: callback1, keyExtractor: extractKey, ItemSeparatorComponent: ItemSeparator };
         let tmp36 = null;
@@ -352,6 +353,6 @@ const forwardRefResult = importAllResult.forwardRef(function VoiceMemberList(cha
     items5.push(obj12);
   }
 });
-const result = arg1(dependencyMap[42]).fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceMemberList.tsx");
+let result = require("result").fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceMemberList.tsx");
 
 export default forwardRefResult;

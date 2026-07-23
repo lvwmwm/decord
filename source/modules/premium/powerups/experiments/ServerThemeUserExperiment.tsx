@@ -1,15 +1,15 @@
-// Module ID: 4057
-// Function ID: 33821
+// Module ID: 4059
+// Function ID: 33830
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: getServerThemeUserEnabled, useServerThemeUserEnabled
 
-// Module 4057 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": null, "Bool(false)": null, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeUserExperiment.tsx");
+// Module 4059 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-05-server-theme-user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeUserExperiment.tsx");
 
 export const ServerThemeUserExperiment = apexExperiment;
 export const getServerThemeUserEnabled = function getServerThemeUserEnabled(GuildPowerupsConstants) {

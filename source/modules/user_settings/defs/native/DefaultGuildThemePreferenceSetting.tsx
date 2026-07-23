@@ -1,42 +1,44 @@
-// Module ID: 14085
-// Function ID: 106935
+// Module ID: 14199
+// Function ID: 109091
 // Name: radio
-// Dependencies: []
+// Dependencies: [31, 7662, 3803, 1212, 1282, 10095, 4059, 2]
 
-// Module 14085 (radio)
-let closure_2 = importAll(dependencyMap[0]);
-let obj = arg1(dependencyMap[5]);
-obj = {
+// Module 14199 (radio)
+import result from "result";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.Q7mm4g);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.Q7mm4g);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.APPEARANCE,
-  useValue: arg1(dependencyMap[2]).DefaultGuildThemePreference.useSetting,
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  useValue: require("explicitContentFromProto").DefaultGuildThemePreference.useSetting,
   onValueChange: function onDefaultGuildThemePreferenceChange(arg0) {
-    const DefaultGuildThemePreference = arg1(dependencyMap[2]).DefaultGuildThemePreference;
+    const DefaultGuildThemePreference = require(3803) /* explicitContentFromProto */.DefaultGuildThemePreference;
     DefaultGuildThemePreference.updateSetting(Number(arg0));
   },
   useOptions: function useDefaultGuildThemePreferenceOptions() {
     return React.useMemo(() => {
       let obj = {};
-      const intl = callback(closure_1[3]).intl;
-      obj.label = intl.string(callback(closure_1[3]).t.aN3RNQ);
-      obj.value = callback(closure_1[4]).GuildThemeSourcePreference.GUILD;
+      const intl = outer1_0(outer1_1[3]).intl;
+      obj.label = intl.string(outer1_0(outer1_1[3]).t.aN3RNQ);
+      obj.value = outer1_0(outer1_1[4]).GuildThemeSourcePreference.GUILD;
       const items = [obj, ];
       obj = {};
-      const intl2 = callback(closure_1[3]).intl;
-      obj.label = intl2.string(callback(closure_1[3]).t.js8y7t);
-      obj.value = callback(closure_1[4]).GuildThemeSourcePreference.PERSONAL;
+      const intl2 = outer1_0(outer1_1[3]).intl;
+      obj.label = intl2.string(outer1_0(outer1_1[3]).t.js8y7t);
+      obj.value = outer1_0(outer1_1[4]).GuildThemeSourcePreference.PERSONAL;
       items[1] = obj;
       return items;
     }, []);
   },
   usePredicate() {
-    return arg1(dependencyMap[6]).useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
+    return require(4059) /* apexExperiment */.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
   }
 };
-const radio = obj.createRadio(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/DefaultGuildThemePreferenceSetting.tsx");
+createToggle = createToggle.createRadio(createToggle);
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/DefaultGuildThemePreferenceSetting.tsx");
 
-export default radio;
+export default createToggle;

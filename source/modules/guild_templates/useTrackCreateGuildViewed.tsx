@@ -1,32 +1,33 @@
-// Module ID: 10936
-// Function ID: 85065
+// Module ID: 10946
+// Function ID: 85114
 // Name: useTrackCreateGuildViewed
-// Dependencies: []
+// Dependencies: [31, 5720, 653, 675, 2]
 // Exports: default
 
-// Module 10936 (useTrackCreateGuildViewed)
-let closure_2 = importAll(dependencyMap[0]);
-const GuildTemplateStates = arg1(dependencyMap[1]).GuildTemplateStates;
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_templates/useTrackCreateGuildViewed.tsx");
+// Module 10946 (useTrackCreateGuildViewed)
+import result from "result";
+import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
+import { AnalyticEvents } from "ME";
+
+const result = require("ME").fileFinishedImporting("modules/guild_templates/useTrackCreateGuildViewed.tsx");
 
 export default function useTrackCreateGuildViewed(arg0) {
-  const importDefault = arg0;
+  let closure_0 = arg0;
   let closure_1 = React.useRef([]);
-  const effect = React.useEffect((self) => {
-    let tmp = null != self;
+  const effect = React.useEffect(() => {
+    let tmp = null != lib;
     if (tmp) {
-      tmp = self.state !== constants.RESOLVING;
+      tmp = lib.state !== outer1_3.RESOLVING;
     }
     if (tmp) {
       let current = ref.current;
-      if (!current.includes(self.code)) {
+      if (!current.includes(lib.code)) {
         current = ref.current;
-        current.push(self.code);
-        let obj = self(ref[3]);
+        current.push(lib.code);
+        let obj = lib(ref[3]);
         obj = {};
-        ({ code: obj2.guild_template_code, name: obj2.guild_template_name, description: obj2.guild_template_description, sourceGuildId: obj2.guild_template_guild_id } = self);
-        obj.track(constants2.CREATE_GUILD_VIEWED, obj);
+        ({ code: obj2.guild_template_code, name: obj2.guild_template_name, description: obj2.guild_template_description, sourceGuildId: obj2.guild_template_guild_id } = lib);
+        obj.track(outer1_4.CREATE_GUILD_VIEWED, obj);
       }
     }
   });

@@ -1,29 +1,33 @@
-// Module ID: 16304
-// Function ID: 125790
+// Module ID: 16421
+// Function ID: 127964
 // Name: FormBigRadioBox
-// Dependencies: [270270464, 916979712, 79429632, 102039552, 297467904, 95420416, 131072, 528351232, 452984832, 771751936]
+// Dependencies: [31, 27, 33, 4130, 689, 3848, 8474, 1273, 4126, 2]
 // Exports: default
 
-// Module 16304 (FormBigRadioBox)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[4]).radii.sm };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[2]);
-obj.containerSelected = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
-obj.indicator = { st: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000406163257, sv: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001468067886759054, sw: -8364227006887449000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
-obj.iconContainer = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST };
-obj.iconContainerSelected = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-obj.title = { marginBottom: 2 };
-obj.disabled = { opacity: 0.5 };
-let closure_6 = obj.createStyles(obj);
-const obj3 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormBigRadioBox.tsx");
+// Module 16421 (FormBigRadioBox)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, alignSelf: "stretch", alignItems: "flex-start", padding: 16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.containerSelected = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose.indicator = { position: "absolute", right: 18, top: 18 };
+let obj2 = { height: 40, width: 40, alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, justifyContent: "center", marginBottom: 16 };
+_createForOfIteratorHelperLoose.iconContainer = obj2;
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose.iconContainerSelected = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.title = { marginBottom: 2 };
+_createForOfIteratorHelperLoose.disabled = { opacity: 0.5 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormBigRadioBox.tsx");
 
 export default function FormBigRadioBox(arg0) {
   let accessibilityRole;
@@ -40,8 +44,8 @@ export default function FormBigRadioBox(arg0) {
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[5]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(3848) /* useCheckboxA11yNative */;
   obj = { selected, disabled };
   const radioA11yNative = obj.useRadioA11yNative(obj);
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
@@ -67,7 +71,7 @@ export default function FormBigRadioBox(arg0) {
   }
   obj.onPress = tmp5;
   const obj1 = { style: tmp.indicator, active: selected };
-  const items1 = [callback(arg1(dependencyMap[7]).RadioIndicator, obj1), , , ];
+  const items1 = [callback(require(1273) /* Button */.RadioIndicator, obj1), , , ];
   const obj2 = {};
   const items2 = [tmp.iconContainer, ];
   if (selected) {
@@ -75,10 +79,12 @@ export default function FormBigRadioBox(arg0) {
   }
   items2[1] = selected;
   obj2.style = items2;
-  obj2.children = callback(arg1(dependencyMap[7]).Icon, { source: icon });
+  obj2.children = callback(require(1273) /* Button */.Icon, { source: icon });
   items1[1] = callback(View, obj2);
-  items1[2] = callback(arg1(dependencyMap[8]).Text, { style: tmp.title, children: title });
-  items1[3] = callback(arg1(dependencyMap[8]).Text, { children: description });
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title };
+  items1[2] = callback(require(4126) /* Text */.Text, obj3);
+  const obj4 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
+  items1[3] = callback(require(4126) /* Text */.Text, obj4);
   obj.children = items1;
-  return closure_5(importDefault(dependencyMap[6]), obj);
+  return closure_5(importDefault(8474), obj);
 };

@@ -1,11 +1,10 @@
-// Module ID: 8892
-// Function ID: 70186
+// Module ID: 8899
+// Function ID: 70227
 // Name: SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8892 (SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/rtc/SecureFramesConstants.tsx");
+// Module 8899 (SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY)
+const result = require("set").fileFinishedImporting("modules/rtc/SecureFramesConstants.tsx");
 
 export const SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY = "secure_frames_linking_bottom_sheet_key";
 export const SECURE_FRAMES_CALL_VERIFICATION_BOTTOM_SHEET_KEY = "secure_frames_call_verification_bottom_sheet_key";

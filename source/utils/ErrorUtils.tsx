@@ -1,10 +1,10 @@
-// Module ID: 7224
-// Function ID: 58202
+// Module ID: 7229
+// Function ID: 58236
 // Name: getUnderlyingIOSExceptionRecursively
-// Dependencies: []
+// Dependencies: [7230, 2]
 // Exports: getUnderlyingIOSError, serializeError
 
-// Module 7224 (getUnderlyingIOSExceptionRecursively)
+// Module 7229 (getUnderlyingIOSExceptionRecursively)
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
   if (null != NSUnderlyingError.userInfo.NSUnderlyingError) {
     const tmp2 = getUnderlyingIOSExceptionRecursively(NSUnderlyingError.userInfo.NSUnderlyingError);
@@ -14,8 +14,7 @@ function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
   }
   return NSUnderlyingError.userInfo.NSLocalizedDescription;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("utils/ErrorUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/ErrorUtils.tsx");
 
 export const getUnderlyingIOSError = function getUnderlyingIOSError(code) {
   const tmp = getUnderlyingIOSExceptionRecursively(code);
@@ -37,5 +36,5 @@ export const serializeError = function serializeError(arg0) {
     const _String = String;
     error1 = new Error(String(error));
   }
-  return JSON.stringify(require(dependencyMap[0]).normalizeToSize(error1));
+  return JSON.stringify(require(7230) /* BAGGAGE_HEADER_NAME */.normalizeToSize(error1));
 };

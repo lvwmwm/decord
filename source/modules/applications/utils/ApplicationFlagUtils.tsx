@@ -1,18 +1,20 @@
-// Module ID: 7366
-// Function ID: 59394
+// Module ID: 7371
+// Function ID: 59428
 // Name: getApplicationFlags
-// Dependencies: []
+// Dependencies: [4153, 483, 2]
 // Exports: hasApplicationFlag
 
-// Module 7366 (getApplicationFlags)
+// Module 7371 (getApplicationFlags)
+import _callSuper from "_callSuper";
+
 function getApplicationFlags(application) {
   if (null == application) {
-    let flags2 = importAll(dependencyMap[1]).deserialize(0);
-    const obj2 = importAll(dependencyMap[1]);
+    let flags2 = importAll(483).deserialize(0);
+    const obj2 = importAll(483);
   } else {
     let tmp5 = null != application;
     if (tmp5) {
-      let tmp2 = application instanceof closure_2;
+      let tmp2 = application instanceof _callSuper;
       if (!tmp2) {
         let tmp3 = "flags" in application;
         if (tmp3) {
@@ -43,16 +45,15 @@ function getApplicationFlags(application) {
       if (null != flags) {
         num2 = flags;
       }
-      flags2 = importAll(dependencyMap[1]).deserialize(num2);
-      const obj = importAll(dependencyMap[1]);
+      flags2 = importAll(483).deserialize(num2);
+      const obj = importAll(483);
     }
   }
   return flags2;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/applications/utils/ApplicationFlagUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/applications/utils/ApplicationFlagUtils.tsx");
 
 export { getApplicationFlags };
 export const hasApplicationFlag = function hasApplicationFlag(application, EMBEDDED) {
-  return importAll(dependencyMap[1]).has(getApplicationFlags(application), EMBEDDED);
+  return importAll(483).has(getApplicationFlags(application), EMBEDDED);
 };

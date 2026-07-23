@@ -1,11 +1,13 @@
 // Module ID: 962
-// Function ID: 10419
+// Function ID: 10420
 // Name: _isFetchSupported
-// Dependencies: []
+// Dependencies: [798, 800, 801]
 
 // Module 962 (_isFetchSupported)
+const require = arg1;
+const dependencyMap = arg6;
 function _isFetchSupported() {
-  if ("fetch" in arg1(arg6[0]).GLOBAL_OBJ) {
+  if ("fetch" in require(798).GLOBAL_OBJ) {
     const _Headers = Headers;
     const headers = new Headers();
     const _Request = Request;
@@ -41,9 +43,9 @@ arg5.supportsErrorEvent = function supportsErrorEvent() {
 };
 arg5.supportsFetch = _isFetchSupported;
 arg5.supportsHistory = function supportsHistory() {
-  let history = "history" in arg1(arg6[0]).GLOBAL_OBJ;
+  let history = "history" in require(798).GLOBAL_OBJ;
   if (history) {
-    history = arg1(arg6[0]).GLOBAL_OBJ.history;
+    history = require(798).GLOBAL_OBJ.history;
   }
   return history;
 };
@@ -51,10 +53,10 @@ arg5.supportsNativeFetch = function supportsNativeFetch() {
   if ("string" === typeof globalThis.EdgeRuntime) {
     return true;
   } else if (_isFetchSupported()) {
-    if (isNativeFunction(arg1(arg6[0]).GLOBAL_OBJ.fetch)) {
+    if (isNativeFunction(require(798).GLOBAL_OBJ.fetch)) {
       return true;
     } else {
-      const _document = arg1(arg6[0]).GLOBAL_OBJ.document;
+      const _document = require(798).GLOBAL_OBJ.document;
       if (_document) {
         if ("function" === typeof obj.createElement) {
           const element = <iframe />;
@@ -71,7 +73,7 @@ arg5.supportsNativeFetch = function supportsNativeFetch() {
           }
           const head = _document.head;
           head.removeChild(element);
-          const tmp13 = element;
+          tmp13 = element;
         }
       }
     }
@@ -90,5 +92,5 @@ arg5.supportsReferrerPolicy = function supportsReferrerPolicy() {
   }
 };
 arg5.supportsReportingObserver = function supportsReportingObserver() {
-  return "ReportingObserver" in arg1(arg6[0]).GLOBAL_OBJ;
+  return "ReportingObserver" in require(798).GLOBAL_OBJ;
 };

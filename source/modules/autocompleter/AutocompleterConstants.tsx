@@ -1,21 +1,22 @@
-// Module ID: 5040
-// Function ID: 43575
+// Module ID: 5043
+// Function ID: 43593
 // Name: HeaderRecord
-// Dependencies: []
+// Dependencies: [7, 6, 2]
 
-// Module 5040 (HeaderRecord)
-let closure_0 = importDefault(dependencyMap[1]);
+// Module 5043 (HeaderRecord)
+import _classCallCheck from "_classCallCheck";
+import importDefaultResult from "_defineProperties";
+
 class HeaderRecord {
   constructor(arg0) {
-    tmp = closure_0(this, HeaderRecord);
+    tmp = c0(this, HeaderRecord);
     this.id = global;
     this.text = global;
     return;
   }
 }
-const importDefaultResult = importDefault(dependencyMap[0]);
-const importDefaultResultResult = importDefault(dependencyMap[0])(HeaderRecord);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/autocompleter/AutocompleterConstants.tsx");
+const importDefaultResultResult = require("_defineProperties")(HeaderRecord);
+const result = require("set").fileFinishedImporting("modules/autocompleter/AutocompleterConstants.tsx");
 
 export const HeaderRecord = importDefaultResultResult;
 export const FindResultDirections = { UP: "UP", DOWN: "DOWN" };

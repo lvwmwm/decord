@@ -1,12 +1,13 @@
 // Module ID: 1294
-// Function ID: 15146
+// Function ID: 15147
 // Name: jsonReadOptions
-// Dependencies: []
+// Dependencies: [65]
 // Exports: jsonReadOptions, jsonWriteOptions, mergeJsonOptions
 
 // Module 1294 (jsonReadOptions)
-let closure_0 = require(dependencyMap[0]);
-let closure_1 = {};
+import _toConsumableArray from "_toConsumableArray";
+
+let closure_1 = { emitDefaultValues: false, enumAsInteger: false, useProtoFieldName: false, prettySpaces: 0 };
 let closure_2 = { ignoreUnknownFields: false };
 
 export const jsonReadOptions = function jsonReadOptions(arg0) {
@@ -46,6 +47,6 @@ export const mergeJsonOptions = function mergeJsonOptions(typeRegistry, typeRegi
   if (null === typeRegistry1) {
     typeRegistry1 = [];
   }
-  merged.typeRegistry = items.concat(closure_0(typeRegistry), closure_0(typeRegistry1));
+  merged.typeRegistry = items.concat(_toConsumableArray(typeRegistry), _toConsumableArray(typeRegistry1));
   return merged;
 };

@@ -1,30 +1,37 @@
-// Module ID: 13303
-// Function ID: 101029
+// Module ID: 13417
+// Function ID: 103185
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: []
+// Dependencies: [4167, 4033, 653, 8310, 10499, 9079, 10496, 686, 10449, 10482, 22, 664, 7820, 675, 2]
 
-// Module 13303 (RPC_LOCAL_SCOPE)
+// Module 13417 (RPC_LOCAL_SCOPE)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
+import ME from "ME";
+
 let RPC_LOCAL_SCOPE;
 let RPC_SCOPE_CONFIG;
-let closure_3 = importDefault(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const TransportTypes = tmp2.TransportTypes;
-({ RPC_SCOPE_CONFIG, RPC_LOCAL_SCOPE } = tmp2);
-const tmp3 = arg1(dependencyMap[2]);
-({ ActivityGamePlatforms: closure_5, ActivityPartyPrivacy: closure_6, ActivityTypes: closure_7, AnalyticEvents: closure_8, RPCErrors: closure_9 } = tmp3);
-let closure_10 = [true];
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+const TransportTypes = RPC_SCOPE_CONFIG.TransportTypes;
+({ RPC_SCOPE_CONFIG, RPC_LOCAL_SCOPE } = RPC_SCOPE_CONFIG);
+({ ActivityGamePlatforms: closure_5, ActivityPartyPrivacy: closure_6, ActivityTypes: closure_7, AnalyticEvents: closure_8, RPCErrors: closure_9 } = ME);
+let closure_10 = ["1402418171662569542"];
 let obj = {};
 obj = {};
 obj = {};
-const items = [arg1(dependencyMap[3]).OAuth2Scopes.RPC, arg1(dependencyMap[3]).OAuth2Scopes.RPC_ACTIVITIES_WRITE, RPC_LOCAL_SCOPE];
+let items = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC_ACTIVITIES_WRITE, RPC_LOCAL_SCOPE];
 obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj.scope = obj;
 obj.validation = function validation(number) {
-  let obj = importDefault(dependencyMap[4])(number);
+  let obj = importDefault(10499)(number);
   obj = {};
   const requiredResult = obj.required();
   obj.pid = number.number().min(0);
-  let obj4 = importDefault(dependencyMap[4])(number);
+  let obj4 = importDefault(10499)(number);
   obj = {};
   const numberResult = number.number();
   const stringResult = number.string();
@@ -45,14 +52,14 @@ obj.validation = function validation(number) {
   obj.details_url = number.string().uri().min(1).max(256);
   const minResult4 = number.string().uri().min(1);
   const obj1 = {};
-  const obj19 = importDefault(dependencyMap[4])(number);
+  const obj19 = importDefault(10499)(number);
   obj1.start = number.number().min(1);
   const numberResult1 = number.number();
   obj1.end = number.number().min(1);
   obj.timestamps = obj19.keys(obj1);
   const numberResult2 = number.number();
   const obj2 = {};
-  const obj23 = importDefault(dependencyMap[4])(number);
+  const obj23 = importDefault(10499)(number);
   const stringResult5 = number.string();
   obj2.large_image = number.string().min(1).max(300);
   const minResult5 = number.string().min(1);
@@ -78,7 +85,7 @@ obj.validation = function validation(number) {
   obj.assets = obj23.keys(obj2);
   const minResult11 = number.string().min(1);
   const obj3 = {};
-  const obj41 = importDefault(dependencyMap[4])(number);
+  const obj41 = importDefault(10499)(number);
   const stringResult12 = number.string();
   obj3.id = number.string().min(2).max(128);
   let arrayResult = number.array();
@@ -93,7 +100,7 @@ obj.validation = function validation(number) {
   obj.party = obj41.keys(obj3);
   const defaultResult = number.number().default(constants.PRIVATE);
   obj4 = {};
-  const obj49 = importDefault(dependencyMap[4])(number);
+  const obj49 = importDefault(10499)(number);
   const stringResult13 = number.string();
   obj4.match = number.string().min(2).max(128);
   const minResult13 = number.string().min(2);
@@ -106,7 +113,7 @@ obj.validation = function validation(number) {
   arrayResult = number.array();
   const minResult15 = number.string().min(2);
   const obj5 = {};
-  const obj58 = importDefault(dependencyMap[4])(number);
+  const obj58 = importDefault(10499)(number);
   const stringResult16 = number.string();
   const minResult16 = number.string().min(1);
   obj5.label = number.string().min(1).max(32).required();
@@ -130,7 +137,7 @@ obj.validation = function validation(number) {
   obj.type = number.number().default(constants2.PLAYING).valid(constants2.PLAYING, constants2.LISTENING, constants2.WATCHING, constants2.COMPETING);
   const defaultResult1 = number.number().default(constants2.PLAYING);
   const numberResult6 = number.number();
-  obj.status_display_type = number.number().optional().valid(arg1(dependencyMap[5]).StatusDisplayTypes.NAME, arg1(dependencyMap[5]).StatusDisplayTypes.STATE, arg1(dependencyMap[5]).StatusDisplayTypes.DETAILS);
+  obj.status_display_type = number.number().optional().valid(require(9079) /* StatusDisplayTypes */.StatusDisplayTypes.NAME, require(9079) /* StatusDisplayTypes */.StatusDisplayTypes.STATE, require(9079) /* StatusDisplayTypes */.StatusDisplayTypes.DETAILS);
   const keys = obj4.keys(obj);
   obj.activity = keys.allow(null);
   return requiredResult.keys(obj);
@@ -141,30 +148,27 @@ obj.handler = function handler(socket) {
   let secrets;
   let timestamps;
   socket = socket.socket;
-  const arg1 = socket;
   const args = socket.args;
   const pid = args.pid;
-  const importDefault = pid;
   const activity = args.activity;
-  const dependencyMap = activity;
-  let application = socket.isSocketConnected;
-  let TransportTypes;
+  const isSocketConnected = socket.isSocketConnected;
+  let privacy;
   let assets;
   const items = [, , ];
-  ({ IPC: arr[0], WEBSOCKET: arr[1], POST_MESSAGE: arr[2] } = TransportTypes);
+  ({ IPC: arr[0], WEBSOCKET: arr[1], POST_MESSAGE: arr[2] } = privacy);
   if (items.includes(socket.transport)) {
     if (null == pid) {
-      if (TransportTypes.IPC === socket.transport) {
-        let tmp81 = importDefault(dependencyMap[6]);
+      if (privacy.IPC === socket.transport) {
+        let tmp83 = pid(activity[6]);
         let obj = { errorCode: constants3.INVALID_COMMAND };
-        const prototype6 = tmp81.prototype;
-        tmp81 = new tmp81(obj, "nonzero pid required");
-        throw tmp81;
+        const prototype6 = tmp83.prototype;
+        tmp83 = new tmp83(obj, "nonzero pid required");
+        throw tmp83;
       }
     }
     if (null == activity) {
       obj = { type: "LOCAL_ACTIVITY_UPDATE", socketId: socket.id, pid, activity };
-      importDefault(dependencyMap[7]).dispatch(obj);
+      pid(activity[7]).dispatch(obj);
       return Promise.resolve(activity);
     } else {
       let obj1 = {};
@@ -173,33 +177,32 @@ obj.handler = function handler(socket) {
       }
       const id = socket.application.id;
       activity.application_id = id;
-      activity.platform = socket.transport === TransportTypes.POST_MESSAGE ? assets.EMBEDDED : assets.DESKTOP;
-      let tmp17;
+      activity.platform = socket.transport === privacy.POST_MESSAGE ? assets.EMBEDDED : assets.DESKTOP;
+      let tmp19;
       if (null != id) {
-        tmp17 = id;
+        tmp19 = id;
       }
-      application = application.getApplication(tmp17);
+      const application = isSocketConnected.getApplication(tmp19);
       const instance = activity.instance;
       const party = activity.party;
-      let privacy;
+      privacy = undefined;
       if (null != party) {
         privacy = party.privacy;
       }
-      TransportTypes = privacy;
-      delete r4.instance;
+      delete tmp.instance;
       if (null != activity.party) {
-        delete r8.privacy;
+        delete tmp2.privacy;
       }
-      obj1 = arg1(dependencyMap[8]);
+      obj1 = socket(activity[8]);
       let canLaunchFrameResult = null != application;
       if (canLaunchFrameResult) {
-        let obj2 = arg1(dependencyMap[9]);
+        let obj2 = socket(activity[9]);
         canLaunchFrameResult = obj2.canLaunchFrame(application);
       }
       if (canLaunchFrameResult) {
-        canLaunchFrameResult = tmp14;
+        canLaunchFrameResult = tmp16;
       }
-      const activityFlags = obj1.computeActivityFlags(activity, tmp19, tmp14, canLaunchFrameResult, privacy);
+      const activityFlags = obj1.computeActivityFlags(activity, tmp21, tmp16, canLaunchFrameResult, privacy);
       if (activityFlags > 0) {
         activity.flags = activityFlags;
       }
@@ -209,36 +212,36 @@ obj.handler = function handler(socket) {
         activity.type = constants2.PLAYING;
       }
       if (null != secrets) {
-        const values = importDefault(dependencyMap[10]).values(secrets);
+        const values = pid(activity[10]).values(secrets);
         const found = values.filter((arg0) => arg0);
         if (null != party2) {
           const items1 = [party2.id];
           if (obj14.intersection(found, items1).length > 0) {
             if (!closure_10.includes(socket.application.id)) {
-              let tmp37 = importDefault(dependencyMap[6]);
+              let tmp39 = pid(activity[6]);
               obj2 = { errorCode: constants3.INVALID_ACTIVITY_SECRET };
-              const prototype2 = tmp37.prototype;
-              tmp37 = new tmp37(obj2, "secrets cannot match the party id");
-              throw tmp37;
+              const prototype2 = tmp39.prototype;
+              tmp39 = new tmp39(obj2, "secrets cannot match the party id");
+              throw tmp39;
             }
           }
-          const obj14 = importDefault(dependencyMap[10]);
+          obj14 = pid(activity[10]);
         }
-        let obj4 = importDefault(dependencyMap[10]);
+        let obj4 = pid(activity[10]);
         if (obj4.uniq(found).length < found.length) {
-          let tmp68 = importDefault(dependencyMap[6]);
+          let tmp70 = pid(activity[6]);
           const obj3 = { errorCode: constants3.INVALID_ACTIVITY_SECRET };
-          const prototype5 = tmp68.prototype;
-          tmp68 = new tmp68(obj3, "secrets must be unique");
-          throw tmp68;
+          const prototype5 = tmp70.prototype;
+          tmp70 = new tmp70(obj3, "secrets must be unique");
+          throw tmp70;
         } else if (null != buttons) {
-          let tmp59 = importDefault(dependencyMap[6]);
+          let tmp61 = pid(activity[6]);
           obj4 = { errorCode: constants3.INVALID_ACTIVITY_SECRET };
-          const prototype4 = tmp59.prototype;
-          tmp59 = new tmp59(obj4, "secrets cannot currently be sent with buttons");
-          throw tmp59;
+          const prototype4 = tmp61.prototype;
+          tmp61 = new tmp61(obj4, "secrets cannot currently be sent with buttons");
+          throw tmp61;
         }
-        const obj13 = importDefault(dependencyMap[10]);
+        const obj13 = pid(activity[10]);
       }
       if (null != buttons) {
         obj1.button_urls = buttons.map((url) => url.url);
@@ -249,15 +252,15 @@ obj.handler = function handler(socket) {
         const _Object = Object;
         const keys = Object.keys(timestamps);
         for (let num6 = 0; num6 < keys.length; num6 = num6 + 1) {
-          let tmp46 = keys[num6];
+          let tmp48 = keys[num6];
           let _Date = Date;
           let str4 = Date.now();
-          let str5 = timestamps[tmp46];
+          let str5 = timestamps[tmp48];
           if (str4.toString().length - str5.toString().length > 2) {
             let _Math = Math;
-            let tmp47 = importDefault;
-            let tmp48 = dependencyMap;
-            timestamps[tmp46] = Math.floor(timestamps[tmp46] * importDefault(dependencyMap[11]).Millis.SECOND);
+            let tmp49 = pid;
+            let tmp50 = activity;
+            timestamps[tmp48] = Math.floor(timestamps[tmp48] * pid(activity[11]).Millis.SECOND);
           }
         }
       }
@@ -268,8 +271,8 @@ obj.handler = function handler(socket) {
           if (null != socket.application.id) {
             const items2 = [, , ];
             ({ large_image: arr2[0], small_image: arr2[1], invite_cover_image: arr2[2] } = assets);
-            resolved = arg1(dependencyMap[12]).fetchAssetIds(socket.application.id, items2);
-            const obj6 = arg1(dependencyMap[12]);
+            resolved = socket(activity[12]).fetchAssetIds(socket.application.id, items2);
+            const obj6 = socket(activity[12]);
           }
         }
         const _Error = Error;
@@ -280,25 +283,25 @@ obj.handler = function handler(socket) {
         let details;
         let party;
         let secrets;
-        let tmp;
         let tmp2;
         let tmp3;
-        [tmp, tmp2, tmp3] = arg0;
+        let tmp4;
+        [tmp2, tmp3, tmp4] = arg0;
         if (null != assets) {
-          if (null != tmp) {
-            assets.large_image = tmp;
-          } else {
-            delete r1.large_image;
-          }
           if (null != tmp2) {
-            assets.small_image = tmp2;
+            assets.large_image = tmp2;
           } else {
-            delete r1.small_image;
+            delete tmp.large_image;
           }
           if (null != tmp3) {
-            assets.invite_cover_image = tmp3;
+            assets.small_image = tmp3;
           } else {
-            delete r1.invite_cover_image;
+            delete tmp.small_image;
+          }
+          if (null != tmp4) {
+            assets.invite_cover_image = tmp4;
+          } else {
+            delete tmp.invite_cover_image;
           }
         }
         if (isSocketConnected()) {
@@ -319,27 +322,27 @@ obj.handler = function handler(socket) {
             str2 = state;
           }
           obj.state = str2;
-          let tmp19 = null != activity.state_url;
-          if (!tmp19) {
-            tmp19 = null != activity.details_url;
+          let tmp20 = null != activity.state_url;
+          if (!tmp20) {
+            tmp20 = null != activity.details_url;
           }
-          if (!tmp19) {
-            const assets = activity.assets;
+          if (!tmp20) {
+            assets = activity.assets;
             let large_url;
             if (null != assets) {
               large_url = assets.large_url;
             }
-            tmp19 = null != large_url;
+            tmp20 = null != large_url;
           }
-          if (!tmp19) {
+          if (!tmp20) {
             const assets2 = activity.assets;
             let small_url;
             if (null != assets2) {
               small_url = assets2.small_url;
             }
-            tmp19 = null != small_url;
+            tmp20 = null != small_url;
           }
-          obj.has_urls = tmp19;
+          obj.has_urls = tmp20;
           if (null != secrets) {
             obj.has_match_secret = secrets.match;
             obj.has_join_secret = secrets.join;
@@ -355,30 +358,30 @@ obj.handler = function handler(socket) {
             obj.has_images = invite_cover_image;
           }
           if (null != party) {
-            let tmp29;
+            let tmp30;
             if (null != party.size) {
               if (party.size[1] > 0) {
-                tmp29 = party.size[1];
+                tmp30 = party.size[1];
               }
             }
-            obj.party_max = tmp29;
+            obj.party_max = tmp30;
             obj.party_id = party.id;
           }
-          pid(activity[13]).track(constants.ACTIVITY_UPDATED, obj);
+          pid(activity[13]).track(outer1_8.ACTIVITY_UPDATED, obj);
           return activity;
         }
       });
     }
   } else {
-    let tmp3 = importDefault(dependencyMap[6]);
+    let tmp5 = pid(activity[6]);
     obj = { errorCode: constants3.INVALID_COMMAND };
     const _HermesInternal = HermesInternal;
-    const prototype = tmp3.prototype;
-    tmp3 = new tmp3(obj, "command not available from \"" + socket.transport + "\" transport");
-    throw tmp3;
+    const prototype = tmp5.prototype;
+    tmp5 = new tmp5(obj, "command not available from \"" + socket.transport + "\" transport");
+    throw tmp5;
   }
 };
-obj[tmp3.RPCCommands.SET_ACTIVITY] = obj;
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/rpc/server/commands/setActivity.tsx");
+obj[ME.RPCCommands.SET_ACTIVITY] = obj;
+const result = require("ME").fileFinishedImporting("modules/rpc/server/commands/setActivity.tsx");
 
 export default obj;

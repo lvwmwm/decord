@@ -1,21 +1,22 @@
-// Module ID: 10821
-// Function ID: 84033
+// Module ID: 10831
+// Function ID: 84082
 // Name: _installApplicationOnDemandIfNeeded
-// Dependencies: []
+// Dependencies: [5, 4153, 4167, 653, 8191, 5465, 8180, 4324, 3989, 10832, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 10821 (_installApplicationOnDemandIfNeeded)
+// Module 10831 (_installApplicationOnDemandIfNeeded)
+import fetchApplication from "fetchApplication";
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function _installApplicationOnDemandIfNeeded() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _installApplicationOnDemandIfNeeded = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/applications/installApplicationOnDemandIfNeeded.native.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/applications/installApplicationOnDemandIfNeeded.native.tsx");
 
 export const installApplicationOnDemandIfNeeded = function installApplicationOnDemandIfNeeded(arg0) {
   return _installApplicationOnDemandIfNeeded(...arguments);

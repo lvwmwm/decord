@@ -1,13 +1,13 @@
-// Module ID: 5897
-// Function ID: 49778
+// Module ID: 5902
+// Function ID: 49807
 // Name: BlossomIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 5903, 2]
 // Exports: BlossomIllocon
 
-// Module 5897 (BlossomIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BlossomIllocon.native.tsx");
+// Module 5902 (BlossomIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BlossomIllocon.native.tsx");
 
 export const BlossomIllocon = function BlossomIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const BlossomIllocon = function BlossomIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5903) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const BlossomIllocon = function BlossomIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

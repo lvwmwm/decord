@@ -1,55 +1,57 @@
-// Module ID: 11516
-// Function ID: 89758
+// Module ID: 11526
+// Function ID: 89808
 // Name: isContentDismissed
-// Dependencies: []
+// Dependencies: [1316, 653, 1345, 662, 1333, 566, 1331, 675, 1334, 2]
 // Exports: markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 11516 (isContentDismissed)
-function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, closure_0) {
-  const dismissedGuildContent = dismissedGuildContent.getDismissedGuildContent(closure_0);
+// Module 11526 (isContentDismissed)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import { UserSettingsDelay } from "MAX_FAVORITES";
+
+const require = arg1;
+function isContentDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, outer1_0) {
+  dismissedGuildContent = dismissedGuildContent.getDismissedGuildContent(outer1_0);
   let hasBitResult = null != dismissedGuildContent;
   if (hasBitResult) {
-    hasBitResult = closure_0(dependencyMap[4]).hasBit(dismissedGuildContent, GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK);
-    const obj = closure_0(dependencyMap[4]);
+    hasBitResult = require(1333) /* hasBit */.hasBit(dismissedGuildContent, GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK);
+    const obj = require(1333) /* hasBit */;
   }
   return hasBitResult;
 }
 function toggleContentSeen(arg0, dc, guild_id, arg3, AUTO_DISMISS) {
   let UNKNOWN = AUTO_DISMISS;
-  dc = arg0;
+  const _require = arg0;
   const importDefault = dc;
   const dependencyMap = guild_id;
-  let obj = dc(dependencyMap[6]);
+  let obj = _require(1331);
   const result = obj.updateUserGuildSettings(guild_id, (dismissedGuildContent) => {
-    const tmp = callback(arg1, arg2);
-    if (!dismissedGuildContent) {
-      const tmp6 = dismissedGuildContent(arg2[4]);
-      dismissedGuildContent.dismissedGuildContent = dismissedGuildContent ? tmp6.addBit : tmp6.removeBit(dismissedGuildContent.dismissedGuildContent, arg1);
+    const tmp = outer1_7(closure_1, guild_id);
+    if (!callback) {
+      const tmp6 = callback(guild_id[4]);
+      dismissedGuildContent.dismissedGuildContent = callback ? tmp6.addBit : tmp6.removeBit(dismissedGuildContent.dismissedGuildContent, closure_1);
     }
     return false;
   }, arg0 ? tmp.INFREQUENT_USER_ACTION : tmp.FREQUENT_USER_ACTION);
   if (arg3) {
-    obj = { type: dc(dependencyMap[8]).DismissibleGuildContent[dc], guild_id };
+    obj = { type: _require(1334).DismissibleGuildContent[dc], guild_id };
     if (null == UNKNOWN) {
       UNKNOWN = ContentDismissActionType.UNKNOWN;
     }
     obj.action = UNKNOWN;
-    importDefault(dependencyMap[7]).track(AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED, obj);
-    const obj2 = importDefault(dependencyMap[7]);
+    importDefault(675).track(AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED, obj);
+    const obj2 = importDefault(675);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
-const UserSettingsDelay = arg1(dependencyMap[3]).UserSettingsDelay;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_dismissible_content/GuildDismissibleContentUtils.tsx");
+let result = require("ContentDismissActionType").fileFinishedImporting("modules/guild_dismissible_content/GuildDismissibleContentUtils.tsx");
 
 export { isContentDismissed };
 export const useIsContentDismissed = function useIsContentDismissed(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const items = [closure_3];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => callback(arg0, arg1));
+  const _require = arg0;
+  let closure_1 = arg1;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => outer1_7(closure_0, closure_1));
 };
 export const markContentAsDismissed = function markContentAsDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, closure_0, arg2, AUTO_DISMISS) {
   toggleContentSeen(true, GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, closure_0, arg2, AUTO_DISMISS);

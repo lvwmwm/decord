@@ -1,10 +1,9 @@
-// Module ID: 13814
-// Function ID: 104462
+// Module ID: 13928
+// Function ID: 106618
 // Name: BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 13814 (BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalConstants.tsx");
+// Module 13928 (BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS)
+const result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalConstants.tsx");
 
 export const BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS = 10000;

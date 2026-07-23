@@ -1,9 +1,23 @@
-// Module ID: 16076
-// Function ID: 123485
+// Module ID: 16193
+// Function ID: 125658
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 8439, 1194, 8482, 16194, 1342, 653, 3982, 3981, 4339, 9189, 16195, 16196, 16204, 16205, 16486, 16488, 5078, 2]
 
-// Module 16076 (_isNativeReflectConstruct)
+// Module 16193 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import isEligibleForSafetyFlowsExperiment from "isEligibleForSafetyFlowsExperiment";
+import handleTouch from "handleTouch";
+import close from "close";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import importDefaultResult from "_isNativeReflectConstruct";
+import ME from "ME";
+import tmp4 from "AutomaticLifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +27,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +80,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,7 +107,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function handlePushedModal(key) {
-  let obj = arg1(dependencyMap[11]);
+  let obj = require(3982) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     obj = { name: "modal", key: key.key };
@@ -103,7 +117,7 @@ function handlePushedModal(key) {
   }
 }
 function handlePoppedModal() {
-  arg1(dependencyMap[12]).popModal();
+  require(3981) /* _createForOfIteratorHelperLoose */.popModal();
 }
 function pushFirstOpenModal(arg0, arg1) {
   let value;
@@ -141,56 +155,46 @@ function pushFirstOpenModal(arg0, arg1) {
       props = {};
     }
     const obj = { key: value.key };
-    handlePushedModal(importDefault(dependencyMap[13])(component, obj, props));
+    handlePushedModal(importDefault(4339)(component, obj, props));
   }
 }
 function createPushModalHandler(arg0) {
   let closure_0 = [...arguments];
   return () => {
-    callback(closure_0);
+    outer1_22(closure_0);
   };
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-const importDefaultResult = importDefault(dependencyMap[9]);
-const tmp3 = arg1(dependencyMap[10]);
-const UserRequiredActions = tmp3.UserRequiredActions;
-const APP = tmp3.AppContext.APP;
-const obj = {
-  "Bool(false)": "SET_AUDIO_DEVICE_BY_ID",
-  "Bool(false)": "invalidColor",
-  "Bool(false)": "mi",
-  "Bool(false)": "isArrayBuffer",
+const UserRequiredActions = ME.UserRequiredActions;
+const APP = ME.AppContext.APP;
+let obj = {
+  key: "EMAIL_VERIFICATION_MODAL_OPEN",
   store: importDefaultResult,
+  closable: false,
+  center: true,
   isOpen(arg0, action) {
     if (null == action) {
       action = importDefaultResult.getAction();
     }
-    let obj = importDefault(dependencyMap[14]);
+    let obj = importDefault(9189);
     let result = obj.isFullScreenVerification(action);
     if (result) {
       result = null != token.getToken();
     }
     if (result) {
       obj = { location: "modal-manager-verification" };
-      result = !action(dependencyMap[15]).isEligibleForSafetyFlowsExperiment(obj);
-      const obj2 = action(dependencyMap[15]);
+      result = !require(16195) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment(obj);
+      const obj2 = require(16195) /* isEligibleForSafetyFlowsExperiment */;
     }
     return result;
   },
   getComponent() {
-    return arg1(dependencyMap[16]).default;
+    return require(16196) /* PhoneThenEmailInterstitial */.default;
   }
 };
-let closure_16 = {
+obj = {
+  key: "USER_REQUIRED_ACTION_UPDATE",
   store: importDefaultResult,
+  center: true,
   isOpen(arg0, arg1) {
     let action = arg1;
     if (null == arg1) {
@@ -199,83 +203,10 @@ let closure_16 = {
     return action === UserRequiredActions.AGREEMENTS;
   },
   getComponent() {
-    return arg1(dependencyMap[17]).default;
+    return require(16204) /* handleTouch */.default;
   }
 };
-let tmp4 = (arg0) => {
-  class DeprecatedModalManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_4(this, DeprecatedModalManager);
-      items1 = [...items];
-      obj = closure_6(DeprecatedModalManager);
-      tmp2 = closure_5;
-      if (closure_17()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = {
-        CONNECTION_OPEN_SUPPLEMENTAL: closure_23(closure_16, closure_15),
-        EMAIL_VERIFICATION_MODAL_OPEN: closure_23(closure_15),
-        USER_REQUIRED_ACTION_UPDATE(requiredAction) {
-              if (null == requiredAction.requiredAction) {
-                if (obj.isModalOpen("USER_REQUIRED_ACTION_UPDATE")) {
-                  callback(closure_2[12]).popModal("USER_REQUIRED_ACTION_UPDATE");
-                  const obj2 = callback(closure_2[12]);
-                }
-                const obj = callback(closure_2[12]);
-                if (obj3.isModalOpen("EMAIL_VERIFICATION_MODAL_OPEN")) {
-                  callback(closure_2[12]).popModal("EMAIL_VERIFICATION_MODAL_OPEN");
-                  const obj4 = callback(closure_2[12]);
-                }
-                const obj3 = callback(closure_2[12]);
-              } else {
-                const items = [closure_16, closure_15];
-                callback2(items, requiredAction.requiredAction);
-              }
-            },
-        GUILD_SETTINGS_OPEN: closure_23(obj1),
-        NOTIFICATION_SETTINGS_MODAL_OPEN: closure_23(obj2),
-        CREATE_INVITE_MODAL_OPEN: closure_23(obj3),
-        GUILD_SETTINGS_CLOSE: closure_21,
-        NOTIFICATION_SETTINGS_MODAL_CLOSE: closure_21,
-        PREMIUM_PAYMENT_MODAL_CLOSE: closure_21,
-        EMAIL_VERIFICATION_MODAL_CLOSE: closure_21,
-        CREATE_INVITE_MODAL_CLOSE: closure_21,
-        QUICKSWITCHER_HIDE: closure_21,
-        IFE_EXPERIMENT_SEARCH_MODAL_CLOSE: closure_21
-      };
-      obj1 = {
-        store: closure_8,
-        getComponent() {
-              return callback(closure_2[18]).default;
-            }
-      };
-      obj2 = { second_place: "png", flexGrow: true, paddingLeft: "/assets/modules/guild_role_subscriptions/native/images" };
-      obj2.store = closure_11;
-      obj2.getComponent = function getComponent() {
-        return callback(closure_2[19]).default;
-      };
-      obj3 = { second_place: null, flexGrow: null, paddingLeft: null };
-      obj3.store = closure_10;
-      obj3.getComponent = function getComponent() {
-        return callback(closure_2[20]).default;
-      };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const arg1 = DeprecatedModalManager;
-  callback2(DeprecatedModalManager, arg0);
-  return callback(DeprecatedModalManager);
-}(importDefault(dependencyMap[21]));
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/main_tabs_v2/native/modal/DeprecatedModalManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/main_tabs_v2/native/modal/DeprecatedModalManager.tsx");
 
 export default tmp4;

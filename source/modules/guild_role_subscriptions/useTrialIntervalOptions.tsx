@@ -1,46 +1,48 @@
-// Module ID: 14007
-// Function ID: 106520
+// Module ID: 14121
+// Function ID: 108676
 // Name: useTrialIntervalOptions
-// Dependencies: []
+// Dependencies: [31, 14094, 1851, 1212, 14120, 2]
 // Exports: default
 
-// Module 14007 (useTrialIntervalOptions)
-let closure_2 = importAll(dependencyMap[0]);
-const TIER_TRIAL_INTERVALS = arg1(dependencyMap[1]).TIER_TRIAL_INTERVALS;
-const SubscriptionIntervalTypes = arg1(dependencyMap[2]).SubscriptionIntervalTypes;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_role_subscriptions/useTrialIntervalOptions.tsx");
+// Module 14121 (useTrialIntervalOptions)
+import result from "result";
+import { TIER_TRIAL_INTERVALS } from "MAX_SUBSCRIPTION_TIERS";
+import { SubscriptionIntervalTypes } from "GuildFeatures";
+
+const require = arg1;
+const result = require("GuildFeatures").fileFinishedImporting("modules/guild_role_subscriptions/useTrialIntervalOptions.tsx");
 
 export default function useTrialIntervalOptions(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const items = [arg0];
   return React.useMemo(() => {
-    const mapped = closure_3.map((interval) => {
+    const mapped = outer1_3.map((interval) => {
       let obj = { value: interval };
-      if (interval.interval === constants.DAY) {
+      if (interval.interval === outer2_4.DAY) {
         if (7 === interval.interval_count) {
-          const intl = lib(closure_1[3]).intl;
-          obj = { defaultLimit: lib(closure_1[4]).formatPlanIntervalDuration(interval) };
-          let formatToPlainStringResult = intl.formatToPlainString(lib(closure_1[3]).t.XfSsr1, obj);
-          const obj4 = lib(closure_1[4]);
+          const intl = callback(outer2_1[3]).intl;
+          obj = { defaultLimit: callback(outer2_1[4]).formatPlanIntervalDuration(interval) };
+          let formatToPlainStringResult = intl.formatToPlainString(callback(outer2_1[3]).t.XfSsr1, obj);
+          const obj4 = callback(outer2_1[4]);
         }
         obj.label = formatToPlainStringResult;
-        let tmp5 = interval.interval === constants.DAY;
+        let tmp5 = interval.interval === outer2_4.DAY;
         if (tmp5) {
           tmp5 = 7 === interval.interval_count;
         }
         obj.isDefault = tmp5;
         return obj;
       }
-      formatToPlainStringResult = lib(closure_1[4]).formatPlanIntervalDuration(interval);
+      formatToPlainStringResult = callback(outer2_1[4]).formatPlanIntervalDuration(interval);
     });
-    if (null != arg0) {
+    if (null != closure_0) {
       const iter = mapped.find((value) => {
         let tmp = null != value.value;
         if (tmp) {
-          tmp = value.value.interval === lib.interval;
+          tmp = value.value.interval === outer1_0.interval;
         }
         if (tmp) {
-          tmp = value.value.interval_count === lib.interval_count;
+          tmp = value.value.interval_count === outer1_0.interval_count;
         }
         return tmp;
       });
@@ -50,9 +52,9 @@ export default function useTrialIntervalOptions(arg0) {
       }
       let tmp = value;
     } else {
-      tmp = arg0;
+      tmp = closure_0;
     }
-    const obj = { options: mapped, selectedOption: tmp };
+    let obj = { options: mapped, selectedOption: tmp };
     return obj;
   }, items);
 };

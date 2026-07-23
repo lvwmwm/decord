@@ -1,15 +1,18 @@
-// Module ID: 11335
-// Function ID: 88164
-// Dependencies: []
+// Module ID: 11345
+// Function ID: 88214
+// Dependencies: [31, 27, 33, 4130, 689, 1324, 3834, 4660, 2]
 
-// Module 11335
-const importAllResult = importAll(dependencyMap[0]);
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles((arg0, height, marginHorizontal) => {
+// Module 11345
+import importAllResult from "result";
+import { StyleSheet } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0, height, marginHorizontal) => {
   let obj = {};
   obj = {};
-  const radii = importDefault(dependencyMap[4]).radii;
+  const radii = importDefault(689).radii;
   obj.borderRadius = arg0 ? radii.sm : radii.round;
   obj.height = height;
   obj.width = height;
@@ -20,18 +23,17 @@ let closure_5 = arg1(dependencyMap[3]).createStyles((arg0, height, marginHorizon
   obj.justifyContent = "center";
   let prop;
   if (!arg0) {
-    prop = importDefault(dependencyMap[4]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
+    prop = importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND;
   }
   obj.backgroundColor = prop;
   obj.actionButton = obj;
-  obj = { tintColor: importDefault(dependencyMap[4]).colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT, width: importDefault(dependencyMap[4]).modules.mobile.CHAT_INPUT_ACTION_ICON_PIXEL_SIZE, height: importDefault(dependencyMap[4]).modules.mobile.CHAT_INPUT_ACTION_ICON_PIXEL_SIZE };
+  obj = { tintColor: importDefault(689).colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT, width: importDefault(689).modules.mobile.CHAT_INPUT_ACTION_ICON_PIXEL_SIZE, height: importDefault(689).modules.mobile.CHAT_INPUT_ACTION_ICON_PIXEL_SIZE };
   obj.actionButtonIcon = obj;
-  obj.actionButtonIconActive = { tintColor: importDefault(dependencyMap[4]).colors.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT };
-  const obj1 = { tintColor: importDefault(dependencyMap[4]).colors.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT };
-  obj.actionButtonIconDisabled = { tintColor: importDefault(dependencyMap[4]).colors.ICON_MUTED };
+  obj.actionButtonIconActive = { tintColor: importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT };
+  const obj1 = { tintColor: importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT };
+  obj.actionButtonIconDisabled = { tintColor: importDefault(689).colors.ICON_MUTED };
   return obj;
 });
-const obj2 = arg1(dependencyMap[3]);
 const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref) => {
   let IconComponent;
   let accessibilityActions;
@@ -53,14 +55,14 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   }
   ({ style, disabled, accessibilityState } = active);
   ({ activeStyle, activeIconStyle, onPress, accessible, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, IconComponent } = active);
-  let obj = ref(dependencyMap[5]);
+  let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
   const mobileVisualRefreshConfig = obj.useMobileVisualRefreshConfig({ location: "ChatInputActionButton" });
   ({ enabled, chatInputFloating } = mobileVisualRefreshConfig);
-  let obj1 = ref(dependencyMap[6]);
-  let token = obj1.useToken(importDefault(dependencyMap[4]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const token1 = ref(dependencyMap[6]).useToken(importDefault(dependencyMap[4]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
-  const obj3 = ref(dependencyMap[6]);
-  const token2 = ref(dependencyMap[6]).useToken(importDefault(dependencyMap[4]).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  let obj1 = require(3834) /* map */;
+  let token = obj1.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const token1 = require(3834) /* map */.useToken(importDefault(689).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const obj3 = require(3834) /* map */;
+  const token2 = require(3834) /* map */.useToken(importDefault(689).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp5 = callback(enabled, token, token1);
   let tmp6;
   if (chatInputFloating) {
@@ -118,9 +120,9 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   }
   items1[3] = disabled;
   obj1.style = items1;
-  obj.children = <IconComponent {...obj1} />;
-  return jsx(ref(dependencyMap[7]).PressableOpacity, obj);
+  obj.children = <IconComponent size="custom" />;
+  return jsx(require(4660) /* PressableBase */.PressableOpacity, { disabled });
 }));
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx");
 
 export default memoResult;

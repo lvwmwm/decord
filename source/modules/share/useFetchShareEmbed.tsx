@@ -1,25 +1,28 @@
-// Module ID: 12794
-// Function ID: 98013
+// Module ID: 12908
+// Function ID: 100169
 // Name: useFetchShareEmbed
-// Dependencies: []
+// Dependencies: [5, 57, 31, 1443, 11020, 682, 2]
 // Exports: default
 
-// Module 12794 (useFetchShareEmbed)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/share/useFetchShareEmbed.tsx");
+// Module 12908 (useFetchShareEmbed)
+import batchUpdates from "batchUpdates";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/share/useFetchShareEmbed.tsx");
 
 export default function useFetchShareEmbed(arg0) {
+  let dependencyMap;
   let tmp3;
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const embed = callback(React.useState(undefined), 2);
   let closure_1 = embed[1];
-  [tmp3, closure_2] = callback(React.useState(false), 2);
+  [tmp3, dependencyMap] = callback(React.useState(false), 2);
   const hasTriedResolving = callback(React.useState(false), 2);
-  let closure_3 = hasTriedResolving[1];
-  const callback = React.useRef(true);
-  const React = React.useRef(undefined);
+  let batchUpdates = hasTriedResolving[1];
+  callback = React.useRef(true);
+  React = React.useRef(undefined);
   const items = [arg0];
   const effect = React.useEffect(() => {
     function unfurl() {
@@ -28,17 +31,16 @@ export default function useFetchShareEmbed(arg0) {
     function _unfurl() {
       // CreateGeneratorClosureLongIndex (0x67)
       const obj = callback(tmp);
-      const _unfurl = obj;
       return obj(...arguments);
     }
-    if (null != arg0) {
-      if ("" !== arg0) {
-        const match = arg0.match(callback(_unfurl[3]).URL_REGEX);
+    if (null != closure_0) {
+      if ("" !== closure_0) {
+        const match = closure_0.match(callback(outer1_2[3]).URL_REGEX);
         let atResult;
         if (null != match) {
           atResult = match.at(0);
         }
-        const arg0 = atResult;
+        closure_0 = atResult;
         if (atResult !== ref2.current) {
           ref2.current = atResult;
           if (null == atResult) {
@@ -50,7 +52,7 @@ export default function useFetchShareEmbed(arg0) {
               unfurl();
             }
             const _setTimeout = setTimeout;
-            const callback = setTimeout(unfurl, 1000);
+            callback = setTimeout(unfurl, 1000);
             return () => {
               clearTimeout(closure_1);
             };

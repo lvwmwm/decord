@@ -1,13 +1,13 @@
-// Module ID: 6213
-// Function ID: 50252
+// Module ID: 6218
+// Function ID: 50281
 // Name: GiftingTier1SmallBadge
-// Dependencies: []
+// Dependencies: [33, 5085, 6219, 2]
 // Exports: GiftingTier1SmallBadge
 
-// Module 6213 (GiftingTier1SmallBadge)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GiftingTier1SmallBadge.native.tsx");
+// Module 6218 (GiftingTier1SmallBadge)
+import { jsx } from "jsxProd";
+
+const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GiftingTier1SmallBadge.native.tsx");
 
 export const GiftingTier1SmallBadge = function GiftingTier1SmallBadge(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const GiftingTier1SmallBadge = function GiftingTier1SmallBadge(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6219) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const GiftingTier1SmallBadge = function GiftingTier1SmallBadge(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

@@ -1,13 +1,15 @@
 // Module ID: 1307
-// Function ID: 15242
+// Function ID: 15243
 // Name: reflectionCreate
-// Dependencies: []
+// Dependencies: [1295, 1305]
 
 // Module 1307 (reflectionCreate)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.reflectionCreate = function reflectionCreate(value) {
   let obj = {};
   obj = { enumerable: false, value };
-  Object.defineProperty(obj, arg1(arg6[0]).MESSAGE_TYPE, obj);
+  Object.defineProperty(obj, require(1295).MESSAGE_TYPE, obj);
   const iter = value.fields[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
@@ -32,9 +34,9 @@ arg5.reflectionCreate = function reflectionCreate(value) {
           if ("scalar" === kind) {
             let tmp11 = obj;
             let tmp12 = localName;
-            let tmp13 = arg1;
-            let tmp14 = arg6;
-            let obj3 = arg1(arg6[1]);
+            let tmp13 = require;
+            let tmp14 = dependencyMap;
+            let obj3 = require(1305) /* reflectionScalarDefault */;
             let tmp15 = nextResult;
             tmp[localName] = obj3.reflectionScalarDefault(tmp20.T, tmp20.L);
           } else if ("enum" === kind) {
@@ -49,7 +51,7 @@ arg5.reflectionCreate = function reflectionCreate(value) {
         }
       }
     }
-    // continue
+    continue;
   }
   return obj;
 };

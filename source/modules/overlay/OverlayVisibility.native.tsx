@@ -1,12 +1,11 @@
-// Module ID: 12731
-// Function ID: 97680
+// Module ID: 12845
+// Function ID: 99836
 // Name: isOverlayCurrentlyVisibleAndUnlocked
-// Dependencies: []
+// Dependencies: [2]
 // Exports: isOverlayChannelVisible, isOverlayCurrentlyVisibleAndUnlocked
 
-// Module 12731 (isOverlayCurrentlyVisibleAndUnlocked)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/overlay/OverlayVisibility.native.tsx");
+// Module 12845 (isOverlayCurrentlyVisibleAndUnlocked)
+const result = require("set").fileFinishedImporting("modules/overlay/OverlayVisibility.native.tsx");
 
 export function isOverlayCurrentlyVisibleAndUnlocked() {
   return false;

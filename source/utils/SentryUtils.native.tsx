@@ -1,9 +1,13 @@
 // Module ID: 1184
-// Function ID: 13483
+// Function ID: 13484
 // Name: isNonEmptyString
-// Dependencies: []
+// Dependencies: [27, 3, 1185, 787, 13126, 786, 1554, 2]
 
 // Module 1184 (isNonEmptyString)
+import { NativeModules } from "get ActivityIndicator";
+import importDefaultResult from "addBreadcrumb";
+import _maybeBackfillMissingBreadcrumbsFromTelemetryRing from "_maybeBackfillMissingBreadcrumbsFromTelemetryRing";
+
 function isNonEmptyString(arg0) {
   let tmp = "string" === typeof arg0;
   if (tmp) {
@@ -20,39 +24,35 @@ function updateNativeReporter(arg0) {
   const CrashReportingManager = NativeModules.CrashReportingManager;
   CrashReportingManager.setUser(tmp);
 }
-const NativeModules = require(dependencyMap[0]).NativeModules;
-let importDefaultResult = importDefault(dependencyMap[1]);
 importDefaultResult = new importDefaultResult("Sentry");
-const _module = require(dependencyMap[2]);
-const sentry = _module.initSentry();
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("utils/SentryUtils.native.tsx");
+_maybeBackfillMissingBreadcrumbsFromTelemetryRing = _maybeBackfillMissingBreadcrumbsFromTelemetryRing.initSentry();
+let result = require("_maybeBackfillMissingBreadcrumbsFromTelemetryRing").fileFinishedImporting("utils/SentryUtils.native.tsx");
 
 export default {
   setUser(id, username, email, staff) {
     const obj = { id, username, email, staff };
-    const currentScope = importAll(dependencyMap[3]).getCurrentScope();
+    const currentScope = importAll(787).getCurrentScope();
     currentScope.setUser(obj);
     updateNativeReporter(obj);
   },
   clearUser() {
-    const currentScope = importAll(dependencyMap[3]).getCurrentScope();
+    const currentScope = importAll(787).getCurrentScope();
     currentScope.setUser(null);
     updateNativeReporter();
   },
   setTags(arg0) {
-    const currentScope = importAll(dependencyMap[3]).getCurrentScope();
+    const currentScope = importAll(787).getCurrentScope();
     currentScope.setTags(arg0);
   },
   setExtra(arg0) {
-    const currentScope = importAll(dependencyMap[3]).getCurrentScope();
+    const currentScope = importAll(787).getCurrentScope();
     currentScope.setExtras(arg0);
   },
   captureException(arg0, extra) {
-    const require = arg0;
-    const updatedOptions = require(dependencyMap[4]).getUpdatedOptions(extra);
-    const obj = require(dependencyMap[4]);
-    importAll(dependencyMap[3]).withScope((setTags) => {
+    const _require = arg0;
+    const updatedOptions = _require(13126).getUpdatedOptions(extra);
+    const obj = _require(13126);
+    importAll(787).withScope((setTags) => {
       if (null != closure_1) {
         if (null != closure_1.tags) {
           setTags.setTags(closure_1.tags);
@@ -61,13 +61,12 @@ export default {
           setTags.setExtras(closure_1.extra);
         }
       }
-      callback(closure_3[3]).captureException(setTags);
+      outer1_2(outer1_3[3]).captureException(closure_0);
     });
   },
   captureCrash(error, extra) {
-    const require = error;
-    const updatedOptions = require(closure_3[4]).getUpdatedOptions(extra);
-    const importAll = updatedOptions;
+    const _require = error;
+    const updatedOptions = _require(13126).getUpdatedOptions(extra);
     let tags;
     if (null != updatedOptions) {
       tags = updatedOptions.tags;
@@ -78,9 +77,9 @@ export default {
         tags1 = updatedOptions.tags;
       }
     }
-    closure_3 = Object.assign({ crash: "true" }, {});
-    const obj = require(closure_3[4]);
-    importAll(closure_3[3]).withScope((setExtras) => {
+    const dependencyMap = Object.assign({ crash: "true" }, {});
+    let obj = _require(13126);
+    updatedOptions(787).withScope((setExtras) => {
       let tmp = null != updatedOptions;
       if (tmp) {
         tmp = null != updatedOptions.extra;
@@ -88,7 +87,7 @@ export default {
       if (tmp) {
         setExtras.setExtras(updatedOptions.extra);
       }
-      setExtras.setTags(closure_3);
+      setExtras.setTags(table);
       setExtras.setLevel("fatal");
       setExtras.addEventProcessor((exception) => {
         exception = exception.exception;
@@ -107,15 +106,15 @@ export default {
         }
         return exception;
       });
-      let closure_1 = updatedOptions(closure_3[3]).captureException(setExtras);
+      let closure_1 = updatedOptions(table[3]).captureException(closure_0);
     });
     return importDefault;
   },
   captureMessage(arg0, extra) {
-    const require = arg0;
-    const updatedOptions = require(dependencyMap[4]).getUpdatedOptions(extra);
-    const obj = require(dependencyMap[4]);
-    importAll(dependencyMap[3]).withScope((setExtras) => {
+    const _require = arg0;
+    const updatedOptions = _require(13126).getUpdatedOptions(extra);
+    const obj = _require(13126);
+    importAll(787).withScope((setExtras) => {
       let tmp = null != closure_1;
       if (tmp) {
         tmp = null != closure_1.extra;
@@ -130,14 +129,14 @@ export default {
       if (tmp5) {
         setExtras.setTags(closure_1.tags);
       }
-      callback(closure_3[3]).captureMessage(setExtras);
+      outer1_2(outer1_3[3]).captureMessage(closure_0);
     });
   },
   addFeatureFlag(arg0, arg1) {
     let client;
-    if (null != importAll(dependencyMap[3]).getClient) {
-      client = importAll(dependencyMap[3]).getClient();
-      const obj = importAll(dependencyMap[3]);
+    if (null != importAll(787).getClient) {
+      client = importAll(787).getClient();
+      const obj = importAll(787);
     }
     let integrationByName;
     if (null != client) {
@@ -151,13 +150,13 @@ export default {
   },
   addBreadcrumb(arg0) {
     importDefaultResult.verbose("Breadcrumb", arg0);
-    importDefault(dependencyMap[5])(arg0);
+    importDefault(786)(arg0);
   },
   profiledRootComponent(displayName) {
     let withProfilerResult = displayName;
     if ("canaryRelease" === obj.getConstants().ReleaseChannel) {
-      withProfilerResult = importAll(dependencyMap[3]).withProfiler(displayName, { intl: null, bottom: null });
-      const obj2 = importAll(dependencyMap[3]);
+      withProfilerResult = importAll(787).withProfiler(displayName, { includeRender: true, includeUpdates: true });
+      const obj2 = importAll(787);
     }
     return withProfilerResult;
   },
@@ -175,7 +174,9 @@ export default {
   },
   getLastCrashReport(arg0) {
     return new Promise((arg0, arg1) => {
-      const CrashReportingManager = obj.CrashReportingManager;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      const CrashReportingManager = outer1_4.CrashReportingManager;
       let getLastCrashReport;
       if (null != CrashReportingManager) {
         getLastCrashReport = CrashReportingManager.getLastCrashReport;
@@ -205,38 +206,38 @@ export default {
             }
             let obj = { type: undefined, event_id: timestamp.event_id, timestamp: result, level: formatted };
             let tmp7;
-            if (callback(timestamp.origin)) {
-              obj = { event.origin: timestamp.origin };
+            if (outer2_6(timestamp.origin)) {
+              obj = { "event.origin": timestamp.origin };
               tmp7 = obj;
             }
             obj.tags = tmp7;
             obj = {};
-            if (callback(timestamp.error_message)) {
+            if (outer2_6(timestamp.error_message)) {
               ({ error_message: obj.message, error_message: obj3.persisted_error_message } = timestamp);
             }
-            if (callback(timestamp.error_stack)) {
+            if (outer2_6(timestamp.error_stack)) {
               obj.persisted_error_stack = timestamp.error_stack;
             }
             if (timestamp.is_native) {
-              if (callback(timestamp.exit_reason)) {
+              if (outer2_6(timestamp.exit_reason)) {
                 obj.native_exit_reason = timestamp.exit_reason;
               }
-              if (callback(timestamp.exit_description)) {
+              if (outer2_6(timestamp.exit_description)) {
                 obj.native_exit_description = timestamp.exit_description;
               }
-              if (callback(timestamp.tombstone)) {
+              if (outer2_6(timestamp.tombstone)) {
                 obj.native_tombstone = timestamp.tombstone;
               }
-              if (callback(timestamp.tombstone_cause)) {
+              if (outer2_6(timestamp.tombstone_cause)) {
                 obj.native_tombstone_cause = timestamp.tombstone_cause;
               }
-              if (callback(timestamp.tombstone_hash)) {
+              if (outer2_6(timestamp.tombstone_hash)) {
                 obj.native_tombstone_hash = timestamp.tombstone_hash;
               }
-              if (callback(timestamp.tombstone_group_by)) {
+              if (outer2_6(timestamp.tombstone_group_by)) {
                 obj.native_tombstone_group_by = timestamp.tombstone_group_by;
               }
-              if (callback(timestamp.tombstone_origin)) {
+              if (outer2_6(timestamp.tombstone_origin)) {
                 obj.native_tombstone_origin = timestamp.tombstone_origin;
               }
             }
@@ -249,7 +250,7 @@ export default {
             obj.extra = Object.assign({}, obj.extra, obj);
             tmp2 = obj;
           }
-          timestamp(tmp2);
+          closure_0(tmp2);
         });
       } else {
         arg0(null);

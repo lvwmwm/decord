@@ -1,53 +1,53 @@
-// Module ID: 11180
-// Function ID: 86991
+// Module ID: 11190
+// Function ID: 87041
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [2]
 // Exports: queryData
 
-// Module 11180 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let _createForOfIteratorHelperLoose = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11190 (_createForOfIteratorHelperLoose)
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +58,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      _createForOfIteratorHelperLoose = tmp;
+      closure_0 = tmp;
     }
-    const _arrayLikeToArray = 0;
+    _arrayLikeToArray = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,9 +85,9 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function sortGroup(value, sortComparers) {
-  const _createForOfIteratorHelperLoose = sortComparers;
+  let closure_0 = sortComparers;
   return value.sort((arg0, arg1) => {
-    const tmp = arg1(arg1);
+    const tmp = sortComparers(sortComparers);
     const iter = tmp();
     let iter2 = iter;
     if (!iter.done) {
@@ -101,8 +101,7 @@ function sortGroup(value, sortComparers) {
     return 0;
   });
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/queries/ArraySearch.tsx");
+const result = require("set").fileFinishedImporting("modules/queries/ArraySearch.tsx");
 
 export const queryData = function queryData(arr, limit) {
   limit = limit.limit;
@@ -114,12 +113,13 @@ export const queryData = function queryData(arr, limit) {
   if (null == filterPredicates) {
     filterPredicates = [];
   }
-  const arr2 = function applyFilters(arr, filterPredicates) {
+  let arr2 = (function applyFilters(arr, filterPredicates) {
+    let closure_0 = filterPredicates;
     return arr.filter((arg0) => {
-      const arg1 = arg0;
-      return arg1.every((arg0) => arg0(arg0));
+      let closure_0 = arg0;
+      return closure_0.every((arg0) => arg0(closure_0));
     });
-  }(arr, filterPredicates);
+  })(arr, filterPredicates);
   if (null != limit.bucketPredicates) {
     if (limit.bucketPredicates.length > 0) {
       if (num >= arr2.length) {
@@ -127,11 +127,11 @@ export const queryData = function queryData(arr, limit) {
         if (null == bucketPredicates) {
           bucketPredicates = [];
         }
-        let tmp = function applyBucketingSingleIteration(arr2, bucketPredicates) {
+        let tmp = (function applyBucketingSingleIteration(arr2, bucketPredicates) {
           let iter2;
           const array = new Array(bucketPredicates.length);
           const mapped = array.fill(null).map(() => []);
-          const tmp2 = callback(arr2);
+          const tmp2 = outer1_0(arr2);
           let iter = tmp2();
           if (!iter.done) {
             do {
@@ -150,23 +150,23 @@ export const queryData = function queryData(arr, limit) {
             } while (!iter2.done);
           }
           return mapped;
-        }(arr2, bucketPredicates);
+        })(arr2, bucketPredicates);
       } else {
         let bucketPredicates1 = limit.bucketPredicates;
         if (null == bucketPredicates1) {
           bucketPredicates1 = [];
         }
-        tmp = function applyBucketing(arr2, bucketPredicates1, arg2) {
+        tmp = (function applyBucketing(arr2, bucketPredicates1, arg2) {
           let tmp = arr2;
           const items = [];
-          const tmp2 = callback(bucketPredicates1);
+          const tmp2 = outer1_0(bucketPredicates1);
           const iter = tmp2();
           if (!iter.done) {
             while (true) {
               let items1 = [];
               let items2 = [];
-              let tmp5 = callback;
-              let tmp6 = callback(tmp);
+              let tmp5 = outer1_0;
+              let tmp6 = outer1_0(tmp);
               let iter2 = tmp6();
               if (!iter2.done) {
                 do {
@@ -176,7 +176,7 @@ export const queryData = function queryData(arr, limit) {
                   } else {
                     arr = items1.push(value);
                   }
-                  let iter3 = tmp6();
+                  iter3 = tmp6();
                   iter2 = iter3;
                   let tmp9 = value;
                 } while (!iter3.done);
@@ -195,21 +195,21 @@ export const queryData = function queryData(arr, limit) {
             }
           }
           return items;
-        }(arr2, bucketPredicates1, num);
+        })(arr2, bucketPredicates1, num);
       }
     }
   }
-  const items = [arr2];
+  let items = [arr2];
   let sortComparers = limit.sortComparers;
   if (null == sortComparers) {
     sortComparers = [];
   }
-  const items1 = [];
-  const tmp3 = _createForOfIteratorHelperLoose(items);
+  let items1 = [];
+  let tmp3 = _createForOfIteratorHelperLoose(items);
   let iter = tmp3();
   if (!iter.done) {
     const push = items1.push;
-    const items2 = [];
+    let items2 = [];
     HermesBuiltin.arraySpread(sortGroup(iter.value, sortComparers), 0);
     HermesBuiltin.apply(items2, items1);
     while (items1.length < num) {

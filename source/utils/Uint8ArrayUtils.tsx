@@ -1,24 +1,23 @@
 // Module ID: 1333
-// Function ID: 15645
+// Function ID: 15646
 // Name: hasBit
-// Dependencies: []
+// Dependencies: [2]
 // Exports: addBit, isSerializedUint8Array, isUint8Array, removeBit
 
 // Module 1333 (hasBit)
-function hasBit(dismissedContents, CHANNEL_NOTICE_INVITE) {
+function hasBit(dismissedContents, closure_0) {
   let tmp = 0 !== dismissedContents.length;
   if (tmp) {
     const _Math = Math;
-    tmp = dismissedContents[Math.floor(Math, CHANNEL_NOTICE_INVITE / 8)] & 1 << CHANNEL_NOTICE_INVITE % 8;
+    tmp = dismissedContents[Math.floor(Math, closure_0 / 8)] & 1 << closure_0 % 8;
   }
   return tmp;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/Uint8ArrayUtils.tsx");
+let result = require("set").fileFinishedImporting("utils/Uint8ArrayUtils.tsx");
 
 export { hasBit };
-export const addBit = function addBit(dismissedContents, value) {
-  const rounded = Math.floor(value / 8);
+export const addBit = function addBit(dismissedContents, closure_0) {
+  const rounded = Math.floor(closure_0 / 8);
   let tmp2 = dismissedContents;
   if (dismissedContents.length <= rounded) {
     const _Uint8Array = Uint8Array;
@@ -26,14 +25,14 @@ export const addBit = function addBit(dismissedContents, value) {
     const result = uint8Array.set(dismissedContents, 0);
     tmp2 = uint8Array;
   }
-  tmp2[rounded] = tmp2[rounded] | 1 << value % 8;
+  tmp2[rounded] = tmp2[rounded] | 1 << closure_0 % 8;
   return tmp2;
 };
-export const removeBit = function removeBit(dismissedContents, CHANNEL_NOTICE_INVITE) {
-  if (hasBit(dismissedContents, CHANNEL_NOTICE_INVITE)) {
+export const removeBit = function removeBit(dismissedContents, closure_0) {
+  if (hasBit(dismissedContents, closure_0)) {
     const _Math = Math;
-    const rounded = Math.floor(CHANNEL_NOTICE_INVITE / 8);
-    dismissedContents[rounded] = dismissedContents[rounded] & ~1 << CHANNEL_NOTICE_INVITE % 8;
+    const rounded = Math.floor(closure_0 / 8);
+    dismissedContents[rounded] = dismissedContents[rounded] & ~1 << closure_0 % 8;
   }
   return dismissedContents;
 };

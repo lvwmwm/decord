@@ -1,12 +1,13 @@
 // Module ID: 1492
-// Function ID: 17204
+// Function ID: 17205
 // Name: getActiveRoute
-// Dependencies: []
+// Dependencies: [65, 57, 1493, 1494, 1495]
 // Exports: default
 
 // Module 1492 (getActiveRoute)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
+import _toConsumableArray from "_toConsumableArray";
+import _slicedToArray from "_slicedToArray";
+
 function getActiveRoute(index) {
   if ("number" === typeof index.index) {
     let tmp = index.routes[index.index];
@@ -82,9 +83,9 @@ function createConfigItem(exact) {
 function createNormalizedConfigs(arg0, arg1) {
   const importDefault = arg1;
   const entries = Object.entries(arg0);
-  return importDefault(dependencyMap[3])(entries.map((arg0) => {
-    const tmp = callback(arg0, 2);
-    const items = [tmp[0], callback2(tmp[1], arg1)];
+  return importDefault(1494)(entries.map((arg0) => {
+    const tmp = outer1_4(arg0, 2);
+    const items = [tmp[0], outer1_8(tmp[1], closure_0)];
     return items;
   }));
 }
@@ -96,7 +97,7 @@ export default function getPathFromState(arg0, config) {
     throw Error("Got 'undefined' for the navigation state. You must pass a valid state object.");
   } else {
     if (config) {
-      importDefault(dependencyMap[2])(config);
+      importDefault(replaced1[2])(config);
     }
     if (null != config) {
       if (config.screens) {
@@ -105,32 +106,31 @@ export default function getPathFromState(arg0, config) {
           screens = config.screens;
         }
         let obj = createNormalizedConfigs(screens);
-        const tmp4 = createNormalizedConfigs;
+        let tmp4 = createNormalizedConfigs;
       }
-      const importAll = obj;
-      let dependencyMap = "/";
-      let closure_3 = arg0;
-      let closure_4 = {};
+      replaced1 = "/";
+      let _toConsumableArray = arg0;
+      let _slicedToArray = {};
       if (arg0) {
         do {
-          let tmp6 = function _loop(self) {
+          let tmp6 = (function _loop() {
             let num = 0;
-            if ("number" === typeof self.index) {
-              num = self.index;
+            if ("number" === typeof state.index) {
+              num = state.index;
             }
             let closure_2 = num;
-            self = self.routes[closure_2];
-            const tmp2 = callback(closure_0);
-            let closure_4 = tmp2;
-            const callback = obj;
-            const items = [];
-            let closure_7 = true;
-            if (self.name in callback) {
-              if (closure_7) {
-                tmp3();
-                while (self.name in callback) {
-                  let tmp8 = closure_7;
-                  if (!closure_7) {
+            state = state.routes[closure_2];
+            const tmp4 = outer1_5(closure_0);
+            let _slicedToArray = tmp4;
+            const table = params;
+            let items = [];
+            let c7 = true;
+            if (state.name in table) {
+              if (c7) {
+                tmp5();
+                while (state.name in table) {
+                  let tmp10 = c7;
+                  if (!c7) {
                     break;
                   }
                 }
@@ -139,13 +139,13 @@ export default function getPathFromState(arg0, config) {
             if (undefined === closure_0) {
               closure_0 = items.join("/");
             }
-            if (undefined !== callback[closure_3.name]) {
-              const parts = closure_0.split("/");
+            if (undefined !== table[state.name]) {
+              let parts = closure_0.split("/");
               let _encodeURIComponent = parts.map((str) => {
                 if ("*" === str) {
                   return state.name;
                 } else if (str.startsWith(":")) {
-                  if (undefined !== tmp2[tmp]) {
+                  if (undefined !== tmp4[tmp]) {
                     const _encodeURIComponent2 = encodeURIComponent;
                     let str3 = encodeURIComponent(tmp4);
                   } else {
@@ -160,47 +160,44 @@ export default function getPathFromState(arg0, config) {
               closure_2 = closure_2 + _encodeURIComponent.join("/");
             } else {
               _encodeURIComponent = encodeURIComponent;
-              closure_2 = closure_2 + encodeURIComponent(self.name);
+              closure_2 = closure_2 + encodeURIComponent(state.name);
             }
-            if (!obj) {
-              let obj = tmp2.params;
+            if (!params) {
+              params = tmp4.params;
             }
-            if (self.state) {
+            if (state.state) {
               closure_2 = `${closure_2}/`;
-            } else if (obj) {
-              for (const key10062 in closure_1) {
-                let tmp24 = key10062;
-                let tmp25 = closure_1;
-                if ("undefined" !== closure_1[key10062]) {
+            } else if (params) {
+              for (const key10062 in params) {
+                let tmp26 = key10062;
+                let tmp27 = params;
+                if ("undefined" !== params[key10062]) {
                   continue;
                 } else {
-                  let tmp16 = closure_1;
-                  delete r10[r11];
-                  // continue
+                  let tmp18 = params;
+                  delete tmp[tmp2];
+                  continue;
                 }
                 continue;
               }
-              obj = obj(closure_2[4]);
+              obj = obj(replaced1[4]);
               obj = { sort: false };
-              const json = obj.stringify(obj, obj);
+              const json = obj.stringify(params, obj);
               if (json) {
                 const _HermesInternal = HermesInternal;
                 closure_2 = closure_2 + "?" + json;
               }
             }
-            self = self.state;
-          }();
-          let tmp7 = closure_3;
-        } while (closure_3);
+            state = state.state;
+          })();
+          let tmp7 = _toConsumableArray;
+        } while (_toConsumableArray);
       }
-      const replaced = dependencyMap.replace(/\/+/g, "/");
-      dependencyMap = replaced;
+      const replaced = replaced1.replace(/\/+/g, "/");
+      replaced1 = replaced;
       if (replaced.length > 1) {
-        let replaced1 = dependencyMap.replace(/\/$/, "");
-      } else {
-        replaced1 = dependencyMap;
+        replaced1 = replaced1.replace(/\/$/, "");
       }
-      dependencyMap = replaced1;
       return replaced1;
     }
     obj = {};

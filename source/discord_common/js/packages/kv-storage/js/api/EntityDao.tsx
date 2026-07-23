@@ -1,13 +1,14 @@
 // Module ID: 1893
-// Function ID: 21158
+// Function ID: 21159
 // Name: EntityDao
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [6, 7, 1887, 1889, 2]
 
 // Module 1893 (EntityDao)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_3 from "__exportStarResult1";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const tmp2 = () => {
+const require = arg1;
+const tmp2 = (() => {
   class EntityDao {
     constructor(arg0, arg1, arg2) {
       flag = arg3;
@@ -15,23 +16,22 @@ const tmp2 = () => {
       if (arg3 === undefined) {
         flag = true;
       }
-      tmp = __exportStarResult1(self, EntityDao);
+      tmp = outer1_2(self, EntityDao);
       self.originalPrefix = arg0;
       items = [];
       items[0] = arg0;
-      table = new EntityDao(closure_1[2]).Table(items, arg1, arg2, flag);
+      table = new EntityDao(outer1_1[2]).Table(items, arg1, arg2, flag);
       self.table = table;
       return;
     }
   }
-  const arg1 = EntityDao;
   let obj = {
     key: "prefix",
     get() {
       return this.table.prefix;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , ];
   obj = {
     key: "withoutLogging",
     value() {
@@ -89,7 +89,7 @@ const tmp2 = () => {
     key: "getParentId",
     value(arg0) {
       const table = this.table;
-      const items = [true, arg0];
+      const items = [null, arg0];
       return table.getParentId(items);
     }
   };
@@ -98,11 +98,11 @@ const tmp2 = () => {
     value(arg0) {
       let Replace = arg1;
       const self = this;
-      const EntityDao = arg0;
+      let closure_0 = arg0;
       if (arg1 === undefined) {
-        Replace = EntityDao(Replace[3]).ConflictOptions.Replace;
+        Replace = EntityDao(outer1_1[3]).ConflictOptions.Replace;
       }
-      return self.transaction((put) => put.put(put, Replace), "" + self.prefix + " put");
+      return self.transaction((put) => put.put(closure_0, Replace), "" + self.prefix + " put");
     }
   };
   items[10] = {
@@ -110,40 +110,40 @@ const tmp2 = () => {
     value(arg0) {
       let Replace = arg1;
       const self = this;
-      const EntityDao = arg0;
+      let closure_0 = arg0;
       if (arg1 === undefined) {
-        Replace = EntityDao(Replace[3]).ConflictOptions.Replace;
+        Replace = EntityDao(outer1_1[3]).ConflictOptions.Replace;
       }
-      return self.transaction((putAll) => putAll.putAll(putAll, Replace), "" + self.prefix + " putAll");
+      return self.transaction((putAll) => putAll.putAll(closure_0, Replace), "" + self.prefix + " putAll");
     }
   };
   items[11] = {
     key: "replaceAll",
     value(arg0) {
-      const EntityDao = arg0;
-      return this.transaction((str) => str.replaceAll(str), "" + this.prefix + " replaceAll");
+      let closure_0 = arg0;
+      return this.transaction((str) => str.replaceAll(closure_0), "" + this.prefix + " replaceAll");
     }
   };
   items[12] = {
     key: "delete",
     value(arg0) {
-      const EntityDao = arg0;
-      return this.transaction((arg0) => arg0.delete(arg0), "" + this.prefix + " delete");
+      let closure_0 = arg0;
+      return this.transaction((arg0) => arg0.delete(closure_0), "" + this.prefix + " delete");
     }
   };
   items[13] = {
     key: "transaction",
     value(arg0, arg1) {
-      const EntityDao = arg0;
+      let closure_0 = arg0;
       const table = this.table;
-      return table.transaction((arg0) => arg0(new closure_5(arg0)), arg1);
+      return table.transaction((arg0) => callback(new outer2_5(arg0)), arg1);
     }
   };
   items[14] = {
     key: "upgradeTransaction",
     value(arg0) {
       const table = this.table;
-      return new closure_5(table.upgradeTransaction(arg0));
+      return new outer1_5(table.upgradeTransaction(arg0));
     }
   };
   items[15] = {
@@ -160,7 +160,7 @@ const tmp2 = () => {
       return table.getMapEntriesSyncUnsafe();
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "cell",
       value(data, generation) {
@@ -170,37 +170,37 @@ const tmp2 = () => {
     }
   ];
   return callback(EntityDao, items, items1);
-}();
-const tmp3 = () => {
+})();
+let closure_4 = tmp2;
+const tmp3 = (() => {
   class EntityDaoTransaction {
     constructor(arg0) {
-      tmp = __exportStarResult1(this, EntityDaoTransaction);
+      tmp = outer1_2(this, EntityDaoTransaction);
       this.transaction = arg0;
       return;
     }
   }
-  const arg1 = EntityDaoTransaction;
   let obj = {
     key: "put",
     value(arg0) {
       let Replace = arg1;
       if (arg1 === undefined) {
-        Replace = EntityDaoTransaction(closure_1[3]).ConflictOptions.Replace;
+        Replace = EntityDaoTransaction(outer1_1[3]).ConflictOptions.Replace;
       }
       const transaction = this.transaction;
-      return transaction.put(closure_4.cell(arg0, null), Replace);
+      return transaction.put(outer1_4.cell(arg0, null), Replace);
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "putAll",
     value(arr) {
       let Replace = arg1;
       if (arg1 === undefined) {
-        Replace = EntityDaoTransaction(closure_1[3]).ConflictOptions.Replace;
+        Replace = EntityDaoTransaction(outer1_1[3]).ConflictOptions.Replace;
       }
       const transaction = this.transaction;
-      return transaction.putAll(arr.map((arg0) => closure_4.cell(arg0, null)), Replace);
+      return transaction.putAll(arr.map((arg0) => outer2_4.cell(arg0, null)), Replace);
     }
   };
   items[1] = obj;
@@ -238,14 +238,15 @@ const tmp3 = () => {
     {
       key: "fromDatabaseTransaction",
       value(prefix, tableId, transaction) {
-        const tableTransaction = new EntityDaoTransaction(closure_1[2]).TableTransaction(prefix, tableId, transaction);
+        const tableTransaction = new EntityDaoTransaction(outer1_1[2]).TableTransaction(prefix, tableId, transaction);
         return new EntityDaoTransaction(tableTransaction);
       }
     }
   ];
   return callback(EntityDaoTransaction, items, items1);
-}();
-const result = require("__exportStarResult1").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/EntityDao.tsx");
+})();
+let closure_5 = tmp3;
+const result = require("prefixCell").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/EntityDao.tsx");
 
 export const EntityDao = tmp2;
 export const EntityDaoTransaction = tmp3;

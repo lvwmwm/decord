@@ -1,34 +1,41 @@
-// Module ID: 14321
-// Function ID: 108171
+// Module ID: 14435
+// Function ID: 110324
 // Name: DemoModal
-// Dependencies: []
+// Dependencies: [5, 31, 27, 33, 4475, 4472, 4130, 4543, 2]
 // Exports: default
 
-// Module 14321 (DemoModal)
+// Module 14435 (DemoModal)
+import useAlertStore from "useAlertStore";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function DemoModal() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const callback = React.useCallback(callback(tmp), []);
-  const obj = { <string:1348720225>: true, <string:1549981689>: "/assets/images/native/icons" };
-  const items = [jsx(arg1(dependencyMap[4]).AlertActionButton, { onPress: callback }, "clear"), jsx(arg1(dependencyMap[4]).AlertActionButton, { onPress: callback }, "cancel")];
+  callback = React.useCallback(callback(tmp), []);
+  let obj = { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed." };
+  obj = { variant: "destructive", onPress: callback, text: "Clear" };
+  const items = [jsx(require(4475) /* getAlertModalItemKey */.AlertActionButton, { variant: "destructive", onPress: callback, text: "Clear" }, "clear"), ];
+  obj = { variant: "secondary", onPress: callback, text: "Cancel" };
+  items[1] = jsx(require(4475) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", onPress: callback, text: "Cancel" }, "cancel");
   obj.actions = items;
-  return jsx(arg1(dependencyMap[4]).AlertModal, obj);
+  return jsx(require(4475) /* getAlertModalItemKey */.AlertModal, { variant: "secondary", onPress: callback, text: "Cancel" });
 }
 function openDemoModal() {
-  arg1(dependencyMap[5]).openAlert("demo-1", <DemoModal />);
+  require(4472) /* useAlertStore */.openAlert("demo-1", <DemoModal />);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-let closure_7 = arg1(dependencyMap[6]).createStyles({ container: { split: true, pos: true, borderRadius: true } });
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemAlertModal.tsx");
+({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemAlertModal.tsx");
 
 export default function UserSettingsDesignSystemAlertModal() {
   let obj = {};
-  obj = { style: callback2().container, children: jsx(arg1(dependencyMap[7]).Button, obj) };
+  obj = { style: callback2().container, children: jsx(require(4543) /* Button */.Button, {}) };
   obj = { onPress: openDemoModal, text: "Show Alert" };
-  obj.children = <closure_4 {...obj} />;
-  return <closure_5 {...obj} />;
+  obj.children = <closure_4 onPress={openDemoModal} text="Show Alert" />;
+  return <closure_5 onPress={openDemoModal} text="Show Alert" />;
 };

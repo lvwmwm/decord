@@ -1,14 +1,13 @@
-// Module ID: 7808
-// Function ID: 62309
+// Module ID: 7814
+// Function ID: 62346
 // Name: getFallbackHeroColor
-// Dependencies: []
+// Dependencies: [689, 2]
 // Exports: getFallbackHeroColor
 
-// Module 7808 (getFallbackHeroColor)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/content_inventory/memberlist/getFallbackHeroColor.native.tsx");
+// Module 7814 (getFallbackHeroColor)
+const result = require("set").fileFinishedImporting("modules/content_inventory/memberlist/getFallbackHeroColor.native.tsx");
 
 export const getFallbackHeroColor = function getFallbackHeroColor(stateFromStores1, saturation) {
-  const internal = importDefault(dependencyMap[0]).internal;
-  return internal.resolveSemanticColor(stateFromStores1, importDefault(dependencyMap[0]).colors.BACKGROUND_SURFACE_HIGH, { saturation });
+  const internal = importDefault(689).internal;
+  return internal.resolveSemanticColor(stateFromStores1, importDefault(689).colors.BACKGROUND_SURFACE_HIGH, { saturation });
 };

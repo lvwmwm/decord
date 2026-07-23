@@ -1,28 +1,44 @@
-// Module ID: 13562
-// Function ID: 102852
+// Module ID: 13676
+// Function ID: 105008
 // Name: pressable
-// Dependencies: []
+// Dependencies: [7662, 33, 10095, 1212, 2716, 13677, 4472, 4347, 2]
 
-// Module 13562 (pressable)
-const jsx = require(dependencyMap[1]).jsx;
-const _module = require(dependencyMap[2]);
-const pressable = _module.createPressable({
+// Module 13676 (pressable)
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const pressable = createToggle.createPressable({
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(importDefault(dependencyMap[4]).bD//cU);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2716)["bD//cU"]);
   },
-  parent: require(dependencyMap[0]).MobileSetting.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
+  parent: require("MobileSetting").MobileSetting.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(importDefault(dependencyMap[4]).Gn0SAj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2716).Gn0SAj);
   },
   onPress() {
-    require(dependencyMap[6]).openAlert(require(dependencyMap[5]).SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(dependencyMap[5]).default, {}));
+    require(4472) /* useAlertStore */.openAlert(require(13677) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13677) /* SettingsAgeGroupResetAlert */.default, {}));
   },
   withArrow: true,
-  usePredicate: require(dependencyMap[7]).useShowAssignedAgeGroupSettings
+  usePredicate: require("isReactiveCheckEnabled").useShowAssignedAgeGroupSettings
 });
-const _module1 = require(dependencyMap[8]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/AgeGroupResetSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2716)["bD//cU"]);
+  },
+  parent: require("MobileSetting").MobileSetting.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
+  useDescription() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2716).Gn0SAj);
+  },
+  onPress() {
+    require(4472) /* useAlertStore */.openAlert(require(13677) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13677) /* SettingsAgeGroupResetAlert */.default, {}));
+  },
+  withArrow: true,
+  usePredicate: require("isReactiveCheckEnabled").useShowAssignedAgeGroupSettings
+};
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AgeGroupResetSetting.tsx");
 
 export default pressable;

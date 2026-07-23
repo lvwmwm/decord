@@ -1,12 +1,13 @@
 // Module ID: 3241
-// Function ID: 25902
-// Dependencies: []
+// Function ID: 25904
+// Dependencies: [1924, 1927, 1928, 1930, 3242]
 
 // Module 3241
-const result = _interopRequireDefault(require(dependencyMap[0]));
-const result1 = _interopRequireDefault(require(dependencyMap[1]));
-const result2 = _interopRequireDefault(require(dependencyMap[2]));
-const result3 = _interopRequireDefault(require(dependencyMap[3]));
+import result from "result";
+import result1 from "result1";
+import result2 from "result2";
+import result3 from "result3";
 
-export default { code: "es", formatDistance: result.default, formatLong: result1.default, formatRelative: result2.default, localize: result3.default, match: require(dependencyMap[4]), options: { "Bool(true)": "<string:2491613185>", "Bool(true)": "<string:2941583362>" } };
+
+export default { code: "en-GB", formatDistance: result.default, formatLong: require("buildFormatLongFn"), formatRelative: result1.default, localize: result2.default, match: result3.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
 export default exports.default;

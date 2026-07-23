@@ -1,14 +1,16 @@
 // Module ID: 1818
-// Function ID: 19982
+// Function ID: 19983
 // Name: KeyboardExtender
-// Dependencies: [4294967295]
+// Dependencies: [31, 27, 33, 1572, 1776, 1787]
 // Exports: default
 
 // Module 1818 (KeyboardExtender)
-importDefault(dependencyMap[0]);
-const Animated = arg1(dependencyMap[1]).Animated;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_3 = Animated.createAnimatedComponent(arg1(dependencyMap[3]).KeyboardBackgroundView);
+import "result";
+import { Animated } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let closure_3 = Animated.createAnimatedComponent(require("nativeEventEmitter").KeyboardBackgroundView);
 
 export default function KeyboardExtender(children) {
   const enabled = children.enabled;
@@ -16,8 +18,8 @@ export default function KeyboardExtender(children) {
   if (!tmp) {
     tmp = enabled;
   }
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(1776) /* useGenericKeyboardHandler */;
   obj = { enabled: tmp };
   obj.children = <closure_3 style={{ opacity: obj.useKeyboardAnimation().progress }}>{arg0.children}</closure_3>;
-  return jsx(arg1(dependencyMap[5]).KeyboardStickyView, obj);
+  return jsx(require(1787) /* KeyboardAvoidingView */.KeyboardStickyView, { enabled: tmp });
 };

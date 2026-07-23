@@ -1,23 +1,24 @@
-// Module ID: 10103
-// Function ID: 78231
+// Module ID: 10111
+// Function ID: 78271
 // Name: ChannelHeader
-// Dependencies: []
+// Dependencies: [31, 1348, 653, 1355, 33, 477, 3989, 10093, 1207, 3982, 624, 4345, 10112, 10114, 10116, 10122, 1212, 10124, 2]
 // Exports: default, navigateToChannelDetails
 
-// Module 10103 (ChannelHeader)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const ComponentActions = arg1(dependencyMap[2]).ComponentActions;
-const StaticChannelRoute = arg1(dependencyMap[3]).StaticChannelRoute;
-const jsx = arg1(dependencyMap[4]).jsx;
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ChannelHeader.tsx");
+// Module 10111 (ChannelHeader)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ComponentActions } from "ME";
+import { StaticChannelRoute } from "set";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ChannelHeader.tsx");
 
 export default function ChannelHeader(channelId) {
   let isNavigationScreen;
   let pressable;
   let screenIndex;
   channelId = channelId.channelId;
-  const arg1 = channelId;
   ({ screenIndex, isNavigationScreen, pressable } = channelId);
   if (pressable === undefined) {
     pressable = true;
@@ -30,19 +31,19 @@ export default function ChannelHeader(channelId) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId));
-  const tmp = !arg1(dependencyMap[11]).useIsChannelContentGated(stateFromStores) && pressable;
+  let obj = channelId(624);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getChannel(channelId));
+  const tmp = !channelId(4345).useIsChannelContentGated(stateFromStores) && pressable;
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
-    let tmp2Result = jsx(importDefault(dependencyMap[12]), {});
+    let tmp2Result = jsx(importDefault(10112), {});
   } else if (channelId === StaticChannelRoute.GUILD_HOME) {
-    tmp2Result = jsx(importDefault(dependencyMap[13]), {});
+    tmp2Result = jsx(importDefault(10114), {});
   } else {
     if (null != stateFromStores) {
       if (stateFromStores.isPrivate()) {
         obj = { channelId, pressable: tmp, screenIndex };
-        tmp2Result = jsx(importDefault(dependencyMap[14]), obj);
+        tmp2Result = jsx(importDefault(10116), { channelId, pressable: tmp, screenIndex });
       }
     }
     if (null != stateFromStores) {
@@ -59,12 +60,12 @@ export default function ChannelHeader(channelId) {
         obj.screenIndex = screenIndex;
         let stringResult;
         if (!stateFromStores.isForumChannel()) {
-          const intl = arg1(dependencyMap[16]).intl;
-          stringResult = intl.string(arg1(dependencyMap[16]).t.L9fR+P);
+          const intl = channelId(1212).intl;
+          stringResult = intl.string(channelId(1212).t["L9fR+P"]);
         }
         obj.searchPlaceholder = stringResult;
-        tmp2Result = jsx(importDefault(dependencyMap[15]), obj);
-        const tmp11 = importDefault(dependencyMap[15]);
+        tmp2Result = jsx(importDefault(10122), { channelId });
+        const tmp11 = importDefault(10122);
         const tmp8 = jsx;
       }
     }
@@ -79,32 +80,32 @@ export default function ChannelHeader(channelId) {
     obj1.isNavigationScreen = isNavigationScreen;
     obj1.screenIndex = screenIndex;
     obj1.showCreateThread = flag2;
-    tmp2Result = jsx(importDefault(dependencyMap[17]), obj1);
+    tmp2Result = jsx(importDefault(10124), { channelId });
     const tmp2 = jsx;
-    const tmp5 = importDefault(dependencyMap[17]);
+    const tmp5 = importDefault(10124);
   }
   return tmp2Result;
 };
 export const navigateToChannelDetails = function navigateToChannelDetails(channelId, screenIndex, source) {
-  let obj = screenIndex(dependencyMap[5]);
+  let obj = require(477) /* set */;
   if (obj.isIOS()) {
-    const chatInputRef = screenIndex(dependencyMap[6]).getChatInputRef(channelId, screenIndex);
+    const chatInputRef = require(3989) /* getHighestActiveScreenIndex */.getChatInputRef(channelId, screenIndex);
     if (null != chatInputRef) {
       chatInputRef.blur();
     }
-    const obj2 = screenIndex(dependencyMap[6]);
+    const obj2 = require(3989) /* getHighestActiveScreenIndex */;
   }
   if (obj4.isSwipeToMemberListEnabled()) {
-    const ComponentDispatch = tmp5(tmp6[8]).ComponentDispatch;
+    const ComponentDispatch = tmp5(1207).ComponentDispatch;
     obj = { source, channelId, screenIndex };
     ComponentDispatch.dispatch(ComponentActions.SHOW_CHANNEL_DETAILS, obj);
   } else {
-    const rootNavigationRef = tmp5(tmp6[9]).getRootNavigationRef();
-    const tmp5Result = tmp5(tmp6[9]);
+    const rootNavigationRef = tmp5(3982).getRootNavigationRef();
+    const tmp5Result = tmp5(3982);
     if (tmp8) {
       obj = { channelId, source };
       rootNavigationRef.navigate("sidebar", obj);
     }
-    const tmp8 = null != rootNavigationRef && rootNavigationRef.isReady();
+    tmp8 = null != rootNavigationRef && rootNavigationRef.isReady();
   }
 };

@@ -1,40 +1,40 @@
-// Module ID: 7836
-// Function ID: 62494
+// Module ID: 7842
+// Function ID: 62531
 // Name: ANALYTICS_NAME
-// Dependencies: []
+// Dependencies: [653, 664, 1212, 1387, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 7836 (ANALYTICS_NAME)
-const NOTIFICATIONS_INBOX = require(dependencyMap[0]).NOTIFICATIONS_INBOX;
+// Module 7842 (ANALYTICS_NAME)
+import { NOTIFICATIONS_INBOX } from "ME";
+
 let obj = { UNREAD: "UNREAD", TODAY: "TODAY", YESTERDAY: "YESTERDAY", OLDER: "OLDER" };
 obj = { ALL: "all", MENTIONS: "mentions", BOOKMARKS: "bookmarks" };
 obj = {};
-obj[obj.UNREAD] = require(dependencyMap[2]).t.sRUdB8;
-obj[obj.TODAY] = require(dependencyMap[2]).t.F4jZQs;
-obj[obj.YESTERDAY] = require(dependencyMap[2]).t.gnv4pE;
-obj[obj.OLDER] = require(dependencyMap[2]).t.exrPZv;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/notifications_inbox/NotificationsInboxConstants.tsx");
+obj[obj.UNREAD] = require("getSystemLocale").t.sRUdB8;
+obj[obj.TODAY] = require("getSystemLocale").t.F4jZQs;
+obj[obj.YESTERDAY] = require("getSystemLocale").t.gnv4pE;
+obj[obj.OLDER] = require("getSystemLocale").t.exrPZv;
+const result = require("getSystemLocale").fileFinishedImporting("modules/notifications_inbox/NotificationsInboxConstants.tsx");
 
 export const ANALYTICS_NAME = "Notifications Inbox";
 export const NOTIFICATIONS_INBOX_RAW_GUILD_ID = "notifications_inbox_guild_id";
 export const GUILD_HEADER_HEIGHT = 88;
-export const INBOX_MESSAGE_AGE_THRESHOLD = importDefault(dependencyMap[1]).Millis.WEEK;
+export const INBOX_MESSAGE_AGE_THRESHOLD = require("set").Millis.WEEK;
 export const MAX_MESSAGES_PER_CHANNEL = 50;
 export const MAX_UNREAD_MESSAGES_PER_CHANNEL = 10;
 export const NOTIFICATIONS_INBOX_FEATURE = "notifications-inbox";
 export const getNotificationsInboxGuild = function getNotificationsInboxGuild(arg0) {
   if (arg0 === obj.BOOKMARKS) {
-    const intl3 = require(dependencyMap[2]).intl;
-    let stringResult = intl3.string(require(dependencyMap[2]).t.2pAkDA);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl3.string(require(1212) /* getSystemLocale */.t["2pAkDA"]);
   } else if (arg0 === obj.MENTIONS) {
-    const intl2 = require(dependencyMap[2]).intl;
-    stringResult = intl2.string(require(dependencyMap[2]).t.jbV6MM);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl2.string(require(1212) /* getSystemLocale */.t.jbV6MM);
   } else {
-    const intl = require(dependencyMap[2]).intl;
-    stringResult = intl.string(require(dependencyMap[2]).t.HcoRu0);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1212) /* getSystemLocale */.t.HcoRu0);
   }
-  let obj = require(dependencyMap[3]);
+  obj = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
   obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: undefined, features: [] };
   return obj.fromGuildBasic(obj);
 };
@@ -45,12 +45,12 @@ export const InboxMessageType = { ALL_MESSAGES_CHANNEL: "ALL_MESSAGES_CHANNEL", 
 export const MESSAGE_CATEGORY_DISPLAY_MAP = obj;
 export const getFilterMap = function getFilterMap() {
   const obj = {};
-  const intl = require(dependencyMap[2]).intl;
-  obj[obj.ALL] = intl.string(require(dependencyMap[2]).t.iWyjNt);
-  const intl2 = require(dependencyMap[2]).intl;
-  obj[obj.MENTIONS] = intl2.string(require(dependencyMap[2]).t.jbV6MM);
-  const intl3 = require(dependencyMap[2]).intl;
-  obj[obj.BOOKMARKS] = intl3.string(require(dependencyMap[2]).t.+rlGYW);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj[obj.ALL] = intl.string(require(1212) /* getSystemLocale */.t.iWyjNt);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj[obj.MENTIONS] = intl2.string(require(1212) /* getSystemLocale */.t.jbV6MM);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj[obj.BOOKMARKS] = intl3.string(require(1212) /* getSystemLocale */.t["+rlGYW"]);
   return obj;
 };
 export const ChannelLoadState = { UNLOADED: "unloaded", LOADED: "loaded", LOADED_UNREAD: "loadedUnread" };

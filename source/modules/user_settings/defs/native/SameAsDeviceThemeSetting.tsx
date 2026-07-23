@@ -1,26 +1,28 @@
-// Module ID: 14077
-// Function ID: 106899
+// Module ID: 14191
+// Function ID: 109055
 // Name: toggle
-// Dependencies: []
+// Dependencies: [1278, 7662, 566, 14072, 10095, 1212, 1324, 2]
 
-// Module 14077 (toggle)
-let closure_3 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+// Module 14191 (toggle)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.c445ix);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.c445ix);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.APPEARANCE,
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate() {
-    return importDefault(dependencyMap[6])("SameAsDeviceThemeSetting");
+    return importDefault(1324)("SameAsDeviceThemeSetting");
   },
   useValue: function useSameAsDeviceThemeValue() {
-    const items = [closure_3];
-    return arg1(dependencyMap[2]).useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.isSameAsDeviceThemeEnabled());
   },
   onValueChange: function onSameAsDeviceThemeValueChange(arg0) {
-    const obj = arg1(dependencyMap[3]);
+    const obj = require(14072) /* getThemeNameForAnalytics */;
     if (arg0) {
       const result = obj.enableSameAsDeviceTheme();
     } else {
@@ -28,11 +30,11 @@ obj = {
     }
   },
   useDescription() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.+tBsvs);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["+tBsvs"]);
   }
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/SameAsDeviceThemeSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+let result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/SameAsDeviceThemeSetting.tsx");
 
-export default toggle;
+export default createToggle;

@@ -1,9 +1,17 @@
 // Module ID: 368
 // Function ID: 5460
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 102, 18, 39, 40, 347, 348, 357]
 
 // Module 368 (_isNativeReflectConstruct)
+import normalizeColor from "normalizeColor";
+import PlatformColor from "PlatformColor";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _get from "_get";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,18 +22,18 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  arg1 = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_7(closure_6(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const importDefault = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
@@ -36,12 +44,12 @@ function processColor(arg0) {
   } else if (isRgbaValue(arg0)) {
     return arg0;
   } else {
-    const tmp3 = importDefault(dependencyMap[6])(arg0);
+    const tmp3 = importDefault(39)(arg0);
     if (null == tmp3) {
       return null;
     } else {
       if ("object" === typeof tmp3) {
-        let obj = arg1(dependencyMap[7]);
+        let obj = require(40) /* PlatformColor */;
         const processColorObjectResult = obj.processColorObject(tmp3);
         if (null != processColorObjectResult) {
           return processColorObjectResult;
@@ -70,103 +78,97 @@ function isRgbaValue(arg0) {
   }
   return tmp;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = { 9223372036854775807: "always", 0: false, -9223372036854775808: "list", 0: true };
+let closure_9 = { r: 0, g: 0, b: 0, a: 1 };
 
-export default (arg0) => {
+export default ((arg0) => {
   class AnimatedColor {
     constructor(arg0, arg1) {
       tmp = arg0;
       self = this;
-      tmp2 = closure_3(this, AnimatedColor);
+      tmp2 = outer1_3(this, AnimatedColor);
       items = [];
       items[0] = arg1;
-      obj = closure_6(AnimatedColor);
-      tmp3 = closure_5;
-      if (closure_10()) {
+      obj = outer1_6(AnimatedColor);
+      tmp3 = outer1_5;
+      if (outer1_10()) {
         tmp5 = globalThis;
         _Reflect = Reflect;
-        tmp6 = closure_6;
-        constructResult = Reflect.construct(obj, items, closure_6(self).constructor);
+        tmp6 = outer1_6;
+        constructResult = Reflect.construct(obj, items, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp3Result = tmp3(self, constructResult);
       tmp3Result._suspendCallbacks = 0;
       if (null == tmp) {
-        tmp = closure_9;
+        tmp = outer1_9;
       }
       tmp7 = tmp;
       if (tmp) {
-        tmp8 = closure_1;
-        tmp9 = closure_2;
+        tmp8 = outer1_1;
+        tmp9 = outer1_2;
         num = 8;
-        tmp7 = tmp.r instanceof closure_1(closure_2[8]);
+        tmp7 = tmp.r instanceof outer1_1(outer1_2[8]);
       }
       if (tmp7) {
-        tmp10 = closure_1;
-        tmp11 = closure_2;
+        tmp10 = outer1_1;
+        tmp11 = outer1_2;
         num2 = 8;
-        tmp7 = tmp.g instanceof closure_1(closure_2[8]);
+        tmp7 = tmp.g instanceof outer1_1(outer1_2[8]);
       }
       if (tmp7) {
-        tmp12 = closure_1;
-        tmp13 = closure_2;
+        tmp12 = outer1_1;
+        tmp13 = outer1_2;
         num3 = 8;
-        tmp7 = tmp.b instanceof closure_1(closure_2[8]);
+        tmp7 = tmp.b instanceof outer1_1(outer1_2[8]);
       }
       if (tmp7) {
-        tmp14 = closure_1;
-        tmp15 = closure_2;
+        tmp14 = outer1_1;
+        tmp15 = outer1_2;
         num4 = 8;
-        tmp7 = tmp.a instanceof closure_1(closure_2[8]);
+        tmp7 = tmp.a instanceof outer1_1(outer1_2[8]);
       }
       if (tmp7) {
         ({ r: obj2.r, g: obj2.g, b: obj2.b, a: obj2.a } = tmp);
       } else {
-        tmp16 = closure_12;
-        tmp17 = closure_12(tmp);
+        tmp16 = outer1_12;
+        tmp17 = outer1_12(tmp);
         if (null == tmp17) {
-          tmp17 = closure_9;
+          tmp17 = outer1_9;
         }
-        tmp19 = closure_13;
-        tmp18 = closure_9;
+        tmp19 = outer1_13;
+        tmp18 = outer1_9;
         tmp20 = tmp17;
         tmp21 = tmp17;
-        if (!closure_13(tmp17)) {
+        if (!outer1_13(tmp17)) {
           tmp3Result.nativeColor = tmp17;
           tmp21 = tmp18;
         }
-        tmp22 = closure_1;
-        tmp23 = closure_2;
+        tmp22 = outer1_1;
+        tmp23 = outer1_2;
         num5 = 8;
-        tmp24 = closure_1(closure_2[8]);
+        tmp24 = outer1_1(outer1_2[8]);
         prototype = tmp24.prototype;
         tmp25 = new.target;
         tmp26 = new.target;
         tmp24 = new tmp24(tmp21.r);
         tmp28 = tmp24;
         tmp3Result.r = tmp24;
-        tmp29 = closure_1(closure_2[8]);
+        tmp29 = outer1_1(outer1_2[8]);
         prototype2 = tmp29.prototype;
         tmp30 = new.target;
         tmp31 = new.target;
         tmp29 = new tmp29(tmp21.g);
         tmp33 = tmp29;
         tmp3Result.g = tmp29;
-        tmp34 = closure_1(closure_2[8]);
+        tmp34 = outer1_1(outer1_2[8]);
         prototype3 = tmp34.prototype;
         tmp35 = new.target;
         tmp36 = new.target;
         tmp34 = new tmp34(tmp21.b);
         tmp38 = tmp34;
         tmp3Result.b = tmp34;
-        tmp39 = closure_1(closure_2[8]);
+        tmp39 = outer1_1(outer1_2[8]);
         prototype4 = tmp39.prototype;
         tmp40 = new.target;
         tmp41 = new.target;
@@ -181,25 +183,25 @@ export default (arg0) => {
       return tmp3Result;
     }
   }
-  const arg1 = AnimatedColor;
   callback2(AnimatedColor, arg0);
   let obj = {
     key: "setValue",
     value: function setValue(arg0) {
-      const self = this;
-      const AnimatedColor = this;
-      const callback = false;
+      let self = this;
+      self = this;
+      let c1 = false;
       if (this.__isNative) {
-        const API = callback(tmp4[9]).API;
+        const API = outer1_1(outer1_2[9]).API;
         const result = API.setWaitingForIdentifier(self.__getNativeTag().toString());
         const str = self.__getNativeTag();
       }
-      let tmp4 = callback6(arg0);
+      let tmp4 = outer1_12(arg0);
       if (null == tmp4) {
-        tmp4 = closure_9;
+        tmp4 = outer1_9;
       }
+      let closure_2 = tmp4;
       const result1 = self._withSuspendedCallbacks(() => {
-        if (callback(tmp4)) {
+        if (outer2_13(closure_2)) {
           const r = tmp2.r;
           r.setValue(tmp.r);
           const g = tmp2.g;
@@ -210,29 +212,29 @@ export default (arg0) => {
           a.setValue(tmp.a);
           if (null != tmp2.nativeColor) {
             self.nativeColor = null;
-            let closure_1 = true;
+            let c1 = true;
           }
         } else if (tmp2.nativeColor !== tmp) {
           self.nativeColor = tmp;
-          closure_1 = true;
+          c1 = true;
         }
       });
       if (self.__isNative) {
         const str2 = self.__getNativeTag();
-        if (callback) {
-          const API2 = callback(tmp4[9]).API;
+        if (c1) {
+          const API2 = outer1_1(outer1_2[9]).API;
           const result2 = API2.updateAnimatedNodeConfig(str2, self.__getNativeConfig());
         }
-        const API3 = callback(tmp4[9]).API;
+        const API3 = outer1_1(outer1_2[9]).API;
         const result3 = API3.unsetWaitingForIdentifier(str2.toString());
       } else {
-        AnimatedColor(tmp4[8]).flushValue(self);
-        const obj = AnimatedColor(tmp4[8]);
+        AnimatedColor(outer1_2[8]).flushValue(self);
+        const obj = AnimatedColor(outer1_2[8]);
       }
       self.__callListeners(self.__getValue());
     }
   };
-  const items = [obj, , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , ];
   obj = {
     key: "setOffset",
     value: function setOffset(arg0) {
@@ -340,7 +342,7 @@ export default (arg0) => {
       b.__addChild(this);
       const a = this.a;
       a.__addChild(this);
-      callback5(AnimatedColor, "__attach", this, 3)([]);
+      outer1_11(AnimatedColor, "__attach", this, 3)([]);
     }
   };
   items[8] = {
@@ -354,7 +356,7 @@ export default (arg0) => {
       b.__removeChild(this);
       const a = this.a;
       a.__removeChild(this);
-      callback5(AnimatedColor, "__detach", this, 3)([]);
+      outer1_11(AnimatedColor, "__detach", this, 3)([]);
     }
   };
   items[9] = {
@@ -371,7 +373,7 @@ export default (arg0) => {
       const self = this;
       if (0 === this._suspendCallbacks) {
         const items = [arg0];
-        callback5(AnimatedColor, "__callListeners", self, 3)(items);
+        outer1_11(AnimatedColor, "__callListeners", self, 3)(items);
       }
     }
   };
@@ -387,7 +389,7 @@ export default (arg0) => {
       const a = this.a;
       a.__makeNative(arg0);
       const items = [arg0];
-      callback5(AnimatedColor, "__makeNative", this, 3)(items);
+      outer1_11(AnimatedColor, "__makeNative", this, 3)(items);
     }
   };
   items[12] = {
@@ -402,4 +404,4 @@ export default (arg0) => {
     }
   };
   return callback(AnimatedColor, items);
-}(importDefault(dependencyMap[10]));
+})(require("_isNativeReflectConstruct"));

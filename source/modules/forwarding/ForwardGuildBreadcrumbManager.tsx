@@ -1,9 +1,18 @@
-// Module ID: 16401
-// Function ID: 126691
+// Module ID: 16518
+// Function ID: 128865
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 653, 16519, 16104, 5078, 2]
 
-// Module 16401 (_isNativeReflectConstruct)
+// Module 16518 (_isNativeReflectConstruct)
+import setupLoadFromMessageManagerHandlers from "setupLoadFromMessageManagerHandlers";
+import _fetchBasicGuild from "_fetchBasicGuild";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { MessageReferenceTypes } from "ME";
+import tmp2 from "AutomaticLifecycleManager";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -22,42 +31,12 @@ function fetchForwardReferencedGuilds(message_reference) {
   if (type === MessageReferenceTypes.FORWARD) {
     const guild_id = message_reference.message_reference.guild_id;
     if (null != guild_id) {
-      const basicGuild = arg1(dependencyMap[6]).fetchBasicGuild(guild_id);
-      const obj = arg1(dependencyMap[6]);
+      const basicGuild = require(16519) /* _fetchBasicGuild */.fetchBasicGuild(guild_id);
+      const obj = require(16519) /* _fetchBasicGuild */;
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const MessageReferenceTypes = arg1(dependencyMap[5]).MessageReferenceTypes;
-let tmp2 = (arg0) => {
-  class ForwardGuildBreadcrumbManager {
-    constructor() {
-      self = this;
-      tmp = closure_4(this, ForwardGuildBreadcrumbManager);
-      obj = closure_6(ForwardGuildBreadcrumbManager);
-      tmp2 = closure_5;
-      if (closure_9()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, [], closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, undefined);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp7 = closure_1(closure_2[7])(tmp2Result, closure_10);
-      return tmp2Result;
-    }
-  }
-  const arg1 = ForwardGuildBreadcrumbManager;
-  callback2(ForwardGuildBreadcrumbManager, arg0);
-  return callback(ForwardGuildBreadcrumbManager);
-}(importDefault(dependencyMap[8]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/forwarding/ForwardGuildBreadcrumbManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forwarding/ForwardGuildBreadcrumbManager.tsx");
 
 export default tmp2;

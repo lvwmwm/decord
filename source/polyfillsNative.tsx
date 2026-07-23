@@ -1,31 +1,32 @@
-// Module ID: 13112
-// Function ID: 99490
-// Dependencies: []
+// Module ID: 13226
+// Function ID: 101646
+// Dependencies: [3, 13227, 13297, 13315, 13318, 13321, 488, 1190, 2]
 
-// Module 13112
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[1]);
-const _module2 = require(dependencyMap[2]);
-const _module3 = require(dependencyMap[3]);
-const _module4 = require(dependencyMap[4]);
+// Module 13226
+import timestamp from "_mergeNamespaces";
+import module_13227 from "module_13227";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _mergeNamespaces from "_mergeNamespaces";
+import CanonicalizeLocaleList from "CanonicalizeLocaleList";
+
 if ("undefined" === typeof process) {
   const _window = window;
   window.process = {};
 }
 window.process.nextTick = setImmediate;
 if (null == global.location) {
-  global.location = { isArray: false, ml: "photo" };
+  global.location = { protocol: "https:", host: "discord.com" };
 }
 if (!global.self) {
   global.self = global;
 }
 if (null == window.crypto) {
-  const _module5 = require(dependencyMap[5]);
+  const _module5 = require("_callSuper");
   const _window2 = window;
   window.crypto = global.crypto;
 }
 if (null == global.Buffer) {
-  global.Buffer = require(dependencyMap[6]).Buffer;
+  global.Buffer = require("createBuffer").Buffer;
 }
 if (null == global.__reanimatedWorkletInit) {
   global.__reanimatedWorkletInit = () => {
@@ -43,7 +44,6 @@ if (tmp7) {
   tmp7 = null != window.TextDecoder;
 }
 if (!tmp7) {
-  const _module6 = require(dependencyMap[7]);
+  const _module6 = require("k");
 }
-const _module7 = require(dependencyMap[8]);
-const result = _module7.fileFinishedImporting("polyfillsNative.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("polyfillsNative.tsx");

@@ -29,11 +29,11 @@ function encodeChunk(arg0, arg1, arg2) {
   if (arg1 < arg2) {
     do {
       let sum = (arg0[sum1] << 16 & 16711680) + (arg0[sum1 + 1] << 8 & 65280) + (255 & arg0[sum1 + 2]);
-      let tmp3 = closure_0;
-      let tmp4 = closure_0;
-      let tmp5 = closure_0;
-      let tmp6 = closure_0;
-      let arr = items.push(closure_0[sum >> 18 & 63] + closure_0[sum >> 12 & 63] + closure_0[sum >> 6 & 63] + closure_0[63 & sum]);
+      let tmp3 = dependencyMap;
+      let tmp4 = dependencyMap;
+      let tmp5 = dependencyMap;
+      let tmp6 = dependencyMap;
+      let arr = items.push(dependencyMap[sum >> 18 & 63] + dependencyMap[sum >> 12 & 63] + dependencyMap[sum >> 6 & 63] + dependencyMap[63 & sum]);
       sum1 = sum1 + 3;
     } while (sum1 < arg2);
   }
@@ -57,14 +57,14 @@ arg5.toByteArray = function toByteArray(arg0) {
   let num4 = 0;
   if (0 < diff) {
     do {
-      let tmp6 = closure_1;
-      let tmp8 = closure_1;
-      let tmp7 = closure_1[arg0.charCodeAt(arg0, num)] << 18;
-      let tmp10 = closure_1;
-      let tmp9 = closure_1[arg0.charCodeAt(arg0, num + 1)] << 12;
-      let tmp12 = closure_1;
-      let tmp11 = closure_1[arg0.charCodeAt(arg0, num + 2)] << 6;
-      let tmp13 = tmp7 | tmp9 | tmp11 | closure_1[arg0.charCodeAt(arg0, num + 3)];
+      let tmp6 = dependencyMap2;
+      let tmp8 = dependencyMap2;
+      let tmp7 = dependencyMap2[arg0.charCodeAt(arg0, num)] << 18;
+      let tmp10 = dependencyMap2;
+      let tmp9 = dependencyMap2[arg0.charCodeAt(arg0, num + 1)] << 12;
+      let tmp12 = dependencyMap2;
+      let tmp11 = dependencyMap2[arg0.charCodeAt(arg0, num + 2)] << 6;
+      let tmp13 = tmp7 | tmp9 | tmp11 | dependencyMap2[arg0.charCodeAt(arg0, num + 3)];
       let tmp14 = +num2;
       tmp4[tmp14] = tmp13 >> 16 & 255;
       let tmp15 = +tmp14 + 1;
@@ -80,14 +80,15 @@ arg5.toByteArray = function toByteArray(arg0) {
   let sum = num4;
   if (2 === tmp[1]) {
     sum = tmp21 + 1;
-    tmp4[+num4] = 255 & (closure_1[arg0.charCodeAt(arg0, num3)] << 2 | closure_1[arg0.charCodeAt(arg0, num3 + 1)] >> 4);
-    const tmp19 = closure_1[arg0.charCodeAt(arg0, num3)] << 2;
+    tmp4[+num4] = 255 & (dependencyMap2[arg0.charCodeAt(arg0, num3)] << 2 | dependencyMap2[arg0.charCodeAt(arg0, num3 + 1)] >> 4);
+    const tmp19 = dependencyMap2[arg0.charCodeAt(arg0, num3)] << 2;
   }
   if (1 === tmp[1]) {
-    const tmp23 = closure_1[arg0.charCodeAt(arg0, num3)] << 10;
-    tmp4[+sum] = (tmp23 | closure_1[arg0.charCodeAt(arg0, num3 + 1)] << 4 | closure_1[arg0.charCodeAt(arg0, num3 + 2)] >> 2) >> 8 & 255;
-    tmp4[++sum + 1] = 255 & (tmp23 | closure_1[arg0.charCodeAt(arg0, num3 + 1)] << 4 | closure_1[arg0.charCodeAt(arg0, num3 + 2)] >> 2);
-    const tmp25 = closure_1[arg0.charCodeAt(arg0, num3 + 1)] << 4;
+    const tmp23 = dependencyMap2[arg0.charCodeAt(arg0, num3)] << 10;
+    const tmp27 = tmp23 | dependencyMap2[arg0.charCodeAt(arg0, num3 + 1)] << 4 | dependencyMap2[arg0.charCodeAt(arg0, num3 + 2)] >> 2;
+    tmp4[+sum] = tmp27 >> 8 & 255;
+    tmp4[++sum + 1] = 255 & tmp27;
+    const tmp25 = dependencyMap2[arg0.charCodeAt(arg0, num3 + 1)] << 4;
   }
   return tmp4;
 };
@@ -101,7 +102,7 @@ arg5.fromByteArray = function fromByteArray(arg0) {
     do {
       sum = num + 16383;
       let tmp5 = sum;
-      let tmp3 = closure_4;
+      let tmp3 = encodeChunk;
       if (sum > diff) {
         tmp5 = diff;
       }

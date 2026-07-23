@@ -1,22 +1,23 @@
-// Module ID: 10646
-// Function ID: 83127
+// Module ID: 10656
+// Function ID: 83177
 // Name: shouldShowEndStageModal
-// Dependencies: []
+// Dependencies: [1194, 4951, 4954, 1353, 4957, 2]
 // Exports: default
 
-// Module 10646 (shouldShowEndStageModal)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/stage_channels/shouldShowEndStageModal.tsx");
+// Module 10656 (shouldShowEndStageModal)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/shouldShowEndStageModal.tsx");
 
 export default function shouldShowEndStageModal(isGuildStageVoice) {
-  const arg1 = isGuildStageVoice;
+  const _require = isGuildStageVoice;
   if (isGuildStageVoice.isGuildStageVoice()) {
     if (live.isLive(isGuildStageVoice.id)) {
-      const id = id.getId();
-      const dependencyMap = id;
+      id = id.getId();
       const tmp5 = !closure_4.isModerator(id, isGuildStageVoice.id);
       let tmp6 = !tmp5;
       if (!tmp5) {
@@ -27,16 +28,16 @@ export default function shouldShowEndStageModal(isGuildStageVoice) {
           let tmp12 = null == mutableParticipants.find((user) => {
             let isModeratorResult = user.user.id !== id;
             if (isModeratorResult) {
-              isModeratorResult = closure_4.isModerator(user.user.id, user.id);
+              isModeratorResult = outer1_4.isModerator(user.user.id, isGuildStageVoice.id);
             }
             return isModeratorResult;
           });
           if (!tmp12) {
-            const mutableParticipants1 = store.getMutableParticipants(isGuildStageVoice.id, arg1(dependencyMap[4]).StageChannelParticipantNamedIndex.SPEAKER);
+            const mutableParticipants1 = store.getMutableParticipants(isGuildStageVoice.id, _require(id[4]).StageChannelParticipantNamedIndex.SPEAKER);
             tmp12 = null == mutableParticipants1.find((user) => {
               let isModeratorResult = user.user.id !== id;
               if (isModeratorResult) {
-                isModeratorResult = closure_4.isModerator(user.user.id, user.id);
+                isModeratorResult = outer1_4.isModerator(user.user.id, isGuildStageVoice.id);
               }
               return isModeratorResult;
             });

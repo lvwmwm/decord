@@ -1,23 +1,26 @@
-// Module ID: 8706
-// Function ID: 68923
+// Module ID: 8713
+// Function ID: 68963
 // Name: getProductPurchaseState
-// Dependencies: []
+// Dependencies: [6790, 8714, 1876, 566, 2]
 // Exports: useProductPurchaseState
 
-// Module 8706 (getProductPurchaseState)
-function getProductPurchaseState(closure_5, skuId) {
-  skuId = closure_5;
-  let tmp = null != closure_5.getPurchase(skuId.skuId);
+// Module 8713 (getProductPurchaseState)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+function getProductPurchaseState(outer2_5, skuId) {
+  const _require = outer2_5;
+  let tmp = null != outer2_5.getPurchase(skuId.skuId);
   let items = skuId.items;
   if (null == items) {
     items = [];
   }
-  const tmp2Result = importDefault(dependencyMap[1])(items.map((skuId) => skuId.getPurchase(skuId.skuId)));
+  const tmp2Result = importDefault(8714)(items.map((skuId) => outer2_5.getPurchase(skuId.skuId)));
   let type;
   if (null != skuId) {
     type = skuId.type;
   }
-  if (skuId(dependencyMap[2]).CollectiblesItemType.BUNDLE === type) {
+  if (_require(1876).CollectiblesItemType.BUNDLE === type) {
     let obj = {};
     if (!tmp) {
       tmp = items.length > 0 && tmp2Result.length === items.length;
@@ -27,16 +30,16 @@ function getProductPurchaseState(closure_5, skuId) {
     obj.isPartiallyOwnedBundle = tmp2Result.length > 0 && tmp2Result.length < items.length;
     obj.isPartiallyOwnedVariantsGroup = false;
     return obj;
-  } else if (skuId(dependencyMap[2]).CollectiblesItemType.VARIANTS_GROUP === type) {
+  } else if (_require(1876).CollectiblesItemType.VARIANTS_GROUP === type) {
     const variants = skuId.variants;
     let everyResult;
     if (null != variants) {
-      everyResult = variants.every((skuId) => null != skuId.getPurchase(skuId.skuId));
+      everyResult = variants.every((skuId) => null != outer2_5.getPurchase(skuId.skuId));
     }
     const variants2 = skuId.variants;
     let someResult;
     if (null != variants2) {
-      someResult = variants2.some((skuId) => null != skuId.getPurchase(skuId.skuId));
+      someResult = variants2.some((skuId) => null != outer2_5.getPurchase(skuId.skuId));
     }
     if (someResult) {
       someResult = !everyResult;
@@ -44,17 +47,16 @@ function getProductPurchaseState(closure_5, skuId) {
     obj = { isPurchased: null != everyResult && everyResult, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: null != someResult && someResult };
     return obj;
   } else {
-    obj = { GENERIC_REGEX: "HTTP", overflow: "Date", alignSelf: "HTTP", isPurchased: tmp };
+    obj = { isPurchased: tmp, isPartiallyOwnedBundle: false, isPartiallyOwnedVariantsGroup: false };
     return obj;
   }
-  const tmp2 = importDefault(dependencyMap[1]);
+  const tmp2 = importDefault(8714);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");
+const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");
 
 export { getProductPurchaseState };
 export const useProductPurchaseState = function useProductPurchaseState(product) {
-  const arg1 = product;
-  const items = [closure_3];
-  return arg1(dependencyMap[3]).useStateFromStoresObject(items, () => callback(closure_3, arg0));
+  const _require = product;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStoresObject(items, () => outer1_4(outer1_3, closure_0));
 };

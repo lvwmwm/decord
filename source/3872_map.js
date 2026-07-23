@@ -1,0 +1,51 @@
+// Module ID: 3872
+// Function ID: 32136
+// Name: map
+// Dependencies: [3864]
+
+// Module 3872 (map)
+const require = arg1;
+const dependencyMap = arg6;
+const map = new Map();
+arg5.getHybridObjectConstructor = function getHybridObjectConstructor(arg0) {
+  let closure_0 = arg0;
+  if (map.has(arg0)) {
+    return map.get(arg0);
+  } else {
+    function constructorFunc() {
+      const NitroModules = callback(constructorFunc[0]).NitroModules;
+      const hybridObject = NitroModules.createHybridObject(callback);
+      const prototypeOf = Object.getPrototypeOf(hybridObject);
+      if (constructorFunc.prototype !== prototypeOf) {
+        constructorFunc.prototype = prototypeOf;
+        constructorFunc.prototypeInitialized = true;
+      }
+      return hybridObject;
+    }
+    constructorFunc.prototypeInitialized = false;
+    let _Object = Object;
+    const _Symbol = Symbol;
+    const obj = {
+      value(arg0) {
+          if (!constructorFunc.prototypeInitialized) {
+            const NitroModules = callback(constructorFunc[0]).NitroModules;
+            const _Object = Object;
+            constructorFunc.prototype = Object.getPrototypeOf(NitroModules.createHybridObject(callback));
+            constructorFunc.prototypeInitialized = true;
+          }
+          let prototypeOf = Object.getPrototypeOf(arg0);
+          if (null != prototypeOf) {
+            while (prototypeOf !== constructorFunc.prototype) {
+              let _Object2 = Object;
+              prototypeOf = Object.getPrototypeOf(prototypeOf);
+            }
+            return true;
+          }
+          return false;
+        }
+    };
+    Object.defineProperty(constructorFunc, Symbol.hasInstance, obj);
+    const result = map.set(arg0, constructorFunc);
+    return constructorFunc;
+  }
+};

@@ -1,40 +1,42 @@
-// Module ID: 11385
-// Function ID: 88528
+// Module ID: 11395
+// Function ID: 88578
 // Name: NewBadge
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 477, 689, 3976, 8830, 4066, 4126, 1212, 2]
 // Exports: default
 
-// Module 11385 (NewBadge)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_5 = arg1(dependencyMap[3]).createStyles((arg0, arg1) => {
+// Module 11395 (NewBadge)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
   let obj = {};
-  obj = {};
+  obj = { textAlign: "center", textTransform: "uppercase" };
   let num = 0;
   if (obj3.isIOS()) {
     num = 1;
   }
   obj.marginTop = num;
   obj.text = obj;
-  obj = { LIE: null, usePressEmojiHandler: null, _setSpanForScope: null, GuildPowerupCardFooterCost: null, useGuildWrapperSize: null, cancelLocalNotifications: null, borderRadius: importDefault(dependencyMap[5]).radii.round };
-  const obj3 = arg1(dependencyMap[4]);
+  obj = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: importDefault(689).radii.round, paddingHorizontal: 6, paddingVertical: 3 };
+  obj3 = require(477) /* set */;
   if (obj5.isThemeLight(arg1)) {
     if (!arg0) {
-      let MOBILE_TOAST_BACKGROUND_DEFAULT = importDefault(dependencyMap[5]).colors.BACKGROUND_BRAND;
+      let MOBILE_TOAST_BACKGROUND_DEFAULT = importDefault(689).colors.BACKGROUND_BRAND;
     }
     obj.backgroundColor = MOBILE_TOAST_BACKGROUND_DEFAULT;
     obj.base = obj;
     return obj;
   }
-  MOBILE_TOAST_BACKGROUND_DEFAULT = importDefault(dependencyMap[5]).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
+  MOBILE_TOAST_BACKGROUND_DEFAULT = importDefault(689).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
 export default function NewBadge() {
-  const tmp = importDefault(dependencyMap[7])();
-  const tmp2 = importDefault(dependencyMap[8])();
+  const tmp = importDefault(8830)();
+  const tmp2 = importDefault(4066)();
   const tmp3 = callback(tmp, tmp2);
   let obj = { style: tmp3.base };
   obj = { variant: "text-xxs/bold", style: tmp3.text };
@@ -44,8 +46,8 @@ export default function NewBadge() {
     str = "text-brand";
   }
   obj.color = str;
-  const intl = arg1(dependencyMap[10]).intl;
-  obj.children = intl.string(arg1(dependencyMap[10]).t.y2b7CA);
-  obj.children = jsx(arg1(dependencyMap[9]).Text, obj);
-  return <View {...obj} />;
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
+  obj.children = jsx(require(4126) /* Text */.Text, { variant: "text-xxs/bold", style: tmp3.text });
+  return <View variant="text-xxs/bold" style={tmp3.text} />;
 };

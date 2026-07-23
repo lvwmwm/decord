@@ -1,53 +1,59 @@
-// Module ID: 12257
-// Function ID: 94009
+// Module ID: 12371
+// Function ID: 96160
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 57, 31, 6689, 566, 44, 6690, 7889, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 12257 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12371 (_createForOfIteratorHelperLoose)
+import invariant from "invariant";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,23 +90,18 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramEligibleUsers.tsx");
+const result = require("result").fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramEligibleUsers.tsx");
 
 export const useReferralProgramEligibleUsers = function useReferralProgramEligibleUsers(searchQuery) {
+  let importDefault;
   let limit;
   searchQuery = searchQuery.searchQuery;
-  const arg1 = searchQuery;
-  ({ selectedUsers: closure_1, limit } = searchQuery);
-  const dependencyMap = limit;
-  let closure_3;
-  let callback;
-  let closure_6;
+  ({ selectedUsers: importDefault, limit } = searchQuery);
+  let invariant;
+  let stateFromStores;
+  let _isNativeReflectConstruct;
   let closure_7;
-  let _arrayLikeToArray;
+  let first;
   let closure_9;
   let first1;
   let closure_11;
@@ -109,41 +110,37 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
   function _getLocalReferrals() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = callback(tmp);
-    const _getLocalReferrals = obj;
     return obj(...arguments);
   }
-  function getNextRows(closure_5, limit) {
+  function getNextRows(result, limit) {
     return _getNextRows(...arguments);
   }
   function _getNextRows() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = callback(tmp);
-    const _getNextRows = obj;
     return obj(...arguments);
   }
-  let obj = arg1(dependencyMap[4]);
-  const items = [closure_6];
-  closure_3 = obj.useStateFromStores(items, () => store.getRecipientStatus());
-  const items1 = [closure_6];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items1, () => store.getReferralsRemaining());
-  callback = stateFromStores;
-  const tmp2 = callback(React.useState(0), 2);
-  const React = tmp2[0];
-  closure_6 = tmp2[1];
-  const tmp3 = callback(React.useState([]), 2);
+  let obj = searchQuery(limit[4]);
+  const items = [_isNativeReflectConstruct];
+  invariant = obj.useStateFromStores(items, () => store.getRecipientStatus());
+  const items1 = [_isNativeReflectConstruct];
+  stateFromStores = searchQuery(limit[4]).useStateFromStores(items1, () => store.getReferralsRemaining());
+  const tmp2 = stateFromStores(React.useState(0), 2);
+  React = tmp2[0];
+  _isNativeReflectConstruct = tmp2[1];
+  const tmp3 = stateFromStores(React.useState([]), 2);
   closure_7 = tmp3[1];
-  const tmp4 = callback(React.useState(false), 2);
-  const first = tmp4[0];
-  _arrayLikeToArray = first;
+  const tmp4 = stateFromStores(React.useState(false), 2);
+  first = tmp4[0];
   closure_9 = tmp4[1];
-  const tmp6 = callback(React.useState(false), 2);
+  const tmp6 = stateFromStores(React.useState(false), 2);
   first1 = tmp6[0];
   closure_11 = tmp6[1];
-  const obj2 = arg1(dependencyMap[4]);
-  const tmp9 = callback(React.useState(new Map()), 2);
+  const obj2 = searchQuery(limit[4]);
+  const tmp9 = stateFromStores(React.useState(new Map()), 2);
   first2 = tmp9[0];
   closure_13 = tmp9[1];
-  importDefault(dependencyMap[5])(null != stateFromStores, "Referrals remaining should not be null");
+  importDefault(limit[5])(null != stateFromStores, "Referrals remaining should not be null");
   obj = {
     limit,
     getNextRows,
@@ -166,7 +163,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
   obj = {
     eligibleUsers: tmp3[0],
     fetchUsers() {
-      return getNextRows(closure_5, limit);
+      return getNextRows(result, limit);
     },
     hasError: first1,
     isFetching: first,

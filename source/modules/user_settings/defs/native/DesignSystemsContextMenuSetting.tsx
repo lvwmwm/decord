@@ -1,26 +1,25 @@
-// Module ID: 14328
-// Function ID: 108204
+// Module ID: 14442
+// Function ID: 110357
 // Name: route
-// Dependencies: [57, 31, 27, 33, 4126]
+// Dependencies: [7662, 653, 10095, 14443, 2]
 
-// Module 14328 (route)
-import get ActivityIndicator from "get ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 14442 (route)
+import createToggle from "createToggle";
 
-let obj = {
+obj = {
   useTitle() {
     return "Context Menu";
   },
-  parent: require("_slicedToArray").MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require("module_31").UserSettingsSections.DESIGN_SYSTEM_CONTEXT_MENU,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_CONTEXT_MENU,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14443) /* contextMenuItems */.default;
   }
 };
-const route = get_ActivityIndicator.createRoute(obj);
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsContextMenuSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsContextMenuSetting.tsx");
 
 export default route;

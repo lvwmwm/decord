@@ -1,12 +1,13 @@
 // Module ID: 1523
-// Function ID: 17468
+// Function ID: 17469
 // Name: SceneView
-// Dependencies: []
+// Dependencies: [31, 33, 1477, 1470, 1482, 1524]
 // Exports: default
 
 // Module 1523 (SceneView)
-let closure_2 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
+import result from "result";
+import { jsx } from "jsxProd";
+
 
 export default function SceneView(getState) {
   let navigation;
@@ -14,34 +15,30 @@ export default function SceneView(getState) {
   let routeState;
   let screen;
   ({ screen, route } = getState);
-  const importDefault = route;
   ({ navigation, routeState } = getState);
-  const dependencyMap = routeState;
   getState = getState.getState;
-  const React = getState;
   const setState = getState.setState;
-  const jsx = setState;
   const clearOptions = getState.clearOptions;
-  let closure_5 = React.useRef();
-  const callback = React.useCallback(() => ref.current, []);
+  let closure_5 = getState.useRef();
+  const callback = getState.useCallback(() => ref.current, []);
   let obj = { key: route.key, options: getState.options, navigation };
-  const addOptionsGetter = importDefault(dependencyMap[2])(obj).addOptionsGetter;
-  const callback1 = React.useCallback((current) => {
+  const addOptionsGetter = route(routeState[2])(obj).addOptionsGetter;
+  const callback1 = getState.useCallback((current) => {
     closure_5.current = current;
   }, []);
   const items = [getState, route.key];
-  const callback2 = React.useCallback(() => {
+  const callback2 = getState.useCallback(() => {
     let state;
     const routes = getState().routes;
-    const found = routes.find((key) => key.key === key.key);
+    const found = routes.find((key) => key.key === outer1_0.key);
     if (found) {
       state = found.state;
     }
     return state;
   }, items);
   const items1 = [getState, route.key, setState];
-  const callback3 = React.useCallback((arg0) => {
-    const route = arg0;
+  const callback3 = getState.useCallback((arg0) => {
+    let closure_0 = arg0;
     const tmp = getState();
     const routes = tmp.routes;
     setState(Object.assign({}, tmp, {
@@ -56,14 +53,14 @@ export default function SceneView(getState) {
       })
     }));
   }, items1);
-  let closure_11 = React.useRef(true);
-  const effect = React.useEffect(() => {
+  let closure_11 = getState.useRef(true);
+  const effect = getState.useEffect(() => {
     closure_11.current = false;
   });
-  const effect1 = React.useEffect(() => clearOptions, []);
-  const callback4 = React.useCallback(() => ref2.current, []);
+  const effect1 = getState.useEffect(() => clearOptions, []);
+  const callback4 = getState.useCallback(() => ref2.current, []);
   const items2 = [routeState, callback2, callback3, callback, callback1, callback4, addOptionsGetter];
-  const memo = React.useMemo(() => ({ state: routeState, getState: callback2, setState: callback3, getKey: callback, setKey: callback1, getIsInitial: callback4, addOptionsGetter }), items2);
+  const memo = getState.useMemo(() => ({ state: routeState, getState: callback2, setState: callback3, getKey: callback, setKey: callback1, getIsInitial: callback4, addOptionsGetter }), items2);
   if (screen.getComponent) {
     let component = screen.getComponent();
   } else {
@@ -73,7 +70,7 @@ export default function SceneView(getState) {
   obj = {};
   const obj1 = { name: screen.name };
   let children = component;
-  const tmp10 = importDefault(dependencyMap[4]);
+  const tmp10 = route(routeState[4]);
   if (!component) {
     children = screen.children;
   }
@@ -82,7 +79,7 @@ export default function SceneView(getState) {
   obj1.route = route;
   if (undefined !== component) {
     const obj2 = { navigation, route };
-    let childrenResult = <component {...obj2} />;
+    let childrenResult = setState(component, obj2);
   } else {
     childrenResult = null;
     if (undefined !== screen.children) {
@@ -91,7 +88,7 @@ export default function SceneView(getState) {
     }
   }
   obj1.children = childrenResult;
-  obj.children = jsx(importDefault(dependencyMap[5]), obj1);
-  obj.children = <tmp10 {...obj} />;
-  return jsx(importDefault(dependencyMap[3]).Provider, obj);
+  obj.children = setState(route(routeState[5]), obj1);
+  obj.children = setState(tmp10, obj);
+  return setState(route(routeState[3]).Provider, obj);
 };

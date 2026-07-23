@@ -1,16 +1,17 @@
 // Module ID: 8112
-// Function ID: 64258
+// Function ID: 64259
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [38, 110, 42]
 
 // Module 8112 (__INTERNAL_VIEW_CONFIG)
-let obj = { uiViewClassName: "RNSVGTSpan", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } } };
-obj = {};
-obj = { process: require(dependencyMap[0]).default };
-obj.color = obj;
-const _module = require(dependencyMap[1]);
-obj.validAttributes = Object.assign(obj, _module.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
-const _module1 = require(dependencyMap[2]);
+import weakSet from "weakSet";
+import get from "get";
 
-export default _module1.get("RNSVGTSpan", () => obj);
+let obj = { uiViewClassName: "RNSVGRect", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } } };
+obj = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: null, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, x: true, y: true, height: true, width: true, rx: true, ry: true };
+obj = { process: require("processColor").default };
+obj.color = obj;
+obj.validAttributes = Object.assign(obj, weakSet.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
+
+export default get.get("RNSVGRect", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

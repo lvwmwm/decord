@@ -1,9 +1,19 @@
-// Module ID: 12501
-// Function ID: 95810
+// Module ID: 12615
+// Function ID: 97966
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4044, 1188, 12616, 12617, 686, 566, 2]
 
-// Module 12501 (_isNativeReflectConstruct)
+// Module 12615 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "apexExperiment";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import apexExperiment from "apexExperiment";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,54 +24,45 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function handleConnectionOpen() {
-  const ConnectionOpenTriggerPoint = arg1(dependencyMap[8]).ConnectionOpenTriggerPoint;
+  const ConnectionOpenTriggerPoint = require(12617) /* commonTriggerPointConfiguration */.ConnectionOpenTriggerPoint;
   ConnectionOpenTriggerPoint.trigger();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-arg1(dependencyMap[7]);
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class ExperimentTriggerPointStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, ExperimentTriggerPointStore);
+      tmp = outer1_3(this, ExperimentTriggerPointStore);
       items = [, , ];
-      items[0] = closure_1(closure_2[9]);
-      obj = { CONNECTION_OPEN: closure_11 };
+      items[0] = outer1_1(outer1_2[9]);
+      obj = { CONNECTION_OPEN: outer1_11 };
       items[1] = obj;
-      items[2] = ExperimentTriggerPointStore(closure_2[9]).DispatchBand.Early;
-      obj2 = closure_6(ExperimentTriggerPointStore);
-      tmp2 = closure_5;
-      if (closure_10()) {
+      items[2] = ExperimentTriggerPointStore(outer1_2[9]).DispatchBand.Early;
+      obj2 = outer1_6(ExperimentTriggerPointStore);
+      tmp2 = outer1_5;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj2, items, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj2, items, outer1_6(self).constructor);
       } else {
         constructResult = obj2.apply(self, items);
       }
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ExperimentTriggerPointStore;
   callback2(ExperimentTriggerPointStore, Store);
-  const items = [
+  let items = [
     {
       key: "initialize",
       value() {
-        this.waitFor(closure_8, closure_9);
+        this.waitFor(outer1_8, outer1_9);
       }
     }
   ];
   return callback(ExperimentTriggerPointStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "ExperimentTriggerPointStore";
 tmp3 = new tmp3();
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/experiments/ExperimentTriggerPointStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/experiments/ExperimentTriggerPointStore.tsx");
 
 export default tmp3;

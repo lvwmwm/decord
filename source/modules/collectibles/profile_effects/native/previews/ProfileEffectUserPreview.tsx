@@ -1,13 +1,15 @@
-// Module ID: 8228
-// Function ID: 64989
+// Module ID: 8234
+// Function ID: 65026
 // Name: ProfileEffectUserPreview
-// Dependencies: []
+// Dependencies: [31, 33, 8235, 1212, 2]
 // Exports: default
 
-// Module 8228 (ProfileEffectUserPreview)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/collectibles/profile_effects/native/previews/ProfileEffectUserPreview.tsx");
+// Module 8234 (ProfileEffectUserPreview)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("filterLayer").fileFinishedImporting("modules/collectibles/profile_effects/native/previews/ProfileEffectUserPreview.tsx");
 
 export default function ProfileEffectUserPreview(profileEffect) {
   profileEffect = profileEffect.profileEffect;
@@ -16,14 +18,14 @@ export default function ProfileEffectUserPreview(profileEffect) {
   const merged = Object.assign(profileEffect, obj);
   obj = { profileEffectOverride: profileEffect };
   if (null != profileEffect) {
-    const intl2 = arg1(dependencyMap[3]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     obj = { a11y_text: profileEffect.accessibilityLabel };
-    let formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[3]).t.mbHmX2, obj);
+    let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.mbHmX2, obj);
   } else {
-    const intl = arg1(dependencyMap[3]).intl;
-    formatToPlainStringResult = intl.string(arg1(dependencyMap[3]).t.XYdHeC);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    formatToPlainStringResult = intl.string(require(1212) /* getSystemLocale */.t.XYdHeC);
   }
   obj.accessibilityLabel = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(dependencyMap[2]), obj);
+  return jsx(importDefault(8235), { profileEffectOverride: profileEffect });
 };

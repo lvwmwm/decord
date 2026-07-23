@@ -1,10 +1,9 @@
-// Module ID: 6949
-// Function ID: 55534
+// Module ID: 6954
+// Function ID: 55568
 // Name: QuestTaskJoinOperator
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6949 (QuestTaskJoinOperator)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestTaskJoinOperator.tsx");
+// Module 6954 (QuestTaskJoinOperator)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestTaskJoinOperator.tsx");
 
 export const QuestTaskJoinOperator = { AND: "and", OR: "or" };

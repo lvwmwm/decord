@@ -1,20 +1,24 @@
-// Module ID: 14589
-// Function ID: 109950
+// Module ID: 14704
+// Function ID: 112114
 // Name: BenchmarkResultsList
-// Dependencies: []
+// Dependencies: [31, 33, 5503, 5165, 14700, 2]
 // Exports: default
 
-// Module 14589 (BenchmarkResultsList)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/devtools/native/components/screens/performance/BenchmarkResultsList.tsx");
+// Module 14704 (BenchmarkResultsList)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+const result = require("TableRowGroupTitle").fileFinishedImporting("modules/devtools/native/components/screens/performance/BenchmarkResultsList.tsx");
 
 export default function BenchmarkResultsList(results) {
   results = results.results;
   let tmp2 = null;
   if (0 !== results.length) {
-    let obj = { -9223372036854775808: 26, 9223372036854775807: null };
+    let obj = { title: "Results (newest first)", hasIcons: false };
     const items = [
       results.map((kind) => {
           let elapsedMs;
@@ -23,7 +27,7 @@ export default function BenchmarkResultsList(results) {
             ({ label: obj.label, elapsedMs } = kind);
             const _HermesInternal = HermesInternal;
             obj.subLabel = "" + elapsedMs.toFixed(1) + " ms total";
-            let tmp5 = callback2(callback(closure_1[3]).TableRow, obj, kind.id);
+            let tmp5 = outer1_2(outer1_0(outer1_1[3]).TableRow, obj, kind.id);
           } else {
             obj = {};
             const meanMs = kind.meanMs;
@@ -32,19 +36,19 @@ export default function BenchmarkResultsList(results) {
             const _HermesInternal2 = HermesInternal;
             obj.label = "Scroll \u00B7 mean " + toFixedResult + " ms \u00B7 worst " + worstMs.toFixed(1) + " ms";
             const dropped = kind.dropped;
-            const FRAME_BUDGET_MS = callback(closure_1[4]).FRAME_BUDGET_MS;
+            const FRAME_BUDGET_MS = outer1_0(outer1_1[4]).FRAME_BUDGET_MS;
             const _HermesInternal3 = HermesInternal;
             obj.subLabel = "" + dropped + "/" + kind.frames + " frames over " + FRAME_BUDGET_MS.toFixed(1) + " ms";
-            tmp5 = callback2(callback(closure_1[3]).TableRow, obj, kind.id);
+            tmp5 = outer1_2(outer1_0(outer1_1[3]).TableRow, obj, kind.id);
           }
           return tmp5;
         }),
 
     ];
-    obj = { onPress: tmp };
-    items[1] = callback(arg1(dependencyMap[3]).TableRow, obj);
+    obj = { label: "Clear results", variant: "danger", arrow: true, onPress: tmp };
+    items[1] = callback(require(5165) /* TableRowInner */.TableRow, obj);
     obj.children = items;
-    tmp2 = callback2(arg1(dependencyMap[2]).TableRowGroup, obj);
+    tmp2 = callback2(require(5503) /* TableRowGroupTitle */.TableRowGroup, obj);
   }
   return tmp2;
 };

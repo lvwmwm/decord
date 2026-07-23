@@ -1,43 +1,51 @@
-// Module ID: 8755
-// Function ID: 69238
+// Module ID: 8762
+// Function ID: 69279
 // Name: ProductNameAndDescription
-// Dependencies: []
+// Dependencies: [27, 33, 4130, 689, 8763, 4126, 6786, 8713, 1212, 8764, 8233, 1876, 2]
 // Exports: default
 
-// Module 8755 (ProductNameAndDescription)
+// Module 8762 (ProductNameAndDescription)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
-  let obj = require(dependencyMap[4]);
+  let obj = require(8763) /* _createForOfIteratorHelperLoose */;
   obj = { style: tmp.description };
   const productDescription = obj.useProductDescription(product);
-  obj = { "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011454504407100313, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004026493667951817, paddingHorizontal: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003202169671031755, backgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062920633412691296, style: tmp.title, children: product.name };
-  const items = [callback(require(dependencyMap[5]).Text, obj), callback(require(dependencyMap[5]).Text, { children: productDescription })];
+  obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  const obj1 = { variant: "text-md/medium", color: "text-default", children: productDescription };
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items;
   return callback2(View, obj);
 }
 function ProductPurchaseStatus(product) {
   product = product.product;
-  let obj = require(dependencyMap[6]);
+  let obj = require(6786) /* getPriceForCollectiblesProduct */;
   const result = obj.isPremiumCollectiblesProduct(product);
-  let obj1 = require(dependencyMap[7]);
+  let obj1 = require(8713) /* getProductPurchaseState */;
   const productPurchaseState = obj1.useProductPurchaseState(product);
   obj = {};
   if (productPurchaseState.isPurchased) {
-    obj = { cachedAt: null, edpbxy: null };
-    const intl2 = require(dependencyMap[8]).intl;
-    obj.children = intl2.string(require(dependencyMap[8]).t.6cfuDj);
-    let tmp6 = callback(require(dependencyMap[5]).Text, obj);
+    obj = { variant: "text-md/semibold", color: "interactive-text-active" };
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj.children = intl2.string(require(1212) /* getSystemLocale */.t["6cfuDj"]);
+    let tmp6 = callback(require(4126) /* Text */.Text, obj);
   } else if (tmp3) {
-    obj1 = { cachedAt: null, edpbxy: null };
-    const intl = require(dependencyMap[8]).intl;
-    obj1.children = intl.string(require(dependencyMap[8]).t.BEjTij);
-    tmp6 = callback(require(dependencyMap[5]).Text, obj1);
+    obj1 = { variant: "text-md/semibold", color: "interactive-text-active" };
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj1.children = intl.string(require(1212) /* getSystemLocale */.t.BEjTij);
+    tmp6 = callback(require(4126) /* Text */.Text, obj1);
   } else {
     tmp6 = !result;
     if (tmp6) {
       const obj2 = { product, onTrackPress: product.onTrackPress };
-      tmp6 = callback(importDefault(dependencyMap[9]), obj2);
+      tmp6 = callback(importDefault(8764), obj2);
     }
   }
   obj.children = tmp6;
@@ -46,7 +54,7 @@ function ProductPurchaseStatus(product) {
 function BundleProductDetailsActionSheetInfo(onTrackPress) {
   const product = onTrackPress.product;
   const tmp = callback3();
-  let obj = require(dependencyMap[10]);
+  let obj = require(8233) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   const enabled = obj.useCollectiblesMobileFlexibleBundlesExperiment("BundleProductDetailsActionSheetInfo").enabled;
   obj = {};
   const items = [tmp.body, ];
@@ -65,24 +73,20 @@ function BundleProductDetailsActionSheetInfo(onTrackPress) {
   obj.children = items1;
   return closure_5(View, obj);
 }
-const View = require(dependencyMap[0]).View;
-const _module = require(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = _module);
-const _module1 = require(dependencyMap[2]);
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 let obj = { title: { marginBottom: 2 } };
-obj = { marginTop: importDefault(dependencyMap[3]).space.PX_24, marginHorizontal: importDefault(dependencyMap[3]).space.PX_16, flexDirection: "column", gap: 20 };
+obj = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_24, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, flexDirection: "column", gap: 20 };
 obj.body = obj;
 obj.bundleBody = { marginTop: 0 };
-obj.description = {};
-let closure_6 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[12]);
-const result = _module2.fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetInfo.tsx");
+obj.description = { flexDirection: "column", gap: 6 };
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetInfo.tsx");
 
 export default function ProductDetailsActionSheetInfo(arg0) {
   let onTrackPress;
   let product;
   ({ product, onTrackPress } = arg0);
-  if (product.type === require(dependencyMap[11]).CollectiblesItemType.BUNDLE) {
+  if (product.type === require(1876) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE) {
     let obj = { product, onTrackPress };
     let tmp8 = callback(BundleProductDetailsActionSheetInfo, obj);
   } else {

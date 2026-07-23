@@ -1,35 +1,37 @@
-// Module ID: 13596
-// Function ID: 103035
+// Module ID: 13710
+// Function ID: 105191
 // Name: route
-// Dependencies: [891748352, 131072, 528023552, 905969664, 553648157, 3456106496, 3758096411, 2516582452, 2701131784]
+// Dependencies: [3767, 7662, 653, 566, 1212, 10095, 9218, 13711, 2]
 
-// Module 13596 (route)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[5]);
-obj = {
-  IconComponent: arg1(dependencyMap[6]).EyeSlashIcon,
+// Module 13710 (route)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
+  IconComponent: require("EyeSlashIcon").EyeSlashIcon,
   useTitle() {
-    const intl = arg1(dependencyMap[4]).intl;
-    return intl.string(arg1(dependencyMap[4]).t.93ZDWE);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["93ZDWE"]);
   },
   useDescription: function useAccountIgnoredUsersSettingDescription() {
-    let obj = arg1(dependencyMap[3]);
-    const items = [closure_2];
-    const stateFromStoresArray = obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs());
-    const intl = arg1(dependencyMap[4]).intl;
+    let obj = require(566) /* initialize */;
+    const items = [_isNativeReflectConstruct];
+    const stateFromStoresArray = obj.useStateFromStoresArray(items, () => outer1_2.getIgnoredIDs());
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { numberOfIgnoredUsers: stateFromStoresArray.length };
-    return intl.format(arg1(dependencyMap[4]).t.rXUeOl, obj);
+    return intl.format(require(1212) /* getSystemLocale */.t.rXUeOl, obj);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
-  screen: obj
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[2]).UserSettingsSections.IGNORED_USERS,
+createToggle = {
+  route: require("ME").UserSettingsSections.IGNORED_USERS,
   getComponent() {
-    return arg1(dependencyMap[7]).default;
+    return require(13711) /* IgnoredUsersList */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/defs/native/AccountIgnoredUsersSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AccountIgnoredUsersSetting.tsx");
 
-export default route;
+export default createToggle;

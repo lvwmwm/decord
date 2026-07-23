@@ -1,9 +1,15 @@
-// Module ID: 11185
-// Function ID: 87073
+// Module ID: 11195
+// Function ID: 87123
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 664, 566, 686, 2]
 
-// Module 11185 (_isNativeReflectConstruct)
+// Module 11195 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +19,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +72,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -102,27 +108,22 @@ function addToApplicationIdToGuildIds(applicationId) {
   obj.applicationIdToGuildIds[applicationId].add(applicationId.guildId);
   obj.applicationIdToGuildIds[applicationId].applicationIdToGuildIds[applicationId] = new Set(obj.applicationIdToGuildIds[applicationId].applicationIdToGuildIds[applicationId].applicationIdToGuildIds[applicationId]);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", ERROR: 3, [3]: "ERROR" };
-obj = { marginRight: "mn", gap: "description", display: "Array", applicationIdToGuildIds: {} };
+obj = { applicationIdToGuildIds: {}, lastFetchTimeMs: null, nextFetchRetryTimeMs: null };
 obj.fetchState = obj.NOT_FETCHED;
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class MyGuildApplicationsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, MyGuildApplicationsStore);
-      obj = closure_5(MyGuildApplicationsStore);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      tmp = outer1_2(this, MyGuildApplicationsStore);
+      obj = outer1_5(MyGuildApplicationsStore);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -131,24 +132,24 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = MyGuildApplicationsStore;
   callback2(MyGuildApplicationsStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(lastFetchTimeMs) {
       if (null != lastFetchTimeMs) {
-        closure_8.lastFetchTimeMs = lastFetchTimeMs.lastFetchTimeMs;
-        closure_8.nextFetchRetryTimeMs = lastFetchTimeMs.nextFetchRetryTimeMs;
-        closure_8.fetchState = lastFetchTimeMs.fetchState;
+        outer1_8.lastFetchTimeMs = lastFetchTimeMs.lastFetchTimeMs;
+        outer1_8.nextFetchRetryTimeMs = lastFetchTimeMs.nextFetchRetryTimeMs;
+        outer1_8.fetchState = lastFetchTimeMs.fetchState;
         for (const key10002 in arg0.applicationIdToGuildIds) {
           let tmp5 = key10002;
-          let tmp6 = closure_8;
+          let tmp6 = outer1_8;
           let _Set = Set;
           let tmp7 = new.target;
           let tmp8 = new.target;
           let set = new Set(arg0.applicationIdToGuildIds[key10002]);
           let tmp10 = set;
-          closure_8.applicationIdToGuildIds[key10002] = set;
+          outer1_8.applicationIdToGuildIds[key10002] = set;
+          continue;
         }
       }
     }
@@ -157,7 +158,7 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[1] = obj;
@@ -165,7 +166,7 @@ let tmp2 = (PersistedStore) => {
     key: "getGuildIdsForApplication",
     value(arg0) {
       if (null != arg0) {
-        return closure_8.applicationIdToGuildIds[arg0];
+        return outer1_8.applicationIdToGuildIds[arg0];
       }
     }
   };
@@ -173,23 +174,23 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getLastFetchTimeMs",
     value() {
-      return closure_8.lastFetchTimeMs;
+      return outer1_8.lastFetchTimeMs;
     }
   };
   items[4] = {
     key: "getNextFetchRetryTimeMs",
     value() {
-      return closure_8.nextFetchRetryTimeMs;
+      return outer1_8.nextFetchRetryTimeMs;
     }
   };
   items[5] = {
     key: "getFetchState",
     value() {
-      return closure_8.fetchState;
+      return outer1_8.fetchState;
     }
   };
   return callback(MyGuildApplicationsStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "MyGuildApplicationsStore";
 tmp2.persistKey = "MyGuildApplicationsStore";
 obj = {
@@ -211,15 +212,15 @@ obj = {
     obj.nextFetchRetryTimeMs = null;
     for (const key10017 in guildIdToApplicationIds) {
       let tmp3 = key10017;
-      let tmp4 = closure_10;
-      let tmp5 = closure_10(guildIdToApplicationIds[key10017]);
+      let tmp4 = _createForOfIteratorHelperLoose;
+      let tmp5 = _createForOfIteratorHelperLoose(guildIdToApplicationIds[key10017]);
       let iter2 = tmp5();
       if (iter2.done) {
         continue;
       } else {
-        let tmp = closure_12;
+        let tmp = addToApplicationIdToGuildIds;
         obj = { applicationId: iter2.value, guildId: key10017 };
-        let tmp2 = closure_12(obj);
+        let tmp2 = addToApplicationIdToGuildIds(obj);
         let iter = tmp5();
         iter2 = iter;
       }
@@ -231,7 +232,7 @@ obj = {
     obj.fetchState = obj.ERROR;
     if (null != retryAfterSeconds) {
       const _Date = Date;
-      const result = retryAfterSeconds * importDefault(dependencyMap[5]).Millis.SECOND;
+      const result = retryAfterSeconds * importDefault(664).Millis.SECOND;
       obj.nextFetchRetryTimeMs = Date.now() + result;
     }
   },
@@ -257,8 +258,8 @@ obj = {
     }
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[7]), obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/global_discovery_apps/stores/MyGuildApplicationsStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/global_discovery_apps/stores/MyGuildApplicationsStore.tsx");
 
 export default tmp2;
 export const FetchState = obj;

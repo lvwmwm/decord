@@ -1,14 +1,16 @@
-// Module ID: 11234
-// Function ID: 87475
+// Module ID: 11244
+// Function ID: 87525
 // Name: getCollectionItemAssetUrl
-// Dependencies: []
+// Dependencies: [653, 1426, 1392, 2]
 // Exports: getCollectionItemAssetUrl
 
-// Module 11234 (getCollectionItemAssetUrl)
-const Endpoints = require(dependencyMap[0]).Endpoints;
+// Module 11244 (getCollectionItemAssetUrl)
+import { Endpoints } from "ME";
+
+let closure_3;
+let closure_4;
 ({ API_ENDPOINT: closure_3, CDN_HOST: closure_4 } = window.GLOBAL_ENV);
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/global_discovery_apps/utils/getCollectionItemAssetUrl.tsx");
+const result = require("getAvatarURL").fileFinishedImporting("modules/global_discovery_apps/utils/getCollectionItemAssetUrl.tsx");
 
 export const getCollectionItemAssetUrl = function getCollectionItemAssetUrl(arg0) {
   let containerWidth;
@@ -18,13 +20,13 @@ export const getCollectionItemAssetUrl = function getCollectionItemAssetUrl(arg0
   if (containerWidth === undefined) {
     containerWidth = 1024;
   }
-  let obj = require(dependencyMap[1]);
-  let str = obj.getBestMediaProxySize(containerWidth * require(dependencyMap[1]).getDevicePixelRatio());
+  let obj = require(1426) /* isAttachmentLadderEnabled */;
+  let str = obj.getBestMediaProxySize(containerWidth * require(1426) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
   obj = { size: str.toString() };
-  const obj2 = require(dependencyMap[1]);
+  const obj2 = require(1426) /* isAttachmentLadderEnabled */;
   str = new URLSearchParams(obj).toString();
   let str3 = "png";
-  if (require(dependencyMap[2]).SUPPORTS_WEBP) {
+  if (require(1392) /* getAvatarURL */.SUPPORTS_WEBP) {
     str3 = "webp";
   }
   if (null != closure_4) {

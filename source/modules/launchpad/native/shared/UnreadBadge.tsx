@@ -1,22 +1,24 @@
-// Module ID: 15546
-// Function ID: 118646
-// Dependencies: []
+// Module ID: 15663
+// Function ID: 120819
+// Dependencies: [31, 27, 10260, 4326, 33, 4130, 15659, 4549, 9128, 2]
 
-// Module 15546
-const View = arg1(dependencyMap[1]).View;
-const MUTED_OPACITY_CONTENT = arg1(dependencyMap[2]).MUTED_OPACITY_CONTENT;
-const UnreadSetting = arg1(dependencyMap[3]).UnreadSetting;
-const jsx = arg1(dependencyMap[4]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_7 = arg1(dependencyMap[5]).createStyles({ unreadBadge: { icon: "center", maxFontSizeMultiplier: 2, variant: "guild_id" } });
-const obj2 = arg1(dependencyMap[5]);
-const memoResult = importAllResult.memo(function UnreadBadge(arg0) {
+// Module 15663
+import { View } from "get ActivityIndicator";
+import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
+import { UnreadSetting } from "ReadStateTypes";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" } });
+const memoResult = require("result").memo(function UnreadBadge(arg0) {
   let muted;
   let resolvedUnreadSetting;
   let unread;
   ({ unread, resolvedUnreadSetting, muted } = arg0);
-  const tmp2 = importDefault(dependencyMap[6])();
-  arg1(dependencyMap[7]);
+  const tmp2 = importDefault(15659)();
+  require(4549) /* getFontScale */;
   let tmp6Result = null;
   if (unread) {
     let obj = {};
@@ -27,7 +29,7 @@ const memoResult = importAllResult.memo(function UnreadBadge(arg0) {
     obj = { classic: true };
     const _Math = Math;
     let num2 = 1;
-    obj.size = arg1(dependencyMap[8]).CHANNEL_BADGE_SIZE * Math.max(tmp4, 1);
+    obj.size = require(9128) /* DEFAULT_BADGE_SIZE */.CHANNEL_BADGE_SIZE * Math.max(tmp4, 1);
     const obj1 = {};
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       num2 = MUTED_OPACITY_CONTENT;
@@ -35,13 +37,13 @@ const memoResult = importAllResult.memo(function UnreadBadge(arg0) {
     obj1.opacity = num2;
     const items1 = [obj1];
     obj.badgeStyle = items1;
-    obj.children = jsx(importDefault(dependencyMap[8]), obj);
+    obj.children = jsx(importDefault(9128), { classic: true });
     tmp6Result = tmp6(View, obj);
-    const tmp10 = importDefault(dependencyMap[8]);
+    const tmp10 = importDefault(9128);
     const tmp7 = View;
   }
   return tmp6Result;
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/launchpad/native/shared/UnreadBadge.tsx");
+const result = require("hairlineWidth").fileFinishedImporting("modules/launchpad/native/shared/UnreadBadge.tsx");
 
 export default memoResult;

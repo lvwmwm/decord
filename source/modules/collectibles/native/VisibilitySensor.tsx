@@ -1,24 +1,27 @@
-// Module ID: 11836
-// Function ID: 91746
+// Module ID: 11848
+// Function ID: 91799
 // Name: onChange
-// Dependencies: []
+// Dependencies: [31, 27, 33, 1450, 2]
 // Exports: default
 
-// Module 11836 (onChange)
-const _module = require(dependencyMap[0]);
-({ useEffect: closure_2, useRef: closure_3 } = _module);
-let closure_4 = importDefault(dependencyMap[0]);
-const View = require(dependencyMap[1]).View;
-const _module1 = require(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = _module1);
-const _module2 = require(dependencyMap[4]);
-const result = _module2.fileFinishedImporting("modules/collectibles/native/VisibilitySensor.tsx");
+// Module 11848 (onChange)
+import result from "result";
+import closure_4 from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+let closure_6;
+let closure_7;
+({ useEffect: closure_2, useRef: closure_3 } = result);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/VisibilitySensor.tsx");
 
 export default function _default(onChange) {
   let children;
   let resetKey;
   onChange = onChange.onChange;
-  const importDefault = onChange;
   let closure_5;
   function stopWatching(closure_5, arg1) {
     if (null !== ref.current) {
@@ -28,39 +31,39 @@ export default function _default(onChange) {
     }
   }
   ({ children, resetKey } = onChange);
-  const tmp = width(null);
+  let tmp = width(null);
   const dependencyMap = tmp;
   let callback = width(false);
-  const size = importDefault(dependencyMap[3])();
-  const width = size.width;
+  const size = onChange(1450)();
+  width = size.width;
   const height = size.height;
-  const React = height;
   closure_5 = width(null);
   const items = [resetKey];
   callback(() => {
     closure_2.current = false;
   }, items);
   const items1 = [onChange];
-  callback = React.useCallback((arg0, arg1) => {
-    const onChange = arg0;
+  callback = height.useCallback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     if (null === ref.current) {
       const _setInterval = setInterval;
       ref.current = setInterval(() => {
-        if (null !== arg1.current) {
-          const current = arg1.current;
+        if (null !== ref.current) {
+          const current = ref.current;
           current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
             let tmp = arg5 + arg3 > 0;
             if (tmp) {
-              tmp = arg5 < closure_1;
+              tmp = arg5 < outer1_1;
             }
             if (tmp) {
-              tmp = arg4 < callback;
+              tmp = arg4 < outer1_0;
             }
             if (tmp) {
               tmp = arg4 + arg2 > 0;
             }
-            if (tmp !== ref.current) {
-              ref.current = tmp;
+            if (tmp !== outer2_2.current) {
+              outer2_2.current = tmp;
               callback(tmp);
             }
           });

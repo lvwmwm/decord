@@ -1,12 +1,27 @@
-// Module ID: 4109
-// Function ID: 34007
+// Module ID: 4111
+// Function ID: 34016
 // Name: parseQuery
-// Dependencies: []
+// Dependencies: [57, 653, 655, 4112, 4113, 1440, 3829, 1445, 4114, 4119, 12214, 4366, 12855, 1443, 4321, 8954, 6644, 1553, 477, 8906, 675, 490, 12856, 2]
 // Exports: default
 
-// Module 4109 (parseQuery)
+// Module 4111 (parseQuery)
+import _slicedToArray from "_slicedToArray";
+import ME from "ME";
+import items from "items";
+import { UPDATE_CONFIG } from "currentUpdateConfig";
+import CustomCheckoutFlow from "CustomCheckoutFlow";
+
+let closure_11;
+let closure_12;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function parseQuery(arg0) {
-  const entries = Object.entries(importDefault(dependencyMap[5]).parse(arg0));
+  const entries = Object.entries(importDefault(1440).parse(arg0));
   return Object.fromEntries(entries.map((arg0) => {
     let tmp;
     let tmp2;
@@ -20,31 +35,26 @@ function parseQuery(arg0) {
     return items;
   }));
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ AnalyticEvents: closure_4, GuildSettingsSections: closure_5, GuildSettingsSubsections: closure_6, LinkingTypes: closure_7 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ CollectibleShopTab: closure_8, CollectiblesMobileShopScreen: closure_9 } = arg1(dependencyMap[2]));
-const UPDATE_CONFIG = arg1(dependencyMap[3]).UPDATE_CONFIG;
-const tmp3 = arg1(dependencyMap[2]);
-({ MobileWebRedirectCheckoutDeepLinkActions: closure_11, MobileWebRedirectCheckoutDeepLinkQueryKeys: closure_12 } = arg1(dependencyMap[4]));
-let closure_13 = /feature\/([\w-]+)/;
-let closure_14 = /feature\/boost\/([0-9]+)/;
-let closure_15 = /users\/(\d+)/;
-let closure_16 = /(?:connect|oauth2)\/authorize/;
-let closure_17 = /login\/one-time/;
-let closure_18 = /promos\.discord\.gg/;
-let closure_19 = /mweb-handoff/;
-let closure_20 = /connections\/(xbox|playstation|playstation-stg|crunchyroll)\/link/;
-let closure_21 = /connections\/([a-z-]+)/;
-let closure_22 = /guilds\/(\d+)\/settings(?:\/([a-z-]+)(?:\/([a-z-]+))?)?/;
-let closure_23 = /guilds\/settings(?:\/([a-z-]+)(?:\/([a-z-]+))?)?/;
-let closure_24 = /activate/;
-let closure_25 = /^\/quests\/(\d+)/;
-let closure_26 = /^\/quest-preview\/(\d+)/;
-let closure_27 = /^\/quest-home/;
-let closure_28 = /subscriptions\/(\d+)/;
-const tmp4 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[23]).fileFinishedImporting("utils/native/parseURL.tsx");
+({ AnalyticEvents: closure_4, GuildSettingsSections: closure_5, GuildSettingsSubsections: closure_6, LinkingTypes: closure_7 } = ME);
+({ CollectibleShopTab: closure_8, CollectiblesMobileShopScreen: closure_9 } = items);
+({ MobileWebRedirectCheckoutDeepLinkActions: closure_11, MobileWebRedirectCheckoutDeepLinkQueryKeys: closure_12 } = CustomCheckoutFlow);
+const re13 = /feature\/([\w-]+)/;
+const re14 = /feature\/boost\/([0-9]+)/;
+const re15 = /users\/(\d+)/;
+const re16 = /(?:connect|oauth2)\/authorize/;
+const re17 = /login\/one-time/;
+const re18 = /promos\.discord\.gg/;
+const re19 = /mweb-handoff/;
+const re20 = /connections\/(xbox|playstation|playstation-stg|crunchyroll)\/link/;
+const re21 = /connections\/([a-z-]+)/;
+const re22 = /guilds\/(\d+)\/settings(?:\/([a-z-]+)(?:\/([a-z-]+))?)?/;
+const re23 = /guilds\/settings(?:\/([a-z-]+)(?:\/([a-z-]+))?)?/;
+const re24 = /activate/;
+const re25 = /^\/quests\/(\d+)/;
+const re26 = /^\/quest-preview\/(\d+)/;
+const re27 = /^\/quest-home/;
+const re28 = /subscriptions\/(\d+)/;
+let result = require("items").fileFinishedImporting("utils/native/parseURL.tsx");
 
 export default function parseURL(target) {
   let attachmentManifest;
@@ -77,8 +87,7 @@ export default function parseURL(target) {
   function isValidUUID(shareId) {
     return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(shareId);
   }
-  const arg1 = isValidUUID;
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(3829);
   let sanitizeUrlResult = obj.sanitizeUrl(target);
   if (null == sanitizeUrlResult) {
     obj = {};
@@ -90,7 +99,7 @@ export default function parseURL(target) {
   } else {
     sanitizeUrlResult = importDefault;
     sanitizeUrlResult = dependencyMap;
-    obj = importDefault(dependencyMap[7]);
+    obj = importDefault(1445);
     sanitizeUrlResult = obj.parse(sanitizeUrlResult);
     ({ host, pathname, query } = sanitizeUrlResult);
     let str13 = "";
@@ -103,13 +112,13 @@ export default function parseURL(target) {
     const sanitizeUrlResultResult = sanitizeUrlResult(str);
     ({ fingerprint, attemptId, installationId, referrer_id, sort, filter } = sanitizeUrlResultResult);
     ({ username, custom_id, link_id } = sanitizeUrlResultResult);
-    let obj1 = arg1(dependencyMap[8]);
+    let obj1 = isValidUUID(4114);
     const findCodedLinkResult = obj1.findCodedLink(sanitizeUrlResult);
     if (null != findCodedLinkResult) {
       const type = findCodedLinkResult.type;
-      sanitizeUrlResult = arg1;
+      sanitizeUrlResult = isValidUUID;
       sanitizeUrlResult = dependencyMap;
-      if (arg1(dependencyMap[9]).CodedLinkType.INVITE === type) {
+      if (isValidUUID(4119).CodedLinkType.INVITE === type) {
         obj = { fingerprint, attemptId, installationId };
         obj = {};
         sanitizeUrlResult = closure_7;
@@ -120,9 +129,9 @@ export default function parseURL(target) {
         obj.payload = obj;
         return obj;
       } else {
-        sanitizeUrlResult = arg1;
+        sanitizeUrlResult = isValidUUID;
         sanitizeUrlResult = dependencyMap;
-        if (arg1(dependencyMap[9]).CodedLinkType.TEMPLATE === type) {
+        if (isValidUUID(4119).CodedLinkType.TEMPLATE === type) {
           obj = { fingerprint, attemptId, installationId };
           obj = {};
           sanitizeUrlResult = closure_7;
@@ -131,71 +140,71 @@ export default function parseURL(target) {
           obj.payload = obj;
           return obj;
         } else {
-          sanitizeUrlResult = arg1;
+          sanitizeUrlResult = isValidUUID;
           sanitizeUrlResult = dependencyMap;
-          if (arg1(dependencyMap[9]).CodedLinkType.BUILD_OVERRIDE !== type) {
-            sanitizeUrlResult = arg1;
+          if (isValidUUID(4119).CodedLinkType.BUILD_OVERRIDE !== type) {
+            sanitizeUrlResult = isValidUUID;
             sanitizeUrlResult = dependencyMap;
-            if (arg1(dependencyMap[9]).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
-              sanitizeUrlResult = arg1;
+            if (isValidUUID(4119).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
+              sanitizeUrlResult = isValidUUID;
               sanitizeUrlResult = dependencyMap;
-              if (arg1(dependencyMap[9]).CodedLinkType.EXPERIMENT !== type) {
-                sanitizeUrlResult = arg1;
+              if (isValidUUID(4119).CodedLinkType.EXPERIMENT !== type) {
+                sanitizeUrlResult = isValidUUID;
                 sanitizeUrlResult = dependencyMap;
-                if (arg1(dependencyMap[9]).CodedLinkType.EVENT !== type) {
-                  sanitizeUrlResult = arg1;
+                if (isValidUUID(4119).CodedLinkType.EVENT !== type) {
+                  sanitizeUrlResult = isValidUUID;
                   sanitizeUrlResult = dependencyMap;
-                  if (arg1(dependencyMap[9]).CodedLinkType.CHANNEL_LINK !== type) {
-                    sanitizeUrlResult = arg1;
+                  if (isValidUUID(4119).CodedLinkType.CHANNEL_LINK !== type) {
+                    sanitizeUrlResult = isValidUUID;
                     sanitizeUrlResult = dependencyMap;
-                    if (arg1(dependencyMap[9]).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-                      sanitizeUrlResult = arg1;
+                    if (isValidUUID(4119).CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
+                      sanitizeUrlResult = isValidUUID;
                       sanitizeUrlResult = dependencyMap;
-                      if (arg1(dependencyMap[9]).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+                      if (isValidUUID(4119).CodedLinkType.ACTIVITY_BOOKMARK === type) {
                         obj1 = { fingerprint, attemptId, installationId };
                         let obj2 = { type: closure_7.ACTIVITY, applicationId: findCodedLinkResult.code, customId: custom_id, referrerId: referrer_id, linkId: link_id, isDeepLink: flag };
                         obj1.payload = obj2;
                         return obj1;
                       } else {
-                        sanitizeUrlResult = arg1;
+                        sanitizeUrlResult = isValidUUID;
                         sanitizeUrlResult = dependencyMap;
-                        if (arg1(dependencyMap[9]).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
-                          sanitizeUrlResult = arg1;
+                        if (isValidUUID(4119).CodedLinkType.EMBEDDED_ACTIVITY_INVITE !== type) {
+                          sanitizeUrlResult = isValidUUID;
                           sanitizeUrlResult = dependencyMap;
-                          if (arg1(dependencyMap[9]).CodedLinkType.GUILD_PRODUCT !== type) {
-                            sanitizeUrlResult = arg1;
+                          if (isValidUUID(4119).CodedLinkType.GUILD_PRODUCT !== type) {
+                            sanitizeUrlResult = isValidUUID;
                             sanitizeUrlResult = dependencyMap;
-                            if (arg1(dependencyMap[9]).CodedLinkType.SERVER_SHOP !== type) {
-                              sanitizeUrlResult = arg1;
+                            if (isValidUUID(4119).CodedLinkType.SERVER_SHOP !== type) {
+                              sanitizeUrlResult = isValidUUID;
                               sanitizeUrlResult = dependencyMap;
-                              if (arg1(dependencyMap[9]).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                                sanitizeUrlResult = arg1;
+                              if (isValidUUID(4119).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                                sanitizeUrlResult = isValidUUID;
                                 sanitizeUrlResult = dependencyMap;
-                                if (arg1(dependencyMap[9]).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                                  sanitizeUrlResult = arg1;
+                                if (isValidUUID(4119).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                                  sanitizeUrlResult = isValidUUID;
                                   sanitizeUrlResult = dependencyMap;
-                                  if (arg1(dependencyMap[9]).CodedLinkType.QUESTS_EMBED !== type) {
-                                    sanitizeUrlResult = arg1;
+                                  if (isValidUUID(4119).CodedLinkType.QUESTS_EMBED !== type) {
+                                    sanitizeUrlResult = isValidUUID;
                                     sanitizeUrlResult = dependencyMap;
-                                    if (arg1(dependencyMap[9]).CodedLinkType.GAME_PROFILE === type) {
+                                    if (isValidUUID(4119).CodedLinkType.GAME_PROFILE === type) {
                                       const obj3 = { fingerprint, attemptId, installationId };
                                       const obj4 = { type: closure_7.GAME_PROFILE, gameId: findCodedLinkResult.code };
                                       obj3.payload = obj4;
                                       return obj3;
                                     } else {
-                                      sanitizeUrlResult = arg1;
+                                      sanitizeUrlResult = isValidUUID;
                                       sanitizeUrlResult = dependencyMap;
-                                      if (arg1(dependencyMap[9]).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-                                        sanitizeUrlResult = arg1;
+                                      if (isValidUUID(4119).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+                                        sanitizeUrlResult = isValidUUID;
                                         sanitizeUrlResult = dependencyMap;
-                                        if (arg1(dependencyMap[9]).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
-                                          sanitizeUrlResult = arg1;
+                                        if (isValidUUID(4119).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
+                                          sanitizeUrlResult = isValidUUID;
                                           sanitizeUrlResult = dependencyMap;
-                                          if (arg1(dependencyMap[9]).CodedLinkType.APP_OAUTH2_LINK !== type) {
-                                            sanitizeUrlResult = arg1;
+                                          if (isValidUUID(4119).CodedLinkType.APP_OAUTH2_LINK !== type) {
+                                            sanitizeUrlResult = isValidUUID;
                                             sanitizeUrlResult = dependencyMap;
-                                            if (arg1(dependencyMap[9]).CodedLinkType.COLLECTIBLES_SHOP === type) {
-                                              obj2 = arg1(dependencyMap[10]);
+                                            if (isValidUUID(4119).CodedLinkType.COLLECTIBLES_SHOP === type) {
+                                              obj2 = isValidUUID(12214);
                                               const tmp12 = callback(findCodedLinkResult.code.split("-"), 2)[1];
                                               if (obj2.isVirtualCurrencyEnabled().enabled) {
                                                 if (tmp11 === constants2.ORBS) {
@@ -246,7 +255,7 @@ export default function parseURL(target) {
         }
       }
     }
-    const findGiftCodesResult = arg1(dependencyMap[11]).findGiftCodes(sanitizeUrlResult);
+    const findGiftCodesResult = isValidUUID(4366).findGiftCodes(sanitizeUrlResult);
     if (findGiftCodesResult.length > 0) {
       let obj9 = { fingerprint, attemptId, installationId };
       let obj10 = {};
@@ -256,9 +265,9 @@ export default function parseURL(target) {
       obj9.payload = obj10;
       return obj9;
     } else {
-      sanitizeUrlResult = arg1;
+      sanitizeUrlResult = isValidUUID;
       sanitizeUrlResult = dependencyMap;
-      obj = arg1(dependencyMap[12]);
+      obj = isValidUUID(12855);
       const result = obj.findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
@@ -271,11 +280,11 @@ export default function parseURL(target) {
           return obj11;
         }
       }
-      obj9 = importDefault(dependencyMap[13]);
+      obj9 = importDefault(1443);
       if (!obj9.isDiscordHostname(host)) {
-        obj10 = importDefault(dependencyMap[13]);
+        obj10 = importDefault(1443);
         if (!obj10.isDiscordProtocol(protocol)) {
-          obj11 = importDefault(dependencyMap[13]);
+          obj11 = importDefault(1443);
         }
         sanitizeUrlResult = undefined;
         if (null != host) {
@@ -316,9 +325,9 @@ export default function parseURL(target) {
         return obj17;
       }
       if (null != pathname) {
-        sanitizeUrlResult = arg1;
+        sanitizeUrlResult = isValidUUID;
         sanitizeUrlResult = dependencyMap;
-        obj = arg1(dependencyMap[14]);
+        obj = isValidUUID(4321);
         sanitizeUrlResult = obj.tryParseDiceRollLink(pathname);
         if (null != sanitizeUrlResult) {
           const obj19 = { fingerprint, attemptId, installationId };
@@ -329,9 +338,9 @@ export default function parseURL(target) {
           obj19.payload = obj20;
           return obj19;
         } else {
-          sanitizeUrlResult = arg1;
+          sanitizeUrlResult = isValidUUID;
           sanitizeUrlResult = dependencyMap;
-          obj = arg1(dependencyMap[14]);
+          obj = isValidUUID(4321);
           sanitizeUrlResult = obj.tryParseChannelPath(pathname);
           if (null != sanitizeUrlResult) {
             sanitizeUrlResult = parseQuery;
@@ -384,7 +393,7 @@ export default function parseURL(target) {
             if (null != pathname.match(closure_27)) {
               sanitizeUrlResult = importDefault;
               sanitizeUrlResult = dependencyMap;
-              let obj78 = importDefault(dependencyMap[5]);
+              let obj78 = importDefault(1440);
               sanitizeUrlResult = str13;
               if (null != query) {
                 sanitizeUrlResult = query;
@@ -438,7 +447,7 @@ export default function parseURL(target) {
                   }
                 }
                 if (null != pathname.match(closure_16)) {
-                  obj12 = arg1(dependencyMap[15]);
+                  obj12 = isValidUUID(8954);
                   let tmp33 = str13;
                   if (null != query) {
                     tmp33 = query;
@@ -576,17 +585,17 @@ export default function parseURL(target) {
                         const obj54 = { type: closure_7.ACCOUNT_STANDING, pathname };
                         tmp37 = obj54;
                       } else if ("mobile-web-redirect-checkout" === sanitizeUrlResult) {
-                        obj25 = arg1(dependencyMap[16]);
+                        obj25 = isValidUUID(6644);
                         let result2 = obj25.isMobileWebRedirectCheckoutEnabled();
                         if (result2) {
-                          obj26 = arg1(dependencyMap[17]);
+                          obj26 = isValidUUID(1553);
                           result2 = !obj26.isMetaQuest();
                         }
                         let tmp70 = str13;
                         if (null != query) {
                           tmp70 = query;
                         }
-                        let DEFAULT = parseQuery(tmp70)[closure_12.DEEP_LINK_ACTION];
+                        let DEFAULT = parseQuery(tmp70)[constants5.DEEP_LINK_ACTION];
                         tmp37 = null;
                         if (result2) {
                           const obj55 = { type: closure_7.MOBILE_WEB_REDIRECT_CHECKOUT };
@@ -606,7 +615,7 @@ export default function parseURL(target) {
                         const obj57 = { type: closure_7.AUTHORIZED_APPS };
                         tmp37 = obj57;
                       } else if ("share" === sanitizeUrlResult) {
-                        obj21 = arg1(dependencyMap[18]);
+                        obj21 = isValidUUID(477);
                         tmp37 = null;
                         if (obj21.isIOS()) {
                           let tmp56 = str13;
@@ -658,7 +667,7 @@ export default function parseURL(target) {
                         if (null != userId) {
                           tmp37 = null;
                           if (null != fingerprint2) {
-                            obj18 = arg1(dependencyMap[19]);
+                            obj18 = isValidUUID(8906);
                             const obj59 = { location: "parseUrl" };
                             tmp37 = null;
                             if (obj18.getSecureFramesDeeplinkExperiment(obj59).enabled) {
@@ -709,9 +718,9 @@ export default function parseURL(target) {
                       }
                     }
                   }
-                  sanitizeUrlResult = arg1;
+                  sanitizeUrlResult = isValidUUID;
                   sanitizeUrlResult = dependencyMap;
-                  obj41 = arg1(dependencyMap[14]);
+                  obj41 = isValidUUID(4321);
                   sanitizeUrlResult = obj41.tryParseEventDetailsPath(pathname);
                   if (null != sanitizeUrlResult) {
                     const obj67 = { fingerprint, attemptId, installationId };
@@ -756,11 +765,11 @@ export default function parseURL(target) {
                       }
                       sanitizeUrlResult = importDefault;
                       sanitizeUrlResult = dependencyMap;
-                      obj60 = importDefault(dependencyMap[20]);
+                      obj60 = importDefault(675);
                       sanitizeUrlResult = constants;
                       const obj71 = { reason: "invalid_query_params" };
-                      sanitizeUrlResult = arg1;
-                      obj62 = arg1(dependencyMap[21]);
+                      sanitizeUrlResult = isValidUUID;
+                      obj62 = isValidUUID(490);
                       obj71.fingerprint = obj62.maybeExtractId(fingerprint3);
                       const obj72 = { fingerprint: fingerprint3 };
                       sanitizeUrlResult = obj60.track(constants.MOBILE_WEB_HANDOFF_FAILURE, obj71, obj72);
@@ -784,7 +793,7 @@ export default function parseURL(target) {
                         const obj74 = {};
                         sanitizeUrlResult = closure_7;
                         obj74.type = closure_7.USER_CONNECTIONS_LINK_CALLBACK;
-                        obj74.provider = sanitizeUrlResult[1];
+                        obj74.provider = 653;
                         ({ code: obj58.callbackCode, state: obj58.callbackState } = sanitizeUrlResult);
                         obj73.payload = obj74;
                         return obj73;
@@ -794,7 +803,7 @@ export default function parseURL(target) {
                         if (null != sanitizeUrlResult) {
                           sanitizeUrlResult = callback;
                           sanitizeUrlResult = callback(sanitizeUrlResult, 2);
-                          sanitizeUrlResult = sanitizeUrlResult[0];
+                          sanitizeUrlResult = 57;
                           sanitizeUrlResult = globalThis;
                           sanitizeUrlResult = str13;
                           sanitizeUrlResult = parseQuery;
@@ -805,7 +814,7 @@ export default function parseURL(target) {
                           const obj76 = {};
                           sanitizeUrlResult = closure_7;
                           obj76.type = closure_7.USER_CONNECTIONS_CALLBACK;
-                          obj76.provider = sanitizeUrlResult[1];
+                          obj76.provider = 653;
                           obj76.searchParams = sanitizeUrlResult(decodeURIComponent(sanitizeUrlResult));
                           obj75.payload = obj76;
                           return obj75;
@@ -819,13 +828,13 @@ export default function parseURL(target) {
                             obj78 = {};
                             sanitizeUrlResult = closure_7;
                             obj78.type = closure_7.GUILD_SETTINGS;
-                            obj78.guildId = sanitizeUrlResult[1];
+                            obj78.guildId = 653;
                             sanitizeUrlResult = importDefault;
                             sanitizeUrlResult = dependencyMap;
                             sanitizeUrlResult = closure_5;
-                            obj78.settingsSection = importDefault(dependencyMap[22])(closure_5, sanitizeUrlResult[2]);
+                            obj78.settingsSection = importDefault(12856)(closure_5, 655);
                             sanitizeUrlResult = closure_6;
-                            obj78.settingsSubsection = importDefault(dependencyMap[22])(closure_6, sanitizeUrlResult[3]);
+                            obj78.settingsSubsection = importDefault(12856)(closure_6, 4112);
                             obj77.payload = obj78;
                             return obj77;
                           } else {
@@ -846,9 +855,9 @@ export default function parseURL(target) {
                               sanitizeUrlResult = importDefault;
                               sanitizeUrlResult = dependencyMap;
                               sanitizeUrlResult = closure_5;
-                              obj80.settingsSection = importDefault(dependencyMap[22])(closure_5, sanitizeUrlResult[1]);
+                              obj80.settingsSection = importDefault(12856)(closure_5, 653);
                               sanitizeUrlResult = closure_6;
-                              obj80.settingsSubsection = importDefault(dependencyMap[22])(closure_6, sanitizeUrlResult[2]);
+                              obj80.settingsSubsection = importDefault(12856)(closure_6, 655);
                               obj80.feature = sanitizeUrlResult(sanitizeUrlResult).feature;
                               obj79.payload = obj80;
                               return obj79;

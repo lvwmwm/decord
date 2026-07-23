@@ -1,70 +1,74 @@
-// Module ID: 9553
-// Function ID: 74459
+// Module ID: 9560
+// Function ID: 74500
 // Name: MediaPostThumbnailActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 1345, 33, 4130, 689, 1557, 5187, 5189, 4126, 1212, 1273, 4543, 2]
 // Exports: default
 
-// Module 9553 (MediaPostThumbnailActionSheet)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const ContentDismissActionType = arg1(dependencyMap[2]).ContentDismissActionType;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_SURFACE_HIGH };
-obj.container = obj;
-const obj1 = { backgroundColor: importDefault(dependencyMap[5]).colors.TEXT_FEEDBACK_WARNING, borderRadius: importDefault(dependencyMap[5]).radii.sm, marginTop: false, marginBottom: false };
-obj.topContainer = obj1;
-const tmp3 = arg1(dependencyMap[3]);
-obj.setAsThumbnailContainer = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-obj.contentContainer = {};
-obj.title = { marginTop: 24 };
-obj.description = { textAlign: "center" };
-let closure_7 = obj.createStyles(obj);
-const obj2 = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_MOD_NORMAL, borderRadius: importDefault(dependencyMap[5]).radii.sm };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/media_channel/native/MediaPostMultipleThumbnailActionSheet.tsx");
+// Module 9560 (MediaPostThumbnailActionSheet)
+import "result";
+import { View } from "get ActivityIndicator";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { flex: 1, width: "100%", paddingVertical: 40, paddingHorizontal: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_WARNING, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.topContainer = obj1;
+let obj2 = { flex: 1, flexDirection: "row", padding: 12, width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, alignItems: "center", justifyContent: "space-between" };
+_createForOfIteratorHelperLoose.setAsThumbnailContainer = obj2;
+_createForOfIteratorHelperLoose.contentContainer = { alignItems: "center", flex: 1 };
+_createForOfIteratorHelperLoose.title = { marginTop: 24 };
+_createForOfIteratorHelperLoose.description = { textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ContentDismissActionType").fileFinishedImporting("modules/media_channel/native/MediaPostMultipleThumbnailActionSheet.tsx");
 
 export default function MediaPostThumbnailActionSheet(markAsDismissed) {
-  const arg1 = markAsDismissed.markAsDismissed;
-  const tmp = callback3();
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {
     backdropOpacity: 0.8,
     onDismiss() {
-      return markAsDismissed(constants.UNKNOWN);
+      return markAsDismissed(outer1_4.UNKNOWN);
     }
   };
   obj = { style: tmp.container };
   obj = { contentContainerStyle: items };
-  const items = [tmp.contentContainer, { paddingBottom: importDefault(dependencyMap[6])().bottom }];
+  items = [tmp.contentContainer, { paddingBottom: importDefault(1557)().bottom }];
   const obj1 = { style: tmp.topContainer };
   const obj2 = { style: tmp.setAsThumbnailContainer };
-  const obj3 = {};
-  const intl = arg1(dependencyMap[10]).intl;
-  obj3.children = intl.string(arg1(dependencyMap[10]).t.ews2pj);
-  const items1 = [callback(arg1(dependencyMap[9]).Text, obj3), callback(arg1(dependencyMap[11]).Checkbox, { selected: true })];
+  const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
+  const intl = markAsDismissed(1212).intl;
+  obj3.children = intl.string(markAsDismissed(1212).t.ews2pj);
+  const items1 = [callback(markAsDismissed(4126).Text, obj3), callback(markAsDismissed(1273).Checkbox, { selected: true })];
   obj2.children = items1;
   obj1.children = callback2(View, obj2);
   const items2 = [callback(View, obj1), , , , , ];
-  const obj4 = { style: tmp.title };
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj4.children = intl2.string(arg1(dependencyMap[10]).t.WJisip);
-  items2[1] = callback(arg1(dependencyMap[9]).Text, obj4);
-  items2[2] = callback(arg1(dependencyMap[11]).Spacer, { size: 12 });
-  const obj5 = { cachedAt: 1, edpbxy: 1, style: tmp.description };
-  const intl3 = arg1(dependencyMap[10]).intl;
-  obj5.children = intl3.string(arg1(dependencyMap[10]).t.X6ZH6d);
-  items2[3] = callback(arg1(dependencyMap[9]).Text, obj5);
-  items2[4] = callback(arg1(dependencyMap[11]).Spacer, { size: 48 });
+  const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title };
+  const intl2 = markAsDismissed(1212).intl;
+  obj4.children = intl2.string(markAsDismissed(1212).t.WJisip);
+  items2[1] = callback(markAsDismissed(4126).Text, obj4);
+  items2[2] = callback(markAsDismissed(1273).Spacer, { size: 12 });
+  const obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.description };
+  const intl3 = markAsDismissed(1212).intl;
+  obj5.children = intl3.string(markAsDismissed(1212).t.X6ZH6d);
+  items2[3] = callback(markAsDismissed(4126).Text, obj5);
+  items2[4] = callback(markAsDismissed(1273).Spacer, { size: 48 });
   const obj6 = {};
-  const intl4 = arg1(dependencyMap[10]).intl;
-  obj6.text = intl4.string(arg1(dependencyMap[10]).t.NX+WJN);
+  const intl4 = markAsDismissed(1212).intl;
+  obj6.text = intl4.string(markAsDismissed(1212).t["NX+WJN"]);
   obj6.grow = true;
   obj6.onPress = function onPress() {
-    return markAsDismissed(constants.UNKNOWN);
+    return markAsDismissed(outer1_4.UNKNOWN);
   };
-  items2[5] = callback(arg1(dependencyMap[12]).Button, obj6);
+  items2[5] = callback(markAsDismissed(4543).Button, obj6);
   obj.children = items2;
-  obj.children = callback2(arg1(dependencyMap[8]).BottomSheetScrollView, obj);
+  obj.children = callback2(markAsDismissed(5189).BottomSheetScrollView, obj);
   obj.children = callback(View, obj);
-  return callback(arg1(dependencyMap[7]).BottomSheet, obj);
+  return callback(markAsDismissed(5187).BottomSheet, obj);
 };

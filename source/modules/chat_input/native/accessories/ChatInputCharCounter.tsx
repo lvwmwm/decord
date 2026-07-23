@@ -1,52 +1,54 @@
-// Module ID: 11452
-// Function ID: 89233
+// Module ID: 11462
+// Function ID: 89283
 // Name: ChatInputCharCounter
-// Dependencies: []
+// Dependencies: [57, 31, 1849, 653, 1851, 33, 4130, 566, 3776, 7934, 7941, 3831, 1212, 4660, 4126, 7871, 2]
 
-// Module 11452 (ChatInputCharCounter)
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const UpsellTypes = arg1(dependencyMap[3]).UpsellTypes;
-const PremiumUpsellTypes = arg1(dependencyMap[4]).PremiumUpsellTypes;
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ container: { "Bool(false)": null, "Bool(false)": "b28329d7d2ebd0b330f6112973e5d746" } });
+// Module 11462 (ChatInputCharCounter)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { UpsellTypes } from "ME";
+import { PremiumUpsellTypes } from "GuildFeatures";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { alignItems: "center", paddingBottom: 6 } });
 const forwardRefResult = importAllResult.forwardRef((analyticsLocations) => {
   analyticsLocations = analyticsLocations.analyticsLocations;
-  const arg1 = analyticsLocations;
-  let obj = arg1(closure_2[7]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores(closure_2[8]).canUseIncreasedMessageLength(currentUser.getCurrentUser()));
-  const importDefault = stateFromStores;
+  let obj = analyticsLocations(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => stateFromStores(table[8]).canUseIncreasedMessageLength(outer1_5.getCurrentUser()));
   const tmp3 = callback(importAllResult.useState(0), 2);
   const first = tmp3[0];
-  closure_2 = tmp3[1];
-  const tmp5 = importDefault(closure_2[9])();
-  const callback = tmp5;
+  const dependencyMap = tmp3[1];
+  const tmp5 = stateFromStores(7934)();
+  callback = tmp5;
   const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
     onMessageLengthChanged(length) {
-      callback(Math.max(0, length - closure_3));
+      outer1_2(Math.max(0, length - outer1_3));
     }
   }));
   const items1 = [analyticsLocations, stateFromStores, tmp5];
   let tmp8 = null;
   if (first > 0) {
     obj = { onPress: tmp7, style: tmp.container };
-    obj = {};
+    obj = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xs/medium" };
     const _HermesInternal = HermesInternal;
     obj.children = "-" + first;
-    const items2 = [callback2(arg1(closure_2[14]).Text, obj), ];
-    const obj1 = { size: "sm" };
-    items2[1] = callback2(arg1(closure_2[15]).NitroWheelIcon, obj1);
+    const items2 = [callback2(analyticsLocations(4126).Text, obj), ];
+    let obj1 = { size: "sm" };
+    items2[1] = callback2(analyticsLocations(7871).NitroWheelIcon, obj1);
     obj.children = items2;
-    tmp8 = callback3(arg1(closure_2[13]).PressableOpacity, obj);
+    tmp8 = callback3(analyticsLocations(4660).PressableOpacity, obj);
   }
   return tmp8;
 });
 forwardRefResult.displayName = "ChatInputCharCounter";
-const obj2 = arg1(dependencyMap[6]);
 const memoResult = importAllResult.memo(forwardRefResult);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/chat_input/native/accessories/ChatInputCharCounter.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputCharCounter.tsx");
 
 export default memoResult;

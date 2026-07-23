@@ -1,28 +1,31 @@
-// Module ID: 8408
-// Function ID: 66966
+// Module ID: 8414
+// Function ID: 67003
 // Name: _updatePermission
-// Dependencies: []
+// Dependencies: [5, 8415, 686, 4140, 2]
 // Exports: init, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 8408 (_updatePermission)
+// Module 8414 (_updatePermission)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
+const require = arg1;
 function _updatePermission() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _updatePermission = obj;
   return obj(...arguments);
 }
 function saveAndClearPermissionUpdates(id, items, arg2, arg3) {
-  items = id;
+  let closure_0 = id;
   const importDefault = items;
   const dependencyMap = arg2;
-  let closure_3 = arg3;
-  importDefault(dependencyMap[2]).dispatch({ type: "CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING" });
-  const obj = importDefault(dependencyMap[2]);
+  let asyncGeneratorStep = arg3;
+  importDefault(686).dispatch({ type: "CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING" });
+  let obj = importDefault(686);
   return new Promise((arg0) => {
+    let closure_0 = arg0;
     function chain() {
       if (0 === chain.length) {
-        if (0 === arr.length) {
-          return arg0();
+        if (0 === outer1_2.length) {
+          return callback();
         }
       }
       if (chain.length > 0) {
@@ -30,47 +33,45 @@ function saveAndClearPermissionUpdates(id, items, arg2, arg3) {
         if (null == arr) {
           return chain();
         } else {
-          const result = chain(arr[3]).updatePermissionOverwrite(arg0, arr);
+          const result = chain(4140).updatePermissionOverwrite(callback, arr);
           result.then(chain, chain);
-          const obj2 = chain(arr[3]);
+          const obj2 = chain(4140);
         }
       } else {
-        arr = arr.pop();
+        arr = outer1_2.pop();
         if (null == arr) {
           return chain();
         } else {
-          const result1 = chain(arr[3]).clearPermissionOverwrite(arg0, arr);
+          const result1 = chain(4140).clearPermissionOverwrite(callback, arr);
           result1.then(chain, chain);
-          const obj = chain(arr[3]);
+          const obj = chain(4140);
         }
       }
     }
-    const arg1 = chain;
     !chain();
   }).then(() => {
-    let obj = arg1(arg2[2]);
-    obj = { type: "CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS", silent: arg3 };
+    let obj = items(table[2]);
+    obj = { type: "CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS", silent: asyncGeneratorStep };
     obj.dispatch(obj);
   });
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("actions/ChannelSettingsPermissionsActionCreators.tsx");
+let result = require("dispatcher").fileFinishedImporting("actions/ChannelSettingsPermissionsActionCreators.tsx");
 
 export const updatePermission = function updatePermission(id, id, addResult, deny) {
   return _updatePermission(...arguments);
 };
 export const selectPermission = function selectPermission(id) {
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(686);
   obj = { type: "CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION", id };
   obj.dispatch(obj);
 };
 export const setAdvancedMode = function setAdvancedMode(advancedMode) {
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(686);
   obj = { type: "CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE", advancedMode };
   obj.dispatch(obj);
 };
 export const init = function init() {
-  importDefault(dependencyMap[2]).dispatch({ type: "CHANNEL_SETTINGS_PERMISSIONS_INIT" });
+  importDefault(686).dispatch({ type: "CHANNEL_SETTINGS_PERMISSIONS_INIT" });
 };
 export const savePermissionUpdates = function savePermissionUpdates(id, items, arg2) {
   return saveAndClearPermissionUpdates(id, items, [], arg2);

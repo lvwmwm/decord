@@ -1,11 +1,13 @@
 // Module ID: 799
-// Function ID: 8987
+// Function ID: 8988
 // Name: addNonEnumerableProperty
-// Dependencies: []
+// Dependencies: [800, 801, 804, 805]
 
 // Module 799 (addNonEnumerableProperty)
+const require = arg1;
+const dependencyMap = arg6;
 function addNonEnumerableProperty(arg0, arg1, value) {
-  const obj = { "": null, children: null, "": null, value };
+  const obj = { value, writable: true, configurable: true };
   Object.defineProperty(arg0, arg1, obj);
 }
 function markFunctionWrapped(arg0, arg1) {
@@ -19,7 +21,7 @@ function markFunctionWrapped(arg0, arg1) {
   addNonEnumerableProperty(arg0, "__sentry_original__", arg1);
 }
 function convertToPlainObject(type) {
-  let obj = arg1(arg6[2]);
+  let obj = require(804) /* isBuiltin */;
   if (obj.isError(type)) {
     const _Object2 = Object;
     obj = {};
@@ -32,8 +34,8 @@ function convertToPlainObject(type) {
       const merged = Object.assign(obj, getOwnProperties(type));
       let isInstanceOfResult = "undefined" !== typeof globalThis.CustomEvent;
       if (isInstanceOfResult) {
-        isInstanceOfResult = arg1(arg6[2]).isInstanceOf(type, globalThis.CustomEvent);
-        const obj4 = arg1(arg6[2]);
+        isInstanceOfResult = require(804) /* isBuiltin */.isInstanceOf(type, globalThis.CustomEvent);
+        const obj4 = require(804) /* isBuiltin */;
       }
       if (isInstanceOfResult) {
         merged.detail = type.detail;
@@ -42,13 +44,13 @@ function convertToPlainObject(type) {
     } else {
       return type;
     }
-    const obj2 = arg1(arg6[2]);
+    obj2 = require(804) /* isBuiltin */;
   }
 }
 function serializeEventTarget(arg0) {
   if (obj.isElement(arg0)) {
-    let htmlTreeAsStringResult = arg1(arg6[3]).htmlTreeAsString(arg0);
-    const obj2 = arg1(arg6[3]);
+    let htmlTreeAsStringResult = require(805) /* _htmlElementAsString */.htmlTreeAsString(arg0);
+    const obj2 = require(805) /* _htmlElementAsString */;
   } else {
     const _Object = Object;
     htmlTreeAsStringResult = toString.call(arg0);
@@ -66,7 +68,7 @@ function getOwnProperties(obj) {
           continue;
         } else {
           obj[key10009] = arg0[key10009];
-          // continue
+          continue;
         }
         continue;
       }
@@ -76,8 +78,8 @@ function getOwnProperties(obj) {
   return {};
 }
 function _dropUndefinedKeys(arr, get) {
-  get = arr;
-  const arg6 = get;
+  let closure_0 = arr;
+  let closure_1 = get;
   if (null !== arr) {
     if ("object" === typeof arr) {
       const value = get.get(arr);
@@ -87,10 +89,9 @@ function _dropUndefinedKeys(arr, get) {
         const _Array = Array;
         if (Array.isArray(arr)) {
           const items = [];
-          const addNonEnumerableProperty = items;
           const result = get.set(arr, items);
           const item = arr.forEach((arg0) => {
-            items.push(callback(arg0, arg1));
+            items.push(outer1_7(arg0, closure_1));
           });
           return items;
         } else {
@@ -98,20 +99,19 @@ function _dropUndefinedKeys(arr, get) {
           const _Object = Object;
           if (tmp) {
             const obj = {};
-            const markFunctionWrapped = obj;
             const result1 = get.set(arr, obj);
             const _Object2 = Object;
             const keys = Object.keys(arr);
             const item1 = keys.forEach((arg0) => {
-              if (undefined !== arg0[arg0]) {
-                obj[arg0] = callback(tmp, arg1);
+              if (undefined !== arr[arg0]) {
+                obj[arg0] = outer1_7(tmp, closure_1);
               }
             });
             return obj;
           } else {
             return arr;
           }
-          const tmp = constructor === Object || undefined === constructor;
+          tmp = constructor === Object || undefined === constructor;
         }
       }
     }
@@ -167,7 +167,7 @@ arg5.objectify = function objectify(arg0) {
         const prototype = constructor.prototype;
         string = new constructor(arg0);
       }
-      const obj = arg1(arg6[2]);
+      obj = require(804) /* isBuiltin */;
     }
   }
   return string;

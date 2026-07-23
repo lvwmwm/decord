@@ -1,53 +1,63 @@
-// Module ID: 10447
-// Function ID: 80641
+// Module ID: 10457
+// Function ID: 80691
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 27, 9478, 9313, 4469, 1838, 4217, 566, 22, 620, 5465, 1327, 6978, 10458, 9312, 10459, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 10447 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10457 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { findNodeHandle } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { updateShouldShowJumpToPresentButton as closure_7 } from "getChatInputContainerHeight";
+import closure_8 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_10 from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,54 +94,42 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const findNodeHandle = arg1(dependencyMap[2]).findNodeHandle;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).updateShouldShowJumpToPresentButton;
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/messages/native/MessagesHooks.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/messages/native/MessagesHooks.tsx");
 
 export const useMessageAuthorActivities = function useMessageAuthorActivities(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const items = [arg0];
   const memo = React.useMemo(() => {
     const obj = {};
-    const arg0 = obj;
-    const item = arg0.forEach((author) => {
+    const item = obj.forEach((author) => {
       if (tmp) {
         obj[author.author.id] = null;
       }
     });
     return obj;
   }, items);
-  const importDefault = memo;
   const items1 = [closure_10];
   const items2 = [memo];
-  return arg1(dependencyMap[8]).useStateFromStoresObject(items1, () => memo(closure_2[9]).mapValues(memo, (arg0, arg1) => primaryActivity.getPrimaryActivity(arg1)), items2);
+  return _require(566).useStateFromStoresObject(items1, () => memo(outer1_2[9]).mapValues(memo, (arg0, arg1) => outer2_10.getPrimaryActivity(arg1)), items2);
 };
 export const useFetchMessageApplications = function useFetchMessageApplications(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const items = [arg0];
   const memo = React.useMemo(() => {
     const set = new Set();
-    const arg0 = set;
-    const item = arg0.forEach((applicationId) => {
+    const item = set.forEach((applicationId) => {
       if (tmp) {
         set.add(applicationId.applicationId);
       }
     });
     return Array.from(set);
   }, items);
-  const importDefault = memo;
   let closure_2 = React.useRef([]);
   const items1 = [memo];
   const effect = React.useEffect(() => {
     if (!obj.areArraysShallowEqual(memo, ref.current)) {
       const obj2 = memo(ref[11]);
-      const found = memo(ref[9])(memo).filter(arg0(ref[12]).isNotNullish);
+      const found = memo(ref[9])(memo).filter(callback(ref[12]).isNotNullish);
       const arr = memo(ref[9])(memo);
       const applications = obj2.fetchApplications(found.uniq().value(), false);
       ref.current = memo;
@@ -140,13 +138,13 @@ export const useFetchMessageApplications = function useFetchMessageApplications(
   }, items1);
 };
 export const useFetchVoiceChannelInviteStartTimes = function useFetchVoiceChannelInviteStartTimes(stateFromStores4) {
-  const arg1 = stateFromStores4;
-  const items = [closure_9, closure_8];
+  const _require = stateFromStores4;
+  const items = [_createForOfIteratorHelperLoose, closure_8];
   const items1 = [stateFromStores4];
-  const stateFromStoresObject = arg1(dependencyMap[8]).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = _require(566).useStateFromStoresObject(items, () => {
     let iter3;
     const obj = {};
-    const tmp = callback(arg0.values());
+    const tmp = outer1_11(stateFromStores4.values());
     const iter = tmp();
     let iter2 = iter;
     if (!iter.done) {
@@ -154,34 +152,33 @@ export const useFetchVoiceChannelInviteStartTimes = function useFetchVoiceChanne
         let value = iter2.value;
         let tmp3 = tmp2;
         if (null != value.guild) {
-          let tmp4 = closure_0;
-          let tmp5 = closure_2;
-          let obj2 = closure_0(closure_2[13]);
+          let tmp4 = stateFromStores4;
+          let tmp5 = outer1_2;
+          let obj2 = stateFromStores4(outer1_2[13]);
           tmp3 = tmp2;
           if (obj2.isVoiceChannelInvite(value)) {
             let id = value.guild.id;
-            let tmp6 = closure_9;
-            let tmp7 = null != closure_9.getGuild(id);
+            let tmp6 = outer1_9;
+            let tmp7 = null != outer1_9.getGuild(id);
             if (tmp7) {
-              let tmp8 = closure_8;
-              tmp7 = !closure_8.isUnavailable(id);
+              let tmp8 = outer1_8;
+              tmp7 = !outer1_8.isUnavailable(id);
             }
             obj[id] = tmp7;
             tmp3 = id;
           }
         }
         iter3 = tmp();
-        let tmp2 = tmp3;
+        tmp2 = tmp3;
         iter2 = iter3;
       } while (!iter3.done);
     }
     return obj;
   }, items1);
-  const importDefault = stateFromStoresObject;
   const items2 = [stateFromStores4, stateFromStoresObject];
   const effect = React.useEffect(() => {
     let iter3;
-    const tmp = callback(arg0.values());
+    const tmp = outer1_11(stateFromStores4.values());
     const iter = tmp();
     let iter2 = iter;
     if (!iter.done) {
@@ -189,30 +186,30 @@ export const useFetchVoiceChannelInviteStartTimes = function useFetchVoiceChanne
         let value = iter2.value;
         let tmp3 = tmp2;
         if (null != value.guild) {
-          let tmp4 = closure_0;
-          let tmp5 = closure_2;
-          let obj = closure_0(closure_2[13]);
+          let tmp4 = stateFromStores4;
+          let tmp5 = outer1_2;
+          let obj = stateFromStores4(outer1_2[13]);
           tmp3 = tmp2;
           if (obj.isVoiceChannelInvite(value)) {
             let id = value.guild.id;
-            let tmp6 = closure_1;
-            let result = true !== closure_1[id];
+            let tmp6 = stateFromStoresObject;
+            let result = true !== stateFromStoresObject[id];
             if (!result) {
-              let tmp8 = closure_6;
-              result = closure_6.hasRequestedStartTimes(id);
+              let tmp8 = outer1_6;
+              result = outer1_6.hasRequestedStartTimes(id);
             }
             tmp3 = id;
             if (!result) {
-              let tmp9 = closure_0;
-              let tmp10 = closure_2;
-              let obj2 = closure_0(closure_2[14]);
+              let tmp9 = stateFromStores4;
+              let tmp10 = outer1_2;
+              let obj2 = stateFromStores4(outer1_2[14]);
               let channelInfo = obj2.fetchChannelInfo(id);
               tmp3 = id;
             }
           }
         }
         iter3 = tmp();
-        let tmp2 = tmp3;
+        tmp2 = tmp3;
         iter2 = iter3;
       } while (!iter3.done);
     }
@@ -220,24 +217,27 @@ export const useFetchVoiceChannelInviteStartTimes = function useFetchVoiceChanne
 };
 export const useMessagesLifecycle = function useMessagesLifecycle(screenIndex) {
   let channelId;
-  ({ messages: closure_0, isMessagesReady: closure_1, oldestUnreadMessageId: closure_2, channelId } = screenIndex);
-  let closure_3 = channelId;
+  let _isNativeReflectConstruct;
+  let dependencyMap;
+  let findNodeHandle;
+  let importDefault;
+  let require;
+  ({ messages: require, isMessagesReady: importDefault, oldestUnreadMessageId: dependencyMap, channelId } = screenIndex);
   screenIndex = screenIndex.screenIndex;
-  const React = screenIndex;
-  ({ updateRows: closure_5, scrollToMessageId: closure_6 } = screenIndex);
-  const effect = React.useEffect(() => {
-    let obj = callback(closure_2[15]);
-    obj = { messages: callback, isMessagesReady: closure_1, oldestUnreadMessageId: closure_2, channelId, screenIndex, updateRows: closure_5, scrollToMessageId: closure_6 };
+  ({ updateRows: findNodeHandle, scrollToMessageId: _isNativeReflectConstruct } = screenIndex);
+  const effect = screenIndex.useEffect(() => {
+    let obj = outer1_0(outer1_2[15]);
+    obj = { messages: closure_0, isMessagesReady: closure_1, oldestUnreadMessageId: closure_2, channelId, screenIndex, updateRows: closure_5, scrollToMessageId: _isNativeReflectConstruct };
     obj.syncMessageDisplay(obj);
-    callback(closure_2[15]).recordTimings(channelId, callback);
+    outer1_0(outer1_2[15]).recordTimings(channelId, closure_0);
   }, []);
   const items = [channelId, screenIndex];
-  const effect1 = React.useEffect(() => () => {
-    callback(closure_3, closure_4, false);
+  const effect1 = screenIndex.useEffect(() => () => {
+    outer2_7(outer1_3, outer1_4, false);
   }, items);
 };
 export const useScrollState = function useScrollState() {
-  const tmp = callback(React.useState({}), 2);
+  const tmp = callback(React.useState({ animated: false, hasHandledScroll: false, isAtBottom: false, isNearBottom: false, isNearTop: false, decelerating: false, dragging: false, hasMoreMessagesAfterForLastUpdate: false, _loaded: false }), 2);
   let closure_0 = tmp[1];
   const items = [
     tmp[0],
@@ -245,7 +245,7 @@ export const useScrollState = function useScrollState() {
       const callback = arg0;
       callback((arg0) => {
         const merged = Object.assign(arg0);
-        const merged1 = Object.assign(arg0);
+        const merged1 = Object.assign(closure_0);
         return {};
       });
     }, [])
@@ -253,26 +253,25 @@ export const useScrollState = function useScrollState() {
   return items;
 };
 export const useChatUpdatesQueue = function useChatUpdatesQueue(ref5, callback) {
-  callback = ref5;
-  const importDefault = callback;
+  let closure_0 = ref5;
+  let closure_1 = callback;
   const items = [ref5, callback];
   const memo = React.useMemo(() => {
-    let tmp = arg1(memo[16]);
+    let tmp = callback(memo[16]);
     tmp = new tmp(() => {
       let tmp = null;
-      if (null !== ref.current) {
-        tmp = callback2(ref.current);
+      if (null !== outer1_0.current) {
+        tmp = outer2_5(outer1_0.current);
       }
       return tmp;
     }, (arg0) => {
-      callback(arg0);
+      outer1_1(arg0);
     });
     return tmp;
   }, items);
-  const dependencyMap = memo;
   const items1 = [memo];
   const effect = React.useEffect(() => () => {
-    closure_2.cleanup();
+    outer1_2.cleanup();
   }, items1);
   return memo;
 };

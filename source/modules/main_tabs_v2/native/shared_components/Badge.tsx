@@ -1,21 +1,22 @@
-// Module ID: 9121
-// Function ID: 71434
+// Module ID: 9128
+// Function ID: 71475
 // Name: DEFAULT_BADGE_SIZE
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 
-// Module 9121 (DEFAULT_BADGE_SIZE)
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj1 = arg1(dependencyMap[3]);
+// Module 9128 (DEFAULT_BADGE_SIZE)
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BRAND };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
 obj.badge = obj;
-obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_ACTIVE };
-obj.badgeClassic = obj1;
-obj.mask = { <string:3596066964>: null, <string:3638417373>: null };
-let closure_2 = obj1.createStyles(obj);
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function Badge(size) {
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+obj.badgeClassic = _createForOfIteratorHelperLoose;
+obj.mask = { alignItems: "center", justifyContent: "center" };
+let closure_2 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function Badge(size) {
   let badgeStyle;
   let style;
   let num = size.size;
@@ -40,14 +41,14 @@ const memoResult = importAll(dependencyMap[0]).memo(function Badge(size) {
     tmp3 = obj;
   }
   obj = { style: items, children: tmp4(tmp5, { style: items1 }) };
-  const items = [tmp.mask, tmp3, style];
-  const items1 = [flag ? tmp.badgeClassic : tmp.badge, , ];
+  items = [tmp.mask, tmp3, style];
+  items1 = [flag ? tmp.badgeClassic : tmp.badge, , ];
   obj = { height: num, width: num, borderRadius: num / 2 };
   items1[1] = obj;
   items1[2] = badgeStyle;
-  return <View {...obj} />;
+  return <View height={num} width={num} borderRadius={num / 2} />;
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/Badge.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/Badge.tsx");
 
 export default memoResult;
 export const DEFAULT_BADGE_SIZE = 12;

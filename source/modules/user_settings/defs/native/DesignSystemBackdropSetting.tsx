@@ -1,25 +1,25 @@
-// Module ID: 14342
-// Function ID: 108276
+// Module ID: 14456
+// Function ID: 110429
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14457, 2]
 
-// Module 14342 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14456 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Backdrop";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_BACKDROP,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_BACKDROP,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14457) /* BackdropCard */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemBackdropSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemBackdropSetting.tsx");
 
 export default route;

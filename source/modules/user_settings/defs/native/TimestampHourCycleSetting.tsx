@@ -1,45 +1,47 @@
-// Module ID: 14190
-// Function ID: 107409
+// Module ID: 14304
+// Function ID: 109565
 // Name: radio
-// Dependencies: []
+// Dependencies: [31, 7662, 3803, 1212, 1282, 10095, 3817, 2]
 
-// Module 14190 (radio)
-let closure_2 = importAll(dependencyMap[0]);
-let obj = arg1(dependencyMap[5]);
-obj = {
+// Module 14304 (radio)
+import result from "result";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.dyamEI);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.dyamEI);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.APPEARANCE,
-  useValue: arg1(dependencyMap[2]).TimestampHourCycle.useSetting,
+  parent: require("MobileSetting").MobileSetting.APPEARANCE,
+  useValue: require("explicitContentFromProto").TimestampHourCycle.useSetting,
   onValueChange: function onTimestampHourCycleChange(arg0) {
-    const TimestampHourCycle = arg1(dependencyMap[2]).TimestampHourCycle;
+    const TimestampHourCycle = require(3803) /* explicitContentFromProto */.TimestampHourCycle;
     TimestampHourCycle.updateSetting(Number(arg0));
   },
   useOptions: function useDMsMessagePreviewsOptions() {
     return React.useMemo(() => {
       let obj = {};
-      const intl = callback(closure_1[3]).intl;
-      obj.label = intl.string(callback(closure_1[3]).t.FMWYvb);
-      obj.value = callback(closure_1[4]).TimestampHourCycle.AUTO;
+      const intl = outer1_0(outer1_1[3]).intl;
+      obj.label = intl.string(outer1_0(outer1_1[3]).t.FMWYvb);
+      obj.value = outer1_0(outer1_1[4]).TimestampHourCycle.AUTO;
       const items = [obj, , ];
       obj = {};
-      const intl2 = callback(closure_1[3]).intl;
-      obj.label = intl2.string(callback(closure_1[3]).t.p8NOwi);
-      obj.value = callback(closure_1[4]).TimestampHourCycle.H12;
+      const intl2 = outer1_0(outer1_1[3]).intl;
+      obj.label = intl2.string(outer1_0(outer1_1[3]).t.p8NOwi);
+      obj.value = outer1_0(outer1_1[4]).TimestampHourCycle.H12;
       items[1] = obj;
       obj = {};
-      const intl3 = callback(closure_1[3]).intl;
-      obj.label = intl3.string(callback(closure_1[3]).t.+o/sOo);
-      obj.value = callback(closure_1[4]).TimestampHourCycle.H23;
+      const intl3 = outer1_0(outer1_1[3]).intl;
+      obj.label = intl3.string(outer1_0(outer1_1[3]).t["+o/sOo"]);
+      obj.value = outer1_0(outer1_1[4]).TimestampHourCycle.H23;
       items[2] = obj;
       return items;
     }, []);
   },
-  usePredicate: arg1(dependencyMap[6]).supportsSystemDateFormatter
+  usePredicate: require("__DiscordCreateDateFormatter").supportsSystemDateFormatter
 };
-const radio = obj.createRadio(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/TimestampHourCycleSetting.tsx");
+createToggle = createToggle.createRadio(createToggle);
+const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_settings/defs/native/TimestampHourCycleSetting.tsx");
 
-export default radio;
+export default createToggle;

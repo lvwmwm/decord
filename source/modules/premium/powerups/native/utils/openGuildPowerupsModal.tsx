@@ -1,13 +1,12 @@
-// Module ID: 11502
-// Function ID: 89634
+// Module ID: 11512
+// Function ID: 89684
 // Name: openGuildPowerupsModal
-// Dependencies: []
+// Dependencies: [4337, 11513, 1934, 2]
 // Exports: default
 
-// Module 11502 (openGuildPowerupsModal)
-let closure_3 = 0;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsModal.tsx");
+// Module 11512 (openGuildPowerupsModal)
+let c3 = 0;
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/premium/powerups/native/utils/openGuildPowerupsModal.tsx");
 
 export default function openGuildPowerupsModal(navigationParams) {
   let obj = Object.create(null);
@@ -17,10 +16,10 @@ export default function openGuildPowerupsModal(navigationParams) {
   if (null != merged.autoOpenPerkId) {
     obj = {};
     const merged1 = Object.assign(merged);
-    const sum = closure_3 + 1;
-    closure_3 = sum;
+    const sum = c3 + 1;
+    c3 = sum;
     obj["autoOpenRequestId"] = sum;
     tmp3 = obj;
   }
-  importDefault(dependencyMap[0]).pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), tmp3, "guild_powerups_modal_key", navigationParams.navigationParams);
+  importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(11513, dependencyMap.paths), tmp3, "guild_powerups_modal_key", navigationParams.navigationParams);
 };

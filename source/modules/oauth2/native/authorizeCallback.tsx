@@ -1,16 +1,18 @@
-// Module ID: 10823
-// Function ID: 84050
+// Module ID: 10833
+// Function ID: 84099
 // Name: authorizeCallback
-// Dependencies: []
+// Dependencies: [10621, 4337, 8965, 1934, 1443, 10834, 4096, 668, 3827, 2]
 // Exports: default
 
-// Module 10823 (authorizeCallback)
-const _module = require(dependencyMap[0]);
-({ OAUTH2_SUCCESS_RESULT_MODAL_KEY: closure_3, OAUTH2_ERROR_RESULT_MODAL_KEY: closure_4 } = _module);
-let closure_5 = /oauth2\/authorized/;
-let closure_6 = /oauth2\/error/;
-const _module1 = require(dependencyMap[9]);
-const result = _module1.fileFinishedImporting("modules/oauth2/native/authorizeCallback.tsx");
+// Module 10833 (authorizeCallback)
+import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
+
+let closure_3;
+let closure_4;
+({ OAUTH2_SUCCESS_RESULT_MODAL_KEY: closure_3, OAUTH2_ERROR_RESULT_MODAL_KEY: closure_4 } = OAUTH2_AUTHORIZE_MODAL_KEY);
+const re5 = /oauth2\/authorized/;
+const re6 = /oauth2\/error/;
+const result = require("error").fileFinishedImporting("modules/oauth2/native/authorizeCallback.tsx");
 
 export default function authorizeCallback(arg0) {
   let _location;
@@ -21,7 +23,7 @@ export default function authorizeCallback(arg0) {
   let wasDeepLink;
   ({ location: _location, canceled, wasDeepLink } = arg0);
   if (null != _location) {
-    let toURLSafeResult = importDefault(dependencyMap[4]).toURLSafe(_location);
+    let toURLSafeResult = importDefault(1443).toURLSafe(_location);
     if (null == toURLSafeResult) {
       toURLSafeResult = {};
     }
@@ -31,12 +33,12 @@ export default function authorizeCallback(arg0) {
         if (null != pathname) {
           if (null != pathname.match(closure_5)) {
             let obj = { application: tmp, guild: tmp2 };
-            importDefault(dependencyMap[1]).pushLazy(require(dependencyMap[3])(dependencyMap[5], dependencyMap.paths), obj, closure_3);
+            importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(10834, dependencyMap.paths), obj, closure_3);
           } else if (null != pathname.match(closure_6)) {
             if (!canceled) {
               obj = {};
               let str;
-              const obj7 = importDefault(dependencyMap[1]);
+              const obj7 = importDefault(4337);
               if (null != searchParams) {
                 str = "error_description";
                 const str2 = searchParams.get("error_description");
@@ -55,28 +57,28 @@ export default function authorizeCallback(arg0) {
                 str = str1;
               }
               obj.error = str;
-              obj7.pushLazy(require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), obj, closure_4);
-              const tmp25 = require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths);
+              obj7.pushLazy(require(1934) /* maybeLoadBundle */(8965, dependencyMap.paths), obj, closure_4);
+              const tmp25 = require(1934) /* maybeLoadBundle */(8965, dependencyMap.paths);
             }
           }
         }
       }
-      const obj4 = importDefault(dependencyMap[4]);
+      obj4 = importDefault(1443);
     }
     if (wasDeepLink) {
-      const browserManagerSelectedBrowser = require(dependencyMap[6]).getBrowserManagerSelectedBrowser();
-      wasDeepLink = browserManagerSelectedBrowser === require(dependencyMap[7]).WebBrowserType.IN_APP;
-      const obj5 = require(dependencyMap[6]);
+      const browserManagerSelectedBrowser = require(4096) /* removeInAppBrowserCloseSubscription */.getBrowserManagerSelectedBrowser();
+      wasDeepLink = browserManagerSelectedBrowser === require(668) /* keys */.WebBrowserType.IN_APP;
+      const obj5 = require(4096) /* removeInAppBrowserCloseSubscription */;
     }
-    const obj2 = importDefault(dependencyMap[4]);
+    const obj2 = importDefault(1443);
     let SAFARI;
     if (wasDeepLink) {
-      SAFARI = require(dependencyMap[7]).WebBrowserType.SAFARI;
+      SAFARI = require(668) /* keys */.WebBrowserType.SAFARI;
     }
-    importDefault(dependencyMap[8]).openURL(_location, SAFARI);
-    const obj6 = importDefault(dependencyMap[8]);
+    importDefault(3827).openURL(_location, SAFARI);
+    const obj6 = importDefault(3827);
   } else if (!canceled) {
-    obj = importDefault(dependencyMap[1]);
-    obj.pushLazy(require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), undefined, closure_4);
+    obj = importDefault(4337);
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(8965, dependencyMap.paths), undefined, closure_4);
   }
 };

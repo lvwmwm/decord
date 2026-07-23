@@ -1,54 +1,55 @@
-// Module ID: 14447
-// Function ID: 108897
+// Module ID: 14561
+// Function ID: 111050
 // Name: useGoreContentNonFriendsDmSettingValue
-// Dependencies: []
+// Dependencies: [6769, 7662, 13727, 6835, 13731, 13724, 1212, 1282, 10095, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 14447 (useGoreContentNonFriendsDmSettingValue)
+// Module 14561 (useGoreContentNonFriendsDmSettingValue)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
 function useGoreContentNonFriendsDmSettingValue() {
-  const parentalControlledGoreContentSettings = arg1(dependencyMap[2]).useParentalControlledGoreContentSettings();
+  const parentalControlledGoreContentSettings = require(13727) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
   let prop;
   if (null != parentalControlledGoreContentSettings) {
     prop = parentalControlledGoreContentSettings.goreContentNonFriendDm;
   }
   let tmp3 = null;
   if (null != prop) {
-    tmp3 = arg1(dependencyMap[3]).redactionSettingToRenderedString(prop)();
-    const obj2 = arg1(dependencyMap[3]);
+    tmp3 = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(prop)();
+    const obj2 = require(6835) /* timeoutAttachmentsAndEmbedsForMessage */;
   }
   return tmp3;
 }
 function onGoreContentNonFriendsDmOnPress() {
-  const selectedTeenId = selectedTeenId.getSelectedTeenId();
-  const arg1 = selectedTeenId;
+  selectedTeenId = selectedTeenId.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = arg1(dependencyMap[4]);
+    let obj = selectedTeenId(13731);
     obj = {};
-    const intl = arg1(dependencyMap[6]).intl;
-    obj.title = intl.string(arg1(dependencyMap[6]).t.16/3Bi);
+    const intl = selectedTeenId(1212).intl;
+    obj.title = intl.string(selectedTeenId(1212).t["16/3Bi"]);
     obj.subtitle = getTitle();
     obj.handlePress = function handlePress(goreContentNonFriendDm) {
-      let obj = selectedTeenId(closure_1[4]);
+      let obj = selectedTeenId(outer1_1[4]);
       obj = { goreContentNonFriendDm };
       return obj.updateGoreContentSetting(selectedTeenId, obj);
     };
     obj.currentValue = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
-    const items = [arg1(dependencyMap[7]).ExplicitContentRedaction.SHOW];
+    const items = [selectedTeenId(1282).ExplicitContentRedaction.SHOW];
     obj.excluded = items;
-    const result = arg1(dependencyMap[5]).handleSensitiveMediaFilterPress(obj);
-    const obj2 = arg1(dependencyMap[5]);
+    const result = selectedTeenId(13724).handleSensitiveMediaFilterPress(obj);
+    const obj2 = selectedTeenId(13724);
   }
 }
 function getTitle() {
-  const intl = arg1(dependencyMap[6]).intl;
-  return intl.string(arg1(dependencyMap[6]).t.Yh+HX1);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  return intl.string(require(1212) /* getSystemLocale */.t["Yh+HX1"]);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[8]);
-obj = { useTitle: getTitle, parent: arg1(dependencyMap[1]).MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS, useTrailing: useGoreContentNonFriendsDmSettingValue, onPress: onGoreContentNonFriendsDmOnPress, unsearchable: true };
-const pressable = obj.createPressable(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsGoreMediaFiltersNonFriendsDMsSetting.tsx");
+createToggle = { useTitle: getTitle, parent: require("MobileSetting").MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS, useTrailing: useGoreContentNonFriendsDmSettingValue, onPress: onGoreContentNonFriendsDmOnPress, unsearchable: true };
+createToggle = createToggle.createPressable(createToggle);
+let result = require("useParentalControlledExplicitContentSettings").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsGoreMediaFiltersNonFriendsDMsSetting.tsx");
 
-export default pressable;
+export default createToggle;
 export { useGoreContentNonFriendsDmSettingValue };
 export { onGoreContentNonFriendsDmOnPress };

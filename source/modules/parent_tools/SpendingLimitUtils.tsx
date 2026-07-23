@@ -1,12 +1,11 @@
-// Module ID: 13616
-// Function ID: 103167
+// Module ID: 13730
+// Function ID: 105323
 // Name: spendingLimitEqual
-// Dependencies: []
+// Dependencies: [2]
 // Exports: getCurrencySymbol, getNextRenewalDateLabel, sanitizeAmountInput, spendingLimitEqual
 
-// Module 13616 (spendingLimitEqual)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/parent_tools/SpendingLimitUtils.tsx");
+// Module 13730 (spendingLimitEqual)
+const result = require("set").fileFinishedImporting("modules/parent_tools/SpendingLimitUtils.tsx");
 
 export const spendingLimitEqual = function spendingLimitEqual(amount, amount2) {
   let tmp = null == amount && null == amount2;
@@ -23,7 +22,7 @@ export const spendingLimitEqual = function spendingLimitEqual(amount, amount2) {
 export const getNextRenewalDateLabel = function getNextRenewalDateLabel() {
   const date = new Date();
   const uTCFullYear = date.getUTCFullYear();
-  const dateTimeFormat = new Intl.DateTimeFormat(undefined, {});
+  const dateTimeFormat = new Intl.DateTimeFormat(undefined, { dateStyle: "short", timeZone: "UTC" });
   return dateTimeFormat.format(new Date(Date.UTC(uTCFullYear, date.getUTCMonth() + 1, 1)));
 };
 export const getCurrencySymbol = function getCurrencySymbol(formatted) {

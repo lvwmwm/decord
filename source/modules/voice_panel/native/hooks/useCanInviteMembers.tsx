@@ -1,27 +1,29 @@
-// Module ID: 15667
-// Function ID: 119693
+// Module ID: 15784
+// Function ID: 121866
 // Name: useCanInviteMembers
-// Dependencies: []
+// Dependencies: [1348, 3758, 482, 624, 2]
 // Exports: useCanInviteMembers
 
-// Module 15667 (useCanInviteMembers)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const Permissions = arg1(dependencyMap[2]).Permissions;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/voice_panel/native/hooks/useCanInviteMembers.tsx");
+// Module 15784 (useCanInviteMembers)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { Permissions } from "sum";
+
+const require = arg1;
+const result = require("sum").fileFinishedImporting("modules/voice_panel/native/hooks/useCanInviteMembers.tsx");
 
 export const useCanInviteMembers = function useCanInviteMembers(channelId) {
-  const arg1 = channelId;
-  const items = [closure_2, closure_3];
+  const _require = channelId;
+  const items = [_isNativeReflectConstruct, closure_3];
   const items1 = [channelId];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const channel = channel.getChannel(arg0);
+  return _require(624).useStateFromStores(items, () => {
+    const channel = outer1_2.getChannel(closure_0);
     let canResult = null != channel;
     if (canResult) {
-      canResult = closure_3.can(constants.CONNECT, channel);
+      canResult = outer1_3.can(outer1_4.CONNECT, channel);
     }
     if (canResult) {
-      canResult = closure_3.can(constants.CREATE_INSTANT_INVITE, channel);
+      canResult = outer1_3.can(outer1_4.CREATE_INSTANT_INVITE, channel);
     }
     return canResult;
   }, items1);

@@ -1,13 +1,14 @@
-// Module ID: 9774
-// Function ID: 76011
+// Module ID: 9781
+// Function ID: 76052
 // Name: getCurrentUserProfile
-// Dependencies: []
+// Dependencies: [1849, 6856, 2]
 // Exports: default
 
-// Module 9774 (getCurrentUserProfile)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_profile/utils/getCurrentUserProfile.tsx");
+// Module 9781 (getCurrentUserProfile)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/user_profile/utils/getCurrentUserProfile.tsx");
 
 export default function getCurrentUserProfile(arg0) {
   let id = currentUser.getCurrentUser();

@@ -1,11 +1,10 @@
-// Module ID: 3936
-// Function ID: 32452
+// Module ID: 3938
+// Function ID: 32457
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 3936 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/rive/native/ThemeAwareNitroWishlistingWumpus.riv.js");
+// Module 3938 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/ThemeAwareNitroWishlistingWumpus.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/53eb00aa300595b54d999e60d501f621ad4399918c568561f74b536b6f37c0ab.riv";
 export const metadata = { fileBytes: 82814 };

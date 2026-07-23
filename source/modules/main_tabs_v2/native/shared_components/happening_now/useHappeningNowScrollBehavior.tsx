@@ -1,13 +1,14 @@
-// Module ID: 14815
-// Function ID: 111671
+// Module ID: 14931
+// Function ID: 113839
 // Name: useHappeningNowScrollBehavior
-// Dependencies: []
+// Dependencies: [57, 31, 2]
 // Exports: default, useHappeningNowScrollSnapping
 
-// Module 14815 (useHappeningNowScrollBehavior)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowScrollBehavior.tsx");
+// Module 14931 (useHappeningNowScrollBehavior)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowScrollBehavior.tsx");
 
 export default function useHappeningNowScrollBehavior(arg0, arg1) {
   const callback = arg0;
@@ -17,8 +18,8 @@ export default function useHappeningNowScrollBehavior(arg0, arg1) {
   const items = [arg0, arg1];
   const items1 = [
     React.useCallback((nativeEvent) => {
-      callback(nativeEvent.nativeEvent.contentOffset.x < nativeEvent);
-      arg1(nativeEvent.nativeEvent.contentOffset.x, nativeEvent.nativeEvent.layoutMeasurement.width);
+      callback2(nativeEvent.nativeEvent.contentOffset.x < _slicedToArray);
+      callback(nativeEvent.nativeEvent.contentOffset.x, nativeEvent.nativeEvent.layoutMeasurement.width);
     }, items),
     tmp[0]
   ];

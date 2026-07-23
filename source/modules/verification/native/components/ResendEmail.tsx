@@ -1,44 +1,47 @@
-// Module ID: 9181
-// Function ID: 71916
+// Module ID: 9188
+// Function ID: 71957
 // Name: ResendEmail
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1342, 1849, 653, 33, 4130, 1456, 566, 44, 9189, 9181, 5807, 4126, 1212, 4543, 5590, 3831, 2]
 // Exports: default
 
-// Module 9181 (ResendEmail)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const VerificationModalScenes = arg1(dependencyMap[5]).VerificationModalScenes;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-let closure_11 = arg1(dependencyMap[7]).createStyles({ container: { "Null": "construct", "Null": "isArray", "Bool(true)": "isArray", "Bool(true)": "isArray" }, title: {}, body: {}, resend: { name: "column", opacity: "flex-end" }, change: { name: null, opacity: null } });
-const obj = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/verification/native/components/ResendEmail.tsx");
+// Module 9188 (ResendEmail)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { VerificationModalScenes } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_9;
+const require = arg1;
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, padding: 16, justifyContent: "center", alignItems: "center" }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, lineHeight: 18, textAlign: "center" }, resend: { marginTop: 16, width: "100%" }, change: { marginTop: 8, width: "100%" } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/verification/native/components/ResendEmail.tsx");
 
 export default function ResendEmail() {
+  let dependencyMap;
   let tmp7;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[8]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
-  let obj1 = arg1(dependencyMap[9]);
+  let tmp = callback3();
+  let obj = navigation(1456);
+  navigation = obj.useNavigation();
+  let obj1 = navigation(566);
   const items = [closure_7];
   const stateFromStores = obj1.useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
-    verified(closure_2[10])(null != currentUser, "ResendEmail: user cannot be undefined");
+    const currentUser = outer1_7.getCurrentUser();
+    verified(outer1_2[10])(null != currentUser, "ResendEmail: user cannot be undefined");
     return currentUser;
   });
   const verified = stateFromStores.verified;
-  const importDefault = verified;
-  let obj2 = arg1(dependencyMap[9]);
-  const items1 = [closure_6];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => action.getAction());
-  let obj3 = importDefault(dependencyMap[11]);
+  let obj2 = navigation(566);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_6.getAction());
+  let obj3 = verified(9189);
   let tmp5 = !obj3.isEmailReverification(stateFromStores1);
-  [tmp7, closure_2] = callback(React.useState(false), 2);
-  let callback = React.useRef(verified);
+  [tmp7, dependencyMap] = callback(React.useState(false), 2);
+  callback = React.useRef(verified);
   const items2 = [verified];
   const effect = React.useEffect(() => {
     let tmp = verified;
@@ -46,59 +49,59 @@ export default function ResendEmail() {
       tmp = false === ref.current;
     }
     if (tmp) {
-      verified(closure_2[12]).close();
-      const obj = verified(closure_2[12]);
+      verified(outer1_2[12]).close();
+      const obj = verified(outer1_2[12]);
     }
   }, items2);
   const effect1 = React.useEffect(() => {
-    closure_3.current = verified;
+    _slicedToArray.current = verified;
   });
   const items3 = [navigation];
   obj = { style: tmp.container };
   callback = React.useCallback(() => {
-    navigation.push(constants.ENTER_EMAIL);
+    navigation.push(outer1_8.ENTER_EMAIL);
   }, items3);
-  const items4 = [callback2(arg1(dependencyMap[13]).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
-  obj = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.title };
-  const intl = arg1(dependencyMap[15]).intl;
-  obj.children = intl.string(arg1(dependencyMap[15]).t.fUtddV);
-  items4[1] = callback2(arg1(dependencyMap[14]).Text, obj);
-  obj1 = { style: tmp.body };
-  const intl2 = arg1(dependencyMap[15]).intl;
+  const items4 = [callback2(navigation(5807).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+  let intl = navigation(1212).intl;
+  obj.children = intl.string(navigation(1212).t.fUtddV);
+  items4[1] = callback2(navigation(4126).Text, obj);
+  obj1 = { style: tmp.body, variant: "text-sm/medium", color: "text-default" };
+  const intl2 = navigation(1212).intl;
   if (tmp7) {
     obj2 = { email: stateFromStores.email };
-    let formatResult = intl2.format(tmp14(tmp15[15]).t.JqLgQL, obj2);
+    let formatResult = intl2.format(tmp14(1212).t.JqLgQL, obj2);
   } else {
-    formatResult = intl2.string(tmp14(tmp15[15]).t.tSXg8O);
+    formatResult = intl2.string(tmp14(1212).t.tSXg8O);
   }
   obj1.children = formatResult;
-  items4[2] = callback2(arg1(dependencyMap[14]).Text, obj1);
+  items4[2] = callback2(navigation(4126).Text, obj1);
   obj3 = { style: tmp.resend };
   const obj4 = {};
-  const intl3 = arg1(dependencyMap[15]).intl;
-  obj4.text = intl3.string(arg1(dependencyMap[15]).t.WnX4J2);
+  const intl3 = navigation(1212).intl;
+  obj4.text = intl3.string(navigation(1212).t.WnX4J2);
   obj4.variant = "primary";
   obj4.onPress = function onPress() {
     callback(true);
-    let obj = verified(callback[17]);
+    let obj = verified(outer1_2[17]);
     obj.verifyResend();
     obj = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT" };
-    const intl = navigation(callback[15]).intl;
-    obj.content = intl.string(navigation(callback[15]).t.84yeoz);
-    verified(callback[18]).open(obj);
+    const intl = navigation(outer1_2[15]).intl;
+    obj.content = intl.string(navigation(outer1_2[15]).t["84yeoz"]);
+    verified(outer1_2[18]).open(obj);
   };
   obj4.grow = true;
-  obj3.children = callback2(arg1(dependencyMap[16]).Button, obj4);
+  obj3.children = callback2(navigation(4543).Button, obj4);
   items4[3] = callback2(View, obj3);
   if (tmp5) {
     const obj5 = { style: tmp.change };
     const obj6 = {};
-    const intl4 = arg1(dependencyMap[15]).intl;
-    obj6.text = intl4.string(arg1(dependencyMap[15]).t.Vm8akB);
+    const intl4 = navigation(1212).intl;
+    obj6.text = intl4.string(navigation(1212).t.Vm8akB);
     obj6.variant = "secondary";
     obj6.onPress = callback;
     obj6.grow = true;
-    obj5.children = callback2(arg1(dependencyMap[16]).Button, obj6);
+    obj5.children = callback2(navigation(4543).Button, obj6);
     tmp5 = callback2(View, obj5);
   }
   items4[4] = tmp5;

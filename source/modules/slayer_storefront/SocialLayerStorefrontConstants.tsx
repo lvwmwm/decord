@@ -1,11 +1,11 @@
-// Module ID: 5609
-// Function ID: 47795
+// Module ID: 5614
+// Function ID: 47821
 // Name: STOREFRONT_MARKETING_GUILD_ID
-// Dependencies: [0, 0]
+// Dependencies: [1856, 2]
 // Exports: getChannelsGameShopPrefix, isGameShopPath
 
-// Module 5609 (STOREFRONT_MARKETING_GUILD_ID)
-import { Environments } from "__exportStarResult1";
+// Module 5614 (STOREFRONT_MARKETING_GUILD_ID)
+import { Environments } from "Environments";
 
 let str = "1193841000108531764";
 if (window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING) {
@@ -15,8 +15,8 @@ let tmp2 = "1400977487940292751";
 if (window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING) {
   tmp2 = null;
 }
-let closure_0 = /^\/(?:channels\/\d+\/)?game-shop(?:\/|$)/;
-const result = require("__exportStarResult1").fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConstants.tsx");
+const re0 = /^\/(?:channels\/\d+\/)?game-shop(?:\/|$)/;
+const result = require("set").fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConstants.tsx");
 
 export const STOREFRONT_MARKETING_GUILD_ID = str;
 export const STOREFRONT_MARKETING_GUILD_ID_TEST = tmp2;
@@ -24,7 +24,6 @@ export const SOCIAL_LAYER_CLAIM_PURCHASED_ITEM_MODAL_TYPE = "Social Layer Claim 
 export const SOCIAL_LAYER_GIFT_CODE_CLAIM_MODAL_TYPE = "Social Layer Gift Code Claim Modal";
 export const SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_TYPE = "Social Layer Storefront Product Details Modal";
 export const MARVEL_RIVALS_APPLICATION_ID = "1346069614634864772";
-export const GAME_SHOP_ANNOUNCEMENT_MODAL_VERSION = 3;
 export const SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM = 14;
 export const getChannelsGameShopPrefix = function getChannelsGameShopPrefix(arg0) {
   return "/channels/" + arg0 + "/game-shop";

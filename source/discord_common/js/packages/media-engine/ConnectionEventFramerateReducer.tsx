@@ -1,24 +1,28 @@
-// Module ID: 4277
-// Function ID: 37468
+// Module ID: 4281
+// Function ID: 37500
 // Name: logger
-// Dependencies: []
+// Dependencies: [6, 7, 4191, 4, 4227, 2]
 
-// Module 4277 (logger)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ SpeakingFlags: closure_4, VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: closure_5 } = arg1(dependencyMap[2]));
-const logger = new arg1(dependencyMap[3]).Logger("ConnectionEventFramerateReducer");
-const tmp2 = arg1(dependencyMap[2]);
-const tmp4 = () => {
+// Module 4281 (logger)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import DesktopSources from "DesktopSources";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ SpeakingFlags: closure_4, VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: closure_5 } = DesktopSources);
+const logger = new require("getMediaEngineImpl").Logger("ConnectionEventFramerateReducer");
+const tmp4 = (() => {
   class ConnectionEventFramerateReducer {
     constructor(arg0, arg1) {
-      ConnectionEventFramerateReducer = this;
-      tmp = closure_2(this, ConnectionEventFramerateReducer);
+      self = this;
+      tmp = outer1_2(this, self);
       this.connection = arg0;
       this.sinkWants = arg1;
       this.handleSpeaking = (arg0, arg1) => {
         if (arg0 === self.connection.userId) {
-          self.userSpeakingChange(arg1 === constants.NONE);
+          self.userSpeakingChange(arg1 === outer2_4.NONE);
         }
       };
       this.handleSelfMute = (isMuted) => {
@@ -29,14 +33,13 @@ const tmp4 = () => {
           const result1 = self.updateRemoteWantsFramerate();
         }
       };
-      enableNativeLoggerResult = closure_6.enableNativeLogger(true);
-      onResult = arg0.on(ConnectionEventFramerateReducer(closure_1[4]).BaseConnectionEvent.Speaking, this.handleSpeaking);
-      onResult1 = arg0.on(ConnectionEventFramerateReducer(closure_1[4]).BaseConnectionEvent.Mute, this.handleSelfMute);
+      enableNativeLoggerResult = outer1_6.enableNativeLogger(true);
+      onResult = arg0.on(ConnectionEventFramerateReducer(outer1_1[4]).BaseConnectionEvent.Speaking, this.handleSpeaking);
+      onResult1 = arg0.on(ConnectionEventFramerateReducer(outer1_1[4]).BaseConnectionEvent.Mute, this.handleSelfMute);
       initializeResult = this.initialize();
       return;
     }
   }
-  const arg1 = ConnectionEventFramerateReducer;
   let obj = {
     key: "initialize",
     value() {
@@ -47,22 +50,22 @@ const tmp4 = () => {
   obj = {
     key: "userSpeakingChange",
     value(arg0) {
-      const self = this;
-      const ConnectionEventFramerateReducer = this;
+      let self = this;
+      self = this;
       const connection = this.connection;
       if (!connection.hasDesktopSource()) {
-        const result = self.destroyFramerateScaleFactorTimers();
+        let result = self.destroyFramerateScaleFactorTimers();
         if (arg0) {
           const _setTimeout = setTimeout;
           self.framerateReductionTimeout = setTimeout(() => {
             if (!self.connection.destroyed) {
               const _HermesInternal = HermesInternal;
-              closure_6.info("BaseConnection.userSpeakingChange: Reduced framerate after " + closure_5 + " ms.");
+              outer2_6.info("BaseConnection.userSpeakingChange: Reduced framerate after " + outer2_5 + " ms.");
               self.framerateReductionTimeout = undefined;
               self.sinkWants.isMuted = true;
               const result = self.updateRemoteWantsFramerate();
             }
-          }, closure_5);
+          }, outer1_5);
         } else if (self.sinkWants.isMuted) {
           self.sinkWants.isMuted = false;
           const result1 = self.updateRemoteWantsFramerate();
@@ -87,7 +90,7 @@ const tmp4 = () => {
     key: "updateRemoteWantsFramerate",
     value() {
       const connection = this.connection;
-      connection.updateVideoQuality([]);
+      connection.updateVideoQuality(["remoteSinkWantsMaxFramerate"]);
     }
   };
   items[4] = {
@@ -97,7 +100,7 @@ const tmp4 = () => {
     }
   };
   return callback(ConnectionEventFramerateReducer, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("../discord_common/js/packages/media-engine/ConnectionEventFramerateReducer.tsx");
+})();
+let result = require("DesktopSources").fileFinishedImporting("../discord_common/js/packages/media-engine/ConnectionEventFramerateReducer.tsx");
 
 export default tmp4;

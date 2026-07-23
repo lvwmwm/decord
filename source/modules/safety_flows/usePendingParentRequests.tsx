@@ -1,53 +1,60 @@
-// Module ID: 16456
-// Function ID: 127093
+// Module ID: 16573
+// Function ID: 129267
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 6769, 1849, 6770, 566, 7123, 11061, 2]
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 16456 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16573 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { UserLinkStatus } from "items";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +65,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,39 +91,32 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const UserLinkStatus = arg1(dependencyMap[4]).UserLinkStatus;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/safety_flows/usePendingParentRequests.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/safety_flows/usePendingParentRequests.tsx");
 
 export const useDerivedPendingRequests = function useDerivedPendingRequests(pending_requests, stateFromStores1) {
-  stateFromStores1 = pending_requests;
+  const _require = pending_requests;
   const dependencyMap = stateFromStores1;
-  const items = [closure_4];
-  const stateFromStores = stateFromStores1(dependencyMap[5]).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
-  let closure_2 = stateFromStores;
-  const obj = stateFromStores1(dependencyMap[5]);
+  let items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_4.getLinkedUsers());
+  let obj = _require(566);
   const items1 = [closure_5];
-  stateFromStores1 = stateFromStores1(dependencyMap[5]).useStateFromStores(items1, () => {
-    const currentUser = currentUser.getCurrentUser();
+  stateFromStores1 = _require(566).useStateFromStores(items1, () => {
+    const currentUser = outer1_5.getCurrentUser();
     let id;
     if (null != currentUser) {
       id = currentUser.id;
     }
     return id;
   });
-  const React = stateFromStores1;
   const items2 = [stateFromStores1, stateFromStores, stateFromStores1, pending_requests];
-  return React.useMemo(() => {
-    if (arg1) {
+  return stateFromStores1.useMemo(() => {
+    if (closure_1) {
       const _Map = Map;
-      const map = new Map(arg0.map((parent_id) => {
+      const map = new Map(pending_requests.map((parent_id) => {
         const items = [parent_id.parent_id, parent_id];
         return items;
       }));
-      const items = [];
+      let items = [];
       const _Object = Object;
       const values = Object.values(stateFromStores);
       let num = 0;
@@ -130,24 +130,24 @@ export const useDerivedPendingRequests = function useDerivedPendingRequests(pend
           let tmp20 = tmp13;
           let tmp21 = tmp14;
           if (null != tmp15) {
-            let tmp30 = closure_6;
+            let tmp30 = outer1_6;
             tmp16 = tmp9;
             tmp17 = tmp10;
             tmp18 = tmp11;
             tmp19 = tmp12;
             tmp20 = tmp13;
             tmp21 = tmp14;
-            if (tmp15.link_status === closure_6.PENDING) {
-              let tmp31 = closure_3;
+            if (tmp15.link_status === outer1_6.PENDING) {
+              let tmp31 = stateFromStores1;
               tmp16 = tmp9;
               tmp17 = tmp10;
               tmp18 = tmp11;
               tmp19 = tmp12;
               tmp20 = tmp13;
               tmp21 = tmp14;
-              if (tmp15.requestor_id !== closure_3) {
-                let tmp32 = closure_5;
-                let user = closure_5.getUser(tmp15.user_id);
+              if (tmp15.requestor_id !== stateFromStores1) {
+                let tmp32 = outer1_5;
+                let user = outer1_5.getUser(tmp15.user_id);
                 let value = map.get(tmp15.user_id);
                 let obj = { parent_id: tmp15.user_id };
                 let username;
@@ -196,21 +196,24 @@ export const useDerivedPendingRequests = function useDerivedPendingRequests(pend
             }
           }
           num = num + 1;
-          let tmp9 = tmp16;
-          let tmp10 = tmp17;
-          let tmp11 = tmp18;
-          let tmp12 = tmp19;
-          let tmp13 = tmp20;
-          let tmp14 = tmp21;
+          tmp9 = tmp16;
+          tmp10 = tmp17;
+          tmp11 = tmp18;
+          tmp12 = tmp19;
+          tmp13 = tmp20;
+          tmp14 = tmp21;
         } while (num < values.length);
       }
       return items;
     } else {
-      return arg0;
+      return pending_requests;
     }
   }, items2);
 };
 export const usePendingRequestListController = function usePendingRequestListController(pendingRequests) {
+  let c6;
+  let c7;
+  let dependencyMap;
   let isAcceptLoading;
   let isDeclineLoading;
   let linkedUsersProcessed;
@@ -219,16 +222,15 @@ export const usePendingRequestListController = function usePendingRequestListCon
   let tmp13;
   let tmp14;
   pendingRequests = pendingRequests.pendingRequests;
-  const arg1 = pendingRequests;
-  ({ linkedUsersProcessed, onActionError: closure_1 } = pendingRequests);
-  let closure_5;
-  let closure_6;
-  let closure_7;
-  let _arrayLikeToArray;
-  let obj = arg1(dependencyMap[6]);
+  ({ linkedUsersProcessed, onActionError: dependencyMap } = pendingRequests);
+  let c5;
+  c6 = undefined;
+  c7 = undefined;
+  let callback;
+  let obj = pendingRequests(7123);
   const hasMaxConnections = obj.useHasMaxConnections();
-  const tmp2 = callback(React.useState(null), 2);
-  let callback = tmp2[1];
+  let tmp2 = callback(acceptLinkRequest.useState(null), 2);
+  callback = tmp2[1];
   obj = {
     onSuccess() {
       return callback2(null);
@@ -238,54 +240,51 @@ export const usePendingRequestListController = function usePendingRequestListCon
       callback();
     }
   };
-  const familyCenterActions = arg1(dependencyMap[7]).useFamilyCenterActions(obj);
-  const acceptLinkRequest = familyCenterActions.acceptLinkRequest;
-  const React = acceptLinkRequest;
+  const familyCenterActions = pendingRequests(11061).useFamilyCenterActions(obj);
+  acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
-  let closure_4 = declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let tmp4 = isAcceptLoading;
   if (!isAcceptLoading) {
     tmp4 = isDeclineLoading;
   }
-  closure_5 = tmp4;
-  const obj2 = arg1(dependencyMap[7]);
-  [closure_6, closure_7] = callback(React.useState(() => new Set()), 2);
-  callback = React.useCallback((arg0) => {
-    const pendingRequests = arg0;
-    _undefined((has) => {
-      if (has.has(has)) {
+  c5 = tmp4;
+  const obj2 = pendingRequests(11061);
+  [c6, c7] = callback(acceptLinkRequest.useState(() => new Set()), 2);
+  callback = acceptLinkRequest.useCallback((arg0) => {
+    let closure_0 = arg0;
+    _undefined2((has) => {
+      if (has.has(closure_0)) {
         return has;
       } else {
         const _Set = Set;
         const set = new Set(has);
-        set.add(has);
+        set.add(closure_0);
         return set;
       }
     });
   }, []);
-  _arrayLikeToArray = callback;
-  const items = [tmp4, callback, acceptLinkRequest];
+  let items = [tmp4, callback, acceptLinkRequest];
   const items1 = [tmp4, callback, declineLinkRequest];
-  const callback1 = React.useCallback((arg0) => {
-    if (!tmp4) {
+  const callback1 = acceptLinkRequest.useCallback((arg0) => {
+    if (!c5) {
       callback(arg0);
+      callback2(arg0);
       acceptLinkRequest(arg0);
-      const tmp4 = callback2(arg0);
     }
   }, items);
-  const callback2 = React.useCallback((arg0) => {
-    if (!tmp4) {
+  const callback2 = acceptLinkRequest.useCallback((arg0) => {
+    if (!c5) {
       callback(arg0);
+      callback2(arg0);
       declineLinkRequest(arg0);
-      const tmp4 = callback2(arg0);
     }
   }, items1);
-  const tmp5 = callback(React.useState(() => new Set()), 2);
-  [tmp10, tmp11] = callback(React.useState(pendingRequests), 2);
-  const tmp9 = callback(React.useState(pendingRequests), 2);
-  [tmp13, tmp14] = callback(React.useState(pendingRequests), 2);
-  const tmp12 = callback(React.useState(pendingRequests), 2);
+  const tmp5 = callback(acceptLinkRequest.useState(() => new Set()), 2);
+  [tmp10, tmp11] = callback(acceptLinkRequest.useState(pendingRequests), 2);
+  const tmp9 = callback(acceptLinkRequest.useState(pendingRequests), 2);
+  [tmp13, tmp14] = callback(acceptLinkRequest.useState(pendingRequests), 2);
+  const tmp12 = callback(acceptLinkRequest.useState(pendingRequests), 2);
   if (linkedUsersProcessed) {
     if (!tmp15[0]) {
       tmp16(true);
@@ -294,20 +293,20 @@ export const usePendingRequestListController = function usePendingRequestListCon
         let done;
         let iter2;
         const map = new Map();
-        const tmp = _undefined(arg0);
+        const tmp = _undefined2(arg0);
         let iter = tmp();
         if (!iter.done) {
           do {
             let value = iter.value;
-            let tmp2 = closure_6;
-            if (closure_6.has(value.parent_id)) {
+            let tmp2 = _undefined;
+            if (_undefined.has(value.parent_id)) {
               let result = map.set(value.parent_id, value);
             }
             iter2 = tmp();
             iter = iter2;
           } while (!iter2.done);
         }
-        const tmp4 = _undefined(pendingRequests);
+        const tmp4 = _undefined2(pendingRequests);
         let iter3 = tmp4();
         if (!iter3.done) {
           do {
@@ -332,7 +331,7 @@ export const usePendingRequestListController = function usePendingRequestListCon
         const items = [parent_id.parent_id, parent_id];
         return items;
       }));
-      const tmp = _undefined(pendingRequests);
+      const tmp = _undefined2(pendingRequests);
       let iter = tmp();
       if (!iter.done) {
         do {
@@ -348,21 +347,20 @@ export const usePendingRequestListController = function usePendingRequestListCon
   }
 };
 export const usePendingRequestResolution = function usePendingRequestResolution(parent_id) {
-  const arg1 = parent_id;
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const tmp = linkedUsers.getLinkedUsers()[closure_0];
+  const _require = parent_id;
+  let obj = _require(stateFromStores[5]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => {
+    const tmp = outer1_4.getLinkedUsers()[closure_0];
     let link_status;
     if (null != tmp) {
       link_status = tmp.link_status;
     }
     return link_status;
   });
-  const dependencyMap = stateFromStores;
   const tmp2 = callback(React.useState(() => {
     let str = "connected";
-    if (stateFromStores !== constants.ACTIVE) {
+    if (stateFromStores !== outer1_6.ACTIVE) {
       if (null == stateFromStores) {
         let str2 = null;
       } else {

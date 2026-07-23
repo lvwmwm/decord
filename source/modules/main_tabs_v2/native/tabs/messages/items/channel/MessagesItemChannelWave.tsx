@@ -1,20 +1,22 @@
-// Module ID: 14792
-// Function ID: 111481
-// Dependencies: []
+// Module ID: 14908
+// Function ID: 113649
+// Dependencies: [31, 33, 4543, 1212, 4126, 2]
 
-// Module 14792
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function MessagesItemChannelWave(hasNameplate) {
+// Module 14908
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const memoResult = require("result").memo(function MessagesItemChannelWave(hasNameplate) {
   let flag = hasNameplate.hasNameplate;
   if (flag === undefined) {
     flag = false;
   }
   let obj = {};
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.text = intl.string(arg1(dependencyMap[3]).t.n8nU4W);
-  obj = { "Null": null, "Null": null, "Null": null, hasSkip: null, style: { marginTop: 3 } };
-  obj.icon = jsx(arg1(dependencyMap[4]).Text, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl.string(require(1212) /* getSystemLocale */.t.n8nU4W);
+  obj = { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" };
+  obj.icon = jsx(require(4126) /* Text */.Text, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
   let str = "secondary";
   if (flag) {
     str = "secondary-overlay";
@@ -22,8 +24,8 @@ const memoResult = importAll(dependencyMap[0]).memo(function MessagesItemChannel
   obj.variant = str;
   obj.size = "sm";
   obj.onPress = hasNameplate.wavePressed;
-  return jsx(arg1(dependencyMap[2]).Button, obj);
+  return jsx(require(4543) /* Button */.Button, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelWave.tsx");
+const result = require("Button").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelWave.tsx");
 
 export default memoResult;

@@ -1,10 +1,18 @@
-// Module ID: 8339
-// Function ID: 66141
+// Module ID: 8345
+// Function ID: 66178
 // Name: recurrenceRuleToServer
-// Dependencies: []
+// Dependencies: [1194, 1354, 8346, 8349, 2]
 // Exports: convertToFakeGuildEvent, getInitialGuildEventData, isEditingEvent
 
-// Module 8339 (recurrenceRuleToServer)
+// Module 8345 (recurrenceRuleToServer)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 function recurrenceRuleToServer(recurrenceRule) {
   let byMonthDay;
   let tmp = null;
@@ -58,10 +66,8 @@ function isExistingGuildEvent(initialGuildEvent) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ GuildScheduledEventEntityTypes: closure_3, GuildScheduledEventStatus: closure_4, GuildScheduledEventPrivacyLevel: closure_5, FAKE_EVENT_ID: closure_6 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_scheduled_events/utils/EditGuildEventUtils.tsx");
+({ GuildScheduledEventEntityTypes: closure_3, GuildScheduledEventStatus: closure_4, GuildScheduledEventPrivacyLevel: closure_5, FAKE_EVENT_ID: closure_6 } = GUILD_EVENT_MAX_NAME_LENGTH);
+const result = require("getNextBucketedTime").fileFinishedImporting("modules/guild_scheduled_events/utils/EditGuildEventUtils.tsx");
 
 export const EditGuildEventScreens = { CHANNEL_SELECTOR: "ChannelSelector", DETAILS: "Details", PREVIEW: "Preview" };
 export const isEditingEvent = function isEditingEvent(initialGuildEvent) {
@@ -155,9 +161,9 @@ export const getInitialGuildEventData = function getInitialGuildEventData(initia
     scheduled_start_time = initialGuildEvent.scheduled_start_time;
   }
   if (null == scheduled_start_time) {
-    const initialEventStartDate = targetChannel(dependencyMap[2]).getInitialEventStartDate();
+    const initialEventStartDate = require(8346) /* getNextBucketedTime */.getInitialEventStartDate();
     scheduled_start_time = initialEventStartDate.toISOString();
-    const obj2 = targetChannel(dependencyMap[2]);
+    const obj2 = require(8346) /* getNextBucketedTime */;
   }
   obj.scheduledStartTime = scheduled_start_time;
   let entity_type;
@@ -216,12 +222,12 @@ export const getInitialGuildEventData = function getInitialGuildEventData(initia
       entity_type1 = initialGuildEvent.entity_type;
     }
     if (entity_type1 === constants.EXTERNAL) {
-      const locationFromEvent = targetChannel(dependencyMap[3]).getLocationFromEvent(initialGuildEvent);
+      const locationFromEvent = require(8349) /* _getLocationFromEvent */.getLocationFromEvent(initialGuildEvent);
       if (null != locationFromEvent) {
         obj = { location: locationFromEvent };
         obj.entityMetadata = obj;
       }
-      const obj4 = targetChannel(dependencyMap[3]);
+      const obj4 = require(8349) /* _getLocationFromEvent */;
     }
     return obj;
   }

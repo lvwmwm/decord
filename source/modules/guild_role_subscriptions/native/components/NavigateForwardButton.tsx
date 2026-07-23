@@ -1,33 +1,35 @@
-// Module ID: 13996
-// Function ID: 106384
+// Module ID: 14110
+// Function ID: 108540
 // Name: NavigateForwardButton
-// Dependencies: [4294967295, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 33, 4130, 689, 4660, 4126, 1273, 14111, 2]
 // Exports: default
 
-// Module 13996 (NavigateForwardButton)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14110 (NavigateForwardButton)
+import "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { "Bool(true)": -352059390, "Bool(true)": -984547326, "Bool(true)": -1469300479, "Bool(true)": -347013118, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_MOD_NORMAL };
-__exportStarResult1.container = __exportStarResult1;
-__exportStarResult1.text = { flexGrow: 1 };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/guild_role_subscriptions/native/components/NavigateForwardButton.tsx");
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, flexDirection: "row", padding: 16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.text = { flexGrow: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/native/components/NavigateForwardButton.tsx");
 
 export default function NavigateForwardButton(arg0) {
   let onPress;
   let text;
   ({ onPress, text } = arg0);
-  const tmp = __exportStarResult1();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container, onPress };
-  obj = { "Null": "isArray", "Null": "isArray", alignItems: "isArray", style: tmp.text, children: text };
-  const items = [callback(arg1(dependencyMap[5]).Text, obj), ];
-  obj = { source: importDefault(dependencyMap[7]) };
-  items[1] = callback(arg1(dependencyMap[6]).Icon, obj);
+  obj = { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", children: text };
+  const items = [callback(require(4126) /* Text */.Text, obj), ];
+  obj = { source: importDefault(14111) };
+  items[1] = callback(require(1273) /* Button */.Icon, obj);
   obj.children = items;
-  return callback2(arg1(dependencyMap[4]).PressableHighlight, obj);
+  return callback2(require(4660) /* PressableBase */.PressableHighlight, obj);
 };

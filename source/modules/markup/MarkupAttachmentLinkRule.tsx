@@ -1,13 +1,13 @@
-// Module ID: 4572
-// Function ID: 40084
-// Dependencies: []
+// Module ID: 4576
+// Function ID: 40116
+// Dependencies: [3829, 2]
 
-// Module 4572
-let closure_0 = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
+// Module 4576
+const re0 = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
 let obj = {};
 obj = {
-  order: importDefault(dependencyMap[0]).defaultRules.url.order - 0.5,
-  requiredFirstCharacters: [78862721847422450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000],
+  order: require("t").defaultRules.url.order - 0.5,
+  requiredFirstCharacters: ["h"],
   match(arg0) {
     return regex.exec(arg0);
   },
@@ -17,7 +17,6 @@ obj = {
   }
 };
 obj.attachmentLink = obj;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/markup/MarkupAttachmentLinkRule.tsx");
+const result = require("set").fileFinishedImporting("modules/markup/MarkupAttachmentLinkRule.tsx");
 
 export default obj;

@@ -1,12 +1,15 @@
 // Module ID: 904
-// Function ID: 9942
+// Function ID: 9943
 // Name: addConsoleBreadcrumb
-// Dependencies: []
+// Dependencies: [65, 863, 801, 895, 825, 896, 884, 798, 809]
 
 // Module 904 (addConsoleBreadcrumb)
+import _toConsumableArray from "_toConsumableArray";
+import setupIntegration from "setupIntegration";
+
 function addConsoleBreadcrumb(level, arguments) {
-  let obj = { category: "console", data: obj };
-  obj = { arguments, logger: "console", level: require(dependencyMap[5]).severityLevelFromString(level), message: formatConsoleArgs(arguments) };
+  obj = { category: "console", data: obj };
+  obj = { arguments, logger: "console", level: require(896) /* severityLevelFromString */.severityLevelFromString(level), message: formatConsoleArgs(arguments) };
   if ("assert" === level) {
     if (false === arguments[0]) {
       const substr = arguments.slice(1);
@@ -19,27 +22,25 @@ function addConsoleBreadcrumb(level, arguments) {
       obj.data.arguments = substr;
     }
   }
-  const obj3 = require(dependencyMap[5]);
+  const obj3 = require(896) /* severityLevelFromString */;
   obj = { input: arguments, level };
-  require(dependencyMap[6]).addBreadcrumb(obj, obj);
+  require(884) /* addBreadcrumb */.addBreadcrumb(obj, obj);
 }
 function formatConsoleArgs(arg0) {
-  if ("util" in require(dependencyMap[7]).GLOBAL_OBJ) {
-    if ("function" === typeof require(dependencyMap[7]).GLOBAL_OBJ.util.format) {
-      const util = require(dependencyMap[7]).GLOBAL_OBJ.util;
+  if ("util" in require(798).GLOBAL_OBJ) {
+    if ("function" === typeof require(798).GLOBAL_OBJ.util.format) {
+      const util = require(798).GLOBAL_OBJ.util;
       const format = util.format;
-      let applyResult = format.apply(util, callback(arg0));
+      let applyResult = format.apply(util, _toConsumableArray(arg0));
     }
     return applyResult;
   }
-  applyResult = require(dependencyMap[8]).safeJoin(arg0, " ");
+  applyResult = require(809) /* isMatchingPattern */.safeJoin(arg0, " ");
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[1]);
 
 export { addConsoleBreadcrumb };
-export const consoleIntegration = _module.defineIntegration(() => {
+export const consoleIntegration = setupIntegration.defineIntegration(() => {
   let _Set = Set;
   if (arguments.length > 0) {
     if (undefined !== arguments[0]) {
@@ -47,23 +48,22 @@ export const consoleIntegration = _module.defineIntegration(() => {
     }
     let CONSOLE_LEVELS = {}.levels;
     if (!CONSOLE_LEVELS) {
-      CONSOLE_LEVELS = require(dependencyMap[2]).CONSOLE_LEVELS;
+      CONSOLE_LEVELS = _Set(801).CONSOLE_LEVELS;
     }
     const prototype = _Set.prototype;
     _Set = new _Set(CONSOLE_LEVELS);
-    const require = _Set;
     const obj = {
       name: "Console",
       setup(arg0) {
-          const _Set = arg0;
-          const result = _Set(closure_1[3]).addConsoleInstrumentationHandler((level) => {
+          let closure_0 = arg0;
+          const result = _Set(outer1_1[3]).addConsoleInstrumentationHandler((level) => {
             level = level.level;
-            let hasItem = level(closure_1[4]).getClient() === level;
+            let hasItem = _Set(outer2_1[4]).getClient() === set;
             if (hasItem) {
-              hasItem = level.has(level);
+              hasItem = set.has(level);
             }
             if (hasItem) {
-              callback(level, level.args);
+              outer2_3(level, level.args);
             }
           });
         }

@@ -1,7 +1,7 @@
 // Module ID: 711
-// Function ID: 8728
+// Function ID: 8729
 // Name: Hash
-// Dependencies: []
+// Dependencies: [712, 720, 721, 722, 723]
 
 // Module 711 (Hash)
 class Hash {
@@ -14,15 +14,15 @@ class Hash {
     clearResult = self.clear();
     for (let num2 = 0; num2 < num; num2 = num2 + 1) {
       tmp2 = global[num2];
-      result = self.set(tmp2[0], tmp2[1]);
+      result = require("hashClear");
     }
     return;
   }
 }
-Hash.prototype.clear = require(dependencyMap[0]);
-Hash.prototype.delete = require(dependencyMap[1]);
-Hash.prototype.get = require(dependencyMap[2]);
-Hash.prototype.has = require(dependencyMap[3]);
-Hash.prototype.set = require(dependencyMap[4]);
+Hash.prototype.clear = require("hashClear");
+Hash.prototype.delete = require("hashDelete");
+Hash.prototype.get = require("hashGet");
+Hash.prototype.has = require("hashHas");
+Hash.prototype.set = require("hashSet");
 
 export default Hash;

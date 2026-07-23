@@ -1,10 +1,12 @@
 // Module ID: 111
 // Function ID: 1608
 // Name: accumulateDifferences
-// Dependencies: []
+// Dependencies: [65, 79]
 // Exports: stringifyValidationResult, validate
 
 // Module 111 (accumulateDifferences)
+import _toConsumableArray from "_toConsumableArray";
+
 function accumulateDifferences(items, arr2, arg2, arg3) {
   let tmp2;
   const keys = Object.keys();
@@ -33,14 +35,14 @@ function accumulateDifferences(items, arr2, arg2, arg3) {
             let tmp30 = tmp8;
             let tmp31 = tmp10;
             tmp2 = tmp12;
-            // continue
+            continue;
           }
         }
         let result = tmp33 === tmp8;
         if (!result) {
           let tmp14 = importAll;
           let tmp15 = dependencyMap;
-          let obj2 = importAll(dependencyMap[1]);
+          let obj2 = importAll(79);
           result = obj2.enableNativeCSSParsing();
         }
         let tmp16 = tmp8;
@@ -61,7 +63,7 @@ function accumulateDifferences(items, arr2, arg2, arg3) {
           let tmp20 = tmp8;
           let tmp21 = tmp10;
           tmp2 = tmp4;
-          // continue
+          continue;
         }
         continue;
       } else {
@@ -74,7 +76,7 @@ function accumulateDifferences(items, arr2, arg2, arg3) {
         obj.nativeValue = tmp33;
         arr2 = items.push(obj);
         tmp2 = tmp4;
-        // continue
+        continue;
       }
       continue;
     }
@@ -91,7 +93,6 @@ function ifObject(arg0) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
 
 export const validate = function validate(arg0, bubblingEventTypes, bubblingEventTypes2) {
   const items = [];
@@ -106,9 +107,9 @@ export const validate = function validate(arg0, bubblingEventTypes, bubblingEven
   }
   return obj1;
 };
-export const stringifyValidationResult = function stringifyValidationResult(arg0, validateResult) {
+export const stringifyValidationResult = function stringifyValidationResult(closure_0, validateResult) {
   const differences = validateResult.differences;
-  const items = ["StaticViewConfigValidator: Invalid static view config for '" + arg0 + "'.", ""];
+  const items = ["StaticViewConfigValidator: Invalid static view config for '" + closure_0 + "'.", ""];
   const combined = items.concat(callback(differences.map((arg0) => {
     let path;
     let type;
@@ -120,6 +121,6 @@ export const stringifyValidationResult = function stringifyValidationResult(arg0
       const _HermesInternal = HermesInternal;
       return "- '" + path.join(".") + "' is the wrong value.";
     }
-  })), [2060509169]);
+  })), [""]);
   return combined.join("\n");
 };

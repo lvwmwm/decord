@@ -1,11 +1,10 @@
-// Module ID: 5940
-// Function ID: 49843
+// Module ID: 5945
+// Function ID: 49872
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 5940 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CloudKeypadSpotIllustration-2x.png.js");
+// Module 5945 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CloudKeypadSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/c7c3a99ee65df6938ed0ab0ce672841587e8a52b278384f1ef1515110cfafe22.png";
 export const metadata = { fileBytes: 20137 };

@@ -1,20 +1,20 @@
-// Module ID: 10223
-// Function ID: 79006
-// Dependencies: []
+// Module ID: 10235
+// Function ID: 79078
+// Name: dispatcher
+// Dependencies: [686, 2]
 
-// Module 10223
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("actions/native/InAppNotificationActionCreators.tsx");
+// Module 10235 (dispatcher)
+const result = require("set").fileFinishedImporting("actions/native/InAppNotificationActionCreators.tsx");
 
 export default {
   enqueueNotification(notification) {
-    let obj = importDefault(dependencyMap[0]);
+    let obj = importDefault(686);
     obj = { type: "ENQUEUE_IN_APP_NOTIFICATION", notification };
     obj.dispatch(obj);
   },
   clearNotification() {
-    importDefault(dependencyMap[0]).wait(() => {
-      callback(closure_1[0]).dispatch({ type: "CLEAR_IN_APP_NOTIFICATION" });
+    importDefault(686).wait(() => {
+      outer1_0(outer1_1[0]).dispatch({ type: "CLEAR_IN_APP_NOTIFICATION" });
     });
   }
 };

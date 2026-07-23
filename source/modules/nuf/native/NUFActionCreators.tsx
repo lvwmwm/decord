@@ -1,28 +1,33 @@
-// Module ID: 11723
-// Function ID: 91028
+// Module ID: 11733
+// Function ID: 91077
 // Name: _startContactSyncForDiscoverability
-// Dependencies: []
+// Dependencies: [5, 11706, 4812, 1849, 11734, 653, 9227, 686, 4337, 11735, 1934, 11778, 11781, 11782, 668, 11709, 11713, 2]
 // Exports: closeDiscoverabilityModal, nextOnboardingStep, openDiscoverabilityModal, previousOnboardingStep, startContactSyncForDiscoverability, startOnboarding, toggleDiscoverabilityForUser, transitionToHubEmailConnectionModal, transitionToNUFGuildTemplatesModal
 
-// Module 11723 (_startContactSyncForDiscoverability)
+// Module 11733 (_startContactSyncForDiscoverability)
+import ME from "ME";
+import initialValues from "initialValues";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { NUF_DISCOVERABILITY_MODAL_KEY as closure_10 } from "NewUserTypes";
+import { PlatformTypes } from "ME";
+import { IN_APP_GUILD_TEMPLATES_MODAL_KEY as closure_12 } from "NUXGuildTemplatesAnalytics";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function _startContactSyncForDiscoverability() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _startContactSyncForDiscoverability = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ setAllowEmail: closure_4, setAllowSync: closure_5, setName: closure_6, useContactSyncModalStore: closure_7 } = arg1(dependencyMap[1]));
-let closure_8 = importDefault(dependencyMap[2]);
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).NUF_DISCOVERABILITY_MODAL_KEY;
-const PlatformTypes = arg1(dependencyMap[5]).PlatformTypes;
-let closure_12 = arg1(dependencyMap[6]).IN_APP_GUILD_TEMPLATES_MODAL_KEY;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/nuf/native/NUFActionCreators.tsx");
+({ setAllowEmail: closure_4, setAllowSync: closure_5, setName: closure_6, useContactSyncModalStore: closure_7 } = initialValues);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/nuf/native/NUFActionCreators.tsx");
 
 export const startOnboarding = function startOnboarding() {
-  importDefault(dependencyMap[7]).dispatch({ type: "ONBOARDING_START" });
+  importDefault(686).dispatch({ type: "ONBOARDING_START" });
 };
 export const nextOnboardingStep = function nextOnboardingStep(skip) {
   let flag = skip.skip;
@@ -33,31 +38,31 @@ export const nextOnboardingStep = function nextOnboardingStep(skip) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(686);
   obj = { type: "ONBOARDING_STEP", skip: flag, skipAttempt: flag2 };
   obj.dispatch(obj);
 };
 export const previousOnboardingStep = function previousOnboardingStep() {
-  importDefault(dependencyMap[7]).dispatch({});
+  importDefault(686).dispatch({ type: "ONBOARDING_STEP", back: true });
 };
 export const transitionToNUFGuildTemplatesModal = function transitionToNUFGuildTemplatesModal(SLIDE_IN) {
-  const arg1 = SLIDE_IN;
+  let closure_0 = SLIDE_IN;
   // CreateGeneratorClosureLongIndex (0x67)
-  importDefault(dependencyMap[8]).pushLazy(callback(tmp), {}, closure_12);
+  importDefault(4337).pushLazy(callback(tmp), {}, closure_12);
 };
 export const transitionToHubEmailConnectionModal = function transitionToHubEmailConnectionModal(SLIDE_IN, arg1) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(dependencyMap[11]);
+  let obj = importDefault(11778);
   obj = {
     onCloseExtra(arg0) {
       if (arg0) {
-        const result = callback(closure_2[12]).setNewUserFlowCompleted();
-        const obj3 = callback(closure_2[12]);
+        const result = outer1_0(outer1_2[12]).setNewUserFlowCompleted();
+        const obj3 = outer1_0(outer1_2[12]);
       } else {
-        let obj = callback2(closure_2[7]);
+        let obj = outer1_1(outer1_2[7]);
         obj = { type: "ONBOARDING_STEP" };
         obj.dispatch(obj);
       }
@@ -68,24 +73,24 @@ export const transitionToHubEmailConnectionModal = function transitionToHubEmail
 };
 export const openDiscoverabilityModal = function openDiscoverabilityModal() {
   // CreateGeneratorClosureLongIndex (0x67)
-  importDefault(dependencyMap[8]).pushLazy(callback(dependencyMap[8]), {}, closure_10);
+  importDefault(4337).pushLazy(callback(4337), {}, closure_10);
 };
 export const closeDiscoverabilityModal = function closeDiscoverabilityModal(skip) {
-  let obj = importDefault(dependencyMap[8]);
+  let obj = importDefault(4337);
   obj.popWithKey(closure_10);
   obj = { type: "ONBOARDING_STEP", skip };
-  importDefault(dependencyMap[7]).dispatch(obj);
+  importDefault(686).dispatch(obj);
 };
 export const startContactSyncForDiscoverability = function startContactSyncForDiscoverability(arg0) {
   return _startContactSyncForDiscoverability(...arguments);
 };
 export const toggleDiscoverabilityForUser = function toggleDiscoverabilityForUser() {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   let phone;
   if (null != currentUser) {
     phone = currentUser.phone;
   }
-  const state = state.getState();
+  state = state.getState();
   if (null != phone) {
     callback3(!tmp4);
   } else {

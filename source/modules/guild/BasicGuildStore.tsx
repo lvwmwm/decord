@@ -1,38 +1,39 @@
-// Module ID: 7638
-// Function ID: 61163
+// Module ID: 7644
+// Function ID: 61200
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 7638 (_isNativeReflectConstruct)
+// Module 7644 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = 0;
+let c5 = 0;
 let closure_6 = {};
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class BasicGuildStore {
     constructor() {
       self = this;
       tmp = BasicGuildStore(this, BasicGuildStore);
-      obj = closure_3(BasicGuildStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(BasicGuildStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,12 +42,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = BasicGuildStore;
   callback2(BasicGuildStore, Store);
   let obj = {
     key: "getGuild",
     value(arg0) {
-      if (null != closure_6[arg0]) {
+      if (null != outer1_6[arg0]) {
         if (!("type" in tmp)) {
           return tmp;
         }
@@ -71,20 +71,20 @@ let tmp2 = (Store) => {
   obj = {
     key: "getGuildOrStatus",
     value(arg0) {
-      return closure_6[arg0];
+      return outer1_6[arg0];
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getVersion",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   return callback(BasicGuildStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "BasicGuildStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   BASIC_GUILD_FETCH: function handleBasicGuildFetch(guildId) {
     closure_6[guildId.guildId] = { type: "loading" };
     return false;
@@ -98,6 +98,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[6]), {
     return false;
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild/BasicGuildStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild/BasicGuildStore.tsx");
 
 export default tmp2;

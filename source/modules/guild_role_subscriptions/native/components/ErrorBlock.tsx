@@ -1,15 +1,17 @@
-// Module ID: 11319
-// Function ID: 88091
+// Module ID: 11329
+// Function ID: 88141
 // Name: ErrorBlock
-// Dependencies: []
+// Dependencies: [31, 33, 11330, 2]
 // Exports: default
 
-// Module 11319 (ErrorBlock)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/ErrorBlock.tsx");
+// Module 11329 (ErrorBlock)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("getContainerStyles").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ErrorBlock.tsx");
 
 export default function ErrorBlock(children) {
-  const obj = { color: arg1(dependencyMap[2]).MessageBlockColors.RED, children: children.children };
-  return jsx(importDefault(dependencyMap[2]), obj);
+  const obj = { color: require(11330) /* getContainerStyles */.MessageBlockColors.RED, children: children.children };
+  return jsx(importDefault(11330), { color: require(11330) /* getContainerStyles */.MessageBlockColors.RED, children: children.children });
 };

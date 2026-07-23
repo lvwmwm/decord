@@ -1,25 +1,27 @@
-// Module ID: 5767
-// Function ID: 49402
+// Module ID: 5772
+// Function ID: 49429
 // Name: SearchField
-// Dependencies: []
+// Dependencies: [31, 33, 5773, 1212, 5786, 2]
 
-// Module 5767 (SearchField)
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
+// Module 5772 (SearchField)
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const forwardRefResult = require("result").forwardRef((arg0, ref) => {
   const obj = {};
-  const intl = ref(dependencyMap[3]).intl;
-  obj.placeholder = intl.string(ref(dependencyMap[3]).t.5h0QOP);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.placeholder = intl.string(require(1212) /* getSystemLocale */.t["5h0QOP"]);
   obj.returnKeyType = "search";
   obj.ref = ref;
   const merged = Object.assign(arg0);
   obj["autoCorrect"] = false;
   obj["autoCapitalize"] = "none";
   obj["accessibilityRole"] = "search";
-  obj["leadingIcon"] = ref(dependencyMap[4]).MagnifyingGlassIcon;
+  obj["leadingIcon"] = require(5786) /* MagnifyingGlassIcon */.MagnifyingGlassIcon;
   obj["isClearable"] = true;
-  return jsx(ref(dependencyMap[2]).TextField, obj);
+  return jsx(require(5773) /* TextField */.TextField, {});
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
+const result = require("TextField").fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
 
 export const SearchField = forwardRefResult;

@@ -1,22 +1,27 @@
-// Module ID: 11229
-// Function ID: 87412
+// Module ID: 11239
+// Function ID: 87462
 // Name: useFrecentApps
-// Dependencies: []
+// Dependencies: [31, 5066, 1849, 11240, 4155, 4566, 1881, 8189, 566, 5472, 8310, 11241, 8177, 7919, 10830, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 11229 (useFrecentApps)
+// Module 11239 (useFrecentApps)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { WATCH_YOUTUBE_PROD_APP_ID } from "items3";
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
+
+const require = arg1;
 function useFrecentApps(onlyActivityApps) {
   let context;
   let sectionDescriptors;
   ({ sectionDescriptors, context } = onlyActivityApps);
-  const arg1 = context;
   onlyActivityApps = onlyActivityApps.onlyActivityApps;
-  const importDefault = onlyActivityApps;
   const includeAuthorizedAppsAndFetch = onlyActivityApps.includeAuthorizedAppsAndFetch;
-  const importAll = includeAuthorizedAppsAndFetch;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items, () => memo.getFetchState());
-  const dependencyMap = stateFromStores;
+  let items = [memo];
+  stateFromStores = context(stateFromStores[8]).useStateFromStores(items, () => memo.getFetchState());
   const items1 = [includeAuthorizedAppsAndFetch, stateFromStores];
   const effect = React.useEffect(() => {
     let tmp = includeAuthorizedAppsAndFetch;
@@ -28,43 +33,41 @@ function useFrecentApps(onlyActivityApps) {
       const obj = onlyActivityApps(stateFromStores[9]);
     }
   }, items1);
-  const obj = arg1(dependencyMap[8]);
-  const items2 = [closure_5];
-  const stateFromStoresArray = arg1(dependencyMap[8]).useStateFromStoresArray(items2, () => {
+  let obj = context(stateFromStores[8]);
+  const items2 = [memo];
+  const stateFromStoresArray = context(stateFromStores[8]).useStateFromStoresArray(items2, () => {
     if (includeAuthorizedAppsAndFetch) {
       const newestTokens = memo.getNewestTokens();
       let found = newestTokens.filter((scopes) => {
         scopes = scopes.scopes;
-        return scopes.includes(callback(closure_3[10]).OAuth2Scopes.APPLICATIONS_COMMANDS);
+        return scopes.includes(context(stateFromStores[10]).OAuth2Scopes.APPLICATIONS_COMMANDS);
       });
     } else {
       found = [];
     }
     return found;
   });
-  const React = tmp5;
+  React = tmp5;
   const items3 = ["contextless" === context.type];
-  const found = sectionDescriptors.filter((id) => {
-    let tmp = id.id !== constants.FRECENCY;
+  let found = sectionDescriptors.filter((id) => {
+    let tmp = id.id !== outer1_10.FRECENCY;
     if (tmp) {
-      tmp = id.id !== constants.BUILT_IN;
+      tmp = id.id !== outer1_10.BUILT_IN;
     }
     return tmp;
   });
-  const memo = React.useMemo(() => {
+  memo = React.useMemo(() => {
     const items = [];
-    if (tmp5) {
-      items.push(closure_9);
+    if (result) {
+      items.push(outer1_9);
     }
     return items;
   }, items3);
-  closure_5 = memo;
-  const obj2 = arg1(dependencyMap[8]);
-  const sortApplicationsViaFrecency = arg1(dependencyMap[11]).useSortApplicationsViaFrecency(found, stateFromStoresArray);
-  const FetchState = sortApplicationsViaFrecency;
-  const obj3 = arg1(dependencyMap[11]);
-  const items4 = [closure_7];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items4, () => {
+  let obj2 = context(stateFromStores[8]);
+  const sortApplicationsViaFrecency = context(stateFromStores[11]).useSortApplicationsViaFrecency(found, stateFromStoresArray);
+  const obj3 = context(stateFromStores[11]);
+  const items4 = [stateFromStores1];
+  stateFromStores1 = context(stateFromStores[8]).useStateFromStores(items4, () => {
     const currentUser = stateFromStores1.getCurrentUser();
     let nsfwAllowed;
     if (null != currentUser) {
@@ -72,13 +75,12 @@ function useFrecentApps(onlyActivityApps) {
     }
     return nsfwAllowed;
   });
-  closure_7 = stateFromStores1;
   const items5 = [onlyActivityApps, sortApplicationsViaFrecency, context, memo, stateFromStores1];
   return React.useMemo(() => {
     function hideAgeRestricted(id) {
-      let tmp = false === closure_7;
+      let tmp = false === outer1_7;
       if (tmp) {
-        tmp = callback2(closure_3[12])(id.id);
+        tmp = onlyActivityApps(stateFromStores[12])(id.id);
       }
       return !tmp;
     }
@@ -87,37 +89,30 @@ function useFrecentApps(onlyActivityApps) {
       const found = filter((application) => {
         let isEmbeddedAppResult = null != application.application;
         if (isEmbeddedAppResult) {
-          isEmbeddedAppResult = callback(closure_3[13]).isEmbeddedApp(application.application);
-          const obj = callback(closure_3[13]);
+          isEmbeddedAppResult = context(stateFromStores[13]).isEmbeddedApp(application.application);
+          const obj = context(stateFromStores[13]);
         }
         if (isEmbeddedAppResult) {
-          isEmbeddedAppResult = null != callback(closure_3[14]).queryForPrimaryAppCommand(callback, application.id);
-          const obj2 = callback(closure_3[14]);
+          isEmbeddedAppResult = null != context(stateFromStores[14]).queryForPrimaryAppCommand(outer1_0, application.id);
+          const obj2 = context(stateFromStores[14]);
         }
         return isEmbeddedAppResult;
       });
-      const found1 = found.filter((id) => !closure_5.includes(id.id));
+      const found1 = found.filter((id) => !outer1_5.includes(id.id));
       let found2 = found1.filter(hideAgeRestricted);
     } else {
-      const found3 = filter((id) => !closure_5.includes(id.id));
+      const found3 = filter((id) => !outer1_5.includes(id.id));
       found2 = found3.filter(hideAgeRestricted);
     }
     return found2;
   }, items5);
 }
-let closure_4 = importAll(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const FetchState = arg1(dependencyMap[1]).FetchState;
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-const WATCH_YOUTUBE_PROD_APP_ID = arg1(dependencyMap[4]).WATCH_YOUTUBE_PROD_APP_ID;
-const tmp2 = arg1(dependencyMap[5]);
-const BuiltInSectionId = tmp2.BuiltInSectionId;
+const BuiltInSectionId = TRUE_OPTION_NAME.BuiltInSectionId;
 let obj = {};
-const items = [arg1(dependencyMap[6]).ApplicationCommandType.CHAT, arg1(dependencyMap[6]).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+let items = [require("PermissionOverwriteType").ApplicationCommandType.CHAT, require("PermissionOverwriteType").ApplicationCommandType.PRIMARY_ENTRY_POINT];
 obj.commandTypes = items;
-obj = { justifyContent: "httpServerLocation", sk: "hash", radii: "httpServerLocation", limit: tmp2.DISCOVERY_COMMANDS_QUERY_LIMIT };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/app_launcher/hooks/useAppLauncherFrecents.tsx");
+obj = { placeholderCount: 0, limit: TRUE_OPTION_NAME.DISCOVERY_COMMANDS_QUERY_LIMIT, includeFrecency: true };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/hooks/useAppLauncherFrecents.tsx");
 
 export default function useAppLauncherFrecentCommandsAndApps(arg0) {
   let context;
@@ -125,26 +120,21 @@ export default function useAppLauncherFrecentCommandsAndApps(arg0) {
   let onlyActivityApps;
   let sectionDescriptors;
   ({ context, onlyActivityApps } = arg0);
-  const arg1 = onlyActivityApps;
-  let obj = importAll(dependencyMap[7]);
+  let obj = commandsByActiveSection(filterSection[7]);
   obj = { context, filters: obj, options: obj, allowFetch: true };
   const discovery = obj.useDiscovery(obj);
   const commands = discovery.commands;
-  const importDefault = commands;
-  const commandsByActiveSection = discovery.commandsByActiveSection;
-  const importAll = commandsByActiveSection;
+  commandsByActiveSection = discovery.commandsByActiveSection;
   ({ sectionDescriptors, filterSection } = discovery);
-  const dependencyMap = filterSection;
-  const items = [filterSection];
-  const effect = React.useEffect(() => {
-    filterSection(constants.FRECENCY);
+  let items = [filterSection];
+  const effect = stateFromStores.useEffect(() => {
+    filterSection(outer1_10.FRECENCY);
   }, items);
   const items1 = [closure_8];
-  const stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items1, () => lastUsedCommandId.getLastUsedCommandId());
-  const React = stateFromStores;
+  stateFromStores = onlyActivityApps(filterSection[8]).useStateFromStores(items1, () => outer1_8.getLastUsedCommandId());
   obj = {
     loading: discovery.loading,
-    frecencyCommands: React.useMemo(() => {
+    frecencyCommands: stateFromStores.useMemo(() => {
       if (onlyActivityApps) {
         return [];
       } else {
@@ -156,11 +146,11 @@ export default function useAppLauncherFrecentCommandsAndApps(arg0) {
         if (null == data) {
           data = [];
         }
-        const found = commands.find((id) => id.id === closure_4);
+        const found = commands.find((id) => id.id === outer1_4);
         let tmp6 = data;
         if (null != found) {
           const items = [found];
-          HermesBuiltin.arraySpread(data.filter((id) => id.id !== closure_4), 1);
+          HermesBuiltin.arraySpread(data.filter((id) => id.id !== outer1_4), 1);
           tmp6 = items;
         }
         return tmp6;
@@ -169,7 +159,7 @@ export default function useAppLauncherFrecentCommandsAndApps(arg0) {
     frecentApps: useFrecentApps({ sectionDescriptors, context, onlyActivityApps, includeAuthorizedAppsAndFetch: true }),
     sectionDescriptors
   };
-  const items2 = [commands, commandsByActiveSection, stateFromStores, onlyActivityApps];
+  items2 = [commands, commandsByActiveSection, stateFromStores, onlyActivityApps];
   return obj;
 };
 export const useAppLauncherFrecentApps = function useAppLauncherFrecentApps(context) {
@@ -178,7 +168,7 @@ export const useAppLauncherFrecentApps = function useAppLauncherFrecentApps(cont
   let onlyActivityApps;
   context = context.context;
   ({ onlyActivityApps, allowCommandFetch, includeAuthorizedAppsAndFetch } = context);
-  let obj = importAll(dependencyMap[7]);
+  let obj = importAll(8189);
   obj = { context, filters: obj, options: obj, allowFetch: allowCommandFetch };
   const discovery = obj.useDiscovery(obj);
   obj = { loading: discovery.loading, frecentApps: useFrecentApps(obj1) };

@@ -1,51 +1,47 @@
-// Module ID: 8901
-// Function ID: 70268
+// Module ID: 8908
+// Function ID: 70309
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [57, 31, 27, 4198, 1849, 8892]
+// Dependencies: [31, 4202, 4216, 566, 8897, 2]
 // Exports: useAlertIfSecureFramesKeyInconsistent
 
-// Module 8901 (useIsSecureFramesKeyInconsistent)
-import _slicedToArray from "_slicedToArray";
-import module_31 from "module_31";
-import getActivityIndicator from "get ActivityIndicator";
-import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
+// Module 8908 (useIsSecureFramesKeyInconsistent)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function useIsSecureFramesKeyInconsistent(userId) {
-  const arg1 = userId.userId;
-  const items = [module_31, getActivityIndicator];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const items = [module_31, getActivityIndicator];
-    return userId(closure_1[4]).getIsSecureFramesKeyInconsistent(userId, items);
+  userId = userId.userId;
+  let items = [_isNativeReflectConstruct, closure_4];
+  return userId(566).useStateFromStores(items, () => {
+    const items = [outer1_3, outer1_4];
+    return userId(outer1_1[4]).getIsSecureFramesKeyInconsistent(userId, items);
   });
 }
-const result = SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY.fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesKeyInconsistent.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesKeyInconsistent.tsx");
 
 export { useIsSecureFramesKeyInconsistent };
 export const useAlertIfSecureFramesKeyInconsistent = function useAlertIfSecureFramesKeyInconsistent(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const userId = channelId.userId;
-  const dependencyMap = userId;
   const nickname = channelId.nickname;
-  const React = nickname;
   const onAlertOpen = channelId.onAlertOpen;
-  let module_31 = onAlertOpen;
   const tmp = useIsSecureFramesKeyInconsistent({ userId });
-  let getActivityIndicator = tmp;
-  const useIsSecureFramesKeyInconsistent = React.useRef(null);
+  let closure_4 = tmp;
+  useIsSecureFramesKeyInconsistent = nickname.useRef(null);
   const items = [channelId, tmp, nickname, onAlertOpen, userId];
-  const effect = React.useEffect(() => {
-    if (tmp) {
+  const effect = nickname.useEffect(() => {
+    if (closure_4) {
       if (null == ref.current) {
         const _setTimeout = setTimeout;
         ref.current = setTimeout(() => {
-          callback();
-          let obj = current(closure_1[4]);
-          obj = { userId: closure_1, channelId: current, nickname: _slicedToArray };
+          outer1_3();
+          let obj = channelId(userId[4]);
+          obj = { userId: outer1_1, channelId: current, nickname: outer1_2 };
           const result = obj.showSecureFramesKeyInconsistentAlert(obj);
         }, 1000);
       }
-      const channelId = ref.current;
+      const current = ref.current;
       return () => {
         clearTimeout(current);
       };

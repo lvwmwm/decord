@@ -1,30 +1,32 @@
-// Module ID: 15480
-// Function ID: 118073
+// Module ID: 15597
+// Function ID: 120247
 // Name: MenuContainer
-// Dependencies: []
+// Dependencies: [31, 9547, 566, 9669, 4540, 2]
 // Exports: default
 
-// Module 15480 (MenuContainer)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/native_menu/native/NativeMenuPresenter.tsx");
+// Module 15597 (MenuContainer)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/native_menu/native/NativeMenuPresenter.tsx");
 
 export default function MenuContainer() {
-  const items = [closure_4];
-  const stateFromStoresObject = arg1(dependencyMap[2]).useStateFromStoresObject(items, () => ({ key: store.getKey(), menu: store.getMenu() }), []);
-  const arg1 = key;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = key(566).useStateFromStoresObject(items, () => ({ key: outer1_4.getKey(), menu: outer1_4.getMenu() }), []);
+  key = stateFromStoresObject.key;
   const menu = stateFromStoresObject.menu;
-  const items1 = [stateFromStoresObject.key];
+  const items1 = [key];
   const callback = React.useCallback(() => {
     if (null != key) {
-      callback(closure_2[3]).hideNativeMenu(key);
-      const obj = callback(closure_2[3]);
+      outer1_1(outer1_2[3]).hideNativeMenu(key);
+      const obj = outer1_1(outer1_2[3]);
     }
     return null != key;
   }, items1);
-  importDefault(dependencyMap[4])(callback);
+  importDefault(4540)(callback);
   let tmp4 = null;
-  if (null != stateFromStoresObject.key) {
+  if (null != key) {
     tmp4 = null;
     if (null != menu) {
       tmp4 = menu;

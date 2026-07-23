@@ -1,11 +1,12 @@
 // Module ID: 386
 // Function ID: 5716
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [42]
 
 // Module 386 (__INTERNAL_VIEW_CONFIG)
-const obj = { uiViewClassName: "AndroidHorizontalScrollContentView", validAttributes: { removeClippedSubviews: true } };
-const _module = require(dependencyMap[0]);
+import get from "get";
 
-export default _module.get("AndroidHorizontalScrollContentView", () => obj);
+const obj = { uiViewClassName: "AndroidHorizontalScrollContentView", validAttributes: { removeClippedSubviews: true } };
+
+export default get.get("AndroidHorizontalScrollContentView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

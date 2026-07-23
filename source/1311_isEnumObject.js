@@ -1,10 +1,12 @@
 // Module ID: 1311
-// Function ID: 15253
+// Function ID: 15254
 // Name: isEnumObject
-// Dependencies: []
+// Dependencies: [57]
 // Exports: listEnumNames, listEnumNumbers
 
 // Module 1311 (isEnumObject)
+import _slicedToArray from "_slicedToArray";
+
 function isEnumObject(arg0) {
   if ("object" === typeof arg0) {
     if (null !== obj) {
@@ -62,7 +64,7 @@ function isEnumObject(arg0) {
               }
             }
           }
-          // continue
+          continue;
         }
         return true;
       } else {
@@ -81,8 +83,8 @@ function listEnumValues(arg0) {
     const entries = Object.entries(arg0);
     const tmp7 = entries[Symbol.iterator]();
     while (tmp7 !== undefined) {
-      let tmp10 = callback;
-      let tmp11 = callback(tmp8, 2);
+      let tmp10 = _slicedToArray;
+      let tmp11 = _slicedToArray(tmp8, 2);
       [tmp12, tmp13] = tmp11;
       if ("number" === typeof tmp13) {
         let tmp15 = items;
@@ -93,7 +95,7 @@ function listEnumValues(arg0) {
         obj.number = tmp14;
         let arr = items.push(obj);
       }
-      // continue
+      continue;
     }
     return items;
   } else {
@@ -102,7 +104,6 @@ function listEnumValues(arg0) {
     throw error;
   }
 }
-let closure_0 = require(dependencyMap[0]);
 
 export { isEnumObject };
 export { listEnumValues };

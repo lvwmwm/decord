@@ -1,18 +1,18 @@
-// Module ID: 8509
-// Function ID: 67898
+// Module ID: 8515
+// Function ID: 67935
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: useIsDisplayNameStylesFlywheelSettersEnabled, useIsDisplayNameStylesFlywheelViewersEnabled
 
-// Module 8509 (apexExperiment)
-const _module = require(dependencyMap[0]);
-let obj = { "Bool(false)": false, "Bool(false)": false, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[0]);
-obj = { "Bool(false)": false, "Bool(false)": false, defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment1 = _module1.createApexExperiment(obj);
-const _module2 = require(dependencyMap[1]);
-const result = _module2.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFlywheelExperiment.tsx");
+// Module 8515 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+import ApexExperiment from "ApexExperiment";
+
+let obj = { kind: "user", name: "2026-06-gummy-bears", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+obj = { kind: "user", name: "2026-06-gummy-viewers", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment1 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFlywheelExperiment.tsx");
 
 export const DisplayNameStylesFlywheelSettersExperiment = apexExperiment;
 export const DisplayNameStylesFlywheelViewersExperiment = apexExperiment1;

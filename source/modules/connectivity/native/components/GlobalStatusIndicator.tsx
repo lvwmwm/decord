@@ -1,58 +1,64 @@
-// Module ID: 10625
-// Function ID: 82873
+// Module ID: 10635
+// Function ID: 82923
 // Name: nativeEventEmitter
-// Dependencies: []
+// Dependencies: [31, 27, 3823, 4143, 9547, 1348, 4202, 33, 8934, 566, 10215, 4341, 1212, 10636, 3991, 10631, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 10625 (nativeEventEmitter)
+// Module 10635 (nativeEventEmitter)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+
 let NativeEventEmitter;
-let closure_3 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-({ View: closure_4, StyleSheet: closure_5, TouchableWithoutFeedback: closure_6, NativeEventEmitter } = tmp2);
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = arg1(dependencyMap[7]));
-const nativeEventEmitter = new NativeEventEmitter(tmp2.NativeModules.DCDStatusBarOverlayViewManager);
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+({ View: closure_4, StyleSheet: closure_5, TouchableWithoutFeedback: closure_6, NativeEventEmitter } = get_ActivityIndicator);
+({ jsx: closure_12, Fragment: closure_13, jsxs: closure_14 } = jsxProd);
+const nativeEventEmitter = new NativeEventEmitter(get_ActivityIndicator.NativeModules.DCDStatusBarOverlayViewManager);
 function GlobalStatusIndicatorWrapper(onPress) {
   onPress = onPress.onPress;
-  const arg1 = onPress;
   let openVoice;
   let callback;
   let closure_6;
-  const tmp = importDefault(dependencyMap[8])();
-  const importDefault = tmp;
-  let obj = arg1(dependencyMap[9]);
+  const tmp = importDefault(stateFromStores[8])();
+  importDefault = tmp;
+  let obj = onPress(stateFromStores[9]);
   const items = [closure_11];
   const items1 = [tmp];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     let channelId;
     if (null != tmp) {
       channelId = tmp.channelId;
     }
     if (null == channelId) {
-      channelId = channelId.getChannelId();
+      channelId = outer1_11.getChannelId();
     }
     return channelId;
   }, items1);
-  const dependencyMap = stateFromStores;
   const items2 = [closure_10];
   const items3 = [stateFromStores];
-  const stateFromStores1 = arg1(dependencyMap[9]).useStateFromStores(items2, () => channel.getChannel(stateFromStores), items3);
-  const React = stateFromStores1;
-  const obj2 = arg1(dependencyMap[9]);
-  const voiceChatNavigationContext = arg1(dependencyMap[10]).useVoiceChatNavigationContext();
+  const stateFromStores1 = onPress(stateFromStores[9]).useStateFromStores(items2, () => outer1_10.getChannel(stateFromStores), items3);
+  const obj2 = onPress(stateFromStores[9]);
+  const voiceChatNavigationContext = onPress(stateFromStores[10]).useVoiceChatNavigationContext();
   openVoice = undefined;
   if (null != voiceChatNavigationContext) {
     openVoice = voiceChatNavigationContext.openVoice;
   }
   const items4 = [stateFromStores1, onPress, openVoice];
-  callback = React.useCallback(() => {
+  callback = stateFromStores1.useCallback(() => {
     if (null != stateFromStores1) {
       if (null != openVoice) {
-        if (chatOpen.getChatOpen(stateFromStores1.id)) {
+        if (outer1_8.getChatOpen(stateFromStores1.id)) {
           openVoice();
         }
         if (null != onPress) {
@@ -63,14 +69,14 @@ function GlobalStatusIndicatorWrapper(onPress) {
       const obj = onPress(stateFromStores[11]);
     }
   }, items4);
-  closure_6 = React.useRef(callback);
-  const effect = React.useEffect(() => {
+  closure_6 = stateFromStores1.useRef(callback);
+  const effect = stateFromStores1.useEffect(() => {
     closure_6.current = callback;
   });
   const items5 = [stateFromStores];
-  const effect1 = React.useEffect(() => {
-    let closure_0 = closure_15.addListener("StatusBarTapped", () => {
-      ref.current();
+  const effect1 = stateFromStores1.useEffect(() => {
+    let closure_0 = outer1_15.addListener("StatusBarTapped", () => {
+      outer1_6.current();
     });
     return () => {
       if (null != closure_0) {
@@ -86,21 +92,19 @@ function GlobalStatusIndicatorWrapper(onPress) {
   obj.accessibilityRole = str;
   let stringResult;
   if (null != stateFromStores1) {
-    const intl = arg1(dependencyMap[12]).intl;
-    stringResult = intl.string(arg1(dependencyMap[12]).t.GaCMgX);
+    const intl = onPress(stateFromStores[12]).intl;
+    stringResult = intl.string(onPress(stateFromStores[12]).t.GaCMgX);
   }
   obj.accessibilityHint = stringResult;
   obj.onPress = callback;
-  obj = { children: callback(importDefault(dependencyMap[13]), {}) };
+  obj = { children: callback(importDefault(stateFromStores[13]), {}) };
   obj.children = callback(openVoice, obj);
   return callback(closure_6, obj);
 }
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/connectivity/native/components/GlobalStatusIndicator.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/connectivity/native/components/GlobalStatusIndicator.tsx");
 
 export default function GlobalStatusIndicator(children) {
   children = children.children;
-  const arg1 = children;
   let flag = children.showWhenParticipantOnScreen;
   if (flag === undefined) {
     flag = false;
@@ -109,40 +113,38 @@ export default function GlobalStatusIndicator(children) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const importDefault = flag2;
   const onPress = children.onPress;
-  const dependencyMap = onPress;
-  let React;
+  let height;
   let isVisible;
-  let tmp4;
-  const globalStatusIndicatorState = arg1(dependencyMap[15]).useGlobalStatusIndicatorState(flag);
-  const obj = arg1(dependencyMap[15]);
-  const items = [closure_7];
-  const stateFromStores = arg1(dependencyMap[9]).useStateFromStores(items, () => null != content.getContent());
-  const obj2 = arg1(dependencyMap[9]);
-  const items1 = [closure_9];
-  const height = globalStatusIndicatorState.height;
-  React = height;
+  let c5;
+  const globalStatusIndicatorState = children(onPress[15]).useGlobalStatusIndicatorState(flag);
+  let obj = children(onPress[15]);
+  let items = [_isNativeReflectConstruct];
+  const stateFromStores = children(onPress[9]).useStateFromStores(items, () => null != outer1_7.getContent());
+  const obj2 = children(onPress[9]);
+  let items1 = [closure_9];
+  height = globalStatusIndicatorState.height;
   isVisible = globalStatusIndicatorState.isVisible;
-  const stateFromStores1 = arg1(dependencyMap[9]).useStateFromStores(items1, () => open.isOpen());
+  const stateFromStores1 = children(onPress[9]).useStateFromStores(items1, () => outer1_9.isOpen());
   if (isVisible) {
     isVisible = !flag2;
   }
-  tmp4 = stateFromStores;
+  let tmp4 = stateFromStores;
   if (!stateFromStores) {
     tmp4 = stateFromStores1;
   }
+  c5 = tmp4;
   const items2 = [children, tmp4, isVisible, onPress, height, flag2];
-  return React.useMemo(() => {
+  return height.useMemo(() => {
     let obj = {};
     obj = {};
     let str;
-    if (isVisible) {
+    if (_undefined) {
       str = "no-hide-descendants";
     }
     obj.importantForAccessibility = str;
-    obj.accessibilityElementsHidden = isVisible;
-    const items = [isVisible.absoluteFill, ];
+    obj.accessibilityElementsHidden = _undefined;
+    const items = [_undefined.absoluteFill, ];
     obj = {};
     let num = 0;
     if (!flag2) {
@@ -153,24 +155,23 @@ export default function GlobalStatusIndicator(children) {
     items[1] = obj;
     obj.style = items;
     obj.children = children;
-    const items1 = [callback(isVisible, obj), ];
+    const items1 = [outer1_12(isVisible, obj), ];
     let tmp5 = null;
     if (isVisible) {
       const obj1 = { onPress };
-      tmp5 = callback(closure_16, obj1);
+      tmp5 = outer1_12(outer1_16, obj1);
     }
     items1[1] = tmp5;
     obj.children = items1;
-    return closure_14(closure_13, obj);
+    return outer1_14(outer1_13, obj);
   }, items2);
 };
 export const useGlobalStatusIndicatorHeightSharedValue = function useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState) {
-  const arg1 = globalStatusIndicatorState;
-  const sharedValue = arg1(dependencyMap[14]).useSharedValue(globalStatusIndicatorState.height);
-  const importDefault = sharedValue;
+  const _require = globalStatusIndicatorState;
+  const sharedValue = _require(3991).useSharedValue(globalStatusIndicatorState.height);
   const items = [globalStatusIndicatorState.height, sharedValue];
   const effect = React.useEffect(() => {
-    const result = sharedValue.set(arg0.height);
+    const result = sharedValue.set(globalStatusIndicatorState.height);
   }, items);
   return sharedValue;
 };

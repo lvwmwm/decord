@@ -1,28 +1,29 @@
 // Module ID: 1653
-// Function ID: 18372
+// Function ID: 18373
 // Name: BaseAnimationBuilder
-// Dependencies: []
+// Dependencies: [6, 7, 1607, 1593, 1654, 1622]
 
 // Module 1653 (BaseAnimationBuilder)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
 let closure_4 = { code: "function pnpm_BaseAnimationBuilderTs1(delay,animation){const{withDelay,reduceMotion}=this.__closure;return withDelay(delay,animation,reduceMotion);}" };
 let closure_5 = { code: "function pnpm_BaseAnimationBuilderTs2(_,animation){const{getReduceMotionFromConfig,reduceMotion}=this.__closure;animation.reduceMotion=getReduceMotionFromConfig(reduceMotion);return animation;}" };
 
-export const BaseAnimationBuilder = () => {
+export const BaseAnimationBuilder = (() => {
   class BaseAnimationBuilder {
     constructor() {
-      tmp = closure_2(this, BaseAnimationBuilder);
-      this.reduceMotionV = BaseAnimationBuilder(closure_1[2]).ReduceMotion.System;
+      tmp = outer1_2(this, BaseAnimationBuilder);
+      this.reduceMotionV = BaseAnimationBuilder(outer1_1[2]).ReduceMotion.System;
       this.randomizeDelay = false;
       this.build = () => {
-        const reanimatedError = new callback(closure_1[3]).ReanimatedError("Unimplemented method in child class.");
+        const reanimatedError = new BaseAnimationBuilder(outer2_1[3]).ReanimatedError("Unimplemented method in child class.");
         throw reanimatedError;
       };
       return;
     }
   }
-  const arg1 = BaseAnimationBuilder;
   let obj = {
     key: "duration",
     value: function duration(durationV) {
@@ -106,20 +107,19 @@ export const BaseAnimationBuilder = () => {
     value: function getDelayFunction() {
       const self = this;
       const reduceMotion = self.getReduceMotion();
-      const BaseAnimationBuilder = reduceMotion;
       if (tmp) {
         /* worklet (recovered source) */ function pnpm_BaseAnimationBuilderTs1(delay,animation){const{withDelay,reduceMotion}=this.__closure;return withDelay(delay,animation,reduceMotion);}
-        let obj = { withDelay: BaseAnimationBuilder(closure_1[4]).withDelay, reduceMotion };
+        let obj = { withDelay: BaseAnimationBuilder(outer1_1[4]).withDelay, reduceMotion };
         pnpm_BaseAnimationBuilderTs1.__closure = obj;
         pnpm_BaseAnimationBuilderTs1.__workletHash = 15544853359686;
-        pnpm_BaseAnimationBuilderTs1.__initData = closure_4;
+        pnpm_BaseAnimationBuilderTs1.__initData = outer1_4;
         let pnpm_BaseAnimationBuilderTs2 = pnpm_BaseAnimationBuilderTs1;
       } else {
         pnpm_BaseAnimationBuilderTs2 = /* worklet (recovered source) */ function pnpm_BaseAnimationBuilderTs2(_,animation){const{getReduceMotionFromConfig,reduceMotion}=this.__closure;animation.reduceMotion=getReduceMotionFromConfig(reduceMotion);return animation;};
-        obj = { getReduceMotionFromConfig: BaseAnimationBuilder(closure_1[5]).getReduceMotionFromConfig, reduceMotion };
+        obj = { getReduceMotionFromConfig: BaseAnimationBuilder(outer1_1[5]).getReduceMotionFromConfig, reduceMotion };
         pnpm_BaseAnimationBuilderTs2.__closure = obj;
         pnpm_BaseAnimationBuilderTs2.__workletHash = 8417033392474;
-        pnpm_BaseAnimationBuilderTs2.__initData = closure_5;
+        pnpm_BaseAnimationBuilderTs2.__initData = outer1_5;
       }
       return pnpm_BaseAnimationBuilderTs2;
     }
@@ -175,4 +175,4 @@ export const BaseAnimationBuilder = () => {
     }
   ];
   return callback(BaseAnimationBuilder, items, items1);
-}();
+})();

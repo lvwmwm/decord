@@ -1,11 +1,15 @@
-// Module ID: 7774
-// Function ID: 61724
+// Module ID: 7780
+// Function ID: 61761
 // Name: checkForJumboEmoji
-// Dependencies: []
+// Dependencies: [653, 4464, 4046, 7781, 4114, 1184, 2]
 // Exports: runMessageMarkupPostProcessors
 
-// Module 7774 (checkForJumboEmoji)
+// Module 7780 (checkForJumboEmoji)
+import ME from "ME";
+import set from "getAPIEndpoint";
+
 let MessageEmbedTypes;
+let closure_3;
 function checkForJumboEmoji(content) {
   if (content.some((type) => {
     let tmp = "emoji" !== type.type;
@@ -24,7 +28,7 @@ function checkForJumboEmoji(content) {
   })) {
     return content;
   } else {
-    let closure_0 = 0;
+    let c0 = 0;
     const item = content.forEach((type) => {
       let tmp = "emoji" !== type.type;
       if (tmp) {
@@ -37,7 +41,7 @@ function checkForJumboEmoji(content) {
         return false;
       }
     });
-    if (closure_0 <= 30) {
+    if (c0 <= 30) {
       const item1 = content.forEach((arg0) => {
         arg0.jumboable = true;
       });
@@ -61,9 +65,9 @@ function checkSpoilerEmbeds(content, inline) {
   return tmp;
 }
 function containsMatchingNode(content, arg1) {
-  const require = arg1;
+  let closure_0 = arg1;
   if (content instanceof Array) {
-    return content.some((arg0) => callback(arg0, arg1));
+    return content.some((arg0) => outer1_8(arg0, closure_0));
   } else {
     const tmp = arg1(content);
     if (null != tmp) {
@@ -77,7 +81,7 @@ function containsMatchingNode(content, arg1) {
         someResult = content.items instanceof Array;
         if (someResult) {
           const items = content.items;
-          someResult = items.some((arg0) => callback(arg0, arg1));
+          someResult = items.some((arg0) => outer1_8(arg0, closure_0));
         }
       }
     }
@@ -87,7 +91,7 @@ function hasAnySpoilerEmbeds(content) {
   return containsMatchingNode(content, (type) => {
     let tmp = null;
     if ("spoiler" === type.type) {
-      tmp = callback(type, (type) => {
+      tmp = outer1_8(type, (type) => {
         let tmp = "link" === type.type;
         if (!tmp) {
           tmp = "attachmentLink" === type.type;
@@ -113,7 +117,7 @@ function checkForSimpleEmbedMessage(arg0, first1) {
           if (obj.isEmbedInline(first1)) {
             items = [];
           }
-          const obj = require(dependencyMap[1]);
+          obj = require(4464) /* validateSize */;
         }
       } else {
         items = arg0;
@@ -127,8 +131,8 @@ function removeBuildOverrideLinks(tmp3Result) {
   return tmp3Result.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(closure_2[2]).isBuildOverrideLink(type.target);
-      const obj = callback(closure_2[2]);
+      tmp = !outer1_0(outer1_2[2]).isBuildOverrideLink(type.target);
+      const obj = outer1_0(outer1_2[2]);
     }
     return tmp;
   });
@@ -137,8 +141,8 @@ function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(closure_2[3]).isExperimentEmbedURL(type.target);
-      const obj = callback(closure_2[3]);
+      tmp = !outer1_0(outer1_2[3]).isExperimentEmbedURL(type.target);
+      const obj = outer1_0(outer1_2[3]);
     }
     return tmp;
   });
@@ -149,8 +153,8 @@ function removeQuestsEmbedLinks(arr) {
     let tmp = "link" === type.type;
     let parseQuestsEmbedCodeResult = null;
     if (null != type.target) {
-      parseQuestsEmbedCodeResult = callback(closure_2[4]).parseQuestsEmbedCode(type.target);
-      const obj = callback(closure_2[4]);
+      parseQuestsEmbedCodeResult = callback(outer1_2[4]).parseQuestsEmbedCode(type.target);
+      const obj = callback(outer1_2[4]);
     }
     if (tmp) {
       tmp = null != parseQuestsEmbedCodeResult;
@@ -163,14 +167,14 @@ function removeQuestsEmbedLinks(arr) {
 }
 function convertNewlinesInContent(arr) {
   const item = arr.forEach((type) => {
-    let hasItem = set.has(type.type);
+    let hasItem = outer1_5.has(type.type);
     if (hasItem) {
       hasItem = null != type.content;
     }
     if (hasItem) {
       const _Array = Array;
       if (Array.isArray(type.content)) {
-        callback2(type.content);
+        outer1_14(type.content);
       } else if ("string" === typeof type.content) {
         type.content = type.content.replace(/\n/g, " ");
         const str5 = type.content;
@@ -178,21 +182,19 @@ function convertNewlinesInContent(arr) {
         type = type.type;
         const _Object = Object;
         const _HermesInternal = HermesInternal;
-        callback(closure_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-        const obj = callback(closure_2[5]);
+        outer1_1(outer1_2[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+        const obj = outer1_1(outer1_2[5]);
       }
     }
   });
   return arr;
 }
-const _module = require(dependencyMap[0]);
-({ MessageEmbedTypes, MessageTypes: closure_3 } = _module);
-const items = [, ];
+({ MessageEmbedTypes, MessageTypes: closure_3 } = ME);
+let items = [, ];
 ({ IMAGE: arr[0], GIFV: arr[1] } = MessageEmbedTypes);
-const set = new Set(items);
-const set1 = new Set([87796628636221330000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001520776111392784, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000169445055735965, 131138.54211616522, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009448915207443469, 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012394928247351534, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000224666843156645]);
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/messages/MarkupPostProcessors.tsx");
+let set = new Set(items);
+const set1 = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
+const result = set.fileFinishedImporting("modules/messages/MarkupPostProcessors.tsx");
 
 export { checkSpoilerEmbeds };
 export { checkForSimpleEmbedMessage };

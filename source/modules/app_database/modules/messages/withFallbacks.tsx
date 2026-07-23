@@ -1,53 +1,59 @@
-// Module ID: 6713
-// Function ID: 52181
+// Module ID: 6718
+// Function ID: 52213
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 1348, 4970, 653, 6712, 6716, 6717, 2]
 // Exports: withFallbacks
 
-// Module 6713 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 6718 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -108,8 +114,8 @@ function mergeInto(extendedMemoryLru, allEntries) {
   let iter = tmp();
   if (!iter.done) {
     do {
-      let tmp2 = closure_2;
-      let tmp3 = closure_2(iter.value, 2);
+      let tmp2 = callback;
+      let tmp3 = callback(iter.value, 2);
       let putResult = extendedMemoryLru.put(tmp3[0], tmp3[1]);
       let iter2 = tmp();
       iter = iter2;
@@ -118,17 +124,13 @@ function mergeInto(extendedMemoryLru, allEntries) {
   }
   return extendedMemoryLru;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const ChannelTypes = arg1(dependencyMap[3]).ChannelTypes;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_database/modules/messages/withFallbacks.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_database/modules/messages/withFallbacks.tsx");
 
 export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
   if (extendedMemoryLru.totalLength >= arg1) {
     return extendedMemoryLru;
   } else {
-    const ExtendedMemoryLru = arg1(dependencyMap[4]).ExtendedMemoryLru;
+    const ExtendedMemoryLru = require(6712) /* _createForOfIteratorHelperLoose */.ExtendedMemoryLru;
     const prototype = ExtendedMemoryLru.prototype;
     extendedMemoryLru = new ExtendedMemoryLru(extendedMemoryLru.primaryCapacity, extendedMemoryLru.extendedCapacity);
     const diff = arg1 - extendedMemoryLru.totalLength;
@@ -156,15 +158,15 @@ export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
                 let tmp7 = isSaveableChannel;
                 let isReadableChannelResult = isSaveableChannel(tmp6);
                 if (isReadableChannelResult) {
-                  let tmp9 = arg1;
+                  let tmp9 = require;
                   let tmp10 = dependencyMap;
-                  let obj = arg1(dependencyMap[5]);
+                  let obj = require(6716) /* isReadableChannel */;
                   isReadableChannelResult = obj.isReadableChannel(tmp6);
                 }
                 if (isReadableChannelResult) {
-                  let tmp11 = arg1;
+                  let tmp11 = require;
                   let tmp12 = dependencyMap;
-                  let obj2 = arg1(dependencyMap[6]);
+                  let obj2 = require(6717) /* isLimitedChannel */;
                   isReadableChannelResult = !obj2.isLimitedChannel(tmp6);
                 }
                 if (isReadableChannelResult) {
@@ -189,7 +191,7 @@ export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
             iter2 = iter3;
             let tmp16 = value;
             let tmp17 = values;
-            let tmp4 = tmp3;
+            tmp4 = tmp3;
             continue;
           }
         }

@@ -1,10 +1,9 @@
-// Module ID: 15967
-// Function ID: 122464
+// Module ID: 16084
+// Function ID: 124637
 // Name: INTERACTION_IFRAME_MODAL_KEY
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 15967 (INTERACTION_IFRAME_MODAL_KEY)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/interaction_components/native/InteractionIframeConstants.tsx");
+// Module 16084 (INTERACTION_IFRAME_MODAL_KEY)
+const result = require("set").fileFinishedImporting("modules/interaction_components/native/InteractionIframeConstants.tsx");
 
 export const INTERACTION_IFRAME_MODAL_KEY = "interaction_iframe_modal";

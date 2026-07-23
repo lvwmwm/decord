@@ -1,13 +1,14 @@
 // Module ID: 1572
-// Function ID: 17635
+// Function ID: 17636
 // Name: nativeEventEmitter
-// Dependencies: []
+// Dependencies: [27, 1573, 1574, 1575, 1576, 1577, 1578, 1579]
 // Exports: RCTKeyboardExtender
 
 // Module 1572 (nativeEventEmitter)
-const _module = require(dependencyMap[0]);
-if (require(dependencyMap[1]).default) {
-  let _default = require(dependencyMap[1]).default;
+import get_ActivityIndicator from "get ActivityIndicator";
+
+if (require("KeyboardController").default) {
+  let _default = require("KeyboardController").default;
 } else {
   const _Proxy = Proxy;
   let obj = {
@@ -18,20 +19,20 @@ if (require(dependencyMap[1]).default) {
   };
   _default = new Proxy({}, obj);
 }
-let closure_0 = "KeyboardController::";
-const nativeEventEmitter = new _module.NativeEventEmitter(_default);
+let c0 = "KeyboardController::";
+const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(_default);
 obj = {
   addListener(arg0, arg1) {
-    return nativeEventEmitter.addListener(closure_0 + arg0, arg1);
+    return nativeEventEmitter.addListener(c0 + arg0, arg1);
   }
 };
 obj = {
   addListener(arg0, arg1) {
-    return nativeEventEmitter.addListener(closure_0 + arg0, arg1);
+    return nativeEventEmitter.addListener(c0 + arg0, arg1);
   }
 };
-if (_module.Platform.Version >= 30) {
-  let fn = require(dependencyMap[2]).default;
+if (get_ActivityIndicator.Platform.Version >= 30) {
+  let fn = require("__INTERNAL_VIEW_CONFIG").default;
 } else {
   fn = (children) => children.children;
 }
@@ -41,14 +42,14 @@ export const KeyboardEvents = obj;
 export const FocusedInputEvents = obj;
 export const WindowDimensionsEvents = {
   addListener(arg0, arg1) {
-    return nativeEventEmitter.addListener(closure_0 + arg0, arg1);
+    return nativeEventEmitter.addListener(c0 + arg0, arg1);
   }
 };
-export const KeyboardControllerView = require(dependencyMap[3]).default;
-export const KeyboardControllerViewCommands = require(dependencyMap[3]).Commands;
+export const KeyboardControllerView = require("__INTERNAL_VIEW_CONFIG").default;
+export const KeyboardControllerViewCommands = require("__INTERNAL_VIEW_CONFIG").Commands;
 export const KeyboardGestureArea = fn;
-export const RCTOverKeyboardView = require(dependencyMap[4]).default;
-export const KeyboardBackgroundView = require(dependencyMap[5]).default;
+export const RCTOverKeyboardView = require("__INTERNAL_VIEW_CONFIG").default;
+export const KeyboardBackgroundView = require("__INTERNAL_VIEW_CONFIG").default;
 export const RCTKeyboardExtender = (children) => children.children;
-export const ClippingScrollView = require(dependencyMap[6]).default;
-export const RCTKeyboardToolbarGroupView = require(dependencyMap[7]).default;
+export const ClippingScrollView = require("__INTERNAL_VIEW_CONFIG").default;
+export const RCTKeyboardToolbarGroupView = require("__INTERNAL_VIEW_CONFIG").default;

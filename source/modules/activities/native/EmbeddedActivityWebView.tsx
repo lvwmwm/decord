@@ -1,53 +1,71 @@
-// Module ID: 10596
-// Function ID: 82671
+// Module ID: 10606
+// Function ID: 82721
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 7370, 4155, 653, 33, 4130, 3, 477, 10607, 491, 7547, 1207, 10608, 1554, 10609, 10610, 675, 624, 4470, 1212, 507, 10611, 1443, 10491, 10492, 8284, 4323, 10525, 2]
 // Exports: default
 
-// Module 10596 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10606 (_createForOfIteratorHelperLoose)
+import closure_4 from "items3";
+import _slicedToArray from "_slicedToArray";
+import closure_6 from "set";
+import { Linking } from "importDefaultResult1";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import items3 from "items3";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "get ActivityIndicator";
+import set from "set";
+import set from "result";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -106,48 +124,35 @@ function getSafeArea(arg0, arg1) {
 }
 class BaseActivityWebView {
   constructor(arg0) {
-    ({ hasFrameId: closure_0, getOrCreateFrameId: closure_1, releaseFrameId } = global);
-    importAll = releaseFrameId;
+    ({ hasFrameId, getOrCreateFrameId, releaseFrameId } = global);
     hasInvalidUrlError = global.hasInvalidUrlError;
-    dependencyMap = hasInvalidUrlError;
     setHasInvalidUrlError = global.setHasInvalidUrlError;
     hadInvalidUrlError = global.hadInvalidUrlError;
-    closure_5 = hadInvalidUrlError;
     deepLinkQueryParams = global.deepLinkQueryParams;
     if (deepLinkQueryParams === undefined) {
       deepLinkQueryParams = {};
     }
     applicationId = global.applicationId;
-    closure_6 = applicationId;
     ({ queryParams, onActivityCrash } = global);
-    Linking = onActivityCrash;
     onLoadError = global.onLoadError;
-    closure_8 = onLoadError;
     referrerPolicy = global.referrerPolicy;
-    ActivityPlatform = referrerPolicy;
     isPipOrGridMode = global.isPipOrGridMode;
-    closure_10 = isPipOrGridMode;
     webViewKey = global.webViewKey;
-    ComponentActions = webViewKey;
     ({ ignoreSilentHardwareSwitch, activityUrl, allowPopups } = global);
     if (ignoreSilentHardwareSwitch === undefined) {
       ignoreSilentHardwareSwitch = true;
     }
     safeAreasConfig = global.safeAreasConfig;
-    AnalyticEvents = safeAreasConfig;
     channelId = global.channelId;
-    jsx = channelId;
     guildId = global.guildId;
-    closure_14 = guildId;
     activitySessionId = global.activitySessionId;
-    closure_15 = activitySessionId;
-    isIOS = undefined;
-    closure_17 = undefined;
-    closure_18 = undefined;
-    getSafeArea = undefined;
-    closure_20 = undefined;
-    useHasInvalidUrlErrorState = undefined;
-    closure_22 = undefined;
+    useState = undefined;
+    c17 = undefined;
+    c18 = undefined;
+    useState = undefined;
+    c20 = undefined;
+    useState = undefined;
+    c22 = undefined;
     MOBILE = undefined;
     activityUrl = undefined;
     useRef = undefined;
@@ -160,48 +165,48 @@ class BaseActivityWebView {
     releaseFrameId = undefined;
     useRef = undefined;
     onLoadError = undefined;
-    tmp = closure_14();
-    context = closure_6.useContext(arg1(dependencyMap[11]).WebViewContext);
-    first = closure_5(closure_6.useState(() => callback()), 1)[0];
-    isIOS = first;
-    first1 = closure_5(closure_6.useState(() => {
+    tmp = guildId();
+    context = applicationId.useContext(require("context").WebViewContext);
+    first = hadInvalidUrlError(applicationId.useState(() => callback()), 1)[0];
+    useState = first;
+    first1 = hadInvalidUrlError(applicationId.useState(() => {
       if (null != webViewKey) {
         let v4Result = callback2();
       } else {
-        v4Result = callback(hasInvalidUrlError[12]).v4();
-        const obj = callback(hasInvalidUrlError[12]);
+        v4Result = outer1_0(hasInvalidUrlError[12]).v4();
+        const obj = outer1_0(hasInvalidUrlError[12]);
       }
       return v4Result;
     }), 1)[0];
-    closure_17 = first1;
-    tmp5 = closure_5(closure_6.useState(null), 2);
+    c17 = first1;
+    tmp5 = hadInvalidUrlError(applicationId.useState(null), 2);
     url = tmp5[0];
-    closure_18 = url;
-    getSafeArea = tmp5[1];
+    c18 = url;
+    useState = tmp5[1];
     items = [];
     items[0] = webViewKey;
-    memo = closure_6.useMemo(() => {
+    memo = applicationId.useMemo(() => {
       let webViewProxy;
       if (null != webViewKey) {
-        webViewProxy = callback(hasInvalidUrlError[13]).getWebViewProxy(webViewKey);
-        const obj = callback(hasInvalidUrlError[13]);
+        webViewProxy = outer1_0(hasInvalidUrlError[13]).getWebViewProxy(webViewKey);
+        const obj = outer1_0(hasInvalidUrlError[13]);
       }
       return webViewProxy;
     }, items);
-    closure_20 = memo;
-    tmp7 = closure_5(closure_6.useState(null), 2);
-    [str, closure_21] = tmp7;
+    c20 = memo;
+    tmp7 = hadInvalidUrlError(applicationId.useState(null), 2);
+    [str, useState] = tmp7;
     items1 = [, , ];
     items1[0] = first;
     items1[1] = first1;
     items1[2] = webViewKey;
-    effect = closure_6.useEffect(() => {
+    effect = applicationId.useEffect(() => {
       let tmp = first;
       if (first) {
         tmp = null != webViewKey;
       }
       if (!tmp) {
-        const ComponentDispatch = callback(hasInvalidUrlError[14]).ComponentDispatch;
+        const ComponentDispatch = outer1_0(hasInvalidUrlError[14]).ComponentDispatch;
         const obj = { id: first1 };
         ComponentDispatch.dispatch(webViewKey.IFRAME_MOUNT, obj);
       }
@@ -209,50 +214,49 @@ class BaseActivityWebView {
     items2 = [, ];
     items2[0] = webViewKey;
     items2[1] = first1;
-    effect1 = closure_6.useEffect(() => () => {
-      if (null == constants) {
-        const ComponentDispatch = callback(closure_3[14]).ComponentDispatch;
-        const obj = { id: closure_17 };
-        ComponentDispatch.dispatch(constants.IFRAME_UNMOUNT, obj);
+    effect1 = applicationId.useEffect(() => () => {
+      if (null == outer1_11) {
+        const ComponentDispatch = outer2_0(hasInvalidUrlError[14]).ComponentDispatch;
+        const obj = { id: outer1_17 };
+        ComponentDispatch.dispatch(webViewKey.IFRAME_UNMOUNT, obj);
       }
     }, items2);
-    rect = importDefault(dependencyMap[15])();
-    closure_22 = rect;
-    obj2 = importAll(dependencyMap[16]);
+    rect = require("getStableSafeAreaInsets")();
+    c22 = rect;
+    obj2 = require("getConstants");
     obj = {};
     constants = obj2.getConstants();
     merged = Object.assign(queryParams);
     merged1 = Object.assign(deepLinkQueryParams);
     obj["frame_id"] = first1;
-    obj["platform"] = ActivityPlatform.MOBILE;
+    obj["platform"] = referrerPolicy.MOBILE;
     obj["mobile_app_version"] = constants.Version;
-    tmp13 = importDefault(dependencyMap[17])({ allowPopups });
+    tmp13 = require("getIFrameSandboxAttributes")({ allowPopups });
     MOBILE = tmp13;
     uRLSearchParams = new URLSearchParams(obj);
     combined = "" + activityUrl + "?" + uRLSearchParams;
     activityUrl = combined;
-    useRef = closure_6.useRef(safeAreasConfig);
+    useRef = applicationId.useRef(safeAreasConfig);
     items3 = [, , , ];
     items3[0] = combined;
     items3[1] = tmp13;
     items3[2] = onLoadError;
     items3[3] = referrerPolicy;
-    effect2 = closure_6.useEffect(() => {
+    effect2 = applicationId.useEffect(() => {
       function _loadHtml() {
         // CreateGeneratorClosureLongIndex (0x67)
-        const obj = callback(tmp);
-        const _loadHtml = obj;
+        const obj = setHasInvalidUrlError(tmp);
         return obj(...arguments);
       }
-      !function loadHtml() {
+      !(function loadHtml() {
         return _loadHtml(...arguments);
-      }();
+      })();
     }, items3);
     items4 = [];
     items4[0] = applicationId;
     items5 = [];
     items5[0] = applicationId;
-    callback = closure_6.useCallback((nativeEvent) => {
+    callback = applicationId.useCallback((nativeEvent) => {
       activitySessionId.warn("activity WebView error for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
     }, items4);
     items6 = [, , , , , , , ];
@@ -264,15 +268,15 @@ class BaseActivityWebView {
     items6[5] = releaseFrameId;
     items6[6] = memo;
     items6[7] = onActivityCrash;
-    callback1 = closure_6.useCallback((nativeEvent) => {
+    callback1 = applicationId.useCallback((nativeEvent) => {
       activitySessionId.warn("activity WebView render process gone for appId " + applicationId + ". " + JSON.stringify(nativeEvent.nativeEvent));
     }, items5);
-    callback2 = closure_6.useCallback(() => {
+    callback2 = applicationId.useCallback(() => {
       activitySessionId.warn("activity WebView content process terminated for appId " + applicationId);
-      let obj = callback2(hasInvalidUrlError[19]);
+      let obj = outer1_1(hasInvalidUrlError[19]);
       obj = { application_id: applicationId, channel_id: channelId, guild_id: guildId, activity_session_id: activitySessionId };
       obj.track(safeAreasConfig.ACTIVITY_WEB_VIEW_CONTENT_PROCESS_TERMINATED, obj);
-      const ComponentDispatch = callback(hasInvalidUrlError[14]).ComponentDispatch;
+      const ComponentDispatch = outer1_0(hasInvalidUrlError[14]).ComponentDispatch;
       obj = { id: first1 };
       ComponentDispatch.dispatch(webViewKey.IFRAME_UNMOUNT, obj);
       releaseFrameId();
@@ -281,61 +285,61 @@ class BaseActivityWebView {
       }
       onActivityCrash();
     }, items6);
-    obj4 = arg1(dependencyMap[20]);
+    obj4 = require("defaultAreStatesEqual");
     items7 = [];
-    items7[0] = closure_8;
+    items7[0] = onLoadError;
     stateFromStores = obj4.useStateFromStores(items7, () => onLoadError.getUseActivityUrlOverride());
     useCallback = stateFromStores;
     items8 = [, , ];
     items8[0] = combined;
     items8[1] = stateFromStores;
     items8[2] = setHasInvalidUrlError;
-    effect3 = closure_6.useEffect(() => {
+    effect3 = applicationId.useEffect(() => {
       const uRL = new URL(combined);
       callback3(uRL);
     }, items8);
     items9 = [, ];
     items9[0] = hadInvalidUrlError;
     items9[1] = hasInvalidUrlError;
-    effect4 = closure_6.useEffect(() => {
+    effect4 = applicationId.useEffect(() => {
       if (tmp) {
-        let obj = callback2(hasInvalidUrlError[21]);
+        let obj = outer1_1(hasInvalidUrlError[21]);
         obj = {};
-        const intl = callback(hasInvalidUrlError[22]).intl;
-        obj.title = intl.string(callback(hasInvalidUrlError[22]).t.PtobXW);
-        const intl2 = callback(hasInvalidUrlError[22]).intl;
-        obj.body = intl2.string(callback(hasInvalidUrlError[22]).t.55iAUT);
-        const intl3 = callback(hasInvalidUrlError[22]).intl;
-        obj.confirmText = intl3.string(callback(hasInvalidUrlError[22]).t.BddRzS);
+        const intl = outer1_0(hasInvalidUrlError[22]).intl;
+        obj.title = intl.string(outer1_0(hasInvalidUrlError[22]).t.PtobXW);
+        const intl2 = outer1_0(hasInvalidUrlError[22]).intl;
+        obj.body = intl2.string(outer1_0(hasInvalidUrlError[22]).t["55iAUT"]);
+        const intl3 = outer1_0(hasInvalidUrlError[22]).intl;
+        obj.confirmText = intl3.string(outer1_0(hasInvalidUrlError[22]).t.BddRzS);
         obj.show(obj);
       }
     }, items9);
     HermesInternal = null;
     if (null == url) {
-      closure_28 = isIOS;
-      tmp28 = closure_6;
+      closure_28 = useState;
+      tmp28 = applicationId;
       flag = false;
-      tmp27 = isIOS;
-      tmp29 = closure_5;
-      tmp30 = closure_5(closure_6.useState(false), 2);
+      tmp27 = useState;
+      tmp29 = hadInvalidUrlError;
+      tmp30 = hadInvalidUrlError(applicationId.useState(false), 2);
       useEffect = tmp30[1];
-      tmp31 = closure_6;
-      tmp32 = closure_5;
-      tmp33 = closure_5(closure_6.useState([]), 2);
+      tmp31 = applicationId;
+      tmp32 = hadInvalidUrlError;
+      tmp33 = hadInvalidUrlError(applicationId.useState([]), 2);
       first2 = tmp33[0];
       useEffect = first2;
       useState = tmp33[1];
-      tmp35 = closure_6;
+      tmp35 = applicationId;
       items10 = [, ];
       items10[0] = applicationId;
-      items10[1] = isIOS;
-      effect5 = closure_6.useEffect(() => {
+      items10[1] = useState;
+      effect5 = applicationId.useEffect(() => {
         function parseCsp(arg0, str) {
           const match = str.match(arg0);
           if (null !== match) {
             if (match.length >= 2) {
               const parts = match[1].split(" ");
-              const found = parts.filter((arg0) => !closure_0.includes(arg0));
+              const found = parts.filter((arg0) => !outer1_0.includes(arg0));
               str = match[1];
             }
             return [];
@@ -343,23 +347,22 @@ class BaseActivityWebView {
         }
         function _fetchAndParseCSP() {
           // CreateGeneratorClosureLongIndex (0x67)
-          const obj = callback(tmp);
-          const _fetchAndParseCSP = obj;
+          const obj = setHasInvalidUrlError(tmp);
           return obj(...arguments);
         }
         if (closure_28) {
-          let closure_0 = [-0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012340477675130861];
-          function fetchAndParseCSP() {
+          let closure_0 = ["'self'"];
+          (function fetchAndParseCSP() {
             return _fetchAndParseCSP(...arguments);
-          }();
+          })();
         }
       }, items10);
-      tmp37 = closure_6;
+      tmp37 = applicationId;
       items11 = [, ];
       items11[0] = null;
       items11[1] = first2;
       tmp39 = null != null;
-      callback3 = closure_6.useCallback((mainDocumentURL) => {
+      callback3 = applicationId.useCallback((mainDocumentURL) => {
         mainDocumentURL = mainDocumentURL.mainDocumentURL;
         if (null != combined1) {
           if (null != mainDocumentURL) {
@@ -385,9 +388,9 @@ class BaseActivityWebView {
         if (null != activityUrlOverride) {
           str = activityUrlOverride;
         }
-        const toURLSafeResult = callback2(hasInvalidUrlError[25]).toURLSafe(str);
-        const obj2 = callback2(hasInvalidUrlError[25]);
-        const toURLSafeResult1 = callback2(hasInvalidUrlError[25]).toURLSafe(mainDocumentURL.url);
+        const toURLSafeResult = outer1_1(hasInvalidUrlError[25]).toURLSafe(str);
+        const obj2 = outer1_1(hasInvalidUrlError[25]);
+        const toURLSafeResult1 = outer1_1(hasInvalidUrlError[25]).toURLSafe(mainDocumentURL.url);
         return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
       }, items11);
       if (tmp39) {
@@ -397,27 +400,27 @@ class BaseActivityWebView {
         tmp39 = null != str;
       }
       releaseFrameId = tmp39;
-      tmp40 = closure_6;
-      ref = closure_6.useRef(null);
+      tmp40 = applicationId;
+      ref = applicationId.useRef(null);
       useRef = ref;
-      tmp42 = closure_6;
-      callback4 = closure_6.useCallback((arg0) => {
+      tmp42 = applicationId;
+      callback4 = applicationId.useCallback((arg0) => {
         const current = ref.current;
         if (null != current) {
-          current.injectJavaScript(callback2(hasInvalidUrlError[26])(arg0));
+          current.injectJavaScript(outer1_1(hasInvalidUrlError[26])(arg0));
         }
       }, []);
       onLoadError = callback4;
       items12 = [, , ];
       items12[0] = webViewKey;
       origin = undefined;
-      tmp44 = closure_6;
+      tmp44 = applicationId;
       if (null != url) {
         origin = url.origin;
       }
       items12[1] = origin;
       items12[2] = callback4;
-      tmp47 = closure_6;
+      tmp47 = applicationId;
       items13 = [, , , , , ];
       items13[0] = rect;
       items13[1] = isPipOrGridMode;
@@ -425,7 +428,7 @@ class BaseActivityWebView {
       items13[3] = memo;
       items13[4] = callback4;
       items13[5] = safeAreasConfig;
-      callback5 = closure_6.useCallback((nativeEvent) => {
+      callback5 = applicationId.useCallback((nativeEvent) => {
         if (null == webViewKey) {
           const _JSON = JSON;
           const parsed = JSON.parse(nativeEvent.nativeEvent.data);
@@ -442,23 +445,22 @@ class BaseActivityWebView {
             if (null != url) {
               origin1 = url.origin;
             }
-            callback2(hasInvalidUrlError[27]).handleMessage(parsed, origin1, callback4);
-            const obj = callback2(hasInvalidUrlError[27]);
+            outer1_1(hasInvalidUrlError[27]).handleMessage(parsed, origin1, callback4);
+            const obj = outer1_1(hasInvalidUrlError[27]);
           }
         }
       }, items12);
-      effect6 = closure_6.useEffect(() => {
+      effect6 = applicationId.useEffect(() => {
         function _tryInjectJavaScript() {
           // CreateGeneratorClosureLongIndex (0x67)
-          const obj = callback(tmp);
-          const _tryInjectJavaScript = obj;
+          const obj = setHasInvalidUrlError(tmp);
           return obj(...arguments);
         }
-        if (tmp39) {
+        if (c32) {
           if (null != memo) {
-            function tryInjectJavaScript() {
+            (function tryInjectJavaScript() {
               return _tryInjectJavaScript(...arguments);
-            }();
+            })();
           }
         }
       }, items13);
@@ -468,7 +470,7 @@ class BaseActivityWebView {
           }
           obj1 = {};
           left = undefined;
-          tmp49 = getSafeArea;
+          tmp49 = useState;
           if (null != safeAreasConfig) {
             left = safeAreasConfig.left;
           }
@@ -482,7 +484,7 @@ class BaseActivityWebView {
           }
           obj1.left = tmp49(left, num);
           right = undefined;
-          tmp52 = getSafeArea;
+          tmp52 = useState;
           if (null != safeAreasConfig) {
             right = safeAreasConfig.right;
           }
@@ -496,7 +498,7 @@ class BaseActivityWebView {
           }
           obj1.right = tmp52(right, num2);
           top = undefined;
-          tmp55 = getSafeArea;
+          tmp55 = useState;
           if (null != safeAreasConfig) {
             top = safeAreasConfig.top;
           }
@@ -510,7 +512,7 @@ class BaseActivityWebView {
           }
           obj1.top = tmp55(top, num3);
           bottom = undefined;
-          tmp58 = getSafeArea;
+          tmp58 = useState;
           if (null != safeAreasConfig) {
             bottom = safeAreasConfig.bottom;
           }
@@ -523,20 +525,20 @@ class BaseActivityWebView {
             num4 = bottom1;
           }
           obj1.bottom = tmp58(bottom, num4);
-          tmp61 = isIOS;
-          if (isIOS) {
-            tmp63 = arg1;
-            tmp64 = dependencyMap;
+          tmp61 = useState;
+          if (useState) {
+            tmp63 = hasFrameId;
+            tmp64 = hasInvalidUrlError;
             num5 = 18;
-            obj6 = arg1(dependencyMap[18]);
+            obj6 = require("safeAreaInitJs");
             injectedJavascriptForIOS = obj6.createInjectedJavascriptForIOS(obj1);
           }
           tmp66Result = null;
           if (null != str) {
-            tmp67 = arg1;
-            tmp68 = dependencyMap;
+            tmp67 = hasFrameId;
+            tmp68 = hasInvalidUrlError;
             num6 = 13;
-            tmp66 = jsx;
+            tmp66 = channelId;
             obj2 = {};
             obj2.style = tmp.webView;
             obj2.ref = ref;
@@ -560,12 +562,12 @@ class BaseActivityWebView {
             _HermesInternal4 = HermesInternal;
             str9 = "/";
             obj5.path = "/" + first1 + "/";
-            obj5.directory = require("module_0");
+            obj5.directory = require("asyncGeneratorStep");
             items14 = [];
             items14[0] = obj5;
             obj4.pathHandlers = items14;
             obj2.androidAssetLoaderConfig = obj4;
-            obj2.originWhitelist = [null];
+            obj2.originWhitelist = ["*"];
             str10 = "never";
             obj2.overScrollMode = "never";
             obj2.scrollEnabled = false;
@@ -578,13 +580,13 @@ class BaseActivityWebView {
             obj2.temporaryParentNodeTag = context;
             obj2.messagingWithWebViewKeyEnabled = null != webViewKey;
             obj2.onMessage = callback5;
-            tmp69 = isIOS;
-            obj2.allowFileAccess = isIOS;
+            tmp69 = useState;
+            obj2.allowFileAccess = useState;
             obj2.injectedJavaScript = injectedJavascriptForIOS;
             obj2.injectedJavaScriptForMainFrameOnly = false;
-            tmp70 = isIOS;
+            tmp70 = useState;
             tmp71 = undefined;
-            if (isIOS) {
+            if (useState) {
               tmp71 = callback3;
             }
             obj2.onShouldStartLoadWithRequest = tmp71;
@@ -594,15 +596,15 @@ class BaseActivityWebView {
             obj2.minimumFontSize = 1;
             obj2.bounces = false;
             obj2.allowsProtectedMedia = true;
-            tmp66Result = tmp66(arg1(dependencyMap[13]).WebView, obj2);
+            tmp66Result = tmp66(require("WebView").WebView, obj2);
           }
           return tmp66Result;
         }
       }
       return null;
     } else {
-      tmp23 = isIOS;
-      if (isIOS) {
+      tmp23 = useState;
+      if (useState) {
         _HermesInternal2 = HermesInternal;
         str5 = "file://";
         combined1 = "file://" + str;
@@ -623,41 +625,25 @@ class BaseActivityWebView {
 function useHasInvalidUrlErrorState() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(dependencyMap[28])(first) };
+  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8284)(first) };
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-const Linking = arg1(dependencyMap[3]).Linking;
-let closure_8 = importDefault(dependencyMap[4]);
-({ ActivityPlatform: closure_9, DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY: closure_10 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-({ ComponentActions: closure_11, AnalyticEvents: closure_12 } = arg1(dependencyMap[6]));
-const jsx = arg1(dependencyMap[7]).jsx;
-const tmp3 = arg1(dependencyMap[6]);
-let closure_14 = arg1(dependencyMap[8]).createStyles({ webView: { backgroundColor: "transparent" } });
-let importDefaultResult = importDefault(dependencyMap[9]);
+({ ActivityPlatform: closure_9, DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY: closure_10 } = items3);
+({ ComponentActions: closure_11, AnalyticEvents: closure_12 } = ME);
+let closure_14 = _createForOfIteratorHelperLoose.createStyles({ webView: { backgroundColor: "transparent" } });
 importDefaultResult = new importDefaultResult("EmbeddedActivityWebView");
-const obj = arg1(dependencyMap[8]);
-let closure_16 = arg1(dependencyMap[10]).isIOS();
-const obj2 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/activities/native/EmbeddedActivityWebView.tsx");
+set = set.isIOS();
+const result = set.fileFinishedImporting("modules/activities/native/EmbeddedActivityWebView.tsx");
 
 export default function EmbeddedActivityWebView(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const currentEmbeddedActivity = channelId.currentEmbeddedActivity;
-  const importDefault = currentEmbeddedActivity;
   const applicationId = channelId.applicationId;
-  const importAll = applicationId;
-  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
+  let obj = { channelId: 0, currentEmbeddedActivity: 0, applicationId: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(channelId, obj);
   const tmp3 = useHasInvalidUrlErrorState();
   const hasInvalidUrlError = tmp3.hasInvalidUrlError;
-  const dependencyMap = hasInvalidUrlError;
   const hadInvalidUrlError = tmp3.hadInvalidUrlError;
-  let closure_4 = hadInvalidUrlError;
   obj = {};
   if (null != currentEmbeddedActivity) {
     if (null != currentEmbeddedActivity.customId) {
@@ -704,7 +690,13 @@ export default function EmbeddedActivityWebView(channelId) {
     channelId
   };
   const merged1 = Object.assign(merged);
-  return <BaseActivityWebView {...obj} />;
+  return <BaseActivityWebView hasFrameId={function hasFrameId() {
+    return currentEmbeddedActivity(hasInvalidUrlError[30]).hasFrameId();
+  }} getOrCreateFrameId={function getOrCreateFrameId() {
+    return currentEmbeddedActivity(hasInvalidUrlError[30]).getOrCreateFrameId();
+  }} releaseFrameId={function releaseFrameId() {
+    return currentEmbeddedActivity(hasInvalidUrlError[30]).releaseFrameId();
+  }} hasInvalidUrlError={hasInvalidUrlError} setHasInvalidUrlError={tmp3.setHasInvalidUrlError} hadInvalidUrlError={hadInvalidUrlError} deepLinkQueryParams={obj} applicationId={applicationId} channelId={channelId} />;
 };
 export { BaseActivityWebView };
 export { useHasInvalidUrlErrorState };

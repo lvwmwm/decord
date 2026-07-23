@@ -1,24 +1,28 @@
-// Module ID: 15614
-// Function ID: 119109
-// Dependencies: []
+// Module ID: 15731
+// Function ID: 121282
+// Dependencies: [31, 10226, 33, 15718, 10489, 2]
 
-// Module 15614
-const ActivityPanelModes = arg1(dependencyMap[1]).ActivityPanelModes;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function LeaveActivityButton(arg0) {
-  ({ frame: closure_0, setMode: closure_1 } = arg0);
-  return jsx(arg1(dependencyMap[3]).BaseLeaveActivityButton, {
+// Module 15731
+import { ActivityPanelModes } from "ActivityPanelModes";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const memoResult = require("result").memo(function LeaveActivityButton(arg0) {
+  let importDefault;
+  let require;
+  ({ frame: require, setMode: importDefault } = arg0);
+  return jsx(require(15718) /* BaseLeaveActivityButton */.BaseLeaveActivityButton, {
     onPress() {
-      callback(constants.DISCONNECTED);
+      callback(outer1_3.DISCONNECTED);
       const timerId = setTimeout(() => {
-        let obj = callback(closure_2[4]);
-        obj = { applicationId: applicationId.applicationId };
+        let obj = outer2_1(outer2_2[4]);
+        obj = { applicationId: outer1_0.applicationId };
         obj.leaveFrame(obj);
       }, 400);
     }
   });
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/frames/panel/native/LeaveActivityButton.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/frames/panel/native/LeaveActivityButton.tsx");
 
 export default memoResult;

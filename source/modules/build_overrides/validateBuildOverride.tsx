@@ -1,53 +1,59 @@
-// Module ID: 12182
-// Function ID: 93653
+// Module ID: 12296
+// Function ID: 95804
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 1194, 4047, 653, 1212, 22, 2]
 // Exports: default
 
-// Module 12182 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12296 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { BUILD_OVERRIDE_TARGET_NAMES as closure_5 } from "BUILD_OVERRIDE_TARGET_NAMES";
+import { PublicReleaseChannels } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,35 +90,31 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = arg1(dependencyMap[2]).BUILD_OVERRIDE_TARGET_NAMES;
-const PublicReleaseChannels = arg1(dependencyMap[3]).PublicReleaseChannels;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/build_overrides/validateBuildOverride.tsx");
+const result = require("BUILD_OVERRIDE_TARGET_NAMES").fileFinishedImporting("modules/build_overrides/validateBuildOverride.tsx");
 
-export default function validateBuildOverride(targetBuildOverride) {
+export default function validateBuildOverride(targetBuildOverride, closure_6) {
   let allowedVersions;
   let expiresAt;
   let releaseChannel;
   let validForUserIds;
   if (null != targetBuildOverride) {
-    if (null != arg1) {
+    if (null != closure_6) {
       ({ releaseChannel, expiresAt, validForUserIds, allowedVersions } = targetBuildOverride);
       const _Object = Object;
       const keys = Object.keys(targetBuildOverride.targetBuildOverride);
-      if (0 === obj13.intersection(keys, arg1).length) {
+      if (0 === obj13.intersection(keys, closure_6).length) {
         let obj = { valid: false };
-        const intl5 = arg1(dependencyMap[4]).intl;
+        const intl5 = require(1212) /* getSystemLocale */.intl;
         obj = {};
         const mapped = keys.map((arg0) => {
           let str = "unknown";
-          if (null != closure_5[arg0]) {
+          if (null != outer1_5[arg0]) {
             str = tmp;
           }
           return str;
         });
         obj.requestedTargets = mapped.join(", ");
-        obj.reason = intl5.formatToPlainString(arg1(dependencyMap[4]).t.wySUzv, obj);
+        obj.reason = intl5.formatToPlainString(require(1212) /* getSystemLocale */.t.wySUzv, obj);
         return obj;
       } else {
         if (null != releaseChannel) {
@@ -127,9 +129,9 @@ export default function validateBuildOverride(targetBuildOverride) {
               const str5 = releaseChannel.charAt(0);
             }
             const obj1 = { valid: false };
-            const intl4 = arg1(dependencyMap[4]).intl;
+            const intl4 = require(1212) /* getSystemLocale */.intl;
             const obj2 = { releaseChannel: formatted };
-            obj1.reason = intl4.formatToPlainString(arg1(dependencyMap[4]).t.GOEF0C, obj2);
+            obj1.reason = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.GOEF0C, obj2);
             return obj1;
           }
         }
@@ -166,9 +168,9 @@ export default function validateBuildOverride(targetBuildOverride) {
           }
           if (!flag) {
             obj = { valid: false };
-            const intl = arg1(dependencyMap[4]).intl;
+            const intl = require(1212) /* getSystemLocale */.intl;
             const obj3 = { releaseChannel: allowedVersions.join(", ") };
-            obj.reason = intl.formatToPlainString(arg1(dependencyMap[4]).t.GOEF0C, obj3);
+            obj.reason = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.GOEF0C, obj3);
             return obj;
           }
         }
@@ -182,8 +184,8 @@ export default function validateBuildOverride(targetBuildOverride) {
           const _Date2 = Date;
           if (time < Date.now()) {
             const obj4 = { valid: false };
-            const intl3 = arg1(dependencyMap[4]).intl;
-            obj4.reason = intl3.string(arg1(dependencyMap[4]).t.8eRE6S);
+            const intl3 = require(1212) /* getSystemLocale */.intl;
+            obj4.reason = intl3.string(require(1212) /* getSystemLocale */.t["8eRE6S"]);
             let obj5 = obj4;
           }
           return obj5;
@@ -191,18 +193,18 @@ export default function validateBuildOverride(targetBuildOverride) {
         if (validForUserIds.length > 0) {
           if (!validForUserIds.includes(id.getId())) {
             obj5 = { valid: false };
-            const intl2 = arg1(dependencyMap[4]).intl;
-            obj5.reason = intl2.string(arg1(dependencyMap[4]).t.qZgV0a);
+            const intl2 = require(1212) /* getSystemLocale */.intl;
+            obj5.reason = intl2.string(require(1212) /* getSystemLocale */.t.qZgV0a);
           }
         }
         const obj6 = { valid: true };
         obj5 = obj6;
       }
-      const obj13 = importDefault(dependencyMap[5]);
+      obj13 = importDefault(22);
     }
   }
   const obj7 = { valid: false };
-  const intl6 = arg1(dependencyMap[4]).intl;
-  obj7.reason = intl6.string(arg1(dependencyMap[4]).t.d34xi4);
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj7.reason = intl6.string(require(1212) /* getSystemLocale */.t.d34xi4);
   return obj7;
 };

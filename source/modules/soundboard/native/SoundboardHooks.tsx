@@ -1,40 +1,41 @@
-// Module ID: 15637
-// Function ID: 119409
+// Module ID: 15754
+// Function ID: 121582
 // Name: useSoundButtonStyleConfig
-// Dependencies: [0, 0, 0, 4294967295, 0, 0, 0, 0, 0]
+// Dependencies: [5, 31, 4122, 1278, 15747, 5188, 1450, 566, 3976, 1331, 5733, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 15637 (useSoundButtonStyleConfig)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import { ACTION_SHEET_MAX_WIDTH } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 15754 (useSoundButtonStyleConfig)
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import SOUND_BUTTON_HEIGHT from "SOUND_BUTTON_HEIGHT";
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
 
-let closure_6 = importDefault(dependencyMap[3]);
-({ SOUNDS_PER_ROW: closure_7, SOUND_ROW_PADDING: closure_8 } = require("__exportStarResult1"));
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/soundboard/native/SoundboardHooks.tsx");
+let closure_7;
+let closure_8;
+const require = arg1;
+({ SOUNDS_PER_ROW: closure_7, SOUND_ROW_PADDING: closure_8 } = SOUND_BUTTON_HEIGHT);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/soundboard/native/SoundboardHooks.tsx");
 
 export const useSoundButtonStyleConfig = function useSoundButtonStyleConfig() {
-  return { buttonWidth: (Math.min(ACTION_SHEET_MAX_WIDTH, importDefault(dependencyMap[6])().width) - closure_8) / closure_7 };
+  return { buttonWidth: (Math.min(ACTION_SHEET_MAX_WIDTH, importDefault(1450)().width) - closure_8) / closure_7 };
 };
 export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSounds(shouldFetch) {
   shouldFetch = shouldFetch.shouldFetch;
-  const arg1 = shouldFetch;
-  const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => saturation.saturation);
-  const obj = arg1(dependencyMap[7]);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = shouldFetch(566).useStateFromStores(items, () => outer1_5.saturation);
+  let obj = shouldFetch(566);
   const items1 = [closure_6];
-  const items2 = [stateFromStores, arg1(dependencyMap[7]).useStateFromStores(items1, () => shouldFetch(closure_2[8]).isThemeDark(theme.theme)), shouldFetch];
+  const items2 = [stateFromStores, shouldFetch(566).useStateFromStores(items1, () => shouldFetch(outer1_2[8]).isThemeDark(outer1_6.theme)), shouldFetch];
   const effect = React.useEffect(() => {
     function _fetchAndHydrateColors() {
       // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback(tmp);
-      const _fetchAndHydrateColors = obj;
+      const obj = outer2_3(tmp);
       return obj(...arguments);
     }
-    !function fetchAndHydrateColors() {
+    !(function fetchAndHydrateColors() {
       return _fetchAndHydrateColors(...arguments);
-    }();
+    })();
   }, items2);
 };

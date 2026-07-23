@@ -1,14 +1,15 @@
-// Module ID: 6699
-// Function ID: 51886
+// Module ID: 6704
+// Function ID: 51918
 // Name: shouldLogClientHeartbeatSkipped
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: shouldLogClientHeartbeatSkipped
 
-// Module 6699 (shouldLogClientHeartbeatSkipped)
-const _module = require(dependencyMap[0]);
-let closure_0 = _module.createApexExperiment({ defaultConfig: { logHeartbeatSkipped: false }, variations: { [1]: { logHeartbeatSkipped: true } } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/analytics_sessions/SkippedClientHeartbeatExperiment.tsx");
+// Module 6704 (shouldLogClientHeartbeatSkipped)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-02-client-heartbeat-skipped", kind: "user", defaultConfig: { logHeartbeatSkipped: false }, variations: { [1]: { logHeartbeatSkipped: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/analytics_sessions/SkippedClientHeartbeatExperiment.tsx");
 
 export const shouldLogClientHeartbeatSkipped = function shouldLogClientHeartbeatSkipped() {
   return config.getConfig({ location: "shouldLogClientHeartbeatSkipped" }).logHeartbeatSkipped;

@@ -1,19 +1,21 @@
 // Module ID: 1013
-// Function ID: 11044
+// Function ID: 11045
 // Name: items
-// Dependencies: []
+// Dependencies: [1014, 1016, 1020, 1018, 1022, 1023]
 
 // Module 1013 (items)
+const require = arg1;
+let dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const items = ["Array", "isArray"];
+const items = [1800, 3000];
 arg5.FCPThresholds = items;
 arg5.onFCP = function onFCP(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   if (arguments.length > 1) {
-    let closure_1 = {};
-    arg1(closure_1[0]).whenActivated(() => {
-      const reportAllChanges = callback(reportAllChanges[1]).getVisibilityWatcher();
-      const obj = callback(reportAllChanges[1]);
+    const dependencyMap = {};
+    _require(1014).whenActivated(() => {
+      reportAllChanges = callback(reportAllChanges[1]).getVisibilityWatcher();
+      let obj = callback(reportAllChanges[1]);
       const metric = callback(reportAllChanges[2]).initMetric("FCP");
       const obj2 = callback(reportAllChanges[2]);
       const observeResult = callback(reportAllChanges[4]).observe("paint", function handleEntries(arg0) {
@@ -40,12 +42,12 @@ arg5.onFCP = function onFCP(arg0) {
               let tmp8 = callback(true);
             }
           }
-          // continue
+          continue;
         }
       });
       if (observeResult) {
         const obj4 = callback(reportAllChanges[5]);
-        const callback = obj4.bindReporter(callback, metric, metric, reportAllChanges.reportAllChanges);
+        callback = obj4.bindReporter(callback, metric, outer1_2, reportAllChanges.reportAllChanges);
       }
     });
   }

@@ -1,22 +1,23 @@
-// Module ID: 12884
-// Function ID: 98398
+// Module ID: 12998
+// Function ID: 100554
 // Name: Checkbox
-// Dependencies: []
+// Dependencies: [31, 27, 33, 12999, 13000, 2]
 // Exports: default
 
-// Module 12884 (Checkbox)
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/void/Checkbox/native/Checkbox.tsx");
+// Module 12998 (Checkbox)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const result = require("jsxProd").fileFinishedImporting("design/void/Checkbox/native/Checkbox.tsx");
 
 export default function Checkbox(style) {
   const obj = { style: style.style };
   if (style.selected) {
-    obj.source = tmp3(tmp4[3]);
+    obj.source = tmp3(12999);
     let tmp5 = obj;
   } else {
-    obj.source = tmp3(tmp4[4]);
+    obj.source = tmp3(13000);
     tmp5 = obj;
   }
   return <Image {...tmp5} />;

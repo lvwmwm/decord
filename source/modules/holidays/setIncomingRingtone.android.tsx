@@ -1,13 +1,13 @@
-// Module ID: 15952
-// Function ID: 122328
+// Module ID: 16069
+// Function ID: 124501
 // Name: setIncomingRingtone
-// Dependencies: []
+// Dependencies: [27, 2]
 // Exports: setIncomingRingtone
 
-// Module 15952 (setIncomingRingtone)
-const NativeModules = require(dependencyMap[0]).NativeModules;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/holidays/setIncomingRingtone.android.tsx");
+// Module 16069 (setIncomingRingtone)
+import { NativeModules } from "get ActivityIndicator";
+
+const result = require("set").fileFinishedImporting("modules/holidays/setIncomingRingtone.android.tsx");
 
 export const setIncomingRingtone = function setIncomingRingtone(call_ringing, arg1) {
   const DCDNotificationCategoryUtils = NativeModules.DCDNotificationCategoryUtils;

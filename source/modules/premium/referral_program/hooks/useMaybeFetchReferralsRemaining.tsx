@@ -1,38 +1,41 @@
-// Module ID: 7419
-// Function ID: 59627
+// Module ID: 7424
+// Function ID: 59661
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: []
+// Dependencies: [31, 1849, 6689, 1851, 566, 7425, 7426, 6636, 1872, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 7419 (useMaybeFetchReferralsRemaining)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ PremiumTypes: closure_6, FractionalPremiumStates: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/referral_program/hooks/useMaybeFetchReferralsRemaining.tsx");
+// Module 7424 (useMaybeFetchReferralsRemaining)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import GuildFeatures from "GuildFeatures";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ PremiumTypes: closure_6, FractionalPremiumStates: closure_7 } = GuildFeatures);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/referral_program/hooks/useMaybeFetchReferralsRemaining.tsx");
 
 export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRemaining(flag) {
   if (flag === undefined) {
     flag = false;
   }
-  const arg1 = flag;
-  let importDefault;
-  const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = arg1(dependencyMap[4]);
-  const hasDiscountApplied = arg1(dependencyMap[5]).useHasDiscountApplied();
-  const obj2 = arg1(dependencyMap[5]);
-  const hasActiveTrial = arg1(dependencyMap[6]).useHasActiveTrial();
-  const tmp4 = importDefault(dependencyMap[7])();
+  let fetched;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = flag(566).useStateFromStores(items, () => outer1_4.getCurrentUser());
+  const obj = flag(566);
+  const hasDiscountApplied = flag(7425).useHasDiscountApplied();
+  const obj2 = flag(7425);
+  const hasActiveTrial = flag(7426).useHasActiveTrial();
+  const tmp4 = fetched(6636)();
   let verified;
   if (null != stateFromStores) {
     verified = stateFromStores.verified;
   }
-  let fetched = true === verified;
+  fetched = true === verified;
   if (fetched) {
-    fetched = arg1(dependencyMap[8]).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
-    const obj4 = arg1(dependencyMap[8]);
+    fetched = flag(1872).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
+    const obj4 = flag(1872);
   }
   if (fetched) {
     fetched = tmp4.fetched;
@@ -46,7 +49,6 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
   if (fetched) {
     fetched = !hasActiveTrial;
   }
-  importDefault = fetched;
   const items1 = [fetched, flag];
   const effect = React.useEffect(() => {
     let tmp = fetched;
@@ -54,7 +56,7 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
       tmp = !flag;
     }
     if (tmp) {
-      const result = closure_5.checkAndFetchReferralsRemaining();
+      const result = outer1_5.checkAndFetchReferralsRemaining();
     }
   }, items1);
 };

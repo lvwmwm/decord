@@ -1,31 +1,36 @@
-// Module ID: 8222
-// Function ID: 64972
+// Module ID: 8228
+// Function ID: 65009
 // Name: NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG
-// Dependencies: []
+// Dependencies: [31, 27, 1278, 33, 1273, 689, 4130, 566, 3840, 8229, 8231, 8232, 2]
 // Exports: NameplateDummyUserPreview
 
-// Module 8222 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_4 = importDefault(dependencyMap[2]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
+// Module 8228 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = {};
-obj = { padding: importDefault(dependencyMap[5]).space.PX_4, avatarMarginRight: importDefault(dependencyMap[5]).space.PX_4, placeholderBarHeight: 6 };
-obj[arg1(dependencyMap[4]).AvatarSizes.XSMALL_20] = obj;
-obj[arg1(dependencyMap[4]).AvatarSizes.XSMALL] = {};
-obj = { padding: importDefault(dependencyMap[5]).space.PX_8, avatarMarginRight: importDefault(dependencyMap[5]).space.PX_8, placeholderBarHeight: 14 };
-obj[arg1(dependencyMap[4]).AvatarSizes.NORMAL] = obj;
-const tmp3 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
+obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_4, avatarMarginRight: require("_createForOfIteratorHelperLoose").space.PX_4, placeholderBarHeight: 6 };
+obj[require("Button").AvatarSizes.XSMALL_20] = obj;
+obj[require("Button").AvatarSizes.XSMALL] = { padding: 6, avatarMarginRight: 6, placeholderBarHeight: 8 };
+obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_8, avatarMarginRight: require("_createForOfIteratorHelperLoose").space.PX_8, placeholderBarHeight: 14 };
+obj[require("Button").AvatarSizes.NORMAL] = obj;
+let closure_8 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
   let obj = {};
-  obj = { paddingVertical: "<string:1912603085>", flexDirection: true, minHeight: true, flex: true, marginHorizontal: true, flexDirection: true };
+  obj = { padding: null, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", width: "100%", position: "relative" };
   obj.padding = obj[arg0].padding;
-  obj.borderRadius = importDefault(dependencyMap[5]).radii.sm;
+  obj.borderRadius = importDefault(689).radii.sm;
   obj.container = obj;
-  obj = { borderRadius: importDefault(dependencyMap[5]).radii.round, marginRight: tmp.avatarMarginRight };
+  obj = { borderRadius: importDefault(689).radii.round, marginRight: tmp.avatarMarginRight };
   let str = "transparent";
   if (arg1) {
-    str = importDefault(dependencyMap[5]).colors.BORDER_STRONG;
+    str = importDefault(689).colors.BORDER_STRONG;
   }
   obj.backgroundColor = str;
   obj.avatarContainer = obj;
@@ -36,13 +41,12 @@ let closure_8 = arg1(dependencyMap[6]).createStyles((arg0, arg1) => {
   }
   obj1.opacity = num;
   obj.avatar = obj1;
-  obj.placeholderBar = { borderRadius: importDefault(dependencyMap[5]).radii.md, height: obj[arg0].placeholderBarHeight, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
-  const obj2 = { borderRadius: importDefault(dependencyMap[5]).radii.md, height: obj[arg0].placeholderBarHeight, backgroundColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
-  obj.nameplate = { borderRadius: importDefault(dependencyMap[5]).radii.sm };
+  obj.placeholderBar = { borderRadius: importDefault(689).radii.md, height: obj[arg0].placeholderBarHeight, backgroundColor: importDefault(689).colors.BORDER_STRONG };
+  const obj2 = { borderRadius: importDefault(689).radii.md, height: obj[arg0].placeholderBarHeight, backgroundColor: importDefault(689).colors.BORDER_STRONG };
+  obj.nameplate = { borderRadius: importDefault(689).radii.sm };
   return obj;
 });
-const obj4 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/collectibles/nameplates/native/NameplateDummyUserPreview.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/nameplates/native/NameplateDummyUserPreview.tsx");
 
 export const NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG = obj;
 export const NameplateDummyUserPreview = function NameplateDummyUserPreview(hideAvatar) {
@@ -55,32 +59,32 @@ export const NameplateDummyUserPreview = function NameplateDummyUserPreview(hide
   }
   let NORMAL = hideAvatar.avatarSize;
   if (NORMAL === undefined) {
-    NORMAL = arg1(dependencyMap[4]).AvatarSizes.NORMAL;
+    NORMAL = require(1273) /* Button */.AvatarSizes.NORMAL;
   }
   ({ animate, nameplate, style } = hideAvatar);
   if (animate === undefined) {
     animate = false;
   }
   const tmp3 = callback2(NORMAL, flag);
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_4];
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
   obj = { style: items1 };
-  const items1 = [tmp3.container, style];
-  const stateFromStores = obj.useStateFromStores(items, () => callback(closure_2[8]).isThemeDark(theme.theme));
+  items1 = [tmp3.container, style];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_0(outer1_2[8]).isThemeDark(outer1_4.theme));
   obj = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
-  const items2 = [callback(importDefault(dependencyMap[9]), obj), , ];
+  const items2 = [callback(importDefault(8229), obj), , ];
   const obj1 = { style: tmp3.avatarContainer };
   const obj2 = {};
   if (stateFromStores) {
-    let tmp10 = tmp9[10];
+    let tmp10 = 8231;
   } else {
-    tmp10 = tmp9[11];
+    tmp10 = 8232;
   }
   obj2.source = importDefault(tmp10);
   obj2.size = NORMAL;
-  obj2.aria-hidden = true;
+  obj2["aria-hidden"] = true;
   obj2.style = tmp3.avatar;
-  obj1.children = callback(arg1(dependencyMap[4]).Avatar, obj2);
+  obj1.children = callback(require(1273) /* Button */.Avatar, obj2);
   items2[1] = callback(View, obj1);
   const items3 = [tmp3.placeholderBar, { width: hideAvatar.width }];
   items2[2] = callback(View, { style: items3 });

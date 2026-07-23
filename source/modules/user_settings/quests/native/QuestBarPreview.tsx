@@ -1,23 +1,25 @@
-// Module ID: 13961
-// Function ID: 106102
+// Module ID: 14075
+// Function ID: 108258
 // Name: QuestBarPreview
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 13998, 14076, 14077, 2]
 // Exports: QuestBarPreview
 
-// Module 13961 (QuestBarPreview)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = { overlay: {} };
-obj = { left: importDefault(dependencyMap[4]).space.PX_16, right: importDefault(dependencyMap[4]).space.PX_16 };
-obj.questDockContainer = obj;
-let closure_5 = obj.createStyles(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/quests/native/QuestBarPreview.tsx");
+// Module 14075 (QuestBarPreview)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = { overlay: { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1000, elevation: 1000, pointerEvents: "box-none" } };
+_createForOfIteratorHelperLoose = { position: "absolute", bottom: 0, left: require("_createForOfIteratorHelperLoose").space.PX_16, right: require("_createForOfIteratorHelperLoose").space.PX_16, zIndex: 1001, elevation: 1001 };
+_createForOfIteratorHelperLoose.questDockContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/quests/native/QuestBarPreview.tsx");
 
 export const QuestBarPreview = function QuestBarPreview(quest) {
   quest = quest.quest;
-  const tmp = callback();
+  const tmp = _createForOfIteratorHelperLoose();
   let tmp2 = null;
   if (null != quest) {
     tmp2 = null;
@@ -26,13 +28,13 @@ export const QuestBarPreview = function QuestBarPreview(quest) {
       obj = { style: tmp.questDockContainer };
       obj = {};
       const obj1 = {};
-      const obj2 = { "Bool(false)": null, "Bool(false)": null, quest };
+      const obj2 = { isRendered: true, isVisibleToUser: true, quest };
       obj1.value = obj2;
-      obj1.children = jsx(arg1(dependencyMap[7]).QuestDockWithEntranceAnimation, {});
-      obj.children = jsx(importDefault(dependencyMap[6]).Provider, obj1);
-      obj.children = jsx(arg1(dependencyMap[5]).QuestDockExternalCoordinationContextProvider, obj);
-      obj.children = <View {...obj} />;
-      tmp2 = <View {...obj} />;
+      obj1.children = jsx(require(14077) /* QuestDockWithGestureAnimation */.QuestDockWithEntranceAnimation, {});
+      obj.children = jsx(importDefault(14076).Provider, {});
+      obj.children = jsx(require(13998) /* QuestDockMode */.QuestDockExternalCoordinationContextProvider, {});
+      obj.children = <View />;
+      tmp2 = <View />;
     }
   }
   return tmp2;

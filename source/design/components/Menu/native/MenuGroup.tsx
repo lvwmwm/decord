@@ -1,20 +1,24 @@
-// Module ID: 12929
-// Function ID: 98547
+// Module ID: 13043
+// Function ID: 100703
 // Name: MenuGroup
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 
-// Module 12929 (MenuGroup)
+// Module 13043 (MenuGroup)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let StyleSheet;
-const importAllResult = importAll(dependencyMap[0]);
-({ StyleSheet, View: closure_1 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
+let closure_1;
+let closure_2;
+let closure_3;
+({ StyleSheet, View: closure_1 } = get_ActivityIndicator);
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
 let obj = {};
-obj = { marginLeft: 0, height: StyleSheet.hairlineWidth, backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE, marginTop: -1 * StyleSheet.hairlineWidth };
+obj = { marginLeft: 0, height: StyleSheet.hairlineWidth, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginTop: -1 * StyleSheet.hairlineWidth };
 obj.divider = obj;
-let closure_4 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
+let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
 const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   let children;
   let style;
@@ -27,13 +31,13 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   }
   const items = [tmp5, ];
   const Children = arg1.Children;
-  items[1] = Children.map(children, (icon, self) => {
+  items[1] = Children.map(children, (icon) => {
     let cloneElementResult = icon;
-    if (0 === self) {
+    if (0 === arg1) {
       cloneElementResult = icon;
-      if (self.isValidElement(icon)) {
-        const obj = { ref: self };
-        cloneElementResult = self.cloneElement(icon, obj);
+      if (closure_0.isValidElement(icon)) {
+        const obj = { ref: closure_0 };
+        cloneElementResult = closure_0.cloneElement(icon, obj);
       }
     }
     return cloneElementResult;
@@ -41,6 +45,6 @@ const forwardRefResult = importAllResult.forwardRef((arg0, arg1) => {
   obj.children = items;
   return closure_3(closure_1, obj);
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Menu/native/MenuGroup.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Menu/native/MenuGroup.tsx");
 
 export const MenuGroup = forwardRefResult;

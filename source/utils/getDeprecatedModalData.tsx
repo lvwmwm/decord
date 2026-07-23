@@ -1,13 +1,14 @@
-// Module ID: 4335
-// Function ID: 38272
+// Module ID: 4339
+// Function ID: 38304
 // Name: getDeprecatedModalData
-// Dependencies: []
+// Dependencies: [4122, 653, 2]
 // Exports: default
 
-// Module 4335 (getDeprecatedModalData)
-let closure_0 = importDefault(dependencyMap[0]);
-const ModalAnimation = arg1(dependencyMap[1]).ModalAnimation;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("utils/getDeprecatedModalData.tsx");
+// Module 4339 (getDeprecatedModalData)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ModalAnimation } from "ME";
+
+const result = require("set").fileFinishedImporting("utils/getDeprecatedModalData.tsx");
 
 export default function getDeprecatedModalData(modal, key, props) {
   let tmp = arg3;

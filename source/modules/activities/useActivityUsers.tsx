@@ -1,30 +1,32 @@
-// Module ID: 15714
-// Function ID: 120086
+// Module ID: 15831
+// Function ID: 122259
 // Name: useActivityUsers
-// Dependencies: []
+// Dependencies: [1849, 1347, 624, 2]
 // Exports: default
 
-// Module 15714 (useActivityUsers)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/activities/useActivityUsers.tsx");
+// Module 15831 (useActivityUsers)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/activities/useActivityUsers.tsx");
 
 export default function useActivityUsers(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const dependencyMap = arg1;
-  const items = [closure_3, closure_2];
+  let items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
   const items1 = [arg1, arg0];
-  return arg1(dependencyMap[2]).useStateFromStoresArray(items, () => {
-    if (null == arg1) {
+  return _require(624).useStateFromStoresArray(items, () => {
+    if (null == closure_1) {
       return [];
     } else {
-      const embeddedActivitiesForChannel = embeddedActivitiesForChannel.getEmbeddedActivitiesForChannel(arg1);
-      const found = embeddedActivitiesForChannel.find((applicationId) => applicationId.applicationId === closure_0);
+      const embeddedActivitiesForChannel = outer1_3.getEmbeddedActivitiesForChannel(closure_1);
+      const found = embeddedActivitiesForChannel.find((applicationId) => applicationId.applicationId === outer1_0);
       if (null == found) {
         let items = [];
       } else {
         const _Array = Array;
-        const mapped = Array.from(found.userIds).map((arg0) => user.getUser(arg0));
+        const mapped = Array.from(found.userIds).map((arg0) => outer2_2.getUser(arg0));
         items = mapped.filter((arg0) => null != arg0);
         const arr = Array.from(found.userIds);
       }

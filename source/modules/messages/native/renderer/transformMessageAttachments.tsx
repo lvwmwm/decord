@@ -1,24 +1,33 @@
-// Module ID: 7892
-// Function ID: 62830
+// Module ID: 7898
+// Function ID: 62867
 // Name: transformMessageAttachments
-// Dependencies: [7898, 22, 2, 27, 7732, 1212, 2396, 2, 27, 1348, 3756, 4142, 653]
+// Dependencies: [7622, 653, 1360, 4317, 7789, 477, 7899, 7788, 1212, 7900, 4671, 7807, 2]
 // Exports: default
 
-// Module 7892 (transformMessageAttachments)
-import { AttachmentType } from "buildPlatformPollResources";
-import { MessageAttachmentFlags } from "apply";
-import ME from "ME";
+// Module 7898 (transformMessageAttachments)
+import { AttachmentType } from "Changeset";
+import { MessageAttachmentFlags } from "ME";
 
-const result = ME.fileFinishedImporting("modules/messages/native/renderer/transformMessageAttachments.tsx");
+let result = require("hasFlag").fileFinishedImporting("modules/messages/native/renderer/transformMessageAttachments.tsx");
 
 export default function transformMessageAttachments(arg0) {
+  let AttachmentType;
+  let MessageAttachmentFlags;
   let attachments;
-  ({ attachments, uploadAttachments: closure_0, shouldInlineAttachmentMedia: closure_1, gifAutoPlay: closure_2, viewImageDescriptions: closure_3, useReducedMotion: closure_4, shouldObscureSpoiler: closure_5, themedBackgroundColor: closure_6, enabledContentHarmTypeFlags: closure_7, shouldAgeVerify: closure_8, colors: closure_9 } = arg0);
+  let closure_5;
+  let closure_6;
+  let closure_7;
+  let closure_8;
+  let closure_9;
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ attachments, uploadAttachments: require, shouldInlineAttachmentMedia: importDefault, gifAutoPlay: dependencyMap, viewImageDescriptions: AttachmentType, useReducedMotion: MessageAttachmentFlags, shouldObscureSpoiler: closure_5, themedBackgroundColor: closure_6, enabledContentHarmTypeFlags: closure_7, shouldAgeVerify: closure_8, colors: closure_9 } = arg0);
   const found = attachments.filter((flags) => {
     let tmp = null == flags.flags;
     if (!tmp) {
-      tmp = !lib(closure_2[2]).hasFlag(flags.flags, constants.IS_THUMBNAIL);
-      const obj = lib(closure_2[2]);
+      tmp = !outer1_0(outer1_2[2]).hasFlag(flags.flags, outer1_4.IS_THUMBNAIL);
+      const obj = outer1_0(outer1_2[2]);
     }
     return tmp;
   });
@@ -38,36 +47,36 @@ export default function transformMessageAttachments(arg0) {
     let width;
     ({ proxy_url, url, filename, width, height, flags } = attachment);
     ({ size, description, duration_secs, waveform, id, placeholder, placeholder_version } = attachment);
-    let obj = lib(closure_2[3]);
+    let obj = outer1_0(outer1_2[3]);
     const isImageFileResult = obj.isImageFile(filename);
-    let obj1 = lib(closure_2[3]);
-    let obj2 = lib(closure_2[3]);
+    let obj1 = outer1_0(outer1_2[3]);
+    let obj2 = outer1_0(outer1_2[3]);
     const isVideoFileResult = obj2.isVideoFile(filename);
     const isAudioFileResult = obj1.isAudioFile(filename);
     let tmp5 = isImageFileResult;
-    const obj4 = lib(closure_2[3]);
+    const obj4 = outer1_0(outer1_2[3]);
     if (!isImageFileResult) {
       tmp5 = isVideoFileResult;
     }
-    let tmp6 = null != lib;
+    let tmp6 = null != length;
     if (tmp6) {
-      tmp6 = arg1 < lib.length;
+      tmp6 = arg1 < length.length;
     }
     if (tmp6) {
-      const size2 = lib[arg1];
+      const size2 = length[arg1];
     }
-    lib(closure_2[2]);
+    outer1_0(outer1_2[2]);
     if (isImageFileResult) {
       if (null != width) {
         if (null != height) {
-          const obj5 = callback(closure_2[4]);
+          const obj5 = outer1_1(outer1_2[4]);
           let imageSrc = obj5.getImageSrc(proxy_url, width, height, !closure_2);
         }
         let str4 = "default";
         if (obj6.isAndroid()) {
           str4 = "default";
           if (isVideoFileResult) {
-            const AndroidExoPlayerHttpEngineExperiment = lib(closure_2[6]).AndroidExoPlayerHttpEngineExperiment;
+            const AndroidExoPlayerHttpEngineExperiment = outer1_0(outer1_2[6]).AndroidExoPlayerHttpEngineExperiment;
             obj = { location: "transformMessageAttachments" };
             str4 = AndroidExoPlayerHttpEngineExperiment.getConfig(obj).httpEngine;
           }
@@ -86,9 +95,9 @@ export default function transformMessageAttachments(arg0) {
             height2 = size2.height;
           }
         }
-        const obj6 = lib(closure_2[5]);
+        obj6 = outer1_0(outer1_2[5]);
         let num5 = 0;
-        if (callback) {
+        if (closure_1) {
           num5 = 0;
           if (tmp5) {
             num5 = 0;
@@ -97,10 +106,10 @@ export default function transformMessageAttachments(arg0) {
             }
           }
         }
-        const result = lib(closure_2[7]).sanitizeMediaDimension(num5);
-        const obj8 = lib(closure_2[7]);
+        const result = outer1_0(outer1_2[7]).sanitizeMediaDimension(num5);
+        const obj8 = outer1_0(outer1_2[7]);
         let num6 = 0;
-        if (callback) {
+        if (closure_1) {
           num6 = 0;
           if (tmp5) {
             num6 = 0;
@@ -109,17 +118,17 @@ export default function transformMessageAttachments(arg0) {
             }
           }
         }
-        const result1 = lib(closure_2[7]).sanitizeMediaDimension(num6);
-        const obj9 = lib(closure_2[7]);
+        const result1 = outer1_0(outer1_2[7]).sanitizeMediaDimension(num6);
+        const obj9 = outer1_0(outer1_2[7]);
         let num7 = 0;
         if (null != flags) {
           num7 = flags;
         }
         let tmp40;
-        if (obj10.hasFlag(num7, constants.IS_CLIP)) {
+        if (obj10.hasFlag(num7, outer1_4.IS_CLIP)) {
           obj = {};
-          const intl = lib(closure_2[8]).intl;
-          obj.attachmentTagText = intl.string(lib(closure_2[8]).t.gESDiU);
+          const intl = outer1_0(outer1_2[8]).intl;
+          obj.attachmentTagText = intl.string(outer1_0(outer1_2[8]).t.gESDiU);
           obj.attachmentTagIconType = "clip";
           ({ clipTagBackgroundColor: obj11.attachmentTagBackgroundColor, clipTagTextColor: obj11.attachmentTagTextColor } = closure_9);
           tmp40 = obj;
@@ -132,7 +141,7 @@ export default function transformMessageAttachments(arg0) {
             localUri = imageSrc;
             if (tmp5) {
               localUri = imageSrc;
-              if (callback) {
+              if (closure_1) {
                 localUri = size2.localUri;
               }
             }
@@ -140,34 +149,34 @@ export default function transformMessageAttachments(arg0) {
         }
         obj1.url = localUri;
         obj1.videoUrl = tmp14;
-        obj1.filename = callback(closure_2[9])(attachment);
-        const obj10 = lib(closure_2[2]);
-        obj1.size = callback(closure_2[10]).filesize(size);
+        obj1.filename = outer1_1(outer1_2[9])(attachment);
+        obj10 = outer1_0(outer1_2[2]);
+        obj1.size = outer1_1(outer1_2[10]).filesize(size);
         obj1.description = description;
-        const intl2 = lib(closure_2[8]).intl;
-        const obj13 = callback(closure_2[10]);
-        obj1.alt = intl2.string(lib(closure_2[8]).t.jCV1Tz).toUpperCase();
-        const intl3 = lib(closure_2[8]).intl;
-        obj1.altTextHint = intl3.string(lib(closure_2[8]).t.fSiQ3A);
+        const intl2 = outer1_0(outer1_2[8]).intl;
+        const obj13 = outer1_1(outer1_2[10]);
+        obj1.alt = intl2.string(outer1_0(outer1_2[8]).t.jCV1Tz).toUpperCase();
+        const intl3 = outer1_0(outer1_2[8]).intl;
+        obj1.altTextHint = intl3.string(outer1_0(outer1_2[8]).t.fSiQ3A);
         obj1.showDescription = closure_3;
         obj1.durationSecs = duration_secs;
         obj1.waveform = waveform;
         obj1.width = result;
         obj1.height = result1;
-        const intl4 = lib(closure_2[8]).intl;
+        const intl4 = outer1_0(outer1_2[8]).intl;
         const string = intl4.string;
-        const t = lib(closure_2[8]).t;
+        const t = outer1_0(outer1_2[8]).t;
         if (isVideoFileResult) {
-          let stringResult = string(t.BEWw/7);
+          let stringResult = string(t["BEWw/7"]);
         } else {
           stringResult = string(t.IPzNKE);
         }
         obj1.hint = stringResult;
-        const intl5 = lib(closure_2[8]).intl;
+        const intl5 = outer1_0(outer1_2[8]).intl;
         const string2 = intl5.string;
-        const t2 = lib(closure_2[8]).t;
+        const t2 = outer1_0(outer1_2[8]).t;
         if (isVideoFileResult) {
-          let string2Result = string2(t2./SCpvi);
+          let string2Result = string2(t2["/SCpvi"]);
         } else {
           string2Result = string2(t2.fKyfca);
         }
@@ -181,7 +190,7 @@ export default function transformMessageAttachments(arg0) {
         }
         obj1.attachmentType = VIDEO;
         obj1.id = id;
-        obj1.isAnimated = !constants;
+        obj1.isAnimated = !closure_4;
         let uploaderId;
         if (null != size2) {
           uploaderId = size2.uploaderId;
@@ -208,17 +217,17 @@ export default function transformMessageAttachments(arg0) {
         obj1.mediaViewerHttpEngine = str4;
         obj1.srcIsAnimated = tmp11;
         obj1.inlinePlaybackDisabled = isWebPlayerVideoFileResult;
-        const str7 = intl2.string(lib(closure_2[8]).t.jCV1Tz);
+        const str7 = intl2.string(outer1_0(outer1_2[8]).t.jCV1Tz);
         obj2 = { attachment, shouldObscureSpoiler: closure_5, enabledContentHarmTypeFlags: closure_7, shouldAgeVerify: closure_8 };
-        const merged = Object.assign(lib(closure_2[11]).getAttachmentObscurityProps(obj2));
+        const merged = Object.assign(outer1_0(outer1_2[11]).getAttachmentObscurityProps(obj2));
         const merged1 = Object.assign(tmp40);
         return obj1;
       }
     }
     let tmp12 = isVideoFileResult;
     if (isVideoFileResult) {
-      let tmp13 = callback;
-      if (!callback) {
+      let tmp13 = closure_1;
+      if (!closure_1) {
         tmp13 = null != size2;
       }
       tmp12 = tmp13;
@@ -237,7 +246,7 @@ export default function transformMessageAttachments(arg0) {
         }
       }
       imageSrc = text;
-      const tmp14 = tmp17;
+      tmp14 = tmp17;
     }
   });
 };

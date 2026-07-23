@@ -1,33 +1,36 @@
-// Module ID: 11372
-// Function ID: 88416
+// Module ID: 11382
+// Function ID: 88466
 // Name: getCurrentAndNextResourceChannel
-// Dependencies: []
+// Dependencies: [4333, 566, 2]
 // Exports: default, usePreviousAndNextResourceChannel
 
-// Module 11372 (getCurrentAndNextResourceChannel)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/guild_onboarding_home/getNextResourceChannel.tsx");
+// Module 11382 (getCurrentAndNextResourceChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/getNextResourceChannel.tsx");
 
 export default function getCurrentAndNextResourceChannel(arg0, arg1) {
-  const resourceChannels = resourceChannels.getResourceChannels(arg0);
-  const findIndexResult = resourceChannels.findIndex((channelId) => channelId.channelId === arg1);
+  let closure_0 = arg1;
+  resourceChannels = resourceChannels.getResourceChannels(arg0);
+  const findIndexResult = resourceChannels.findIndex((channelId) => channelId.channelId === closure_0);
   if (findIndexResult < 0) {
-    let items = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
+    let items = [null, null];
   } else {
     items = [resourceChannels[findIndexResult], resourceChannels[(findIndexResult + 1) % resourceChannels.length]];
   }
   return items;
 };
 export const usePreviousAndNextResourceChannel = function usePreviousAndNextResourceChannel(guild_id, id) {
-  id = guild_id;
+  const _require = guild_id;
   const dependencyMap = id;
-  const items = [closure_2];
-  const stateFromStores = id(dependencyMap[1]).useStateFromStores(items, () => resourceChannels.getResourceChannels(arg0));
-  const findIndexResult = stateFromStores.findIndex((channelId) => channelId.channelId === arg1);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getResourceChannels(closure_0));
+  const findIndexResult = stateFromStores.findIndex((channelId) => channelId.channelId === closure_1);
   if (findIndexResult >= 0) {
     if (stateFromStores.length > 1) {
       if (2 === stateFromStores.length) {
-        const items1 = [true, stateFromStores[1 - findIndexResult]];
+        const items1 = [null, stateFromStores[1 - findIndexResult]];
         let items2 = items1;
       } else {
         items2 = [stateFromStores[(findIndexResult - 1) % stateFromStores.length], stateFromStores[(findIndexResult + 1) % stateFromStores.length]];
@@ -35,5 +38,5 @@ export const usePreviousAndNextResourceChannel = function usePreviousAndNextReso
     }
     return items2;
   }
-  items2 = [0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000313243198316887, -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023201793093501323];
+  items2 = [null, null];
 };

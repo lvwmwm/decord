@@ -1,18 +1,24 @@
-// Module ID: 9885
-// Function ID: 76548
+// Module ID: 9892
+// Function ID: 76589
 // Name: NoResults
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 4126, 2]
 // Exports: default
 
-// Module 9885 (NoResults)
-importAll(dependencyMap[0]);
-({ View: closure_2, ScrollView: closure_3 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp4 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ headerContainer: { paddingHorizontal: 16 }, container: {}, image: { marginBottom: 12 }, textContainer: { "Bool(false)": null, "Bool(false)": null }, text: { "Bool(true)": "/assets/design/components/Illustration/native/redesign/generated/images", "Bool(true)": 160 }, fullHeightContentContainer: {}, fullHeightScrollContent: { flexGrow: 1 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NoResults.tsx");
+// Module 9892 (NoResults)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2;
+let closure_3;
+let closure_4;
+let closure_5;
+const require = arg1;
+({ View: closure_2, ScrollView: closure_3 } = get_ActivityIndicator);
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ headerContainer: { paddingHorizontal: 16 }, container: { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: 16, paddingBottom: 16, paddingTop: 32 }, image: { marginBottom: 12 }, textContainer: { justifyContent: "center", alignItems: "center" }, text: { textAlign: "center", marginTop: 4 }, fullHeightContentContainer: { paddingBottom: 0, paddingTop: 0 }, fullHeightScrollContent: { flexGrow: 1 } });
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NoResults.tsx");
 
 export default function NoResults(illustration) {
   let children;
@@ -28,7 +34,7 @@ export default function NoResults(illustration) {
   illustration = illustration.illustration;
   const tmp = callback2();
   let obj = { style: items, alwaysBounceVertical: false };
-  const items = [tmp.headerContainer];
+  items = [tmp.headerContainer];
   let fullHeightScrollContent = fullHeight;
   if (fullHeight) {
     fullHeightScrollContent = tmp.fullHeightScrollContent;
@@ -49,11 +55,12 @@ export default function NoResults(illustration) {
   }
   const items2 = [tmp6, ];
   const obj1 = { style: tmp.textContainer };
-  const items3 = [callback(arg1(dependencyMap[4]).Text, { style: tmp.text, children: title }), ];
+  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title };
+  const items3 = [callback(require(4126) /* Text */.Text, obj2), ];
   let tmp11 = null;
   if (null != subtitle) {
-    const obj3 = { cachedAt: "he", edpbxy: "<string:105791744>", style: tmp.text, children: subtitle };
-    tmp11 = callback(arg1(dependencyMap[4]).Text, obj3);
+    const obj3 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp.text, children: subtitle };
+    tmp11 = callback(require(4126) /* Text */.Text, obj3);
   }
   items3[1] = tmp11;
   obj1.children = items3;

@@ -1,47 +1,47 @@
 // Module ID: 788
-// Function ID: 8908
+// Function ID: 8909
 // Name: debugSymbolicatorIntegration
-// Dependencies: []
+// Dependencies: [789, 976, 992, 999, 1086, 1087, 1088, 1090, 1091, 1092, 1101, 1102, 1103, 1104, 1105, 1109, 1110, 1128, 1138, 1140, 1141, 1097, 1129, 1143, 1146, 1147, 1149, 1150, 1151, 1111]
 
 // Module 788 (debugSymbolicatorIntegration)
 
-export const debugSymbolicatorIntegration = require(dependencyMap[0]).debugSymbolicatorIntegration;
-export const deviceContextIntegration = require(dependencyMap[1]).deviceContextIntegration;
-export const reactNativeErrorHandlersIntegration = require(dependencyMap[2]).reactNativeErrorHandlersIntegration;
-export const nativeLinkedErrorsIntegration = require(dependencyMap[3]).nativeLinkedErrorsIntegration;
-export const nativeReleaseIntegration = require(dependencyMap[4]).nativeReleaseIntegration;
-export const eventOriginIntegration = require(dependencyMap[5]).eventOriginIntegration;
-export const sdkInfoIntegration = require(dependencyMap[6]).sdkInfoIntegration;
-export const reactNativeInfoIntegration = require(dependencyMap[7]).reactNativeInfoIntegration;
-export const modulesLoaderIntegration = require(dependencyMap[8]).modulesLoaderIntegration;
-export const hermesProfilingIntegration = require(dependencyMap[9]).hermesProfilingIntegration;
-export const screenshotIntegration = require(dependencyMap[10]).screenshotIntegration;
-export const viewHierarchyIntegration = require(dependencyMap[11]).viewHierarchyIntegration;
-export const expoContextIntegration = require(dependencyMap[12]).expoContextIntegration;
-export const spotlightIntegration = require(dependencyMap[13]).spotlightIntegration;
-export const mobileReplayIntegration = require(dependencyMap[14]).mobileReplayIntegration;
-export const feedbackIntegration = require(dependencyMap[15]).feedbackIntegration;
-export const browserReplayIntegration = require(dependencyMap[16]).browserReplayIntegration;
-export const appStartIntegration = require(dependencyMap[17]).appStartIntegration;
-export const nativeFramesIntegration = require(dependencyMap[18]).nativeFramesIntegration;
-export const createNativeFramesIntegrations = require(dependencyMap[18]).createNativeFramesIntegrations;
-export const stallTrackingIntegration = require(dependencyMap[19]).stallTrackingIntegration;
-export const userInteractionIntegration = require(dependencyMap[20]).userInteractionIntegration;
-export const createReactNativeRewriteFrames = require(dependencyMap[21]).createReactNativeRewriteFrames;
-export const appRegistryIntegration = require(dependencyMap[22]).appRegistryIntegration;
-export const timeToDisplayIntegration = require(dependencyMap[23]).timeToDisplayIntegration;
-export const breadcrumbsIntegration = require(dependencyMap[24]).breadcrumbsIntegration;
-export const primitiveTagIntegration = require(dependencyMap[25]).primitiveTagIntegration;
-export const logEnricherIntegration = require(dependencyMap[26]).logEnricherIntegration;
-export const graphqlIntegration = require(dependencyMap[27]).graphqlIntegration;
-export const supabaseIntegration = require(dependencyMap[28]).supabaseIntegration;
-export const browserApiErrorsIntegration = require(dependencyMap[29]).browserApiErrorsIntegration;
-export const dedupeIntegration = require(dependencyMap[29]).dedupeIntegration;
-export const functionToStringIntegration = require(dependencyMap[29]).functionToStringIntegration;
-export const browserGlobalHandlersIntegration = require(dependencyMap[29]).globalHandlersIntegration;
-export const httpClientIntegration = require(dependencyMap[29]).httpClientIntegration;
-export const httpContextIntegration = require(dependencyMap[29]).httpContextIntegration;
-export const inboundFiltersIntegration = require(dependencyMap[29]).inboundFiltersIntegration;
-export const browserLinkedErrorsIntegration = require(dependencyMap[29]).linkedErrorsIntegration;
-export const rewriteFramesIntegration = require(dependencyMap[29]).rewriteFramesIntegration;
-export const extraErrorDataIntegration = require(dependencyMap[29]).extraErrorDataIntegration;
+export const debugSymbolicatorIntegration = require("processEvent").debugSymbolicatorIntegration;
+export const deviceContextIntegration = require("processEvent").deviceContextIntegration;
+export const reactNativeErrorHandlersIntegration = require("reactNativeErrorHandlersIntegration").reactNativeErrorHandlersIntegration;
+export const nativeLinkedErrorsIntegration = require("walkErrorTree").nativeLinkedErrorsIntegration;
+export const nativeReleaseIntegration = require("processEvent").nativeReleaseIntegration;
+export const eventOriginIntegration = require("eventOriginIntegration").eventOriginIntegration;
+export const sdkInfoIntegration = require("items").sdkInfoIntegration;
+export const reactNativeInfoIntegration = require("processEvent").reactNativeInfoIntegration;
+export const modulesLoaderIntegration = require("createProcessEvent").modulesLoaderIntegration;
+export const hermesProfilingIntegration = require("startProfiling").hermesProfilingIntegration;
+export const screenshotIntegration = require("processEvent").screenshotIntegration;
+export const viewHierarchyIntegration = require("processEvent").viewHierarchyIntegration;
+export const expoContextIntegration = require("getExpoUpdatesContext").expoContextIntegration;
+export const spotlightIntegration = require("getDefaultSidecarUrl").spotlightIntegration;
+export const mobileReplayIntegration = require("mobileReplayIntegrationNoop").mobileReplayIntegration;
+export const feedbackIntegration = require("_getClientIntegration").feedbackIntegration;
+export const browserReplayIntegration = require("browserReplayIntegrationNoop").browserReplayIntegration;
+export const appStartIntegration = require("_captureAppStart").appStartIntegration;
+export const nativeFramesIntegration = require("fetchNativeFrames").nativeFramesIntegration;
+export const createNativeFramesIntegrations = require("fetchNativeFrames").createNativeFramesIntegrations;
+export const stallTrackingIntegration = require("stallTrackingIntegration").stallTrackingIntegration;
+export const userInteractionIntegration = require("userInteractionIntegration").userInteractionIntegration;
+export const createReactNativeRewriteFrames = require("ANDROID_DEFAULT_BUNDLE_NAME").createReactNativeRewriteFrames;
+export const appRegistryIntegration = require("patchAppRegistryRunApplication").appRegistryIntegration;
+export const timeToDisplayIntegration = require("isDeadlineExceeded").timeToDisplayIntegration;
+export const breadcrumbsIntegration = require("breadcrumbsIntegration").breadcrumbsIntegration;
+export const primitiveTagIntegration = require("primitiveTagIntegration").primitiveTagIntegration;
+export const logEnricherIntegration = require("setLogAttribute").logEnricherIntegration;
+export const graphqlIntegration = require("graphqlIntegration").graphqlIntegration;
+export const supabaseIntegration = require("supabaseIntegration").supabaseIntegration;
+export const browserApiErrorsIntegration = require("init").browserApiErrorsIntegration;
+export const dedupeIntegration = require("init").dedupeIntegration;
+export const functionToStringIntegration = require("init").functionToStringIntegration;
+export const browserGlobalHandlersIntegration = require("init").globalHandlersIntegration;
+export const httpClientIntegration = require("init").httpClientIntegration;
+export const httpContextIntegration = require("init").httpContextIntegration;
+export const inboundFiltersIntegration = require("init").inboundFiltersIntegration;
+export const browserLinkedErrorsIntegration = require("init").linkedErrorsIntegration;
+export const rewriteFramesIntegration = require("init").rewriteFramesIntegration;
+export const extraErrorDataIntegration = require("init").extraErrorDataIntegration;

@@ -1,9 +1,20 @@
 // Module ID: 1921
-// Function ID: 21732
+// Function ID: 21733
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5, 1922, 1316, 3741, 1212, 566, 686, 2]
 
 // Module 1921 (_isNativeReflectConstruct)
+import _setAppLocale from "_setAppLocale";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { setAppLocale } from "_setAppLocale";
+import closure_10 from "_isNativeReflectConstruct";
+import { systemLocale } from "getSystemLocale";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,14 +26,14 @@ function _isNativeReflectConstruct() {
 }
 async function _getSystemLocale() {
   let prop;
-  if (null != callback2(closure_2[8])) {
-    const app = callback2(closure_2[8]).app;
+  if (null != outer2_1(outer2_2[8])) {
+    const app = outer2_1(outer2_2[8]).app;
     if (null != app) {
       prop = app.getPreferredSystemLanguages;
     }
   }
   if (null != prop) {
-    const app2 = callback2(closure_2[8]).app;
+    const app2 = outer2_1(outer2_2[8]).app;
     const preferredSystemLanguages = app2.getPreferredSystemLanguages();
     const tmp6 = yield preferredSystemLanguages.then((arg0) => arg0[0]);
     if (null != tmp6) {
@@ -31,7 +42,7 @@ async function _getSystemLocale() {
       }
     }
   }
-  return callback(closure_2[9]).systemLocale;
+  return outer2_0(outer2_2[9]).systemLocale;
 }
 function handleUpdate() {
   const localization = settings.settings.localization;
@@ -49,40 +60,31 @@ function handleUpdate() {
     flag = value !== currentLocale;
   }
   if (flag) {
-    const currentLocale = value;
+    currentLocale = value;
     setAppLocale(value);
     flag = true;
   }
   return flag;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const setAppLocale = arg1(dependencyMap[6]).setAppLocale;
-let closure_10 = importDefault(dependencyMap[7]);
-const currentLocale = arg1(dependencyMap[9]).intl.currentLocale;
-const systemLocale = arg1(dependencyMap[9]).systemLocale;
-function getSystemLocale() {
+let currentLocale = require("getSystemLocale").intl.currentLocale;
+(function getSystemLocale() {
   return _getSystemLocale(...arguments);
-}().then((arg0) => {
-  const systemLocale = arg0;
+})().then((arg0) => {
+  let closure_12 = arg0;
 });
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class LocaleStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, LocaleStore);
-      obj = closure_6(LocaleStore);
-      tmp2 = closure_5;
-      if (closure_13()) {
+      tmp = outer1_3(this, LocaleStore);
+      obj = outer1_6(LocaleStore);
+      tmp2 = outer1_5;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -91,59 +93,56 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = LocaleStore;
   callback2(LocaleStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_10);
-      callback5();
-      callback3(closure_11);
+      this.waitFor(outer1_10);
+      outer1_15();
+      outer1_9(outer1_11);
     }
   };
   const items = [obj, , ];
   obj = {
     key: "locale",
     get() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[1] = obj;
   obj = {
     key: "systemLocale",
     get() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[2] = obj;
   return callback(LocaleStore, items);
-}(importDefault(dependencyMap[10]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "LocaleStore";
-tmp3 = new tmp3(importDefault(dependencyMap[11]), {
+tmp3 = new tmp3(require("dispatcher"), {
   OVERLAY_INITIALIZE: handleUpdate,
   CACHE_LOADED: handleUpdate,
   CONNECTION_OPEN: handleUpdate,
   USER_SETTINGS_PROTO_UPDATE: handleUpdate,
   USER_SETTINGS_LOCALE_OVERRIDE: function handleLocaleOverride(locale) {
     locale = locale.locale;
-    const currentLocale = locale;
     setAppLocale(locale);
   }
 });
-const obj = {
+let obj = {
   OVERLAY_INITIALIZE: handleUpdate,
   CACHE_LOADED: handleUpdate,
   CONNECTION_OPEN: handleUpdate,
   USER_SETTINGS_PROTO_UPDATE: handleUpdate,
   USER_SETTINGS_LOCALE_OVERRIDE: function handleLocaleOverride(locale) {
     locale = locale.locale;
-    const currentLocale = locale;
     setAppLocale(locale);
   }
 };
-const promise = function getSystemLocale() {
+const promise = (function getSystemLocale() {
   return _getSystemLocale(...arguments);
-}();
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/LocaleStore.tsx");
+})();
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/LocaleStore.tsx");
 
 export default tmp3;

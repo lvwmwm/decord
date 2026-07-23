@@ -1,45 +1,45 @@
-// Module ID: 11532
-// Function ID: 89832
+// Module ID: 11542
+// Function ID: 89881
 // Name: useBadgeableMarketingVersion
-// Dependencies: [4096, 11541, 1934, 2, 27, 4120, 4017, 4016, 33, 4126, 689]
+// Dependencies: [57, 31, 4017, 4018, 1345, 1334, 566, 11535, 5802, 1336, 2]
 // Exports: default, useAutoDismissGuildPowerupsNewBadge
 
-// Module 11532 (useBadgeableMarketingVersion)
-import showActionSheet from "showActionSheet";
-import GuildPowerupsBottomSheetHeader from "GuildPowerupsBottomSheetHeader";
-import maybeLoadBundle from "maybeLoadBundle";
-import { GuildPowerupNewPerkMarketingVersion as closure_6 } from "result2";
-import { ContentDismissActionType } from "get ActivityIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 11542 (useBadgeableMarketingVersion)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GuildPowerupNewPerkMarketingVersion as closure_6 } from "BoostedGuildTiers";
+import { ContentDismissActionType } from "ContentDismissActionType";
 
+const require = arg1;
 function useBadgeableMarketingVersion(guildId) {
-  const arg1 = guildId;
-  const items = [maybeLoadBundle];
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items, () => stateForGuild.getStateForGuild(arg0));
+  const _require = guildId;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getStateForGuild(closure_0));
   let tmp3;
-  const obj = arg1(dependencyMap[6]);
+  const obj = _require(566);
   if (null != stateFromStores) {
     tmp3 = stateFromStores;
   }
-  const tmp2Result = importDefault(dependencyMap[7])(guildId, tmp3);
+  const tmp2Result = importDefault(11535)(guildId, tmp3);
   let num = 0;
   if (tmp2Result >= constants.GUILD_THEME) {
     num = tmp2Result;
   }
   return num;
 }
-let closure_8 = require("_isNativeReflectConstruct").DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE;
-const result = _createForOfIteratorHelperLoose.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsNewBadge.tsx");
+let closure_8 = require("DismissibleContent").DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsNewBadge.tsx");
 
 export default function useGuildPowerupsNewBadge(guildId) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  let arg1;
-  let importDefault;
+  let _require;
+  let c1;
   const tmp = useBadgeableMarketingVersion(guildId);
-  let obj = arg1(dependencyMap[8]);
+  let obj = _require(5802);
   let tmp2 = null;
   if (tmp > 0) {
     tmp2 = null;
@@ -48,33 +48,33 @@ export default function useGuildPowerupsNewBadge(guildId) {
     }
   }
   const tmp3 = callback(obj.useSelectedVersionedDismissibleContent(tmp2, tmp), 2);
-  arg1 = tmp4;
-  importDefault = tmp5;
+  _require = tmp4;
+  c1 = tmp5;
   const items = [tmp3[0] === closure_8, tmp3[1]];
   obj = {
     showNewBadgeOnRow: tmp5,
     dismissNewBadgeIfShown: React.useCallback(() => {
       let TAKE_ACTION = arg0;
       if (arg0 === undefined) {
-        TAKE_ACTION = constants.TAKE_ACTION;
+        TAKE_ACTION = outer1_7.TAKE_ACTION;
       }
-      if (tmp5) {
-        tmp4(TAKE_ACTION);
+      if (c1) {
+        _undefined(TAKE_ACTION);
       }
     }, items)
   };
   return obj;
 };
 export const useAutoDismissGuildPowerupsNewBadge = function useAutoDismissGuildPowerupsNewBadge(guildId) {
-  const arg1 = guildId;
+  let closure_0 = guildId;
   const tmp = useBadgeableMarketingVersion(guildId);
   const importDefault = tmp;
   const items = [tmp, guildId];
   const effect = React.useEffect(() => {
-    if (tmp > 0) {
-      let obj = arg0(closure_2[9]);
-      obj = { dismissAction: constants.AUTO_DISMISS, guildId: arg0 };
-      const result = obj.markVersionedDismissibleContentAsDismissed(closure_8, tmp, obj);
+    if (closure_1 > 0) {
+      let obj = guildId(outer1_2[9]);
+      obj = { dismissAction: outer1_7.AUTO_DISMISS, guildId };
+      const result = obj.markVersionedDismissibleContentAsDismissed(outer1_8, closure_1, obj);
     }
   }, items);
 };

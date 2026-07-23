@@ -1,10 +1,23 @@
 // Module ID: 1180
-// Function ID: 13405
+// Function ID: 13406
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 1173, 977, 1174, 1175, 1177, 1178, 1179]
 // Exports: getCapturedScreenshot
 
 // Module 1180 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import _callSuper from "_callSuper";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+
+let closure_10;
+let closure_11;
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,13 +27,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-({ Appearance: closure_8, Image: closure_9, Text: closure_10, TouchableOpacity: closure_11 } = arg1(dependencyMap[6]));
+({ Appearance: closure_8, Image: closure_9, Text: closure_10, TouchableOpacity: closure_11 } = get_ActivityIndicator);
 let fn = this;
 if (this) {
   fn = this.__awaiter;
@@ -28,51 +35,54 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    arg1 = arg0;
-    const dependencyMap = arg1;
-    let closure_3 = arg3;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let _callSuper = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;
@@ -83,10 +93,10 @@ function takeScreenshot() {
     if (obj) {
       return obj.resume();
     } else {
-      callback(closure_1[7]).hideScreenshotButton();
+      outer2_0(outer2_1[7]).hideScreenshotButton();
       const _setTimeout = setTimeout;
-      const timerId = setTimeout(() => callback(undefined, undefined, undefined, function*() {
-        const NATIVE = callback(closure_1[8]).NATIVE;
+      const timerId = setTimeout(() => outer3_13(undefined, undefined, undefined, function*() {
+        const NATIVE = outer5_0(outer5_1[8]).NATIVE;
         const arr = yield NATIVE.captureScreenshot();
         let str = "ErrorCapturingScreenshot";
         if (arr) {
@@ -95,51 +105,51 @@ function takeScreenshot() {
             str = arr[0];
           }
         }
-        callback(closure_1[7]).showFeedbackWidget();
+        const outer5_12 = str;
+        outer5_0(outer5_1[7]).showFeedbackWidget();
       }), 100);
     }
   });
 }
 
 export function getCapturedScreenshot() {
-  let closure_12;
-  return closure_12;
+  let c12;
+  return c12;
 }
-export const ScreenshotButton = (Component) => {
+export const ScreenshotButton = ((Component) => {
   class ScreenshotButton {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, ScreenshotButton);
+      tmp = outer1_2(this, ScreenshotButton);
       items = [];
       items[0] = Component;
-      obj = closure_5(ScreenshotButton);
-      tmp2 = closure_4;
-      if (closure_15()) {
+      obj = outer1_5(ScreenshotButton);
+      tmp2 = outer1_4;
+      if (outer1_15()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      obj2 = ScreenshotButton(closure_1[9]);
+      obj2 = ScreenshotButton(outer1_1[9]);
       result = obj2.lazyLoadFeedbackIntegration();
       return tmp2Result;
     }
   }
-  const arg1 = ScreenshotButton;
   callback2(ScreenshotButton, Component);
   let obj = {
     key: "componentDidMount",
     value: function componentDidMount() {
-      const ScreenshotButton = this;
-      this._themeListener = closure_8.addChangeListener(() => {
+      const self = this;
+      this._themeListener = outer1_8.addChangeListener(() => {
         self.forceUpdate();
       });
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
@@ -156,11 +166,11 @@ export const ScreenshotButton = (Component) => {
       let createElement;
       let createElement2;
       const self = this;
-      let obj = ScreenshotButton(closure_1[10]);
+      let obj = ScreenshotButton(outer1_1[10]);
       const theme = obj.getTheme();
-      const merged = Object.assign(Object.assign({}, ScreenshotButton(closure_1[11]).defaultScreenshotButtonConfiguration), this.props);
+      const merged = Object.assign(Object.assign({}, ScreenshotButton(outer1_1[11]).defaultScreenshotButtonConfiguration), this.props);
       obj = {};
-      let obj2 = ScreenshotButton(closure_1[12]);
+      let obj2 = ScreenshotButton(outer1_1[12]);
       const styles = this.props.styles;
       let triggerButton;
       const merged1 = Object.assign({}, obj2.defaultScreenshotButtonStyles(theme).triggerButton);
@@ -170,7 +180,7 @@ export const ScreenshotButton = (Component) => {
         }
       }
       obj.triggerButton = Object.assign(merged1, triggerButton);
-      let obj3 = ScreenshotButton(closure_1[12]);
+      let obj3 = ScreenshotButton(outer1_1[12]);
       const styles2 = self.props.styles;
       let triggerText;
       const merged2 = Object.assign({}, obj3.defaultScreenshotButtonStyles(theme).triggerText);
@@ -182,24 +192,24 @@ export const ScreenshotButton = (Component) => {
       obj.triggerText = Object.assign(merged2, triggerText);
       const styles3 = self.props.styles;
       let triggerIcon;
-      const merged3 = Object.assign({}, ScreenshotButton(closure_1[12]).defaultScreenshotButtonStyles(theme).triggerIcon);
+      const merged3 = Object.assign({}, ScreenshotButton(outer1_1[12]).defaultScreenshotButtonStyles(theme).triggerIcon);
       if (null !== styles3) {
         if (undefined !== styles3) {
           triggerIcon = styles3.triggerIcon;
         }
       }
       obj.triggerIcon = Object.assign(merged3, triggerIcon);
-      obj = { style: obj.triggerButton, onPress: closure_14, accessibilityLabel: merged.triggerAriaLabel };
+      obj = { style: obj.triggerButton, onPress: outer1_14, accessibilityLabel: merged.triggerAriaLabel };
       const obj1 = {};
-      obj2 = { uri: ScreenshotButton(closure_1[13]).screenshotIcon };
-      ({ createElement, createElement: createElement2 } = React);
+      obj2 = { uri: ScreenshotButton(outer1_1[13]).screenshotIcon };
+      ({ createElement, createElement: createElement2 } = outer1_7);
       obj1.source = obj2;
       obj1.style = obj.triggerIcon;
-      const element2 = createElement2(closure_9, obj1);
+      const element2 = createElement2(outer1_9, obj1);
       obj3 = { style: obj.triggerText, testID: "sentry-feedback-screenshot-button" };
-      return <closure_11 {......obj}>{element2}<closure_10 {......obj3}>{merged.triggerLabel}</closure_10></closure_11>;
+      return <outer1_11 style={obj.triggerButton} onPress={outer1_14} accessibilityLabel={merged.triggerAriaLabel}>{element2}<outer1_10 style={obj.triggerText} testID="sentry-feedback-screenshot-button">{merged.triggerLabel}</outer1_10></outer1_11>;
     }
   };
   items[2] = obj;
   return callback(ScreenshotButton, items);
-}(importAllResult.Component);
+})(importAllResult.Component);

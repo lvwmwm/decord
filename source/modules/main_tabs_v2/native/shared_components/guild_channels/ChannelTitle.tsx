@@ -1,25 +1,24 @@
-// Module ID: 15239
-// Function ID: 115049
-// Dependencies: []
+// Module ID: 15355
+// Function ID: 117219
+// Dependencies: [31, 4326, 33, 4130, 689, 10261, 4126, 2]
 
-// Module 15239
-const importAllResult = importAll(dependencyMap[0]);
-const UnreadSetting = arg1(dependencyMap[1]).UnreadSetting;
-const jsx = arg1(dependencyMap[2]).jsx;
-const obj2 = arg1(dependencyMap[3]);
-let closure_5 = obj2.createStyleProperties({ muted: importDefault(dependencyMap[4]).colors.TEXT_MUTED, normal: importDefault(dependencyMap[4]).colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: importDefault(dependencyMap[4]).colors.REDESIGN_CHANNEL_NAME_TEXT });
-const obj = { muted: importDefault(dependencyMap[4]).colors.TEXT_MUTED, normal: importDefault(dependencyMap[4]).colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: importDefault(dependencyMap[4]).colors.REDESIGN_CHANNEL_NAME_TEXT };
+// Module 15355
+import importAllResult from "result";
+import { UnreadSetting } from "ReadStateTypes";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyleProperties({ muted: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, normal: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHANNEL_NAME_TEXT });
+let obj = { muted: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, normal: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: require("_createForOfIteratorHelperLoose").colors.REDESIGN_CHANNEL_NAME_TEXT };
 const memoResult = importAllResult.memo(function ChannelTitle(unread) {
   let muted;
   let title;
   ({ title, muted } = unread);
-  const arg1 = muted;
   unread = unread.unread;
-  const dependencyMap = unread;
   const resolvedUnreadSetting = unread.resolvedUnreadSetting;
   const connected = unread.connected;
-  const UnreadSetting = connected;
-  let obj = arg1(dependencyMap[5]);
+  let obj = muted(unread[5]);
   const layoutStyles = obj.getLayoutStyles(unread.layout);
   const tmp2 = callback();
   const jsx = tmp2;
@@ -40,17 +39,17 @@ const memoResult = importAllResult.memo(function ChannelTitle(unread) {
         unreadOrConnected = tmp2.unreadOrConnected;
       }
     }
-    const obj = { "Null": "c5c262e40462204afd9dba1d0529e9ea", "Null": "AttachmentIcon", "Null": "png", color: unreadOrConnected };
+    const obj = { color: unreadOrConnected, paddingRight: 4, flexShrink: 1 };
     return obj;
   }, items);
-  obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, variant: layoutStyles.channelName.text.variant, style: memo };
+  obj = { variant: layoutStyles.channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo };
   let str = "";
   if (null != title) {
     str = title;
   }
   obj.children = str;
-  return jsx(arg1(dependencyMap[6]).Text, obj);
+  return jsx(muted(unread[6]).Text, { variant: layoutStyles.channelName.text.variant, lineClamp: 1, maxFontSizeMultiplier: 1.75, style: memo });
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelTitle.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelTitle.tsx");
 
 export default memoResult;

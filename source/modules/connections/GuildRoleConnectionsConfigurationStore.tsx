@@ -1,38 +1,39 @@
-// Module ID: 16189
-// Function ID: 125016
+// Module ID: 16306
+// Function ID: 127189
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1838, 566, 686, 2]
 
-// Module 16189 (_isNativeReflectConstruct)
+// Module 16306 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import dispatcher from "dispatcher";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let initialize = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return initialize;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
 const map = new Map();
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class GuildRoleConnectionsConfigurationStore {
     constructor() {
       self = this;
       tmp = GuildRoleConnectionsConfigurationStore(this, GuildRoleConnectionsConfigurationStore);
-      obj = closure_3(GuildRoleConnectionsConfigurationStore);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(GuildRoleConnectionsConfigurationStore);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,30 +42,29 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GuildRoleConnectionsConfigurationStore;
   callback2(GuildRoleConnectionsConfigurationStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_5);
+      this.waitFor(outer1_5);
     }
   };
   const items = [obj, ];
   obj = {
     key: "getGuildRoleConnectionsConfiguration",
     value(arg0) {
-      return closure_6.get(arg0);
+      return outer1_6.get(arg0);
     }
   };
   items[1] = obj;
   return callback(GuildRoleConnectionsConfigurationStore, items);
-}(importDefault(dependencyMap[6]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "GuildRoleConnectionsConfigurationStore";
-tmp3 = new tmp3(importDefault(dependencyMap[7]), {
+tmp3 = new tmp3(require("dispatcher"), {
   GUILD_ROLE_CONNECTIONS_CONFIGURATIONS_FETCH_SUCCESS: function handleFetchSuccess(roleId) {
     const result = map.set(roleId.roleId, roleId.roleConnectionConfigurations);
   }
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/connections/GuildRoleConnectionsConfigurationStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/connections/GuildRoleConnectionsConfigurationStore.tsx");
 
 export default tmp3;

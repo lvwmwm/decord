@@ -1,33 +1,42 @@
-// Module ID: 9332
-// Function ID: 72936
+// Module ID: 9339
+// Function ID: 72977
 // Name: ToastEmoji
-// Dependencies: []
+// Dependencies: [31, 4122, 1852, 33, 4130, 689, 477, 566, 1392, 5151, 4126, 1212, 4528, 3843, 3831, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9332 (ToastEmoji)
+// Module 9339 (ToastEmoji)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { EMOJI_URL_BASE_SIZE } from "set";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "set";
+import set from "set";
+
+const require = arg1;
 class ToastEmoji {
   constructor(arg0) {
     emoji = global.emoji;
-    arg1 = emoji;
-    obj = arg1(dependencyMap[7]);
+    obj = require("initialize");
     items = [];
-    items[0] = closure_4;
-    stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-    importDefault = stateFromStores;
-    tmp2 = closure_7();
+    items[0] = c4;
+    stateFromStores = obj.useStateFromStores(items, () => outer1_4.useReducedMotion);
+    closure_1 = stateFromStores;
+    tmp2 = c7();
     items1 = [, ];
     items1[0] = emoji;
     items1[1] = stateFromStores;
-    memo = importAll.useMemo(() => {
+    memo = result.useMemo(() => {
       if (null != emoji.id) {
-        let obj = stateFromStores(closure_2[8]);
+        let obj = stateFromStores(outer1_2[8]);
         obj = { id: emoji.id };
         let animated = !stateFromStores;
         if (animated) {
           animated = emoji.animated;
         }
         obj.animated = animated;
-        obj.size = closure_5;
+        obj.size = outer1_5;
         let url = obj.getEmojiURL(obj);
       } else {
         url = emoji.url;
@@ -37,7 +46,7 @@ class ToastEmoji {
     tmp4 = jsx;
     obj = { style: tmp2.toastEmoji, fastImageStyle: tmp2.toastEmojiCustom, textEmojiStyle: tmp2.toastEmojiText };
     str = "";
-    tmp5 = importDefault(dependencyMap[9]);
+    tmp5 = require("Emoji");
     if (null == emoji.id) {
       str = emoji.surrogates;
     }
@@ -47,64 +56,55 @@ class ToastEmoji {
   }
 }
 function ToastText(emoji) {
-  let obj = { variant: "text-sm/normal", style: callback().toastText };
-  const intl = arg1(dependencyMap[11]).intl;
+  let obj = { variant: "text-sm/normal", style: _createForOfIteratorHelperLoose().toastText };
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = { emojiName: emoji.emoji.name };
-  obj.children = intl.format(arg1(dependencyMap[11]).t.nKY0Fl, obj);
-  return jsx(arg1(dependencyMap[10]).Text, obj);
+  obj.children = intl.format(require(1212) /* getSystemLocale */.t.nKY0Fl, obj);
+  return jsx(require(4126) /* Text */.Text, { emojiName: emoji.emoji.name });
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const EMOJI_URL_BASE_SIZE = arg1(dependencyMap[2]).EMOJI_URL_BASE_SIZE;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { marginLeft: importDefault(dependencyMap[5]).space.PX_8, marginVertical: importDefault(dependencyMap[5]).space.PX_8 };
-obj.toastEmoji = obj;
-obj.toastEmojiCustom = {};
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.toastEmoji = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.toastEmojiCustom = { width: 24, height: 24 };
 const obj1 = {};
 let num = 16;
-if (obj5.isIOS()) {
+if (set.isIOS()) {
   num = 24;
 }
 obj1.fontSize = num;
-const obj5 = arg1(dependencyMap[6]);
 let num2;
-if (obj6.isIOS()) {
+if (set.isIOS()) {
   num2 = 32;
 }
 obj1.lineHeight = num2;
 obj1.textAlign = "center";
-obj1.color = importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_DEFAULT;
-obj.toastEmojiText = obj1;
-const obj6 = arg1(dependencyMap[6]);
-obj.toastText = { marginRight: importDefault(dependencyMap[5]).space.PX_12, marginVertical: importDefault(dependencyMap[5]).space.PX_8 };
-let closure_7 = obj.createStyles(obj);
-const obj2 = { marginRight: importDefault(dependencyMap[5]).space.PX_12, marginVertical: importDefault(dependencyMap[5]).space.PX_8 };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapEmojiUpdatedToast.tsx");
+obj1.color = require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT;
+_createForOfIteratorHelperLoose.toastEmojiText = obj1;
+_createForOfIteratorHelperLoose.toastText = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_12, marginVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = set.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapEmojiUpdatedToast.tsx");
 
 export { ToastEmoji };
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
-  const arg1 = emoji;
-  let obj = arg1(dependencyMap[12]);
+  let obj = emoji(4528);
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = arg1(dependencyMap[13]).AccessibilityAnnouncer;
-    const intl = arg1(dependencyMap[11]).intl;
+    const AccessibilityAnnouncer = emoji(3843).AccessibilityAnnouncer;
+    const intl = emoji(1212).intl;
     obj = { emojiName: emoji.name };
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(arg1(dependencyMap[11]).t.nKY0Fl, obj));
+    AccessibilityAnnouncer.announce(intl.formatToPlainString(emoji(1212).t.nKY0Fl, obj));
   } else {
     obj = {
       key: "DEFAULT_REACTION_EMOJI_UPDATED",
       icon() {
-          return callback(closure_8, { emoji });
+          return outer1_6(outer1_8, { emoji });
         },
       content() {
-          return callback(closure_9, { emoji });
+          return outer1_6(outer1_9, { emoji });
         },
       toastDurationMs: 3000
     };
-    importDefault(dependencyMap[14]).open(obj);
-    const obj2 = importDefault(dependencyMap[14]);
+    importDefault(3831).open(obj);
+    const obj2 = importDefault(3831);
   }
 };

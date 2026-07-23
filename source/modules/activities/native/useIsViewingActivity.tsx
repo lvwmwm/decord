@@ -1,22 +1,23 @@
-// Module ID: 10536
-// Function ID: 82337
+// Module ID: 10546
+// Function ID: 82387
 // Name: useIsViewingActivity
-// Dependencies: []
+// Dependencies: [4143, 10531, 3981, 10528, 566, 2]
 // Exports: useIsViewingActivity
 
-// Module 10536 (useIsViewingActivity)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/activities/native/useIsViewingActivity.tsx");
+// Module 10546 (useIsViewingActivity)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/activities/native/useIsViewingActivity.tsx");
 
 export const useIsViewingActivity = function useIsViewingActivity(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
-  let tmp = importDefault(dependencyMap[1])(channelId);
-  const isModalOpen = arg1(dependencyMap[2]).useIsModalOpen(importDefault(dependencyMap[3]));
-  const obj = arg1(dependencyMap[2]);
-  const items = [closure_3];
+  let tmp = importDefault(10531)(channelId);
+  const isModalOpen = channelId(3981).useIsModalOpen(importDefault(10528));
+  const obj = channelId(3981);
+  const items = [_isNativeReflectConstruct];
   const items1 = [channelId];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => chatOpen.getChatOpen(channelId), items1);
+  const stateFromStores = channelId(566).useStateFromStores(items, () => outer1_3.getChatOpen(channelId), items1);
   if (tmp) {
     tmp = isModalOpen;
   }

@@ -1,13 +1,13 @@
-// Module ID: 7907
-// Function ID: 62933
+// Module ID: 7913
+// Function ID: 62970
 // Name: createSurveyIndication
-// Dependencies: []
+// Dependencies: [5593, 1212, 7635, 3976, 7914, 7915, 2]
 // Exports: createSurveyIndication
 
-// Module 7907 (createSurveyIndication)
-const NotificationTypes = require(dependencyMap[0]).NotificationTypes;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/SurveyIndication.tsx");
+// Module 7913 (createSurveyIndication)
+import { NotificationTypes } from "str2";
+
+const result = require("frozen").fileFinishedImporting("modules/messages/native/renderer/row_data/SurveyIndication.tsx");
 
 export const createSurveyIndication = function createSurveyIndication(message, forcedTheme, pushFeedbackType) {
   let TOP_MESSAGE_PUSH = pushFeedbackType;
@@ -15,7 +15,7 @@ export const createSurveyIndication = function createSurveyIndication(message, f
   } else {
   }
   let obj = {};
-  const intl = require(dependencyMap[1]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj = {};
   obj = { action: "bindUserSurvey", message };
   if (null == TOP_MESSAGE_PUSH) {
@@ -24,11 +24,11 @@ export const createSurveyIndication = function createSurveyIndication(message, f
   obj.notificationType = TOP_MESSAGE_PUSH;
   obj.handleMessage = obj;
   obj.content = intl.formatToParts(_46_Iqc, obj);
-  const obj4 = require(dependencyMap[2]);
+  const obj4 = require(7635) /* frozen */;
   if (obj5.isThemeDark(forcedTheme)) {
-    let tmp6Result = tmp6(tmp7[4]);
+    let tmp6Result = tmp6(7914);
   } else {
-    tmp6Result = tmp6(tmp7[5]);
+    tmp6Result = tmp6(7915);
   }
   obj.feedbackIconUrl = obj4.getAssetUriForEmbed(tmp6Result);
   return obj;

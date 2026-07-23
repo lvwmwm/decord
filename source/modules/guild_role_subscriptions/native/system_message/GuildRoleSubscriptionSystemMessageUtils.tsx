@@ -1,23 +1,23 @@
-// Module ID: 10963
-// Function ID: 85270
+// Module ID: 10973
+// Function ID: 85319
 // Name: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
-// Dependencies: []
+// Dependencies: [653, 6691, 7679, 4324, 2]
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 10963 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");
+// Module 10973 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
+import { AnalyticEvents } from "ME";
+
+const result = require("identityHook").fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");
 
 export const handleRoleSubscriptionPurchaseSystemMessageCtaClicked = function handleRoleSubscriptionPurchaseSystemMessageCtaClicked(messageChannel, message, stickerId) {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(6691);
   obj = { channel: messageChannel, message, shouldMention: true, showMentionToggle: true };
-  obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(dependencyMap[1]).getSendMessageOptionsForReply(obj));
-  const obj2 = importDefault(dependencyMap[1]);
-  const roleSubscriptionPurchaseSystemMessageEventProperties = require(dependencyMap[2]).getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
-  const obj4 = require(dependencyMap[2]);
+  obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(6691).getSendMessageOptionsForReply(obj));
+  const obj2 = importDefault(6691);
+  const roleSubscriptionPurchaseSystemMessageEventProperties = require(7679) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
+  const obj4 = require(7679) /* identityHook */;
   obj = {};
   const merged = Object.assign(roleSubscriptionPurchaseSystemMessageEventProperties);
   obj["sticker_id"] = stickerId;
-  importDefault(dependencyMap[3]).trackWithMetadata(AnalyticEvents.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED, obj);
+  importDefault(4324).trackWithMetadata(AnalyticEvents.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED, obj);
 };

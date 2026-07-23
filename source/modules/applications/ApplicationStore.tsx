@@ -1,61 +1,70 @@
-// Module ID: 4163
-// Function ID: 35275
+// Module ID: 4167
+// Function ID: 35307
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 4153, 566, 686, 2]
 
-// Module 4163 (_isNativeReflectConstruct)
+// Module 4167 (_isNativeReflectConstruct)
+import _callSuper from "_callSuper";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+import closure_6 from "_callSuper";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _callSuper = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _callSuper;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let _callSuper = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _callSuper = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (initialize >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        initialize = tmp3 + 1;
+        obj.value = length[+initialize];
       }
       return obj;
     };
@@ -107,8 +116,8 @@ function addApplication(fromServer) {
   if (!iter.done) {
     do {
       let str2 = iter.value;
-      let tmp6 = closure_10;
-      let result4 = closure_10.set(str2.toLowerCase(), result1);
+      let tmp6 = map2;
+      let result4 = map2.set(str2.toLowerCase(), result1);
       let iter2 = tmp5();
       iter = iter2;
       done = iter2.done;
@@ -123,10 +132,10 @@ function addApplication(fromServer) {
         let iter4 = tmp9();
         iter3 = iter4;
       }
-      if (value.application instanceof closure_6) {
+      if (value.application instanceof ctor) {
         let application = value.application;
       } else {
-        application = closure_6.createFromServer(value.application);
+        application = ctor.createFromServer(value.application);
       }
       addApplication(application);
       const tmp10 = addApplication;
@@ -143,8 +152,8 @@ function handleWishlistAction(wishlistData) {
       let iter = tmp2();
       if (!iter.done) {
         do {
-          let tmp3 = closure_18;
-          let tmp4 = closure_18(iter.value);
+          let tmp3 = addApplication;
+          let tmp4 = addApplication(iter.value);
           let iter2 = tmp2();
           iter = iter2;
           done = iter2.done;
@@ -155,7 +164,7 @@ function handleWishlistAction(wishlistData) {
   return false;
 }
 function updateApplication(application) {
-  addApplication(closure_6.createFromServer(application));
+  addApplication(ctor.createFromServer(application));
 }
 function handleAppWithBot(arg0) {
   let applicationId;
@@ -167,7 +176,7 @@ function handleAppWithBot(arg0) {
     const _Date = Date;
     obj.lastUsedMs = Date.now();
   } else {
-    obj = { applicationId, lastUsedMs: tmp.lastUsedMs };
+    obj = { applicationId, lastUsedMs: tmp3.lastUsedMs };
   }
   closure_14.botUserIdToAppUsage[userId] = obj;
   const map = new Map();
@@ -175,9 +184,9 @@ function handleAppWithBot(arg0) {
   let num = 0;
   if (0 < entries.length) {
     do {
-      let tmp3 = closure_5;
-      let tmp4 = closure_5(entries[num], 2);
-      let result = map.set(tmp4[0], tmp4[1]);
+      let tmp5 = callback3;
+      let tmp6 = callback3(entries[num], 2);
+      let result = map.set(tmp6[0], tmp6[1]);
       num = num + 1;
       length = entries.length;
     } while (num < length);
@@ -186,9 +195,9 @@ function handleAppWithBot(arg0) {
   for (let num2 = 0; num2 < sorted.length; num2 = num2 + 1) {
     if (num2 >= 10) {
       let first = sorted[num2][0];
-      let tmp7 = closure_14;
+      let tmp9 = closure_14;
       let botUserIdToAppUsage = closure_14.botUserIdToAppUsage;
-      delete r1[r7];
+      delete tmp[tmp2];
     }
   }
 }
@@ -202,9 +211,9 @@ function handleApplicationWidgetConfigFetchSuccess(applications) {
     let iter = tmp2();
     if (!iter.done) {
       do {
-        let tmp3 = closure_18;
-        let tmp4 = closure_6;
-        let tmp5 = closure_18(closure_6.createFromServer(iter.value));
+        let tmp3 = addApplication;
+        let tmp4 = ctor;
+        let tmp5 = addApplication(ctor.createFromServer(iter.value));
         let iter2 = tmp2();
         iter = iter2;
         done = iter2.done;
@@ -228,9 +237,9 @@ function handleEntitlementsFetched(entitlements) {
         application = sku.application;
       }
       if (null != application) {
-        let tmp3 = closure_18;
-        let tmp4 = closure_6;
-        let tmp5 = closure_18(closure_6.createFromServer(sku.application));
+        let tmp3 = addApplication;
+        let tmp4 = ctor;
+        let tmp5 = addApplication(ctor.createFromServer(sku.application));
         flag = true;
       }
       iter3 = tmp();
@@ -240,34 +249,27 @@ function handleEntitlementsFetched(entitlements) {
   }
   return flag2;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
 let closure_7 = [];
-const map = new Map();
+let map = new Map();
 const map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
 const map4 = new Map();
-const set = new Set();
+let set = new Set();
 let closure_14 = { botUserIdToAppUsage: {} };
-let tmp8 = (PersistedStore) => {
+let tmp8 = ((PersistedStore) => {
   class ApplicationStore {
     constructor() {
       self = this;
       tmp = ApplicationStore(this, ApplicationStore);
-      obj = closure_3(ApplicationStore);
-      tmp2 = closure_2;
-      if (closure_15()) {
+      obj = outer1_3(ApplicationStore);
+      tmp2 = outer1_2;
+      if (outer1_15()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -276,7 +278,6 @@ let tmp8 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ApplicationStore;
   callback2(ApplicationStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -301,10 +302,10 @@ let tmp8 = (PersistedStore) => {
             if (!tmp) {
               continue;
             } else {
-              let tmp2 = closure_14;
+              let tmp2 = outer1_14;
               let obj = { applicationId, lastUsedMs };
-              closure_14.botUserIdToAppUsage[key10002] = obj;
-              // continue
+              outer1_14.botUserIdToAppUsage[key10002] = obj;
+              continue;
             }
             continue;
           }
@@ -316,14 +317,14 @@ let tmp8 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[1] = obj;
   obj = {
     key: "_getAllApplications",
     value() {
-      return Array.from(closure_8.values());
+      return Array.from(outer1_8.values());
     }
   };
   items[2] = obj;
@@ -332,7 +333,7 @@ let tmp8 = (PersistedStore) => {
     value(arg0, arg1) {
       let value;
       if (null != arg0) {
-        const tmp3 = callback3(closure_8.values());
+        const tmp3 = outer1_16(outer1_8.values());
         const iter = tmp3();
         let iter2 = iter;
         if (!iter.done) {
@@ -355,11 +356,11 @@ let tmp8 = (PersistedStore) => {
     key: "getGuildApplicationIds",
     value(arg0) {
       if (null == arg0) {
-        let value = closure_7;
+        let value = outer1_7;
       } else {
-        value = closure_9.get(arg0);
+        value = outer1_9.get(arg0);
         if (null == value) {
-          value = closure_7;
+          value = outer1_7;
         }
       }
       return value;
@@ -369,7 +370,7 @@ let tmp8 = (PersistedStore) => {
     key: "getApplication",
     value(arg0) {
       if (null != arg0) {
-        return closure_8.get(arg0);
+        return outer1_8.get(arg0);
       }
     }
   };
@@ -379,8 +380,8 @@ let tmp8 = (PersistedStore) => {
       if (null != str) {
         const formatted = str.toLowerCase();
         let value;
-        if (map.has(formatted)) {
-          value = map.get(formatted);
+        if (outer1_10.has(formatted)) {
+          value = outer1_10.get(formatted);
         }
         return value;
       }
@@ -389,31 +390,31 @@ let tmp8 = (PersistedStore) => {
   items[7] = {
     key: "getApplicationLastUpdated",
     value(arg0) {
-      return closure_11.get(arg0);
+      return outer1_11.get(arg0);
     }
   };
   items[8] = {
     key: "isFetchingApplication",
     value(arg0) {
-      return true === store.get(arg0);
+      return true === outer1_12.get(arg0);
     }
   };
   items[9] = {
     key: "isHydrated",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_13.has(arg0);
     }
   };
   items[10] = {
     key: "didFetchingApplicationFail",
     value(arg0) {
-      return false === store.get(arg0);
+      return false === outer1_12.get(arg0);
     }
   };
   items[11] = {
     key: "getFetchingOrFailedFetchingIds",
     value() {
-      return Array.from(store.keys());
+      return Array.from(outer1_12.keys());
     }
   };
   items[12] = {
@@ -421,7 +422,7 @@ let tmp8 = (PersistedStore) => {
     value(arg0) {
       if (null != arg0) {
         let applicationId;
-        if (null != botUserIdToAppUsage.botUserIdToAppUsage[arg0]) {
+        if (null != outer1_14.botUserIdToAppUsage[arg0]) {
           applicationId = tmp2.applicationId;
         }
         return applicationId;
@@ -429,10 +430,10 @@ let tmp8 = (PersistedStore) => {
     }
   };
   return callback(ApplicationStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp8.displayName = "ApplicationStore";
 tmp8.persistKey = "ApplicationStore";
-tmp8 = new tmp8(importDefault(dependencyMap[8]), {
+tmp8 = new tmp8(require("dispatcher"), {
   LOGOUT: function handleLogout() {
     map.clear();
     map1.clear();
@@ -447,14 +448,14 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_18;
-        let tmp3 = closure_6;
-        let prototype = closure_6.prototype;
+        let tmp2 = addApplication;
+        let tmp3 = ctor;
+        let prototype = ctor.prototype;
         let tmp4 = new.target;
         let tmp5 = new.target;
-        let tmp6 = new closure_6(iter.value);
+        let tmp6 = new ctor(iter.value);
         let tmp7 = tmp6;
-        let tmp8 = closure_18(tmp6);
+        let tmp8 = addApplication(tmp6);
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -488,10 +489,10 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp2 = closure_12;
-        let tmp4 = closure_12;
-        value = closure_12.get(value);
-        let result = closure_12.set(value, true);
+        let tmp2 = map4;
+        let tmp4 = map4;
+        value = map4.get(value);
+        let result = map4.set(value, true);
         flag = true !== value;
         let iter2 = tmp();
         iter = iter2;
@@ -508,12 +509,12 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
       do {
         let value = iter.value;
         if (true === tmp) {
-          let tmp3 = closure_13;
-          let addResult = closure_13.add(value.id);
+          let tmp3 = set;
+          let addResult = set.add(value.id);
         }
-        let tmp5 = closure_18;
-        let tmp6 = closure_6;
-        let tmp7 = closure_18(closure_6.createFromServer(value));
+        let tmp5 = addApplication;
+        let tmp6 = ctor;
+        let tmp7 = addApplication(ctor.createFromServer(value));
         iter2 = tmp2();
         iter = iter2;
       } while (!iter2.done);
@@ -528,10 +529,10 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
     if (!iter.done) {
       do {
         let value = iter2.value;
-        let tmp2 = closure_12;
-        let tmp4 = closure_12;
-        value = closure_12.get(value);
-        let result = closure_12.set(value, false);
+        let tmp2 = map4;
+        let tmp4 = map4;
+        value = map4.get(value);
+        let result = map4.set(value, false);
         flag = false !== value;
         let iter3 = tmp();
         iter2 = iter3;
@@ -555,9 +556,9 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
       do {
         let value = iter.value;
         let arr = items.push(value.id);
-        let tmp3 = closure_18;
-        let tmp4 = closure_6;
-        let tmp5 = closure_18(closure_6.createFromServer(value));
+        let tmp3 = addApplication;
+        let tmp4 = ctor;
+        let tmp5 = addApplication(ctor.createFromServer(value));
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -579,9 +580,9 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
         }
         let tmp3 = null == application || set.has(application.id);
         if (!tmp3) {
-          let tmp4 = closure_18;
-          let tmp5 = closure_6;
-          let tmp6 = closure_18(closure_6.createFromServer(application));
+          let tmp4 = addApplication;
+          let tmp5 = ctor;
+          let tmp6 = addApplication(ctor.createFromServer(application));
         }
         iter2 = tmp();
         iter = iter2;
@@ -599,7 +600,7 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
     if (null == application) {
       return false;
     } else {
-      addApplication(closure_6.createFromServer(payment.sku.application));
+      addApplication(ctor.createFromServer(payment.sku.application));
     }
   },
   INVITE_RESOLVE_SUCCESS: function handleResolveInvite(invite) {
@@ -607,7 +608,7 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
     if (null == invite.target_application) {
       return false;
     } else {
-      addApplication(closure_6.createFromServer(invite.target_application));
+      addApplication(ctor.createFromServer(invite.target_application));
     }
   },
   GIFT_CODE_RESOLVE_SUCCESS: function handleGiftCodeResolveSuccess(giftCode) {
@@ -620,7 +621,7 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
     if (null == application) {
       return false;
     } else {
-      addApplication(closure_6.createFromServer(giftCode.store_listing.sku.application));
+      addApplication(ctor.createFromServer(giftCode.store_listing.sku.application));
     }
   },
   LIBRARY_FETCH_SUCCESS: function handleLibraryApplicationsFetch(libraryApplications) {
@@ -629,9 +630,9 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_18;
-        let tmp3 = closure_6;
-        let tmp4 = closure_18(closure_6.createFromServer(iter.value.application));
+        let tmp2 = addApplication;
+        let tmp3 = ctor;
+        let tmp4 = addApplication(ctor.createFromServer(iter.value.application));
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -643,22 +644,22 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
     if (null == storeListing.sku.application) {
       return false;
     } else {
-      addApplication(closure_6.createFromServer(storeListing.sku.application));
+      addApplication(ctor.createFromServer(storeListing.sku.application));
     }
   },
   LOAD_MESSAGES_SUCCESS: function handleLoadMessages(messages) {
     messages = messages.messages;
-    const item = messages.forEach((attachments) => {
-      function mergeApplicationsFromMessage(attachments) {
+    let item = messages.forEach((attachments) => {
+      (function mergeApplicationsFromMessage(attachments) {
         attachments = attachments.attachments;
         if (null != attachments) {
           const item = attachments.forEach((application) => {
             if (null != application.application) {
-              callback(closure_6.createFromServer(application.application));
+              outer3_18(outer3_6.createFromServer(application.application));
             }
           });
         }
-      }(attachments);
+      })(attachments);
     });
   },
   USER_PROFILE_FETCH_SUCCESS: function handleProfileFetchSuccess(userProfile) {
@@ -690,8 +691,8 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
       let tmp = values[num];
       if (null != tmp) {
         let tmp2 = addApplication;
-        let tmp3 = closure_6;
-        let tmp4 = addApplication(closure_6.createFromServer(tmp.application));
+        let tmp3 = ctor;
+        let tmp4 = addApplication(ctor.createFromServer(tmp.application));
         let bot = tmp.application.bot;
         let tmp5 = bot;
         if (null != bot) {
@@ -707,12 +708,12 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
     items = items.items;
     const item = items.forEach((application) => {
       if (null != application.application) {
-        callback(closure_6.createFromServer(application.application));
+        outer1_18(outer1_6.createFromServer(application.application));
       }
     });
   },
   OAUTH2_TOKEN_CREATE: function handleOAuth2TokenCreate(application) {
-    addApplication(closure_6.createFromServer(application.application));
+    addApplication(ctor.createFromServer(application.application));
   },
   WISHLIST_FETCH_SUCCESS: handleWishlistAction,
   WISHLIST_ADD_SKU_SUCCESS: handleWishlistAction,
@@ -734,8 +735,8 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
         let iter = tmp2();
         if (!iter.done) {
           do {
-            let tmp3 = closure_18;
-            let tmp4 = closure_18(iter.value);
+            let tmp3 = addApplication;
+            let tmp4 = addApplication(iter.value);
             let iter2 = tmp2();
             iter = iter2;
             done = iter2.done;
@@ -749,6 +750,6 @@ tmp8 = new tmp8(importDefault(dependencyMap[8]), {
   APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_SUCCESS: handleApplicationWidgetConfigFetchSuccess,
   APPLICATION_WIDGET_CONFIG_FETCH_SUCCESS: handleApplicationWidgetConfigFetchSuccess
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/applications/ApplicationStore.tsx");
+let result = set.fileFinishedImporting("modules/applications/ApplicationStore.tsx");
 
 export default tmp8;

@@ -1,41 +1,41 @@
-// Module ID: 7618
-// Function ID: 61034
+// Module ID: 7624
+// Function ID: 61071
 // Name: generateBlockedGroupRowData
-// Dependencies: []
+// Dependencies: [7622, 482, 22, 3976, 689, 3974, 7625, 2]
 // Exports: generateBlockedGroupRowData
 
-// Module 7618 (generateBlockedGroupRowData)
-const SeparatorAction = require(dependencyMap[0]).SeparatorAction;
-const UNSAFE_Colors = require(dependencyMap[1]).UNSAFE_Colors;
-const _module = require(dependencyMap[2]);
-let closure_5 = _module.memoize((arg0) => {
-  let obj = require(dependencyMap[3]);
+// Module 7624 (generateBlockedGroupRowData)
+import { SeparatorAction } from "Changeset";
+import { UNSAFE_Colors } from "sum";
+import apply from "apply";
+
+let closure_5 = apply.memoize((arg0) => {
+  let obj = require(3976) /* AccessibilityAnnouncer */;
   let str = "#DBE0E4";
   if (obj.isThemeDark(arg0)) {
-    str = importDefault(dependencyMap[4]).unsafe_rawColors.PRIMARY_700;
+    str = importDefault(689).unsafe_rawColors.PRIMARY_700;
   }
   let str2 = "#FAFAFA";
   if (obj2.isThemeDark(arg0)) {
-    str2 = importDefault(dependencyMap[4]).unsafe_rawColors.PRIMARY_630;
+    str2 = importDefault(689).unsafe_rawColors.PRIMARY_630;
   }
-  const obj2 = require(dependencyMap[3]);
+  obj2 = require(3976) /* AccessibilityAnnouncer */;
   if (obj3.isThemeDark(arg0)) {
-    let GREY1 = require(dependencyMap[5]).hexWithOpacity(importDefault(dependencyMap[4]).unsafe_rawColors.PRIMARY_300, 0.6);
-    const obj4 = require(dependencyMap[5]);
+    let GREY1 = require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.PRIMARY_300, 0.6);
+    const obj4 = require(3974) /* hexToRgb */;
   } else {
     GREY1 = UNSAFE_Colors.GREY1;
   }
   obj = {};
-  const obj3 = require(dependencyMap[3]);
-  obj.borderColor = require(dependencyMap[6]).processColorOrThrow(str);
-  const obj6 = require(dependencyMap[6]);
-  obj.backgroundColor = require(dependencyMap[6]).processColorOrThrow(str2);
-  const obj7 = require(dependencyMap[6]);
-  obj.color = require(dependencyMap[6]).processColorOrThrow(GREY1);
+  obj3 = require(3976) /* AccessibilityAnnouncer */;
+  obj.borderColor = require(7625) /* processColorOrThrow */.processColorOrThrow(str);
+  const obj6 = require(7625) /* processColorOrThrow */;
+  obj.backgroundColor = require(7625) /* processColorOrThrow */.processColorOrThrow(str2);
+  const obj7 = require(7625) /* processColorOrThrow */;
+  obj.color = require(7625) /* processColorOrThrow */.processColorOrThrow(GREY1);
   return obj;
 });
-const _module1 = require(dependencyMap[7]);
-const result = _module1.fileFinishedImporting("modules/messages/native/renderer/rows/BlockedGroup.tsx");
+const result = require("apply").fileFinishedImporting("modules/messages/native/renderer/rows/BlockedGroup.tsx");
 
 export const generateBlockedGroupRowData = function generateBlockedGroupRowData(canUncollapse, theme, self) {
   let changeType;
@@ -45,7 +45,7 @@ export const generateBlockedGroupRowData = function generateBlockedGroupRowData(
   let revealed;
   let rowType;
   let text;
-  const require = self;
+  let closure_0 = self;
   ({ content, context } = canUncollapse);
   canUncollapse = !tmp;
   ({ changeType, message, text, revealed, rowType } = canUncollapse);
@@ -55,7 +55,7 @@ export const generateBlockedGroupRowData = function generateBlockedGroupRowData(
   let obj = {};
   const merged = Object.assign(callback(theme));
   obj["type"] = rowType;
-  obj["content"] = content.map((arg0) => arg2.generate(arg0));
+  obj["content"] = content.map((arg0) => _self.generate(arg0));
   obj = {};
   obj = { type: SeparatorAction.TOGGLE_BLOCKED_MESSAGES };
   if (null == context) {

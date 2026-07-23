@@ -1,21 +1,24 @@
-// Module ID: 11415
-// Function ID: 88772
+// Module ID: 11425
+// Function ID: 88822
 // Name: TouchableBackground
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 2]
 // Exports: default
 
-// Module 11415 (TouchableBackground)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
-({ View: closure_2, Pressable: closure_3 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.INTERACTIVE_BACKGROUND_ACTIVE };
-obj.default = obj;
-let closure_5 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("components_native/common/TouchableBackground.tsx");
+// Module 11425 (TouchableBackground)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2;
+let closure_3;
+({ View: closure_2, Pressable: closure_3 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+_createForOfIteratorHelperLoose.default = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/TouchableBackground.tsx");
 
 export default function TouchableBackground(onPressOut) {
   let activeBackgroundColor;
@@ -24,26 +27,24 @@ export default function TouchableBackground(onPressOut) {
   let pressableStyle;
   let style;
   ({ activeBackgroundColor, onPressIn } = onPressOut);
-  let callback = onPressIn;
   onPressOut = onPressOut.onPressOut;
-  const React = onPressOut;
-  let obj = { withMutualGuilds: "Text", withMutualFriendsCount: "resizeMode", icon: "from", label: "Array", arrow: "isArray", accessibilityRole: "braintreemasterpasslanding" };
+  let obj = { activeBackgroundColor: 0, pressableStyle: 0, style: 0, children: 0, onPressIn: 0, onPressOut: 0 };
   ({ pressableStyle, style, children } = onPressOut);
   Object.setPrototypeOf(null);
   const merged = Object.assign(onPressOut, obj);
-  const tmp4 = callback(React.useState(false), 2);
+  const tmp4 = onPressIn(onPressOut.useState(false), 2);
   let first = tmp4[0];
   let closure_2 = tmp4[1];
   const items = [onPressIn];
   const items1 = [onPressOut];
-  callback = React.useCallback((arg0) => {
+  const callback = onPressOut.useCallback((arg0) => {
     callback(true);
     if (null != onPressIn) {
       onPressIn(arg0);
     }
   }, items);
   obj = { accessibilityRole: "button", style: pressableStyle };
-  const callback1 = React.useCallback((arg0) => {
+  const callback1 = onPressOut.useCallback((arg0) => {
     if (null != onPressOut) {
       onPressOut(arg0);
     }
@@ -65,6 +66,6 @@ export default function TouchableBackground(onPressOut) {
   items2[1] = first;
   obj.style = items2;
   obj.children = children;
-  obj["children"] = <closure_2 {...obj} />;
-  return <closure_3 {...obj} />;
+  obj["children"] = <closure_2 />;
+  return <closure_3 />;
 };

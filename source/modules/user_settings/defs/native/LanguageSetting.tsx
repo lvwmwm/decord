@@ -1,40 +1,42 @@
-// Module ID: 14138
-// Function ID: 107293
+// Module ID: 14252
+// Function ID: 109449
 // Name: route
-// Dependencies: []
+// Dependencies: [1921, 653, 566, 1212, 10095, 14253, 14255, 2]
 
-// Module 14138 (route)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+// Module 14252 (route)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[3]).intl;
-    return intl.string(arg1(dependencyMap[3]).t.IHMsPn);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.IHMsPn);
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[5]).LanguageIcon,
+  IconComponent: require("LanguageIcon").LanguageIcon,
   useTrailing: function useLanguageSettingTrailing() {
-    const items = [closure_2];
-    const callback = callback(dependencyMap[2]).useStateFromStores(items, () => locale.locale);
-    const obj = callback(dependencyMap[2]);
-    const availableLocales = callback(dependencyMap[3]).getAvailableLocales();
+    const items = [_isNativeReflectConstruct];
+    _require = _require(566).useStateFromStores(items, () => outer1_2.locale);
+    const obj = _require(566);
+    const availableLocales = _require(1212).getAvailableLocales();
     const found = availableLocales.find((value) => value.value === closure_0);
     let stringResult = null;
     if (null != found) {
-      const intl = callback(dependencyMap[3]).intl;
+      const intl = _require(1212).intl;
       stringResult = intl.string(found.localizedName);
     }
     return stringResult;
   },
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[1]).UserSettingsSections.LANGUAGE,
+createToggle = {
+  route: require("ME").UserSettingsSections.LANGUAGE,
   getComponent() {
-    return arg1(dependencyMap[6]).default;
+    return require(14255) /* handleLanguageChange */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/LanguageSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/LanguageSetting.tsx");
 
-export default route;
+export default createToggle;

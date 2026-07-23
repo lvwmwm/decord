@@ -1,128 +1,130 @@
-// Module ID: 5076
-// Function ID: 44177
-// Dependencies: []
+// Module ID: 5079
+// Function ID: 44196
+// Dependencies: [5, 4325, 653, 3770, 662, 686, 5073, 5075, 21, 3976, 1212, 1360, 507, 2]
 
-// Module 5076
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-let closure_6 = arg1(dependencyMap[3]).NotificationSettingsUpdateType;
-let closure_7 = arg1(dependencyMap[4]).ChannelNotificationSettingsFlags;
-const result = arg1(dependencyMap[13]).fileFinishedImporting("actions/NotificationSettingsModalActionCreators.tsx");
+// Module 5079
+import dispatcher from "dispatcher";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags";
+import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES";
+
+const require = arg1;
+let result = require("ME").fileFinishedImporting("actions/NotificationSettingsModalActionCreators.tsx");
 
 export default {
   open(guildId) {
-    let obj = importDefault(dependencyMap[5]);
+    let obj = importDefault(686);
     obj = { type: "NOTIFICATION_SETTINGS_MODAL_OPEN", guildId };
     obj.dispatch(obj);
   },
   close() {
-    importDefault(dependencyMap[5]).dispatch({ type: "NOTIFICATION_SETTINGS_MODAL_CLOSE" });
+    importDefault(686).dispatch({ type: "NOTIFICATION_SETTINGS_MODAL_CLOSE" });
   },
   updateGuildNotificationSettings(guildId, muteSettings, NotificationLabel) {
-    let obj = muteSettings(dependencyMap[6]);
+    let obj = require(5073) /* differ */;
     const currentGuildSettings = obj.getCurrentGuildSettings(guildId);
-    const result = importDefault(dependencyMap[7]).saveUserGuildSettings(guildId, muteSettings);
-    const obj2 = importDefault(dependencyMap[7]);
+    const result = importDefault(5075).saveUserGuildSettings(guildId, muteSettings);
+    const obj2 = importDefault(5075);
     obj = { type: "USER_GUILD_SETTINGS_GUILD_UPDATE", guildId, settings: muteSettings };
-    importDefault(dependencyMap[5]).dispatch(obj);
-    const obj3 = importDefault(dependencyMap[5]);
-    const result1 = muteSettings(dependencyMap[6]).trackGuildNotificationSettingsUpdate(guildId, muteSettings, currentGuildSettings, NotificationLabel, arg3);
+    importDefault(686).dispatch(obj);
+    const obj3 = importDefault(686);
+    const result1 = require(5073) /* differ */.trackGuildNotificationSettingsUpdate(guildId, muteSettings, currentGuildSettings, NotificationLabel, arg3);
   },
   updateGuildAndChannelNotificationSettings(guildId, channel_overrides, OptedIn) {
-    channel_overrides = guildId;
+    const _require = guildId;
     const importDefault = channel_overrides;
     const dependencyMap = OptedIn;
-    let closure_3 = arg3;
-    let obj = importDefault(dependencyMap[8]);
+    let dispatcher = arg3;
+    let obj = importDefault(21);
     const keys = obj.keys(channel_overrides.channel_overrides);
-    const currentGuildSettings = channel_overrides(dependencyMap[6]).getCurrentGuildSettings(guildId);
-    const obj2 = channel_overrides(dependencyMap[6]);
-    const manyCurrentChannelSettings = channel_overrides(dependencyMap[6]).getManyCurrentChannelSettings(guildId, keys);
-    const obj3 = channel_overrides(dependencyMap[6]);
-    const result = importDefault(dependencyMap[7]).saveUserGuildSettings(guildId, channel_overrides);
-    const obj4 = importDefault(dependencyMap[7]);
+    const currentGuildSettings = _require(5073).getCurrentGuildSettings(guildId);
+    const obj2 = _require(5073);
+    const manyCurrentChannelSettings = _require(5073).getManyCurrentChannelSettings(guildId, keys);
+    const obj3 = _require(5073);
+    let result = importDefault(5075).saveUserGuildSettings(guildId, channel_overrides);
+    const obj4 = importDefault(5075);
     obj = { type: "USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE", guildId, settings: channel_overrides };
-    importDefault(dependencyMap[5]).dispatch(obj);
-    const obj5 = importDefault(dependencyMap[5]);
-    const result1 = channel_overrides(dependencyMap[6]).trackGuildNotificationSettingsUpdate(guildId, channel_overrides, currentGuildSettings, OptedIn, arg3);
-    const obj7 = channel_overrides(dependencyMap[6]);
-    const keys1 = importDefault(dependencyMap[8]).keys(channel_overrides.channel_overrides);
+    importDefault(686).dispatch(obj);
+    const obj5 = importDefault(686);
+    const result1 = _require(5073).trackGuildNotificationSettingsUpdate(guildId, channel_overrides, currentGuildSettings, OptedIn, arg3);
+    const obj7 = _require(5073);
+    const keys1 = importDefault(21).keys(channel_overrides.channel_overrides);
     const item = keys1.forEach((channelId) => {
-      const value = closure_4.get(channelId);
-      let obj = channelId(arg2[6]);
-      obj = { guildId: channelId, channelId, change: arg1.channel_overrides[channelId], previous: value, label: arg2, location: arg3 };
+      const value = _isNativeReflectConstruct.get(channelId);
+      let obj = guildId(OptedIn[6]);
+      obj = { guildId, channelId, change: channel_overrides.channel_overrides[channelId], previous: value, label: OptedIn, location: dispatcher };
       const result = obj.trackChannelNotificationSettingsUpdate(obj);
     });
   },
   updateChannelOverrideSettings(guildId, id, muteSettings, NotificationLabel, location) {
-    let obj = id(dependencyMap[6]);
+    let obj = require(5073) /* differ */;
     const currentChannelSettings = obj.getCurrentChannelSettings(guildId, id);
-    let obj1 = importDefault(dependencyMap[7]);
+    let obj1 = importDefault(5075);
     obj = { [id]: muteSettings };
     const result = obj1.saveUserGuildSettings(guildId, { channel_overrides: obj });
     obj = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id, settings: muteSettings };
-    importDefault(dependencyMap[5]).dispatch(obj);
-    const AccessibilityAnnouncer = id(dependencyMap[9]).AccessibilityAnnouncer;
-    const intl = id(dependencyMap[10]).intl;
-    AccessibilityAnnouncer.announce(intl.string(id(dependencyMap[10]).t.MlIsJ8));
-    const obj4 = importDefault(dependencyMap[5]);
+    importDefault(686).dispatch(obj);
+    const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const intl = require(1212) /* getSystemLocale */.intl;
+    AccessibilityAnnouncer.announce(intl.string(require(1212) /* getSystemLocale */.t.MlIsJ8));
+    const obj4 = importDefault(686);
     obj1 = { guildId, channelId: id, change: muteSettings, previous: currentChannelSettings, label: NotificationLabel, location };
-    const result1 = id(dependencyMap[6]).trackChannelNotificationSettingsUpdate(obj1);
+    const result1 = require(5073) /* differ */.trackChannelNotificationSettingsUpdate(obj1);
   },
   updateChannelOverrideSettingsBulk(guildId, channel_overrides, OptedIn) {
-    channel_overrides = guildId;
+    const _require = guildId;
     const importDefault = channel_overrides;
     const dependencyMap = OptedIn;
-    let closure_3 = arg3;
-    let obj = importDefault(dependencyMap[8]);
+    let dispatcher = arg3;
+    let obj = importDefault(21);
     const keys = obj.keys(channel_overrides);
-    const manyCurrentChannelSettings = channel_overrides(dependencyMap[6]).getManyCurrentChannelSettings(guildId, keys);
-    const obj2 = channel_overrides(dependencyMap[6]);
+    const manyCurrentChannelSettings = _require(5073).getManyCurrentChannelSettings(guildId, keys);
+    const obj2 = _require(5073);
     obj = { channel_overrides };
-    const result = importDefault(dependencyMap[7]).saveUserGuildSettings(guildId, obj);
-    const obj3 = importDefault(dependencyMap[7]);
+    const result = importDefault(5075).saveUserGuildSettings(guildId, obj);
+    const obj3 = importDefault(5075);
     obj = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK", guildId, overrides: channel_overrides };
-    importDefault(dependencyMap[5]).dispatch(obj);
-    const obj5 = importDefault(dependencyMap[5]);
-    const keys1 = importDefault(dependencyMap[8]).keys(channel_overrides);
+    importDefault(686).dispatch(obj);
+    const obj5 = importDefault(686);
+    const keys1 = importDefault(21).keys(channel_overrides);
     const item = keys1.forEach((channelId) => {
-      let obj = channelId(arg2[6]);
-      obj = { guildId: channelId, channelId, change: arg1[channelId], previous: closure_4.get(channelId), label: arg2, location: arg3 };
+      let obj = guildId(OptedIn[6]);
+      obj = { guildId, channelId, change: table[channelId], previous: _isNativeReflectConstruct.get(channelId), label: OptedIn, location: dispatcher };
       return obj.trackChannelNotificationSettingsUpdate(obj);
     });
   },
   updateAppDMOverrideSettings(guildId, id, id2, change, NotificationLabel2) {
-    let obj = id(dependencyMap[6]);
+    let obj = require(5073) /* differ */;
     const currentChannelSettings = obj.getCurrentChannelSettings(guildId, id);
-    let obj1 = importDefault(dependencyMap[7]);
+    let obj1 = importDefault(5075);
     obj = { [id]: change };
     const result = obj1.saveUserGuildSettings(guildId, { channel_overrides: obj });
     obj = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id, settings: change };
-    importDefault(dependencyMap[5]).dispatch(obj);
-    const AccessibilityAnnouncer = id(dependencyMap[9]).AccessibilityAnnouncer;
-    const intl = id(dependencyMap[10]).intl;
-    AccessibilityAnnouncer.announce(intl.string(id(dependencyMap[10]).t.MlIsJ8));
-    const obj4 = importDefault(dependencyMap[5]);
+    importDefault(686).dispatch(obj);
+    const AccessibilityAnnouncer = require(3976) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const intl = require(1212) /* getSystemLocale */.intl;
+    AccessibilityAnnouncer.announce(intl.string(require(1212) /* getSystemLocale */.t.MlIsJ8));
+    const obj4 = importDefault(686);
     obj1 = { updateType: constants.AUTHORIZED_APP_DM, guildId, channelId: id, applicationId: id2, change, previous: currentChannelSettings, label: NotificationLabel2 };
-    const result1 = id(dependencyMap[6]).trackChannelNotificationSettingsUpdate(obj1);
+    const result1 = require(5073) /* differ */.trackChannelNotificationSettingsUpdate(obj1);
   },
   setForumThreadsCreated(channel, arg1) {
     const self = this;
-    const NotificationLabel = arg1(dependencyMap[6]).NotificationLabel;
-    const result = self.updateChannelOverrideSettings(channel.guild_id, channel.id, { flags: channelFlags.getChannelFlags(channel) & ~(arg1 ? closure_7.NEW_FORUM_THREADS_OFF : closure_7.NEW_FORUM_THREADS_ON) | arg1 ? closure_7.NEW_FORUM_THREADS_ON : closure_7.NEW_FORUM_THREADS_OFF }, NotificationLabel.forumThreadsCreated(arg1));
+    const NotificationLabel = require(5073) /* differ */.NotificationLabel;
+    const result = self.updateChannelOverrideSettings(channel.guild_id, channel.id, { flags: channelFlags.getChannelFlags(channel) & ~(arg1 ? closure_7.NEW_FORUM_THREADS_OFF : closure_7.NEW_FORUM_THREADS_ON) | (arg1 ? closure_7.NEW_FORUM_THREADS_ON : closure_7.NEW_FORUM_THREADS_OFF) }, NotificationLabel.forumThreadsCreated(arg1));
   },
   setAccountFlag(arg0, arg1) {
-    arg1 = arg0;
-    const importDefault = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
     return callback(async () => {
-      let obj = callback(closure_2[11]);
-      const setFlagResult = obj.setFlag(obj.accountNotificationSettings.flags, callback, callback2);
-      const HTTP = callback(closure_2[12]).HTTP;
-      obj = { url: constants.ACCOUNT_NOTIFICATION_SETTINGS, body: { flags: setFlagResult }, rejectWithError: callback(closure_2[12]).rejectWithMigratedError() };
+      let obj = callback(outer2_2[11]);
+      const setFlagResult = obj.setFlag(outer2_4.accountNotificationSettings.flags, outer1_0, outer1_1);
+      const HTTP = callback(outer2_2[12]).HTTP;
+      obj = { url: outer2_5.ACCOUNT_NOTIFICATION_SETTINGS, body: { flags: setFlagResult }, rejectWithError: callback(outer2_2[12]).rejectWithMigratedError() };
       yield HTTP.patch(obj);
-      const obj3 = callback(closure_2[12]);
-      yield callback2(closure_2[5]).dispatch({ type: "NOTIFICATION_SETTINGS_UPDATE", settings: { flags: setFlagResult } });
+      const obj3 = callback(outer2_2[12]);
+      yield callback2(outer2_2[5]).dispatch({ type: "NOTIFICATION_SETTINGS_UPDATE", settings: { flags: setFlagResult } });
     })();
   }
 };

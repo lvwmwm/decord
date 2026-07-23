@@ -1,20 +1,22 @@
-// Module ID: 5038
-// Function ID: 43546
+// Module ID: 5041
+// Function ID: 43564
 // Name: getThreadLastActivityTime
-// Dependencies: []
+// Dependencies: [4142, 664, 21, 2]
 // Exports: default
 
-// Module 5038 (getThreadLastActivityTime)
+// Module 5041 (getThreadLastActivityTime)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
 function getThreadLastActivityTime(threadMetadata) {
   if (null == threadMetadata.threadMetadata) {
     return 0;
   } else {
-    let id = closure_2.lastMessageId(threadMetadata.id);
+    let id = _isNativeReflectConstruct.lastMessageId(threadMetadata.id);
     if (null == id) {
       id = threadMetadata.id;
     }
     let num2 = 0;
-    const obj = importDefault(dependencyMap[2]);
+    const obj = importDefault(21);
     if (null != threadMetadata.lastNonMessageActivityTimestamp) {
       const _Date = Date;
       const date = new Date(threadMetadata.lastNonMessageActivityTimestamp);
@@ -27,17 +29,16 @@ function getThreadLastActivityTime(threadMetadata) {
       num3 = date1.getTime();
     }
     const _Math = Math;
-    return Math.max(importDefault(dependencyMap[2]).extractTimestamp(id), num2, num3);
+    return Math.max(importDefault(21).extractTimestamp(id), num2, num3);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/threads/getThreadAutoArchiveTimeOnce.tsx");
+let result = require("DISCORD_EPOCH").fileFinishedImporting("modules/threads/getThreadAutoArchiveTimeOnce.tsx");
 
 export default function getThreadAutoArchiveTimeOnce(threadMetadata) {
   if (null == threadMetadata.threadMetadata) {
     return 0;
   } else {
-    const result = threadMetadata.threadMetadata.autoArchiveDuration * importDefault(dependencyMap[1]).Millis.MINUTE;
+    const result = threadMetadata.threadMetadata.autoArchiveDuration * importDefault(664).Millis.MINUTE;
     return getThreadLastActivityTime(threadMetadata) + result;
   }
 };

@@ -1,13 +1,14 @@
-// Module ID: 10123
-// Function ID: 78371
+// Module ID: 10131
+// Function ID: 78411
 // Name: trackViewedEvent
-// Dependencies: []
+// Dependencies: [1849, 653, 675, 2]
 // Exports: getUserIsTeen, trackCtaEvent, trackNamedViewEvent, trackViewedEvent
 
-// Module 10123 (trackViewedEvent)
-let closure_2 = importDefault(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/self_mod/shared/SafetyWarningUtils.tsx");
+// Module 10131 (trackViewedEvent)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const result = require("expandLocation").fileFinishedImporting("modules/self_mod/shared/SafetyWarningUtils.tsx");
 
 export const trackViewedEvent = function trackViewedEvent(SAFETY_WARNING_VIEWED, warningId) {
   let channelId;
@@ -15,7 +16,7 @@ export const trackViewedEvent = function trackViewedEvent(SAFETY_WARNING_VIEWED,
   let warningType;
   warningId = warningId.warningId;
   ({ channelId, senderId, warningType } = warningId);
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(675);
   obj = { channel_id: channelId };
   let parsed;
   if (null != warningId) {
@@ -36,7 +37,7 @@ export const trackNamedViewEvent = function trackNamedViewEvent(warningId) {
   let warningType;
   warningId = warningId.warningId;
   ({ channelId, senderId, warningType, viewName, isNudgeWarning } = warningId);
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(675);
   obj = { channel_id: channelId };
   let parsed;
   if (null != warningId) {
@@ -59,7 +60,7 @@ export const trackCtaEvent = function trackCtaEvent(warningId) {
   let warningType;
   warningId = warningId.warningId;
   ({ channelId, senderId, warningType, cta, isNudgeWarning } = warningId);
-  let obj = importDefault(dependencyMap[2]);
+  let obj = importDefault(675);
   obj = { channel_id: channelId };
   let parsed;
   if (null != warningId) {
@@ -74,7 +75,7 @@ export const trackCtaEvent = function trackCtaEvent(warningId) {
   obj.track(AnalyticEvents.SAFETY_WARNING_CTA_CLICKED, obj);
 };
 export const getUserIsTeen = function getUserIsTeen() {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   let nsfwAllowed;
   if (null != currentUser) {
     nsfwAllowed = currentUser.nsfwAllowed;

@@ -1,9 +1,9 @@
-// Module ID: 10486
-// Function ID: 81240
-// Dependencies: []
+// Module ID: 10496
+// Function ID: 81290
+// Name: _isNativeReflectConstruct
+// Dependencies: [2, 10497]
 
-// Module 10486
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/rpc/RPCError.tsx");
+// Module 10496 (_isNativeReflectConstruct)
+const result = require("set").fileFinishedImporting("modules/rpc/RPCError.tsx");
 
-export default require(dependencyMap[1]).RPCError;
+export { RPCError as default } from "_isNativeReflectConstruct";

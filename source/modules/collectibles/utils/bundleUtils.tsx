@@ -1,12 +1,12 @@
-// Module ID: 8689
-// Function ID: 68854
+// Module ID: 8696
+// Function ID: 68894
 // Name: extractBundleItemsFromArray
-// Dependencies: [0, 0, 0]
+// Dependencies: [8207, 6786, 2]
 // Exports: bundleContainsNameplates, isValidCollectiblesBundle, isValidCollectiblesBundleItems
 
-// Module 8689 (extractBundleItemsFromArray)
+// Module 8696 (extractBundleItemsFromArray)
 function extractBundleItemsFromArray(items) {
-  const itemsSortingHat = new require(dependencyMap[0]).ItemsSortingHat(items);
+  const itemsSortingHat = new require(8207) /* ItemsSortingHat */.ItemsSortingHat(items);
   return { firstProfileEffect: itemsSortingHat.firstProfileEffect, firstAvatarDecoration: itemsSortingHat.firstAvatarDecoration, firstNameplate: itemsSortingHat.firstNameplate };
 }
 function extractBundleItems(items) {
@@ -24,7 +24,7 @@ function isValidBundleItems(arg0) {
   }
   return tmp;
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/collectibles/utils/bundleUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/utils/bundleUtils.tsx");
 
 export const isValidCollectiblesBundle = function isValidCollectiblesBundle(items) {
   return isValidBundleItems(extractBundleItems(items));
@@ -33,7 +33,7 @@ export const isValidCollectiblesBundleItems = function isValidCollectiblesBundle
   return isValidBundleItems(extractBundleItemsFromArray(items));
 };
 export const bundleContainsNameplates = function bundleContainsNameplates(type) {
-  const tmp = !require(dependencyMap[1]).isBundleProduct(type);
+  const tmp = !require(6786) /* getPriceForCollectiblesProduct */.isBundleProduct(type);
   let tmp2 = !tmp;
   if (!tmp) {
     tmp2 = null != extractBundleItems(type).firstNameplate;

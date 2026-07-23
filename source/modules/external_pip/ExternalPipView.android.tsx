@@ -1,12 +1,17 @@
-// Module ID: 15565
-// Function ID: 118746
+// Module ID: 15682
+// Function ID: 120919
 // Name: requestFreezeLock
-// Dependencies: []
+// Dependencies: [57, 31, 8293, 33, 15683, 10233, 15685, 2]
 // Exports: default
 
-// Module 15565 (requestFreezeLock)
+// Module 15682 (requestFreezeLock)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import module_8293 from "module_8293";
+import { jsx } from "jsxProd";
+
 function requestFreezeLock(lockEnabled) {
-  const state = state.getState();
+  state = state.getState();
   const freezeLock = state.requestFreezeLock({ lockEnabled, key: "external-pip" });
 }
 function FreezeAfterLayoutPipView() {
@@ -14,52 +19,46 @@ function FreezeAfterLayoutPipView() {
   const onLayout = React.useCallback(() => {
     if (!ref.current) {
       ref.current = true;
-      callback(true);
+      outer1_6(true);
     }
   }, []);
   const effect = React.useEffect(() => () => {
-    if (ref.current) {
-      callback(false);
+    if (outer1_0.current) {
+      outer2_6(false);
     }
   }, []);
-  return jsx(importDefault(dependencyMap[6]), { onLayout });
+  return jsx(importDefault(15685), { onLayout });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/external_pip/ExternalPipView.android.tsx");
+const result = require("module_8293").fileFinishedImporting("modules/external_pip/ExternalPipView.android.tsx");
 
 export default function ExternalPipView() {
   const obj = {};
-  const tmp = importDefault(dependencyMap[4]);
-  obj.disabled = !importDefault(dependencyMap[5]).isSupported();
-  const externalPipEnabled = tmp(obj).externalPipEnabled;
-  const importDefault = externalPipEnabled;
-  const tmp2 = function useExternalPipActive() {
-    const externalPipActive = callback(React.useState(false), 2);
+  const tmp = externalPipEnabled(setExternalPipActive[4]);
+  obj.disabled = !externalPipEnabled(setExternalPipActive[5]).isSupported();
+  externalPipEnabled = tmp(obj).externalPipEnabled;
+  const tmp2 = (function useExternalPipActive() {
+    const externalPipActive = outer1_2(outer1_3.useState(false), 2);
     let closure_0 = externalPipActive[1];
-    const setExternalPipActive = React.useCallback((arg0) => {
+    const setExternalPipActive = outer1_3.useCallback((arg0) => {
       callback(arg0);
       if (!arg0) {
-        callback2(false);
+        outer2_6(false);
       }
     }, []);
-    const effect = React.useEffect(() => () => {
-      callback(false);
+    const effect = outer1_3.useEffect(() => () => {
+      outer3_6(false);
     }, []);
     return { externalPipActive: externalPipActive[0], setExternalPipActive };
-  }();
-  const setExternalPipActive = tmp2.setExternalPipActive;
-  const dependencyMap = setExternalPipActive;
+  })();
+  setExternalPipActive = tmp2.setExternalPipActive;
   const items = [externalPipEnabled];
-  const effect = React.useEffect(() => {
+  let effect = React.useEffect(() => {
     externalPipEnabled(setExternalPipActive[5]).setEnabled(externalPipEnabled);
   }, items);
   const items1 = [setExternalPipActive];
   const effect1 = React.useEffect(() => {
-    const externalPipEnabled = externalPipEnabled(setExternalPipActive[5]).addOnPipModeChangedListener((arg0) => {
-      callback(arg0);
+    let closure_0 = externalPipEnabled(setExternalPipActive[5]).addOnPipModeChangedListener((arg0) => {
+      outer1_1(arg0);
     });
     return () => {
       let removeResult;
@@ -71,8 +70,8 @@ export default function ExternalPipView() {
   }, items1);
   const items2 = [setExternalPipActive];
   const effect2 = React.useEffect(() => {
-    const externalPipEnabled = externalPipEnabled(setExternalPipActive[5]).addOnPipModeWillChangeListener(() => {
-      callback(true);
+    let closure_0 = externalPipEnabled(setExternalPipActive[5]).addOnPipModeWillChangeListener(() => {
+      outer1_1(true);
     });
     return () => {
       let removeResult;

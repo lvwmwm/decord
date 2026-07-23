@@ -1,9 +1,11 @@
 // Module ID: 875
-// Function ID: 9737
+// Function ID: 9738
 // Name: removeTrailingSlash
-// Dependencies: []
+// Dependencies: [876]
 
 // Module 875 (removeTrailingSlash)
+const require = arg1;
+const dependencyMap = arg6;
 function removeTrailingSlash(arr) {
   let substr = arr;
   if ("/" === arr[arr.length - 1]) {
@@ -19,7 +21,7 @@ arg5.isSentryRequestUrl = function isSentryRequestUrl(to, getDsn) {
   if (null != getDsn) {
     const tunnel = getDsn.getOptions().tunnel;
   }
-  const result = getDsn(arg6[0]).parseStringToURLObject(to);
+  const result = require(876) /* isURLObjectRelative */.parseStringToURLObject(to);
   let flag = false;
   if (result) {
     flag = false;
@@ -36,7 +38,7 @@ arg5.isSentryRequestUrl = function isSentryRequestUrl(to, getDsn) {
       }
       flag = tmp6;
     }
-    const obj2 = getDsn(arg6[0]);
+    obj2 = require(876) /* isURLObjectRelative */;
   }
   if (!flag) {
     let flag2 = false;

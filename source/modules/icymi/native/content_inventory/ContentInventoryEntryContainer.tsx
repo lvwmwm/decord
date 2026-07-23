@@ -1,16 +1,21 @@
-// Module ID: 15120
-// Function ID: 114096
+// Module ID: 15235
+// Function ID: 116265
 // Name: iCYMIStyles
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 33, 15179, 689, 477, 8321, 8492, 566, 4660, 15218, 1273, 2]
 // Exports: default
 
-// Module 15120 (iCYMIStyles)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const iCYMIStyles = arg1(dependencyMap[4]).createICYMIStyles((margin) => {
+// Module 15235 (iCYMIStyles)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import createICYMIStyles from "createICYMIStyles";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+const iCYMIStyles = createICYMIStyles.createICYMIStyles((margin) => {
   let obj = {};
   obj = {};
   let num = 0;
@@ -32,71 +37,66 @@ const iCYMIStyles = arg1(dependencyMap[4]).createICYMIStyles((margin) => {
   obj.paddingTop = num3;
   obj.container = obj;
   obj.screenshotContainer = { marginBottom: margin.margin };
-  const obj1 = { id: 8, title: null, options: "\u270A\u{1F3FF}", gap: importDefault(dependencyMap[5]).space.PX_12, marginBottom: margin.margin };
+  const obj1 = { display: "flex", flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_12, marginBottom: margin.margin };
   obj.header = obj1;
   let num4 = 1;
   obj.headerInfo = { flex: 1 };
-  const obj2 = {};
+  const obj2 = { display: "flex", flexDirection: "row", alignItems: "center", gap: 6, marginBottom: null, marginTop: 2 };
   if (obj6.isAndroid()) {
     num4 = -1;
   }
   obj2.marginBottom = num4;
   obj.title = obj2;
-  const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[5]).space.PX_8 };
+  const obj3 = { flexDirection: "row", alignItems: "center", gap: importDefault(689).space.PX_8 };
   obj.subTitleContainer = obj3;
   return obj;
 });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/icymi/native/content_inventory/ContentInventoryEntryContainer.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/icymi/native/content_inventory/ContentInventoryEntryContainer.tsx");
 
 export default function ContentInventoryEntryContainer(contentId) {
   let highlight;
   let subtitle;
   let title;
   contentId = contentId.contentId;
-  const arg1 = contentId;
   const userId = contentId.userId;
-  const importDefault = userId;
   let flag = contentId.renderForScreenshot;
   if (flag === undefined) {
     flag = false;
   }
   const type = contentId.type;
-  const dependencyMap = type;
   ({ highlight, title, subtitle } = contentId);
   if (highlight === undefined) {
     highlight = false;
   }
   const onPress = contentId.onPress;
-  const React = onPress;
   const tmp = iCYMIStyles(flag);
   const items = [contentId, type, userId, onPress];
-  const callback = React.useCallback(() => {
+  const callback = onPress.useCallback(() => {
     if (null != onPress) {
       let obj = userId(type[7]);
       obj.itemInteracted(contentId, type, "press");
       let obj1 = userId(type[7]);
-      obj = { itemId: contentId, itemType: type, actionParameters: {} };
+      obj = { itemId: contentId, itemType: type, actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null } };
       obj1.feedItemActioned(obj);
       onPress();
     } else {
       userId(type[7]).itemInteracted(contentId, type, "open_profile");
       const obj4 = userId(type[7]);
-      obj = { itemId: contentId, itemType: type, actionParameters: { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null, "Bool(false)": null } };
+      obj = { itemId: contentId, itemType: type, actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: "user" } };
       userId(type[7]).feedItemActioned(obj);
       obj1 = { userId };
       userId(type[8])(obj1);
       const obj5 = userId(type[7]);
     }
   }, items);
-  let obj = arg1(dependencyMap[9]);
-  const items1 = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items1, () => user.getUser(userId));
+  let obj = contentId(type[9]);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items1, () => outer1_5.getUser(userId));
   let tmp5Result = null;
   if (null != stateFromStores) {
-    obj = { @braintree/iframer: "construct", @braintree/uuid: "type", @braintree/wrap-promise: "isArray", onPress: callback, style: tmp.pressable };
+    obj = { unstable_pressDelay: 130, onPress: callback, accessibilityRole: "button", style: tmp.pressable };
     obj = { hideDivider: flag, highlight };
-    const obj1 = {};
+    let obj1 = {};
     const items2 = [tmp.container, ];
     if (flag) {
       flag = tmp.screenshotContainer;
@@ -104,10 +104,10 @@ export default function ContentInventoryEntryContainer(contentId) {
     items2[1] = flag;
     obj1.style = items2;
     const obj2 = { style: tmp.header };
-    const obj3 = { animate: true, size: arg1(dependencyMap[12]).AvatarSizes.NORMAL, user: stateFromStores, guildId: undefined };
-    const items3 = [callback(arg1(dependencyMap[12]).Avatar, obj3, stateFromStores.id), ];
-    const obj4 = { style: tmp.headerInfo };
-    const obj5 = { style: tmp.title, children: title };
+    const obj3 = { animate: true, size: contentId(type[12]).AvatarSizes.NORMAL, user: stateFromStores, guildId: undefined };
+    const items3 = [callback(contentId(type[12]).Avatar, obj3, stateFromStores.id), ];
+    let obj4 = { style: tmp.headerInfo };
+    let obj5 = { style: tmp.title, children: title };
     const items4 = [callback(View, obj5), ];
     const obj6 = { style: tmp.subTitleContainer, children: subtitle };
     items4[1] = callback(View, obj6);
@@ -117,8 +117,8 @@ export default function ContentInventoryEntryContainer(contentId) {
     const items5 = [callback2(View, obj2), contentId.children];
     obj1.children = items5;
     obj.children = callback2(View, obj1);
-    obj.children = callback(arg1(dependencyMap[11]).SimplePost, obj);
-    tmp5Result = tmp5(arg1(dependencyMap[10]).PressableHighlight, obj);
+    obj.children = callback(contentId(type[11]).SimplePost, obj);
+    tmp5Result = tmp5(contentId(type[10]).PressableHighlight, obj);
     const tmp8 = callback2;
     const tmp9 = View;
   }

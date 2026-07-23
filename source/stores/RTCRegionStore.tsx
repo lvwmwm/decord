@@ -1,9 +1,15 @@
-// Module ID: 4219
-// Function ID: 36831
+// Module ID: 4223
+// Function ID: 36863
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 664, 22, 566, 686, 2]
 
-// Module 4219 (_isNativeReflectConstruct)
+// Module 4223 (_isNativeReflectConstruct)
+import apply from "apply";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,26 +19,21 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let obj = { type: "mn", key: "description", screenId: "Array" };
-const HOUR = importDefault(dependencyMap[5]).Millis.HOUR;
-let tmp2 = (DeviceSettingsStore) => {
+let obj = { preferredRegions: null, lastTestTimestamp: null, lastGeoRankedOrder: null };
+const HOUR = require("set").Millis.HOUR;
+let tmp2 = ((DeviceSettingsStore) => {
   class RTCRegionStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, RTCRegionStore);
-      obj = closure_5(RTCRegionStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, RTCRegionStore);
+      obj = outer1_5(RTCRegionStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,29 +42,29 @@ let tmp2 = (DeviceSettingsStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = RTCRegionStore;
   callback2(RTCRegionStore, DeviceSettingsStore);
   let obj = {
     key: "initialize",
     value(arg0) {
       let tmp = arg0;
       if (null == arg0) {
-        tmp = closure_7;
+        tmp = outer1_7;
       }
+      const outer1_8 = tmp;
     }
   };
   const items = [obj, , , , , , ];
   obj = {
     key: "shouldIncludePreferredRegion",
     value() {
-      return null != closure_8.preferredRegions;
+      return null != outer1_8.preferredRegions;
     }
   };
   items[1] = obj;
   obj = {
     key: "getPreferredRegion",
     value() {
-      const preferredRegions = closure_8.preferredRegions;
+      const preferredRegions = outer1_8.preferredRegions;
       let first;
       if (null != preferredRegions) {
         first = preferredRegions[0];
@@ -79,7 +80,7 @@ let tmp2 = (DeviceSettingsStore) => {
   items[3] = {
     key: "getPreferredRegions",
     value() {
-      return closure_8.preferredRegions;
+      return outer1_8.preferredRegions;
     }
   };
   items[4] = {
@@ -93,39 +94,39 @@ let tmp2 = (DeviceSettingsStore) => {
   items[5] = {
     key: "getUserAgnosticState",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[6] = {
     key: "shouldPerformLatencyTest",
     value(arg0) {
-      let tmp = null === closure_8.preferredRegions;
+      let tmp = null === outer1_8.preferredRegions;
       if (!tmp) {
-        let lastGeoRankedOrder = closure_8.lastGeoRankedOrder;
+        let lastGeoRankedOrder = outer1_8.lastGeoRankedOrder;
         if (null == lastGeoRankedOrder) {
           lastGeoRankedOrder = [];
         }
-        tmp = !RTCRegionStore(closure_1[6]).isEqual(arg0, lastGeoRankedOrder);
-        const obj = RTCRegionStore(closure_1[6]);
+        tmp = !RTCRegionStore(outer1_1[6]).isEqual(arg0, lastGeoRankedOrder);
+        const obj = RTCRegionStore(outer1_1[6]);
       }
       if (!tmp) {
         const _Date = Date;
-        const lastTestTimestamp = closure_8.lastTestTimestamp;
+        const lastTestTimestamp = outer1_8.lastTestTimestamp;
         let num2 = 0;
         const timestamp = Date.now();
         if (null != lastTestTimestamp) {
           num2 = lastTestTimestamp;
         }
-        tmp = timestamp - num2 >= closure_9;
+        tmp = timestamp - num2 >= outer1_9;
       }
       return tmp;
     }
   };
   return callback(RTCRegionStore, items);
-}(importDefault(dependencyMap[7]).DeviceSettingsStore);
+})(require("initialize").DeviceSettingsStore);
 tmp2.displayName = "RTCRegionStore";
 tmp2.persistKey = "RTCRegionStore";
-const items = [
+let items = [
   (preferredRegion) => {
     if (preferredRegion.preferredRegion) {
       const items = [preferredRegion.preferredRegion];
@@ -133,7 +134,7 @@ const items = [
     } else {
       preferredRegion.preferredRegions = null;
     }
-    delete r0.preferredRegion;
+    delete tmp.preferredRegion;
     return preferredRegion;
   }
 ];
@@ -147,7 +148,7 @@ obj = {
     obj.lastTestTimestamp = Date.now();
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[8]), obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/RTCRegionStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/RTCRegionStore.tsx");
 
 export default tmp2;

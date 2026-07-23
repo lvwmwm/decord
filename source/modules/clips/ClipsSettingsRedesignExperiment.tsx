@@ -1,12 +1,16 @@
-// Module ID: 4189
-// Function ID: 36036
+// Module ID: 4193
+// Function ID: 36068
 // Name: useIsClipsSettingsRedesignEnabled
-// Dependencies: []
+// Dependencies: [4183, 1428, 4188, 566, 2]
 // Exports: isClipsSettingsRedesignEnabled, useDisabledWhenAutoclippingOff
 
-// Module 4189 (useIsClipsSettingsRedesignEnabled)
+// Module 4193 (useIsClipsSettingsRedesignEnabled)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ApexExperiment from "ApexExperiment";
+
+const require = arg1;
 function useIsClipsSettingsRedesignEnabled() {
-  return apexExperiment.useConfig({ location: "useIsClipsSettingsRedesignEnabled" }).enableRedesign;
+  return ApexExperiment.useConfig({ location: "useIsClipsSettingsRedesignEnabled" }).enableRedesign;
 }
 function useDisabledWhenClippingOff() {
   let tmp = useIsClipsSettingsRedesignEnabled();
@@ -15,24 +19,23 @@ function useDisabledWhenClippingOff() {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const apexExperiment = arg1(dependencyMap[1]).createApexExperiment({ defaultConfig: { enableRedesign: false }, variations: { [1]: { enableRedesign: true } } });
-const obj = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/clips/ClipsSettingsRedesignExperiment.tsx");
+ApexExperiment = { kind: "user", name: "2026-06-clips-settings-redesign", defaultConfig: { enableRedesign: false }, variations: { [1]: { enableRedesign: true } } };
+ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+const result = require("isClipsEnabled").fileFinishedImporting("modules/clips/ClipsSettingsRedesignExperiment.tsx");
 
-export const ClipsSettingsRedesignExperiment = apexExperiment;
+export const ClipsSettingsRedesignExperiment = ApexExperiment;
 export { useIsClipsSettingsRedesignEnabled };
 export const isClipsSettingsRedesignEnabled = function isClipsSettingsRedesignEnabled() {
-  return apexExperiment.getConfig({ location: "isClipsSettingsRedesignEnabled" }).enableRedesign;
+  return ApexExperiment.getConfig({ location: "isClipsSettingsRedesignEnabled" }).enableRedesign;
 };
 export { useDisabledWhenClippingOff };
 export const useDisabledWhenAutoclippingOff = function useDisabledWhenAutoclippingOff() {
   let tmp = useIsClipsSettingsRedesignEnabled();
   let tmp2 = useDisabledWhenClippingOff();
-  const items = [closure_2];
+  const items = [_isNativeReflectConstruct];
   if (!tmp2) {
     if (tmp) {
-      tmp = !obj.useStateFromStores(items, () => enableAutoclipping.getEnableAutoclipping());
+      tmp = !obj.useStateFromStores(items, () => outer1_2.getEnableAutoclipping());
     }
     tmp2 = tmp;
   }

@@ -1,20 +1,21 @@
-// Module ID: 12716
-// Function ID: 97615
+// Module ID: 12830
+// Function ID: 99771
 // Name: _queryAudioEffects
-// Dependencies: []
+// Dependencies: [5, 653, 4, 478, 686, 675, 2]
 // Exports: default
 
-// Module 12716 (_queryAudioEffects)
+// Module 12830 (_queryAudioEffects)
+import expandLocation from "expandLocation";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function _queryAudioEffects() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _queryAudioEffects = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const logger = new arg1(dependencyMap[2]).Logger("AudioEffects");
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/noise_cancellation/queryAudioEffects.tsx");
+const logger = new require("dispatcher").Logger("AudioEffects");
+const result = require("log").fileFinishedImporting("modules/noise_cancellation/queryAudioEffects.tsx");
 
 export default function queryAudioEffects() {
   return _queryAudioEffects(...arguments);

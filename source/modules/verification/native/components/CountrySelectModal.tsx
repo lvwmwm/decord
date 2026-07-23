@@ -1,36 +1,38 @@
-// Module ID: 9234
-// Function ID: 72230
+// Module ID: 9241
+// Function ID: 72271
 // Name: CountrySelectModal
-// Dependencies: []
+// Dependencies: [31, 33, 1212, 5087, 4337, 9242, 9239, 5584, 9260, 5519, 2]
 // Exports: default
 
-// Module 9234 (CountrySelectModal)
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/verification/native/components/CountrySelectModal.tsx");
+// Module 9241 (CountrySelectModal)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("getSystemLocale").fileFinishedImporting("modules/verification/native/components/CountrySelectModal.tsx");
 
 export default function CountrySelectModal() {
-  const screens = React.useMemo(() => function getScreens() {
+  const screens = React.useMemo(() => (function getScreens() {
     let obj = {};
     obj = {};
-    const intl = callback(closure_2[2]).intl;
-    obj.title = intl.string(callback(closure_2[2]).t.gzXECH);
-    obj.headerLeft = callback(closure_2[3]).getHeaderCloseButton(callback2(closure_2[4]).pop);
+    const intl = outer2_0(outer2_2[2]).intl;
+    obj.title = intl.string(outer2_0(outer2_2[2]).t.gzXECH);
+    obj.headerLeft = outer2_0(outer2_2[3]).getHeaderCloseButton(outer2_1(outer2_2[4]).pop);
     obj.render = function render() {
-      return callback2(callback(closure_2[5]), {
+      return outer3_4(outer3_1(outer3_2[5]), {
         onClose() {
-          return callback(closure_2[4]).pop();
+          return outer4_1(outer4_2[4]).pop();
         },
         onCountrySelected(countryCode) {
-          return callback(closure_2[6]).setCountryCode(countryCode);
+          return outer4_1(outer4_2[6]).setCountryCode(countryCode);
         }
       });
     };
     obj.COUNTRY_SELECT = obj;
     return obj;
-  }(), []);
+  })(), []);
   const effect = React.useEffect(() => () => {
-    callback(closure_2[7]).runAfterInteractions(callback(closure_2[8]).setCountrySelectorClosed, 400);
+    outer2_1(outer2_2[7]).runAfterInteractions(outer2_1(outer2_2[8]).setCountrySelectorClosed, 400);
   }, []);
-  return jsx(arg1(dependencyMap[9]).Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
+  return jsx(require(5519) /* NavigationStack */.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
 };

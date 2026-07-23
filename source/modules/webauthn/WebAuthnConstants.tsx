@@ -1,10 +1,9 @@
-// Module ID: 13510
-// Function ID: 102521
+// Module ID: 13624
+// Function ID: 104677
 // Name: WebAuthnScreens
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 13510 (WebAuthnScreens)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/webauthn/WebAuthnConstants.tsx");
+// Module 13624 (WebAuthnScreens)
+const result = require("set").fileFinishedImporting("modules/webauthn/WebAuthnConstants.tsx");
 
 export const WebAuthnScreens = { MODAL_UPSELL: "MODAL_UPSELL", INIT: "INIT", EDIT: "EDIT", REGISTER: "REGISTER", NAME: "NAME", SUCCESS: "SUCCESS" };

@@ -1,19 +1,21 @@
-// Module ID: 9240
-// Function ID: 72268
+// Module ID: 9247
+// Function ID: 72309
 // Name: useFastestListUnexpectedItemSizeCallback
-// Dependencies: []
+// Dependencies: [31, 9248, 2]
 // Exports: default
 
-// Module 9240 (useFastestListUnexpectedItemSizeCallback)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/fastest_list/useFastestListUnexpectedItemSizeCallback.android.tsx");
+// Module 9247 (useFastestListUnexpectedItemSizeCallback)
+import result from "result";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/fastest_list/useFastestListUnexpectedItemSizeCallback.android.tsx");
 
 export default function useFastestListUnexpectedItemSizeCallback(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const items = [arg0];
   return React.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
-    const current = nativeEvent.current;
+    const current = ref.current;
     if (nativeEvent.isSectionHeader) {
       let renderSectionHeaderResult;
       if (null != current.renderSectionHeader) {
@@ -80,8 +82,8 @@ export default function useFastestListUnexpectedItemSizeCallback(arg0) {
       }
       obj.itemName = str12;
       obj.itemProps = joined;
-      obj.listId = nativeEvent.current.listId;
-      nativeEvent(closure_1[1]).logFastestListError("Expected item size mismatch.", obj);
+      obj.listId = ref.current.listId;
+      ref(outer1_1[1]).logFastestListError("Expected item size mismatch.", obj);
     }
     let type1;
     if (null != type) {

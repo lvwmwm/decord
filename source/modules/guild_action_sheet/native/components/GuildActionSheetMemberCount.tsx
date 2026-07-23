@@ -1,79 +1,99 @@
-// Module ID: 10113
-// Function ID: 78290
+// Module ID: 10121
+// Function ID: 78330
 // Name: num2
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 478, 1324, 1212, 4126, 2]
 
-// Module 10113 (num2)
-const View = arg1(dependencyMap[1]).View;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj1 = arg1(dependencyMap[3]);
-let obj = { wrapper: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" } };
-obj = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": "relative", "Bool(false)": "100%", borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_ONLINE };
-obj.online = obj;
-obj1 = { "Bool(false)": null, "Bool(false)": 4, "Bool(false)": "relative", "Bool(false)": "100%", borderRadius: importDefault(dependencyMap[4]).radii.sm, backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_STATUS_OFFLINE };
-obj.total = obj1;
-const obj2 = { textAlignVertical: "center" };
-const tmp2 = arg1(dependencyMap[2]);
+// Module 10121 (num2)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+import isWindows from "isWindows";
+import isWindows from "isWindows";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let obj = { wrapper: { flexDirection: "row", alignItems: "center" } };
+obj = { width: 8, height: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+obj.dot = obj;
+obj.dotContainer = { alignItems: "center", justifyContent: "center", marginRight: 4 };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_ONLINE };
+obj.onlineDot = _createForOfIteratorHelperLoose;
+obj.offlineDot = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_OFFLINE };
+let obj3 = { textAlignVertical: "center" };
 let num;
-if (obj7.isAndroid()) {
+if (isWindows.isAndroid()) {
   num = 12;
 }
-obj2.lineHeight = num;
-obj.text = obj2;
-const obj3 = { textAlignVertical: "center" };
-const obj7 = arg1(dependencyMap[5]);
+obj3.lineHeight = num;
+obj.text = obj3;
+const obj4 = { textAlignVertical: "center" };
 let num2;
-if (obj9.isAndroid()) {
+if (isWindows.isAndroid()) {
   num2 = 14;
 }
-obj3.lineHeight = num2;
-obj.refreshText = obj3;
-let closure_6 = obj1.createStyles(obj);
-const obj9 = arg1(dependencyMap[5]);
+obj4.lineHeight = num2;
+obj.refreshText = obj4;
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_OFFLINE };
 const memoResult = importAllResult.memo(function MemberCount(arg0) {
   let color;
   let count;
+  let dotContainerWidth;
   let type;
-  ({ type, count, color } = arg0);
-  const tmp = importDefault(dependencyMap[6])("GuildActionSheetMemberCount");
+  ({ type, count, color, dotContainerWidth } = arg0);
+  const tmp = importDefault(1324)("GuildActionSheetMemberCount");
   if (null == count) {
-    const intl2 = arg1(dependencyMap[7]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     if ("online" === type) {
     } else {
     }
     intl2.string(_5SWsJX);
   } else {
-    const intl = arg1(dependencyMap[7]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     if ("online" === type) {
-      let etqpUG = arg1(dependencyMap[7]).t.PIikks;
+      let etqpUG = require(1212) /* getSystemLocale */.t.PIikks;
     } else {
-      etqpUG = arg1(dependencyMap[7]).t.etqpUG;
+      etqpUG = require(1212) /* getSystemLocale */.t.etqpUG;
     }
     let obj = { count };
     const tmp17 = callback2();
     obj = { style: tmp17.wrapper };
-    obj = { style: tmp17[type] };
-    const items = [callback(View, obj), ];
-    const obj1 = {};
-    let str3 = "text-xs/medium";
+    obj = {};
+    const items = [tmp17.dotContainer, ];
+    let tmp21 = null != dotContainerWidth;
+    if (tmp21) {
+      const obj1 = { width: dotContainerWidth };
+      tmp21 = obj1;
+    }
+    items[1] = tmp21;
+    obj.style = items;
+    const obj2 = {};
+    const items1 = [tmp17.dot, "online" === type ? tmp17.onlineDot : tmp17.offlineDot];
+    obj2.style = items1;
+    obj.children = callback(View, obj2);
+    const items2 = [callback(View, obj), ];
+    const obj3 = {};
+    let str4 = "text-xs/medium";
     if (tmp) {
-      str3 = "text-sm/normal";
+      str4 = "text-sm/normal";
     }
-    obj1.variant = str3;
-    let str4 = "text-default";
+    obj3.variant = str4;
+    let str5 = "text-default";
     if (null != color) {
-      str4 = color;
+      str5 = color;
     }
-    obj1.color = str4;
-    obj1.lineClamp = 1;
-    obj1.style = tmp ? tmp17.refreshText : tmp17.text;
-    obj1.children = intl.format(etqpUG, obj);
-    items[1] = callback(arg1(dependencyMap[8]).Text, obj1);
-    obj.children = items;
+    obj3.color = str5;
+    obj3.lineClamp = 1;
+    obj3.style = tmp ? tmp17.refreshText : tmp17.text;
+    obj3.children = intl.format(etqpUG, obj);
+    items2[1] = callback(require(4126) /* Text */.Text, obj3);
+    obj.children = items2;
     return closure_5(View, obj);
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetMemberCount.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetMemberCount.tsx");
 
 export default memoResult;

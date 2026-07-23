@@ -1,24 +1,27 @@
-// Module ID: 6751
-// Function ID: 52568
+// Module ID: 6756
+// Function ID: 52600
 // Name: createDefaultMemberSafetyPaginationState
-// Dependencies: []
+// Dependencies: [57, 6, 7, 1917, 6729, 2]
 // Exports: getSearchChunkLimit
 
-// Module 6751 (createDefaultMemberSafetyPaginationState)
+// Module 6756 (createDefaultMemberSafetyPaginationState)
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function createDefaultMemberSafetyPaginationState() {
-  return { pageSize: items[0], sort: arg1(dependencyMap[4]).OrderBy.ORDER_BY_UNSPECIFIED };
+  const obj = { pageSize: items[0], currentPage: 1, continuationToken: null, sort: require(6729) /* result */.OrderBy.ORDER_BY_UNSPECIFIED, elasticSearchCursor: null };
+  return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const items = ["Array", "enhanceNewMember", "Array", "_isResponseOK"];
+let items = [12, 25, 50, 100];
 let closure_7 = { FORWARD: 1, [1]: "FORWARD", BACKWARD: -1, [-1]: "BACKWARD" };
-const tmp2 = () => {
+const tmp2 = (() => {
   class GuildMemberSafetyPagination {
     constructor(arg0, arg1) {
-      GuildMemberSafetyPagination = this;
-      tmp = closure_3(this, GuildMemberSafetyPagination);
+      self = this;
+      tmp = outer1_3(this, self);
       this._reduceMemberIdsToPaginationChunks = (arg0, arg1, arg2) => {
         const sum = Math.floor(arg2 / self._paginationState.pageSize) + 1;
         if (null == arg0[sum]) {
@@ -29,25 +32,24 @@ const tmp2 = () => {
         return arg0;
       };
       this.guildId = arg0;
-      this._paginationState = closure_8();
+      this._paginationState = outer1_8();
       this._version = 0;
-      tmp2 = closure_2(this._initPaginationFromRawMembers(arg1), 2);
+      tmp2 = outer1_2(this._initPaginationFromRawMembers(arg1), 2);
       [this._sortedMemberIds, this._cachedPaginationChunks] = tmp2;
       this._version = this._version + 1;
       return;
     }
   }
-  const arg1 = GuildMemberSafetyPagination;
   let obj = {
     key: "reset",
     value() {
-      this._paginationState = callback3();
+      this._paginationState = outer1_8();
       this._sortedMemberIds = [];
       this._cachedPaginationChunks = {};
       this._version = this._version + 1;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , ];
   obj = {
     key: "isMemberOnCurrentPage",
     value(arg0) {
@@ -70,7 +72,7 @@ const tmp2 = () => {
   items[3] = {
     key: "_initPaginationFromRawMembers",
     value(arr) {
-      const GuildMemberSafetyPagination = this;
+      const self = this;
       const items = [];
       const items1 = [
         items,
@@ -162,7 +164,7 @@ const tmp2 = () => {
   items[10] = {
     key: "updateSortedMembers",
     value(arg0) {
-      [this._sortedMemberIds, this._cachedPaginationChunks] = callback(this._initPaginationFromRawMembers(arg0), 2);
+      [this._sortedMemberIds, this._cachedPaginationChunks] = outer1_2(this._initPaginationFromRawMembers(arg0), 2);
       this._version = this._version + 1;
       return true;
     }
@@ -182,13 +184,13 @@ const tmp2 = () => {
       let BACKWARD = arg1;
       const self = this;
       if (arg1 === undefined) {
-        BACKWARD = constants.BACKWARD;
+        BACKWARD = outer1_7.BACKWARD;
       }
       let diff = sum;
       if (sum < self._sortedMemberIds.length) {
         diff = self._sortedMemberIds.length - 1;
       }
-      let member = store.getMember(self.guildId, self._sortedMemberIds[sum]);
+      let member = outer1_5.getMember(self.guildId, self._sortedMemberIds[sum]);
       let tmp5 = member;
       if (null == member) {
         sum = sum + BACKWARD;
@@ -198,8 +200,8 @@ const tmp2 = () => {
           if (sum >= self._sortedMemberIds.length) {
             break;
           } else {
-            let tmp6 = store;
-            let member1 = store.getMember(self.guildId, self._sortedMemberIds[sum]);
+            let tmp6 = outer1_5;
+            let member1 = outer1_5.getMember(self.guildId, self._sortedMemberIds[sum]);
             let joinedAt;
             if (null != member1) {
               joinedAt = member1.joinedAt;
@@ -237,8 +239,8 @@ const tmp2 = () => {
     }
   };
   return callback(GuildMemberSafetyPagination, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetyPagination.tsx");
+})();
+let result = require("_defineProperties").fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetyPagination.tsx");
 
 export const PAGINATION_PAGE_SIZE_OPTIONS = items;
 export const MAX_VISIBLE_PAGES = 7;

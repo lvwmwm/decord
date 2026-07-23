@@ -1,27 +1,27 @@
-// Module ID: 13722
-// Function ID: 103788
+// Module ID: 13836
+// Function ID: 105944
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 1212, 2198, 13837, 2]
 
-// Module 13722 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 13836 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[3]).intl;
-    return intl.string(importDefault(dependencyMap[4]).w/ISB8);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2198)["w/ISB8"]);
   },
-  parent: require(dependencyMap[0]).MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   unsearchable: true,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.FAMILY_CENTER_SCHEDULE_DOWNTIME,
+  route: require("ME").UserSettingsSections.FAMILY_CENTER_SCHEDULE_DOWNTIME,
   getComponent() {
-    return require(dependencyMap[5]).default;
+    return require(13837) /* openTimePicker */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterScheduleDowntimeSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/FamilyCenterScheduleDowntimeSetting.tsx");
 
 export default route;

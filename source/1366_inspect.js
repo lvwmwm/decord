@@ -1,7 +1,7 @@
 // Module ID: 1366
-// Function ID: 16388
+// Function ID: 16389
 // Name: inspect
-// Dependencies: []
+// Dependencies: [1367, 1384, 1385]
 // Exports: _extend, callbackify, debuglog, deprecate, format, isNullOrUndefined, isPrimitive, isSymbol, log, promisify
 
 // Module 1366 (inspect)
@@ -38,7 +38,7 @@ function inspect(arg0, showHidden) {
 function stylizeWithColor(arg0, arg1) {
   let text = arg0;
   if (inspect.styles[arg1]) {
-    text = `${"\u001B[" + closure_7.colors[tmp][0] + "m" + arg0 + "\u001B[" + closure_7.colors[tmp][1]}m`;
+    text = `${"\u001B[" + inspect.colors[tmp][0] + "m" + arg0 + "\u001B[" + inspect.colors[tmp][1]}m`;
   }
   return text;
 }
@@ -46,13 +46,13 @@ function stylizeNoColor(arg0, arg1) {
   return arg0;
 }
 function formatValue(customInspect, inspect) {
-  const exports = customInspect;
+  const _exports = customInspect;
   let closure_1 = inspect;
   let closure_2 = arg2;
   if (customInspect.customInspect) {
     if (inspect) {
       if (isFunction(inspect.inspect)) {
-        if (inspect.inspect !== exports.inspect) {
+        if (inspect.inspect !== _exports.inspect) {
           const inspectResult = inspect.inspect(arg2, customInspect);
           let tmp39 = inspectResult;
           if (!isString(inspectResult)) {
@@ -83,14 +83,13 @@ function formatValue(customInspect, inspect) {
   } else {
     const _Object = Object;
     const keys = Object.keys(inspect);
-    const tmp11 = function arrayToHash(keys) {
+    const tmp11 = (function arrayToHash(keys) {
       const obj = {};
-      keys = obj;
       const item = keys.forEach((arg0, arg1) => {
         obj[arg0] = true;
       });
       return obj;
-    }(keys);
+    })(keys);
     let closure_3 = tmp11;
     let ownPropertyNames = keys;
     if (customInspect.showHidden) {
@@ -118,11 +117,11 @@ function formatValue(customInspect, inspect) {
       }
     }
     let flag = false;
-    let closure_4 = false;
-    let items = [null, "Uint32Array"];
+    let c4 = false;
+    let items = ["{", "}"];
     if (isArray(inspect)) {
-      closure_4 = true;
-      items = ["bind", "bindKey"];
+      c4 = true;
+      items = ["[", "]"];
       flag = true;
     }
     let str14 = "";
@@ -142,7 +141,7 @@ function formatValue(customInspect, inspect) {
       str15 = ` ${toUTCString.call(inspect)}`;
     }
     if (isError(inspect)) {
-      str15 = ` ${closure_11(inspect)}`;
+      str15 = ` ${formatError(inspect)}`;
     }
     if (0 === ownPropertyNames.length) {
       return items[0] + str15 + items[1];
@@ -151,40 +150,43 @@ function formatValue(customInspect, inspect) {
       const seen = customInspect.seen;
       seen.push(inspect);
       if (flag) {
-        let mapped = function formatArray(customInspect, inspect, arg2, arg3, ownPropertyNames) {
+        let mapped = (function formatArray(customInspect, inspect, arg2, arg3, ownPropertyNames) {
+          let closure_0 = customInspect;
+          let closure_1 = inspect;
+          let closure_2 = arg2;
+          let closure_3 = arg3;
           const items = [];
-          let closure_4 = items;
           for (let num = 0; num < length; num = num + 1) {
-            let tmp = callback2;
+            let tmp = outer1_26;
             let _String = String;
             let push = items.push;
             let tmp2 = num;
-            if (callback2(inspect, String(num))) {
-              let tmp4 = callback;
+            if (outer1_26(inspect, String(num))) {
+              let tmp4 = outer1_12;
               let _String2 = String;
               let tmp5 = customInspect;
               let tmp6 = inspect;
               let tmp7 = arg2;
               let tmp8 = arg3;
               let flag = true;
-              let arr = push(callback(customInspect, inspect, arg2, arg3, String(num), true));
+              let arr = push(outer1_12(customInspect, inspect, arg2, arg3, String(num), true));
             } else {
               arr = push("");
             }
           }
           const item = ownPropertyNames.forEach((str) => {
             if (!str.match(/^\d+$/)) {
-              items.push(callback(str, arg1, arg2, arg3, str, true));
+              items.push(outer2_12(closure_0, closure_1, closure_2, closure_3, str, true));
             }
           });
           return items;
-        }(customInspect, inspect, arg2, tmp11, ownPropertyNames);
+        })(customInspect, inspect, arg2, tmp11, ownPropertyNames);
       } else {
-        mapped = ownPropertyNames.map((arg0) => callback(arg0, arg1, arg2, tmp11, arg0, closure_4));
+        mapped = ownPropertyNames.map((arg0) => outer1_12(closure_0, closure_1, closure_2, closure_3, arg0, c4));
       }
       const seen1 = customInspect.seen;
       seen1.pop();
-      function reduceToSingleString(mapped, arg1, items) {
+      (function reduceToSingleString(mapped, arg1, items) {
         if (mapped.reduce((arg0, arr) => {
           arr.indexOf("\n") >= 0;
           return arg0 + arr.replace(/\u001b\[\d\d?m/g, "").length + 1;
@@ -200,7 +202,7 @@ function formatValue(customInspect, inspect) {
           const sum1 = items[0] + arg1;
           return sum1 + " " + mapped.join(", ") + " " + items[1];
         }
-      }(mapped, str15, items);
+      })(mapped, str15, items);
     }
     const stylize = customInspect.stylize;
     if (isRegExp(inspect)) {
@@ -367,39 +369,39 @@ function callbackifyOnRejected(reason) {
   }
   return arg1(tmp);
 }
-let closure_1 = Object.getOwnPropertyDescriptors || function getOwnPropertyDescriptors(arg0) {
+let closure_1 = Object.getOwnPropertyDescriptors || (function getOwnPropertyDescriptors(item10017) {
   let length;
-  const keys = Object.keys(arg0);
+  const keys = Object.keys(item10017);
   const obj = {};
   let num = 0;
   if (0 < keys.length) {
     do {
       let _Object = Object;
-      obj[keys[num]] = Object.getOwnPropertyDescriptor(arg0, keys[num]);
+      obj[keys[num]] = Object.getOwnPropertyDescriptor(item10017, keys[num]);
       num = num + 1;
       length = keys.length;
     } while (num < length);
   }
   return obj;
-};
-let closure_2 = /%[sdj%]/g;
+});
+const re2 = /%[sdj%]/g;
 let closure_3 = {};
 let regExp = /^$/;
 if (process.env.NODE_DEBUG) {
-  const _process = process;
+  let _process = process;
   const str = process.env.NODE_DEBUG;
-  const str3 = process.env.NODE_DEBUG.replace(/[|\\{}()[\]^$+?.]/g, "\\$&");
+  let str3 = process.env.NODE_DEBUG.replace(/[|\\{}()[\]^$+?.]/g, "\\$&");
   const str5 = process.env.NODE_DEBUG.replace(/[|\\{}()[\]^$+?.]/g, "\\$&").replace(/\*/g, ".*");
-  const _RegExp = RegExp;
+  let _RegExp = RegExp;
   regExp = new RegExp("^" + process.env.NODE_DEBUG.replace(/[|\\{}()[\]^$+?.]/g, "\\$&").replace(/\*/g, ".*").replace(/,/g, "$|^").toUpperCase() + "$", "i");
   const str7 = process.env.NODE_DEBUG.replace(/[|\\{}()[\]^$+?.]/g, "\\$&").replace(/\*/g, ".*").replace(/,/g, "$|^");
 }
-inspect.colors = { bold: [null, true], italic: [], underline: [], inverse: [], white: [], grey: [], black: [], blue: [], cyan: [null, null], green: ["media.tenor.com", "media.tenor.co"], magenta: [true, null], red: [null, null], yellow: [false, false] };
-inspect.styles = {};
+inspect.colors = { bold: [1, 22], italic: [3, 23], underline: [4, 24], inverse: [7, 27], white: [37, 39], grey: [90, 39], black: [30, 39], blue: [34, 39], cyan: [36, 39], green: [32, 39], magenta: [35, 39], red: [31, 39], yellow: [33, 39] };
+inspect.styles = { special: "cyan", number: "yellow", boolean: "yellow", undefined: "grey", null: "bold", string: "green", date: "magenta", regexp: "red" };
 exports.types.isRegExp = isRegExp;
 exports.types.isDate = isDate;
 exports.types.isNativeError = isError;
-let closure_5 = [];
+let closure_5 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 let SymbolResult;
 if ("undefined" !== typeof Symbol) {
   const _Symbol = Symbol;
@@ -411,12 +413,11 @@ export const format = (arg0) => {
   let length;
   let sum1;
   if (isString(arg0)) {
-    let closure_0 = 1;
+    let c0 = 1;
     let closure_1 = arguments;
     const length2 = arguments.length;
-    let closure_2 = length2;
-    const _String = String;
-    let replaced = String(arg0).replace(closure_2, (arg0) => {
+    let _String = String;
+    let replaced = String(arg0).replace(length2, (arg0) => {
       if ("%%" === arg0) {
         return "%";
       } else if (closure_0 >= length2) {
@@ -424,22 +425,22 @@ export const format = (arg0) => {
       } else if ("%s" === arg0) {
         const _String = String;
         closure_0 = tmp12 + 1;
-        return String(closure_1[+closure_0]);
+        return String(dependencyMap[+closure_0]);
       } else if ("%d" === arg0) {
         const _Number = Number;
         closure_0 = tmp8 + 1;
-        return Number(closure_1[+closure_0]);
+        return Number(dependencyMap[+closure_0]);
       } else if ("%j" === arg0) {
         const _JSON = JSON;
         closure_0 = tmp4 + 1;
-        return JSON.stringify(closure_1[+closure_0]);
+        return JSON.stringify(dependencyMap[+closure_0]);
       } else {
         return arg0;
       }
     });
-    let tmp12 = arguments[closure_0];
+    let tmp12 = arguments[c0];
     let tmp14 = replaced;
-    if (closure_0 < length2) {
+    if (c0 < length2) {
       while (true) {
         let tmp15 = isNull;
         let tmp16 = tmp12;
@@ -447,16 +448,16 @@ export const format = (arg0) => {
           let tmp17 = isObject;
           if (isObject(tmp12)) {
             let tmp18 = inspect;
-            let text = `${tmp10} ${closure_7(tmp12)}`;
+            let text = `${tmp10} ${inspect(tmp12)}`;
           }
-          let tmp20 = closure_0;
-          let sum = closure_0 + 1;
-          closure_0 = sum;
+          let tmp20 = c0;
+          let sum = c0 + 1;
+          c0 = sum;
           tmp12 = arguments[sum];
-          let tmp22 = closure_0;
+          let tmp22 = c0;
           replaced = text;
           tmp14 = text;
-          if (closure_0 >= length2) {
+          if (c0 >= length2) {
             break;
           }
         }
@@ -466,15 +467,15 @@ export const format = (arg0) => {
     return tmp14;
   } else {
     const items = [];
-    closure_0 = 0;
+    c0 = 0;
     if (0 < arguments.length) {
       do {
-        let tmp = closure_7;
-        let tmp2 = closure_0;
-        let arr = items.push(closure_7(arguments[closure_0]));
-        let tmp4 = closure_0;
-        sum1 = closure_0 + 1;
-        closure_0 = sum1;
+        let tmp = inspect;
+        let tmp2 = c0;
+        let arr = items.push(inspect(arguments[c0]));
+        let tmp4 = c0;
+        sum1 = c0 + 1;
+        c0 = sum1;
         length = arguments.length;
       } while (sum1 < length);
     }
@@ -482,62 +483,61 @@ export const format = (arg0) => {
   }
 };
 export const deprecate = (arg0, arg1) => {
-  const exports = arg0;
+  let closure_0 = arg0;
   let closure_1 = arg1;
   if ("undefined" !== typeof process) {
-    const _process = process;
+    let _process = process;
     if (true === process.noDeprecation) {
       return arg0;
     }
   }
   if ("undefined" === typeof process) {
     return function() {
-      return arg0.deprecate(arg0, arg1)(...arguments);
+      return lib.deprecate(lib, closure_1)(...arguments);
     };
   } else {
-    let closure_2 = false;
+    let c2 = false;
     return function deprecated() {
-      if (!closure_2) {
+      if (!c2) {
         const _process = process;
         if (process.throwDeprecation) {
           const _Error = Error;
-          const error = new Error(arg1);
+          const error = new Error(closure_1);
           throw error;
         } else {
           const _process2 = process;
           const _console = console;
           if (process.traceDeprecation) {
-            _console.trace(arg1);
+            _console.trace(closure_1);
           } else {
-            _console.error(arg1);
+            _console.error(closure_1);
           }
-          closure_2 = true;
+          c2 = true;
         }
       }
-      return arg0(...arguments);
+      return lib(...arguments);
     };
   }
 };
 export const debuglog = (str) => {
   const formatted = str.toUpperCase();
-  const exports = formatted;
-  if (!closure_3[formatted]) {
+  if (!dependencyMap[formatted]) {
     if (regExp.test(formatted)) {
       const _process = process;
-      closure_3[formatted] = () => {
+      dependencyMap[formatted] = () => {
         const format = formatted.format;
         console.error("%s %d: %s", formatted, pid, format(...arguments));
       };
     } else {
-      closure_3[formatted] = () => {
+      dependencyMap[formatted] = () => {
 
       };
     }
   }
-  return closure_3[formatted];
+  return dependencyMap[formatted];
 };
 export { inspect };
-export const types = require(dependencyMap[0]);
+export const types = require("uncurryThis");
 export { isArray };
 export { isBoolean };
 export { isNull };
@@ -574,17 +574,17 @@ export function isPrimitive(arg0) {
   }
   return tmp;
 }
-export const isBuffer = require(dependencyMap[1]);
+export const isBuffer = require("isBuffer");
 export const log = () => {
   const date = new Date();
   const items = [pad(date.getHours()), pad(date.getMinutes()), pad(date.getSeconds())];
   const joined = items.join(":");
-  const items1 = [date.getDate(), closure_5[date.getMonth(date)], joined];
+  const items1 = [date.getDate(), table[date.getMonth(date)], joined];
   const format = exports.format;
   const joined1 = items1.join(" ");
   console.log("%s - %s", joined1, format(...arguments));
 };
-export const inherits = require(dependencyMap[2]);
+export const inherits = require("module_1385");
 export const _extend = (arg0, arg1) => {
   let tmp5;
   if (arg1) {
@@ -605,11 +605,12 @@ export const _extend = (arg0, arg1) => {
   return arg0;
 };
 export const promisify = function promisify(arg0) {
-  const exports = arg0;
+  let closure_0 = arg0;
   const fn = function n() {
     let length;
     new Promise((arg0, arg1) => {
-
+      let closure_0 = arg0;
+      let closure_1 = arg1;
     });
     const items = [];
     let num = 0;
@@ -628,14 +629,14 @@ export const promisify = function promisify(arg0) {
         callback(arg1);
       }
     });
-    arg0.apply(this, items);
+    callback.apply(this, items);
   };
   if ("function" !== typeof arg0) {
     const _TypeError2 = TypeError;
     const typeError = new TypeError("The \"original\" argument must be of type Function");
     throw typeError;
   } else {
-    if (SymbolResult) {
+    if (closure_6) {
       if (arg0[closure_6]) {
         if ("function" !== typeof arg0[closure_6]) {
           const _TypeError = TypeError;
@@ -643,8 +644,8 @@ export const promisify = function promisify(arg0) {
           throw typeError1;
         } else {
           const _Object5 = Object;
-          let obj = { 1837105156: "k", 894631940: "k", 65904547: "L", 1233076609: "L", value: tmp9 };
-          Object.defineProperty(tmp9, SymbolResult, obj);
+          let obj = { value: tmp9, enumerable: false, writable: false, configurable: true };
+          Object.defineProperty(tmp9, closure_6, obj);
           return tmp9;
         }
       }
@@ -652,17 +653,17 @@ export const promisify = function promisify(arg0) {
     const _Object = Object;
     const _Object2 = Object;
     Object.setPrototypeOf(fn, Object.getPrototypeOf(arg0));
-    if (SymbolResult) {
+    if (closure_6) {
       const _Object3 = Object;
-      obj = { 1837105156: "k", 894631940: "k", 65904547: "L", 1233076609: "L", value: fn };
-      Object.defineProperty(fn, SymbolResult, obj);
+      obj = { value: fn, enumerable: false, writable: false, configurable: true };
+      Object.defineProperty(fn, closure_6, obj);
     }
     const _Object4 = Object;
     return Object.defineProperties(fn, callback(arg0));
   }
 };
 export const callbackify = function callbackify(arg0) {
-  const exports = arg0;
+  let closure_0 = arg0;
   function callbackified() {
     let length;
     const self = this;
@@ -676,7 +677,6 @@ export const callbackify = function callbackify(arg0) {
       } while (num < length);
     }
     arr = items.pop();
-    const arg0 = arr;
     if ("function" !== typeof arr) {
       const _TypeError = TypeError;
       const typeError = new TypeError("The last argument must be of type Function");
@@ -685,16 +685,16 @@ export const callbackify = function callbackify(arg0) {
       function cb() {
         return arr(...arguments);
       }
-      arg0.apply(self, items).then((queue) => {
+      arr.apply(self, items).then((queue) => {
         process.nextTick(cb.bind(null, null, queue));
-      }, (closure_101) => {
-        process.nextTick(callback.bind(null, closure_101, cb));
+      }, (c101) => {
+        process.nextTick(outer2_27.bind(null, c101, cb));
       });
     }
   }
   if ("function" !== typeof arg0) {
-    const _TypeError = TypeError;
-    const typeError = new TypeError("The \"original\" argument must be of type Function");
+    let _TypeError = TypeError;
+    let typeError = new TypeError("The \"original\" argument must be of type Function");
     throw typeError;
   } else {
     const _Object = Object;

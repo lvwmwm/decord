@@ -1,17 +1,18 @@
 // Module ID: 805
-// Function ID: 9040
+// Function ID: 9041
 // Name: _htmlElementAsString
-// Dependencies: []
+// Dependencies: [798, 804]
 
 // Module 805 (_htmlElementAsString)
+const require = arg1;
+const dependencyMap = arg6;
 function _htmlElementAsString(dataset, arr) {
-  arr = dataset;
-  const items = [];
+  const _require = dataset;
+  let items = [];
   let arr1 = items;
-  const arg6 = items;
   if (null != dataset) {
     if (obj.tagName) {
-      if (arr(arg6[0]).GLOBAL_OBJ.HTMLElement) {
+      if (_require(items[0]).GLOBAL_OBJ.HTMLElement) {
         if (obj instanceof globalThis.HTMLElement) {
           if (obj.dataset) {
             dataset = obj.dataset;
@@ -28,9 +29,9 @@ function _htmlElementAsString(dataset, arr) {
       if (null != arr) {
         mapped = null;
         if (arr.length) {
-          const found = arr.filter((arg0) => arg0.getAttribute(arg0));
+          const found = arr.filter((arg0) => dataset.getAttribute(arg0));
           mapped = found.map((arg0) => {
-            const items = [arg0, arg0.getAttribute(arg0)];
+            const items = [arg0, dataset.getAttribute(arg0)];
             return items;
           });
         }
@@ -41,7 +42,7 @@ function _htmlElementAsString(dataset, arr) {
             items.push("[" + arg0[0] + "=\"" + arg0[1] + "\"]");
           });
         }
-        const iter = [][Symbol.iterator]();
+        const iter = ["aria-label", "type", "name", "title", "alt"][Symbol.iterator]();
         const nextResult = iter.next();
         while (iter !== undefined) {
           let tmp33 = dataset;
@@ -57,7 +58,7 @@ function _htmlElementAsString(dataset, arr) {
             let str10 = "\"]";
             arr = arr1.push("[" + tmp32 + "=\"" + tmp35 + "\"]");
           }
-          // continue
+          continue;
         }
         return arr1.join("");
       }
@@ -73,10 +74,10 @@ function _htmlElementAsString(dataset, arr) {
             let tmp26 = items;
             let _HermesInternal2 = HermesInternal;
             let arr2 = arr1.push("." + tmp24);
-            // continue
+            continue;
           }
         }
-        const obj2 = arr(arg6[1]);
+        obj2 = _require(items[1]);
       }
       const str = obj.tagName;
     }
@@ -87,7 +88,7 @@ Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.getComponentName = function getComponentName(arg0) {
   let parentNode = arg0;
   let num = 0;
-  if (arg1(arg6[0]).GLOBAL_OBJ.HTMLElement) {
+  if (require(798).GLOBAL_OBJ.HTMLElement) {
     while (parentNode) {
       if (parentNode instanceof globalThis.HTMLElement) {
         let dataset = parentNode.dataset;
@@ -112,7 +113,7 @@ arg5.getComponentName = function getComponentName(arg0) {
   }
 };
 arg5.getLocationHref = function getLocationHref() {
-  return arg1(arg6[0]).GLOBAL_OBJ.document.location.href;
+  return require(798).GLOBAL_OBJ.document.location.href;
 };
 arg5.htmlTreeAsString = function htmlTreeAsString(arg0) {
   if (arguments.length > 1) {

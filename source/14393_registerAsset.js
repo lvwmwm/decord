@@ -1,0 +1,11 @@
+// Module ID: 14393
+// Function ID: 110041
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 14393 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "45e29ff493e27168e5d63eb6f088968a", name: "WrenchIcon", type: "png" };
+
+export default registerAsset.registerAsset(obj);

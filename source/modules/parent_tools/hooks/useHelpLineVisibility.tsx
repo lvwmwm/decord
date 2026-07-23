@@ -1,27 +1,28 @@
-// Module ID: 10129
-// Function ID: 78417
+// Module ID: 10137
+// Function ID: 78457
 // Name: useShouldShowHelplineLink
-// Dependencies: [0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 1921, 6769, 7124, 624, 10138, 2]
 // Exports: useShouldShowThroughlineLink
 
-// Module 10129 (useShouldShowHelplineLink)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
+// Module 10137 (useShouldShowHelplineLink)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import set from "_isNativeReflectConstruct";
 
+const require = arg1;
 function useShouldShowHelplineLink() {
-  const tmp = importDefault(dependencyMap[3])();
+  const tmp = importDefault(7124)();
   const items = [closure_5];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => userCountry.getUserCountry());
-  const arg1 = stateFromStores;
-  const obj = arg1(dependencyMap[4]);
-  const items1 = [closure_4];
+  stateFromStores = stateFromStores(624).useStateFromStores(items, () => outer1_5.getUserCountry());
+  let obj = stateFromStores(624);
+  const items1 = [_isNativeReflectConstruct];
   const items2 = [stateFromStores];
-  const stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items1, () => locale.locale);
+  const stateFromStores1 = stateFromStores(624).useStateFromStores(items1, () => outer1_4.locale);
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
-      const userCountryCode = stateFromStores(closure_2[5]).fetchUserCountryCode();
-      const obj = stateFromStores(closure_2[5]);
+      const userCountryCode = stateFromStores(outer1_2[5]).fetchUserCountryCode();
+      const obj = stateFromStores(outer1_2[5]);
     }
   }, items2);
   let hasItem = !tmp;
@@ -36,12 +37,12 @@ function useShouldShowHelplineLink() {
   }
   return hasItem;
 }
-const set = new Set([]);
-const set1 = new Set([0, 5]);
-const result = require("__exportStarResult1").fileFinishedImporting("modules/parent_tools/hooks/useHelpLineVisibility.tsx");
+let set = new Set(["US"]);
+const set1 = new Set(["en-US", "es-ES"]);
+const result = set.fileFinishedImporting("modules/parent_tools/hooks/useHelpLineVisibility.tsx");
 
 export { useShouldShowHelplineLink };
 export const useShouldShowThroughlineLink = function useShouldShowThroughlineLink() {
-  const tmp = importDefault(dependencyMap[3])();
-  return !importDefault(dependencyMap[3])() && !useShouldShowHelplineLink();
+  const tmp = importDefault(7124)();
+  return !importDefault(7124)() && !useShouldShowHelplineLink();
 };

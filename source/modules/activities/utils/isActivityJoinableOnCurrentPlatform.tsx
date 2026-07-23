@@ -1,10 +1,15 @@
-// Module ID: 11946
-// Function ID: 92374
+// Module ID: 11958
+// Function ID: 92427
 // Name: getCurrentActivityGamePlatform
-// Dependencies: []
+// Dependencies: [653, 478, 1553, 5689, 2]
 // Exports: default
 
-// Module 11946 (getCurrentActivityGamePlatform)
+// Module 11958 (getCurrentActivityGamePlatform)
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+let closure_5;
 function getCurrentActivityGamePlatform() {
   if (obj.isIOS()) {
     let META_QUEST = constants2.IOS;
@@ -12,27 +17,25 @@ function getCurrentActivityGamePlatform() {
     if (obj2.isMetaQuest()) {
       META_QUEST = constants2.META_QUEST;
     } else {
-      META_QUEST = require(dependencyMap[1]).isAndroid() ? tmp5.ANDROID : tmp5.DESKTOP;
-      const obj3 = require(dependencyMap[1]);
+      META_QUEST = require(478) /* isWindows */.isAndroid() ? tmp5.ANDROID : tmp5.DESKTOP;
+      const obj3 = require(478) /* isWindows */;
     }
-    const obj2 = require(dependencyMap[2]);
+    obj2 = require(1553) /* isMetaQuest */;
   }
   return META_QUEST;
 }
 function isActivityJoinable(type) {
   let tmp = null == type;
   if (!tmp) {
-    tmp = !importDefault(dependencyMap[3])(type, constants.JOIN);
+    tmp = !importDefault(5689)(type, constants.JOIN);
   }
   if (!tmp) {
     tmp = type.type !== constants3.PLAYING;
   }
   return !tmp;
 }
-const _module = require(dependencyMap[0]);
-({ ActivityFlags: closure_3, ActivityGamePlatforms: closure_4, ActivityTypes: closure_5 } = _module);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/activities/utils/isActivityJoinableOnCurrentPlatform.tsx");
+({ ActivityFlags: closure_3, ActivityGamePlatforms: closure_4, ActivityTypes: closure_5 } = ME);
+const result = require("isMetaQuest").fileFinishedImporting("modules/activities/utils/isActivityJoinableOnCurrentPlatform.tsx");
 
 export default function isActivityJoinableOnCurrentPlatform(platform) {
   if (isActivityJoinable(platform)) {

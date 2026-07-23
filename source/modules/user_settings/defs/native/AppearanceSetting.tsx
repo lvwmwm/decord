@@ -1,27 +1,27 @@
-// Module ID: 14036
-// Function ID: 106725
+// Module ID: 14150
+// Function ID: 108881
 // Name: useAppearanceSettingTrailing
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [3942, 1281, 653, 4066, 1324, 566, 3973, 8831, 1212, 2396, 10095, 13547, 14151, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 14036 (useAppearanceSettingTrailing)
-import closure_3 from "__exportStarResult1";
-import { ActiveThemeType } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14150 (useAppearanceSettingTrailing)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { ActiveThemeType } from "SystemThemeState";
+import createToggle from "createToggle";
 
+const require = arg1;
 function useAppearanceSettingTrailing() {
-  const tmp = importDefault(dependencyMap[3])();
-  const tmp2 = importDefault(dependencyMap[4])("AppearanceSettingTrailing");
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => gradientPreset.gradientPreset);
-  const obj = arg1(dependencyMap[5]);
-  let themeName = arg1(dependencyMap[6]).getThemeName(tmp, tmp2);
-  const obj3 = arg1(dependencyMap[6]);
-  const activeThemeType = arg1(dependencyMap[7]).useActiveThemeType();
+  const tmp = importDefault(4066)();
+  const tmp2 = importDefault(1324)("AppearanceSettingTrailing");
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.gradientPreset);
+  const obj = require(566) /* initialize */;
+  let themeName = require(3973) /* getThemeForColor */.getThemeName(tmp, tmp2);
+  const obj3 = require(3973) /* getThemeForColor */;
+  const activeThemeType = require(8831) /* useActiveThemeType */.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
-    const intl2 = arg1(dependencyMap[8]).intl;
-    return intl2.string(importDefault(dependencyMap[9]).KSBBpC);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(importDefault(2396).KSBBpC);
   } else if (ActiveThemeType.CLIENT === activeThemeType) {
     let name;
     if (null != stateFromStores) {
@@ -34,31 +34,31 @@ function useAppearanceSettingTrailing() {
     }
     return themeName;
   } else if (ActiveThemeType.SYSTEM === activeThemeType) {
-    const intl = arg1(dependencyMap[8]).intl;
-    return intl.string(arg1(dependencyMap[8]).t.wFpwSk);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.wFpwSk);
   } else {
     return ActiveThemeType.DEFAULT === activeThemeType ? themeName : undefined;
   }
-  const obj4 = arg1(dependencyMap[7]);
+  const obj4 = require(8831) /* useActiveThemeType */;
 }
-__exportStarResult1 = {
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[8]).intl;
-    return intl.string(arg1(dependencyMap[8]).t.iHH+ky);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["iHH+ky"]);
   },
   parent: null,
-  IconComponent: require("__exportStarResult1").PaintPaletteIcon,
+  IconComponent: require("PaintPaletteIcon").PaintPaletteIcon,
   useTrailing: useAppearanceSettingTrailing,
-  screen: __exportStarResult1
+  screen: createToggle
 };
-__exportStarResult1 = {
-  route: require("__exportStarResult1").UserSettingsSections.APPEARANCE,
+createToggle = {
+  route: require("ME").UserSettingsSections.APPEARANCE,
   getComponent() {
-    return arg1(dependencyMap[12]).default;
+    return require(14151).default;
   }
 };
-__exportStarResult1 = __exportStarResult1.createRoute(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/AppearanceSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AppearanceSetting.tsx");
 
-export default __exportStarResult1;
+export default createToggle;
 export { useAppearanceSettingTrailing };

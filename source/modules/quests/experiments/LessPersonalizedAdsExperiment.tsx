@@ -1,13 +1,13 @@
-// Module ID: 9447
-// Function ID: 73625
+// Module ID: 9454
+// Function ID: 73666
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 9447 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: "png", DateToSystemTimezoneSetter: true, defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/quests/experiments/LessPersonalizedAdsExperiment.tsx");
+// Module 9454 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-01-less-personalized-ads", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/quests/experiments/LessPersonalizedAdsExperiment.tsx");
 
 export const LessPersonalizedAdsExperiment = apexExperiment;

@@ -1,42 +1,48 @@
-// Module ID: 8678
-// Function ID: 68741
+// Module ID: 8685
+// Function ID: 68781
 // Name: shouldFetchStorefrontPromotions
-// Dependencies: []
+// Dependencies: [5, 3778, 5616, 7368, 8686, 8687, 653, 664, 686, 507, 5615, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8678 (shouldFetchStorefrontPromotions)
-function shouldFetchStorefrontPromotions(guildId) {
-  const fetchState = store.getFetchState(guildId);
+// Module 8685 (shouldFetchStorefrontPromotions)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
+function shouldFetchStorefrontPromotions(arg0) {
+  const fetchState = store.getFetchState(arg0);
   if (undefined === fetchState) {
     return true;
   } else if ("loading" === fetchState) {
     return false;
   } else {
-    const fetchedAt = store.getFetchedAt(guildId);
+    const fetchedAt = store.getFetchedAt(arg0);
     if (null == fetchedAt) {
       return true;
     } else {
       const _Date = Date;
-      return Date.now() - fetchedAt > "error" === fetchState ? closure_9 : MINUTE;
+      return Date.now() - fetchedAt > ("error" === fetchState ? closure_9 : MINUTE);
     }
   }
 }
 function _maybeFetchStorefrontPromotions() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _maybeFetchStorefrontPromotions = obj;
   return obj(...arguments);
 }
 function _fetchStorefrontPricesForApplicationId() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchStorefrontPricesForApplicationId = obj;
   return obj(...arguments);
 }
 function _fetchStorefrontPricesForSkuIds() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchStorefrontPricesForSkuIds = obj;
   return obj(...arguments);
 }
 function fetchStorefrontPrices() {
@@ -45,20 +51,12 @@ function fetchStorefrontPrices() {
 function _fetchStorefrontPrices() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchStorefrontPrices = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const Endpoints = arg1(dependencyMap[6]).Endpoints;
-let closure_9 = 10 * importDefault(dependencyMap[7]).Millis.MINUTE;
-let MINUTE = importDefault(dependencyMap[7]).Millis.MINUTE;
-MINUTE = importDefault(dependencyMap[7]).Millis.MINUTE;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/storefront/StorefrontActionCreators.tsx");
+let closure_9 = 10 * require("set").Millis.MINUTE;
+let MINUTE = require("set").Millis.MINUTE;
+MINUTE = require("set").Millis.MINUTE;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/storefront/StorefrontActionCreators.tsx");
 
 export const maybeFetchStorefrontPromotions = function maybeFetchStorefrontPromotions() {
   return _maybeFetchStorefrontPromotions(...arguments);
@@ -70,7 +68,7 @@ export const fetchStorefrontPricesForSkuIds = function fetchStorefrontPricesForS
   return _fetchStorefrontPricesForSkuIds(...arguments);
 };
 export const setStorefrontPromotionIdOverride = function setStorefrontPromotionIdOverride(promotionIdOverride) {
-  let obj = importDefault(dependencyMap[8]);
+  let obj = importDefault(686);
   obj = { type: "STOREFRONT_PROMOTION_ID_OVERRIDE_SET", promotionIdOverride };
   obj.dispatch(obj);
 };

@@ -1,39 +1,43 @@
-// Module ID: 15713
-// Function ID: 120083
+// Module ID: 15830
+// Function ID: 122256
 // Name: ParticipantsSummary
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 3974, 15831, 9994, 1273, 4552, 4126, 3991, 4558, 2]
 // Exports: default
 
-// Module 15713 (ParticipantsSummary)
+// Module 15830 (ParticipantsSummary)
+import _slicedToArray from "_slicedToArray";
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   ({ applicationId, channelId } = arg0);
-  const obj = { users: importDefault(dependencyMap[7])(applicationId, channelId), max: 5 };
-  const tmp = importDefault(dependencyMap[7])(applicationId, channelId);
-  obj.avatarSize = arg1(dependencyMap[9]).AvatarSizes.REFRESH_MEDIUM_32;
+  const obj = { users: importDefault(15831)(applicationId, channelId), max: 5 };
+  const tmp = importDefault(15831)(applicationId, channelId);
+  obj.avatarSize = require(1273) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj.withPlusCount = true;
   obj.style = { marginBottom: 8 };
   obj.cutout = { inset: -8 };
-  return callback2(importDefault(dependencyMap[8]), obj);
+  return callback2(importDefault(9994), obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { ongoingActivityContainer: { <string:1382275249>: "<string:1959478507>", <string:2899594842>: "<string:3942907907>", <string:2985086053>: "<string:1959460866>", <string:1515299067>: "<string:3942907907>", <string:3972817998>: null, <string:3562103379>: null } };
-obj = { MAX_GROUP_DM_STAFF_PARTICIPANTS: true, Uuqbcm: true, 	: true, ReverseOrderedTiers: true, embed: true, borderRadius: importDefault(dependencyMap[5]).radii.round };
-const tmp3 = arg1(dependencyMap[3]);
-obj.backgroundColor = arg1(dependencyMap[6]).hexWithOpacity(importDefault(dependencyMap[5]).unsafe_rawColors.BLACK, 0.64);
-obj.overlayActivityName = obj;
-const obj4 = arg1(dependencyMap[6]);
-obj.overlayActivityNameText = { color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.loadingTextColor = { color: "transparent" };
-obj.ellipsis = {};
-let closure_7 = obj.createStyles(obj);
-const obj1 = { color: importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY };
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemSummary.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { ongoingActivityContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.4)", alignItems: "center", justifyContent: "center" } };
+_createForOfIteratorHelperLoose = { paddingHorizontal: 12, paddingVertical: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: null, marginBottom: 8 };
+_createForOfIteratorHelperLoose.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, 0.64);
+_createForOfIteratorHelperLoose.overlayActivityName = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.overlayActivityNameText = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+_createForOfIteratorHelperLoose.loadingTextColor = { color: "transparent" };
+_createForOfIteratorHelperLoose.ellipsis = { flex: 1, flexShrink: 1, flexGrow: 0, justifyContent: "center", alignItems: "center", top: -12 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemSummary.tsx");
 
 export default function ActivityShelfItemSummary(submitting) {
   let applicationId;
@@ -44,18 +48,19 @@ export default function ActivityShelfItemSummary(submitting) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[10]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(4552) /* PillWrapper */;
   obj = { style: tmp.ongoingActivityContainer };
   obj = { style: tmp.overlayActivityName };
-  const items = [callback2(arg1(dependencyMap[11]).Text, { style: flag ? tmp.loadingTextColor : tmp.overlayActivityNameText, children: applicationName }), ];
+  const obj1 = { variant: "text-md/semibold", style: flag ? tmp.loadingTextColor : tmp.overlayActivityNameText, lineClamp: 2, children: applicationName };
+  const items = [callback2(require(4126) /* Text */.Text, obj1), ];
   const obj2 = { style: items1 };
-  const items1 = [tmp.ellipsis, callback(obj.useLoadingStyles(flag, "md"), 2)[1]];
+  items1 = [tmp.ellipsis, callback(obj.useLoadingStyles(flag, "md"), 2)[1]];
   if (flag) {
-    flag = callback2(arg1(dependencyMap[13]).Ellipsis, {});
+    flag = callback2(require(4558) /* EllipsisCircle */.Ellipsis, { variant: "active", size: "md" });
   }
   obj2.children = flag;
-  items[1] = callback2(importDefault(dependencyMap[12]).View, obj2);
+  items[1] = callback2(importDefault(3991).View, obj2);
   obj.children = items;
   const items2 = [closure_6(View, obj), callback2(ParticipantsSummary, { channelId, applicationId })];
   obj.children = items2;

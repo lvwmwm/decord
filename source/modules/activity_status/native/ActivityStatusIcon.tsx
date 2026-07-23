@@ -1,15 +1,16 @@
-// Module ID: 9062
-// Function ID: 71146
+// Module ID: 9069
+// Function ID: 71187
 // Name: ActivityStatusIcon
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 2]
 // Exports: default
 
-// Module 9062 (ActivityStatusIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_1 = arg1(dependencyMap[2]).createStyles({ icon: { flexShrink: 0 } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/activity_status/native/ActivityStatusIcon.tsx");
+// Module 9069 (ActivityStatusIcon)
+import "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_1 = _createForOfIteratorHelperLoose.createStyles({ icon: { flexShrink: 0 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/activity_status/native/ActivityStatusIcon.tsx");
 
 export default function ActivityStatusIcon(arg0) {
   let icon;
@@ -19,9 +20,9 @@ export default function ActivityStatusIcon(arg0) {
   obj.icon = 0;
   obj.style = 0;
   const merged = Object.assign(arg0, obj);
-  obj = {};
+  obj = { size: "xxs", style: null, color: "status-positive" };
   const items = [callback().icon, style];
   obj.style = items;
   const merged1 = Object.assign(merged);
-  return <icon {...obj} />;
+  return <icon size="xxs" style={null} color="status-positive" />;
 };

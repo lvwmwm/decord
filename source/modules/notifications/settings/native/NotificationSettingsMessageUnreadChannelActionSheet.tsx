@@ -1,44 +1,46 @@
-// Module ID: 10294
-// Function ID: 79468
+// Module ID: 10307
+// Function ID: 79541
 // Name: NotificationSettingsMessageUnreadChannelActionSheet
-// Dependencies: []
+// Dependencies: [31, 4325, 653, 4326, 662, 33, 10288, 10306, 1212, 5079, 10289, 5073, 2]
 // Exports: default
 
-// Module 10294 (NotificationSettingsMessageUnreadChannelActionSheet)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const UserNotificationSettings = arg1(dependencyMap[2]).UserNotificationSettings;
-const UnreadSetting = arg1(dependencyMap[3]).UnreadSetting;
-let closure_6 = arg1(dependencyMap[4]).ChannelNotificationSettingsFlags;
-const jsx = arg1(dependencyMap[5]).jsx;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMessageUnreadChannelActionSheet.tsx");
+// Module 10307 (NotificationSettingsMessageUnreadChannelActionSheet)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { UserNotificationSettings } from "ME";
+import { UnreadSetting } from "ReadStateTypes";
+import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("ME").fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMessageUnreadChannelActionSheet.tsx");
 
 export default function NotificationSettingsMessageUnreadChannelActionSheet(channel) {
   let notification;
   let unread;
-  const arg1 = channel;
-  let obj = arg1(dependencyMap[6]);
+  const _require = channel;
+  let obj = _require(10288);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   ({ unread, notification } = channelPresetSettings);
   obj = { value: unread };
   let stringResult;
   if (notification === UserNotificationSettings.ALL_MESSAGES) {
-    const intl = arg1(dependencyMap[8]).intl;
-    stringResult = intl.string(arg1(dependencyMap[8]).t.eP8yWU);
+    const intl = _require(1212).intl;
+    stringResult = intl.string(_require(1212).t.eP8yWU);
   }
   obj.disabledMentionOnlyWithReason = stringResult;
   obj.onChange = function onChange(ONLY_MENTIONS) {
-    const channelIdFlags = channelIdFlags.getChannelIdFlags(ONLY_MENTIONS.channel.guild_id, ONLY_MENTIONS.channel.id);
-    let obj = callback(closure_2[9]);
+    const channelIdFlags = outer1_3.getChannelIdFlags(channel.channel.guild_id, channel.channel.id);
+    let obj = outer1_1(outer1_2[9]);
     obj = {};
-    if (ONLY_MENTIONS === constants.ALL_MESSAGES) {
-      let UNREADS_ONLY_MENTIONS = constants2.UNREADS_ALL_MESSAGES;
+    if (ONLY_MENTIONS === outer1_5.ALL_MESSAGES) {
+      let UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ALL_MESSAGES;
     } else {
-      UNREADS_ONLY_MENTIONS = constants2.UNREADS_ONLY_MENTIONS;
+      UNREADS_ONLY_MENTIONS = outer1_6.UNREADS_ONLY_MENTIONS;
     }
-    obj.flags = ONLY_MENTIONS(closure_2[10]).withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS);
-    const NotificationLabel = ONLY_MENTIONS(closure_2[11]).NotificationLabel;
-    const result = obj.updateChannelOverrideSettings(ONLY_MENTIONS.channel.guild_id, ONLY_MENTIONS.channel.id, obj, NotificationLabel.unreads(ONLY_MENTIONS));
+    obj.flags = channel(outer1_2[10]).withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS);
+    const NotificationLabel = channel(outer1_2[11]).NotificationLabel;
+    const result = obj.updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.unreads(ONLY_MENTIONS));
   };
-  return jsx(importDefault(dependencyMap[7]), obj);
+  return jsx(importDefault(10306), { value: unread });
 };

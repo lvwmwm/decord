@@ -1,13 +1,12 @@
-// Module ID: 13345
-// Function ID: 101438
+// Module ID: 13459
+// Function ID: 103594
 // Name: MediaPlaybackPanelModes
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 13345 (MediaPlaybackPanelModes)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelConstants.tsx");
+// Module 13459 (MediaPlaybackPanelModes)
+const result = require("set").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelConstants.tsx");
 
 export const MediaPlaybackPanelModes = { DISMISSED: "dismissed", PIP: "pip" };
 export const PLAYBACK_COMPLETION_DETECTION_TOLERANCE = 100;
 export const PLAYBACK_PROGRESS_UPDATE_INTERVAL = 500;
-export const MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS = { "Null": "<string:1124139010>", "Null": "f24ef34b9fe27384681925896920f80d", "Null": "pl.messages.f24ef34b9fe27384681925896920f80d.compiled.messages", "Null": "jsona" };
+export const MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS = { stiffness: 320, mass: 0.25, damping: 15, overshootClamping: true };

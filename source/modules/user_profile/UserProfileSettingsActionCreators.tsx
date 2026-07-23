@@ -1,14 +1,16 @@
-// Module ID: 7838
-// Function ID: 62501
+// Module ID: 7844
+// Function ID: 62538
 // Name: setPendingChanges
-// Dependencies: []
+// Dependencies: [1917, 1849, 6856, 4276, 7845, 686, 2]
 // Exports: setPendingChanges
 
-// Module 7838 (setPendingChanges)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_profile/UserProfileSettingsActionCreators.tsx");
+// Module 7844 (setPendingChanges)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/UserProfileSettingsActionCreators.tsx");
 
 export const setPendingChanges = function setPendingChanges(guildId) {
   let bannerOriginalMd5;
@@ -16,7 +18,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
   let obj = Object.create(null);
   obj.guildId = 0;
   const merged = Object.assign(guildId, obj);
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
     let userProfile = authStore.getUserProfile(currentUser.id);
     if (null != guildId) {
@@ -70,8 +72,8 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       if (null != displayNameStyles2) {
         tmp15 = displayNameStyles2;
       }
-      obj.pendingDisplayNameStyles = importDefault(dependencyMap[3])(tmp14, tmp15) ? undefined : displayNameStyles;
-      const tmp13 = importDefault(dependencyMap[3]);
+      obj.pendingDisplayNameStyles = importDefault(4276)(tmp14, tmp15) ? undefined : displayNameStyles;
+      const tmp13 = importDefault(4276);
     }
     if ("pronouns" in merged) {
       let pronouns;
@@ -282,7 +284,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
           if (null != themeColors) {
             tmp44 = themeColors;
           }
-          if (importDefault(dependencyMap[3])(tmp41, tmp44)) {
+          if (importDefault(4276)(tmp41, tmp44)) {
             obj.pendingThemeColors = undefined;
           } else {
             obj.pendingThemeColors = merged.themeColors;
@@ -308,7 +310,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       }
     }
     if ("primaryGuildId" in merged) {
-      const guildId2 = arg1(dependencyMap[4]).getUserPrimaryGuild(currentUser.primaryGuild).guildId;
+      const guildId2 = require(7845) /* getUserPrimaryGuild */.getUserPrimaryGuild(currentUser.primaryGuild).guildId;
       let tmp50 = null;
       if (null != guildId2) {
         tmp50 = guildId2;
@@ -318,14 +320,14 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       } else {
         obj.pendingPrimaryGuildId = merged.primaryGuildId;
       }
-      const obj2 = arg1(dependencyMap[4]);
+      const obj2 = require(7845) /* getUserPrimaryGuild */;
     }
     if ("legacyUsernameDisabled" in merged) {
       obj.pendingLegacyUsernameDisabled = merged.legacyUsernameDisabled;
     }
     obj = { type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", guildId };
     const merged1 = Object.assign(obj);
-    importDefault(dependencyMap[5]).dispatch(obj);
-    const obj3 = importDefault(dependencyMap[5]);
+    importDefault(686).dispatch(obj);
+    const obj3 = importDefault(686);
   }
 };

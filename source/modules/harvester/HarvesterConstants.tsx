@@ -1,11 +1,10 @@
-// Module ID: 13649
-// Function ID: 103413
+// Module ID: 13763
+// Function ID: 105569
 // Name: REQUEST_DATA_LIMIT_DAYS
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 13649 (REQUEST_DATA_LIMIT_DAYS)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/harvester/HarvesterConstants.tsx");
+// Module 13763 (REQUEST_DATA_LIMIT_DAYS)
+const result = require("set").fileFinishedImporting("modules/harvester/HarvesterConstants.tsx");
 
 export const REQUEST_DATA_LIMIT_DAYS = 30;
 export const REQUEST_DATA_LIMIT_MS = 2592000000;

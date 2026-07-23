@@ -1,15 +1,16 @@
 // Module ID: 276
 // Function ID: 3434
-// Dependencies: []
+// Dependencies: [277, 278, 279]
 
 // Module 276
-const _default = require(dependencyMap[0]).default;
+import { default as _default } from "NativeStartupFlagsModule";
+import describeBuiltInComponentFrame from "describeBuiltInComponentFrame";
+
 if (null != _default) {
   if (null != _default.reactProfilingEnabled) {
     if (_default.reactProfilingEnabled()) {
-      let _module = require(dependencyMap[1]);
+      let describeBuiltInComponentFrame = require("describeBuiltInComponentFrame");
     }
-    exports.default = _module;
+    exports.default = describeBuiltInComponentFrame;
   }
 }
-_module = require(dependencyMap[2]);

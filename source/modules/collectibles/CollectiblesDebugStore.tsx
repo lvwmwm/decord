@@ -1,33 +1,33 @@
-// Module ID: 6784
-// Function ID: 53567
+// Module ID: 6789
+// Function ID: 53599
 // Name: useCollectiblesDebugStore
-// Dependencies: []
+// Dependencies: [621, 2]
 // Exports: addDebugLog
 
-// Module 6784 (useCollectiblesDebugStore)
-const _module = require(dependencyMap[0]);
-const obj = _module.create((arg0) => {
-  let obj = arg0;
-  obj = {
+// Module 6789 (useCollectiblesDebugStore)
+import keys from "keys";
+
+let obj = keys.create((arg0) => {
+  let closure_0 = arg0;
+  return {
     logs: [],
     addLog(arg0) {
-      return arg0((logs) => {
+      const callback = arg0;
+      return callback((logs) => {
         const obj = {};
         const items = [...logs.logs];
         const date = new Date();
-        items[tmp] = "[" + new Date().toISOString().split("T")[0] + "] " + logs;
+        items[tmp] = "[" + new Date().toISOString().split("T")[0] + "] " + closure_0;
         obj.logs = items;
         return obj;
       });
     },
     clearLogs() {
-      return arg0({ logs: [] });
+      return callback({ logs: [] });
     }
   };
-  return obj;
 });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/collectibles/CollectiblesDebugStore.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/CollectiblesDebugStore.tsx");
 
 export const useCollectiblesDebugStore = obj;
 export const addDebugLog = function addDebugLog(arg0) {

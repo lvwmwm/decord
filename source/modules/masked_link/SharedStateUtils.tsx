@@ -1,19 +1,23 @@
-// Module ID: 12108
-// Function ID: 93321
+// Module ID: 12222
+// Function ID: 95472
 // Name: useUrlParts
-// Dependencies: []
+// Dependencies: [57, 31, 8339, 2]
 // Exports: useModalState
 
-// Module 12108 (useUrlParts)
+// Module 12222 (useUrlParts)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const require = arg1;
 function useUrlParts(url) {
   let hostname;
   let protocol;
-  const arg1 = url;
+  let closure_0 = url;
   const items = [url];
   const memo = React.useMemo(() => {
-    const obj = { protocol: arg0(closure_1[2]).getProtocol(arg0) };
-    const obj2 = arg0(closure_1[2]);
-    obj.hostname = arg0(closure_1[2]).getHostname(arg0);
+    const obj = { protocol: url(outer1_1[2]).getProtocol(url) };
+    const obj2 = url(outer1_1[2]);
+    obj.hostname = url(outer1_1[2]).getHostname(url);
     return obj;
   }, items);
   ({ protocol, hostname } = memo);
@@ -21,12 +25,10 @@ function useUrlParts(url) {
   if ("//" === url.substr(protocol.length, 2)) {
     str = "//";
   }
-  const obj = { protocol, authorityPrefix: str, hostname, theRestOfTheUrl: url.replace("" + protocol + str + hostname, "") };
+  let obj = { protocol, authorityPrefix: str, hostname, theRestOfTheUrl: url.replace("" + protocol + str + hostname, "") };
   return obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/masked_link/SharedStateUtils.tsx");
+const result = require("getHostname").fileFinishedImporting("modules/masked_link/SharedStateUtils.tsx");
 
 export { useUrlParts };
 export const useModalState = function useModalState(url) {
@@ -35,21 +37,16 @@ export const useModalState = function useModalState(url) {
   let protocol;
   let theRestOfTheUrl;
   url = url.url;
-  const arg1 = url;
   const trustUrl = url.trustUrl;
-  const dependencyMap = trustUrl;
   const onConfirm = url.onConfirm;
-  let callback = onConfirm;
   const onCancel = url.onCancel;
-  const React = onCancel;
   const onClose = url.onClose;
-  const useUrlParts = onClose;
-  const tmp = callback(React.useState(false), 2);
+  const tmp = onConfirm(onCancel.useState(false), 2);
   const first = tmp[0];
   const items = [url, first, trustUrl, onConfirm, onClose];
-  ({ protocol, authorityPrefix, hostname, theRestOfTheUrl } = useUrlParts(url));
+  ({ protocol, authorityPrefix, hostname, theRestOfTheUrl } = onClose(url));
   const items1 = [onCancel, onClose];
-  callback = React.useCallback(() => {
+  const callback = onCancel.useCallback(() => {
     if (first) {
       trustUrl(url);
     }
@@ -58,7 +55,7 @@ export const useModalState = function useModalState(url) {
     }
     onConfirm();
   }, items);
-  const tmp3 = useUrlParts(url);
+  const tmp3 = onClose(url);
   return {
     protocol,
     authorityPrefix,
@@ -67,7 +64,7 @@ export const useModalState = function useModalState(url) {
     shouldTrustUrl: first,
     setShouldTrustUrl: tmp[1],
     handleConfirm: callback,
-    handleCancel: React.useCallback(() => {
+    handleCancel: onCancel.useCallback(() => {
       if (null != onClose) {
         onClose();
       }

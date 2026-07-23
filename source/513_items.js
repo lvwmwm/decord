@@ -1,10 +1,10 @@
 // Module ID: 513
 // Function ID: 6574
 // Name: items
-// Dependencies: []
+// Dependencies: [511]
 
 // Module 513 (items)
-const items = [];
+let items = [];
 let num = 0;
 do {
   let str = "";
@@ -30,8 +30,8 @@ function arrayToObject(arr, plainObjects) {
   obj = {};
 }
 function merge(arr, arr2, plainObjects) {
-  const require = arr;
-  const dependencyMap = arr2;
+  let closure_0 = arr;
+  let closure_1 = arr2;
   const hasOwnProperty = plainObjects;
   if (arr2) {
     if ("object" !== typeof arr2) {
@@ -74,17 +74,17 @@ function merge(arr, arr2, plainObjects) {
         if (isArray(arr)) {
           if (isArray(arr2)) {
             const item = arr2.forEach((arg0, arg1) => {
-              if (arg2.call(arg0, arg1)) {
+              if (plainObjects.call(arr, arg1)) {
                 if (tmp[arg1]) {
                   if ("object" === typeof tmp2) {
                     if (arg0) {
                       if ("object" === typeof arg0) {
-                        arg0[arg1] = callback(tmp2, arg0, arg2);
+                        arr[arg1] = outer1_6(tmp2, arg0, plainObjects);
                       }
                     }
                   }
                 }
-                arg0.push(arg0);
+                arr = arr.push(arg0);
               } else {
                 tmp[arg1] = arg0;
               }
@@ -96,8 +96,8 @@ function merge(arr, arr2, plainObjects) {
         const _Object = Object;
         const keys = Object.keys(arr2);
         reduced = keys.reduce((arg0, arg1) => {
-          if (arg2.call(arg0, arg1)) {
-            arg0[arg1] = callback(arg0[arg1], tmp, arg2);
+          if (plainObjects.call(arg0, arg1)) {
+            arg0[arg1] = outer1_6(arg0[arg1], tmp, plainObjects);
           } else {
             arg0[arg1] = tmp;
           }
@@ -115,10 +115,10 @@ function merge(arr, arr2, plainObjects) {
 export default {
   arrayToObject,
   assign: function assignSingleSource(arg0, arg1) {
-    const require = arg1;
+    let closure_0 = arg1;
     const keys = Object.keys(arg1);
     return keys.reduce((arg0, arg1) => {
-      arg0[arg1] = arg1[arg1];
+      arg0[arg1] = table[arg1];
       return arg0;
     }, arg0);
   },
@@ -226,17 +226,17 @@ export default {
                         if (charCodeAtResult < 48) {
                           if (charCodeAtResult < 65) {
                             if (charCodeAtResult < 97) {
-                              let tmp6 = closure_0;
-                              let tmp7 = closure_1;
-                              if (arg4 !== closure_0(closure_1[0]).RFC1738) {
+                              let tmp6 = require;
+                              let tmp7 = dependencyMap;
+                              if (arg4 !== require(511).RFC1738) {
                                 if (charCodeAtResult < 128) {
-                                  let tmp12 = closure_4;
-                                  items[items.length] = closure_4[charCodeAtResult];
+                                  let tmp12 = items;
+                                  items[items.length] = items[charCodeAtResult];
                                   let sum = num;
                                   let sum1 = charCodeAtResult;
                                 } else if (charCodeAtResult < 2048) {
-                                  let tmp11 = closure_4;
-                                  items[items.length] = closure_4[192 | charCodeAtResult >> 6] + closure_4[128 | 63 & charCodeAtResult];
+                                  let tmp11 = items;
+                                  items[items.length] = items[192 | charCodeAtResult >> 6] + items[128 | 63 & charCodeAtResult];
                                   sum = num;
                                   sum1 = charCodeAtResult;
                                 } else {
@@ -245,12 +245,12 @@ export default {
                                       sum = num + 1;
                                       let tmp16 = 1023 & charCodeAtResult;
                                       sum1 = 65536 + (tmp16 << 10 | 1023 & substr.charCodeAt(sum));
-                                      let tmp17 = closure_4;
-                                      items[items.length] = closure_4[240 | sum1 >> 18] + closure_4[128 | sum1 >> 12 & 63] + closure_4[128 | sum1 >> 6 & 63] + closure_4[128 | 63 & sum1];
+                                      let tmp17 = items;
+                                      items[items.length] = items[240 | sum1 >> 18] + items[128 | sum1 >> 12 & 63] + items[128 | sum1 >> 6 & 63] + items[128 | 63 & sum1];
                                     }
                                   }
-                                  let tmp8 = closure_4;
-                                  items[items.length] = closure_4[224 | charCodeAtResult >> 12] + closure_4[128 | charCodeAtResult >> 6 & 63] + closure_4[128 | 63 & charCodeAtResult];
+                                  let tmp8 = items;
+                                  items[items.length] = items[224 | charCodeAtResult >> 12] + items[128 | charCodeAtResult >> 6 & 63] + items[128 | 63 & charCodeAtResult];
                                   sum = num;
                                   sum1 = charCodeAtResult;
                                 }

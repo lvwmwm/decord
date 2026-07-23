@@ -1,19 +1,23 @@
-// Module ID: 11116
-// Function ID: 86558
+// Module ID: 11126
+// Function ID: 86608
 // Name: ForumPostGridHeader
-// Dependencies: []
+// Dependencies: [31, 27, 5685, 1355, 33, 4130, 11127, 11129, 11138, 11139, 11140, 2]
 // Exports: default
 
-// Module 11116 (ForumPostGridHeader)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const ForumTimestampFormats = arg1(dependencyMap[2]).ForumTimestampFormats;
-const ChannelFlags = arg1(dependencyMap[3]).ChannelFlags;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
-let closure_8 = arg1(dependencyMap[5]).createStyles({ pinIcon: { marginEnd: 8 }, container: {}, details: { 0: "safety_user_sentiment_notice_dismissed_at", 0: "message", 9223372036854775807: null }, timestampText: { flex: 1 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/forums/native/posts/grid/ForumPostGridHeader.tsx");
+// Module 11126 (ForumPostGridHeader)
+import "result";
+import { View } from "get ActivityIndicator";
+import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET";
+import { ChannelFlags } from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ pinIcon: { marginEnd: 8 }, container: { display: "flex", flexDirection: "column", marginBottom: 4 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 4 }, timestampText: { flex: 1 } });
+const result = require("FORUM_GUIDELINES_ACTION_SHEET").fileFinishedImporting("modules/forums/native/posts/grid/ForumPostGridHeader.tsx");
 
 export default function ForumPostGridHeader(arg0) {
   let hasUnreads;
@@ -27,15 +31,15 @@ export default function ForumPostGridHeader(arg0) {
   let tmp5 = hasFlagResult;
   if (hasFlagResult) {
     obj = { containerStyle: tmp.pinIcon };
-    tmp5 = callback(importDefault(dependencyMap[6]), obj);
+    tmp5 = callback(importDefault(11127), obj);
   }
-  const items = [tmp5, callback(arg1(dependencyMap[7]).ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(dependencyMap[8]), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText }), ];
+  const items = [tmp5, callback(require(11129) /* ForumPostUsername */.ForumPostAuthor, { thread, hasUnreads }), callback(importDefault(11138), { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText }), ];
   if (isNew) {
-    isNew = callback(importDefault(dependencyMap[9]), {});
+    isNew = callback(importDefault(11139), {});
   }
   items[3] = isNew;
   obj.children = items;
-  const items1 = [closure_7(View, obj), callback(importDefault(dependencyMap[10]), { title: thread.name, hasUnreads })];
+  const items1 = [closure_7(View, obj), callback(importDefault(11140), { title: thread.name, hasUnreads })];
   obj.children = items1;
   return closure_7(View, obj);
 };

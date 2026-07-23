@@ -1,23 +1,23 @@
 // Module ID: 1471
-// Function ID: 17114
+// Function ID: 17115
 // Name: useSyncState
-// Dependencies: []
+// Dependencies: [57, 31]
 // Exports: default
 
 // Module 1471 (useSyncState)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
 let closure_2 = {};
 
 export default function useSyncState(arg0) {
   const ref = React.useRef(closure_2);
-  let callback = ref;
-  const React = React.useRef(false);
+  React = React.useRef(false);
   closure_2 = React.useRef(true);
   const effect = React.useEffect(() => {
     closure_2.current = true;
     return () => {
-      closure_2.current = false;
+      outer1_2.current = false;
     };
   }, []);
   if (ref.current === closure_2) {
@@ -27,9 +27,9 @@ export default function useSyncState(arg0) {
     }
     ref.current = tmp3;
   }
-  const tmp4 = callback(React.useState(ref.current), 2);
-  const tmp5 = tmp4[1];
-  callback = React.useCallback(() => ref.current, []);
+  const tmp4 = ref(React.useState(ref.current), 2);
+  let closure_3 = tmp5;
+  const callback = React.useCallback(() => ref.current, []);
   const callback1 = React.useCallback((current) => {
     current = current !== ref.current;
     if (current) {
@@ -38,14 +38,14 @@ export default function useSyncState(arg0) {
     if (current) {
       ref.current = current;
       if (!ref.current) {
-        const tmp5 = tmp5(current);
+        tmp5 = tmp5(current);
       }
     }
   }, []);
   const callback2 = React.useCallback((arg0) => {
-    closure_1.current = true;
+    result.current = true;
     arg0();
-    closure_1.current = false;
+    result.current = false;
   }, []);
   const callback3 = React.useCallback(() => {
     if (ref2.current) {
@@ -55,7 +55,7 @@ export default function useSyncState(arg0) {
   if (tmp4[0] !== ref.current) {
     tmp5(ref.current);
   }
-  const current = ref.current;
+  let current = ref.current;
   const debugValue = React.useDebugValue(current);
   const items = [current, callback, callback1, callback2, callback3];
   return items;

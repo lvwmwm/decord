@@ -1,29 +1,32 @@
-// Module ID: 10716
-// Function ID: 83408
+// Module ID: 10726
+// Function ID: 83457
 // Name: getWindowsAudioEffectsExperimentConfig
-// Dependencies: []
+// Dependencies: [1188, 1428, 566, 2]
 // Exports: useWindowsAudioEffectsExperimentConfig
 
-// Module 10716 (getWindowsAudioEffectsExperimentConfig)
+// Module 10726 (getWindowsAudioEffectsExperimentConfig)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ApexExperiment from "ApexExperiment";
+
+const require = arg1;
 function getWindowsAudioEffectsExperimentConfig(location) {
   return config.getConfig({ location: location.location });
 }
-let closure_2 = importDefault(dependencyMap[0]);
 let obj = { preferSystemEffects: false };
-let obj1 = arg1(dependencyMap[1]);
-obj = { defaultConfig: obj };
+obj = { name: "2025-12-windows-audio-effects", kind: "user" };
+obj.defaultConfig = obj;
 obj = {};
-obj1 = {};
+ApexExperiment = {};
 const merged = Object.assign(obj);
-obj1["preferSystemEffects"] = true;
-obj[1] = obj1;
+ApexExperiment["preferSystemEffects"] = true;
+obj[1] = ApexExperiment;
 obj.variations = obj;
-let closure_3 = obj1.createApexExperiment(obj);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/noise_cancellation/WindowsEffectsExperiment.tsx");
+let closure_3 = ApexExperiment.createApexExperiment(obj);
+const result = require("initialize").fileFinishedImporting("modules/noise_cancellation/WindowsEffectsExperiment.tsx");
 
 export { getWindowsAudioEffectsExperimentConfig };
 export const useWindowsAudioEffectsExperimentConfig = function useWindowsAudioEffectsExperimentConfig(location) {
-  const arg1 = location.location;
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => callback({ location }));
+  location = location.location;
+  const items = [_isNativeReflectConstruct];
+  return location(566).useStateFromStores(items, () => outer1_4({ location }));
 };

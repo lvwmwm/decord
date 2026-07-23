@@ -1,65 +1,65 @@
-// Module ID: 5584
-// Function ID: 47395
+// Module ID: 5587
+// Function ID: 47418
 // Name: getKeyboardHeightWithOffset
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1452, 33, 1823, 3996, 1555, 5163, 5161, 5162, 2]
 
-// Module 5584 (getKeyboardHeightWithOffset)
+// Module 5587 (getKeyboardHeightWithOffset)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
+import { jsx } from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function getKeyboardHeightWithOffset(style) {
-  let systemKeyboardHeight = arg1(dependencyMap[5]).getSystemKeyboardHeight();
+  let systemKeyboardHeight = require(1823) /* useSystemKeyboardHeight */.getSystemKeyboardHeight();
   if (0 === systemKeyboardHeight) {
-    const keyboardType = arg1(dependencyMap[6]).getKeyboardType();
+    const keyboardType = require(3996) /* getKeyboardContextForType */.getKeyboardType();
     let num3 = 0;
-    if (keyboardType !== arg1(dependencyMap[7]).KeyboardTypes.SYSTEM) {
-      num3 = arg1(dependencyMap[8]).getCustomKeyboardHeight();
-      const obj3 = arg1(dependencyMap[8]);
+    if (keyboardType !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
+      num3 = require(5163) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
+      const obj3 = require(5163) /* useCustomKeyboardHeight */;
     }
     systemKeyboardHeight = num3;
-    const obj2 = arg1(dependencyMap[6]);
+    const obj2 = require(3996) /* getKeyboardContextForType */;
   }
   return Math.max(0, systemKeyboardHeight + style);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ View: closure_4, StyleSheet: closure_5 } = arg1(dependencyMap[2]));
-let closure_6 = importDefault(dependencyMap[3]);
-const jsx = arg1(dependencyMap[4]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
+({ View: closure_4, StyleSheet: closure_5 } = get_ActivityIndicator);
 const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
   let children;
   let pointerEvents;
   style = style.style;
-  const arg1 = style;
   let flag = style.animated;
   ({ children, pointerEvents } = style);
   if (flag === undefined) {
     flag = true;
   }
-  const dependencyMap = flag;
   let num = style.keyboardHeightOffset;
   if (num === undefined) {
     num = 0;
   }
-  const callback = num;
-  let importAllResult;
+  let ref;
   let first;
   let closure_5;
-  let closure_6;
-  const ref = importAllResult.useRef(getKeyboardHeightWithOffset(num));
-  importAllResult = ref;
-  const tmp2 = callback(importAllResult.useState(ref.current), 2);
+  let subscribeToKeyboardUIStore;
+  ref = ref.useRef(getKeyboardHeightWithOffset(num));
+  const tmp2 = num(ref.useState(ref.current), 2);
   first = tmp2[0];
   closure_5 = tmp2[1];
   const items = [num];
-  const effect = importAllResult.useEffect(() => ref(() => {
-    const tmp = callback2(closure_2);
-    if (ref.current !== tmp) {
-      ref.current = tmp;
-      callback(tmp);
+  const effect = ref.useEffect(() => ref(() => {
+    const tmp = outer2_8(outer1_2);
+    if (outer1_3.current !== tmp) {
+      outer1_3.current = tmp;
+      outer1_5(tmp);
     }
   }), items);
-  closure_6 = importAllResult.useRef(false);
+  subscribeToKeyboardUIStore = ref.useRef(false);
   const items1 = [flag, first];
-  const effect1 = importAllResult.useEffect(() => {
+  const effect1 = ref.useEffect(() => {
     if (ref.current) {
       const keyboardDuration = style(flag[9]).getKeyboardDuration();
       let tmp5 = flag;
@@ -76,7 +76,7 @@ const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
     }
   }, items1);
   const items2 = [first, style];
-  return <first style={importAllResult.useMemo(() => {
+  return <first style={ref.useMemo(() => {
     if (null == style) {
       let obj = { marginBottom: first };
       return obj;
@@ -95,6 +95,6 @@ const memoResult = importAllResult.memo(function KeyboardAwareView(style) {
     }
   }, items2)} pointerEvents={pointerEvents}>{children}</first>;
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/keyboard/native/KeyboardAwareView.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/keyboard/native/KeyboardAwareView.tsx");
 
 export default memoResult;

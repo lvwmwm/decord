@@ -1,14 +1,14 @@
 // Module ID: 1315
-// Function ID: 15344
+// Function ID: 15345
 // Name: getSystemTheme
-// Dependencies: []
+// Dependencies: [27, 1281, 2]
 // Exports: default
 
 // Module 1315 (getSystemTheme)
-const Appearance = require(dependencyMap[0]).Appearance;
-const SystemTheme = require(dependencyMap[1]).SystemTheme;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/themes/getSystemTheme.native.tsx");
+import { Appearance } from "get ActivityIndicator";
+import { SystemTheme } from "SystemThemeState";
+
+const result = require("set").fileFinishedImporting("modules/themes/getSystemTheme.native.tsx");
 
 export default function getSystemTheme() {
   const colorScheme = Appearance.getColorScheme();

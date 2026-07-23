@@ -1,10 +1,30 @@
-// Module ID: 12565
-// Function ID: 96615
+// Module ID: 12679
+// Function ID: 98771
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4044, 6902, 1352, 1348, 5592, 5042, 1917, 1838, 3767, 1849, 653, 12680, 5047, 1832, 3969, 3803, 7098, 566, 686, 2]
 
-// Module 12565 (_isNativeReflectConstruct)
+// Module 12679 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import closure_5 from "ME";
+import requestMembersDebounced from "requestMembersDebounced";
+import isNullOrEmpty from "isNullOrEmpty";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { PrivateChannelRecord } from "_callSuper";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_16 from "_isNativeReflectConstruct";
+import closure_17 from "_isNativeReflectConstruct";
+import ME from "ME";
+import set from "_possibleConstructorReturn";
+
 let Consents;
+let closure_18;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,49 +34,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -67,16 +87,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -94,13 +114,13 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function reset() {
-  let closure_21 = "";
-  let closure_22 = 0;
+  let c21 = "";
+  let c22 = 0;
   let closure_23 = [];
   const set = new Set();
-  let closure_20 = false;
-  let closure_27 = null;
-  let closure_25 = false;
+  let c20 = false;
+  let c27 = null;
+  let c25 = false;
 }
 function setLoading(arg0) {
   let flag = closure_25 !== arg0;
@@ -110,26 +130,27 @@ function setLoading(arg0) {
   }
   return flag;
 }
-function setQuery(query) {
-  let closure_21 = query;
-  let closure_22 = 0;
+function setQuery(closure_0) {
+  let closure_21 = closure_0;
+  let c22 = 0;
   return performQuery();
 }
 function performQuery() {
-  if (closure_20) {
-    const channel = channel.getChannel(closure_27);
+  if (c20) {
+    channel = channel.getChannel(c27);
     if (0 === _var.trim().length) {
       if (null != closure_19) {
         closure_19.clearQuery();
       }
-      let closure_23 = function getDefaultResults(channel) {
-        const currentUser = closure_17.getCurrentUser();
-        const frictionlessGDMsEnabled = channel(frictionlessGDMsEnabled[16]).getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-        const items = [...closure_16.getFriendIDs()];
+      let closure_23 = (function getDefaultResults(channel) {
+        let closure_0 = channel;
+        const currentUser = outer1_17.getCurrentUser();
+        const frictionlessGDMsEnabled = outer1_0(outer1_2[16]).getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+        const items = [...outer1_16.getFriendIDs()];
         if (null != currentUser) {
           let arr = items;
           if (currentUser.isStaff()) {
-            const found = closure_17.filter((isStaff) => {
+            const found = outer1_17.filter((isStaff) => {
               let isStaffResult = isStaff.isStaff();
               if (isStaffResult) {
                 isStaffResult = isStaff.id !== currentUser.id;
@@ -148,8 +169,8 @@ function performQuery() {
         let set1 = null;
         if (frictionlessGDMsEnabled) {
           const _Set2 = Set;
-          set1 = new Set(guildIds.getGuildIds());
-          const userAffinities = userAffinities.getUserAffinities();
+          set1 = new Set(outer1_15.getGuildIds());
+          const userAffinities = outer1_9.getUserAffinities();
           const mapped1 = userAffinities.map((otherUserId) => otherUserId.otherUserId);
           const found1 = mapped1.filter((arg0) => {
             let id;
@@ -158,8 +179,8 @@ function performQuery() {
             }
             return arg0 !== id;
           });
-          const found2 = found1.filter((arg0) => !closure_16.isBlockedOrIgnored(arg0));
-          const found3 = found2.filter((arg0) => !closure_16.isFriend(arg0));
+          const found2 = found1.filter((arg0) => !outer2_16.isBlockedOrIgnored(arg0));
+          const found3 = found2.filter((arg0) => !outer2_16.isFriend(arg0));
           const _Array2 = Array;
           const _Set3 = Set;
           const items2 = [];
@@ -167,23 +188,23 @@ function performQuery() {
           const set2 = new Set(items2);
           arr = Array.from(set2);
         }
-        const obj2 = channel(frictionlessGDMsEnabled[16]);
+        const obj2 = outer1_0(outer1_2[16]);
         let found4 = arr;
         if (tmp34) {
           found4 = arr.filter((arg0) => {
-            const recipients = arg0.recipients;
+            recipients = recipients.recipients;
             return !recipients.includes(arg0);
           });
         }
         const reduced = found4.reduce((arr) => {
-          const user = user.getUser(arg1);
+          const user = outer2_17.getUser(arg1);
           if (null != user) {
             if (!user.isProvisional) {
-              const obj = { user, comparator: currentUser(frictionlessGDMsEnabled[19]).getName(user) };
+              const obj = { user, comparator: outer2_1(outer2_2[19]).getName(user) };
               if (frictionlessGDMsEnabled) {
                 if (null != set1) {
-                  if (!closure_16.isFriend(user.id)) {
-                    arr = callback(user.id, set1);
+                  if (!outer2_16.isFriend(user.id)) {
+                    arr = outer2_38(user.id, set1);
                     if (0 === arr.length) {
                       return arr;
                     }
@@ -199,27 +220,27 @@ function performQuery() {
           }
           return arr;
         }, []);
-        return reduced.sort(closure_37);
-      }(channel);
+        return reduced.sort(outer1_37);
+      })(channel);
       setLoading(false);
       return true;
     } else {
-      const currentUser = authStore.getCurrentUser();
+      let currentUser = authStore.getCurrentUser();
       let isStaffResult;
       if (null != currentUser) {
         isStaffResult = currentUser.isStaff();
       }
-      let obj = arg1(dependencyMap[16]);
-      const frictionlessGDMsEnabled = obj.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      let obj = require(12680) /* getFrictionlessGDMsEnabled */;
+      let frictionlessGDMsEnabled = obj.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
       if (frictionlessGDMsEnabled) {
-        const members = importDefault(dependencyMap[17]).requestMembers(null, _var);
-        const obj2 = importDefault(dependencyMap[17]);
+        const members = importDefault(5047).requestMembers(null, _var);
+        let obj2 = importDefault(5047);
       }
       if (null != closure_19) {
         obj = { query: _var };
         let tmp18;
         if (!frictionlessGDMsEnabled) {
-          obj = { staff: tmp6 };
+          obj = { friends: true, staff: tmp6, provisional: false };
           tmp18 = obj;
         }
         obj.filters = tmp18;
@@ -234,29 +255,29 @@ function performQuery() {
   }
 }
 function updateHasFriends() {
-  if (closure_20) {
-    const tmp3 = friendCount.getFriendCount() > 0;
-    let closure_24 = tmp3;
-    return tmp3 !== closure_24;
+  if (c20) {
+    const tmp3 = closure_16.getFriendCount() > 0;
+    let c24 = tmp3;
+    return tmp3 !== c24;
   } else {
     return false;
   }
 }
 function sortUserList(user, user2) {
-  const obj = user2(dependencyMap[18]);
-  const name = importDefault(dependencyMap[19]).getName(user.user);
-  const obj2 = importDefault(dependencyMap[19]);
+  const obj = require(1832) /* isNullOrEmpty */;
+  const name = importDefault(3969).getName(user.user);
+  const obj2 = importDefault(3969);
   const stripDiacriticsResult = obj.stripDiacritics(name.toLocaleLowerCase());
-  const obj5 = user2(dependencyMap[18]);
-  const name1 = importDefault(dependencyMap[19]).getName(user2.user);
+  const obj5 = require(1832) /* isNullOrEmpty */;
+  const name1 = importDefault(3969).getName(user2.user);
   return stripDiacriticsResult.localeCompare(obj5.stripDiacritics(name1.toLocaleLowerCase()));
 }
-function getMutualGuildsWithCurrentUser(arg0, arg1) {
+function getMutualGuildsWithCurrentUser(id, set) {
   let iter3;
-  const RestrictedGuildIds = arg1(dependencyMap[20]).RestrictedGuildIds;
+  const RestrictedGuildIds = require(3803) /* explicitContentFromProto */.RestrictedGuildIds;
   const setting = RestrictedGuildIds.getSetting();
   const items = [];
-  const tmp = _createForOfIteratorHelperLoose(arg1);
+  const tmp = _createForOfIteratorHelperLoose(set);
   const iter = tmp();
   let iter2 = iter;
   if (!iter.done) {
@@ -264,11 +285,11 @@ function getMutualGuildsWithCurrentUser(arg0, arg1) {
       let value = iter2.value;
       let tmp3 = tmp2;
       if (!setting.includes(value)) {
-        let tmp4 = closure_14;
+        let tmp4 = member;
         tmp3 = tmp2;
-        if (closure_14.isMember(value, arg0)) {
-          let tmp5 = closure_15;
-          let guild = closure_15.getGuild(value);
+        if (member.isMember(value, id)) {
+          let tmp5 = store;
+          let guild = store.getGuild(value);
           tmp3 = guild;
           if (null != guild) {
             let arr = items.push(guild);
@@ -277,7 +298,7 @@ function getMutualGuildsWithCurrentUser(arg0, arg1) {
         }
       }
       iter3 = tmp();
-      let tmp2 = tmp3;
+      tmp2 = tmp3;
       iter2 = iter3;
     } while (!iter3.done);
   }
@@ -285,14 +306,14 @@ function getMutualGuildsWithCurrentUser(arg0, arg1) {
 }
 function parseUserResults(arg0) {
   let iter3;
-  if (closure_20) {
-    if ("" !== closure_21) {
+  if (c20) {
+    if ("" !== c21) {
       const currentUser = authStore.getCurrentUser();
-      const frictionlessGDMsEnabled = arg1(dependencyMap[16]).getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      const frictionlessGDMsEnabled = require(12680) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
       let set = null;
       if (frictionlessGDMsEnabled) {
         const _Set = Set;
-        set = new Set(guildIds.getGuildIds());
+        set = new Set(store.getGuildIds());
       }
       const items = [];
       const tmp9 = _createForOfIteratorHelperLoose(tmp);
@@ -302,8 +323,8 @@ function parseUserResults(arg0) {
         do {
           let id = iter2.value.id;
           if (null == currentUser) {
-            let tmp15 = closure_17;
-            let user = closure_17.getUser(id);
+            let tmp15 = authStore;
+            let user = authStore.getUser(id);
             let tmp16 = user;
             let tmp13 = tmp10;
             let tmp14 = tmp11;
@@ -321,8 +342,8 @@ function parseUserResults(arg0) {
                       let tmp35 = closure_16;
                       tmp19 = tmp11;
                       if (!closure_16.isFriend(user.id)) {
-                        let tmp20 = closure_38;
-                        let arr2 = closure_38(user.id, set);
+                        let tmp20 = getMutualGuildsWithCurrentUser;
+                        let arr2 = getMutualGuildsWithCurrentUser(user.id, set);
                         if (0 !== arr2.length) {
                           tmp19 = arr2;
                           if (arr2.length > 0) {
@@ -373,33 +394,31 @@ function parseUserResults(arg0) {
             tmp14 = tmp11;
           }
           iter3 = tmp9();
-          let tmp10 = tmp13;
-          let tmp11 = tmp14;
+          tmp10 = tmp13;
+          tmp11 = tmp14;
           iter2 = iter3;
         } while (!iter3.done);
       }
-      let closure_23 = items;
       tmp4.emitChange();
-      const obj4 = arg1(dependencyMap[16]);
+      const obj4 = require(12680) /* getFrictionlessGDMsEnabled */;
     }
   }
 }
 function getUserBoosterMap() {
-  const frequentlyWithoutFetchingLatest = frequentlyWithoutFetchingLatest.getFrequentlyWithoutFetchingLatest();
-  const found = frequentlyWithoutFetchingLatest.filter((isDM) => isDM instanceof closure_10 && isDM.isDM());
-  const items = [...found.map((id) => store.getScoreWithoutFetchingLatest(id.id))];
+  frequentlyWithoutFetchingLatest = frequentlyWithoutFetchingLatest.getFrequentlyWithoutFetchingLatest();
+  const found = frequentlyWithoutFetchingLatest.filter((isDM) => isDM instanceof outer1_10 && isDM.isDM());
+  const items = [...found.map((id) => outer1_13.getScoreWithoutFetchingLatest(id.id))];
   let closure_0 = Math.max.apply(items);
   const obj = {};
-  const importDefault = obj;
   const item = found.forEach((id) => {
-    const scoreWithoutFetchingLatest = store.getScoreWithoutFetchingLatest(id.id);
+    const scoreWithoutFetchingLatest = outer1_13.getScoreWithoutFetchingLatest(id.id);
     const recipientId = id.getRecipientId();
     let num = 0;
-    if (friend.isFriend(recipientId)) {
+    if (outer1_16.isFriend(recipientId)) {
       num = 0.2;
     }
     let num2 = 0;
-    if (null != dMFromUserId.getDMFromUserId(recipientId)) {
+    if (null != outer1_11.getDMFromUserId(recipientId)) {
       num2 = 0.1;
     }
     obj[recipientId] = 1 + scoreWithoutFetchingLatest / closure_0 + num + num2;
@@ -407,20 +426,20 @@ function getUserBoosterMap() {
   return obj;
 }
 function createSearchContext() {
-  if (null != closure_19) {
-    closure_19.destroy();
-    closure_19 = null;
+  if (null != c19) {
+    c19.destroy();
+    c19 = null;
   }
-  return importDefault(dependencyMap[21]).getUserSearchContext(parseUserResults, 1000);
+  return importDefault(7098).getUserSearchContext(parseUserResults, 1000);
 }
 function handleModalActionSheetOpen(key) {
   if (key.key !== closure_18) {
     return false;
   } else {
-    let closure_20 = true;
+    let c20 = true;
     updateHasFriends();
     let closure_19 = createSearchContext();
-    let closure_27 = null;
+    let c27 = null;
     setQuery("");
   }
 }
@@ -432,17 +451,17 @@ function handleActionSheetDismiss(key) {
   }
 }
 function handleClose() {
-  if (null != closure_19) {
-    closure_19.destroy();
-    closure_19 = null;
+  if (null != c19) {
+    c19.destroy();
+    c19 = null;
   }
   reset();
 }
 function performQueryOnAffinityChange() {
-  let tmp = !closure_20;
+  let tmp = !c20;
   if (!tmp) {
-    tmp = !arg1(dependencyMap[16]).getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-    const obj = arg1(dependencyMap[16]);
+    tmp = !require(12680) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+    const obj = require(12680) /* getFrictionlessGDMsEnabled */;
   }
   let tmp4 = !tmp;
   if (!tmp) {
@@ -450,43 +469,28 @@ function performQueryOnAffinityChange() {
   }
   return tmp4;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const PrivateChannelRecord = arg1(dependencyMap[7]).PrivateChannelRecord;
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = importDefault(dependencyMap[12]);
-let closure_16 = importDefault(dependencyMap[13]);
-let closure_17 = importDefault(dependencyMap[14]);
-({ NEW_GROUP_DM_POPOUT_ID: closure_18, Consents } = arg1(dependencyMap[15]));
-let closure_20 = false;
-let closure_21 = "";
-let closure_22 = 0;
+({ NEW_GROUP_DM_POPOUT_ID: closure_18, Consents } = ME);
+let c20 = false;
+let c21 = "";
+let c22 = 0;
 let closure_23 = [];
-let closure_24 = false;
-let closure_25 = false;
-const set = new Set();
-let closure_27 = null;
-let tmp4 = (Store) => {
+let c24 = false;
+let c25 = false;
+let set = new Set();
+let c27 = null;
+let tmp4 = ((Store) => {
   class PrivateChannelRecipientsInviteStoreClass {
     constructor() {
       self = this;
-      tmp = closure_3(this, PrivateChannelRecipientsInviteStoreClass);
-      obj = closure_6(PrivateChannelRecipientsInviteStoreClass);
-      tmp2 = closure_5;
-      if (closure_29()) {
+      tmp = outer1_3(this, PrivateChannelRecipientsInviteStoreClass);
+      obj = outer1_6(PrivateChannelRecipientsInviteStoreClass);
+      tmp2 = outer1_5;
+      if (outer1_29()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -495,65 +499,64 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = PrivateChannelRecipientsInviteStoreClass;
   callback2(PrivateChannelRecipientsInviteStoreClass, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_11, closure_12, closure_8, closure_13, closure_14, closure_15, closure_16, closure_9, closure_17);
-      const items = [closure_17, closure_11];
-      this.syncWith(items, closure_35);
-      const items1 = [closure_9];
-      this.syncWith(items1, closure_43);
-      const items2 = [closure_16];
-      this.syncWith(items2, closure_36);
+      this.waitFor(outer1_11, outer1_12, outer1_8, outer1_13, outer1_14, outer1_15, outer1_16, outer1_9, outer1_17);
+      const items = [outer1_17, outer1_11];
+      this.syncWith(items, outer1_35);
+      const items1 = [outer1_9];
+      this.syncWith(items1, outer1_43);
+      const items2 = [outer1_16];
+      this.syncWith(items2, outer1_36);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "getResults",
     value() {
-      return closure_23;
+      return outer1_23;
     }
   };
   items[1] = obj;
   obj = {
     key: "hasFriends",
     value() {
-      return closure_24;
+      return outer1_24;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getSelectedUsers",
     value() {
-      return closure_26;
+      return outer1_26;
     }
   };
   items[4] = {
     key: "getQuery",
     value() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[5] = {
     key: "getState",
     value() {
-      return { query: closure_21, selectedRow: closure_22, selectedUsers: closure_26, results: closure_23, hasFriends: closure_24, isLoading: closure_25 };
+      return { query: outer1_21, selectedRow: outer1_22, selectedUsers: outer1_26, results: outer1_23, hasFriends: outer1_24, isLoading: outer1_25 };
     }
   };
   return callback(PrivateChannelRecipientsInviteStoreClass, items);
-}(importDefault(dependencyMap[22]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "PrivateChannelRecipientsInviteStore";
-tmp4 = new tmp4(importDefault(dependencyMap[23]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     reset();
   },
   GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch() {
-    let tmp = !closure_20;
+    let tmp = !c20;
     if (!tmp) {
-      tmp = !arg1(dependencyMap[16]).getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-      const obj = arg1(dependencyMap[16]);
+      tmp = !require(12680) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      const obj = require(12680) /* getFrictionlessGDMsEnabled */;
     }
     let tmp4 = !tmp;
     if (!tmp) {
@@ -562,10 +565,10 @@ tmp4 = new tmp4(importDefault(dependencyMap[23]), {
     return tmp4;
   },
   GUILD_MEMBERS_REQUEST: function handleGuildMembersRequest(query) {
-    let tmp = !closure_20;
+    let tmp = !c20;
     if (!tmp) {
-      tmp = !arg1(dependencyMap[16]).getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-      const obj = arg1(dependencyMap[16]);
+      tmp = !require(12680) /* getFrictionlessGDMsEnabled */.getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
+      const obj = require(12680) /* getFrictionlessGDMsEnabled */;
     }
     let tmp4 = !tmp;
     if (!tmp) {
@@ -582,14 +585,14 @@ tmp4 = new tmp4(importDefault(dependencyMap[23]), {
       return false;
     } else {
       reset();
-      let closure_27 = tmp;
+      let c27 = tmp;
       return performQuery();
     }
   },
   MODAL_PUSH: handleModalActionSheetOpen,
   SHOW_ACTION_SHEET: handleModalActionSheetOpen,
   PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function handleInviteOpen(channelId) {
-    let closure_20 = true;
+    let c20 = true;
     updateHasFriends();
     let closure_19 = createSearchContext();
     channelId = channelId.channelId;
@@ -607,83 +610,14 @@ tmp4 = new tmp4(importDefault(dependencyMap[23]), {
   },
   PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function handleAddUser(userId) {
     set.add(userId.userId);
-    const set = new Set(set);
+    set = new Set(set);
   },
   PRIVATE_CHANNEL_RECIPIENTS_REMOVE_USER: function handleRemoveUser(userId) {
     set.delete(userId.userId);
-    const set = new Set(set);
+    set = new Set(set);
   }
 });
-const obj = {
-  CONNECTION_OPEN: function handleConnectionOpen() {
-    reset();
-  },
-  GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch() {
-    let tmp = !closure_20;
-    if (!tmp) {
-      tmp = !arg1(dependencyMap[16]).getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-      const obj = arg1(dependencyMap[16]);
-    }
-    let tmp4 = !tmp;
-    if (!tmp) {
-      tmp4 = setLoading(false);
-    }
-    return tmp4;
-  },
-  GUILD_MEMBERS_REQUEST: function handleGuildMembersRequest(query) {
-    let tmp = !closure_20;
-    if (!tmp) {
-      tmp = !arg1(dependencyMap[16]).getFrictionlessGDMsEnabled("PrivateChannelRecipientsInviteStore");
-      const obj = arg1(dependencyMap[16]);
-    }
-    let tmp4 = !tmp;
-    if (!tmp) {
-      let tmp6 = query.query === _var.toLocaleLowerCase();
-      if (tmp6) {
-        tmp6 = setLoading(true);
-      }
-      tmp4 = tmp6;
-    }
-    return tmp4;
-  },
-  CHANNEL_SELECT: function handleChannelSelect(guildId) {
-    if (null != guildId.guildId) {
-      return false;
-    } else {
-      reset();
-      let closure_27 = tmp;
-      return performQuery();
-    }
-  },
-  MODAL_PUSH: handleModalActionSheetOpen,
-  SHOW_ACTION_SHEET: handleModalActionSheetOpen,
-  PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function handleInviteOpen(channelId) {
-    let closure_20 = true;
-    updateHasFriends();
-    let closure_19 = createSearchContext();
-    channelId = channelId.channelId;
-    setQuery("");
-  },
-  MODAL_POP: handleActionSheetDismiss,
-  HIDE_ACTION_SHEET: handleActionSheetDismiss,
-  PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: handleClose,
-  PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function handleQuery(channelId) {
-    channelId = channelId.channelId;
-    setQuery(channelId.query);
-  },
-  PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function handleSelect(row) {
-    row = row.row;
-  },
-  PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function handleAddUser(userId) {
-    set.add(userId.userId);
-    const set = new Set(set);
-  },
-  PRIVATE_CHANNEL_RECIPIENTS_REMOVE_USER: function handleRemoveUser(userId) {
-    set.delete(userId.userId);
-    const set = new Set(set);
-  }
-};
-const tmp2 = arg1(dependencyMap[15]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("stores/PrivateChannelRecipientsInviteStore.tsx");
+let closure_28 = tmp4;
+let result = set.fileFinishedImporting("stores/PrivateChannelRecipientsInviteStore.tsx");
 
 export default tmp4;

@@ -8,7 +8,7 @@ const uint8Array = new Uint8Array(16);
 arg5.default = function rng() {
   if (!getRandomValues) {
     const _crypto = crypto;
-    let getRandomValues = "undefined" !== typeof crypto;
+    getRandomValues = "undefined" !== typeof crypto;
     if (getRandomValues) {
       const _crypto2 = crypto;
       getRandomValues = crypto.getRandomValues;

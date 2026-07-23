@@ -1,34 +1,33 @@
-// Module ID: 7897
-// Function ID: 62896
+// Module ID: 7903
+// Function ID: 62933
 // Name: formatExpirationLabel
-// Dependencies: []
+// Dependencies: [3712, 1212, 2]
 // Exports: default
 
-// Module 7897 (formatExpirationLabel)
+// Module 7903 (formatExpirationLabel)
 function formatExpirationLabel(expiry) {
-  const tmp = importDefault(dependencyMap[0])();
+  const tmp = importDefault(3712)();
   if (expiry > tmp) {
     const diffResult = expiry.diff(tmp, "days");
     if (diffResult > 1) {
-      const intl3 = require(dependencyMap[1]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       let obj = { days: diffResult };
-      return intl3.formatToPlainString(require(dependencyMap[1]).t.dex68a, obj);
+      return intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.dex68a, obj);
     } else {
       const diffResult1 = expiry.diff(tmp, "hours");
       if (diffResult1 > 1) {
-        const intl2 = require(dependencyMap[1]).intl;
+        const intl2 = require(1212) /* getSystemLocale */.intl;
         obj = { hours: diffResult1 };
-        return intl2.formatToPlainString(require(dependencyMap[1]).t.BWqf0c, obj);
+        return intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.BWqf0c, obj);
       } else {
-        const intl = require(dependencyMap[1]).intl;
+        const intl = require(1212) /* getSystemLocale */.intl;
         obj = { minutes: expiry.diff(tmp, "minutes") };
-        return intl.formatToPlainString(require(dependencyMap[1]).t.3SLXAz, obj);
+        return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["3SLXAz"], obj);
       }
     }
   }
 }
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/polls/chat/useFormattedExpirationLabel.tsx");
+const result = require("set").fileFinishedImporting("modules/polls/chat/useFormattedExpirationLabel.tsx");
 
 export default function useFormattedExpirationLabel(expiry) {
   if (null != expiry) {

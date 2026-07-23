@@ -1,46 +1,48 @@
-// Module ID: 4960
-// Function ID: 42643
+// Module ID: 4963
+// Function ID: 42661
 // Name: useStageParticipants
-// Dependencies: []
+// Dependencies: [57, 4951, 566, 4964, 4957, 2]
 // Exports: useActualStageSpeakerCount, useSortedRequestToSpeakParticipants, useStageParticipants, useStageParticipantsCount
 
-// Module 4960 (useStageParticipants)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/stage_channels/StageChannelParticipantStoreHooks.tsx");
+// Module 4963 (useStageParticipants)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/stage_channels/StageChannelParticipantStoreHooks.tsx");
 
 export const useStageParticipants = function useStageParticipants(id, SPEAKER) {
-  SPEAKER = id;
+  const _require = id;
   const dependencyMap = SPEAKER;
-  const items = [closure_3];
+  let items = [_isNativeReflectConstruct];
   const items1 = [id, SPEAKER];
-  return callback(SPEAKER(dependencyMap[2]).useStateFromStores(items, () => {
-    const items = [store.getMutableParticipants(arg0, arg1), store.getParticipantsVersion(arg0)];
+  return callback(_require(566).useStateFromStores(items, () => {
+    const items = [outer1_3.getMutableParticipants(closure_0, closure_1), outer1_3.getParticipantsVersion(closure_0)];
     return items;
-  }, items1, SPEAKER(dependencyMap[3]).isVersionEqual), 1)[0];
+  }, items1, _require(4964).isVersionEqual), 1)[0];
 };
 export const useStageParticipantsCount = function useStageParticipantsCount(id, AUDIENCE) {
-  AUDIENCE = id;
+  const _require = id;
   const dependencyMap = AUDIENCE;
-  const items = [closure_3];
+  const items = [_isNativeReflectConstruct];
   const items1 = [id, AUDIENCE];
-  return AUDIENCE(dependencyMap[2]).useStateFromStores(items, () => participantCount.getParticipantCount(arg0, arg1), items1);
+  return _require(566).useStateFromStores(items, () => outer1_3.getParticipantCount(closure_0, closure_1), items1);
 };
 export const useSortedRequestToSpeakParticipants = function useSortedRequestToSpeakParticipants(id) {
-  const arg1 = id;
-  const items = [closure_3];
+  const _require = id;
+  let items = [_isNativeReflectConstruct];
   const items1 = [id];
-  return callback(arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const items = [store.getMutableRequestToSpeakParticipants(arg0), store.getRequestToSpeakParticipantsVersion(arg0)];
+  return callback(_require(566).useStateFromStores(items, () => {
+    const items = [outer1_3.getMutableRequestToSpeakParticipants(closure_0), outer1_3.getRequestToSpeakParticipantsVersion(closure_0)];
     return items;
-  }, items1, arg1(dependencyMap[3]).isVersionEqual), 1)[0];
+  }, items1, _require(4964).isVersionEqual), 1)[0];
 };
 export const useActualStageSpeakerCount = function useActualStageSpeakerCount(id) {
-  const arg1 = id;
-  const items = [closure_3];
+  const _require = id;
+  const items = [_isNativeReflectConstruct];
   const items1 = [id];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const mutableParticipants = mutableParticipants.getMutableParticipants(arg0, arg0(closure_1[4]).StageChannelParticipantNamedIndex.SPEAKER);
-    return mutableParticipants.filter((type) => type.type === callback(closure_1[4]).StageChannelParticipantTypes.VOICE).length;
+  return _require(566).useStateFromStores(items, () => {
+    const mutableParticipants = outer1_3.getMutableParticipants(id, id(outer1_1[4]).StageChannelParticipantNamedIndex.SPEAKER);
+    return mutableParticipants.filter((type) => type.type === callback(outer2_1[4]).StageChannelParticipantTypes.VOICE).length;
   }, items1);
 };

@@ -1,11 +1,12 @@
 // Module ID: 608
 // Function ID: 7044
 // Name: _process
-// Dependencies: []
+// Dependencies: [581]
 
 // Module 608 (_process)
+const tmp = "object" === typeof exports && exports && !exports.nodeType && exports;
 let tmp2 = tmp;
-if ("object" === typeof exports && exports && !exports.nodeType && exports) {
+if (tmp) {
   tmp2 = "object" === typeof module;
 }
 if (tmp2) {
@@ -22,7 +23,7 @@ if (tmp2) {
   _process = tmp2.exports === tmp;
 }
 if (_process) {
-  _process = require(dependencyMap[0]).process;
+  _process = require("module_581").process;
 }
 let _require = obj;
 if (tmp2) {

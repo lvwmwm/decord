@@ -1,10 +1,17 @@
 // Module ID: 1263
-// Function ID: 14258
+// Function ID: 14259
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 57, 1264]
 // Exports: formatToMarkdownString
 
 // Module 1263 (_isNativeReflectConstruct)
+import _classCallCheck from "_isNativeReflectConstruct";
+import _defineProperties from "_defineProperties";
+import "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _slicedToArray from "_slicedToArray";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,7 +21,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function formatToMarkdownString(1Ww0Hi, arg1) {
+function formatToMarkdownString(_1Ww0Hi, arg1) {
   const self = this;
   if (arguments.length > 2) {
     if (undefined !== arguments[2]) {
@@ -26,14 +33,8 @@ function formatToMarkdownString(1Ww0Hi, arg1) {
     }
     return first;
   }
-  tmp = tmp2;
+  tmp = closure_7;
 }
-let closure_0 = require(dependencyMap[0]);
-let closure_1 = require(dependencyMap[1]);
-let closure_2 = require(dependencyMap[2]);
-let closure_3 = require(dependencyMap[3]);
-let closure_4 = require(dependencyMap[4]);
-let closure_5 = require(dependencyMap[5]);
 let closure_6 = {
   $b(join) {
     return "**" + join.join("") + "**";
@@ -48,25 +49,25 @@ let closure_6 = {
     return "`" + join.join("") + "`";
   },
   $link(join) {
-    return "[" + join.join("") + "](" + callback3(arg2, 1)[0] + ")";
+    return "[" + join.join("") + "](" + _slicedToArray(arg2, 1)[0] + ")";
   },
   $p(join) {
     return join.join("") + "\n\n";
   }
 };
-const tmp2 = (StringBuilder) => {
+const tmp2 = ((StringBuilder) => {
   class MarkdownBuilder {
     constructor() {
       self = this;
       tmp = MarkdownBuilder(this, MarkdownBuilder);
-      obj = closure_3(MarkdownBuilder);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(MarkdownBuilder);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -77,18 +78,18 @@ const tmp2 = (StringBuilder) => {
       return tmp2Result;
     }
   }
-  let closure_0 = MarkdownBuilder;
-  callback2(MarkdownBuilder, StringBuilder);
+  _inherits(MarkdownBuilder, StringBuilder);
   const items = [
     {
       key: "pushRichTextTag",
       value: function pushRichTextTag(arg0, arg1, arg2) {
-        this.result = this.result + closure_6[arg0](arg1, "", arg2);
+        this.result = this.result + outer1_6[arg0](arg1, "", arg2);
       }
     }
   ];
-  return callback(MarkdownBuilder, items);
-}(require(dependencyMap[6]).StringBuilder);
+  return _defineProperties(MarkdownBuilder, items);
+})(require("_isNativeReflectConstruct").StringBuilder);
+let closure_7 = tmp2;
 
 export { formatToMarkdownString };
 export const markdownFormatter = { format: formatToMarkdownString, builder: tmp2 };

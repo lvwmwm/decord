@@ -1,21 +1,23 @@
-// Module ID: 7453
-// Function ID: 59775
+// Module ID: 7458
+// Function ID: 59808
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [5, 1838, 5613, 653, 7459, 5611, 1198, 5736, 7460, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 7453 (navigateToSocialLayerStorefrontWithGuildPreview)
-import closure_3 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 7458 (navigateToSocialLayerStorefrontWithGuildPreview)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_4 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
 
+let closure_6;
+let closure_7;
+const require = arg1;
 function navigateToSocialLayerStorefrontWithGuildPreview(arg0) {
   return _navigateToSocialLayerStorefrontWithGuildPreview(...arguments);
 }
 async function _navigateToSocialLayerStorefrontWithGuildPreview(arg0, arg1) {
-  const fn = function*(arg0) {
+  let iter = (function*(arg0) {
     let guildId;
     let invite;
     let pageIndex;
@@ -41,35 +43,35 @@ async function _navigateToSocialLayerStorefrontWithGuildPreview(arg0, arg1) {
       guildId = id;
     }
     if (null != guildId) {
-      guild = guild.getGuild(guildId);
+      guild = outer2_4.getGuild(guildId);
       let joinedAt;
       if (null != guild) {
         joinedAt = guild.joinedAt;
       }
       if (null == joinedAt) {
         if (null != _Set) {
-          if (!_Set.has(constants.PREVIEW_ENABLED)) {
+          if (!_Set.has(outer2_6.PREVIEW_ENABLED)) {
             if (null != invite) {
               let obj = { inviteKey: invite.code };
               obj = { location: "game_shop" };
               obj.context = obj;
               obj.skipOnboarding = true;
-              return yield callback2(closure_2[8]).acceptInvite(obj);
+              return yield outer2_1(outer2_2[8]).acceptInvite(obj);
             }
           }
         }
-        obj = callback(closure_2[7]);
+        obj = outer2_0(outer2_2[7]);
         const obj1 = { shouldNavigate: false };
         yield obj.startLurking(guildId, {}, obj1);
       }
-      return callback(closure_2[6]).transitionTo(closure_7.CHANNELS_GAME_SHOP(guildId, pageIndex, skuId, slug));
+      return outer2_0(outer2_2[6]).transitionTo(outer2_7.CHANNELS_GAME_SHOP(guildId, pageIndex, skuId, slug));
     }
-  };
-  fn.next();
-  return fn;
+  })();
+  iter.next();
+  return iter;
 }
-({ GuildFeatures: closure_6, Routes: closure_7 } = __exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/slayer_storefront/navigateToSocialLayerStorefront.tsx");
+({ GuildFeatures: closure_6, Routes: closure_7 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/slayer_storefront/navigateToSocialLayerStorefront.tsx");
 
 export default function navigateToSocialLayerStorefront(arg0) {
   let applicationId;
@@ -85,7 +87,7 @@ export default function navigateToSocialLayerStorefront(arg0) {
   }
   let socialLayerStorefrontGuildId = guildId;
   if (null == guildId) {
-    let obj = arg1(dependencyMap[5]);
+    let obj = require(5611) /* _createForOfIteratorHelperLoose */;
     socialLayerStorefrontGuildId = obj.getSocialLayerStorefrontGuildId(applicationId);
   }
   if (null == applicationIdFromGuildId) {
@@ -97,8 +99,8 @@ export default function navigateToSocialLayerStorefront(arg0) {
     }
   }
   if (null != applicationIdFromGuildId) {
-    resolved = Promise.resolve(arg1(dependencyMap[6]).transitionTo(closure_7.COLLECTIBLES_SHOP_GAME_SHOP(applicationIdFromGuildId, pageIndex, skuId, slug)));
-    const obj3 = arg1(dependencyMap[6]);
+    resolved = Promise.resolve(require(1198) /* shouldNavigate */.transitionTo(closure_7.COLLECTIBLES_SHOP_GAME_SHOP(applicationIdFromGuildId, pageIndex, skuId, slug)));
+    const obj3 = require(1198) /* shouldNavigate */;
   } else {
     obj = { guildId: socialLayerStorefrontGuildId, pageIndex, invite, skuId, slug };
     resolved = navigateToSocialLayerStorefrontWithGuildPreview(obj);
@@ -117,7 +119,7 @@ export const eagerNavigateToSocialLayerStorefront = function eagerNavigateToSoci
     guildId = id;
   }
   if (null != guildId) {
-    let obj = arg1(dependencyMap[4]);
+    let obj = require(7459) /* _fetchSocialLayerStorefront */;
     obj = { eager: true, forceFetch: forceFetch.forceFetch };
     const socialLayerStorefront = obj.fetchSocialLayerStorefront(guildId, obj);
   }
@@ -126,6 +128,6 @@ export const eagerNavigateToSocialLayerStorefrontForApplication = function eager
   let applicationId;
   let forceFetch;
   ({ applicationId, forceFetch } = arg0);
-  const socialLayerStorefrontForApplication = arg1(dependencyMap[4]).fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
+  const socialLayerStorefrontForApplication = require(7459) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
 };
 export { navigateToSocialLayerStorefrontWithGuildPreview };

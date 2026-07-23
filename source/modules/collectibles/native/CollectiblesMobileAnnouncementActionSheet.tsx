@@ -1,23 +1,34 @@
-// Module ID: 15510
-// Function ID: 118362
+// Module ID: 15627
+// Function ID: 120535
 // Name: CatEarsBackdrop
-// Dependencies: []
+// Dependencies: [31, 27, 655, 5188, 1345, 33, 4130, 689, 1450, 5189, 1557, 3991, 15628, 4126, 1212, 15629, 6773, 5484, 5187, 15631, 5807, 4543, 2]
 // Exports: default
 
-// Module 15510 (CatEarsBackdrop)
+// Module 15627 (CatEarsBackdrop)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { CollectiblesMobileShopScreen as closure_6 } from "items";
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
+import { ContentDismissActionType } from "ContentDismissActionType";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let StyleSheet;
+let closure_10;
+let closure_4;
+let closure_5;
+let closure_9;
+const require = arg1;
 function CatEarsBackdrop() {
-  const tmp = callback3();
-  const width = importDefault(dependencyMap[8])().width;
-  let obj = arg1(dependencyMap[9]);
-  const animatedPosition = obj.useBottomSheet().animatedPosition;
-  const arg1 = animatedPosition;
-  const top = importDefault(dependencyMap[10])().top;
-  const importDefault = top;
+  const tmp = _createForOfIteratorHelperLoose();
+  const width = top(1450)().width;
+  let obj = animatedPosition(5189);
+  animatedPosition = obj.useBottomSheet().animatedPosition;
+  top = top(1557)().top;
   const bound = Math.min(width, ACTION_SHEET_MAX_WIDTH);
   const result = (width - bound) / 2;
   const result1 = bound / 1200;
-  let obj1 = arg1(dependencyMap[11]);
+  let obj1 = animatedPosition(3991);
   const fn = function t() {
     let obj = {};
     obj = { translateY: animatedPosition.get() + top - 60 };
@@ -30,149 +41,141 @@ function CatEarsBackdrop() {
   fn.__initData = closure_12;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   obj = { style: items };
-  const items = [tmp.mascotContainer, { left: result, right: result }, animatedStyle];
+  items = [tmp.mascotContainer, { left: result, right: result }, animatedStyle];
   obj = { style: items1 };
-  const items1 = [tmp.mascotLayer, ];
+  items1 = [tmp.mascotLayer, ];
   obj1 = { top: -138 * result1, left: tmp6, right: tmp6 };
   items1[1] = obj1;
   const obj2 = {};
-  const obj3 = { uri: importDefault(dependencyMap[12]) };
+  const obj3 = { uri: top(15628) };
   obj2.source = obj3;
   obj2.style = tmp.mascotImage;
   obj2.accessibilityElementsHidden = true;
   obj2.importantForAccessibility = "no-hide-descendants";
   obj.children = callback(closure_4, obj2);
   obj.children = callback(closure_5, obj);
-  return callback(importDefault(dependencyMap[11]).View, obj);
+  return callback(top(3991).View, obj);
 }
 function FeatureRow(arg0) {
   let icon;
   let text;
   ({ icon, text } = arg0);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.featureRow };
   const items = [icon, ];
-  obj = { cachedAt: true, edpbxy: true, style: tmp.featureText, children: text };
-  items[1] = callback(arg1(dependencyMap[13]).Text, obj);
+  obj = { variant: "text-sm/medium", color: "text-subtle", style: tmp.featureText, children: text };
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(closure_5, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ Image: closure_4, StyleSheet, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = arg1(dependencyMap[2]).CollectiblesMobileShopScreen;
-const ACTION_SHEET_MAX_WIDTH = arg1(dependencyMap[3]).ACTION_SHEET_MAX_WIDTH;
-const ContentDismissActionType = arg1(dependencyMap[4]).ContentDismissActionType;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = {};
+({ Image: closure_4, StyleSheet, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj["pointerEvents"] = "none";
-obj.mascotContainer = obj;
+_createForOfIteratorHelperLoose["pointerEvents"] = "none";
+_createForOfIteratorHelperLoose.mascotContainer = _createForOfIteratorHelperLoose;
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj.mascotLayer = {};
-obj.mascotImage = {};
-obj.framePreviewImage = { "Null": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000193549897458269, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130375421427825, "Null": 57309442019316190000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
-const obj1 = {};
-const tmp3 = arg1(dependencyMap[5]);
-obj.container = { padding: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_24, gap: importDefault(dependencyMap[7]).space.PX_16 };
-obj.headerText = { textAlign: "center" };
-const obj3 = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F", gap: importDefault(dependencyMap[7]).space.PX_16 };
-obj.featureRow = obj3;
-obj.featureText = { flex: 1 };
-const obj2 = { padding: importDefault(dependencyMap[7]).space.PX_16, paddingTop: importDefault(dependencyMap[7]).space.PX_24, gap: importDefault(dependencyMap[7]).space.PX_16 };
-obj.featureRows = { gap: importDefault(dependencyMap[7]).space.PX_32 };
-let closure_11 = obj.createStyles(obj);
+_createForOfIteratorHelperLoose.mascotLayer = {};
+_createForOfIteratorHelperLoose.mascotImage = { width: "100%", aspectRatio: 1.8324022346368716 };
+_createForOfIteratorHelperLoose.framePreviewImage = { width: "100%", aspectRatio: 3.25, resizeMode: "contain" };
+_createForOfIteratorHelperLoose.container = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.headerText = { textAlign: "center" };
+let obj3 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.featureRow = obj3;
+_createForOfIteratorHelperLoose.featureText = { flex: 1 };
+let obj1 = {};
+let obj2 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.featureRows = { gap: require("_createForOfIteratorHelperLoose").space.PX_32 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
 let closure_12 = { code: "function CollectiblesMobileAnnouncementActionSheetTsx1(){const{animatedPosition,safeAreaTop,MASCOT_SAFE_AREA_NUDGE}=this.__closure;return{transform:[{translateY:animatedPosition.get()+safeAreaTop-MASCOT_SAFE_AREA_NUDGE}]};}" };
-const obj4 = { gap: importDefault(dependencyMap[7]).space.PX_32 };
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/collectibles/native/CollectiblesMobileAnnouncementActionSheet.tsx");
+let obj4 = { gap: require("_createForOfIteratorHelperLoose").space.PX_32 };
+let result = require("items").fileFinishedImporting("modules/collectibles/native/CollectiblesMobileAnnouncementActionSheet.tsx");
 
 export default function CollectiblesMobileAnnouncementActionSheet(markAsDismissed) {
   let showEaNonPremiumMarketing;
   let showEaPremiumMarketing;
   let showGiftingMarketing;
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const arg1 = markAsDismissed;
-  const tmp = callback3();
-  let obj = arg1(closure_2[15]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = markAsDismissed(15629);
   const profileFramesMarketing = obj.useProfileFramesMarketing("CollectiblesMobileAnnouncementActionSheet");
-  const intl = arg1(closure_2[14]).intl;
+  const intl = markAsDismissed(1212).intl;
   const string = intl.string;
-  const t = arg1(closure_2[14]).t;
+  const t = markAsDismissed(1212).t;
   if (profileFramesMarketing.showEaPremiumMarketing) {
-    let stringResult = string(t.7cmcJI);
+    let stringResult = string(t["7cmcJI"]);
   } else {
     stringResult = string(t.MkVbBY);
   }
   ({ showGiftingMarketing, showEaPremiumMarketing, showEaNonPremiumMarketing } = profileFramesMarketing);
-  const intl2 = arg1(closure_2[14]).intl;
+  const intl2 = markAsDismissed(1212).intl;
   const string2 = intl2.string;
-  const t2 = arg1(closure_2[14]).t;
+  const t2 = markAsDismissed(1212).t;
   if (showGiftingMarketing) {
-    let string2Result = string2(t2./4bQuG);
+    let string2Result = string2(t2["/4bQuG"]);
   } else if (showEaPremiumMarketing) {
-    string2Result = string2(t2.5UI+bw);
+    string2Result = string2(t2["5UI+bw"]);
   } else if (showEaNonPremiumMarketing) {
-    string2Result = string2(t2.4a7pVU);
+    string2Result = string2(t2["4a7pVU"]);
   } else {
-    string2Result = string2(t2.+9vaAT);
+    string2Result = string2(t2["+9vaAT"]);
   }
   const importDefault = React.useRef(false);
-  closure_2 = React.useRef(markAsDismissed);
+  const dependencyMap = React.useRef(markAsDismissed);
   const items = [markAsDismissed];
   const effect = React.useEffect(() => {
     closure_2.current = markAsDismissed;
   }, items);
   const effect1 = React.useEffect(() => () => {
-    if (!ref.current) {
-      ref2.current(constants.AUTO_DISMISS);
+    if (!outer1_1.current) {
+      outer1_2.current(outer2_8.AUTO_DISMISS);
     }
   }, []);
   const items1 = [markAsDismissed];
   const items2 = [markAsDismissed];
   const callback = React.useCallback(() => {
     callback.current = true;
-    markAsDismissed(constants2.PRIMARY);
-    let obj = markAsDismissed(closure_2[16]);
-    obj = { screen: constants.FEATURED_PAGE, analyticsLocations: [], analyticsSource: callback(closure_2[17]).ACTION_SHEET };
+    markAsDismissed(outer1_8.PRIMARY);
+    let obj = markAsDismissed(6773);
+    obj = { screen: outer1_6.FEATURED_PAGE, analyticsLocations: [], analyticsSource: callback(5484).ACTION_SHEET };
     const result = obj.openCollectiblesShopMobile(obj);
   }, items1);
   const callback1 = React.useCallback(() => {
     closure_1.current = true;
-    markAsDismissed(constants2.USER_DISMISS);
+    markAsDismissed(outer1_8.USER_DISMISS);
   }, items2);
-  const memo = React.useMemo(() => callback2(closure_13, {}), []);
+  const memo = React.useMemo(() => outer1_9(outer1_13, {}), []);
   obj = { onDismiss: callback1, backdropChildren: memo };
   obj = { style: tmp.container };
   const obj1 = {};
-  const obj2 = { uri: importDefault(closure_2[19]) };
+  const obj2 = { uri: importDefault(15631) };
   obj1.source = obj2;
   obj1.style = tmp.framePreviewImage;
   obj1.accessibilityElementsHidden = true;
   obj1.importantForAccessibility = "no-hide-descendants";
   const items3 = [callback(closure_4, obj1), , , ];
-  const obj3 = { gauge: "button", onLayerLoaded: null, ExpressiveGradient: null, style: tmp.headerText };
-  const intl3 = tmp2(tmp3[14]).intl;
-  obj3.children = intl3.string(arg1(closure_2[14]).t.vRCvqo);
-  items3[1] = callback(arg1(closure_2[13]).Text, obj3);
+  const obj3 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: tmp.headerText };
+  const intl3 = tmp2(1212).intl;
+  obj3.children = intl3.string(markAsDismissed(1212).t.vRCvqo);
+  items3[1] = callback(markAsDismissed(4126).Text, obj3);
   const obj4 = { style: tmp.featureRows };
-  const obj5 = { icon: callback(arg1(closure_2[20]).PaintIllocon, { size: 32 }) };
-  const intl4 = tmp2(tmp3[14]).intl;
-  obj5.text = intl4.string(arg1(closure_2[14]).t.6ZWB0C);
+  const obj5 = { icon: callback(markAsDismissed(5807).PaintIllocon, { size: 32 }) };
+  const intl4 = tmp2(1212).intl;
+  obj5.text = intl4.string(markAsDismissed(1212).t["6ZWB0C"]);
   const items4 = [callback(FeatureRow, obj5), , ];
-  const obj6 = { icon: callback(arg1(closure_2[20]).HeartIllocon, { size: 32 }), text: stringResult };
+  const obj6 = { icon: callback(markAsDismissed(5807).HeartIllocon, { size: 32 }), text: stringResult };
   items4[1] = callback(FeatureRow, obj6);
-  const obj7 = { icon: callback(arg1(closure_2[20]).ShopIllocon, { size: 32 }), text: string2Result };
+  const obj7 = { icon: callback(markAsDismissed(5807).ShopIllocon, { size: 32 }), text: string2Result };
   items4[2] = callback(FeatureRow, obj7);
   obj4.children = items4;
   items3[2] = callback2(closure_5, obj4);
   const obj8 = { size: "lg" };
-  const intl5 = tmp2(tmp3[14]).intl;
-  obj8.text = intl5.string(arg1(closure_2[14]).t.S9hXPI);
+  const intl5 = tmp2(1212).intl;
+  obj8.text = intl5.string(markAsDismissed(1212).t.S9hXPI);
   obj8.onPress = callback;
-  items3[3] = callback(arg1(closure_2[21]).Button, obj8);
+  items3[3] = callback(markAsDismissed(4543).Button, obj8);
   obj.children = items3;
   obj.children = callback2(closure_5, obj);
-  return callback(arg1(closure_2[18]).BottomSheet, obj);
+  return callback(markAsDismissed(5187).BottomSheet, obj);
 };

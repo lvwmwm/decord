@@ -1,60 +1,62 @@
 // Module ID: 3735
-// Function ID: 28545
+// Function ID: 28537
 // Name: n
-// Dependencies: []
+// Dependencies: [3712]
 
 // Module 3735 (n)
 const fn = function n(moment) {
-  let split;
-  let split2;
-  ({ split, split: split2 } = "CN_T2_T3_T4_T5_T6_T7");
-  return moment.defineLocale("vi", {
-    months: "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12".split("_"),
-    monthsShort: "Th01_Th02_Th03_Th04_Th05_Th06_Th07_Th08_Th09_Th10_Th11_Th12".split("_"),
-    monthsParseExact: true,
-    weekdays: "ch\u1EE7 nh\u1EADt_th\u1EE9 hai_th\u1EE9 ba_th\u1EE9 t\u01B0_th\u1EE9 n\u0103m_th\u1EE9 s\u00E1u_th\u1EE9 b\u1EA3y".split("_"),
-    weekdaysShort: "CN_T2_T3_T4_T5_T6_T7".split("_"),
-    weekdaysMin: "CN_T2_T3_T4_T5_T6_T7".split("_"),
-    weekdaysParseExact: true,
-    meridiemParse: /sa|ch/i,
-    isPM(arg0) {
-      return /^ch$/i.test(arg0);
-    },
-    meridiem(arg0, arg1, arg2) {
-      if (arg0 < 12) {
-        let str2 = "SA";
-        if (arg2) {
-          str2 = "sa";
-        }
-        let str = str2;
-      } else {
-        str = "CH";
-        if (arg2) {
-          str = "ch";
+  let closure_0 = { 1: "'inci", 5: "'inci", 8: "'inci", 70: "'inci", 80: "'inci", 2: "'nci", 7: "'nci", 20: "'nci", 50: "'nci", 3: "'\u00FCnc\u00FC", 4: "'\u00FCnc\u00FC", 100: "'\u00FCnc\u00FC", 6: "'nc\u0131", 9: "'uncu", 10: "'uncu", 30: "'uncu", 60: "'\u0131nc\u0131", 90: "'\u0131nc\u0131" };
+  return moment.defineLocale("tr", {
+    months: "Ocak_\u015Eubat_Mart_Nisan_May\u0131s_Haziran_Temmuz_A\u011Fustos_Eyl\u00FCl_Ekim_Kas\u0131m_Aral\u0131k".split("_"),
+    monthsShort: "Oca_\u015Eub_Mar_Nis_May_Haz_Tem_A\u011Fu_Eyl_Eki_Kas_Ara".split("_"),
+    weekdays: "Pazar_Pazartesi_Sal\u0131_\u00C7ar\u015Famba_Per\u015Fembe_Cuma_Cumartesi".split("_"),
+    weekdaysShort: "Paz_Pts_Sal_\u00C7ar_Per_Cum_Cts".split("_"),
+    weekdaysMin: "Pz_Pt_Sa_\u00C7a_Pe_Cu_Ct".split("_"),
+    longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD.MM.YYYY", LL: "D MMMM YYYY", LLL: "D MMMM YYYY HH:mm", LLLL: "dddd, D MMMM YYYY HH:mm" },
+    calendar: { sameDay: "[bug\u00FCn saat] LT", nextDay: "[yar\u0131n saat] LT", nextWeek: "[gelecek] dddd [saat] LT", lastDay: "[d\u00FCn] LT", lastWeek: "[ge\u00E7en] dddd [saat] LT", sameElse: "L" },
+    relativeTime: { future: "%s sonra", past: "%s \u00F6nce", s: "birka\u00E7 saniye", ss: "%d saniye", m: "bir dakika", mm: "%d dakika", h: "bir saat", hh: "%d saat", d: "bir g\u00FCn", dd: "%d g\u00FCn", M: "bir ay", MM: "%d ay", y: "bir y\u0131l", yy: "%d y\u0131l" },
+    ordinal(arg0, arg1) {
+      if ("d" !== arg1) {
+        if ("D" !== arg1) {
+          if ("Do" !== arg1) {
+            if ("DD" !== arg1) {
+              if (0 === arg0) {
+                return arg0 + "'\u0131nc\u0131";
+              } else {
+                const result = arg0 % 10;
+                let tmp3 = dependencyMap[result];
+                if (!tmp3) {
+                  tmp3 = dependencyMap[arg0 % 100 - result];
+                }
+                if (!tmp3) {
+                  let num5 = null;
+                  if (arg0 >= 100) {
+                    num5 = 100;
+                  }
+                  tmp3 = dependencyMap[num5];
+                  const tmp5 = dependencyMap;
+                }
+                return arg0 + tmp3;
+              }
+            }
+          }
         }
       }
-      return str;
-    },
-    longDateFormat: { "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": false, "Bool(true)": 49255168, "Bool(true)": 49556480 },
-    calendar: { variant: "BigUint64Array", r: "SenderStopped", now: -771486882855030200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Symbol: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028984361940497333, Symbol: -771486948408405400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, enabled: null },
-    relativeTime: { COZY_DRAWER: "%s\u5167", rootContainer: "%s\u524D", imgWumpus: "\u5E7E\u79D2", VoicePanelPIPModes: "%d \u79D2", textAlign: "1 \u5206\u9418", st: "%d \u5206\u9418", registerAsset: "1 \u5C0F\u6642", then: "%d \u5C0F\u6642", httpServerLocation: "1 \u5929", application: "%d \u5929", Reflect: "1 \u500B\u6708", keys: "%d \u500B\u6708", uri: "1 \u5E74", Set: "%d \u5E74" },
-    dayOfMonthOrdinalParse: /\d{1,2}/,
-    ordinal(arg0) {
       return arg0;
     },
-    week: { emoji: false, me: false }
+    week: { dow: 1, doy: 7 }
   });
 };
 if ("object" === typeof exports) {
   if (undefined !== module) {
     if ("function" === typeof require) {
-      fn(require(dependencyMap[0]));
+      fn(require("t"));
     }
   }
 }
 if ("function" === typeof globalThis.define) {
   if (globalThis.define.amd) {
-    globalThis.define(["HHmmss.SSSS"], fn);
+    globalThis.define(["../moment"], fn);
   }
 }
 fn(this.moment);

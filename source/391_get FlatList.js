@@ -1,20 +1,21 @@
 // Module ID: 391
 // Function ID: 5733
 // Name: get FlatList
-// Dependencies: []
+// Dependencies: [262, 392, 345, 393, 394, 395, 398, 400, 401]
 
 // Module 391 (get FlatList)
-if (importDefault(dependencyMap[0]).isDisableAnimations) {
-  let importDefaultResult = importDefault(dependencyMap[1]);
+const require = arg1;
+if (require("get Version").isDisableAnimations) {
+  let importDefaultResult = require("mockAnimationStart");
 } else {
-  importDefaultResult = importDefault(dependencyMap[2]);
+  importDefaultResult = require("_combineCallbacks");
 }
 const obj = {};
-Object.defineProperty(obj, "FlatList", { get: () => arg1(dependencyMap[3]).default, set: undefined });
-Object.defineProperty(obj, "Image", { get: () => arg1(dependencyMap[4]).default, set: undefined });
-Object.defineProperty(obj, "ScrollView", { get: () => arg1(dependencyMap[5]).default, set: undefined });
-Object.defineProperty(obj, "SectionList", { get: () => arg1(dependencyMap[6]).default, set: undefined });
-Object.defineProperty(obj, "Text", { get: () => arg1(dependencyMap[7]).default, set: undefined });
-Object.defineProperty(obj, "View", { get: () => arg1(dependencyMap[8]).default, set: undefined });
+Object.defineProperty(obj, "FlatList", { get: () => require(393).default, set: undefined });
+Object.defineProperty(obj, "Image", { get: () => require(394).default, set: undefined });
+Object.defineProperty(obj, "ScrollView", { get: () => require(395) /* AnimatedScrollViewWithInvertedRefreshControl */.default, set: undefined });
+Object.defineProperty(obj, "SectionList", { get: () => require(398).default, set: undefined });
+Object.defineProperty(obj, "Text", { get: () => require(400).default, set: undefined });
+Object.defineProperty(obj, "View", { get: () => require(401).default, set: undefined });
 
 export default Object.assign(obj, importDefaultResult);

@@ -1,24 +1,25 @@
 // Module ID: 1292
-// Function ID: 15115
+// Function ID: 15116
 // Name: binaryWriteOptions
-// Dependencies: []
+// Dependencies: [6, 7, 1293, 1290, 1291]
 // Exports: binaryWriteOptions
 
 // Module 1292 (binaryWriteOptions)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 let closure_4 = {
   writeUnknownFields: true,
   writerFactory() {
-    return new tmp2();
+    return new closure_5();
   }
 };
-const tmp2 = () => {
+let tmp2 = (() => {
   class BinaryWriter {
     constructor(arg0) {
       textEncoder = arg0;
       self = this;
-      tmp2 = closure_2(this, BinaryWriter);
+      tmp2 = outer1_2(this, BinaryWriter);
       this.stack = [];
       if (null == arg0) {
         tmp3 = globalThis;
@@ -34,7 +35,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const require = BinaryWriter;
   let obj = {
     key: "finish",
     value: function finish() {
@@ -125,12 +125,12 @@ const tmp2 = () => {
   };
   items[5] = {
     key: "uint32",
-    value: function uint32(byteLength) {
+    value: function uint32(NumberResult) {
       const self = this;
-      BinaryWriter(closure_1[2]).assertUInt32(byteLength);
-      let tmp2 = byteLength;
-      let tmp3 = byteLength;
-      if (byteLength > 127) {
+      BinaryWriter(outer1_1[2]).assertUInt32(NumberResult);
+      let tmp2 = NumberResult;
+      let tmp3 = NumberResult;
+      if (NumberResult > 127) {
         do {
           let buf = self.buf;
           let arr = buf.push(127 & tmp2 | 128);
@@ -146,9 +146,9 @@ const tmp2 = () => {
   items[6] = {
     key: "int32",
     value: function int32(NumberResult) {
-      BinaryWriter(closure_1[2]).assertInt32(NumberResult);
-      const obj = BinaryWriter(closure_1[2]);
-      BinaryWriter(closure_1[3]).varint32write(NumberResult, this.buf);
+      BinaryWriter(outer1_1[2]).assertInt32(NumberResult);
+      const obj = BinaryWriter(outer1_1[2]);
+      BinaryWriter(outer1_1[3]).varint32write(NumberResult, this.buf);
       return this;
     }
   };
@@ -183,7 +183,7 @@ const tmp2 = () => {
   items[10] = {
     key: "float",
     value: function float(NumberResult) {
-      BinaryWriter(closure_1[2]).assertFloat32(NumberResult);
+      BinaryWriter(outer1_1[2]).assertFloat32(NumberResult);
       const uint8Array = new Uint8Array(4);
       const dataView = new DataView(uint8Array.buffer);
       dataView.setFloat32(0, NumberResult, true);
@@ -202,7 +202,7 @@ const tmp2 = () => {
   items[12] = {
     key: "fixed32",
     value: function fixed32(NumberResult) {
-      BinaryWriter(closure_1[2]).assertUInt32(NumberResult);
+      BinaryWriter(outer1_1[2]).assertUInt32(NumberResult);
       const uint8Array = new Uint8Array(4);
       const dataView = new DataView(uint8Array.buffer);
       dataView.setUint32(0, NumberResult, true);
@@ -212,7 +212,7 @@ const tmp2 = () => {
   items[13] = {
     key: "sfixed32",
     value: function sfixed32(NumberResult) {
-      BinaryWriter(closure_1[2]).assertInt32(NumberResult);
+      BinaryWriter(outer1_1[2]).assertInt32(NumberResult);
       const uint8Array = new Uint8Array(4);
       const dataView = new DataView(uint8Array.buffer);
       dataView.setInt32(0, NumberResult, true);
@@ -222,11 +222,11 @@ const tmp2 = () => {
   items[14] = {
     key: "sint32",
     value: function sint32(NumberResult) {
-      BinaryWriter(closure_1[2]).assertInt32(NumberResult);
-      const obj = BinaryWriter(closure_1[2]);
+      BinaryWriter(outer1_1[2]).assertInt32(NumberResult);
+      const obj = BinaryWriter(outer1_1[2]);
       const tmp2 = NumberResult << 1;
       const tmp3 = NumberResult >> 31;
-      BinaryWriter(closure_1[3]).varint32write((tmp2 ^ tmp3) >>> 0, this.buf);
+      BinaryWriter(outer1_1[3]).varint32write((tmp2 ^ tmp3) >>> 0, this.buf);
       return this;
     }
   };
@@ -235,7 +235,7 @@ const tmp2 = () => {
     value: function sfixed64(arg0) {
       const uint8Array = new Uint8Array(8);
       const dataView = new DataView(uint8Array.buffer);
-      const PbLong = BinaryWriter(closure_1[4]).PbLong;
+      const PbLong = BinaryWriter(outer1_1[4]).PbLong;
       const fromResult = PbLong.from(arg0);
       dataView.setInt32(0, fromResult.lo, true);
       dataView.setInt32(4, fromResult.hi, true);
@@ -247,7 +247,7 @@ const tmp2 = () => {
     value: function fixed64(arg0) {
       const uint8Array = new Uint8Array(8);
       const dataView = new DataView(uint8Array.buffer);
-      const PbULong = BinaryWriter(closure_1[4]).PbULong;
+      const PbULong = BinaryWriter(outer1_1[4]).PbULong;
       const fromResult = PbULong.from(arg0);
       dataView.setInt32(0, fromResult.lo, true);
       dataView.setInt32(4, fromResult.hi, true);
@@ -257,32 +257,33 @@ const tmp2 = () => {
   items[17] = {
     key: "int64",
     value: function int64(arg0) {
-      const PbLong = BinaryWriter(closure_1[4]).PbLong;
+      const PbLong = BinaryWriter(outer1_1[4]).PbLong;
       const fromResult = PbLong.from(arg0);
-      BinaryWriter(closure_1[3]).varint64write(fromResult.lo, fromResult.hi, this.buf);
+      BinaryWriter(outer1_1[3]).varint64write(fromResult.lo, fromResult.hi, this.buf);
       return this;
     }
   };
   items[18] = {
     key: "sint64",
     value: function sint64(arg0) {
-      const PbLong = BinaryWriter(closure_1[4]).PbLong;
+      const PbLong = BinaryWriter(outer1_1[4]).PbLong;
       const fromResult = PbLong.from(arg0);
-      BinaryWriter(closure_1[3]).varint64write(fromResult.lo << 1 ^ fromResult.hi >> 31, (fromResult.hi << 1 | fromResult.lo >>> 31) ^ fromResult.hi >> 31, this.buf);
+      BinaryWriter(outer1_1[3]).varint64write(fromResult.lo << 1 ^ fromResult.hi >> 31, (fromResult.hi << 1 | fromResult.lo >>> 31) ^ fromResult.hi >> 31, this.buf);
       return this;
     }
   };
   items[19] = {
     key: "uint64",
     value: function uint64(arg0) {
-      const PbULong = BinaryWriter(closure_1[4]).PbULong;
+      const PbULong = BinaryWriter(outer1_1[4]).PbULong;
       const fromResult = PbULong.from(arg0);
-      BinaryWriter(closure_1[3]).varint64write(fromResult.lo, fromResult.hi, this.buf);
+      BinaryWriter(outer1_1[3]).varint64write(fromResult.lo, fromResult.hi, this.buf);
       return this;
     }
   };
-  return callback(BinaryWriter, items);
-}();
+  return _defineProperties(BinaryWriter, items);
+})();
+let closure_5 = tmp2;
 
 export const binaryWriteOptions = function binaryWriteOptions(arg0) {
   if (arg0) {

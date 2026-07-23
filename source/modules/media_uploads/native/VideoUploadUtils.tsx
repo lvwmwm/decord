@@ -1,10 +1,15 @@
-// Module ID: 4694
-// Function ID: 40896
+// Module ID: 4697
+// Function ID: 40914
 // Name: calculateTargetDimensions
-// Dependencies: []
+// Dependencies: [6, 7, 1280, 3, 2]
 // Exports: calculateOptimalBitrate, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC
 
-// Module 4694 (calculateTargetDimensions)
+// Module 4697 (calculateTargetDimensions)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import { VideoCompressionQuality } from "_isNativeReflectConstruct";
+import importDefaultResult from "timestamp";
+
 function calculateTargetDimensions(videoMetadata, targetResolution) {
   const result = videoMetadata.width / videoMetadata.height;
   if (videoMetadata.width > videoMetadata.height) {
@@ -33,15 +38,11 @@ function calculateTargetDimensions(videoMetadata, targetResolution) {
   obj.height = sum1;
   return obj;
 }
-let closure_1 = importDefault(dependencyMap[0]);
-let closure_2 = importDefault(dependencyMap[1]);
-const VideoCompressionQuality = arg1(dependencyMap[2]).VideoCompressionQuality;
-let importDefaultResult = importDefault(dependencyMap[3]);
 importDefaultResult = new importDefaultResult("VideoUploadUtils.tsx");
-let tmp4 = () => {
+let tmp4 = (() => {
   class VideoQualityTarget {
     constructor(arg0, arg1, arg2) {
-      tmp = closure_1(this, VideoQualityTarget);
+      tmp = outer1_1(this, VideoQualityTarget);
       this.value = arg0;
       this.targetResolution = arg1;
       this.targetBitrate = arg2;
@@ -57,7 +58,8 @@ let tmp4 = () => {
     }
   ];
   return callback(VideoQualityTarget, items);
-}();
+})();
+let closure_0 = tmp4;
 tmp4 = new tmp4("very_low", 360, 800000);
 tmp4.VERY_LOW = tmp4;
 tmp4 = new tmp4("low", 360, 1200000);
@@ -86,9 +88,9 @@ tmp4.fromCompressionQuality = (arg0) => {
   }
   return VERY_HIGH;
 };
-const obj = { targetBitrate: tmp4.MEDIUM.targetBitrate, videoQuality: tmp4.MEDIUM };
+let obj = { bitrateFloor: 300000, createHDR: false, frameRate: 30, keyFrameIntervalSeconds: 2, rotationDegrees: 0, skipVideoTranscode: false, targetBitrate: tmp4.MEDIUM.targetBitrate, targetHeight: 480, targetWidth: 640, useHEVC: false, videoQuality: tmp4.MEDIUM, hevcIsSupported: false, useTranscodedVideoForMovSources: true, transmuxLivePhotos: true, progressUpdateGranularity: 10 };
 const tmp43 = new tmp4("very_high", 1080, 7000000);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/media_uploads/native/VideoUploadUtils.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_uploads/native/VideoUploadUtils.tsx");
 
 export const VideoQualityTarget = tmp4;
 export const DEFAULT_VIDEO_ENCODING_CONFIG = obj;
@@ -119,7 +121,7 @@ export const canSkipVideoTranscode = function canSkipVideoTranscode(result, vide
 export const logSourceMetadata = function logSourceMetadata(format) {
   let str = "unknown";
   if (null != format.format) {
-    format = {}[format.format];
+    format = { hvc1: "hvc1 (HEVC)", avc1: "avc1 (H.264)" }[format.format];
     if (null == format) {
       format = format.format;
     }

@@ -1,51 +1,55 @@
-// Module ID: 15153
-// Function ID: 114318
+// Module ID: 15268
+// Function ID: 116487
 // Name: TruncatedText
-// Dependencies: []
+// Dependencies: [57, 31, 27, 3781, 33, 4130, 689, 4126, 1212, 4660, 1273, 15269, 8002, 14116, 624, 8003, 5618, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15153 (TruncatedText)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-({ TouchableOpacity: closure_6, View: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { 9223372036854775807: "start_time", 0: "message", -9223372036854775808: "absolute", 0: "10%", borderColor: importDefault(dependencyMap[6]).colors.TEXT_DEFAULT };
-obj.toggleTruncateButton = obj;
-const obj1 = { -9223372036854775808: 24, 0: 24, 0: null, -9223372036854775808: "119c03ecfe749b5d0f4e60c612bb714f", borderRadius: importDefault(dependencyMap[6]).radii.sm, backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_MOD_MUTED };
-obj.arrowButton = obj1;
-obj.arrowButtonText = { nestedScrollEnabled: "<string:2491613185>", scrollEventThrottle: "<string:2941583362>" };
-const tmp3 = arg1(dependencyMap[4]);
-obj.arrowButtonIcon = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
-let closure_11 = obj.createStyles(obj);
-const obj2 = { tintColor: importDefault(dependencyMap[6]).colors.INTERACTIVE_TEXT_ACTIVE };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/Elements.tsx");
+// Module 15268 (TruncatedText)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_9;
+const require = arg1;
+({ TouchableOpacity: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignSelf: "flex-start", borderBottomWidth: 0.8, borderColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, marginTop: 2 };
+_createForOfIteratorHelperLoose.toggleTruncateButton = _createForOfIteratorHelperLoose;
+let obj1 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
+_createForOfIteratorHelperLoose.arrowButton = obj1;
+_createForOfIteratorHelperLoose.arrowButtonText = { flexGrow: 1, flexShrink: 1 };
+_createForOfIteratorHelperLoose.arrowButtonIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/Elements.tsx");
 
 export const TruncatedText = function TruncatedText(lineClamp) {
   let num = lineClamp.lineClamp;
   if (num === undefined) {
     num = 8;
   }
-  const arg1 = num;
   let obj = Object.create(null);
   obj.lineClamp = 0;
   const merged = Object.assign(lineClamp, obj);
   let closure_1;
-  let importAll;
-  let closure_3;
-  let callback2;
-  const tmp4 = callback2(React.useState(false), 2);
+  let first1;
+  let dependencyMap;
+  let callback;
+  const tmp4 = callback(React.useState(false), 2);
   const first = tmp4[0];
   let num2 = 1;
   closure_1 = tmp4[1];
-  const tmp6 = callback2(React.useState(false), 2);
-  const first1 = tmp6[0];
-  importAll = first1;
-  closure_3 = tmp6[1];
-  callback2 = React.useRef(false);
+  const tmp6 = callback(React.useState(false), 2);
+  first1 = tmp6[0];
+  dependencyMap = tmp6[1];
+  callback = React.useRef(false);
   if (!first1) {
     obj = {
       onPress() {
@@ -76,23 +80,23 @@ export const TruncatedText = function TruncatedText(lineClamp) {
         callback2(nativeEvent.nativeEvent.lines.length > num);
       }
     };
-    const items = [closure_9(arg1(closure_3[7]).Text, obj1), first1];
+    const items = [closure_9(num(4126).Text, obj1), first1];
     obj.children = items;
     return closure_10(closure_6, obj);
   } else {
     obj = { style: tmp3.toggleTruncateButton };
-    let obj2 = {};
-    const intl = arg1(closure_3[8]).intl;
+    let obj2 = { variant: "text-sm/medium", color: "text-default" };
+    const intl = num(1212).intl;
     const string = intl.string;
-    JQX/Pb = arg1(closure_3[8]).t;
+    JQX_Pb = num(1212).t;
     if (first) {
-      JQX/Pb = JQX_Pb.JQX/Pb;
+      JQX_Pb = JQX_Pb["JQX/Pb"];
       let stringResult = string(JQX_Pb);
     } else {
       stringResult = string(JQX_Pb.Fbrd8J);
     }
     obj2.children = stringResult;
-    obj2 = tmp8(arg1(closure_3[7]).Text, obj2);
+    obj2 = tmp8(num(4126).Text, obj2);
     obj.children = obj2;
     closure_9(closure_7, obj);
     const tmp9 = closure_7;
@@ -102,27 +106,27 @@ export const ArrowButton = function ArrowButton(arg0) {
   let onPress;
   let text;
   ({ text, onPress } = arg0);
-  const tmp = callback5();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress };
-  obj = { cachedAt: null, edpbxy: "Array", style: tmp.arrowButtonText, children: text };
-  const items = [callback3(arg1(dependencyMap[7]).Text, obj), ];
-  obj = { size: arg1(dependencyMap[10]).Icon.Sizes.SMALL, source: importDefault(dependencyMap[11]), style: tmp.arrowButtonIcon };
-  items[1] = callback3(arg1(dependencyMap[10]).Icon, obj);
+  obj = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
+  const items = [callback2(require(4126) /* Text */.Text, obj), ];
+  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, source: importDefault(15269), style: tmp.arrowButtonIcon };
+  items[1] = callback2(require(1273) /* Button */.Icon, obj);
   obj.children = items;
-  return callback4(arg1(dependencyMap[9]).PressableOpacity, obj);
+  return callback3(require(4660) /* PressableBase */.PressableOpacity, obj);
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
-  const obj = importDefault(dependencyMap[12]);
-  const callback = callback2(importAll(dependencyMap[13]).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(dependencyMap[13]);
-  const items = [closure_8];
-  const stateFromStores = callback(dependencyMap[14]).useStateFromStores(items, () => closure_8.get(id.id));
-  const price = importDefault(dependencyMap[15])(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
+  const obj = importDefault(8002);
+  const _require = callback(importAll(14116).useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = importAll(14116);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_8.get(id.id));
+  const price = importDefault(8003)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    str = "" + callback(dependencyMap[16]).formatPrice(price.amount, price.currency) + "/mo.";
-    const obj4 = callback(dependencyMap[16]);
+    str = "" + _require(5618).formatPrice(price.amount, price.currency) + "/mo.";
+    const obj4 = _require(5618);
   }
   return str;
 };

@@ -1,10 +1,16 @@
-// Module ID: 9143
-// Function ID: 71684
+// Module ID: 9150
+// Function ID: 71725
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 // Exports: setInitialVerification
 
-// Module 9143 (_isNativeReflectConstruct)
+// Module 9150 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,25 +20,20 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 const map = new Map();
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class InitialMemberVerificationStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, InitialMemberVerificationStore);
-      obj = closure_5(InitialMemberVerificationStore);
-      tmp2 = closure_4;
-      if (closure_8()) {
+      tmp = outer1_2(this, InitialMemberVerificationStore);
+      obj = outer1_5(InitialMemberVerificationStore);
+      tmp2 = outer1_4;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -41,7 +42,6 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = InitialMemberVerificationStore;
   callback2(InitialMemberVerificationStore, Store);
   const items = [
     {
@@ -49,7 +49,7 @@ let tmp3 = (Store) => {
       value(arg0) {
         let tmp = null;
         if (null != arg0) {
-          const value = closure_7.get(arg0);
+          const value = outer1_7.get(arg0);
           let tmp4 = null;
           if (null != value) {
             tmp4 = value;
@@ -61,9 +61,9 @@ let tmp3 = (Store) => {
     }
   ];
   return callback(InitialMemberVerificationStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "InitialMemberVerificationStore";
-tmp3 = new tmp3(importDefault(dependencyMap[6]), {
+tmp3 = new tmp3(require("dispatcher"), {
   SET_INITIAL_MEMBER_VERIFICATION: function handleSetInitialState(guildId) {
     guildId = guildId.guildId;
     if (!map.has(guildId)) {
@@ -71,11 +71,11 @@ tmp3 = new tmp3(importDefault(dependencyMap[6]), {
     }
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_member_verification/native/InitialMemberVerificationStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_member_verification/native/InitialMemberVerificationStore.tsx");
 
 export default tmp3;
 export const setInitialVerification = function setInitialVerification(guildId, state) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "SET_INITIAL_MEMBER_VERIFICATION", guildId, state };
   obj.dispatch(obj);
 };

@@ -1,115 +1,119 @@
-// Module ID: 10344
-// Function ID: 79848
+// Module ID: 10354
+// Function ID: 79898
 // Name: NotificationAvatar
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 1838, 10237, 653, 33, 4130, 1273, 4094, 689, 10236, 10309, 566, 669, 10313, 10254, 10255, 3808, 44, 1212, 4337, 9914, 9533, 675, 10310, 2]
 
-// Module 10344 (NotificationAvatar)
+// Module 10354 (NotificationAvatar)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import set from "set";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "_isNativeReflectConstruct";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_7;
+let closure_8;
+const require = arg1;
 function NotificationAvatar(arg0) {
   let guildId;
   let user;
   ({ user, guildId } = arg0);
   const tmp = callback3();
   let obj = { style: tmp.avatarContainer };
-  obj = { user, guildId, size: arg1(dependencyMap[8]).AvatarSizes.NORMAL };
+  obj = { user, guildId, size: require(1273) /* Button */.AvatarSizes.NORMAL };
   obj.cutout = obj;
-  const items = [callback(arg1(dependencyMap[8]).Avatar, obj), ];
+  const items = [callback(require(1273) /* Button */.Avatar, obj), ];
   obj = { style: tmp.cutoutIconContainer };
-  const obj1 = { size: "xs", color: importDefault(dependencyMap[10]).colors.ICON_SUBTLE };
-  obj.children = callback(arg1(dependencyMap[9]).ClockIcon, obj1);
+  const obj1 = { size: "xs", color: importDefault(689).colors.ICON_SUBTLE };
+  obj.children = callback(require(4094) /* ClockIcon */.ClockIcon, obj1);
   items[1] = callback(View, obj);
   obj.children = items;
   return callback2(View, obj);
 }
 function NotificationBody(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   const message = channel.message;
-  let obj = arg1(dependencyMap[13]);
+  let obj = channel(566);
   const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(channel.guild_id));
-  let obj1 = arg1(dependencyMap[13]);
-  const items1 = [closure_5];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => channel.getChannel(channel.parent_id));
-  let obj2 = arg1(dependencyMap[11]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(channel.guild_id));
+  let obj1 = channel(566);
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_5.getChannel(channel.parent_id));
+  let obj2 = channel(10236);
   const hasPreviewableMedia = obj2.useHasPreviewableMedia(message);
-  const tmp4 = channel.type === arg1(dependencyMap[14]).ChannelTypes.DM;
+  const tmp4 = channel.type === channel(669).ChannelTypes.DM;
   let num = 1;
   if (tmp4) {
     num = closure_8;
   }
   obj = {};
   let tmp8 = null;
-  const messagePreviewTextVariant = arg1(dependencyMap[11]).getMessagePreviewTextVariant();
+  const messagePreviewTextVariant = channel(10236).getMessagePreviewTextVariant();
   if (!tmp4) {
     obj = { channel, parentChannel: stateFromStores1, guild: stateFromStores, author: null };
-    tmp8 = callback(importDefault(dependencyMap[15]), obj);
+    tmp8 = callback(importDefault(10313), obj);
   }
   const items2 = [tmp8, ];
   if (!hasPreviewableMedia) {
     if (null == message.poll) {
-      obj1 = { channel, message, color: "text-default", layout: arg1(dependencyMap[18]).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
-      let tmp15 = callback(arg1(dependencyMap[17]).ChannelRowPreview, obj1);
+      obj1 = { channel, message, color: "text-default", layout: channel(3808).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
+      let tmp15 = callback(channel(10255).ChannelRowPreview, obj1);
     }
     items2[1] = tmp15;
     obj.children = items2;
     return closure_11(closure_12, obj);
   }
   obj2 = { message, lineClamp: num, showMessageAuthor: true, maxHeight: closure_7 };
-  tmp15 = callback(importDefault(dependencyMap[16]), obj2);
+  tmp15 = callback(importDefault(10254), obj2);
 }
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[4]);
-({ IN_APP_NOTIFICATION_MAX_HEIGHT: closure_7, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_8 } = tmp2);
-const AnalyticEvents = arg1(dependencyMap[5]).AnalyticEvents;
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
-const tmp3 = arg1(dependencyMap[6]);
-let closure_13 = arg1(dependencyMap[7]).createStyles({ cutoutIconContainer: {}, avatarContainer: { position: "relative" }, rightAccessoryContainer: { marginLeft: tmp2.RIGHT_ACCESSORY_LEFT_MARGIN } });
-const obj = { broadcastStatus: "/assets/images/channel_following", broadcastType: 400, damping: 96, direction: arg1(dependencyMap[8]).CutoutDirection.BOTTOM_RIGHT };
+({ IN_APP_NOTIFICATION_MAX_HEIGHT: closure_7, NOTIFICATION_PREVIEW_LINE_CLAMP: closure_8 } = set);
+({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
+let closure_13 = _createForOfIteratorHelperLoose.createStyles({ cutoutIconContainer: { position: "absolute", right: 0, bottom: 0 }, avatarContainer: { position: "relative" }, rightAccessoryContainer: { marginLeft: set.RIGHT_ACCESSORY_LEFT_MARGIN } });
+let obj = { direction: require("Button").CutoutDirection.BOTTOM_RIGHT, radius: 10, inset: -2 };
 let closure_15 = importAllResult.memo((message) => {
   message = message.message;
-  let obj = arg1(dependencyMap[11]);
+  let obj = require(10236) /* hasMedia */;
   let tmp2 = null;
   if (obj.useHasPreviewableMedia(message)) {
     obj = { style: tmp.rightAccessoryContainer };
     obj = { message };
-    obj.children = callback(arg1(dependencyMap[12]).MediaPreviewRightAccessory, obj);
+    obj.children = callback(require(10309) /* VideoBadge */.MediaPreviewRightAccessory, obj);
     tmp2 = callback(View, obj);
   }
   return tmp2;
 });
-const obj2 = arg1(dependencyMap[7]);
-const memoResult = importAllResult.memo(function ReminderNotification(notification) {
+const result = set.fileFinishedImporting("modules/in_app_notifications/native/ReminderNotification.tsx");
+
+export default importAllResult.memo(function ReminderNotification(notification) {
   notification = notification.notification;
-  const arg1 = notification;
   const channel = notification.channel;
   const message = notification.savedMessage.message;
-  importDefault(dependencyMap[19])(null != message, "Message in a notification should not be null.");
+  importDefault(44)(null != message, "Message in a notification should not be null.");
   let obj = { user: notification.author, guildId: channel.guild_id };
   const items = [notification];
   const memo = importAllResult.useMemo(() => {
     const obj = { type: "simple" };
-    const intl = notification(closure_2[20]).intl;
-    obj.text = intl.string(notification(closure_2[20]).t.Whs8tE);
+    const intl = notification(outer1_2[20]).intl;
+    obj.text = intl.string(notification(outer1_2[20]).t.Whs8tE);
     return obj;
   }, []);
   const callback = importAllResult.useCallback(() => {
     let author;
     let savedMessage;
-    let obj = callback(paths[21]);
+    let obj = outer1_1(outer1_2[21]);
     obj.popAll();
-    obj = { presentation: "modal" };
-    callback(paths[21]).pushLazy(notification(paths[23])(paths[22], paths.paths), {}, "for-later-modal", obj);
+    notification(outer1_2[22]).showForLaterModal(notification(outer1_2[23]).SavedMessageSortTypes.REMINDER);
     ({ savedMessage, author } = notification);
-    const obj2 = callback(paths[21]);
+    const obj2 = notification(outer1_2[22]);
     obj = { message_id: savedMessage.saveData.messageId, message_author_id: author.id, notification_type: "IN_APP" };
-    callback(paths[24]).track(constants.FOR_LATER_REMINDER_NOTIFICATION_CLICKED, obj);
+    outer1_1(outer1_2[24]).track(outer1_9.FOR_LATER_REMINDER_NOTIFICATION_CLICKED, obj);
   }, items);
   obj = { icon: callback(NotificationAvatar, obj), header: memo, onPress: callback, notification, rightAccessory: callback(closure_15, { message }), children: callback(NotificationBody, { channel, message }) };
-  return callback(arg1(dependencyMap[25]).NotificationPressable, obj);
+  return callback(notification(10310).NotificationPressable, obj);
 });
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/in_app_notifications/native/ReminderNotification.tsx");
-
-export default memoResult;

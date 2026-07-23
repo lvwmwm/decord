@@ -1,72 +1,74 @@
-// Module ID: 13503
-// Function ID: 102447
+// Module ID: 13617
+// Function ID: 104603
 // Name: GuildSelectComponentActionSheet
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1838, 4970, 33, 4130, 4359, 1212, 4098, 10967, 5515, 4319, 1273, 4126, 4974, 2]
 // Exports: default
 
-// Module 13503 (GuildSelectComponentActionSheet)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ guildIdentity: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/interaction_components/native/components/GuildSelectComponentActionSheet.tsx");
+// Module 13617 (GuildSelectComponentActionSheet)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import closure_6 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ guildIdentity: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/interaction_components/native/components/GuildSelectComponentActionSheet.tsx");
 
 export default function GuildSelectComponentActionSheet(arg0) {
+  let importDefault;
+  let require;
   let selectedGuild;
-  ({ selectedGuild, onSelectGuild: closure_0, user: closure_1 } = arg0);
-  let closure_6;
+  ({ selectedGuild, onSelectGuild: require, user: importDefault } = arg0);
+  let callback;
   function submitSelection() {
-    return lib(tmp[9]).hideActionSheet();
+    return outer1_1(tmp[9]).hideActionSheet();
   }
-  let closure_7 = submitSelection;
-  const tmp = callback3();
+  let tmp = callback2();
   const dependencyMap = tmp;
-  const tmp2 = callback(React.useState(""), 2);
-  const first = tmp2[0];
-  let callback = first;
-  let obj = { type: arg1(dependencyMap[7]).SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild };
-  const tmp4 = callback(React.useState(obj), 2);
-  const first1 = tmp4[0];
-  const React = first1;
+  const tmp2 = first(first1.useState(""), 2);
+  first = tmp2[0];
+  let obj = { type: require(4359) /* ActionComponentState */.SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild };
+  const tmp4 = first(first1.useState(obj), 2);
+  first1 = tmp4[0];
   let closure_5 = tmp4[1];
   if (null != first1) {
-    const items = [first1];
+    let items = [first1];
     let items1 = items;
   } else {
     items1 = [];
   }
-  obj = { 1646736977: "<string:2491613185>", 1986177878: "<string:2941583362>" };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.placeholder = intl.string(arg1(dependencyMap[8]).t.ZImm/x);
-  callback = React.useCallback((query) => function queryGuilds(query) {
+  obj = { maxValues: 1, minValues: 1 };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.placeholder = intl.string(require(1212) /* getSystemLocale */.t["ZImm/x"]);
+  callback = first1.useCallback((query) => (function queryGuilds(query) {
     function guildRecordToGuildSearchableSelectOption(id) {
-      return { type: guildRecordToGuildSearchableSelectOption(closure_2[7]).SelectOptionType.GUILD, value: id.id, label: id.name, guild: id };
+      return { type: outer3_0(table[7]).SelectOptionType.GUILD, value: id.id, label: id.name, guild: id };
     }
     if (0 === query.length) {
-      const flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
+      const flattenedGuildIds = submitSelection.getFlattenedGuildIds();
       const _Array = Array;
       const array = new Array();
       return flattenedGuildIds.reduce((arr, guildId) => {
-        const guild = guild.getGuild(guildId);
+        const guild = callback.getGuild(guildId);
         if (null != guild) {
           arr.push(guildRecordToGuildSearchableSelectOption(guild));
         }
         return arr;
       }, array);
     } else {
-      let obj = callback(closure_2[15]);
+      let obj = outer2_1(table[15]);
       obj = { query };
       return obj.queryGuilds(obj).map((record) => guildRecordToGuildSearchableSelectOption(record.record));
     }
-  }(query), []);
-  closure_6 = callback;
+  })(query), []);
   const items2 = [first, callback];
-  const memo = React.useMemo(() => callback(first), items2);
+  const memo = first1.useMemo(() => callback(first), items2);
   obj = {
     onPressOptionItem(arg0, guild) {
       callback(guild.guild);
@@ -77,35 +79,35 @@ export default function GuildSelectComponentActionSheet(arg0) {
       callback2(null);
     },
     renderIcon(guild) {
-      return callback3(lib(tmp[11]), { guild: guild.guild });
+      return outer1_8(outer1_1(tmp[11]), { guild: guild.guild });
     },
     renderHeaderIcon(guild) {
       const obj = {};
-      const tmp = lib(tmp[11]);
-      obj.size = callback(tmp[11]).GuildIconSizes.XSMALL;
+      tmp = outer1_1(tmp[11]);
+      obj.size = outer1_0(tmp[11]).GuildIconSizes.XSMALL;
       obj.guild = guild.guild;
-      return callback3(tmp, obj);
+      return outer1_8(tmp, obj);
     },
     iconContainerStyle: tmp.iconContainer,
     renderDescription(guild) {
-      const hasAvatarForGuildResult = lib.hasAvatarForGuild(guild.guild.id);
-      let obj = lib(tmp[12]);
-      let username = obj.getNickname(guild.guild.id, undefined, lib);
+      const hasAvatarForGuildResult = closure_1.hasAvatarForGuild(guild.guild.id);
+      let obj = outer1_1(tmp[12]);
+      let username = obj.getNickname(guild.guild.id, undefined, closure_1);
       obj = { style: tmp.guildIdentity };
       let tmp5 = hasAvatarForGuildResult;
       if (hasAvatarForGuildResult) {
-        obj = { size: callback(tmp[13]).AvatarSizes.SIZE_16, style: tmp.avatar, user: lib, guildId: guild.guild.id, animate: true };
-        tmp5 = callback3(callback(tmp[13]).Avatar, obj);
+        obj = { size: outer1_0(tmp[13]).AvatarSizes.SIZE_16, style: tmp.avatar, user: closure_1, guildId: guild.guild.id, animate: true };
+        tmp5 = outer1_8(outer1_0(tmp[13]).Avatar, obj);
       }
       const items = [tmp5, ];
-      const obj1 = {};
+      const obj1 = { variant: "text-sm/medium", color: "text-default" };
       if (null == username) {
-        username = lib.username;
+        username = closure_1.username;
       }
       obj1.children = username;
-      items[1] = callback3(callback(tmp[14]).Text, obj1);
+      items[1] = outer1_8(outer1_0(tmp[14]).Text, obj1);
       obj.children = items;
-      return closure_9(closure_5, obj);
+      return outer1_9(closure_5, obj);
     },
     selectionActionComponent: obj,
     options: memo,
@@ -126,5 +128,5 @@ export default function GuildSelectComponentActionSheet(arg0) {
     allowEmpty: false,
     expanded: true
   };
-  return callback2(importDefault(dependencyMap[10]), obj);
+  return callback(importDefault(10967), obj);
 };

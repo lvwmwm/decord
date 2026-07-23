@@ -1,10 +1,12 @@
-// Module ID: 11445
-// Function ID: 89129
+// Module ID: 11455
+// Function ID: 89179
 // Name: calculatePositionDeltas
-// Dependencies: []
+// Dependencies: [3, 22, 2]
 // Exports: getPositionUpdates
 
-// Module 11445 (calculatePositionDeltas)
+// Module 11455 (calculatePositionDeltas)
+import importDefaultResult from "timestamp";
+
 function calculatePositionDeltas(arg0) {
   let ascending;
   let existingPositionGetter;
@@ -54,10 +56,10 @@ function calculatePositionDeltas(arg0) {
     }
   }
 }
-function moveItemFromTo(closure_13, closure_2, to) {
-  const items = [...closure_13];
+function moveItemFromTo(c14, closure_2, to) {
+  const items = [...c14];
   items.splice(closure_2, 1);
-  items.splice(to, 0, closure_13[closure_2]);
+  items.splice(to, 0, c14[closure_2]);
   return items;
 }
 function getPositionUpdates(arg0) {
@@ -74,15 +76,14 @@ function getPositionUpdates(arg0) {
   }
   let values = objectArray;
   if (!Array.isArray(objectArray)) {
-    let obj = importDefault(dependencyMap[1]);
+    let obj = importDefault(22);
     values = obj.values(objectArray);
   }
   obj = { oldOrdering: values, newOrdering: moveItemFromTo(values, fromPosition, toPosition), idGetter, existingPositionGetter, ascending };
   return calculatePositionDeltas(obj);
 }
-let importDefaultResult = importDefault(dependencyMap[0]);
 importDefaultResult = new importDefaultResult("DragAndDropUtils");
-const result = arg1(dependencyMap[2]).fileFinishedImporting("utils/DragAndDropUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/DragAndDropUtils.tsx");
 
 export default { moveItemFromTo, calculatePositionDeltas, getPositionUpdates };
 export { calculatePositionDeltas };

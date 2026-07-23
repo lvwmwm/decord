@@ -1,9 +1,11 @@
 // Module ID: 1108
-// Function ID: 12641
+// Function ID: 12642
 // Name: parseContentLengthHeader
-// Dependencies: []
+// Dependencies: [980]
 
 // Module 1108 (parseContentLengthHeader)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.parseContentLengthHeader = function parseContentLengthHeader(replaced) {
   if (replaced) {
     const _parseInt = parseInt;
@@ -20,18 +22,18 @@ arg5.getBodySize = function getBodySize(arg0) {
   let str = arg0;
   if (arg0) {
     if ("string" === typeof str) {
-      return arg1(arg6[0]).encodeUTF8(arg0).length;
+      return require(980) /* encodeUTF8 */.encodeUTF8(arg0).length;
     } else {
       const _URLSearchParams2 = URLSearchParams;
       if (str instanceof URLSearchParams) {
-        return arg1(arg6[0]).encodeUTF8(str.toString()).length;
+        return require(980) /* encodeUTF8 */.encodeUTF8(str.toString()).length;
       } else {
         const _FormData = FormData;
         if (str instanceof FormData) {
           const _URLSearchParams = URLSearchParams;
           const str3 = new URLSearchParams(tmp3);
           str = str3.toString();
-          return arg1(arg6[0]).encodeUTF8(str).length;
+          return require(980) /* encodeUTF8 */.encodeUTF8(str).length;
         } else {
           const _Blob = Blob;
           if (str instanceof Blob) {

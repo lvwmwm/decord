@@ -1,53 +1,73 @@
-// Module ID: 11427
-// Function ID: 88930
+// Module ID: 11437
+// Function ID: 88980
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4566, 11438, 9558, 653, 33, 11439, 4130, 689, 4549, 11440, 8189, 1881, 7928, 3843, 1212, 4324, 22, 11441, 6755, 11442, 11443, 1273, 9634, 2]
 // Exports: default
 
-// Module 11427 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11437 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
+import { ITEM_HEIGHT } from "ICON_SIZE";
+import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +78,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,134 +104,125 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-({ View: closure_6, SectionList: closure_7 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ BuiltInSectionId: closure_8, DISCOVERY_COMMANDS_QUERY_LIMIT: closure_9 } = arg1(dependencyMap[3]));
-const ITEM_HEIGHT = arg1(dependencyMap[4]).ITEM_HEIGHT;
-const AUTOCOMPLETE_ROW_HEIGHT = arg1(dependencyMap[5]).AUTOCOMPLETE_ROW_HEIGHT;
-const tmp3 = arg1(dependencyMap[3]);
-({ AnalyticEvents: closure_12, SectionListElementType: closure_13 } = arg1(dependencyMap[6]));
-const tmp4 = arg1(dependencyMap[6]);
-({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[9]);
-obj = { discoveryWrapper: { flex: 1 }, noCommandsImage: {}, noCommandsContainer: {} };
-obj = { backgroundColor: importDefault(dependencyMap[10]).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
-obj.commandsList = obj;
-let closure_17 = obj.createStyles(obj);
-const tmp5 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/application_commands/native/ApplicationCommandDiscovery.tsx");
+({ View: closure_6, SectionList: closure_7 } = get_ActivityIndicator);
+({ BuiltInSectionId: closure_8, DISCOVERY_COMMANDS_QUERY_LIMIT: closure_9 } = TRUE_OPTION_NAME);
+({ AnalyticEvents: closure_12, SectionListElementType: closure_13 } = ME);
+({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
+_createForOfIteratorHelperLoose = { discoveryWrapper: { flex: 1 }, noCommandsImage: { height: 50, width: 50, marginBottom: 16 }, noCommandsContainer: { padding: 0, height: 100 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+_createForOfIteratorHelperLoose.commandsList = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/application_commands/native/ApplicationCommandDiscovery.tsx");
 
 export default function ApplicationCommandDiscovery(channel) {
+  let c11;
+  let c13;
+  let c15;
   let commandsByActiveSection;
   let filterSection;
   let filteredSectionId;
   let onHeightChange;
-  ({ onPressSlashItem: closure_0, onHeightChange } = channel);
-  const importDefault = onHeightChange;
+  let require;
+  ({ onPressSlashItem: require, onHeightChange } = channel);
   channel = channel.channel;
-  const importAll = channel;
   const canOnlyUseTextCommands = channel.canOnlyUseTextCommands;
-  let ITEM_HEIGHT;
-  let closure_11;
+  let sectionDescriptors;
+  c11 = undefined;
   commandsByActiveSection = undefined;
-  let closure_13;
+  c13 = undefined;
   filteredSectionId = undefined;
-  let closure_15;
+  c15 = undefined;
   filterSection = undefined;
-  let callback2;
-  let _createForOfIteratorHelperLoose;
+  let callback;
+  let memo;
   let closure_19;
-  const tmp = callback2();
+  let tmp = callback();
   const dependencyMap = tmp;
-  let obj = arg1(dependencyMap[11]);
-  const bound = Math.max(obj.useFontScale() * closure_11, closure_11);
-  let callback = bound;
-  const ref = React.useRef(null);
-  const React = ref;
-  const tmp4 = callback(React.useState(0), 2);
+  let obj = require(4549) /* getFontScale */;
+  const bound = Math.max(obj.useFontScale() * c11, c11);
+  ref = ref.useRef(null);
+  const tmp4 = bound(ref.useState(0), 2);
   const first = tmp4[0];
-  const tmp6 = tmp4[1];
-  let closure_8 = React.useRef(false);
-  let obj1 = arg1(dependencyMap[12]);
+  let closure_7 = tmp6;
+  let closure_8 = ref.useRef(false);
+  let obj1 = require(11440) /* useCommandDiscoveryManager */;
   const commandDiscoveryManager = obj1.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let obj2 = importAll(dependencyMap[13]);
+  let obj2 = channel(8189);
   obj = { context: { channel, type: "channel" } };
   obj = {};
-  const items = [arg1(dependencyMap[14]).ApplicationCommandType.CHAT];
+  let items = [require(1881) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];
   obj.commandTypes = items;
-  const BuiltInCommandFilter = arg1(dependencyMap[15]).BuiltInCommandFilter;
+  const BuiltInCommandFilter = require(7928) /* ScoreMethod */.BuiltInCommandFilter;
   obj.builtIns = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   obj.applicationCommands = !canOnlyUseTextCommands;
   obj.filters = obj;
-  obj1 = { justifyContent: null, sk: null, radii: null, limit: commandDiscoveryManager };
+  obj1 = { placeholderCount: 3, limit: commandDiscoveryManager, includeFrecency: true };
   obj.options = obj1;
   obj.allowFetch = true;
   const discovery = obj2.useDiscovery(obj);
-  const sectionDescriptors = discovery.sectionDescriptors;
-  ITEM_HEIGHT = sectionDescriptors;
-  ({ activeSections: closure_11, commandsByActiveSection } = discovery);
-  ({ hasMoreAfter: closure_13, filteredSectionId } = discovery);
-  ({ scrollDown: closure_15, filterSection } = discovery);
-  const items1 = [filterSection, commandDiscoveryManager, tmp6, sectionDescriptors];
-  const effect = React.useEffect(() => {
+  sectionDescriptors = discovery.sectionDescriptors;
+  ({ activeSections: c11, commandsByActiveSection } = discovery);
+  ({ hasMoreAfter: c13, filteredSectionId } = discovery);
+  ({ scrollDown: c15, filterSection } = discovery);
+  const items1 = [filterSection, commandDiscoveryManager, tmp4[1], sectionDescriptors];
+  const effect = ref.useEffect(() => {
     if (null != commandDiscoveryManager) {
       filterSection(commandDiscoveryManager);
-      const findIndexResult = sectionDescriptors.findIndex((id) => id.id === closure_9);
+      const findIndexResult = sectionDescriptors.findIndex((id) => id.id === outer1_9);
       let num2 = 0;
       if (-1 !== findIndexResult) {
         num2 = findIndexResult;
       }
-      tmp6(num2);
+      closure_7(num2);
+      const tmp6 = closure_7;
     }
   }, items1);
-  const effect1 = React.useEffect(() => {
-    const AccessibilityAnnouncer = callback(tmp[16]).AccessibilityAnnouncer;
-    const intl = callback(tmp[17]).intl;
-    AccessibilityAnnouncer.announce(intl.string(callback(tmp[17]).t.2wfLMm));
-    callback(tmp[18]).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_OPENED);
+  const effect1 = ref.useEffect(() => {
+    const AccessibilityAnnouncer = outer1_0(tmp[16]).AccessibilityAnnouncer;
+    const intl = outer1_0(tmp[17]).intl;
+    AccessibilityAnnouncer.announce(intl.string(outer1_0(tmp[17]).t["2wfLMm"]));
+    outer1_0(tmp[18]).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_OPENED);
     return () => {
-      const result = callback(closure_3[12]).updateInitialSectionId(undefined);
+      const result = outer2_0(table[12]).updateInitialSectionId(undefined);
     };
   }, []);
   const items2 = [commandsByActiveSection, onHeightChange, bound];
-  const effect2 = React.useEffect(() => {
+  const effect2 = ref.useEffect(() => {
     if (null != onHeightChange) {
-      onHeightChange(function heightForSections(commandsByActiveSection, bound) {
+      onHeightChange((function heightForSections(commandsByActiveSection, bound) {
+        let closure_0 = bound;
         let num = 0;
         if (0 !== commandsByActiveSection.length) {
           num = commandsByActiveSection.reduce((arg0, data) => {
             if (0 === data.data.length) {
-              let sum = data(closure_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + 160;
+              let sum = outer3_0(11439).APPLICATION_SECTION_HEADER_HEIGHT + 160;
             } else {
-              sum = arg0 + (data(closure_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + (data + closure_10) * data.data.length);
+              sum = arg0 + (outer3_0(11439).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
             }
             return sum;
           }, 0);
         }
         return num;
-      }(commandsByActiveSection, bound));
+      })(commandsByActiveSection, bound));
     }
   }, items2);
   const items3 = [sectionDescriptors, filterSection, filteredSectionId];
-  callback = React.useCallback((arg0) => {
+  callback = ref.useCallback((arg0) => {
     if (sectionDescriptors[arg0].id !== filteredSectionId) {
       if (tmp.id !== ref.FRECENCY) {
         filterSection(tmp.id);
-        const tmp6 = tmp6(arg0);
+        tmp6 = tmp6(arg0);
       }
-      const result = callback(tmp[12]).updateInitialSectionId(undefined);
+      const result = outer1_0(tmp[12]).updateInitialSectionId(undefined);
     }
     filterSection(null);
     tmp6(0);
   }, items3);
-  callback2 = callback;
-  const callback1 = React.useCallback(() => {
+  const callback1 = ref.useCallback(() => {
     closure_8.current = true;
-    callback(tmp[18]).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_SCROLLED);
+    outer1_0(tmp[18]).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_SCROLLED);
   }, []);
-  callback2 = React.useCallback((nativeEvent) => {
+  const callback2 = ref.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     const targetContentOffset = nativeEvent.targetContentOffset;
     let y;
@@ -223,24 +234,23 @@ export default function ApplicationCommandDiscovery(channel) {
     }
   }, []);
   const items4 = [sectionDescriptors, commandsByActiveSection, bound];
-  const callback3 = React.useCallback(() => {
+  const callback3 = ref.useCallback(() => {
     closure_8.current = false;
   }, []);
-  const memo = React.useMemo(() => {
+  memo = ref.useMemo(() => {
     let done;
-    let closure_0 = 0;
+    let c0 = 0;
     const items = [];
-    const onHeightChange = items;
     function _loop(value) {
-      let v0 = value;
-      const findIndexResult = closure_12.findIndex((section) => section.section.id === sum.id);
+      let closure_0 = value;
+      const findIndexResult = outer1_12.findIndex((section) => section.section.id === value.id);
       if (findIndexResult >= 0) {
-        const result = closure_12[findIndexResult].data.length * closure_4;
-        const sum = result + v0(closure_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + v0;
+        const result = outer1_12[findIndexResult].data.length * outer1_4;
+        const sum = result + outer2_0(table[8]).APPLICATION_SECTION_HEADER_HEIGHT + closure_0;
         items.push(sum);
-        v0 = sum;
+        closure_0 = sum;
       } else {
-        items.push(v0);
+        items.push(closure_0);
       }
     }
     const tmp = memo(sectionDescriptors);
@@ -255,29 +265,28 @@ export default function ApplicationCommandDiscovery(channel) {
     }
     return items;
   }, items4);
-  _createForOfIteratorHelperLoose = memo;
   const items5 = [memo];
-  closure_19 = React.useMemo(() => onHeightChange(tmp[19]).throttle((arg0) => {
+  closure_19 = ref.useMemo(() => onHeightChange(tmp[19]).throttle((arg0) => {
     let num = 0;
-    if (0 < closure_18.length) {
+    if (0 < outer1_18.length) {
       let num2 = 0;
       let num3 = 0;
-      if (0 === closure_18[0]) {
+      if (0 === outer1_18[0]) {
         const sum = num2 + 1;
         const sum1 = num3 + 1;
         num = sum;
-        while (sum1 < closure_18.length) {
-          let tmp6 = closure_18;
+        while (sum1 < outer1_18.length) {
+          let tmp6 = outer1_18;
           num2 = sum;
           num3 = sum1;
-          if (0 === closure_18[sum1]) {
+          if (0 === outer1_18[sum1]) {
             continue;
           } else {
-            let tmp7 = closure_18;
+            let tmp7 = outer1_18;
             num2 = sum;
             num3 = sum1;
             num = sum;
-            if (arg0 < closure_18[sum1]) {
+            if (arg0 < outer1_18[sum1]) {
               break;
             }
           }
@@ -289,16 +298,16 @@ export default function ApplicationCommandDiscovery(channel) {
         num = 0;
       }
     }
-    callback(num);
+    outer1_7(num);
   }, 100), items5);
   const items6 = [bound];
   const items7 = [channel.guild_id, callback, sectionDescriptors, first];
-  const callback4 = React.useCallback((arg0, index) => {
+  const callback4 = ref.useCallback((arg0, index) => {
     if (null == arg0) {
-      let obj = { <string:2690943727>: "%FunctionPrototype%", <string:1415340628>: "paddingStart", index };
+      let obj = { length: 0, offset: 0, index };
       return obj;
     } else {
-      const ROW2 = constants.ROW;
+      const ROW2 = _undefined2.ROW;
       const tmp18 = memo(arg0);
       const iter3 = tmp18();
       let iter2 = iter3;
@@ -321,34 +330,34 @@ export default function ApplicationCommandDiscovery(channel) {
           ROW = ROW2;
         }
         if (index === num + num2 + num3) {
-          ROW = constants.HEADER;
+          ROW = _undefined2.HEADER;
           num4 = num;
           num5 = num2;
         } else if (index === num + num2 + value.data.length + num3 + 1) {
           num4 = num + 1;
           num5 = num2 + value.data.length;
-          ROW = constants.FOOTER;
+          ROW = _undefined2.FOOTER;
         } else {
           const sum = num + 1;
           num5 = num2 + (index - sum - num2 - num3);
-          ROW = constants.ROW;
+          ROW = _undefined2.ROW;
           num4 = sum;
         }
       }
-      if (constants.ROW === ROW) {
+      if (_undefined2.ROW === ROW) {
         let num6 = bound;
-      } else if (constants.HEADER === ROW) {
-        num6 = callback(tmp[8]).APPLICATION_SECTION_HEADER_HEIGHT;
+      } else if (_undefined2.HEADER === ROW) {
+        num6 = outer1_0(tmp[8]).APPLICATION_SECTION_HEADER_HEIGHT;
       } else {
-        const FOOTER = constants.FOOTER;
+        const FOOTER = _undefined2.FOOTER;
         num6 = 0;
       }
-      obj = { length: num6, offset: num4 * callback(tmp[8]).APPLICATION_SECTION_HEADER_HEIGHT + num5 * bound, index };
+      obj = { length: num6, offset: num4 * outer1_0(tmp[8]).APPLICATION_SECTION_HEADER_HEIGHT + num5 * bound, index };
       return obj;
     }
   }, items6);
   obj2 = { style: items8 };
-  const items8 = [tmp.discoveryWrapper, channel.style];
+  items8 = [tmp.discoveryWrapper, channel.style];
   const obj3 = {
     ref,
     sections: commandsByActiveSection,
@@ -363,20 +372,20 @@ export default function ApplicationCommandDiscovery(channel) {
       nativeEvent = nativeEvent.nativeEvent;
       ({ layoutMeasurement, contentSize, contentInset } = nativeEvent);
       const y = nativeEvent.contentOffset.y;
-      callback2(y);
+      callback(y);
       if (!ref.current) {
         if (_undefined.length > 0) {
           if (y < contentInset.top) {
             const current = ref.current;
             if (null != current) {
-              current.scrollToLocation({});
+              current.scrollToLocation({ sectionIndex: 0, itemIndex: 0, viewPosition: 0, animated: false });
             }
           } else if (y > contentSize.height - layoutMeasurement.height - contentInset.bottom) {
             const current2 = ref.current;
             if (null != current2) {
               const obj = { sectionIndex: _undefined.length - 1 };
               const _Math = Math;
-              obj.itemIndex = Math.max(commandsByActiveSection[closure_12.length - 1].data.length - 1, 0);
+              obj.itemIndex = Math.max(commandsByActiveSection[commandsByActiveSection.length - 1].data.length - 1, 0);
               obj.viewPosition = 1;
               obj.animated = false;
               current2.scrollToLocation(obj);
@@ -384,12 +393,12 @@ export default function ApplicationCommandDiscovery(channel) {
           }
         }
       }
-      let tmp6 = closure_13;
-      if (closure_13) {
+      let tmp6 = c13;
+      if (c13) {
         tmp6 = y + layoutMeasurement.height >= contentSize.height - 3 * bound;
       }
       if (tmp6) {
-        _undefined2();
+        _undefined3();
       }
     },
     scrollEventThrottle: 16,
@@ -398,7 +407,7 @@ export default function ApplicationCommandDiscovery(channel) {
     }
   };
   let tmp23 = null;
-  const memo1 = React.useMemo(() => filteredSectionId(onHeightChange(tmp[20]), { onPressSection: callback, sections: sectionDescriptors, selectedIndex: first, guildId: channel.guild_id }), items7);
+  const memo1 = ref.useMemo(() => filteredSectionId(onHeightChange(tmp[20]), { onPressSection: callback, sections: sectionDescriptors, selectedIndex: first, guildId: channel.guild_id }), items7);
   if (discovery.loading) {
     const obj4 = { minIndexForVisible: 1 };
     tmp23 = obj4;
@@ -407,13 +416,11 @@ export default function ApplicationCommandDiscovery(channel) {
   obj3.renderItem = function renderItem(item) {
     item = item.item;
     const section = item.section;
-    const onHeightChange = section;
-    let channel;
-    if (item.inputType === item(tmp[21]).ApplicationCommandInputType.PLACEHOLDER) {
+    let found;
+    if (item.inputType === outer1_0(tmp[21]).ApplicationCommandInputType.PLACEHOLDER) {
       return filteredSectionId(onHeightChange(filteredSectionId[22]), {});
     } else {
-      const found = sectionDescriptors.find((id) => id.id === item.applicationId);
-      channel = found;
+      found = sectionDescriptors.find((id) => id.id === item.applicationId);
       const obj = {
         command: item,
         onPress() {
@@ -425,7 +432,7 @@ export default function ApplicationCommandDiscovery(channel) {
           },
         section: found,
         showIcon: item.applicationId !== section.section.id,
-        guildId: channel.guild_id
+        guildId: found.guild_id
       };
       return filteredSectionId(onHeightChange(tmp[23]), obj);
     }
@@ -438,19 +445,19 @@ export default function ApplicationCommandDiscovery(channel) {
     let tmp3 = 0 === section.data.length;
     if (tmp3) {
       obj = { lightSource: onHeightChange(tmp[25]), darkSource: onHeightChange(tmp[25]) };
-      const intl = callback(tmp[17]).intl;
+      const intl = outer1_0(tmp[17]).intl;
       const obj1 = { applicationName: section.section.name };
-      obj.body = intl.format(callback(tmp[17]).t.WoQXT6, obj1);
+      obj.body = intl.format(outer1_0(tmp[17]).t.WoQXT6, obj1);
       ({ noCommandsContainer: obj3.containerStyle, noCommandsImage: obj3.imageStyle } = tmp);
-      tmp3 = filteredSectionId(callback(tmp[24]).ThemedEmptyState, obj);
+      tmp3 = filteredSectionId(outer1_0(tmp[24]).ThemedEmptyState, obj);
     }
     items[1] = tmp3;
     obj.children = items;
-    return filterSection(closure_15, obj);
+    return filterSection(c15, obj);
   };
   obj3.getItemLayout = callback4;
   obj3.stickySectionHeadersEnabled = true;
-  const items9 = [filteredSectionId(tmp6, obj3), memo1];
+  const items9 = [filteredSectionId(closure_7, obj3), memo1];
   obj2.children = items9;
   return filterSection(first, obj2);
 };

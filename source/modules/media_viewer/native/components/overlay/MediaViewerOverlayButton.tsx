@@ -1,14 +1,17 @@
-// Module ID: 12122
-// Function ID: 93380
-// Dependencies: []
+// Module ID: 12236
+// Function ID: 95531
+// Dependencies: [31, 33, 7771, 2]
 
-// Module 12122
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
+// Module 12236
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const forwardRefResult = require("result").forwardRef((arg0, ref) => {
+  const obj = { ref, size: "md", variant: "secondary-overlay" };
   const merged = Object.assign(arg0);
-  return jsx(ref(dependencyMap[2]).IconButton, { ref });
+  return jsx(require(7771) /* IconButton */.IconButton, { ref, size: "md", variant: "secondary-overlay" });
 });
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaViewerOverlayButton.tsx");
+const result = require("IconButton").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaViewerOverlayButton.tsx");
 
 export default forwardRefResult;

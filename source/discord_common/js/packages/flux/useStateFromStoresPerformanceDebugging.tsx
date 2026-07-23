@@ -1,53 +1,56 @@
-// Module ID: 14518
-// Function ID: 109304
+// Module ID: 14632
+// Function ID: 111464
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 4, 587, 2]
 // Exports: getUseStateFromStoresDebuggingEnabled, getUseStateFromStoresExecutionCountWarningThreshold, getUseStateFromStoresExecutionTimeWarningThresholdMs, getUseStateFromStoresExecutionWindowThresholdMs, getUseStateFromStoresHookInfo, getUseStateFromStoresSpecificHookFilter, setUseStateFromStoresDebuggingEnabled, setUseStateFromStoresExecutionCountWarningThreshold, setUseStateFromStoresExecutionTimeWarningThresholdMs, setUseStateFromStoresExecutionWindowThresholdMs, setUseStateFromStoresSpecificHookFilter, trackGetStateFromStoresPerformance
 
-// Module 14518 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 14632 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +61,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -168,8 +171,8 @@ function flushViolators() {
     let iter6 = tmp33();
     if (!iter6.done) {
       do {
-        let tmp34 = closure_2;
-        let tmp35 = closure_2(iter6.value, 2);
+        let tmp34 = callback;
+        let tmp35 = callback(iter6.value, 2);
         let first1 = tmp35[0];
         let tmp37 = tmp35[1];
         tmp37.warned = false;
@@ -191,8 +194,8 @@ function flushViolators() {
   let iter4 = tmp16();
   if (!iter4.done) {
     do {
-      let tmp17 = closure_2;
-      let tmp18 = closure_2(iter4.value, 2);
+      let tmp17 = callback;
+      let tmp18 = callback(iter4.value, 2);
       [obj, tmp19] = tmp18;
       let tmp20 = closure_7;
       let tmp21 = "" !== closure_7;
@@ -201,11 +204,11 @@ function flushViolators() {
         tmp21 = obj === closure_7;
       }
       if (!tmp21) {
-        let tmp23 = closure_13;
-        tmp21 = closure_13(tmp19);
+        let tmp23 = hasExceededThreshold;
+        tmp21 = hasExceededThreshold(tmp19);
       }
       if (tmp21) {
-        let tmp24 = closure_3;
+        let tmp24 = logger;
         let padEndResult2 = obj.padEnd(34, " ");
         let execTime = tmp19.execTime;
         let text = `${execTime.toFixed(2)}ms`;
@@ -218,7 +221,7 @@ function flushViolators() {
         let str5 = "| ";
         let str6 = "| ";
         let str7 = "|";
-        let logResult6 = closure_3.log("| " + padEndResult2 + "| " + padEndResult3 + "| " + str.padEnd(20, " ") + "|");
+        let logResult6 = logger.log("| " + padEndResult2 + "| " + padEndResult3 + "| " + str.padEnd(20, " ") + "|");
       }
       iter5 = tmp16();
       iter4 = iter5;
@@ -226,8 +229,7 @@ function flushViolators() {
   }
   logger.log(`${"|".padEnd(80, "-")}|`);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const logger = new arg1(dependencyMap[1]).Logger("useStateFromStores");
+const logger = new require("log").Logger("useStateFromStores");
 let closure_4 = getUseStateFromStoresExecutionWindowThresholdMs();
 let closure_5 = getUseStateFromStoresExecutionTimeWarningThresholdMs();
 let closure_6 = getUseStateFromStoresExecutionCountWarningThreshold();
@@ -235,47 +237,47 @@ let closure_7 = getUseStateFromStoresSpecificHookFilter();
 const useStateFromStoresDebuggingEnabled = getUseStateFromStoresDebuggingEnabled();
 let interval;
 if (useStateFromStoresDebuggingEnabled) {
-  const _setInterval = setInterval;
+  let _setInterval = setInterval;
   interval = setInterval(flushViolators, closure_4);
 }
 const map = new Map();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/flux/useStateFromStoresPerformanceDebugging.tsx");
+let result = require("Storage").fileFinishedImporting("../discord_common/js/packages/flux/useStateFromStoresPerformanceDebugging.tsx");
 
 export { getUseStateFromStoresExecutionWindowThresholdMs };
 export const setUseStateFromStoresExecutionWindowThresholdMs = function setUseStateFromStoresExecutionWindowThresholdMs(arg0) {
   let closure_4 = arg0;
-  const Storage = arg1(dependencyMap[2]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   const result = Storage.set("useStateFromStoresExecutionWindowThresholdMs", arg0);
   clearInterval(interval);
   if (useStateFromStoresDebuggingEnabled) {
     const _setInterval = setInterval;
-    const interval = setInterval(flushViolators, closure_4);
+    interval = setInterval(flushViolators, closure_4);
   }
 };
 export { getUseStateFromStoresExecutionTimeWarningThresholdMs };
 export const setUseStateFromStoresExecutionTimeWarningThresholdMs = function setUseStateFromStoresExecutionTimeWarningThresholdMs(arg0) {
   let closure_5 = arg0;
-  const Storage = arg1(dependencyMap[2]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   const result = Storage.set("useStateFromStoresExecutionTimeWarningThresholdMs", arg0);
 };
 export { getUseStateFromStoresExecutionCountWarningThreshold };
 export const setUseStateFromStoresExecutionCountWarningThreshold = function setUseStateFromStoresExecutionCountWarningThreshold(arg0) {
   let closure_6 = arg0;
-  const Storage = arg1(dependencyMap[2]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   const result = Storage.set("useStateFromStoresExecutionCountWarningThreshold", arg0);
 };
 export const setUseStateFromStoresSpecificHookFilter = function setUseStateFromStoresSpecificHookFilter(first1) {
   let closure_7 = first1;
-  const Storage = arg1(dependencyMap[2]).Storage;
+  const Storage = require(587) /* Storage */.Storage;
   const result = Storage.set("useStateFromStoresSpecificHookFilter", first1);
 };
 export { getUseStateFromStoresSpecificHookFilter };
 export { getUseStateFromStoresDebuggingEnabled };
 export const setUseStateFromStoresDebuggingEnabled = function setUseStateFromStoresDebuggingEnabled(first) {
-  const useStateFromStoresDebuggingEnabled = first;
-  const Storage = arg1(dependencyMap[2]).Storage;
+  let closure_8 = first;
+  const Storage = require(587) /* Storage */.Storage;
   const result = Storage.set("useStateFromStoresDebuggingEnabled", first);
-  if (useStateFromStoresDebuggingEnabled) {
+  if (closure_8) {
     const _setInterval = setInterval;
     let interval = setInterval(flushViolators, closure_4);
   } else {
@@ -320,7 +322,7 @@ export const getUseStateFromStoresHookInfo = function getUseStateFromStoresHookI
     }
     let value = map.get(str8);
     if (null == value) {
-      const obj = { name: str8 };
+      const obj = { name: str8, execCount: 0, execTime: 0, warned: false };
       value = obj;
     }
     const result = map.set(str8, value);

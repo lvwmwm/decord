@@ -1,33 +1,37 @@
-// Module ID: 11556
-// Function ID: 89929
+// Module ID: 11566
+// Function ID: 89978
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: []
+// Dependencies: [1838, 4018, 653, 11531, 566, 4021, 11528, 2]
 // Exports: default
 
-// Module 11556 (useGuildPowerupCardFooterConfig)
+// Module 11566 (useGuildPowerupCardFooterConfig)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import BoostedGuildTiers from "BoostedGuildTiers";
+import { GuildFeatures } from "ME";
+
 let GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP;
-let closure_3 = importDefault(dependencyMap[0]);
-({ GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP, GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE: closure_4, PowerupActiveStatusType: closure_5 } = arg1(dependencyMap[1]));
-const GuildFeatures = arg1(dependencyMap[2]).GuildFeatures;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupCardFooterConfig.tsx");
+let closure_4;
+let closure_5;
+const require = arg1;
+({ GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP, GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE: closure_4, PowerupActiveStatusType: closure_5 } = BoostedGuildTiers);
+const result = require("ME").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupCardFooterConfig.tsx");
 
 export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
-  skuId = arg0;
-  const tmp = importDefault(dependencyMap[3])(arg0, skuId);
-  let obj = skuId(dependencyMap[4]);
-  const items = [closure_3];
+  const _require = arg0;
+  const tmp = importDefault(11531)(arg0, skuId);
+  let obj = _require(566);
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+    const guild = outer1_3.getGuild(closure_0);
     let hasItem;
     if (null != guild) {
       const features = guild.features;
-      hasItem = features.has(constants.GUILD_THEME);
+      hasItem = features.has(outer1_6.GUILD_THEME);
     }
     return true === hasItem;
   }, items1);
-  let tmp3 = skuId.skuId === skuId(dependencyMap[5]).GUILD_POWERUP_GUILD_THEME_SKU_ID;
+  let tmp3 = skuId.skuId === _require(4021).GUILD_POWERUP_GUILD_THEME_SKU_ID;
   let tmp4 = tmp.type !== constants.INACTIVE;
   if (!tmp4) {
     if (tmp3) {
@@ -38,7 +42,7 @@ export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   obj = {};
   let tmp5 = tmp4;
   if (!tmp4) {
-    tmp5 = !importDefault(dependencyMap[6])(arg0, skuId, "GuildPowerupCardFooterAdmin");
+    tmp5 = !importDefault(11528)(arg0, skuId, "GuildPowerupCardFooterAdmin");
   }
   if (tmp5) {
     tmp5 = tmp.type !== constants.TIER_OVERRIDE_ACTIVATED;

@@ -1,17 +1,30 @@
-// Module ID: 12354
-// Function ID: 94488
+// Module ID: 12468
+// Function ID: 96639
 // Name: GuildBoostingGuildListItem
-// Dependencies: []
+// Dependencies: [31, 27, 1838, 4970, 653, 33, 4130, 689, 4066, 566, 4037, 8474, 5737, 7375, 5515, 4126, 9626, 1212, 12437, 2]
 // Exports: default
 
-// Module 12354 (GuildBoostingGuildListItem)
+// Module 12468 (GuildBoostingGuildListItem)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { NUMBER_OF_GUILDS_TO_RECOMMEND_BOOSTING as closure_7 } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_8;
+let closure_9;
+const require = arg1;
 function GuildBoostingGuildListItem(guildId) {
-  const arg1 = guildId.guildId;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[9]);
+  guildId = guildId.guildId;
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = guildId(566);
   const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId));
-  importDefault(dependencyMap[10]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(guildId));
+  importDefault(4037);
   if (null != stateFromStores) {
     const id = stateFromStores.id;
   }
@@ -21,69 +34,62 @@ function GuildBoostingGuildListItem(guildId) {
       style: tmp.guildCard,
       activeOpacity: 0.5,
       onPress() {
-          guildId(closure_2[12]).transitionToGuild(guildId, { state: { shouldShowSubscribeTooltip: true } });
-          const obj = guildId(closure_2[12]);
-          callback(closure_2[13]).close();
+          guildId(outer1_2[12]).transitionToGuild(guildId, { state: { shouldShowSubscribeTooltip: true } });
+          const obj = guildId(outer1_2[12]);
+          outer1_1(outer1_2[13]).close();
         }
     };
     obj = { guild: stateFromStores };
-    const tmp10 = importDefault(dependencyMap[11]);
-    obj.size = arg1(dependencyMap[14]).GuildIconSizes.LARGE;
+    const tmp10 = importDefault(8474);
+    obj.size = guildId(5515).GuildIconSizes.LARGE;
     obj.style = tmp.guildIcon;
     obj.selected = false;
-    const items1 = [callback(importDefault(dependencyMap[14]), obj), , ];
+    const items1 = [callback(importDefault(5515), obj), , ];
     const obj1 = { style: tmp.guildCardDescription };
     const obj2 = { variant: "text-md/bold", children: stateFromStores.name };
-    const items2 = [callback(arg1(dependencyMap[15]).Text, obj2), ];
+    const items2 = [callback(guildId(4126).Text, obj2), ];
     const obj3 = { style: tmp.subscriptionInfo };
-    const obj4 = { source: importDefault(dependencyMap[16]), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
+    const obj4 = { source: importDefault(9626), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     const items3 = [callback(closure_4, obj4), ];
     const obj5 = { variant: "text-xs/medium" };
-    const intl = arg1(dependencyMap[17]).intl;
+    const intl = guildId(1212).intl;
     const obj6 = { subscriberCount: tmp5 };
-    obj5.children = intl.format(arg1(dependencyMap[17]).t.If4iTS, obj6);
-    items3[1] = callback(arg1(dependencyMap[15]).Text, obj5);
+    obj5.children = intl.format(guildId(1212).t.If4iTS, obj6);
+    items3[1] = callback(guildId(4126).Text, obj5);
     obj3.children = items3;
     items2[1] = callback2(closure_3, obj3);
     obj1.children = items2;
     items1[1] = callback2(closure_3, obj1);
     const obj7 = { guild: stateFromStores, theme: tmp2 };
-    items1[2] = callback(importDefault(dependencyMap[18]), obj7);
+    items1[2] = callback(importDefault(12437), obj7);
     obj.children = items1;
     tmp6 = callback2(tmp10, obj);
-    const tmp12 = importDefault(dependencyMap[14]);
+    const tmp12 = importDefault(5515);
   }
   return tmp6;
 }
-importAll(dependencyMap[0]);
-({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).NUMBER_OF_GUILDS_TO_RECOMMEND_BOOSTING;
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[5]));
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { borderRadius: importDefault(dependencyMap[7]).radii.xs, backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWEST };
-obj.guildCard = obj;
-obj.guildIcon = { marginRight: 16 };
-obj.guildCardDescription = { flex: 1 };
-obj.subscriptionInfo = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-obj.premiumGuildImage = {};
-let closure_10 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("components_native/premium/GuildBoostingGuildList.tsx");
+({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: 12, paddingLeft: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, marginBottom: 8, minHeight: 96, flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+_createForOfIteratorHelperLoose.guildCard = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.guildIcon = { marginRight: 16 };
+_createForOfIteratorHelperLoose.guildCardDescription = { flex: 1 };
+_createForOfIteratorHelperLoose.subscriptionInfo = { flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.premiumGuildImage = { width: 18, height: 12, marginLeft: -5 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("components_native/premium/GuildBoostingGuildList.tsx");
 
 export default function GuildBoostingGuildList(guildCount) {
   guildCount = guildCount.guildCount;
   if (guildCount === undefined) {
     guildCount = closure_7;
   }
-  let obj = arg1(dependencyMap[9]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => flattenedGuildIds.getFlattenedGuildIds());
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getFlattenedGuildIds());
   obj = { style: guildCount.style };
   const substr = stateFromStores.slice(0, guildCount);
-  obj.children = substr.map((guildId) => callback(closure_11, { guildId }, guildId));
+  obj.children = substr.map((guildId) => outer1_8(outer1_11, { guildId }, guildId));
   return callback(closure_3, obj);
 };

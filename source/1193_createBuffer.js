@@ -1,11 +1,12 @@
 // Module ID: 1193
-// Function ID: 13651
+// Function ID: 13652
 // Name: createBuffer
 // Dependencies: []
 
 // Module 1193 (createBuffer)
-function() {
-  const self = this;
+const dependencyMap = arg4;
+(function() {
+  let self = this;
   class MurmurHashV3 {
     constructor(arg0, arg1) {
       arr = arg0;
@@ -64,7 +65,7 @@ function() {
       return;
     }
   }
-  const arg4 = this;
+  self = this;
   function createBuffer(arg0) {
     const textEncoder = new TextEncoder();
     return textEncoder.encode(arg0);
@@ -111,7 +112,7 @@ function() {
     tmp13 = tmp12 ^ (255 & arr[num2 + 1]) << 8;
   };
   MurmurHashV3.v3 = MurmurHashV3;
-  if (undefined !== arg4) {
+  if (undefined !== self) {
     class MurmurHashV3 {
       constructor(arg0, arg1) {
         arr = arg0;
@@ -232,4 +233,4 @@ function() {
     }
     self.murmur = MurmurHashV3;
   }
-}();
+})();

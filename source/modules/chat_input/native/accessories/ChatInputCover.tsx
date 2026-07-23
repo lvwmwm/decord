@@ -1,69 +1,72 @@
-// Module ID: 11349
-// Function ID: 88236
+// Module ID: 11359
+// Function ID: 88286
 // Name: ChatInputCover
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4528, 1555, 2]
 
-// Module 11349 (ChatInputCover)
-const importAllResult = importAll(dependencyMap[0]);
-({ StyleSheet: closure_3, TouchableWithoutFeedback: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 11359 (ChatInputCover)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+let closure_3;
+let closure_4;
+let closure_5;
+const require = arg1;
+({ StyleSheet: closure_3, TouchableWithoutFeedback: closure_4, View: closure_5 } = get_ActivityIndicator);
 const forwardRefResult = importAllResult.forwardRef((enabled) => {
   let flag = enabled.enabled;
   if (flag === undefined) {
     flag = true;
   }
-  const arg1 = flag;
   const keyboardType = enabled.keyboardType;
-  const dependencyMap = keyboardType;
   const onSelectKeyboard = enabled.onSelectKeyboard;
   let isScreenReaderEnabled;
-  let obj = arg1(dependencyMap[3]);
+  let obj = flag(keyboardType[3]);
   isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const items = [flag, isScreenReaderEnabled, keyboardType, onSelectKeyboard];
-  const memo = importAllResult.useMemo(() => ({
+  const memo = onSelectKeyboard.useMemo(() => ({
     imperativeHandle() {
       return {
-        focused(arg0) {
-          let tmp = callback;
-          if (callback) {
-            tmp = arg0;
+        focused(controlsSpecs, arg1) {
+          let tmp = outer2_0;
+          if (outer2_0) {
+            tmp = controlsSpecs;
           }
           if (tmp) {
-            tmp = closure_1 !== callback(closure_1[4]).KeyboardTypes.SYSTEM;
+            tmp = outer2_1 !== flag(keyboardType[4]).KeyboardTypes.SYSTEM;
           }
           if (tmp) {
-            tmp = closure_3;
+            tmp = outer2_3;
           }
           if (tmp) {
-            const obj = { type: callback(closure_1[4]).KeyboardTypes.SYSTEM };
-            callback2(obj);
+            const obj = { type: flag(keyboardType[4]).KeyboardTypes.SYSTEM };
+            outer2_2(obj);
           }
         }
       };
     },
     openSystemKeyboard() {
-      callback2({ type: callback(closure_1[4]).KeyboardTypes.SYSTEM });
+      outer1_2({ type: flag(keyboardType[4]).KeyboardTypes.SYSTEM });
     }
   }), items);
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, memo.imperativeHandle);
+  const imperativeHandle = onSelectKeyboard.useImperativeHandle(arg1, memo.imperativeHandle);
   let tmp4 = null;
   if (flag) {
     tmp4 = null;
-    if (keyboardType !== arg1(dependencyMap[4]).KeyboardTypes.SYSTEM) {
+    if (keyboardType !== flag(keyboardType[4]).KeyboardTypes.SYSTEM) {
       tmp4 = null;
       if (!isScreenReaderEnabled) {
-        obj = { marginBottom: true, borderWidth: true, onPress: memo.openSystemKeyboard };
+        obj = { accessible: false, accessibilityRole: "none", onPress: memo.openSystemKeyboard };
         obj = { style: isScreenReaderEnabled.absoluteFill };
-        obj.children = <closure_5 {...obj} />;
-        tmp4 = <closure_4 {...obj} />;
+        obj.children = <closure_5 style={isScreenReaderEnabled.absoluteFill} />;
+        tmp4 = <closure_4 style={isScreenReaderEnabled.absoluteFill} />;
       }
     }
   }
   return tmp4;
 });
 forwardRefResult.displayName = "ChatInputCover";
-const tmp2 = arg1(dependencyMap[1]);
 const memoResult = importAllResult.memo(forwardRefResult);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/chat_input/native/accessories/ChatInputCover.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/accessories/ChatInputCover.tsx");
 
 export default memoResult;

@@ -1,61 +1,60 @@
-// Module ID: 9784
-// Function ID: 76052
+// Module ID: 9791
+// Function ID: 76093
 // Name: LottieIcon
-// Dependencies: []
+// Dependencies: [31, 27, 33, 689, 5513, 3849, 3834, 5454, 2]
 
-// Module 9784 (LottieIcon)
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 9791 (LottieIcon)
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const forwardRefResult = importAllResult.forwardRef((color) => {
   let height;
   let layers;
   let markers;
+  let require;
   let size;
   let useLottieDefaultColors;
   let width;
-  ({ animation: closure_0, size } = color);
+  ({ animation: require, size } = color);
   if (size === undefined) {
     size = "md";
   }
   let INTERACTIVE_TEXT_DEFAULT = color.color;
   if (INTERACTIVE_TEXT_DEFAULT === undefined) {
-    INTERACTIVE_TEXT_DEFAULT = importDefault(dependencyMap[3]).colors.INTERACTIVE_TEXT_DEFAULT;
+    INTERACTIVE_TEXT_DEFAULT = layers(autoPlay[3]).colors.INTERACTIVE_TEXT_DEFAULT;
   }
   let num2 = color.opacity;
   if (num2 === undefined) {
     num2 = 1;
   }
   ({ markers, layers } = color);
-  const importDefault = layers;
-  const autoPlay = color.autoPlay;
-  const dependencyMap = autoPlay;
-  let importAllResult;
-  let View;
-  let jsx;
+  autoPlay = color.autoPlay;
+  let start;
+  let c4;
+  let num4;
   let sum1;
   let ref;
   let enabled;
   let token;
   let callback;
   ({ width, height, useLottieDefaultColors } = color);
-  let tmp3 = arg1(dependencyMap[4]).ICON_SIZE[size];
+  let tmp3 = require(autoPlay[4]).ICON_SIZE[size];
   const found = markers.find((name) => name.name === closure_0);
-  let start = found.start;
-  importAllResult = start;
+  start = found.start;
   const sum = start + found.duration;
-  View = sum;
+  c4 = sum;
   const found1 = markers.find((name) => "easteregg" === name.name);
   start = undefined;
   if (null != found1) {
     start = found1.start;
   }
   let num3 = -1;
-  let num4 = -1;
+  num4 = -1;
   if (null != start) {
     num4 = start;
   }
-  jsx = num4;
   let duration;
   if (null != found1) {
     duration = found1.duration;
@@ -64,8 +63,8 @@ const forwardRefResult = importAllResult.forwardRef((color) => {
     num3 = duration;
   }
   sum1 = num4 + num3;
-  ref = importAllResult.useRef(null);
-  enabled = importAllResult.useContext(arg1(dependencyMap[5]).AccessibilityPreferencesContext).reducedMotion.enabled;
+  ref = start.useRef(null);
+  enabled = start.useContext(require(autoPlay[5]).AccessibilityPreferencesContext).reducedMotion.enabled;
   let obj = {};
   let tmp12 = tmp3;
   if ("custom" === size) {
@@ -76,22 +75,22 @@ const forwardRefResult = importAllResult.forwardRef((color) => {
     tmp3 = height;
   }
   obj.height = tmp3;
-  let obj1 = arg1(dependencyMap[6]);
+  let obj1 = require(autoPlay[6]);
   token = obj1.useToken(INTERACTIVE_TEXT_DEFAULT);
   const items = [token, layers];
   const items1 = [enabled, start, sum, num4, sum1];
-  const memo = importAllResult.useMemo(() => {
+  const memo = start.useMemo(() => {
     let mapped;
     if (null != token) {
-      mapped = layers.map((keypath) => ({ keypath, color: closure_9 }));
+      mapped = layers.map((keypath) => ({ keypath, color: outer1_9 }));
     }
     return mapped;
   }, items);
-  callback = importAllResult.useCallback(() => {
+  callback = start.useCallback(() => {
     if (enabled) {
       const current3 = ref.current;
       if (null != current3) {
-        current3.play(sum, sum);
+        current3.play(c4, c4);
       }
     } else {
       if (tmp) {
@@ -104,19 +103,19 @@ const forwardRefResult = importAllResult.forwardRef((color) => {
       }
       const current = ref.current;
       if (null != current) {
-        current.play(start, sum);
+        current.play(start, c4);
       }
     }
   }, items1);
   const items2 = [callback];
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+  const imperativeHandle = start.useImperativeHandle(arg1, () => ({
     play() {
-      return callback();
+      return outer1_10();
     }
   }), items2);
   const items3 = [start, autoPlay, callback];
   obj = { style: obj };
-  const callback1 = importAllResult.useCallback(() => {
+  const callback1 = start.useCallback(() => {
     if (autoPlay) {
       callback();
     } else {
@@ -140,9 +139,9 @@ const forwardRefResult = importAllResult.forwardRef((color) => {
   obj1 = { opacity: num2 };
   items4[1] = obj1;
   obj.style = items4;
-  obj.children = jsx(importDefault(dependencyMap[7]), obj);
-  return <View {...obj} />;
+  obj.children = num4(layers(autoPlay[7]), obj);
+  return num4(c4, obj);
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/LottieIcon/native/LottieIcon.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/LottieIcon/native/LottieIcon.tsx");
 
 export const LottieIcon = forwardRefResult;

@@ -1,17 +1,27 @@
-// Module ID: 9269
-// Function ID: 72425
+// Module ID: 9276
+// Function ID: 72466
 // Name: fetchSurveyDetails
-// Dependencies: []
+// Dependencies: [57, 5, 9277, 9279, 9280, 9281, 653, 507, 686, 1184, 9282, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 9269 (fetchSurveyDetails)
+// Module 9276 (fetchSurveyDetails)
+import _slicedToArray from "_slicedToArray";
+import closure_4 from "QuestionTypeEnum";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { useQualtricsResponseStore } from "useQualtricsResponseStore";
+import closure_7 from "_isNativeReflectConstruct";
+import QuestionTypeEnum from "QuestionTypeEnum";
+import { Endpoints } from "ME";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 function fetchSurveyDetails() {
   return _fetchSurveyDetails(...arguments);
 }
 function _fetchSurveyDetails() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchSurveyDetails = obj;
   return obj(...arguments);
 }
 function submitSurveyResponse() {
@@ -20,7 +30,6 @@ function submitSurveyResponse() {
 function _submitSurveyResponse() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _submitSurveyResponse = obj;
   return obj(...arguments);
 }
 function fireSurveyAction(BOUNTY_ABANDONED, arg1) {
@@ -29,18 +38,10 @@ function fireSurveyAction(BOUNTY_ABANDONED, arg1) {
 function _fireSurveyAction() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fireSurveyAction = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const useQualtricsResponseStore = arg1(dependencyMap[3]).useQualtricsResponseStore;
-let closure_7 = importDefault(dependencyMap[4]);
-({ QuestionSelectorEnum: closure_8, QuestionTypeEnum: closure_9 } = arg1(dependencyMap[5]));
-const Endpoints = arg1(dependencyMap[6]).Endpoints;
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/qualtrics/QualtricsActionCreators.tsx");
+({ QuestionSelectorEnum: closure_8, QuestionTypeEnum: closure_9 } = QuestionTypeEnum);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/qualtrics/QualtricsActionCreators.tsx");
 
 export default { fetchSurveyDetails, submitSurveyResponse, fireSurveyAction };
 export { fetchSurveyDetails };

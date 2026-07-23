@@ -1,37 +1,38 @@
-// Module ID: 10499
-// Function ID: 82018
+// Module ID: 10509
+// Function ID: 82068
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 10499 (_isNativeReflectConstruct)
+// Module 10509 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let closure_5 = { usageByApplicationId: {}, shelfOrder: [] };
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class ActivityShelfStore {
     constructor() {
       self = this;
       tmp = ActivityShelfStore(this, ActivityShelfStore);
-      obj = closure_3(ActivityShelfStore);
-      tmp2 = closure_2;
-      if (closure_6()) {
+      obj = outer1_3(ActivityShelfStore);
+      tmp2 = outer1_2;
+      if (outer1_6()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,7 +41,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ActivityShelfStore;
   callback2(ActivityShelfStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -51,25 +51,26 @@ let tmp2 = (PersistedStore) => {
         obj = {};
       }
       const merged = Object.assign(obj);
+      const outer1_5 = obj;
     }
   };
   const items = [obj, ];
   obj = {
     key: "getState",
     value() {
-      return closure_5;
+      return outer1_5;
     }
   };
   items[1] = obj;
   return callback(ActivityShelfStore, items);
-}(importDefault(dependencyMap[5]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "ActivityShelfStore";
 tmp2.persistKey = "ActivityShelfStore";
-tmp2 = new tmp2(importDefault(dependencyMap[6]), {
+tmp2 = new tmp2(require("dispatcher"), {
   LOGOUT: function reset() {
     let closure_5 = { usageByApplicationId: {}, shelfOrder: [] };
   }
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/activities/ActivityShelfStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/activities/ActivityShelfStore.tsx");
 
 export default tmp2;

@@ -1,11 +1,14 @@
 // Module ID: 488
 // Function ID: 6312
 // Name: createBuffer
-// Dependencies: []
+// Dependencies: [206, 489]
 
 // Module 488 (createBuffer)
+const require = arg1;
+const exports = arg5;
+const dependencyMap = arg6;
 function createBuffer(arg0) {
-  if (arg0 > closure_3) {
+  if (arg0 > c3) {
     const _RangeError = RangeError;
     const rangeError = new RangeError("The value \"" + arg0 + "\" is invalid for option \"size\"");
     throw rangeError;
@@ -181,7 +184,7 @@ class Buffer {
       num2 = 0;
       if (0 === arg0.length) {
         tmp16 = Buffer;
-        return require("module_0");
+        return require("getLens");
       } else {
         if (undefined === num) {
           num3 = 0;
@@ -360,7 +363,7 @@ class Buffer {
     }
   }
   inspect() {
-    INSPECT_MAX_BYTES = arg5.INSPECT_MAX_BYTES;
+    INSPECT_MAX_BYTES = closure_1.INSPECT_MAX_BYTES;
     str = this.toString("hex", 0, INSPECT_MAX_BYTES);
     str2 = str.replace(/(.{2})/g, "$1 ");
     trimmed = str2.trim();
@@ -590,7 +593,7 @@ class Buffer {
                                 text = `${str3}`;
                                 str3 = `${str3}`.toLowerCase();
                                 flag = true;
-                                // continue
+                                continue;
                               }
                             }
                           }
@@ -939,7 +942,7 @@ class Buffer {
       num = 4;
       tmp3 = checkOffset(tmp, 4, self.length);
     }
-    obj = arg1(arg6[1]);
+    obj = require("read");
     return obj.read(self, tmp, true, 23, 4);
   }
   readFloatBE(arg0, arg1) {
@@ -950,7 +953,7 @@ class Buffer {
       num = 4;
       tmp3 = checkOffset(tmp, 4, self.length);
     }
-    obj = arg1(arg6[1]);
+    obj = require("read");
     return obj.read(self, tmp, false, 23, 4);
   }
   readDoubleLE(arg0, arg1) {
@@ -961,7 +964,7 @@ class Buffer {
       num = 8;
       tmp3 = checkOffset(tmp, 8, self.length);
     }
-    obj = arg1(arg6[1]);
+    obj = require("read");
     return obj.read(self, tmp, true, 52, 8);
   }
   readDoubleBE(arg0, arg1) {
@@ -972,7 +975,7 @@ class Buffer {
       num = 8;
       tmp3 = checkOffset(tmp, 8, self.length);
     }
-    obj = arg1(arg6[1]);
+    obj = require("read");
     return obj.read(self, tmp, false, 52, 8);
   }
   writeUIntLE(arg0, arg1, arg2, arg3) {
@@ -1526,7 +1529,7 @@ class Buffer {
       tmp5 = tmp;
       if (1 === arg0.length) {
         num5 = 0;
-        charCodeAtResult = require("module_0");
+        charCodeAtResult = require("getLens");
         str4 = "utf8";
         tmp13 = "utf8" === tmp;
         if (tmp13) {
@@ -1879,7 +1882,7 @@ function byteLength(byteLength) {
                                 let text = `${tmp5}`;
                                 formatted = `${tmp5}`.toLowerCase();
                                 flag2 = true;
-                                // continue
+                                continue;
                               }
                             }
                           }
@@ -1969,7 +1972,7 @@ function slowToString(arg0, arg1, arg2) {
                               let text = `${str}`;
                               str = `${str}`.toLowerCase();
                               flag = true;
-                              // continue
+                              continue;
                             }
                           }
                         }
@@ -1990,7 +1993,7 @@ function slowToString(arg0, arg1, arg2) {
       }
       return hexSlice(self, tmp17, tmp16);
     }
-    const tmp2 = undefined === length || length > self.length;
+    tmp2 = undefined === length || length > self.length;
   }
 }
 function swap(arg0, arg1, arg2) {
@@ -2075,14 +2078,14 @@ function bidirectionalIndexOf(arg0, arg1, arg2, arg3, arg4) {
 }
 function arrayIndexOf(readUInt16BE, readUInt16BE, result2) {
   function read(readUInt16BE, result2) {
-    if (1 === closure_0) {
+    if (1 === c0) {
       let uInt16BE = readUInt16BE[result2];
     } else {
-      uInt16BE = readUInt16BE.readUInt16BE(result2 * closure_0);
+      uInt16BE = readUInt16BE.readUInt16BE(result2 * c0);
     }
     return uInt16BE;
   }
-  let closure_0 = 1;
+  let c0 = 1;
   let num = 1;
   let result = length;
   let result1 = length2;
@@ -2100,7 +2103,7 @@ function arrayIndexOf(readUInt16BE, readUInt16BE, result2) {
     }
     if (readUInt16BE.length >= 2) {
       if (readUInt16BE.length >= 2) {
-        closure_0 = 2;
+        c0 = 2;
         result = length / 2;
         result1 = length2 / 2;
         result2 = result2 / 2;
@@ -2249,12 +2252,12 @@ function ucs2Write(arg0, str) {
 function base64Slice(arr) {
   if (0 === arg1) {
     if (arg2 === arr.length) {
-      let fromByteArrayResult = arg1(arg6[0]).fromByteArray(arr);
-      const obj2 = arg1(arg6[0]);
+      let fromByteArrayResult = require(206) /* getLens */.fromByteArray(arr);
+      const obj2 = require(206) /* getLens */;
     }
     return fromByteArrayResult;
   }
-  fromByteArrayResult = arg1(arg6[0]).fromByteArray(arr.slice(arg1, arg2));
+  fromByteArrayResult = require(206) /* getLens */.fromByteArray(arr.slice(arg1, arg2));
 }
 function utf8Slice(arg0, arg1, arg2) {
   let sum1;
@@ -2391,13 +2394,13 @@ function utf8Slice(arg0, arg1, arg2) {
       }
       arr = items.push(num4);
       sum = sum + num5;
-      let tmp3 = tmp8;
-      let tmp4 = tmp9;
-      let tmp5 = tmp10;
-      let tmp6 = tmp11;
+      tmp3 = tmp8;
+      tmp4 = tmp9;
+      tmp5 = tmp10;
+      tmp6 = tmp11;
     } while (sum < bound);
   }
-  if (items.length <= closure_4) {
+  if (items.length <= c4) {
     const _String3 = String;
     const _String4 = String;
     let str2 = fromCharCode2.apply(String, items);
@@ -2409,8 +2412,8 @@ function utf8Slice(arg0, arg1, arg2) {
       do {
         let _String = String;
         let _String2 = String;
-        let tmp30 = closure_4;
-        sum1 = num6 + closure_4;
+        let tmp30 = c4;
+        sum1 = num6 + c4;
         str = `${tmp29(String, arr.slice(num6, tmp31))}`;
         str2 = str;
         num6 = sum1;
@@ -2472,7 +2475,7 @@ function hexSlice(arg0, arg1, arg2) {
   let str = "";
   let str2 = "";
   while (num < tmp) {
-    let tmp4 = closure_6;
+    let tmp4 = table;
     str = `${closure_6[arg0[num]]}`;
     num = num + 1;
     str2 = str;
@@ -2544,14 +2547,14 @@ function writeFloat(arg0, arg1, arg2, arg3, arg4) {
   if (!arg4) {
     checkIEEE754(arg0, undefined, tmp2, 4);
   }
-  arg1(arg6[1]).write(arg0, +arg1, arg2 >>> 0, arg3, 23, 4);
+  require(489) /* read */.write(arg0, +arg1, arg2 >>> 0, arg3, 23, 4);
   return (arg2 >>> 0) + 4;
 }
 function writeDouble(arg0, arg1, arg2, arg3, arg4) {
   if (!arg4) {
     checkIEEE754(arg0, undefined, tmp2, 8);
   }
-  arg1(arg6[1]).write(arg0, +arg1, arg2 >>> 0, arg3, 52, 8);
+  require(489) /* read */.write(arg0, +arg1, arg2 >>> 0, arg3, 52, 8);
   return (arg2 >>> 0) + 8;
 }
 function utf8ToBytes(str) {
@@ -2665,7 +2668,7 @@ function utf8ToBytes(str) {
 }
 function base64ToBytes(arg0) {
   let result;
-  const obj = arg1(arg6[0]);
+  const obj = require(206) /* getLens */;
   const str = arg0.split("=")[0];
   let str3 = "";
   const replaced = arg0.split("=")[0].trim().replace(closure_5, "");
@@ -2725,10 +2728,10 @@ function numberIsNaN(length) {
 }
 let forResult = null;
 if ("function" === typeof Symbol) {
-  const _Symbol = Symbol;
+  let _Symbol = Symbol;
   forResult = null;
   if ("function" === typeof Symbol.for) {
-    const _Symbol2 = Symbol;
+    let _Symbol2 = Symbol;
     forResult = Symbol.for("nodejs.util.inspect.custom");
   }
 }
@@ -2741,9 +2744,9 @@ arg5.SlowBuffer = function SlowBuffer(arg0) {
   return Buffer.alloc(+num);
 };
 arg5.INSPECT_MAX_BYTES = 50;
-let closure_3 = 2147483647;
+let c3 = 2147483647;
 arg5.kMaxLength = 2147483647;
-Buffer.TYPED_ARRAY_SUPPORT = function typedArraySupport() {
+Buffer.TYPED_ARRAY_SUPPORT = (function typedArraySupport() {
   const uint8Array = new Uint8Array(1);
   const obj = {
     foo() {
@@ -2753,7 +2756,7 @@ Buffer.TYPED_ARRAY_SUPPORT = function typedArraySupport() {
   Object.setPrototypeOf(obj, Uint8Array.prototype);
   Object.setPrototypeOf(uint8Array, obj);
   return 42 === uint8Array.foo();
-}();
+})();
 let TYPED_ARRAY_SUPPORT = Buffer.TYPED_ARRAY_SUPPORT;
 if (!TYPED_ARRAY_SUPPORT) {
   const _console = console;
@@ -2794,8 +2797,8 @@ Buffer.prototype.toLocaleString = Buffer.prototype.toString;
 if (forResult) {
   Buffer.prototype[forResult] = Buffer.prototype.inspect;
 }
-let closure_4 = 4096;
-let closure_5 = /[^+/0-9A-Za-z-_]/g;
+let c4 = 4096;
+const re5 = /[^+/0-9A-Za-z-_]/g;
 const array = new Array(256);
 let num = 0;
 let num2 = 0;

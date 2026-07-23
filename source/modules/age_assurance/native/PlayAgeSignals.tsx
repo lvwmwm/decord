@@ -1,19 +1,19 @@
-// Module ID: 16027
-// Function ID: 122993
+// Module ID: 16144
+// Function ID: 125166
 // Name: _getAgeSignals
-// Dependencies: []
+// Dependencies: [5, 16145, 2]
 // Exports: getAgeSignals, isConsideredOlderThan
 
-// Module 16027 (_getAgeSignals)
+// Module 16144 (_getAgeSignals)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
 function _getAgeSignals() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getAgeSignals = obj;
   return obj(...arguments);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const obj = { add: "center", getChannel: "flex-start", body: "flex", style: "row", accessible: 8, registerAsset: "wrap" };
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/age_assurance/native/PlayAgeSignals.tsx");
+let obj = { VERIFIED: 0, SUPERVISED: 1, SUPERVISED_APPROVAL_PENDING: 2, SUPERVISED_APPROVAL_DENIED: 3, UNKNOWN: 4, DECLARED: 5 };
+const result = require("set").fileFinishedImporting("modules/age_assurance/native/PlayAgeSignals.tsx");
 
 export const AgeSignalsVerificationStatus = obj;
 export const getAgeSignals = function getAgeSignals() {

@@ -1,30 +1,32 @@
-// Module ID: 13683
-// Function ID: 103574
+// Module ID: 13797
+// Function ID: 105730
 // Name: useActionTotalsForDisplayType
-// Dependencies: []
+// Dependencies: [6769, 6770, 624, 6828, 5618, 2]
 // Exports: useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
 
-// Module 13683 (useActionTotalsForDisplayType)
+// Module 13797 (useActionTotalsForDisplayType)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { TeenActionDisplayType } from "items";
+
+const require = arg1;
 function useActionTotalsForDisplayType(displayType) {
-  const arg1 = displayType;
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => totalForDisplayType.getTotalForDisplayType(arg0));
+  const _require = displayType;
+  const items = [_isNativeReflectConstruct];
+  return _require(624).useStateFromStores(items, () => outer1_2.getTotalForDisplayType(closure_0));
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const TeenActionDisplayType = arg1(dependencyMap[1]).TeenActionDisplayType;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/parent_tools/hooks/useFamilyCenterActivities.tsx");
+let result = require("defaultAreStatesEqual").fileFinishedImporting("modules/parent_tools/hooks/useFamilyCenterActivities.tsx");
 
 export const useActionsForDisplayType = function useActionsForDisplayType(displayType) {
-  const arg1 = displayType;
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStoresArray(items, () => actionsForDisplayType.getActionsForDisplayType(arg0));
+  const _require = displayType;
+  const items = [_isNativeReflectConstruct];
+  return _require(624).useStateFromStoresArray(items, () => outer1_2.getActionsForDisplayType(closure_0));
 };
 export { useActionTotalsForDisplayType };
 export const useHasActionForAnyDisplayType = function useHasActionForAnyDisplayType() {
-  const items = [closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    const values = Object.values(closure_3);
-    return values.some((arg0) => totalForDisplayType.getTotalForDisplayType(arg0) > 0);
+  const items = [_isNativeReflectConstruct];
+  return require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
+    const values = Object.values(outer1_3);
+    return values.some((arg0) => outer2_2.getTotalForDisplayType(arg0) > 0);
   });
 };
 export const useFormattedTotalForDisplayType = function useFormattedTotalForDisplayType(displayType) {
@@ -34,7 +36,7 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     num = tmp;
   }
   if (displayType === TeenActionDisplayType.TOTAL_VOICE_MINUTES) {
-    return arg1(dependencyMap[3]).formatTotalTime(num);
+    return require(6828) /* getActivityTypeTextConfigs */.formatTotalTime(num);
   } else if (displayType === TeenActionDisplayType.PURCHASES) {
     const totalSpendAmount = store.getTotalSpendAmount();
     const totalSpendCurrency = store.getTotalSpendCurrency();
@@ -42,8 +44,8 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     if (null != totalSpendAmount) {
       result = num;
       if (null != totalSpendCurrency) {
-        result = arg1(dependencyMap[4]).shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
-        const obj2 = arg1(dependencyMap[4]);
+        result = require(5618) /* formatSingleCurrencyPrice */.shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
+        const obj2 = require(5618) /* formatSingleCurrencyPrice */;
       }
     }
     return result;
@@ -51,8 +53,8 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     const totalGiftValue = store.getTotalGiftValue();
     let result1 = num;
     if (null != totalGiftValue) {
-      result1 = arg1(dependencyMap[4]).shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
-      const obj = arg1(dependencyMap[4]);
+      result1 = require(5618) /* formatSingleCurrencyPrice */.shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
+      const obj = require(5618) /* formatSingleCurrencyPrice */;
     }
     return result1;
   } else {

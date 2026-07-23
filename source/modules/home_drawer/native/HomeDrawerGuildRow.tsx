@@ -1,33 +1,51 @@
-// Module ID: 14729
-// Function ID: 111090
+// Module ID: 14844
+// Function ID: 113254
 // Name: GuildRowWrapper
-// Dependencies: []
+// Dependencies: [31, 27, 3760, 1352, 1348, 1907, 6879, 1838, 4142, 3767, 4325, 1849, 653, 4326, 33, 4130, 566, 3987, 3984, 14845, 10202, 4126, 14847, 14848, 4320, 21, 14849, 14851, 11144, 14852, 14853, 14854, 14856, 14857, 14835, 2]
 // Exports: default
 
-// Module 14729 (GuildRowWrapper)
+// Module 14844 (GuildRowWrapper)
+import MentionSubtitle from "MentionSubtitle";
+import { View } from "areHomeDrawerGuildTypingStatesEqual";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { isThread } from "_callSuper";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_createForOfIteratorHelperLoose";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { UnreadSetting } from "ReadStateTypes";
+import jsxProd from "UnreadSubtitle";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_15;
+let closure_16;
+let closure_18;
+let closure_19;
+const require = arg1;
 function GuildRowWrapper(guild) {
   guild = guild.guild;
-  const arg1 = guild;
   const disableSubtitle = guild.disableSubtitle;
-  const importDefault = disableSubtitle;
   const onActiveHookChange = guild.onActiveHookChange;
-  const dependencyMap = onActiveHookChange;
+  let c20;
   let callback2;
   let memo2;
-  const tmp = callback2();
+  let tmp = callback2();
   const React = tmp;
-  let obj = arg1(dependencyMap[14]);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => isHomeDrawerChannelMuted.hasUnread(guild.id));
-  const View = stateFromStores;
-  let obj1 = arg1(dependencyMap[14]);
-  const items1 = [closure_11];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => mentionChannel.getMuteConfig(guild.id));
-  let closure_5 = stateFromStores1;
+  let obj = guild(onActiveHookChange[16]);
+  let items = [unreadChannel];
+  const stateFromStores = obj.useStateFromStores(items, () => unreadChannel.hasUnread(guild.id));
+  let obj1 = guild(onActiveHookChange[16]);
+  const items1 = [mentionChannelName];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => mentionChannelName.getMuteConfig(guild.id));
   const items2 = [stateFromStores1];
   const memo = React.useMemo(() => {
     if (null == stateFromStores1) {
-      let obj = { "Bool(false)": true, "Bool(false)": true };
+      let obj = { isMuted: false, isTemporary: false };
     } else {
       obj = {};
       let tmp2 = null == stateFromStores1.end_time;
@@ -43,50 +61,63 @@ function GuildRowWrapper(guild) {
     }
     return obj;
   }, items2);
-  let closure_6 = memo;
   const items3 = [guild, memo, , ];
   ({ guildName: arr4[2], guildNameText: arr4[3] } = tmp);
   const memo1 = React.useMemo(() => {
     if (memo.isMuted) {
       let tmp4 = onActiveHookChange;
       if (memo.isTemporary) {
-        tmp4 = tmp4[17];
+        tmp4 = tmp4[19];
         let BellSlashIcon = tmp3(tmp4).BellZIcon;
       } else {
-        BellSlashIcon = tmp3(tmp4[18]).BellSlashIcon;
+        BellSlashIcon = tmp3(tmp4[20]).BellSlashIcon;
       }
     } else {
       let obj = { style: tmp.guildName };
-      obj = { guild_id: "_desired", exports: "hash", body: "content", style: voiceUsers1.guildNameText };
+      obj = { variant: "text-md/medium", style: streamingUser.guildNameText, lineClamp: 1 };
       let str = "text-default";
       if (memo.isMuted) {
         str = "text-muted";
       }
       obj.color = str;
       obj.children = guild.name;
-      const items = [typingChannelId(guild(onActiveHookChange[19]).Text, obj), typingChannelId(voiceUsers1, {})];
+      const items = [typingChannelName(guild(onActiveHookChange[21]).Text, obj), typingChannelName(streamingUser, { size: "xs", color: "icon-muted" })];
       obj.children = items;
-      return typingChannelName(stateFromStores, obj);
+      return stateFromStores2(stateFromStores, obj);
     }
   }, items3);
-  const isHomeDrawerChannelMuted = arg1(dependencyMap[20]).useIsHomeDrawerChannelMuted();
-  closure_7 = isHomeDrawerChannelMuted;
-  const obj3 = arg1(dependencyMap[20]);
-  const items4 = [closure_6, closure_5, closure_12, closure_10, closure_9, closure_11];
-  const items5 = [guild.id, isHomeDrawerChannelMuted];
-  const stateFromStoresObject = arg1(dependencyMap[14]).useStateFromStoresObject(items4, () => {
-    const selectableChannelIds = memo.getSelectableChannelIds(guild.id);
+  const isHomeDrawerChannelMuted = guild(onActiveHookChange[22]).useIsHomeDrawerChannelMuted();
+  const obj3 = guild(onActiveHookChange[22]);
+  const isHomeDrawerChannelInChannelList = guild(onActiveHookChange[23]).useIsHomeDrawerChannelInChannelList();
+  const obj4 = guild(onActiveHookChange[23]);
+  const items4 = [isHomeDrawerChannelInChannelList, isHomeDrawerChannelMuted, mentionChannelCount, mentionChannel, unreadChannelCount, mentionChannelName, stateFromStores1];
+  const items5 = [guild.id, isHomeDrawerChannelMuted, isHomeDrawerChannelInChannelList];
+  const stateFromStoresObject = guild(onActiveHookChange[16]).useStateFromStoresObject(items4, () => {
+    const selectableChannelIds = isHomeDrawerChannelInChannelList.getSelectableChannelIds(guild.id);
     const found = selectableChannelIds.filter((arg0) => {
-      const basicChannel = basicChannel.getBasicChannel(arg0);
+      const basicChannel = isHomeDrawerChannelMuted.getBasicChannel(arg0);
       let tmp2 = null != basicChannel;
       if (tmp2) {
-        let tmp4 = !callback(basicChannel);
+        let tmp4 = !outer1_7(basicChannel);
         if (tmp4) {
-          let hasUnreadResult = closure_9.hasUnread(arg0);
-          if (hasUnreadResult) {
-            hasUnreadResult = closure_11.resolveUnreadSetting(basicChannel) === constants.ALL_MESSAGES;
+          let tmp6 = memo(basicChannel.type);
+          if (tmp6) {
+            tmp6 = !stateFromStores1.hasJoined(arg0);
           }
-          tmp4 = hasUnreadResult;
+          let tmp8 = !tmp6;
+          if (tmp8) {
+            const tmp10 = !outer1_8(basicChannel);
+            let tmp11 = !tmp10;
+            if (!tmp10) {
+              let hasUnreadResult = unreadChannelCount.hasUnread(arg0);
+              if (hasUnreadResult) {
+                hasUnreadResult = mentionChannelName.resolveUnreadSetting(basicChannel) === typingChannelId.ALL_MESSAGES;
+              }
+              tmp11 = hasUnreadResult;
+            }
+            tmp8 = tmp11;
+          }
+          tmp4 = tmp8;
         }
         tmp2 = tmp4;
       }
@@ -94,116 +125,128 @@ function GuildRowWrapper(guild) {
     });
     let channel;
     if (found.length > 0) {
-      channel = stateFromStores1.getChannel(found[0]);
+      channel = isHomeDrawerChannelMuted.getChannel(found[0]);
     }
     const obj = { unreadChannel: channel };
     let channelName;
     if (null != channel) {
-      channelName = guild(onActiveHookChange[21]).computeChannelName(channel, mentionChannelName, unreadChannelCount);
-      const obj2 = guild(onActiveHookChange[21]);
+      channelName = guild(onActiveHookChange[24]).computeChannelName(channel, mentionChannelCount, mentionChannel);
+      const obj2 = guild(onActiveHookChange[24]);
     }
     obj.unreadChannelName = channelName;
     obj.unreadChannelCount = found.length;
     return obj;
   }, items5);
-  const unreadChannel = stateFromStoresObject.unreadChannel;
-  let closure_8 = unreadChannel;
+  unreadChannel = stateFromStoresObject.unreadChannel;
   const unreadChannelName = stateFromStoresObject.unreadChannelName;
-  closure_9 = unreadChannelName;
-  const unreadChannelCount = stateFromStoresObject.unreadChannelCount;
-  closure_10 = unreadChannelCount;
-  const obj4 = arg1(dependencyMap[14]);
-  const items6 = [closure_7, closure_5, closure_12, closure_10];
-  const items7 = [guild.id];
-  const stateFromStoresObject1 = arg1(dependencyMap[14]).useStateFromStoresObject(items6, () => {
-    const tmp = isHomeDrawerChannelMuted.getMutableGuildStates()[closure_0.id];
-    const guild = tmp;
+  unreadChannelCount = stateFromStoresObject.unreadChannelCount;
+  const obj5 = guild(onActiveHookChange[16]);
+  const items6 = [unreadChannel, isHomeDrawerChannelMuted, mentionChannelCount, mentionChannel, stateFromStores1];
+  const items7 = [guild.id, isHomeDrawerChannelInChannelList];
+  const stateFromStoresObject1 = guild(onActiveHookChange[16]).useStateFromStoresObject(items6, () => {
+    const tmp = unreadChannel.getMutableGuildStates()[guild.id];
+    guild = tmp;
     if (null == tmp) {
       let obj = { mentionChannel: undefined, mentionChannelName: undefined, mentionChannelCount: 0 };
       return obj;
     } else {
-      const keys = disableSubtitle(onActiveHookChange[22]).keys(tmp.mentionCounts);
-      const found = keys.filter((arg0) => tmp.mentionCounts[arg0].count > 0);
+      const keys = disableSubtitle(onActiveHookChange[25]).keys(tmp.mentionCounts);
+      const found = keys.filter((arg0) => {
+        if (tmp.mentionCounts[arg0].count <= 0) {
+          return false;
+        } else {
+          const basicChannel = isHomeDrawerChannelMuted.getBasicChannel(arg0);
+          let tmp4 = null != basicChannel;
+          if (tmp4) {
+            let tmp6 = memo(basicChannel.type);
+            if (tmp6) {
+              tmp6 = !stateFromStores1.hasJoined(arg0);
+            }
+            let tmp8 = !tmp6;
+            if (tmp8) {
+              tmp8 = outer1_8(basicChannel);
+            }
+            tmp4 = tmp8;
+          }
+          return tmp4;
+        }
+      });
       let channel;
       if (found.length > 0) {
-        channel = stateFromStores1.getChannel(found[0]);
+        channel = isHomeDrawerChannelMuted.getChannel(found[0]);
       }
       obj = { mentionChannel: channel };
       let channelName;
       if (null != channel) {
-        channelName = guild(onActiveHookChange[21]).computeChannelName(channel, mentionChannelName, unreadChannelCount);
-        const obj2 = guild(onActiveHookChange[21]);
+        channelName = guild(onActiveHookChange[24]).computeChannelName(channel, mentionChannelCount, mentionChannel);
+        const obj2 = guild(onActiveHookChange[24]);
       }
       obj.mentionChannelName = channelName;
       obj.mentionChannelCount = found.length;
       return obj;
     }
   }, items7);
-  const mentionChannel = stateFromStoresObject1.mentionChannel;
-  closure_11 = mentionChannel;
-  const mentionChannelName = stateFromStoresObject1.mentionChannelName;
-  closure_12 = mentionChannelName;
-  const mentionChannelCount = stateFromStoresObject1.mentionChannelCount;
-  const obj5 = arg1(dependencyMap[14]);
-  const voiceUsers = arg1(dependencyMap[23]).useVoiceUsers(guild);
+  mentionChannel = stateFromStoresObject1.mentionChannel;
+  mentionChannelName = stateFromStoresObject1.mentionChannelName;
+  mentionChannelCount = stateFromStoresObject1.mentionChannelCount;
+  const obj6 = guild(onActiveHookChange[16]);
+  const voiceUsers = guild(onActiveHookChange[26]).useVoiceUsers(guild);
   const voiceUsers1 = voiceUsers.voiceUsers;
   const streamingUser = voiceUsers.streamingUser;
-  const UnreadSetting = streamingUser;
-  const obj6 = arg1(dependencyMap[23]);
-  const homeDrawerGuildTyping = arg1(dependencyMap[24]).useHomeDrawerGuildTyping(guild.id);
+  const obj7 = guild(onActiveHookChange[26]);
+  const homeDrawerGuildTyping = guild(onActiveHookChange[27]).useHomeDrawerGuildTyping(guild.id);
   const typingChannelId = homeDrawerGuildTyping.typingChannelId;
   const typingChannelName = homeDrawerGuildTyping.typingChannelName;
-  const obj7 = arg1(dependencyMap[24]);
-  const items8 = [closure_5];
+  const obj8 = guild(onActiveHookChange[27]);
+  const items8 = [isHomeDrawerChannelMuted];
   const items9 = [typingChannelId];
-  const stateFromStores2 = arg1(dependencyMap[14]).useStateFromStores(items8, () => stateFromStores1.getChannel(typingChannelId), items9);
-  obj = stateFromStores2;
+  const stateFromStores2 = guild(onActiveHookChange[16]).useStateFromStores(items8, () => isHomeDrawerChannelMuted.getChannel(typingChannelId), items9);
   obj = {};
-  let tmp13 = typingChannelId;
-  const obj8 = arg1(dependencyMap[14]);
+  let tmp14 = typingChannelId;
+  const obj9 = guild(onActiveHookChange[16]);
   if (null == typingChannelId) {
-    tmp13 = mentionChannelCount;
+    tmp14 = voiceUsers1;
   }
-  obj.channelId = tmp13;
+  obj.channelId = tmp14;
   obj.guildId = guild.id;
   obj.typingUserIds = homeDrawerGuildTyping.typingUserIds;
-  const tmp12Result = importDefault(dependencyMap[25])(obj);
-  callback2 = tmp12Result;
-  let tmp15 = memo.isMuted || disableSubtitle;
-  if (!tmp15) {
-    tmp15 = 0 === voiceUsers1.length;
+  const tmp13Result = disableSubtitle(onActiveHookChange[28])(obj);
+  c20 = tmp13Result;
+  let tmp16 = memo.isMuted || disableSubtitle;
+  if (!tmp16) {
+    tmp16 = 0 === voiceUsers1.length;
   }
-  const items10 = [!tmp15, streamingUser, disableSubtitle, mentionChannelName, mentionChannelCount, typingChannelId, tmp12Result, memo.isMuted, stateFromStores, unreadChannelName, unreadChannelCount];
+  callback2 = tmp17;
+  const items10 = [!tmp16, streamingUser, disableSubtitle, mentionChannelName, mentionChannelCount, typingChannelId, tmp13Result, memo.isMuted, stateFromStores, unreadChannelName, unreadChannelCount];
   memo2 = React.useMemo(() => {
-    if (tmp16) {
+    if (c21) {
       if (null != streamingUser) {
-        let VOICE = stateFromStores2.STREAMING;
+        let VOICE = _undefined.STREAMING;
       } else {
-        VOICE = stateFromStores2.VOICE;
+        VOICE = _undefined.VOICE;
       }
-      const tmp16 = streamingUser;
     } else {
       if (disableSubtitle) {
-        let TYPING = stateFromStores2.NONE;
+        let TYPING = _undefined.NONE;
       } else {
         if (null != mentionChannelName) {
           if (mentionChannelCount > 0) {
-            TYPING = stateFromStores2.MENTION;
+            TYPING = _undefined.MENTION;
           }
         }
         if (null != typingChannelId) {
-          if (null != tmp12Result) {
+          if (null != _undefined) {
             if (!memo.isMuted) {
-              TYPING = stateFromStores2.TYPING;
+              TYPING = _undefined.TYPING;
             }
           }
         }
         if (stateFromStores) {
           if (null != unreadChannelName) {
-            const UNREAD = stateFromStores2.UNREAD;
+            const UNREAD = _undefined.UNREAD;
           }
         }
-        const NONE = stateFromStores2.NONE;
+        const NONE = _undefined.NONE;
       }
       return TYPING;
     }
@@ -214,79 +257,65 @@ function GuildRowWrapper(guild) {
       onActiveHookChange(memo2);
     }
   }, items11);
-  const items12 = [memo2, guild, streamingUser, voiceUsers1, mentionChannel, mentionChannelName, mentionChannelCount, stateFromStores2, typingChannelName, tmp12Result, unreadChannel, unreadChannelName, unreadChannelCount];
+  const items12 = [memo2, guild, streamingUser, voiceUsers1, mentionChannel, mentionChannelName, mentionChannelCount, stateFromStores2, typingChannelName, tmp13Result, unreadChannel, unreadChannelName, unreadChannelCount];
   const memo3 = React.useMemo(() => {
-    if (stateFromStores2.STREAMING === memo2) {
+    if (_undefined.STREAMING === memo2) {
       let obj = { guildId: guild.id, streamingUser };
-      return typingChannelId(disableSubtitle(onActiveHookChange[26]), obj);
-    } else if (stateFromStores2.VOICE === tmp) {
+      return typingChannelName(disableSubtitle(onActiveHookChange[29]), obj);
+    } else if (_undefined.VOICE === tmp) {
       obj = { guildId: guild.id, voiceUsers: voiceUsers1 };
-      return typingChannelId(disableSubtitle(onActiveHookChange[27]), obj);
-    } else if (stateFromStores2.MENTION === tmp) {
+      return typingChannelName(disableSubtitle(onActiveHookChange[30]), obj);
+    } else if (_undefined.MENTION === tmp) {
       let tmp22 = null;
       if (null != mentionChannelName) {
         const obj1 = { guild, channel: mentionChannel, channelName: mentionChannelName, count: mentionChannelCount };
-        tmp22 = typingChannelId(disableSubtitle(onActiveHookChange[28]), obj1);
+        tmp22 = typingChannelName(disableSubtitle(onActiveHookChange[31]), obj1);
       }
       return tmp22;
-    } else if (stateFromStores2.TYPING === tmp) {
-      const obj2 = { guild, channel: stateFromStores2, channelName: typingChannelName, text: tmp12Result };
-      return typingChannelId(disableSubtitle(onActiveHookChange[29]), obj2);
-    } else if (stateFromStores2.UNREAD === tmp) {
+    } else if (_undefined.TYPING === tmp) {
+      const obj2 = { guild, channel: stateFromStores2, channelName: typingChannelName, text: _undefined };
+      return typingChannelName(disableSubtitle(onActiveHookChange[32]), obj2);
+    } else if (_undefined.UNREAD === tmp) {
       let tmp6 = null;
       if (null != unreadChannelName) {
         obj = { guild, channel: unreadChannel, channelName: unreadChannelName, count: unreadChannelCount };
-        tmp6 = typingChannelId(disableSubtitle(onActiveHookChange[30]), obj);
+        tmp6 = typingChannelName(disableSubtitle(onActiveHookChange[33]), obj);
       }
       return tmp6;
-    } else if (stateFromStores2.NONE === tmp) {
+    } else if (_undefined.NONE === tmp) {
       return null;
     }
   }, items12);
   obj = { title: memo1, subtitle: memo3 };
-  let tmp21 = null;
+  let tmp22 = null;
   if (!memo.isMuted) {
-    tmp21 = null;
+    tmp22 = null;
     if (!disableSubtitle) {
-      tmp21 = null;
+      tmp22 = null;
       if (0 !== voiceUsers1.length) {
         obj1 = { voiceUsers: voiceUsers1, streamingChannelId: voiceUsers.streamingChannelId, streamingUser, guildId: guild.id };
-        tmp21 = typingChannelId(arg1(dependencyMap[23]).GuildVoiceState, obj1);
+        tmp22 = typingChannelName(guild(onActiveHookChange[26]).GuildVoiceState, obj1);
       }
     }
   }
-  obj.right = tmp21;
-  return typingChannelId(arg1(dependencyMap[31]).HomeDrawerSharedItem, obj);
+  obj.right = tmp22;
+  return typingChannelName(guild(onActiveHookChange[34]).HomeDrawerSharedItem, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_13, NOOP: closure_14 } = arg1(dependencyMap[10]));
-const UnreadSetting = arg1(dependencyMap[11]).UnreadSetting;
-const tmp2 = arg1(dependencyMap[10]);
-({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[12]));
-const obj = { STREAMING: "streaming", VOICE: "voice", MENTION: "mention", TYPING: "typing", UNREAD: "unread", NONE: "none" };
-const tmp3 = arg1(dependencyMap[12]);
-let closure_19 = arg1(dependencyMap[13]).createStyles({ guildName: { "Bool(false)": "safety_user_sentiment_notice_dismissed_at", "Bool(false)": "message", "Bool(false)": null }, guildNameText: { flexShrink: 1 } });
-const obj2 = arg1(dependencyMap[13]);
-const result = arg1(dependencyMap[32]).fileFinishedImporting("modules/home_drawer/native/HomeDrawerGuildRow.tsx");
+({ EMPTY_STRING_SNOWFLAKE_ID: closure_15, NOOP: closure_16 } = ME);
+({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
+let obj = { STREAMING: "streaming", VOICE: "voice", MENTION: "mention", TYPING: "typing", UNREAD: "unread", NONE: "none" };
+let closure_21 = _createForOfIteratorHelperLoose.createStyles({ guildName: { flexDirection: "row", alignItems: "center", gap: 4 }, guildNameText: { flexShrink: 1 } });
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/home_drawer/native/HomeDrawerGuildRow.tsx");
 
 export default function HomeDrawerGuildRow(guildId) {
   let disableSubtitle;
   let onActiveHookChange;
-  const arg1 = guildId.guildId;
+  guildId = guildId.guildId;
   ({ disableSubtitle, onActiveHookChange } = guildId);
-  let obj = arg1(dependencyMap[14]);
-  const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId));
-  const MobileHomeDrawerExperiment = arg1(dependencyMap[15]).MobileHomeDrawerExperiment;
+  let obj = guildId(566);
+  const items = [closure_10];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getGuild(guildId));
+  const MobileHomeDrawerExperiment = guildId(3987).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

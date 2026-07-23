@@ -1,13 +1,15 @@
-// Module ID: 4152
-// Function ID: 35106
+// Module ID: 4156
+// Function ID: 35138
 // Name: ApplicationTypes
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 4152 (ApplicationTypes)
-const items = [5, "1211781489931452447", "1211780388607885393", "1166579889915310151", "1276239071764680926", "1257458870390099989", "1247266306231898122", "1245013453329141861", "1230632401701699617", "1098316259562635386"];
+// Module 4156 (ApplicationTypes)
+import set from "set";
+
+const items = ["1102741339122188349", "1211781489931452447", "1211780388607885393", "1166579889915310151", "1276239071764680926", "1257458870390099989", "1247266306231898122", "1245013453329141861", "1230632401701699617", "1098316259562635386"];
 const items1 = ["1211781489931452447", "1211780388607885393", "1166579889915310151"];
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/applications/ApplicationConstants.tsx");
+let set = new Set(items1);
+const result = set.fileFinishedImporting("modules/applications/ApplicationConstants.tsx");
 
 export const ApplicationTypes = { DEPRECATED_GAME: 1, [1]: "DEPRECATED_GAME", TICKETED_EVENTS: 3, [3]: "TICKETED_EVENTS", GUILD_ROLE_SUBSCRIPTIONS: 4, [4]: "GUILD_ROLE_SUBSCRIPTIONS", GAME: 5, [5]: "GAME", NON_GAME_DETECTABLE: 6, [6]: "NON_GAME_DETECTABLE" };
 export const BotTagTypes = { BOT: 0, [0]: "BOT", SERVER: 1, [1]: "SERVER", SYSTEM_DM: 2, [2]: "SYSTEM_DM", OFFICIAL: 3, [3]: "OFFICIAL", STAFF_ONLY_DM: 4, [4]: "STAFF_ONLY_DM", NOT_STAFF_WARNING: 5, [5]: "NOT_STAFF_WARNING", ORIGINAL_POSTER: 6, [6]: "ORIGINAL_POSTER", AI: 7, [7]: "AI" };
@@ -16,4 +18,4 @@ export const DISCORD_WAGONS_APPLICATION_ID = "1211781489931452447";
 export const DISCORD_WAGONS_QA_APPLICATION_ID = "1211780388607885393";
 export const DISCORD_WAGONS_DEV_APPLICATION_ID = "1166579889915310151";
 export const INSTALL_LESS_APP_IDS = items;
-export const OBEY_SILENT_HARDWARE_SWITCH_APP_IDS = new Set(items1);
+export const OBEY_SILENT_HARDWARE_SWITCH_APP_IDS = set;

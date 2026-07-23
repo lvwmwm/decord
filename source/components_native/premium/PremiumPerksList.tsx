@@ -1,37 +1,44 @@
-// Module ID: 14547
-// Function ID: 109586
+// Module ID: 14661
+// Function ID: 111746
 // Name: PremiumPerksList
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 2]
 // Exports: default
 
-// Module 14547 (PremiumPerksList)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { perkInfoContainer: { "Bool(false)": 930167211465604600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000007836384246803317, "Bool(false)": 28788265.235748198 }, perkInfoTextContainer: {}, perkListContainer: {} };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderRadius: importDefault(dependencyMap[4]).radii.round };
-obj.perkIconContainer = obj;
-let closure_5 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("components_native/premium/PremiumPerksList.tsx");
+// Module 14661 (PremiumPerksList)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = { perkInfoContainer: { flexDirection: "row", alignItems: "center", gap: 16 }, perkInfoTextContainer: { flexDirection: "column", gap: 4, maxWidth: 279 }, perkListContainer: { width: "100%", paddingVertical: 24, flexDirection: "column", gap: 24 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, width: 40, height: 40, justifyContent: "center", alignItems: "center" };
+_createForOfIteratorHelperLoose.perkIconContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("components_native/premium/PremiumPerksList.tsx");
 
 export default function PremiumPerksList(perks) {
   perks = perks.perks;
-  const tmp = callback2();
-  const arg1 = tmp;
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
   return callback(View, {
     style: tmp.perkListContainer,
-    children: perks.map((children) => {
+    children: perks.map((IconComponent) => {
       let obj = { style: tmp.perkInfoContainer };
-      obj = { style: tmp.perkIconContainer, children: callback(children.IconComponent, { size: "md" }) };
-      const items = [callback(closure_2, obj), ];
+      obj = { style: tmp.perkIconContainer, children: outer1_3(IconComponent.IconComponent, { size: "md" }) };
+      const items = [outer1_3(outer1_2, obj), ];
       obj = { style: tmp.perkInfoTextContainer };
-      const items1 = [callback(tmp(closure_1[5]).Text, { children: children.label }), callback(tmp(closure_1[5]).Text, { children: children.description })];
+      const obj1 = { variant: "text-md/bold", color: "text-strong", children: IconComponent.label };
+      const items1 = [outer1_3(tmp(outer1_1[5]).Text, obj1), ];
+      const obj2 = { variant: "text-md/medium", color: "text-default", children: IconComponent.description };
+      items1[1] = outer1_3(tmp(outer1_1[5]).Text, obj2);
       obj.children = items1;
-      items[1] = callback2(closure_2, obj);
+      items[1] = outer1_4(outer1_2, obj);
       obj.children = items;
-      return callback2(closure_2, obj, arg1);
+      return outer1_4(outer1_2, obj, arg1);
     })
   });
 };

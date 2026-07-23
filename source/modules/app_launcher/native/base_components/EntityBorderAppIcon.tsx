@@ -1,23 +1,23 @@
-// Module ID: 11166
-// Function ID: 86843
+// Module ID: 11176
+// Function ID: 86893
 // Name: EntityBorderAppIcon
-// Dependencies: []
+// Dependencies: [27, 33, 689, 4130, 5085, 2]
 // Exports: default
 
-// Module 11166 (EntityBorderAppIcon)
-const View = require(dependencyMap[0]).View;
-const jsx = require(dependencyMap[1]).jsx;
-const sm = importDefault(dependencyMap[2]).radii.sm;
-const _module = require(dependencyMap[3]);
-let closure_5 = _module.createStyles((width, borderRadius) => {
-  let obj = { appIcon: obj };
+// Module 11176 (EntityBorderAppIcon)
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const sm = require("_createForOfIteratorHelperLoose").radii.sm;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles((width, borderRadius) => {
+  obj = { appIcon: obj };
   obj = { width, height: width, borderRadius };
-  obj = { backgroundColor: importDefault(dependencyMap[2]).colors.BORDER_SUBTLE, borderRadius: borderRadius + 1 };
+  obj = { padding: 1, backgroundColor: importDefault(689).colors.BORDER_SUBTLE, overflow: "hidden", borderRadius: borderRadius + 1 };
   obj.entityWrapper = obj;
   return obj;
 });
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/app_launcher/native/base_components/EntityBorderAppIcon.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/base_components/EntityBorderAppIcon.tsx");
 
 export default function EntityBorderAppIcon(iconSize) {
   let iconSource;
@@ -35,5 +35,5 @@ export default function EntityBorderAppIcon(iconSize) {
   const tmp = callback(num, iconBorderRadius);
   const items = [tmp.entityWrapper, wrapperStyle];
   const items1 = [tmp.appIcon, iconStyle];
-  return <View style={items}>{jsx(importDefault(dependencyMap[4]), { style: items1, source: iconSource })}</View>;
+  return <View style={items}>{jsx(importDefault(5085), { style: items1, source: iconSource })}</View>;
 };

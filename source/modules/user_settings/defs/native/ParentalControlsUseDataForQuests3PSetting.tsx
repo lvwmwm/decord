@@ -1,29 +1,31 @@
-// Module ID: 14451
-// Function ID: 108914
+// Module ID: 14565
+// Function ID: 111067
 // Name: toggle
-// Dependencies: []
+// Dependencies: [6769, 7662, 7125, 13728, 10095, 1212, 2]
 
-// Module 14451 (toggle)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+// Module 14565 (toggle)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.CyLYKZ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.CyLYKZ);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuests3PSettingValue() {
     let tmp;
-    const selectedTeenId = arg1(dependencyMap[2]).useSelectedTeenId();
-    const ParentalControlledQuests3PDataOptedOut = arg1(dependencyMap[3]).ParentalControlledQuests3PDataOptedOut;
+    const selectedTeenId = require(7125) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledQuests3PDataOptedOut = require(13728) /* result */.ParentalControlledQuests3PDataOptedOut;
     if (null != selectedTeenId) {
       tmp = selectedTeenId;
     }
     return !ParentalControlledQuests3PDataOptedOut.useControlledSetting(tmp);
   },
   onValueChange: function onDataToSupportQuests3PSettingValueChange(arg0) {
-    const selectedTeenId = selectedTeenId.getSelectedTeenId();
-    const ParentalControlledQuests3PDataOptedOut = arg1(dependencyMap[3]).ParentalControlledQuests3PDataOptedOut;
+    selectedTeenId = selectedTeenId.getSelectedTeenId();
+    const ParentalControlledQuests3PDataOptedOut = require(13728) /* result */.ParentalControlledQuests3PDataOptedOut;
     let tmp2;
     if (null != selectedTeenId) {
       tmp2 = selectedTeenId;
@@ -32,8 +34,8 @@ obj = {
   },
   useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
     let tmp;
-    const selectedTeenId = arg1(dependencyMap[2]).useSelectedTeenId();
-    const ParentalControlledDropsOptedOut = arg1(dependencyMap[3]).ParentalControlledDropsOptedOut;
+    const selectedTeenId = require(7125) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledDropsOptedOut = require(13728) /* result */.ParentalControlledDropsOptedOut;
     if (null != selectedTeenId) {
       tmp = selectedTeenId;
     }
@@ -41,7 +43,7 @@ obj = {
   },
   unsearchable: true
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataForQuests3PSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+let result = require("useSelectedTeen").fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataForQuests3PSetting.tsx");
 
-export default toggle;
+export default createToggle;

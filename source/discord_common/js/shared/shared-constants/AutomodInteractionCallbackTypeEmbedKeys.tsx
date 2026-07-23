@@ -1,10 +1,9 @@
-// Module ID: 6740
-// Function ID: 52494
+// Module ID: 6745
+// Function ID: 52526
 // Name: AutomodInteractionCallbackTypeEmbedKeys
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6740 (AutomodInteractionCallbackTypeEmbedKeys)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodInteractionCallbackTypeEmbedKeys.tsx");
+// Module 6745 (AutomodInteractionCallbackTypeEmbedKeys)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodInteractionCallbackTypeEmbedKeys.tsx");
 
 export const AutomodInteractionCallbackTypeEmbedKeys = { MODAL: "MODAL" };

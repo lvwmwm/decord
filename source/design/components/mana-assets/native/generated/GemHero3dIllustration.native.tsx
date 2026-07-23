@@ -1,13 +1,13 @@
-// Module ID: 6155
-// Function ID: 50165
+// Module ID: 6160
+// Function ID: 50194
 // Name: GemHero3dIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6161, 2]
 // Exports: GemHero3dIllustration
 
-// Module 6155 (GemHero3dIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/GemHero3dIllustration.native.tsx");
+// Module 6160 (GemHero3dIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemHero3dIllustration.native.tsx");
 
 export const GemHero3dIllustration = function GemHero3dIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const GemHero3dIllustration = function GemHero3dIllustration(width) {
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6161) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const GemHero3dIllustration = function GemHero3dIllustration(width) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

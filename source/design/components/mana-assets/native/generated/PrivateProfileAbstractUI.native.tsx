@@ -1,12 +1,13 @@
-// Module ID: 6421
-// Function ID: 50564
+// Module ID: 6426
+// Function ID: 50593
 // Name: PrivateProfileAbstractUI
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: [33, 5085, 6427, 2]
 // Exports: PrivateProfileAbstractUI
 
-// Module 6421 (PrivateProfileAbstractUI)
-const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/PrivateProfileAbstractUI.native.tsx");
+// Module 6426 (PrivateProfileAbstractUI)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PrivateProfileAbstractUI.native.tsx");
 
 export const PrivateProfileAbstractUI = function PrivateProfileAbstractUI(width) {
   let accessibilityLabel;
@@ -26,7 +27,7 @@ export const PrivateProfileAbstractUI = function PrivateProfileAbstractUI(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6427) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -34,5 +35,5 @@ export const PrivateProfileAbstractUI = function PrivateProfileAbstractUI(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

@@ -1,16 +1,18 @@
-// Module ID: 15933
-// Function ID: 122160
+// Module ID: 16050
+// Function ID: 124333
 // Name: items
-// Dependencies: []
+// Dependencies: [4042, 2]
 
-// Module 15933 (items)
-const _module = require(dependencyMap[0]);
-let obj = { shapes: null, flex: null, sk: null, defaultConfig: {} };
-obj = { displayNameStylesEnabled: "text-md/semibold", submitButtonEnabled: "interactive-text-active", config: {} };
-const items = [obj, { config: {} }];
+// Module 16050 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2026-06_guild_rooms", label: "Guild Rooms", defaultConfig: { enabled: false, experimental: false } };
+obj = { id: 1, label: "Enable Guild Rooms in this guild", config: { enabled: true, experimental: false } };
+const items = [obj, ];
+const obj1 = { id: 2, label: "Enable Guild Rooms in this guild", config: { enabled: true, experimental: true } };
+items[1] = obj1;
 obj.treatments = items;
-const experiment = _module.createExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/guild_rooms/GuildRoomsExperiment.tsx");
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/guild_rooms/GuildRoomsExperiment.tsx");
 
 export default experiment;

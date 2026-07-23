@@ -1,27 +1,28 @@
-// Module ID: 9118
-// Function ID: 71428
-// Name: PressableNavigatorButtonWrapper
-// Dependencies: []
+// Module ID: 9125
+// Function ID: 71469
+// Name: MIN_HEADER_HEIGHT
+// Dependencies: [27, 9123, 33, 4130, 689, 2]
 // Exports: default
 
-// Module 9118 (PressableNavigatorButtonWrapper)
-const View = require(dependencyMap[0]).View;
-const MIN_HEADER_HEIGHT = require(dependencyMap[1]).MIN_HEADER_HEIGHT;
-const jsx = require(dependencyMap[2]).jsx;
-const _module = require(dependencyMap[3]);
+// Module 9125 (MIN_HEADER_HEIGHT)
+import { View } from "get ActivityIndicator";
+import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let obj = {};
-obj = { padding: importDefault(dependencyMap[4]).space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
+obj = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
 obj.buttonWrapper = obj;
 obj.buttonWrapperModal = { marginLeft: -8 };
-let closure_2 = _module.createStyles(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx");
+let closure_2 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx");
 
-export default function PressableNavigatorButtonWrapper(children) {
-  let flag = children.isModal;
+export default function PressableNavigatorButtonWrapper(isModal) {
+  let flag = isModal.isModal;
   if (flag === undefined) {
     flag = false;
   }
   const tmp = callback();
-  return <View style={flag ? tmp.buttonWrapperModal : tmp.buttonWrapper}>{arg0.children}</View>;
+  const obj = { collapsable: false, style: flag ? tmp.buttonWrapperModal : tmp.buttonWrapper, importantForAccessibility: "yes", children: isModal.children };
+  return <View collapsable={false} style={flag ? tmp.buttonWrapperModal : tmp.buttonWrapper} importantForAccessibility="yes">{arg0.children}</View>;
 };

@@ -1,15 +1,15 @@
 // Module ID: 1836
-// Function ID: 20056
+// Function ID: 20057
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isServerNSFWLevelEnabled
 
 // Module 1836 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: "<string:1102315522>", DateToSystemTimezoneSetter: "<string:1102315522>", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/age_gate/ServerNSFWLevelExperiment.tsx");
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2025-09-server-nsfw-level", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/age_gate/ServerNSFWLevelExperiment.tsx");
 
 export const ServerNSFWLevelExperiment = apexExperiment;
 export const isServerNSFWLevelEnabled = function isServerNSFWLevelEnabled(guild_record) {

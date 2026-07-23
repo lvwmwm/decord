@@ -1,12 +1,11 @@
-// Module ID: 6710
-// Function ID: 52173
+// Module ID: 6715
+// Function ID: 52205
 // Name: isPrivateChannel
-// Dependencies: []
+// Dependencies: [2]
 // Exports: isPrivateChannel
 
-// Module 6710 (isPrivateChannel)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/app_database/modules/messages/isPrivateChannel.tsx");
+// Module 6715 (isPrivateChannel)
+const result = require("set").fileFinishedImporting("modules/app_database/modules/messages/isPrivateChannel.tsx");
 
 export const isPrivateChannel = function isPrivateChannel(basicChannel) {
   return null == basicChannel.guild_id;

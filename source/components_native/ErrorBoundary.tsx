@@ -1,9 +1,27 @@
-// Module ID: 13380
-// Function ID: 101696
+// Module ID: 13494
+// Function ID: 103852
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 5, 57, 31, 27, 10440, 33, 4130, 566, 10939, 4543, 1212, 1184, 686, 1273, 12159, 4126, 3842, 2]
 
-// Module 13380 (_isNativeReflectConstruct)
+// Module 13494 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import getSystemLocale from "getSystemLocale";
+import dispatcher from "dispatcher";
+import Button from "Button";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import closure_9 from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_11;
+let closure_12;
+let closure_14;
+let closure_15;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -16,19 +34,19 @@ function _isNativeReflectConstruct() {
 function MaybeClearBuildOverride() {
   function _clearOverride() {
     // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    const _clearOverride = obj;
+    const obj = outer1_8(tmp);
     return obj(...arguments);
   }
-  const tmp = callback4(importAllResult.useState(false), 2);
-  const callback = tmp[1];
-  let obj = callback(dependencyMap[12]);
-  const items = [closure_13];
+  const tmp = callback3(importAllResult.useState(false), 2);
+  const _require = tmp[1];
+  let obj = _require(566);
+  const items = [_isNativeReflectConstruct];
   if (null == obj.useStateFromStores(items, () => {
-    const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+    const overrides = outer1_13.getCurrentBuildOverride().overrides;
     let id;
     if (null != overrides) {
-      if (null != overrides[closure_0(undefined, closure_2[13]).DEVICE_FIELD]) {
+      const tmp4 = overrides[callback(undefined, outer1_2[13]).DEVICE_FIELD];
+      if (null != tmp4) {
         id = tmp4.id;
       }
     }
@@ -37,76 +55,64 @@ function MaybeClearBuildOverride() {
     return null;
   } else {
     obj = { variant: "secondary", loading: tmp[0] };
-    const intl = callback(dependencyMap[15]).intl;
-    obj.text = intl.string(callback(dependencyMap[15]).t./Nz9rY);
+    const intl = _require(1212).intl;
+    obj.text = intl.string(_require(1212).t["/Nz9rY"]);
     obj.onPress = function clearOverride() {
       return _clearOverride(...arguments);
     };
-    return callback5(callback(dependencyMap[14]).Button, obj);
+    return callback4(_require(4543).Button, obj);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const importAllResult = importAll(dependencyMap[7]);
-({ NativeModules: closure_11, View: closure_12 } = arg1(dependencyMap[8]));
-let closure_13 = importDefault(dependencyMap[9]);
-const tmp3 = arg1(dependencyMap[8]);
-({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[10]));
-const tmp4 = arg1(dependencyMap[10]);
-let closure_16 = arg1(dependencyMap[11]).createLegacyClassComponentStyles({ buttons: { alignItems: false, textAlign: false, paddingBottom: false, display: false, marginTop: false }, debugLogsContainer: { st: false, sv: false, sw: false, ta: false, te: false, tg: false, th: false }, error: { MINIMAL: true, currentScreenId: null }, text: { textAlign: "center" } });
-const tmp5 = (PureComponent) => {
+({ NativeModules: closure_11, View: closure_12 } = get_ActivityIndicator);
+({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
+let closure_16 = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles({ buttons: { position: "absolute", right: 32, bottom: 32, left: 32, gap: 12 }, debugLogsContainer: { position: "absolute", right: 32, top: 64, display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }, error: { marginTop: 24, textAlign: "center" }, text: { textAlign: "center" } });
+let tmp5 = ((PureComponent) => {
   class ErrorBoundary {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, ErrorBoundary);
+      tmp = outer1_3(this, ErrorBoundary);
       items1 = [...items];
-      obj = closure_6(ErrorBoundary);
-      tmp2 = closure_5;
-      if (closure_17()) {
+      obj = outer1_6(ErrorBoundary);
+      tmp2 = outer1_5;
+      if (outer1_17()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      tmp2Result.state = { "Null": "o", "Null": "o" };
+      tmp2Result.state = { error: null, info: null };
       tmp2Result.discordErrorsSet = false;
       return tmp2Result;
     }
   }
-  const arg1 = ErrorBoundary;
-  callback3(ErrorBoundary, PureComponent);
+  callback2(ErrorBoundary, PureComponent);
   let obj = {
     key: "componentDidCatch",
     value: function componentDidCatch(error, extra) {
       this.triggerSoftCrash(error, extra);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "triggerSoftCrash",
     value: function triggerSoftCrash(error, extra) {
       let obj = { error, info: extra };
       this.setState(obj);
       obj = { extra };
-      callback(closure_2[16]).captureCrash(error, obj);
-      const obj2 = callback(closure_2[16]);
-      callback(closure_2[17]).dispatch({ "Null": "TreehouseIcon", "Null": "png" });
+      outer1_1(outer1_2[16]).captureCrash(error, obj);
+      const obj2 = outer1_1(outer1_2[16]);
+      outer1_1(outer1_2[17]).dispatch({ type: "CLEAR_CACHES", reason: "App Crashed" });
     }
   };
   items[1] = obj;
   obj = {
     key: "handleReload",
     value: function handleReload() {
-      const BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
+      const BundleUpdaterManager = outer1_11.BundleUpdaterManager;
       BundleUpdaterManager.reload();
     }
   };
@@ -114,7 +120,7 @@ const tmp5 = (PureComponent) => {
   items[3] = {
     key: "componentDidMount",
     value: function componentDidMount() {
-      const ErrorBoundary = this;
+      const self = this;
       if (null == window.DiscordErrors) {
         const _window = window;
         const obj = {
@@ -141,16 +147,16 @@ const tmp5 = (PureComponent) => {
     key: "render",
     value: function render() {
       const self = this;
-      const tmp = callback6(this.context);
+      const tmp = outer1_16(this.context);
       const error = this.state.error;
       if (null !== error) {
-        let obj = { Illustration: ErrorBoundary(closure_2[19]).AppCrash };
-        const intl = ErrorBoundary(closure_2[15]).intl;
-        obj.title = intl.string(ErrorBoundary(closure_2[15]).t.tx8CkI);
-        const intl2 = ErrorBoundary(closure_2[15]).intl;
-        obj.body = intl2.string(ErrorBoundary(closure_2[15]).t.CvQlAH);
+        let obj = { Illustration: ErrorBoundary(outer1_2[19]).AppCrash };
+        const intl = ErrorBoundary(outer1_2[15]).intl;
+        obj.title = intl.string(ErrorBoundary(outer1_2[15]).t.tx8CkI);
+        const intl2 = ErrorBoundary(outer1_2[15]).intl;
+        obj.body = intl2.string(ErrorBoundary(outer1_2[15]).t.CvQlAH);
         ({ text: obj.titleStyle, text: obj.bodyStyle } = tmp);
-        obj = { style: tmp.error };
+        obj = { style: tmp.error, variant: "text-sm/medium", color: "text-muted" };
         let message;
         if (null != error) {
           message = error.message;
@@ -167,31 +173,30 @@ const tmp5 = (PureComponent) => {
           str = message;
         }
         obj.children = str;
-        const items = [callback4(ErrorBoundary(closure_2[20]).Text, obj), , ];
+        const items = [outer1_14(ErrorBoundary(outer1_2[20]).Text, obj), , ];
         obj = { style: tmp.buttons };
-        const items1 = [callback4(closure_18, {}), ];
+        const items1 = [outer1_14(outer1_18, {}), ];
         const obj1 = {};
-        const intl3 = ErrorBoundary(closure_2[15]).intl;
-        obj1.text = intl3.string(ErrorBoundary(closure_2[15]).t.4n8OJn);
+        const intl3 = ErrorBoundary(outer1_2[15]).intl;
+        obj1.text = intl3.string(ErrorBoundary(outer1_2[15]).t["4n8OJn"]);
         obj1.onPress = self.handleReload;
-        items1[1] = callback4(ErrorBoundary(closure_2[14]).Button, obj1);
+        items1[1] = outer1_14(ErrorBoundary(outer1_2[14]).Button, obj1);
         obj.children = items1;
-        items[1] = callback5(closure_12, obj);
+        items[1] = outer1_15(outer1_12, obj);
         items[2] = null;
         obj.children = items;
-        let children = callback5(ErrorBoundary(closure_2[18]).EmptyState, obj);
-        const tmp2 = callback5;
-        const tmp5 = callback4;
+        let children = outer1_15(ErrorBoundary(outer1_2[18]).EmptyState, obj);
+        const tmp2 = outer1_15;
+        const tmp5 = outer1_14;
       } else {
         children = self.props.children;
       }
       return children;
     }
   };
-  return callback2(ErrorBoundary, items);
-}(importAllResult.PureComponent);
-tmp5.contextType = arg1(dependencyMap[21]).ThemeContext;
-const obj = arg1(dependencyMap[11]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("components_native/ErrorBoundary.tsx");
+  return callback(ErrorBoundary, items);
+})(importAllResult.PureComponent);
+tmp5.contextType = require("ManaContext").ThemeContext;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/ErrorBoundary.tsx");
 
 export default tmp5;

@@ -1,9 +1,17 @@
-// Module ID: 7149
-// Function ID: 57679
+// Module ID: 7154
+// Function ID: 57713
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 7145, 7136, 1284, 2]
 
-// Module 7149 (_isNativeReflectConstruct)
+// Module 7154 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,46 +21,38 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let tmp2 = (MessageType) => {
+let tmp2 = ((MessageType) => {
   class PlanSelectCardBanner$Type {
     constructor() {
       self = this;
-      tmp = closure_3(this, PlanSelectCardBanner$Type);
-      obj = {
-        T() {
-              return callback(closure_1[6]).ThemeAwareAsset;
-            }
+      tmp = outer1_3(this, PlanSelectCardBanner$Type);
+      obj = { no: 1, name: "asset", kind: "message" };
+      obj.T = function T() {
+        return PlanSelectCardBanner$Type(outer2_1[6]).ThemeAwareAsset;
       };
       items = [, , ];
       items[0] = obj;
-      items[1] = {};
-      items[2] = {
-        T() {
-              return callback(closure_1[7]).LocalizedString;
-            }
+      items[1] = { no: 2, name: "body", kind: "scalar", T: 9 };
+      obj = { no: 3, name: "body_localized", kind: "message" };
+      obj.T = function T() {
+        return PlanSelectCardBanner$Type(outer2_1[7]).LocalizedString;
       };
-      items1 = ["Set"];
+      items[2] = obj;
+      items1 = ["discord_protos.premium_marketing.v1.PlanSelectCardBanner"];
       items1[1] = items;
-      obj2 = closure_6(PlanSelectCardBanner$Type);
-      tmp2 = closure_5;
-      if (closure_8()) {
+      obj3 = outer1_6(PlanSelectCardBanner$Type);
+      tmp2 = outer1_5;
+      if (outer1_8()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj2, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj3, items1, outer1_6(self).constructor);
       } else {
-        constructResult = obj2.apply(self, items1);
+        constructResult = obj3.apply(self, items1);
       }
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = PlanSelectCardBanner$Type;
   callback2(PlanSelectCardBanner$Type, MessageType);
   let obj = {
     key: "create",
@@ -60,15 +60,15 @@ let tmp2 = (MessageType) => {
       let obj = { body: "" };
       const _Object = Object;
       obj = { enumerable: false, value: this };
-      _Object.defineProperty(obj, PlanSelectCardBanner$Type(closure_1[8]).MESSAGE_TYPE, obj);
+      _Object.defineProperty(obj, PlanSelectCardBanner$Type(outer1_1[8]).MESSAGE_TYPE, obj);
       if (undefined !== arr) {
-        const result = PlanSelectCardBanner$Type(closure_1[8]).reflectionMergePartial(this, obj, arr);
-        const obj3 = PlanSelectCardBanner$Type(closure_1[8]);
+        const result = PlanSelectCardBanner$Type(outer1_1[8]).reflectionMergePartial(this, obj, arr);
+        const obj3 = PlanSelectCardBanner$Type(outer1_1[8]);
       }
       return obj;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "internalBinaryRead",
     value(pos, arg1, readUnknownField) {
@@ -81,13 +81,13 @@ let tmp2 = (MessageType) => {
       }
       const sum = pos.pos + arg1;
       while (pos.pos < sum) {
-        let tmp5 = callback;
-        let tmp6 = callback(pos.tag(), 2);
+        let tmp5 = outer1_2;
+        let tmp6 = outer1_2(pos.tag(), 2);
         [tmp7, tmp8] = tmp6;
         if (1 === tmp7) {
           let tmp31 = PlanSelectCardBanner$Type;
-          let tmp32 = closure_1;
-          let ThemeAwareAsset = PlanSelectCardBanner$Type(closure_1[6]).ThemeAwareAsset;
+          let tmp32 = outer1_1;
+          let ThemeAwareAsset = PlanSelectCardBanner$Type(outer1_1[6]).ThemeAwareAsset;
           let tmp33 = ThemeAwareAsset;
           let tmp34 = pos;
           let tmp35 = readUnknownField;
@@ -100,8 +100,8 @@ let tmp2 = (MessageType) => {
           tmp11 = tmp4;
         } else if (3 === tmp7) {
           let tmp26 = PlanSelectCardBanner$Type;
-          let tmp27 = closure_1;
-          let LocalizedString = PlanSelectCardBanner$Type(closure_1[7]).LocalizedString;
+          let tmp27 = outer1_1;
+          let LocalizedString = PlanSelectCardBanner$Type(outer1_1[7]).LocalizedString;
           let tmp28 = LocalizedString;
           let tmp29 = pos;
           let tmp30 = readUnknownField;
@@ -134,8 +134,8 @@ let tmp2 = (MessageType) => {
               let onRead = readUnknownField;
               if (true === readUnknownField) {
                 let tmp12 = PlanSelectCardBanner$Type;
-                let tmp13 = closure_1;
-                onRead = PlanSelectCardBanner$Type(closure_1[8]).UnknownFieldHandler.onRead;
+                let tmp13 = outer1_1;
+                onRead = PlanSelectCardBanner$Type(outer1_1[8]).UnknownFieldHandler.onRead;
               }
               let tmp14 = obj;
               let tmp15 = tmp7;
@@ -147,8 +147,8 @@ let tmp2 = (MessageType) => {
             }
           }
         }
-        let tmp3 = tmp10;
-        let tmp4 = tmp11;
+        tmp3 = tmp10;
+        tmp4 = tmp11;
       }
       return obj;
     }
@@ -158,25 +158,25 @@ let tmp2 = (MessageType) => {
     key: "internalBinaryWrite",
     value(asset, tag, writeUnknownFields) {
       if (asset.asset) {
-        const ThemeAwareAsset = PlanSelectCardBanner$Type(closure_1[6]).ThemeAwareAsset;
-        const tagResult = tag.tag(1, PlanSelectCardBanner$Type(closure_1[8]).WireType.LengthDelimited);
-        const joined = ThemeAwareAsset.internalBinaryWrite(asset.asset, tag.tag(1, PlanSelectCardBanner$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(asset.asset, tag.tag(1, PlanSelectCardBanner$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const ThemeAwareAsset = PlanSelectCardBanner$Type(outer1_1[6]).ThemeAwareAsset;
+        const tagResult = tag.tag(1, PlanSelectCardBanner$Type(outer1_1[8]).WireType.LengthDelimited);
+        const joined = ThemeAwareAsset.internalBinaryWrite(asset.asset, tag.tag(1, PlanSelectCardBanner$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(asset.asset, tag.tag(1, PlanSelectCardBanner$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       if ("" !== asset.body) {
-        tag.tag(2, PlanSelectCardBanner$Type(closure_1[8]).WireType.LengthDelimited).string(asset.body);
-        const tagResult1 = tag.tag(2, PlanSelectCardBanner$Type(closure_1[8]).WireType.LengthDelimited);
+        tag.tag(2, PlanSelectCardBanner$Type(outer1_1[8]).WireType.LengthDelimited).string(asset.body);
+        const tagResult1 = tag.tag(2, PlanSelectCardBanner$Type(outer1_1[8]).WireType.LengthDelimited);
       }
       if (asset.bodyLocalized) {
-        const LocalizedString = PlanSelectCardBanner$Type(closure_1[7]).LocalizedString;
-        const tagResult2 = tag.tag(3, PlanSelectCardBanner$Type(closure_1[8]).WireType.LengthDelimited);
-        const joined1 = LocalizedString.internalBinaryWrite(asset.bodyLocalized, tag.tag(3, PlanSelectCardBanner$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-        const internalBinaryWriteResult1 = LocalizedString.internalBinaryWrite(asset.bodyLocalized, tag.tag(3, PlanSelectCardBanner$Type(closure_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
+        const LocalizedString = PlanSelectCardBanner$Type(outer1_1[7]).LocalizedString;
+        const tagResult2 = tag.tag(3, PlanSelectCardBanner$Type(outer1_1[8]).WireType.LengthDelimited);
+        const joined1 = LocalizedString.internalBinaryWrite(asset.bodyLocalized, tag.tag(3, PlanSelectCardBanner$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+        const internalBinaryWriteResult1 = LocalizedString.internalBinaryWrite(asset.bodyLocalized, tag.tag(3, PlanSelectCardBanner$Type(outer1_1[8]).WireType.LengthDelimited).fork(), writeUnknownFields);
       }
       let onWrite = writeUnknownFields.writeUnknownFields;
       if (false !== onWrite) {
         if (1 == onWrite) {
-          onWrite = PlanSelectCardBanner$Type(closure_1[8]).UnknownFieldHandler.onWrite;
+          onWrite = PlanSelectCardBanner$Type(outer1_1[8]).UnknownFieldHandler.onWrite;
         }
         const self = this;
         onWrite(this.typeName, asset, tag);
@@ -186,8 +186,8 @@ let tmp2 = (MessageType) => {
   };
   items[2] = obj;
   return callback(PlanSelectCardBanner$Type, items);
-}(arg1(dependencyMap[8]).MessageType);
+})(require("module_1284").MessageType);
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[9]).fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/plan_select_card_banner.tsx");
+let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/plan_select_card_banner.tsx");
 
 export const PlanSelectCardBanner = tmp2;

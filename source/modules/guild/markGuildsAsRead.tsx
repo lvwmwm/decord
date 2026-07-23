@@ -1,53 +1,61 @@
-// Module ID: 12853
-// Function ID: 98229
+// Module ID: 12967
+// Function ID: 100385
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5058, 5039, 1907, 4142, 653, 4326, 22, 21, 675, 5069, 2]
 // Exports: default
 
-// Module 12853 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12967 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import { ReadStateTypes } from "ReadStateTypes";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,23 +92,17 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const AnalyticEvents = arg1(dependencyMap[4]).AnalyticEvents;
-const ReadStateTypes = arg1(dependencyMap[5]).ReadStateTypes;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild/markGuildsAsRead.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild/markGuildsAsRead.tsx");
 
 export default function markGuildsAsRead(arr, source, onFinished) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(22);
   const mapped = obj.flatMap(arr, (arg0) => {
     let iter2;
-    const selectableChannelIds = store.getSelectableChannelIds(arg0);
-    const vocalChannelIds = store.getVocalChannelIds(arg0);
+    const selectableChannelIds = outer1_5.getSelectableChannelIds(arg0);
+    const vocalChannelIds = outer1_5.getVocalChannelIds(arg0);
     const items = [...vocalChannelIds];
-    const activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(arg0);
-    const tmp4 = callback2(selectableChannelIds);
+    const activeJoinedThreadsForGuild = outer1_4.getActiveJoinedThreadsForGuild(arg0);
+    const tmp4 = outer1_9(selectableChannelIds);
     let iter = tmp4();
     if (!iter.done) {
       do {
@@ -112,31 +114,31 @@ export default function markGuildsAsRead(arr, source, onFinished) {
         for (const key10027 in obj) {
           let tmp6 = key10027;
           let arr = items.push(key10027);
+          continue;
         }
         iter2 = tmp4();
         iter = iter2;
       } while (!iter2.done);
     }
     return items;
-  }).map((channelId) => ({ channelId, readStateType: constants.CHANNEL, messageId: closure_6.lastMessageId(channelId) }));
-  source = mapped;
+  }).map((channelId) => ({ channelId, readStateType: outer1_8.CHANNEL, messageId: outer1_6.lastMessageId(channelId) }));
   const item = arr.forEach((id) => {
-    let obj = { channelId: callback(closure_2[7]).cast(id), readStateType: constants.GUILD_EVENT, messageId: closure_6.lastMessageId(id, constants.GUILD_EVENT) };
+    let obj = { channelId: outer1_1(outer1_2[7]).cast(id), readStateType: outer1_8.GUILD_EVENT, messageId: outer1_6.lastMessageId(id, outer1_8.GUILD_EVENT) };
     mapped.push(obj);
     obj = {};
-    const obj2 = callback(closure_2[7]);
-    obj.channelId = callback(closure_2[7]).cast(id);
-    obj.readStateType = constants.GUILD_ONBOARDING_QUESTION;
-    obj.messageId = closure_3.ackIdForGuild(id);
+    const obj2 = outer1_1(outer1_2[7]);
+    obj.channelId = outer1_1(outer1_2[7]).cast(id);
+    obj.readStateType = outer1_8.GUILD_ONBOARDING_QUESTION;
+    obj.messageId = outer1_3.ackIdForGuild(id);
     mapped.push(obj);
   });
   const flatMapResult = obj.flatMap(arr, (arg0) => {
     let iter2;
-    const selectableChannelIds = store.getSelectableChannelIds(arg0);
-    const vocalChannelIds = store.getVocalChannelIds(arg0);
+    const selectableChannelIds = outer1_5.getSelectableChannelIds(arg0);
+    const vocalChannelIds = outer1_5.getVocalChannelIds(arg0);
     const items = [...vocalChannelIds];
-    const activeJoinedThreadsForGuild = activeJoinedThreadsForGuild.getActiveJoinedThreadsForGuild(arg0);
-    const tmp4 = callback2(selectableChannelIds);
+    const activeJoinedThreadsForGuild = outer1_4.getActiveJoinedThreadsForGuild(arg0);
+    const tmp4 = outer1_9(selectableChannelIds);
     let iter = tmp4();
     if (!iter.done) {
       do {
@@ -148,6 +150,7 @@ export default function markGuildsAsRead(arr, source, onFinished) {
         for (const key10027 in obj) {
           let tmp6 = key10027;
           let arr = items.push(key10027);
+          continue;
         }
         iter2 = tmp4();
         iter = iter2;
@@ -156,7 +159,7 @@ export default function markGuildsAsRead(arr, source, onFinished) {
     return items;
   });
   obj = { source, type: "guild" };
-  importDefault(dependencyMap[8]).track(AnalyticEvents.MARK_AS_READ, obj);
-  const obj2 = importDefault(dependencyMap[8]);
-  return source(dependencyMap[9]).bulkAck(mapped, onFinished);
+  importDefault(675).track(AnalyticEvents.MARK_AS_READ, obj);
+  let obj2 = importDefault(675);
+  return mapped(5069).bulkAck(mapped, onFinished);
 };

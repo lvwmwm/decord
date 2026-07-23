@@ -1,12 +1,14 @@
-// Module ID: 7731
-// Function ID: 61473
+// Module ID: 7737
+// Function ID: 61510
 // Name: getPriceString
-// Dependencies: []
+// Dependencies: [3781, 3776, 5618, 2]
 // Exports: getPriceString
 
-// Module 7731 (getPriceString)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.shared.tsx");
+// Module 7737 (getPriceString)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("formatSingleCurrencyPrice").fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.shared.tsx");
 
 export const getPriceString = function getPriceString(premiumSubscription, arg1) {
   let interval;
@@ -17,20 +19,20 @@ export const getPriceString = function getPriceString(premiumSubscription, arg1)
       if (null == planIdFromItems) {
         return null;
       } else {
-        const value = closure_2.get(planIdFromItems);
+        const value = _isNativeReflectConstruct.get(planIdFromItems);
         if (null == value) {
           return null;
         } else {
-          const price = arg1(dependencyMap[1]).getPrice(planIdFromItems);
-          const obj2 = arg1(dependencyMap[1]);
-          const formatPriceResult = arg1(dependencyMap[2]).formatPrice(price.amount, price.currency);
+          const price = require(3776) /* _createForOfIteratorHelperLoose */.getPrice(planIdFromItems);
+          const obj2 = require(3776) /* _createForOfIteratorHelperLoose */;
+          const formatPriceResult = require(5618) /* formatSingleCurrencyPrice */.formatPrice(price.amount, price.currency);
           if (tmp) {
             ({ interval, intervalCount } = value);
-            return arg1(dependencyMap[2]).formatRate(formatPriceResult, interval, intervalCount);
+            return require(5618) /* formatSingleCurrencyPrice */.formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;
           }
-          const obj3 = arg1(dependencyMap[2]);
+          const obj3 = require(5618) /* formatSingleCurrencyPrice */;
         }
       }
     }

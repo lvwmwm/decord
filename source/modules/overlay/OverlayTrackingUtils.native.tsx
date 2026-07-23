@@ -1,12 +1,11 @@
-// Module ID: 5799
-// Function ID: 49620
+// Module ID: 5804
+// Function ID: 49649
 // Name: useOverlayTrackedGames
-// Dependencies: []
+// Dependencies: [2]
 // Exports: useAnyOverlayRendering, useAnyOverlayRenderingLocked, useOverlayTrackedGames
 
-// Module 5799 (useOverlayTrackedGames)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/overlay/OverlayTrackingUtils.native.tsx");
+// Module 5804 (useOverlayTrackedGames)
+const result = require("set").fileFinishedImporting("modules/overlay/OverlayTrackingUtils.native.tsx");
 
 export function useOverlayTrackedGames() {
   return [];

@@ -1,18 +1,19 @@
-// Module ID: 15536
-// Function ID: 118595
+// Module ID: 15653
+// Function ID: 120768
 // Name: styles
-// Dependencies: []
+// Dependencies: [4130, 689, 2]
 
-// Module 15536 (styles)
-const _module = require(dependencyMap[0]);
+// Module 15653 (styles)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let obj = {};
-obj = { color: importDefault(dependencyMap[1]).colors.BACKGROUND_MOD_STRONG };
+obj = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
 obj.iconBackground = obj;
-obj.iconBackgroundBrand = { color: importDefault(dependencyMap[1]).colors.BACKGROUND_BRAND };
-const obj1 = { color: importDefault(dependencyMap[1]).colors.BACKGROUND_BRAND };
-obj.iconStroke = { color: importDefault(dependencyMap[1]).colors.BORDER_SUBTLE };
-const styles = _module.createStyles(obj);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/launchpad/native/shared/useSimpleGuildDefaultColors.tsx");
+obj.iconBackgroundBrand = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+const obj1 = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+obj.iconStroke = { color: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+const styles = _createForOfIteratorHelperLoose.createStyles(obj);
+const obj2 = { color: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/useSimpleGuildDefaultColors.tsx");
 
 export default styles;

@@ -1,20 +1,25 @@
-// Module ID: 8746
-// Function ID: 69160
+// Module ID: 8753
+// Function ID: 69201
 // Name: UserNameplateRow
-// Dependencies: []
+// Dependencies: [57, 31, 33, 4130, 689, 5166, 3834, 5167, 8229, 5165, 5125, 2]
 // Exports: UserNameplateRow
 
-// Module 8746 (UserNameplateRow)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { paddingRight: importDefault(dependencyMap[4]).space.PX_40 };
-obj.card = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserNameplateRow.tsx");
+// Module 8753 (UserNameplateRow)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: 0, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_40, overflow: "hidden" };
+_createForOfIteratorHelperLoose.card = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserNameplateRow.tsx");
 
 export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   let arrow;
@@ -34,9 +39,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   let trailing;
   let variant;
   ({ icon, onPressIn } = onPressOut);
-  const arg1 = onPressIn;
   onPressOut = onPressOut.onPressOut;
-  const importDefault = onPressOut;
   let flag = onPressOut.disabled;
   ({ label, subLabel, trailing, arrow, onPress } = onPressOut);
   if (flag === undefined) {
@@ -50,20 +53,20 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   if (isPreviewRow === undefined) {
     isPreviewRow = false;
   }
-  let obj = { "Null": "row", "Null": "center", "Null": 8, "Null": 28, "Null": 4, "Null": null, "Null": 1, "Null": 2, "Null": "column", "Null": "center", "Null": 8, "Null": true, "Null": "text-sm/semibold", "Null": null, "Null": 1, body: "column", type: 6, accessibilityRole: 20 };
+  let obj = { label: 0, subLabel: 0, icon: 0, trailing: 0, arrow: 0, onPress: 0, onPressIn: 0, onPressOut: 0, disabled: 0, start: 0, end: 0, labelLineClamp: 0, subLabelLineClamp: 0, variant: 0, draggable: 0, dragHandlePressableProps: 0, nameplate: 0, isPreviewRow: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onPressOut, obj);
-  let closure_2;
-  const context = React.useContext(arg1(closure_2[5]).TableRowGroupContext);
+  let dependencyMap;
+  const context = React.useContext(onPressIn(5166).TableRowGroupContext);
   let tmp5 = !context;
   if (tmp5) {
     tmp5 = true === end;
   }
   const tmp6 = callback(React.useState(false), 2);
-  closure_2 = tmp6[1];
+  dependencyMap = tmp6[1];
   const items = [onPressIn];
   const items1 = [onPressOut];
-  const callback = React.useCallback((arg0) => {
+  callback = React.useCallback((arg0) => {
     callback(true);
     if (null != onPressIn) {
       onPressIn(arg0);
@@ -75,9 +78,9 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
       onPressOut(arg0);
     }
   }, items1);
-  let obj1 = arg1(closure_2[6]);
-  const token = obj1.useToken(importDefault(closure_2[4]).modules.mobile.TABLE_ROW_BORDER_RADIUS);
-  obj = { "Bool(true)": true, s: true, radius: token };
+  let obj1 = onPressIn(3834);
+  const token = obj1.useToken(onPressOut(689).modules.mobile.TABLE_ROW_BORDER_RADIUS);
+  obj = { shadow: "none", border: "none", radius: token };
   let tmp11 = !context;
   if (tmp11) {
     tmp11 = true === start;
@@ -88,14 +91,14 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   obj.onPressIn = callback;
   obj.onPressOut = callback1;
   obj.disabled = flag;
-  obj.style = callback4().card;
+  obj.style = _createForOfIteratorHelperLoose().card;
   const merged1 = Object.assign(merged);
   obj = { nameplate, isPressed: tmp6[0], invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow };
-  const items2 = [callback2(importDefault(closure_2[8]), obj), ];
+  const items2 = [callback2(onPressOut(8229), obj), ];
   obj1 = { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps };
-  items2[1] = callback2(arg1(closure_2[9]).TableRowInner, obj1);
+  items2[1] = callback2(onPressIn(5165).TableRowInner, obj1);
   obj["children"] = items2;
-  const tmp10Result = callback3(arg1(closure_2[7]).Card, obj);
+  const tmp10Result = callback3(onPressIn(5167).Card, obj);
   let tmp15 = tmp10Result;
   if (!context) {
     tmp15 = tmp10Result;
@@ -103,7 +106,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
       const obj2 = {};
       const items3 = [tmp10Result, ];
       const obj3 = { adjustSpacingForIcon: null != icon };
-      items3[1] = callback2(arg1(closure_2[10]).TableRowDivider, obj3);
+      items3[1] = callback2(onPressIn(5125).TableRowDivider, obj3);
       obj2.children = items3;
       tmp15 = callback3(closure_7, obj2);
     }

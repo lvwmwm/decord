@@ -1,29 +1,28 @@
-// Module ID: 15950
-// Function ID: 122318
+// Module ID: 16067
+// Function ID: 124491
 // Name: isEligible
-// Dependencies: []
+// Dependencies: [16064, 2]
 
-// Module 15950 (isEligible)
+// Module 16067 (isEligible)
 function isEligible() {
-  const isExperimentEligible = importDefault(dependencyMap[0]).getIsExperimentEligible();
-  const obj = importDefault(dependencyMap[0]);
+  const isExperimentEligible = importDefault(16064).getIsExperimentEligible();
+  const obj = importDefault(16064);
   return isHolidayHappening() && isExperimentEligible;
 }
 function useIsEligible() {
-  const isExperimentEligible = importDefault(dependencyMap[0]).useIsExperimentEligible();
-  const obj = importDefault(dependencyMap[0]);
+  const isExperimentEligible = importDefault(16064).useIsExperimentEligible();
+  const obj = importDefault(16064);
   return isHolidayHappening() && isExperimentEligible;
 }
 function isHolidayHappening() {
   const timestamp = Date.now();
-  let tmp2 = timestamp >= importDefault(dependencyMap[0]).startTimeMs;
+  let tmp2 = timestamp >= importDefault(16064).startTimeMs;
   if (tmp2) {
-    tmp2 = timestamp <= importDefault(dependencyMap[0]).endTimeMs;
+    tmp2 = timestamp <= importDefault(16064).endTimeMs;
   }
   return tmp2;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
 
 export default {
   isEligible,
@@ -31,10 +30,10 @@ export default {
     let tmp = null;
     if (useIsEligible()) {
       tmp = null;
-      if (null != importDefault(dependencyMap[0]).soundpack) {
+      if (null != importDefault(16064).soundpack) {
         tmp = null;
-        if (null != importDefault(dependencyMap[0]).soundpackLabel) {
-          const obj = { soundpack: importDefault(dependencyMap[0]).soundpack, soundpackLabel: importDefault(dependencyMap[0]).soundpackLabel };
+        if (null != importDefault(16064).soundpackLabel) {
+          const obj = { soundpack: importDefault(16064).soundpack, soundpackLabel: importDefault(16064).soundpackLabel };
           tmp = obj;
         }
       }
@@ -45,7 +44,7 @@ export default {
   getAppSpinnerSources() {
     let appSpinnerSources = null;
     if (isHolidayHappening()) {
-      appSpinnerSources = importDefault(dependencyMap[0]).appSpinnerSources;
+      appSpinnerSources = importDefault(16064).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -53,9 +52,9 @@ export default {
     let tmp = null;
     if (isHolidayHappening()) {
       let loadingTips;
-      if (null != importDefault(dependencyMap[0]).getLoadingTips) {
-        loadingTips = importDefault(dependencyMap[0]).getLoadingTips();
-        const obj = importDefault(dependencyMap[0]);
+      if (null != importDefault(16064).getLoadingTips) {
+        loadingTips = importDefault(16064).getLoadingTips();
+        const obj = importDefault(16064);
       }
       tmp = loadingTips;
     }
@@ -65,8 +64,8 @@ export default {
     let soundpack = null;
     if (isEligible()) {
       soundpack = null;
-      if (null != importDefault(dependencyMap[0]).soundpack) {
-        soundpack = importDefault(dependencyMap[0]).soundpack;
+      if (null != importDefault(16064).soundpack) {
+        soundpack = importDefault(16064).soundpack;
       }
     }
     return soundpack;

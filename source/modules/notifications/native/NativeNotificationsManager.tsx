@@ -1,52 +1,66 @@
-// Module ID: 16383
-// Function ID: 126467
+// Module ID: 16500
+// Function ID: 128641
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 5, 27, 6879, 4142, 653, 3, 16501, 10638, 21, 477, 8245, 675, 5078, 2]
 
-// Module 16383 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16500 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getActivityIndicator from "get ActivityIndicator";
+import _readFile from "_readFile";
+import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+import set from "set";
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { NativeModules } from "get ActivityIndicator";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+import importDefaultResult from "_getPrototypeOf";
+import tmp4 from "AutomaticLifecycleManager";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +71,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -98,7 +112,6 @@ function getDeliveredNotifications() {
 function _getDeliveredNotifications() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback3(tmp);
-  const _getDeliveredNotifications = obj;
   return obj(...arguments);
 }
 function updateAndClearStaleNotifications() {
@@ -107,80 +120,11 @@ function updateAndClearStaleNotifications() {
 function _updateAndClearStaleNotifications() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback3(tmp);
-  const _updateAndClearStaleNotifications = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const NativeModules = arg1(dependencyMap[6]).NativeModules;
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-const AnalyticEvents = arg1(dependencyMap[9]).AnalyticEvents;
-let importDefaultResult = importDefault(dependencyMap[10]);
 importDefaultResult = new importDefaultResult("NativeNotificationsManager");
 let closure_14 = [];
-let tmp4 = (arg0) => {
-  class NativeNotificationsManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp2 = closure_4(this, NativeNotificationsManager);
-      items1 = [...items];
-      obj = closure_6(NativeNotificationsManager);
-      tmp3 = closure_5;
-      if (closure_17()) {
-        tmp5 = globalThis;
-        _Reflect = Reflect;
-        tmp6 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp3Result = tmp3(self, constructResult);
-      NativeNotificationsManager = tmp3Result;
-      tmp3Result.handleAck = (channelId) => {
-        channelId = channelId.channelId;
-        if (obj.isIOS()) {
-          const result = callback(closure_2[12]).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
-          const obj2 = callback(closure_2[12]);
-        }
-        if (null != channelId) {
-          const DCDNotificationManager = closure_9.DCDNotificationManager;
-          if (null != DCDNotificationManager) {
-            const result1 = DCDNotificationManager.clearNotificationsForChannel(channelId);
-          }
-        }
-      };
-      // CreateGeneratorClosureLongIndex (0x67)
-      tmp3Result.handlePostConnectionOpen = closure_8(tmp);
-      tmp3Result.handleSetCallNotificationExperiment = () => {
-        if (!obj.isIOS()) {
-          if (null != closure_9.DCDNotificationManager.setShowMissedCallNotifications) {
-            const DCDNotificationManager = closure_9.DCDNotificationManager;
-            const result = DCDNotificationManager.setShowMissedCallNotifications(true);
-          }
-          if (null != closure_9.DCDNotificationManager.setShowFullscreenCallUI) {
-            const DCDNotificationManager2 = closure_9.DCDNotificationManager;
-            const result1 = DCDNotificationManager2.setShowFullscreenCallUI(true);
-          }
-        }
-      };
-      tmp3Result.updateAndClearStaleNotifications = () => {
-        callback2();
-      };
-      tmp3Result.actions = { MESSAGE_ACK: tmp3Result.handleAck, CHANNEL_SELECT: tmp3Result.handleAck, POST_CONNECTION_OPEN: tmp3Result.handlePostConnectionOpen, EXPERIMENT_OVERRIDE_BUCKET: tmp3Result.handleSetCallNotificationExperiment, EXPERIMENTS_FETCH_SUCCESS: tmp3Result.handleSetCallNotificationExperiment, APP_STATE_UPDATE: tmp3Result.updateAndClearStaleNotifications };
-      return tmp3Result;
-    }
-  }
-  const arg1 = NativeNotificationsManager;
-  callback2(NativeNotificationsManager, arg0);
-  return callback(NativeNotificationsManager);
-}(importDefault(dependencyMap[17]));
 tmp4 = new tmp4();
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/notifications/native/NativeNotificationsManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/notifications/native/NativeNotificationsManager.tsx");
 
 export default tmp4;

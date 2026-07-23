@@ -1,10 +1,28 @@
-// Module ID: 12989
-// Function ID: 98853
+// Module ID: 13103
+// Function ID: 101009
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [29, 6, 7, 15, 17, 18, 31, 27, 653, 33, 4130, 689, 4973, 1273, 4126, 1212, 5776, 3976, 11296, 477, 3842, 2]
 
-// Module 12989 (_isNativeReflectConstruct)
+// Module 13103 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import getActivityIndicator from "get ActivityIndicator";
+import getSystemLocale from "getSystemLocale";
+import AccessibilityAnnouncer from "AccessibilityAnnouncer";
+import BottomSheetTextInput from "BottomSheetTextInput";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { Fonts } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
 let Platform;
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_14;
+let closure_15;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,59 +32,48 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const importAllResult = importAll(dependencyMap[6]);
-({ View: closure_10, Pressable: closure_11, TouchableWithoutFeedback: closure_12, Platform } = arg1(dependencyMap[7]));
-const Fonts = arg1(dependencyMap[8]).Fonts;
-const tmp3 = arg1(dependencyMap[7]);
-({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[9]));
-let obj = arg1(dependencyMap[10]);
-obj = { disabled: { opacity: 0.5 }, topContainer: { "Bool(false)": "onAnimationFailure", "Bool(false)": "onAnimationLoadedCapture", "Bool(false)": "onAnimationLoaded", "Bool(false)": true, "Bool(false)": true }, inputViewTitle: { marginRight: 5 } };
-obj = { fontSize: 10, color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400 };
-obj.inputViewError = obj;
-const tmp4 = arg1(dependencyMap[9]);
-obj.inputBorder = { backgroundColor: importDefault(dependencyMap[11]).colors.TEXT_MUTED };
-const obj2 = { "Bool(false)": "30", "Bool(false)": "true", "Bool(false)": "am", "Bool(false)": "30", "Bool(false)": "true", color: arg1(dependencyMap[12]).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-obj.inputView = obj2;
-obj.inputViewBorder = {};
-const obj1 = { backgroundColor: importDefault(dependencyMap[11]).colors.TEXT_MUTED };
-obj.inputViewBorderActive = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.TRANSPARENT };
-obj.inputContainer = { bitrateFloor: "/assets/design/components/Icon/native/redesign/generated/images", createHDR: 24, frameRate: 24 };
-obj.bottomContainer = { marginTop: 5 };
-const obj3 = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.TRANSPARENT };
-obj.charactersLength = { alignSelf: "flex-end", fontFamily: Fonts.CODE_BOLD, color: arg1(dependencyMap[12]).DARK_PRIMARY_400_LIGHT_PRIMARY_300 };
-const obj4 = { alignSelf: "flex-end", fontFamily: Fonts.CODE_BOLD, color: arg1(dependencyMap[12]).DARK_PRIMARY_400_LIGHT_PRIMARY_300 };
-obj.closeIcon = { tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.clearButton = { "Bool(false)": 66925056, "Bool(false)": 50096384 };
-const obj5 = { tintColor: importDefault(dependencyMap[11]).colors.INTERACTIVE_TEXT_DEFAULT };
-obj.required = { color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400 };
-let closure_16 = obj.createLegacyClassComponentStyles(obj);
+let closure_3 = ["numberOfLines", "disableConstantNumberOfLines", "inputTextColor", "placeholder", "placeholderTextColor", "editable", "large", "accessibilityHint", "maxLength", "inActionSheet", "trailingButton", "clearButtonVisibility", "disabled", "style", "inputTextStyle", "onChangeText", "onFocus", "value"];
+({ View: closure_10, Pressable: closure_11, TouchableWithoutFeedback: closure_12, Platform } = get_ActivityIndicator);
+({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
+_createForOfIteratorHelperLoose = { disabled: { opacity: 0.5 }, topContainer: { minHeight: 16, alignItems: "center", flexDirection: "row", marginBottom: 5, flexWrap: "wrap" }, inputViewTitle: { marginRight: 5 } };
+_createForOfIteratorHelperLoose = { fontSize: 10, color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+_createForOfIteratorHelperLoose.inputViewError = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.inputBorder = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+let obj2 = { fontSize: 16, paddingBottom: 0, paddingTop: 0, textAlignVertical: "top", flex: 1, color: require("result").DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+_createForOfIteratorHelperLoose.inputView = obj2;
+_createForOfIteratorHelperLoose.inputViewBorder = { marginTop: 8, height: 2 };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
+_createForOfIteratorHelperLoose.inputViewBorderActive = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.TRANSPARENT };
+_createForOfIteratorHelperLoose.inputContainer = { flexDirection: "row", alignItems: "center", position: "relative" };
+_createForOfIteratorHelperLoose.bottomContainer = { marginTop: 5 };
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.TRANSPARENT };
+_createForOfIteratorHelperLoose.charactersLength = { alignSelf: "flex-end", fontFamily: Fonts.CODE_BOLD, color: require("result").DARK_PRIMARY_400_LIGHT_PRIMARY_300 };
+let obj4 = { alignSelf: "flex-end", fontFamily: Fonts.CODE_BOLD, color: require("result").DARK_PRIMARY_400_LIGHT_PRIMARY_300 };
+_createForOfIteratorHelperLoose.closeIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.clearButton = { position: "absolute", right: 6 };
+let obj5 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.required = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
 const obj7 = { NEVER: "never", WITH_CONTENT: "with-content", ALWAYS: "always" };
-const tmp5 = (PureComponent) => {
+let tmp5 = ((PureComponent) => {
   class InputView {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_5(this, InputView);
+      tmp = outer1_5(this, apply);
       items1 = [...items];
-      obj = closure_8(InputView);
-      tmp2 = closure_7;
-      if (closure_18()) {
+      obj = outer1_8(apply);
+      tmp2 = outer1_7;
+      if (outer1_18()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_8;
-        constructResult = Reflect.construct(obj, items1, closure_8(self).constructor);
+        tmp5 = outer1_8;
+        constructResult = Reflect.construct(obj, items1, outer1_8(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      InputView = tmp2Result;
+      apply = tmp2Result;
       obj = { active: false, value: tmp2Result.props.value, valueProp: tmp2Result.props.value };
       tmp2Result.state = obj;
       tmp2Result._ref = undefined;
@@ -82,9 +89,9 @@ const tmp5 = (PureComponent) => {
       };
       tmp2Result.handleChangeText = (value) => {
         value.setState({ value }, () => {
-          const onChangeText = arg0.props.onChangeText;
+          const onChangeText = value.props.onChangeText;
           if (null != onChangeText) {
-            onChangeText(arg0);
+            onChangeText(value);
           }
         });
       };
@@ -132,7 +139,7 @@ const tmp5 = (PureComponent) => {
         }
       };
       tmp2Result.setRef = (_ref) => {
-        tmp2Result._ref = _ref;
+        closure_0._ref = _ref;
       };
       tmp2Result.measure = (arg0) => {
         const _ref = tmp2Result._ref;
@@ -155,12 +162,11 @@ const tmp5 = (PureComponent) => {
       return tmp2Result;
     }
   }
-  const arg1 = InputView;
   callback2(InputView, PureComponent);
   let obj = {
     key: "renderBorder",
     value() {
-      const tmp = callback7(this.context);
+      const tmp = outer1_16(this.context);
       const props = this.props;
       let backgroundColor = props.borderColor;
       if (props.showBorder) {
@@ -177,13 +183,13 @@ const tmp5 = (PureComponent) => {
         }
         items[2] = inputViewBorderActive;
         obj.style = items;
-        return closure_14(closure_10, obj);
+        return outer1_14(outer1_10, obj);
       } else {
         return null;
       }
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "renderTopContainer",
     value() {
@@ -194,7 +200,7 @@ const tmp5 = (PureComponent) => {
       let required;
       let showTopContainer;
       let title;
-      const tmp = callback7(this.context);
+      const tmp = outer1_16(this.context);
       const props = this.props;
       ({ error, title, errorProps, helpText } = props);
       let tmp2 = null != error;
@@ -208,9 +214,9 @@ const tmp5 = (PureComponent) => {
         const merged = Object.assign(errorProps);
         const items = [tmp.inputViewError, errorStyles];
         obj["style"] = items;
-        const items1 = [null, error, ")"];
+        const items1 = ["(", error, ")"];
         obj["children"] = items1;
-        tmp3 = callback6(InputView(closure_2[13]).LegacyText, obj);
+        tmp3 = outer1_15(InputView(outer1_2[13]).LegacyText, obj);
       }
       let tmp10 = null != title;
       if (tmp10) {
@@ -230,8 +236,8 @@ const tmp5 = (PureComponent) => {
         const items2 = [tmp.inputViewTitle];
         obj.style = items2;
         obj.children = title;
-        tmp12Result = callback5(InputView(closure_2[14]).Text, obj);
-        const tmp12 = callback5;
+        tmp12Result = outer1_14(InputView(outer1_2[14]).Text, obj);
+        const tmp12 = outer1_14;
       }
       let tmp15 = null != helpText;
       if (tmp15) {
@@ -240,7 +246,7 @@ const tmp5 = (PureComponent) => {
       let tmp16;
       if (tmp15) {
         obj = { variant: "text-xs/medium", children: helpText };
-        tmp16 = callback5(InputView(closure_2[14]).Text, obj);
+        tmp16 = outer1_14(InputView(outer1_2[14]).Text, obj);
       }
       const obj1 = { style: tmp.topContainer };
       const items3 = [tmp12Result, tmp16, , ];
@@ -250,12 +256,12 @@ const tmp5 = (PureComponent) => {
       }
       if (tmp22) {
         const obj2 = { style: tmp.required, children: "*" };
-        tmp22 = callback5(InputView(closure_2[13]).LegacyText, obj2);
+        tmp22 = outer1_14(InputView(outer1_2[13]).LegacyText, obj2);
       }
       items3[2] = tmp22;
       items3[3] = tmp3;
       obj1.children = items3;
-      return callback6(closure_10, obj1);
+      return outer1_15(outer1_10, obj1);
     }
   };
   items[1] = obj;
@@ -263,7 +269,7 @@ const tmp5 = (PureComponent) => {
     key: "renderBottomContainer",
     value() {
       const self = this;
-      const tmp = callback7(this.context);
+      const tmp = outer1_16(this.context);
       const props = this.props;
       const maxLength = props.maxLength;
       let tmp2 = null;
@@ -272,12 +278,12 @@ const tmp5 = (PureComponent) => {
         if (null != maxLength) {
           let obj = { style: tmp.bottomContainer };
           obj = { accessible: true, style: tmp.charactersLength };
-          const intl = InputView(closure_2[15]).intl;
+          const intl = InputView(outer1_2[15]).intl;
           obj = { remainingCharacters: maxLength - self.getText().length };
-          obj.accessibilityLabel = intl.formatToPlainString(InputView(closure_2[15]).t.fR1cof, obj);
+          obj.accessibilityLabel = intl.formatToPlainString(InputView(outer1_2[15]).t.fR1cof, obj);
           obj.children = maxLength - self.getText().length;
-          obj.children = callback5(InputView(closure_2[13]).LegacyText, obj);
-          tmp2 = callback5(closure_10, obj);
+          obj.children = outer1_14(InputView(outer1_2[13]).LegacyText, obj);
+          tmp2 = outer1_14(outer1_10, obj);
         }
       }
       return tmp2;
@@ -293,21 +299,21 @@ const tmp5 = (PureComponent) => {
       const self = this;
       ({ trailingButton, clearButtonVisibility, clearButtonAccessibilityLabel } = this.props);
       if (null == trailingButton) {
-        if (clearButtonVisibility === constants2.ALWAYS) {
-          let obj = { 929628993: false, -1309881243: false, -883819560: false, -322149210: false, -1924015951: false, style: tmp.clearButton, onPress: self.handleClear };
+        if (clearButtonVisibility === outer1_17.ALWAYS) {
+          let obj = { hitSlop: 16, style: tmp.clearButton, onPress: self.handleClear, accessible: true, accessibilityRole: "button" };
           if (null == clearButtonAccessibilityLabel) {
-            const intl = InputView(closure_2[15]).intl;
-            clearButtonAccessibilityLabel = intl.string(InputView(closure_2[15]).t.VkKicb);
+            const intl = InputView(outer1_2[15]).intl;
+            clearButtonAccessibilityLabel = intl.string(InputView(outer1_2[15]).t.VkKicb);
           }
           obj.accessibilityLabel = clearButtonAccessibilityLabel;
           obj = { size: "sm" };
-          obj.children = callback5(InputView(closure_2[16]).CircleXIcon, obj);
-          let tmp4Result = callback5(closure_11, obj);
-          const tmp4 = callback5;
-          const tmp5 = closure_11;
+          obj.children = outer1_14(InputView(outer1_2[16]).CircleXIcon, obj);
+          let tmp4Result = outer1_14(outer1_11, obj);
+          const tmp4 = outer1_14;
+          const tmp5 = outer1_11;
         } else {
           tmp4Result = null;
-          if (clearButtonVisibility === constants2.WITH_CONTENT) {
+          if (clearButtonVisibility === outer1_17.WITH_CONTENT) {
             tmp4Result = null;
           }
         }
@@ -341,8 +347,8 @@ const tmp5 = (PureComponent) => {
       const props = this.props;
       ({ numberOfLines, inputTextColor, placeholder, placeholderTextColor, large, maxLength, trailingButton, clearButtonVisibility, style, onChangeText, onFocus, value } = props);
       ({ disableConstantNumberOfLines, editable, accessibilityHint, inActionSheet, disabled, inputTextStyle } = props);
-      const tmp2 = callback2(props, closure_3);
-      const items = [callback7(this.context).inputView, , , , ];
+      const tmp2 = outer1_4(props, outer1_3);
+      const items = [outer1_16(this.context).inputView, , , , ];
       let obj = {};
       let num = 21;
       if (disableConstantNumberOfLines) {
@@ -367,7 +373,7 @@ const tmp5 = (PureComponent) => {
       }
       items[2] = obj;
       if (large) {
-        const obj1 = { fontSize: 25, fontFamily: constants.PRIMARY_SEMIBOLD };
+        const obj1 = { fontSize: 25, fontFamily: outer1_13.PRIMARY_SEMIBOLD };
         let obj2 = obj1;
       } else {
         obj2 = {};
@@ -377,18 +383,18 @@ const tmp5 = (PureComponent) => {
       if (null != placeholderTextColor) {
         let formatToPlainStringResult;
         if (null != maxLength) {
-          const intl = InputView(closure_2[15]).intl;
+          const intl = InputView(outer1_2[15]).intl;
           const obj3 = { maxLength };
-          formatToPlainStringResult = intl.formatToPlainString(InputView(closure_2[15]).t.+DFxLc, obj3);
+          formatToPlainStringResult = intl.formatToPlainString(InputView(outer1_2[15]).t["+DFxLc"], obj3);
         }
         const items1 = [formatToPlainStringResult, accessibilityHint];
         const _Boolean = Boolean;
         const found = items1.filter(Boolean);
         const joined = found.join(",");
         if (inActionSheet) {
-          let TextInput = callback(closure_2[18]);
+          let TextInput = outer1_1(outer1_2[18]);
         } else {
-          TextInput = InputView(closure_2[13]).TextInput;
+          TextInput = InputView(outer1_2[13]).TextInput;
         }
         const obj4 = {};
         let obj5 = { disabled };
@@ -407,10 +413,10 @@ const tmp5 = (PureComponent) => {
         obj4.maxLength = maxLength;
         obj4.accessibilityHint = joined;
         const merged = Object.assign(tmp2);
-        return closure_14(TextInput, obj4);
+        return outer1_14(TextInput, obj4);
       } else {
-        obj5 = InputView(closure_2[17]);
-        const unsafe_rawColors = callback(closure_2[11]).unsafe_rawColors;
+        obj5 = InputView(outer1_2[17]);
+        const unsafe_rawColors = outer1_1(outer1_2[11]).unsafe_rawColors;
         const isThemeDarkResult = obj5.isThemeDark(self.context.theme);
       }
     }
@@ -419,7 +425,7 @@ const tmp5 = (PureComponent) => {
     key: "render",
     value() {
       const self = this;
-      const tmp = callback7(this.context);
+      const tmp = outer1_16(this.context);
       const props = this.props;
       const disabled = props.disabled;
       let obj = { accessible: false, onPress: this.focus };
@@ -438,26 +444,26 @@ const tmp5 = (PureComponent) => {
       obj.pointerEvents = str;
       const items1 = [self.renderTopContainer(), , , , ];
       obj = { style: items2 };
-      const items2 = [tmp.inputContainer, props.inputContainerStyle];
+      items2 = [tmp.inputContainer, props.inputContainerStyle];
       const items3 = [self.renderTextView(), self.renderTrailingButton()];
       obj.children = items3;
-      items1[1] = callback6(closure_10, obj);
-      const obj4 = InputView(closure_2[19]);
-      const tmp2 = closure_14;
-      const tmp3 = closure_12;
-      const tmp4 = callback6;
-      const tmp5 = closure_10;
-      items1[2] = InputView(closure_2[19]).isAndroid() && self.renderBorder();
+      items1[1] = outer1_15(outer1_10, obj);
+      const obj4 = InputView(outer1_2[19]);
+      const tmp2 = outer1_14;
+      const tmp3 = outer1_12;
+      const tmp4 = outer1_15;
+      const tmp5 = outer1_10;
+      items1[2] = InputView(outer1_2[19]).isAndroid() && self.renderBorder();
       items1[3] = self.renderBottomContainer();
-      const tmp6 = InputView(closure_2[19]).isAndroid() && self.renderBorder();
-      const obj5 = InputView(closure_2[19]);
-      items1[4] = !InputView(closure_2[19]).isAndroid() && self.renderBorder();
+      const tmp6 = InputView(outer1_2[19]).isAndroid() && self.renderBorder();
+      const obj5 = InputView(outer1_2[19]);
+      items1[4] = !InputView(outer1_2[19]).isAndroid() && self.renderBorder();
       obj.children = items1;
       obj.children = tmp4(tmp5, obj);
       return tmp2(tmp3, obj);
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "getDerivedStateFromProps",
       value(value, valueProp) {
@@ -472,11 +478,11 @@ const tmp5 = (PureComponent) => {
     }
   ];
   return callback(InputView, items, items1);
-}(importAllResult.PureComponent);
-tmp5.contextType = arg1(dependencyMap[20]).ThemeContext;
-tmp5.defaultProps = { "Null": null, abt: null, abu: null, abv: "20", abw: "true", abx: "az", aby: "30", abz: "true", aca: "bal", acb: "20", acd: "true" };
-const obj6 = { color: importDefault(dependencyMap[11]).unsafe_rawColors.RED_400 };
-const result = arg1(dependencyMap[21]).fileFinishedImporting("design/void/InputView/native/InputView.tsx");
+})(importAllResult.PureComponent);
+tmp5.contextType = require("ManaContext").ThemeContext;
+tmp5.defaultProps = { showBorder: true, value: "", returnKeyType: "next", disabled: false, autoFocus: false, multiline: false, numberOfLines: 1, showTopContainer: true, showCharactersRemaining: false, clearButtonVisibility: "never", inActionSheet: false };
+const obj6 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
+let result = require("_defineProperties").fileFinishedImporting("design/void/InputView/native/InputView.tsx");
 
 export default tmp5;
 export const ClearButtonVisibility = obj7;

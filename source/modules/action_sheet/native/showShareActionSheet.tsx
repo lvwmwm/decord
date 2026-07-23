@@ -1,33 +1,33 @@
-// Module ID: 8326
-// Function ID: 66012
+// Module ID: 8332
+// Function ID: 66049
 // Name: showShareActionSheet
-// Dependencies: []
+// Dependencies: [27, 478, 8333, 8334, 1184, 2]
 // Exports: showShareActionSheet
 
-// Module 8326 (showShareActionSheet)
-const NativeEventEmitter = require(dependencyMap[0]).NativeEventEmitter;
-const _module = require(dependencyMap[1]);
-if (_module.isAndroid()) {
+// Module 8332 (showShareActionSheet)
+import { NativeEventEmitter } from "get ActivityIndicator";
+import isWindows from "isWindows";
+
+if (isWindows.isAndroid()) {
   const prototype = NativeEventEmitter.prototype;
-  const nativeEventEmitter = new NativeEventEmitter(importDefault(dependencyMap[2]));
+  const nativeEventEmitter = new NativeEventEmitter(require("enforcing"));
   nativeEventEmitter.addListener("share-broadcast-receiver-app-clicked", (arg0) => {
     let _location;
     let app;
     ({ app, location: _location } = arg0);
-    const result = require(dependencyMap[3]).trackAppClickInNativeShareSheet(app, _location);
+    const result = require(8334) /* resolveShareFileExtension */.trackAppClickInNativeShareSheet(app, _location);
   });
 }
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");
+let result = require("enforcing").fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");
 
 export const showShareActionSheet = function showShareActionSheet(source, SECURE_FRAMES_STREAM_BOTTOM_SHEET) {
   let mediaFallbackUrl;
   let mediaStagingOptions;
-  const require = source;
+  const _require = source;
   const importDefault = SECURE_FRAMES_STREAM_BOTTOM_SHEET;
   if (null != source.source) {
-    let mediaShareParams = require(dependencyMap[3]).getMediaShareParams(source.source);
-    const obj2 = require(dependencyMap[3]);
+    let mediaShareParams = _require(8334).getMediaShareParams(source.source);
+    const obj2 = _require(8334);
   } else {
     mediaShareParams = { mediaFallbackUrl: undefined, mediaStagingOptions: undefined };
   }
@@ -57,34 +57,34 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
   if (null != mediaStagingOptions) {
     tmp7 = mediaStagingOptions;
   }
-  const obj3 = importDefault(dependencyMap[2]);
-  const shareResult = importDefault(dependencyMap[2]).share(tmp3, tmp4, tmp5, tmp6, tmp7);
-  importDefault(dependencyMap[2]).share(tmp3, tmp4, tmp5, tmp6, tmp7).then((method) => {
+  const obj3 = importDefault(8333);
+  const shareResult = importDefault(8333).share(tmp3, tmp4, tmp5, tmp6, tmp7);
+  importDefault(8333).share(tmp3, tmp4, tmp5, tmp6, tmp7).then((method) => {
     if (null != method) {
       method = method.method;
-      if (null != method.iOSOnlyShareCallback) {
+      if (null != source.iOSOnlyShareCallback) {
         let tmp4 = null;
         if (null != method) {
           tmp4 = method;
         }
-        method.iOSOnlyShareCallback(tmp, tmp4);
+        source.iOSOnlyShareCallback(tmp, tmp4);
       }
-      const result = method(closure_2[3]).trackAppClickInNativeShareSheet(method, arg1);
-      const obj = method(closure_2[3]);
+      const result = source(outer1_2[3]).trackAppClickInNativeShareSheet(method, closure_1);
+      const obj = source(outer1_2[3]);
     }
   }).catch((arg0) => {
-    let obj = arg1(closure_2[4]);
+    let obj = SECURE_FRAMES_STREAM_BOTTOM_SHEET(outer1_2[4]);
     obj = {};
     obj = {};
     let str = "";
-    if (null != arg1) {
-      str = arg1;
+    if (null != SECURE_FRAMES_STREAM_BOTTOM_SHEET) {
+      str = SECURE_FRAMES_STREAM_BOTTOM_SHEET;
     }
     obj.location = str;
     obj.tags = obj;
     obj.captureException(arg0, obj);
-    if (null != arg0.iOSOnlyShareCallback) {
-      arg0.iOSOnlyShareCallback(false, null);
+    if (null != source.iOSOnlyShareCallback) {
+      source.iOSOnlyShareCallback(false, null);
     }
   });
 };

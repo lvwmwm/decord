@@ -1,19 +1,19 @@
 // Module ID: 1553
-// Function ID: 17590
+// Function ID: 17591
 // Name: isMetaQuest
-// Dependencies: []
+// Dependencies: [647, 1554, 2]
 // Exports: isMetaQuest, isQuestRelease
 
 // Module 1553 (isMetaQuest)
 function isMetaQuest() {
-  return importDefault(dependencyMap[0]).isMetaQuest();
+  return importDefault(647).isMetaQuest();
 }
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/device/MetaQuestUtils.android.tsx");
+const isMetaQuestResult = isMetaQuest();
+const result = require("set").fileFinishedImporting("modules/device/MetaQuestUtils.android.tsx");
 
 export { isMetaQuest };
 export const isQuestRelease = function isQuestRelease() {
-  const constants = importAll(dependencyMap[1]).getConstants();
+  const constants = importAll(1554).getConstants();
   let startsWithResult;
   if (null != constants) {
     const ReleaseChannel = constants.ReleaseChannel;
@@ -23,4 +23,4 @@ export const isQuestRelease = function isQuestRelease() {
   }
   return null != startsWithResult && startsWithResult;
 };
-export const isThumbstickScrollDevice = isMetaQuest();
+export const isThumbstickScrollDevice = isMetaQuestResult;

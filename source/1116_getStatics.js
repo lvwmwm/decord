@@ -1,5 +1,5 @@
 // Module ID: 1116
-// Function ID: 12696
+// Function ID: 12697
 // Name: getStatics
 // Dependencies: []
 
@@ -27,12 +27,12 @@ function getStatics($$typeof) {
   }
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let closure_0 = { accessible: false, Promise: false, apply: false, icon: false, apply: false, body: false, flex: false, accessibilityRole: false, icon: false, apply: false, borderRadius: false };
-let closure_1 = {};
-let obj = {};
+let closure_0 = { childContextTypes: true, contextType: true, contextTypes: true, defaultProps: true, displayName: true, getDefaultProps: true, getDerivedStateFromError: true, getDerivedStateFromProps: true, mixins: true, propTypes: true, type: true };
+let closure_1 = { name: true, length: true, prototype: true, caller: true, callee: true, arguments: true, arity: true };
+let obj = { $$typeof: true, compare: true, defaultProps: true, displayName: true, propTypes: true, type: true };
 const forResult1 = Symbol.for("react.memo");
 obj = {};
-obj[Symbol.for("react.forward_ref")] = {};
+obj[Symbol.for("react.forward_ref")] = { $$typeof: true, render: true, defaultProps: true, displayName: true, propTypes: true };
 obj[forResult1] = obj;
 let closure_5 = defineProperty.bind(Object);
 let closure_6 = getOwnPropertyNames.bind(Object);
@@ -70,8 +70,8 @@ function hoistNonReactStatics(arg0, arg1, arg2) {
       let _String = String;
       let StringResult = String(nextResult);
       let tmp48 = StringResult;
-      let tmp49 = closure_1;
-      if (!closure_1[StringResult]) {
+      let tmp49 = table;
+      if (!table[StringResult]) {
         let tmp26 = tmp20;
         if (null == tmp20) {
           let tmp29 = tmp18;

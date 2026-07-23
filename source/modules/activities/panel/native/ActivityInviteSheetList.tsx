@@ -1,28 +1,39 @@
-// Module ID: 15593
-// Function ID: 118978
+// Module ID: 15710
+// Function ID: 121151
 // Name: keyExtractor
-// Dependencies: []
+// Dependencies: [31, 653, 33, 4130, 5052, 689, 1273, 1212, 4660, 4098, 3982, 4126, 15711, 5160, 5189, 2]
 // Exports: default
 
-// Module 15593 (keyExtractor)
+// Module 15710 (keyExtractor)
+import result from "result";
+import { Fonts } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+import importDefaultResult1 from "createTextStyle";
+
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 function keyExtractor(item) {
   return item.item.id;
 }
 function FriendsEmptyComponent() {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   obj = {};
-  const intl = arg1(dependencyMap[7]).intl;
-  obj.title = intl.string(arg1(dependencyMap[7]).t.dz4UlO);
-  const intl2 = arg1(dependencyMap[7]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[7]).t.MBQBI7);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.dz4UlO);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.body = intl2.string(require(1212) /* getSystemLocale */.t.MBQBI7);
   ({ emptyTitle: obj2.titleStyle, emptyBody: obj2.bodyStyle } = tmp);
-  const items = [callback(arg1(dependencyMap[6]).RefreshEmptyState, obj), ];
+  const items = [callback(require(1273) /* Button */.RefreshEmptyState, obj), ];
   obj = {
     onPress() {
-      let obj = callback2(closure_2[9]);
+      let obj = outer1_1(outer1_2[9]);
       obj.hideActionSheet();
-      const rootNavigationRef = callback(closure_2[10]).getRootNavigationRef();
+      const rootNavigationRef = outer1_0(outer1_2[10]).getRootNavigationRef();
       if (null != rootNavigationRef) {
         obj = { screen: "add-friends" };
         obj = { sourcePage: "Instant Invite Empty State" };
@@ -32,54 +43,44 @@ function FriendsEmptyComponent() {
     },
     accessibilityRole: "link"
   };
-  const intl3 = arg1(dependencyMap[7]).intl;
-  obj.accessibilityLabel = intl3.string(arg1(dependencyMap[7]).t.a7FVbE);
-  obj.hitSlop = {};
-  const obj1 = { "Null": 1091694070, "Null": 141842, alignItems: 6258 };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t.a7FVbE);
+  obj.hitSlop = { top: 8, left: 8, bottom: 8, right: 8 };
+  const obj1 = { style: null, variant: "text-sm/semibold", color: "text-link" };
   const items1 = [tmp.goToFriendsLink];
   obj1.style = items1;
-  const intl4 = arg1(dependencyMap[7]).intl;
-  obj1.children = intl4.string(arg1(dependencyMap[7]).t.a7FVbE);
-  obj.children = callback(arg1(dependencyMap[11]).Text, obj1);
-  items[1] = callback(arg1(dependencyMap[8]).PressableOpacity, obj);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl4.string(require(1212) /* getSystemLocale */.t.a7FVbE);
+  obj.children = callback(require(4126) /* Text */.Text, obj1);
+  items[1] = callback(require(4660) /* PressableBase */.PressableOpacity, obj);
   obj.children = items;
   return callback2(closure_5, obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-const Fonts = arg1(dependencyMap[1]).Fonts;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = {};
-const tmp2 = arg1(dependencyMap[2]);
-const merged = Object.assign(importDefault(dependencyMap[4])(Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
-obj["textTransform"] = "none";
-obj["lineHeight"] = 24;
-obj.emptyTitle = obj;
-const obj1 = {};
-const importDefaultResult = importDefault(dependencyMap[4]);
-const merged1 = Object.assign(importDefault(dependencyMap[4])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[5]).colors.TEXT_SUBTLE, 16));
+({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
+_createForOfIteratorHelperLoose["textTransform"] = "none";
+_createForOfIteratorHelperLoose["lineHeight"] = 24;
+_createForOfIteratorHelperLoose.emptyTitle = _createForOfIteratorHelperLoose;
+let obj1 = {};
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 16));
 obj1["lineHeight"] = 20;
 obj1["fontWeight"] = "600";
-obj.emptyBody = obj1;
-obj.goToFriendsLink = { textAlign: "center" };
-let closure_7 = obj.createStyles(obj);
-const importDefaultResult1 = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/activities/panel/native/ActivityInviteSheetList.tsx");
+_createForOfIteratorHelperLoose.emptyBody = obj1;
+_createForOfIteratorHelperLoose.goToFriendsLink = { textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/activities/panel/native/ActivityInviteSheetList.tsx");
 
 export default function ActivityInviteSheetList(data) {
   data = data.data;
-  const arg1 = data;
   const error = data.error;
-  const importDefault = error;
   const getSendState = data.getSendState;
-  const dependencyMap = getSendState;
   const isSubmitting = data.isSubmitting;
-  const React = isSubmitting;
   const onInviteSent = data.onInviteSent;
   const onPressAvatar = data.onPressAvatar;
   const items = [error, isSubmitting, getSendState, onPressAvatar, onInviteSent, data.length];
-  const callback = React.useCallback((arg0) => {
+  const callback = isSubmitting.useCallback((arg0) => {
     let index;
     let item;
     ({ item, index } = arg0);
@@ -87,7 +88,7 @@ export default function ActivityInviteSheetList(data) {
     return onInviteSent(error(getSendState[12]), obj);
   }, items);
   let obj = {};
-  obj = { paddingBottom: importDefault(dependencyMap[13])({ isKeyboardAwareOnAndroid: false }).insets.bottom + importDefault(dependencyMap[5]).space.PX_16, paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
+  obj = { paddingBottom: error(getSendState[13])({ isKeyboardAwareOnAndroid: false }).insets.bottom + error(getSendState[5]).space.PX_16, paddingHorizontal: error(getSendState[5]).space.PX_12 };
   obj.contentContainerStyle = obj;
   obj.bounces = false;
   obj.renderItem = callback;
@@ -95,5 +96,5 @@ export default function ActivityInviteSheetList(data) {
   obj.keyExtractor = keyExtractor;
   obj.keyboardShouldPersistTaps = "always";
   obj.ListEmptyComponent = FriendsEmptyComponent;
-  return onInviteSent(arg1(dependencyMap[14]).BottomSheetFlatList, obj);
+  return onInviteSent(data(getSendState[14]).BottomSheetFlatList, obj);
 };

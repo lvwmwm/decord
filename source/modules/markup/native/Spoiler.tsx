@@ -1,9 +1,25 @@
-// Module ID: 10255
-// Function ID: 79256
+// Module ID: 10267
+// Function ID: 79324
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 653, 10260, 33, 4130, 477, 689, 1273, 3842, 2]
 
-// Module 10255 (_isNativeReflectConstruct)
+// Module 10267 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import ME from "ME";
+import closure_4 from "set";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { EMOJI_CHAT_SIZE } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "_possibleConstructorReturn";
+
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,70 +30,60 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function recursiveTextExtraction(arg0, arg1) {
+  let closure_0 = arg1;
   const Children = importAllResult.Children;
   return Children.map(arg0, (props) => {
-    if (closure_7.isValidElement(props)) {
+    if (outer1_7.isValidElement(props)) {
       const style = props.props.style;
       const _Array = Array;
       let flattenResult = style;
       if (Array.isArray(style)) {
-        flattenResult = closure_9.flatten(style);
+        flattenResult = outer1_9.flatten(style);
       }
-      const obj = { children: callback(props.props.children, arg1) };
-      const items = [flattenResult, arg1.spoiler];
+      const obj = { children: outer1_13(props.props.children, spoiler) };
+      const items = [flattenResult, spoiler.spoiler];
       obj.style = items;
       obj.onPress = undefined;
-      return closure_7.cloneElement(props, obj);
+      return outer1_7.cloneElement(props, obj);
     } else {
       return props;
     }
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-({ View: closure_8, StyleSheet: closure_9 } = arg1(dependencyMap[6]));
-const EMOJI_CHAT_SIZE = arg1(dependencyMap[7]).EMOJI_CHAT_SIZE;
-const jsx = arg1(dependencyMap[9]).jsx;
-let obj = arg1(dependencyMap[10]);
-obj = {};
-obj = {};
-const tmp3 = arg1(dependencyMap[6]);
+({ View: closure_8, StyleSheet: closure_9 } = get_ActivityIndicator);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
 let str = "transparent";
-if (obj4.isAndroid()) {
+if (set.isAndroid()) {
   str = "rgba(0,0,0,0.0019607844)";
 }
-obj.color = str;
-obj.backgroundColor = importDefault(dependencyMap[12]).colors.SPOILER_HIDDEN_BACKGROUND;
-obj.spoiler = obj;
-const obj4 = arg1(dependencyMap[11]);
-obj.placeholder = { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, backgroundColor: importDefault(dependencyMap[12]).colors.SPOILER_HIDDEN_BACKGROUND };
-const obj1 = { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, backgroundColor: importDefault(dependencyMap[12]).colors.SPOILER_HIDDEN_BACKGROUND };
-obj.spoilerRevealed = { color: importDefault(dependencyMap[12]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[12]).colors.SPOILER_REVEALED_BACKGROUND };
-obj.muted = { opacity: arg1(dependencyMap[8]).MUTED_OPACITY_CONTENT };
-let closure_11 = obj.createLegacyClassComponentStyles(obj);
-const tmp4 = (PureComponent) => {
+_createForOfIteratorHelperLoose.color = str;
+_createForOfIteratorHelperLoose.backgroundColor = require("_createForOfIteratorHelperLoose").colors.SPOILER_HIDDEN_BACKGROUND;
+_createForOfIteratorHelperLoose.spoiler = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.placeholder = { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, backgroundColor: require("_createForOfIteratorHelperLoose").colors.SPOILER_HIDDEN_BACKGROUND };
+const obj1 = { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, backgroundColor: require("_createForOfIteratorHelperLoose").colors.SPOILER_HIDDEN_BACKGROUND };
+_createForOfIteratorHelperLoose.spoilerRevealed = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.SPOILER_REVEALED_BACKGROUND };
+_createForOfIteratorHelperLoose.muted = { opacity: require("hairlineWidth").MUTED_OPACITY_CONTENT };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+const tmp4 = ((PureComponent) => {
   class Spoiler {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_2(this, Spoiler);
+      tmp = outer1_2(this, apply);
       items1 = [...items];
-      obj = closure_5(Spoiler);
-      tmp2 = closure_4;
-      if (closure_12()) {
+      obj = outer1_5(apply);
+      tmp2 = outer1_4;
+      if (outer1_12()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
+        tmp5 = outer1_5;
+        constructResult = Reflect.construct(obj, items1, outer1_5(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      Spoiler = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.state = { revealed: false };
       tmp2Result.handleTap = () => {
         let disableReveal = tmp2Result.state.revealed;
@@ -92,14 +98,13 @@ const tmp4 = (PureComponent) => {
       return tmp2Result;
     }
   }
-  const arg1 = Spoiler;
   callback2(Spoiler, PureComponent);
-  const items = [
+  let items = [
     {
       key: "render",
       value() {
         const self = this;
-        const tmp = callback3(this.context);
+        const tmp = outer1_11(this.context);
         const Spoiler = tmp;
         const revealed = this.state.revealed;
         const children = this.props.children;
@@ -109,19 +114,19 @@ const tmp4 = (PureComponent) => {
         } else {
           items1 = [tmp.spoiler, tmp2];
         }
-        let Children = React.Children;
+        let Children = outer1_7.Children;
         if (0 === Children.count(children)) {
           return null;
         } else {
-          Children = React.Children;
+          Children = outer1_7.Children;
           const mapped = Children.map(children, (type) => {
-            if (!validElement.isValidElement(type)) {
+            if (!outer2_7.isValidElement(type)) {
               return type;
             } else {
               if ("Image" === type.type.displayName) {
                 if (!revealed) {
                   const obj = { style: tmp.placeholder };
-                  let tmp7 = callback(closure_8, obj);
+                  let tmp7 = outer2_10(outer2_8, obj);
                 }
               } else {
                 const props = type.props;
@@ -134,13 +139,13 @@ const tmp4 = (PureComponent) => {
               if (null != type.props) {
                 tmp9 = type;
                 if (!revealed) {
-                  tmp9 = callback2(type, tmp);
+                  tmp9 = outer2_13(type, tmp);
                 }
               }
               tmp7 = tmp9;
             }
           });
-          const obj = { accessibilityRole: "button" };
+          let obj = { accessibilityRole: "button" };
           const items2 = [items1, ];
           let muted = self.props.muted;
           if (muted) {
@@ -154,15 +159,14 @@ const tmp4 = (PureComponent) => {
           }
           obj.onPress = handleTap;
           obj.children = mapped;
-          return closure_10(Spoiler(revealed[13]).LegacyText, obj);
+          return outer1_10(Spoiler(outer1_1[13]).LegacyText, obj);
         }
       }
     }
   ];
   return callback(Spoiler, items);
-}(importAllResult.PureComponent);
-tmp4.contextType = arg1(dependencyMap[14]).ThemeContext;
-const obj2 = { color: importDefault(dependencyMap[12]).colors.TEXT_DEFAULT, backgroundColor: importDefault(dependencyMap[12]).colors.SPOILER_REVEALED_BACKGROUND };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/markup/native/Spoiler.tsx");
+})(importAllResult.PureComponent);
+tmp4.contextType = require("ManaContext").ThemeContext;
+let result = set.fileFinishedImporting("modules/markup/native/Spoiler.tsx");
 
 export default tmp4;

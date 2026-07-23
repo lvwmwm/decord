@@ -1,18 +1,18 @@
-// Module ID: 9775
-// Function ID: 76013
+// Module ID: 9782
+// Function ID: 76054
 // Name: useOpenProfileSettings
-// Dependencies: []
+// Dependencies: [31, 1849, 9783, 653, 662, 7841, 9784, 9785, 5796, 2]
 // Exports: default
 
-// Module 9775 (useOpenProfileSettings)
-require(dependencyMap[0]).useCallback;
-importDefault(dependencyMap[1]);
-let closure_3 = importDefault(dependencyMap[2]);
-const UserSettingsSections = require(dependencyMap[3]).UserSettingsSections;
-let closure_5 = require(dependencyMap[4]).ProfileCustomizationSubsection;
-const _module = require(dependencyMap[5]);
-const _module1 = require(dependencyMap[9]);
-const result = _module1.fileFinishedImporting("modules/profile_customization/useOpenProfileSettings.tsx");
+// Module 9782 (useOpenProfileSettings)
+import "_isNativeReflectConstruct";
+import zustandStore from "zustandStore";
+import { UserSettingsSections } from "ME";
+import { ProfileCustomizationSubsection as closure_5 } from "MAX_FAVORITES";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+require("result").useCallback;
+const result = require("zustandStore").fileFinishedImporting("modules/profile_customization/useOpenProfileSettings.tsx");
 
 export default function useOpenProfileSettings() {
   let obj = arg0;
@@ -20,10 +20,8 @@ export default function useOpenProfileSettings() {
     obj = {};
   }
   const guild = obj.guild;
-  const require = guild;
   const scrollPosition = obj.scrollPosition;
-  const dependencyMap = scrollPosition;
-  const items = [guild, scrollPosition, obj.analyticsLocations, require(dependencyMap[6]).useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings")];
+  const items = [guild, scrollPosition, obj.analyticsLocations, guild(scrollPosition[6]).useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings")];
   return useCallback(() => {
     if (null != guild) {
       let obj = guild(scrollPosition[7]);
@@ -31,14 +29,14 @@ export default function useOpenProfileSettings() {
     }
     obj = {};
     if (null != guild) {
-      let USER_PROFILE = constants2.GUILD;
+      let USER_PROFILE = outer1_5.GUILD;
     } else {
-      USER_PROFILE = constants2.USER_PROFILE;
+      USER_PROFILE = outer1_5.USER_PROFILE;
     }
     obj.subsection = USER_PROFILE;
     obj.scrollPosition = scrollPosition;
-    state.setState(obj);
-    obj = { screen: constants.PROFILE_CUSTOMIZATION };
+    outer1_3.setState(obj);
+    obj = { screen: outer1_4.PROFILE_CUSTOMIZATION };
     guild(scrollPosition[8]).openUserSettings(obj);
   }, items);
 };

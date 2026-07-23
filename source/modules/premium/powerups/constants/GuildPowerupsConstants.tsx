@@ -1,102 +1,103 @@
-// Module ID: 4016
-// Function ID: 33427
+// Module ID: 4018
+// Function ID: 33436
 // Name: BoostedGuildTiers
-// Dependencies: []
+// Dependencies: [1851, 4019, 653, 4021, 1334, 4022, 1212, 4057, 4058, 4059, 4060, 4041, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 4016 (BoostedGuildTiers)
+// Module 4018 (BoostedGuildTiers)
+import { BoostedGuildFeatures } from "GuildFeatures";
+import ME from "ME";
+import set from "ME";
+
 let TIER_1;
 let TIER_12;
 let TIER_2;
 let TIER_22;
 let TIER_3;
 let TIER_32;
-const BoostedGuildFeatures = require(dependencyMap[0]).BoostedGuildFeatures;
-const _module = require(dependencyMap[2]);
-const BoostedGuildTiers = _module.BoostedGuildTiers;
-const GuildFeatures = _module.GuildFeatures;
-const items = [require(dependencyMap[3]).GUILD_POWERUP_LEVEL_1_SKU_ID, require(dependencyMap[3]).GUILD_POWERUP_LEVEL_2_SKU_ID, require(dependencyMap[3]).GUILD_POWERUP_LEVEL_3_SKU_ID, require(dependencyMap[3]).GUILD_POWERUP_TAG_SKU_ID, require(dependencyMap[3]).GUILD_POWERUP_ROLE_COLOR_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID];
+const BoostedGuildTiers = ME.BoostedGuildTiers;
+const GuildFeatures = ME.GuildFeatures;
+const items = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_1_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_2_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_3_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_TAG_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_ROLE_COLOR_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID];
+let set = new Set(items);
 const items1 = [, , , , , ];
 ({ GUILD_TAGS: arr2[0], ENHANCED_ROLE_COLORS: arr2[1], GUILD_TAGS_BADGE_PACK_PETS: arr2[2], GUILD_TAGS_BADGE_PACK_FLEX: arr2[3], GUILD_TAGS_BADGE_PACK_PLANT: arr2[4], GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES: arr2[5] } = GuildFeatures);
-const set = new Set(items);
-let obj = { [TIER_1]: require(dependencyMap[3]).GUILD_POWERUP_LEVEL_1_SKU_ID, [TIER_2]: require(dependencyMap[3]).GUILD_POWERUP_LEVEL_2_SKU_ID, [TIER_3]: require(dependencyMap[3]).GUILD_POWERUP_LEVEL_3_SKU_ID, [BoostedGuildTiers.NONE]: undefined };
+let obj = { [TIER_1]: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_1_SKU_ID, [TIER_2]: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_2_SKU_ID, [TIER_3]: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_3_SKU_ID, [BoostedGuildTiers.NONE]: undefined };
 ({ TIER_1, TIER_2, TIER_3 } = BoostedGuildTiers);
-obj = { [require(dependencyMap[3]).GUILD_POWERUP_LEVEL_1_SKU_ID]: BoostedGuildTiers.TIER_1, [require(dependencyMap[3]).GUILD_POWERUP_LEVEL_2_SKU_ID]: BoostedGuildTiers.TIER_2, [require(dependencyMap[3]).GUILD_POWERUP_LEVEL_3_SKU_ID]: BoostedGuildTiers.TIER_3 };
-obj = { [TIER_12]: require(dependencyMap[4]).DismissibleGuildContent.GUILD_POWERUP_LEVEL_1_COACHMARK, [TIER_22]: require(dependencyMap[4]).DismissibleGuildContent.GUILD_POWERUP_LEVEL_2_COACHMARK, [TIER_32]: require(dependencyMap[4]).DismissibleGuildContent.GUILD_POWERUP_LEVEL_3_COACHMARK, [BoostedGuildTiers.NONE]: undefined };
+obj = { [require(4021).GUILD_POWERUP_LEVEL_1_SKU_ID]: BoostedGuildTiers.TIER_1, [require(4021).GUILD_POWERUP_LEVEL_2_SKU_ID]: BoostedGuildTiers.TIER_2, [require(4021).GUILD_POWERUP_LEVEL_3_SKU_ID]: BoostedGuildTiers.TIER_3 };
+obj = { [TIER_12]: require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_LEVEL_1_COACHMARK, [TIER_22]: require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_LEVEL_2_COACHMARK, [TIER_32]: require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_LEVEL_3_COACHMARK, [BoostedGuildTiers.NONE]: undefined };
 ({ TIER_1: TIER_12, TIER_2: TIER_22, TIER_3: TIER_32 } = BoostedGuildTiers);
-const items2 = [require(dependencyMap[3]).GUILD_POWERUP_TAG_SKU_ID];
+const items2 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_TAG_SKU_ID];
 const items3 = [items2, , , , , , ];
-const items4 = [require(dependencyMap[3]).GUILD_POWERUP_ROLE_COLOR_SKU_ID];
+const items4 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_ROLE_COLOR_SKU_ID];
 items3[1] = items4;
-const items5 = [require(dependencyMap[3]).VANITY_URL_POWERUP_SKU_ID];
+const items5 = [require("VANITY_URL_POWERUP_SKU_ID").VANITY_URL_POWERUP_SKU_ID];
 items3[2] = items5;
-const items6 = [require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID];
+const items6 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID];
 items3[3] = items6;
-const items7 = [require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID];
+const items7 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID];
 items3[4] = items7;
-const items8 = [require(dependencyMap[3]).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
+const items8 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
 items3[5] = items8;
-const items9 = [require(dependencyMap[3]).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+const items9 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_GUILD_THEME_SKU_ID];
 items3[6] = items9;
-const items10 = [require(dependencyMap[3]).GUILD_POWERUP_TAG_SKU_ID, require(dependencyMap[3]).GUILD_POWERUP_ROLE_COLOR_SKU_ID, require(dependencyMap[3]).VANITY_URL_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+const items10 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_TAG_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_ROLE_COLOR_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").VANITY_URL_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_GUILD_THEME_SKU_ID];
 const set1 = new Set(items1);
-const items11 = [require(dependencyMap[3]).GUILD_POWERUP_ROLE_COLOR_SKU_ID, require(dependencyMap[3]).GUILD_POWERUP_TAG_SKU_ID];
+const items11 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_ROLE_COLOR_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_TAG_SKU_ID];
 const set2 = new Set(items10);
 const obj1 = { boostPrice: 5, includedInLevel: BoostedGuildTiers.TIER_3 };
-const obj2 = {
+let obj2 = {
   boostPrice: 4,
   isEnabled(guildId) {
-    const FileUploadPowerupHoldoutExperiment = require(dependencyMap[7]).FileUploadPowerupHoldoutExperiment;
+    const FileUploadPowerupHoldoutExperiment = require(4057) /* apexExperiment */.FileUploadPowerupHoldoutExperiment;
     let fileUpload250MbPowerupEnabled = !FileUploadPowerupHoldoutExperiment.getConfig({ location: "GuildPowerupsConstants" }).enabled;
     if (fileUpload250MbPowerupEnabled) {
-      fileUpload250MbPowerupEnabled = require(dependencyMap[8]).getFileUpload250MbPowerupEnabled(guildId, "GuildPowerupsConstants");
-      const obj = require(dependencyMap[8]);
+      fileUpload250MbPowerupEnabled = require(4058) /* items */.getFileUpload250MbPowerupEnabled(guildId, "GuildPowerupsConstants");
+      const obj = require(4058) /* items */;
     }
     return fileUpload250MbPowerupEnabled;
   }
 };
-const obj3 = {
+let obj3 = {
   boostPrice: 3,
   isEnabled(guildId) {
-    let serverThemeUserEnabled = require(dependencyMap[9]).getServerThemeUserEnabled("GuildPowerupsConstants");
+    let serverThemeUserEnabled = require(4059) /* apexExperiment */.getServerThemeUserEnabled("GuildPowerupsConstants");
     if (serverThemeUserEnabled) {
-      serverThemeUserEnabled = require(dependencyMap[10]).getServerThemeEnabled(guildId, "GuildPowerupsConstants");
-      const obj2 = require(dependencyMap[10]);
+      serverThemeUserEnabled = require(4060) /* items */.getServerThemeEnabled(guildId, "GuildPowerupsConstants");
+      const obj2 = require(4060) /* items */;
     }
     return serverThemeUserEnabled;
   }
 };
-const obj4 = {
+let obj4 = {
   boostPrice: 3,
   isEnabled(guildId) {
-    return require(dependencyMap[11]).getGameServerEnabled(guildId, "GuildPowerupsConstants");
+    return require(4041) /* items */.getGameServerEnabled(guildId, "GuildPowerupsConstants");
   }
 };
 const set3 = new Set(items11);
-const obj6 = { VANITY_URL: 1, [1]: "VANITY_URL", GUILD_TAG_BADGE_PACKS_WAVE_ONE: 2, [2]: "GUILD_TAG_BADGE_PACKS_WAVE_ONE", GAME_SERVER_HOSTING: 3, [3]: "GAME_SERVER_HOSTING", GUILD_TAG_BADGE_PACKS_WAVE_TWO: 4, [4]: "GUILD_TAG_BADGE_PACKS_WAVE_TWO", FILE_UPLOAD_250_MB: 5, [5]: "FILE_UPLOAD_250_MB", GUILD_THEME: 6, [6]: "GUILD_THEME", GUILD_TAG: 7, [7]: "GUILD_TAG" };
-const items12 = [require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID];
+let obj6 = { VANITY_URL: 1, [1]: "VANITY_URL", GUILD_TAG_BADGE_PACKS_WAVE_ONE: 2, [2]: "GUILD_TAG_BADGE_PACKS_WAVE_ONE", GAME_SERVER_HOSTING: 3, [3]: "GAME_SERVER_HOSTING", GUILD_TAG_BADGE_PACKS_WAVE_TWO: 4, [4]: "GUILD_TAG_BADGE_PACKS_WAVE_TWO", FILE_UPLOAD_250_MB: 5, [5]: "FILE_UPLOAD_250_MB", GUILD_THEME: 6, [6]: "GUILD_THEME", GUILD_TAG: 7, [7]: "GUILD_TAG" };
+const items12 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID];
 const set4 = new Set(items12);
-const items13 = [require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, require(dependencyMap[3]).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID];
+const items13 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID];
 const set5 = new Set(items13);
-const obj7 = {};
-const items14 = [require(dependencyMap[3]).VANITY_URL_POWERUP_SKU_ID];
-const obj5 = { [require(dependencyMap[3]).VANITY_URL_POWERUP_SKU_ID]: BoostedGuildTiers.TIER_3 };
+let obj7 = {};
+const items14 = [require("VANITY_URL_POWERUP_SKU_ID").VANITY_URL_POWERUP_SKU_ID];
+const obj5 = { [require(4021).VANITY_URL_POWERUP_SKU_ID]: BoostedGuildTiers.TIER_3 };
 obj7[obj6.VANITY_URL] = new Set(items14);
 obj7[obj6.GUILD_TAG_BADGE_PACKS_WAVE_ONE] = set4;
 const set6 = new Set(items14);
 obj7[obj6.GAME_SERVER_HOSTING] = new Set();
 obj7[obj6.GUILD_TAG_BADGE_PACKS_WAVE_TWO] = set5;
-const items15 = [require(dependencyMap[3]).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
+const items15 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
 const set7 = new Set();
 obj7[obj6.FILE_UPLOAD_250_MB] = new Set(items15);
-const items16 = [require(dependencyMap[3]).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+const items16 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_GUILD_THEME_SKU_ID];
 const set8 = new Set(items15);
 obj7[obj6.GUILD_THEME] = new Set(items16);
-const items17 = [require(dependencyMap[3]).GUILD_POWERUP_TAG_SKU_ID];
+const items17 = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_TAG_SKU_ID];
 const set9 = new Set(items16);
 obj7[obj6.GUILD_TAG] = new Set(items17);
-const _module1 = require(dependencyMap[12]);
-const result = _module1.fileFinishedImporting("modules/premium/powerups/constants/GuildPowerupsConstants.tsx");
+const result = set.fileFinishedImporting("modules/premium/powerups/constants/GuildPowerupsConstants.tsx");
 
 export const GuildPowerupType = { PERK: "perk", LEVEL: "level" };
 export const GUILD_POWERUP_APPLICATION_ID = "1340102344645283891";
@@ -108,64 +109,64 @@ export const LEVEL_SKU_ID_TO_BOOSTING_TIER = obj;
 export const BOOSTING_TIER_TO_LEVEL_UNLOCKED_DC = obj;
 export const GUILD_POWERUP_MODAL_KEY = "guild_powerup_modal";
 export const GUILD_POWERUP_NEW_PERK_GROUPS = items3;
-export const PERK_SKU_BADGES = { [require(dependencyMap[1]).GAME_SERVER_POWERUP_SKU_ID]: "beta", [require(dependencyMap[3]).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID]: "beta", [require(dependencyMap[3]).GUILD_POWERUP_GUILD_THEME_SKU_ID]: "beta" };
+export const PERK_SKU_BADGES = { [require(4019).GAME_SERVER_POWERUP_SKU_ID]: "beta", [require(4021).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID]: "beta", [require(4021).GUILD_POWERUP_GUILD_THEME_SKU_ID]: "beta" };
 export const GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP = set2;
 export const GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE = set3;
 export const GUILD_FEATURE_TO_PERK = () => {
   let obj = {};
-  obj = { perkIcon: require(dependencyMap[5]).PerkIcons.STREAM };
-  const intl = require(dependencyMap[6]).intl;
-  obj.description = intl.string(require(dependencyMap[6]).t.y4ft4D);
+  obj = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.STREAM };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl.string(require(1212) /* getSystemLocale */.t.y4ft4D);
   obj[GuildFeatures.VIDEO_QUALITY_1080_60FPS] = obj;
-  obj = { perkIcon: require(dependencyMap[5]).PerkIcons.AUDIO };
-  const intl2 = require(dependencyMap[6]).intl;
-  obj.description = intl2.formatToPlainString(require(dependencyMap[6]).t.zoT1ZE, { bitrate: BoostedGuildFeatures[closure_3.TIER_1].limits.bitrate / 1000 });
+  obj = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.AUDIO };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.description = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.zoT1ZE, { bitrate: BoostedGuildFeatures[BoostedGuildTiers.TIER_1].limits.bitrate / 1000 });
   obj[GuildFeatures.AUDIO_BITRATE_128_KBPS] = obj;
-  const obj2 = { perkIcon: require(dependencyMap[5]).PerkIcons.CUSTOMIZATION };
-  const intl3 = require(dependencyMap[6]).intl;
-  obj2.description = intl3.string(require(dependencyMap[6]).t.Qwlpov);
+  const obj2 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.CUSTOMIZATION };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj2.description = intl3.string(require(1212) /* getSystemLocale */.t.Qwlpov);
   obj[GuildFeatures.INVITE_SPLASH] = obj2;
-  const obj3 = { perkIcon: require(dependencyMap[5]).PerkIcons.ANIMATED };
-  const intl4 = require(dependencyMap[6]).intl;
-  obj3.description = intl4.string(require(dependencyMap[6]).t.PbAyub);
+  const obj3 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.ANIMATED };
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj3.description = intl4.string(require(1212) /* getSystemLocale */.t.PbAyub);
   obj[GuildFeatures.ANIMATED_ICON] = obj3;
-  const obj4 = { perkIcon: require(dependencyMap[5]).PerkIcons.AUDIO };
-  const intl5 = require(dependencyMap[6]).intl;
-  obj4.description = intl5.formatToPlainString(require(dependencyMap[6]).t.zoT1ZE, { bitrate: BoostedGuildFeatures[closure_3.TIER_2].limits.bitrate / 1000 });
+  const obj4 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.AUDIO };
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj4.description = intl5.formatToPlainString(require(1212) /* getSystemLocale */.t.zoT1ZE, { bitrate: BoostedGuildFeatures[BoostedGuildTiers.TIER_2].limits.bitrate / 1000 });
   obj[GuildFeatures.AUDIO_BITRATE_256_KBPS] = obj4;
-  const obj6 = { perkIcon: require(dependencyMap[5]).PerkIcons.CUSTOM_ROLE_ICON };
-  const intl6 = require(dependencyMap[6]).intl;
-  obj6.description = intl6.string(require(dependencyMap[6]).t.6PV6Qc);
+  const obj6 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.CUSTOM_ROLE_ICON };
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj6.description = intl6.string(require(1212) /* getSystemLocale */.t["6PV6Qc"]);
   obj[GuildFeatures.ROLE_ICONS] = obj6;
-  const obj7 = { perkIcon: require(dependencyMap[5]).PerkIcons.UPLOAD };
-  const intl7 = require(dependencyMap[6]).intl;
+  const obj7 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.UPLOAD };
+  const intl7 = require(1212) /* getSystemLocale */.intl;
   const obj8 = {};
-  const intl8 = require(dependencyMap[6]).intl;
-  obj8.uploadSizeLimit = intl8.string(require(dependencyMap[6]).t.M6qV8j);
-  obj7.description = intl7.formatToPlainString(require(dependencyMap[6]).t.aFRl53, obj8);
+  const intl8 = require(1212) /* getSystemLocale */.intl;
+  obj8.uploadSizeLimit = intl8.string(require(1212) /* getSystemLocale */.t.M6qV8j);
+  obj7.description = intl7.formatToPlainString(require(1212) /* getSystemLocale */.t.aFRl53, obj8);
   obj[GuildFeatures.MAX_FILE_SIZE_50_MB] = obj7;
-  const obj9 = { perkIcon: require(dependencyMap[5]).PerkIcons.CUSTOMIZATION };
-  const intl9 = require(dependencyMap[6]).intl;
-  obj9.description = intl9.string(require(dependencyMap[6]).t.1a5rjl);
+  const obj9 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.CUSTOMIZATION };
+  const intl9 = require(1212) /* getSystemLocale */.intl;
+  obj9.description = intl9.string(require(1212) /* getSystemLocale */.t["1a5rjl"]);
   obj[GuildFeatures.BANNER] = obj9;
-  const obj10 = { perkIcon: require(dependencyMap[5]).PerkIcons.ANIMATED };
-  const intl10 = require(dependencyMap[6]).intl;
-  obj10.description = intl10.string(require(dependencyMap[6]).t.1+Vmh9);
+  const obj10 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.ANIMATED };
+  const intl10 = require(1212) /* getSystemLocale */.intl;
+  obj10.description = intl10.string(require(1212) /* getSystemLocale */.t["1+Vmh9"]);
   obj[GuildFeatures.ANIMATED_BANNER] = obj10;
-  const obj11 = { perkIcon: require(dependencyMap[5]).PerkIcons.AUDIO };
-  const intl11 = require(dependencyMap[6]).intl;
-  obj11.description = intl11.formatToPlainString(require(dependencyMap[6]).t.zoT1ZE, { bitrate: BoostedGuildFeatures[closure_3.TIER_3].limits.bitrate / 1000 });
+  const obj11 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.AUDIO };
+  const intl11 = require(1212) /* getSystemLocale */.intl;
+  obj11.description = intl11.formatToPlainString(require(1212) /* getSystemLocale */.t.zoT1ZE, { bitrate: BoostedGuildFeatures[BoostedGuildTiers.TIER_3].limits.bitrate / 1000 });
   obj[GuildFeatures.AUDIO_BITRATE_384_KBPS] = obj11;
-  const obj13 = { perkIcon: require(dependencyMap[5]).PerkIcons.VANITY };
-  const intl12 = require(dependencyMap[6]).intl;
-  obj13.description = intl12.string(require(dependencyMap[6]).t.5XZKy/);
+  const obj13 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.VANITY };
+  const intl12 = require(1212) /* getSystemLocale */.intl;
+  obj13.description = intl12.string(require(1212) /* getSystemLocale */.t["5XZKy/"]);
   obj[GuildFeatures.VANITY_URL] = obj13;
-  const obj14 = { perkIcon: require(dependencyMap[5]).PerkIcons.UPLOAD };
-  const intl13 = require(dependencyMap[6]).intl;
+  const obj14 = { perkIcon: require(4022) /* _createForOfIteratorHelperLoose */.PerkIcons.UPLOAD };
+  const intl13 = require(1212) /* getSystemLocale */.intl;
   const obj15 = {};
-  const intl14 = require(dependencyMap[6]).intl;
-  obj15.uploadSizeLimit = intl14.string(require(dependencyMap[6]).t.yMOW8D);
-  obj14.description = intl13.formatToPlainString(require(dependencyMap[6]).t.aFRl53, obj15);
+  const intl14 = require(1212) /* getSystemLocale */.intl;
+  obj15.uploadSizeLimit = intl14.string(require(1212) /* getSystemLocale */.t.yMOW8D);
+  obj14.description = intl13.formatToPlainString(require(1212) /* getSystemLocale */.t.aFRl53, obj15);
   obj[GuildFeatures.MAX_FILE_SIZE_100_MB] = obj14;
   return obj;
 };

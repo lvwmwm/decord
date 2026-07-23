@@ -1,11 +1,10 @@
-// Module ID: 7595
-// Function ID: 60846
+// Module ID: 7601
+// Function ID: 60883
 // Name: ReportNames
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 7595 (ReportNames)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/in_app_reports/MenuTypes.tsx");
+// Module 7601 (ReportNames)
+const result = require("set").fileFinishedImporting("modules/in_app_reports/MenuTypes.tsx");
 
 export const ReportNames = { GUILD: "guild", GUILD_DISCOVERY: "guild_discovery", GUILD_DIRECTORY_ENTRY: "guild_directory_entry", MESSAGE: "message", STAGE_CHANNEL: "stage_channel", GUILD_SCHEDULED_EVENT: "guild_scheduled_event", FIRST_DM: "first_dm", USER: "user", APPLICATION: "application", WIDGET: "widget" };
 export const ModeratorReportNames = { MESSAGE: "report_to_mod_message" };

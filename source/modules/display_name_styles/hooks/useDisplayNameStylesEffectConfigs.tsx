@@ -1,41 +1,43 @@
-// Module ID: 8512
-// Function ID: 67908
+// Module ID: 8518
+// Function ID: 67945
 // Name: DISPLAY_NAME_STYLES_EFFECT_NAMES
-// Dependencies: []
+// Dependencies: [31, 1862, 2556, 8519, 1212, 1863, 2]
 // Exports: useDisplayNameStylesEffectConfig
 
-// Module 8512 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
-let closure_3 = importAll(dependencyMap[0]);
-const obj = {};
-obj[arg1(dependencyMap[1]).DisplayNameEffect.SOLID] = importDefault(dependencyMap[2]).OpWJ3f;
-obj[arg1(dependencyMap[1]).DisplayNameEffect.GRADIENT] = importDefault(dependencyMap[2]).i9e/u1;
-obj[arg1(dependencyMap[1]).DisplayNameEffect.NEON] = importDefault(dependencyMap[2]).x68b1F;
-obj[arg1(dependencyMap[1]).DisplayNameEffect.TOON] = importDefault(dependencyMap[2]).otpeeM;
-obj[arg1(dependencyMap[1]).DisplayNameEffect.POP] = importDefault(dependencyMap[2]).cjQOKb;
-obj[arg1(dependencyMap[1]).DisplayNameEffect.GUMMY] = importDefault(dependencyMap[2]).x9Gtie;
-obj[arg1(dependencyMap[1]).DisplayNameEffect.PRISM] = importDefault(dependencyMap[2])./M7psm;
-let closure_5 = { [arg1(dependencyMap[1]).DisplayNameEffect.SOLID]: 3, [arg1(dependencyMap[1]).DisplayNameEffect.GRADIENT]: 2.5, [arg1(dependencyMap[1]).DisplayNameEffect.GLOW]: 2.5, [arg1(dependencyMap[1]).DisplayNameEffect.PRISM]: 2.5, [arg1(dependencyMap[1]).DisplayNameEffect.NEON]: 3, [arg1(dependencyMap[1]).DisplayNameEffect.TOON]: 3, [arg1(dependencyMap[1]).DisplayNameEffect.POP]: 3, [arg1(dependencyMap[1]).DisplayNameEffect.GUMMY]: 3 };
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEffectConfigs.tsx");
+// Module 8518 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
+import result from "result";
+
+const require = arg1;
+let obj = {};
+obj[require("DisplayNameEffect").DisplayNameEffect.SOLID] = require("messagesProxy").OpWJ3f;
+obj[require("DisplayNameEffect").DisplayNameEffect.GRADIENT] = require("messagesProxy")["i9e/u1"];
+obj[require("DisplayNameEffect").DisplayNameEffect.NEON] = require("messagesProxy").x68b1F;
+obj[require("DisplayNameEffect").DisplayNameEffect.TOON] = require("messagesProxy").otpeeM;
+obj[require("DisplayNameEffect").DisplayNameEffect.POP] = require("messagesProxy").cjQOKb;
+obj[require("DisplayNameEffect").DisplayNameEffect.GUMMY] = require("messagesProxy").x9Gtie;
+obj[require("DisplayNameEffect").DisplayNameEffect.PRISM] = require("messagesProxy")["/M7psm"];
+let closure_5 = { [arg1(1862).DisplayNameEffect.SOLID]: 3, [arg1(1862).DisplayNameEffect.GRADIENT]: 2.5, [arg1(1862).DisplayNameEffect.GLOW]: 2.5, [arg1(1862).DisplayNameEffect.PRISM]: 2.5, [arg1(1862).DisplayNameEffect.NEON]: 3, [arg1(1862).DisplayNameEffect.TOON]: 3, [arg1(1862).DisplayNameEffect.POP]: 3, [arg1(1862).DisplayNameEffect.GUMMY]: 3 };
+const result = require("messagesProxy").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesEffectConfigs.tsx");
 
 export const DISPLAY_NAME_STYLES_EFFECT_NAMES = obj;
 export const useDisplayNameStylesEffectConfig = function useDisplayNameStylesEffectConfig(effectId) {
-  const arg1 = effectId;
-  const tmp = importDefault(dependencyMap[3])()[effectId];
-  const importDefault = tmp;
+  let closure_0 = effectId;
+  const tmp = importDefault(8519)()[effectId];
+  importDefault = tmp;
   const items = [effectId, tmp];
   return React.useMemo(() => {
     let obj = {};
-    const intl = arg0(closure_2[4]).intl;
-    let OpWJ3f = closure_4[closure_0];
+    const intl = effectId(outer1_2[4]).intl;
+    let OpWJ3f = outer1_4[effectId];
     if (null == OpWJ3f) {
-      OpWJ3f = tmp(closure_2[2]).OpWJ3f;
+      OpWJ3f = tmp(outer1_2[2]).OpWJ3f;
     }
     obj.name = intl.string(OpWJ3f);
     obj.defaultColors = tmp;
-    obj = { fontId: arg0(closure_2[5]).DisplayNameFont.DEFAULT, effectId: arg0, colors: tmp };
+    obj = { fontId: effectId(outer1_2[5]).DisplayNameFont.DEFAULT, effectId, colors: tmp };
     obj.previewStyles = obj;
     let num2 = 3;
-    if (null != closure_5[closure_0]) {
+    if (null != outer1_5[effectId]) {
       num2 = tmp3;
     }
     obj.minContrastRatio = num2;

@@ -1,12 +1,11 @@
-// Module ID: 8592
-// Function ID: 68253
+// Module ID: 8599
+// Function ID: 68293
 // Name: XBOX_DISCORD_OCID
-// Dependencies: []
+// Dependencies: [2]
 // Exports: buildXboxGamePassStoreDeepLinkUrl, buildXboxGamePassStoreUrl
 
-// Module 8592 (XBOX_DISCORD_OCID)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/activities/utils/distributorStoreUrls.tsx");
+// Module 8599 (XBOX_DISCORD_OCID)
+const result = require("set").fileFinishedImporting("modules/activities/utils/distributorStoreUrls.tsx");
 
 export const XBOX_DISCORD_OCID = "discord7937464";
 export const XBOX_GAME_PASS_STORE_HOSTNAME = "www.xbox.com";

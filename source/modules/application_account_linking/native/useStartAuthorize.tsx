@@ -1,15 +1,17 @@
-// Module ID: 5464
-// Function ID: 46708
+// Module ID: 5467
+// Function ID: 46727
 // Name: useStartAuthorize
-// Dependencies: []
+// Dependencies: [5, 31, 5468, 653, 5469, 5471, 3827, 675, 5473, 2]
 // Exports: default
 
-// Module 5464 (useStartAuthorize)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const AuthorizeFlow = arg1(dependencyMap[2]).AuthorizeFlow;
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/application_account_linking/native/useStartAuthorize.tsx");
+// Module 5467 (useStartAuthorize)
+import useAuthorizedAppsTokens from "useAuthorizedAppsTokens";
+import result from "result";
+import { AuthorizeFlow } from "AuthorizeFlow";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+let result = require("AuthorizeFlow").fileFinishedImporting("modules/application_account_linking/native/useStartAuthorize.tsx");
 
 export default function useStartAuthorize(getOfficialApplicationId) {
   let fetched;
@@ -18,10 +20,9 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   if (arg1 === undefined) {
     obj = {};
   }
-  let arg1;
+  let authorizationApp;
   const debug = obj.debug;
-  const authorizationApp = arg1(dependencyMap[4]).useAuthorizationApp(getOfficialApplicationId);
-  arg1 = authorizationApp;
+  authorizationApp = authorizationApp(5469).useAuthorizationApp(getOfficialApplicationId);
   let prop;
   if (null != authorizationApp) {
     prop = authorizationApp.connectionEntrypointUrl;
@@ -30,7 +31,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   if (null != prop) {
     WEB = AuthorizeFlow.WEB;
   }
-  const obj2 = arg1(dependencyMap[4]);
+  const obj2 = authorizationApp(5469);
   const tmp = undefined !== debug && debug;
   let parentId;
   if (null != authorizationApp) {
@@ -43,37 +44,37 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     }
     parentId = id;
   }
-  const authorizedAppsToken = arg1(dependencyMap[5]).useAuthorizedAppsToken(parentId);
+  const authorizedAppsToken = authorizationApp(5471).useAuthorizedAppsToken(parentId);
   ({ token, fetched } = authorizedAppsToken);
   const items = [authorizationApp];
   obj = { fetched };
-  const callback = React.useCallback(() => {
-    let closure_0 = callback(async (arg0) => {
+  const callback = React.useCallback((() => {
+    let closure_0 = outer1_3(async (arg0) => {
       let prop;
-      if (null != lib) {
-        prop = lib.connectionEntrypointUrl;
+      if (null != user) {
+        prop = user.connectionEntrypointUrl;
       }
       if (null == prop) {
         return false;
       } else {
-        yield callback(closure_2[6]).openURL(closure_0.connectionEntrypointUrl);
+        yield outer3_1(outer3_2[6]).openURL(closure_0.connectionEntrypointUrl);
         if (null != arg0.onConfirm) {
           arg0.onConfirm();
         }
-        let obj = callback(closure_2[7]);
-        obj = { location_stack: arg0.analyticsLocations, application_id: lib.id, flow_type: constants.WEB };
-        obj.track(constants2.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, obj);
-        const obj5 = callback(closure_2[6]);
+        let obj = outer3_1(outer3_2[7]);
+        obj = { location_stack: arg0.analyticsLocations, application_id: user.id, flow_type: outer3_5.WEB };
+        obj.track(outer3_6.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, obj);
+        const obj5 = outer3_1(outer3_2[6]);
         obj = {};
         ({ onSuccess: obj4.onSuccess, onError: obj4.onError } = arg0);
-        const result = lib(closure_2[8]).accountLinkAuthorizationStarted(lib.id, obj);
+        const result = authorizationApp(outer3_2[8]).accountLinkAuthorizationStarted(user.id, obj);
         return true;
       }
     });
     return function() {
       return callback(...arguments);
     };
-  }(), items);
+  })(), items);
   if (fetched) {
     fetched = null != token;
   }

@@ -1,9 +1,17 @@
-// Module ID: 11155
-// Function ID: 86765
+// Module ID: 11165
+// Function ID: 86815
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1849, 21, 11163, 6755, 566, 686, 2]
 
-// Module 11155 (_isNativeReflectConstruct)
+// Module 11165 (_isNativeReflectConstruct)
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import result from "result";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,25 +21,19 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_5 = importDefault(dependencyMap[0]);
-let closure_6 = importDefault(dependencyMap[1]);
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class AppLauncherOnboardingStore {
     constructor() {
       self = this;
-      tmp = closure_5(this, AppLauncherOnboardingStore);
-      obj = closure_8(AppLauncherOnboardingStore);
-      tmp2 = closure_7;
-      if (closure_11()) {
+      tmp = outer1_5(this, AppLauncherOnboardingStore);
+      obj = outer1_8(AppLauncherOnboardingStore);
+      tmp2 = outer1_7;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_8;
+        tmp7 = outer1_8;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_8(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_8(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -40,39 +42,38 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = AppLauncherOnboardingStore;
   callback2(AppLauncherOnboardingStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_10);
+      this.waitFor(outer1_10);
     }
   };
   const items = [obj, , ];
   obj = {
     key: "getRecentMessageMetadata",
     value() {
-      return closure_3;
+      return outer1_3;
     }
   };
   items[1] = obj;
   obj = {
     key: "getRecentApplicationCommandMetadata",
     value() {
-      return closure_4;
+      return outer1_4;
     }
   };
   items[2] = obj;
   return callback(AppLauncherOnboardingStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "AppLauncherOnboardingStore";
-tmp2 = new tmp2(importDefault(dependencyMap[10]), {
+tmp2 = new tmp2(require("dispatcher"), {
   APPLICATION_COMMAND_USED: function handleApplicationCommandUsed(context) {
     let command;
     let commandOrigin;
     context = context.context;
     ({ command, commandOrigin } = context);
-    let tmp = commandOrigin !== arg1(dependencyMap[8]).CommandOrigin.APPLICATION_LAUNCHER;
+    let tmp = commandOrigin !== require(6755) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
     if (tmp) {
       tmp = null != context.channel;
     }
@@ -95,16 +96,16 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     let guildId;
     message = message.message;
     ({ channelId, guildId } = message);
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     if (null != currentUser) {
       if (null != currentUser.id) {
         if (null != message.author) {
           if (currentUser.id === message.author.id) {
-            let obj = importDefault(dependencyMap[6]);
+            let obj = importDefault(21);
             const extractTimestampResult = obj.extractTimestamp(message.id);
             const _Date = Date;
             const timestamp = Date.now();
-            if (timestamp <= extractTimestampResult + arg1(dependencyMap[7]).RECENT_MESSAGE_MS) {
+            if (timestamp <= extractTimestampResult + require(11163) /* result */.RECENT_MESSAGE_MS) {
               obj = { timeMs: extractTimestampResult, guildId, channelId };
             }
           }
@@ -113,6 +114,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     }
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/app_launcher/native/onboarding/stores/AppLauncherOnboardingStore.tsx");
 
 export default tmp2;

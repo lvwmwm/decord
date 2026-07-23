@@ -1,7 +1,7 @@
 // Module ID: 420
 // Function ID: 5895
 // Name: BoundingDimensions
-// Dependencies: []
+// Dependencies: [419]
 
 // Module 420 (BoundingDimensions)
 class BoundingDimensions {
@@ -19,6 +19,6 @@ class BoundingDimensions {
     return BoundingDimensions.getPooled(global.offsetWidth, global.offsetHeight);
   }
 }
-importDefault(dependencyMap[0]).addPoolingTo(BoundingDimensions, importDefault(dependencyMap[0]).twoArgumentPooler);
+require("oneArgumentPooler").addPoolingTo(BoundingDimensions, require("oneArgumentPooler").twoArgumentPooler);
 
 export default BoundingDimensions;

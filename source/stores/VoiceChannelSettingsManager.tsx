@@ -1,9 +1,22 @@
-// Module ID: 16074
-// Function ID: 123462
+// Module ID: 16191
+// Function ID: 125635
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 1194, 4200, 1348, 1906, 12758, 653, 686, 5078, 2]
 
-// Module 16074 (_isNativeReflectConstruct)
+// Module 16191 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { VideoQualityMode } from "ME";
+import tmp2 from "AutomaticLifecycleManager";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +26,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +79,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -97,11 +110,11 @@ function updateVoiceSettings() {
   if (null != voiceChannelId) {
     const channel = store.getChannel(voiceChannelId);
     if (tmp5) {
-      let obj = importDefault(dependencyMap[11]);
+      let obj = importDefault(686);
       obj = { type: "SET_CHANNEL_BITRATE", bitrate: channel.bitrate };
       obj.dispatch(obj);
     }
-    const tmp5 = null != channel && tmp2 !== channel.bitrate;
+    tmp5 = null != channel && tmp2 !== channel.bitrate;
   }
   const voiceChannelId1 = store2.getVoiceChannelId();
   if (null != voiceChannelId1) {
@@ -113,8 +126,8 @@ function updateVoiceSettings() {
       }
       if (tmp10 !== AUTO) {
         obj = { type: "SET_CHANNEL_VIDEO_QUALITY_MODE", mode: AUTO };
-        importDefault(dependencyMap[11]).dispatch(obj);
-        const obj3 = importDefault(dependencyMap[11]);
+        importDefault(686).dispatch(obj);
+        const obj3 = importDefault(686);
       }
     }
   }
@@ -125,10 +138,10 @@ function handleChannelUpdates(channels) {
   let iter = tmp();
   if (!iter.done) {
     do {
-      let tmp2 = closure_10;
-      if (closure_10.getVoiceChannelId() === iter.value.id) {
-        let tmp3 = closure_16;
-        let tmp4 = closure_16();
+      let tmp2 = store2;
+      if (store2.getVoiceChannelId() === iter.value.id) {
+        let tmp3 = updateVoiceSettings;
+        let tmp4 = updateVoiceSettings();
       }
       iter2 = tmp();
       iter = iter2;
@@ -138,50 +151,12 @@ function handleChannelUpdates(channels) {
 function handleVoiceStateUpdates(voiceStates) {
   voiceStates = voiceStates.voiceStates;
   const item = voiceStates.forEach((sessionId) => {
-    if (sessionId.getSessionId() === sessionId.sessionId) {
-      callback();
+    if (outer1_7.getSessionId() === sessionId.sessionId) {
+      outer1_16();
     }
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-const VideoQualityMode = arg1(dependencyMap[10]).VideoQualityMode;
-let tmp2 = (arg0) => {
-  class VoiceChannelSettingsManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_3(this, VoiceChannelSettingsManager);
-      items1 = [...items];
-      obj = closure_5(VoiceChannelSettingsManager);
-      tmp2 = closure_4;
-      if (closure_13()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      obj = { CHANNEL_UPDATES: closure_17, VOICE_STATE_UPDATES: closure_18 };
-      tmp2Result.actions = obj;
-      return tmp2Result;
-    }
-  }
-  const importDefault = VoiceChannelSettingsManager;
-  callback2(VoiceChannelSettingsManager, arg0);
-  return callback(VoiceChannelSettingsManager);
-}(importDefault(dependencyMap[12]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[13]).fileFinishedImporting("stores/VoiceChannelSettingsManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/VoiceChannelSettingsManager.tsx");
 
 export default tmp2;

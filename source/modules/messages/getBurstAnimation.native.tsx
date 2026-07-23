@@ -1,214 +1,216 @@
-// Module ID: 7022
-// Function ID: 56388
+// Module ID: 7027
+// Function ID: 56422
 // Name: items
-// Dependencies: []
+// Dependencies: [5, 7028, 7029, 7030, 7031, 7032, 7033, 7034, 7035, 7036, 7037, 7038, 7039, 7040, 7041, 7042, 7043, 7044, 7045, 7046, 7047, 7048, 7049, 7050, 7051, 7052, 7053, 7054, 7055, 7056, 7057, 7058, 7059, 7060, 7061, 7062, 7063, 7064, 2]
 
-// Module 7022 (items)
-let closure_2 = importDefault(dependencyMap[0]);
+// Module 7027 (items)
+import items from "items";
+
+const require = arg1;
 let obj = {
   load() {
-    return arg1(dependencyMap[1]);
+    return require(7028) /* items */;
   }
 };
 const items = [
   obj,
   {
     load() {
-      return arg1(dependencyMap[2]);
+      return require(7029) /* items1 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[3]);
+      return require(7030) /* items1 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[4]);
+      return require(7031) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[5]);
+      return require(7032) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[6]);
+      return require(7033) /* items3 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[7]);
+      return require(7034) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[8]);
+      return require(7035) /* items2 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[9]);
+      return require(7036) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[10]);
+      return require(7037) /* items1 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[11]);
+      return require(7038) /* items1 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[12]);
+      return require(7039) /* items3 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[13]);
+      return require(7040) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[14]);
+      return require(7041) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[15]);
+      return require(7042) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[16]);
+      return require(7043) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[17]);
+      return require(7044) /* items2 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[18]);
+      return require(7045) /* items */;
     }
   }
 ];
 obj = {
   load() {
-    return arg1(dependencyMap[19]);
+    return require(7046) /* items */;
   }
 };
 const items1 = [
   obj,
   {
     load() {
-      return arg1(dependencyMap[20]);
+      return require(7047) /* items1 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[21]);
+      return require(7048) /* items1 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[22]);
+      return require(7049) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[23]);
+      return require(7050) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[24]);
+      return require(7051) /* items3 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[25]);
+      return require(7052) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[26]);
+      return require(7053) /* items2 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[27]);
+      return require(7054) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[28]);
+      return require(7055) /* items1 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[29]);
+      return require(7056) /* items1 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[30]);
+      return require(7057) /* items3 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[31]);
+      return require(7058) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[32]);
+      return require(7059) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[33]);
+      return require(7060) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[34]);
+      return require(7061) /* items */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[35]);
+      return require(7062) /* items2 */;
     }
   },
   {
     load() {
-      return arg1(dependencyMap[36]);
+      return require(7063) /* items */;
     }
   }
 ];
-const tmp2 = () => {
+const tmp2 = (() => {
   let closure_0 = callback(async (arg0, arg1, arg2) => {
-    const fn = function*(arg0, arg1, arg2) {
+    const iter = (function*(arg0, arg1, arg2) {
       let flag = arg3;
       if (flag === undefined) {
         flag = false;
       }
       yield undefined;
-      const obj = callback(closure_1[37]);
-      return flag ? closure_3 : closure_4[obj.getBurstAnimationHash(obj, "" + arg0 + arg1 + arg2) % closure_4.length].load();
-    };
-    fn.next();
-    return fn;
+      const obj = callback(outer2_1[37]);
+      return flag ? outer2_3 : outer2_4[obj.getBurstAnimationHash(obj, "" + arg0 + arg1 + arg2) % outer2_4.length].load();
+    })();
+    iter.next();
+    return iter;
   });
   return function() {
     return callback(...arguments);
   };
-}();
-const result = arg1(dependencyMap[38]).fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
+})();
+const result = require("items1").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
 export const getBurstAnimation = tmp2;

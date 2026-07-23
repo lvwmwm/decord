@@ -1,25 +1,25 @@
-// Module ID: 14332
-// Function ID: 108218
+// Module ID: 14446
+// Function ID: 110371
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14447, 2]
 
-// Module 14332 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14446 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Toast";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_TOAST,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_TOAST,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14447) /* UserSettingsDesignSystemToast */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsToastSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsToastSetting.tsx");
 
 export default route;

@@ -1,16 +1,17 @@
-// Module ID: 4617
-// Function ID: 40263
+// Module ID: 4621
+// Function ID: 40295
 // Name: items
-// Dependencies: []
+// Dependencies: [3950, 2]
 
-// Module 4617 (items)
-const items = [{ field_type: require(dependencyMap[0]).VerificationFormFieldTypes.VERIFICATION }];
-const items1 = [require(dependencyMap[0]).VerificationFormFieldTypes.TERMS];
-const obj = { field_type: require(dependencyMap[0]).VerificationFormFieldTypes.VERIFICATION };
-const items2 = [require(dependencyMap[0]).VerificationFormFieldTypes.MULTIPLE_CHOICE, require(dependencyMap[0]).VerificationFormFieldTypes.TEXT_INPUT, require(dependencyMap[0]).VerificationFormFieldTypes.PARAGRAPH];
-const set = new Set(items1);
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_member_verification/MemberVerificationConstants.tsx");
+// Module 4621 (items)
+import set from "set";
+
+const items = [{ field_type: require("isTermsFormField").VerificationFormFieldTypes.VERIFICATION }];
+const items1 = [require("isTermsFormField").VerificationFormFieldTypes.TERMS];
+let set = new Set(items1);
+const items2 = [require("isTermsFormField").VerificationFormFieldTypes.MULTIPLE_CHOICE, require("isTermsFormField").VerificationFormFieldTypes.TEXT_INPUT, require("isTermsFormField").VerificationFormFieldTypes.PARAGRAPH];
+const obj = { field_type: require("isTermsFormField").VerificationFormFieldTypes.VERIFICATION };
+const result = set.fileFinishedImporting("modules/guild_member_verification/MemberVerificationConstants.tsx");
 
 export const REQUIRED_FORM_FIELDS = items;
 export const AUTOMATIC_APPROVAL_FORM_FIELDS = set;

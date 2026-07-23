@@ -1,69 +1,74 @@
-// Module ID: 14325
-// Function ID: 108187
+// Module ID: 14439
+// Function ID: 110340
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 8360, 4541, 8760, 8758, 4543, 3843, 2]
 // Exports: default
 
-// Module 14325 (UserSettingsDesignSystemSegmentedControl)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-({ View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsxs: closure_6, jsx: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: { gap: true, flexDirection: true, jsx: true, x: true } };
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[5]).colors.BORDER_STRONG };
-obj.item = obj;
-let closure_8 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSegmentedControl.tsx");
+// Module 14439 (UserSettingsDesignSystemSegmentedControl)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+({ jsxs: closure_6, jsx: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { margin: 16, flex: 1, alignItems: "center", padding: 40 } };
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 };
+_createForOfIteratorHelperLoose.item = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSegmentedControl.tsx");
 
 export default function UserSettingsDesignSystemSegmentedControl() {
-  const tmp = callback2(React.useState(0), 2);
-  const callback = tmp[1];
-  const tmp2 = callback2(React.useState(3), 2);
-  const first = tmp2[0];
-  const dependencyMap = first;
-  const callback2 = tmp2[1];
-  const tmp4 = callback5();
-  let obj = callback(dependencyMap[7]);
+  let tmp = callback(React.useState(0), 2);
+  const _require = tmp[1];
+  let tmp2 = callback(React.useState(3), 2);
+  let first = tmp2[0];
+  callback = tmp2[1];
+  let tmp4 = _createForOfIteratorHelperLoose();
+  let obj = _require(first[7]);
   const segmentedControlState = obj.useSegmentedControlState({
-    items: function useSegmentedControlItems(first) {
+    items: (function useSegmentedControlItems(first) {
       let closure_0 = first;
-      const tmp = callback3();
+      let tmp = outer1_8();
       first = tmp;
-      const items = [first, tmp.item];
-      return React.useMemo(() => {
+      let items = [first, tmp.item];
+      return outer1_3.useMemo(() => {
         const items = [];
         let num = 0;
-        if (0 < arg0) {
+        if (0 < callback) {
           do {
             let obj = {};
             let _HermesInternal = HermesInternal;
             obj.label = "Item " + num + 1;
             let _HermesInternal2 = HermesInternal;
             obj.id = "item-" + num + 1;
-            let tmp = closure_7;
-            let tmp2 = closure_4;
+            let tmp = outer2_7;
+            let tmp2 = outer2_4;
             obj = {};
-            let tmp3 = closure_1;
-            obj.style = closure_1.item;
-            let tmp4 = closure_6;
-            let tmp5 = closure_0;
-            let tmp6 = closure_1;
+            let tmp3 = tmp;
+            obj.style = tmp.item;
+            let tmp4 = outer2_6;
+            let tmp5 = callback;
+            let tmp6 = first;
             obj = { variant: "heading-xxl/bold" };
-            let items1 = [true, num + 1];
+            let items1 = ["Item ", num + 1];
             obj.children = items1;
-            obj.children = closure_6(closure_0(closure_1[6]).Text, obj);
-            obj.page = closure_7(closure_4, obj);
+            obj.children = outer2_6(callback(first[6]).Text, obj);
+            obj.page = outer2_7(outer2_4, obj);
             let arr = items.push(obj);
             num = num + 1;
-            let tmp8 = closure_0;
-          } while (num < closure_0);
+            let tmp8 = callback;
+          } while (num < callback);
         }
         return items;
       }, items);
-    }(first),
+    })(first),
     pageWidth: tmp[0],
     defaultIndex: 1
   });
@@ -75,12 +80,12 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     }, [])
   };
   const obj1 = { spacing: 24 };
-  const items = [callback4(callback(dependencyMap[9]).SegmentedControl, { state: segmentedControlState }), callback4(callback(dependencyMap[10]).SegmentedControlPages, { state: segmentedControlState }), ];
-  const obj2 = { "Bool(false)": 1, "Bool(false)": null };
+  let items = [callback3(_require(first[9]).SegmentedControl, { state: segmentedControlState }), callback3(_require(first[10]).SegmentedControlPages, { state: segmentedControlState }), ];
+  const obj2 = { spacing: 8, direction: "horizontal" };
   const obj3 = {
-    EMOJI_PICKER_EMOJI_CLICKED: null,
-    overflow: null,
-    getOwnPropertyNames: null,
+    text: "Add Tab",
+    variant: "active",
+    size: "sm",
     disabled: first >= 5,
     onPress() {
       const sum = first + 1;
@@ -89,11 +94,11 @@ export default function UserSettingsDesignSystemSegmentedControl() {
       AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
     }
   };
-  const items1 = [callback4(callback(dependencyMap[11]).Button, obj3), ];
+  let items1 = [callback3(_require(first[11]).Button, obj3), ];
   const obj4 = {
-    EMOJI_PICKER_EMOJI_CLICKED: true,
-    overflow: true,
-    getOwnPropertyNames: true,
+    text: "Remove Tab",
+    variant: "destructive",
+    size: "sm",
     disabled: 2 === first,
     onPress() {
       const diff = first - 1;
@@ -102,11 +107,11 @@ export default function UserSettingsDesignSystemSegmentedControl() {
       AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
     }
   };
-  items1[1] = callback4(callback(dependencyMap[11]).Button, obj4);
+  items1[1] = callback3(_require(first[11]).Button, obj4);
   obj2.children = items1;
-  items[2] = callback3(callback(dependencyMap[8]).Stack, obj2);
+  items[2] = callback2(_require(first[8]).Stack, obj2);
   obj1.children = items;
-  obj.children = callback3(callback(dependencyMap[8]).Stack, obj1);
-  obj.children = callback4(closure_4, obj);
-  return callback4(closure_5, obj);
+  obj.children = callback2(_require(first[8]).Stack, obj1);
+  obj.children = callback3(closure_4, obj);
+  return callback3(closure_5, obj);
 };

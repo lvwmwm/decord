@@ -1,21 +1,23 @@
-// Module ID: 15695
-// Function ID: 119871
+// Module ID: 15812
+// Function ID: 122044
 // Name: useChatBadge
-// Dependencies: []
+// Dependencies: [4142, 566, 2]
 // Exports: default
 
-// Module 15695 (useChatBadge)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/voice_panel/native/hooks/useChatBadge.tsx");
+// Module 15812 (useChatBadge)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useChatBadge.tsx");
 
 export default function useChatBadge(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => {
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
     let str = "mention";
-    if (closure_2.getMentionCount(arg0) <= 0) {
+    if (outer1_2.getMentionCount(closure_0) <= 0) {
       let str2 = null;
-      if (closure_2.hasUnread(arg0)) {
+      if (outer1_2.hasUnread(closure_0)) {
         str2 = "unread";
       }
       str = str2;

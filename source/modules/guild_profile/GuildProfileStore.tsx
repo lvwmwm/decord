@@ -1,9 +1,17 @@
-// Module ID: 8411
-// Function ID: 66999
+// Module ID: 8417
+// Function ID: 67036
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 653, 561, 5129, 566, 686, 2]
 
-// Module 8411 (_isNativeReflectConstruct)
+// Module 8417 (_isNativeReflectConstruct)
+import Backoff from "Backoff";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { ChannelTypes } from "ME";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,7 +26,7 @@ function handleUpdateStart(guildId) {
   const value = map.get(guildId);
   if (null == value) {
     let obj = {};
-    const merged = Object.assign(closure_12);
+    const merged = Object.assign(obj);
     obj["isUpdating"] = true;
     const result = map.set(guildId, obj);
   } else {
@@ -35,7 +43,7 @@ function handleUpdateFailure(arg0) {
   const value = map.get(guildId);
   if (null == value) {
     let obj = {};
-    const merged = Object.assign(closure_12);
+    const merged = Object.assign(obj);
     obj["error"] = error;
     const result = map.set(guildId, obj);
   } else {
@@ -50,10 +58,10 @@ function handleInviteResolveOrCreate(invite) {
   const profile = invite.invite.profile;
   if (null != profile) {
     const value = map.get(profile.id);
-    const guildProfileFromServer = arg1(dependencyMap[7]).buildGuildProfileFromServer(profile);
+    const guildProfileFromServer = require(5129) /* _createForOfIteratorHelperLoose */.buildGuildProfileFromServer(profile);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(closure_12);
+      const merged = Object.assign(obj);
       obj["profile"] = guildProfileFromServer;
       const _Date2 = Date;
       obj["lastSyncTimestamp"] = Date.now();
@@ -68,32 +76,27 @@ function handleInviteResolveOrCreate(invite) {
       obj["fetchStatus"] = obj.FETCHED;
       const result1 = map.set(profile.id, obj);
     }
-    const obj3 = arg1(dependencyMap[7]);
+    const obj3 = require(5129) /* _createForOfIteratorHelperLoose */;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const ChannelTypes = arg1(dependencyMap[5]).ChannelTypes;
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 const map = new Map();
 const map1 = new Map();
-let closure_12 = { fetchStatus: obj.NOT_FETCHED };
-let tmp4 = (Store) => {
+obj = { profile: null, lastSyncTimestamp: null, fetchStatus: null, isUpdating: false, error: null, nextFetchAllowedAt: null };
+obj.fetchStatus = obj.NOT_FETCHED;
+let tmp4 = ((Store) => {
   class GuildProfileStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, GuildProfileStore);
-      obj = closure_6(GuildProfileStore);
-      tmp2 = closure_5;
-      if (closure_13()) {
+      tmp = outer1_3(this, GuildProfileStore);
+      obj = outer1_6(GuildProfileStore);
+      tmp2 = outer1_5;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -102,14 +105,13 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GuildProfileStore;
   callback2(GuildProfileStore, Store);
   let obj = {
     key: "getProfile",
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        const value = store.get(arg0);
+        const value = outer1_10.get(arg0);
         let profile;
         if (null != value) {
           profile = value.profile;
@@ -128,15 +130,15 @@ let tmp4 = (Store) => {
     key: "getFetchStatus",
     value(arg0) {
       if (null == arg0) {
-        let NOT_FETCHED = constants.NOT_FETCHED;
+        let NOT_FETCHED = outer1_9.NOT_FETCHED;
       } else {
-        const value = store.get(arg0);
+        const value = outer1_10.get(arg0);
         NOT_FETCHED = undefined;
         if (null != value) {
           NOT_FETCHED = value.fetchStatus;
         }
         if (null == NOT_FETCHED) {
-          NOT_FETCHED = constants.NOT_FETCHED;
+          NOT_FETCHED = outer1_9.NOT_FETCHED;
         }
       }
       return NOT_FETCHED;
@@ -148,7 +150,7 @@ let tmp4 = (Store) => {
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        const value = store.get(arg0);
+        const value = outer1_10.get(arg0);
         let lastSyncTimestamp;
         if (null != value) {
           lastSyncTimestamp = value.lastSyncTimestamp;
@@ -168,7 +170,7 @@ let tmp4 = (Store) => {
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        const value = store.get(arg0);
+        const value = outer1_10.get(arg0);
         let nextFetchAllowedAt;
         if (null != value) {
           nextFetchAllowedAt = value.nextFetchAllowedAt;
@@ -187,7 +189,7 @@ let tmp4 = (Store) => {
     value(arg0) {
       let tmp = null != arg0;
       if (tmp) {
-        const value = store.get(arg0);
+        const value = outer1_10.get(arg0);
         let isUpdating;
         if (null != value) {
           isUpdating = value.isUpdating;
@@ -203,7 +205,7 @@ let tmp4 = (Store) => {
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        const value = store.get(arg0);
+        const value = outer1_10.get(arg0);
         let code;
         if (null != value) {
           const error = value.error;
@@ -221,7 +223,7 @@ let tmp4 = (Store) => {
     }
   };
   return callback(GuildProfileStore, items);
-}(importDefault(dependencyMap[8]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "GuildProfileStore";
 obj = {
   GUILD_PROFILE_FETCH: function handleFetchStart(guildId) {
@@ -229,7 +231,7 @@ obj = {
     const value = map.get(guildId);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(closure_12);
+      const merged = Object.assign(obj);
       obj["fetchStatus"] = obj.FETCHING;
       const result = map.set(guildId, obj);
     } else {
@@ -251,7 +253,7 @@ obj = {
     value = map.get(guildId);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(closure_12);
+      const merged = Object.assign(obj);
       obj["profile"] = profile;
       const _Date2 = Date;
       obj["lastSyncTimestamp"] = Date.now();
@@ -275,7 +277,7 @@ obj = {
     ({ guildId, error } = arg0);
     let value = map1.get(guildId);
     if (null == value) {
-      let tmp3 = importDefault(dependencyMap[6]);
+      let tmp3 = importDefault(561);
       const prototype = tmp3.prototype;
       tmp3 = new tmp3(5000, 300000);
       const result = map1.set(guildId, tmp3);
@@ -285,7 +287,7 @@ obj = {
     value = map.get(guildId);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(closure_12);
+      const merged = Object.assign(obj);
       obj["error"] = error;
       obj["fetchStatus"] = obj.FETCHED;
       obj["nextFetchAllowedAt"] = sum;
@@ -307,7 +309,7 @@ obj = {
     const value = map.get(guildId);
     if (null == value) {
       let obj = {};
-      const merged = Object.assign(closure_12);
+      const merged = Object.assign(obj);
       obj["profile"] = profile;
       const result = map.set(guildId, obj);
     } else {
@@ -331,7 +333,7 @@ obj = {
       const value = map.get(guildId);
       if (null == value) {
         let obj = {};
-        const merged = Object.assign(closure_12);
+        const merged = Object.assign(obj);
         obj["profile"] = profile;
         const _Date2 = Date;
         obj["lastSyncTimestamp"] = Date.now();
@@ -423,8 +425,8 @@ obj = {
   },
   GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: handleUpdateFailure
 };
-tmp4 = new tmp4(importDefault(dependencyMap[9]), obj);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_profile/GuildProfileStore.tsx");
+tmp4 = new tmp4(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_profile/GuildProfileStore.tsx");
 
 export default tmp4;
 export const GuildProfileFetchStatus = obj;

@@ -1,37 +1,38 @@
-// Module ID: 8197
-// Function ID: 64844
+// Module ID: 8203
+// Function ID: 64881
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 8204, 2]
 
-// Module 8197 (_isNativeReflectConstruct)
+// Module 8203 (_isNativeReflectConstruct)
+import _defineProperties from "_defineProperties";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _defineProperties;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = (RevenueError) => {
+const tmp2 = ((RevenueError) => {
   class CheckoutError {
     constructor(arg0) {
       self = this;
-      tmp = closure_1(this, CheckoutError);
+      tmp = outer1_1(this, CheckoutError);
       items = [];
       items[0] = RevenueError;
-      obj = closure_3(CheckoutError);
-      tmp2 = closure_2;
-      if (closure_5()) {
+      obj = outer1_3(CheckoutError);
+      tmp2 = outer1_2;
+      if (outer1_5()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, items, closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -40,10 +41,9 @@ const tmp2 = (RevenueError) => {
       return tmp2Result;
     }
   }
-  const callback = CheckoutError;
-  callback2(CheckoutError, RevenueError);
-  return callback(CheckoutError);
-}(arg1(dependencyMap[5]).RevenueError);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/checkout/CheckoutError.tsx");
+  callback(CheckoutError, RevenueError);
+  return CheckoutError(CheckoutError);
+})(require("_isNativeReflectConstruct").RevenueError);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/checkout/CheckoutError.tsx");
 
 export const CheckoutError = tmp2;

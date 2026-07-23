@@ -1,15 +1,15 @@
-// Module ID: 12206
-// Function ID: 93773
+// Module ID: 12320
+// Function ID: 95924
 // Name: createSafetyPolicyNoticeEmbed
-// Dependencies: []
+// Dependencies: [27, 653, 7544, 3712, 1212, 7635, 7577, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 12206 (createSafetyPolicyNoticeEmbed)
-const Image = require(dependencyMap[0]).Image;
-const MessageEmbedTypes = require(dependencyMap[1]).MessageEmbedTypes;
-const SafetyHubPolicyNoticeKeys = require(dependencyMap[2]).SafetyHubPolicyNoticeKeys;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetyPolicyNoticeEmbed.tsx");
+// Module 12320 (createSafetyPolicyNoticeEmbed)
+import { Image } from "get ActivityIndicator";
+import { MessageEmbedTypes } from "ME";
+import { SafetyHubPolicyNoticeKeys } from "SafetyHubLinks";
+
+const result = require("SafetyHubLinks").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetyPolicyNoticeEmbed.tsx");
 
 export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEmbed(message) {
   if (null != message.embeds) {
@@ -29,7 +29,7 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
         const fields1 = first2.fields;
         let found;
         if (null != fields1) {
-          found = fields1.find((rawName) => rawName.rawName === constants.CLASSIFICATION_ID);
+          found = fields1.find((rawName) => rawName.rawName === outer1_5.CLASSIFICATION_ID);
         }
         let tmp5;
         if (null != found) {
@@ -46,7 +46,7 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
         const fields2 = first2.fields;
         let found1;
         if (null != fields2) {
-          found1 = fields2.find((rawName) => rawName.rawName === constants.INCIDENT_TIMESTAMP);
+          found1 = fields2.find((rawName) => rawName.rawName === outer1_5.INCIDENT_TIMESTAMP);
         }
         let tmp9;
         if (null != found1) {
@@ -61,19 +61,19 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
         if (null != tmp7) {
           if (null != parsed) {
             let obj = {};
-            const intl = require(dependencyMap[4]).intl;
-            obj.titleText = intl.string(require(dependencyMap[4]).t.4CxGXi);
-            obj.titleIcon = require(dependencyMap[5]).getAssetUriForEmbed(Image.resolveAssetSource(importDefault(dependencyMap[6])));
-            const intl2 = require(dependencyMap[4]).intl;
+            const intl = require(1212) /* getSystemLocale */.intl;
+            obj.titleText = intl.string(require(1212) /* getSystemLocale */.t["4CxGXi"]);
+            obj.titleIcon = require(7635) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(7577)));
+            const intl2 = require(1212) /* getSystemLocale */.intl;
             obj = {};
-            const obj2 = require(dependencyMap[5]);
-            const obj4 = importDefault(dependencyMap[3])();
-            obj.daysAgo = obj4.diff(importDefault(dependencyMap[3]).unix(parsed), "days");
-            obj.subtitleText = intl2.formatToPlainString(require(dependencyMap[4]).t.eevFb6, obj);
-            const intl3 = require(dependencyMap[4]).intl;
-            obj.descriptionText = intl3.string(require(dependencyMap[4]).t.5CLb0A);
-            const intl4 = require(dependencyMap[4]).intl;
-            obj.ctaText = intl4.string(require(dependencyMap[4]).t.zKnzwm);
+            const obj2 = require(7635) /* frozen */;
+            const obj4 = importDefault(3712)();
+            obj.daysAgo = obj4.diff(importDefault(3712).unix(parsed), "days");
+            obj.subtitleText = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.eevFb6, obj);
+            const intl3 = require(1212) /* getSystemLocale */.intl;
+            obj.descriptionText = intl3.string(require(1212) /* getSystemLocale */.t["5CLb0A"]);
+            const intl4 = require(1212) /* getSystemLocale */.intl;
+            obj.ctaText = intl4.string(require(1212) /* getSystemLocale */.t.zKnzwm);
             obj.classificationId = tmp7;
             return obj;
           }

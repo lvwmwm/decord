@@ -1,16 +1,22 @@
-// Module ID: 13929
-// Function ID: 105865
+// Module ID: 14043
+// Function ID: 108021
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [7, 6, 15, 17, 18, 162, 2]
 // Exports: parseVtt
 
-// Module 13929 (_isNativeReflectConstruct)
+// Module 14043 (_isNativeReflectConstruct)
+import _defineProperties from "_defineProperties";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _defineProperties;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -33,25 +39,20 @@ function parseTimestamp(str) {
     return result * 60 + result1 + parseFloat(match[3]);
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-const tmp2 = (arg0) => {
+let tmp2 = ((arg0) => {
   class VttParserError {
     constructor(arg0, arg1) {
       self = this;
-      tmp = closure_1(this, VttParserError);
+      tmp = outer1_1(this, VttParserError);
       items = [];
       items[0] = arg0;
-      obj = closure_3(VttParserError);
-      tmp2 = closure_2;
-      if (closure_7()) {
+      obj = outer1_3(VttParserError);
+      tmp2 = outer1_2;
+      if (outer1_7()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, items, closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
@@ -61,12 +62,12 @@ const tmp2 = (arg0) => {
       return tmp2Result;
     }
   }
-  const callback = VttParserError;
-  callback2(VttParserError, arg0);
-  return callback(VttParserError);
-}(importDefault(dependencyMap[5])(Error));
-let closure_6 = /([0-9]+)?:?([0-9]{2}):([0-9]{2}\.[0-9]{2,3})/;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VttParser.tsx");
+  callback(VttParserError, arg0);
+  return VttParserError(VttParserError);
+})(require("_wrapNativeSuper")(Error));
+let closure_5 = tmp2;
+const re6 = /([0-9]+)?:?([0-9]{2}):([0-9]{2}\.[0-9]{2,3})/;
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VttParser.tsx");
 
 export const VttParserError = tmp2;
 export const parseVtt = function parseVtt(text) {
@@ -79,18 +80,18 @@ export const parseVtt = function parseVtt(text) {
   const meta = obj.meta;
   let tmp = undefined !== meta && meta;
   const strict = obj.strict;
-  const str = text.trim();
+  let str = text.trim();
   const str2 = text.trim().replace(/\r\n/g, "\n");
-  const parts = text.trim().replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n\n");
+  let parts = text.trim().replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n\n");
   const str4 = parts.shift();
   if (str4.startsWith("WEBVTT")) {
-    const parts1 = str4.split("\n");
+    let parts1 = str4.split("\n");
     const replaced = parts1[0].replace("WEBVTT", "");
     if (replaced.length > 0) {
       if (" " !== replaced[0]) {
         if ("\t" !== replaced[0]) {
-          const prototype3 = tmp2.prototype;
-          const tmp21 = new tmp2("Header comment must start with space or tab");
+          let prototype3 = tmp2.prototype;
+          let tmp21 = new tmp2("Header comment must start with space or tab");
           throw tmp21;
         }
       }
@@ -104,13 +105,14 @@ export const parseVtt = function parseVtt(text) {
     if (!tmp) {
       if (parts1.length > 1) {
         if ("" !== parts1[1]) {
-          const prototype2 = tmp2.prototype;
-          const tmp11 = new tmp2("Missing blank line after signature");
+          let prototype2 = tmp2.prototype;
+          let tmp11 = new tmp2("Missing blank line after signature");
           throw tmp11;
         }
       }
     }
-    ({ errors, cues } = function parseCues(parts, arg1) {
+    ({ errors, cues } = (function parseCues(parts, arg1) {
+      let _defineProperties = arg1;
       const items = [];
       const mapped = parts.map((str) => {
         const parts = str.split("\n");
@@ -120,8 +122,8 @@ export const parseVtt = function parseVtt(text) {
             const first = found[0];
             if (!first.includes("-->")) {
               const _HermesInternal = HermesInternal;
-              const prototype = ctor.prototype;
-              const tmp6 = new ctor("Cue identifier cannot be standalone (cue #" + arg1 + ")");
+              const prototype = outer2_5.prototype;
+              const tmp6 = new outer2_5("Cue identifier cannot be standalone (cue #" + arg1 + ")");
               throw tmp6;
             }
           }
@@ -130,11 +132,11 @@ export const parseVtt = function parseVtt(text) {
             if (!first1.includes("-->")) {
               if (!obj4.includes("-->")) {
                 const _HermesInternal2 = HermesInternal;
-                const prototype2 = ctor.prototype;
-                const tmp11 = new ctor("Cue identifier needs to be followed by timestamp (cue #" + arg1 + ")");
+                const prototype2 = outer2_5.prototype;
+                const tmp11 = new outer2_5("Cue identifier needs to be followed by timestamp (cue #" + arg1 + ")");
                 throw tmp11;
               }
-              const obj4 = found[1];
+              obj4 = found[1];
             }
           }
           let hasItem = found.length > 1;
@@ -148,32 +150,32 @@ export const parseVtt = function parseVtt(text) {
           }
           const parts1 = found[0].split(" --> ");
           if (2 === parts1.length) {
-            if (callback(parts1[0])) {
-              if (callback(parts1[1])) {
-                const tmp16 = callback2(parts1[0]);
-                const tmp17 = callback2(parts1[1]);
+            if (outer2_8(parts1[0])) {
+              if (outer2_8(parts1[1])) {
+                const tmp16 = outer2_9(parts1[0]);
+                const tmp17 = outer2_9(parts1[1]);
                 if (tmp) {
                   if (tmp16 > tmp17) {
                     const _HermesInternal5 = HermesInternal;
-                    const prototype5 = ctor.prototype;
-                    const tmp34 = new ctor("Start timestamp greater than end (cue #" + arg1 + ")");
+                    const prototype5 = outer2_5.prototype;
+                    const tmp34 = new outer2_5("Start timestamp greater than end (cue #" + arg1 + ")");
                     throw tmp34;
                   } else if (tmp17 <= tmp16) {
                     const _HermesInternal4 = HermesInternal;
-                    const prototype4 = ctor.prototype;
-                    const tmp29 = new ctor("End must be greater than start (cue #" + arg1 + ")");
+                    const prototype4 = outer2_5.prototype;
+                    const tmp29 = new outer2_5("End must be greater than start (cue #" + arg1 + ")");
                     throw tmp29;
                   }
                 }
                 if (!tmp) {
                   if (tmp17 < tmp16) {
                     const _HermesInternal3 = HermesInternal;
-                    const prototype3 = ctor.prototype;
-                    const tmp21 = new ctor("End must be greater or equal to start when not strict (cue #" + arg1 + ")");
+                    const prototype3 = outer2_5.prototype;
+                    const tmp21 = new outer2_5("End must be greater or equal to start when not strict (cue #" + arg1 + ")");
                     throw tmp21;
                   }
                 }
-                const trimmed = parts1[1].replace(closure_6, "").trim();
+                const trimmed = parts1[1].replace(outer2_6, "").trim();
                 found.shift();
                 const str18 = found.join("\n");
                 let tmp2 = false;
@@ -182,13 +184,13 @@ export const parseVtt = function parseVtt(text) {
                   tmp2 = obj;
                 }
                 const str16 = parts1[1];
-                const str17 = parts1[1].replace(closure_6, "");
+                const str17 = parts1[1].replace(outer2_6, "");
               }
             }
           }
           const _HermesInternal6 = HermesInternal;
-          const prototype6 = ctor.prototype;
-          const tmp39 = new ctor("Invalid cue timestamp (cue #" + arg1 + ")");
+          const prototype6 = outer2_5.prototype;
+          const tmp39 = new outer2_5("Invalid cue timestamp (cue #" + arg1 + ")");
           throw tmp39;
         } else {
           const trimmed1 = found[0].trim();
@@ -207,7 +209,7 @@ export const parseVtt = function parseVtt(text) {
         }),
         errors: items
       };
-    }(parts, tmp2));
+    })(parts, tmp2));
     if (tmp2) {
       if (errors.length > 0) {
         throw errors[0];
@@ -215,7 +217,7 @@ export const parseVtt = function parseVtt(text) {
     }
     let tmp14 = null;
     if (tmp) {
-      tmp14 = function parseMeta(parts1) {
+      tmp14 = (function parseMeta(parts1) {
         const obj = {};
         const substr = parts1.slice(1);
         const item = substr.forEach((arr) => {
@@ -229,7 +231,7 @@ export const parseVtt = function parseVtt(text) {
           tmp2 = obj;
         }
         return tmp2;
-      }(parts1);
+      })(parts1);
     }
     obj = { valid: 0 === errors.length, strict: tmp2, cues, errors };
     if (tmp) {
@@ -239,8 +241,8 @@ export const parseVtt = function parseVtt(text) {
     const merged = Object.assign(tmp);
     return obj;
   } else {
-    const prototype = tmp2.prototype;
-    const tmp6 = new tmp2("Must start with \"WEBVTT\"");
+    let prototype = tmp2.prototype;
+    let tmp6 = new tmp2("Must start with \"WEBVTT\"");
     throw tmp6;
   }
   const str3 = text.trim().replace(/\r\n/g, "\n").replace(/\r/g, "\n");

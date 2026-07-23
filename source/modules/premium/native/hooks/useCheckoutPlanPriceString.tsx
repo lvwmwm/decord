@@ -1,16 +1,18 @@
-// Module ID: 7113
-// Function ID: 57156
+// Module ID: 7118
+// Function ID: 57190
 // Name: useCheckoutPlanPriceString
-// Dependencies: []
+// Dependencies: [31, 6663, 6648, 477, 2]
 // Exports: useCheckoutPlanPriceString
 
-// Module 7113 (useCheckoutPlanPriceString)
-let closure_2 = importAll(dependencyMap[0]);
-const useNativeCheckoutStore = arg1(dependencyMap[1]).useNativeCheckoutStore;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
+// Module 7118 (useCheckoutPlanPriceString)
+import result from "result";
+import { useNativeCheckoutStore } from "context";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
 
 export const useCheckoutPlanPriceString = function useCheckoutPlanPriceString(productId, first) {
-  first = productId;
+  const _require = productId;
   let priceString;
   if (null != first) {
     priceString = first.priceString;
@@ -26,7 +28,7 @@ export const useCheckoutPlanPriceString = function useCheckoutPlanPriceString(pr
     if (null == tmp4) {
       return null;
     } else {
-      const availablePlanForItems = tmp4.getAvailablePlanForItems(arg0(tmp4[2]).getSubscriptionItemsForProduct(arg0));
+      const availablePlanForItems = tmp4.getAvailablePlanForItems(productId(tmp4[2]).getSubscriptionItemsForProduct(productId));
       let priceString = null;
       if (null != availablePlanForItems) {
         priceString = availablePlanForItems.getPriceString();

@@ -1,62 +1,71 @@
-// Module ID: 11025
-// Function ID: 85844
+// Module ID: 11035
+// Function ID: 85894
 // Name: ClassificationEvidence
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1278, 1849, 11026, 7544, 653, 33, 7621, 4130, 566, 3976, 11036, 11037, 7543, 4317, 8274, 8148, 10023, 9293, 4351, 21, 2]
 // Exports: default
 
-// Module 11025 (ClassificationEvidence)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, findNodeHandle: closure_6, Image: closure_7, ActivityIndicator: closure_8 } = arg1(dependencyMap[2]));
-let closure_9 = importDefault(dependencyMap[3]);
-let closure_10 = importDefault(dependencyMap[4]);
-let closure_11 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[2]);
-({ DEFAULT_MEDIA_MAX_WIDTH: closure_12, DEFAULT_MEDIA_MAX_HEIGHT: closure_13, VIDEO_PLACEHOLDER_WIDTH: closure_14, VIDEO_PLACEHOLDER_HEIGHT: closure_15, VIDEO_PLACEHOLDER_FILENAME: closure_16 } = arg1(dependencyMap[6]));
-const MessageTypes = arg1(dependencyMap[7]).MessageTypes;
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_18, jsxs: closure_19 } = arg1(dependencyMap[8]));
-let importDefaultResult = importDefault(dependencyMap[9]);
+// Module 11035 (ClassificationEvidence)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import SafetyHubLinks from "SafetyHubLinks";
+import { MessageTypes } from "ME";
+import jsxProd from "jsxProd";
+import importDefaultResult from "RowManager";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_18;
+let closure_19;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ View: closure_5, findNodeHandle: closure_6, Image: closure_7, ActivityIndicator: closure_8 } = get_ActivityIndicator);
+({ DEFAULT_MEDIA_MAX_WIDTH: closure_12, DEFAULT_MEDIA_MAX_HEIGHT: closure_13, VIDEO_PLACEHOLDER_WIDTH: closure_14, VIDEO_PLACEHOLDER_HEIGHT: closure_15, VIDEO_PLACEHOLDER_FILENAME: closure_16 } = SafetyHubLinks);
+({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
 importDefaultResult = new importDefaultResult();
-const tmp4 = arg1(dependencyMap[8]);
-let closure_21 = arg1(dependencyMap[10]).createStyles({ dummyVideoAttachments: { "Null": "%FunctionPrototype%", "Null": "paddingStart" } });
-const obj = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[23]).fileFinishedImporting("modules/safety_hub/native/ClassificationMessageEvidence.tsx");
+let closure_21 = _createForOfIteratorHelperLoose.createStyles({ dummyVideoAttachments: { width: 0, height: 0 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/safety_hub/native/ClassificationMessageEvidence.tsx");
 
 export default function ClassificationEvidence(arg0) {
-  let found = callback3();
-  let obj = arg1(closure_2[11]);
-  const items = [closure_10];
+  let found = callback2();
+  let obj = ref(566);
+  const items = [memo];
   let stateFromStores = obj.useStateFromStores(items, () => memo.getCurrentUser());
-  const ref = React.useRef(null);
-  const arg1 = ref;
-  const tmp3 = callback(React.useState(null), 2);
+  ref = React.useRef(null);
+  const tmp3 = first1(React.useState(null), 2);
   const first = tmp3[0];
-  const importDefault = first;
-  closure_2 = tmp3[1];
-  const tmp5 = callback(React.useState({}), 2);
-  const first1 = tmp5[0];
-  let callback = first1;
-  const React = tmp5[1];
-  let obj1 = arg1(closure_2[11]);
-  const items1 = [closure_9];
+  const dependencyMap = tmp3[1];
+  const tmp5 = first1(React.useState({}), 2);
+  first1 = tmp5[0];
+  React = tmp5[1];
+  let obj1 = ref(566);
+  const items1 = [id];
   const resolveAssetSource = first2.resolveAssetSource;
-  if (obj1.useStateFromStores(items1, () => ref(closure_2[12]).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp8(tmp9[13]));
+  if (obj1.useStateFromStores(items1, () => ref(3976).isThemeLight(id.theme))) {
+    let assetSource = resolveAssetSource(tmp8(11036));
   } else {
-    assetSource = resolveAssetSource(tmp8(tmp9[14]));
+    assetSource = resolveAssetSource(tmp8(11037));
   }
   let map = arg0.flaggedContent[0];
-  const tmp11 = callback(React.useState(map.attachments.length), 2);
-  const first2 = tmp11[0];
+  const tmp11 = first1(React.useState(map.attachments.length), 2);
+  first2 = tmp11[0];
   let closure_8 = tmp11[1];
-  let obj2 = arg1(closure_2[11]);
+  let obj2 = ref(566);
   const items2 = [closure_11];
-  const id = map.id;
-  closure_9 = id;
+  id = map.id;
   const items3 = [map.attachments, first1, assetSource];
-  const stateFromStores1 = obj2.useStateFromStores(items2, () => username.getUsername());
-  const memo = React.useMemo(() => {
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => outer1_11.getUsername());
+  memo = React.useMemo(() => {
     const attachments = map.attachments;
     return attachments.map((filename) => {
       let obj = {};
@@ -67,27 +76,27 @@ export default function ClassificationEvidence(arg0) {
         str = filename;
       }
       obj["filename"] = str;
-      obj["flags"] = callback(closure_2[15]).getSpoilerFlagsForAttachment(filename);
+      obj["flags"] = ref(7543).getSpoilerFlagsForAttachment(filename);
       obj["size"] = 0;
       obj["proxy_url"] = filename.url;
-      const obj2 = callback(closure_2[15]);
+      const obj2 = ref(7543);
       if (obj3.isImageFile(filename.filename)) {
         obj = {};
         const merged1 = Object.assign(obj);
         let width;
-        if (null != closure_3[filename.id]) {
+        if (null != outer1_3[filename.id]) {
           width = tmp16.width;
         }
         if (null == width) {
-          width = closure_12;
+          width = outer2_12;
         }
         obj["width"] = width;
         let height;
-        if (null != closure_3[filename.id]) {
+        if (null != outer1_3[filename.id]) {
           height = tmp19.height;
         }
         if (null == height) {
-          height = closure_13;
+          height = outer2_13;
         }
         obj["height"] = height;
         let tmp4 = obj;
@@ -96,62 +105,63 @@ export default function ClassificationEvidence(arg0) {
         if (obj4.isVideoFile(filename.filename)) {
           obj = {};
           const merged2 = Object.assign(obj);
-          obj["width"] = closure_14;
-          obj["height"] = closure_15;
-          obj["proxy_url"] = uri.uri;
-          obj["filename"] = closure_16;
+          obj["width"] = outer2_14;
+          obj["height"] = outer2_15;
+          obj["proxy_url"] = outer1_5.uri;
+          obj["filename"] = outer2_16;
           tmp4 = obj;
         }
-        const obj4 = callback(closure_2[16]);
+        obj4 = ref(4317);
       }
       return tmp4;
     });
   }, items3);
-  closure_10 = memo;
   const items4 = [memo, map.attachments, id, first1, assetSource];
   const items5 = [first];
-  callback = React.useCallback((nativeEvent) => {
+  const callback = React.useCallback((nativeEvent) => {
     let index;
     let layout;
     ({ index, layout } = nativeEvent.nativeEvent);
     const mapped = memo.map((uri, mediaIndex) => {
       let obj = { uri: uri.url };
       let url;
-      if (obj2.isVideoFile(closure_6.attachments[mediaIndex].filename)) {
+      if (obj2.isVideoFile(outer1_6.attachments[mediaIndex].filename)) {
         url = uri.url;
       }
       obj.videoURI = url;
-      const obj2 = callback(closure_2[16]);
+      obj2 = ref(4317);
       let tmp2;
-      if (obj3.isVideoFile(closure_6.attachments[mediaIndex].filename)) {
-        obj = { width: closure_14, height: closure_15, uri: uri.uri };
+      if (obj3.isVideoFile(outer1_6.attachments[mediaIndex].filename)) {
+        obj = { width: outer2_14, height: outer2_15, uri: outer1_5.uri };
         tmp2 = obj;
       }
       obj.thumbnail = tmp2;
       obj.mediaIndex = mediaIndex;
       obj.channelId = "1";
-      obj.messageId = closure_9;
+      obj.messageId = outer1_9;
       let width;
-      if (null != closure_3[uri.id]) {
+      if (null != outer1_3[uri.id]) {
         width = tmp6.width;
       }
       if (null == width) {
-        width = closure_12;
+        width = outer2_12;
       }
       obj.width = width;
       let height;
-      if (null != closure_3[uri.id]) {
+      if (null != outer1_3[uri.id]) {
         height = tmp8.height;
       }
       if (null == height) {
-        height = closure_13;
+        height = outer2_13;
       }
       obj.height = height;
       obj.accessoryType = "attachment";
       obj.attachmentId = uri.id;
       return obj;
     });
-    ref(closure_2[17]).openMediaModal({ initialIndex: index, initialSources: mapped, originViewOrOriginLayout: layout });
+    let obj = ref(8274);
+    obj = { initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout };
+    obj.openMediaModal(obj);
   }, items4);
   const items6 = [map.attachments];
   const callback1 = React.useCallback((arg0) => {
@@ -159,25 +169,37 @@ export default function ClassificationEvidence(arg0) {
   }, items5);
   const effect = React.useEffect(() => {
     const attachments = map.attachments;
-    const found = attachments.filter((filename) => callback(closure_2[16]).isImageFile(filename.filename));
+    const found = attachments.filter((filename) => ref(table[16]).isImageFile(filename.filename));
     const mapped = found.map((arg0) => {
-      const promise = function getImageAttachmentDimensions(arg0) {
-        return new Promise((arg0, arg1) => size.getSize(arg0.url, () => { ... }, arg1));
-      }(arg0);
-      return function getImageAttachmentDimensions(arg0) {
-        return new Promise((arg0, arg1) => size.getSize(arg0.url, () => { ... }, arg1));
-      }(arg0).then((arg0) => callback((arg0) => {
-        const obj = {};
-        const merged = Object.assign(arg0);
-        obj[arg0.id] = arg0;
-        return obj;
-      })).finally(() => callback2((arg0) => arg0 - 1));
+      let closure_0 = arg0;
+      const promise = (function getImageAttachmentDimensions(arg0) {
+        let closure_0 = arg0;
+        return new Promise((arg0, arg1) => {
+          const url = arg0;
+          return first2.getSize(url.url, () => { ... }, arg1);
+        });
+      })(arg0);
+      return (function getImageAttachmentDimensions(arg0) {
+        let closure_0 = arg0;
+        return new Promise((arg0, arg1) => {
+          const url = arg0;
+          return first2.getSize(url.url, () => { ... }, arg1);
+        });
+      })(arg0).then((arg0) => {
+        let closure_0 = arg0;
+        return outer2_4((arg0) => {
+          const obj = {};
+          const merged = Object.assign(arg0);
+          obj[id.id] = id;
+          return obj;
+        });
+      }).finally(() => outer2_8((arg0) => arg0 - 1));
     });
   }, items6);
   const items7 = [first2];
   const effect1 = React.useEffect(() => {
     if (0 === first2) {
-      callback(map(ref.current));
+      dependencyMap(map(ref.current));
     }
   }, items7);
   if ("" === map.content) {
@@ -187,50 +209,52 @@ export default function ClassificationEvidence(arg0) {
   }
   if (first2 > 0) {
     obj = {};
-    const items8 = [callback2(closure_8, {}), ];
+    const items8 = [callback(closure_8, {}), ];
     obj = { style: found.dummyVideoAttachments };
-    const attachments = map.attachments;
-    found = attachments.filter((filename) => ref(closure_2[16]).isVideoFile(filename.filename));
+    let attachments = map.attachments;
+    found = attachments.filter((filename) => ref(4317).isVideoFile(filename.filename));
     map = found.map;
     obj.children = map((uri) => {
-      let obj = {
+      let closure_0 = uri;
+      obj = {
         source: obj,
         onLoad(arg0) {
-          callback((arg0) => {
+          let closure_0 = arg0;
+          outer1_4((arg0) => {
             let obj = {};
             const merged = Object.assign(arg0);
-            obj = { width: arg0.naturalSize.width, height: arg0.naturalSize.height };
-            obj[arg0.id] = obj;
+            obj = { width: closure_0.naturalSize.width, height: closure_0.naturalSize.height };
+            obj[closure_0.id] = obj;
             return obj;
           });
-          callback2((arg0) => arg0 - 1);
+          outer1_8((arg0) => arg0 - 1);
         },
         onError() {
-          return callback2((arg0) => arg0 - 1);
+          return outer1_8((arg0) => arg0 - 1);
         }
       };
       obj = { uri: uri.url };
-      return callback2(first(closure_2[18]), obj, arg1);
+      return outer1_18(first(8148), obj, arg1);
     });
-    items8[1] = callback2(assetSource, obj);
+    items8[1] = callback(assetSource, obj);
     obj.children = items8;
     obj1 = obj;
   } else {
     obj1 = {};
     obj2 = { ref, onTapImage: callback, inverted: false };
-    const items9 = [callback2(importDefault(closure_2[19]), obj2), ];
-    const obj3 = { rowGenerator: importDefaultResult };
-    const tmp26 = callback2;
-    const tmp29 = importDefault(closure_2[20]);
-    const obj4 = { id: map.id };
+    const items9 = [callback(first(10023), obj2), ];
+    const obj3 = { rowGenerator: closure_20 };
+    const tmp26 = callback;
+    const tmp29 = first(9293);
+    let obj4 = { id: map.id };
     const _Date = Date;
-    const obj10 = arg1(closure_2[21]);
-    const date = new Date(importDefault(closure_2[22]).extractTimestamp(map.id));
+    const obj10 = ref(4351);
+    const date = new Date(first(21).extractTimestamp(map.id));
     obj4.timestamp = date.toUTCString();
     obj4.channel_id = "1";
     obj4.type = MessageTypes.DEFAULT;
     if (null == stateFromStores) {
-      const obj5 = { 1654780497: "r", -28202154: "SubscriptionPlatform", 1387815280: "Array", username: stateFromStores1 };
+      const obj5 = { id: "0", avatar: null, discriminator: "0000", username: stateFromStores1 };
       stateFromStores = obj5;
     }
     obj4.author = stateFromStores;
@@ -240,7 +264,7 @@ export default function ClassificationEvidence(arg0) {
     obj3.modifyRow = callback1;
     items9[1] = tmp26(tmp29, obj3);
     obj1.children = items9;
-    const obj12 = importDefault(closure_2[22]);
+    const obj12 = first(21);
   }
   closure_19(assetSource, obj1);
 };

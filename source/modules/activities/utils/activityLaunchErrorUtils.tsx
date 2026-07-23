@@ -1,22 +1,23 @@
-// Module ID: 10505
-// Function ID: 82048
+// Module ID: 10515
+// Function ID: 82098
 // Name: _getActivityLaunchErrorInfo
-// Dependencies: []
+// Dependencies: [5, 7370, 653, 1212, 10516, 3803, 10486, 4356, 7798, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 10505 (_getActivityLaunchErrorInfo)
+// Module 10515 (_getActivityLaunchErrorInfo)
+import explicitContentFromProto from "explicitContentFromProto";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { DevShelfFetchState } from "_isNativeReflectConstruct";
+import { AbortCodes } from "ME";
+
+const require = arg1;
 function _getActivityLaunchErrorInfo() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getActivityLaunchErrorInfo = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const DevShelfFetchState = arg1(dependencyMap[1]).DevShelfFetchState;
-const AbortCodes = arg1(dependencyMap[2]).AbortCodes;
-const obj = { ClientError: 0, [0]: "ClientError", CallbackError: 1, [1]: "CallbackError", ApiError: 2, [2]: "ApiError" };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/activities/utils/activityLaunchErrorUtils.tsx");
+let obj = { ClientError: 0, [0]: "ClientError", CallbackError: 1, [1]: "CallbackError", ApiError: 2, [2]: "ApiError" };
+const result = require("ME").fileFinishedImporting("modules/activities/utils/activityLaunchErrorUtils.tsx");
 
 export const ActivityLaunchFailErrorType = obj;
 export const getActivityLaunchErrorInfo = function getActivityLaunchErrorInfo(error, applicationId) {

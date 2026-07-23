@@ -1,31 +1,33 @@
-// Module ID: 8744
-// Function ID: 69152
+// Module ID: 8751
+// Function ID: 69193
 // Name: AvatarDecorationProductPreview
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 8667, 8207, 1212, 1273, 2]
 // Exports: default
 
-// Module 8744 (AvatarDecorationProductPreview)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = arg1(dependencyMap[3]).createStyles({ fullSizePreview: {} });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/collectibles/native/AvatarDecorationProductPreview.tsx");
+// Module 8751 (AvatarDecorationProductPreview)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ fullSizePreview: { flex: 1, alignItems: "center", justifyContent: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/AvatarDecorationProductPreview.tsx");
 
 export default function AvatarDecorationProductPreview(product) {
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(8667) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = arg1(dependencyMap[5]);
+  let obj1 = require(8207) /* ItemsSortingHat */;
   const firstAvatarDecoration = obj1.useShopProductItems(product.product).firstAvatarDecoration;
   let tmp3 = null;
   if (null != firstAvatarDecoration) {
-    obj = { style: tmp.fullSizePreview };
-    const intl = arg1(dependencyMap[6]).intl;
+    obj = { style: tmp.fullSizePreview, pointerEvents: "box-none", accessibilityLabel: null, accessibilityRole: "image", accessible: true };
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { a11y_text: firstAvatarDecoration.label };
-    obj.accessibilityLabel = intl.formatToPlainString(arg1(dependencyMap[6]).t.Do2lxE, obj);
-    obj1 = { user: currentUser, guildId: undefined, size: arg1(dependencyMap[7]).AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: true };
-    obj.children = jsx(arg1(dependencyMap[7]).Avatar, obj1);
-    tmp3 = <View {...obj} />;
+    obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.Do2lxE, obj);
+    obj1 = { user: currentUser, guildId: undefined, size: require(1273) /* Button */.AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: true };
+    obj.children = jsx(require(1273) /* Button */.Avatar, { user: currentUser, guildId: undefined, size: require(1273) /* Button */.AvatarSizes.GIFT_START, avatarDecoration: firstAvatarDecoration, animate: true });
+    tmp3 = <View a11y_text={firstAvatarDecoration.label} />;
   }
   return tmp3;
 };

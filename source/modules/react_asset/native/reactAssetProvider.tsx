@@ -1,33 +1,35 @@
-// Module ID: 16477
-// Function ID: 127324
+// Module ID: 16594
+// Function ID: 129498
 // Name: NativeReactAssetModule
-// Dependencies: []
+// Dependencies: [27, 477, 16595, 16596, 2]
 // Exports: default
 
-// Module 16477 (NativeReactAssetModule)
-const _module = require(dependencyMap[0]);
-const Image = _module.Image;
-const _module1 = require(dependencyMap[1]);
-if (_module1.isAndroid()) {
-  let NativeReactAssetModule = importDefault(dependencyMap[2]);
+// Module 16594 (NativeReactAssetModule)
+import get_ActivityIndicator from "get ActivityIndicator";
+import set from "set";
+import set from "enforcing";
+
+const Image = get_ActivityIndicator.Image;
+if (set.isAndroid()) {
+  let NativeReactAssetModule = require("enforcing");
 } else {
-  NativeReactAssetModule = _module.NativeModules.NativeReactAssetModule;
+  NativeReactAssetModule = get_ActivityIndicator.NativeModules.NativeReactAssetModule;
 }
-const _module2 = require(dependencyMap[4]);
-const result = _module2.fileFinishedImporting("modules/react_asset/native/reactAssetProvider.tsx");
+const result = set.fileFinishedImporting("modules/react_asset/native/reactAssetProvider.tsx");
 
 export default function reactAssetProvider() {
   return new Promise((arg0) => {
-    closure_3.keysRequest((arr) => {
-      arr = arr(closure_1[3]).NATIVE_REQUIRED_ASSETS;
-      closure_3.valuesResult(arr.map((arg0) => {
+    let closure_0 = arg0;
+    outer1_3.keysRequest((arr) => {
+      const NATIVE_REQUIRED_ASSETS = outer2_0(outer2_1[3]).NATIVE_REQUIRED_ASSETS;
+      outer2_3.valuesResult(arr.map((arg0) => {
         let str = "";
         if (null != NATIVE_REQUIRED_ASSETS[arg0]) {
-          str = closure_2.resolveAssetSource(NATIVE_REQUIRED_ASSETS[arg0]).uri;
+          str = outer3_2.resolveAssetSource(NATIVE_REQUIRED_ASSETS[arg0]).uri;
         }
         return str;
       }));
-      arr(true);
+      NATIVE_REQUIRED_ASSETS(true);
     });
   });
 };

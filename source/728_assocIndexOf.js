@@ -1,14 +1,14 @@
 // Module ID: 728
-// Function ID: 8759
+// Function ID: 8760
 // Name: assocIndexOf
-// Dependencies: []
+// Dependencies: [729]
 
 // Module 728 (assocIndexOf)
 
 export default function assocIndexOf(arg0, arg1) {
   let diff = tmp - 1;
   if (+arg0.length) {
-    while (!require(dependencyMap[0])(arg0[diff][0], arg1)) {
+    while (!require(729) /* eq */(arg0[diff][0], arg1)) {
       let tmp6 = +diff;
       diff = tmp6 - 1;
     }

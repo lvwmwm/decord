@@ -1,10 +1,12 @@
-// Module ID: 13005
-// Function ID: 98931
+// Module ID: 13119
+// Function ID: 101087
 // Name: convertDeviceEventBreadcrumb
-// Dependencies: []
+// Dependencies: [653, 6917, 12571, 12737, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 13005 (convertDeviceEventBreadcrumb)
+// Module 13119 (convertDeviceEventBreadcrumb)
+import { AnalyticEvents } from "ME";
+
 function convertDeviceEventBreadcrumb(data) {
   data = data.data;
   if (null != data) {
@@ -21,7 +23,7 @@ function convertDeviceEventBreadcrumb(data) {
       const obj = {
         action: tmp2,
         description: tmp5,
-        metadata: function formatDeviceMetadata(data) {
+        metadata: (function formatDeviceMetadata(data) {
               const entries = Object.entries(data);
               const found = entries.filter((arg0) => {
                 let tmp;
@@ -39,7 +41,7 @@ function convertDeviceEventBreadcrumb(data) {
                 joined = mapped.join(", ");
               }
               return joined;
-            }(data)
+            })(data)
       };
       return obj;
     }
@@ -107,7 +109,7 @@ function buildSocketMessageIdentity(data, arg1) {
     const tmp21 = coerceNumberFromUnknown(data.op);
     let tmp22 = null;
     if (null != tmp21) {
-      const tmp25 = require(dependencyMap[2]).Opcode[tmp21];
+      const tmp25 = require(12571) /* Opcode */.Opcode[tmp21];
       let tmp26 = null;
       if ("string" === typeof tmp25) {
         tmp26 = tmp25;
@@ -140,7 +142,7 @@ function buildSocketMessageIdentity(data, arg1) {
     const tmp10 = coerceNumberFromUnknown(data.op);
     let tmp11 = null;
     if (null != tmp10) {
-      const tmp14 = require(dependencyMap[3]).RTCSocketOpcode[tmp10];
+      const tmp14 = require(12737) /* _isNativeReflectConstruct */.RTCSocketOpcode[tmp10];
       let tmp15 = null;
       if ("string" === typeof tmp14) {
         tmp15 = tmp14;
@@ -186,10 +188,10 @@ function buildWebsocketMessageProps(data) {
       tmp5 = buildSocketMessageIdentity(data, tmp4);
     }
     if (null == tmp5) {
-      tmp5 = function buildLegacyMessageIdentity(data) {
-        const tmp = callback(data.category);
-        const tmp2 = callback(data.type);
-        const tmp3 = callback(data.name);
+      tmp5 = (function buildLegacyMessageIdentity(data) {
+        const tmp = outer1_11(data.category);
+        const tmp2 = outer1_11(data.type);
+        const tmp3 = outer1_11(data.name);
         if (null == tmp) {
           if (null == tmp2) {
             let joined = null;
@@ -199,7 +201,7 @@ function buildWebsocketMessageProps(data) {
         const items = [tmp, tmp2, tmp3];
         const found = items.filter((arg0) => null != arg0);
         joined = found.join("/");
-      }(data);
+      })(data);
     }
     if (null != tmp5) {
       tmp2 = tmp5;
@@ -251,7 +253,6 @@ function coerceNumberFromUnknown(op) {
   }
   return null;
 }
-const AnalyticEvents = require(dependencyMap[0]).AnalyticEvents;
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
 let closure_4 = {
   [AnalyticEvents.DEVICE_EVENT]: (data) => convertDeviceEventBreadcrumb(data),
@@ -360,7 +361,7 @@ let closure_5 = {
     data = data.data;
     let tmp = null;
     if (null != data) {
-      let obj = importDefault(dependencyMap[1]);
+      let obj = importDefault(6917);
       const currentHermesInstrumentedStatsSummary = obj.getCurrentHermesInstrumentedStatsSummary();
       let tmp7 = null;
       if (null != currentHermesInstrumentedStatsSummary) {
@@ -398,20 +399,19 @@ let closure_5 = {
   },
   [AnalyticEvents.WEBSOCKET_MESSAGE_RECEIVED]: (data) => buildWebsocketMessageProps(data)
 };
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInAnalyticBuilder.tsx");
+const result = require("Opcode").fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInAnalyticBuilder.tsx");
 
 export const buildZoomedInAnalyticsEvent = function buildZoomedInAnalyticsEvent(value) {
-  if (value.key in closure_4) {
-    const tmp7 = closure_4[key](value);
+  if (value.key in dependencyMap) {
+    const tmp7 = dependencyMap[key](value);
     let tmp8 = null;
     if (null != tmp7) {
       let obj = { key, props: tmp7 };
       tmp8 = obj;
     }
     return tmp8;
-  } else if (key in closure_5) {
-    const tmp4 = closure_5[value.key](value);
+  } else if (key in dependencyMap2) {
+    const tmp4 = dependencyMap2[value.key](value);
     let tmp5 = null;
     if (null != tmp4) {
       obj = { key: key2, props: tmp4 };

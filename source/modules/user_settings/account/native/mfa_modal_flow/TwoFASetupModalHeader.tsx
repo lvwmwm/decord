@@ -1,29 +1,34 @@
-// Module ID: 13573
-// Function ID: 102913
+// Module ID: 13687
+// Function ID: 105069
 // Name: PageMarker
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 2]
 
-// Module 13573 (PageMarker)
-const View = arg1(dependencyMap[1]).View;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_1, jsxs: closure_2 } = arg1(dependencyMap[2]));
-let obj1 = arg1(dependencyMap[3]);
-let obj = { pageMarkerContainer: { 2022275207: 1908422878, 1756305299: 3, 1637488532: 33719105, 70668098: 1908039936 } };
-obj = { "Null": 1350123793, "Null": -1317928958, "Null": -419430399, "Null": 16777216, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_STRONG, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+// Module 13687 (PageMarker)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_1;
+let closure_2;
+({ jsx: closure_1, jsxs: closure_2 } = jsxProd);
+let obj = { pageMarkerContainer: { flex: 1, alignItems: "center", justifyContent: "space-between", flexDirection: "row" } };
+obj = { width: 14, height: 14, borderRadius: 7, borderWidth: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
 obj.circleIcon = obj;
-obj1 = { "Bool(false)": null, "Bool(false)": "a255589f0ef23e06a175ac0fc6767b9f", "Bool(false)": "blocked_darker", "Bool(false)": "png", "Bool(false)": true, "Bool(false)": "/assets/images/native/empties", backgroundColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG };
-obj.horizontalLine = obj1;
-const tmp2 = arg1(dependencyMap[2]);
-obj.filledCircle = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_BRAND, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
-let closure_3 = obj1.createStyles(obj);
-const obj2 = { backgroundColor: importDefault(dependencyMap[4]).colors.TEXT_BRAND, borderColor: importDefault(dependencyMap[4]).colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose = { position: "absolute", left: 0, right: 0, top: "50%", bottom: "50%", height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
+obj.horizontalLine = _createForOfIteratorHelperLoose;
+obj.filledCircle = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let closure_3 = _createForOfIteratorHelperLoose.createStyles(obj);
+const obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
 const memoResult = importAllResult.memo((arg0) => {
+  let View;
   let numMarkers;
-  ({ numMarkers, currentPage: closure_0 } = arg0);
-  const tmp = callback2();
+  ({ numMarkers, currentPage: View } = arg0);
+  const tmp = callback3();
+  const callback = tmp;
   const ArrayResult = Array(numMarkers);
   let obj = { style: items };
-  const items = [tmp.pageMarkerContainer, ];
+  items = [tmp.pageMarkerContainer, ];
   obj = { width: 20 * numMarkers };
   items[1] = obj;
   const mapped = Array(numMarkers).fill(undefined).map((arg0, arg1) => {
@@ -36,12 +41,12 @@ const memoResult = importAllResult.memo((arg0) => {
     }
     items[1] = filledCircle;
     obj.style = items;
-    return tmp(closure_0, obj, sum);
+    return tmp(outer1_0, obj, sum);
   });
-  const items1 = [tmp(View, { style: tmp.horizontalLine }), mapped];
+  const items1 = [callback(View, { style: tmp.horizontalLine }), mapped];
   obj.children = items1;
-  return callback(View, obj);
+  return callback2(View, obj);
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupModalHeader.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupModalHeader.tsx");
 
 export const PageMarker = memoResult;

@@ -1,22 +1,24 @@
-// Module ID: 11456
-// Function ID: 89263
+// Module ID: 11466
+// Function ID: 89313
 // Name: usePendingGameProfileReturn
-// Dependencies: []
+// Dependencies: [31, 4151, 8596, 653, 566, 8594, 8600, 2]
 // Exports: default
 
-// Module 11456 (usePendingGameProfileReturn)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const AVATAR_SIZE = arg1(dependencyMap[3]).AVATAR_SIZE;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/game_profile/hooks/usePendingGameProfileReturn.tsx");
+// Module 11466 (usePendingGameProfileReturn)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { AVATAR_SIZE } from "ME";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_profile/hooks/usePendingGameProfileReturn.tsx");
 
 export default function usePendingGameProfileReturn(channelId) {
-  const arg1 = channelId.channelId;
-  let obj = arg1(dependencyMap[4]);
+  channelId = channelId.channelId;
+  let obj = channelId(stateFromStores1[4]);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const pendingReturn = pendingReturn.getPendingReturn();
+    const pendingReturn = outer1_5.getPendingReturn();
     let tmp2 = null;
     if (null != pendingReturn) {
       tmp2 = null;
@@ -26,7 +28,6 @@ export default function usePendingGameProfileReturn(channelId) {
     }
     return tmp2;
   });
-  const importDefault = stateFromStores;
   const items1 = [stateFromStores];
   const callback = React.useCallback(() => {
     if (null != stateFromStores) {
@@ -35,19 +36,18 @@ export default function usePendingGameProfileReturn(channelId) {
       obj.returnToGameProfile(obj);
     }
   }, items1);
-  const items2 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items2, () => {
+  const items2 = [_isNativeReflectConstruct];
+  stateFromStores1 = channelId(stateFromStores1[4]).useStateFromStores(items2, () => {
     let gameId;
     if (null != stateFromStores) {
       gameId = stateFromStores.gameId;
     }
     let game = null;
     if (null != gameId) {
-      game = game.getGame(stateFromStores.gameId);
+      game = outer1_4.getGame(stateFromStores.gameId);
     }
     return game;
   });
-  const dependencyMap = stateFromStores1;
   let id;
   if (null != stateFromStores1) {
     id = stateFromStores1.id;
@@ -58,7 +58,7 @@ export default function usePendingGameProfileReturn(channelId) {
     if (null != stateFromStores1) {
       id = stateFromStores1.id;
     }
-    return null != id ? () => callback(id[5]).clearGameProfilePendingReturn(id.id) : undefined;
+    return null != id ? (() => stateFromStores(stateFromStores1[5]).clearGameProfilePendingReturn(outer1_2.id)) : undefined;
   }, items3);
   if (null != stateFromStores1) {
     const name = stateFromStores1.name;

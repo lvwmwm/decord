@@ -1,13 +1,13 @@
-// Module ID: 6539
-// Function ID: 50741
+// Module ID: 6544
+// Function ID: 50770
 // Name: StreamingTier1SmallBadge
-// Dependencies: []
+// Dependencies: [33, 5085, 6545, 2]
 // Exports: StreamingTier1SmallBadge
 
-// Module 6539 (StreamingTier1SmallBadge)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier1SmallBadge.native.tsx");
+// Module 6544 (StreamingTier1SmallBadge)
+import { jsx } from "jsxProd";
+
+const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier1SmallBadge.native.tsx");
 
 export const StreamingTier1SmallBadge = function StreamingTier1SmallBadge(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const StreamingTier1SmallBadge = function StreamingTier1SmallBadge(width)
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6545) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const StreamingTier1SmallBadge = function StreamingTier1SmallBadge(width)
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

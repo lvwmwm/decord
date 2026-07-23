@@ -1,24 +1,24 @@
-// Module ID: 13524
-// Function ID: 102589
+// Module ID: 13638
+// Function ID: 104745
 // Name: useAuthSessions
-// Dependencies: []
+// Dependencies: [31, 1194, 13639, 566, 1212, 3712, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 13524 (useAuthSessions)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");
+// Module 13638 (useAuthSessions)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");
 
 export const useAuthSessions = function useAuthSessions() {
-  const items = [closure_5];
-  const stateFromStoresObject = arg1(dependencyMap[3]).useStateFromStoresObject(items, () => sessions.getSessions());
-  const arg1 = stateFromStoresObject;
+  let items = [closure_5];
+  stateFromStoresObject = stateFromStoresObject(566).useStateFromStoresObject(items, () => outer1_5.getSessions());
   const items1 = [stateFromStoresObject];
   return React.useMemo(() => {
-    const items = [...closure_0];
-    const authSessionIdHash = authSessionIdHash.getAuthSessionIdHash();
-    const stateFromStoresObject = authSessionIdHash;
+    const items = [...authSessionIdHash];
+    authSessionIdHash = outer1_4.getAuthSessionIdHash();
     let first = null;
     if (null != authSessionIdHash) {
       const findIndexResult = items.findIndex((id_hash) => id_hash.id_hash === authSessionIdHash);
@@ -39,11 +39,11 @@ export const useAuthSessions = function useAuthSessions() {
 export const formatDate = function formatDate(arg0) {
   const timestamp = Date.now();
   if ((timestamp - arg0.valueOf()) / 1000 / 60 / 60 < 1) {
-    const intl = arg1(dependencyMap[4]).intl;
-    let stringResult = intl.string(arg1(dependencyMap[4]).t.TXCmfL);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl.string(require(1212) /* getSystemLocale */.t.TXCmfL);
   } else {
-    stringResult = importDefault(dependencyMap[5])(arg0).fromNow();
-    const obj = importDefault(dependencyMap[5])(arg0);
+    stringResult = importDefault(3712)(arg0).fromNow();
+    const obj = importDefault(3712)(arg0);
   }
   return stringResult;
 };

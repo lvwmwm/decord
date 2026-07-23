@@ -1,33 +1,35 @@
 // Module ID: 1817
-// Function ID: 19978
+// Function ID: 19979
 // Name: OverKeyboardView
-// Dependencies: []
+// Dependencies: [31, 27, 33, 1776, 1572]
 // Exports: default
 
 // Module 1817 (OverKeyboardView)
+import "result";
+import { useMemo } from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
 let Platform;
 let StyleSheet;
-importDefault(dependencyMap[0]);
-const useMemo = arg1(dependencyMap[0]).useMemo;
-({ Platform, StyleSheet, View: closure_3 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: { wideBannerAnimatedUrl: -24, SPACE_32: null, np: 1, linkedUsers: "Malaysia" } });
+let closure_3;
+const require = arg1;
+({ Platform, StyleSheet, View: closure_3 } = get_ActivityIndicator);
+const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: { top: 0, bottom: 0, left: 0, right: 0 } });
 
 export default function OverKeyboardView(visible) {
   let children = visible.visible;
-  let obj = arg1(dependencyMap[3]);
+  let obj = height(width[3]);
   const size = obj.useWindowDimensions();
-  const height = size.height;
-  const arg1 = height;
-  const width = size.width;
-  const dependencyMap = width;
-  const items = [height, width];
+  height = size.height;
+  width = size.width;
+  let items = [height, width];
   const items1 = [useMemo(() => ({ height, width }), items)];
   obj = { visible: children };
   obj = {
     collapsable: false,
     style: useMemo(() => {
-      const items = [closure_5.absolute, undefined, closure_5.stretch];
+      const items = [outer1_5.absolute, undefined, outer1_5.stretch];
       return items;
     }, items1)
   };
@@ -35,6 +37,15 @@ export default function OverKeyboardView(visible) {
     children = visible.children;
   }
   obj.children = children;
-  obj.children = <closure_3 {...obj} />;
-  return jsx(arg1(dependencyMap[4]).RCTOverKeyboardView, obj);
+  obj.children = <closure_3 collapsable={false} style={useMemo(() => {
+    const items = [outer1_5.absolute, undefined, outer1_5.stretch];
+    return items;
+  }, items1)} />;
+  return jsx(height(width[4]).RCTOverKeyboardView, {
+    collapsable: false,
+    style: useMemo(() => {
+      const items = [outer1_5.absolute, undefined, outer1_5.stretch];
+      return items;
+    }, items1)
+  });
 };

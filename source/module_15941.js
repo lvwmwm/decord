@@ -1,0 +1,18 @@
+// Module ID: 15941
+// Function ID: 123136
+// Dependencies: []
+
+// Module 15941
+globalThis.IntlMessageFormat.__addLocaleData({
+  locale: "vi",
+  pluralRuleFunction(arg0, arg1) {
+    let str = "other";
+    if (arg1) {
+      str = "other";
+      if (1 == arg0) {
+        str = "one";
+      }
+    }
+    return str;
+  }
+});

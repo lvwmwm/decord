@@ -1,43 +1,44 @@
-// Module ID: 7697
-// Function ID: 61397
+// Module ID: 7703
+// Function ID: 61434
 // Name: GUILD_REPORT_RAID_MOBILE_KEY
-// Dependencies: []
+// Dependencies: [482, 1212, 483, 2]
 // Exports: getTimeframes
 
-// Module 7697 (GUILD_REPORT_RAID_MOBILE_KEY)
-const Permissions = require(dependencyMap[0]).Permissions;
-const importAllResult = importAll(dependencyMap[2]);
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidConstants.tsx");
+// Module 7703 (GUILD_REPORT_RAID_MOBILE_KEY)
+import { Permissions } from "sum";
+import importAllResult from "fromHexReverseArray";
+
+const combineResult = require("fromHexReverseArray").combine(Permissions.ADMINISTRATOR, Permissions.MANAGE_GUILD, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS);
+const result = require("fromHexReverseArray").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidConstants.tsx");
 
 export const GUILD_REPORT_RAID_MOBILE_KEY = "guild_report_raid_mobile";
 export const NAGBAR_DISPLAY_MAX_HOURS = 2;
 export const DEFAULT_LOCKDOWN_DURATION = 2;
 export const getTimeframes = () => {
-  let obj = { "Null": "jsx", "Null": "r" };
-  const intl = require(dependencyMap[1]).intl;
-  obj.label = intl.string(require(dependencyMap[1]).t.GA/d4I);
+  let obj = { id: "1", value: 1 };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t["GA/d4I"]);
   const items = [obj, , , , , ];
-  obj = { "Null": "log", "Null": null };
-  const intl2 = require(dependencyMap[1]).intl;
-  obj.label = intl2.string(require(dependencyMap[1]).t.+rHFej);
+  obj = { id: "2", value: 2 };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl2.string(require(1212) /* getSystemLocale */.t["+rHFej"]);
   items[1] = obj;
-  obj = { "Null": null, "Null": null };
-  const intl3 = require(dependencyMap[1]).intl;
-  obj.label = intl3.string(require(dependencyMap[1]).t.5CNt/M);
+  obj = { id: "4", value: 4 };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl3.string(require(1212) /* getSystemLocale */.t["5CNt/M"]);
   items[2] = obj;
-  const obj1 = {};
-  const intl4 = require(dependencyMap[1]).intl;
-  obj1.label = intl4.string(require(dependencyMap[1]).t.oQ4PNE);
+  const obj1 = { id: "6", value: 6 };
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj1.label = intl4.string(require(1212) /* getSystemLocale */.t.oQ4PNE);
   items[3] = obj1;
-  const obj2 = { "Null": "<string:6225920>", "Null": "<string:1107361792>" };
-  const intl5 = require(dependencyMap[1]).intl;
-  obj2.label = intl5.string(require(dependencyMap[1]).t.LOQ0j6);
+  const obj2 = { id: "12", value: 12 };
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj2.label = intl5.string(require(1212) /* getSystemLocale */.t.LOQ0j6);
   items[4] = obj2;
-  const obj3 = {};
-  const intl6 = require(dependencyMap[1]).intl;
-  obj3.label = intl6.string(require(dependencyMap[1]).t.W0+LsV);
+  const obj3 = { id: "24", value: 24 };
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj3.label = intl6.string(require(1212) /* getSystemLocale */.t["W0+LsV"]);
   items[5] = obj3;
   return items;
 };
-export const IncidentAlertModeratorPermissions = importAll(dependencyMap[2]).combine(Permissions.ADMINISTRATOR, Permissions.MANAGE_GUILD, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS);
+export const IncidentAlertModeratorPermissions = combineResult;

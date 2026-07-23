@@ -1,67 +1,67 @@
-// Module ID: 9060
-// Function ID: 71138
+// Module ID: 9067
+// Function ID: 71179
 // Name: useGameMentionsAsPlainText
-// Dependencies: []
+// Dependencies: [31, 4151, 1849, 4567, 6865, 566, 1832, 8601, 1212, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9060 (useGameMentionsAsPlainText)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = arg1(dependencyMap[3]).GAME_MENTION_RAW_RE_GLOBAL;
+// Module 9067 (useGameMentionsAsPlainText)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { GAME_MENTION_RAW_RE_GLOBAL as closure_5 } from "MENTION_SENTINEL";
+
+const require = arg1;
 let closure_6 = [];
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/game_mentions/hooks/useGameMentionsAsPlainText.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/game_mentions/hooks/useGameMentionsAsPlainText.tsx");
 
 export const useGameMentionsAsPlainText = function useGameMentionsAsPlainText(state) {
-  const arg1 = state;
-  const items = [state];
+  const _require = state;
+  let items = [state];
   const memo = React.useMemo(() => {
-    if (null != arg0) {
-      if ("" !== arg0) {
+    if (null != state) {
+      if ("" !== state) {
         const items = [];
-        HermesBuiltin.arraySpread(arg0.matchAll(closure_5), 0);
+        HermesBuiltin.arraySpread(state.matchAll(outer1_5), 0);
         let mapped = items.map((arg0) => arg0[1]);
         if (mapped.length <= 0) {
-          mapped = closure_6;
+          mapped = outer1_6;
         }
         return mapped;
       }
     }
-    return closure_6;
+    return outer1_6;
   }, items);
-  const dependencyMap = memo;
-  const games = arg1(dependencyMap[4]).useGames(memo);
-  const obj = arg1(dependencyMap[4]);
-  const items1 = [closure_3, closure_4];
+  const games = _require(memo[4]).useGames(memo);
+  const obj = _require(memo[4]);
+  const items1 = [_isNativeReflectConstruct, closure_4];
   const items2 = [state, memo];
-  return arg1(dependencyMap[5]).useStateFromStores(items1, () => {
-    if (!obj.isNullOrEmpty(arg0)) {
+  return _require(memo[5]).useStateFromStores(items1, () => {
+    if (!obj.isNullOrEmpty(nsfwAllowed)) {
       if (0 !== memo.length) {
-        const currentUser = currentUser.getCurrentUser();
-        let nsfwAllowed;
+        const currentUser = outer1_4.getCurrentUser();
+        nsfwAllowed = undefined;
         if (null != currentUser) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        const arg0 = nsfwAllowed;
-        return arg0.replace(closure_5, (arg0, arg1) => {
-          const game = game.getGame(arg1);
+        return nsfwAllowed.replace(outer1_5, (arg0, arg1) => {
+          const game = outer2_3.getGame(arg1);
           if (obj.isGameProfileObscured(game, nsfwAllowed)) {
-            const intl2 = nsfwAllowed(closure_1[8]).intl;
-            let stringResult = intl2.string(nsfwAllowed(closure_1[8]).t.11pdXZ);
+            const intl2 = nsfwAllowed(memo[8]).intl;
+            let stringResult = intl2.string(nsfwAllowed(memo[8]).t["11pdXZ"]);
           } else {
             stringResult = undefined;
             if (null != game) {
               stringResult = game.name;
             }
             if (null == stringResult) {
-              const intl = nsfwAllowed(closure_1[8]).intl;
-              stringResult = intl.string(nsfwAllowed(closure_1[8]).t.11pdXZ);
+              const intl = nsfwAllowed(memo[8]).intl;
+              stringResult = intl.string(nsfwAllowed(memo[8]).t["11pdXZ"]);
             }
           }
           return stringResult;
         });
       }
     }
-    return arg0;
+    return nsfwAllowed;
   }, items2);
 };

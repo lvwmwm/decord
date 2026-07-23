@@ -1,17 +1,19 @@
-// Module ID: 11903
-// Function ID: 92136
+// Module ID: 11915
+// Function ID: 92189
 // Name: useIsUserProfileObfuscated
-// Dependencies: []
+// Dependencies: [6856, 566, 2]
 // Exports: default
 
-// Module 11903 (useIsUserProfileObfuscated)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/user_profile/hooks/useIsUserProfileObfuscated.tsx");
+// Module 11915 (useIsUserProfileObfuscated)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useIsUserProfileObfuscated.tsx");
 
 export default function useIsUserProfileObfuscated(flags) {
-  const arg1 = flags;
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[1]).useStateFromStores(items, () => userProfile.getUserProfile(arg0.id));
+  const _require = flags;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getUserProfile(id.id));
   let bio;
   if (null != stateFromStores) {
     bio = stateFromStores.bio;

@@ -1,16 +1,15 @@
-// Module ID: 6829
-// Function ID: 53952
+// Module ID: 6834
+// Function ID: 53984
 // Name: mapConversationModeration
-// Dependencies: []
+// Dependencies: [22, 2]
 // Exports: mapConversation
 
-// Module 6829 (mapConversationModeration)
+// Module 6834 (mapConversationModeration)
 function mapConversationModeration(moderation) {
   const prop = moderation.flagged_message_details;
   return { status: moderation.status, statusReason: moderation.status_reason, messageViolationRate: moderation.message_violation_rate, flaggedMessageCount: moderation.flagged_message_count, totalMessageCount: moderation.total_message_count, flaggedMessageIds: moderation.flagged_message_ids, flaggedMessageDetails: prop.map((messageId) => ({ messageId: messageId.message_id, category: messageId.category, severity: messageId.severity, confidence: messageId.confidence, reason: messageId.reason })), flaggedSummaryDetails: moderation.flagged_summary_details, flaggedTitle: moderation.flagged_title, flaggedSummary: moderation.flagged_summary, flaggedKeyPoints: moderation.flagged_key_points, failedMessageIds: moderation.failed_message_ids };
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/conversations/ConversationsUtils.tsx");
+const result = require("set").fileFinishedImporting("modules/conversations/ConversationsUtils.tsx");
 
 export const mapConversation = function mapConversation(summary_map) {
   let brief_summary;
@@ -23,7 +22,7 @@ export const mapConversation = function mapConversation(summary_map) {
   }
   let tmp2 = null;
   if (null != found) {
-    tmp2 = function parseTopicExtractionSummary(content_json) {
+    tmp2 = (function parseTopicExtractionSummary(content_json) {
       const parsed = JSON.parse(content_json);
       let filter = parsed;
       let title;
@@ -38,7 +37,7 @@ export const mapConversation = function mapConversation(summary_map) {
         }
         tmp4 = null;
         if ("string" === typeof brief_summary) {
-          const obj = { title: callback(closure_1[0]).upperFirst(filter.title), brief_summary: filter.brief_summary };
+          const obj = { title: outer1_0(outer1_1[0]).upperFirst(filter.title), brief_summary: filter.brief_summary };
           const _Array = Array;
           if (Array.isArray(filter.key_points)) {
             const key_points = filter.key_points;
@@ -55,11 +54,11 @@ export const mapConversation = function mapConversation(summary_map) {
             found = [];
           }
           obj.key_points = found;
-          const obj2 = callback(closure_1[0]);
+          const obj2 = outer1_0(outer1_1[0]);
         }
       }
       return tmp4;
-    }(found.content_json);
+    })(found.content_json);
   }
   let title;
   if (null != tmp2) {

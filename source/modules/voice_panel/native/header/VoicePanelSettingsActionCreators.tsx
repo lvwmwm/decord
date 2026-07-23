@@ -1,19 +1,18 @@
-// Module ID: 15674
-// Function ID: 119741
+// Module ID: 15791
+// Function ID: 121914
 // Name: VOICE_PANEL_SETTINGS_ACTION_SHEET_KEY
-// Dependencies: []
+// Dependencies: [4098, 15792, 1934, 2]
 // Exports: closeVoicePanelSettingsActionSheet, openVoicePanelSettingsActionSheet
 
-// Module 15674 (VOICE_PANEL_SETTINGS_ACTION_SHEET_KEY)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelSettingsActionCreators.tsx");
+// Module 15791 (VOICE_PANEL_SETTINGS_ACTION_SHEET_KEY)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelSettingsActionCreators.tsx");
 
 export const VOICE_PANEL_SETTINGS_ACTION_SHEET_KEY = "VoicePanelSettingsActionSheet";
 export const closeVoicePanelSettingsActionSheet = function closeVoicePanelSettingsActionSheet() {
-  importDefault(dependencyMap[0]).hideActionSheet("VoicePanelSettingsActionSheet");
+  importDefault(4098).hideActionSheet("VoicePanelSettingsActionSheet");
 };
 export const openVoicePanelSettingsActionSheet = function openVoicePanelSettingsActionSheet(guildId, channelId) {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(4098);
   obj = { guildId, channelId };
-  obj.openLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), "VoicePanelSettingsActionSheet", obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(15792, dependencyMap.paths), "VoicePanelSettingsActionSheet", obj);
 };

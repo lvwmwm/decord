@@ -1,52 +1,54 @@
-// Module ID: 12639
-// Function ID: 97266
+// Module ID: 12753
+// Function ID: 99422
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4042, 2]
 
-// Module 12639 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 12753 (_createForOfIteratorHelperLoose)
+import createExperiment from "createExperiment";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -59,14 +61,14 @@ function _createForOfIteratorHelperLoose(@@iterator) {
     if (tmp) {
       closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,20 +85,26 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-const _module = require(dependencyMap[0]);
-let obj = { shapes: null, flex: null, sk: null, defaultConfig: {} };
-obj = { displayNameStylesEnabled: "isArray", submitButtonEnabled: "useActionState", config: { textInputRef: "URL", recomputeLayouts: true, addWindow: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" } };
-const items = [obj, { config: {} }, { config: {} }, { config: { textInputRef: false, recomputeLayouts: false, addWindow: false } }, { config: { textInputRef: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", recomputeLayouts: null, addWindow: "27ab9102761827eca8b7549277a16631" } }, ];
-const obj1 = { displayNameStylesEnabled: "comp_1", submitButtonEnabled: "+MAIN", config: { textInputRef: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", recomputeLayouts: null, addWindow: "0c6f358ef2734a5db0ebdc4f2c7ef135" } };
-items[5] = obj1;
+let obj = { kind: "user", id: "2024-06_rtc_pacer__simulcast", label: "RTC Pacer & Golive Simulcast", defaultConfig: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/", simulcastEnabled: false } };
+obj = { id: 1, label: "Golive Simulcast without prober 720p@500k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/", simulcastEnabled: true } };
+const items = [obj, , , , , ];
+const obj1 = { id: 2, label: "Golive Simulcast 720p@500k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer,worker-pacer-probe", simulcastEnabled: true } };
+items[1] = obj1;
+const obj2 = { id: 3, label: "Golive with pacing", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer", simulcastEnabled: false } };
+items[2] = obj2;
+const obj3 = { id: 4, label: "Golive with pacing and probing", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer,worker-pacer-probe", simulcastEnabled: false } };
+items[3] = obj3;
+const obj4 = { id: 5, label: "Golive Simulcast 720p@750k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-750k", simulcastEnabled: true } };
+items[4] = obj4;
+const obj5 = { id: 6, label: "Golive Simulcast 720p@1000k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-1000k", simulcastEnabled: true } };
+items[5] = obj5;
 obj.treatments = items;
-let closure_0 = _module.createExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/media_engine/BandwidthEstimationExperiment.tsx");
+let closure_0 = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/media_engine/BandwidthEstimationExperiment.tsx");
 
 export default {
   getConfig(autoTrackExposure, arr) {
-    const currentConfig = currentConfig.getCurrentConfig({ location: "e1c55b_1" }, { autoTrackExposure });
+    currentConfig = currentConfig.getCurrentConfig({ location: "e1c55b_1" }, { autoTrackExposure });
     if (!this.supportsBandwidthEstimationExperimentFullname(currentConfig.fullname, arr)) {
       currentConfig.enabled = false;
     }

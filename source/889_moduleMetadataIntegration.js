@@ -1,17 +1,19 @@
 // Module ID: 889
-// Function ID: 9816
+// Function ID: 9817
 // Name: moduleMetadataIntegration
-// Dependencies: []
+// Dependencies: [863, 840, 890]
 
 // Module 889 (moduleMetadataIntegration)
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const _module = require(dependencyMap[0]);
+import setupIntegration from "setupIntegration";
 
-export const moduleMetadataIntegration = _module.defineIntegration(() => ({
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const moduleMetadataIntegration = setupIntegration.defineIntegration(() => ({
   name: "ModuleMetadata",
   setup(on) {
+    let closure_0 = on;
     on.on("beforeEnvelope", (arg0) => {
-      arg0(closure_1[1]).forEachEnvelopeItem(arg0, (arg0, arg1) => {
+      outer2_0(outer2_1[1]).forEachEnvelopeItem(arg0, (arg0, arg1) => {
         if ("event" === arg1) {
           const _Array = Array;
           let tmp2;
@@ -19,17 +21,17 @@ export const moduleMetadataIntegration = _module.defineIntegration(() => ({
             tmp2 = arg0[1];
           }
           if (tmp2) {
-            const result = callback(closure_1[2]).stripMetadataFromStackFrames(tmp2);
+            const result = outer3_0(outer3_1[2]).stripMetadataFromStackFrames(tmp2);
             arg0[1] = tmp2;
-            const obj = callback(closure_1[2]);
+            const obj = outer3_0(outer3_1[2]);
           }
         }
       });
     });
     on.on("applyFrameMetadata", (type) => {
       if (!type.type) {
-        const result = type(closure_1[2]).addMetadataToStackFrames(type.getOptions().stackParser, type);
-        const obj = type(closure_1[2]);
+        const result = outer2_0(outer2_1[2]).addMetadataToStackFrames(options.getOptions().stackParser, type);
+        const obj = outer2_0(outer2_1[2]);
       }
     });
   }

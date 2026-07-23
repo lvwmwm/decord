@@ -1,31 +1,32 @@
-// Module ID: 4110
-// Function ID: 34013
+// Module ID: 4112
+// Function ID: 34022
 // Name: currentUpdateConfig
-// Dependencies: [3154116625, 1895825412]
+// Dependencies: [3712, 477, 1443, 1554, 2]
 
-// Module 4110 (currentUpdateConfig)
+// Module 4112 (currentUpdateConfig)
+import importDefaultResult from "t";
 import durationResult from "module_6";
 
-const importDefaultResult = importDefault(dependencyMap[0]);
-const tmp3 = function currentUpdateConfig() {
+const require = arg1;
+const tmp3 = (function currentUpdateConfig() {
   let tmp = null;
   if (undefined !== process.env.INTERNAL_UPDATE_URL) {
     const _process2 = process;
     tmp = null;
     if ("" !== process.env.INTERNAL_UPDATE_URL) {
-      let obj = arg1(dependencyMap[1]);
+      let obj = require(477) /* set */;
       if (obj.isIOS()) {
         const _process = process;
-        let toURLSafeResult = importDefault(dependencyMap[2]).toURLSafe(process.env.INTERNAL_UPDATE_URL);
-        const obj3 = importDefault(dependencyMap[2]);
+        let toURLSafeResult = importDefault(1443).toURLSafe(process.env.INTERNAL_UPDATE_URL);
+        const obj3 = importDefault(1443);
       } else {
         toURLSafeResult = null;
-        const obj2 = arg1(dependencyMap[1]);
+        const obj2 = require(477) /* set */;
       }
       tmp = toURLSafeResult;
     }
   }
-  const constants = arg1(dependencyMap[3]).getConstants();
+  const constants = require(1554) /* getConstants */.getConstants();
   let Build;
   if (null != constants) {
     Build = constants.Build;
@@ -44,8 +45,8 @@ const tmp3 = function currentUpdateConfig() {
       }
     }
   }
-  const obj4 = arg1(dependencyMap[3]);
-  const constants1 = arg1(dependencyMap[3]).getConstants();
+  const obj4 = require(1554) /* getConstants */;
+  const constants1 = require(1554) /* getConstants */.getConstants();
   let Version;
   if (null != constants1) {
     Version = constants1.Version;
@@ -66,8 +67,8 @@ const tmp3 = function currentUpdateConfig() {
     }
   }
   return tmp16;
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateConstants.tsx");
+})();
+const result = require("isOriginalContentTypeDifferent").fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateConstants.tsx");
 
 export const UPDATE_CHECK_INTERVAL = durationResult;
 export const UPDATE_CONFIG = tmp3;

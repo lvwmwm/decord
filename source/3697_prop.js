@@ -1,5 +1,5 @@
 // Module ID: 3697
-// Function ID: 28069
+// Function ID: 28072
 // Name: prop
 // Dependencies: []
 
@@ -10,14 +10,14 @@ if (Intl.ListFormat) {
     const _Intl2 = Intl;
     let obj = {};
     obj = {};
-    obj = { long: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, narrow: {}, short: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 } };
+    obj = { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } };
     obj.conjunction = obj;
-    const obj1 = { long: {}, narrow: {}, short: {} };
+    const obj1 = { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, short: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" } };
     obj.disjunction = obj1;
-    const obj2 = { long: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, narrow: {}, short: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 } };
+    const obj2 = { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
     obj.unit = obj2;
     obj.data = obj;
-    obj.locale = "pt";
+    obj.locale = "nb";
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +26,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, narrow: {}, short: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 } }, disjunction: { long: {}, narrow: {}, short: {} }, unit: { long: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 }, narrow: {}, short: { accessibilityHint: 471.5, legacyCompat_selected: 495.5, legacyCompat_onPress: 471.5, eventTarget: 0 } } }, locale: "pt" });
+prop.push({ data: { conjunction: { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, short: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "nb" });

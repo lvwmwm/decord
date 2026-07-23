@@ -1,31 +1,39 @@
-// Module ID: 15313
-// Function ID: 116455
+// Module ID: 15430
+// Function ID: 118629
 // Name: Loading
-// Dependencies: []
+// Dependencies: [31, 27, 1907, 1838, 3948, 653, 33, 4130, 689, 5586, 9147, 566, 5450, 3950, 9152, 1198, 3981, 1557, 5587, 15431, 2]
 
-// Module 15313 (Loading)
+// Module 15430 (Loading)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import { Routes } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import makeAuthenticated from "makeAuthenticated";
+
+const require = arg1;
 function Loading() {
-  return <View style={callback().flexLoading}>{jsx(arg1(dependencyMap[9]).ActivityIndicator, {})}</View>;
+  return <View style={_createForOfIteratorHelperLoose().flexLoading}>{jsx(require(5586) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
 }
 function MemberVerificationRouteView(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(dependencyMap[10]), {});
+  return jsx(importDefault(9147), {});
 }
 function ExistingJoinRequestHandler(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const onClose = guildId.onClose;
-  const importDefault = onClose;
   const items = [closure_7];
-  const stateFromStores = arg1(dependencyMap[11]).useStateFromStores(items, () => guild.getGuild(guildId));
-  const importAll = stateFromStores;
-  const obj = arg1(dependencyMap[11]);
-  const items1 = [closure_6];
+  const stateFromStores = guildId(stateFromStores1[11]).useStateFromStores(items, () => outer1_7.getGuild(guildId));
+  let obj = guildId(stateFromStores1[11]);
+  const items1 = [_isNativeReflectConstruct];
   const items2 = [stateFromStores];
-  const stateFromStores1 = arg1(dependencyMap[11]).useStateFromStores(items1, () => {
+  stateFromStores1 = guildId(stateFromStores1[11]).useStateFromStores(items1, () => {
     let tmp = null;
     if (null != stateFromStores) {
-      const defaultChannel = defaultChannel.getDefaultChannel(stateFromStores.id);
+      const defaultChannel = outer1_6.getDefaultChannel(stateFromStores.id);
       let id;
       if (null != defaultChannel) {
         id = defaultChannel.id;
@@ -34,11 +42,10 @@ function ExistingJoinRequestHandler(guildId) {
     }
     return tmp;
   }, items2);
-  const dependencyMap = stateFromStores1;
-  const obj2 = arg1(dependencyMap[11]);
+  const obj2 = guildId(stateFromStores1[11]);
   const items3 = [closure_8];
-  const stateFromStores2 = arg1(dependencyMap[11]).useStateFromStores(items3, () => request.getRequest(guildId));
-  const tmp4 = importDefault(dependencyMap[12])(stateFromStores2);
+  const stateFromStores2 = guildId(stateFromStores1[11]).useStateFromStores(items3, () => outer1_8.getRequest(guildId));
+  const tmp4 = onClose(stateFromStores1[12])(stateFromStores2);
   const React = tmp4;
   const items4 = [guildId, tmp4, onClose];
   const effect = React.useEffect(() => {
@@ -62,7 +69,7 @@ function ExistingJoinRequestHandler(guildId) {
     if (null != stateFromStores) {
       if (null != guildId) {
         if (null != stateFromStores1) {
-          stateFromStores(stateFromStores1[15]).transitionTo(closure_9.CHANNEL(guildId, stateFromStores1));
+          stateFromStores(stateFromStores1[15]).transitionTo(outer1_9.CHANNEL(guildId, stateFromStores1));
           const obj = stateFromStores(stateFromStores1[15]);
         }
       }
@@ -75,30 +82,21 @@ function ExistingJoinRequestHandler(guildId) {
   if (null != tmp4) {
     applicationStatus = tmp4.applicationStatus;
   }
-  if (arg1(dependencyMap[13]).GuildJoinRequestApplicationStatuses.SUBMITTED !== applicationStatus) {
-    if (arg1(dependencyMap[13]).GuildJoinRequestApplicationStatuses.APPROVED !== applicationStatus) {
-      if (arg1(dependencyMap[13]).GuildJoinRequestApplicationStatuses.REJECTED !== applicationStatus) {
+  if (guildId(stateFromStores1[13]).GuildJoinRequestApplicationStatuses.SUBMITTED !== applicationStatus) {
+    if (guildId(stateFromStores1[13]).GuildJoinRequestApplicationStatuses.APPROVED !== applicationStatus) {
+      if (guildId(stateFromStores1[13]).GuildJoinRequestApplicationStatuses.REJECTED !== applicationStatus) {
         return guildId.children;
       }
     }
   }
   return <Loading />;
 }
-let closure_4 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const Routes = arg1(dependencyMap[5]).Routes;
-const jsx = arg1(dependencyMap[6]).jsx;
-let obj = arg1(dependencyMap[7]);
-obj = { flex: { flex: 1 } };
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOW };
-obj.flexLoading = obj;
-let closure_11 = obj.createStyles(obj);
-const authenticated = arg1(dependencyMap[19]).makeAuthenticated(function MemberVerificationRouteContainer(navigation) {
+_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
+_createForOfIteratorHelperLoose = { flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.flexLoading = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerificationRouteContainer(navigation) {
   navigation = navigation.navigation;
-  const arg1 = navigation;
   const guildId = navigation.route.params.guildId;
   const items = [navigation];
   const callback = React.useCallback(() => {
@@ -119,13 +117,18 @@ const authenticated = arg1(dependencyMap[19]).makeAuthenticated(function MemberV
           while (null != routes[diff]) {
             if ("member-verification" !== tmp9.name) {
               let tmp11 = navigation;
-              let tmp12 = closure_3;
+              let tmp12 = outer1_3;
               let num3 = 16;
-              let obj3 = navigation(closure_3[16]);
+              let obj3 = navigation(outer1_3[16]);
               let popScreensResult = obj3.popScreens(index - diff);
-              // break
+              break;
             } else {
               diff = diff - 1;
+              if (diff >= 0) {
+                continue;
+              } else {
+                break;
+              }
               break;
             }
             break;
@@ -133,12 +136,12 @@ const authenticated = arg1(dependencyMap[19]).makeAuthenticated(function MemberV
         }
       }
     } else {
-      let obj = navigation(closure_3[16]);
+      let obj = navigation(outer1_3[16]);
       obj = { screen: "messages" };
       obj.navigateToRootTab(obj);
     }
   }, items);
-  importDefault(dependencyMap[17])();
+  importDefault(1557)();
   if (null == guildId) {
     let tmp8 = <Loading />;
   } else {
@@ -149,14 +152,13 @@ const authenticated = arg1(dependencyMap[19]).makeAuthenticated(function MemberV
     items1[1] = obj;
     obj.style = items1;
     const obj1 = { guildId, onClose: callback };
-    obj.children = <MemberVerificationRouteView {...obj1} />;
-    obj.children = jsx(importDefault(dependencyMap[18]), obj);
-    tmp8 = <ExistingJoinRequestHandler {...obj} />;
-    const tmp14 = importDefault(dependencyMap[18]);
+    obj.children = <MemberVerificationRouteView guildId={guildId} onClose={callback} />;
+    obj.children = jsx(importDefault(5587), { marginLeft: tmp4, marginRight: tmp5 });
+    tmp8 = <ExistingJoinRequestHandler marginLeft={tmp4} marginRight={tmp5} />;
+    const tmp14 = importDefault(5587);
   }
   return tmp8;
 });
-const obj4 = arg1(dependencyMap[19]);
-const result = arg1(dependencyMap[20]).fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationScreen.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationScreen.tsx");
 
 export default authenticated;

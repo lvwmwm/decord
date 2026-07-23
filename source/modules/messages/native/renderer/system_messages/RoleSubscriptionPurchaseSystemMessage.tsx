@@ -1,14 +1,16 @@
-// Module ID: 7703
-// Function ID: 61404
+// Module ID: 7709
+// Function ID: 61441
 // Name: createRoleSubscriptionPurchaseSystemMessage
-// Dependencies: []
+// Dependencies: [1348, 1838, 653, 4360, 7649, 7684, 7685, 7679, 1395, 1392, 7651, 1212, 7652, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 7703 (createRoleSubscriptionPurchaseSystemMessage)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const SystemChannelFlags = arg1(dependencyMap[2]).SystemChannelFlags;
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/messages/native/renderer/system_messages/RoleSubscriptionPurchaseSystemMessage.tsx");
+// Module 7709 (createRoleSubscriptionPurchaseSystemMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { SystemChannelFlags } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/messages/native/renderer/system_messages/RoleSubscriptionPurchaseSystemMessage.tsx");
 
 export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSubscriptionPurchaseSystemMessage(message) {
   message = message.message;
@@ -17,15 +19,15 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
     return null;
   } else {
     const author = message.author;
-    const channel = channel.getChannel(message.getChannelId());
+    channel = channel.getChannel(message.getChannelId());
     let guildId;
     if (null != channel) {
       guildId = channel.getGuildId();
     }
-    const guild = guild.getGuild(guildId);
-    let obj = arg1(dependencyMap[3]);
+    guild = guild.getGuild(guildId);
+    let obj = require(4360) /* useNullableMessageAuthor */;
     const guildMemberAvatar = obj.getMessageAuthor(message).guildMemberAvatar;
-    let obj1 = arg1(dependencyMap[4]);
+    let obj1 = require(7649) /* getMessageAuthorWithProcessedColor */;
     const messageAuthorWithProcessedColor = obj1.getMessageAuthorWithProcessedColor(message);
     if (null != guildId) {
       if (null != channel) {
@@ -33,20 +35,20 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
         if (tmp9) {
           tmp9 = !(guild.systemChannelFlags & SystemChannelFlags.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
         }
-        let obj2 = arg1(dependencyMap[5]);
+        let obj2 = require(7684) /* computeIsStickerReplyEnabled */;
         if (obj2.computeIsStickerReplyEnabled(guildId, channel, message, tmp9)) {
-          let obj3 = arg1(dependencyMap[6]);
-          const obj5 = arg1(dependencyMap[7]);
-          const transformStickerResult = obj3.transformSticker(arg1(dependencyMap[7]).pickRoleSubscriptionPurchaseSticker(message.id));
+          let obj3 = require(7685) /* transform */;
+          const obj5 = require(7679) /* identityHook */;
+          const transformStickerResult = obj3.transformSticker(require(7679) /* identityHook */.pickRoleSubscriptionPurchaseSticker(message.id));
         }
       }
     }
-    arg1(dependencyMap[8]);
+    require(1395) /* ensureAvatarSource */;
     if (null != guildMemberAvatar) {
       if (null != guildId) {
         obj = { userId: author.id, avatar: guildMemberAvatar, guildId };
-        let guildMemberAvatarSource = arg1(dependencyMap[9]).getGuildMemberAvatarSource(obj, author);
-        const obj6 = arg1(dependencyMap[9]);
+        let guildMemberAvatarSource = require(1392) /* getAvatarURL */.getGuildMemberAvatarSource(obj, author);
+        const obj6 = require(1392) /* getAvatarURL */;
       }
       obj = { action: "bindOpenRoleSubscriptionOverview", guildId, messageId: message.id };
       let id;
@@ -69,19 +71,19 @@ export const createRoleSubscriptionPurchaseSystemMessage = function createRoleSu
       }
       obj2.guildId = tmp32;
       obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle: tmp };
-      obj2.usernameOnClickHandler = importDefault(dependencyMap[10])(obj3);
+      obj2.usernameOnClickHandler = importDefault(7651)(obj3);
       obj2.roleSubscriptionOnClickHandler = obj;
       obj2.roleSubscriptionData = roleSubscriptionData;
-      obj1.content = arg1(dependencyMap[7]).getRoleSubscriptionPurchaseSystemMessageContentMobile(obj2);
+      obj1.content = require(7679) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageContentMobile(obj2);
       obj1.totalMonthsSubscribed = roleSubscriptionData.total_months_subscribed;
       obj1.username = messageAuthorWithProcessedColor.nick;
       obj1.avatarURL = tmp23Result.uri;
       obj1.sticker = transformStickerResult;
-      const obj10 = arg1(dependencyMap[7]);
-      obj1.stickerLabel = arg1(dependencyMap[7]).getRoleSubscriptionPurchaseStickerCTA(message.id, false);
-      const intl = arg1(dependencyMap[11]).intl;
-      obj1.welcomeLabel = intl.string(arg1(dependencyMap[11]).t.piPHvY);
-      const merged = Object.assign(importDefault(dependencyMap[12])(message));
+      const obj10 = require(7679) /* identityHook */;
+      obj1.stickerLabel = require(7679) /* identityHook */.getRoleSubscriptionPurchaseStickerCTA(message.id, false);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj1.welcomeLabel = intl.string(require(1212) /* getSystemLocale */.t.piPHvY);
+      const merged = Object.assign(importDefault(7652)(message));
       return obj1;
     }
     guildMemberAvatarSource = author.getAvatarSource(undefined);

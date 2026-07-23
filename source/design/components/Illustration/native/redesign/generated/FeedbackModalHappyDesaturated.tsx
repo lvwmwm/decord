@@ -1,32 +1,34 @@
-// Module ID: 9509
-// Function ID: 74045
+// Module ID: 9516
+// Function ID: 74086
 // Name: getFeedbackModalHappyDesaturatedSource
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 9517, 9518, 9519, 3976, 2]
 // Exports: FeedbackModalHappyDesaturated
 
-// Module 9509 (getFeedbackModalHappyDesaturatedSource)
+// Module 9516 (getFeedbackModalHappyDesaturatedSource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getFeedbackModalHappyDesaturatedSource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useFeedbackModalHappyDesaturatedSource() {
-  return getFeedbackModalHappyDesaturatedSource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getFeedbackModalHappyDesaturatedSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/FeedbackModalHappyDesaturated.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/FeedbackModalHappyDesaturated.tsx");
 
 export { getFeedbackModalHappyDesaturatedSource };
 export { useFeedbackModalHappyDesaturatedSource };
@@ -34,5 +36,5 @@ export const FeedbackModalHappyDesaturated = function FeedbackModalHappyDesatura
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useFeedbackModalHappyDesaturatedSource();
-  return <Image {...obj} />;
+  return <Image />;
 };

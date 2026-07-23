@@ -1,7 +1,7 @@
 // Module ID: 1367
-// Function ID: 16442
+// Function ID: 16443
 // Name: uncurryThis
-// Dependencies: []
+// Dependencies: [1368, 1370, 1373, 1374]
 // Exports: isAnyArrayBuffer, isArrayBufferView, isAsyncFunction, isBigInt64Array, isBigUint64Array, isBoxedPrimitive, isFloat32Array, isFloat64Array, isGeneratorObject, isInt16Array, isInt32Array, isInt8Array, isMap, isMapIterator, isPromise, isSet, isSetIterator, isUint16Array, isUint32Array, isUint8Array, isUint8ClampedArray, isWeakMap, isWeakSet, isWebAssemblyCompiledModule
 
 // Module 1367 (uncurryThis)
@@ -84,49 +84,50 @@ function isBooleanObject(arg0) {
   return checkBoxedPrimitive(arg0, closure_8);
 }
 function isBigIntObject(arg0) {
-  if (tmp) {
-    const tmp = checkBoxedPrimitive(arg0, closure_9);
+  let tmp = closure_3;
+  if (closure_3) {
+    tmp = checkBoxedPrimitive(arg0, closure_9);
   }
   return tmp;
 }
 function isSymbolObject(arg0) {
-  let tmp = tmp2;
-  if (tmp2) {
+  let tmp = closure_4;
+  if (closure_4) {
     tmp = checkBoxedPrimitive(arg0, closure_10);
   }
   return tmp;
 }
-const tmp = "undefined" !== typeof BigInt;
-const tmp2 = "undefined" !== typeof Symbol;
+let closure_3 = tmp;
+let closure_4 = tmp2;
 let closure_5 = uncurryThis(Object.prototype.toString);
 let closure_6 = uncurryThis(Number.prototype.valueOf);
 let closure_7 = uncurryThis(String.prototype.valueOf);
 let closure_8 = uncurryThis(Boolean.prototype.valueOf);
-if (tmp) {
+if ("undefined" !== typeof BigInt) {
   const _BigInt = BigInt;
   let closure_9 = uncurryThis(BigInt.prototype.valueOf);
 }
-if (tmp2) {
+if ("undefined" !== typeof Symbol) {
   const _Symbol = Symbol;
   let closure_10 = uncurryThis(Symbol.prototype.valueOf);
 }
 let isMapToStringResult = "undefined" !== typeof Map;
 if (isMapToStringResult) {
-  const _Map = Map;
+  let _Map = Map;
   const map = new Map();
   isMapToStringResult = isMapToString(map);
 }
 isMapToString.working = isMapToStringResult;
 let isSetToStringResult = "undefined" !== typeof Set;
 if (isSetToStringResult) {
-  const _Set = Set;
+  let _Set = Set;
   const set = new Set();
   isSetToStringResult = isSetToString(set);
 }
 isSetToString.working = isSetToStringResult;
 let isWeakMapToStringResult = "undefined" !== typeof WeakMap;
 if (isWeakMapToStringResult) {
-  const _WeakMap = WeakMap;
+  let _WeakMap = WeakMap;
   const weakMap = new WeakMap();
   isWeakMapToStringResult = isWeakMapToString(weakMap);
 }
@@ -140,19 +141,19 @@ if (isWeakSetToStringResult) {
 isWeakSetToString.working = isWeakSetToStringResult;
 let result = "undefined" !== typeof ArrayBuffer;
 if (result) {
-  const _ArrayBuffer = ArrayBuffer;
+  let _ArrayBuffer = ArrayBuffer;
   let arrayBuffer = new ArrayBuffer();
   result = isArrayBufferToString(arrayBuffer);
 }
 isArrayBufferToString.working = result;
 let isDataViewToStringResult = "undefined" !== typeof ArrayBuffer;
 if (isDataViewToStringResult) {
-  const _DataView = DataView;
+  let _DataView = DataView;
   isDataViewToStringResult = "undefined" !== typeof DataView;
 }
 if (isDataViewToStringResult) {
   const _DataView2 = DataView;
-  const _ArrayBuffer2 = ArrayBuffer;
+  let _ArrayBuffer2 = ArrayBuffer;
   arrayBuffer = new ArrayBuffer(1);
   const dataView = new DataView(arrayBuffer, 0, 1);
   isDataViewToStringResult = isDataViewToString(dataView);
@@ -162,21 +163,21 @@ let _SharedArrayBuffer;
 if ("undefined" !== typeof SharedArrayBuffer) {
   _SharedArrayBuffer = SharedArrayBuffer;
 }
-const items = [];
+const items = ["isProxy", "isExternal", "isModuleNamespaceObject"];
 const item = items.forEach((arg0) => {
-  const require = arg0;
+  let closure_0 = arg0;
   Object.defineProperty(exports, arg0, {
     enumerable: false,
     value() {
-      const error = new Error(arg0 + " is not supported in userland");
+      const error = new Error(closure_0 + " is not supported in userland");
       throw error;
     }
   });
 });
 
-export const isArgumentsObject = require(dependencyMap[0]);
-export const isGeneratorFunction = require(dependencyMap[1]);
-export const isTypedArray = require(dependencyMap[2]);
+export const isArgumentsObject = require("isArguments");
+export const isGeneratorFunction = require("isGeneratorFunction");
+export const isTypedArray = require("isTypedArray");
 export const isPromise = function isPromise(self) {
   let tmp = "undefined" !== typeof Promise;
   if (tmp) {
@@ -206,43 +207,43 @@ export const isArrayBufferView = function isArrayBufferView(dataView) {
     }
     return isViewResult;
   }
-  isViewResult = require(dependencyMap[2])(dataView);
+  isViewResult = require(1373) /* isTypedArray */(dataView);
   if (!isViewResult) {
     isViewResult = isDataView(dataView);
   }
 };
 export const isUint8Array = function isUint8Array(arg0) {
-  return "Uint8Array" === require(dependencyMap[3])(arg0);
+  return "Uint8Array" === require(1374)(arg0);
 };
 export const isUint8ClampedArray = function isUint8ClampedArray(arg0) {
-  return "Uint8ClampedArray" === require(dependencyMap[3])(arg0);
+  return "Uint8ClampedArray" === require(1374)(arg0);
 };
 export const isUint16Array = function isUint16Array(arg0) {
-  return "Uint16Array" === require(dependencyMap[3])(arg0);
+  return "Uint16Array" === require(1374)(arg0);
 };
 export const isUint32Array = function isUint32Array(arg0) {
-  return "Uint32Array" === require(dependencyMap[3])(arg0);
+  return "Uint32Array" === require(1374)(arg0);
 };
 export const isInt8Array = function isInt8Array(arg0) {
-  return "Int8Array" === require(dependencyMap[3])(arg0);
+  return "Int8Array" === require(1374)(arg0);
 };
 export const isInt16Array = function isInt16Array(arg0) {
-  return "Int16Array" === require(dependencyMap[3])(arg0);
+  return "Int16Array" === require(1374)(arg0);
 };
 export const isInt32Array = function isInt32Array(arg0) {
-  return "Int32Array" === require(dependencyMap[3])(arg0);
+  return "Int32Array" === require(1374)(arg0);
 };
 export const isFloat32Array = function isFloat32Array(arg0) {
-  return "Float32Array" === require(dependencyMap[3])(arg0);
+  return "Float32Array" === require(1374)(arg0);
 };
 export const isFloat64Array = function isFloat64Array(arg0) {
-  return "Float64Array" === require(dependencyMap[3])(arg0);
+  return "Float64Array" === require(1374)(arg0);
 };
 export const isBigInt64Array = function isBigInt64Array(arg0) {
-  return "BigInt64Array" === require(dependencyMap[3])(arg0);
+  return "BigInt64Array" === require(1374)(arg0);
 };
 export const isBigUint64Array = function isBigUint64Array(arg0) {
-  return "BigUint64Array" === require(dependencyMap[3])(arg0);
+  return "BigUint64Array" === require(1374)(arg0);
 };
 export const isMap = function isMap(map) {
   if ("undefined" === typeof Map) {

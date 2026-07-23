@@ -1,9 +1,11 @@
 // Module ID: 1019
-// Function ID: 11063
+// Function ID: 11064
 // Name: getNavigationEntry
-// Dependencies: []
+// Dependencies: [1015]
 
 // Module 1019 (getNavigationEntry)
+const require = arg1;
+const dependencyMap = arg6;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.getNavigationEntry = function getNavigationEntry(arg0) {
   const tmp = arguments.length > 0 && undefined !== arguments[0];
@@ -11,7 +13,7 @@ arg5.getNavigationEntry = function getNavigationEntry(arg0) {
   if (tmp) {
     first = arguments[0];
   }
-  const _performance = arg1(arg6[0]).WINDOW.performance;
+  const _performance = require(1015) /* WINDOW */.WINDOW.performance;
   let first1;
   if (null != _performance) {
     if (null != _performance.getEntriesByType) {

@@ -1,40 +1,45 @@
-// Module ID: 10974
-// Function ID: 85445
+// Module ID: 10984
+// Function ID: 85495
 // Name: openDisableCommunication
-// Dependencies: []
+// Dependencies: [31, 1849, 33, 4337, 10985, 1934, 4471, 10988, 2]
 // Exports: openDisableCommunication, openEnableCommunication
 
-// Module 10974 (openDisableCommunication)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/guild_communication_disabled/GuildDisableCommunicationActionCreators.native.tsx");
+// Module 10984 (openDisableCommunication)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/guild_communication_disabled/GuildDisableCommunicationActionCreators.native.tsx");
 
 export const openDisableCommunication = function openDisableCommunication(userId) {
   let cancelButtonCallback;
   let guildId;
   ({ guildId, cancelButtonCallback } = userId);
-  const user = user.getUser(userId.userId);
+  user = user.getUser(userId.userId);
   if (null != user) {
-    let obj = importDefault(dependencyMap[3]);
+    let obj = importDefault(4337);
     obj = { guildId, user, cancelButtonCallback };
-    obj.pushLazy(arg1(dependencyMap[5])(dependencyMap[4], dependencyMap.paths), obj);
+    obj.pushLazy(require(1934) /* maybeLoadBundle */(10985, dependencyMap.paths), obj);
   }
 };
 export const openEnableCommunication = function openEnableCommunication(arg0) {
-  ({ guildId: closure_0, userId: closure_1, cancelButtonCallback: closure_2 } = arg0);
-  let obj = importDefault(dependencyMap[6]);
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ guildId: require, userId: importDefault, cancelButtonCallback: dependencyMap } = arg0);
+  let obj = importDefault(4471);
   obj = {
     importer() {
-      return callback(paths[5])(paths[7], paths.paths).then((arg0) => {
+      return outer1_0(outer1_2[5])(outer1_2[7], outer1_2.paths).then((arg0) => {
         let closure_0 = arg0.default;
         return (arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
-          obj["guildId"] = closure_0;
-          obj["userId"] = closure_1;
-          obj["onCancel"] = closure_2;
-          return callback(closure_0, obj);
+          obj["guildId"] = outer2_0;
+          obj["userId"] = outer2_1;
+          obj["onCancel"] = outer2_2;
+          return outer3_4(closure_0, obj);
         };
       });
     }

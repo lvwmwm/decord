@@ -1,10 +1,16 @@
-// Module ID: 10524
-// Function ID: 82216
+// Module ID: 10534
+// Function ID: 82266
 // Name: _checkIsSpeaking
-// Dependencies: []
+// Dependencies: [4578, 1906, 4952, 4146, 566, 2]
 // Exports: default, getIsSpeaking
 
-// Module 10524 (_checkIsSpeaking)
+// Module 10534 (_checkIsSpeaking)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _checkIsSpeaking(stateFromStores1, arg1, stateFromStores2) {
   let tmp = stateFromStores1;
   if (!stateFromStores1) {
@@ -15,36 +21,31 @@ function _checkIsSpeaking(stateFromStores1, arg1, stateFromStores2) {
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("hooks/useIsSpeaking.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("hooks/useIsSpeaking.tsx");
 
 export default function useIsSpeaking(checkSoundboardSounds) {
   let checkSoundSharing;
-  ({ userId: closure_0, checkSoundSharing } = checkSoundboardSounds);
+  let require;
+  ({ userId: require, checkSoundSharing } = checkSoundboardSounds);
   if (checkSoundSharing === undefined) {
     checkSoundSharing = false;
   }
-  const dependencyMap = checkSoundSharing;
   let flag = checkSoundboardSounds.checkSoundboardSounds;
   if (flag === undefined) {
     flag = true;
   }
-  let closure_2 = flag;
   let flag2 = checkSoundboardSounds.checkIsMuted;
   if (flag2 === undefined) {
     flag2 = false;
   }
   const context = checkSoundboardSounds.context;
-  let closure_4;
+  flag2 = undefined;
   const items = [closure_5, context];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => {
+  const stateFromStores = require(checkSoundSharing[4]).useStateFromStores(items, () => {
     const voiceChannelId = context.getVoiceChannelId();
     let voiceStateForChannel = null;
     if (null != voiceChannelId) {
-      voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(voiceChannelId, closure_0);
+      voiceStateForChannel = outer1_5.getVoiceStateForChannel(voiceChannelId, closure_0);
     }
     return voiceStateForChannel;
   });
@@ -62,22 +63,21 @@ export default function useIsSpeaking(checkSoundboardSounds) {
     }
     flag2 = mute;
   }
-  closure_4 = flag2;
-  const obj = arg1(dependencyMap[4]);
-  const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items1, () => {
+  const obj = require(checkSoundSharing[4]);
+  const items1 = [flag2];
+  const stateFromStores1 = require(checkSoundSharing[4]).useStateFromStores(items1, () => {
     let isSpeakingResult = flag2.isSpeaking(closure_0, context);
     if (isSpeakingResult) {
       isSpeakingResult = !flag2;
     }
     return isSpeakingResult;
   });
-  const obj2 = arg1(dependencyMap[4]);
-  const items2 = [closure_4];
-  const stateFromStores2 = arg1(dependencyMap[4]).useStateFromStores(items2, () => flag2.isSoundSharing(closure_0) && checkSoundSharing);
-  const obj3 = arg1(dependencyMap[4]);
-  const items3 = [closure_2];
-  return _checkIsSpeaking(stateFromStores1, arg1(dependencyMap[4]).useStateFromStores(items3, () => flag.isUserPlayingSounds(closure_0) && flag), stateFromStores2);
+  const obj2 = require(checkSoundSharing[4]);
+  const items2 = [flag2];
+  const stateFromStores2 = require(checkSoundSharing[4]).useStateFromStores(items2, () => flag2.isSoundSharing(closure_0) && checkSoundSharing);
+  const obj3 = require(checkSoundSharing[4]);
+  const items3 = [flag];
+  return _checkIsSpeaking(stateFromStores1, require(checkSoundSharing[4]).useStateFromStores(items3, () => flag.isUserPlayingSounds(closure_0) && flag), stateFromStores2);
 };
 export const getIsSpeaking = function getIsSpeaking(checkSoundboardSounds) {
   let checkSoundSharing;
@@ -100,7 +100,7 @@ export const getIsSpeaking = function getIsSpeaking(checkSoundboardSounds) {
     flag2 = false;
   }
   if (tmp === undefined) {
-    const items = [closure_5, closure_3, closure_4, closure_2];
+    const items = [closure_5, closure_3, closure_4, _isNativeReflectConstruct];
     tmp = items;
   }
   [obj, obj2, obj3, obj4] = tmp;

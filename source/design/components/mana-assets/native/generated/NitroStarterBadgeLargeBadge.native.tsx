@@ -1,13 +1,13 @@
-// Module ID: 6353
-// Function ID: 50462
+// Module ID: 6358
+// Function ID: 50491
 // Name: NitroStarterBadgeLargeBadge
-// Dependencies: []
+// Dependencies: [33, 5085, 6359, 2]
 // Exports: NitroStarterBadgeLargeBadge
 
-// Module 6353 (NitroStarterBadgeLargeBadge)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/NitroStarterBadgeLargeBadge.native.tsx");
+// Module 6358 (NitroStarterBadgeLargeBadge)
+import { jsx } from "jsxProd";
+
+const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/NitroStarterBadgeLargeBadge.native.tsx");
 
 export const NitroStarterBadgeLargeBadge = function NitroStarterBadgeLargeBadge(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const NitroStarterBadgeLargeBadge = function NitroStarterBadgeLargeBadge(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6359) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const NitroStarterBadgeLargeBadge = function NitroStarterBadgeLargeBadge(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

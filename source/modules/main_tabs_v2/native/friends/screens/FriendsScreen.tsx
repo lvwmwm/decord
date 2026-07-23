@@ -1,41 +1,42 @@
-// Module ID: 15318
-// Function ID: 116500
+// Module ID: 15435
+// Function ID: 118674
 // Name: FriendsScreen
-// Dependencies: []
+// Dependencies: [31, 27, 6901, 3767, 33, 4130, 689, 1456, 5464, 5484, 1557, 566, 15436, 1820, 8492, 15437, 15440, 15171, 4076, 1212, 5165, 9892, 5807, 4543, 8819, 10025, 2]
 // Exports: default
 
-// Module 15318 (FriendsScreen)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { paddingTop: importDefault(dependencyMap[6]).space.PX_8, flex: 1 };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.requestsButtonContainer = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderRadius: importDefault(dependencyMap[6]).radii.lg, overflow: "hidden" };
-obj.emptyContainer = {};
-const obj2 = { -9223372036854775808: 705839377, 9223372036854775807: 410124290, 0: 402653184, marginBottom: importDefault(dependencyMap[6]).space.PX_16 };
-obj.buttonContainer = obj2;
-let closure_9 = obj.createStyles(obj);
-const obj1 = { marginHorizontal: importDefault(dependencyMap[6]).space.PX_16, borderRadius: importDefault(dependencyMap[6]).radii.lg, overflow: "hidden" };
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreen.tsx");
+// Module 15435 (FriendsScreen)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, flex: 1 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.requestsButtonContainer = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
+_createForOfIteratorHelperLoose.emptyContainer = { justifyContent: "center", flexGrow: 1 };
+let obj2 = { flexDirection: "row", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, width: "100%" };
+_createForOfIteratorHelperLoose.buttonContainer = obj2;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreen.tsx");
 
 export default function FriendsScreen() {
-  let obj = arg1(dependencyMap[7]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
-  const tmp2 = callback2();
+  let obj = navigation(analyticsLocations[7]);
+  navigation = obj.useNavigation();
+  let tmp2 = _createForOfIteratorHelperLoose();
   const importDefault = tmp2;
-  const analyticsLocations = importDefault(dependencyMap[8])(importDefault(dependencyMap[9]).FRIENDS_LIST).analyticsLocations;
-  const dependencyMap = analyticsLocations;
-  const bottom = importDefault(dependencyMap[10])().bottom;
-  const React = bottom;
-  const tmp3 = importDefault(dependencyMap[8]);
-  const items = [closure_6, closure_5];
-  const stateFromStoresObject = arg1(dependencyMap[11]).useStateFromStoresObject(items, () => {
+  analyticsLocations = importDefault(analyticsLocations[8])(importDefault(analyticsLocations[9]).FRIENDS_LIST).analyticsLocations;
+  const bottom = importDefault(analyticsLocations[10])().bottom;
+  const tmp3 = importDefault(analyticsLocations[8]);
+  let items = [spam, outgoing];
+  const stateFromStoresObject = navigation(analyticsLocations[11]).useStateFromStoresObject(items, () => {
     const obj = {};
     const items = [spam, outgoing];
     obj.incoming = navigation(analyticsLocations[12]).getIncomingFriendRequestCount(items);
@@ -47,29 +48,26 @@ export default function FriendsScreen() {
     return obj;
   });
   const incoming = stateFromStoresObject.incoming;
-  const View = incoming;
-  const outgoing = stateFromStoresObject.outgoing;
-  closure_5 = outgoing;
-  const spam = stateFromStoresObject.spam;
-  closure_6 = spam;
+  outgoing = stateFromStoresObject.outgoing;
+  spam = stateFromStoresObject.spam;
   const pendingIgnored = stateFromStoresObject.pendingIgnored;
-  const items1 = [analyticsLocations];
+  let items1 = [analyticsLocations];
   const items2 = [navigation];
-  const callback = React.useCallback((id) => {
+  const callback = bottom.useCallback((id) => {
     let obj = navigation(analyticsLocations[13]);
     const result = obj.dismissGlobalKeyboard();
     obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
   }, items1);
-  const callback1 = React.useCallback((defaultSelectedUserId) => {
+  const callback1 = bottom.useCallback((defaultSelectedUserId) => {
     navigation.navigate("friends", { screen: "new-message", params: { defaultSelectedUserId: defaultSelectedUserId.id, sourcePage: "Friends Screen" } });
   }, items2);
-  const effect = React.useEffect(() => {
+  const effect = bottom.useEffect(() => {
     tmp2(analyticsLocations[15])({ tab_opened: null });
-    const tmp2 = tmp2(analyticsLocations[16])({ tab_opened: null });
+    tmp2 = tmp2(analyticsLocations[16])({ tab_opened: null });
   }, []);
   const items3 = [incoming, navigation, outgoing, spam, pendingIgnored];
   const items4 = [bottom, incoming, navigation, outgoing, tmp2, spam];
-  const memo = React.useMemo(() => {
+  const memo = bottom.useMemo(() => {
     const items = [];
     const sum = incoming + spam + pendingIgnored;
     let tmp2 = sum > 0;
@@ -82,21 +80,21 @@ export default function FriendsScreen() {
       obj.label = intl.string(navigation(analyticsLocations[19]).t.fyA115);
       const intl2 = navigation(analyticsLocations[19]).intl;
       obj = { incoming: sum, outgoing };
-      obj.subLabel = intl2.formatToPlainString(navigation(analyticsLocations[19]).t.1IEawz, obj);
+      obj.subLabel = intl2.formatToPlainString(navigation(analyticsLocations[19]).t["1IEawz"], obj);
       obj.onPress = function onPress() {
-        return navigation.navigate("friends", { screen: "requests" });
+        return outer1_0.navigate("friends", { screen: "requests" });
       };
       items.push(obj);
     }
     return items;
   }, items3);
-  const memo1 = React.useMemo(() => {
+  const memo1 = bottom.useMemo(() => {
     let obj = { style: tmp2.container };
     if (incoming + outgoing + spam <= 0) {
       const items = [null, ];
       obj = {};
       const intl3 = navigation(analyticsLocations[19]).intl;
-      obj.title = intl3.string(navigation(analyticsLocations[19]).t.oi+B4p);
+      obj.title = intl3.string(navigation(analyticsLocations[19]).t["oi+B4p"]);
       obj.fullHeight = true;
       obj.containerStyle = tmp2.emptyContainer;
       obj.illustration = navigation(analyticsLocations[22]).WumpusCouchSpotIllustration;
@@ -110,7 +108,7 @@ export default function FriendsScreen() {
       obj2.text = intl4.string(navigation(analyticsLocations[19]).t.zIJnA6);
       obj2.size = "lg";
       obj2.onPress = function onPress() {
-        return navigation.navigate("friends", { screen: "add-friends", params: { sourcePage: "Friends Screen" } });
+        return outer1_0.navigate("friends", { screen: "add-friends", params: { sourcePage: "Friends Screen" } });
       };
       obj2.grow = true;
       obj.children = pendingIgnored(navigation(analyticsLocations[23]).Button, obj2);
@@ -120,7 +118,7 @@ export default function FriendsScreen() {
       return tmp(tmp2, obj);
     } else {
       const obj3 = { style: tmp2.requestsButtonContainer };
-      let obj4 = { 400888199: null, 2091392542: null };
+      let obj4 = { start: true, end: true };
       const obj5 = { source: tmp2(analyticsLocations[17]) };
       obj4.icon = pendingIgnored(navigation(analyticsLocations[20]).TableRow.Icon, obj5);
       obj4.trailing = pendingIgnored(navigation(analyticsLocations[20]).TableRow.Arrow, {});
@@ -132,7 +130,7 @@ export default function FriendsScreen() {
         const obj6 = { incoming };
         num = outgoing;
         obj6.outgoing = outgoing;
-        let formatToPlainStringResult = intl2.formatToPlainString(navigation(analyticsLocations[num]).t.1IEawz, obj6);
+        let formatToPlainStringResult = intl2.formatToPlainString(navigation(analyticsLocations[num]).t["1IEawz"], obj6);
       } else {
         const intl = navigation(analyticsLocations[num]).intl;
         const obj7 = { spam };
@@ -140,12 +138,12 @@ export default function FriendsScreen() {
       }
       obj4.subLabel = formatToPlainStringResult;
       obj4.onPress = function onPress() {
-        if (closure_4 + closure_5 > 0) {
+        if (outer1_4 + outer1_5 > 0) {
           let obj = { screen: "requests" };
-          navigation.navigate("friends", obj);
+          outer1_0.navigate("friends", obj);
         } else {
           obj = { screen: "spam-requests" };
-          navigation.navigate("friends", obj);
+          outer1_0.navigate("friends", obj);
         }
       };
       obj4 = tmp19(navigation(analyticsLocations[20]).TableRow, obj4);
@@ -155,7 +153,7 @@ export default function FriendsScreen() {
     }
   }, items4);
   obj = { value: analyticsLocations };
-  const items5 = [pendingIgnored(importDefault(dependencyMap[24]), { onSelectUser: callback, handleMessage: callback1, actions: memo, withAffinitySuggestions: false, withGameFriends: true, defaultNoResultsFound: memo1, hideSearchOnDefaultNoResults: true, disableThemedGradient: true }), pendingIgnored(arg1(dependencyMap[25]).TTIFirstContentfulPaint, { label: "friends" })];
+  const items5 = [pendingIgnored(importDefault(analyticsLocations[24]), { onSelectUser: callback, handleMessage: callback1, actions: memo, withAffinitySuggestions: false, withGameFriends: true, defaultNoResultsFound: memo1, hideSearchOnDefaultNoResults: true, disableThemedGradient: true }), pendingIgnored(navigation(analyticsLocations[25]).TTIFirstContentfulPaint, { label: "friends" })];
   obj.children = items5;
-  return callback(arg1(dependencyMap[8]).AnalyticsLocationProvider, obj);
+  return callback(navigation(analyticsLocations[8]).AnalyticsLocationProvider, obj);
 };

@@ -1,26 +1,27 @@
-// Module ID: 4180
-// Function ID: 35986
+// Module ID: 4184
+// Function ID: 36018
 // Name: result
-// Dependencies: []
+// Dependencies: [664, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE
 
-// Module 4180 (result)
+// Module 4184 (result)
+import importDefaultResult from "timestamp";
+
 const obj = {};
-const result = 30 * importDefault(dependencyMap[0]).Millis.SECOND;
+const result = 30 * require("set").Millis.SECOND;
 obj.SECONDS_30 = result;
 obj[result] = "SECONDS_30";
-const MINUTE = importDefault(dependencyMap[0]).Millis.MINUTE;
+const MINUTE = require("set").Millis.MINUTE;
 obj.MINUTES_1 = MINUTE;
 obj[MINUTE] = "MINUTES_1";
-const result1 = 2 * importDefault(dependencyMap[0]).Millis.MINUTE;
+const result1 = 2 * require("set").Millis.MINUTE;
 obj.MINUTES_2 = result1;
 obj[result1] = "MINUTES_2";
-const result2 = 6 * importDefault(dependencyMap[0]).Millis.SECOND;
-let importDefaultResult = importDefault(dependencyMap[1]);
+const result2 = 6 * require("set").Millis.SECOND;
 importDefaultResult = new importDefaultResult("Clips");
-const result3 = 60 * importDefault(dependencyMap[0]).Millis.SECOND;
-const result4 = 14 * importDefault(dependencyMap[0]).Millis.DAY;
-const result5 = arg1(dependencyMap[2]).fileFinishedImporting("modules/clips/ClipsConstants.tsx");
+const result3 = 60 * require("set").Millis.SECOND;
+const result4 = 14 * require("set").Millis.DAY;
+const result5 = require("set").fileFinishedImporting("modules/clips/ClipsConstants.tsx");
 
 export const ClipsLengthSettings = obj;
 export const ClipsViewerConnectivitySettings = { ALL: 0, [0]: "ALL", FRIENDS: 1, [1]: "FRIENDS" };

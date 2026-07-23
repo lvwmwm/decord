@@ -1,26 +1,26 @@
-// Module ID: 13328
-// Function ID: 101222
+// Module ID: 13442
+// Function ID: 103378
 // Name: unsupportedCommand
-// Dependencies: []
+// Dependencies: [653, 10496, 2]
 
-// Module 13328 (unsupportedCommand)
-const RPCErrors = require(dependencyMap[0]).RPCErrors;
+// Module 13442 (unsupportedCommand)
+import { RPCErrors } from "ME";
+
 let obj = {
   handler(cmd) {
-    let tmp = importDefault(dependencyMap[1]);
+    let tmp = importDefault(10496);
     tmp = new tmp({ errorCode: RPCErrors.INVALID_COMMAND }, "Unsupported command: " + cmd.cmd);
     throw tmp;
   }
 };
 obj = {
   handler(cmd) {
-    let tmp = importDefault(dependencyMap[1]);
+    let tmp = importDefault(10496);
     tmp = new tmp({ errorCode: RPCErrors.INVALID_COMMAND }, "Deprecated command: " + cmd.cmd);
     throw tmp;
   }
 };
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/rpc/helpers/unavailableCommand.tsx");
+const result = require("set").fileFinishedImporting("modules/rpc/helpers/unavailableCommand.tsx");
 
 export const unsupportedCommand = obj;
 export const deprecatedCommand = obj;

@@ -1,14 +1,18 @@
-// Module ID: 10800
-// Function ID: 83879
+// Module ID: 10810
+// Function ID: 83928
 // Name: isLurkingGuildRoute
-// Dependencies: []
+// Dependencies: [3759, 653, 3952, 3965, 686, 2]
 // Exports: saveLastNonVoiceRoute, saveLastRoute
 
-// Module 10800 (isLurkingGuildRoute)
+// Module 10810 (isLurkingGuildRoute)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Routes } from "ME";
+
+const require = arg1;
 function isLurkingGuildRoute(Routes) {
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(3952) /* matchPath */;
   obj = {};
-  const RouteParam = arg1(dependencyMap[3]).RouteParam;
+  const RouteParam = require(3965) /* isPseudoGuildId */.RouteParam;
   obj.path = Routes.CHANNEL(RouteParam.guildId());
   const matchPathResult = obj.matchPath(Routes, obj);
   let guildId;
@@ -24,20 +28,18 @@ function isLurkingGuildRoute(Routes) {
   }
   return !tmp3;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const Routes = arg1(dependencyMap[1]).Routes;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("actions/DefaultRouteActionCreators.tsx");
+const result = require("matchPath").fileFinishedImporting("actions/DefaultRouteActionCreators.tsx");
 
 export const saveLastRoute = function saveLastRoute(pathname) {
   if (!isLurkingGuildRoute(pathname)) {
-    let obj = importDefault(dependencyMap[4]);
+    let obj = importDefault(686);
     obj = { type: "SAVE_LAST_ROUTE", path: pathname };
     obj.dispatch(obj);
   }
 };
 export const saveLastNonVoiceRoute = function saveLastNonVoiceRoute(Routes) {
   if (!isLurkingGuildRoute(Routes)) {
-    let obj = importDefault(dependencyMap[4]);
+    let obj = importDefault(686);
     obj = { type: "SAVE_LAST_NON_VOICE_ROUTE", path: Routes };
     obj.dispatch(obj);
   }

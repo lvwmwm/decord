@@ -1,10 +1,9 @@
-// Module ID: 14658
-// Function ID: 110514
+// Module ID: 14773
+// Function ID: 112678
 // Name: RemoteAuthStep
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 14658 (RemoteAuthStep)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/remote_auth/typing.tsx");
+// Module 14773 (RemoteAuthStep)
+const result = require("set").fileFinishedImporting("modules/remote_auth/typing.tsx");
 
 export const RemoteAuthStep = { INITIALIZING: 0, [0]: "INITIALIZING", PENDING_REMOTE_INIT: 1, [1]: "PENDING_REMOTE_INIT", PENDING_TICKET: 2, [2]: "PENDING_TICKET", PENDING_LOGIN: 3, [3]: "PENDING_LOGIN", FINISH: 4, [4]: "FINISH" };

@@ -1,15 +1,17 @@
-// Module ID: 15662
-// Function ID: 119648
+// Module ID: 15779
+// Function ID: 121821
 // Name: VoicePanelAccessibilityView
-// Dependencies: []
+// Dependencies: [31, 15770, 33, 4525, 15774, 2]
 // Exports: default
 
-// Module 15662 (VoicePanelAccessibilityView)
-const VoicePanelPIPModes = arg1(dependencyMap[1]).VoicePanelPIPModes;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = importAll(dependencyMap[0]).memo(arg1(dependencyMap[3]).AccessibilityViewAnimated);
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/voice_panel/native/VoicePanelAccessibilityView.tsx");
+// Module 15779 (VoicePanelAccessibilityView)
+import { VoicePanelPIPModes } from "VoicePanelPIPModes";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_4 = require("result").memo(require("AccessibilityView").AccessibilityViewAnimated);
+const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/VoicePanelAccessibilityView.tsx");
 
 export default function VoicePanelAccessibilityView(pointerEvents) {
   let nativeID;
@@ -19,7 +21,7 @@ export default function VoicePanelAccessibilityView(pointerEvents) {
     str = "box-none";
   }
   let accessibilityViewIsModal = pointerEvents.accessibilityViewIsModal;
-  let obj = { <string:1314541984>: false, <string:1705727586>: false, <string:1672604876>: false, <string:2899596248>: false, <string:2591665324>: false };
+  let obj = { style: 0, pointerEvents: 0, nativeID: 0, accessibilityViewIsModal: 0, onAccessibilityEscape: 0 };
   ({ nativeID, onAccessibilityEscape } = pointerEvents);
   Object.setPrototypeOf(null);
   const merged = Object.assign(pointerEvents, obj);
@@ -30,5 +32,5 @@ export default function VoicePanelAccessibilityView(pointerEvents) {
   obj.accessibilityViewIsModal = accessibilityViewIsModal;
   obj.onAccessibilityEscape = onAccessibilityEscape;
   const merged1 = Object.assign(merged);
-  return <closure_4 {...obj} />;
+  return <closure_4 style={arg0.style} pointerEvents={str} nativeID={nativeID} />;
 };

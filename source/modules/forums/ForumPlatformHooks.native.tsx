@@ -1,21 +1,20 @@
-// Module ID: 11790
-// Function ID: 91540
-// Dependencies: []
+// Module ID: 11800
+// Function ID: 91589
+// Dependencies: [31, 3982, 3981, 9141, 2]
 
-// Module 11790
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/forums/ForumPlatformHooks.native.tsx");
+// Module 11800
+import result from "result";
+
+const require = arg1;
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/forums/ForumPlatformHooks.native.tsx");
 
 export default {
   useForumChannelSeenManager(guildId) {
     guildId = guildId.guildId;
-    const arg1 = guildId;
     const channelId = guildId.channelId;
-    const importDefault = channelId;
-    const ref = React.useRef(null);
-    const dependencyMap = ref;
+    const ref = callback.useRef(null);
     const items = [channelId];
-    const callback = React.useCallback(() => {
+    callback = callback.useCallback(() => {
       const rootNavigationRef = guildId(ref[1]).getRootNavigationRef();
       if (null != rootNavigationRef) {
         if (rootNavigationRef.isReady()) {
@@ -33,33 +32,31 @@ export default {
         }
       }
     }, items);
-    const React = callback;
-    const effect = React.useEffect(() => {
+    const effect = callback.useEffect(() => {
       const rootNavigationRef = guildId(ref[1]).getRootNavigationRef();
-      const guildId = rootNavigationRef;
       if (null != rootNavigationRef) {
         if (rootNavigationRef.isReady()) {
           rootNavigationRef.addListener("state", callback);
           return () => {
-            rootNavigationRef.removeListener("state", closure_3);
+            rootNavigationRef.removeListener("state", outer1_3);
           };
         }
       }
     });
     const items1 = [channelId, guildId, callback];
-    const layoutEffect = React.useLayoutEffect(() => {
+    const layoutEffect = callback.useLayoutEffect(() => {
       let tmp = channelId(ref[3]);
       tmp = new tmp({ guildId, channelId });
       ref.current = tmp;
-      const current = ref.current;
+      let current = ref.current;
       current.initialize();
       callback();
       return () => {
-        const current = ref.current;
+        const current = outer1_2.current;
         if (null != current) {
           current.terminate();
         }
-        ref.current = null;
+        outer1_2.current = null;
       };
     }, items1);
     return ref.current;

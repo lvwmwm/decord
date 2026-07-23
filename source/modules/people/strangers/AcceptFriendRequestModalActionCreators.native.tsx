@@ -1,40 +1,42 @@
-// Module ID: 9053
-// Function ID: 71106
+// Module ID: 9060
+// Function ID: 71147
 // Name: openAcceptFriendRequestConfirmModal
-// Dependencies: []
+// Dependencies: [9061, 653, 33, 675, 4471, 9062, 1934, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 9053 (openAcceptFriendRequestConfirmModal)
-let closure_3 = require(dependencyMap[0]).ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID;
-const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
-const jsx = require(dependencyMap[2]).jsx;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/people/strangers/AcceptFriendRequestModalActionCreators.native.tsx");
+// Module 9060 (openAcceptFriendRequestConfirmModal)
+import { ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID as closure_3 } from "RELATIONSHIP_COUNT_ANIMATION_THRESHOLD";
+import { AnalyticEvents } from "ME";
+import { jsx } from "jsxProd";
+
+const result = require("jsxProd").fileFinishedImporting("modules/people/strangers/AcceptFriendRequestModalActionCreators.native.tsx");
 
 export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequestConfirmModal(arg0) {
-  ({ onConfirm: closure_0, onCancel: closure_1 } = arg0);
-  let obj = importDefault(dependencyMap[3]);
+  let importDefault;
+  let require;
+  ({ onConfirm: require, onCancel: importDefault } = arg0);
+  let obj = importDefault(675);
   obj = { type: closure_3 };
   obj.track(AnalyticEvents.OPEN_MODAL, obj);
   obj = {
     importer() {
-      return callback(paths[6])(paths[5], paths.paths).then((arg0) => {
+      return outer1_0(outer1_2[6])(outer1_2[5], outer1_2.paths).then((arg0) => {
         let closure_0 = arg0.default;
         return (arg0) => {
           let closure_0 = arg0;
           const obj = {};
           const merged = Object.assign(arg0);
           obj["onCancel"] = function onCancel() {
-            arg0.onClose();
-            if (null != callback) {
-              callback();
+            closure_0.onClose();
+            if (null != outer3_1) {
+              outer3_1();
             }
           };
-          obj["onConfirm"] = closure_0;
-          return callback(closure_0, obj);
+          obj["onConfirm"] = outer2_0;
+          return outer3_5(closure_0, obj);
         };
       });
     }
   };
-  importDefault(dependencyMap[4]).openLazy(obj);
+  importDefault(4471).openLazy(obj);
 };

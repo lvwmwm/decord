@@ -1,5 +1,5 @@
 // Module ID: 1673
-// Function ID: 18563
+// Function ID: 18564
 // Name: FadingTransition
 // Dependencies: []
 
@@ -21,9 +21,9 @@ arg5.FadingTransition = function FadingTransition(name) {
   const items1 = [{ translateX: "" + translateX + "px", translateY: "" + translateY + "px", scale: "" + scaleX + "," + scaleY }];
   obj2.transform = items1;
   obj[20] = obj2;
-  const items2 = [{ "Null": "construct", "Null": "isArray", marginBottom: "isArray" }];
+  const items2 = [{ translateX: "0px", translateY: "0px", scale: "1,1" }];
   obj[60] = { opacity: 0, transform: items2 };
-  const items3 = [{ "Null": "construct", "Null": "isArray", marginBottom: "isArray" }];
+  const items3 = [{ translateX: "0px", translateY: "0px", scale: "1,1" }];
   obj[100] = { opacity: 1, transform: items3 };
   obj.style = obj;
   obj.duration = 300;

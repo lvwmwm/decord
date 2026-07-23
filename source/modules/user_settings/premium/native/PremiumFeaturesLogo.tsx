@@ -1,26 +1,28 @@
-// Module ID: 8124
-// Function ID: 64351
+// Module ID: 8130
+// Function ID: 64388
 // Name: PremiumFeaturesLogo
-// Dependencies: []
+// Dependencies: [31, 1851, 33, 8131, 6676, 5085, 3776, 2]
 // Exports: default
 
-// Module 8124 (PremiumFeaturesLogo)
-importAll(dependencyMap[0]);
-const PremiumTypes = arg1(dependencyMap[1]).PremiumTypes;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesLogo.tsx");
+// Module 8130 (PremiumFeaturesLogo)
+import "result";
+import { PremiumTypes } from "GuildFeatures";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesLogo.tsx");
 
 export default function PremiumFeaturesLogo(premiumType) {
   premiumType = premiumType.premiumType;
   if (premiumType === PremiumTypes.TIER_0) {
-    let tmp3 = importDefault(dependencyMap[3]);
+    let tmp3 = importDefault(8131);
   } else {
-    tmp3 = importDefault(dependencyMap[4]);
+    tmp3 = importDefault(6676);
   }
-  const obj = { is_pip_mode: "r", handlePressEmoji: "BackgroundGradientPresetId", Pawtect: "Array", makeViewDescriptorsSet: "MONOPOLY_GO", numOfEmbeds: "r" };
-  const tmp6 = importDefault(dependencyMap[5]);
-  obj.accessibilityLabel = arg1(dependencyMap[6]).getPremiumTypeDisplayName(premiumType);
+  const obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, resizeMode: "contain" };
+  const tmp6 = importDefault(5085);
+  obj.accessibilityLabel = require(3776) /* _createForOfIteratorHelperLoose */.getPremiumTypeDisplayName(premiumType);
   obj.style = premiumType.style;
   obj.source = tmp3;
-  return <tmp6 {...obj} />;
+  return <tmp6 accessible accessibilityLabel={null} accessibilityRole="header" style={null} resizeMode="contain" />;
 };

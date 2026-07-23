@@ -1,24 +1,24 @@
-// Module ID: 16089
-// Function ID: 123666
-// Dependencies: []
+// Module ID: 16206
+// Function ID: 125839
+// Name: dispatcher
+// Dependencies: [686, 2]
 
-// Module 16089
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_settings/GuildSettingsModalChannelsActionCreators.tsx");
+// Module 16206 (dispatcher)
+const result = require("set").fileFinishedImporting("modules/guild_settings/GuildSettingsModalChannelsActionCreators.tsx");
 
 export default {
   terminate() {
-    importDefault(dependencyMap[0]).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_TERMINATE" });
+    importDefault(686).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_TERMINATE" });
   },
   startReordering(arg0) {
     const items = [...arguments];
-    importDefault(dependencyMap[0]).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_START_REORDER", sortingType: items });
+    importDefault(686).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_START_REORDER", sortingType: items });
   },
   stopReordering() {
-    importDefault(dependencyMap[0]).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER" });
+    importDefault(686).dispatch({ type: "GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER" });
   },
   localChannelUpdate(found) {
-    let obj = importDefault(dependencyMap[0]);
+    let obj = importDefault(686);
     obj = { type: "GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE", updates: found };
     obj.dispatch(obj);
   }

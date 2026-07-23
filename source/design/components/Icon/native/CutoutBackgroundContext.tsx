@@ -1,11 +1,12 @@
-// Module ID: 7869
-// Function ID: 62676
+// Module ID: 7874
+// Function ID: 62711
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 2]
 
-// Module 7869 (context)
-const context = importAll(dependencyMap[0]).createContext(undefined);
-const importAllResult = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
+// Module 7874 (context)
+import importAllResult from "result";
+
+const context = require("result").createContext(undefined);
+const result = require("set").fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
 
 export const CutoutBackgroundContext = context;

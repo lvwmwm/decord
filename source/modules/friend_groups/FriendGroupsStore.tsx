@@ -1,61 +1,71 @@
-// Module ID: 12513
-// Function ID: 95863
+// Module ID: 12627
+// Function ID: 98019
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 6902, 5592, 3767, 1849, 566, 686, 2]
 
-// Module 12513 (_isNativeReflectConstruct)
+// Module 12627 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let _isNativeReflectConstruct = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      _isNativeReflectConstruct = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,30 +102,21 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
-let closure_7 = importDefault(dependencyMap[7]);
-let closure_8 = importDefault(dependencyMap[8]);
 let closure_9 = [];
-let closure_10 = false;
-let tmp2 = (PersistedStore) => {
+let c10 = false;
+let tmp2 = ((PersistedStore) => {
   class FriendGroupsStore {
     constructor() {
       self = this;
       tmp = FriendGroupsStore(this, FriendGroupsStore);
-      obj = closure_3(FriendGroupsStore);
-      tmp2 = closure_2;
-      if (closure_11()) {
+      obj = outer1_3(FriendGroupsStore);
+      tmp2 = outer1_2;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -124,19 +125,19 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = FriendGroupsStore;
   callback2(FriendGroupsStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(groups) {
-      this.waitFor(closure_6, closure_7, closure_5, closure_8);
+      this.waitFor(outer1_6, outer1_7, outer1_5, outer1_8);
       if (null != groups) {
         groups = groups.groups;
         if (null == groups) {
           groups = [];
         }
+        const outer1_9 = groups;
         const isInitialized = groups.isInitialized;
-        let closure_10 = null != isInitialized && isInitialized;
+        const outer1_10 = null != isInitialized && isInitialized;
       }
     }
   };
@@ -144,15 +145,15 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getGroups",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[1] = obj;
   obj = {
     key: "getGroup",
     value(arg0) {
-      const FriendGroupsStore = arg0;
-      const found = closure_9.find((id) => id.id === id);
+      let _isNativeReflectConstruct = arg0;
+      const found = outer1_9.find((id) => id.id === _isNativeReflectConstruct);
       let tmp2 = null;
       if (null != found) {
         tmp2 = found;
@@ -164,16 +165,16 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getGroupIds",
     value() {
-      return closure_9.map((id) => id.id);
+      return outer1_9.map((id) => id.id);
     }
   };
   items[4] = {
     key: "getUserGroups",
     value(arg0) {
-      const FriendGroupsStore = arg0;
-      return closure_9.filter((userIds) => {
+      let _isNativeReflectConstruct = arg0;
+      return outer1_9.filter((userIds) => {
         userIds = userIds.userIds;
-        return userIds.includes(userIds);
+        return userIds.includes(_isNativeReflectConstruct);
       });
     }
   };
@@ -191,36 +192,35 @@ let tmp2 = (PersistedStore) => {
   items[6] = {
     key: "isInitialized",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[7] = {
     key: "getState",
     value() {
-      return { groups: closure_9, isInitialized: closure_10 };
+      return { groups: outer1_9, isInitialized: outer1_10 };
     }
   };
   return callback(FriendGroupsStore, items);
-}(importDefault(dependencyMap[9]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "FriendGroupsStore";
 tmp2.persistKey = "FriendGroupsStoreV2";
-tmp2 = new tmp2(importDefault(dependencyMap[10]), {
+tmp2 = new tmp2(require("dispatcher"), {
   POST_CONNECTION_OPEN: function handleInitializeFriendGroups() {
-    if (!closure_10) {
+    if (!c10) {
       if (arr.length <= 0) {
-        const arr = [];
-        closure_10 = true;
+        arr = [];
+        c10 = true;
       }
     }
     return false;
   },
   CREATE_FRIEND_GROUP: function handleCreateFriendGroup(groupId) {
     groupId = groupId.groupId;
-    let closure_0 = groupId;
     let flag = !arr.some((id) => id.id === groupId);
     if (flag) {
       const obj = { id: groupId, name: groupId.name, userIds: [] };
-      const arr = arr.push(obj);
+      arr = arr.push(obj);
       flag = true;
     }
     return flag;
@@ -240,12 +240,12 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
   },
   DELETE_FRIEND_GROUP: function handleDeleteFriendGroup(groupId) {
     groupId = groupId.groupId;
-    const found = arr.filter((id) => id.id !== groupId);
+    found = found.filter((id) => id.id !== groupId);
     return found.length !== found.length;
   },
   REORDER_FRIEND_GROUPS: function handleReorderFriendGroups(groupIds) {
     let iter2;
-    const items = [];
+    let items = [];
     const tmp = _createForOfIteratorHelperLoose(groupIds.groupIds);
     let iter = tmp();
     if (!iter.done) {
@@ -258,24 +258,23 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
         iter = iter2;
       } while (!iter2.done);
     }
-    let flag = items.length === arr.length;
+    let flag = items.length === items.length;
     if (flag) {
-      arr = items;
       flag = true;
     }
     return flag;
   },
   ADD_USERS_TO_GROUP: function handleAddUsersToGroup(arg0) {
+    let _isNativeReflectConstruct;
     let userIds;
-    ({ groupId: closure_0, userIds } = arg0);
-    let closure_1;
-    const findIndexResult = arr.findIndex((id) => id.id === closure_0);
+    ({ groupId: _isNativeReflectConstruct, userIds } = arg0);
+    let set;
+    const findIndexResult = arr.findIndex((id) => id.id === _isNativeReflectConstruct);
     if (-1 === findIndexResult) {
       return false;
     } else {
       const _Set = Set;
-      const set = new Set(arr[findIndexResult].userIds);
-      closure_1 = set;
+      set = new Set(tmp11.userIds);
       const found = userIds.filter((arg0) => !set.has(arg0));
       let flag = 0 !== found.length;
       if (flag) {
@@ -291,16 +290,16 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     }
   },
   REMOVE_USERS_FROM_GROUP: function handleRemoveUsersFromGroup(arg0) {
+    let _isNativeReflectConstruct;
     let userIds;
-    ({ groupId: closure_0, userIds } = arg0);
-    let closure_1;
-    const findIndexResult = arr.findIndex((id) => id.id === closure_0);
+    ({ groupId: _isNativeReflectConstruct, userIds } = arg0);
+    let set;
+    const findIndexResult = arr.findIndex((id) => id.id === _isNativeReflectConstruct);
     if (-1 === findIndexResult) {
       return false;
     } else {
       const _Set = Set;
-      const set = new Set(userIds);
-      closure_1 = set;
+      set = new Set(userIds);
       userIds = tmp7.userIds;
       const found = userIds.filter((arg0) => !set.has(arg0));
       let flag = found.length !== tmp7.userIds.length;
@@ -315,6 +314,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
     }
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/friend_groups/FriendGroupsStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/friend_groups/FriendGroupsStore.tsx");
 
 export default tmp2;

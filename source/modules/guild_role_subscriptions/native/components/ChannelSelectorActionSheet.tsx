@@ -1,53 +1,69 @@
-// Module ID: 16333
-// Function ID: 126038
+// Module ID: 16450
+// Function ID: 128212
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1348, 5070, 3758, 653, 4326, 33, 4130, 689, 5052, 4320, 4098, 14969, 5085, 16387, 566, 5500, 4126, 1212, 5772, 4660, 4337, 8408, 1934, 8410, 8412, 1273, 12540, 5189, 2]
 // Exports: default
 
-// Module 16333 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16450 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import set from "set";
+import { View } from "module_8412";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { UnreadSetting } from "ReadStateTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_11;
+let closure_12;
+let closure_13;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +74,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,16 +102,14 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function ChannelRow(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   const onChannelSelected = channel.onChannelSelected;
-  const importDefault = onChannelSelected;
   let selected = channel.selected;
-  const tmp = callback3();
-  const tmp2 = importDefault(dependencyMap[12])(channel);
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = onChannelSelected(4320)(channel);
   const items = [onChannelSelected, channel];
   let obj = {};
   const callback = React.useCallback(() => {
-    onChannelSelected(closure_2[13]).hideActionSheet();
+    onChannelSelected(outer1_2[13]).hideActionSheet();
     onChannelSelected(channel);
   }, items);
   obj = { style: tmp.channelRow, onPress: callback, accessible: true };
@@ -108,99 +122,87 @@ function ChannelRow(channel) {
   obj.selected = selected;
   obj.disableHighlightOnPress = true;
   obj.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-  const items1 = [callback2(importDefault(dependencyMap[14]), obj), ];
+  const items1 = [callback(onChannelSelected(14969), obj), ];
   if (selected) {
-    obj = { style: tmp.selectedIcon, source: importDefault(dependencyMap[16]) };
-    selected = callback2(importDefault(dependencyMap[15]), obj);
-    const tmp12 = importDefault(dependencyMap[15]);
+    obj = { style: tmp.selectedIcon, source: onChannelSelected(16387) };
+    selected = callback(onChannelSelected(5085), obj);
+    const tmp12 = onChannelSelected(5085);
   }
   items1[1] = selected;
   obj.children = items1;
   return closure_13(closure_12, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[6]);
-const Permissions = tmp2.Permissions;
-const UnreadSetting = arg1(dependencyMap[7]).UnreadSetting;
-({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = arg1(dependencyMap[8]));
-let obj = arg1(dependencyMap[9]);
-obj = {};
-obj = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014059549379171, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009471827915, "Null": 122885184.00000012, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
-obj.titleContainer = obj;
-const obj1 = { "Null": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014059549379171, "Null": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009471827915, "Null": 122885184.00000012, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
-obj.searchContainer = obj1;
-const obj2 = { "Bool(true)": -352059390, "Bool(true)": -984547326, "Bool(true)": -1469300479, "Bool(true)": -347013118, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
-obj.createChannelButton = obj2;
-const obj3 = {};
-const tmp3 = arg1(dependencyMap[8]);
-const merged = Object.assign(importDefault(dependencyMap[11])(tmp2.Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[10]).colors.TEXT_LINK, 16));
+const Permissions = ME.Permissions;
+({ jsx: closure_11, Fragment: closure_12, jsxs: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, padding: 16, width: "100%" };
+_createForOfIteratorHelperLoose.titleContainer = _createForOfIteratorHelperLoose;
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 16, width: "100%" };
+_createForOfIteratorHelperLoose.searchContainer = obj1;
+let obj2 = { alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", padding: 16 };
+_createForOfIteratorHelperLoose.createChannelButton = obj2;
+let obj3 = {};
+const merged = Object.assign(require("createTextStyle")(ME.Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_LINK, 16));
 obj3["marginStart"] = 8;
-obj.createChannelLabel = obj3;
-const importDefaultResult = importDefault(dependencyMap[11]);
-obj.bodyContainer = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
-obj.channelRow = { "Bool(false)": "Array", "Bool(false)": "isArray" };
-obj.selectedIcon = {};
-let closure_14 = obj.createStyles(obj);
-const obj4 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH };
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/ChannelSelectorActionSheet.tsx");
+_createForOfIteratorHelperLoose.createChannelLabel = obj3;
+_createForOfIteratorHelperLoose.bodyContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+_createForOfIteratorHelperLoose.channelRow = { paddingHorizontal: 8, paddingVertical: 4 };
+_createForOfIteratorHelperLoose.selectedIcon = { end: 16, top: 10, position: "absolute" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ChannelSelectorActionSheet.tsx");
 
 export default function ChannelSelectorActionSheet(guildId) {
+  let dependencyMap;
   let hideCreateChannel;
+  let importDefault;
   let title;
   guildId = guildId.guildId;
-  const arg1 = guildId;
-  ({ onChannelSelected: closure_1, selectedChannelId: closure_2, title, hideCreateChannel } = guildId);
+  ({ onChannelSelected: importDefault, selectedChannelId: dependencyMap, title, hideCreateChannel } = guildId);
   if (hideCreateChannel === undefined) {
     hideCreateChannel = false;
   }
-  let callback;
-  let React;
-  const tmp = callback3();
-  const tmp2 = callback(React.useState(""), 2);
-  const first = tmp2[0];
-  callback = first;
-  const ref = React.useRef(null);
-  React = ref;
-  let obj = arg1(dependencyMap[17]);
-  const items = [closure_7, closure_8];
+  let first;
+  let ref;
+  const tmp = _createForOfIteratorHelperLoose();
+  let tmp2 = first(ref.useState(""), 2);
+  first = tmp2[0];
+  ref = ref.useRef(null);
+  let obj = guildId(566);
+  let items = [closure_7, closure_8];
   const items1 = [guildId, first];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     let iter5;
     const items = [];
-    const categories = categories.getCategories(guildId);
-    const tmp2 = callback3(categories._categories);
+    const categories = outer1_7.getCategories(guildId);
+    const tmp2 = outer1_15(categories._categories);
     const iter = tmp2();
     let iter2 = iter;
     if (!iter.done) {
       do {
-        let tmp3 = closure_15;
-        let tmp4 = closure_15(categories[iter2.value.channel.id]);
+        let tmp3 = outer1_15;
+        let tmp4 = outer1_15(categories[iter2.value.channel.id]);
         let iter3 = tmp4();
         if (!iter3.done) {
           do {
             let value = iter3.value;
-            let tmp5 = closure_8;
-            let tmp6 = closure_9;
-            let canResult = closure_8.can(closure_9.VIEW_CHANNEL, value.channel);
+            let tmp5 = outer1_8;
+            let tmp6 = outer1_9;
+            let canResult = outer1_8.can(outer1_9.VIEW_CHANNEL, value.channel);
             if (canResult) {
-              let tmp8 = closure_3;
-              let hasItem = "" === closure_3;
+              let tmp8 = first;
+              let hasItem = "" === first;
               if (!hasItem) {
                 let name = value.channel.name;
-                let tmp10 = closure_3;
-                hasItem = name.includes(closure_3);
+                let tmp10 = first;
+                hasItem = name.includes(first);
               }
               canResult = hasItem;
             }
             if (canResult) {
               let arr = items.push(value.channel);
             }
-            let iter4 = tmp4();
+            iter4 = tmp4();
             iter3 = iter4;
             let tmp12 = value;
           } while (!iter4.done);
@@ -214,18 +216,18 @@ export default function ChannelSelectorActionSheet(guildId) {
   obj = { scrollable: true, ref };
   obj = {};
   const obj1 = { style: tmp.titleContainer };
-  const obj2 = {};
+  let obj2 = { accessibilityRole: "header", variant: "text-md/bold", color: "mobile-text-heading-primary" };
   if (null == title) {
-    const intl = arg1(dependencyMap[20]).intl;
-    title = intl.string(arg1(dependencyMap[20]).t.PDn2fR);
+    const intl = guildId(1212).intl;
+    title = intl.string(guildId(1212).t.PDn2fR);
   }
   obj2.children = title;
-  obj1.children = callback2(arg1(dependencyMap[19]).Text, obj2);
-  const items2 = [callback2(View, obj1), , ];
+  obj1.children = callback(guildId(4126).Text, obj2);
+  const items2 = [callback(View, obj1), , ];
   const obj3 = { style: tmp.searchContainer };
   const obj4 = { size: "md" };
-  const intl2 = arg1(dependencyMap[20]).intl;
-  obj4.placeholder = intl2.string(arg1(dependencyMap[20]).t.UTYBjS);
+  const intl2 = guildId(1212).intl;
+  obj4.placeholder = intl2.string(guildId(1212).t.UTYBjS);
   obj4.onChange = tmp2[1];
   obj4.onFocus = function onFocus() {
     const current = ref.current;
@@ -235,27 +237,27 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     return expandActionSheetResult;
   };
-  obj3.children = callback2(arg1(dependencyMap[21]).SearchField, obj4);
-  items2[1] = callback2(View, obj3);
+  obj3.children = callback(guildId(5772).SearchField, obj4);
+  items2[1] = callback(View, obj3);
   let tmp15Result = !hideCreateChannel;
   if (tmp15Result) {
     const obj5 = { style: tmp.createChannelButton };
     let str = "button";
     obj5.accessibilityRole = "button";
     obj5.onPress = function onPress() {
-      let obj = callback(paths[13]);
+      let obj = outer1_1(outer1_2[13]);
       obj.hideActionSheet();
       obj = { guildId };
-      const obj2 = callback(paths[23]);
-      obj.createMode = guildId(paths[26]).CreateChannelMode.PREMIUM_CHANNEL;
+      const obj2 = outer1_1(outer1_2[23]);
+      obj.createMode = guildId(outer1_2[26]).CreateChannelMode.PREMIUM_CHANNEL;
       obj.onChannelCreated = function onChannelCreated(channelId) {
-        callback(closure_2[27]).close();
-        const channel = channel.getChannel(channelId);
+        outer2_1(outer2_2[27]).close();
+        const channel = outer2_6.getChannel(channelId);
         if (null != channel) {
-          callback(channel);
+          outer1_1(channel);
         }
       };
-      obj2.pushLazy(guildId(paths[25])(paths[24], paths.paths), obj, callback(paths[27]).CREATE_CHANNEL_MODAL_KEY);
+      obj2.pushLazy(guildId(outer1_2[25])(outer1_2[24], outer1_2.paths), obj, outer1_1(outer1_2[27]).CREATE_CHANNEL_MODAL_KEY);
     };
     const obj6 = {};
     str = undefined;
@@ -263,21 +265,21 @@ export default function ChannelSelectorActionSheet(guildId) {
       str = str2.toString();
     }
     obj6.color = str;
-    obj6.source = importDefault(dependencyMap[29]);
-    const items3 = [callback2(arg1(dependencyMap[28]).Icon, obj6), ];
-    const obj7 = { "Null": true, "Null": true, alignItems: true, style: tmp.createChannelLabel };
-    const intl3 = arg1(dependencyMap[20]).intl;
-    obj7.children = intl3.string(arg1(dependencyMap[20]).t.d7AN7W);
-    items3[1] = callback2(arg1(dependencyMap[19]).Text, obj7);
+    obj6.source = importDefault(12540);
+    const items3 = [callback(guildId(1273).Icon, obj6), ];
+    const obj7 = { style: tmp.createChannelLabel, variant: "text-md/medium", color: "text-link" };
+    const intl3 = guildId(1212).intl;
+    obj7.children = intl3.string(guildId(1212).t.d7AN7W);
+    items3[1] = callback(guildId(4126).Text, obj7);
     obj5.children = items3;
-    tmp15Result = closure_13(arg1(dependencyMap[22]).PressableOpacity, obj5);
+    tmp15Result = closure_13(guildId(4660).PressableOpacity, obj5);
     const tmp15 = closure_13;
-    const tmp18 = callback2;
+    const tmp18 = callback;
   }
   items2[2] = tmp15Result;
   obj.children = items2;
   obj.header = closure_13(closure_12, obj);
-  obj.children = callback2(arg1(dependencyMap[30]).BottomSheetFlatList, {
+  obj.children = callback(guildId(5189).BottomSheetFlatList, {
     style: tmp.bodyContainer,
     data: stateFromStoresArray,
     keyExtractor(id) {
@@ -285,8 +287,8 @@ export default function ChannelSelectorActionSheet(guildId) {
     },
     renderItem(item) {
       item = item.item;
-      return callback2(closure_17, { channel: item, onChannelSelected: closure_1, selected: item.id === closure_2 });
+      return outer1_11(outer1_17, { channel: item, onChannelSelected: closure_1, selected: item.id === closure_2 });
     }
   });
-  return callback2(arg1(dependencyMap[18]).ActionSheet, obj);
+  return callback(guildId(5500).ActionSheet, obj);
 };

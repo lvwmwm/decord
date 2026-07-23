@@ -49,7 +49,7 @@ arg5.default = function splitLayoutProps(arg0) {
                                                               let tmp6 = arg0;
                                                               obj[tmp14] = tmp[tmp14];
                                                             }
-                                                            // continue
+                                                            continue;
                                                           }
                                                         }
                                                       }

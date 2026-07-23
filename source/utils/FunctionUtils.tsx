@@ -1,7 +1,7 @@
 // Module ID: 1916
-// Function ID: 21596
+// Function ID: 21597
 // Name: areArraysShallowlyEqual
-// Dependencies: []
+// Dependencies: [2]
 // Exports: cachedFunction, clearObject, isPlainObjectEmpty
 
 // Module 1916 (areArraysShallowlyEqual)
@@ -26,33 +26,31 @@ function areArraysShallowlyEqual(arg0, arg1) {
     return false;
   }
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("utils/FunctionUtils.tsx");
+const result = require("set").fileFinishedImporting("utils/FunctionUtils.tsx");
 
 export { areArraysShallowlyEqual };
 export function cachedFunction(arg0) {
-  const areArraysShallowlyEqual = arg0;
-  let closure_1 = null;
-  let closure_2 = null;
+  let closure_0 = arg0;
+  let c1 = null;
+  let c2 = null;
   return (arg0) => {
     const items = [...arguments];
-    if (!arg0(closure_1, items)) {
+    if (!callback(items, items)) {
       const items1 = [];
       HermesBuiltin.arraySpread(items, 0);
       let closure_2 = HermesBuiltin.apply(items1, undefined);
     }
-    closure_1 = items;
     return closure_2;
   };
 }
 export const clearObject = function clearObject(obj) {
   for (const key10003 in arg0) {
-    let tmp = key10003;
+    let tmp3 = key10003;
     if (!arg0.hasOwnProperty(key10003)) {
       continue;
     } else {
-      delete r5[r6];
-      // continue
+      delete tmp[tmp2];
+      continue;
     }
     continue;
   }

@@ -1,12 +1,13 @@
-// Module ID: 8495
-// Function ID: 67836
+// Module ID: 8501
+// Function ID: 67873
 // Name: shouldDisableUserPresenceInChannel
-// Dependencies: []
+// Dependencies: [1348, 2]
 // Exports: shouldDisableUserPresenceInChannel
 
-// Module 8495 (shouldDisableUserPresenceInChannel)
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/applications/ApplicationPresenceUtils.tsx");
+// Module 8501 (shouldDisableUserPresenceInChannel)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/applications/ApplicationPresenceUtils.tsx");
 
 export const shouldDisableUserPresenceInChannel = function shouldDisableUserPresenceInChannel(stateFromStores, channelId) {
   let channel = stateFromStores;
@@ -14,7 +15,7 @@ export const shouldDisableUserPresenceInChannel = function shouldDisableUserPres
   let tmp = null != channel && stateFromStores.bot && channel.isPrivate();
   if (tmp) {
     const rawRecipients = channel.rawRecipients;
-    tmp = null == rawRecipients.find((id) => id.id === id.id);
+    tmp = null == rawRecipients.find((id) => id.id === stateFromStores.id);
   }
   return tmp;
 };

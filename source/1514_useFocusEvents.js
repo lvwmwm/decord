@@ -1,28 +1,27 @@
 // Module ID: 1514
-// Function ID: 17403
+// Function ID: 17404
 // Name: useFocusEvents
-// Dependencies: []
+// Dependencies: [31, 1484]
 // Exports: default
 
 // Module 1514 (useFocusEvents)
-let closure_2 = importAll(dependencyMap[0]);
+import result from "result";
+
 
 export default function useFocusEvents(arg0) {
   let emitter;
   let state;
   ({ state, emitter } = arg0);
-  const importDefault = emitter;
-  const context = React.useContext(importDefault(dependencyMap[1]));
-  const dependencyMap = context;
-  const React = React.useRef();
+  context = React.useContext(emitter(context[1]));
+  React = React.useRef();
   const key = state.routes[state.index].key;
   const items = [key, emitter, context];
   const effect = React.useEffect(() => {
     let addListenerResult;
     if (null != context) {
       addListenerResult = context.addListener("focus", () => {
-        closure_2.current = closure_3;
-        closure_0.emit({ type: "focus", target: closure_3 });
+        outer1_2.current = outer1_3;
+        outer1_0.emit({ type: "focus", target: outer1_3 });
       });
     }
     return addListenerResult;
@@ -32,8 +31,8 @@ export default function useFocusEvents(arg0) {
     let addListenerResult;
     if (null != context) {
       addListenerResult = context.addListener("blur", () => {
-        closure_2.current = undefined;
-        closure_0.emit({ type: "blur", target: closure_3 });
+        outer1_2.current = undefined;
+        outer1_0.emit({ type: "blur", target: outer1_3 });
       });
     }
     return addListenerResult;

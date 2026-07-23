@@ -1,9 +1,20 @@
-// Module ID: 12516
-// Function ID: 95933
+// Module ID: 12630
+// Function ID: 98089
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [15, 17, 18, 6, 7, 8440, 4029, 566, 686, 2]
 
-// Module 12516 (_isNativeReflectConstruct)
+// Module 12630 (_isNativeReflectConstruct)
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import V6OrEarlierAPIError from "V6OrEarlierAPIError";
+import initialize from "initialize";
+import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -36,18 +47,13 @@ function withSearchState(query) {
   }
   return tmp2;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-({ SEARCH_RESULTS_QUERY_PREFIX: closure_7, SEARCH_RESULTS_CATEGORY_PREFIX: closure_8, SEARCH_RESULTS_LANGUAGE_CODE_PREFIX: closure_9 } = arg1(dependencyMap[5]));
+({ SEARCH_RESULTS_QUERY_PREFIX: closure_7, SEARCH_RESULTS_CATEGORY_PREFIX: closure_8, SEARCH_RESULTS_LANGUAGE_CODE_PREFIX: closure_9 } = DEFAULT_DISCOVERY_CATEGORY_ID);
 const map = new Map();
 const map1 = new Map();
-let closure_12 = () => {
+let closure_12 = (() => {
   class SearchState {
     constructor(arg0) {
-      tmp = closure_5(this, SearchState);
+      tmp = outer1_5(this, SearchState);
       this.guildIds = [];
       this.error = null;
       this.offset = null;
@@ -59,7 +65,6 @@ let closure_12 = () => {
       return;
     }
   }
-  const arg1 = SearchState;
   let obj = {
     key: "handleSearchStart",
     value() {
@@ -67,13 +72,13 @@ let closure_12 = () => {
       this.isFetching = true;
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "handleSearchFailure",
     value(arg0) {
       this.isFetching = false;
       this.isInitialFetchComplete = true;
-      const aPIError = new SearchState(closure_1[6]).APIError(arg0);
+      const aPIError = new SearchState(outer1_1[6]).APIError(arg0);
       this.error = aPIError;
     }
   };
@@ -85,7 +90,7 @@ let closure_12 = () => {
       let total;
       const self = this;
       ({ total, guilds } = arg0);
-      let SearchState;
+      let items;
       this.error = null;
       this.isFetching = false;
       this.isInitialFetchComplete = true;
@@ -93,8 +98,7 @@ let closure_12 = () => {
       if (null != total) {
         self.total = total;
       }
-      const items = [...self.guildIds];
-      SearchState = items;
+      items = [...self.guildIds];
       const item = guilds.forEach((id) => items.push(id.id));
       self.guildIds = items;
       self.offset = items.length;
@@ -102,20 +106,20 @@ let closure_12 = () => {
   };
   items[2] = obj;
   return callback2(SearchState, items);
-}();
-let tmp5 = (Store) => {
+})();
+let tmp5 = ((Store) => {
   class GlobalDiscoveryServersSearchResultsStore {
     constructor() {
       self = this;
-      tmp = closure_5(this, GlobalDiscoveryServersSearchResultsStore);
-      obj = closure_3(GlobalDiscoveryServersSearchResultsStore);
-      tmp2 = closure_2;
-      if (closure_13()) {
+      tmp = outer1_5(this, GlobalDiscoveryServersSearchResultsStore);
+      obj = outer1_3(GlobalDiscoveryServersSearchResultsStore);
+      tmp2 = outer1_2;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -124,63 +128,62 @@ let tmp5 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = GlobalDiscoveryServersSearchResultsStore;
   callback(GlobalDiscoveryServersSearchResultsStore, Store);
   let obj = {
     key: "getGuild",
     value(arg0) {
-      return closure_11.get(arg0);
+      return outer1_11.get(arg0);
     }
   };
   const items = [obj, , , , , , , , ];
   obj = {
     key: "getGuildIds",
     value(arg0) {
-      return callback4(arg0, (guildIds) => guildIds.guildIds);
+      return outer1_16(arg0, (guildIds) => guildIds.guildIds);
     }
   };
   items[1] = obj;
   obj = {
     key: "getIsFetching",
     value(arg0) {
-      return callback4(arg0, (isFetching) => isFetching.isFetching);
+      return outer1_16(arg0, (isFetching) => isFetching.isFetching);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getIsInitialFetchComplete",
     value(arg0) {
-      return callback4(arg0, (isInitialFetchComplete) => isInitialFetchComplete.isInitialFetchComplete);
+      return outer1_16(arg0, (isInitialFetchComplete) => isInitialFetchComplete.isInitialFetchComplete);
     }
   };
   items[4] = {
     key: "getOffset",
     value(arg0) {
-      return callback4(arg0, (offset) => offset.offset);
+      return outer1_16(arg0, (offset) => offset.offset);
     }
   };
   items[5] = {
     key: "getTotal",
     value(arg0) {
-      return callback4(arg0, (total) => total.total);
+      return outer1_16(arg0, (total) => total.total);
     }
   };
   items[6] = {
     key: "getLastFetchTimestamp",
     value(arg0) {
-      return callback4(arg0, (lastFetchTimestamp) => lastFetchTimestamp.lastFetchTimestamp);
+      return outer1_16(arg0, (lastFetchTimestamp) => lastFetchTimestamp.lastFetchTimestamp);
     }
   };
   items[7] = {
     key: "getError",
     value(arg0) {
-      return callback4(arg0, (error) => error.error);
+      return outer1_16(arg0, (error) => error.error);
     }
   };
   items[8] = {
     key: "getErrorMessage",
     value(arg0) {
-      return callback4(arg0, (error) => {
+      return outer1_16(arg0, (error) => {
         error = error.error;
         let anyErrorMessage;
         if (null != error) {
@@ -191,9 +194,9 @@ let tmp5 = (Store) => {
     }
   };
   return callback2(GlobalDiscoveryServersSearchResultsStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp5.displayName = "GlobalDiscoveryServersSearchResultsStore";
-tmp5 = new tmp5(importDefault(dependencyMap[8]), {
+tmp5 = new tmp5(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
     map.clear();
     map1.clear();
@@ -212,18 +215,18 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
     const guilds = total.guilds;
     getOrCreateSearchState({ query: total.query, categoryId: total.categoryId, languageCode: total.languageCode }).handleSearchSuccess({ total: total.total, guilds });
     const item = guilds.forEach((id) => {
-      const result = closure_11.set(id.id, id);
+      const result = outer1_11.set(id.id, id);
     });
   },
   GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE: function handleGlobalDiscoveryServersSearchFailure(query) {
     getOrCreateSearchState({ query: query.query, categoryId: query.categoryId, languageCode: query.languageCode }).handleSearchFailure(query.error);
   },
   GLOBAL_DISCOVERY_SERVERS_SEARCH_CLEAR: function handleGlobalDiscoveryServersSearchClear(ignoreQueries) {
-    const arg1 = new Set(ignoreQueries.ignoreQueries);
+    const set = new Set(ignoreQueries.ignoreQueries);
     const item = map.forEach((query) => {
       if (null != query.query) {
         if (!set.has(query.query)) {
-          set.delete(arg1);
+          outer1_10.delete(arg1);
         }
       }
     });
@@ -252,66 +255,6 @@ tmp5 = new tmp5(importDefault(dependencyMap[8]), {
     }
   }
 });
-const obj = {
-  CONNECTION_OPEN: function handleConnectionOpen() {
-    map.clear();
-    map1.clear();
-  },
-  GLOBAL_DISCOVERY_SERVERS_SEARCH_START: function handleGlobalDiscoveryServersSearchStart(reset) {
-    let categoryId;
-    let languageCode;
-    let query;
-    ({ query, categoryId, languageCode } = reset);
-    if (reset.reset) {
-      map.delete(tmp);
-    }
-    getOrCreateSearchState({ query, categoryId, languageCode }).handleSearchStart();
-  },
-  GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS: function handleGlobalDiscoveryServersSearchSuccess(total) {
-    const guilds = total.guilds;
-    getOrCreateSearchState({ query: total.query, categoryId: total.categoryId, languageCode: total.languageCode }).handleSearchSuccess({ total: total.total, guilds });
-    const item = guilds.forEach((id) => {
-      const result = closure_11.set(id.id, id);
-    });
-  },
-  GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE: function handleGlobalDiscoveryServersSearchFailure(query) {
-    getOrCreateSearchState({ query: query.query, categoryId: query.categoryId, languageCode: query.languageCode }).handleSearchFailure(query.error);
-  },
-  GLOBAL_DISCOVERY_SERVERS_SEARCH_CLEAR: function handleGlobalDiscoveryServersSearchClear(ignoreQueries) {
-    const arg1 = new Set(ignoreQueries.ignoreQueries);
-    const item = map.forEach((query) => {
-      if (null != query.query) {
-        if (!set.has(query.query)) {
-          set.delete(arg1);
-        }
-      }
-    });
-  },
-  GUILD_PROFILE_FETCH_SUCCESS: function handleGuildProfileFetchSuccess(arg0) {
-    let guildId;
-    let profile;
-    ({ guildId, profile } = arg0);
-    const value = map1.get(guildId);
-    if (null == value) {
-      return false;
-    } else {
-      const obj = {};
-      const merged = Object.assign(value);
-      let memberCount = profile.memberCount;
-      if (null == memberCount) {
-        memberCount = value.memberCount;
-      }
-      obj["memberCount"] = memberCount;
-      let presenceCount = profile.onlineCount;
-      if (null == presenceCount) {
-        presenceCount = value.presenceCount;
-      }
-      obj["presenceCount"] = presenceCount;
-      const result = map1.set(guildId, obj);
-    }
-  }
-};
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersSearchResultsStore.tsx");
+let result = require("_inherits").fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersSearchResultsStore.tsx");
 
 export default tmp5;

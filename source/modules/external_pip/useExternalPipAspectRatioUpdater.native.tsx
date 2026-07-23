@@ -1,39 +1,38 @@
-// Module ID: 15654
-// Function ID: 119544
+// Module ID: 15771
+// Function ID: 121717
 // Name: useExternalPipAspectRatioUpdater
-// Dependencies: []
+// Dependencies: [31, 10233, 2]
 // Exports: default
 
-// Module 15654 (useExternalPipAspectRatioUpdater)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/external_pip/useExternalPipAspectRatioUpdater.native.tsx");
+// Module 15771 (useExternalPipAspectRatioUpdater)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/external_pip/useExternalPipAspectRatioUpdater.native.tsx");
 
 export default function useExternalPipAspectRatioUpdater(arg0, arg1, arg2) {
-  const importDefault = arg1;
-  const dependencyMap = arg2;
-  const React = React.useRef(arg2);
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  React = React.useRef(arg2);
   const insertionEffect = React.useInsertionEffect(() => {
-    closure_2.current = arg2;
+    result.current = closure_1;
   });
   const items = [arg1];
-  const effect = React.useEffect((arg0, self) => {
-    const size = self.getTargetDimensions(ref.current);
-    self = size;
-    self(arg2[1]).setPipAspectRatio(size.width, size.height);
-    return self.subscribeFromItem(() => {
+  const effect = React.useEffect(() => {
+    size = size.getTargetDimensions(ref.current);
+    callback(table[1]).setPipAspectRatio(size.width, size.height);
+    return size.subscribeFromItem(() => {
       let height;
       let width;
-      const targetDimensions = size.getTargetDimensions(ref.current);
+      const targetDimensions = size.getTargetDimensions(outer1_2.current);
       ({ width, height } = targetDimensions);
-      let tmp2 = width === size.width;
+      let tmp2 = width === obj.width;
       if (tmp2) {
-        tmp2 = height === size.height;
+        tmp2 = height === obj.height;
       }
       if (!tmp2) {
-        const obj = { width, height };
-        const size = obj;
-        size(closure_1[1]).setPipAspectRatio(width, height);
-        const obj2 = size(closure_1[1]);
+        obj = { width, height };
+        size(table[1]).setPipAspectRatio(width, height);
+        const obj2 = size(table[1]);
       }
     });
   }, items);

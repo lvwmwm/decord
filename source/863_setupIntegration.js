@@ -1,15 +1,17 @@
 // Module ID: 863
-// Function ID: 9639
+// Function ID: 9640
 // Name: setupIntegration
-// Dependencies: []
+// Dependencies: [65, 800, 801, 825]
 // Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
 
 // Module 863 (setupIntegration)
+import _toConsumableArray from "_toConsumableArray";
+
 function setupIntegration(on, name) {
-  const require = on;
+  const _require = on;
   if (arg2[name.name]) {
-    if (require(closure_1[1]).DEBUG_BUILD) {
-      const debug2 = require(closure_1[2]).debug;
+    if (_require(800).DEBUG_BUILD) {
+      const debug2 = _require(801).debug;
       const _HermesInternal2 = HermesInternal;
       debug2.log("Integration skipped because it was already installed: " + name.name);
     }
@@ -32,33 +34,32 @@ function setupIntegration(on, name) {
     }
     if ("function" === typeof name.preprocessEvent) {
       const preprocessEvent = name.preprocessEvent;
-      closure_1 = preprocessEvent.bind(name);
-      on.on("preprocessEvent", (arg0, arg1) => callback(arg0, arg1, arg0));
+      const dependencyMap = preprocessEvent.bind(name);
+      on.on("preprocessEvent", (arg0, arg1) => callback(arg0, arg1, closure_0));
     }
     if ("function" === typeof name.processEvent) {
       const processEvent = name.processEvent;
       let closure_2 = processEvent.bind(name);
       const _Object = Object;
       const obj = { id: name.name };
-      on.addEventProcessor(Object.assign((arg0, arg1) => callback2(arg0, arg1, arg0), obj));
+      on.addEventProcessor(Object.assign((arg0, arg1) => callback2(arg0, arg1, closure_0), obj));
     }
-    if (require(closure_1[1]).DEBUG_BUILD) {
-      const debug = require(closure_1[2]).debug;
+    if (_require(800).DEBUG_BUILD) {
+      const debug = _require(801).debug;
       const _HermesInternal = HermesInternal;
       debug.log("Integration installed: " + name.name);
     }
   }
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const items = [];
+let items = [];
 
 export const addIntegration = function addIntegration(name) {
-  const client = require(dependencyMap[3]).getClient();
+  const client = require(825) /* getCurrentScope */.getClient();
   if (client) {
     client.addIntegration(name);
-  } else if (require(dependencyMap[1]).DEBUG_BUILD) {
-    const debug = require(dependencyMap[2]).debug;
+  } else if (require(800).DEBUG_BUILD) {
+    const debug = require(801) /* consoleSandbox */.debug;
     const _HermesInternal = HermesInternal;
     debug.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
   }
@@ -79,7 +80,7 @@ export const afterSetupIntegrations = function afterSetupIntegrations(arg0, arg1
       let tmp5 = arg0;
       let afterAllSetupResult = obj.afterAllSetup(arg0);
     }
-    // continue
+    continue;
   }
 };
 export function defineIntegration(arg0) {
@@ -88,13 +89,13 @@ export function defineIntegration(arg0) {
 export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegrations) {
   const arr = defaultIntegrations.defaultIntegrations || [];
   const integrations = defaultIntegrations.integrations;
-  const item = arr.forEach((arg0) => {
+  let item = arr.forEach((arg0) => {
     arg0.isDefaultInstance = true;
   });
   if (Array.isArray(integrations)) {
     const items = [];
-    let combined = items.concat(callback(arr), callback(integrations));
-    const tmp6 = callback(arr);
+    let combined = items.concat(_toConsumableArray(arr), _toConsumableArray(integrations));
+    const tmp6 = _toConsumableArray(arr);
   } else {
     combined = arr;
     if ("function" === typeof integrations) {
@@ -108,7 +109,7 @@ export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultInt
       combined = tmp4;
     }
   }
-  return function filterDuplicates(combined) {
+  return (function filterDuplicates(combined) {
     const obj = {};
     const item = combined.forEach((name) => {
       name = name.name;
@@ -124,17 +125,16 @@ export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultInt
       }
     });
     return Object.values(obj);
-  }(combined);
+  })(combined);
 };
 export const installedIntegrations = items;
 export { setupIntegration };
 export const setupIntegrations = function setupIntegrations(arg0, arr) {
-  const require = arg0;
+  let closure_0 = arg0;
   const obj = {};
-  const dependencyMap = obj;
   const item = arr.forEach((arg0) => {
     if (arg0) {
-      callback(arg0, arg0, obj);
+      outer1_4(closure_0, arg0, obj);
     }
   });
   return obj;

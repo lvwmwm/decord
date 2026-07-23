@@ -1,10 +1,15 @@
 // Module ID: 1721
-// Function ID: 19361
+// Function ID: 19362
 // Name: getCurrentReactOwner
-// Dependencies: []
+// Dependencies: [29, 31, 1585]
 // Exports: componentWithRef, isFirstReactRender, isReactRendering
 
 // Module 1721 (getCurrentReactOwner)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import { forwardRef } from "result";
+import isJest from "isJest";
+
 function getCurrentReactOwner() {
   const __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = constants.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
   let owner;
@@ -40,11 +45,8 @@ function getCurrentReactOwner() {
   }
   return owner;
 }
-let closure_0 = [];
-let closure_1 = importDefault(dependencyMap[0]);
-let closure_2 = importDefault(dependencyMap[1]);
-const forwardRef = arg1(dependencyMap[1]).forwardRef;
-let closure_4 = arg1(dependencyMap[2]).isReact19();
+let closure_0 = ["ref"];
+isJest = isJest.isReact19();
 
 export const isReactRendering = function isReactRendering() {
   return getCurrentReactOwner();
@@ -60,8 +62,8 @@ export const isFirstReactRender = function isFirstReactRender() {
 };
 export const componentWithRef = function componentWithRef(BottomSheet) {
   let closure_0 = BottomSheet;
-  if (closure_4) {
-    let fn = (ref) => ref(callback(ref, ref), ref.ref);
+  if (isJest) {
+    let fn = (ref) => BottomSheet(outer1_1(ref, BottomSheet), ref.ref);
   } else {
     fn = forwardRef(BottomSheet);
   }

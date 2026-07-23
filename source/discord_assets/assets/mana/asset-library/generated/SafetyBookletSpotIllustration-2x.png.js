@@ -1,11 +1,10 @@
-// Module ID: 6446
-// Function ID: 50602
+// Module ID: 6451
+// Function ID: 50631
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6446 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyBookletSpotIllustration-2x.png.js");
+// Module 6451 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyBookletSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/696ffbde72912e2709db47afed72eceebb34447b793546d114fd8047463cbc17.png";
 export const metadata = { fileBytes: 20867 };

@@ -1,16 +1,25 @@
-// Module ID: 14337
-// Function ID: 108246
+// Module ID: 14451
+// Function ID: 110399
 // Name: useCanRotate
-// Dependencies: []
+// Dependencies: [57, 31, 27, 33, 4130, 8303, 8564, 4543, 5504, 4126, 5121, 5449, 2]
 // Exports: default
 
-// Module 14337 (useCanRotate)
+// Module 14451 (useCanRotate)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function useCanRotate() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  const arg1 = first;
   const effect = React.useEffect(() => {
-    let obj = first(closure_1[5]);
+    let obj = first(outer1_1[5]);
     if (first) {
       obj = { unlockAfterRotatingToPreviousLock: false };
       obj.unlockOrientation(obj);
@@ -18,22 +27,20 @@ function useCanRotate() {
       const result = obj.lockOrientationForiOS();
     }
   });
-  const effect1 = React.useEffect(() => () => callback(closure_1[5]).lockOrientationForiOS(), []);
+  const effect1 = React.useEffect(() => () => first(outer2_1[5]).lockOrientationForiOS(), []);
   const items = [first, tmp[1]];
   return items;
 }
 function Content() {
   let tmp5;
   let tmp6;
-  const tmp2 = callback(React.useState(false), 2);
+  const tmp2 = first1(React.useState(false), 2);
   const first = tmp2[0];
-  const arg1 = first;
-  let closure_1 = tmp2[1];
+  const dependencyMap = tmp2[1];
   const tmp = callback4();
-  [tmp5, tmp6] = callback(useCanRotate(), 2);
-  const tmp7 = callback(React.useState(false), 2);
-  const first1 = tmp7[0];
-  const callback = first1;
+  [tmp5, tmp6] = first1(useCanRotate(), 2);
+  const tmp7 = first1(React.useState(false), 2);
+  first1 = tmp7[0];
   let str = "Show tooltip";
   if (first) {
     str = "Hide tooltip";
@@ -49,15 +56,15 @@ function Content() {
     obj.position = str;
     obj.visible = first;
     obj.onPress = function onPress() {
-      return callback(false);
+      return outer1_1(false);
     };
     return obj;
   }, items);
-  let obj = arg1(closure_1[6]);
+  let obj = first(8564);
   const tooltip = obj.useTooltip(ref, memo);
   obj = {};
-  obj = { style: tmp.container, children: callback2(arg1(closure_1[7]).Button, obj1) };
-  const obj1 = {
+  obj = { style: tmp.container, children: callback2(first(4543).Button, obj1) };
+  obj1 = {
     ref,
     onPress() {
       callback(!first);
@@ -66,34 +73,29 @@ function Content() {
     text: str,
     size: "md"
   };
-  const items1 = [callback2(View, obj), callback2(arg1(closure_1[8]).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), callback2(arg1(closure_1[8]).TableSwitchRow, { label: "Enable Bottom Position", value: first1, onValueChange: tmp7[1] }), callback2(TooltipNote, {})];
+  const items1 = [callback2(View, obj), callback2(first(5504).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), callback2(first(5504).TableSwitchRow, { label: "Enable Bottom Position", value: first1, onValueChange: tmp7[1] }), callback2(TooltipNote, {})];
   obj.children = items1;
   return callback3(closure_6, obj);
 }
 class TooltipNote {
   constructor() {
-    obj = { variant: "text-sm/normal", style: { "Bool(true)": null, "Bool(true)": null } };
-    items = [null];
-    items[1] = jsx(arg1(dependencyMap[9]).Text, {});
+    obj = { variant: "text-sm/normal", style: { padding: 16, paddingTop: 16 } };
+    items = ["Note: If your tooltip is not displaying or it is not in the right position/zIndex, consider adding or moving an existing"];
+    items[1] = jsx(require("Text").Text, { variant: "text-sm/bold", children: " <LayerScope/>" });
     items[2] = " on the surface you expect to see the tooltip.";
     obj.children = items;
-    return jsxs(arg1(dependencyMap[9]).Text, obj);
+    return jsxs(require("Text").Text, obj);
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ container: {}, flex: { flex: 1 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTooltip.tsx");
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1 } });
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTooltip.tsx");
 
 export default function UserSettingsDesignSystemTooltip() {
   let obj = { style: callback4().flex, bottom: true };
   obj = { children: callback2(Content, {}) };
-  obj.children = callback2(arg1(dependencyMap[11]).LayerScope, obj);
-  return callback2(arg1(dependencyMap[10]).SafeAreaPaddingView, obj);
+  obj.children = callback2(require(5449) /* Layer */.LayerScope, obj);
+  return callback2(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };
 export { useCanRotate };
 export { TooltipNote };

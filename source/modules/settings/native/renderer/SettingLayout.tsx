@@ -1,22 +1,24 @@
-// Module ID: 13436
-// Function ID: 101988
-// Dependencies: []
+// Module ID: 13550
+// Function ID: 104144
+// Dependencies: [31, 10096, 33, 13551, 14584, 2]
 
-// Module 13436
-const NodeType = arg1(dependencyMap[1]).NodeType;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function SettingLayout(node) {
+// Module 13550
+import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const memoResult = require("result").memo(function SettingLayout(node) {
   node = node.node;
   const type = node.type;
   if (NodeType.LIST === type) {
     let obj = { node };
-    return jsx(arg1(dependencyMap[3]).SettingsList, obj);
+    return jsx(require(13551) /* SearchListSectionLabel */.SettingsList, { node });
   } else if (NodeType.SEGMENTED_CONTROL === type) {
     obj = { node };
-    return jsx(importDefault(dependencyMap[4]), obj);
+    return jsx(importDefault(14584), { node });
   }
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");
 
 export default memoResult;

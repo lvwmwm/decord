@@ -1,9 +1,11 @@
 // Module ID: 792
-// Function ID: 8954
+// Function ID: 8955
 // Name: createStealthXhr
-// Dependencies: []
+// Dependencies: [793]
 
 // Module 792 (createStealthXhr)
+const require = arg1;
+const dependencyMap = arg6;
 arg5.XHR_READYSTATE_DONE = 4;
 arg5.createStealthXhr = function createStealthXhr() {
   if (arguments.length > 0) {
@@ -25,5 +27,5 @@ arg5.createStealthXhr = function createStealthXhr() {
       return null;
     }
   }
-  RN_GLOBAL_OBJ = arg1(arg6[0]).RN_GLOBAL_OBJ;
+  RN_GLOBAL_OBJ = require(793) /* RN_GLOBAL_OBJ */.RN_GLOBAL_OBJ;
 };

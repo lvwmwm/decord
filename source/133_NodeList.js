@@ -1,20 +1,23 @@
 // Module ID: 133
 // Function ID: 2180
 // Name: NodeList
-// Dependencies: []
+// Dependencies: [6, 7, 99, 100, 131, 129]
 // Exports: createNodeList
 
 // Module 133 (NodeList)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3])("length");
-const tmp2 = () => {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import setPlatformObject from "setPlatformObject";
+
+const require = arg1;
+let closure_5 = require("_classPrivateFieldKey")("length");
+let tmp2 = (() => {
   class NodeList {
     constructor(arg0) {
       self = this;
-      tmp = closure_2(this, NodeList);
-      definePropertyResult = Object.defineProperty(this, closure_5, { writable: true, value: undefined });
+      tmp = outer1_2(this, NodeList);
+      definePropertyResult = Object.defineProperty(this, outer1_5, { writable: true, value: undefined });
       num = 0;
       if (0 < arg0.length) {
         do {
@@ -27,15 +30,14 @@ const tmp2 = () => {
           length = arg0.length;
         } while (num < length);
       }
-      closure_4(self, closure_5)[closure_5] = arg0.length;
+      outer1_4(self, outer1_5)[outer1_5] = arg0.length;
       return;
     }
   }
-  const arg1 = NodeList;
   let obj = {
     key: "length",
     get() {
-      return callback2(this, closure_5)[closure_5];
+      return outer1_4(this, outer1_5)[outer1_5];
     }
   };
   const items = [obj, , , , , , ];
@@ -44,7 +46,7 @@ const tmp2 = () => {
     value: function item(arg0) {
       const self = this;
       if (arg0 >= 0) {
-        if (arg0 < callback2(self, closure_5)[closure_5]) {
+        if (arg0 < outer1_4(self, outer1_5)[outer1_5]) {
           return self[arg0];
         }
       }
@@ -55,7 +57,7 @@ const tmp2 = () => {
   obj = {
     key: "entries",
     value: function entries() {
-      return NodeList(closure_1[4]).createEntriesIterator(this);
+      return NodeList(outer1_1[4]).createEntriesIterator(this);
     }
   };
   items[2] = obj;
@@ -64,7 +66,7 @@ const tmp2 = () => {
     value: function forEach(call) {
       const self = this;
       let num = 0;
-      if (0 < callback2(this, closure_5)[closure_5]) {
+      if (0 < outer1_4(this, outer1_5)[outer1_5]) {
         do {
           if (null == arg1) {
             let tmp6 = call(self[num], num, self);
@@ -76,35 +78,36 @@ const tmp2 = () => {
             let callResult = call.call(arg1, self[num], num, self);
           }
           num = num + 1;
-          let tmp7 = closure_4;
-          let tmp8 = closure_5;
-        } while (num < closure_4(self, closure_5)[closure_5]);
+          let tmp7 = outer1_4;
+          let tmp8 = outer1_5;
+        } while (num < outer1_4(self, outer1_5)[outer1_5]);
       }
     }
   };
   items[4] = {
     key: "keys",
     value: function keys() {
-      return NodeList(closure_1[4]).createKeyIterator(this);
+      return NodeList(outer1_1[4]).createKeyIterator(this);
     }
   };
   items[5] = {
     key: "values",
     value: function values() {
-      return NodeList(closure_1[4]).createValueIterator(this);
+      return NodeList(outer1_1[4]).createValueIterator(this);
     }
   };
   items[6] = {
     key: Symbol.iterator,
     value() {
-      return NodeList(closure_1[4]).createValueIterator(this);
+      return NodeList(outer1_1[4]).createValueIterator(this);
     }
   };
   return callback(NodeList, items);
-}();
-arg1(dependencyMap[5]).setPlatformObject(tmp2);
+})();
+let closure_6 = tmp2;
+setPlatformObject.setPlatformObject(tmp2);
 
 export default tmp2;
 export const createNodeList = function createNodeList(arg0) {
-  return new tmp2(arg0);
+  return new closure_6(arg0);
 };

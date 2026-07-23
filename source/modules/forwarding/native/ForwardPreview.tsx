@@ -1,76 +1,78 @@
-// Module ID: 9889
-// Function ID: 76568
+// Module ID: 9896
+// Function ID: 76609
 // Name: MessagePreview
-// Dependencies: [0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4294967295]
+// Dependencies: [31, 27, 33, 4130, 689, 4066, 7808, 7621, 9293, 9897, 1881, 9898, 22, 9899, 1212, 9901, 9851, 4644, 9657, 5085, 1449, 7873, 4126, 2684, 7824, 2]
 // Exports: ForwardPreview
 
-// Module 9889 (MessagePreview)
-import closure_3 from "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 9896 (MessagePreview)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
+let closure_5;
+let closure_6;
+const require = arg1;
 function MessagePreview(content) {
   let attachmentCount;
   let message;
   ({ message, attachmentCount } = content);
-  const arg1 = attachmentCount;
   let importDefault;
   if (attachmentCount > 0) {
-    let TEXT_SUBTLE = importDefault(dependencyMap[4]).colors.TEXT_DEFAULT;
+    let TEXT_SUBTLE = importDefault(689).colors.TEXT_DEFAULT;
   } else {
-    TEXT_SUBTLE = importDefault(dependencyMap[4]).colors.TEXT_SUBTLE;
+    TEXT_SUBTLE = importDefault(689).colors.TEXT_SUBTLE;
   }
-  let obj = arg1(dependencyMap[3]);
+  let obj = attachmentCount(4130);
   obj = { seeMoreLabelColor: TEXT_SUBTLE };
-  const tmp6 = obj.createNativeStyleProperties(obj)(importDefault(dependencyMap[5])());
+  const tmp6 = obj.createNativeStyleProperties(obj)(importDefault(4066)());
   importDefault = tmp6;
   const items = [tmp6.seeMoreLabelColor, attachmentCount];
   const callback = React.useCallback((message) => {
-    message.contextType = attachmentCount(closure_2[6]).MessageContextType.SEARCH;
-    const obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+    message.contextType = attachmentCount(outer1_2[6]).MessageContextType.SEARCH;
+    const obj = { numberOfLines: null, expandable: false, seeMoreLabel: "..." };
     let num = 2;
     if (attachmentCount > 0) {
       num = 1;
     }
     obj.numberOfLines = num;
-    obj.seeMoreLabelColor = tmp6.seeMoreLabelColor;
+    obj.seeMoreLabelColor = _undefined.seeMoreLabelColor;
     message.truncation = obj;
     message.message.edited = "";
   }, items);
   const memo = React.useMemo(() => {
-    let tmp = tmp6(closure_2[7]);
+    let tmp = _undefined(outer1_2[7]);
     tmp = new tmp();
-    tmp.setOptions({});
+    tmp.setOptions({ renderEmbeds: false, renderReactions: false, inlineEmbedMedia: false, inlineAttachmentMedia: false, animateEmoji: true, gifAutoPlay: false, timestampHourCycle: 0, renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderThreadEmbeds: false, renderReplies: false, renderCommunicationDisabled: false, renderAttachments: false, renderExecutedCommands: false, renderPolls: false, renderSharedClientTheme: false, renderForumPostActions: false, ignoreMentioned: false, ignoreEmbedDescriptionCache: false, forceHideSimpleEmbedContent: false, enableSwipeActions: false, useAlternateEmbedColors: false });
     return tmp;
   }, []);
-  obj = { modifyRow: callback };
+  obj = { pointerEvents: "none", horizontalOffset: 0, modifyRow: callback };
   const obj1 = { messageSnapshots: [], content: content.contentMessage.content };
-  const tmp = importDefault(dependencyMap[5])();
+  let tmp = importDefault(4066)();
   obj.message = message.merge(obj1);
   obj.rowGenerator = memo;
-  return callback(importDefault(dependencyMap[8]), obj);
+  return callback(importDefault(9293), obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { -2108412530: "text-lg/normal", -266912356: "text-default", 1638363508: true, gap: require("__exportStarResult1").space.PX_12 };
-__exportStarResult1.forwardPreview = __exportStarResult1;
-__exportStarResult1.quote = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-__exportStarResult1.contentWrapper = { 1649697713: "GAME_CLAIM_NOTICE_MARGIN_BOTTOM", 106012843: "ChatArrowRightIcon", 1006330628: "png", -586653013: "SETTINGS_PREMIUM_MANAGE_PLAN" };
-const obj1 = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-__exportStarResult1.attachmentPreview = { borderRadius: require("__exportStarResult1").radii.sm };
-const obj2 = { borderRadius: require("__exportStarResult1").radii.sm };
-__exportStarResult1.attachmentPreviewVideo = { backgroundColor: require("__exportStarResult1").colors.BLACK };
-__exportStarResult1.videoThumbnail = {};
-__exportStarResult1.playIcon = {};
-__exportStarResult1.attachmentPreviewOverflow = { position: "relative" };
-const obj4 = { "Null": 24, "Null": 8, -719531916: true, 1548981349: "/assets/modules/saved_messages", 1368700770: 280, -1604176509: 262, -2079960581: null, 911293281: "f30ab52fb194d8e8f6a2de0e6e9d812d", 1656250663: "empty_state_image", -900470830: "png", 1004165816: 16, 1364287859: 16, backgroundColor: require("__exportStarResult1").colors.BACKGROUND_MOD_STRONG, borderRadius: require("__exportStarResult1").radii.sm };
-__exportStarResult1.overflowCount = obj4;
-__exportStarResult1.attachmentRow = {};
-__exportStarResult1.largeIcon = {};
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const obj3 = { backgroundColor: require("__exportStarResult1").colors.BLACK };
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "center" };
+_createForOfIteratorHelperLoose.forwardPreview = _createForOfIteratorHelperLoose;
+let obj1 = { width: 4, height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: 2 };
+_createForOfIteratorHelperLoose.quote = obj1;
+_createForOfIteratorHelperLoose.contentWrapper = { flexDirection: "column", flex: 1, paddingVertical: 4, gap: 6 };
+let obj2 = { position: "relative", width: 56, height: 56, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
+_createForOfIteratorHelperLoose.attachmentPreview = obj2;
+_createForOfIteratorHelperLoose.attachmentPreviewVideo = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
+_createForOfIteratorHelperLoose.videoThumbnail = { position: "absolute", top: 0, left: 0, opacity: 0.6 };
+_createForOfIteratorHelperLoose.playIcon = { position: "absolute", top: 0, left: 0, margin: 16, zIndex: 100 };
+_createForOfIteratorHelperLoose.attachmentPreviewOverflow = { position: "relative" };
+let obj4 = { position: "absolute", bottom: 0, right: 0, alignItems: "center", justifyContent: "center", textAlign: "center", width: 24, height: 24, lineHeight: 24, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
+_createForOfIteratorHelperLoose.overflowCount = obj4;
+_createForOfIteratorHelperLoose.attachmentRow = { flexDirection: "row", alignItems: "center", gap: 6 };
+_createForOfIteratorHelperLoose.largeIcon = { width: 20, height: 20 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
+const result = require("jsxProd").fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
 
 export const ForwardPreview = function ForwardPreview(message) {
   let attachments;
@@ -81,14 +83,14 @@ export const ForwardPreview = function ForwardPreview(message) {
   let hasContent;
   message = message.message;
   ({ channel, forwardOptions } = message);
-  const tmp = __exportStarResult1();
-  let obj = arg1(dependencyMap[9]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(9897) /* useForwardPreviewContent */;
   const forwardPreviewContent = obj.useForwardPreviewContent({ message, channel, forwardOptions });
   ({ attachments, embeds, hasContent, contentMessage } = forwardPreviewContent);
   let checkpointData = null;
   if (contentMessage.components.length > 0) {
     checkpointData = null;
-    if (contentMessage.components[0].type === arg1(dependencyMap[10]).ComponentType.CHECKPOINT_CARD) {
+    if (contentMessage.components[0].type === require(1881) /* PermissionOverwriteType */.ComponentType.CHECKPOINT_CARD) {
       checkpointData = contentMessage.components[0].checkpointData;
     }
   }
@@ -99,14 +101,14 @@ export const ForwardPreview = function ForwardPreview(message) {
     if (null != cardId) {
       num3 = cardId;
     }
-    tmp6 = arg1(dependencyMap[11]).CHECKPOINT_PERSONA_COLORS[num3];
+    tmp6 = require(9898) /* items */.CHECKPOINT_PERSONA_COLORS[num3];
   }
   if (null != tmp6) {
     const primaryColor = tmp6.primaryColor;
   }
   if (attachments.length > 0) {
-    let obj1 = arg1(dependencyMap[12]);
-    const countByResult = obj1.countBy(attachments, (proxy_url) => callback(closure_2[13]).getMosaicMediaTypeForAttachment(proxy_url, true));
+    let obj1 = require(22) /* apply */;
+    const countByResult = obj1.countBy(attachments, (proxy_url) => outer1_0(outer1_2[13]).getMosaicMediaTypeForAttachment(proxy_url, true));
     const IMAGE = countByResult.IMAGE;
     let num5 = 0;
     if (null != IMAGE) {
@@ -119,10 +121,10 @@ export const ForwardPreview = function ForwardPreview(message) {
     }
     if (num5 > 0) {
       if (num6 > 0) {
-        const intl4 = arg1(dependencyMap[14]).intl;
+        const intl4 = require(1212) /* getSystemLocale */.intl;
         obj = { image_count: num5, video_count: num6 };
-        let formatToPlainStringResult = intl4.formatToPlainString(arg1(dependencyMap[14]).t.Lr0Top, obj);
-        let AttachmentIcon = arg1(dependencyMap[15]).ImagesIcon;
+        let formatToPlainStringResult = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.Lr0Top, obj);
+        let AttachmentIcon = require(9901) /* ImagesIcon */.ImagesIcon;
       }
       if (num6 > 0) {
         if (length === num6) {
@@ -132,33 +134,33 @@ export const ForwardPreview = function ForwardPreview(message) {
           obj.style = items;
           obj1 = { style: tmp.videoThumbnail };
           const obj2 = {};
-          let obj17 = importDefault(dependencyMap[20]);
+          let obj17 = importDefault(1449);
           obj2.uri = obj17.getMobileOptimizedSrc(attachments[0].proxy_url, 56, 56, "png");
           obj1.source = obj2;
           obj1.width = 56;
           obj1.height = 56;
-          const items1 = [callback(importDefault(dependencyMap[19]), obj1), ];
-          const obj3 = { style: tmp.playIcon };
-          items1[1] = callback(arg1(dependencyMap[16]).CirclePlayIcon, obj3);
+          const items1 = [callback(importDefault(5085), obj1), ];
+          const obj3 = { style: tmp.playIcon, size: "md", color: "white" };
+          items1[1] = callback(require(9851) /* CirclePlayIcon */.CirclePlayIcon, obj3);
           obj.children = items1;
           let tmp11 = callback2(View, obj);
           let tmp9 = formatToPlainStringResult;
           let tmp10 = AttachmentIcon;
-          const tmp47 = importDefault(dependencyMap[19]);
+          const tmp47 = importDefault(5085);
         }
       }
       if (length > 0) {
         const obj4 = { style: tmp.attachmentPreview };
-        const obj5 = {};
+        const obj5 = { source: null, width: 56, height: 56 };
         const obj6 = {};
-        let obj13 = importDefault(dependencyMap[20]);
+        let obj13 = importDefault(1449);
         obj6.uri = obj13.getMobileOptimizedSrc(attachments[0].proxy_url, 56, 56);
         obj5.source = obj6;
-        obj4.children = callback(importDefault(dependencyMap[19]), obj5);
+        obj4.children = callback(importDefault(5085), obj5);
         tmp11 = callback(View, obj4);
         tmp9 = formatToPlainStringResult;
         tmp10 = AttachmentIcon;
-        const tmp41 = importDefault(dependencyMap[19]);
+        const tmp41 = importDefault(5085);
       } else {
         const first = embeds[0];
         let proxyURL;
@@ -173,40 +175,40 @@ export const ForwardPreview = function ForwardPreview(message) {
         tmp11 = null;
         if (null != proxyURL) {
           const obj7 = { style: tmp.attachmentPreview };
-          const obj8 = {};
+          const obj8 = { source: null, width: 56, height: 56 };
           let obj9 = {};
-          obj9 = importDefault(dependencyMap[20]);
+          obj9 = importDefault(1449);
           obj9.uri = obj9.getMobileOptimizedSrc(embeds[0].thumbnail.proxyURL, 56, 56);
           obj8.source = obj9;
-          obj7.children = callback(importDefault(dependencyMap[19]), obj8);
+          obj7.children = callback(importDefault(5085), obj8);
           tmp11 = callback(View, obj7);
           tmp9 = formatToPlainStringResult;
           tmp10 = AttachmentIcon;
-          const tmp35 = importDefault(dependencyMap[19]);
+          const tmp35 = importDefault(5085);
         }
       }
     }
     if (num6 > 0) {
-      const intl3 = arg1(dependencyMap[14]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       const obj10 = { count: num6 };
-      formatToPlainStringResult = intl3.formatToPlainString(arg1(dependencyMap[14]).t.SJ6pPX, obj10);
-      AttachmentIcon = arg1(dependencyMap[16]).CirclePlayIcon;
+      formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.SJ6pPX, obj10);
+      AttachmentIcon = require(9851) /* CirclePlayIcon */.CirclePlayIcon;
     } else if (num5 > 0) {
-      const intl2 = arg1(dependencyMap[14]).intl;
+      const intl2 = require(1212) /* getSystemLocale */.intl;
       const obj11 = { count: num5 };
       if (1 === num5) {
-        let ImagesIcon = arg1(dependencyMap[17]).ImageIcon;
+        let ImagesIcon = require(4644) /* ImageIcon */.ImageIcon;
       } else {
-        ImagesIcon = arg1(dependencyMap[15]).ImagesIcon;
+        ImagesIcon = require(9901) /* ImagesIcon */.ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
-      formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[14]).t.h4pFfU, obj11);
-      const formatToPlainStringResult1 = intl2.formatToPlainString(arg1(dependencyMap[14]).t.h4pFfU, obj11);
+      formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.h4pFfU, obj11);
+      const formatToPlainStringResult1 = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.h4pFfU, obj11);
     } else {
-      const intl = arg1(dependencyMap[14]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       const obj12 = { count: length };
-      formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[14]).t.89ihS8, obj12);
-      AttachmentIcon = arg1(dependencyMap[18]).AttachmentIcon;
+      formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["89ihS8"], obj12);
+      AttachmentIcon = require(9657) /* AttachmentIcon */.AttachmentIcon;
     }
   } else {
     tmp9 = null;
@@ -217,17 +219,17 @@ export const ForwardPreview = function ForwardPreview(message) {
   if (attachments.length > 1) {
     tmp51 = tmp11;
     if (null != tmp11) {
-      obj13 = { shape: arg1(dependencyMap[21]).CutoutShape.RoundedRect };
+      obj13 = { shape: require(7873) /* SolidCutout */.CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
       const obj14 = { style: tmp.attachmentPreviewOverflow };
       const obj15 = {};
       const items2 = [obj13];
       obj15.cutouts = items2;
       obj15.children = tmp11;
-      const items3 = [callback(importDefault(dependencyMap[21]), obj15), ];
-      const obj16 = { "Null": 16, "Null": true, alignItems: "/assets/modules/polls/native/images", style: tmp.overflowCount };
-      const items4 = [null, length - 1];
+      const items3 = [callback(importDefault(7873), obj15), ];
+      const obj16 = { style: tmp.overflowCount, variant: "text-xs/semibold", color: "text-default" };
+      const items4 = ["+", length - 1];
       obj16.children = items4;
-      items3[1] = callback2(arg1(dependencyMap[22]).Text, obj16);
+      items3[1] = callback2(require(4126) /* Text */.Text, obj16);
       obj14.children = items3;
       tmp51 = callback2(View, obj14);
     }
@@ -238,9 +240,9 @@ export const ForwardPreview = function ForwardPreview(message) {
   let tmp54 = null != checkpointData;
   if (tmp54) {
     const obj20 = { variant: "text-md/medium" };
-    const intl5 = arg1(dependencyMap[14]).intl;
-    obj20.children = intl5.string(importDefault(dependencyMap[23]).goiR2u);
-    tmp54 = callback(arg1(dependencyMap[22]).Text, obj20);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    obj20.children = intl5.string(importDefault(2684).goiR2u);
+    tmp54 = callback(require(4126) /* Text */.Text, obj20);
   }
   const items6 = [tmp54, , ];
   let tmp59 = hasContent;
@@ -276,7 +278,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       obj24.variant = str5;
       obj24.color = "text-muted";
       obj24.children = tmp9;
-      tmp68Result = callback(arg1(dependencyMap[22]).Text, obj24);
+      tmp68Result = callback(require(4126) /* Text */.Text, obj24);
       const tmp68 = callback;
     }
     items7[1] = tmp68Result;
@@ -292,24 +294,24 @@ export const ForwardPreview = function ForwardPreview(message) {
   let tmp72Result = null != checkpointData;
   if (tmp72Result) {
     const obj25 = { style: tmp.attachmentPreview };
-    const obj26 = {};
+    const obj26 = { style: null, width: 56, height: 56 };
     const obj27 = { backgroundColor: primaryColor };
     obj26.style = obj27;
     const obj28 = {};
     const tmp72 = callback;
     const tmp73 = View;
     const tmp74 = callback;
-    const tmp77 = importDefault(dependencyMap[19]);
+    const tmp77 = importDefault(5085);
     const cardId2 = checkpointData.cardId;
     let num35 = 0;
     if (null != cardId2) {
       num35 = cardId2;
     }
-    obj28.uri = arg1(dependencyMap[24]).getCardAssetUrl(num35);
+    obj28.uri = require(7824) /* items */.getCardAssetUrl(num35);
     obj26.source = obj28;
     obj25.children = tmp74(tmp77, obj26);
     tmp72Result = tmp72(tmp73, obj25);
-    const obj32 = arg1(dependencyMap[24]);
+    const obj32 = require(7824) /* items */;
   }
   items5[3] = tmp72Result;
   obj17.children = items5;

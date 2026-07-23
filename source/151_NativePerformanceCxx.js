@@ -1,8 +1,8 @@
 // Module ID: 151
 // Function ID: 2384
 // Name: NativePerformanceCxx
-// Dependencies: []
+// Dependencies: [55]
 
 // Module 151 (NativePerformanceCxx)
 
-export default importAll(dependencyMap[0]).get("NativePerformanceCxx");
+export default require("requireModule").get("NativePerformanceCxx");

@@ -1,13 +1,15 @@
-// Module ID: 14015
-// Function ID: 106594
+// Module ID: 14129
+// Function ID: 108750
 // Name: EmojiIcon
-// Dependencies: []
+// Dependencies: [31, 33, 14130, 5085, 9356, 5151, 1392, 2]
 // Exports: default
 
-// Module 14015 (EmojiIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/EmojiIcon.tsx");
+// Module 14129 (EmojiIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("useEmojiByIdOrName").fileFinishedImporting("modules/guild_role_subscriptions/native/components/EmojiIcon.tsx");
 
 export default function EmojiIcon(size) {
   let fontSize;
@@ -27,7 +29,7 @@ export default function EmojiIcon(size) {
   if (lineHeight === undefined) {
     lineHeight = num + 4;
   }
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(14130) /* useEmojiByIdOrName */;
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, id);
   if (null == emojiByIdOrName) {
     let tmp6 = null;
@@ -35,9 +37,9 @@ export default function EmojiIcon(size) {
       obj = { resizeMode: "contain" };
       obj = { width: num, height: num };
       obj.style = obj;
-      obj.source = importDefault(dependencyMap[4]);
-      tmp6 = jsx(importDefault(dependencyMap[3]), obj);
-      const tmp10 = importDefault(dependencyMap[3]);
+      obj.source = importDefault(9356);
+      tmp6 = jsx(importDefault(5085), { width: num, height: num });
+      const tmp10 = importDefault(5085);
     }
     let tmp11Result = tmp6;
   } else {
@@ -66,7 +68,7 @@ export default function EmojiIcon(size) {
     }
     obj1.name = str;
     if (null != emojiByIdOrName.id) {
-      obj1 = importDefault(dependencyMap[6]);
+      obj1 = importDefault(1392);
       const obj4 = {};
       ({ id: obj3.id, animated: obj3.animated } = emojiByIdOrName);
       obj4.size = num;
@@ -75,9 +77,9 @@ export default function EmojiIcon(size) {
       url = emojiByIdOrName.url;
     }
     obj1.src = url;
-    tmp11Result = jsx(importDefault(dependencyMap[5]), obj1);
+    tmp11Result = jsx(importDefault(5151), { style: size.style });
     const tmp11 = jsx;
-    const tmp14 = importDefault(dependencyMap[5]);
+    const tmp14 = importDefault(5151);
   }
   return tmp11Result;
 };

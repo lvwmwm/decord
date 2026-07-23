@@ -1,10 +1,12 @@
 // Module ID: 954
-// Function ID: 10345
+// Function ID: 10346
 // Name: asString
-// Dependencies: []
+// Dependencies: [77, 955, 934, 816, 937]
 // Exports: extractChatModelRequestAttributes, extractLLMRequestAttributes, extractLlmResponseAttributes, getInvocationParams
 
 // Module 954 (asString)
+import _defineProperty from "_defineProperty";
+
 function asString(arg0) {
   if ("string" === typeof arg0) {
     return arg0;
@@ -15,7 +17,7 @@ function asString(arg0) {
 }
 function normalizeMessageRole(str) {
   let formatted = str.toLowerCase();
-  const tmp2 = require(dependencyMap[1]).ROLE_MAP[formatted];
+  const tmp2 = require(955).ROLE_MAP[formatted];
   if (null != tmp2) {
     formatted = tmp2;
   }
@@ -51,7 +53,7 @@ function normalizeLangChainMessages(substr) {
   return substr.map((_getType) => {
     _getType = _getType._getType;
     if ("function" === typeof _getType) {
-      let obj = { role: callback2(_getType.call(_getType)), content: callback(_getType.content) };
+      let obj = { role: outer1_6(_getType.call(_getType)), content: outer1_5(_getType.content) };
       return obj;
     } else {
       const constructor = _getType.constructor;
@@ -60,19 +62,19 @@ function normalizeLangChainMessages(substr) {
         name = constructor.name;
       }
       if (name) {
-        obj = { role: callback2(callback3(name)), content: callback(_getType.content) };
+        obj = { role: outer1_6(outer1_7(name)), content: outer1_5(_getType.content) };
         return obj;
       } else if (_getType.type) {
         const obj1 = {};
         const _String2 = String;
-        obj1.role = callback2(String(_getType.type).toLowerCase());
-        obj1.content = callback(_getType.content);
+        obj1.role = outer1_6(String(_getType.type).toLowerCase());
+        obj1.content = outer1_5(_getType.content);
         return obj1;
       } else if (_getType.role) {
         const obj2 = {};
         const _String = String;
-        obj2.role = callback2(String(_getType.role));
-        obj2.content = callback(_getType.content);
+        obj2.role = outer1_6(String(_getType.role));
+        obj2.content = outer1_5(_getType.content);
         return obj2;
       } else {
         if (1 === _getType.lc) {
@@ -89,19 +91,19 @@ function normalizeLangChainMessages(substr) {
             const obj3 = {};
             let str4 = "user";
             if ("string" === typeof str3) {
-              str4 = callback3(str3);
+              str4 = outer1_7(str3);
             }
-            obj3.role = callback2(str4);
+            obj3.role = outer1_6(str4);
             const kwargs = _getType.kwargs;
             let content;
             if (null != kwargs) {
               content = kwargs.content;
             }
-            obj3.content = callback(content);
+            obj3.content = outer1_5(content);
             return obj3;
           }
         }
-        obj = { role: "user", content: callback(_getType.content) };
+        obj = { role: "user", content: outer1_5(_getType.content) };
         return obj;
       }
     }
@@ -112,11 +114,11 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
   if (null != arg0) {
     str = arg0;
   }
-  let tmpResult = tmp({}, require(dependencyMap[2]).GEN_AI_SYSTEM_ATTRIBUTE, asString(str));
-  tmpResult = tmp(tmpResult, require(dependencyMap[2]).GEN_AI_OPERATION_NAME_ATTRIBUTE, arg2);
+  let tmpResult = tmp({}, require(934).GEN_AI_SYSTEM_ATTRIBUTE, asString(str));
+  tmpResult = tmp(tmpResult, require(934).GEN_AI_OPERATION_NAME_ATTRIBUTE, arg2);
   const obj = {};
   const tmp2 = asString;
-  const tmpResult1 = closure_2(tmpResult, require(dependencyMap[2]).GEN_AI_REQUEST_MODEL_ATTRIBUTE, asString(arg1));
+  const tmpResult1 = _defineProperty(tmpResult, require(934).GEN_AI_REQUEST_MODEL_ATTRIBUTE, asString(arg1));
   if ("kwargs" in kwargs) {
     kwargs = kwargs.kwargs;
   }
@@ -138,7 +140,7 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
     }
     temperature = temperature1;
   }
-  setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_REQUEST_TEMPERATURE_ATTRIBUTE, temperature);
+  setNumberIfDefined(obj, require(934).GEN_AI_REQUEST_TEMPERATURE_ATTRIBUTE, temperature);
   let max_tokens;
   if (null != temperature) {
     max_tokens = temperature.max_tokens;
@@ -157,7 +159,7 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
     }
     max_tokens = max_tokens1;
   }
-  setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_REQUEST_MAX_TOKENS_ATTRIBUTE, max_tokens);
+  setNumberIfDefined(obj, require(934).GEN_AI_REQUEST_MAX_TOKENS_ATTRIBUTE, max_tokens);
   let top_p;
   if (null != temperature) {
     top_p = temperature.top_p;
@@ -169,28 +171,27 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
     }
     top_p = top_p1;
   }
-  setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_REQUEST_TOP_P_ATTRIBUTE, top_p);
+  setNumberIfDefined(obj, require(934).GEN_AI_REQUEST_TOP_P_ATTRIBUTE, top_p);
   let frequency_penalty;
   if (null != temperature) {
     frequency_penalty = temperature.frequency_penalty;
   }
-  setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_REQUEST_FREQUENCY_PENALTY_ATTRIBUTE, frequency_penalty);
+  setNumberIfDefined(obj, require(934).GEN_AI_REQUEST_FREQUENCY_PENALTY_ATTRIBUTE, frequency_penalty);
   let presence_penalty;
   if (null != temperature) {
     presence_penalty = temperature.presence_penalty;
   }
-  setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_REQUEST_PRESENCE_PENALTY_ATTRIBUTE, presence_penalty);
+  setNumberIfDefined(obj, require(934).GEN_AI_REQUEST_PRESENCE_PENALTY_ATTRIBUTE, presence_penalty);
   let tmp22 = temperature;
   if (temperature) {
     tmp22 = "stream" in temperature;
   }
   if (tmp22) {
     const _Boolean = Boolean;
-    setIfDefined(obj, require(dependencyMap[2]).GEN_AI_REQUEST_STREAM_ATTRIBUTE, Boolean(temperature.stream));
+    setIfDefined(obj, require(934).GEN_AI_REQUEST_STREAM_ATTRIBUTE, Boolean(temperature.stream));
   }
-  return Object.assign(closure_2(closure_2(tmpResult, require(dependencyMap[2]).GEN_AI_REQUEST_MODEL_ATTRIBUTE, asString(arg1)), require(dependencyMap[3]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, require(dependencyMap[1]).LANGCHAIN_ORIGIN), obj);
+  return Object.assign(_defineProperty(_defineProperty(tmpResult, require(934).GEN_AI_REQUEST_MODEL_ATTRIBUTE, asString(arg1)), require(816).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN, require(955).LANGCHAIN_ORIGIN), obj);
 }
-let closure_2 = require(dependencyMap[0]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 function setIfDefined(tmpResult, GEN_AI_REQUEST_MESSAGES_ATTRIBUTE, length) {
   if (null != length) {
@@ -238,10 +239,10 @@ export const extractChatModelRequestAttributes = function extractChatModelReques
     if (Array.isArray(arr)) {
       if (arr.length > 0) {
         arr = normalizeLangChainMessages(arr.flat());
-        setIfDefined(tmpResult, require(dependencyMap[2]).GEN_AI_REQUEST_MESSAGES_ORIGINAL_LENGTH_ATTRIBUTE, arr.length);
-        const result = require(dependencyMap[4]).truncateGenAiMessages(arr);
-        setIfDefined(tmpResult, require(dependencyMap[2]).GEN_AI_REQUEST_MESSAGES_ATTRIBUTE, asString(result));
-        const obj = require(dependencyMap[4]);
+        setIfDefined(tmpResult, require(934).GEN_AI_REQUEST_MESSAGES_ORIGINAL_LENGTH_ATTRIBUTE, arr.length);
+        const result = require(937) /* truncateTextByBytes */.truncateGenAiMessages(arr);
+        setIfDefined(tmpResult, require(934).GEN_AI_REQUEST_MESSAGES_ATTRIBUTE, asString(result));
+        const obj = require(937) /* truncateTextByBytes */;
       }
     }
   }
@@ -272,9 +273,9 @@ export const extractLLMRequestAttributes = function extractLLMRequestAttributes(
     const _Array = Array;
     if (Array.isArray(arr)) {
       if (arr.length > 0) {
-        setIfDefined(tmpResult, require(dependencyMap[2]).GEN_AI_REQUEST_MESSAGES_ORIGINAL_LENGTH_ATTRIBUTE, arr.length);
+        setIfDefined(tmpResult, require(934).GEN_AI_REQUEST_MESSAGES_ORIGINAL_LENGTH_ATTRIBUTE, arr.length);
         const mapped = arr.map((content) => ({ role: "user", content }));
-        setIfDefined(tmpResult, require(dependencyMap[2]).GEN_AI_REQUEST_MESSAGES_ATTRIBUTE, asString(mapped));
+        setIfDefined(tmpResult, require(934).GEN_AI_REQUEST_MESSAGES_ATTRIBUTE, asString(mapped));
       }
     }
   }
@@ -309,7 +310,7 @@ export const extractLlmResponseAttributes = function extractLlmResponseAttribute
       });
       const found = mapped.filter((arg0) => "string" === typeof arg0);
       if (found.length > 0) {
-        setIfDefined(obj, require(dependencyMap[2]).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, asString(found));
+        setIfDefined(obj, require(934).GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE, asString(found));
       }
       const generations2 = generations.generations;
       const items = [];
@@ -333,12 +334,13 @@ export const extractLlmResponseAttributes = function extractLlmResponseAttribute
               let tmp19 = item10056;
               let arr = items.push(tmp17);
             }
+            continue;
           }
         }
-        // continue
+        continue;
       }
       if (items.length > 0) {
-        setIfDefined(obj, require(dependencyMap[2]).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, asString(items));
+        setIfDefined(obj, require(934).GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE, asString(items));
       }
       if (closure_1) {
         const generations3 = generations.generations;
@@ -356,7 +358,7 @@ export const extractLlmResponseAttributes = function extractLlmResponseAttribute
         });
         const found1 = mapped1.filter((arg0) => "string" === typeof arg0);
         if (found1.length > 0) {
-          setIfDefined(obj, require(dependencyMap[2]).GEN_AI_RESPONSE_TEXT_ATTRIBUTE, asString(found1));
+          setIfDefined(obj, require(934).GEN_AI_RESPONSE_TEXT_ATTRIBUTE, asString(found1));
         }
         const flatResult2 = generations3.flat();
       }
@@ -366,12 +368,12 @@ export const extractLlmResponseAttributes = function extractLlmResponseAttribute
     if (llmOutput) {
       ({ tokenUsage, usage } = llmOutput);
       if (tokenUsage) {
-        setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE, tokenUsage.promptTokens);
-        setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE, tokenUsage.completionTokens);
-        setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE, tokenUsage.totalTokens);
+        setNumberIfDefined(obj, require(934).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE, tokenUsage.promptTokens);
+        setNumberIfDefined(obj, require(934).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE, tokenUsage.completionTokens);
+        setNumberIfDefined(obj, require(934).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE, tokenUsage.totalTokens);
       } else if (usage) {
-        setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE, usage.input_tokens);
-        setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE, usage.output_tokens);
+        setNumberIfDefined(obj, require(934).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE, usage.input_tokens);
+        setNumberIfDefined(obj, require(934).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE, usage.output_tokens);
         const _Number = Number;
         const NumberResult = Number(usage.input_tokens);
         const _Number2 = Number;
@@ -388,13 +390,13 @@ export const extractLlmResponseAttributes = function extractLlmResponseAttribute
         }
         const sum = num7 + num8;
         if (sum > 0) {
-          setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE, sum);
+          setNumberIfDefined(obj, require(934).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE, sum);
         }
         if (undefined !== usage.cache_creation_input_tokens) {
-          setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_USAGE_CACHE_CREATION_INPUT_TOKENS_ATTRIBUTE, usage.cache_creation_input_tokens);
+          setNumberIfDefined(obj, require(934).GEN_AI_USAGE_CACHE_CREATION_INPUT_TOKENS_ATTRIBUTE, usage.cache_creation_input_tokens);
         }
         if (undefined !== usage.cache_read_input_tokens) {
-          setNumberIfDefined(obj, require(dependencyMap[2]).GEN_AI_USAGE_CACHE_READ_INPUT_TOKENS_ATTRIBUTE, usage.cache_read_input_tokens);
+          setNumberIfDefined(obj, require(934).GEN_AI_USAGE_CACHE_READ_INPUT_TOKENS_ATTRIBUTE, usage.cache_read_input_tokens);
         }
       }
     }
@@ -431,7 +433,7 @@ export const extractLlmResponseAttributes = function extractLlmResponseAttribute
       model_name = model_name1;
     }
     if (model_name) {
-      setIfDefined(obj, require(dependencyMap[2]).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, model_name);
+      setIfDefined(obj, require(934).GEN_AI_RESPONSE_MODEL_ATTRIBUTE, model_name);
     }
     let id;
     if (null != llmOutput2) {
@@ -445,7 +447,7 @@ export const extractLlmResponseAttributes = function extractLlmResponseAttribute
       id = id1;
     }
     if (id) {
-      setIfDefined(obj, require(dependencyMap[2]).GEN_AI_RESPONSE_ID_ATTRIBUTE, id);
+      setIfDefined(obj, require(934).GEN_AI_RESPONSE_ID_ATTRIBUTE, id);
     }
     let stop_reason;
     if (null != llmOutput2) {
@@ -462,7 +464,7 @@ export const extractLlmResponseAttributes = function extractLlmResponseAttribute
       stop_reason = finish_reason;
     }
     if (stop_reason) {
-      setIfDefined(obj, require(dependencyMap[2]).GEN_AI_RESPONSE_STOP_REASON_ATTRIBUTE, asString(stop_reason));
+      setIfDefined(obj, require(934).GEN_AI_RESPONSE_STOP_REASON_ATTRIBUTE, asString(stop_reason));
     }
     return obj;
   }

@@ -1,20 +1,24 @@
-// Module ID: 9422
-// Function ID: 73361
+// Module ID: 9429
+// Function ID: 73402
 // Name: DiscordTag
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 4126, 8523, 2]
 // Exports: default
 
-// Module 9422 (DiscordTag)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { container: { typeAttr: "<string:1900043246>", Galaxy S4: "View", TRACEPARENT_REGEXP: "container" } };
-obj = { marginLeft: importDefault(dependencyMap[4]).space.PX_4 };
-obj.botTag = obj;
-let closure_6 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_profile/native/DiscordTag.tsx");
+// Module 9429 (DiscordTag)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { flexGrow: 1, alignItems: "center", flexDirection: "row" } };
+_createForOfIteratorHelperLoose = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.botTag = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/user_profile/native/DiscordTag.tsx");
 
 export default function DiscordTag(arg0) {
   let discriminatorStyle;
@@ -28,26 +32,26 @@ export default function DiscordTag(arg0) {
   if (hideBotTag === undefined) {
     hideBotTag = false;
   }
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.container };
   if (null != nick) {
-    obj = { style: nicknameStyle, children: nick };
-    let tmp4Result = callback(arg1(dependencyMap[5]).Text, obj);
+    obj = { variant: "text-md/semibold", maxFontSizeMultiplier: 2, style: nicknameStyle, lineClamp: 1, children: nick };
+    let tmp4Result = callback(require(4126) /* Text */.Text, obj);
   } else {
     tmp4Result = null;
     if (null != user) {
-      obj = { <string:1234295407>: null, <string:1325308068>: "end", <string:328797103>: null, <string:1391485314>: "secondary", style: usernameStyle };
+      obj = { variant: "text-md/semibold", style: usernameStyle, lineClamp: 1, maxFontSizeMultiplier: 2 };
       const items = [user.toString(), ];
       let tmp7 = !user.hasUniqueUsername();
       if (tmp7) {
-        const obj1 = { style: discriminatorStyle };
-        const items1 = ["Array", user.discriminator];
+        const obj1 = { variant: "text-md/semibold", color: "text-muted", style: discriminatorStyle };
+        const items1 = ["#", user.discriminator];
         obj1.children = items1;
-        tmp7 = callback2(arg1(dependencyMap[5]).Text, obj1);
+        tmp7 = callback2(require(4126) /* Text */.Text, obj1);
       }
       items[1] = tmp7;
       obj.children = items;
-      tmp4Result = callback2(arg1(dependencyMap[5]).Text, obj);
+      tmp4Result = callback2(require(4126) /* Text */.Text, obj);
       const tmp4 = callback2;
     }
   }
@@ -61,8 +65,8 @@ export default function DiscordTag(arg0) {
     tmp16 = null;
     if (!hideBotTag) {
       const obj2 = { style: tmp.botTag, verified: user.isVerifiedBot() };
-      tmp16 = callback(importDefault(dependencyMap[6]), obj2);
-      const tmp20 = importDefault(dependencyMap[6]);
+      tmp16 = callback(importDefault(8523), obj2);
+      const tmp20 = importDefault(8523);
     }
   }
   items2[1] = tmp16;

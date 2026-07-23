@@ -1,21 +1,22 @@
-// Module ID: 16436
-// Function ID: 126959
+// Module ID: 16553
+// Function ID: 129133
 // Name: items
-// Dependencies: []
+// Dependencies: [4042, 2]
 
-// Module 16436 (items)
-const _module = require(dependencyMap[0]);
-let obj = { shapes: "4e1581119cf1ddaae8c3aa4ebdd90f99", flex: "StickerIcon", sk: "png", defaultConfig: { "Bool(false)": true, "Bool(false)": false, "Bool(false)": false } };
-obj = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: {} };
+// Module 16553 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "user", id: "2025-06_native_intents", label: "Native Intents", defaultConfig: { searchEnabled: false, clearEnabled: false, activityEnabled: false } };
+obj = { id: 1, label: "All enabled", config: { searchEnabled: true, clearEnabled: true, activityEnabled: true } };
 const items = [obj, , , ];
-const obj1 = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: {} };
+const obj1 = { id: 2, label: "Clear Only", config: { searchEnabled: false, clearEnabled: true, activityEnabled: false } };
 items[1] = obj1;
-const obj2 = { displayNameStylesEnabled: "Array", submitButtonEnabled: "PREMIUM_TIER_2_DISCOUNT_ENDING", config: { "Bool(false)": "<string:37639497>", "Bool(false)": "<string:37618238>", "Bool(false)": "<string:37618238>" } };
+const obj2 = { id: 3, label: "Activities Only", config: { searchEnabled: false, clearEnabled: false, activityEnabled: true } };
 items[2] = obj2;
-items[3] = { config: {} };
+const obj3 = { id: 4, label: "Activities and Clear", config: { searchEnabled: false, clearEnabled: true, activityEnabled: true } };
+items[3] = obj3;
 obj.treatments = items;
-const experiment = _module.createExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/native_intents/NativeIntentsExperiment.tsx");
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/native_intents/NativeIntentsExperiment.tsx");
 
 export default experiment;

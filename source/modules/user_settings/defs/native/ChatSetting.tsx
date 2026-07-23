@@ -1,27 +1,27 @@
-// Module ID: 14174
-// Function ID: 107342
+// Module ID: 14288
+// Function ID: 109498
 // Name: route
-// Dependencies: []
+// Dependencies: [653, 10095, 1212, 14289, 14291, 2]
 
-// Module 14174 (route)
-const _module = require(dependencyMap[1]);
-let obj = {
+// Module 14288 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t./VQax8);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["/VQax8"]);
   },
   parent: null,
-  IconComponent: require(dependencyMap[3]).ImageTextIcon,
+  IconComponent: require("ImageTextIcon").ImageTextIcon,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.TEXT,
+  route: require("ME").UserSettingsSections.TEXT,
   getComponent() {
-    return require(dependencyMap[4]).default;
+    return require(14291) /* VideoUploadQualityNitroUpsell */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ChatSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ChatSetting.tsx");
 
 export default route;

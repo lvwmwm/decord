@@ -1,60 +1,63 @@
-// Module ID: 12140
-// Function ID: 93529
+// Module ID: 12254
+// Function ID: 95680
 // Name: setUseEntranceAnimationState
-// Dependencies: []
+// Dependencies: [57, 31, 1273, 621, 682, 4131, 3991, 2]
 // Exports: useEntranceAnimation
 
-// Module 12140 (setUseEntranceAnimationState)
+// Module 12254 (setUseEntranceAnimationState)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import keys from "keys";
+
+const require = arg1;
 function setUseEntranceAnimationState(arg0) {
-  const arg1 = arg0;
-  arg1(dependencyMap[4]).batchUpdates(() => state.setState(arg0));
+  const _require = arg0;
+  _require(682).batchUpdates(() => outer1_5.setState(closure_0));
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let obj = { duration: 300, easing: arg1(dependencyMap[2]).STANDARD_EASING };
-obj = arg1(dependencyMap[3]).create(() => ({ isComplete: false }));
+let obj = { duration: 300, easing: require("Button").STANDARD_EASING };
+obj = keys.create(() => ({ isComplete: false }));
 let closure_6 = { code: "function useEntranceAnimationTsx1(){const{runOnJS,setUseEntranceAnimationState}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});}" };
 let closure_7 = { code: "function useEntranceAnimationTsx2(){const{runOnJS,setUseEntranceAnimationState,incrementLoads}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});runOnJS(incrementLoads)();}" };
-const obj2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/media_viewer/native/useEntranceAnimation.tsx");
+let result = require("Button").fileFinishedImporting("modules/media_viewer/native/useEntranceAnimation.tsx");
 
 export const useEntranceAnimationState = obj;
 export const useEntranceAnimation = function useEntranceAnimation(entranceAnimationDriver) {
+  let dependencyMap;
   let tmp2;
-  const arg1 = entranceAnimationDriver;
-  [tmp2, closure_1] = callback(React.useState(0), 2);
-  const callback = React.useCallback(() => {
+  let closure_0 = entranceAnimationDriver;
+  [tmp2, dependencyMap] = callback(React.useState(0), 2);
+  callback = React.useCallback(() => {
     callback((arg0) => arg0 + 1);
   }, []);
   const items = [entranceAnimationDriver];
   const items1 = [callback, entranceAnimationDriver];
   const handleLoadStart = React.useCallback(() => {
-    let obj = arg0(closure_1[4]);
-    obj.batchUpdates(() => state.setState({ isComplete: false }));
+    let obj = entranceAnimationDriver(outer1_1[4]);
+    obj.batchUpdates(() => outer2_5.setState({ isComplete: false }));
     const fn = function t() {
-      callback(closure_1[6]).runOnJS(closure_8)({ isComplete: true });
+      callback(outer2_1[6]).runOnJS(outer2_8)({ isComplete: true });
     };
-    obj = { runOnJS: arg0(closure_1[6]).runOnJS, setUseEntranceAnimationState: closure_8 };
+    obj = { runOnJS: entranceAnimationDriver(outer1_1[6]).runOnJS, setUseEntranceAnimationState: outer1_8 };
     fn.__closure = obj;
     fn.__workletHash = 7427534745615;
-    fn.__initData = closure_6;
-    const result = arg0.set(arg0(closure_1[5]).withTiming(1, closure_4, "respect-motion-settings", fn));
+    fn.__initData = outer1_6;
+    const result = entranceAnimationDriver.set(entranceAnimationDriver(outer1_1[5]).withTiming(1, outer1_4, "respect-motion-settings", fn));
   }, items);
-  const handleError = React.useCallback((self) => {
-    if (1 !== self.get()) {
-      let obj = self(closure_1[4]);
-      obj.batchUpdates(() => state.setState({ isComplete: false }));
-      const obj2 = self(closure_1[5]);
+  const handleError = React.useCallback(() => {
+    if (1 !== entranceAnimationDriver.get()) {
+      let obj = entranceAnimationDriver(outer1_1[4]);
+      obj.batchUpdates(() => outer2_5.setState({ isComplete: false }));
+      const obj2 = entranceAnimationDriver(outer1_1[5]);
       const fn = function t() {
-        callback(closure_1[6]).runOnJS(closure_8)({ isComplete: true });
-        const obj = callback(closure_1[6]);
-        callback(closure_1[6]).runOnJS(closure_2)();
+        callback(outer2_1[6]).runOnJS(outer2_8)({ isComplete: true });
+        const obj = callback(outer2_1[6]);
+        callback(outer2_1[6]).runOnJS(outer1_2)();
       };
-      obj = { runOnJS: self(closure_1[6]).runOnJS, setUseEntranceAnimationState: closure_8, incrementLoads: callback };
+      obj = { runOnJS: entranceAnimationDriver(outer1_1[6]).runOnJS, setUseEntranceAnimationState: outer1_8, incrementLoads: callback };
       fn.__closure = obj;
       fn.__workletHash = 9904090637386;
-      fn.__initData = closure_7;
-      const result = self.set(obj2.withTiming(1, closure_4, "respect-motion-settings", fn));
+      fn.__initData = outer1_7;
+      const result = entranceAnimationDriver.set(obj2.withTiming(1, outer1_4, "respect-motion-settings", fn));
     } else {
       callback();
     }

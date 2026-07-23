@@ -1,15 +1,23 @@
 // Module ID: 562
 // Function ID: 6794
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 162, 57, 2]
 
 // Module 562 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_5 from "_slicedToArray";
+import importDefaultResult from "_wrapNativeSuper";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _slicedToArray = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _slicedToArray;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -37,14 +45,7 @@ function convertOldFormError(arg0) {
   }
   return obj;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[6]);
-const importDefaultResult = importDefault(dependencyMap[5]);
-const tmp3 = (arg0) => {
+let tmp3 = ((arg0) => {
   class APIError {
     constructor(arg0, arg1) {
       str = arg2;
@@ -84,8 +85,8 @@ const tmp3 = (arg0) => {
             obj2.status = arg0.status;
             num = 50035;
             obj2.code = 50035;
-            tmp3 = closure_8;
-            obj2.errors = closure_8(captcha_key);
+            tmp3 = outer1_8;
+            obj2.errors = outer1_8(captcha_key);
             tmp5 = obj2;
           } else {
             str2 = "captcha_key";
@@ -112,13 +113,13 @@ const tmp3 = (arg0) => {
       }
       items = [];
       items[0] = str;
-      obj6 = closure_3(tmp);
-      tmp7 = closure_2;
-      if (closure_6()) {
+      obj6 = outer1_3(tmp);
+      tmp7 = outer1_2;
+      if (outer1_6()) {
         tmp9 = globalThis;
         _Reflect = Reflect;
-        tmp10 = closure_3;
-        constructResult = Reflect.construct(obj6, items, closure_3(self).constructor);
+        tmp10 = outer1_3;
+        constructResult = Reflect.construct(obj6, items, outer1_3(self).constructor);
       } else {
         constructResult = obj6.apply(self, items);
       }
@@ -139,7 +140,6 @@ const tmp3 = (arg0) => {
       return tmp7Result;
     }
   }
-  let closure_0 = APIError;
   callback2(APIError, arg0);
   let obj = {
     key: "hasFieldErrors",
@@ -152,7 +152,7 @@ const tmp3 = (arg0) => {
       return tmp2;
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "getFieldErrors",
     value(arg0) {
@@ -197,7 +197,7 @@ const tmp3 = (arg0) => {
   items[3] = {
     key: "getAllFieldErrorsUnder",
     value(_errors) {
-      const APIError = this;
+      const self = this;
       const obj = {};
       _errors = undefined;
       if (null != _errors) {
@@ -211,9 +211,9 @@ const tmp3 = (arg0) => {
         obj.__root_errors = _errors;
       }
       if (undefined !== _errors) {
-        const _Object = Object;
-        const entries = Object.entries(_errors);
-        const item = entries.forEach((arg0) => {
+        let _Object = Object;
+        let entries = Object.entries(_errors);
+        let item = entries.forEach((arg0) => {
           let tmp;
           let tmp2;
           [tmp, tmp2] = arg0;
@@ -225,10 +225,10 @@ const tmp3 = (arg0) => {
               let tmp2;
               [tmp, tmp2] = arg0;
               if (tmp === "__root_errors") {
-                closure_1[closure_0] = tmp2;
+                outer1_1[_slicedToArray] = tmp2;
               } else {
                 const _HermesInternal = HermesInternal;
-                closure_1["" + closure_0 + "." + tmp] = tmp2;
+                outer1_1["" + _slicedToArray + "." + tmp] = tmp2;
               }
             });
           }
@@ -281,8 +281,8 @@ const tmp3 = (arg0) => {
     }
   };
   return callback(APIError, items);
-}(importDefault(dependencyMap[5])(Error));
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/http-utils/V8APIError.tsx");
+})(require("_wrapNativeSuper")(Error));
+let result = require("_possibleConstructorReturn").fileFinishedImporting("../discord_common/js/packages/http-utils/V8APIError.tsx");
 
 export const INVALID_FORM_BODY_ERROR_CODE = 50035;
 export const ROOT_FORM_ERRORS_KEY = "__root_errors";

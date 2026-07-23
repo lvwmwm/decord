@@ -1,69 +1,71 @@
 // Module ID: 161
 // Function ID: 2461
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 162, 99, 100, 129]
 
 // Module 161 (_isNativeReflectConstruct)
+import _classPrivateFieldBase from "_classPrivateFieldBase";
+import _classPrivateFieldKey from "_classPrivateFieldKey";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_5 from "_classPrivateFieldBase";
+import importDefaultResult1 from "_classPrivateFieldKey";
+import setPlatformObject from "setPlatformObject";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _classPrivateFieldBase = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _classPrivateFieldBase;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[6]);
-const importDefaultResult1 = importDefault(dependencyMap[7]);
-let closure_6 = {};
-let obj = { 410598147: true, -980589486: 1, -1039773163: false, 588628111: "bindGuildMenu", 2030044269: null, 352322695: true, 268436602: 2, -1711274952: true, -1543502706: "/assets/images/auth", -1241512818: 1920, -1140849522: 1080, 201327758: null, -1342176206: "c2620d71d0c18f7cbdf536c0e7d3a788", 1946158222: "background-splash-dev", 1577059366: "jpg", -1459616697: "yellow", 939525212: "yellow", 1895826563: "grey", -1795160978: "bold", 754975862: "green", -268434301: "magenta", -1174403985: "red", 1862272094: "BHD", -2147482504: "Manual", 1392510061: "isArray" };
+let closure_6 = { IndexSizeError: 1, HierarchyRequestError: 3, WrongDocumentError: 4, InvalidCharacterError: 5, NoModificationAllowedError: 7, NotFoundError: 8, NotSupportedError: 9, InUseAttributeError: 10, InvalidStateError: 11, SyntaxError: 12, InvalidModificationError: 13, NamespaceError: 14, InvalidAccessError: 15, TypeMismatchError: 17, SecurityError: 18, NetworkError: 19, AbortError: 20, URLMismatchError: 21, QuotaExceededError: 22, TimeoutError: 23, InvalidNodeTypeError: 24, DataCloneError: 25 };
+let obj = { INDEX_SIZE_ERR: 1, DOMSTRING_SIZE_ERR: 2, HIERARCHY_REQUEST_ERR: 3, WRONG_DOCUMENT_ERR: 4, INVALID_CHARACTER_ERR: 5, NO_DATA_ALLOWED_ERR: 6, NO_MODIFICATION_ALLOWED_ERR: 7, NOT_FOUND_ERR: 8, NOT_SUPPORTED_ERR: 9, INUSE_ATTRIBUTE_ERR: 10, INVALID_STATE_ERR: 11, SYNTAX_ERR: 12, INVALID_MODIFICATION_ERR: 13, NAMESPACE_ERR: 14, INVALID_ACCESS_ERR: 15, VALIDATION_ERR: 16, TYPE_MISMATCH_ERR: 17, SECURITY_ERR: 18, NETWORK_ERR: 19, ABORT_ERR: 20, URL_MISMATCH_ERR: 21, QUOTA_EXCEEDED_ERR: 22, TIMEOUT_ERR: 23, INVALID_NODE_TYPE_ERR: 24, DATA_CLONE_ERR: 25 };
 let closure_7 = importDefaultResult1("name");
 let closure_8 = importDefaultResult1("code");
-const tmp4 = (arg0) => {
+const tmp4 = ((arg0) => {
   class DOMException {
     constructor(arg0, arg1) {
       self = this;
       tmp = DOMException(this, DOMException);
       items = [];
       items[0] = arg0;
-      obj = closure_3(DOMException);
-      tmp2 = closure_2;
-      if (closure_10()) {
+      obj = outer1_3(DOMException);
+      tmp2 = outer1_2;
+      if (outer1_10()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_3;
-        constructResult = Reflect.construct(obj, items, closure_3(self).constructor);
+        tmp5 = outer1_3;
+        constructResult = Reflect.construct(obj, items, outer1_3(self).constructor);
       } else {
         constructResult = obj.apply(self, items);
       }
       tmp2Result = tmp2(self, constructResult);
-      definePropertyResult = Object.defineProperty(tmp2Result, closure_7, { writable: true, value: undefined });
-      definePropertyResult1 = Object.defineProperty(tmp2Result, closure_8, { writable: true, value: undefined });
+      definePropertyResult = Object.defineProperty(tmp2Result, outer1_7, { writable: true, value: undefined });
+      definePropertyResult1 = Object.defineProperty(tmp2Result, outer1_8, { writable: true, value: undefined });
       if (undefined === arg1) {
-        tmp17 = closure_5;
-        tmp18 = closure_7;
+        tmp17 = outer1_5;
+        tmp18 = outer1_7;
         str = "Error";
-        closure_5(tmp2Result, closure_7)[closure_7] = "Error";
-        tmp19 = closure_8;
+        outer1_5(tmp2Result, outer1_7)[outer1_7] = "Error";
+        tmp19 = outer1_8;
         num2 = 0;
-        closure_5(tmp2Result, closure_8)[closure_8] = 0;
+        outer1_5(tmp2Result, outer1_8)[outer1_8] = 0;
       } else {
-        tmp9 = closure_5;
-        tmp10 = closure_7;
+        tmp9 = outer1_5;
+        tmp10 = outer1_7;
         _String = String;
-        tmp11 = closure_5(tmp2Result, closure_7);
-        tmp11[closure_7] = String(arg1);
-        tmp12 = closure_8;
-        tmp14 = closure_6;
-        tmp15 = closure_6[tmp2Result.name];
+        tmp11 = outer1_5(tmp2Result, outer1_7);
+        tmp11[outer1_7] = String(arg1);
+        tmp12 = outer1_8;
+        tmp14 = outer1_6;
+        tmp15 = outer1_6[tmp2Result.name];
         tmp16 = null;
         num = 0;
-        tmp13 = closure_5(tmp2Result, closure_8);
+        tmp13 = outer1_5(tmp2Result, outer1_8);
         if (null != tmp15) {
           num = tmp15;
         }
@@ -72,24 +74,24 @@ const tmp4 = (arg0) => {
       return tmp2Result;
     }
   }
-  let closure_0 = DOMException;
   callback2(DOMException, arg0);
   let obj = {
     key: "name",
     get() {
-      return callback2(this, closure_7)[closure_7];
+      return outer1_5(this, outer1_7)[outer1_7];
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "code",
     get() {
-      return callback2(this, closure_8)[closure_8];
+      return outer1_5(this, outer1_8)[outer1_8];
     }
   };
   items[1] = obj;
   return callback(DOMException, items);
-}(importDefault(dependencyMap[5])(Error));
+})(require("_wrapNativeSuper")(Error));
+let closure_9 = tmp4;
 for (const key10049 in obj) {
   let tmp6 = key10049;
   let _Object = Object;
@@ -100,13 +102,13 @@ for (const key10049 in obj) {
   obj = { enumerable: true };
   obj.value = obj[key10049];
   let definePropertyResult2 = Object.defineProperty(tmp4.prototype, key10049, obj);
+  continue;
 }
-let obj1 = arg1(dependencyMap[8]);
-obj1 = {
+setPlatformObject = {
   clone(message) {
-    return new tmp4(message.message, message.name);
+    return new closure_9(message.message, message.name);
   }
 };
-obj1.setPlatformObject(tmp4, obj1);
+setPlatformObject.setPlatformObject(tmp4, setPlatformObject);
 
 export default tmp4;

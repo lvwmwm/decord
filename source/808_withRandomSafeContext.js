@@ -1,9 +1,11 @@
 // Module ID: 808
-// Function ID: 9065
+// Function ID: 9066
 // Name: withRandomSafeContext
-// Dependencies: [0]
+// Dependencies: [798]
 
 // Module 808 (withRandomSafeContext)
+const require = arg1;
+const dependencyMap = arg6;
 function withRandomSafeContext(arg0) {
   if (undefined !== callback) {
     if (callback) {
@@ -15,10 +17,10 @@ function withRandomSafeContext(arg0) {
   } else {
     const _Symbol = Symbol;
     const forResult = Symbol.for("__SENTRY_SAFE_RANDOM_ID_WRAPPER__");
-    const GLOBAL_OBJ = arg1(arg6[0]).GLOBAL_OBJ;
+    const GLOBAL_OBJ = require(798).GLOBAL_OBJ;
     if (forResult in GLOBAL_OBJ) {
       if ("function" === typeof GLOBAL_OBJ[forResult]) {
-        let callback = tmp7;
+        callback = tmp7;
         let tmp7Result = tmp7(arg0);
       }
       return tmp7Result;

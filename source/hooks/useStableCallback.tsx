@@ -1,9 +1,9 @@
-// Module ID: 8385
-// Function ID: 66755
-// Dependencies: []
+// Module ID: 8391
+// Function ID: 66792
+// Name: set
+// Dependencies: [2, 8392]
 
-// Module 8385
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("hooks/useStableCallback.tsx");
+// Module 8391 (set)
+const result = require("set").fileFinishedImporting("hooks/useStableCallback.tsx");
 
-export default importDefault(dependencyMap[1]);
+export { default } from "useStableCallback";

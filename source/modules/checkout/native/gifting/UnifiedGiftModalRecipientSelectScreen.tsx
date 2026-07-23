@@ -1,34 +1,39 @@
-// Module ID: 8810
-// Function ID: 69448
+// Module ID: 8817
+// Function ID: 69489
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: []
+// Dependencies: [31, 27, 8818, 33, 4130, 689, 1456, 8819, 8779, 2]
 // Exports: default
 
-// Module 8810 (UnifiedGiftModalRecipientSelectScreen)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const UserRowModes = arg1(dependencyMap[2]).UserRowModes;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { "Null": "vertical", "Null": false, backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND };
-obj.container = obj;
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalRecipientSelectScreen.tsx");
+// Module 8817 (UnifiedGiftModalRecipientSelectScreen)
+import "result";
+import { View } from "get ActivityIndicator";
+import { UserRowModes } from "UserRowModes";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, paddingTop: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("UserRowModes").fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalRecipientSelectScreen.tsx");
 
 export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
-  const arg1 = setRecipientUser.setRecipientUser;
-  let obj = arg1(dependencyMap[6]);
+  setRecipientUser = setRecipientUser.setRecipientUser;
+  let obj = setRecipientUser(1456);
   const importDefault = obj.useNavigation();
-  obj = { style: callback().container, children: jsx(importDefault(dependencyMap[7]), obj) };
+  obj = { style: _createForOfIteratorHelperLoose().container, children: jsx(importDefault(8819), obj) };
   obj = {
     onSelectUser(user) {
       setRecipientUser(user);
-      navigation.navigate(setRecipientUser(closure_2[8]).UnifiedGiftModalScreens.GIFT_DETAIL);
+      navigation.navigate(setRecipientUser(outer1_2[8]).UnifiedGiftModalScreens.GIFT_DETAIL);
     },
     rowMode: UserRowModes.NONE,
     disableGradient: true,
     disableThemedGradient: true
   };
-  return <View {...obj} />;
+  return <View onSelectUser={function onSelectUser(user) {
+    setRecipientUser(user);
+    navigation.navigate(setRecipientUser(outer1_2[8]).UnifiedGiftModalScreens.GIFT_DETAIL);
+  }} rowMode={UserRowModes.NONE} disableGradient disableThemedGradient />;
 };

@@ -1,26 +1,26 @@
-// Module ID: 6680
-// Function ID: 51412
+// Module ID: 6685
+// Function ID: 51444
 // Name: useShouldShowPremiumTrialUserSettingsAvatarBadge
-// Dependencies: []
+// Dependencies: [1851, 6686, 3946, 1334, 7114, 3776, 1212, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 6680 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
-let closure_2 = require(dependencyMap[0]).PremiumSubscriptionSKUToPremiumType;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/premium/native/MobileTrialUtils.tsx");
+// Module 6685 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
+import { PremiumSubscriptionSKUToPremiumType as closure_2 } from "GuildFeatures";
+
+let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporting("modules/premium/native/MobileTrialUtils.tsx");
 
 export const useShouldShowPremiumTrialUserSettingsAvatarBadge = function useShouldShowPremiumTrialUserSettingsAvatarBadge() {
   let expires_at;
-  const premiumTrialOffer = require(dependencyMap[1]).usePremiumTrialOffer();
-  const obj = require(dependencyMap[1]);
-  const result = require(dependencyMap[2]).useIsDismissibleContentDismissed_UNSAFE(require(dependencyMap[3]).DismissibleContent.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE);
+  const premiumTrialOffer = require(6686) /* useGetTrialOffer */.usePremiumTrialOffer();
+  const obj = require(6686) /* useGetTrialOffer */;
+  const result = require(3946) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1334) /* DismissibleContent */.DismissibleContent.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE);
   if (null != premiumTrialOffer) {
     expires_at = premiumTrialOffer.expires_at;
   }
   return null != premiumTrialOffer && null == expires_at && !result;
 };
 export const usePremiumTrialOfferPremiumType = function usePremiumTrialOfferPremiumType() {
-  const premiumTrialOffer = require(dependencyMap[1]).usePremiumTrialOffer();
+  const premiumTrialOffer = require(6686) /* useGetTrialOffer */.usePremiumTrialOffer();
   let sku_id;
   if (null != premiumTrialOffer) {
     const subscription_trial = premiumTrialOffer.subscription_trial;
@@ -28,10 +28,10 @@ export const usePremiumTrialOfferPremiumType = function usePremiumTrialOfferPrem
       sku_id = subscription_trial.sku_id;
     }
   }
-  return closure_2[sku_id];
+  return table[sku_id];
 };
 export const useNitroTrialCtaOverride = function useNitroTrialCtaOverride(user_profile_premium_upsell_card) {
-  let obj = require(dependencyMap[1]);
+  let obj = require(6686) /* useGetTrialOffer */;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let subscription_trial;
   if (null != premiumTrialOffer) {
@@ -42,16 +42,16 @@ export const useNitroTrialCtaOverride = function useNitroTrialCtaOverride(user_p
   } else {
     obj = { location: user_profile_premium_upsell_card };
     if (obj5.isAndroidTwoWeekTrialsTrialCTAEnabled(obj)) {
-      let obj1 = require(dependencyMap[5]);
+      let obj1 = require(3776) /* _createForOfIteratorHelperLoose */;
       obj = {};
       ({ interval: obj3.intervalType, interval_count: obj3.intervalCount } = subscription_trial);
       const result = obj1.formatIntervalDuration(obj);
-      const intl = require(dependencyMap[6]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       obj1 = { duration: result };
-      return intl.formatToPlainString(require(dependencyMap[6]).t.6xpY54, obj1);
+      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["6xpY54"], obj1);
     } else {
       return null;
     }
-    const obj5 = require(dependencyMap[4]);
+    obj5 = require(7114) /* apexExperiment */;
   }
 };

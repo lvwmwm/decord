@@ -1,17 +1,19 @@
-// Module ID: 7422
-// Function ID: 59660
+// Module ID: 7427
+// Function ID: 59694
 // Name: useIsInReverseTrial
-// Dependencies: []
+// Dependencies: [1849, 566, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 7422 (useIsInReverseTrial)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/premium/ReverseTrialUtils.native.tsx");
+// Module 7427 (useIsInReverseTrial)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("modules/premium/ReverseTrialUtils.native.tsx");
 
 export const useIsInReverseTrial = function useIsInReverseTrial() {
-  const items = [closure_2];
-  return arg1(dependencyMap[1]).useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  const items = [_isNativeReflectConstruct];
+  return require(566) /* initialize */.useStateFromStores(items, () => {
+    const currentUser = outer1_2.getCurrentUser();
     let isOnReverseTrialResult;
     if (null != currentUser) {
       isOnReverseTrialResult = currentUser.isOnReverseTrial();

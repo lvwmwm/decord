@@ -1,9 +1,12 @@
 // Module ID: 184
 // Function ID: 2638
 // Name: parseErrorStack
-// Dependencies: []
+// Dependencies: [185, 186]
 
 // Module 184 (parseErrorStack)
+const global = arg0;
+const require = arg1;
+const dependencyMap = arg6;
 arg5.default = function parseErrorStack(defaultResult1) {
   let iter = defaultResult1;
   if (null == defaultResult1) {
@@ -12,8 +15,8 @@ arg5.default = function parseErrorStack(defaultResult1) {
     const _Array = Array;
     if (Array.isArray(iter)) {
       return iter;
-    } else if (defaultResult1.HermesInternal) {
-      let arr = arg1(arg6[1]);
+    } else if (global.HermesInternal) {
+      let arr = require(186) /* parseLine */;
       const items = [];
       const entries = arr.default(iter).entries;
       iter = entries[Symbol.iterator]();
@@ -49,7 +52,7 @@ arg5.default = function parseErrorStack(defaultResult1) {
             arr = items.push(arr);
           }
         }
-        // continue
+        continue;
       }
       let mapped = items;
     } else {
@@ -64,6 +67,6 @@ arg5.default = function parseErrorStack(defaultResult1) {
         return Object.assign({}, column, obj);
       });
     }
-    const obj3 = arg1(arg6[0]);
+    obj3 = require(185) /* parse */;
   }
 };

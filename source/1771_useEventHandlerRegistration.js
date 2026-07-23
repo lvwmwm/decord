@@ -1,20 +1,21 @@
 // Module ID: 1771
-// Function ID: 19737
+// Function ID: 19738
 // Name: useEventHandlerRegistration
-// Dependencies: []
+// Dependencies: [31, 27, 1772]
 // Exports: useAnimatedValue, useEventHandlerRegistration
 
 // Module 1771 (useEventHandlerRegistration)
-const useRef = require(dependencyMap[0]).useRef;
-const Animated = require(dependencyMap[1]).Animated;
+import { useRef } from "result";
+import { Animated } from "get ActivityIndicator";
+
 
 export function useEventHandlerRegistration(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   return function onRegisterHandler(arg0) {
     function attachWorkletHandlers() {
-      const findNodeHandleResult = arg0(closure_1[2]).findNodeHandle(arg0.current);
+      const findNodeHandleResult = ref(outer2_1[2]).findNodeHandle(ref.current);
       if (findNodeHandleResult) {
-        if ("workletEventHandler" in arg0) {
+        if ("workletEventHandler" in ref) {
           obj2.workletEventHandler.registerForEvents(findNodeHandleResult);
           const workletEventHandler = obj2.workletEventHandler;
         } else {
@@ -29,9 +30,9 @@ export function useEventHandlerRegistration(arg0) {
       queueMicrotask(attachWorkletHandlers);
     }
     return () => {
-      const findNodeHandleResult = arg0(closure_1[2]).findNodeHandle(arg0.current);
+      const findNodeHandleResult = ref(outer2_1[2]).findNodeHandle(ref.current);
       if (findNodeHandleResult) {
-        if ("workletEventHandler" in arg0) {
+        if ("workletEventHandler" in ref) {
           obj2.workletEventHandler.unregisterFromEvents(findNodeHandleResult);
           const workletEventHandler = obj2.workletEventHandler;
         } else {

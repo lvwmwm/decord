@@ -1,12 +1,12 @@
-// Module ID: 9776
-// Function ID: 76016
+// Module ID: 9783
+// Function ID: 76057
 // Name: zustandStore
-// Dependencies: []
+// Dependencies: [3998, 662, 2]
 
-// Module 9776 (zustandStore)
-let closure_0 = require(dependencyMap[1]).ProfileCustomizationSubsection;
-const zustandStore = require(dependencyMap[0]).createZustandStore(() => ({ subsection: constants.USER_PROFILE, scrollPosition: null }));
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/profile_customization/ProfileCustomizationNavigationStore.tsx");
+// Module 9783 (zustandStore)
+import { ProfileCustomizationSubsection as closure_0 } from "MAX_FAVORITES";
+
+const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ subsection: constants.USER_PROFILE, scrollPosition: null }));
+const result = require("set").fileFinishedImporting("modules/profile_customization/ProfileCustomizationNavigationStore.tsx");
 
 export default zustandStore;

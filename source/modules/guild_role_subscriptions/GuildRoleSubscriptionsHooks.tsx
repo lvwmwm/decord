@@ -1,53 +1,61 @@
-// Module ID: 13987
-// Function ID: 106266
+// Module ID: 14101
+// Function ID: 108422
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [5, 57, 31, 4808, 3752, 566, 5636, 5122, 14102, 14103, 11323, 1327, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 13987 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 14101 (_createForOfIteratorHelperLoose)
+import initialize from "initialize";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+
+let require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,7 +94,7 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function useFetchListingsForGuild(guildId) {
   let obj = arg1;
-  const arg1 = guildId;
+  const _require = guildId;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -94,47 +102,41 @@ function useFetchListingsForGuild(guildId) {
   if (flag === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   let flag2 = obj.includeSoftDeleted;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const importAll = flag2;
   const countryCode = obj.countryCode;
-  const dependencyMap = countryCode;
   const dontFetchWhileTrue = obj.dontFetchWhileTrue;
-  let closure_4 = dontFetchWhileTrue;
-  let closure_5;
-  let React;
-  const items = [closure_7];
-  const stateFromStores = arg1(dependencyMap[5]).useStateFromStores(items, () => connected.isConnected());
-  closure_5 = stateFromStores;
-  const obj2 = arg1(dependencyMap[5]);
+  let stateFromStores;
+  let ref;
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = _require(countryCode[5]).useStateFromStores(items, () => outer1_7.isConnected());
+  const obj2 = _require(countryCode[5]);
   const items1 = [closure_8];
-  const stateFromStores1 = arg1(dependencyMap[5]).useStateFromStores(items1, () => {
-    if (null != arg0) {
-      let FETCHED = subscriptionGroupListingsForGuildFetchState.getSubscriptionGroupListingsForGuildFetchState(arg0);
+  const stateFromStores1 = _require(countryCode[5]).useStateFromStores(items1, () => {
+    if (null != closure_0) {
+      let FETCHED = outer1_8.getSubscriptionGroupListingsForGuildFetchState(closure_0);
     } else {
-      FETCHED = constants.FETCHED;
+      FETCHED = outer1_9.FETCHED;
     }
     return FETCHED;
   });
-  const obj3 = arg1(dependencyMap[5]);
-  React = React.useRef(flag);
+  ref = ref.useRef(flag);
   const items2 = [stateFromStores, guildId, flag2, flag, countryCode, dontFetchWhileTrue];
-  const effect = React.useEffect(() => {
-    if (null != arg0) {
+  const effect = ref.useEffect(() => {
+    if (null != closure_0) {
       if (stateFromStores) {
         if (true !== dontFetchWhileTrue) {
           let tmp5 = flag;
           if (!flag) {
-            tmp5 = tmp4 === constants.NOT_FETCHED;
+            tmp5 = tmp4 === outer1_9.NOT_FETCHED;
           }
           if (tmp5) {
             ref.current = false;
             let obj = flag2(countryCode[6]);
             obj = { includeSoftDeleted: false, countryCode };
-            const allSubscriptionListingsDataForGuild = obj.fetchAllSubscriptionListingsDataForGuild(arg0, obj);
+            const allSubscriptionListingsDataForGuild = obj.fetchAllSubscriptionListingsDataForGuild(closure_0, obj);
           }
         }
       }
@@ -150,7 +152,7 @@ function useFetchListingsForGuild(guildId) {
 }
 function useSubscriptionListingsForGroup(id, arg1) {
   let obj = arg1;
-  arg1 = id;
+  const _require = id;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -158,38 +160,36 @@ function useSubscriptionListingsForGroup(id, arg1) {
   if (flag === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   let flag2 = obj.includeUnpublished;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const importAll = flag2;
-  const items = [closure_8];
+  let items = [closure_8];
   const items1 = [id, flag, flag2];
-  return arg1(dependencyMap[5]).useStateFromStoresArray(items, () => {
+  return _require(566).useStateFromStoresArray(items, () => {
     let iter2;
-    if (null == arg0) {
+    if (null == closure_0) {
       return [];
     } else {
-      const subscriptionGroupListing = subscriptionGroupListing.getSubscriptionGroupListing(arg0);
+      const subscriptionGroupListing = outer1_8.getSubscriptionGroupListing(closure_0);
       if (null == subscriptionGroupListing) {
         return [];
       } else {
         const items = [];
-        const tmp2 = callback(subscriptionGroupListing.subscription_listings_ids);
+        const tmp2 = outer1_11(subscriptionGroupListing.subscription_listings_ids);
         let iter = tmp2();
         if (!iter.done) {
           do {
-            let tmp3 = closure_8;
-            let subscriptionListing = closure_8.getSubscriptionListing(iter.value);
+            let tmp3 = outer1_8;
+            let subscriptionListing = outer1_8.getSubscriptionListing(iter.value);
             if (null != subscriptionListing) {
               let soft_deleted = subscriptionListing.soft_deleted;
               if (soft_deleted) {
-                let tmp5 = closure_1;
-                soft_deleted = !closure_1;
+                let tmp5 = flag;
+                soft_deleted = !flag;
               }
               if (!soft_deleted) {
-                let tmp6 = subscriptionListing.published || closure_2;
+                let tmp6 = subscriptionListing.published || flag2;
                 if (tmp6) {
                   let arr = items.push(subscriptionListing);
                 }
@@ -206,43 +206,42 @@ function useSubscriptionListingsForGroup(id, arg1) {
 }
 function useSubscriptionListingsForGuild(guildId, arg1) {
   let obj = arg1;
-  arg1 = guildId;
+  const _require = guildId;
   if (arg1 === undefined) {
-    obj = { incidents_data: true, isCentered: true };
+    obj = { includeSoftDeleted: false, sortDeletedListingsLast: false };
   }
-  const importDefault = obj;
   useFetchListingsForGuild(guildId);
-  const items = [closure_8];
-  return arg1(dependencyMap[5]).useStateFromStoresArray(items, () => {
+  let items = [closure_8];
+  return _require(566).useStateFromStoresArray(items, () => {
     let iter5;
     const items = [];
-    if (null != arg0) {
-      let subscriptionGroupListingsForGuild = subscriptionGroupListingsForGuild.getSubscriptionGroupListingsForGuild(arg0);
+    if (null != closure_0) {
+      let subscriptionGroupListingsForGuild = outer1_8.getSubscriptionGroupListingsForGuild(closure_0);
     } else {
-      subscriptionGroupListingsForGuild = closure_10;
+      subscriptionGroupListingsForGuild = outer1_10;
     }
-    const tmpResult = closure_11(subscriptionGroupListingsForGuild);
+    const tmpResult = outer1_11(subscriptionGroupListingsForGuild);
     const iter = tmpResult();
     let iter2 = iter;
     if (!iter.done) {
       do {
-        let tmp6 = closure_11;
-        let tmp7 = closure_11(iter2.value.subscription_listings_ids);
+        let tmp6 = outer1_11;
+        let tmp7 = outer1_11(iter2.value.subscription_listings_ids);
         let iter3 = tmp7();
         if (!iter3.done) {
           do {
-            let tmp8 = closure_8;
-            let subscriptionListing = closure_8.getSubscriptionListing(iter3.value);
+            let tmp8 = outer1_8;
+            let subscriptionListing = outer1_8.getSubscriptionListing(iter3.value);
             let tmp10 = null == subscriptionListing;
             if (!tmp10) {
-              let tmp11 = closure_1;
-              let tmp12 = !closure_1.includeSoftDeleted && subscriptionListing.soft_deleted;
+              let tmp11 = obj;
+              let tmp12 = !obj.includeSoftDeleted && subscriptionListing.soft_deleted;
               tmp10 = tmp12;
             }
             if (!tmp10) {
               let arr = items.push(subscriptionListing);
             }
-            let iter4 = tmp7();
+            iter4 = tmp7();
             iter3 = iter4;
             let tmp14 = subscriptionListing;
           } while (!iter4.done);
@@ -264,21 +263,14 @@ function useSubscriptionListingsForGuild(guildId, arg1) {
     return tmp15;
   });
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const FetchState = arg1(dependencyMap[4]).FetchState;
 let closure_10 = [];
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsHooks.tsx");
+const result = require("result").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsHooks.tsx");
 
 export { useFetchListingsForGuild };
 export const useCreateSubscriptionGroupListing = function useCreateSubscriptionGroupListing() {
   function _createSubscriptionGroupListing() {
     // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    const _createSubscriptionGroupListing = obj;
+    const obj = outer1_4(tmp);
     return obj(...arguments);
   }
   const tmp = callback(React.useState(false), 2);
@@ -300,68 +292,65 @@ export const useUpdateSubscriptionGroupListing = function useUpdateSubscriptionG
   let closure_1 = tmp2[1];
   return {
     loading: tmp[0],
-    updateSubscriptionGroupListing: React.useCallback(() => {
+    updateSubscriptionGroupListing: React.useCallback((() => {
       // CreateGeneratorClosureLongIndex (0x67)
-      let closure_0 = callback(tmp);
+      let closure_0 = outer1_4(tmp);
       return function(arg0, arg1, arg2) {
         return callback(...arguments);
       };
-    }(), []),
+    })(), []),
     error: tmp2[0]
   };
 };
 export { useSubscriptionListingsForGroup };
 export const useSubscriptionListing = function useSubscriptionListing(editStateId) {
-  const arg1 = editStateId;
+  const _require = editStateId;
   const items = [closure_8];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     let subscriptionListing = null;
-    if (null != arg0) {
-      subscriptionListing = subscriptionListing.getSubscriptionListing(arg0);
+    if (null != closure_0) {
+      subscriptionListing = outer1_8.getSubscriptionListing(closure_0);
     }
     return subscriptionListing;
   });
 };
 export const useSubscriptionGroupListing = function useSubscriptionGroupListing(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const items = [closure_8];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     let subscriptionGroupListing = null;
-    if (null != arg0) {
-      subscriptionGroupListing = subscriptionGroupListing.getSubscriptionGroupListing(arg0);
+    if (null != closure_0) {
+      subscriptionGroupListing = outer1_8.getSubscriptionGroupListing(closure_0);
     }
     return subscriptionGroupListing;
   });
 };
 export const useGroupListingsForGuild = function useGroupListingsForGuild(guildId) {
-  const arg1 = guildId;
-  let closure_1 = arg1(dependencyMap[8]).useGroupListingsFetchContext("useGroupListingsForGuild");
-  const obj = arg1(dependencyMap[8]);
+  const _require = guildId;
+  let closure_1 = _require(14102).useGroupListingsFetchContext("useGroupListingsForGuild");
+  const obj = _require(14102);
   const items = [closure_8];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => {
-    if (null != arg0) {
+  return _require(566).useStateFromStores(items, () => {
+    if (null != closure_0) {
       if (closure_1) {
-        let subscriptionGroupListingsForGuild = subscriptionGroupListingsForGuild.getSubscriptionGroupListingsForGuild(arg0);
+        let subscriptionGroupListingsForGuild = outer1_8.getSubscriptionGroupListingsForGuild(closure_0);
       }
       return subscriptionGroupListingsForGuild;
     }
-    subscriptionGroupListingsForGuild = closure_10;
+    subscriptionGroupListingsForGuild = outer1_10;
   });
 };
 export { useSubscriptionListingsForGuild };
 export const useFetchListingsForSubscriptions = (arg0) => {
-  const arg1 = arg0;
-  const tmp = callback(React.useState(false), 2);
+  const _require = arg0;
+  let tmp = callback(React.useState(false), 2);
   const loading = tmp[0];
-  const importDefault = loading;
   let closure_2 = tmp[1];
   const items = [arg0];
-  const memo = React.useMemo(() => arg0.map(arg0(memo[9]).getRoleSubscriptionPlanId), items);
-  const dependencyMap = memo;
+  const memo = React.useMemo(() => lib.map(lib(memo[9]).getRoleSubscriptionPlanId), items);
   const items1 = [closure_8];
   const items2 = [memo];
-  const stateFromStoresArray = arg1(dependencyMap[5]).useStateFromStoresArray(items1, () => memo.filter((arg0) => !didFetchListingForSubscriptionPlanId.getDidFetchListingForSubscriptionPlanId(arg0)), items2);
-  let closure_4 = stateFromStoresArray;
+  const stateFromStoresArray = _require(memo[5]).useStateFromStoresArray(items1, () => memo.filter((arg0) => !outer2_8.getDidFetchListingForSubscriptionPlanId(arg0)), items2);
   const items3 = [loading, stateFromStoresArray];
   const effect = React.useEffect(() => {
     let tmp = !loading;
@@ -370,13 +359,13 @@ export const useFetchListingsForSubscriptions = (arg0) => {
     }
     if (tmp) {
       callback(true);
-      const allPromises = Promise.all(stateFromStoresArray.map((arg0) => callback(closure_3[6]).fetchSubscriptionListingForPlan(arg0)));
-      Promise.all(stateFromStoresArray.map((arg0) => callback(closure_3[6]).fetchSubscriptionListingForPlan(arg0))).catch(() => {
+      const allPromises = Promise.all(stateFromStoresArray.map((arg0) => callback(memo[6]).fetchSubscriptionListingForPlan(arg0)));
+      Promise.all(stateFromStoresArray.map((arg0) => callback(memo[6]).fetchSubscriptionListingForPlan(arg0))).catch(() => {
 
       }).then(() => {
-        callback(false);
+        outer1_2(false);
       });
-      const catchPromise = Promise.all(stateFromStoresArray.map((arg0) => callback(closure_3[6]).fetchSubscriptionListingForPlan(arg0))).catch(() => {
+      const catchPromise = Promise.all(stateFromStoresArray.map((arg0) => callback(memo[6]).fetchSubscriptionListingForPlan(arg0))).catch(() => {
 
       });
     }
@@ -386,8 +375,7 @@ export const useFetchListingsForSubscriptions = (arg0) => {
 export const useDeleteSubscriptionListing = function useDeleteSubscriptionListing() {
   function _deleteSubscriptionListing() {
     // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    const _deleteSubscriptionListing = obj;
+    const obj = outer1_4(tmp);
     return obj(...arguments);
   }
   const tmp = callback(React.useState(false), 2);
@@ -403,14 +391,13 @@ export const useDeleteSubscriptionListing = function useDeleteSubscriptionListin
   };
 };
 export const useArchiveSubscriptionListing = function useArchiveSubscriptionListing() {
-  const tmp2 = callback(importDefault(dependencyMap[10])(importAll(dependencyMap[6]).archiveSubscriptionListing), 2);
+  const tmp2 = callback(importDefault(11323)(importAll(5636).archiveSubscriptionListing), 2);
   return { error: tmp2[1].error, submitting: tmp2[1].loading, archiveSubscriptionListing: tmp2[0] };
 };
 export const usePublishSubscriptionListing = function usePublishSubscriptionListing() {
   function _publishSubscriptionListing() {
     // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback2(tmp);
-    const _publishSubscriptionListing = obj;
+    const obj = outer1_4(tmp);
     return obj(...arguments);
   }
   const tmp = callback(React.useState(false), 2);
@@ -429,12 +416,12 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
   };
 };
 export const useSubscriptionsSettings = function useSubscriptionsSettings(guildId) {
-  const arg1 = guildId;
+  const _require = guildId;
   const items = [closure_8];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     let subscriptionSettings;
-    if (null != arg0) {
-      subscriptionSettings = subscriptionSettings.getSubscriptionSettings(arg0);
+    if (null != closure_0) {
+      subscriptionSettings = outer1_8.getSubscriptionSettings(closure_0);
     }
     return subscriptionSettings;
   });
@@ -446,21 +433,20 @@ export const useUpdateSubscriptionsSettings = function useUpdateSubscriptionsSet
   let closure_1 = tmp2[1];
   return {
     loading: tmp[0],
-    updateSubscriptionsSettings: React.useCallback(() => {
+    updateSubscriptionsSettings: React.useCallback((() => {
       // CreateGeneratorClosureLongIndex (0x67)
-      let closure_0 = callback(tmp);
+      let closure_0 = outer1_4(tmp);
       return function(arg0, arg1) {
         return callback(...arguments);
       };
-    }(), []),
+    })(), []),
     error: tmp2[0]
   };
 };
 export const useDeleteSubscriptionGroupListing = function useDeleteSubscriptionGroupListing() {
   function _deleteSubscriptionGroupListing() {
     // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    const _deleteSubscriptionGroupListing = obj;
+    const obj = outer1_4(tmp);
     return obj(...arguments);
   }
   const tmp = callback(React.useState(false), 2);
@@ -482,13 +468,13 @@ export const useFetchSubscriptionsSettings = function useFetchSubscriptionsSetti
   let closure_1 = tmp2[1];
   return {
     loading: tmp[0],
-    fetchSubscriptionsSettings: React.useCallback(() => {
+    fetchSubscriptionsSettings: React.useCallback((() => {
       // CreateGeneratorClosureLongIndex (0x67)
-      let closure_0 = callback(tmp);
+      let closure_0 = outer1_4(tmp);
       return function(arg0) {
         return callback(...arguments);
       };
-    }(), []),
+    })(), []),
     error: tmp2[0]
   };
 };
@@ -499,44 +485,44 @@ export const useUpdateSubscriptionsTrial = function useUpdateSubscriptionsTrial(
   let closure_1 = tmp2[1];
   return {
     loading: tmp[0],
-    updateSubscriptionTrial: React.useCallback(() => {
+    updateSubscriptionTrial: React.useCallback((() => {
       // CreateGeneratorClosureLongIndex (0x67)
-      let closure_0 = callback(tmp);
+      let closure_0 = outer1_4(tmp);
       return function(arg0, arg1, arg2) {
         return callback(...arguments);
       };
-    }(), []),
+    })(), []),
     error: tmp2[0]
   };
 };
 export const useSubscriptionTrial = function useSubscriptionTrial(editStateId) {
-  const arg1 = editStateId;
+  const _require = editStateId;
   const items = [closure_8];
-  return arg1(dependencyMap[5]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     let subscriptionTrial = null;
-    if (null != arg0) {
-      subscriptionTrial = subscriptionTrial.getSubscriptionTrial(arg0);
+    if (null != closure_0) {
+      subscriptionTrial = outer1_8.getSubscriptionTrial(closure_0);
     }
     return subscriptionTrial;
   });
 };
 export const useSubscriptionTrialsForGroup = function useSubscriptionTrialsForGroup(id) {
   const tmp = useSubscriptionListingsForGroup(id);
-  const arg1 = tmp;
+  const require = tmp;
   const items = [closure_8];
   const items1 = [tmp];
-  return arg1(dependencyMap[5]).useStateFromStoresArray(items, () => {
-    const mapped = tmp.map((id) => subscriptionTrial.getSubscriptionTrial(id.id));
-    return mapped.filter(tmp(closure_3[11]).isNotNullish);
+  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
+    const mapped = tmp.map((id) => outer2_8.getSubscriptionTrial(id.id));
+    return mapped.filter(tmp(outer1_3[11]).isNotNullish);
   }, items1);
 };
 export const useSubscriptionTrialsForGuild = function useSubscriptionTrialsForGuild(guildId) {
   const tmp = useSubscriptionListingsForGuild(guildId);
-  const arg1 = tmp;
+  const require = tmp;
   const items = [closure_8];
   const items1 = [tmp];
-  return arg1(dependencyMap[5]).useStateFromStoresArray(items, () => {
-    const mapped = tmp.map((id) => subscriptionTrial.getSubscriptionTrial(id.id));
-    return mapped.filter(tmp(closure_3[11]).isNotNullish);
+  return require(566) /* initialize */.useStateFromStoresArray(items, () => {
+    const mapped = tmp.map((id) => outer2_8.getSubscriptionTrial(id.id));
+    return mapped.filter(tmp(outer1_3[11]).isNotNullish);
   }, items1);
 };

@@ -1,13 +1,16 @@
 // Module ID: 1755
-// Function ID: 19615
+// Function ID: 19616
 // Name: getStylesFromObject
-// Dependencies: []
+// Dependencies: [57, 1585, 1593]
 // Exports: advanceAnimationByFrame, advanceAnimationByTime, getAnimatedStyle, setUpTests, withReanimatedTimer
 
 // Module 1755 (getStylesFromObject)
+import _slicedToArray from "_slicedToArray";
+import isJest from "isJest";
+
 let fn = arg1;
-let closure_3 = importDefault(dependencyMap[0]);
-const obj = { fps: 60 };
+const require = arg1;
+let obj = { fps: 60 };
 function getStylesFromObject(jestInlineStyle) {
   if (undefined === jestInlineStyle) {
     let fromEntriesResult = {};
@@ -16,7 +19,7 @@ function getStylesFromObject(jestInlineStyle) {
     const _Object2 = Object;
     const entries = Object.entries(jestInlineStyle);
     fromEntriesResult = Object.fromEntries(entries.map((arg0) => {
-      const tmp = callback(arg0, 2);
+      const tmp = outer1_3(arg0, 2);
       const items = [tmp[0], ];
       let value = iter;
       if (tmp[1]._isReanimatedSharedValue) {
@@ -30,7 +33,7 @@ function getStylesFromObject(jestInlineStyle) {
 }
 function getCurrentStyle(props) {
   const style = props.props.style;
-  let global = {};
+  let merged = {};
   if (Array.isArray(style)) {
     const item = style.forEach((arg0) => {
       closure_0 = Object.assign({}, closure_0, arg0);
@@ -48,14 +51,13 @@ function getCurrentStyle(props) {
         let tmp10 = getStylesFromObject;
         let tmp11 = nextResult;
         let _Object3 = Object;
-        let tmp12 = global;
-        global = Object.assign({}, global, getStylesFromObject(tmp9));
+        let tmp12 = merged;
+        merged = Object.assign({}, merged, getStylesFromObject(tmp9));
       }
-      // continue
+      continue;
     }
     const _Object4 = Object;
-    const merged = Object.assign({}, global, value);
-    global = merged;
+    merged = Object.assign({}, merged, value);
     return merged;
   } else {
     let tmp4 = !value;
@@ -66,7 +68,7 @@ function getCurrentStyle(props) {
     const _Object2 = Object;
     const obj = {};
     const tmp5 = tmp4 ? assign(obj, getStylesFromObject(jestInlineStyle)) : assign(obj, value);
-    global = tmp5;
+    merged = tmp5;
     return tmp5;
   }
 }
@@ -92,8 +94,8 @@ function checkEqual(arg0, obj) {
           if (obj) {
             for (const key10012 in arg1) {
               let tmp3 = key10012;
-              let tmp4 = closure_7;
-              if (closure_7(arg0[key10012], arg1[key10012])) {
+              let tmp4 = checkEqual;
+              if (checkEqual(arg0[key10012], arg1[key10012])) {
                 continue;
               } else {
                 let flag = false;
@@ -125,7 +127,7 @@ function compareAndFormatDifferences(merged, arg1) {
         let obj = { property: tmp4, current: merged[tmp4], expect: arg1[tmp4] };
         let arr = items.push(obj);
         flag = false;
-        // continue
+        continue;
       }
       continue;
     }
@@ -147,7 +149,7 @@ function compareAndFormatDifferences(merged, arg1) {
           } else {
             obj = { property: tmp9, current: merged[tmp9], expect: arg1[tmp9] };
             arr = items.push(obj);
-            // continue
+            continue;
           }
           continue;
         }
@@ -182,7 +184,7 @@ function compareAndFormatDifferences(merged, arg1) {
     };
     return obj2;
   }
-  const tmp2 = arguments.length > 2 && undefined !== arguments[2] && arguments[2];
+  tmp2 = arguments.length > 2 && undefined !== arguments[2] && arguments[2];
 }
 function compareProps(props) {
   if (props.props.jestAnimatedProps) {
@@ -211,9 +213,9 @@ function compareProps(props) {
   return compareAndFormatDifferences(merged, arg1);
 }
 let closure_10 = Math.round(1000 / obj.fps);
-if (!obj2.isJest()) {
+if (!isJest.isJest()) {
   fn = () => {
-    const reanimatedError = new arg1(dependencyMap[2]).ReanimatedError("`setUpTests` is available only in Jest environment.");
+    const reanimatedError = new require(1593) /* processStack */.ReanimatedError("`setUpTests` is available only in Jest environment.");
     throw reanimatedError;
   };
 }
@@ -254,23 +256,23 @@ export const setUpTests = function setUpTests() {
       if (!tmp5) {
         _default = tmp4.default;
       }
-      const tmp5 = undefined !== tmp4 && undefined !== tmp4.extend;
+      tmp5 = undefined !== tmp4 && undefined !== tmp4.extend;
     }
     const _Object = Object;
     const _Math = Math;
     let closure_10 = Math.round(1000 / Object.assign({}, obj, {}).fps);
-    let obj = {
+    obj = {
       toHaveAnimatedProps(arg0, arg1) {
-          return callback(arg0, arg1);
+          return outer1_9(arg0, arg1);
         }
     };
     _default.extend(obj);
     obj = {
       toHaveAnimatedStyle(props) {
           if (arguments.length > 2) {
-            return function compareStyle(props, arg1, shouldMatchAllProps) {
+            return (function compareStyle(props, arg1, shouldMatchAllProps) {
               if (props.props.style) {
-                return callback2(callback(props), arg1, shouldMatchAllProps.shouldMatchAllProps);
+                return outer2_8(outer2_6(props), arg1, shouldMatchAllProps.shouldMatchAllProps);
               } else {
                 const obj = {
                   message() {
@@ -280,7 +282,7 @@ export const setUpTests = function setUpTests() {
                 };
                 return obj;
               }
-            }(props, arg1, {});
+            })(props, arg1, {});
           }
         }
     };

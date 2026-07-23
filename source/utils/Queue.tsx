@@ -1,29 +1,30 @@
-// Module ID: 7073
-// Function ID: 56574
+// Module ID: 7078
+// Function ID: 56608
 // Name: Queue
-// Dependencies: []
+// Dependencies: [6, 7, 3, 13, 2]
 
-// Module 7073 (Queue)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let importDefaultResult = importDefault(dependencyMap[2]);
+// Module 7078 (Queue)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import importDefaultResult from "arrayCopy";
+
 importDefaultResult = new importDefaultResult("Queue");
-const tmp4 = () => {
+const tmp4 = (() => {
   class Queue {
     constructor() {
       tmp = arg0;
       num = arg1;
       self = this;
       if (arg0 === undefined) {
-        tmp = closure_4;
+        tmp = outer1_4;
       }
       if (num === undefined) {
         num = 100;
       }
-      tmp2 = closure_2(self, Queue);
+      tmp2 = outer1_2(self, Queue);
       self.logger = tmp;
       self.defaultRetryAfter = num;
-      tmp3 = Queue(closure_1[3]);
+      tmp3 = Queue(outer1_1[3]);
       tmp3 = new tmp3();
       self.queue = tmp3;
       self.timeout = null;
@@ -31,7 +32,6 @@ const tmp4 = () => {
       return;
     }
   }
-  const importDefault = Queue;
   let obj = {
     key: "enqueue",
     value(message, success, logId) {
@@ -51,18 +51,19 @@ const tmp4 = () => {
   obj = {
     key: "_drainIfNecessary",
     value() {
+      let _classCallCheck;
       let logId;
-      const self = this;
-      const Queue = this;
+      let self = this;
+      self = this;
       if (null === this.timeout) {
         if (0 !== self.queue.length) {
           if (true !== self.draining) {
             self.draining = true;
-            const queue = self.queue;
+            let queue = self.queue;
             const arr = queue.shift();
-            ({ success: closure_2, logId } = arr);
-            const logger = self.logger;
-            const _HermesInternal = HermesInternal;
+            ({ success: _classCallCheck, logId } = arr);
+            let logger = self.logger;
+            let _HermesInternal = HermesInternal;
             logger.log("Draining message from queue LogId:" + logId + " QueueLength: " + self.queue.length);
             self.drain(arr.message, (retryAfter) => {
               const logger = self.logger;
@@ -70,7 +71,7 @@ const tmp4 = () => {
               self.draining = false;
               if (null == retryAfter) {
                 const _setImmediate = setImmediate;
-                setImmediate(() => closure_0._drainIfNecessary());
+                setImmediate(() => outer1_0._drainIfNecessary());
                 callback(arg1);
               } else {
                 let defaultRetryAfter = retryAfter.retryAfter;
@@ -82,10 +83,10 @@ const tmp4 = () => {
                 logger2.info("Rate limited. Delaying draining of queue for " + defaultRetryAfter + " ms. LogId:" + logId + " QueueLength: " + self.queue.length);
                 const _setTimeout = setTimeout;
                 self.timeout = setTimeout(() => {
-                  const queue = closure_0.queue;
-                  queue.unshift(closure_1);
-                  closure_0.timeout = null;
-                  closure_0._drainIfNecessary();
+                  const queue = outer1_0.queue;
+                  queue.unshift(outer1_1);
+                  outer1_0.timeout = null;
+                  outer1_0._drainIfNecessary();
                 }, defaultRetryAfter);
               }
             });
@@ -106,7 +107,7 @@ const tmp4 = () => {
     }
   };
   return callback(Queue, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("utils/Queue.tsx");
+})();
+const result = require("timestamp").fileFinishedImporting("utils/Queue.tsx");
 
 export default tmp4;

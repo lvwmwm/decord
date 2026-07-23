@@ -1,29 +1,30 @@
-// Module ID: 14212
-// Function ID: 107511
+// Module ID: 14326
+// Function ID: 109667
 // Name: toggle
-// Dependencies: []
+// Dependencies: [14312, 7662, 477, 14314, 10095, 1212, 2]
 
-// Module 14212 (toggle)
-const _module = require(dependencyMap[0]);
-let closure_2 = _module.useAndroidNotificationSoundsEnabled;
-const _module1 = require(dependencyMap[4]);
-const toggle = _module1.createToggle({
+// Module 14326 (toggle)
+import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore";
+import createToggle from "createToggle";
+
+let closure_2 = _initializeAndroidNotificationSettingsStore.useAndroidNotificationSoundsEnabled;
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[5]).intl;
-    return intl.string(require(dependencyMap[5]).t.1CWknJ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["1CWknJ"]);
   },
-  parent: require(dependencyMap[1]).MobileSetting.NOTIFICATIONS,
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: function useAndroidNotificationSoundsSettingValue() {
     const tmp = callback();
     return null != tmp && tmp;
   },
-  onValueChange: _module.setAndroidNotificationSoundsEnabled,
+  onValueChange: _initializeAndroidNotificationSettingsStore.setAndroidNotificationSoundsEnabled,
   usePredicate: function useHasAndroidNotificationSoundsSetting() {
     const tmp = callback();
-    let tmp2 = !require(dependencyMap[2]).isIOS();
+    let tmp2 = !require(477) /* set */.isIOS();
     if (tmp2) {
-      tmp2 = !require(dependencyMap[3]).hasAndroidNotificationChannels();
-      const obj2 = require(dependencyMap[3]);
+      tmp2 = !require(14314) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
+      const obj2 = require(14314) /* hasAndroidNotificationChannels */;
     }
     if (tmp2) {
       tmp2 = null != tmp;
@@ -31,7 +32,30 @@ const toggle = _module1.createToggle({
     return tmp2;
   }
 });
-const _module2 = require(dependencyMap[6]);
-const result = _module2.fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationSoundsSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["1CWknJ"]);
+  },
+  parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
+  useValue: function useAndroidNotificationSoundsSettingValue() {
+    const tmp = callback();
+    return null != tmp && tmp;
+  },
+  onValueChange: _initializeAndroidNotificationSettingsStore.setAndroidNotificationSoundsEnabled,
+  usePredicate: function useHasAndroidNotificationSoundsSetting() {
+    const tmp = callback();
+    let tmp2 = !require(477) /* set */.isIOS();
+    if (tmp2) {
+      tmp2 = !require(14314) /* hasAndroidNotificationChannels */.hasAndroidNotificationChannels();
+      const obj2 = require(14314) /* hasAndroidNotificationChannels */;
+    }
+    if (tmp2) {
+      tmp2 = null != tmp;
+    }
+    return tmp2;
+  }
+};
+const result = require("set").fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationSoundsSetting.tsx");
 
 export default toggle;

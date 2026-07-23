@@ -1,15 +1,16 @@
-// Module ID: 3763
-// Function ID: 28846
+// Module ID: 3765
+// Function ID: 28851
 // Name: doesThreadMembersActionAffectMe
-// Dependencies: []
+// Dependencies: [1194, 2]
 // Exports: doesThreadMembersActionAffectMe
 
-// Module 3763 (doesThreadMembersActionAffectMe)
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/threads/ThreadActionUtils.tsx");
+// Module 3765 (doesThreadMembersActionAffectMe)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/threads/ThreadActionUtils.tsx");
 
 export const doesThreadMembersActionAffectMe = function doesThreadMembersActionAffectMe(removedMemberIds) {
-  const id = id.getId();
+  id = id.getId();
   let tmp2 = null != id;
   if (tmp2) {
     removedMemberIds = removedMemberIds.removedMemberIds;

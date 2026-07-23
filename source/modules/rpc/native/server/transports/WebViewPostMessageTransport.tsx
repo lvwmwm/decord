@@ -1,16 +1,17 @@
-// Module ID: 10482
-// Function ID: 81210
+// Module ID: 10492
+// Function ID: 81260
 // Name: importDefaultResult1
-// Dependencies: [686227456, 687669248, 131072, 611450880, 33554439, 1929379840]
+// Dependencies: [3, 10493, 10494, 10500, 10504, 2]
 
-// Module 10482 (importDefaultResult1)
-let importDefaultResult = importDefault(dependencyMap[0]);
+// Module 10492 (importDefaultResult1)
+import importDefaultResult from "validateSocketClient";
+import importDefaultResult1 from "_isNativeReflectConstruct";
+
 importDefaultResult = new importDefaultResult("RPCServer:PostMessage");
-let importDefaultResult1 = importDefault(dependencyMap[2]);
-importDefaultResult1 = new importDefaultResult1(arg1(dependencyMap[3]).validateSocketClient, importDefaultResult, importDefault(dependencyMap[4]), (arg0, info, id) => {
+importDefaultResult1 = new importDefaultResult1(require("validateSocketClient").validateSocketClient, importDefaultResult, require("logger"), (arg0, info, id) => {
   const combined = "Socket Message: " + id.id;
-  info.info(combined, importDefault(dependencyMap[1])(arg0));
+  info.info(combined, importDefault(10493)(arg0));
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/rpc/native/server/transports/WebViewPostMessageTransport.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rpc/native/server/transports/WebViewPostMessageTransport.tsx");
 
 export default importDefaultResult1;

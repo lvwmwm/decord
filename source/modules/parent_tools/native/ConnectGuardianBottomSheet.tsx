@@ -1,26 +1,30 @@
-// Module ID: 13668
-// Function ID: 103509
+// Module ID: 13782
+// Function ID: 105665
 // Name: ConnectGuardianBottomSheet
-// Dependencies: []
+// Dependencies: [31, 27, 6769, 6770, 33, 4130, 689, 624, 4098, 13783, 5187, 4126, 1212, 2198, 5459, 13784, 4543, 2]
 // Exports: default
 
-// Module 13668 (ConnectGuardianBottomSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[6]).space.PX_24, paddingVertical: importDefault(dependencyMap[6]).space.PX_24, gap: importDefault(dependencyMap[6]).space.PX_24 };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.info = { alignItems: "center", gap: importDefault(dependencyMap[6]).space.PX_8 };
-obj.centered = { textAlign: "center" };
-obj.cardContainer = { alignItems: "center" };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { alignItems: "center", gap: importDefault(dependencyMap[6]).space.PX_8 };
-const result = arg1(dependencyMap[17]).fileFinishedImporting("modules/parent_tools/native/ConnectGuardianBottomSheet.tsx");
+// Module 13782 (ConnectGuardianBottomSheet)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { CONNECT_GUARDIAN_BOTTOM_SHEET_KEY as closure_6 } from "items";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_24, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.info = { alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.centered = { textAlign: "center" };
+_createForOfIteratorHelperLoose.cardContainer = { alignItems: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/native/ConnectGuardianBottomSheet.tsx");
 
 export default function ConnectGuardianBottomSheet(onRefresh) {
   let body;
@@ -28,13 +32,13 @@ export default function ConnectGuardianBottomSheet(onRefresh) {
   let linkCode;
   let title;
   ({ linkCode, expiresAt, title, body } = onRefresh);
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => store.getLinkCode());
-  let obj1 = arg1(dependencyMap[7]);
-  const items1 = [closure_5];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => store.getLinkCodeExpiresAt());
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(624) /* defaultAreStatesEqual */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getLinkCode());
+  let obj1 = require(624) /* defaultAreStatesEqual */;
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_5.getLinkCodeExpiresAt());
   if (null != stateFromStores) {
     linkCode = stateFromStores;
   }
@@ -42,37 +46,37 @@ export default function ConnectGuardianBottomSheet(onRefresh) {
     expiresAt = stateFromStores1;
   }
   const callback = React.useCallback(() => {
-    callback(closure_2[8]).hideActionSheet(closure_6);
+    outer1_1(outer1_2[8]).hideActionSheet(outer1_6);
   }, []);
-  importDefault(dependencyMap[9])(callback);
+  importDefault(13783)(callback);
   obj = { startExpanded: true };
   obj = { style: tmp.container };
   obj1 = { style: tmp.info };
-  const obj2 = { style: tmp.centered };
+  const obj2 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
   if (null == title) {
-    const intl = arg1(dependencyMap[12]).intl;
-    title = intl.string(importDefault(dependencyMap[13]).aCUVfL);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    title = intl.string(importDefault(2198).aCUVfL);
   }
   obj2.children = title;
-  const items2 = [callback(arg1(dependencyMap[11]).Text, obj2), ];
-  const obj3 = { style: tmp.centered };
+  const items2 = [callback(require(4126) /* Text */.Text, obj2), ];
+  const obj3 = { style: tmp.centered, variant: "text-md/medium", color: "text-default" };
   if (null == body) {
-    const intl2 = arg1(dependencyMap[12]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj4 = { link: "https://support.discord.com/hc/articles/14155060633623" };
-    body = intl2.format(importDefault(dependencyMap[13]).2O6ltn, obj4);
+    body = intl2.format(importDefault(2198)["2O6ltn"], obj4);
   }
   obj3.children = body;
-  items2[1] = callback(arg1(dependencyMap[14]).TextWithIOSLinkWorkaround, obj3);
+  items2[1] = callback(require(5459) /* findLinks */.TextWithIOSLinkWorkaround, obj3);
   obj1.children = items2;
   const items3 = [closure_8(View, obj1), , ];
   const obj6 = { linkCode, expiresAt, onRefresh: onRefresh.onRefresh };
-  items3[1] = callback(View, { style: tmp.cardContainer, children: callback(arg1(dependencyMap[15]).ConnectGuardianCard, obj6) });
-  const obj7 = {};
-  const intl3 = arg1(dependencyMap[12]).intl;
-  obj7.text = intl3.string(importDefault(dependencyMap[13]).Hsm5IF);
+  items3[1] = callback(View, { style: tmp.cardContainer, children: callback(require(13784) /* ConnectGuardianCard */.ConnectGuardianCard, obj6) });
+  const obj7 = { variant: "secondary", size: "md" };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj7.text = intl3.string(importDefault(2198).Hsm5IF);
   obj7.onPress = callback;
-  items3[2] = callback(arg1(dependencyMap[16]).Button, obj7);
+  items3[2] = callback(require(4543) /* Button */.Button, obj7);
   obj.children = items3;
   obj.children = closure_8(View, obj);
-  return callback(arg1(dependencyMap[10]).BottomSheet, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };

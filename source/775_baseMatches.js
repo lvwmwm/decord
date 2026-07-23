@@ -1,24 +1,23 @@
 // Module ID: 775
-// Function ID: 8852
+// Function ID: 8853
 // Name: baseMatches
-// Dependencies: []
+// Dependencies: [776, 701, 777]
 
 // Module 775 (baseMatches)
 
 export default function baseMatches(arg0) {
-  const require = arg0;
-  const arr = require(dependencyMap[0])(arg0);
-  const dependencyMap = arr;
+  const _require = arg0;
+  arr = _require(arr[0])(arg0);
   if (1 == arr.length) {
     if (arr[0][2]) {
-      let fn = require(dependencyMap[1])(arr[0][0], arr[0][1]);
+      let fn = _require(arr[1])(arr[0][0], arr[0][1]);
     }
     return fn;
   }
   fn = (arg0) => {
-    let tmp = arg0 === arg0;
+    let tmp = arg0 === callback;
     if (!tmp) {
-      tmp = arg0(arr[2])(arg0, arg0, arr);
+      tmp = callback(arr[2])(arg0, callback, arr);
     }
     return tmp;
   };

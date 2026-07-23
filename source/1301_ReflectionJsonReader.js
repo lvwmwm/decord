@@ -1,22 +1,22 @@
 // Module ID: 1301
-// Function ID: 15203
+// Function ID: 15204
 // Name: ReflectionJsonReader
-// Dependencies: []
+// Dependencies: [57, 6, 7, 1285, 1297, 1293, 1302, 1291, 1286]
 
 // Module 1301 (ReflectionJsonReader)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "reflectionLongConvert";
+import _defineProperties from "_callSuper";
 
-export const ReflectionJsonReader = () => {
+
+export const ReflectionJsonReader = (() => {
   class ReflectionJsonReader {
     constructor(arg0) {
-      tmp = closure_3(this, ReflectionJsonReader);
+      tmp = outer1_3(this, ReflectionJsonReader);
       this.info = arg0;
       return;
     }
   }
-  const require = ReflectionJsonReader;
   let obj = {
     key: "prepare",
     value: function prepare() {
@@ -31,16 +31,17 @@ export const ReflectionJsonReader = () => {
           self.fMap[item10009.name] = item10009;
           self.fMap[item10009.jsonName] = item10009;
           self.fMap[item10009.localName] = item10009;
+          continue;
         }
       }
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "assert",
     value: function assert(arg0, arg1, prepareResult) {
       if (!arg0) {
-        const typeofJsonValueResult = ReflectionJsonReader(closure_1[3]).typeofJsonValue(prepareResult);
+        const typeofJsonValueResult = ReflectionJsonReader(outer1_1[3]).typeofJsonValue(prepareResult);
         let str = "number";
         let tmp4 = "number" != typeofJsonValueResult;
         if (tmp4) {
@@ -69,8 +70,8 @@ export const ReflectionJsonReader = () => {
       const items = [];
       const entries = Object.entries(arg0);
       while (tmp3 !== undefined) {
-        let tmp93 = callback;
-        let tmp94 = callback(tmp4, 2);
+        let tmp93 = outer1_2;
+        let tmp94 = outer1_2(tmp4, 2);
         [tmp95, tmp97] = tmp94;
         let tmp98 = self.fMap[tmp95];
         let obj5 = tmp98;
@@ -109,11 +110,11 @@ export const ReflectionJsonReader = () => {
           if ("map" == obj5.kind) {
             let tmp56 = tmp97;
             if (null === tmp97) {
-              // continue
+              continue;
             } else {
               prepareResult = ReflectionJsonReader;
-              prepareResult = closure_1;
-              let obj6 = ReflectionJsonReader(closure_1[3]);
+              prepareResult = outer1_1;
+              let obj6 = ReflectionJsonReader(outer1_1[3]);
               prepareResult = tmp97;
               prepareResult = tmp98;
               prepareResult = self.assert(obj6.isJsonObject(tmp97), obj5.name, tmp97);
@@ -123,8 +124,8 @@ export const ReflectionJsonReader = () => {
               let _Object = Object;
               prepareResult = Object.entries(tmp97);
               for (const item10154 of prepareResult) {
-                prepareResult = closure_2;
-                prepareResult = closure_2(item10154, 2);
+                prepareResult = outer1_2;
+                prepareResult = outer1_2(item10154, 2);
                 prepareResult = prepareResult[1];
                 prepareResult = tmp98;
                 prepareResult = self.assert(null !== prepareResult, obj5.name + " map value", null);
@@ -156,9 +157,9 @@ export const ReflectionJsonReader = () => {
                 let tmp68 = prepareResult;
                 let assertResult = self.assert(undefined !== internalJsonReadResult, obj5.name + " map value", prepareResult);
                 let first = prepareResult[0];
-                let tmp71 = closure_0;
-                let tmp72 = closure_1;
-                if (obj5.K == closure_0(closure_1[4]).ScalarType.BOOL) {
+                let tmp71 = ReflectionJsonReader;
+                let tmp72 = outer1_1;
+                if (obj5.K == ReflectionJsonReader(outer1_1[4]).ScalarType.BOOL) {
                   let tmp73 = first;
                   let tmp74 = "true" == first;
                   let tmp75 = tmp74;
@@ -176,15 +177,16 @@ export const ReflectionJsonReader = () => {
                 let tmp79 = prepareResult;
                 let tmp80 = first;
                 let tmp81 = tmp98;
-                let tmp82 = closure_0;
-                let tmp83 = closure_1;
+                let tmp82 = ReflectionJsonReader;
+                let tmp83 = outer1_1;
                 let tmp84 = self;
                 let tmp85 = first;
-                let str3 = self.scalar(first, obj5.K, closure_0(closure_1[4]).LongType.STRING, obj5.name);
+                let str3 = self.scalar(first, obj5.K, ReflectionJsonReader(outer1_1[4]).LongType.STRING, obj5.name);
                 let str = str3.toString();
                 let tmp87 = str;
                 let tmp88 = internalJsonReadResult;
                 prepareResult[str] = internalJsonReadResult;
+                continue;
               }
             }
           } else {
@@ -192,7 +194,7 @@ export const ReflectionJsonReader = () => {
             if (obj5.repeat) {
               let tmp40 = tmp97;
               if (null === tmp97) {
-                // continue
+                continue;
               } else {
                 let _Array = Array;
                 prepareResult = tmp97;
@@ -234,6 +236,7 @@ export const ReflectionJsonReader = () => {
                   let assertResult1 = self.assert(undefined !== internalJsonReadResult1, obj5.name, tmp97);
                   let tmp54 = arr2;
                   arr = arr2.push(internalJsonReadResult1);
+                  continue;
                 }
               }
             } else {
@@ -246,7 +249,7 @@ export const ReflectionJsonReader = () => {
                   if ("google.protobuf.Value" != obj5.T().typeName) {
                     let tmp38 = tmp98;
                     let assertResult2 = self.assert(undefined === obj5.oneof, `${obj5.name} (oneof member)`, null);
-                    // continue
+                    continue;
                   }
                 }
                 let tmp33 = tmp12;
@@ -263,7 +266,7 @@ export const ReflectionJsonReader = () => {
                 let tmp25 = self;
                 let enumResult2 = self.enum(obj5.T(), tmp97, obj5.name, ignoreUnknownFields.ignoreUnknownFields);
                 if (false === enumResult2) {
-                  // continue
+                  continue;
                 } else {
                   let tmp28 = tmp12;
                   let tmp29 = localName;
@@ -296,7 +299,7 @@ export const ReflectionJsonReader = () => {
             throw error1;
           }
         }
-        // continue
+        continue;
       }
     }
   };
@@ -307,15 +310,15 @@ export const ReflectionJsonReader = () => {
       const self = this;
       if ("google.protobuf.NullValue" == arg0[0]) {
         const _HermesInternal = HermesInternal;
-        ReflectionJsonReader(closure_1[5]).assert(null === str, "Unable to parse field " + self.info.typeName + "#" + arg2 + ", enum " + arg0[0] + " only accepts null.");
-        const obj = ReflectionJsonReader(closure_1[5]);
+        ReflectionJsonReader(outer1_1[5]).assert(null === str, "Unable to parse field " + self.info.typeName + "#" + arg2 + ", enum " + arg0[0] + " only accepts null.");
+        const obj = ReflectionJsonReader(outer1_1[5]);
       }
       if (null === str) {
         return 0;
       } else if ("number" === typeof str) {
         const _Number = Number;
         const _HermesInternal4 = HermesInternal;
-        const obj4 = ReflectionJsonReader(closure_1[5]);
+        const obj4 = ReflectionJsonReader(outer1_1[5]);
         obj4.assert(Number.isInteger(str), "Unable to parse field " + self.info.typeName + "#" + arg2 + ", enum can only be integral number, got " + str + ".");
         return str;
       } else if ("string" === tmp31) {
@@ -329,66 +332,69 @@ export const ReflectionJsonReader = () => {
         }
         if (tmp16) {
           const _HermesInternal3 = HermesInternal;
-          ReflectionJsonReader(closure_1[5]).assert("number" === typeof tmp15, "Unable to parse field " + self.info.typeName + "#" + arg2 + ", enum " + arg0[0] + " has no value for \"" + str + "\".");
+          ReflectionJsonReader(outer1_1[5]).assert("number" === typeof tmp15, "Unable to parse field " + self.info.typeName + "#" + arg2 + ", enum " + arg0[0] + " has no value for \"" + str + "\".");
           tmp16 = tmp15;
-          const obj3 = ReflectionJsonReader(closure_1[5]);
+          const obj3 = ReflectionJsonReader(outer1_1[5]);
         }
         return tmp16;
       } else {
         const _HermesInternal2 = HermesInternal;
-        ReflectionJsonReader(closure_1[5]).assert(false, "Unable to parse field " + self.info.typeName + "#" + arg2 + ", cannot parse enum value from " + tmp31 + "\".");
+        ReflectionJsonReader(outer1_1[5]).assert(false, "Unable to parse field " + self.info.typeName + "#" + arg2 + ", cannot parse enum value from " + tmp31 + "\".");
       }
     }
   };
   items[4] = {
     key: "scalar",
-    value: function scalar(NumberResult, arg1, STRING) {
+    value: function scalar(actionData, arg1, STRING) {
       const self = this;
-      if (ReflectionJsonReader(closure_1[4]).ScalarType.DOUBLE !== arg1) {
-        if (ReflectionJsonReader(closure_1[4]).ScalarType.FLOAT !== arg1) {
-          if (ReflectionJsonReader(closure_1[4]).ScalarType.INT32 !== arg1) {
-            if (ReflectionJsonReader(closure_1[4]).ScalarType.FIXED32 !== arg1) {
-              if (ReflectionJsonReader(closure_1[4]).ScalarType.SFIXED32 !== arg1) {
-                if (ReflectionJsonReader(closure_1[4]).ScalarType.SINT32 !== arg1) {
-                  if (ReflectionJsonReader(closure_1[4]).ScalarType.UINT32 !== arg1) {
-                    if (ReflectionJsonReader(closure_1[4]).ScalarType.INT64 !== arg1) {
-                      if (ReflectionJsonReader(closure_1[4]).ScalarType.SFIXED64 !== arg1) {
-                        if (ReflectionJsonReader(closure_1[4]).ScalarType.SINT64 !== arg1) {
-                          if (ReflectionJsonReader(closure_1[4]).ScalarType.FIXED64 !== arg1) {
-                            NumberResult = closure_1;
-                            if (ReflectionJsonReader(closure_1[4]).ScalarType.UINT64 !== arg1) {
+      if (ReflectionJsonReader(outer1_1[4]).ScalarType.DOUBLE !== arg1) {
+        if (ReflectionJsonReader(outer1_1[4]).ScalarType.FLOAT !== arg1) {
+          if (ReflectionJsonReader(outer1_1[4]).ScalarType.INT32 !== arg1) {
+            if (ReflectionJsonReader(outer1_1[4]).ScalarType.FIXED32 !== arg1) {
+              if (ReflectionJsonReader(outer1_1[4]).ScalarType.SFIXED32 !== arg1) {
+                if (ReflectionJsonReader(outer1_1[4]).ScalarType.SINT32 !== arg1) {
+                  if (ReflectionJsonReader(outer1_1[4]).ScalarType.UINT32 !== arg1) {
+                    if (ReflectionJsonReader(outer1_1[4]).ScalarType.INT64 !== arg1) {
+                      if (ReflectionJsonReader(outer1_1[4]).ScalarType.SFIXED64 !== arg1) {
+                        if (ReflectionJsonReader(outer1_1[4]).ScalarType.SINT64 !== arg1) {
+                          if (ReflectionJsonReader(outer1_1[4]).ScalarType.FIXED64 !== arg1) {
+                            let NumberResult = outer1_1;
+                            if (ReflectionJsonReader(outer1_1[4]).ScalarType.UINT64 !== arg1) {
                               NumberResult = ReflectionJsonReader;
-                              NumberResult = closure_1;
-                              if (ReflectionJsonReader(closure_1[4]).ScalarType.BOOL === arg1) {
-                                if (null === NumberResult) {
+                              NumberResult = outer1_1;
+                              if (ReflectionJsonReader(outer1_1[4]).ScalarType.BOOL === arg1) {
+                                if (null === actionData) {
                                   return false;
-                                } else if ("boolean" === typeof NumberResult) {
-                                  return NumberResult;
+                                } else if ("boolean" === typeof actionData) {
+                                  NumberResult = actionData;
+                                  return actionData;
                                 }
                               } else {
                                 NumberResult = ReflectionJsonReader;
-                                NumberResult = closure_1;
-                                if (ReflectionJsonReader(closure_1[4]).ScalarType.STRING === arg1) {
-                                  if (null === NumberResult) {
+                                NumberResult = outer1_1;
+                                if (ReflectionJsonReader(outer1_1[4]).ScalarType.STRING === arg1) {
+                                  if (null === actionData) {
                                     return "";
-                                  } else if ("string" !== typeof NumberResult) {
+                                  } else if ("string" !== typeof actionData) {
                                     let str = "extra whitespace";
                                   } else {
                                     const _encodeURIComponent = encodeURIComponent;
-                                    encodeURIComponent(NumberResult);
-                                    return NumberResult;
+                                    encodeURIComponent(actionData);
+                                    return actionData;
                                   }
                                 } else {
                                   NumberResult = ReflectionJsonReader;
-                                  NumberResult = closure_1;
-                                  if (ReflectionJsonReader(closure_1[4]).ScalarType.BYTES === arg1) {
+                                  NumberResult = outer1_1;
+                                  if (ReflectionJsonReader(outer1_1[4]).ScalarType.BYTES === arg1) {
+                                    NumberResult = actionData;
                                     NumberResult = null;
-                                    if (null !== NumberResult) {
-                                      if ("" !== NumberResult) {
-                                        if ("string" === typeof NumberResult) {
+                                    if (null !== actionData) {
+                                      if ("" !== actionData) {
+                                        if ("string" === typeof actionData) {
                                           NumberResult = ReflectionJsonReader;
-                                          NumberResult = closure_1;
-                                          return ReflectionJsonReader(closure_1[8]).base64decode(NumberResult);
+                                          NumberResult = outer1_1;
+                                          NumberResult = actionData;
+                                          return ReflectionJsonReader(outer1_1[8]).base64decode(actionData);
                                         }
                                       }
                                     }
@@ -400,51 +406,52 @@ export const ReflectionJsonReader = () => {
                               }
                             }
                           }
-                          if (null === NumberResult) {
-                            return ReflectionJsonReader(closure_1[6]).reflectionLongConvert(ReflectionJsonReader(closure_1[7]).PbULong.ZERO, STRING);
+                          if (null === actionData) {
+                            return ReflectionJsonReader(outer1_1[6]).reflectionLongConvert(ReflectionJsonReader(outer1_1[7]).PbULong.ZERO, STRING);
                           } else {
-                            const PbULong = ReflectionJsonReader(closure_1[7]).PbULong;
-                            return ReflectionJsonReader(closure_1[6]).reflectionLongConvert(PbULong.from(NumberResult), STRING);
+                            const PbULong = ReflectionJsonReader(outer1_1[7]).PbULong;
+                            return ReflectionJsonReader(outer1_1[6]).reflectionLongConvert(PbULong.from(actionData), STRING);
                           }
                         }
                       }
                     }
-                    if (null === NumberResult) {
-                      return ReflectionJsonReader(closure_1[6]).reflectionLongConvert(ReflectionJsonReader(closure_1[7]).PbLong.ZERO, STRING);
+                    if (null === actionData) {
+                      return ReflectionJsonReader(outer1_1[6]).reflectionLongConvert(ReflectionJsonReader(outer1_1[7]).PbLong.ZERO, STRING);
                     } else {
-                      const PbLong = ReflectionJsonReader(closure_1[7]).PbLong;
-                      return ReflectionJsonReader(closure_1[6]).reflectionLongConvert(PbLong.from(NumberResult), STRING);
+                      const PbLong = ReflectionJsonReader(outer1_1[7]).PbLong;
+                      return ReflectionJsonReader(outer1_1[6]).reflectionLongConvert(PbLong.from(actionData), STRING);
                     }
                   }
                 }
               }
             }
           }
-          if (null === NumberResult) {
+          if (null === actionData) {
             return 0;
           } else {
-            if ("number" !== typeof NumberResult) {
-              if ("" === NumberResult) {
-                str = "empty string";
-              } else if ("string" === typeof NumberResult) {
-                if (NumberResult.trim().length !== NumberResult.length) {
-                  str = "extra whitespace";
-                } else {
-                  const _Number = Number;
-                  NumberResult = Number(NumberResult);
-                }
+            NumberResult = actionData;
+            if ("number" === typeof actionData) {
+              NumberResult = actionData;
+            } else if ("" === actionData) {
+              str = "empty string";
+            } else if ("string" === typeof actionData) {
+              if (actionData.trim().length !== actionData.length) {
+                str = "extra whitespace";
+              } else {
+                const _Number = Number;
+                NumberResult = Number(actionData);
               }
             }
             if (undefined !== NumberResult) {
               NumberResult = arg1;
               NumberResult = ReflectionJsonReader;
-              NumberResult = closure_1;
-              if (arg1 == ReflectionJsonReader(closure_1[4]).ScalarType.UINT32) {
-                ReflectionJsonReader(closure_1[5]).assertUInt32(NumberResult);
-                const obj6 = ReflectionJsonReader(closure_1[5]);
+              NumberResult = outer1_1;
+              if (arg1 == ReflectionJsonReader(outer1_1[4]).ScalarType.UINT32) {
+                ReflectionJsonReader(outer1_1[5]).assertUInt32(NumberResult);
+                const obj6 = ReflectionJsonReader(outer1_1[5]);
               } else {
-                ReflectionJsonReader(closure_1[5]).assertInt32(NumberResult);
-                const obj5 = ReflectionJsonReader(closure_1[5]);
+                ReflectionJsonReader(outer1_1[5]).assertInt32(NumberResult);
+                const obj5 = ReflectionJsonReader(outer1_1[5]);
               }
               return NumberResult;
             }
@@ -460,53 +467,66 @@ export const ReflectionJsonReader = () => {
             let tmp76 = str;
             let str15 = " - ";
             str14 = ` - ${str}`;
-            // break
+            break;
           }
-          let tmp77 = NumberResult;
+          let tmp77 = actionData;
           let flag2 = false;
-          let assertResult = self.assert(false, arg3 + str14, NumberResult);
+          let assertResult = self.assert(false, arg3 + str14, actionData);
         }
       }
-      if (null === NumberResult) {
+      if (null === actionData) {
         return 0;
-      } else if ("NaN" === NumberResult) {
-        const _Number7 = Number;
-        return Number.NaN;
-      } else if ("Infinity" === NumberResult) {
-        const _Number6 = Number;
-        return Number.POSITIVE_INFINITY;
-      } else if ("-Infinity" === NumberResult) {
-        const _Number5 = Number;
-        return Number.NEGATIVE_INFINITY;
-      } else if ("" === NumberResult) {
-        str = "empty string";
       } else {
-        if ("string" === typeof NumberResult) {
-          if (NumberResult.trim().length !== NumberResult.length) {
-            str = "extra whitespace";
-          }
-        }
-        if ("string" === typeof NumberResult) {
-          const _Number2 = Number;
-          const NumberResult1 = Number(NumberResult);
-          const _Number3 = Number;
-          if (Number.isNaN(NumberResult1)) {
-            str = "not a number";
+        NumberResult = actionData;
+        if ("NaN" === actionData) {
+          const _Number7 = Number;
+          return Number.NaN;
+        } else {
+          NumberResult = actionData;
+          if ("Infinity" === actionData) {
+            const _Number6 = Number;
+            return Number.POSITIVE_INFINITY;
           } else {
-            const _Number4 = Number;
-            if (Number.isFinite(tmp62)) {
-              if (arg1 == ReflectionJsonReader(closure_1[4]).ScalarType.FLOAT) {
-                ReflectionJsonReader(closure_1[5]).assertFloat32(tmp62);
-                const obj7 = ReflectionJsonReader(closure_1[5]);
-              }
-              return NumberResult1;
+            NumberResult = actionData;
+            if ("-Infinity" === actionData) {
+              const _Number5 = Number;
+              return Number.NEGATIVE_INFINITY;
             } else {
-              str = "too large or small";
+              NumberResult = actionData;
+              if ("" === actionData) {
+                str = "empty string";
+              } else {
+                NumberResult = actionData;
+                if ("string" === typeof actionData) {
+                  if (actionData.trim().length !== actionData.length) {
+                    str = "extra whitespace";
+                  }
+                }
+                if ("string" === typeof actionData) {
+                  const _Number2 = Number;
+                  const NumberResult1 = Number(actionData);
+                  const _Number3 = Number;
+                  if (Number.isNaN(NumberResult1)) {
+                    str = "not a number";
+                  } else {
+                    const _Number4 = Number;
+                    if (Number.isFinite(tmp62)) {
+                      if (arg1 == ReflectionJsonReader(outer1_1[4]).ScalarType.FLOAT) {
+                        ReflectionJsonReader(outer1_1[5]).assertFloat32(tmp62);
+                        const obj7 = ReflectionJsonReader(outer1_1[5]);
+                      }
+                      return NumberResult1;
+                    } else {
+                      str = "too large or small";
+                    }
+                  }
+                }
+              }
             }
           }
         }
       }
     }
   };
-  return callback(ReflectionJsonReader, items);
-}();
+  return _defineProperties(ReflectionJsonReader, items);
+})();

@@ -1,23 +1,31 @@
-// Module ID: 9010
-// Function ID: 70897
+// Module ID: 9017
+// Function ID: 70938
 // Name: Scope
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 1212, 5776, 689, 4091, 4126, 5450, 8955, 8180, 8310, 2]
 // Exports: default
 
-// Module 9010 (Scope)
+// Module 9017 (Scope)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function Scope(arg0) {
   let error;
   let isFake;
   let text;
   ({ text, error, isFake } = arg0);
   const tmp = callback2();
-  const intl = arg1(dependencyMap[4]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = arg1(dependencyMap[4]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if (isFake) {
     let stringResult = string(t.OX8EMU);
   } else {
-    stringResult = string(t.0lpCFG);
+    stringResult = string(t["0lpCFG"]);
   }
   let obj = { style: tmp.scopeContainer, accessible: true };
   let str = "";
@@ -26,13 +34,13 @@ function Scope(arg0) {
     str = ". " + error;
   }
   obj.accessibilityLabel = "" + stringResult + ": " + text + str;
-  obj = { <string:3798542332>: 48, <string:2195412909>: 12, <string:1614302748>: 4, style: tmp.iconWrapper };
+  obj = { style: tmp.iconWrapper, accessible: false, importantForAccessibility: "no-hide-descendants" };
   if (isFake) {
-    obj = { style: tmp.fakeScopeIcon, color: importDefault(tmp10[6]).colors.TEXT_MUTED, size: "refresh_sm" };
-    let tmp8Result = tmp8(tmp9(tmp10[5]).CircleXIcon, obj);
+    obj = { style: tmp.fakeScopeIcon, color: importDefault(689).colors.TEXT_MUTED, size: "refresh_sm" };
+    let tmp8Result = tmp8(tmp9(5776).CircleXIcon, obj);
   } else {
-    const obj1 = { color: importDefault(tmp10[6]).colors.TEXT_MUTED, size: "refresh_sm" };
-    tmp8Result = tmp8(tmp9(tmp10[7]).CircleCheckIcon, obj1);
+    const obj1 = { color: importDefault(689).colors.TEXT_MUTED, size: "refresh_sm" };
+    tmp8Result = tmp8(tmp9(4091).CircleCheckIcon, obj1);
   }
   obj.children = tmp8Result;
   const items = [callback(View, obj), ];
@@ -44,11 +52,11 @@ function Scope(arg0) {
   }
   obj3.color = str5;
   obj3.children = text;
-  const items1 = [callback(arg1(dependencyMap[8]).Text, obj3), ];
+  const items1 = [callback(require(4126) /* Text */.Text, obj3), ];
   let tmp17 = null;
   if (null != error) {
     const obj4 = { variant: "text-xs/normal", children: error };
-    tmp17 = callback(arg1(dependencyMap[8]).Text, obj4);
+    tmp17 = callback(require(4126) /* Text */.Text, obj4);
   }
   items1[1] = tmp17;
   obj2.children = items1;
@@ -56,22 +64,18 @@ function Scope(arg0) {
   obj.children = items;
   return closure_5(View, obj);
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ scopesContainer: { 9223372036854775807: "safety_state", 9223372036854775807: "message" }, scopes: { 9223372036854775807: "safety_state", 9223372036854775807: "message" }, scopeContainer: { flexDirection: "row" }, scope: {}, iconWrapper: { "Bool(true)": true, "Bool(true)": true, "Bool(true)": true }, fakeScopeIcon: { opacity: 0.6 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/oauth2/native/AuthorizeScopes.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ scopesContainer: { flexDirection: "column", gap: 16 }, scopes: { flexDirection: "column", gap: 16 }, scopeContainer: { flexDirection: "row" }, scope: { flex: 1, flexDirection: "column", justifyContent: "center" }, iconWrapper: { marginRight: 12, width: 20, height: 20 }, fakeScopeIcon: { opacity: 0.6 } });
+const result = require("jsxProd").fileFinishedImporting("modules/oauth2/native/AuthorizeScopes.tsx");
 
 export default function AuthorizeScopes(accountScopes) {
   let application;
+  let importDefault;
   let integrationType;
   let isTrustedName;
   let requestedScopes;
   accountScopes = accountScopes.accountScopes;
-  const arg1 = accountScopes;
-  ({ requestedScopes, errors: closure_1, isTrustedName } = accountScopes);
+  ({ requestedScopes, errors: importDefault, isTrustedName } = accountScopes);
   ({ application, integrationType } = accountScopes);
   if (isTrustedName === undefined) {
     isTrustedName = false;
@@ -80,42 +84,42 @@ export default function AuthorizeScopes(accountScopes) {
   if (0 === accountScopes.length) {
     return null;
   } else {
-    const t = arg1(dependencyMap[4]).t;
-    let hasItem = integrationType === arg1(dependencyMap[11]).ApplicationIntegrationType.USER_INSTALL;
+    const t = accountScopes(1212).t;
+    let hasItem = integrationType === accountScopes(8180).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(arg1(dependencyMap[12]).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(accountScopes(8310).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     let obj = { style: tmp.scopesContainer };
-    obj = { cachedAt: "<string:3992342784>", edpbxy: "<string:410073697>" };
-    const intl = arg1(dependencyMap[4]).intl;
+    obj = { variant: "heading-sm/normal", color: "text-default" };
+    const intl = accountScopes(1212).intl;
     obj = { application: application.name };
-    obj.children = intl.format(isTrustedName ? t.PZpY9c : t.1Hz+Sl, obj);
-    const items = [callback(arg1(dependencyMap[8]).Text, obj), ];
+    obj.children = intl.format(isTrustedName ? t.PZpY9c : t["1Hz+Sl"], obj);
+    const items = [callback(accountScopes(4126).Text, obj), ];
     const obj1 = { style: tmp.scopes };
     const mapped = accountScopes.map((value) => {
-      const accountScopes = value;
-      const scopeNames = accountScopes(closure_2[10]).getScopeNames(value, accountScopes);
+      let closure_0 = value;
+      const scopeNames = accountScopes(outer1_2[10]).getScopeNames(value, closure_0);
       return scopeNames.map((text) => {
         const obj = { text };
         let tmp3;
         if (0 === arg1) {
           let first;
-          if (null != closure_1) {
-            if (null != closure_1[closure_0]) {
+          if (null != outer1_1) {
+            if (null != outer1_1[closure_0]) {
               first = tmp9[0];
             }
           }
           tmp3 = first;
         }
         obj.error = tmp3;
-        return closure_4(closure_7, obj, "" + text + "-" + arg1);
+        return outer2_4(outer2_7, obj, "" + closure_0 + "-" + arg1);
       });
     });
     const items1 = [mapped.flat(), , ];
     if (hasItem) {
       const obj2 = {};
-      const intl2 = arg1(dependencyMap[4]).intl;
-      obj2.text = intl2.string(arg1(dependencyMap[4]).t.Ls2XRq);
+      const intl2 = accountScopes(1212).intl;
+      obj2.text = intl2.string(accountScopes(1212).t.Ls2XRq);
       hasItem = callback(Scope, obj2);
     }
     items1[1] = hasItem;

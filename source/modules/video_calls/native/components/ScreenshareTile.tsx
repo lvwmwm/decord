@@ -1,25 +1,31 @@
-// Module ID: 10551
-// Function ID: 82447
+// Module ID: 10561
+// Function ID: 82497
 // Name: ScreenShareTile
-// Dependencies: [79429632, 692125696, 579993600, 37093376, 298516480, 282132480, 274595840, 270270464, 297533440, 131072, 527958016, 452984832, 553648128]
+// Dependencies: [31, 27, 653, 33, 4130, 689, 10562, 5217, 1273, 10563, 4126, 1212, 2]
 // Exports: default
 
-// Module 10551 (ScreenShareTile)
-importAll(dependencyMap[0]);
-({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
-const NOOP = arg1(dependencyMap[2]).NOOP;
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.BLACK };
-obj.container = obj;
-obj.image = {};
-obj.label = {};
-obj.liveContainer = {};
-let closure_8 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/video_calls/native/components/ScreenshareTile.tsx");
+// Module 10561 (ScreenShareTile)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { NOOP } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK, overflow: "hidden", flex: 1 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.image = { marginBottom: 8, width: 60, height: 40 };
+_createForOfIteratorHelperLoose.label = { lineHeight: 18, textAlign: "center" };
+_createForOfIteratorHelperLoose.liveContainer = { position: "absolute", top: 8, right: 8, zIndex: 2 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/video_calls/native/components/ScreenshareTile.tsx");
 
 export default function ScreenShareTile(onSingleTap) {
   onSingleTap = onSingleTap.onSingleTap;
@@ -30,19 +36,19 @@ export default function ScreenShareTile(onSingleTap) {
   if (onDoubleTap === undefined) {
     onDoubleTap = NOOP;
   }
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap };
-  obj = { gesture: importDefault(dependencyMap[6])(obj) };
+  obj = { gesture: importDefault(10562)(obj) };
   obj = { style: tmp.container };
-  const obj1 = { style: tmp.liveContainer, children: callback(arg1(dependencyMap[8]).LiveTag, {}) };
+  const obj1 = { style: tmp.liveContainer, children: callback(require(1273) /* Button */.LiveTag, {}) };
   const items = [callback(closure_3, obj1), , ];
-  const tmp2 = importDefault(dependencyMap[6])(obj);
-  items[1] = callback(closure_4, { source: importDefault(dependencyMap[9]), style: tmp.image, resizeMode: "contain" });
-  const obj3 = { style: tmp.label };
-  const intl = arg1(dependencyMap[11]).intl;
-  obj3.children = intl.string(arg1(dependencyMap[11]).t.G84gtR);
-  items[2] = callback(arg1(dependencyMap[10]).Text, obj3);
+  const tmp2 = importDefault(10562)(obj);
+  items[1] = callback(closure_4, { source: importDefault(10563), style: tmp.image, resizeMode: "contain" });
+  const obj3 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj3.children = intl.string(require(1212) /* getSystemLocale */.t.G84gtR);
+  items[2] = callback(require(4126) /* Text */.Text, obj3);
   obj.children = items;
   obj.children = callback2(closure_3, obj);
-  return callback(arg1(dependencyMap[7]).GestureDetector, obj);
+  return callback(require(5217) /* Directions */.GestureDetector, obj);
 };

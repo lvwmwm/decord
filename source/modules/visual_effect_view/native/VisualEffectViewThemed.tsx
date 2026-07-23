@@ -1,21 +1,23 @@
-// Module ID: 8505
-// Function ID: 67871
-// Dependencies: []
+// Module ID: 8511
+// Function ID: 67908
+// Dependencies: [31, 33, 4066, 3976, 4533, 2]
 
-// Module 8505
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef(function VisualEffectViewThemed(arg0, ref) {
-  let obj = ref(dependencyMap[3]);
+// Module 8511
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const forwardRefResult = require("result").forwardRef(function VisualEffectViewThemed(arg0, ref) {
+  let obj = require(3976) /* AccessibilityAnnouncer */;
   let str = "dark";
   if (obj.isThemeLight(tmp)) {
     str = "light";
   }
   obj = { ref, blurTheme: str };
-  const tmp = importDefault(dependencyMap[2])();
+  tmp = importDefault(4066)();
   const merged = Object.assign(arg0);
-  return jsx(importDefault(dependencyMap[4]), obj);
+  return jsx(importDefault(4533), { ref, blurTheme: str });
 });
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewThemed.tsx");
+const result = require("useTheme").fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewThemed.tsx");
 
 export default forwardRefResult;

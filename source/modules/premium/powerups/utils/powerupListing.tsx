@@ -1,53 +1,59 @@
-// Module ID: 11539
-// Function ID: 89861
+// Module ID: 11549
+// Function ID: 89910
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 4017, 4018, 4021, 566, 2]
 // Exports: useBuildGuildPowerupsSections
 
-// Module 11539 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11549 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import BoostedGuildTiers from "BoostedGuildTiers";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,11 +91,11 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function orderPowerupListings(items) {
-  return function moveBadgePacksAfterServerTags(arr) {
+  return (function moveBadgePacksAfterServerTags(arr) {
     const findIndexResult = arr.findIndex((type) => {
       let tmp = "singlePerk" === type.type;
       if (tmp) {
-        tmp = type.powerup.skuId === callback(closure_1[4]).GUILD_POWERUP_TAG_SKU_ID;
+        tmp = type.powerup.skuId === outer2_0(outer2_1[4]).GUILD_POWERUP_TAG_SKU_ID;
       }
       return tmp;
     });
@@ -113,20 +119,20 @@ function orderPowerupListings(items) {
           items.splice(items.findIndex((type) => {
             let tmp = "singlePerk" === type.type;
             if (tmp) {
-              tmp = type.powerup.skuId === callback(closure_1[4]).GUILD_POWERUP_TAG_SKU_ID;
+              tmp = type.powerup.skuId === outer2_0(outer2_1[4]).GUILD_POWERUP_TAG_SKU_ID;
             }
             return tmp;
-          }) + 1, 0, callback(items.splice(findIndexResult1, 1), 1)[0]);
+          }) + 1, 0, outer1_2(items.splice(findIndexResult1, 1), 1)[0]);
           return items;
         }
       }
     }
     return arr;
-  }(function moveServerThemeToFront(arr) {
+  })((function moveServerThemeToFront(arr) {
     const findIndexResult = arr.findIndex((type) => {
       let tmp = "singlePerk" === type.type;
       if (tmp) {
-        tmp = type.powerup.skuId === callback(closure_1[4]).GUILD_POWERUP_GUILD_THEME_SKU_ID;
+        tmp = type.powerup.skuId === outer2_0(outer2_1[4]).GUILD_POWERUP_GUILD_THEME_SKU_ID;
       }
       return tmp;
     });
@@ -135,21 +141,20 @@ function orderPowerupListings(items) {
     } else {
       const items = [];
       HermesBuiltin.arraySpread(arr, 0);
-      items.unshift(callback(items.splice(findIndexResult, 1), 1)[0]);
+      items.unshift(outer1_2(items.splice(findIndexResult, 1), 1)[0]);
       return items;
     }
-  }(items));
+  })(items));
 }
 function buildPowerupListings(arg0, arr) {
   let done;
   let tmp = arg2;
-  const items = [];
-  arr = items;
+  let items = [];
   let closure_1 = arr.reduce((arg0, type) => {
-    if (type.type !== constants.PERK) {
+    if (type.type !== outer1_5.PERK) {
       return arg0;
     } else {
-      if (null != closure_8[type.skuId]) {
+      if (null != outer1_8[type.skuId]) {
         if (arg0[tmp2] == null) {
           arg0[tmp2] = [];
         }
@@ -160,32 +165,32 @@ function buildPowerupListings(arg0, arr) {
     }
   }, {});
   function _loop() {
-    if (type.type === constants.LEVEL) {
-      let obj = { type: "singleLevel", powerup: type };
-      let arr = arr.push(obj);
+    if (_slicedToArray.type === outer1_5.LEVEL) {
+      let obj = { type: "singleLevel", powerup: _slicedToArray };
+      items.push(obj);
       return 0;
-    } else if (null != closure_8[closure_2.skuId]) {
-      if (undefined !== closure_1[tmp17]) {
-        arr = closure_7[tmp17];
+    } else if (null != outer1_8[_slicedToArray.skuId]) {
+      if (undefined !== table[tmp17]) {
+        items = outer1_7[tmp17];
         const sorted = obj2.sort((skuId, skuId2) => {
           const index = closure_0.indexOf(skuId.skuId);
           return index - closure_0.indexOf(skuId2.skuId);
         });
         obj = { type: "multiPerk", group: tmp17, powerups: obj2 };
-        arr = arr.push(obj);
-        closure_1[tmp17] = undefined;
+        items.push(obj);
+        table[tmp17] = undefined;
       }
       return 0;
     } else {
-      obj = { type: "singlePerk", powerup: type, badge: closure_6[closure_2.skuId] };
-      arr.push(obj);
+      obj = { type: "singlePerk", powerup: _slicedToArray, badge: outer1_6[_slicedToArray.skuId] };
+      items.push(obj);
     }
   }
   const tmp2 = _createForOfIteratorHelperLoose(arr);
   let iter = tmp2();
   if (!iter.done) {
     do {
-      closure_2 = iter.value;
+      let value = iter.value;
       let _loopResult = _loop();
       let iter2 = tmp2();
       iter = iter2;
@@ -196,19 +201,15 @@ function buildPowerupListings(arg0, arr) {
     tmp = arg0 === GuildPowerupType.PERK;
   }
   if (tmp) {
-    const obj = { type: "gameServer" };
+    let obj = { type: "gameServer" };
     items.push(obj);
   }
   return orderPowerupListings(items);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[3]);
-const GuildPowerupType = tmp2.GuildPowerupType;
-const PERK_SKU_BADGES = tmp2.PERK_SKU_BADGES;
-const obj = {};
-const items = [arg1(dependencyMap[4]).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID, arg1(dependencyMap[4]).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, arg1(dependencyMap[4]).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, arg1(dependencyMap[4]).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID];
+const GuildPowerupType = BoostedGuildTiers.GuildPowerupType;
+const PERK_SKU_BADGES = BoostedGuildTiers.PERK_SKU_BADGES;
+let obj = {};
+let items = [require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID];
 obj.guildTagsBadgePacks = items;
 const entries = Object.entries(obj);
 let closure_8 = entries.reduce((arg0, arg1) => {
@@ -228,32 +229,31 @@ let closure_8 = entries.reduce((arg0, arg1) => {
   }
   return arg0;
 }, {});
-const items1 = [, ];
+let items1 = [, ];
 ({ LEVEL: arr3[0], PERK: arr3[1] } = GuildPowerupType);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/powerups/utils/powerupListing.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/utils/powerupListing.tsx");
 
 export const POWERUP_GROUP_TO_SKU_IDS = obj;
 export { buildPowerupListings };
 export const useBuildGuildPowerupsSections = function useBuildGuildPowerupsSections(guildId, gameServerEnabled) {
-  gameServerEnabled = guildId;
+  const _require = guildId;
   const dependencyMap = gameServerEnabled;
   let powerupCatalog;
-  const items = [closure_4];
-  const stateFromStores = gameServerEnabled(dependencyMap[5]).useStateFromStores(items, () => stateForGuild.getStateForGuild(arg0));
-  let closure_2 = stateFromStores;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_4.getStateForGuild(closure_0));
   if (null != stateFromStores) {
     powerupCatalog = stateFromStores.powerupCatalog;
   }
   const items1 = [powerupCatalog, gameServerEnabled];
-  return React.useMemo(() => closure_9.reduce((arr, type) => {
+  return React.useMemo(() => outer1_9.reduce((arr, type) => {
     let tmp;
-    if (null != powerupCatalog) {
-      tmp = powerupCatalog.powerupCatalog[type];
+    if (null != outer1_2) {
+      tmp = outer1_2.powerupCatalog[type];
     }
     if (null == tmp) {
       return arr;
     } else {
-      const obj = { type, listings: callback(type, tmp, closure_1) };
+      const obj = { type, listings: outer2_13(type, tmp, outer1_1) };
       arr.push(obj);
       return arr;
     }

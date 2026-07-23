@@ -1,22 +1,23 @@
-// Module ID: 5789
-// Function ID: 49492
+// Module ID: 5794
+// Function ID: 49521
 // Name: SettingSearchSessionAnalyticsManager
-// Dependencies: []
+// Dependencies: [6, 7, 491, 5795, 2]
 
-// Module 5789 (SettingSearchSessionAnalyticsManager)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let tmp2 = () => {
+// Module 5794 (SettingSearchSessionAnalyticsManager)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+let tmp2 = (() => {
   class SettingSearchSessionAnalyticsManager {
     constructor() {
-      tmp = closure_2(this, SettingSearchSessionAnalyticsManager);
+      tmp = outer1_2(this, SettingSearchSessionAnalyticsManager);
       this.searchSessionId = null;
       this.searchSessionStartTime = null;
       this.isQueryEnteredTracked = false;
       return;
     }
   }
-  const arg1 = SettingSearchSessionAnalyticsManager;
   let obj = {
     key: "getSearchSessionId",
     value() {
@@ -34,7 +35,7 @@ let tmp2 = () => {
   obj = {
     key: "initialize",
     value() {
-      this.searchSessionId = SettingSearchSessionAnalyticsManager(closure_1[2]).v4();
+      this.searchSessionId = SettingSearchSessionAnalyticsManager(outer1_1[2]).v4();
       this.searchSessionStartTime = Date.now();
       this.isQueryEnteredTracked = false;
     }
@@ -44,9 +45,9 @@ let tmp2 = () => {
     key: "maybeTrackQueryEntered",
     value() {
       if (!this.isQueryEnteredTracked) {
-        const result = SettingSearchSessionAnalyticsManager(closure_1[3]).trackSettingSearchQueryEntered();
+        const result = SettingSearchSessionAnalyticsManager(outer1_1[3]).trackSettingSearchQueryEntered();
         tmp.isQueryEnteredTracked = true;
-        const obj = SettingSearchSessionAnalyticsManager(closure_1[3]);
+        const obj = SettingSearchSessionAnalyticsManager(outer1_1[3]);
       }
     }
   };
@@ -55,7 +56,7 @@ let tmp2 = () => {
     value() {
       const self = this;
       if (tmp) {
-        let obj = SettingSearchSessionAnalyticsManager(closure_1[3]);
+        let obj = SettingSearchSessionAnalyticsManager(outer1_1[3]);
         obj = {};
         const _Date = Date;
         obj.searchSessionDuration = Date.now() - self.searchSessionStartTime;
@@ -67,8 +68,8 @@ let tmp2 = () => {
     }
   };
   return callback(SettingSearchSessionAnalyticsManager, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/settings/tracking/SettingSearchSessionAnalyticsManager.tsx");
+let result = require("v1").fileFinishedImporting("modules/settings/tracking/SettingSearchSessionAnalyticsManager.tsx");
 
 export default tmp2;

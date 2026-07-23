@@ -1,9 +1,14 @@
-// Module ID: 7493
-// Function ID: 60105
+// Module ID: 7498
+// Function ID: 60139
 // Name: RowButtonWrapper
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 689, 1324, 5170, 5165, 3991, 5167, 7499, 2]
 
-// Module 7493 (RowButtonWrapper)
+// Module 7498 (RowButtonWrapper)
+import result from "result";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 class RowButton {
   constructor(arg0) {
     flag = global.arrow;
@@ -19,15 +24,15 @@ class RowButton {
       str = "secondary";
     }
     ({ icon, experimental_withBlurBackground } = global);
-    obj = { formatToPlainString: "Text", jsx: "resizeMode", ix: "from", -73374748: "Array", -1359392420: "isArray", 1386281826: "braintreemasterpasslanding" };
+    obj = { arrow: 0, disabled: 0, variant: 0, icon: 0, onPress: 0, experimental_withBlurBackground: 0 };
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
-    tmp3 = importDefault(dependencyMap[4])("RowButton");
+    tmp3 = require("useIsMobileVisualRefreshExperimentEnabled")("RowButton");
     tmp4 = icon;
     if (null != icon) {
-      tmp5 = importAll;
+      tmp5 = result;
       tmp4 = icon;
-      if (!importAll.isValidElement(icon)) {
+      if (!result.isValidElement(icon)) {
         str2 = "translucent";
         if (!experimental_withBlurBackground) {
           str3 = "secondary";
@@ -38,13 +43,13 @@ class RowButton {
           str2 = str3;
         }
         tmp6 = jsx;
-        tmp7 = arg1;
-        tmp8 = dependencyMap;
+        tmp7 = closure_0;
+        tmp8 = closure_2;
         num = 5;
         obj = {};
         obj.source = icon;
         obj.variant = str2;
-        tmp4 = jsx(arg1(dependencyMap[5]).TableRowIcon, obj);
+        tmp4 = jsx(require("TableRowIcon").TableRowIcon, obj);
       }
     }
     obj1 = { isRefreshEnabled: tmp3, experimental_withBlurBackground, onPress: global.onPress };
@@ -59,14 +64,14 @@ class RowButton {
     obj2.disabled = flag2;
     xl = undefined;
     if (tmp3) {
-      tmp14 = importDefault;
-      tmp15 = dependencyMap;
+      tmp14 = closure_1;
+      tmp15 = closure_2;
       num2 = 3;
-      xl = importDefault(dependencyMap[3]).radii.xl;
+      xl = require("_createForOfIteratorHelperLoose").radii.xl;
     }
     obj2.borderRadius = xl;
     merged2 = Object.assign(merged);
-    obj1["children"] = tmp12(arg1(dependencyMap[6]).TableRowInner, obj2);
+    obj1["children"] = tmp12(require("TableRowInner").TableRowInner, obj2);
     return tmp9(tmp10, obj1);
   }
 }
@@ -79,19 +84,17 @@ function RowButtonWrapper(isRefreshEnabled) {
     flag = false;
   }
   ({ onPress, disabled, children } = isRefreshEnabled);
-  let obj = { "Null": false, height: false, width: false, style: false, title: false };
+  let obj = { experimental_withBlurBackground: 0, isRefreshEnabled: 0, onPress: 0, disabled: 0, children: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(isRefreshEnabled, obj);
-  const arg1 = merged;
-  let importDefault;
-  let closure_2;
+  let sharedValue;
+  let dependencyMap;
   let React;
   const tmp3 = callback(flag);
-  let obj1 = arg1(closure_2[7]);
-  const sharedValue = obj1.useSharedValue(0);
-  importDefault = sharedValue;
+  let obj1 = merged(3991);
+  sharedValue = obj1.useSharedValue(0);
   const items = [sharedValue];
-  closure_2 = React.useCallback(() => {
+  dependencyMap = React.useCallback(() => {
     const result = sharedValue.set(1);
   }, items);
   const items1 = [sharedValue];
@@ -100,10 +103,10 @@ function RowButtonWrapper(isRefreshEnabled) {
   }, items1);
   if (isRefreshEnabled.experimental_withBlurBackground) {
     obj = {
-      "Bool(false)": true,
-      "Bool(false)": true,
-      "Bool(false)": true,
-      "Bool(false)": true,
+      shadow: "none",
+      border: "none",
+      start: true,
+      end: true,
       onPress,
       onPressIn(arg0) {
           if (null != merged.onPressIn) {
@@ -125,8 +128,8 @@ function RowButtonWrapper(isRefreshEnabled) {
     const merged1 = Object.assign(merged);
     obj["variant"] = "transparent";
     obj = { pressed: sharedValue, children };
-    obj["children"] = jsx(arg1(closure_2[9]).BackgroundBlurView, obj);
-    return jsx(arg1(closure_2[8]).InternalCard, obj);
+    obj["children"] = jsx(merged(7499).BackgroundBlurView, { pressed: sharedValue, children });
+    return jsx(merged(5167).InternalCard, { pressed: sharedValue, children });
   } else {
     let str = "subtle";
     if (flag) {
@@ -140,30 +143,27 @@ function RowButtonWrapper(isRefreshEnabled) {
       }
       str2 = variant;
     }
-    obj1 = { onPress, style: tmp3.card, disabled };
+    obj1 = { shadow: "low", start: true, end: true, onPress, style: tmp3.card, disabled };
     const merged2 = Object.assign(merged);
     obj1["variant"] = str2;
     obj1["border"] = str;
     obj1["children"] = children;
-    return jsx(arg1(closure_2[8]).InternalCard, obj1);
+    return jsx(merged(5167).InternalCard, { shadow: "low", start: true, end: true, onPress, style: tmp3.card, disabled });
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-let closure_5 = arg1(dependencyMap[2]).createStyles(() => {
+let closure_5 = _createForOfIteratorHelperLoose.createStyles(() => {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
   let obj = {};
-  obj = { padding: 0, borderTopStartRadius: importDefault(dependencyMap[3]).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopEndRadius: importDefault(dependencyMap[3]).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomStartRadius: importDefault(dependencyMap[3]).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomEndRadius: importDefault(dependencyMap[3]).modules.mobile.TABLE_ROW_BORDER_RADIUS };
+  obj = { padding: 0, borderTopStartRadius: importDefault(689).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopEndRadius: importDefault(689).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomStartRadius: importDefault(689).modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomEndRadius: importDefault(689).modules.mobile.TABLE_ROW_BORDER_RADIUS };
   obj.card = obj;
   obj.cardWithBlur = { overflow: "hidden" };
   return obj;
 });
-RowButton.Icon = arg1(dependencyMap[5]).TableRowIcon;
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/components/TableRow/native/RowButton.native.tsx");
+RowButton.Icon = require("TableRowIcon").TableRowIcon;
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/TableRow/native/RowButton.native.tsx");
 
-export const RowButtonIconProps = arg1(dependencyMap[5]).TableRowIconProps;
+export const RowButtonIconProps = require("TableRowIcon").TableRowIconProps;
 export { RowButton };

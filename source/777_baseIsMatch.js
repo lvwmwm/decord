@@ -1,11 +1,12 @@
 // Module ID: 777
-// Function ID: 8857
+// Function ID: 8858
 // Name: baseIsMatch
-// Dependencies: []
+// Dependencies: [752, 745]
 
 // Module 777 (baseIsMatch)
 
 export default function baseIsMatch(arg0, arg1, arg2, arg3) {
+  let tmp27;
   if (null == arg0) {
     return !length;
   } else {
@@ -34,7 +35,7 @@ export default function baseIsMatch(arg0, arg1, arg2, arg3) {
     }
     let sum = tmp6 + 1;
     if (sum < length) {
-      while (true) {
+      do {
         let tmp10 = arg2[sum];
         let first = tmp10[0];
         let tmp12 = ObjectResult[first];
@@ -52,13 +53,13 @@ export default function baseIsMatch(arg0, arg1, arg2, arg3) {
               }
             }
             sum = sum + 1;
-            let tmp8 = tmp16;
-            let tmp9 = tmp20;
+            tmp8 = tmp16;
+            tmp9 = tmp20;
           }
         }
         let tmp14 = require;
         let tmp15 = dependencyMap;
-        tmp16 = require(dependencyMap[0]);
+        tmp16 = require(752) /* Stack */;
         let prototype = tmp16.prototype;
         let tmp17 = new.target;
         let tmp18 = new.target;
@@ -73,7 +74,7 @@ export default function baseIsMatch(arg0, arg1, arg2, arg3) {
           let tmp26 = tmp16;
           tmp20 = arg3(tmp12, tmp13, first, ObjectResult, arg1, tmp16);
         }
-        let tmp27 = tmp20;
+        tmp27 = tmp20;
         if (undefined === tmp20) {
           let tmp28 = require;
           let tmp29 = dependencyMap;
@@ -82,12 +83,9 @@ export default function baseIsMatch(arg0, arg1, arg2, arg3) {
           let num2 = 3;
           let tmp32 = arg3;
           let tmp33 = tmp16;
-          tmp27 = require(dependencyMap[1])(tmp13, tmp12, 3, arg3, tmp16);
+          tmp27 = require(745) /* baseIsEqual */(tmp13, tmp12, 3, arg3, tmp16);
         }
-        if (!tmp27) {
-          break;
-        }
-      }
+      } while (tmp27);
       return false;
     }
     return true;

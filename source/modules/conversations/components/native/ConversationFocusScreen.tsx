@@ -1,51 +1,56 @@
-// Module ID: 9301
-// Function ID: 72644
+// Module ID: 9308
+// Function ID: 72685
 // Name: ConversationFocusScreen
-// Dependencies: []
+// Dependencies: [31, 27, 6831, 33, 4130, 689, 1459, 566, 9287, 4126, 1212, 4543, 9309, 2]
 // Exports: default
 
-// Module 9301 (ConversationFocusScreen)
-let closure_2 = importAll(dependencyMap[0]);
-({ ActivityIndicator: closure_3, ScrollView: closure_4, View: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-const tmp3 = arg1(dependencyMap[3]);
-obj.pendingContent = { paddingVertical: importDefault(dependencyMap[5]).space.PX_24, gap: importDefault(dependencyMap[5]).space.PX_32, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-let closure_9 = obj.createStyles(obj);
-const obj1 = { paddingVertical: importDefault(dependencyMap[5]).space.PX_24, gap: importDefault(dependencyMap[5]).space.PX_32, backgroundColor: importDefault(dependencyMap[5]).colors.BACKGROUND_BASE_LOW };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/conversations/components/native/ConversationFocusScreen.tsx");
+// Module 9308 (ConversationFocusScreen)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ ActivityIndicator: closure_3, ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+let obj1 = { flex: 1, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_24, alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_32, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.pendingContent = obj1;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/conversations/components/native/ConversationFocusScreen.tsx");
 
 export default function ConversationFocusScreen() {
   let fullyHydrated;
   let startMessageId;
-  let ChatPreview = callback2();
-  let obj = arg1(dependencyMap[6]);
+  let ChatPreview = _createForOfIteratorHelperLoose();
+  let obj = channelId(conversationId[6]);
   const params = obj.useRoute().params;
-  const channelId = params.channelId;
-  const arg1 = channelId;
-  const conversationId = params.conversationId;
-  const dependencyMap = conversationId;
-  let obj1 = arg1(dependencyMap[7]);
-  const items = [closure_6];
+  channelId = params.channelId;
+  conversationId = params.conversationId;
+  let obj1 = channelId(conversationId[7]);
+  const items = [_isNativeReflectConstruct];
   const items1 = [channelId, conversationId];
-  const stateFromStores = obj1.useStateFromStores(items, () => store.getHydratedMessages(channelId, conversationId), items1);
-  let obj2 = arg1(dependencyMap[7]);
-  const items2 = [closure_6];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getHydratedMessages(channelId, conversationId), items1);
+  let obj2 = channelId(conversationId[7]);
+  const items2 = [_isNativeReflectConstruct];
   const items3 = [channelId, conversationId];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items2, () => {
-    const conversationMetadata = store.getConversationMetadata(channelId, conversationId);
+    const conversationMetadata = outer1_6.getConversationMetadata(channelId, conversationId);
     const obj = {};
     let fullyHydrated;
     if (null != conversationMetadata) {
       fullyHydrated = conversationMetadata.fullyHydrated;
     }
     obj.fullyHydrated = null != fullyHydrated && fullyHydrated;
-    obj.isFullFetchPending = store.isConversationFetchPending(conversationId, true);
+    obj.isFullFetchPending = outer1_6.isConversationFetchPending(conversationId, true);
     let startMessageId;
     if (null != conversationMetadata) {
       startMessageId = conversationMetadata.conversation.startMessageId;
@@ -58,9 +63,8 @@ export default function ConversationFocusScreen() {
     return obj;
   }, items3);
   ({ fullyHydrated, startMessageId } = stateFromStoresObject);
-  const React = startMessageId;
   const items4 = [channelId, startMessageId];
-  const callback = React.useCallback(() => {
+  const callback = startMessageId.useCallback(() => {
     if (null != startMessageId) {
       const result = channelId(conversationId[8]).closeConversationsAndJumpToMessage(channelId, startMessageId);
       const obj = channelId(conversationId[8]);
@@ -73,24 +77,24 @@ export default function ConversationFocusScreen() {
     }
   }
   if (fullyHydrated) {
-    obj = { "Bool(true)": "y", "Bool(true)": "isArray", "Bool(true)": "Reflect", contentContainerStyle: ChatPreview.container };
-    ChatPreview = arg1(dependencyMap[12]).ChatPreview;
+    obj = { horizontal: true, scrollEnabled: false, bounces: false, contentContainerStyle: ChatPreview.container };
+    ChatPreview = channelId(conversationId[12]).ChatPreview;
     obj1 = { channelId, messages: stateFromStores, jumpTargetId: startMessageId, initialScrollToTop: true, allowReactions: true };
     obj.children = callback(ChatPreview, obj1);
     callback(closure_4, obj);
   } else {
     obj2 = { style: ChatPreview.pendingContent };
-    const obj3 = {};
-    const intl = arg1(dependencyMap[10]).intl;
-    obj3.children = intl.string(arg1(dependencyMap[10]).t.eylmYW);
-    const items5 = [callback(arg1(dependencyMap[9]).Text, obj3), ];
+    const obj3 = { variant: "text-md/normal", color: "text-muted" };
+    const intl = channelId(conversationId[10]).intl;
+    obj3.children = intl.string(channelId(conversationId[10]).t.eylmYW);
+    const items5 = [callback(channelId(conversationId[9]).Text, obj3), ];
     let tmp13 = null != startMessageId;
     if (tmp13) {
       const obj4 = { variant: "tertiary" };
-      const intl2 = arg1(dependencyMap[10]).intl;
-      obj4.text = intl2.string(arg1(dependencyMap[10]).t.aBNTxl);
+      const intl2 = channelId(conversationId[10]).intl;
+      obj4.text = intl2.string(channelId(conversationId[10]).t.aBNTxl);
       obj4.onPress = callback;
-      tmp13 = callback(arg1(dependencyMap[11]).Button, obj4);
+      tmp13 = callback(channelId(conversationId[11]).Button, obj4);
     }
     items5[1] = tmp13;
     obj2.children = items5;

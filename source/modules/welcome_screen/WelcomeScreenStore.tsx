@@ -1,15 +1,21 @@
-// Module ID: 11676
-// Function ID: 90584
+// Module ID: 11686
+// Function ID: 90633
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 11676 (_isNativeReflectConstruct)
+// Module 11686 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import set from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
@@ -33,30 +39,25 @@ function handleWelcomeScreenUpdate(welcomeScreen) {
   }
   closure_6[welcomeScreen.guildId] = welcomeScreen;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let obj = {};
 let closure_6 = {};
 let closure_7 = {};
-let closure_8 = false;
-let closure_9 = false;
-let closure_10 = false;
-let tmp2 = (Store) => {
+let c8 = false;
+let c9 = false;
+let c10 = false;
+let tmp2 = ((Store) => {
   class WelcomeScreenStore {
     constructor() {
       self = this;
       tmp = WelcomeScreenStore(this, WelcomeScreenStore);
-      obj = closure_3(WelcomeScreenStore);
-      tmp2 = closure_2;
-      if (closure_11()) {
+      obj = outer1_3(WelcomeScreenStore);
+      tmp2 = outer1_2;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -65,13 +66,12 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = WelcomeScreenStore;
   callback2(WelcomeScreenStore, Store);
   let obj = {
     key: "get",
     value(arg0) {
       if (null != arg0) {
-        return closure_6[arg0];
+        return outer1_6[arg0];
       }
     }
   };
@@ -79,14 +79,14 @@ let tmp2 = (Store) => {
   obj = {
     key: "isFetching",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[1] = obj;
   obj = {
     key: "hasError",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[2] = obj;
@@ -100,9 +100,9 @@ let tmp2 = (Store) => {
       if (null == arg0) {
         return tmp;
       } else if (flag) {
-        let tmp3 = closure_8;
+        let tmp3 = outer1_8;
       } else {
-        tmp3 = closure_7[arg0] || false;
+        tmp3 = outer1_7[arg0] || false;
       }
     }
   };
@@ -121,7 +121,7 @@ let tmp2 = (Store) => {
     }
   };
   return callback(WelcomeScreenStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "WelcomeScreenStore";
 obj = {
   INVITE_RESOLVE_SUCCESS: handleInviteData,
@@ -131,22 +131,22 @@ obj = {
   WELCOME_SCREEN_VIEW: function handleWelcomeScreenView(guildId) {
     closure_7[guildId.guildId] = true;
     if (guildId.isLurking) {
-      let closure_8 = true;
+      let c8 = true;
     }
   },
   GUILD_STOP_LURKING: function handleGuildStopLurking() {
-    let closure_8 = false;
+    let c8 = false;
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
     closure_7[guild.guild.id] = false;
   },
   WELCOME_SCREEN_FETCH_START: function handleFetchWelcomeScreen() {
-    let closure_9 = true;
-    let closure_10 = false;
+    let c9 = true;
+    let c10 = false;
   },
   WELCOME_SCREEN_FETCH_SUCCESS: function handleFetchWelcomeScreenSuccess(welcomeScreen) {
-    let closure_9 = false;
-    let closure_10 = false;
+    let c9 = false;
+    let c10 = false;
     welcomeScreen = welcomeScreen.welcomeScreen;
     if (null == welcomeScreen) {
       welcomeScreen = obj;
@@ -154,12 +154,12 @@ obj = {
     closure_6[welcomeScreen.guildId] = welcomeScreen;
   },
   WELCOME_SCREEN_FETCH_FAIL: function handleFetchWelcomeScreenFail() {
-    let closure_9 = false;
-    let closure_10 = true;
+    let c9 = false;
+    let c10 = true;
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[6]), obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/welcome_screen/WelcomeScreenStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/welcome_screen/WelcomeScreenStore.tsx");
 
 export default tmp2;
 export const NO_WELCOME_SCREEN = obj;

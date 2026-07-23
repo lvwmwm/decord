@@ -1,48 +1,49 @@
-// Module ID: 10945
-// Function ID: 85107
+// Module ID: 10955
+// Function ID: 85156
 // Name: getExperimentServerAssignment
-// Dependencies: [0, 4294967295, 0, 0, 0, 0]
+// Dependencies: [57, 4044, 1188, 566, 4052, 2]
 // Exports: useExperimentAssignment, useExperimentServerAssignment
 
-// Module 10945 (getExperimentServerAssignment)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
+// Module 10955 (getExperimentServerAssignment)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
 
+const require = arg1;
 function getExperimentServerAssignment(arg0, id) {
   let name = arg0;
   let tmp = arg2;
   if (arg2 === undefined) {
-    const items = [closure_3, closure_4];
+    const items = [_isNativeReflectConstruct, closure_4];
     tmp = items;
   }
   const tmp4 = callback(tmp, 2);
   const first = tmp4[0];
   if (null == name) {
     return null;
-  } else if (name.system === id(dependencyMap[4]).ExperimentSystem.LEGACY) {
+  } else if (name.system === require(4052) /* trackExposureToExperiment */.ExperimentSystem.LEGACY) {
     name = name.name;
     let loadedUserExperiment = first.getLoadedUserExperiment(name);
   } else {
     loadedUserExperiment = obj2.getServerAssignment(name.kind, id, name.name);
   }
 }
-let closure_3 = importDefault(dependencyMap[1]);
-const result = require("__exportStarResult1").fileFinishedImporting("modules/experiments/client_override_hooks/useExperimentAssignments.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/client_override_hooks/useExperimentAssignments.tsx");
 
 export const useExperimentAssignment = function useExperimentAssignment(experiment, arg1) {
-  arg1 = experiment;
+  const _require = experiment;
   const dependencyMap = arg1;
-  const items = [closure_3, closure_4];
-  return arg1(dependencyMap[3]).useStateFromStores(items, (self) => {
-    if (self.system === self(arg1[4]).ExperimentSystem.LEGACY) {
-      const userExperimentDescriptor = userExperimentDescriptor.getUserExperimentDescriptor(self.name);
+  const items = [_isNativeReflectConstruct, closure_4];
+  return _require(566).useStateFromStores(items, () => {
+    if (experiment.system === experiment(table[4]).ExperimentSystem.LEGACY) {
+      const userExperimentDescriptor = outer1_3.getUserExperimentDescriptor(experiment.name);
       let bucket;
       if (null != userExperimentDescriptor) {
         bucket = userExperimentDescriptor.bucket;
       }
       let variantId = bucket;
     } else {
-      const assignment = assignment.getAssignment(self.kind, arg1, self.name);
+      const assignment = outer1_4.getAssignment(experiment.kind, table, experiment.name);
       if (null != assignment) {
         variantId = assignment.variantId;
       }
@@ -52,11 +53,11 @@ export const useExperimentAssignment = function useExperimentAssignment(experime
 };
 export { getExperimentServerAssignment };
 export const useExperimentServerAssignment = function useExperimentServerAssignment(experiment, arg1) {
-  arg1 = experiment;
+  const _require = experiment;
   const dependencyMap = arg1;
-  const items = [closure_3, closure_4];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const items = [closure_3, closure_4];
-    return callback(arg0, arg1, items);
+  let items = [_isNativeReflectConstruct, closure_4];
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_3, outer1_4];
+    return outer1_5(closure_0, closure_1, items);
   });
 };

@@ -1,44 +1,47 @@
-// Module ID: 11300
-// Function ID: 87935
+// Module ID: 11310
+// Function ID: 87985
 // Name: AppLauncherChannelOption
-// Dependencies: []
+// Dependencies: [57, 31, 1348, 33, 566, 4320, 11299, 11311, 4098, 11311, 1934, 2]
 // Exports: default
 
-// Module 11300 (AppLauncherChannelOption)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelOption.tsx");
+// Module 11310 (AppLauncherChannelOption)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/native/options/channel/AppLauncherChannelOption.tsx");
 
 export default function AppLauncherChannelOption(option) {
   let autoFocus;
+  let _slicedToArray;
+  let result;
+  let _isNativeReflectConstruct;
   let hasError;
+  let importDefault;
   let onChannelPress;
   let style;
   option = option.option;
-  const arg1 = option;
-  ({ initialValue: closure_1, onChannelPress } = option);
-  const dependencyMap = onChannelPress;
-  ({ onActionSheetDismiss: closure_3, channel: closure_4, onPress: closure_5 } = option);
+  ({ initialValue: importDefault, onChannelPress } = option);
+  ({ onActionSheetDismiss: _slicedToArray, channel: result, onPress: _isNativeReflectConstruct } = option);
   ({ style, autoFocus, hasError } = option);
-  const tmp = callback(React.useState(() => {
+  let tmp = callback(React.useState(() => {
     let channelId = null;
-    if (null != lib) {
+    if (null != closure_1) {
       channelId = null;
-      if ("channelMention" === lib.type) {
-        channelId = lib.channelId;
+      if ("channelMention" === closure_1.type) {
+        channelId = closure_1.channelId;
       }
     }
     return channelId;
   }), 2);
   const first = tmp[0];
-  const jsx = first;
   let closure_7 = tmp[1];
-  let obj = arg1(dependencyMap[4]);
-  const items = [closure_5];
+  let obj = option(onChannelPress[4]);
+  const items = [_isNativeReflectConstruct];
   const items1 = [first];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(first), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(first), items1);
   const items2 = [onChannelPress, first, stateFromStores];
   const effect = React.useEffect(() => {
     let tmp = null != first;
@@ -46,41 +49,41 @@ export default function AppLauncherChannelOption(option) {
       tmp = null == stateFromStores;
     }
     if (tmp) {
-      callback(null);
+      callback2(null);
       const obj = { channel: null };
       onChannelPress(obj);
     }
   }, items2);
   obj = { style, option, hasError, selected: null != stateFromStores };
   let tmp8;
-  const tmp5 = importDefault(dependencyMap[5])(stateFromStores);
-  const tmp6 = jsx;
+  const tmp5 = importDefault(onChannelPress[5])(stateFromStores);
+  const tmp6 = first;
   if (null != stateFromStores) {
     tmp8 = tmp5;
   }
   obj.selectedItemName = tmp8;
-  obj.leading = jsx(arg1(dependencyMap[7]).ChannelIcon, { channel: stateFromStores });
+  obj.leading = first(option(onChannelPress[7]).ChannelIcon, { channel: stateFromStores });
   obj.onPress = function onPress() {
-    if (null != channel) {
-      channel();
+    if (null != callback) {
+      callback();
     }
-    let obj = lib(onChannelPress[8]);
+    let obj = outer1_1(onChannelPress[8]);
     obj = {
       option,
-      channel: closure_4,
+      channel: result,
       onChannelPress(channel) {
         channel = channel.channel;
         let id;
         if (null != channel) {
           id = channel.id;
         }
-        closure_7(id);
-        callback({ channel });
+        outer1_7(id);
+        outer1_2({ channel });
       },
-      onActionSheetDismiss: closure_3
+      onActionSheetDismiss: _slicedToArray
     };
     obj.openLazy(option(onChannelPress[10])(onChannelPress[9], onChannelPress.paths), option(onChannelPress[7]).APP_LAUNCHER_CHANNEL_LIST_ACTION_SHEET_KEY, obj);
   };
   obj.autoFocus = autoFocus;
-  return tmp6(importDefault(dependencyMap[6]), obj);
+  return tmp6(importDefault(onChannelPress[6]), obj);
 };

@@ -1,25 +1,25 @@
-// Module ID: 14320
-// Function ID: 108168
+// Module ID: 14434
+// Function ID: 110321
 // Name: route
-// Dependencies: []
+// Dependencies: [7662, 653, 10095, 14435, 2]
 
-// Module 14320 (route)
-const _module = require(dependencyMap[2]);
-let obj = {
+// Module 14434 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
     return "Alert Modal";
   },
-  parent: require(dependencyMap[0]).MobileSetting.DESIGN_SYSTEMS,
+  parent: require("MobileSetting").MobileSetting.DESIGN_SYSTEMS,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[1]).UserSettingsSections.DESIGN_SYSTEM_ALERT_MODAL,
+  route: require("ME").UserSettingsSections.DESIGN_SYSTEM_ALERT_MODAL,
   getComponent() {
-    return require(dependencyMap[3]).default;
+    return require(14435) /* DemoModal */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[4]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsAlertModalSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsAlertModalSetting.tsx");
 
 export default route;

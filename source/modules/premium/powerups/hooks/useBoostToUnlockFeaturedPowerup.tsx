@@ -1,53 +1,61 @@
-// Module ID: 11526
-// Function ID: 89805
+// Module ID: 11536
+// Function ID: 89855
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 1838, 4017, 4018, 653, 4021, 566, 4037, 2]
 // Exports: default
 
-// Module 11526 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11536 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS as closure_7 } from "BoostedGuildTiers";
+import { GuildFeatures } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,57 +92,46 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = arg1(dependencyMap[4]).GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS;
-const GuildFeatures = arg1(dependencyMap[5]).GuildFeatures;
-let obj = { skuId: arg1(dependencyMap[6]).GUILD_POWERUP_LEVEL_1_SKU_ID, threshold: 1 };
-const items = [obj, , , , , , ];
-obj = { skuId: arg1(dependencyMap[6]).GUILD_POWERUP_LEVEL_2_SKU_ID, threshold: 2 };
+let obj = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_1_SKU_ID, threshold: 1 };
+let items = [obj, , , , , , ];
+obj = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_2_SKU_ID, threshold: 2 };
 items[1] = obj;
-obj = { skuId: arg1(dependencyMap[6]).GUILD_POWERUP_LEVEL_3_SKU_ID, threshold: 2 };
+obj = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_LEVEL_3_SKU_ID, threshold: 2 };
 items[2] = obj;
-items[3] = { skuId: arg1(dependencyMap[6]).GUILD_POWERUP_TAG_SKU_ID, threshold: 1 };
-const obj1 = { skuId: arg1(dependencyMap[6]).GUILD_POWERUP_TAG_SKU_ID, threshold: 1 };
-items[4] = { skuId: arg1(dependencyMap[6]).GUILD_POWERUP_ROLE_COLOR_SKU_ID, threshold: 1 };
-const obj2 = { skuId: arg1(dependencyMap[6]).GUILD_POWERUP_ROLE_COLOR_SKU_ID, threshold: 1 };
-items[5] = { skuId: arg1(dependencyMap[6]).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, threshold: 1 };
-const obj3 = { skuId: arg1(dependencyMap[6]).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, threshold: 1 };
-items[6] = { skuId: arg1(dependencyMap[6]).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, threshold: 1 };
-const obj4 = { skuId: arg1(dependencyMap[6]).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, threshold: 1 };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/powerups/hooks/useBoostToUnlockFeaturedPowerup.tsx");
+items[3] = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_TAG_SKU_ID, threshold: 1 };
+const obj1 = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_TAG_SKU_ID, threshold: 1 };
+items[4] = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_ROLE_COLOR_SKU_ID, threshold: 1 };
+const obj2 = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_POWERUP_ROLE_COLOR_SKU_ID, threshold: 1 };
+items[5] = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, threshold: 1 };
+const obj3 = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, threshold: 1 };
+items[6] = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, threshold: 1 };
+const obj4 = { skuId: require("VANITY_URL_POWERUP_SKU_ID").GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, threshold: 1 };
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/hooks/useBoostToUnlockFeaturedPowerup.tsx");
 
 export default function useBoostToUnlockFeaturedPowerup(arg0) {
-  const arg1 = arg0;
-  const items = [closure_6];
-  const stateFromStores = arg1(dependencyMap[7]).useStateFromStores(items, () => stateForGuild.getStateForGuild(arg0));
-  const importDefault = stateFromStores;
-  const available = importDefault(dependencyMap[8])(arg0).available;
-  const dependencyMap = available;
-  const obj = arg1(dependencyMap[7]);
-  const items1 = [closure_5];
-  const stateFromStores1 = arg1(dependencyMap[7]).useStateFromStores(items1, () => {
-    const guild = guild.getGuild(arg0);
+  const _require = arg0;
+  let items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(available[7]).useStateFromStores(items, () => outer1_6.getStateForGuild(closure_0));
+  available = stateFromStores(available[8])(arg0).available;
+  const obj = _require(available[7]);
+  const items1 = [_createForOfIteratorHelperLoose];
+  const stateFromStores1 = _require(available[7]).useStateFromStores(items1, () => {
+    const guild = outer1_5.getGuild(closure_0);
     let hasItem;
     if (null != guild) {
       const features = guild.features;
-      hasItem = features.has(obj.PREMIUM_TIER_3_OVERRIDE);
+      hasItem = features.has(outer1_8.PREMIUM_TIER_3_OVERRIDE);
     }
     return true === hasItem;
   });
-  const callback = stateFromStores1;
-  const first = callback(React.useState(() => Math.random()), 1)[0];
-  const React = first;
+  first = stateFromStores1(first.useState(() => Math.random()), 1)[0];
   const items2 = [stateFromStores, available, stateFromStores1, first];
-  return React.useMemo(() => {
+  return first.useMemo(() => {
     let iter;
     if (null != stateFromStores) {
       const unlockedPowerups = stateFromStores.unlockedPowerups;
-      const arg0 = unlockedPowerups;
       const items = [];
-      const tmp17 = callback(closure_9);
+      const tmp17 = outer1_10(outer1_9);
       const iter3 = tmp17();
       let iter2 = iter3;
       if (!iter3.done) {
@@ -143,15 +140,15 @@ export default function useBoostToUnlockFeaturedPowerup(arg0) {
           let tmp2 = tmp14[skuId];
           let tmp3 = tmp10;
           if (null != tmp2) {
-            let tmp4 = closure_3;
-            if (!closure_3) {
+            let tmp4 = stateFromStores1;
+            if (!stateFromStores1) {
               tmp3 = tmp10;
               if (null == unlockedPowerups[skuId]) {
                 let dependencies = tmp2.dependencies;
                 tmp3 = tmp10;
                 if (dependencies.every((arg0) => null != unlockedPowerups[arg0])) {
-                  let tmp6 = closure_2;
-                  let diff = tmp2.cost - closure_2;
+                  let tmp6 = available;
+                  let diff = tmp2.cost - available;
                   let tmp8 = diff > 0 && diff <= tmp;
                   tmp3 = diff;
                   if (tmp8) {
@@ -161,18 +158,18 @@ export default function useBoostToUnlockFeaturedPowerup(arg0) {
                 }
               }
             } else {
-              let tmp5 = closure_7;
+              let tmp5 = outer1_7;
               tmp3 = tmp10;
             }
           }
           iter = tmp17();
-          let tmp10 = tmp3;
+          tmp10 = tmp3;
           iter2 = iter;
         } while (!iter.done);
       }
       if (items.length > 0) {
         const _Math = Math;
-        return items[Math.floor(Math, closure_4 * items.length)];
+        return items[Math.floor(Math, first * items.length)];
       }
     }
   }, items2);

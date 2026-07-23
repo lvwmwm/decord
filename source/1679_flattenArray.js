@@ -1,5 +1,5 @@
 // Module ID: 1679
-// Function ID: 18611
+// Function ID: 18612
 // Name: flattenArray
 // Dependencies: []
 
@@ -10,9 +10,9 @@ arg5.flattenArray = function flattenArray(style) {
     function _flattenArray(arr) {
       const item = arr.forEach((arg0) => {
         if (Array.isArray(arg0)) {
-          callback(arg0);
+          outer1_1(arg0);
         } else {
-          const arr = arr.push(arg0);
+          outer1_0.push(arg0);
         }
       });
     }

@@ -1,13 +1,13 @@
-// Module ID: 5951
-// Function ID: 49859
+// Module ID: 5956
+// Function ID: 49888
 // Name: ClydeHologramSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 5957, 2]
 // Exports: ClydeHologramSpotIllustration
 
-// Module 5951 (ClydeHologramSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeHologramSpotIllustration.native.tsx");
+// Module 5956 (ClydeHologramSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ClydeHologramSpotIllustration.native.tsx");
 
 export const ClydeHologramSpotIllustration = function ClydeHologramSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const ClydeHologramSpotIllustration = function ClydeHologramSpotIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5957) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const ClydeHologramSpotIllustration = function ClydeHologramSpotIllustrat
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

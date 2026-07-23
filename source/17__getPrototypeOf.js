@@ -6,7 +6,7 @@
 // Module 17 (_getPrototypeOf)
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
-    const _Object = Object;
+    let _Object = Object;
     let fn = getPrototypeOf.bind();
   } else {
     fn = (arg0) => {
@@ -18,9 +18,8 @@ function _getPrototypeOf(arg0) {
       return __proto__;
     };
   }
-  const _getPrototypeOf = fn;
   module.exports = fn;
-  return _getPrototypeOf(arg0);
+  return fn(arg0);
 }
 
 export default _getPrototypeOf;

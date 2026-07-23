@@ -1,12 +1,14 @@
-// Module ID: 11205
-// Function ID: 87255
+// Module ID: 11215
+// Function ID: 87305
 // Name: TrackSectionHeader
-// Dependencies: []
+// Dependencies: [8181, 8559, 480, 2]
 // Exports: default
 
-// Module 11205 (TrackSectionHeader)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/app_launcher/native/screens/home/TrackSectionHeader.tsx");
+// Module 11215 (TrackSectionHeader)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("isThrottled").fileFinishedImporting("modules/app_launcher/native/screens/home/TrackSectionHeader.tsx");
 
 export default function TrackSectionHeader(viewed) {
   let children;
@@ -15,11 +17,11 @@ export default function TrackSectionHeader(viewed) {
   let sectionName;
   viewed = viewed.viewed;
   ({ sectionName, numItems, numVisibleItems, children } = viewed);
-  let obj = { type: arg1(dependencyMap[2]).ImpressionTypes.VIEW, name: arg1(dependencyMap[2]).ImpressionNames.APP_LAUNCHER_SECTION };
-  obj = { section_name: sectionName, num_items: numItems, num_visible_items: numVisibleItems, source: closure_3.entrypoint() };
+  let obj = { type: require(480) /* isThrottled */.ImpressionTypes.VIEW, name: require(480) /* isThrottled */.ImpressionNames.APP_LAUNCHER_SECTION };
+  obj = { section_name: sectionName, num_items: numItems, num_visible_items: numVisibleItems, source: _isNativeReflectConstruct.entrypoint() };
   obj.properties = obj;
   obj = { disableTrack: !viewed };
   const items = [viewed];
-  importDefault(dependencyMap[1])(obj, obj, items);
+  importDefault(8559)(obj, obj, items);
   return children;
 };

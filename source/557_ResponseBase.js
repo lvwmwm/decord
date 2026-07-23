@@ -1,7 +1,7 @@
 // Module ID: 557
 // Function ID: 6720
 // Name: ResponseBase
-// Dependencies: []
+// Dependencies: [509]
 
 // Module 557 (ResponseBase)
 class ResponseBase {
@@ -13,14 +13,14 @@ class ResponseBase {
   }
   _setHeaderProperties(arg0) {
     self = this;
-    str = global.content-type;
+    str = global["content-type"];
     tmp = global;
     if (!str) {
       str = "";
     }
-    obj = require(dependencyMap[0]);
+    obj = require("_createForOfIteratorHelper");
     self.type = obj.type(str);
-    obj2 = require(dependencyMap[0]);
+    obj2 = require("_createForOfIteratorHelper");
     paramsResult = obj2.params(str);
     for (const key10019 in paramsResult) {
       tmp5 = key10019;
@@ -30,15 +30,15 @@ class ResponseBase {
         continue;
       } else {
         self[key10019] = paramsResult[key10019];
-        // continue
+        continue;
       }
       continue;
     }
     self.links = {};
     if (tmp.link) {
-      tmp3 = require;
-      tmp4 = dependencyMap;
-      obj3 = require(dependencyMap[0]);
+      tmp3 = closure_0;
+      tmp4 = closure_1;
+      obj3 = require("_createForOfIteratorHelper");
       self.links = obj3.parseLinks(global.link);
     }
     return;

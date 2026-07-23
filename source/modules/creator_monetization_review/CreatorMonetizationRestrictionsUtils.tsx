@@ -1,10 +1,16 @@
-// Module ID: 3749
-// Function ID: 28598
+// Module ID: 3751
+// Function ID: 28603
 // Name: isRestrictedFromShowingGuildPurchaseEntryPoints
-// Dependencies: []
+// Dependencies: [3752, 1838, 3753, 653, 2]
 // Exports: isRestrictedFromMonetizationReapplication, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 3749 (isRestrictedFromShowingGuildPurchaseEntryPoints)
+// Module 3751 (isRestrictedFromShowingGuildPurchaseEntryPoints)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { CreatorMonetizationRestrictions as closure_3 } from "CreatorMonetizationRestrictions";
+import { GuildFeatures } from "ME";
+
 function isRestrictedFromShowingGuildPurchaseEntryPoints(restrictions) {
   let hasItem = null != restrictions;
   if (hasItem) {
@@ -19,12 +25,7 @@ function isRestrictedFromUpdatingCreatorMonetizationSettings(monetizationRestric
   }
   return hasItem;
 }
-let closure_0 = importDefault(dependencyMap[0]);
-const FetchState = arg1(dependencyMap[0]).FetchState;
-let closure_2 = importDefault(dependencyMap[1]);
-let closure_3 = arg1(dependencyMap[2]).CreatorMonetizationRestrictions;
-const GuildFeatures = arg1(dependencyMap[3]).GuildFeatures;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsUtils.tsx");
+const result = require("CreatorMonetizationRestrictions").fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsUtils.tsx");
 
 export { isRestrictedFromShowingGuildPurchaseEntryPoints };
 export const shouldHideGuildPurchaseEntryPoints = function shouldHideGuildPurchaseEntryPoints(guildId) {

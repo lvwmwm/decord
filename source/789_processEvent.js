@@ -1,35 +1,39 @@
 // Module ID: 789
-// Function ID: 8909
+// Function ID: 8910
 // Name: processEvent
-// Dependencies: []
+// Dependencies: [57, 790, 791, 794]
 // Exports: debugSymbolicatorIntegration
 
 // Module 789 (processEvent)
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
 function processEvent(arg0, arg1) {
-  arg1 = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return fn(this, undefined, undefined, function*() {
     let isErrorLikeResult;
     let tmp46;
     let tmp47;
-    const exception = lib.exception;
+    const exception = outer1_0.exception;
+    const outer1_2 = exception;
     let values;
     if (null !== exception) {
-      if (undefined !== exception) {
-        values = exception.values;
+      if (undefined !== outer1_2) {
+        values = outer1_2.values;
       }
     }
     if (values) {
-      if (obj.isErrorLike(closure_1.originalException)) {
-        let originalException = closure_1.originalException;
+      if (obj.isErrorLike(outer1_1.originalException)) {
+        let originalException = outer1_1.originalException;
         const items = [];
         if (obj5.isErrorLike(originalException)) {
           do {
             let arr = items.push(originalException);
             let cause = originalException.cause;
-            let tmp29 = closure_0;
-            let tmp30 = closure_1;
-            let obj6 = closure_0(closure_1[1]);
+            let tmp29 = callback;
+            let tmp30 = dependencyMap;
+            let obj6 = callback(790);
             originalException = cause;
             isErrorLikeResult = obj6.isErrorLike(cause);
           } while (isErrorLikeResult);
@@ -37,41 +41,41 @@ function processEvent(arg0, arg1) {
         const entries = items.entries();
         const tmp34 = entries[Symbol.iterator]();
         while (tmp34 !== undefined) {
-          let tmp44 = exception;
-          let tmp45 = exception(tmp35, 2);
+          let tmp44 = outer2_2;
+          let tmp45 = outer2_2(tmp35, 2);
           [tmp46, tmp47] = tmp45;
-          let tmp48 = closure_6;
-          let tmp49 = lib;
-          let tmp50 = closure_1;
-          let obj7 = lib(closure_1[1]);
-          let tmp51 = yield closure_6(tmp47.stack, obj7.getFramesToPop(tmp47));
+          let tmp48 = outer2_6;
+          let tmp49 = callback;
+          let tmp50 = dependencyMap;
+          let obj7 = callback(790);
+          let tmp51 = yield outer2_6(tmp47.stack, obj7.getFramesToPop(tmp47));
           if (tmp51) {
-            let tmp38 = callback;
-            let tmp39 = lib;
+            let tmp38 = outer2_7;
+            let tmp39 = outer1_0;
             let tmp40 = tmp46;
             let tmp41 = tmp51;
-            let tmp42 = callback(lib.exception.values[tmp46], tmp37);
+            let tmp42 = outer2_7(outer1_0.exception.values[tmp46], tmp37);
           }
-          // continue
+          continue;
         }
-        const obj5 = lib(closure_1[1]);
+        obj5 = callback(790);
       }
-      return lib;
+      return outer1_0;
     }
-    if (closure_1.syntheticException) {
-      if (obj2.isErrorLike(closure_1.syntheticException)) {
-        const obj4 = yield closure_6(closure_1.syntheticException.stack, lib(closure_1[1]).getFramesToPop(closure_1.syntheticException));
-        if (lib.exception) {
+    if (outer1_1.syntheticException) {
+      if (obj2.isErrorLike(outer1_1.syntheticException)) {
+        const obj4 = yield outer2_6(outer1_1.syntheticException.stack, callback(790).getFramesToPop(outer1_1.syntheticException));
+        if (outer1_0.exception) {
           values = obj4;
           if (obj4) {
-            values = lib.exception.values;
+            values = outer1_0.exception.values;
           }
           if (values) {
-            callback(lib.exception.values[0], obj4);
+            outer2_7(outer1_0.exception.values[0], obj4);
           }
         } else {
           if (tmp16) {
-            const threads = lib.threads;
+            const threads = outer1_0.threads;
             values = undefined;
             if (null !== threads) {
               if (undefined !== threads) {
@@ -93,18 +97,18 @@ function processEvent(arg0, arg1) {
             if (stacktrace) {
               tmp17.threads.values[0].stacktrace.frames = obj4.reverse();
             }
-            const tmp17 = lib;
+            tmp17 = outer1_0;
           }
-          const tmp16 = lib.threads && obj4;
+          tmp16 = outer1_0.threads && obj4;
         }
-        const obj3 = lib(closure_1[1]);
+        const obj3 = callback(790);
       }
-      const obj2 = lib(closure_1[1]);
+      obj2 = callback(790);
     }
   });
 }
 function symbolicate(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   let num = 0;
   if (arguments.length > 1) {
     num = 0;
@@ -112,48 +116,48 @@ function symbolicate(arg0) {
       num = arguments[1];
     }
   }
-  const dependencyMap = num;
   return fn(this, undefined, undefined, function*() {
-    const obj = callback(closure_1[2]);
-    const parseErrorStackResult = callback(closure_1[2]).parseErrorStack(callback);
-    const tmp2 = yield callback(closure_1[2]).symbolicateStackTrace(parseErrorStackResult);
+    let obj = callback(num[2]);
+    const parseErrorStackResult = callback(num[2]).parseErrorStack(outer1_0);
+    const tmp2 = yield callback(num[2]).symbolicateStackTrace(parseErrorStackResult);
     if (tmp2) {
       const tmp9 = "stack" in tmp3 ? tmp2.stack : tmp2;
       const _Math = Math;
-      const bound = Math.max(closure_1 - 1, 0);
+      const bound = Math.max(outer1_1 - 1, 0);
       if (bound) {
         let substr = arr.slice(bound);
       } else {
         substr = arr;
       }
-      const tmp15 = yield function convertReactNativeFramesToSentryFrames(substr) {
-        return callback(this, undefined, undefined, function*() {
+      const tmp15 = yield (function convertReactNativeFramesToSentryFrames(substr) {
+        let closure_0 = substr;
+        return outer3_3(this, undefined, undefined, function*() {
           if (obj) {
             return obj.resume();
           } else {
             let self = this;
             self = this;
-            return Promise.all(self.map((arg0) => {
-              const self = arg0;
-              return callback(self, undefined, undefined, /* F8921 */ function*() { ... });
+            return Promise.all(outer1_0.map((arg0) => {
+              let closure_0 = arg0;
+              return outer6_3(closure_0, undefined, undefined, /* F8922 */ function*() { ... });
             }));
           }
         });
-      }(substr.filter((file) => {
+      })(substr.filter((file) => {
         file = file.file;
         if (file) {
-          file = null === file.file.match(closure_4);
+          file = null === file.file.match(outer3_4);
           const str = file.file;
         }
         return file;
       }));
-      return yield callback(closure_1[2]).fetchSourceContext(tmp15);
+      return yield callback(num[2]).fetchSourceContext(tmp15);
     } else {
-      const debug = callback(closure_1[3]).debug;
+      const debug = callback(num[3]).debug;
       debug.error("React Native DevServer could not symbolicate the stack trace.");
       return null;
     }
-    const obj2 = callback(closure_1[2]);
+    const obj2 = callback(num[2]);
   });
 }
 function replaceExceptionFramesInException(stacktrace, arr) {
@@ -165,7 +169,6 @@ function replaceExceptionFramesInException(stacktrace, arr) {
     stacktrace.stacktrace.frames = arr.reverse();
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
 let fn = this;
 if (this) {
   fn = this.__awaiter;
@@ -173,59 +176,63 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    arg1 = arg0;
-    const dependencyMap = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;
   };
 }
-const items = [null, null];
+let items = ["ReactNativeRenderer-dev\\.js$", "MessageQueue\\.js$"];
 const regExp = new RegExp(items.join("|"));
 
-export const debugSymbolicatorIntegration = function debugSymbolicatorIntegration(arg0) {
+export const debugSymbolicatorIntegration = function debugSymbolicatorIntegration() {
   return {
     name: "DebugSymbolicator",
     setupOnce() {

@@ -1,10 +1,9 @@
-// Module ID: 12744
-// Function ID: 97765
+// Module ID: 12858
+// Function ID: 99921
 // Name: SHARE_SCREEN_MODAL_KEY
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 12744 (SHARE_SCREEN_MODAL_KEY)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/share/native/ShareScreenConstants.tsx");
+// Module 12858 (SHARE_SCREEN_MODAL_KEY)
+const result = require("set").fileFinishedImporting("modules/share/native/ShareScreenConstants.tsx");
 
 export const SHARE_SCREEN_MODAL_KEY = "share_screen_modal";

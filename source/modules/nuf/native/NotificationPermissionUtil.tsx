@@ -1,39 +1,47 @@
-// Module ID: 11440
-// Function ID: 89049
+// Module ID: 11450
+// Function ID: 89099
 // Name: _requestPushNotificationPermission
-// Dependencies: []
+// Dependencies: [57, 5, 31, 27, 11448, 11449, 653, 4344, 10640, 675, 11451, 11457, 11458, 566, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 11440 (_requestPushNotificationPermission)
+// Module 11450 (_requestPushNotificationPermission)
+import _slicedToArray from "_slicedToArray";
+import EventActionType from "EventActionType";
+import result from "result";
+import { NativeModules } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { EventActionType } from "EventActionType";
+import { AnalyticEvents } from "ME";
+import { NotificationAuthorizationStatus as closure_10 } from "NativePermissionStatus";
+
+const require = arg1;
 function _requestPushNotificationPermission() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback3(tmp);
-  const _requestPushNotificationPermission = obj;
+  const obj = callback2(tmp);
   return obj(...arguments);
 }
 function _enableProvisionalPushNotification() {
   // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback3(tmp);
-  const _enableProvisionalPushNotification = obj;
+  const obj = callback2(tmp);
   return obj(...arguments);
 }
 function useCanSeePushNotificationNudge() {
-  const isTeenInStrictCountry = callback(dependencyMap[12]).useIsTeenInStrictCountry();
-  const obj = callback(dependencyMap[12]);
-  const items = [closure_7];
-  const stateFromStores = callback(dependencyMap[13]).useStateFromStores(items, () => authorizationStatus.authorizationStatus);
-  const tmp3 = callback2(React.useState(false), 2);
+  const isTeenInStrictCountry = _require(11458).useIsTeenInStrictCountry();
+  let obj = _require(11458);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_7.authorizationStatus);
+  const tmp3 = callback(React.useState(false), 2);
   let first = tmp3[0];
-  const callback = tmp3[1];
+  _require = tmp3[1];
   const effect = React.useEffect(() => {
-    const NativePermissionManager = obj.NativePermissionManager;
+    const NativePermissionManager = outer1_6.NativePermissionManager;
     const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
     notificationAuthorizationStatus.then((authorizationStatus) => {
       if (null != authorizationStatus) {
-        const result = callback(closure_2[10]).updateNotificationAuthorizationStatus(authorizationStatus);
-        const obj = callback(closure_2[10]);
+        const result = callback(outer2_2[10]).updateNotificationAuthorizationStatus(authorizationStatus);
+        const obj = callback(outer2_2[10]);
       }
-      callback(true);
+      outer1_0(true);
     });
   }, []);
   if (first) {
@@ -48,32 +56,23 @@ function useCanSeePushNotificationNudge() {
   }
   return first;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const NativeModules = arg1(dependencyMap[3]).NativeModules;
-let closure_7 = importDefault(dependencyMap[4]);
-const EventActionType = arg1(dependencyMap[5]).EventActionType;
-const AnalyticEvents = arg1(dependencyMap[6]).AnalyticEvents;
-let closure_10 = arg1(dependencyMap[7]).NotificationAuthorizationStatus;
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/nuf/native/NotificationPermissionUtil.tsx");
+let result = require("result").fileFinishedImporting("modules/nuf/native/NotificationPermissionUtil.tsx");
 
 export const requestPushNotificationPermission = function requestPushNotificationPermission(ALLOW_TO_REQUEST, ALERT, callback) {
   return _requestPushNotificationPermission(...arguments);
 };
 export const useShowReactivationPrompt = function useShowReactivationPrompt() {
-  const tmp = callback2(React.useState(false), 2);
+  const tmp = callback(React.useState(false), 2);
   let closure_0 = tmp[1];
   const effect = React.useEffect(() => {
     function _shouldShowReactivationPrompts() {
       // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback(tmp);
-      const _shouldShowReactivationPrompts = obj;
+      const obj = outer2_4(tmp);
       return obj(...arguments);
     }
-    !function shouldShowReactivationPrompts() {
+    !(function shouldShowReactivationPrompts() {
       return _shouldShowReactivationPrompts(...arguments);
-    }();
+    })();
   }, []);
   return tmp[0];
 };
@@ -83,8 +82,8 @@ export const enableProvisionalPushNotification = function enableProvisionalPushN
 export { useCanSeePushNotificationNudge };
 export const useShouldShowPushNotificationNudgeByPromptType = function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   let hasItem = useCanSeePushNotificationNudge();
-  const items = [closure_7];
-  const stateFromStores = arg1(dependencyMap[13]).useStateFromStores(items, () => state.getState().eligiblePromptTypes);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_7.getState().eligiblePromptTypes);
   if (hasItem) {
     hasItem = stateFromStores.has(CHANNEL_BANNER);
   }

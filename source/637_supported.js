@@ -29,9 +29,9 @@ function unsupported(arg0) {
   return flag;
 }
 let tmp = unsupported;
-if ("[object Arguments]" == () => {
+if ("[object Arguments]" == (() => {
   return toString.call(arguments);
-}()) {
+})()) {
   tmp = supported;
 }
 tmp.supported = supported;

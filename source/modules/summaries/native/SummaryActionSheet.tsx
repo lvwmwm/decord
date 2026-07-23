@@ -1,40 +1,43 @@
-// Module ID: 10882
-// Function ID: 84597
+// Module ID: 10892
+// Function ID: 84646
 // Name: SummaryActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 1348, 4349, 9484, 653, 33, 4098, 10892, 1934, 4130, 689, 5650, 9499, 3830, 1212, 4312, 8332, 7007, 7019, 3981, 21, 1198, 5187, 5121, 10893, 4126, 10895, 10896, 10097, 7638, 2]
 // Exports: default, openSummaryDividerActionSheet
 
-// Module 10882 (SummaryActionSheet)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-({ AnalyticsSections: closure_8, MessageFlags: closure_9 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[10]);
-obj = { summaryContainer: { maxRanking: "1 m\u00E5ned", minRanking: "{{count}} m\u00E5neder", position: "cirka 1 \u00E5r", bottom: "cirka {{count}} \u00E5r", left: "1 \u00E5r" }, summaryContent: { textAlign: "center" } };
-obj = { 0: false, -9223372036854775808: false, 9223372036854775807: false, 9223372036854775807: false, 9223372036854775807: null, 9223372036854775807: null, borderRadius: importDefault(dependencyMap[11]).radii.round, backgroundColor: importDefault(dependencyMap[11]).colors.BACKGROUND_BRAND };
-obj.summaryIconContainer = obj;
-const tmp3 = arg1(dependencyMap[6]);
-obj.summaryIcon = { tintColor: importDefault(dependencyMap[11]).colors.WHITE };
-obj.summaryTopic = { marginBottom: 4 };
-const obj1 = { tintColor: importDefault(dependencyMap[11]).colors.WHITE };
-obj.divider = { height: 1, backgroundColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
-obj.actionsContainer = { "Bool(true)": 1682653457, alignSelf: 275906561, minHeight: 268435456 };
-let closure_12 = obj.createStyles(obj);
-const obj2 = { height: 1, backgroundColor: importDefault(dependencyMap[11]).colors.BORDER_SUBTLE };
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/summaries/native/SummaryActionSheet.tsx");
+// Module 10892 (SummaryActionSheet)
+import set from "set";
+import { View } from "SummaryActionSheetButton";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ AnalyticsSections: closure_8, MessageFlags: closure_9 } = ME);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = { summaryContainer: { padding: 16, margin: 16, marginBottom: 24, justifyContent: "center", alignItems: "center" }, summaryContent: { textAlign: "center" } };
+_createForOfIteratorHelperLoose = { marginBottom: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, border: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
+_createForOfIteratorHelperLoose.summaryIconContainer = _createForOfIteratorHelperLoose;
+let obj1 = { margin: 8, width: 20, height: 20, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
+_createForOfIteratorHelperLoose.summaryIcon = obj1;
+_createForOfIteratorHelperLoose.summaryTopic = { marginBottom: 4 };
+_createForOfIteratorHelperLoose.divider = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+_createForOfIteratorHelperLoose.actionsContainer = { flexDirection: "row", justifyContent: "space-evenly", marginBottom: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/summaries/native/SummaryActionSheet.tsx");
 
 export default function SummaryActionSheet(summary) {
   summary = summary.summary;
-  const arg1 = summary;
-  const tmp = callback3();
-  const channel = channel.getChannel(summary.channelId);
-  const importDefault = channel;
-  const message = message.getMessage(summary.channelId, summary.startId);
-  const dependencyMap = message;
+  const tmp = _createForOfIteratorHelperLoose();
+  channel = channel.getChannel(summary.channelId);
+  message = message.getMessage(summary.channelId, summary.startId);
   let hasFlagResult = null != message;
   if (hasFlagResult) {
     hasFlagResult = message.hasFlag(constants.HAS_THREAD);
@@ -44,7 +47,7 @@ export default function SummaryActionSheet(summary) {
     canStartPublicThread = !message.hasFlag(constants.HAS_THREAD);
   }
   if (canStartPublicThread) {
-    let obj1 = arg1(dependencyMap[12]);
+    let obj1 = summary(message[12]);
     canStartPublicThread = obj1.computeCanStartPublicThread(channel, message);
   }
   let guild_id;
@@ -83,7 +86,7 @@ export default function SummaryActionSheet(summary) {
       obj.url = obj4.getChannelPermalink(channel.guild_id, channel.id, summary.startId, summary.id);
       const formatToPlainStringResult = intl2.formatToPlainString(summary(message[15]).t.I3yTDn, obj);
       obj = { message: formatToPlainStringResult, subject: summary.topic };
-      summary(message[17]).showShareActionSheet(obj, constants.SUMMARY_ACTION_SHEET);
+      summary(message[17]).showShareActionSheet(obj, outer1_8.SUMMARY_ACTION_SHEET);
       const obj5 = summary(message[17]);
     } else {
       const intl = summary(message[15]).intl;
@@ -97,7 +100,7 @@ export default function SummaryActionSheet(summary) {
     obj.hideActionSheet();
     if (null != channel) {
       if (null != message) {
-        const result = channel(message[18]).openThreadCreationForMobile(channel, summary.startId, constants.SUMMARY_ACTION_SHEET);
+        const result = channel(message[18]).openThreadCreationForMobile(channel, summary.startId, outer1_8.SUMMARY_ACTION_SHEET);
         const obj3 = channel(message[18]);
         obj = { name: summary.topic };
         channel(message[19]).changeThreadSettings(channel.id, obj);
@@ -108,11 +111,11 @@ export default function SummaryActionSheet(summary) {
           obj8.transitionToGuild(channel.guild_id, channel(message[21]).castMessageIdAsChannelId(message.id));
           const obj9 = channel(message[21]);
         }
-        const obj7 = channel(message[21]);
+        obj7 = channel(message[21]);
       }
     }
     const intl = summary(message[15]).intl;
-    summary(message[14]).presentError(intl.string(summary(message[15]).t./+DWeQ));
+    summary(message[14]).presentError(intl.string(summary(message[15]).t["/+DWeQ"]));
   }, items2);
   const callback3 = React.useCallback(() => {
     channel(message[7]).hideActionSheet();
@@ -129,62 +132,65 @@ export default function SummaryActionSheet(summary) {
   let obj = { ref: React.useRef(null) };
   obj = { bottom: true };
   obj1 = { style: tmp.summaryContainer };
-  const obj2 = { style: tmp.summaryIconContainer, children: callback(arg1(dependencyMap[25]).TopicsIcon, { style: tmp.summaryIcon, size: "custom" }) };
+  let obj2 = { style: tmp.summaryIconContainer, children: callback(summary(message[25]).TopicsIcon, { style: tmp.summaryIcon, size: "custom" }) };
   const items4 = [callback(View, obj2), , ];
-  const obj4 = { "Null": "781324642736144424", "Null": null, alignItems: "Cheerful Choco preens against window" };
+  let obj4 = { style: null, variant: "heading-md/extrabold", color: "mobile-text-heading-primary" };
   const items5 = [, ];
   ({ summaryContent: arr6[0], summaryTopic: arr6[1] } = tmp);
   obj4.style = items5;
   obj4.children = summary.topic;
-  items4[1] = callback(arg1(dependencyMap[26]).Text, obj4);
+  items4[1] = callback(summary(message[26]).Text, obj4);
+  let obj5 = { style: null, variant: "heading-md/medium", color: "text-default" };
   const items6 = [tmp.summaryContent];
-  items4[2] = callback(arg1(dependencyMap[26]).Text, { style: items6, children: summary.summShort });
+  obj5.style = items6;
+  obj5.children = summary.summShort;
+  items4[2] = callback(summary(message[26]).Text, obj5);
   obj1.children = items4;
   const items7 = [callback2(View, obj1), callback(View, { style: tmp.divider }), ];
-  const obj7 = { style: tmp.actionsContainer };
-  const obj8 = {};
-  const intl = arg1(dependencyMap[15]).intl;
-  obj8.label = intl.string(arg1(dependencyMap[15]).t.NY/nlb);
-  obj8.iconSource = importDefault(dependencyMap[28]);
+  let obj7 = { style: tmp.actionsContainer };
+  let obj8 = {};
+  let intl = summary(message[15]).intl;
+  obj8.label = intl.string(summary(message[15]).t["NY/nlb"]);
+  obj8.iconSource = channel(message[28]);
   obj8.onPress = callback1;
-  const items8 = [callback(arg1(dependencyMap[27]).SummaryActionSheetButton, obj8), , , ];
+  const items8 = [callback(summary(message[27]).SummaryActionSheetButton, obj8), , , ];
   if (canStartPublicThread) {
-    const obj9 = {};
-    const intl2 = arg1(dependencyMap[15]).intl;
-    obj9.label = intl2.string(arg1(dependencyMap[15]).t.rBIGBL);
-    obj9.iconSource = importDefault(dependencyMap[29]);
+    let obj9 = {};
+    let intl2 = summary(message[15]).intl;
+    obj9.label = intl2.string(summary(message[15]).t.rBIGBL);
+    obj9.iconSource = channel(message[29]);
     obj9.onPress = callback2;
-    canStartPublicThread = callback(arg1(dependencyMap[27]).SummaryActionSheetButton, obj9);
+    canStartPublicThread = callback(summary(message[27]).SummaryActionSheetButton, obj9);
   }
   items8[1] = canStartPublicThread;
   if (hasFlagResult) {
     const obj10 = {};
-    const intl3 = arg1(dependencyMap[15]).intl;
-    obj10.label = intl3.string(arg1(dependencyMap[15]).t.39d0Wj);
-    obj10.iconSource = importDefault(dependencyMap[29]);
+    const intl3 = summary(message[15]).intl;
+    obj10.label = intl3.string(summary(message[15]).t["39d0Wj"]);
+    obj10.iconSource = channel(message[29]);
     obj10.onPress = callback3;
-    hasFlagResult = callback(arg1(dependencyMap[27]).SummaryActionSheetButton, obj10);
+    hasFlagResult = callback(summary(message[27]).SummaryActionSheetButton, obj10);
   }
   items8[2] = hasFlagResult;
   const obj11 = {};
-  const intl4 = arg1(dependencyMap[15]).intl;
-  obj11.label = intl4.string(arg1(dependencyMap[15]).t.QLkZ39);
-  obj11.iconSource = importDefault(dependencyMap[30]);
+  const intl4 = summary(message[15]).intl;
+  obj11.label = intl4.string(summary(message[15]).t.QLkZ39);
+  obj11.iconSource = channel(message[30]);
   obj11.onPress = callback;
-  items8[3] = callback(arg1(dependencyMap[27]).SummaryActionSheetButton, obj11);
+  items8[3] = callback(summary(message[27]).SummaryActionSheetButton, obj11);
   obj7.children = items8;
   items7[2] = callback2(View, obj7);
   obj.children = items7;
-  obj.children = callback2(arg1(dependencyMap[24]).SafeAreaPaddingView, obj);
-  return callback(arg1(dependencyMap[23]).BottomSheet, obj);
+  obj.children = callback2(summary(message[24]).SafeAreaPaddingView, obj);
+  return callback(summary(message[23]).BottomSheet, obj);
 };
 export const openSummaryDividerActionSheet = function openSummaryDividerActionSheet(arg0, arg1) {
   const findSummaryResult = closure_7.findSummary(arg0, arg1);
   if (null != findSummaryResult) {
-    let obj = importDefault(dependencyMap[7]);
+    let obj = importDefault(4098);
     const _HermesInternal = HermesInternal;
     obj = { summary: findSummaryResult };
-    obj.openLazy(arg1(dependencyMap[9])(dependencyMap[8], dependencyMap.paths), "SummaryDivider" + arg1, obj);
-    const tmp5 = arg1(dependencyMap[9])(dependencyMap[8], dependencyMap.paths);
+    obj.openLazy(require(1934) /* maybeLoadBundle */(10892, dependencyMap.paths), "SummaryDivider" + arg1, obj);
+    const tmp5 = require(1934) /* maybeLoadBundle */(10892, dependencyMap.paths);
   }
 };

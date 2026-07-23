@@ -1,15 +1,15 @@
-// Module ID: 12173
-// Function ID: 93622
+// Module ID: 12287
+// Function ID: 95773
 // Name: createFriendInvite
-// Dependencies: []
+// Dependencies: [27, 3767, 6979, 7633, 1212, 3969, 1392, 2]
 // Exports: createFriendInvite
 
-// Module 12173 (createFriendInvite)
-const Image = require(dependencyMap[0]).Image;
-let closure_4 = importDefault(dependencyMap[1]);
-const InviteTypes = require(dependencyMap[2]).InviteTypes;
-const _module = require(dependencyMap[7]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/FriendInvite.tsx");
+// Module 12287 (createFriendInvite)
+import { Image } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { InviteTypes } from "InviteSendStates";
+
+const result = require("InviteSendStates").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/FriendInvite.tsx");
 
 export const createFriendInvite = function createFriendInvite(inviter) {
   let acceptLabelDisabledBackgroundColor;
@@ -18,10 +18,10 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   let acceptLabelGreenColor;
   let baseColors;
   let colors;
-  ({ colors, baseColors } = importDefault(dependencyMap[3])(arg3));
-  const intl = require(dependencyMap[4]).intl;
+  ({ colors, baseColors } = importDefault(7633)(arg3));
+  const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = require(dependencyMap[4]).t;
+  const t = require(1212) /* getSystemLocale */.t;
   if (arg1) {
     let str = string(t.eQyu1F);
   } else {
@@ -33,7 +33,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   let str3 = "";
   if (null != inviter.inviter) {
-    let obj = importDefault(dependencyMap[5]);
+    let obj = importDefault(3969);
     str3 = obj.getUserTag(inviter.inviter);
   }
   let isFriendResult = null != inviter.inviter;
@@ -47,8 +47,8 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   let str4 = "";
   if (null != inviter.inviter) {
-    str4 = Image.resolveAssetSource(importDefault(dependencyMap[6]).getUserAvatarSource(inviter.inviter)).uri;
-    const obj2 = importDefault(dependencyMap[6]);
+    str4 = Image.resolveAssetSource(importDefault(1392).getUserAvatarSource(inviter.inviter)).uri;
+    const obj2 = importDefault(1392);
   }
   const inviter2 = inviter.inviter;
   let id1;
@@ -57,14 +57,14 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   if (id1 === arg2) {
     ({ acceptLabelDisabledColor, acceptLabelDisabledBackgroundColor } = colors);
-    const intl3 = require(dependencyMap[4]).intl;
-    let stringResult = intl3.string(require(dependencyMap[4]).t.ib7Ng1);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl3.string(require(1212) /* getSystemLocale */.t.ib7Ng1);
     let flag = false;
   } else {
     ({ acceptLabelGreenColor, acceptLabelGreenBackgroundColor } = colors);
-    const intl2 = require(dependencyMap[4]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const string2 = intl2.string;
-    const t2 = require(dependencyMap[4]).t;
+    const t2 = require(1212) /* getSystemLocale */.t;
     if (isFriendResult) {
       stringResult = string2(t2.xhxnPn);
       flag = true;

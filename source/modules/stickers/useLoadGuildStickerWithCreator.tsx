@@ -1,39 +1,39 @@
-// Module ID: 16149
-// Function ID: 124459
+// Module ID: 16266
+// Function ID: 126632
 // Name: useLoadGuildStickersWithCreator
-// Dependencies: []
+// Dependencies: [5, 57, 31, 1849, 5036, 566, 9601, 2]
 // Exports: default
 
-// Module 16149 (useLoadGuildStickersWithCreator)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importAll(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/stickers/useLoadGuildStickerWithCreator.tsx");
+// Module 16266 (useLoadGuildStickersWithCreator)
+import initialize from "initialize";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/stickers/useLoadGuildStickerWithCreator.tsx");
 
 export default function useLoadGuildStickersWithCreator(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const tmp = callback(React.useState("loading"), 2);
   const first = tmp[0];
-  let closure_1 = tmp[1];
-  let obj = arg1(closure_1[5]);
+  const dependencyMap = tmp[1];
+  let obj = _require(566);
   const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => stickersByGuildId.getStickersByGuildId(arg0));
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getStickersByGuildId(closure_0));
   const items1 = [arg0];
   const effect = React.useEffect(() => {
     function _fetch() {
       // CreateGeneratorClosureLongIndex (0x67)
-      const obj = _fetch(tmp);
-      const _fetch = obj;
+      const obj = outer2_2(tmp);
       return obj(...arguments);
     }
     const abortController = new AbortController();
-    const arg0 = abortController;
     const signal = abortController.signal;
-    function fetch() {
+    (function fetch() {
       return _fetch(...arguments);
-    }();
+    })();
     return () => {
       signal("loading");
       if (null != abortController) {
@@ -45,7 +45,7 @@ export default function useLoadGuildStickersWithCreator(arg0) {
     obj = {
       status: first,
       stickers: stateFromStores.map((user_id) => {
-          const user = user.getUser(user_id.user_id);
+          const user = outer1_5.getUser(user_id.user_id);
           let tmp2 = user_id;
           if (null != user) {
             const obj = {};

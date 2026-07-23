@@ -1,13 +1,13 @@
-// Module ID: 5901
-// Function ID: 49784
+// Module ID: 5906
+// Function ID: 49813
 // Name: BoostGemIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 5907, 2]
 // Exports: BoostGemIllocon
 
-// Module 5901 (BoostGemIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/BoostGemIllocon.native.tsx");
+// Module 5906 (BoostGemIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BoostGemIllocon.native.tsx");
 
 export const BoostGemIllocon = function BoostGemIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const BoostGemIllocon = function BoostGemIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5907) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const BoostGemIllocon = function BoostGemIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

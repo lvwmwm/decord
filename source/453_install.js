@@ -1,10 +1,11 @@
 // Module ID: 453
 // Function ID: 6045
 // Name: install
-// Dependencies: []
+// Dependencies: [31]
 
 // Module 453 (install)
-importAll(dependencyMap[0]);
+import "result";
+
 
 export default {
   install() {

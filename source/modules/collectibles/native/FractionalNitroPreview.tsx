@@ -1,56 +1,60 @@
-// Module ID: 8747
-// Function ID: 69164
+// Module ID: 8754
+// Function ID: 69205
 // Name: FractionalNitroPreview
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 1212, 4554, 5085, 8755, 8756, 5154, 4126, 2]
 // Exports: FractionalNitroPreview
 
-// Module 8747 (FractionalNitroPreview)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const VerticalGradient = arg1(dependencyMap[2]).VerticalGradient;
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { padding: importDefault(dependencyMap[5]).space.PX_24, borderRadius: importDefault(dependencyMap[5]).radii.lg, gap: importDefault(dependencyMap[5]).space.PX_16 };
-obj.container = obj;
-obj.gradient = { left: "center", backgroundColor: -24, "Bool(true)": null, "Bool(true)": 1, "Bool(true)": "Malaysia" };
-obj.headerImage = {};
-obj.nitroIconContainer = { alignSelf: "flex-start" };
-const obj1 = { position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001863282064227495, location: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007062002001945, gap: importDefault(dependencyMap[5]).space.PX_8 };
-obj.benefits = obj1;
-const tmp3 = arg1(dependencyMap[3]);
-obj.benefitRow = { gap: importDefault(dependencyMap[5]).space.PX_8 };
-let closure_7 = obj.createStyles(obj);
-const obj2 = { gap: importDefault(dependencyMap[5]).space.PX_8 };
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/collectibles/native/FractionalNitroPreview.tsx");
+// Module 8754 (FractionalNitroPreview)
+import "result";
+import { View } from "get ActivityIndicator";
+import { VerticalGradient } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let require = arg1;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flexDirection: "column", alignItems: "center", justifyContent: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_24, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden", alignSelf: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.gradient = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 };
+_createForOfIteratorHelperLoose.headerImage = { width: 211, height: 157, resizeMode: "cover" };
+_createForOfIteratorHelperLoose.nitroIconContainer = { alignSelf: "flex-start" };
+let obj1 = { display: "flex", flexDirection: "column", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.benefits = obj1;
+let obj2 = { display: "flex", flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center" };
+_createForOfIteratorHelperLoose.benefitRow = obj2;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/collectibles/native/FractionalNitroPreview.tsx");
 
 export const FractionalNitroPreview = function FractionalNitroPreview() {
-  const tmp = callback3();
-  const arg1 = tmp;
-  const items = [arg1(dependencyMap[6]).t.E1NP2x, arg1(dependencyMap[6]).t.kpMomJ, arg1(dependencyMap[6]).t.xT1Vfn, arg1(dependencyMap[6]).t.myyAEr, arg1(dependencyMap[6]).t.zTk8Ul];
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  let items = [require(1212) /* getSystemLocale */.t.E1NP2x, require(1212) /* getSystemLocale */.t.kpMomJ, require(1212) /* getSystemLocale */.t.xT1Vfn, require(1212) /* getSystemLocale */.t.myyAEr, require(1212) /* getSystemLocale */.t.zTk8Ul];
   let obj = { style: tmp.container };
-  obj = { colors: ["MAXIMUM_KEY_BITS", "_clearAllPromise"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
-  const items1 = [callback(importDefault(dependencyMap[7]), obj), , , ];
+  obj = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
+  const items1 = [callback(importDefault(4554), obj), , , ];
   obj = {};
-  const obj1 = { uri: importDefault(dependencyMap[9]) };
+  const obj1 = { uri: importDefault(8755) };
   obj.source = obj1;
   obj.style = tmp.headerImage;
-  items1[1] = callback(importDefault(dependencyMap[8]), obj);
-  const tmp2 = importDefault(dependencyMap[8]);
-  items1[2] = callback(View, { style: tmp.nitroIconContainer, children: callback(importDefault(dependencyMap[10]), {}) });
-  const obj2 = { style: tmp.nitroIconContainer, children: callback(importDefault(dependencyMap[10]), {}) };
+  items1[1] = callback(importDefault(5085), obj);
+  const tmp2 = importDefault(5085);
+  items1[2] = callback(View, { style: tmp.nitroIconContainer, children: callback(importDefault(8756), {}) });
+  const obj2 = { style: tmp.nitroIconContainer, children: callback(importDefault(8756), {}) };
   items1[3] = callback(View, {
     style: tmp.benefits,
     children: items.map((arg0, arg1) => {
       let obj = { style: tmp.benefitRow };
-      obj = { color: callback(closure_2[5]).colors.WHITE };
-      const items = [callback2(tmp(closure_2[11]).CheckmarkSmallIcon, obj), ];
-      obj = {};
-      const intl = tmp(closure_2[6]).intl;
+      obj = { color: outer1_1(outer1_2[5]).colors.WHITE };
+      const items = [outer1_5(tmp(outer1_2[11]).CheckmarkSmallIcon, obj), ];
+      obj = { variant: "text-sm/medium", color: "text-overlay-light" };
+      const intl = tmp(outer1_2[6]).intl;
       obj.children = intl.string(arg0);
-      items[1] = callback2(tmp(closure_2[12]).Text, obj);
+      items[1] = outer1_5(tmp(outer1_2[12]).Text, obj);
       obj.children = items;
-      return callback3(closure_3, obj, arg1);
+      return outer1_6(outer1_3, obj, arg1);
     })
   });
   obj.children = items1;

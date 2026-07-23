@@ -1,45 +1,44 @@
-// Module ID: 15459
-// Function ID: 117914
+// Module ID: 15576
+// Function ID: 120088
 // Name: useSortedSpamMessageRequests
-// Dependencies: []
+// Dependencies: [31, 1348, 1849, 5605, 566, 15566, 2]
 // Exports: default
 
-// Module 15459 (useSortedSpamMessageRequests)
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/message_request/hooks/useSortedSpamMessageRequests.tsx");
+// Module 15576 (useSortedSpamMessageRequests)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/message_request/hooks/useSortedSpamMessageRequests.tsx");
 
 export default function useSortedSpamMessageRequests() {
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[4]).useStateFromStores(items, () => store.getPrivateChannelsVersion());
-  const obj = arg1(dependencyMap[4]);
-  const items1 = [closure_3, closure_5];
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = stateFromStoresArray(stateFromStoresObject[4]).useStateFromStores(items, () => outer1_3.getPrivateChannelsVersion());
+  let obj = stateFromStoresArray(stateFromStoresObject[4]);
+  const items1 = [_isNativeReflectConstruct, closure_5];
   const items2 = [stateFromStores];
-  const stateFromStoresArray = arg1(dependencyMap[4]).useStateFromStoresArray(items1, () => {
-    const stateFromStoresArray = store.getMutablePrivateChannels();
-    const mapped = Array.from(spamChannelIds.getSpamChannelIds()).map((arg0) => closure_0[arg0]);
+  stateFromStoresArray = stateFromStoresArray(stateFromStoresObject[4]).useStateFromStoresArray(items1, () => {
+    const mutablePrivateChannels = outer1_3.getMutablePrivateChannels();
+    const mapped = Array.from(outer1_5.getSpamChannelIds()).map((arg0) => table[arg0]);
     const found = mapped.filter((arg0) => null != arg0);
-    const arr = Array.from(spamChannelIds.getSpamChannelIds());
+    const arr = Array.from(outer1_5.getSpamChannelIds());
     return stateFromStoresArray(stateFromStoresObject[5]).sortChannelIds(found);
   }, items2);
-  const arg1 = stateFromStoresArray;
-  const obj2 = arg1(dependencyMap[4]);
+  const obj2 = stateFromStoresArray(stateFromStoresObject[4]);
   const items3 = [closure_4];
   const items4 = [stateFromStoresArray];
-  const stateFromStoresObject = arg1(dependencyMap[4]).useStateFromStoresObject(items3, () => {
+  stateFromStoresObject = stateFromStoresArray(stateFromStoresObject[4]).useStateFromStoresObject(items3, () => {
     const obj = {};
-    const stateFromStoresArray = obj;
-    const item = stateFromStoresArray.forEach((id) => {
-      const user = user.getUser(id.recipients[0]);
+    const item = obj.forEach((id) => {
+      const user = outer2_4.getUser(id.recipients[0]);
       if (null != user) {
         obj[id.id] = user;
       }
     });
     return obj;
   }, items4);
-  const dependencyMap = stateFromStoresObject;
   const items5 = [stateFromStoresArray, stateFromStoresObject];
-  return React.useMemo(() => stateFromStoresArray.map((channel) => ({ channel, user: closure_1[channel.id] })), items5);
+  return React.useMemo(() => stateFromStoresArray.map((channel) => ({ channel, user: outer1_1[channel.id] })), items5);
 };

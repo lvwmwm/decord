@@ -1,37 +1,39 @@
-// Module ID: 11990
-// Function ID: 92666
+// Module ID: 12103
+// Function ID: 94829
 // Name: useUserProfileWidgets
-// Dependencies: []
+// Dependencies: [1194, 6856, 6861, 566, 2]
 // Exports: default
 
-// Module 11990 (useUserProfileWidgets)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/user_profile/hooks/useUserProfileWidgets.tsx");
+// Module 12103 (useUserProfileWidgets)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_profile/hooks/useUserProfileWidgets.tsx");
 
 export default function useUserProfileWidgets(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
   const items1 = [arg0];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    let tmp2 = null != arg0;
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
+    let tmp2 = null != closure_0;
     if (tmp2) {
-      tmp2 = tmp === arg0;
+      tmp2 = tmp === closure_0;
     }
     return tmp2;
   }, items1);
-  const obj = arg1(dependencyMap[3]);
-  const items2 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items2, () => pendingWidgets.getPendingWidgets());
-  const obj2 = arg1(dependencyMap[3]);
+  const obj = _require(566);
+  const items2 = [_createForOfIteratorHelperLoose];
+  const stateFromStores1 = _require(566).useStateFromStores(items2, () => outer1_4.getPendingWidgets());
+  const obj2 = _require(566);
   const items3 = [closure_3];
   const items4 = [arg0];
-  const stateFromStoresArray = arg1(dependencyMap[3]).useStateFromStoresArray(items3, () => {
-    if (null == arg0) {
+  const stateFromStoresArray = _require(566).useStateFromStoresArray(items3, () => {
+    if (null == closure_0) {
       return [];
     } else {
-      const userProfile = userProfile.getUserProfile(arg0);
+      const userProfile = outer1_3.getUserProfile(closure_0);
       let widgets;
       if (null != userProfile) {
         widgets = userProfile.widgets;

@@ -1,21 +1,23 @@
-// Module ID: 15702
-// Function ID: 120021
+// Module ID: 15819
+// Function ID: 122194
 // Name: useCameraEncodeError
-// Dependencies: []
+// Dependencies: [1194, 10566, 566, 8857, 2]
 // Exports: default
 
-// Module 15702 (useCameraEncodeError)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");
+// Module 15819 (useCameraEncodeError)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");
 
 export default function useCameraEncodeError(arg0) {
-  const arg1 = arg0;
-  const items = [closure_3, closure_2];
-  return arg1(dependencyMap[2]).useStateFromStores(items, () => {
-    if (id.getId() === arg0) {
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
+    if (outer1_2.getId() === callback) {
       let type;
-      const first = activeErrorsOfType.getActiveErrorsOfType(arg0(closure_1[3]).AVError.CAMERA_SEND_LOW_FPS)[0];
+      const first = outer1_3.getActiveErrorsOfType(callback(outer1_1[3]).AVError.CAMERA_SEND_LOW_FPS)[0];
       if (null != first) {
         type = first.type;
       }

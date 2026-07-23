@@ -1,59 +1,61 @@
-// Module ID: 14794
-// Function ID: 111485
+// Module ID: 14910
+// Function ID: 113653
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: []
+// Dependencies: [57, 31, 27, 3767, 653, 33, 4130, 689, 9889, 8492, 1934, 624, 1212, 3969, 14911, 14912, 675, 4660, 1273, 4126, 4543, 4076, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 14794 (getMessagesItemSuggestedFriendHeight)
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-({ AnalyticEvents: closure_7, RelationshipTypes: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-let obj1 = arg1(dependencyMap[6]);
+// Module 14910 (getMessagesItemSuggestedFriendHeight)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ AnalyticEvents: closure_7, RelationshipTypes: closure_8 } = ME);
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
 let obj = {};
-obj = { paddingHorizontal: importDefault(dependencyMap[7]).space.PX_8 };
+obj = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
 obj.container = obj;
-obj1 = { "Bool(false)": "<string:1912603085>", "Bool(false)": true, "Bool(false)": true, borderRadius: importDefault(dependencyMap[7]).radii.md, padding: importDefault(dependencyMap[7]).space.PX_8 };
-obj.pressable = obj1;
-const tmp3 = arg1(dependencyMap[5]);
-obj.textContainer = { marginRight: importDefault(dependencyMap[7]).space.PX_8 };
-const obj2 = { marginRight: importDefault(dependencyMap[7]).space.PX_8 };
-obj.avatar = { marginRight: importDefault(dependencyMap[7]).space.PX_8 };
-let closure_11 = obj1.createStyles(obj);
-const obj3 = { marginRight: importDefault(dependencyMap[7]).space.PX_8 };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, flexDirection: "row", alignItems: "center", padding: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj.pressable = _createForOfIteratorHelperLoose;
+let obj2 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8, flexDirection: "column", alignSelf: "center", overflow: "hidden", flexGrow: 1, flexShrink: 1 };
+obj.textContainer = obj2;
+obj.avatar = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj3 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
 const memoResult = importAllResult.memo(function MessagesItemSuggestedFriend(height) {
   height = height.height;
-  const arg1 = height;
   const onAddFriendSuggestions = height.onAddFriendSuggestions;
-  const importDefault = onAddFriendSuggestions;
   const suggestedFriend = height.suggestedFriend;
-  const dependencyMap = suggestedFriend;
   const tmp = callback3();
   let callback = tmp;
-  const items = [tmp, height];
+  let items = [tmp, height];
   const items1 = [suggestedFriend];
-  const memo = React.useMemo(() => {
+  const memo = importAllResult.useMemo(() => {
     const items = [, , ];
-    ({ container: arr[0], pressable: arr[1] } = tmp);
+    ({ container: arr[0], pressable: arr[1] } = _slicedToArray);
     items[2] = { height };
     return items;
   }, items);
-  callback = React.useCallback(() => {
-    height(suggestedFriend[10])(suggestedFriend[9], suggestedFriend.paths).then((arg0) => arg0.default({ userId: closure_2.user.id, localUser: closure_2.user, location: "Messages Tab User Profile" }));
+  callback = importAllResult.useCallback(() => {
+    height(suggestedFriend[10])(suggestedFriend[9], suggestedFriend.paths).then((arg0) => arg0.default({ userId: outer1_2.user.id, localUser: outer1_2.user, location: "Messages Tab User Profile" }));
   }, items1);
-  const tmp4 = callback(React.useState(false), 2);
+  const tmp4 = callback(importAllResult.useState(false), 2);
   let first = tmp4[0];
-  const React = tmp4[1];
-  let obj = arg1(dependencyMap[11]);
-  const items2 = [closure_6];
+  let obj = height(suggestedFriend[11]);
+  const items2 = [_isNativeReflectConstruct];
   if (!first) {
-    first = obj.useStateFromStores(items2, () => relationshipType.getRelationshipType(suggestedFriend.user.id) === constants2.PENDING_OUTGOING);
+    first = obj.useStateFromStores(items2, () => outer1_6.getRelationshipType(suggestedFriend.user.id) === outer1_8.PENDING_OUTGOING);
   }
   const items3 = [suggestedFriend];
-  const memo1 = React.useMemo(() => {
+  const memo1 = importAllResult.useMemo(() => {
     if (null != suggestedFriend.mutualFriendsCount) {
       if (suggestedFriend.mutualFriendsCount > 0) {
         const intl = height(suggestedFriend[12]).intl;
@@ -84,32 +86,32 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriend(hei
   }, items3);
   let userStatusLabel = memo1.userStatusLabel;
   const items4 = [suggestedFriend, onAddFriendSuggestions];
-  const callback1 = React.useCallback(() => {
+  const callback1 = importAllResult.useCallback(() => {
     const user = suggestedFriend.user;
     let obj = height(suggestedFriend[15]);
     obj.addContactSuggestion(user);
     obj = { suggested_user_id: user.id, suggestion_source: suggestedFriend.source, location: "Messages Tab" };
-    onAddFriendSuggestions(suggestedFriend[16]).track(constants.FRIEND_SUGGESTION_ADDED, obj);
+    onAddFriendSuggestions(suggestedFriend[16]).track(outer1_7.FRIEND_SUGGESTION_ADDED, obj);
     onAddFriendSuggestions((arg0) => {
-      const items = [...arg0, closure_2];
+      const items = [...arg0, outer1_2];
       return items;
     });
-    onAddFriendSuggestions((arr) => arr.filter((user) => user.user.id !== user.user.id));
+    onAddFriendSuggestions((arr) => arr.filter((user) => user.user.id !== outer2_2.user.id));
     callback(true);
   }, items4);
   obj = { accessibilityRole: "button", style: memo, onPress: callback, collapsable: false };
-  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: undefined, size: arg1(dependencyMap[18]).AvatarSizes.REFRESH_MEDIUM_32 };
-  const items5 = [callback2(arg1(dependencyMap[18]).Avatar, obj), , ];
+  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: undefined, size: height(suggestedFriend[18]).AvatarSizes.REFRESH_MEDIUM_32 };
+  const items5 = [callback2(height(suggestedFriend[18]).Avatar, obj), , ];
   const obj1 = { style: tmp.textContainer };
-  const obj2 = { "Bool(false)": "String", "Bool(false)": "Array", "Bool(false)": 1, "Bool(false)": "center", children: memo1.suggestionName };
-  const items6 = [callback2(arg1(dependencyMap[19]).Text, obj2), ];
-  const obj3 = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
+  const obj2 = { lineClamp: 1, variant: "redesign/channel-title/semibold", maxFontSizeMultiplier: 2, color: "text-default", children: memo1.suggestionName };
+  const items6 = [callback2(height(suggestedFriend[19]).Text, obj2), ];
+  let obj3 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2 };
   if (first) {
-    const intl = arg1(dependencyMap[12]).intl;
-    userStatusLabel = intl.string(arg1(dependencyMap[12]).t.Kzyxm9);
+    let intl = height(suggestedFriend[12]).intl;
+    userStatusLabel = intl.string(height(suggestedFriend[12]).t.Kzyxm9);
   }
   obj3.children = userStatusLabel;
-  items6[1] = callback2(arg1(dependencyMap[19]).Text, obj3);
+  items6[1] = callback2(height(suggestedFriend[19]).Text, obj3);
   obj1.children = items6;
   items5[1] = closure_10(View, obj1);
   if (first) {
@@ -118,7 +120,7 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriend(hei
     obj4.style = obj5;
     let tmp13Result = tmp13(tmp14(tmp15[21]).SendMessageIcon, obj4);
   } else {
-    const obj6 = {};
+    const obj6 = { variant: "secondary", size: "sm" };
     const intl2 = tmp14(tmp15[12]).intl;
     obj6.text = intl2.string(tmp14(tmp15[12]).t.OYkgVk);
     obj6.onPress = callback1;
@@ -126,14 +128,14 @@ const memoResult = importAllResult.memo(function MessagesItemSuggestedFriend(hei
   }
   items5[2] = tmp13Result;
   obj.children = items5;
-  return closure_10(arg1(dependencyMap[17]).PressableHighlight, obj);
+  return closure_10(height(suggestedFriend[17]).PressableHighlight, obj);
 });
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSuggestedFriend.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSuggestedFriend.tsx");
 
 export default memoResult;
 export const getMessagesItemSuggestedFriendHeight = function getMessagesItemSuggestedFriendHeight(fontScale) {
-  const obj = arg1(dependencyMap[8]);
-  const scaleTextLineHeightResult = arg1(dependencyMap[8]).scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
-  const sum = scaleTextLineHeightResult + arg1(dependencyMap[8]).scaleTextLineHeight("text-xs/medium", fontScale);
-  return sum + importDefault(dependencyMap[7]).space.PX_16;
+  const obj = require(9889) /* scaleLineHeight */;
+  const scaleTextLineHeightResult = require(9889) /* scaleLineHeight */.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
+  const sum = scaleTextLineHeightResult + require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale);
+  return sum + importDefault(689).space.PX_16;
 };

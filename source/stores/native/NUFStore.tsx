@@ -1,62 +1,63 @@
-// Module ID: 6881
-// Function ID: 54586
+// Module ID: 6886
+// Function ID: 54620
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1838, 3767, 566, 686, 2]
 
-// Module 6881 (_isNativeReflectConstruct)
+// Module 6886 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_6 from "_isNativeReflectConstruct";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return _isNativeReflectConstruct;
   }
   const result = _isNativeReflectConstruct();
 }
 function handleCacheOrSocketLoaded() {
-  let closure_7 = false;
+  let c7 = false;
   return handleUpdate();
 }
 function handleUpdate() {
-  if (closure_7) {
+  if (c7) {
     return false;
   } else {
     const tmp2 = guildCount.getGuildCount() > 0;
     let flag = false;
-    if (tmp2 !== closure_8) {
-      closure_8 = tmp2;
+    if (tmp2 !== c8) {
+      c8 = tmp2;
       flag = true;
     }
-    if (tmp2 !== closure_9) {
-      closure_9 = tmp2;
+    if (tmp2 !== c9) {
+      c9 = tmp2;
       flag = true;
     }
     return flag;
   }
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = importDefault(dependencyMap[5]);
-let closure_6 = importDefault(dependencyMap[6]);
-let closure_7 = false;
-let closure_8 = false;
-let closure_9 = false;
-let tmp2 = (PersistedStore) => {
+let c7 = false;
+let c8 = false;
+let c9 = false;
+let tmp2 = ((PersistedStore) => {
   class NUFStore {
     constructor() {
       self = this;
       tmp = NUFStore(this, NUFStore);
-      obj = closure_3(NUFStore);
-      tmp2 = closure_2;
-      if (closure_10()) {
+      obj = outer1_3(NUFStore);
+      tmp2 = outer1_2;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -65,17 +66,16 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = NUFStore;
   callback2(NUFStore, PersistedStore);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_6, closure_5);
-      const items = [closure_6, closure_5];
-      this.syncWith(items, closure_11);
+      this.waitFor(outer1_6, outer1_5);
+      const items = [outer1_6, outer1_5];
+      this.syncWith(items, outer1_11);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getState",
     value() {
@@ -86,27 +86,27 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "showMentionsInNotificationTab",
     get() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "showQuickSwitcher",
     get() {
-      return closure_8;
+      return outer1_8;
     }
   };
   return callback(NUFStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "NUFStore";
 tmp2.persistKey = "NUFStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   CACHE_LOADED: function handleCacheLoaded() {
-    let closure_7 = true;
+    let c7 = true;
   },
   CACHE_LOADED_LAZY: handleCacheOrSocketLoaded,
   CONNECTION_OPEN: handleCacheOrSocketLoaded
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("stores/native/NUFStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/native/NUFStore.tsx");
 
 export default tmp2;

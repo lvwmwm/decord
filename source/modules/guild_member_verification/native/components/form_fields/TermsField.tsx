@@ -1,17 +1,21 @@
-// Module ID: 9171
-// Function ID: 71856
+// Module ID: 9178
+// Function ID: 71897
 // Name: TermsField
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 5124, 9094, 1212, 2]
 // Exports: default
 
-// Module 9171 (TermsField)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: { "Bool(false)": 155167561210812170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000004665176389013491 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TermsField.tsx");
+// Module 9178 (TermsField)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
+const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TermsField.tsx");
 
 export default function TermsField(field) {
   let onChange;
@@ -24,12 +28,12 @@ export default function TermsField(field) {
     tmp2 = response;
   }
   let obj = { style: callback3().container };
-  const items = [callback(importDefault(dependencyMap[4]), { rules: field.values, rulesChannelId }), ];
-  obj = { 400888199: null, 2091392542: null, checked: tmp2 };
-  const intl = arg1(dependencyMap[6]).intl;
-  obj.label = intl.string(arg1(dependencyMap[6]).t.2EXfGJ);
+  const items = [callback(importDefault(5124), { rules: field.values, rulesChannelId }), ];
+  obj = { start: true, end: true, checked: tmp2 };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t["2EXfGJ"]);
   obj.onPress = onChange;
-  items[1] = callback(arg1(dependencyMap[5]).TableCheckboxRow, obj);
+  items[1] = callback(require(9094) /* TableCheckboxRow */.TableCheckboxRow, obj);
   obj.children = items;
   return callback2(View, obj);
 };

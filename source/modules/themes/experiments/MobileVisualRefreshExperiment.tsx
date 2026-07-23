@@ -1,13 +1,14 @@
 // Module ID: 1324
-// Function ID: 15544
+// Function ID: 15545
 // Name: useIsMobileVisualRefreshExperimentEnabled
-// Dependencies: []
+// Dependencies: [1325, 2]
 // Exports: default, isMobileVisualRefreshEnabled, resolveRefreshToken, useMobileVisualRefreshConfig
 
 // Module 1324 (useIsMobileVisualRefreshExperimentEnabled)
-const obj = { "Bool(false)": null, "Bool(false)": null, defaultConfig: { gopher: true, file: false, http:: false }, variations: { [0]: { gopher: true, file: false, http:: false }, [1]: { gopher: "y", file: "isArray", http:: "Reflect" }, [2]: {}, [3]: {}, [4]: {} } };
-const tmp2 = importDefault(dependencyMap[0])(obj);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/themes/experiments/MobileVisualRefreshExperiment.tsx");
+const obj = { kind: "user", name: "2026-02-mobile-visual-refresh", defaultConfig: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, variations: { [0]: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, [1]: { enabled: true, chatInputFloating: false, chatInputLegacySendButton: false }, [2]: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, [3]: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, [4]: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: true } } };
+const tmp2 = require("getUnitId")(obj);
+let closure_0 = tmp2;
+const result = require("set").fileFinishedImporting("modules/themes/experiments/MobileVisualRefreshExperiment.tsx");
 
 export default function useIsMobileVisualRefreshExperimentEnabled(location) {
   return tmp2.useConfig({ location }).enabled;
@@ -20,5 +21,5 @@ export const isMobileVisualRefreshEnabled = function isMobileVisualRefreshEnable
   return tmp2.getConfig({ location: YouBannerDecorations }).enabled;
 };
 export const resolveRefreshToken = function resolveRefreshToken(CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND, chatInputFloating) {
-  return CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND.resolve({ enabledExperiments: chatInputFloating ? [true] : [] });
+  return CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND.resolve({ enabledExperiments: chatInputFloating ? ["mobile-visual-refresh"] : [] });
 };

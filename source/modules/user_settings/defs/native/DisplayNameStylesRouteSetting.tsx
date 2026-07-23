@@ -1,31 +1,29 @@
-// Module ID: 14107
-// Function ID: 107087
+// Module ID: 14221
+// Function ID: 109243
 // Name: useTitle
-// Dependencies: [4294967295, 0, 0, 0, 0, 0]
+// Dependencies: [653, 10095, 1212, 2556, 14222, 2]
 
-// Module 14107 (useTitle)
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14221 (useTitle)
+import createToggle from "createToggle";
 
 const obj = {
-  -1366228988: null,
-  -867106812: null,
-  1374118307: null,
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(importDefault(dependencyMap[3]).ZPMAlX);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2556).ZPMAlX);
   },
+  parent: null,
+  unsearchable: true,
   screen: {
-    route: require(dependencyMap[0]).UserSettingsSections.DISPLAY_NAME_STYLES,
+    route: require("ME").UserSettingsSections.DISPLAY_NAME_STYLES,
     getComponent() {
-      return require(dependencyMap[4]).default;
+      return require(14222) /* ApplyButton */.default;
     }
   },
   usePredicate() {
     return true;
   }
 };
-const route = __exportStarResult1.createRoute(obj);
-const result = __exportStarResult1.fileFinishedImporting("modules/user_settings/defs/native/DisplayNameStylesRouteSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/DisplayNameStylesRouteSetting.tsx");
 
 export default route;

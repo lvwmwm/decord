@@ -1,18 +1,17 @@
-// Module ID: 7009
-// Function ID: 56239
+// Module ID: 7014
+// Function ID: 56273
 // Name: ForumChannelAnalyticsManager
-// Dependencies: [29, 4138, 4321, 3758]
+// Dependencies: [7, 6, 1348, 2]
 
-// Module 7009 (ForumChannelAnalyticsManager)
-import closure_0 from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import importDefaultResult from "_objectWithoutProperties";
+// Module 7014 (ForumChannelAnalyticsManager)
+import _classCallCheck from "_classCallCheck";
 import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importDefaultResult from "_defineProperties";
 
 class ForumChannelAnalyticsManager {
   constructor() {
-    closure_0 = this;
-    tmp = closure_0(this, ForumChannelAnalyticsManager);
+    self = this;
+    tmp = self(this, ForumChannelAnalyticsManager);
     this.setFilterTagIds = (filterTagIds) => {
       self.filterTagIds = filterTagIds;
     };
@@ -37,7 +36,7 @@ class ForumChannelAnalyticsManager {
     this.getSortOrderAnalytics = (channelId) => {
       let sortOrder = self.sortOrder;
       if (null == sortOrder) {
-        const channel = store.getChannel(channelId);
+        const channel = outer1_1.getChannel(channelId);
         let defaultSortOrder;
         if (null != channel) {
           defaultSortOrder = channel.getDefaultSortOrder();
@@ -49,7 +48,7 @@ class ForumChannelAnalyticsManager {
     this.getLayoutAnalytics = (channelId) => {
       let layout = self.layout;
       if (null == layout) {
-        const channel = store.getChannel(channelId);
+        const channel = outer1_1.getChannel(channelId);
         let defaultLayout;
         if (null != channel) {
           defaultLayout = channel.getDefaultLayout();
@@ -61,7 +60,7 @@ class ForumChannelAnalyticsManager {
     this.getTagSettingAnalytics = (channelId) => {
       let tagSetting = self.tagSetting;
       if (null == tagSetting) {
-        const channel = store.getChannel(channelId);
+        const channel = outer1_1.getChannel(channelId);
         let defaultTagSetting;
         if (null != channel) {
           defaultTagSetting = channel.getDefaultTagSetting();
@@ -73,7 +72,8 @@ class ForumChannelAnalyticsManager {
     return;
   }
 }
-const importDefaultResultResult = require("_objectWithoutProperties")(ForumChannelAnalyticsManager);
-const result = _isNativeReflectConstruct.fileFinishedImporting("modules/forums/tracking/ForumChannelAnalyticsManager.tsx");
+const importDefaultResultResult = require("_defineProperties")(ForumChannelAnalyticsManager);
+const tmp2Result = new require("_defineProperties")(ForumChannelAnalyticsManager)();
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forums/tracking/ForumChannelAnalyticsManager.tsx");
 
-export default new require("_objectWithoutProperties")(ForumChannelAnalyticsManager)();
+export default tmp2Result;

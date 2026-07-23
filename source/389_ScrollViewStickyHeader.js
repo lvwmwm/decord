@@ -1,80 +1,83 @@
 // Module ID: 389
 // Function ID: 5721
 // Name: ScrollViewStickyHeader
-// Dependencies: []
+// Dependencies: [57, 29, 31, 33, 383, 325, 390, 253]
 // Exports: default
 
 // Module 389 (ScrollViewStickyHeader)
-let closure_3 = [];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-({ cloneElement: closure_7, useCallback: closure_8, useEffect: closure_9, useMemo: closure_10, useRef: closure_11, useState: closure_12 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-let closure_14 = importDefault(dependencyMap[7]).create({ header: { zIndex: 10 }, fill: { flex: 1 } });
+import _slicedToArray from "_slicedToArray";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import closure_6 from "result";
+import result from "result";
+import { jsx } from "jsxProd";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_7;
+let closure_8;
+let closure_9;
+let require = arg1;
+let closure_3 = ["ref"];
+({ cloneElement: closure_7, useCallback: closure_8, useEffect: closure_9, useMemo: closure_10, useRef: closure_11, useState: closure_12 } = result);
+let closure_14 = require("setStyleAttributePreprocessor").create({ header: { zIndex: 10 }, fill: { flex: 1 } });
 
 export default function ScrollViewStickyHeader(ref) {
-  const tmp = callback2(ref, closure_3);
-  const arg1 = tmp;
-  const inverted = tmp.inverted;
-  const importDefault = inverted;
+  let tmp = first(ref, hiddenOnScroll);
+  const require = tmp;
+  let inverted = tmp.inverted;
   const scrollViewHeight = tmp.scrollViewHeight;
-  const dependencyMap = scrollViewHeight;
-  const hiddenOnScroll = tmp.hiddenOnScroll;
-  closure_3 = hiddenOnScroll;
+  hiddenOnScroll = tmp.hiddenOnScroll;
   const scrollAnimatedValue = tmp.scrollAnimatedValue;
-  const callback = scrollAnimatedValue;
-  const tmp2 = callback(callback5(false), 2);
-  const first = tmp2[0];
-  const callback2 = first;
+  const tmp2 = scrollAnimatedValue(callback3(false), 2);
+  first = tmp2[0];
   const React = tmp2[1];
-  const tmp4 = callback(callback5(0), 2);
+  const tmp4 = scrollAnimatedValue(callback3(0), 2);
   const first1 = tmp4[0];
-  const callback3 = tmp4[1];
-  const tmp6 = callback(callback5(0), 2);
+  const callback = tmp4[1];
+  const tmp6 = scrollAnimatedValue(callback3(0), 2);
   const first2 = tmp6[0];
-  const callback4 = tmp6[1];
-  const tmp8 = callback(callback5(null), 2);
+  const callback2 = tmp6[1];
+  const tmp8 = scrollAnimatedValue(callback3(null), 2);
   const first3 = tmp8[0];
-  const callback5 = tmp8[1];
-  const tmp10 = callback(callback5(tmp.nextHeaderLayoutY), 2);
+  callback3 = tmp8[1];
+  const tmp10 = scrollAnimatedValue(callback3(tmp.nextHeaderLayoutY), 2);
   const first4 = tmp10[0];
-  const jsx = first4;
   let closure_14 = tmp10[1];
-  const tmp12 = callback(callback5(false), 2);
+  const tmp12 = scrollAnimatedValue(callback3(false), 2);
   const first5 = tmp12[0];
   let closure_16 = tmp12[1];
-  const items = [scrollAnimatedValue, first2, first1, hiddenOnScroll];
-  const tmp14 = callback3((nativeScrollRef) => {
-    if (null != nativeScrollRef) {
-      nativeScrollRef.setNextHeaderY = closure_14;
-      callback3(closure_14(scrollViewHeight[4]).isPublicInstance(nativeScrollRef));
+  let items = [scrollAnimatedValue, first2, first1, hiddenOnScroll];
+  const tmp14 = callback((closure_0) => {
+    if (null != closure_0) {
+      closure_0.setNextHeaderY = closure_14;
+      callback3(closure_14(scrollViewHeight[4]).isPublicInstance(closure_0));
       const obj = closure_14(scrollViewHeight[4]);
     }
   }, []);
-  const tmp16 = callback4(() => {
+  const tmp16 = callback2(() => {
     let diffClampResult = null;
     if (true === hiddenOnScroll) {
       let obj = inverted(scrollViewHeight[6]);
       obj = { extrapolateLeft: "clamp" };
       const items = [first1, first1 + 1];
       obj.inputRange = items;
-      obj.outputRange = [77601039, 1612144654];
-      obj = { inputRange: [77601039, 1612144654] };
-      const items1 = [0.229, -1];
+      obj.outputRange = [0, 1];
+      obj = { inputRange: [0, 1] };
+      const items1 = [0, -1];
       obj.outputRange = items1;
       diffClampResult = obj.diffClamp(scrollAnimatedValue.interpolate(obj).interpolate(obj), -first2, 0);
       const interpolateResult = scrollAnimatedValue.interpolate(obj);
     }
     return diffClampResult;
   }, items);
-  const tmp17 = callback(callback5(() => {
+  let closure_17 = tmp16;
+  const tmp17 = scrollAnimatedValue(callback3(() => {
     const items = [-1, 0];
-    const interpolateResult = scrollAnimatedValue.interpolate({ inputRange: items, outputRange: ["placeholder", "aria-label"] });
+    const interpolateResult = scrollAnimatedValue.interpolate({ inputRange: items, outputRange: [0, 0] });
     let addResult = interpolateResult;
-    if (null != tmp16) {
-      addResult = inverted(scrollViewHeight[6]).add(interpolateResult, tmp16);
+    if (null != closure_17) {
+      addResult = inverted(scrollViewHeight[6]).add(interpolateResult, closure_17);
       const obj = inverted(scrollViewHeight[6]);
     }
     return addResult;
@@ -82,7 +85,7 @@ export default function ScrollViewStickyHeader(ref) {
   let closure_18 = tmp17[1];
   let closure_19 = first3(true);
   let closure_20 = first3(null);
-  const items1 = [first3];
+  let items1 = [first3];
   first2(() => {
     let tmp = 0 !== first3;
     if (tmp) {
@@ -92,8 +95,9 @@ export default function ScrollViewStickyHeader(ref) {
       closure_19.current = false;
     }
   }, items1);
-  const tmp19 = callback3((value) => {
+  const tmp19 = callback((value) => {
     value = value.value;
+    let closure_0 = value;
     if (0 === value) {
       if (!ref.current) {
         ref.current = true;
@@ -103,12 +107,13 @@ export default function ScrollViewStickyHeader(ref) {
       const _clearTimeout = clearTimeout;
       clearTimeout(ref2.current);
     }
-    ref2.current = setTimeout(() => callback(value), 15);
+    ref2.current = setTimeout(() => outer1_12(closure_0), 15);
   }, []);
+  let closure_21 = tmp19;
   const items2 = [first4, first, first2, first1, scrollViewHeight, scrollAnimatedValue, inverted, tmp16, tmp19, first5];
   first2(() => {
     const items = [-1, 0];
-    const items1 = ["placeholder", "aria-label"];
+    const items1 = [0, 0];
     if (first) {
       if (true === inverted) {
         if (null != scrollViewHeight) {
@@ -147,30 +152,30 @@ export default function ScrollViewStickyHeader(ref) {
       }
     }
     const interpolateResult = scrollAnimatedValue.interpolate({ inputRange: items, outputRange: items1 });
-    let inverted = interpolateResult;
+    inverted = interpolateResult;
     let obj = interpolateResult;
-    if (null != tmp16) {
-      const addResult = inverted(scrollViewHeight[6]).add(interpolateResult, tmp16);
+    if (null != closure_17) {
+      const addResult = inverted(scrollViewHeight[6]).add(interpolateResult, closure_17);
       inverted = addResult;
       obj = addResult;
       const obj2 = inverted(scrollViewHeight[6]);
     }
     if (first5) {
-      let closure_0 = obj.addListener(tmp19);
+      let closure_0 = obj.addListener(closure_21);
     }
     callback4(obj);
     return () => {
       if (closure_0) {
         addResult.removeListener(closure_0);
       }
-      if (null != ref.current) {
+      if (null != outer1_20.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(ref.current);
+        clearTimeout(outer1_20.current);
       }
     };
   }, items2);
-  const Children = React.Children;
-  const onlyResult = Children.only(tmp.children);
+  let Children = React.Children;
+  let onlyResult = Children.only(tmp.children);
   let tmp22 = null;
   if (first5) {
     tmp22 = null;
@@ -199,19 +204,19 @@ export default function ScrollViewStickyHeader(ref) {
         props.onLayout(nativeEvent);
       }
     },
-    ref: importDefault(dependencyMap[5])(callback3((nativeScrollRef) => {
-      if (null != nativeScrollRef) {
-        nativeScrollRef.setNextHeaderY = closure_14;
-        callback3(closure_14(scrollViewHeight[4]).isPublicInstance(nativeScrollRef));
+    ref: inverted(scrollViewHeight[5])(callback((closure_0) => {
+      if (null != closure_0) {
+        closure_0.setNextHeaderY = closure_14;
+        callback3(closure_14(scrollViewHeight[4]).isPublicInstance(closure_0));
         const obj = closure_14(scrollViewHeight[4]);
       }
     }, []), ref.ref),
     style: items4
   };
-  const items4 = [onlyResult.props.style, closure_14.header, ];
+  items4 = [onlyResult.props.style, closure_14.header, ];
   const items5 = [{ translateY: tmp17[0] }];
   items4[2] = { transform: items5 };
   obj1.passthroughAnimatedPropExplicitValues = tmp22;
   obj1.children = first1(onlyResult, { style: closure_14.fill, onLayout: undefined });
-  return jsx(importDefault(dependencyMap[6]).View, obj1);
+  return first4(inverted(scrollViewHeight[6]).View, obj1);
 };

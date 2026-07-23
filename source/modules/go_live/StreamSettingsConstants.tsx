@@ -1,21 +1,24 @@
-// Module ID: 4181
-// Function ID: 35988
+// Module ID: 4185
+// Function ID: 36020
 // Name: makeButton
-// Dependencies: []
+// Dependencies: [653, 1851, 1212, 2]
 // Exports: getApplicationFramerate, getApplicationResolution
 
-// Module 4181 (makeButton)
+// Module 4185 (makeButton)
+import { BoostedGuildTiers } from "ME";
+import { StreamQualities } from "GuildFeatures";
+
 function makeButton(RESOLUTION_1080, arg1) {
-  const require = RESOLUTION_1080;
-  const dependencyMap = arg1;
+  let closure_0 = RESOLUTION_1080;
+  let closure_1 = arg1;
   const obj = { value: RESOLUTION_1080 };
   Object.defineProperty(obj, "label", {
     get: () => {
-      if (null != arg1) {
-        let StringResult = arg1();
+      if (null != callback) {
+        let StringResult = callback();
       } else {
         const _String = String;
-        StringResult = String(arg0);
+        StringResult = String(closure_0);
       }
       return StringResult;
     },
@@ -24,8 +27,8 @@ function makeButton(RESOLUTION_1080, arg1) {
   Object.defineProperty(obj, "subtext", {
     get: () => {
       let tmp;
-      if (null != callback) {
-        tmp = callback();
+      if (null != callback2) {
+        tmp = callback2();
       }
       return tmp;
     },
@@ -35,17 +38,15 @@ function makeButton(RESOLUTION_1080, arg1) {
 }
 function makeResolutionLabel(RESOLUTION_1080) {
   if (RESOLUTION_1080 === obj.RESOLUTION_SOURCE) {
-    const intl2 = require(dependencyMap[2]).intl;
-    let stringResult = intl2.string(require(dependencyMap[2]).t.XjXqzh);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.XjXqzh);
   } else {
-    const intl = require(dependencyMap[2]).intl;
-    const obj = { resolution: RESOLUTION_1080 };
-    stringResult = intl.formatToPlainString(require(dependencyMap[2]).t.TEOC0I, obj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj = { resolution: RESOLUTION_1080 };
+    stringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.TEOC0I, obj);
   }
   return stringResult;
 }
-const BoostedGuildTiers = require(dependencyMap[0]).BoostedGuildTiers;
-const StreamQualities = require(dependencyMap[1]).StreamQualities;
 let obj = { RESOLUTION_480: 480, [480]: "RESOLUTION_480", RESOLUTION_720: 720, [720]: "RESOLUTION_720", RESOLUTION_1080: 1080, [1080]: "RESOLUTION_1080", RESOLUTION_1440: 1440, [1440]: "RESOLUTION_1440", RESOLUTION_SOURCE: 0, [0]: "RESOLUTION_SOURCE" };
 obj = { FPS_5: 5, [5]: "FPS_5", FPS_15: 15, [15]: "FPS_15", FPS_30: 30, [30]: "FPS_30", FPS_60: 60, [60]: "FPS_60" };
 obj = { PRESET_VIDEO: 1, [1]: "PRESET_VIDEO", PRESET_DOCUMENTS: 2, [2]: "PRESET_DOCUMENTS", PRESET_CUSTOM: 3, [3]: "PRESET_CUSTOM", PRESET_AUTO: 4, [4]: "PRESET_AUTO", PRESET_MOBILE_DEFAULT: 5, [5]: "PRESET_MOBILE_DEFAULT", PRESET_MOBILE_PERFORMANCE: 6, [6]: "PRESET_MOBILE_PERFORMANCE", PRESET_MOBILE_HIGH_QUALITY: 7, [7]: "PRESET_MOBILE_HIGH_QUALITY" };
@@ -55,8 +56,8 @@ const items1 = [
   makeButton(obj.RESOLUTION_1080),
   makeButton(obj.RESOLUTION_1440),
   makeButton(obj.RESOLUTION_SOURCE, () => {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.XjXqzh);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.XjXqzh);
   })
 ];
 const items2 = [makeButton(obj.RESOLUTION_720), makeButton(obj.RESOLUTION_1080), makeButton(obj.RESOLUTION_1440)];
@@ -64,23 +65,22 @@ const items3 = [makeButton(obj.RESOLUTION_480, () => makeResolutionLabel(obj.RES
 const items4 = [makeButton(obj.FPS_15), makeButton(obj.FPS_30), makeButton(obj.FPS_60)];
 const items5 = [
   makeButton(obj.FPS_15, () => {
-    const intl = require(dependencyMap[2]).intl;
-    const obj = { value: obj.FPS_15 };
-    return intl.formatToPlainString(require(dependencyMap[2]).t.bW+JCW, obj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj = { value: obj.FPS_15 };
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["bW+JCW"], obj);
   }),
   makeButton(obj.FPS_30, () => {
-    const intl = require(dependencyMap[2]).intl;
-    const obj = { value: obj.FPS_30 };
-    return intl.formatToPlainString(require(dependencyMap[2]).t.bW+JCW, obj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj = { value: obj.FPS_30 };
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["bW+JCW"], obj);
   }),
   makeButton(obj.FPS_60, () => {
-    const intl = require(dependencyMap[2]).intl;
-    const obj = { value: obj.FPS_60 };
-    return intl.formatToPlainString(require(dependencyMap[2]).t.bW+JCW, obj);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj = { value: obj.FPS_60 };
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["bW+JCW"], obj);
   })
 ];
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/go_live/StreamSettingsConstants.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("modules/go_live/StreamSettingsConstants.tsx");
 
 export const ApplicationStreamResolutions = obj;
 export const getApplicationResolution = function getApplicationResolution(arg0) {

@@ -1,13 +1,15 @@
-// Module ID: 12975
-// Function ID: 98690
+// Module ID: 13089
+// Function ID: 100846
 // Name: AvatarDuoPile
-// Dependencies: []
+// Dependencies: [31, 33, 9909, 11652, 7873, 22, 11951, 2]
 // Exports: AvatarDuoPile
 
-// Module 12975 (AvatarDuoPile)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("design/components/Pile/native/AvatarDuoPile.native.tsx");
+// Module 13089 (AvatarDuoPile)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("Pile").fileFinishedImporting("design/components/Pile/native/AvatarDuoPile.native.tsx");
 
 export const AvatarDuoPile = function AvatarDuoPile(size) {
   size = size.size;
@@ -15,21 +17,21 @@ export const AvatarDuoPile = function AvatarDuoPile(size) {
   obj.size = 0;
   obj.children = 0;
   const merged = Object.assign(size, obj);
-  obj = { "Null": 256113, "Null": 57745920, "Null": 285212672, "Null": 342954241, "Null": 1375731712, "Null": -1655946005 };
+  obj = { "aria-label": null, shape: null, size: null, gap: 4, depthX: 0.5, depthY: 0.5 };
   if ("aria-label" in merged) {
-    aria-label = merged.aria-label;
+    aria_label = merged["aria-label"];
   } else {
-    aria-label = arg1(dependencyMap[3]).getListSummaryLabel(merged.names);
-    const obj2 = arg1(dependencyMap[3]);
+    aria_label = require(11652) /* getListSummaryLabel */.getListSummaryLabel(merged.names);
+    const obj2 = require(11652) /* getListSummaryLabel */;
   }
-  obj.aria-label = aria_label;
-  obj.shape = arg1(dependencyMap[4]).CutoutShape.Circle;
+  obj["aria-label"] = aria_label;
+  obj.shape = require(7873) /* SolidCutout */.CutoutShape.Circle;
   if (obj3.isArray(size)) {
-    let mapped = size.map((arg0) => callback(closure_1[6]).AVATAR_SIZE_MAP[arg0]);
+    let mapped = size.map((arg0) => outer1_0(outer1_1[6]).AVATAR_SIZE_MAP[arg0]);
   } else {
-    mapped = arg1(dependencyMap[6]).AVATAR_SIZE_MAP[size];
+    mapped = require(11951) /* StaticNativeCutoutAvatarImage */.AVATAR_SIZE_MAP[size];
   }
   obj.size = mapped;
   obj.children = size.children;
-  return jsx(arg1(dependencyMap[2]).Pile, obj);
+  return jsx(require(9909) /* Pile */.Pile, { "aria-label": null, shape: null, size: null, gap: 4, depthX: 0.5, depthY: 0.5 });
 };

@@ -1,12 +1,15 @@
 // Module ID: 1359
-// Function ID: 16282
+// Function ID: 16283
 // Name: set
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 1359 (set)
-const obj = { ALL: new Set([-0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005078360280361494, 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000242576495921584]) };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThreadSearchTagSetting.tsx");
+import set from "set";
+
+const obj = {};
+let set = new Set(["match_all", "match_some"]);
+obj.ALL = set;
+const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThreadSearchTagSetting.tsx");
 
 export const ThreadSearchTagSetting = { MATCH_ALL: "match_all", MATCH_SOME: "match_some" };
 export const ThreadSearchTagSettingSets = obj;

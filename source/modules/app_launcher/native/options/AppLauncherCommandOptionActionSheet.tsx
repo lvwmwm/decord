@@ -1,24 +1,26 @@
-// Module ID: 11279
-// Function ID: 87803
+// Module ID: 11289
+// Function ID: 87853
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 1455, 33, 4130, 689, 5187, 5186, 5501, 4098, 1273, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11279 (AppLauncherCommandOptionActionSheet)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const DEFAULT_CONTENT_PADDING = arg1(dependencyMap[2]).DEFAULT_CONTENT_PADDING;
-const jsx = arg1(dependencyMap[3]).jsx;
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[5]).colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-obj.actionSheetBackground = obj;
-obj.titleContainer = { backgroundColor: "transparent" };
-obj.titleWrapper = { alignItems: "center" };
-obj.subtitleWrapper = {};
-obj.contentContainer = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 };
-let closure_5 = obj.createStyles(obj);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOptionActionSheet.tsx");
+// Module 11289 (AppLauncherCommandOptionActionSheet)
+import "result";
+import { View } from "get ActivityIndicator";
+import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+_createForOfIteratorHelperLoose.actionSheetBackground = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.titleContainer = { backgroundColor: "transparent" };
+_createForOfIteratorHelperLoose.titleWrapper = { alignItems: "center" };
+_createForOfIteratorHelperLoose.subtitleWrapper = { paddingHorizontal: 12, textAlign: "center" };
+_createForOfIteratorHelperLoose.contentContainer = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/options/AppLauncherCommandOptionActionSheet.tsx");
 
 export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOptionActionSheet(startExpanded) {
   let children;
@@ -34,11 +36,10 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   if (flag === undefined) {
     flag = true;
   }
-  let obj = { ServerThemeApexShadowExperiment: false, pipMode: false, getAttachmentUrl: false, getChangelogLoadStatus: false, LevelInfo: false };
+  let obj = { option: 0, children: 0, contentContainerStyles: 0, scrollable: 0, startExpanded: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(startExpanded, obj);
-  const arg1 = merged;
-  const tmp3 = callback();
+  const tmp3 = _createForOfIteratorHelperLoose();
   obj = {};
   const merged1 = Object.assign(merged);
   obj["backgroundStyles"] = tmp3.actionSheetBackground;
@@ -47,20 +48,27 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   obj = { titleContainerStyle: tmp3.titleContainer, titleWrapperStyle: tmp3.titleWrapper, subtitleStyle: tmp3.subtitleWrapper };
   const obj1 = {
     style: { alignSelf: "flex-start" },
-    children: jsx(arg1(dependencyMap[8]).ActionSheetCloseButton, {
+    children: jsx(merged(5501).ActionSheetCloseButton, {
       onPress() {
-        callback(closure_2[9]).hideActionSheet();
+        outer1_1(outer1_2[9]).hideActionSheet();
         if (null != merged.onDismiss) {
           merged.onDismiss();
         }
       }
     })
   };
-  obj.leading = <View {...obj1} />;
+  obj.leading = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(5501).ActionSheetCloseButton, {
+    onPress() {
+      outer1_1(outer1_2[9]).hideActionSheet();
+      if (null != merged.onDismiss) {
+        merged.onDismiss();
+      }
+    }
+  })}</View>;
   ({ displayName: obj3.title, displayDescription: obj3.subtitle } = option);
-  obj.trailing = jsx(arg1(dependencyMap[10]).Spacer, { size: 24 });
-  obj["header"] = jsx(arg1(dependencyMap[7]).BottomSheetTitleHeader, obj);
+  obj.trailing = jsx(merged(1273).Spacer, { size: 24 });
+  obj["header"] = jsx(merged(5186).BottomSheetTitleHeader, { titleContainerStyle: tmp3.titleContainer, titleWrapperStyle: tmp3.titleWrapper, subtitleStyle: tmp3.subtitleWrapper });
   const items = [tmp3.contentContainer, contentContainerStyles];
   obj["children"] = <View style={items}>{children}</View>;
-  return jsx(arg1(dependencyMap[6]).BottomSheet, obj, option.name);
+  return jsx(merged(5187).BottomSheet, { titleContainerStyle: tmp3.titleContainer, titleWrapperStyle: tmp3.titleWrapper, subtitleStyle: tmp3.subtitleWrapper }, option.name);
 };

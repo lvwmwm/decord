@@ -1,11 +1,27 @@
-// Module ID: 10554
-// Function ID: 82452
+// Module ID: 10564
+// Function ID: 82502
 // Name: StreamTextOverlay
-// Dependencies: []
+// Dependencies: [31, 27, 4149, 1194, 653, 4191, 33, 4130, 689, 3974, 4126, 1273, 566, 10565, 10567, 1212, 4319, 10574, 10587, 10577, 10562, 5217, 4660, 10589, 2]
 // Exports: default
 
-// Module 10554 (StreamTextOverlay)
+// Module 10564 (StreamTextOverlay)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import { ApplicationStreamStates } from "ME";
+import { MediaEngineContextTypes } from "DesktopSources";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+
 let StyleSheet;
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_4;
+const require = arg1;
 class StreamTextOverlay {
   constructor(arg0) {
     subtext = global.subtext;
@@ -13,58 +29,49 @@ class StreamTextOverlay {
     obj = { style: tmp.screenMessageContainer };
     tmp2 = jsxs;
     tmp3 = View;
-    obj = { "Null": null, "Null": null, alignItems: null };
+    obj = { style: null, variant: "text-md/semibold", color: "text-overlay-light" };
     obj.style = tmp.screenMessageText;
     obj.children = global.title;
     items = [, ];
-    items[0] = jsx(arg1(dependencyMap[10]).Text, obj);
+    items[0] = jsx(require("Text").Text, obj);
     tmp4 = null;
     if (null != subtext) {
       tmp5 = jsx;
-      tmp6 = arg1;
-      tmp7 = dependencyMap;
+      tmp6 = closure_0;
+      tmp7 = closure_2;
       num = 11;
       obj1 = {};
       obj1.style = tmp.screenMessageSubtext;
       obj1.children = subtext;
-      tmp4 = jsx(arg1(dependencyMap[11]).LegacyText, obj1);
+      tmp4 = jsx(require("Button").LegacyText, obj1);
     }
     items[1] = tmp4;
     obj.children = items;
     return tmp2(tmp3, obj);
   }
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ View: closure_4, StyleSheet } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-const ApplicationStreamStates = arg1(dependencyMap[4]).ApplicationStreamStates;
-const MediaEngineContextTypes = arg1(dependencyMap[5]).MediaEngineContextTypes;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = arg1(dependencyMap[6]));
-let obj1 = arg1(dependencyMap[7]);
+({ View: closure_4, StyleSheet } = get_ActivityIndicator);
+({ jsx: closure_10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[8]).colors.BLACK };
+obj = { flex: 1, alignItems: "center", justifyContent: "center", overflow: "hidden", width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
 obj.container = obj;
-obj1 = {};
+_createForOfIteratorHelperLoose = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj1["flex"] = 1;
-obj1["padding"] = 8;
-obj1["alignItems"] = "center";
-obj1["justifyContent"] = "center";
-const tmp3 = arg1(dependencyMap[6]);
-obj1["backgroundColor"] = arg1(dependencyMap[9]).hexWithOpacity(importDefault(dependencyMap[8]).unsafe_rawColors.BLACK, 0.7);
-obj.screenMessageContainer = obj1;
+_createForOfIteratorHelperLoose["flex"] = 1;
+_createForOfIteratorHelperLoose["padding"] = 8;
+_createForOfIteratorHelperLoose["alignItems"] = "center";
+_createForOfIteratorHelperLoose["justifyContent"] = "center";
+_createForOfIteratorHelperLoose["backgroundColor"] = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLACK, 0.7);
+obj.screenMessageContainer = _createForOfIteratorHelperLoose;
 obj.screenMessageText = { lineHeight: 18 };
-const obj6 = arg1(dependencyMap[9]);
-obj.screenMessageSubtext = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_300 };
-const obj3 = {};
-const obj2 = { color: importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_300 };
-obj3.backgroundColor = arg1(dependencyMap[9]).hexWithOpacity(importDefault(dependencyMap[8]).unsafe_rawColors.PRIMARY_700, 0.5);
-obj3.borderRadius = importDefault(dependencyMap[8]).radii.md;
+let obj2 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_300, fontSize: 14, lineHeight: 18, textAlign: "center" };
+obj.screenMessageSubtext = obj2;
+let obj3 = { position: "absolute", bottom: 8, right: 8, backgroundColor: null, borderRadius: null, width: 24, height: 24, justifyContent: "center", alignItems: "center" };
+obj3.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_700, 0.5);
+obj3.borderRadius = require("_createForOfIteratorHelperLoose").radii.md;
 obj.statusWrapper = obj3;
-obj.liveTag = { st: "Array", sv: "parseSemver", sw: "Array" };
-let closure_13 = obj1.createStyles(obj);
+obj.liveTag = { position: "absolute", right: 8, top: 8 };
+let closure_13 = _createForOfIteratorHelperLoose.createStyles(obj);
 let closure_14 = importAllResult.memo((participant) => {
   let gestureEnabled;
   let removeEmptyStateButton;
@@ -73,64 +80,63 @@ let closure_14 = importAllResult.memo((participant) => {
   let streamId;
   let user;
   participant = participant.participant;
-  const arg1 = participant;
   ({ user, removeEmptyStateButton, removeEmptyStateImage } = participant);
   ({ streamId, resizeMode, gestureEnabled } = participant);
   const importDefault = callback2();
-  let obj = arg1(dependencyMap[12]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => activeStreamForStreamKey.getActiveStreamForStreamKey(participant.id));
-  const tmp2 = importDefault(dependencyMap[13])(MediaEngineContextTypes.STREAM, participant.user.id);
+  let obj = participant(566);
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getActiveStreamForStreamKey(participant.id));
+  const tmp2 = importDefault(10565)(MediaEngineContextTypes.STREAM, participant.user.id);
   if (null != stateFromStores) {
     const state = stateFromStores.state;
     if (ApplicationStreamStates.FAILED === state) {
-      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: arg1(dependencyMap[14]).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
-      return callback(importDefault(dependencyMap[14]), obj);
+      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10567).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
+      return callback(importDefault(10567), obj);
     } else if (ApplicationStreamStates.ENDED === state) {
-      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: arg1(dependencyMap[14]).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
-      return callback(importDefault(dependencyMap[14]), obj);
+      obj = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10567).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
+      return callback(importDefault(10567), obj);
     } else {
       if (ApplicationStreamStates.RECONNECTING === state) {
         const obj1 = {};
-        const intl = arg1(dependencyMap[15]).intl;
-        obj1.title = intl.string(arg1(dependencyMap[15]).t.pdFFK+);
+        const intl = participant(1212).intl;
+        obj1.title = intl.string(participant(1212).t["pdFFK+"]);
         let tmp8 = callback(StreamTextOverlay, obj1);
       } else {
         tmp8 = null;
         if (ApplicationStreamStates.PAUSED === state) {
           const obj2 = {};
-          const intl2 = arg1(dependencyMap[15]).intl;
-          obj2.title = intl2.string(arg1(dependencyMap[15]).t.5q17w5);
-          const intl3 = arg1(dependencyMap[15]).intl;
-          const obj3 = { username: importDefault(dependencyMap[16]).getName(stateFromStores.guildId, stateFromStores.channelId, user) };
-          obj2.subtext = intl3.formatToPlainString(arg1(dependencyMap[15]).t.meVVlb, obj3);
+          const intl2 = participant(1212).intl;
+          obj2.title = intl2.string(participant(1212).t["5q17w5"]);
+          const intl3 = participant(1212).intl;
+          const obj3 = { username: importDefault(4319).getName(stateFromStores.guildId, stateFromStores.channelId, user) };
+          obj2.subtext = intl3.formatToPlainString(participant(1212).t.meVVlb, obj3);
           tmp8 = callback(StreamTextOverlay, obj2);
-          const obj8 = importDefault(dependencyMap[16]);
+          const obj8 = importDefault(4319);
         }
       }
       if (null != tmp2) {
-        const obj4 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: arg1(dependencyMap[14]).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp2 };
-        return callback(importDefault(dependencyMap[14]), obj4);
+        const obj4 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10567).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp2 };
+        return callback(importDefault(10567), obj4);
       } else {
         const obj5 = {};
-        const id = id.getId();
+        id = id.getId();
         const obj6 = {
           resizeMode,
           streamId,
           gestureEnabled,
           renderTag() {
-                  return callback(lib(closure_2[18]), { style: lib.liveTag, participant });
+                  return outer1_10(lib(outer1_2[18]), { style: lib.liveTag, participant });
                 }
         };
         if (stateFromStores.ownerId === id) {
-          let REMOTE_STREAM = arg1(dependencyMap[19]).VideoSpinnerContext.SELF_STREAM;
+          let REMOTE_STREAM = participant(10577).VideoSpinnerContext.SELF_STREAM;
         } else {
-          REMOTE_STREAM = arg1(dependencyMap[19]).VideoSpinnerContext.REMOTE_STREAM;
+          REMOTE_STREAM = participant(10577).VideoSpinnerContext.REMOTE_STREAM;
         }
         obj6.videoSpinnerContext = REMOTE_STREAM;
         obj6.userId = user.id;
         obj6.paused = stateFromStores.state === ApplicationStreamStates.PAUSED;
-        const items1 = [callback(importDefault(dependencyMap[17]), obj6), tmp8];
+        const items1 = [callback(importDefault(10574), obj6), tmp8];
         obj5.children = items1;
         return closure_11(closure_12, obj5);
       }
@@ -143,14 +149,13 @@ let closure_15 = importAllResult.memo((arg0) => {
   let onFullScreen;
   let style;
   ({ onFullScreen, style } = arg0);
-  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { <string:2874954499>: "<string:5259856>", <string:879673916>: "<string:3935895705>", size: "flags", secureTextEntry: "ti" } };
-  const items = [callback2().statusWrapper, style];
-  obj = { source: importDefault(dependencyMap[23]), size: arg1(dependencyMap[11]).Icon.Sizes.SMALL, color: importDefault(dependencyMap[8]).unsafe_rawColors.WHITE };
-  obj.children = callback(arg1(dependencyMap[11]).Icon, obj);
-  return callback(arg1(dependencyMap[22]).PressableOpacity, obj);
+  let obj = { accessibilityRole: "button", onPress: onFullScreen, style: items, hitSlop: { top: 4, left: 4, right: 4, bottom: 4 } };
+  items = [callback2().statusWrapper, style];
+  obj = { source: importDefault(10589), size: require(1273) /* Button */.Icon.Sizes.SMALL, color: importDefault(689).unsafe_rawColors.WHITE };
+  obj.children = callback(require(1273) /* Button */.Icon, obj);
+  return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
 });
-const obj9 = arg1(dependencyMap[9]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/video_calls/native/components/StreamTile.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_calls/native/components/StreamTile.tsx");
 
 export default function StreamTile(participant) {
   let fullscreenIconStyle;
@@ -161,14 +166,11 @@ export default function StreamTile(participant) {
   let style;
   let user;
   participant = participant.participant;
-  const arg1 = participant;
   const onSingleTap = participant.onSingleTap;
-  const importDefault = onSingleTap;
   const onDoubleTap = participant.onDoubleTap;
-  const dependencyMap = onDoubleTap;
   let CONTAIN = participant.resizeMode;
   if (CONTAIN === undefined) {
-    CONTAIN = arg1(dependencyMap[17]).ResizeMode.CONTAIN;
+    CONTAIN = participant(onDoubleTap[17]).ResizeMode.CONTAIN;
   }
   const onFullScreen = participant.onFullScreen;
   ({ gestureEnabled, removeEmptyStateButton, removeEmptyStateImage, fullscreenIconStyle, style } = participant);
@@ -190,9 +192,9 @@ export default function StreamTile(participant) {
   }, items1);
   const tmp3 = callback2();
   ({ streamId, user } = participant);
-  let obj = { gesture: importDefault(dependencyMap[20])({ onSingleTapStart: callback, onDoubleTapStart: callback1 }) };
+  let obj = { gesture: onSingleTap(onDoubleTap[20])({ onSingleTapStart: callback, onDoubleTapStart: callback1 }) };
   obj = { style: items2 };
-  const items2 = [tmp3.container, style];
+  items2 = [tmp3.container, style];
   obj = { streamId, participant, user, resizeMode: CONTAIN, gestureEnabled, removeEmptyStateButton, removeEmptyStateImage };
   const items3 = [callback(closure_14, obj), ];
   let tmp10 = null != onFullScreen;
@@ -203,6 +205,6 @@ export default function StreamTile(participant) {
   items3[1] = tmp10;
   obj.children = items3;
   obj.children = closure_11(closure_4, obj);
-  return callback(arg1(dependencyMap[21]).GestureDetector, obj);
+  return callback(participant(onDoubleTap[21]).GestureDetector, obj);
 };
 export { StreamTextOverlay };

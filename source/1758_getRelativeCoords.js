@@ -1,13 +1,15 @@
 // Module ID: 1758
-// Function ID: 19646
+// Function ID: 19647
 // Name: getRelativeCoords
-// Dependencies: []
+// Dependencies: [1759]
 
 // Module 1758 (getRelativeCoords)
+const require = arg1;
+const dependencyMap = arg6;
 let closure_2 = { code: "function getRelativeCoords_Pnpm_getRelativeCoordsTs1(animatedRef,absoluteX,absoluteY){const{measure}=this.__closure;const parentCoords=measure(animatedRef);if(parentCoords===null){return null;}return{x:absoluteX-parentCoords.pageX,y:absoluteY-parentCoords.pageY};}" };
-arg5.getRelativeCoords = () => {
+arg5.getRelativeCoords = (() => {
   function getRelativeCoords(arg0, arg1, arg2) {
-    let obj = callback(closure_1[0]);
+    let obj = outer1_0(outer1_1[0]);
     const measureResult = obj.measure(arg0);
     let tmp2 = null;
     if (null !== measureResult) {
@@ -16,8 +18,8 @@ arg5.getRelativeCoords = () => {
     }
     return tmp2;
   }
-  getRelativeCoords.__closure = { measure: arg1(arg6[0]).measure };
+  getRelativeCoords.__closure = { measure: require(1759) /* measureFabric */.measure };
   getRelativeCoords.__workletHash = 11016839059094;
   getRelativeCoords.__initData = closure_2;
   return getRelativeCoords;
-}();
+})();

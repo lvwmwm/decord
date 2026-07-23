@@ -1,13 +1,12 @@
-// Module ID: 12741
-// Function ID: 97712
+// Module ID: 12855
+// Function ID: 99868
 // Name: findRemoteAuthFingerprint
-// Dependencies: []
+// Dependencies: [1443, 2]
 // Exports: findRemoteAuthFingerprint
 
-// Module 12741 (findRemoteAuthFingerprint)
-let closure_2 = /^\/ra\/([\w-]+)$/;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/remote_auth/QRLoginUtils.tsx");
+// Module 12855 (findRemoteAuthFingerprint)
+const re2 = /^\/ra\/([\w-]+)$/;
+const result = require("set").fileFinishedImporting("modules/remote_auth/QRLoginUtils.tsx");
 
 export const findRemoteAuthFingerprint = function findRemoteAuthFingerprint(host, pathname) {
   if (null != host) {
@@ -20,7 +19,7 @@ export const findRemoteAuthFingerprint = function findRemoteAuthFingerprint(host
         }
         return tmp5;
       }
-      const obj = importDefault(dependencyMap[0]);
+      obj = importDefault(1443);
     }
   }
   return null;

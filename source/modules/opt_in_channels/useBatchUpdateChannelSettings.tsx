@@ -1,77 +1,78 @@
-// Module ID: 9970
-// Function ID: 77062
+// Module ID: 9978
+// Function ID: 77102
 // Name: resetStoreState
-// Dependencies: []
+// Dependencies: [31, 5076, 4325, 653, 686, 566, 5072, 9979, 9976, 2]
 // Exports: default
 
-// Module 9970 (resetStoreState)
+// Module 9978 (resetStoreState)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { AnalyticsSections } from "ME";
+
+const require = arg1;
 function resetStoreState(guildId) {
-  let obj = importDefault(dependencyMap[4]);
+  let obj = importDefault(686);
   obj = { type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES", guildId };
   obj.dispatch(obj);
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const AnalyticsSections = arg1(dependencyMap[3]).AnalyticsSections;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/opt_in_channels/useBatchUpdateChannelSettings.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/opt_in_channels/useBatchUpdateChannelSettings.tsx");
 
 export default function useBatchUpdateChannelSettings(arg0) {
-  const arg1 = arg0;
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => closure_5.getPendingChannelUpdates(arg0));
-  const importDefault = stateFromStores;
-  const items1 = [arg0];
+  const _require = arg0;
+  let obj = _require(566);
+  let items = [closure_5];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getPendingChannelUpdates(closure_0));
+  let items1 = [arg0];
   const effect = React.useEffect(() => {
-    callback(arg0);
+    outer1_7(closure_0);
     return () => {
-      callback(closure_0);
+      outer2_7(outer1_0);
     };
   }, items1);
   const items2 = [arg0, stateFromStores];
   const effect1 = React.useEffect(() => {
     if (null != stateFromStores) {
-      const result = arg0(closure_2[6]).updateOptInChannelsBatched(arg0, stateFromStores);
-      const obj = arg0(closure_2[6]);
+      const result = callback(outer1_2[6]).updateOptInChannelsBatched(callback, stateFromStores);
+      const obj = callback(outer1_2[6]);
     }
   }, items2);
   obj = {
-    onChannelClick: React.useCallback((guildId, channelId, id) => {
-      const isChannelOptedInResult = closure_5.isChannelOptedIn(guildId, channelId);
+    onChannelClick: React.useCallback((guildId, channelId, closure_0) => {
+      const isChannelOptedInResult = outer1_5.isChannelOptedIn(guildId, channelId);
       let isCollapsedResult = !isChannelOptedInResult;
       if (isCollapsedResult) {
-        isCollapsedResult = collapsed.isCollapsed(id);
+        isCollapsedResult = outer1_4.isCollapsed(closure_0);
       }
       if (isCollapsedResult) {
-        isCollapsedResult = null != id;
+        isCollapsedResult = null != closure_0;
       }
       if (isCollapsedResult) {
-        let obj = guildId(closure_2[7]);
-        obj.categoryExpand(id);
+        let obj = callback(outer1_2[7]);
+        obj.categoryExpand(closure_0);
       }
-      let obj1 = guildId(closure_2[8]);
+      let obj1 = callback(outer1_2[8]);
       if (obj1.hasNotSetUpChannelOptIn(guildId)) {
-        if (channelId === id) {
+        if (channelId === closure_0) {
           obj = {};
           const _Set2 = Set;
           const items = [channelId];
           const set = new Set(items);
           obj.include = set;
-          const result = guildId(closure_2[8]).optIntoAllChannelsForExistingMember(guildId, obj);
-          const obj7 = guildId(closure_2[8]);
+          const result = callback(outer1_2[8]).optIntoAllChannelsForExistingMember(guildId, obj);
+          const obj7 = callback(outer1_2[8]);
         } else {
           obj = {};
           const _Set = Set;
           const items1 = [channelId];
           const set1 = new Set(items1);
           obj.exclude = set1;
-          const result1 = guildId(closure_2[8]).optIntoAllChannelsForExistingMember(guildId, obj);
-          const obj5 = guildId(closure_2[8]);
+          const result1 = callback(outer1_2[8]).optIntoAllChannelsForExistingMember(guildId, obj);
+          const obj5 = callback(outer1_2[8]);
         }
       } else {
-        const obj3 = guildId(closure_2[6]);
-        obj1 = { section: constants.CHANNEL_BROWSER };
+        const obj3 = callback(outer1_2[6]);
+        obj1 = { section: outer1_6.CHANNEL_BROWSER };
         const result2 = obj3.updateOptInChannelsImmediate(guildId, channelId, !isChannelOptedInResult, obj1);
       }
     }, [])

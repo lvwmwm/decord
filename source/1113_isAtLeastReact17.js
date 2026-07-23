@@ -1,10 +1,12 @@
 // Module ID: 1113
-// Function ID: 12667
+// Function ID: 12668
 // Name: isAtLeastReact17
-// Dependencies: []
+// Dependencies: [31, 794, 1000]
 // Exports: reactErrorHandler
 
 // Module 1113 (isAtLeastReact17)
+import result from "result";
+
 function isAtLeastReact17(version) {
   const match = version.match(/^([^.]+)/);
   let tmp2 = null !== match;
@@ -14,9 +16,8 @@ function isAtLeastReact17(version) {
   }
   return tmp2;
 }
-function setCause(message, error) {
+function setCause(closure_0, error) {
   const weakSet = new WeakSet();
-  const require = weakSet;
   function recurse(cause, cause2) {
     if (!weakSet.has(cause)) {
       if (cause.cause) {
@@ -28,42 +29,39 @@ function setCause(message, error) {
       return tmp;
     }
   }
-  const dependencyMap = recurse;
-  !recurse(message, error);
+  !recurse(closure_0, error);
 }
-function captureReactException(message, componentStack, arg2) {
-  const require = message;
+function captureReactException(closure_0, closure_1, arg2) {
+  const _require = closure_0;
   const dependencyMap = arg2;
-  componentStack = componentStack.componentStack;
-  const version = componentStack;
-  if (isAtLeastReact17(version.version)) {
-    if (obj.isError(message)) {
+  const componentStack = closure_1.componentStack;
+  if (isAtLeastReact17(componentStack.version)) {
+    if (obj.isError(closure_0)) {
       if (componentStack) {
         const _Error = Error;
-        const error = new Error(message.message);
+        const error = new Error(closure_0.message);
         const _HermesInternal = HermesInternal;
-        error.name = "React ErrorBoundary " + message.name;
+        error.name = "React ErrorBoundary " + closure_0.name;
         error.stack = componentStack;
-        setCause(message, error);
+        setCause(closure_0, error);
       }
     }
-    const obj = require(dependencyMap[1]);
+    obj = _require(794);
   }
-  return require(dependencyMap[2]).withScope((setContext) => {
+  return _require(1000).withScope((setContext) => {
     setContext.setContext("react", { componentStack });
-    return setContext(arg2[2]).captureException(setContext, arg2);
+    return callback(table[2]).captureException(callback, table);
   });
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_2 = require(dependencyMap[0]);
 
 export { captureReactException };
 export { isAtLeastReact17 };
 export function reactErrorHandler(arg0) {
-  const require = arg0;
+  let closure_0 = arg0;
   return (arg0, arg1) => {
-    if (!!arg0) {
-      arg0(arg0, arg1, tmp2);
+    if (!!callback) {
+      callback(arg0, arg1, tmp2);
     }
   };
 }

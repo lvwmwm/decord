@@ -1,15 +1,14 @@
-// Module ID: 13283
-// Function ID: 100871
+// Module ID: 13397
+// Function ID: 103027
 // Name: setCertifiedDevices
-// Dependencies: []
+// Dependencies: [686, 2]
 // Exports: setCertifiedDevices
 
-// Module 13283 (setCertifiedDevices)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("actions/CertifiedDeviceActionCreators.tsx");
+// Module 13397 (setCertifiedDevices)
+const result = require("set").fileFinishedImporting("actions/CertifiedDeviceActionCreators.tsx");
 
 export const setCertifiedDevices = function setCertifiedDevices(id, devices) {
-  let obj = importDefault(dependencyMap[0]);
+  let obj = importDefault(686);
   obj = { type: "CERTIFIED_DEVICES_SET", applicationId: id, devices };
   obj.dispatch(obj);
 };

@@ -1,33 +1,31 @@
-// Module ID: 9207
-// Function ID: 72066
-// Dependencies: []
+// Module ID: 9214
+// Function ID: 72107
+// Dependencies: [57, 31, 33, 9215, 8391, 1212, 9216, 2]
 
-// Module 9207
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 9214
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 const forwardRefResult = importAllResult.forwardRef((onChange) => {
   let alpha2;
+  let closure_4;
   let countryCode;
   let tmp4;
   onChange = onChange.onChange;
-  const arg1 = onChange;
   ({ alpha2, countryCode } = onChange);
-  const importDefault = countryCode;
   const onPressCountrySelector = onChange.onPressCountrySelector;
-  const dependencyMap = onPressCountrySelector;
   const forceMode = onChange.forceMode;
-  let callback = forceMode;
-  let obj = { -391257196: false, 106052193: false, 1627583876: false, -1397992901: false, 1650633940: false };
+  let obj = { onChange: 0, alpha2: 0, countryCode: 0, onPressCountrySelector: 0, forceMode: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(onChange, obj);
   let combined;
-  [tmp4, closure_4] = callback(importAllResult.useState(""), 2);
+  [tmp4, closure_4] = forceMode(importAllResult.useState(""), 2);
   const ref = importAllResult.useRef(null);
-  const jsx = ref;
   const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
     blur() {
-      const current = closure_5.current;
+      const current = outer1_5.current;
       let blurResult;
       if (null != current) {
         blurResult = current.blur();
@@ -35,7 +33,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
       return blurResult;
     },
     focus() {
-      const current = closure_5.current;
+      const current = outer1_5.current;
       let focusResult;
       if (null != current) {
         focusResult = current.focus();
@@ -43,7 +41,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
       return focusResult;
     },
     isFocused() {
-      const current = closure_5.current;
+      const current = outer1_5.current;
       let isFocusedResult;
       if (null != current) {
         isFocusedResult = current.isFocused();
@@ -51,14 +49,14 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
       return null != isFocusedResult && isFocusedResult;
     },
     setText(arg0) {
-      callback(arg0);
-      const current = closure_5.current;
+      outer1_4(arg0);
+      const current = outer1_5.current;
       if (null != current) {
         current.setText(arg0);
       }
     },
     getText() {
-      const current = closure_5.current;
+      const current = outer1_5.current;
       let text;
       if (null != current) {
         text = current.getText();
@@ -70,7 +68,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
       return str;
     },
     measure(arg0) {
-      const current = closure_5.current;
+      const current = outer1_5.current;
       let measureResult;
       if (null != current) {
         measureResult = current.measure(arg0);
@@ -78,7 +76,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
       return measureResult;
     },
     measureInWindow(arg0) {
-      const current = closure_5.current;
+      const current = outer1_5.current;
       let measureInWindowResult;
       if (null != current) {
         measureInWindowResult = current.measureInWindow(arg0);
@@ -86,7 +84,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
       return measureInWindowResult;
     },
     measureLayout(arg0, arg1, arg2) {
-      const current = closure_5.current;
+      const current = outer1_5.current;
       let measureLayoutResult;
       if (null != current) {
         measureLayoutResult = current.measureLayout(arg0, arg1, arg2);
@@ -94,10 +92,10 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
       return measureLayoutResult;
     }
   }), []);
-  const tmp3 = callback(importAllResult.useState(""), 2);
+  const tmp3 = forceMode(importAllResult.useState(""), 2);
   const items = [countryCode, forceMode, onChange];
-  const result = arg1(dependencyMap[3]).shouldShowCountryCodeSelector(forceMode, tmp4);
-  callback = importAllResult.useCallback((value) => {
+  const result = onChange(onPressCountrySelector[3]).shouldShowCountryCodeSelector(forceMode, tmp4);
+  const callback = importAllResult.useCallback((value) => {
     callback(value);
     let str = "";
     if (obj.shouldShowCountryCodeSelector(forceMode, value)) {
@@ -107,7 +105,8 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
       onChange(value, str);
     }
   }, items);
-  const tmp9 = importDefault(dependencyMap[4])(callback);
+  const tmp9 = countryCode(onPressCountrySelector[4])(callback);
+  let closure_6 = tmp9;
   const items1 = [countryCode, tmp9];
   const effect = importAllResult.useEffect(() => {
     const current = ref.current;
@@ -119,7 +118,7 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
     if (null != text) {
       str = text;
     }
-    tmp9(str);
+    closure_6(str);
   }, items1);
   combined = undefined;
   if (result) {
@@ -148,8 +147,8 @@ const forwardRefResult = importAllResult.forwardRef((onChange) => {
   obj["onChange"] = callback;
   obj["leadingText"] = combined;
   obj["leadingPressableProps"] = memo;
-  return jsx(arg1(dependencyMap[6]).SplitTextInput, obj);
+  return ref(onChange(onPressCountrySelector[6]).SplitTextInput, obj);
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/phone/native/PhoneOrEmailInput.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/phone/native/PhoneOrEmailInput.tsx");
 
 export default forwardRefResult;

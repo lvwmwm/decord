@@ -1,9 +1,10 @@
 // Module ID: 1747
-// Function ID: 19542
+// Function ID: 19543
 // Name: AnimatedText
-// Dependencies: []
+// Dependencies: [27, 1616]
 
 // Module 1747 (AnimatedText)
-const _module = require(dependencyMap[1]);
+import createAnimatedComponent from "createAnimatedComponent";
 
-export const AnimatedText = _module.createAnimatedComponent(require(dependencyMap[0]).Text);
+
+export const AnimatedText = createAnimatedComponent.createAnimatedComponent(require("get ActivityIndicator").Text);

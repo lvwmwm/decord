@@ -1,12 +1,14 @@
 // Module ID: 3534
-// Function ID: 27359
+// Function ID: 27322
 // Name: _typeof
-// Dependencies: []
+// Dependencies: [3533, 3517, 3515]
 
 // Module 3534 (_typeof)
+import setUTCDay from "setUTCDay";
+
 function _typeof(arg0) {
   if ("function" === typeof Symbol) {
-    const _Symbol = Symbol;
+    let _Symbol = Symbol;
     if ("symbol" === typeof Symbol.iterator) {
       function _typeof(arg0) {
         return typeof arg0;
@@ -42,16 +44,16 @@ function _defineProperties(arg0, arg1) {
   }
 }
 function _setPrototypeOf(arg0, arg1) {
-  const tmp = Object.setPrototypeOf || function _setPrototypeOf(arg0, arg1) {
+  const tmp = Object.setPrototypeOf || (function _setPrototypeOf(arg0, arg1) {
     arg0.__proto__ = arg1;
     return arg0;
-  };
+  });
   const _setPrototypeOf = tmp;
   return tmp(arg0, arg1);
 }
 function _createSuper(arg0) {
-  const require = arg0;
-  let closure_1 = function _isNativeReflectConstruct() {
+  let closure_0 = arg0;
+  let closure_1 = (function _isNativeReflectConstruct() {
     if ("undefined" !== typeof Reflect) {
       const _Reflect3 = Reflect;
       if (Reflect.construct) {
@@ -75,22 +77,22 @@ function _createSuper(arg0) {
       }
     }
     return false;
-  }();
+  })();
   return function _createSuperInternal() {
     const self = this;
-    const obj = callback3(arg0);
+    const obj = outer1_8(closure_0);
     if (closure_1) {
       const _Reflect = Reflect;
-      let constructResult = Reflect.construct(obj, arguments, callback3(self).constructor);
+      let constructResult = Reflect.construct(obj, arguments, outer1_8(self).constructor);
     } else {
       constructResult = obj(...arguments);
     }
     if (!constructResult) {
-      callback2(self);
+      outer1_7(self);
       let tmp8 = self;
     } else {
       tmp8 = constructResult;
-      if ("object" !== callback(constructResult)) {
+      if ("object" !== outer1_3(constructResult)) {
         tmp8 = constructResult;
       }
     }
@@ -108,7 +110,7 @@ function _assertThisInitialized(arg0) {
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
-    const _Object = Object;
+    let _Object = Object;
     let _getPrototypeOf = Object.getPrototypeOf;
   } else {
     _getPrototypeOf = function _getPrototypeOf(arg0) {
@@ -125,25 +127,25 @@ function _getPrototypeOf(arg0) {
 function _defineProperty(arg0, arg1, value) {
   if (arg1 in arg0) {
     const _Object = Object;
-    const obj = { value };
+    const obj = { value, enumerable: true, configurable: true, writable: true };
     Object.defineProperty(arg0, arg1, obj);
   } else {
     arg0[arg1] = value;
   }
   return arg0;
 }
-const _module = require(dependencyMap[0]);
-if (!_module) {
-  const obj = { default: _module };
+if (!setUTCDay) {
+  let obj = { default: setUTCDay };
   let tmp3 = obj;
 } else {
-  tmp3 = _module;
+  tmp3 = setUTCDay;
 }
+let closure_2 = tmp3;
 
-export const ISODayParser = (Parser) => {
-  class ISODayParser {
+export const LocalDayParser = ((Parser) => {
+  class LocalDayParser {
     constructor() {
-      if (this instanceof ISODayParser) {
+      if (this instanceof LocalDayParser) {
         length = arguments.length;
         _Array = Array;
         prototype2 = Array.prototype;
@@ -155,21 +157,21 @@ export const ISODayParser = (Parser) => {
         for (let num = 0; num < length; num = num + 1) {
           array[num] = arguments[num];
         }
-        tmp11 = closure_9;
-        tmp12 = closure_7;
+        tmp11 = outer1_9;
+        tmp12 = outer1_7;
         tmp13 = TypeError;
         call = TypeError.call;
         tmp14 = TypeError;
         items = [];
         items[0] = tmp;
         applyResult = call.apply(TypeError, items.concat(array));
-        tmp16 = closure_7(applyResult);
+        tmp16 = outer1_7(applyResult);
         str2 = "priority";
         num2 = 90;
-        tmp17 = closure_9(applyResult, "priority", 90);
-        tmp18 = closure_7(applyResult);
+        tmp17 = outer1_9(applyResult, "priority", 90);
+        tmp18 = outer1_7(applyResult);
         str3 = "incompatibleTokens";
-        tmp19 = closure_9(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
+        tmp19 = outer1_9(applyResult, "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "E", "i", "c", "t", "T"]);
         return applyResult;
       } else {
         _TypeError = TypeError;
@@ -183,11 +185,10 @@ export const ISODayParser = (Parser) => {
       }
     }
   }
-  const dependencyMap = ISODayParser;
   if ("function" !== typeof Parser) {
-    class ISODayParser {
+    class LocalDayParser {
       constructor() {
-        if (this instanceof ISODayParser) {
+        if (this instanceof LocalDayParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -199,21 +200,21 @@ export const ISODayParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_9;
-          tmp12 = closure_7;
+          tmp11 = outer1_9;
+          tmp12 = outer1_7;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_7(applyResult);
+          tmp16 = outer1_7(applyResult);
           str2 = "priority";
           num2 = 90;
-          tmp17 = closure_9(applyResult, "priority", 90);
-          tmp18 = closure_7(applyResult);
+          tmp17 = outer1_9(applyResult, "priority", 90);
+          tmp18 = outer1_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_9(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
+          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "E", "i", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -232,12 +233,12 @@ export const ISODayParser = (Parser) => {
   if (Parser) {
     prototype = Parser.prototype;
   }
-  let obj = { "": null, children: null, "": null, value: ISODayParser };
-  ISODayParser.prototype = Object.create(prototype, { constructor: obj });
+  let obj = { value: LocalDayParser, writable: true, configurable: true };
+  LocalDayParser.prototype = Object.create(prototype, { constructor: obj });
   if (Parser) {
-    class ISODayParser {
+    class LocalDayParser {
       constructor() {
-        if (this instanceof ISODayParser) {
+        if (this instanceof LocalDayParser) {
           length = arguments.length;
           _Array = Array;
           prototype2 = Array.prototype;
@@ -249,21 +250,21 @@ export const ISODayParser = (Parser) => {
           for (let num = 0; num < length; num = num + 1) {
             array[num] = arguments[num];
           }
-          tmp11 = closure_9;
-          tmp12 = closure_7;
+          tmp11 = outer1_9;
+          tmp12 = outer1_7;
           tmp13 = TypeError;
           call = TypeError.call;
           tmp14 = TypeError;
           items = [];
           items[0] = tmp;
           applyResult = call.apply(TypeError, items.concat(array));
-          tmp16 = closure_7(applyResult);
+          tmp16 = outer1_7(applyResult);
           str2 = "priority";
           num2 = 90;
-          tmp17 = closure_9(applyResult, "priority", 90);
-          tmp18 = closure_7(applyResult);
+          tmp17 = outer1_9(applyResult, "priority", 90);
+          tmp18 = outer1_7(applyResult);
           str3 = "incompatibleTokens";
-          tmp19 = closure_9(applyResult, "incompatibleTokens", [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]);
+          tmp19 = outer1_9(applyResult, "incompatibleTokens", ["y", "R", "u", "q", "Q", "M", "L", "I", "d", "D", "E", "i", "c", "t", "T"]);
           return applyResult;
         } else {
           _TypeError = TypeError;
@@ -277,45 +278,42 @@ export const ISODayParser = (Parser) => {
         }
       }
     }
-    _setPrototypeOf(ISODayParser, Parser);
+    _setPrototypeOf(LocalDayParser, Parser);
   }
-  let closure_0 = _createSuper(ISODayParser);
+  let closure_0 = _createSuper(LocalDayParser);
   obj = {
     key: "parse",
     value: function parse(arg0, arg1, ordinalNumber) {
+      const callback = arg3;
       function valueCallback(arg0) {
-        let num = 7;
-        if (0 !== arg0) {
-          num = arg0;
-        }
-        return num;
+        return (arg0 + weekStartsOn.weekStartsOn + 6) % 7 + 7 * Math.floor((arg0 - 1) / 7);
       }
-      if ("i" !== arg1) {
-        if ("ii" !== arg1) {
-          if ("io" === arg1) {
+      if ("e" !== arg1) {
+        if ("ee" !== arg1) {
+          if ("eo" === arg1) {
             const obj = { unit: "day" };
-            return ordinalNumber.ordinalNumber(arg0, obj);
-          } else if ("iii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}), valueCallback);
-          } else if ("iiiii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}), valueCallback);
-          } else if ("iiiiii" === arg1) {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}), valueCallback);
+            return callback(LocalDayParser[1]).mapValue(ordinalNumber.ordinalNumber(arg0, obj), valueCallback);
+          } else if ("eee" === arg1) {
+            return ordinalNumber.day(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.day(arg0, { width: "short", context: "formatting" }) || ordinalNumber.day(arg0, { width: "narrow", context: "formatting" });
+          } else if ("eeeee" === arg1) {
+            return ordinalNumber.day(arg0, { width: "narrow", context: "formatting" });
+          } else if ("eeeeee" === arg1) {
+            return ordinalNumber.day(arg0, { width: "short", context: "formatting" }) || ordinalNumber.day(arg0, { width: "narrow", context: "formatting" });
           } else {
-            return callback(ISODayParser[1]).mapValue(ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}) || ordinalNumber.day(arg0, {}), valueCallback);
+            return ordinalNumber.day(arg0, { width: "wide", context: "formatting" }) || ordinalNumber.day(arg0, { width: "abbreviated", context: "formatting" }) || ordinalNumber.day(arg0, { width: "short", context: "formatting" }) || ordinalNumber.day(arg0, { width: "narrow", context: "formatting" });
           }
         }
       }
-      return callback(ISODayParser[1]).parseNDigits(arg1.length, arg0);
+      return callback(LocalDayParser[1]).mapValue(callback(LocalDayParser[1]).parseNDigits(arg1.length, arg0), valueCallback);
     }
   };
-  const items = [obj, , ];
+  let items = [obj, , ];
   obj = {
     key: "validate",
     value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 1;
+      let tmp = arg1 >= 0;
       if (tmp) {
-        tmp = arg1 <= 7;
+        tmp = arg1 <= 6;
       }
       return tmp;
     }
@@ -323,12 +321,12 @@ export const ISODayParser = (Parser) => {
   items[1] = obj;
   items[2] = {
     key: "set",
-    value: function set(defaultResult1, arg1, defaultResult2) {
-      const defaultResult = closure_2.default(defaultResult1, defaultResult2);
+    value: function set(defaultResult1, arg1, defaultResult2, date) {
+      const defaultResult = outer1_2.default(defaultResult1, defaultResult2, date);
       defaultResult.setUTCHours(0, 0, 0, 0);
       return defaultResult;
     }
   };
-  _defineProperties(ISODayParser.prototype, items);
-  return ISODayParser;
-}(require(dependencyMap[2]).Parser);
+  _defineProperties(LocalDayParser.prototype, items);
+  return LocalDayParser;
+})(require("_defineProperties").Parser);

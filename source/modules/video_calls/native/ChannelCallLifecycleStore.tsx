@@ -1,9 +1,17 @@
-// Module ID: 10529
-// Function ID: 82273
+// Module ID: 10539
+// Function ID: 82323
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1906, 10211, 8303, 636, 566, 686, 2]
 
-// Module 10529 (_isNativeReflectConstruct)
+// Module 10539 (_isNativeReflectConstruct)
+import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
+import handleOrientationChange from "handleOrientationChange";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { VoiceCallOverlayType } from "BOX_MODE_ACTIONSHEET_WIDTH";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,36 +21,29 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const VoiceCallOverlayType = arg1(dependencyMap[6]).VoiceCallOverlayType;
-let closure_9 = false;
-let closure_10 = false;
-let closure_11 = false;
-let closure_12 = false;
+let c9 = false;
+let c10 = false;
+let c11 = false;
+let c12 = false;
 let obj = {};
-obj = { x: undefined, y: undefined, width: undefined, height: undefined, screenOrientation: arg1(dependencyMap[7]).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: false, isVisible: false };
+obj = { x: undefined, y: undefined, width: undefined, height: undefined, screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: false, isVisible: false };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = obj;
-obj = { x: undefined, y: undefined, width: undefined, height: undefined, screenOrientation: arg1(dependencyMap[7]).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: false, isVisible: false };
+obj = { x: undefined, y: undefined, width: undefined, height: undefined, screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: false, isVisible: false };
 obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = obj;
-let closure_15 = true;
-let tmp2 = (Store) => {
+let c15 = true;
+let tmp2 = ((Store) => {
   class ChannelCallLifecycleStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ChannelCallLifecycleStore);
-      obj = closure_5(ChannelCallLifecycleStore);
-      tmp2 = closure_4;
-      if (closure_16()) {
+      tmp = outer1_2(this, ChannelCallLifecycleStore);
+      obj = outer1_5(ChannelCallLifecycleStore);
+      tmp2 = outer1_4;
+      if (outer1_16()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -51,41 +52,40 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = ChannelCallLifecycleStore;
   callback2(ChannelCallLifecycleStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
     }
   };
   const items = [obj, , , , , , , ];
   obj = {
     key: "shouldReactToSeriousThermalStateWhenActivityFocused",
     value() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[1] = obj;
   obj = {
     key: "consumedRequestToRespondToSeriousThermalState",
     value() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "disregardSeriousThermalState",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[4] = {
     key: "isReactingToThermalState",
     value() {
-      let tmp = closure_10;
-      if (closure_10) {
-        tmp = !closure_11;
+      let tmp = outer1_10;
+      if (outer1_10) {
+        tmp = !outer1_11;
       }
       return tmp;
     }
@@ -93,36 +93,36 @@ let tmp2 = (Store) => {
   items[5] = {
     key: "getShowActivitiesDebugOverlay",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[6] = {
     key: "getVoiceCallOverlayLayoutStates",
     value() {
-      return closure_14;
+      return outer1_14;
     }
   };
   items[7] = {
     key: "isPipEnabledWhileFocusedOnActivityOrStream",
     value() {
-      return closure_15;
+      return outer1_15;
     }
   };
   return callback(ChannelCallLifecycleStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "ChannelCallLifecycleStore";
-tmp2 = new tmp2(importDefault(dependencyMap[10]), {
+tmp2 = new tmp2(require("dispatcher"), {
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(arg0) {
     if (arg0 == null) {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      const voiceChannelId = voiceChannelId.getVoiceChannelId();
+      voiceChannelId = voiceChannelId.getVoiceChannelId();
       if (voiceChannelId !== voiceChannelId) {
-        let closure_9 = false;
-        let closure_10 = false;
-        let closure_12 = false;
-        let closure_11 = false;
+        let c9 = false;
+        let c10 = false;
+        let c12 = false;
+        let c11 = false;
         let closure_14 = obj;
       }
     }
@@ -132,7 +132,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      let closure_9 = true;
+      let c9 = true;
     }
   },
   EMBEDDED_ACTIVITY_CONSUME_RESPOND_TO_SERIOUS_THERMAL_STATE_REQUEST: function handleConsumeReactToSeriousThermalStateRequest(arg0) {
@@ -140,7 +140,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      let closure_10 = true;
+      let c10 = true;
     }
   },
   EMBEDDED_ACTIVITY_DISREGARD_SERIOUS_THERMAL_STATE: function handleDisregardSeriousThermalState(arg0) {
@@ -148,7 +148,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      let closure_11 = true;
+      let c11 = true;
     }
   },
   EMBEDDED_ACTIVITY_SET_DEBUG_OVERLAY_VISIBILITY: function handleSetDebugOverlayVisibility(visible) {
@@ -170,7 +170,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      let closure_15 = true;
+      let c15 = true;
     }
   },
   STREAM_WATCH: function handleStreamWatch(arg0) {
@@ -178,10 +178,10 @@ tmp2 = new tmp2(importDefault(dependencyMap[10]), {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      let closure_15 = true;
+      let c15 = true;
     }
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/video_calls/native/ChannelCallLifecycleStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/video_calls/native/ChannelCallLifecycleStore.tsx");
 
 export default tmp2;

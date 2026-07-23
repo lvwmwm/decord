@@ -1,28 +1,28 @@
-// Module ID: 9238
-// Function ID: 72261
+// Module ID: 9245
+// Function ID: 72302
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: []
+// Dependencies: [110, 42, 117, 2]
 
-// Module 9238 (__INTERNAL_VIEW_CONFIG)
+// Module 9245 (__INTERNAL_VIEW_CONFIG)
+import weakSet from "weakSet";
+import get from "get";
+
 let obj = { uiViewClassName: "FastestList", directEventTypes: { topLayout: { registrationName: "onLayout" }, topScroll: { registrationName: "onScroll" }, topScrollBeginDrag: { registrationName: "onScrollBeginDrag" }, topScrollEndDrag: { registrationName: "onScrollEndDrag" }, topVisibleItemsChanged: { registrationName: "onVisibleItemsChanged" }, topUnexpectedItemSize: { registrationName: "onUnexpectedItemSize" } } };
-obj = {};
-const _module = require(dependencyMap[0]);
-const merged = Object.assign(_module.ConditionallyIgnoredEventHandlers({}));
+obj = { insetStart: true, insetEnd: true, horizontal: true, keyboardDismissOnDrag: true, placeholderConfig: true, renderAhead: true, scrollEventThrottle: true, sectionsVersioned: true, showsHorizontalScrollIndicator: true, showsVerticalScrollIndicator: true };
+const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onLayout: true, onScroll: true, onScrollBeginDrag: true, onScrollEndDrag: true, onVisibleItemsChanged: true, onUnexpectedItemSize: true }));
 obj.validAttributes = obj;
-const _module1 = require(dependencyMap[1]);
 obj = {
   scrollToLocation(nodeFromPublicInstance) {
     const items = [arg1, arg2, arg3, arg4];
-    require(dependencyMap[2]).dispatchCommand(nodeFromPublicInstance, "scrollToLocation", items);
+    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "scrollToLocation", items);
   },
   scrollToTop(nodeFromPublicInstance) {
     const items = [arg1];
-    require(dependencyMap[2]).dispatchCommand(nodeFromPublicInstance, "scrollToTop", items);
+    require(117) /* renderElement */.dispatchCommand(nodeFromPublicInstance, "scrollToTop", items);
   }
 };
-const value = _module1.get("FastestList", () => obj);
-const _module2 = require(dependencyMap[3]);
-const result = _module2.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/FastestListNativeComponent.tsx");
+const value = get.get("FastestList", () => obj);
+const result = require("renderElement").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/FastestListNativeComponent.tsx");
 
 export default value;
 export const __INTERNAL_VIEW_CONFIG = obj;

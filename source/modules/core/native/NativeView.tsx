@@ -1,9 +1,9 @@
-// Module ID: 5514
-// Function ID: 46974
-// Dependencies: []
+// Module ID: 5517
+// Function ID: 46997
+// Name: set
+// Dependencies: [2, 115]
 
-// Module 5514
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/core/native/NativeView.tsx");
+// Module 5517 (set)
+const result = require("set").fileFinishedImporting("modules/core/native/NativeView.tsx");
 
-export default importDefault(dependencyMap[1]);
+export { default } from "Commands";

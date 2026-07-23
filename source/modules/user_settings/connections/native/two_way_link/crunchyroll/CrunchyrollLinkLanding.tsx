@@ -1,43 +1,46 @@
-// Module ID: 8984
-// Function ID: 70790
+// Module ID: 8991
+// Function ID: 70831
 // Name: CrunchyrollLinkLanding
-// Dependencies: []
+// Dependencies: [31, 8990, 653, 33, 4130, 1212, 8286, 1456, 8942, 8992, 1920, 2]
 // Exports: default
 
-// Module 8984 (CrunchyrollLinkLanding)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = arg1(dependencyMap[1]).CrunchyrollLinkModalScenes;
-({ HelpdeskArticles: closure_5, PlatformTypes: closure_6 } = arg1(dependencyMap[2]));
-const jsx = arg1(dependencyMap[3]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ image: { "Null": 80, "Null": 80 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkLanding.tsx");
+// Module 8991 (CrunchyrollLinkLanding)
+import result from "result";
+import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ HelpdeskArticles: closure_5, PlatformTypes: closure_6 } = ME);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 234, height: 147 } });
+const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkLanding.tsx");
 
 export default function CrunchyrollLinkLanding() {
-  let obj = arg1(dependencyMap[7]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
-  const items = [navigation];
+  let obj = navigation(1456);
+  navigation = obj.useNavigation();
+  let items = [navigation];
   const memo = React.useMemo(() => {
     const obj = {};
-    const intl = navigation(closure_2[5]).intl;
-    obj.label = intl.string(navigation(closure_2[5]).t.2TXHQd);
-    obj.icon = navigation(closure_2[6]).PlayIcon;
+    const intl = navigation(outer1_2[5]).intl;
+    obj.label = intl.string(navigation(outer1_2[5]).t["2TXHQd"]);
+    obj.icon = navigation(outer1_2[6]).PlayIcon;
     const items = [obj];
     return items;
   }, []);
   const callback = React.useCallback(() => {
-    navigation.push(constants.PRE_CONNECT);
+    navigation.push(outer1_4.PRE_CONNECT);
   }, items);
-  obj = { platformType: constants2.CRUNCHYROLL, img: importDefault(dependencyMap[9]), imgStyle: callback().image };
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.headerConnect = intl.string(arg1(dependencyMap[5]).t.Da+3NJ);
-  const intl2 = arg1(dependencyMap[5]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[5]).t.MaPpPL);
+  obj = { platformType: constants2.CRUNCHYROLL, img: importDefault(8992), imgStyle: callback().image };
+  let intl = navigation(1212).intl;
+  obj.headerConnect = intl.string(navigation(1212).t["Da+3NJ"]);
+  const intl2 = navigation(1212).intl;
+  obj.body = intl2.string(navigation(1212).t.MaPpPL);
   const tmp = callback();
-  obj.learnMoreLink = importDefault(dependencyMap[10]).getArticleURL(constants.CRUNCHYROLL_CONNECTION);
+  obj.learnMoreLink = importDefault(1920).getArticleURL(constants.CRUNCHYROLL_CONNECTION);
   obj.onNext = callback;
   obj.valueProps = memo;
-  return jsx(arg1(dependencyMap[8]).TwoWayLinkLanding, obj);
+  return jsx(navigation(8942).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: importDefault(8992), imgStyle: callback().image });
 };

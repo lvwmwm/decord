@@ -1,10 +1,12 @@
 // Module ID: 262
 // Function ID: 3363
 // Name: get Version
-// Dependencies: []
+// Dependencies: [263]
 
 // Module 262 (get Version)
-const obj = { "Null": null, "Null": null };
+const module = arg2;
+const dependencyMap = arg6;
+let obj = { __constants: null, OS: "android" };
 Object.defineProperty(obj, "Version", {
   get: function() {
     return this.constants.Version;
@@ -15,8 +17,8 @@ Object.defineProperty(obj, "constants", {
   get: function() {
     const self = this;
     if (null == this.__constants) {
-      self.__constants = arg2(arg6[0]).getConstants();
-      const obj = arg2(arg6[0]);
+      self.__constants = module(263).getConstants();
+      const obj = module(263);
     }
     return self.__constants;
   },

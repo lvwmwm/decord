@@ -1,12 +1,13 @@
-// Module ID: 4059
-// Function ID: 33827
+// Module ID: 4061
+// Function ID: 33836
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 
-// Module 4059 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const apexExperiment = _module.createApexExperiment({ defaultConfig: { ix: true, y: false, isArray: false }, variations: { [0]: {}, [1]: {}, [2]: {}, [3]: {} } });
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeApexShadowExperiment.tsx");
+// Module 4061 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "guild", name: "2026-06-server-theme-apex-shadow", defaultConfig: { enabled: false, inExperiment: false, gatesApex: false }, variations: { [0]: { enabled: false, inExperiment: true, gatesApex: false }, [1]: { enabled: true, inExperiment: true, gatesApex: false }, [2]: { enabled: false, inExperiment: true, gatesApex: true }, [3]: { enabled: true, inExperiment: true, gatesApex: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeApexShadowExperiment.tsx");
 
 export const ServerThemeApexShadowExperiment = apexExperiment;

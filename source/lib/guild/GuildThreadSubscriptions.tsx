@@ -1,52 +1,55 @@
-// Module ID: 5660
-// Function ID: 48636
+// Module ID: 5665
+// Function ID: 48663
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 1362, 2]
 
-// Module 5660 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5665 (_createForOfIteratorHelperLoose)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -83,18 +86,15 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+let tmp2 = (() => {
   class GuildThreadSubscriptions {
     constructor(arg0) {
-      tmp = closure_2(this, GuildThreadSubscriptions);
+      tmp = outer1_2(this, GuildThreadSubscriptions);
       this._subscriptions = {};
       this._onChange = arg0;
       return;
     }
   }
-  const importDefault = GuildThreadSubscriptions;
   let obj = {
     key: "reset",
     value() {
@@ -115,9 +115,9 @@ const tmp2 = () => {
       const set = new Set();
       for (const key10011 in this._subscriptions) {
         let tmp2 = key10011;
-        let tmp3 = closure_4;
+        let tmp3 = outer1_4;
         let obj2 = this._subscriptions[key10011];
-        let tmp4 = closure_4(obj2.keys());
+        let tmp4 = outer1_4(obj2.keys());
         let iter2 = tmp4();
         if (iter2.done) {
           continue;
@@ -137,9 +137,9 @@ const tmp2 = () => {
     value(arg0) {
       let tmp = this._subscriptions[arg0];
       if (null == tmp) {
-        const tmp4 = GuildThreadSubscriptions(closure_1[2]);
+        const tmp4 = GuildThreadSubscriptions(outer1_1[2]);
         const prototype = tmp4.prototype;
-        tmp = new tmp4({ "Null": "100%", "Null": 16 });
+        tmp = new tmp4({ max: 3, updateAgeOnGet: true });
       }
       return tmp;
     }
@@ -150,7 +150,7 @@ const tmp2 = () => {
       const self = this;
       if (_pending in this._subscriptions) {
         const _subscriptions = self._subscriptions;
-        delete r0[r3];
+        delete tmp[tmp2];
         self._onChange(_pending, []);
       }
     }
@@ -174,7 +174,7 @@ const tmp2 = () => {
         self._subscriptions[_pending] = _getResult;
         self._onChange(_pending, _getResult.keys());
         flag = true;
-        const tmp2 = null != arg2 && _getResult.has(arg2);
+        tmp2 = null != arg2 && _getResult.has(arg2);
       }
       return flag;
     }
@@ -198,7 +198,7 @@ const tmp2 = () => {
     }
   };
   return callback(GuildThreadSubscriptions, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("lib/guild/GuildThreadSubscriptions.tsx");
+})();
+let result = require("priv").fileFinishedImporting("lib/guild/GuildThreadSubscriptions.tsx");
 
 export default tmp2;

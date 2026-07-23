@@ -1,46 +1,64 @@
-// Module ID: 15568
-// Function ID: 118771
+// Module ID: 15685
+// Function ID: 120944
 // Name: ExternalPipViewVideoUnavailable
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1348, 1849, 4148, 33, 4130, 689, 10568, 4086, 4126, 1212, 566, 1273, 10575, 3834, 15686, 10585, 15687, 10233, 2]
 
-// Module 15568 (ExternalPipViewVideoUnavailable)
+// Module 15685 (ExternalPipViewVideoUnavailable)
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { ParticipantTypes } from "ParticipantTypes";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
 let StyleSheet;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function ExternalPipViewVideoUnavailable(wasStream) {
   wasStream = wasStream.wasStream;
   const tmp = callback2();
   let obj = { style: tmp.unavailable };
   if (wasStream) {
     obj = { style: tmp.unavaiableImage };
-    let tmp4Result = tmp4(tmp5(tmp6[9]).StreamEnded, obj);
+    let tmp4Result = tmp4(tmp5(10568).StreamEnded, obj);
   } else {
-    tmp4Result = tmp4(tmp5(tmp6[10]).CircleInformationIcon, {});
+    tmp4Result = tmp4(tmp5(4086).CircleInformationIcon, {});
   }
   const items = [tmp4Result, ];
-  obj = { guild_id: 19066945, exports: 32989440, body: 2674, style: tmp.unavailableText };
-  const intl = arg1(dependencyMap[12]).intl;
+  obj = { variant: "text-md/semibold", style: tmp.unavailableText, lineClamp: 1 };
+  const intl = require(1212) /* getSystemLocale */.intl;
   if (wasStream) {
-    let result = intl.formatToMarkdownString(tmp9(tmp10[12]).t.1Ww0Hi, {});
+    let result = intl.formatToMarkdownString(tmp9(1212).t["1Ww0Hi"], {});
   } else {
-    result = intl.string(tmp9(tmp10[12]).t.Nzo5nz);
+    result = intl.string(tmp9(1212).t.Nzo5nz);
   }
   obj.children = result;
-  items[1] = closure_11(arg1(dependencyMap[11]).Text, obj);
+  items[1] = closure_11(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return closure_12(closure_6, obj);
 }
 function ExternalPipViewVideoUser(arg0) {
+  let importDefault;
+  let require;
   let speaking;
-  ({ userId: closure_0, channelId: closure_1, speaking } = arg0);
-  let obj = arg1(dependencyMap[13]);
+  ({ userId: require, channelId: importDefault, speaking } = arg0);
+  let obj = require(566) /* initialize */;
   const items = [closure_9];
-  const stateFromStores = obj.useStateFromStores(items, () => user.getUser(closure_0));
-  arg1(dependencyMap[13]);
-  [][0] = closure_8;
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getUser(closure_0));
+  require(566) /* initialize */;
+  [][0] = _isNativeReflectConstruct;
   obj = { style: callback2().user };
   let tmp7 = null;
   if (null != stateFromStores) {
-    obj = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: tmp4, size: arg1(dependencyMap[14]).AvatarSizes.XXLARGE, animate: speaking, speaking };
-    tmp7 = callback(arg1(dependencyMap[14]).Avatar, obj);
+    obj = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: tmp4, size: require(1273) /* Button */.AvatarSizes.XXLARGE, animate: speaking, speaking };
+    tmp7 = callback(require(1273) /* Button */.Avatar, obj);
   }
   obj.children = tmp7;
   return callback(closure_6, obj);
@@ -49,27 +67,27 @@ function ExternalPipViewVideoStream(streamId) {
   let streamReadLongTime;
   let streamReadyCallback;
   streamId = streamId.streamId;
-  const arg1 = streamId;
-  let obj = arg1(dependencyMap[15]);
+  let obj = streamId(10575);
   const surfaceDirectRendererExperiment = obj.useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
-  const tmp2 = function useStreamReady(streamId) {
+  const tmp2 = (function useStreamReady(streamId) {
+    let closure_0 = streamId;
     let num;
     num = 300;
-    let streamReady = num;
-    let value;
-    let React;
-    const tmp = value(React.useState(undefined), 2);
+    let streamReady;
+    let _slicedToArray;
+    let closure_4;
+    const tmp = value(outer1_4.useState(undefined), 2);
     streamReady = tmp[0];
-    value = tmp[1];
-    const streamReadLongTime = value(React.useState(false), 2);
-    React = streamReadLongTime[1];
+    _slicedToArray = tmp[1];
+    const streamReadLongTime = value(outer1_4.useState(false), 2);
+    closure_4 = streamReadLongTime[1];
     const items = [streamId];
     const items1 = [streamReady, num];
-    const effect = React.useEffect(() => {
+    const effect = outer1_4.useEffect(() => {
       if (null == streamReady) {
         const _setTimeout = setTimeout;
         const timeout = setTimeout(() => {
-          callback(true);
+          outer1_4(true);
         }, num);
         return () => {
           clearTimeout(closure_0);
@@ -78,14 +96,13 @@ function ExternalPipViewVideoStream(streamId) {
         callback2(false);
       }
     }, items1);
-    return { streamReady, streamReadLongTime: streamReadLongTime[0], streamReadyCallback: React.useCallback(() => callback(arg0), items) };
-  }(streamId);
-  const streamReady = tmp2.streamReady;
-  const importDefault = streamReady;
+    return { streamReady, streamReadLongTime: streamReadLongTime[0], streamReadyCallback: outer1_4.useCallback(() => callback(closure_0), items) };
+  })(streamId);
+  let streamReady = tmp2.streamReady;
   ({ streamReadLongTime, streamReadyCallback } = tmp2);
   const tmp3 = callback2();
   const dependencyMap = tmp3;
-  const items = [tmp3, streamReady];
+  let items = [tmp3, streamReady];
   const memo = importAllResult.useMemo(() => {
     const items = [tmp3.video, ];
     const obj = {};
@@ -97,11 +114,10 @@ function ExternalPipViewVideoStream(streamId) {
     items[1] = obj;
     return items;
   }, items);
-  let obj1 = arg1(dependencyMap[16]);
-  const token = obj1.useToken(importDefault(dependencyMap[8]).colors.TEXT_FEEDBACK_INFO);
+  let obj1 = streamId(3834);
+  const token = obj1.useToken(streamReady(689).colors.TEXT_FEEDBACK_INFO);
   const value = closure_7.get();
-  let closure_3 = value;
-  const items1 = [streamId, value];
+  let items1 = [streamId, value];
   obj = {};
   const callback = importAllResult.useCallback((nativeEvent) => {
     let height;
@@ -109,11 +125,11 @@ function ExternalPipViewVideoStream(streamId) {
     if (null != streamId) {
       ({ width, height } = nativeEvent.nativeEvent.layout);
       let obj = streamId(tmp3[17]);
-      obj = { width: width * value, height: height * value };
+      obj = { width: width * _slicedToArray, height: height * _slicedToArray };
       obj.updateVideoSize(streamId, obj, 1);
     }
   }, items1);
-  const items2 = [callback(importDefault(dependencyMap[18]), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
+  const items2 = [callback(streamReady(10585), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: streamReadyCallback, onLayout: callback }), ];
   let tmp10 = null;
   if (null == streamReady) {
     tmp10 = null;
@@ -128,27 +144,20 @@ function ExternalPipViewVideoStream(streamId) {
   obj.children = items2;
   return closure_12(closure_13, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ ActivityIndicator: closure_5, StyleSheet, View: closure_6, PixelRatio: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-const ParticipantTypes = arg1(dependencyMap[5]).ParticipantTypes;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[6]));
-let obj1 = arg1(dependencyMap[7]);
+({ ActivityIndicator: closure_5, StyleSheet, View: closure_6, PixelRatio: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
 let obj = {};
 obj = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj["backgroundColor"] = importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH;
+obj["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH;
 obj.container = obj;
-obj1 = {};
+_createForOfIteratorHelperLoose = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj.video = obj1;
+obj.video = _createForOfIteratorHelperLoose;
 const obj2 = {};
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
-obj2["margin"] = importDefault(dependencyMap[8]).space.PX_16;
-obj2["borderRadius"] = importDefault(dependencyMap[8]).radii.sm;
+obj2["margin"] = require("_createForOfIteratorHelperLoose").space.PX_16;
+obj2["borderRadius"] = require("_createForOfIteratorHelperLoose").radii.sm;
 obj2["justifyContent"] = "center";
 obj2["alignContent"] = "center";
 obj2["flexDirection"] = "row";
@@ -156,36 +165,35 @@ obj2["alignItems"] = "center";
 obj2["flexWrap"] = "wrap";
 obj2["flex"] = 1;
 obj.videoUnavailableWrap = obj2;
-const tmp3 = arg1(dependencyMap[6]);
-obj.videoUnavailableSpinner = { marginTop: importDefault(dependencyMap[8]).space.PX_16 };
-const obj3 = { marginTop: importDefault(dependencyMap[8]).space.PX_16 };
-obj.unavailable = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm, padding: importDefault(dependencyMap[8]).space.PX_8, margin: importDefault(dependencyMap[8]).space.PX_8, justifyContent: "center", alignContent: "center", alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
-const obj4 = { backgroundColor: importDefault(dependencyMap[8]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[8]).radii.sm, padding: importDefault(dependencyMap[8]).space.PX_8, margin: importDefault(dependencyMap[8]).space.PX_8, justifyContent: "center", alignContent: "center", alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
-obj.unavailableText = { marginLeft: importDefault(dependencyMap[8]).space.PX_4, textAlign: "center" };
-const obj6 = { 979471010: 3142458405845922000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, 1661208145: 6322197226688.002, 1403737659: 0.000000000000000000000000000000000008651649628586183, 1927661827: 3770953570047519000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginBottom: importDefault(dependencyMap[8]).space.PX_8 };
+obj.videoUnavailableSpinner = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const obj3 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
+obj.unavailable = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: require("_createForOfIteratorHelperLoose").space.PX_8, margin: require("_createForOfIteratorHelperLoose").space.PX_8, justifyContent: "center", alignContent: "center", alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
+const obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, padding: require("_createForOfIteratorHelperLoose").space.PX_8, margin: require("_createForOfIteratorHelperLoose").space.PX_8, justifyContent: "center", alignContent: "center", alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
+obj.unavailableText = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4, textAlign: "center" };
+const obj6 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8, resizeMode: "contain", aspectRatio: 2.5, width: "80%" };
 obj.unavaiableImage = obj6;
 const obj7 = {};
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
-obj7["backgroundColor"] = importDefault(dependencyMap[8]).colors.BACKGROUND_BASE_LOWEST;
-obj7["borderRadius"] = importDefault(dependencyMap[8]).radii.sm;
-obj7["margin"] = importDefault(dependencyMap[8]).space.PX_8;
+obj7["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST;
+obj7["borderRadius"] = require("_createForOfIteratorHelperLoose").radii.sm;
+obj7["margin"] = require("_createForOfIteratorHelperLoose").space.PX_8;
 obj7["alignItems"] = "center";
 obj7["justifyContent"] = "center";
 obj.user = obj7;
-let closure_14 = obj1.createStyles(obj);
-const obj5 = { marginLeft: importDefault(dependencyMap[8]).space.PX_4, textAlign: "center" };
+let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj);
+const obj5 = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_4, textAlign: "center" };
 const memoResult = importAllResult.memo(function ExternalPipViewVideo(onLayout) {
   let channelId;
   let focusedParticipantType;
   let selectedParticipantSpeaking;
   let selectedParticipantStreamId;
   let selectedParticipantUserId;
-  const tmp2 = importDefault(dependencyMap[19])();
+  const tmp2 = importDefault(15687)();
   ({ selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType } = tmp2);
   const items = [selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType];
   ({ channelId, selectedParticipantSpeaking } = tmp2);
   const effect = importAllResult.useEffect(() => {
-    callback(closure_2[20]).refreshPipUi();
+    outer1_1(outer1_2[20]).refreshPipUi();
   }, items);
   let obj = { style: callback2().container, onLayout: onLayout.onLayout };
   if (null != selectedParticipantStreamId) {
@@ -208,6 +216,6 @@ const memoResult = importAllResult.memo(function ExternalPipViewVideo(onLayout) 
   obj.children = tmp6Result;
   return callback(closure_6, obj);
 });
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/external_pip/ExternalPipViewVideo.android.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/external_pip/ExternalPipViewVideo.android.tsx");
 
 export default memoResult;

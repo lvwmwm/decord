@@ -1,16 +1,17 @@
-// Module ID: 10232
-// Function ID: 79062
+// Module ID: 10244
+// Function ID: 79134
 // Name: playInAppMessageSound
-// Dependencies: [0, 0, 0, 0, 0, 0]
+// Dependencies: [10220, 10245, 653, 1553, 10246, 2]
 // Exports: playInAppMessageSound
 
-// Module 10232 (playInAppMessageSound)
-import __exportStarResult1 from "__exportStarResult1";
-import { isInAppMessageSoundsEnabled as closure_3 } from "__exportStarResult1";
-import { InAppNotificationTypes } from "__exportStarResult1";
+// Module 10244 (playInAppMessageSound)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { isInAppMessageSoundsEnabled as closure_3 } from "isInAppMessageSoundsEnabled";
+import { InAppNotificationTypes } from "ME";
 
-let closure_5 = 0;
-const result = require("__exportStarResult1").fileFinishedImporting("modules/notifications/native/playInAppMessageSound.tsx");
+const require = arg1;
+let c5 = 0;
+const result = require("ME").fileFinishedImporting("modules/notifications/native/playInAppMessageSound.tsx");
 
 export const playInAppMessageSound = function playInAppMessageSound(notification) {
   if (notification.type === InAppNotificationTypes.MESSAGE) {
@@ -19,14 +20,13 @@ export const playInAppMessageSound = function playInAppMessageSound(notification
         if (!soundDisabled.isSoundDisabled("message1")) {
           const _Date = Date;
           const timestamp = Date.now();
-          if (timestamp - closure_5 >= 1000) {
-            closure_5 = timestamp;
-            arg1(dependencyMap[4]).playSound("message1", 0.4);
-            const obj = arg1(dependencyMap[4]);
+          if (timestamp - timestamp >= 1000) {
+            require(10246) /* createSound */.playSound("message1", 0.4);
+            const obj = require(10246) /* createSound */;
           }
         }
       }
     }
-    const obj2 = arg1(dependencyMap[3]);
+    obj2 = require(1553) /* isMetaQuest */;
   }
 };

@@ -1,18 +1,27 @@
-// Module ID: 8212
-// Function ID: 64913
+// Module ID: 8218
+// Function ID: 64950
 // Name: usePreloadProfileEffect
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 6651, 33, 4130, 1450, 8219, 8220, 8221, 8223, 566, 668, 8224, 8222, 5085, 8225, 2]
 // Exports: default
 
-// Module 8212 (usePreloadProfileEffect)
+// Module 8218 (usePreloadProfileEffect)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+const require = arg1;
 function usePreloadProfileEffect(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const items = [arg0];
-  const memo = React.useMemo(() => new Set(arg0.map((src) => src.src)), items);
-  const importDefault = memo;
+  const memo = React.useMemo(() => new Set(closure_0.map((src) => src.src)), items);
   let closure_2 = React.useRef(memo);
   const ref = React.useRef(false);
-  let closure_3 = ref;
   const items1 = [memo];
   const effect = React.useEffect(() => {
     closure_2.current = memo;
@@ -35,7 +44,7 @@ function useProfileDimensions() {
   const tmp = callback(React.useState(0), 2);
   let closure_0 = tmp[1];
   return {
-    height: importDefault(dependencyMap[7])().height,
+    height: importDefault(1450)().height,
     width: tmp[0],
     onLayout: React.useCallback((nativeEvent) => {
       callback(nativeEvent.nativeEvent.layout.width);
@@ -50,34 +59,30 @@ function StaticEffect(useThumbnail) {
     bannerAdjustment = 0;
   }
   useThumbnail = useThumbnail.useThumbnail;
-  const arg1 = useThumbnail;
   const thumbnailUrlOverride = useThumbnail.thumbnailUrlOverride;
-  let importDefault;
-  let dependencyMap;
+  let reducedMotionSrc;
+  let width;
   let callback;
-  let React;
+  let thumbnailPreviewSrc;
   const tmp = callback2();
-  let reducedMotionSrc = profileEffect.reducedMotionSrc;
-  importDefault = reducedMotionSrc;
-  let thumbnailPreviewSrc = profileEffect.thumbnailPreviewSrc;
+  reducedMotionSrc = profileEffect.reducedMotionSrc;
+  thumbnailPreviewSrc = profileEffect.thumbnailPreviewSrc;
   const tmp2 = useProfileDimensions();
-  const width = tmp2.width;
-  dependencyMap = width;
+  width = tmp2.width;
   const onLayout = tmp2.onLayout;
-  const tmp3 = callback(React.useState(0), 2);
+  const tmp3 = callback(thumbnailPreviewSrc.useState(0), 2);
   const first = tmp3[0];
   callback = tmp3[1];
   if (null != thumbnailUrlOverride) {
     thumbnailPreviewSrc = thumbnailUrlOverride;
   }
-  React = thumbnailPreviewSrc;
   const items = [reducedMotionSrc, thumbnailPreviewSrc, width, useThumbnail];
-  const effect = React.useEffect(() => {
+  const effect = thumbnailPreviewSrc.useEffect(() => {
     if (0 !== width) {
-      const size = size.getSize(useThumbnail ? thumbnailPreviewSrc : reducedMotionSrc, (arg0, arg1) => {
-        callback2(arg1 * (closure_2 / arg0));
+      const size = outer1_6.getSize(useThumbnail ? thumbnailPreviewSrc : reducedMotionSrc, (arg0, arg1) => {
+        outer1_3(arg1 * (outer1_2 / arg0));
       }, () => {
-        callback2(closure_2 / callback(closure_2[15]).DEFAULT_PROFILE_EFFECT_WH_RATIO);
+        outer1_3(outer1_2 / useThumbnail(width[15]).DEFAULT_PROFILE_EFFECT_WH_RATIO);
       });
     }
   }, items);
@@ -85,7 +90,7 @@ function StaticEffect(useThumbnail) {
     let obj = { style: tmp.profileEffects, pointerEvents: "none", onLayout };
   } else {
     obj = { style: tmp.profileEffects, pointerEvents: "none", onLayout };
-    const obj1 = { flexWrap: true, alignItems: true, marginTop: true };
+    const obj1 = { resizeMode: "cover", resizeMethod: "resize", enableAnimation: true };
     const obj2 = {};
     if (useThumbnail) {
       reducedMotionSrc = thumbnailPreviewSrc;
@@ -99,58 +104,48 @@ function StaticEffect(useThumbnail) {
     obj = { width, height: first, top: 0 - bannerAdjustment };
     items1[1] = obj;
     obj1.style = items1;
-    obj.children = jsx(importDefault(dependencyMap[16]), obj1);
-    const tmp11 = importDefault(dependencyMap[16]);
+    obj.children = jsx(reducedMotionSrc(width[16]), { resizeMode: "cover", resizeMethod: "resize", enableAnimation: true });
+    const tmp11 = reducedMotionSrc(width[16]);
     const tmp8 = jsx;
   }
   return <closure_5 {...obj} />;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const jsx = arg1(dependencyMap[5]).jsx;
-const tmp2 = arg1(dependencyMap[2]);
-let closure_10 = arg1(dependencyMap[6]).createStyles({ profileEffects: { transparent: "text-sm/semibold", animationType: "text-link", visible: "True", onRequestClose: "True", statusBarTranslucent: "true", source: 424, index: 424, key: 100 }, effect: { position: "absolute" } });
+({ View: closure_5, Image: closure_6 } = get_ActivityIndicator);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles({ profileEffects: { position: "absolute", width: "100%", top: 0, bottom: 0, left: 0, right: 0, flex: 1, justifyContent: "flex-start" }, effect: { position: "absolute" } });
 function ProfileEffect(profileEffect) {
   let replayOnNavigationFocus;
   let style;
   profileEffect = profileEffect.profileEffect;
-  const arg1 = profileEffect;
   ({ replayOnNavigationFocus, style } = profileEffect);
-  const importDefault = style;
   const paused = profileEffect.paused;
-  const dependencyMap = paused;
   const tmp = callback2();
   const callback = tmp;
   const tmp2 = useProfileDimensions();
-  const React = tmp2.width;
+  const width = tmp2.width;
   const accessibilityLabel = profileEffect.accessibilityLabel;
-  const items = [profileEffect.effects];
-  const memo = React.useMemo(() => profileEffect(paused[8]).sortEffectLayers(profileEffect.effects), items);
-  const tmp3 = usePreloadProfileEffect(memo);
+  let items = [profileEffect.effects];
+  const memo = width.useMemo(() => profileEffect(paused[8]).sortEffectLayers(profileEffect.effects), items);
+  let tmp3 = usePreloadProfileEffect(memo);
   const loaded = tmp3.loaded;
-  let closure_7 = loaded;
   const onLayerLoaded = tmp3.onLayerLoaded;
-  const jsx = React.useRef(-arg1(dependencyMap[9]).PROFILE_EFFECT_INTRO_DELAY);
-  const tmp4 = callback(React.useState([]), 2);
-  const callback2 = tmp4[0];
+  const jsx = width.useRef(-profileEffect(paused[9]).PROFILE_EFFECT_INTRO_DELAY);
+  const tmp4 = callback(width.useState([]), 2);
+  callback2 = tmp4[0];
   let closure_11 = tmp4[1];
-  const usePreloadProfileEffect = React.useRef([]);
-  const useProfileDimensions = React.useRef(false);
-  let closure_14 = React.useRef(memo);
+  usePreloadProfileEffect = width.useRef([]);
+  useProfileDimensions = width.useRef(false);
+  let closure_14 = width.useRef(memo);
   const items1 = [memo];
-  const effect = React.useEffect(() => {
+  const effect = width.useEffect(() => {
     closure_14.current = memo;
     closure_13.current = false;
     closure_9.current = -profileEffect(paused[9]).PROFILE_EFFECT_INTRO_DELAY;
-    const mapped = memo.map((start) => callback(closure_2[10]).shouldAnimate(start, ref.current));
+    const mapped = memo.map((start) => profileEffect(paused[10]).shouldAnimate(start, outer1_9.current));
     closure_12.current = mapped;
     callback(mapped);
   }, items1);
   const items2 = [loaded];
-  const tmp6Result = importDefault(dependencyMap[11])(React.useCallback((arg0) => {
+  const tmp6Result = style(paused[11])(width.useCallback((arg0) => {
     if (loaded.current) {
       if (!ref3.current) {
         ref3.current = true;
@@ -160,12 +155,11 @@ function ProfileEffect(profileEffect) {
       ref.current = ref.current + arg0;
       const current = ref4.current;
       const current1 = ref2.current;
-      const profileEffect = current1;
       let closure_1 = current.length !== current1.length;
       const mapped = current.map((start) => {
-        const shouldAnimateResult = current1(closure_2[10]).shouldAnimate(start, ref.current);
+        const shouldAnimateResult = profileEffect(paused[10]).shouldAnimate(start, outer1_9.current);
         if (shouldAnimateResult !== current1[arg1]) {
-          let closure_1 = true;
+          let c1 = true;
         }
         return shouldAnimateResult;
       });
@@ -177,12 +171,12 @@ function ProfileEffect(profileEffect) {
   }, items2));
   const stop = tmp6Result.stop;
   const reset = tmp6Result.reset;
-  let obj = arg1(dependencyMap[12]);
+  let obj = profileEffect(paused[12]);
   const items3 = [onLayerLoaded];
   const stateFromStores = obj.useStateFromStores(items3, () => onLayerLoaded.getState());
-  let closure_18 = React.useRef(null);
+  let closure_18 = width.useRef(null);
   const items4 = [stateFromStores, stop, reset];
-  const effect1 = React.useEffect(() => {
+  const effect1 = width.useEffect(() => {
     if (null !== ref5.current) {
       if (ref5.current !== stateFromStores) {
         if (stateFromStores === profileEffect(paused[13]).AppStates.ACTIVE) {
@@ -197,7 +191,7 @@ function ProfileEffect(profileEffect) {
     }
   }, items4);
   const items5 = [paused, stop, reset];
-  const effect2 = React.useEffect(() => {
+  const effect2 = width.useEffect(() => {
     if (paused) {
       stop();
     } else {
@@ -206,7 +200,7 @@ function ProfileEffect(profileEffect) {
   }, items5);
   const items6 = [tmp, style];
   obj = {
-    style: React.useMemo(() => {
+    style: width.useMemo(() => {
       const items = [tmp.profileEffects, style];
       return items;
     }, items6),
@@ -222,19 +216,29 @@ function ProfileEffect(profileEffect) {
       return ref(style(paused[14]), obj, sum);
     })
   };
-  return <accessibilityLabel {...obj} />;
+  return <accessibilityLabel style={width.useMemo(() => {
+    const items = [tmp.profileEffects, style];
+    return items;
+  }, items6)} pointerEvents="none" onLayout={tmp2.onLayout}>{memo.map((layerConfig) => {
+    let tmp3 = null != tmp2;
+    const sum = layerConfig.src + arg1;
+    if (tmp3) {
+      tmp3 = tmp2;
+    }
+    const obj = { layerConfig, animate: tmp3, paused, width, accessibilityLabel, onLoad: onLayerLoaded, loaded: loaded.current };
+    return ref(style(paused[14]), obj, sum);
+  })}</accessibilityLabel>;
 }
-const obj = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffect.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffect.tsx");
 
 export default function WrappedProfileEffect(skuId) {
   let useThumbnail;
   let thumbnailUrlOverride = skuId;
-  let obj = arg1(dependencyMap[12]);
-  const items = [closure_7];
-  const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const tmp = importDefault(dependencyMap[17])(skuId.skuId);
-  useThumbnail = arg1(dependencyMap[8]).usePotentiallyRandomizedProfileEffect(tmp);
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.useReducedMotion);
+  const tmp = importDefault(8225)(skuId.skuId);
+  useThumbnail = require(8219) /* randomizeProfileEffect */.usePotentiallyRandomizedProfileEffect(tmp);
   if (null == useThumbnail) {
     return null;
   } else {
@@ -242,7 +246,7 @@ export default function WrappedProfileEffect(skuId) {
       if (!thumbnailUrlOverride.useThumbnail) {
         obj = { profileEffect: useThumbnail };
         const merged = Object.assign(thumbnailUrlOverride);
-        let tmp8 = <ProfileEffect {...obj} />;
+        let tmp8 = <ProfileEffect profileEffect={useThumbnail} />;
       }
     }
     obj = { profileEffect: useThumbnail };
@@ -250,7 +254,7 @@ export default function WrappedProfileEffect(skuId) {
     obj.useThumbnail = useThumbnail;
     thumbnailUrlOverride = thumbnailUrlOverride.thumbnailUrlOverride;
     obj.thumbnailUrlOverride = thumbnailUrlOverride;
-    tmp8 = <StaticEffect {...obj} />;
+    tmp8 = <StaticEffect profileEffect={useThumbnail} />;
   }
 };
 export { usePreloadProfileEffect };

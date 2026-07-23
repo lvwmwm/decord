@@ -1,16 +1,16 @@
-// Module ID: 10230
-// Function ID: 79059
+// Module ID: 10242
+// Function ID: 79131
 // Name: items
-// Dependencies: []
+// Dependencies: [4042, 2]
 
-// Module 10230 (items)
-const _module = require(dependencyMap[0]);
-let obj = { shapes: null, flex: null, sk: null, defaultConfig: { enabled: false } };
-obj = { displayNameStylesEnabled: null, submitButtonEnabled: null, config: { enabled: true } };
+// Module 10242 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2022-12_mention_raid_limit", label: "Automod Mention Raid Limit", defaultConfig: { enabled: false } };
+obj = { id: 1, label: "Automod Mention Raid Limit", config: { enabled: true } };
 const items = [obj];
 obj.treatments = items;
-const experiment = _module.createExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/guild_automod/AutomodExperiment.tsx");
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/guild_automod/AutomodExperiment.tsx");
 
 export const AutomodMentionRaidLimit = experiment;

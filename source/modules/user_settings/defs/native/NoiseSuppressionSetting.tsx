@@ -1,31 +1,33 @@
-// Module ID: 14031
-// Function ID: 106694
+// Module ID: 14145
+// Function ID: 108850
 // Name: toggle
-// Dependencies: []
+// Dependencies: [4177, 7662, 566, 10723, 10095, 1212, 2]
 
-// Module 14031 (toggle)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[4]);
-obj = {
+// Module 14145 (toggle)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.t8Qhib);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.t8Qhib);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.VOICE,
+  parent: require("MobileSetting").MobileSetting.VOICE,
   useValue: function useNoiseSuppressionSettingValue() {
-    const items = [closure_2];
-    return arg1(dependencyMap[2]).useStateFromStores(items, () => noiseSuppression.getNoiseSuppression());
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getNoiseSuppression());
   },
   onValueChange: function onNoiseSuppressionSettingValueChange(arg0) {
-    const NoiseSuppressionOpt = arg1(dependencyMap[3]).NoiseSuppressionOpt;
-    const result = arg1(dependencyMap[3]).handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
+    const NoiseSuppressionOpt = require(10723) /* getSelectedNoiseSuppressionOption */.NoiseSuppressionOpt;
+    const result = require(10723) /* getSelectedNoiseSuppressionOption */.handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
   },
   usePredicate: function useHasNoiseSuppressionSetting() {
-    const items = [closure_2];
-    return arg1(dependencyMap[2]).useStateFromStores(items, () => !noiseCancellationSupported.isNoiseCancellationSupported());
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => !outer1_2.isNoiseCancellationSupported());
   }
 };
-const toggle = obj.createToggle(obj);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_settings/defs/native/NoiseSuppressionSetting.tsx");
+createToggle = createToggle.createToggle(createToggle);
+let result = require("initialize").fileFinishedImporting("modules/user_settings/defs/native/NoiseSuppressionSetting.tsx");
 
-export default toggle;
+export default createToggle;

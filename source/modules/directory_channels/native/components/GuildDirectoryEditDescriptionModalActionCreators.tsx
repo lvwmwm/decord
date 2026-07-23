@@ -1,16 +1,15 @@
-// Module ID: 10036
-// Function ID: 77562
-// Dependencies: []
+// Module ID: 10044
+// Function ID: 77602
+// Dependencies: [4337, 10045, 1934, 2]
 
-// Module 10036
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEditDescriptionModalActionCreators.tsx");
+// Module 10044
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEditDescriptionModalActionCreators.tsx");
 
 export default {
-  open(closure_2) {
-    importDefault(dependencyMap[0]).pushLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), closure_2, "GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY");
+  open(merged) {
+    importDefault(4337).pushLazy(require(1934) /* maybeLoadBundle */(10045, dependencyMap.paths), merged, "GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY");
   },
   close() {
-    importDefault(dependencyMap[0]).popWithKey("GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY");
+    importDefault(4337).popWithKey("GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY");
   }
 };

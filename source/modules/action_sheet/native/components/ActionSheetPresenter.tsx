@@ -1,9 +1,9 @@
-// Module ID: 15481
-// Function ID: 118077
-// Dependencies: []
+// Module ID: 15598
+// Function ID: 120251
+// Name: ActionSheetPresenter
+// Dependencies: [2, 13046]
 
-// Module 15481
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/action_sheet/native/components/ActionSheetPresenter.tsx");
+// Module 15598 (ActionSheetPresenter)
+const result = require("set").fileFinishedImporting("modules/action_sheet/native/components/ActionSheetPresenter.tsx");
 
-export default require(dependencyMap[1]).ActionSheetPresenter;
+export { ActionSheetPresenter as default } from "ActionSheetPresenter";

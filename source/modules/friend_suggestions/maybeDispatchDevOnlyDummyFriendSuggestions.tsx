@@ -1,12 +1,13 @@
-// Module ID: 6902
-// Function ID: 55017
+// Module ID: 6907
+// Function ID: 55051
 // Name: maybeDispatchDevOnlyDummyFriendSuggestions
-// Dependencies: []
+// Dependencies: [1849, 2]
 // Exports: default
 
-// Module 6902 (maybeDispatchDevOnlyDummyFriendSuggestions)
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/friend_suggestions/maybeDispatchDevOnlyDummyFriendSuggestions.tsx");
+// Module 6907 (maybeDispatchDevOnlyDummyFriendSuggestions)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/friend_suggestions/maybeDispatchDevOnlyDummyFriendSuggestions.tsx");
 
 export default function maybeDispatchDevOnlyDummyFriendSuggestions() {
   let MAX_VALUE = arg0;

@@ -1,17 +1,21 @@
-// Module ID: 12815
-// Function ID: 98152
+// Module ID: 12929
+// Function ID: 100308
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 33, 12924, 8018, 2]
 // Exports: GuildBadgeMoon
 
-// Module 12815 (items)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-let closure_4 = ["<string:1211695106>", "<string:2586968066>", "<string:2576980377>"];
-let closure_5 = [true, true, true];
-const items = [{}, { accessibilityRole: "Array", s: "isArray" }, {}];
-const tmp3 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeMoon.tsx");
+// Module 12929 (items)
+import "result";
+import jsxProd from "jsxProd";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+let closure_4 = ["#816bee", "#b79cf8", "#f0f0f0"];
+let closure_5 = [0.15, 0.45, 0.9];
+let items = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }, { base: 5, tint: 1 }];
+const result = require("getTransformedBadgeColors").fileFinishedImporting("modules/guild_tag/native/badges/GuildBadgeMoon.tsx");
 
 export const GuildBadgeMoon = function GuildBadgeMoon(primaryTintColor) {
   let num = primaryTintColor.width;
@@ -22,10 +26,10 @@ export const GuildBadgeMoon = function GuildBadgeMoon(primaryTintColor) {
   if (num2 === undefined) {
     num2 = 24;
   }
-  let obj = { "Bool(false)": "spring", "Bool(false)": 0.4, "Bool(false)": 1 };
+  let obj = { width: 0, height: 0, primaryTintColor: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(primaryTintColor, obj);
-  let obj1 = arg1(dependencyMap[2]);
+  let obj1 = require(12924) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_4, primaryTintColor: primaryTintColor.primaryTintColor, primaryTintLuminances: closure_5, primaryLuminanceWeights: items };
   const primaryColorsTransformed = obj1.getTransformedBadgeColors(obj).primaryColorsTransformed;
   obj = {};
@@ -35,7 +39,7 @@ export const GuildBadgeMoon = function GuildBadgeMoon(primaryTintColor) {
   obj["viewBox"] = "0 0 16 16";
   obj["fill"] = "none";
   obj1 = { d: "M14 5V3h-1V2h-1V1h-2v1h1v1h1v4h-1v1h-1v1H6V8H5V7H4V3h1V2h1V1H4v1H3v1H2v2H1v6h1v2h1v1h2v1h6v-1h2v-1h1v-2h1V5h-1Z", fill: primaryColorsTransformed[1] };
-  const items = [callback(arg1(dependencyMap[3]).Path, obj1), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": null, "Bool(true)": null }), callback(arg1(dependencyMap[3]).Path, { d: "M10 9H6v1h4V9Z", fill: primaryColorsTransformed[2] }), callback(arg1(dependencyMap[3]).Path, {}), callback(arg1(dependencyMap[3]).Path, { d: "M2 10H1v1h1v-1ZM13 12h-2v1H5v-1H3v-1H2v2h1v1h2v1h6v-1h2v-1h1v-2h-1v1ZM15 10h-1v1h1v-1Z", fill: primaryColorsTransformed[0] }), callback(arg1(dependencyMap[3]).Path, {}), callback(arg1(dependencyMap[3]).Path, { d: "M6 1H4v1h2V1ZM4 2H3v1h1V2ZM3 3H2v1h1V3ZM2 5H1v1h1V5ZM3 6H2v1h1V6ZM5 7H4v1h1V7ZM6 8H5v1h1V8ZM12 7h-1v1h1V7ZM11 1h-1v1h1V1ZM11 8h-1v1h1V8Z", fill: primaryColorsTransformed[2] }), callback(arg1(dependencyMap[3]).Path, { "Bool(true)": null, "Bool(true)": null }), callback(arg1(dependencyMap[3]).Path, { d: "M5 2H4v1h1V2Z", fill: primaryColorsTransformed[1] })];
+  items = [callback(require(8018) /* inlineStyles */.Path, obj1), callback(require(8018) /* inlineStyles */.Path, { d: "M6 0H4v1h2V0ZM2 3H1v2h1V3ZM5 3H4v4h1V3ZM10 8H6v1h4V8Z", fill: "#000" }), callback(require(8018) /* inlineStyles */.Path, { d: "M10 9H6v1h4V9Z", fill: primaryColorsTransformed[2] }), callback(require(8018) /* inlineStyles */.Path, { d: "M1 5H0v6h1V5ZM11 15H5v1h6v-1Z", fill: "#000" }), callback(require(8018) /* inlineStyles */.Path, { d: "M2 10H1v1h1v-1ZM13 12h-2v1H5v-1H3v-1H2v2h1v1h2v1h6v-1h2v-1h1v-2h-1v1ZM15 10h-1v1h1v-1Z", fill: primaryColorsTransformed[0] }), callback(require(8018) /* inlineStyles */.Path, { d: "M4 1H3v1h1V1ZM3 2H2v1h1V2Z", fill: "#000" }), callback(require(8018) /* inlineStyles */.Path, { d: "M6 1H4v1h2V1ZM4 2H3v1h1V2ZM3 3H2v1h1V3ZM2 5H1v1h1V5ZM3 6H2v1h1V6ZM5 7H4v1h1V7ZM6 8H5v1h1V8ZM12 7h-1v1h1V7ZM11 1h-1v1h1V1ZM11 8h-1v1h1V8Z", fill: primaryColorsTransformed[2] }), callback(require(8018) /* inlineStyles */.Path, { d: "M7 1H6v1h1V1ZM6 2H5v1h1V2ZM6 7H5v1h1V7ZM2 11H1v2h1v-2ZM3 13H2v1h1v-1ZM12 0h-2v1h2V0ZM13 14h-2v1h2v-1ZM5 14H3v1h2v-1ZM15 3h-1v2h1V3ZM12 3h-1v4h1V3ZM16 5h-1v6h1V5ZM13 1h-1v1h1V1ZM14 2h-1v1h1V2ZM10 1H9v1h1V1ZM11 2h-1v1h1V2ZM11 7h-1v1h1V7ZM15 11h-1v2h1v-2ZM14 13h-1v1h1v-1Z", fill: "#000" }), callback(require(8018) /* inlineStyles */.Path, { d: "M5 2H4v1h1V2Z", fill: primaryColorsTransformed[1] })];
   obj["children"] = items;
-  return callback2(arg1(dependencyMap[3]).Svg, obj);
+  return callback2(require(8018) /* inlineStyles */.Svg, obj);
 };

@@ -1,42 +1,47 @@
-// Module ID: 10709
-// Function ID: 83378
+// Module ID: 10719
+// Function ID: 83427
 // Name: SoundboardVolume
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 5739, 5464, 10709, 1212, 5165, 10716, 5733, 5459, 1920, 2]
 // Exports: default
 
-// Module 10709 (SoundboardVolume)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const HelpdeskArticles = arg1(dependencyMap[2]).HelpdeskArticles;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_8 = arg1(dependencyMap[4]).createStyles({ slider: { marginTop: 4 }, text: { marginTop: 4 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_settings/voice/native/UserSettingsSoundboardVolume.tsx");
+// Module 10719 (SoundboardVolume)
+import "result";
+import { View } from "get ActivityIndicator";
+import { HelpdeskArticles } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+let closure_8 = _createForOfIteratorHelperLoose.createStyles({ slider: { marginTop: 4 }, text: { marginTop: 4 } });
+const result = require("ME").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsSoundboardVolume.tsx");
 
 export default function SoundboardVolume() {
   const tmp = callback3();
-  let obj = arg1(dependencyMap[5]);
+  let obj = analyticsLocations(5739);
   const amplitudinalSoundboardVolume = obj.getAmplitudinalSoundboardVolume();
-  const arg1 = importDefault(dependencyMap[6])().analyticsLocations;
+  analyticsLocations = importDefault(5464)().analyticsLocations;
   obj = {};
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.title = intl.string(arg1(dependencyMap[8]).t.xbMc8r);
+  const intl = analyticsLocations(1212).intl;
+  obj.title = intl.string(analyticsLocations(1212).t.xbMc8r);
   obj.hasIcons = false;
   obj = {};
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj.label = intl2.string(arg1(dependencyMap[8]).t.kbFsAD);
+  const intl2 = analyticsLocations(1212).intl;
+  obj.label = intl2.string(analyticsLocations(1212).t.kbFsAD);
   const obj1 = {};
-  const items = [callback(View, { style: tmp.slider, children: callback(importDefault(dependencyMap[10]), obj3) }), ];
+  const items = [callback(View, { style: tmp.slider, children: callback(importDefault(10716), obj3) }), ];
   const obj4 = { style: tmp.text, variant: "text-sm/medium" };
-  const intl3 = arg1(dependencyMap[8]).intl;
+  const intl3 = analyticsLocations(1212).intl;
   const obj5 = {};
-  const obj2 = { style: tmp.slider, children: callback(importDefault(dependencyMap[10]), obj3) };
-  obj5.helpCenterArticle = importDefault(dependencyMap[13]).getArticleURL(HelpdeskArticles.SOUNDBOARD);
-  obj4.children = intl3.format(arg1(dependencyMap[8]).t.BPbGq7, obj5);
-  items[1] = callback(arg1(dependencyMap[12]).TextWithIOSLinkWorkaround, obj4);
+  const obj2 = { style: tmp.slider, children: callback(importDefault(10716), obj3) };
+  obj5.helpCenterArticle = importDefault(1920).getArticleURL(HelpdeskArticles.SOUNDBOARD);
+  obj4.children = intl3.format(analyticsLocations(1212).t.BPbGq7, obj5);
+  items[1] = callback(analyticsLocations(5459).TextWithIOSLinkWorkaround, obj4);
   obj1.children = items;
   obj.subLabel = callback2(closure_6, obj1);
-  obj.children = callback(arg1(dependencyMap[9]).TableRow, obj);
-  return callback(arg1(dependencyMap[7]).UserSettingsTableRowGroup, obj);
+  obj.children = callback(analyticsLocations(5165).TableRow, obj);
+  return callback(analyticsLocations(10709).UserSettingsTableRowGroup, obj);
 };

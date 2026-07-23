@@ -1,53 +1,58 @@
 // Module ID: 1318
-// Function ID: 15489
+// Function ID: 15490
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 662, 653, 1284, 1282, 1317, 1283, 22, 2]
 // Exports: b64ToPreloadedUserSettingsProto, b64ToProtoWithType, mergeTopLevelFields, mutateUserChannelSettings, protoToB64WithType, runMigrations, serializeUsageHistory
 
 // Module 1318 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+import _slicedToArray from "_slicedToArray";
+import { UserSettingsTypes } from "MAX_FAVORITES";
+import { ZERO_STRING_GUILD_ID } from "ME";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -88,23 +93,23 @@ function b64ToProto(ProtoClass, settings) {
   if (null == settings) {
     return null;
   } else {
-    const obj = settings(dependencyMap[3]);
+    const obj = require(1284);
     return ProtoClass.fromBinary(obj.base64decode(settings), obj);
   }
 }
 function protoToB64(ProtoClass, protoToSave) {
-  return protoToSave(dependencyMap[3]).base64encode(ProtoClass.toBinary(protoToSave));
+  return require(1284).base64encode(ProtoClass.toBinary(protoToSave));
 }
-function mutateUserGuildSettings(guilds, arg1, arg2) {
+function mutateUserGuildSettings(guilds, closure_0, closure_1) {
   if (null == guilds.guilds) {
-    const AllGuildSettings = arg1(dependencyMap[4]).AllGuildSettings;
+    const AllGuildSettings = require(1282) /* _callSuper */.AllGuildSettings;
     guilds.guilds = AllGuildSettings.create();
   }
-  return mutateUserGuildSettingsInternal(guilds.guilds, arg1, arg2);
+  return mutateUserGuildSettingsInternal(guilds.guilds, closure_0, closure_1);
 }
-function mutateUserGuildSettingsInternal(guilds, arg1, arg2) {
-  let tmp = arg1;
-  let tmp2 = null != arg1;
+function mutateUserGuildSettingsInternal(guilds, closure_0, closure_1) {
+  let tmp = closure_0;
+  let tmp2 = null != closure_0;
   if (tmp2) {
     tmp2 = "null" !== tmp;
   }
@@ -112,30 +117,27 @@ function mutateUserGuildSettingsInternal(guilds, arg1, arg2) {
     tmp = ZERO_STRING_GUILD_ID;
   }
   if (!(tmp in guilds.guilds)) {
-    const GuildSettings = arg1(dependencyMap[4]).GuildSettings;
+    const GuildSettings = require(1282) /* _callSuper */.GuildSettings;
     guilds.guilds[tmp] = GuildSettings.create();
   }
-  return arg2(guilds.guilds[tmp]);
+  return closure_1(guilds.guilds[tmp]);
 }
-function mutateUserChannelSettingsInternal(channels, arg1, arg2) {
-  if (!(arg1 in channels.channels)) {
-    const ChannelSettings = arg1(dependencyMap[4]).ChannelSettings;
-    channels.channels[arg1] = ChannelSettings.create();
+function mutateUserChannelSettingsInternal(channels, closure_0, closure_1) {
+  if (!(closure_0 in channels.channels)) {
+    const ChannelSettings = require(1282) /* _callSuper */.ChannelSettings;
+    channels.channels[closure_0] = ChannelSettings.create();
   }
-  return arg2(channels.channels[arg1]);
+  return closure_1(channels.channels[closure_0]);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-const UserSettingsTypes = arg1(dependencyMap[1]).UserSettingsTypes;
-const ZERO_STRING_GUILD_ID = arg1(dependencyMap[2]).ZERO_STRING_GUILD_ID;
 let obj = {
   readerFactory(buf) {
     const textDecoder = new TextDecoder("utf-8");
-    const binaryReader = new arg1(dependencyMap[3]).BinaryReader(buf, textDecoder);
+    const binaryReader = new require(1284).BinaryReader(buf, textDecoder);
     return binaryReader;
   }
 };
-obj = { [UserSettingsTypes.PRELOADED_USER_SETTINGS]: arg1(dependencyMap[4]).PreloadedUserSettings, [UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS]: arg1(dependencyMap[5]).FrecencyUserSettings };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
+obj = { [UserSettingsTypes.PRELOADED_USER_SETTINGS]: require("_callSuper").PreloadedUserSettings, [UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS]: require("_callSuper").FrecencyUserSettings };
+const result = require("ME").fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
 
 export const BINARY_READ_OPTIONS = obj;
 export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
@@ -151,7 +153,7 @@ export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
 };
 export { b64ToProto };
 export const b64ToPreloadedUserSettingsProto = function b64ToPreloadedUserSettingsProto(settings) {
-  return b64ToProto(arg1(dependencyMap[4]).PreloadedUserSettings, settings);
+  return b64ToProto(require(1282) /* _callSuper */.PreloadedUserSettings, settings);
 };
 export const protoToB64WithType = function protoToB64WithType(arg0, protoToSave) {
   return protoToB64(obj[arg0], protoToSave);
@@ -161,24 +163,25 @@ export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, prot
   const obj = {};
   const merged = Object.assign(proto);
   for (const key10008 in arg2) {
-    let tmp3 = key10008;
-    delete r0[r8];
+    let tmp5 = key10008;
+    delete tmp[tmp2];
+    continue;
   }
   ProtoClass.mergePartial(obj, proto2);
   return obj;
 };
 export { mutateUserGuildSettings };
 export { mutateUserGuildSettingsInternal };
-export const mutateUserChannelSettings = function mutateUserChannelSettings(inbox, arg1, id, arg3) {
-  arg1 = id;
-  const importDefault = arg3;
-  return mutateUserGuildSettings(inbox, arg1, (arg0) => callback(arg0, arg2, arg3));
+export const mutateUserChannelSettings = function mutateUserChannelSettings(inbox, closure_0, id, arg3) {
+  closure_0 = id;
+  let closure_1 = arg3;
+  return mutateUserGuildSettings(inbox, closure_0, (arg0) => outer1_13(arg0, closure_0, closure_1));
 };
 export { mutateUserChannelSettingsInternal };
 export const runMigrations = function runMigrations(proto, arg1) {
   let iter5;
   if (null == proto.versions) {
-    const Versions = arg1(dependencyMap[6]).Versions;
+    const Versions = require(1283) /* _isNativeReflectConstruct */.Versions;
     proto.versions = Versions.create();
   }
   const tmp3 = _createForOfIteratorHelperLoose(arg1);
@@ -237,25 +240,25 @@ export const runMigrations = function runMigrations(proto, arg1) {
   const obj = { proto, isDirty: flag2, cleanupFuncs: items };
   return obj;
 };
-export const serializeUsageHistory = function serializeUsageHistory(usageHistory, closure_18) {
+export const serializeUsageHistory = function serializeUsageHistory(usageHistory, outer2_18) {
   let done;
   let length;
   const entries = Object.entries(usageHistory);
   let tmp = entries;
-  if (entries.length > closure_18) {
-    let obj = importDefault(dependencyMap[7]);
+  if (entries.length > outer2_18) {
+    let obj = importDefault(22);
     const reversed = obj.sortBy(entries, (arg0) => {
       let tmp;
       [, tmp] = arg0;
       return tmp.recentUses[tmp.recentUses.length - 1];
     }).reverse();
     tmp = reversed;
-    if (reversed.length > closure_18) {
+    if (reversed.length > outer2_18) {
       do {
         let arr = reversed.pop();
         tmp = reversed;
         length = reversed.length;
-      } while (length > closure_18);
+      } while (length > outer2_18);
     }
     const sortByResult = obj.sortBy(entries, (arg0) => {
       let tmp;
@@ -268,12 +271,12 @@ export const serializeUsageHistory = function serializeUsageHistory(usageHistory
   let iter = tmp5();
   if (!iter.done) {
     do {
-      let tmp6 = closure_3;
-      let tmp7 = closure_3(iter.value, 2);
+      let tmp6 = callback;
+      let tmp7 = callback(iter.value, 2);
       let tmp8 = tmp7[1];
-      let tmp9 = closure_0;
-      let tmp10 = closure_2;
-      let FrecencyItem = closure_0(closure_2[5]).FrecencyItem;
+      let tmp9 = require;
+      let tmp10 = dependencyMap;
+      let FrecencyItem = require(1317) /* _callSuper */.FrecencyItem;
       obj = FrecencyItem.create();
       obj.frecency = tmp8.frecency;
       let recentUses = tmp8.recentUses;

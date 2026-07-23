@@ -1,7 +1,7 @@
 // Module ID: 1829
-// Function ID: 20027
+// Function ID: 20028
 // Name: parseSkuIdFromServerData
-// Dependencies: []
+// Dependencies: [2]
 // Exports: parseServerUserCollectibles
 
 // Module 1829 (parseSkuIdFromServerData)
@@ -61,8 +61,7 @@ function parseServerUserNameplate(nameplate) {
   }
   return null;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/collectibles/utils/mappers.tsx");
+const result = require("set").fileFinishedImporting("modules/collectibles/utils/mappers.tsx");
 
 export { parseSkuIdFromServerData };
 export const parseServerUserCollectibles = function parseServerUserCollectibles(collectibles) {

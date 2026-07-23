@@ -1,17 +1,26 @@
 // Module ID: 1860
-// Function ID: 20513
+// Function ID: 20514
 // Name: wrapHue
-// Dependencies: []
+// Dependencies: [57, 1861, 1862, 666, 665, 1863, 2]
 // Exports: applyFlywheelViewingFallback, buildGummyColors, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, parseServerDisplayNameStyles, rebuildGummySourceColor
 
 // Module 1860 (wrapHue)
+import _slicedToArray from "_slicedToArray";
+import items3 from "items3";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function wrapHue(h) {
   return (h % 360 + 360) % 360;
 }
 function colorToHsl(first) {
-  const tmp = importDefault(dependencyMap[3]);
-  const obj = arg1(dependencyMap[4]);
-  const tmp2 = callback(tmp(arg1(dependencyMap[4]).int2hex(first)).hsl(), 3);
+  const tmp = importDefault(666);
+  const obj = require(665) /* pad2 */;
+  const tmp2 = callback(tmp(require(665) /* pad2 */.int2hex(first)).hsl(), 3);
   let num = 0;
   first = tmp2[0];
   if (!Number.isNaN(first)) {
@@ -21,28 +30,26 @@ function colorToHsl(first) {
   return items;
 }
 function hueToGummyColor(sharedValue) {
-  const obj = importDefault(dependencyMap[3]);
-  return importDefault(dependencyMap[3]).hsl(sharedValue, closure_5, closure_4).num();
+  const obj = importDefault(666);
+  return importDefault(666).hsl(sharedValue, closure_5, closure_4).num();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_4, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: closure_5, FLYWHEEL_EFFECTS: closure_6, FLYWHEEL_FONTS: closure_7, getColorPresetsForEffect: closure_8 } = arg1(dependencyMap[1]));
-const items = [{}, {}, { "Null": null, "Null": null, "Null": null }, {}];
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/display_name_styles/DisplayNameStylesUtils.tsx");
+({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_4, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: closure_5, FLYWHEEL_EFFECTS: closure_6, FLYWHEEL_FONTS: closure_7, getColorPresetsForEffect: closure_8 } = items3);
+let items = [{ hueShift: -18, saturation: 0.54, lightness: 0.72 }, { hueShift: -5, saturation: 0.66, lightness: 0.6 }, { hueShift: 9, saturation: 0.56, lightness: 0.68 }, { hueShift: 22, saturation: 0.6, lightness: 0.63 }];
+let result = require("DisplayNameEffect").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesUtils.tsx");
 
 export const getEffectColorCount = function getEffectColorCount(effectId) {
-  if (arg1(dependencyMap[2]).DisplayNameEffect.GRADIENT === effectId) {
+  if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.GRADIENT === effectId) {
     return 2;
-  } else if (arg1(dependencyMap[2]).DisplayNameEffect.GUMMY === effectId) {
+  } else if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.GUMMY === effectId) {
     return 4;
-  } else if (arg1(dependencyMap[2]).DisplayNameEffect.PRISM === effectId) {
+  } else if (require(1862) /* DisplayNameEffect */.DisplayNameEffect.PRISM === effectId) {
     return 5;
   } else {
     return 1;
   }
 };
 export const generateColorVariants = function generateColorVariants(first) {
-  let obj = importDefault(dependencyMap[3])(first);
+  let obj = importDefault(666)(first);
   const alphaResult = obj.alpha(1);
   const value = alphaResult.get("hsl.l");
   const bound = Math.min(1, 1.2 * alphaResult.get("hsl.s"));
@@ -65,15 +72,15 @@ export const generateColorVariants = function generateColorVariants(first) {
 };
 export { wrapHue };
 export const GUMMY_STRIPES = items;
-export const buildGummyColors = function buildGummyColors(closure_11) {
-  let closure_0 = callback(colorToHsl(closure_11), 1)[0];
+export const buildGummyColors = function buildGummyColors(outer1_11) {
+  let closure_0 = callback(colorToHsl(outer1_11), 1)[0];
   return items.map((arg0) => {
     let hueShift;
     let lightness;
     let saturation;
     ({ hueShift, saturation, lightness } = arg0);
-    const obj = callback(closure_2[3]);
-    return callback(closure_2[3]).hsl(callback2(closure_0 + hueShift), saturation, lightness).num();
+    const obj = outer1_1(outer1_2[3]);
+    return outer1_1(outer1_2[3]).hsl(outer1_10(closure_0 + hueShift), saturation, lightness).num();
   });
 };
 export const rebuildGummySourceColor = function rebuildGummySourceColor(selectedColors) {
@@ -95,8 +102,9 @@ export const parseServerDisplayNameStyles = function parseServerDisplayNameStyle
   return tmp;
 };
 export const generateRandomDisplayNameStyles = function generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder) {
-  const arr = callback2(visibleEffectOrder[Math.floor(Math, Math.random(Math) * visibleEffectOrder.length)]);
-  const obj = { fontId: visibleFontOrder[Math.floor(Math, Math.random(Math) * visibleFontOrder.length)], effectId: visibleEffectOrder[Math.floor(Math, Math.random(Math) * visibleEffectOrder.length)] };
+  const tmp = visibleEffectOrder[Math.floor(Math, Math.random(Math) * visibleEffectOrder.length)];
+  const arr = callback2(tmp);
+  const obj = { fontId: visibleFontOrder[Math.floor(Math, Math.random(Math) * visibleFontOrder.length)], effectId: tmp };
   const items = [...arr[Math.floor(Math, Math.random(Math) * arr.length)]];
   obj.colors = items;
   return obj;
@@ -105,12 +113,12 @@ export const applyFlywheelViewingFallback = function applyFlywheelViewingFallbac
   if (!isDisplayNameStylesFlywheelViewersEnabled) {
     if (null != fontId) {
       if (closure_7.includes(fontId.fontId)) {
-        fontId = isDisplayNameStylesFlywheelViewersEnabled(dependencyMap[5]).DisplayNameFont.DEFAULT;
+        fontId = require(1863) /* DisplayNameFont */.DisplayNameFont.DEFAULT;
       } else {
         fontId = fontId.fontId;
       }
       if (closure_6.includes(fontId.effectId)) {
-        let effectId = isDisplayNameStylesFlywheelViewersEnabled(dependencyMap[2]).DisplayNameEffect.SOLID;
+        let effectId = require(1862) /* DisplayNameEffect */.DisplayNameEffect.SOLID;
       } else {
         effectId = fontId.effectId;
       }

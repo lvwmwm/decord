@@ -1,24 +1,26 @@
-// Module ID: 11881
-// Function ID: 91979
+// Module ID: 11893
+// Function ID: 92032
 // Name: useCustomStatusActivityForUser
-// Dependencies: []
+// Dependencies: [1194, 4217, 653, 566, 8239, 2]
 // Exports: default
 
-// Module 11881 (useCustomStatusActivityForUser)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const ActivityTypes = arg1(dependencyMap[2]).ActivityTypes;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/custom_status/utils/useCustomStatusActivityForUser.tsx");
+// Module 11893 (useCustomStatusActivityForUser)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { ActivityTypes } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/custom_status/utils/useCustomStatusActivityForUser.tsx");
 
 export default function useCustomStatusActivityForUser(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => id.getId() === arg0);
-  const obj = arg1(dependencyMap[3]);
-  const customStatusActivity = arg1(dependencyMap[4]).useCustomStatusActivity();
-  const obj2 = arg1(dependencyMap[4]);
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getId() === closure_0);
+  const obj = _require(566);
+  const customStatusActivity = _require(8239).useCustomStatusActivity();
+  const obj2 = _require(8239);
   const items1 = [closure_3];
-  let stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => closure_3.findActivity(arg0, (type) => type.type === constants.CUSTOM_STATUS));
+  let stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_3.findActivity(closure_0, (type) => type.type === outer2_4.CUSTOM_STATUS));
   if (stateFromStores) {
     stateFromStores1 = customStatusActivity;
   }

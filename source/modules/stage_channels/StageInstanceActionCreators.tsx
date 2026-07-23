@@ -1,25 +1,27 @@
-// Module ID: 7485
-// Function ID: 60078
+// Module ID: 7490
+// Function ID: 60112
 // Name: _startStageInstance
-// Dependencies: []
+// Dependencies: [5, 653, 507, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 7485 (_startStageInstance)
-async function _startStageInstance(channel_id, topic, privacy_level, send_start_notification, guild_scheduled_event_id, arg5) {
-  const HTTP = callback(closure_1[2]).HTTP;
-  let obj = { url: constants.STAGE_INSTANCES, body: obj };
-  obj = { channel_id, topic, privacy_level, guild_scheduled_event_id, send_start_notification, rejectWithError: callback(closure_1[2]).rejectWithMigratedError() };
+// Module 7490 (_startStageInstance)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { Endpoints } from "ME";
+
+const require = arg1;
+async function _startStageInstance(arg0, arg1, arg2, arg3, arg4, arg5) {
+  const HTTP = outer2_0(outer2_1[2]).HTTP;
+  obj = { url: outer2_3.STAGE_INSTANCES, body: obj };
+  obj = { channel_id: arg0, topic: arg1, privacy_level: arg2, guild_scheduled_event_id: arg4, send_start_notification: arg3, rejectWithError: outer2_0(outer2_1[2]).rejectWithMigratedError() };
   return yield HTTP.post(obj).body;
 }
-async function _updateStageInstance(id, topic, privacy_level, arg3) {
-  const HTTP = callback(closure_1[2]).HTTP;
-  let obj = { url: closure_3.STAGE_INSTANCE(id), body: obj };
-  obj = { topic, privacy_level, rejectWithError: callback(closure_1[2]).rejectWithMigratedError() };
+async function _updateStageInstance(arg0, arg1, arg2, arg3) {
+  const HTTP = outer2_0(outer2_1[2]).HTTP;
+  obj = { url: outer2_3.STAGE_INSTANCE(arg0), body: obj };
+  obj = { topic: arg1, privacy_level: arg2, rejectWithError: outer2_0(outer2_1[2]).rejectWithMigratedError() };
   return yield HTTP.patch(obj).body;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const Endpoints = arg1(dependencyMap[1]).Endpoints;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/stage_channels/StageInstanceActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/StageInstanceActionCreators.tsx");
 
 export const startStageInstance = function startStageInstance(channel_id, name, GUILD_ONLY, flag, id) {
   return _startStageInstance(...arguments);
@@ -28,7 +30,7 @@ export const updateStageInstance = function updateStageInstance(id, arg1, arg2) 
   return _updateStageInstance(...arguments);
 };
 export const endStageInstance = function endStageInstance(id) {
-  const HTTP = arg1(dependencyMap[2]).HTTP;
-  const obj = { url: Endpoints.STAGE_INSTANCE(id), rejectWithError: arg1(dependencyMap[2]).rejectWithMigratedError() };
+  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  const obj = { url: Endpoints.STAGE_INSTANCE(id), rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
   return HTTP.del(obj);
 };

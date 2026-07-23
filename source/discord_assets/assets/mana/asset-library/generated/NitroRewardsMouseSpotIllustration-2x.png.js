@@ -1,11 +1,10 @@
-// Module ID: 6342
-// Function ID: 50446
+// Module ID: 6347
+// Function ID: 50475
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 6342 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroRewardsMouseSpotIllustration-2x.png.js");
+// Module 6347 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroRewardsMouseSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/ce69752105bc01887052b3586a051fc278aa903cbeb35ec3e11dc45102edae7d.png";
 export const metadata = { fileBytes: 141690 };

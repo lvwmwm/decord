@@ -1,18 +1,19 @@
-// Module ID: 14424
-// Function ID: 108788
+// Module ID: 14538
+// Function ID: 110941
 // Name: useAllowFriendsFromMutualGuildsOnly
-// Dependencies: []
+// Dependencies: [31, 3803, 5793, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnly
 
-// Module 14424 (useAllowFriendsFromMutualGuildsOnly)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/user_settings/content_and_social/useAllowFriendsFromMutualGuildsOnly.tsx");
+// Module 14538 (useAllowFriendsFromMutualGuildsOnly)
+import result from "result";
+
+const require = arg1;
+const result = require("getSanitizedRestrictedGuilds").fileFinishedImporting("modules/user_settings/content_and_social/useAllowFriendsFromMutualGuildsOnly.tsx");
 
 export const useAllowFriendsFromMutualGuildsOnly = function useAllowFriendsFromMutualGuildsOnly() {
-  const FriendSourceFlagsSetting = arg1(dependencyMap[1]).FriendSourceFlagsSetting;
-  const setting = FriendSourceFlagsSetting.useSetting();
-  const arg1 = setting;
+  const FriendSourceFlagsSetting = setting(3803).FriendSourceFlagsSetting;
+  setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
-  const memo = React.useMemo(() => setting(closure_1[2]).computeFlags(setting), items);
+  const memo = React.useMemo(() => setting(outer1_1[2]).computeFlags(setting), items);
   return memo.mutualGuilds && !memo.all;
 };

@@ -1,54 +1,58 @@
-// Module ID: 9308
-// Function ID: 72788
+// Module ID: 9315
+// Function ID: 72829
 // Name: handleOutOfSuperReactions
-// Dependencies: []
+// Dependencies: [1348, 4349, 3947, 1849, 653, 1852, 33, 3769, 4099, 4100, 7005, 3776, 4098, 9316, 1934, 3989, 9326, 7006, 4324, 9427, 9436, 9437, 9438, 8007, 8009, 4470, 1212, 4126, 2]
 // Exports: handleAddNewReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 9308 (handleOutOfSuperReactions)
+// Module 9315 (handleOutOfSuperReactions)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { EmojiIntention } from "set";
+import { jsx } from "jsxProd";
+
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function handleOutOfSuperReactions(onDismiss) {
   const currentUser = authStore.getCurrentUser();
   if (null != currentUser) {
-    let obj = arg1(dependencyMap[11]);
+    let obj = require(3776) /* _createForOfIteratorHelperLoose */;
     let openLazyResult;
     if (!obj.isPremium(currentUser)) {
       obj = { onDismiss };
-      openLazyResult = importDefault(dependencyMap[12]).openLazy(arg1(dependencyMap[14])(dependencyMap[13], dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
-      const obj2 = importDefault(dependencyMap[12]);
+      openLazyResult = importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(9316, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
+      const obj2 = importDefault(4098);
     }
     return openLazyResult;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-({ AnalyticEvents: closure_7, AnalyticsPages: closure_8, AnalyticsSections: closure_9 } = arg1(dependencyMap[4]));
-const EmojiIntention = arg1(dependencyMap[5]).EmojiIntention;
-const jsx = arg1(dependencyMap[6]).jsx;
+({ AnalyticEvents: closure_7, AnalyticsPages: closure_8, AnalyticsSections: closure_9 } = ME);
 let obj = {};
-obj[arg1(dependencyMap[17]).ReactionTypes.NORMAL] = importDefault(dependencyMap[21]);
-obj[arg1(dependencyMap[17]).ReactionTypes.BURST] = importDefault(dependencyMap[22]);
+obj[require("ReactionTypes").ReactionTypes.NORMAL] = require("registerAsset");
+obj[require("ReactionTypes").ReactionTypes.BURST] = require("registerAsset");
 obj = {};
-obj[arg1(dependencyMap[17]).ReactionTypes.NORMAL] = arg1(dependencyMap[23]).ReactionIcon;
-obj[arg1(dependencyMap[17]).ReactionTypes.BURST] = arg1(dependencyMap[24]).SuperReactionIcon;
-const tmp2 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/reactions/native/ReactionUtils.tsx");
+obj[require("ReactionTypes").ReactionTypes.NORMAL] = require("ReactionIcon").ReactionIcon;
+obj[require("ReactionTypes").ReactionTypes.BURST] = require("SuperReactionIcon").SuperReactionIcon;
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/reactions/native/ReactionUtils.tsx");
 
 export { handleOutOfSuperReactions };
 export const handleAddNewReactions = function handleAddNewReactions(channel, id, MESSAGE, burst) {
-  id = channel;
-  const importDefault = id;
+  const _require = channel;
+  let closure_1 = id;
   if (MESSAGE === undefined) {
-    MESSAGE = id(dependencyMap[10]).ReactionLocations.MESSAGE;
+    MESSAGE = _require(MESSAGE[10]).ReactionLocations.MESSAGE;
   }
-  const dependencyMap = MESSAGE;
   burst = undefined;
   if (null != burst) {
     burst = burst.burst;
   }
   const currentUser = authStore.getCurrentUser();
   if (null != currentUser) {
-    const isPremiumResult = id(dependencyMap[11]).isPremium(currentUser);
+    const isPremiumResult = _require(MESSAGE[11]).isPremium(currentUser);
     let tmp6 = tmp4;
     if (tmp4) {
       tmp6 = !isPremiumResult;
@@ -56,39 +60,39 @@ export const handleAddNewReactions = function handleAddNewReactions(channel, id,
     if (tmp6) {
       handleOutOfSuperReactions();
     }
-    let tmp15Result = id(dependencyMap[15]);
+    let tmp15Result = _require(MESSAGE[15]);
     const bestActiveInputForChannelId = tmp15Result.getBestActiveInputForChannelId(channel.id);
     if (null != bestActiveInputForChannelId) {
       bestActiveInputForChannelId.closeCustomKeyboard();
     }
-    id(dependencyMap[16]);
+    _require(MESSAGE[16]);
     tmp15Result = {
       onPressEmoji(byName, burst) {
-          const id = byName.id;
+          const id = channel.id;
           const obj = { burst };
           if (null != byName) {
-            const toReactionEmojiResult = byName(MESSAGE[7]).toReactionEmoji(byName);
+            const toReactionEmojiResult = channel(MESSAGE[7]).toReactionEmoji(byName);
             if (!tmp3) {
-              const result = byName(MESSAGE[8]).triggerHapticFeedback(burst(MESSAGE[9]).IMPACT_LIGHT);
-              const obj2 = byName(MESSAGE[8]);
+              const result = channel(MESSAGE[8]).triggerHapticFeedback(id(MESSAGE[9]).IMPACT_LIGHT);
+              const obj2 = channel(MESSAGE[8]);
             }
-            const obj3 = byName(MESSAGE[10]);
+            const obj3 = channel(MESSAGE[10]);
             obj3.addReaction(id, tmp, toReactionEmojiResult, tmp2, obj);
-            const obj4 = byName(MESSAGE[7]);
-            const tmp3 = null != obj && obj.burst;
+            const obj4 = channel(MESSAGE[7]);
+            tmp3 = null != obj && obj.burst;
           }
         },
       channel,
       pickerIntention: EmojiIntention.REACTION
     };
     if (!tmp4) {
-      tmp15Result.reactionType = id(dependencyMap[17]).ReactionTypes.NORMAL;
+      tmp15Result.reactionType = _require(MESSAGE[17]).ReactionTypes.NORMAL;
       tmp15Result.analyticsObject = MESSAGE;
       tmp15Result.messageId = id;
       tmp15Result = tmp15(tmp15Result);
     }
-    const BURST = id(dependencyMap[17]).ReactionTypes.BURST;
-    const obj4 = id(dependencyMap[11]);
+    const BURST = _require(MESSAGE[17]).ReactionTypes.BURST;
+    let obj4 = _require(MESSAGE[11]);
   }
 };
 export const handleViewReactions = function handleViewReactions(isPoll) {
@@ -100,10 +104,10 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     _location = {};
   }
   isPoll = isPoll.isPoll;
-  let obj = { 9223372036854775807: false, -9223372036854775808: false, 0: false, 9223372036854775807: false, 0: false };
+  let obj = { messageId: 0, channelId: 0, location: 0, isPoll: 0, emoji: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(isPoll, obj);
-  const channel = channel.getChannel(channelId);
+  channel = channel.getChannel(channelId);
   if (null != channel) {
     if (channel.isPrivate()) {
       let GUILD_CHANNEL = constants2.DM_CHANNEL;
@@ -111,7 +115,7 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     if (null == channel) {
       if (null != channel) {
         if (null == isPoll) {
-          const message = message.getMessage(channelId, messageId);
+          message = message.getMessage(channelId, messageId);
           let isPollResult;
           if (null != message) {
             isPollResult = message.isPoll();
@@ -122,12 +126,12 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
         obj = { page: GUILD_CHANNEL, section: constants3.CHANNEL };
         const merged1 = Object.assign(_location);
         obj.location = obj;
-        importDefault(dependencyMap[18]).trackWithMetadata(constants.REACTION_ACTION_SHEET_OPENED, obj);
-        const obj4 = importDefault(dependencyMap[18]);
+        importDefault(4324).trackWithMetadata(constants.REACTION_ACTION_SHEET_OPENED, obj);
+        const obj4 = importDefault(4324);
         const obj1 = { messageId, channelId, emoji: isPoll.emoji };
-        const obj7 = importDefault(dependencyMap[12]);
+        const obj7 = importDefault(4098);
         const merged2 = Object.assign(merged);
-        obj7.openLazy(arg1(dependencyMap[14])(dependencyMap[19], dependencyMap.paths), "MessageReactions", obj1);
+        obj7.openLazy(require(1934) /* maybeLoadBundle */(9427, dependencyMap.paths), "MessageReactions", obj1);
       }
     }
     const FORUM_CHANNEL_POST = constants3.FORUM_CHANNEL_POST;
@@ -135,29 +139,29 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
   GUILD_CHANNEL = constants2.GUILD_CHANNEL;
 };
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
-  let obj = importDefault(dependencyMap[12]);
+  let obj = importDefault(4098);
   obj = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(id(dependencyMap[14])(dependencyMap[20], dependencyMap.paths), "MessagePreviewReactions", obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(9436, dependencyMap.paths), "MessagePreviewReactions", obj);
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj;
 export const handleRemoveAllReactions = function handleRemoveAllReactions(arg0, arg1) {
-  arg1 = arg0;
+  const _require = arg0;
   const importDefault = arg1;
-  let obj = importDefault(dependencyMap[25]);
+  let obj = importDefault(4470);
   obj = {};
-  const intl = arg1(dependencyMap[26]).intl;
-  obj.title = intl.string(arg1(dependencyMap[26]).t.ZbtGBm);
+  const intl = _require(1212).intl;
+  obj.title = intl.string(_require(1212).t.ZbtGBm);
   obj = { variant: "text-md/normal" };
-  const intl2 = arg1(dependencyMap[26]).intl;
-  obj.children = intl2.string(arg1(dependencyMap[26]).t.VpjOCo);
-  obj.children = jsx(arg1(dependencyMap[27]).Text, obj);
-  const intl3 = arg1(dependencyMap[26]).intl;
-  obj.cancelText = intl3.string(arg1(dependencyMap[26]).t.ETE/oC);
-  const intl4 = arg1(dependencyMap[26]).intl;
-  obj.confirmText = intl4.string(arg1(dependencyMap[26]).t.oyYWHE);
+  const intl2 = _require(1212).intl;
+  obj.children = intl2.string(_require(1212).t.VpjOCo);
+  obj.children = jsx(_require(4126).Text, { variant: "text-md/normal" });
+  const intl3 = _require(1212).intl;
+  obj.cancelText = intl3.string(_require(1212).t["ETE/oC"]);
+  const intl4 = _require(1212).intl;
+  obj.confirmText = intl4.string(_require(1212).t.oyYWHE);
   obj.onConfirm = function onConfirm() {
-    return arg0(closure_2[10]).removeAllReactions(arg0, arg1);
+    return callback(outer1_2[10]).removeAllReactions(callback, closure_1);
   };
   obj.show(obj);
 };

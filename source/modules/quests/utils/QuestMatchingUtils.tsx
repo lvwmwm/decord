@@ -1,53 +1,63 @@
-// Module ID: 10466
-// Function ID: 81042
+// Module ID: 10476
+// Function ID: 81092
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 4167, 4976, 653, 4155, 6965, 6940, 6963, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 10466 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10476 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import QuestsExperimentLocations from "QuestsExperimentLocations";
+import { ActivityGamePlatforms } from "ME";
+import { XBOX_ACTIVITY_APPLICATION_ID as closure_8 } from "items3";
+
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +68,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -118,10 +128,10 @@ function questMatchesActivity(value, applicationId) {
       }
     }
     const formatted = flag.name.toLowerCase();
-    consoleApplicationId = applicationId(dependencyMap[5]).getConsoleApplicationId(consoleApplicationId);
+    consoleApplicationId = require(6965) /* _createForOfIteratorHelperLoose */.getConsoleApplicationId(consoleApplicationId);
     flag = false;
     if (tmp2 != consoleApplicationId) {
-      const application = application.getApplication(consoleApplicationId);
+      application = application.getApplication(consoleApplicationId);
       tmp2 = tmp2 != application;
       if (tmp2) {
         tmp2 = formatted === application.name.toLowerCase();
@@ -130,7 +140,7 @@ function questMatchesActivity(value, applicationId) {
       flag = tmp2;
     }
     tmp10 = flag;
-    const obj = applicationId(dependencyMap[5]);
+    const obj = require(6965) /* _createForOfIteratorHelperLoose */;
     const str = flag.name;
   }
 }
@@ -145,9 +155,9 @@ function getQuestByActivity(result, value) {
       [r10014, tmp4] = tmp3;
       let tmp5 = questMatchesActivity;
       if (questMatchesActivity(value, tmp4)) {
-        let tmp6 = value;
+        let tmp6 = require;
         let tmp7 = dependencyMap;
-        let obj = value(dependencyMap[6]);
+        let obj = require(6940) /* _createForOfIteratorHelperLoose */;
         if (!obj.isQuestExpired(tmp4)) {
           break;
         }
@@ -159,18 +169,13 @@ function getQuestByActivity(result, value) {
   }
 }
 function questMatchesApplicationId(application_id, consoleApplicationId) {
-  consoleApplicationId = application_id;
-  const allApplicationIds = consoleApplicationId(dependencyMap[5]).getAllApplicationIds(consoleApplicationId);
-  const obj = consoleApplicationId(dependencyMap[5]);
-  return null != allApplicationIds && allApplicationIds.some((arg0) => arg0 === arg0);
+  const _require = application_id;
+  const allApplicationIds = _require(6965).getAllApplicationIds(consoleApplicationId);
+  const obj = _require(6965);
+  return null != allApplicationIds && allApplicationIds.some((arg0) => arg0 === closure_0);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ DISCORD_APPLICATION_ID: closure_4, PLAY_ACTIVITY_CLOUD_GAMING_QUEST_ID: closure_5, PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID: closure_6 } = arg1(dependencyMap[2]));
-const ActivityGamePlatforms = arg1(dependencyMap[3]).ActivityGamePlatforms;
-let closure_8 = arg1(dependencyMap[4]).XBOX_ACTIVITY_APPLICATION_ID;
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/quests/utils/QuestMatchingUtils.tsx");
+({ DISCORD_APPLICATION_ID: closure_4, PLAY_ACTIVITY_CLOUD_GAMING_QUEST_ID: closure_5, PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID: closure_6 } = QuestsExperimentLocations);
+const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/utils/QuestMatchingUtils.tsx");
 
 export { questMatchesActivity };
 export { getQuestByActivity };
@@ -193,9 +198,9 @@ export const getQuestByApplicationId = function getQuestByApplicationId(arg0, ap
           break;
         }
       } else {
-        let tmp7 = application_id;
+        let tmp7 = require;
         let tmp8 = dependencyMap;
-        let obj = application_id(dependencyMap[6]);
+        let obj = require(6940) /* _createForOfIteratorHelperLoose */;
         tmp2 = tmp5;
         if (!obj.isQuestExpired(tmp5)) {
           break;
@@ -207,24 +212,25 @@ export const getQuestByApplicationId = function getQuestByApplicationId(arg0, ap
   return tmp2;
 };
 export const allPlayOnDesktopQuestsByApplicationId = function allPlayOnDesktopQuestsByApplicationId(arr) {
+  let closure_0 = arg1;
   return Array.from(arr.values()).filter((quest) => {
-    let hasPlayOnDesktopTaskResult = callback(arg1, quest);
+    let hasPlayOnDesktopTaskResult = outer1_13(callback, quest);
     if (hasPlayOnDesktopTaskResult) {
-      let obj = arg1(closure_1[6]);
+      let obj = callback(outer1_1[6]);
       hasPlayOnDesktopTaskResult = !obj.isQuestExpired(quest);
     }
     if (hasPlayOnDesktopTaskResult) {
       obj = { quest };
-      hasPlayOnDesktopTaskResult = arg1(closure_1[5]).hasPlayOnDesktopTask(obj);
-      const obj2 = arg1(closure_1[5]);
+      hasPlayOnDesktopTaskResult = callback(outer1_1[5]).hasPlayOnDesktopTask(obj);
+      const obj2 = callback(outer1_1[5]);
     }
     return hasPlayOnDesktopTaskResult;
   });
 };
-export const getQuestsFromActivities = function getQuestsFromActivities(result, arg1) {
-  if (null != arg1) {
+export const getQuestsFromActivities = function getQuestsFromActivities(result, closure_0) {
+  if (null != closure_0) {
     if (null != result) {
-      const tmp2 = _createForOfIteratorHelperLoose(arg1);
+      const tmp2 = _createForOfIteratorHelperLoose(closure_0);
       const iter = tmp2();
       let iter2 = iter;
       if (!iter.done) {
@@ -242,30 +248,30 @@ export const getQuestsFromActivities = function getQuestsFromActivities(result, 
 };
 export const getEligibleQuestsForApplicationId = function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
   let flag = arg2;
+  let closure_0 = applicationId;
   if (arg2 === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
   if (null == applicationId) {
     let items = [];
   } else {
     const _Array = Array;
     items = Array.from(quests.values()).filter((userStatus) => {
-      const activityApplicationId = arg1(flag[5]).getActivityApplicationId(userStatus);
+      const activityApplicationId = applicationId(flag[5]).getActivityApplicationId(userStatus);
       let canLaunchActivityResult = null != userStatus;
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = arg1(flag[7]).canLaunchActivity(userStatus);
-        const obj2 = arg1(flag[7]);
+        canLaunchActivityResult = applicationId(flag[7]).canLaunchActivity(userStatus);
+        const obj2 = applicationId(flag[7]);
       }
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = !arg1(flag[6]).isQuestExpired(userStatus);
-        const obj3 = arg1(flag[6]);
+        canLaunchActivityResult = !applicationId(flag[6]).isQuestExpired(userStatus);
+        const obj3 = applicationId(flag[6]);
       }
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = activityApplicationId === arg1;
+        canLaunchActivityResult = activityApplicationId === applicationId;
       }
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = activityApplicationId !== closure_4;
+        canLaunchActivityResult = activityApplicationId !== outer1_4;
       }
       if (canLaunchActivityResult) {
         userStatus = userStatus.userStatus;

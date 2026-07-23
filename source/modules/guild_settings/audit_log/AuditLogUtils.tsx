@@ -1,54 +1,88 @@
-// Module ID: 16111
-// Function ID: 123943
+// Module ID: 16228
+// Function ID: 126116
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4991, 5058, 4333, 1353, 5035, 16227, 1348, 1910, 3767, 1849, 16226, 653, 1355, 11007, 1354, 3, 4206, 1212, 7476, 21, 16229, 483, 1360, 4320, 1881, 24, 665, 8483, 16230, 3800, 3712, 2]
 // Exports: checkChangesToRender, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, transformLogs
 
-// Module 16111 (_createForOfIteratorHelperLoose)
+// Module 16228 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { AuditLogChange } from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { ChannelFlags } from "set";
+import { AutomodTriggerType } from "AutomodEventType";
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
+import importDefaultResult from "_isNativeReflectConstruct";
+
 let AuditLogChangeKeys;
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+let closure_15;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let closure_23;
+let closure_24;
+let closure_25;
+let closure_26;
+let closure_27;
+let closure_28;
+let closure_29;
+let closure_32;
+let closure_33;
+let closure_34;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -59,16 +93,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -86,7 +120,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function CommonChangeStrings() {
-  return { [closure_16.REASON]: () => callback(closure_3[17]).t.2IW3C5 };
+  return { [closure_16.REASON]: () => outer1_0(outer1_3[17]).t["2IW3C5"] };
 }
 function shouldNotRenderChangeDetail(log, key) {
   if (log.actionType === constants4.DELETE) {
@@ -105,19 +139,19 @@ function shouldNotRenderChangeDetail(log, key) {
   return tmp5;
 }
 function findChangeByKey(COMMUNICATION_DISABLED_UNTIL, changes) {
-  changes = COMMUNICATION_DISABLED_UNTIL;
+  let closure_0 = COMMUNICATION_DISABLED_UNTIL;
   let found = null;
   if (null != changes.changes) {
     changes = changes.changes;
-    found = changes.find((key) => key.key === key);
+    found = changes.find((key) => key.key === closure_0);
   }
   return found;
 }
 function findAllChangeByKey(ROLES_ADD, changes) {
-  changes = ROLES_ADD;
+  let closure_0 = ROLES_ADD;
   if (null != changes.changes) {
     changes = changes.changes;
-    let found = changes.filter((key) => key.key === key);
+    let found = changes.filter((key) => key.key === closure_0);
   } else {
     found = [];
   }
@@ -128,36 +162,36 @@ function getPermissionChanges(arg0, arg1) {
   if ("string" === typeof arg0) {
     num = arg0;
   }
-  const obj = importAll(dependencyMap[21]);
-  const deserializeResult = importAll(dependencyMap[21]).deserialize(num);
+  const obj = importAll(483);
+  const deserializeResult = importAll(483).deserialize(num);
   let num2 = 0;
   if ("string" === typeof arg1) {
     num2 = arg1;
   }
-  const obj2 = importAll(dependencyMap[21]);
-  const deserializeResult1 = importAll(dependencyMap[21]).deserialize(num2);
-  const obj3 = importAll(dependencyMap[21]);
-  importAll(dependencyMap[21]);
+  const obj2 = importAll(483);
+  const deserializeResult1 = importAll(483).deserialize(num2);
+  const obj3 = importAll(483);
+  importAll(483);
   const added = [];
   const removed = [];
   for (const key10035 in closure_23) {
     let tmp10 = key10035;
-    let tmp11 = closure_23;
-    let tmp12 = closure_23[key10035];
-    let tmp13 = closure_2;
-    let tmp14 = closure_3;
-    let obj5 = closure_2(closure_3[21]);
+    let tmp11 = constants3;
+    let tmp12 = constants3[key10035];
+    let tmp13 = importAll;
+    let tmp14 = dependencyMap;
+    let obj5 = importAll(483);
     if (obj5.has(removeResult, tmp12)) {
       let arr = added.push(tmp12);
     }
-    let tmp7 = closure_2;
-    let tmp8 = closure_3;
-    let obj4 = closure_2(closure_3[21]);
+    let tmp7 = importAll;
+    let tmp8 = dependencyMap;
+    let obj4 = importAll(483);
     if (!obj4.has(tmp5, tmp12)) {
       continue;
     } else {
       arr = removed.push(tmp12);
-      // continue
+      continue;
     }
     continue;
   }
@@ -201,13 +235,11 @@ function transformAppliedForumTagChange(oldValue, targetId) {
     availableTags = [];
   }
   let obj = {};
-  targetId = obj;
   const item = availableTags.forEach((id) => {
     obj[id.id] = { name: id.name, emojiId: id.emojiId, emojiName: id.emojiName };
   });
-  const importDefault = new Set(arr);
   const set = new Set(arr);
-  const importAll = new Set(arr2);
+  const set1 = new Set(arr2);
   const found = arr2.filter((arg0) => !set.has(arg0));
   const items = [];
   const found1 = arr.filter((arg0) => !set1.has(arg0));
@@ -221,14 +253,14 @@ function transformAppliedForumTagChange(oldValue, targetId) {
         obj = { id: value, name: value };
         tmp12 = obj;
       }
-      let tmp13 = closure_9;
-      let tmp14 = closure_16;
-      let prototype = closure_9.prototype;
+      let tmp13 = AuditLogChange;
+      let tmp14 = AuditLogChangeKeys;
+      let prototype = AuditLogChange.prototype;
       let tmp15 = new.target;
       let tmp16 = new.target;
       let tmp17 = null;
       let tmp18 = tmp12;
-      let tmp19 = new closure_9(closure_16.AVAILABLE_TAG_ADD, null, tmp12);
+      let tmp19 = new AuditLogChange(AuditLogChangeKeys.AVAILABLE_TAG_ADD, null, tmp12);
       let tmp20 = tmp19;
       arr = items.push(tmp19);
       iter2 = tmp11();
@@ -245,14 +277,14 @@ function transformAppliedForumTagChange(oldValue, targetId) {
         obj = { id: value, name: value };
         tmp23 = obj;
       }
-      let tmp24 = closure_9;
-      let tmp25 = closure_16;
-      let prototype2 = closure_9.prototype;
+      let tmp24 = AuditLogChange;
+      let tmp25 = AuditLogChangeKeys;
+      let prototype2 = AuditLogChange.prototype;
       let tmp26 = new.target;
       let tmp27 = new.target;
       let tmp28 = null;
       let tmp29 = tmp23;
-      let tmp30 = new closure_9(closure_16.AVAILABLE_TAG_DELETE, null, tmp23);
+      let tmp30 = new AuditLogChange(AuditLogChangeKeys.AVAILABLE_TAG_DELETE, null, tmp23);
       let tmp31 = tmp30;
       arr = items.push(tmp30);
       iter4 = tmp22();
@@ -280,9 +312,7 @@ function transformAvailableForumTagChange(arg0) {
     }
   }
   let obj = {};
-  const arg1 = obj;
   obj = {};
-  const importDefault = obj;
   const item = oldValue.forEach((id) => {
     obj[id.id] = id;
   });
@@ -295,16 +325,16 @@ function transformAvailableForumTagChange(arg0) {
       if (null != obj[key10026]) {
         continue;
       } else {
-        let tmp5 = closure_9;
-        let tmp6 = closure_16;
-        let AVAILABLE_TAG_ADD = closure_16.AVAILABLE_TAG_ADD;
-        let tmp7 = closure_47;
-        let prototype = closure_9.prototype;
+        let tmp5 = AuditLogChange;
+        let tmp6 = AuditLogChangeKeys;
+        let AVAILABLE_TAG_ADD = AuditLogChangeKeys.AVAILABLE_TAG_ADD;
+        let tmp7 = convertForumTag;
+        let prototype = AuditLogChange.prototype;
         let tmp8 = new.target;
         let tmp9 = new.target;
         let tmp10 = AVAILABLE_TAG_ADD;
         let tmp11 = null;
-        let tmp12 = new closure_9(AVAILABLE_TAG_ADD, null, closure_47(obj[key10026]));
+        let tmp12 = new AuditLogChange(AVAILABLE_TAG_ADD, null, convertForumTag(obj[key10026]));
         let tmp13 = tmp12;
         return tmp12;
       }
@@ -316,16 +346,16 @@ function transformAvailableForumTagChange(arg0) {
       if (null != obj[key10046]) {
         continue;
       } else {
-        let tmp16 = closure_9;
-        let tmp17 = closure_16;
-        let AVAILABLE_TAG_DELETE = closure_16.AVAILABLE_TAG_DELETE;
-        let tmp18 = closure_47;
-        let prototype2 = closure_9.prototype;
+        let tmp16 = AuditLogChange;
+        let tmp17 = AuditLogChangeKeys;
+        let AVAILABLE_TAG_DELETE = AuditLogChangeKeys.AVAILABLE_TAG_DELETE;
+        let tmp18 = convertForumTag;
+        let prototype2 = AuditLogChange.prototype;
         let tmp19 = new.target;
         let tmp20 = new.target;
         let tmp21 = AVAILABLE_TAG_DELETE;
         let tmp22 = null;
-        let tmp23 = new closure_9(AVAILABLE_TAG_DELETE, null, closure_47(obj[key10046]));
+        let tmp23 = new AuditLogChange(AVAILABLE_TAG_DELETE, null, convertForumTag(obj[key10046]));
         let tmp24 = tmp23;
         return tmp23;
       }
@@ -351,16 +381,16 @@ function transformAvailableForumTagChange(arg0) {
         }
       }
     }
-    let tmp28 = closure_9;
-    let tmp29 = closure_16;
-    let AVAILABLE_TAG_EDIT = closure_16.AVAILABLE_TAG_EDIT;
-    let tmp30 = closure_47;
-    let tmp31 = closure_47(tmp40);
-    let prototype3 = closure_9.prototype;
+    let tmp28 = AuditLogChange;
+    let tmp29 = AuditLogChangeKeys;
+    let AVAILABLE_TAG_EDIT = AuditLogChangeKeys.AVAILABLE_TAG_EDIT;
+    let tmp30 = convertForumTag;
+    let tmp31 = convertForumTag(tmp40);
+    let prototype3 = AuditLogChange.prototype;
     let tmp32 = new.target;
     let tmp33 = new.target;
     let tmp34 = AVAILABLE_TAG_EDIT;
-    let tmp35 = new closure_9(AVAILABLE_TAG_EDIT, tmp31, closure_47(tmp41));
+    let tmp35 = new AuditLogChange(AVAILABLE_TAG_EDIT, tmp31, convertForumTag(tmp41));
     let tmp36 = tmp35;
     return tmp35;
   }
@@ -376,7 +406,7 @@ function convertValue(newValue) {
       tmp3 = arg2(tmp);
     }
     newValue = tmp3;
-    const tmp2 = null != arg2 && null != tmp;
+    tmp2 = null != arg2 && null != tmp;
   }
   if (null != newValue.oldValue) {
     const tmp4 = arg1(newValue.oldValue);
@@ -385,7 +415,7 @@ function convertValue(newValue) {
       tmp6 = arg2(tmp4);
     }
     oldValue = tmp6;
-    const tmp5 = null != arg2 && null != tmp4;
+    tmp5 = null != arg2 && null != tmp4;
   }
   let tmp7 = AuditLogChange;
   if (!oldValue) {
@@ -399,6 +429,7 @@ function convertValue(newValue) {
 }
 function getTargetValue(targetId) {
   targetId = arg4;
+  let closure_0 = arg1;
   if (null == arg4) {
     targetId = targetId.targetId;
   }
@@ -413,14 +444,14 @@ function getTargetValue(targetId) {
     if (tmp7) {
       tmp4 = tmp6[targetId];
     }
-    const tmp7 = null != deletedTargets.deletedTargets[targetId.targetType] && null != deletedTargets.deletedTargets[targetId.targetType][targetId];
+    tmp7 = null != deletedTargets.deletedTargets[targetId.targetType] && null != deletedTargets.deletedTargets[targetId.targetType][targetId];
   }
   let tmp8 = tmp4;
   if (null == tmp4) {
     tmp8 = tmp4;
     if (null != targetId.changes) {
       const changes = targetId.changes;
-      const found = changes.find((key) => key.key === arg1);
+      const found = changes.find((key) => key.key === closure_0);
       tmp8 = tmp4;
       if (null != found) {
         tmp8 = found.newValue || found.oldValue;
@@ -442,376 +473,361 @@ function convertSubtarget(arg0, arg1, arg2) {
   return tmp;
 }
 function getNullableOldValueString(VOtRSO, L5lDFJ) {
-  L5lDFJ = VOtRSO;
-  const importDefault = L5lDFJ;
-  return (oldValue) => null == oldValue.oldValue ? oldValue : arg1;
+  let closure_0 = VOtRSO;
+  let closure_1 = L5lDFJ;
+  return (oldValue) => null == oldValue.oldValue ? closure_0 : closure_1;
 }
 function getNullableNewValueString(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  return (newValue) => null == newValue.newValue ? newValue : arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return (newValue) => null == newValue.newValue ? closure_0 : closure_1;
 }
-function getNullableNewOrOldValueString(IIanaY, 2NPsYu, 8crtns) {
-  const importDefault = _2NPsYu;
-  const importAll = _8crtns;
-  const dependencyMap = arg3;
+function getNullableNewOrOldValueString(IIanaY, _2NPsYu, _8crtns) {
+  let closure_0 = IIanaY;
+  let closure_1 = _2NPsYu;
+  let closure_2 = _8crtns;
+  let closure_3 = arg3;
   return (newValue) => {
     if (null != newValue.newValue) {
       if (null != newValue.oldValue) {
-        let tmp = newValue;
+        let tmp = closure_0;
       }
       return tmp;
     }
     if (null != newValue.newValue) {
-      tmp = arg1;
+      tmp = closure_1;
     } else {
-      tmp = null != newValue.oldValue ? arg2 : arg3;
+      tmp = null != newValue.oldValue ? closure_2 : closure_3;
     }
   };
 }
 function getNewValueStringByBoolean(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  return (newValue) => newValue.newValue ? newValue : arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return (newValue) => newValue.newValue ? closure_0 : closure_1;
 }
 function getNullableNewValueStringByKey(arg0) {
-  const arg1 = arg0;
-  return (arg0) => arg0[arg0.newValue];
+  let closure_0 = arg0;
+  return (arg0) => table[arg0.newValue];
 }
 function getNewValueStringByKeyOrDefault(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   return (arg0) => {
-    let tmp = arg0[arg0.newValue];
+    let tmp = table[arg0.newValue];
     if (null == tmp) {
-      tmp = arg1;
+      tmp = closure_1;
     }
     return tmp;
   };
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const AuditLogChange = arg1(dependencyMap[5]).AuditLogChange;
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-let closure_13 = importDefault(dependencyMap[9]);
-let closure_14 = importDefault(dependencyMap[10]);
-const tmp2 = arg1(dependencyMap[11]);
-({ AuditLogActions: closure_15, AuditLogChangeKeys } = tmp2);
-const AuditLogTargetTypes = tmp2.AuditLogTargetTypes;
-({ MFALevels: closure_18, VerificationLevels: closure_19, UserNotificationSettings: closure_20, GuildExplicitContentFilterTypes: closure_21, ChannelTypes: closure_22, Permissions: closure_23, NOOP_NULL: closure_24, VideoQualityMode: closure_25, ApplicationCommandPermissionTypes: closure_26, AuditLogSubtargetTypes: closure_27, SystemChannelFlags: closure_28, AuditLogActionTypes: closure_29 } = tmp2);
-const ChannelFlags = arg1(dependencyMap[12]).ChannelFlags;
-const AutomodTriggerType = arg1(dependencyMap[13]).AutomodTriggerType;
-({ GuildScheduledEventEntityTypes: closure_32, GuildScheduledEventStatus: closure_33, GuildScheduledEventPrivacyLevel: closure_34 } = arg1(dependencyMap[14]));
-let importDefaultResult = importDefault(dependencyMap[15]);
+({ AuditLogActions: closure_15, AuditLogChangeKeys } = ME);
+const AuditLogTargetTypes = ME.AuditLogTargetTypes;
+({ MFALevels: closure_18, VerificationLevels: closure_19, UserNotificationSettings: closure_20, GuildExplicitContentFilterTypes: closure_21, ChannelTypes: closure_22, Permissions: closure_23, NOOP_NULL: closure_24, VideoQualityMode: closure_25, ApplicationCommandPermissionTypes: closure_26, AuditLogSubtargetTypes: closure_27, SystemChannelFlags: closure_28, AuditLogActionTypes: closure_29 } = ME);
+({ GuildScheduledEventEntityTypes: closure_32, GuildScheduledEventStatus: closure_33, GuildScheduledEventPrivacyLevel: closure_34 } = GUILD_EVENT_MAX_NAME_LENGTH);
 importDefaultResult = new importDefaultResult("AuditLogUtils");
-const items = [arg1(dependencyMap[16]).TimeUnits.DAYS, arg1(dependencyMap[16]).TimeUnits.HOURS, arg1(dependencyMap[16]).TimeUnits.MINUTES, arg1(dependencyMap[16]).TimeUnits.SECONDS];
+let items = [require("sleep").TimeUnits.DAYS, require("sleep").TimeUnits.HOURS, require("sleep").TimeUnits.MINUTES, require("sleep").TimeUnits.SECONDS];
 let closure_37 = { [AuditLogTargetTypes.CHANNEL]: { [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.PERMISSION_OVERWRITES]: true }, [AuditLogTargetTypes.CHANNEL_OVERWRITE]: { [AuditLogChangeKeys.TYPE]: true, [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.PERMISSION_OVERWRITES]: true }, [AuditLogTargetTypes.INVITE]: { [AuditLogChangeKeys.INVITER_ID]: true, [AuditLogChangeKeys.USES]: true }, [AuditLogTargetTypes.WEBHOOK]: { [AuditLogChangeKeys.TYPE]: true, [AuditLogChangeKeys.APPLICATION_ID]: true }, [AuditLogTargetTypes.INTEGRATION]: { [AuditLogChangeKeys.TYPE]: true, [AuditLogChangeKeys.NAME]: true }, [AuditLogTargetTypes.THREAD]: { [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.TYPE]: true }, [AuditLogTargetTypes.STICKER]: { [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.TYPE]: true, [AuditLogChangeKeys.ASSET]: true, [AuditLogChangeKeys.FORMAT_TYPE]: true, [AuditLogChangeKeys.AVAILABLE]: true, [AuditLogChangeKeys.GUILD_ID]: true }, [AuditLogTargetTypes.GUILD_HOME]: { [AuditLogChangeKeys.ENTITY_TYPE]: true }, [AuditLogTargetTypes.GUILD_ONBOARDING]: { [AuditLogChangeKeys.PROMPTS]: true }, [AuditLogTargetTypes.GUILD_SOUNDBOARD]: { [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.SOUND_ID]: true } };
 class ACTION_FILTER_ITEMS {
   constructor() {
     obj = { value: AuditLogActions.ALL };
-    intl = arg1(dependencyMap[17]).intl;
-    obj.label = intl.string(arg1(dependencyMap[17]).t.QxEVcv);
-    intl2 = arg1(dependencyMap[17]).intl;
-    obj.valueLabel = intl2.string(arg1(dependencyMap[17]).t.an9Ry3);
+    intl = require("getSystemLocale").intl;
+    obj.label = intl.string(require("getSystemLocale").t.QxEVcv);
+    intl2 = require("getSystemLocale").intl;
+    obj.valueLabel = intl2.string(require("getSystemLocale").t.an9Ry3);
     items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
     items[0] = obj;
     obj = { value: AuditLogActions.GUILD_UPDATE };
-    intl3 = arg1(dependencyMap[17]).intl;
-    obj.label = intl3.string(arg1(dependencyMap[17]).t.5INZa3);
+    intl3 = require("getSystemLocale").intl;
+    obj.label = intl3.string(require("getSystemLocale").t["5INZa3"]);
     items[1] = obj;
     obj1 = { value: AuditLogActions.CHANNEL_CREATE };
-    intl4 = arg1(dependencyMap[17]).intl;
-    obj1.label = intl4.string(arg1(dependencyMap[17]).t.2uh4vJ);
+    intl4 = require("getSystemLocale").intl;
+    obj1.label = intl4.string(require("getSystemLocale").t["2uh4vJ"]);
     items[2] = obj1;
     obj2 = { value: AuditLogActions.CHANNEL_UPDATE };
-    intl5 = arg1(dependencyMap[17]).intl;
-    obj2.label = intl5.string(arg1(dependencyMap[17]).t.mGsBLV);
+    intl5 = require("getSystemLocale").intl;
+    obj2.label = intl5.string(require("getSystemLocale").t.mGsBLV);
     items[3] = obj2;
     obj3 = { value: AuditLogActions.CHANNEL_DELETE };
-    intl6 = arg1(dependencyMap[17]).intl;
-    obj3.label = intl6.string(arg1(dependencyMap[17]).t.hCHzAr);
+    intl6 = require("getSystemLocale").intl;
+    obj3.label = intl6.string(require("getSystemLocale").t.hCHzAr);
     items[4] = obj3;
     obj4 = { value: AuditLogActions.CHANNEL_OVERWRITE_CREATE };
-    intl7 = arg1(dependencyMap[17]).intl;
-    obj4.label = intl7.string(arg1(dependencyMap[17]).t.8TnAMP);
+    intl7 = require("getSystemLocale").intl;
+    obj4.label = intl7.string(require("getSystemLocale").t["8TnAMP"]);
     items[5] = obj4;
     obj5 = { value: AuditLogActions.CHANNEL_OVERWRITE_UPDATE };
-    intl8 = arg1(dependencyMap[17]).intl;
-    obj5.label = intl8.string(arg1(dependencyMap[17]).t.Jqx0Bi);
+    intl8 = require("getSystemLocale").intl;
+    obj5.label = intl8.string(require("getSystemLocale").t.Jqx0Bi);
     items[6] = obj5;
     obj6 = { value: AuditLogActions.CHANNEL_OVERWRITE_DELETE };
-    intl9 = arg1(dependencyMap[17]).intl;
-    obj6.label = intl9.string(arg1(dependencyMap[17]).t.gBXOr4);
+    intl9 = require("getSystemLocale").intl;
+    obj6.label = intl9.string(require("getSystemLocale").t.gBXOr4);
     items[7] = obj6;
     obj7 = { value: AuditLogActions.MEMBER_KICK };
-    intl10 = arg1(dependencyMap[17]).intl;
-    obj7.label = intl10.string(arg1(dependencyMap[17]).t.Q1/hN8);
+    intl10 = require("getSystemLocale").intl;
+    obj7.label = intl10.string(require("getSystemLocale").t["Q1/hN8"]);
     items[8] = obj7;
     obj8 = { value: AuditLogActions.MEMBER_PRUNE };
-    intl11 = arg1(dependencyMap[17]).intl;
-    obj8.label = intl11.string(arg1(dependencyMap[17]).t.tOTTja);
+    intl11 = require("getSystemLocale").intl;
+    obj8.label = intl11.string(require("getSystemLocale").t.tOTTja);
     items[9] = obj8;
     obj9 = { value: AuditLogActions.MEMBER_BAN_ADD };
-    intl12 = arg1(dependencyMap[17]).intl;
-    obj9.label = intl12.string(arg1(dependencyMap[17]).t.NfPn+e);
+    intl12 = require("getSystemLocale").intl;
+    obj9.label = intl12.string(require("getSystemLocale").t["NfPn+e"]);
     items[10] = obj9;
     obj10 = { value: AuditLogActions.MEMBER_BAN_REMOVE };
-    intl13 = arg1(dependencyMap[17]).intl;
-    obj10.label = intl13.string(arg1(dependencyMap[17]).t.XCsGfI);
+    intl13 = require("getSystemLocale").intl;
+    obj10.label = intl13.string(require("getSystemLocale").t.XCsGfI);
     items[11] = obj10;
     obj11 = { value: AuditLogActions.MEMBER_UPDATE };
-    intl14 = arg1(dependencyMap[17]).intl;
-    obj11.label = intl14.string(arg1(dependencyMap[17]).t.F/jmNJ);
+    intl14 = require("getSystemLocale").intl;
+    obj11.label = intl14.string(require("getSystemLocale").t["F/jmNJ"]);
     items[12] = obj11;
     obj12 = { value: AuditLogActions.MEMBER_ROLE_UPDATE };
-    intl15 = arg1(dependencyMap[17]).intl;
-    obj12.label = intl15.string(arg1(dependencyMap[17]).t.zAveSI);
+    intl15 = require("getSystemLocale").intl;
+    obj12.label = intl15.string(require("getSystemLocale").t.zAveSI);
     items[13] = obj12;
     obj13 = { value: AuditLogActions.MEMBER_MOVE };
-    intl16 = arg1(dependencyMap[17]).intl;
-    obj13.label = intl16.string(arg1(dependencyMap[17]).t.QshteR);
+    intl16 = require("getSystemLocale").intl;
+    obj13.label = intl16.string(require("getSystemLocale").t.QshteR);
     items[14] = obj13;
     obj14 = { value: AuditLogActions.MEMBER_DISCONNECT };
-    intl17 = arg1(dependencyMap[17]).intl;
-    obj14.label = intl17.string(arg1(dependencyMap[17]).t.Z45os7);
+    intl17 = require("getSystemLocale").intl;
+    obj14.label = intl17.string(require("getSystemLocale").t.Z45os7);
     items[15] = obj14;
     obj15 = { value: AuditLogActions.BOT_ADD };
-    intl18 = arg1(dependencyMap[17]).intl;
-    obj15.label = intl18.string(arg1(dependencyMap[17]).t.vuH24Z);
+    intl18 = require("getSystemLocale").intl;
+    obj15.label = intl18.string(require("getSystemLocale").t.vuH24Z);
     items[16] = obj15;
     obj16 = { value: AuditLogActions.THREAD_CREATE };
-    intl19 = arg1(dependencyMap[17]).intl;
-    obj16.label = intl19.string(arg1(dependencyMap[17]).t.+zl0DG);
+    intl19 = require("getSystemLocale").intl;
+    obj16.label = intl19.string(require("getSystemLocale").t["+zl0DG"]);
     items[17] = obj16;
     obj17 = { value: AuditLogActions.THREAD_UPDATE };
-    intl20 = arg1(dependencyMap[17]).intl;
-    obj17.label = intl20.string(arg1(dependencyMap[17]).t.rbIry3);
+    intl20 = require("getSystemLocale").intl;
+    obj17.label = intl20.string(require("getSystemLocale").t.rbIry3);
     items[18] = obj17;
     obj18 = { value: AuditLogActions.THREAD_DELETE };
-    intl21 = arg1(dependencyMap[17]).intl;
-    obj18.label = intl21.string(arg1(dependencyMap[17]).t.hFjNEA);
+    intl21 = require("getSystemLocale").intl;
+    obj18.label = intl21.string(require("getSystemLocale").t.hFjNEA);
     items[19] = obj18;
     obj19 = { value: AuditLogActions.ROLE_CREATE };
-    intl22 = arg1(dependencyMap[17]).intl;
-    obj19.label = intl22.string(arg1(dependencyMap[17]).t.AbxKtv);
+    intl22 = require("getSystemLocale").intl;
+    obj19.label = intl22.string(require("getSystemLocale").t.AbxKtv);
     items[20] = obj19;
     obj20 = { value: AuditLogActions.ROLE_UPDATE };
-    intl23 = arg1(dependencyMap[17]).intl;
-    obj20.label = intl23.string(arg1(dependencyMap[17]).t.t3Z6sU);
+    intl23 = require("getSystemLocale").intl;
+    obj20.label = intl23.string(require("getSystemLocale").t.t3Z6sU);
     items[21] = obj20;
     obj21 = { value: AuditLogActions.ROLE_DELETE };
-    intl24 = arg1(dependencyMap[17]).intl;
-    obj21.label = intl24.string(arg1(dependencyMap[17]).t.YsFpa4);
+    intl24 = require("getSystemLocale").intl;
+    obj21.label = intl24.string(require("getSystemLocale").t.YsFpa4);
     items[22] = obj21;
     obj22 = { value: AuditLogActions.ONBOARDING_PROMPT_CREATE };
-    intl25 = arg1(dependencyMap[17]).intl;
-    obj22.label = intl25.string(arg1(dependencyMap[17]).t.ZV9tqc);
+    intl25 = require("getSystemLocale").intl;
+    obj22.label = intl25.string(require("getSystemLocale").t.ZV9tqc);
     items[23] = obj22;
     obj23 = { value: AuditLogActions.ONBOARDING_PROMPT_UPDATE };
-    intl26 = arg1(dependencyMap[17]).intl;
-    obj23.label = intl26.string(arg1(dependencyMap[17]).t.PcOdvX);
+    intl26 = require("getSystemLocale").intl;
+    obj23.label = intl26.string(require("getSystemLocale").t.PcOdvX);
     items[24] = obj23;
     obj24 = { value: AuditLogActions.ONBOARDING_PROMPT_DELETE };
-    intl27 = arg1(dependencyMap[17]).intl;
-    obj24.label = intl27.string(arg1(dependencyMap[17]).t.+r33Na);
+    intl27 = require("getSystemLocale").intl;
+    obj24.label = intl27.string(require("getSystemLocale").t["+r33Na"]);
     items[25] = obj24;
     obj25 = { value: AuditLogActions.ONBOARDING_CREATE };
-    intl28 = arg1(dependencyMap[17]).intl;
-    obj25.label = intl28.string(arg1(dependencyMap[17]).t.uDADde);
+    intl28 = require("getSystemLocale").intl;
+    obj25.label = intl28.string(require("getSystemLocale").t.uDADde);
     items[26] = obj25;
     obj26 = { value: AuditLogActions.ONBOARDING_UPDATE };
-    intl29 = arg1(dependencyMap[17]).intl;
-    obj26.label = intl29.string(arg1(dependencyMap[17]).t.J1H1wg);
+    intl29 = require("getSystemLocale").intl;
+    obj26.label = intl29.string(require("getSystemLocale").t.J1H1wg);
     items[27] = obj26;
     obj27 = { value: AuditLogActions.HOME_SETTINGS_CREATE };
-    intl30 = arg1(dependencyMap[17]).intl;
-    obj27.label = intl30.string(arg1(dependencyMap[17]).t.Di4cvI);
+    intl30 = require("getSystemLocale").intl;
+    obj27.label = intl30.string(require("getSystemLocale").t.Di4cvI);
     items[28] = obj27;
     obj28 = { value: AuditLogActions.HOME_SETTINGS_UPDATE };
-    intl31 = arg1(dependencyMap[17]).intl;
-    obj28.label = intl31.string(arg1(dependencyMap[17]).t.tzyrJH);
+    intl31 = require("getSystemLocale").intl;
+    obj28.label = intl31.string(require("getSystemLocale").t.tzyrJH);
     items[29] = obj28;
     obj29 = { value: AuditLogActions.INVITE_CREATE };
-    intl32 = arg1(dependencyMap[17]).intl;
-    obj29.label = intl32.string(arg1(dependencyMap[17]).t.0BNJdX);
+    intl32 = require("getSystemLocale").intl;
+    obj29.label = intl32.string(require("getSystemLocale").t["0BNJdX"]);
     items[30] = obj29;
     obj30 = { value: AuditLogActions.INVITE_UPDATE };
-    intl33 = arg1(dependencyMap[17]).intl;
-    obj30.label = intl33.string(arg1(dependencyMap[17]).t.o++obV);
+    intl33 = require("getSystemLocale").intl;
+    obj30.label = intl33.string(require("getSystemLocale").t["o++obV"]);
     items[31] = obj30;
     obj31 = { value: AuditLogActions.INVITE_DELETE };
-    intl34 = arg1(dependencyMap[17]).intl;
-    obj31.label = intl34.string(arg1(dependencyMap[17]).t.iP40Az);
+    intl34 = require("getSystemLocale").intl;
+    obj31.label = intl34.string(require("getSystemLocale").t.iP40Az);
     items[32] = obj31;
     obj32 = { value: AuditLogActions.WEBHOOK_CREATE };
-    intl35 = arg1(dependencyMap[17]).intl;
-    obj32.label = intl35.string(arg1(dependencyMap[17]).t.tBF4+S);
+    intl35 = require("getSystemLocale").intl;
+    obj32.label = intl35.string(require("getSystemLocale").t["tBF4+S"]);
     items[33] = obj32;
     obj33 = { value: AuditLogActions.WEBHOOK_UPDATE };
-    intl36 = arg1(dependencyMap[17]).intl;
-    obj33.label = intl36.string(arg1(dependencyMap[17]).t.eV3McO);
+    intl36 = require("getSystemLocale").intl;
+    obj33.label = intl36.string(require("getSystemLocale").t.eV3McO);
     items[34] = obj33;
     obj34 = { value: AuditLogActions.WEBHOOK_DELETE };
-    intl37 = arg1(dependencyMap[17]).intl;
-    obj34.label = intl37.string(arg1(dependencyMap[17]).t.AAL3K1);
+    intl37 = require("getSystemLocale").intl;
+    obj34.label = intl37.string(require("getSystemLocale").t.AAL3K1);
     items[35] = obj34;
     obj35 = { value: AuditLogActions.EMOJI_CREATE };
-    intl38 = arg1(dependencyMap[17]).intl;
-    obj35.label = intl38.string(arg1(dependencyMap[17]).t.RuWm0V);
+    intl38 = require("getSystemLocale").intl;
+    obj35.label = intl38.string(require("getSystemLocale").t.RuWm0V);
     items[36] = obj35;
     obj36 = { value: AuditLogActions.EMOJI_UPDATE };
-    intl39 = arg1(dependencyMap[17]).intl;
-    obj36.label = intl39.string(arg1(dependencyMap[17]).t.WzdUY7);
+    intl39 = require("getSystemLocale").intl;
+    obj36.label = intl39.string(require("getSystemLocale").t.WzdUY7);
     items[37] = obj36;
     obj37 = { value: AuditLogActions.EMOJI_DELETE };
-    intl40 = arg1(dependencyMap[17]).intl;
-    obj37.label = intl40.string(arg1(dependencyMap[17]).t.c3dK2L);
+    intl40 = require("getSystemLocale").intl;
+    obj37.label = intl40.string(require("getSystemLocale").t.c3dK2L);
     items[38] = obj37;
     obj38 = { value: AuditLogActions.MESSAGE_DELETE };
-    intl41 = arg1(dependencyMap[17]).intl;
-    obj38.label = intl41.string(arg1(dependencyMap[17]).t.daTfXh);
+    intl41 = require("getSystemLocale").intl;
+    obj38.label = intl41.string(require("getSystemLocale").t.daTfXh);
     items[39] = obj38;
     obj39 = { value: AuditLogActions.MESSAGE_BULK_DELETE };
-    intl42 = arg1(dependencyMap[17]).intl;
-    obj39.label = intl42.string(arg1(dependencyMap[17]).t.nrBxeh);
+    intl42 = require("getSystemLocale").intl;
+    obj39.label = intl42.string(require("getSystemLocale").t.nrBxeh);
     items[40] = obj39;
     obj40 = { value: AuditLogActions.MESSAGE_PIN };
-    intl43 = arg1(dependencyMap[17]).intl;
-    obj40.label = intl43.string(arg1(dependencyMap[17]).t.MUldyN);
+    intl43 = require("getSystemLocale").intl;
+    obj40.label = intl43.string(require("getSystemLocale").t.MUldyN);
     items[41] = obj40;
     obj41 = { value: AuditLogActions.MESSAGE_UNPIN };
-    intl44 = arg1(dependencyMap[17]).intl;
-    obj41.label = intl44.string(arg1(dependencyMap[17]).t.n4zKhA);
+    intl44 = require("getSystemLocale").intl;
+    obj41.label = intl44.string(require("getSystemLocale").t.n4zKhA);
     items[42] = obj41;
     obj42 = { value: AuditLogActions.INTEGRATION_CREATE };
-    intl45 = arg1(dependencyMap[17]).intl;
-    obj42.label = intl45.string(arg1(dependencyMap[17]).t.deNm8x);
+    intl45 = require("getSystemLocale").intl;
+    obj42.label = intl45.string(require("getSystemLocale").t.deNm8x);
     items[43] = obj42;
     obj43 = { value: AuditLogActions.INTEGRATION_UPDATE };
-    intl46 = arg1(dependencyMap[17]).intl;
-    obj43.label = intl46.string(arg1(dependencyMap[17]).t.HT7Sfg);
+    intl46 = require("getSystemLocale").intl;
+    obj43.label = intl46.string(require("getSystemLocale").t.HT7Sfg);
     items[44] = obj43;
     obj44 = { value: AuditLogActions.INTEGRATION_DELETE };
-    intl47 = arg1(dependencyMap[17]).intl;
-    obj44.label = intl47.string(arg1(dependencyMap[17]).t.+kJ09q);
+    intl47 = require("getSystemLocale").intl;
+    obj44.label = intl47.string(require("getSystemLocale").t["+kJ09q"]);
     items[45] = obj44;
     obj45 = { value: AuditLogActions.STICKER_CREATE };
-    intl48 = arg1(dependencyMap[17]).intl;
-    obj45.label = intl48.string(arg1(dependencyMap[17]).t.3DzNjU);
+    intl48 = require("getSystemLocale").intl;
+    obj45.label = intl48.string(require("getSystemLocale").t["3DzNjU"]);
     items[46] = obj45;
     obj46 = { value: AuditLogActions.STICKER_UPDATE };
-    intl49 = arg1(dependencyMap[17]).intl;
-    obj46.label = intl49.string(arg1(dependencyMap[17]).t.tdhW5b);
+    intl49 = require("getSystemLocale").intl;
+    obj46.label = intl49.string(require("getSystemLocale").t.tdhW5b);
     items[47] = obj46;
     obj47 = { value: AuditLogActions.STICKER_DELETE };
-    intl50 = arg1(dependencyMap[17]).intl;
-    obj47.label = intl50.string(arg1(dependencyMap[17]).t.+ZhGOk);
+    intl50 = require("getSystemLocale").intl;
+    obj47.label = intl50.string(require("getSystemLocale").t["+ZhGOk"]);
     items[48] = obj47;
     obj48 = { value: AuditLogActions.STAGE_INSTANCE_CREATE };
-    intl51 = arg1(dependencyMap[17]).intl;
-    obj48.label = intl51.string(arg1(dependencyMap[17]).t.sPbjA6);
+    intl51 = require("getSystemLocale").intl;
+    obj48.label = intl51.string(require("getSystemLocale").t.sPbjA6);
     items[49] = obj48;
     obj49 = { value: AuditLogActions.STAGE_INSTANCE_UPDATE };
-    intl52 = arg1(dependencyMap[17]).intl;
-    obj49.label = intl52.string(arg1(dependencyMap[17]).t.cW9LfJ);
+    intl52 = require("getSystemLocale").intl;
+    obj49.label = intl52.string(require("getSystemLocale").t.cW9LfJ);
     items[50] = obj49;
     obj50 = { value: AuditLogActions.STAGE_INSTANCE_DELETE };
-    intl53 = arg1(dependencyMap[17]).intl;
-    obj50.label = intl53.string(arg1(dependencyMap[17]).t.U1r+yD);
+    intl53 = require("getSystemLocale").intl;
+    obj50.label = intl53.string(require("getSystemLocale").t["U1r+yD"]);
     items[51] = obj50;
     obj51 = { value: AuditLogActions.GUILD_SCHEDULED_EVENT_CREATE };
-    intl54 = arg1(dependencyMap[17]).intl;
-    obj51.label = intl54.string(arg1(dependencyMap[17]).t.H81Zyy);
+    intl54 = require("getSystemLocale").intl;
+    obj51.label = intl54.string(require("getSystemLocale").t.H81Zyy);
     items[52] = obj51;
     obj52 = { value: AuditLogActions.GUILD_SCHEDULED_EVENT_UPDATE };
-    intl55 = arg1(dependencyMap[17]).intl;
-    obj52.label = intl55.string(arg1(dependencyMap[17]).t.FM69l+);
+    intl55 = require("getSystemLocale").intl;
+    obj52.label = intl55.string(require("getSystemLocale").t["FM69l+"]);
     items[53] = obj52;
     obj53 = { value: AuditLogActions.GUILD_SCHEDULED_EVENT_DELETE };
-    intl56 = arg1(dependencyMap[17]).intl;
-    obj53.label = intl56.string(arg1(dependencyMap[17]).t.Rq28Bh);
+    intl56 = require("getSystemLocale").intl;
+    obj53.label = intl56.string(require("getSystemLocale").t.Rq28Bh);
     items[54] = obj53;
     obj54 = { value: AuditLogActions.APPLICATION_COMMAND_PERMISSION_UPDATE };
-    intl57 = arg1(dependencyMap[17]).intl;
-    obj54.label = intl57.string(arg1(dependencyMap[17]).t.iPdFOt);
+    intl57 = require("getSystemLocale").intl;
+    obj54.label = intl57.string(require("getSystemLocale").t.iPdFOt);
     items[55] = obj54;
     obj55 = { value: AuditLogActions.AUTO_MODERATION_BLOCK_MESSAGE };
-    intl58 = arg1(dependencyMap[17]).intl;
-    obj55.label = intl58.string(arg1(dependencyMap[17]).t.gNq5z6);
+    intl58 = require("getSystemLocale").intl;
+    obj55.label = intl58.string(require("getSystemLocale").t.gNq5z6);
     items[56] = obj55;
     obj56 = { value: AuditLogActions.AUTO_MODERATION_RULE_CREATE };
-    intl59 = arg1(dependencyMap[17]).intl;
-    obj56.label = intl59.string(arg1(dependencyMap[17]).t.f72Zqb);
+    intl59 = require("getSystemLocale").intl;
+    obj56.label = intl59.string(require("getSystemLocale").t.f72Zqb);
     items[57] = obj56;
     obj57 = { value: AuditLogActions.AUTO_MODERATION_RULE_UPDATE };
-    intl60 = arg1(dependencyMap[17]).intl;
-    obj57.label = intl60.string(arg1(dependencyMap[17]).t.XeqIiv);
+    intl60 = require("getSystemLocale").intl;
+    obj57.label = intl60.string(require("getSystemLocale").t.XeqIiv);
     items[58] = obj57;
     obj58 = { value: AuditLogActions.AUTO_MODERATION_RULE_DELETE };
-    intl61 = arg1(dependencyMap[17]).intl;
-    obj58.label = intl61.string(arg1(dependencyMap[17]).t.syAApU);
+    intl61 = require("getSystemLocale").intl;
+    obj58.label = intl61.string(require("getSystemLocale").t.syAApU);
     items[59] = obj58;
     obj59 = { value: AuditLogActions.GUILD_HOME_FEATURE_ITEM };
-    intl62 = arg1(dependencyMap[17]).intl;
-    obj59.label = intl62.string(arg1(dependencyMap[17]).t.lhG5KN);
+    intl62 = require("getSystemLocale").intl;
+    obj59.label = intl62.string(require("getSystemLocale").t.lhG5KN);
     items[60] = obj59;
     obj60 = { value: AuditLogActions.GUILD_HOME_REMOVE_ITEM };
-    intl63 = arg1(dependencyMap[17]).intl;
-    obj60.label = intl63.string(arg1(dependencyMap[17]).t.lRPRwS);
+    intl63 = require("getSystemLocale").intl;
+    obj60.label = intl63.string(require("getSystemLocale").t.lRPRwS);
     items[61] = obj60;
     obj61 = { value: AuditLogActions.SOUNDBOARD_SOUND_CREATE };
-    intl64 = arg1(dependencyMap[17]).intl;
-    obj61.label = intl64.string(arg1(dependencyMap[17]).t.yoRi5r);
+    intl64 = require("getSystemLocale").intl;
+    obj61.label = intl64.string(require("getSystemLocale").t.yoRi5r);
     items[62] = obj61;
     obj62 = { value: AuditLogActions.SOUNDBOARD_SOUND_UPDATE };
-    intl65 = arg1(dependencyMap[17]).intl;
-    obj62.label = intl65.string(arg1(dependencyMap[17]).t.uKlG0Z);
+    intl65 = require("getSystemLocale").intl;
+    obj62.label = intl65.string(require("getSystemLocale").t.uKlG0Z);
     items[63] = obj62;
     obj63 = { value: AuditLogActions.SOUNDBOARD_SOUND_DELETE };
-    intl66 = arg1(dependencyMap[17]).intl;
-    obj63.label = intl66.string(arg1(dependencyMap[17]).t.gq0iCT);
+    intl66 = require("getSystemLocale").intl;
+    obj63.label = intl66.string(require("getSystemLocale").t.gq0iCT);
     items[64] = obj63;
     obj64 = { value: AuditLogActions.VOICE_CHANNEL_STATUS_CREATE };
-    intl67 = arg1(dependencyMap[17]).intl;
-    obj64.label = intl67.string(arg1(dependencyMap[17]).t.rGr0YM);
+    intl67 = require("getSystemLocale").intl;
+    obj64.label = intl67.string(require("getSystemLocale").t.rGr0YM);
     items[65] = obj64;
     obj65 = { value: AuditLogActions.VOICE_CHANNEL_STATUS_DELETE };
-    intl68 = arg1(dependencyMap[17]).intl;
-    obj65.label = intl68.string(arg1(dependencyMap[17]).t.V9PEQ4);
+    intl68 = require("getSystemLocale").intl;
+    obj65.label = intl68.string(require("getSystemLocale").t.V9PEQ4);
     items[66] = obj65;
     return items;
   }
 }
-const obj = {
-  [arg1(dependencyMap[16]).TimeUnits.SECONDS]: (seconds) => {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.formatToPlainString(arg1(dependencyMap[17]).t.geSp4K, { seconds });
+let obj = {
+  [arg1(4206).TimeUnits.SECONDS]: (seconds) => {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.geSp4K, { seconds });
   },
-  [arg1(dependencyMap[16]).TimeUnits.MINUTES]: (minutes) => {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.formatToPlainString(arg1(dependencyMap[17]).t.iXLF9W, { minutes });
+  [arg1(4206).TimeUnits.MINUTES]: (minutes) => {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.iXLF9W, { minutes });
   },
-  [arg1(dependencyMap[16]).TimeUnits.HOURS]: (hours) => {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.formatToPlainString(arg1(dependencyMap[17]).t.xCjYxK, { hours });
+  [arg1(4206).TimeUnits.HOURS]: (hours) => {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.xCjYxK, { hours });
   },
-  [arg1(dependencyMap[16]).TimeUnits.DAYS]: (days) => {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.formatToPlainString(arg1(dependencyMap[17]).t.k2UNz+, { days });
+  [arg1(4206).TimeUnits.DAYS]: (days) => {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["k2UNz+"], { days });
   }
 };
-const tmp3 = arg1(dependencyMap[14]);
-const result = arg1(dependencyMap[31]).fileFinishedImporting("modules/guild_settings/audit_log/AuditLogUtils.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings/audit_log/AuditLogUtils.tsx");
 
 export const getChangeStrings = function getChangeStrings(targetType) {
   targetType = targetType.targetType;
   if (AuditLogTargetTypes.GUILD === targetType) {
-    return function GuildChangeStrings() {
+    return (function GuildChangeStrings() {
       let ALL_MEMBERS;
       let ALL_MESSAGES;
       let DISABLED;
@@ -824,174 +840,174 @@ export const getChangeStrings = function getChangeStrings(targetType) {
       let NONE2;
       let ONLY_MENTIONS;
       let VERY_HIGH;
-      let obj = { [closure_16.NAME]: () => callback(closure_3[17]).t.CkDiNH };
-      obj[constants.DESCRIPTION] = callback4(callback(closure_3[17]).t.RP3Ey3, callback(closure_3[17]).t.QAVj1Y);
-      obj[constants.ICON_HASH] = () => callback(closure_3[17]).t.iLZ8Q9;
-      obj[constants.SPLASH_HASH] = () => callback(closure_3[17]).t.4VV6dn;
-      obj[constants.DISCOVERY_SPLASH_HASH] = () => callback(closure_3[17]).t.2pds6p;
-      obj[constants.BANNER_HASH] = callback4(callback(closure_3[17]).t.Cxq4zO, callback(closure_3[17]).t.H7eE/9);
-      obj[constants.OWNER_ID] = () => callback(closure_3[17]).t.8ltsLT;
-      obj[constants.REGION] = () => callback(closure_3[17]).t.X9r5Kf;
-      obj[constants.PREFERRED_LOCALE] = () => callback(closure_3[17]).t.UnXuDS;
-      obj[constants.AFK_CHANNEL_ID] = callback4(callback(closure_3[17]).t.ClBuA4, callback(closure_3[17]).t.ms+xtL);
-      obj[constants.AFK_TIMEOUT] = () => callback(closure_3[17]).t.q21fHa;
-      obj[constants.SYSTEM_CHANNEL_ID] = callback4(callback(closure_3[17]).t.H1VXaa, callback(closure_3[17]).t.XhtmxJ);
-      obj[constants.RULES_CHANNEL_ID] = callback4(callback(closure_3[17]).t.OI6MG2, callback(closure_3[17]).t.lik3tI);
-      obj[constants.PUBLIC_UPDATES_CHANNEL_ID] = callback4(callback(closure_3[17]).t.YxBKrY, callback(closure_3[17]).t.Ehsnij);
-      obj = { [NONE]: callback(closure_3[17]).t.voaCCQ, [ELEVATED]: callback(closure_3[17]).t.pRNVwz };
-      ({ NONE, ELEVATED } = closure_18);
-      obj[constants.MFA_LEVEL] = callback7(obj);
-      obj[constants.WIDGET_ENABLED] = callback6(callback(closure_3[17]).t.ADIty8, callback(closure_3[17]).t.nf58VY);
-      obj[constants.WIDGET_CHANNEL_ID] = callback4(callback(closure_3[17]).t.6SBsDc, callback(closure_3[17]).t.deQ5wO);
-      obj = { [NONE2]: callback(closure_3[17]).t.W27rsc, [LOW]: callback(closure_3[17]).t.V8P+Pw, [MEDIUM]: callback(closure_3[17]).t.ERQFau, [HIGH]: callback(closure_3[17]).t.83fN0j, [VERY_HIGH]: callback(closure_3[17]).t.PnkQJE };
-      ({ NONE: NONE2, LOW, MEDIUM, HIGH, VERY_HIGH } = closure_19);
-      obj[constants.VERIFICATION_LEVEL] = callback7(obj);
-      ({ ALL_MESSAGES, ONLY_MENTIONS } = closure_20);
-      obj[constants.DEFAULT_MESSAGE_NOTIFICATIONS] = callback7({ [ALL_MESSAGES]: callback(closure_3[17]).t.LDi76A, [ONLY_MENTIONS]: callback(closure_3[17]).t.6K83ba });
-      obj[constants.VANITY_URL_CODE] = callback4(callback(closure_3[17]).t.Zplsov, callback(closure_3[17]).t.u6cArh);
-      const obj1 = { [ALL_MESSAGES]: callback(closure_3[17]).t.LDi76A, [ONLY_MENTIONS]: callback(closure_3[17]).t.6K83ba };
-      ({ DISABLED, MEMBERS_WITHOUT_ROLES, ALL_MEMBERS } = closure_21);
-      obj[constants.EXPLICIT_CONTENT_FILTER] = callback7({ [DISABLED]: callback(closure_3[17]).t.fmOeL3, [MEMBERS_WITHOUT_ROLES]: callback(closure_3[17]).t.4FghYw, [ALL_MEMBERS]: callback(closure_3[17]).t.olyrSm });
-      obj[constants.PREMIUM_PROGRESS_BAR_ENABLED] = callback6(callback(closure_3[17]).t.rBT0sn, callback(closure_3[17]).t.gc+te5);
-      obj[constants.AUTO_MODERATION_TRIGGERED_RULE_NAME] = () => callback(closure_3[17]).t.YbouFH;
-      obj[constants.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS] = () => callback(closure_3[17]).t.g3DMjB;
-      obj[constants.SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS] = () => callback(closure_3[17]).t.+fQAel;
-      obj[constants.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS] = () => callback(closure_3[17]).t.E1fc4v;
-      obj[constants.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES] = () => callback(closure_3[17]).t.XbwtSA;
-      const merged = Object.assign(callback2());
+      let obj = { [outer1_16.NAME]: () => outer2_0(outer2_3[17]).t.CkDiNH };
+      obj[outer1_16.DESCRIPTION] = outer1_54(outer1_0(outer1_3[17]).t.RP3Ey3, outer1_0(outer1_3[17]).t.QAVj1Y);
+      obj[outer1_16.ICON_HASH] = () => outer2_0(outer2_3[17]).t.iLZ8Q9;
+      obj[outer1_16.SPLASH_HASH] = () => outer2_0(outer2_3[17]).t["4VV6dn"];
+      obj[outer1_16.DISCOVERY_SPLASH_HASH] = () => outer2_0(outer2_3[17]).t["2pds6p"];
+      obj[outer1_16.BANNER_HASH] = outer1_54(outer1_0(outer1_3[17]).t.Cxq4zO, outer1_0(outer1_3[17]).t["H7eE/9"]);
+      obj[outer1_16.OWNER_ID] = () => outer2_0(outer2_3[17]).t["8ltsLT"];
+      obj[outer1_16.REGION] = () => outer2_0(outer2_3[17]).t.X9r5Kf;
+      obj[outer1_16.PREFERRED_LOCALE] = () => outer2_0(outer2_3[17]).t.UnXuDS;
+      obj[outer1_16.AFK_CHANNEL_ID] = outer1_54(outer1_0(outer1_3[17]).t.ClBuA4, outer1_0(outer1_3[17]).t["ms+xtL"]);
+      obj[outer1_16.AFK_TIMEOUT] = () => outer2_0(outer2_3[17]).t.q21fHa;
+      obj[outer1_16.SYSTEM_CHANNEL_ID] = outer1_54(outer1_0(outer1_3[17]).t.H1VXaa, outer1_0(outer1_3[17]).t.XhtmxJ);
+      obj[outer1_16.RULES_CHANNEL_ID] = outer1_54(outer1_0(outer1_3[17]).t.OI6MG2, outer1_0(outer1_3[17]).t.lik3tI);
+      obj[outer1_16.PUBLIC_UPDATES_CHANNEL_ID] = outer1_54(outer1_0(outer1_3[17]).t.YxBKrY, outer1_0(outer1_3[17]).t.Ehsnij);
+      obj = { [NONE]: outer1_0(outer1_3[17]).t.voaCCQ, [ELEVATED]: outer1_0(outer1_3[17]).t.pRNVwz };
+      ({ NONE, ELEVATED } = outer1_18);
+      obj[outer1_16.MFA_LEVEL] = outer1_57(obj);
+      obj[outer1_16.WIDGET_ENABLED] = outer1_56(outer1_0(outer1_3[17]).t.ADIty8, outer1_0(outer1_3[17]).t.nf58VY);
+      obj[outer1_16.WIDGET_CHANNEL_ID] = outer1_54(outer1_0(outer1_3[17]).t["6SBsDc"], outer1_0(outer1_3[17]).t.deQ5wO);
+      obj = { [NONE2]: outer1_0(outer1_3[17]).t.W27rsc, [LOW]: outer1_0(outer1_3[17]).t["V8P+Pw"], [MEDIUM]: outer1_0(outer1_3[17]).t.ERQFau, [HIGH]: outer1_0(outer1_3[17]).t["83fN0j"], [VERY_HIGH]: outer1_0(outer1_3[17]).t.PnkQJE };
+      ({ NONE: NONE2, LOW, MEDIUM, HIGH, VERY_HIGH } = outer1_19);
+      obj[outer1_16.VERIFICATION_LEVEL] = outer1_57(obj);
+      ({ ALL_MESSAGES, ONLY_MENTIONS } = outer1_20);
+      obj[outer1_16.DEFAULT_MESSAGE_NOTIFICATIONS] = outer1_57({ [ALL_MESSAGES]: outer1_0(outer1_3[17]).t.LDi76A, [ONLY_MENTIONS]: outer1_0(outer1_3[17]).t["6K83ba"] });
+      obj[outer1_16.VANITY_URL_CODE] = outer1_54(outer1_0(outer1_3[17]).t.Zplsov, outer1_0(outer1_3[17]).t.u6cArh);
+      const obj1 = { [ALL_MESSAGES]: outer1_0(outer1_3[17]).t.LDi76A, [ONLY_MENTIONS]: outer1_0(outer1_3[17]).t["6K83ba"] };
+      ({ DISABLED, MEMBERS_WITHOUT_ROLES, ALL_MEMBERS } = outer1_21);
+      obj[outer1_16.EXPLICIT_CONTENT_FILTER] = outer1_57({ [DISABLED]: outer1_0(outer1_3[17]).t.fmOeL3, [MEMBERS_WITHOUT_ROLES]: outer1_0(outer1_3[17]).t["4FghYw"], [ALL_MEMBERS]: outer1_0(outer1_3[17]).t.olyrSm });
+      obj[outer1_16.PREMIUM_PROGRESS_BAR_ENABLED] = outer1_56(outer1_0(outer1_3[17]).t.rBT0sn, outer1_0(outer1_3[17]).t["gc+te5"]);
+      obj[outer1_16.AUTO_MODERATION_TRIGGERED_RULE_NAME] = () => outer2_0(outer2_3[17]).t.YbouFH;
+      obj[outer1_16.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS] = () => outer2_0(outer2_3[17]).t.g3DMjB;
+      obj[outer1_16.SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS] = () => outer2_0(outer2_3[17]).t["+fQAel"];
+      obj[outer1_16.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS] = () => outer2_0(outer2_3[17]).t.E1fc4v;
+      obj[outer1_16.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES] = () => outer2_0(outer2_3[17]).t.XbwtSA;
+      const merged = Object.assign(outer1_42());
       return obj;
-    }();
+    })();
   } else {
     if (AuditLogTargetTypes.CHANNEL !== targetType) {
       if (AuditLogTargetTypes.CHANNEL_OVERWRITE !== targetType) {
         if (AuditLogTargetTypes.USER === targetType) {
-          return function UserChangeStrings() {
+          return (function UserChangeStrings() {
             const obj = {};
-            obj[constants.NICK] = callback5(callback(closure_3[17]).t.qXDsHv, callback(closure_3[17]).t.m+qury, callback(closure_3[17]).t.DvLvjF);
-            obj[constants.DEAF] = callback6(callback(closure_3[17]).t.mArLlW, callback(closure_3[17]).t.ddvVYG);
-            obj[constants.MUTE] = callback6(callback(closure_3[17]).t.bxs/lS, callback(closure_3[17]).t.FjecQM);
-            obj[constants.ROLES_REMOVE] = () => callback(closure_3[17]).t.+2SDWV;
-            obj[constants.ROLES_ADD] = () => callback(closure_3[17]).t.B3/3IJ;
-            obj[constants.PRUNE_DELETE_DAYS] = () => callback(closure_3[17]).t.+Cvc+D;
-            obj[constants.COMMUNICATION_DISABLED_UNTIL] = callback5(callback(closure_3[17]).t.LXTQr5, callback(closure_3[17]).t.LXTQr5, callback(closure_3[17]).t.ULSdnE);
-            obj[constants.BYPASSES_VERIFICATION] = callback6(callback(closure_3[17]).t.NBPBui, callback(closure_3[17]).t.zATost);
-            obj[constants.AUTO_MODERATION_TRIGGERED_RULE_NAME] = () => callback(closure_3[17]).t.YbouFH;
-            const merged = Object.assign(callback2());
+            obj[outer1_16.NICK] = outer1_55(outer1_0(outer1_3[17]).t.qXDsHv, outer1_0(outer1_3[17]).t["m+qury"], outer1_0(outer1_3[17]).t.DvLvjF);
+            obj[outer1_16.DEAF] = outer1_56(outer1_0(outer1_3[17]).t.mArLlW, outer1_0(outer1_3[17]).t.ddvVYG);
+            obj[outer1_16.MUTE] = outer1_56(outer1_0(outer1_3[17]).t["bxs/lS"], outer1_0(outer1_3[17]).t.FjecQM);
+            obj[outer1_16.ROLES_REMOVE] = () => outer2_0(outer2_3[17]).t["+2SDWV"];
+            obj[outer1_16.ROLES_ADD] = () => outer2_0(outer2_3[17]).t["B3/3IJ"];
+            obj[outer1_16.PRUNE_DELETE_DAYS] = () => outer2_0(outer2_3[17]).t["+Cvc+D"];
+            obj[outer1_16.COMMUNICATION_DISABLED_UNTIL] = outer1_55(outer1_0(outer1_3[17]).t.LXTQr5, outer1_0(outer1_3[17]).t.LXTQr5, outer1_0(outer1_3[17]).t.ULSdnE);
+            obj[outer1_16.BYPASSES_VERIFICATION] = outer1_56(outer1_0(outer1_3[17]).t.NBPBui, outer1_0(outer1_3[17]).t.zATost);
+            obj[outer1_16.AUTO_MODERATION_TRIGGERED_RULE_NAME] = () => outer2_0(outer2_3[17]).t.YbouFH;
+            const merged = Object.assign(outer1_42());
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.ROLE === targetType) {
-          return function RoleChangeStrings() {
+          return (function RoleChangeStrings() {
             let obj = {};
-            obj[constants.NAME] = callback3(callback(closure_3[17]).t.QBmlaD, callback(closure_3[17]).t.Lfs4r+);
-            obj[constants.DESCRIPTION] = callback3(callback(closure_3[17]).t.XeYKWJ, callback(closure_3[17]).t.PSfeIj);
-            obj[constants.PERMISSIONS_GRANTED] = () => callback(closure_3[17]).t.9i/DvE;
-            obj[constants.PERMISSIONS_DENIED] = () => callback(closure_3[17]).t.pa1ZVh;
-            obj = { #000000: callback(closure_3[17]).t.TK6E1H };
-            obj[constants.COLOR] = callback8(obj, callback(closure_3[17]).t.2FQFiw);
-            obj[constants.COLORS] = (newValue) => {
+            obj[outer1_16.NAME] = outer1_53(outer1_0(outer1_3[17]).t.QBmlaD, outer1_0(outer1_3[17]).t["Lfs4r+"]);
+            obj[outer1_16.DESCRIPTION] = outer1_53(outer1_0(outer1_3[17]).t.XeYKWJ, outer1_0(outer1_3[17]).t.PSfeIj);
+            obj[outer1_16.PERMISSIONS_GRANTED] = () => outer2_0(outer2_3[17]).t["9i/DvE"];
+            obj[outer1_16.PERMISSIONS_DENIED] = () => outer2_0(outer2_3[17]).t.pa1ZVh;
+            obj = { "#000000": outer1_0(outer1_3[17]).t.TK6E1H };
+            obj[outer1_16.COLOR] = outer1_58(obj, outer1_0(outer1_3[17]).t["2FQFiw"]);
+            obj[outer1_16.COLORS] = (newValue) => {
               if (null == newValue.newValue.secondary_color) {
-                WnSwL/ = callback(closure_3[17]).t.U44ttm;
+                WnSwL_ = outer2_0(outer2_3[17]).t.U44ttm;
               } else {
-                WnSwL/ = callback(closure_3[17]).t.WnSwL/;
+                WnSwL_ = outer2_0(outer2_3[17]).t["WnSwL/"];
               }
               return WnSwL_;
             };
-            obj[constants.HOIST] = callback6(callback(closure_3[17]).t.gWfe24, callback(closure_3[17]).t.+tb8kN);
-            obj[constants.MENTIONABLE] = callback6(callback(closure_3[17]).t.LL8VFF, callback(closure_3[17]).t.Z7xzmC);
-            obj[constants.ICON_HASH] = () => callback(closure_3[17]).t.iEE79/;
-            obj[constants.UNICODE_EMOJI] = () => callback(closure_3[17]).t.KiLMM0;
-            const merged = Object.assign(callback2());
+            obj[outer1_16.HOIST] = outer1_56(outer1_0(outer1_3[17]).t.gWfe24, outer1_0(outer1_3[17]).t["+tb8kN"]);
+            obj[outer1_16.MENTIONABLE] = outer1_56(outer1_0(outer1_3[17]).t.LL8VFF, outer1_0(outer1_3[17]).t.Z7xzmC);
+            obj[outer1_16.ICON_HASH] = () => outer2_0(outer2_3[17]).t["iEE79/"];
+            obj[outer1_16.UNICODE_EMOJI] = () => outer2_0(outer2_3[17]).t.KiLMM0;
+            const merged = Object.assign(outer1_42());
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.ONBOARDING_PROMPT === targetType) {
-          return function OnboardingPromptChangeStrings() {
+          return (function OnboardingPromptChangeStrings() {
             const obj = {};
-            const merged = Object.assign(callback2());
-            obj[constants.TITLE] = callback3(callback(closure_3[17]).t.sNpuy/, callback(closure_3[17]).t.3Ukc/g);
-            obj[constants.DESCRIPTION] = callback3(callback(closure_3[17]).t.PP1q0x, callback(closure_3[17]).t.z7pYLg);
-            obj[constants.OPTIONS] = () => callback(closure_3[17]).t.3G5C9+;
-            obj[constants.SINGLE_SELECT] = callback6(callback(closure_3[17]).t.v4WnR3, callback(closure_3[17]).t.6Qg3uC);
-            obj[constants.REQUIRED] = callback6(callback(closure_3[17]).t.0MPAM6, callback(closure_3[17]).t.pwsXir);
+            const merged = Object.assign(outer1_42());
+            obj[outer1_16.TITLE] = outer1_53(outer1_0(outer1_3[17]).t["sNpuy/"], outer1_0(outer1_3[17]).t["3Ukc/g"]);
+            obj[outer1_16.DESCRIPTION] = outer1_53(outer1_0(outer1_3[17]).t.PP1q0x, outer1_0(outer1_3[17]).t.z7pYLg);
+            obj[outer1_16.OPTIONS] = () => outer2_0(outer2_3[17]).t["3G5C9+"];
+            obj[outer1_16.SINGLE_SELECT] = outer1_56(outer1_0(outer1_3[17]).t.v4WnR3, outer1_0(outer1_3[17]).t["6Qg3uC"]);
+            obj[outer1_16.REQUIRED] = outer1_56(outer1_0(outer1_3[17]).t["0MPAM6"], outer1_0(outer1_3[17]).t.pwsXir);
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.GUILD_ONBOARDING === targetType) {
-          return function OnboardingChangeStrings() {
+          return (function OnboardingChangeStrings() {
             const obj = {};
-            const merged = Object.assign(callback2());
-            obj[constants.DEFAULT_CHANNEL_IDS] = () => callback(closure_3[17]).t.8M+D2s;
-            obj[constants.ENABLE_DEFAULT_CHANNELS] = callback6(callback(closure_3[17]).t.EYd/ls, callback(closure_3[17]).t.36OZeQ);
-            obj[constants.ENABLE_ONBOARDING_PROMPTS] = callback6(callback(closure_3[17]).t.V3u8PV, callback(closure_3[17]).t.r66lc/);
-            obj[constants.ENABLED] = callback6(callback(closure_3[17]).t.SODVIs, callback(closure_3[17]).t.u8HY5U);
+            const merged = Object.assign(outer1_42());
+            obj[outer1_16.DEFAULT_CHANNEL_IDS] = () => outer2_0(outer2_3[17]).t["8M+D2s"];
+            obj[outer1_16.ENABLE_DEFAULT_CHANNELS] = outer1_56(outer1_0(outer1_3[17]).t["EYd/ls"], outer1_0(outer1_3[17]).t["36OZeQ"]);
+            obj[outer1_16.ENABLE_ONBOARDING_PROMPTS] = outer1_56(outer1_0(outer1_3[17]).t.V3u8PV, outer1_0(outer1_3[17]).t["r66lc/"]);
+            obj[outer1_16.ENABLED] = outer1_56(outer1_0(outer1_3[17]).t.SODVIs, outer1_0(outer1_3[17]).t.u8HY5U);
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.HOME_SETTINGS === targetType) {
-          return function HomeSettingsChangeStrings() {
+          return (function HomeSettingsChangeStrings() {
             const obj = {};
-            const merged = Object.assign(callback2());
-            obj[constants.WELCOME_MESSAGE] = () => callback(closure_3[17]).t.dKQ1xd;
-            obj[constants.NEW_MEMBER_ACTIONS] = () => callback(closure_3[17]).t.jDUIno;
-            obj[constants.RESOURCE_CHANNELS] = () => callback(closure_3[17]).t.SIX0mr;
+            const merged = Object.assign(outer1_42());
+            obj[outer1_16.WELCOME_MESSAGE] = () => outer2_0(outer2_3[17]).t.dKQ1xd;
+            obj[outer1_16.NEW_MEMBER_ACTIONS] = () => outer2_0(outer2_3[17]).t.jDUIno;
+            obj[outer1_16.RESOURCE_CHANNELS] = () => outer2_0(outer2_3[17]).t.SIX0mr;
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.INVITE === targetType) {
-          return function InviteChangeStrings() {
-            let obj = { [closure_16.CODE]: () => callback(closure_3[17]).t.rrRHgb, [closure_16.CHANNEL_ID]: () => callback(closure_3[17]).t.Q1vd5q };
-            obj = { [0]: callback(closure_3[17]).t.Yx8LNm };
-            obj[constants.MAX_USES] = callback8(obj, callback(closure_3[17]).t.3ygnwU);
+          return (function InviteChangeStrings() {
+            let obj = { [outer1_16.CODE]: () => outer2_0(outer2_3[17]).t.rrRHgb, [outer1_16.CHANNEL_ID]: () => outer2_0(outer2_3[17]).t.Q1vd5q };
+            obj = { [0]: outer1_0(outer1_3[17]).t.Yx8LNm };
+            obj[outer1_16.MAX_USES] = outer1_58(obj, outer1_0(outer1_3[17]).t["3ygnwU"]);
             obj = {};
-            const intl = callback(closure_3[17]).intl;
-            obj[intl.string(callback(closure_3[17]).t.PqEzn8)] = callback(closure_3[17]).t.uWrLvw;
-            obj[constants.MAX_AGE] = callback8(obj, callback(closure_3[17]).t.Q+5kcO);
-            obj[constants.TEMPORARY] = callback6(callback(closure_3[17]).t.MWp6H7, callback(closure_3[17]).t.omiqTH);
+            const intl = outer1_0(outer1_3[17]).intl;
+            obj[intl.string(outer1_0(outer1_3[17]).t.PqEzn8)] = outer1_0(outer1_3[17]).t.uWrLvw;
+            obj[outer1_16.MAX_AGE] = outer1_58(obj, outer1_0(outer1_3[17]).t["Q+5kcO"]);
+            obj[outer1_16.TEMPORARY] = outer1_56(outer1_0(outer1_3[17]).t.MWp6H7, outer1_0(outer1_3[17]).t.omiqTH);
             const obj1 = {};
-            obj1[callback(closure_3[18]).GuildInviteFlags.IS_GUEST_INVITE] = callback(closure_3[17]).t.XYZMbL;
-            obj[constants.FLAGS] = callback7(obj1);
-            obj[constants.ROLE_IDS] = () => callback(closure_3[17]).t.gb1Owj;
-            const merged = Object.assign(callback2());
+            obj1[outer1_0(outer1_3[18]).GuildInviteFlags.IS_GUEST_INVITE] = outer1_0(outer1_3[17]).t.XYZMbL;
+            obj[outer1_16.FLAGS] = outer1_57(obj1);
+            obj[outer1_16.ROLE_IDS] = () => outer2_0(outer2_3[17]).t.gb1Owj;
+            const merged = Object.assign(outer1_42());
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.WEBHOOK === targetType) {
-          return function WebhookChangeStrings() {
+          return (function WebhookChangeStrings() {
             const obj = {};
-            obj[constants.CHANNEL_ID] = callback3(callback(closure_3[17]).t.jhPprR, callback(closure_3[17]).t.ar4qYO);
-            obj[constants.NAME] = callback3(callback(closure_3[17]).t.ZVGrzU, callback(closure_3[17]).t.tywdZR);
-            obj[constants.AVATAR_HASH] = () => callback(closure_3[17]).t.KB52Uj;
-            obj[constants.REASON] = () => callback(closure_3[17]).t.2IW3C5;
+            obj[outer1_16.CHANNEL_ID] = outer1_53(outer1_0(outer1_3[17]).t.jhPprR, outer1_0(outer1_3[17]).t.ar4qYO);
+            obj[outer1_16.NAME] = outer1_53(outer1_0(outer1_3[17]).t.ZVGrzU, outer1_0(outer1_3[17]).t.tywdZR);
+            obj[outer1_16.AVATAR_HASH] = () => outer2_0(outer2_3[17]).t.KB52Uj;
+            obj[outer1_16.REASON] = () => outer2_0(outer2_3[17]).t["2IW3C5"];
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.EMOJI === targetType) {
           let obj = {};
-          obj[AuditLogChangeKeys.NAME] = getNullableOldValueString(arg1(dependencyMap[17]).t.ahU1o5, arg1(dependencyMap[17]).t.wxs+vZ);
-          const merged = Object.assign(CommonChangeStrings());
+          obj[AuditLogChangeKeys.NAME] = getNullableOldValueString(require(1212) /* getSystemLocale */.t.ahU1o5, require(1212) /* getSystemLocale */.t["wxs+vZ"]);
+          let merged = Object.assign(CommonChangeStrings());
           return obj;
         } else if (AuditLogTargetTypes.STICKER === targetType) {
           obj = {};
-          obj[AuditLogChangeKeys.NAME] = getNullableOldValueString(arg1(dependencyMap[17]).t.cdl0Yo, arg1(dependencyMap[17]).t.o3W2ly);
-          obj[AuditLogChangeKeys.TAGS] = getNullableOldValueString(arg1(dependencyMap[17]).t.zwL+S2, arg1(dependencyMap[17]).t.VYfKA+);
-          obj[AuditLogChangeKeys.DESCRIPTION] = getNullableOldValueString(arg1(dependencyMap[17]).t.XeYKWJ, arg1(dependencyMap[17]).t.PSfeIj);
+          obj[AuditLogChangeKeys.NAME] = getNullableOldValueString(require(1212) /* getSystemLocale */.t.cdl0Yo, require(1212) /* getSystemLocale */.t.o3W2ly);
+          obj[AuditLogChangeKeys.TAGS] = getNullableOldValueString(require(1212) /* getSystemLocale */.t["zwL+S2"], require(1212) /* getSystemLocale */.t["VYfKA+"]);
+          obj[AuditLogChangeKeys.DESCRIPTION] = getNullableOldValueString(require(1212) /* getSystemLocale */.t.XeYKWJ, require(1212) /* getSystemLocale */.t.PSfeIj);
           const merged1 = Object.assign(CommonChangeStrings());
           return obj;
         } else if (AuditLogTargetTypes.INTEGRATION === targetType) {
-          return function IntegrationChangeStrings() {
+          return (function IntegrationChangeStrings() {
             let obj = {};
-            obj[constants.ENABLE_EMOTICONS] = callback6(callback(closure_3[17]).t.FI0m5x, callback(closure_3[17]).t.olpKC6);
-            obj = { [0]: callback(closure_3[17]).t.1Bb1+u, [1]: callback(closure_3[17]).t.vjlW6m };
-            obj[constants.EXPIRE_BEHAVIOR] = callback7(obj);
-            obj[constants.EXPIRE_GRACE_PERIOD] = () => callback(closure_3[17]).t.iovXMa;
-            const merged = Object.assign(callback2());
+            obj[outer1_16.ENABLE_EMOTICONS] = outer1_56(outer1_0(outer1_3[17]).t.FI0m5x, outer1_0(outer1_3[17]).t.olpKC6);
+            obj = { [0]: outer1_0(outer1_3[17]).t["1Bb1+u"], [1]: outer1_0(outer1_3[17]).t.vjlW6m };
+            obj[outer1_16.EXPIRE_BEHAVIOR] = outer1_57(obj);
+            obj[outer1_16.EXPIRE_GRACE_PERIOD] = () => outer2_0(outer2_3[17]).t.iovXMa;
+            const merged = Object.assign(outer1_42());
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.STAGE_INSTANCE === targetType) {
-          const obj1 = {};
-          obj1[AuditLogChangeKeys.TOPIC] = getNullableOldValueString(arg1(dependencyMap[17]).t.m+veAn, arg1(dependencyMap[17]).t.esQcxn);
+          let obj1 = {};
+          obj1[AuditLogChangeKeys.TOPIC] = getNullableOldValueString(require(1212) /* getSystemLocale */.t["m+veAn"], require(1212) /* getSystemLocale */.t.esQcxn);
           const obj2 = {};
-          obj2[constants5.GUILD_ONLY] = arg1(dependencyMap[17]).t.EC+CDt;
-          obj2[constants5.PUBLIC] = arg1(dependencyMap[17]).t.pK/WG0;
+          obj2[constants5.GUILD_ONLY] = require(1212) /* getSystemLocale */.t["EC+CDt"];
+          obj2[constants5.PUBLIC] = require(1212) /* getSystemLocale */.t["pK/WG0"];
           obj1[AuditLogChangeKeys.PRIVACY_LEVEL] = getNullableNewValueStringByKey(obj2);
           const merged2 = Object.assign(CommonChangeStrings());
           return obj1;
         } else if (AuditLogTargetTypes.GUILD_SCHEDULED_EVENT === targetType) {
-          return function GuildScheduledEventChangeStrings() {
+          return (function GuildScheduledEventChangeStrings() {
             let ACTIVE;
             let CANCELED;
             let COMPLETED;
@@ -1002,195 +1018,195 @@ export const getChangeStrings = function getChangeStrings(targetType) {
             let SCHEDULED;
             let STAGE_INSTANCE;
             let VOICE;
-            let obj = { [closure_16.NAME]: () => callback(closure_3[17]).t.21EXHW, [closure_16.DESCRIPTION]: () => callback(closure_3[17]).t.Vm1ofw };
-            obj = { [GUILD_ONLY]: callback(closure_3[17]).t.EC+CDt, [PUBLIC]: callback(closure_3[17]).t.pK/WG0 };
-            ({ GUILD_ONLY, PUBLIC } = closure_34);
-            obj[constants.PRIVACY_LEVEL] = callback7(obj);
-            obj = { [SCHEDULED]: callback(closure_3[17]).t.hXKDgq, [ACTIVE]: callback(closure_3[17]).t.lRX1nz, [COMPLETED]: callback(closure_3[17]).t./eFIhq, [CANCELED]: callback(closure_3[17]).t.NWIYhj };
-            ({ SCHEDULED, ACTIVE, COMPLETED, CANCELED } = closure_33);
-            obj[constants.STATUS] = callback7(obj);
-            ({ NONE, STAGE_INSTANCE, VOICE, EXTERNAL } = closure_32);
-            obj[constants.ENTITY_TYPE] = callback7({ [NONE]: callback(closure_3[17]).t.6sO3Ss, [STAGE_INSTANCE]: callback(closure_3[17]).t.Wo+s1y, [VOICE]: callback(closure_3[17]).t.XCVaIL, [EXTERNAL]: callback(closure_3[17]).t.IvhAj2 });
-            obj[constants.CHANNEL_ID] = callback4(callback(closure_3[17]).t.yJBIcX, callback(closure_3[17]).t.+PqSsi);
-            obj[constants.LOCATION] = callback4(callback(closure_3[17]).t.GaMBHy, callback(closure_3[17]).t.PsICk0);
-            obj[constants.IMAGE_HASH] = callback4(callback(closure_3[17]).t.S3vcRK, callback(closure_3[17]).t.KQu47I);
-            const merged = Object.assign(callback2());
+            let obj = { [outer1_16.NAME]: () => outer2_0(outer2_3[17]).t["21EXHW"], [outer1_16.DESCRIPTION]: () => outer2_0(outer2_3[17]).t.Vm1ofw };
+            obj = { [GUILD_ONLY]: outer1_0(outer1_3[17]).t["EC+CDt"], [PUBLIC]: outer1_0(outer1_3[17]).t["pK/WG0"] };
+            ({ GUILD_ONLY, PUBLIC } = outer1_34);
+            obj[outer1_16.PRIVACY_LEVEL] = outer1_57(obj);
+            obj = { [SCHEDULED]: outer1_0(outer1_3[17]).t.hXKDgq, [ACTIVE]: outer1_0(outer1_3[17]).t.lRX1nz, [COMPLETED]: outer1_0(outer1_3[17]).t["/eFIhq"], [CANCELED]: outer1_0(outer1_3[17]).t.NWIYhj };
+            ({ SCHEDULED, ACTIVE, COMPLETED, CANCELED } = outer1_33);
+            obj[outer1_16.STATUS] = outer1_57(obj);
+            ({ NONE, STAGE_INSTANCE, VOICE, EXTERNAL } = outer1_32);
+            obj[outer1_16.ENTITY_TYPE] = outer1_57({ [NONE]: outer1_0(outer1_3[17]).t["6sO3Ss"], [STAGE_INSTANCE]: outer1_0(outer1_3[17]).t["Wo+s1y"], [VOICE]: outer1_0(outer1_3[17]).t.XCVaIL, [EXTERNAL]: outer1_0(outer1_3[17]).t.IvhAj2 });
+            obj[outer1_16.CHANNEL_ID] = outer1_54(outer1_0(outer1_3[17]).t.yJBIcX, outer1_0(outer1_3[17]).t["+PqSsi"]);
+            obj[outer1_16.LOCATION] = outer1_54(outer1_0(outer1_3[17]).t.GaMBHy, outer1_0(outer1_3[17]).t.PsICk0);
+            obj[outer1_16.IMAGE_HASH] = outer1_54(outer1_0(outer1_3[17]).t.S3vcRK, outer1_0(outer1_3[17]).t.KQu47I);
+            const merged = Object.assign(outer1_42());
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.GUILD_SCHEDULED_EVENT_EXCEPTION === targetType) {
-          return function GuildScheduledEventExceptionChangeStrings() {
+          return (function GuildScheduledEventExceptionChangeStrings() {
             const obj = {};
-            obj[constants.SCHEDULED_START_TIME] = callback4(callback(closure_3[17]).t.zMIYVg, callback(closure_3[17]).t.fzF8Gd);
-            obj[constants.SCHEDULED_END_TIME] = callback4(callback(closure_3[17]).t.vONSQA, callback(closure_3[17]).t.IlIti3);
-            obj[constants.IS_CANCELED] = (oldValue) => {
+            obj[outer1_16.SCHEDULED_START_TIME] = outer1_54(outer1_0(outer1_3[17]).t.zMIYVg, outer1_0(outer1_3[17]).t.fzF8Gd);
+            obj[outer1_16.SCHEDULED_END_TIME] = outer1_54(outer1_0(outer1_3[17]).t.vONSQA, outer1_0(outer1_3[17]).t.IlIti3);
+            obj[outer1_16.IS_CANCELED] = (oldValue) => {
               if (null != oldValue.oldValue) {
                 if (!oldValue.oldValue) {
                   if (oldValue.newValue) {
-                    return callback(closure_3[17]).t.7RkicW;
+                    return outer2_0(outer2_3[17]).t["7RkicW"];
                   }
                 }
                 if (oldValue.oldValue) {
                   if (!oldValue.newValue) {
-                    return callback(closure_3[17]).t.dRNTWW;
+                    return outer2_0(outer2_3[17]).t.dRNTWW;
                   }
                 }
               }
             };
-            const merged = Object.assign(callback2());
+            const merged = Object.assign(outer1_42());
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.THREAD === targetType) {
-          return function ThreadChangeStrings() {
+          return (function ThreadChangeStrings() {
             const obj = {};
-            obj[constants.NAME] = callback3(callback(closure_3[17]).t.tUKRzX, callback(closure_3[17]).t.kPCHON);
-            obj[constants.ARCHIVED] = callback6(callback(closure_3[17]).t.jDi9FK, callback(closure_3[17]).t.F6dvbT);
-            obj[constants.LOCKED] = callback6(callback(closure_3[17]).t.JSy1QW, callback(closure_3[17]).t.C7Jgo8);
-            obj[constants.INVITABLE] = callback6(callback(closure_3[17]).t.dxNUs9, callback(closure_3[17]).t.biJvYG);
-            obj[constants.AUTO_ARCHIVE_DURATION] = callback3(callback(closure_3[17]).t.LuaG3y, callback(closure_3[17]).t.18d9qr);
-            obj[constants.RATE_LIMIT_PER_USER] = callback3(callback(closure_3[17]).t.7lirhF, callback(closure_3[17]).t.j4CCJR);
-            obj[constants.FLAGS] = () => callback(closure_3[17]).t.sSAQtj;
-            obj[constants.AVAILABLE_TAG_ADD] = () => callback(closure_3[17]).t.H86QQU;
-            obj[constants.AVAILABLE_TAG_DELETE] = () => callback(closure_3[17]).t.8QOseg;
-            const merged = Object.assign(callback2());
+            obj[outer1_16.NAME] = outer1_53(outer1_0(outer1_3[17]).t.tUKRzX, outer1_0(outer1_3[17]).t.kPCHON);
+            obj[outer1_16.ARCHIVED] = outer1_56(outer1_0(outer1_3[17]).t.jDi9FK, outer1_0(outer1_3[17]).t.F6dvbT);
+            obj[outer1_16.LOCKED] = outer1_56(outer1_0(outer1_3[17]).t.JSy1QW, outer1_0(outer1_3[17]).t.C7Jgo8);
+            obj[outer1_16.INVITABLE] = outer1_56(outer1_0(outer1_3[17]).t.dxNUs9, outer1_0(outer1_3[17]).t.biJvYG);
+            obj[outer1_16.AUTO_ARCHIVE_DURATION] = outer1_53(outer1_0(outer1_3[17]).t.LuaG3y, outer1_0(outer1_3[17]).t["18d9qr"]);
+            obj[outer1_16.RATE_LIMIT_PER_USER] = outer1_53(outer1_0(outer1_3[17]).t["7lirhF"], outer1_0(outer1_3[17]).t.j4CCJR);
+            obj[outer1_16.FLAGS] = () => outer2_0(outer2_3[17]).t.sSAQtj;
+            obj[outer1_16.AVAILABLE_TAG_ADD] = () => outer2_0(outer2_3[17]).t.H86QQU;
+            obj[outer1_16.AVAILABLE_TAG_DELETE] = () => outer2_0(outer2_3[17]).t["8QOseg"];
+            const merged = Object.assign(outer1_42());
             return obj;
-          }();
+          })();
         } else if (AuditLogTargetTypes.APPLICATION_COMMAND === targetType) {
-          return function CommandPermissionChangeStrings(changes) {
+          return (function CommandPermissionChangeStrings(changes) {
             const obj = {};
-            const merged = Object.assign(callback2());
+            const merged = Object.assign(outer1_42());
             if (null != changes) {
               const item = changes.forEach((newValue) => {
                 if (newValue.newValue) {
                   if (newValue.newValue.permission) {
-                    tmp2[key] = () => callback(closure_3[17]).t.JH+89C;
+                    tmp2[key] = () => outer3_0(outer3_3[17]).t["JH+89C"];
                   } else {
-                    tmp2[key] = () => callback(closure_3[17]).t.HUrFDu;
+                    tmp2[key] = () => outer3_0(outer3_3[17]).t.HUrFDu;
                   }
                 } else {
-                  obj[newValue.key] = () => callback(closure_3[17]).t.vynxnV;
+                  obj[newValue.key] = () => outer3_0(outer3_3[17]).t.vynxnV;
                 }
               });
             }
             return obj;
-          }(targetType.changes);
+          })(targetType.changes);
         } else if (AuditLogTargetTypes.AUTO_MODERATION_RULE === targetType) {
-          return function AutoModerationRuleChangeStrings() {
-            const merged = Object.assign(callback2());
+          return (function AutoModerationRuleChangeStrings() {
+            const merged = Object.assign(outer1_42());
             return {
-              [closure_16.NAME]: () => callback(closure_3[17]).t.XwxAJT,
-              [closure_16.AUTO_MODERATION_TRIGGER_TYPE]: () => callback(closure_3[17]).t.fx0pyl,
-              [closure_16.AUTO_MODERATION_EVENT_TYPE]: () => callback(closure_3[17]).t.46Y+L5,
-              [closure_16.AUTO_MODERATION_ACTIONS]: () => callback(closure_3[17]).t.8efxfv,
-              [closure_16.AUTO_MODERATION_ENABLED]: (newValue) => {
+              [outer1_16.NAME]: () => outer2_0(outer2_3[17]).t.XwxAJT,
+              [outer1_16.AUTO_MODERATION_TRIGGER_TYPE]: () => outer2_0(outer2_3[17]).t.fx0pyl,
+              [outer1_16.AUTO_MODERATION_EVENT_TYPE]: () => outer2_0(outer2_3[17]).t["46Y+L5"],
+              [outer1_16.AUTO_MODERATION_ACTIONS]: () => outer2_0(outer2_3[17]).t["8efxfv"],
+              [outer1_16.AUTO_MODERATION_ENABLED]: (newValue) => {
                 let oldValue = newValue.newValue;
                 if (null == oldValue) {
                   oldValue = newValue.oldValue;
                 }
                 if (true === oldValue) {
-                  let Wrg9Jn = callback(closure_3[17]).t.fCmxC2;
+                  let Wrg9Jn = outer2_0(outer2_3[17]).t.fCmxC2;
                 } else {
-                  Wrg9Jn = callback(closure_3[17]).t.Wrg9Jn;
+                  Wrg9Jn = outer2_0(outer2_3[17]).t.Wrg9Jn;
                 }
                 return Wrg9Jn;
               },
-              [closure_16.AUTO_MODERATION_EXEMPT_ROLES]: () => callback(closure_3[17]).t.TRb7Nx,
-              [closure_16.AUTO_MODERATION_EXEMPT_CHANNELS]: () => callback(closure_3[17]).t.mzitLE,
-              [closure_16.AUTO_MODERATION_TRIGGER_METADATA]: () => callback(closure_3[17]).t.h/lM65,
-              [closure_16.AUTO_MODERATION_ADD_KEYWORDS]: () => callback(closure_3[17]).t.9V2yaC,
-              [closure_16.AUTO_MODERATION_REMOVE_KEYWORDS]: () => callback(closure_3[17]).t.4Qe9ny,
-              [closure_16.AUTO_MODERATION_ADD_REGEX_PATTERNS]: () => callback(closure_3[17]).t.GyZtxp,
-              [closure_16.AUTO_MODERATION_REMOVE_REGEX_PATTERNS]: () => callback(closure_3[17]).t.OQDadc,
-              [closure_16.AUTO_MODERATION_ADD_ALLOW_LIST]: () => callback(closure_3[17]).t.FvvR+K,
-              [closure_16.AUTO_MODERATION_REMOVE_ALLOW_LIST]: () => callback(closure_3[17]).t.p5nSvy
+              [outer1_16.AUTO_MODERATION_EXEMPT_ROLES]: () => outer2_0(outer2_3[17]).t.TRb7Nx,
+              [outer1_16.AUTO_MODERATION_EXEMPT_CHANNELS]: () => outer2_0(outer2_3[17]).t.mzitLE,
+              [outer1_16.AUTO_MODERATION_TRIGGER_METADATA]: () => outer2_0(outer2_3[17]).t["h/lM65"],
+              [outer1_16.AUTO_MODERATION_ADD_KEYWORDS]: () => outer2_0(outer2_3[17]).t["9V2yaC"],
+              [outer1_16.AUTO_MODERATION_REMOVE_KEYWORDS]: () => outer2_0(outer2_3[17]).t["4Qe9ny"],
+              [outer1_16.AUTO_MODERATION_ADD_REGEX_PATTERNS]: () => outer2_0(outer2_3[17]).t.GyZtxp,
+              [outer1_16.AUTO_MODERATION_REMOVE_REGEX_PATTERNS]: () => outer2_0(outer2_3[17]).t.OQDadc,
+              [outer1_16.AUTO_MODERATION_ADD_ALLOW_LIST]: () => outer2_0(outer2_3[17]).t["FvvR+K"],
+              [outer1_16.AUTO_MODERATION_REMOVE_ALLOW_LIST]: () => outer2_0(outer2_3[17]).t.p5nSvy
             };
-          }();
+          })();
         } else if (AuditLogTargetTypes.GUILD_SOUNDBOARD === targetType) {
           obj = {};
-          obj[AuditLogChangeKeys.NAME] = getNullableOldValueString(arg1(dependencyMap[17]).t.VOtRSO, arg1(dependencyMap[17]).t.OK7B8E);
-          obj[AuditLogChangeKeys.VOLUME] = getNullableOldValueString(arg1(dependencyMap[17]).t.igrDB9, arg1(dependencyMap[17]).t.L5lDFJ);
-          obj[AuditLogChangeKeys.EMOJI_NAME] = getNullableNewOrOldValueString(arg1(dependencyMap[17]).t.IIanaY, arg1(dependencyMap[17]).t.z4w4U/, arg1(dependencyMap[17]).t.V8TfyU);
-          obj[AuditLogChangeKeys.EMOJI_ID] = getNullableNewOrOldValueString(arg1(dependencyMap[17]).t.ainxMB, arg1(dependencyMap[17]).t.2NPsYu, arg1(dependencyMap[17]).t.8crtns);
+          obj[AuditLogChangeKeys.NAME] = getNullableOldValueString(require(1212) /* getSystemLocale */.t.VOtRSO, require(1212) /* getSystemLocale */.t.OK7B8E);
+          obj[AuditLogChangeKeys.VOLUME] = getNullableOldValueString(require(1212) /* getSystemLocale */.t.igrDB9, require(1212) /* getSystemLocale */.t.L5lDFJ);
+          obj[AuditLogChangeKeys.EMOJI_NAME] = getNullableNewOrOldValueString(require(1212) /* getSystemLocale */.t.IIanaY, require(1212) /* getSystemLocale */.t["z4w4U/"], require(1212) /* getSystemLocale */.t.V8TfyU);
+          obj[AuditLogChangeKeys.EMOJI_ID] = getNullableNewOrOldValueString(require(1212) /* getSystemLocale */.t.ainxMB, require(1212) /* getSystemLocale */.t["2NPsYu"], require(1212) /* getSystemLocale */.t["8crtns"]);
           const merged3 = Object.assign(CommonChangeStrings());
           return obj;
         } else if (AuditLogTargetTypes.VOICE_CHANNEL_STATUS === targetType) {
-          return function VoiceChannelStatusStrings() {
-            const merged = Object.assign(callback2());
-            return { [closure_16.STATUS]: () => callback(closure_3[17]).t.HyCSnI };
-          }();
+          return (function VoiceChannelStatusStrings() {
+            const merged = Object.assign(outer1_42());
+            return { [outer1_16.STATUS]: () => outer2_0(outer2_3[17]).t.HyCSnI };
+          })();
         } else if (AuditLogTargetTypes.GUILD_MEMBER_VERIFICATION === targetType) {
-          return function MemberVerificationChangeStrings() {
-            const merged = Object.assign(callback2());
+          return (function MemberVerificationChangeStrings() {
+            const merged = Object.assign(outer1_42());
             return {
-              [closure_16.VERIFICATION_ENABLED]: (newValue) => {
+              [outer1_16.VERIFICATION_ENABLED]: (newValue) => {
                 if (true === newValue.newValue) {
-                  let WYT6ka = callback(closure_3[17]).t.fnkzDY;
+                  let WYT6ka = outer2_0(outer2_3[17]).t.fnkzDY;
                 } else {
-                  WYT6ka = callback(closure_3[17]).t.WYT6ka;
+                  WYT6ka = outer2_0(outer2_3[17]).t.WYT6ka;
                 }
                 return WYT6ka;
               },
-              [closure_16.MANUAL_APPROVAL_ENABLED]: (newValue) => {
+              [outer1_16.MANUAL_APPROVAL_ENABLED]: (newValue) => {
                 if (true === newValue.newValue) {
-                  let WxyOtj = callback(closure_3[17]).t.jzSvVd;
+                  let WxyOtj = outer2_0(outer2_3[17]).t.jzSvVd;
                 } else {
-                  WxyOtj = callback(closure_3[17]).t.WxyOtj;
+                  WxyOtj = outer2_0(outer2_3[17]).t.WxyOtj;
                 }
                 return WxyOtj;
               }
             };
-          }();
+          })();
         } else if (AuditLogTargetTypes.GUILD_PROFILE === targetType) {
-          return function GuildProfileChangeStrings() {
-            const obj = { [closure_16.DESCRIPTION]: () => callback(closure_3[17]).t.nsUZKY, [closure_16.BRAND_COLOR_PRIMARY]: () => callback(closure_3[17]).t.qe9mgN, [closure_16.CUSTOM_BANNER_HASH]: () => callback(closure_3[17]).t.04b5KC, [closure_16.TRAITS]: () => callback(closure_3[17]).t.dEy9WO, [closure_16.GAME_APPLICATION_IDS]: () => callback(closure_3[17]).t.8BOT3x, [closure_16.VISIBILITY]: () => callback(closure_3[17]).t.bCl1Ep };
-            obj[constants.SERVER_TAG] = callback4(callback(closure_3[17]).t.ix1dnX, callback(closure_3[17]).t.4LKpKb);
+          return (function GuildProfileChangeStrings() {
+            const obj = { [outer1_16.DESCRIPTION]: () => outer2_0(outer2_3[17]).t.nsUZKY, [outer1_16.BRAND_COLOR_PRIMARY]: () => outer2_0(outer2_3[17]).t.qe9mgN, [outer1_16.CUSTOM_BANNER_HASH]: () => outer2_0(outer2_3[17]).t["04b5KC"], [outer1_16.TRAITS]: () => outer2_0(outer2_3[17]).t.dEy9WO, [outer1_16.GAME_APPLICATION_IDS]: () => outer2_0(outer2_3[17]).t["8BOT3x"], [outer1_16.VISIBILITY]: () => outer2_0(outer2_3[17]).t.bCl1Ep };
+            obj[outer1_16.SERVER_TAG] = outer1_54(outer1_0(outer1_3[17]).t.ix1dnX, outer1_0(outer1_3[17]).t["4LKpKb"]);
             return obj;
-          }();
+          })();
         } else {
           return CommonChangeStrings();
         }
       }
     }
-    return function ChannelChangeStrings() {
+    return (function ChannelChangeStrings() {
       const obj = {};
-      obj[constants.NAME] = callback3(callback(closure_3[17]).t.f8Rh0U, callback(closure_3[17]).t.ebD4Qp);
-      obj[constants.POSITION] = callback3(callback(closure_3[17]).t.isS8te, callback(closure_3[17]).t.t5uBis);
-      obj[constants.TOPIC] = callback5(callback(closure_3[17]).t.esQcxn, callback(closure_3[17]).t.m+veAn, callback(closure_3[17]).t.ws/1FA);
-      obj[constants.BITRATE] = callback3(callback(closure_3[17]).t.fw81ak, callback(closure_3[17]).t.MFNlgZ);
-      obj[constants.RTC_REGION_OVERRIDE] = callback5(callback(closure_3[17]).t.6kajxx, callback(closure_3[17]).t.eGOlmU, callback(closure_3[17]).t.0JMZdz);
-      obj[constants.USER_LIMIT] = callback3(callback(closure_3[17]).t.wk5t7p, callback(closure_3[17]).t.XgjCEh);
-      obj[constants.RATE_LIMIT_PER_USER] = callback3(callback(closure_3[17]).t.7lirhF, callback(closure_3[17]).t.j4CCJR);
-      obj[constants.PERMISSIONS_RESET] = () => callback(closure_3[17]).t.+vSBFY;
-      obj[constants.PERMISSIONS_GRANTED] = () => callback(closure_3[17]).t.EKLJv8;
-      obj[constants.PERMISSIONS_DENIED] = () => callback(closure_3[17]).t.U3rO5X;
-      obj[constants.REASON] = () => callback(closure_3[17]).t.2IW3C5;
-      obj[constants.NSFW] = callback6(callback(closure_3[17]).t.H8Ri2Y, callback(closure_3[17]).t.WW6cJw);
-      obj[constants.TYPE] = callback3(callback(closure_3[17]).t.Vn5zn2, callback(closure_3[17]).t.aq4uWI);
-      obj[constants.VIDEO_QUALITY_MODE] = callback3(callback(closure_3[17]).t.e68fAU, callback(closure_3[17]).t.djbES0);
-      obj[constants.DEFAULT_AUTO_ARCHIVE_DURATION] = callback3(callback(closure_3[17]).t.nYz2mg, callback(closure_3[17]).t.oczvRI);
-      obj[constants.DEFAULT_THREAD_RATE_LIMIT_PER_USER] = callback5(callback(closure_3[17]).t.tOJ8h7, callback(closure_3[17]).t.WaSgzk, callback(closure_3[17]).t.lj+A4u);
-      obj[constants.FLAGS] = () => callback(closure_3[17]).t.ImCQko;
-      obj[constants.AVAILABLE_TAG_ADD] = () => callback(closure_3[17]).t.H86QQU;
-      obj[constants.AVAILABLE_TAG_EDIT] = () => callback(closure_3[17]).t.YtUzls;
-      obj[constants.AVAILABLE_TAG_DELETE] = () => callback(closure_3[17]).t.8QOseg;
-      obj[constants.LINKED_LOBBY] = callback4(callback(closure_3[17]).t.+/3TkD, callback(closure_3[17]).t.5kDYS3);
+      obj[outer1_16.NAME] = outer1_53(outer1_0(outer1_3[17]).t.f8Rh0U, outer1_0(outer1_3[17]).t.ebD4Qp);
+      obj[outer1_16.POSITION] = outer1_53(outer1_0(outer1_3[17]).t.isS8te, outer1_0(outer1_3[17]).t.t5uBis);
+      obj[outer1_16.TOPIC] = outer1_55(outer1_0(outer1_3[17]).t.esQcxn, outer1_0(outer1_3[17]).t["m+veAn"], outer1_0(outer1_3[17]).t["ws/1FA"]);
+      obj[outer1_16.BITRATE] = outer1_53(outer1_0(outer1_3[17]).t.fw81ak, outer1_0(outer1_3[17]).t.MFNlgZ);
+      obj[outer1_16.RTC_REGION_OVERRIDE] = outer1_55(outer1_0(outer1_3[17]).t["6kajxx"], outer1_0(outer1_3[17]).t.eGOlmU, outer1_0(outer1_3[17]).t["0JMZdz"]);
+      obj[outer1_16.USER_LIMIT] = outer1_53(outer1_0(outer1_3[17]).t.wk5t7p, outer1_0(outer1_3[17]).t.XgjCEh);
+      obj[outer1_16.RATE_LIMIT_PER_USER] = outer1_53(outer1_0(outer1_3[17]).t["7lirhF"], outer1_0(outer1_3[17]).t.j4CCJR);
+      obj[outer1_16.PERMISSIONS_RESET] = () => outer2_0(outer2_3[17]).t["+vSBFY"];
+      obj[outer1_16.PERMISSIONS_GRANTED] = () => outer2_0(outer2_3[17]).t.EKLJv8;
+      obj[outer1_16.PERMISSIONS_DENIED] = () => outer2_0(outer2_3[17]).t.U3rO5X;
+      obj[outer1_16.REASON] = () => outer2_0(outer2_3[17]).t["2IW3C5"];
+      obj[outer1_16.NSFW] = outer1_56(outer1_0(outer1_3[17]).t.H8Ri2Y, outer1_0(outer1_3[17]).t.WW6cJw);
+      obj[outer1_16.TYPE] = outer1_53(outer1_0(outer1_3[17]).t.Vn5zn2, outer1_0(outer1_3[17]).t.aq4uWI);
+      obj[outer1_16.VIDEO_QUALITY_MODE] = outer1_53(outer1_0(outer1_3[17]).t.e68fAU, outer1_0(outer1_3[17]).t.djbES0);
+      obj[outer1_16.DEFAULT_AUTO_ARCHIVE_DURATION] = outer1_53(outer1_0(outer1_3[17]).t.nYz2mg, outer1_0(outer1_3[17]).t.oczvRI);
+      obj[outer1_16.DEFAULT_THREAD_RATE_LIMIT_PER_USER] = outer1_55(outer1_0(outer1_3[17]).t.tOJ8h7, outer1_0(outer1_3[17]).t.WaSgzk, outer1_0(outer1_3[17]).t["lj+A4u"]);
+      obj[outer1_16.FLAGS] = () => outer2_0(outer2_3[17]).t.ImCQko;
+      obj[outer1_16.AVAILABLE_TAG_ADD] = () => outer2_0(outer2_3[17]).t.H86QQU;
+      obj[outer1_16.AVAILABLE_TAG_EDIT] = () => outer2_0(outer2_3[17]).t.YtUzls;
+      obj[outer1_16.AVAILABLE_TAG_DELETE] = () => outer2_0(outer2_3[17]).t["8QOseg"];
+      obj[outer1_16.LINKED_LOBBY] = outer1_54(outer1_0(outer1_3[17]).t["+/3TkD"], outer1_0(outer1_3[17]).t["5kDYS3"]);
       return obj;
-    }();
+    })();
   }
 };
 export { shouldNotRenderChangeDetail };
 export const checkChangesToRender = function checkChangesToRender(log) {
-  const arg1 = log;
+  let closure_0 = log;
   const changes = log.changes;
-  return null != changes && changes.some((arg0) => !callback(arg0, arg0));
+  return null != changes && changes.some((arg0) => !outer1_43(closure_0, arg0));
 };
 export { ACTION_FILTER_ITEMS };
 export { findChangeByKey };
 export const getSimpleAuditLogTitleFromChange = function getSimpleAuditLogTitleFromChange(changes) {
-  const arg1 = changes;
-  const found = ACTION_FILTER_ITEMS().find((value) => value.value === value.action);
+  const _require = changes;
+  const found = ACTION_FILTER_ITEMS().find((value) => value.value === action.action);
   if (null != findChangeByKey(AuditLogChangeKeys.COMMUNICATION_DISABLED_UNTIL, changes)) {
-    const intl = arg1(dependencyMap[17]).intl;
-    let stringResult = intl.string(arg1(dependencyMap[17]).t.z3wbj8);
+    const intl = _require(1212).intl;
+    let stringResult = intl.string(_require(1212).t.z3wbj8);
   } else {
     let label;
     if (null != found) {
@@ -1223,16 +1239,16 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
       const prototype = _Date.prototype;
       _Date = new _Date(newValue1);
       let time = _Date.getTime();
-      const diff = time - importDefault(dependencyMap[19]).extractTimestamp(id.id);
+      const diff = time - importDefault(21).extractTimestamp(id.id);
       const _Math = Math;
       const rounded = Math.round(diff / 1000 / 60);
-      const obj2 = importDefault(dependencyMap[19]);
-      const timeAndUnit = arg1(dependencyMap[16]).getTimeAndUnit(rounded, items);
+      const obj2 = importDefault(21);
+      const timeAndUnit = require(4206) /* sleep */.getTimeAndUnit(rounded, items);
       if (null != timeAndUnit.unit) {
         if (null != timeAndUnit.time) {
           if (timeAndUnit.unit in obj) {
             ({ unit, unit: unit2 } = timeAndUnit);
-            if (unit2 === arg1(dependencyMap[16]).TimeUnits.SECONDS) {
+            if (unit2 === require(4206) /* sleep */.TimeUnits.SECONDS) {
               const _Math2 = Math;
               time = Math.round(diff / 1000);
             } else {
@@ -1249,27 +1265,27 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
         oldValue = tmp.oldValue;
       }
       if (null != oldValue) {
-        const intl4 = arg1(dependencyMap[17]).intl;
-        return intl4.string(arg1(dependencyMap[17]).t.MA1ltr);
+        const intl4 = require(1212) /* getSystemLocale */.intl;
+        return intl4.string(require(1212) /* getSystemLocale */.t.MA1ltr);
       }
     }
     return null;
   } else {
     if (tmp2) {
       if (tmp3) {
-        const intl3 = arg1(dependencyMap[17]).intl;
-        let stringResult = intl3.string(arg1(dependencyMap[17]).t.RdMMew);
+        const intl3 = require(1212) /* getSystemLocale */.intl;
+        let stringResult = intl3.string(require(1212) /* getSystemLocale */.t.RdMMew);
       }
       return stringResult;
     }
     if (tmp2) {
-      const intl2 = arg1(dependencyMap[17]).intl;
-      stringResult = intl2.string(arg1(dependencyMap[17]).t.4GQqs8);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl2.string(require(1212) /* getSystemLocale */.t["4GQqs8"]);
     } else {
       stringResult = null;
       if (tmp3) {
-        const intl = arg1(dependencyMap[17]).intl;
-        stringResult = intl.string(arg1(dependencyMap[17]).t.8mQ6x0);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        stringResult = intl.string(require(1212) /* getSystemLocale */.t["8mQ6x0"]);
       }
     }
   }
@@ -1278,7 +1294,7 @@ export const getSimpleAuditLogChangeDetails = function getSimpleAuditLogChangeDe
   const arr = findAllChangeByKey(AuditLogChangeKeys.ROLES_ADD, changes);
   const arr2 = findAllChangeByKey(AuditLogChangeKeys.ROLES_REMOVE, changes);
   if (null != arr) {
-    const mapped = arr.map((newValue) => {
+    let mapped = arr.map((newValue) => {
       newValue = newValue.newValue;
       let joined;
       if (null != newValue) {
@@ -1287,7 +1303,7 @@ export const getSimpleAuditLogChangeDetails = function getSimpleAuditLogChangeDe
       }
       return joined;
     });
-    const joined = mapped.join(", ");
+    let joined = mapped.join(", ");
   }
   if (null != arr2) {
     const mapped1 = arr2.map((newValue) => {
@@ -1303,31 +1319,31 @@ export const getSimpleAuditLogChangeDetails = function getSimpleAuditLogChangeDe
   }
   if (arr.length > 0) {
     if (arr2.length > 0) {
-      const intl3 = arg1(dependencyMap[17]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       let obj = { roleNamesAdded: joined, roleNamesRemoved: joined1 };
-      let formatToPlainStringResult = intl3.formatToPlainString(arg1(dependencyMap[17]).t.tZw1EW, obj);
+      let formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.tZw1EW, obj);
     }
     return formatToPlainStringResult;
   }
   if (arr.length > 0) {
-    const intl2 = arg1(dependencyMap[17]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     obj = { roleNames: joined };
-    formatToPlainStringResult = intl2.formatToPlainString(arg1(dependencyMap[17]).t./mTqt5, obj);
+    formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["/mTqt5"], obj);
   } else {
     formatToPlainStringResult = null;
     if (arr2.length > 0) {
-      const intl = arg1(dependencyMap[17]).intl;
+      const intl = require(1212) /* getSystemLocale */.intl;
       const obj1 = { roleNames: joined1 };
-      formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[17]).t.Wk4pAJ, obj1);
+      formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.Wk4pAJ, obj1);
     }
   }
 };
 export const getChangeTitle = function getChangeTitle(log) {
   const action = log.action;
   if (constants.GUILD_UPDATE === action) {
-    let found = arg1;
+    let found = require;
     found = dependencyMap;
-    return arg1(dependencyMap[17]).t.LjZO31;
+    return require(1212) /* getSystemLocale */.t.LjZO31;
   } else {
     found = constants;
     if (constants.CHANNEL_CREATE === action) {
@@ -1335,7 +1351,7 @@ export const getChangeTitle = function getChangeTitle(log) {
       found = null;
       if (null != log.changes) {
         const changes = log.changes;
-        found = changes.find((key) => key.key === constants.TYPE);
+        found = changes.find((key) => key.key === outer1_16.TYPE);
       }
       if (null == found) {
         found = globalThis;
@@ -1348,25 +1364,25 @@ export const getChangeTitle = function getChangeTitle(log) {
         const newValue3 = found.newValue;
         found = constants2;
         if (constants2.GUILD_STAGE_VOICE === newValue3) {
-          found = arg1;
+          found = require;
           found = dependencyMap;
-          return arg1(dependencyMap[17]).t.OKp4+o;
+          return require(1212) /* getSystemLocale */.t["OKp4+o"];
         } else {
           found = constants2;
           if (constants2.GUILD_VOICE === newValue3) {
-            found = arg1;
+            found = require;
             found = dependencyMap;
-            return arg1(dependencyMap[17]).t.NPOy4G;
+            return require(1212) /* getSystemLocale */.t.NPOy4G;
           } else {
             found = constants2;
             if (constants2.GUILD_CATEGORY === newValue3) {
-              found = arg1;
+              found = require;
               found = dependencyMap;
-              return arg1(dependencyMap[17]).t.T3KIjz;
+              return require(1212) /* getSystemLocale */.t.T3KIjz;
             } else {
-              found = arg1;
+              found = require;
               found = dependencyMap;
-              return arg1(dependencyMap[17]).t.wrYNG2;
+              return require(1212) /* getSystemLocale */.t.wrYNG2;
             }
           }
         }
@@ -1374,258 +1390,258 @@ export const getChangeTitle = function getChangeTitle(log) {
     } else {
       found = constants;
       if (constants.CHANNEL_UPDATE === action) {
-        found = arg1;
+        found = require;
         found = dependencyMap;
-        return arg1(dependencyMap[17]).t.nTYk6B;
+        return require(1212) /* getSystemLocale */.t.nTYk6B;
       } else {
         found = constants;
         if (constants.CHANNEL_DELETE === action) {
-          found = arg1;
+          found = require;
           found = dependencyMap;
-          return arg1(dependencyMap[17]).t.ynfvkm;
+          return require(1212) /* getSystemLocale */.t.ynfvkm;
         } else {
           found = constants;
           if (constants.CHANNEL_OVERWRITE_CREATE === action) {
-            found = arg1;
+            found = require;
             found = dependencyMap;
-            return arg1(dependencyMap[17]).t.l5Cu1a;
+            return require(1212) /* getSystemLocale */.t.l5Cu1a;
           } else {
             found = constants;
             if (constants.CHANNEL_OVERWRITE_UPDATE === action) {
-              found = arg1;
+              found = require;
               found = dependencyMap;
-              return arg1(dependencyMap[17]).t.uhtbNU;
+              return require(1212) /* getSystemLocale */.t.uhtbNU;
             } else {
               found = constants;
               if (constants.CHANNEL_OVERWRITE_DELETE === action) {
-                found = arg1;
+                found = require;
                 found = dependencyMap;
-                return arg1(dependencyMap[17]).t.HASt/3;
+                return require(1212) /* getSystemLocale */.t["HASt/3"];
               } else {
                 found = constants;
                 if (constants.MEMBER_KICK === action) {
-                  found = arg1;
+                  found = require;
                   found = dependencyMap;
-                  return arg1(dependencyMap[17]).t.B5hDZX;
+                  return require(1212) /* getSystemLocale */.t.B5hDZX;
                 } else {
                   found = constants;
                   if (constants.MEMBER_PRUNE === action) {
-                    found = arg1;
+                    found = require;
                     found = dependencyMap;
-                    return arg1(dependencyMap[17]).t.qKOZTP;
+                    return require(1212) /* getSystemLocale */.t.qKOZTP;
                   } else {
                     found = constants;
                     if (constants.MEMBER_BAN_ADD === action) {
-                      found = arg1;
+                      found = require;
                       found = dependencyMap;
-                      return arg1(dependencyMap[17]).t.XklUm/;
+                      return require(1212) /* getSystemLocale */.t["XklUm/"];
                     } else {
                       found = constants;
                       if (constants.MEMBER_BAN_REMOVE === action) {
-                        found = arg1;
+                        found = require;
                         found = dependencyMap;
-                        return arg1(dependencyMap[17]).t.o3Y6HD;
+                        return require(1212) /* getSystemLocale */.t.o3Y6HD;
                       } else {
                         found = constants;
                         if (constants.MEMBER_UPDATE === action) {
-                          found = arg1;
+                          found = require;
                           found = dependencyMap;
-                          return arg1(dependencyMap[17]).t.pznhLN;
+                          return require(1212) /* getSystemLocale */.t.pznhLN;
                         } else {
                           found = constants;
                           if (constants.MEMBER_ROLE_UPDATE === action) {
-                            found = arg1;
+                            found = require;
                             found = dependencyMap;
-                            return arg1(dependencyMap[17]).t.Vngfia;
+                            return require(1212) /* getSystemLocale */.t.Vngfia;
                           } else {
                             found = constants;
                             if (constants.MEMBER_MOVE === action) {
-                              found = arg1;
+                              found = require;
                               found = dependencyMap;
-                              return arg1(dependencyMap[17]).t.Yt6NkU;
+                              return require(1212) /* getSystemLocale */.t.Yt6NkU;
                             } else {
                               found = constants;
                               if (constants.MEMBER_DISCONNECT === action) {
-                                found = arg1;
+                                found = require;
                                 found = dependencyMap;
-                                return arg1(dependencyMap[17]).t.K4eCZw;
+                                return require(1212) /* getSystemLocale */.t.K4eCZw;
                               } else {
                                 found = constants;
                                 if (constants.BOT_ADD === action) {
-                                  found = arg1;
+                                  found = require;
                                   found = dependencyMap;
-                                  return arg1(dependencyMap[17]).t.fWvX0G;
+                                  return require(1212) /* getSystemLocale */.t.fWvX0G;
                                 } else {
                                   found = constants;
                                   if (constants.ROLE_CREATE === action) {
-                                    found = arg1;
+                                    found = require;
                                     found = dependencyMap;
-                                    return arg1(dependencyMap[17]).t.UTLTx6;
+                                    return require(1212) /* getSystemLocale */.t.UTLTx6;
                                   } else {
                                     found = constants;
                                     if (constants.ROLE_UPDATE === action) {
-                                      found = arg1;
+                                      found = require;
                                       found = dependencyMap;
-                                      return arg1(dependencyMap[17]).t.NRbN18;
+                                      return require(1212) /* getSystemLocale */.t.NRbN18;
                                     } else {
                                       found = constants;
                                       if (constants.ROLE_DELETE === action) {
-                                        found = arg1;
+                                        found = require;
                                         found = dependencyMap;
-                                        return arg1(dependencyMap[17]).t.4s63tb;
+                                        return require(1212) /* getSystemLocale */.t["4s63tb"];
                                       } else {
                                         found = constants;
                                         if (constants.INVITE_CREATE === action) {
-                                          found = arg1;
+                                          found = require;
                                           found = dependencyMap;
-                                          return arg1(dependencyMap[17]).t.YHOXWy;
+                                          return require(1212) /* getSystemLocale */.t.YHOXWy;
                                         } else {
                                           found = constants;
                                           if (constants.INVITE_UPDATE === action) {
-                                            found = arg1;
+                                            found = require;
                                             found = dependencyMap;
-                                            return arg1(dependencyMap[17]).t.ja3kGS;
+                                            return require(1212) /* getSystemLocale */.t.ja3kGS;
                                           } else {
                                             found = constants;
                                             if (constants.INVITE_DELETE === action) {
-                                              found = arg1;
+                                              found = require;
                                               found = dependencyMap;
-                                              return arg1(dependencyMap[17]).t.3n/iWk;
+                                              return require(1212) /* getSystemLocale */.t["3n/iWk"];
                                             } else {
                                               found = constants;
                                               if (constants.WEBHOOK_CREATE === action) {
-                                                found = arg1;
+                                                found = require;
                                                 found = dependencyMap;
-                                                return arg1(dependencyMap[17]).t.MhYhil;
+                                                return require(1212) /* getSystemLocale */.t.MhYhil;
                                               } else {
                                                 found = constants;
                                                 if (constants.WEBHOOK_UPDATE === action) {
-                                                  found = arg1;
+                                                  found = require;
                                                   found = dependencyMap;
-                                                  return arg1(dependencyMap[17]).t.6GTlWB;
+                                                  return require(1212) /* getSystemLocale */.t["6GTlWB"];
                                                 } else {
                                                   found = constants;
                                                   if (constants.WEBHOOK_DELETE === action) {
-                                                    found = arg1;
+                                                    found = require;
                                                     found = dependencyMap;
-                                                    return arg1(dependencyMap[17]).t.in0VjZ;
+                                                    return require(1212) /* getSystemLocale */.t.in0VjZ;
                                                   } else {
                                                     found = constants;
                                                     if (constants.EMOJI_CREATE === action) {
-                                                      found = arg1;
+                                                      found = require;
                                                       found = dependencyMap;
-                                                      return arg1(dependencyMap[17]).t.7vekRO;
+                                                      return require(1212) /* getSystemLocale */.t["7vekRO"];
                                                     } else {
                                                       found = constants;
                                                       if (constants.EMOJI_UPDATE === action) {
-                                                        found = arg1;
+                                                        found = require;
                                                         found = dependencyMap;
-                                                        return arg1(dependencyMap[17]).t.IsCKfh;
+                                                        return require(1212) /* getSystemLocale */.t.IsCKfh;
                                                       } else {
                                                         found = constants;
                                                         if (constants.EMOJI_DELETE === action) {
-                                                          found = arg1;
+                                                          found = require;
                                                           found = dependencyMap;
-                                                          return arg1(dependencyMap[17]).t.JnUaVG;
+                                                          return require(1212) /* getSystemLocale */.t.JnUaVG;
                                                         } else {
                                                           found = constants;
                                                           if (constants.STICKER_CREATE === action) {
-                                                            found = arg1;
+                                                            found = require;
                                                             found = dependencyMap;
-                                                            return arg1(dependencyMap[17]).t.DRZifq;
+                                                            return require(1212) /* getSystemLocale */.t.DRZifq;
                                                           } else {
                                                             found = constants;
                                                             if (constants.STICKER_UPDATE === action) {
-                                                              found = arg1;
+                                                              found = require;
                                                               found = dependencyMap;
-                                                              return arg1(dependencyMap[17]).t.bhujGc;
+                                                              return require(1212) /* getSystemLocale */.t.bhujGc;
                                                             } else {
                                                               found = constants;
                                                               if (constants.STICKER_DELETE === action) {
-                                                                found = arg1;
+                                                                found = require;
                                                                 found = dependencyMap;
-                                                                return arg1(dependencyMap[17]).t.rGEP9U;
+                                                                return require(1212) /* getSystemLocale */.t.rGEP9U;
                                                               } else {
                                                                 found = constants;
                                                                 if (constants.MESSAGE_DELETE === action) {
-                                                                  found = arg1;
+                                                                  found = require;
                                                                   found = dependencyMap;
-                                                                  return arg1(dependencyMap[17]).t.HPkD+M;
+                                                                  return require(1212) /* getSystemLocale */.t["HPkD+M"];
                                                                 } else {
                                                                   found = constants;
                                                                   if (constants.MESSAGE_BULK_DELETE === action) {
-                                                                    found = arg1;
+                                                                    found = require;
                                                                     found = dependencyMap;
-                                                                    return arg1(dependencyMap[17]).t.3RIvLE;
+                                                                    return require(1212) /* getSystemLocale */.t["3RIvLE"];
                                                                   } else {
                                                                     found = constants;
                                                                     if (constants.MESSAGE_PIN === action) {
-                                                                      found = arg1;
+                                                                      found = require;
                                                                       found = dependencyMap;
-                                                                      return arg1(dependencyMap[17]).t.Yna7E7;
+                                                                      return require(1212) /* getSystemLocale */.t.Yna7E7;
                                                                     } else {
                                                                       found = constants;
                                                                       if (constants.MESSAGE_UNPIN === action) {
-                                                                        found = arg1;
+                                                                        found = require;
                                                                         found = dependencyMap;
-                                                                        return arg1(dependencyMap[17]).t.NCxXUW;
+                                                                        return require(1212) /* getSystemLocale */.t.NCxXUW;
                                                                       } else {
                                                                         found = constants;
                                                                         if (constants.INTEGRATION_CREATE === action) {
-                                                                          found = arg1;
+                                                                          found = require;
                                                                           found = dependencyMap;
-                                                                          return arg1(dependencyMap[17]).t.HYvCb3;
+                                                                          return require(1212) /* getSystemLocale */.t.HYvCb3;
                                                                         } else {
                                                                           found = constants;
                                                                           if (constants.INTEGRATION_UPDATE === action) {
-                                                                            found = arg1;
+                                                                            found = require;
                                                                             found = dependencyMap;
-                                                                            return arg1(dependencyMap[17]).t.ibCCOS;
+                                                                            return require(1212) /* getSystemLocale */.t.ibCCOS;
                                                                           } else {
                                                                             found = constants;
                                                                             if (constants.INTEGRATION_DELETE === action) {
-                                                                              found = arg1;
+                                                                              found = require;
                                                                               found = dependencyMap;
-                                                                              return arg1(dependencyMap[17]).t.8zScWY;
+                                                                              return require(1212) /* getSystemLocale */.t["8zScWY"];
                                                                             } else {
                                                                               found = constants;
                                                                               if (constants.STAGE_INSTANCE_CREATE === action) {
-                                                                                found = arg1;
+                                                                                found = require;
                                                                                 found = dependencyMap;
-                                                                                return arg1(dependencyMap[17]).t.n7x/DF;
+                                                                                return require(1212) /* getSystemLocale */.t["n7x/DF"];
                                                                               } else {
                                                                                 found = constants;
                                                                                 if (constants.STAGE_INSTANCE_UPDATE === action) {
-                                                                                  found = arg1;
+                                                                                  found = require;
                                                                                   found = dependencyMap;
-                                                                                  return arg1(dependencyMap[17]).t.0hQYU4;
+                                                                                  return require(1212) /* getSystemLocale */.t["0hQYU4"];
                                                                                 } else {
                                                                                   found = constants;
                                                                                   if (constants.STAGE_INSTANCE_DELETE === action) {
                                                                                     found = null;
                                                                                     if (null != log.userId) {
-                                                                                      found = arg1;
+                                                                                      found = require;
                                                                                       found = dependencyMap;
                                                                                     } else {
-                                                                                      found = arg1;
+                                                                                      found = require;
                                                                                       found = dependencyMap;
                                                                                     }
                                                                                     return _7ZIFm9;
                                                                                   } else {
                                                                                     found = constants;
                                                                                     if (constants.GUILD_SCHEDULED_EVENT_CREATE === action) {
-                                                                                      found = arg1;
+                                                                                      found = require;
                                                                                       found = dependencyMap;
-                                                                                      return arg1(dependencyMap[17]).t.S7k52p;
+                                                                                      return require(1212) /* getSystemLocale */.t.S7k52p;
                                                                                     } else {
                                                                                       found = constants;
                                                                                       if (constants.GUILD_SCHEDULED_EVENT_UPDATE === action) {
                                                                                         found = dependencyMap;
-                                                                                        return arg1(dependencyMap[17]).t.ebTK11;
+                                                                                        return require(1212) /* getSystemLocale */.t.ebTK11;
                                                                                       } else {
                                                                                         found = constants;
                                                                                         if (constants.GUILD_SCHEDULED_EVENT_DELETE === action) {
-                                                                                          return arg1(dependencyMap[17]).t./ARPKQ;
+                                                                                          return require(1212) /* getSystemLocale */.t["/ARPKQ"];
                                                                                         } else {
                                                                                           found = constants;
                                                                                           if (constants.GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE !== action) {
@@ -1633,14 +1649,14 @@ export const getChangeTitle = function getChangeTitle(log) {
                                                                                             if (constants.GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE !== action) {
                                                                                               found = constants;
                                                                                               if (constants.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE === action) {
-                                                                                                return arg1(dependencyMap[17]).t.zYb2da;
+                                                                                                return require(1212) /* getSystemLocale */.t.zYb2da;
                                                                                               } else {
                                                                                                 found = constants;
                                                                                                 if (constants.THREAD_CREATE === action) {
                                                                                                   let found1 = null;
                                                                                                   if (null != log.changes) {
                                                                                                     const changes1 = log.changes;
-                                                                                                    found1 = changes1.find((key) => key.key === constants.TYPE);
+                                                                                                    found1 = changes1.find((key) => key.key === outer1_16.TYPE);
                                                                                                   }
                                                                                                   if (null == found1) {
                                                                                                     const _Error = Error;
@@ -1650,29 +1666,29 @@ export const getChangeTitle = function getChangeTitle(log) {
                                                                                                     const newValue2 = found1.newValue;
                                                                                                     found = constants2;
                                                                                                     if (constants2.PRIVATE_THREAD === newValue2) {
-                                                                                                      return arg1(dependencyMap[17]).t.Br0y5w;
+                                                                                                      return require(1212) /* getSystemLocale */.t.Br0y5w;
                                                                                                     } else if (constants2.ANNOUNCEMENT_THREAD === newValue2) {
-                                                                                                      return arg1(dependencyMap[17]).t.6uaMmO;
+                                                                                                      return require(1212) /* getSystemLocale */.t["6uaMmO"];
                                                                                                     } else {
-                                                                                                      return arg1(dependencyMap[17]).t.2cxQ7G;
+                                                                                                      return require(1212) /* getSystemLocale */.t["2cxQ7G"];
                                                                                                     }
                                                                                                   }
                                                                                                 } else {
                                                                                                   found = constants;
                                                                                                   if (constants.THREAD_UPDATE === action) {
-                                                                                                    return arg1(dependencyMap[17]).t.PSsy4t;
+                                                                                                    return require(1212) /* getSystemLocale */.t.PSsy4t;
                                                                                                   } else {
                                                                                                     found = constants;
                                                                                                     if (constants.THREAD_DELETE === action) {
-                                                                                                      return arg1(dependencyMap[17]).t.s3Khn8;
+                                                                                                      return require(1212) /* getSystemLocale */.t.s3Khn8;
                                                                                                     } else {
                                                                                                       found = constants;
                                                                                                       if (constants.APPLICATION_COMMAND_PERMISSION_UPDATE === action) {
-                                                                                                        return arg1(dependencyMap[17]).t.uzCqBm;
+                                                                                                        return require(1212) /* getSystemLocale */.t.uzCqBm;
                                                                                                       } else {
                                                                                                         found = constants;
                                                                                                         if (constants.AUTO_MODERATION_BLOCK_MESSAGE === action) {
-                                                                                                          return arg1(dependencyMap[17]).t.NqWv2K;
+                                                                                                          return require(1212) /* getSystemLocale */.t.NqWv2K;
                                                                                                         } else {
                                                                                                           found = constants;
                                                                                                           if (constants.AUTO_MODERATION_FLAG_TO_CHANNEL === action) {
@@ -1682,127 +1698,127 @@ export const getChangeTitle = function getChangeTitle(log) {
                                                                                                               prop = options.auto_moderation_rule_trigger_type;
                                                                                                             }
                                                                                                             if (prop === str.toString()) {
-                                                                                                              let SD0PwJ = arg1(dependencyMap[17]).t.YQsjej;
+                                                                                                              let SD0PwJ = require(1212) /* getSystemLocale */.t.YQsjej;
                                                                                                             } else {
-                                                                                                              SD0PwJ = arg1(dependencyMap[17]).t.SD0PwJ;
+                                                                                                              SD0PwJ = require(1212) /* getSystemLocale */.t.SD0PwJ;
                                                                                                             }
                                                                                                             return SD0PwJ;
                                                                                                           } else {
                                                                                                             found = constants;
                                                                                                             if (constants.AUTO_MODERATION_USER_COMMUNICATION_DISABLED === action) {
-                                                                                                              return arg1(dependencyMap[17]).t.Vk4TwX;
+                                                                                                              return require(1212) /* getSystemLocale */.t.Vk4TwX;
                                                                                                             } else {
                                                                                                               found = constants;
                                                                                                               if (constants.AUTO_MODERATION_QUARANTINE_USER === action) {
-                                                                                                                return arg1(dependencyMap[17]).t./W5u5o;
+                                                                                                                return require(1212) /* getSystemLocale */.t["/W5u5o"];
                                                                                                               } else {
                                                                                                                 found = constants;
                                                                                                                 if (constants.CREATOR_MONETIZATION_REQUEST_CREATED === action) {
-                                                                                                                  return arg1(dependencyMap[17]).t.ONvWyr;
+                                                                                                                  return require(1212) /* getSystemLocale */.t.ONvWyr;
                                                                                                                 } else {
                                                                                                                   found = constants;
                                                                                                                   if (constants.CREATOR_MONETIZATION_TERMS_ACCEPTED === action) {
-                                                                                                                    return arg1(dependencyMap[17]).t.ryGLk+;
+                                                                                                                    return require(1212) /* getSystemLocale */.t["ryGLk+"];
                                                                                                                   } else {
                                                                                                                     found = constants;
                                                                                                                     if (constants.AUTO_MODERATION_RULE_CREATE === action) {
-                                                                                                                      return arg1(dependencyMap[17]).t.NKljj+;
+                                                                                                                      return require(1212) /* getSystemLocale */.t["NKljj+"];
                                                                                                                     } else {
                                                                                                                       found = constants;
                                                                                                                       if (constants.AUTO_MODERATION_RULE_UPDATE === action) {
-                                                                                                                        return arg1(dependencyMap[17]).t.3wEA9u;
+                                                                                                                        return require(1212) /* getSystemLocale */.t["3wEA9u"];
                                                                                                                       } else {
                                                                                                                         found = constants;
                                                                                                                         if (constants.AUTO_MODERATION_RULE_DELETE === action) {
-                                                                                                                          return arg1(dependencyMap[17]).t.umua3n;
+                                                                                                                          return require(1212) /* getSystemLocale */.t.umua3n;
                                                                                                                         } else {
                                                                                                                           found = constants;
                                                                                                                           if (constants.ONBOARDING_PROMPT_CREATE === action) {
-                                                                                                                            return arg1(dependencyMap[17]).t./8A1g2;
+                                                                                                                            return require(1212) /* getSystemLocale */.t["/8A1g2"];
                                                                                                                           } else {
                                                                                                                             found = constants;
                                                                                                                             if (constants.ONBOARDING_PROMPT_UPDATE === action) {
-                                                                                                                              return arg1(dependencyMap[17]).t.ArIrWI;
+                                                                                                                              return require(1212) /* getSystemLocale */.t.ArIrWI;
                                                                                                                             } else {
                                                                                                                               found = constants;
                                                                                                                               if (constants.ONBOARDING_PROMPT_DELETE === action) {
-                                                                                                                                return arg1(dependencyMap[17]).t.IuBTao;
+                                                                                                                                return require(1212) /* getSystemLocale */.t.IuBTao;
                                                                                                                               } else {
                                                                                                                                 found = constants;
                                                                                                                                 if (constants.ONBOARDING_CREATE === action) {
-                                                                                                                                  return arg1(dependencyMap[17]).t.wDaq3/;
+                                                                                                                                  return require(1212) /* getSystemLocale */.t["wDaq3/"];
                                                                                                                                 } else {
                                                                                                                                   found = constants;
                                                                                                                                   if (constants.ONBOARDING_UPDATE === action) {
-                                                                                                                                    return arg1(dependencyMap[17]).t.yONu/l;
+                                                                                                                                    return require(1212) /* getSystemLocale */.t["yONu/l"];
                                                                                                                                   } else {
                                                                                                                                     found = constants;
                                                                                                                                     if (constants.HOME_SETTINGS_CREATE === action) {
-                                                                                                                                      return arg1(dependencyMap[17]).t.dSdCjG;
+                                                                                                                                      return require(1212) /* getSystemLocale */.t.dSdCjG;
                                                                                                                                     } else {
                                                                                                                                       found = constants;
                                                                                                                                       if (constants.HOME_SETTINGS_UPDATE === action) {
-                                                                                                                                        return arg1(dependencyMap[17]).t.XHE8qv;
+                                                                                                                                        return require(1212) /* getSystemLocale */.t.XHE8qv;
                                                                                                                                       } else {
                                                                                                                                         found = constants;
                                                                                                                                         if (constants.GUILD_HOME_FEATURE_ITEM === action) {
                                                                                                                                           let found2 = null;
                                                                                                                                           if (null != log.changes) {
                                                                                                                                             const changes2 = log.changes;
-                                                                                                                                            found2 = changes2.find((key) => key.key === constants.ENTITY_TYPE);
+                                                                                                                                            found2 = changes2.find((key) => key.key === outer1_16.ENTITY_TYPE);
                                                                                                                                           }
                                                                                                                                           if (null == found2) {
-                                                                                                                                            return arg1(dependencyMap[17]).t.UZ+U3A;
+                                                                                                                                            return require(1212) /* getSystemLocale */.t["UZ+U3A"];
                                                                                                                                           } else {
                                                                                                                                             const newValue = found2.newValue;
-                                                                                                                                            found = arg1;
+                                                                                                                                            found = require;
                                                                                                                                             found = dependencyMap;
-                                                                                                                                            if (arg1(dependencyMap[20]).GuildFeedItemTypes.MESSAGE === newValue) {
-                                                                                                                                              return arg1(dependencyMap[17]).t.PyEa+J;
-                                                                                                                                            } else if (arg1(dependencyMap[20]).GuildFeedItemTypes.FORUM_POST === newValue) {
-                                                                                                                                              return arg1(dependencyMap[17]).t.hCuAb1;
+                                                                                                                                            if (require(16229) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
+                                                                                                                                              return require(1212) /* getSystemLocale */.t["PyEa+J"];
+                                                                                                                                            } else if (require(16229) /* set */.GuildFeedItemTypes.FORUM_POST === newValue) {
+                                                                                                                                              return require(1212) /* getSystemLocale */.t.hCuAb1;
                                                                                                                                             } else {
-                                                                                                                                              return arg1(dependencyMap[17]).t.UZ+U3A;
+                                                                                                                                              return require(1212) /* getSystemLocale */.t["UZ+U3A"];
                                                                                                                                             }
                                                                                                                                           }
                                                                                                                                         } else {
                                                                                                                                           found = constants;
                                                                                                                                           if (constants.GUILD_HOME_REMOVE_ITEM === action) {
-                                                                                                                                            return arg1(dependencyMap[17]).t.kPReun;
+                                                                                                                                            return require(1212) /* getSystemLocale */.t.kPReun;
                                                                                                                                           } else {
                                                                                                                                             found = constants;
                                                                                                                                             if (constants.SOUNDBOARD_SOUND_CREATE === action) {
-                                                                                                                                              return arg1(dependencyMap[17]).t.0PD83V;
+                                                                                                                                              return require(1212) /* getSystemLocale */.t["0PD83V"];
                                                                                                                                             } else {
                                                                                                                                               found = constants;
                                                                                                                                               if (constants.SOUNDBOARD_SOUND_UPDATE === action) {
-                                                                                                                                                return arg1(dependencyMap[17]).t.CM8n1w;
+                                                                                                                                                return require(1212) /* getSystemLocale */.t.CM8n1w;
                                                                                                                                               } else {
                                                                                                                                                 found = constants;
                                                                                                                                                 if (constants.SOUNDBOARD_SOUND_DELETE === action) {
-                                                                                                                                                  return arg1(dependencyMap[17]).t.kVz4/0;
+                                                                                                                                                  return require(1212) /* getSystemLocale */.t["kVz4/0"];
                                                                                                                                                 } else {
                                                                                                                                                   found = constants;
                                                                                                                                                   if (constants.VOICE_CHANNEL_STATUS_CREATE === action) {
-                                                                                                                                                    return arg1(dependencyMap[17]).t.MWjnU7;
+                                                                                                                                                    return require(1212) /* getSystemLocale */.t.MWjnU7;
                                                                                                                                                   } else {
                                                                                                                                                     found = constants;
                                                                                                                                                     if (constants.VOICE_CHANNEL_STATUS_DELETE === action) {
-                                                                                                                                                      return arg1(dependencyMap[17]).t.aS8Krq;
+                                                                                                                                                      return require(1212) /* getSystemLocale */.t.aS8Krq;
                                                                                                                                                     } else {
                                                                                                                                                       found = constants;
                                                                                                                                                       if (constants.GUILD_MEMBER_VERIFICATION_UPDATE === action) {
-                                                                                                                                                        return arg1(dependencyMap[17]).t.NUKUb+;
+                                                                                                                                                        return require(1212) /* getSystemLocale */.t["NUKUb+"];
                                                                                                                                                       } else {
                                                                                                                                                         found = constants;
                                                                                                                                                         if (constants.GUILD_PROFILE_UPDATE === action) {
-                                                                                                                                                          return arg1(dependencyMap[17]).t.Ed6hF1;
+                                                                                                                                                          return require(1212) /* getSystemLocale */.t.Ed6hF1;
                                                                                                                                                         } else {
                                                                                                                                                           found = constants;
                                                                                                                                                           if (constants.GUILD_MIGRATE_PIN_PERMISSION === action) {
-                                                                                                                                                            return arg1(dependencyMap[17]).t.3Ne7MA;
+                                                                                                                                                            return require(1212) /* getSystemLocale */.t["3Ne7MA"];
                                                                                                                                                           } else if (constants.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION === action) {
-                                                                                                                                                            return arg1(dependencyMap[17]).t.naflH+;
+                                                                                                                                                            return require(1212) /* getSystemLocale */.t["naflH+"];
                                                                                                                                                           } else {
                                                                                                                                                             return null;
                                                                                                                                                           }
@@ -1838,7 +1854,7 @@ export const getChangeTitle = function getChangeTitle(log) {
                                                                                               }
                                                                                             }
                                                                                           }
-                                                                                          return arg1(dependencyMap[17]).t.8qCI36;
+                                                                                          return require(1212) /* getSystemLocale */.t["8qCI36"];
                                                                                         }
                                                                                       }
                                                                                     }
@@ -1886,307 +1902,307 @@ export const getChangeTitle = function getChangeTitle(log) {
 };
 export const getStringForAddedChannelFlag = function getStringForAddedChannelFlag(arg0) {
   if (ChannelFlags.GUILD_FEED_REMOVED === arg0) {
-    const intl3 = arg1(dependencyMap[17]).intl;
-    return intl3.string(arg1(dependencyMap[17]).t.5G8ZD4);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t["5G8ZD4"]);
   } else if (ChannelFlags.ACTIVE_CHANNELS_REMOVED === arg0) {
-    const intl2 = arg1(dependencyMap[17]).intl;
-    return intl2.string(arg1(dependencyMap[17]).t.4YLtzC);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t["4YLtzC"]);
   } else if (ChannelFlags.PINNED === arg0) {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.1QLRYb);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["1QLRYb"]);
   } else {
     return null;
   }
 };
 export const getStringForRemovedChannelFlag = function getStringForRemovedChannelFlag(arg0) {
   if (ChannelFlags.GUILD_FEED_REMOVED === arg0) {
-    const intl3 = arg1(dependencyMap[17]).intl;
-    return intl3.string(arg1(dependencyMap[17]).t.S5kuWQ);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.S5kuWQ);
   } else if (ChannelFlags.ACTIVE_CHANNELS_REMOVED === arg0) {
-    const intl2 = arg1(dependencyMap[17]).intl;
-    return intl2.string(arg1(dependencyMap[17]).t.8qpgcz);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t["8qpgcz"]);
   } else if (ChannelFlags.PINNED === arg0) {
-    const intl = arg1(dependencyMap[17]).intl;
-    return intl.string(arg1(dependencyMap[17]).t.CMweGA);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.CMweGA);
   } else {
     return null;
   }
 };
 export const getStringForPermission = function getStringForPermission(arg0, log) {
   if (constants3.CREATE_INSTANT_INVITE === arg0) {
-    let stringResult = log;
+    let stringResult = require;
     stringResult = dependencyMap;
-    const intl52 = log(dependencyMap[17]).intl;
-    return intl52.string(log(dependencyMap[17]).t.zJrgTG);
+    const intl52 = require(1212) /* getSystemLocale */.intl;
+    return intl52.string(require(1212) /* getSystemLocale */.t.zJrgTG);
   } else {
     stringResult = constants3;
     if (constants3.KICK_MEMBERS === arg0) {
-      stringResult = log;
+      stringResult = require;
       stringResult = dependencyMap;
-      const intl51 = log(dependencyMap[17]).intl;
-      return intl51.string(log(dependencyMap[17]).t.pBNv6i);
+      const intl51 = require(1212) /* getSystemLocale */.intl;
+      return intl51.string(require(1212) /* getSystemLocale */.t.pBNv6i);
     } else {
       stringResult = constants3;
       if (constants3.BAN_MEMBERS === arg0) {
-        stringResult = log;
+        stringResult = require;
         stringResult = dependencyMap;
-        const intl50 = log(dependencyMap[17]).intl;
-        return intl50.string(log(dependencyMap[17]).t.oTBA7N);
+        const intl50 = require(1212) /* getSystemLocale */.intl;
+        return intl50.string(require(1212) /* getSystemLocale */.t.oTBA7N);
       } else {
         stringResult = constants3;
         if (constants3.ADMINISTRATOR === arg0) {
-          stringResult = log;
+          stringResult = require;
           stringResult = dependencyMap;
-          const intl49 = log(dependencyMap[17]).intl;
-          return intl49.string(log(dependencyMap[17]).t.PGvZqX);
+          const intl49 = require(1212) /* getSystemLocale */.intl;
+          return intl49.string(require(1212) /* getSystemLocale */.t.PGvZqX);
         } else {
           stringResult = constants3;
           if (constants3.MANAGE_CHANNELS === arg0) {
             if (log.targetType !== AuditLogTargetTypes.CHANNEL) {
               if (log.targetType !== AuditLogTargetTypes.CHANNEL_OVERWRITE) {
-                stringResult = log;
+                stringResult = require;
                 stringResult = dependencyMap;
-                const intl47 = log(dependencyMap[17]).intl;
-                stringResult = intl47.string(log(dependencyMap[17]).t.9qLtWs);
+                const intl47 = require(1212) /* getSystemLocale */.intl;
+                stringResult = intl47.string(require(1212) /* getSystemLocale */.t["9qLtWs"]);
               }
               return stringResult;
             }
-            stringResult = log;
+            stringResult = require;
             stringResult = dependencyMap;
-            const intl48 = log(dependencyMap[17]).intl;
-            stringResult = intl48.string(log(dependencyMap[17]).t.nAw15L);
+            const intl48 = require(1212) /* getSystemLocale */.intl;
+            stringResult = intl48.string(require(1212) /* getSystemLocale */.t.nAw15L);
           } else {
             stringResult = constants3;
             if (constants3.MANAGE_GUILD === arg0) {
-              const intl46 = log(dependencyMap[17]).intl;
-              return intl46.string(log(dependencyMap[17]).t.QZRcfO);
+              const intl46 = require(1212) /* getSystemLocale */.intl;
+              return intl46.string(require(1212) /* getSystemLocale */.t.QZRcfO);
             } else {
               stringResult = constants3;
               if (constants3.VIEW_GUILD_ANALYTICS === arg0) {
-                const intl45 = log(dependencyMap[17]).intl;
-                return intl45.string(log(dependencyMap[17]).t.rQJBE/);
+                const intl45 = require(1212) /* getSystemLocale */.intl;
+                return intl45.string(require(1212) /* getSystemLocale */.t["rQJBE/"]);
               } else {
                 stringResult = constants3;
                 if (constants3.VIEW_CREATOR_MONETIZATION_ANALYTICS === arg0) {
-                  const intl44 = log(dependencyMap[17]).intl;
-                  return intl44.string(log(dependencyMap[17]).t.0lTLTv);
+                  const intl44 = require(1212) /* getSystemLocale */.intl;
+                  return intl44.string(require(1212) /* getSystemLocale */.t["0lTLTv"]);
                 } else {
                   stringResult = constants3;
                   if (constants3.CHANGE_NICKNAME === arg0) {
-                    const intl43 = log(dependencyMap[17]).intl;
-                    return intl43.string(log(dependencyMap[17]).t.dilOF6);
+                    const intl43 = require(1212) /* getSystemLocale */.intl;
+                    return intl43.string(require(1212) /* getSystemLocale */.t.dilOF6);
                   } else {
                     stringResult = constants3;
                     if (constants3.MANAGE_NICKNAMES === arg0) {
-                      const intl42 = log(dependencyMap[17]).intl;
-                      return intl42.string(log(dependencyMap[17]).t.t+Ct5x);
+                      const intl42 = require(1212) /* getSystemLocale */.intl;
+                      return intl42.string(require(1212) /* getSystemLocale */.t["t+Ct5x"]);
                     } else {
                       stringResult = constants3;
                       if (constants3.MANAGE_ROLES === arg0) {
-                        const intl41 = log(dependencyMap[17]).intl;
-                        return intl41.string(log(dependencyMap[17]).t.C8d+oG);
+                        const intl41 = require(1212) /* getSystemLocale */.intl;
+                        return intl41.string(require(1212) /* getSystemLocale */.t["C8d+oG"]);
                       } else {
                         stringResult = constants3;
                         if (constants3.MANAGE_WEBHOOKS === arg0) {
-                          const intl40 = log(dependencyMap[17]).intl;
-                          return intl40.string(log(dependencyMap[17]).t./ADKmM);
+                          const intl40 = require(1212) /* getSystemLocale */.intl;
+                          return intl40.string(require(1212) /* getSystemLocale */.t["/ADKmM"]);
                         } else {
                           stringResult = constants3;
                           if (constants3.CREATE_GUILD_EXPRESSIONS === arg0) {
-                            const intl39 = log(dependencyMap[17]).intl;
-                            return intl39.string(log(dependencyMap[17]).t.HarVuP);
+                            const intl39 = require(1212) /* getSystemLocale */.intl;
+                            return intl39.string(require(1212) /* getSystemLocale */.t.HarVuP);
                           } else {
                             stringResult = constants3;
                             if (constants3.MANAGE_GUILD_EXPRESSIONS === arg0) {
-                              const intl38 = log(dependencyMap[17]).intl;
-                              return intl38.string(log(dependencyMap[17]).t.bbuXIn);
+                              const intl38 = require(1212) /* getSystemLocale */.intl;
+                              return intl38.string(require(1212) /* getSystemLocale */.t.bbuXIn);
                             } else {
                               stringResult = constants3;
                               if (constants3.VIEW_AUDIT_LOG === arg0) {
-                                const intl37 = log(dependencyMap[17]).intl;
-                                return intl37.string(log(dependencyMap[17]).t.fZgLpA);
+                                const intl37 = require(1212) /* getSystemLocale */.intl;
+                                return intl37.string(require(1212) /* getSystemLocale */.t.fZgLpA);
                               } else {
                                 stringResult = constants3;
                                 if (constants3.VIEW_CHANNEL === arg0) {
                                   if (log.targetType !== AuditLogTargetTypes.CHANNEL) {
                                     if (log.targetType !== AuditLogTargetTypes.CHANNEL_OVERWRITE) {
-                                      const intl35 = log(dependencyMap[17]).intl;
-                                      let stringResult1 = intl35.string(log(dependencyMap[17]).t.uV83yi);
+                                      const intl35 = require(1212) /* getSystemLocale */.intl;
+                                      let stringResult1 = intl35.string(require(1212) /* getSystemLocale */.t.uV83yi);
                                     }
                                     return stringResult1;
                                   }
-                                  const intl36 = log(dependencyMap[17]).intl;
-                                  stringResult1 = intl36.string(log(dependencyMap[17]).t.W/A4Qp);
+                                  const intl36 = require(1212) /* getSystemLocale */.intl;
+                                  stringResult1 = intl36.string(require(1212) /* getSystemLocale */.t["W/A4Qp"]);
                                 } else {
                                   stringResult = constants3;
                                   if (constants3.SEND_MESSAGES === arg0) {
-                                    const intl34 = log(dependencyMap[17]).intl;
-                                    return intl34.string(log(dependencyMap[17]).t.T32rkC);
+                                    const intl34 = require(1212) /* getSystemLocale */.intl;
+                                    return intl34.string(require(1212) /* getSystemLocale */.t.T32rkC);
                                   } else {
                                     stringResult = constants3;
                                     if (constants3.SEND_TTS_MESSAGES === arg0) {
-                                      const intl33 = log(dependencyMap[17]).intl;
-                                      return intl33.string(log(dependencyMap[17]).t.Mg7bku);
+                                      const intl33 = require(1212) /* getSystemLocale */.intl;
+                                      return intl33.string(require(1212) /* getSystemLocale */.t.Mg7bku);
                                     } else {
                                       stringResult = constants3;
                                       if (constants3.USE_APPLICATION_COMMANDS === arg0) {
-                                        const intl32 = log(dependencyMap[17]).intl;
-                                        return intl32.string(log(dependencyMap[17]).t.shbR1a);
+                                        const intl32 = require(1212) /* getSystemLocale */.intl;
+                                        return intl32.string(require(1212) /* getSystemLocale */.t.shbR1a);
                                       } else {
                                         stringResult = constants3;
                                         if (constants3.MANAGE_MESSAGES === arg0) {
-                                          const intl31 = log(dependencyMap[17]).intl;
-                                          return intl31.string(log(dependencyMap[17]).t.6lU9xM);
+                                          const intl31 = require(1212) /* getSystemLocale */.intl;
+                                          return intl31.string(require(1212) /* getSystemLocale */.t["6lU9xM"]);
                                         } else {
                                           stringResult = constants3;
                                           if (constants3.EMBED_LINKS === arg0) {
-                                            const intl30 = log(dependencyMap[17]).intl;
-                                            return intl30.string(log(dependencyMap[17]).t.969dEL);
+                                            const intl30 = require(1212) /* getSystemLocale */.intl;
+                                            return intl30.string(require(1212) /* getSystemLocale */.t["969dEL"]);
                                           } else {
                                             stringResult = constants3;
                                             if (constants3.ATTACH_FILES === arg0) {
-                                              const intl29 = log(dependencyMap[17]).intl;
-                                              return intl29.string(log(dependencyMap[17]).t.3AS4UM);
+                                              const intl29 = require(1212) /* getSystemLocale */.intl;
+                                              return intl29.string(require(1212) /* getSystemLocale */.t["3AS4UM"]);
                                             } else {
                                               stringResult = constants3;
                                               if (constants3.READ_MESSAGE_HISTORY === arg0) {
-                                                const intl28 = log(dependencyMap[17]).intl;
-                                                return intl28.string(log(dependencyMap[17]).t.l9ufaR);
+                                                const intl28 = require(1212) /* getSystemLocale */.intl;
+                                                return intl28.string(require(1212) /* getSystemLocale */.t.l9ufaR);
                                               } else {
                                                 stringResult = constants3;
                                                 if (constants3.MENTION_EVERYONE === arg0) {
-                                                  const intl27 = log(dependencyMap[17]).intl;
-                                                  return intl27.string(log(dependencyMap[17]).t.Y78KGC);
+                                                  const intl27 = require(1212) /* getSystemLocale */.intl;
+                                                  return intl27.string(require(1212) /* getSystemLocale */.t.Y78KGC);
                                                 } else {
                                                   stringResult = constants3;
                                                   if (constants3.USE_EXTERNAL_EMOJIS === arg0) {
-                                                    const intl26 = log(dependencyMap[17]).intl;
-                                                    return intl26.string(log(dependencyMap[17]).t.BpBGZU);
+                                                    const intl26 = require(1212) /* getSystemLocale */.intl;
+                                                    return intl26.string(require(1212) /* getSystemLocale */.t.BpBGZU);
                                                   } else {
                                                     stringResult = constants3;
                                                     if (constants3.USE_EXTERNAL_STICKERS === arg0) {
-                                                      const intl25 = log(dependencyMap[17]).intl;
-                                                      return intl25.string(log(dependencyMap[17]).t.UeRs+b);
+                                                      const intl25 = require(1212) /* getSystemLocale */.intl;
+                                                      return intl25.string(require(1212) /* getSystemLocale */.t["UeRs+b"]);
                                                     } else {
                                                       stringResult = constants3;
                                                       if (constants3.ADD_REACTIONS === arg0) {
-                                                        const intl24 = log(dependencyMap[17]).intl;
-                                                        return intl24.string(log(dependencyMap[17]).t.yEoJAr);
+                                                        const intl24 = require(1212) /* getSystemLocale */.intl;
+                                                        return intl24.string(require(1212) /* getSystemLocale */.t.yEoJAr);
                                                       } else {
                                                         stringResult = constants3;
                                                         if (constants3.CONNECT === arg0) {
-                                                          const intl23 = log(dependencyMap[17]).intl;
-                                                          return intl23.string(log(dependencyMap[17]).t.S0W8Z5);
+                                                          const intl23 = require(1212) /* getSystemLocale */.intl;
+                                                          return intl23.string(require(1212) /* getSystemLocale */.t.S0W8Z5);
                                                         } else {
                                                           stringResult = constants3;
                                                           if (constants3.SPEAK === arg0) {
-                                                            const intl22 = log(dependencyMap[17]).intl;
-                                                            return intl22.string(log(dependencyMap[17]).t.8w1tIR);
+                                                            const intl22 = require(1212) /* getSystemLocale */.intl;
+                                                            return intl22.string(require(1212) /* getSystemLocale */.t["8w1tIR"]);
                                                           } else {
                                                             stringResult = constants3;
                                                             if (constants3.MUTE_MEMBERS === arg0) {
-                                                              const intl21 = log(dependencyMap[17]).intl;
-                                                              return intl21.string(log(dependencyMap[17]).t.8EI30/);
+                                                              const intl21 = require(1212) /* getSystemLocale */.intl;
+                                                              return intl21.string(require(1212) /* getSystemLocale */.t["8EI30/"]);
                                                             } else {
                                                               stringResult = constants3;
                                                               if (constants3.DEAFEN_MEMBERS === arg0) {
-                                                                const intl20 = log(dependencyMap[17]).intl;
-                                                                return intl20.string(log(dependencyMap[17]).t.9L47Fr);
+                                                                const intl20 = require(1212) /* getSystemLocale */.intl;
+                                                                return intl20.string(require(1212) /* getSystemLocale */.t["9L47Fr"]);
                                                               } else {
                                                                 stringResult = constants3;
                                                                 if (constants3.MOVE_MEMBERS === arg0) {
-                                                                  const intl19 = log(dependencyMap[17]).intl;
-                                                                  return intl19.string(log(dependencyMap[17]).t.YtjJPQ);
+                                                                  const intl19 = require(1212) /* getSystemLocale */.intl;
+                                                                  return intl19.string(require(1212) /* getSystemLocale */.t.YtjJPQ);
                                                                 } else {
                                                                   stringResult = constants3;
                                                                   if (constants3.USE_VAD === arg0) {
-                                                                    const intl18 = log(dependencyMap[17]).intl;
-                                                                    return intl18.string(log(dependencyMap[17]).t.08zAV7);
+                                                                    const intl18 = require(1212) /* getSystemLocale */.intl;
+                                                                    return intl18.string(require(1212) /* getSystemLocale */.t["08zAV7"]);
                                                                   } else {
                                                                     stringResult = constants3;
                                                                     if (constants3.PRIORITY_SPEAKER === arg0) {
-                                                                      const intl17 = log(dependencyMap[17]).intl;
-                                                                      return intl17.string(log(dependencyMap[17]).t.BVK71i);
+                                                                      const intl17 = require(1212) /* getSystemLocale */.intl;
+                                                                      return intl17.string(require(1212) /* getSystemLocale */.t.BVK71i);
                                                                     } else {
                                                                       stringResult = constants3;
                                                                       if (constants3.STREAM === arg0) {
-                                                                        const intl16 = log(dependencyMap[17]).intl;
-                                                                        return intl16.string(log(dependencyMap[17]).t.FlNoSV);
+                                                                        const intl16 = require(1212) /* getSystemLocale */.intl;
+                                                                        return intl16.string(require(1212) /* getSystemLocale */.t.FlNoSV);
                                                                       } else {
                                                                         stringResult = constants3;
                                                                         if (constants3.REQUEST_TO_SPEAK === arg0) {
-                                                                          const intl15 = log(dependencyMap[17]).intl;
-                                                                          return intl15.string(log(dependencyMap[17]).t.5kicT2);
+                                                                          const intl15 = require(1212) /* getSystemLocale */.intl;
+                                                                          return intl15.string(require(1212) /* getSystemLocale */.t["5kicT2"]);
                                                                         } else {
                                                                           stringResult = constants3;
                                                                           if (constants3.USE_EMBEDDED_ACTIVITIES === arg0) {
-                                                                            const intl14 = log(dependencyMap[17]).intl;
-                                                                            return intl14.string(log(dependencyMap[17]).t.rLSGeh);
+                                                                            const intl14 = require(1212) /* getSystemLocale */.intl;
+                                                                            return intl14.string(require(1212) /* getSystemLocale */.t.rLSGeh);
                                                                           } else {
                                                                             stringResult = constants3;
                                                                             if (constants3.CREATE_EVENTS === arg0) {
-                                                                              const intl13 = log(dependencyMap[17]).intl;
-                                                                              return intl13.string(log(dependencyMap[17]).t.qyjZua);
+                                                                              const intl13 = require(1212) /* getSystemLocale */.intl;
+                                                                              return intl13.string(require(1212) /* getSystemLocale */.t.qyjZua);
                                                                             } else {
                                                                               stringResult = constants3;
                                                                               if (constants3.MANAGE_EVENTS === arg0) {
-                                                                                const intl12 = log(dependencyMap[17]).intl;
-                                                                                return intl12.string(log(dependencyMap[17]).t.HIgA5a);
+                                                                                const intl12 = require(1212) /* getSystemLocale */.intl;
+                                                                                return intl12.string(require(1212) /* getSystemLocale */.t.HIgA5a);
                                                                               } else {
                                                                                 stringResult = constants3;
                                                                                 if (constants3.CREATE_PUBLIC_THREADS === arg0) {
-                                                                                  const intl11 = log(dependencyMap[17]).intl;
-                                                                                  return intl11.string(log(dependencyMap[17]).t.25rKnX);
+                                                                                  const intl11 = require(1212) /* getSystemLocale */.intl;
+                                                                                  return intl11.string(require(1212) /* getSystemLocale */.t["25rKnX"]);
                                                                                 } else {
                                                                                   stringResult = constants3;
                                                                                   if (constants3.CREATE_PRIVATE_THREADS === arg0) {
-                                                                                    const intl10 = log(dependencyMap[17]).intl;
-                                                                                    return intl10.string(log(dependencyMap[17]).t.QwbTSa);
+                                                                                    const intl10 = require(1212) /* getSystemLocale */.intl;
+                                                                                    return intl10.string(require(1212) /* getSystemLocale */.t.QwbTSa);
                                                                                   } else {
                                                                                     stringResult = constants3;
                                                                                     if (constants3.SEND_MESSAGES_IN_THREADS === arg0) {
-                                                                                      const intl9 = log(dependencyMap[17]).intl;
-                                                                                      return intl9.string(log(dependencyMap[17]).t.fTE74g);
+                                                                                      const intl9 = require(1212) /* getSystemLocale */.intl;
+                                                                                      return intl9.string(require(1212) /* getSystemLocale */.t.fTE74g);
                                                                                     } else {
                                                                                       stringResult = constants3;
                                                                                       if (constants3.MANAGE_THREADS === arg0) {
-                                                                                        const intl8 = log(dependencyMap[17]).intl;
-                                                                                        return intl8.string(log(dependencyMap[17]).t.kEqgr7);
+                                                                                        const intl8 = require(1212) /* getSystemLocale */.intl;
+                                                                                        return intl8.string(require(1212) /* getSystemLocale */.t.kEqgr7);
                                                                                       } else {
                                                                                         stringResult = constants3;
                                                                                         if (constants3.MODERATE_MEMBERS === arg0) {
-                                                                                          const intl7 = log(dependencyMap[17]).intl;
-                                                                                          return intl7.string(log(dependencyMap[17]).t.+RL6pz);
+                                                                                          const intl7 = require(1212) /* getSystemLocale */.intl;
+                                                                                          return intl7.string(require(1212) /* getSystemLocale */.t["+RL6pz"]);
                                                                                         } else {
                                                                                           stringResult = constants3;
                                                                                           if (constants3.SET_VOICE_CHANNEL_STATUS === arg0) {
-                                                                                            const intl6 = log(dependencyMap[17]).intl;
-                                                                                            return intl6.string(log(dependencyMap[17]).t.VBwkUf);
+                                                                                            const intl6 = require(1212) /* getSystemLocale */.intl;
+                                                                                            return intl6.string(require(1212) /* getSystemLocale */.t.VBwkUf);
                                                                                           } else {
                                                                                             stringResult = constants3;
                                                                                             if (constants3.SEND_POLLS === arg0) {
-                                                                                              const intl5 = log(dependencyMap[17]).intl;
-                                                                                              return intl5.string(log(dependencyMap[17]).t.UMQ7Ww);
+                                                                                              const intl5 = require(1212) /* getSystemLocale */.intl;
+                                                                                              return intl5.string(require(1212) /* getSystemLocale */.t.UMQ7Ww);
                                                                                             } else {
                                                                                               stringResult = constants3;
                                                                                               if (constants3.USE_EXTERNAL_APPS === arg0) {
-                                                                                                const intl4 = log(dependencyMap[17]).intl;
-                                                                                                return intl4.string(log(dependencyMap[17]).t.TtA5rK);
+                                                                                                const intl4 = require(1212) /* getSystemLocale */.intl;
+                                                                                                return intl4.string(require(1212) /* getSystemLocale */.t.TtA5rK);
                                                                                               } else {
                                                                                                 stringResult = constants3;
                                                                                                 if (constants3.PIN_MESSAGES === arg0) {
-                                                                                                  const intl3 = log(dependencyMap[17]).intl;
-                                                                                                  return intl3.string(log(dependencyMap[17]).t.Y5BI39);
+                                                                                                  const intl3 = require(1212) /* getSystemLocale */.intl;
+                                                                                                  return intl3.string(require(1212) /* getSystemLocale */.t.Y5BI39);
                                                                                                 } else {
                                                                                                   stringResult = constants3;
                                                                                                   if (constants3.BYPASS_SLOWMODE === arg0) {
-                                                                                                    const intl2 = log(dependencyMap[17]).intl;
-                                                                                                    return intl2.string(log(dependencyMap[17]).t.kqcjeV);
+                                                                                                    const intl2 = require(1212) /* getSystemLocale */.intl;
+                                                                                                    return intl2.string(require(1212) /* getSystemLocale */.t.kqcjeV);
                                                                                                   } else {
                                                                                                     stringResult = constants3;
                                                                                                     if (constants3.MANAGE_OFFICIAL_MESSAGES === arg0) {
-                                                                                                      const intl = log(dependencyMap[17]).intl;
-                                                                                                      return intl.string(log(dependencyMap[17]).t.Aj9ruN);
+                                                                                                      const intl = require(1212) /* getSystemLocale */.intl;
+                                                                                                      return intl.string(require(1212) /* getSystemLocale */.t.Aj9ruN);
                                                                                                     } else {
                                                                                                       return null;
                                                                                                     }
@@ -2241,92 +2257,98 @@ export const getStringForPermission = function getStringForPermission(arg0, log)
   }
 };
 export const transformLogs = function transformLogs(_logs, stateFromStores1) {
-  const items = [];
-  const importDefault = items;
-  const item = _logs.forEach((set) => {
-    let arg1 = set;
-    const tmp = function transformTarget(targetType, id) {
-      const result3 = targetType;
-      const items = id;
+  let closure_0 = stateFromStores1;
+  let items = [];
+  let item = _logs.forEach((set) => {
+    let result3 = set;
+    let tmp = (function transformTarget(targetType, result3) {
+      const callback = targetType;
+      let closure_1 = result3;
       targetType = targetType.targetType;
-      if (constants2.GUILD !== targetType) {
-        if (constants2.GUILD_HOME !== targetType) {
-          if (constants2.GUILD_PROFILE !== targetType) {
-            if (constants2.CHANNEL !== targetType) {
-              if (constants2.CHANNEL_OVERWRITE !== targetType) {
-                if (constants2.USER === targetType) {
-                  return callback(targetType, constants.NICK, (arg0) => user.getUser(arg0), (arg0) => arg0);
-                } else if (constants2.ROLE === targetType) {
-                  return callback(targetType, constants.NAME, (arg0) => role.getRole(arg1.id, arg0), (name) => name.name);
-                } else if (constants2.ONBOARDING_PROMPT === targetType) {
-                  let stringResult = callback(targetType, constants.ID, (arg0) => onboardingPrompt.getOnboardingPrompt(arg0), (title) => title.title);
+      if (outer2_17.GUILD !== targetType) {
+        if (outer2_17.GUILD_HOME !== targetType) {
+          if (outer2_17.GUILD_PROFILE !== targetType) {
+            if (outer2_17.CHANNEL !== targetType) {
+              if (outer2_17.CHANNEL_OVERWRITE !== targetType) {
+                if (outer2_17.USER === targetType) {
+                  return outer2_51(targetType, outer2_16.NICK, (arg0) => outer3_13.getUser(arg0), (arg0) => arg0);
+                } else if (outer2_17.ROLE === targetType) {
+                  return outer2_51(targetType, outer2_16.NAME, (arg0) => outer3_11.getRole(user.id, arg0), (name) => name.name);
+                } else if (outer2_17.ONBOARDING_PROMPT === targetType) {
+                  let stringResult = outer2_51(targetType, outer2_16.ID, (arg0) => outer3_5.getOnboardingPrompt(arg0), (title) => title.title);
                   if (null == stringResult) {
-                    const intl = result3(closure_3[17]).intl;
-                    stringResult = intl.string(result3(closure_3[17]).t.ZNQyiR);
+                    let intl = callback(outer2_3[17]).intl;
+                    stringResult = intl.string(callback(outer2_3[17]).t.ZNQyiR);
                   }
                   return stringResult;
                 } else {
-                  if (constants2.GUILD_ONBOARDING !== targetType) {
-                    if (constants2.GUILD_MEMBER_VERIFICATION !== targetType) {
-                      if (constants2.INVITE === targetType) {
-                        return callback(targetType, constants.CODE, closure_24);
-                      } else if (constants2.INTEGRATION === targetType) {
-                        return callback(targetType, constants.TYPE, (arg0) => {
-                          const integrations = closure_14.integrations;
-                          return integrations.find((id) => id.id === id);
+                  if (outer2_17.GUILD_ONBOARDING !== targetType) {
+                    if (outer2_17.GUILD_MEMBER_VERIFICATION !== targetType) {
+                      if (outer2_17.INVITE === targetType) {
+                        return outer2_51(targetType, outer2_16.CODE, outer2_24);
+                      } else if (outer2_17.INTEGRATION === targetType) {
+                        return outer2_51(targetType, outer2_16.TYPE, (arg0) => {
+                          let closure_0 = arg0;
+                          const integrations = outer3_14.integrations;
+                          return integrations.find((id) => id.id === closure_0);
                         }, (name) => name.name);
-                      } else if (constants2.WEBHOOK === targetType) {
-                        return callback(targetType, constants.NAME, (arg0) => {
-                          const webhooks = closure_14.webhooks;
-                          return webhooks.find((id) => id.id === id);
+                      } else if (outer2_17.WEBHOOK === targetType) {
+                        return outer2_51(targetType, outer2_16.NAME, (arg0) => {
+                          let closure_0 = arg0;
+                          const webhooks = outer3_14.webhooks;
+                          return webhooks.find((id) => id.id === closure_0);
                         }, (name) => name.name);
-                      } else if (constants2.EMOJI === targetType) {
-                        return callback(targetType, constants.NAME, (arg0) => {
-                          const guildEmoji = guildEmoji.getGuildEmoji(arg1.id);
-                          return guildEmoji.find((id) => id.id === id);
+                      } else if (outer2_17.EMOJI === targetType) {
+                        return outer2_51(targetType, outer2_16.NAME, (arg0) => {
+                          let closure_0 = arg0;
+                          const guildEmoji = outer3_4.getGuildEmoji(user.id);
+                          return guildEmoji.find((id) => id.id === closure_0);
                         }, (name) => name.name);
-                      } else if (constants2.STICKER === targetType) {
-                        return callback(targetType, constants.NAME, (arg0) => stickerById.getStickerById(arg0), (name) => name.name);
-                      } else if (constants2.STAGE_INSTANCE === targetType) {
-                        return callback(targetType, constants.TOPIC, (arg0) => {
-                          const values = Object.values(stageInstancesByGuild.getStageInstancesByGuild(arg1.id));
+                      } else if (outer2_17.STICKER === targetType) {
+                        return outer2_51(targetType, outer2_16.NAME, (arg0) => outer3_8.getStickerById(arg0), (name) => name.name);
+                      } else if (outer2_17.STAGE_INSTANCE === targetType) {
+                        return outer2_51(targetType, outer2_16.TOPIC, (arg0) => {
+                          let closure_0 = arg0;
+                          const values = Object.values(outer3_7.getStageInstancesByGuild(user.id));
                           let found;
                           if (null != values) {
-                            found = values.find((id) => id.id === id);
+                            found = values.find((id) => id.id === closure_0);
                           }
                           return found;
                         }, (topic) => topic.topic);
                       } else {
-                        if (constants2.GUILD_SCHEDULED_EVENT !== targetType) {
-                          if (constants2.GUILD_SCHEDULED_EVENT_EXCEPTION !== targetType) {
-                            if (constants2.THREAD === targetType) {
-                              return callback(targetType, constants.NAME, (arg0) => {
-                                const threads = closure_14.threads;
-                                return threads.find((id) => id.id === id);
+                        if (outer2_17.GUILD_SCHEDULED_EVENT !== targetType) {
+                          if (outer2_17.GUILD_SCHEDULED_EVENT_EXCEPTION !== targetType) {
+                            if (outer2_17.THREAD === targetType) {
+                              return outer2_51(targetType, outer2_16.NAME, (arg0) => {
+                                let closure_0 = arg0;
+                                const threads = outer3_14.threads;
+                                return threads.find((id) => id.id === closure_0);
                               }, (name) => name.name);
-                            } else if (constants2.APPLICATION_COMMAND === targetType) {
+                            } else if (outer2_17.APPLICATION_COMMAND === targetType) {
                               if (targetType.targetId === targetType.options.application_id) {
-                                const integrations = closure_14.integrations;
-                                const found = integrations.find((application) => {
+                                let integrations = outer2_14.integrations;
+                                let found = integrations.find((application) => {
                                   application = application.application;
                                   let id;
                                   if (null != application) {
                                     id = application.id;
                                   }
-                                  return id === application.targetId;
+                                  return id === targetType.targetId;
                                 });
                                 return null != found ? found.name : targetType.targetId;
                               } else {
-                                return callback(targetType, constants.NAME, (arg0) => {
-                                  const applicationCommands = closure_14.applicationCommands;
-                                  return applicationCommands.find((id) => id.id === id);
+                                return outer2_51(targetType, outer2_16.NAME, (arg0) => {
+                                  let closure_0 = arg0;
+                                  const applicationCommands = outer3_14.applicationCommands;
+                                  return applicationCommands.find((id) => id.id === closure_0);
                                 }, (name_localized) => {
                                   if (null != name_localized.name_localized) {
                                     if ("" !== name_localized.name_localized) {
                                       let name = name_localized.name_localized;
                                     }
                                     let combined = name;
-                                    if (name_localized.type === name_localized(closure_3[24]).ApplicationCommandType.CHAT) {
+                                    if (name_localized.type === targetType(outer3_3[24]).ApplicationCommandType.CHAT) {
                                       const _HermesInternal = HermesInternal;
                                       combined = "/\u2060" + name;
                                     }
@@ -2335,61 +2357,63 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                   name = name_localized.name;
                                 });
                               }
-                            } else if (constants2.AUTO_MODERATION_RULE === targetType) {
-                              return callback(targetType, constants.NAME, (arg0) => {
-                                const automodRules = closure_14.automodRules;
-                                return automodRules.find((id) => id.id === id);
+                            } else if (outer2_17.AUTO_MODERATION_RULE === targetType) {
+                              return outer2_51(targetType, outer2_16.NAME, (arg0) => {
+                                let closure_0 = arg0;
+                                const automodRules = outer3_14.automodRules;
+                                return automodRules.find((id) => id.id === closure_0);
                               }, (name) => name.name);
-                            } else if (constants2.GUILD_SOUNDBOARD === targetType) {
-                              return callback(targetType, constants.NAME, closure_24);
-                            } else if (constants2.HOME_SETTINGS === targetType) {
-                              return callback(targetType, constants.GUILD_ID, (closure_0) => settings.getSettings(closure_0), () => {
-                                const intl = arg0(closure_3[17]).intl;
-                                return intl.string(arg0(closure_3[17]).t.VbpLyU);
-                              }, id.id);
-                            } else if (constants2.VOICE_CHANNEL_STATUS === targetType) {
-                              return callback(targetType, constants.STATUS, (channelId) => store.getChannel(channelId), (channel) => channel(closure_3[23]).computeChannelName(channel, closure_13, closure_12, true));
+                            } else if (outer2_17.GUILD_SOUNDBOARD === targetType) {
+                              return outer2_51(targetType, outer2_16.NAME, outer2_24);
+                            } else if (outer2_17.HOME_SETTINGS === targetType) {
+                              return outer2_51(targetType, outer2_16.GUILD_ID, (guildId) => outer3_6.getSettings(guildId), () => {
+                                const intl = targetType(outer3_3[17]).intl;
+                                return intl.string(targetType(outer3_3[17]).t.VbpLyU);
+                              }, result3.id);
+                            } else if (outer2_17.VOICE_CHANNEL_STATUS === targetType) {
+                              return outer2_51(targetType, outer2_16.STATUS, (channelId) => outer3_10.getChannel(channelId), (channel) => targetType(outer3_3[23]).computeChannelName(channel, outer3_13, outer3_12, true));
                             } else {
-                              closure_35.warn("Unknown targetType for log", targetType);
+                              outer2_35.warn("Unknown targetType for log", targetType);
                               return null;
                             }
                           }
                         }
-                        return callback(targetType, constants.NAME, (arg0) => {
-                          const guildScheduledEvents = closure_14.guildScheduledEvents;
-                          return guildScheduledEvents.find((id) => id.id === id);
+                        return outer2_51(targetType, outer2_16.NAME, (arg0) => {
+                          let closure_0 = arg0;
+                          const guildScheduledEvents = outer3_14.guildScheduledEvents;
+                          return guildScheduledEvents.find((id) => id.id === closure_0);
                         }, (name) => name.name);
                       }
                     }
                   }
-                  return id;
+                  return result3;
                 }
               }
             }
-            return callback(targetType, constants.NAME, (channelId) => store.getChannel(channelId), (channel) => channel(closure_3[23]).computeChannelName(channel, closure_13, closure_12, true));
+            return outer2_51(targetType, outer2_16.NAME, (channelId) => outer3_10.getChannel(channelId), (channel) => targetType(outer3_3[23]).computeChannelName(channel, outer3_13, outer3_12, true));
           }
         }
       }
-      return id;
-    }(set, arg1);
+      return result3;
+    })(set, result3);
     if (null != tmp) {
       const result = set.set("user", tmp2);
-      arg1 = result;
+      result3 = result;
       const result1 = result.set("target", tmp);
-      arg1 = result1;
-      const result2 = result1.set("options", function transformOptions(result1) {
-        const result3 = result1;
+      result3 = result1;
+      const result2 = result1.set("options", (function transformOptions(result1) {
+        const callback = result1;
         if (null != result1.options) {
           const obj = {};
           const merged = Object.assign(result1.options);
           const type = result1.options.type;
-          if (constants3.USER === type) {
-            obj.subtarget = callback2(result1.options.id, (arg0) => user.getUser(arg0), (tag) => tag.tag);
-          } else if (constants3.ROLE === type) {
-            obj.subtarget = callback2(result1.options.role_name, closure_24);
+          if (outer2_27.USER === type) {
+            obj.subtarget = outer2_52(result1.options.id, (arg0) => outer3_13.getUser(arg0), (tag) => tag.tag);
+          } else if (outer2_27.ROLE === type) {
+            obj.subtarget = outer2_52(result1.options.role_name, outer2_24);
           }
           if (null != result1.options.channel_id) {
-            obj.channel = callback(result1, "", (channelId) => channel.getChannel(channelId), (arg0) => arg0, result1.options.channel_id);
+            obj.channel = outer2_51(result1, "", (channelId) => outer3_10.getChannel(channelId), (arg0) => arg0, result1.options.channel_id);
           }
           let tmp10 = null != result1.options.members_removed;
           if (tmp10) {
@@ -2399,15 +2423,15 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
             obj.count = result1.options.members_removed;
           }
           if (null != result1.options.event_exception_id) {
-            const guildScheduledEvents = closure_14.guildScheduledEvents;
-            const found = guildScheduledEvents.find((id) => id.id === id.targetId);
+            const guildScheduledEvents = outer2_14.guildScheduledEvents;
+            const found = guildScheduledEvents.find((id) => id.id === closure_0.targetId);
             let found1;
             if (null != found) {
               const prop = found.guild_scheduled_event_exceptions;
-              found1 = prop.find((event_exception_id) => event_exception_id.event_exception_id === event_exception_id.options.event_exception_id);
+              found1 = prop.find((event_exception_id) => event_exception_id.event_exception_id === closure_0.options.event_exception_id);
             }
-            const obj2 = result3(closure_3[29]);
-            const tmp15 = items(closure_3[30]);
+            const obj2 = callback(outer2_3[29]);
+            const tmp15 = items(outer2_3[30]);
             let event_exception_id;
             if (null != found1) {
               event_exception_id = found1.event_exception_id;
@@ -2416,21 +2440,21 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
             if (null != event_exception_id) {
               str2 = event_exception_id;
             }
-            obj.subtarget = obj2.dateFormat(tmp15(items(closure_3[19]).extractTimestamp(str2)), "LL");
-            const obj3 = items(closure_3[19]);
+            obj.subtarget = obj2.dateFormat(tmp15(items(outer2_3[19]).extractTimestamp(str2)), "LL");
+            const obj3 = items(outer2_3[19]);
           }
           return obj;
         } else {
           return result1.options;
         }
-      }(result1));
-      arg1 = result2;
+      })(result1));
+      result3 = result2;
       let tmp8 = result2;
       if (null != result2.changes) {
-        const items = [];
+        let items = [];
         const changes = result2.changes;
-        const item = changes.forEach((newValue) => {
-          let arr = function transformChange(newValue, result3, result32) {
+        let item = changes.forEach((newValue) => {
+          let arr = (function transformChange(newValue, result3, result32) {
             let added;
             let added2;
             let added3;
@@ -2438,117 +2462,118 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
             let removed;
             let removed2;
             let removed3;
-            if (result3.action === constants.APPLICATION_COMMAND_PERMISSION_UPDATE) {
+            const callback = result32;
+            if (result3.action === outer3_15.APPLICATION_COMMAND_PERMISSION_UPDATE) {
               let arr = newValue.newValue || newValue.oldValue;
               const type = arr.type;
-              arr = constants4;
-              if (constants4.ROLE === type) {
-                arr = callback6;
-                newValue.subtarget = callback6(arr.id, (arg0) => role.getRole(arg2.id, arg0), (name) => name.name);
+              arr = outer3_26;
+              if (outer3_26.ROLE === type) {
+                arr = outer3_52;
+                newValue.subtarget = outer3_52(arr.id, (arg0) => outer4_11.getRole(lib.id, arg0), (name) => name.name);
               } else {
-                arr = constants4;
-                if (constants4.USER === type) {
-                  arr = callback6;
-                  newValue.subtarget = callback6(arr.id, (arg0) => authStore.getUser(arg0), (tag) => tag.tag);
+                arr = outer3_26;
+                if (outer3_26.USER === type) {
+                  arr = outer3_52;
+                  newValue.subtarget = outer3_52(arr.id, (arg0) => outer4_13.getUser(arg0), (tag) => tag.tag);
                 } else {
-                  arr = constants4;
-                  if (constants4.CHANNEL === type) {
-                    arr = closure_3;
-                    const obj5 = arr(closure_3[25])(result32.id);
+                  arr = outer3_26;
+                  if (outer3_26.CHANNEL === type) {
+                    arr = items;
+                    arr = outer3_3;
+                    const obj5 = items(outer3_3[25])(result32.id);
                     if (arr.id === str2.toString()) {
-                      arr = result32;
-                      arr = closure_3;
-                      const intl = result32(closure_3[17]).intl;
-                      newValue.subtarget = intl.string(result32(closure_3[17]).t.MSYhgh);
+                      arr = callback;
+                      arr = outer3_3;
+                      let intl = callback(outer3_3[17]).intl;
+                      newValue.subtarget = intl.string(callback(outer3_3[17]).t.MSYhgh);
                     } else {
-                      arr = callback6;
-                      newValue.subtarget = callback6(arr.id, (channelId) => store.getChannel(channelId), (channel) => arg2(closure_3[23]).computeChannelName(channel, closure_13, closure_12, true));
+                      arr = outer3_52;
+                      newValue.subtarget = outer3_52(arr.id, (channelId) => outer4_10.getChannel(channelId), (channel) => lib(outer4_3[23]).computeChannelName(channel, outer4_13, outer4_12, true));
                     }
-                    const str2 = arr(closure_3[25])(result32.id).subtract(1);
+                    str2 = items(outer3_3[25])(result32.id).subtract(1);
                   }
                 }
               }
               return newValue;
             } else {
-              const key = newValue.key;
-              arr = constants2;
-              if (constants2.OWNER_ID === key) {
-                arr = callback5;
-                return callback5(newValue, (arg0) => authStore.getUser(arg0));
+              arr = outer3_16;
+              if (outer3_16.OWNER_ID === newValue.key) {
+                arr = outer3_50;
+                return outer3_50(newValue, (arg0) => outer4_13.getUser(arg0));
               } else {
-                arr = constants2;
-                if (constants2.CHANNEL_ID !== key) {
-                  arr = constants2;
-                  if (constants2.AFK_CHANNEL_ID !== key) {
-                    arr = constants2;
-                    if (constants2.SYSTEM_CHANNEL_ID !== key) {
-                      arr = constants2;
-                      if (constants2.RULES_CHANNEL_ID !== key) {
-                        arr = constants2;
-                        if (constants2.PUBLIC_UPDATES_CHANNEL_ID !== key) {
-                          arr = constants2;
-                          if (constants2.AFK_TIMEOUT === key) {
-                            arr = callback5;
-                            return callback5(newValue, (arg0) => arg0 / 60);
+                arr = outer3_16;
+                if (outer3_16.CHANNEL_ID !== key) {
+                  arr = outer3_16;
+                  if (outer3_16.AFK_CHANNEL_ID !== key) {
+                    arr = outer3_16;
+                    if (outer3_16.SYSTEM_CHANNEL_ID !== key) {
+                      arr = outer3_16;
+                      if (outer3_16.RULES_CHANNEL_ID !== key) {
+                        arr = outer3_16;
+                        if (outer3_16.PUBLIC_UPDATES_CHANNEL_ID !== key) {
+                          arr = outer3_16;
+                          if (outer3_16.AFK_TIMEOUT === key) {
+                            arr = outer3_50;
+                            return outer3_50(newValue, (arg0) => arg0 / 60);
                           } else {
-                            arr = constants2;
-                            if (constants2.BITRATE === key) {
-                              arr = callback5;
-                              return callback5(newValue, (arg0) => arg0 / 1000);
+                            arr = outer3_16;
+                            if (outer3_16.BITRATE === key) {
+                              arr = outer3_50;
+                              return outer3_50(newValue, (arg0) => arg0 / 1000);
                             } else {
-                              arr = constants2;
-                              if (constants2.COLOR === key) {
-                                arr = callback5;
-                                return callback5(newValue, (color) => {
-                                  const obj = arg2(closure_3[26]);
-                                  return arg2(closure_3[26]).int2hex(color).toUpperCase();
+                              arr = outer3_16;
+                              if (outer3_16.COLOR === key) {
+                                arr = outer3_50;
+                                return outer3_50(newValue, (color) => {
+                                  const obj = lib(outer4_3[26]);
+                                  return lib(outer4_3[26]).int2hex(color).toUpperCase();
                                 });
                               } else {
-                                arr = constants2;
-                                if (constants2.THEME_COLORS === key) {
-                                  arr = callback5;
-                                  return callback5(newValue, (arg0) => {
-                                    const obj = arg2(closure_3[26]);
-                                    const formatted = arg2(closure_3[26]).int2hex(arg0[0]).toUpperCase();
-                                    const str = arg2(closure_3[26]).int2hex(arg0[0]);
-                                    const obj2 = arg2(closure_3[26]);
-                                    return "" + formatted + ", " + arg2(closure_3[26]).int2hex(arg0[1]).toUpperCase();
+                                arr = outer3_16;
+                                if (outer3_16.THEME_COLORS === key) {
+                                  arr = outer3_50;
+                                  return outer3_50(newValue, (arg0) => {
+                                    const obj = lib(outer4_3[26]);
+                                    const formatted = lib(outer4_3[26]).int2hex(arg0[0]).toUpperCase();
+                                    const str = lib(outer4_3[26]).int2hex(arg0[0]);
+                                    const obj2 = lib(outer4_3[26]);
+                                    return "" + formatted + ", " + lib(outer4_3[26]).int2hex(arg0[1]).toUpperCase();
                                   });
                                 } else {
-                                  arr = constants2;
-                                  if (constants2.MAX_AGE === key) {
-                                    arr = callback5;
-                                    return callback5(newValue, (maxAge) => {
+                                  arr = outer3_16;
+                                  if (outer3_16.MAX_AGE === key) {
+                                    arr = outer3_50;
+                                    return outer3_50(newValue, (maxAge) => {
                                       let label = maxAge;
-                                      const maxAgeOptionByValue = callback(closure_3[27]).getMaxAgeOptionByValue(maxAge);
+                                      const maxAgeOptionByValue = items(outer4_3[27]).getMaxAgeOptionByValue(maxAge);
                                       if (null !== maxAgeOptionByValue) {
                                         label = maxAgeOptionByValue.label;
                                       }
                                       return label;
                                     });
                                   } else {
-                                    arr = constants2;
-                                    if (constants2.PERMISSIONS === key) {
-                                      const items = [];
-                                      ({ added: added3, removed: removed3 } = callback2(newValue.oldValue, newValue.newValue));
+                                    arr = outer3_16;
+                                    if (outer3_16.PERMISSIONS === key) {
+                                      items = [];
+                                      ({ added: added3, removed: removed3 } = outer3_46(newValue.oldValue, newValue.newValue));
                                       if (added3.length > 0) {
-                                        const prototype5 = ctor.prototype;
-                                        const tmp91 = new ctor(constants2.PERMISSIONS_GRANTED, null, added3);
+                                        const prototype5 = outer3_9.prototype;
+                                        const tmp91 = new outer3_9(outer3_16.PERMISSIONS_GRANTED, null, added3);
                                         arr = items.push(tmp91);
                                       }
                                       if (removed3.length > 0) {
-                                        const prototype6 = ctor.prototype;
-                                        arr = new ctor(constants2.PERMISSIONS_DENIED, null, removed3);
+                                        const prototype6 = outer3_9.prototype;
+                                        arr = new outer3_9(outer3_16.PERMISSIONS_DENIED, null, removed3);
                                         arr = items.push(arr);
                                       }
                                       return items;
                                     } else {
-                                      arr = constants2;
-                                      if (constants2.PERMISSIONS_GRANTED !== key) {
-                                        arr = constants2;
-                                        if (constants2.PERMISSIONS_DENIED !== key) {
-                                          arr = constants2;
-                                          if (constants2.FLAGS === key) {
+                                      arr = outer3_16;
+                                      if (outer3_16.PERMISSIONS_GRANTED !== key) {
+                                        arr = outer3_16;
+                                        if (outer3_16.PERMISSIONS_DENIED !== key) {
+                                          arr = outer3_16;
+                                          if (outer3_16.FLAGS === key) {
                                             const items1 = [];
                                             ({ oldValue, newValue } = newValue);
                                             let num4 = 0;
@@ -2559,50 +2584,50 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                             if ("number" === typeof newValue) {
                                               num5 = newValue;
                                             }
-                                            let obj = callback(closure_3[22]);
-                                            callback(closure_3[22]);
+                                            let obj = outer3_2(outer3_3[22]);
+                                            outer3_2(outer3_3[22]);
                                             const items2 = [];
                                             const items3 = [];
-                                            for (const key10129 in closure_30) {
+                                            for (const key10129 in outer3_30) {
                                               arr = key10129;
-                                              arr = closure_30;
-                                              arr = closure_30[key10129];
-                                              arr = closure_2;
-                                              arr = closure_3;
-                                              let obj4 = closure_2(closure_3[22]);
+                                              arr = outer3_30;
+                                              arr = outer3_30[key10129];
+                                              arr = outer3_2;
+                                              arr = outer3_3;
+                                              let obj4 = outer3_2(outer3_3[22]);
                                               if (obj4.hasFlag(removeFlagResult, arr)) {
                                                 let arr1 = items2.push(arr);
                                               }
-                                              let tmp45 = closure_2;
-                                              let tmp46 = closure_3;
-                                              let obj2 = closure_2(closure_3[22]);
+                                              let tmp45 = outer3_2;
+                                              let tmp46 = outer3_3;
+                                              let obj2 = outer3_2(outer3_3[22]);
                                               if (!obj2.hasFlag(tmp42, arr)) {
                                                 continue;
                                               } else {
                                                 let arr2 = items3.push(arr);
-                                                // continue
+                                                continue;
                                               }
                                               continue;
                                             }
                                             obj = { added: items2, removed: items3 };
                                             ({ added, removed } = obj);
                                             if (added.length > 0) {
-                                              const prototype = ctor.prototype;
-                                              const tmp53 = new ctor(newValue.key, null, added);
+                                              let prototype = outer3_9.prototype;
+                                              const tmp53 = new outer3_9(newValue.key, null, added);
                                               items1.push(tmp53);
                                             }
                                             if (removed.length > 0) {
-                                              const prototype2 = ctor.prototype;
-                                              const tmp61 = new ctor(newValue.key, removed, null);
+                                              const prototype2 = outer3_9.prototype;
+                                              const tmp61 = new outer3_9(newValue.key, removed, null);
                                               items1.push(tmp61);
                                             }
                                             return items1;
                                           } else {
-                                            arr = constants2;
-                                            if (constants2.PREFERRED_LOCALE === key) {
-                                              return callback5(newValue, (arg0) => {
-                                                const arg2 = arg0;
-                                                const availableLocales = arg2(closure_3[17]).getAvailableLocales();
+                                            arr = outer3_16;
+                                            if (outer3_16.PREFERRED_LOCALE === key) {
+                                              return outer3_50(newValue, (arg0) => {
+                                                const lib = arg0;
+                                                const availableLocales = lib(outer4_3[17]).getAvailableLocales();
                                                 const found = availableLocales.find(() => { ... });
                                                 let name = null;
                                                 if (null != found) {
@@ -2611,62 +2636,62 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                                 return name;
                                               });
                                             } else {
-                                              arr = constants2;
-                                              if (constants2.VIDEO_QUALITY_MODE === key) {
-                                                return callback5(newValue, (arg0) => {
-                                                  if (arg0 === constants2.FULL) {
-                                                    const intl2 = arg2(closure_3[17]).intl;
-                                                    let stringResult = intl2.string(arg2(closure_3[17]).t.7jOoJE);
+                                              arr = outer3_16;
+                                              if (outer3_16.VIDEO_QUALITY_MODE === key) {
+                                                return outer3_50(newValue, (arg0) => {
+                                                  if (arg0 === outer4_25.FULL) {
+                                                    const intl2 = lib(outer4_3[17]).intl;
+                                                    let stringResult = intl2.string(lib(outer4_3[17]).t["7jOoJE"]);
                                                   } else {
-                                                    const intl = arg2(closure_3[17]).intl;
-                                                    stringResult = intl.string(arg2(closure_3[17]).t.jjKYpu);
+                                                    const intl = lib(outer4_3[17]).intl;
+                                                    stringResult = intl.string(lib(outer4_3[17]).t.jjKYpu);
                                                   }
                                                   return stringResult;
                                                 });
                                               } else {
-                                                arr = constants2;
-                                                if (constants2.SYSTEM_CHANNEL_FLAGS === key) {
-                                                  return function transformSystemChannelFlagsChanges(newValue) {
-                                                    const arg2 = newValue;
-                                                    const obj = { [closure_28.SUPPRESS_JOIN_NOTIFICATIONS]: constants.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS, [closure_28.SUPPRESS_PREMIUM_SUBSCRIPTIONS]: constants.SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS, [closure_28.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS]: constants.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS, [closure_28.SUPPRESS_JOIN_NOTIFICATION_REPLIES]: constants.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES };
+                                                arr = outer3_16;
+                                                if (outer3_16.SYSTEM_CHANNEL_FLAGS === key) {
+                                                  return (function transformSystemChannelFlagsChanges(newValue) {
+                                                    let closure_0 = newValue;
+                                                    const obj = { [outer4_28.SUPPRESS_JOIN_NOTIFICATIONS]: outer4_16.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS, [outer4_28.SUPPRESS_PREMIUM_SUBSCRIPTIONS]: outer4_16.SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS, [outer4_28.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS]: outer4_16.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS, [outer4_28.SUPPRESS_JOIN_NOTIFICATION_REPLIES]: outer4_16.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES };
                                                     const items = [];
-                                                    const values = Object.values(closure_28);
+                                                    const values = Object.values(outer4_28);
                                                     const item = values.forEach(() => { ... });
                                                     return items;
-                                                  }(newValue);
+                                                  })(newValue);
                                                 } else {
-                                                  arr = constants2;
-                                                  if (constants2.AUTO_MODERATION_ACTIONS === key) {
+                                                  arr = outer3_16;
+                                                  if (outer3_16.AUTO_MODERATION_ACTIONS === key) {
                                                     let tmp34 = newValue;
-                                                    if (result3.targetType === constants3.AUTO_MODERATION_RULE) {
-                                                      tmp34 = callback5(newValue, (arr) => arr.map(() => { ... }), (arr) => {
-                                                        const mapped = arr.map(arg2(closure_3[28]).actionTypeToName);
+                                                    if (result3.targetType === outer3_17.AUTO_MODERATION_RULE) {
+                                                      tmp34 = outer3_50(newValue, (arr) => arr.map(() => { ... }), (arr) => {
+                                                        const mapped = arr.map(lib(outer4_3[28]).actionTypeToName);
                                                         return mapped.join(", ");
                                                       });
                                                     }
                                                     return tmp34;
                                                   } else {
-                                                    arr = constants2;
-                                                    if (constants2.AUTO_MODERATION_EVENT_TYPE === key) {
+                                                    arr = outer3_16;
+                                                    if (outer3_16.AUTO_MODERATION_EVENT_TYPE === key) {
                                                       let tmp29 = newValue;
-                                                      if (result3.targetType === constants3.AUTO_MODERATION_RULE) {
-                                                        tmp29 = callback5(newValue, result32(closure_3[28]).eventTypeToName);
+                                                      if (result3.targetType === outer3_17.AUTO_MODERATION_RULE) {
+                                                        tmp29 = outer3_50(newValue, callback(outer3_3[28]).eventTypeToName);
                                                       }
                                                       return tmp29;
                                                     } else {
-                                                      arr = constants2;
-                                                      if (constants2.AUTO_MODERATION_TRIGGER_TYPE === key) {
+                                                      arr = outer3_16;
+                                                      if (outer3_16.AUTO_MODERATION_TRIGGER_TYPE === key) {
                                                         let tmp24 = newValue;
-                                                        if (result3.targetType === constants3.AUTO_MODERATION_RULE) {
-                                                          tmp24 = callback5(newValue, result32(closure_3[28]).triggerTypeToName);
+                                                        if (result3.targetType === outer3_17.AUTO_MODERATION_RULE) {
+                                                          tmp24 = outer3_50(newValue, callback(outer3_3[28]).triggerTypeToName);
                                                         }
                                                         return tmp24;
                                                       } else {
-                                                        arr = constants2;
-                                                        if (constants2.AUTO_MODERATION_TRIGGER_METADATA === key) {
+                                                        arr = outer3_16;
+                                                        if (outer3_16.AUTO_MODERATION_TRIGGER_METADATA === key) {
                                                           let tmp21 = newValue;
-                                                          if (result3.targetType === constants3.AUTO_MODERATION_RULE) {
-                                                            tmp21 = callback5(newValue, (arg0) => {
+                                                          if (result3.targetType === outer3_17.AUTO_MODERATION_RULE) {
+                                                            tmp21 = outer3_50(newValue, (arg0) => {
                                                               let joined = arg0;
                                                               let tmp2 = arg0;
                                                               if (null != arg0) {
@@ -2678,13 +2703,13 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                                                   } else {
                                                                     const _Array = Array;
                                                                   }
-                                                                  const intl = arg2(closure_3[17]).intl;
+                                                                  const intl = lib(outer4_3[17]).intl;
                                                                   const obj = {};
                                                                   const keyword_filter = joined.keyword_filter;
                                                                   const mapped = keyword_filter.map(() => { ... });
                                                                   joined = mapped.join(", ");
                                                                   obj.newValue = joined;
-                                                                  json = intl.formatToMarkdownString(arg2(closure_3[17]).t.y91UXV, obj);
+                                                                  json = intl.formatToMarkdownString(lib(outer4_3[17]).t.y91UXV, obj);
                                                                 }
                                                               }
                                                               return tmp2;
@@ -2692,24 +2717,24 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                                           }
                                                           return tmp21;
                                                         } else {
-                                                          arr = constants2;
-                                                          if (constants2.AUTO_MODERATION_ADD_KEYWORDS !== key) {
-                                                            arr = constants2;
-                                                            if (constants2.AUTO_MODERATION_REMOVE_KEYWORDS !== key) {
-                                                              arr = constants2;
-                                                              if (constants2.AUTO_MODERATION_ADD_REGEX_PATTERNS !== key) {
-                                                                arr = constants2;
-                                                                if (constants2.AUTO_MODERATION_REMOVE_REGEX_PATTERNS !== key) {
-                                                                  arr = constants2;
-                                                                  if (constants2.AUTO_MODERATION_ADD_ALLOW_LIST !== key) {
-                                                                    arr = constants2;
-                                                                    if (constants2.AUTO_MODERATION_REMOVE_ALLOW_LIST !== key) {
-                                                                      arr = constants2;
-                                                                      if (constants2.AUTO_MODERATION_EXEMPT_CHANNELS === key) {
+                                                          arr = outer3_16;
+                                                          if (outer3_16.AUTO_MODERATION_ADD_KEYWORDS !== key) {
+                                                            arr = outer3_16;
+                                                            if (outer3_16.AUTO_MODERATION_REMOVE_KEYWORDS !== key) {
+                                                              arr = outer3_16;
+                                                              if (outer3_16.AUTO_MODERATION_ADD_REGEX_PATTERNS !== key) {
+                                                                arr = outer3_16;
+                                                                if (outer3_16.AUTO_MODERATION_REMOVE_REGEX_PATTERNS !== key) {
+                                                                  arr = outer3_16;
+                                                                  if (outer3_16.AUTO_MODERATION_ADD_ALLOW_LIST !== key) {
+                                                                    arr = outer3_16;
+                                                                    if (outer3_16.AUTO_MODERATION_REMOVE_ALLOW_LIST !== key) {
+                                                                      arr = outer3_16;
+                                                                      if (outer3_16.AUTO_MODERATION_EXEMPT_CHANNELS === key) {
                                                                         let tmp15 = newValue;
-                                                                        if (result3.targetType === constants3.AUTO_MODERATION_RULE) {
-                                                                          tmp15 = callback5(newValue, (arr) => {
-                                                                            const mapped = arr.map(store.getChannel);
+                                                                        if (result3.targetType === outer3_17.AUTO_MODERATION_RULE) {
+                                                                          tmp15 = outer3_50(newValue, (arr) => {
+                                                                            const mapped = arr.map(outer4_10.getChannel);
                                                                             const found = mapped.filter(() => { ... });
                                                                             return found.map(() => { ... });
                                                                           }, (join) => {
@@ -2719,17 +2744,17 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                                                               }
                                                                               return joined;
                                                                             }
-                                                                            const intl = arg2(closure_3[17]).intl;
-                                                                            joined = intl.string(arg2(closure_3[17]).t.K/EdV8);
+                                                                            const intl = lib(outer4_3[17]).intl;
+                                                                            joined = intl.string(lib(outer4_3[17]).t["K/EdV8"]);
                                                                           });
                                                                         }
                                                                         return tmp15;
                                                                       } else {
-                                                                        arr = constants2;
-                                                                        if (constants2.AUTO_MODERATION_EXEMPT_ROLES === key) {
+                                                                        arr = outer3_16;
+                                                                        if (outer3_16.AUTO_MODERATION_EXEMPT_ROLES === key) {
                                                                           let tmp12 = newValue;
-                                                                          if (result3.targetType === constants3.AUTO_MODERATION_RULE) {
-                                                                            tmp12 = callback5(newValue, (arr) => {
+                                                                          if (result3.targetType === outer3_17.AUTO_MODERATION_RULE) {
+                                                                            tmp12 = outer3_50(newValue, (arr) => {
                                                                               const mapped = arr.map(() => { ... });
                                                                               const found = mapped.filter(() => { ... });
                                                                               return found.map(() => { ... });
@@ -2740,17 +2765,17 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                                                                 }
                                                                                 return joined;
                                                                               }
-                                                                              const intl = arg2(closure_3[17]).intl;
-                                                                              joined = intl.string(arg2(closure_3[17]).t.K/EdV8);
+                                                                              const intl = lib(outer4_3[17]).intl;
+                                                                              joined = intl.string(lib(outer4_3[17]).t["K/EdV8"]);
                                                                             });
                                                                           }
                                                                           return tmp12;
                                                                         } else {
-                                                                          arr = constants2;
-                                                                          if (constants2.ROLE_IDS === key) {
+                                                                          arr = outer3_16;
+                                                                          if (outer3_16.ROLE_IDS === key) {
                                                                             let tmp9 = newValue;
-                                                                            if (result3.targetType === constants3.INVITE) {
-                                                                              tmp9 = callback5(newValue, (arr) => {
+                                                                            if (result3.targetType === outer3_17.INVITE) {
+                                                                              tmp9 = outer3_50(newValue, (arr) => {
                                                                                 const mapped = arr.map(() => { ... });
                                                                                 const found = mapped.filter(() => { ... });
                                                                                 return found.map(() => { ... });
@@ -2758,20 +2783,20 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                                                             }
                                                                             return tmp9;
                                                                           } else {
-                                                                            arr = constants2;
-                                                                            if (constants2.AVAILABLE_TAGS === key) {
-                                                                              return callback4(newValue);
-                                                                            } else if (constants2.APPLIED_TAGS === key) {
-                                                                              return callback3(newValue, result3);
+                                                                            arr = outer3_16;
+                                                                            if (outer3_16.AVAILABLE_TAGS === key) {
+                                                                              return outer3_49(newValue);
+                                                                            } else if (outer3_16.APPLIED_TAGS === key) {
+                                                                              return outer3_48(newValue, result3);
                                                                             } else {
-                                                                              if (constants2.SCHEDULED_START_TIME !== key) {
-                                                                                if (constants2.SCHEDULED_END_TIME !== key) {
+                                                                              if (outer3_16.SCHEDULED_START_TIME !== key) {
+                                                                                if (outer3_16.SCHEDULED_END_TIME !== key) {
                                                                                   return newValue;
                                                                                 }
                                                                               }
-                                                                              return callback5(newValue, (arg0) => {
-                                                                                const obj = arg2(closure_3[29]);
-                                                                                const tmp = callback(closure_3[30]);
+                                                                              return outer3_50(newValue, (arg0) => {
+                                                                                const obj = lib(outer4_3[29]);
+                                                                                const tmp = items(outer4_3[30]);
                                                                                 return obj.dateFormat(tmp(new Date(arg0)), "LLLL");
                                                                               });
                                                                             }
@@ -2785,8 +2810,8 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                                             }
                                                           }
                                                           let tmp18 = newValue;
-                                                          if (result3.targetType === constants3.AUTO_MODERATION_RULE) {
-                                                            tmp18 = callback5(newValue, (arr) => {
+                                                          if (result3.targetType === outer3_17.AUTO_MODERATION_RULE) {
+                                                            tmp18 = outer3_50(newValue, (arr) => {
                                                               if (null != arr) {
                                                                 const _Array = Array;
                                                                 if (Array.isArray(arr)) {
@@ -2810,15 +2835,15 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                                         }
                                       }
                                       const items4 = [];
-                                      ({ added: added2, removed: removed2 } = callback2(newValue.oldValue, newValue.newValue));
+                                      ({ added: added2, removed: removed2 } = outer3_46(newValue.oldValue, newValue.newValue));
                                       if (added2.length > 0) {
-                                        const prototype3 = ctor.prototype;
-                                        const tmp71 = new ctor(newValue.key, null, added2);
+                                        const prototype3 = outer3_9.prototype;
+                                        const tmp71 = new outer3_9(newValue.key, null, added2);
                                         items4.push(tmp71);
                                       }
                                       if (removed2.length > 0) {
-                                        const prototype4 = ctor.prototype;
-                                        const tmp80 = new ctor(constants2.PERMISSIONS_RESET, removed2, removed2);
+                                        const prototype4 = outer3_9.prototype;
+                                        const tmp80 = new outer3_9(outer3_16.PERMISSIONS_RESET, removed2, removed2);
                                         items4.push(tmp80);
                                       }
                                       return items4;
@@ -2833,24 +2858,23 @@ export const transformLogs = function transformLogs(_logs, stateFromStores1) {
                     }
                   }
                 }
-                arr = callback5;
-                return callback5(newValue, (channelId) => store.getChannel(channelId), (channel) => arg2(closure_3[23]).computeChannelName(channel, closure_13, closure_12, true));
+                arr = outer3_50;
+                return outer3_50(newValue, (channelId) => outer4_10.getChannel(channelId), (channel) => lib(outer4_3[23]).computeChannelName(channel, outer4_13, outer4_12, true));
               }
             }
-          }(newValue, result3, result3);
+          })(newValue, result3, result3);
           if (Array.isArray(arr)) {
-            const item = arr.forEach((arg0) => arr.push(arg0));
+            let item = arr.forEach((arg0) => outer1_1.push(arg0));
           } else {
             arr = items.push(arr);
           }
         });
-        const result3 = result2.set("changes", items);
-        arg1 = result3;
+        result3 = result2.set("changes", items);
         tmp8 = result3;
       }
       items.push(tmp8);
     } else {
-      const items1 = [constants.MEMBER_PRUNE, constants.MEMBER_DISCONNECT, constants.MEMBER_MOVE, constants.CREATOR_MONETIZATION_REQUEST_CREATED, constants.CREATOR_MONETIZATION_TERMS_ACCEPTED];
+      let items1 = [outer1_15.MEMBER_PRUNE, outer1_15.MEMBER_DISCONNECT, outer1_15.MEMBER_MOVE, outer1_15.CREATOR_MONETIZATION_REQUEST_CREATED, outer1_15.CREATOR_MONETIZATION_TERMS_ACCEPTED];
     }
   });
   return items;

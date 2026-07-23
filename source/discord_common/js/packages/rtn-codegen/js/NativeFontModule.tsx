@@ -1,12 +1,12 @@
-// Module ID: 9883
-// Function ID: 76545
+// Module ID: 9890
+// Function ID: 76586
 // Name: enforcing
-// Dependencies: []
+// Dependencies: [27, 2]
 
-// Module 9883 (enforcing)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+// Module 9890 (enforcing)
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 const enforcing = TurboModuleRegistry.getEnforcing("NativeFontModule");
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeFontModule.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeFontModule.tsx");
 
 export default enforcing;

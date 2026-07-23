@@ -1,16 +1,13 @@
 // Module ID: 1343
-// Function ID: 15817
+// Function ID: 15818
 // Name: TaskRunner
-// Dependencies: [513, 511, 513]
+// Dependencies: [6, 7, 2]
 
 // Module 1343 (TaskRunner)
-import closure_0 from "items";
-import module_511 from "module_511";
-import items from "items";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
 
-const result = items.fileFinishedImporting("modules/dismissible_content/TaskRunner.tsx");
-
-export const TaskRunner = () => {
+const tmp2 = (() => {
   class TaskRunner {
     constructor() {
       tmp = TaskRunner(this, TaskRunner);
@@ -18,15 +15,15 @@ export const TaskRunner = () => {
       return;
     }
   }
-  let closure_0 = TaskRunner;
   let obj = {
     key: "schedule",
     value(arg0, arg1) {
-      const TaskRunner = this;
+      const self = this;
+      let _defineProperties = arg0;
       this.unschedule();
       this.timeoutId = setTimeout(() => {
         self.timeoutId = null;
-        arg0();
+        callback();
       }, arg1);
     }
   };
@@ -51,4 +48,7 @@ export const TaskRunner = () => {
   };
   items[2] = obj;
   return callback(TaskRunner, items);
-}();
+})();
+const result = require("set").fileFinishedImporting("modules/dismissible_content/TaskRunner.tsx");
+
+export const TaskRunner = tmp2;

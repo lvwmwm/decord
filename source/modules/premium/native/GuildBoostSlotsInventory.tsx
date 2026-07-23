@@ -1,28 +1,43 @@
-// Module ID: 12317
-// Function ID: 94382
+// Module ID: 12431
+// Function ID: 96533
 // Name: GuildBoostSlotCooldown
-// Dependencies: []
+// Dependencies: [31, 27, 1278, 1838, 4023, 3782, 653, 33, 4130, 689, 5052, 6678, 4126, 1212, 21, 4660, 4966, 5515, 12432, 566, 1392, 12433, 12437, 4451, 4026, 22, 2]
 // Exports: default
 
-// Module 12317 (GuildBoostSlotCooldown)
+// Module 12431 (GuildBoostSlotCooldown)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_8 from "_createForOfIteratorHelperLoose";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_5;
+let closure_6;
+let require = arg1;
 function GuildBoostSlotCooldown(cooldownEndsAt) {
   let days;
   let hours;
   let minutes;
   cooldownEndsAt = cooldownEndsAt.cooldownEndsAt;
-  const arg1 = cooldownEndsAt;
   const items = [cooldownEndsAt];
   const memo = React.useMemo(() => new Date(cooldownEndsAt), items);
-  const tmp = callback3();
-  ({ days, hours, minutes } = importDefault(dependencyMap[11])(memo, 15000));
-  const tmp2 = importDefault(dependencyMap[11])(memo, 15000);
+  const tmp = _createForOfIteratorHelperLoose();
+  ({ days, hours, minutes } = importDefault(6678)(memo, 15000));
+  const tmp2 = importDefault(6678)(memo, 15000);
   let tmp4 = null;
   if (valueOfResult > Date.now()) {
-    let obj = { style: tmp.subscriptionSlotInfoCooldown };
-    const intl = arg1(dependencyMap[13]).intl;
+    let obj = { style: tmp.subscriptionSlotInfoCooldown, variant: "text-xs/medium", color: "text-muted" };
+    const intl = cooldownEndsAt(1212).intl;
     obj = { days, hours, minutes };
-    obj.children = intl.format(arg1(dependencyMap[13]).t.NffSH8, obj);
-    tmp4 = callback(arg1(dependencyMap[12]).Text, obj);
+    obj.children = intl.format(cooldownEndsAt(1212).t.NffSH8, obj);
+    tmp4 = callback(cooldownEndsAt(4126).Text, obj);
   }
   return tmp4;
 }
@@ -32,11 +47,12 @@ function GuildBoostSlotsInventoryRow(arg0) {
   let subtitle;
   let title;
   ({ title, subtitle, action, isLast } = arg0);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: tmp.subscriptionSlot };
   obj = { style: tmp.subscriptionSlotInner };
   obj = { style: tmp.subscriptionSlotInfo };
-  const items = [callback(arg1(dependencyMap[12]).Text, { style: tmp.subscriptionSlotInfoTitle, children: title }), subtitle];
+  const obj1 = { style: tmp.subscriptionSlotInfoTitle, lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: title };
+  const items = [callback(require(4126) /* Text */.Text, obj1), subtitle];
   obj.children = items;
   const items1 = [callback2(closure_5, obj), action];
   obj.children = items1;
@@ -52,7 +68,6 @@ function GuildBoostSlotsInventoryRow(arg0) {
 }
 function GuildBoostSlot(guildBoostSlot) {
   guildBoostSlot = guildBoostSlot.guildBoostSlot;
-  const arg1 = guildBoostSlot;
   if (null == guildBoostSlot.guild) {
     return null;
   } else {
@@ -62,18 +77,18 @@ function GuildBoostSlot(guildBoostSlot) {
     }
     let extractTimestampResult = null;
     if (null != id) {
-      let obj = importDefault(dependencyMap[14]);
+      let obj = importDefault(21);
       extractTimestampResult = obj.extractTimestamp(id);
     }
     obj = {};
     let formatToPlainStringResult = null;
     if (null != extractTimestampResult) {
-      const intl = arg1(dependencyMap[13]).intl;
+      const intl = guildBoostSlot(1212).intl;
       obj = {};
       const _Date = Date;
       const date = new Date(extractTimestampResult);
       obj.date = date;
-      formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[13]).t.ePe+Xh, obj);
+      formatToPlainStringResult = intl.formatToPlainString(guildBoostSlot(1212).t["ePe+Xh"], obj);
     }
     obj.title = formatToPlainStringResult;
     let tmp17 = null;
@@ -88,14 +103,14 @@ function GuildBoostSlot(guildBoostSlot) {
         accessibilityRole: "button",
         onPress() {
               const guildBoostSlots = [guildBoostSlot];
-              return guildBoostSlot(closure_3[16]).openTransferModal({ guildBoostSlots });
+              return guildBoostSlot(outer1_3[16]).openTransferModal({ guildBoostSlots });
             }
       };
-      const obj3 = { cachedAt: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003337610788552319, edpbxy: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000234275248419358 };
-      const intl2 = arg1(dependencyMap[13]).intl;
-      obj3.children = intl2.string(arg1(dependencyMap[13]).t.jqqLb6);
-      obj2.children = callback(arg1(dependencyMap[12]).Text, obj3);
-      tmp20 = callback(arg1(dependencyMap[15]).PressableOpacity, obj2);
+      const obj3 = { variant: "text-md/medium", color: "control-brand-foreground" };
+      const intl2 = guildBoostSlot(1212).intl;
+      obj3.children = intl2.string(guildBoostSlot(1212).t.jqqLb6);
+      obj2.children = callback(guildBoostSlot(4126).Text, obj3);
+      tmp20 = callback(guildBoostSlot(4660).PressableOpacity, obj2);
     }
     obj.action = tmp20;
     obj.isLast = tmp;
@@ -116,7 +131,6 @@ function UnusedGuildBoostSlots(unusedSlots) {
     }
     return tmp;
   });
-  const arg1 = found;
   const found1 = unusedSlots.filter((cooldownEndsAt) => {
     cooldownEndsAt = cooldownEndsAt.cooldownEndsAt;
     let tmp = null == cooldownEndsAt;
@@ -129,24 +143,24 @@ function UnusedGuildBoostSlots(unusedSlots) {
     }
     return tmp;
   });
-  let obj = { style: callback3().unusedSlots };
+  let obj = { style: _createForOfIteratorHelperLoose().unusedSlots };
   let tmp4 = null;
   if (found1.length > 0) {
     obj = {};
-    const intl = arg1(dependencyMap[13]).intl;
+    let intl = found(1212).intl;
     obj = { numSubscriptions: found1.length };
-    obj.title = intl.formatToPlainString(arg1(dependencyMap[13]).t.ewI23O, obj);
+    obj.title = intl.formatToPlainString(found(1212).t.ewI23O, obj);
     const obj1 = {
       accessibilityRole: "button",
       onPress() {
-          return found(closure_3[16]).openApplyBoostModal();
+          return found(outer1_3[16]).openApplyBoostModal();
         }
     };
-    const obj2 = {};
-    const intl2 = arg1(dependencyMap[13]).intl;
-    obj2.children = intl2.string(arg1(dependencyMap[13]).t.7KyPor);
-    obj1.children = callback(arg1(dependencyMap[12]).Text, obj2);
-    obj.action = callback(arg1(dependencyMap[15]).PressableOpacity, obj1);
+    const obj2 = { variant: "text-md/medium", color: "text-link" };
+    const intl2 = found(1212).intl;
+    obj2.children = intl2.string(found(1212).t["7KyPor"]);
+    obj1.children = callback(found(4126).Text, obj2);
+    obj.action = callback(found(4660).PressableOpacity, obj1);
     obj.isLast = 0 === found.length;
     tmp4 = callback(GuildBoostSlotsInventoryRow, obj);
   }
@@ -154,16 +168,16 @@ function UnusedGuildBoostSlots(unusedSlots) {
     tmp4,
     found.map((cooldownEndsAt) => {
       let obj = {};
-      const intl = found(closure_3[13]).intl;
-      obj.title = intl.formatToPlainString(found(closure_3[13]).t.gDsyB9, { numSubscriptions: 1 });
+      const intl = found(outer1_3[13]).intl;
+      obj.title = intl.formatToPlainString(found(outer1_3[13]).t.gDsyB9, { numSubscriptions: 1 });
       let tmp3 = null;
       if (null != cooldownEndsAt.cooldownEndsAt) {
         obj = { cooldownEndsAt: cooldownEndsAt.cooldownEndsAt };
-        tmp3 = callback(closure_15, obj);
+        tmp3 = outer1_11(outer1_15, obj);
       }
       obj.subtitle = tmp3;
       obj.isLast = arg1 === found.length - 1;
-      return callback(closure_16, obj, cooldownEndsAt.id);
+      return outer1_11(outer1_16, obj, cooldownEndsAt.id);
     })
   ];
   obj.children = items;
@@ -171,56 +185,55 @@ function UnusedGuildBoostSlots(unusedSlots) {
 }
 function BoostedGuildInfo(guild) {
   guild = guild.guild;
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let tmp2 = null;
   if (null != guild) {
     let obj = { style: tmp.guildInfo };
     obj = { style: tmp.guildInfoIcon };
-    obj = { guild, size: arg1(dependencyMap[17]).GuildIconSizes.NORMAL, selected: false };
-    obj.children = callback(importDefault(dependencyMap[17]), obj);
+    obj = { guild, size: require(5515) /* makeSizeStyle */.GuildIconSizes.NORMAL, selected: false };
+    obj.children = callback(importDefault(5515), obj);
     const items = [callback(closure_5, obj), ];
     const obj1 = {};
-    const obj2 = { style: tmp.guildInfoName, children: guild.name };
-    const items1 = [callback(arg1(dependencyMap[12]).Text, obj2), ];
+    const obj2 = { style: tmp.guildInfoName, variant: "heading-lg/extrabold", color: "interactive-text-active", children: guild.name };
+    const items1 = [callback(require(4126) /* Text */.Text, obj2), ];
     const obj3 = { style: tmp.guildInfoRowBottom };
-    const obj4 = { source: importDefault(dependencyMap[18]), style: tmp.guildInfoRowIcon };
+    const obj4 = { source: importDefault(12432), style: tmp.guildInfoRowIcon };
     const items2 = [callback(closure_6, obj4), ];
-    const obj5 = { "Null": null, "Null": null, alignItems: null, style: tmp.guildInfoSubscriptionCount };
-    const intl = arg1(dependencyMap[13]).intl;
+    const obj5 = { style: tmp.guildInfoSubscriptionCount, variant: "text-xs/semibold", color: "interactive-text-active" };
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj6 = { numSubscriptions: guild.numGuildBoostSlots };
-    obj5.children = intl.format(arg1(dependencyMap[13]).t.bexfNy, obj6);
-    items2[1] = callback(arg1(dependencyMap[12]).Text, obj5);
+    obj5.children = intl.format(require(1212) /* getSystemLocale */.t.bexfNy, obj6);
+    items2[1] = callback(require(4126) /* Text */.Text, obj5);
     obj3.children = items2;
     items1[1] = callback2(closure_5, obj3);
     obj1.children = items1;
     items[1] = callback2(closure_5, obj1);
     obj.children = items;
     tmp2 = callback2(closure_5, obj);
-    const tmp10 = importDefault(dependencyMap[17]);
+    const tmp10 = importDefault(5515);
   }
   return tmp2;
 }
 function BoostedGuild(arg0) {
   let guildBoostSlots;
-  ({ guildId: closure_0, guildBoostSlots } = arg0);
-  const importDefault = guildBoostSlots;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[19]);
+  let require;
+  ({ guildId: require, guildBoostSlots } = arg0);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(566) /* initialize */;
   const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(closure_0));
-  const importAll = stateFromStores;
-  let obj1 = arg1(dependencyMap[19]);
-  const items1 = [closure_7];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(closure_0));
+  let obj1 = require(566) /* initialize */;
+  const items1 = [_isNativeReflectConstruct];
   let guildBannerSource = null;
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => theme.theme);
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_7.theme);
   if (null != stateFromStores) {
     guildBannerSource = null;
     if (null != stateFromStores.banner) {
-      let obj2 = importDefault(dependencyMap[20]);
+      let obj2 = guildBoostSlots(1392);
       guildBannerSource = obj2.getGuildBannerSource(stateFromStores);
     }
   }
-  let obj3 = arg1(dependencyMap[21]);
+  let obj3 = require(12433) /* getSubscriptionPlaceholderPatternSource */;
   let subscriptionPlaceholderPatternSource = obj3.useSubscriptionPlaceholderPatternSource();
   if (null != guildBannerSource) {
     subscriptionPlaceholderPatternSource = guildBannerSource;
@@ -243,71 +256,62 @@ function BoostedGuild(arg0) {
     tmp17 = callback(closure_5, obj3);
   }
   items3[1] = tmp17;
-  items3[2] = callback(importDefault(dependencyMap[22]), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = callback(guildBoostSlots(12437), { guild: stateFromStores, theme: stateFromStores1 });
   obj1.children = items3;
   const items4 = [closure_12(closure_5, obj1), callback(BoostedGuildInfo, { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length })];
   obj.children = items4;
-  const items5 = [closure_12(closure_5, obj), callback(closure_5, { children: guildBoostSlots.map((guildBoostSlot) => callback(closure_17, { guild: stateFromStores, guildBoostSlot, isLast: arg1 === guildBoostSlots.length - 1 }, guildBoostSlot.id)) })];
+  const items5 = [closure_12(closure_5, obj), callback(closure_5, { children: guildBoostSlots.map((guildBoostSlot) => outer1_11(outer1_17, { guild: stateFromStores, guildBoostSlot, isLast: arg1 === guildBoostSlots.length - 1 }, guildBoostSlot.id)) })];
   obj.children = items5;
   return closure_12(closure_5, obj);
 }
-let closure_4 = importAll(dependencyMap[0]);
-({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[1]));
-let closure_7 = importDefault(dependencyMap[2]);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[7]));
-let obj = arg1(dependencyMap[8]);
-obj = { inventory: { marginBottom: 32 }, header: { -840892412: null, -840761340: null } };
-obj = { borderRadius: importDefault(dependencyMap[9]).radii.xs, marginBottom: 16 };
-obj.boostedGuild = obj;
-const tmp3 = arg1(dependencyMap[7]);
-obj.subscriptionBody = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
-const obj2 = { offset: true, stopColor: true, stopOpacity: true, x: true, y: true, width: true, backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_MOD_NORMAL };
-obj.subscriptionImageView = obj2;
-obj.subscriptionImage = { "Null": null, "Null": null, "Null": null };
-obj.subscriptionImageFallback = { opacity: 0.4 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWEST };
-obj.subscriptionImageOverlay = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
-obj.guildInfo = {};
-obj.guildInfoIcon = { marginRight: 8 };
-const obj4 = {};
-const obj3 = { backgroundColor: importDefault(dependencyMap[9]).colors.BLACK };
-const merged = Object.assign(importDefault(dependencyMap[10])(arg1(dependencyMap[6]).Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[9]).colors.INTERACTIVE_TEXT_ACTIVE, 20));
+({ View: closure_5, Image: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = { inventory: { marginBottom: 32 }, header: { marginHorizontal: 16, marginBottom: 16 } };
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, marginBottom: 16 };
+_createForOfIteratorHelperLoose.boostedGuild = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.subscriptionBody = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, width: "100%", height: 112, overflow: "hidden", alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose.subscriptionImageView = obj2;
+_createForOfIteratorHelperLoose.subscriptionImage = { position: "absolute", width: "100%", height: "100%" };
+_createForOfIteratorHelperLoose.subscriptionImageFallback = { opacity: 0.4 };
+let obj3 = { position: "absolute", width: "100%", height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK, opacity: 0.4 };
+_createForOfIteratorHelperLoose.subscriptionImageOverlay = obj3;
+_createForOfIteratorHelperLoose.guildInfo = { flexDirection: "row", padding: 16 };
+_createForOfIteratorHelperLoose.guildInfoIcon = { marginRight: 8 };
+let obj4 = {};
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
+const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE, 20));
 obj4["marginBottom"] = 4;
-obj.guildInfoName = obj4;
-obj.guildInfoRowBottom = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-obj.guildInfoRowIcon = {};
-obj.guildInfoSubscriptionCount = { lineHeight: 16 };
-const importDefaultResult = importDefault(dependencyMap[10]);
-obj.subscriptionSlot = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, paddingLeft: 16 };
-obj.subscriptionSlotInner = { zIndex: 293757.57910159277, overflow: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000697754656326324, borderRadius: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013944356355981188, borderColor: 15182763564301030000000000000000000000000000000000000000000000000000000000000000000 };
-const obj5 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, paddingLeft: 16 };
-obj.subscriptionSlotBorder = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, height: 1 };
-obj.subscriptionSlotInfo = { createStyles: "<string:2491613185>", guild_id: "<string:2941583362>" };
-obj.subscriptionSlotInfoTitle = { lineHeight: 24 };
-obj.subscriptionSlotInfoCooldown = { lineHeight: 16 };
-obj.unusedSlots = { marginBottom: 32 };
-let closure_14 = obj.createStyles(obj);
-const obj6 = { backgroundColor: importDefault(dependencyMap[9]).colors.BORDER_SUBTLE, height: 1 };
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/premium/native/GuildBoostSlotsInventory.tsx");
+_createForOfIteratorHelperLoose.guildInfoName = obj4;
+_createForOfIteratorHelperLoose.guildInfoRowBottom = { flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.guildInfoRowIcon = { height: 12, width: 8, marginLeft: 2, marginRight: 8 };
+_createForOfIteratorHelperLoose.guildInfoSubscriptionCount = { lineHeight: 16 };
+_createForOfIteratorHelperLoose.subscriptionSlot = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, paddingLeft: 16 };
+_createForOfIteratorHelperLoose.subscriptionSlotInner = { alignItems: "center", flexDirection: "row", paddingRight: 16, paddingVertical: 12 };
+let obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, paddingLeft: 16 };
+_createForOfIteratorHelperLoose.subscriptionSlotBorder = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, height: 1 };
+_createForOfIteratorHelperLoose.subscriptionSlotInfo = { flexShrink: 1, flexGrow: 1 };
+_createForOfIteratorHelperLoose.subscriptionSlotInfoTitle = { lineHeight: 24 };
+_createForOfIteratorHelperLoose.subscriptionSlotInfoCooldown = { lineHeight: 16 };
+_createForOfIteratorHelperLoose.unusedSlots = { marginBottom: 32 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj6 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, height: 1 };
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/GuildBoostSlotsInventory.tsx");
 
 export default function GuildBoostSlotsInventory() {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   const effect = React.useEffect(() => {
-    const subscriptions = callback(closure_3[23]).fetchSubscriptions();
-    const obj = callback(closure_3[23]);
-    const guildBoostSlots = valueResult(closure_3[24]).fetchGuildBoostSlots();
+    const subscriptions = outer1_2(outer1_3[23]).fetchSubscriptions();
+    const obj = outer1_2(outer1_3[23]);
+    const guildBoostSlots = valueResult(outer1_3[24]).fetchGuildBoostSlots();
   }, []);
-  let obj = arg1(dependencyMap[19]);
+  let obj = require(566) /* initialize */;
   const items = [closure_10];
-  const stateFromStores = obj.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
-  let obj1 = arg1(dependencyMap[19]);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getPremiumTypeSubscription());
+  let obj1 = require(566) /* initialize */;
   const items1 = [closure_9];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => boostSlots.boostSlots);
-  let obj2 = importDefault(dependencyMap[25])(stateFromStores1);
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_9.boostSlots);
+  let obj2 = importDefault(22)(stateFromStores1);
   const valueResult = obj2.groupBy((premiumGuildSubscription) => {
     premiumGuildSubscription = premiumGuildSubscription.premiumGuildSubscription;
     let str = "0";
@@ -316,7 +320,7 @@ export default function GuildBoostSlotsInventory() {
     }
     return str;
   }).value();
-  const arg1 = valueResult;
+  require = valueResult;
   const first = valueResult[0];
   const keys = Object.keys(valueResult);
   const found = keys.filter((arg0) => "0" !== arg0);
@@ -336,10 +340,10 @@ export default function GuildBoostSlotsInventory() {
       let tmp13 = null;
       if (found.length > 0) {
         obj1 = {};
-        obj2 = { "Null": "guild", "Null": "2026-05_voice_channel_list_invite_embed", alignItems: "Voice Channel List Invite Embed", style: tmp.header };
-        const intl = arg1(dependencyMap[13]).intl;
-        obj2.children = intl.string(arg1(dependencyMap[13]).t.gB9oQ7);
-        const items3 = [callback(arg1(dependencyMap[12]).Text, obj2), found.map((guildId) => callback2(closure_20, { guildId, guildBoostSlots: valueResult[guildId] }, guildId))];
+        obj2 = { style: tmp.header, variant: "eyebrow", color: "text-default" };
+        const intl = require(1212) /* getSystemLocale */.intl;
+        obj2.children = intl.string(require(1212) /* getSystemLocale */.t.gB9oQ7);
+        const items3 = [callback(require(4126) /* Text */.Text, obj2), found.map((guildId) => outer1_11(outer1_20, { guildId, guildBoostSlots: valueResult[guildId] }, guildId))];
         obj1.children = items3;
         tmp13 = callback2(closure_13, obj1);
       }

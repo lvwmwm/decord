@@ -1,16 +1,27 @@
-// Module ID: 14642
-// Function ID: 110413
+// Module ID: 14757
+// Function ID: 112577
 // Name: UsernameStatusMessage
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [29, 57, 31, 14731, 33, 4130, 3991, 13662, 4541, 7507, 689, 4126, 1212, 14749, 7512, 477, 2]
 // Exports: RegisterUsernameInput
 
-// Module 14642 (UsernameStatusMessage)
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 14757 (UsernameStatusMessage)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import useRegistrationUIStore from "useRegistrationUIStore";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { FadeIn } from "module_3991";
+import { FadeOut } from "module_3991";
+import { LinearTransition } from "module_3991";
+import { Easing } from "module_3991";
 
+let closure_10;
+let closure_11;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function UsernameStatusMessage(arg0) {
   let isUsernameFocused;
   let usernameStatus;
@@ -20,68 +31,63 @@ function UsernameStatusMessage(arg0) {
   if (null != usernameStatus) {
     type = usernameStatus.type;
   }
-  if (type === arg1(dependencyMap[7]).NameValidationState.ERROR) {
-    let obj = { "Null": null, "Null": "\u{1F44A}\u{1F3FC}", "Null": true };
-    obj = { size: "xs", color: importDefault(dependencyMap[10]).colors.TEXT_FEEDBACK_CRITICAL };
-    const items = [callback3(arg1(dependencyMap[9]).CircleErrorIcon, obj), ];
-    const obj1 = { style: tmp.status };
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(obj);
+  if (type === require(13662) /* NameValidationState */.NameValidationState.ERROR) {
+    let obj = { direction: "horizontal", spacing: 4, align: "flex-start" };
+    obj = { size: "xs", color: importDefault(689).colors.TEXT_FEEDBACK_CRITICAL };
+    const items = [callback3(require(7507) /* CircleErrorIcon */.CircleErrorIcon, obj), ];
+    const obj1 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp.status };
+    const merged = Object.assign(_createForOfIteratorHelperLoose);
+    const merged1 = Object.assign(_createForOfIteratorHelperLoose);
     obj1["animated"] = true;
     obj1["children"] = usernameStatus.message;
-    items[1] = callback3(arg1(dependencyMap[11]).Text, obj1);
+    items[1] = callback3(require(4126) /* Text */.Text, obj1);
     obj.children = items;
-    let tmp6 = callback4(arg1(dependencyMap[8]).Stack, obj);
+    let tmp6 = callback4(require(4541) /* Stack */.Stack, obj);
   } else {
     if (isUsernameFocused) {
       let type1;
       if (null != usernameStatus) {
         type1 = usernameStatus.type;
       }
-      if (type1 === arg1(dependencyMap[7]).NameValidationState.AVAILABLE) {
+      if (type1 === require(13662) /* NameValidationState */.NameValidationState.AVAILABLE) {
         const obj2 = {};
-        const merged2 = Object.assign(obj);
-        const merged3 = Object.assign(obj);
+        const merged2 = Object.assign(_createForOfIteratorHelperLoose);
+        const merged3 = Object.assign(_createForOfIteratorHelperLoose);
         obj2["style"] = tmp.status;
         obj2["variant"] = "text-xs/medium";
         obj2["animated"] = true;
-        const obj3 = { cachedAt: null, edpbxy: "text-lg/semibold", children: usernameStatus.message };
-        obj2["children"] = callback3(arg1(dependencyMap[11]).Text, obj3);
-        tmp6 = callback3(arg1(dependencyMap[11]).Text, obj2);
+        const obj3 = { variant: "text-xs/medium", color: "text-feedback-positive", children: usernameStatus.message };
+        obj2["children"] = callback3(require(4126) /* Text */.Text, obj3);
+        tmp6 = callback3(require(4126) /* Text */.Text, obj2);
       }
     }
     tmp6 = null;
     if (isUsernameFocused) {
       obj = {};
-      const merged4 = Object.assign(obj);
-      const merged5 = Object.assign(obj);
+      const merged4 = Object.assign(_createForOfIteratorHelperLoose);
+      const merged5 = Object.assign(_createForOfIteratorHelperLoose);
       obj["style"] = tmp.inputHint;
       obj["variant"] = "text-xs/medium";
       obj["color"] = "text-muted";
       obj["animated"] = true;
-      const intl = arg1(dependencyMap[12]).intl;
-      obj["children"] = intl.string(arg1(dependencyMap[12]).t.y7LSyU);
-      tmp6 = callback3(arg1(dependencyMap[11]).Text, obj);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      obj["children"] = intl.string(require(1212) /* getSystemLocale */.t.y7LSyU);
+      tmp6 = callback3(require(4126) /* Text */.Text, obj);
     }
   }
   return tmp6;
 }
-let closure_3 = [];
-({ setRegistrationErrors: closure_7, useRegistrationUIStore: closure_8 } = __exportStarResult1);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = __exportStarResult1);
-let obj = arg1(dependencyMap[5]);
-let closure_12 = obj.createStyles({ status: { width: "90%" }, inputHint: { width: "100%" } });
-obj = {};
-const FadeIn = arg1(dependencyMap[6]).FadeIn;
-obj.entering = require("module_300");
-const FadeOut = arg1(dependencyMap[6]).FadeOut;
-obj.exiting = require("module_300");
-obj = {};
-const LinearTransition = arg1(dependencyMap[6]).LinearTransition;
-const Easing = arg1(dependencyMap[6]).Easing;
-obj.layout = require("module_300");
-const easingResult = LinearTransition.easing(Easing.inOut(arg1(dependencyMap[6]).Easing.quad));
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/auth/native/components/RegisterUsernameInput.tsx");
+let closure_3 = ["username"];
+({ setRegistrationErrors: closure_7, useRegistrationUIStore: closure_8 } = useRegistrationUIStore);
+({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
+let closure_12 = _createForOfIteratorHelperLoose.createStyles({ status: { width: "90%" }, inputHint: { width: "100%" } });
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose.entering = require("module_300");
+_createForOfIteratorHelperLoose.exiting = require("module_300");
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose.layout = require("module_300");
+const easingResult = LinearTransition.easing(Easing.inOut(require("module_3991").Easing.quad));
+const result = require("result").fileFinishedImporting("modules/auth/native/components/RegisterUsernameInput.tsx");
 
 export const RegisterUsernameInput = function RegisterUsernameInput(setUsername) {
   let autoFocus;
@@ -90,7 +96,6 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
   let username;
   let usernameStatus;
   setUsername = setUsername.setUsername;
-  const arg1 = setUsername;
   ({ usernameStatus, autoFocus } = setUsername);
   let importDefault;
   let dependencyMap;
@@ -102,41 +107,41 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     tmp3 = autoFocus;
   }
   obj.enabled = tmp3;
-  importDefault(dependencyMap[13])(obj);
+  importDefault(14749)(obj);
   const tmp5 = callback(React.useState(true), 2);
   importDefault = tmp6;
   const tmp7 = callback2((errors) => errors.errors);
   dependencyMap = tmp7;
   const items = [tmp7, setUsername];
   const items1 = [tmp5[1]];
-  const callback = React.useCallback((str) => {
-    if (null != tmp7.username) {
-      const username = tmp7.username;
-      callback2(callback(tmp7, closure_3));
+  callback = React.useCallback((str) => {
+    if (null != _undefined2.username) {
+      const username = _undefined2.username;
+      outer1_7(outer1_4(_undefined2, outer1_3));
     }
-    const tmp7 = setUsername(str.toLowerCase());
+    setUsername(str.toLowerCase());
   }, items);
   const items2 = [tmp5[1]];
   const callback1 = React.useCallback(() => {
-    tmp6(true);
+    _undefined(true);
   }, items1);
   obj = {};
-  const callback2 = React.useCallback(() => {
-    tmp6(false);
+  callback2 = React.useCallback(() => {
+    _undefined(false);
   }, items2);
   obj = { ref };
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.label = intl.string(arg1(dependencyMap[12]).t.IEpCBQ);
-  const intl2 = arg1(dependencyMap[12]).intl;
-  obj.accessibilityHint = intl2.string(arg1(dependencyMap[12]).t.47dcUZ);
+  const intl = setUsername(1212).intl;
+  obj.label = intl.string(setUsername(1212).t.IEpCBQ);
+  const intl2 = setUsername(1212).intl;
+  obj.accessibilityHint = intl2.string(setUsername(1212).t["47dcUZ"]);
   obj.onChange = callback;
   obj.autoCorrect = false;
   const tmp11 = closure_10;
   const tmp12 = closure_11;
   const tmp13 = callback3;
-  const tmp2 = importDefault(dependencyMap[13]);
-  obj.secureTextEntry = arg1(dependencyMap[15]).isAndroid();
-  const obj4 = arg1(dependencyMap[15]);
+  const tmp2 = importDefault(14749);
+  obj.secureTextEntry = setUsername(477).isAndroid();
+  const obj4 = setUsername(477);
   let str = "default";
   if (obj5.isAndroid()) {
     str = "visible-password";
@@ -156,12 +161,12 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     type = usernameStatus.type;
   }
   let str2;
-  if (type === arg1(dependencyMap[7]).NameValidationState.ERROR) {
+  if (type === setUsername(13662).NameValidationState.ERROR) {
     str2 = "error";
   }
   obj.status = str2;
   obj.submitBehavior = submitBehavior;
-  const items3 = [tmp13(arg1(dependencyMap[14]).TextInput, obj), callback3(UsernameStatusMessage, { usernameStatus, isUsernameFocused: tmp5[0] })];
+  const items3 = [tmp13(setUsername(7512).TextInput, obj), callback3(UsernameStatusMessage, { usernameStatus, isUsernameFocused: tmp5[0] })];
   obj.children = items3;
   return tmp11(tmp12, obj);
 };

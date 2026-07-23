@@ -1,23 +1,24 @@
-// Module ID: 9448
-// Function ID: 73626
+// Module ID: 9455
+// Function ID: 73667
 // Name: QuestBarRenderDelayTracker
-// Dependencies: []
+// Dependencies: [6, 7, 653, 6837, 6842, 675, 9456, 2]
 
-// Module 9448 (QuestBarRenderDelayTracker)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-let tmp2 = () => {
+// Module 9455 (QuestBarRenderDelayTracker)
+import canUIRequestGatewaySocket from "canUIRequestGatewaySocket";
+import set from "set";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+let tmp2 = (() => {
   class QuestBarRenderDelayTracker {
     constructor() {
-      tmp = closure_3(this, QuestBarRenderDelayTracker);
+      tmp = outer1_3(this, QuestBarRenderDelayTracker);
       this.startTime = null;
       this.questId = null;
       this.timeoutTimer = null;
       return;
     }
   }
-  const arg1 = QuestBarRenderDelayTracker;
   let obj = {
     key: "clearTimeoutTimer",
     value() {
@@ -29,13 +30,13 @@ let tmp2 = () => {
       }
     }
   };
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {
     key: "sendMetric",
     value(quest_id, timeout, duration) {
       if (Math.random() <= 0.1) {
-        let obj = callback(closure_2[3]);
-        obj = { name: QuestBarRenderDelayTracker(closure_2[4]).MetricEvents.QUEST_BAR_RENDER_DELAY };
+        let obj = outer1_1(outer1_2[3]);
+        obj = { name: QuestBarRenderDelayTracker(outer1_2[4]).MetricEvents.QUEST_BAR_RENDER_DELAY };
         const _HermesInternal = HermesInternal;
         const items = ["quest_id:" + quest_id, ];
         const _HermesInternal2 = HermesInternal;
@@ -43,8 +44,8 @@ let tmp2 = () => {
         obj.tags = items;
         obj.distribution(obj, duration);
         obj = { quest_id, timeout, duration };
-        callback(closure_2[5]).track(constants.QUEST_BAR_RENDER_DELAY, obj);
-        const obj3 = callback(closure_2[5]);
+        outer1_1(outer1_2[5]).track(outer1_5.QUEST_BAR_RENDER_DELAY, obj);
+        const obj3 = outer1_1(outer1_2[5]);
       }
     }
   };
@@ -52,12 +53,13 @@ let tmp2 = () => {
   obj = {
     key: "startTracking",
     value(questId) {
-      const QuestBarRenderDelayTracker = this;
+      const self = this;
+      let closure_1 = questId;
       this.clearTracking();
       this.startTime = performance.now();
       this.questId = questId;
       this.timeoutTimer = setTimeout(() => {
-        self.stopTracking(arg0, true);
+        self.stopTracking(closure_1, true);
       }, 30000);
     }
   };
@@ -83,7 +85,7 @@ let tmp2 = () => {
             self.sendMetric(arg0, flag, Math.min(num2, 30000));
           }
           self.clearTracking();
-          const obj = callback(closure_2[6]);
+          obj = outer1_1(outer1_2[6]);
         }
       }
     }
@@ -97,8 +99,8 @@ let tmp2 = () => {
     }
   };
   return callback(QuestBarRenderDelayTracker, items);
-}();
+})();
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/quests/QuestBarRenderDelayTracker.tsx");
+const result = require("ME").fileFinishedImporting("modules/quests/QuestBarRenderDelayTracker.tsx");
 
 export default tmp2;

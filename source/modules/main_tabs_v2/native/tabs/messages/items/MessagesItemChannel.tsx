@@ -1,47 +1,50 @@
-// Module ID: 14782
-// Function ID: 111422
+// Module ID: 14898
+// Function ID: 113590
 // Name: getMessagesItemChannelSizes
-// Dependencies: []
+// Dependencies: [31, 1348, 33, 9889, 689, 14899, 566, 14909, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 14782 (getMessagesItemChannelSizes)
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const memoResult = importAll(dependencyMap[0]).memo(function MessagesItemChannel(arg0) {
+// Module 14898 (getMessagesItemChannelSizes)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const memoResult = require("result").memo(function MessagesItemChannel(arg0) {
   let isGradientTheme;
   let placeholderHeight;
+  let require;
   let row;
-  ({ channelId: closure_0, placeholderHeight } = arg0);
+  ({ channelId: require, placeholderHeight } = arg0);
   ({ isGradientTheme, row } = arg0);
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(closure_0));
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getChannel(closure_0));
   let isPrivateResult;
   if (null != stateFromStores) {
     isPrivateResult = stateFromStores.isPrivate();
   }
   if (true === isPrivateResult) {
     obj = { channel: stateFromStores, height: placeholderHeight, isGradientTheme };
-    let tmp5 = jsx(importDefault(dependencyMap[5]), obj);
+    let tmp5 = jsx(importDefault(14899), { channel: stateFromStores, height: placeholderHeight, isGradientTheme });
   } else {
     obj = { height: placeholderHeight, row };
-    tmp5 = jsx(importDefault(dependencyMap[7]), obj);
+    tmp5 = jsx(importDefault(14909), { height: placeholderHeight, row });
   }
   return tmp5;
 });
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemChannel.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemChannel.tsx");
 
 export default memoResult;
 export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(fontScale) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(9889) /* scaleLineHeight */;
   const scaleTextLineHeightResult = obj.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
-  const scaleTextLineHeightResult1 = arg1(dependencyMap[3]).scaleTextLineHeight("text-xs/medium", fontScale);
-  const PX_16 = importDefault(dependencyMap[4]).space.PX_16;
-  const PX_32 = importDefault(dependencyMap[4]).space.PX_32;
+  const scaleTextLineHeightResult1 = require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale);
+  const PX_16 = importDefault(689).space.PX_16;
+  const PX_32 = importDefault(689).space.PX_32;
   obj = { avatar: PX_32 };
   const sum = Math.max(PX_32, scaleTextLineHeightResult + scaleTextLineHeightResult1) + PX_16;
-  obj.height = sum + arg1(dependencyMap[5]).MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
+  obj.height = sum + require(14899) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
   obj.label = scaleTextLineHeightResult;
   obj.labelSecondary = scaleTextLineHeightResult1;
   obj.padding = PX_16;

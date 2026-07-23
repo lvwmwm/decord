@@ -1,28 +1,29 @@
-// Module ID: 9077
-// Function ID: 71176
+// Module ID: 9084
+// Function ID: 71217
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: []
+// Dependencies: [31, 3758, 482, 33, 566, 9085, 4623, 4653, 4654, 4656, 4655, 4658, 2]
 // Exports: default
 
-// Module 9077 (UserProfileVoiceActivityIcon)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const Permissions = arg1(dependencyMap[2]).Permissions;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_profile/native/UserProfileVoiceActivityIcon.tsx");
+// Module 9084 (UserProfileVoiceActivityIcon)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Permissions } from "sum";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("sum").fileFinishedImporting("modules/user_profile/native/UserProfileVoiceActivityIcon.tsx");
 
 export default function UserProfileVoiceActivityIcon(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   let obj = Object.create(null);
   obj.channel = 0;
   const merged = Object.assign(channel, obj);
-  obj = arg1(dependencyMap[4]);
-  const items = [closure_3];
+  obj = channel(566);
+  const items = [_isNativeReflectConstruct];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let isPrivateResult = channel.isPrivate();
     if (!isPrivateResult) {
-      isPrivateResult = closure_3.can(constants.CONNECT, channel);
+      isPrivateResult = outer1_3.can(outer1_4.CONNECT, channel);
     }
     return isPrivateResult;
   });
@@ -31,29 +32,29 @@ export default function UserProfileVoiceActivityIcon(channel) {
       const isGuildStageVoiceResult = channel.isGuildStageVoice();
       let tmp5 = !stateFromStores;
       if (!tmp5) {
-        tmp5 = importDefault(dependencyMap[6])(channel);
+        tmp5 = importDefault(4623)(channel);
       }
       if (isGuildStageVoiceResult) {
         if (tmp5) {
           obj = {};
           const merged1 = Object.assign(merged);
-          let tmp8Result = jsx(arg1(dependencyMap[7]).StageLockIcon, obj);
+          let tmp8Result = jsx(channel(4653).StageLockIcon, {});
         }
         return tmp8Result;
       }
       if (isGuildStageVoiceResult) {
         const obj1 = {};
         const merged2 = Object.assign(merged);
-        tmp8Result = jsx(arg1(dependencyMap[8]).StageIcon, obj1);
+        tmp8Result = jsx(channel(4654).StageIcon, {});
       } else if (channel.isNSFW()) {
         const obj2 = {};
         const merged3 = Object.assign(merged);
-        tmp8Result = tmp8(tmp9(tmp10[9]).VoiceWarningIcon, obj2);
+        tmp8Result = tmp8(tmp9(4656).VoiceWarningIcon, obj2);
       } else {
         if (tmp5) {
-          let VoiceNormalIcon = tmp9(tmp10[10]).VoiceLockIcon;
+          let VoiceNormalIcon = tmp9(4655).VoiceLockIcon;
         } else {
-          VoiceNormalIcon = tmp9(tmp10[11]).VoiceNormalIcon;
+          VoiceNormalIcon = tmp9(4658).VoiceNormalIcon;
         }
         const obj3 = {};
         const merged4 = Object.assign(merged);
@@ -62,5 +63,5 @@ export default function UserProfileVoiceActivityIcon(channel) {
     }
   }
   const merged5 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[5]).PhoneCallIcon, {});
+  return jsx(channel(9085).PhoneCallIcon, {});
 };

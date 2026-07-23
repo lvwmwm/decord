@@ -1,26 +1,26 @@
-// Module ID: 11930
-// Function ID: 92279
+// Module ID: 11942
+// Function ID: 92332
 // Name: getActivityPlatformDisplayName
-// Dependencies: []
+// Dependencies: [653, 1212, 11941, 2]
 // Exports: default
 
-// Module 11930 (getActivityPlatformDisplayName)
-const PlatformTypes = require(dependencyMap[0]).PlatformTypes;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/user_profile/utils/getActivityPlatformDisplayName.tsx");
+// Module 11942 (getActivityPlatformDisplayName)
+import { PlatformTypes } from "ME";
+
+const result = require("isOnMetaHorizon").fileFinishedImporting("modules/user_profile/utils/getActivityPlatformDisplayName.tsx");
 
 export default function getActivityPlatformDisplayName(type) {
   type = type.type;
   if (PlatformTypes.XBOX === type) {
-    const intl3 = require(dependencyMap[1]).intl;
-    return intl3.string(require(dependencyMap[1]).t.Nfvo72);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.Nfvo72);
   } else if (PlatformTypes.PLAYSTATION === type) {
-    const intl2 = require(dependencyMap[1]).intl;
-    return intl2.string(require(dependencyMap[1]).t.fFl4jo);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t.fFl4jo);
   } else if (PlatformTypes.META_QUEST_OR_HORIZON === type) {
-    const intl = require(dependencyMap[1]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const string = intl.string;
-    const t = require(dependencyMap[1]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     if (tmp4) {
       let stringResult = string(t.BrHQaq);
     } else {

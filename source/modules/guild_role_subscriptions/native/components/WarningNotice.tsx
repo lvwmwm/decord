@@ -1,28 +1,32 @@
-// Module ID: 16261
-// Function ID: 125613
+// Module ID: 16378
+// Function ID: 127787
 // Name: WarningNotice
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5085, 9176, 4126, 4543, 2]
 // Exports: default
 
-// Module 16261 (WarningNotice)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Null": "y", "Null": "isArray", "Null": "tts", borderRadius: importDefault(dependencyMap[4]).radii.xs };
-obj.container = obj;
-obj.horizontalContainer = { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" };
-obj.message = { "Bool(false)": true, "Bool(false)": true, "Bool(false)": true };
-obj.actionButtonWrapper = {};
-const tmp3 = arg1(dependencyMap[2]);
-obj.containerYellow = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING };
-const obj1 = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_FEEDBACK_WARNING, borderColor: importDefault(dependencyMap[4]).colors.STATUS_WARNING };
-obj.textYellow = { color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING };
-obj.alertIcon = {};
-let closure_6 = obj.createStyles(obj);
-const obj2 = { color: importDefault(dependencyMap[4]).colors.TEXT_FEEDBACK_WARNING };
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_role_subscriptions/native/components/WarningNotice.tsx");
+// Module 16378 (WarningNotice)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderWidth: 1, padding: 12 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.horizontalContainer = { flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.message = { flex: 1, marginStart: 10, textAlignVertical: "center" };
+_createForOfIteratorHelperLoose.actionButtonWrapper = { marginTop: 24, alignSelf: "center", width: "100%" };
+_createForOfIteratorHelperLoose.containerYellow = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING, borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING, borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING };
+_createForOfIteratorHelperLoose.textYellow = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_WARNING };
+_createForOfIteratorHelperLoose.alertIcon = { alignSelf: "flex-start", width: 20, height: 20 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_WARNING };
+const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/WarningNotice.tsx");
 
 export default function WarningNotice(arg0) {
   let ctaLabel;
@@ -33,24 +37,27 @@ export default function WarningNotice(arg0) {
   let submitting;
   ({ ctaLabel, onClick } = arg0);
   ({ style, notice, submitting, disabled } = arg0);
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { style: items };
-  const items = [style, , ];
+  items = [style, , ];
   ({ container: arr[1], containerYellow: arr[2] } = tmp);
   obj = { style: tmp.horizontalContainer };
-  obj = { style: tmp.alertIcon, source: importDefault(dependencyMap[6]) };
-  const items1 = [callback(importDefault(dependencyMap[5]), obj), ];
+  obj = { style: tmp.alertIcon, source: importDefault(9176) };
+  const items1 = [callback(importDefault(5085), obj), ];
+  const obj1 = { style: null, variant: "text-sm/medium", color: "interactive-text-active" };
   const items2 = [, ];
   ({ message: arr3[0], textYellow: arr3[1] } = tmp);
-  items1[1] = callback(arg1(dependencyMap[7]).Text, { style: items2, children: notice });
+  obj1.style = items2;
+  obj1.children = notice;
+  items1[1] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items1;
   const items3 = [callback2(View, obj), ];
   let tmp5 = null != onClick && null != ctaLabel;
   if (tmp5) {
-    const obj1 = { style: tmp.actionButtonWrapper };
-    const obj2 = { onPress: onClick, disabled, loading: submitting, text: ctaLabel, grow: true };
-    obj1.children = callback(arg1(dependencyMap[8]).Button, obj2);
-    tmp5 = callback(View, obj1);
+    const obj2 = { style: tmp.actionButtonWrapper };
+    const obj3 = { onPress: onClick, disabled, loading: submitting, text: ctaLabel, grow: true };
+    obj2.children = callback(require(4543) /* Button */.Button, obj3);
+    tmp5 = callback(View, obj2);
   }
   items3[1] = tmp5;
   obj.children = items3;

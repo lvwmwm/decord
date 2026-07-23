@@ -1,39 +1,39 @@
-// Module ID: 16262
-// Function ID: 125615
+// Module ID: 16379
+// Function ID: 127789
 // Name: useCreateCreatorMonetizationAcceptTermsRequest
-// Dependencies: []
+// Dependencies: [5, 57, 31, 1391, 1838, 1849, 566, 5642, 16380, 4030, 2]
 // Exports: default
 
-// Module 16262 (useCreateCreatorMonetizationAcceptTermsRequest)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-const isGuildOwner = arg1(dependencyMap[3]).isGuildOwner;
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/creator_monetization_eligibility/useCreatorMonetizationAcceptTerms.tsx");
+// Module 16379 (useCreateCreatorMonetizationAcceptTermsRequest)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { isGuildOwner } from "isGuildOwner";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_9 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("result").fileFinishedImporting("modules/creator_monetization_eligibility/useCreatorMonetizationAcceptTerms.tsx");
 
 export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  let obj = arg1(closure_3[6]);
-  const items = [closure_8];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(arg0));
-  const importAll = stateFromStores;
-  const tmp3 = callback2(React.useState(), 2);
-  closure_3 = tmp3[1];
-  const tmp4 = callback2(React.useState(false), 2);
+  const _require = arg0;
+  let closure_1 = arg1;
+  let obj = _require(566);
+  const items = [_createForOfIteratorHelperLoose];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(closure_0));
+  const tmp3 = isExpeditedOnboardingGuild(React.useState(), 2);
+  const dependencyMap = tmp3[1];
+  const tmp4 = isExpeditedOnboardingGuild(React.useState(false), 2);
   const callback = tmp4[1];
-  const isExpeditedOnboardingGuild = arg1(closure_3[7]).useIsExpeditedOnboardingGuild(stateFromStores);
-  const callback2 = isExpeditedOnboardingGuild;
+  isExpeditedOnboardingGuild = _require(5642).useIsExpeditedOnboardingGuild(stateFromStores);
   obj = {};
-  const obj2 = arg1(closure_3[7]);
+  const obj2 = _require(5642);
   const items1 = [closure_9];
   const items2 = [stateFromStores];
-  obj.canSubmitAcceptance = arg1(closure_3[6]).useStateFromStores(items1, () => {
+  obj.canSubmitAcceptance = _require(566).useStateFromStores(items1, () => {
     let tmp2 = null != stateFromStores;
     if (tmp2) {
-      tmp2 = callback(stateFromStores, tmp);
+      tmp2 = outer1_7(stateFromStores, tmp);
     }
     return tmp2;
   }, items2);

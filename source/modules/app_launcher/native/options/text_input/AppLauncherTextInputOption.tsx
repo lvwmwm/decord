@@ -1,29 +1,34 @@
-// Module ID: 11285
-// Function ID: 87838
+// Module ID: 11295
+// Function ID: 87888
 // Name: AppLauncherTextInputOption
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1852, 33, 4130, 689, 10884, 1881, 9332, 11292, 8182, 1273, 11296, 477, 11297, 1820, 9326, 2]
 // Exports: default
 
-// Module 11285 (AppLauncherTextInputOption)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-const EmojiIntention = arg1(dependencyMap[3]).EmojiIntention;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { Mouse: 1946157652, filename: -1862270380, durationSecs: 1090519504, waveform: 84590, GET_GUILDS: "bottom", EntryPointCommandButtonActions: null, woman_in_lotus_position: null, linkedUsersProcessed: null, backgroundColor: importDefault(dependencyMap[6]).colors.INPUT_BACKGROUND_DEFAULT, borderRadius: importDefault(dependencyMap[6]).radii.lg };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[4]);
-obj.hasError = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_FEEDBACK_CRITICAL };
-obj.stringOptionInput = {};
-obj.expressionButton = {};
-let closure_9 = obj.createStyles(obj);
-const obj1 = { borderColor: importDefault(dependencyMap[6]).colors.BORDER_FEEDBACK_CRITICAL };
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/app_launcher/native/options/text_input/AppLauncherTextInputOption.tsx");
+// Module 11295 (AppLauncherTextInputOption)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { EmojiIntention } from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.INPUT_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, padding: 14, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.hasError = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_FEEDBACK_CRITICAL };
+_createForOfIteratorHelperLoose.stringOptionInput = { maxHeight: 100, flex: 1, padding: 0, paddingTop: 0 };
+_createForOfIteratorHelperLoose.expressionButton = { marginVertical: -8, marginRight: -8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_FEEDBACK_CRITICAL };
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/app_launcher/native/options/text_input/AppLauncherTextInputOption.tsx");
 
 export default function AppLauncherTextInputOption(guildId) {
   let autoFocus;
+  let dependencyMap;
   let hasError;
   let onChangeText;
   let onEndEditing;
@@ -32,13 +37,11 @@ export default function AppLauncherTextInputOption(guildId) {
   let option;
   let style;
   ({ option, onChangeText } = guildId);
-  const arg1 = onChangeText;
   guildId = guildId.guildId;
-  const importDefault = guildId;
-  ({ initialValue: closure_2, hasError } = guildId);
+  ({ initialValue: dependencyMap, hasError } = guildId);
   ({ onFocus, onEndEditing, style, autoFocus, onPressIn } = guildId);
-  const tmp = callback2();
-  const tmp2 = callback(React.useState(() => {
+  const tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = first(React.useState(() => {
     let str = "";
     if (null != closure_2) {
       str = "";
@@ -48,21 +51,20 @@ export default function AppLauncherTextInputOption(guildId) {
     }
     return str;
   }), 2);
-  const first = tmp2[0];
-  let callback = first;
-  const React = tmp2[1];
-  let obj = arg1(dependencyMap[7]);
-  let closure_5 = React.useRef({ 400888199: "%FunctionPrototype%", 2091392542: "paddingStart" });
+  first = tmp2[0];
+  React = tmp2[1];
+  let obj = onChangeText(10884);
+  let closure_5 = React.useRef({ start: 0, end: 0 });
   const ref = React.useRef(null);
-  const EmojiIntention = ref;
-  let tmp5 = option.type === arg1(dependencyMap[8]).ApplicationCommandOptionType.STRING;
+  let tmp5 = option.type === onChangeText(1881).ApplicationCommandOptionType.STRING;
+  let callback = tmp5;
   const items = [onChangeText];
   callback = React.useCallback((arg0) => {
     callback(arg0);
     onChangeText(arg0);
   }, items);
   const items1 = [callback, first];
-  const callback2 = React.useCallback((id) => {
+  _createForOfIteratorHelperLoose = React.useCallback((id) => {
     const substr = first.substring(0, ref.current.start);
     let start = ref.current.end;
     if (null == start) {
@@ -100,22 +102,22 @@ export default function AppLauncherTextInputOption(guildId) {
   }, []);
   const items2 = [guildId, tmp5];
   const effect = React.useEffect(() => {
-    if (tmp5) {
-      const result = onChangeText(closure_2[9]).maybeFetchTopEmojisByGuild(guildId);
-      const obj = onChangeText(closure_2[9]);
+    if (closure_7) {
+      const result = onChangeText(outer1_2[9]).maybeFetchTopEmojisByGuild(guildId);
+      const obj = onChangeText(outer1_2[9]);
     }
   }, items2);
-  let obj1 = arg1(dependencyMap[10]);
+  let obj1 = onChangeText(11292);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (null != current) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === arg1(dependencyMap[11]).AppLauncherEntrypoint.VOICE) {
-    let TextInput = arg1(dependencyMap[12]).TextInput;
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(8182).AppLauncherEntrypoint.VOICE) {
+    let TextInput = onChangeText(1273).TextInput;
   } else {
-    TextInput = importDefault(dependencyMap[13]);
+    TextInput = guildId(11296);
   }
   obj = {};
   const items3 = [tmp.container, , ];
@@ -127,7 +129,7 @@ export default function AppLauncherTextInputOption(guildId) {
   obj.style = items3;
   obj = { ref, autoFocus: false, value: first, style: tmp.stringOptionInput };
   let maxLength;
-  if (option.type === arg1(dependencyMap[8]).ApplicationCommandOptionType.STRING) {
+  if (option.type === onChangeText(1881).ApplicationCommandOptionType.STRING) {
     maxLength = option.maxLength;
   }
   obj.maxLength = maxLength;
@@ -141,30 +143,30 @@ export default function AppLauncherTextInputOption(guildId) {
   obj.textAlignVertical = "center";
   obj.returnKeyType = "done";
   obj.multiline = true;
-  if (option.type === arg1(dependencyMap[8]).ApplicationCommandOptionType.INTEGER) {
+  if (option.type === onChangeText(1881).ApplicationCommandOptionType.INTEGER) {
     let str2 = "numbers-and-punctuation";
     if (obj5.isAndroid()) {
       str2 = "numeric";
     }
     let str = str2;
-    const obj5 = arg1(dependencyMap[14]);
+    obj5 = onChangeText(477);
   } else {
     str = "default";
   }
   obj.keyboardType = str;
   obj.onPressIn = onPressIn;
-  const items4 = [tmp5(TextInput, obj), ];
+  const items4 = [callback(TextInput, obj), ];
   if (tmp5) {
     obj1 = {
       style: tmp.expressionButton,
       onPress() {
-          let obj = onChangeText(closure_2[16]);
+          let obj = onChangeText(outer1_2[16]);
           const result = obj.dismissGlobalKeyboard();
-          obj = { flex: "HTTP", height: "Date", overflow: "HTTP", pickerIntention: ref.CHAT, onPressEmoji: closure_9, guildId, onClose: closure_10 };
-          const result1 = onChangeText(closure_2[17]).openEmojiPickerActionSheet(obj);
+          obj = { pickerIntention: ref.CHAT, autoFocus: false, startExpanded: false, onPressEmoji: closure_9, guildId, onClose: closure_10 };
+          const result1 = onChangeText(outer1_2[17]).openEmojiPickerActionSheet(obj);
         }
     };
-    tmp5 = tmp5(importDefault(dependencyMap[15]), obj1);
+    tmp5 = callback(guildId(11297), obj1);
   }
   items4[1] = tmp5;
   obj.children = items4;

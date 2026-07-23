@@ -1,20 +1,22 @@
-// Module ID: 10620
-// Function ID: 82849
+// Module ID: 10630
+// Function ID: 82899
 // Name: useIsInvitedToSpeak
-// Dependencies: []
+// Dependencies: [1194, 1906, 566, 4314, 2]
 // Exports: default
 
-// Module 10620 (useIsInvitedToSpeak)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/stage_channels/useIsInvitedToSpeak.tsx");
+// Module 10630 (useIsInvitedToSpeak)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("initialize").fileFinishedImporting("modules/stage_channels/useIsInvitedToSpeak.tsx");
 
 export default function useIsInvitedToSpeak() {
   const items = [closure_4];
-  const stateFromStores = arg1(dependencyMap[2]).useStateFromStores(items, () => voiceChannelId.getVoiceChannelId());
-  const obj = arg1(dependencyMap[2]);
-  const items1 = [closure_3];
-  const stateFromStores1 = arg1(dependencyMap[2]).useStateFromStores(items1, () => id.getId());
-  const obj2 = arg1(dependencyMap[2]);
-  return importDefault(dependencyMap[3])(stateFromStores1, stateFromStores) === arg1(dependencyMap[3]).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_4.getVoiceChannelId());
+  const obj = require(566) /* initialize */;
+  const items1 = [_isNativeReflectConstruct];
+  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_3.getId());
+  const obj2 = require(566) /* initialize */;
+  return importDefault(4314)(stateFromStores1, stateFromStores) === require(4314) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 };

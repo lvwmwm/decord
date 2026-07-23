@@ -1,15 +1,17 @@
-// Module ID: 10441
-// Function ID: 80588
+// Module ID: 10451
+// Function ID: 80638
 // Name: LAUNCH_PAD_SPRING_CONFIG
-// Dependencies: []
+// Dependencies: [27, 477, 4110, 2]
 
-// Module 10441 (LAUNCH_PAD_SPRING_CONFIG)
-const Dimensions = require(dependencyMap[0]).Dimensions;
+// Module 10451 (LAUNCH_PAD_SPRING_CONFIG)
+import { Dimensions } from "get ActivityIndicator";
+import set from "set";
+import set from "getSystemVersion";
+
 const size = Dimensions.get("screen");
-const _module = require(dependencyMap[1]);
 let num = 24;
-if (!_module.isAndroid()) {
-  const _module1 = require(dependencyMap[2]);
+if (!set.isAndroid()) {
+  const _module1 = require("getSystemVersion");
   let num3 = 13;
   if (!_module1.isIpadOS()) {
     const _Math = Math;
@@ -17,10 +19,9 @@ if (!_module.isAndroid()) {
   }
   num = num3;
 }
-const _module2 = require(dependencyMap[3]);
-const result = _module2.fileFinishedImporting("modules/launchpad/native/LaunchPadConstants.tsx");
+const result = set.fileFinishedImporting("modules/launchpad/native/LaunchPadConstants.tsx");
 
-export const LAUNCH_PAD_SPRING_CONFIG = {};
+export const LAUNCH_PAD_SPRING_CONFIG = { damping: 20, stiffness: 280, mass: 0.5, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 export const LAUNCH_PAD_PULL_TAB_HEIGHT = 96;
 export const LAUNCH_PAD_PULL_TAB_WIDTH = 26;
 export const LAUNCH_PAD_PULL_TAB_MINIMIZED_OFFSET = 18;

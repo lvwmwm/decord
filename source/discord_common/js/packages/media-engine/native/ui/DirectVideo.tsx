@@ -1,53 +1,59 @@
-// Module ID: 4227
-// Function ID: 37061
+// Module ID: 4231
+// Function ID: 37093
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 31, 33, 4, 4179, 4232, 2]
 // Exports: default
 
-// Module 4227 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4231 (_createForOfIteratorHelperLoose)
+import classNames from "classNames";
+import set from "set";
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +64,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -87,28 +93,23 @@ function _arrayLikeToArray(arg0, arg1) {
 function releaseDirectVideoStream(arg0) {
   const value = map.get(arg0);
   if (tmp) {
-    const voiceEngine = arg1(dependencyMap[5]).getVoiceEngine();
+    const voiceEngine = require(4179) /* assertInjected */.getVoiceEngine();
     const result = voiceEngine.removeDirectVideoOutputSink(arg0);
     map.delete(arg0);
-    const obj2 = arg1(dependencyMap[5]);
+    const obj2 = require(4179) /* assertInjected */;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const jsx = arg1(dependencyMap[3]).jsx;
-const logger = new arg1(dependencyMap[4]).Logger("DirectVideo");
+const logger = new require("log").Logger("DirectVideo");
 logger.enableNativeLogger(true);
-let closure_8 = () => {
+let closure_8 = (() => {
   class RefCountedStream {
     constructor(arg0) {
-      tmp = closure_3(this, RefCountedStream);
+      tmp = outer1_3(this, RefCountedStream);
       this.refcount = 1;
       this.stream = window.createDiscordStream(arg0);
       return;
     }
   }
-  const arg1 = RefCountedStream;
   let obj = {
     key: "addref",
     value() {
@@ -125,66 +126,60 @@ let closure_8 = () => {
   };
   items[1] = obj;
   return callback(RefCountedStream, items);
-}();
+})();
 const map = new Map();
-const result = arg1(dependencyMap[7]).fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/DirectVideo.tsx");
+let result = require("result").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/DirectVideo.tsx");
 
 export default function DirectVideo(streamId, onContainerResized) {
   streamId = streamId.streamId;
-  onContainerResized = streamId;
   let flag = streamId.paused;
   if (flag === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   const onReady = streamId.onReady;
-  const dependencyMap = onReady;
   const onResize = streamId.onResize;
-  let closure_3 = onResize;
   let flag2 = streamId.reportContainerResized;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  let closure_4 = flag2;
-  let obj = { "Bool(true)": "Text", "Bool(true)": "resizeMode", "Bool(true)": "from", "Bool(true)": "Array", "Bool(true)": "isArray", "Bool(true)": "braintreemasterpasslanding" };
+  let obj = { streamId: 0, paused: 0, onReady: 0, onResize: 0, reportContainerResized: 0, className: 0 };
   Object.setPrototypeOf(null);
   const merged = Object.assign(streamId, obj);
-  let React;
+  let ref;
   let jsx;
   let closure_7;
   let closure_8;
-  const ref = React.useRef(null);
-  React = ref;
-  jsx = React.useRef(null);
-  closure_7 = React.useRef({ "Null": "%FunctionPrototype%", "Null": "paddingStart" });
+  ref = ref.useRef(null);
+  jsx = ref.useRef(null);
+  closure_7 = ref.useRef({ width: 0, height: 0 });
   obj = { streamId, paused: flag, onReady, onResize, onContainerResized };
-  closure_8 = React.useRef(obj);
+  closure_8 = ref.useRef(obj);
   const items = [flag2];
-  const layoutEffect = React.useLayoutEffect(() => {
-    const current = ref.current;
+  const layoutEffect = ref.useLayoutEffect(() => {
+    let current = ref.current;
     const resizeObserver = new globalThis.ResizeObserver((arg0) => {
       let iter3;
-      if (closure_4) {
-        const tmp3 = callback(arg0);
+      if (outer1_4) {
+        const tmp3 = outer2_10(arg0);
         const iter = tmp3();
         let iter2 = iter;
         if (!iter.done) {
           do {
             let value = iter2.value;
-            let tmp6 = closure_6;
-            if (value.target === closure_6.current) {
+            let tmp6 = outer1_6;
+            if (value.target === outer1_6.current) {
               let _window = window;
               let result = window.devicePixelRatio * value.target.clientWidth;
               let _window2 = window;
               let result1 = window.devicePixelRatio * value.target.clientHeight;
-              let tmp14 = closure_8;
+              let tmp14 = outer1_8;
               let tmp15 = result;
               let tmp16 = result1;
-              if (null != closure_8.current.onContainerResized) {
-                let tmp7 = closure_8;
-                let current = closure_8.current;
-                let tmp8 = closure_8;
-                let onContainerResizedResult = current.onContainerResized(closure_8.current.streamId, result, result1);
+              if (null != outer1_8.current.onContainerResized) {
+                let tmp7 = outer1_8;
+                let current = outer1_8.current;
+                let tmp8 = outer1_8;
+                let onContainerResizedResult = current.onContainerResized(outer1_8.current.streamId, result, result1);
                 let tmp10 = result;
                 let tmp11 = result1;
               }
@@ -204,9 +199,9 @@ export default function DirectVideo(streamId, onContainerResized) {
       element.autoplay = true;
       element.muted = true;
       const listener = element.addEventListener("pause", function handlePause() {
-        let paused = closure_8.current.paused;
+        let paused = outer1_8.current.paused;
         if (!paused) {
-          const current = ref.current;
+          const current = outer1_6.current;
           paused = null == current;
           const obj = current;
         }
@@ -217,9 +212,9 @@ export default function DirectVideo(streamId, onContainerResized) {
       const listener1 = element.addEventListener("resize", function handleResize() {
         let height;
         let width;
-        const current = ref.current;
+        const current = outer1_6.current;
         let videoWidth;
-        ({ width, height } = ref2.current);
+        ({ width, height } = outer1_7.current);
         if (null != current) {
           videoWidth = current.videoWidth;
         }
@@ -227,7 +222,7 @@ export default function DirectVideo(streamId, onContainerResized) {
         if (null != videoWidth) {
           num = videoWidth;
         }
-        const current2 = ref.current;
+        const current2 = outer1_6.current;
         let videoHeight;
         if (null != current2) {
           videoHeight = current2.videoHeight;
@@ -238,25 +233,25 @@ export default function DirectVideo(streamId, onContainerResized) {
         }
         if (width !== num) {
           const obj = { width: num, height: num2 };
-          if (null != closure_8.current.onResize) {
-            const current3 = closure_8.current;
+          if (null != outer1_8.current.onResize) {
+            const current3 = outer1_8.current;
             current3.onResize(obj);
           }
-          ref2.current = obj;
+          outer1_7.current = obj;
         }
       });
       const listener2 = element.addEventListener("canplaythrough", function handleReady(d) {
-        ref2.info("handleReady for " + closure_8.current.streamId + ", have onReady callback = " + null != closure_8.current.onReady);
-        if (null != closure_8.current.onReady) {
-          const current = closure_8.current;
+        logger.info("handleReady for " + outer1_8.current.streamId + ", have onReady callback = " + null != outer1_8.current.onReady);
+        if (null != outer1_8.current.onReady) {
+          const current = outer1_8.current;
           current.onReady();
         }
       });
       const _HermesInternal2 = HermesInternal;
-      closure_7.info("create video element for " + ctor.current.streamId + ", readyState=" + element.readyState);
+      logger.info("create video element for " + ctor.current.streamId + ", readyState=" + element.readyState);
       if (element.readyState > 3) {
         const _HermesInternal = HermesInternal;
-        closure_7.error("video element for " + ctor.current.streamId + " was ready before attached");
+        logger.error("video element for " + ctor.current.streamId + " was ready before attached");
       }
       current.appendChild(element);
       resizeObserver.disconnect();
@@ -264,32 +259,31 @@ export default function DirectVideo(streamId, onContainerResized) {
       closure_6.current = element;
     }
   }, items);
-  const effect = React.useEffect(() => {
+  const effect = ref.useEffect(() => {
     ctor.current.streamId = streamId;
     ctor.current.paused = flag;
     ctor.current.onReady = onReady;
     ctor.current.onResize = onResize;
   });
   const items1 = [flag, streamId];
-  const effect1 = React.useEffect(() => {
+  const effect1 = ref.useEffect(() => {
     const current = ref.current;
-    const streamId = current;
     if (null != current) {
       if (flag) {
         if (null != current.srcObject) {
           current.srcObject = null;
-          callback(streamId);
+          outer1_12(current);
         }
       } else {
         const _HermesInternal = HermesInternal;
-        closure_7.info("attaching srcObject for " + streamId);
-        let value = store.get(streamId);
+        logger.info("attaching srcObject for " + current);
+        let value = outer1_9.get(current);
         if (null == value) {
           const prototype = ctor.prototype;
           const tmp11 = new ctor(tmp2);
           const voiceEngine = streamId(onReady[5]).getVoiceEngine();
           const result = voiceEngine.addDirectVideoOutputSink(tmp2);
-          const result1 = store.set(tmp2, tmp11);
+          const result1 = outer1_9.set(tmp2, tmp11);
           value = tmp11;
           const obj2 = streamId(onReady[5]);
         } else {
@@ -297,13 +291,13 @@ export default function DirectVideo(streamId, onContainerResized) {
         }
         current.srcObject = value.stream;
         return () => {
-          callback(current);
+          outer2_12(current);
           current.srcObject = null;
         };
       }
     }
   }, items1);
-  obj = { className: importDefault(dependencyMap[6])("media-engine-video", streamId.className), ref };
+  obj = { className: flag(onReady[6])("media-engine-video", streamId.className), ref };
   const merged1 = Object.assign(merged);
-  return <div {...obj} />;
+  return <div className={flag(onReady[6])("media-engine-video", arg0.className)} ref={ref} />;
 };

@@ -1,9 +1,33 @@
-// Module ID: 3756
-// Function ID: 28681
+// Module ID: 3758
+// Function ID: 28686
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1909, 3759, 1353, 3760, 1352, 1391, 1857, 1348, 1917, 1838, 1849, 653, 3762, 3763, 22, 3765, 1387, 483, 3766, 566, 686, 2]
 
-// Module 3756 (_isNativeReflectConstruct)
+// Module 3758 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import MemberSafetyPagePermissions from "MemberSafetyPagePermissions";
+import calculateElevatedPermissions from "calculateElevatedPermissions";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import isGuildOwner from "isGuildOwner";
+import closure_17 from "_isNativeReflectConstruct";
+import closure_18 from "_isNativeReflectConstruct";
+import closure_19 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_21 from "_isNativeReflectConstruct";
+import { Permissions } from "ME";
+import { MemberSafetyPagePermissions as closure_23 } from "MemberSafetyPagePermissions";
+
+let closure_13;
+let closure_14;
+let closure_15;
+let closure_16;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +37,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +90,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,21 +117,21 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function _getGuildPermissions(guildId) {
-  if (null != closure_24[guildId]) {
+  if (null != table[guildId]) {
     return tmp;
   } else {
     const currentUser = authStore.getCurrentUser();
     if (null == currentUser) {
-      return importAll(dependencyMap[18]).NONE;
+      return importAll(3763).NONE;
     } else {
-      const guild = guild.getGuild(guildId);
+      guild = guild.getGuild(guildId);
       if (null == guild) {
-        let NONE = importAll(dependencyMap[18]).NONE;
+        let NONE = importAll(3763).NONE;
       } else {
-        let obj = importAll(dependencyMap[18]);
+        let obj = importAll(3763);
         obj = { user: currentUser, context: guild, checkElevated: flag };
         NONE = obj.computePermissions(obj);
-        closure_24[guildId] = NONE;
+        table[guildId] = NONE;
       }
       return NONE;
     }
@@ -119,11 +143,11 @@ function getUncachedChannelPermissions(id, flag) {
   }
   const currentUser = authStore.getCurrentUser();
   if (null == currentUser) {
-    return importAll(dependencyMap[18]).NONE;
+    return importAll(3763).NONE;
   } else {
     const channel = store.getChannel(id);
     if (null == channel) {
-      return importAll(dependencyMap[18]).NONE;
+      return importAll(3763).NONE;
     } else {
       const guildId = channel.getGuildId();
       let tmp7 = null != guildId;
@@ -141,7 +165,7 @@ function getUncachedChannelPermissions(id, flag) {
       }
       if (!channel.isScheduledForDeletion()) {
         if (!tmp7) {
-          let obj = importDefault(dependencyMap[19]);
+          let obj = importDefault(22);
           if (obj.isEmpty(channel.permissionOverwrites)) {
             if (null != guildId) {
               let permissions = _getGuildPermissions(guildId);
@@ -151,16 +175,16 @@ function getUncachedChannelPermissions(id, flag) {
         }
       }
       obj = { user: currentUser, context: channel, checkElevated: flag };
-      permissions = importAll(dependencyMap[18]).computePermissions(obj);
-      const obj2 = importAll(dependencyMap[18]);
+      permissions = importAll(3763).computePermissions(obj);
+      const obj2 = importAll(3763);
     }
   }
 }
 function _getChannelPermissions(id) {
-  let tmp = closure_25[id];
+  let tmp = dependencyMap[id];
   if (null == tmp) {
     const tmp4 = getUncachedChannelPermissions(id, flag);
-    closure_25[id] = tmp4;
+    dependencyMap[id] = tmp4;
     tmp = tmp4;
   }
   return tmp;
@@ -168,11 +192,11 @@ function _getChannelPermissions(id) {
 function updateGuildVersion(guildId) {
   if (null != guildId) {
     let num = 0;
-    if (null != closure_26[guildId]) {
+    if (null != dependencyMap2[guildId]) {
       num = tmp2;
     }
-    closure_26[guildId] = num + 1;
-    const tmp = closure_26;
+    dependencyMap2[guildId] = num + 1;
+    const tmp = dependencyMap2;
   }
 }
 function rebuildPermissions() {
@@ -180,8 +204,9 @@ function rebuildPermissions() {
   let closure_25 = {};
   for (const key10005 in closure_26) {
     let tmp = key10005;
-    let tmp2 = closure_26;
-    closure_26[key10005] = closure_26[key10005] + 1;
+    let tmp2 = dependencyMap2;
+    dependencyMap2[key10005] = dependencyMap2[key10005] + 1;
+    continue;
   }
   closure_27 = closure_27 + 1;
 }
@@ -215,10 +240,10 @@ function handleSearchMessagesSuccess(data) {
 }
 function handleGuildRole(guildId) {
   guildId = guildId.guildId;
-  delete r0[r2];
+  delete tmp[tmp2];
   const mutableBasicGuildChannelsForGuild = store.getMutableBasicGuildChannelsForGuild(guildId);
-  const item = importDefault(dependencyMap[19]).forEach(mutableBasicGuildChannelsForGuild, (arg0) => {
-    delete r1[r0];
+  const item = importDefault(22).forEach(mutableBasicGuildChannelsForGuild, (arg0) => {
+    delete tmp2[tmp];
   });
   closure_27 = closure_27 + 1;
   updateGuildVersion(guildId);
@@ -229,36 +254,36 @@ function handleStageInstancesChanged(instance) {
     return false;
   } else {
     const currentUser = authStore.getCurrentUser();
-    let obj = importAll(dependencyMap[18]);
+    let obj = importAll(3763);
     obj = { user: currentUser, context: channel };
     const permissions = obj.computePermissions(obj);
-    if (permissions === closure_25[channel.id]) {
+    if (permissions === dependencyMap[channel.id]) {
       return false;
     } else {
-      closure_25[channel.id] = permissions;
+      dependencyMap[channel.id] = permissions;
       closure_27 = closure_27 + 1;
     }
   }
 }
 function handleImpersonateUpdate(guildId) {
   guildId = guildId.guildId;
-  delete r0[r2];
+  delete tmp[tmp2];
   const mutableBasicGuildChannelsForGuild = store.getMutableBasicGuildChannelsForGuild(guildId);
-  const item = importDefault(dependencyMap[19]).forEach(mutableBasicGuildChannelsForGuild, (arg0) => {
-    delete r1[r0];
+  const item = importDefault(22).forEach(mutableBasicGuildChannelsForGuild, (arg0) => {
+    delete tmp2[tmp];
   });
   closure_27 = closure_27 + 1;
   updateGuildVersion(guildId);
 }
 function _computePermissions(channel, overwrites, roles, excludeGuildPermissions) {
-  let NONE = importAll(dependencyMap[18]).NONE;
+  let NONE = importAll(3763).NONE;
   if (channel instanceof closure_13) {
     if (set.has(channel.type)) {
       channel = store.getChannel(channel.parent_id);
       if (null == channel) {
-        let NONE2 = importAll(dependencyMap[18]).NONE;
+        let NONE2 = importAll(3763).NONE;
       } else {
-        const obj4 = importAll(dependencyMap[18]);
+        const obj4 = importAll(3763);
         const tmp16 = _computePermissions(channel, overwrites, roles, excludeGuildPermissions);
         NONE2 = obj4.applyThreadPermissions(channel, tmp16, closure_12.hasJoined(channel.id), closure_19.isCurrentUserGuest(channel.guild_id));
         const hasJoinedResult = closure_12.hasJoined(channel.id);
@@ -268,7 +293,7 @@ function _computePermissions(channel, overwrites, roles, excludeGuildPermissions
       NONE = _getChannelPermissions(channel.id);
     }
   } else {
-    let obj = overwrites(dependencyMap[21]);
+    let obj = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
     if (obj.isGuildRecord(channel)) {
       NONE = _getGuildPermissions(channel.id);
     }
@@ -277,50 +302,33 @@ function _computePermissions(channel, overwrites, roles, excludeGuildPermissions
     return NONE;
   }
   obj = { user: authStore.getCurrentUser(), context: channel, overwrites, roles, checkElevated: true, excludeGuildPermissions };
-  NONE = importAll(dependencyMap[18]).computePermissions(obj);
+  NONE = importAll(3763).computePermissions(obj);
 }
 function resetState() {
   let closure_25 = {};
   let closure_24 = {};
   let closure_26 = {};
-  let closure_27 = 0;
+  let c27 = 0;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-let closure_9 = importDefault(dependencyMap[5]);
-let closure_10 = importDefault(dependencyMap[6]);
-let closure_11 = importDefault(dependencyMap[7]);
-let closure_12 = importDefault(dependencyMap[8]);
-({ ChannelRecordBase: closure_13, THREAD_CHANNEL_TYPES: closure_14 } = arg1(dependencyMap[9]));
-const tmp2 = arg1(dependencyMap[9]);
-({ isGuildOwner: closure_15, isGuildOwnerWithRequiredMfaLevel: closure_16 } = arg1(dependencyMap[10]));
-let closure_17 = importDefault(dependencyMap[11]);
-let closure_18 = importDefault(dependencyMap[12]);
-let closure_19 = importDefault(dependencyMap[13]);
-let closure_20 = importDefault(dependencyMap[14]);
-let closure_21 = importDefault(dependencyMap[15]);
-const Permissions = arg1(dependencyMap[16]).Permissions;
-let closure_23 = arg1(dependencyMap[17]).MemberSafetyPagePermissions;
+({ ChannelRecordBase: closure_13, THREAD_CHANNEL_TYPES: closure_14 } = _callSuper);
+({ isGuildOwner: closure_15, isGuildOwnerWithRequiredMfaLevel: closure_16 } = isGuildOwner);
 let closure_24 = {};
 let closure_25 = {};
 let closure_26 = {};
-let closure_27 = 0;
-let tmp4 = (Store) => {
+let c27 = 0;
+let tmp4 = ((Store) => {
   class PermissionStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, PermissionStore);
-      obj = closure_7(PermissionStore);
-      tmp2 = closure_6;
-      if (closure_28()) {
+      tmp = outer1_4(this, PermissionStore);
+      obj = outer1_7(PermissionStore);
+      tmp2 = outer1_6;
+      if (outer1_28()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -329,22 +337,21 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = PermissionStore;
   callback2(PermissionStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_18, closure_19, closure_20, closure_9, closure_12, closure_10, closure_11, closure_21);
+      this.waitFor(outer1_18, outer1_19, outer1_20, outer1_9, outer1_12, outer1_10, outer1_11, outer1_21);
     }
   };
   const items = [obj, , , , , , , , , , , , , , , , ];
   obj = {
     key: "getChannelPermissions",
     value(type) {
-      if (set.has(type.type)) {
-        let tmp2 = callback9(type.id);
+      if (outer1_14.has(type.type)) {
+        let tmp2 = outer1_32(type.id);
       } else {
-        tmp2 = callback10(type.id);
+        tmp2 = outer1_33(type.id);
       }
       return tmp2;
     }
@@ -353,7 +360,7 @@ let tmp4 = (Store) => {
   obj = {
     key: "getGuildPermissions",
     value(id) {
-      return callback8(id.id);
+      return outer1_31(id.id);
     }
   };
   items[2] = obj;
@@ -361,27 +368,27 @@ let tmp4 = (Store) => {
     key: "getGuildPermissionProps",
     value(guild) {
       const self = this;
-      const currentUser = authStore.getCurrentUser();
-      const obj = { canManageGuild: this.can(constants.MANAGE_GUILD, guild), canManageChannels: this.can(constants.MANAGE_CHANNELS, guild), canManageRoles: this.can(constants.MANAGE_ROLES, guild), canManageBans: this.can(constants.BAN_MEMBERS, guild), canManageNicknames: this.can(constants.MANAGE_NICKNAMES, guild) };
-      let canResult = this.can(constants.MANAGE_GUILD_EXPRESSIONS, guild);
+      const currentUser = outer1_21.getCurrentUser();
+      const obj = { canManageGuild: this.can(outer1_22.MANAGE_GUILD, guild), canManageChannels: this.can(outer1_22.MANAGE_CHANNELS, guild), canManageRoles: this.can(outer1_22.MANAGE_ROLES, guild), canManageBans: this.can(outer1_22.BAN_MEMBERS, guild), canManageNicknames: this.can(outer1_22.MANAGE_NICKNAMES, guild) };
+      let canResult = this.can(outer1_22.MANAGE_GUILD_EXPRESSIONS, guild);
       if (!canResult) {
-        canResult = self.can(constants.CREATE_GUILD_EXPRESSIONS, guild);
+        canResult = self.can(outer1_22.CREATE_GUILD_EXPRESSIONS, guild);
       }
       obj.canManageGuildExpressions = canResult;
-      obj.canViewAuditLog = self.can(constants.VIEW_AUDIT_LOG, guild);
-      obj.canViewAuditLogV2 = self.can(constants.VIEW_AUDIT_LOG, guild);
-      obj.canManageWebhooks = self.can(constants.MANAGE_WEBHOOKS, guild);
-      obj.canViewGuildAnalytics = self.can(constants.VIEW_GUILD_ANALYTICS, guild);
+      obj.canViewAuditLog = self.can(outer1_22.VIEW_AUDIT_LOG, guild);
+      obj.canViewAuditLogV2 = self.can(outer1_22.VIEW_AUDIT_LOG, guild);
+      obj.canManageWebhooks = self.can(outer1_22.MANAGE_WEBHOOKS, guild);
+      obj.canViewGuildAnalytics = self.can(outer1_22.VIEW_GUILD_ANALYTICS, guild);
       obj.canAccessMembersPage = self.canAccessMemberSafetyPage(guild);
-      obj.isGuildAdmin = self.can(constants.ADMINISTRATOR, guild);
+      obj.isGuildAdmin = self.can(outer1_22.ADMINISTRATOR, guild);
       let tmp4 = null != currentUser;
       if (tmp4) {
-        tmp4 = callback5(guild, currentUser);
+        tmp4 = outer1_15(guild, currentUser);
       }
       obj.isOwner = tmp4;
       let tmp6 = null != currentUser;
       if (tmp6) {
-        tmp6 = callback6(guild, currentUser);
+        tmp6 = outer1_16(guild, currentUser);
       }
       obj.isOwnerWithRequiredMfaLevel = tmp6;
       obj.guild = guild;
@@ -391,14 +398,14 @@ let tmp4 = (Store) => {
   items[4] = {
     key: "canAccessMemberSafetyPage",
     value(id) {
-      return callback2(closure_3[22]).hasAny(callback8(id.id), closure_23);
+      return outer1_2(outer1_3[22]).hasAny(outer1_31(id.id), outer1_23);
     }
   };
   items[5] = {
     key: "canAccessGuildSettings",
     value(id) {
-      const obj = callback2(closure_3[22]);
-      return obj.hasAny(callback8(id.id), callback2(closure_3[18]).VIEW_GUILD_SETTINGS);
+      const obj = outer1_2(outer1_3[22]);
+      return obj.hasAny(outer1_31(id.id), outer1_2(outer1_3[18]).VIEW_GUILD_SETTINGS);
     }
   };
   items[6] = {
@@ -407,7 +414,7 @@ let tmp4 = (Store) => {
       const self = this;
       if ("channelId" in channelId) {
         if ("string" === typeof channelId.channelId) {
-          let canResult = self.can(VIEW_CHANNEL, channel.getChannel(channelId.channelId));
+          let canResult = self.can(VIEW_CHANNEL, outer1_18.getChannel(channelId.channelId));
         }
         return canResult;
       }
@@ -416,28 +423,28 @@ let tmp4 = (Store) => {
         canResult = "string" === typeof channelId.guildId;
       }
       if (canResult) {
-        canResult = self.can(VIEW_CHANNEL, guild.getGuild(channelId.guildId));
+        canResult = self.can(VIEW_CHANNEL, outer1_20.getGuild(channelId.guildId));
       }
     }
   };
   items[7] = {
     key: "can",
     value(arg0, arg1, arg2, arg3, arg4) {
-      const tmp = callback11(arg1, arg2, arg3, arg4);
-      return callback2(closure_3[22]).has(tmp, arg0);
+      const tmp = outer1_36(arg1, arg2, arg3, arg4);
+      return outer1_2(outer1_3[22]).has(tmp, arg0);
     }
   };
   items[8] = {
     key: "canBasicChannel",
     value(arg0, basicPermissions) {
       if ("basicPermissions" in basicPermissions) {
-        let hasItem = callback(closure_3[23]).has(basicPermissions.basicPermissions, arg0);
-        const obj3 = callback(closure_3[23]);
+        let hasItem = outer1_1(outer1_3[23]).has(basicPermissions.basicPermissions, arg0);
+        const obj3 = outer1_1(outer1_3[23]);
       } else {
-        const obj = callback2(closure_3[22]);
-        const tmp8 = callback11(basicPermissions, arg2, arg3, arg4);
-        hasItem = obj.has(tmp8, callback(closure_3[23]).asBigFlag(arg0));
-        const obj2 = callback(closure_3[23]);
+        const obj = outer1_2(outer1_3[22]);
+        const tmp8 = outer1_36(basicPermissions, arg2, arg3, arg4);
+        hasItem = obj.has(tmp8, outer1_1(outer1_3[23]).asBigFlag(arg0));
+        const obj2 = outer1_1(outer1_3[23]);
       }
       return hasItem;
     }
@@ -445,7 +452,7 @@ let tmp4 = (Store) => {
   items[9] = {
     key: "computePermissions",
     value(arg0, arg1, arg2, arg3) {
-      return callback11(arg0, arg1, arg2, arg3);
+      return outer1_36(arg0, arg1, arg2, arg3);
     }
   };
   items[10] = {
@@ -454,8 +461,8 @@ let tmp4 = (Store) => {
       if ("basicPermissions" in basicPermissions) {
         basicPermissions = basicPermissions.basicPermissions;
       } else {
-        basicPermissions = callback(closure_3[23]).asBasicFlag(callback11(basicPermissions));
-        const obj = callback(closure_3[23]);
+        basicPermissions = outer1_1(outer1_3[23]).asBasicFlag(outer1_36(basicPermissions));
+        const obj = outer1_1(outer1_3[23]);
       }
       return basicPermissions;
     }
@@ -464,22 +471,22 @@ let tmp4 = (Store) => {
     key: "canManageUser",
     value(VIEW_CHANNEL, id, channel) {
       const self = this;
-      if (id instanceof closure_17) {
+      if (id instanceof outer1_17) {
         id = id.id;
       }
-      if (callback5(channel, id)) {
+      if (outer1_15(channel, id)) {
         return false;
       } else {
-        const currentUser = authStore.getCurrentUser();
+        const currentUser = outer1_21.getCurrentUser();
         if (self.can(VIEW_CHANNEL, channel)) {
           if (null != currentUser) {
-            const highestRole = callback2(closure_3[18]).getHighestRole(channel, currentUser.id);
-            const obj = callback2(closure_3[18]);
+            const highestRole = outer1_2(outer1_3[18]).getHighestRole(channel, currentUser.id);
+            const obj = outer1_2(outer1_3[18]);
           }
-          const highestRole1 = callback2(closure_3[18]).getHighestRole(channel, id);
+          const highestRole1 = outer1_2(outer1_3[18]).getHighestRole(channel, id);
           let isRoleHigherResult = null != currentUser;
           if (isRoleHigherResult) {
-            const obj3 = callback2(closure_3[18]);
+            const obj3 = outer1_2(outer1_3[18]);
             isRoleHigherResult = obj3.isRoleHigher(channel, currentUser.id, highestRole, highestRole1);
           }
           return isRoleHigherResult;
@@ -492,11 +499,11 @@ let tmp4 = (Store) => {
   items[12] = {
     key: "getHighestRole",
     value(guild) {
-      const currentUser = authStore.getCurrentUser();
+      const currentUser = outer1_21.getCurrentUser();
       let highestRole = null;
       if (null != currentUser) {
-        highestRole = callback2(closure_3[18]).getHighestRole(guild, currentUser.id);
-        const obj = callback2(closure_3[18]);
+        highestRole = outer1_2(outer1_3[18]).getHighestRole(guild, currentUser.id);
+        const obj = outer1_2(outer1_3[18]);
       }
       return highestRole;
     }
@@ -504,15 +511,15 @@ let tmp4 = (Store) => {
   items[13] = {
     key: "isRoleHigher",
     value(id, highestRole, role) {
-      const currentUser = authStore.getCurrentUser();
-      const isViewingRolesResult = viewingRoles.isViewingRoles(id.id);
+      const currentUser = outer1_21.getCurrentUser();
+      const isViewingRolesResult = outer1_9.isViewingRoles(id.id);
       id = undefined;
       if (!isViewingRolesResult) {
         if (null != currentUser) {
           id = currentUser.id;
         }
       }
-      return callback2(closure_3[18]).isRoleHigher(id, id, highestRole, role);
+      return outer1_2(outer1_3[18]).isRoleHigher(id, id, highestRole, role);
     }
   };
   items[14] = {
@@ -520,9 +527,9 @@ let tmp4 = (Store) => {
     value(channel, id) {
       const self = this;
       const highestRole = this.getHighestRole(channel);
-      let canResult = this.can(constants.MANAGE_GUILD, channel);
+      let canResult = this.can(outer1_22.MANAGE_GUILD, channel);
       if (canResult) {
-        canResult = self.can(constants.MANAGE_ROLES, channel);
+        canResult = self.can(outer1_22.MANAGE_ROLES, channel);
       }
       let isRoleHigherResult = self.isRoleHigher(channel, highestRole, id);
       if (canResult) {
@@ -542,7 +549,7 @@ let tmp4 = (Store) => {
     key: "getGuildVersion",
     value(arg0) {
       let num = 0;
-      if (null != closure_26[arg0]) {
+      if (null != outer1_26[arg0]) {
         num = tmp;
       }
       return num;
@@ -551,13 +558,13 @@ let tmp4 = (Store) => {
   items[16] = {
     key: "getChannelsVersion",
     value() {
-      return closure_27;
+      return outer1_27;
     }
   };
   return callback(PermissionStore, items);
-}(importDefault(dependencyMap[24]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "PermissionStore";
-tmp4 = new tmp4(importDefault(dependencyMap[25]), {
+tmp4 = new tmp4(require("dispatcher"), {
   BACKGROUND_SYNC: handleConnectionOpen,
   CONNECTION_OPEN: handleConnectionOpen,
   OVERLAY_INITIALIZE: handleConnectionOpen,
@@ -578,15 +585,15 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
       if (!channel.isPrivate()) {
         const currentUser = authStore.getCurrentUser();
         const obj = { user: currentUser, context: channel };
-        const permissions = importAll(dependencyMap[18]).computePermissions(obj);
-        if (closure_25[channel.id] === permissions) {
+        const permissions = importAll(3763).computePermissions(obj);
+        if (dependencyMap[channel.id] === permissions) {
           return false;
         } else {
-          closure_25[channel.id] = permissions;
+          dependencyMap[channel.id] = permissions;
           closure_27 = closure_27 + 1;
           updateGuildVersion(channel.getGuildId());
         }
-        const obj2 = importAll(dependencyMap[18]);
+        const obj2 = importAll(3763);
       }
     }
     return false;
@@ -605,29 +612,29 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     let flag2 = false;
     if (!iter.done) {
       do {
-        let tmp3 = closure_18;
-        let channel = closure_18.getChannel(iter2.value.id);
+        let tmp3 = store;
+        let channel = store.getChannel(iter2.value.id);
         let flag3 = flag;
         let tmp4 = tmp2;
         if (null != channel) {
           flag3 = flag;
           tmp4 = tmp2;
           if (!channel.isPrivate()) {
-            let tmp5 = closure_21;
-            let tmp7 = closure_2;
-            let tmp8 = closure_3;
-            let currentUser = closure_21.getCurrentUser();
-            let obj2 = closure_2(closure_3[18]);
+            let tmp5 = authStore;
+            let tmp7 = importAll;
+            let tmp8 = dependencyMap;
+            let currentUser = authStore.getCurrentUser();
+            let obj2 = importAll(3763);
             let obj = { user: currentUser, context: channel };
             let permissions = obj2.computePermissions(obj);
-            let tmp10 = closure_25;
+            let tmp10 = dependencyMap;
             flag3 = flag;
             tmp4 = permissions;
-            if (closure_25[channel.id] !== permissions) {
-              let tmp11 = closure_25;
-              closure_25[channel.id] = permissions;
-              let tmp12 = closure_34;
-              let tmp13 = closure_34(channel.getGuildId());
+            if (dependencyMap[channel.id] !== permissions) {
+              let tmp11 = dependencyMap;
+              dependencyMap[channel.id] = permissions;
+              let tmp12 = updateGuildVersion;
+              let tmp13 = updateGuildVersion(channel.getGuildId());
               flag3 = true;
               tmp4 = permissions;
             }
@@ -635,7 +642,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
         }
         iter3 = tmp();
         flag = flag3;
-        let tmp2 = tmp4;
+        tmp2 = tmp4;
         iter2 = iter3;
         flag2 = flag3;
       } while (!iter3.done);
@@ -667,7 +674,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     return flag;
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(guildId) {
-    const tmp = !arg1(dependencyMap[20]).doesThreadMembersActionAffectMe(guildId);
+    const tmp = !require(3765) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(guildId);
     let flag = !tmp;
     if (!tmp) {
       updateGuildVersion(guildId.guildId);
@@ -676,7 +683,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
     return flag;
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
-    delete r3[r2];
+    delete tmp2[tmp];
     closure_27 = closure_27 + 1;
     updateGuildVersion(channel.channel.guild_id);
     return false;
@@ -691,141 +698,6 @@ tmp4 = new tmp4(importDefault(dependencyMap[25]), {
   IMPERSONATE_UPDATE: handleImpersonateUpdate,
   IMPERSONATE_STOP: handleImpersonateUpdate
 });
-const obj = {
-  BACKGROUND_SYNC: handleConnectionOpen,
-  CONNECTION_OPEN: handleConnectionOpen,
-  OVERLAY_INITIALIZE: handleConnectionOpen,
-  CACHE_LOADED: handleConnectionOpen,
-  CACHE_LOADED_LAZY: handleConnectionOpen,
-  CONNECTION_CLOSED: function handleConnectionClose() {
-    resetState();
-  },
-  GUILD_CREATE: handleGuild,
-  GUILD_UPDATE: handleGuild,
-  GUILD_DELETE: handleGuild,
-  GUILD_MEMBER_ADD: handleGuildMemberUpdate,
-  GUILD_MEMBER_UPDATE: handleGuildMemberUpdate,
-  CURRENT_USER_UPDATE: handleGuildMemberUpdate,
-  CHANNEL_CREATE: function handleChannelCreate(channel) {
-    channel = store.getChannel(channel.channel.id);
-    if (null != channel) {
-      if (!channel.isPrivate()) {
-        const currentUser = authStore.getCurrentUser();
-        const obj = { user: currentUser, context: channel };
-        const permissions = importAll(dependencyMap[18]).computePermissions(obj);
-        if (closure_25[channel.id] === permissions) {
-          return false;
-        } else {
-          closure_25[channel.id] = permissions;
-          closure_27 = closure_27 + 1;
-          updateGuildVersion(channel.getGuildId());
-        }
-        const obj2 = importAll(dependencyMap[18]);
-      }
-    }
-    return false;
-  },
-  THREAD_CREATE: handleThreadAction,
-  THREAD_UPDATE: handleThreadAction,
-  THREAD_LIST_SYNC: handleThreadAction,
-  LOAD_THREADS_SUCCESS: handleThreadAction,
-  LOAD_ARCHIVED_THREADS_SUCCESS: handleThreadAction,
-  CHANNEL_UPDATES: function handleChannelUpdates(channels) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(channels.channels);
-    const iter = tmp();
-    let flag = false;
-    let iter2 = iter;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let tmp3 = closure_18;
-        let channel = closure_18.getChannel(iter2.value.id);
-        let flag3 = flag;
-        let tmp4 = tmp2;
-        if (null != channel) {
-          flag3 = flag;
-          tmp4 = tmp2;
-          if (!channel.isPrivate()) {
-            let tmp5 = closure_21;
-            let tmp7 = closure_2;
-            let tmp8 = closure_3;
-            let currentUser = closure_21.getCurrentUser();
-            let obj2 = closure_2(closure_3[18]);
-            let obj = { user: currentUser, context: channel };
-            let permissions = obj2.computePermissions(obj);
-            let tmp10 = closure_25;
-            flag3 = flag;
-            tmp4 = permissions;
-            if (closure_25[channel.id] !== permissions) {
-              let tmp11 = closure_25;
-              closure_25[channel.id] = permissions;
-              let tmp12 = closure_34;
-              let tmp13 = closure_34(channel.getGuildId());
-              flag3 = true;
-              tmp4 = permissions;
-            }
-          }
-        }
-        iter3 = tmp();
-        flag = flag3;
-        let tmp2 = tmp4;
-        iter2 = iter3;
-        flag2 = flag3;
-      } while (!iter3.done);
-    }
-    let tmp14 = flag2;
-    if (flag2) {
-      closure_27 = closure_27 + 1;
-      tmp14 = flag2;
-    }
-    return tmp14;
-  },
-  LOAD_MESSAGES_SUCCESS: function handleLoadMessagesSuccess(messages) {
-    messages = messages.messages;
-    return messages.some((thread) => null != thread.thread);
-  },
-  SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
-  THREAD_MEMBER_UPDATE: function handleThreadMemberUpdate(userId) {
-    const currentUser = authStore.getCurrentUser();
-    let id;
-    if (null != currentUser) {
-      id = currentUser.id;
-    }
-    let flag = id === userId.userId;
-    if (flag) {
-      updateGuildVersion(userId.guildId);
-      flag = true;
-    }
-    return flag;
-  },
-  THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(guildId) {
-    const tmp = !arg1(dependencyMap[20]).doesThreadMembersActionAffectMe(guildId);
-    let flag = !tmp;
-    if (!tmp) {
-      updateGuildVersion(guildId.guildId);
-      flag = true;
-    }
-    return flag;
-  },
-  CHANNEL_DELETE: function handleChannelDelete(channel) {
-    delete r3[r2];
-    closure_27 = closure_27 + 1;
-    updateGuildVersion(channel.channel.guild_id);
-    return false;
-  },
-  GUILD_ROLE_CREATE: handleGuildRole,
-  GUILD_ROLE_UPDATE: handleGuildRole,
-  GUILD_ROLE_DELETE: handleGuildRole,
-  LOGOUT: resetState,
-  STAGE_INSTANCE_CREATE: handleStageInstancesChanged,
-  STAGE_INSTANCE_UPDATE: handleStageInstancesChanged,
-  STAGE_INSTANCE_DELETE: handleStageInstancesChanged,
-  IMPERSONATE_UPDATE: handleImpersonateUpdate,
-  IMPERSONATE_STOP: handleImpersonateUpdate
-};
-const tmp3 = arg1(dependencyMap[10]);
-const result = arg1(dependencyMap[26]).fileFinishedImporting("stores/PermissionStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/PermissionStore.tsx");
 
 export default tmp4;

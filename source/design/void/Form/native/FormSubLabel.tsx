@@ -1,13 +1,15 @@
-// Module ID: 5175
-// Function ID: 44989
+// Module ID: 5178
+// Function ID: 45008
 // Name: FormSubLabel
-// Dependencies: []
+// Dependencies: [31, 33, 4126, 2]
 // Exports: default
 
-// Module 5175 (FormSubLabel)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("design/void/Form/native/FormSubLabel.tsx");
+// Module 5178 (FormSubLabel)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("Text").fileFinishedImporting("design/void/Form/native/FormSubLabel.tsx");
 
 export default function FormSubLabel(color) {
   let accessible;
@@ -20,5 +22,5 @@ export default function FormSubLabel(color) {
     str = "text-subtle";
   }
   const obj = { color: str, variant: "text-xs/normal", lineClamp: numberOfLines, style, accessible, children: text };
-  return jsx(arg1(dependencyMap[2]).Text, obj);
+  return jsx(require(4126) /* Text */.Text, { color: str, variant: "text-xs/normal", lineClamp: numberOfLines, style, accessible, children: text });
 };

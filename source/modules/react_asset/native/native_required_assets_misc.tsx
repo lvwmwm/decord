@@ -1,10 +1,10 @@
-// Module ID: 16487
-// Function ID: 127338
+// Module ID: 16604
+// Function ID: 129512
 // Name: NATIVE_REQUIRED_ASSETS_MISC
-// Dependencies: []
+// Dependencies: [1396, 1397, 1398, 1399, 1400, 1414, 1415, 1416, 1417, 1418, 1419, 1420, 1421, 16605, 16606, 16607, 16608, 16609, 16610, 16611, 2]
 
-// Module 16487 (NATIVE_REQUIRED_ASSETS_MISC)
-const _module = require(dependencyMap[20]);
-const result = _module.fileFinishedImporting("modules/react_asset/native/native_required_assets_misc.tsx");
+// Module 16604 (NATIVE_REQUIRED_ASSETS_MISC)
+const obj = { DefaultAvatar0: require("registerAsset"), DefaultAvatar1: require("registerAsset"), DefaultAvatar2: require("registerAsset"), DefaultAvatar3: require("registerAsset"), DefaultAvatar4: require("registerAsset"), DefaultGroup0: require("registerAsset"), DefaultGroup1: require("registerAsset"), DefaultGroup2: require("registerAsset"), DefaultGroup3: require("registerAsset"), DefaultGroup4: require("registerAsset"), DefaultGroup5: require("registerAsset"), DefaultGroup6: require("registerAsset"), DefaultGroup7: require("registerAsset"), PoopDark: require("registerAsset"), PoopLight: require("registerAsset"), RoleSubscriptionBadge: require("registerAsset"), RoleSubscriptionLanyard: require("registerAsset"), RoleSubscriptionPurchaseCard: require("registerAsset"), SummaryIndicatorEnd: require("registerAsset"), SummaryIndicatorStart: require("registerAsset") };
+const result = require("registerAsset").fileFinishedImporting("modules/react_asset/native/native_required_assets_misc.tsx");
 
-export const NATIVE_REQUIRED_ASSETS_MISC = { DefaultAvatar0: importDefault(dependencyMap[0]), DefaultAvatar1: importDefault(dependencyMap[1]), DefaultAvatar2: importDefault(dependencyMap[2]), DefaultAvatar3: importDefault(dependencyMap[3]), DefaultAvatar4: importDefault(dependencyMap[4]), DefaultGroup0: importDefault(dependencyMap[5]), DefaultGroup1: importDefault(dependencyMap[6]), DefaultGroup2: importDefault(dependencyMap[7]), DefaultGroup3: importDefault(dependencyMap[8]), DefaultGroup4: importDefault(dependencyMap[9]), DefaultGroup5: importDefault(dependencyMap[10]), DefaultGroup6: importDefault(dependencyMap[11]), DefaultGroup7: importDefault(dependencyMap[12]), PoopDark: importDefault(dependencyMap[13]), PoopLight: importDefault(dependencyMap[14]), RoleSubscriptionBadge: importDefault(dependencyMap[15]), RoleSubscriptionLanyard: importDefault(dependencyMap[16]), RoleSubscriptionPurchaseCard: importDefault(dependencyMap[17]), SummaryIndicatorEnd: importDefault(dependencyMap[18]), SummaryIndicatorStart: importDefault(dependencyMap[19]) };
+export const NATIVE_REQUIRED_ASSETS_MISC = obj;

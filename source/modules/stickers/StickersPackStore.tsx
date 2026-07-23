@@ -1,9 +1,18 @@
-// Module ID: 5034
-// Function ID: 43399
+// Module ID: 5037
+// Function ID: 43417
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 664, 4799, 2]
 
-// Module 5034 (_isNativeReflectConstruct)
+// Module 5037 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import TypeTag from "TypeTag";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { TypeTag } from "TypeTag";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -97,12 +106,12 @@ function parseServerPackSticker(sticker) {
 }
 function deriveStickerMetadata(name, name2) {
   const items = [];
-  let obj = { type: name2(dependencyMap[9]).StickerMetadataTypes.STICKER_NAME };
+  let obj = { type: require(4799) /* StickerFormat */.StickerMetadataTypes.STICKER_NAME };
   const trimmed = name.name.trim();
   obj.value = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != name2) {
-    obj = { type: name2(dependencyMap[9]).StickerMetadataTypes.PACK_NAME, value: name2.name };
+    obj = { type: require(4799) /* StickerFormat */.StickerMetadataTypes.PACK_NAME, value: name2.name };
     items.push(obj);
   }
   return items;
@@ -119,8 +128,8 @@ function ingestStickerPack(pack, packStickersDatabase, packsDatabase, premiumPac
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp4 = closure_15;
-      obj[value.id] = closure_15(value);
+      let tmp4 = parseServerPackSticker;
+      obj[value.id] = parseServerPackSticker(value);
       let iter2 = tmp3();
       iter = iter2;
       done = iter2.done;
@@ -128,35 +137,28 @@ function ingestStickerPack(pack, packStickersDatabase, packsDatabase, premiumPac
   }
   packStickersDatabase.setPartition(pack.id, obj);
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-const TypeTag = arg1(dependencyMap[6]).TypeTag;
-let closure_9 = false;
-let closure_10 = null;
-const HOUR = importDefault(dependencyMap[8]).Millis.HOUR;
-let tmp2 = (LibdiscoreStore) => {
+let c9 = false;
+let c10 = null;
+const HOUR = require("set").Millis.HOUR;
+let tmp2 = ((LibdiscoreStore) => {
   class StickersPackStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, StickersPackStore);
+      tmp = outer1_3(this, apply);
       items1 = [...items];
-      obj = closure_6(StickersPackStore);
-      tmp2 = closure_5;
-      if (closure_12()) {
+      obj = outer1_6(apply);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      StickersPackStore = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.packsDatabase = tmp2Result.addKVDatabase("stickerPacks");
       tmp2Result.packStickersDatabase = tmp2Result.addKKVDatabase("packStickers");
       packStickersDatabase = tmp2Result.packStickersDatabase;
@@ -169,6 +171,7 @@ let tmp2 = (LibdiscoreStore) => {
           let tmp = key10010;
           let _Object = Object;
           let result = map.set(key10010, Object.values(arg0[key10010].root));
+          continue;
         }
         return map;
       });
@@ -184,16 +187,16 @@ let tmp2 = (LibdiscoreStore) => {
             continue;
           } else {
             do {
-              let tmp = closure_2;
-              let tmp2 = closure_2(entries[num], 2);
-              let tmp3 = closure_0;
-              let packsDatabase = closure_0.packsDatabase;
-              let tmp4 = closure_16;
-              let result = map.set(tmp2[0], closure_16(tmp2[1], packsDatabase.get(key10014)));
+              let tmp = outer2_2;
+              let tmp2 = outer2_2(entries[num], 2);
+              let tmp3 = tmp2Result;
+              let packsDatabase = tmp2Result.packsDatabase;
+              let tmp4 = outer2_16;
+              let result = map.set(tmp2[0], outer2_16(tmp2[1], packsDatabase.get(key10014)));
               num = num + 1;
               let length = entries.length;
             } while (num < length);
-            // continue
+            continue;
           }
           continue;
         }
@@ -204,12 +207,11 @@ let tmp2 = (LibdiscoreStore) => {
       return tmp2Result;
     }
   }
-  const arg1 = StickersPackStore;
   callback2(StickersPackStore, LibdiscoreStore);
   let obj = {
     key: "stateWrapper",
     value() {
-      const StickersPackStore = this;
+      const self = this;
       return {
         packsDatabase: this.packsDatabase,
         packStickersDatabase: this.packStickersDatabase,
@@ -223,21 +225,21 @@ let tmp2 = (LibdiscoreStore) => {
       };
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "isFetchingStickerPacks",
     get() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[1] = obj;
   obj = {
     key: "hasLoadedStickerPacks",
     get() {
-      let tmp = null != closure_10;
+      let tmp = null != outer1_10;
       if (tmp) {
         const _performance = performance;
-        const sum = closure_10 + closure_11;
+        const sum = outer1_10 + outer1_11;
         tmp = sum > performance.now();
       }
       return tmp;
@@ -266,7 +268,7 @@ let tmp2 = (LibdiscoreStore) => {
     }
   };
   return callback(StickersPackStore, items);
-}(arg1(dependencyMap[7]).LibdiscoreStore);
+})(require("_isNativeReflectConstruct").LibdiscoreStore);
 tmp2.displayName = "StickersPackStore";
 tmp2 = new tmp2({
   LOGOUT(arg0, clearAllDBs) {
@@ -276,7 +278,7 @@ tmp2 = new tmp2({
     ingestStickerPack(pack.pack, packStickersDatabase.packStickersDatabase, packStickersDatabase.packsDatabase, packStickersDatabase.premiumPacksDatabase, false);
   },
   STICKER_PACKS_FETCH_START(arg0, markDirty) {
-    let closure_9 = true;
+    let c9 = true;
     markDirty.markDirty();
   },
   STICKER_PACKS_FETCH_SUCCESS(packs, markDirty) {
@@ -285,19 +287,19 @@ tmp2 = new tmp2({
     let packsDatabase;
     let premiumPacksDatabase;
     ({ packStickersDatabase, packsDatabase, premiumPacksDatabase } = markDirty);
-    let closure_9 = false;
+    let c9 = false;
     markDirty.markDirty();
     let closure_10 = performance.now();
     const tmp2 = _createForOfIteratorHelperLoose(packs.packs);
     let iter = tmp2();
     if (!iter.done) {
       do {
-        let tmp3 = closure_17;
+        let tmp3 = ingestStickerPack;
         let tmp4 = packStickersDatabase;
         let tmp5 = packsDatabase;
         let tmp6 = premiumPacksDatabase;
         let flag = true;
-        let tmp7 = closure_17(iter.value, packStickersDatabase, packsDatabase, premiumPacksDatabase, true);
+        let tmp7 = ingestStickerPack(iter.value, packStickersDatabase, packsDatabase, premiumPacksDatabase, true);
         let iter2 = tmp2();
         iter = iter2;
         done = iter2.done;
@@ -313,6 +315,6 @@ tmp2 = new tmp2({
     packStickersDatabase.setRecord(pack_id, id, parseServerPackSticker(sticker));
   }
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/stickers/StickersPackStore.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/stickers/StickersPackStore.tsx");
 
 export default tmp2;

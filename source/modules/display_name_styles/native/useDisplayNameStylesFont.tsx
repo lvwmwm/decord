@@ -1,14 +1,14 @@
-// Module ID: 8510
-// Function ID: 67901
+// Module ID: 8516
+// Function ID: 67938
 // Name: DISPLAY_NAME_STYLES_FONT_FAMILY_MAP
-// Dependencies: []
+// Dependencies: [1861, 1863, 4362, 8515, 2]
 // Exports: useDisplayNameStylesFont
 
-// Module 8510 (DISPLAY_NAME_STYLES_FONT_FAMILY_MAP)
-const FLYWHEEL_FONTS = require(dependencyMap[0]).FLYWHEEL_FONTS;
-const obj = { [require(dependencyMap[1]).DisplayNameFont.CHERRY_BOMB]: "Sakura-Normal", [require(dependencyMap[1]).DisplayNameFont.CHICLE]: "Jellybean-Normal", [require(dependencyMap[1]).DisplayNameFont.MUSEO_MODERNO]: "Modern-Medium", [require(dependencyMap[1]).DisplayNameFont.NEO_CASTEL]: "Medieval-Normal", [require(dependencyMap[1]).DisplayNameFont.PIXELIFY]: "8Bit-Normal", [require(dependencyMap[1]).DisplayNameFont.SINISTRE]: "Vampyre-Normal", [require(dependencyMap[1]).DisplayNameFont.ZILLA_SLAB]: "Tempo-SemiBold", [require(dependencyMap[1]).DisplayNameFont.PLAYPEN_SANS]: "MonkeyBars-Bold", [require(dependencyMap[1]).DisplayNameFont.ORBITRON]: "Mainframe-Bold", [require(dependencyMap[1]).DisplayNameFont.NEW_ROCKER]: "Headbang-Normal", [require(dependencyMap[1]).DisplayNameFont.KALAM]: "Journal-Bold" };
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/display_name_styles/native/useDisplayNameStylesFont.tsx");
+// Module 8516 (DISPLAY_NAME_STYLES_FONT_FAMILY_MAP)
+import { FLYWHEEL_FONTS } from "items3";
+
+let obj = { [require(1863).DisplayNameFont.CHERRY_BOMB]: "Sakura-Normal", [require(1863).DisplayNameFont.CHICLE]: "Jellybean-Normal", [require(1863).DisplayNameFont.MUSEO_MODERNO]: "Modern-Medium", [require(1863).DisplayNameFont.NEO_CASTEL]: "Medieval-Normal", [require(1863).DisplayNameFont.PIXELIFY]: "8Bit-Normal", [require(1863).DisplayNameFont.SINISTRE]: "Vampyre-Normal", [require(1863).DisplayNameFont.ZILLA_SLAB]: "Tempo-SemiBold", [require(1863).DisplayNameFont.PLAYPEN_SANS]: "MonkeyBars-Bold", [require(1863).DisplayNameFont.ORBITRON]: "Mainframe-Bold", [require(1863).DisplayNameFont.NEW_ROCKER]: "Headbang-Normal", [require(1863).DisplayNameFont.KALAM]: "Journal-Bold" };
+const result = require("useDisplayNameStylesEnabled").fileFinishedImporting("modules/display_name_styles/native/useDisplayNameStylesFont.tsx");
 
 export const DISPLAY_NAME_STYLES_FONT_FAMILY_MAP = obj;
 export const useDisplayNameStylesFont = function useDisplayNameStylesFont(arg0) {
@@ -18,9 +18,9 @@ export const useDisplayNameStylesFont = function useDisplayNameStylesFont(arg0) 
   if (ignoreDisabledStylesSetting === undefined) {
     ignoreDisabledStylesSetting = false;
   }
-  const obj = require(dependencyMap[2]);
+  const obj = require(4362) /* useDisplayNameStylesEnabled */;
   const displayNameStylesEnabled = obj.useDisplayNameStylesEnabled({ location: "useDisplayNameStylesFont-native" });
-  require(dependencyMap[3]);
+  require(8515) /* apexExperiment */;
   if (displayNameStylesEnabled) {
     if (null != displayNameStyles) {
       return obj[displayNameStyles.fontId];

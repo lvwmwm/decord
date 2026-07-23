@@ -1,16 +1,18 @@
-// Module ID: 15363
-// Function ID: 117005
+// Module ID: 15480
+// Function ID: 119179
 // Name: result
-// Dependencies: []
+// Dependencies: [664, 1428, 2]
 // Exports: useMobileReferralSubscriberProfileEntrypointButtonConfig
 
-// Module 15363 (result)
-const result = 3 * importDefault(dependencyMap[0]).Millis.DAYS_30;
-let closure_0 = arg1(dependencyMap[1]).createApexExperiment({ defaultConfig: { "Bool(true)": true, "Bool(true)": true }, variations: { [0]: { "Bool(true)": true, "Bool(true)": true }, [1]: { "Bool(true)": "<string:1040334421>", "Bool(true)": "<string:1040334338>" }, [2]: { "Bool(true)": null, "Bool(true)": null } } });
-const obj = arg1(dependencyMap[1]);
-const result1 = arg1(dependencyMap[2]).fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/MobileReferralSubscriberProfileEntrypointButtonExperiment.tsx");
+// Module 15480 (result)
+import ApexExperiment from "ApexExperiment";
+
+const result = 3 * require("set").Millis.DAYS_30;
+ApexExperiment = { name: "2026-05-mobile-referral-subscriber-profile-entrypoint-button", kind: "user", defaultConfig: { enabled: false, showReferralNotificationDot: false }, variations: { [0]: { enabled: false, showReferralNotificationDot: false }, [1]: { enabled: true, showReferralNotificationDot: false }, [2]: { enabled: true, showReferralNotificationDot: true } } };
+ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+const result1 = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/MobileReferralSubscriberProfileEntrypointButtonExperiment.tsx");
 
 export const REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS = result;
 export const useMobileReferralSubscriberProfileEntrypointButtonConfig = function useMobileReferralSubscriberProfileEntrypointButtonConfig(YouBannerDecorations) {
-  return closure_0.useConfig({ location: YouBannerDecorations });
+  return ApexExperiment.useConfig({ location: YouBannerDecorations });
 };

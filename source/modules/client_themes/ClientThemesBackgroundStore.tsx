@@ -1,9 +1,25 @@
-// Module ID: 3940
-// Function ID: 32482
+// Module ID: 3942
+// Function ID: 32487
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1279, 1278, 1280, 1316, 1352, 1348, 1849, 3943, 1281, 1324, 3946, 1334, 3969, 3776, 3803, 1323, 3972, 3973, 566, 686, 2]
 
-// Module 3940 (_isNativeReflectConstruct)
+// Module 3942 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed";
+import conceal from "conceal";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import { isGuildTextChannelType } from "_callSuper";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_15 } from "items1";
+import { SystemThemeState } from "SystemThemeState";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,52 +30,51 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function isSyncedModeThemesEnabled() {
-  return arg1(dependencyMap[14]).isMobileVisualRefreshEnabled("ClientThemesBackgroundStore");
+  return require(1324) /* useIsMobileVisualRefreshExperimentEnabled */.isMobileVisualRefreshEnabled("ClientThemesBackgroundStore");
 }
 function reset() {
-  if (closure_19) {
-    let closure_17;
+  if (c19) {
+    let c17;
   }
-  let closure_20 = false;
+  let c20 = false;
 }
 function handleUserStoreChange() {
-  const tmp = !importDefault(dependencyMap[18]).canUseClientThemes(currentUser.getCurrentUser());
-  if (tmp === closure_19) {
+  const tmp = !importDefault(3776).canUseClientThemes(currentUser.getCurrentUser());
+  if (tmp === c19) {
     return false;
   } else {
-    closure_19 = tmp;
+    c19 = tmp;
   }
-  const obj = importDefault(dependencyMap[18]);
+  const obj = importDefault(3776);
 }
 function handleSelectivelySyncedStoreChange() {
   if (closure_8.shouldSync("appearance")) {
-    const ClientThemeSettings = arg1(dependencyMap[19]).ClientThemeSettings;
+    const ClientThemeSettings = require(3803) /* explicitContentFromProto */.ClientThemeSettings;
     const backgroundGradientPresetId = ClientThemeSettings.getSetting().backgroundGradientPresetId;
     if (null == backgroundGradientPresetId) {
-      if (null == tmp5) {
+      if (null == c17) {
         return false;
       } else {
-        let tmp5;
+        c17 = undefined;
       }
+    } else if (dependencyMap[backgroundGradientPresetId] === c17) {
+      return false;
     } else {
-      tmp5 = closure_15[backgroundGradientPresetId];
-      if (tmp5 === tmp5) {
-        return false;
-      }
+      c17 = tmp5;
     }
   } else {
     return false;
   }
 }
 function handleSyncedModeChange() {
-  return arg1(dependencyMap[20]).isPerModeThemingActive(isSyncedModeThemesEnabled);
+  return require(1323) /* isPerModeThemingActive */.isPerModeThemingActive(isSyncedModeThemesEnabled);
 }
 function handleSameAsDeviceThemeToggle() {
   return isSyncedModeThemesEnabled();
 }
 function handleUserSettingsProtoStoreUpdate() {
   if (closure_8.shouldSync("appearance")) {
-    const ClientThemeSettings = arg1(dependencyMap[19]).ClientThemeSettings;
+    const ClientThemeSettings = require(3803) /* explicitContentFromProto */.ClientThemeSettings;
     const backgroundGradientPresetId = ClientThemeSettings.getSetting().backgroundGradientPresetId;
     let result = useSystemTheme.useSystemTheme !== SystemThemeState.ON;
     if (!result) {
@@ -69,8 +84,8 @@ function handleUserSettingsProtoStoreUpdate() {
       result = sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled();
     }
     if (!result) {
-      arg1(dependencyMap[21]).setUseSystemTheme(SystemThemeState.OFF);
-      const obj = arg1(dependencyMap[21]);
+      require(3972) /* setSystemTheme */.setUseSystemTheme(SystemThemeState.OFF);
+      const obj = require(3972) /* setSystemTheme */;
     }
     if (null != backgroundGradientPresetId) {
       let id;
@@ -78,13 +93,13 @@ function handleUserSettingsProtoStoreUpdate() {
         id = id.id;
       }
       let id1;
-      if (null != closure_15[backgroundGradientPresetId]) {
+      if (null != dependencyMap[backgroundGradientPresetId]) {
         id1 = tmp15.id;
       }
       if (!tmp18) {
         id = tmp15;
       }
-      const tmp18 = null == closure_15[backgroundGradientPresetId] || id === id1;
+      tmp18 = null == dependencyMap[backgroundGradientPresetId] || id === id1;
     } else if (null != id) {
       id = undefined;
     }
@@ -92,36 +107,22 @@ function handleUserSettingsProtoStoreUpdate() {
     return false;
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-const isGuildTextChannelType = arg1(dependencyMap[9]).isGuildTextChannelType;
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = arg1(dependencyMap[12]).BACKGROUND_GRADIENT_PRESETS_MAP;
-const SystemThemeState = arg1(dependencyMap[13]).SystemThemeState;
-let closure_19 = true;
-let closure_20 = false;
-let tmp2 = (PersistedStore) => {
+let c19 = true;
+let c20 = false;
+let tmp2 = ((PersistedStore) => {
   class ClientThemesBackgroundStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, ClientThemesBackgroundStore);
+      tmp = outer1_3(this, ClientThemesBackgroundStore);
       items1 = [...items];
-      obj = closure_6(ClientThemesBackgroundStore);
-      tmp2 = closure_5;
-      if (closure_21()) {
+      obj = outer1_6(ClientThemesBackgroundStore);
+      tmp2 = outer1_5;
+      if (outer1_21()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -143,7 +144,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2Result;
     }
   }
-  const arg1 = ClientThemesBackgroundStore;
   callback2(ClientThemesBackgroundStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -156,27 +156,28 @@ let tmp2 = (PersistedStore) => {
         }
         let tmp2;
         if (null != gradientPresetId) {
-          tmp2 = closure_15[gradientPresetId.gradientPresetId];
+          tmp2 = outer1_15[gradientPresetId.gradientPresetId];
         }
+        const outer1_17 = tmp2;
       }
-      self.waitFor(closure_13, closure_8, closure_9, closure_10, closure_11, closure_14);
-      const items = [closure_14];
-      self.syncWith(items, closure_23);
-      const items1 = [closure_8];
-      self.syncWith(items1, closure_24);
+      self.waitFor(outer1_13, outer1_8, outer1_9, outer1_10, outer1_11, outer1_14);
+      const items = [outer1_14];
+      self.syncWith(items, outer1_23);
+      const items1 = [outer1_8];
+      self.syncWith(items1, outer1_24);
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "getState",
     value() {
-      if (closure_19) {
+      if (outer1_19) {
         let obj = {};
       } else {
         obj = {};
         let id;
-        if (null != id) {
-          id = id.id;
+        if (null != outer1_17) {
+          id = outer1_17.id;
         }
         obj.gradientPresetId = id;
       }
@@ -187,21 +188,21 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "gradientPreset",
     get() {
-      if (obj.isPerModeThemingActive(closure_22)) {
-        const syncedClientTheme = syncedClientTheme.getSyncedClientTheme(syncedClientTheme.systemTheme);
+      if (obj.isPerModeThemingActive(outer1_22)) {
+        const syncedClientTheme = outer1_9.getSyncedClientTheme(outer1_9.systemTheme);
         let prop;
         if (null != syncedClientTheme) {
           prop = syncedClientTheme.backgroundGradientPresetId;
         }
         let tmp7;
         if (null != prop) {
-          tmp7 = closure_15[prop];
+          tmp7 = outer1_15[prop];
         }
         return tmp7;
       } else {
-        return closure_17;
+        return outer1_17;
       }
-      const obj = ClientThemesBackgroundStore(closure_2[20]);
+      obj = ClientThemesBackgroundStore(outer1_2[20]);
     }
   };
   items[2] = obj;
@@ -210,8 +211,8 @@ let tmp2 = (PersistedStore) => {
     value() {
       let linearGradientForBackgroundGradient = null;
       if (null != this.gradientPreset) {
-        linearGradientForBackgroundGradient = ClientThemesBackgroundStore(closure_2[22]).getLinearGradientForBackgroundGradient(tmp.gradientPreset);
-        const obj = ClientThemesBackgroundStore(closure_2[22]);
+        linearGradientForBackgroundGradient = ClientThemesBackgroundStore(outer1_2[22]).getLinearGradientForBackgroundGradient(tmp.gradientPreset);
+        const obj = ClientThemesBackgroundStore(outer1_2[22]);
       }
       return linearGradientForBackgroundGradient;
     }
@@ -219,32 +220,33 @@ let tmp2 = (PersistedStore) => {
   items[4] = {
     key: "isPreview",
     get() {
-      return closure_19;
+      return outer1_19;
     }
   };
   items[5] = {
     key: "isCoachmark",
     get() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[6] = {
     key: "mobilePendingThemeIndex",
     get() {
-      return closure_18;
+      return outer1_18;
     }
   };
   return callback(ClientThemesBackgroundStore, items);
-}(importDefault(dependencyMap[23]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "ClientThemesBackgroundStore";
 tmp2.persistKey = "ClientThemesBackgroundStore";
-tmp2 = new tmp2(importDefault(dependencyMap[24]), {
+tmp2 = new tmp2(require("dispatcher"), {
   UPDATE_BACKGROUND_GRADIENT_PRESET: function handleUpdateBackgroundGradientPreset(presetId) {
     presetId = presetId.presetId;
     let tmp;
     if (null != presetId) {
-      tmp = closure_15[presetId];
+      tmp = dependencyMap[presetId];
     }
+    let closure_17 = tmp;
   },
   UPDATE_MOBILE_PENDING_THEME_INDEX: function handleUpdateMobilePendingThemeIndex(mobileThemesIndex) {
     mobileThemesIndex = mobileThemesIndex.mobileThemesIndex;
@@ -252,29 +254,30 @@ tmp2 = new tmp2(importDefault(dependencyMap[24]), {
     if (null != mobileThemesIndex) {
       tmp = mobileThemesIndex;
     }
+    let closure_18 = tmp;
   },
   RESET_PREVIEW_CLIENT_THEME: function handleResetPreviewClientTheme() {
-    let closure_17;
+    let c17;
   },
   CLIENT_THEMES_EDITOR_CLOSE: reset,
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
     channelId = channelId.channelId;
     if (null != channelId) {
       if (null != channelId.guildId) {
-        if (!obj2.UNSAFE_isDismissibleContentDismissed(arg1(dependencyMap[16]).DismissibleContent.CLIENT_THEMES_COACHMARK)) {
+        if (!obj2.UNSAFE_isDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.CLIENT_THEMES_COACHMARK)) {
           if (obj.ageEligibleForPremiumUpsell(tmp)) {
-            const channel = channel.getChannel(channelId);
+            channel = channel.getChannel(channelId);
             let tmp6 = null != channel;
             if (tmp6) {
               tmp6 = isGuildTextChannelType(channel.type);
             }
             if (tmp6) {
-              let closure_20 = true;
+              let c20 = true;
             }
           }
-          const obj = arg1(dependencyMap[17]);
+          obj = require(3969) /* conceal */;
         }
-        const obj2 = arg1(dependencyMap[15]);
+        obj2 = require(3946) /* UNSAFE_isDismissibleContentDismissed */;
       }
     }
   },
@@ -290,6 +293,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[24]), {
   SET_SAME_AS_DEVICE_THEME_ENABLED: handleSameAsDeviceThemeToggle,
   CLEAR_SYNCED_CLIENT_THEMES: handleSameAsDeviceThemeToggle
 });
-const result = arg1(dependencyMap[25]).fileFinishedImporting("modules/client_themes/ClientThemesBackgroundStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/client_themes/ClientThemesBackgroundStore.tsx");
 
 export default tmp2;

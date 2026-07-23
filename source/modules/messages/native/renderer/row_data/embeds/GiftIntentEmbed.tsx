@@ -1,17 +1,19 @@
-// Module ID: 7747
-// Function ID: 61532
+// Module ID: 7753
+// Function ID: 61569
 // Name: createGiftIntentEmbed
-// Dependencies: []
+// Dependencies: [7754, 1849, 1851, 4130, 689, 1212, 7758, 3969, 7635, 4067, 7759, 7760, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 7747 (createGiftIntentEmbed)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const GiftIntentType = arg1(dependencyMap[2]).GiftIntentType;
-let obj = arg1(dependencyMap[3]);
-obj = { headerTextColor: importDefault(dependencyMap[4]).colors.TEXT_STRONG, subHeaderTextColor: importDefault(dependencyMap[4]).colors.TEXT_SUBTLE, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWEST, borderColor: importDefault(dependencyMap[4]).colors.BORDER_MUTED };
-let closure_6 = obj.createNativeStyleProperties(obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftIntentEmbed.tsx");
+// Module 7753 (createGiftIntentEmbed)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { GiftIntentType } from "GuildFeatures";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = { headerTextColor: require("_createForOfIteratorHelperLoose").colors.TEXT_STRONG, subHeaderTextColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createNativeStyleProperties(_createForOfIteratorHelperLoose);
+const result = require("GuildFeatures").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftIntentEmbed.tsx");
 
 export const createGiftIntentEmbed = function createGiftIntentEmbed(message, theme) {
   let giftIntentType;
@@ -25,24 +27,24 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
     if (null == user) {
       return null;
     } else {
-      const name = importDefault(dependencyMap[7]).getName(user);
+      const name = importDefault(3969).getName(user);
       if (GiftIntentType.FRIEND_ANNIVERSARY === giftIntentType) {
         let obj = {};
-        const intl = theme(dependencyMap[5]).intl;
-        obj.headerText = intl.string(theme(dependencyMap[5]).t.CeQIwZ);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        obj.headerText = intl.string(require(1212) /* getSystemLocale */.t.CeQIwZ);
         obj = {};
-        const intl2 = theme(dependencyMap[5]).intl;
+        const intl2 = require(1212) /* getSystemLocale */.intl;
         obj = { numberOfYears: tmp17 };
-        obj.text = intl2.formatToPlainString(theme(dependencyMap[5]).t.PpG27s, obj);
+        obj.text = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.PpG27s, obj);
         const items = [obj];
         obj.subHeaderParts = items;
         let tmp2 = obj;
       } else {
         tmp2 = null;
         if (GiftIntentType.UNSPECIFIED !== giftIntentType) {
-          theme(dependencyMap[6]).unhandledGiftIntent(giftIntentType);
+          require(7758) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
           tmp2 = null;
-          const obj10 = theme(dependencyMap[6]);
+          const obj10 = require(7758) /* _sendGiftMessage */;
         }
       }
       if (null == tmp2) {
@@ -60,20 +62,20 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
         ({ headerText: obj4.headerText, subHeaderParts: obj4.subHeaderParts } = tmp2);
         obj1.recipientUserId = recipientUserId;
         obj1.giftIntentType = giftIntentType;
-        ({ headerTextColor: obj4.headerTextColor, subHeaderTextColor: obj4.subHeaderTextColor, backgroundColor: obj4.backgroundColor, borderColor: obj4.borderColor } = callback(theme));
-        const tmp8 = callback(theme);
-        obj1.subHeaderIconUrl = theme(dependencyMap[8]).getAssetUriForEmbed(importDefault(dependencyMap[9]));
-        const intl3 = theme(dependencyMap[5]).intl;
-        obj1.primaryCtaLabel = intl3.string(theme(dependencyMap[5]).t.ilhtIa);
-        const obj5 = theme(dependencyMap[8]);
-        obj1.primaryCtaIconUrl = theme(dependencyMap[8]).getAssetUriForEmbed(importDefault(dependencyMap[10]));
-        const obj6 = theme(dependencyMap[8]);
-        obj1.secondaryCtaIconUrl = theme(dependencyMap[8]).getAssetUriForEmbed(importDefault(dependencyMap[11]));
-        const intl4 = theme(dependencyMap[5]).intl;
-        obj1.secondaryCtaAccessibilityLabel = intl4.string(theme(dependencyMap[5]).t.I5gL2H);
+        ({ headerTextColor: obj4.headerTextColor, subHeaderTextColor: obj4.subHeaderTextColor, backgroundColor: obj4.backgroundColor, borderColor: obj4.borderColor } = _createForOfIteratorHelperLoose(theme));
+        const tmp8 = _createForOfIteratorHelperLoose(theme);
+        obj1.subHeaderIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(4067));
+        const intl3 = require(1212) /* getSystemLocale */.intl;
+        obj1.primaryCtaLabel = intl3.string(require(1212) /* getSystemLocale */.t.ilhtIa);
+        const obj5 = require(7635) /* frozen */;
+        obj1.primaryCtaIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7759));
+        const obj6 = require(7635) /* frozen */;
+        obj1.secondaryCtaIconUrl = require(7635) /* frozen */.getAssetUriForEmbed(importDefault(7760));
+        const intl4 = require(1212) /* getSystemLocale */.intl;
+        obj1.secondaryCtaAccessibilityLabel = intl4.string(require(1212) /* getSystemLocale */.t.I5gL2H);
         return obj1;
       }
-      const obj9 = importDefault(dependencyMap[7]);
+      const obj9 = importDefault(3969);
     }
   }
 };

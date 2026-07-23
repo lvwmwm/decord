@@ -1,17 +1,18 @@
-// Module ID: 12878
-// Function ID: 98374
+// Module ID: 12992
+// Function ID: 100530
 // Name: isActivityParticipantCurrentUserCurrentSession
-// Dependencies: []
+// Dependencies: [1194, 2]
 // Exports: isActivityParticipantCurrentUserCurrentSession
 
-// Module 12878 (isActivityParticipantCurrentUserCurrentSession)
-let closure_0 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx");
+// Module 12992 (isActivityParticipantCurrentUserCurrentSession)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx");
 
 export const isActivityParticipantCurrentUserCurrentSession = function isActivityParticipantCurrentUserCurrentSession(userId) {
   let obj = arg1;
   if (arg1 === undefined) {
-    obj = closure_0;
+    obj = _isNativeReflectConstruct;
   }
   const id = obj.getId();
   let tmp3 = userId.userId === id;

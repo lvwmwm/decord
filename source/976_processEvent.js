@@ -1,36 +1,38 @@
 // Module ID: 976
-// Function ID: 10489
+// Function ID: 10490
 // Name: processEvent
-// Dependencies: []
+// Dependencies: [27, 977, 794, 991]
 // Exports: deviceContextIntegration
 
 // Module 976 (processEvent)
+import { AppState } from "get ActivityIndicator";
+
 function processEvent(arg0, arg1, arg2) {
-  const require = arg0;
-  const dependencyMap = arg2;
+  let closure_0 = arg0;
+  let closure_1 = arg2;
   return fn(this, undefined, undefined, function*() {
-    const NATIVE = lib(options[1]).NATIVE;
+    const NATIVE = callback(977).NATIVE;
     const tmp = yield NATIVE.fetchNativeDeviceContexts();
     while (true) {
       let tmp3 = tmp;
       if (tmp2) {
         let tmp5 = tmp;
         let user = tmp2.user;
-        let tmp6 = lib;
-        let tmp7 = !lib.user;
+        let tmp6 = outer1_0;
+        let tmp7 = !outer1_0.user;
         let tmp8 = tmp7;
         if (tmp7) {
           tmp8 = user;
         }
         if (tmp8) {
-          let tmp9 = lib;
-          lib.user = user;
+          let tmp9 = outer1_0;
+          outer1_0.user = user;
         }
         let tmp10 = tmp;
         let contexts = tmp2.contexts;
-        let tmp11 = fingerprint2;
+        let tmp11 = outer2_2;
         let str = "unknown";
-        if ("unknown" !== fingerprint2.currentState) {
+        if ("unknown" !== outer2_2.currentState) {
           let tmp12 = contexts;
           let obj = contexts;
           if (!contexts) {
@@ -42,45 +44,45 @@ function processEvent(arg0, arg1, arg2) {
           let _Object = Object;
           let _Object2 = Object;
           obj = {};
-          let tmp15 = fingerprint2;
+          let tmp15 = outer2_2;
           let str2 = "active";
-          obj.in_foreground = "active" === fingerprint2.currentState;
+          obj.in_foreground = "active" === outer2_2.currentState;
           obj.app = Object.assign(Object.assign({}, obj.app), obj);
         }
         let tmp16 = contexts;
         if (contexts) {
-          let tmp17 = lib;
+          let tmp17 = outer1_0;
           let tmp18 = globalThis;
           let _Object3 = Object;
           let _Object4 = Object;
           let tmp19 = contexts;
-          lib.contexts = Object.assign(Object.assign({}, contexts), lib.contexts);
+          outer1_0.contexts = Object.assign(Object.assign({}, contexts), outer1_0.contexts);
           if (contexts.app) {
-            let tmp20 = lib;
+            let tmp20 = outer1_0;
             let _Object5 = Object;
             let _Object6 = Object;
-            lib.contexts.app = Object.assign(Object.assign({}, contexts.app), lib.contexts.app);
+            outer1_0.contexts.app = Object.assign(Object.assign({}, contexts.app), outer1_0.contexts.app);
           }
         }
         let tmp21 = tmp;
         let tags = tmp2.tags;
         if (tags) {
-          let tmp23 = lib;
+          let tmp23 = outer1_0;
           let tmp24 = globalThis;
           let _Object7 = Object;
           let _Object8 = Object;
           let tmp25 = tags;
-          lib.tags = Object.assign(Object.assign({}, tmp22), lib.tags);
+          outer1_0.tags = Object.assign(Object.assign({}, tmp22), outer1_0.tags);
         }
         let tmp26 = tmp;
         let extra = tmp2.extra;
         if (extra) {
-          let tmp28 = lib;
+          let tmp28 = outer1_0;
           let tmp29 = globalThis;
           let _Object9 = Object;
           let _Object10 = Object;
           let tmp30 = extra;
-          lib.extra = Object.assign(Object.assign({}, tmp27), lib.extra);
+          outer1_0.extra = Object.assign(Object.assign({}, tmp27), outer1_0.extra);
         }
         let tmp31 = tmp;
         let fingerprint = tmp2.fingerprint;
@@ -90,35 +92,35 @@ function processEvent(arg0, arg1, arg2) {
           let str3 = "string";
           let result;
           if ("string" === typeof tmp2.level) {
-            let tmp37 = lib;
-            let tmp38 = options;
+            let tmp37 = callback;
+            let tmp38 = dependencyMap;
             let num = 2;
-            let obj3 = lib(options[2]);
+            let obj3 = callback(794);
             let tmp39 = tmp;
             result = obj3.severityLevelFromString(tmp2.level);
           }
           let tmp40 = result;
-          let tmp41 = lib;
-          let tmp42 = !lib.level;
+          let tmp41 = outer1_0;
+          let tmp42 = !outer1_0.level;
           let tmp43 = tmp42;
           if (tmp42) {
             tmp43 = result;
           }
           if (tmp43) {
-            let tmp44 = lib;
-            lib.level = result;
+            let tmp44 = outer1_0;
+            outer1_0.level = result;
           }
           let tmp45 = tmp;
           let environment = tmp2.environment;
-          let tmp46 = lib;
-          let tmp47 = !lib.environment;
+          let tmp46 = outer1_0;
+          let tmp47 = !outer1_0.environment;
           let tmp48 = tmp47;
           if (tmp47) {
             tmp48 = environment;
           }
           if (tmp48) {
-            let tmp49 = lib;
-            lib.environment = environment;
+            let tmp49 = outer1_0;
+            outer1_0.environment = environment;
           }
           let tmp50 = globalThis;
           let _Array = Array;
@@ -126,33 +128,34 @@ function processEvent(arg0, arg1, arg2) {
           let mapped;
           if (Array.isArray(tmp2.breadcrumbs)) {
             let breadcrumbs = tmp.breadcrumbs;
-            let tmp53 = lib;
-            let tmp54 = options;
+            let tmp53 = callback;
+            let tmp54 = dependencyMap;
             let num2 = 3;
-            mapped = breadcrumbs.map(lib(options[3]).breadcrumbFromObject);
+            mapped = breadcrumbs.map(callback(991).breadcrumbFromObject);
           }
           let obj4 = mapped;
           if (mapped) {
-            let tmp55 = options;
+            let tmp55 = outer1_1;
             let maxBreadcrumbs;
-            if (null != options) {
-              let tmp57 = options;
-              maxBreadcrumbs = options.getOptions().maxBreadcrumbs;
+            if (null != outer1_1) {
+              let tmp57 = outer1_1;
+              maxBreadcrumbs = outer1_1.getOptions().maxBreadcrumbs;
             }
+            let outer1_3 = maxBreadcrumbs;
             let num3 = 100;
             let num4 = 100;
             if (null !== maxBreadcrumbs) {
-              let tmp58 = maxBreadcrumbs;
+              let tmp58 = outer1_3;
               num4 = 100;
-              if (undefined !== maxBreadcrumbs) {
-                num4 = maxBreadcrumbs;
+              if (undefined !== outer1_3) {
+                num4 = outer1_3;
               }
             }
             let tmp59 = num4;
             let tmp61 = mapped;
-            breadcrumbs = lib.breadcrumbs;
+            breadcrumbs = outer1_0.breadcrumbs;
             let items = breadcrumbs;
-            let tmp60 = lib;
+            let tmp60 = outer1_0;
             if (!breadcrumbs) {
               items = [];
             }
@@ -178,15 +181,16 @@ function processEvent(arg0, arg1, arg2) {
             });
             tmp60.breadcrumbs = sorted.slice(-num4);
           }
-          let tmp62 = lib;
-          return lib;
+          let tmp62 = outer1_0;
+          return outer1_0;
         } else {
-          let fingerprint2 = lib.fingerprint;
+          let fingerprint2 = outer1_0.fingerprint;
+          let outer1_2 = fingerprint2;
           if (null === fingerprint2) {
             let items1 = [];
             let tmp34 = combined1;
             combined1 = items1.concat(combined1.filter((arg0) => {
-              let fingerprint = fingerprint.fingerprint;
+              let fingerprint = outer2_0.fingerprint;
               if (null === fingerprint) {
                 fingerprint = [];
               }
@@ -194,18 +198,17 @@ function processEvent(arg0, arg1, arg2) {
             }));
             tmp32.fingerprint = combined1;
           } else {
-            let tmp33 = fingerprint2;
+            let tmp33 = outer1_2;
           }
-          items1 = fingerprint2;
+          items1 = outer1_2;
         }
       } else {
-        let tmp4 = lib;
-        return lib;
+        let tmp4 = outer1_0;
+        return outer1_0;
       }
     }
   });
 }
-const AppState = require(dependencyMap[0]).AppState;
 let fn = this;
 if (this) {
   fn = this.__awaiter;
@@ -213,52 +216,54 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    const require = arg0;
-    const dependencyMap = arg1;
-    let AppState = arg2;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_3 = arg3;
     if (!arg2) {
-      AppState = Promise;
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;

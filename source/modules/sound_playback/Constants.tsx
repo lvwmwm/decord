@@ -1,10 +1,9 @@
-// Module ID: 8837
-// Function ID: 69747
+// Module ID: 8844
+// Function ID: 69788
 // Name: SoundOutputChannel
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 8837 (SoundOutputChannel)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/sound_playback/Constants.tsx");
+// Module 8844 (SoundOutputChannel)
+const result = require("set").fileFinishedImporting("modules/sound_playback/Constants.tsx");
 
 export const SoundOutputChannel = { DEFAULT: "default", VOICE: "voice" };

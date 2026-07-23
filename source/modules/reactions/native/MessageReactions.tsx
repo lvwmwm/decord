@@ -1,15 +1,17 @@
-// Module ID: 9420
-// Function ID: 73309
+// Module ID: 9427
+// Function ID: 73350
 // Name: MessageReactions
-// Dependencies: []
+// Dependencies: [31, 4349, 33, 566, 5464, 5484, 9428, 2]
 // Exports: default
 
-// Module 9420 (MessageReactions)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 9427 (MessageReactions)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 let closure_6 = [];
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/reactions/native/MessageReactions.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/reactions/native/MessageReactions.tsx");
 
 export default function MessageReactions(emoji) {
   let channelId;
@@ -20,20 +22,21 @@ export default function MessageReactions(emoji) {
   if (isSelectedBurst === undefined) {
     isSelectedBurst = false;
   }
-  let obj = { onTapShareForumPost: false, onTapReactionOverflow: false, onTapCopyText: false, onTapOpTag: false, onMediaAttachmentPlaybackEnded: false };
+  let obj = { channelId: 0, messageId: 0, emoji: 0, reactions: 0, isSelectedBurst: 0 };
   Object.setPrototypeOf(null);
-  const merged = Object.assign(emoji, obj);
-  let arg1;
-  const tmp4 = function useMessageReactions(channelId, messageId) {
-    let items = channelId;
-    items = [closure_4];
+  let merged = Object.assign(emoji, obj);
+  let items;
+  const tmp4 = (function useMessageReactions(channelId, messageId) {
+    let closure_0 = channelId;
+    let closure_1 = messageId;
+    const items = [outer1_4];
     const items1 = [channelId, messageId];
-    const stateFromStores = items(stateFromStores[3]).useStateFromStores(items, () => {
-      const message = message.getMessage(arg0, arg1);
-      return null != message ? message.reactions : closure_6;
+    const stateFromStores = items(outer1_2[3]).useStateFromStores(items, () => {
+      const message = outer2_4.getMessage(closure_0, closure_1);
+      return null != message ? message.reactions : outer2_6;
     }, items1);
     const items2 = [stateFromStores];
-    return React.useMemo(() => stateFromStores.filter((count_details) => {
+    return outer1_3.useMemo(() => stateFromStores.filter((count_details) => {
       count_details = count_details.count_details;
       let vote;
       if (null != count_details) {
@@ -41,7 +44,7 @@ export default function MessageReactions(emoji) {
       }
       return null == vote;
     }), items2);
-  }(channelId, messageId);
+  })(channelId, messageId);
   let arr = tmp4;
   if (null != reactions) {
     arr = tmp4;
@@ -49,8 +52,7 @@ export default function MessageReactions(emoji) {
       arr = reactions;
     }
   }
-  const items = [];
-  arg1 = items;
+  items = [];
   const item = arr.forEach((burst_count) => {
     if (burst_count.burst_count > 0) {
       if (burst_count.count > 0) {
@@ -68,15 +70,15 @@ export default function MessageReactions(emoji) {
     const merged2 = Object.assign(burst_count);
     items.push(obj);
   });
-  const sorted = items.sort((burst_count, burst_count2) => burst_count2.burst_count > 0 ? burst_count2.burst_count : burst_count2.count - burst_count.burst_count > 0 ? burst_count.burst_count : burst_count.count);
-  obj = { value: importDefault(dependencyMap[4])(importDefault(dependencyMap[5]).MESSAGE_REACTIONS).analyticsLocations };
+  const sorted = items.sort((burst_count, burst_count2) => (burst_count2.burst_count > 0 ? burst_count2.burst_count : burst_count2.count) - (burst_count.burst_count > 0 ? burst_count.burst_count : burst_count.count));
+  obj = { value: importDefault(5464)(importDefault(5484).MESSAGE_REACTIONS).analyticsLocations };
   if (items.length > 0) {
     obj = { channelId, messageId, emoji: emoji.emoji, reactions: items, isSelectedBurst };
-    const merged1 = Object.assign(merged);
-    let tmp11 = jsx(arg1(dependencyMap[6]).MessageReactionsContent, obj);
+    let merged1 = Object.assign(merged);
+    let tmp11 = jsx(items(9428).MessageReactionsContent, { channelId, messageId, emoji: emoji.emoji, reactions: items, isSelectedBurst });
   } else {
-    tmp11 = jsx(arg1(dependencyMap[6]).MessageReactionsEmpty, {});
+    tmp11 = jsx(items(9428).MessageReactionsEmpty, {});
   }
   obj.children = tmp11;
-  return jsx(arg1(dependencyMap[4]).AnalyticsLocationProvider, obj);
+  return jsx(items(5464).AnalyticsLocationProvider, { value: importDefault(5464)(importDefault(5484).MESSAGE_REACTIONS).analyticsLocations });
 };

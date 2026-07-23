@@ -1,43 +1,45 @@
-// Module ID: 10501
-// Function ID: 82031
+// Module ID: 10511
+// Function ID: 82081
 // Name: NativeModules
-// Dependencies: []
+// Dependencies: [27, 477, 10512, 4110, 621, 682, 2]
 
-// Module 10501 (NativeModules)
+// Module 10511 (NativeModules)
+import get_ActivityIndicator from "get ActivityIndicator";
+import set from "set";
+import keys from "keys";
+import set from "enforcing";
+
 let NativeEventEmitter;
 let NativeModules;
-const _module = require(dependencyMap[0]);
-({ NativeEventEmitter, NativeModules } = _module);
-const _module1 = require(dependencyMap[1]);
-if (_module1.isAndroid()) {
-  let DCDDeviceThermalStateManager = importDefault(dependencyMap[2]);
+({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
+if (set.isAndroid()) {
+  let DCDDeviceThermalStateManager = require("enforcing");
 } else {
   DCDDeviceThermalStateManager = NativeModules.DCDDeviceThermalStateManager;
 }
 const nativeEventEmitter = new NativeEventEmitter(DCDDeviceThermalStateManager);
-const _module2 = require(dependencyMap[4]);
-let closure_5 = _module2.create((arg0) => {
-  const require = arg0;
+let closure_5 = keys.create((arg0) => {
+  const _require = arg0;
   function updateThermalState(state) {
-    state(closure_2[5]).batchUpdates(() => arg0((rawThermalState) => {
+    const callback = state;
+    callback(outer1_2[5]).batchUpdates(() => state((rawThermalState) => {
       let tmp = rawThermalState;
-      if (rawThermalState.rawThermalState !== closure_0) {
-        const obj = { rawThermalState: closure_0 };
+      if (rawThermalState.rawThermalState !== outer1_0) {
+        const obj = { rawThermalState: outer1_0 };
         tmp = obj;
       }
       return tmp;
     }));
   }
-  const importDefault = updateThermalState;
-  let obj = require(dependencyMap[1]);
+  let obj = _require(477);
   if (obj.isAndroid()) {
     if (obj2.getSystemVersionMajor() >= 29) {
-      let resolved = Promise.resolve(importDefault(dependencyMap[2]).getThermalState());
-      const obj3 = importDefault(dependencyMap[2]);
+      let resolved = Promise.resolve(updateThermalState(10512).getThermalState());
+      const obj3 = updateThermalState(10512);
     } else {
       resolved = Promise.resolve(undefined);
     }
-    const obj2 = require(dependencyMap[3]);
+    obj2 = _require(4110);
   } else {
     const DCDDeviceThermalStateManager = NativeModules.DCDDeviceThermalStateManager;
     const thermalState = DCDDeviceThermalStateManager.getThermalState();
@@ -49,8 +51,7 @@ let closure_5 = _module2.create((arg0) => {
     return obj;
   }
 });
-const _module3 = require(dependencyMap[6]);
-const result = _module3.fileFinishedImporting("modules/device/ThermalUtils.native.tsx");
+const result = set.fileFinishedImporting("modules/device/ThermalUtils.native.tsx");
 
 export default {
   getRawThermalState() {

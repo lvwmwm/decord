@@ -1,35 +1,41 @@
-// Module ID: 11711
-// Function ID: 90963
+// Module ID: 11721
+// Function ID: 91012
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: []
+// Dependencies: [5, 31, 27, 4344, 33, 4130, 689, 5084, 4675, 11722, 4126, 1212, 4543, 11723, 11715, 2]
 // Exports: default
 
-// Module 11711 (ContactSyncLandingOnboardingRedesign)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, Image: closure_6 } = arg1(dependencyMap[2]));
-const NativePermissionTypes = arg1(dependencyMap[3]).NativePermissionTypes;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = arg1(dependencyMap[4]));
-let obj = arg1(dependencyMap[5]);
-obj = {};
-obj = { backgroundColor: "solid", alignItems: 2, justifyContent: "notify_friends_on_go_live", height: "message" };
-const tmp3 = arg1(dependencyMap[4]);
-obj.marginTop = -importDefault(dependencyMap[6]).space.PX_32 - arg1(dependencyMap[7]).NAV_BAR_HEIGHT;
-obj.content = obj;
-const tmp4 = -importDefault(dependencyMap[6]).space.PX_32;
-obj.headerImage = { marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
-const obj1 = { marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
-obj.title = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
-const obj2 = { marginBottom: importDefault(dependencyMap[6]).space.PX_8 };
-obj.subtitle = { marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
-const obj4 = { hideWhenScrolling: 1744830755, autoCapitalize: 1426063764, paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-obj.buttonContainer = obj4;
-const obj3 = { marginBottom: importDefault(dependencyMap[6]).space.PX_24 };
-obj.trailing = { paddingBottom: importDefault(dependencyMap[6]).space.PX_4, justifyContent: "flex-end", paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-let closure_11 = obj.createStyles(obj);
-const obj5 = { paddingBottom: importDefault(dependencyMap[6]).space.PX_4, justifyContent: "flex-end", paddingHorizontal: importDefault(dependencyMap[6]).space.PX_16 };
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/contact_sync/native/components/ContactSyncLandingOnboardingRedesign.tsx");
+// Module 11721 (ContactSyncLandingOnboardingRedesign)
+import closure_3 from "_createForOfIteratorHelperLoose";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { NativePermissionTypes } from "NativePermissionStatus";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_5;
+let closure_6;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ View: closure_5, Image: closure_6 } = get_ActivityIndicator);
+({ jsx: closure_8, jsxs: closure_9, Fragment: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, justifyContent: "center", alignItems: "center", textAlign: "center", marginTop: -require("_createForOfIteratorHelperLoose").space.PX_32 - require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
+_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
+let obj1 = { height: 135, width: 216, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.headerImage = obj1;
+const tmp4 = -require("_createForOfIteratorHelperLoose").space.PX_32;
+_createForOfIteratorHelperLoose.title = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.subtitle = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+let obj4 = { height: 48, width: "100%", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.buttonContainer = obj4;
+let obj3 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.trailing = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_4, justifyContent: "flex-end", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const obj5 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_4, justifyContent: "flex-end", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncLandingOnboardingRedesign.tsx");
 
 export default function ContactSyncLandingOnboardingRedesign(onNext) {
   let discoverabilityEnabled;
@@ -37,36 +43,35 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   let loading;
   let setDiscoverabilityEnabled;
   onNext = onNext.onNext;
-  const arg1 = onNext;
   ({ loading, error, discoverabilityEnabled, setDiscoverabilityEnabled } = onNext);
-  const tmp2 = callback4();
+  const tmp2 = _createForOfIteratorHelperLoose();
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [onNext];
   let obj = {};
   obj = { style: tmp2.content };
   obj = { resizeMode: "contain", style: tmp2.headerImage };
-  const callback = React.useCallback(callback(tmp), items);
-  obj.source = importDefault(dependencyMap[9]);
+  callback = React.useCallback(callback(tmp), items);
+  obj.source = importDefault(11722);
   const items1 = [callback2(closure_6, obj), , , , ];
   const obj1 = { style: tmp2.title, variant: "heading-xl/bold" };
-  const intl = arg1(dependencyMap[11]).intl;
-  obj1.children = intl.string(arg1(dependencyMap[11]).t./G+nci);
-  items1[1] = callback2(arg1(dependencyMap[10]).Text, obj1);
+  const intl = onNext(1212).intl;
+  obj1.children = intl.string(onNext(1212).t["/G+nci"]);
+  items1[1] = callback2(onNext(4126).Text, obj1);
   const obj2 = { style: tmp2.subtitle, variant: "text-sm/medium" };
-  const intl2 = arg1(dependencyMap[11]).intl;
-  obj2.children = intl2.string(arg1(dependencyMap[11]).t.G8zcHt);
-  items1[2] = callback2(arg1(dependencyMap[10]).Text, obj2);
+  const intl2 = onNext(1212).intl;
+  obj2.children = intl2.string(onNext(1212).t.G8zcHt);
+  items1[2] = callback2(onNext(4126).Text, obj2);
   const obj3 = { style: tmp2.buttonContainer };
-  const obj4 = {};
-  const intl3 = arg1(dependencyMap[11]).intl;
-  obj4.text = intl3.string(arg1(dependencyMap[11]).t.LhlgY9);
+  const obj4 = { variant: "primary", size: "lg" };
+  const intl3 = onNext(1212).intl;
+  obj4.text = intl3.string(onNext(1212).t.LhlgY9);
   obj4.onPress = callback;
   obj4.loading = loading;
-  obj3.children = callback2(arg1(dependencyMap[12]).Button, obj4);
+  obj3.children = callback2(onNext(4543).Button, obj4);
   items1[3] = callback2(closure_5, obj3);
-  items1[4] = callback2(importDefault(dependencyMap[13]), { error });
+  items1[4] = callback2(importDefault(11723), { error });
   obj.children = items1;
-  const items2 = [callback3(closure_5, obj), callback2(closure_5, { style: tmp2.trailing, children: callback2(importDefault(dependencyMap[14]), { discoverabilityEnabled, onValueChanged: setDiscoverabilityEnabled }) })];
+  const items2 = [callback3(closure_5, obj), callback2(closure_5, { style: tmp2.trailing, children: callback2(importDefault(11715), { discoverabilityEnabled, onValueChanged: setDiscoverabilityEnabled }) })];
   obj.children = items2;
   return callback3(closure_10, obj);
 };

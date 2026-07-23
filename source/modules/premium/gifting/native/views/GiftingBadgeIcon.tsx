@@ -1,14 +1,15 @@
-// Module ID: 9679
-// Function ID: 75358
+// Module ID: 9686
+// Function ID: 75399
 // Name: GiftingBadgeIcon
-// Dependencies: []
+// Dependencies: [31, 27, 33, 2]
 // Exports: default
 
-// Module 9679 (GiftingBadgeIcon)
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeIcon.tsx");
+// Module 9686 (GiftingBadgeIcon)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const result = require("jsxProd").fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeIcon.tsx");
 
 export default function GiftingBadgeIcon(size) {
   size = size.size;

@@ -1,52 +1,61 @@
-// Module ID: 16065
-// Function ID: 123388
+// Module ID: 16182
+// Function ID: 125561
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1194, 1348, 566, 686, 9139, 5078, 2]
 
-// Module 16065 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 16182 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import tmp2 from "AutomaticLifecycleManager";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,140 +101,7 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let tmp2 = (arg0) => {
-  class ThreadManager {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = closure_2(this, ThreadManager);
-      items1 = [...items];
-      obj = closure_5(ThreadManager);
-      tmp2 = closure_4;
-      if (closure_11()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = closure_5;
-        constructResult = Reflect.construct(obj, items1, closure_5(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      tmp2Result.actions = { CHANNEL_DELETE: tmp2Result.handleChannelDelete, MESSAGE_CREATE: tmp2Result.handleMessageCreate, GUILD_DELETE: tmp2Result.handleGuildDelete };
-      return tmp2Result;
-    }
-  }
-  const importDefault = ThreadManager;
-  callback2(ThreadManager, arg0);
-  let obj = {
-    key: "handleChannelDelete",
-    value(channel) {
-      channel = channel.channel;
-      let ThreadManager;
-      if (null != channel.guild_id) {
-        const allThreadsForParent = store.getAllThreadsForParent(channel.id);
-        ThreadManager = allThreadsForParent;
-        if (allThreadsForParent.length > 0) {
-          const Emitter = ThreadManager(closure_1[7]).Emitter;
-          Emitter.batched(() => {
-            let done;
-            const tmp = callback(allThreadsForParent);
-            let iter = tmp();
-            if (!iter.done) {
-              do {
-                let tmp2 = closure_0;
-                let tmp3 = closure_1;
-                let obj = closure_0(closure_1[8]);
-                obj = { type: "THREAD_DELETE", channel: iter.value };
-                let dispatchResult = obj.dispatch(obj);
-                let iter2 = tmp();
-                iter = iter2;
-                done = iter2.done;
-              } while (!done);
-            }
-          });
-        }
-      }
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "handleMessageCreate",
-    value(channelId) {
-      const channel = store.getChannel(channelId.channelId);
-      const author = channelId.message.author;
-      let id;
-      if (null != author) {
-        id = author.id;
-      }
-      if (id === id.getId()) {
-        if (null != channel) {
-          if (channel.isActiveThread()) {
-            let _Date = Date;
-            const threadMetadata = channel.threadMetadata;
-            let archiveTimestamp;
-            if (null != threadMetadata) {
-              archiveTimestamp = threadMetadata.archiveTimestamp;
-            }
-            let num = 0;
-            if (null != archiveTimestamp) {
-              num = archiveTimestamp;
-            }
-            const prototype = _Date.prototype;
-            _Date = new _Date(num);
-            const _Date2 = Date;
-            const time = _Date.getTime();
-            if (Date.now() - time < 5000) {
-              ThreadManager(closure_1[9]).resort(channel.parent_id);
-              const obj3 = ThreadManager(closure_1[9]);
-            }
-          }
-        }
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "handleGuildDelete",
-    value(guild) {
-      guild = guild.guild;
-      let ThreadManager;
-      if (!guild.unavailable) {
-        const allThreadsForGuild = store.getAllThreadsForGuild(guild.id);
-        ThreadManager = allThreadsForGuild;
-        if (0 !== allThreadsForGuild.length) {
-          const Emitter = ThreadManager(closure_1[7]).Emitter;
-          Emitter.batched(() => {
-            let done;
-            const tmp = callback(allThreadsForGuild);
-            let iter = tmp();
-            if (!iter.done) {
-              do {
-                let tmp2 = closure_0;
-                let tmp3 = closure_1;
-                let obj = closure_0(closure_1[8]);
-                obj = { type: "THREAD_DELETE", channel: iter.value };
-                let dispatchResult = obj.dispatch(obj);
-                let iter2 = tmp();
-                iter = iter2;
-                done = iter2.done;
-              } while (!done);
-            }
-          });
-        }
-      }
-    }
-  };
-  items[2] = obj;
-  return callback(ThreadManager, items);
-}(importDefault(dependencyMap[10]));
 tmp2 = new tmp2();
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/threads/ThreadManager.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/threads/ThreadManager.tsx");
 
 export default tmp2;

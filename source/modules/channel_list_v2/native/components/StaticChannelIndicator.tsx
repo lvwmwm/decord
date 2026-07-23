@@ -1,27 +1,27 @@
-// Module ID: 10291
-// Function ID: 79461
+// Module ID: 10304
+// Function ID: 79534
 // Name: ChannelIndicator
-// Dependencies: []
+// Dependencies: [27, 4326, 33, 4130, 689, 3834, 2]
 // Exports: default
 
-// Module 10291 (ChannelIndicator)
-const _module = require(dependencyMap[0]);
-const View = _module.View;
-const UnreadSetting = require(dependencyMap[1]).UnreadSetting;
-const jsx = require(dependencyMap[2]).jsx;
-const _module1 = require(dependencyMap[3]);
+// Module 10304 (ChannelIndicator)
+import get_ActivityIndicator from "get ActivityIndicator";
+import { UnreadSetting } from "ReadStateTypes";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const View = get_ActivityIndicator.View;
 let obj = {};
 obj = {};
-const merged = Object.assign(_module.StyleSheet.absoluteFillObject);
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
 obj["top"] = 0;
 obj["bottom"] = 0;
 obj["justifyContent"] = "center";
 obj.indicatorContainer = obj;
-const obj1 = { with_sku: true, with_application: true, NBSP: true, isEndStream: true, borderRadius: importDefault(dependencyMap[4]).radii.round };
+const obj1 = { width: 8, height: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, marginLeft: -4 };
 obj.indicator = obj1;
-let closure_6 = _module1.createStyles(obj);
-const _module2 = require(dependencyMap[6]);
-const result = _module2.fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
 
 export default function ChannelIndicator(arg0) {
   let resolvedUnreadSetting;
@@ -29,11 +29,11 @@ export default function ChannelIndicator(arg0) {
   let unread;
   ({ unread, resolvedUnreadSetting, style } = arg0);
   const tmp = callback();
-  require(dependencyMap[5]);
+  require(3834) /* map */;
   if (resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
-    let CHANNELS_DEFAULT = importDefault(dependencyMap[4]).colors.INTERACTIVE_TEXT_ACTIVE;
+    let CHANNELS_DEFAULT = importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE;
   } else {
-    CHANNELS_DEFAULT = importDefault(dependencyMap[4]).colors.CHANNELS_DEFAULT;
+    CHANNELS_DEFAULT = importDefault(689).colors.CHANNELS_DEFAULT;
   }
   let tmp8 = null;
   if (unread) {
@@ -44,8 +44,8 @@ export default function ChannelIndicator(arg0) {
     items[1] = obj;
     items[2] = style;
     obj.style = items;
-    obj.children = <View {...obj} />;
-    tmp8 = <View {...obj} />;
+    obj.children = <View backgroundColor={tmp7} />;
+    tmp8 = <View backgroundColor={tmp7} />;
   }
   return tmp8;
 };

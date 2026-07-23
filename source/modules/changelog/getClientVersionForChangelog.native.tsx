@@ -1,14 +1,12 @@
-// Module ID: 15884
-// Function ID: 121623
+// Module ID: 16001
+// Function ID: 123796
 // Name: getClientVersionForChangelog
-// Dependencies: [10126, 10097]
+// Dependencies: [16002, 2]
 // Exports: getClientVersionForChangelog
 
-// Module 15884 (getClientVersionForChangelog)
-import InappropriateConversationExperiment from "InappropriateConversationExperiment";
-
-const result = InappropriateConversationExperiment.fileFinishedImporting("modules/changelog/getClientVersionForChangelog.native.tsx");
+// Module 16001 (getClientVersionForChangelog)
+const result = require("set").fileFinishedImporting("modules/changelog/getClientVersionForChangelog.native.tsx");
 
 export const getClientVersionForChangelog = function getClientVersionForChangelog() {
-  return require(dependencyMap[0]).getAppMajorVersion();
+  return require(16002) /* getAppMajorVersion */.getAppMajorVersion();
 };

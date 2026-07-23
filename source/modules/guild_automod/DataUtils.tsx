@@ -1,48 +1,47 @@
-// Module ID: 11003
-// Function ID: 85631
+// Module ID: 11013
+// Function ID: 85681
 // Name: _transformMetadataToCamelCase
-// Dependencies: []
+// Dependencies: [22, 2]
 
-// Module 11003 (_transformMetadataToCamelCase)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_automod/DataUtils.tsx");
+// Module 11013 (_transformMetadataToCamelCase)
+const result = require("set").fileFinishedImporting("modules/guild_automod/DataUtils.tsx");
 function _transformMetadataToCamelCase(body) {
-  const require = body;
+  let closure_0 = body;
   let reduced = body;
   if (null != body) {
     const _Object = Object;
     const keys = Object.keys(body);
     reduced = keys.reduce((arg0, arg1) => {
-      const camelCaseResult = arg0(closure_1[0]).camelCase(arg1);
-      if ("object" === typeof arg0[arg1]) {
+      const camelCaseResult = body(outer1_1[0]).camelCase(arg1);
+      if ("object" === typeof body[arg1]) {
         const _Array = Array;
-        if (!Array.isArray(arg0[arg1])) {
-          arg0[camelCaseResult] = callback(arg0[arg1]);
+        if (!Array.isArray(body[arg1])) {
+          arg0[camelCaseResult] = outer1_2(body[arg1]);
         }
         return arg0;
       }
-      arg0[camelCaseResult] = arg0[arg1];
+      arg0[camelCaseResult] = body[arg1];
     }, {});
   }
   return reduced;
 }
 function _transformMetadataToSnakeCase(metadata) {
-  const require = metadata;
+  let closure_0 = metadata;
   let reduced = metadata;
   if (null != metadata) {
     const _Object = Object;
     const keys = Object.keys(metadata);
     reduced = keys.reduce((arg0, arg1) => {
-      const snakeCaseResult = arg0(closure_1[0]).snakeCase(arg1);
-      if ("object" === typeof arg0[arg1]) {
+      const snakeCaseResult = metadata(outer1_1[0]).snakeCase(arg1);
+      if ("object" === typeof metadata[arg1]) {
         const _Array = Array;
-        if (!Array.isArray(arg0[arg1])) {
-          arg0[snakeCaseResult] = callback(arg0[arg1]);
+        if (!Array.isArray(metadata[arg1])) {
+          arg0[snakeCaseResult] = outer1_3(metadata[arg1]);
         }
-        arg0[snakeCaseResult] = arg0[arg1];
+        arg0[snakeCaseResult] = metadata[arg1];
         return arg0;
       }
-      arg0[snakeCaseResult] = arg0[arg1];
+      arg0[snakeCaseResult] = metadata[arg1];
     }, {});
   }
   return reduced;

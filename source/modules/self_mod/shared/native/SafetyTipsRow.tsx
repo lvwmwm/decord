@@ -1,19 +1,21 @@
-// Module ID: 7556
-// Function ID: 60481
+// Module ID: 7562
+// Function ID: 60518
 // Name: SafetyTipsRow
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 5165, 4126, 2]
 // Exports: default
 
-// Module 7556 (SafetyTipsRow)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.round, marginRight: importDefault(dependencyMap[4]).space.PX_4 };
-obj.indexContainer = obj;
-let closure_4 = obj.createStyles(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/self_mod/shared/native/SafetyTipsRow.tsx");
+// Module 7562 (SafetyTipsRow)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { width: 32, height: 32, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center", marginRight: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.indexContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/self_mod/shared/native/SafetyTipsRow.tsx");
 
 export default function SafetyTipsRow(arg0) {
   let description;
@@ -21,16 +23,25 @@ export default function SafetyTipsRow(arg0) {
   let index;
   let tip;
   ({ index, tip, description, end } = arg0);
-  const callback = callback2();
-  const obj = {
+  const _require = _createForOfIteratorHelperLoose();
+  let obj = {
     icon: jsx((index) => {
-      let obj = { style: lib.indexContainer, children: callback(lib(closure_1[6]).Text, obj) };
-      obj = { cachedAt: -2873302907402948600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, edpbxy: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000518728505105, children: index.index };
-      return callback(closure_2, obj);
+      obj = { style: lib.indexContainer, children: outer1_3(lib(outer1_1[6]).Text, obj) };
+      obj = { variant: "heading-md/semibold", color: "text-brand", children: index.index };
+      return outer1_3(outer1_2, obj);
     }, { index }),
     label: tip,
     subLabel: description,
     end
   };
-  return jsx(callback(dependencyMap[5]).TableRow, obj);
+  return jsx(_require(5165).TableRow, {
+    icon: jsx((index) => {
+      obj = { style: lib.indexContainer, children: outer1_3(lib(outer1_1[6]).Text, obj) };
+      obj = { variant: "heading-md/semibold", color: "text-brand", children: index.index };
+      return outer1_3(outer1_2, obj);
+    }, { index }),
+    label: tip,
+    subLabel: description,
+    end
+  });
 };

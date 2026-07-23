@@ -1,17 +1,18 @@
 // Module ID: 78
 // Function ID: 1475
 // Name: processTransformOrigin
-// Dependencies: []
+// Dependencies: [57, 44]
 // Exports: default
 
 // Module 78 (processTransformOrigin)
-importDefault(dependencyMap[0]);
+import "_slicedToArray";
+
 
 export default function processTransformOrigin(arg0) {
   let tmp = arg0;
   if ("string" === typeof arg0) {
     const obj = /(top|bottom|left|right|center|\d+(?:%|px)|0)/gi;
-    const items = [];
+    const items = ["50%", "50%", 0];
     let match = obj.exec(arg0);
     let num4 = 0;
     tmp = items;
@@ -27,7 +28,7 @@ export default function processTransformOrigin(arg0) {
                 if ("center" === formatted) {
                   let tmp5 = importDefault;
                   let tmp6 = dependencyMap;
-                  let tmp7 = importDefault(dependencyMap[1])(2 !== num4, "Transform-origin value %s cannot be used for z-position", str);
+                  let tmp7 = importDefault(44)(2 !== num4, "Transform-origin value %s cannot be used for z-position", str);
                   items[num4] = "50%";
                   let num = sum;
                   let tmp4 = tmp18;
@@ -45,7 +46,7 @@ export default function processTransformOrigin(arg0) {
             }
             let tmp8 = importDefault;
             let tmp9 = dependencyMap;
-            let tmp10 = importDefault(dependencyMap[1])(2 !== num4, "Transform-origin %s can only be used for y-position", str);
+            let tmp10 = importDefault(44)(2 !== num4, "Transform-origin %s can only be used for y-position", str);
             let num2 = "100%";
             if ("top" === formatted) {
               num2 = 0;
@@ -76,7 +77,7 @@ export default function processTransformOrigin(arg0) {
                 } else {
                   let tmp11 = importDefault;
                   let tmp12 = dependencyMap;
-                  let tmp13 = importDefault(dependencyMap[1])(false, "Could not parse transform-origin: %s", arg0);
+                  let tmp13 = importDefault(44)(false, "Could not parse transform-origin: %s", arg0);
                   num = 2;
                   tmp4 = match1;
                 }
@@ -86,7 +87,7 @@ export default function processTransformOrigin(arg0) {
           }
           match = obj.exec(arg0);
           num4 = num;
-          let tmp18 = tmp4;
+          tmp18 = tmp4;
           tmp = items;
           if (!match) {
             break;
@@ -94,7 +95,7 @@ export default function processTransformOrigin(arg0) {
         }
         let tmp14 = importDefault;
         let tmp15 = dependencyMap;
-        let tmp16 = importDefault(dependencyMap[1])(0 === num4, "Transform-origin %s can only be used for x-position", str);
+        let tmp16 = importDefault(44)(0 === num4, "Transform-origin %s can only be used for x-position", str);
         let num3 = "100%";
         if ("left" === formatted) {
           num3 = 0;

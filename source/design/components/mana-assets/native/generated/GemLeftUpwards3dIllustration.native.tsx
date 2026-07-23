@@ -1,12 +1,13 @@
-// Module ID: 6163
-// Function ID: 50177
+// Module ID: 6168
+// Function ID: 50206
 // Name: GemLeftUpwards3dIllustration
-// Dependencies: [4294967295, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 6169, 2]
 // Exports: GemLeftUpwards3dIllustration
 
-// Module 6163 (GemLeftUpwards3dIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/GemLeftUpwards3dIllustration.native.tsx");
+// Module 6168 (GemLeftUpwards3dIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemLeftUpwards3dIllustration.native.tsx");
 
 export const GemLeftUpwards3dIllustration = function GemLeftUpwards3dIllustration(width) {
   let accessibilityLabel;
@@ -26,7 +27,7 @@ export const GemLeftUpwards3dIllustration = function GemLeftUpwards3dIllustratio
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6169) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -34,5 +35,5 @@ export const GemLeftUpwards3dIllustration = function GemLeftUpwards3dIllustratio
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

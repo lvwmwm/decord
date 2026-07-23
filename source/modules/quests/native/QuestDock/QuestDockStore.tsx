@@ -1,9 +1,17 @@
-// Module ID: 13878
-// Function ID: 104988
+// Module ID: 13992
+// Function ID: 107144
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4976, 13993, 566, 686, 2]
 
-// Module 13878 (_isNativeReflectConstruct)
+// Module 13992 (_isNativeReflectConstruct)
+import roundToNearestPixel from "roundToNearestPixel";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { QuestDockMode } from "QuestsExperimentLocations";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,28 +21,22 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-let closure_8 = importDefault(dependencyMap[4]);
-const QuestDockMode = arg1(dependencyMap[5]).QuestDockMode;
-const COLLAPSED = QuestDockMode.COLLAPSED;
-let closure_3 = null;
-let closure_10 = false;
-let tmp2 = (PersistedStore) => {
+let COLLAPSED = QuestDockMode.COLLAPSED;
+let c3 = null;
+let c10 = false;
+let tmp2 = ((PersistedStore) => {
   class QuestDockStore {
     constructor() {
       self = this;
-      tmp = closure_4(this, QuestDockStore);
-      obj = closure_7(QuestDockStore);
-      tmp2 = closure_6;
-      if (closure_11()) {
+      tmp = outer1_4(this, QuestDockStore);
+      obj = outer1_7(QuestDockStore);
+      tmp2 = outer1_6;
+      if (outer1_11()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_7;
+        tmp7 = outer1_7;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_7(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -43,15 +45,14 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = QuestDockStore;
   callback2(QuestDockStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(questDockSoftDismissedAt) {
       if (null != questDockSoftDismissedAt) {
-        questDockSoftDismissedAt = questDockSoftDismissedAt.questDockSoftDismissedAt;
-        let closure_2 = QuestDockStore(closure_1[6]).isSoftDismissed(questDockSoftDismissedAt) ? tmp4.SOFT_DISMISSED : tmp4.COLLAPSED;
-        const obj = QuestDockStore(closure_1[6]);
+        const outer1_3 = questDockSoftDismissedAt.questDockSoftDismissedAt;
+        const outer1_2 = QuestDockStore(outer1_1[6]).isSoftDismissed(outer1_3) ? tmp4.SOFT_DISMISSED : tmp4.COLLAPSED;
+        const obj = QuestDockStore(outer1_1[6]);
       }
     }
   };
@@ -59,54 +60,53 @@ let tmp2 = (PersistedStore) => {
   obj = {
     key: "getState",
     value() {
-      return { prevRestingQuestDockMode: closure_2, questDockSoftDismissedAt: closure_3 };
+      return { prevRestingQuestDockMode: outer1_2, questDockSoftDismissedAt: outer1_3 };
     }
   };
   items[1] = obj;
   obj = {
     key: "prevRestingQuestDockMode",
     get() {
-      return closure_2;
+      return outer1_2;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "questDockSoftDismissedAt",
     get() {
-      return closure_3;
+      return outer1_3;
     }
   };
   items[4] = {
     key: "isEligibleToBeVisible",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   return callback(QuestDockStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "QuestDockStore";
 tmp2.persistKey = "QuestDockStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   QUESTS_PREV_RESTING_QUEST_DOCK_MODE_UPDATE: function handlePrevRestingQuestDockModeUpdate(mode) {
-    const COLLAPSED = mode.mode;
-    if (mode.mode !== COLLAPSED) {
+    mode = mode.mode;
+    if (mode.mode !== mode) {
       let timestamp = null;
       if (mode.mode === QuestDockMode.SOFT_DISMISSED) {
         const _Date = Date;
         timestamp = Date.now();
       }
-      let closure_3 = timestamp;
     }
-    return mode.mode !== COLLAPSED;
+    return mode.mode !== mode;
   },
   QUESTS_DOCK_RESET_SOFT_DISMISSAL: function handleResetSoftDismissal() {
     const COLLAPSED = QuestDockMode.COLLAPSED;
-    let closure_3 = null;
+    let c3 = null;
   },
   QUESTS_DOCK_VISIBILITY_ELIGIBILITY_UPDATE: function handleQuestDockEligibilityUpdate(isEligibleToBeVisible) {
-    let closure_10 = isEligibleToBeVisible.isEligibleToBeVisible;
+    isEligibleToBeVisible = isEligibleToBeVisible.isEligibleToBeVisible;
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/quests/native/QuestDock/QuestDockStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockStore.tsx");
 
 export default tmp2;

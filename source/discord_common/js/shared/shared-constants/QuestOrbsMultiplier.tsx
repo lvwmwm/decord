@@ -1,10 +1,9 @@
-// Module ID: 10457
-// Function ID: 80949
+// Module ID: 10467
+// Function ID: 80999
 // Name: QuestOrbsMultiplier
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 10457 (QuestOrbsMultiplier)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestOrbsMultiplier.tsx");
+// Module 10467 (QuestOrbsMultiplier)
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestOrbsMultiplier.tsx");
 
 export const QuestOrbsMultiplier = { PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS: 120, [120]: "PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS" };

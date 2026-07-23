@@ -1,21 +1,21 @@
-// Module ID: 11861
-// Function ID: 91862
+// Module ID: 11873
+// Function ID: 91915
 // Name: _fetchDetectableGames
-// Dependencies: [0, 0, 0, 0, 0]
+// Dependencies: [5, 4162, 11874, 507, 2]
 // Exports: fetchDetectableGames
 
-// Module 11861 (_fetchDetectableGames)
-import __exportStarResult1 from "__exportStarResult1";
-import { gameFromServer } from "__exportStarResult1";
-import { DETECTABLE_GAMES_CDN_URL } from "__exportStarResult1";
+// Module 11873 (_fetchDetectableGames)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import { gameFromServer } from "_isNativeReflectConstruct";
+import { DETECTABLE_GAMES_CDN_URL } from "detectableCDNUrl";
 
+const require = arg1;
 function _fetchDetectableGames() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchDetectableGames = obj;
   return obj(...arguments);
 }
-const result = require("__exportStarResult1").fileFinishedImporting("modules/game_profile/native/GameDetectionReportActionCreators.tsx");
+const result = require("detectableCDNUrl").fileFinishedImporting("modules/game_profile/native/GameDetectionReportActionCreators.tsx");
 
 export const fetchDetectableGames = function fetchDetectableGames() {
   return _fetchDetectableGames(...arguments);

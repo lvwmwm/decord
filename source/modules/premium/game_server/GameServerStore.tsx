@@ -1,9 +1,15 @@
-// Module ID: 4036
-// Function ID: 33598
+// Module ID: 4038
+// Function ID: 33607
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 4039, 4040, 566, 686, 2]
 
-// Module 4036 (_isNativeReflectConstruct)
+// Module 4038 (_isNativeReflectConstruct)
+import gameServerResponseToInstance from "gameServerResponseToInstance";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,16 +20,16 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getStateForGuild(arg0) {
-  if (null == closure_7[arg0]) {
+  if (null == dependencyMap[arg0]) {
     const obj = { catalog: {}, instances: {}, instructions: {}, entitlements: {} };
-    closure_7[arg0] = obj;
+    dependencyMap[arg0] = obj;
   }
-  return closure_7[arg0];
+  return dependencyMap[arg0];
 }
 function recalculateAppliedBoosts(arg0, entitlements) {
   const values = Object.values(entitlements);
   return values.reduce((arg0, arg1) => {
-    const tmp = callback(closure_1[5])(arg1);
+    const tmp = outer1_0(outer1_1[5])(arg1);
     let num = 0;
     if (null != tmp) {
       num = tmp;
@@ -37,45 +43,38 @@ function handleGameServerInstanceCreated(arg0) {
   ({ guildId, gameServer } = arg0);
   const tmp = getStateForGuild(guildId);
   let obj = {};
-  const merged = Object.assign(closure_7);
+  const merged = Object.assign(obj);
   obj = {};
   const merged1 = Object.assign(tmp);
   obj = {};
   const merged2 = Object.assign(tmp.instances);
-  obj[gameServer.id] = importDefault(dependencyMap[6])(gameServer);
+  obj[gameServer.id] = importDefault(4040)(gameServer);
   obj["instances"] = obj;
   obj[guildId] = obj;
-  closure_7 = obj;
 }
 function handleGameServerEntitlementsChanged(guildId, entitlements) {
   let obj = {};
-  const merged = Object.assign(closure_7);
+  const merged = Object.assign(obj);
   obj = {};
   const merged1 = Object.assign(entitlements);
   obj["appliedBoosts"] = recalculateAppliedBoosts(undefined, entitlements.entitlements);
   obj[guildId] = obj;
-  closure_7 = obj;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
 let closure_7 = {};
 let closure_8 = { catalog: {}, hasFetchedCatalog: false, catalogLastFetchedAt: undefined };
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class GameServerStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, GameServerStore);
-      obj = closure_5(GameServerStore);
-      tmp2 = closure_4;
-      if (closure_9()) {
+      tmp = outer1_2(this, GameServerStore);
+      obj = outer1_5(GameServerStore);
+      tmp2 = outer1_4;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -84,19 +83,20 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = GameServerStore;
   callback2(GameServerStore, PersistedStore);
   let obj = {
     key: "initialize",
     value(arg0) {
-
+      if (null != arg0) {
+        const outer1_7 = arg0;
+      }
     }
   };
-  const items = [obj, , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   items[1] = obj;
@@ -105,7 +105,7 @@ let tmp2 = (PersistedStore) => {
     value(arg0) {
       let tmp;
       if (null != arg0) {
-        tmp = closure_7[arg0];
+        tmp = outer1_7[arg0];
       }
       return tmp;
     }
@@ -114,15 +114,15 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getGlobalCatalogState",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[4] = {
     key: "getGlobalCatalogGame",
     value(arg0) {
-      const GameServerStore = arg0;
-      const values = Object.values(closure_8.catalog);
-      return values.find((gameId) => gameId.gameId === gameId);
+      let closure_0 = arg0;
+      const values = Object.values(outer1_8.catalog);
+      return values.find((gameId) => gameId.gameId === closure_0);
     }
   };
   items[5] = {
@@ -132,7 +132,7 @@ let tmp2 = (PersistedStore) => {
         return null;
       } else {
         let catalog;
-        if (null != closure_7[arg0]) {
+        if (null != outer1_7[arg0]) {
           catalog = tmp2.catalog;
         }
         if (null == catalog) {
@@ -157,7 +157,7 @@ let tmp2 = (PersistedStore) => {
       let tmp = null != arg0;
       if (tmp) {
         let hasFetchedCatalog;
-        if (null != closure_7[arg0]) {
+        if (null != outer1_7[arg0]) {
           hasFetchedCatalog = tmp3.hasFetchedCatalog;
         }
         tmp = true === hasFetchedCatalog;
@@ -171,7 +171,7 @@ let tmp2 = (PersistedStore) => {
       let tmp = null != arg0;
       if (tmp) {
         let hasFetchedInstances;
-        if (null != closure_7[arg0]) {
+        if (null != outer1_7[arg0]) {
           hasFetchedInstances = tmp3.hasFetchedInstances;
         }
         tmp = true === hasFetchedInstances;
@@ -183,7 +183,7 @@ let tmp2 = (PersistedStore) => {
     key: "shouldFetchCatalogForGuild",
     value(arg0) {
       let catalogLastFetchedAt;
-      if (null != closure_7[arg0]) {
+      if (null != outer1_7[arg0]) {
         catalogLastFetchedAt = tmp.catalogLastFetchedAt;
       }
       let tmp3 = null == catalogLastFetchedAt;
@@ -199,7 +199,7 @@ let tmp2 = (PersistedStore) => {
     key: "shouldFetchInstancesForGuild",
     value(arg0) {
       let prop;
-      if (null != closure_7[arg0]) {
+      if (null != outer1_7[arg0]) {
         prop = tmp.instancesLastFetchedAt;
       }
       let tmp3 = null == prop;
@@ -214,7 +214,7 @@ let tmp2 = (PersistedStore) => {
   items[10] = {
     key: "shouldFetchGlobalCatalog",
     value() {
-      const catalogLastFetchedAt = closure_8.catalogLastFetchedAt;
+      const catalogLastFetchedAt = outer1_8.catalogLastFetchedAt;
       let tmp = null == catalogLastFetchedAt;
       if (!tmp) {
         const _Date = Date;
@@ -225,10 +225,10 @@ let tmp2 = (PersistedStore) => {
     }
   };
   return callback(GameServerStore, items);
-}(importDefault(dependencyMap[7]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "GameServerStore";
 tmp2.persistKey = "GameServerStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   LOGOUT: function handleReset() {
     let closure_7 = {};
     let closure_8 = { catalog: {}, hasFetchedCatalog: false, catalogLastFetchedAt: undefined };
@@ -236,29 +236,27 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
   GAME_SERVER_FETCH_CATALOG_SUCCESS: function handleFetchCatalogSuccess(guildId) {
     guildId = guildId.guildId;
     let obj = {};
-    const merged = Object.assign(closure_7);
+    const merged = Object.assign(obj);
     obj = {};
     const merged1 = Object.assign(getStateForGuild(guildId));
     obj["catalog"] = guildId.catalog;
     obj["hasFetchedCatalog"] = true;
     obj["catalogLastFetchedAt"] = Date.now();
     obj[guildId] = obj;
-    closure_7 = obj;
   },
   GAME_SERVER_FETCH_GLOBAL_CATALOG_SUCCESS: function handleFetchGlobalCatalogSuccess(catalog) {
-    let closure_8 = { catalog: catalog.catalog, hasFetchedCatalog: true, catalogLastFetchedAt: Date.now() };
+    const obj = { catalog: catalog.catalog, hasFetchedCatalog: true, catalogLastFetchedAt: Date.now() };
   },
   GAME_SERVER_FETCH_INSTANCES_SUCCESS: function handleFetchInstancesSuccess(guildId) {
     guildId = guildId.guildId;
     let obj = {};
-    const merged = Object.assign(closure_7);
+    const merged = Object.assign(obj);
     obj = {};
     const merged1 = Object.assign(getStateForGuild(guildId));
     obj["instances"] = guildId.instances;
     obj["hasFetchedInstances"] = true;
     obj["instancesLastFetchedAt"] = Date.now();
     obj[guildId] = obj;
-    closure_7 = obj;
   },
   GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS: function handleFetchProductSuccess(guildId) {
     let instructions;
@@ -266,7 +264,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     guildId = guildId.guildId;
     let obj = {};
     ({ skuId, instructions } = guildId);
-    const merged = Object.assign(closure_7);
+    const merged = Object.assign(obj);
     obj = {};
     const merged1 = Object.assign(getStateForGuild(guildId));
     obj = {};
@@ -274,7 +272,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     obj[skuId] = instructions;
     obj["instructions"] = obj;
     obj[guildId] = obj;
-    closure_7 = obj;
   },
   GAME_SERVER_UPDATE_INSTANCE_SUCCESS: function handleUpdateInstanceSuccess(arg0) {
     let guildId;
@@ -282,7 +279,7 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     ({ guildId, instance } = arg0);
     const tmp = getStateForGuild(guildId);
     let obj = {};
-    const merged = Object.assign(closure_7);
+    const merged = Object.assign(obj);
     obj = {};
     const merged1 = Object.assign(tmp);
     obj = {};
@@ -290,20 +287,18 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     obj[instance.id] = instance;
     obj["instances"] = obj;
     obj[guildId] = obj;
-    closure_7 = obj;
   },
   GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: function handleFetchBoostEntitlementsSuccess(arg0) {
     let guildId;
     let unlockedGameServers;
     ({ guildId, unlockedGameServers } = arg0);
     let obj = {};
-    const merged = Object.assign(closure_7);
+    const merged = Object.assign(obj);
     obj = {};
     const merged1 = Object.assign(getStateForGuild(guildId));
     obj["entitlements"] = unlockedGameServers;
     obj["appliedBoosts"] = recalculateAppliedBoosts(undefined, unlockedGameServers);
     obj[guildId] = obj;
-    closure_7 = obj;
   },
   GAME_SERVER_CREATE: handleGameServerInstanceCreated,
   GAME_SERVER_UPDATE: handleGameServerInstanceCreated,
@@ -311,13 +306,12 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     let gameServerId;
     let guildId;
     ({ guildId, gameServerId } = arg0);
-    delete r1[r3];
+    delete tmp[tmp2];
     let obj = {};
-    const merged = Object.assign(closure_7);
+    const merged = Object.assign(obj);
     obj = {};
     const merged1 = Object.assign(getStateForGuild(guildId));
     obj[guildId] = obj;
-    closure_7 = obj;
   },
   GUILD_POWERUP_ENTITLEMENTS_CREATE: function handleGameServerEntitlementCreated(arg0) {
     let entitlements;
@@ -351,11 +345,11 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     const tmp = getStateForGuild(guildId);
     const importDefault = tmp;
     const item = entitlements.forEach((arg0) => {
-      delete r1[r0];
+      delete tmp2[tmp];
     });
     handleGameServerEntitlementsChanged(guildId, tmp);
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/premium/game_server/GameServerStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/premium/game_server/GameServerStore.tsx");
 
 export default tmp2;

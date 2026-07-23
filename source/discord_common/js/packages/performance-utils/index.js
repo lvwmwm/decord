@@ -1,9 +1,10 @@
 // Module ID: 629
 // Function ID: 7247
-// Dependencies: []
+// Dependencies: [630, 2]
 
 // Module 629
-const _module = require(dependencyMap[0]);
+import u from "u";
+
 if (null == Date.now) {
   const _Date = Date;
   Date.now = () => new Date().valueOf();
@@ -41,7 +42,7 @@ while (true) {
         let tmp16 = nowResult;
         obj.navigationStart = tmp8;
         global.performance.timing = obj;
-        // break
+        break;
       }
       while (true) {
         let tmp17 = global;
@@ -51,11 +52,11 @@ while (true) {
           let tmp18 = global;
           let tmp19 = tmp9;
           global.performance.timeOrigin = tmp12;
-          // break
+          break;
         }
         let tmp20 = dependencyMap;
         let num = 1;
-        let _module1 = require(dependencyMap[1]);
+        let _module1 = require("set");
         let str = "../discord_common/js/packages/performance-utils/index.js";
         let result = _module1.fileFinishedImporting("../discord_common/js/packages/performance-utils/index.js");
         exports.navigationStart = nowResult;

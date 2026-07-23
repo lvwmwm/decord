@@ -1,31 +1,33 @@
-// Module ID: 13797
-// Function ID: 104324
+// Module ID: 13911
+// Function ID: 106480
 // Name: useBountySwipeUpNux
-// Dependencies: []
+// Dependencies: [57, 10840, 13912, 1334, 5802, 2]
 // Exports: useBountySwipeUpNux
 
-// Module 13797 (useBountySwipeUpNux)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/quests/native/BountiesModal/useBountySwipeUpNux.tsx");
+// Module 13911 (useBountySwipeUpNux)
+import _slicedToArray from "_slicedToArray";
+
+const require = arg1;
+const result = require("FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY").fileFinishedImporting("modules/quests/native/BountiesModal/useBountySwipeUpNux.tsx");
 
 export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
   let isEligible = location.isEligible;
-  const BountiesVerticalScrollExperiment = arg1(dependencyMap[1]).BountiesVerticalScrollExperiment;
+  const BountiesVerticalScrollExperiment = require(10840) /* shouldUseScrollIndicatorOverlay */.BountiesVerticalScrollExperiment;
   const tmp = "none" === BountiesVerticalScrollExperiment.useConfig({ location: location.location }).scrollAffordanceVariant;
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(13912) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
   const first = callback(obj.useForceBountiesSwipeUpNux(), 1)[0];
   if (isEligible) {
     if (tmp) {
-      const items = [arg1(dependencyMap[3]).DismissibleContent.BOUNTIES_SWIPE_UP_NUX];
+      const items = [require(1334) /* DismissibleContent */.DismissibleContent.BOUNTIES_SWIPE_UP_NUX];
     }
     let prop = null;
     if (isEligible) {
       prop = null;
       if (!tmp) {
-        prop = arg1(dependencyMap[3]).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+        prop = require(1334) /* DismissibleContent */.DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
       }
     }
-    const obj2 = arg1(dependencyMap[4]);
+    const obj2 = require(5802) /* useSelectedDismissibleContent */;
     if (first) {
       let tmp17 = isEligible;
       if (isEligible) {
@@ -33,11 +35,11 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
       }
       let tmp16 = tmp17;
     } else {
-      tmp16 = tmp13 === arg1(dependencyMap[3]).DismissibleContent.BOUNTIES_SWIPE_UP_NUX;
+      tmp16 = tmp13 === require(1334) /* DismissibleContent */.DismissibleContent.BOUNTIES_SWIPE_UP_NUX;
     }
-    const tmp12 = callback(arg1(dependencyMap[4]).useSelectedDismissibleContent([]), 2);
+    const tmp12 = callback(require(5802) /* useSelectedDismissibleContent */.useSelectedDismissibleContent([]), 2);
     obj = { cooldownDurationMs: 86400000 };
-    const obj3 = arg1(dependencyMap[4]);
+    const obj3 = require(5802) /* useSelectedDismissibleContent */;
     obj = { hasSingleUseSwipeUpNux: tmp16, dismissSingleUseSwipeUpNux: tmp12[1] };
     if (first) {
       if (isEligible) {
@@ -45,10 +47,10 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
       }
       let tmp25 = isEligible;
     } else {
-      tmp25 = tmp22 === arg1(dependencyMap[3]).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+      tmp25 = tmp22 === require(1334) /* DismissibleContent */.DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
     }
     obj.hasRecurringSwipeUpNux = tmp25;
-    obj.dismissRecurringSwipeUpNux = callback(arg1(dependencyMap[4]).useSelectedTimeRecurringDismissibleContent(prop, obj), 2)[1];
+    obj.dismissRecurringSwipeUpNux = callback(require(5802) /* useSelectedDismissibleContent */.useSelectedTimeRecurringDismissibleContent(prop, obj), 2)[1];
     return obj;
   }
 };

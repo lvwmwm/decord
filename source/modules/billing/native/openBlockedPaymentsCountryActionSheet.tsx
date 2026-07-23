@@ -1,15 +1,14 @@
-// Module ID: 7222
-// Function ID: 58198
+// Module ID: 7227
+// Function ID: 58232
 // Name: openBlockedPaymentsCountryActionSheet
-// Dependencies: []
+// Dependencies: [4098, 7228, 1934, 2]
 // Exports: default
 
-// Module 7222 (openBlockedPaymentsCountryActionSheet)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/billing/native/openBlockedPaymentsCountryActionSheet.tsx");
+// Module 7227 (openBlockedPaymentsCountryActionSheet)
+const result = require("maybeLoadBundle").fileFinishedImporting("modules/billing/native/openBlockedPaymentsCountryActionSheet.tsx");
 
 export default function openBlockedPaymentsCountryActionSheet() {
-  importDefault(dependencyMap[0]).hideActionSheet();
-  const obj = importDefault(dependencyMap[0]);
-  importDefault(dependencyMap[0]).openLazy(require(dependencyMap[2])(dependencyMap[1], dependencyMap.paths), "BlockedPaymentsCountryActionSheet");
+  importDefault(4098).hideActionSheet();
+  const obj = importDefault(4098);
+  importDefault(4098).openLazy(require(1934) /* maybeLoadBundle */(7228, dependencyMap.paths), "BlockedPaymentsCountryActionSheet");
 };

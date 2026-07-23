@@ -1,9 +1,17 @@
-// Module ID: 7562
-// Function ID: 60515
+// Module ID: 7568
+// Function ID: 60552
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1849, 587, 566, 686, 2]
 
-// Module 7562 (_isNativeReflectConstruct)
+// Module 7568 (_isNativeReflectConstruct)
+import Storage from "Storage";
+import initialize from "initialize";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,7 +22,7 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function getStorageKey() {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   let id;
   if (null != currentUser) {
     id = currentUser.id;
@@ -27,21 +35,21 @@ function getStorageKey() {
   return combined;
 }
 function resetToDefaults() {
-  let closure_11 = "unchecked";
-  let closure_12 = null;
+  const unchecked = "unchecked";
+  let c12 = null;
 }
 function persist() {
   const tmp = getStorageKey();
   if (null != tmp) {
-    const Storage = arg1(dependencyMap[6]).Storage;
-    const obj = { reactiveCheckStatus: closure_11, reactiveCheckMissAt: closure_12 };
+    const Storage = require(587) /* Storage */.Storage;
+    const obj = { reactiveCheckStatus: unchecked, reactiveCheckMissAt: c12 };
     const result = Storage.set(tmp, obj);
   }
 }
 function loadFromStorage() {
   const tmp = getStorageKey();
   if (null != tmp) {
-    const Storage = arg1(dependencyMap[6]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     const value = Storage.get(tmp);
     if (null != value) {
       if ("object" === typeof value) {
@@ -58,13 +66,12 @@ function loadFromStorage() {
         let tmp10 = "miss" === str2 && null != tmp9;
         if (tmp10) {
           const _Date = Date;
-          tmp10 = Date.now() - tmp9 >= closure_8;
+          tmp10 = Date.now() - tmp9 >= c8;
         }
         if (tmp10) {
           resetToDefaults();
         } else {
-          let closure_11 = str2;
-          let closure_12 = tmp9;
+          let c12 = tmp9;
         }
       }
     }
@@ -74,40 +81,34 @@ function loadFromStorage() {
   }
 }
 function isMissWithinTTL() {
-  let tmp = "miss" === closure_11;
+  let tmp = "miss" === unchecked;
   if (tmp) {
-    tmp = null != closure_12;
+    tmp = null != c12;
   }
   if (tmp) {
     const _Date = Date;
-    tmp = Date.now() - closure_12 < closure_8;
+    tmp = Date.now() - c12 < c8;
   }
   return tmp;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = 86400000;
-let closure_9 = null;
-let closure_10 = false;
-let closure_11 = "unchecked";
-let closure_12 = null;
-let tmp2 = (Store) => {
+let c8 = 86400000;
+let c9 = null;
+let c10 = false;
+let unchecked = "unchecked";
+let c12 = null;
+let tmp2 = ((Store) => {
   class AgeVerificationStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, AgeVerificationStore);
-      obj = closure_5(AgeVerificationStore);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, AgeVerificationStore);
+      obj = outer1_5(AgeVerificationStore);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -116,55 +117,54 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = AgeVerificationStore;
   callback2(AgeVerificationStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_7);
+      this.waitFor(outer1_7);
     }
   };
   const items = [obj, , , , , , ];
   obj = {
     key: "loading",
     get() {
-      return closure_10;
+      return outer1_10;
     }
   };
   items[1] = obj;
   obj = {
     key: "methods",
     get() {
-      return closure_9;
+      return outer1_9;
     }
   };
   items[2] = obj;
   items[3] = {
     key: "getReactiveCheckStatus",
     value() {
-      return closure_11;
+      return outer1_11;
     }
   };
   items[4] = {
     key: "getReactiveCheckMiss",
     value() {
-      return callback4();
+      return outer1_18();
     }
   };
   items[5] = {
     key: "getReactiveCheckPassed",
     value() {
-      return "passed" === closure_11;
+      return "passed" === outer1_11;
     }
   };
   items[6] = {
     key: "shouldCallReactiveCheck",
     value() {
-      let tmp = "passed" !== closure_11;
+      let tmp = "passed" !== outer1_11;
       if (tmp) {
-        let tmp3 = "suppress" !== closure_11;
+        let tmp3 = "suppress" !== outer1_11;
         if (tmp3) {
-          tmp3 = !callback4();
+          tmp3 = !outer1_18();
         }
         tmp = tmp3;
       }
@@ -172,39 +172,37 @@ let tmp2 = (Store) => {
     }
   };
   return callback(AgeVerificationStore, items);
-}(importDefault(dependencyMap[7]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "AgeVerificationStore";
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   AGE_VERIFICATION_METHODS_LOAD_START: function handleAgeVerificationMethodsLoadStart() {
-    let closure_10 = true;
+    let c10 = true;
   },
   AGE_VERIFICATION_METHODS_LOAD_SUCCESS: function handleAgeVerificationMethodsLoadSuccess(methods) {
     methods = methods.methods;
-    let closure_10 = false;
+    let c10 = false;
   },
   AGE_VERIFICATION_METHODS_LOAD_FAILURE: function handleAgeVerificationMethodsLoadFailure() {
-    let closure_10 = false;
+    let c10 = false;
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
     loadFromStorage();
   },
   AGE_VERIFICATION_CHECK_RESULT_SET: function handleReactiveCheckResultSet(status) {
     status = status.status;
-    let closure_11 = status;
     let timestamp = null;
     if ("miss" === status) {
       const _Date = Date;
       timestamp = Date.now();
     }
-    let closure_12 = timestamp;
     persist();
   },
   AGE_VERIFICATION_RESET: function handleAgeVerificationReset() {
-    let closure_11 = "suppress";
-    let closure_12 = null;
+    const suppress = "suppress";
+    let c12 = null;
     persist();
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/age_assurance/AgeVerificationStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/age_assurance/AgeVerificationStore.tsx");
 
 export default tmp2;

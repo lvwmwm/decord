@@ -1,11 +1,29 @@
-// Module ID: 8467
-// Function ID: 67551
+// Module ID: 8473
+// Function ID: 67588
 // Name: closeModal
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 1353, 4947, 653, 1354, 33, 4130, 689, 4337, 4660, 1212, 1273, 7640, 7491, 5515, 566, 5598, 7495, 4126, 8474, 8475, 8476, 4559, 675, 1820, 7482, 5601, 4029, 7494, 8477, 7535, 4543, 5121, 5587, 2]
 
-// Module 8467 (closeModal)
+// Module 8473 (closeModal)
+import closure_4 from "MAX_STAGE_TOPIC_LENGTH";
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "FormHeader";
+import get_ActivityIndicator from "dismissGlobalKeyboard";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import MAX_STAGE_TOPIC_LENGTH from "MAX_STAGE_TOPIC_LENGTH";
+import { AnalyticEvents } from "ME";
+import { GuildScheduledEventPrivacyLevel as closure_13 } from "GUILD_EVENT_MAX_NAME_LENGTH";
+import jsxProd from "StageChannelAgeVerificationNoticeContent";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_14;
+let closure_15;
+let closure_7;
+let closure_8;
+const require = arg1;
 function closeModal() {
-  importDefault(dependencyMap[11]).popWithKey(closure_11);
+  importDefault(4337).popWithKey(closure_11);
 }
 function NavigationBar(guild) {
   let tmp2 = null;
@@ -15,12 +33,12 @@ function NavigationBar(guild) {
     ({ contentContainer: arr[0], contentTopSpacing: arr[1] } = tmp);
     obj.style = items;
     obj = { accessibilityRole: "button" };
-    const intl = arg1(dependencyMap[13]).intl;
-    obj.accessibilityLabel = intl.string(arg1(dependencyMap[13]).t.cpT0Cq);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
     obj.onPress = closeModal;
-    obj = { source: importDefault(dependencyMap[15]) };
-    obj.children = callback2(arg1(dependencyMap[14]).Icon, obj);
-    obj.children = callback2(arg1(dependencyMap[12]).PressableOpacity, obj);
+    obj = { source: importDefault(7640) };
+    obj.children = callback2(require(1273) /* Button */.Icon, obj);
+    obj.children = callback2(require(4660) /* PressableBase */.PressableOpacity, obj);
     tmp2 = callback2(closure_7, obj);
   }
   return tmp2;
@@ -28,24 +46,24 @@ function NavigationBar(guild) {
 function HeaderIcon(guild) {
   guild = guild.guild;
   if (null == guild) {
-    let tmp7 = callback2(importDefault(dependencyMap[16]), {});
+    let tmp7 = callback2(importDefault(7491), {});
   } else {
-    const obj = { style: tmp.guildIcon, size: arg1(dependencyMap[17]).GuildIconSizes.LARGE, guild };
-    tmp7 = callback2(importDefault(dependencyMap[17]), obj);
-    const tmp5 = importDefault(dependencyMap[17]);
+    const obj = { style: tmp.guildIcon, size: require(5515) /* makeSizeStyle */.GuildIconSizes.LARGE, guild };
+    tmp7 = callback2(importDefault(5515), obj);
+    const tmp5 = importDefault(5515);
   }
   return tmp7;
 }
 class NotificationToggle {
   constructor(arg0) {
     ({ sendStartNotification, onToggle } = global);
-    tmp = closure_16();
-    obj = arg1(dependencyMap[18]);
+    tmp = c16();
+    obj = require("initialize");
     items = [];
-    items[0] = arg1(dependencyMap[19]).HotspotStore;
+    items[0] = require("HotspotStore").HotspotStore;
     stateFromStores = obj.useStateFromStores(items, () => {
-      const HotspotStore = callback(closure_3[19]).HotspotStore;
-      return HotspotStore.hasHotspot(callback(closure_3[19]).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+      const HotspotStore = outer1_0(outer1_3[19]).HotspotStore;
+      return HotspotStore.hasHotspot(outer1_0(outer1_3[19]).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
     });
     tmp3 = jsx;
     obj = { DEPRECATED_style: tmp.notificationToggle };
@@ -53,10 +71,10 @@ class NotificationToggle {
     tmp4 = jsxs;
     tmp5 = View;
     obj2 = {};
-    intl = arg1(dependencyMap[13]).intl;
-    obj2.text = intl.string(arg1(dependencyMap[13]).t.BYJgew);
+    intl = require("getSystemLocale").intl;
+    obj2.text = intl.string(require("getSystemLocale").t.BYJgew);
     items1 = [, ];
-    items1[0] = jsx(arg1(dependencyMap[20]).FormLabel, obj2);
+    items1[0] = jsx(require("Form").FormLabel, obj2);
     tmp6 = null;
     if (stateFromStores) {
       tmp7 = jsx;
@@ -64,76 +82,71 @@ class NotificationToggle {
       obj3 = {};
       obj3.style = tmp.pill;
       tmp9 = jsx;
-      tmp10 = arg1;
-      tmp11 = dependencyMap;
+      tmp10 = closure_0;
+      tmp11 = closure_3;
       num = 21;
-      obj4 = {};
+      obj4 = { style: null, variant: "text-xxs/bold", color: "text-overlay-light" };
       obj4.style = tmp.pillLabel;
-      intl2 = arg1(dependencyMap[13]).intl;
-      obj4.children = intl2.string(arg1(dependencyMap[13]).t.y2b7CA);
-      obj3.children = jsx(arg1(dependencyMap[21]).Text, obj4);
+      intl2 = require("getSystemLocale").intl;
+      obj4.children = intl2.string(require("getSystemLocale").t.y2b7CA);
+      obj3.children = jsx(require("Text").Text, obj4);
       tmp6 = jsx(View, obj3);
     }
     items1[1] = tmp6;
     obj1.children = items1;
     obj.label = tmp4(tmp5, obj1);
     obj.onPress = onToggle;
-    obj.trailing = jsx(arg1(dependencyMap[14]).Checkbox, { selected: sendStartNotification });
-    return tmp3(arg1(dependencyMap[20]).FormRow, obj);
+    obj.trailing = jsx(require("Button").Checkbox, { selected: sendStartNotification });
+    return tmp3(require("Form").FormRow, obj);
   }
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-const importAllResult = importAll(dependencyMap[2]);
-({ View: closure_7, ScrollView: closure_8 } = arg1(dependencyMap[3]));
-let closure_9 = importDefault(dependencyMap[4]);
-const tmp2 = arg1(dependencyMap[3]);
-({ MAX_STAGE_TOPIC_LENGTH: closure_10, START_STAGE_CHANNEL_EVENT_MODAL_KEY: closure_11 } = arg1(dependencyMap[5]));
-const AnalyticEvents = arg1(dependencyMap[6]).AnalyticEvents;
-let closure_13 = arg1(dependencyMap[7]).GuildScheduledEventPrivacyLevel;
-const tmp3 = arg1(dependencyMap[5]);
-({ jsx: closure_14, jsxs: closure_15 } = arg1(dependencyMap[8]));
-let obj1 = arg1(dependencyMap[9]);
+({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
+({ MAX_STAGE_TOPIC_LENGTH: closure_10, START_STAGE_CHANNEL_EVENT_MODAL_KEY: closure_11 } = MAX_STAGE_TOPIC_LENGTH);
+({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 let obj = { keyboardAwareView: { flex: 1 }, closeButtonContainer: { right: 10 } };
-obj = { flex: 1, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOW };
+obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
 obj.container = obj;
 obj.contentContainer = { paddingHorizontal: 16 };
 obj.contentTopSpacing = { paddingTop: 16 };
-obj.header = { "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001282895982263, "Bool(false)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005495969098605 };
-obj.headerTitle = {};
+obj.header = { alignItems: "center", paddingBottom: 24 };
+obj.headerTitle = { marginTop: 16, marginBottom: 8 };
 obj.headerSubtitle = { textAlign: "center" };
-obj1 = { borderRadius: importDefault(dependencyMap[10]).radii.xs, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BASE_LOWEST };
-obj.textInput = obj1;
+_createForOfIteratorHelperLoose = { padding: 12, width: "100%", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, marginBottom: 16 };
+obj.textInput = _createForOfIteratorHelperLoose;
 obj.startButton = { marginTop: 16 };
 obj.error = { paddingTop: 8 };
-obj.optionExplanation = {};
-const tmp4 = arg1(dependencyMap[8]);
-obj.guildIcon = { borderRadius: importDefault(dependencyMap[10]).radii.md };
-obj.label = { "Bool(false)": "text-sm/normal", "Bool(false)": "text-link", "Bool(false)": true };
-const obj2 = { borderRadius: importDefault(dependencyMap[10]).radii.md };
-obj.pill = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[10]).radii.xs };
+obj.optionExplanation = { lineHeight: 16, paddingTop: 8 };
+obj.guildIcon = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+obj.label = { display: "flex", alignItems: "center", flexDirection: "row" };
+let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, paddingHorizontal: 4, paddingVertical: 2, marginStart: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+obj.pill = obj3;
 obj.pillLabel = { textTransform: "uppercase" };
-const obj3 = { backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[10]).radii.xs };
-obj.notificationToggle = { marginTop: 16, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.sm };
-const obj4 = { marginTop: 16, backgroundColor: importDefault(dependencyMap[10]).colors.BACKGROUND_SURFACE_HIGH, borderRadius: importDefault(dependencyMap[10]).radii.sm };
-obj.ageVerificationNotice = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
-let closure_16 = obj1.createStyles(obj);
-const obj5 = { marginBottom: importDefault(dependencyMap[10]).space.PX_16 };
+let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+obj.notificationToggle = { marginTop: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+let obj4 = { marginTop: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+obj.ageVerificationNotice = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let closure_16 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj5 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
 const forwardRefResult = importAllResult.forwardRef((channel) => {
+  let c16;
+  let c8;
+  let c9;
   let guild;
   let helpText;
+  let importDefault;
   let obj;
+  let require;
   let tmp17;
-  ({ guild, onStageStarted: closure_0, onClose: closure_1 } = channel);
-  let importAll;
-  let dependencyMap;
-  let closure_4;
+  ({ guild, onStageStarted: require, onClose: importDefault } = channel);
+  let first;
+  let memo;
+  let first1;
   let callback;
-  let importAllResult;
+  let first2;
   let closure_7;
-  let closure_8;
-  let closure_9;
-  let tmp21;
+  c8 = undefined;
+  c9 = undefined;
+  let c10;
   let first3;
   let closure_12;
   let constants;
@@ -143,28 +156,25 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
   function _handleSave() {
     // CreateGeneratorClosureLongIndex (0x67)
     const obj = first1(tmp);
-    const _handleSave = obj;
     return obj(...arguments);
   }
-  const tmp = callback4();
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+  let tmp = callback4();
+  const imperativeHandle = first2.useImperativeHandle(arg1, () => ({
     renderRightButton: function RightButton() {
-      const obj = { style: callback4().closeButtonContainer, accessibilityRole: "button" };
-      const tmp = callback4();
-      const intl = callback(closure_3[13]).intl;
-      obj.accessibilityLabel = intl.string(callback(closure_3[13]).t.cpT0Cq);
-      obj.source = callback2(closure_3[15]);
-      obj.onPress = callback2;
+      const obj = { style: callback().closeButtonContainer, accessibilityRole: "button" };
+      const tmp = callback();
+      const intl = outer2_0(memo[13]).intl;
+      obj.accessibilityLabel = intl.string(outer2_0(memo[13]).t.cpT0Cq);
+      obj.source = outer2_1(memo[15]);
+      obj.onPress = outer1_1;
       obj.disableColor = true;
-      return callback3(callback2(closure_3[22]), obj);
+      return obj(outer2_1(memo[22]), obj);
     }
   }));
-  const tmp4 = callback(importAllResult.useState(channel.channel), 2);
-  const first = tmp4[0];
-  importAll = first;
+  const tmp4 = callback(first2.useState(channel.channel), 2);
+  first = tmp4[0];
   const items = [first.id];
-  const memo = importAllResult.useMemo(() => stageInstanceByChannel.getStageInstanceByChannel(first.id), items);
-  dependencyMap = memo;
+  memo = first2.useMemo(() => _undefined2.getStageInstanceByChannel(first.id), items);
   let topic;
   if (null != memo) {
     topic = memo.topic;
@@ -173,9 +183,8 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
   if (null != topic) {
     str = topic;
   }
-  const tmp8 = callback(importAllResult.useState(str), 2);
-  const first1 = tmp8[0];
-  closure_4 = first1;
+  const tmp8 = callback(first2.useState(str), 2);
+  first1 = tmp8[0];
   callback = tmp10;
   const GUILD_ONLY = constants.GUILD_ONLY;
   let privacy_level;
@@ -186,41 +195,41 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
   if (null != privacy_level) {
     tmp13 = privacy_level;
   }
-  const tmp14 = callback(importAllResult.useState(tmp13), 2);
-  const first2 = tmp14[0];
-  importAllResult = first2;
+  const tmp14 = callback(first2.useState(tmp13), 2);
+  first2 = tmp14[0];
   closure_7 = tmp14[1];
-  [tmp17, closure_8] = callback(importAllResult.useState(false), 2);
-  const tmp16 = callback(importAllResult.useState(false), 2);
-  [obj, closure_9] = callback(importAllResult.useState(null), 2);
-  let obj1 = arg1(dependencyMap[23]);
+  [tmp17, c8] = callback(first2.useState(false), 2);
+  const tmp16 = callback(first2.useState(false), 2);
+  [obj, c9] = callback(first2.useState(null), 2);
+  let obj1 = require(memo[23]);
   const canSendStageStartNotification = obj1.useCanSendStageStartNotification(first);
-  let obj2 = arg1(dependencyMap[23]);
-  tmp21 = null == memo;
+  let obj2 = require(memo[23]);
+  let tmp21 = null == memo;
   const defaultSendStartStageNotificationToggle = obj2.useDefaultSendStartStageNotificationToggle(first);
   if (tmp21) {
     tmp21 = canSendStageStartNotification;
   }
+  c10 = tmp21;
   let tmp23 = tmp21;
   if (tmp21) {
     tmp23 = defaultSendStartStageNotificationToggle;
   }
-  const tmp24 = callback(importAllResult.useState(tmp23), 2);
+  const tmp24 = callback(first2.useState(tmp23), 2);
   first3 = tmp24[0];
   closure_12 = tmp24[1];
-  let obj3 = arg1(dependencyMap[18]);
-  const items1 = [arg1(dependencyMap[19]).HotspotStore];
+  let obj3 = require(memo[18]);
+  const items1 = [require(memo[19]).HotspotStore];
   constants = obj3.useStateFromStores(items1, () => {
-    const HotspotStore = callback(memo[19]).HotspotStore;
-    return HotspotStore.hasHotspot(callback(memo[19]).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+    const HotspotStore = outer1_0(memo[19]).HotspotStore;
+    return HotspotStore.hasHotspot(outer1_0(memo[19]).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
   });
   obj = { stageInstance: memo, privacyDefault: GUILD_ONLY };
-  callback3 = importAllResult.useRef(obj);
-  const effect = importAllResult.useEffect(() => {
+  callback3 = first2.useRef(obj);
+  const effect = first2.useEffect(() => {
     closure_15.current = obj;
   });
   const items2 = [first.id];
-  const effect1 = importAllResult.useEffect(() => {
+  const effect1 = first2.useEffect(() => {
     let privacyDefault;
     let stageInstance;
     ({ stageInstance, privacyDefault } = ref.current);
@@ -233,50 +242,50 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
     }
     closure_7(privacyDefault);
     if (null != stageInstance) {
-      tmp10(stageInstance.topic);
+      _undefined(stageInstance.topic);
     }
   }, items2);
-  const tmp18 = callback(importAllResult.useState(null), 2);
-  ({ helpText, publicDisabled: closure_16 } = importDefault(dependencyMap[24])(first, memo, first2));
-  importDefault(dependencyMap[25])(() => {
-    let obj = callback2(memo[26]);
+  const tmp18 = callback(first2.useState(null), 2);
+  ({ helpText, publicDisabled: c16 } = importDefault(memo[24])(first, memo, first2));
+  importDefault(memo[25])(() => {
+    let obj = outer1_1(memo[26]);
     obj = {};
     let id;
     if (null != memo) {
       id = memo.id;
     }
     obj.stage_instance_id = id;
-    obj.can_start_public_stage = !closure_16;
+    obj.can_start_public_stage = !c16;
     obj.guild_id = first.guild_id;
     obj.track(lib.START_STAGE_OPENED, obj);
   });
   obj = { style: tmp.header };
   const items3 = [obj(HeaderIcon, { guild }), , ];
-  obj1 = { alignSelf: false, justifyContent: false, alignItems: false, backgroundColor: false, style: tmp.headerTitle };
+  obj1 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "text-lg/semibold", color: "mobile-text-heading-primary" };
   if (null == memo) {
-    const intl2 = arg1(dependencyMap[13]).intl;
-    let stringResult = intl2.string(arg1(dependencyMap[13]).t.DDF0cJ);
+    const intl2 = require(memo[13]).intl;
+    let stringResult = intl2.string(require(memo[13]).t.DDF0cJ);
   } else {
-    const intl = arg1(dependencyMap[13]).intl;
-    stringResult = intl.string(arg1(dependencyMap[13]).t.5BKP4y);
+    let intl = require(memo[13]).intl;
+    stringResult = intl.string(require(memo[13]).t["5BKP4y"]);
   }
   obj1.children = stringResult;
-  items3[1] = obj(arg1(dependencyMap[21]).Text, obj1);
-  obj2 = { style: tmp.headerSubtitle };
+  items3[1] = obj(require(memo[21]).Text, obj1);
+  obj2 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default" };
   if (null == memo) {
-    const intl4 = arg1(dependencyMap[13]).intl;
-    let stringResult1 = intl4.string(arg1(dependencyMap[13]).t.bqQIwa);
+    const intl4 = require(memo[13]).intl;
+    let stringResult1 = intl4.string(require(memo[13]).t.bqQIwa);
   } else {
-    const intl3 = arg1(dependencyMap[13]).intl;
-    stringResult1 = intl3.string(arg1(dependencyMap[13]).t.I+9bLx);
+    const intl3 = require(memo[13]).intl;
+    stringResult1 = intl3.string(require(memo[13]).t["I+9bLx"]);
   }
   obj2.children = stringResult1;
-  items3[2] = obj(arg1(dependencyMap[21]).Text, obj2);
+  items3[2] = obj(require(memo[21]).Text, obj2);
   obj.children = items3;
-  obj3 = { -397224337: "DenyIcon", 1671428002: "png", 1364634426: true, style: tmp.container };
+  obj3 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, style: tmp.container };
   const items4 = [tmp.contentContainer, ];
   let contentTopSpacing = null;
-  const tmp28 = importDefault(dependencyMap[24])(first, memo, first2);
+  const tmp28 = importDefault(memo[24])(first, memo, first2);
   const tmp30 = callback3;
   const tmp31 = closure_7;
   const tmp32 = obj;
@@ -290,27 +299,27 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
   const obj4 = {};
   const tmp30Result = callback3(closure_7, obj);
   const tmp45 = callback3;
-  const tmp46 = closure_8;
-  const intl5 = arg1(dependencyMap[13]).intl;
-  obj4.children = intl5.string(arg1(dependencyMap[13]).t.5FPBOB);
-  items5[1] = obj(importDefault(dependencyMap[31]), obj4);
-  const obj5 = { style: tmp.textInput, maxLength: tmp21, value: first1 };
-  const intl6 = arg1(dependencyMap[13]).intl;
-  obj5.placeholder = intl6.string(arg1(dependencyMap[13]).t.ZwWruY);
+  const tmp46 = c8;
+  const intl5 = require(memo[13]).intl;
+  obj4.children = intl5.string(require(memo[13]).t["5FPBOB"]);
+  items5[1] = obj(importDefault(memo[31]), obj4);
+  const obj5 = { style: tmp.textInput, showBorder: false, showTopContainer: false, multiline: false, maxLength: c10, value: first1 };
+  const intl6 = require(memo[13]).intl;
+  obj5.placeholder = intl6.string(require(memo[13]).t.ZwWruY);
   obj5.onChange = tmp8[1];
   obj5.autoFocus = true;
-  obj5.clearButtonVisibility = arg1(dependencyMap[14]).ClearButtonVisibility.WITH_CONTENT;
-  items5[2] = obj(arg1(dependencyMap[20]).FormInput, obj5);
+  obj5.clearButtonVisibility = require(memo[14]).ClearButtonVisibility.WITH_CONTENT;
+  items5[2] = obj(require(memo[20]).FormInput, obj5);
   let tmp49 = null != helpText;
   if (tmp49) {
-    const obj6 = { "Null": "useCallback", "Null": "marginBottom", alignItems: "createStyles", style: tmp.optionExplanation, children: helpText };
-    tmp49 = obj(arg1(dependencyMap[21]).Text, obj6);
+    const obj6 = { style: tmp.optionExplanation, variant: "text-xs/medium", color: "text-default", children: helpText };
+    tmp49 = obj(require(memo[21]).Text, obj6);
   }
   items5[3] = tmp49;
   let tmp53 = null != guild;
   if (tmp53) {
     const obj7 = { guild, channel: first, onChangeChannel: tmp4[1] };
-    tmp53 = obj(importDefault(dependencyMap[32]), obj7);
+    tmp53 = obj(importDefault(memo[32]), obj7);
   }
   items5[4] = tmp53;
   let tmp57 = null;
@@ -325,21 +334,21 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
     tmp57 = obj(NotificationToggle, obj8);
   }
   items5[5] = tmp57;
-  items5[6] = obj(importDefault(dependencyMap[33]), { onConfirmPress: _handleSave, style: tmp.ageVerificationNotice, channelId: first.id });
+  items5[6] = obj(importDefault(memo[33]), { onConfirmPress: _handleSave, style: tmp.ageVerificationNotice, channelId: first.id });
   let tmp60 = null;
   if (null != obj) {
-    const obj10 = { style: tmp.error, children: obj.getAnyErrorMessage() };
-    tmp60 = obj(arg1(dependencyMap[21]).Text, obj10);
+    const obj10 = { style: tmp.error, variant: "text-xs/medium", color: "text-feedback-critical", children: obj.getAnyErrorMessage() };
+    tmp60 = obj(require(memo[21]).Text, obj10);
   }
   items5[7] = tmp60;
   const obj11 = { style: tmp.startButton };
   const obj12 = {};
   if (null == memo) {
-    const intl8 = arg1(dependencyMap[13]).intl;
-    let stringResult2 = intl8.string(arg1(dependencyMap[13]).t.s8mM8A);
+    const intl8 = require(memo[13]).intl;
+    let stringResult2 = intl8.string(require(memo[13]).t.s8mM8A);
   } else {
-    const intl7 = arg1(dependencyMap[13]).intl;
-    stringResult2 = intl7.string(arg1(dependencyMap[13]).t.K344S7);
+    const intl7 = require(memo[13]).intl;
+    stringResult2 = intl7.string(require(memo[13]).t.K344S7);
   }
   obj12.text = stringResult2;
   obj12.onPress = function handleSave() {
@@ -347,24 +356,24 @@ const forwardRefResult = importAllResult.forwardRef((channel) => {
   };
   obj12.disabled = "" === first1 || null == first2;
   obj12.loading = tmp17;
-  obj11.children = obj(arg1(dependencyMap[34]).Button, obj12);
+  obj11.children = obj(require(memo[34]).Button, obj12);
   items5[8] = obj(closure_7, obj11);
   obj3.children = items5;
   const tmp45Result = tmp45(tmp46, obj3);
   let tmp73 = tmp45Result;
   if (null == guild) {
-    const obj13 = { "Null": null, "Null": null, style: tmp.container };
+    const obj13 = { top: true, bottom: true, style: tmp.container };
     const obj14 = { style: tmp.keyboardAwareView };
     const obj15 = { guild };
     const items6 = [obj(NavigationBar, obj15), tmp45Result];
     obj14.children = items6;
-    obj13.children = callback3(importDefault(dependencyMap[36]), obj14);
-    tmp73 = obj(arg1(dependencyMap[35]).SafeAreaPaddingView, obj13);
-    const tmp79 = importDefault(dependencyMap[36]);
+    obj13.children = callback3(importDefault(memo[36]), obj14);
+    tmp73 = obj(require(memo[35]).SafeAreaPaddingView, obj13);
+    const tmp79 = importDefault(memo[36]);
   }
   return tmp73;
 });
-const result = arg1(dependencyMap[37]).fileFinishedImporting("modules/stage_channels/native/modals/StartStageChannelModal.tsx");
+let result = require("result").fileFinishedImporting("modules/stage_channels/native/modals/StartStageChannelModal.tsx");
 
 export default forwardRefResult;
 export { NotificationToggle };

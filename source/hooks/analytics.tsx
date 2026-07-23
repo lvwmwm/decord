@@ -1,13 +1,15 @@
-// Module ID: 9376
-// Function ID: 73137
+// Module ID: 9383
+// Function ID: 73178
 // Name: useAnalyticsContext
-// Dependencies: []
+// Dependencies: [31, 675, 2]
 // Exports: useAnalyticsContext
 
-// Module 9376 (useAnalyticsContext)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("hooks/analytics.tsx");
+// Module 9383 (useAnalyticsContext)
+import result from "result";
+
+const require = arg1;
+const result = require("set").fileFinishedImporting("hooks/analytics.tsx");
 
 export const useAnalyticsContext = function useAnalyticsContext() {
-  return React.useContext(arg1(dependencyMap[1]).AnalyticsContext);
+  return React.useContext(require(675) /* expandLocation */.AnalyticsContext);
 };

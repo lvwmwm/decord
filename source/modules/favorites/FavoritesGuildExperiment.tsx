@@ -1,17 +1,20 @@
-// Module ID: 10338
-// Function ID: 79817
+// Module ID: 10193
+// Function ID: 78754
 // Name: apexExperiment
-// Dependencies: []
-// Exports: useFavoritesGuildConfig
+// Dependencies: [1428, 2]
+// Exports: getFavoritesGuildConfig, useFavoritesGuildConfig
 
-// Module 10338 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: null, DateToSystemTimezoneSetter: null, defaultConfig: { done: true, body: true }, variations: { [1]: { done: null, body: null }, [2]: { done: "<string:1040334421>", body: "<string:1040334338>" } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/favorites/FavoritesGuildExperiment.tsx");
+// Module 10193 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-01-favorites-server", kind: "user", defaultConfig: { enabled: false, hasHigherPrivileges: false }, variations: { [1]: { enabled: true, hasHigherPrivileges: true }, [2]: { enabled: true, hasHigherPrivileges: false }, [3]: { enabled: true, hasHigherPrivileges: true, isFreemium: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/favorites/FavoritesGuildExperiment.tsx");
 
 export const FavoritesGuildExperiment = apexExperiment;
 export const useFavoritesGuildConfig = function useFavoritesGuildConfig(location) {
   return apexExperiment.useConfig({ location: location.location });
+};
+export const getFavoritesGuildConfig = function getFavoritesGuildConfig(location) {
+  return apexExperiment.getConfig({ location: location.location });
 };

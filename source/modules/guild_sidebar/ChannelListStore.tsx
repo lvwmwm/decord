@@ -1,9 +1,33 @@
-// Module ID: 6752
-// Function ID: 52591
+// Module ID: 6757
+// Function ID: 52623
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1347, 1908, 6758, 5039, 3760, 1316, 1194, 5076, 1348, 6759, 4162, 3758, 4142, 1906, 4325, 662, 6760, 22, 1327, 3748, 21, 566, 686, 2]
 
-// Module 6752 (_isNativeReflectConstruct)
+// Module 6757 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import closure_14 from "_isNativeReflectConstruct";
+import closure_15 from "_isNativeReflectConstruct";
+import closure_16 from "_isNativeReflectConstruct";
+import closure_17 from "_isNativeReflectConstruct";
+import closure_18 from "_isNativeReflectConstruct";
+import closure_19 from "_isNativeReflectConstruct";
+import closure_20 from "_isNativeReflectConstruct";
+import closure_21 from "_isNativeReflectConstruct";
+import closure_22 from "_isNativeReflectConstruct";
+import { UserSettingsTypes } from "MAX_FAVORITES";
+import importDefaultResult from "_superPropGet";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +37,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +90,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -94,7 +118,6 @@ function _arrayLikeToArray(arg0, arg1) {
 }
 function handleReset() {
   const channelId = store2.getChannelId();
-  let closure_24 = channelId;
   const voiceChannelId = store2.getVoiceChannelId();
   return importDefaultResult.clear();
 }
@@ -119,23 +142,21 @@ function handleThreadMemberUpdate(id) {
 function handleChannelSelect() {
   const channelId = store2.getChannelId();
   const voiceChannelId = store2.getVoiceChannelId();
-  let tmp3 = closure_24 !== channelId;
+  let tmp3 = channelId !== channelId;
   if (!tmp3) {
-    tmp3 = closure_25 !== voiceChannelId;
+    tmp3 = voiceChannelId !== voiceChannelId;
   }
   let flag = tmp3;
   if (tmp3) {
-    const items = [closure_24, closure_25, channelId, voiceChannelId];
-    const obj = importDefault(dependencyMap[22])(items);
-    const item = importDefault(dependencyMap[22])(items).uniq().forEach((arg0) => {
+    const items = [channelId, voiceChannelId, channelId, voiceChannelId];
+    const obj = importDefault(22)(items);
+    const item = importDefault(22)(items).uniq().forEach((arg0) => {
       if (null != arg0) {
-        const result = closure_26.nonPositionalChannelIdUpdate(arg0);
+        const result = outer1_26.nonPositionalChannelIdUpdate(arg0);
       }
     });
-    closure_24 = channelId;
-    closure_25 = voiceChannelId;
     flag = true;
-    const uniqResult = importDefault(dependencyMap[22])(items).uniq();
+    const uniqResult = importDefault(22)(items).uniq();
   }
   return flag;
 }
@@ -158,44 +179,22 @@ function handleRecomputeAllSubtitles() {
 function handleGuildScheduledEventUpdate(guildScheduledEvent) {
   return importDefaultResult.updateSubtitles(guildScheduledEvent.guildScheduledEvent.guild_id);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-let closure_14 = importDefault(dependencyMap[11]);
-let closure_15 = importDefault(dependencyMap[12]);
-let closure_16 = importDefault(dependencyMap[13]);
-let closure_17 = importDefault(dependencyMap[14]);
-let closure_18 = importDefault(dependencyMap[15]);
-let closure_19 = importDefault(dependencyMap[16]);
-let closure_20 = importDefault(dependencyMap[17]);
-let closure_21 = importDefault(dependencyMap[18]);
-let closure_22 = importDefault(dependencyMap[19]);
-const UserSettingsTypes = arg1(dependencyMap[20]).UserSettingsTypes;
-let closure_24 = null;
-let closure_25 = null;
-let importDefaultResult = importDefault(dependencyMap[21]);
+let c24 = null;
+let c25 = null;
 importDefaultResult = new importDefaultResult();
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class ChannelListStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, ChannelListStore);
-      obj = closure_6(ChannelListStore);
-      tmp2 = closure_5;
-      if (closure_27()) {
+      tmp = outer1_3(this, ChannelListStore);
+      obj = outer1_6(ChannelListStore);
+      tmp2 = outer1_5;
+      if (outer1_27()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -204,12 +203,11 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ChannelListStore;
-  callback3(ChannelListStore, Store);
+  callback2(ChannelListStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_11, closure_14, closure_15, closure_16, closure_17, closure_8, closure_18, closure_9, closure_10, closure_12, closure_19, closure_20, closure_21, closure_22, closure_13);
+      this.waitFor(outer1_11, outer1_14, outer1_15, outer1_16, outer1_17, outer1_8, outer1_18, outer1_9, outer1_10, outer1_12, outer1_19, outer1_20, outer1_21, outer1_22, outer1_13);
     }
   };
   const items = [obj, , , ];
@@ -230,7 +228,7 @@ let tmp4 = (Store) => {
       if (null == channelNoticeRows) {
         channelNoticeRows = [];
       }
-      const guild = store.getGuild(guildId, guildActionRows, channelNoticeRows);
+      const guild = outer1_26.getGuild(guildId, guildActionRows, channelNoticeRows);
       return { guildChannelsVersion: guild.version, guildChannels: guild };
     }
   };
@@ -238,7 +236,7 @@ let tmp4 = (Store) => {
   obj = {
     key: "getGuildWithoutChangingGuildActionRows",
     value(arg0) {
-      const guildChannelRowsOnly = store.getGuildChannelRowsOnly(arg0);
+      const guildChannelRowsOnly = outer1_26.getGuildChannelRowsOnly(arg0);
       return { guildChannelsVersion: guildChannelRowsOnly.version, guildChannels: guildChannelRowsOnly };
     }
   };
@@ -249,16 +247,16 @@ let tmp4 = (Store) => {
       if (null == arg0) {
         return 0;
       } else {
-        const guildChannelRowsOnly = store.getGuildChannelRowsOnly(arg0);
+        const guildChannelRowsOnly = outer1_26.getGuildChannelRowsOnly(arg0);
         const categoryFromSection = guildChannelRowsOnly.getCategoryFromSection(guildChannelRowsOnly.recentsSectionNumber);
         return categoryFromSection.getShownChannelIds().length;
       }
     }
   };
-  return callback2(ChannelListStore, items);
-}(importDefault(dependencyMap[26]).Store);
+  return callback(ChannelListStore, items);
+})(require("initialize").Store);
 tmp4.displayName = "ChannelListStore";
-tmp4 = new tmp4(importDefault(dependencyMap[27]), {
+tmp4 = new tmp4(require("dispatcher"), {
   APPLICATION_FETCH_FAIL: handleRecomputeAllSubtitles,
   APPLICATION_FETCH_SUCCESS: handleRecomputeAllSubtitles,
   APPLICATION_FETCH: handleRecomputeAllSubtitles,
@@ -267,23 +265,23 @@ tmp4 = new tmp4(importDefault(dependencyMap[27]), {
   APPLICATIONS_FETCH: handleRecomputeAllSubtitles,
   BACKGROUND_SYNC: handleReset,
   BULK_ACK: function handleBulkAck(channels) {
-    const callback = false;
-    const mapped = importDefault(dependencyMap[22])(channels.channels).map((channelId) => {
-      const channel = channel.getChannel(channelId.channelId);
+    const _require = false;
+    const mapped = importDefault(22)(channels.channels).map((channelId) => {
+      const channel = outer1_16.getChannel(channelId.channelId);
       let guild_id;
       if (null != channel) {
         guild_id = channel.guild_id;
       }
       return guild_id;
     });
-    const found = mapped.filter(callback(dependencyMap[23]).isNotNullish);
-    const arr = importDefault(dependencyMap[22])(channels.channels);
+    const found = mapped.filter(_require(1327).isNotNullish);
+    const arr = importDefault(22)(channels.channels);
     const item = found.uniq().forEach((arg0) => {
-      if (closure_26.clearGuildId(arg0)) {
-        let closure_0 = true;
+      if (outer1_26.clearGuildId(arg0)) {
+        let c0 = true;
       }
     });
-    return callback;
+    return _require;
   },
   BULK_CLEAR_RECENTS: handleRebuildGuildId,
   CACHE_LOADED_LAZY: handleReset,
@@ -310,15 +308,15 @@ tmp4 = new tmp4(importDefault(dependencyMap[27]), {
     return importDefaultResult.clearGuildId(guildId.guildId);
   },
   CHANNEL_UPDATES: function handleChannelUpdates(channels) {
-    let closure_0 = false;
-    const mapped = importDefault(dependencyMap[22])(channels.channels).map((guild_id) => guild_id.guild_id);
-    const arr = importDefault(dependencyMap[22])(channels.channels);
+    let c0 = false;
+    const mapped = importDefault(22)(channels.channels).map((guild_id) => guild_id.guild_id);
+    const arr = importDefault(22)(channels.channels);
     const item = mapped.uniq().forEach((arg0) => {
-      if (closure_26.clearGuildId(arg0)) {
-        let closure_0 = true;
+      if (outer1_26.clearGuildId(arg0)) {
+        let c0 = true;
       }
     });
-    return closure_0;
+    return c0;
   },
   CONNECTION_OPEN_SUPPLEMENTAL: handleRecomputeAllSubtitles,
   CONNECTION_OPEN: handleReset,
@@ -331,9 +329,9 @@ tmp4 = new tmp4(importDefault(dependencyMap[27]), {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = arg1(dependencyMap[24]).getEmbeddedActivityLocationGuildId(instance.location);
-    const obj = arg1(dependencyMap[24]);
-    return importDefaultResult.updateSubtitles(embeddedActivityLocationGuildId, arg1(dependencyMap[24]).getEmbeddedActivityLocationChannelId(instance.location));
+    const embeddedActivityLocationGuildId = require(3748) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const obj = require(3748) /* getEmbeddedActivityLocationChannelId */;
+    return importDefaultResult.updateSubtitles(embeddedActivityLocationGuildId, require(3748) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function handleEmbeddedActivityLaunchStart() {
     handleRecomputeAllSubtitles();
@@ -374,7 +372,7 @@ tmp4 = new tmp4(importDefault(dependencyMap[27]), {
   IMPERSONATE_UPDATE: handleRebuildGuildId,
   LOAD_CHANNELS: function handleLoadChannels(channels) {
     channels = channels.channels;
-    const item = channels.forEach((guildId) => closure_26.clearGuildId(guildId.guildId));
+    const item = channels.forEach((guildId) => outer1_26.clearGuildId(guildId.guildId));
   },
   LOAD_MESSAGES_SUCCESS: handleReadStateChange,
   MESSAGE_ACK: handleReadStateChange,
@@ -408,33 +406,32 @@ tmp4 = new tmp4(importDefault(dependencyMap[27]), {
   USER_GUILD_SETTINGS_CHANNEL_UPDATE: handleRebuildGuildId,
   USER_GUILD_SETTINGS_FULL_UPDATE: function handleUserGuildSettingsFullUpdate(userGuildSettings) {
     userGuildSettings = userGuildSettings.userGuildSettings;
-    const item = userGuildSettings.forEach((guild_id) => closure_26.clearGuildId(guild_id.guild_id));
+    const item = userGuildSettings.forEach((guild_id) => outer1_26.clearGuildId(guild_id.guild_id));
   },
   USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: handleRebuildGuildId,
   USER_GUILD_SETTINGS_GUILD_UPDATE: handleRebuildGuildId,
   USER_SETTINGS_PROTO_UPDATE: function handleSettingsProtoUpdate(settings) {
     settings = settings.settings;
-    let arg1;
+    let guilds;
     let importDefault;
     if (settings.type !== UserSettingsTypes.PRELOADED_USER_SETTINGS) {
       return false;
     } else {
-      let guilds = settings.proto.guilds;
+      guilds = settings.proto.guilds;
       guilds = undefined;
       if (null != guilds) {
         guilds = guilds.guilds;
       }
-      arg1 = guilds;
       importDefault = false;
       if (null != guilds) {
-        const keys = importDefault(dependencyMap[25]).keys(guilds);
+        const keys = importDefault(21).keys(guilds);
         const item = keys.forEach((arg0) => {
           if (null != guilds[arg0].guildRecentsDismissedAt) {
-            closure_1 = closure_26.updateRecentsCategory(arg0) || closure_1;
-            const tmp2 = closure_26.updateRecentsCategory(arg0) || closure_1;
+            c1 = outer1_26.updateRecentsCategory(arg0) || c1;
+            const tmp2 = outer1_26.updateRecentsCategory(arg0) || c1;
           }
         });
-        const obj = importDefault(dependencyMap[25]);
+        const obj = importDefault(21);
       }
       return importDefault;
     }
@@ -462,8 +459,8 @@ tmp4 = new tmp4(importDefault(dependencyMap[27]), {
         let tmp4 = null == oldChannelId || set.has(oldChannelId);
         let flag2 = flag;
         if (!tmp4) {
-          let tmp5 = closure_26;
-          if (closure_26.nonPositionalChannelIdUpdate(oldChannelId)) {
+          let tmp5 = importDefaultResult;
+          if (importDefaultResult.nonPositionalChannelIdUpdate(oldChannelId)) {
             flag = true;
           }
           let addResult = set.add(oldChannelId);
@@ -472,8 +469,8 @@ tmp4 = new tmp4(importDefault(dependencyMap[27]), {
         let tmp7 = null == channelId || set.has(channelId);
         let tmp8 = flag2;
         if (!tmp7) {
-          let tmp9 = closure_26;
-          if (closure_26.nonPositionalChannelIdUpdate(channelId)) {
+          let tmp9 = importDefaultResult;
+          if (importDefaultResult.nonPositionalChannelIdUpdate(channelId)) {
             flag2 = true;
           }
           let addResult1 = set.add(channelId);
@@ -488,13 +485,13 @@ tmp4 = new tmp4(importDefault(dependencyMap[27]), {
     return tmp3;
   },
   WINDOW_FOCUS: function handleCurrentChannelReadStateChange() {
-    let result = null != closure_24;
+    let result = null != c24;
     if (result) {
-      result = importDefaultResult.nonPositionalChannelIdUpdate(closure_24);
+      result = importDefaultResult.nonPositionalChannelIdUpdate(c24);
     }
     return result;
   }
 });
-const result = arg1(dependencyMap[28]).fileFinishedImporting("modules/guild_sidebar/ChannelListStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_sidebar/ChannelListStore.tsx");
 
 export default tmp4;

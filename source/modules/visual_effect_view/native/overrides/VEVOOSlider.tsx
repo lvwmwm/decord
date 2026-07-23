@@ -1,22 +1,27 @@
-// Module ID: 14598
-// Function ID: 109988
-// Dependencies: []
+// Module ID: 14713
+// Function ID: 112152
+// Dependencies: [31, 33, 4130, 477, 689, 7523, 2]
 
-// Module 14598
+// Module 14713
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import importAllResult from "result";
+import set from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let num = 0;
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
 let obj = {};
 obj = {};
-const obj2 = arg1(dependencyMap[2]);
-if (obj5.isAndroid()) {
-  num = importDefault(dependencyMap[4]).space.PX_8;
+if (set.isAndroid()) {
+  num = require("_createForOfIteratorHelperLoose").space.PX_8;
 }
 obj.marginTop = num;
 obj.slider = obj;
-let closure_4 = obj2.createStyles(obj);
-const obj5 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function VEVOOSlider(disabledOpacity) {
+let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
+const result = set.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOSlider.tsx");
+
+export default require("result").memo(function VEVOOSlider(disabledOpacity) {
   let initialValue;
   let onValueChange;
   let flag = disabledOpacity.disabledOpacity;
@@ -45,10 +50,10 @@ const memoResult = importAllResult.memo(function VEVOOSlider(disabledOpacity) {
   obj.value = tmp4;
   obj.minimumValue = 0;
   obj.maximumValue = 1;
-  obj.minimumTrackTintColor = importDefault(dependencyMap[4]).unsafe_rawColors.BRAND_500;
-  obj.maximumTrackTintColor = importDefault(dependencyMap[4]).unsafe_rawColors.PRIMARY_400;
+  obj.minimumTrackTintColor = importDefault(689).unsafe_rawColors.BRAND_500;
+  obj.maximumTrackTintColor = importDefault(689).unsafe_rawColors.PRIMARY_400;
   obj.onValueChange = onValueChange;
-  const tmp3 = importDefault(dependencyMap[5]);
+  const tmp3 = importDefault(7523);
   let fn;
   if (obj3.isAndroid()) {
     fn = () => true;
@@ -56,6 +61,3 @@ const memoResult = importAllResult.memo(function VEVOOSlider(disabledOpacity) {
   obj.onResponderGrant = fn;
   return tmp2(tmp3, obj);
 });
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOSlider.tsx");
-
-export default memoResult;

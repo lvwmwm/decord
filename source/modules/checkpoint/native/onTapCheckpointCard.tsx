@@ -1,24 +1,26 @@
-// Module ID: 11073
-// Function ID: 86147
+// Module ID: 11083
+// Function ID: 86197
 // Name: onTapCheckpointCard
-// Dependencies: []
+// Dependencies: [1348, 653, 675, 4324, 2]
 // Exports: onTapCheckpointCard
 
-// Module 11073 (onTapCheckpointCard)
-let closure_3 = importDefault(dependencyMap[0]);
-const AnalyticEvents = arg1(dependencyMap[1]).AnalyticEvents;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/checkpoint/native/onTapCheckpointCard.tsx");
+// Module 11083 (onTapCheckpointCard)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
+const result = require("expandLocation").fileFinishedImporting("modules/checkpoint/native/onTapCheckpointCard.tsx");
 
 export const onTapCheckpointCard = function onTapCheckpointCard(message) {
-  const channel = channel.getChannel(message.message.channel_id);
-  let obj = importDefault(dependencyMap[2]);
+  channel = channel.getChannel(message.message.channel_id);
+  let obj = importDefault(675);
   obj = { other_user_id: message.authorId };
-  const merged = Object.assign(arg1(dependencyMap[3]).collectChannelAnalyticsMetadata(channel));
-  const obj3 = arg1(dependencyMap[3]);
+  const merged = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectChannelAnalyticsMetadata(channel));
+  const obj3 = require(4324) /* _createForOfIteratorHelperLoose */;
   let guild_id;
   if (null != channel) {
     guild_id = channel.guild_id;
   }
-  const merged1 = Object.assign(arg1(dependencyMap[3]).collectGuildAnalyticsMetadata(guild_id));
+  const merged1 = Object.assign(require(4324) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(guild_id));
   obj.track(AnalyticEvents.CHECKPOINT_CARD_CLICKED, obj);
 };

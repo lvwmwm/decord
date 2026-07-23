@@ -1,15 +1,15 @@
 // Module ID: 1775
-// Function ID: 19760
+// Function ID: 19761
 // Name: NOOP
-// Dependencies: []
+// Dependencies: [31, 27]
 // Exports: useKeyboardContext
 
 // Module 1775 (NOOP)
-import withSharedValueResult from "module_0";
+import result from "result";
+import { Animated } from "get ActivityIndicator";
+import withSharedValueResult from "result";
 
-const _module = require(dependencyMap[0]);
-const useContext = _module.useContext;
-const Animated = require(dependencyMap[1]).Animated;
+const useContext = result.useContext;
 class NOOP {
   constructor() {
     return;
@@ -21,14 +21,14 @@ class NESTED_NOOP {
   }
 }
 function withSharedValue(value) {
-  const useContext = value;
+  let closure_0 = value;
   return {
     value,
     addListener: NOOP,
     removeListener: NOOP,
     modify: NOOP,
     get() {
-      return arg0;
+      return closure_0;
     },
     set: NOOP
   };
@@ -46,7 +46,7 @@ obj.update = Promise.resolve;
 obj.setKeyboardHandlers = NESTED_NOOP;
 obj.setInputHandlers = NESTED_NOOP;
 obj.setEnabled = NOOP;
-const context = _module.createContext(obj);
+const context = result.createContext(obj);
 
 export const KeyboardContext = context;
 export const useKeyboardContext = function useKeyboardContext() {

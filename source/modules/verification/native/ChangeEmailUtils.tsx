@@ -1,32 +1,35 @@
-// Module ID: 9222
-// Function ID: 72121
+// Module ID: 9229
+// Function ID: 72162
 // Name: _saveEmail
-// Dependencies: []
+// Dependencies: [5, 9183, 9230, 9232, 668, 2]
 // Exports: finishChangeEmailFlow, finishVerifyEmailFlow, saveEmail
 
-// Module 9222 (_saveEmail)
+// Module 9229 (_saveEmail)
+import set from "set";
+import setChangeEmailError from "setChangeEmailError";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function _saveEmail() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _saveEmail = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ setChangeEmailError: closure_4, ChangeEmailFields: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/verification/native/ChangeEmailUtils.tsx");
+({ setChangeEmailError: closure_4, ChangeEmailFields: closure_5 } = setChangeEmailError);
+const result = require("saveProfileAndAccountRequest").fileFinishedImporting("modules/verification/native/ChangeEmailUtils.tsx");
 
 export const saveEmail = function saveEmail(arg0, arg1, arg2) {
   return _saveEmail(...arguments);
 };
-export const finishChangeEmailFlow = function finishChangeEmailFlow(closure_2, closure_4) {
-  const replaced = closure_2.replace(closure_4(dependencyMap[4]).VerificationModalScenes.CHANGE_EMAIL_COMPLETE, { email: closure_4 });
+export const finishChangeEmailFlow = function finishChangeEmailFlow(outer1_2, outer1_4) {
+  const replaced = outer1_2.replace(require(668) /* keys */.VerificationModalScenes.CHANGE_EMAIL_COMPLETE, { email: outer1_4 });
 };
-export const finishVerifyEmailFlow = function finishVerifyEmailFlow(closure_2, closure_7) {
-  const tmp = closure_7(closure_7(dependencyMap[4]).VerificationModalScenes.RESEND_EMAIL);
+export const finishVerifyEmailFlow = function finishVerifyEmailFlow(outer1_2, outer1_7) {
+  const tmp = outer1_7(require(668) /* keys */.VerificationModalScenes.RESEND_EMAIL);
   if (-1 !== tmp) {
-    closure_2.pop(closure_2.getState().routes.length - tmp);
+    outer1_2.pop(outer1_2.getState().routes.length - tmp);
   } else {
-    const replaced = closure_2.replace(closure_7(dependencyMap[4]).VerificationModalScenes.RESEND_EMAIL);
+    const replaced = outer1_2.replace(require(668) /* keys */.VerificationModalScenes.RESEND_EMAIL);
   }
 };

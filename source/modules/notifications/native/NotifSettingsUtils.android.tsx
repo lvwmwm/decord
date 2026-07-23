@@ -1,52 +1,57 @@
-// Module ID: 13267
-// Function ID: 100664
+// Module ID: 13381
+// Function ID: 102820
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [13377, 1212, 13382, 13383, 1184, 2]
 
-// Module 13267 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 13381 (_createForOfIteratorHelperLoose)
+import items2 from "items2";
+
+let closure_3;
+let closure_4;
+let closure_5;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +62,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -98,26 +103,26 @@ function inferImportanceFromBehavior(behavior) {
 }
 function formatCategory(id) {
   const obj = { id: id.string_id };
-  const intl = require(dependencyMap[1]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   obj.name = intl.string(id.title);
   return obj;
 }
-function formatSetting(id) {
-  let tmp = arg1;
-  const obj = { id: id.string_id, groupId: id.category };
-  const intl = require(dependencyMap[1]).intl;
-  obj.name = intl.string(id.title);
-  if (null == arg1) {
-    tmp = inferImportanceFromBehavior(id.behavior);
+function formatSetting(value4, map) {
+  let tmp = map;
+  const obj = { id: value4.string_id, groupId: value4.category };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.name = intl.string(value4.title);
+  if (null == map) {
+    tmp = inferImportanceFromBehavior(value4.behavior);
   }
   obj.importance = tmp;
   let ringtone;
-  if ("ringtone" in id.behavior) {
-    ringtone = id.behavior.ringtone;
+  if ("ringtone" in value4.behavior) {
+    ringtone = value4.behavior.ringtone;
   }
   obj.ringtone = ringtone;
-  obj.badge = id.behavior.badge;
-  obj.vibrate = id.behavior.vibrate;
+  obj.badge = value4.behavior.badge;
+  obj.vibrate = value4.behavior.vibrate;
   return obj;
 }
 function buildChannelsAndMapping() {
@@ -125,13 +130,13 @@ function buildChannelsAndMapping() {
   let done2;
   let done3;
   let iter9;
-  let obj = require(dependencyMap[3]);
+  let obj = map3(13383);
   const assignedNotifSettingsAndMappings = obj.getAssignedNotifSettingsAndMappings();
   const mappings = assignedNotifSettingsAndMappings.mappings;
   const map = new Map();
   let prop;
-  if (null != importDefault(dependencyMap[2])) {
-    prop = importDefault(dependencyMap[2]).getAndroidNotifChannelStates;
+  if (null != importDefault(13382)) {
+    prop = importDefault(13382).getAndroidNotifChannelStates;
   }
   if (null != prop) {
     const _Map2 = Map;
@@ -167,14 +172,14 @@ function buildChannelsAndMapping() {
       do {
         value = iter6.value;
         let notifSetting = value.notifSetting;
-        let tmp18 = closure_4;
-        let tmp19 = closure_4[value.notifType];
+        let tmp18 = table;
+        let tmp19 = table[value.notifType];
         let tmp20 = tmp15;
         let tmp21 = tmp16;
         let tmp22 = tmp17;
         if (null != tmp19) {
-          let tmp44 = closure_7;
-          let tmp45 = closure_7(tmp19);
+          let tmp44 = _createForOfIteratorHelperLoose;
+          let tmp45 = _createForOfIteratorHelperLoose(tmp19);
           let iter12 = tmp45();
           let iter8 = iter12;
           let tmp26 = tmp16;
@@ -198,10 +203,10 @@ function buildChannelsAndMapping() {
                   tmp26 = value2;
                   tmp24 = value3;
                   if (null != value3) {
-                    let tmp28 = closure_9;
+                    let tmp28 = inferImportanceFromBehavior;
                     tmp26 = value2;
                     tmp24 = value3;
-                    if (value3 !== closure_9(value2.behavior)) {
+                    if (value3 !== inferImportanceFromBehavior(value2.behavior)) {
                       break;
                     }
                   }
@@ -226,23 +231,22 @@ function buildChannelsAndMapping() {
           }
         }
         iter9 = tmp14();
-        let tmp15 = tmp20;
-        let tmp16 = tmp21;
-        let tmp17 = tmp22;
+        tmp15 = tmp20;
+        tmp16 = tmp21;
+        tmp17 = tmp22;
         iter6 = iter9;
       } while (!iter9.done);
     }
   }
-  const items = [];
-  const map3 = new Map();
-  const require = map3;
+  let items = [];
+  map3 = new Map();
   const tmp35 = _createForOfIteratorHelperLoose(assignedNotifSettingsAndMappings.settings);
   let iter10 = tmp35();
   if (!iter10.done) {
     do {
       let value4 = iter10.value;
-      let tmp36 = closure_11;
-      let arr = items.push(closure_11(value4, map.get(value4.id)));
+      let tmp36 = formatSetting;
+      let arr = items.push(formatSetting(value4, map.get(value4.id)));
       let result3 = map3.set(value4.id, value4.string_id);
       let iter11 = tmp35();
       iter10 = iter11;
@@ -264,18 +268,16 @@ function buildChannelsAndMapping() {
   };
   return obj;
 }
-const _module = require(dependencyMap[0]);
-({ NOTIF_CATEGORIES: closure_3, NOTIF_SETTING_MAPPING: closure_4, NOTIF_SETTINGS: closure_5 } = _module);
+({ NOTIF_CATEGORIES: closure_3, NOTIF_SETTING_MAPPING: closure_4, NOTIF_SETTINGS: closure_5 } = items2);
 let closure_6 = { NONE: 0, [0]: "NONE", MIN: 1, [1]: "MIN", LOW: 2, [2]: "LOW", DEFAULT: 3, [3]: "DEFAULT", HIGH: 4, [4]: "HIGH" };
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/notifications/native/NotifSettingsUtils.android.tsx");
+let result = require("NativeNotifSettingsModule").fileFinishedImporting("modules/notifications/native/NotifSettingsUtils.android.tsx");
 
 export default {
   clear() {
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    if (null != importDefault(dependencyMap[2])) {
-      let obj = importDefault(dependencyMap[2]);
+    if (null != importDefault(13382)) {
+      let obj = importDefault(13382);
     } else {
       obj = {};
     }
@@ -292,8 +294,8 @@ export default {
     let inheritedImportances;
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    if (null != importDefault(dependencyMap[2])) {
-      let obj = importDefault(dependencyMap[2]);
+    if (null != importDefault(13382)) {
+      let obj = importDefault(13382);
     } else {
       obj = {};
     }
@@ -305,7 +307,7 @@ export default {
         obj = { message: "Registering declarative notification categories" };
         obj = { channels: channels.map((id) => id.id) };
         const _Array = Array;
-        const obj2 = importDefault(dependencyMap[4]);
+        const obj2 = importDefault(1184);
         obj.inheritedImportances = Array.from(inheritedImportances.entries()).map((arg0) => {
           let tmp;
           let tmp2;

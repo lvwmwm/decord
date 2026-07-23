@@ -1,22 +1,23 @@
-// Module ID: 13428
-// Function ID: 101939
+// Module ID: 13542
+// Function ID: 104095
 // Name: _getGeneratedPoolById
-// Dependencies: []
+// Dependencies: [5, 1857, 13519, 653, 7483, 5590, 7488, 4942, 480, 686, 13543, 2]
 // Exports: getGeneratedPoolById, loginAsGeneratedUser, removeGeneratedPoolFromList
 
-// Module 13428 (_getGeneratedPoolById)
+// Module 13542 (_getGeneratedPoolById)
+import dispatchLogout from "dispatchLogout";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+import { SafetyToastType } from "SafetyToastType";
+
+const require = arg1;
 function _getGeneratedPoolById() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _getGeneratedPoolById = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const Endpoints = arg1(dependencyMap[3]).Endpoints;
-const SafetyToastType = arg1(dependencyMap[4]).SafetyToastType;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/generated_test_users/GeneratedTestUserActionCreators.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/generated_test_users/GeneratedTestUserActionCreators.tsx");
 
 export const loginAsGeneratedUser = function loginAsGeneratedUser(id, arg1) {
   const user = authStore.getUser(arg1);
@@ -39,10 +40,10 @@ export const loginAsGeneratedUser = function loginAsGeneratedUser(id, arg1) {
       const error2 = new Error("User email not found");
       throw error2;
     } else {
-      let obj = importDefault(dependencyMap[5]);
+      let obj = importDefault(5590);
       obj = { login: user.email, password, isMultiAccount: true, source: "generated_test_user" };
       return obj.login(obj).catch(() => {
-        callback(closure_2[6]).showFailedToast(constants.GENERIC_ERROR);
+        outer1_1(outer1_2[6]).showFailedToast(outer1_7.GENERIC_ERROR);
         return null;
       });
     }
@@ -52,7 +53,7 @@ export const getGeneratedPoolById = function getGeneratedPoolById(arg0, arg1) {
   return _getGeneratedPoolById(...arguments);
 };
 export const removeGeneratedPoolFromList = function removeGeneratedPoolFromList(poolId) {
-  let obj = importDefault(dependencyMap[9]);
+  let obj = importDefault(686);
   obj = { type: "GENERATED_POOL_REMOVE_FROM_LIST", poolId };
   obj.dispatch(obj);
 };

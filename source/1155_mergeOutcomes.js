@@ -1,15 +1,15 @@
 // Module ID: 1155
-// Function ID: 13139
+// Function ID: 13140
 // Name: mergeOutcomes
-// Dependencies: []
+// Dependencies: [65]
 // Exports: mergeOutcomes
 
 // Module 1155 (mergeOutcomes)
-let closure_0 = importDefault(dependencyMap[0]);
+import _toConsumableArray from "_toConsumableArray";
+
 
 export const mergeOutcomes = function mergeOutcomes(_outcomesBuffer, _clearOutcomesResult) {
   const map = new Map();
-  const callback = map;
   function process(reason) {
     const combined = "" + reason.reason + ":" + reason.category;
     const value = map.get(combined);
@@ -25,5 +25,5 @@ export const mergeOutcomes = function mergeOutcomes(_outcomesBuffer, _clearOutco
     arr[num] = arguments[num];
   }
   const item = arr.forEach((arr) => arr.forEach(process));
-  return callback(map.values());
+  return map(map.values());
 };

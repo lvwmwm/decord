@@ -1,10 +1,22 @@
-// Module ID: 12387
-// Function ID: 94692
+// Module ID: 12501
+// Function ID: 96848
 // Name: PremiumText
-// Dependencies: []
+// Dependencies: [31, 27, 1851, 33, 4130, 3974, 689, 3776, 1212, 1273, 2]
 // Exports: default
 
-// Module 12387 (PremiumText)
+// Module 12501 (PremiumText)
+import "result";
+import { View } from "get ActivityIndicator";
+import GuildFeatures from "GuildFeatures";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function PremiumText(basePlanId) {
   let isCurrentPlan;
   let isGift;
@@ -12,8 +24,8 @@ function PremiumText(basePlanId) {
   let style;
   let text;
   ({ style, isCurrentPlan, isGift, product, text } = basePlanId);
-  const tmp = callback2();
-  let obj = importDefault(dependencyMap[7]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = importDefault(3776);
   const intervalType = obj.getInterval(basePlanId.basePlanId).intervalType;
   let combined = null;
   if (intervalType === constants.YEAR) {
@@ -26,7 +38,7 @@ function PremiumText(basePlanId) {
   if (null != text) {
     obj = { style: tmp.premiumText };
     obj = { style, numberOfLines: 1 };
-    const intl2 = arg1(dependencyMap[8]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj1 = {};
     let title;
     if (null != product) {
@@ -34,14 +46,14 @@ function PremiumText(basePlanId) {
     }
     obj1.product = title;
     obj1.description = text;
-    obj.accessibilityLabel = intl2.formatToPlainString(arg1(dependencyMap[8]).t.E0lS2r, obj1);
+    obj.accessibilityLabel = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.E0lS2r, obj1);
     obj.children = text;
-    const items = [callback(arg1(dependencyMap[9]).LegacyText, obj), ];
+    const items = [callback(require(1273) /* Button */.LegacyText, obj), ];
     let tmp22 = null;
     if (null != combined) {
       const obj2 = { style: tmp.discount };
       const obj3 = { style, numberOfLines: 1, children: combined };
-      obj2.children = callback(arg1(dependencyMap[9]).LegacyText, obj3);
+      obj2.children = callback(require(1273) /* Button */.LegacyText, obj3);
       tmp22 = callback(View, obj2);
     }
     items[1] = tmp22;
@@ -57,50 +69,43 @@ function PremiumText(basePlanId) {
       str3 = priceString;
     }
     if (intervalType !== constants.MONTH) {
-      const intl3 = arg1(dependencyMap[8]).intl;
+      const intl3 = require(1212) /* getSystemLocale */.intl;
       const formatToPlainString2 = intl3.formatToPlainString;
       if (isGift) {
         const obj4 = { price: str3 };
-        let formatToPlainString2Result = formatToPlainString2(tmp28(tmp29[8]).t.rm53bV, obj4);
+        let formatToPlainString2Result = formatToPlainString2(tmp28(1212).t.rm53bV, obj4);
       } else {
-        const t = arg1(dependencyMap[8]).t;
+        const t = require(1212) /* getSystemLocale */.t;
         const obj5 = { price: str3 };
-        formatToPlainString2Result = formatToPlainString2(isCurrentPlan ? t.dFbQCa : t.rS8FA+, obj5);
+        formatToPlainString2Result = formatToPlainString2(isCurrentPlan ? t.dFbQCa : t["rS8FA+"], obj5);
       }
-      const tmp28 = arg1;
-      const tmp29 = dependencyMap;
+      tmp28 = require;
     }
-    let FIjgMp = arg1;
+    let FIjgMp = require;
     let obj6 = 8;
-    const intl = arg1(dependencyMap[8]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     const formatToPlainString = intl.formatToPlainString;
     if (isGift) {
       FIjgMp = FIjgMp(tmp10[obj6]).t.FIjgMp;
       obj6 = { price: str3 };
       let formatToPlainStringResult = formatToPlainString(FIjgMp, obj6);
     } else {
-      const t2 = arg1(dependencyMap[obj6]).t;
+      const t2 = require(dependencyMap[obj6]).t;
       const obj7 = { price: str3 };
       formatToPlainStringResult = formatToPlainString(isCurrentPlan ? t2.V6iX43 : t2.AbOLNu, obj7);
     }
-    const tmp10 = dependencyMap;
+    tmp10 = dependencyMap;
   }
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ PREMIUM_YEARLY_DISCOUNT_PERCENT: closure_4, SubscriptionIntervalTypes: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = {};
-const tmp4 = arg1(dependencyMap[3]);
-obj.borderColor = arg1(dependencyMap[5]).hexWithOpacity(importDefault(dependencyMap[6]).unsafe_rawColors.WHITE, 0.3);
-obj.discount = obj;
-obj.premiumText = { flexDirection: "row" };
-let closure_8 = obj.createStyles(obj);
-const obj4 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/native/renderPremiumButtonText.tsx");
+({ PREMIUM_YEARLY_DISCOUNT_PERCENT: closure_4, SubscriptionIntervalTypes: closure_5 } = GuildFeatures);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { borderWidth: 1, borderColor: null, borderRadius: 2, marginLeft: 4, paddingHorizontal: 2 };
+_createForOfIteratorHelperLoose.borderColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 0.3);
+_createForOfIteratorHelperLoose.discount = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.premiumText = { flexDirection: "row" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("GuildFeatures").fileFinishedImporting("modules/premium/native/renderPremiumButtonText.tsx");
 
 export default function renderPremiumText(arg0) {
   const merged = Object.assign(arg0);

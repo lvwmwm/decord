@@ -1,11 +1,10 @@
-// Module ID: 10923
-// Function ID: 84959
+// Module ID: 10933
+// Function ID: 85008
 // Name: metadata
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 10923 (metadata)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_assets/assets/orbs/static_idle_orb.png.js");
+// Module 10933 (metadata)
+const result = require("set").fileFinishedImporting("../discord_assets/assets/orbs/static_idle_orb.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/c25ca35dc2175b9ce33ad5bd427fb4c458cbb6cc6e8b01e592e70dd7472bfa0d.png";
 export const metadata = { fileBytes: 31672 };

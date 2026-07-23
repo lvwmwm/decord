@@ -1,10 +1,10 @@
-// Module ID: 3817
-// Function ID: 31716
+// Module ID: 3819
+// Function ID: 31721
 // Name: makeLongFormatter
-// Dependencies: []
+// Dependencies: [3803, 1282, 3817, 3820, 3712, 2]
 // Exports: default
 
-// Module 3817 (makeLongFormatter)
+// Module 3819 (makeLongFormatter)
 function makeLongFormatter(arg0) {
   let str = "full";
   let str2 = "short";
@@ -33,41 +33,43 @@ function makeLongFormatter(arg0) {
     }
   }
   const obj = { dateStyle: str, timeStyle: str2 };
-  const TimestampHourCycle = require(dependencyMap[0]).TimestampHourCycle;
+  const TimestampHourCycle = require(3803) /* explicitContentFromProto */.TimestampHourCycle;
   const setting = TimestampHourCycle.getSetting();
-  if (setting !== require(dependencyMap[1]).TimestampHourCycle.AUTO) {
+  if (setting !== require(1282) /* _callSuper */.TimestampHourCycle.AUTO) {
     if (obj3.supportsSystemDateFormatter()) {
-      if (require(dependencyMap[1]).TimestampHourCycle.H12 === setting) {
+      if (require(1282) /* _callSuper */.TimestampHourCycle.H12 === setting) {
         obj.hourCycle = "h12";
-      } else if (require(dependencyMap[1]).TimestampHourCycle.H23 === setting) {
+      } else if (require(1282) /* _callSuper */.TimestampHourCycle.H23 === setting) {
         obj.hourCycle = "h23";
       }
     }
-    const obj3 = require(dependencyMap[2]);
+    obj3 = require(3817) /* __DiscordCreateDateFormatter */;
   }
-  return require(dependencyMap[3]).makeFormatter(obj);
+  return require(3820) /* makeIntlFormatter */.makeFormatter(obj);
 }
 function convertMomentValue(day, months) {
-  const require = day;
-  let importDefault = months;
+  let closure_0 = day;
+  let format = months;
   if ("function" === typeof months) {
-    closure_2 = months.bind(importDefault(closure_2[4]).localeData());
-    return (arg0, arg1) => callback({ [closure_0]: () => arg0 }, arg1);
+    const dependencyMap = months.bind(format(3712).localeData());
+    return (arg0, arg1) => {
+      let closure_0 = arg0;
+      return callback({ [closure_0]: () => closure_0 }, arg1);
+    };
   } else {
     const _Array = Array;
-    let format = months;
+    format = months;
     if (!Array.isArray(months)) {
       format = months.format;
     }
-    importDefault = format;
     return (arg0) => format[arg0];
   }
 }
 function convertMomentOrdinal(ordinal) {
   let fn = ordinal;
-  const require = ordinal;
+  let closure_0 = ordinal;
   if ("string" === typeof ordinal) {
-    fn = (arg0) => arg0.replace("%d", "" + arg0);
+    fn = (arg0) => ordinal.replace("%d", "" + arg0);
   }
   return fn;
 }
@@ -96,7 +98,7 @@ function getLocaleData() {
   let weekdays;
   let weekdaysMin;
   let weekdaysShort;
-  let obj = importDefault(dependencyMap[4]);
+  let obj = importDefault(3712);
   const _config = obj.localeData()._config;
   ({ meridiem, months, monthsShort, weekdays, weekdaysShort, weekdaysMin } = _config);
   if (undefined === meridiem) {
@@ -104,22 +106,21 @@ function getLocaleData() {
   }
   ({ week, ordinal, longDateFormat } = _config);
   if (undefined === week) {
-    week = {};
+    week = { dow: 0, doy: 6 };
   }
   obj = { months: convertMomentValue("month", months), monthsShort: convertMomentValue("month", monthsShort), weekdays: convertMomentValue("day", weekdays), weekdaysShort: convertMomentValue("day", weekdaysShort), weekdaysMin: convertMomentValue("day", weekdaysMin), meridiem, ordinal: convertMomentOrdinal(ordinal), longDateFormat, longFormatters: [], week };
   return obj;
 }
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("lib/makeDateFormatter.tsx");
+let result = require("__DiscordCreateDateFormatter").fileFinishedImporting("lib/makeDateFormatter.tsx");
 
 export default function makeFormatter(arg0, addResult) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
-  let require;
-  let importDefault;
-  let dependencyMap;
+  let _require;
+  let items;
+  let arr;
   let makeLongFormatter;
   function add(_date) {
     items.push(`(${_date})`);
@@ -130,69 +131,68 @@ export default function makeFormatter(arg0, addResult) {
   if (null == addResult) {
     addResult = getLocaleData();
   }
-  require = addResult;
+  _require = addResult;
   let result = undefined === addResult && !flag;
   if (result) {
-    result = undefined !== require(dependencyMap[2]).makeFormatter;
+    result = undefined !== _require(arr[2]).makeFormatter;
   }
   if (result) {
-    let obj = require(dependencyMap[2]);
+    let obj = _require(arr[2]);
     result = obj.supportsSystemDateFormatter();
   }
-  let arr = arg0;
+  arr = arg0;
   if (!result) {
-    arr = function convertLongDateFormat(str, addResult) {
-      const items = addResult;
+    arr = (function convertLongDateFormat(str, addResult) {
+      let closure_0 = str;
+      let closure_1 = addResult;
       return str.replace(/L[L|T|S]{0,3}/g, (arr) => {
         if (obj.test(arr)) {
-          let LLLL = arg1.longDateFormat.LLLL;
+          let LLLL = addResult.longDateFormat.LLLL;
         } else {
           if (obj2.test(arr)) {
-            LLLL = arg1.longDateFormat.LLL + arr.slice(3);
+            LLLL = addResult.longDateFormat.LLL + arr.slice(3);
           } else {
             if (obj3.test(arr)) {
-              LLLL = arg1.longDateFormat.LL + arr.slice(2);
+              LLLL = addResult.longDateFormat.LL + arr.slice(2);
             } else {
               if (obj4.test(arr)) {
-                LLLL = arg1.longDateFormat.LTS + arr.slice(3);
+                LLLL = addResult.longDateFormat.LTS + arr.slice(3);
               } else {
                 if (obj5.test(arr)) {
-                  LLLL = arg1.longDateFormat.LT + arr.slice(2);
+                  LLLL = addResult.longDateFormat.LT + arr.slice(2);
                 } else {
                   LLLL = arr;
                   if (obj6.test(arr)) {
                     LLLL = arr;
-                    if ("[" !== arr[arg1 - 1]) {
-                      LLLL = arg1.longDateFormat.L + arr.slice(1);
+                    if ("[" !== "["[arg1 - 1]) {
+                      LLLL = addResult.longDateFormat.L + arr.slice(1);
                     }
                   }
-                  const obj6 = /^L/;
+                  obj6 = /^L/;
                 }
-                const obj5 = /^LT/;
+                obj5 = /^LT/;
               }
-              const obj4 = /^LTS/;
+              obj4 = /^LTS/;
             }
-            const obj3 = /^LL/;
+            obj3 = /^LL/;
           }
-          const obj2 = /^LLL/;
+          obj2 = /^LLL/;
         }
         return LLLL;
       });
-    }(arg0, addResult);
+    })(arg0, addResult);
   }
-  const items = [];
-  importDefault = items;
-  obj = { 9223372036854775807: "<string:2982654404>", 0: "<string:44043585>", 0: "<string:62673408>", 0: "<string:71457608>", 0: "<string:2785018381>", 9223372036854775807: "<string:1627390409>", 0: "<string:4282598591>", 9223372036854775807: "<string:2571829249>", 9223372036854775807: "<string:3989241857>", 0: "<string:289341441>", 0: "<string:894500866>", 0: "<string:2749448520>" };
-  dependencyMap = arr;
+  items = [];
+  obj = { month: false, dayOfYear: false, date: false, day: false, week: false, isoweek: false, year: false, hour: false, minutes: false, seconds: false, millis: false, offset: false };
   if (arr.length > 0) {
     while (true) {
-      let tmp13 = dependencyMap;
-      let charAtResult = dependencyMap.charAt(0);
+      let tmp13 = arr;
+      let charAtResult = arr.charAt(0);
       if ("M" === charAtResult) {
         obj.month = true;
         let obj34 = /^MMMM/;
-        addResult = dependencyMap;
-        if (obj34.test(dependencyMap)) {
+        addResult = arr;
+        if (obj34.test(arr)) {
           let _HermesInternal7 = HermesInternal;
           addResult = add("localeData.months(_month, \"" + arr + "\")");
           addResult = nxt(4);
@@ -203,8 +203,8 @@ export default function makeFormatter(arg0, addResult) {
           let tmp22 = tmp12;
         } else {
           let obj35 = /^MMM/;
-          addResult = dependencyMap;
-          if (obj35.test(dependencyMap)) {
+          addResult = arr;
+          if (obj35.test(arr)) {
             let _HermesInternal6 = HermesInternal;
             addResult = add("localeData.monthsShort(_month, \"" + arr + "\")");
             addResult = nxt(3);
@@ -215,8 +215,8 @@ export default function makeFormatter(arg0, addResult) {
             tmp22 = tmp12;
           } else {
             let obj36 = /^MM/;
-            addResult = dependencyMap;
-            if (obj36.test(dependencyMap)) {
+            addResult = arr;
+            if (obj36.test(arr)) {
               addResult = add("_month+1 < 10 ? \"0\" : \"\"");
               addResult = add("_month+1");
               addResult = nxt(2);
@@ -227,8 +227,8 @@ export default function makeFormatter(arg0, addResult) {
               tmp22 = tmp12;
             } else {
               let obj37 = /^Mo/;
-              addResult = dependencyMap;
-              if (obj37.test(dependencyMap)) {
+              addResult = arr;
+              if (obj37.test(arr)) {
                 addResult = add("localeData.ordinal(_month, \"M\")");
                 addResult = nxt(2);
                 tmp18 = tmp8;
@@ -251,8 +251,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("Q" === charAtResult) {
         obj.month = true;
         let obj33 = /^Qo/;
-        addResult = dependencyMap;
-        if (obj33.test(dependencyMap)) {
+        addResult = arr;
+        if (obj33.test(arr)) {
           addResult = add("localeData.ordinal((_month + 1) / 3, \"Q\")");
           addResult = nxt(2);
           tmp18 = tmp8;
@@ -271,12 +271,12 @@ export default function makeFormatter(arg0, addResult) {
         }
       } else if ("D" === charAtResult) {
         let obj28 = /^DDD/;
-        addResult = dependencyMap;
-        if (obj28.test(dependencyMap)) {
+        addResult = arr;
+        if (obj28.test(arr)) {
           obj.dayOfYear = true;
           let obj31 = /^DDDD/;
-          addResult = dependencyMap;
-          if (obj31.test(dependencyMap)) {
+          addResult = arr;
+          if (obj31.test(arr)) {
             addResult = add("_doy < 100 ? \"0\" : \"\"");
             addResult = add("_doy < 10 ? \"0\" : \"\"");
             addResult = add("_doy");
@@ -288,8 +288,8 @@ export default function makeFormatter(arg0, addResult) {
             tmp22 = tmp12;
           } else {
             let obj32 = /^DDDo/;
-            addResult = dependencyMap;
-            if (obj32.test(dependencyMap)) {
+            addResult = arr;
+            if (obj32.test(arr)) {
               addResult = add("localeData.ordinal(_doy, \"DDD\")");
               addResult = nxt(4);
               tmp18 = tmp8;
@@ -310,8 +310,8 @@ export default function makeFormatter(arg0, addResult) {
         } else {
           obj.date = true;
           let obj29 = /^DD/;
-          addResult = dependencyMap;
-          if (obj29.test(dependencyMap)) {
+          addResult = arr;
+          if (obj29.test(arr)) {
             addResult = add("_date < 10 ? \"0\" : \"\"");
             addResult = add("_date");
             addResult = nxt(2);
@@ -322,8 +322,8 @@ export default function makeFormatter(arg0, addResult) {
             tmp22 = tmp12;
           } else {
             let obj30 = /^Do/;
-            addResult = dependencyMap;
-            if (obj30.test(dependencyMap)) {
+            addResult = arr;
+            if (obj30.test(arr)) {
               addResult = add("localeData.ordinal(_date, \"D\")");
               addResult = nxt(2);
               tmp18 = tmp8;
@@ -345,8 +345,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("d" === charAtResult) {
         obj.day = true;
         let obj24 = /^dddd/;
-        addResult = dependencyMap;
-        if (obj24.test(dependencyMap)) {
+        addResult = arr;
+        if (obj24.test(arr)) {
           let _HermesInternal5 = HermesInternal;
           addResult = add("localeData.weekdays(_day, \"" + arr + "\")");
           addResult = nxt(4);
@@ -357,8 +357,8 @@ export default function makeFormatter(arg0, addResult) {
           tmp22 = tmp12;
         } else {
           let obj25 = /^ddd/;
-          addResult = dependencyMap;
-          if (obj25.test(dependencyMap)) {
+          addResult = arr;
+          if (obj25.test(arr)) {
             let _HermesInternal4 = HermesInternal;
             addResult = add("localeData.weekdaysShort(_day, \"" + arr + "\")");
             addResult = nxt(3);
@@ -369,8 +369,8 @@ export default function makeFormatter(arg0, addResult) {
             tmp22 = tmp12;
           } else {
             let obj26 = /^dd/;
-            addResult = dependencyMap;
-            if (obj26.test(dependencyMap)) {
+            addResult = arr;
+            if (obj26.test(arr)) {
               let _HermesInternal3 = HermesInternal;
               addResult = add("localeData.weekdaysMin(_day, \"" + arr + "\")");
               addResult = nxt(2);
@@ -381,8 +381,8 @@ export default function makeFormatter(arg0, addResult) {
               tmp22 = tmp12;
             } else {
               let obj27 = /^do/;
-              addResult = dependencyMap;
-              if (obj27.test(dependencyMap)) {
+              addResult = arr;
+              if (obj27.test(arr)) {
                 addResult = add("localeData.ordinal(_day, \"d\")");
                 addResult = nxt(2);
                 tmp18 = tmp8;
@@ -423,8 +423,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("w" === charAtResult) {
         obj.week = true;
         let obj22 = /^ww/;
-        addResult = dependencyMap;
-        if (obj22.test(dependencyMap)) {
+        addResult = arr;
+        if (obj22.test(arr)) {
           addResult = add("_week < 10 ? \"0\" : \"\"");
           addResult = add("_week");
           addResult = nxt(2);
@@ -435,8 +435,8 @@ export default function makeFormatter(arg0, addResult) {
           tmp22 = tmp12;
         } else {
           let obj23 = /^wo/;
-          addResult = dependencyMap;
-          if (obj23.test(dependencyMap)) {
+          addResult = arr;
+          if (obj23.test(arr)) {
             addResult = add("localeData.ordinal(_week, \"w\")");
             addResult = nxt(2);
             tmp18 = tmp8;
@@ -457,8 +457,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("W" === charAtResult) {
         obj.isoweek = true;
         let obj20 = /^WW/;
-        addResult = dependencyMap;
-        if (obj20.test(dependencyMap)) {
+        addResult = arr;
+        if (obj20.test(arr)) {
           addResult = add("_i_week < 10 ? \"0\" : \"\"");
           addResult = add("_i_week");
           addResult = nxt(2);
@@ -469,8 +469,8 @@ export default function makeFormatter(arg0, addResult) {
           tmp22 = tmp12;
         } else {
           let obj21 = /^Wo/;
-          addResult = dependencyMap;
-          if (obj21.test(dependencyMap)) {
+          addResult = arr;
+          if (obj21.test(arr)) {
             addResult = add("localeData.ordinal(_i_week, \"W\")");
             addResult = nxt(2);
             tmp18 = tmp8;
@@ -491,8 +491,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("Y" === charAtResult) {
         obj.year = true;
         let obj18 = /^YYYY/;
-        addResult = dependencyMap;
-        if (obj18.test(dependencyMap)) {
+        addResult = arr;
+        if (obj18.test(arr)) {
           addResult = add("_year");
           addResult = nxt(4);
           tmp18 = tmp8;
@@ -502,8 +502,8 @@ export default function makeFormatter(arg0, addResult) {
           tmp22 = tmp12;
         } else {
           let obj19 = /^YY/;
-          addResult = dependencyMap;
-          if (obj19.test(dependencyMap)) {
+          addResult = arr;
+          if (obj19.test(arr)) {
             addResult = add("(_year % 100) < 10 ? \"0\" : \"\"");
             addResult = add("_year % 100");
             addResult = nxt(2);
@@ -525,8 +525,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("g" === charAtResult) {
         obj.week = true;
         let obj16 = /^gggg/;
-        addResult = dependencyMap;
-        if (obj16.test(dependencyMap)) {
+        addResult = arr;
+        if (obj16.test(arr)) {
           addResult = add("_weekYear");
           addResult = nxt(4);
           tmp18 = tmp8;
@@ -536,8 +536,8 @@ export default function makeFormatter(arg0, addResult) {
           tmp22 = tmp12;
         } else {
           let obj17 = /^gg/;
-          addResult = dependencyMap;
-          if (obj17.test(dependencyMap)) {
+          addResult = arr;
+          if (obj17.test(arr)) {
             addResult = add("(_weekYear % 100) < 10 ? \"0\" : \"\"");
             addResult = add("_weekYear % 100");
             addResult = nxt(2);
@@ -549,8 +549,8 @@ export default function makeFormatter(arg0, addResult) {
           }
         }
         let _JSON2 = JSON;
-        addResult = dependencyMap;
-        addResult = add(JSON.stringify(dependencyMap.charAt(0)));
+        addResult = arr;
+        addResult = add(JSON.stringify(arr.charAt(0)));
         addResult = nxt(1);
         tmp18 = tmp8;
         tmp19 = tmp9;
@@ -560,8 +560,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("G" === charAtResult) {
         obj.isoweek = true;
         let obj14 = /^GGGG/;
-        addResult = dependencyMap;
-        if (obj14.test(dependencyMap)) {
+        addResult = arr;
+        if (obj14.test(arr)) {
           addResult = add("_i_weekYear");
           addResult = nxt(4);
           tmp18 = tmp8;
@@ -571,8 +571,8 @@ export default function makeFormatter(arg0, addResult) {
           tmp22 = tmp12;
         } else {
           let obj15 = /^GG/;
-          addResult = dependencyMap;
-          if (obj15.test(dependencyMap)) {
+          addResult = arr;
+          if (obj15.test(arr)) {
             addResult = add("(_i_weekYear % 100) < 10 ? \"0\" : \"\"");
             addResult = add("_i_weekYear % 100");
             addResult = nxt(2);
@@ -606,8 +606,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("H" === charAtResult) {
         obj.hour = true;
         let obj13 = /^HH/;
-        let tmp90 = dependencyMap;
-        if (obj13.test(dependencyMap)) {
+        let tmp90 = arr;
+        if (obj13.test(arr)) {
           let addResult3 = add("_hour < 10 ? \"0\" : \"\"");
           let addResult4 = add("_hour");
           let nxtResult2 = nxt(2);
@@ -628,8 +628,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("h" === charAtResult) {
         obj.hour = true;
         let obj12 = /^hh/;
-        let tmp84 = dependencyMap;
-        if (obj12.test(dependencyMap)) {
+        let tmp84 = arr;
+        if (obj12.test(arr)) {
           let addResult6 = add("((_hour+11) % 12) < 9 ? \"0\" : \"\"");
           let addResult7 = add("((_hour+11) % 12) + 1");
           let nxtResult4 = nxt(2);
@@ -650,8 +650,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("k" === charAtResult) {
         obj.hour = true;
         let obj11 = /^kk/;
-        let tmp78 = dependencyMap;
-        if (obj11.test(dependencyMap)) {
+        let tmp78 = arr;
+        if (obj11.test(arr)) {
           let addResult9 = add("_hour > 0 && _hour < 10 ? \"0\" : \"\"");
           let addResult10 = add("_hour === 0 ? \"24\" : _hour");
           let nxtResult6 = nxt(2);
@@ -672,8 +672,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("m" === charAtResult) {
         obj.minutes = true;
         let obj10 = /^mm/;
-        let tmp72 = dependencyMap;
-        if (obj10.test(dependencyMap)) {
+        let tmp72 = arr;
+        if (obj10.test(arr)) {
           let addResult12 = add("_mins < 10 ? \"0\" : \"\"");
           let addResult13 = add("_mins");
           let nxtResult8 = nxt(2);
@@ -694,8 +694,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("s" === charAtResult) {
         obj.seconds = true;
         let obj9 = /^ss/;
-        let tmp66 = dependencyMap;
-        if (obj9.test(dependencyMap)) {
+        let tmp66 = arr;
+        if (obj9.test(arr)) {
           let addResult15 = add("_secs < 10 ? \"0\" : \"\"");
           let addResult16 = add("_secs");
           let nxtResult10 = nxt(2);
@@ -716,14 +716,14 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("S" === charAtResult) {
         obj.millis = true;
         let obj5 = /^SSS/;
-        let tmp48 = dependencyMap;
-        if (obj5.test(dependencyMap)) {
+        let tmp48 = arr;
+        if (obj5.test(arr)) {
           let addResult18 = add("_ms < 100 ? \"0\" : \"\"");
           let addResult19 = add("_ms < 10 ? \"0\" : \"\"");
           let addResult20 = add("_ms");
           let obj7 = /^S{3,9}/;
-          let tmp58 = dependencyMap;
-          let match = obj7.exec(dependencyMap);
+          let tmp58 = arr;
+          let match = obj7.exec(arr);
           if (null == match) {
             break;
           } else {
@@ -743,8 +743,8 @@ export default function makeFormatter(arg0, addResult) {
           }
         } else {
           let obj6 = /^SS/;
-          let tmp49 = dependencyMap;
-          if (obj6.test(dependencyMap)) {
+          let tmp49 = arr;
+          if (obj6.test(arr)) {
             let addResult22 = add("_ms < 100 ? \"0\" : \"\"");
             let addResult23 = add("Math.floor(_ms/10)");
             let nxtResult13 = nxt(2);
@@ -766,8 +766,8 @@ export default function makeFormatter(arg0, addResult) {
       } else if ("Z" === charAtResult) {
         obj.offset = true;
         let obj4 = /^ZZ/;
-        let tmp36 = dependencyMap;
-        let isMatch = obj4.test(dependencyMap);
+        let tmp36 = arr;
+        let isMatch = obj4.test(arr);
         let addResult25 = add("_offs >= 0 ? \"+\" : \"-\"");
         let addResult26 = add("_offH < 10 ? \"0\" : \"\"");
         let addResult27 = add("_offH");
@@ -809,8 +809,8 @@ export default function makeFormatter(arg0, addResult) {
         tmp22 = tmp12;
       } else if ("L" === charAtResult) {
         let obj3 = /^L(?:TS?|L*(?: LTS?)?)/;
-        let tmp25 = dependencyMap;
-        let match1 = obj3.exec(dependencyMap);
+        let tmp25 = arr;
+        let match1 = obj3.exec(arr);
         let first;
         if (null != match1) {
           first = match1[0];
@@ -831,8 +831,8 @@ export default function makeFormatter(arg0, addResult) {
         tmp21 = tmp11;
         tmp22 = tmp12;
       } else if ("[" === charAtResult) {
-        addResult = dependencyMap;
-        addResult = dependencyMap.indexOf("]");
+        addResult = arr;
+        addResult = arr.indexOf("]");
         if (-1 === addResult) {
           let addResult36 = add("\"[\"");
           let nxtResult20 = nxt(1);
@@ -843,8 +843,8 @@ export default function makeFormatter(arg0, addResult) {
           tmp22 = addResult;
         } else {
           let _JSON = JSON;
-          let tmp15 = dependencyMap;
-          let addResult37 = add(JSON.stringify(dependencyMap.slice(1, addResult)));
+          let tmp15 = arr;
+          let addResult37 = add(JSON.stringify(arr.slice(1, addResult)));
           let nxtResult21 = nxt(addResult + 1);
           tmp18 = tmp8;
           tmp19 = tmp9;
@@ -853,12 +853,12 @@ export default function makeFormatter(arg0, addResult) {
           tmp22 = addResult;
         }
       }
-      addResult = dependencyMap;
-      let tmp8 = tmp18;
-      let tmp9 = tmp19;
-      let tmp10 = tmp20;
-      let tmp11 = tmp21;
-      let tmp12 = tmp22;
+      addResult = arr;
+      tmp8 = tmp18;
+      tmp9 = tmp19;
+      tmp10 = tmp20;
+      tmp11 = tmp21;
+      tmp12 = tmp22;
     }
     const _Error = Error;
     const error = new Error("ms len regex failed");
@@ -1034,6 +1034,6 @@ export default function makeFormatter(arg0, addResult) {
   }
   addResult = new Function("d", "localeData", addResult + "return (\n\"\" +\n" + items.join(" +\n") + "\n);");
   makeLongFormatter = addResult;
-  return (arg0) => addResult(arg0, addResult);
+  return (arg0) => _undefined(arg0, c0);
 };
 export { getLocaleData };

@@ -1,18 +1,18 @@
-// Module ID: 10355
-// Function ID: 79942
+// Module ID: 10365
+// Function ID: 79992
 // Name: getChildMapping
-// Dependencies: []
+// Dependencies: [31, 2]
 // Exports: getChildMapping, mergeChildMappings
 
-// Module 10355 (getChildMapping)
-let closure_0 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[1]).fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionChildMapping.tsx");
+// Module 10365 (getChildMapping)
+import result from "result";
+
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionChildMapping.tsx");
 
 export const getChildMapping = function getChildMapping(children) {
   const obj = {};
-  const React = obj;
   if (children) {
-    const Children = React.Children;
+    const Children = obj.Children;
     const mapped = Children.map(children, (arg0) => arg0);
     if (null != mapped) {
       const item = mapped.forEach((key) => {
@@ -31,7 +31,6 @@ export const mergeChildMappings = function mergeChildMappings(children, childMap
   if (children === undefined) {
     obj = {};
   }
-  let closure_0 = obj;
   if (obj === undefined) {
     obj = {};
   }
@@ -58,12 +57,12 @@ export const mergeChildMappings = function mergeChildMappings(children, childMap
         } else {
           obj[tmp4] = tmp3;
           items1 = [];
-          // continue
+          continue;
         }
         continue;
       } else {
         let arr = items1.push(tmp4);
-        // continue
+        continue;
       }
       continue;
     }
@@ -84,6 +83,7 @@ export const mergeChildMappings = function mergeChildMappings(children, childMap
       }
     }
     obj1[key10020] = getValueForKey(key10020);
+    continue;
   }
   let num3 = 0;
   if (0 < arr3.length) {

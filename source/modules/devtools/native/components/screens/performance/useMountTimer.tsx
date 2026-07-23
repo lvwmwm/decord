@@ -1,18 +1,20 @@
-// Module ID: 14586
-// Function ID: 109931
+// Module ID: 14701
+// Function ID: 112095
 // Name: useMountTimer
-// Dependencies: []
+// Dependencies: [57, 31, 2]
 // Exports: default
 
-// Module 14586 (useMountTimer)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importAll(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/devtools/native/components/screens/performance/useMountTimer.tsx");
+// Module 14701 (useMountTimer)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+
+const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/useMountTimer.tsx");
 
 export default function useMountTimer() {
+  let _slicedToArray;
   let tmp2;
-  [tmp2, closure_0] = callback(React.useState(null), 2);
-  const React = React.useRef(0);
+  [tmp2, _slicedToArray] = callback(React.useState(null), 2);
+  React = React.useRef(0);
   let closure_2 = React.useRef(0);
   let closure_3 = React.useRef(null);
   const tmp = callback(React.useState(null), 2);

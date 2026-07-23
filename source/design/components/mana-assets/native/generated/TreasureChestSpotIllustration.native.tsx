@@ -1,13 +1,13 @@
-// Module ID: 6595
-// Function ID: 50825
+// Module ID: 6600
+// Function ID: 50854
 // Name: TreasureChestSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 6601, 2]
 // Exports: TreasureChestSpotIllustration
 
-// Module 6595 (TreasureChestSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestSpotIllustration.native.tsx");
+// Module 6600 (TreasureChestSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestSpotIllustration.native.tsx");
 
 export const TreasureChestSpotIllustration = function TreasureChestSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const TreasureChestSpotIllustration = function TreasureChestSpotIllustrat
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6601) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const TreasureChestSpotIllustration = function TreasureChestSpotIllustrat
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

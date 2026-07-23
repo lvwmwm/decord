@@ -1,13 +1,13 @@
-// Module ID: 5684
-// Function ID: 48945
+// Module ID: 5689
+// Function ID: 48972
 // Name: hasFlag
-// Dependencies: []
+// Dependencies: [653, 1360, 2]
 // Exports: default
 
-// Module 5684 (hasFlag)
-const ActivityFlags = require(dependencyMap[0]).ActivityFlags;
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/activities/utils/hasFlag.tsx");
+// Module 5689 (hasFlag)
+import { ActivityFlags } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/activities/utils/hasFlag.tsx");
 
 export default function hasFlag(flags) {
   let tmp = arg1 !== ActivityFlags.INSTANCE;
@@ -19,8 +19,8 @@ export default function hasFlag(flags) {
       if (null != flags) {
         num2 = flags;
       }
-      hasFlagResult = require(dependencyMap[1]).hasFlag(num2, arg1);
-      const obj = require(dependencyMap[1]);
+      hasFlagResult = require(1360) /* hasFlag */.hasFlag(num2, arg1);
+      const obj = require(1360) /* hasFlag */;
     }
     tmp = hasFlagResult;
   }

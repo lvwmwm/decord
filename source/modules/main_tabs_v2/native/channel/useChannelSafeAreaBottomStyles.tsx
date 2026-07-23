@@ -1,84 +1,85 @@
-// Module ID: 10387
-// Function ID: 80098
+// Module ID: 10397
+// Function ID: 80148
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: []
+// Dependencies: [31, 4808, 3759, 1348, 4177, 4202, 653, 1355, 4130, 689, 10398, 4574, 3996, 624, 1555, 477, 1324, 3834, 8829, 2]
 // Exports: default
 
-// Module 10387 (useChannelSafeAreaBottomStyles)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const InputModes = arg1(dependencyMap[6]).InputModes;
-const StaticChannelRoute = arg1(dependencyMap[7]).StaticChannelRoute;
+// Module 10397 (useChannelSafeAreaBottomStyles)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import { InputModes } from "ME";
+import { StaticChannelRoute } from "set";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let require = arg1;
 let closure_11 = { LURKER: "lurker", VOICE: "voice", CHAT: "chat", DIRECTORY: "directory", EXPRESSION_PICKER: "expression", MEDIA: "media", APPS: "apps", NONE: "none" };
-let closure_12 = arg1(dependencyMap[8]).createStyles((backgroundColor) => {
+let closure_12 = _createForOfIteratorHelperLoose.createStyles((backgroundColor) => {
   let obj = {};
-  obj = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_BASE_LOWER };
+  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOWER };
   obj.lurker = obj;
   obj.chat = { backgroundColor };
   obj.voice = { backgroundColor };
-  obj = { backgroundColor: importDefault(dependencyMap[9]).colors.MOBILE_KEYBOARD_GAP_BACKGROUND };
+  obj = { backgroundColor: importDefault(689).colors.MOBILE_KEYBOARD_GAP_BACKGROUND };
   obj.expressionPickerBackground = obj;
   return obj;
 });
-const obj = arg1(dependencyMap[8]);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/main_tabs_v2/native/channel/useChannelSafeAreaBottomStyles.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/channel/useChannelSafeAreaBottomStyles.tsx");
 
 export default function useChannelSafeAreaBottomStyles(arg0) {
-  const obj = arg1(dependencyMap[16]);
-  const refreshToken = arg1(dependencyMap[16]).resolveRefreshToken(importDefault(dependencyMap[9]).modules.mobile.CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND, obj.useMobileVisualRefreshConfig({ location: "useChannelSafeAreaBottomStyles" }).chatInputFloating);
-  const obj2 = arg1(dependencyMap[16]);
-  const tmp2 = callback(arg1(dependencyMap[17]).useToken(refreshToken));
-  const arg1 = tmp2;
-  const obj3 = arg1(dependencyMap[17]);
-  const gradientBottom = arg1(dependencyMap[18]).useGradientBottom();
-  const importDefault = gradientBottom;
-  const tmp4 = function useChannelSafeAreaBottomType(arg0) {
-    const gradientBottom = null != gradientBottom(tmp4[10])(arg0);
-    const tmp4 = gradientBottom(tmp4[11])(arg0).needSubscriptionToAccess;
-    let closure_3 = gradientBottom(tmp4[12])();
-    const items = [closure_4, closure_6, closure_5, closure_7, closure_8];
+  let obj = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
+  const refreshToken = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(gradientBottom(689).modules.mobile.CHANNEL_SAFE_AREA_BOTTOM_BACKGROUND, obj.useMobileVisualRefreshConfig({ location: "useChannelSafeAreaBottomStyles" }).chatInputFloating);
+  let obj2 = require(1324) /* useIsMobileVisualRefreshExperimentEnabled */;
+  const tmp2 = callback(require(3834) /* map */.useToken(refreshToken));
+  require = tmp2;
+  let obj3 = require(3834) /* map */;
+  gradientBottom = require(8829) /* useGradientBottom */.useGradientBottom();
+  const tmp4 = (function useChannelSafeAreaBottomType(arg0) {
+    let closure_1 = null != gradientBottom(tmp4[10])(arg0);
+    const needSubscriptionToAccess = gradientBottom(tmp4[11])(arg0).needSubscriptionToAccess;
+    let result = gradientBottom(tmp4[12])();
+    const items = [outer1_4, outer1_6, outer1_5, outer1_7, outer1_8];
     return arg0(tmp4[13]).useStateFromStores(items, () => {
-      const channel = channel.getChannel(arg0);
+      const channel = outer2_6.getChannel(callback);
       if (null != channel) {
         const guildId = channel.getGuildId();
       }
-      if (arg0 !== constants2.GUILD_HOME) {
-        if (arg0 !== constants2.ROLE_SUBSCRIPTIONS) {
+      if (callback !== outer2_10.GUILD_HOME) {
+        if (callback !== outer2_10.ROLE_SUBSCRIPTIONS) {
           if (!needSubscriptionToAccess) {
-            if (connected.isConnected()) {
-              if (mode.getMode() !== constants.PUSH_TO_TALK) {
-                if (closure_3 === arg0(needSubscriptionToAccess[14]).KeyboardTypes.EXPRESSION) {
+            if (outer2_4.isConnected()) {
+              if (outer2_7.getMode() !== outer2_9.PUSH_TO_TALK) {
+                if (result === callback(needSubscriptionToAccess[14]).KeyboardTypes.EXPRESSION) {
                   if (obj2.isAndroid()) {
-                    let VOICE = constants3.EXPRESSION_PICKER;
+                    let VOICE = outer2_11.EXPRESSION_PICKER;
                   }
-                  const obj2 = arg0(needSubscriptionToAccess[15]);
+                  obj2 = callback(needSubscriptionToAccess[15]);
                 }
-                if (closure_3 === arg0(needSubscriptionToAccess[14]).KeyboardTypes.MEDIA) {
+                if (result === callback(needSubscriptionToAccess[14]).KeyboardTypes.MEDIA) {
                   if (obj3.isAndroid()) {
-                    VOICE = constants3.MEDIA;
+                    VOICE = outer2_11.MEDIA;
                   }
-                  const obj3 = arg0(needSubscriptionToAccess[15]);
+                  obj3 = callback(needSubscriptionToAccess[15]);
                 }
-                if (closure_3 === arg0(needSubscriptionToAccess[14]).KeyboardTypes.APP_LAUNCHER) {
+                if (result === callback(needSubscriptionToAccess[14]).KeyboardTypes.APP_LAUNCHER) {
                   if (obj4.isAndroid()) {
-                    VOICE = constants3.APPS;
+                    VOICE = outer2_11.APPS;
                   }
-                  const obj4 = arg0(needSubscriptionToAccess[15]);
+                  obj4 = callback(needSubscriptionToAccess[15]);
                 }
                 let isDirectoryResult;
                 if (null != channel) {
                   isDirectoryResult = channel.isDirectory();
                 }
                 if (true === isDirectoryResult) {
-                  VOICE = constants3.DIRECTORY;
+                  VOICE = outer2_11.DIRECTORY;
                 } else {
                   if (null != guildId) {
-                    if (lurking.isLurking(guildId)) {
-                      VOICE = constants3.LURKER;
+                    if (outer2_5.isLurking(guildId)) {
+                      VOICE = outer2_11.LURKER;
                     }
                   }
                   let isForumLikeChannelResult;
@@ -87,43 +88,43 @@ export default function useChannelSafeAreaBottomStyles(arg0) {
                   }
                   if (true === isForumLikeChannelResult) {
                     if (!closure_1) {
-                      VOICE = constants3.CHAT;
+                      VOICE = outer2_11.CHAT;
                     }
                   }
-                  if (null != arg0) {
-                    let NONE2 = constants3.CHAT;
+                  if (null != callback) {
+                    let NONE2 = outer2_11.CHAT;
                   } else {
-                    NONE2 = constants3.NONE;
+                    NONE2 = outer2_11.NONE;
                   }
                 }
               }
-              VOICE = constants3.VOICE;
-            } else if (null == arg0) {
-              let NONE = constants3.NONE;
+              VOICE = outer2_11.VOICE;
+            } else if (null == callback) {
+              let NONE = outer2_11.NONE;
             } else {
-              NONE = constants3.CHAT;
+              NONE = outer2_11.CHAT;
             }
           }
           return NONE;
         }
       }
-      NONE = constants3.NONE;
+      NONE = outer2_11.NONE;
     });
-  }(arg0);
+  })(arg0);
   const dependencyMap = tmp4;
-  const items = [tmp2, gradientBottom, tmp4];
+  let items = [tmp2, gradientBottom, tmp4];
   return React.useMemo(() => {
-    if (tmp4 !== constants.NONE) {
-      if (tmp4 !== constants.DIRECTORY) {
-        if (constants !== constants.EXPRESSION_PICKER) {
-          if (tmp4 !== constants.MEDIA) {
-            if (tmp4 !== constants.APPS) {
-              if (tmp4 === constants.CHAT) {
+    if (closure_2 !== outer1_11.NONE) {
+      if (closure_2 !== outer1_11.DIRECTORY) {
+        if (closure_2 !== outer1_11.EXPRESSION_PICKER) {
+          if (closure_2 !== outer1_11.MEDIA) {
+            if (closure_2 !== outer1_11.APPS) {
+              if (closure_2 === outer1_11.CHAT) {
                 let obj = {};
                 const merged = Object.assign(tmp2.chat);
                 const merged1 = Object.assign(gradientBottom);
                 let prop = obj;
-              } else if (tmp4 === constants.VOICE) {
+              } else if (closure_2 === outer1_11.VOICE) {
                 obj = {};
                 const merged2 = Object.assign(tmp2.voice);
                 const merged3 = Object.assign(gradientBottom);

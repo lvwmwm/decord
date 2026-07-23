@@ -1,40 +1,40 @@
-// Module ID: 12972
-// Function ID: 98680
+// Module ID: 13086
+// Function ID: 100836
 // Name: StepModal
-// Dependencies: [161, 219, 0, 4, 65, 57, 6, 7, 15, 17]
+// Dependencies: [57, 31, 27, 33, 4130, 5084, 1557, 11073, 13087, 2]
 // Exports: StepModal
 
-// Module 12972 (StepModal)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import WebSocketModule from "WebSocketModule";
-import { View } from "__exportStarResult1";
-import log from "log";
-import _toConsumableArray from "_toConsumableArray";
-import _getPrototypeOf from "_getPrototypeOf";
+// Module 13086 (StepModal)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
-({ jsx: closure_6, jsxs: closure_7 } = log);
-_toConsumableArray = { container: { height: "100%" } };
-_toConsumableArray = { 0: -95027199, 0: 2010710017, 9223372036854775807: -1150550015, 0: 709951489, "Bool(false)": -1823407817, "Bool(false)": 732123400, height: require("_slicedToArray").NAV_BAR_HEIGHT };
-_toConsumableArray.stepContainer = _toConsumableArray;
-_toConsumableArray = _toConsumableArray.createStyles(_toConsumableArray);
-const result = _getPrototypeOf.fileFinishedImporting("design/components/Modal/native/StepModal.native.tsx");
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { height: "100%" } };
+_createForOfIteratorHelperLoose = { flexDirection: "column", alignItems: "center", justifyContent: "center", top: 0, left: 0, right: 0, height: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
+_createForOfIteratorHelperLoose.stepContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Modal/native/StepModal.native.tsx");
 
 export const StepModal = function StepModal(steps) {
   steps = steps.steps;
-  const arg1 = steps;
   const onWillFocus = steps.onWillFocus;
-  const importDefault = onWillFocus;
   let obj = Object.create(null);
   obj.steps = 0;
   obj.onWillFocus = 0;
   const merged = Object.assign(steps, obj);
-  const tmp3 = _toConsumableArray();
-  const tmp4 = importDefault(closure_2[6])();
+  const tmp3 = _createForOfIteratorHelperLoose();
+  const tmp4 = onWillFocus(1557)();
   const tmp5 = callback(React.useState(0), 2);
-  closure_2 = tmp5[1];
+  const dependencyMap = tmp5[1];
   const items = [onWillFocus, steps];
   obj = { style: tmp3.container };
-  const callback = React.useCallback((route) => {
+  callback = React.useCallback((route) => {
     let index;
     if (null != steps) {
       index = steps.indexOf(tmp.name);
@@ -51,11 +51,11 @@ export const StepModal = function StepModal(steps) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj["onWillFocus"] = callback;
-  obj["headerStyle"] = { height: arg1(closure_2[5]).NAV_BAR_HEIGHT + tmp4.top };
+  obj["headerStyle"] = { height: steps(5084).NAV_BAR_HEIGHT + tmp4.top };
   obj["hideTitle"] = true;
-  const items1 = [callback2(arg1(closure_2[7]).Modal, obj), ];
+  const items1 = [callback2(steps(11073).Modal, obj), ];
   const obj2 = { style: items2, pointerEvents: "box-none" };
-  const items2 = [tmp3.stepContainer, { marginTop: tmp4.top }];
+  items2 = [tmp3.stepContainer, { marginTop: tmp4.top }];
   const obj3 = { currentStep: tmp5[0] };
   let length;
   if (null != steps) {
@@ -66,7 +66,7 @@ export const StepModal = function StepModal(steps) {
     num = length;
   }
   obj3.totalSteps = num;
-  obj2.children = callback2(arg1(closure_2[8]).ModalStepIndicator, obj3);
+  obj2.children = callback2(steps(13087).ModalStepIndicator, obj3);
   items1[1] = callback2(View, obj2);
   obj.children = items1;
   return closure_7(View, obj);

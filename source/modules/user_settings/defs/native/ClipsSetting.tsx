@@ -1,27 +1,27 @@
-// Module ID: 13760
-// Function ID: 104045
+// Module ID: 13874
+// Function ID: 106201
 // Name: route
-// Dependencies: []
+// Dependencies: [653, 10095, 1212, 13875, 13877, 2]
 
-// Module 13760 (route)
-const _module = require(dependencyMap[1]);
-let obj = {
+// Module 13874 (route)
+import createToggle from "createToggle";
+
+obj = {
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(require(dependencyMap[2]).t.z2jK6X);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.z2jK6X);
   },
   parent: null,
-  IconComponent: require(dependencyMap[3]).ClipsIcon,
+  IconComponent: require("ClipsIcon").ClipsIcon,
   screen: obj
 };
 obj = {
-  route: require(dependencyMap[0]).UserSettingsSections.CLIPS,
+  route: require("ME").UserSettingsSections.CLIPS,
   getComponent() {
-    return require(dependencyMap[4]).default;
+    return require(13877) /* ClipsSettingsScreen */.default;
   }
 };
-const route = _module.createRoute(obj);
-const _module1 = require(dependencyMap[5]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/ClipsSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/ClipsSetting.tsx");
 
 export default route;

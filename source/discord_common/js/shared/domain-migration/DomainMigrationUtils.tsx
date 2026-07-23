@@ -1,13 +1,12 @@
-// Module ID: 5140
-// Function ID: 44835
+// Module ID: 5143
+// Function ID: 44854
 // Name: DomainMigrationEventType
-// Dependencies: []
+// Dependencies: [2]
 // Exports: extractMessage, sendPostMessage
 
-// Module 5140 (DomainMigrationEventType)
-const obj = { MIGRATION_SOURCE_DOMAIN: 0, [0]: "MIGRATION_SOURCE_DOMAIN", MIGRATION_DESTINATION_DOMAIN: 1, [1]: "MIGRATION_DESTINATION_DOMAIN" };
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/domain-migration/DomainMigrationUtils.tsx");
+// Module 5143 (DomainMigrationEventType)
+let obj = { MIGRATION_SOURCE_DOMAIN: 0, [0]: "MIGRATION_SOURCE_DOMAIN", MIGRATION_DESTINATION_DOMAIN: 1, [1]: "MIGRATION_DESTINATION_DOMAIN" };
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/domain-migration/DomainMigrationUtils.tsx");
 
 export const DomainMigrationEventType = { SKIP_MIGRATION: 0, [0]: "SKIP_MIGRATION", SEND_DATA: 1, [1]: "SEND_DATA", DATA_MIGRATED: 2, [2]: "DATA_MIGRATED", DATA_MIGRATED_CONFIRMED: 3, [3]: "DATA_MIGRATED_CONFIRMED" };
 export const DomainMigrationMessageFrom = obj;
@@ -21,7 +20,7 @@ export const sendPostMessage = function sendPostMessage(domainMigrationEvent, po
     const _window = window;
     MIGRATION_SOURCE_ORIGIN = window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
   }
-  const obj = { domainMigrationEvent };
+  obj = { domainMigrationEvent };
   postMessage.postMessage(obj, MIGRATION_SOURCE_ORIGIN);
 };
 export const extractMessage = function extractMessage(origin) {

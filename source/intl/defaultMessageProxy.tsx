@@ -1,13 +1,13 @@
-// Module ID: 12992
-// Function ID: 98887
+// Module ID: 13106
+// Function ID: 101043
 // Name: _defaultMessages
-// Dependencies: [4294967295, 0, 0, 0]
+// Dependencies: [1250, 1214, 13107, 2]
 
-// Module 12992 (_defaultMessages)
-import importDefaultResult from "__exportStarResult1";
-import chainMessagesObjectsResult from "__exportStarResult1";
+// Module 13106 (_defaultMessages)
+import module_1250 from "module_1250";
+import importDefaultResult from "messagesProxy";
+import chainMessagesObjectsResult from "messagesProxy";
 
-const _module = require(dependencyMap[0]);
-const result = require("__exportStarResult1").fileFinishedImporting("intl/defaultMessageProxy.tsx");
+const result = require("messagesProxy").fileFinishedImporting("intl/defaultMessageProxy.tsx");
 
 export const _defaultMessages = chainMessagesObjectsResult;

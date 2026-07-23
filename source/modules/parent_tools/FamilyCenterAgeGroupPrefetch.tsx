@@ -1,23 +1,24 @@
-// Module ID: 14202
-// Function ID: 107472
+// Module ID: 14316
+// Function ID: 109628
 // Name: prefetchFamilyCenterAgeGroupWhen
-// Dependencies: []
+// Dependencies: [6769, 6771, 2]
 // Exports: prefetchFamilyCenterAgeGroupWhen
 
-// Module 14202 (prefetchFamilyCenterAgeGroupWhen)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/parent_tools/FamilyCenterAgeGroupPrefetch.tsx");
+// Module 14316 (prefetchFamilyCenterAgeGroupWhen)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterAgeGroupPrefetch.tsx");
 
 export const prefetchFamilyCenterAgeGroupWhen = function prefetchFamilyCenterAgeGroupWhen(isFamilyCenterV3Enabled) {
   let tmp = isFamilyCenterV3Enabled;
   if (isFamilyCenterV3Enabled) {
-    tmp = null == closure_2.getAgeGroup();
+    tmp = null == _isNativeReflectConstruct.getAgeGroup();
   }
   if (tmp) {
-    if (!closure_2.isLoading()) {
-      if (closure_2.canRefetch()) {
-        importDefault(dependencyMap[1]).initialPageLoad();
-        const obj = importDefault(dependencyMap[1]);
+    if (!_isNativeReflectConstruct.isLoading()) {
+      if (_isNativeReflectConstruct.canRefetch()) {
+        importDefault(6771).initialPageLoad();
+        const obj = importDefault(6771);
       }
     }
   }

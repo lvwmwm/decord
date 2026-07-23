@@ -1,15 +1,14 @@
-// Module ID: 5509
-// Function ID: 46931
+// Module ID: 5512
+// Function ID: 46954
 // Name: ARBITRARY_LARGE_OFFSET
-// Dependencies: []
+// Dependencies: [1273, 5513, 2]
 
-// Module 5509 (ARBITRARY_LARGE_OFFSET)
-const XXLARGE = require(dependencyMap[0]).AvatarSizes.XXLARGE;
-const tmp2 = require(dependencyMap[0]).AVATAR_SIZE_MAP[XXLARGE];
+// Module 5512 (ARBITRARY_LARGE_OFFSET)
+const XXLARGE = require("Button").AvatarSizes.XXLARGE;
+const tmp2 = require("Button").AVATAR_SIZE_MAP[XXLARGE];
 const sum = tmp2 + 12;
 const result = tmp2 / 2;
-const _module = require(dependencyMap[2]);
-const result1 = _module.fileFinishedImporting("modules/user_profile/native/Constants.tsx");
+const result1 = require("set").fileFinishedImporting("modules/user_profile/native/Constants.tsx");
 
 export const ARBITRARY_LARGE_OFFSET = 250;
 export const PROFILE_SIDE_PADDING = 16;
@@ -23,7 +22,7 @@ export const PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING = 12 + result + 6;
 export const PROFILE_CONTENT_BOTTOM_PADDING = 20;
 export const CARD_PADDING = 16;
 export const CARD_ROWS_ICON_SIZE_VARIANT = "md";
-export const CARD_ROWS_ICON_SIZE = require(dependencyMap[1]).ICON_SIZE.md;
+export const CARD_ROWS_ICON_SIZE = require("ICON_SIZE").ICON_SIZE.md;
 export const CARD_ROWS_COLUMN_GAP = 16;
 export const WISHLIST_SUGGESTION_CARD_GAP = 8;
 export const FLOATING_UPSELL_HEIGHT = 140;

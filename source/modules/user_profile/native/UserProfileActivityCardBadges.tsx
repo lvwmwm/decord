@@ -1,35 +1,36 @@
-// Module ID: 11913
-// Function ID: 92227
+// Module ID: 11925
+// Function ID: 92280
 // Name: UserProfileActivityCardBadges
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 11926, 2]
 // Exports: default
 
-// Module 11913 (UserProfileActivityCardBadges)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const ActivityTypes = arg1(dependencyMap[2]).ActivityTypes;
-const jsx = arg1(dependencyMap[3]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/user_profile/native/UserProfileActivityCardBadges.tsx");
+// Module 11925 (UserProfileActivityCardBadges)
+import "result";
+import { View } from "get ActivityIndicator";
+import { ActivityTypes } from "ME";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/user_profile/native/UserProfileActivityCardBadges.tsx");
 
 export default function UserProfileActivityCardBadges(activity) {
   activity = activity.activity;
-  const arg1 = activity;
   if (activity.type === ActivityTypes.PLAYING) {
-    const items = [arg1(dependencyMap[4]).PartyBadge, arg1(dependencyMap[4]).TimestampBadge];
+    const items = [activity(11926).PartyBadge, activity(11926).TimestampBadge];
     let items3 = items;
   } else if (activity.type === ActivityTypes.LISTENING) {
-    const items1 = [arg1(dependencyMap[4]).TimestampBadge];
+    const items1 = [activity(11926).TimestampBadge];
     items3 = items1;
   } else if (activity.type === ActivityTypes.WATCHING) {
-    const items2 = [arg1(dependencyMap[4]).TimestampBadge, arg1(dependencyMap[4]).EpisodeBadge];
+    const items2 = [activity(11926).TimestampBadge, activity(11926).EpisodeBadge];
     items3 = items2;
   } else {
     items3 = [];
   }
   let tmp8 = null;
   if (0 !== items3.length) {
-    const obj = { style: activity.style, children: items3.map((arg0, arg1) => callback(arg0, { activity }, arg1)) };
-    tmp8 = <View {...obj} />;
+    const obj = { style: activity.style, children: items3.map((arg0, arg1) => outer1_4(arg0, { activity }, arg1)) };
+    tmp8 = <View style={arg0.style}>{items3.map((arg0, arg1) => outer1_4(arg0, { activity }, arg1))}</View>;
   }
   return tmp8;
 };

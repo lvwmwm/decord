@@ -1,27 +1,40 @@
-// Module ID: 5645
-// Function ID: 48269
+// Module ID: 5650
+// Function ID: 48296
 // Name: useCanStartPublicThread
-// Dependencies: []
+// Dependencies: [57, 4043, 1352, 1194, 1348, 3758, 5039, 653, 566, 483, 5651, 21, 22, 5652, 5653, 4345, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useIsNonModInLockedThread
 
-// Module 5645 (useCanStartPublicThread)
+// Module 5650 (useCanStartPublicThread)
+import _slicedToArray from "_slicedToArray";
+import { THREADED_CHANNEL_TYPES } from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import ME from "ME";
+import importDefaultResult from "getExperimentDescriptor";
+
+let closure_10;
+let closure_11;
+let closure_12;
+const require = arg1;
 function useCanStartPublicThread(parentChannel, hasFlag) {
-  hasFlag = parentChannel;
+  const _require = parentChannel;
   const items = [closure_8];
   const items1 = [parentChannel];
-  return canStartThread(hasFlag(dependencyMap[8]).useStateFromStores(items, () => {
-    if (arg0.isForumLikeChannel()) {
-      let SEND_MESSAGES = constants.SEND_MESSAGES;
+  return canStartThread(_require(566).useStateFromStores(items, () => {
+    if (parentChannel.isForumLikeChannel()) {
+      let SEND_MESSAGES = outer1_10.SEND_MESSAGES;
     } else {
-      SEND_MESSAGES = callback(closure_3[9]).combine(constants.CREATE_PUBLIC_THREADS, constants.READ_MESSAGE_HISTORY);
-      const obj = callback(closure_3[9]);
+      SEND_MESSAGES = outer1_2(outer1_3[9]).combine(outer1_10.CREATE_PUBLIC_THREADS, outer1_10.READ_MESSAGE_HISTORY);
+      const obj = outer1_2(outer1_3[9]);
     }
-    return closure_8.can(SEND_MESSAGES, arg0);
+    return outer1_8.can(SEND_MESSAGES, parentChannel);
   }, items1), parentChannel, hasFlag);
 }
 function useCanStartPrivateThread(type) {
-  const arg1 = type;
-  arg1(dependencyMap[8]);
+  const _require = type;
+  _require(566);
   [][0] = type;
   let tmp3 = type.type === constants3.GUILD_TEXT;
   if (tmp3) {
@@ -35,7 +48,7 @@ function canStartThread(closure_8, type, hasFlag) {
       if (null != hasFlag) {
         if (hasFlag.hasFlag(constants2.HAS_THREAD)) {
           return false;
-        } else if (importDefault(dependencyMap[10])(hasFlag)) {
+        } else if (importDefault(5651)(hasFlag)) {
           return false;
         }
       }
@@ -70,36 +83,36 @@ function _canUnarchiveThread(isThread) {
   return tmp2;
 }
 function useCanUnarchiveThread(channel) {
-  const arg1 = channel;
+  const _require = channel;
   const items = [closure_8];
-  let stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items, () => {
-    let canResult = null != arg0;
+  let stateFromStores = _require(566).useStateFromStores(items, () => {
+    let canResult = null != closure_0;
     if (canResult) {
-      canResult = closure_8.can(constants.SEND_MESSAGES_IN_THREADS, arg0);
+      canResult = outer1_8.can(outer1_10.SEND_MESSAGES_IN_THREADS, closure_0);
     }
     if (canResult) {
-      canResult = closure_8.can(constants.SEND_MESSAGES, arg0);
+      canResult = outer1_8.can(outer1_10.SEND_MESSAGES, closure_0);
     }
     return canResult;
   });
-  const obj = arg1(dependencyMap[8]);
+  const obj = _require(566);
   const items1 = [closure_8, closure_7];
   const items2 = [channel];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => {
     let channel = null;
-    if (null != arg0) {
-      channel = channel.getChannel(arg0.parent_id);
+    if (null != parent_id) {
+      channel = outer1_7.getChannel(parent_id.parent_id);
     }
     let canResult = null != channel;
     if (canResult) {
-      canResult = closure_8.can(constants.SEND_MESSAGES_IN_THREADS, arg0);
+      canResult = outer1_8.can(outer1_10.SEND_MESSAGES_IN_THREADS, parent_id);
     }
     if (canResult) {
-      canResult = closure_8.can(constants.SEND_MESSAGES, channel);
+      canResult = outer1_8.can(outer1_10.SEND_MESSAGES, channel);
     }
     return canResult;
   }, items2);
-  const obj2 = arg1(dependencyMap[8]);
+  const obj2 = _require(566);
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }
@@ -140,47 +153,42 @@ function useIsActiveChannelOrUnarchivableThread(stateFromStores) {
   return tmp2;
 }
 function useIsThreadModerator(channel) {
-  const arg1 = channel;
-  const items = [closure_8];
-  return arg1(dependencyMap[8]).useStateFromStores(items, () => {
-    const items = [closure_8];
-    return callback(arg0, items);
+  const _require = channel;
+  let items = [closure_8];
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_8];
+    return outer1_23(closure_0, items);
   });
 }
-function isThreadModerator(isLockedThread) {
+function isThreadModerator(closure_0) {
   let tmp = arg1;
   if (arg1 === undefined) {
     const items = [closure_8];
     tmp = items;
   }
   const first = callback(tmp, 1)[0];
-  let canResult = null != isLockedThread;
+  let canResult = null != closure_0;
   if (canResult) {
-    canResult = first.can(constants.MANAGE_THREADS, isLockedThread);
+    canResult = first.can(constants.MANAGE_THREADS, closure_0);
   }
   return canResult;
 }
 function useHasPermissionToJoinThreadVoice(channel) {
-  const arg1 = channel;
+  const _require = channel;
   const items = [closure_8];
-  let stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items, () => closure_8.can(constants.CONNECT, arg0));
+  let stateFromStores = _require(566).useStateFromStores(items, () => outer1_8.can(outer1_10.CONNECT, closure_0));
   if (stateFromStores) {
     stateFromStores = useIsActiveChannelOrUnarchivableThread(channel);
   }
   return stateFromStores;
 }
-let closure_4 = importDefault(dependencyMap[0]);
-const THREADED_CHANNEL_TYPES = arg1(dependencyMap[2]).THREADED_CHANNEL_TYPES;
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const importDefaultResult = importDefault(dependencyMap[1]);
-({ Permissions: closure_10, MessageFlags: closure_11, ChannelTypes: closure_12 } = arg1(dependencyMap[7]));
-const items = [{ config: { enabled: true } }];
-const importDefaultResultResult = importDefaultResult({ defaultConfig: { enabled: false }, treatments: items });
-const tmp3 = arg1(dependencyMap[7]);
-const result = arg1(dependencyMap[16]).fileFinishedImporting("modules/threads/ThreadHooks.tsx");
+({ Permissions: closure_10, MessageFlags: closure_11, ChannelTypes: closure_12 } = ME);
+let obj = { id: "2022-07_voice_in_threads", label: "Voice in Threads", kind: "guild", defaultConfig: { enabled: false } };
+obj = { id: 1, label: "On", config: { enabled: true } };
+let items = [obj];
+obj.treatments = items;
+const importDefaultResultResult = require("getExperimentDescriptor")(obj);
+const result = require("_callSuper").fileFinishedImporting("modules/threads/ThreadHooks.tsx");
 
 export const VoiceInThreadsExperiment = importDefaultResultResult;
 export { useCanStartPublicThread };
@@ -188,8 +196,8 @@ export const computeCanStartPublicThread = function computeCanStartPublicThread(
   if (channel.isForumLikeChannel()) {
     let SEND_MESSAGES = constants.SEND_MESSAGES;
   } else {
-    SEND_MESSAGES = importAll(dependencyMap[9]).combine(constants.CREATE_PUBLIC_THREADS, constants.READ_MESSAGE_HISTORY);
-    const obj = importAll(dependencyMap[9]);
+    SEND_MESSAGES = importAll(483).combine(constants.CREATE_PUBLIC_THREADS, constants.READ_MESSAGE_HISTORY);
+    const obj = importAll(483);
   }
   return canStartThread(closure_8.can(SEND_MESSAGES, channel), channel, message);
 };
@@ -205,15 +213,14 @@ export const useCanStartThread = function useCanStartThread(channel) {
   return tmp;
 };
 export const useCanViewThreadForMessage = function useCanViewThreadForMessage(hasFlag) {
-  const arg1 = hasFlag;
+  const _require = hasFlag;
   const items = [closure_7];
   const items1 = [hasFlag];
-  const stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items, () => channel.getChannel(stateFromStores(closure_3[11]).castMessageIdAsChannelId(arg0.id)), items1);
-  const importDefault = stateFromStores;
-  const obj = arg1(dependencyMap[8]);
+  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_7.getChannel(stateFromStores(outer1_3[11]).castMessageIdAsChannelId(hasFlag.id)), items1);
+  const obj = _require(566);
   const items2 = [closure_8];
   const items3 = [stateFromStores];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items2, () => closure_8.can(constants.VIEW_CHANNEL, stateFromStores), items3);
+  const stateFromStores1 = _require(566).useStateFromStores(items2, () => outer1_8.can(outer1_10.VIEW_CHANNEL, stateFromStores), items3);
   const tmp3 = !hasFlag.hasFlag(constants2.HAS_THREAD);
   let tmp4 = !tmp3;
   if (!tmp3) {
@@ -223,24 +230,23 @@ export const useCanViewThreadForMessage = function useCanViewThreadForMessage(ha
   return tmp4;
 };
 export const useHasActiveThreads = function useHasActiveThreads(channel) {
-  const arg1 = channel;
+  const _require = channel;
   const items = [closure_9, closure_8];
-  return arg1(dependencyMap[8]).useStateFromStoresObject(items, (self) => {
-    const activeJoinedThreadsForParent = store.getActiveJoinedThreadsForParent(self.guild_id, self.id);
-    const activeJoinedRelevantThreadsForParent = store.getActiveJoinedRelevantThreadsForParent(self.guild_id, self.id);
-    self = activeJoinedRelevantThreadsForParent;
-    const activeUnjoinedThreadsForParent = store.getActiveUnjoinedThreadsForParent(self.guild_id, self.id);
-    let obj = callback(closure_3[12])(activeJoinedRelevantThreadsForParent);
-    let someResult = obj.some((channel) => closure_8.can(constants.VIEW_CHANNEL, channel.channel));
-    const someResult1 = callback(closure_3[12])(activeJoinedThreadsForParent).some((channel) => {
+  return _require(566).useStateFromStoresObject(items, () => {
+    const activeJoinedThreadsForParent = outer1_9.getActiveJoinedThreadsForParent(activeJoinedRelevantThreadsForParent.guild_id, activeJoinedRelevantThreadsForParent.id);
+    activeJoinedRelevantThreadsForParent = outer1_9.getActiveJoinedRelevantThreadsForParent(activeJoinedRelevantThreadsForParent.guild_id, activeJoinedRelevantThreadsForParent.id);
+    const activeUnjoinedThreadsForParent = outer1_9.getActiveUnjoinedThreadsForParent(activeJoinedRelevantThreadsForParent.guild_id, activeJoinedRelevantThreadsForParent.id);
+    let obj = outer1_1(outer1_3[12])(activeJoinedRelevantThreadsForParent);
+    let someResult = obj.some((channel) => outer2_8.can(outer2_10.VIEW_CHANNEL, channel.channel));
+    const someResult1 = outer1_1(outer1_3[12])(activeJoinedThreadsForParent).some((channel) => {
       let canResult = !tmp;
       if (!(channel.channel.id in activeJoinedRelevantThreadsForParent)) {
-        canResult = closure_8.can(constants.VIEW_CHANNEL, channel.channel);
+        canResult = outer2_8.can(outer2_10.VIEW_CHANNEL, channel.channel);
       }
       return canResult;
     });
-    const obj2 = callback(closure_3[12])(activeJoinedThreadsForParent);
-    let someResult2 = callback(closure_3[12])(activeUnjoinedThreadsForParent).some((channel) => closure_8.can(constants.VIEW_CHANNEL, channel));
+    const obj2 = outer1_1(outer1_3[12])(activeJoinedThreadsForParent);
+    let someResult2 = outer1_1(outer1_3[12])(activeUnjoinedThreadsForParent).some((channel) => outer2_8.can(outer2_10.VIEW_CHANNEL, channel));
     obj = {};
     if (!someResult) {
       someResult = someResult1;
@@ -257,30 +263,29 @@ export const useHasActiveThreads = function useHasActiveThreads(channel) {
   });
 };
 export const useCanManageThread = function useCanManageThread(channel) {
-  const arg1 = channel;
+  const _require = channel;
   const items = [closure_7];
-  const stateFromStores = arg1(dependencyMap[8]).useStateFromStores(items, () => {
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
     let parent_id;
-    if (null != arg0) {
-      parent_id = arg0.parent_id;
+    if (null != parent_id) {
+      parent_id = parent_id.parent_id;
     }
-    return channel.getChannel(parent_id);
+    return outer1_7.getChannel(parent_id);
   });
-  const importDefault = stateFromStores;
-  const obj = arg1(dependencyMap[8]);
+  const obj = _require(566);
   const items1 = [closure_8];
   const items2 = [stateFromStores];
-  const stateFromStores1 = arg1(dependencyMap[8]).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => {
     let canResult = null != stateFromStores;
     if (canResult) {
-      canResult = closure_8.can(constants.MANAGE_THREADS, stateFromStores);
+      canResult = outer1_8.can(outer1_10.MANAGE_THREADS, stateFromStores);
     }
     return canResult;
   }, items2);
-  const obj2 = arg1(dependencyMap[8]);
-  const items3 = [closure_6];
+  const obj2 = _require(566);
+  const items3 = [_isNativeReflectConstruct];
   let tmp4 = null != channel;
-  const stateFromStores2 = arg1(dependencyMap[8]).useStateFromStores(items3, () => id.getId());
+  const stateFromStores2 = _require(566).useStateFromStores(items3, () => outer1_6.getId());
   if (tmp4) {
     tmp4 = null != stateFromStores;
   }
@@ -336,17 +341,17 @@ export const computeIsReadOnlyThread = function computeIsReadOnlyThread(channel)
 export { useIsThreadModerator };
 export { isThreadModerator };
 export const useCanRemoveThreadMember = function useCanRemoveThreadMember(channelId) {
-  const arg1 = channelId;
-  const items = [closure_7, closure_8, closure_6];
-  return arg1(dependencyMap[8]).useStateFromStores(items, () => {
-    const channel = channel.getChannel(arg0);
+  const _require = channelId;
+  let items = [closure_7, closure_8, _isNativeReflectConstruct];
+  return _require(566).useStateFromStores(items, () => {
+    const channel = outer1_7.getChannel(closure_0);
     if (null == channel) {
       return false;
     } else {
-      let tmp5 = channel.type === constants.PRIVATE_THREAD && channel.ownerId === tmp3;
+      let tmp5 = channel.type === outer1_12.PRIVATE_THREAD && channel.ownerId === tmp3;
       if (!tmp5) {
-        const items = [closure_8];
-        tmp5 = callback(channel, items);
+        const items = [outer1_8];
+        tmp5 = outer1_23(channel, items);
       }
       return tmp5;
     }
@@ -355,15 +360,15 @@ export const useCanRemoveThreadMember = function useCanRemoveThreadMember(channe
 export { useHasPermissionToJoinThreadVoice };
 export const useCanJoinThreadVoice = function useCanJoinThreadVoice(channel) {
   const obj = { guildId: channel.guild_id, location: "e791ea_1" };
-  const tmp = importDefault(dependencyMap[13])();
+  const tmp = importDefault(5652)();
   let enabled = importDefaultResultResult.useExperiment(obj, { autoTrackExposure: false }).enabled;
   const tmp2 = useHasPermissionToJoinThreadVoice(channel);
-  const isGameInvitesPost = arg1(dependencyMap[14]).useIsGameInvitesPost(channel);
-  const obj2 = arg1(dependencyMap[14]);
-  let shouldAgeVerifyForAgeGate = arg1(dependencyMap[15]).useShouldAgeVerifyForAgeGate();
+  const isGameInvitesPost = require(5653) /* _createForOfIteratorHelperLoose */.useIsGameInvitesPost(channel);
+  const obj2 = require(5653) /* _createForOfIteratorHelperLoose */;
+  let shouldAgeVerifyForAgeGate = require(4345) /* shouldAgeVerifyForAgeGate */.useShouldAgeVerifyForAgeGate();
   if (shouldAgeVerifyForAgeGate) {
-    shouldAgeVerifyForAgeGate = arg1(dependencyMap[15]).shouldShowAgeGateForChannelId(channel.id);
-    const obj4 = arg1(dependencyMap[15]);
+    shouldAgeVerifyForAgeGate = require(4345) /* shouldAgeVerifyForAgeGate */.shouldShowAgeGateForChannelId(channel.id);
+    const obj4 = require(4345) /* shouldAgeVerifyForAgeGate */;
   }
   let tmp7 = !tmp && channel.isVocalThread();
   if (tmp7) {
@@ -384,7 +389,7 @@ export const useIsNonModInLockedThread = function useIsNonModInLockedThread(isLo
   const tmp = useIsThreadModerator(isLockedThread);
   return isLockedThread.isLockedThread() && !useIsThreadModerator(isLockedThread);
 };
-export const isNonModInLockedThread = function isNonModInLockedThread(isLockedThread) {
-  const tmp = isThreadModerator(isLockedThread);
-  return isLockedThread.isLockedThread() && !isThreadModerator(isLockedThread);
+export const isNonModInLockedThread = function isNonModInLockedThread(closure_0) {
+  const tmp = isThreadModerator(closure_0);
+  return closure_0.isLockedThread() && !isThreadModerator(closure_0);
 };

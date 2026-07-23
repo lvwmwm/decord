@@ -1,9 +1,17 @@
 // Module ID: 867
-// Function ID: 9659
+// Function ID: 9660
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 102, 18, 795, 868, 869, 849, 807, 800, 801, 857, 870, 852, 825]
 
 // Module 867 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import _classCallCheck from "_inherits";
+import _defineProperties from "registerSpanErrorInstrumentation";
+import "createCheckInEnvelope";
+import _getPrototypeOf from "getCurrentScope";
+import _get from "_get";
+import _inherits from "_inherits";
+
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,24 +22,24 @@ function _isNativeReflectConstruct() {
   const result = _isNativeReflectConstruct();
 }
 function _superPropGet(arg0, arg1, arg2, arg3) {
-  const require = arg2;
+  let closure_0 = arg2;
   let prototype = arg0;
   if (1) {
     prototype = arg0.prototype;
   }
-  const tmpResult = closure_7(closure_6(prototype), arg1, arg2);
+  const tmpResult = _get(_getPrototypeOf(prototype), arg1, arg2);
   const dependencyMap = tmpResult;
   let fn = tmpResult;
   if (2) {
     fn = tmpResult;
     if ("function" === typeof tmpResult) {
-      fn = (arg0) => tmpResult.apply(arg2, arg0);
+      fn = (arg0) => tmpResult.apply(closure_0, arg0);
     }
   }
   return fn;
 }
 function setCurrentRequestSessionErroredOrCrashed(mechanism) {
-  const isolationScope = require(dependencyMap[17]).getIsolationScope();
+  const isolationScope = require(825) /* getCurrentScope */.getIsolationScope();
   const requestSession = isolationScope.getScopeData().sdkProcessingMetadata.requestSession;
   if (requestSession) {
     let handled;
@@ -51,33 +59,26 @@ function setCurrentRequestSessionErroredOrCrashed(mechanism) {
     }
   }
 }
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
-let closure_4 = require(dependencyMap[2]);
-let closure_5 = require(dependencyMap[3]);
-let closure_6 = require(dependencyMap[4]);
-let closure_7 = require(dependencyMap[5]);
-let closure_8 = require(dependencyMap[6]);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const ServerRuntimeClient = (Client) => {
+export const ServerRuntimeClient = ((Client) => {
   class ServerRuntimeClient {
     constructor(arg0) {
       self = this;
-      tmp = closure_3(this, ServerRuntimeClient);
-      obj = ServerRuntimeClient(closure_1[7]);
+      tmp = outer1_3(this, ServerRuntimeClient);
+      obj = ServerRuntimeClient(outer1_1[7]);
       result = obj.registerSpanErrorInstrumentation();
-      obj2 = ServerRuntimeClient(closure_1[8]);
+      obj2 = ServerRuntimeClient(outer1_1[8]);
       result1 = obj2.addUserAgentToTransportHeaders(Client);
       items = [];
       items[0] = Client;
-      obj3 = closure_6(ServerRuntimeClient);
-      tmp4 = closure_5;
-      if (closure_9()) {
+      obj3 = outer1_6(ServerRuntimeClient);
+      tmp4 = outer1_5;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
-        constructResult = Reflect.construct(obj3, items, closure_6(self).constructor);
+        tmp7 = outer1_6;
+        constructResult = Reflect.construct(obj3, items, outer1_6(self).constructor);
       } else {
         constructResult = obj3.apply(self, items);
       }
@@ -86,18 +87,17 @@ export const ServerRuntimeClient = (Client) => {
       return tmp4Result;
     }
   }
-  const require = ServerRuntimeClient;
-  callback2(ServerRuntimeClient, Client);
+  _inherits(ServerRuntimeClient, Client);
   let obj = {
     key: "eventFromException",
     value: function eventFromException(arg0, arg1) {
-      const result = ServerRuntimeClient(closure_1[9]).eventFromUnknownInput(this, this._options.stackParser, arg0, arg1);
+      const result = ServerRuntimeClient(outer1_1[9]).eventFromUnknownInput(this, this._options.stackParser, arg0, arg1);
       result.level = "error";
-      const obj = ServerRuntimeClient(closure_1[9]);
-      return ServerRuntimeClient(closure_1[10]).resolvedSyncPromise(result);
+      const obj = ServerRuntimeClient(outer1_1[9]);
+      return ServerRuntimeClient(outer1_1[10]).resolvedSyncPromise(result);
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "eventFromMessage",
     value: function eventFromMessage(arg0) {
@@ -113,17 +113,17 @@ export const ServerRuntimeClient = (Client) => {
       if (arguments.length > 2) {
         tmp = arguments[2];
       }
-      const obj = ServerRuntimeClient(closure_1[10]);
-      return obj.resolvedSyncPromise(ServerRuntimeClient(closure_1[9]).eventFromMessage(self._options.stackParser, arg0, str, tmp, self._options.attachStacktrace));
+      const obj = ServerRuntimeClient(outer1_1[10]);
+      return obj.resolvedSyncPromise(ServerRuntimeClient(outer1_1[9]).eventFromMessage(self._options.stackParser, arg0, str, tmp, self._options.attachStacktrace));
     }
   };
   items[1] = obj;
   obj = {
     key: "captureException",
     value: function captureException(arg0, arg1, arg2) {
-      callback6(arg1);
+      outer1_11(arg1);
       const items = [arg0, arg1, arg2];
-      return callback5(ServerRuntimeClient, "captureException", this, 3)(items);
+      return outer1_10(ServerRuntimeClient, "captureException", this, 3)(items);
     }
   };
   items[2] = obj;
@@ -143,10 +143,10 @@ export const ServerRuntimeClient = (Client) => {
         tmp = type.exception.values.length > 0;
       }
       if (tmp) {
-        callback6(arg1);
+        outer1_11(arg1);
       }
       const items = [type, arg1, arg2];
-      return callback5(ServerRuntimeClient, "captureEvent", this, 3)(items);
+      return outer1_10(ServerRuntimeClient, "captureEvent", this, 3)(items);
     }
   };
   items[4] = {
@@ -171,30 +171,30 @@ export const ServerRuntimeClient = (Client) => {
             ({ schedule: obj3.schedule, checkinMargin: obj3.checkin_margin, maxRuntime: obj3.max_runtime, timezone: obj3.timezone, failureIssueThreshold: obj3.failure_issue_threshold, recoveryThreshold: obj3.recovery_threshold } = arg1);
             obj.monitor_config = obj;
           }
-          const tmp11 = callback(ServerRuntimeClient(closure_1[14])._getTraceInfoFromScope(self, arg2), 2);
+          const tmp11 = outer1_2(ServerRuntimeClient(outer1_1[14])._getTraceInfoFromScope(self, arg2), 2);
           const first = tmp11[0];
           if (tmp11[1]) {
             const obj1 = { trace: tmp13 };
             obj.contexts = obj1;
           }
-          const obj6 = ServerRuntimeClient(closure_1[15]);
+          const obj6 = ServerRuntimeClient(outer1_1[15]);
           const sdkMetadata = self.getSdkMetadata();
           const checkInEnvelope = obj6.createCheckInEnvelope(obj, first, sdkMetadata, tunnel, self.getDsn());
-          if (ServerRuntimeClient(closure_1[12]).DEBUG_BUILD) {
-            const debug2 = ServerRuntimeClient(closure_1[13]).debug;
+          if (ServerRuntimeClient(outer1_1[12]).DEBUG_BUILD) {
+            const debug2 = ServerRuntimeClient(outer1_1[13]).debug;
             debug2.log("Sending checkin:", checkInId.monitorSlug, checkInId.status);
           }
           self.sendEnvelope(checkInEnvelope);
           return checkInId;
         } else {
-          if (ServerRuntimeClient(closure_1[12]).DEBUG_BUILD) {
-            const debug = ServerRuntimeClient(closure_1[13]).debug;
+          if (ServerRuntimeClient(outer1_1[12]).DEBUG_BUILD) {
+            const debug = ServerRuntimeClient(outer1_1[13]).debug;
             debug.warn("SDK not enabled, will not capture check-in.");
           }
           return checkInId;
         }
       }
-      obj = ServerRuntimeClient(closure_1[11]);
+      obj = ServerRuntimeClient(outer1_1[11]);
       checkInId = obj.uuid4();
     }
   };
@@ -222,21 +222,21 @@ export const ServerRuntimeClient = (Client) => {
         platform.server_name = platform.server_name || self._options.serverName;
       }
       const items = [platform, arg1, arg2, arg3];
-      return callback5(ServerRuntimeClient, "_prepareEvent", self, 3)(items);
+      return outer1_10(ServerRuntimeClient, "_prepareEvent", self, 3)(items);
     }
   };
   items[6] = {
     key: "_setUpMetricsProcessing",
     value: function _setUpMetricsProcessing() {
-      const ServerRuntimeClient = this;
+      const self = this;
       this.on("processMetric", (attributes) => {
         if (self._options.serverName) {
           const _Object = Object;
-          const obj = { server.address: self._options.serverName };
+          const obj = { "server.address": self._options.serverName };
           attributes.attributes = Object.assign(obj, attributes.attributes);
         }
       });
     }
   };
-  return callback(ServerRuntimeClient, items);
-}(require(dependencyMap[16]).Client);
+  return _defineProperties(ServerRuntimeClient, items);
+})(require("_makeInternalError").Client);

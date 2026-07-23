@@ -1,24 +1,26 @@
-// Module ID: 10565
-// Function ID: 82517
+// Module ID: 10575
+// Function ID: 82567
 // Name: ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT
-// Dependencies: []
+// Dependencies: [1194, 1428, 566, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled, useSurfaceDirectRendererExperiment
 
-// Module 10565 (ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[1]);
-obj = { "Bool(false)": "<string:1640362642>", "Bool(false)": "<string:2835960894>", defaultConfig: { enableSurfaceDirectRenderer: false }, variations: { [1]: { enableSurfaceDirectRenderer: true } } };
-let closure_3 = obj.createApexExperiment(obj);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/video_calls/native/SurfaceDirectRendererExperiment.tsx");
+// Module 10575 (ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ApexExperiment from "ApexExperiment";
+
+const require = arg1;
+ApexExperiment = { kind: "user", name: "2026-03-surface-direct-renderer", defaultConfig: { enableSurfaceDirectRenderer: false }, variations: { [1]: { enableSurfaceDirectRenderer: true } } };
+ApexExperiment = ApexExperiment.createApexExperiment(ApexExperiment);
+const result = require("initialize").fileFinishedImporting("modules/video_calls/native/SurfaceDirectRendererExperiment.tsx");
 
 export const ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT = "2026-03-surface-direct-renderer";
 export const isSurfaceDirectRendererExperimentEnabled = function isSurfaceDirectRendererExperimentEnabled() {
-  return closure_3.getConfig({ location: "RTCConnection_media_engine_connect" }).enableSurfaceDirectRenderer;
+  return ApexExperiment.getConfig({ location: "RTCConnection_media_engine_connect" }).enableSurfaceDirectRenderer;
 };
 export const useSurfaceDirectRendererExperiment = function useSurfaceDirectRendererExperiment(userId, location) {
-  location = userId;
-  const items = [closure_2];
+  const _require = userId;
+  const items = [_isNativeReflectConstruct];
   const items1 = [userId];
-  const obj = location(dependencyMap[2]);
-  return null != userId && !location(dependencyMap[2]).useStateFromStores(items, () => arg0 === id.getId(), items1) && closure_3.useConfig(location).enableSurfaceDirectRenderer;
+  const obj = _require(566);
+  return null != userId && !_require(566).useStateFromStores(items, () => closure_0 === outer1_2.getId(), items1) && ApexExperiment.useConfig(location).enableSurfaceDirectRenderer;
 };

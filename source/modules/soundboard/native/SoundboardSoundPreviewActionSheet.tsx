@@ -1,85 +1,86 @@
-// Module ID: 15641
-// Function ID: 119427
+// Module ID: 15758
+// Function ID: 121600
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: []
+// Dependencies: [29, 31, 27, 1849, 4578, 653, 33, 4130, 689, 477, 566, 5464, 5733, 5739, 4585, 4548, 5500, 5151, 11079, 4126, 4543, 9395, 9397, 1212, 7594, 3991, 2]
 // Exports: default
 
-// Module 15641 (SoundboardSoundPreviewActionSheet)
-let closure_3 = [null];
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-const tmp2 = arg1(dependencyMap[2]);
-({ View: closure_6, Image: closure_7 } = tmp2);
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-const AnalyticsObjects = arg1(dependencyMap[5]).AnalyticsObjects;
-({ jsx: closure_11, jsxs: closure_12 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = { padding: 615852536560708200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, spriteIndex: 615852536558870400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Date: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009914420742454073, h: -419189923638918240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, marginTop: importDefault(dependencyMap[8]).space.PX_16 };
-obj.emoji = obj;
-obj.emojiFastImage = {};
-const obj1 = {};
-let obj4 = arg1(dependencyMap[9]);
+// Module 15758 (SoundboardSoundPreviewActionSheet)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { AnalyticsObjects } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import set from "get ActivityIndicator";
+
+let closure_11;
+let closure_12;
+let closure_6;
+let closure_7;
+const require = arg1;
+let closure_3 = ["style"];
+({ View: closure_6, Image: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, width: 64, height: 64, alignSelf: "center" };
+_createForOfIteratorHelperLoose.emoji = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.emojiFastImage = { width: 128, height: 128 };
+let obj1 = {};
 let num;
-if (obj4.isIOS()) {
+if (set.isIOS()) {
   num = 60;
 }
 obj1.fontSize = num;
 obj1.lineHeight = 74;
-obj.emojiText = obj1;
-const tmp3 = arg1(dependencyMap[6]);
-obj.text = { marginTop: importDefault(dependencyMap[8]).space.PX_16, alignSelf: "center" };
-const obj2 = { marginTop: importDefault(dependencyMap[8]).space.PX_16, alignSelf: "center" };
-obj.buttonContainer = { gap: importDefault(dependencyMap[8]).space.PX_8, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
-obj4 = { "Null": null, "Null": null, tintColor: importDefault(dependencyMap[8]).colors.TEXT_DEFAULT };
-obj.star = obj4;
-const obj5 = { "Bool(true)": "50%", "Bool(true)": "hidden", "Bool(true)": "50%", "Bool(true)": 60, borderRadius: importDefault(dependencyMap[8]).radii.round };
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
-obj.border = obj5;
-const obj3 = { gap: importDefault(dependencyMap[8]).space.PX_8, marginTop: importDefault(dependencyMap[8]).space.PX_24 };
-obj.borderPlaying = { borderColor: importDefault(dependencyMap[8]).colors.TEXT_FEEDBACK_POSITIVE };
-let closure_13 = obj.createStyles(obj);
-const obj6 = { borderColor: importDefault(dependencyMap[8]).colors.TEXT_FEEDBACK_POSITIVE };
-const result = arg1(dependencyMap[26]).fileFinishedImporting("modules/soundboard/native/SoundboardSoundPreviewActionSheet.tsx");
+_createForOfIteratorHelperLoose.emojiText = obj1;
+_createForOfIteratorHelperLoose.text = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, alignSelf: "center" };
+let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, alignSelf: "center" };
+_createForOfIteratorHelperLoose.buttonContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+set = { width: 16, height: 16, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
+_createForOfIteratorHelperLoose.star = set;
+let obj5 = { borderColor: "transparent", borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, pointerEvents: "none" };
+let merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
+_createForOfIteratorHelperLoose.border = obj5;
+let obj3 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.borderPlaying = { borderColor: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_POSITIVE };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = set.fileFinishedImporting("modules/soundboard/native/SoundboardSoundPreviewActionSheet.tsx");
 
 export default function SoundboardSoundPreviewActionSheet(channelId) {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const sound = channelId.sound;
-  const importDefault = sound;
-  const tmp = callback3();
-  let obj = arg1(closure_2[10]);
-  const items = [closure_8];
-  closure_2 = obj.useStateFromStores(items, () => {
-    const currentUser = currentUser.getCurrentUser();
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = channelId(566);
+  const items = [_isNativeReflectConstruct];
+  const dependencyMap = obj.useStateFromStores(items, () => {
+    const currentUser = outer1_8.getCurrentUser();
     let id;
     if (null != currentUser) {
       id = currentUser.id;
     }
     return id;
   });
-  const analyticsLocations = importDefault(closure_2[11])().analyticsLocations;
-  let closure_3 = analyticsLocations;
-  let obj1 = arg1(closure_2[10]);
+  const analyticsLocations = sound(5464)().analyticsLocations;
+  let obj1 = channelId(566);
   const items1 = [closure_9];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => {
     const obj = {};
     let isUserPlayingSoundsResult = null != closure_2;
     if (isUserPlayingSoundsResult) {
-      isUserPlayingSoundsResult = closure_9.isUserPlayingSounds(closure_2);
+      isUserPlayingSoundsResult = outer1_9.isUserPlayingSounds(closure_2);
     }
     obj.isPlayingSound = isUserPlayingSoundsResult;
-    obj.isFavorite = closure_9.isFavoriteSound(sound.soundId);
+    obj.isFavorite = outer1_9.isFavoriteSound(sound.soundId);
     return obj;
   });
   let borderPlaying = stateFromStoresObject.isPlayingSound;
-  let callback = borderPlaying;
   const isFavorite = stateFromStoresObject.isFavorite;
-  const React = isFavorite;
   const items2 = [isFavorite, sound, analyticsLocations];
   const items3 = [channelId, sound, borderPlaying];
-  callback = React.useCallback(() => {
+  const callback = isFavorite.useCallback(() => {
     if (isFavorite) {
       let tmpResult = tmp(tmp2[12]);
       tmpResult.removeFavoriteSound(sound.soundId);
@@ -88,52 +89,52 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
       let obj = { sound };
       obj = {};
       const merged = Object.assign(analyticsLocations);
-      obj["object"] = constants.SOUNDBOARD_SOUND;
+      obj["object"] = outer1_10.SOUNDBOARD_SOUND;
       obj.location = obj;
       tmpResult.trackSoundFavorited(obj);
       tmp(tmp2[12]).addFavoriteSound(sound.soundId);
       const tmpResult1 = tmp(tmp2[12]);
     }
   }, items2);
-  const callback1 = React.useCallback(() => {
+  const callback1 = isFavorite.useCallback(() => {
     if (!borderPlaying) {
-      channelId(closure_2[12]).playSoundLocally(channelId, sound, channelId(closure_2[14]).LocalSoundTrigger.SOUNDBOARD);
-      const obj = channelId(closure_2[12]);
+      channelId(5733).playSoundLocally(channelId, sound, channelId(4585).LocalSoundTrigger.SOUNDBOARD);
+      const obj = channelId(5733);
     }
   }, items3);
-  let obj2 = arg1(closure_2[15]);
+  let obj2 = channelId(4548);
   const buttonPressAnimationProps = obj2.useButtonPressAnimationProps();
   obj = { startExpanded: true };
   obj = {};
   obj1 = { fastImageStyle: items4, textEmojiStyle: items5 };
-  const items4 = [, ];
+  items4 = [, ];
   ({ emoji: arr5[0], emojiFastImage: arr5[1] } = tmp);
-  const items5 = [, ];
+  items5 = [, ];
   ({ emoji: arr6[0], emojiText: arr6[1] } = tmp);
-  const tmp6 = callback(buttonPressAnimationProps, closure_3);
+  const tmp6 = borderPlaying(buttonPressAnimationProps, analyticsLocations);
   const tmp8 = closure_12;
   const tmp9 = closure_6;
-  obj1.src = importDefault(closure_2[18])(sound, 64);
+  obj1.src = sound(11079)(sound, 64);
   const emojiName = sound.emojiName;
   let str = "";
   if (null != emojiName) {
     str = emojiName;
   }
   obj1.name = str;
-  const items6 = [callback2(importDefault(closure_2[17]), obj1), , ];
+  const items6 = [callback(sound(5151), obj1), , ];
   obj2 = { style: tmp.text, variant: "heading-lg/extrabold", children: sound.name };
-  items6[1] = callback2(arg1(closure_2[19]).Text, obj2);
+  items6[1] = callback(channelId(4126).Text, obj2);
   const obj3 = { style: tmp.buttonContainer };
   const obj4 = { variant: "primary" };
   if (isFavorite) {
-    let StarOutlineIcon = tmp14(tmp15[21]).StarIcon;
+    let StarOutlineIcon = tmp14(9395).StarIcon;
   } else {
-    StarOutlineIcon = tmp14(tmp15[22]).StarOutlineIcon;
+    StarOutlineIcon = tmp14(9397).StarOutlineIcon;
   }
-  obj4.icon = callback2(StarOutlineIcon, { style: tmp.star });
-  const intl = arg1(closure_2[23]).intl;
+  obj4.icon = callback(StarOutlineIcon, { style: tmp.star });
+  const intl = channelId(1212).intl;
   const string = intl.string;
-  const t = arg1(closure_2[23]).t;
+  const t = channelId(1212).t;
   if (isFavorite) {
     let stringResult = string(t.aBUcp3);
   } else {
@@ -141,23 +142,23 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   }
   obj4.text = stringResult;
   obj4.onPress = callback;
-  const items7 = [callback2(arg1(closure_2[20]).Button, obj4), ];
+  const items7 = [callback(channelId(4543).Button, obj4), ];
   const obj6 = {};
   const obj7 = {};
-  const merged = Object.assign(tmp6);
+  let merged = Object.assign(tmp6);
   obj7["variant"] = "secondary";
   const obj5 = { style: tmp.star };
-  const tmp10 = importDefault(closure_2[17]);
+  const tmp10 = sound(5151);
   const tmp12 = closure_12;
   const tmp13 = closure_6;
   const tmp17 = closure_12;
   const tmp18 = closure_6;
-  const tmp19 = callback2;
-  obj7["icon"] = callback2(closure_7, { style: tmp.star, source: importDefault(closure_2[24]) });
-  const intl2 = arg1(closure_2[23]).intl;
-  obj7["text"] = intl2.string(arg1(closure_2[23]).t.Kd4uxG);
+  const tmp19 = callback;
+  obj7["icon"] = callback(closure_7, { style: tmp.star, source: sound(7594) });
+  const intl2 = channelId(1212).intl;
+  obj7["text"] = intl2.string(channelId(1212).t.Kd4uxG);
   obj7["onPress"] = callback1;
-  const items8 = [callback2(arg1(closure_2[20]).Button, obj7), ];
+  const items8 = [callback(channelId(4543).Button, obj7), ];
   const obj9 = {};
   const items9 = [tmp.border, , ];
   if (borderPlaying) {
@@ -166,12 +167,12 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   items9[1] = borderPlaying;
   items9[2] = buttonPressAnimationProps.style;
   obj9.style = items9;
-  items8[1] = tmp19(importDefault(closure_2[25]).View, obj9);
+  items8[1] = tmp19(sound(3991).View, obj9);
   obj6.children = items8;
   items7[1] = tmp17(tmp18, obj6);
   obj3.children = items7;
   items6[2] = tmp12(tmp13, obj3);
   obj.children = items6;
   obj.children = tmp8(tmp9, obj);
-  return callback2(arg1(closure_2[16]).ActionSheet, obj);
+  return callback(channelId(5500).ActionSheet, obj);
 };

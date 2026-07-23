@@ -1,13 +1,13 @@
-// Module ID: 5939
-// Function ID: 49841
+// Module ID: 5944
+// Function ID: 49870
 // Name: CloudKeypadSpotIllustration
-// Dependencies: []
+// Dependencies: [33, 5085, 5945, 2]
 // Exports: CloudKeypadSpotIllustration
 
-// Module 5939 (CloudKeypadSpotIllustration)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CloudKeypadSpotIllustration.native.tsx");
+// Module 5944 (CloudKeypadSpotIllustration)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CloudKeypadSpotIllustration.native.tsx");
 
 export const CloudKeypadSpotIllustration = function CloudKeypadSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const CloudKeypadSpotIllustration = function CloudKeypadSpotIllustration(
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5945) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const CloudKeypadSpotIllustration = function CloudKeypadSpotIllustration(
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

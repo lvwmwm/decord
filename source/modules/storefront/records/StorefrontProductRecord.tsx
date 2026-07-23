@@ -1,14 +1,15 @@
-// Module ID: 6790
-// Function ID: 53639
+// Module ID: 6795
+// Function ID: 53671
 // Name: StorefrontProductRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6794, 4169, 2]
 
-// Module 6790 (StorefrontProductRecord)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-const tmp2 = () => {
+// Module 6795 (StorefrontProductRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+
+let tmp2 = (() => {
   class StorefrontProductRecord {
     constructor(arg0) {
       tmp = StorefrontProductRecord(this, StorefrontProductRecord);
@@ -16,7 +17,6 @@ const tmp2 = () => {
       return;
     }
   }
-  let closure_0 = StorefrontProductRecord;
   const items = [
     {
       key: "fromServer",
@@ -27,7 +27,7 @@ const tmp2 = () => {
         let tenant_metadata;
         let updated_at;
         ({ options, created_at, updated_at, skus, tenant_metadata } = sku_ids);
-        let obj = { -9223372036854775808: "Text", 0: "resizeMode", 9223372036854775807: "from", 9223372036854775807: "Array", 0: "isArray", 0: "braintreemasterpasslanding" };
+        let obj = { sku_ids: 0, options: 0, created_at: 0, updated_at: 0, skus: 0, tenant_metadata: 0 };
         Object.setPrototypeOf(null);
         let tmp2 = StorefrontProductRecord;
         obj = {};
@@ -37,11 +37,11 @@ const tmp2 = () => {
         obj["createdAt"] = new Date(created_at);
         const date = new Date(created_at);
         obj["updatedAt"] = new Date(updated_at);
-        obj["skus"] = skus.map((arg0) => closure_3.createFromServer(arg0));
+        obj["skus"] = skus.map((arg0) => outer2_3.createFromServer(arg0));
         obj["primaryCollectionId"] = tenant_metadata.collectibles.primary_collection_id;
         let fromServerResult;
         if (null != tenant_metadata.collectibles.primary_collection_styles) {
-          fromServerResult = closure_2.fromServer(tenant_metadata.collectibles.primary_collection_styles);
+          fromServerResult = outer1_2.fromServer(tenant_metadata.collectibles.primary_collection_styles);
         }
         obj["primaryCollectionStyles"] = fromServerResult;
         obj["primaryCollectionPdpBgUrl"] = tenant_metadata.collectibles.primary_collection_pdp_bg_url;
@@ -57,7 +57,7 @@ const tmp2 = () => {
     }
   ];
   return callback(StorefrontProductRecord, null, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/storefront/records/StorefrontProductRecord.tsx");
+})();
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/storefront/records/StorefrontProductRecord.tsx");
 
 export default tmp2;

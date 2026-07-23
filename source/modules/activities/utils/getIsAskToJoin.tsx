@@ -1,13 +1,13 @@
-// Module ID: 10901
-// Function ID: 84735
+// Module ID: 10911
+// Function ID: 84784
 // Name: getIsAskToJoin
-// Dependencies: []
+// Dependencies: [653, 2]
 // Exports: getIsAskToJoin
 
-// Module 10901 (getIsAskToJoin)
-const ActivityActionTypes = require(dependencyMap[0]).ActivityActionTypes;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/activities/utils/getIsAskToJoin.tsx");
+// Module 10911 (getIsAskToJoin)
+import { ActivityActionTypes } from "ME";
+
+const result = require("set").fileFinishedImporting("modules/activities/utils/getIsAskToJoin.tsx");
 
 export const getIsAskToJoin = function getIsAskToJoin(message) {
   const activity = message.activity;

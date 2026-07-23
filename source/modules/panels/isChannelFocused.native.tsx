@@ -1,31 +1,32 @@
-// Module ID: 10217
-// Function ID: 78950
+// Module ID: 10229
+// Function ID: 79022
 // Name: getFocusedChannelId
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0]
+// Dependencies: [57, 31, 4143, 5722, 4342, 3983, 3981, 3982, 3984, 2]
 // Exports: isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 10217 (getFocusedChannelId)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_6 from "__exportStarResult1";
-import { CHANNEL_PREFIX } from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
+// Module 10229 (getFocusedChannelId)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { CHANNEL_PREFIX } from "_createForOfIteratorHelperLoose";
+import withEqualityFn from "withEqualityFn";
 
+const require = arg1;
 function getFocusedChannelId() {
-  const rootNavigationRef = arg1(dependencyMap[7]).getRootNavigationRef();
-  const obj = arg1(dependencyMap[7]);
-  const isChatLockedOpen = arg1(dependencyMap[8]).getChatLayout().isChatLockedOpen;
+  const rootNavigationRef = require(3982) /* getRootNavigationRef */.getRootNavigationRef();
+  const obj = require(3982) /* getRootNavigationRef */;
+  const isChatLockedOpen = require(3984) /* useChatLayout */.getChatLayout().isChatLockedOpen;
   let tmp2 = null;
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const currentRoute = rootNavigationRef.getCurrentRoute();
-      const coerceChannelRouteResult = arg1(dependencyMap[6]).coerceChannelRoute(currentRoute);
+      const coerceChannelRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceChannelRoute(currentRoute);
       if (tmp2 != coerceChannelRouteResult) {
         return coerceChannelRouteResult.params.channelId;
       } else {
         if (isChatLockedOpen) {
-          const coerceGuildsRouteResult = arg1(dependencyMap[6]).coerceGuildsRoute(currentRoute);
+          const coerceGuildsRouteResult = require(3981) /* _createForOfIteratorHelperLoose */.coerceGuildsRoute(currentRoute);
           if (tmp2 != coerceGuildsRouteResult) {
             const params = coerceGuildsRouteResult.params;
             let channelId;
@@ -34,19 +35,19 @@ function getFocusedChannelId() {
             }
             return channelId;
           }
-          const obj5 = arg1(dependencyMap[6]);
+          const obj5 = require(3981) /* _createForOfIteratorHelperLoose */;
         }
         return channelId2;
       }
-      const obj4 = arg1(dependencyMap[6]);
+      const obj4 = require(3981) /* _createForOfIteratorHelperLoose */;
     }
   }
-  if (tmp2 !== closure_9) {
-    return closure_9;
+  if (tmp2 !== c9) {
+    return c9;
   } else {
-    const tmp30 = importDefault(dependencyMap[5])();
+    const tmp30 = importDefault(3983)();
     let num6 = 6;
-    let num4 = arg1(dependencyMap[6]);
+    let num4 = require(3981) /* _createForOfIteratorHelperLoose */;
     let tmp11;
     if (tmp2 != tmp30) {
       const routes = tmp30.routes;
@@ -64,9 +65,9 @@ function getFocusedChannelId() {
     }
     let num3 = num4.coerceMainRoute(tmp11);
     if (tmp2 == num3) {
-      closure_9 = tmp13;
+      c9 = tmp13;
     } else {
-      num4 = arg1(dependencyMap[num6]);
+      num4 = require(dependencyMap[num6]);
       if (!isChatLockedOpen) {
         const state = num3.state;
         let tmp16;
@@ -92,7 +93,7 @@ function getFocusedChannelId() {
           if (tmp2 != params2) {
             channelId1 = params2.channelId;
           }
-          let tmp13 = channelId1;
+          tmp13 = channelId1;
         }
       }
     }
@@ -115,7 +116,7 @@ function getFocusedChannelId() {
     }
     num4 = num4.coerceTabsRoute(tmp20);
     if (tmp2 != num4) {
-      num6 = arg1(dependencyMap[num6]);
+      num6 = require(dependencyMap[num6]);
       num3 = num4.state;
       let tmp24;
       if (tmp2 != num3) {
@@ -137,7 +138,7 @@ function getFocusedChannelId() {
       if (tmp2 != coerceGuildsRouteResult1) {
         const params3 = coerceGuildsRouteResult1.params;
         tmp2 = tmp2 == params3;
-        let channelId2;
+        channelId2 = undefined;
         if (!tmp2) {
           channelId2 = params3.channelId;
         }
@@ -149,31 +150,30 @@ function getFocusedChannelId() {
 function isChannelFocused() {
   return null != getFocusedChannelId();
 }
-let closure_9 = null;
-const result = require("__exportStarResult1").fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
+let c9 = null;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");
 
 export { getFocusedChannelId };
 export { isChannelFocused };
 export const useIsChannelFocused = function useIsChannelFocused() {
-  const tmp = callback(React.useState(() => callback2()), 2);
+  const tmp = callback(React.useState(() => outer1_11()), 2);
   let closure_0 = tmp[1];
-  const items = [importDefault(dependencyMap[8])()];
+  const items = [importDefault(3984)()];
   const effect = React.useEffect(() => {
-    callback(callback2());
+    callback(outer1_11());
   }, items);
   const effect1 = React.useEffect(() => {
     function handleStateChange() {
-      rootNavigationRef(callback());
+      rootNavigationRef(outer2_11());
     }
-    const rootNavigationRef = callback(closure_2[7]).getRootNavigationRef();
-    const callback = rootNavigationRef;
+    const rootNavigationRef = callback(outer1_2[7]).getRootNavigationRef();
     if (null != rootNavigationRef) {
       rootNavigationRef.addListener("state", handleStateChange);
       return () => {
         rootNavigationRef.removeListener("state", handleStateChange);
       };
     }
-    const obj = callback(closure_2[7]);
+    const obj = callback(outer1_2[7]);
   }, []);
   return tmp[0];
 };
@@ -181,14 +181,14 @@ export const isChannelFocusedForReadStateAck = function isChannelFocusedForReadS
   if (chatOpen.getChatOpen(channelId)) {
     return true;
   } else {
-    const state = state.getState();
+    state = state.getState();
     if (state.isVoicePanelFullscreen()) {
       return false;
     } else if (getFocusedChannelId() === channelId) {
       return true;
     } else {
       if (null != timestamp) {
-        const lastFocusedTimestampForHistoryItem = lastFocusedTimestampForHistoryItem.getLastFocusedTimestampForHistoryItem(CHANNEL_PREFIX + channelId);
+        lastFocusedTimestampForHistoryItem = lastFocusedTimestampForHistoryItem.getLastFocusedTimestampForHistoryItem(CHANNEL_PREFIX + channelId);
         if (null != lastFocusedTimestampForHistoryItem) {
           if (lastFocusedTimestampForHistoryItem >= timestamp) {
             return true;

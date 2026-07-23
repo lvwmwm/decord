@@ -1,22 +1,22 @@
-// Module ID: 4690
-// Function ID: 40833
+// Module ID: 4693
+// Function ID: 40851
 // Name: DiscordMd5
-// Dependencies: []
+// Dependencies: [5, 6, 7, 4694, 2]
 
-// Module 4690 (DiscordMd5)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const tmp2 = () => {
+// Module 4693 (DiscordMd5)
+import asyncGeneratorStep from "asyncGeneratorStep";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const tmp2 = (() => {
   class DiscordMd5 {
     constructor() {
-      tmp = closure_3(this, DiscordMd5);
+      tmp = outer1_3(this, DiscordMd5);
       return;
     }
   }
-  const dependencyMap = DiscordMd5;
   let obj = { key: "fromBlob" };
-  let closure_0 = callback(async (arg0) => closure_1.fromArrayBuffer(yield arg0.arrayBuffer()));
+  let closure_0 = callback(async (arg0) => outer1_1.fromArrayBuffer(yield arg0.arrayBuffer()));
   obj.value = function fromBlob(arg0) {
     return callback(...arguments);
   };
@@ -36,7 +36,7 @@ const tmp2 = () => {
       const resolved = Promise.resolve();
       return resolved.then(() => {
         let length;
-        const match = /^data:[^;]*;base64,(.*)$/.exec(arg0);
+        const match = /^data:[^;]*;base64,(.*)$/.exec(callback);
         if (null == match) {
           const _Error = Error;
           const error = new Error("Not a base64 data URI");
@@ -56,7 +56,7 @@ const tmp2 = () => {
               length = atobResult.length;
             } while (num < length);
           }
-          const _ArrayBuffer = arg0(closure_1[3]).ArrayBuffer;
+          const _ArrayBuffer = callback(DiscordMd5[3]).ArrayBuffer;
           return _ArrayBuffer.hash(arrayBuffer);
         }
         const obj = /^data:[^;]*;base64,(.*)$/;
@@ -65,7 +65,7 @@ const tmp2 = () => {
   };
   items[2] = obj;
   return callback2(DiscordMd5, null, items);
-}();
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/discord_md5/DiscordMd5.tsx");
+})();
+const result = require("_defineProperties").fileFinishedImporting("modules/discord_md5/DiscordMd5.tsx");
 
 export default tmp2;

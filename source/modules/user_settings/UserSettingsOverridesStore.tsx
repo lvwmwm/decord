@@ -1,9 +1,17 @@
-// Module ID: 3802
-// Function ID: 31355
+// Module ID: 3804
+// Function ID: 31360
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1316, 566, 587, 686, 2]
 
-// Module 3802 (_isNativeReflectConstruct)
+// Module 3804 (_isNativeReflectConstruct)
+import initialize from "initialize";
+import Storage from "Storage";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +21,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +74,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,7 +101,7 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getExistingSettings() {
-  const settings = settings.settings;
+  settings = settings.settings;
   const obj = {};
   const textAndImages = settings.textAndImages;
   let value;
@@ -125,27 +133,21 @@ function updateExistingSettings() {
   let closure_9 = getExistingSettings();
   return false;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
 let closure_8 = {};
 let closure_9 = {};
-let tmp2 = (PersistedStore) => {
+let tmp2 = ((PersistedStore) => {
   class UserSettingsOverridesStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, UserSettingsOverridesStore);
-      obj = closure_5(UserSettingsOverridesStore);
-      tmp2 = closure_4;
-      if (closure_10()) {
+      tmp = outer1_2(this, UserSettingsOverridesStore);
+      obj = outer1_5(UserSettingsOverridesStore);
+      tmp2 = outer1_4;
+      if (outer1_10()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -154,7 +156,6 @@ let tmp2 = (PersistedStore) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = UserSettingsOverridesStore;
   callback2(UserSettingsOverridesStore, PersistedStore);
   let obj = {
     key: "initialize",
@@ -164,15 +165,16 @@ let tmp2 = (PersistedStore) => {
       if (null == arg0) {
         obj = {};
       }
-      const items = [closure_7];
-      self.syncWith(items, closure_14);
+      const outer1_8 = obj;
+      const items = [outer1_7];
+      self.syncWith(items, outer1_14);
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "getState",
     value() {
-      return closure_8;
+      return outer1_8;
     }
   };
   items[1] = obj;
@@ -180,7 +182,7 @@ let tmp2 = (PersistedStore) => {
     key: "getAppliedOverrideReasonKey",
     value(arg0) {
       let reasonKey;
-      if (null != closure_8[arg0]) {
+      if (null != outer1_8[arg0]) {
         reasonKey = tmp.reasonKey;
       }
       return reasonKey;
@@ -190,27 +192,27 @@ let tmp2 = (PersistedStore) => {
   items[3] = {
     key: "getOverride",
     value(arg0) {
-      return closure_8[arg0];
+      return outer1_8[arg0];
     }
   };
   return callback(UserSettingsOverridesStore, items);
-}(importDefault(dependencyMap[6]).PersistedStore);
+})(require("initialize").PersistedStore);
 tmp2.displayName = "UserSettingsOverridesStore";
 tmp2.persistKey = "UserSettingsOverridesStore";
-const items = [
+let items = [
   () => {
-    const Storage = arg1(dependencyMap[7]).Storage;
+    const Storage = require(587) /* Storage */.Storage;
     let obj = Storage.get("UserSettingsStoreOverrides");
     if (null == obj) {
       obj = {};
     }
-    const Storage2 = arg1(dependencyMap[7]).Storage;
+    const Storage2 = require(587) /* Storage */.Storage;
     Storage2.remove("UserSettingsStoreOverrides");
     return obj;
   }
 ];
 tmp2.migrations = items;
-tmp2 = new tmp2(importDefault(dependencyMap[8]), {
+tmp2 = new tmp2(require("dispatcher"), {
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsProtoUpdate() {
     let flag = false;
     let flag2 = false;
@@ -218,15 +220,15 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     if (keys !== undefined) {
       flag2 = flag;
       while (keys[tmp] !== undefined) {
-        let tmp6 = tmp4;
-        let tmp7 = closure_9;
-        if (tmp2[tmp4] === closure_9[tmp4]) {
+        let tmp8 = tmp6;
+        let tmp9 = table;
+        if (tmp4[tmp6] === table[tmp6]) {
           continue;
         } else {
-          let tmp5 = closure_8;
-          delete r10[r11];
+          let tmp7 = closure_8;
+          delete tmp2[tmp3];
           flag = true;
-          // continue
+          continue;
         }
         continue;
       }
@@ -234,20 +236,20 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     return flag2;
   },
   USER_SETTINGS_OVERRIDE_APPLY: function handleApplySettingsOverride(settings) {
-    const merged = Object.assign(closure_8);
+    const obj = {};
+    const merged = Object.assign(obj);
     const merged1 = Object.assign(settings.settings);
-    closure_8 = {};
   },
   USER_SETTINGS_OVERRIDE_CLEAR: function handleClearSettingsOverride(settings) {
     let done;
-    const tmp = _createForOfIteratorHelperLoose(settings.settings);
-    let iter = tmp();
+    const tmp3 = _createForOfIteratorHelperLoose(settings.settings);
+    let iter = tmp3();
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp2 = closure_8;
-        delete r1[r5];
-        let iter2 = tmp();
+        let tmp4 = closure_8;
+        delete tmp[tmp2];
+        let iter2 = tmp3();
         iter = iter2;
         done = iter2.done;
       } while (!done);
@@ -260,6 +262,6 @@ tmp2 = new tmp2(importDefault(dependencyMap[8]), {
     let closure_8 = {};
   }
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/UserSettingsOverridesStore.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/UserSettingsOverridesStore.tsx");
 
 export default tmp2;

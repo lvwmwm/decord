@@ -1,15 +1,15 @@
 // Module ID: 35
 // Function ID: 1270
 // Name: ProgressBarAndroid
-// Dependencies: [48, 49, 51, 50]
+// Dependencies: [29, 33, 31, 36]
 // Exports: default
 
 // Module 35 (ProgressBarAndroid)
-import nullthrows from "nullthrows";
-import { jsx } from "getFabricUIManager";
-import "map";
+import _objectWithoutProperties from "_objectWithoutProperties";
+import { jsx } from "jsxProd";
+import result from "result";
 
-let closure_2 = [true, true, true, true];
+let closure_2 = ["ref", "styleAttr", "indeterminate", "animating"];
 
 export default function ProgressBarAndroid(ref) {
   const styleAttr = ref.styleAttr;
@@ -23,5 +23,5 @@ export default function ProgressBarAndroid(ref) {
   const tmp = undefined === indeterminate || indeterminate;
   const tmp2 = undefined === animating || animating;
   const tmp3 = callback(ref, closure_2);
-  return jsx(importDefault(dependencyMap[3]), Object.assign(obj, tmp3, { ref: ref.ref }));
+  return jsx(importDefault(36), Object.assign(obj, tmp3, { ref: ref.ref }));
 };

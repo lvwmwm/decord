@@ -1,53 +1,48 @@
-// Module ID: 15148
-// Function ID: 114299
+// Module ID: 15263
+// Function ID: 116468
 // Name: useTrackRoleSubscriptionUpsellAnalytics
-// Dependencies: [57, 31, 27, 33, 4126, 689, 1557, 14002, 15153, 5184, 4124]
+// Dependencies: [31, 3752, 653, 14102, 15264, 566, 5464, 1198, 675, 4324, 2]
 // Exports: default
 
-// Module 15148 (useTrackRoleSubscriptionUpsellAnalytics)
-import _slicedToArray from "_slicedToArray";
-import module_31 from "module_31";
-import { AnalyticEvents } from "get ActivityIndicator";
-import Text from "Text";
+// Module 15263 (useTrackRoleSubscriptionUpsellAnalytics)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
 
-const result = Text.fileFinishedImporting("modules/guild_role_subscriptions/useTrackRoleSubscriptionUpsellAnalytics.tsx");
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/useTrackRoleSubscriptionUpsellAnalytics.tsx");
 
 export default function useTrackRoleSubscriptionUpsellAnalytics(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
   const groupListingId = guildId.groupListingId;
-  const importDefault = groupListingId;
   const _location = guildId.location;
-  const dependencyMap = _location;
   const relevantSubscriptionListingIds = guildId.relevantSubscriptionListingIds;
-  const React = relevantSubscriptionListingIds;
   let analyticsLocations;
   let closure_8;
-  const groupListingsFetchContext = arg1(dependencyMap[3]).useGroupListingsFetchContext("useTrackRoleSubscriptionUpsellAnalytics");
-  let module_31 = groupListingsFetchContext;
-  const tmp2 = null != importDefault(dependencyMap[4])(groupListingId).activeSubscription;
+  const groupListingsFetchContext = guildId(_location[3]).useGroupListingsFetchContext("useTrackRoleSubscriptionUpsellAnalytics");
+  const tmp2 = null != groupListingId(_location[4])(groupListingId).activeSubscription;
   const AnalyticEvents = tmp2;
-  const obj = arg1(dependencyMap[3]);
-  const items = [module_31];
+  let obj = guildId(_location[3]);
+  const items = [groupListingsFetchContext];
   const items1 = [relevantSubscriptionListingIds];
-  const stateFromStoresArray = arg1(dependencyMap[5]).useStateFromStoresArray(items, () => null != relevantSubscriptionListingIds ? relevantSubscriptionListingIds : [].filter((arg0) => {
-    const subscriptionListing = subscriptionListing.getSubscriptionListing(arg0);
+  const stateFromStoresArray = guildId(_location[5]).useStateFromStoresArray(items, () => null != relevantSubscriptionListingIds ? relevantSubscriptionListingIds : [].filter((arg0) => {
+    const subscriptionListing = groupListingsFetchContext.getSubscriptionListing(arg0);
     let published;
     if (null != subscriptionListing) {
       published = subscriptionListing.published;
     }
     return true === published;
   }), items1);
-  const obj2 = arg1(dependencyMap[5]);
-  const tmp4 = importDefault(dependencyMap[6]);
-  let lastRouteChangeSourceLocationStack = arg1(dependencyMap[7]).getLastRouteChangeSourceLocationStack();
+  const obj2 = guildId(_location[5]);
+  const tmp4 = groupListingId(_location[6]);
+  let lastRouteChangeSourceLocationStack = guildId(_location[7]).getLastRouteChangeSourceLocationStack();
   if (null == lastRouteChangeSourceLocationStack) {
     lastRouteChangeSourceLocationStack = [];
   }
   analyticsLocations = tmp4(lastRouteChangeSourceLocationStack).analyticsLocations;
-  closure_8 = React.useRef(false);
+  closure_8 = relevantSubscriptionListingIds.useRef(false);
   const items2 = [guildId, groupListingId, groupListingsFetchContext, _location, stateFromStoresArray, tmp2, analyticsLocations];
-  const effect = React.useEffect(() => {
+  const effect = relevantSubscriptionListingIds.useEffect(() => {
     let tmp = groupListingsFetchContext;
     if (groupListingsFetchContext) {
       tmp = null != groupListingId;

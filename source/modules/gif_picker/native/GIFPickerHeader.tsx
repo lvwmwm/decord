@@ -1,21 +1,25 @@
-// Module ID: 9580
-// Function ID: 74648
-// Dependencies: []
+// Module ID: 9587
+// Function ID: 74689
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5781, 9577, 9588, 5772, 4660, 1212, 9589, 4126, 2]
 
-// Module 9580
-const View = arg1(dependencyMap[1]).View;
-arg1(dependencyMap[2]).GIFPickerResultTypes;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj1 = arg1(dependencyMap[4]);
+// Module 9587
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+require("ME").GIFPickerResultTypes;
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
 let obj = {};
-obj = { paddingVertical: importDefault(dependencyMap[5]).space.PX_8 };
+obj = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
 obj.container = obj;
-obj1 = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_8, height: arg1(dependencyMap[6]).InputHeights.MD + importDefault(dependencyMap[5]).space.PX_4 / 2, gap: importDefault(dependencyMap[5]).space.PX_8 };
-obj.header = obj1;
-let closure_7 = obj1.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
+_createForOfIteratorHelperLoose = { borderWidth: 1, borderColor: "transparent", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, height: require("InputHeights").InputHeights.MD + require("_createForOfIteratorHelperLoose").space.PX_4 / 2, flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+obj.header = _createForOfIteratorHelperLoose;
+let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function GIFPickerHeader(arg0) {
   let categoryType;
   let onQueryChange;
   let onQueryClear;
@@ -23,43 +27,43 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
   ({ categoryType, onQueryClear } = arg0);
   ({ onQueryChange, searchInputRef } = arg0);
   const tmp = callback2();
-  let obj = arg1(dependencyMap[7]);
+  let obj = require(9577) /* getGifProviderConfig */;
   const providerForAPIRequest = obj.getProviderForAPIRequest();
-  arg1(dependencyMap[8]);
+  require(9588) /* getSearchPlaceholder */;
   obj = { style: tmp.container };
   if (categoryType === GIFPickerResultTypes.SEARCH) {
     obj = { size: "md", onChange: onQueryChange, placeholder: tmp4, onClear: onQueryClear, ref: searchInputRef, isRound: true };
-    let tmp18Result = callback(arg1(dependencyMap[9]).SearchField, obj);
+    let tmp18Result = callback(require(5772) /* SearchField */.SearchField, obj);
   } else {
     const obj1 = { style: tmp.header, accessibilityRole: "button", onPress: onQueryClear };
-    const intl4 = arg1(dependencyMap[11]).intl;
+    const intl4 = require(1212) /* getSystemLocale */.intl;
     const obj2 = {};
-    const intl5 = arg1(dependencyMap[11]).intl;
-    obj2.destination = intl5.string(arg1(dependencyMap[11]).t.ffgJrs);
-    obj1.accessibilityLabel = intl4.formatToPlainString(arg1(dependencyMap[11]).t.UTypEu, obj2);
-    const obj3 = { color: importDefault(dependencyMap[5]).colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
-    const items = [callback(arg1(dependencyMap[12]).ChevronLargeLeftIcon, obj3), ];
-    const obj4 = { 0: "explicit_content_friend_dm", -9223372036854775808: "enum", 9223372036854775807: "CVE" };
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    obj2.destination = intl5.string(require(1212) /* getSystemLocale */.t.ffgJrs);
+    obj1.accessibilityLabel = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.UTypEu, obj2);
+    const obj3 = { color: importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
+    const items = [callback(require(9589) /* ChevronLargeLeftIcon */.ChevronLargeLeftIcon, obj3), ];
+    const obj4 = { variant: "text-sm/semibold", color: "text-default", maxFontSizeMultiplier: 2 };
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {
-      const intl3 = arg1(dependencyMap[11]).intl;
-      let stringResult = intl3.string(arg1(dependencyMap[11]).t.TsWCdW);
+      const intl3 = require(1212) /* getSystemLocale */.intl;
+      let stringResult = intl3.string(require(1212) /* getSystemLocale */.t.TsWCdW);
     } else if (categoryType === GIFPickerResultTypes.FAVORITES) {
-      const intl2 = arg1(dependencyMap[11]).intl;
-      stringResult = intl2.string(arg1(dependencyMap[11]).t.k8fFjp);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl2.string(require(1212) /* getSystemLocale */.t.k8fFjp);
     } else {
-      const intl = arg1(dependencyMap[11]).intl;
-      stringResult = intl.string(arg1(dependencyMap[11]).t.5h0QOP);
+      const intl = require(1212) /* getSystemLocale */.intl;
+      stringResult = intl.string(require(1212) /* getSystemLocale */.t["5h0QOP"]);
     }
     obj4.children = stringResult;
-    items[1] = callback(arg1(dependencyMap[13]).Text, obj4);
+    items[1] = callback(require(4126) /* Text */.Text, obj4);
     obj1.children = items;
-    tmp18Result = closure_6(arg1(dependencyMap[10]).PressableOpacity, obj1);
+    tmp18Result = closure_6(require(4660) /* PressableBase */.PressableOpacity, obj1);
     const tmp18 = closure_6;
     const tmp21 = callback;
   }
   obj.children = tmp18Result;
   return callback(View, obj);
 });
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/gif_picker/native/GIFPickerHeader.tsx");
+const result = require("ME").fileFinishedImporting("modules/gif_picker/native/GIFPickerHeader.tsx");
 
 export default memoResult;

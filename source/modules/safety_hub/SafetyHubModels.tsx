@@ -1,11 +1,10 @@
-// Module ID: 7539
-// Function ID: 60361
+// Module ID: 7545
+// Function ID: 60398
 // Name: ContentIdType
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 7539 (ContentIdType)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/safety_hub/SafetyHubModels.tsx");
+// Module 7545 (ContentIdType)
+const result = require("set").fileFinishedImporting("modules/safety_hub/SafetyHubModels.tsx");
 
 export const ContentIdType = { MESSAGE: "message" };
 export const MemberType = { OWNER: 1, [1]: "OWNER", MEMBER: 2, [2]: "MEMBER" };

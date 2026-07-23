@@ -1,53 +1,58 @@
-// Module ID: 10681
-// Function ID: 83273
+// Module ID: 10691
+// Function ID: 83322
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4185, 10692, 10693, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 10681 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let importDefault = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 10691 (_createForOfIteratorHelperLoose)
+import makeButton from "makeButton";
+
+let closure_2;
+let closure_3;
+let closure_4;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      importDefault = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,10 +90,10 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function getApplicationStreamPresetValues() {
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(10692);
   obj = { [closure_3.PRESET_DOCUMENTS]: items };
   obj = { resolution: closure_4.RESOLUTION_SOURCE, fps: closure_2.FPS_15 };
-  const items = [obj, { resolution: closure_4.RESOLUTION_SOURCE, fps: closure_2.FPS_5 }];
+  items = [obj, { resolution: closure_4.RESOLUTION_SOURCE, fps: closure_2.FPS_5 }];
   const items1 = [{ resolution: obj.getConfig({ location: "getApplicationStreamPresetValues" }).videoPresetResolutionMax, fps: closure_2.FPS_60 }, { resolution: closure_4.RESOLUTION_1080, fps: closure_2.FPS_60 }, { resolution: closure_4.RESOLUTION_720, fps: closure_2.FPS_60 }, { resolution: closure_4.RESOLUTION_720, fps: closure_2.FPS_30 }];
   obj[constants.PRESET_VIDEO] = items1;
   obj[constants.PRESET_AUTO] = [];
@@ -111,7 +116,7 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier) {
     let iter2 = iter3;
     if (!iter3.done) {
       const value = iter2.value;
-      while (!importDefault(dependencyMap[2])(arg0, value.resolution, value.fps, user, guildPremiumTier)) {
+      while (!importDefault(10693)(arg0, value.resolution, value.fps, user, guildPremiumTier)) {
         let iter = tmp8();
         iter2 = iter;
       }
@@ -122,10 +127,8 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier) {
     return null;
   }
 }
-const _module = require(dependencyMap[0]);
-({ ApplicationStreamFPS: closure_2, ApplicationStreamPresets: closure_3, ApplicationStreamResolutions: closure_4 } = _module);
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/go_live/utils/getStreamSettingsForPreset.tsx");
+({ ApplicationStreamFPS: closure_2, ApplicationStreamPresets: closure_3, ApplicationStreamResolutions: closure_4 } = makeButton);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/go_live/utils/getStreamSettingsForPreset.tsx");
 
 export default getStreamSettingsForPreset;
 export { getApplicationStreamPresetValues };

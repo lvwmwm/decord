@@ -1,21 +1,31 @@
-// Module ID: 14329
-// Function ID: 108207
+// Module ID: 14443
+// Function ID: 110360
 // Name: contextMenuItems
-// Dependencies: []
+// Dependencies: [31, 27, 33, 11804, 9168, 7654, 9314, 4095, 14444, 14445, 9985, 4130, 689, 22, 9302, 4543, 5167, 4126, 2]
 // Exports: default
 
-// Module 14329 (contextMenuItems)
+// Module 14443 (contextMenuItems)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 function contextMenuItems(length) {
-  const arg1 = length;
-  let obj = arg1(closure_1[13]);
-  closure_1 = obj.shuffle(closure_8);
-  let closure_2 = arg1(closure_1[13]).shuffle(items);
+  const _require = length;
+  let obj = _require(22);
+  const dependencyMap = obj.shuffle(closure_8);
+  let result = _require(22).shuffle(items);
   obj = { length };
-  const obj2 = arg1(closure_1[13]);
+  const obj2 = _require(22);
   return Array.from(obj).map((arg0, arg1) => {
-    const obj = { label: closure_1[arg1 % closure_1.length], IconComponent: undefined, iconSource: closure_2[arg1 % closure_2.length] };
+    const obj = { label: length[arg1 % length.length], IconComponent: undefined, iconSource: length2[arg1 % length2.length] };
     let str = "default";
-    if (arg1 === arg0 - 1) {
+    if (arg1 === closure_0 - 1) {
       str = "destructive";
     }
     obj.variant = str;
@@ -26,8 +36,9 @@ function contextMenuItems(length) {
   });
 }
 function DemoContextMenu(count) {
+  let require;
   let triggerOnLongPress;
-  ({ label: closure_0, triggerOnLongPress } = count);
+  ({ label: require, triggerOnLongPress } = count);
   if (triggerOnLongPress === undefined) {
     triggerOnLongPress = false;
   }
@@ -35,27 +46,25 @@ function DemoContextMenu(count) {
   if (num === undefined) {
     num = 3;
   }
-  const dependencyMap = num;
   let num2 = count.sections;
   if (num2 === undefined) {
     num2 = 1;
   }
-  const React = num2;
   let str = count.alignButton;
   if (str === undefined) {
     str = "flex-start";
   }
   const items = [num, num2];
-  let obj = { style: obj };
+  obj = { style: obj };
   obj = { alignSelf: str };
-  const memo = React.useMemo(() => {
+  const memo = num2.useMemo(() => {
     if (num2 > 1) {
       const _Array = Array;
       const obj = { length: num2 };
-      let mapped = Array.from(obj).map(() => callback(closure_1));
+      let mapped = Array.from(obj).map(() => outer2_10(outer1_1));
       const arr = Array.from(obj);
     } else {
-      mapped = callback3(num);
+      mapped = outer1_10(num);
     }
     return mapped;
   }, items);
@@ -70,56 +79,52 @@ function DemoContextMenu(count) {
       const merged = Object.assign(ref, obj);
       obj = { ref: ref.ref };
       const merged1 = Object.assign(merged);
-      obj["text"] = callback;
+      obj["text"] = closure_0;
       obj["variant"] = "primary";
-      return callback2(callback(num[15]).Button, obj);
+      return outer1_5(outer1_0(num[15]).Button, obj);
     }
   };
-  obj.children = callback(arg1(dependencyMap[14]).ContextMenu, obj);
+  obj.children = callback(require(num[14]).ContextMenu, obj);
   return callback(closure_3, obj);
 }
-let closure_2 = importAll(dependencyMap[0]);
-({ View: closure_3, ScrollView: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[2]));
-const items = [importDefault(dependencyMap[3]), importDefault(dependencyMap[4]), importDefault(dependencyMap[5]), importDefault(dependencyMap[6]), importDefault(dependencyMap[7]), importDefault(dependencyMap[8]), importDefault(dependencyMap[9]), importDefault(dependencyMap[10])];
-let closure_8 = [1390093252, 89394287, 332162417, 329846097, 101790488, 192482089, 311494650, 521409946, 289560943, 309732474, 251138482];
-let obj = arg1(dependencyMap[11]);
-obj = { container: {}, card: { gap: 12 } };
-obj = { -9223372036854775808: "/assets/images/native/community", -9223372036854775808: 62, 9223372036854775807: 65, backgroundColor: importDefault(dependencyMap[12]).colors.BORDER_SUBTLE };
-obj.divider = obj;
-let closure_9 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemContextMenu.tsx");
+({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+let items = [require("registerAsset"), require("registerAsset"), require("registerAsset"), require("registerAsset"), require("registerAsset"), require("registerAsset"), require("registerAsset"), require("registerAsset")];
+let closure_8 = ["Launch Probe!", "Activate Laser", "Teleport Widget", "Engage Hyperdrive", "Deploy Robots", "Initiate Time Warp", "Beam Up Snacks", "Hack Database", "Trigger Cosmic Boom", "Unleash Space Vortex", "Activate Cloaking Device"];
+_createForOfIteratorHelperLoose = { container: { flexDirection: "column", gap: 12, padding: 16 }, card: { gap: 12 } };
+_createForOfIteratorHelperLoose = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginVertical: 12 };
+_createForOfIteratorHelperLoose.divider = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemContextMenu.tsx");
 
 export default function UserSettingsDesignSystemAlertModal() {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   obj = { style: tmp.container };
   obj = { style: tmp.card };
-  const items = [callback(arg1(dependencyMap[17]).Text, { <string:2807142664>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000340856967874354, <string:1446667417>: 0.000000000000000000000000000022341490065414857 }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { label: "Open Menu" })];
+  const items = [callback(require(4126) /* Text */.Text, { variant: "text-lg/bold", children: "Basic Example" }), callback(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You press the button to open the menu and then select an action, or tap and pan down in a single gesture." }), callback(DemoContextMenu, { label: "Open Menu" })];
   obj.children = items;
-  const items1 = [callback2(arg1(dependencyMap[16]).Card, obj), , , , , ];
+  const items1 = [callback2(require(5167) /* getCardBackgroundToken */.Card, obj), , , , , ];
   const obj1 = { style: tmp.card };
-  const items2 = [callback(arg1(dependencyMap[17]).Text, { <string:2807142664>: "Map", <string:1446667417>: "hd" }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, {})];
+  const items2 = [callback(require(4126) /* Text */.Text, { variant: "text-lg/bold", children: "Long Press" }), callback(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can also have the menu open on long press instead." }), callback(DemoContextMenu, { triggerOnLongPress: true, label: "Long Press to Open" })];
   obj1.children = items2;
-  items1[1] = callback2(arg1(dependencyMap[16]).Card, obj1);
+  items1[1] = callback2(require(5167) /* getCardBackgroundToken */.Card, obj1);
   const obj2 = { style: tmp.card };
-  const items3 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, { category: false, position: false, top: false }), callback(DemoContextMenu, { 1012184796: "%DataView%", 1956802875: "EXPRESSION_PICKER_EXPRESSION_FOCUS", 1389037218: "assignmentMode" })];
+  const items3 = [callback(require(4126) /* Text */.Text, { variant: "text-lg/bold", children: "Sections" }), callback(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "You can pass an array of arrays of items to create sections in the menu." }), callback(DemoContextMenu, { label: "Open Sectioned Menu", sections: 3, count: 2 })];
   obj2.children = items3;
-  items1[2] = callback2(arg1(dependencyMap[16]).Card, obj2);
+  items1[2] = callback2(require(5167) /* getCardBackgroundToken */.Card, obj2);
   const obj3 = { style: tmp.card };
-  const items4 = [callback(arg1(dependencyMap[17]).Text, { <string:2807142664>: false, <string:1446667417>: false }), callback(arg1(dependencyMap[17]).Text, { category: true, position: true, top: true }), callback(DemoContextMenu, { markerStart: "large", markerMid: "premium_month_tier_1.1" }), callback(closure_3, { style: tmp.divider }), callback(arg1(dependencyMap[17]).Text, {}), callback(DemoContextMenu, { <string:103961426>: "construct", <string:1386504698>: "values" })];
+  const items4 = [callback(require(4126) /* Text */.Text, { variant: "text-lg/bold", children: "Automatic Alignment" }), callback(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "The menu will automatically align itself so that it doesn't overflow offscreen horizontally." }), callback(DemoContextMenu, { alignButton: "flex-end", label: "Open Right-Aligned Menu" }), callback(closure_3, { style: tmp.divider }), callback(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "It will also position itself vertically, so that it doesn't overflow offscreen vertically." }), callback(DemoContextMenu, { count: 8, label: "Open Tall Menu" })];
   obj3.children = items4;
-  items1[3] = callback2(arg1(dependencyMap[16]).Card, obj3);
+  items1[3] = callback2(require(5167) /* getCardBackgroundToken */.Card, obj3);
   const obj5 = { style: tmp.card };
-  const items5 = [callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, {}), callback(arg1(dependencyMap[17]).Text, { category: false, position: false, top: false }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {}), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, {})];
+  const items5 = [callback(require(4126) /* Text */.Text, { variant: "text-lg/bold", children: "Intentional Alignment" }), callback(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus can take an align prop to intentionally align the menu, instead of using the automatic menu positioning." }), callback(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "The align prop can be set to above, below, left, or right of the menu trigger. How the menu positions relative to the start or end of the trigger is then automatically determined based on the available space." }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, align: "right", label: "Open Right" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, alignButton: "flex-end", align: "left", label: "Open Left" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, align: "below", label: "Always Open Below" }), callback(closure_3, { style: tmp.divider }), callback(DemoContextMenu, { count: 3, alignButton: "flex-end", align: "above", label: "Always Open Above" })];
   obj5.children = items5;
-  items1[4] = callback2(arg1(dependencyMap[16]).Card, obj5);
+  items1[4] = callback2(require(5167) /* getCardBackgroundToken */.Card, obj5);
   const obj10 = { style: tmp.card };
-  const items6 = [callback(arg1(dependencyMap[17]).Text, { <string:2807142664>: 104988674, <string:1446667417>: -520093273 }), callback(arg1(dependencyMap[17]).Text, { category: "<string:2755788801>", position: "<string:1761608042>", top: "<string:1107296611>" }), callback(DemoContextMenu, {})];
+  const items6 = [callback(require(4126) /* Text */.Text, { variant: "text-lg/bold", children: "Overflow Scrolling" }), callback(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus should not typically have enough items to require scrolling, but with font scaling and smaller devices its possible. In this case, the menu will allow the user to scroll." }), callback(DemoContextMenu, { count: 30, label: "Open Really Tall Menu" })];
   obj10.children = items6;
-  items1[5] = callback2(arg1(dependencyMap[16]).Card, obj10);
+  items1[5] = callback2(require(5167) /* getCardBackgroundToken */.Card, obj10);
   obj.children = items1;
   obj.children = callback2(closure_3, obj);
   return callback(closure_4, obj);

@@ -1,25 +1,24 @@
-// Module ID: 11616
-// Function ID: 90217
+// Module ID: 11626
+// Function ID: 90266
 // Name: useDMMessageToReport
-// Dependencies: []
+// Dependencies: [11627, 11483, 11628, 2]
 // Exports: useDMMessageToReport
 
-// Module 11616 (useDMMessageToReport)
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("modules/messages/useDMMessageToReport.tsx");
+// Module 11626 (useDMMessageToReport)
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/useDMMessageToReport.tsx");
 
 export const useDMMessageToReport = function useDMMessageToReport(channel, id, arg2) {
   let error;
   let loaded;
   let isRelationshipTypeSpamReportable = arg2;
-  let obj = require(dependencyMap[0]);
+  let obj = require(11627) /* useIsRelationshipTypeSpamReportable */;
   if (!arg2) {
     isRelationshipTypeSpamReportable = obj.useIsRelationshipTypeSpamReportable(id);
   }
-  const longestChannelMessageBeforeReply = require(dependencyMap[1]).useLongestChannelMessageBeforeReply(channel.id, id);
-  const obj2 = require(dependencyMap[1]);
+  const longestChannelMessageBeforeReply = require(11483) /* _createForOfIteratorHelperLoose */.useLongestChannelMessageBeforeReply(channel.id, id);
+  const obj2 = require(11483) /* _createForOfIteratorHelperLoose */;
   obj = { enabled: isRelationshipTypeSpamReportable };
-  const messageRequestPreview = require(dependencyMap[2]).useMessageRequestPreview(channel, obj);
+  const messageRequestPreview = require(11628) /* _createForOfIteratorHelperLoose */.useMessageRequestPreview(channel, obj);
   const message = messageRequestPreview.message;
   let tmp4 = longestChannelMessageBeforeReply;
   ({ loaded, error } = messageRequestPreview);

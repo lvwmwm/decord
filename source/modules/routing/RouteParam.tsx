@@ -1,12 +1,15 @@
-// Module ID: 3964
-// Function ID: 32823
+// Module ID: 3966
+// Function ID: 32828
 // Name: paramPattern
-// Dependencies: []
+// Dependencies: [654, 1355, 484, 3967, 2]
 
-// Module 3964 (paramPattern)
-function paramPattern(arg0, arg1, Button) {
-  let obj = Button;
-  if (Button === undefined) {
+// Module 3966 (paramPattern)
+import { PSEUDO_GUILD_IDS } from "APP_WITH_INVITE_AND_GUILD_ONBOARDING";
+import { StaticChannelRoutes } from "set";
+
+function paramPattern(arg0, arg1, controlsSpecs) {
+  let obj = controlsSpecs;
+  if (controlsSpecs === undefined) {
     obj = {};
   }
   let flag = obj.optional;
@@ -17,18 +20,15 @@ function paramPattern(arg0, arg1, Button) {
   if (flag) {
     str = "?";
   }
-  const unescapedPathParam = new require(dependencyMap[2]).UnescapedPathParam(":" + importDefault(dependencyMap[3])(arg0) + "(" + arg1 + ")" + str);
+  const unescapedPathParam = new require(484) /* getAuthenticationPath */.UnescapedPathParam(":" + importDefault(3967)(arg0) + "(" + arg1 + ")" + str);
   return unescapedPathParam;
 }
-const PSEUDO_GUILD_IDS = require(dependencyMap[0]).PSEUDO_GUILD_IDS;
-const StaticChannelRoutes = require(dependencyMap[1]).StaticChannelRoutes;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/routing/RouteParam.tsx");
+const result = require("getAuthenticationPath").fileFinishedImporting("modules/routing/RouteParam.tsx");
 
 export const RouteParam = {
-  guildId(guildId, items) {
-    let obj = guildId;
-    if (guildId === undefined) {
+  guildId(onChannelCreated, items) {
+    let obj = onChannelCreated;
+    if (onChannelCreated === undefined) {
       obj = {};
     }
     let str = obj.name;
@@ -39,13 +39,13 @@ export const RouteParam = {
     if (flag === undefined) {
       flag = false;
     }
-    const mapped = PSEUDO_GUILD_IDS.map(importDefault(dependencyMap[3]));
+    const mapped = PSEUDO_GUILD_IDS.map(importDefault(3967));
     obj = { optional: flag };
     return paramPattern(str, "" + mapped.join("|") + "|\\d+", obj);
   },
-  channelId(Button, arg1) {
-    let obj = Button;
-    if (Button === undefined) {
+  channelId(controlsSpecs, arg1) {
+    let obj = controlsSpecs;
+    if (controlsSpecs === undefined) {
       obj = {};
     }
     let str = obj.name;
@@ -56,8 +56,8 @@ export const RouteParam = {
     if (flag === undefined) {
       flag = false;
     }
-    const items = [...closure_4];
-    const mapped = items.map(importDefault(dependencyMap[3]));
+    const items = [...StaticChannelRoutes];
+    const mapped = items.map(importDefault(3967));
     obj = { optional: flag };
     return paramPattern(str, "" + mapped.join("|") + "|\\d+", obj);
   }

@@ -1,14 +1,13 @@
-// Module ID: 7061
-// Function ID: 56472
+// Module ID: 7066
+// Function ID: 56506
 // Name: getDeviceSpecificString
-// Dependencies: []
+// Dependencies: [1212, 1553, 2]
 // Exports: getDeviceSpecificString
 
-// Module 7061 (getDeviceSpecificString)
-const _module = require(dependencyMap[2]);
-const result = _module.fileFinishedImporting("modules/intl/overrides/getDeviceSpecificString.tsx");
+// Module 7066 (getDeviceSpecificString)
+const result = require("set").fileFinishedImporting("modules/intl/overrides/getDeviceSpecificString.tsx");
 
-export const getDeviceSpecificString = function getDeviceSpecificString(arg0, 2Yp7dF) {
+export const getDeviceSpecificString = function getDeviceSpecificString(arg0, _2Yp7dF) {
   let tmp = _2Yp7dF;
   let str = null;
   if (obj.isMetaQuest()) {
@@ -21,6 +20,6 @@ export const getDeviceSpecificString = function getDeviceSpecificString(arg0, 2Y
   if (null != tmp2) {
     tmp = tmp2;
   }
-  const intl = require(dependencyMap[0]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   return intl.string(tmp);
 };

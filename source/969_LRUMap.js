@@ -1,15 +1,16 @@
 // Module ID: 969
-// Function ID: 10452
+// Function ID: 10453
 // Name: LRUMap
-// Dependencies: []
+// Dependencies: [153, 6, 7]
 
 // Module 969 (LRUMap)
-const _module = require(dependencyMap[0]);
-let closure_0 = require(dependencyMap[1]);
-let closure_1 = require(dependencyMap[2]);
+import _readOnlyError from "_readOnlyError";
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const LRUMap = () => {
+export const LRUMap = (() => {
   class LRUMap {
     constructor(arg0) {
       tmp = LRUMap(this, LRUMap);
@@ -19,14 +20,13 @@ export const LRUMap = () => {
       return;
     }
   }
-  let closure_0 = LRUMap;
   let obj = {
     key: "size",
     get() {
       return this._cache.size;
     }
   };
-  const items = [obj, , , , , , ];
+  let items = [obj, , , , , , ];
   obj = {
     key: "get",
     value: function get(arg0) {
@@ -88,11 +88,10 @@ export const LRUMap = () => {
     key: "values",
     value: function values() {
       const items = [];
-      const LRUMap = items;
       const _cache = this._cache;
       const item = _cache.forEach((arg0) => items.push(arg0));
       return items;
     }
   };
-  return callback(LRUMap, items);
-}();
+  return _defineProperties(LRUMap, items);
+})();

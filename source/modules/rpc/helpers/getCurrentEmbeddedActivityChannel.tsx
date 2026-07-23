@@ -1,13 +1,14 @@
-// Module ID: 13281
-// Function ID: 100863
+// Module ID: 13395
+// Function ID: 103019
 // Name: getCurrentEmbeddedActivityChannel
-// Dependencies: []
+// Dependencies: [1347, 1348, 2]
 // Exports: default
 
-// Module 13281 (getCurrentEmbeddedActivityChannel)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/rpc/helpers/getCurrentEmbeddedActivityChannel.tsx");
+// Module 13395 (getCurrentEmbeddedActivityChannel)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/rpc/helpers/getCurrentEmbeddedActivityChannel.tsx");
 
 export default function getCurrentEmbeddedActivityChannel() {
   return channel.getChannel(connectedActivityChannelId.getConnectedActivityChannelId());

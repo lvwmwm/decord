@@ -1,38 +1,40 @@
-// Module ID: 4456
-// Function ID: 39295
+// Module ID: 4460
+// Function ID: 39327
 // Name: getPurchaseToken
-// Dependencies: []
+// Dependencies: [5, 664, 587, 491, 2]
 // Exports: getPurchaseTokenHash
 
-// Module 4456 (getPurchaseToken)
+// Module 4460 (getPurchaseToken)
+import asyncGeneratorStep from "asyncGeneratorStep";
+
+const require = arg1;
 function getPurchaseToken() {
-  const Storage = arg1(dependencyMap[2]).Storage;
-  const value = Storage.get(closure_3);
+  const Storage = require(587) /* Storage */.Storage;
+  const value = Storage.get(purchase_token);
   if (null != value) {
     const _Date = Date;
     if (value.expires >= Date.now()) {
       return value.purchaseToken;
     }
   }
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(491) /* v1 */;
   const v4Result = obj.v4();
-  const Storage2 = arg1(dependencyMap[2]).Storage;
+  const Storage2 = require(587) /* Storage */.Storage;
   obj = { purchaseToken: v4Result, expires: Date.now() + closure_4 };
-  const result = Storage2.set(closure_3, obj);
+  const result = Storage2.set(purchase_token, obj);
   return v4Result;
 }
 async function _getPurchaseTokenHash() {
-  const parts = callback().split("");
+  const parts = outer2_5().split("");
   const uint8Array = new Uint8Array(parts.map((str) => str.charCodeAt(0)));
-  const str = callback();
+  const str = outer2_5();
   const uint8Array1 = new Uint8Array(yield subtle.digest({ name: "SHA-256" }, uint8Array));
   const items = [...uint8Array1];
   return btoa(String.fromCharCode.apply(items));
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = "purchase_token";
-let closure_4 = 60 * importDefault(dependencyMap[1]).Millis.DAY;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("utils/PurchaseTokenUtils.tsx");
+const purchase_token = "purchase_token";
+let closure_4 = 60 * require("set").Millis.DAY;
+let result = require("Storage").fileFinishedImporting("utils/PurchaseTokenUtils.tsx");
 
 export { getPurchaseToken };
 export const getPurchaseTokenHash = function getPurchaseTokenHash() {

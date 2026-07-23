@@ -1,15 +1,21 @@
-// Module ID: 10075
-// Function ID: 77983
+// Module ID: 10083
+// Function ID: 78023
 // Name: isFromUserFilterSupported
-// Dependencies: []
+// Dependencies: [3970, 653, 10078, 2]
 // Exports: getValidFilterTokens
 
-// Module 10075 (isFromUserFilterSupported)
+// Module 10083 (isFromUserFilterSupported)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_3;
+let closure_4;
+const require = arg1;
 function isFromUserFilterSupported(items1) {
   let tmp3;
   let tmp = items1;
   if (items1 === undefined) {
-    const items = [closure_2];
+    const items = [_isNativeReflectConstruct];
     tmp = items;
   }
   [tmp3] = tmp;
@@ -19,7 +25,7 @@ function isMentionsUserFilterSupported(items3) {
   let tmp3;
   let tmp = items3;
   if (items3 === undefined) {
-    const items = [closure_2];
+    const items = [_isNativeReflectConstruct];
     tmp = items;
   }
   [tmp3] = tmp;
@@ -29,11 +35,11 @@ function isInChannelFilterSupported(selectedSearchContext, items2) {
   let tmp3;
   let tmp = items2;
   if (items2 === undefined) {
-    const items = [closure_2];
+    const items = [_isNativeReflectConstruct];
     tmp = items;
   }
   [tmp3] = tmp;
-  const tmp4 = !items2(dependencyMap[2]).isGuildLikeSearchContext(selectedSearchContext);
+  const tmp4 = !require(10078) /* _createForOfIteratorHelperLoose */.isGuildLikeSearchContext(selectedSearchContext);
   let tmp5 = !tmp4;
   if (tmp4) {
     tmp5 = selectedSearchContext.type === constants2.DMS && !tmp3.hidePersonalInformation;
@@ -41,7 +47,7 @@ function isInChannelFilterSupported(selectedSearchContext, items2) {
   }
   return tmp5;
 }
-function getValidOrderedFilterTokens(selectedSearchContext, items) {
+function getValidOrderedFilterTokens(closure_0, items) {
   let tmp;
   [tmp] = items;
   items = [];
@@ -50,7 +56,7 @@ function getValidOrderedFilterTokens(selectedSearchContext, items) {
     items.push(constants.FILTER_FROM);
   }
   const items2 = [tmp];
-  if (isInChannelFilterSupported(selectedSearchContext, items2)) {
+  if (isInChannelFilterSupported(closure_0, items2)) {
     items.push(constants.FILTER_IN);
   }
   items.push(constants.FILTER_HAS);
@@ -64,15 +70,13 @@ function getValidOrderedFilterTokens(selectedSearchContext, items) {
   items.push(constants.FILTER_AUTHOR_TYPE);
   return items;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-({ SearchTokenTypes: closure_3, SearchTypes: closure_4 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/search/tokens/SearchTokenStreamerModeUtils.tsx");
+({ SearchTokenTypes: closure_3, SearchTypes: closure_4 } = ME);
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/search/tokens/SearchTokenStreamerModeUtils.tsx");
 
 export { isFromUserFilterSupported };
 export { isMentionsUserFilterSupported };
 export { isInChannelFilterSupported };
 export { getValidOrderedFilterTokens };
-export const getValidFilterTokens = function getValidFilterTokens(selectedSearchContext, items) {
-  return new Set(getValidOrderedFilterTokens(selectedSearchContext, items));
+export const getValidFilterTokens = function getValidFilterTokens(closure_0, items) {
+  return new Set(getValidOrderedFilterTokens(closure_0, items));
 };

@@ -1,13 +1,13 @@
-// Module ID: 6015
-// Function ID: 49955
+// Module ID: 6020
+// Function ID: 49984
 // Name: DisplayNameLockeAbstractUI
-// Dependencies: []
+// Dependencies: [33, 5085, 6021, 2]
 // Exports: DisplayNameLockeAbstractUI
 
-// Module 6015 (DisplayNameLockeAbstractUI)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameLockeAbstractUI.native.tsx");
+// Module 6020 (DisplayNameLockeAbstractUI)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameLockeAbstractUI.native.tsx");
 
 export const DisplayNameLockeAbstractUI = function DisplayNameLockeAbstractUI(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const DisplayNameLockeAbstractUI = function DisplayNameLockeAbstractUI(wi
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6021) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const DisplayNameLockeAbstractUI = function DisplayNameLockeAbstractUI(wi
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

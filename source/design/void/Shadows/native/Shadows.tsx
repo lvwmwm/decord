@@ -1,12 +1,11 @@
-// Module ID: 12922
-// Function ID: 98524
+// Module ID: 13036
+// Function ID: 100680
 // Name: generateBoxShadowStyle
-// Dependencies: []
+// Dependencies: [477, 2]
 // Exports: generateBoxShadowStyle
 
-// Module 12922 (generateBoxShadowStyle)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("design/void/Shadows/native/Shadows.tsx");
+// Module 13036 (generateBoxShadowStyle)
+const result = require("set").fileFinishedImporting("design/void/Shadows/native/Shadows.tsx");
 
 export const generateBoxShadowStyle = (arg0) => {
   let elevation;
@@ -17,7 +16,7 @@ export const generateBoxShadowStyle = (arg0) => {
   let xOffset;
   let yOffset;
   ({ xOffset, yOffset, shadowColorIos, shadowOpacity, shadowRadius, elevation, shadowColorAndroid } = arg0);
-  let obj = require(dependencyMap[0]);
+  let obj = require(477) /* set */;
   obj = {};
   if (obj.isAndroid()) {
     obj.elevation = elevation;
@@ -30,7 +29,7 @@ export const generateBoxShadowStyle = (arg0) => {
   }
   return obj;
 };
-export const EIGHT_DP_ELEVATION_SHADOW_PARAMS = {};
-export const FOUR_DP_ELEVATION_SHADOW_PARAMS = { "Null": "0 0 4px 0 hsl(none 0% 0% / 0.08)", "Null": "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))", "Null": "cs", "Null": "20", "Null": null, "Null": "#000000", "Null": 0.08 };
-export const EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS = {};
-export const NO_ELEVATION_SHADOW_PARAMS = { "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null, "Null": null };
+export const EIGHT_DP_ELEVATION_SHADOW_PARAMS = { xOffset: 0, yOffset: 4, shadowColorIos: "#000000", shadowOpacity: 0.3, shadowRadius: 4.65, elevation: 8, shadowColorAndroid: "#000000" };
+export const FOUR_DP_ELEVATION_SHADOW_PARAMS = { xOffset: 0, yOffset: 2, shadowColorIos: "#000000", shadowOpacity: 0.23, shadowRadius: 2.62, elevation: 4, shadowColorAndroid: "#000000" };
+export const EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS = { xOffset: 0, yOffset: 7, shadowColorIos: "#000", shadowOpacity: 0.36, shadowRadius: 9.51, elevation: 15, shadowColorAndroid: "#000" };
+export const NO_ELEVATION_SHADOW_PARAMS = { xOffset: 0, yOffset: 0, shadowColorIos: "#000", shadowOpacity: 0, shadowRadius: 0, elevation: 0, shadowColorAndroid: "#000" };

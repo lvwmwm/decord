@@ -1,23 +1,25 @@
-// Module ID: 8171
-// Function ID: 64523
+// Module ID: 8177
+// Function ID: 64560
 // Name: isApplicationAgeRestricted
-// Dependencies: []
+// Dependencies: [4167, 8178, 8179, 2]
 // Exports: default
 
-// Module 8171 (isApplicationAgeRestricted)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/applications/utils/isApplicationAgeRestricted.tsx");
+// Module 8177 (isApplicationAgeRestricted)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("isAgeRestrictedContentClassification").fileFinishedImporting("modules/applications/utils/isApplicationAgeRestricted.tsx");
 
 export default function isApplicationAgeRestricted(applicationId) {
   if (obj.getConfig({ location: "isApplicationAgeRestricted" }).enabled) {
-    const application = application.getApplication(applicationId);
+    application = application.getApplication(applicationId);
     let prop;
     if (null != application) {
       prop = application.contentClassification;
     }
-    return arg1(dependencyMap[2]).isAgeRestrictedContentClassification(prop);
+    return require(8179) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(prop);
   } else {
     return false;
   }
-  const obj = importDefault(dependencyMap[1]);
+  obj = importDefault(8178);
 };

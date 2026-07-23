@@ -1,53 +1,58 @@
-// Module ID: 9742
-// Function ID: 75782
+// Module ID: 9749
+// Function ID: 75823
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 3, 6668, 3791, 2]
 // Exports: default
 
-// Module 9742 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 9749 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import importDefaultResult from "getOrders";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +63,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,18 +89,16 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let importDefaultResult = importDefault(dependencyMap[2]);
 importDefaultResult = new importDefaultResult("useSyncGiftOptionsToOrder");
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/checkout/native/useSyncGiftOptionsToOrder.tsx");
+let result = require("timestamp").fileFinishedImporting("modules/checkout/native/useSyncGiftOptionsToOrder.tsx");
 
 export default function useSyncGiftOptionsToOrder(arg0, arg1) {
+  let closure_11;
   let tmp2;
-  arg1 = arg0;
-  const dependencyMap = arg1;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   let callback = React.useRef(null);
-  const React = React.useRef(null);
+  React = React.useRef(null);
   let closure_4 = React.useRef(false);
   let closure_5 = React.useRef(undefined);
   let closure_6 = React.useRef(null);
@@ -120,83 +123,82 @@ export default function useSyncGiftOptionsToOrder(arg0, arg1) {
   }, []);
   const items = [callback];
   const effect = React.useEffect(() => () => {
-    if (null != ref.current) {
+    if (null != outer1_9.current) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(ref.current);
+      clearTimeout(outer1_9.current);
     }
-    callback(false);
+    outer1_12(false);
   }, items);
   const items1 = [arg0, arg1, tmp2, callback];
-  const effect1 = React.useEffect((self) => {
-    if (null != self) {
-      const id = self.id;
-      self = id;
-      closure_3.current = arg1;
+  const effect1 = React.useEffect(() => {
+    if (null != id) {
+      id = id.id;
+      result.current = table;
       if (ref5.current !== id) {
         ref5.current = id;
-        ref4.current = self.revision;
+        ref4.current = id.revision;
         ref.current = null;
         closure_7.current = 0;
       }
-      if (ref7.current !== arg1) {
+      if (ref7.current !== table) {
         closure_7.current = 0;
       }
       if (!ref3.current) {
-        if (ref.current !== arg1) {
+        if (ref.current !== table) {
           if (null != ref8.current) {
             const _clearTimeout = clearTimeout;
             clearTimeout(ref8.current);
             ref8.current = null;
           }
           ref3.current = true;
-          ref7.current = arg1;
-          let obj = self(arg1[3]);
+          ref7.current = table;
+          let obj = callback(table[3]);
           obj = { orderId: id };
           obj = {};
-          ({ recipient_id: obj3.recipient_id, gift_style: obj3.gift_style, emoji_id: obj3.emoji_id, emoji_name: obj3.emoji_name, sound_id: obj3.sound_id, reward_sku_ids: obj3.reward_sku_ids, custom_message: obj3.custom_message_contents } = arg1);
+          ({ recipient_id: obj3.recipient_id, gift_style: obj3.gift_style, emoji_id: obj3.emoji_id, emoji_name: obj3.emoji_name, sound_id: obj3.sound_id, reward_sku_ids: obj3.reward_sku_ids, custom_message: obj3.custom_message_contents } = table);
           obj.giftInfo = obj;
           obj.expectedRevision = ref4.current;
           const updateOrderResult = obj.updateOrder(obj);
           const nextPromise = obj.updateOrder(obj).then((current) => {
-            closure_5.current = current;
-            closure_2.current = closure_1;
-            closure_7.current = 0;
+            outer1_5.current = current;
+            outer1_2.current = outer1_1;
+            outer1_7.current = 0;
           });
           obj.updateOrder(obj).then((current) => {
-            closure_5.current = current;
-            closure_2.current = closure_1;
-            closure_7.current = 0;
+            outer1_5.current = current;
+            outer1_2.current = outer1_1;
+            outer1_7.current = 0;
           }).catch((error) => {
-            closure_7.current = closure_7.current + 1;
+            outer1_7.current = outer1_7.current + 1;
             let obj = { error, orderId: id };
-            closure_4.error("Failed to sync gift customization to order", obj);
+            logger.error("Failed to sync gift customization to order", obj);
             obj = { orderId: id };
-            const result = id(closure_1[4]).captureBillingException(error, { tags: { source: "useSyncGiftOptionsToOrder" }, extra: obj });
+            const result = id(table[4]).captureBillingException(error, { tags: { source: "useSyncGiftOptionsToOrder" }, extra: obj });
           }).finally(() => {
-            closure_4.current = false;
-            if (ref.current !== ref2.current) {
-              if (0 === closure_7.current) {
-                callback((arg0) => arg0 + 1);
-              } else if (closure_7.current < 3) {
+            outer1_4.current = false;
+            if (outer1_2.current !== outer1_3.current) {
+              if (0 === outer1_7.current) {
+                outer1_11((arg0) => arg0 + 1);
+              } else if (outer1_7.current < 3) {
                 const _setTimeout = setTimeout;
-                closure_9.current = setTimeout(() => callback((arg0) => arg0 + 1), 500 * 2 ** (closure_7.current - 1));
+                outer1_9.current = setTimeout(() => outer2_11((arg0) => arg0 + 1), 500 * 2 ** (outer1_7.current - 1));
               } else {
-                callback2(false);
+                outer1_12(false);
               }
             } else {
-              callback2(true);
+              outer1_12(true);
             }
           });
           const catchPromise = obj.updateOrder(obj).then((current) => {
-            closure_5.current = current;
-            closure_2.current = closure_1;
-            closure_7.current = 0;
+            outer1_5.current = current;
+            outer1_2.current = outer1_1;
+            outer1_7.current = 0;
           }).catch((error) => {
-            closure_7.current = closure_7.current + 1;
+            outer1_7.current = outer1_7.current + 1;
             let obj = { error, orderId: id };
-            closure_4.error("Failed to sync gift customization to order", obj);
+            logger.error("Failed to sync gift customization to order", obj);
             obj = { orderId: id };
-            const result = id(closure_1[4]).captureBillingException(error, { tags: { source: "useSyncGiftOptionsToOrder" }, extra: obj });
+            const result = id(table[4]).captureBillingException(error, { tags: { source: "useSyncGiftOptionsToOrder" }, extra: obj });
           });
         } else {
           callback(true);
@@ -208,20 +210,20 @@ export default function useSyncGiftOptionsToOrder(arg0, arg1) {
   }, items1);
   const items2 = [arg0];
   const callback1 = React.useCallback(() => {
-    if (null != arg0) {
+    if (null != closure_0) {
       if (ref.current !== ref2.current) {
         if (ref6.current >= 3) {
           ref6.current = 0;
         }
         let resolved = new Promise((arg0) => {
-          let current = ref3.current;
+          let current = outer1_10.current;
           current.push(arg0);
-          current = ref.current;
+          current = outer1_4.current;
           if (!current) {
-            current = null != ref2.current;
+            current = null != outer1_9.current;
           }
           if (!current) {
-            callback((arg0) => arg0 + 1);
+            outer1_11((arg0) => arg0 + 1);
           }
         });
       }

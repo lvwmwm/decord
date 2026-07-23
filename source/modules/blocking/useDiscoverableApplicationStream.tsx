@@ -1,16 +1,21 @@
-// Module ID: 9058
-// Function ID: 71126
+// Module ID: 9065
+// Function ID: 71167
 // Name: getDiscoverableApplicationStream
-// Dependencies: []
+// Dependencies: [4149, 3767, 653, 566, 2]
 // Exports: default
 
-// Module 9058 (getDiscoverableApplicationStream)
+// Module 9065 (getDiscoverableApplicationStream)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import { RelationshipTypes } from "ME";
+
+const require = arg1;
 function getDiscoverableApplicationStream(id) {
   let obj;
   let obj2;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [closure_2, closure_3];
+    const items = [_isNativeReflectConstruct, closure_3];
     tmp = items;
   }
   [obj, obj2] = tmp;
@@ -32,18 +37,15 @@ function getDiscoverableApplicationStream(id) {
   }
   return tmp6;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const RelationshipTypes = arg1(dependencyMap[2]).RelationshipTypes;
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/blocking/useDiscoverableApplicationStream.tsx");
+const result = require("ME").fileFinishedImporting("modules/blocking/useDiscoverableApplicationStream.tsx");
 
 export default function useDiscoverableApplicationStream(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2, closure_3];
+  const _require = arg0;
+  let items = [_isNativeReflectConstruct, closure_3];
   const items1 = [arg0];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const items = [closure_2, closure_3];
-    return callback(arg0, items);
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_2, outer1_3];
+    return outer1_5(closure_0, items);
   }, items1);
 };
 export { getDiscoverableApplicationStream };

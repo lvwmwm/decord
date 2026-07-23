@@ -1,16 +1,18 @@
-// Module ID: 6800
-// Function ID: 53684
+// Module ID: 6805
+// Function ID: 53716
 // Name: CountdownTimerBlockRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6806, 2]
 
-// Module 6800 (CountdownTimerBlockRecord)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+// Module 6805 (CountdownTimerBlockRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class CountdownTimerBlockRecord {
     constructor(arg0) {
-      tmp = closure_2(this, CountdownTimerBlockRecord);
-      this.type = CountdownTimerBlockRecord(closure_1[2]).ShopBlockType.COUNTDOWN_TIMER;
+      tmp = outer1_2(this, CountdownTimerBlockRecord);
+      this.type = CountdownTimerBlockRecord(outer1_1[2]).ShopBlockType.COUNTDOWN_TIMER;
       ({ title: this.title, body: this.body, banner_url: this.bannerUrl } = arg0);
       date = new Date(arg0.end_time);
       this.endTime = date;
@@ -18,7 +20,6 @@ const tmp2 = () => {
       return;
     }
   }
-  const arg1 = CountdownTimerBlockRecord;
   const items = [
     {
       key: "fromServer",
@@ -28,7 +29,7 @@ const tmp2 = () => {
     }
   ];
   return callback(CountdownTimerBlockRecord, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/collectibles/records/CountdownTimerBlockRecord.tsx");
+})();
+const result = require("ShopBlockType").fileFinishedImporting("modules/collectibles/records/CountdownTimerBlockRecord.tsx");
 
 export const CountdownTimerBlockRecord = tmp2;

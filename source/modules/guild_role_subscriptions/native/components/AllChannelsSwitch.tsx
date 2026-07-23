@@ -1,20 +1,22 @@
-// Module ID: 16339
-// Function ID: 126081
+// Module ID: 16456
+// Function ID: 128255
 // Name: Row
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [31, 27, 14117, 653, 33, 4130, 689, 5052, 3848, 8474, 1273, 16457, 1212, 16458, 2]
 // Exports: default
 
-// Module 16339 (Row)
-import "__exportStarResult1";
-import { View } from "__exportStarResult1";
-import { AllChannelAccessOptions } from "__exportStarResult1";
-import { Fonts } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import importDefaultResult from "__exportStarResult1";
-import importDefaultResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 16456 (Row)
+import "result";
+import { View } from "get ActivityIndicator";
+import { AllChannelAccessOptions } from "AllChannelAccessOptions";
+import { Fonts } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+import importDefaultResult1 from "createTextStyle";
 
+let closure_5;
+let closure_6;
+const require = arg1;
 function Row(arg0) {
   let accessibilityRole;
   let accessibilityState;
@@ -28,8 +30,8 @@ function Row(arg0) {
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = __exportStarResult1();
-  let obj = arg1(dependencyMap[8]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(3848) /* useCheckboxA11yNative */;
   obj = { selected, disabled };
   const radioA11yNative = obj.useRadioA11yNative(obj);
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
@@ -40,9 +42,9 @@ function Row(arg0) {
   }
   obj.disabled = tmp5;
   obj.onPress = onPress;
-  const obj1 = { size: arg1(dependencyMap[10]).Icon.Sizes.MEDIUM, source: icon };
-  const items = [callback(arg1(dependencyMap[10]).Icon, obj1), , ];
-  const obj2 = { 0: true, 0: true, 9223372036854775807: true };
+  const obj1 = { size: require(1273) /* Button */.Icon.Sizes.MEDIUM, source: icon };
+  const items = [callback(require(1273) /* Button */.Icon, obj1), , ];
+  const obj2 = { style: null, numberOfLines: 1, ellipsizeMode: "tail" };
   const items1 = [tmp.rowLabel, ];
   let rowLabelSelected = selected;
   if (selected) {
@@ -51,55 +53,57 @@ function Row(arg0) {
   items1[1] = rowLabelSelected;
   obj2.style = items1;
   obj2.children = label;
-  items[1] = callback(arg1(dependencyMap[10]).LegacyText, obj2);
-  items[2] = callback(arg1(dependencyMap[10]).RadioIndicator, { style: tmp.rowIndicator, active: selected });
+  items[1] = callback(require(1273) /* Button */.LegacyText, obj2);
+  items[2] = callback(require(1273) /* Button */.RadioIndicator, { style: tmp.rowIndicator, active: selected });
   obj.children = items;
-  return closure_6(importDefault(dependencyMap[9]), obj);
+  return closure_6(importDefault(8474), obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = __exportStarResult1);
-__exportStarResult1 = {};
-__exportStarResult1 = { backgroundColor: require("__exportStarResult1").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("__exportStarResult1").radii.sm };
-__exportStarResult1.container = __exportStarResult1;
-__exportStarResult1.row = {};
-const obj1 = {};
-const merged = Object.assign(require("__exportStarResult1")(Fonts.PRIMARY_MEDIUM, require("__exportStarResult1").colors.TEXT_SUBTLE, 16));
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.row = { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 };
+let obj1 = {};
+const merged = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 16));
 obj1["flexShrink"] = 1;
 obj1["marginHorizontal"] = 16;
-__exportStarResult1.rowLabel = obj1;
-const obj2 = {};
-const merged1 = Object.assign(require("__exportStarResult1")(Fonts.PRIMARY_SEMIBOLD, require("__exportStarResult1").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
-__exportStarResult1.rowLabelSelected = obj2;
-__exportStarResult1.rowIndicator = { marginStart: "auto" };
-__exportStarResult1.separator = { backgroundColor: require("__exportStarResult1").colors.BORDER_SUBTLE };
-__exportStarResult1 = __exportStarResult1.createStyles(__exportStarResult1);
-const result = __exportStarResult1.fileFinishedImporting("modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx");
+_createForOfIteratorHelperLoose.rowLabel = obj1;
+let obj2 = {};
+const merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
+_createForOfIteratorHelperLoose.rowLabelSelected = obj2;
+_createForOfIteratorHelperLoose.rowIndicator = { marginStart: "auto" };
+const obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
+_createForOfIteratorHelperLoose.separator = obj3;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("AllChannelAccessOptions").fileFinishedImporting("modules/guild_role_subscriptions/native/components/AllChannelsSwitch.tsx");
 
 export default function AllChannelsSwitch(style) {
   let channelAccessFormat;
   let disabled;
-  ({ channelAccessFormat, setChannelAccessFormat: closure_0, disabled } = style);
+  let require;
+  ({ channelAccessFormat, setChannelAccessFormat: require, disabled } = style);
   if (disabled === undefined) {
     disabled = false;
   }
-  const tmp = __exportStarResult1();
-  let obj = { style: items, accessibilityRole: "radiogroup", accessibilityState: obj };
-  const items = [tmp.container, style.style];
+  const tmp = _createForOfIteratorHelperLoose();
+  obj = { style: items, accessibilityRole: "radiogroup", accessibilityState: obj };
+  items = [tmp.container, style.style];
   obj = { disabled };
-  obj = { icon: importDefault(dependencyMap[11]) };
-  const intl = arg1(dependencyMap[12]).intl;
-  obj.label = intl.string(arg1(dependencyMap[12]).t.vs2T+B);
+  obj = { icon: importDefault(16457) };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl.string(require(1212) /* getSystemLocale */.t["vs2T+B"]);
   obj.selected = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
   obj.onPress = function onPress() {
-    return callback(constants.SOME_CHANNELS_ACCESS);
+    return callback(outer1_4.SOME_CHANNELS_ACCESS);
   };
   obj.disabled = disabled;
   const items1 = [callback(Row, obj), callback(View, { style: tmp.separator }), ];
-  const obj2 = { icon: importDefault(dependencyMap[13]) };
-  const intl2 = arg1(dependencyMap[12]).intl;
-  obj2.label = intl2.string(arg1(dependencyMap[12]).t.l4Tr7X);
+  const obj2 = { icon: importDefault(16458) };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj2.label = intl2.string(require(1212) /* getSystemLocale */.t.l4Tr7X);
   obj2.selected = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;
   obj2.onPress = function onPress() {
-    return callback(constants.ALL_CHANNELS_ACCESS);
+    return callback(outer1_4.ALL_CHANNELS_ACCESS);
   };
   obj2.disabled = disabled;
   items1[2] = callback(Row, obj2);

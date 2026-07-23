@@ -1,52 +1,64 @@
-// Module ID: 5685
-// Function ID: 48947
+// Module ID: 5690
+// Function ID: 48974
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4808, 1352, 1348, 1906, 653, 1355, 686, 5606, 3952, 3965, 507, 2]
 
-// Module 5685 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 5690 (_createForOfIteratorHelperLoose)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { isStaticChannelRoute } from "set";
+
+let closure_4;
+let closure_5;
+let closure_8;
+let closure_9;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -57,16 +69,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,37 +96,37 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function initialize() {
-  if (!closure_12) {
-    closure_12 = true;
-    const subscription = importDefault(dependencyMap[6]).subscribe("CONNECTION_OPEN", () => {
-      let closure_11 = {};
-      const channelId = channelId.getChannelId();
+  if (!c12) {
+    c12 = true;
+    const subscription = importDefault(686).subscribe("CONNECTION_OPEN", () => {
+      const outer1_11 = {};
+      const channelId = outer1_7.getChannelId();
       if (tmp2) {
-        callback(channelId);
+        outer1_17(channelId);
       }
     });
-    const obj = importDefault(dependencyMap[6]);
+    const obj = importDefault(686);
   }
 }
 function dispatchLoadedThread(arg0, messageId) {
-  let obj = importDefault(dependencyMap[6]);
+  let obj = importDefault(686);
   obj = { type: "THREAD_CREATE", channel: callback(arg0), messageId };
   obj.dispatch(obj);
 }
 function loadThread(channelId) {
-  const arg1 = channelId;
+  const _require = channelId;
   if (null == channelId) {
     return Promise.resolve();
-  } else if (channelId === arg1(dependencyMap[7]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+  } else if (channelId === _require(5606).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return Promise.resolve();
   } else if (isStaticChannelRoute(channelId)) {
     return Promise.resolve();
-  } else if (null != channel.getChannel(channelId)) {
+  } else if (null != store.getChannel(channelId)) {
     return Promise.resolve();
   } else {
     initialize();
-    if (closure_3.isConnected()) {
-      if (null != closure_11[channelId]) {
+    if (_isNativeReflectConstruct.isConnected()) {
+      if (null != dependencyMap[channelId]) {
         if ("LOADING" === tmp4.type) {
           let resolved = tmp4.promise;
         } else {
@@ -122,24 +134,24 @@ function loadThread(channelId) {
         }
         return resolved;
       } else {
-        let obj = arg1(dependencyMap[8]);
+        let obj = _require(3952);
         const _location = location;
         obj = {};
-        const RouteParam = arg1(dependencyMap[9]).RouteParam;
-        const RouteParam2 = arg1(dependencyMap[9]).RouteParam;
+        const RouteParam = _require(3965).RouteParam;
+        const RouteParam2 = _require(3965).RouteParam;
         obj.path = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         obj.exact = true;
         let closure_1 = obj.matchPath(location.pathname, obj);
-        const HTTP = arg1(dependencyMap[10]).HTTP;
+        const HTTP = _require(507).HTTP;
         obj = { url: closure_8.CHANNEL(channelId) };
         const guildIdResult = RouteParam.guildId();
-        obj.rejectWithError = arg1(dependencyMap[10]).rejectWithMigratedError();
+        obj.rejectWithError = _require(507).rejectWithMigratedError();
         const value = HTTP.get(obj);
-        const obj4 = arg1(dependencyMap[10]);
+        const obj4 = _require(507);
         const catchPromise = value.then((body) => {
           body = body.body;
-          closure_11[body] = { type: "LOADED" };
-          if (set.has(body.type)) {
+          outer1_11[closure_0] = { type: "LOADED" };
+          if (outer1_5.has(body.type)) {
             let messageId;
             if (null != lib) {
               const params = lib.params;
@@ -147,14 +159,14 @@ function loadThread(channelId) {
                 messageId = params.messageId;
               }
             }
-            closure_16(body, messageId);
-            const tmp = closure_16;
+            outer1_16(body, messageId);
+            const tmp = outer1_16;
           }
         }).catch(() => {
-          closure_11[arg0] = { type: "NOT_FOUND" };
-          let obj = lib(closure_2[6]);
+          outer1_11[closure_0] = { type: "NOT_FOUND" };
+          let obj = lib(outer1_2[6]);
           obj = { type: "CHANNEL_DELETE" };
-          obj = { id: arg0 };
+          obj = { id: closure_0 };
           let guildId;
           if (null != lib) {
             const params = lib.params;
@@ -168,7 +180,7 @@ function loadThread(channelId) {
           obj.dispatch(obj);
         });
         const obj1 = { type: "LOADING", promise: catchPromise };
-        closure_11[channelId] = obj1;
+        dependencyMap[channelId] = obj1;
         return catchPromise;
       }
     } else {
@@ -176,19 +188,16 @@ function loadThread(channelId) {
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ createChannelRecordFromServer: closure_4, THREAD_CHANNEL_TYPES: closure_5 } = arg1(dependencyMap[1]));
-let closure_6 = importDefault(dependencyMap[2]);
-let closure_7 = importDefault(dependencyMap[3]);
-const tmp2 = arg1(dependencyMap[1]);
-({ Endpoints: closure_8, Routes: closure_9 } = arg1(dependencyMap[4]));
-const isStaticChannelRoute = arg1(dependencyMap[5]).isStaticChannelRoute;
+({ createChannelRecordFromServer: closure_4, THREAD_CHANNEL_TYPES: closure_5 } = _callSuper);
+({ Endpoints: closure_8, Routes: closure_9 } = ME);
 let closure_11 = {};
-let closure_12 = false;
-const obj = {
+let c12 = false;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/threads/LazyLoadedThreadManager.tsx");
+
+export default {
   getLoadState(key10016) {
     let type;
-    if (null != closure_11[key10016]) {
+    if (null != dependencyMap[key10016]) {
       type = tmp.type;
     }
     return type;
@@ -198,28 +207,27 @@ const obj = {
     let iter3;
     let length;
     initialize();
-    if (closure_3.isConnected()) {
+    if (_isNativeReflectConstruct.isConnected()) {
       const items = [];
       const items1 = [];
-      const arg1 = items1;
-      const tmp5 = _createForOfIteratorHelperLoose(arr);
-      const iter = tmp5();
+      let tmp5 = _createForOfIteratorHelperLoose(arr);
+      let iter = tmp5();
       let iter2 = iter;
       if (!iter.done) {
         do {
           let value = iter2.value;
-          let tmp8 = closure_0;
-          let tmp9 = closure_2;
+          let tmp8 = items1;
+          let tmp9 = dependencyMap;
           let tmp10 = tmp7;
-          if (value !== closure_0(closure_2[7]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-            let tmp11 = closure_10;
+          if (value !== items1(5606).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+            let tmp11 = isStaticChannelRoute;
             tmp10 = tmp7;
-            if (!closure_10(value)) {
-              let tmp12 = closure_6;
+            if (!isStaticChannelRoute(value)) {
+              let tmp12 = store;
               tmp10 = tmp7;
-              if (null == closure_6.getChannel(value)) {
-                let tmp13 = closure_11;
-                let tmp14 = closure_11[value];
+              if (null == store.getChannel(value)) {
+                let tmp13 = dependencyMap;
+                let tmp14 = dependencyMap[value];
                 if (null == tmp14) {
                   arr = items1.push(value);
                   tmp10 = tmp14;
@@ -234,7 +242,7 @@ const obj = {
             }
           }
           iter3 = tmp5();
-          let tmp7 = tmp10;
+          tmp7 = tmp10;
           iter2 = iter3;
         } while (!iter3.done);
       }
@@ -243,28 +251,28 @@ const obj = {
 
         });
       } else {
-        const HTTP = arg1(dependencyMap[10]).HTTP;
+        const HTTP = items1(507).HTTP;
         let obj = { url: closure_8.THREADS_BULK };
         obj = { thread_ids: items1 };
         obj.body = obj;
-        obj.rejectWithError = arg1(dependencyMap[10]).rejectWithMigratedError();
-        const obj4 = arg1(dependencyMap[10]);
+        obj.rejectWithError = items1(507).rejectWithMigratedError();
+        const obj4 = items1(507);
         const postResult = HTTP.post(obj);
         const catchPromise = HTTP.post(obj).then((body) => {
           let done;
           const set = new Set();
-          const tmp = callback(body.body.items);
+          const tmp = outer1_13(body.body.items);
           let iter = tmp();
           if (!iter.done) {
             do {
               let value = iter.value;
               let id = value.id;
               let addResult = set.add(id);
-              let tmp3 = closure_11;
+              let tmp3 = outer1_11;
               let obj = { type: "LOADED" };
-              closure_11[id] = obj;
-              let tmp4 = closure_16;
-              let tmp5 = closure_16(value);
+              outer1_11[id] = obj;
+              let tmp4 = outer1_16;
+              let tmp5 = outer1_16(value);
               let iter2 = tmp();
               iter = iter2;
               done = iter2.done;
@@ -275,9 +283,9 @@ const obj = {
             do {
               let tmp6 = arr[num];
               if (!set.has(tmp6)) {
-                let tmp7 = closure_11;
+                let tmp7 = outer1_11;
                 obj = { type: "NOT_FOUND" };
-                closure_11[tmp6] = obj;
+                outer1_11[tmp6] = obj;
               }
               num = num + 1;
             } while (num < arr.length);
@@ -287,9 +295,9 @@ const obj = {
           let num = 0;
           if (0 < items1.length) {
             do {
-              let tmp = arr[num];
-              let tmp2 = closure_11;
-              delete r0[r4];
+              let tmp3 = arr[num];
+              let tmp4 = outer1_11;
+              delete tmp[tmp2];
               num = num + 1;
               length = arr.length;
             } while (num < length);
@@ -298,9 +306,9 @@ const obj = {
         let num3 = 0;
         if (0 < items1.length) {
           do {
-            let tmp17 = closure_11;
+            let tmp17 = dependencyMap;
             obj = { type: "LOADING", promise: catchPromise };
-            closure_11[items1[num3]] = obj;
+            dependencyMap[items1[num3]] = obj;
             num3 = num3 + 1;
             length = items1.length;
           } while (num3 < length);
@@ -323,7 +331,3 @@ const obj = {
     }
   }
 };
-const tmp3 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/threads/LazyLoadedThreadManager.tsx");
-
-export default obj;

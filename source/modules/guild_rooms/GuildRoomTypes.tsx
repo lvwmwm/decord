@@ -1,10 +1,9 @@
-// Module ID: 12573
-// Function ID: 96742
+// Module ID: 12687
+// Function ID: 98898
 // Name: GuildRoomObjectTypes
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 12573 (GuildRoomObjectTypes)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/guild_rooms/GuildRoomTypes.tsx");
+// Module 12687 (GuildRoomObjectTypes)
+const result = require("set").fileFinishedImporting("modules/guild_rooms/GuildRoomTypes.tsx");
 
 export const GuildRoomObjectTypes = { NOTE: 1, [1]: "NOTE", PLANT: 2, [2]: "PLANT" };

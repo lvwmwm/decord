@@ -1,12 +1,11 @@
-// Module ID: 12171
-// Function ID: 93617
+// Module ID: 12285
+// Function ID: 95768
 // Name: getHeaderTextForInvite
-// Dependencies: []
+// Dependencies: [1212, 2]
 // Exports: getHeaderTextForInvite
 
-// Module 12171 (getHeaderTextForInvite)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/messages/getHeaderTextForInvite.tsx");
+// Module 12285 (getHeaderTextForInvite)
+const result = require("set").fileFinishedImporting("modules/messages/getHeaderTextForInvite.tsx");
 
 export const getHeaderTextForInvite = function getHeaderTextForInvite(arg0) {
   let isGuest;
@@ -17,9 +16,9 @@ export const getHeaderTextForInvite = function getHeaderTextForInvite(arg0) {
   let isVoiceChannel;
   ({ isOwnInvite, isGuest, isStage, isStream } = arg0);
   ({ isVoiceChannel, isHubGuild } = arg0);
-  const intl = require(dependencyMap[0]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const string = intl.string;
-  let N85DCl = require(dependencyMap[0]).t;
+  let N85DCl = require(1212) /* getSystemLocale */.t;
   if (isVoiceChannel) {
     if (!isOwnInvite) {
       if (isStream) {
@@ -50,7 +49,7 @@ export const getHeaderTextForInvite = function getHeaderTextForInvite(arg0) {
     }
   } else {
     if (isOwnInvite) {
-      let stringResult3 = string(N85DCl.oU/lsl);
+      let stringResult3 = string(N85DCl["oU/lsl"]);
     } else {
       stringResult3 = string(N85DCl.BoQUFf);
     }

@@ -1,24 +1,30 @@
-// Module ID: 11864
-// Function ID: 91875
+// Module ID: 11876
+// Function ID: 91928
 // Name: styles
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1392, 11877, 4660, 11878, 2]
 // Exports: default
 
-// Module 11864 (styles)
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, Image: closure_5 } = arg1(dependencyMap[1]));
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = { gameIcon: { "Null": true, "Null": true } };
-obj = { "Null": true, "Null": true, "Null": true, "Null": true, "Null": true, borderRadius: importDefault(dependencyMap[4]).radii.xs, borderColor: importDefault(dependencyMap[4]).colors.BORDER_STRONG };
-obj.gameIconImage = obj;
-const obj1 = { "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028246427612100375, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000001079656013216987, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009251425761450625, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027511313459560857, "Bool(true)": 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000222507385855407, "Bool(true)": 18283014360199604000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, "Bool(true)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033951932656, "Bool(true)": 0.00000000000000000000000000002233771790404307, "Bool(true)": 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004124948605103009, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOWER, borderRadius: importDefault(dependencyMap[4]).radii.sm };
-obj.gameIconMask = obj1;
-obj.fireIcon = { padding: true, spriteIndex: true, Date: true };
-const styles = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_profile/native/components/GameIcon.tsx");
+// Module 11876 (styles)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = { gameIcon: { width: 32, height: 32 } };
+_createForOfIteratorHelperLoose = { width: 32, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderWidth: 1, borderStyle: "solid", borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
+_createForOfIteratorHelperLoose.gameIconImage = _createForOfIteratorHelperLoose;
+let obj1 = { position: "absolute", top: -4, right: -4, display: "flex", justifyContent: "center", alignItems: "center", padding: 2, width: 18, height: 18, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
+_createForOfIteratorHelperLoose.gameIconMask = obj1;
+_createForOfIteratorHelperLoose.fireIcon = { marginTop: -1, width: 14, height: 14 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/GameIcon.tsx");
 
 export default function GameIcon(arg0) {
   let activityLevel;
@@ -26,14 +32,12 @@ export default function GameIcon(arg0) {
   let onPress;
   let style;
   ({ style, game } = arg0);
-  const arg1 = game;
   ({ activityLevel, onPress } = arg0);
-  const importDefault = onPress;
-  let tmp = styles();
+  let tmp = _createForOfIteratorHelperLoose();
   const iconURL = game.getIconURL(24);
   let source = null;
   if (null != iconURL) {
-    let obj = importDefault(dependencyMap[5]);
+    let obj = onPress(1392);
     source = obj.makeSource(iconURL);
   }
   const items = [game, onPress];
@@ -46,7 +50,7 @@ export default function GameIcon(arg0) {
   if (null != activityLevel) {
     level = activityLevel.level;
   }
-  let tmp7 = level === arg1(dependencyMap[6]).ClanGameplayActivity.HIGH;
+  let tmp7 = level === game(11877).ClanGameplayActivity.HIGH;
   if (null == source) {
     return null;
   } else if (null != onPress) {
@@ -63,14 +67,14 @@ export default function GameIcon(arg0) {
       style = closure_4;
       const obj1 = { style: tmp.gameIconMask };
       const obj2 = { style: tmp.fireIcon };
-      tmp = importDefault;
-      obj2.color = importDefault(dependencyMap[4]).unsafe_rawColors.ORANGE_260;
-      obj1.children = callback(arg1(dependencyMap[8]).FireIcon, obj2);
+      tmp = onPress;
+      obj2.color = onPress(689).unsafe_rawColors.ORANGE_260;
+      obj1.children = callback(game(11878).FireIcon, obj2);
       tmp7 = callback(closure_4, obj1);
     }
     callback[1] = tmp7;
     obj.children = callback;
-    let tmp22Result = closure_7(arg1(dependencyMap[7]).PressableHighlight, obj);
+    let tmp22Result = closure_7(game(4660).PressableHighlight, obj);
     const tmp15 = closure_7;
   } else {
     const obj3 = {};
@@ -81,8 +85,8 @@ export default function GameIcon(arg0) {
     let tmp13 = tmp7;
     if (tmp7) {
       const obj5 = { style: tmp.gameIconMask };
-      const obj6 = { style: tmp.fireIcon, color: importDefault(dependencyMap[4]).unsafe_rawColors.ORANGE_330 };
-      obj5.children = callback(arg1(dependencyMap[8]).FireIcon, obj6);
+      const obj6 = { style: tmp.fireIcon, color: onPress(689).unsafe_rawColors.ORANGE_330 };
+      obj5.children = callback(game(11878).FireIcon, obj6);
       tmp13 = callback(closure_4, obj5);
     }
     items3[1] = tmp13;
@@ -92,4 +96,4 @@ export default function GameIcon(arg0) {
     const tmp23 = closure_4;
   }
 };
-export const useStyles = styles;
+export const useStyles = _createForOfIteratorHelperLoose;

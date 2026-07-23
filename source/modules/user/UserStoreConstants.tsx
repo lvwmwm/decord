@@ -1,10 +1,9 @@
 // Module ID: 1856
-// Function ID: 20444
+// Function ID: 20445
 // Name: Environments
-// Dependencies: []
+// Dependencies: [2]
 
 // Module 1856 (Environments)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/user/UserStoreConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/user/UserStoreConstants.tsx");
 
 export const Environments = { STAGING: "staging", DEVELOPMENT: "development", PRODUCTION: "production", TEST: "test" };

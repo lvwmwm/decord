@@ -1,11 +1,16 @@
-// Module ID: 9164
-// Function ID: 71820
+// Module ID: 9171
+// Function ID: 71861
 // Name: checkGuildForFeature
-// Dependencies: [297467904, 79429632, 258736128, 601227264, 283967488, 604831744, 126746624, 605028352, 606732288, 603258880]
+// Dependencies: [31, 653, 33, 5705, 5706, 9172, 9173, 1387, 1273, 2]
 
-// Module 9164 (checkGuildForFeature)
+// Module 9171 (checkGuildForFeature)
+import "result";
+import { GuildFeatures } from "ME";
+import { jsx } from "jsxProd";
+
 let PARTNERED;
 let VERIFIED;
+const require = arg1;
 function checkGuildForFeature(guild, PARTNERED) {
   let has = guild;
   if (null == guild) {
@@ -29,7 +34,7 @@ function checkGuildForFeature(guild, PARTNERED) {
         hasItem = Boolean(hasItem1);
       }
     }
-    const obj = PARTNERED(dependencyMap[7]);
+    obj = require(1387) /* fromGuildPropertiesWithAdditionalFields */;
   }
 }
 function getGuildBadgeSource(guild, flag) {
@@ -52,15 +57,15 @@ class GuildBadge {
       tmp = GuildBadge;
       MEDIUM = GuildBadge.Sizes.MEDIUM;
     }
-    obj = { "Null": "spring", "Null": 0.4, "Null": 1 };
+    obj = { guild: 0, monocolored: 0, size: 0 };
     tmp2 = null;
     setPrototypeOfResult = Object.setPrototypeOf(null);
     merged = Object.assign(global, obj);
     tmp5 = getGuildBadgeSource(global.guild, flag);
     if (null != tmp5) {
       tmp6 = jsx;
-      tmp7 = arg1;
-      tmp8 = dependencyMap;
+      tmp7 = closure_0;
+      tmp8 = closure_1;
       num = 8;
       obj = {};
       tmp9 = obj;
@@ -70,19 +75,16 @@ class GuildBadge {
       obj["size"] = MEDIUM;
       str2 = "source";
       obj["source"] = tmp5;
-      tmp2 = jsx(arg1(dependencyMap[8]).Icon, obj);
+      tmp2 = jsx(require("Button").Icon, obj);
     }
     return tmp2;
   }
 }
-importAll(dependencyMap[0]);
-const GuildFeatures = arg1(dependencyMap[1]).GuildFeatures;
-const jsx = arg1(dependencyMap[2]).jsx;
 let obj = { PARTNERED: 0, [0]: "PARTNERED", VERIFIED: 1, [1]: "VERIFIED", PARTNERED_BLACK: 2, [2]: "PARTNERED_BLACK", VERIFIED_BLACK: 3, [3]: "VERIFIED_BLACK", NONE: 4, [4]: "NONE" };
-obj = { [VERIFIED]: importDefault(dependencyMap[3]), [PARTNERED]: importDefault(dependencyMap[4]), [obj.VERIFIED_BLACK]: importDefault(dependencyMap[5]), [obj.PARTNERED_BLACK]: importDefault(dependencyMap[6]), [obj.NONE]: null };
+obj = { [VERIFIED]: require("registerAsset"), [PARTNERED]: require("registerAsset"), [obj.VERIFIED_BLACK]: require("registerAsset"), [obj.PARTNERED_BLACK]: require("registerAsset"), [obj.NONE]: null };
 ({ VERIFIED, PARTNERED } = obj);
-GuildBadge.Sizes = arg1(dependencyMap[8]).Icon.Sizes;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild/native/GuildBadge.tsx");
+GuildBadge.Sizes = require("Button").Icon.Sizes;
+const result = require("jsxProd").fileFinishedImporting("modules/guild/native/GuildBadge.tsx");
 
 export default GuildBadge;
 export { getGuildBadgeSource };

@@ -1,24 +1,26 @@
-// Module ID: 15010
-// Function ID: 113027
+// Module ID: 15126
+// Function ID: 115195
 // Name: ConnectionFineIcon
-// Dependencies: []
+// Dependencies: [31, 33, 689, 3833, 15127, 2]
 // Exports: ConnectionFineIcon
 
-// Module 15010 (ConnectionFineIcon)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[5]).fileFinishedImporting("design/components/Icon/native/redesign/generated/ConnectionFineIcon.tsx");
+// Module 15126 (ConnectionFineIcon)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Icon/native/redesign/generated/ConnectionFineIcon.tsx");
 
 export const ConnectionFineIcon = function ConnectionFineIcon(color) {
   let ICON_FEEDBACK_POSITIVE = color.color;
   if (ICON_FEEDBACK_POSITIVE === undefined) {
-    ICON_FEEDBACK_POSITIVE = importDefault(dependencyMap[2]).colors.ICON_FEEDBACK_POSITIVE;
+    ICON_FEEDBACK_POSITIVE = importDefault(689).colors.ICON_FEEDBACK_POSITIVE;
   }
   let obj = Object.create(null);
   obj.style = 0;
   obj.color = 0;
   const merged = Object.assign(color, obj);
-  obj = { source: arg1(dependencyMap[4]), color: ICON_FEEDBACK_POSITIVE, style: color.style };
+  obj = { source: require(15127) /* registerAsset */, color: ICON_FEEDBACK_POSITIVE, style: color.style };
   const merged1 = Object.assign(merged);
-  return jsx(arg1(dependencyMap[3]).BaseIconImage, obj);
+  return jsx(require(3833) /* BaseIconImage */.BaseIconImage, { source: require(15127) /* registerAsset */, color: ICON_FEEDBACK_POSITIVE, style: color.style });
 };

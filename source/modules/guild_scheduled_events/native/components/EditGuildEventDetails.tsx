@@ -1,46 +1,47 @@
-// Module ID: 8441
-// Function ID: 67353
+// Module ID: 8447
+// Function ID: 67390
 // Name: EditGuildEventDetails
-// Dependencies: []
+// Dependencies: [57, 31, 6758, 1354, 33, 4130, 1212, 3712, 8346, 1456, 4126, 4543, 1820, 8345, 3843, 8369, 8436, 8371, 2]
 // Exports: default
 
-// Module 8441 (EditGuildEventDetails)
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importAll(dependencyMap[1]);
-let closure_6 = arg1(dependencyMap[2]).isGuildScheduledEventActive;
-let closure_7 = arg1(dependencyMap[3]).GuildScheduledEventEntityTypes;
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_11 = arg1(dependencyMap[5]).createStyles({ error: { paddingVertical: 8 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventDetails.tsx");
+// Module 8447 (EditGuildEventDetails)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { isGuildScheduledEventActive as closure_6 } from "_isNativeReflectConstruct";
+import { GuildScheduledEventEntityTypes as closure_7 } from "GUILD_EVENT_MAX_NAME_LENGTH";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
+let closure_11 = _createForOfIteratorHelperLoose.createStyles({ error: { paddingVertical: 8 } });
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventDetails.tsx");
 
 export default function EditGuildEventDetails(guildEvent) {
+  let c11;
   let description;
   let entityType;
   let name;
   let scheduledStartTime;
   let tmp12;
   guildEvent = guildEvent.guildEvent;
-  const arg1 = guildEvent;
-  const importDefault = guildEvent.onChange;
-  let callback4;
+  const onChange = guildEvent.onChange;
+  let callback2;
   function handleChangeEvent(arg0) {
     _undefined(null);
     onChange(arg0);
   }
   ({ description, scheduledStartTime } = guildEvent);
-  const importAll = scheduledStartTime;
   const scheduledEndTime = guildEvent.scheduledEndTime;
-  const dependencyMap = scheduledEndTime;
   const recurrenceRule = guildEvent.recurrenceRule;
-  const callback = recurrenceRule;
   const items = [scheduledStartTime];
   ({ name, entityType } = guildEvent);
-  const memo = React.useMemo(() => onChange(scheduledEndTime[7])(scheduledStartTime), items);
-  const React = memo;
+  memo = memo.useMemo(() => onChange(scheduledEndTime[7])(scheduledStartTime), items);
   const items1 = [scheduledEndTime, scheduledStartTime];
-  const memo1 = React.useMemo(() => {
+  const memo1 = memo.useMemo(() => {
     if (null != scheduledEndTime) {
       let addResult = onChange(scheduledEndTime[7])(scheduledEndTime);
     } else {
@@ -49,31 +50,31 @@ export default function EditGuildEventDetails(guildEvent) {
     }
     return addResult;
   }, items1);
-  const callback2 = memo1;
-  const tmp4 = callback(React.useState(() => guildEvent(scheduledEndTime[8]).recurrenceRuleToOption(onChange(scheduledEndTime[7])(scheduledStartTime), recurrenceRule)), 2);
+  const tmp4 = recurrenceRule(memo.useState(() => guildEvent(scheduledEndTime[8]).recurrenceRuleToOption(onChange(scheduledEndTime[7])(scheduledStartTime), recurrenceRule)), 2);
   const constants = tmp4[0];
-  const callback3 = tmp4[1];
-  const memo2 = React.useMemo(() => onChange(scheduledEndTime[7])(), []);
+  const callback = tmp4[1];
+  const memo2 = memo.useMemo(() => onChange(scheduledEndTime[7])(), []);
   const items2 = [memo];
-  const memo3 = React.useMemo(() => onChange(scheduledEndTime[7])().add(guildEvent(scheduledEndTime[8]).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days"), []);
-  const memo4 = React.useMemo(() => onChange(scheduledEndTime[7])(memo).add(15, "minutes"), items2);
-  const memo5 = React.useMemo(() => onChange(scheduledEndTime[7])().add(guildEvent(scheduledEndTime[8]).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days"), []);
-  const ref = React.useRef(null);
-  const tmp10 = callback2(guildEvent.initialGuildEvent);
-  const tmp = callback4();
-  [tmp12, closure_11] = callback(React.useState(null), 2);
-  let obj = arg1(dependencyMap[9]);
+  const memo3 = memo.useMemo(() => onChange(scheduledEndTime[7])().add(guildEvent(scheduledEndTime[8]).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days"), []);
+  const memo4 = memo.useMemo(() => onChange(scheduledEndTime[7])(memo).add(15, "minutes"), items2);
+  const memo5 = memo.useMemo(() => onChange(scheduledEndTime[7])().add(guildEvent(scheduledEndTime[8]).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days"), []);
+  const ref = memo.useRef(null);
+  const tmp10 = memo1(guildEvent.initialGuildEvent);
+  let closure_10 = tmp10;
+  const tmp = callback2();
+  [tmp12, c11] = recurrenceRule(memo.useState(null), 2);
+  let obj = guildEvent(scheduledEndTime[9]);
   let closure_12 = obj.useNavigation();
   obj = {};
   let tmp15 = null;
   if (null != tmp12) {
-    obj = { "Null": "md", "Null": "background-brand", alignItems: "white", style: tmp.error, children: tmp12 };
-    tmp15 = callback3(arg1(dependencyMap[10]).Text, obj);
+    obj = { style: tmp.error, variant: "text-sm/normal", color: "text-feedback-critical", children: tmp12 };
+    tmp15 = callback(guildEvent(scheduledEndTime[10]).Text, obj);
   }
   const items3 = [tmp15, ];
   const obj1 = {};
-  const intl = arg1(dependencyMap[6]).intl;
-  obj1.text = intl.string(arg1(dependencyMap[6]).t.PDTjLN);
+  let intl = guildEvent(scheduledEndTime[6]).intl;
+  obj1.text = intl.string(guildEvent(scheduledEndTime[6]).t.PDTjLN);
   obj1.variant = "primary";
   obj1.onPress = function onPress() {
     const result = scheduledStartTime(scheduledEndTime[12]).dismissGlobalKeyboard();
@@ -88,23 +89,23 @@ export default function EditGuildEventDetails(guildEvent) {
     }
   };
   obj1.disabled = null != tmp12;
-  items3[1] = callback3(arg1(dependencyMap[11]).Button, obj1);
+  items3[1] = callback(guildEvent(scheduledEndTime[11]).Button, obj1);
   obj.children = items3;
-  const tmp11 = callback(React.useState(null), 2);
-  const tmp13 = tmp10;
+  const tmp11 = recurrenceRule(memo.useState(null), 2);
+  const tmp13 = closure_10;
   const tmp14 = ref;
-  const obj2 = { action: tmp10(ref, obj), ref };
-  const tmp13Result = tmp10(ref, obj);
-  const tmp20 = tmp10;
+  let obj2 = { action: closure_10(ref, obj), ref };
+  const tmp13Result = closure_10(ref, obj);
+  const tmp20 = closure_10;
   const obj3 = {};
-  const tmp21 = importDefault(dependencyMap[15]);
-  const intl2 = arg1(dependencyMap[6]).intl;
-  obj3.title = intl2.string(arg1(dependencyMap[6]).t.GG6vbr);
-  const intl3 = arg1(dependencyMap[6]).intl;
-  obj3.subtitle = intl3.string(arg1(dependencyMap[6]).t.q5lgwV);
+  const tmp21 = onChange(scheduledEndTime[15]);
+  const intl2 = guildEvent(scheduledEndTime[6]).intl;
+  obj3.title = intl2.string(guildEvent(scheduledEndTime[6]).t.GG6vbr);
+  const intl3 = guildEvent(scheduledEndTime[6]).intl;
+  obj3.subtitle = intl3.string(guildEvent(scheduledEndTime[6]).t.q5lgwV);
   const items4 = [
-    callback3(importDefault(dependencyMap[16]), obj3),
-    callback3(arg1(dependencyMap[17]).GuildEventTopic, {
+    callback(onChange(scheduledEndTime[16]), obj3),
+    callback(guildEvent(scheduledEndTime[17]).GuildEventTopic, {
       topic: name,
       onChange(name) {
         handleChangeEvent({ name });
@@ -118,7 +119,7 @@ export default function EditGuildEventDetails(guildEvent) {
   const obj5 = {
     date: memo,
     onChange(toISOString) {
-      if (tmp10) {
+      if (closure_10) {
         const intl = guildEvent(scheduledEndTime[6]).intl;
         return _undefined(intl.string(guildEvent(scheduledEndTime[6]).t.nKIaRG));
       } else {
@@ -139,7 +140,6 @@ export default function EditGuildEventDetails(guildEvent) {
         if (tmp7) {
           obj.recurrenceRule = guildEvent(scheduledEndTime[8]).recurrenceOptionToRecurrenceRule(closure_7, toISOString);
           const obj4 = guildEvent(scheduledEndTime[8]);
-          const tmp10 = scheduledEndTime;
         }
         handleChangeEvent(obj);
       }
@@ -148,11 +148,11 @@ export default function EditGuildEventDetails(guildEvent) {
     minimumDate: memo2,
     maximumDate: memo3
   };
-  const intl4 = arg1(dependencyMap[6]).intl;
-  obj5.dateLabel = intl4.string(arg1(dependencyMap[6]).t.kKOIwJ);
-  const intl5 = arg1(dependencyMap[6]).intl;
-  obj5.timeLabel = intl5.string(arg1(dependencyMap[6]).t.6dGmCD);
-  items4[2] = callback3(arg1(dependencyMap[17]).GuildEventDatetime, obj5);
+  const intl4 = guildEvent(scheduledEndTime[6]).intl;
+  obj5.dateLabel = intl4.string(guildEvent(scheduledEndTime[6]).t.kKOIwJ);
+  const intl5 = guildEvent(scheduledEndTime[6]).intl;
+  obj5.timeLabel = intl5.string(guildEvent(scheduledEndTime[6]).t["6dGmCD"]);
+  items4[2] = callback(guildEvent(scheduledEndTime[17]).GuildEventDatetime, obj5);
   let tmp23 = entityType === constants.EXTERNAL;
   if (tmp23) {
     const obj6 = {
@@ -163,14 +163,14 @@ export default function EditGuildEventDetails(guildEvent) {
       minimumDate: memo4,
       maximumDate: memo5
     };
-    const intl6 = arg1(dependencyMap[6]).intl;
-    obj6.dateLabel = intl6.string(arg1(dependencyMap[6]).t.CTLgZJ);
-    const intl7 = arg1(dependencyMap[6]).intl;
-    obj6.timeLabel = intl7.string(arg1(dependencyMap[6]).t.j2RuXF);
-    tmp23 = callback3(arg1(dependencyMap[17]).GuildEventDatetime, obj6);
+    const intl6 = guildEvent(scheduledEndTime[6]).intl;
+    obj6.dateLabel = intl6.string(guildEvent(scheduledEndTime[6]).t.CTLgZJ);
+    const intl7 = guildEvent(scheduledEndTime[6]).intl;
+    obj6.timeLabel = intl7.string(guildEvent(scheduledEndTime[6]).t.j2RuXF);
+    tmp23 = callback(guildEvent(scheduledEndTime[17]).GuildEventDatetime, obj6);
   }
   items4[3] = tmp23;
-  items4[4] = callback3(arg1(dependencyMap[17]).GuildEventRecurrence, {
+  items4[4] = callback(guildEvent(scheduledEndTime[17]).GuildEventRecurrence, {
     startDate: memo,
     recurrenceRule,
     onRecurrenceChange(closure_7) {
@@ -194,13 +194,13 @@ export default function EditGuildEventDetails(guildEvent) {
   };
   obj8.onFocus = function onFocus() {
     const timerId = setTimeout(() => {
-      if (null != ref.current) {
-        const current = ref.current;
+      if (null != outer1_9.current) {
+        const current = outer1_9.current;
         current.scrollToEnd();
       }
     }, 100);
   };
-  items4[5] = callback3(arg1(dependencyMap[17]).GuildEventDescription, obj8);
+  items4[5] = callback(guildEvent(scheduledEndTime[17]).GuildEventDescription, obj8);
   obj2.children = items4;
   return tmp20(tmp21, obj2);
 };

@@ -1,12 +1,14 @@
 // Module ID: 1620
-// Function ID: 18020
+// Function ID: 18021
 // Name: valueSetter
 // Dependencies: []
 
 // Module 1620 (valueSetter)
+const global = arg0;
 let closure_1 = { code: "function valueSetter_Pnpm_valueSetterTs1(mutable,value,forceUpdate=false){const previousAnimation=mutable._animation;if(previousAnimation){previousAnimation.cancelled=true;mutable._animation=null;}if(typeof value==='function'||value!==null&&typeof value==='object'&&value.onFrame!==undefined){const animation=typeof value==='function'?value():value;if(mutable._value===animation.current&&!animation.isHigherOrder&&!forceUpdate){animation.callback&&animation.callback(true);return;}const initializeAnimation=function(timestamp){animation.onStart(animation,mutable.value,timestamp,previousAnimation);};const currentTimestamp=global.__frameTimestamp||global._getAnimationTimestamp();initializeAnimation(currentTimestamp);const step=function(newTimestamp){const timestamp=newTimestamp<(animation.timestamp||0)?animation.timestamp:newTimestamp;if(animation.cancelled){animation.callback&&animation.callback(false);return;}const finished=animation.onFrame(animation,timestamp);animation.finished=true;animation.timestamp=timestamp;mutable._value=animation.current;if(finished){animation.callback&&animation.callback(true);}else{requestAnimationFrame(step);}};mutable._animation=animation;step(currentTimestamp);}else{if(mutable._value===value&&!forceUpdate){return;}mutable._value=value;}}" };
-arg5.valueSetter = () => {
+arg5.valueSetter = (() => {
   function valueSetter(_animation, value, arg2) {
+    let closure_0 = _animation;
     const tmp = arguments.length > 2 && undefined !== arguments[2] && arguments[2];
     _animation = _animation._animation;
     if (_animation) {
@@ -27,9 +29,9 @@ arg5.valueSetter = () => {
           }
         }
       }
-      let __frameTimestamp = _animation.__frameTimestamp;
+      let __frameTimestamp = outer1_0.__frameTimestamp;
       if (!__frameTimestamp) {
-        __frameTimestamp = _animation._getAnimationTimestamp();
+        __frameTimestamp = outer1_0._getAnimationTimestamp();
       }
       obj.onStart(obj, _animation.value, __frameTimestamp, _animation);
       function step(__frameTimestamp) {
@@ -44,7 +46,7 @@ arg5.valueSetter = () => {
         } else {
           obj.finished = true;
           obj.timestamp = timestamp;
-          __frameTimestamp._value = obj.current;
+          closure_0._value = obj.current;
           if (obj.onFrame(obj, timestamp)) {
             if (obj.callback) {
               obj.callback(true);
@@ -65,4 +67,4 @@ arg5.valueSetter = () => {
   valueSetter.__workletHash = 13584629644803;
   valueSetter.__initData = closure_1;
   return valueSetter;
-}();
+})();

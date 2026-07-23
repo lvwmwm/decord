@@ -1,18 +1,25 @@
-// Module ID: 15400
-// Function ID: 117473
+// Module ID: 15517
+// Function ID: 119647
 // Name: getHasAutomodAccess
-// Dependencies: []
+// Dependencies: [1838, 3758, 653, 566, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUserProfileRuleEnabled
 
-// Module 15400 (getHasAutomodAccess)
+// Module 15517 (getHasAutomodAccess)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function getHasAutomodAccess(guild_id) {
   let obj = arg1;
   let obj2 = arg2;
   if (arg1 === undefined) {
-    obj = closure_2;
+    obj = _createForOfIteratorHelperLoose;
   }
   if (obj2 === undefined) {
-    obj2 = closure_3;
+    obj2 = _isNativeReflectConstruct;
   }
   const guild = obj.getGuild(guild_id);
   let canResult = null != guild;
@@ -21,11 +28,8 @@ function getHasAutomodAccess(guild_id) {
   }
   return canResult;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ GuildFeatures: closure_4, Permissions: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/guild_automod/PermissionUtils.tsx");
+({ GuildFeatures: closure_4, Permissions: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/guild_automod/PermissionUtils.tsx");
 
 export const canCurrentUserManageMessageFilters = function canCurrentUserManageMessageFilters(guild_id) {
   let tmp = null != guild_id;
@@ -38,21 +42,21 @@ export const canCurrentUserManageAutomod = function canCurrentUserManageAutomod(
   return getHasAutomodAccess(guild_id);
 };
 export const useCanCurrentUserManageAutomod = function useCanCurrentUserManageAutomod(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2, closure_3];
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
   const items1 = [arg0];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => callback(arg0, closure_2, closure_3), items1);
+  return _require(566).useStateFromStores(items, () => outer1_6(closure_0, outer1_2, outer1_3), items1);
 };
 export const useIsUserProfileRuleEnabled = function useIsUserProfileRuleEnabled(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
+  const _require = arg0;
+  const items = [_createForOfIteratorHelperLoose];
   const items1 = [arg0];
-  return arg1(dependencyMap[3]).useStateFromStores(items, () => {
-    const guild = guild.getGuild(arg0);
+  return _require(566).useStateFromStores(items, () => {
+    const guild = outer1_2.getGuild(closure_0);
     let flag;
     if (null != guild) {
       const features = guild.features;
-      flag = features.has(constants.COMMUNITY);
+      flag = features.has(outer1_4.COMMUNITY);
     }
     if (!flag) {
       flag = false;

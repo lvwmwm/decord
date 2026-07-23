@@ -1,24 +1,37 @@
-// Module ID: 14457
-// Function ID: 108940
+// Module ID: 14571
+// Function ID: 111093
 // Name: toggle
-// Dependencies: []
+// Dependencies: [7662, 10095, 1212, 2332, 3803, 14335, 2]
 
-// Module 14457 (toggle)
-const _module = require(dependencyMap[1]);
-const toggle = _module.createToggle({
+// Module 14571 (toggle)
+import createToggle from "createToggle";
+
+const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(importDefault(dependencyMap[3]).A0FVCV);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2332).A0FVCV);
   },
   useDescription() {
-    const intl = require(dependencyMap[2]).intl;
-    return intl.string(importDefault(dependencyMap[3]).vHX6RG);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2332).vHX6RG);
   },
-  parent: require(dependencyMap[0]).MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: require(dependencyMap[4]).NotifyFriendsOnComeOnline.useSetting,
-  onValueChange: require(dependencyMap[5]).onNotifyFriendsOnComeOnlineSettingsChanged
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: require("explicitContentFromProto").NotifyFriendsOnComeOnline.useSetting,
+  onValueChange: require("onFriendOnlineNotificationSettingsChanged").onNotifyFriendsOnComeOnlineSettingsChanged
 });
-const _module1 = require(dependencyMap[6]);
-const result = _module1.fileFinishedImporting("modules/user_settings/defs/native/NotifyFriendsOnComeOnlineSetting.tsx");
+const obj = {
+  useTitle() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2332).A0FVCV);
+  },
+  useDescription() {
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2332).vHX6RG);
+  },
+  parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: require("explicitContentFromProto").NotifyFriendsOnComeOnline.useSetting,
+  onValueChange: require("onFriendOnlineNotificationSettingsChanged").onNotifyFriendsOnComeOnlineSettingsChanged
+};
+const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/NotifyFriendsOnComeOnlineSetting.tsx");
 
 export default toggle;

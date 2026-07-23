@@ -1,18 +1,30 @@
-// Module ID: 16312
-// Function ID: 125848
+// Module ID: 16429
+// Function ID: 128022
 // Name: ApplicationRejectedNotice
-// Dependencies: []
+// Dependencies: [31, 27, 1838, 653, 33, 4130, 566, 16405, 11329, 16378, 1212, 14102, 16419, 2]
 // Exports: default
 
-// Module 16312 (ApplicationRejectedNotice)
+// Module 16429 (ApplicationRejectedNotice)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_5 from "_createForOfIteratorHelperLoose";
+import { GuildFeatures } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_7;
+let closure_8;
+const require = arg1;
 function ApplicationRejectedNotice(guildId) {
   let reapplyNoticeText;
   let requestRejectedNoticeText;
   let resubmissionError;
-  const arg1 = guildId.guildId;
-  let obj = arg1(dependencyMap[6]);
+  guildId = guildId.guildId;
+  let obj = guildId(566);
   const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId));
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(guildId));
   if (null != stateFromStores) {
     const features = stateFromStores.features;
     const hasItem = features.has(GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED);
@@ -22,42 +34,42 @@ function ApplicationRejectedNotice(guildId) {
     const hasItem1 = features2.has(GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   }
   const tmp = callback3();
-  ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = importDefault(dependencyMap[7])(stateFromStores));
+  ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = importDefault(16405)(stateFromStores));
   if (null != resubmissionError) {
     obj = { children: resubmissionError.getAnyErrorMessage() };
-    let tmp11 = callback(importDefault(dependencyMap[8]), obj);
-    const tmp33 = importDefault(dependencyMap[8]);
+    let tmp11 = callback(importDefault(11329), obj);
+    const tmp33 = importDefault(11329);
   } else if (null != requestRejectedNoticeText) {
     obj = { notice: requestRejectedNoticeText };
-    tmp11 = callback(importDefault(dependencyMap[9]), obj);
+    tmp11 = callback(importDefault(16378), obj);
   } else if (tmp10) {
     const obj1 = {};
-    const intl3 = arg1(dependencyMap[10]).intl;
-    obj1.notice = intl3.string(arg1(dependencyMap[10]).t.MyJpJT);
-    tmp11 = callback(importDefault(dependencyMap[9]), obj1);
-    const tmp25 = importDefault(dependencyMap[9]);
+    const intl3 = guildId(1212).intl;
+    obj1.notice = intl3.string(guildId(1212).t.MyJpJT);
+    tmp11 = callback(importDefault(16378), obj1);
+    const tmp25 = importDefault(16378);
   } else if (null != reapplyNoticeText) {
     const obj2 = { notice: reapplyNoticeText };
-    const intl2 = arg1(dependencyMap[10]).intl;
-    obj2.ctaLabel = intl2.string(arg1(dependencyMap[10]).t.YKw/NQ);
+    const intl2 = guildId(1212).intl;
+    obj2.ctaLabel = intl2.string(guildId(1212).t["YKw/NQ"]);
     obj2.onClick = tmp9;
     obj2.submitting = tmp8;
-    tmp11 = callback(importDefault(dependencyMap[9]), obj2);
-    const tmp20 = importDefault(dependencyMap[9]);
+    tmp11 = callback(importDefault(16378), obj2);
+    const tmp20 = importDefault(16378);
   } else if (true === hasItem1) {
     const obj3 = {};
-    const intl = arg1(dependencyMap[10]).intl;
-    obj3.notice = intl.string(arg1(dependencyMap[10]).t.e2g9sW);
-    tmp11 = callback(importDefault(dependencyMap[9]), obj3);
-    const tmp15 = importDefault(dependencyMap[9]);
+    const intl = guildId(1212).intl;
+    obj3.notice = intl.string(guildId(1212).t.e2g9sW);
+    tmp11 = callback(importDefault(16378), obj3);
+    const tmp15 = importDefault(16378);
   } else {
     tmp11 = null;
     if (true === hasItem) {
       const obj4 = {};
-      const intl4 = arg1(dependencyMap[10]).intl;
-      obj4.notice = intl4.string(arg1(dependencyMap[10]).t.rxI9sl);
-      tmp11 = callback(importDefault(dependencyMap[9]), obj4);
-      const tmp40 = importDefault(dependencyMap[9]);
+      const intl4 = guildId(1212).intl;
+      obj4.notice = intl4.string(guildId(1212).t.rxI9sl);
+      tmp11 = callback(importDefault(16378), obj4);
+      const tmp40 = importDefault(16378);
     }
   }
   let tmp34 = null;
@@ -72,7 +84,7 @@ function GuildSettingsRoleSubscription(arg0) {
   let guildId;
   ({ guildId, children } = arg0);
   const tmp = callback3();
-  let obj = arg1(dependencyMap[11]);
+  let obj = require(14102) /* useGroupListingsFetchContext */;
   if (obj.useGroupListingsFetchContext()) {
     obj = { style: tmp.container };
     obj = { guildId };
@@ -85,16 +97,10 @@ function GuildSettingsRoleSubscription(arg0) {
   }
   return tmp6;
 }
-importAll(dependencyMap[0]);
-({ ActivityIndicator: closure_3, View: closure_4 } = arg1(dependencyMap[1]));
-let closure_5 = importDefault(dependencyMap[2]);
-const GuildFeatures = arg1(dependencyMap[3]).GuildFeatures;
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp4 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: { flex: 1 }, warningBlockContainer: { frameRateDecode: null, frameRateEncode: null }, spinner: { marginTop: 12 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionContainer.tsx");
+({ ActivityIndicator: closure_3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 }, warningBlockContainer: { marginHorizontal: 16, marginTop: 16 }, spinner: { marginTop: 12 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionContainer.tsx");
 
 export default function GuildSettingsRoleSubscriptionContainer(guildId) {
   let obj = { guildId: guildId.guildId, refetchOnMount: true };
@@ -102,6 +108,6 @@ export default function GuildSettingsRoleSubscriptionContainer(guildId) {
   obj = {};
   const merged = Object.assign(guildId);
   obj.children = callback(GuildSettingsRoleSubscription, obj);
-  obj.children = callback(arg1(dependencyMap[12]).RoleSubscriptionSettingsDisabledContextProvider, obj);
-  return callback(arg1(dependencyMap[11]).GroupListingsFetchContextProvider, obj);
+  obj.children = callback(require(16419) /* useRoleSubscriptionSettingsDisabled */.RoleSubscriptionSettingsDisabledContextProvider, obj);
+  return callback(require(14102) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
 };

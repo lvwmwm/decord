@@ -1,13 +1,13 @@
-// Module ID: 7619
-// Function ID: 61038
+// Module ID: 7625
+// Function ID: 61075
 // Name: processColorOrThrow
-// Dependencies: []
+// Dependencies: [27, 2]
 // Exports: processColorOrThrow
 
-// Module 7619 (processColorOrThrow)
-const processColor = require(dependencyMap[0]).processColor;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorStyleSheet.tsx");
+// Module 7625 (processColorOrThrow)
+import { processColor } from "get ActivityIndicator";
+
+const result = require("set").fileFinishedImporting("modules/messages/native/renderer/RowGeneratorStyleSheet.tsx");
 
 export const processColorOrThrow = function processColorOrThrow(arg0) {
   const tmp = processColor(arg0);

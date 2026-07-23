@@ -1,13 +1,13 @@
-// Module ID: 5971
-// Function ID: 49889
+// Module ID: 5976
+// Function ID: 49918
 // Name: CrosshairIllocon
-// Dependencies: []
+// Dependencies: [33, 5085, 5977, 2]
 // Exports: CrosshairIllocon
 
-// Module 5971 (CrosshairIllocon)
-const jsx = require(dependencyMap[0]).jsx;
-const _module = require(dependencyMap[3]);
-const result = _module.fileFinishedImporting("design/components/mana-assets/native/generated/CrosshairIllocon.native.tsx");
+// Module 5976 (CrosshairIllocon)
+import { jsx } from "jsxProd";
+
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CrosshairIllocon.native.tsx");
 
 export const CrosshairIllocon = function CrosshairIllocon(size) {
   let accessibilityLabel;
@@ -19,7 +19,7 @@ export const CrosshairIllocon = function CrosshairIllocon(size) {
     num = 64;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(5977) };
   obj.source = obj;
   obj = { width: num, height: num };
   const items = [obj];
@@ -27,5 +27,5 @@ export const CrosshairIllocon = function CrosshairIllocon(size) {
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num, height: num });
 };

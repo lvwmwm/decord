@@ -1,28 +1,32 @@
-// Module ID: 10106
-// Function ID: 78238
-// Dependencies: []
+// Module ID: 10114
+// Function ID: 78278
+// Dependencies: [31, 27, 33, 4130, 689, 1273, 10115, 4126, 1212, 2]
 
-// Module 10106
-const View = arg1(dependencyMap[1]).View;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
+// Module 10114
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
 let obj = {};
-obj = { Text: null, applicationId: "\u{1F469}\u{1F3FC}\u200D\u{1F9B1}", message: true, gap: importDefault(dependencyMap[4]).space.PX_8 };
+obj = { flex: 1, flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
 obj.container = obj;
-let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo(function HomeChannelHeader() {
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo(function HomeChannelHeader() {
   let obj = { style: callback3().container };
-  obj = { source: importDefault(dependencyMap[6]), size: arg1(dependencyMap[5]).Icon.Sizes.MEDIUM, disableColor: true };
-  const items = [callback(arg1(dependencyMap[5]).Icon, obj), ];
-  obj = {};
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.children = intl.string(arg1(dependencyMap[8]).t.Ym2Ri6);
-  items[1] = callback(arg1(dependencyMap[7]).Text, obj);
+  obj = { source: importDefault(10115), size: require(1273) /* Button */.Icon.Sizes.MEDIUM, disableColor: true };
+  const items = [callback(require(1273) /* Button */.Icon, obj), ];
+  obj = { variant: "heading-lg/extrabold", color: "interactive-text-active" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.Ym2Ri6);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
   return callback2(View, obj);
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/main_tabs_v2/native/channel/header/HomeChannelHeader.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/HomeChannelHeader.tsx");
 
 export default memoResult;

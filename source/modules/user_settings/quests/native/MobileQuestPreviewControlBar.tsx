@@ -1,27 +1,36 @@
-// Module ID: 13956
-// Function ID: 106037
+// Module ID: 14070
+// Function ID: 108193
 // Name: MobileQuestPreviewControlBar
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 6942, 482, 33, 4130, 689, 10464, 566, 9444, 5498, 1212, 5492, 14071, 14074, 7771, 13509, 12238, 4126, 2]
 
-// Module 13956 (MobileQuestPreviewControlBar)
+// Module 14070 (MobileQuestPreviewControlBar)
+import sum from "sum";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { AppRoutes } from "sum";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 class MobileQuestPreviewControlBar {
   constructor(arg0) {
     questId = global.questId;
-    arg1 = questId;
     setQuestId = global.setQuestId;
-    importDefault = setQuestId;
     refreshQuest = global.refreshQuest;
-    dependencyMap = refreshQuest;
-    tmp = closure_11();
-    tmp2 = closure_4(importAll.useState(false), 2);
+    tmp = c11();
+    tmp2 = c4(useStateFromStores.useState(false), 2);
     first = tmp2[0];
-    closure_3 = tmp2[1];
-    obj = arg1(dependencyMap[9]);
+    c3 = tmp2[1];
+    obj = require("_createForOfIteratorHelperLoose");
     questsWithPreviewAccess = obj.useQuestsWithPreviewAccess();
-    closure_4 = questsWithPreviewAccess;
-    obj2 = arg1(dependencyMap[10]);
+    c4 = questsWithPreviewAccess;
+    obj2 = require("initialize");
     items = [];
-    items[0] = closure_7;
+    items[0] = useMemo;
     items1 = [];
     items1[0] = questId;
     stateFromStores = obj2.useStateFromStores(items, () => {
@@ -31,9 +40,9 @@ class MobileQuestPreviewControlBar {
       }
       return fetchQuestPreviewError;
     }, items1);
-    obj3 = arg1(dependencyMap[10]);
+    obj3 = require("initialize");
     items2 = [];
-    items2[0] = closure_7;
+    items2[0] = useMemo;
     items3 = [];
     items3[0] = questId;
     stateFromStores1 = obj3.useStateFromStores(items2, () => {
@@ -53,7 +62,7 @@ class MobileQuestPreviewControlBar {
         setQuestId(arg0);
       }
     };
-    memo = importAll.useMemo(() => {
+    memo = useStateFromStores.useMemo(() => {
       const mapped = questsWithPreviewAccess.map((config) => {
         const obj = {};
         config = config.config;
@@ -72,39 +81,39 @@ class MobileQuestPreviewControlBar {
         return obj;
       });
       if (!tmp) {
-        const obj = { label: questId, value: questId };
+        let obj = { label: questId, value: questId };
         mapped.unshift(obj);
       }
       return mapped;
     }, items4);
     // CreateGeneratorClosureLongIndex (0x67)
-    callback = importAll.useCallback(fn, items5);
+    callback = useStateFromStores.useCallback(fn, items5);
     items6 = [, ];
     items6[0] = questId;
     items6[1] = refreshQuest;
-    callback1 = importAll.useCallback(closure_3(fn), items6);
-    importAll = callback1;
+    callback1 = useStateFromStores.useCallback(c3(fn), items6);
+    useStateFromStores = callback1;
     // CreateGeneratorClosureLongIndex (0x67)
     items7 = [, ];
     items7[0] = questId;
     items7[1] = refreshQuest;
-    callback2 = importAll.useCallback(closure_3(items6), items7);
+    callback2 = useStateFromStores.useCallback(c3(items6), items7);
     View = callback2;
     // CreateGeneratorClosureLongIndex (0x67)
     items8 = [, ];
     items8[0] = questId;
     items8[1] = refreshQuest;
-    callback3 = importAll.useCallback(closure_3(items7), items8);
-    closure_7 = callback3;
+    callback3 = useStateFromStores.useCallback(c3(items7), items8);
+    useMemo = callback3;
     items9 = [, , , ];
     items9[0] = questId;
     items9[1] = callback1;
     items9[2] = callback2;
     items9[3] = callback3;
     obj = { style: tmp.container };
-    callback4 = importAll.useCallback(() => {
+    callback4 = useStateFromStores.useCallback(() => {
       let obj = questId(refreshQuest[12]);
-      obj = {};
+      obj = { key: "quest-preview-menu", options: null, hasIcons: false };
       obj = {};
       const intl = questId(refreshQuest[13]).intl;
       obj.label = intl.string(questId(refreshQuest[13]).t.jQEfRT);
@@ -124,9 +133,9 @@ class MobileQuestPreviewControlBar {
       const intl4 = questId(refreshQuest[13]).intl;
       obj3.label = intl4.string(questId(refreshQuest[13]).t.rNGQfD);
       obj3.onPress = function onPress() {
-        if (null != callback) {
-          callback(closure_2[14]).copy(closure_8.QUEST_PREVIEW_TOOL_2(callback));
-          const obj = callback(closure_2[14]);
+        if (null != outer1_0) {
+          questId(refreshQuest[14]).copy(outer2_8.QUEST_PREVIEW_TOOL_2(outer1_0));
+          const obj = questId(refreshQuest[14]);
         }
       };
       items[3] = obj3;
@@ -136,7 +145,7 @@ class MobileQuestPreviewControlBar {
     tmp13 = jsxs;
     tmp14 = View;
     items10 = [, , ];
-    items10[0] = jsx(importDefault(dependencyMap[15]), {});
+    items10[0] = jsx(require("QuestThemePicker"), {});
     obj1 = { style: tmp.questInputContainer };
     obj2 = { style: tmp.searchField };
     tmp15 = jsxs;
@@ -145,15 +154,15 @@ class MobileQuestPreviewControlBar {
     tmp18 = View;
     tmp19 = jsx;
     obj3 = { options: memo, value: questId, onChange: callback };
-    intl = arg1(dependencyMap[13]).intl;
-    obj3.placeholder = intl.string(arg1(dependencyMap[13]).t.Zw8jxn);
+    intl = require("getSystemLocale").intl;
+    obj3.placeholder = intl.string(require("getSystemLocale").t.Zw8jxn);
     obj3.allowCustomValue = true;
     tmp20 = stateFromStores1;
     if (!stateFromStores1) {
       tmp20 = first;
     }
     obj3.isDisabled = tmp20;
-    obj2.children = tmp19(arg1(dependencyMap[16]).MobileSearchableSelect, obj3);
+    obj2.children = tmp19(require("MobileSearchableSelect").MobileSearchableSelect, obj3);
     items11 = [, ];
     items11[0] = tmp17(tmp18, obj2);
     obj4 = { style: tmp.iconsColumn };
@@ -161,9 +170,9 @@ class MobileQuestPreviewControlBar {
     tmp22 = View;
     tmp23 = jsx;
     obj5 = {};
-    obj5.icon = jsx(arg1(dependencyMap[18]).RefreshIcon, {});
-    intl2 = arg1(dependencyMap[13]).intl;
-    obj5.accessibilityLabel = intl2.string(arg1(dependencyMap[13]).t.wzzjk9);
+    obj5.icon = jsx(require("RefreshIcon").RefreshIcon, {});
+    intl2 = require("getSystemLocale").intl;
+    obj5.accessibilityLabel = intl2.string(require("getSystemLocale").t.wzzjk9);
     obj5.onPress = refreshQuest;
     tmp24 = stateFromStores1;
     if (!stateFromStores1) {
@@ -175,24 +184,24 @@ class MobileQuestPreviewControlBar {
     obj5.size = "sm";
     obj5.variant = "secondary";
     items12 = [, ];
-    items12[0] = tmp23(arg1(dependencyMap[17]).IconButton, obj5);
+    items12[0] = tmp23(require("IconButton").IconButton, obj5);
     tmp27Result = null != questId;
     if (tmp27Result) {
-      tmp28 = arg1;
-      tmp29 = dependencyMap;
+      tmp28 = questId;
+      tmp29 = refreshQuest;
       tmp27 = jsx;
-      obj6 = {};
+      obj6 = { icon: null, size: "sm", variant: "secondary" };
       tmp30 = jsx;
       num = 19;
-      obj6.icon = jsx(arg1(dependencyMap[19]).MoreVerticalIcon, {});
-      intl3 = arg1(dependencyMap[13]).intl;
-      obj6.accessibilityLabel = intl3.string(arg1(dependencyMap[13]).t.+1H47t);
+      obj6.icon = jsx(require("MoreVerticalIcon").MoreVerticalIcon, {});
+      intl3 = require("getSystemLocale").intl;
+      obj6.accessibilityLabel = intl3.string(require("getSystemLocale").t["+1H47t"]);
       if (!stateFromStores1) {
         stateFromStores1 = first;
       }
       obj6.disabled = stateFromStores1;
       obj6.onPress = callback4;
-      tmp27Result = tmp27(arg1(dependencyMap[17]).IconButton, obj6);
+      tmp27Result = tmp27(require("IconButton").IconButton, obj6);
     }
     items12[1] = tmp27Result;
     obj4.children = items12;
@@ -202,38 +211,30 @@ class MobileQuestPreviewControlBar {
     tmp31 = null != stateFromStores;
     if (tmp31) {
       tmp32 = jsx;
-      tmp33 = arg1;
-      tmp34 = dependencyMap;
+      tmp33 = questId;
+      tmp34 = refreshQuest;
       num2 = 20;
-      obj7 = { cachedAt: 1, edpbxy: "center" };
+      obj7 = { variant: "text-sm/medium", color: "text-feedback-critical" };
       obj7.style = tmp.errorText;
       obj7.children = stateFromStores.message;
-      tmp31 = jsx(arg1(dependencyMap[20]).Text, obj7);
+      tmp31 = jsx(require("Text").Text, obj7);
     }
     items10[2] = tmp31;
     obj.children = items10;
     return tmp13(tmp14, obj);
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_7 = importDefault(dependencyMap[4]);
-const AppRoutes = arg1(dependencyMap[5]).AppRoutes;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = { container: { 9223372036854775807: null, 9223372036854775807: null } };
-obj = { gap: importDefault(dependencyMap[8]).space.PX_8 };
-obj.questInputContainer = obj;
-obj.searchField = {};
-const tmp2 = arg1(dependencyMap[6]);
-obj.iconsColumn = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_8, paddingTop: importDefault(dependencyMap[8]).space.PX_4 };
-const obj1 = { flexDirection: "row", gap: importDefault(dependencyMap[8]).space.PX_8, paddingTop: importDefault(dependencyMap[8]).space.PX_4 };
-obj.errorText = { marginTop: importDefault(dependencyMap[8]).space.PX_4, zIndex: 1 };
-let closure_11 = obj.createStyles(obj);
-const obj2 = { marginTop: importDefault(dependencyMap[8]).space.PX_4, zIndex: 1 };
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/user_settings/quests/native/MobileQuestPreviewControlBar.tsx");
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { overflow: "visible", zIndex: 1 } };
+_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "flex-start", justifyContent: "flex-start", gap: require("_createForOfIteratorHelperLoose").space.PX_8, zIndex: 2, overflow: "visible" };
+_createForOfIteratorHelperLoose.questInputContainer = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.searchField = { flex: 1, zIndex: 3, overflow: "visible" };
+_createForOfIteratorHelperLoose.iconsColumn = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let obj1 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose.errorText = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, zIndex: 1 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_4, zIndex: 1 };
+let result = require("result").fileFinishedImporting("modules/user_settings/quests/native/MobileQuestPreviewControlBar.tsx");
 
 export default MobileQuestPreviewControlBar;
 export { MobileQuestPreviewControlBar };

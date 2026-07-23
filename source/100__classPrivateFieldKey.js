@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 100 (_classPrivateFieldKey)
-let closure_0 = 0;
+let c0 = 0;
 
 export default function _classPrivateFieldKey(arg0) {
   let closure_0 = tmp + 1;

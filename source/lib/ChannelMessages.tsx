@@ -1,10 +1,22 @@
-// Module ID: 4800
-// Function ID: 41730
+// Module ID: 4803
+// Function ID: 41748
 // Name: mergeMessage
-// Dependencies: []
+// Dependencies: [153, 6, 7, 653, 3, 4351, 22, 4062, 21, 4804, 4805, 4806, 4807, 2]
 // Exports: flatMapChannelMessages
 
-// Module 4800 (mergeMessage)
+// Module 4803 (mergeMessage)
+import "_readOnlyError";
+import apply from "apply";
+import GuildThemeSourcePreference from "GuildThemeSourcePreference";
+import ME from "ME";
+import importDefaultResult1 from "ME";
+
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function mergeMessage(get, id) {
   let messageRecord = get.get(id.id);
   if (null != messageRecord) {
@@ -36,18 +48,14 @@ function mergeMessage(get, id) {
     }
     return messageRecord;
   }
-  messageRecord = id(dependencyMap[5]).createMessageRecord(id);
+  messageRecord = require(4351) /* createMinimalMessageRecord */.createMessageRecord(id);
 }
-importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ MAX_MESSAGES_PER_CHANNEL: closure_6, MAX_LOADED_MESSAGES: closure_7, MAX_MESSAGE_CACHE_SIZE: closure_8, TRUNCATED_MESSAGE_VIEW_SIZE: closure_9, MessageStates: closure_10 } = arg1(dependencyMap[3]));
-let importDefaultResult1 = importDefault(dependencyMap[4]);
+({ MAX_MESSAGES_PER_CHANNEL: closure_6, MAX_LOADED_MESSAGES: closure_7, MAX_MESSAGE_CACHE_SIZE: closure_8, TRUNCATED_MESSAGE_VIEW_SIZE: closure_9, MessageStates: closure_10 } = ME);
 importDefaultResult1 = new importDefaultResult1("ChannelMessages");
-let closure_12 = () => {
+let closure_12 = (() => {
   class MessageCache {
     constructor(arg0) {
-      tmp = closure_4(this, MessageCache);
+      tmp = outer1_4(this, MessageCache);
       this._messages = [];
       this._map = {};
       this._wasAtEdge = false;
@@ -55,7 +63,6 @@ let closure_12 = () => {
       return;
     }
   }
-  const arg1 = MessageCache;
   let obj = {
     key: "clone",
     value: function clone() {
@@ -68,7 +75,7 @@ let closure_12 = () => {
       return tmp;
     }
   };
-  const items = [obj, , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , ];
   obj = {
     key: "wasAtEdge",
     get() {
@@ -97,20 +104,20 @@ let closure_12 = () => {
   items[4] = {
     key: "remove",
     value(arg0) {
-      const MessageCache = arg0;
-      this._messages = callback(closure_3[6]).filter(this._messages, (id) => id.id !== id);
-      delete r1[r2];
+      let closure_0 = arg0;
+      this._messages = outer1_1(outer1_3[6]).filter(this._messages, (id) => id.id !== closure_0);
+      delete tmp[tmp2];
     }
   };
   items[5] = {
     key: "removeMany",
-    value(closure_30) {
-      const MessageCache = this;
-      closure_30(closure_3[6]).each(closure_30, (arg0) => {
-        delete r1[r0];
+    value(closure_1) {
+      const self = this;
+      outer1_1(outer1_3[6]).each(closure_1, (arg0) => {
+        delete tmp2[tmp];
       });
       const _messages = this._messages;
-      this._messages = _messages.filter((id) => -1 === id.indexOf(id.id));
+      this._messages = _messages.filter((id) => -1 === closure_1.indexOf(id.id));
     }
   };
   items[6] = {
@@ -119,13 +126,12 @@ let closure_12 = () => {
       let _messages;
       let _messages2;
       const self = this;
-      const tmp = this._map[arg0];
-      if (null != tmp) {
+      if (null != this._map[arg0]) {
         const _map = self._map;
-        delete r1[r3];
+        delete tmp[tmp2];
         self._map[id.id] = id;
         ({ _messages: _messages2, _messages } = self);
-        _messages[_messages2.indexOf(tmp)] = id;
+        _messages[_messages2.indexOf(tmp3)] = id;
       }
     }
   };
@@ -135,8 +141,7 @@ let closure_12 = () => {
       let _messages;
       let _messages2;
       const self = this;
-      const tmp = this._map[arg0];
-      if (null != tmp) {
+      if (null != this._map[arg0]) {
         const tmp3 = arg1(tmp);
         self._map[tmp.id] = tmp3;
         ({ _messages: _messages2, _messages } = self);
@@ -167,22 +172,22 @@ let closure_12 = () => {
     key: "cache",
     value(arg0) {
       let flag = arg1;
-      const self = this;
-      const MessageCache = this;
+      let self = this;
+      self = this;
       if (arg1 === undefined) {
         flag = false;
       }
       if (0 === self.length) {
         self._wasAtEdge = flag;
       }
-      if (self._messages.length + arg0.length > closure_8) {
+      if (self._messages.length + arg0.length > outer1_8) {
         self._wasAtEdge = false;
-        if (arg0.length > closure_8) {
+        if (arg0.length > outer1_8) {
           const slice = arg0.slice;
           if (self._isCacheBefore) {
-            self._messages = slice(arg0.length - closure_8);
+            self._messages = slice(arg0.length - outer1_8);
           } else {
-            self._messages = slice(0, closure_8);
+            self._messages = slice(0, outer1_8);
           }
           self._map = {};
           const _messages = self._messages;
@@ -191,7 +196,7 @@ let closure_12 = () => {
             return id;
           });
         } else {
-          const diff = closure_8 - arg0.length;
+          const diff = outer1_8 - arg0.length;
           const _messages1 = self._messages;
           const slice2 = _messages1.slice;
           if (self._isCacheBefore) {
@@ -230,8 +235,8 @@ let closure_12 = () => {
   items[13] = {
     key: "extract",
     value(arg0) {
-      const self = this;
-      const MessageCache = this;
+      let self = this;
+      self = this;
       const _Math = Math;
       if (this._isCacheBefore) {
         const maxResult = _Math.max(self.length - arg0, 0);
@@ -246,21 +251,21 @@ let closure_12 = () => {
         _messages3.splice(0, arg0);
       }
       const item = substr.forEach((id) => {
-        delete r1[r0];
+        delete tmp2[tmp];
         return id.id;
       });
       return substr;
     }
   };
   return callback(MessageCache, items);
-}();
-const tmp6 = () => {
+})();
+let tmp6 = (() => {
   class ChannelMessages {
     constructor(arg0) {
-      tmp = closure_4(this, ChannelMessages);
+      tmp = outer1_4(this, ChannelMessages);
       this.ready = false;
       this.cached = false;
-      this.jumpType = ChannelMessages(closure_3[7]).JumpType.ANIMATED;
+      this.jumpType = ChannelMessages(outer1_3[7]).JumpType.ANIMATED;
       this.jumpTargetId = null;
       this.jumpTargetOffset = 0;
       this.jumpSequenceId = 1;
@@ -280,16 +285,15 @@ const tmp6 = () => {
       this.hasFetched = false;
       this.error = false;
       this._array = [];
-      tmp2 = new closure_12(true);
+      tmp2 = new outer1_12(true);
       this._before = tmp2;
-      tmp3 = new closure_12(false);
+      tmp3 = new outer1_12(false);
       this._after = tmp3;
       this._map = {};
       this.channelId = arg0;
       return;
     }
   }
-  const arg1 = ChannelMessages;
   let obj = {
     key: "mutate",
     value(ready) {
@@ -390,7 +394,7 @@ const tmp6 = () => {
       return tmp;
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
   obj = {
     key: "length",
     get() {
@@ -468,14 +472,14 @@ const tmp6 = () => {
     key: "findOldest",
     value(arg0) {
       const self = this;
-      let found = callback(closure_3[6]).find(this._before._messages, arg0);
+      let found = outer1_1(outer1_3[6]).find(this._before._messages, arg0);
       if (null == found) {
-        found = callback(closure_3[6]).find(self._array, arg0);
-        const arr2 = callback(closure_3[6]);
+        found = outer1_1(outer1_3[6]).find(self._array, arg0);
+        const arr2 = outer1_1(outer1_3[6]);
       }
       if (null == found) {
-        found = callback(closure_3[6]).find(self._after._messages, arg0);
-        const arr3 = callback(closure_3[6]);
+        found = outer1_1(outer1_3[6]).find(self._after._messages, arg0);
+        const arr3 = outer1_1(outer1_3[6]);
       }
       return found;
     }
@@ -484,14 +488,14 @@ const tmp6 = () => {
     key: "findNewest",
     value(arg0) {
       const self = this;
-      let findLastResult = callback(closure_3[6]).findLast(this._after._messages, arg0);
+      let findLastResult = outer1_1(outer1_3[6]).findLast(this._after._messages, arg0);
       if (null == findLastResult) {
-        findLastResult = callback(closure_3[6]).findLast(self._array, arg0);
-        const obj2 = callback(closure_3[6]);
+        findLastResult = outer1_1(outer1_3[6]).findLast(self._array, arg0);
+        const obj2 = outer1_1(outer1_3[6]);
       }
       if (null == findLastResult) {
-        findLastResult = callback(closure_3[6]).findLast(self._before._messages, arg0);
-        const obj3 = callback(closure_3[6]);
+        findLastResult = outer1_1(outer1_3[6]).findLast(self._before._messages, arg0);
+        const obj3 = outer1_1(outer1_3[6]);
       }
       return findLastResult;
     }
@@ -738,18 +742,18 @@ const tmp6 = () => {
   items[20] = {
     key: "indexOf",
     value(arg0) {
-      const ChannelMessages = arg0;
-      let closure_1 = -1;
+      let closure_0 = arg0;
+      let c1 = -1;
       const _array = this._array;
       const found = _array.find((id) => {
-        let flag = id.id === id;
+        let flag = id.id === closure_0;
         if (flag) {
           let closure_1 = arg1;
           flag = true;
         }
         return flag;
       });
-      return closure_1;
+      return c1;
     }
   };
   items[21] = {
@@ -797,22 +801,23 @@ const tmp6 = () => {
     key: "update",
     value(arg0, arg1) {
       const self = this;
-      const ChannelMessages = arg0;
-      const tmp = this._map[arg0];
-      if (null == tmp) {
-        const _before = self._before;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let closure_2 = tmp;
+      if (null == this._map[arg0]) {
+        let _before = self._before;
         if (_before.has(arg0)) {
           let mutation = self.mutate((_before) => {
             _before = _before._before;
-            return _before.update(_before, arg1);
+            return _before.update(closure_0, closure_1);
           }, true);
         } else {
-          const _after = self._after;
+          let _after = self._after;
           mutation = self;
           if (_after.has(arg0)) {
             mutation = self.mutate((_after) => {
               _after = _after._after;
-              return _after.update(_after, arg1);
+              return _after.update(closure_0, closure_1);
             }, true);
           }
         }
@@ -833,25 +838,26 @@ const tmp6 = () => {
     key: "replace",
     value(arg0, arg1) {
       const self = this;
-      const ChannelMessages = arg0;
-      const tmp = this._map[arg0];
-      if (null == tmp) {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let closure_2 = tmp;
+      if (null == this._map[arg0]) {
         const _before = self._before;
         if (_before.has(arg0)) {
-          let mutation = self.mutate((_before) => _before._before.replace(_before, arg1), true);
+          let mutation = self.mutate((_before) => _before._before.replace(closure_0, closure_1), true);
         } else {
           const _after = self._after;
           mutation = self;
           if (_after.has(arg0)) {
-            mutation = self.mutate((_after) => _after._after.replace(_after, arg1), true);
+            mutation = self.mutate((_after) => _after._after.replace(closure_0, closure_1), true);
           }
         }
       } else {
         return self.mutate((_map) => {
-          delete r2[r1];
-          _map._map[arg1.id] = arg1;
+          delete tmp2[tmp];
+          _map._map[id.id] = id;
           const _array = _map._array;
-          _map._array[_array.indexOf(tmp)] = arg1;
+          _map._array[_array.indexOf(closure_2)] = id;
         }, true);
       }
     }
@@ -859,36 +865,37 @@ const tmp6 = () => {
   items[26] = {
     key: "remove",
     value(arg0) {
-      const ChannelMessages = arg0;
+      let closure_0 = arg0;
       return this.mutate((_array) => {
-        delete r1[r2];
+        delete tmp[tmp2];
         _array = _array._array;
-        _array._array = _array.filter((id) => id.id !== closure_0);
+        _array._array = _array.filter((id) => id.id !== outer1_0);
         const _before = _array._before;
-        _before.remove(_array);
+        _before.remove(closure_0);
         const _after = _array._after;
-        _after.remove(_array);
+        _after.remove(closure_0);
       }, true);
     }
   };
   items[27] = {
     key: "removeMany",
     value(arr) {
-      const self = this;
-      const ChannelMessages = this;
+      let self = this;
+      self = this;
+      let closure_1 = arr;
       let self2 = this;
       if (arr.some((arg0) => self.has(arg0))) {
         self2 = self.mutate((_array) => {
-          const self = _array;
-          _array(closure_3[6]).each(_array, (arg0) => {
-            delete r1[r0];
+          let closure_0 = _array;
+          outer2_1(outer2_3[6]).each(closure_1, (arg0) => {
+            delete tmp2[tmp];
           });
           _array = _array._array;
-          _array._array = _array.filter((id) => -1 === closure_1.indexOf(id.id));
+          _array._array = _array.filter((id) => -1 === outer1_1.indexOf(id.id));
           const _before = _array._before;
-          _before.removeMany(_array);
+          _before.removeMany(closure_1);
           const _after = _array._after;
-          _after.removeMany(_array);
+          _after.removeMany(closure_1);
         }, true);
       }
       return self2;
@@ -900,7 +907,7 @@ const tmp6 = () => {
       let flag = arg1;
       let flag2 = arg2;
       const self = this;
-      const ChannelMessages = arg0;
+      let closure_0 = arg0;
       if (arg1 === undefined) {
         flag = false;
       }
@@ -908,7 +915,7 @@ const tmp6 = () => {
         flag2 = false;
       }
       return self.mutate((_merge) => {
-        _merge._merge(_merge, flag, flag2);
+        _merge._merge(closure_0, flag, flag2);
       }, true);
     }
   };
@@ -917,8 +924,8 @@ const tmp6 = () => {
     value(arr) {
       let flag = arg1;
       let flag2 = arg2;
-      const self = this;
-      const ChannelMessages = this;
+      let self = this;
+      self = this;
       if (arg1 === undefined) {
         flag = false;
       }
@@ -963,7 +970,6 @@ const tmp6 = () => {
       if (arg0 === undefined) {
         items = [];
       }
-      const ChannelMessages = items;
       if (items1 === undefined) {
         items1 = [];
       }
@@ -975,14 +981,14 @@ const tmp6 = () => {
         _before.clear();
         const _after = _before._after;
         _after.clear();
-        const items = new Set(items2);
-        const item = items.forEach((id) => set.add(id.id));
+        const set = new Set(items2);
+        const item = set.forEach((id) => set.add(id.id));
         const item1 = items1.forEach((id) => set.add(id.id));
         const _array = _before._array;
         const found = _array.filter((id) => !set.has(id.id));
-        const mapped = items.map((message) => set(closure_3[5]).createMessageRecord(message));
-        const combined = found.concat(mapped, items1.map((message) => set(closure_3[5]).createMessageRecord(message)));
-        _before._array = combined.sort((id, id2) => callback(closure_3[8]).compare(id.id, id2.id));
+        const mapped = set.map((message) => ChannelMessages(outer3_3[5]).createMessageRecord(message));
+        const combined = found.concat(mapped, items1.map((message) => ChannelMessages(outer3_3[5]).createMessageRecord(message)));
+        _before._array = combined.sort((id, id2) => outer3_1(outer3_3[8]).compare(id.id, id2.id));
       });
     }
   };
@@ -996,12 +1002,13 @@ const tmp6 = () => {
   items[32] = {
     key: "reset",
     value(arg0) {
-      const ChannelMessages = arg0;
+      let closure_0 = arg0;
       return this.mutate((_before) => {
-        _before._array = _before;
+        let closure_0 = _before;
+        _before._array = closure_0;
         _before._map = {};
-        const item = _before.forEach((id) => {
-          id._map[id.id] = id;
+        const item = closure_0.forEach((id) => {
+          _map._map[id.id] = id;
           return id;
         });
         _before = _before._before;
@@ -1019,28 +1026,28 @@ const tmp6 = () => {
       if (arg1 === undefined) {
         flag = true;
       }
-      let ChannelMessages;
+      let c0;
       const diff = self._array.length - arg0;
-      ChannelMessages = diff;
+      c0 = diff;
       let mutation = self;
       if (diff > 0) {
         mutation = self.mutate((_map) => {
           let _array;
           let _before;
           let num = 0;
-          if (0 < diff) {
+          if (0 < c0) {
             do {
               _map = _map._map;
               let id = _map._array[num].id;
-              delete r4[r2];
+              delete tmp2[tmp];
               num = num + 1;
-              let tmp = closure_0;
-            } while (num < closure_0);
+              let tmp3 = c0;
+            } while (num < c0);
           }
           ({ _before, _array } = _map);
-          _before.cache(_array.slice(0, diff), !_map.hasMoreBefore);
+          _before.cache(_array.slice(0, c0), !_map.hasMoreBefore);
           _array = _map._array;
-          _map._array = _array.slice(diff);
+          _map._array = _array.slice(c0);
           _map.hasMoreBefore = true;
         }, flag);
       }
@@ -1056,12 +1063,12 @@ const tmp6 = () => {
   items[35] = {
     key: "jumpToPresent",
     value(arg0) {
-      const ChannelMessages = arg0;
+      let closure_0 = arg0;
       return this.mutate((_after) => {
         _after = _after._after;
         const extractAllResult = _after.extractAll();
         _after.hasMoreAfter = false;
-        const bound = Math.max(extractAllResult.length - _after, 0);
+        const bound = Math.max(extractAllResult.length - closure_0, 0);
         const substr = extractAllResult.slice(bound);
         extractAllResult.splice(bound);
         const _before = _after._before;
@@ -1087,10 +1094,14 @@ const tmp6 = () => {
   items[36] = {
     key: "jumpToMessage",
     value(arg0) {
+      let ChannelMessages;
+      let closure_2;
+      let apply;
+      let GuildThemeSourcePreference;
       let flash;
       let returnTargetId;
       const self = this;
-      ({ messageId: closure_0, flash } = arg0);
+      ({ messageId: ChannelMessages, flash } = arg0);
       if (flash === undefined) {
         flash = true;
       }
@@ -1098,19 +1109,19 @@ const tmp6 = () => {
       if (returnTargetId === undefined) {
         returnTargetId = null;
       }
-      ({ jumpType: closure_4, onJumpComplete: closure_5 } = arg0);
+      ({ jumpType: apply, onJumpComplete: GuildThemeSourcePreference } = arg0);
       return self.mutate((jumpSequenceId) => {
         jumpSequenceId.jumped = true;
         jumpSequenceId.jumpedToPresent = false;
-        if (null != closure_4) {
-          let ANIMATED = closure_4;
+        if (null != apply) {
+          let ANIMATED = apply;
         } else {
-          ANIMATED = callback(returnTargetId[7]).JumpType.ANIMATED;
+          ANIMATED = ChannelMessages(outer2_3[7]).JumpType.ANIMATED;
         }
         jumpSequenceId.jumpType = ANIMATED;
-        jumpSequenceId.jumpTargetId = callback;
+        jumpSequenceId.jumpTargetId = closure_0;
         let num2 = 0;
-        if (null != callback) {
+        if (null != closure_0) {
           num2 = 0;
           if (null != closure_2) {
             num2 = closure_2;
@@ -1119,8 +1130,8 @@ const tmp6 = () => {
         jumpSequenceId.jumpTargetOffset = num2;
         jumpSequenceId.jumpSequenceId = jumpSequenceId.jumpSequenceId + 1;
         let tmp4 = null;
-        if (null != closure_5) {
-          tmp4 = closure_5;
+        if (null != GuildThemeSourcePreference) {
+          tmp4 = GuildThemeSourcePreference;
         }
         jumpSequenceId.onJumpComplete = tmp4;
         jumpSequenceId.jumpFlash = flash;
@@ -1133,9 +1144,9 @@ const tmp6 = () => {
   items[37] = {
     key: "focusOnMessage",
     value(arg0) {
-      const ChannelMessages = arg0;
+      let closure_0 = arg0;
       return this.mutate((focusSequenceId) => {
-        focusSequenceId.focusTargetId = focusSequenceId;
+        focusSequenceId.focusTargetId = closure_0;
         focusSequenceId.focusSequenceId = focusSequenceId.focusSequenceId + 1;
         focusSequenceId.ready = true;
         focusSequenceId.loadingMore = false;
@@ -1145,11 +1156,12 @@ const tmp6 = () => {
   items[38] = {
     key: "loadFromCache",
     value(arg0, arg1) {
-      const ChannelMessages = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       return this.mutate((_before) => {
-        const arr = _before ? _before._before : _before._after;
-        _before._merge(arr.extract(arg1), _before);
-        if (_before) {
+        const arr = closure_0 ? _before._before : _before._after;
+        _before._merge(arr.extract(closure_1), closure_0);
+        if (closure_0) {
           _before.hasMoreBefore = tmp2;
         } else {
           _before.hasMoreAfter = tmp2;
@@ -1163,14 +1175,14 @@ const tmp6 = () => {
     key: "truncate",
     value(arg0, arg1) {
       const self = this;
-      if (this.length <= closure_7) {
+      if (this.length <= outer1_7) {
         return self;
       } else if (arg0) {
-        let truncateBottomResult = self.truncateBottom(closure_9);
+        let truncateBottomResult = self.truncateBottom(outer1_9);
       } else {
         truncateBottomResult = self;
         if (arg1) {
-          truncateBottomResult = self.truncateTop(closure_9);
+          truncateBottomResult = self.truncateTop(outer1_9);
         }
       }
     }
@@ -1183,7 +1195,7 @@ const tmp6 = () => {
       if (arg1 === undefined) {
         flag = true;
       }
-      let ChannelMessages;
+      let messageRecord1;
       let value = null;
       if (null != nonce.nonce) {
         value = self.get(nonce.nonce, true);
@@ -1202,7 +1214,7 @@ const tmp6 = () => {
         if (id === id1) {
           if (null != nonce.nonce) {
             if (value.id === nonce.nonce) {
-              const messageRecord = ChannelMessages(closure_3[5]).createMessageRecord(nonce);
+              const messageRecord = ChannelMessages(outer1_3[5]).createMessageRecord(nonce);
               if (null != value.interactionData) {
                 messageRecord.interactionData = value.interactionData;
               }
@@ -1217,9 +1229,8 @@ const tmp6 = () => {
         }
         return self;
       } else {
-        let obj = ChannelMessages(closure_3[5]);
-        const messageRecord1 = obj.createMessageRecord(nonce);
-        ChannelMessages = messageRecord1;
+        let obj = ChannelMessages(outer1_3[5]);
+        messageRecord1 = obj.createMessageRecord(nonce);
         const lastResult = self.last();
         if (null != lastResult) {
           if (obj2.compare(nonce.id, lastResult.id) < 0) {
@@ -1229,26 +1240,26 @@ const tmp6 = () => {
                 let _array;
                 let _array2;
                 _map._map[messageRecord1.id] = messageRecord1;
-                if (null != _map._map[closure_0.id]) {
+                if (null != _map._map[messageRecord1.id]) {
                   ({ _array: _array2, _array } = _map);
                   _array[_array2.indexOf(tmp)] = messageRecord1;
                 } else {
-                  callback(closure_3[10]).insert(_map._array, messageRecord1, (id, id2) => callback(closure_3[8]).compare(id.id, id2.id));
-                  const obj = callback(closure_3[10]);
+                  outer2_2(outer2_3[10]).insert(_map._array, messageRecord1, (id, id2) => outer3_1(outer3_3[8]).compare(id.id, id2.id));
+                  const obj = outer2_2(outer2_3[10]);
                 }
               }, true);
             }
             if (flag) {
-              let truncateTopResult = mutation.truncateTop(closure_6, false);
+              let truncateTopResult = mutation.truncateTop(outer1_6, false);
             } else {
               truncateTopResult = mutation;
-              if (self.length > closure_7) {
-                truncateTopResult = mutation.truncateBottom(closure_6, false);
+              if (self.length > outer1_7) {
+                truncateTopResult = mutation.truncateBottom(outer1_6, false);
               }
             }
             return truncateTopResult;
           }
-          const obj2 = callback(closure_3[8]);
+          obj2 = outer1_1(outer1_3[8]);
         }
         const items = [messageRecord1];
         mutation = self.merge(items);
@@ -1268,14 +1279,14 @@ const tmp6 = () => {
       } else if (null != self.get(nonce.id, true)) {
         return self;
       } else {
-        let obj = ChannelMessages(closure_3[11]);
+        let obj = ChannelMessages(outer1_3[11]);
         let tmp4 = !obj.isIOSPushNotificationRawPayloadFixExperimentEnabled();
         if (!tmp4) {
           tmp4 = !arg1;
         }
         obj = { ready: true, cached: tmp4 };
         const mutation = self.mutate(obj);
-        const items = [callback3(self, nonce)];
+        const items = [outer1_13(self, nonce)];
         return mutation.merge(items);
       }
     }
@@ -1290,8 +1301,8 @@ const tmp6 = () => {
       }
       let mergeResult = self;
       if (null == value) {
-        const mutation = self.mutate({ display: null, flexDirection: null });
-        const items = [callback3(self, nonce)];
+        const mutation = self.mutate({ ready: true, cached: true });
+        const items = [outer1_13(self, nonce)];
         mergeResult = mutation.merge(items);
       }
       return mergeResult;
@@ -1363,21 +1374,21 @@ const tmp6 = () => {
       const hasMoreAfter = newMessages.hasMoreAfter;
       const avoidInitialScroll = newMessages.avoidInitialScroll;
       const cached = newMessages.cached;
-      let obj = callback(closure_3[6])(items);
+      let obj = outer1_1(outer1_3[6])(items);
       const reversed = obj.reverse();
-      const valueResult = reversed.map((message) => callback(closure_3[5]).createMessageRecord(message)).value();
+      const valueResult = reversed.map((message) => ChannelMessages(outer2_3[5]).createMessageRecord(message)).value();
       if (null != isBefore && isBefore) {
         if (null == tmp3) {
           if (self.ready) {
             let mergeResult = self.merge(valueResult, tmp, true);
           }
-          obj = { 0: "<string:1040334421>", 9223372036854775807: "<string:1040334338>" };
+          obj = { ready: true, loadingMore: false };
           let jumpType;
           if (null != tmp3) {
             jumpType = tmp3.jumpType;
           }
           if (null == jumpType) {
-            jumpType = ChannelMessages(closure_3[7]).JumpType.ANIMATED;
+            jumpType = ChannelMessages(outer1_3[7]).JumpType.ANIMATED;
           }
           obj.jumpType = jumpType;
           let flash;
@@ -1473,9 +1484,9 @@ const tmp6 = () => {
         }
       }
       const _array = self._array;
-      const found = _array.filter((state) => state.state === constants.SENDING);
+      const found = _array.filter((state) => state.state === outer2_10.SENDING);
       const _array1 = self._array;
-      const found1 = _array1.filter((state) => state.state === constants.SEND_FAILED);
+      const found1 = _array1.filter((state) => state.state === outer2_10.SEND_FAILED);
       const resetResult = self.reset(valueResult);
       if (tmp9) {
         if (!tmp) {
@@ -1493,13 +1504,13 @@ const tmp6 = () => {
                 let mergeResult1 = resetResult;
                 if (found1.length > 0) {
                   const _HermesInternal = HermesInternal;
-                  closure_11.info("loadComplete: merging with SEND_FAILED messages for channelId=" + self.channelId);
+                  outer1_11.info("loadComplete: merging with SEND_FAILED messages for channelId=" + self.channelId);
                   mergeResult1 = resetResult.merge(found1);
                 }
                 mergeResult = mergeResult1;
                 if (found.length > 0) {
                   const _HermesInternal2 = HermesInternal;
-                  closure_11.info("loadComplete: merging with SENDING messages for channelId=" + self.channelId);
+                  outer1_11.info("loadComplete: merging with SENDING messages for channelId=" + self.channelId);
                   mergeResult = mergeResult1.merge(found);
                 }
               }
@@ -1507,26 +1518,26 @@ const tmp6 = () => {
           }
         }
       }
-      closure_11.info("loadComplete: resetting state for channelId=" + self.channelId + ", sending.length=" + found.length);
+      outer1_11.info("loadComplete: resetting state for channelId=" + self.channelId + ", sending.length=" + found.length);
       mergeResult = resetResult;
     }
   };
   items[45] = {
     key: "addCachedMessages",
     value(arr, cached) {
-      const self = this;
-      const ChannelMessages = this;
-      let obj = ChannelMessages(closure_3[12]);
+      let self = this;
+      self = this;
+      let obj = ChannelMessages(outer1_3[12]);
       const result = obj.requireSortedDescending(arr);
-      const mapped = arr.map((arg0) => callback2(self, arg0));
+      const mapped = arr.map((arg0) => outer2_13(self, arg0));
       const reversed = mapped.reverse();
       const _array = this._array;
       const found = _array.filter((arg0) => {
-        const self = arg0;
+        let closure_0 = arg0;
         return !reversed.some((id) => id.id === id.id);
       });
-      const item = found.forEach((arg0) => callback(closure_3[10]).insert(reversed, arg0, (id, id2) => callback(closure_3[8]).compare(id.id, id2.id)));
-      obj = { cached };
+      const item = found.forEach((arg0) => outer2_2(outer2_3[10]).insert(reversed, arg0, (id, id2) => outer3_1(outer3_3[8]).compare(id.id, id2.id)));
+      obj = { ready: true, cached, error: false };
       const initialScrollSequenceId = self.initialScrollSequenceId;
       if (tmp4) {
         let sum = initialScrollSequenceId + 1;
@@ -1537,11 +1548,11 @@ const tmp6 = () => {
       return self.reset(reversed).mutate(obj);
     }
   };
-  const items1 = [
+  let items1 = [
     {
       key: "forEach",
       value(arg0) {
-        const item = callback(closure_3[6]).forEach(ChannelMessages._channelMessages, arg0);
+        const item = outer1_1(outer1_3[6]).forEach(ChannelMessages._channelMessages, arg0);
       }
     },
     {
@@ -1573,7 +1584,7 @@ const tmp6 = () => {
     {
       key: "clear",
       value(arg0) {
-        delete r1[r0];
+        delete tmp2[tmp];
       }
     },
     {
@@ -1597,10 +1608,9 @@ const tmp6 = () => {
     }
   ];
   return callback(ChannelMessages, items, items1);
-}();
+})();
 tmp6._channelMessages = {};
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("lib/ChannelMessages.tsx");
+let result = require("_defineProperties").fileFinishedImporting("lib/ChannelMessages.tsx");
 
 export default tmp6;
 export const flatMapChannelMessages = function flatMapChannelMessages(arr) {

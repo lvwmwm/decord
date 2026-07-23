@@ -1,44 +1,45 @@
-// Module ID: 13569
-// Function ID: 102890
+// Module ID: 13683
+// Function ID: 105046
 // Name: pressable
-// Dependencies: [0]
+// Dependencies: [1849, 7662, 13648, 13684, 4470, 1212, 10095, 2]
 
-// Module 13569 (pressable)
-import __exportStarResult1 from "__exportStarResult1";
+// Module 13683 (pressable)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
 
-let obj = arg1(dependencyMap[6]);
-obj = {
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.cDgKte);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.cDgKte);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.ACCOUNT,
+  parent: require("MobileSetting").MobileSetting.ACCOUNT,
   onPress: function onAccountEnable2FASettingPress() {
-    const currentUser = currentUser.getCurrentUser();
+    currentUser = currentUser.getCurrentUser();
     let verified;
     if (null != currentUser) {
       verified = currentUser.verified;
     }
     if (null != verified) {
       if (verified) {
-        importDefault(dependencyMap[3]).open();
-        const obj3 = importDefault(dependencyMap[3]);
+        importDefault(13684).open();
+        const obj3 = importDefault(13684);
       }
     }
-    let obj = importDefault(dependencyMap[4]);
+    let obj = importDefault(4470);
     obj = {};
-    const intl = arg1(dependencyMap[5]).intl;
-    obj.title = intl.string(arg1(dependencyMap[5]).t.v740sh);
-    const intl2 = arg1(dependencyMap[5]).intl;
-    obj.body = intl2.string(arg1(dependencyMap[5]).t.uggF7o);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    obj.title = intl.string(require(1212) /* getSystemLocale */.t.v740sh);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj.body = intl2.string(require(1212) /* getSystemLocale */.t.uggF7o);
     obj.show(obj);
   },
   withArrow: true,
   usePredicate: function useHasAccountEnable2FASetting() {
-    return !arg1(dependencyMap[2]).useIsTOTPEnabled();
+    return !require(13648) /* useIs2FAEnabled */.useIsTOTPEnabled();
   }
 };
-const pressable = obj.createPressable(obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/defs/native/AccountEnable2faSetting.tsx");
+createToggle = createToggle.createPressable(createToggle);
+const result = require("useIs2FAEnabled").fileFinishedImporting("modules/user_settings/defs/native/AccountEnable2faSetting.tsx");
 
-export default pressable;
+export default createToggle;

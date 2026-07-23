@@ -1,9 +1,20 @@
-// Module ID: 5037
-// Function ID: 43512
+// Module ID: 5040
+// Function ID: 43530
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1352, 1348, 22, 21, 566, 686, 2]
 
-// Module 5037 (_isNativeReflectConstruct)
+// Module 5040 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import apply from "apply";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _callSuper from "_callSuper";
+import closure_9 from "_isNativeReflectConstruct";
+import set from "_possibleConstructorReturn";
+
+let closure_7;
+let closure_8;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -18,11 +29,11 @@ function threadStateFromChannel(channel) {
 }
 function deleteGuildThreads(arg0) {
   if (arg0 in closure_10) {
-    delete r0[r1];
+    delete tmp[tmp2];
   }
 }
 function storeThreads(threads) {
-  const importDefault = threads;
+  let closure_0 = threads;
   let tmp = null != threads.threads;
   if (tmp) {
     tmp = threads.threads.length > 0;
@@ -30,9 +41,9 @@ function storeThreads(threads) {
   if (tmp) {
     closure_10[threads.id] = {};
     threads = threads.threads;
-    const found = threads.filter((type) => set.has(type.type));
+    const found = threads.filter((type) => outer1_7.has(type.type));
     const item = found.forEach((arg0) => {
-      callback(arg0.id, arg0);
+      outer1_17(threads.id, arg0);
     });
   }
   if (threads.hasThreadsSubscription) {
@@ -41,10 +52,10 @@ function storeThreads(threads) {
 }
 function storeThread(arg0, parent_id) {
   parent_id = parent_id.parent_id;
-  if (!(parent_id in closure_10[arg0])) {
+  if (!(parent_id in dependencyMap[arg0])) {
     tmp[parent_id] = {};
   }
-  closure_10[arg0][parent_id][parent_id.id] = threadStateFromChannel(parent_id);
+  dependencyMap[arg0][parent_id][parent_id.id] = threadStateFromChannel(parent_id);
 }
 function handleThreadCreateOrUpdate(channel) {
   channel = channel.channel;
@@ -57,7 +68,7 @@ function handleThreadCreateOrUpdate(channel) {
     if (true === archived) {
       return deleteThread(channel);
     } else {
-      let obj = closure_10[channel.guild_id];
+      let obj = dependencyMap[channel.guild_id];
       if (null == obj) {
         obj = {};
       }
@@ -67,7 +78,7 @@ function handleThreadCreateOrUpdate(channel) {
       const merged1 = Object.assign(obj[channel.parent_id]);
       obj[channel.id] = threadStateFromChannel(channel);
       obj[channel.parent_id] = obj;
-      closure_10[channel.guild_id] = obj;
+      dependencyMap[channel.guild_id] = obj;
     }
   } else {
     return false;
@@ -77,59 +88,53 @@ function deleteThread(channel) {
   let guild_id;
   let parent_id;
   ({ guild_id, parent_id } = channel);
-  let tmp = null != guild_id;
-  if (tmp) {
-    tmp = null != parent_id;
+  let tmp5 = null != guild_id;
+  if (tmp5) {
+    tmp5 = null != parent_id;
   }
-  if (tmp) {
-    let tmp3 = guild_id in closure_10;
-    if (tmp3) {
-      let tmp5 = parent_id in closure_10[guild_id];
-      if (tmp5) {
-        if (channel.id in closure_10[guild_id][parent_id]) {
+  if (tmp5) {
+    let tmp7 = guild_id in dependencyMap;
+    if (tmp7) {
+      let tmp9 = parent_id in dependencyMap[guild_id];
+      if (tmp9) {
+        if (channel.id in dependencyMap[guild_id][parent_id]) {
           let obj = {};
-          const merged = Object.assign(closure_10[guild_id]);
+          const merged = Object.assign(dependencyMap[guild_id]);
           obj = {};
-          const merged1 = Object.assign(closure_10[guild_id][parent_id]);
+          const merged1 = Object.assign(dependencyMap[guild_id][parent_id]);
           obj[parent_id] = obj;
-          closure_10[guild_id] = obj;
-          delete r4[r8];
-          if (obj3.isEmpty(closure_10[guild_id][parent_id])) {
-            delete r5[r6];
+          dependencyMap[guild_id] = obj;
+          delete tmp[tmp4];
+          if (obj3.isEmpty(dependencyMap[guild_id][parent_id])) {
+            delete tmp2[tmp3];
           }
-          const obj3 = importDefault(dependencyMap[7]);
+          obj3 = importDefault(22);
         }
-        tmp5 = tmp7;
+        tmp9 = tmp11;
       }
-      tmp3 = tmp5;
+      tmp7 = tmp9;
     }
-    tmp = tmp3;
+    tmp5 = tmp7;
   }
-  return tmp;
+  return tmp5;
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-({ ALL_CHANNEL_TYPES: closure_7, THREAD_CHANNEL_TYPES: closure_8 } = arg1(dependencyMap[5]));
-let closure_9 = importDefault(dependencyMap[6]);
+({ ALL_CHANNEL_TYPES: closure_7, THREAD_CHANNEL_TYPES: closure_8 } = _callSuper);
 let closure_10 = {};
-const set = new Set();
+let set = new Set();
 let closure_12 = {};
-let tmp4 = (Store) => {
+let tmp4 = ((Store) => {
   class ActiveThreadsStore {
     constructor() {
       self = this;
-      tmp = closure_2(this, ActiveThreadsStore);
-      obj = closure_5(ActiveThreadsStore);
-      tmp2 = closure_4;
-      if (closure_13()) {
+      tmp = outer1_2(this, ActiveThreadsStore);
+      obj = outer1_5(ActiveThreadsStore);
+      tmp2 = outer1_4;
+      if (outer1_13()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_5;
+        tmp7 = outer1_5;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_5(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -138,12 +143,11 @@ let tmp4 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const importDefault = ActiveThreadsStore;
   callback2(ActiveThreadsStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_9);
+      this.waitFor(outer1_9);
     }
   };
   const items = [obj, , , , , , ];
@@ -162,9 +166,9 @@ let tmp4 = (Store) => {
   obj = {
     key: "getThreadsForGuild",
     value(arg0) {
-      let tmp = closure_10[arg0];
+      let tmp = outer1_10[arg0];
       if (null == tmp) {
-        tmp = closure_12;
+        tmp = outer1_12;
       }
       return tmp;
     }
@@ -175,7 +179,7 @@ let tmp4 = (Store) => {
     value(arg0, arg1) {
       let tmp = this.getThreadsForGuild(arg0)[arg1];
       if (null == tmp) {
-        tmp = closure_12;
+        tmp = outer1_12;
       }
       return tmp;
     }
@@ -183,45 +187,46 @@ let tmp4 = (Store) => {
   items[4] = {
     key: "hasThreadsForChannel",
     value(arg0, arg1) {
-      return !ActiveThreadsStore(closure_1[7]).isEmpty(this.getThreadsForParent(arg0, arg1));
+      return !ActiveThreadsStore(outer1_1[7]).isEmpty(this.getThreadsForParent(arg0, arg1));
     }
   };
   items[5] = {
     key: "forEachGuild",
     value(arg0) {
-      const ActiveThreadsStore = arg0;
-      const keys = ActiveThreadsStore(closure_1[8]).keys(closure_10);
+      let closure_0 = arg0;
+      const keys = ActiveThreadsStore(outer1_1[8]).keys(outer1_10);
       const item = keys.forEach((arg0) => {
-        arg0(arg0, closure_10[arg0]);
+        callback(arg0, outer2_10[arg0]);
       });
     }
   };
   items[6] = {
     key: "hasLoaded",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_11.has(arg0);
     }
   };
   return callback(ActiveThreadsStore, items);
-}(importDefault(dependencyMap[9]).Store);
+})(require("initialize").Store);
 tmp4.displayName = "ActiveThreadsStore";
-tmp4 = new tmp4(importDefault(dependencyMap[10]), {
+tmp4 = new tmp4(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     let closure_10 = {};
     set.clear();
     guilds = guilds.guilds;
     const item = guilds.forEach((arg0) => {
-      callback(arg0);
+      outer1_16(arg0);
     });
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(channels) {
     let closure_10 = {};
-    const found = importDefault(dependencyMap[7])(channels.channels).filter((type) => set.has(type.type));
-    const arr = importDefault(dependencyMap[7])(channels.channels);
-    const item = found.groupBy("guild_id").forEach((arr) => {
+    const found = importDefault(22)(channels.channels).filter((type) => outer1_8.has(type.type));
+    const arr = importDefault(22)(channels.channels);
+    let item = found.groupBy("guild_id").forEach((arr) => {
+      let closure_0 = arg1;
       closure_10[arg1] = {};
       const item = arr.forEach((arg0) => {
-        callback(arg1, arg0);
+        outer2_17(closure_0, arg0);
       });
     });
   },
@@ -237,25 +242,25 @@ tmp4 = new tmp4(importDefault(dependencyMap[10]), {
   THREAD_UPDATE: handleThreadCreateOrUpdate,
   THREAD_LIST_SYNC: function handleThreadListSync(guildId) {
     guildId = guildId.guildId;
-    const importDefault = guildId;
     const threads = guildId.threads;
     if (null == guildId.channelIds) {
       set.add(guildId);
     }
     let obj = {};
-    const merged = Object.assign(closure_10[guildId]);
-    closure_10[guildId] = obj;
+    const merged = Object.assign(dependencyMap[guildId]);
+    dependencyMap[guildId] = obj;
     for (const key10016 in closure_10[guildId]) {
       let tmp5 = key10016;
-      let tmp6 = closure_10;
+      let tmp6 = dependencyMap;
       obj = {};
-      let tmp7 = closure_10;
+      let tmp7 = dependencyMap;
       let tmp8 = obj;
-      let merged1 = Object.assign(closure_10[guildId][key10016]);
-      closure_10[guildId][key10016] = obj;
+      let merged1 = Object.assign(dependencyMap[guildId][key10016]);
+      dependencyMap[guildId][key10016] = obj;
+      continue;
     }
     const item = threads.forEach((arg0) => {
-      callback(guildId, arg0);
+      outer1_17(guildId, arg0);
     });
   },
   THREAD_DELETE: function handleThreadDelete(channel) {
@@ -264,88 +269,17 @@ tmp4 = new tmp4(importDefault(dependencyMap[10]), {
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     channel = channel.channel;
     if (null != channel.guild_id) {
-      if (channel.guild_id in closure_10) {
+      if (channel.guild_id in dependencyMap) {
         const obj = {};
-        const merged = Object.assign(closure_10[channel.guild_id]);
-        closure_10[channel.guild_id] = obj;
+        const merged = Object.assign(dependencyMap[channel.guild_id]);
+        dependencyMap[channel.guild_id] = obj;
         const id = channel.id;
-        delete r1[r0];
+        delete tmp2[tmp];
       }
     }
     return false;
   }
 });
-const obj = {
-  CONNECTION_OPEN: function handleConnectionOpen(guilds) {
-    let closure_10 = {};
-    set.clear();
-    guilds = guilds.guilds;
-    const item = guilds.forEach((arg0) => {
-      callback(arg0);
-    });
-  },
-  OVERLAY_INITIALIZE: function handleOverlayInitialize(channels) {
-    let closure_10 = {};
-    const found = importDefault(dependencyMap[7])(channels.channels).filter((type) => set.has(type.type));
-    const arr = importDefault(dependencyMap[7])(channels.channels);
-    const item = found.groupBy("guild_id").forEach((arr) => {
-      closure_10[arg1] = {};
-      const item = arr.forEach((arg0) => {
-        callback(arg1, arg0);
-      });
-    });
-  },
-  GUILD_CREATE: function handleGuildCreate(guild) {
-    guild = guild.guild;
-    deleteGuildThreads(guild.id);
-    storeThreads(guild);
-  },
-  GUILD_DELETE: function handleGuildDelete(guild) {
-    deleteGuildThreads(guild.guild.id);
-  },
-  THREAD_CREATE: handleThreadCreateOrUpdate,
-  THREAD_UPDATE: handleThreadCreateOrUpdate,
-  THREAD_LIST_SYNC: function handleThreadListSync(guildId) {
-    guildId = guildId.guildId;
-    const importDefault = guildId;
-    const threads = guildId.threads;
-    if (null == guildId.channelIds) {
-      set.add(guildId);
-    }
-    let obj = {};
-    const merged = Object.assign(closure_10[guildId]);
-    closure_10[guildId] = obj;
-    for (const key10016 in closure_10[guildId]) {
-      let tmp5 = key10016;
-      let tmp6 = closure_10;
-      obj = {};
-      let tmp7 = closure_10;
-      let tmp8 = obj;
-      let merged1 = Object.assign(closure_10[guildId][key10016]);
-      closure_10[guildId][key10016] = obj;
-    }
-    const item = threads.forEach((arg0) => {
-      callback(guildId, arg0);
-    });
-  },
-  THREAD_DELETE: function handleThreadDelete(channel) {
-    return deleteThread(channel.channel);
-  },
-  CHANNEL_DELETE: function handleChannelDelete(channel) {
-    channel = channel.channel;
-    if (null != channel.guild_id) {
-      if (channel.guild_id in closure_10) {
-        const obj = {};
-        const merged = Object.assign(closure_10[channel.guild_id]);
-        closure_10[channel.guild_id] = obj;
-        const id = channel.id;
-        delete r1[r0];
-      }
-    }
-    return false;
-  }
-};
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/threads/ActiveThreadsStore.tsx");
+let result = set.fileFinishedImporting("modules/threads/ActiveThreadsStore.tsx");
 
 export default tmp4;

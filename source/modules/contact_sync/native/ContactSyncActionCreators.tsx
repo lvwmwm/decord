@@ -1,45 +1,49 @@
-// Module ID: 11703
-// Function ID: 90885
+// Module ID: 11713
+// Function ID: 90934
 // Name: _updateDiscoverability
-// Dependencies: []
+// Dependencies: [5, 4812, 653, 3803, 1360, 675, 11709, 4938, 2]
 
-// Module 11703 (_updateDiscoverability)
+// Module 11713 (_updateDiscoverability)
+import expandLocation from "expandLocation";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function _updateDiscoverability() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _updateDiscoverability = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ AnalyticEvents: closure_5, FriendDiscoveryFlags: closure_6, PlatformTypes: closure_7 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const tmp3 = () => {
+({ AnalyticEvents: closure_5, FriendDiscoveryFlags: closure_6, PlatformTypes: closure_7 } = ME);
+const tmp3 = (() => {
   // CreateGeneratorClosureLongIndex (0x67)
   let closure_0 = callback(tmp);
   return function() {
     return callback(...arguments);
   };
-}();
-const obj = {
-  updateName: () => {
+})();
+let obj = {
+  updateName: (() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = callback(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(),
+  })(),
   updateDiscoverability(arg0) {
     return _updateDiscoverability(...arguments);
   },
-  updateContactSyncEnabled: () => {
+  updateContactSyncEnabled: (() => {
     // CreateGeneratorClosureLongIndex (0x67)
     let closure_0 = callback(tmp);
     return function() {
       return callback(...arguments);
     };
-  }()
+  })()
 };
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/contact_sync/native/ContactSyncActionCreators.tsx");
+const result = require("ME").fileFinishedImporting("modules/contact_sync/native/ContactSyncActionCreators.tsx");
 
 export default obj;

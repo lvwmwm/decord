@@ -1,43 +1,49 @@
-// Module ID: 10345
-// Function ID: 79857
-// Dependencies: []
+// Module ID: 10355
+// Function ID: 79907
+// Dependencies: [31, 27, 10237, 653, 33, 4130, 689, 10356, 4337, 10235, 5796, 10310, 4126, 2]
 
-// Module 10345
-const importAllResult = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = arg1(dependencyMap[2]).NOTIFICATION_PREVIEW_LINE_CLAMP;
-({ InAppNotificationTypes: closure_6, UserSettingsSections: closure_7 } = arg1(dependencyMap[3]));
-const jsx = arg1(dependencyMap[4]).jsx;
-const tmp2 = arg1(dependencyMap[3]);
+// Module 10355
+import importAllResult from "result";
+import { View } from "get ActivityIndicator";
+import { NOTIFICATION_PREVIEW_LINE_CLAMP as closure_5 } from "set";
+import ME from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ InAppNotificationTypes: closure_6, UserSettingsSections: closure_7 } = ME);
 let obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[6]).colors.BACKGROUND_BRAND, borderRadius: importDefault(dependencyMap[6]).radii.round };
+obj = { width: 48, height: 48, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center" };
 obj.iconContainer = obj;
-let closure_9 = arg1(dependencyMap[5]).createStyles(obj);
-const obj2 = arg1(dependencyMap[5]);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function RestrictedHoursWarningNotification(notification) {
   notification = notification.notification;
-  const arg1 = notification;
   const type = notification.type;
-  const importDefault = type;
   let obj = { style: callback().iconContainer };
-  obj = { size: "sm", color: importDefault(dependencyMap[6]).colors.WHITE };
-  obj.children = jsx(arg1(dependencyMap[7]).ThemeDarkIcon, obj);
+  obj = { size: "sm", color: type(689).colors.WHITE };
+  obj.children = jsx(notification(10356).ThemeDarkIcon, { size: "sm", color: type(689).colors.WHITE });
   const items = [notification.title];
   const items1 = [type];
   const memo = importAllResult.useMemo(() => ({ type: "simple", text: notification.title }), items);
-  const callback = importAllResult.useCallback(() => {
-    if (type === constants.RESTRICTED_SCHEDULE_UPDATED) {
-      let obj = type(closure_2[8]);
+  callback = importAllResult.useCallback(() => {
+    if (type === outer1_6.RESTRICTED_SCHEDULE_UPDATED) {
+      let obj = type(outer1_2[8]);
       obj.popAll();
-      type(closure_2[9]).clearNotification();
-      const obj2 = type(closure_2[9]);
+      type(outer1_2[9]).clearNotification();
+      const obj2 = type(outer1_2[9]);
     }
-    obj = { screen: constants2.FAMILY_CENTER };
-    notification(closure_2[10]).openUserSettings(obj);
+    obj = { screen: outer1_7.FAMILY_CENTER };
+    notification(outer1_2[10]).openUserSettings(obj);
   }, items1);
-  obj = { icon: <View {...obj} />, header: memo, children: jsx(arg1(dependencyMap[12]).Text, { lineClamp: closure_5, children: notification.subtitle }), onPress: callback, notification };
-  return jsx(arg1(dependencyMap[11]).NotificationPressable, obj);
+  obj = { icon: <View size="sm" color={type(689).colors.WHITE} />, header: memo };
+  const obj1 = { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle };
+  obj.children = jsx(notification(4126).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle });
+  obj.onPress = callback;
+  obj.notification = notification;
+  return jsx(notification(10310).NotificationPressable, { icon: <View size="sm" color={type(689).colors.WHITE} />, header: memo });
 });
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/in_app_notifications/native/RestrictedHoursWarningNotification.tsx");
+const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/RestrictedHoursWarningNotification.tsx");
 
 export default memoResult;

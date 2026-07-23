@@ -1,58 +1,54 @@
-// Module ID: 15746
-// Function ID: 120438
+// Module ID: 15863
+// Function ID: 122611
 // Name: ConnectButton
-// Dependencies: []
+// Dependencies: [31, 1348, 33, 4130, 689, 10014, 15808, 566, 4345, 5723, 4944, 4472, 15864, 15867, 15868, 12354, 15862, 1212, 4126, 2]
 // Exports: default
 
-// Module 15746 (ConnectButton)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[4]).unsafe_rawColors.GREEN_360, paddingLeft: importDefault(dependencyMap[4]).space.PX_8, paddingRight: importDefault(dependencyMap[4]).space.PX_8 };
-obj.connectButton = obj;
-obj.connectText = { textAlign: "center" };
-let closure_6 = obj.createStyles(obj);
-const result = arg1(dependencyMap[19]).fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelConnectButton.tsx");
+// Module 15863 (ConnectButton)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let require = arg1;
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360, paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_8, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose.connectButton = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.connectText = { textAlign: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelConnectButton.tsx");
 
 export default function ConnectButton(props) {
-  let jsx;
-  let callback;
-  const tmp = callback();
-  const arg1 = tmp;
-  const context = React.useContext(importDefault(dependencyMap[5]));
-  const channelId = context.channelId;
-  const importDefault = channelId;
-  const guildId = context.guildId;
-  const dependencyMap = guildId;
-  const tmp3 = importDefault(dependencyMap[6])(channelId);
-  const canConnect = tmp3.canConnect;
-  const React = canConnect;
+  let isChannelContentGated;
+  let isChannelSpoilerGated;
+  const tmp = isChannelSpoilerGated();
+  const require = tmp;
+  const context = canConnect.useContext(channelId(guildId[5]));
+  channelId = context.channelId;
+  guildId = context.guildId;
+  const tmp3 = channelId(guildId[6])(channelId);
+  canConnect = tmp3.canConnect;
   const isAtMaxCapacity = tmp3.isAtMaxCapacity;
-  let closure_4 = isAtMaxCapacity;
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_4];
+  let obj = require(guildId[7]);
+  const items = [isAtMaxCapacity];
   const stateFromStores = obj.useStateFromStores(items, () => isAtMaxCapacity.getChannel(channelId));
-  let isChannelContentGated = arg1(dependencyMap[8]).useIsChannelContentGated(stateFromStores);
+  isChannelContentGated = require(guildId[8]).useIsChannelContentGated(stateFromStores);
   if (isChannelContentGated) {
     isChannelContentGated = null != guildId;
   }
   if (isChannelContentGated) {
     isChannelContentGated = null != channelId;
   }
-  jsx = isChannelContentGated;
-  const obj2 = arg1(dependencyMap[8]);
-  let isChannelSpoilerGated = arg1(dependencyMap[9]).useIsChannelSpoilerGated(stateFromStores);
+  const obj2 = require(guildId[8]);
+  isChannelSpoilerGated = require(guildId[9]).useIsChannelSpoilerGated(stateFromStores);
   if (isChannelSpoilerGated) {
     isChannelSpoilerGated = null != guildId;
   }
   if (isChannelSpoilerGated) {
     isChannelSpoilerGated = null != channelId;
   }
-  callback = isChannelSpoilerGated;
   const items1 = [canConnect, isAtMaxCapacity, channelId, isChannelContentGated, isChannelSpoilerGated, guildId];
-  callback = React.useCallback(() => {
+  const callback = canConnect.useCallback(() => {
     if (canConnect) {
       if (!isAtMaxCapacity) {
         if (!isChannelContentGated) {
@@ -83,16 +79,16 @@ export default function ConnectButton(props) {
     }
   }, items1);
   obj = { onPress: callback, props: props.props };
-  const obj3 = arg1(dependencyMap[9]);
-  const intl = arg1(dependencyMap[17]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[17]).t.96ANUN);
+  let obj3 = require(guildId[9]);
+  let intl = require(guildId[17]).intl;
+  obj.accessibilityLabel = intl.string(require(guildId[17]).t["96ANUN"]);
   obj.style = tmp.connectButton;
   const items2 = [tmp.connectText];
-  obj.children = React.useMemo(() => {
-    const obj = { cachedAt: null, edpbxy: "b979d6fc20f59ff3d9b456c0fcc05d95", style: tmp.connectText };
+  obj.children = canConnect.useMemo(() => {
+    const obj = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.connectText };
     const intl = tmp(guildId[17]).intl;
-    obj.children = intl.string(tmp(guildId[17]).t.96ANUN);
+    obj.children = intl.string(tmp(guildId[17]).t["96ANUN"]);
     return isChannelContentGated(tmp(guildId[18]).Text, obj);
   }, items2);
-  return jsx(importDefault(dependencyMap[16]), obj);
+  return isChannelContentGated(channelId(guildId[16]), obj);
 };

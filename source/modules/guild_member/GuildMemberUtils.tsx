@@ -1,10 +1,18 @@
-// Module ID: 10970
-// Function ID: 85343
+// Module ID: 10980
+// Function ID: 85392
 // Name: getGuildMemberAgeInRange
-// Dependencies: []
+// Dependencies: [1917, 1838, 3758, 1849, 3746, 653, 566, 21, 1360, 2]
 // Exports: useCanBanMember, useCanKickMember, useCanManageMessages, useNewMemberBadge
 
-// Module 10970 (getGuildMemberAgeInRange)
+// Module 10980 (getGuildMemberAgeInRange)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import { GuildMemberFlags } from "GuildMemberFlags";
+import { Permissions } from "ME";
+
+const require = arg1;
 function getGuildMemberAgeInRange(guildId, arg1, id) {
   let maxDaysOld;
   let minDaysOld;
@@ -12,13 +20,13 @@ function getGuildMemberAgeInRange(guildId, arg1, id) {
   if (minDaysOld === undefined) {
     minDaysOld = 0;
   }
-  const guild = guild.getGuild(guildId);
+  guild = guild.getGuild(guildId);
   let joinedAt;
   if (null != guild) {
     joinedAt = guild.joinedAt;
   }
   if (null != id) {
-    const member = member.getMember(guildId, id);
+    member = member.getMember(guildId, id);
     let joinedAt1;
     if (null != member) {
       joinedAt1 = member.joinedAt;
@@ -38,20 +46,20 @@ function getGuildMemberAgeInRange(guildId, arg1, id) {
     const diff = timestamp - joinedAt.getTime();
     let tmp13 = null == maxDaysOld;
     if (!tmp13) {
-      tmp13 = diff <= closure_9 * maxDaysOld;
+      tmp13 = diff <= c9 * maxDaysOld;
     }
     if (tmp13) {
-      tmp13 = diff >= closure_9 * minDaysOld;
+      tmp13 = diff >= c9 * minDaysOld;
     }
     return tmp13;
   }
 }
 function useGuildMemberAgeInRange(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const importDefault = arg1;
+  const _require = arg0;
+  let closure_1 = arg1;
   const dependencyMap = arg2;
   const items = [arg1, arg0, arg2];
-  return arg1(dependencyMap[6]).useStateFromStores([], () => callback(arg0, arg1, arg2), items);
+  return _require(566).useStateFromStores([], () => outer1_10(closure_0, closure_1, closure_2), items);
 }
 function canKickMember(user, guild) {
   let tmp3;
@@ -143,24 +151,18 @@ function canManageMessages(isNonUserBot) {
   }
   return canManageUserResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-const GuildMemberFlags = arg1(dependencyMap[4]).GuildMemberFlags;
-const Permissions = arg1(dependencyMap[5]).Permissions;
-let closure_9 = 86400000;
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/guild_member/GuildMemberUtils.tsx");
+let c9 = 86400000;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_member/GuildMemberUtils.tsx");
 
 export { getGuildMemberAgeInRange };
 export { useGuildMemberAgeInRange };
 export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const items = [closure_3];
-  const stateFromStores = arg1(dependencyMap[6]).useStateFromStores(items, () => {
+  const _require = arg0;
+  let closure_1 = arg1;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
     let flags;
-    const member = member.getMember(arg0, arg1);
+    const member = outer1_3.getMember(callback, closure_1);
     if (null != member) {
       flags = member.flags;
     }
@@ -168,59 +170,59 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
     if (null != flags) {
       num = flags;
     }
-    return arg0(closure_2[8]).hasFlag(num, constants.DID_REJOIN);
+    return callback(outer1_2[8]).hasFlag(num, outer1_7.DID_REJOIN);
   });
-  const obj = arg1(dependencyMap[6]);
-  const items1 = [closure_4];
-  const stateFromStores1 = arg1(dependencyMap[6]).useStateFromStores(items1, () => {
-    const guild = guild.getGuild(arg0);
+  let obj = _require(566);
+  const items1 = [_createForOfIteratorHelperLoose];
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => {
+    const guild = outer1_4.getGuild(closure_0);
     let tmp2 = null != guild;
     if (tmp2) {
       const _Date = Date;
-      const obj = arg1(closure_2[7]);
-      tmp2 = Date.now() - arg1(closure_2[7]).extractTimestamp(guild.id) < 604800000;
-      const extractTimestampResult = arg1(closure_2[7]).extractTimestamp(guild.id);
+      const obj = callback2(outer1_2[7]);
+      tmp2 = Date.now() - callback2(outer1_2[7]).extractTimestamp(guild.id) < 604800000;
+      const extractTimestampResult = callback2(outer1_2[7]).extractTimestamp(guild.id);
     }
     return tmp2;
   });
-  const obj2 = arg1(dependencyMap[6]);
+  const obj2 = _require(566);
   const items2 = [closure_6];
-  const stateFromStores2 = arg1(dependencyMap[6]).useStateFromStores(items2, () => {
-    const user = user.getUser(arg1);
+  const stateFromStores2 = _require(566).useStateFromStores(items2, () => {
+    const user = outer1_6.getUser(closure_1);
     let bot;
     if (null != user) {
       bot = user.bot;
     }
     return bot;
   });
-  const obj3 = arg1(dependencyMap[6]);
+  const obj3 = _require(566);
   return useGuildMemberAgeInRange(arg0, { maxDaysOld: 7 }, arg1) && !stateFromStores1 && !stateFromStores2 && !stateFromStores;
 };
 export const useCanKickMember = function useCanKickMember(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const items = [closure_5];
-  return arg1(dependencyMap[6]).useStateFromStores(items, () => {
-    const items = [closure_5];
-    return callback(arg0, arg1, items);
+  const _require = arg0;
+  let closure_1 = arg1;
+  let items = [closure_5];
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_5];
+    return outer1_12(closure_0, closure_1, items);
   });
 };
 export { canKickMember };
 export { hasKickMemberPerms };
 export const useCanBanMember = function useCanBanMember(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  return arg1(dependencyMap[6]).useStateFromStores([], () => callback(arg0, arg1));
+  const _require = arg0;
+  let closure_1 = arg1;
+  return _require(566).useStateFromStores([], () => outer1_14(closure_0, closure_1));
 };
 export { canBanMember };
 export { hasBanMemberPerms };
 export const useCanManageMessages = function useCanManageMessages(arg0, arg1) {
-  arg1 = arg0;
-  const importDefault = arg1;
-  const items = [closure_5];
-  return arg1(dependencyMap[6]).useStateFromStores(items, () => {
-    const items = [closure_5];
-    return callback(arg0, arg1, items);
+  const _require = arg0;
+  let closure_1 = arg1;
+  let items = [closure_5];
+  return _require(566).useStateFromStores(items, () => {
+    const items = [outer1_5];
+    return outer1_16(closure_0, closure_1, items);
   });
 };
 export { canManageMessages };

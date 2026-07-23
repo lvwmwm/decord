@@ -1,61 +1,68 @@
-// Module ID: 12542
-// Function ID: 96342
+// Module ID: 12656
+// Function ID: 98498
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 12542 (_isNativeReflectConstruct)
+// Module 12656 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import closure_1 from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let closure_0 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let dispatcher = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +73,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      closure_0 = tmp;
+      dispatcher = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -95,28 +102,23 @@ function _arrayLikeToArray(arg0, arg1) {
 function reset() {
   let closure_8 = {};
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
-let closure_5 = false;
+let c5 = false;
 let closure_6 = {};
-const set = new Set();
+let set = new Set();
 let closure_8 = {};
-let tmp3 = (Store) => {
+let tmp3 = ((Store) => {
   class ScheduledMessageStore {
     constructor() {
       self = this;
       tmp = ScheduledMessageStore(this, ScheduledMessageStore);
-      obj = closure_3(ScheduledMessageStore);
-      tmp2 = closure_2;
-      if (closure_9()) {
+      obj = outer1_3(ScheduledMessageStore);
+      tmp2 = outer1_2;
+      if (outer1_9()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -125,58 +127,54 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = ScheduledMessageStore;
   callback2(ScheduledMessageStore, Store);
   let obj = {
     key: "getMessagesPendingDeletion",
     value() {
-      return closure_7;
+      return outer1_7;
     }
   };
   const items = [obj, , , ];
   obj = {
     key: "getScheduledMessagesForInbox",
     value() {
-      return closure_6;
+      return outer1_6;
     }
   };
   items[1] = obj;
   obj = {
     key: "getPendingScheduledMessage",
     value(arg0) {
-      return closure_8[arg0];
+      return outer1_8[arg0];
     }
   };
   items[2] = obj;
   items[3] = {
     key: "loading",
     get() {
-      return closure_5;
+      return outer1_5;
     }
   };
   return callback(ScheduledMessageStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "scheduledMessageStore";
-tmp3 = new tmp3(importDefault(dependencyMap[6]), {
+tmp3 = new tmp3(require("dispatcher"), {
   SCHEDULED_MESSAGES_CREATE_SUCCESS: function handleScheduledMessageCreateSuccess(arg0) {
     let channelId;
     let scheduledMessageSend;
     ({ channelId, scheduledMessageSend } = arg0);
     let obj = {};
-    const merged = Object.assign(closure_6);
+    const merged = Object.assign(obj);
     obj[scheduledMessageSend.scheduledMessageId] = scheduledMessageSend;
-    closure_6 = obj;
     obj = {};
-    const merged1 = Object.assign(closure_8);
-    closure_8 = obj;
-    delete r0[r1];
+    const merged1 = Object.assign(obj);
+    delete tmp[tmp2];
   },
   SCHEDULED_MESSAGES_UPDATE_SUCCESS: function handleScheduledMessageUpdateSuccess(scheduledMessageSend) {
     scheduledMessageSend = scheduledMessageSend.scheduledMessageSend;
     const obj = {};
-    const merged = Object.assign(closure_6);
+    const merged = Object.assign(obj);
     obj[scheduledMessageSend.scheduledMessageId] = scheduledMessageSend;
-    closure_6 = obj;
   },
   SCHEDULED_MESSAGES_DELETE_START: function handleScheduledMessageDeleteStart(scheduledMessageId) {
     scheduledMessageId = scheduledMessageId.scheduledMessageId;
@@ -184,7 +182,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[6]), {
       return false;
     } else {
       const _Set = Set;
-      const set = new Set(set);
+      set = new Set(set);
       set.add(scheduledMessageId);
     }
   },
@@ -192,12 +190,11 @@ tmp3 = new tmp3(importDefault(dependencyMap[6]), {
     scheduledMessageId = scheduledMessageId.scheduledMessageId;
     if (set.has(scheduledMessageId)) {
       const _Set = Set;
-      const set = new Set(set);
+      set = new Set(set);
       set.delete(scheduledMessageId);
       const obj = {};
-      const merged = Object.assign(closure_6);
-      closure_6 = obj;
-      delete r0[r1];
+      const merged = Object.assign(obj);
+      delete tmp[tmp2];
     } else {
       return false;
     }
@@ -206,7 +203,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[6]), {
     scheduledMessageId = scheduledMessageId.scheduledMessageId;
     if (set.has(scheduledMessageId)) {
       const _Set = Set;
-      const set = new Set(set);
+      set = new Set(set);
       set.delete(scheduledMessageId);
     } else {
       return false;
@@ -217,7 +214,7 @@ tmp3 = new tmp3(importDefault(dependencyMap[6]), {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      let closure_5 = true;
+      let c5 = true;
     }
   },
   FETCH_SCHEDULED_MESSAGES_SUCCESS: function handleFetchScheduledMessagesSuccess(messages) {
@@ -235,31 +232,30 @@ tmp3 = new tmp3(importDefault(dependencyMap[6]), {
         done = iter2.done;
       } while (!done);
     }
-    let closure_5 = false;
+    let c5 = false;
   },
   FETCH_SCHEDULED_MESSAGES_FAILURE: function handleFetchScheduledMessagesFailure(arg0) {
     if (arg0 == null) {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      let closure_5 = false;
+      let c5 = false;
     }
   },
   CREATE_PENDING_SCHEDULED_MESSAGE: function handleCreatePendingScheduledMessage(channelId) {
     channelId = channelId.channelId;
     const obj = {};
-    const merged = Object.assign(closure_8);
+    const merged = Object.assign(obj);
     obj[channelId] = { channelId, scheduledTimestamp: channelId.scheduledTimestamp };
-    closure_8 = obj;
   },
   DELETE_PENDING_SCHEDULED_MESSAGE: function handleDeletePendingScheduledMessage(arg0) {
-    const merged = Object.assign(closure_8);
-    closure_8 = {};
-    delete r0[r1];
+    const obj = {};
+    const merged = Object.assign(obj);
+    delete tmp[tmp2];
   },
   LOGOUT: reset,
   CONNECTION_OPEN: reset
 });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/scheduled_messages/ScheduledMessageStore.tsx");
+let result = set.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageStore.tsx");
 
 export default tmp3;

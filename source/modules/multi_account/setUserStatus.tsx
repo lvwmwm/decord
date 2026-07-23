@@ -1,21 +1,22 @@
-// Module ID: 10219
-// Function ID: 78966
+// Module ID: 10231
+// Function ID: 79038
 // Name: _setUserStatus
-// Dependencies: []
+// Dependencies: [5, 5074, 4810, 653, 3969, 1212, 10232, 1331, 1313, 3945, 675, 2]
 // Exports: default
 
-// Module 10219 (_setUserStatus)
+// Module 10231 (_setUserStatus)
+import getSystemLocale from "getSystemLocale";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { AnalyticEvents } from "ME";
+
+const require = arg1;
 function _setUserStatus() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _setUserStatus = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const AnalyticEvents = arg1(dependencyMap[3]).AnalyticEvents;
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/multi_account/setUserStatus.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/multi_account/setUserStatus.tsx");
 
 export default function setUserStatus() {
   return _setUserStatus(...arguments);

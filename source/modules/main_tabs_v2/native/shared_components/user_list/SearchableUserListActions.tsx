@@ -1,10 +1,17 @@
-// Module ID: 8816
-// Function ID: 69531
+// Module ID: 8823
+// Function ID: 69572
 // Name: UserFlashListActions
-// Dependencies: []
+// Dependencies: [31, 27, 33, 8824, 5503, 5165, 2]
 // Exports: useUserListActionsProps
 
-// Module 8816 (UserFlashListActions)
+// Module 8823 (UserFlashListActions)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 class UserFlashListActions {
   constructor(arg0) {
     actions = global.actions;
@@ -26,31 +33,26 @@ class UserFlashListActions {
         let onPress;
         let subLabel;
         ({ label, subLabel, icon, IconComponent, iconVariant, onPress } = arg0);
-        const obj = { label, subLabel, icon: callback2(callback(closure_2[5]).TableRow.Icon, { source: icon, IconComponent, variant: iconVariant }), onPress, arrow: true };
-        return callback2(callback(closure_2[5]).TableRow, obj, arg1);
+        const obj = { label, subLabel, icon: outer1_6(outer1_0(outer1_2[5]).TableRow.Icon, { source: icon, IconComponent, variant: iconVariant }), onPress, arrow: true };
+        return outer1_6(outer1_0(outer1_2[5]).TableRow, obj, arg1);
       });
     }
     obj.children = mapped;
-    obj.children = tmp3(arg1(dependencyMap[4]).TableRowGroup, obj);
+    obj.children = tmp3(require("TableRowGroupTitle").TableRowGroup, obj);
     return tmp(tmp2, obj);
   }
 }
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, StyleSheet: closure_5 } = arg1(dependencyMap[1]));
-const jsx = arg1(dependencyMap[2]).jsx;
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/SearchableUserListActions.tsx");
+({ View: closure_4, StyleSheet: closure_5 } = get_ActivityIndicator);
+const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/SearchableUserListActions.tsx");
 
 export const useUserListActionsProps = function useUserListActionsProps(actions) {
   actions = actions.actions;
-  const arg1 = actions;
   const style = actions.style;
-  const importDefault = style;
-  const tmp = importDefault(dependencyMap[3])();
+  const tmp = style(8824)();
   const dependencyMap = tmp;
   const items = [actions, tmp, style];
   return React.useMemo(() => {
-    const flattenResult = closure_5.flatten(null != style ? style : {});
+    const flattenResult = outer1_5.flatten(null != style ? style : {});
     const paddingTop = flattenResult.paddingTop;
     let num = 0;
     if (undefined !== paddingTop) {
@@ -68,14 +70,14 @@ export const useUserListActionsProps = function useUserListActionsProps(actions)
         if (null != actions) {
           num3 = 0;
           if (actions.length > 0) {
-            num3 = actions.length * tmp + num + num2;
+            num3 = actions.length * closure_2 + num + num2;
           }
         }
         obj.headerSize = num3;
         let fn;
         if (null != actions) {
           if (actions.length > 0) {
-            fn = () => callback(closure_7, { actions: closure_0, style: closure_1 });
+            fn = () => outer2_6(outer2_7, { actions: outer1_0, style: outer1_1 });
           }
         }
         obj.renderHeader = fn;

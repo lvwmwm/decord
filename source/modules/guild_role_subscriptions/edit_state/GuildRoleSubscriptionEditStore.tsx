@@ -1,36 +1,37 @@
-// Module ID: 14003
-// Function ID: 106502
+// Module ID: 14117
+// Function ID: 108658
 // Name: AllChannelAccessOptions
-// Dependencies: []
+// Dependencies: [621, 682, 2]
 
-// Module 14003 (AllChannelAccessOptions)
-const _module = require(dependencyMap[0]);
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/guild_role_subscriptions/edit_state/GuildRoleSubscriptionEditStore.tsx");
+// Module 14117 (AllChannelAccessOptions)
+import keys from "keys";
 
-export const AllChannelAccessOptions = { ALL_CHANNELS_ACCESS: 0, [0]: "ALL_CHANNELS_ACCESS", SOME_CHANNELS_ACCESS: 1, [1]: "SOME_CHANNELS_ACCESS" };
-export const useEditStateStore = _module.create((arg0) => {
-  const require = arg0;
+let obj = keys.create((arg0) => {
+  let closure_0 = arg0;
   return {
     listings: {},
     setListing(arg0, arg1) {
-      return arg0(arg1[1]).batchUpdates(() => arg0((listings) => {
+      const callback = arg0;
+      let closure_1 = arg1;
+      return callback(outer1_1[1]).batchUpdates(() => callback((listings) => {
         let obj = {};
         obj = {};
         const merged = Object.assign(listings.listings);
-        obj[closure_0] = callback(listings.listings[closure_0]);
+        obj[outer1_0] = outer1_1(listings.listings[outer1_0]);
         obj.listings = obj;
         return obj;
       }));
     },
     editStateIdsForGroup: {},
     setEditStateIdsForGroup(arg0, arg1) {
-      return arg0(arg1[1]).batchUpdates(() => {
-        arg0((editStateIdsForGroup) => {
+      const callback = arg0;
+      let closure_1 = arg1;
+      return callback(outer1_1[1]).batchUpdates(() => {
+        callback((editStateIdsForGroup) => {
           let obj = {};
           obj = {};
           const merged = Object.assign(editStateIdsForGroup.editStateIdsForGroup);
-          obj[closure_0] = callback(editStateIdsForGroup.editStateIdsForGroup[closure_0]);
+          obj[outer1_0] = outer1_1(editStateIdsForGroup.editStateIdsForGroup[outer1_0]);
           obj.editStateIdsForGroup = obj;
           return obj;
         });
@@ -38,3 +39,7 @@ export const useEditStateStore = _module.create((arg0) => {
     }
   };
 });
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/edit_state/GuildRoleSubscriptionEditStore.tsx");
+
+export const AllChannelAccessOptions = { ALL_CHANNELS_ACCESS: 0, [0]: "ALL_CHANNELS_ACCESS", SOME_CHANNELS_ACCESS: 1, [1]: "SOME_CHANNELS_ACCESS" };
+export const useEditStateStore = obj;

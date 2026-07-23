@@ -1,15 +1,15 @@
-// Module ID: 11834
-// Function ID: 91736
+// Module ID: 11844
+// Function ID: 91785
 // Name: apexExperiment
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: useIsShopCardImpressionMobileEnabled
 
-// Module 11834 (apexExperiment)
-const _module = require(dependencyMap[0]);
-const obj = { y: true, DateToSystemTimezoneSetter: "lg", defaultConfig: { enableShopCardImpression: false }, variations: { [0]: { enableShopCardImpression: false }, [1]: { enableShopCardImpression: true } } };
-const apexExperiment = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/collectibles/experiments/CollectiblesShopCardImpressionMobileExperiment.tsx");
+// Module 11844 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { name: "2026-04-shop-card-impression-mobile", kind: "user", defaultConfig: { enableShopCardImpression: false }, variations: { [0]: { enableShopCardImpression: false }, [1]: { enableShopCardImpression: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/collectibles/experiments/CollectiblesShopCardImpressionMobileExperiment.tsx");
 
 export default apexExperiment;
 export const useIsShopCardImpressionMobileEnabled = function useIsShopCardImpressionMobileEnabled(CollectiblesShopCardV2) {

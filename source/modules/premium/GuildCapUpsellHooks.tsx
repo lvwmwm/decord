@@ -1,12 +1,17 @@
-// Module ID: 5594
-// Function ID: 47540
+// Module ID: 5597
+// Function ID: 47563
 // Name: hasIncreasedGuildCap
-// Dependencies: []
+// Dependencies: [1838, 1849, 653, 566, 5598, 3776, 2]
 // Exports: hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 5594 (hasIncreasedGuildCap)
+// Module 5597 (hasIncreasedGuildCap)
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { MAX_USER_GUILDS } from "ME";
+
+const require = arg1;
 function hasIncreasedGuildCap(currentUser) {
-  let result = importDefault(dependencyMap[5]).canUseIncreasedGuildCap(currentUser);
+  let result = importDefault(3776).canUseIncreasedGuildCap(currentUser);
   if (!result) {
     let isStaffResult;
     if (null != currentUser) {
@@ -16,23 +21,20 @@ function hasIncreasedGuildCap(currentUser) {
   }
   return result;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const MAX_USER_GUILDS = arg1(dependencyMap[2]).MAX_USER_GUILDS;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/premium/GuildCapUpsellHooks.tsx");
+let result = require("ME").fileFinishedImporting("modules/premium/GuildCapUpsellHooks.tsx");
 
 export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGuildCapUpsell() {
-  const items = [closure_3];
-  let stateFromStores = arg1(dependencyMap[3]).useStateFromStores(items, () => guildCount.getGuildCount() >= 95);
-  const obj = arg1(dependencyMap[3]);
-  const items1 = [arg1(dependencyMap[4]).HotspotStore];
-  const stateFromStores1 = arg1(dependencyMap[3]).useStateFromStores(items1, () => {
-    const HotspotStore = callback(closure_2[4]).HotspotStore;
-    return HotspotStore.hasHotspot(callback(closure_2[4]).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+  const items = [_createForOfIteratorHelperLoose];
+  let stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_3.getGuildCount() >= 95);
+  const obj = require(566) /* initialize */;
+  const items1 = [require(5598) /* HotspotStore */.HotspotStore];
+  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => {
+    const HotspotStore = outer1_0(outer1_2[4]).HotspotStore;
+    return HotspotStore.hasHotspot(outer1_0(outer1_2[4]).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
   });
-  const obj2 = arg1(dependencyMap[3]);
-  const items2 = [closure_4];
-  const stateFromStoresObject = arg1(dependencyMap[3]).useStateFromStoresObject(items2, () => !callback2(closure_2[5]).isPremium(currentUser.getCurrentUser()));
+  const obj2 = require(566) /* initialize */;
+  const items2 = [_isNativeReflectConstruct];
+  const stateFromStoresObject = require(566) /* initialize */.useStateFromStoresObject(items2, () => !outer1_1(outer1_2[5]).isPremium(outer1_4.getCurrentUser()));
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }
@@ -42,7 +44,7 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   return stateFromStores;
 };
 export const hideInlineGuildCapUpsell = function hideInlineGuildCapUpsell() {
-  arg1(dependencyMap[4]).hideHotspot(arg1(dependencyMap[4]).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+  require(5598) /* HotspotStore */.hideHotspot(require(5598) /* HotspotStore */.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
 };
 export { hasIncreasedGuildCap };
 export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {

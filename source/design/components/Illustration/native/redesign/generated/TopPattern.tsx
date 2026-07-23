@@ -1,32 +1,34 @@
-// Module ID: 12335
-// Function ID: 94442
+// Module ID: 12449
+// Function ID: 96593
 // Name: getTopPatternSource
-// Dependencies: []
+// Dependencies: [31, 27, 33, 7403, 12450, 12451, 12452, 3976, 2]
 // Exports: TopPattern
 
-// Module 12335 (getTopPatternSource)
+// Module 12449 (getTopPatternSource)
+import "result";
+import { Image } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 function getTopPatternSource(theme) {
-  let obj = arg1(dependencyMap[3]);
+  let obj = require(7403) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(closure_1[4]);
+      return outer1_0(outer1_1[4]);
     },
     darker() {
-      return callback(closure_1[5]);
+      return outer1_0(outer1_1[5]);
     },
     light() {
-      return callback(closure_1[6]);
+      return outer1_0(outer1_1[6]);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 }
 function useTopPatternSource() {
-  return getTopPatternSource(arg1(dependencyMap[7]).useThemeContext().theme);
+  return getTopPatternSource(require(3976) /* AccessibilityAnnouncer */.useThemeContext().theme);
 }
-importAll(dependencyMap[0]);
-const Image = arg1(dependencyMap[1]).Image;
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/components/Illustration/native/redesign/generated/TopPattern.tsx");
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/TopPattern.tsx");
 
 export { getTopPatternSource };
 export { useTopPatternSource };
@@ -34,5 +36,5 @@ export const TopPattern = function TopPattern(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj["source"] = useTopPatternSource();
-  return <Image {...obj} />;
+  return <Image />;
 };

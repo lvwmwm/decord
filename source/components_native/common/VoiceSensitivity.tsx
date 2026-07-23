@@ -1,141 +1,139 @@
-// Module ID: 10704
-// Function ID: 83344
+// Module ID: 10714
+// Function ID: 83393
 // Name: VoiceSensitivity
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 4177, 4952, 6651, 653, 4344, 33, 4130, 689, 3974, 1450, 566, 4675, 4227, 3843, 1212, 1273, 7495, 7523, 477, 2]
 // Exports: default
 
-// Module 10704 (VoiceSensitivity)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-const View = arg1(dependencyMap[3]).View;
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const AppStates = arg1(dependencyMap[7]).AppStates;
-const NativePermissionTypes = arg1(dependencyMap[8]).NativePermissionTypes;
-({ jsx: closure_12, jsxs: closure_13 } = arg1(dependencyMap[9]));
-let obj = arg1(dependencyMap[10]);
-obj = { sensitivity: { flex: true, justifyContent: true }, sensitivityBar: {} };
-obj = { 0: "MicrophoneIcon", 9223372036854775807: "png", 9223372036854775807: true, 9223372036854775807: "/assets/images/native/icons/voice_calls/light_theme", 9223372036854775807: 24, 0: 24, CONTROLS_BUTTON_SIZE_LARGE: null, backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.WHITE };
-obj.sensitivityFill = obj;
-obj.sensitivityCommon = {};
-const tmp2 = arg1(dependencyMap[9]);
-obj.sensitivityMin = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.YELLOW_300 };
-const obj1 = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.YELLOW_300 };
-obj.sensitivityMax = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.GREEN_360 };
-const obj3 = { flex: 1 };
-const obj2 = { backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.GREEN_360 };
-obj3.backgroundColor = arg1(dependencyMap[12]).hexWithOpacity(importDefault(dependencyMap[11]).unsafe_rawColors.PRIMARY_400, 0.6);
-obj.sensitivityDefault = obj3;
-const obj7 = arg1(dependencyMap[12]);
-obj.sensitivitySpeaking = { flex: 1, backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.GREEN_360 };
-obj.sensitivitySlider = { -9223372036854775808: null, 9223372036854775807: null, 9223372036854775807: null };
-let closure_14 = obj.createStyles(obj);
-const obj4 = { flex: 1, backgroundColor: importDefault(dependencyMap[11]).unsafe_rawColors.GREEN_360 };
-const result = arg1(dependencyMap[23]).fileFinishedImporting("components_native/common/VoiceSensitivity.tsx");
+// Module 10714 (VoiceSensitivity)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { AppStates } from "ME";
+import { NativePermissionTypes } from "NativePermissionStatus";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+
+let closure_12;
+let closure_13;
+const require = arg1;
+({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
+_createForOfIteratorHelperLoose = { sensitivity: { position: "relative", height: 20 }, sensitivityBar: { position: "absolute", top: 7, left: 0, right: 0, bottom: 7, flexDirection: "row" } };
+_createForOfIteratorHelperLoose = { position: "absolute", backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, opacity: 0.5, top: 7, left: 0, right: 0, bottom: 7 };
+_createForOfIteratorHelperLoose.sensitivityFill = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.sensitivityCommon = { height: 6, borderRadius: 3 };
+_createForOfIteratorHelperLoose.sensitivityMin = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300 };
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.YELLOW_300 };
+_createForOfIteratorHelperLoose.sensitivityMax = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
+let obj3 = { flex: 1 };
+obj3.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_400, 0.6);
+_createForOfIteratorHelperLoose.sensitivityDefault = obj3;
+let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
+_createForOfIteratorHelperLoose.sensitivitySpeaking = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
+_createForOfIteratorHelperLoose.sensitivitySlider = { flex: 1, backgroundColor: "transparent", marginVertical: -10 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj4 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
+const result = require("result").fileFinishedImporting("components_native/common/VoiceSensitivity.tsx");
 
 export default function VoiceSensitivity(auto) {
+  let AppStates;
   let tmp14;
   auto = auto.auto;
-  const arg1 = auto;
-  const importDefault = auto.onThresholdChange;
-  const tmp = callback3();
+  const onThresholdChange = auto.onThresholdChange;
+  const tmp = _createForOfIteratorHelperLoose();
   const sum = auto.threshold + 100;
-  const ref = React.useRef(null);
-  const ref1 = React.useRef(null);
-  const tmp6 = callback(React.useState(currentUserSpeaking.isCurrentUserSpeaking()), 2);
+  const ref = stateFromStores.useRef(null);
+  const ref1 = stateFromStores.useRef(null);
+  const tmp6 = width(stateFromStores.useState(first2.isCurrentUserSpeaking()), 2);
   const first = tmp6[0];
-  const dependencyMap = first;
-  let closure_3 = tmp6[1];
-  const width = importDefault(dependencyMap[13])().width;
-  let callback = width;
-  let obj = arg1(dependencyMap[14]);
+  let _isNativeReflectConstruct = tmp6[1];
+  width = onThresholdChange(first[13])().width;
+  let obj = auto(first[14]);
   const items = [closure_9];
-  const stateFromStores = obj.useStateFromStores(items, () => state.getState(), []);
-  const React = stateFromStores;
-  const tmp9 = callback(React.useState(0), 2);
+  stateFromStores = obj.useStateFromStores(items, () => state.getState(), []);
+  const tmp9 = width(stateFromStores.useState(0), 2);
   const first1 = tmp9[0];
-  const View = first1;
   let closure_7 = tmp9[1];
-  const tmp11 = callback(React.useState(sum), 2);
-  const first2 = tmp11[0];
-  const currentUserSpeaking = first2;
+  const tmp11 = width(stateFromStores.useState(sum), 2);
+  first2 = tmp11[0];
   closure_9 = tmp11[1];
-  const ref2 = React.useRef(null);
-  [tmp14, closure_10] = callback(React.useState(first2 / 100), 2);
-  const tmp15 = callback(React.useState(width * (1 - first1 / -100)), 2);
+  const ref2 = stateFromStores.useRef(null);
+  [tmp14, AppStates] = width(stateFromStores.useState(first2 / 100), 2);
+  const tmp15 = width(stateFromStores.useState(width * (1 - first1 / -100)), 2);
   let closure_11 = tmp15[1];
   const items1 = [auto, first2];
-  const effect = React.useEffect(() => {
+  const effect = stateFromStores.useEffect(() => {
     if (!auto) {
-      lib(first2 / 100);
+      callback3(first2 / 100);
     }
   }, items1);
   const items2 = [auto, first1, width];
-  const effect1 = React.useEffect(() => {
+  const effect1 = stateFromStores.useEffect(() => {
     if (!auto) {
-      callback3(width * (1 - first1 / -100));
+      callback4(width * (1 - first1 / -100));
     }
   }, items2);
-  callback = React.useCallback((arg0, arg1) => {
+  let callback = stateFromStores.useCallback((arg0, arg1) => {
     callback(arg1);
     callback2(arg0);
   }, []);
   const items3 = [callback, stateFromStores];
-  const callback1 = React.useCallback((arg0) => {
+  const callback1 = stateFromStores.useCallback((arg0) => {
     state(arg0);
   }, []);
-  const effect2 = React.useEffect(() => {
+  const effect2 = stateFromStores.useEffect(() => {
     function _listenOnlyIfWeHavePermission() {
       // CreateGeneratorClosureLongIndex (0x67)
-      const obj = callback2(tmp);
-      const _listenOnlyIfWeHavePermission = obj;
+      const obj = callback(tmp);
       return obj(...arguments);
     }
-    if (stateFromStores === lib.ACTIVE) {
-      let closure_0 = false;
-      function listenOnlyIfWeHavePermission() {
+    if (stateFromStores === outer1_10.ACTIVE) {
+      let c0 = false;
+      (function listenOnlyIfWeHavePermission() {
         return _listenOnlyIfWeHavePermission(...arguments);
-      }();
+      })();
       return () => {
-        const callback = true;
-        const mediaEngine = mediaEngine.getMediaEngine();
-        mediaEngine.removeListener(callback(closure_2[16]).MediaEngineEvent.VoiceActivity, closure_12);
+        let c0 = true;
+        mediaEngine = mediaEngine.getMediaEngine();
+        mediaEngine.removeListener(auto(first[16]).MediaEngineEvent.VoiceActivity, outer1_12);
       };
     }
   }, items3);
-  const callback2 = React.useRef(false);
-  const callback3 = React.useRef(false);
-  let closure_15 = React.useRef(null);
+  callback = stateFromStores.useRef(false);
+  _createForOfIteratorHelperLoose = stateFromStores.useRef(false);
+  let closure_15 = stateFromStores.useRef(null);
   const items4 = [auto, first];
-  const effect3 = React.useEffect(() => {
+  const effect3 = stateFromStores.useEffect(() => {
     if (ref.current) {
       if (auto) {
         if (tmp3.current) {
           if (first) {
             if (null != tmp5.current) {
-              const _clearTimeout = clearTimeout;
+              let _clearTimeout = clearTimeout;
               clearTimeout(ref2.current);
               ref2.current = null;
             }
-            const AccessibilityAnnouncer = auto(first[17]).AccessibilityAnnouncer;
-            const intl = auto(first[18]).intl;
+            let AccessibilityAnnouncer = auto(first[17]).AccessibilityAnnouncer;
+            let intl = auto(first[18]).intl;
             AccessibilityAnnouncer.announce(intl.string(auto(first[18]).t.haLKZ0));
           } else {
             const _setTimeout = setTimeout;
             tmp5.current = setTimeout(() => {
-              closure_15.current = null;
-              const AccessibilityAnnouncer = callback(closure_2[17]).AccessibilityAnnouncer;
-              const intl = callback(closure_2[18]).intl;
-              AccessibilityAnnouncer.announce(intl.string(callback(closure_2[18]).t.X2hJL7));
+              outer1_15.current = null;
+              const AccessibilityAnnouncer = auto(first[17]).AccessibilityAnnouncer;
+              const intl = auto(first[18]).intl;
+              AccessibilityAnnouncer.announce(intl.string(auto(first[18]).t.X2hJL7));
             }, 1000);
           }
           return () => {
-            if (null != ref.current) {
+            if (null != outer1_15.current) {
               const _clearTimeout = clearTimeout;
-              clearTimeout(ref.current);
-              ref.current = null;
+              clearTimeout(outer1_15.current);
+              outer1_15.current = null;
             }
           };
         }
@@ -148,23 +146,23 @@ export default function VoiceSensitivity(auto) {
   }, items4);
   if (auto) {
     obj = {};
-    obj = { -1604029722: "png", -1212652805: true, -363534495: "/assets/images/native/icons/voice_calls/light_theme", 682132920: 24, 1429694692: 24, -1467631382: null };
-    const intl = arg1(dependencyMap[18]).intl;
-    obj.aria-label = intl.string(arg1(dependencyMap[18]).t.yZcOjo);
+    obj = { accessible: true, role: "meter", "aria-label": null, "aria-valuenow": null, "aria-valuemin": 0, "aria-valuemax": 100 };
+    let intl = auto(first[18]).intl;
+    obj["aria-label"] = intl.string(auto(first[18]).t.yZcOjo);
     let num5 = 0;
     if (first) {
       num5 = 100;
     }
-    obj.aria-valuenow = num5;
-    const intl2 = arg1(dependencyMap[18]).intl;
+    obj["aria-valuenow"] = num5;
+    const intl2 = auto(first[18]).intl;
     const string = intl2.string;
-    const t = arg1(dependencyMap[18]).t;
+    const t = auto(first[18]).t;
     if (first) {
       let stringResult = string(t.haLKZ0);
     } else {
       stringResult = string(t.X2hJL7);
     }
-    obj.aria-valuetext = stringResult;
+    obj["aria-valuetext"] = stringResult;
     obj.onAccessibilityFocus = function onAccessibilityFocus() {
       closure_14.current = true;
     };
@@ -181,15 +179,15 @@ export default function VoiceSensitivity(auto) {
     const obj2 = {};
     const items5 = [tmp.sensitivityCommon, first ? tmp.sensitivitySpeaking : tmp.sensitivityDefault];
     obj2.style = items5;
-    obj1.children = callback(View, obj2);
-    obj.children = callback(View, obj1);
-    const items6 = [callback(arg1(dependencyMap[19]).AccessibilityFocusView, obj), ];
+    obj1.children = callback(first1, obj2);
+    obj.children = callback(first1, obj1);
+    const items6 = [callback(auto(first[19]).AccessibilityFocusView, obj), ];
     const obj3 = { inset: true };
-    const intl3 = arg1(dependencyMap[18]).intl;
-    obj3.children = intl3.string(arg1(dependencyMap[18]).t.W3K5Im);
-    items6[1] = callback(arg1(dependencyMap[20]).FormHint, obj3);
+    const intl3 = auto(first[18]).intl;
+    obj3.children = intl3.string(auto(first[18]).t.W3K5Im);
+    items6[1] = callback(auto(first[20]).FormHint, obj3);
     obj.children = items6;
-    return callback2(View, obj);
+    return callback(first1, obj);
   } else {
     const obj4 = { style: tmp.sensitivity };
     const obj5 = { style: tmp.sensitivityBar };
@@ -199,45 +197,43 @@ export default function VoiceSensitivity(auto) {
     const obj7 = { flex: tmp14 };
     items7[2] = obj7;
     obj6.style = items7;
-    const items8 = [callback(View, obj6), ];
+    const items8 = [callback(first1, obj6), ];
     const obj8 = { ref: ref1 };
     const items9 = [, , ];
     ({ sensitivityCommon: arr8[0], sensitivityMax: arr8[1] } = tmp);
     const obj9 = { flex: 1 - tmp14 };
     items9[2] = obj9;
     obj8.style = items9;
-    items8[1] = callback(View, obj8);
+    items8[1] = callback(first1, obj8);
     obj5.children = items8;
-    const items10 = [callback2(View, obj5), , ];
+    const items10 = [callback(first1, obj5), , ];
     let obj10 = { ref: ref2 };
     const items11 = [tmp.sensitivityFill, ];
     const obj11 = { left: tmp15[0] };
     items11[1] = obj11;
     obj10.style = items11;
-    items10[1] = callback(View, obj10);
+    items10[1] = callback(first1, obj10);
     const obj12 = {
-      jumpType: "isArray",
-      skipMessageFetch: "constructor",
-      type: "toString",
-      nonce: "isArray",
-      fill: "isArray",
-      d: "isArray",
       style: tmp.sensitivitySlider,
       value: sum,
+      minimumValue: 0,
+      maximumValue: 100,
+      minimumTrackTintColor: "transparent",
+      maximumTrackTintColor: "transparent",
       onValueChange: callback1,
       onSlidingComplete: function handleSlidingComplete(arg0) {
           onThresholdChange(-1 * (100 - arg0));
         }
     };
-    obj10 = arg1(dependencyMap[22]);
+    obj10 = auto(first[22]);
     let fn;
     if (obj10.isAndroid()) {
       fn = () => true;
     }
     obj12.onResponderGrant = fn;
-    items10[2] = callback(importDefault(dependencyMap[21]), obj12);
+    items10[2] = callback(onThresholdChange(first[21]), obj12);
     obj4.children = items10;
-    return callback2(View, obj4);
+    return callback(first1, obj4);
   }
-  const tmp13 = callback(React.useState(first2 / 100), 2);
+  const tmp13 = width(stateFromStores.useState(first2 / 100), 2);
 };

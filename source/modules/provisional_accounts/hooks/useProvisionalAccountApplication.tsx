@@ -1,20 +1,22 @@
-// Module ID: 11653
-// Function ID: 90402
+// Module ID: 11663
+// Function ID: 90451
 // Name: useProvisionalAccountApplication
-// Dependencies: [491454464, 325189632, 297467904, 131072]
+// Dependencies: [6901, 566, 5470, 2]
 // Exports: default
 
-// Module 11653 (useProvisionalAccountApplication)
-let closure_2 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountApplication.tsx");
+// Module 11663 (useProvisionalAccountApplication)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("useGetOrFetchApplications").fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountApplication.tsx");
 
 export default function useProvisionalAccountApplication(arg0) {
-  const arg1 = arg0;
-  const items = [closure_2];
-  const stateFromStores = arg1(dependencyMap[1]).useStateFromStores(items, () => {
-    const gameRelationshipsForUser = gameRelationshipsForUser.getGameRelationshipsForUser(arg0);
+  const _require = arg0;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
+    const gameRelationshipsForUser = outer1_2.getGameRelationshipsForUser(closure_0);
     return 0 !== gameRelationshipsForUser.length ? gameRelationshipsForUser[0].applicationId : undefined;
   });
-  const obj = arg1(dependencyMap[1]);
-  return arg1(dependencyMap[2]).useGetOrFetchApplication(stateFromStores);
+  const obj = _require(566);
+  return _require(5470).useGetOrFetchApplication(stateFromStores);
 };

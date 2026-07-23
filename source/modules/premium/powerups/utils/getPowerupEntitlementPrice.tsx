@@ -1,12 +1,11 @@
-// Module ID: 4037
-// Function ID: 33635
+// Module ID: 4039
+// Function ID: 33644
 // Name: getPowerupEntitlementPrice
-// Dependencies: []
+// Dependencies: [2]
 // Exports: default
 
-// Module 4037 (getPowerupEntitlementPrice)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");
+// Module 4039 (getPowerupEntitlementPrice)
+const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");
 
 export default function getPowerupEntitlementPrice(tenant_metadata) {
   let guild_monetization;

@@ -1,33 +1,38 @@
-// Module ID: 16297
-// Function ID: 125764
+// Module ID: 16414
+// Function ID: 127938
 // Name: GuildSettingsRoleSubscriptionsGroupEditInner
-// Dependencies: []
+// Dependencies: [5, 57, 31, 27, 4156, 33, 1456, 14101, 16415, 16374, 5160, 16416, 22, 5087, 5788, 1212, 3830, 689, 16418, 16423, 16429, 2]
 // Exports: default
 
-// Module 16297 (GuildSettingsRoleSubscriptionsGroupEditInner)
+// Module 16414 (GuildSettingsRoleSubscriptionsGroupEditInner)
+import closure_4 from "jsxProd";
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { ScrollView } from "get ActivityIndicator";
+import { ApplicationTypes } from "ApplicationTypes";
+import jsxProd from "jsxProd";
+
+let closure_10;
+let closure_9;
+const require = arg1;
 function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
   guildId = guildId.guildId;
-  const arg1 = guildId;
-  let React;
-  let ScrollView;
-  let ApplicationTypes;
+  let first1;
+  let first2;
+  let loading;
   let updateSubscriptionsSettings;
   let error;
-  let GuildSettingsRoleSubscriptionsGroupEditInner;
+  let c11;
   let callback;
-  let obj = arg1(dependencyMap[6]);
+  let obj = guildId(isFullServerGating[6]);
   const navigation = obj.useNavigation();
-  const importDefault = navigation;
-  let obj1 = arg1(dependencyMap[7]);
+  let obj1 = guildId(isFullServerGating[7]);
   const subscriptionsSettings = obj1.useSubscriptionsSettings(guildId);
-  const importAll = subscriptionsSettings;
-  const isFullServerGating = importDefault(dependencyMap[8])(guildId).isFullServerGating;
-  const dependencyMap = isFullServerGating;
-  const application = importDefault(dependencyMap[9])(guildId, ApplicationTypes.GUILD_ROLE_SUBSCRIPTIONS).application;
-  const tmp3 = callback2(React.useState(null), 2);
+  isFullServerGating = navigation(isFullServerGating[8])(guildId).isFullServerGating;
+  const application = navigation(isFullServerGating[9])(guildId, loading.GUILD_ROLE_SUBSCRIPTIONS).application;
+  const tmp3 = callback(first1.useState(null), 2);
   const first = tmp3[0];
-  callback = first;
-  const callback2 = tmp5;
+  callback = tmp5;
   let description;
   if (null != subscriptionsSettings) {
     description = subscriptionsSettings.description;
@@ -36,19 +41,16 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
   if (null != description) {
     tmp8 = description;
   }
-  const tmp9 = callback2(React.useState(tmp8), 2);
-  let first1 = tmp9[0];
-  React = first1;
-  const tmp10 = callback2(React.useState(isFullServerGating), 2);
-  const first2 = tmp10[0];
-  ScrollView = first2;
-  let obj2 = arg1(dependencyMap[7]);
+  const tmp9 = callback(first1.useState(tmp8), 2);
+  first1 = tmp9[0];
+  const tmp10 = callback(first1.useState(isFullServerGating), 2);
+  first2 = tmp10[0];
+  let obj2 = guildId(isFullServerGating[7]);
   updateSubscriptionsSettings = obj2.useUpdateSubscriptionsSettings();
-  const loading = updateSubscriptionsSettings.loading;
-  ApplicationTypes = loading;
+  loading = updateSubscriptionsSettings.loading;
   updateSubscriptionsSettings = updateSubscriptionsSettings.updateSubscriptionsSettings;
   error = updateSubscriptionsSettings.error;
-  let source = importDefault(dependencyMap[10])({});
+  let source = navigation(isFullServerGating[10])({});
   let tmp14 = null != first;
   if (!tmp14) {
     source = null != first1;
@@ -67,7 +69,7 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
   if (!tmp14) {
     tmp14 = isFullServerGating !== first2;
   }
-  GuildSettingsRoleSubscriptionsGroupEditInner = tmp14;
+  c11 = tmp14;
   let tmp16 = first;
   if (null == first) {
     let cover_image_asset;
@@ -79,34 +81,34 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
       source = null;
       if (null != application) {
         obj = { application_id: application.id, image_asset: subscriptionsSettings.cover_image_asset };
-        source = importAll(dependencyMap[11]).getSource(obj);
-        const obj4 = importAll(dependencyMap[11]);
+        source = subscriptionsSettings(isFullServerGating[11]).getSource(obj);
+        const obj4 = subscriptionsSettings(isFullServerGating[11]);
       }
     }
     tmp16 = source;
   }
   // CreateGeneratorClosureLongIndex (0x67)
   const items = [first1, guildId, updateSubscriptionsSettings, subscriptionsSettings, first, first2, isFullServerGating];
-  callback = React.useCallback(callback(source), items);
+  callback = first1.useCallback(first(source), items);
   const items1 = [navigation, tmp14, loading, callback];
-  const layoutEffect = React.useLayoutEffect(() => {
-    const obj = {};
+  const layoutEffect = first1.useLayoutEffect(() => {
+    let obj = {};
     if (loading) {
-      let fn = () => callback2(callback(closure_3[13]).HeaderSubmittingIndicator, {});
+      let fn = () => updateSubscriptionsSettings(guildId(isFullServerGating[13]).HeaderSubmittingIndicator, {});
     } else {
-      fn = tmp14 ? () => {
+      fn = c11 ? (() => {
         const obj = {};
-        const intl = callback(closure_3[15]).intl;
-        obj.text = intl.string(callback(closure_3[15]).t.R3BPH+);
-        obj.onPress = closure_12;
-        return callback2(callback(closure_3[14]).HeaderActionButton, obj);
-      } : () => null;
+        const intl = guildId(isFullServerGating[15]).intl;
+        obj.text = intl.string(guildId(isFullServerGating[15]).t["R3BPH+"]);
+        obj.onPress = outer1_12;
+        return updateSubscriptionsSettings(guildId(isFullServerGating[14]).HeaderActionButton, obj);
+      }) : (() => null);
     }
     obj.headerRight = fn;
     navigation.setOptions(obj);
   }, items1);
   const items2 = [error];
-  const effect = React.useEffect(() => {
+  const effect = first1.useEffect(() => {
     if (null != error) {
       let anyErrorMessage = error.getAnyErrorMessage();
       if (null == anyErrorMessage) {
@@ -118,9 +120,9 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
     }
   }, items2);
   obj = {};
-  obj1 = { paddingBottom: source.insets.bottom + importDefault(dependencyMap[17]).space.PX_16 };
+  obj1 = { paddingBottom: source.insets.bottom + navigation(isFullServerGating[17]).space.PX_16 };
   obj.contentContainerStyle = obj1;
-  const items3 = [updateSubscriptionsSettings(importDefault(dependencyMap[18]), { isFullServerGating: first2, onChange: tmp10[1] }), ];
+  const items3 = [updateSubscriptionsSettings(navigation(isFullServerGating[18]), { isFullServerGating: first2, onChange: tmp10[1] }), ];
   obj2 = { cover: tmp16, setCover: tmp3[1] };
   if (null == first1) {
     let description2;
@@ -135,21 +137,15 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
   }
   obj2.description = str;
   obj2.setDescription = tmp9[1];
-  items3[1] = updateSubscriptionsSettings(arg1(dependencyMap[19]).Content, obj2);
+  items3[1] = updateSubscriptionsSettings(guildId(isFullServerGating[19]).Content, obj2);
   obj.children = items3;
-  return error(ScrollView, obj);
+  return error(first2, obj);
 }
-let closure_4 = importDefault(dependencyMap[0]);
-let closure_5 = importDefault(dependencyMap[1]);
-let closure_6 = importAll(dependencyMap[2]);
-const ScrollView = arg1(dependencyMap[3]).ScrollView;
-const ApplicationTypes = arg1(dependencyMap[4]).ApplicationTypes;
-({ jsx: closure_9, jsxs: closure_10 } = arg1(dependencyMap[5]));
-const tmp2 = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsGroupEdit.tsx");
+({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
+const result = require("result").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsGroupEdit.tsx");
 
 export default function GuildSettingsRoleSubscriptionsGroupEdit(guildId) {
   guildId = guildId.guildId;
-  const obj = { guildId, children: callback3(GuildSettingsRoleSubscriptionsGroupEditInner, { guildId }) };
-  return callback3(importDefault(dependencyMap[20]), obj);
+  const obj = { guildId, children: callback2(GuildSettingsRoleSubscriptionsGroupEditInner, { guildId }) };
+  return callback2(importDefault(16429), obj);
 };

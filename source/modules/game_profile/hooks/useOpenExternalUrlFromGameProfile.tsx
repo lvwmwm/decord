@@ -1,36 +1,36 @@
-// Module ID: 8590
-// Function ID: 68226
+// Module ID: 8597
+// Function ID: 68266
 // Name: _getDeepLinkUrl
-// Dependencies: []
+// Dependencies: [57, 5, 31, 8598, 8599, 3821, 2]
 // Exports: default
 
-// Module 8590 (_getDeepLinkUrl)
+// Module 8597 (_getDeepLinkUrl)
+import _slicedToArray from "_slicedToArray";
+import _openURL from "_openURL";
+import result from "result";
+
+const require = arg1;
 function _getDeepLinkUrl() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback2(tmp);
-  const _getDeepLinkUrl = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importAll(dependencyMap[2]);
-let closure_6 = "steam";
-let closure_7 = /^\/app\/(\d+)(?:\/)?/;
-let closure_8 = /^\/games\/store\/title\/([^/]+)/;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/game_profile/hooks/useOpenExternalUrlFromGameProfile.tsx");
+const steam = "steam";
+const re7 = /^\/app\/(\d+)(?:\/)?/;
+const re8 = /^\/games\/store\/title\/([^/]+)/;
+const result = require("result").fileFinishedImporting("modules/game_profile/hooks/useOpenExternalUrlFromGameProfile.tsx");
 
 export default function useOpenExternalUrlFromGameProfile(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  const importDefault = first;
   let closure_2 = tmp[1];
   const items = [arg0, first];
-  return React.useCallback(() => {
+  return React.useCallback((() => {
     // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = callback(tmp);
+    let closure_0 = outer1_4(tmp);
     return function() {
       return callback(...arguments);
     };
-  }(), items);
+  })(), items);
 };

@@ -1,17 +1,24 @@
-// Module ID: 16410
-// Function ID: 126774
+// Module ID: 16527
+// Function ID: 128948
 // Name: AVErrorNoAudioInputDetectedDefinition
-// Dependencies: []
+// Dependencies: [1348, 4177, 4202, 653, 8857, 16528, 2]
 
-// Module 16410 (AVErrorNoAudioInputDetectedDefinition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-({ InputModes: closure_5, RTCConnectionStates: closure_6 } = arg1(dependencyMap[3]));
-const obj = {
+// Module 16527 (AVErrorNoAudioInputDetectedDefinition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ InputModes: closure_5, RTCConnectionStates: closure_6 } = ME);
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoAudioInputDetected.tsx");
+
+export const AVErrorNoAudioInputDetectedDefinition = {
   getActiveErrors(voiceState) {
     voiceState = voiceState.voiceState;
-    const channel = channel.getChannel(voiceState.voiceChannelId);
+    channel = channel.getChannel(voiceState.voiceChannelId);
     let isGuildStageVoiceResult;
     if (null != channel) {
       isGuildStageVoiceResult = channel.isGuildStageVoice();
@@ -32,8 +39,8 @@ const obj = {
                 if (false === store.getInputDetected()) {
                   if (!isGuildStageVoiceResult) {
                     if (!store.isSelfMute()) {
-                      const obj = { type: arg1(dependencyMap[4]).AVError.NO_AUDIO_INPUT_DETECTED };
-                      const merged = Object.assign(arg1(dependencyMap[5]).getVoiceChannelErrorContext());
+                      const obj = { type: require(8857) /* validateUniqueErrorCodes */.AVError.NO_AUDIO_INPUT_DETECTED };
+                      const merged = Object.assign(require(16528) /* getCommonErrorContext */.getVoiceChannelErrorContext());
                       const items = [obj];
                       return items;
                     }
@@ -50,7 +57,3 @@ const obj = {
     return "" + mediaSessionId.mediaSessionId + ":" + mediaSessionId.audioInputDeviceName;
   }
 };
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoAudioInputDetected.tsx");
-
-export const AVErrorNoAudioInputDetectedDefinition = obj;

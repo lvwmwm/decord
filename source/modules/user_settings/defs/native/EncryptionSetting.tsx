@@ -1,38 +1,40 @@
-// Module ID: 14400
-// Function ID: 108633
+// Module ID: 14514
+// Function ID: 110786
 // Name: route
-// Dependencies: []
+// Dependencies: [8898, 7662, 653, 566, 14515, 1212, 10095, 14516, 2]
 
-// Module 14400 (route)
-let closure_2 = importDefault(dependencyMap[0]);
-let obj = arg1(dependencyMap[6]);
-obj = {
+// Module 14514 (route)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[5]).intl;
-    return intl.string(arg1(dependencyMap[5]).t.x8U2eC);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.x8U2eC);
   },
   useDescription: function useSecureFramesEncryptionDescription() {
-    let obj = arg1(dependencyMap[4]);
+    let obj = require(14515) /* useSecureFramesVerifiedUserIds */;
     const secureFramesVerifiedUserIds = obj.useSecureFramesVerifiedUserIds();
-    const intl = arg1(dependencyMap[5]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { count: secureFramesVerifiedUserIds.length };
-    return intl.formatToPlainString(arg1(dependencyMap[5]).t.6vrePS, obj);
+    return intl.formatToPlainString(require(1212) /* getSystemLocale */.t["6vrePS"], obj);
   },
-  parent: arg1(dependencyMap[1]).MobileSetting.DATA_AND_PRIVACY,
+  parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   usePredicate: function useSecureFramesPersistentCodesValue() {
-    const items = [closure_2];
-    return arg1(dependencyMap[3]).useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getPersistentCodesEnabled());
   },
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[2]).UserSettingsSections.SECURE_FRAMES,
+createToggle = {
+  route: require("ME").UserSettingsSections.SECURE_FRAMES,
   getComponent() {
-    return arg1(dependencyMap[7]).default;
+    return require(14516) /* UserListItem */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/user_settings/defs/native/EncryptionSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/EncryptionSetting.tsx");
 
-export default route;
-export const SecureFramesEncryptionSetting = route;
+export default createToggle;
+export const SecureFramesEncryptionSetting = createToggle;

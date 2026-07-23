@@ -1,57 +1,60 @@
-// Module ID: 11547
-// Function ID: 89906
+// Module ID: 11557
+// Function ID: 89955
 // Name: GuildPowerupCardFooterActive
-// Dependencies: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// Dependencies: [27, 33, 4130, 4091, 689, 4126, 7507, 1212, 2230, 11558, 11532, 8013, 2]
 // Exports: GuildPowerupsCardFooter
 
-// Module 11547 (GuildPowerupCardFooterActive)
-import { View } from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
-import __exportStarResult1 from "__exportStarResult1";
+// Module 11557 (GuildPowerupCardFooterActive)
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
 
+let closure_4;
+let closure_5;
 class GuildPowerupCardFooterActive {
   constructor(arg0) {
-    obj = { style: closure_6().inline };
+    obj = { style: c6().inline };
     obj = { size: "xs" };
-    obj.color = require("__exportStarResult1").colors.STATUS_POSITIVE;
+    obj.color = require("_createForOfIteratorHelperLoose").colors.STATUS_POSITIVE;
     items = [, ];
-    items[0] = jsx(require("__exportStarResult1").CircleCheckIcon, obj);
-    items[1] = jsx(require("__exportStarResult1").Text, { children: global.text });
+    items[0] = jsx(require("CircleCheckIcon").CircleCheckIcon, obj);
+    obj1 = { color: "status-positive", variant: "text-sm/bold" };
+    obj1.children = global.text;
+    items[1] = jsx(require("Text").Text, obj1);
     obj.children = items;
     return jsxs(View, obj);
   }
 }
 class GuildPowerupCardFooterExpiring {
   constructor(arg0) {
-    obj = { style: closure_6().inline };
+    obj = { style: c6().inline };
     obj = { size: "xs" };
-    obj.color = require("__exportStarResult1").colors.STATUS_WARNING;
+    obj.color = require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING;
     items = [, ];
-    items[0] = jsx(require("__exportStarResult1").CircleErrorIcon, obj);
-    obj1 = { "Null": null, "Null": null };
-    intl = require("__exportStarResult1").intl;
+    items[0] = jsx(require("CircleErrorIcon").CircleErrorIcon, obj);
+    obj1 = { color: "text-feedback-warning", variant: "text-sm/bold" };
+    intl = require("getSystemLocale").intl;
     obj2 = {};
-    obj2.dateString = require("__exportStarResult1")(global.dateString);
-    obj1.children = intl.formatToMarkdownString(require("__exportStarResult1").ol/ao/, obj2);
-    items[1] = jsx(require("__exportStarResult1").Text, obj1);
+    obj2.dateString = require("entitlementExpirationDateToString")(global.dateString);
+    obj1.children = intl.formatToMarkdownString(require("messagesProxy")["ol/ao/"], obj2);
+    items[1] = jsx(require("Text").Text, obj1);
     obj.children = items;
     return jsxs(View, obj);
   }
 }
 class GuildPowerupCardFooterRemoving {
   constructor(arg0) {
-    obj = { style: closure_6().inline };
+    obj = { style: c6().inline };
     obj = { size: "xs" };
-    obj.color = require("__exportStarResult1").colors.STATUS_WARNING;
+    obj.color = require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING;
     items = [, ];
-    items[0] = jsx(require("__exportStarResult1").CircleErrorIcon, obj);
-    obj1 = { "Null": null, "Null": null };
-    intl = require("__exportStarResult1").intl;
+    items[0] = jsx(require("CircleErrorIcon").CircleErrorIcon, obj);
+    obj1 = { color: "text-feedback-warning", variant: "text-sm/bold" };
+    intl = require("getSystemLocale").intl;
     obj2 = {};
-    obj2.dateString = require("__exportStarResult1")(global.removingAt);
-    obj1.children = intl.formatToPlainString(require("__exportStarResult1").6e2ry1, obj2);
-    items[1] = jsx(require("__exportStarResult1").Text, obj1);
+    obj2.dateString = require("getGuildPowerupFormattedDateString")(global.removingAt);
+    obj1.children = intl.formatToPlainString(require("messagesProxy")["6e2ry1"], obj2);
+    items[1] = jsx(require("Text").Text, obj1);
     obj.children = items;
     return jsxs(View, obj);
   }
@@ -102,24 +105,24 @@ class GuildPowerupCardFooterCost {
       obj = {};
       obj.style = tmp.inline;
       tmp5 = jsx;
-      tmp6 = require;
-      tmp7 = dependencyMap;
+      tmp6 = closure_0;
+      tmp7 = closure_2;
       num = 11;
       tmp3 = jsxs;
       tmp4 = View;
       obj = {};
       str = "sm";
       obj.size = "sm";
-      tmp8 = importDefault;
+      tmp8 = closure_1;
       num2 = 4;
-      obj.color = require("__exportStarResult1").unsafe_rawColors.GUILD_BOOSTING_PINK;
+      obj.color = require("_createForOfIteratorHelperLoose").unsafe_rawColors.GUILD_BOOSTING_PINK;
       items = [, ];
-      items[0] = jsx(require("__exportStarResult1").BoostGemIcon, obj);
+      items[0] = jsx(require("BoostGemIcon").BoostGemIcon, obj);
       num3 = 5;
       tmp9 = jsx;
-      obj1 = { cachedAt: true, edpbxy: true };
+      obj1 = { variant: "heading-sm/semibold", color: "text-subtle" };
       num4 = 7;
-      intl = require("__exportStarResult1").intl;
+      intl = require("getSystemLocale").intl;
       obj2 = {};
       obj2.required = cost;
       str2 = "";
@@ -127,17 +130,17 @@ class GuildPowerupCardFooterCost {
         str2 = costDecorator;
       }
       obj2.decorator = str2;
-      obj1.children = intl.formatToPlainString(require("__exportStarResult1").t.t2Wbo1, obj2);
-      items[1] = tmp9(require("__exportStarResult1").Text, obj1);
+      obj1.children = intl.formatToPlainString(require("getSystemLocale").t.t2Wbo1, obj2);
+      items[1] = tmp9(require("Text").Text, obj1);
       obj.children = items;
       tmp3Result = tmp3(tmp4, obj);
     }
     return tmp3Result;
   }
 }
-({ jsx: closure_4, jsxs: closure_5 } = __exportStarResult1);
-let closure_6 = __exportStarResult1.createStyles({ container: { justifyContent: "space-between" }, inline: { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false } });
-const result = __exportStarResult1.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsCardFooter.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { justifyContent: "space-between" }, inline: { flexDirection: "row", alignItems: "center", gap: 2 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsCardFooter.tsx");
 
 export { GuildPowerupCardFooterActive };
 export { GuildPowerupCardFooterExpiring };
@@ -146,7 +149,7 @@ export { GuildPowerupCardFooterStatus };
 export { GuildPowerupCardFooterCost };
 export const GuildPowerupsCardFooter = function GuildPowerupsCardFooter(status) {
   let obj = { style: items };
-  const items = [, , ];
+  items = [, , ];
   ({ inline: arr[0], container: arr[1] } = callback3());
   items[2] = status.style;
   obj = { cost: status.cost, costDecorator: status.costDecorator };

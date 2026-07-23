@@ -1,9 +1,20 @@
-// Module ID: 5033
-// Function ID: 43368
+// Module ID: 5036
+// Function ID: 43386
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [57, 6, 7, 15, 17, 18, 1389, 1839, 1838, 4799, 3771, 1841, 2]
 
-// Module 5033 (_isNativeReflectConstruct)
+// Module 5036 (_isNativeReflectConstruct)
+import _slicedToArray from "_slicedToArray";
+import TypeTag from "TypeTag";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import { TypeTag } from "TypeTag";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { LibdiscoreBatchStoreRefactorExperiment } from "_callSuper";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +24,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +77,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -103,8 +114,8 @@ function parseServerGuildStickers(stickers) {
   if (!iter.done) {
     do {
       let value = iter.value;
-      let tmp2 = closure_14;
-      obj[value.id] = closure_14(value);
+      let tmp2 = parseServerGuildSticker;
+      obj[value.id] = parseServerGuildSticker(value);
       let iter2 = tmp();
       iter = iter2;
       done = iter2.done;
@@ -114,17 +125,16 @@ function parseServerGuildStickers(stickers) {
 }
 function deriveStickerMetadata(guildId, tags) {
   const items = [];
-  tags = items;
-  let obj = { type: tags(dependencyMap[9]).StickerMetadataTypes.STICKER_NAME };
+  let obj = { type: items(4799).StickerMetadataTypes.STICKER_NAME };
   const trimmed = tags.name.trim();
   obj.value = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != tags.tags) {
-    obj = { type: tags(dependencyMap[9]).StickerMetadataTypes.TAG };
+    obj = { type: items(4799).StickerMetadataTypes.TAG };
     const trimmed1 = str.trim();
     obj.value = trimmed1.toLocaleLowerCase();
     items.push(obj);
-    const guild = guild.getGuild(guildId);
+    guild = guild.getGuild(guildId);
     if (null != guild) {
       const trimmed2 = guild.name.trim();
       const toLocaleLowerCaseResult = trimmed2.toLocaleLowerCase();
@@ -133,18 +143,18 @@ function deriveStickerMetadata(guildId, tags) {
         tmp3 = "" !== toLocaleLowerCaseResult;
       }
       if (tmp3) {
-        obj = { type: tags(dependencyMap[9]).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
+        obj = { type: items(4799).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
         items.push(obj);
       }
       const str3 = guild.name;
     }
-    const byName = importDefault(dependencyMap[10]).getByName(str);
+    const byName = importDefault(3771).getByName(str);
     if (null != byName) {
-      const obj1 = { type: tags(dependencyMap[9]).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
+      const obj1 = { type: items(4799).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
       items.push(obj1);
-      byName.forEachDiversity((surrogates) => items.push({ type: items(closure_2[9]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));
+      byName.forEachDiversity((surrogates) => items.push({ type: items(outer1_2[9]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));
     }
-    const obj5 = importDefault(dependencyMap[10]);
+    const obj5 = importDefault(3771);
   }
   return items;
 }
@@ -160,25 +170,25 @@ function syncStickers(arg0, op, setPartition) {
     } else if (op.writes.length > 0) {
       const obj = {};
       const merged = Object.assign(nullablePartition);
-      const tmp5 = _createForOfIteratorHelperLoose(op.deletes);
-      let iter = tmp5();
+      const tmp7 = _createForOfIteratorHelperLoose(op.deletes);
+      let iter = tmp7();
       if (!iter.done) {
         do {
           let value = iter.value;
-          delete r4[r1];
-          let iter2 = tmp5();
+          delete tmp2[tmp];
+          let iter2 = tmp7();
           iter = iter2;
           done = iter2.done;
         } while (!done);
       }
-      const tmp7 = _createForOfIteratorHelperLoose(op.writes);
-      let iter3 = tmp7();
+      const tmp9 = _createForOfIteratorHelperLoose(op.writes);
+      let iter3 = tmp9();
       if (!iter3.done) {
         do {
           value = iter3.value;
-          let tmp8 = closure_14;
-          obj[value.id] = closure_14(value);
-          let iter4 = tmp7();
+          let tmp10 = parseServerGuildSticker;
+          obj[value.id] = parseServerGuildSticker(value);
+          let iter4 = tmp9();
           iter3 = iter4;
           done2 = iter4.done;
         } while (!done2);
@@ -187,28 +197,20 @@ function syncStickers(arg0, op, setPartition) {
     }
   }
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-const TypeTag = arg1(dependencyMap[6]).TypeTag;
-let closure_10 = importDefault(dependencyMap[8]);
-let tmp2 = (LibdiscoreStore) => {
+let tmp2 = ((LibdiscoreStore) => {
   class GuildStickersStore {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_4(this, GuildStickersStore);
+      tmp = outer1_4(this, GuildStickersStore);
       items1 = [...items];
-      obj = closure_7(GuildStickersStore);
-      tmp2 = closure_6;
-      if (closure_11()) {
+      obj = outer1_7(GuildStickersStore);
+      tmp2 = outer1_6;
+      if (outer1_11()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_7;
-        constructResult = Reflect.construct(obj, items1, closure_7(self).constructor);
+        tmp5 = outer1_7;
+        constructResult = Reflect.construct(obj, items1, outer1_7(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
@@ -223,6 +225,7 @@ let tmp2 = (LibdiscoreStore) => {
           let tmp = key10010;
           let _Object = Object;
           let result = map.set(key10010, Object.values(arg0[key10010].root));
+          continue;
         }
         return map;
       });
@@ -238,14 +241,14 @@ let tmp2 = (LibdiscoreStore) => {
             continue;
           } else {
             do {
-              let tmp = closure_3;
-              let tmp2 = closure_3(entries[num], 2);
-              let tmp3 = closure_16;
-              let result = map.set(tmp2[0], closure_16(key10014, tmp2[1]));
+              let tmp = outer2_3;
+              let tmp2 = outer2_3(entries[num], 2);
+              let tmp3 = outer2_16;
+              let result = map.set(tmp2[0], outer2_16(key10014, tmp2[1]));
               num = num + 1;
               let length = entries.length;
             } while (num < length);
-            // continue
+            continue;
           }
           continue;
         }
@@ -256,8 +259,7 @@ let tmp2 = (LibdiscoreStore) => {
       return tmp2Result;
     }
   }
-  const arg1 = GuildStickersStore;
-  callback2(GuildStickersStore, LibdiscoreStore);
+  callback3(GuildStickersStore, LibdiscoreStore);
   let obj = {
     key: "getStickerById",
     value(arg0) {
@@ -270,7 +272,7 @@ let tmp2 = (LibdiscoreStore) => {
       return tmp2;
     }
   };
-  const items = [obj, ];
+  let items = [obj, ];
   obj = {
     key: "stateWrapper",
     value() {
@@ -278,10 +280,9 @@ let tmp2 = (LibdiscoreStore) => {
     }
   };
   items[1] = obj;
-  return callback(GuildStickersStore, items);
-}(arg1(dependencyMap[7]).LibdiscoreStore);
+  return callback2(GuildStickersStore, items);
+})(require("_isNativeReflectConstruct").LibdiscoreStore);
 tmp2.displayName = "GuildStickersStore";
-const LibdiscoreBatchStoreRefactorExperiment = arg1(dependencyMap[11]).LibdiscoreBatchStoreRefactorExperiment;
 tmp2 = new tmp2({
   LOGOUT(arg0, clear) {
     return clear.clear();
@@ -325,8 +326,8 @@ tmp2 = new tmp2({
     if (!iter5.done) {
       do {
         value = iter5.value;
-        let tmp6 = closure_17;
-        let tmp7 = closure_17(value.id, value.stickers, getPartitionKeys);
+        let tmp6 = syncStickers;
+        let tmp7 = syncStickers(value.id, value.stickers, getPartitionKeys);
         let iter6 = tmp5();
         iter5 = iter6;
         done2 = iter6.done;
@@ -373,7 +374,7 @@ tmp2 = new tmp2({
           let merged = Object.assign(tmp10);
           obj["user_id"] = tmp11.user_id;
           tmp2[key10013] = obj;
-          // continue
+          continue;
         }
         continue;
       }
@@ -386,10 +387,10 @@ tmp2 = new tmp2({
     let iter = tmp();
     if (!iter.done) {
       do {
-        let tmp2 = closure_3;
-        let tmp3 = closure_3(iter.value, 2);
-        let tmp4 = closure_15;
-        let setPartitionResult = setPartition.setPartition(tmp3[0], closure_15(tmp3[1]));
+        let tmp2 = callback;
+        let tmp3 = callback(iter.value, 2);
+        let tmp4 = parseServerGuildStickers;
+        let setPartitionResult = setPartition.setPartition(tmp3[0], parseServerGuildStickers(tmp3[1]));
         let iter2 = tmp();
         iter = iter2;
         done = iter2.done;
@@ -400,6 +401,6 @@ tmp2 = new tmp2({
     setPartition.setPartition(guildId.guildId, parseServerGuildStickers(guildId.stickers));
   }
 }, LibdiscoreBatchStoreRefactorExperiment.getCachedBridgedStoreMode());
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/stickers/GuildStickersStore.tsx");
+let result = require("_defineProperties").fileFinishedImporting("modules/stickers/GuildStickersStore.tsx");
 
 export default tmp2;

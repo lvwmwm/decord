@@ -1,46 +1,50 @@
-// Module ID: 15282
-// Function ID: 115368
-// Dependencies: []
+// Module ID: 15399
+// Function ID: 117542
+// Dependencies: [31, 27, 33, 4130, 689, 1273, 11344, 4126, 1212, 4543, 2]
 
-// Module 15282
-const View = arg1(dependencyMap[1]).View;
-const importAllResult = importAll(dependencyMap[0]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-let obj = { container: {} };
-obj = { backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_MOD_SUBTLE, borderRadius: importDefault(dependencyMap[4]).radii.round, padding: 12 };
+// Module 15399
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let obj = { container: { flex: 1, justifyContent: "center", alignItems: "center" } };
+obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, padding: 12 };
 obj.iconWrapper = obj;
-obj.title = {};
-obj.subtext = {};
-let closure_6 = arg1(dependencyMap[3]).createStyles(obj);
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo((onCreateThreadPress) => {
+obj.title = { textAlign: "center", marginTop: 16, marginHorizontal: 16 };
+obj.subtext = { textAlign: "center", marginTop: 4, marginHorizontal: 16, marginBottom: 16 };
+let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const memoResult = require("result").memo((onCreateThreadPress) => {
   onCreateThreadPress = onCreateThreadPress.onCreateThreadPress;
   const tmp = callback2();
   let obj = { style: tmp.container };
   obj = { style: tmp.iconWrapper };
-  obj = { source: importDefault(dependencyMap[6]), size: arg1(dependencyMap[5]).Icon.Sizes.MEDIUM };
-  obj.children = callback(arg1(dependencyMap[5]).Icon, obj);
+  obj = { source: importDefault(11344), size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
+  obj.children = callback(require(1273) /* Button */.Icon, obj);
   const items = [callback(View, obj), , , ];
-  const obj1 = { style: tmp.title };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj1.children = intl.string(arg1(dependencyMap[8]).t.HgTQ8p);
-  items[1] = callback(arg1(dependencyMap[7]).Text, obj1);
-  const obj2 = { style: tmp.subtext };
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj2.children = intl2.string(arg1(dependencyMap[8]).t.jmq9GC);
-  items[2] = callback(arg1(dependencyMap[7]).Text, obj2);
+  const obj1 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl.string(require(1212) /* getSystemLocale */.t.HgTQ8p);
+  items[1] = callback(require(4126) /* Text */.Text, obj1);
+  const obj2 = { style: tmp.subtext, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-default" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl2.string(require(1212) /* getSystemLocale */.t.jmq9GC);
+  items[2] = callback(require(4126) /* Text */.Text, obj2);
   let tmp4 = null != onCreateThreadPress;
   if (tmp4) {
     const obj3 = { onPress: onCreateThreadPress };
-    const intl3 = arg1(dependencyMap[8]).intl;
-    obj3.text = intl3.string(arg1(dependencyMap[8]).t.rBIGBL);
-    tmp4 = callback(arg1(dependencyMap[9]).Button, obj3);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    obj3.text = intl3.string(require(1212) /* getSystemLocale */.t.rBIGBL);
+    tmp4 = callback(require(4543) /* Button */.Button, obj3);
   }
   items[3] = tmp4;
   obj.children = items;
   return closure_5(View, obj);
 });
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/threads/native/components/redesign/ThreadListEmpty.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/threads/native/components/redesign/ThreadListEmpty.tsx");
 
 export default memoResult;

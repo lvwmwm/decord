@@ -1,19 +1,21 @@
-// Module ID: 7499
-// Function ID: 60143
+// Module ID: 7504
+// Function ID: 60177
 // Name: TextArea
-// Dependencies: []
+// Dependencies: [31, 33, 7505, 7510, 2]
 
-// Module 7499 (TextArea)
-const jsx = arg1(dependencyMap[1]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-const forwardRefResult = importAll(dependencyMap[0]).forwardRef((arg0, ref) => {
+// Module 7504 (TextArea)
+import { jsx } from "jsxProd";
+import importAllResult from "result";
+
+const require = arg1;
+const forwardRefResult = require("result").forwardRef((arg0, ref) => {
   let obj = {};
   const merged = Object.assign(arg0);
   obj = { ref };
   const merged1 = Object.assign(arg0);
-  obj["children"] = jsx(ref(dependencyMap[3]).TextAreaField, obj);
-  return jsx(ref(dependencyMap[2]).Input, obj);
+  obj["children"] = jsx(require(7510) /* getLengthRemainingTextColor */.TextAreaField, { ref });
+  return jsx(require(7505) /* Input */.Input, { ref });
 });
-const result = arg1(dependencyMap[4]).fileFinishedImporting("design/components/TextInput/native/TextArea.native.tsx");
+const result = require("Input").fileFinishedImporting("design/components/TextInput/native/TextArea.native.tsx");
 
 export const TextArea = forwardRefResult;

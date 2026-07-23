@@ -1,10 +1,16 @@
-// Module ID: 5466
-// Function ID: 46715
+// Module ID: 5469
+// Function ID: 46734
 // Name: getAuthorizationApp
-// Dependencies: []
+// Dependencies: [31, 4167, 4153, 4156, 1881, 5470, 2]
 // Exports: useAuthorizationApp
 
-// Module 5466 (getAuthorizationApp)
+// Module 5469 (getAuthorizationApp)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import _callSuper from "_callSuper";
+import { ApplicationTypes } from "ApplicationTypes";
+
+const require = arg1;
 function getAuthorizationApp(type) {
   if (null == type) {
     return null;
@@ -14,7 +20,7 @@ function getAuthorizationApp(type) {
     const linkedGames = type.linkedGames;
     let found;
     if (null != linkedGames) {
-      found = linkedGames.find((type) => type.type === callback(closure_1[4]).GameLinkTypes.OFFICIAL);
+      found = linkedGames.find((type) => type.type === outer1_0(outer1_1[4]).GameLinkTypes.OFFICIAL);
     }
     let application;
     if (null != found) {
@@ -34,29 +40,24 @@ function getAuthorizationApp(type) {
     return tmp6;
   }
 }
-let closure_2 = importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const ApplicationTypes = arg1(dependencyMap[3]).ApplicationTypes;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
+const result = require("_callSuper").fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
 
 export { getAuthorizationApp };
 export const useAuthorizationApp = function useAuthorizationApp(getOfficialApplicationId) {
-  const arg1 = getOfficialApplicationId;
+  const _require = getOfficialApplicationId;
   let officialApplicationId;
   if (null != getOfficialApplicationId) {
-    if (!(getOfficialApplicationId instanceof closure_4)) {
+    if (!(getOfficialApplicationId instanceof _callSuper)) {
       officialApplicationId = getOfficialApplicationId.getOfficialApplicationId();
     }
   }
-  const getOrFetchApplication = arg1(dependencyMap[5]).useGetOrFetchApplication(officialApplicationId);
-  const dependencyMap = getOrFetchApplication;
+  getOrFetchApplication = _require(getOrFetchApplication[5]).useGetOrFetchApplication(officialApplicationId);
   const items = [getOfficialApplicationId, getOrFetchApplication];
   return React.useMemo(() => {
-    if (null == arg0) {
+    if (null == closure_0) {
       return null;
-    } else if (arg0 instanceof closure_4) {
-      let tmp4 = callback(arg0);
+    } else if (closure_0 instanceof outer1_4) {
+      let tmp4 = outer1_6(closure_0);
     } else {
       tmp4 = null;
       if (null != getOrFetchApplication) {

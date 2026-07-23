@@ -1,65 +1,74 @@
-// Module ID: 8915
-// Function ID: 70335
-// Dependencies: []
+// Module ID: 8922
+// Function ID: 70376
+// Dependencies: [1348, 3767, 1849, 653, 4944, 507, 675, 4470, 1212, 8923, 8920, 686, 2]
 
-// Module 8915
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ Endpoints: closure_6, AnalyticEvents: closure_7, ChannelTypesSets: closure_8, ChannelTypes: closure_9 } = arg1(dependencyMap[3]));
-const obj = {
+// Module 8922
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ Endpoints: closure_6, AnalyticEvents: closure_7, ChannelTypesSets: closure_8, ChannelTypes: closure_9 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("actions/CallActionCreators.tsx");
+
+export default {
   call(arg0, arg1, arg2, arg3, arg4) {
-    arg1 = this;
-    const importDefault = arg0;
+    const self = this;
+    let closure_1 = arg0;
     const dependencyMap = arg1;
-    let closure_3 = arg2;
+    let _isNativeReflectConstruct = arg2;
     const blocked = arg3;
     const user = arg4;
     function doCall(arg0) {
-      const voiceChannel = arg0(arg1[4]).selectVoiceChannel(arg0, arg1);
+      const voiceChannel = callback(4944).selectVoiceChannel(callback, dependencyMap);
       if (arg0) {
-        self.ring(arg0);
+        self.ring(callback);
       }
-      if (null != arg4) {
-        arg4(arg0);
+      if (null != callback2) {
+        callback2(callback);
       }
     }
     if (null != arg3) {
       if (!blocked.isBlocked(arg3)) {
         const user2 = user.getUser(arg3);
-        const HTTP = arg1(dependencyMap[5]).HTTP;
-        const obj = { y: null, isArray: null, accessible: null, url: doCall.CALL(arg0) };
+        const HTTP = self(507).HTTP;
+        let obj = { url: doCall.CALL(arg0), oldFormErrors: true, rejectWithError: true };
         const value = HTTP.get(obj);
         value.then((body) => {
-          let ringable = arg2;
-          if (arg2) {
+          let ringable = _isNativeReflectConstruct;
+          if (_isNativeReflectConstruct) {
             ringable = body.body.ringable;
           }
           doCall(ringable);
         }, () => {
-          let obj = arg0(arg1[6]);
-          obj.track(closure_7.OPEN_POPOUT, { "Bool(false)": 234, "Bool(false)": 147.5 });
+          let obj = callback(675);
+          obj.track(closure_7.OPEN_POPOUT, { type: "Not Friend", source: "Call" });
           obj = {};
-          const intl = self(arg1[8]).intl;
-          obj.title = intl.string(self(arg1[8]).t.My50nf);
-          const intl2 = self(arg1[8]).intl;
+          const intl = self(1212).intl;
+          obj.title = intl.string(self(1212).t.My50nf);
+          const intl2 = self(1212).intl;
           obj = {};
           let str = "";
           if (null != closure_7) {
             str = closure_7.username;
           }
           obj.username = str;
-          obj.body = intl2.format(self(arg1[8]).t.IdKo2z, obj);
-          const intl3 = self(arg1[8]).intl;
-          obj.confirmText = intl3.string(self(arg1[8]).t.PMsq/b);
-          const intl4 = self(arg1[8]).intl;
-          obj.cancelText = intl4.string(self(arg1[8]).t.BddRzS);
+          obj.body = intl2.format(self(1212).t.IdKo2z, obj);
+          const intl3 = self(1212).intl;
+          obj.confirmText = intl3.string(self(1212).t["PMsq/b"]);
+          const intl4 = self(1212).intl;
+          obj.cancelText = intl4.string(self(1212).t.BddRzS);
           obj.onConfirm = function onConfirm() {
-            let obj = callback(closure_2[9]);
-            obj = { userId: closure_4, context: { location: "Call" } };
+            let obj = callback(table[9]);
+            obj = { userId: outer1_4, context: { location: "Call" } };
             obj.addRelationship(obj);
           };
-          arg0(arg1[7]).show(obj);
+          callback(4470).show(obj);
         });
       }
     } else {
@@ -67,13 +76,13 @@ const obj = {
     }
   },
   ring(channelId, items, gdm_invite) {
-    const channel = channel.getChannel(channelId);
+    channel = channel.getChannel(channelId);
     if (null != channel) {
-      let obj = items(dependencyMap[10]);
+      let obj = require(8920) /* useCanRingToGuildVoiceChannel */;
       const CALLABLE = constants.CALLABLE;
       const result = obj.canRingUsersInChannel(channel);
       if (result) {
-        const HTTP = items(dependencyMap[5]).HTTP;
+        const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
         obj = { url: closure_6.CALL_RING(channelId) };
         obj = { recipients: items, analytics_location: gdm_invite };
         obj.body = obj;
@@ -82,24 +91,20 @@ const obj = {
         HTTP.post(obj);
         if (tmp16) {
           let obj1 = { type: "GUILD_LOCAL_RING_START", ringing: items, guildId: channel.guild_id };
-          importDefault(dependencyMap[11]).dispatch(obj1);
-          const obj6 = importDefault(dependencyMap[11]);
+          importDefault(686).dispatch(obj1);
+          const obj6 = importDefault(686);
         }
       } else if (tmp6) {
-        obj1 = importDefault(dependencyMap[11]);
+        obj1 = importDefault(686);
         const obj2 = { type: "CALL_ENQUEUE_RING", channelId, recipients: items };
         obj1.dispatch(obj2);
       }
     }
   },
   stopRinging(channelId, items) {
-    const HTTP = items(dependencyMap[5]).HTTP;
-    let obj = { url: closure_6.CALL_STOP_RINGING(channelId), body: obj, oldFormErrors: true, rejectWithError: true };
+    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+    obj = { url: closure_6.CALL_STOP_RINGING(channelId), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { recipients: items };
     return HTTP.post(obj);
   }
 };
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("actions/CallActionCreators.tsx");
-
-export default obj;

@@ -1,16 +1,38 @@
-// Module ID: 15111
-// Function ID: 113954
+// Module ID: 15226
+// Function ID: 116123
 // Name: onAddReaction
-// Dependencies: []
+// Dependencies: [57, 31, 27, 5683, 1348, 4946, 3758, 653, 1852, 33, 3769, 7005, 4130, 689, 477, 3974, 566, 4140, 6691, 9326, 4660, 1212, 8007, 4126, 9431, 665, 1392, 9312, 9087, 10352, 9880, 9951, 15218, 4629, 7006, 9966, 9534, 8321, 9872, 9544, 3834, 4554, 666, 5514, 2]
 // Exports: default
 
-// Module 15111 (onAddReaction)
+// Module 15226 (onAddReaction)
+import _slicedToArray from "_slicedToArray";
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon";
+import get_ActivityIndicator from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import ME from "ME";
+import { EmojiIntention } from "set";
+import jsxProd from "ChatIcon";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function onAddReaction(id, id2, byName, burst) {
   if (null != byName) {
-    let obj = id2(dependencyMap[10]);
-    const obj2 = id2(dependencyMap[11]);
+    let obj = require(3769) /* getReactionEmojiName */;
+    const obj2 = require(7005) /* checkReactionResponse */;
     obj = { burst };
-    obj2.addReaction(id, id2, obj.toReactionEmoji(byName), id2(dependencyMap[11]).ReactionLocations.MESSAGE, obj);
+    obj2.addReaction(id, id2, obj.toReactionEmoji(byName), require(7005) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
     const toReactionEmojiResult = obj.toReactionEmoji(byName);
   }
 }
@@ -18,56 +40,56 @@ function useThread(id) {
   let messageCount;
   let mostRecentMessage;
   let thread;
-  const arg1 = id;
-  const importDefault = arg1;
+  const _require = id;
+  let closure_1 = arg1;
   const dependencyMap = arg2;
   id = undefined;
-  const items = [closure_9, closure_8];
-  const stateFromStoresObject = arg1(dependencyMap[16]).useStateFromStoresObject(items, () => {
-    if (null != arg1) {
-      if (null != arg0) {
+  const items = [closure_9, _isNativeReflectConstruct];
+  const stateFromStoresObject = _require(566).useStateFromStoresObject(items, () => {
+    if (null != lib) {
+      if (null != closure_0) {
         let obj = {};
-        const channel = channel.getChannel(arg1.id);
+        const channel = outer1_9.getChannel(lib.id);
         let tmp4 = null;
         if (null != channel) {
           tmp4 = channel;
         }
         obj.thread = tmp4;
-        const count = store.getCount(arg1.id);
+        const count = outer1_8.getCount(lib.id);
         let num = 0;
         if (null != count) {
           num = count;
         }
         obj.messageCount = num;
-        obj.mostRecentMessage = store.getMostRecentMessage(arg1.id);
+        obj.mostRecentMessage = outer1_8.getMostRecentMessage(lib.id);
       }
       return obj;
     }
-    obj = { pipMode: 22817347, externalProductImage: 18467840, facing: 21634048 };
+    obj = { thread: null, messageCount: 0, mostRecentMessage: null };
   });
   ({ thread, messageCount, mostRecentMessage } = stateFromStoresObject);
   if (null != id) {
     id = id.id;
   }
   const items1 = [id, arg2, arg1, id];
-  const effect = React.useEffect((arg0, self) => {
-    let tmp = null != self;
+  const effect = React.useEffect(() => {
+    let tmp = null != lib;
     if (tmp) {
-      tmp = null != arg0;
+      tmp = null != id;
     }
     if (tmp) {
-      tmp = self.hasFlag(constants.HAS_THREAD) || arg2;
-      const tmp5 = self.hasFlag(constants.HAS_THREAD) || arg2;
+      tmp = lib.hasFlag(outer1_12.HAS_THREAD) || dependencyMap;
+      const tmp5 = lib.hasFlag(outer1_12.HAS_THREAD) || dependencyMap;
     }
     if (tmp) {
-      tmp = null == store.getMostRecentMessage(self.id);
+      tmp = null == outer1_8.getMostRecentMessage(lib.id);
     }
     if (tmp) {
-      let obj = self(arg2[17]);
-      obj.preload(arg0.id, self.id);
-      obj = { channelId: self.id };
-      const messages = self(arg2[18]).fetchMessages(obj);
-      const obj2 = self(arg2[18]);
+      let obj = lib(4140);
+      obj.preload(id.id, lib.id);
+      obj = { channelId: lib.id, isPreload: true, limit: 25 };
+      const messages = lib(6691).fetchMessages(obj);
+      const obj2 = lib(6691);
     }
   }, items1);
   return { thread, messageCount, mostRecentMessage };
@@ -77,17 +99,14 @@ function AddEmojiButton(channel) {
   let handleItemInteracted;
   let showText;
   channel = channel.channel;
-  const arg1 = channel;
   const onPressEmoji = channel.onPressEmoji;
-  const importDefault = onPressEmoji;
   ({ showText, disabled, handleItemInteracted } = channel);
-  const dependencyMap = handleItemInteracted;
-  const tmp = callback4();
+  const tmp = callback3();
   const items = [channel, onPressEmoji, handleItemInteracted];
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_reaction_picker", {});
+    handleItemInteracted("press_reaction_picker", { actionGestureType: "press", actionTargetElement: "reaction_picker_button", actionIntentType: "open", actionDestinationType: null });
     let obj = channel(handleItemInteracted[19]);
-    obj = { flex: "HTTP", height: "Date", overflow: "HTTP", pickerIntention: constants.REACTION, onPressEmoji, channel };
+    obj = { pickerIntention: outer1_15.REACTION, autoFocus: false, startExpanded: false, onPressEmoji, channel };
     let guild_id;
     if (null != channel) {
       guild_id = channel.guild_id;
@@ -105,34 +124,29 @@ function AddEmojiButton(channel) {
   items1[2] = disabled;
   obj.style = items1;
   obj.accessible = true;
-  const intl = arg1(dependencyMap[21]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[21]).t.lfIHs4);
+  const intl = channel(handleItemInteracted[21]).intl;
+  obj.accessibilityLabel = intl.string(channel(handleItemInteracted[21]).t.lfIHs4);
   obj.disabled = disabled;
-  const items2 = [callback2(arg1(dependencyMap[22]).ReactionIcon, { size: "sm" }), ];
+  const items2 = [callback(channel(handleItemInteracted[22]).ReactionIcon, { size: "sm" }), ];
   if (showText) {
-    obj = { cachedAt: "Show debug log overlay in collectibles shop", edpbxy: "shop_show_debug_overlay" };
-    const intl2 = arg1(dependencyMap[21]).intl;
-    obj.children = intl2.string(arg1(dependencyMap[21]).t.m9O1gd);
-    showText = callback2(arg1(dependencyMap[23]).Text, obj);
+    obj = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text" };
+    const intl2 = channel(handleItemInteracted[21]).intl;
+    obj.children = intl2.string(channel(handleItemInteracted[21]).t.m9O1gd);
+    showText = callback(channel(handleItemInteracted[23]).Text, obj);
   }
   items2[1] = showText;
   obj.children = items2;
-  return closure_17(arg1(dependencyMap[20]).PressableOpacity, obj);
+  return closure_17(channel(handleItemInteracted[20]).PressableOpacity, obj);
 }
 function EmojiReaction(count) {
   const messageId = count.messageId;
-  const arg1 = messageId;
   const channel = count.channel;
-  const importDefault = channel;
   const reaction = count.reaction;
-  const dependencyMap = reaction;
   const isBurstReaction = count.isBurstReaction;
-  let closure_3 = isBurstReaction;
   const handleItemInteracted = count.handleItemInteracted;
-  const React = handleItemInteracted;
   let emoji;
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[24]);
+  let tmp = callback3();
+  let obj = messageId(reaction[24]);
   let burst_colors = reaction.burst_colors;
   if (null == burst_colors) {
     burst_colors = [];
@@ -141,7 +155,7 @@ function EmojiReaction(count) {
   obj = {};
   let str = "";
   if (null != emojiColorPalette) {
-    let obj2 = arg1(dependencyMap[25]);
+    let obj2 = messageId(reaction[25]);
     let backgroundColor;
     if (null != emojiColorPalette) {
       backgroundColor = emojiColorPalette.backgroundColor;
@@ -181,18 +195,18 @@ function EmojiReaction(count) {
   if (selectedInnerTextContainer) {
     selected = tmp.selected;
   }
-  let obj4 = arg1(dependencyMap[16]);
+  let obj4 = messageId(reaction[16]);
   const items = [closure_10];
   const items1 = [emoji];
   const stateFromStores = obj4.useStateFromStores(items, () => {
     let canChatInGuildResult = null != channel.guild_id;
     if (canChatInGuildResult) {
-      canChatInGuildResult = closure_10.canChatInGuild(channel.guild_id);
+      canChatInGuildResult = outer1_10.canChatInGuild(channel.guild_id);
     }
     return canChatInGuildResult;
   });
   const items2 = [channel, isBurstReaction, messageId, reaction, handleItemInteracted];
-  const memo = React.useMemo(() => {
+  const memo = handleItemInteracted.useMemo(() => {
     let tmp;
     if (null != emoji.id) {
       let obj = {};
@@ -203,8 +217,8 @@ function EmojiReaction(count) {
     }
     return tmp;
   }, items1);
-  const callback = React.useCallback(() => {
-    handleItemInteracted("press_reaction", {});
+  const callback = handleItemInteracted.useCallback(() => {
+    handleItemInteracted("press_reaction", { actionGestureType: "press", actionTargetElement: "toggle_existing_reaction_button", actionIntentType: "react", actionDestinationType: null });
     const result = messageId(reaction[27]).handleAddOrRemoveReaction(messageId, channel, reaction, isBurstReaction, messageId(reaction[11]).ReactionLocations.MESSAGE);
   }, items2);
   const obj1 = {};
@@ -228,12 +242,12 @@ function EmojiReaction(count) {
   items4[1] = selectedInnerEmojiContainer;
   obj2.style = items4;
   if (null == emoji.id) {
-    const obj3 = {};
+    const obj3 = { variant: "text-md/medium", color: "interactive-text-default", style: null, allowFontScaling: false };
     const items5 = [, ];
     ({ defaultEmoji: arr8[0], emojiText: arr8[1] } = tmp);
     obj3.style = items5;
     obj3.children = emoji.name;
-    let tmp34Result = callback2(arg1(dependencyMap[23]).Text, obj3);
+    let tmp34Result = callback(messageId(reaction[23]).Text, obj3);
   } else {
     if (obj13.isAndroid()) {
       obj4 = {};
@@ -243,13 +257,13 @@ function EmojiReaction(count) {
       obj4.source = memo;
       tmp34Result = tmp34(closure_6, obj4);
     } else {
-      const obj5 = { emoji, size: closure_19, style: tmp.defaultEmoji, animate: true };
-      tmp34Result = tmp34(importDefault(dependencyMap[28]), obj5);
+      const obj5 = { emoji, size: c19, style: tmp.defaultEmoji, animate: true };
+      tmp34Result = tmp34(channel(reaction[28]), obj5);
     }
-    const obj13 = arg1(dependencyMap[14]);
+    obj13 = messageId(reaction[14]);
   }
   obj2.children = tmp34Result;
-  const items7 = [callback2(emoji, obj2), ];
+  const items7 = [callback(emoji, obj2), ];
   const obj6 = {};
   const items8 = [tmp.innerTextContainer, ];
   if (selectedInnerTextContainer) {
@@ -264,14 +278,14 @@ function EmojiReaction(count) {
   }
   obj7.textStyle = tmp31;
   obj7.textVariant = "text-md/semibold";
-  obj6.children = callback2(importDefault(dependencyMap[29]), obj7);
-  items7[1] = callback2(emoji, obj6);
+  obj6.children = callback(channel(reaction[29]), obj7);
+  items7[1] = callback(emoji, obj6);
   obj1.children = items7;
-  return closure_17(arg1(dependencyMap[20]).PressableOpacity, obj1);
+  return closure_17(messageId(reaction[20]).PressableOpacity, obj1);
 }
 function ForwardButton(disabled) {
   disabled = disabled.disabled;
-  const tmp = callback4();
+  const tmp = callback3();
   const obj = { onPress: disabled.onPress };
   const items = [, , ];
   ({ emojiContainer: arr[0], addEmojiContainer: arr[1] } = tmp);
@@ -283,14 +297,14 @@ function ForwardButton(disabled) {
   obj.style = items;
   obj.accessible = true;
   obj.disabled = disabled;
-  const intl = arg1(dependencyMap[21]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[21]).t.xIUfJS);
-  obj.children = callback2(importDefault(dependencyMap[30]), { size: "sm" });
-  return callback2(arg1(dependencyMap[20]).PressableOpacity, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.xIUfJS);
+  obj.children = callback(importDefault(9880), { size: "sm" });
+  return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
 }
 function ReplyButton(disabled) {
   disabled = disabled.disabled;
-  const tmp = callback4();
+  const tmp = callback3();
   const obj = { onPress: disabled.onPress };
   const items = [, , ];
   ({ emojiContainer: arr[0], addEmojiContainer: arr[1] } = tmp);
@@ -302,27 +316,24 @@ function ReplyButton(disabled) {
   obj.style = items;
   obj.accessible = true;
   obj.disabled = disabled;
-  const intl = arg1(dependencyMap[21]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[21]).t.5NwaNY);
-  obj.children = callback2(arg1(dependencyMap[31]).ArrowAngleLeftUpIcon, { size: "sm" });
-  return callback2(arg1(dependencyMap[20]).PressableOpacity, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["5NwaNY"]);
+  obj.children = callback(require(9951) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
+  return callback(require(4660) /* PressableBase */.PressableOpacity, obj);
 }
 function ThreadAsCommentsButton(parentMessage) {
   let handleItemInteracted;
   let style;
   parentMessage = parentMessage.parentMessage;
-  const arg1 = parentMessage;
   const threadData = parentMessage.threadData;
-  const importDefault = threadData;
   ({ style, handleItemInteracted } = parentMessage);
-  const dependencyMap = handleItemInteracted;
-  const tmp = callback4();
-  let obj = arg1(dependencyMap[16]);
+  const tmp = callback3();
+  let obj = parentMessage(handleItemInteracted[16]);
   const items = [closure_11];
   const items1 = [parentMessage, threadData.thread, handleItemInteracted];
-  const stateFromStores = obj.useStateFromStores(items, () => closure_11.canWithPartialContext(constants.VIEW_CHANNEL, { channelId: parentMessage.id }));
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_11.canWithPartialContext(outer1_13.VIEW_CHANNEL, { channelId: parentMessage.id }));
   const callback = React.useCallback(() => {
-    handleItemInteracted("press_comments", { "Bool(false)": "<string:1784168705>", "Bool(false)": "<string:2420244481>", "Bool(false)": "<string:2415919508>", "Bool(false)": "<string:1107296660>" });
+    handleItemInteracted("press_comments", { actionGestureType: "press", actionTargetElement: "thread_comments_button", actionIntentType: "navigate", actionDestinationType: "channel" });
     let tmp2 = null != parentMessage;
     if (tmp2) {
       tmp2 = null != threadData.thread;
@@ -346,12 +357,12 @@ function ThreadAsCommentsButton(parentMessage) {
           obj.onPress = callback;
           obj = { style: tmp.commentCount };
           const obj1 = { style: tmp.commentsIcon };
-          const items3 = [callback2(arg1(dependencyMap[33]).ChatIcon, obj1), ];
-          const obj2 = { cachedAt: false, edpbxy: 700, children: str };
-          items3[1] = callback2(arg1(dependencyMap[23]).Text, obj2);
+          const items3 = [callback(parentMessage(handleItemInteracted[33]).ChatIcon, obj1), ];
+          const obj2 = { variant: "text-md/semibold", color: "text-strong", children: str };
+          items3[1] = callback(parentMessage(handleItemInteracted[23]).Text, obj2);
           obj.children = items3;
-          obj.children = callback3(closure_5, obj);
-          return callback2(arg1(dependencyMap[20]).PressableHighlight, obj);
+          obj.children = callback2(closure_5, obj);
+          return callback(parentMessage(handleItemInteracted[20]).PressableHighlight, obj);
         }
       }
       const obj3 = {};
@@ -360,81 +371,65 @@ function ThreadAsCommentsButton(parentMessage) {
       obj3.onPress = callback;
       const obj4 = { style: tmp.commentCount };
       const obj5 = { style: tmp.commentsIcon };
-      obj4.children = callback2(arg1(dependencyMap[33]).ChatIcon, obj5);
-      obj3.children = callback2(closure_5, obj4);
-      return callback2(arg1(dependencyMap[20]).PressableHighlight, obj3);
+      obj4.children = callback(parentMessage(handleItemInteracted[33]).ChatIcon, obj5);
+      obj3.children = callback(closure_5, obj4);
+      return callback(parentMessage(handleItemInteracted[20]).PressableHighlight, obj3);
     }
   }
   return null;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = arg1(dependencyMap[2]));
-let closure_8 = importDefault(dependencyMap[3]);
-let closure_9 = importDefault(dependencyMap[4]);
-let closure_10 = importDefault(dependencyMap[5]);
-let closure_11 = importDefault(dependencyMap[6]);
-const tmp2 = arg1(dependencyMap[2]);
-({ MessageFlags: closure_12, Permissions: closure_13, HorizontalGradient: closure_14 } = arg1(dependencyMap[7]));
-const EmojiIntention = arg1(dependencyMap[8]).EmojiIntention;
-const tmp3 = arg1(dependencyMap[7]);
-({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = arg1(dependencyMap[9]));
-let closure_19 = 20;
-const tmp4 = arg1(dependencyMap[9]);
-let closure_20 = arg1(dependencyMap[12]).createStyles(() => {
-  let obj = { container: {}, replyForwardButtonContainer: {}, emojisRowContainer: { 861099105: "dispatch", -318503224: "Text", 1672176033: "createStyles", 1390898937: "__d", -1097784146: "r" }, emojisContainer: { 861099105: "dispatch", -318503224: "Text", 1672176033: "createStyles", 1390898937: "__d", -1097784146: "r" } };
-  obj = { backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+({ View: closure_5, Image: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
+({ MessageFlags: closure_12, Permissions: closure_13, HorizontalGradient: closure_14 } = ME);
+({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = jsxProd);
+let c19 = 20;
+let closure_20 = _createForOfIteratorHelperLoose.createStyles(() => {
+  let obj = { container: { flexDirection: "row", alignItems: "center", flexWrap: "wrap", justifyContent: "space-between" }, replyForwardButtonContainer: { flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 6 }, emojisRowContainer: { position: "relative", flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 6 }, emojisContainer: { position: "relative", flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 6 } };
+  obj = { flexDirection: "row", backgroundColor: importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(689).radii.sm, flexShrink: 3, paddingHorizontal: 8, gap: 6 };
   obj.emojiContainer = obj;
   obj.innerEmojiContainer = { paddingVertical: 5 };
   obj.selectedInnerEmojiContainer = { paddingVertical: 4 };
-  obj.addEmojiContainer = { "Bool(false)": "row", "Bool(false)": "100%" };
+  obj.addEmojiContainer = { minHeight: 30, alignItems: "center" };
   obj.disabled = { opacity: 0.4 };
-  obj = { width: closure_19, height: closure_19 };
+  obj = { width: c19, height: c19 };
   obj.defaultEmoji = obj;
-  const obj1 = { -1398941826: 13, 541046124: 0.652, 1600327841: 0, -343421673: 183.333 };
-  let obj4 = arg1(dependencyMap[14]);
+  const obj1 = { lineHeight: null, fontSize: 16, textAlign: "center", paddingTop: 2 };
+  let obj4 = require(477) /* set */;
   let num = 16;
   if (!obj4.isAndroid()) {
-    num = closure_19;
+    num = c19;
   }
   obj1.lineHeight = num;
   obj.emojiText = obj1;
   obj.selectedInnerTextContainer = { paddingBottom: 3.5 };
-  obj.innerTextContainer = {};
-  obj.emojiImage = { resizeMode: "contain", width: closure_19, height: closure_19 };
-  const obj3 = { borderColor: importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_560, backgroundColor: arg1(dependencyMap[15]).hexWithOpacity(importDefault(dependencyMap[13]).unsafe_rawColors.BRAND_500, 0.3) };
+  obj.innerTextContainer = { alignSelf: "flex-end", paddingBottom: 4.5 };
+  obj.emojiImage = { resizeMode: "contain", width: c19, height: c19 };
+  const obj3 = { borderColor: importDefault(689).unsafe_rawColors.BRAND_560, borderWidth: 1, paddingHorizontal: 7, backgroundColor: require(3974) /* hexToRgb */.hexWithOpacity(importDefault(689).unsafe_rawColors.BRAND_500, 0.3) };
   obj.selected = obj3;
-  obj.gradient = { width: "dispatch", height: "registerAsset", position: "type", justifyContent: "accessible", alignItems: "onPress" };
-  obj.overflowChevron = { "Bool(false)": 40, "Bool(false)": 40 };
-  obj4 = { <string:3713687343>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, <string:1524488669>: -7312499169131388000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1306795994>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, <string:3889845200>: -999775953481944100000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:999405895>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000013677476443, <string:1660130931>: -1067754237731450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, <string:1532076283>: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020043463816, <string:1549951490>: -189118451239682540000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, backgroundColor: importDefault(dependencyMap[13]).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(dependencyMap[13]).radii.sm };
+  obj.gradient = { position: "absolute", right: 0, top: 0, bottom: 0, width: 48 };
+  obj.overflowChevron = { position: "absolute", right: 0 };
+  obj4 = { paddingVertical: 6, paddingHorizontal: 8, backgroundColor: importDefault(689).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(689).radii.sm, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
   obj.comments = obj4;
-  obj.commentCount = {};
-  const obj2 = { resizeMode: "contain", width: closure_19, height: closure_19 };
-  const obj8 = arg1(dependencyMap[15]);
-  obj.commentsIcon = { tintColor: importDefault(dependencyMap[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj.commentCount = { display: "flex", flexDirection: "row", alignItems: "center", gap: 4, justifySelf: "end" };
+  const obj5 = { width: 20, height: 20, tintColor: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj.commentsIcon = obj5;
   return obj;
 });
-const obj = arg1(dependencyMap[12]);
-const result = arg1(dependencyMap[44]).fileFinishedImporting("modules/icymi/native/ICYMICardInteractionRow.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("modules/icymi/native/ICYMICardInteractionRow.tsx");
 
 export default function ICYMICardInteractionRow(message) {
   let hasOverflow;
   let showReplyForwardButtons;
   let showThreadAsComments;
   message = message.message;
-  const arg1 = message;
   const channel = message.channel;
-  const importDefault = channel;
   let flag = message.hideAdditionalButtons;
   if (flag === undefined) {
     flag = false;
   }
-  const dependencyMap = flag;
   let flag2 = message.isKeyMessage;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let callback = flag2;
   let flag3 = message.inForum;
   if (flag3 === undefined) {
     flag3 = false;
@@ -443,64 +438,60 @@ export default function ICYMICardInteractionRow(message) {
   if (str === undefined) {
     str = "primary";
   }
-  const React = str;
   const id = message.id;
   const itemType = message.itemType;
-  let tmp2;
-  let closure_8;
-  let closure_9;
-  let closure_10;
-  let closure_11;
+  let c7;
+  let memo;
+  let canForwardMessage;
+  let stateFromStores;
+  let callback;
   let closure_12;
-  const tmp = callback4();
-  tmp2 = useThread(message.guild, message, flag3);
-  const items = [message.reactions];
-  const memo = React.useMemo(() => {
+  let tmp = callback3();
+  const tmp2 = useThread(message.guild, message, flag3);
+  c7 = tmp2;
+  let items = [message.reactions];
+  memo = str.useMemo(() => {
     const items = [];
-    const message = items;
-    const reactions = message.reactions;
+    const reactions = items.reactions;
     const item = reactions.forEach((me_vote) => {
       if (null == me_vote.me_vote) {
         if (me_vote.burst_count > 0) {
           let obj = {};
           const merged = Object.assign(me_vote);
-          obj["type"] = items(closure_2[34]).ReactionTypes.BURST;
+          obj["type"] = message(flag[34]).ReactionTypes.BURST;
           items.push(obj);
         }
         if (me_vote.count > 0) {
           obj = {};
           const merged1 = Object.assign(me_vote);
-          obj["type"] = items(closure_2[34]).ReactionTypes.NORMAL;
+          obj["type"] = message(flag[34]).ReactionTypes.NORMAL;
           items.push(obj);
         }
       }
     });
     return items;
   }, items);
-  closure_8 = memo;
   const items1 = [channel];
-  const memo1 = React.useMemo(() => {
+  const memo1 = str.useMemo(() => {
     let tmp = null != channel;
     if (tmp) {
       tmp = channel(flag[35])(channel);
     }
     return tmp;
   }, items1);
-  let obj = arg1(dependencyMap[36]);
-  const canForwardMessage = obj.useCanForwardMessage(message);
-  closure_9 = canForwardMessage;
-  let obj1 = arg1(dependencyMap[16]);
-  const items2 = [closure_11];
-  const stateFromStores = obj1.useStateFromStores(items2, () => callback.can(constants.SEND_MESSAGES, channel));
-  closure_10 = stateFromStores;
+  let obj = message(flag[36]);
+  canForwardMessage = obj.useCanForwardMessage(message);
+  let obj1 = message(flag[16]);
+  const items2 = [callback];
+  stateFromStores = obj1.useStateFromStores(items2, () => callback.can(outer1_13.SEND_MESSAGES, channel));
   const items3 = [flag, tmp2.messageCount, memo.length, stateFromStores, canForwardMessage];
-  const memo2 = React.useMemo(() => {
+  const memo2 = str.useMemo(() => {
     let num = 4;
     if (flag) {
       num = 6;
     }
     let diff = num;
-    if (tmp2.messageCount > 0) {
+    if (_undefined.messageCount > 0) {
       diff = num - 1;
     }
     let num3 = 0;
@@ -517,40 +508,39 @@ export default function ICYMICardInteractionRow(message) {
       tmp4 = tmp5;
     }
     obj.showReplyForwardButtons = tmp4;
-    obj.showThreadAsComments = tmp2.messageCount > 0;
+    obj.showThreadAsComments = _undefined.messageCount > 0;
     return obj;
   }, items3);
   ({ hasOverflow, showReplyForwardButtons, showThreadAsComments } = memo2);
   const items4 = [id, itemType];
-  callback = React.useCallback((open_profile, actionParameters) => {
+  callback = str.useCallback((open_profile, actionParameters) => {
     let obj = channel(flag[37]);
     obj.itemInteracted(id, itemType, open_profile);
     obj = { itemId: id, itemType, actionParameters };
     channel(flag[37]).feedItemActioned(obj);
   }, items4);
-  closure_11 = callback;
   const items5 = [channel.id, message.id, callback];
   const items6 = [message, callback];
-  const callback1 = React.useCallback((arg0, arg1) => {
-    callback("press_reaction", {});
-    callback2(channel.id, message.id, arg0, arg1);
+  const callback1 = str.useCallback((arg0, arg1) => {
+    callback("press_reaction", { actionGestureType: "press", actionTargetElement: "add_new_reaction_button", actionIntentType: "open", actionDestinationType: null });
+    outer1_21(channel.id, message.id, arg0, arg1);
   }, items5);
   const items7 = [channel, message, callback];
-  const callback2 = React.useCallback(() => {
-    callback("press_forward", {});
+  const callback2 = str.useCallback(() => {
+    callback("press_forward", { actionGestureType: "press", actionTargetElement: "forward_button", actionIntentType: "share", actionDestinationType: "channel" });
     let obj = message(flag[38]);
     obj = { message, source: "icymi-tab" };
     obj.openForwardModal(obj);
   }, items6);
   const items8 = [str, flag2];
-  const callback3 = React.useCallback(() => {
-    callback("press_reply", {});
+  callback3 = str.useCallback(() => {
+    callback("press_reply", { actionGestureType: "press", actionTargetElement: "reply_button", actionIntentType: "reply", actionDestinationType: "channel" });
     let obj = message(flag[32]);
     obj.navigateToPost(channel.id, channel.guild_id, message.id);
     obj = { channel, message, shouldMention: true, showMentionToggle: true };
     const pendingReply = message(flag[39]).createPendingReply(obj);
   }, items7);
-  const memo3 = React.useMemo(() => {
+  const memo3 = str.useMemo(() => {
     if (flag2) {
       return channel(flag[13]).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT;
     } else if ("primary" === "primary") {
@@ -561,12 +551,12 @@ export default function ICYMICardInteractionRow(message) {
       return channel(flag[13]).colors.BACKGROUND_BASE_LOW;
     }
   }, items8);
-  let obj2 = arg1(dependencyMap[40]);
+  let obj2 = message(flag[40]);
   const token = obj2.useToken(memo3);
-  const tmp13 = callback(React.useState(true), 2);
+  const tmp13 = flag2(str.useState(true), 2);
   closure_12 = tmp13[1];
   [][0] = callback;
-  const callback4 = React.useCallback((nativeEvent) => {
+  const callback4 = str.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     callback(nativeEvent.contentOffset.x + nativeEvent.layoutMeasurement.width < nativeEvent.contentSize.width);
   }, []);
@@ -595,22 +585,22 @@ export default function ICYMICardInteractionRow(message) {
         const obj4 = { style: tmp.replyForwardButtonContainer };
         if (showThreadAsComments) {
           const obj5 = { threadData: tmp2, parentMessage: message, handleItemInteracted: callback };
-          showThreadAsComments = callback2(ThreadAsCommentsButton, obj5);
+          showThreadAsComments = callback(ThreadAsCommentsButton, obj5);
         }
         const items10 = [showThreadAsComments, ];
         if (showReplyForwardButtons) {
           const obj6 = {};
           const obj7 = { onPress: callback3, disabled: !stateFromStores };
-          const items11 = [callback2(ReplyButton, obj7), ];
+          const items11 = [callback(ReplyButton, obj7), ];
           const obj8 = { onPress: callback2, disabled: !canForwardMessage };
-          items11[1] = callback2(ForwardButton, obj8);
+          items11[1] = callback(ForwardButton, obj8);
           obj6.children = items11;
-          showReplyForwardButtons = callback3(closure_18, obj6);
+          showReplyForwardButtons = callback2(closure_18, obj6);
         }
         items10[1] = showReplyForwardButtons;
         obj4.children = items10;
-        tmp28Result = callback3(id, obj4);
-        const tmp28 = callback3;
+        tmp28Result = callback2(id, obj4);
+        const tmp28 = callback2;
         const tmp29 = id;
       }
       const items12 = [
@@ -618,8 +608,8 @@ export default function ICYMICardInteractionRow(message) {
         memo.map((reaction) => {
               let obj = {};
               obj = { messageId: message.id, channel, reaction, count: reaction.type === message(flag[34]).ReactionTypes.BURST ? reaction.burst_count : reaction.count, isBurstReaction: reaction.type === message(flag[34]).ReactionTypes.BURST, handleItemInteracted: callback };
-              obj.children = closure_16(closure_24, obj);
-              return closure_16(id, obj, "reaction-" + arg1);
+              obj.children = outer1_16(outer1_24, obj);
+              return outer1_16(id, obj, "reaction-" + arg1);
             }),
 
       ];
@@ -628,12 +618,12 @@ export default function ICYMICardInteractionRow(message) {
         tmp38 = null;
         if (memo1) {
           const obj9 = { channel, onPressEmoji: callback1, handleItemInteracted: callback };
-          tmp38 = callback2(AddEmojiButton, obj9);
+          tmp38 = callback(AddEmojiButton, obj9);
         }
       }
       items12[2] = tmp38;
       obj2.children = items12;
-      const items13 = [callback3(tmp2, obj2), ];
+      const items13 = [callback2(c7, obj2), ];
       let tmp41 = null;
       if (hasOverflow) {
         tmp41 = null;
@@ -641,37 +631,37 @@ export default function ICYMICardInteractionRow(message) {
           const obj10 = {};
           const obj11 = { style: tmp.gradient };
           ({ START: obj16.start, END: obj16.end } = closure_14);
-          const tmp47 = importDefault(dependencyMap[41]);
-          const obj17 = importDefault(dependencyMap[42])(token);
-          const items14 = [importDefault(dependencyMap[42])(token).alpha(0).hex(), token, token];
+          const tmp47 = channel(flag[41]);
+          const obj17 = channel(flag[42])(token);
+          const items14 = [channel(flag[42])(token).alpha(0).hex(), token, token];
           obj11.colors = items14;
-          obj11.locations = ["<string:6582592>", "<string:305266688>", "<string:2714419331>"];
-          const items15 = [callback2(tmp47, obj11), ];
-          const obj12 = {};
+          obj11.locations = [0, 0.8, 1];
+          const items15 = [callback(tmp47, obj11), ];
+          const obj12 = { style: null, size: "xs", color: "icon-muted" };
           const items16 = [tmp.overflowChevron];
           obj12.style = items16;
-          items15[1] = callback2(arg1(dependencyMap[43]).ChevronSmallRightIcon, obj12);
+          items15[1] = callback(message(flag[43]).ChevronSmallRightIcon, obj12);
           obj10.children = items15;
-          tmp41 = callback3(closure_18, obj10);
-          const alphaResult = importDefault(dependencyMap[42])(token).alpha(0);
+          tmp41 = callback2(closure_18, obj10);
+          const alphaResult = channel(flag[42])(token).alpha(0);
         }
       }
       items13[1] = tmp41;
       obj1.children = items13;
-      let tmp22Result = callback3(id, obj1);
-      const tmp22 = callback3;
+      let tmp22Result = callback2(id, obj1);
+      const tmp22 = callback2;
       const tmp23 = id;
-      const tmp24 = callback3;
-      const tmp25 = tmp2;
+      const tmp24 = callback2;
+      const tmp25 = c7;
     } else {
       tmp22Result = null;
     }
     obj.children = tmp22Result;
-    obj.children = callback2(id, obj);
-    let tmp17Result = callback2(id, obj);
-    const tmp17 = callback2;
+    obj.children = callback(id, obj);
+    let tmp17Result = callback(id, obj);
+    const tmp17 = callback;
     const tmp18 = id;
-    const tmp19 = callback2;
+    const tmp19 = callback;
     const tmp20 = id;
   } else {
     tmp17Result = null;

@@ -1,24 +1,28 @@
-// Module ID: 16472
-// Function ID: 127252
+// Module ID: 16589
+// Function ID: 129426
 // Name: handleAppStateChanged
-// Dependencies: [4294967295]
+// Dependencies: [1194, 6651, 653, 3, 20, 686, 4202, 16588, 6707, 3972, 14, 675, 2]
 // Exports: default
 
-// Module 16472 (handleAppStateChanged)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-({ AnalyticEvents: closure_5, AppStates: closure_6 } = arg1(dependencyMap[2]));
-let importDefaultResult = importDefault(dependencyMap[3]);
+// Module 16589 (handleAppStateChanged)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import ME from "ME";
+import importDefaultResult from "timestamp";
+
+let closure_5;
+let closure_6;
+const require = arg1;
+({ AnalyticEvents: closure_5, AppStates: closure_6 } = ME);
 importDefaultResult = new importDefaultResult("index.native.tsx");
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/core/native/handleAppStateChanged.tsx");
+let result = require("ME").fileFinishedImporting("modules/core/native/handleAppStateChanged.tsx");
 
 export default function handleAppStateChanged(state) {
   state = state.getState();
-  let obj = importDefault(dependencyMap[4]);
-  obj.markAndLog(importDefaultResult, "\u{1F3C3}", "AppState changing from " + state + " to " + state);
+  let obj = importDefault(20);
+  obj.markAndLog(closure_7, "\u{1F3C3}", "AppState changing from " + state + " to " + state);
   obj = { type: "APP_STATE_UPDATE", state };
-  importDefault(dependencyMap[5]).dispatch(obj);
+  importDefault(686).dispatch(obj);
   let isAuthenticatedResult = state === constants2.BACKGROUND;
   if (isAuthenticatedResult) {
     isAuthenticatedResult = state === constants2.ACTIVE;
@@ -31,23 +35,23 @@ export default function handleAppStateChanged(state) {
     isAuthenticatedResult = authenticated.isAuthenticated();
   }
   if (isAuthenticatedResult) {
-    isAuthenticatedResult = arg1(dependencyMap[6]).default.isDisconnected();
-    const _default = arg1(dependencyMap[6]).default;
+    isAuthenticatedResult = require(4202) /* _isNativeReflectConstruct */.default.isDisconnected();
+    const _default = require(4202) /* _isNativeReflectConstruct */.default;
   }
   if (isAuthenticatedResult) {
-    importDefault(dependencyMap[7]).deferUpdate();
-    const obj4 = importDefault(dependencyMap[7]);
+    importDefault(16588).deferUpdate();
+    const obj4 = importDefault(16588);
   }
   if (state === constants2.ACTIVE) {
-    arg1(dependencyMap[8]).trackAppOpened("launcher");
-    const obj5 = arg1(dependencyMap[8]);
-    const result = arg1(dependencyMap[9]).setSystemThemeIfNeeded();
-    const obj6 = arg1(dependencyMap[9]);
+    require(6707) /* _createForOfIteratorHelperLoose */.trackAppOpened("launcher");
+    const obj5 = require(6707) /* _createForOfIteratorHelperLoose */;
+    const result = require(3972) /* setSystemTheme */.setSystemThemeIfNeeded();
+    const obj6 = require(3972) /* setSystemTheme */;
   }
-  const obj2 = importDefault(dependencyMap[5]);
-  importDefault(dependencyMap[10]).appStateChanged(state);
+  const obj2 = importDefault(686);
+  importDefault(14).appStateChanged(state);
   if (tmp6) {
-    importDefault(dependencyMap[11]).track(constants.APP_BACKGROUND, {});
-    const obj8 = importDefault(dependencyMap[11]);
+    importDefault(675).track(constants.APP_BACKGROUND, {});
+    const obj8 = importDefault(675);
   }
 };

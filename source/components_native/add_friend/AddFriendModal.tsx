@@ -1,99 +1,111 @@
-// Module ID: 12746
-// Function ID: 97769
+// Module ID: 12860
+// Function ID: 99925
 // Name: AddFriendModalScene
-// Dependencies: []
+// Dependencies: [57, 31, 27, 1849, 653, 11707, 33, 4130, 5052, 689, 11709, 4559, 675, 477, 1459, 4337, 3969, 1212, 8332, 5788, 12861, 5087, 4126, 12862, 12864, 1557, 5519, 2]
 // Exports: default
 
-// Module 12746 (AddFriendModalScene)
+// Module 12860 (AddFriendModalScene)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import get_ActivityIndicator from "set";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { ContactPermissions } from "ContactSyncLandingPage";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_10;
+let closure_11;
+let closure_5;
+let closure_6;
+const require = arg1;
 function AddFriendModalScene(onSkip) {
   onSkip = onSkip.onSkip;
-  const arg1 = onSkip;
-  const importDefault = onSkip.sourceMetadata;
-  const tmp = callback3();
-  let obj = arg1(dependencyMap[10]);
-  const contactSyncAccount = obj.useContactSyncAccount();
-  const dependencyMap = contactSyncAccount;
-  let obj1 = arg1(dependencyMap[10]);
-  const tmp3 = callback(React.useState(!obj1.isContactSyncEnabled(contactSyncAccount)), 2);
-  let callback = tmp3[1];
-  importDefault(dependencyMap[11])(() => {
-    sourceMetadata(contactSyncAccount[12]).track(constants.FRIEND_ADD_VIEWED, sourceMetadata);
+  const sourceMetadata = onSkip.sourceMetadata;
+  let tmp = _createForOfIteratorHelperLoose();
+  let obj = onSkip(contactSyncAccount[10]);
+  contactSyncAccount = obj.useContactSyncAccount();
+  let obj1 = onSkip(contactSyncAccount[10]);
+  const tmp3 = callback(navigation.useState(!obj1.isContactSyncEnabled(contactSyncAccount)), 2);
+  callback = tmp3[1];
+  sourceMetadata(contactSyncAccount[11])(() => {
+    sourceMetadata(contactSyncAccount[12]).track(outer1_8.FRIEND_ADD_VIEWED, sourceMetadata);
     const obj = sourceMetadata(contactSyncAccount[12]);
     const result = onSkip(contactSyncAccount[10]).checkContactPermissions();
     result.then((arg0) => {
-      let tmp = arg0 === constants.NOT_DETERMINED;
-      let isAndroidResult = callback(closure_2[13]).isAndroid();
+      let tmp = arg0 === outer2_9.NOT_DETERMINED;
+      let isAndroidResult = onSkip(contactSyncAccount[13]).isAndroid();
       if (isAndroidResult) {
-        isAndroidResult = arg0 === constants.UNAUTHORIZED;
+        isAndroidResult = arg0 === outer2_9.UNAUTHORIZED;
       }
       if (!tmp) {
         tmp = isAndroidResult;
       }
       if (!tmp) {
-        tmp = !callback(closure_2[10]).isContactSyncEnabled(closure_2);
-        const obj2 = callback(closure_2[10]);
+        tmp = !onSkip(contactSyncAccount[10]).isContactSyncEnabled(outer1_2);
+        const obj2 = onSkip(contactSyncAccount[10]);
       }
-      callback2(tmp);
+      outer1_3(tmp);
     });
   });
-  let obj2 = arg1(dependencyMap[14]);
-  const navigation = obj2.useNavigation();
-  const React = navigation;
+  let obj2 = onSkip(contactSyncAccount[14]);
+  navigation = obj2.useNavigation();
   const items = [onSkip];
-  callback = React.useCallback(() => {
+  callback = navigation.useCallback(() => {
     if (null != onSkip) {
       onSkip();
     }
     let arr = sourceMetadata(contactSyncAccount[15]);
     arr = arr.pop();
   }, items);
-  const callback1 = React.useCallback(() => {
-    const currentUser = currentUser.getCurrentUser();
+  const callback1 = navigation.useCallback(() => {
+    const currentUser = outer1_7.getCurrentUser();
     let userTag;
     if (null != currentUser) {
       let obj = sourceMetadata(contactSyncAccount[16]);
       userTag = obj.getUserTag(currentUser);
     }
-    sourceMetadata(contactSyncAccount[12]).track(constants.FRIEND_ADD_VIEWED, {});
+    sourceMetadata(contactSyncAccount[12]).track(outer1_8.FRIEND_ADD_VIEWED, { friend_add_type: "Invite", source_page: "Add Friend Modal" });
     const intl = onSkip(contactSyncAccount[17]).intl;
     obj = { url: "https://discord.com/", username: userTag };
     const obj2 = sourceMetadata(contactSyncAccount[12]);
-    const formatToPlainStringResult = intl.formatToPlainString(onSkip(contactSyncAccount[17]).t.6E9a1J, obj);
+    const formatToPlainStringResult = intl.formatToPlainString(onSkip(contactSyncAccount[17]).t["6E9a1J"], obj);
     onSkip(contactSyncAccount[18]).showShareActionSheet({ message: formatToPlainStringResult }, "Add Friend Modal");
   }, []);
   const items1 = [callback, callback1, navigation];
-  const layoutEffect = React.useLayoutEffect(() => {
-    const obj = {
+  const layoutEffect = navigation.useLayoutEffect(() => {
+    let obj = {
       headerRight() {
-        const obj = { source: callback2(closure_2[20]), onPress: closure_6 };
-        const intl = callback(closure_2[17]).intl;
-        obj.accessibilityLabel = intl.string(callback(closure_2[17]).t.RDE0Sc);
-        return callback3(callback(closure_2[19]).HeaderActionButton, obj);
+        const obj = { source: sourceMetadata(contactSyncAccount[20]), onPress: outer1_6 };
+        const intl = onSkip(contactSyncAccount[17]).intl;
+        obj.accessibilityLabel = intl.string(onSkip(contactSyncAccount[17]).t.RDE0Sc);
+        return outer2_10(onSkip(contactSyncAccount[19]).HeaderActionButton, obj);
       },
       headerLeft: onSkip(contactSyncAccount[21]).getHeaderCloseButton(callback)
     };
     navigation.setOptions(obj);
   }, items1);
   obj = { keyboardShouldPersistTaps: "handled" };
-  obj = { alignSelf: 24, justifyContent: 24, alignItems: null, backgroundColor: "f15a8eea867ca31909b0a1cf49c6c7d8", style: tmp.headerText };
-  const intl = arg1(dependencyMap[17]).intl;
-  obj.children = intl.string(arg1(dependencyMap[17]).t.GWMTSE);
-  const items2 = [callback2(arg1(dependencyMap[22]).Text, obj), , , ];
-  obj1 = { style: tmp.subheaderText };
-  const intl2 = arg1(dependencyMap[17]).intl;
-  obj1.children = intl2.string(arg1(dependencyMap[17]).t.Rn/sLl);
-  items2[1] = callback2(arg1(dependencyMap[22]).Text, obj1);
+  obj = { style: tmp.headerText, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
+  let intl = onSkip(contactSyncAccount[17]).intl;
+  obj.children = intl.string(onSkip(contactSyncAccount[17]).t.GWMTSE);
+  const items2 = [callback2(onSkip(contactSyncAccount[22]).Text, obj), , , ];
+  obj1 = { style: tmp.subheaderText, variant: "text-sm/medium", color: "text-default" };
+  const intl2 = onSkip(contactSyncAccount[17]).intl;
+  obj1.children = intl2.string(onSkip(contactSyncAccount[17]).t["Rn/sLl"]);
+  items2[1] = callback2(onSkip(contactSyncAccount[22]).Text, obj1);
   obj2 = { style: tmp.input, autoFocusInput: false };
-  items2[2] = callback2(importDefault(dependencyMap[23]), obj2);
+  items2[2] = callback2(sourceMetadata(contactSyncAccount[23]), obj2);
   const obj3 = { style: tmp.otherOptionsContainer };
-  const obj4 = { "Bool(false)": "Text", "Bool(false)": "position", "Bool(false)": "duration" };
-  const intl3 = arg1(dependencyMap[17]).intl;
-  obj4.children = intl3.string(arg1(dependencyMap[17]).t.dukg0Z);
-  const items3 = [callback2(arg1(dependencyMap[22]).Text, obj4), ];
+  const obj4 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default" };
+  const intl3 = onSkip(contactSyncAccount[17]).intl;
+  obj4.children = intl3.string(onSkip(contactSyncAccount[17]).t.dukg0Z);
+  const items3 = [callback2(onSkip(contactSyncAccount[22]).Text, obj4), ];
   let tmp13 = null;
   if (tmp3[0]) {
     const obj5 = { style: tmp.rowContainer, location: "Add Friend Modal" };
-    tmp13 = callback2(importDefault(dependencyMap[24]), obj5);
+    tmp13 = callback2(sourceMetadata(contactSyncAccount[24]), obj5);
   }
   items3[1] = tmp13;
   obj3.children = items3;
@@ -101,48 +113,39 @@ function AddFriendModalScene(onSkip) {
   obj.children = items2;
   return closure_11(callback1, obj);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6 } = arg1(dependencyMap[2]));
-let closure_7 = importDefault(dependencyMap[3]);
-const tmp3 = arg1(dependencyMap[4]);
-const AnalyticEvents = tmp3.AnalyticEvents;
-const ContactPermissions = arg1(dependencyMap[5]).ContactPermissions;
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[6]));
-let obj = arg1(dependencyMap[7]);
-obj = {};
-obj = {};
-const tmp4 = arg1(dependencyMap[6]);
-const merged = Object.assign(importDefault(dependencyMap[8])(tmp3.Fonts.DISPLAY_EXTRABOLD, importDefault(dependencyMap[9]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
-obj["marginTop"] = 32;
-obj["marginHorizontal"] = 16;
-obj["textAlign"] = "center";
-obj.headerText = obj;
-obj.subheaderText = {};
-obj.input = { marginTop: 16 };
-obj.otherOptionsContainer = { flexGrow: null, gap: null };
-const importDefaultResult = importDefault(dependencyMap[8]);
-obj.rowContainer = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, marginTop: 8 };
-let closure_12 = obj.createStyles(obj);
-const obj1 = { backgroundColor: importDefault(dependencyMap[9]).colors.BACKGROUND_SURFACE_HIGH, marginTop: 8 };
-const result = arg1(dependencyMap[27]).fileFinishedImporting("components_native/add_friend/AddFriendModal.tsx");
+({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
+const AnalyticEvents = ME.AnalyticEvents;
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
+let merged = Object.assign(require("createTextStyle")(ME.Fonts.DISPLAY_EXTRABOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+_createForOfIteratorHelperLoose["marginTop"] = 32;
+_createForOfIteratorHelperLoose["marginHorizontal"] = 16;
+_createForOfIteratorHelperLoose["textAlign"] = "center";
+_createForOfIteratorHelperLoose.headerText = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.subheaderText = { lineHeight: 18, marginVertical: 8, marginHorizontal: 16, textAlign: "center" };
+_createForOfIteratorHelperLoose.input = { marginTop: 16 };
+_createForOfIteratorHelperLoose.otherOptionsContainer = { marginTop: 16, paddingHorizontal: 16 };
+_createForOfIteratorHelperLoose.rowContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginTop: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginTop: 8 };
+let result = require("get ActivityIndicator").fileFinishedImporting("components_native/add_friend/AddFriendModal.tsx");
 
 export default function AddFriendModal(arg0) {
-  const arg1 = arg0;
+  const _require = arg0;
   const items = [arg0];
-  const screens = React.useMemo(() => function getScreens(initialParams) {
+  const screens = React.useMemo(() => (function getScreens(closure_0) {
     let obj = {};
     obj = { ignoreKeyboard: true };
-    const intl = callback(closure_2[17]).intl;
-    obj.title = intl.string(callback(closure_2[17]).t.w5uwoI);
-    obj.initialParams = initialParams;
+    const intl = callback(outer2_2[17]).intl;
+    obj.title = intl.string(callback(outer2_2[17]).t.w5uwoI);
+    obj.initialParams = closure_0;
     obj.render = function render(arg0) {
       const merged = Object.assign(arg0);
-      return callback(closure_13, {});
+      return outer3_10(outer3_13, {});
     };
     obj.ADD_FRIEND = obj;
     return obj;
-  }(arg0), items);
-  return callback2(arg1(dependencyMap[26]).Navigator, { screens, initialRouteName: "ADD_FRIEND", headerStatusBarHeight: importDefault(dependencyMap[25])().top });
+  })(closure_0), items);
+  return callback2(_require(5519).Navigator, { screens, initialRouteName: "ADD_FRIEND", headerStatusBarHeight: importDefault(1557)().top });
 };

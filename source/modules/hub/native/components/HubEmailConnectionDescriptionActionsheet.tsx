@@ -1,32 +1,36 @@
-// Module ID: 11757
-// Function ID: 91300
+// Module ID: 11767
+// Function ID: 91349
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 5187, 5186, 1212, 4126, 2]
 // Exports: default
 
-// Module 11757 (HubEmailConnectionDescriptionActionsheet)
-importAll(dependencyMap[0]);
-({ jsx: closure_2, jsxs: closure_3 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-let closure_4 = arg1(dependencyMap[2]).createStyles({ description: { marginBottom: 8 } });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/hub/native/components/HubEmailConnectionDescriptionActionsheet.tsx");
+// Module 11767 (HubEmailConnectionDescriptionActionsheet)
+import "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_2;
+let closure_3;
+const require = arg1;
+({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ description: { marginBottom: 8 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/hub/native/components/HubEmailConnectionDescriptionActionsheet.tsx");
 
 export default function HubEmailConnectionDescriptionActionsheet() {
   const tmp = callback3();
   let obj = {};
   obj = {};
-  const intl = arg1(dependencyMap[5]).intl;
-  obj.title = intl.string(arg1(dependencyMap[5]).t.48kg+O);
-  const items = [callback(arg1(dependencyMap[4]).BottomSheetTitleHeader, obj), , ];
-  obj = { style: tmp.description };
-  const intl2 = arg1(dependencyMap[5]).intl;
-  obj.children = intl2.string(arg1(dependencyMap[5]).t.O1k9XX);
-  items[1] = callback(arg1(dependencyMap[6]).Text, obj);
-  const obj1 = { style: tmp.description };
-  const intl3 = arg1(dependencyMap[5]).intl;
-  obj1.children = intl3.string(arg1(dependencyMap[5]).t.FV5dvh);
-  items[2] = callback(arg1(dependencyMap[6]).Text, obj1);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t["48kg+O"]);
+  const items = [callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), , ];
+  obj = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.O1k9XX);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
+  const obj1 = { style: tmp.description, variant: "text-sm/medium", color: "text-default" };
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl3.string(require(1212) /* getSystemLocale */.t.FV5dvh);
+  items[2] = callback(require(4126) /* Text */.Text, obj1);
   obj.children = items;
-  return callback2(arg1(dependencyMap[3]).BottomSheet, obj);
+  return callback2(require(5187) /* Background */.BottomSheet, obj);
 };

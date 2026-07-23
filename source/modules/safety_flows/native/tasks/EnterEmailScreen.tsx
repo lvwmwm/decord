@@ -1,31 +1,33 @@
-// Module ID: 16448
-// Function ID: 127045
+// Module ID: 16565
+// Function ID: 129219
 // Name: EnterEmailScreen
-// Dependencies: []
+// Dependencies: [57, 31, 33, 1456, 16566, 1212, 2460, 16557, 4541, 7512, 2]
 // Exports: default
 
-// Module 16448 (EnterEmailScreen)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/safety_flows/native/tasks/EnterEmailScreen.tsx");
+// Module 16565 (EnterEmailScreen)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/safety_flows/native/tasks/EnterEmailScreen.tsx");
 
 export default function EnterEmailScreen() {
   let tmp2;
   let tmp3;
-  let obj = callback(dependencyMap[3]);
-  const callback = obj.useNavigation();
-  [tmp2, tmp3] = callback2(React.useState(""), 2);
+  let obj = _require(1456);
+  _require = obj.useNavigation();
+  [tmp2, tmp3] = callback(React.useState(""), 2);
   obj = {};
-  const tmp = callback2(React.useState(""), 2);
-  const intl = callback(dependencyMap[5]).intl;
-  obj.title = intl.string(importDefault(dependencyMap[6]).bFbsV6);
-  const intl2 = callback(dependencyMap[5]).intl;
-  obj.action = intl2.string(importDefault(dependencyMap[6]).RRBNpv);
+  const tmp = callback(React.useState(""), 2);
+  const intl = _require(1212).intl;
+  obj.title = intl.string(importDefault(2460).bFbsV6);
+  const intl2 = _require(1212).intl;
+  obj.action = intl2.string(importDefault(2460).RRBNpv);
   obj.onAction = function onAction() {
-    const arr = arr.push(arr(closure_2[7]).SafetyFlowScreens.VERIFY_EMAIL);
+    arr = arr.push(arr(outer1_2[7]).SafetyFlowScreens.VERIFY_EMAIL);
   };
-  obj = { children: jsx(callback(dependencyMap[9]).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
-  obj.children = jsx(callback(dependencyMap[8]).Stack, obj);
-  return jsx(importDefault(dependencyMap[4]), obj);
+  obj = { children: jsx(_require(7512).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
+  obj.children = jsx(_require(4541).Stack, { children: jsx(_require(7512).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
+  return jsx(importDefault(16566), { children: jsx(_require(7512).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
 };

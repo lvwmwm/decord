@@ -1,54 +1,56 @@
-// Module ID: 6858
-// Function ID: 54283
-// Dependencies: []
+// Module ID: 6863
+// Function ID: 54315
+// Dependencies: [5, 1849, 653, 686, 507, 1184, 2]
 
-// Module 6858
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const Endpoints = arg1(dependencyMap[2]).Endpoints;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/user_profile/WidgetActionCreators.tsx");
+// Module 6863
+import isNonEmptyString from "isNonEmptyString";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Endpoints } from "ME";
+
+const require = arg1;
+const result = require("ME").fileFinishedImporting("modules/user_profile/WidgetActionCreators.tsx");
 
 export default {
   setPendingWidgets(items) {
-    let obj = importDefault(dependencyMap[3]);
+    let obj = importDefault(686);
     obj = { type: "WIDGET_PENDING_SET", widgets: items };
     obj.dispatch(obj);
   },
   savePendingWidgets(arg0) {
-    const arg1 = arg0;
+    let closure_0 = arg0;
     return callback(async () => {
-      const currentUser = currentUser.getCurrentUser();
+      const currentUser = outer2_4.getCurrentUser();
       let id;
       if (null != currentUser) {
         id = currentUser.id;
       }
       if (null != id) {
-        let obj = callback(closure_2[3]);
+        let obj = outer2_1(outer2_2[3]);
         obj = { type: "WIDGET_PENDING_SAVE_START" };
         obj.dispatch(obj);
-        const mapped = lib.map((toSubmission) => toSubmission.toSubmission());
-        const HTTP = lib(closure_2[4]).HTTP;
-        obj = { url: constants.USER_PROFILE_WIDGETS };
+        const mapped = outer1_0.map((toSubmission) => toSubmission.toSubmission());
+        const HTTP = callback(outer2_2[4]).HTTP;
+        obj = { url: outer2_5.USER_PROFILE_WIDGETS };
         const obj1 = { widgets: mapped };
         obj.body = obj1;
         obj.oldFormErrors = true;
         obj.rejectWithError = true;
         const tmp11 = yield HTTP.put(obj);
         const obj2 = { type: "WIDGET_PENDING_SAVE_SUCCESS", userId: id, widgets: tmp11.body.widgets };
-        callback(closure_2[3]).dispatch(obj2);
+        outer2_1(outer2_2[3]).dispatch(obj2);
         return tmp11.body;
       }
     })();
   },
   clearPendingWidgets() {
-    importDefault(dependencyMap[3]).dispatch({ type: "WIDGET_PENDING_CLEAR" });
+    importDefault(686).dispatch({ type: "WIDGET_PENDING_CLEAR" });
   },
   fetchSuggestedGames() {
     return callback(async () => {
-      let obj = callback2(closure_2[3]);
+      let obj = outer2_1(outer2_2[3]);
       obj.dispatch({ type: "WIDGET_SUGGESTED_FETCH_START" });
-      const HTTP = callback(closure_2[4]).HTTP;
-      obj = { url: constants.USER_PROFILE_SUGGESTED_GAMES, rejectWithError: true };
+      const HTTP = outer2_0(outer2_2[4]).HTTP;
+      obj = { url: outer2_5.USER_PROFILE_SUGGESTED_GAMES, rejectWithError: true };
       const tmp2 = yield HTTP.get(obj);
       const body = tmp2.body;
       let suggested_games;
@@ -65,8 +67,8 @@ export default {
         tmp6 = null != prop;
       }
       if (!tmp6) {
-        callback2(closure_2[5]).captureMessage("Suggested games or wishlist games not found");
-        const obj3 = callback2(closure_2[5]);
+        outer2_1(outer2_2[5]).captureMessage("Suggested games or wishlist games not found");
+        const obj3 = outer2_1(outer2_2[5]);
       }
       obj = { type: "WIDGET_SUGGESTED_FETCH_SUCCESS" };
       const body3 = tmp3.body;
@@ -81,11 +83,11 @@ export default {
         prop1 = body4.suggested_wishlist_games;
       }
       obj.suggestedWishlistGamesIds = null != prop1 ? prop1 : [];
-      callback2(closure_2[3]).dispatch(obj);
+      outer2_1(outer2_2[3]).dispatch(obj);
     })();
   },
   removeGameFromSuggestedGames(applicationId) {
-    let obj = importDefault(dependencyMap[3]);
+    let obj = importDefault(686);
     obj = { type: "WIDGET_SUGGESTED_REMOVE_GAME", applicationId };
     obj.dispatch(obj);
   }

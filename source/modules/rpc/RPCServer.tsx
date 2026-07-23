@@ -1,20 +1,26 @@
-// Module ID: 13335
-// Function ID: 101290
+// Module ID: 13449
+// Function ID: 103446
 // Name: RPCServer
-// Dependencies: []
+// Dependencies: [5, 6, 7, 4033, 653, 22, 10502, 10496, 13427, 675, 44, 664, 2]
 
-// Module 13335 (RPCServer)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const TransportTypes = arg1(dependencyMap[3]).TransportTypes;
-({ AnalyticEvents: closure_6, RPCCloseCodes: closure_7, RPCCommands: closure_8, RPCErrors: closure_9, RPCEvents: closure_10 } = arg1(dependencyMap[4]));
+// Module 13449 (RPCServer)
+import apply from "apply";
+import transformUser from "transformUser";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { TransportTypes } from "RPC_SCOPE_CONFIG";
+import ME from "ME";
+
+let closure_10;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+({ AnalyticEvents: closure_6, RPCCloseCodes: closure_7, RPCCommands: closure_8, RPCErrors: closure_9, RPCEvents: closure_10 } = ME);
 let closure_11 = [];
-const tmp2 = arg1(dependencyMap[4]);
-const tmp3 = () => {
+let tmp3 = (() => {
   class RPCServer {
     constructor(arg0) {
-      tmp = closure_3(this, RPCServer);
+      tmp = outer1_3(this, RPCServer);
       this.getCurrentUser = () => null;
       this.onConnect = () => {
 
@@ -33,11 +39,10 @@ const tmp3 = () => {
       return;
     }
   }
-  const importDefault = RPCServer;
   let obj = {
     key: "registerTransport",
     value(on) {
-      const RPCServer = this;
+      const self = this;
       on.on("connect", (arg0) => self.handleConnect(arg0));
       on.on("request", (arg0, arg1) => self.handleRequest(arg0, arg1));
       on.on("disconnect", (arg0, arg1) => self.handleDisconnect(arg0, arg1));
@@ -51,17 +56,17 @@ const tmp3 = () => {
       const sockets = this.sockets;
       sockets.add(v);
       this.onConnect(v);
-      let obj = { v: v.version, config: obj };
+      obj = { v: v.version, config: obj };
       obj = { cdn_host: window.GLOBAL_ENV.CDN_HOST, api_endpoint: window.GLOBAL_ENV.API_ENDPOINT, environment: "production" };
-      if (v.transport === constants.IPC) {
+      if (v.transport === outer1_5.IPC) {
         const currentUser = self.getCurrentUser();
         if (null == currentUser) {
-          v.close(constants3.CLOSE_NORMAL, "User logged out");
+          v.close(outer1_7.CLOSE_NORMAL, "User logged out");
         } else {
-          obj.user = RPCServer(closure_1[6])(currentUser);
+          obj.user = RPCServer(outer1_1[6])(currentUser);
         }
       }
-      self.dispatch(v, null, constants4.DISPATCH, constants6.READY, obj);
+      self.dispatch(v, null, outer1_8.DISPATCH, outer1_10.READY, obj);
     }
   };
   items[1] = obj;
@@ -80,20 +85,22 @@ const tmp3 = () => {
   items[3] = {
     key: "handleRequest",
     value(arg0, arg1) {
-      const RPCServer = this;
-      const self = this;
-      const promise = new Promise((self, self2) => {
-        if (null != self2.nonce) {
-          if ("" !== self2.nonce) {
-            const cmd = self2.cmd;
+      let self = this;
+      let closure_1 = arg0;
+      let apply = arg1;
+      self = this;
+      const promise = new Promise((arg0) => {
+        if (null != apply.nonce) {
+          if ("" !== apply.nonce) {
+            const cmd = apply.cmd;
             if (null == self.commands[cmd]) {
-              let tmp16 = self(self[7]);
-              let obj = { errorCode: constants2.INVALID_COMMAND };
+              let tmp16 = RPCServer(outer2_1[7]);
+              let obj = { errorCode: outer2_9.INVALID_COMMAND };
               const _HermesInternal = HermesInternal;
               const prototype2 = tmp16.prototype;
-              tmp16 = new tmp16(obj, "Invalid command: " + self2.cmd);
+              tmp16 = new tmp16(obj, "Invalid command: " + apply.cmd);
               throw tmp16;
-            } else if (self(self[8])(self.authorization.scopes, tmp30.scope)) {
+            } else if (RPCServer(outer2_1[8])(closure_1.authorization.scopes, tmp30.scope)) {
               obj = { command: cmd };
               if ("object" === typeof tmp30.scope) {
                 const _JSON = JSON;
@@ -102,35 +109,35 @@ const tmp3 = () => {
                 scope = tmp30.scope;
               }
               obj.scope = scope;
-              obj.application_id = self.application.id;
-              obj.socket_scope = self.authorization.scopes.toString();
-              tmp34(tmp35[9]).track(constants.RPC_COMMAND_SENT, obj);
-              self(tmp30);
+              obj.application_id = closure_1.application.id;
+              obj.socket_scope = closure_1.authorization.scopes.toString();
+              tmp34(tmp35[9]).track(outer2_6.RPC_COMMAND_SENT, obj);
+              arg0(tmp30);
             } else {
               let tmp = tmp34(tmp35[7]);
-              obj = { errorCode: constants2.INVALID_PERMISSIONS };
+              obj = { errorCode: outer2_9.INVALID_PERMISSIONS };
               const prototype = tmp.prototype;
               tmp = new tmp(obj, "Not authenticated or invalid scope");
               throw tmp;
             }
           }
         }
-        let tmp25 = self(self[7]);
-        tmp25 = new tmp25({ errorCode: constants2.INVALID_PAYLOAD }, "Payload requires a nonce");
+        let tmp25 = RPCServer(outer2_1[7]);
+        tmp25 = new tmp25({ errorCode: outer2_9.INVALID_PAYLOAD }, "Payload requires a nonce");
         throw tmp25;
       });
-      const nextPromise = new Promise((self, self2) => {
-        if (null != self2.nonce) {
-          if ("" !== self2.nonce) {
-            const cmd = self2.cmd;
+      const nextPromise = new Promise((arg0) => {
+        if (null != apply.nonce) {
+          if ("" !== apply.nonce) {
+            const cmd = apply.cmd;
             if (null == self.commands[cmd]) {
-              let tmp16 = self(self[7]);
-              let obj = { errorCode: constants2.INVALID_COMMAND };
+              let tmp16 = RPCServer(outer2_1[7]);
+              let obj = { errorCode: outer2_9.INVALID_COMMAND };
               const _HermesInternal = HermesInternal;
               const prototype2 = tmp16.prototype;
-              tmp16 = new tmp16(obj, "Invalid command: " + self2.cmd);
+              tmp16 = new tmp16(obj, "Invalid command: " + apply.cmd);
               throw tmp16;
-            } else if (self(self[8])(self.authorization.scopes, tmp30.scope)) {
+            } else if (RPCServer(outer2_1[8])(closure_1.authorization.scopes, tmp30.scope)) {
               obj = { command: cmd };
               if ("object" === typeof tmp30.scope) {
                 const _JSON = JSON;
@@ -139,44 +146,44 @@ const tmp3 = () => {
                 scope = tmp30.scope;
               }
               obj.scope = scope;
-              obj.application_id = self.application.id;
-              obj.socket_scope = self.authorization.scopes.toString();
-              tmp34(tmp35[9]).track(constants.RPC_COMMAND_SENT, obj);
-              self(tmp30);
+              obj.application_id = closure_1.application.id;
+              obj.socket_scope = closure_1.authorization.scopes.toString();
+              tmp34(tmp35[9]).track(outer2_6.RPC_COMMAND_SENT, obj);
+              arg0(tmp30);
             } else {
               let tmp = tmp34(tmp35[7]);
-              obj = { errorCode: constants2.INVALID_PERMISSIONS };
+              obj = { errorCode: outer2_9.INVALID_PERMISSIONS };
               const prototype = tmp.prototype;
               tmp = new tmp(obj, "Not authenticated or invalid scope");
               throw tmp;
             }
           }
         }
-        let tmp25 = self(self[7]);
-        tmp25 = new tmp25({ errorCode: constants2.INVALID_PAYLOAD }, "Payload requires a nonce");
+        let tmp25 = RPCServer(outer2_1[7]);
+        tmp25 = new tmp25({ errorCode: outer2_9.INVALID_PAYLOAD }, "Payload requires a nonce");
         throw tmp25;
       }).then((arg0) => {
-        const self = arg0;
-        return new Promise(() => {
+        let closure_0 = arg0;
+        return new Promise((() => {
           // CreateGeneratorClosureLongIndex (0x67)
-          let closure_0 = callback(tmp);
+          let closure_0 = outer3_2(tmp);
           return function() {
             return callback(...arguments);
           };
-        }());
+        })());
       });
-      const nextPromise1 = new Promise((self, self2) => {
-        if (null != self2.nonce) {
-          if ("" !== self2.nonce) {
-            const cmd = self2.cmd;
+      const nextPromise1 = new Promise((arg0) => {
+        if (null != apply.nonce) {
+          if ("" !== apply.nonce) {
+            const cmd = apply.cmd;
             if (null == self.commands[cmd]) {
-              let tmp16 = self(self[7]);
-              let obj = { errorCode: constants2.INVALID_COMMAND };
+              let tmp16 = RPCServer(outer2_1[7]);
+              let obj = { errorCode: outer2_9.INVALID_COMMAND };
               const _HermesInternal = HermesInternal;
               const prototype2 = tmp16.prototype;
-              tmp16 = new tmp16(obj, "Invalid command: " + self2.cmd);
+              tmp16 = new tmp16(obj, "Invalid command: " + apply.cmd);
               throw tmp16;
-            } else if (self(self[8])(self.authorization.scopes, tmp30.scope)) {
+            } else if (RPCServer(outer2_1[8])(closure_1.authorization.scopes, tmp30.scope)) {
               obj = { command: cmd };
               if ("object" === typeof tmp30.scope) {
                 const _JSON = JSON;
@@ -185,57 +192,57 @@ const tmp3 = () => {
                 scope = tmp30.scope;
               }
               obj.scope = scope;
-              obj.application_id = self.application.id;
-              obj.socket_scope = self.authorization.scopes.toString();
-              tmp34(tmp35[9]).track(constants.RPC_COMMAND_SENT, obj);
-              self(tmp30);
+              obj.application_id = closure_1.application.id;
+              obj.socket_scope = closure_1.authorization.scopes.toString();
+              tmp34(tmp35[9]).track(outer2_6.RPC_COMMAND_SENT, obj);
+              arg0(tmp30);
             } else {
               let tmp = tmp34(tmp35[7]);
-              obj = { errorCode: constants2.INVALID_PERMISSIONS };
+              obj = { errorCode: outer2_9.INVALID_PERMISSIONS };
               const prototype = tmp.prototype;
               tmp = new tmp(obj, "Not authenticated or invalid scope");
               throw tmp;
             }
           }
         }
-        let tmp25 = self(self[7]);
-        tmp25 = new tmp25({ errorCode: constants2.INVALID_PAYLOAD }, "Payload requires a nonce");
+        let tmp25 = RPCServer(outer2_1[7]);
+        tmp25 = new tmp25({ errorCode: outer2_9.INVALID_PAYLOAD }, "Payload requires a nonce");
         throw tmp25;
       }).then((arg0) => {
-        const self = arg0;
-        return new Promise(() => {
+        let closure_0 = arg0;
+        return new Promise((() => {
           // CreateGeneratorClosureLongIndex (0x67)
-          let closure_0 = callback(tmp);
+          let closure_0 = outer3_2(tmp);
           return function() {
             return callback(...arguments);
           };
-        }());
-      }).then((handler, self) => {
-        const obj = { socket: handler, server: self, cmd: self.cmd, evt: self.evt, nonce: self.nonce };
-        let args = self.args;
+        })());
+      }).then((handler) => {
+        const obj = { socket: closure_1, server: self, cmd: apply.cmd, evt: apply.evt, nonce: apply.nonce };
+        let args = apply.args;
         if (null == args) {
           args = {};
         }
         obj.args = args;
         obj.isSocketConnected = function isSocketConnected() {
-          const sockets = sockets.sockets;
-          return sockets.has(closure_1);
+          const sockets = outer1_0.sockets;
+          return sockets.has(outer1_1);
         };
-        obj.signal = handler.abortController.signal;
+        obj.signal = closure_1.abortController.signal;
         return handler.handler(obj);
       });
-      new Promise((self, self2) => {
-        if (null != self2.nonce) {
-          if ("" !== self2.nonce) {
-            const cmd = self2.cmd;
+      new Promise((arg0) => {
+        if (null != apply.nonce) {
+          if ("" !== apply.nonce) {
+            const cmd = apply.cmd;
             if (null == self.commands[cmd]) {
-              let tmp16 = self(self[7]);
-              let obj = { errorCode: constants2.INVALID_COMMAND };
+              let tmp16 = RPCServer(outer2_1[7]);
+              let obj = { errorCode: outer2_9.INVALID_COMMAND };
               const _HermesInternal = HermesInternal;
               const prototype2 = tmp16.prototype;
-              tmp16 = new tmp16(obj, "Invalid command: " + self2.cmd);
+              tmp16 = new tmp16(obj, "Invalid command: " + apply.cmd);
               throw tmp16;
-            } else if (self(self[8])(self.authorization.scopes, tmp30.scope)) {
+            } else if (RPCServer(outer2_1[8])(closure_1.authorization.scopes, tmp30.scope)) {
               obj = { command: cmd };
               if ("object" === typeof tmp30.scope) {
                 const _JSON = JSON;
@@ -244,45 +251,45 @@ const tmp3 = () => {
                 scope = tmp30.scope;
               }
               obj.scope = scope;
-              obj.application_id = self.application.id;
-              obj.socket_scope = self.authorization.scopes.toString();
-              tmp34(tmp35[9]).track(constants.RPC_COMMAND_SENT, obj);
-              self(tmp30);
+              obj.application_id = closure_1.application.id;
+              obj.socket_scope = closure_1.authorization.scopes.toString();
+              tmp34(tmp35[9]).track(outer2_6.RPC_COMMAND_SENT, obj);
+              arg0(tmp30);
             } else {
               let tmp = tmp34(tmp35[7]);
-              obj = { errorCode: constants2.INVALID_PERMISSIONS };
+              obj = { errorCode: outer2_9.INVALID_PERMISSIONS };
               const prototype = tmp.prototype;
               tmp = new tmp(obj, "Not authenticated or invalid scope");
               throw tmp;
             }
           }
         }
-        let tmp25 = self(self[7]);
-        tmp25 = new tmp25({ errorCode: constants2.INVALID_PAYLOAD }, "Payload requires a nonce");
+        let tmp25 = RPCServer(outer2_1[7]);
+        tmp25 = new tmp25({ errorCode: outer2_9.INVALID_PAYLOAD }, "Payload requires a nonce");
         throw tmp25;
       }).then((arg0) => {
-        const self = arg0;
-        return new Promise(() => {
+        let closure_0 = arg0;
+        return new Promise((() => {
           // CreateGeneratorClosureLongIndex (0x67)
-          let closure_0 = callback(tmp);
+          let closure_0 = outer3_2(tmp);
           return function() {
             return callback(...arguments);
           };
-        }());
-      }).then((handler, self) => {
-        const obj = { socket: handler, server: self, cmd: self.cmd, evt: self.evt, nonce: self.nonce };
-        let args = self.args;
+        })());
+      }).then((handler) => {
+        const obj = { socket: closure_1, server: self, cmd: apply.cmd, evt: apply.evt, nonce: apply.nonce };
+        let args = apply.args;
         if (null == args) {
           args = {};
         }
         obj.args = args;
         obj.isSocketConnected = function isSocketConnected() {
-          const sockets = sockets.sockets;
-          return sockets.has(closure_1);
+          const sockets = outer1_0.sockets;
+          return sockets.has(outer1_1);
         };
-        obj.signal = handler.abortController.signal;
+        obj.signal = closure_1.abortController.signal;
         return handler.handler(obj);
-      }).then((arg0, self) => self.dispatch(arg0, self.nonce, self.cmd, null, arg0)).catch((code, self) => self.error(code, self.nonce, self.cmd, code.code, code.message));
+      }).then((arg0) => self.dispatch(closure_1, apply.nonce, apply.cmd, null, arg0)).catch((code) => self.error(closure_1, apply.nonce, apply.cmd, code.code, code.message));
     }
   };
   items[4] = {
@@ -308,7 +315,7 @@ const tmp3 = () => {
         tmp = null;
       }
       if (DISPATCH === undefined) {
-        DISPATCH = constants4.DISPATCH;
+        DISPATCH = outer1_8.DISPATCH;
       }
       if (tmp2 === undefined) {
         tmp2 = null;
@@ -332,30 +339,31 @@ const tmp3 = () => {
         tmp = null;
       }
       if (DISPATCH === undefined) {
-        DISPATCH = constants4.DISPATCH;
+        DISPATCH = outer1_8.DISPATCH;
       }
       if (UNKNOWN_ERROR === undefined) {
-        UNKNOWN_ERROR = constants5.UNKNOWN_ERROR;
+        UNKNOWN_ERROR = outer1_9.UNKNOWN_ERROR;
       }
       if (str === undefined) {
         str = "Unknown Error";
       }
-      let obj = RPCServer(closure_1[9]);
+      let obj = RPCServer(outer1_1[9]);
       obj = { command: DISPATCH, code: UNKNOWN_ERROR, message: str };
-      obj.track(constants2.RPC_SERVER_ERROR_CAUGHT, obj);
+      obj.track(outer1_6.RPC_SERVER_ERROR_CAUGHT, obj);
       obj = { code: UNKNOWN_ERROR, message: str };
-      self.dispatch(arg0, tmp, DISPATCH, constants6.ERROR, obj);
+      self.dispatch(arg0, tmp, DISPATCH, outer1_10.ERROR, obj);
     }
   };
   items[8] = {
     key: "listenIsSubscribed",
     value(arg0) {
-      const RPCServer = this;
-      const isSubscribedListeners = this.isSubscribedListeners;
+      const self = this;
+      let closure_1 = arg0;
+      let isSubscribedListeners = this.isSubscribedListeners;
       isSubscribedListeners.add(arg0);
       return () => {
         const isSubscribedListeners = self.isSubscribedListeners;
-        isSubscribedListeners.delete(arg0);
+        isSubscribedListeners.delete(closure_1);
       };
     }
   };
@@ -369,12 +377,13 @@ const tmp3 = () => {
   items[10] = {
     key: "isSubscribed",
     value(arg0, arg1) {
-      const RPCServer = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       const subscriptions = this.subscriptions;
       return undefined !== subscriptions.find((socket) => {
-        let tmp = socket.socket.application.id === socket;
+        let tmp = socket.socket.application.id === closure_0;
         if (tmp) {
-          tmp = socket.evt === arg1;
+          tmp = socket.evt === closure_1;
         }
         return tmp;
       });
@@ -383,15 +392,16 @@ const tmp3 = () => {
   items[11] = {
     key: "isChildSubscribed",
     value(arg0, arg1) {
-      const RPCServer = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       let tmp = null != arg0;
       if (tmp) {
         const self = this;
         const subscriptions = this.subscriptions;
         tmp = undefined !== subscriptions.find((socket) => {
-          let tmp = socket.socket.application.parentId === socket;
+          let tmp = socket.socket.application.parentId === closure_0;
           if (tmp) {
-            tmp = socket.evt === arg1;
+            tmp = socket.evt === closure_1;
           }
           return tmp;
         });
@@ -402,16 +412,18 @@ const tmp3 = () => {
   items[12] = {
     key: "getSubscription",
     value(arg0, arg1, arg2) {
-      const RPCServer = arg0;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let apply = arg2;
       const subscriptions = this.subscriptions;
       return subscriptions.find((socket) => {
-        let isEqualResult = socket.socket === socket;
+        let isEqualResult = socket.socket === closure_0;
         if (isEqualResult) {
-          isEqualResult = socket.evt === arg1;
+          isEqualResult = socket.evt === closure_1;
         }
         if (isEqualResult) {
-          isEqualResult = socket(arg1[5]).isEqual(socket.args, arg2);
-          const obj = socket(arg1[5]);
+          isEqualResult = RPCServer(outer2_1[5]).isEqual(socket.args, apply);
+          const obj = RPCServer(outer2_1[5]);
         }
         return isEqualResult;
       });
@@ -426,7 +438,7 @@ const tmp3 = () => {
         tmp = null;
       }
       const dispatch = self.dispatch;
-      const bindResult = dispatch.bind(self, socket, null, constants4.DISPATCH, evt);
+      const bindResult = dispatch.bind(self, socket, null, outer1_8.DISPATCH, evt);
       if (null == self.getSubscription(socket, evt, args)) {
         const subscriptions = self.subscriptions;
         let obj = { update: tmp, dispatch: bindResult };
@@ -447,15 +459,17 @@ const tmp3 = () => {
   items[14] = {
     key: "removeSubscription",
     value(arg0, arg1, arg2) {
-      const RPCServer = arg0;
-      RPCServer(arg1[5]).remove(this.subscriptions, (socket) => {
-        let isEqualResult = socket.socket === socket;
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      let apply = arg2;
+      RPCServer(outer1_1[5]).remove(this.subscriptions, (socket) => {
+        let isEqualResult = socket.socket === closure_0;
         if (isEqualResult) {
-          isEqualResult = socket.evt === arg1;
+          isEqualResult = socket.evt === closure_1;
         }
         if (isEqualResult) {
-          isEqualResult = socket(arg1[5]).isEqual(socket.args, arg2);
-          const obj = socket(arg1[5]);
+          isEqualResult = RPCServer(outer2_1[5]).isEqual(socket.args, apply);
+          const obj = RPCServer(outer2_1[5]);
         }
         return isEqualResult;
       });
@@ -465,25 +479,28 @@ const tmp3 = () => {
   items[15] = {
     key: "removeSubscriptions",
     value(arg0) {
-      const RPCServer = arg0;
-      RPCServer(closure_1[5]).remove(this.subscriptions, (socket) => socket.socket === socket);
+      let closure_0 = arg0;
+      RPCServer(outer1_1[5]).remove(this.subscriptions, (socket) => socket.socket === closure_0);
       const result = this.dispatchIsSubscribedUpdate();
     }
   };
   items[16] = {
     key: "dispatchToSubscriptions",
     value(arg0, arg1, arg2, arg3) {
-      const RPCServer = this;
+      const self = this;
+      let closure_1 = arg0;
+      let apply = arg1;
+      let transformUser = arg2;
       let tmp = null != arg3;
       if (tmp) {
         tmp = "" !== arg3;
       }
       if (tmp) {
-        const tmp3 = !arr.includes(arg3);
+        const tmp3 = !outer1_11.includes(arg3);
         let flag = !tmp3;
         if (tmp3) {
-          const arr = arr.unshift(arg3);
-          arr.splice(50);
+          outer1_11.unshift(arg3);
+          outer1_11.splice(50);
           flag = false;
         }
         tmp = flag;
@@ -491,30 +508,30 @@ const tmp3 = () => {
       if (!tmp) {
         const subscriptions = this.subscriptions;
         const item = subscriptions.forEach((evt) => {
-          if (evt.evt === evt) {
-            let tmp2 = "function" === typeof arg1;
+          if (evt.evt === closure_1) {
+            let tmp2 = "function" === typeof callback;
             if (tmp2) {
-              tmp2 = !arg1(evt);
+              tmp2 = !callback(evt);
             }
             if (!tmp2) {
-              let tmp4 = "object" === typeof arg1;
+              let tmp4 = "object" === typeof callback;
               if (tmp4) {
                 let args = evt.args;
                 if (null == args) {
                   args = {};
                 }
-                const obj2 = self(evt[5]);
+                const obj2 = RPCServer(outer2_1[5]);
                 const _Object = Object;
-                tmp4 = !obj2.isEqual(tmp5, self(evt[5]).pick(args, Object.keys(tmp5)));
-                const obj3 = self(evt[5]);
+                tmp4 = !obj2.isEqual(tmp5, RPCServer(outer2_1[5]).pick(args, Object.keys(tmp5)));
+                const obj3 = RPCServer(outer2_1[5]);
               }
               tmp2 = tmp4;
             }
             if (!tmp2) {
-              if ("function" === typeof callback) {
-                const callback = callback(evt);
+              if ("function" === typeof callback2) {
+                callback2 = callback2(evt);
               }
-              self.dispatch(evt.socket, null, constants.DISPATCH, evt.evt, callback);
+              self.dispatch(evt.socket, null, outer2_8.DISPATCH, evt.evt, callback2);
             }
           }
         });
@@ -535,28 +552,31 @@ const tmp3 = () => {
   items[18] = {
     key: "storeWait",
     value(arg0, arg1, arg2) {
-      const RPCServer = this;
-      const tmp = arg1();
+      const self = this;
+      let closure_1 = arg0;
+      let apply = arg1;
+      let transformUser = arg2;
+      let tmp = arg1();
       if (!tmp) {
         if (0 !== arg2) {
-          let closure_4 = RPCServer(arg0[5]).uniqueId();
-          function removeSubscription(arg0, RPC_STORE_WAIT, arg2) {
-            return self.removeSubscription(arg0, "RPC_STORE_WAIT", { uniqueId: closure_4 });
+          let _isNativeReflectConstruct = RPCServer(outer1_1[5]).uniqueId();
+          function removeSubscription(closure_1, RPC_STORE_WAIT, arg2) {
+            return self.removeSubscription(closure_1, "RPC_STORE_WAIT", { uniqueId: _isNativeReflectConstruct });
           }
           const promise = new Promise((arg0, arg1) => {
-            const self = arg0;
-            arg0 = arg1;
+            const _self = arg0;
+            let closure_1 = arg1;
             const timeout = setTimeout(() => {
-              callback2();
+              outer1_5();
               const error = new Error("timeout");
-              arg1(error);
-            }, arg2 * self(arg0[11]).Millis.SECOND);
-            self.addSubscription(arg0, "RPC_STORE_WAIT", { uniqueId: closure_4 }, () => {
-              const tmp = callback();
+              callback2(error);
+            }, transformUser * RPCServer(outer2_1[11]).Millis.SECOND);
+            _self.addSubscription(closure_1, "RPC_STORE_WAIT", { uniqueId: _isNativeReflectConstruct }, () => {
+              const tmp = callback3();
               if (tmp) {
                 const _clearTimeout = clearTimeout;
-                clearTimeout(callback);
-                arg0(tmp);
+                clearTimeout(callback3);
+                callback(tmp);
               }
             });
           });
@@ -570,7 +590,7 @@ const tmp3 = () => {
     }
   };
   return callback(RPCServer, items);
-}();
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/rpc/RPCServer.tsx");
+})();
+let result = require("_defineProperties").fileFinishedImporting("modules/rpc/RPCServer.tsx");
 
 export default tmp3;

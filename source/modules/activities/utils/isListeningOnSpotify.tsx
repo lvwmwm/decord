@@ -1,15 +1,17 @@
-// Module ID: 9074
-// Function ID: 71167
+// Module ID: 9081
+// Function ID: 71208
 // Name: isListeningOnSpotify
-// Dependencies: []
+// Dependencies: [653, 8311, 4814, 2]
 // Exports: default
 
-// Module 9074 (isListeningOnSpotify)
-const _module = require(dependencyMap[0]);
-({ ActivityTypes: closure_2, PlatformTypes: closure_3 } = _module);
-const isSpotifyParty = require(dependencyMap[1]).isSpotifyParty;
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/activities/utils/isListeningOnSpotify.tsx");
+// Module 9081 (isListeningOnSpotify)
+import ME from "ME";
+import { isSpotifyParty } from "spotifyUtmParams";
+
+let closure_2;
+let closure_3;
+({ ActivityTypes: closure_2, PlatformTypes: closure_3 } = ME);
+const result = require("getPlatformUserUrl").fileFinishedImporting("modules/activities/utils/isListeningOnSpotify.tsx");
 
 export default function isListeningOnSpotify(type) {
   let tmp = null != type;
@@ -17,8 +19,8 @@ export default function isListeningOnSpotify(type) {
     tmp = type.type === constants.LISTENING;
   }
   if (tmp) {
-    tmp = type.name === importDefault(dependencyMap[2]).get(constants2.SPOTIFY).name;
-    const obj = importDefault(dependencyMap[2]);
+    tmp = type.name === importDefault(4814).get(constants2.SPOTIFY).name;
+    const obj = importDefault(4814);
   }
   if (tmp) {
     tmp = null != type.party;

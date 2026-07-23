@@ -1,40 +1,48 @@
-// Module ID: 8419
-// Function ID: 67084
-// Dependencies: []
+// Module ID: 8425
+// Function ID: 67121
+// Dependencies: [57, 31, 27, 33, 4130, 689, 4126, 3991, 4542, 4546, 5109, 4554, 5775, 4549, 5781, 5783, 3839, 5785, 5450, 5189, 8426, 8427, 1212, 8428, 3843, 5780, 5786, 2]
 
-// Module 8419
-let closure_3 = importDefault(dependencyMap[0]);
-const importAllResult = importAll(dependencyMap[1]);
-({ View: closure_5, ScrollView: closure_6, StyleSheet: closure_7 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-({ jsx: closure_8, jsxs: closure_9 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_10 = arg1(dependencyMap[4]).createStyles(() => {
+// Module 8425
+import _slicedToArray from "_slicedToArray";
+import importAllResult from "result";
+import get_ActivityIndicator from "set";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
+({ View: closure_5, ScrollView: closure_6, StyleSheet: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+let closure_10 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = {};
-  obj = { color: importDefault(dependencyMap[5]).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+  obj = { color: importDefault(689).colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
   obj.placeholder = obj;
-  obj = { paddingHorizontal: importDefault(dependencyMap[5]).space.PX_12 };
+  obj = { paddingHorizontal: importDefault(689).space.PX_12 };
   obj.iconContainer = obj;
-  obj.iconLeft = { marginLeft: importDefault(dependencyMap[5]).space.PX_12 };
+  obj.iconLeft = { marginLeft: importDefault(689).space.PX_12 };
   obj.scrollViewContent = { paddingVertical: 5 };
   obj.horizontalScrollViewContent = { flexGrow: 1 };
-  const obj1 = { marginLeft: importDefault(dependencyMap[5]).space.PX_12 };
-  obj.inputInner = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_4 };
+  const obj2 = { marginHorizontal: importDefault(689).space.PX_4, alignItems: "center", flexDirection: "row", flexWrap: "wrap", flex: 1 };
+  obj.inputInner = obj2;
   obj.horizontalInputInner = { flexWrap: "nowrap" };
-  const obj3 = { flex: 1, minHeight: importDefault(dependencyMap[5]).space.PX_24, minWidth: importDefault(dependencyMap[5]).space.PX_48, color: importDefault(dependencyMap[5]).colors.TEXT_DEFAULT };
-  const merged = Object.assign(arg1(dependencyMap[6]).TextStyleSheet.text-sm/medium);
+  const obj3 = { flex: 1, minHeight: importDefault(689).space.PX_24, minWidth: importDefault(689).space.PX_48, color: importDefault(689).colors.TEXT_DEFAULT };
+  const merged = Object.assign(require(4126) /* Text */.TextStyleSheet["text-sm/medium"]);
   obj3["paddingVertical"] = 0;
   obj3["marginVertical"] = 2;
   obj.searchInput = obj3;
-  const obj2 = { marginHorizontal: importDefault(dependencyMap[5]).space.PX_4 };
-  obj.horizontalSearchInput = { minWidth: importDefault(dependencyMap[5]).space.PX_64 };
+  const obj1 = { marginLeft: importDefault(689).space.PX_12 };
+  obj.horizontalSearchInput = { minWidth: importDefault(689).space.PX_64 };
   return obj;
 });
-let closure_11 = {};
-let closure_12 = { 0: -721485569, 0: 3375103 };
-let closure_13 = [null, null];
-const obj2 = arg1(dependencyMap[4]);
-let closure_14 = arg1(dependencyMap[4]).createStyles(() => {
+let closure_11 = { x: 0, y: 0.5 };
+let closure_12 = { x: 1, y: 0.5 };
+let closure_13 = ["transparent", "black"];
+let closure_14 = _createForOfIteratorHelperLoose.createStyles(() => {
   let obj = { fill: { flex: 1 } };
   obj = {};
   const merged = Object.assign(closure_7.absoluteFillObject);
@@ -45,16 +53,19 @@ let closure_14 = arg1(dependencyMap[4]).createStyles(() => {
   const merged1 = Object.assign(closure_7.absoluteFillObject);
   obj["backgroundColor"] = "black";
   obj.leadingCover = obj;
-  obj.maskRemainder = { -9223372036854775808: null, 9223372036854775807: null };
+  obj.maskRemainder = { flex: 1, backgroundColor: "black" };
   return obj;
 });
 let closure_15 = { code: "function TagListInputNativeTsx1(){const{withSpring,scrolled,springStandard}=this.__closure;return{opacity:withSpring(scrolled.get()?0:1,springStandard,'animate-always')};}" };
-const obj3 = arg1(dependencyMap[4]);
 const memoResult = importAllResult.memo(function TagListInput(accessibilityHint) {
   let accessibilityLabel;
   let autoClearInputOnTagAdd;
   let autoFocus;
+  let c10;
+  let c17;
+  let c9;
   let defaultValue;
+  let dependencyMap;
   let disabled;
   let focusOnAdd;
   let footer;
@@ -77,8 +88,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   if (returnKeyType === undefined) {
     returnKeyType = "search";
   }
-  const tags = accessibilityHint.tags;
-  const arg1 = tags;
+  let tags = accessibilityHint.tags;
   let flag = accessibilityHint.horizontal;
   if (flag === undefined) {
     flag = false;
@@ -87,46 +97,41 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   if (focusOnAdd === undefined) {
     focusOnAdd = true;
   }
-  const importDefault = focusOnAdd;
-  ({ inActionSheet, onRemove: closure_2, autoClearInputOnTagAdd, onSubmitEditing, autoFocus } = accessibilityHint);
+  ({ inActionSheet, onRemove: dependencyMap, autoClearInputOnTagAdd, onSubmitEditing, autoFocus } = accessibilityHint);
   if (autoClearInputOnTagAdd === undefined) {
     autoClearInputOnTagAdd = true;
   }
-  let callback = autoClearInputOnTagAdd;
   let flag2 = accessibilityHint.leadingFade;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let importAllResult;
+  let inputRef;
   let inputValueRef;
   let inputUpdate;
   let closure_7;
   let focusProps;
-  let closure_9;
-  let callback2;
-  let closure_11;
+  c9 = undefined;
+  let callback;
+  let ref;
   let closure_12;
   let closure_13;
   let closure_14;
-  let closure_15;
+  let c15;
   let ref1;
-  let closure_17;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[13]);
+  c17 = undefined;
+  let tmp = callback();
+  let obj = tags(4549);
   const bound = Math.min(2, obj.useFontScale());
-  const result = arg1(dependencyMap[14]).InputHeights.MD * bound;
-  const tmp4 = function useTagListInputState(ref, onChangeText) {
+  let result = tags(5781).InputHeights.MD * bound;
+  let tmp4 = (function useTagListInputState(ref, onChangeText) {
     let clearProps;
     let clearState;
-    const tags = onChangeText;
+    let closure_0 = onChangeText;
     ref = inputRef.useRef(null);
-    const focusOnAdd = ref;
     const ref1 = inputRef.useRef("");
     const ref2 = inputRef.useRef(false);
-    const autoClearInputOnTagAdd = ref2;
     const tmp4 = autoClearInputOnTagAdd(inputRef.useState(false), 2);
     const first = tmp4[0];
-    const inputRef = first;
     let closure_5 = tmp4[1];
     const items = [onChangeText];
     const callback = inputRef.useCallback((current) => {
@@ -137,8 +142,8 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
       ref2.current = true;
       ref1.current = current;
       callback(current.length > 0);
-      if (null != arg1) {
-        arg1(current);
+      if (null != onChangeText) {
+        onChangeText(current);
       }
       if (flag) {
         current = ref.current;
@@ -148,10 +153,9 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
         }
       }
     }, items);
-    const inputUpdate = callback;
     const imperativeHandle = inputRef.useImperativeHandle(ref, () => ({
       blur() {
-        const current = closure_1.current;
+        const current = outer1_1.current;
         let blurResult;
         if (null != current) {
           blurResult = current.blur();
@@ -159,7 +163,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
         return blurResult;
       },
       focus() {
-        const current = closure_1.current;
+        const current = outer1_1.current;
         let focusResult;
         if (null != current) {
           focusResult = current.focus();
@@ -167,13 +171,13 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
         return focusResult;
       },
       setText(arg0) {
-        return callback(arg0, true);
+        return outer1_6(arg0, true);
       },
       getText() {
-        return ref.current;
+        return outer1_2.current;
       },
       isFocused() {
-        const current = closure_1.current;
+        const current = outer1_1.current;
         let isFocusedResult;
         if (null != current) {
           isFocusedResult = current.isFocused();
@@ -181,7 +185,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
         return null != isFocusedResult && isFocusedResult;
       },
       measure(arg0) {
-        const current = closure_1.current;
+        const current = outer1_1.current;
         let measureResult;
         if (null != current) {
           measureResult = current.measure(arg0);
@@ -189,7 +193,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
         return measureResult;
       },
       measureInWindow(arg0) {
-        const current = closure_1.current;
+        const current = outer1_1.current;
         let measureInWindowResult;
         if (null != current) {
           measureInWindowResult = current.measureInWindow(arg0);
@@ -197,7 +201,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
         return measureInWindowResult;
       },
       measureLayout(arg0, arg1, arg2) {
-        const current = closure_1.current;
+        const current = outer1_1.current;
         let measureLayoutResult;
         if (null != current) {
           measureLayoutResult = current.measureLayout(arg0, arg1, arg2);
@@ -210,50 +214,48 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
       const clearState = {
         hasValue: first,
         clear() {
-          return callback("", true);
+          return outer1_6("", true);
         },
         setTextValue(text) {
-          return callback(text, true);
+          return outer1_6(text, true);
         }
       };
       return { clearProps: { isClearable: true }, clearState };
     }, items1);
-    const obj = {};
+    let obj = {};
     ({ clearProps, clearState } = memo);
-    obj.clearButton = tags(ref1[12]).useInputClearButton(clearProps, clearState);
+    obj.clearButton = tags(outer1_2[12]).useInputClearButton(clearProps, clearState);
     obj.inputRef = ref;
     obj.inputValueRef = ref1;
     obj.inputUpdate = callback;
     obj.inputInitializedRef = ref2;
     return obj;
-  }(accessibilityHint.ref, onChangeText);
-  const inputRef = tmp4.inputRef;
-  importAllResult = inputRef;
+  })(accessibilityHint.ref, onChangeText);
+  inputRef = tmp4.inputRef;
   inputValueRef = tmp4.inputValueRef;
   inputUpdate = tmp4.inputUpdate;
   const clearButton = tmp4.clearButton;
-  closure_7 = importAllResult.useRef({ 400888199: "%FunctionPrototype%", 2091392542: "paddingStart" });
-  let obj1 = arg1(dependencyMap[15]);
+  closure_7 = inputRef.useRef({ start: 0, end: 0 });
+  let obj1 = tags(5783);
   const keyboardBlurring = obj1.useKeyboardBlurring(inputRef);
-  let obj2 = arg1(dependencyMap[16]);
+  let obj2 = tags(3839);
   const focus = obj2.useFocus();
   focusProps = focus.focusProps;
-  ({ onFocus: closure_9, onBlur: closure_10 } = importDefault(dependencyMap[17])({ onFocus, onBlur }));
-  const ref = importAllResult.useRef(null);
-  closure_11 = ref;
-  const tmp9 = callback(importAllResult.useState(null), 2);
+  ({ onFocus: c9, onBlur: c10 } = focusOnAdd(5785)({ onFocus, onBlur }));
+  ref = inputRef.useRef(null);
+  const tmp9 = autoClearInputOnTagAdd(inputRef.useState(null), 2);
   closure_12 = tmp9[0];
   closure_13 = tmp9[1];
-  const tmp10 = callback(importAllResult.useState(false), 2);
+  const tmp10 = autoClearInputOnTagAdd(inputRef.useState(false), 2);
   closure_14 = tmp10[1];
-  const tmp11 = importDefault(dependencyMap[18])(tags);
-  closure_15 = tmp11;
-  ref1 = importAllResult.useRef(tags);
-  const items = [focusOnAdd, inputUpdate, ref1, tags, inputRef, inputValueRef, autoClearInputOnTagAdd];
-  const layoutEffect = importAllResult.useLayoutEffect(() => {
+  const tmp11 = focusOnAdd(5450)(tags);
+  c15 = tmp11;
+  ref1 = inputRef.useRef(tags);
+  let items = [focusOnAdd, inputUpdate, ref1, tags, inputRef, inputValueRef, autoClearInputOnTagAdd];
+  const layoutEffect = inputRef.useLayoutEffect(() => {
     if (ref1.current.length < tags.length) {
       if (focusOnAdd) {
-        const current = inputRef.current;
+        let current = inputRef.current;
         let isFocusedResult;
         if (null != current) {
           isFocusedResult = current.isFocused();
@@ -267,7 +269,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
       }
       const _setTimeout = setTimeout;
       const timerId = setTimeout(() => {
-        const current = ref.current;
+        const current = outer1_11.current;
         let scrollToEndResult;
         if (null != current) {
           const obj = { animated: false };
@@ -285,9 +287,9 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
     }
     ref1.current = tags;
   }, items);
-  const items1 = [tmp11];
-  const layoutEffect1 = importAllResult.useLayoutEffect(() => {
-    if (0 !== tmp11.length) {
+  let items1 = [tmp11];
+  const layoutEffect1 = inputRef.useLayoutEffect(() => {
+    if (0 !== _undefined3.length) {
       const current = ref.current;
       if (null != current) {
         const obj = { animated: false };
@@ -296,47 +298,45 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
     }
   }, items1);
   if (inActionSheet) {
-    let BottomSheetScrollView = arg1(dependencyMap[19]).BottomSheetScrollView;
+    let BottomSheetScrollView = tags(5189).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = inputUpdate;
   }
   if (inActionSheet) {
-    let BottomSheetTextInput = arg1(dependencyMap[20]).BottomSheetTextInput;
+    let BottomSheetTextInput = tags(8426).BottomSheetTextInput;
   } else {
-    BottomSheetTextInput = importDefault(dependencyMap[21]);
+    BottomSheetTextInput = focusOnAdd(8427);
   }
   const result1 = 33 * bound;
-  const tmp7 = importDefault(dependencyMap[17])({ onFocus, onBlur });
-  [tmp23, closure_17] = callback(importAllResult.useState(0), 2);
-  callback = importAllResult.useCallback((nativeEvent) => {
-    _undefined3(nativeEvent.nativeEvent.layout.width);
+  const tmp7 = focusOnAdd(5785)({ onFocus, onBlur });
+  [tmp23, c17] = autoClearInputOnTagAdd(inputRef.useState(0), 2);
+  callback = inputRef.useCallback((nativeEvent) => {
+    _undefined4(nativeEvent.nativeEvent.layout.width);
   }, []);
   if (null == placeholder) {
-    const intl = arg1(dependencyMap[22]).intl;
-    placeholder = intl.string(arg1(dependencyMap[22]).t.5h0QOP);
+    let intl = tags(1212).intl;
+    placeholder = intl.string(tags(1212).t["5h0QOP"]);
   }
   if (null == accessibilityLabel) {
-    const intl2 = arg1(dependencyMap[22]).intl;
-    accessibilityLabel = intl2.string(arg1(dependencyMap[22]).t.5h0QOP);
+    const intl2 = tags(1212).intl;
+    accessibilityLabel = intl2.string(tags(1212).t["5h0QOP"]);
   }
   obj = { horizontal: flag, leadingFade: flag2, onScroll };
-  let obj4 = function useLeadingFade(leadingFade) {
+  let obj4 = (function useLeadingFade(leadingFade) {
     let horizontal;
     let onScroll;
     ({ horizontal, onScroll } = leadingFade);
-    const tags = onScroll;
     horizontal = undefined;
-    let autoClearInputOnTagAdd;
-    let inputRef;
-    const tmp = callback3();
+    let sharedValue;
+    let animatedStyle;
+    let tmp = callback3();
     const focusOnAdd = tmp;
     if (horizontal) {
       horizontal = leadingFade.leadingFade;
     }
-    let obj = tags(horizontal[7]);
-    const sharedValue = obj.useSharedValue(false);
-    autoClearInputOnTagAdd = sharedValue;
-    const items = [horizontal, onScroll, sharedValue];
+    let obj = tags(outer1_2[7]);
+    sharedValue = obj.useSharedValue(false);
+    let items = [horizontal, onScroll, sharedValue];
     const callback = inputRef.useCallback((nativeEvent) => {
       if (horizontal) {
         const result = sharedValue.set(nativeEvent.nativeEvent.contentOffset.x > 1);
@@ -351,16 +351,15 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
       if (sharedValue.get()) {
         num = 0;
       }
-      obj.opacity = onScroll(horizontal[8]).withSpring(num, onScroll(horizontal[9]).springStandard, "animate-always");
+      obj.opacity = tags(outer2_2[8]).withSpring(num, tags(outer2_2[9]).springStandard, "animate-always");
       return obj;
     };
-    obj = { withSpring: tags(horizontal[8]).withSpring, scrolled: sharedValue, springStandard: tags(horizontal[9]).springStandard };
+    obj = { withSpring: tags(outer1_2[8]).withSpring, scrolled: sharedValue, springStandard: tags(outer1_2[9]).springStandard };
     fn.__closure = obj;
     fn.__workletHash = 11561232362008;
-    fn.__initData = tmp11;
-    const animatedStyle = tags(horizontal[7]).useAnimatedStyle(fn);
-    inputRef = animatedStyle;
-    const items1 = [horizontal, tmp, animatedStyle];
+    fn.__initData = c15;
+    animatedStyle = tags(outer1_2[7]).useAnimatedStyle(fn);
+    let items1 = [horizontal, tmp, animatedStyle];
     let tmp6 = horizontal;
     const callback1 = inputRef.useCallback((children) => {
       let tmp = children;
@@ -368,21 +367,21 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
         let obj = { style: tmp.fill, androidRenderingMode: "software" };
         obj = { style: tmp.mask };
         obj = { style: tmp.leadingFade };
-        const obj1 = { start: closure_11, end: closure_12, colors: closure_13, style: absoluteFill.absoluteFill };
-        const items = [callback(tmp(horizontal[11]), obj1), ];
+        const obj1 = { start: ref, end: closure_12, colors: closure_13, style: absoluteFill.absoluteFill };
+        const items = [focusProps(focusOnAdd(outer2_2[11]), obj1), ];
         const obj2 = {};
         const items1 = [tmp.leadingCover, animatedStyle];
         obj2.style = items1;
-        items[1] = callback(tmp(horizontal[7]).View, obj2);
+        items[1] = focusProps(focusOnAdd(outer2_2[7]).View, obj2);
         obj.children = items;
-        const items2 = [callback2(closure_5, obj), ];
+        const items2 = [callback(inputValueRef, obj), ];
         const obj3 = { style: tmp.maskRemainder };
-        items2[1] = callback(closure_5, obj3);
+        items2[1] = focusProps(inputValueRef, obj3);
         obj.children = items2;
-        obj.maskElement = callback2(closure_5, obj);
+        obj.maskElement = callback(inputValueRef, obj);
         obj.children = children;
-        tmp = callback(tmp(horizontal[10]), obj);
-        const tmp5 = tmp(horizontal[10]);
+        tmp = focusProps(focusOnAdd(outer2_2[10]), obj);
+        const tmp5 = focusOnAdd(outer2_2[10]);
       }
       return tmp;
     }, items1);
@@ -407,10 +406,10 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
     obj.scrollerStyle = fill;
     obj.wrap = callback1;
     return obj;
-  }(obj);
+  })(obj);
   obj = { style: items2 };
   obj1 = { maxHeight: 3 * result1 };
-  const items2 = [obj1, obj4.scrollerStyle];
+  items2 = [obj1, obj4.scrollerStyle];
   const items3 = [tmp.scrollViewContent, ];
   let prop;
   if (flag) {
@@ -442,27 +441,27 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   const items5 = [
     tags.map((id) => {
       const tags = id;
-      const focusOnAdd = arg1;
-      return focusProps(tags(closure_2[23]).TagListInputTagComponent, {
+      let closure_1 = arg1;
+      return focusProps(tags(outer1_2[23]).TagListInputTagComponent, {
         tag: id,
         selected: id.id === closure_12,
         onPress(arg0) {
           if ("select" === arg0) {
-            if (closure_12 !== arg0.id) {
-              callback2(tmp6.id);
+            if (outer1_12 !== id.id) {
+              outer1_13(tmp6.id);
             }
-            const current = ref.current;
+            const current = outer1_4.current;
             if (null != current) {
               current.focus();
             }
-            callback3(true);
-            const current2 = ref.current;
+            outer1_14(true);
+            const current2 = outer1_4.current;
             if (null != current2) {
               current2.setSelection(0, 0);
             }
-            closure_7.current = { 400888199: "%FunctionPrototype%", 2091392542: "paddingStart" };
-          } else if (null != callback) {
-            const tmp3 = callback(arg1);
+            outer1_7.current = { start: 0, end: 0 };
+          } else if (null != outer1_2) {
+            const tmp3 = outer1_2(closure_1);
           }
           return tmp3;
         },
@@ -472,7 +471,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
     }),
 
   ];
-  const obj3 = { ref: inputRef, accessibilityHint: accessibilityHint.accessibilityHint, accessibilityRole: "search" };
+  let obj3 = { ref: inputRef, accessibilityHint: accessibilityHint.accessibilityHint, accessibilityRole: "search" };
   if (tmp4.inputInitializedRef.current) {
     defaultValue = inputValueRef.current;
   }
@@ -501,7 +500,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
     }
     if ("Backspace" === nativeEvent.nativeEvent.key) {
       if (null != closure_12) {
-        const findIndexResult = tags.findIndex((id) => id.id === closure_12);
+        const findIndexResult = tags.findIndex((id) => id.id === outer1_12);
         if (findIndexResult > -1) {
           if (null != callback) {
             callback(findIndexResult);
@@ -513,12 +512,12 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
     if ("Backspace" === nativeEvent.nativeEvent.key) {
       if (tmp3) {
         if (0 !== tags.length) {
-          callback2(tags[closure_0.length - 1].id);
+          callback2(tags[tags.length - 1].id);
           callback3(true);
-          const AccessibilityAnnouncer = tags(callback[24]).AccessibilityAnnouncer;
-          const intl = tags(callback[22]).intl;
-          const obj = { text: tags[closure_0.length - 1].text };
-          AccessibilityAnnouncer.announce(intl.formatToPlainString(tags(callback[22]).t.QymItZ, obj));
+          const AccessibilityAnnouncer = tags(outer1_2[24]).AccessibilityAnnouncer;
+          const intl = tags(outer1_2[22]).intl;
+          let obj = { text: tags[tags.length - 1].text };
+          AccessibilityAnnouncer.announce(intl.formatToPlainString(tags(outer1_2[22]).t.QymItZ, obj));
         }
       }
     }
@@ -535,7 +534,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
       if (tmp8) {
         const _setTimeout = setTimeout;
         const timerId = setTimeout(() => {
-          const current = ref.current;
+          const current = outer1_11.current;
           let scrollToEndResult;
           if (null != current) {
             const obj = { animated: false };
@@ -564,7 +563,7 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   };
   obj3.autoCapitalize = "none";
   obj3.autoCorrect = false;
-  obj3.aria-label = accessibilityLabel;
+  obj3["aria-label"] = accessibilityLabel;
   let tmp37;
   if (0 === tags.length) {
     if (tmp25) {
@@ -586,18 +585,18 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   };
   items5[1] = focusProps(BottomSheetTextInput, obj3);
   obj2.children = items5;
-  obj.children = closure_9(inputValueRef, obj2);
+  obj.children = c9(inputValueRef, obj2);
   const obj5 = { style: items7 };
-  const items7 = [{ minHeight: result, overflow: "hidden" }, style];
-  const tmp22 = callback(importAllResult.useState(0), 2);
+  items7 = [{ minHeight: result, overflow: "hidden" }, style];
+  const tmp22 = autoClearInputOnTagAdd(inputRef.useState(0), 2);
   const tmp30 = focusProps;
-  const tmp33 = closure_9;
+  const tmp33 = c9;
   const tmp34 = inputValueRef;
   const tmp35 = focusProps;
   const obj6 = { size: "sm", isDisabled: disabled, isFocused: focus.isFocused };
   if (null == icon) {
-    const obj7 = { style: tmp.iconLeft };
-    icon = focusProps(arg1(dependencyMap[26]).MagnifyingGlassIcon, obj7);
+    const obj7 = { style: tmp.iconLeft, size: "xs", color: "interactive-text-default" };
+    icon = focusProps(tags(5786).MagnifyingGlassIcon, obj7);
   }
   const items8 = [icon, obj4.wrap(focusProps(BottomSheetScrollView, obj)), ];
   if (null == footer) {
@@ -610,9 +609,9 @@ const memoResult = importAllResult.memo(function TagListInput(accessibilityHint)
   }
   items8[2] = footer;
   obj6.children = items8;
-  obj5.children = closure_9(arg1(dependencyMap[25]).InputFieldContainer, obj6);
+  obj5.children = c9(tags(5780).InputFieldContainer, obj6);
   return focusProps(inputValueRef, obj5);
 });
-const result = arg1(dependencyMap[27]).fileFinishedImporting("design/components/TagListInput/native/TagListInput.native.tsx");
+let result = require("get ActivityIndicator").fileFinishedImporting("design/components/TagListInput/native/TagListInput.native.tsx");
 
 export default memoResult;

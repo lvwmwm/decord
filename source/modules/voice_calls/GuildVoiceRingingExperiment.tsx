@@ -1,13 +1,16 @@
-// Module ID: 8914
-// Function ID: 70334
-// Name: experiment
-// Dependencies: []
+// Module ID: 8921
+// Function ID: 70375
+// Name: items
+// Dependencies: [4045, 4042, 2]
 
-// Module 8914 (experiment)
-const _module = require(dependencyMap[1]);
-const items = [{ config: { enabled: true } }];
-const experiment = _module.createExperiment({ defaultConfig: { enabled: false }, commonTriggerPoint: require(dependencyMap[0]).CommonTriggerPoints.VOICE_CALL, treatments: items });
-const _module1 = require(dependencyMap[2]);
-const result = _module1.fileFinishedImporting("modules/voice_calls/GuildVoiceRingingExperiment.tsx");
+// Module 8921 (items)
+import createExperiment from "createExperiment";
+
+let obj = { kind: "guild", id: "2024-12_guild_voice_channel_ringing", label: "Guild Voice Ringing", defaultConfig: { enabled: false }, commonTriggerPoint: require("ExperimentBuckets").CommonTriggerPoints.VOICE_CALL };
+obj = { id: 1, label: "Allow users to ring each other in Guild Voice Channels", config: { enabled: true } };
+const items = [obj];
+obj.treatments = items;
+const experiment = createExperiment.createExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/voice_calls/GuildVoiceRingingExperiment.tsx");
 
 export default experiment;

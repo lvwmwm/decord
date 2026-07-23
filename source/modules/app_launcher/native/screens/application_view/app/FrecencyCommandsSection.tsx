@@ -1,36 +1,42 @@
-// Module ID: 11260
-// Function ID: 87592
+// Module ID: 11270
+// Function ID: 87642
 // Name: FrecencyCommandsSection
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 11249, 11271, 4324, 8182, 4126, 1212, 6755, 2]
 // Exports: default
 
-// Module 11260 (FrecencyCommandsSection)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { marginBottom: arg1(dependencyMap[5]).BETWEEN_SECTIONS_MARGIN };
-obj.container = obj;
-obj.header = { -110959999: "<string:17524545>", -1227664409: "<string:3947954688>", -1649041997: "<string:5534276>", 1860687715: "<string:1048576>" };
-let closure_8 = obj.createStyles(obj);
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/FrecencyCommandsSection.tsx");
+// Module 11270 (FrecencyCommandsSection)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { AnalyticEvents } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { marginBottom: require("PlaceholderCommandRow").BETWEEN_SECTIONS_MARGIN };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.header = { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("modules/app_launcher/native/screens/application_view/app/FrecencyCommandsSection.tsx");
 
 export default function FrecencyCommandsSection(commands) {
+  let View;
+  let result;
+  let dependencyMap;
+  let importDefault;
   let sectionName;
   const context = commands.context;
-  const arg1 = context;
-  ({ onPressCommand: closure_1, section: closure_2, onExecuteCommand: closure_3, installOnDemand: closure_4, sectionName } = commands);
-  const AnalyticEvents = sectionName;
-  const tmp = callback2();
-  const arr = importDefault(dependencyMap[6])({ context, commands: commands.allCommands, limit: 5 });
+  ({ onPressCommand: importDefault, section: dependencyMap, onExecuteCommand: result, installOnDemand: View, sectionName } = commands);
+  const tmp = _createForOfIteratorHelperLoose();
+  const arr = importDefault(11271)({ context, commands: commands.allCommands, limit: 5 });
   const items = [arr.length, sectionName];
   const effect = React.useEffect(() => {
     if (0 !== arr.length) {
-      let obj = context(closure_2[7]);
-      obj = { num: arr.length, section_name: sectionName, location: context(closure_2[8]).AppLauncherLocations.APP_DETAIL };
+      let obj = context(outer1_2[7]);
+      obj = { num: arr.length, section_name: sectionName, location: context(outer1_2[8]).AppLauncherLocations.APP_DETAIL };
       obj.trackWithMetadata(sectionName.APP_LAUNCHER_FRECENTS_SEEN, obj);
     }
   }, items);
@@ -38,15 +44,15 @@ export default function FrecencyCommandsSection(commands) {
   if (0 !== arr.length) {
     let obj = { style: tmp.container };
     obj = { style: tmp.header };
-    obj = {};
-    const intl = arg1(dependencyMap[10]).intl;
-    obj.children = intl.string(arg1(dependencyMap[10]).t.acSE0h);
-    obj.children = arr(arg1(dependencyMap[9]).Heading, obj);
+    obj = { variant: "text-md/medium", color: "text-default" };
+    const intl = context(1212).intl;
+    obj.children = intl.string(context(1212).t.acSE0h);
+    obj.children = arr(context(4126).Heading, obj);
     const items1 = [
       arr(View, obj),
       arr.map((command) => {
-          const obj = { command, onPressCommand: closure_1, isFirstRow: 0 === arg1, isLastRow: arg1 === arr.length - 1, context, onExecuteCommand: closure_3, installOnDemand: closure_4, section: closure_2, location: context(closure_2[11]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, sectionName };
-          return arr(context(closure_2[5]).CommandRow, obj, command.id);
+          const obj = { command, onPressCommand: closure_1, isFirstRow: 0 === arg1, isLastRow: arg1 === arr.length - 1, context, onExecuteCommand: result, installOnDemand: closure_4, section: closure_2, location: context(outer1_2[11]).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, sectionName };
+          return arr(context(outer1_2[5]).CommandRow, obj, command.id);
         })
     ];
     obj.children = items1;

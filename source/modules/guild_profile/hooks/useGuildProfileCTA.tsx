@@ -1,46 +1,45 @@
-// Module ID: 10932
-// Function ID: 85032
+// Module ID: 10942
+// Function ID: 85081
 // Name: useGuildProfileCTA
-// Dependencies: []
+// Dependencies: [31, 1194, 1917, 1838, 4115, 1849, 653, 566, 1360, 7476, 10943, 7845, 5131, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 10932 (useGuildProfileCTA)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ InviteStates: closure_9, GuildFeatures: closure_10 } = arg1(dependencyMap[6]));
+// Module 10942 (useGuildProfileCTA)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_10;
+let closure_9;
+const require = arg1;
+({ InviteStates: closure_9, GuildFeatures: closure_10 } = ME);
 let obj = { IS_MEMBER: 0, [0]: "IS_MEMBER", ADOPT_TAG: 1, [1]: "ADOPT_TAG", HAS_APPLICATION: 2, [2]: "HAS_APPLICATION", APPLY_TO_JOIN: 3, [3]: "APPLY_TO_JOIN", LURK_DISCOVERABLE: 4, [4]: "LURK_DISCOVERABLE", JOIN_VIA_INVITE: 5, [5]: "JOIN_VIA_INVITE", ACCEPT_ROLES: 6, [6]: "ACCEPT_ROLES" };
 obj = { INVITE: "INVITE" };
-const tmp2 = arg1(dependencyMap[6]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileCTA.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileCTA.tsx");
 
 export default function useGuildProfileCTA(id) {
-  const arg1 = id;
+  const _require = id;
   const importDefault = arg1;
   const dependencyMap = arg2;
   id = id.id;
-  const React = id;
   const features = id.features;
-  let closure_4 = features;
-  let obj = arg1(dependencyMap[7]);
-  const items = [closure_4];
+  let obj = _require(566);
+  const items = [features];
   const stateFromStores = obj.useStateFromStores(items, () => features.getId());
-  let closure_5 = stateFromStores;
-  const items1 = [closure_6];
-  const stateFromStores1 = arg1(dependencyMap[7]).useStateFromStores(items1, () => stateFromStores1.getGuild(id));
-  closure_6 = stateFromStores1;
-  const obj2 = arg1(dependencyMap[7]);
-  const items2 = [closure_8];
+  const items1 = [stateFromStores1];
+  stateFromStores1 = _require(566).useStateFromStores(items1, () => stateFromStores1.getGuild(id));
+  let obj2 = _require(566);
+  const items2 = [stateFromStores3];
   const items3 = [stateFromStores];
-  const stateFromStores2 = arg1(dependencyMap[7]).useStateFromStores(items2, () => stateFromStores3.getUser(stateFromStores), items3);
-  let closure_7 = stateFromStores2;
-  const obj3 = arg1(dependencyMap[7]);
-  const items4 = [closure_5];
+  const stateFromStores2 = _require(566).useStateFromStores(items2, () => stateFromStores3.getUser(stateFromStores), items3);
+  const obj3 = _require(566);
+  const items4 = [stateFromStores];
   const items5 = [id, stateFromStores];
-  const stateFromStores3 = arg1(dependencyMap[7]).useStateFromStores(items4, () => {
+  stateFromStores3 = _require(566).useStateFromStores(items4, () => {
     let member = null;
     if (null != id) {
       member = stateFromStores.getMember(id, stateFromStores);
@@ -51,13 +50,12 @@ export default function useGuildProfileCTA(id) {
     }
     return null != joinedAt;
   }, items5);
-  closure_8 = stateFromStores3;
-  const obj4 = arg1(dependencyMap[7]);
-  const items6 = [closure_7];
+  const obj4 = _require(566);
+  const items6 = [stateFromStores2];
   const items7 = [id, arg2];
-  const stateFromStoresObject = arg1(dependencyMap[7]).useStateFromStoresObject(items6, () => {
-    if (null != arg2) {
-      let inviteKeyForGuildId = arg2;
+  const stateFromStoresObject = _require(566).useStateFromStoresObject(items6, () => {
+    if (null != dependencyMap) {
+      let inviteKeyForGuildId = dependencyMap;
     } else {
       inviteKeyForGuildId = stateFromStores2.getInviteKeyForGuildId(id);
     }
@@ -74,20 +72,19 @@ export default function useGuildProfileCTA(id) {
           if (null != flags) {
             num2 = flags;
           }
-          obj.isBypassInvite = arg0(arg2[8]).hasFlag(num2, arg0(arg2[9]).GuildInviteFlags.IS_APPLICATION_BYPASS);
+          obj.isBypassInvite = id(1360).hasFlag(num2, id(7476).GuildInviteFlags.IS_APPLICATION_BYPASS);
           obj.inviteRoles = invite.roles;
-          const obj2 = arg0(arg2[8]);
+          const obj2 = id(1360);
         }
         return obj;
       }
     }
-    obj = { "Bool(false)": null, "Bool(false)": null, "Bool(false)": null };
+    obj = { validInviteKey: null, isBypassInvite: false, inviteRoles: null };
   }, items7);
   const validInviteKey = stateFromStoresObject.validInviteKey;
   const isBypassInvite = stateFromStoresObject.isBypassInvite;
   const inviteRoles = stateFromStoresObject.inviteRoles;
-  obj = inviteRoles;
-  const tmp6 = importDefault(dependencyMap[10])();
+  const tmp6 = importDefault(10943)();
   obj = tmp6;
   const items8 = [stateFromStores3, tmp6, id, features, validInviteKey, , , , , , , ];
   ({ visibility: arr9[5], tag: arr9[6] } = id);
@@ -98,9 +95,9 @@ export default function useGuildProfileCTA(id) {
   items8[11] = stateFromStores2;
   obj = {
     guildId: id,
-    ctaType: React.useMemo((self) => {
+    ctaType: id.useMemo(() => {
       if (stateFromStores3) {
-        if (arg1 === tmp6.INVITE) {
+        if (closure_1 === tmp6.INVITE) {
           if (null != inviteRoles) {
             if (inviteRoles.length > 0) {
               if (null != stateFromStores2) {
@@ -115,7 +112,6 @@ export default function useGuildProfileCTA(id) {
                 }
                 const prototype = _Set.prototype;
                 _Set = new _Set(roles);
-                self = _Set;
                 if (inviteRoles.some((id) => !_Set.has(id.id))) {
                   return inviteRoles.ACCEPT_ROLES;
                 }
@@ -139,8 +135,8 @@ export default function useGuildProfileCTA(id) {
           }
           tmp42 = true === identityEnabled;
         }
-        if (arg1 !== tmp6.INVITE) {
-          if (null != self.tag) {
+        if (closure_1 !== tmp6.INVITE) {
+          if (null != _Set.tag) {
             if (!tmp42) {
               if (null != stateFromStores1) {
                 if (obj.guildSupportsTags(stateFromStores1)) {
@@ -196,7 +192,7 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
   let inviteKeyForGuildId = code;
   ({ id, features } = guildProfileFromInvite);
   id = id.getId();
-  const user = user.getUser(id);
+  user = user.getUser(id);
   let member = null;
   if (null != id) {
     member = store.getMember(id, id);
@@ -221,18 +217,18 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
       tmp11 = null;
       flag = false;
       if (invite.state !== constants.EXPIRED) {
-        const obj = code(dependencyMap[8]);
+        const obj = _Set(1360);
         const flags = invite.flags;
         let num2 = 0;
         if (null != flags) {
           num2 = flags;
         }
-        flag = obj.hasFlag(num2, code(dependencyMap[9]).GuildInviteFlags.IS_APPLICATION_BYPASS);
+        flag = obj.hasFlag(num2, _Set(7476).GuildInviteFlags.IS_APPLICATION_BYPASS);
         tmp11 = inviteKeyForGuildId;
       }
     }
   }
-  const pendingFolderGuildIds = code(dependencyMap[10]).getPendingFolderGuildIds();
+  const pendingFolderGuildIds = _Set(10943).getPendingFolderGuildIds();
   if (tmp7) {
     let roles;
     if (null != invite) {
@@ -242,7 +238,7 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
       if (invite.roles.length > 0) {
         if (null != user) {
           const member1 = store.getMember(id, user.id);
-          let _Set = Set;
+          _Set = Set;
           let roles1;
           if (null != member1) {
             roles1 = member1.roles;
@@ -252,7 +248,6 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
           }
           const prototype = _Set.prototype;
           _Set = new _Set(roles1);
-          code = _Set;
           roles = invite.roles;
           if (roles.some((id) => !_Set.has(id.id))) {
             return obj.ACCEPT_ROLES;
@@ -292,6 +287,6 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
     }
     return APPLY_TO_JOIN;
   }
-  const obj2 = code(dependencyMap[10]);
-  const tmp7 = null != joinedAt;
+  const obj2 = _Set(10943);
+  tmp7 = null != joinedAt;
 };

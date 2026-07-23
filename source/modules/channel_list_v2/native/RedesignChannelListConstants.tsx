@@ -1,21 +1,21 @@
-// Module ID: 10248
-// Function ID: 79232
+// Module ID: 10260
+// Function ID: 79300
 // Name: hairlineWidth
-// Dependencies: []
+// Dependencies: [27, 478, 9889, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 10248 (hairlineWidth)
-const _module = require(dependencyMap[1]);
+// Module 10260 (hairlineWidth)
+import isWindows from "isWindows";
+
 let num = 20;
-if (_module.isIOS()) {
+if (isWindows.isIOS()) {
   num = 22;
 }
-let closure_3 = "text-sm/semibold";
-let closure_4 = "text-sm/semibold";
-const hairlineWidth = require(dependencyMap[0]).StyleSheet.hairlineWidth;
-const frozen = Object.freeze({ position: 404, top: -15, right: 0 });
-const _module1 = require(dependencyMap[3]);
-const result = _module1.fileFinishedImporting("modules/channel_list_v2/native/RedesignChannelListConstants.tsx");
+let c3 = "text-sm/semibold";
+let c4 = "text-sm/semibold";
+const hairlineWidth = require("get ActivityIndicator").StyleSheet.hairlineWidth;
+const frozen = Object.freeze({ waitForInteraction: false, viewAreaCoveragePercentThreshold: 100, minimumViewTime: 25 });
+const result = require("scaleLineHeight").fileFinishedImporting("modules/channel_list_v2/native/RedesignChannelListConstants.tsx");
 
 export const CHANNEL_SUBTITLE_TEXT_VARIANT = "text-xs/medium";
 export const CHANNEL_PADDING_VERTICAL = 8;
@@ -44,16 +44,16 @@ export const CATEGORY_MARGIN_TOP = 12;
 export const CATEGORY_MARGIN_BOTTOM = 4;
 export const CATEGORY_VERTICAL_PADDING = 4;
 export const getScaledChannelSubtitleHeight = function getScaledChannelSubtitleHeight(fontScale) {
-  return require(dependencyMap[2]).scaleTextLineHeight("text-xs/medium", fontScale);
+  return require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale);
 };
 export const getScaledCategoryRowHeight = function getScaledCategoryRowHeight(fontScale) {
-  return require(dependencyMap[2]).scaleTextLineHeight(closure_4, fontScale) + 8 + 4;
+  return require(9889) /* scaleLineHeight */.scaleTextLineHeight(c4, fontScale) + 8 + 4;
 };
 export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0) {
   const sum = 8 + hairlineWidth;
-  return 2 * sum + require(dependencyMap[2]).scaleLineHeight(num, arg0);
+  return 2 * sum + require(9889) /* scaleLineHeight */.scaleLineHeight(num, arg0);
 };
 export const getScaledSearchBarHeight = function getScaledSearchBarHeight(fontScale) {
-  return 24 + require(dependencyMap[2]).scaleTextLineHeight(closure_3, fontScale);
+  return 24 + require(9889) /* scaleLineHeight */.scaleTextLineHeight(c3, fontScale);
 };
 export const VIEWABILITY_CONFIG = frozen;

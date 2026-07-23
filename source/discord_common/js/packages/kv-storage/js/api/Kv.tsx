@@ -1,23 +1,24 @@
 // Module ID: 1896
-// Function ID: 21263
+// Function ID: 21264
 // Name: Kv
-// Dependencies: []
+// Dependencies: [6, 7, 1892, 2]
 
 // Module 1896 (Kv)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const tmp2 = () => {
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+
+const require = arg1;
+const tmp2 = (() => {
   class Kv {
     constructor() {
-      tmp = closure_2(this, Kv);
+      tmp = outer1_2(this, Kv);
       return;
     }
   }
-  const arg1 = Kv;
   let obj = {
     key: "databases",
     value() {
-      const Host = Kv(closure_1[2]).Host;
+      const Host = Kv(outer1_1[2]).Host;
       return Host.list();
     }
   };
@@ -25,13 +26,13 @@ const tmp2 = () => {
   obj = {
     key: "optimize",
     value(arg0) {
-      const Host = Kv(closure_1[2]).Host;
+      const Host = Kv(outer1_1[2]).Host;
       return Host.optimize(arg0);
     }
   };
   items[1] = obj;
   return callback(Kv, null, items);
-}();
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Kv.tsx");
+})();
+const result = require("Host").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Kv.tsx");
 
 export const Kv = tmp2;

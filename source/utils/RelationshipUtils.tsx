@@ -1,31 +1,31 @@
-// Module ID: 16046
-// Function ID: 123191
+// Module ID: 16163
+// Function ID: 125364
 // Name: showNotification
-// Dependencies: []
+// Dependencies: [653, 14349, 1392, 1212, 16164, 4140, 2]
 // Exports: showAcceptedNotification, showPendingNotification
 
-// Module 16046 (showNotification)
+// Module 16163 (showNotification)
+import { FriendsSections } from "ME";
+
 function showNotification(id, arg1, onClick) {
-  let obj = importDefault(dependencyMap[1]);
-  obj = { tag: id.id, onClick };
-  obj.showNotification(importDefault(dependencyMap[2]).getUserAvatarURL(id), id.username, arg1, {}, obj);
+  let obj = importDefault(14349);
+  obj = { omitViewTracking: true, omitClickTracking: true, tag: id.id, onClick, isUserAvatar: true };
+  obj.showNotification(importDefault(1392).getUserAvatarURL(id), id.username, arg1, {}, obj);
 }
-const FriendsSections = require(dependencyMap[0]).FriendsSections;
-const _module = require(dependencyMap[6]);
-const result = _module.fileFinishedImporting("utils/RelationshipUtils.tsx");
+const result = require("getAvatarURL").fileFinishedImporting("utils/RelationshipUtils.tsx");
 
 export const showPendingNotification = function showPendingNotification(user) {
-  const intl = require(dependencyMap[3]).intl;
-  showNotification(user, intl.string(require(dependencyMap[3]).t.t3+Af3), () => {
-    callback(closure_2[4]).transitionToSection(constants.PENDING, { explicit: true });
+  const intl = require(1212) /* getSystemLocale */.intl;
+  showNotification(user, intl.string(require(1212) /* getSystemLocale */.t["t3+Af3"]), () => {
+    outer1_1(outer1_2[4]).transitionToSection(outer1_3.PENDING, { explicit: true });
   });
 };
 export const showAcceptedNotification = function showAcceptedNotification(user) {
-  const require = user;
-  const intl = require(dependencyMap[3]).intl;
-  showNotification(user, intl.string(require(dependencyMap[3]).t.MYr3Ka), () => {
-    let obj = callback(closure_2[5]);
-    obj = { recipientIds: arg0.id };
+  const _require = user;
+  const intl = _require(1212).intl;
+  showNotification(user, intl.string(_require(1212).t.MYr3Ka), () => {
+    let obj = outer1_1(outer1_2[5]);
+    obj = { recipientIds: user.id };
     obj.openPrivateChannel(obj);
   });
 };

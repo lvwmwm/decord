@@ -1,97 +1,97 @@
-// Module ID: 15463
-// Function ID: 117941
+// Module ID: 15580
+// Function ID: 120115
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: []
+// Dependencies: [31, 27, 11476, 33, 4130, 689, 5464, 3969, 8492, 5492, 3830, 4098, 11635, 1934, 8267, 5737, 4337, 4660, 1212, 1273, 4126, 15563, 5515, 15581, 2]
 // Exports: default
 
-// Module 15463 (RestrictedMessagePreviewHeader)
-let closure_3 = importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_5 = arg1(dependencyMap[2]).MOBILE_MESSAGE_REQUESTS_MODAL_KEY;
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { alignItems: "flex-start", gap: importDefault(dependencyMap[5]).space.PX_8, paddingVertical: importDefault(dependencyMap[5]).space.PX_12 };
-obj.container = obj;
-const tmp2 = arg1(dependencyMap[3]);
-obj.avatar = { marginBottom: importDefault(dependencyMap[5]).space.PX_4 };
-let closure_8 = obj.createStyles(obj);
-const obj1 = { marginBottom: importDefault(dependencyMap[5]).space.PX_4 };
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewHeader.tsx");
+// Module 15580 (RestrictedMessagePreviewHeader)
+import result from "result";
+import { View } from "get ActivityIndicator";
+import { MOBILE_MESSAGE_REQUESTS_MODAL_KEY as closure_5 } from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_6;
+let closure_7;
+const require = arg1;
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { alignItems: "flex-start", gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.avatar = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
+let result = require("MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL").fileFinishedImporting("modules/message_request/native/RestrictedMessagePreviewHeader.tsx");
 
 export default function RestrictedMessagePreviewHeader(channel) {
   channel = channel.channel;
-  const arg1 = channel;
   const user = channel.user;
-  const importDefault = user;
-  const tmp = callback2();
-  const analyticsLocations = importDefault(dependencyMap[6])().analyticsLocations;
-  const dependencyMap = analyticsLocations;
-  let obj = importDefault(dependencyMap[7]);
+  const tmp = _createForOfIteratorHelperLoose();
+  analyticsLocations = user(analyticsLocations[6])().analyticsLocations;
+  let obj = user(analyticsLocations[7]);
   const name = obj.getName(user);
-  let obj1 = importDefault(dependencyMap[7]);
-  const userTag = obj1.getUserTag(user, { y: true, getEventLocationIconSource: true });
-  const React = userTag;
+  let obj1 = user(analyticsLocations[7]);
+  const userTag = obj1.getUserTag(user, { decoration: "never", identifiable: "always" });
   const items = [user.id, channel.id, analyticsLocations];
-  const callback = React.useCallback(() => {
+  const callback = userTag.useCallback(() => {
     user(analyticsLocations[8])({ userId: user.id, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations });
   }, items);
   const items1 = [userTag];
   const items2 = [user];
-  const callback1 = React.useCallback(() => {
+  const callback1 = userTag.useCallback(() => {
     channel(analyticsLocations[9]).copy(userTag);
     const obj = channel(analyticsLocations[9]);
     const result = channel(analyticsLocations[10]).presentUsernameCopied();
   }, items1);
   obj = { style: tmp.container };
-  const callback2 = React.useCallback(() => {
+  const callback2 = userTag.useCallback(() => {
     let obj = user(analyticsLocations[11]);
     obj = {
       user,
       onPressMutualGuild(arg0) {
-        const result = callback(closure_2[14]).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
-        const obj = callback(closure_2[14]);
-        callback(closure_2[15]).transitionToGuild(arg0);
-        const obj2 = callback(closure_2[15]);
-        callback2(closure_2[11]).hideActionSheet();
-        const obj3 = callback2(closure_2[11]);
-        callback2(closure_2[16]).popWithKey(closure_5);
+        const result = channel(analyticsLocations[14]).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
+        const obj = channel(analyticsLocations[14]);
+        channel(analyticsLocations[15]).transitionToGuild(arg0);
+        const obj2 = channel(analyticsLocations[15]);
+        user(analyticsLocations[11]).hideActionSheet();
+        const obj3 = user(analyticsLocations[11]);
+        user(analyticsLocations[16]).popWithKey(outer2_5);
       }
     };
     obj.openLazy(channel(analyticsLocations[13])(analyticsLocations[12], analyticsLocations.paths), "MutualGuildsActionSheet", obj);
   }, items2);
   obj = { accessibilityRole: "button" };
-  const intl = arg1(dependencyMap[18]).intl;
-  obj.accessibilityLabel = intl.string(arg1(dependencyMap[18]).t.iXAna6);
+  const intl = channel(analyticsLocations[18]).intl;
+  obj.accessibilityLabel = intl.string(channel(analyticsLocations[18]).t.iXAna6);
   obj.onPress = callback;
-  obj1 = { style: tmp.avatar, user, guildId: channel.guild_id, size: arg1(dependencyMap[19]).AvatarSizes.XXLARGE, avatarDecoration: user.avatarDecoration };
-  obj.children = callback(arg1(dependencyMap[19]).Avatar, obj1);
-  const items3 = [callback(arg1(dependencyMap[17]).PressableOpacity, obj), , , , , ];
-  const obj2 = { accessibilityRole: "button" };
-  const intl2 = arg1(dependencyMap[18]).intl;
-  obj2.accessibilityLabel = intl2.string(arg1(dependencyMap[18]).t.iXAna6);
+  obj1 = { style: tmp.avatar, user, guildId: channel.guild_id, size: channel(analyticsLocations[19]).AvatarSizes.XXLARGE, avatarDecoration: user.avatarDecoration };
+  obj.children = callback(channel(analyticsLocations[19]).Avatar, obj1);
+  const items3 = [callback(channel(analyticsLocations[17]).PressableOpacity, obj), , , , , ];
+  let obj2 = { accessibilityRole: "button" };
+  const intl2 = channel(analyticsLocations[18]).intl;
+  obj2.accessibilityLabel = intl2.string(channel(analyticsLocations[18]).t.iXAna6);
   obj2.onPress = callback;
-  const obj3 = { cachedAt: "Array", edpbxy: "isArray", children: name };
-  obj2.children = callback(arg1(dependencyMap[20]).Text, obj3);
-  items3[1] = callback(arg1(dependencyMap[17]).PressableOpacity, obj2);
+  let obj3 = { variant: "heading-xxl/extrabold", color: "mobile-text-heading-primary", children: name };
+  obj2.children = callback(channel(analyticsLocations[20]).Text, obj3);
+  items3[1] = callback(channel(analyticsLocations[17]).PressableOpacity, obj2);
   let tmp9 = !user.isProvisional;
   if (tmp9) {
     const obj4 = { accessibilityRole: "button" };
-    const intl3 = arg1(dependencyMap[18]).intl;
-    obj4.accessibilityHint = intl3.string(arg1(dependencyMap[18]).t.y5MwJy);
+    const intl3 = channel(analyticsLocations[18]).intl;
+    obj4.accessibilityHint = intl3.string(channel(analyticsLocations[18]).t.y5MwJy);
     obj4.onPress = callback1;
-    const obj5 = { cachedAt: null, edpbxy: null, children: userTag };
-    obj4.children = callback(arg1(dependencyMap[20]).Text, obj5);
-    tmp9 = callback(arg1(dependencyMap[17]).PressableOpacity, obj4);
+    const obj5 = { variant: "heading-lg/medium", color: "text-default", children: userTag };
+    obj4.children = callback(channel(analyticsLocations[20]).Text, obj5);
+    tmp9 = callback(channel(analyticsLocations[17]).PressableOpacity, obj4);
   }
   items3[2] = tmp9;
-  const obj6 = {};
-  const intl4 = arg1(dependencyMap[18]).intl;
-  obj6.children = intl4.formatToPlainString(arg1(dependencyMap[18]).t.Qvg+6+, { username: name });
-  items3[3] = callback(arg1(dependencyMap[20]).Text, obj6);
-  const obj7 = { userId: user.id, onPress: callback2, iconSize: arg1(dependencyMap[22]).GuildIconSizes.XSMALL, textVariant: "text-md/medium" };
-  items3[4] = callback(importDefault(dependencyMap[21]), obj7);
-  items3[5] = callback(importDefault(dependencyMap[23]), { channel, user });
+  const obj6 = { variant: "text-md/medium", color: "text-default" };
+  const intl4 = channel(analyticsLocations[18]).intl;
+  obj6.children = intl4.formatToPlainString(channel(analyticsLocations[18]).t["Qvg+6+"], { username: name });
+  items3[3] = callback(channel(analyticsLocations[20]).Text, obj6);
+  const obj7 = { userId: user.id, onPress: callback2, iconSize: channel(analyticsLocations[22]).GuildIconSizes.XSMALL, textVariant: "text-md/medium" };
+  items3[4] = callback(user(analyticsLocations[21]), obj7);
+  items3[5] = callback(user(analyticsLocations[23]), { channel, user });
   obj.children = items3;
   return closure_7(View, obj);
 };

@@ -1,32 +1,32 @@
-// Module ID: 6787
-// Function ID: 53618
+// Module ID: 6792
+// Function ID: 53650
 // Name: CollectiblesCategoriesRecord
-// Dependencies: []
+// Dependencies: [6, 7, 6793, 6775, 6796, 2]
 
-// Module 6787 (CollectiblesCategoriesRecord)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = arg1(dependencyMap[4]).CollectiblesUserDiscountRecord;
-const tmp2 = () => {
+// Module 6792 (CollectiblesCategoriesRecord)
+import _classCallCheck from "_classCallCheck";
+import _defineProperties from "_defineProperties";
+import StorefrontCollectionRecord from "StorefrontCollectionRecord";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { CollectiblesUserDiscountRecord as closure_4 } from "CollectiblesUserDiscountRecord";
+
+const tmp2 = (() => {
   class CollectiblesCategoriesRecord {
     constructor(arg0) {
       tmp = CollectiblesCategoriesRecord(this, CollectiblesCategoriesRecord);
       categories = arg0.categories;
-      this.categories = categories.map((arg0) => closure_3.fromServer(arg0));
+      this.categories = categories.map((arg0) => outer2_3.fromServer(arg0));
       collections = arg0.collections;
-      this.collections = collections.map((arg0) => closure_2.fromServer(arg0));
+      this.collections = collections.map((arg0) => outer2_2.fromServer(arg0));
       user_discounts = arg0.user_discounts;
       mapped = undefined;
       if (null != user_discounts) {
-        mapped = user_discounts.map((arg0) => closure_4.fromServer(arg0));
+        mapped = user_discounts.map((arg0) => outer2_4.fromServer(arg0));
       }
       this.userDiscounts = mapped;
       return;
     }
   }
-  let closure_0 = CollectiblesCategoriesRecord;
   const items = [
     {
       key: "fromServer",
@@ -36,7 +36,7 @@ const tmp2 = () => {
     }
   ];
   return callback(CollectiblesCategoriesRecord, null, items);
-}();
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/collectibles/records/CollectiblesCategoriesRecord.tsx");
+})();
+const result = require("StorefrontCollectionRecord").fileFinishedImporting("modules/collectibles/records/CollectiblesCategoriesRecord.tsx");
 
 export const CollectiblesCategoriesRecord = tmp2;

@@ -1,19 +1,20 @@
-// Module ID: 10543
-// Function ID: 82381
+// Module ID: 10553
+// Function ID: 82431
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: []
+// Dependencies: [31, 10517, 10554, 10486, 2]
 // Exports: default
 
-// Module 10543 (useIsActivitiesAvailableInShelf)
-let closure_3 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[4]).fileFinishedImporting("modules/activities/useIsActivitiesAvailableInShelf.tsx");
+// Module 10553 (useIsActivitiesAvailableInShelf)
+import result from "result";
+
+const require = arg1;
+const result = require("useIsPrivateChannelWithEnabledActivities").fileFinishedImporting("modules/activities/useIsActivitiesAvailableInShelf.tsx");
 
 export default function useIsActivitiesAvailableInShelf(arg0, arg1) {
-  arg1 = arg0;
-  const isActivitiesEnabledForCurrentPlatform = arg1(dependencyMap[1]).useIsActivitiesEnabledForCurrentPlatform();
-  const importDefault = isActivitiesEnabledForCurrentPlatform;
+  const _require = arg0;
+  const isActivitiesEnabledForCurrentPlatform = _require(10517).useIsActivitiesEnabledForCurrentPlatform();
   let tmp3 = null != arg0;
-  const obj = arg1(dependencyMap[1]);
+  let obj = _require(10517);
   if (tmp3) {
     tmp3 = "" !== arg0;
   }
@@ -28,8 +29,8 @@ export default function useIsActivitiesAvailableInShelf(arg0, arg1) {
       tmp = isActivitiesEnabledForCurrentPlatform;
     }
     if (tmp) {
-      let obj = arg0(tmp3[3]);
-      obj = { guildId: arg0 };
+      let obj = callback(tmp3[3]);
+      obj = { guildId: callback };
       const shelf = obj.fetchShelf(obj);
     }
   }, items);

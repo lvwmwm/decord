@@ -1,11 +1,13 @@
 // Module ID: 1660
-// Function ID: 18417
+// Function ID: 18418
 // Name: rigidDecay
-// Dependencies: []
+// Dependencies: [1658]
 
 // Module 1660 (rigidDecay)
+const require = arg1;
+const dependencyMap = arg6;
 let closure_2 = { code: "function rigidDecay_Pnpm_rigidDecayTs1(animation,now,config){const{SLOPE_FACTOR,VELOCITY_EPS}=this.__closure;const{lastTimestamp:lastTimestamp,startTimestamp:startTimestamp,initialVelocity:initialVelocity,current:current,velocity:velocity}=animation;const deltaTime=Math.min(Math.max(now-lastTimestamp,0),64);const v=velocity*Math.exp(-(1-config.deceleration)*(now-startTimestamp)*SLOPE_FACTOR);animation.current=current+v*config.velocityFactor*deltaTime/1000;animation.velocity=v;animation.lastTimestamp=now;if(config.clamp){if(initialVelocity<0&&animation.current<=config.clamp[0]){animation.current=config.clamp[0];return true;}else if(initialVelocity>0&&animation.current>=config.clamp[1]){animation.current=config.clamp[1];return true;}}return Math.abs(v)<VELOCITY_EPS;}" };
-arg5.rigidDecay = () => {
+arg5.rigidDecay = (() => {
   function rigidDecay(initialVelocity, lastTimestamp, deceleration) {
     let current;
     let startTimestamp;
@@ -14,7 +16,7 @@ arg5.rigidDecay = () => {
     ({ startTimestamp, current, velocity } = initialVelocity);
     const bound = Math.min(Math.max(lastTimestamp - initialVelocity.lastTimestamp, 0), 64);
     const result = -1 - deceleration.deceleration * (lastTimestamp - startTimestamp);
-    const result1 = velocity * Math.exp(result * callback(closure_1[0]).SLOPE_FACTOR);
+    const result1 = velocity * Math.exp(result * outer1_0(outer1_1[0]).SLOPE_FACTOR);
     initialVelocity.current = current + result1 * deceleration.velocityFactor * bound / 1000;
     initialVelocity.velocity = result1;
     initialVelocity.lastTimestamp = lastTimestamp;
@@ -33,10 +35,10 @@ arg5.rigidDecay = () => {
       }
     }
     const absolute = Math.abs(result1);
-    return absolute < callback(closure_1[0]).VELOCITY_EPS;
+    return absolute < outer1_0(outer1_1[0]).VELOCITY_EPS;
   }
-  rigidDecay.__closure = { SLOPE_FACTOR: arg1(arg6[0]).SLOPE_FACTOR, VELOCITY_EPS: arg1(arg6[0]).VELOCITY_EPS };
+  rigidDecay.__closure = { SLOPE_FACTOR: require(1658) /* VELOCITY_EPS */.SLOPE_FACTOR, VELOCITY_EPS: require(1658) /* VELOCITY_EPS */.VELOCITY_EPS };
   rigidDecay.__workletHash = 6356485112123;
   rigidDecay.__initData = closure_2;
   return rigidDecay;
-}();
+})();

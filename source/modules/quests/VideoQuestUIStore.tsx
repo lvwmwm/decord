@@ -1,9 +1,15 @@
-// Module ID: 6939
-// Function ID: 55469
+// Module ID: 6944
+// Function ID: 55503
 // Name: _toPropertyKey
-// Dependencies: []
+// Dependencies: [29, 677, 3999, 6945, 682, 6946, 2]
 
-// Module 6939 (_toPropertyKey)
+// Module 6944 (_toPropertyKey)
+import _objectWithoutProperties from "_objectWithoutProperties";
+import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+import createJSONStorage from "createJSONStorage";
+import createJSONStorage from "createJSONStorage";
+
+const require = arg1;
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
   if ("object" === typeof arg0) {
@@ -30,31 +36,37 @@ function _toPropertyKey(arg0) {
   }
   return text;
 }
-let closure_3 = importDefault(dependencyMap[0]);
 let obj = { UNKNOWN: "UNKNOWN", NOT_STARTED: "NOT_STARTED", IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED" };
-const withEqualityFn = arg1(dependencyMap[1]).createWithEqualityFn();
-const obj2 = arg1(dependencyMap[1]);
+useStoreWithEqualityFn = useStoreWithEqualityFn.createWithEqualityFn();
 obj = { name: "videoQuestUIState" };
-const obj3 = arg1(dependencyMap[2]);
-obj.storage = arg1(dependencyMap[2]).createJSONStorage(() => importDefault(dependencyMap[5]));
+obj.storage = createJSONStorage.createJSONStorage(() => importDefault(6946));
 obj.partialize = function partialize(volume) {
   return { volume: volume.volume, muted: volume.muted, videoProgress: volume.videoProgress };
 };
 obj.version = 0;
-const withEqualityFnResult = withEqualityFn(obj3.persist((arg0, arg1) => {
-  arg1 = arg0;
-  const importDefault = arg1;
-  return {
-    volume: arg1(dependencyMap[3]).DEFAULT_VIDEO_VOLUME,
+const withEqualityFnResult = useStoreWithEqualityFn(createJSONStorage.persist((arg0, arg1) => {
+  const _require = arg0;
+  let closure_1 = arg1;
+  let obj = {
+    volume: _require(6945).DEFAULT_VIDEO_VOLUME,
+    muted: false,
+    transcriptEnabled: false,
+    captionEnabled: false,
     videoProgress: {},
+    transcript: null,
     setVolume(arg0) {
-      arg0(closure_2[4]).batchUpdates(() => arg0({ volume: arg0 }));
+      const callback = arg0;
+      callback(outer1_2[4]).batchUpdates(() => callback({ volume: callback }));
     },
     setMuted(arg0) {
-      arg0(closure_2[4]).batchUpdates(() => arg0({ muted: arg0 }));
+      const callback = arg0;
+      callback(outer1_2[4]).batchUpdates(() => callback({ muted: callback }));
     },
     setVideoProgress(arg0, arg1, arg2) {
-      const tmp = arg1().videoProgress[arg0];
+      const callback = arg0;
+      const callback2 = arg1;
+      let closure_2 = arg2;
+      const tmp = callback2().videoProgress[arg0];
       let maxTimestampSec;
       if (null != tmp) {
         maxTimestampSec = tmp.maxTimestampSec;
@@ -63,62 +75,66 @@ const withEqualityFnResult = withEqualityFn(obj3.persist((arg0, arg1) => {
       if (null != maxTimestampSec) {
         num = maxTimestampSec;
       }
-      let closure_3 = Math.max(num, arg1);
-      arg0(arg2[4]).batchUpdates(() => {
+      let _objectWithoutProperties = Math.max(num, arg1);
+      callback(outer1_2[4]).batchUpdates(() => {
         let obj = {};
         obj = {};
-        const merged = Object.assign(arg1().videoProgress);
-        obj = { timestampSec: arg1, duration: arg2, maxTimestampSec: closure_3 };
-        obj[arg0] = obj;
+        const merged = Object.assign(callback2().videoProgress);
+        obj = { timestampSec: callback2, duration: closure_2, maxTimestampSec: _objectWithoutProperties };
+        obj[callback] = obj;
         obj.videoProgress = obj;
-        return arg0(obj);
+        return callback(obj);
       });
     },
     setTranscriptEnabled(arg0) {
-      arg0(closure_2[4]).batchUpdates(() => arg0({ transcriptEnabled: arg0 }));
+      const callback = arg0;
+      callback(outer1_2[4]).batchUpdates(() => callback({ transcriptEnabled: callback }));
     },
     setCaptionEnabled(arg0) {
-      arg0(closure_2[4]).batchUpdates(() => arg0({ captionEnabled: arg0 }));
+      const callback = arg0;
+      callback(outer1_2[4]).batchUpdates(() => callback({ captionEnabled: callback }));
     },
     getVideoProgress(questId) {
-      return arg1().videoProgress[questId];
+      return callback2().videoProgress[questId];
     },
     getVideoProgressState(arg0) {
-      const tmp = arg1().videoProgress[arg0];
+      const tmp = callback2().videoProgress[arg0];
       if (null == tmp) {
-        let IN_PROGRESS = constants.UNKNOWN;
+        let IN_PROGRESS = outer1_4.UNKNOWN;
       } else if (0 === tmp.timestampSec) {
-        IN_PROGRESS = constants.NOT_STARTED;
+        IN_PROGRESS = outer1_4.NOT_STARTED;
       } else if (tmp.timestampSec >= tmp.duration) {
-        IN_PROGRESS = constants.COMPLETED;
+        IN_PROGRESS = outer1_4.COMPLETED;
       } else {
-        IN_PROGRESS = constants.IN_PROGRESS;
+        IN_PROGRESS = outer1_4.IN_PROGRESS;
       }
       return IN_PROGRESS;
     },
     resetQuest(questId) {
-      questId(closure_2[4]).batchUpdates(() => {
-        const items = [arg0];
-        arg0({ videoProgress: callback2(callback().videoProgress, items.map(closure_5)) });
+      const callback = questId;
+      callback(outer1_2[4]).batchUpdates(() => {
+        const items = [questId];
+        questId({ videoProgress: outer2_3(outer1_1().videoProgress, items.map(outer2_5)) });
       });
     },
     clearState() {
-      arg0(closure_2[4]).batchUpdates(() => {
-        callback({ videoProgress: {} });
+      callback(outer1_2[4]).batchUpdates(() => {
+        outer1_0({ videoProgress: {} });
       });
     },
     setTranscriptAsset(arg0) {
-      arg0(closure_2[4]).batchUpdates(() => {
-        arg0({ transcript: arg0 });
+      const callback = arg0;
+      callback(outer1_2[4]).batchUpdates(() => {
+        callback({ transcript: callback });
       });
     }
   };
+  return obj;
 }, obj));
-const obj5 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/quests/VideoQuestUIStore.tsx");
+const result = require("createJSONStorage").fileFinishedImporting("modules/quests/VideoQuestUIStore.tsx");
 
 export default withEqualityFnResult;
-export const DEFAULT_VIDEO_PROGRESS = { "Bool(true)": 1, "Bool(true)": null, "Bool(true)": 0 };
+export const DEFAULT_VIDEO_PROGRESS = { timestampSec: 0, duration: 10, maxTimestampSec: 0 };
 export const VideoProgressState = obj;
 export const FetchStatus = { NONE: "NONE", FETCHING: "FETCHING", SUCCESS: "SUCCESS", FAILURE: "FAILURE" };
 export const useVideoQuestUIStore = withEqualityFnResult;

@@ -1,14 +1,13 @@
-// Module ID: 4563
-// Function ID: 40015
+// Module ID: 4567
+// Function ID: 40047
 // Name: MENTION_SENTINEL
-// Dependencies: []
+// Dependencies: [2]
 // Exports: formatGameMentionRaw
 
-// Module 4563 (MENTION_SENTINEL)
+// Module 4567 (MENTION_SENTINEL)
 const tmp2 = /^<@\$(\d+)>/;
 const regExp = new RegExp(tmp2.source.replace(/^\^/, ""), "g");
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/channel_autocomplete/ChannelAutocompleteConstants.tsx");
+const result = require("set").fileFinishedImporting("modules/channel_autocomplete/ChannelAutocompleteConstants.tsx");
 
 export const MENTION_SENTINEL = "@";
 export const CHANNEL_SENTINEL = "#";

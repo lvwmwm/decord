@@ -1,25 +1,27 @@
-// Module ID: 13546
-// Function ID: 102746
+// Module ID: 13660
+// Function ID: 104902
 // Name: route
-// Dependencies: []
+// Dependencies: [31, 1849, 7662, 653, 33, 566, 3969, 11016, 4126, 10095, 1212, 13661, 2]
 
-// Module 13546 (route)
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[4]).jsx;
-let obj = arg1(dependencyMap[9]);
-obj = {
+// Module 13660 (route)
+import "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle() {
-    const intl = arg1(dependencyMap[10]).intl;
-    return intl.string(arg1(dependencyMap[10]).t.IEpCBQ);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t.IEpCBQ);
   },
-  parent: arg1(dependencyMap[2]).MobileSetting.ACCOUNT,
+  parent: require("MobileSetting").MobileSetting.ACCOUNT,
   useTrailing: function useAccountUsernameSettingTrailing() {
-    const items = [closure_3];
-    return arg1(dependencyMap[5]).useStateFromStores(items, () => callback(closure_2[6]).getUserTag(currentUser.getCurrentUser(), { decoration: "never" }));
+    const items = [_isNativeReflectConstruct];
+    return require(566) /* initialize */.useStateFromStores(items, () => outer1_1(outer1_2[6]).getUserTag(outer1_3.getCurrentUser(), { decoration: "never" }));
   },
   useDescription: function useAccountUsernameSettingDescription() {
-    let obj = arg1(dependencyMap[7]);
+    let obj = require(11016) /* useCurrentUserHasAutomodQuarantinedProfile */;
     const guildAutomodProfileQuarantineErrors = obj.useGuildAutomodProfileQuarantineErrors();
     let first;
     if (null != guildAutomodProfileQuarantineErrors) {
@@ -30,20 +32,20 @@ obj = {
     }
     let tmp3 = null;
     if (null != first) {
-      obj = { children: first };
-      tmp3 = jsx(arg1(dependencyMap[8]).Text, obj);
+      obj = { variant: "text-xs/medium", color: "text-feedback-warning", children: first };
+      tmp3 = jsx(require(4126) /* Text */.Text, { variant: "text-xs/medium", color: "text-feedback-warning", children: first });
     }
     return tmp3;
   },
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[3]).UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
+createToggle = {
+  route: require("ME").UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
   getComponent() {
-    return arg1(dependencyMap[11]).default;
+    return require(13661) /* UsernameStatusMessage */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/user_settings/defs/native/AccountUsernameSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+const result = require("MobileSetting").fileFinishedImporting("modules/user_settings/defs/native/AccountUsernameSetting.tsx");
 
-export default route;
+export default createToggle;

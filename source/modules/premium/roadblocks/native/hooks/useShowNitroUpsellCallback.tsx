@@ -1,17 +1,18 @@
-// Module ID: 9362
-// Function ID: 73061
+// Module ID: 9369
+// Function ID: 73102
 // Name: useShowNitroUpsellCallback
-// Dependencies: []
+// Dependencies: [31, 3991, 2]
 // Exports: default
 
-// Module 9362 (useShowNitroUpsellCallback)
-let closure_2 = importAll(dependencyMap[0]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/premium/roadblocks/native/hooks/useShowNitroUpsellCallback.tsx");
+// Module 9369 (useShowNitroUpsellCallback)
+import result from "result";
+
+const require = arg1;
+let result = require("set").fileFinishedImporting("modules/premium/roadblocks/native/hooks/useShowNitroUpsellCallback.tsx");
 
 export default function useShowNitroUpsellCallback() {
-  let obj = arg1(dependencyMap[1]);
-  const sharedValue = obj.useSharedValue(false);
-  const arg1 = sharedValue;
+  let obj = sharedValue(3991);
+  sharedValue = obj.useSharedValue(false);
   const items = [sharedValue];
   obj = {
     shouldShowUpsell: sharedValue,

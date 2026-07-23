@@ -1,9 +1,18 @@
-// Module ID: 6923
-// Function ID: 55234
+// Module ID: 6928
+// Function ID: 55268
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 1348, 3758, 6929, 4015, 686, 664, 566, 2]
 
-// Module 6923 (_isNativeReflectConstruct)
+// Module 6928 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import canBypassSlowmodeHelper from "canBypassSlowmodeHelper";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -13,49 +22,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -66,16 +75,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -93,30 +102,30 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function setCooldown(channel, SendMessage, cooldownMs) {
-  SendMessage = channel;
-  const importDefault = SendMessage;
-  if (null != closure_11[SendMessage][channel.id]) {
-    const timer = closure_11[SendMessage][channel.id].timer;
+  const _require = channel;
+  let closure_1 = SendMessage;
+  if (null != dependencyMap[SendMessage][channel.id]) {
+    const timer = dependencyMap[SendMessage][channel.id].timer;
     timer.stop();
     const id = channel.id;
-    delete r5[r0];
+    delete tmp2[tmp];
   }
-  let obj = SendMessage(dependencyMap[7]);
+  let obj = _require(6929);
   if (!obj.canBypassSlowmode(channel, SendMessage)) {
     if (cooldownMs > 0) {
       const _Date = Date;
       const sum = cooldownMs + Date.now();
-      const dependencyMap = sum;
+      dependencyMap = sum;
       obj = { rateLimitPerUser: channel.rateLimitPerUser, cooldownMs, cooldownEndTimestamp: sum };
-      const Timeout = SendMessage(dependencyMap[8]).Timeout;
+      const Timeout = _require(4015).Timeout;
       const prototype = Timeout.prototype;
       const timeout = new Timeout();
       obj.timer = timeout;
-      closure_11[SendMessage][channel.id] = obj;
-      const timer2 = closure_11[SendMessage][channel.id].timer;
+      dependencyMap[SendMessage][channel.id] = obj;
+      const timer2 = dependencyMap[SendMessage][channel.id].timer;
       timer2.start(1000, () => {
-        let obj = arg1(sum[9]);
-        obj = { type: "SLOWMODE_SET_COOLDOWN", channelId: arg0.id, slowmodeType: arg1, cooldownMs: Math.max(sum - Date.now(), 0) };
+        let obj = SendMessage(sum[9]);
+        obj = { type: "SLOWMODE_SET_COOLDOWN", channelId: id.id, slowmodeType: SendMessage, cooldownMs: Math.max(closure_2 - Date.now(), 0) };
         obj.dispatch(obj);
       }, true);
     }
@@ -129,7 +138,7 @@ function resetCooldown(channelId, SendMessage) {
   } else {
     let num = 0;
     if (0 !== channel.rateLimitPerUser) {
-      num = channel.rateLimitPerUser * importDefault(dependencyMap[10]).Millis.SECOND + 100;
+      num = channel.rateLimitPerUser * importDefault(664).Millis.SECOND + 100;
     }
     setCooldown(channel, SendMessage, num);
   }
@@ -141,28 +150,21 @@ function handleUploadCancel(channelId) {
   }
   return null != channel;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
 let obj = { SendMessage: 0, [0]: "SendMessage", CreateThread: 1, [1]: "CreateThread" };
 let closure_11 = { [obj.SendMessage]: {}, [obj.CreateThread]: {} };
-let tmp2 = (Store) => {
+let tmp2 = ((Store) => {
   class SlowmodeStore {
     constructor() {
       self = this;
-      tmp = closure_3(this, SlowmodeStore);
-      obj = closure_6(SlowmodeStore);
-      tmp2 = closure_5;
-      if (closure_12()) {
+      tmp = outer1_3(this, SlowmodeStore);
+      obj = outer1_6(SlowmodeStore);
+      tmp2 = outer1_5;
+      if (outer1_12()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -171,12 +173,11 @@ let tmp2 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = SlowmodeStore;
   callback2(SlowmodeStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8, closure_9);
+      this.waitFor(outer1_8, outer1_9);
     }
   };
   const items = [obj, , ];
@@ -185,10 +186,10 @@ let tmp2 = (Store) => {
     value(arg0, arg1) {
       let SendMessage = arg1;
       if (null == arg1) {
-        SendMessage = SendMessage.SendMessage;
+        SendMessage = outer1_10.SendMessage;
       }
       let num = 0;
-      if (null != closure_11[SendMessage][arg0]) {
+      if (null != outer1_11[SendMessage][arg0]) {
         num = tmp3.cooldownMs;
       }
       return num;
@@ -203,7 +204,7 @@ let tmp2 = (Store) => {
   };
   items[2] = obj;
   return callback(SlowmodeStore, items);
-}(importDefault(dependencyMap[11]).Store);
+})(require("initialize").Store);
 tmp2.displayName = "SlowmodeStore";
 obj = {
   SLOWMODE_RESET_COOLDOWN: function handleSlowmodeResetCooldown(channelId) {
@@ -228,25 +229,25 @@ obj = {
   UPLOAD_FAIL: handleUploadCancel,
   UPLOAD_CANCEL_REQUEST: handleUploadCancel,
   CHANNEL_UPDATES: function handleUpdateCooldown(channels) {
-    const arg1 = channels.channels;
+    channels = channels.channels;
     const items = [obj.SendMessage, obj.CreateThread];
     const item = items.forEach((arg0) => {
       let iter3;
-      const tmp = callback(channels);
+      const tmp = outer1_13(channels);
       const iter = tmp();
       let iter2 = iter;
       if (!iter.done) {
         do {
           let value = iter2.value;
-          let tmp3 = closure_11;
-          let tmp4 = closure_11[arg0][value.id];
+          let tmp3 = outer1_11;
+          let tmp4 = outer1_11[arg0][value.id];
           let rateLimitPerUser = value.rateLimitPerUser;
           let tmp5 = tmp2;
           if (null != tmp4) {
             tmp5 = tmp2;
             if (tmp4.rateLimitPerUser !== rateLimitPerUser) {
               let cooldownMs;
-              let tmp6 = closure_15;
+              let tmp6 = outer1_15;
               if (null != tmp4) {
                 cooldownMs = tmp4.cooldownMs;
               }
@@ -254,14 +255,14 @@ obj = {
               if (null != cooldownMs) {
                 num = cooldownMs;
               }
-              let tmp8 = closure_1;
-              let tmp9 = closure_2;
-              let tmp6Result = tmp6(value, arg0, Math.min(num, rateLimitPerUser * closure_1(closure_2[10]).Millis.SECOND));
+              let tmp8 = outer1_1;
+              let tmp9 = outer1_2;
+              let tmp6Result = tmp6(value, arg0, Math.min(num, rateLimitPerUser * outer1_1(outer1_2[10]).Millis.SECOND));
               tmp5 = cooldownMs;
             }
           }
           iter3 = tmp();
-          let tmp2 = tmp5;
+          tmp2 = tmp5;
           iter2 = iter3;
         } while (!iter3.done);
       }
@@ -269,18 +270,19 @@ obj = {
   },
   LOGOUT: function clear() {
     const items = [obj.SendMessage, obj.CreateThread];
-    const item = items.forEach((arg0) => {
-      const keys = Object.keys(closure_11[arg0]);
+    let item = items.forEach((arg0) => {
+      let closure_0 = arg0;
+      const keys = Object.keys(outer1_11[arg0]);
       const item = keys.forEach((arg0) => {
-        const timer = closure_11[closure_0][arg0].timer;
+        const timer = outer2_11[closure_0][arg0].timer;
         return timer.stop();
       });
-      closure_11[arg0] = {};
+      outer1_11[arg0] = {};
     });
   }
 };
-tmp2 = new tmp2(importDefault(dependencyMap[9]), obj);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("stores/SlowmodeStore.tsx");
+tmp2 = new tmp2(require("dispatcher"), obj);
+let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/SlowmodeStore.tsx");
 
 export default tmp2;
 export const SlowmodeType = obj;

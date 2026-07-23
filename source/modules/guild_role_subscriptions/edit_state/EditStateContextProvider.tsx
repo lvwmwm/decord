@@ -1,14 +1,15 @@
-// Module ID: 16319
-// Function ID: 125903
+// Module ID: 16436
+// Function ID: 128077
 // Name: useEditStateContext
-// Dependencies: []
+// Dependencies: [31, 33, 2]
 // Exports: EditStateContextProvider, useEditStateContext
 
-// Module 16319 (useEditStateContext)
-const importAllResult = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const context = importAllResult.createContext(undefined);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/guild_role_subscriptions/edit_state/EditStateContextProvider.tsx");
+// Module 16436 (useEditStateContext)
+import importAllResult from "result";
+import { jsx } from "jsxProd";
+
+let context = importAllResult.createContext(undefined);
+const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/edit_state/EditStateContextProvider.tsx");
 
 export const useEditStateContext = function useEditStateContext() {
   const context = importAllResult.useContext(closure_2);
@@ -24,5 +25,5 @@ export const EditStateContextProvider = function EditStateContextProvider(childr
   let obj = Object.create(null);
   obj.children = 0;
   obj = { value: Object.assign(children, obj), children: children.children };
-  return <redux.Provider {...obj} />;
+  return <redux.Provider value={Object.assign(arg0, obj)}>{arg0.children}</redux.Provider>;
 };

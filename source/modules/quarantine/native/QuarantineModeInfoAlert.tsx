@@ -1,36 +1,40 @@
-// Module ID: 5048
-// Function ID: 43699
+// Module ID: 5051
+// Function ID: 43717
 // Name: QuarantineModeInfoAlert
-// Dependencies: []
+// Dependencies: [31, 653, 33, 4130, 5052, 689, 4561, 1273, 1212, 4126, 2]
 // Exports: default
 
-// Module 5048 (QuarantineModeInfoAlert)
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = {};
-const tmp3 = arg1(dependencyMap[2]);
-const merged = Object.assign(importDefault(dependencyMap[4])(arg1(dependencyMap[1]).Fonts.PRIMARY_BOLD, importDefault(dependencyMap[5]).colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
-obj["textAlign"] = "center";
-obj["marginVertical"] = 12;
-obj.header = obj;
-obj.text = {};
-let closure_5 = obj.createStyles(obj);
-const importDefaultResult = importDefault(dependencyMap[4]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/quarantine/native/QuarantineModeInfoAlert.tsx");
+// Module 5051 (QuarantineModeInfoAlert)
+import "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
+const merged = Object.assign(require("createTextStyle")(require("ME").Fonts.PRIMARY_BOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+_createForOfIteratorHelperLoose["textAlign"] = "center";
+_createForOfIteratorHelperLoose["marginVertical"] = 12;
+_createForOfIteratorHelperLoose.header = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.text = { textAlign: "center", marginVertical: 8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/quarantine/native/QuarantineModeInfoAlert.tsx");
 
 export default function QuarantineModeInfoAlert(onClose) {
-  const tmp = callback3();
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = { onClose: onClose.onClose };
   obj = { style: tmp.header };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.children = intl.string(arg1(dependencyMap[8]).t.EouHwv);
-  const items = [callback(arg1(dependencyMap[7]).LegacyText, obj), ];
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl.string(require(1212) /* getSystemLocale */.t.EouHwv);
+  const items = [callback(require(1273) /* Button */.LegacyText, obj), ];
   obj = { style: tmp.text, variant: "text-md/medium" };
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj.children = intl2.string(arg1(dependencyMap[8]).t.zNPBMA);
-  items[1] = callback(arg1(dependencyMap[9]).Text, obj);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.children = intl2.string(require(1212) /* getSystemLocale */.t.zNPBMA);
+  items[1] = callback(require(4126) /* Text */.Text, obj);
   obj.children = items;
-  return callback2(importDefault(dependencyMap[6]), obj);
+  return callback2(importDefault(4561), obj);
 };

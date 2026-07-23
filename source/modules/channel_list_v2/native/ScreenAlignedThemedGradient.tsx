@@ -1,26 +1,26 @@
-// Module ID: 14948
-// Function ID: 112535
+// Module ID: 15064
+// Function ID: 114703
 // Name: ScreenAlignedThemedGradient
-// Dependencies: []
+// Dependencies: [31, 27, 33, 8831, 3991, 9891, 4662, 2]
 // Exports: default
 
-// Module 14948 (ScreenAlignedThemedGradient)
-importAll(dependencyMap[0]);
-const StyleSheet = arg1(dependencyMap[1]).StyleSheet;
-const jsx = arg1(dependencyMap[2]).jsx;
+// Module 15064 (ScreenAlignedThemedGradient)
+import "result";
+import { StyleSheet } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
 let closure_4 = { code: "function ScreenAlignedThemedGradientTsx1(){const{roundToNearestPixel,offsetX,parentSpringTranslateX,offsetY}=this.__closure;return{transform:[{translateX:roundToNearestPixel(-offsetX-parentSpringTranslateX.get())},{translateY:roundToNearestPixel(-offsetY)}]};}" };
 const styles = StyleSheet.create({ container: StyleSheet.absoluteFillObject });
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/channel_list_v2/native/ScreenAlignedThemedGradient.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/ScreenAlignedThemedGradient.tsx");
 
 export default function ScreenAlignedThemedGradient(offsetX) {
   offsetX = offsetX.offsetX;
-  const arg1 = offsetX;
   const offsetY = offsetX.offsetY;
-  const importDefault = offsetY;
   const parentSpringTranslateX = offsetX.parentSpringTranslateX;
-  const dependencyMap = parentSpringTranslateX;
-  let obj = arg1(dependencyMap[3]);
+  let obj = offsetX(parentSpringTranslateX[3]);
   const isClientThemeOrCustomThemeActive = obj.useIsClientThemeOrCustomThemeActive();
+  let obj1 = offsetX(parentSpringTranslateX[4]);
   const fn = function c() {
     let obj = {};
     obj = { translateX: offsetY(parentSpringTranslateX[5])(-offsetX - parentSpringTranslateX.get()) };
@@ -30,13 +30,14 @@ export default function ScreenAlignedThemedGradient(offsetX) {
     obj.transform = items;
     return obj;
   };
-  obj = { roundToNearestPixel: importDefault(dependencyMap[5]), offsetX, parentSpringTranslateX, offsetY };
+  obj = { roundToNearestPixel: offsetY(parentSpringTranslateX[5]), offsetX, parentSpringTranslateX, offsetY };
   fn.__closure = obj;
   fn.__workletHash = 13846065523130;
   fn.__initData = closure_4;
-  const animatedStyle = arg1(dependencyMap[4]).useAnimatedStyle(fn);
+  const animatedStyle = obj1.useAnimatedStyle(fn);
   obj = { pointerEvents: "none", style: items };
-  const items = [container.container, animatedStyle];
-  obj.children = jsx(importDefault(dependencyMap[6]), { mix: isClientThemeOrCustomThemeActive });
-  return jsx(importDefault(dependencyMap[4]).View, obj);
+  items = [container.container, animatedStyle];
+  obj1 = { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive };
+  obj.children = jsx(offsetY(parentSpringTranslateX[6]), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive });
+  return jsx(offsetY(parentSpringTranslateX[4]).View, { pointerEvents: "none", style: items });
 };

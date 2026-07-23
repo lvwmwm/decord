@@ -1,12 +1,13 @@
-// Module ID: 15639
-// Function ID: 119424
+// Module ID: 15756
+// Function ID: 121597
 // Name: context
-// Dependencies: []
+// Dependencies: [31, 2]
 
-// Module 15639 (context)
-const importAllResult = importAll(dependencyMap[0]);
+// Module 15756 (context)
+import importAllResult from "result";
+
 const context = importAllResult.createContext({ audioRef: importAllResult.createRef() });
 const obj = { audioRef: importAllResult.createRef() };
-const result = arg1(dependencyMap[1]).fileFinishedImporting("modules/soundplayer/SoundPlayerContext.tsx");
+const result = require("set").fileFinishedImporting("modules/soundplayer/SoundPlayerContext.tsx");
 
 export default context;

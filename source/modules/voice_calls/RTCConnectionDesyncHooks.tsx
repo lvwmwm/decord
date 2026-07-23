@@ -1,53 +1,66 @@
-// Module ID: 14942
-// Function ID: 112468
+// Module ID: 15058
+// Function ID: 114636
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 31, 4143, 4147, 1194, 1348, 1917, 12681, 4202, 1849, 4146, 22, 566, 1327, 10532, 2]
 // Exports: useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible
 
-// Module 14942 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 15058 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +71,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -85,100 +98,85 @@ function _arrayLikeToArray(arg0, arg1) {
   return ArrayResult;
 }
 function useDesyncedChannelParticipants(channelId) {
-  const arg1 = channelId;
+  const _require = channelId;
   const items = [closure_9, closure_10];
-  return arg1(dependencyMap[12]).useStateFromStores(items, () => {
+  return _require(566).useStateFromStores(items, () => {
     let desyncedParticipants = null;
-    if (arg0 === channelId.getChannelId()) {
-      desyncedParticipants = desyncedParticipants.getDesyncedParticipants();
+    if (closure_0 === outer1_10.getChannelId()) {
+      desyncedParticipants = outer1_9.getDesyncedParticipants();
     }
     return desyncedParticipants;
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importAll(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-let closure_5 = importDefault(dependencyMap[3]);
-let closure_6 = importDefault(dependencyMap[4]);
-let closure_7 = importDefault(dependencyMap[5]);
-let closure_8 = importDefault(dependencyMap[6]);
-let closure_9 = importDefault(dependencyMap[7]);
-let closure_10 = importDefault(dependencyMap[8]);
-let closure_11 = importDefault(dependencyMap[9]);
-let closure_12 = importDefault(dependencyMap[10]);
-const result = arg1(dependencyMap[15]).fileFinishedImporting("modules/voice_calls/RTCConnectionDesyncHooks.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_calls/RTCConnectionDesyncHooks.tsx");
 
 export const useEnsureSyncedChannelVoiceStates = function useEnsureSyncedChannelVoiceStates(id, voiceStates) {
-  voiceStates = id;
+  const _require = id;
   const dependencyMap = voiceStates;
   let guild_id;
-  const items = [closure_9, closure_10];
-  const stateFromStores = voiceStates(dependencyMap[12]).useStateFromStores(items, () => {
+  let items = [closure_9, closure_10];
+  const stateFromStores = _require(566).useStateFromStores(items, () => {
     let desyncedVoiceStates = null;
-    if (arg0 === channelId.getChannelId()) {
-      desyncedVoiceStates = desyncedVoiceStates.getDesyncedVoiceStates();
+    if (closure_0 === outer1_10.getChannelId()) {
+      desyncedVoiceStates = outer1_9.getDesyncedVoiceStates();
     }
     return desyncedVoiceStates;
   });
-  let closure_2 = stateFromStores;
-  const obj = voiceStates(dependencyMap[12]);
-  const items1 = [closure_4];
-  const React = voiceStates(dependencyMap[12]).useStateFromStoresArray(items1, () => {
-    if (null == arg0) {
+  let obj = _require(566);
+  const items1 = [stateFromStoresArray];
+  const React = _require(566).useStateFromStoresArray(items1, () => {
+    if (null == closure_0) {
       let items = [];
     } else {
       items = [];
-      HermesBuiltin.arraySpread(stateFromStoresArray.getGuildRingingUsers(arg0), 0);
+      HermesBuiltin.arraySpread(stateFromStoresArray.getGuildRingingUsers(closure_0), 0);
     }
     return items;
   });
-  const obj2 = voiceStates(dependencyMap[12]);
+  const obj2 = _require(566);
   const items2 = [closure_11];
-  const stateFromStoresArray = voiceStates(dependencyMap[12]).useStateFromStoresArray(items2, () => {
-    const mapped = closure_3.map((arg0) => user.getUser(arg0));
-    return mapped.filter(arg0(arg1[13]).isNotNullish);
+  stateFromStoresArray = _require(566).useStateFromStoresArray(items2, () => {
+    const mapped = result.map((arg0) => outer2_11.getUser(arg0));
+    return mapped.filter(id(voiceStates[13]).isNotNullish);
   });
-  closure_4 = stateFromStoresArray;
-  const obj3 = voiceStates(dependencyMap[12]);
+  const obj3 = _require(566);
   const items3 = [closure_7];
-  const stateFromStores1 = voiceStates(dependencyMap[12]).useStateFromStores(items3, () => basicChannel.getBasicChannel(arg0));
-  let closure_5 = stateFromStores1;
+  const stateFromStores1 = _require(566).useStateFromStores(items3, () => outer1_7.getBasicChannel(closure_0));
   const items4 = [stateFromStoresArray, ];
   if (null != stateFromStores1) {
     guild_id = stateFromStores1.guild_id;
   }
   items4[1] = guild_id;
   const memo = React.useMemo(() => stateFromStoresArray.map((id) => {
-    const obj = { voiceState: new closure_5(id.id), user: id };
+    const obj = { voiceState: new stateFromStores1(id.id), user: id };
     let guild_id;
-    if (null != closure_5) {
-      guild_id = closure_5.guild_id;
+    if (null != outer1_5) {
+      guild_id = outer1_5.guild_id;
     }
     let member = null;
     if (null != guild_id) {
       let guild_id1;
-      if (null != closure_5) {
-        guild_id1 = closure_5.guild_id;
+      if (null != outer1_5) {
+        guild_id1 = outer1_5.guild_id;
       }
-      member = member.getMember(guild_id1, id.id);
+      member = outer2_8.getMember(guild_id1, id.id);
     }
     obj.member = member;
     ({ globalName: obj.nick, globalName: obj.comparator } = id);
     obj._isPlaceholder = false;
     return obj;
   }), items4);
-  let closure_6 = memo;
   const items5 = [stateFromStores, voiceStates, memo];
-  return React.useMemo(() => function syncChannelVoiceStates(stateFromStores, arg1, memo) {
+  return React.useMemo(() => (function syncChannelVoiceStates(stateFromStores, closure_1, memo) {
     let done;
     if (null == stateFromStores) {
       if (0 === memo.length) {
-        return arg1;
+        return closure_1;
       }
     }
     const items = [];
     const set = new Set();
-    const tmp = callback(arg1);
+    const tmp = outer2_13(closure_1);
     let iter = tmp();
     if (!iter.done) {
       do {
@@ -204,81 +202,81 @@ export const useEnsureSyncedChannelVoiceStates = function useEnsureSyncedChannel
       });
     }
     return items;
-  }(stateFromStores, arg1, memo), items5);
+  })(stateFromStores, closure_1, memo), items5);
 };
 export { useDesyncedChannelParticipants };
 export const useEnsureSyncedChannelParticipants = function useEnsureSyncedChannelParticipants(channelId) {
+  let closure_0 = arg1;
   const tmp = useDesyncedChannelParticipants(channelId);
   const dependencyMap = tmp;
-  const items = [tmp, arg1];
-  return React.useMemo(() => function syncChannelParticipants(arr, arg1) {
-    if (null != arr) {
-      if (0 !== arr.length) {
+  let items = [tmp, arg1];
+  return React.useMemo(() => (function syncChannelParticipants(closure_1, closure_0) {
+    if (null != closure_1) {
+      if (0 !== closure_1.length) {
         const items = [];
-        HermesBuiltin.arraySpread(arg1, 0);
-        const item = arr.forEach((arg0) => {
-          items.splice(items(closure_1[11]).sortedIndexBy(items, arg0, (arg0) => callback(closure_1[14]).sortKey(arg0)), 0, arg0);
+        HermesBuiltin.arraySpread(closure_0, 0);
+        const item = closure_1.forEach((arg0) => {
+          items.splice(items(table[11]).sortedIndexBy(items, arg0, (arg0) => callback(table[14]).sortKey(arg0)), 0, arg0);
         });
         return items;
       }
     }
-    return arg1;
-  }(tmp, arg1), items);
+    return closure_0;
+  })(closure_1, closure_0), items);
 };
 export const useIsRTCDisconnectedUIVisible = function useIsRTCDisconnectedUIVisible(arg0, id) {
+  let _isNativeReflectConstruct;
+  let closure_5;
   let tmp4;
   let tmp6;
-  id = arg0;
+  const _require = arg0;
   const dependencyMap = id;
-  const items = [closure_6];
-  const stateFromStores = id(dependencyMap[12]).useStateFromStores(items, () => stateFromStores2.getId() === arg1);
-  const obj = id(dependencyMap[12]);
+  const items = [stateFromStores2];
+  const stateFromStores = _require(566).useStateFromStores(items, () => stateFromStores2.getId() === closure_1);
+  const obj = _require(566);
   const items1 = [closure_10];
-  const stateFromStores1 = id(dependencyMap[12]).useStateFromStores(items1, () => authStore.getChannelId());
-  const callback = stateFromStores1;
-  const React = React.useRef(null);
-  const obj2 = id(dependencyMap[12]);
-  [tmp4, closure_4] = callback(React.useState(false), 2);
-  const tmp3 = callback(React.useState(false), 2);
-  [tmp6, closure_5] = callback(React.useState(false), 2);
-  const tmp5 = callback(React.useState(false), 2);
+  const stateFromStores1 = _require(566).useStateFromStores(items1, () => outer1_10.getChannelId());
+  React = React.useRef(null);
+  const obj2 = _require(566);
+  [tmp4, _isNativeReflectConstruct] = stateFromStores1(React.useState(false), 2);
+  const tmp3 = stateFromStores1(React.useState(false), 2);
+  [tmp6, closure_5] = stateFromStores1(React.useState(false), 2);
+  const tmp5 = stateFromStores1(React.useState(false), 2);
   const items2 = [closure_10, closure_12];
-  const stateFromStores2 = id(dependencyMap[12]).useStateFromStores(items2, () => {
-    let isUserConnectedResult = null != arg1;
+  stateFromStores2 = _require(566).useStateFromStores(items2, () => {
+    let isUserConnectedResult = null != closure_1;
     if (isUserConnectedResult) {
-      isUserConnectedResult = null != arg0;
+      isUserConnectedResult = null != closure_0;
     }
     if (isUserConnectedResult) {
-      isUserConnectedResult = authStore.getChannelId() === arg0;
+      isUserConnectedResult = outer1_10.getChannelId() === closure_0;
     }
     if (isUserConnectedResult) {
-      isUserConnectedResult = null != closure_12.isInChannel(arg0, arg1);
+      isUserConnectedResult = null != outer1_12.isInChannel(closure_0, closure_1);
     }
     if (isUserConnectedResult) {
-      isUserConnectedResult = authStore.isUserConnected(arg1);
+      isUserConnectedResult = outer1_10.isUserConnected(closure_1);
     }
     return isUserConnectedResult;
   });
-  closure_6 = stateFromStores2;
-  const obj3 = id(dependencyMap[12]);
+  const obj3 = _require(566);
   const items3 = [closure_10, closure_12];
-  const stateFromStores3 = id(dependencyMap[12]).useStateFromStores(items3, () => {
-    let tmp = null != arg1;
+  const stateFromStores3 = _require(566).useStateFromStores(items3, () => {
+    let tmp = null != closure_1;
     if (tmp) {
-      tmp = null != arg0;
+      tmp = null != closure_0;
     }
     if (tmp) {
-      tmp = authStore.getChannelId() === arg0;
+      tmp = outer1_10.getChannelId() === closure_0;
     }
     if (tmp) {
-      tmp = null != closure_12.isInChannel(arg0, arg1);
+      tmp = null != outer1_12.isInChannel(closure_0, closure_1);
     }
     if (tmp) {
-      tmp = !authStore.isUserConnected(arg1);
+      tmp = !outer1_10.isUserConnected(closure_1);
     }
     return tmp;
   });
-  let closure_7 = stateFromStores3;
   const items4 = [stateFromStores2];
   const effect = React.useEffect(() => {
     if (stateFromStores2) {
@@ -287,7 +285,7 @@ export const useIsRTCDisconnectedUIVisible = function useIsRTCDisconnectedUIVisi
   }, items4);
   const items5 = [arg0, stateFromStores1];
   const effect1 = React.useEffect(() => {
-    if (stateFromStores1 !== arg0) {
+    if (stateFromStores1 !== closure_0) {
       callback2(false);
     }
   }, items5);
@@ -297,13 +295,13 @@ export const useIsRTCDisconnectedUIVisible = function useIsRTCDisconnectedUIVisi
       if (null == ref.current) {
         const _setTimeout = setTimeout;
         ref.current = setTimeout(() => {
-          closure_3.current = null;
-          callback(true);
+          outer1_3.current = null;
+          outer1_4(true);
         }, 250);
       }
       return () => {
-        clearTimeout(ref.current);
-        ref.current = null;
+        clearTimeout(outer1_3.current);
+        outer1_3.current = null;
       };
     }
     clearTimeout(ref.current);

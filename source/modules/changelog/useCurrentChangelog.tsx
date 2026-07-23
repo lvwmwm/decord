@@ -1,62 +1,66 @@
-// Module ID: 7761
-// Function ID: 61638
+// Module ID: 7767
+// Function ID: 61675
 // Name: useChangelog
-// Dependencies: []
+// Dependencies: [31, 1921, 4141, 1905, 624, 7768, 2]
 // Exports: useCurrentChangelog
 
-// Module 7761 (useChangelog)
+// Module 7767 (useChangelog)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { ChangelogLoadState } from "CHANGELOG_MODAL_KEY";
+
+const require = arg1;
 function useChangelog(changelogId, stateFromStores) {
   let defaultChangelog;
   let defaultLoadState;
-  stateFromStores = changelogId;
-  const importDefault = stateFromStores;
-  let obj = stateFromStores(dependencyMap[4]);
+  const _require = changelogId;
+  let closure_1 = stateFromStores;
+  let obj = _require(changelog[4]);
   const items = [closure_5];
   const items1 = [changelogId, stateFromStores];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let changelog = null;
-    if (null != arg0) {
-      changelog = store.getChangelog(arg0, arg1);
+    if (null != closure_0) {
+      changelog = outer1_5.getChangelog(closure_0, closure_1);
     }
     let changelog1 = null;
-    if (null != arg0) {
-      changelog1 = store.getChangelog(arg0, "en-US");
+    if (null != closure_0) {
+      changelog1 = outer1_5.getChangelog(closure_0, "en-US");
     }
-    let changelogLoadStatus = null != arg0;
+    let changelogLoadStatus = null != closure_0;
     if (changelogLoadStatus) {
-      changelogLoadStatus = store.getChangelogLoadStatus(arg0, "en-US");
+      changelogLoadStatus = outer1_5.getChangelogLoadStatus(closure_0, "en-US");
     }
     const obj = { changelog };
-    let changelogLoadStatus1 = null != arg0;
+    let changelogLoadStatus1 = null != closure_0;
     if (changelogLoadStatus1) {
-      changelogLoadStatus1 = store.getChangelogLoadStatus(arg0, arg1);
+      changelogLoadStatus1 = outer1_5.getChangelogLoadStatus(closure_0, closure_1);
     }
     obj.loadState = changelogLoadStatus1;
     obj.defaultChangelog = changelog1;
     obj.defaultLoadState = changelogLoadStatus;
     return obj;
   }, items1);
-  const changelog = stateFromStoresObject.changelog;
-  const dependencyMap = changelog;
+  changelog = stateFromStoresObject.changelog;
   const loadState = stateFromStoresObject.loadState;
-  const React = loadState;
   const items2 = [changelogId, changelog, loadState, stateFromStores];
   ({ defaultChangelog, defaultLoadState } = stateFromStoresObject);
-  const effect = React.useEffect(() => {
-    let tmp = null != arg0;
+  const effect = loadState.useEffect(() => {
+    let tmp = null != closure_0;
     if (tmp) {
       tmp = null == changelog;
     }
     if (tmp) {
-      tmp = loadState === constants.NOT_LOADED;
+      tmp = loadState === outer1_6.NOT_LOADED;
     }
     if (tmp) {
-      const changelog = arg1(changelog[5]).fetchChangelog(arg0, arg1);
-      const obj = arg1(changelog[5]);
+      changelog = stateFromStores(changelog[5]).fetchChangelog(closure_0, stateFromStores);
+      const obj = stateFromStores(changelog[5]);
     }
   }, items2);
   if (null == changelogId) {
-    obj = { "Null": "all", "Null": true, "Null": false, id: changelogId };
+    obj = { id: changelogId, changelog: null, loaded: false };
     let obj1 = obj;
   } else {
     if (null == changelog) {
@@ -69,11 +73,7 @@ function useChangelog(changelogId, stateFromStores) {
   }
   return obj1;
 }
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const ChangelogLoadState = arg1(dependencyMap[3]).ChangelogLoadState;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/changelog/useCurrentChangelog.tsx");
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/changelog/useCurrentChangelog.tsx");
 
 export { useChangelog };
 export const useCurrentChangelog = function useCurrentChangelog() {
@@ -81,14 +81,14 @@ export const useCurrentChangelog = function useCurrentChangelog() {
   let changelog2;
   let loaded;
   let loaded2;
-  let obj = arg1(dependencyMap[4]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
+  let obj = require(624) /* defaultAreStatesEqual */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.locale);
   const items1 = [closure_5];
-  const stateFromStores1 = arg1(dependencyMap[4]).useStateFromStores(items1, () => closure_5.latestChangelogId());
-  const obj2 = arg1(dependencyMap[4]);
+  const stateFromStores1 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items1, () => outer1_5.latestChangelogId());
+  const obj2 = require(624) /* defaultAreStatesEqual */;
   const items2 = [closure_5];
-  const stateFromStores2 = arg1(dependencyMap[4]).useStateFromStores(items2, () => closure_5.getConfig());
+  const stateFromStores2 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items2, () => outer1_5.getConfig());
   let tmp4 = null != stateFromStores2;
   if (tmp4) {
     const _Object = Object;
@@ -102,10 +102,10 @@ export const useCurrentChangelog = function useCurrentChangelog() {
   if (tmp6) {
     tmp6 = null == stateFromStores1;
   }
-  const obj3 = arg1(dependencyMap[4]);
+  const obj3 = require(624) /* defaultAreStatesEqual */;
   const items3 = [closure_5];
-  const stateFromStores3 = arg1(dependencyMap[4]).useStateFromStores(items3, () => closure_5.overrideId());
-  const obj4 = arg1(dependencyMap[4]);
+  const stateFromStores3 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items3, () => outer1_5.overrideId());
+  const obj4 = require(624) /* defaultAreStatesEqual */;
   ({ changelog, loaded } = useChangelog(stateFromStores1, stateFromStores));
   const tmp9 = useChangelog(stateFromStores1, stateFromStores);
   ({ changelog: changelog2, loaded: loaded2 } = useChangelog(stateFromStores3, stateFromStores));

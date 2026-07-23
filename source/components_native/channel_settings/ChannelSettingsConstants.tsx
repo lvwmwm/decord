@@ -1,10 +1,9 @@
-// Module ID: 15381
-// Function ID: 117257
+// Module ID: 15498
+// Function ID: 119431
 // Name: ChannelSettingsAutoFocusElement
-// Dependencies: []
+// Dependencies: [2]
 
-// Module 15381 (ChannelSettingsAutoFocusElement)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("components_native/channel_settings/ChannelSettingsConstants.tsx");
+// Module 15498 (ChannelSettingsAutoFocusElement)
+const result = require("set").fileFinishedImporting("components_native/channel_settings/ChannelSettingsConstants.tsx");
 
 export const ChannelSettingsAutoFocusElement = { CHANNEL_NAME: "channel-name" };

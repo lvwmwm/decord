@@ -1,0 +1,11 @@
+// Module ID: 7806
+// Function ID: 62297
+// Name: registerAsset
+// Dependencies: [1217]
+
+// Module 7806 (registerAsset)
+import registerAsset from "registerAsset";
+
+const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/guild_sidebar", width: 24, height: 24, scales: [2, 3], hash: "ff39eeadf9f2f52f7094ca9f3833e97b", name: "img_guild_folder", type: "png" };
+
+export default registerAsset.registerAsset(obj);

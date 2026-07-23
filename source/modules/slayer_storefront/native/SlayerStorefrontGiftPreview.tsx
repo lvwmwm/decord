@@ -1,10 +1,18 @@
-// Module ID: 8205
-// Function ID: 64883
+// Module ID: 8211
+// Function ID: 64920
 // Name: WarningBox
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 8212, 4126, 1212, 8214, 3104, 2]
 // Exports: default
 
-// Module 8205 (WarningBox)
+// Module 8211 (WarningBox)
+import "result";
+import { View } from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function WarningBox(application) {
   let canStartAuthorization;
   let hasAccountLinked;
@@ -18,9 +26,9 @@ function WarningBox(application) {
   } else {
     let obj = {};
     let tmp8 = dependencyMap;
-    obj.look = arg1(dependencyMap[7]).InfoBoxLooks.WARNING;
+    obj.look = require(8214) /* InfoBox */.InfoBoxLooks.WARNING;
     obj.style = tmp.warningBox;
-    const intl = arg1(dependencyMap[6]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     if (mobileAccountLinkingDisabled) {
       obj = {};
       tmp8 = name == application;
@@ -29,7 +37,7 @@ function WarningBox(application) {
         name = application.name;
       }
       obj.applicationName = name;
-      obj.children = intl.formatToPlainString(importDefault(tmp8[8]).BMMo2K, obj);
+      obj.children = intl.formatToPlainString(importDefault(3104).BMMo2K, obj);
       let tmp9 = obj;
     } else if (canStartAuthorization) {
       obj = { skuName: sku.name };
@@ -38,24 +46,20 @@ function WarningBox(application) {
         name1 = application.name;
       }
       obj.applicationName = name1;
-      obj.children = intl.formatToPlainString(tmp7(tmp8[6]).t.EgCl+Q, obj);
+      obj.children = intl.formatToPlainString(tmp7(1212).t["EgCl+Q"], obj);
       tmp9 = obj;
     } else {
-      obj.children = intl.format(tmp7(tmp8[6]).t.3T0cpx, {});
+      obj.children = intl.format(tmp7(1212).t["3T0cpx"], {});
       tmp9 = obj;
     }
-    closure_4(importDefault(dependencyMap[7]), tmp9);
+    closure_4(importDefault(8214), tmp9);
     const tmp3 = closure_4;
-    const tmp6 = importDefault(dependencyMap[7]);
+    const tmp6 = importDefault(8214);
   }
 }
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-let closure_6 = arg1(dependencyMap[3]).createStyles({ container: {}, text: { "Bool(true)": null, "Bool(true)": null }, warningBox: { marginHorizontal: 16 } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx");
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { alignItems: "center", justifyContent: "center", gap: 16, marginTop: 20 }, text: { textAlign: "center", paddingHorizontal: 32 }, warningBox: { marginHorizontal: 16 } });
+const result = require("jsxProd").fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx");
 
 export default function SlayerStorefrontGiftPreview(arg0) {
   let application;
@@ -74,17 +78,17 @@ export default function SlayerStorefrontGiftPreview(arg0) {
   if (null != sku) {
     let obj = { style: tmp.container };
     obj = { sku };
-    const items = [callback(importDefault(dependencyMap[4]), obj), , ];
-    obj = { style: tmp.text };
-    const intl = arg1(dependencyMap[6]).intl;
+    const items = [callback(importDefault(8212), obj), , ];
+    obj = { variant: "heading-md/normal", color: "mobile-text-heading-primary", style: tmp.text };
+    const intl = require(1212) /* getSystemLocale */.intl;
     const obj1 = { sender, skuName: sku.name };
     let name;
     if (null != application) {
       name = application.name;
     }
     obj1.applicationName = name;
-    obj.children = intl.formatToPlainString(arg1(dependencyMap[6]).t.2tBYtA, obj1);
-    items[1] = callback(arg1(dependencyMap[5]).Text, obj);
+    obj.children = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["2tBYtA"], obj1);
+    items[1] = callback(require(4126) /* Text */.Text, obj);
     const obj2 = { canStartAuthorization, hasAccountLinked, mobileAccountLinkingDisabled, sku, application };
     items[2] = callback(WarningBox, obj2);
     obj.children = items;

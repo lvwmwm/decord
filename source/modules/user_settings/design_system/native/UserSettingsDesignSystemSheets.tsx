@@ -1,10 +1,20 @@
-// Module ID: 14349
-// Function ID: 108343
+// Module ID: 14463
+// Function ID: 110496
 // Name: DemoActionSheet
-// Dependencies: []
+// Dependencies: [57, 31, 27, 653, 33, 4130, 5500, 5186, 8390, 5501, 4541, 7512, 5502, 4098, 1324, 4543, 1212, 11548, 5919, 12699, 5167, 4126, 2]
 // Exports: default
 
-// Module 14349 (DemoActionSheet)
+// Module 14463 (DemoActionSheet)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { ScrollView } from "get ActivityIndicator";
+import { NOOP } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+let require = arg1;
 function DemoActionSheet() {
   let tmp11;
   let tmp12;
@@ -17,7 +27,7 @@ function DemoActionSheet() {
   const tmp5 = callback(React.useState("Header title"), 2);
   const first2 = tmp5[0];
   [tmp8, tmp9] = callback(React.useState("Header subtitle"), 2);
-  const arg1 = tmp9;
+  const require = tmp9;
   const tmp7 = callback(React.useState("Header subtitle"), 2);
   [tmp11, tmp12] = callback(React.useState("Reset"), 2);
   const importDefault = tmp12;
@@ -31,39 +41,37 @@ function DemoActionSheet() {
   let tmp16 = first1;
   if (first1) {
     obj = { onPress: NOOP, label: tmp11 };
-    tmp16 = callback2(arg1(dependencyMap[8]).ActionSheetHeaderPressableText, obj);
+    tmp16 = callback2(require(8390) /* ActionSheetHeaderPressableText */.ActionSheetHeaderPressableText, obj);
   }
   obj.leading = tmp16;
   let tmp21 = first;
   if (first) {
     const obj1 = { onPress: NOOP };
-    tmp21 = callback2(arg1(dependencyMap[9]).ActionSheetCloseButton, obj1);
+    tmp21 = callback2(require(5501) /* ActionSheetCloseButton */.ActionSheetCloseButton, obj1);
   }
   obj.trailing = tmp21;
-  obj.header = callback2(arg1(dependencyMap[7]).BottomSheetTitleHeader, obj);
+  obj.header = callback2(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   const obj2 = { spacing: 24 };
   const obj3 = {};
-  const items = [callback2(arg1(dependencyMap[11]).TextInput, { value: first2, onChange: tmp5[1], label: "Title" }), ];
+  const items = [callback2(require(7512) /* TextInput */.TextInput, { value: first2, onChange: tmp5[1], label: "Title" }), ];
   const obj4 = {
-    <string:1423742108>: null,
-    <string:927116457>: null,
-    <string:445017132>: null,
-    <string:2589221473>: null,
-    <string:730247174>: null,
     value: tmp8,
     onChange: tmp9,
+    label: "Subtitle",
+    maxLength: 100,
+    isClearable: true,
     onClear() {
       return tmp9("");
     }
   };
-  items[1] = callback2(arg1(dependencyMap[11]).TextInput, obj4);
+  items[1] = callback2(require(7512) /* TextInput */.TextInput, obj4);
   obj3.children = items;
-  const items1 = [callback3(arg1(dependencyMap[10]).Stack, obj3), , ];
+  const items1 = [callback3(require(4541) /* Stack */.Stack, obj3), , ];
   const obj5 = { hasIcons: false };
-  const items2 = [callback2(arg1(dependencyMap[12]).ActionSheetSwitchRow, { value: first1, onValueChange: tmp3[1], label: "Show Leading" }), callback2(arg1(dependencyMap[12]).ActionSheetSwitchRow, { value: first, onValueChange: tmp[1], label: "Show Trailing" })];
+  const items2 = [callback2(require(5502) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: first1, onValueChange: tmp3[1], label: "Show Leading" }), callback2(require(5502) /* ActionSheetRowIcon */.ActionSheetSwitchRow, { value: first, onValueChange: tmp[1], label: "Show Trailing" })];
   obj5.children = items2;
-  items1[1] = callback3(arg1(dependencyMap[12]).ActionSheetRow.Group, obj5);
-  items1[2] = callback2(arg1(dependencyMap[11]).TextInput, {
+  items1[1] = callback3(require(5502) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj5);
+  items1[2] = callback2(require(7512) /* TextInput */.TextInput, {
     value: tmp11,
     onChange: tmp12,
     label: "Leading",
@@ -74,44 +82,38 @@ function DemoActionSheet() {
     }
   });
   obj2.children = items1;
-  obj.children = callback3(arg1(dependencyMap[10]).Stack, obj2);
-  return callback2(arg1(dependencyMap[6]).ActionSheet, obj);
+  obj.children = callback3(require(4541) /* Stack */.Stack, obj2);
+  return callback2(require(5500) /* ActionSheet */.ActionSheet, obj);
 }
 function showDemoPromoSheet() {
-  importDefault(dependencyMap[13]).openLazy(() => Promise.resolve(closure_12), "promo-sheet-demo");
+  importDefault(4098).openLazy(() => Promise.resolve(outer1_12), "promo-sheet-demo");
 }
 function DemoPromoSheet() {
   let obj = {
     size: "lg",
     onPress() {
-      return callback(closure_2[13]).hideActionSheet("promo-sheet-demo");
+      return outer1_1(outer1_2[13]).hideActionSheet("promo-sheet-demo");
     }
   };
-  const intl = arg1(dependencyMap[16]).intl;
-  obj.text = intl.string(arg1(dependencyMap[16]).t.BddRzS);
-  const tmp2 = callback2(arg1(dependencyMap[15]).Button, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.text = intl.string(require(1212) /* getSystemLocale */.t.BddRzS);
+  const tmp2 = callback2(require(4543) /* Button */.Button, obj);
   if (tmp) {
-    obj = { right: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002782684651255406, paddingHorizontal: 218315751426.2136, alignItems: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002422343075918114, accessibilityRole: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004285670279133274 };
-    obj = {};
-    const obj1 = { uri: importDefault(dependencyMap[18]) };
+    obj = { graphic: null, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!" };
+    obj = { type: "image", src: null, aspectRatio: "16/9" };
+    const obj1 = { uri: importDefault(5919) };
     obj.src = obj1;
     obj.graphic = obj;
     obj.actions = tmp2;
     let obj2 = obj;
   } else {
-    obj2 = { illustration: callback2(importDefault(dependencyMap[19]), {}), actions: tmp2 };
+    obj2 = { illustration: callback2(importDefault(12699), {}), title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp2 };
   }
-  return callback2(arg1(dependencyMap[17]).PromoSheet, obj2);
+  return callback2(require(11548) /* PromoSheet */.PromoSheet, obj2);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const ScrollView = arg1(dependencyMap[2]).ScrollView;
-const NOOP = arg1(dependencyMap[3]).NOOP;
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: {} });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSheets.tsx");
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ container: { padding: 16, alignItems: "center" } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSheets.tsx");
 
 export default function UserSettingsDesignSystemSheets() {
   let obj = { contentContainerStyle: callback4().container };
@@ -119,25 +121,25 @@ export default function UserSettingsDesignSystemSheets() {
   obj = {};
   const obj1 = {};
   const items = [
-    callback2(arg1(dependencyMap[21]).Text, { <string:2807142664>: "text-md/medium", <string:1446667417>: "text-subtle" }),
-    callback2(arg1(dependencyMap[21]).Text, { category: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023545396678816087, position: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016847992570235595, top: 0.0005493173135349141 }),
-    callback2(arg1(dependencyMap[15]).Button, {
+    callback2(require(4126) /* Text */.Text, { variant: "text-lg/bold", children: "Action Sheet with Title Header" }),
+    callback2(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "An action sheet with a centered title and subtitle, with optional leading and Trailing elements." }),
+    callback2(require(4543) /* Button */.Button, {
       onPress() {
-        callback(closure_2[13]).openLazy(() => Promise.resolve(closure_10), "demo-sheet");
+        outer1_1(outer1_2[13]).openLazy(() => Promise.resolve(outer2_10), "demo-sheet");
       },
       text: "Show Action Sheet"
     })
   ];
   obj1.children = items;
-  obj.children = callback3(arg1(dependencyMap[10]).Stack, obj1);
-  const items1 = [callback2(arg1(dependencyMap[20]).Card, obj), ];
+  obj.children = callback3(require(4541) /* Stack */.Stack, obj1);
+  const items1 = [callback2(require(5167) /* getCardBackgroundToken */.Card, obj), ];
   const obj3 = {};
   const obj4 = {};
-  const items2 = [callback2(arg1(dependencyMap[21]).Text, { <string:2807142664>: "text-md/medium", <string:1446667417>: "text-subtle" }), callback2(arg1(dependencyMap[21]).Text, { category: 4145664, position: 2138636290, top: 1783693313 }), callback2(arg1(dependencyMap[15]).Button, { onPress: showDemoPromoSheet, text: "Show Promo Sheet" })];
+  const items2 = [callback2(require(4126) /* Text */.Text, { variant: "text-lg/bold", children: "Promo Sheet" }), callback2(require(4126) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", children: "A sheet with an illustration, title, description, and actions." }), callback2(require(4543) /* Button */.Button, { onPress: showDemoPromoSheet, text: "Show Promo Sheet" })];
   obj4.children = items2;
-  obj3.children = callback3(arg1(dependencyMap[10]).Stack, obj4);
-  items1[1] = callback2(arg1(dependencyMap[20]).Card, obj3);
+  obj3.children = callback3(require(4541) /* Stack */.Stack, obj4);
+  items1[1] = callback2(require(5167) /* getCardBackgroundToken */.Card, obj3);
   obj.children = items1;
-  obj.children = callback3(arg1(dependencyMap[10]).Stack, obj);
+  obj.children = callback3(require(4541) /* Stack */.Stack, obj);
   return callback2(ScrollView, obj);
 };

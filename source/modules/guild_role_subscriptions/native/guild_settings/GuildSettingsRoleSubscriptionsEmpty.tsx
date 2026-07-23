@@ -1,23 +1,32 @@
-// Module ID: 16256
-// Function ID: 125584
+// Module ID: 16373
+// Function ID: 127758
 // Name: GuildSettingsRoleSubscriptionsEmptyContent
-// Dependencies: []
+// Dependencies: [31, 1838, 653, 4156, 33, 1456, 16374, 16375, 16376, 566, 2]
 // Exports: default
 
-// Module 16256 (GuildSettingsRoleSubscriptionsEmptyContent)
+// Module 16373 (GuildSettingsRoleSubscriptionsEmptyContent)
+import "result";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import { ApplicationTypes } from "ApplicationTypes";
+import { jsx } from "jsxProd";
+
+let closure_4;
+let closure_5;
+const require = arg1;
 function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   guild = guild.guild;
-  let obj = arg1(dependencyMap[5]);
+  let obj = require(1456) /* useNavigation */;
   const str = obj.useNavigation();
   if (tmp.loading) {
-    let tmp8 = jsx(importDefault(dependencyMap[7]), {});
+    let tmp8 = jsx(importDefault(16375), {});
   } else {
     const features = guild.features;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
       const features2 = guild.features;
       if (!features2.has(constants.CREATOR_MONETIZABLE_PROVISIONAL)) {
         obj = { guild };
-        tmp8 = jsx(importDefault(dependencyMap[8]), obj);
+        tmp8 = jsx(importDefault(16376), { guild });
       }
     }
     if (null == tmp2) {
@@ -30,24 +39,19 @@ function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   }
   return tmp8;
 }
-importAll(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-({ GuildFeatures: closure_4, GuildSettingsSections: closure_5 } = arg1(dependencyMap[2]));
-const ApplicationTypes = arg1(dependencyMap[3]).ApplicationTypes;
-const jsx = arg1(dependencyMap[4]).jsx;
-const tmp3 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEmpty.tsx");
+({ GuildFeatures: closure_4, GuildSettingsSections: closure_5 } = ME);
+const result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEmpty.tsx");
 
 export default function GuildSettingsRoleSubscriptionsEmpty(guildId) {
-  const arg1 = guildId.guildId;
-  let obj = arg1(dependencyMap[9]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => guild.getGuild(guildId));
+  guildId = guildId.guildId;
+  let obj = guildId(566);
+  const items = [_createForOfIteratorHelperLoose];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getGuild(guildId));
   if (null == stateFromStores) {
-    let tmp4 = jsx(importDefault(dependencyMap[7]), {});
+    let tmp4 = jsx(importDefault(16375), {});
   } else {
     obj = { guild: stateFromStores };
-    tmp4 = <GuildSettingsRoleSubscriptionsEmptyContent {...obj} />;
+    tmp4 = <GuildSettingsRoleSubscriptionsEmptyContent guild={stateFromStores} />;
   }
   return tmp4;
 };

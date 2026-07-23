@@ -1,15 +1,28 @@
-// Module ID: 12991
-// Function ID: 98884
+// Module ID: 13105
+// Function ID: 101040
 // Name: EmptyState
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 5052, 689, 7533, 4543, 3976, 2]
 // Exports: ThemedEmptyState
 
-// Module 12991 (EmptyState)
+// Module 13105 (EmptyState)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import { Fonts } from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importDefaultResult from "createTextStyle";
+import importDefaultResult1 from "createTextStyle";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+const require = arg1;
 class EmptyState {
   constructor(arg0) {
     ({ source, title, callToAction } = global);
     ({ body, containerStyle, imageStyle, titleStyle, bodyStyle } = global);
-    tmp = closure_7();
+    tmp = c7();
     obj = { style: items };
     items = [, ];
     items[0] = tmp.container;
@@ -33,8 +46,8 @@ class EmptyState {
     tmp7 = null;
     if (null != title) {
       tmp8 = jsx;
-      tmp9 = importDefault;
-      tmp10 = dependencyMap;
+      tmp9 = closure_1;
+      tmp10 = closure_2;
       num = 7;
       obj1 = {};
       items3 = [, ];
@@ -42,13 +55,13 @@ class EmptyState {
       items3[1] = titleStyle;
       obj1.style = items3;
       obj1.children = title;
-      tmp7 = jsx(importDefault(dependencyMap[7]), obj1);
+      tmp7 = jsx(require("module_7533"), obj1);
     }
     items2[1] = tmp7;
     items4 = [, ];
     items4[0] = tmp.body;
     items4[1] = bodyStyle;
-    items2[2] = jsx(importDefault(dependencyMap[7]), { style: items4, children: body });
+    items2[2] = jsx(require("module_7533"), { style: items4, children: body });
     tmp11 = null;
     if (null != callToAction) {
       tmp12 = jsx;
@@ -56,8 +69,8 @@ class EmptyState {
       obj2 = {};
       obj2.style = tmp.cta;
       tmp14 = jsx;
-      tmp15 = arg1;
-      tmp16 = dependencyMap;
+      tmp15 = closure_0;
+      tmp16 = closure_2;
       num2 = 8;
       obj3 = {};
       flag = true;
@@ -65,7 +78,7 @@ class EmptyState {
       ({ label: obj5.text, onPress: obj5.onPress } = callToAction);
       str = "sm";
       obj3.size = "sm";
-      obj2.children = jsx(arg1(dependencyMap[8]).Button, obj3);
+      obj2.children = jsx(require("Button").Button, obj3);
       tmp11 = jsx(View, obj2);
     }
     items2[3] = tmp11;
@@ -73,29 +86,22 @@ class EmptyState {
     return tmp2(tmp3, obj);
   }
 }
-importAll(dependencyMap[0]);
-({ View: closure_3, Image: closure_4 } = arg1(dependencyMap[1]));
-const Fonts = arg1(dependencyMap[2]).Fonts;
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_5, jsxs: closure_6 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = { container: { 0: null, 9223372036854775807: null, 0: null } };
-obj = {};
-const tmp4 = arg1(dependencyMap[3]);
-const merged = Object.assign(importDefault(dependencyMap[5])(Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[6]).colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
-obj["textAlign"] = "center";
-obj["marginBottom"] = 8;
-obj.title = obj;
-const obj1 = {};
-const importDefaultResult = importDefault(dependencyMap[5]);
-const merged1 = Object.assign(importDefault(dependencyMap[5])(Fonts.PRIMARY_MEDIUM, importDefault(dependencyMap[6]).colors.TEXT_SUBTLE, 14));
+({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
+({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
+_createForOfIteratorHelperLoose = { container: { alignItems: "center", justifyContent: "center", padding: 16 } };
+_createForOfIteratorHelperLoose = {};
+let merged = Object.assign(require("createTextStyle")(Fonts.DISPLAY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 16));
+_createForOfIteratorHelperLoose["textAlign"] = "center";
+_createForOfIteratorHelperLoose["marginBottom"] = 8;
+_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
+let obj1 = {};
+let merged1 = Object.assign(require("createTextStyle")(Fonts.PRIMARY_MEDIUM, require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, 14));
 obj1["textAlign"] = "center";
-obj.body = obj1;
-obj.image = { marginBottom: 32 };
-obj.cta = { 1817312097: 52881784.83212474, 1386242432: 0.0000000000000000000000000000000000000000000000000000000000000000000000011319598867188059 };
-let closure_7 = obj.createStyles(obj);
-const importDefaultResult1 = importDefault(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("design/void/RefreshEmptyState/native/RefreshEmptyState.tsx");
+_createForOfIteratorHelperLoose.body = obj1;
+_createForOfIteratorHelperLoose.image = { marginBottom: 32 };
+_createForOfIteratorHelperLoose.cta = { alignSelf: "center", marginTop: 16 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("ME").fileFinishedImporting("design/void/RefreshEmptyState/native/RefreshEmptyState.tsx");
 
 export default EmptyState;
 export const ThemedEmptyState = function ThemedEmptyState(darkSource) {
@@ -104,7 +110,7 @@ export const ThemedEmptyState = function ThemedEmptyState(darkSource) {
   obj.lightSource = 0;
   obj.darkSource = 0;
   const merged = Object.assign(darkSource, obj);
-  obj = arg1(dependencyMap[9]);
+  obj = require(3976) /* AccessibilityAnnouncer */;
   if (obj2.isThemeLight(obj.useThemeContext().theme)) {
     lightSource = darkSource.lightSource;
   }

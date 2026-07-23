@@ -1,13 +1,12 @@
-// Module ID: 6914
-// Function ID: 55095
+// Module ID: 6919
+// Function ID: 55129
 // Name: getDeviceMetadata
-// Dependencies: []
+// Dependencies: [6707, 2]
 // Exports: default
 
-// Module 6914 (getDeviceMetadata)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/device/getDeviceMetadata.native.tsx");
+// Module 6919 (getDeviceMetadata)
+const result = require("set").fileFinishedImporting("modules/device/getDeviceMetadata.native.tsx");
 
 export default function getDeviceMetadata() {
-  return require(dependencyMap[0]).getDeviceMetadata();
+  return require(6707) /* _createForOfIteratorHelperLoose */.getDeviceMetadata();
 };

@@ -1,15 +1,19 @@
-// Module ID: 6684
-// Function ID: 51490
+// Module ID: 6689
+// Function ID: 51522
 // Name: _isNativeReflectConstruct
-// Dependencies: [0, 0, 0, 4294967295, 4294967295, 0, 0, 0, 0, 4294967295, 0, 4294967295]
+// Dependencies: [6, 7, 15, 17, 18, 1849, 653, 6690, 686, 663, 566, 2]
 
-// Module 6684 (_isNativeReflectConstruct)
-import __exportStarResult1 from "__exportStarResult1";
-import closure_4 from "__exportStarResult1";
-import closure_5 from "__exportStarResult1";
-import closure_8 from "__exportStarResult1";
-import { NOOP_NULL } from "__exportStarResult1";
+// Module 6689 (_isNativeReflectConstruct)
+import ME from "ME";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { NOOP_NULL } from "ME";
+import set from "_possibleConstructorReturn";
 
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -19,49 +23,49 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -72,16 +76,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -106,14 +110,13 @@ function handleReferralTrialResolve(content) {
 }
 function handleLoadMessages(messages) {
   messages = messages.messages;
-  const item = messages.forEach((arg0) => callback(arg0));
+  const item = messages.forEach((arg0) => outer1_31(arg0));
 }
 function resolveUserReferralTrialId(message) {
   let content = null;
-  if (message.type === arg1(dependencyMap[9]).MessageTypes.PREMIUM_REFERRAL) {
+  if (message.type === content(663).MessageTypes.PREMIUM_REFERRAL) {
     content = message.content;
   }
-  const arg1 = content;
   if (null == content) {
     return false;
   } else {
@@ -123,45 +126,43 @@ function resolveUserReferralTrialId(message) {
     }
     if (!hasItem) {
       handleReferralTrialResolve(content);
-      importDefault(dependencyMap[8]).wait(() => {
-        const referralTrialOffer = content(closure_2[7]).resolveReferralTrialOffer(content);
-        return referralTrialOffer.catch(closure_9);
+      importDefault(686).wait(() => {
+        const referralTrialOffer = content(outer1_2[7]).resolveReferralTrialOffer(content);
+        return referralTrialOffer.catch(outer1_9);
       });
-      const obj = importDefault(dependencyMap[8]);
+      const obj = importDefault(686);
     }
   }
 }
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_10 = null;
-const set = new Set();
-const map = new Map();
-let closure_13 = false;
-const set1 = new Set();
-const set2 = new Set();
-const map1 = new Map();
-let closure_17 = 0;
-let closure_18 = null;
+let c10 = null;
+let set = new Set();
+let map = new Map();
+let c13 = false;
+let set1 = new Set();
+let set2 = new Set();
+let map1 = new Map();
+let c17 = 0;
+let c18 = null;
 let closure_19 = [];
-let closure_20 = false;
-let closure_21 = 0;
-let closure_22 = false;
-let closure_23 = false;
-let closure_24 = null;
-let closure_25 = null;
-let tmp7 = (Store) => {
+let c20 = false;
+let c21 = 0;
+let c22 = false;
+let c23 = false;
+let c24 = null;
+let c25 = null;
+let tmp7 = ((Store) => {
   class ReferralTrialStore {
     constructor() {
       self = this;
-      tmp = __exportStarResult1(this, ReferralTrialStore);
-      obj = closure_6(ReferralTrialStore);
-      tmp2 = closure_5;
-      if (closure_26()) {
+      tmp = outer1_3(this, ReferralTrialStore);
+      obj = outer1_6(ReferralTrialStore);
+      tmp2 = outer1_5;
+      if (outer1_26()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_6;
+        tmp7 = outer1_6;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_6(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -170,38 +171,37 @@ let tmp7 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  const arg1 = ReferralTrialStore;
   callback2(ReferralTrialStore, Store);
   let obj = {
     key: "initialize",
     value() {
-      this.waitFor(closure_8);
-      const items = [closure_8];
-      this.syncWith(items, closure_29);
+      this.waitFor(outer1_8);
+      const items = [outer1_8];
+      this.syncWith(items, outer1_29);
     }
   };
-  const items = [obj, , , , , , , , , , , , , , , ];
+  let items = [obj, , , , , , , , , , , , , , , ];
   obj = {
     key: "checkAndFetchReferralsRemaining",
     value() {
-      let tmp = null == closure_10;
+      let tmp = null == outer1_10;
       if (tmp) {
-        tmp = !closure_13;
+        tmp = !outer1_13;
       }
       if (tmp) {
-        tmp = closure_17 < 6;
+        tmp = outer1_17 < 6;
       }
       if (tmp) {
-        let tmp5 = null == closure_18;
+        let tmp5 = null == outer1_18;
         if (!tmp5) {
           const _Date = Date;
-          tmp5 = closure_18 < Date.now();
+          tmp5 = outer1_18 < Date.now();
         }
         tmp = tmp5;
       }
       if (tmp) {
-        const referralsRemaining = ReferralTrialStore(closure_2[7]).fetchReferralsRemaining();
-        const obj = ReferralTrialStore(closure_2[7]);
+        const referralsRemaining = ReferralTrialStore(outer1_2[7]).fetchReferralsRemaining();
+        const obj = ReferralTrialStore(outer1_2[7]);
       }
     }
   };
@@ -221,7 +221,7 @@ let tmp7 = (Store) => {
       if (!flag) {
         const result = self.checkAndFetchReferralsRemaining();
       }
-      return closure_10;
+      return outer1_10;
     }
   };
   items[2] = obj;
@@ -229,99 +229,98 @@ let tmp7 = (Store) => {
     key: "getSentUserIds",
     value() {
       const result = this.checkAndFetchReferralsRemaining();
-      return Array.from(closure_11.values());
+      return Array.from(outer1_11.values());
     }
   };
   items[4] = {
     key: "isFetchingReferralsRemaining",
     value() {
-      return closure_13;
+      return outer1_13;
     }
   };
   items[5] = {
     key: "getRelevantUserTrialOffer",
     value(arg0) {
-      return closure_16.get(arg0);
+      return outer1_16.get(arg0);
     }
   };
   items[6] = {
     key: "isResolving",
     value(arg0) {
-      return set.has(arg0);
+      return outer1_14.has(arg0);
     }
   };
   items[7] = {
     key: "getEligibleUsers",
     value() {
-      return closure_19;
+      return outer1_19;
     }
   };
   items[8] = {
     key: "getFetchingEligibleUsers",
     value() {
-      return closure_20;
+      return outer1_20;
     }
   };
   items[9] = {
     key: "getNextIndexOfEligibleUsers",
     value() {
-      return closure_21;
+      return outer1_21;
     }
   };
   items[10] = {
     key: "getIsEligibleToSendReferrals",
     value() {
-      return closure_22;
+      return outer1_22;
     }
   };
   items[11] = {
     key: "getHasEligibleFriends",
     value() {
-      return closure_23;
+      return outer1_23;
     }
   };
   items[12] = {
     key: "getRefreshAt",
     value() {
-      return closure_24;
+      return outer1_24;
     }
   };
   items[13] = {
     key: "getAllRelevantReferralTrialOffers",
     value() {
-      return Array.from(closure_16.values());
+      return Array.from(outer1_16.values());
     }
   };
   items[14] = {
     key: "getRecipientStatus",
     value() {
-      return closure_12;
+      return outer1_12;
     }
   };
   items[15] = {
     key: "getReminderStateId",
     value() {
-      return closure_25;
+      return outer1_25;
     }
   };
   return callback(ReferralTrialStore, items);
-}(require("__exportStarResult1").Store);
+})(require("initialize").Store);
 tmp7.displayName = "ReferralTrialStore";
-tmp7 = new tmp7(require("__exportStarResult1"), {
+tmp7 = new tmp7(require("dispatcher"), {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function handleReferralTrialOfferUpdate(userTrialOfferId) {
     userTrialOfferId = userTrialOfferId.userTrialOfferId;
-    const arg1 = userTrialOfferId;
-    if (!closure_13) {
-      const referralsRemaining = arg1(dependencyMap[7]).fetchReferralsRemaining();
-      const obj = arg1(dependencyMap[7]);
+    if (!c13) {
+      const referralsRemaining = userTrialOfferId(6690).fetchReferralsRemaining();
+      const obj = userTrialOfferId(6690);
     }
     if (!set1.has(userTrialOfferId)) {
       handleReferralTrialResolve(userTrialOfferId);
-      importDefault(dependencyMap[8]).wait(() => {
-        const referralTrialOffer = userTrialOfferId(closure_2[7]).resolveReferralTrialOffer(userTrialOfferId);
-        return referralTrialOffer.catch(closure_9);
+      importDefault(686).wait(() => {
+        const referralTrialOffer = userTrialOfferId(outer1_2[7]).resolveReferralTrialOffer(userTrialOfferId);
+        return referralTrialOffer.catch(outer1_9);
       });
-      const obj2 = importDefault(dependencyMap[8]);
+      const obj2 = importDefault(686);
     }
   },
   BILLING_REFERRALS_REMAINING_FETCH_START: function handleReferralsRemainingFetchStart(arg0) {
@@ -329,42 +328,40 @@ tmp7 = new tmp7(require("__exportStarResult1"), {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      let closure_24 = null;
-      let closure_13 = true;
+      let c24 = null;
+      let c13 = true;
     }
   },
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: function handleReferralsRemainingFetchSuccess(has_eligible_friends) {
     let recipient_status;
     let refresh_at;
     let reminder_state_id;
-    let closure_22 = true;
+    let c22 = true;
     has_eligible_friends = has_eligible_friends.has_eligible_friends;
-    let closure_13 = false;
+    let c13 = false;
     const referrals_remaining = has_eligible_friends.referrals_remaining;
     ({ refresh_at, recipient_status, reminder_state_id } = has_eligible_friends);
     const set = new Set(has_eligible_friends.sent_user_ids);
-    let closure_24 = refresh_at;
-    let closure_25 = reminder_state_id;
-    let closure_17 = 0;
-    let closure_18 = null;
+    let c17 = 0;
+    let c18 = null;
   },
   BILLING_REFERRALS_REMAINING_FETCH_FAIL: function handleReferralsRemainingFetchFail(arg0) {
     if (arg0 == null) {
       HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
       throw undefined;
     } else {
-      let closure_22 = false;
-      let closure_23 = false;
-      let closure_24 = null;
-      let closure_13 = false;
-      const sum = closure_17 + 1;
-      closure_17 = sum;
+      let c22 = false;
+      let c23 = false;
+      let c24 = null;
+      let c13 = false;
+      const sum = c17 + 1;
+      c17 = sum;
       if (sum <= 3) {
         const _Math2 = Math;
-        let result = 1000 * Math.pow(2, closure_17);
+        let result = 1000 * Math.pow(2, c17);
       } else {
         const _Math = Math;
-        result = 8000 * Math.pow(4, closure_17 - 3);
+        result = 8000 * Math.pow(4, c17 - 3);
       }
       const _Date = Date;
       const _Math3 = Math;
@@ -374,22 +371,22 @@ tmp7 = new tmp7(require("__exportStarResult1"), {
   },
   BILLING_CREATE_REFERRAL_SUCCESS: function handleCreateReferralSuccess(userTrialOffer) {
     userTrialOffer = userTrialOffer.userTrialOffer;
-    const referralsRemaining = arg1(dependencyMap[7]).fetchReferralsRemaining();
+    const referralsRemaining = require(6690) /* _createForOfIteratorHelperLoose */.fetchReferralsRemaining();
     const result = map1.set(userTrialOffer.id, userTrialOffer);
     set.add(userTrialOffer.user_id);
   },
   CREATE_REFERRALS_SUCCESS: function handleCreateReferralsSuccess(userTrialOffers) {
     let done;
-    const referralsRemaining = arg1(dependencyMap[7]).fetchReferralsRemaining();
+    const referralsRemaining = require(6690) /* _createForOfIteratorHelperLoose */.fetchReferralsRemaining();
     const tmp2 = _createForOfIteratorHelperLoose(userTrialOffers.userTrialOffers);
     let iter = tmp2();
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp3 = closure_16;
-        let result = closure_16.set(value.id, value);
-        let tmp5 = closure_11;
-        let addResult = closure_11.add(value.user_id);
+        let tmp3 = map1;
+        let result = map1.set(value.id, value);
+        let tmp5 = set;
+        let addResult = set.add(value.user_id);
         let iter2 = tmp2();
         iter = iter2;
         done = iter2.done;
@@ -410,14 +407,16 @@ tmp7 = new tmp7(require("__exportStarResult1"), {
     set2.add(userTrialOfferId);
   },
   REFERRALS_FETCH_ELIGIBLE_USER_START: function handleReferralsFetchEligibleUsersStart() {
-    let closure_20 = true;
+    let c20 = true;
   },
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: function handleReferralsFetchEligibleUsersSuccess(arg0) {
-    let closure_20 = false;
-    ({ users: closure_19, nextIndex: closure_21 } = arg0);
+    let c21;
+    let closure_19;
+    let c20 = false;
+    ({ users: closure_19, nextIndex: c21 } = arg0);
   },
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: function handleReferralsFetchEligibleUsersFail() {
-    let closure_20 = false;
+    let c20 = false;
   },
   LOAD_MESSAGES_SUCCESS: handleLoadMessages,
   MESSAGE_CREATE: function handleMessage(message) {
@@ -425,26 +424,24 @@ tmp7 = new tmp7(require("__exportStarResult1"), {
   },
   LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
   LOGOUT: function handleReset() {
-    let closure_10 = null;
+    let c10 = null;
     const set = new Set();
-    let closure_13 = false;
+    let c13 = false;
     const set1 = new Set();
     const set2 = new Set();
-    let map = new Map();
-    let map1 = map;
-    let closure_17 = 0;
-    let closure_18 = null;
+    const map = new Map();
+    let c17 = 0;
+    let c18 = null;
     let closure_19 = [];
-    let closure_20 = false;
-    let closure_21 = 0;
-    let closure_22 = false;
-    let closure_23 = false;
-    let closure_24 = null;
-    map1 = new Map();
-    map = map1;
-    let closure_25 = null;
+    let c20 = false;
+    let c21 = 0;
+    let c22 = false;
+    let c23 = false;
+    let c24 = null;
+    const map1 = new Map();
+    let c25 = null;
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("modules/premium/ReferralTrialStore.tsx");
+let result = set.fileFinishedImporting("modules/premium/ReferralTrialStore.tsx");
 
 export default tmp7;

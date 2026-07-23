@@ -1,13 +1,15 @@
 // Module ID: 825
-// Function ID: 9218
+// Function ID: 9219
 // Name: getCurrentScope
-// Dependencies: []
+// Dependencies: [802, 818, 820, 806]
 
 // Module 825 (getCurrentScope)
+const require = arg1;
+const dependencyMap = arg6;
 function getCurrentScope() {
-  const mainCarrier = arg1(arg6[0]).getMainCarrier();
-  const obj = arg1(arg6[0]);
-  const asyncContextStrategy = arg1(arg6[1]).getAsyncContextStrategy(mainCarrier);
+  const mainCarrier = require(802) /* getSentryCarrier */.getMainCarrier();
+  const obj = require(802) /* getSentryCarrier */;
+  const asyncContextStrategy = require(818) /* getAsyncContextStrategy */.getAsyncContextStrategy(mainCarrier);
   return asyncContextStrategy.getCurrentScope();
 }
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
@@ -16,15 +18,15 @@ arg5.getClient = function getClient() {
 };
 arg5.getCurrentScope = getCurrentScope;
 arg5.getGlobalScope = function getGlobalScope() {
-  return arg1(arg6[0]).getGlobalSingleton("globalScope", () => {
-    const scope = new callback(closure_1[2]).Scope();
+  return require(802) /* getSentryCarrier */.getGlobalSingleton("globalScope", () => {
+    const scope = new outer1_0(outer1_1[2]).Scope();
     return scope;
   });
 };
 arg5.getIsolationScope = function getIsolationScope() {
-  const mainCarrier = arg1(arg6[0]).getMainCarrier();
-  const obj = arg1(arg6[0]);
-  const asyncContextStrategy = arg1(arg6[1]).getAsyncContextStrategy(mainCarrier);
+  const mainCarrier = require(802) /* getSentryCarrier */.getMainCarrier();
+  const obj = require(802) /* getSentryCarrier */;
+  const asyncContextStrategy = require(818) /* getAsyncContextStrategy */.getAsyncContextStrategy(mainCarrier);
   return asyncContextStrategy.getIsolationScope();
 };
 arg5.getTraceContextFromScope = function getTraceContextFromScope(getPropagationContext) {
@@ -33,8 +35,8 @@ arg5.getTraceContextFromScope = function getTraceContextFromScope(getPropagation
   const obj = { trace_id: propagationContext.traceId };
   let propagationSpanId = propagationContext.propagationSpanId;
   if (!propagationSpanId) {
-    propagationSpanId = arg1(arg6[3]).generateSpanId();
-    const obj2 = arg1(arg6[3]);
+    propagationSpanId = require(806) /* generateSpanId */.generateSpanId();
+    const obj2 = require(806) /* generateSpanId */;
   }
   obj.span_id = propagationSpanId;
   if (parentSpanId) {
@@ -45,9 +47,9 @@ arg5.getTraceContextFromScope = function getTraceContextFromScope(getPropagation
 arg5.withIsolationScope = function withIsolationScope() {
   let tmp2;
   let tmp3;
-  const mainCarrier = arg1(arg6[0]).getMainCarrier();
-  const obj = arg1(arg6[0]);
-  const asyncContextStrategy = arg1(arg6[1]).getAsyncContextStrategy(mainCarrier);
+  const mainCarrier = require(802) /* getSentryCarrier */.getMainCarrier();
+  const obj = require(802) /* getSentryCarrier */;
+  const asyncContextStrategy = require(818) /* getAsyncContextStrategy */.getAsyncContextStrategy(mainCarrier);
   const length = arguments.length;
   const arr = new Array(length);
   for (let num = 0; num < length; num = num + 1) {
@@ -64,14 +66,14 @@ arg5.withIsolationScope = function withIsolationScope() {
   } else {
     return asyncContextStrategy.withIsolationScope(arr[0]);
   }
-  const obj2 = arg1(arg6[1]);
+  const obj2 = require(818) /* getAsyncContextStrategy */;
 };
 arg5.withScope = function withScope() {
   let tmp2;
   let tmp3;
-  const mainCarrier = arg1(arg6[0]).getMainCarrier();
-  const obj = arg1(arg6[0]);
-  const asyncContextStrategy = arg1(arg6[1]).getAsyncContextStrategy(mainCarrier);
+  const mainCarrier = require(802) /* getSentryCarrier */.getMainCarrier();
+  const obj = require(802) /* getSentryCarrier */;
+  const asyncContextStrategy = require(818) /* getAsyncContextStrategy */.getAsyncContextStrategy(mainCarrier);
   const length = arguments.length;
   const arr = new Array(length);
   for (let num = 0; num < length; num = num + 1) {
@@ -88,5 +90,5 @@ arg5.withScope = function withScope() {
   } else {
     return asyncContextStrategy.withScope(arr[0]);
   }
-  const obj2 = arg1(arg6[1]);
+  const obj2 = require(818) /* getAsyncContextStrategy */;
 };

@@ -1,18 +1,20 @@
-// Module ID: 16412
-// Function ID: 126781
+// Module ID: 16529
+// Function ID: 128955
 // Name: AVErrorNoInputDevicesDefinition
-// Dependencies: []
+// Dependencies: [1348, 4177, 4202, 8857, 16528, 2]
 
-// Module 16412 (AVErrorNoInputDevicesDefinition)
-let closure_2 = importDefault(dependencyMap[0]);
-let closure_3 = importDefault(dependencyMap[1]);
-let closure_4 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[5]).fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoInputDevices.tsx");
+// Module 16529 (AVErrorNoInputDevicesDefinition)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_3 from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoInputDevices.tsx");
 
 export const AVErrorNoInputDevicesDefinition = {
   getActiveErrors(voiceState) {
     voiceState = voiceState.voiceState;
-    const channel = channel.getChannel(voiceState.voiceChannelId);
+    channel = channel.getChannel(voiceState.voiceChannelId);
     let isGuildStageVoiceResult;
     if (null != channel) {
       isGuildStageVoiceResult = channel.isGuildStageVoice();
@@ -28,8 +30,8 @@ export const AVErrorNoInputDevicesDefinition = {
       if (null != channel) {
         if (null != mediaSessionId.getMediaSessionId()) {
           if (!isGuildStageVoiceResult) {
-            const obj = { type: arg1(dependencyMap[3]).AVError.NO_INPUT_DEVICES };
-            const merged = Object.assign(arg1(dependencyMap[4]).getVoiceChannelErrorContext());
+            const obj = { type: require(8857) /* validateUniqueErrorCodes */.AVError.NO_INPUT_DEVICES };
+            const merged = Object.assign(require(16528) /* getCommonErrorContext */.getVoiceChannelErrorContext());
             const items = [obj];
             return items;
           }

@@ -1,19 +1,20 @@
-// Module ID: 14112
-// Function ID: 107124
+// Module ID: 14226
+// Function ID: 109280
 // Name: items
-// Dependencies: []
+// Dependencies: [31, 1861, 8515, 2]
 // Exports: useVisibleEffectOrder
 
-// Module 14112 (items)
-let closure_2 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-const EFFECT_ORDER = tmp2.EFFECT_ORDER;
-const items = [...tmp2.FLYWHEEL_EFFECTS];
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/display_name_styles/DisplayNameStylesEffectOrder.tsx");
+// Module 14226 (items)
+import result from "result";
+import items3 from "items3";
+
+const require = arg1;
+const EFFECT_ORDER = items3.EFFECT_ORDER;
+let items = [...tmp2.FLYWHEEL_EFFECTS];
+const result = require("apexExperiment").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesEffectOrder.tsx");
 
 export const useVisibleEffectOrder = function useVisibleEffectOrder() {
-  const isDisplayNameStylesFlywheelSettersEnabled = arg1(dependencyMap[2]).useIsDisplayNameStylesFlywheelSettersEnabled("effect-order");
-  const arg1 = isDisplayNameStylesFlywheelSettersEnabled;
+  isDisplayNameStylesFlywheelSettersEnabled = isDisplayNameStylesFlywheelSettersEnabled(8515).useIsDisplayNameStylesFlywheelSettersEnabled("effect-order");
   const items = [isDisplayNameStylesFlywheelSettersEnabled];
-  return React.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? closure_4 : closure_3, items);
+  return React.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? outer1_4 : outer1_3, items);
 };

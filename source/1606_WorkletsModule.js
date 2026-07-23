@@ -1,9 +1,10 @@
 // Module ID: 1606
-// Function ID: 17834
+// Function ID: 17835
 // Name: WorkletsModule
-// Dependencies: []
+// Dependencies: [27]
 
 // Module 1606 (WorkletsModule)
-const TurboModuleRegistry = require(dependencyMap[0]).TurboModuleRegistry;
+import { TurboModuleRegistry } from "get ActivityIndicator";
+
 
 export default TurboModuleRegistry.get("WorkletsModule");

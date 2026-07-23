@@ -1,16 +1,17 @@
-// Module ID: 12209
-// Function ID: 93781
+// Module ID: 12323
+// Function ID: 95932
 // Name: createDisplayNameStylesMobile
-// Dependencies: []
+// Dependencies: [4122, 1849, 2]
 // Exports: createDisplayNameStylesMobile
 
-// Module 12209 (createDisplayNameStylesMobile)
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/display_name_styles/native/createDisplayNameStylesMobile.tsx");
+// Module 12323 (createDisplayNameStylesMobile)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_1 from "_isNativeReflectConstruct";
+
+const result = require("set").fileFinishedImporting("modules/display_name_styles/native/createDisplayNameStylesMobile.tsx");
 
 export const createDisplayNameStylesMobile = function createDisplayNameStylesMobile(author, merged) {
-  const currentUser = currentUser.getCurrentUser();
+  currentUser = currentUser.getCurrentUser();
   let displayNameStyles = author.displayNameStyles;
   if (tmp2) {
     displayNameStyles = currentUser.displayNameStyles;
@@ -31,7 +32,7 @@ export const createDisplayNameStylesMobile = function createDisplayNameStylesMob
   }
   if (null != fontId) {
     if (obj.displayNameStylesEnabled) {
-      const obj = { fontId };
+      obj = { fontId };
       return obj;
     }
   }

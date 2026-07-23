@@ -1,35 +1,36 @@
-// Module ID: 8938
-// Function ID: 70451
+// Module ID: 8945
+// Function ID: 70492
 // Name: XboxLinkPreConnect
-// Dependencies: []
+// Dependencies: [31, 8938, 653, 33, 4130, 1456, 8946, 8947, 1212, 2]
 // Exports: default
 
-// Module 8938 (XboxLinkPreConnect)
-let closure_3 = importAll(dependencyMap[0]);
-const XboxLinkModalScenes = arg1(dependencyMap[1]).XboxLinkModalScenes;
-const PlatformTypes = arg1(dependencyMap[2]).PlatformTypes;
-const jsx = arg1(dependencyMap[3]).jsx;
-let closure_7 = arg1(dependencyMap[4]).createStyles({ image: { "Null": "surrogates", "Null": "isArray" } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkPreConnect.tsx");
+// Module 8945 (XboxLinkPreConnect)
+import result from "result";
+import { XboxLinkModalScenes } from "XboxLinkModalScenes";
+import { PlatformTypes } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_7 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 231, height: 160 } });
+const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkPreConnect.tsx");
 
 export default function XboxLinkPreConnect() {
-  let obj = arg1(dependencyMap[5]);
-  const navigation = obj.useNavigation();
-  const arg1 = navigation;
+  let obj = navigation(1456);
+  navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
   const callback = React.useCallback((arg0) => {
-    navigation.push(constants.DISCORD_CONSENT, arg0);
+    navigation.push(outer1_4.DISCORD_CONSENT, arg0);
   }, items);
   const callback1 = React.useCallback(() => {
-    navigation.push(constants.ERROR);
+    navigation.push(outer1_4.ERROR);
   }, items1);
-  const memo = React.useMemo(() => ({ uri: callback(closure_2[6]) }), []);
+  const memo = React.useMemo(() => ({ uri: outer1_1(outer1_2[6]) }), []);
   obj = { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image };
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.title = intl.string(arg1(dependencyMap[8]).t.e/z3na);
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj.body = intl2.string(arg1(dependencyMap[8]).t.7tXu0i);
-  return jsx(arg1(dependencyMap[7]).TwoWayLinkPreConnect, obj);
+  const intl = navigation(1212).intl;
+  obj.title = intl.string(navigation(1212).t["e/z3na"]);
+  const intl2 = navigation(1212).intl;
+  obj.body = intl2.string(navigation(1212).t["7tXu0i"]);
+  return jsx(navigation(8947).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image });
 };

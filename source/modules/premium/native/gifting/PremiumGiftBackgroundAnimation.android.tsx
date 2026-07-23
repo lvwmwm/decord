@@ -1,55 +1,53 @@
-// Module ID: 8776
-// Function ID: 69348
+// Module ID: 8783
+// Function ID: 69389
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: []
+// Dependencies: [57, 31, 27, 4122, 33, 4130, 566, 7758, 8784, 5453, 2]
 // Exports: default
 
-// Module 8776 (PremiumGiftBackgroundAnimation)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-const View = arg1(dependencyMap[2]).View;
-let closure_6 = importDefault(dependencyMap[3]);
-({ jsx: closure_7, jsxs: closure_8 } = arg1(dependencyMap[4]));
-const tmp2 = arg1(dependencyMap[4]);
-let closure_9 = arg1(dependencyMap[5]).createStyles({ container: {}, consistentHeight: { height: 300 }, animation: { isNewBackTitleImplementation: false, usesHeaderFlexboxImplementation: null, usesNewAndroidHeaderHeightImplementation: 0 }, baseAnimation: { <string:765737181>: 40, <string:1382441379>: 40 }, lottie: { height: 275 } });
-const obj = arg1(dependencyMap[5]);
-const result = arg1(dependencyMap[10]).fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundAnimation.android.tsx");
+// Module 8783 (PremiumGiftBackgroundAnimation)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_7;
+let closure_8;
+const require = arg1;
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let closure_9 = _createForOfIteratorHelperLoose.createStyles({ container: { display: "flex", alignItems: "flex-end", justifyContent: "center", flexDirection: "row" }, consistentHeight: { height: 300 }, animation: { maxWidth: 375, width: "100%", height: "auto" }, baseAnimation: { position: "absolute", bottom: 0 }, lottie: { height: 275 } });
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundAnimation.android.tsx");
 
 export default function PremiumGiftBackgroundAnimation(giftStyle) {
   giftStyle = giftStyle.giftStyle;
-  const arg1 = giftStyle;
   let consistentHeight = giftStyle.withConsistentHeight;
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[6]);
-  const items = [closure_6];
+  const tmp = callback();
+  let obj = giftStyle(ref[6]);
+  const items = [first1];
   const stateFromStores = obj.useStateFromStores(items, () => first1.useReducedMotion);
-  const importDefault = stateFromStores;
-  const ref = React.useRef(null);
-  const dependencyMap = ref;
-  const ref1 = React.useRef(null);
-  let callback = ref1;
-  const tmp5 = callback(React.useState(arg1(dependencyMap[7]).AnimationState.ACTION), 2);
-  const first = tmp5[0];
-  const React = first;
+  ref = first.useRef(null);
+  const ref1 = first.useRef(null);
+  const tmp5 = ref1(first.useState(giftStyle(ref[7]).AnimationState.ACTION), 2);
+  first = tmp5[0];
   let closure_5 = tmp5[1];
-  const tmp7 = callback(React.useState(undefined), 2);
-  const first1 = tmp7[0];
-  closure_6 = first1;
+  const tmp7 = ref1(first.useState(undefined), 2);
+  first1 = tmp7[0];
   let closure_7 = tmp7[1];
-  const tmp9 = callback(React.useState(undefined), 2);
+  const tmp9 = ref1(first.useState(undefined), 2);
   const first2 = tmp9[0];
-  const callback2 = tmp9[1];
-  const tmp11 = callback(React.useState(false), 2);
+  callback = tmp9[1];
+  const tmp11 = ref1(first.useState(false), 2);
   const first3 = tmp11[0];
   let closure_11 = tmp11[1];
   const items1 = [giftStyle];
   const items2 = [giftStyle];
-  const memo = React.useMemo(() => giftStyle(ref[8]).getGiftAnimationData(giftStyle, giftStyle(ref[7]).AnimationState.ACTION), items1);
-  const memo1 = React.useMemo(() => giftStyle(ref[8]).getGiftAnimationData(giftStyle, giftStyle(ref[7]).AnimationState.LOOP), items2);
-  let obj1 = arg1(dependencyMap[8]);
+  const memo = first.useMemo(() => giftStyle(ref[8]).getGiftAnimationData(giftStyle, giftStyle(ref[7]).AnimationState.ACTION), items1);
+  const memo1 = first.useMemo(() => giftStyle(ref[8]).getGiftAnimationData(giftStyle, giftStyle(ref[7]).AnimationState.LOOP), items2);
+  let obj1 = giftStyle(ref[8]);
   const lottieType = obj1.getLottieType(giftStyle);
   const items3 = [first2, first1, giftStyle, first];
-  const memo2 = React.useMemo(() => {
+  const memo2 = first.useMemo(() => {
     if (first1 !== giftStyle) {
       callback2(giftStyle);
       let tmp8 = first !== giftStyle(ref[7]).AnimationState.LOOP;
@@ -63,7 +61,7 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
   }, items3);
   const items4 = [first, first3];
   const items5 = [first];
-  callback = React.useCallback((arg0) => {
+  callback = first.useCallback((arg0) => {
     if (first3) {
       callback4(false);
     } else {
@@ -71,10 +69,10 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
         callback3(giftStyle(ref[7]).AnimationState.ACTION);
         callback(giftStyle(ref[7]).AnimationState.LOOP);
       }
-      const tmp4 = first === giftStyle(ref[7]).AnimationState.LOOP || arg0;
+      tmp4 = first === giftStyle(ref[7]).AnimationState.LOOP || arg0;
     }
   }, items4);
-  const effect = React.useEffect(() => {
+  const effect = first.useEffect(() => {
     if (first === giftStyle(ref[7]).AnimationState.LOOP) {
       const current2 = ref.current;
       if (null != current2) {
@@ -88,7 +86,7 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
     }
   }, items5);
   const items6 = [stateFromStores];
-  const effect1 = React.useEffect(() => {
+  const effect1 = first.useEffect(() => {
     if (stateFromStores) {
       const current = ref.current;
       if (null != current) {
@@ -109,20 +107,20 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
   const tmp20 = first2;
   const tmp21 = closure_5;
   const tmp22 = closure_7;
-  const tmp23 = importDefault(dependencyMap[9]);
-  items8[2] = lottieType === arg1(dependencyMap[8]).LottieType.LOTTIE && tmp.lottie;
+  const tmp23 = stateFromStores(ref[9]);
+  items8[2] = lottieType === giftStyle(ref[8]).LottieType.LOTTIE && tmp.lottie;
   obj1 = {};
   let num = 0;
   if (first1 === giftStyle) {
     num = 0;
-    if (first !== arg1(dependencyMap[7]).AnimationState.LOOP) {
+    if (first !== giftStyle(ref[7]).AnimationState.LOOP) {
       num = 1;
     }
   }
   obj1.opacity = num;
   items8[3] = obj1;
   obj.style = items8;
-  obj.hardwareAccelerationAndroid = lottieType === arg1(dependencyMap[8]).LottieType.LOTTIE;
+  obj.hardwareAccelerationAndroid = lottieType === giftStyle(ref[8]).LottieType.LOTTIE;
   obj.ref = ref;
   obj.source = memo;
   obj.autoPlay = !stateFromStores;
@@ -131,27 +129,27 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
   const items9 = [tmp22(tmp23, obj), ];
   const obj2 = {};
   const items10 = [tmp.animation, , ];
-  const tmp24 = lottieType === arg1(dependencyMap[8]).LottieType.LOTTIE && tmp.lottie;
+  const tmp24 = lottieType === giftStyle(ref[8]).LottieType.LOTTIE && tmp.lottie;
   const tmp28 = closure_7;
-  const tmp29 = importDefault(dependencyMap[9]);
-  items10[1] = lottieType === arg1(dependencyMap[8]).LottieType.LOTTIE && tmp.lottie;
+  const tmp29 = stateFromStores(ref[9]);
+  items10[1] = lottieType === giftStyle(ref[8]).LottieType.LOTTIE && tmp.lottie;
   const obj3 = {};
   let num2 = 0;
   if (first1 === giftStyle) {
     num2 = 0;
-    if (first === arg1(dependencyMap[7]).AnimationState.LOOP) {
+    if (first === giftStyle(ref[7]).AnimationState.LOOP) {
       num2 = 1;
     }
   }
   obj3.opacity = num2;
   items10[2] = obj3;
   obj2.style = items10;
-  obj2.hardwareAccelerationAndroid = lottieType === arg1(dependencyMap[8]).LottieType.LOTTIE;
+  obj2.hardwareAccelerationAndroid = lottieType === giftStyle(ref[8]).LottieType.LOTTIE;
   obj2.ref = ref1;
   obj2.source = memo1;
   let tmp33 = !stateFromStores;
   if (tmp33) {
-    tmp33 = first === arg1(dependencyMap[7]).AnimationState.LOOP;
+    tmp33 = first === giftStyle(ref[7]).AnimationState.LOOP;
   }
   obj2.autoPlay = tmp33;
   obj2.loop = true;

@@ -1,13 +1,13 @@
-// Module ID: 6289
-// Function ID: 50366
+// Module ID: 6294
+// Function ID: 50395
 // Name: MicrophoneAndKeyboardSpotIllustration
-// Dependencies: [0, 0, 4294967295, 0]
+// Dependencies: [33, 5085, 6295, 2]
 // Exports: MicrophoneAndKeyboardSpotIllustration
 
-// Module 6289 (MicrophoneAndKeyboardSpotIllustration)
-import { jsx } from "__exportStarResult1";
+// Module 6294 (MicrophoneAndKeyboardSpotIllustration)
+import { jsx } from "jsxProd";
 
-const result = require("__exportStarResult1").fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneAndKeyboardSpotIllustration.native.tsx");
+const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneAndKeyboardSpotIllustration.native.tsx");
 
 export const MicrophoneAndKeyboardSpotIllustration = function MicrophoneAndKeyboardSpotIllustration(width) {
   let accessibilityLabel;
@@ -27,7 +27,7 @@ export const MicrophoneAndKeyboardSpotIllustration = function MicrophoneAndKeybo
     num3 = 1;
   }
   let obj = { fadeDuration: 0 };
-  obj = { uri: importDefault(dependencyMap[2]) };
+  obj = { uri: importDefault(6295) };
   obj.source = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -35,5 +35,5 @@ export const MicrophoneAndKeyboardSpotIllustration = function MicrophoneAndKeybo
   obj.accessible = accessible;
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
-  return jsx(importDefault(dependencyMap[1]), obj);
+  return jsx(importDefault(5085), { width: num * num3, height: num2 * num3 });
 };

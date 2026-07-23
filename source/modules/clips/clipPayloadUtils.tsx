@@ -1,53 +1,61 @@
-// Module ID: 4664
-// Function ID: 40510
+// Module ID: 4667
+// Function ID: 40528
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [57, 4184, 653, 4191, 4668, 4187, 675, 4669, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds
 
-// Module 4664 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let arg1 = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 4667 (_createForOfIteratorHelperLoose)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import { AnalyticEvents } from "ME";
+import { SpeakingFlags } from "DesktopSources";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +66,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      arg1 = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -84,13 +92,9 @@ function _arrayLikeToArray(arg0, arg1) {
   }
   return ArrayResult;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-({ CLIPS_MAX_PARTICIPANTS: closure_4, CLIPS_MAX_TIMELINE_EVENTS: closure_5 } = arg1(dependencyMap[1]));
-const AnalyticEvents = arg1(dependencyMap[2]).AnalyticEvents;
-const SpeakingFlags = arg1(dependencyMap[3]).SpeakingFlags;
-const obj = { UNKNOWN: 0, [0]: "UNKNOWN", KILL: 1, [1]: "KILL", MULTIKILL: 2, [2]: "MULTIKILL", DEATH: 3, [3]: "DEATH" };
-const tmp2 = arg1(dependencyMap[1]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/clips/clipPayloadUtils.tsx");
+({ CLIPS_MAX_PARTICIPANTS: closure_4, CLIPS_MAX_TIMELINE_EVENTS: closure_5 } = result);
+let obj = { UNKNOWN: 0, [0]: "UNKNOWN", KILL: 1, [1]: "KILL", MULTIKILL: 2, [2]: "MULTIKILL", DEATH: 3, [3]: "DEATH" };
+result = require("ME").fileFinishedImporting("modules/clips/clipPayloadUtils.tsx");
 
 export const getClipCreatedAt = function getClipCreatedAt(createdAt) {
   return new Date(createdAt).toISOString();
@@ -101,7 +105,7 @@ export const getClipParticipantIds = function getClipParticipantIds(users) {
 export const ServerClipGameEventType = obj;
 export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
   let iter4;
-  const arg1 = clip;
+  const _require = clip;
   const timeline = clip.timeline;
   let length;
   if (null != timeline) {
@@ -126,23 +130,23 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
       const diff = clip.decision.timestamp - clip.length;
       const sum = diff + 1000 * editMetadata.start;
       const sum1 = diff + 1000 * editMetadata.end;
-      let obj1 = arg1(dependencyMap[4]);
+      let obj1 = _require(4668);
       const importDefault = obj1.isGameEventsOnPlayerEnabled("getClipEventsTimeline");
       const timeline1 = clip.timeline;
       const found = timeline1.filter((signal) => {
-        const editMetadata = signal.editMetadata;
+        const editMetadata = clip.editMetadata;
         let voiceAudio;
         if (null != editMetadata) {
           voiceAudio = editMetadata.voiceAudio;
         }
         let tmp2 = false !== voiceAudio;
         if (tmp2) {
-          tmp2 = signal.signal.type === signal(closure_2[5]).ClipSignalTypes.SPEAKING;
+          tmp2 = signal.signal.type === clip(outer1_2[5]).ClipSignalTypes.SPEAKING;
         }
         if (!tmp2) {
           let tmp5 = closure_1;
           if (closure_1) {
-            tmp5 = signal.signal.type === signal(closure_2[5]).ClipSignalTypes.GAME_EVENT;
+            tmp5 = signal.signal.type === clip(outer1_2[5]).ClipSignalTypes.GAME_EVENT;
           }
           tmp2 = tmp5;
         }
@@ -160,9 +164,9 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
         if (!iter.done) {
           while (true) {
             let value = iter.value;
-            let tmp17 = arg1;
+            let tmp17 = _require;
             let tmp18 = dependencyMap;
-            if (value.signal.type !== arg1(dependencyMap[5]).ClipSignalTypes.SPEAKING) {
+            if (value.signal.type !== _require(4187).ClipSignalTypes.SPEAKING) {
               let iter2 = tmp16();
               iter = iter2;
               if (iter2.done) {
@@ -181,13 +185,13 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
         let iter3 = tmp22();
         if (!iter3.done) {
           do {
-            let tmp23 = closure_3;
-            let tmp24 = closure_3(iter3.value, 2);
+            let tmp23 = callback;
+            let tmp24 = callback(iter3.value, 2);
             if (tmp24[1]) {
               obj = { timestamp_ms: 0 };
               obj = { user_id: tmp25 };
-              let tmp26 = closure_7;
-              obj.speaking_flags = closure_7.VOICE;
+              let tmp26 = SpeakingFlags;
+              obj.speaking_flags = SpeakingFlags.VOICE;
               obj.speaking = obj;
               let arr = items.push(obj);
             }
@@ -201,9 +205,9 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
         if (!iter5.done) {
           while (true) {
             value = iter6.value;
-            let tmp35 = arg1;
+            let tmp35 = _require;
             let tmp36 = dependencyMap;
-            if (value.signal.type === arg1(dependencyMap[5]).ClipSignalTypes.SPEAKING) {
+            if (value.signal.type === _require(4187).ClipSignalTypes.SPEAKING) {
               let tmp41 = tmp30;
               let tmp42 = tmp31;
               let tmp43 = tmp32;
@@ -240,14 +244,14 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
               }
               break;
             } else {
-              let tmp59 = arg1;
+              let tmp59 = _require;
               let tmp60 = dependencyMap;
               tmp41 = tmp30;
               tmp42 = tmp31;
               tmp43 = tmp32;
               tmp44 = tmp33;
               tmp45 = tmp34;
-              if (value.signal.type === arg1(dependencyMap[5]).ClipSignalTypes.GAME_EVENT) {
+              if (value.signal.type === _require(4187).ClipSignalTypes.GAME_EVENT) {
                 tmp41 = tmp30;
                 tmp42 = tmp31;
                 tmp43 = tmp32;
@@ -258,15 +262,15 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
                     break;
                   } else {
                     let eventType = value.signal.eventType;
-                    let tmp61 = arg1;
+                    let tmp61 = _require;
                     let tmp62 = dependencyMap;
-                    if (arg1(dependencyMap[5]).GameEventType.KILL === eventType) {
+                    if (_require(4187).GameEventType.KILL === eventType) {
                       let tmp40 = obj;
                       let MULTIKILL = obj.KILL;
                     } else {
-                      let tmp37 = arg1;
+                      let tmp37 = _require;
                       let tmp38 = dependencyMap;
-                      if (arg1(dependencyMap[5]).GameEventType.MULTIKILL === eventType) {
+                      if (_require(4187).GameEventType.MULTIKILL === eventType) {
                         let tmp39 = obj;
                         MULTIKILL = obj.MULTIKILL;
                       }
@@ -315,11 +319,11 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
               }
             }
             let iter7 = tmp29();
-            let tmp30 = tmp41;
-            let tmp31 = tmp42;
-            let tmp32 = tmp43;
-            let tmp33 = tmp44;
-            let tmp34 = tmp45;
+            tmp30 = tmp41;
+            tmp31 = tmp42;
+            tmp32 = tmp43;
+            tmp33 = tmp44;
+            tmp34 = tmp45;
             iter6 = iter7;
             if (iter7.done) {
               break;
@@ -329,10 +333,10 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
         const substr = items.slice(0, closure_5);
         if (substr.length !== items.length) {
           const obj6 = { clip_uuid: clip.id, clip_event_timeline_size: items.length };
-          const obj12 = importDefault(dependencyMap[6]);
-          obj6.clip_runtime = arg1(dependencyMap[7]).getClipsRuntime("getClipEventsTimeline");
+          const obj12 = importDefault(675);
+          obj6.clip_runtime = _require(4669).getClipsRuntime("getClipEventsTimeline");
           obj12.track(AnalyticEvents.CLIP_TIMELINE_TRIMMED, obj6);
-          const obj14 = arg1(dependencyMap[7]);
+          const obj14 = _require(4669);
         }
         let tmp58;
         if (substr.length > 0) {

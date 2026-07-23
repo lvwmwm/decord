@@ -1,40 +1,44 @@
-// Module ID: 9254
-// Function ID: 72317
+// Module ID: 9261
+// Function ID: 72358
 // Name: SMSBackupWarningAlert
-// Dependencies: []
+// Dependencies: [31, 33, 4130, 4561, 1212, 4471, 4126, 2]
 // Exports: default
 
-// Module 9254 (SMSBackupWarningAlert)
-importAll(dependencyMap[0]);
-({ jsx: closure_3, jsxs: closure_4 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-let closure_5 = arg1(dependencyMap[2]).createStyles({ title: { textAlign: "center" }, body: {} });
-const obj = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/user_settings/account/native/SMSBackupWarningAlert.tsx");
+// Module 9261 (SMSBackupWarningAlert)
+import "result";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+const require = arg1;
+({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ title: { textAlign: "center" }, body: { marginTop: 8, textAlign: "center", lineHeight: 18 } });
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_settings/account/native/SMSBackupWarningAlert.tsx");
 
 export default function SMSBackupWarningAlert(onConfirm) {
-  const arg1 = onConfirm.onConfirm;
+  onConfirm = onConfirm.onConfirm;
   const tmp = callback3();
   let obj = {};
-  const intl = arg1(dependencyMap[4]).intl;
-  obj.cancelText = intl.string(arg1(dependencyMap[4]).t.ETE/oC);
-  const intl2 = arg1(dependencyMap[4]).intl;
-  obj.confirmText = intl2.string(arg1(dependencyMap[4]).t.N86XcP);
+  const intl = onConfirm(1212).intl;
+  obj.cancelText = intl.string(onConfirm(1212).t["ETE/oC"]);
+  const intl2 = onConfirm(1212).intl;
+  obj.confirmText = intl2.string(onConfirm(1212).t.N86XcP);
   obj.onConfirm = function onConfirm() {
     onConfirm();
-    callback(closure_2[5]).close();
+    outer1_1(outer1_2[5]).close();
   };
   obj.onCancel = function onCancel() {
-    return callback(closure_2[5]).close();
+    return outer1_1(outer1_2[5]).close();
   };
-  obj = { style: tmp.title };
-  const intl3 = arg1(dependencyMap[4]).intl;
-  obj.children = intl3.string(arg1(dependencyMap[4]).t.Ed4XQB);
-  const items = [callback(arg1(dependencyMap[6]).Text, obj), ];
-  obj = { style: tmp.body };
-  const intl4 = arg1(dependencyMap[4]).intl;
-  obj.children = intl4.string(arg1(dependencyMap[4]).t.EDU2Eg);
-  items[1] = callback(arg1(dependencyMap[6]).Text, obj);
+  obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
+  const intl3 = onConfirm(1212).intl;
+  obj.children = intl3.string(onConfirm(1212).t.Ed4XQB);
+  const items = [callback(onConfirm(4126).Text, obj), ];
+  obj = { style: tmp.body, variant: "text-sm/medium", color: "text-default" };
+  const intl4 = onConfirm(1212).intl;
+  obj.children = intl4.string(onConfirm(1212).t.EDU2Eg);
+  items[1] = callback(onConfirm(4126).Text, obj);
   obj.children = items;
-  return callback2(importDefault(dependencyMap[3]), obj);
+  return callback2(importDefault(4561), obj);
 };

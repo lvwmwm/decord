@@ -1,19 +1,21 @@
-// Module ID: 7484
-// Function ID: 60076
+// Module ID: 7489
+// Function ID: 60110
 // Name: getSafetyToastTypeContent
-// Dependencies: []
+// Dependencies: [1348, 1849, 7483, 4319, 3969, 1212, 2298, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 7484 (getSafetyToastTypeContent)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const SafetyToastType = arg1(dependencyMap[2]).SafetyToastType;
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/safety_common/SafetyToastsUtils.tsx");
+// Module 7489 (getSafetyToastTypeContent)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import { SafetyToastType } from "SafetyToastType";
+
+const require = arg1;
+const result = require("SafetyToastType").fileFinishedImporting("modules/safety_common/SafetyToastsUtils.tsx");
 
 export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOCK_SUCCESS, id, channelId) {
-  const user = user.getUser(id);
-  const channel = channel.getChannel(channelId);
-  let obj = importDefault(dependencyMap[3]);
+  user = user.getUser(id);
+  channel = channel.getChannel(channelId);
+  let obj = importDefault(4319);
   let guild_id;
   if (null != channel) {
     guild_id = channel.guild_id;
@@ -24,57 +26,57 @@ export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOC
   }
   let name = obj.getName(guild_id, id, user);
   if (null == name) {
-    let obj1 = importDefault(dependencyMap[4]);
+    let obj1 = importDefault(3969);
     name = obj1.getGlobalName(user);
   }
   if (SafetyToastType.IGNORE_SUCCESS === BLOCK_SUCCESS) {
-    const intl14 = id(dependencyMap[5]).intl;
+    const intl14 = require(1212) /* getSystemLocale */.intl;
     obj = { username: name };
-    return intl14.formatToPlainString(id(dependencyMap[5]).t.+joqrP, obj);
+    return intl14.formatToPlainString(require(1212) /* getSystemLocale */.t["+joqrP"], obj);
   } else if (SafetyToastType.UNIGNORE_SUCCESS === BLOCK_SUCCESS) {
-    const intl13 = id(dependencyMap[5]).intl;
+    const intl13 = require(1212) /* getSystemLocale */.intl;
     obj = { username: name };
-    return intl13.formatToPlainString(id(dependencyMap[5]).t.THExKa, obj);
+    return intl13.formatToPlainString(require(1212) /* getSystemLocale */.t.THExKa, obj);
   } else if (SafetyToastType.BLOCK_SUCCESS === BLOCK_SUCCESS) {
-    const intl12 = id(dependencyMap[5]).intl;
+    const intl12 = require(1212) /* getSystemLocale */.intl;
     obj1 = { username: name };
-    return intl12.formatToPlainString(id(dependencyMap[5]).t.XXPrIs, obj1);
+    return intl12.formatToPlainString(require(1212) /* getSystemLocale */.t.XXPrIs, obj1);
   } else if (SafetyToastType.UNBLOCK_SUCCESS === BLOCK_SUCCESS) {
-    const intl11 = id(dependencyMap[5]).intl;
+    const intl11 = require(1212) /* getSystemLocale */.intl;
     const obj2 = { username: name };
-    return intl11.formatToPlainString(id(dependencyMap[5]).t.uExcGX, obj2);
+    return intl11.formatToPlainString(require(1212) /* getSystemLocale */.t.uExcGX, obj2);
   } else if (SafetyToastType.MUTE_SUCCESS === BLOCK_SUCCESS) {
-    const intl10 = id(dependencyMap[5]).intl;
+    const intl10 = require(1212) /* getSystemLocale */.intl;
     const obj3 = { username: name };
-    return intl10.formatToPlainString(id(dependencyMap[5]).t.X4NtYb, obj3);
+    return intl10.formatToPlainString(require(1212) /* getSystemLocale */.t.X4NtYb, obj3);
   } else if (SafetyToastType.UNMUTE_SUCCESS === BLOCK_SUCCESS) {
-    const intl9 = id(dependencyMap[5]).intl;
+    const intl9 = require(1212) /* getSystemLocale */.intl;
     const obj4 = { username: name };
-    return intl9.formatToPlainString(id(dependencyMap[5]).t.tRaBfY, obj4);
+    return intl9.formatToPlainString(require(1212) /* getSystemLocale */.t.tRaBfY, obj4);
   } else if (SafetyToastType.REPORT_SUCCESS === BLOCK_SUCCESS) {
-    const intl8 = id(dependencyMap[5]).intl;
+    const intl8 = require(1212) /* getSystemLocale */.intl;
     const obj5 = { username: name };
-    return intl8.formatToPlainString(id(dependencyMap[5]).t.FOptFU, obj5);
+    return intl8.formatToPlainString(require(1212) /* getSystemLocale */.t.FOptFU, obj5);
   } else if (SafetyToastType.TIGGER_PAWTECT_ERROR === BLOCK_SUCCESS) {
-    const intl7 = id(dependencyMap[5]).intl;
-    return intl7.string(id(dependencyMap[5]).t.c6kn6F);
+    const intl7 = require(1212) /* getSystemLocale */.intl;
+    return intl7.string(require(1212) /* getSystemLocale */.t.c6kn6F);
   } else if (SafetyToastType.TIGGER_PAWTECT_VERIFIED === BLOCK_SUCCESS) {
-    const intl6 = id(dependencyMap[5]).intl;
-    return intl6.string(id(dependencyMap[5]).t.7nKAXx);
+    const intl6 = require(1212) /* getSystemLocale */.intl;
+    return intl6.string(require(1212) /* getSystemLocale */.t["7nKAXx"]);
   } else if (SafetyToastType.GENERIC_ERROR === BLOCK_SUCCESS) {
-    const intl5 = id(dependencyMap[5]).intl;
-    return intl5.string(id(dependencyMap[5]).t.zBpoc7);
+    const intl5 = require(1212) /* getSystemLocale */.intl;
+    return intl5.string(require(1212) /* getSystemLocale */.t.zBpoc7);
   } else if (SafetyToastType.REPORT_TO_MOD_SUCCESS === BLOCK_SUCCESS) {
-    const intl4 = id(dependencyMap[5]).intl;
-    return intl4.string(importDefault(dependencyMap[6]).iBypeZ);
+    const intl4 = require(1212) /* getSystemLocale */.intl;
+    return intl4.string(importDefault(2298).iBypeZ);
   } else if (SafetyToastType.SAFETY_FEEDBACK_SUCCESS === BLOCK_SUCCESS) {
-    const intl3 = id(dependencyMap[5]).intl;
-    return intl3.string(id(dependencyMap[5]).t.TcFR5k);
+    const intl3 = require(1212) /* getSystemLocale */.intl;
+    return intl3.string(require(1212) /* getSystemLocale */.t.TcFR5k);
   } else if (SafetyToastType.EXISTING_USER_AGE_GATE_SUCCESS === BLOCK_SUCCESS) {
-    const intl2 = id(dependencyMap[5]).intl;
-    return intl2.string(id(dependencyMap[5]).t.susqq/);
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    return intl2.string(require(1212) /* getSystemLocale */.t["susqq/"]);
   } else {
-    const intl = id(dependencyMap[5]).intl;
-    return intl.string(id(dependencyMap[5]).t.+c5xtT);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    return intl.string(require(1212) /* getSystemLocale */.t["+c5xtT"]);
   }
 };

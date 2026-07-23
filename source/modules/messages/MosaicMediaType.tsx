@@ -1,14 +1,14 @@
-// Module ID: 9892
-// Function ID: 76581
+// Module ID: 9899
+// Function ID: 76622
 // Name: isVisualMedia
-// Dependencies: [0, 4294967295, 0, 0, 0]
+// Dependencies: [653, 4317, 1360, 9900, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 9892 (isVisualMedia)
-import { MessageAttachmentFlags } from "__exportStarResult1";
+// Module 9899 (isVisualMedia)
+import { MessageAttachmentFlags } from "ME";
 
-let closure_3 = /\.(mp3|m4a|ogg|opus|wav|flac)$/i;
-const result = require("__exportStarResult1").fileFinishedImporting("modules/messages/MosaicMediaType.tsx");
+const re3 = /\.(mp3|m4a|ogg|opus|wav|flac)$/i;
+const result = require("hasFlag").fileFinishedImporting("modules/messages/MosaicMediaType.tsx");
 
 export function isVisualMedia(arg0) {
   let tmp = "IMAGE" === arg0;
@@ -49,14 +49,14 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
                     str6 = "CLIP";
                   }
                   str5 = str6;
-                  const obj4 = require(dependencyMap[2]);
+                  obj4 = require(1360) /* hasFlag */;
                 }
               }
               str3 = str5;
-              const obj3 = require(dependencyMap[1]);
+              obj3 = require(4317) /* urlMatchesFileExtension */;
             }
             let str = str3;
-            const obj2 = require(dependencyMap[1]);
+            obj2 = require(4317) /* urlMatchesFileExtension */;
           }
           return str;
         }
@@ -74,7 +74,7 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
     if (obj.isPlaintextPreviewableFile(filename)) {
       str2 = "PLAINTEXT_PREVIEW";
     }
-    const obj = require(dependencyMap[3]);
+    obj = require(9900) /* set */;
   }
   str = str2;
 };
@@ -93,9 +93,9 @@ export const getMosaicMediaTypeForUnfurledMediaItem = function getMosaicMediaTyp
             if (obj2.isVideoContentType(contentType)) {
               return "VIDEO";
             }
-            const obj2 = require(dependencyMap[1]);
+            obj2 = require(4317) /* urlMatchesFileExtension */;
           }
-          const obj = require(dependencyMap[1]);
+          obj = require(4317) /* urlMatchesFileExtension */;
         }
       }
     }

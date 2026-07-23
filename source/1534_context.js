@@ -1,10 +1,10 @@
 // Module ID: 1534
-// Function ID: 17516
+// Function ID: 17517
 // Name: context
-// Dependencies: []
+// Dependencies: [31]
 
 // Module 1534 (context)
-const context = importAll(dependencyMap[0]).createContext({ options: undefined });
+const context = require("result").createContext({ options: undefined });
 context.displayName = "LinkingContext";
 
 export default context;

@@ -1,18 +1,19 @@
-// Module ID: 8848
-// Function ID: 69846
+// Module ID: 8855
+// Function ID: 69887
 // Name: isVideoBackgroundSupported
-// Dependencies: []
+// Dependencies: [4177, 4191, 2]
 // Exports: default
 
-// Module 8848 (isVideoBackgroundSupported)
-let closure_0 = importDefault(dependencyMap[0]);
-const Features = arg1(dependencyMap[1]).Features;
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/video_backgrounds/isVideoBackgroundSupported.tsx");
+// Module 8855 (isVideoBackgroundSupported)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { Features } from "DesktopSources";
+
+const result = require("set").fileFinishedImporting("modules/video_backgrounds/isVideoBackgroundSupported.tsx");
 
 export default function isVideoBackgroundSupported() {
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = closure_0;
+    obj = _isNativeReflectConstruct;
   }
   let supportsResult = obj.supports(Features.MEDIAPIPE);
   if (supportsResult) {

@@ -1,10 +1,11 @@
 // Module ID: 1319
-// Function ID: 15509
-// Dependencies: []
+// Function ID: 15510
+// Name: MAX_FAVORITES
+// Dependencies: [662, 2]
 
-// Module 1319
-const UserSettingsTypes = require(dependencyMap[0]).UserSettingsTypes;
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/user_settings/UserSettingsMigrationsByType.tsx");
+// Module 1319 (MAX_FAVORITES)
+import { UserSettingsTypes } from "MAX_FAVORITES";
+
+const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingsMigrationsByType.tsx");
 
 export default { [UserSettingsTypes.PRELOADED_USER_SETTINGS]: [], [UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS]: [] };

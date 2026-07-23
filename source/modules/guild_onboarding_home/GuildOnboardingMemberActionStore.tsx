@@ -1,39 +1,41 @@
-// Module ID: 4330
-// Function ID: 38239
+// Module ID: 4334
+// Function ID: 38271
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 566, 686, 2]
 
-// Module 4330 (_isNativeReflectConstruct)
+// Module 4334 (_isNativeReflectConstruct)
+import dispatcher from "dispatcher";
+import closure_1 from "set";
+import _possibleConstructorReturn from "_possibleConstructorReturn";
+import _getPrototypeOf from "_getPrototypeOf";
+import _inherits from "_inherits";
+import set from "_possibleConstructorReturn";
+
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+  let dispatcher = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
   }));
   function _isNativeReflectConstruct() {
-    return closure_0;
+    return dispatcher;
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_0 = importDefault(dependencyMap[0]);
-let closure_1 = importDefault(dependencyMap[1]);
-let closure_2 = importDefault(dependencyMap[2]);
-let closure_3 = importDefault(dependencyMap[3]);
-let closure_4 = importDefault(dependencyMap[4]);
 let obj = {};
 let closure_6 = {};
-const set = new Set();
-let tmp3 = (Store) => {
+let set = new Set();
+let tmp3 = ((Store) => {
   class GuildOnboardingMemberActionStore {
     constructor() {
       self = this;
       tmp = GuildOnboardingMemberActionStore(this, GuildOnboardingMemberActionStore);
-      obj = closure_3(GuildOnboardingMemberActionStore);
-      tmp2 = closure_2;
-      if (closure_8()) {
+      obj = outer1_3(GuildOnboardingMemberActionStore);
+      tmp2 = outer1_2;
+      if (outer1_8()) {
         tmp6 = globalThis;
         _Reflect = Reflect;
-        tmp7 = closure_3;
+        tmp7 = outer1_3;
         tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, closure_3(self).constructor);
+        constructResult = Reflect.construct(obj, arguments, outer1_3(self).constructor);
       } else {
         tmp3 = arguments;
         tmp4 = arguments;
@@ -42,14 +44,13 @@ let tmp3 = (Store) => {
       return tmp2(self, constructResult);
     }
   }
-  let closure_0 = GuildOnboardingMemberActionStore;
   callback2(GuildOnboardingMemberActionStore, Store);
   let obj = {
     key: "getCompletedActions",
     value(arg0) {
       let tmp = null;
       if (null != arg0) {
-        tmp = closure_6[arg0];
+        tmp = outer1_6[arg0];
       }
       return tmp;
     }
@@ -73,14 +74,14 @@ let tmp3 = (Store) => {
       if (null == arg0) {
         let obj = {};
       } else {
-        obj = { completedActions: closure_6[arg0], loading: set.has(arg0) };
+        obj = { completedActions: outer1_6[arg0], loading: outer1_7.has(arg0) };
       }
       return obj;
     }
   };
   items[2] = obj;
   return callback(GuildOnboardingMemberActionStore, items);
-}(importDefault(dependencyMap[5]).Store);
+})(require("initialize").Store);
 tmp3.displayName = "GuildOnboardingMemberActionStore";
 obj = {
   GUILD_NEW_MEMBER_ACTIONS_FETCH_START: function handleMemberActionsFetchStart(guildId) {
@@ -101,34 +102,33 @@ obj = {
     set.delete(guildId.guildId);
   },
   GUILD_NEW_MEMBER_ACTIONS_DELETE_SUCCESS: function handleNewMemberActionsDelete(arg0) {
-    if (null == closure_6[arg0.guildId]) {
+    if (null == dependencyMap[arg0.guildId]) {
       return false;
     } else {
-      delete r0[r1];
+      delete tmp[tmp2];
     }
   },
   COMPLETE_NEW_MEMBER_ACTION: function handleCompleteNewMemberAction(guildId) {
     guildId = guildId.guildId;
     let obj = {};
-    const merged = Object.assign(closure_6);
+    const merged = Object.assign(obj);
     obj = {};
-    const merged1 = Object.assign(closure_6[guildId]);
+    const merged1 = Object.assign(obj[guildId]);
     obj[guildId.channelId] = true;
     obj[guildId] = obj;
-    closure_6 = obj;
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
     guild = guild.guild;
-    if (null == closure_6[guild.id]) {
+    if (null == dependencyMap[guild.id]) {
       return false;
     } else {
       const id = guild.id;
-      delete r1[r0];
+      delete tmp2[tmp];
     }
   }
 };
-tmp3 = new tmp3(importDefault(dependencyMap[6]), obj);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/guild_onboarding_home/GuildOnboardingMemberActionStore.tsx");
+tmp3 = new tmp3(require("dispatcher"), obj);
+let result = set.fileFinishedImporting("modules/guild_onboarding_home/GuildOnboardingMemberActionStore.tsx");
 
 export default tmp3;
 export const NO_ACTIONS = obj;

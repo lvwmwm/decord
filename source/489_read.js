@@ -4,9 +4,9 @@
 // Dependencies: []
 
 // Module 489 (read)
-arg5.read = (arg0, arg1, arg2, exponent) => {
+arg5.read = (arg0, arg1, arg2, closure_0) => {
   let num = 1;
-  const diff = 8 * arg4 - exponent - 1;
+  const diff = 8 * arg4 - closure_0 - 1;
   const diff1 = (1 << diff) - 1;
   let num2 = 0;
   if (arg2) {
@@ -33,7 +33,7 @@ arg5.read = (arg0, arg1, arg2, exponent) => {
       tmp12 = sum1;
     } while (sum1 > 0);
   }
-  let sum4 = tmp12 + exponent;
+  let sum4 = tmp12 + closure_0;
   let sum5 = tmp14;
   let tmp18 = tmp14;
   if (sum4 > 0) {
@@ -60,19 +60,19 @@ arg5.read = (arg0, arg1, arg2, exponent) => {
     return _NaN;
   } else {
     const _Math = Math;
-    sum7 = tmp18 + Math.pow(2, exponent);
+    sum7 = tmp18 + Math.pow(2, closure_0);
     diff2 = tmp15 - tmp3;
   }
   if (arg0[arg1 + num2] >> 7) {
     num = -1;
   }
-  return num * sum7 * Math.pow(2, diff2 - exponent);
+  return num * sum7 * Math.pow(2, diff2 - closure_0);
 };
-arg5.write = (arg0, arg1, arg2, arg3, exponent) => {
-  const diff = 8 * arg5 - exponent - 1;
+arg5.write = (arg0, arg1, arg2, arg3, closure_0) => {
+  const diff = 8 * arg5 - closure_0 - 1;
   const diff1 = (1 << diff) - 1;
   let num = 0;
-  if (23 === exponent) {
+  if (23 === closure_0) {
     const _Math = Math;
     const _Math2 = Math;
     num = Math.pow(2, -24) - Math.pow(2, -77);
@@ -128,24 +128,24 @@ arg5.write = (arg0, arg1, arg2, arg3, exponent) => {
         if (sum1 + tmp3 >= 1) {
           const _Math6 = Math;
           const diff3 = sum * result2 - 1;
-          num9 = diff3 * Math.pow(2, exponent);
+          num9 = diff3 * Math.pow(2, closure_0);
           num10 = sum1 + tmp3;
         } else {
           const _Math4 = Math;
           const _Math5 = Math;
           const result3 = sum * Math.pow(2, tmp3 - 1);
-          num9 = result3 * Math.pow(2, exponent);
+          num9 = result3 * Math.pow(2, closure_0);
           num10 = 0;
         }
       }
     }
     let result4 = num9;
-    let diff4 = exponent;
+    let diff4 = closure_0;
     let sum2 = num5;
     let tmp18 = num9;
     let tmp19 = num5;
-    let tmp20 = exponent;
-    if (exponent >= 8) {
+    let tmp20 = closure_0;
+    if (closure_0 >= 8) {
       do {
         arg0[arg2 + sum2] = 255 & result4;
         sum2 = sum2 + num6;

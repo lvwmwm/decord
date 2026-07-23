@@ -1,56 +1,58 @@
-// Module ID: 13769
-// Function ID: 104083
+// Module ID: 13883
+// Function ID: 106239
 // Name: route
-// Dependencies: []
+// Dependencies: [31, 1849, 3782, 653, 33, 7421, 3776, 1212, 6656, 7227, 13884, 10095, 7871, 13886, 2]
 
-// Module 13769 (route)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const jsx = arg1(dependencyMap[4]).jsx;
-let obj = arg1(dependencyMap[11]);
-obj = {
+// Module 13883 (route)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+import createToggle from "createToggle";
+
+const require = arg1;
+createToggle = {
   useTitle: function getPremiumSettingTitle() {
-    const mobileNitroManageSubscriptionsSettingsExperiment = arg1(dependencyMap[5]).getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
-    const obj = arg1(dependencyMap[5]);
-    const currentUser = currentUser.getCurrentUser();
-    const result = arg1(dependencyMap[6]).hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
-    const intl = arg1(dependencyMap[7]).intl;
+    const mobileNitroManageSubscriptionsSettingsExperiment = require(7421) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
+    const obj = require(7421) /* apexExperiment */;
+    currentUser = currentUser.getCurrentUser();
+    const result = require(3776) /* _createForOfIteratorHelperLoose */.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
+    const intl = require(1212) /* getSystemLocale */.intl;
     const string = intl.string;
     if (result) {
       if (mobileNitroManageSubscriptionsSettingsExperiment) {
         let stringResult = string(_4gwVVn);
       } else {
-        stringResult = string(_4gwVVn.8jmdON);
+        stringResult = string(_4gwVVn["8jmdON"]);
       }
     } else {
-      return string(_4gwVVn.8x0jKT);
+      return string(_4gwVVn["8x0jKT"]);
     }
   },
   parent: null,
-  IconComponent: arg1(dependencyMap[12]).NitroWheelIcon,
+  IconComponent: require("NitroWheelIcon").NitroWheelIcon,
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
     return React.useCallback(() => {
-      let flag = !callback(closure_2[8]).getIsPaymentsBlocked();
+      let flag = !outer1_0(outer1_2[8]).getIsPaymentsBlocked();
       if (!flag) {
-        callback2(closure_2[9])();
+        outer1_1(outer1_2[9])();
         flag = false;
       }
       return flag;
     }, []);
   },
   useTrailing: function usePremiumSettingTrailing() {
-    return jsx(importDefault(dependencyMap[10]), {});
+    return jsx(importDefault(13884), {});
   },
-  screen: obj
+  screen: createToggle
 };
-obj = {
-  route: arg1(dependencyMap[3]).UserSettingsSections.PREMIUM,
+createToggle = {
+  route: require("ME").UserSettingsSections.PREMIUM,
   getComponent() {
-    return arg1(dependencyMap[13]).default;
+    return require(13886) /* PremiumScreen */.default;
   }
 };
-const route = obj.createRoute(obj);
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/user_settings/defs/native/PremiumSetting.tsx");
+createToggle = createToggle.createRoute(createToggle);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/defs/native/PremiumSetting.tsx");
 
-export default route;
+export default createToggle;

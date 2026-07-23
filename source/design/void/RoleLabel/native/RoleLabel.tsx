@@ -1,18 +1,22 @@
-// Module ID: 9558
-// Function ID: 74489
+// Module ID: 9565
+// Function ID: 74530
 // Name: RoleLabel
-// Dependencies: []
+// Dependencies: [31, 27, 4122, 33, 4130, 566, 1273, 7495, 2]
 // Exports: RoleLabel
 
-// Module 9558 (RoleLabel)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-let closure_3 = importDefault(dependencyMap[2]);
-({ jsx: closure_4, jsxs: closure_5 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-let closure_6 = arg1(dependencyMap[4]).createStyles({ container: {}, roleDot: { marginRight: 4 } });
-const obj = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("design/void/RoleLabel/native/RoleLabel.tsx");
+// Module 9565 (RoleLabel)
+import "result";
+import { View } from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+const require = arg1;
+({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { display: "flex", flexDirection: "row" }, roleDot: { marginRight: 4 } });
+const result = require("_isNativeReflectConstruct").fileFinishedImporting("design/void/RoleLabel/native/RoleLabel.tsx");
 
 export const RoleLabel = function RoleLabel(color) {
   let colors;
@@ -20,9 +24,9 @@ export const RoleLabel = function RoleLabel(color) {
   color = color.color;
   ({ name, colors } = color);
   const tmp = callback2();
-  let obj = arg1(dependencyMap[5]);
-  const items = [closure_3];
-  const stateFromStores = obj.useStateFromStores(items, () => roleStyle.roleStyle);
+  let obj = require(566) /* initialize */;
+  const items = [_isNativeReflectConstruct];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_3.roleStyle);
   let tmp4 = "username" === stateFromStores;
   if (tmp4) {
     tmp4 = null != color;
@@ -37,11 +41,11 @@ export const RoleLabel = function RoleLabel(color) {
   }
   if (tmp8) {
     const obj1 = { color, colors, containerStyles: tmp.roleDot };
-    tmp8 = callback(arg1(dependencyMap[6]).RoleDot, obj1);
+    tmp8 = callback(require(1273) /* Button */.RoleDot, obj1);
   }
   const items1 = [tmp8, ];
   const obj2 = { style: {}, text: name };
-  items1[1] = callback(arg1(dependencyMap[7]).FormLabel, obj2);
+  items1[1] = callback(require(7495) /* Form */.FormLabel, obj2);
   obj.children = items1;
   return closure_5(View, obj);
 };

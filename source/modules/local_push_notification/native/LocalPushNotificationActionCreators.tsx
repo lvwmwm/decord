@@ -1,58 +1,57 @@
-// Module ID: 16474
-// Function ID: 127313
+// Module ID: 16591
+// Function ID: 129487
 // Name: receiveLocalNotification
-// Dependencies: []
+// Dependencies: [12639, 653, 6707, 686, 1184, 675, 5048, 10815, 1934, 4138, 4062, 2]
 // Exports: receiveLocalNotification
 
-// Module 16474 (receiveLocalNotification)
-const LocalNotificationTypes = require(dependencyMap[0]).LocalNotificationTypes;
-const AnalyticEvents = require(dependencyMap[1]).AnalyticEvents;
-const _module = require(dependencyMap[11]);
-const result = _module.fileFinishedImporting("modules/local_push_notification/native/LocalPushNotificationActionCreators.tsx");
+// Module 16591 (receiveLocalNotification)
+import { LocalNotificationTypes } from "LocalNotificationTypes";
+import { AnalyticEvents } from "ME";
+
+let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/local_push_notification/native/LocalPushNotificationActionCreators.tsx");
 
 export const receiveLocalNotification = function receiveLocalNotification(getData) {
   function dispatch() {
-    let obj = callback(closure_2[3]);
+    let obj = outer1_1(outer1_2[3]);
     obj.dispatch({ type: "PUSH_NOTIFICATION_CLICK" });
     obj = { type: data.type };
-    callback(closure_2[4]).addBreadcrumb({ message: "Notification Clicked", data: obj });
-    const obj2 = callback(closure_2[4]);
+    outer1_1(outer1_2[4]).addBreadcrumb({ message: "Notification Clicked", data: obj });
+    const obj2 = outer1_1(outer1_2[4]);
     obj = { notif_type: data.type };
     let guildId = null;
     if ("guildId" in data) {
       guildId = data.guildId;
     }
     obj.guild_id = guildId;
-    callback(closure_2[5]).track(constants2.NOTIFICATION_CLICKED, obj);
+    outer1_1(outer1_2[5]).track(outer1_4.NOTIFICATION_CLICKED, obj);
     const type = data.type;
-    if (constants.GUILD_VERIFICATION === type) {
-      const result = callback(closure_2[6]).transitionToGuildSync(data.guildId);
-      const obj6 = callback(closure_2[6]);
-    } else if (constants.CALL_RING === type) {
-      data(closure_2[8])(closure_2[7], closure_2.paths).then((arg0) => arg0.default(lib.channelId));
-      const promise = data(closure_2[8])(closure_2[7], closure_2.paths);
-    } else if (constants.MESSAGE_SEND_FAILED === type) {
-      data(closure_2[8])(closure_2[9], closure_2.paths).then((transitionToMessage) => {
+    if (outer1_3.GUILD_VERIFICATION === type) {
+      const result = outer1_1(outer1_2[6]).transitionToGuildSync(data.guildId);
+      const obj6 = outer1_1(outer1_2[6]);
+    } else if (outer1_3.CALL_RING === type) {
+      data(outer1_2[8])(outer1_2[7], outer1_2.paths).then((arg0) => arg0.default(outer1_0.channelId));
+      const promise = data(outer1_2[8])(outer1_2[7], outer1_2.paths);
+    } else if (outer1_3.MESSAGE_SEND_FAILED === type) {
+      data(outer1_2[8])(outer1_2[9], outer1_2.paths).then((transitionToMessage) => {
         let channelId;
         let messageId;
-        ({ channelId, messageId } = lib);
-        return transitionToMessage.transitionToMessage(channelId, messageId, { jumpType: lib(closure_2[10]).JumpType.INSTANT });
+        ({ channelId, messageId } = outer1_0);
+        return transitionToMessage.transitionToMessage(channelId, messageId, { jumpType: data(outer2_2[10]).JumpType.INSTANT });
       });
-      const promise2 = data(closure_2[8])(closure_2[9], closure_2.paths);
+      const promise2 = data(outer1_2[8])(outer1_2[9], outer1_2.paths);
     }
   }
   if (null != getData.getData) {
-    require(dependencyMap[2]).trackAppOpened("notification");
-    const data = getData.getData();
-    const require = data;
-    const type = data.type;
-    const obj2 = require(dependencyMap[2]);
+    data(6707).trackAppOpened("notification");
+    data = getData.getData();
+    let type = data.type;
+    let obj2 = data(6707);
     if (obj.isDispatching()) {
       const _setImmediate = setImmediate;
       setImmediate(dispatch);
     } else {
       dispatch();
     }
-    const obj = importDefault(dependencyMap[3]);
+    obj = importDefault(686);
   }
 };

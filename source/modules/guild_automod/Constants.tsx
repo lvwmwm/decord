@@ -1,16 +1,15 @@
-// Module ID: 10997
-// Function ID: 85581
+// Module ID: 11007
+// Function ID: 85631
 // Name: AutomodEventType
-// Dependencies: []
+// Dependencies: [11008, 2, 11009, 11010]
 
-// Module 10997 (AutomodEventType)
-const items = [require(dependencyMap[0]).AutomodTriggerType.USER_PROFILE, require(dependencyMap[0]).AutomodTriggerType.SERVER_POLICY, require(dependencyMap[0]).AutomodTriggerType.MENTION_SPAM, require(dependencyMap[0]).AutomodTriggerType.ML_SPAM, require(dependencyMap[0]).AutomodTriggerType.DEFAULT_KEYWORD_LIST, require(dependencyMap[0]).AutomodTriggerType.KEYWORD];
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/guild_automod/Constants.tsx");
+// Module 11007 (AutomodEventType)
+const items = [require("AutomodTriggerType").AutomodTriggerType.USER_PROFILE, require("AutomodTriggerType").AutomodTriggerType.SERVER_POLICY, require("AutomodTriggerType").AutomodTriggerType.MENTION_SPAM, require("AutomodTriggerType").AutomodTriggerType.ML_SPAM, require("AutomodTriggerType").AutomodTriggerType.DEFAULT_KEYWORD_LIST, require("AutomodTriggerType").AutomodTriggerType.KEYWORD];
+const result = require("AutomodEventType").fileFinishedImporting("modules/guild_automod/Constants.tsx");
 
-export const AutomodEventType = require(dependencyMap[2]).AutomodEventType;
-export const AutomodTriggerType = require(dependencyMap[0]).AutomodTriggerType;
-export const AutomodActionType = require(dependencyMap[3]).AutomodActionType;
+export const AutomodEventType = require("AutomodEventType").AutomodEventType;
+export const AutomodTriggerType = require("AutomodTriggerType").AutomodTriggerType;
+export const AutomodActionType = require("AutomodActionType").AutomodActionType;
 export const KeywordPreset = { PROFANITY: 1, [1]: "PROFANITY", SEXUAL_CONTENT: 2, [2]: "SEXUAL_CONTENT", SLURS: 3, [3]: "SLURS" };
 export const AUTOMOD_TRIGGER_TYPES = items;
 export const MAX_KEYWORDS_PER_KEYWORD_FILTER = 1000;

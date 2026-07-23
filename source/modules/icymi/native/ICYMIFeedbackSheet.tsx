@@ -1,51 +1,53 @@
-// Module ID: 15087
-// Function ID: 113561
+// Module ID: 15202
+// Function ID: 115730
 // Name: ICYMIFeedbackSheet
-// Dependencies: []
+// Dependencies: [31, 33, 9521, 1212, 8330, 8321, 2]
 // Exports: default
 
-// Module 15087 (ICYMIFeedbackSheet)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/icymi/native/ICYMIFeedbackSheet.tsx");
+// Module 15202 (ICYMIFeedbackSheet)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+let result = require("closeActionSheet").fileFinishedImporting("modules/icymi/native/ICYMIFeedbackSheet.tsx");
 
 export default function ICYMIFeedbackSheet() {
-  let obj = { aspectRatio: null, marginVertical: null, width: null };
-  const intl = arg1(dependencyMap[3]).intl;
-  obj.headerLabel = intl.string(arg1(dependencyMap[3]).t.ppfH9+);
-  const intl2 = arg1(dependencyMap[3]).intl;
-  obj.ratingsBodyLabel = intl2.string(arg1(dependencyMap[3]).t.ePk/Cf);
-  const intl3 = arg1(dependencyMap[3]).intl;
-  obj.reasonsHeaderLabel = intl3.string(arg1(dependencyMap[3]).t.sBOuOf);
+  let obj = { headerLabel: null, showHeaderCloseButton: true, hideDontShowAgainCheckbox: true };
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.headerLabel = intl.string(require(1212) /* getSystemLocale */.t["ppfH9+"]);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj.ratingsBodyLabel = intl2.string(require(1212) /* getSystemLocale */.t["ePk/Cf"]);
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj.reasonsHeaderLabel = intl3.string(require(1212) /* getSystemLocale */.t.sBOuOf);
   obj = {};
-  const intl4 = arg1(dependencyMap[3]).intl;
-  obj.label = intl4.string(arg1(dependencyMap[3]).t.F6TmZA);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl4.string(require(1212) /* getSystemLocale */.t.F6TmZA);
   obj.value = "irrelevant_content";
-  const items = [obj, , , , ];
+  let items = [obj, , , , ];
   obj = {};
-  const intl5 = arg1(dependencyMap[3]).intl;
-  obj.label = intl5.string(arg1(dependencyMap[3]).t.voWAzi);
+  const intl5 = require(1212) /* getSystemLocale */.intl;
+  obj.label = intl5.string(require(1212) /* getSystemLocale */.t.voWAzi);
   obj.value = "not_enough_content";
   items[1] = obj;
   const obj1 = {};
-  const intl6 = arg1(dependencyMap[3]).intl;
-  obj1.label = intl6.string(arg1(dependencyMap[3]).t.Ay8iwx);
+  const intl6 = require(1212) /* getSystemLocale */.intl;
+  obj1.label = intl6.string(require(1212) /* getSystemLocale */.t.Ay8iwx);
   obj1.value = "too_much_content";
   items[2] = obj1;
   const obj2 = {};
-  const intl7 = arg1(dependencyMap[3]).intl;
-  obj2.label = intl7.string(arg1(dependencyMap[3]).t.Yu+52W);
+  const intl7 = require(1212) /* getSystemLocale */.intl;
+  obj2.label = intl7.string(require(1212) /* getSystemLocale */.t["Yu+52W"]);
   obj2.value = "laggy";
   items[3] = obj2;
-  items[4] = { "Null": null, "Null": null };
+  items[4] = { label: "Other", value: "other" };
   obj.reasons = items;
   obj.otherKey = "other";
-  obj.trackOpen = arg1(dependencyMap[4]).ICYMIAnalytics.trackFeedFeedbackPromptViewed;
-  obj.feedbackReasons = ["<string:1339228161>"];
+  obj.trackOpen = require(8330) /* listItemToType */.ICYMIAnalytics.trackFeedFeedbackPromptViewed;
+  obj.feedbackReasons = ["other"];
   obj.trackReport = function trackReport(reason) {
-    let obj = callback2(closure_2[5]);
+    let obj = outer1_1(outer1_2[5]);
     obj.giveFeedback();
-    const ICYMIAnalytics = callback(closure_2[4]).ICYMIAnalytics;
+    const ICYMIAnalytics = outer1_0(outer1_2[4]).ICYMIAnalytics;
     obj = {};
     let tmp2;
     if (null != reason.reason) {
@@ -62,5 +64,5 @@ export default function ICYMIFeedbackSheet() {
     obj.user_feedback = reason.feedback;
     const result = ICYMIAnalytics.trackFeedFeedbackSubmitted(obj);
   };
-  return jsx(importDefault(dependencyMap[2]), obj);
+  return jsx(importDefault(9521), {});
 };

@@ -1,23 +1,32 @@
-// Module ID: 11002
-// Function ID: 85599
+// Module ID: 11012
+// Function ID: 85649
 // Name: _transformClientActionToApiAction
-// Dependencies: []
+// Dependencies: [5, 1838, 3758, 653, 11013, 1327, 21, 507, 11006, 4324, 6750, 686, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11002 (_transformClientActionToApiAction)
+// Module 11012 (_transformClientActionToApiAction)
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+
+let closure_6;
+let closure_7;
+let closure_8;
+const require = arg1;
 function _transformClientActionToApiAction(type) {
-  const obj = { type: type.type, metadata: arg1(dependencyMap[4])._transformMetadataToSnakeCase(type.metadata) };
+  const obj = { type: type.type, metadata: require(11013) /* _transformMetadataToCamelCase */._transformMetadataToSnakeCase(type.metadata) };
   return obj;
 }
 function _transformClientRuleToApiRule(id) {
-  let obj = arg1(dependencyMap[4]);
+  let obj = require(11013) /* _transformMetadataToCamelCase */;
   const result = obj._transformMetadataToSnakeCase(id.triggerMetadata);
   if (null != result) {
-    delete r3.keywordLists;
+    delete tmp.keywordLists;
   }
   obj = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result };
   const actions = id.actions;
-  const found = actions.filter(arg1(dependencyMap[5]).isNotNullish);
+  const found = actions.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
   obj.actions = found.map(_transformClientActionToApiAction);
   ({ enabled: obj2.enabled, creatorId: obj2.creator_id, position: obj2.position } = id);
   let exemptChannels = id.exemptChannels;
@@ -33,7 +42,7 @@ function _transformClientRuleToApiRule(id) {
   return obj;
 }
 function _transformApiActionToClientAction(type) {
-  const obj = { type: type.type, metadata: arg1(dependencyMap[4])._transformMetadataToCamelCase(type.metadata) };
+  const obj = { type: type.type, metadata: require(11013) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(type.metadata) };
   return obj;
 }
 function _transformApiRuletoClientRule(id) {
@@ -41,21 +50,21 @@ function _transformApiRuletoClientRule(id) {
   id = id.id;
   if (null == id) {
     const _Date = Date;
-    id = importDefault(dependencyMap[6]).fromTimestamp(Date.now());
-    const obj2 = importDefault(dependencyMap[6]);
+    id = importDefault(21).fromTimestamp(Date.now());
+    const obj2 = importDefault(21);
   }
   obj.id = id;
   ({ name: obj.name, guild_id: obj.guildId, event_type: obj.eventType, trigger_type: obj.triggerType } = id);
-  obj.triggerMetadata = arg1(dependencyMap[4])._transformMetadataToCamelCase(id.trigger_metadata);
+  obj.triggerMetadata = require(11013) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(id.trigger_metadata);
   const actions = id.actions;
-  const found = actions.filter(arg1(dependencyMap[5]).isNotNullish);
+  const found = actions.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
   obj.actions = found.map(_transformApiActionToClientAction);
   ({ enabled: obj.enabled, creator_id: obj.creatorId, position: obj.position } = id);
   let exempt_channels = id.exempt_channels;
   if (null == exempt_channels) {
     exempt_channels = [];
   }
-  const obj3 = arg1(dependencyMap[4]);
+  const obj3 = require(11013) /* _transformMetadataToCamelCase */;
   obj.exemptChannels = new Set(exempt_channels);
   let exempt_roles = id.exempt_roles;
   if (null == exempt_roles) {
@@ -65,52 +74,42 @@ function _transformApiRuletoClientRule(id) {
   obj.exemptRoles = new Set(exempt_roles);
   if (null != obj.triggerMetadata) {
     const triggerMetadata = obj.triggerMetadata;
-    delete r1.keywordLists;
+    delete tmp.keywordLists;
   }
   return obj;
 }
 function _validateAutomodRule() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _validateAutomodRule = obj;
   return obj(...arguments);
 }
 function _createAutomodRule() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _createAutomodRule = obj;
   return obj(...arguments);
 }
 function _updateAutomodRule() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _updateAutomodRule = obj;
   return obj(...arguments);
 }
 function _deleteAutomodRule() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _deleteAutomodRule = obj;
   return obj(...arguments);
 }
 function _fetchAutomodRules() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _fetchAutomodRules = obj;
   return obj(...arguments);
 }
 function _executeAlertAction() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _executeAlertAction = obj;
   return obj(...arguments);
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-({ AnalyticEvents: closure_6, Endpoints: closure_7, Permissions: closure_8 } = arg1(dependencyMap[3]));
-const tmp2 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[12]).fileFinishedImporting("modules/guild_automod/GuildAutomodActionCreators.tsx");
+({ AnalyticEvents: closure_6, Endpoints: closure_7, Permissions: closure_8 } = ME);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_automod/GuildAutomodActionCreators.tsx");
 
 export const validateAutomodRule = function validateAutomodRule() {
   return _validateAutomodRule(...arguments);
@@ -131,29 +130,29 @@ export const executeAlertAction = function executeAlertAction(messageId, channel
   return _executeAlertAction(...arguments);
 };
 export const removeMentionRaidRestrictionWithFeedback = function removeMentionRaidRestrictionWithFeedback(guildId) {
-  const arg1 = guildId;
-  const importDefault = arg1;
+  const _require = guildId;
+  let closure_1 = arg1;
   const dependencyMap = arg2;
-  const guild = guild.getGuild(guildId);
+  guild = guild.getGuild(guildId);
   let canResult = null != guild;
   if (canResult) {
-    canResult = closure_5.can(constants.MANAGE_GUILD, guild);
+    canResult = _isNativeReflectConstruct.can(constants.MANAGE_GUILD, guild);
   }
   if (canResult) {
-    const result = arg1(dependencyMap[8]).openConfirmRemoveMentionRaid(() => {
-      let obj = arg0(arg2[9]);
-      obj = { feedback_type: arg0(arg2[10]).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: arg1 };
-      obj.trackWithMetadata(constants.GUILD_AUTOMOD_FEEDBACK, obj);
-      const HTTP = arg0(arg2[7]).HTTP;
-      obj = { url: closure_7.GUILD_AUTOMOD_CLEAR_MENTION_RAID(arg0), rejectWithError: true };
+    const result = _require(11006).openConfirmRemoveMentionRaid(() => {
+      let obj = guildId(4324);
+      obj = { feedback_type: guildId(6750).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
+      obj.trackWithMetadata(outer1_6.GUILD_AUTOMOD_FEEDBACK, obj);
+      const HTTP = guildId(507).HTTP;
+      obj = { url: outer1_7.GUILD_AUTOMOD_CLEAR_MENTION_RAID(guildId), rejectWithError: true };
       HTTP.post(obj);
-      arg2();
+      dependencyMap();
     });
-    const obj = arg1(dependencyMap[8]);
+    let obj = _require(11006);
   }
 };
 export const clearMentionRaidDetected = function clearMentionRaidDetected(guildId) {
-  let obj = importDefault(dependencyMap[11]);
+  let obj = importDefault(686);
   obj = { type: "AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS", guildId };
   obj.dispatch(obj);
 };

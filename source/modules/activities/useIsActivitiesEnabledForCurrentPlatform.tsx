@@ -1,15 +1,14 @@
-// Module ID: 10507
-// Function ID: 82055
+// Module ID: 10517
+// Function ID: 82105
 // Name: isActivitiesAllowed
-// Dependencies: []
+// Dependencies: [4368, 2]
 // Exports: getIsActivitiesEnabledForCurrentPlatform, useIsActivitiesEnabledForCurrentPlatform
 
-// Module 10507 (isActivitiesAllowed)
+// Module 10517 (isActivitiesAllowed)
 function isActivitiesAllowed() {
-  return !require(dependencyMap[0]).isTablet;
+  return !require(4368) /* isTablet */.isTablet;
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/activities/useIsActivitiesEnabledForCurrentPlatform.tsx");
+const result = require("set").fileFinishedImporting("modules/activities/useIsActivitiesEnabledForCurrentPlatform.tsx");
 
 export const useIsActivitiesEnabledForCurrentPlatform = function useIsActivitiesEnabledForCurrentPlatform() {
   return isActivitiesAllowed();

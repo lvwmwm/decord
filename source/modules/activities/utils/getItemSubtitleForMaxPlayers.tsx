@@ -1,21 +1,20 @@
-// Module ID: 11259
-// Function ID: 87588
+// Module ID: 11269
+// Function ID: 87638
 // Name: getItemSubtitleForMaxPlayers
-// Dependencies: []
+// Dependencies: [1212, 2]
 // Exports: default, getItemSubtitleForMaxPlayersShort, getItemSubtitleForMaxPlayersShorter
 
-// Module 11259 (getItemSubtitleForMaxPlayers)
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/activities/utils/getItemSubtitleForMaxPlayers.tsx");
+// Module 11269 (getItemSubtitleForMaxPlayers)
+const result = require("set").fileFinishedImporting("modules/activities/utils/getItemSubtitleForMaxPlayers.tsx");
 
 export default function getItemSubtitleForMaxPlayers(count) {
   if (count > 0) {
-    const intl2 = require(dependencyMap[0]).intl;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
     const obj = { count };
-    let formatToPlainStringResult = intl2.formatToPlainString(require(dependencyMap[0]).t.p/YmkR, obj);
+    let formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["p/YmkR"], obj);
   } else {
-    const intl = require(dependencyMap[0]).intl;
-    formatToPlainStringResult = intl.string(require(dependencyMap[0]).t.s1vQIL);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    formatToPlainStringResult = intl.string(require(1212) /* getSystemLocale */.t.s1vQIL);
   }
   return formatToPlainStringResult;
 };
@@ -24,8 +23,8 @@ export const getItemSubtitleForMaxPlayersShort = function getItemSubtitleForMaxP
     const _HermesInternal = HermesInternal;
     let combined = "1 - " + arg0;
   } else {
-    const intl = require(dependencyMap[0]).intl;
-    combined = intl.string(require(dependencyMap[0]).t.zMNEiF);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    combined = intl.string(require(1212) /* getSystemLocale */.t.zMNEiF);
   }
   return combined;
 };
@@ -34,8 +33,8 @@ export const getItemSubtitleForMaxPlayersShorter = function getItemSubtitleForMa
     const _HermesInternal = HermesInternal;
     let combined = "1-" + arg0;
   } else {
-    const intl = require(dependencyMap[0]).intl;
-    combined = intl.string(require(dependencyMap[0]).t.zMNEiF);
+    const intl = require(1212) /* getSystemLocale */.intl;
+    combined = intl.string(require(1212) /* getSystemLocale */.t.zMNEiF);
   }
   return combined;
 };

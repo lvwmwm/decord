@@ -1,34 +1,40 @@
 // Module ID: 1101
-// Function ID: 12573
+// Function ID: 12574
 // Name: processEvent
-// Dependencies: []
+// Dependencies: [65, 977]
 // Exports: screenshotIntegration
 
 // Module 1101 (processEvent)
+import _toConsumableArray from "_toConsumableArray";
+
+const require = arg1;
 function processEvent(arg0, arg1, arg2) {
-  arg1 = arg0;
-  const dependencyMap = arg1;
-  let closure_2 = arg2;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let _toConsumableArray = arg2;
   return fn(this, undefined, undefined, function*() {
-    const exception = lib.exception;
+    const exception = outer1_0.exception;
+    const outer1_3 = exception;
     let values;
     if (null !== exception) {
-      if (undefined !== exception) {
-        values = exception.values;
+      if (undefined !== outer1_3) {
+        values = outer1_3.values;
       }
     }
     if (values) {
-      if (lib.exception.values.length > 0) {
-        const options = options.getOptions();
+      if (outer1_0.exception.values.length > 0) {
+        const options = outer1_2.getOptions();
+        const outer1_4 = options;
         const beforeScreenshot = options.beforeScreenshot;
+        const outer1_5 = beforeScreenshot;
         let callResult;
         if (null !== beforeScreenshot) {
-          if (undefined !== beforeScreenshot) {
-            callResult = beforeScreenshot.call(options, lib, attachments);
+          if (undefined !== outer1_5) {
+            callResult = outer1_5.call(outer1_4, outer1_0, outer1_1);
           }
         }
         if (false !== callResult) {
-          const NATIVE = lib(attachments[1]).NATIVE;
+          const NATIVE = callback(table[1]).NATIVE;
           const arr3 = yield NATIVE.captureScreenshot();
           let tmp11 = arr3;
           if (arr3) {
@@ -37,25 +43,24 @@ function processEvent(arg0, arg1, arg2) {
           if (tmp11) {
             const items = [];
             let attachments;
-            if (null != attachments) {
-              attachments = attachments.attachments;
+            if (null != outer1_1) {
+              attachments = outer1_1.attachments;
             }
             if (!attachments) {
               attachments = [];
             }
-            attachments.attachments = items.concat(options(arr3), options(attachments));
-            const tmp12 = attachments;
-            const tmp14 = options(arr3);
-            const tmp15 = options;
+            outer1_1.attachments = items.concat(callback2(arr3), callback2(attachments));
+            const tmp12 = outer1_1;
+            const tmp14 = callback2(arr3);
+            const tmp15 = callback2;
           }
-          return lib;
+          return outer1_0;
         }
       }
     }
-    return lib;
+    return outer1_0;
   });
 }
-let closure_2 = importDefault(dependencyMap[0]);
 let fn = this;
 if (this) {
   fn = this.__awaiter;
@@ -63,50 +68,54 @@ if (this) {
 if (!fn) {
   fn = (arg0, arg1, arg2, arg3) => {
     let _Promise = arg2;
-    arg1 = arg0;
-    const dependencyMap = arg1;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_3 = arg3;
     if (!arg2) {
       _Promise = Promise;
     }
     _Promise = new _Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
       function fulfilled(arg0) {
         step(iter.next(arg0));
       }
-      let arg3 = function rejected(arg0) {
+      let iter = function rejected(arg0) {
         step(iter.throw(arg0));
       };
       function step(iter) {
         if (iter.done) {
-          iter(iter.value);
+          callback(iter.value);
         } else {
-          function adopt(value) {
+          (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value).then(fulfilled, iter);
-          const promise = function adopt(value) {
+          })(iter.value).then(fulfilled, iter);
+          const promise = (function adopt(value) {
             let tmp = value;
-            if (!(value instanceof ctor)) {
-              const prototype = ctor.prototype;
-              tmp = new ctor((arg0) => {
-                arg0(arg0);
+            let closure_0 = value;
+            if (!(value instanceof fulfilled)) {
+              const prototype = fulfilled.prototype;
+              tmp = new fulfilled((arg0) => {
+                arg0(closure_0);
               });
             }
             return tmp;
-          }(iter.value);
+          })(iter.value);
         }
       }
-      let items = arg1;
-      if (!arg1) {
+      let items = closure_1;
+      if (!closure_1) {
         items = [];
       }
-      const iter = arg3.apply(arg0, items);
-      arg3 = iter;
+      iter = iter.apply(closure_0, items);
       step(iter.next());
     });
     return _Promise;

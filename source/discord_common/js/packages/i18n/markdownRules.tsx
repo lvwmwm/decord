@@ -1,12 +1,15 @@
-// Module ID: 15833
-// Function ID: 121044
+// Module ID: 15950
+// Function ID: 123217
 // Name: link
-// Dependencies: []
+// Dependencies: [3829, 2]
 
-// Module 15833 (link)
-const link = require(dependencyMap[0]).defaultRules.link;
-const text = require(dependencyMap[0]).defaultRules.text;
-let obj = { newline: require(dependencyMap[0]).defaultRules.newline, paragraph: require(dependencyMap[0]).defaultRules.paragraph, url: require(dependencyMap[0]).defaultRules.url };
+// Module 15950 (link)
+import t from "t";
+import t from "t";
+
+const link = require("t").defaultRules.link;
+const text = require("t").defaultRules.text;
+let obj = { newline: require("t").defaultRules.newline, paragraph: require("t").defaultRules.paragraph, url: require("t").defaultRules.url };
 obj = {};
 const merged = Object.assign(link);
 obj["parse"] = function parse(arg0, arg1, context) {
@@ -15,14 +18,13 @@ obj["parse"] = function parse(arg0, arg1, context) {
   return parsed;
 };
 obj.link = obj;
-obj.strong = require(dependencyMap[0]).defaultRules.strong;
-obj.u = require(dependencyMap[0]).defaultRules.u;
-obj.br = require(dependencyMap[0]).defaultRules.br;
-obj.em = require(dependencyMap[0]).defaultRules.em;
-obj.image = require(dependencyMap[0]).defaultRules.image;
+obj.strong = require("t").defaultRules.strong;
+obj.u = require("t").defaultRules.u;
+obj.br = require("t").defaultRules.br;
+obj.em = require("t").defaultRules.em;
+obj.image = require("t").defaultRules.image;
 obj = { order: text.order };
-const _module = require(dependencyMap[0]);
-obj.match = _module.inlineRegex(/^\$\[(.*?)\]\((\w+)\)/);
+obj.match = t.inlineRegex(/^\$\[(.*?)\]\((\w+)\)/);
 obj.parse = function parse(arg0, arg1, render) {
   return { render: render.context[arg0[2]], content: arg1(arg0[1], render) };
 };
@@ -31,8 +33,7 @@ obj.react = function react(render, arg1, key) {
 };
 obj.hook = obj;
 const obj1 = { order: text.order };
-const _module1 = require(dependencyMap[0]);
-obj1.match = _module1.inlineRegex(/^!!(\d+?)!!/);
+obj1.match = t.inlineRegex(/^!!(\d+?)!!/);
 obj1.parse = function parse(arg0, arg1, arg2) {
   let tmp = str;
   if ("string" !== typeof arg2.unsafeContext[arg0[1]]) {
@@ -50,7 +51,6 @@ obj1.react = function react(content) {
 };
 obj.noparse = obj1;
 obj.text = text;
-const _module2 = require(dependencyMap[1]);
-const result = _module2.fileFinishedImporting("../discord_common/js/packages/i18n/markdownRules.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/i18n/markdownRules.tsx");
 
 export const rules = obj;

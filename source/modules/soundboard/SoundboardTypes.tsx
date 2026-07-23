@@ -1,12 +1,11 @@
-// Module ID: 4581
-// Function ID: 40170
+// Module ID: 4585
+// Function ID: 40202
 // Name: SoundButtonOverlay
-// Dependencies: []
+// Dependencies: [2]
 // Exports: soundboardSoundFromAPI, soundboardSoundToAPI
 
-// Module 4581 (SoundButtonOverlay)
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("modules/soundboard/SoundboardTypes.tsx");
+// Module 4585 (SoundButtonOverlay)
+const result = require("set").fileFinishedImporting("modules/soundboard/SoundboardTypes.tsx");
 
 export const SoundButtonOverlay = { NONE: 0, [0]: "NONE", PLAY: 1, [1]: "PLAY", ADD: 2, [2]: "ADD", SOUNDMOJI: 3, [3]: "SOUNDMOJI" };
 export const AnalyticsSoundType = { ENTRY: "entry_sound", EXIT: "exit_sound", DEFAULT: "default" };
@@ -18,7 +17,7 @@ export const soundboardSoundFromAPI = function soundboardSoundFromAPI(body, guil
   let sound_id;
   let user_id;
   const available = body.available;
-  let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+  let obj = { sound_id: 0, emoji_id: 0, emoji_name: 0, user_id: 0, available: 0 };
   ({ sound_id, emoji_id, emoji_name, user_id } = body);
   Object.setPrototypeOf(null);
   obj = {};
@@ -37,7 +36,7 @@ export const soundboardSoundToAPI = function soundboardSoundToAPI(arg0) {
   let guildId;
   let soundId;
   let userId;
-  let obj = { "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false, "Bool(false)": false };
+  let obj = { soundId: 0, guildId: 0, emojiId: 0, emojiName: 0, userId: 0 };
   ({ soundId, guildId, emojiId, emojiName, userId } = arg0);
   Object.setPrototypeOf(null);
   obj = {};

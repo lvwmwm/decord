@@ -1,47 +1,49 @@
-// Module ID: 14355
-// Function ID: 108385
+// Module ID: 14469
+// Function ID: 110538
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: []
+// Dependencies: [31, 27, 1849, 653, 1851, 33, 4130, 689, 5464, 5484, 566, 7860, 7840, 7888, 6786, 14225, 14226, 7847, 1860, 675, 13561, 2]
 // Exports: default
 
-// Module 14355 (ProfileCustomizationTryItOutSettingScreen)
-let closure_3 = importAll(dependencyMap[0]);
-const tmp2 = arg1(dependencyMap[1]);
-({ View: closure_4, ActivityIndicator: closure_5 } = tmp2);
-let closure_6 = importDefault(dependencyMap[2]);
-({ AnalyticEvents: closure_7, AnalyticsPages: closure_8 } = arg1(dependencyMap[3]));
-const PremiumUpsellTypes = arg1(dependencyMap[4]).PremiumUpsellTypes;
-const jsx = arg1(dependencyMap[5]).jsx;
-let obj = arg1(dependencyMap[6]);
-obj = {};
-obj = { backgroundColor: importDefault(dependencyMap[7]).colors.BACKGROUND_BASE_LOWER };
-const merged = Object.assign(tmp2.StyleSheet.absoluteFillObject);
-obj.container = obj;
-obj.activityIndicator = { -9223372036854775808: "getEmbeddedActivityParticipantId", -9223372036854775808: "_enabledPaymentMethods", -9223372036854775808: "GAME_CLAIM" };
-let closure_11 = obj.createStyles(obj);
-const tmp3 = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
+// Module 14469 (ProfileCustomizationTryItOutSettingScreen)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ME from "ME";
+import { PremiumUpsellTypes } from "GuildFeatures";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_7;
+let closure_8;
+const require = arg1;
+({ View: closure_4, ActivityIndicator: closure_5 } = get_ActivityIndicator);
+({ AnalyticEvents: closure_7, AnalyticsPages: closure_8 } = ME);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
+const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.activityIndicator = { height: "100%", alignItems: "center", justifyContent: "center" };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
 
 export default function ProfileCustomizationTryItOutSettingScreen() {
   let analyticsLocations;
   let sourceAnalyticsLocations;
-  let tmp = callback();
-  const tmp2 = importDefault(dependencyMap[8]);
-  ({ analyticsLocations, sourceAnalyticsLocations } = importDefault(dependencyMap[8])(importDefault(dependencyMap[9]).USER_SETTINGS_TRY_OUT_PREMIUM));
-  const arg1 = sourceAnalyticsLocations;
-  let obj = arg1(dependencyMap[10]);
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => visibleEffectOrder.getCurrentUser());
-  const importDefault = stateFromStores;
-  const tmp5 = importDefault(dependencyMap[11])();
-  const categories = tmp5.categories;
-  const dependencyMap = categories;
-  const tmp6 = importDefault(dependencyMap[12])({ isTryItOut: true, analyticsLocations });
+  let tmp = _createForOfIteratorHelperLoose();
+  const tmp2 = stateFromStores(categories[8]);
+  ({ analyticsLocations, sourceAnalyticsLocations } = stateFromStores(categories[8])(stateFromStores(categories[9]).USER_SETTINGS_TRY_OUT_PREMIUM));
+  let obj = sourceAnalyticsLocations(categories[10]);
+  const items = [visibleEffectOrder];
+  stateFromStores = obj.useStateFromStores(items, () => visibleEffectOrder.getCurrentUser());
+  const tmp5 = stateFromStores(categories[11])();
+  categories = tmp5.categories;
+  const tmp6 = stateFromStores(categories[12])({ isTryItOut: true, analyticsLocations });
   const pendingAvatarDecoration = tmp6.pendingAvatarDecoration;
-  const React = pendingAvatarDecoration;
   const setPendingAvatarDecoration = tmp6.setPendingAvatarDecoration;
   const items1 = [stateFromStores];
-  const effect = React.useEffect(() => {
+  const effect = pendingAvatarDecoration.useEffect(() => {
     if (null != stateFromStores) {
       const obj = { dispatchWait: true };
       stateFromStores(categories[13])(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), obj);
@@ -49,7 +51,7 @@ export default function ProfileCustomizationTryItOutSettingScreen() {
     }
   }, items1);
   const items2 = [pendingAvatarDecoration, setPendingAvatarDecoration, categories];
-  const effect1 = React.useEffect(() => {
+  const effect1 = pendingAvatarDecoration.useEffect(() => {
     if (undefined === pendingAvatarDecoration) {
       const avatarDecorationsFromCategories = sourceAnalyticsLocations(categories[14]).getAvatarDecorationsFromCategories(categories);
       const _Math = Math;
@@ -58,36 +60,35 @@ export default function ProfileCustomizationTryItOutSettingScreen() {
       const obj = sourceAnalyticsLocations(categories[14]);
     }
   }, items2);
-  let obj1 = arg1(dependencyMap[15]);
+  let obj1 = sourceAnalyticsLocations(categories[15]);
   const visibleFontOrder = obj1.useVisibleFontOrder();
-  let obj2 = arg1(dependencyMap[16]);
-  const visibleEffectOrder = obj2.useVisibleEffectOrder();
-  closure_6 = visibleEffectOrder;
+  let obj2 = sourceAnalyticsLocations(categories[16]);
+  visibleEffectOrder = obj2.useVisibleEffectOrder();
   const items3 = [visibleFontOrder, visibleEffectOrder];
-  const effect2 = React.useEffect(() => {
+  const effect2 = pendingAvatarDecoration.useEffect(() => {
     const obj = sourceAnalyticsLocations(categories[17]);
     const result = obj.setTryItOutDisplayNameStyles(sourceAnalyticsLocations(categories[18]).generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder));
   }, items3);
   const items4 = [sourceAnalyticsLocations];
-  const effect3 = React.useEffect(() => {
+  const effect3 = pendingAvatarDecoration.useEffect(() => {
     let obj = stateFromStores(categories[19]);
-    obj = { type: constants3.PREMIUM_PROFILE_TRY_IT_OUT, location: obj, location_stack: sourceAnalyticsLocations };
-    obj = { page: constants2.USER_SETTINGS };
-    obj.track(constants.PREMIUM_UPSELL_VIEWED, obj);
+    obj = { type: outer1_9.PREMIUM_PROFILE_TRY_IT_OUT, location: obj, location_stack: sourceAnalyticsLocations };
+    obj = { page: outer1_8.USER_SETTINGS };
+    obj.track(outer1_7.PREMIUM_UPSELL_VIEWED, obj);
   }, items4);
   if (null == stateFromStores) {
     return null;
   } else if (tmp5.isFetching) {
     obj = { style: tmp.activityIndicator };
     tmp = visibleFontOrder;
-    obj.children = <visibleFontOrder />;
-    let tmp18 = <setPendingAvatarDecoration {...obj} />;
+    obj.children = <visibleFontOrder animating size="large" />;
+    let tmp18 = <setPendingAvatarDecoration style={tmp.activityIndicator} />;
   } else if (undefined !== pendingAvatarDecoration) {
     obj = { value: analyticsLocations };
     obj1 = { style: tmp.container };
     obj2 = { currentUser: stateFromStores, isTryItOut: true };
-    obj1.children = jsx(importDefault(dependencyMap[20]), obj2);
-    obj.children = <setPendingAvatarDecoration {...obj1} />;
-    tmp18 = jsx(arg1(dependencyMap[8]).AnalyticsLocationProvider, obj);
+    obj1.children = jsx(stateFromStores(categories[20]), { currentUser: stateFromStores, isTryItOut: true });
+    obj.children = <setPendingAvatarDecoration style={tmp.container} />;
+    tmp18 = jsx(sourceAnalyticsLocations(categories[8]).AnalyticsLocationProvider, { value: analyticsLocations });
   }
 };

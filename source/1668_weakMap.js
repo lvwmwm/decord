@@ -1,21 +1,23 @@
 // Module ID: 1668
-// Function ID: 18535
+// Function ID: 18536
 // Name: weakMap
-// Dependencies: []
+// Dependencies: [1592]
 
 // Module 1668 (weakMap)
+const require = arg1;
+const dependencyMap = arg6;
 const weakMap = new WeakMap();
 arg5.snapshots = weakMap;
 arg5.makeElementVisible = function makeElementVisible(_componentDOMRef, arg1) {
-  arg1 = _componentDOMRef;
+  const _require = _componentDOMRef;
   if (0 === arg1) {
-    let obj = arg1(arg6[0]);
+    let obj = _require(1592);
     obj = { visibility: "initial" };
     obj._updatePropsJS(obj, _componentDOMRef);
   } else {
     const _setTimeout = setTimeout;
     const timerId = setTimeout(() => {
-      arg0(closure_1[0])._updatePropsJS({ visibility: "initial" }, arg0);
+      _componentDOMRef(outer1_1[0])._updatePropsJS({ visibility: "initial" }, _componentDOMRef);
     }, 1000 * arg1);
   }
 };

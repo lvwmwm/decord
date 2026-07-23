@@ -1,23 +1,24 @@
 // Module ID: 918
-// Function ID: 10048
+// Function ID: 10049
 // Name: extractTargetInfo
-// Dependencies: []
+// Dependencies: [57, 77, 916]
 // Exports: extractTargetInfo, getRequestArguments
 
 // Module 918 (extractTargetInfo)
-let closure_2 = require(dependencyMap[0]);
-let closure_3 = require(dependencyMap[1]);
+import _slicedToArray from "_slicedToArray";
+import _defineProperty from "_defineProperty";
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let obj = {};
-obj = { targetAttribute: require(dependencyMap[2]).MCP_TOOL_NAME_ATTRIBUTE };
-obj.tools/call = obj;
-obj = { <string:1641789485>: "\u{1F47D}", <string:2054836715>: 6, Button: 115, targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
-obj.resources/read = obj;
-obj.resources/subscribe = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
-const obj1 = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
-obj.resources/unsubscribe = { targetField: "uri", targetAttribute: require(dependencyMap[2]).MCP_RESOURCE_URI_ATTRIBUTE };
-const obj3 = { 9850: "N", 15360: "N", 15872: "N", 8704: "N", 40960: "n", targetAttribute: require(dependencyMap[2]).MCP_PROMPT_NAME_ATTRIBUTE };
-obj.prompts/get = obj3;
+obj = { targetField: "name", targetAttribute: require("module_916").MCP_TOOL_NAME_ATTRIBUTE, captureArguments: true, argumentsField: "arguments" };
+obj["tools/call"] = obj;
+obj = { targetField: "uri", targetAttribute: require("module_916").MCP_RESOURCE_URI_ATTRIBUTE, captureUri: true };
+obj["resources/read"] = obj;
+obj["resources/subscribe"] = { targetField: "uri", targetAttribute: require("module_916").MCP_RESOURCE_URI_ATTRIBUTE };
+const obj1 = { targetField: "uri", targetAttribute: require("module_916").MCP_RESOURCE_URI_ATTRIBUTE };
+obj["resources/unsubscribe"] = { targetField: "uri", targetAttribute: require("module_916").MCP_RESOURCE_URI_ATTRIBUTE };
+const obj3 = { targetField: "name", targetAttribute: require("module_916").MCP_PROMPT_NAME_ATTRIBUTE, captureName: true, captureArguments: true, argumentsField: "arguments" };
+obj["prompts/get"] = obj3;
 
 export const extractTargetInfo = function extractTargetInfo(method, params) {
   if (obj[method]) {
@@ -31,10 +32,10 @@ export const extractTargetInfo = function extractTargetInfo(method, params) {
         tmp2 = params[tmp.targetField];
       }
     }
-    let obj = { target: tmp2 };
+    obj = { target: tmp2 };
     if (tmp2) {
       if (tmp.targetAttribute) {
-        obj = callback2({}, tmp.targetAttribute, tmp2);
+        obj = _defineProperty({}, tmp.targetAttribute, tmp2);
       }
       obj.attributes = obj;
       return obj;
@@ -58,17 +59,17 @@ export const getRequestArguments = function getRequestArguments(method, uri) {
                 const entries = Object.entries(tmp4);
                 const tmp28 = entries[Symbol.iterator]();
                 while (tmp28 !== undefined) {
-                  let tmp7 = callback;
-                  let tmp8 = callback(tmp5, 2);
+                  let tmp7 = _slicedToArray;
+                  let tmp8 = _slicedToArray(tmp5, 2);
                   let str2 = tmp8[0];
                   let tmp9 = obj;
                   let tmp10 = require;
                   let tmp11 = dependencyMap;
                   let _HermesInternal = HermesInternal;
                   let _JSON = JSON;
-                  let combined = "" + require(dependencyMap[2]).MCP_REQUEST_ARGUMENT + "." + str2.toLowerCase();
+                  let combined = "" + require(916).MCP_REQUEST_ARGUMENT + "." + str2.toLowerCase();
                   obj[combined] = JSON.stringify(tmp8[1]);
-                  // continue
+                  continue;
                 }
               }
             }
@@ -86,7 +87,7 @@ export const getRequestArguments = function getRequestArguments(method, uri) {
     if (uri) {
       const _HermesInternal2 = HermesInternal;
       const _JSON2 = JSON;
-      const combined1 = "" + require(dependencyMap[2]).MCP_REQUEST_ARGUMENT + ".uri";
+      const combined1 = "" + require(916).MCP_REQUEST_ARGUMENT + ".uri";
       obj[combined1] = JSON.stringify(uri.uri);
     }
     let name = tmp.captureName;
@@ -99,7 +100,7 @@ export const getRequestArguments = function getRequestArguments(method, uri) {
     if (name) {
       const _HermesInternal3 = HermesInternal;
       const _JSON3 = JSON;
-      const combined2 = "" + require(dependencyMap[2]).MCP_REQUEST_ARGUMENT + ".name";
+      const combined2 = "" + require(916).MCP_REQUEST_ARGUMENT + ".name";
       obj[combined2] = JSON.stringify(uri.name);
     }
     return obj;

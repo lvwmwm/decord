@@ -1,61 +1,58 @@
-// Module ID: 11558
-// Function ID: 89938
+// Module ID: 11568
+// Function ID: 89987
 // Name: useGuildPowerupOnActivate
-// Dependencies: [31, 4049, 1910, 1838, 566, 5145, 4019, 1212, 2230, 2, 31, 653, 4096, 11540, 4019, 8432, 8435]
+// Dependencies: [31, 1838, 4023, 4018, 11569, 566, 11570, 5464, 11571, 4022, 4098, 11550, 4966, 6641, 4337, 6649, 2]
 // Exports: default
 
-// Module 11558 (useGuildPowerupOnActivate)
-import module_31 from "module_31";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_createForOfIteratorHelperLoose";
+// Module 11568 (useGuildPowerupOnActivate)
+import result from "result";
 import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import canUseMobileServerTagSettings from "canUseMobileServerTagSettings";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import BoostedGuildTiers from "BoostedGuildTiers";
 
-({ BoostPurchaseIntent: closure_6, GuildPowerupType: closure_7 } = _createForOfIteratorHelperLoose);
-const result = canUseMobileServerTagSettings.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnActivate.tsx");
+let closure_6;
+let closure_7;
+const require = arg1;
+({ BoostPurchaseIntent: closure_6, GuildPowerupType: closure_7 } = BoostedGuildTiers);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnActivate.tsx");
 
 export default function useGuildPowerupOnActivate(arg0, arg1) {
   let error;
   let isLoading;
-  arg1 = arg0;
+  const _require = arg0;
   const importDefault = arg1;
-  const tmp = importDefault(dependencyMap[4])(arg0, arg1);
-  const onToggle = tmp.onToggle;
-  const dependencyMap = onToggle;
+  const tmp = importDefault(onToggle[4])(arg0, arg1);
+  onToggle = tmp.onToggle;
   ({ isLoading, error } = tmp);
-  let obj = arg1(dependencyMap[5]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => tmp3.getGuild(arg0));
-  const React = stateFromStores;
-  const tmp3 = importDefault(dependencyMap[6])(arg0, arg1);
-  _isNativeReflectConstruct = tmp3;
-  const analyticsLocations = importDefault(dependencyMap[7])().analyticsLocations;
-  let closure_5 = analyticsLocations;
-  const tmp4 = importDefault(dependencyMap[8])("guild_powerup_activation");
+  let obj = _require(onToggle[5]);
+  const items = [_createForOfIteratorHelperLoose];
+  const stateFromStores = obj.useStateFromStores(items, () => tmp3.getGuild(closure_0));
+  const tmp3 = importDefault(onToggle[6])(arg0, arg1);
+  _createForOfIteratorHelperLoose = tmp3;
+  const analyticsLocations = importDefault(onToggle[7])().analyticsLocations;
+  const tmp4 = importDefault(onToggle[8])("guild_powerup_activation");
   const shouldUseMobileWebRedirectCheckout = tmp4.shouldUseMobileWebRedirectCheckout;
   const handleMobileWebRedirectCheckout = tmp4.handleMobileWebRedirectCheckout;
   obj = {
-    onActivate: React.useCallback((arg0, self) => {
+    onActivate: stateFromStores.useCallback(() => {
       function activatePowerup(arg0) {
         activatePowerup(true);
       }
-      const onToggle = activatePowerup;
       if (null != stateFromStores) {
-        if (null != self) {
-          if (tmp3 >= self.cost) {
+        if (null != PERK) {
+          if (_createForOfIteratorHelperLoose >= PERK.cost) {
             activatePowerup();
           } else {
-            const diff = self.cost - tmp3;
-            arg0 = diff;
-            const availableGuildBoostSlots = arg0(onToggle[9]).getAvailableGuildBoostSlots(analyticsLocations.boostSlots);
-            if (self.type === handleMobileWebRedirectCheckout.LEVEL) {
-              let PERK = shouldUseMobileWebRedirectCheckout.LEVEL;
+            const diff = PERK.cost - _createForOfIteratorHelperLoose;
+            const callback = diff;
+            let availableGuildBoostSlots = callback(onToggle[9]).getAvailableGuildBoostSlots(analyticsLocations.boostSlots);
+            if (PERK.type === handleMobileWebRedirectCheckout.LEVEL) {
+              PERK = shouldUseMobileWebRedirectCheckout.LEVEL;
             } else {
               PERK = shouldUseMobileWebRedirectCheckout.PERK;
             }
-            self = PERK;
-            let obj = self(onToggle[10]);
-            obj.hideActionSheet(arg0(onToggle[11]).GUILD_POWERUPS_BOTTOM_SHEET_KEY);
+            let obj = callback2(onToggle[10]);
+            obj.hideActionSheet(callback(onToggle[11]).GUILD_POWERUPS_BOTTOM_SHEET_KEY);
             if (availableGuildBoostSlots.length > 0) {
               obj = {
                 guildBoostSlots: availableGuildBoostSlots.slice(0, diff),
@@ -67,44 +64,44 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
                           }
                         }
               };
-              arg0(onToggle[12]).openTransferModal(obj);
-              const obj4 = arg0(onToggle[12]);
+              callback(onToggle[12]).openTransferModal(obj);
+              const obj4 = callback(onToggle[12]);
             } else if (shouldUseMobileWebRedirectCheckout) {
               handleMobileWebRedirectCheckout(analyticsLocations, stateFromStores.id);
             } else {
               obj = {
-                source: { -664534276: "png", 1509682403: true },
+                source: { page: "Guild Powerups", section: "Powerup Activation" },
                 analyticsLocations,
                 guildId: stateFromStores.id,
                 onBack() {
-                          return PERK(activatePowerup[14]).popWithKey(diff(activatePowerup[15]).PREMIUM_KEY);
+                          return PERK(onToggle[14]).popWithKey(diff(onToggle[15]).PREMIUM_KEY);
                         },
                 onPaymentSuccess() {
-                          let obj = diff(activatePowerup[9]);
-                          const availableGuildBoostSlots = obj.getAvailableGuildBoostSlots(boostSlots.boostSlots);
+                          let obj = diff(onToggle[9]);
+                          const availableGuildBoostSlots = obj.getAvailableGuildBoostSlots(analyticsLocations.boostSlots);
                           if (availableGuildBoostSlots.length >= diff) {
                             obj = {
                               guildBoostSlots: availableGuildBoostSlots.slice(0, PERK.cost),
-                              guildId: id.id,
+                              guildId: outer1_3.id,
                               intent: PERK,
                               onResult(arg0) {
                                   if (arg0) {
-                                    callback();
+                                    outer1_2();
                                   }
                                 }
                             };
-                            diff(activatePowerup[12]).openTransferModal(obj);
-                            const obj2 = diff(activatePowerup[12]);
+                            diff(onToggle[12]).openTransferModal(obj);
+                            const obj2 = diff(onToggle[12]);
                           }
                         },
                 onPaymentDismiss() {
-                          return PERK(activatePowerup[14]).popWithKey(diff(activatePowerup[15]).PREMIUM_KEY);
+                          return PERK(onToggle[14]).popWithKey(diff(onToggle[15]).PREMIUM_KEY);
                         }
               };
-              const result = arg0(onToggle[13]).launchGuildBoostFlowOrAlert(obj);
-              const obj2 = arg0(onToggle[13]);
+              const result = callback(onToggle[13]).launchGuildBoostFlowOrAlert(obj);
+              let obj2 = callback(onToggle[13]);
             }
-            const obj6 = arg0(onToggle[9]);
+            const obj6 = callback(onToggle[9]);
           }
         }
       }
@@ -112,6 +109,6 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
     isLoading,
     error
   };
-  const items1 = [onToggle, arg1, tmp3, stateFromStores, analyticsLocations, shouldUseMobileWebRedirectCheckout, handleMobileWebRedirectCheckout];
+  items1 = [onToggle, arg1, tmp3, stateFromStores, analyticsLocations, shouldUseMobileWebRedirectCheckout, handleMobileWebRedirectCheckout];
   return obj;
 };

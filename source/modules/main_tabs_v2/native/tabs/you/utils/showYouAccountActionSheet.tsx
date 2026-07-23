@@ -1,13 +1,13 @@
-// Module ID: 14984
-// Function ID: 112796
+// Module ID: 15100
+// Function ID: 114964
 // Name: showYouAccountActionSheet
-// Dependencies: []
+// Dependencies: [15101, 4098, 15102, 1934, 2]
 // Exports: showYouAccountActionSheet
 
-// Module 14984 (showYouAccountActionSheet)
-let closure_3 = require(dependencyMap[0]).YOU_ACCOUNT_ACTION_SHEET_KEY;
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/utils/showYouAccountActionSheet.tsx");
+// Module 15100 (showYouAccountActionSheet)
+import { YOU_ACCOUNT_ACTION_SHEET_KEY as closure_3 } from "YOU_SCREEN_ID";
+
+const result = require("YouStatusRadioGroup").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/utils/showYouAccountActionSheet.tsx");
 
 export const showYouAccountActionSheet = function showYouAccountActionSheet() {
   let flag = arg0;
@@ -18,7 +18,7 @@ export const showYouAccountActionSheet = function showYouAccountActionSheet() {
   if (flag2 === undefined) {
     flag2 = true;
   }
-  let obj = importDefault(dependencyMap[1]);
+  let obj = importDefault(4098);
   obj = { statusOnly: flag, disableHapticOnOpen: flag2 };
-  obj.openLazy(require(dependencyMap[3])(dependencyMap[2], dependencyMap.paths), closure_3, obj);
+  obj.openLazy(require(1934) /* maybeLoadBundle */(15102, dependencyMap.paths), closure_3, obj);
 };

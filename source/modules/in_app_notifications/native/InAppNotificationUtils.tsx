@@ -1,10 +1,20 @@
-// Module ID: 10224
-// Function ID: 79010
+// Module ID: 10236
+// Function ID: 79082
 // Name: hasMedia
-// Dependencies: []
+// Dependencies: [31, 10237, 653, 22, 491, 478, 5679, 4324, 2]
 // Exports: generateInAppNotificationId, getMessagePreviewTextVariant, isReactionMilestoneNotification, trackDismissed, trackInAppNotificationAccessoryClicked, useHasPreviewableMedia
 
-// Module 10224 (hasMedia)
+// Module 10236 (hasMedia)
+import result from "result";
+import { REACTION_MILESTONE_COUNTS } from "set";
+import ME from "ME";
+
+let closure_5;
+let closure_6;
+let closure_7;
+let closure_8;
+let closure_9;
+const require = arg1;
 function hasMedia(hasFlag) {
   let hasFlagResult = hasFlag.hasFlag(constants4.IS_VOICE_MESSAGE);
   if (!hasFlagResult) {
@@ -14,7 +24,7 @@ function hasMedia(hasFlag) {
     let everyResult = hasFlag.embeds.length > 0;
     if (everyResult) {
       const embeds = hasFlag.embeds;
-      everyResult = embeds.every((type) => type.type === constants.GIFV);
+      everyResult = embeds.every((type) => type.type === outer1_8.GIFV);
     }
     hasFlagResult = everyResult;
   }
@@ -112,7 +122,7 @@ function extractMetadataFromNotification(notification) {
     id5 = channel7.id;
   }
   const message = notification.message;
-  let id6;
+  id6 = undefined;
   if (null != message) {
     id6 = message.id;
   }
@@ -125,16 +135,13 @@ function extractMetadataFromNotification(notification) {
   tmp2 = id4;
   channelId = id5;
 }
-let closure_3 = importAll(dependencyMap[0]);
-const REACTION_MILESTONE_COUNTS = arg1(dependencyMap[1]).REACTION_MILESTONE_COUNTS;
-({ AnalyticEvents: closure_5, ChannelTypes: closure_6, InAppNotificationTypes: closure_7, MessageEmbedTypes: closure_8, MessageFlags: closure_9 } = arg1(dependencyMap[2]));
-const tmp2 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[8]).fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationUtils.tsx");
+({ AnalyticEvents: closure_5, ChannelTypes: closure_6, InAppNotificationTypes: closure_7, MessageEmbedTypes: closure_8, MessageFlags: closure_9 } = ME);
+const result = require("ME").fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationUtils.tsx");
 
 export const isReactionMilestoneNotification = function isReactionMilestoneNotification(reactions, type) {
   if (null != type) {
     if (type !== constants2.GUILD_ANNOUNCEMENT) {
-      return REACTION_MILESTONE_COUNTS.has(type(dependencyMap[3]).sumBy(reactions, (count_details) => {
+      return REACTION_MILESTONE_COUNTS.has(require(22) /* apply */.sumBy(reactions, (count_details) => {
         count_details = count_details.count_details;
         let burst;
         if (null != count_details) {
@@ -159,7 +166,7 @@ export const isReactionMilestoneNotification = function isReactionMilestoneNotif
   return false;
 };
 export const generateInAppNotificationId = function generateInAppNotificationId() {
-  return arg1(dependencyMap[4]).v4();
+  return require(491) /* v1 */.v4();
 };
 export const getMessagePreviewTextVariant = function getMessagePreviewTextVariant() {
   let str = "text-md/medium";
@@ -169,15 +176,15 @@ export const getMessagePreviewTextVariant = function getMessagePreviewTextVarian
   return str;
 };
 export const useHasPreviewableMedia = function useHasPreviewableMedia(message) {
-  const arg1 = message;
+  let closure_0 = message;
   const items = [message];
   return React.useMemo(() => {
-    let tmp = callback2(arg0);
+    let tmp = outer1_10(message);
     if (!tmp) {
-      let someResult = callback(closure_2[6])(arg0);
+      let someResult = outer1_1(outer1_2[6])(message);
       if (someResult) {
-        const messageSnapshots = arg0.messageSnapshots;
-        someResult = messageSnapshots.some((message) => callback(message.message));
+        const messageSnapshots = message.messageSnapshots;
+        someResult = messageSnapshots.some((message) => outer2_10(message.message));
       }
       tmp = someResult;
     }
@@ -190,7 +197,7 @@ export const trackInAppNotificationAccessoryClicked = function trackInAppNotific
   let guildId;
   let messageId;
   ({ guildId, channelId, messageId } = extractMetadataFromNotification(notification));
-  let obj = importDefault(dependencyMap[7]);
+  let obj = importDefault(4324);
   obj = { type: notification.type, in_app_notification_id: notification.inAppNotificationId, notif_guild_id: guildId, notif_channel_id: channelId, message_id: messageId, accessory: REACTION_BUTTON };
   obj.trackWithMetadata(constants.IN_APP_NOTIFICATION_ACCESSORY_CLICKED, obj);
 };
@@ -202,5 +209,5 @@ export const trackDismissed = function trackDismissed(arg0) {
   let messageId;
   let type;
   ({ guildId, channelId, type, dismissReason, inAppNotificationId, messageId } = arg0);
-  importDefault(dependencyMap[7]).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, { type, guild_id: guildId, channel_id: channelId, dismiss_reason: dismissReason, in_app_notification_id: inAppNotificationId, message_id: messageId });
+  importDefault(4324).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, { type, guild_id: guildId, channel_id: channelId, dismiss_reason: dismissReason, in_app_notification_id: inAppNotificationId, message_id: messageId });
 };

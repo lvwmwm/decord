@@ -1,57 +1,64 @@
-// Module ID: 12148
-// Function ID: 93582
+// Module ID: 12262
+// Function ID: 95733
 // Name: GiftCodeRedeemError
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 689, 1457, 5121, 12263, 12264, 4126, 1212, 4543, 4337, 2]
 // Exports: default
 
-// Module 12148 (GiftCodeRedeemError)
-importAll(dependencyMap[0]);
-({ Image: closure_3, View: closure_4, ScrollView: closure_5 } = arg1(dependencyMap[1]));
-const tmp3 = arg1(dependencyMap[1]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[2]));
-let obj = arg1(dependencyMap[3]);
-obj = {};
-obj = { "Null": 0.129, "Null": 1, backgroundColor: importDefault(dependencyMap[4]).colors.BACKGROUND_BASE_LOW };
-obj.container = obj;
-obj.body = {};
-obj.header = { MINIMAL: 43691329, currentScreenId: 1869037824 };
-obj.message = { MINIMAL: null, currentScreenId: null };
-obj.footer = { paddingHorizontal: 24 };
-let closure_8 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[2]);
-const result = arg1(dependencyMap[13]).fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemError.tsx");
+// Module 12262 (GiftCodeRedeemError)
+import "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_3;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ Image: closure_3, View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { flex: 1, justifyContent: "space-between", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.body = { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 };
+_createForOfIteratorHelperLoose.header = { marginTop: 32, textAlign: "center" };
+_createForOfIteratorHelperLoose.message = { marginTop: 8, textAlign: "center" };
+_createForOfIteratorHelperLoose.footer = { paddingHorizontal: 24 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const result = require("jsxProd").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemError.tsx");
 
 export default function GiftCodeRedeemError(children) {
-  const tmp = callback2();
-  let obj = arg1(dependencyMap[5]);
+  const tmp = _createForOfIteratorHelperLoose();
+  let obj = require(1457) /* Link */;
   const theme = obj.useTheme();
   obj = { bottom: true, style: tmp.container };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false };
   const obj1 = {};
   if (theme.dark) {
-    let tmp7Result = tmp7(tmp8[7]);
+    let tmp7Result = tmp7(12263);
   } else {
-    tmp7Result = tmp7(tmp8[8]);
+    tmp7Result = tmp7(12264);
   }
   obj1.source = tmp7Result;
   const items = [callback(closure_3, obj1), , ];
   const obj2 = { variant: "heading-xl/bold", style: tmp.header };
-  const intl = arg1(dependencyMap[10]).intl;
-  obj2.children = intl.formatToMarkdownString(arg1(dependencyMap[10]).t.JUvC0s, {});
-  items[1] = callback(arg1(dependencyMap[9]).Text, obj2);
-  items[2] = callback(arg1(dependencyMap[9]).Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj2.children = intl.formatToMarkdownString(require(1212) /* getSystemLocale */.t.JUvC0s, {});
+  items[1] = callback(require(4126) /* Text */.Text, obj2);
+  items[2] = callback(require(4126) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
   obj.children = items;
   const items1 = [closure_7(closure_5, obj), ];
   const obj4 = { style: tmp.footer };
   const obj5 = {};
-  const intl2 = arg1(dependencyMap[10]).intl;
-  obj5.text = intl2.string(arg1(dependencyMap[10]).t.cpT0Cq);
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj5.text = intl2.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
   obj5.size = "md";
   obj5.onPress = function onPress() {
-    return callback(closure_2[12]).pop();
+    return outer1_1(outer1_2[12]).pop();
   };
-  obj4.children = callback(arg1(dependencyMap[11]).Button, obj5);
+  obj4.children = callback(require(4543) /* Button */.Button, obj5);
   items1[1] = callback(closure_4, obj4);
   obj.children = items1;
-  return closure_7(arg1(dependencyMap[6]).SafeAreaPaddingView, obj);
+  return closure_7(require(5121) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

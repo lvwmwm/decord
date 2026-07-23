@@ -1,14 +1,16 @@
-// Module ID: 10133
-// Function ID: 78438
+// Module ID: 10141
+// Function ID: 78478
 // Name: SafetyToolsActionSheetWrapper
-// Dependencies: []
+// Dependencies: [31, 1348, 33, 566, 5187, 10142, 2]
 // Exports: default
 
-// Module 10133 (SafetyToolsActionSheetWrapper)
-let closure_3 = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-const jsx = arg1(dependencyMap[2]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetWrapper.tsx");
+// Module 10141 (SafetyToolsActionSheetWrapper)
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("jsxProd").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetWrapper.tsx");
 
 export default function SafetyToolsActionSheetWrapper(channelId) {
   let children;
@@ -18,14 +20,11 @@ export default function SafetyToolsActionSheetWrapper(channelId) {
   let warningId;
   let warningType;
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const onClose = channelId.onClose;
-  const importDefault = onClose;
   ({ headerTitle, hasHeaderBack, warningId, warningType, recipientId, children } = channelId);
-  let obj = arg1(dependencyMap[3]);
-  const items = [closure_4];
-  const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId));
-  const dependencyMap = stateFromStores;
+  let obj = channelId(stateFromStores[3]);
+  const items = [_isNativeReflectConstruct];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(channelId));
   const items1 = [stateFromStores, onClose];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
@@ -34,11 +33,11 @@ export default function SafetyToolsActionSheetWrapper(channelId) {
   }, items1);
   let tmp3 = null;
   if (null != stateFromStores) {
-    obj = { topOffset: null, marginLeft: null };
+    obj = { showGradient: true, startExpanded: true };
     obj = { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId };
-    obj.header = jsx(importDefault(dependencyMap[5]), obj);
+    obj.header = jsx(onClose(stateFromStores[5]), { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId });
     obj.children = children;
-    tmp3 = jsx(arg1(dependencyMap[4]).BottomSheet, obj);
+    tmp3 = jsx(channelId(stateFromStores[4]).BottomSheet, { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId });
   }
   return tmp3;
 };

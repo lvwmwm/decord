@@ -1,5 +1,5 @@
 // Module ID: 1204
-// Function ID: 13864
+// Function ID: 13865
 // Name: valueOf
 // Dependencies: []
 
@@ -13,7 +13,7 @@ function valueOf(arg0) {
   }
   return callResult;
 }
-function valueEqual(arr, arg1) {
+function valueEqual(arr) {
   const valueOf = arr;
   const valueEqual = arg1;
   if (arr === arg1) {
@@ -24,7 +24,7 @@ function valueEqual(arr, arg1) {
         const _Array2 = Array;
         if (Array.isArray(arr)) {
           const _Array = Array;
-          return Array.isArray(arg1) && arr.length === arg1.length && arr.every((arg0, arg1) => arg1(arg0, arg1[arg1]));
+          return Array.isArray(arg1) && arr.length === arg1.length && arr.every((arg0, arg1) => dependencyMap(arg0, dependencyMap[arg1]));
         } else {
           if ("object" !== typeof arr) {
             if ("object" !== typeof arg1) {
@@ -38,7 +38,7 @@ function valueEqual(arr, arg1) {
               const _Object = Object;
               const _Object2 = Object;
               const keys = Object.keys(Object.assign({}, arr, arg1));
-              let everyResult = keys.every((arg0) => arg1(arg0[arg0], arg1[arg0]));
+              let everyResult = keys.every((arg0) => dependencyMap(arr[arg0], dependencyMap[arg0]));
             }
             return everyResult;
           }

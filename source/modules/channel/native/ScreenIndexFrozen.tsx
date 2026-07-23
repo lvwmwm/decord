@@ -1,27 +1,30 @@
-// Module ID: 3988
-// Function ID: 33105
+// Module ID: 3990
+// Function ID: 33110
 // Name: isScreenIndexFrozen
-// Dependencies: []
+// Dependencies: [31, 3991, 2]
 // Exports: freezeScreenIndex, useIsScreenIndexFrozenSharedValue
 
-// Module 3988 (isScreenIndexFrozen)
+// Module 3990 (isScreenIndexFrozen)
+import result from "result";
+import set from "set";
+
+const require = arg1;
 function isScreenIndexFrozen(arg0) {
   return set.has(arg0);
 }
 function addFrozenScreenIndexesChangedListener(arg0) {
-  const arg1 = arg0;
+  let closure_0 = arg0;
   set1.add(arg0);
   return () => {
-    callback(arg0);
+    outer1_7(closure_0);
   };
 }
 function removeFrozenScreenIndexesChangedListener(arg0) {
   set1.delete(arg0);
 }
-let closure_2 = importAll(dependencyMap[0]);
-const set = new Set();
+let set = new Set();
 const set1 = new Set();
-const result = arg1(dependencyMap[2]).fileFinishedImporting("modules/channel/native/ScreenIndexFrozen.tsx");
+let result = set.fileFinishedImporting("modules/channel/native/ScreenIndexFrozen.tsx");
 
 export const freezeScreenIndex = function freezeScreenIndex(shouldFreeze, arg1) {
   if (shouldFreeze) {
@@ -35,12 +38,11 @@ export { isScreenIndexFrozen };
 export { addFrozenScreenIndexesChangedListener };
 export { removeFrozenScreenIndexesChangedListener };
 export const useIsScreenIndexFrozenSharedValue = function useIsScreenIndexFrozenSharedValue(arg0) {
-  const arg1 = arg0;
-  const sharedValue = arg1(dependencyMap[1]).useSharedValue(isScreenIndexFrozen(arg0));
-  const dependencyMap = sharedValue;
+  const _require = arg0;
+  sharedValue = _require(sharedValue[1]).useSharedValue(isScreenIndexFrozen(arg0));
   const items = [arg0, sharedValue];
-  const effect = React.useEffect(() => callback(() => {
-    const result = closure_1.set(callback(closure_0));
+  const effect = React.useEffect(() => outer1_6(() => {
+    const result = outer1_1.set(outer2_5(outer1_0));
   }), items);
   return sharedValue;
 };

@@ -1,18 +1,20 @@
-// Module ID: 11917
-// Function ID: 92237
+// Module ID: 11929
+// Function ID: 92290
 // Name: dropMilliseconds
-// Dependencies: []
+// Dependencies: [57, 31, 4122, 664, 566, 4015, 2]
 // Exports: useTimestampTickedNow
 
-// Module 11917 (dropMilliseconds)
+// Module 11929 (dropMilliseconds)
+import _slicedToArray from "_slicedToArray";
+import result from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
 function dropMilliseconds(arg0) {
-  const rounded = Math.floor(arg0 / importDefault(dependencyMap[3]).Millis.SECOND);
-  return rounded * importDefault(dependencyMap[3]).Millis.SECOND;
+  const rounded = Math.floor(arg0 / importDefault(664).Millis.SECOND);
+  return rounded * importDefault(664).Millis.SECOND;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importAll(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/content_inventory/memberlist/useTimestampTickedNow.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/content_inventory/memberlist/useTimestampTickedNow.tsx");
 
 export const useTimestampTickedNow = function useTimestampTickedNow() {
   let hovered;
@@ -25,12 +27,12 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
   if (isAppFocused === undefined) {
     isAppFocused = true;
   }
-  let callback;
+  let _require;
   let importDefault;
-  const tmp = callback2(React.useState(() => callback2(Date.now())), 2);
-  callback = tmp[1];
-  const items = [closure_5];
-  let stateFromStores = callback(dependencyMap[4]).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const tmp = callback(React.useState(() => outer1_6(Date.now())), 2);
+  _require = tmp[1];
+  const items = [_isNativeReflectConstruct];
+  let stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.useReducedMotion);
   let tmp3 = !isAppFocused;
   if (!tmp3) {
     if (stateFromStores) {
@@ -38,7 +40,7 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
     }
     tmp3 = stateFromStores;
   }
-  const SECOND = importDefault(dependencyMap[3]).Millis.SECOND;
+  const SECOND = importDefault(664).Millis.SECOND;
   if (tmp3) {
     let result = 15 * SECOND;
   } else {
@@ -47,10 +49,9 @@ export const useTimestampTickedNow = function useTimestampTickedNow() {
   importDefault = result;
   const items1 = [result];
   const effect = React.useEffect(() => {
-    const interval = new callback(closure_2[5]).Interval();
-    const callback = interval;
-    interval.start(result, () => {
-      interval(callback(Date.now()));
+    const interval = new callback(outer1_2[5]).Interval();
+    interval.start(c1, () => {
+      interval(outer2_6(Date.now()));
     });
     return () => interval.stop();
   }, items1);

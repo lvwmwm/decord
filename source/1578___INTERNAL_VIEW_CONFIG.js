@@ -1,13 +1,13 @@
 // Module ID: 1578
-// Function ID: 17652
+// Function ID: 17653
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [0, 4294967295]
+// Dependencies: [27, 42]
 
 // Module 1578 (__INTERNAL_VIEW_CONFIG)
-import { codegenNativeComponent } from "__exportStarResult1";
+import { codegenNativeComponent } from "get ActivityIndicator";
+import get from "get";
 
-const obj = { uiViewClassName: "ClippingScrollViewDecoratorView", validAttributes: {} };
-const _module = require(dependencyMap[1]);
+const obj = { uiViewClassName: "ClippingScrollViewDecoratorView", validAttributes: { contentInsetBottom: true, contentInsetTop: true, applyWorkaroundForContentInsetHitTestBug: true } };
 
-export default _module.get("ClippingScrollViewDecoratorView", () => obj);
+export default get.get("ClippingScrollViewDecoratorView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

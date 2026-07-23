@@ -1,34 +1,36 @@
-// Module ID: 11203
-// Function ID: 87250
+// Module ID: 11213
+// Function ID: 87300
 // Name: ViewAllRow
-// Dependencies: []
+// Dependencies: [31, 27, 33, 4130, 5165, 1212, 4126, 2]
 // Exports: default
 
-// Module 11203 (ViewAllRow)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-let closure_4 = arg1(dependencyMap[3]).createStyles({ expandCTALabelContainer: { alignItems: "center" } });
-const obj = arg1(dependencyMap[3]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/app_launcher/native/base_components/ViewAllRow.tsx");
+// Module 11213 (ViewAllRow)
+import "result";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
+let closure_4 = _createForOfIteratorHelperLoose.createStyles({ expandCTALabelContainer: { alignItems: "center" } });
+const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/base_components/ViewAllRow.tsx");
 
 export default function ViewAllRow(title) {
   title = title.title;
   let obj = {};
   let formatToPlainStringResult;
   if (null != title) {
-    const intl = arg1(dependencyMap[5]).intl;
+    const intl = require(1212) /* getSystemLocale */.intl;
     obj = { title };
-    formatToPlainStringResult = intl.formatToPlainString(arg1(dependencyMap[5]).t.bj/2kV, obj);
+    formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["bj/2kV"], obj);
   }
   obj.accessibilityLabel = formatToPlainStringResult;
   obj = { style: callback().expandCTALabelContainer };
-  const obj1 = { "Null": "tertiary", "Null": "sm" };
-  const intl2 = arg1(dependencyMap[5]).intl;
-  obj1.children = intl2.format(arg1(dependencyMap[5]).t.gVw57p, {});
-  obj.children = jsx(arg1(dependencyMap[6]).Text, obj1);
-  obj.label = <View {...obj} />;
+  const obj1 = { color: "text-brand", variant: "text-md/semibold" };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl2.format(require(1212) /* getSystemLocale */.t.gVw57p, {});
+  obj.children = jsx(require(4126) /* Text */.Text, { color: "text-brand", variant: "text-md/semibold" });
+  obj.label = <View style={callback().expandCTALabelContainer} />;
   obj.onPress = title.onPress;
   obj.end = true;
-  return jsx(arg1(dependencyMap[4]).TableRow, obj);
+  return jsx(require(5165) /* TableRowInner */.TableRow, { style: callback().expandCTALabelContainer });
 };

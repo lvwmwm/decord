@@ -1,9 +1,12 @@
-// Module ID: 4229
-// Function ID: 37085
+// Module ID: 4233
+// Function ID: 37117
 // Name: Camera
-// Dependencies: []
+// Dependencies: [31, 33, 4230, 2]
 
-// Module 4229 (Camera)
+// Module 4233 (Camera)
+import "result";
+import { jsx } from "jsxProd";
+
 class Camera {
   constructor(arg0) {
     ({ width, height } = global);
@@ -19,8 +22,8 @@ class Camera {
       str2 = "div";
       tmp2Result = tmp2("div", obj);
     } else {
-      tmp3 = importDefault;
-      tmp4 = dependencyMap;
+      tmp3 = closure_0;
+      tmp4 = closure_1;
       num = 2;
       obj = {};
       obj.streamId = tmp;
@@ -28,14 +31,12 @@ class Camera {
       obj2.width = width;
       obj2.height = height;
       obj.style = obj2;
-      tmp2Result = tmp2(importDefault(dependencyMap[2]), obj);
+      tmp2Result = tmp2(require("Video"), obj);
     }
     return tmp2Result;
   }
 }
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-Camera.defaultProps = {};
-const result = arg1(dependencyMap[3]).fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/Camera.tsx");
+Camera.defaultProps = { disabled: false, width: 320, height: 180 };
+const result = require("Video").fileFinishedImporting("../discord_common/js/packages/media-engine/native/ui/Camera.tsx");
 
 export default Camera;

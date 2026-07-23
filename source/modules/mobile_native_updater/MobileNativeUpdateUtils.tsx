@@ -1,14 +1,18 @@
-// Module ID: 12799
-// Function ID: 98052
+// Module ID: 12913
+// Function ID: 100208
 // Name: _checkForNewerBuild
-// Dependencies: []
+// Dependencies: [5, 4112, 3, 507, 3827, 477, 668, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 12799 (_checkForNewerBuild)
+// Module 12913 (_checkForNewerBuild)
+import set from "set";
+import { UPDATE_CONFIG } from "currentUpdateConfig";
+import importDefaultResult from "_isNativeReflectConstruct";
+
+const require = arg1;
 function _checkForNewerBuild() {
   // CreateGeneratorClosureLongIndex (0x67)
   const obj = callback(tmp);
-  const _checkForNewerBuild = obj;
   return obj(...arguments);
 }
 function openBuildInstallerUrl(install) {
@@ -21,20 +25,17 @@ function openBuildInstallerUrl(install) {
     const _HermesInternal = HermesInternal;
     importDefaultResult.error("Attempted to follow invalid install URL " + str);
   } else {
-    const openURLExternally = arg1(dependencyMap[4]).default.openURLExternally;
+    const openURLExternally = require(3827).default.openURLExternally;
     if (obj.isIOS()) {
-      openURLExternally(str.toString(), arg1(dependencyMap[6]).WebBrowserType.SAFARI);
+      openURLExternally(str.toString(), require(668) /* keys */.WebBrowserType.SAFARI);
     } else {
       openURLExternally(str.toString());
     }
-    const obj = arg1(dependencyMap[5]);
+    obj = require(477) /* set */;
   }
 }
-let closure_2 = importDefault(dependencyMap[0]);
-const UPDATE_CONFIG = arg1(dependencyMap[1]).UPDATE_CONFIG;
-let importDefaultResult = importDefault(dependencyMap[2]);
 importDefaultResult = new importDefaultResult("MobileNativeUpdateUtils");
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateUtils.tsx");
+const result = require("timestamp").fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateUtils.tsx");
 
 export const checkForNewerBuild = function checkForNewerBuild() {
   return _checkForNewerBuild(...arguments);

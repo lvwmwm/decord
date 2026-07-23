@@ -1,46 +1,47 @@
-// Module ID: 14754
-// Function ID: 111230
-// Dependencies: []
+// Module ID: 14870
+// Function ID: 113398
+// Dependencies: [31, 1194, 4809, 1348, 6879, 3767, 1849, 653, 33, 4130, 689, 14823, 566, 8450, 1212, 14825, 4138, 9099, 14871, 9096, 1273, 5085, 2]
 
-// Module 14754
-const importAllResult = importAll(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-let closure_9 = importDefault(dependencyMap[6]);
-const ChannelTypes = arg1(dependencyMap[7]).ChannelTypes;
-const jsx = arg1(dependencyMap[8]).jsx;
+// Module 14870
+import importAllResult from "result";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import closure_8 from "_isNativeReflectConstruct";
+import closure_9 from "_isNativeReflectConstruct";
+import { ChannelTypes } from "ME";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+const require = arg1;
 let obj = {};
-obj = { width: importDefault(dependencyMap[10]).modules.mobile.GUILD_BAR_ITEM_SIZE, height: importDefault(dependencyMap[10]).modules.mobile.GUILD_BAR_ITEM_SIZE };
+obj = { width: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE, height: require("_createForOfIteratorHelperLoose").modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj.dm = obj;
-let closure_12 = arg1(dependencyMap[9]).createStyles(obj);
-const obj2 = arg1(dependencyMap[9]);
+let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
 const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelId) {
   let badge;
   let cutouts;
-  const arg1 = channelId.channelId;
-  let obj = arg1(dependencyMap[11]);
-  const tmp = callback();
-  let obj1 = arg1(dependencyMap[12]);
+  channelId = channelId.channelId;
+  let obj = channelId(channel[11]);
+  let tmp = callback();
+  let obj1 = channelId(channel[12]);
   const items = [closure_7];
-  const stateFromStores = obj1.useStateFromStores(items, () => mentionCountForPrivateChannel.getMentionCountForPrivateChannel(channelId).count);
-  const importDefault = stateFromStores;
-  let obj2 = arg1(dependencyMap[12]);
-  const items1 = [closure_6, closure_9, closure_8, closure_5, closure_4];
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_7.getMentionCountForPrivateChannel(channelId).count);
+  let obj2 = channelId(channel[12]);
+  const items1 = [closure_6, closure_9, closure_8, closure_5, _isNativeReflectConstruct];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => {
-    const channel = channel.getChannel(channelId);
+    const channel = outer1_6.getChannel(channelId);
     let type;
     if (null != channel) {
       type = channel.type;
     }
     let user;
-    if (type === constants.DM) {
-      user = user.getUser(channel.getRecipientId());
+    if (type === outer1_10.DM) {
+      user = outer1_9.getUser(channel.getRecipientId());
     }
-    const call = closure_5.getCall(channelId);
-    const id = id.getId();
+    const call = outer1_5.getCall(channelId);
+    const id = outer1_4.getId();
     let hasItem = null != call && null != id;
     if (hasItem) {
       const ringing = call.ringing;
@@ -57,13 +58,12 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
     obj.label = stringResult;
     return obj;
   });
-  const channel = stateFromStoresObject.channel;
-  const dependencyMap = channel;
+  channel = stateFromStoresObject.channel;
   const dmRecipient = stateFromStoresObject.dmRecipient;
-  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ 1365399211: null, 996494938: null });
+  const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const items2 = [channel, dmRecipient];
-  ({ badge, cutouts } = importDefault(dependencyMap[15])({ mentionCount: stateFromStores }));
-  const memo = importAllResult.useMemo(() => {
+  ({ badge, cutouts } = stateFromStores(channel[15])({ mentionCount: stateFromStores }));
+  const memo = dmRecipient.useMemo(() => {
     let tmp;
     if (null != channel) {
       if (channel.isDM()) {
@@ -77,23 +77,23 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
     return tmp;
   }, items2);
   const items3 = [channel];
-  const memo1 = importAllResult.useMemo(() => ({
+  const memo1 = dmRecipient.useMemo(() => ({
     onPress() {
-      if (null != user) {
-        callback(user[16]).transitionToChannel(user.id);
-        const obj = callback(user[16]);
+      if (null != outer1_2) {
+        channelId(channel[16]).transitionToChannel(outer1_2.id);
+        const obj = channelId(channel[16]);
       }
     },
     onLongPress() {
-      if (null != user) {
-        const result = callback(user[17]).openChannelLongPressActionSheet(user.id);
-        const obj = callback(user[17]);
+      if (null != outer1_2) {
+        const result = channelId(channel[17]).openChannelLongPressActionSheet(outer1_2.id);
+        const obj = channelId(channel[17]);
       }
     }
   }), items3);
-  obj = { "Bool(false)": "L", "Bool(false)": "L", "Bool(false)": "L" };
+  obj = { selected: false, circle: null, unread: true };
   let isMultiUserDMResult = null != channel;
-  const tmp5 = importDefault(dependencyMap[15])({ mentionCount: stateFromStores });
+  const tmp5 = stateFromStores(channel[15])({ mentionCount: stateFromStores });
   const tmp8 = jsx;
   if (isMultiUserDMResult) {
     isMultiUserDMResult = channel.isMultiUserDM();
@@ -108,14 +108,14 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
   let tmp11 = null;
   if (null != channel) {
     obj = { channel };
-    tmp11 = jsx(importDefault(dependencyMap[18]), obj);
+    tmp11 = jsx(stateFromStores(channel[18]), { channel });
   }
   obj.expandedChildren = tmp11;
   if (null != channel) {
     if (channel.isMultiUserDM()) {
-      obj1 = { channel, size: arg1(dependencyMap[20]).AvatarSizes.LARGE_48, pileSizeOverride: arg1(dependencyMap[20]).AvatarSizes.REFRESH_MEDIUM_32, animate: true };
-      let tmp15 = jsx(importDefault(dependencyMap[19]), obj1);
-      const tmp22 = importDefault(dependencyMap[19]);
+      obj1 = { channel, size: channelId(channel[20]).AvatarSizes.LARGE_48, pileSizeOverride: channelId(channel[20]).AvatarSizes.REFRESH_MEDIUM_32, animate: true };
+      let tmp15 = jsx(stateFromStores(channel[19]), { channel, size: channelId(channel[20]).AvatarSizes.LARGE_48, pileSizeOverride: channelId(channel[20]).AvatarSizes.REFRESH_MEDIUM_32, animate: true });
+      const tmp22 = stateFromStores(channel[19]);
     }
     obj.children = tmp15;
     return tmp8(tmp9, obj);
@@ -123,9 +123,9 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
   tmp15 = null;
   if (null != memo) {
     obj2 = { style: tmp.dm, source: memo };
-    tmp15 = jsx(importDefault(dependencyMap[21]), obj2);
+    tmp15 = jsx(stateFromStores(channel[21]), { style: tmp.dm, source: memo });
   }
 });
-const result = arg1(dependencyMap[22]).fileFinishedImporting("modules/guilds_bar/native/GuildsBarDirectMessage.tsx");
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDirectMessage.tsx");
 
 export default memoResult;

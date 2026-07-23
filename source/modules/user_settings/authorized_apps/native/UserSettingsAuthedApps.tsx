@@ -1,105 +1,113 @@
-// Module ID: 13727
-// Function ID: 103841
+// Module ID: 13841
+// Function ID: 105997
 // Name: UserSettingsAuthedApps
-// Dependencies: []
+// Dependencies: [31, 27, 5066, 653, 33, 689, 4130, 8958, 9023, 9025, 4086, 1557, 566, 1456, 1457, 5472, 4126, 1212, 5503, 1392, 5165, 11176, 7375, 5793, 2]
 // Exports: DisclosureIcon, default
 
-// Module 13727 (UserSettingsAuthedApps)
-let closure_3 = importAll(dependencyMap[0]);
-({ View: closure_4, ActivityIndicator: closure_5, FlatList: closure_6 } = arg1(dependencyMap[1]));
-let closure_7 = importDefault(dependencyMap[2]);
-const FetchState = arg1(dependencyMap[2]).FetchState;
-const tmp2 = arg1(dependencyMap[1]);
-({ AnalyticsPages: closure_9, UserSettingsSections: closure_10 } = arg1(dependencyMap[3]));
-const tmp3 = arg1(dependencyMap[3]);
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = arg1(dependencyMap[4]));
-const PX_24 = importDefault(dependencyMap[5]).space.PX_24;
-let obj = arg1(dependencyMap[6]);
-obj = { spinner: { padding: 16 }, emptyText: { marginTop: 24 }, emptyContainer: { padding: 16 } };
-obj = { paddingHorizontal: 16, paddingTop: importDefault(dependencyMap[5]).space.PX_24 };
-obj.container = obj;
-obj.headerDescription = { marginTop: 12 };
-obj.appListHeader = { marginTop: 24 };
-let closure_15 = obj.createStyles(obj);
-const tmp4 = arg1(dependencyMap[4]);
-const result = arg1(dependencyMap[24]).fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedApps.tsx");
+// Module 13841 (UserSettingsAuthedApps)
+import result from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { FetchState } from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_9;
+let require = arg1;
+({ View: closure_4, ActivityIndicator: closure_5, FlatList: closure_6 } = get_ActivityIndicator);
+({ AnalyticsPages: closure_9, UserSettingsSections: closure_10 } = ME);
+({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
+const PX_24 = require("_createForOfIteratorHelperLoose").space.PX_24;
+_createForOfIteratorHelperLoose = { spinner: { padding: 16 }, emptyText: { marginTop: 24 }, emptyContainer: { padding: 16 } };
+_createForOfIteratorHelperLoose = { paddingHorizontal: 16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.headerDescription = { marginTop: 12 };
+_createForOfIteratorHelperLoose.appListHeader = { marginTop: 24 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedApps.tsx");
 
 export default function UserSettingsAuthedApps() {
   function renderHeader() {
     let obj = {};
     obj = {};
-    obj = {};
+    obj = { color: "mobile-text-heading-primary", variant: "heading-md/semibold" };
     const intl = tmp(navigation[17]).intl;
     obj.children = intl.string(tmp(navigation[17]).t.HU3RFw);
-    const items = [callback2(tmp(navigation[16]).Text, obj), ];
+    const items = [outer1_11(tmp(navigation[16]).Text, obj), ];
     const obj1 = { style: tmp.headerDescription, variant: "heading-sm/medium" };
     const intl2 = tmp(navigation[17]).intl;
     obj1.children = intl2.string(tmp(navigation[17]).t.Nu5Yi0);
-    items[1] = callback2(tmp(navigation[16]).Text, obj1);
+    items[1] = outer1_11(tmp(navigation[16]).Text, obj1);
     obj.children = items;
-    const items1 = [callback3(closure_4, obj), ];
+    const items1 = [outer1_12(outer1_4, obj), ];
     const obj2 = { style: tmp.appListHeader };
     const obj3 = {};
     const intl3 = tmp(navigation[17]).intl;
     obj3.title = intl3.string(tmp(navigation[17]).t.PHjkRE);
-    obj2.children = callback2(tmp(navigation[18]).TableRowGroupTitle, obj3);
-    items1[1] = callback2(closure_4, obj2);
+    obj2.children = outer1_11(tmp(navigation[18]).TableRowGroupTitle, obj3);
+    items1[1] = outer1_11(outer1_4, obj2);
     obj.children = items1;
-    return callback3(closure_13, obj);
+    return outer1_12(outer1_13, obj);
   }
-  const tmp = callback3();
-  const arg1 = tmp;
-  let obj = arg1(dependencyMap[12]);
-  const items = [closure_7];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ fetchState: authStore.getFetchState(), appAuthTokens: authStore.getNewestTokensForNonChildrenApplications() }));
+  const tmp = _createForOfIteratorHelperLoose();
+  const require = tmp;
+  let obj = require(navigation[12]);
+  let items = [_isNativeReflectConstruct];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ fetchState: outer1_7.getFetchState(), appAuthTokens: outer1_7.getNewestTokensForNonChildrenApplications() }));
   const appAuthTokens = stateFromStoresObject.appAuthTokens;
-  const importDefault = appAuthTokens;
-  let obj1 = arg1(dependencyMap[13]);
-  const navigation = obj1.useNavigation();
-  const dependencyMap = navigation;
-  let obj2 = arg1(dependencyMap[14]);
+  let obj1 = require(navigation[13]);
+  navigation = obj1.useNavigation();
+  let obj2 = require(navigation[14]);
   const focusEffect = obj2.useFocusEffect(React.useCallback(() => appAuthTokens(navigation[15]).fetch(), []));
-  const items1 = [navigation];
-  const React = React.useCallback((item) => {
+  let items1 = [navigation];
+  React = React.useCallback((item) => {
     item = item.item;
     const index = item.index;
     let obj = appAuthTokens(navigation[19]);
     obj = { id: item.application.id, icon: item.application.icon };
     const applicationIconSource = obj.getApplicationIconSource(obj);
     obj = {
-      icon: callback2(appAuthTokens(navigation[21]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
+      icon: outer1_11(appAuthTokens(navigation[21]), { iconSource: applicationIconSource, iconBorderRadius: 6 }),
       label: item.application.name,
       onPress() {
-        let obj = callback(arr[22]);
-        obj.setSection(constants2.AUTHORIZED_APP);
-        let obj1 = item(arr[23]);
-        obj = { destinationPane: constants2.AUTHORIZED_APP, source: obj, applicationId: item.application.id };
-        obj = { page: constants.USER_SETTINGS };
+        let obj = appAuthTokens(navigation[22]);
+        obj.setSection(outer2_10.AUTHORIZED_APP);
+        let obj1 = item(navigation[23]);
+        obj = { destinationPane: outer2_10.AUTHORIZED_APP, source: obj, applicationId: item.application.id };
+        obj = { page: outer2_9.USER_SETTINGS };
         const result = obj1.trackUserSettingsPaneViewed(obj);
         obj1 = { oauth2Token: item };
-        const arr = arr.push(constants2.AUTHORIZED_APP, obj1);
+        outer1_2.push(outer2_10.AUTHORIZED_APP, obj1);
       },
       arrow: true,
       start: 0 === index,
       end: index === item.numItems - 1
     };
-    return callback2(item(navigation[20]).TableRow, obj, item.id);
+    return outer1_11(tmp(navigation[20]).TableRow, obj, item.id);
   }, items1);
   if (null != appAuthTokens) {
     if (stateFromStoresObject.fetchState === FetchState.FETCHED) {
       if (0 === appAuthTokens.length) {
         obj = { style: tmp.emptyContainer };
         const items2 = [renderHeader(), ];
-        obj = { "Bool(true)": "interactive-text-default", "Bool(true)": "5.9.4", "Bool(true)": 24, style: tmp.emptyText };
-        const intl = arg1(dependencyMap[17]).intl;
-        obj.children = intl.string(arg1(dependencyMap[17]).t.E+SM6T);
-        items2[1] = callback(arg1(dependencyMap[16]).Text, obj);
+        obj = { color: "mobile-text-heading-primary", style: tmp.emptyText, variant: "heading-md/extrabold" };
+        let intl = require(navigation[17]).intl;
+        obj.children = intl.string(require(navigation[17]).t["E+SM6T"]);
+        items2[1] = callback(require(navigation[16]).Text, obj);
         obj.children = items2;
         let tmp8 = callback2(closure_4, obj);
       } else {
         obj1 = {};
         const items3 = [tmp.container, ];
-        obj2 = { paddingBottom: importDefault(dependencyMap[11])().bottom + PX_24 };
+        obj2 = { paddingBottom: appAuthTokens(navigation[11])().bottom + PX_24 };
         items3[1] = obj2;
         obj1.contentContainerStyle = items3;
         obj1.ListHeaderComponent = renderHeader();
@@ -112,25 +120,24 @@ export default function UserSettingsAuthedApps() {
     }
     return tmp8;
   }
-  tmp8 = callback(closure_5, { style: tmp.spinner });
+  let obj3 = { style: tmp.spinner, animating: true, size: "large" };
+  tmp8 = callback(closure_5, obj3);
 };
 export const DisclosureIcon = function DisclosureIcon(disclosure) {
   disclosure = disclosure.disclosure;
-  const arg1 = disclosure;
   const style = disclosure.style;
-  const importDefault = style;
   const items = [disclosure, style];
   return React.useMemo(() => {
-    if (disclosure(closure_2[7]).ApplicationDisclosureType.IP_LOCATION === disclosure) {
+    if (disclosure(outer1_2[7]).ApplicationDisclosureType.IP_LOCATION === disclosure) {
       let obj = { style, size: "xs" };
-      return callback(disclosure(closure_2[8]).GlobeEarthIcon, obj);
-    } else if (disclosure(closure_2[7]).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
+      return outer1_11(disclosure(outer1_2[8]).GlobeEarthIcon, obj);
+    } else if (disclosure(outer1_2[7]).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
       obj = { style, size: "xs" };
-      return callback(disclosure(closure_2[9]).EmbedIcon, obj);
+      return outer1_11(disclosure(outer1_2[9]).EmbedIcon, obj);
     } else {
       obj = { style, size: "xs" };
-      return callback(disclosure(closure_2[10]).CircleInformationIcon, obj);
+      return outer1_11(disclosure(outer1_2[10]).CircleInformationIcon, obj);
     }
-    const tmp = disclosure;
+    tmp = disclosure;
   }, items);
 };

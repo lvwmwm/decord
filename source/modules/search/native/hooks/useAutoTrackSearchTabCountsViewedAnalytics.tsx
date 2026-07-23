@@ -1,41 +1,38 @@
-// Module ID: 15298
-// Function ID: 116312
+// Module ID: 15415
+// Function ID: 118486
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: []
+// Dependencies: [31, 9103, 10076, 2]
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
-// Module 15298 (useAutoTrackSearchTabCountsViewedAnalytics)
-let closure_2 = importAll(dependencyMap[0]);
-const SearchTabs = arg1(dependencyMap[1]).SearchTabs;
-const result = arg1(dependencyMap[3]).fileFinishedImporting("modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx");
+// Module 15415 (useAutoTrackSearchTabCountsViewedAnalytics)
+import result from "result";
+import { SearchTabs } from "SearchAutocompleteSelectAnalyticsActions";
+
+let result = require("toAnalyticsSearchFilterType").fileFinishedImporting("modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx");
 
 export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackSearchTabCountsViewedAnalytics(searchContext) {
   searchContext = searchContext.searchContext;
-  const importDefault = searchContext;
   const visibleTabCounts = searchContext.visibleTabCounts;
-  const dependencyMap = visibleTabCounts;
   const visibleTabs = searchContext.visibleTabs;
-  const React = visibleTabs;
-  let closure_3 = React.useRef(visibleTabs);
+  let closure_3 = visibleTabs.useRef(visibleTabs);
   const items = [visibleTabs];
-  const effect = React.useEffect(() => {
+  const effect = visibleTabs.useEffect(() => {
     closure_3.current = visibleTabs;
   }, items);
   const items1 = [searchContext, visibleTabCounts];
-  const effect1 = React.useEffect(() => {
+  const effect1 = visibleTabs.useEffect(() => {
     function getSearchTabCount(FILES) {
       let tmp = null;
-      if (null != closure_1) {
-        const current = ref.current;
+      if (null != outer1_1) {
+        const current = outer1_3.current;
         let tmp3 = null;
         if (current.includes(FILES)) {
-          tmp3 = closure_1[FILES];
+          tmp3 = outer1_1[FILES];
         }
         tmp = tmp3;
       }
       return tmp;
     }
-    const searchContext = getSearchTabCount;
     if (null != visibleTabCounts) {
       const _Object = Object;
       const keys = Object.keys(visibleTabCounts);
@@ -49,7 +46,7 @@ export const useAutoTrackSearchTabCountsViewedAnalytics = function useAutoTrackS
       }, 0);
       if (reduced > 0) {
         let obj = searchContext(visibleTabCounts[2]);
-        obj = { searchContext, searchResultTotalCount: reduced, numMemberTabReturnedResults: getSearchTabCount(constants.MEMBERS), numChannelTabReturnedResults: getSearchTabCount(constants.GUILD_CHANNELS), numPeopleTabReturnedResults: getSearchTabCount(constants.PEOPLE), numMessageTabReturnedResults: getSearchTabCount(constants.MESSAGES), numMediaTabReturnedResults: getSearchTabCount(constants.MEDIA), numFileTabReturnedResults: getSearchTabCount(constants.FILES), numLinkTabReturnedResults: getSearchTabCount(constants.LINKS) };
+        obj = { searchContext: getSearchTabCount, searchResultTotalCount: reduced, numMemberTabReturnedResults: getSearchTabCount(constants.MEMBERS), numChannelTabReturnedResults: getSearchTabCount(constants.GUILD_CHANNELS), numPeopleTabReturnedResults: getSearchTabCount(constants.PEOPLE), numMessageTabReturnedResults: getSearchTabCount(constants.MESSAGES), numMediaTabReturnedResults: getSearchTabCount(constants.MEDIA), numFileTabReturnedResults: getSearchTabCount(constants.FILES), numLinkTabReturnedResults: getSearchTabCount(constants.LINKS) };
         const result = obj.trackSearchResultReturned(obj);
       }
     }

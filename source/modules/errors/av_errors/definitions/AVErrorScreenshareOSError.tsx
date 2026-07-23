@@ -1,28 +1,27 @@
-// Module ID: 16422
-// Function ID: 126819
+// Module ID: 16539
+// Function ID: 128993
 // Name: AVErrorScreenshareOSErrorDefinition
-// Dependencies: [31, 27, 33, 8850, 1212]
+// Dependencies: [477, 8857, 16528, 4194, 2]
 
-// Module 16422 (AVErrorScreenshareOSErrorDefinition)
+// Module 16539 (AVErrorScreenshareOSErrorDefinition)
 import module_4294963475 from "module_4294963475";
-import getSystemLocale from "getSystemLocale";
 
-const result = getSystemLocale.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorScreenshareOSError.tsx");
+const result = require("getCommonErrorContext").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorScreenshareOSError.tsx");
 
 export const AVErrorScreenshareOSErrorDefinition = {
   getActiveErrors(activeStreams) {
     activeStreams = activeStreams.activeStreams;
     const found = activeStreams.filter((errorCode) => null != errorCode.errorCode);
     return found.map((errorCode) => {
-      const obj = { type: callback(closure_1[1]).AVError.SCREENSHARE_OS_ERROR };
+      const obj = { type: outer1_0(outer1_1[1]).AVError.SCREENSHARE_OS_ERROR };
       if (obj2.isMac()) {
-        if (str === module_4294963475) {
+        if (str === outer1_2) {
           const _HermesInternal = HermesInternal;
           let combined = "" + str + " - your Mac may be low on disk space";
         }
         obj.errorMessage = combined;
-        const obj3 = callback(closure_1[2]);
-        const merged = Object.assign(obj3.getStreamErrorContext(callback(closure_1[3]).encodeStreamKey(errorCode)));
+        const obj3 = outer1_0(outer1_1[2]);
+        const merged = Object.assign(obj3.getStreamErrorContext(outer1_0(outer1_1[3]).encodeStreamKey(errorCode)));
         return obj;
       }
       combined = str.toString();

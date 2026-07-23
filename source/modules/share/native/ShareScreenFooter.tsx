@@ -1,13 +1,15 @@
-// Module ID: 12798
-// Function ID: 98050
+// Module ID: 12912
+// Function ID: 100206
 // Name: ShareScreenFooter
-// Dependencies: []
+// Dependencies: [31, 33, 9894, 9895, 4543, 9903, 2]
 // Exports: default
 
-// Module 12798 (ShareScreenFooter)
-importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("modules/share/native/ShareScreenFooter.tsx");
+// Module 12912 (ShareScreenFooter)
+import "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("useShareChatInputActions").fileFinishedImporting("modules/share/native/ShareScreenFooter.tsx");
 
 export default function ShareScreenFooter(arg0) {
   let appEntryKey;
@@ -30,11 +32,11 @@ export default function ShareScreenFooter(arg0) {
   if (disabled === undefined) {
     disabled = false;
   }
-  let obj = arg1(dependencyMap[2]);
+  let obj = require(9894) /* useShareChatInputActions */;
   const shareChatInputActions = obj.useShareChatInputActions(setText, undefined, appEntryKey);
   ({ textInputRef, isInputFocused, handleSelectionChange, handleMessageFocus, handleMessageBlur, handlePressEmoji } = shareChatInputActions);
   obj = { preview };
-  obj = { text: sendLabel };
+  obj = { variant: "primary", size: "md", text: sendLabel };
   let tmp4 = !canSend;
   if (!tmp4) {
     tmp4 = disabled;
@@ -46,9 +48,9 @@ export default function ShareScreenFooter(arg0) {
   }
   obj.onPress = tmp5;
   obj.loading = isSending;
-  obj.sendButton = jsx(arg1(dependencyMap[4]).Button, obj);
+  obj.sendButton = jsx(require(4543) /* Button */.Button, { variant: "primary", size: "md", text: sendLabel });
   const obj1 = { inputRef: textInputRef, text, onChange: setText, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend, disabled };
-  obj.chatInput = jsx(importDefault(dependencyMap[5]), obj1);
+  obj.chatInput = jsx(importDefault(9903), { inputRef: textInputRef, text, onChange: setText, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend, disabled });
   obj.avoidKeyboard = isInputFocused;
-  return jsx(importDefault(dependencyMap[3]), obj);
+  return jsx(importDefault(9895), { variant: "primary", size: "md", text: sendLabel });
 };

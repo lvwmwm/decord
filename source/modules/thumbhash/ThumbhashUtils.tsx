@@ -1,13 +1,13 @@
-// Module ID: 15110
-// Function ID: 113949
+// Module ID: 15225
+// Function ID: 116118
 // Name: thumbHashToRGBA
-// Dependencies: []
+// Dependencies: [14083, 2]
 // Exports: createThumbhashImageFromPlaceholder
 
-// Module 15110 (thumbHashToRGBA)
+// Module 15225 (thumbHashToRGBA)
 function thumbHashToRGBA(arg0) {
   let obj = arg1;
-  const require = arg0;
+  const _require = arg0;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -19,8 +19,8 @@ function thumbHashToRGBA(arg0) {
   if (num2 === undefined) {
     num2 = 1;
   }
-  let dependencyMap;
-  let closure_2;
+  let num7;
+  let c2;
   function decodeChannel(maxResult, maxResult1, arg2) {
     const items = [];
     for (let num = 0; num < maxResult1; num = num + 1) {
@@ -30,21 +30,22 @@ function thumbHashToRGBA(arg0) {
       }
       if (num2 * maxResult1 < maxResult * (maxResult1 - num)) {
         do {
-          let tmp = closure_0;
-          let tmp2 = closure_1;
-          let tmp3 = closure_2;
-          let tmp4 = closure_2;
-          let tmp5 = +closure_2;
-          closure_2 = tmp5 + 1;
-          let arr = items.push(((closure_0[closure_1 + (closure_2 >> 1)] >> ((1 & tmp5) << 2) & 15) / 7.5 - 1) * arg2);
+          let tmp = table;
+          let tmp2 = num7;
+          let tmp3 = c2;
+          let tmp4 = c2;
+          let tmp5 = +c2;
+          c2 = tmp5 + 1;
+          let arr = items.push(((table[num7 + (c2 >> 1)] >> ((1 & tmp5) << 2) & 15) / 7.5 - 1) * arg2);
           num2 = num2 + 1;
-          let result = num2 * maxResult1;
-          let result1 = maxResult * (maxResult1 - num);
+          result = num2 * maxResult1;
+          result1 = maxResult * (maxResult1 - num);
         } while (result < result1);
       }
     }
     return items;
   }
+  let tmp3 = (arg0[0] | arg0[1] << 8 | arg0[2] << 16) >> 23;
   if ((arg0[3] | arg0[4] << 8) >> 15) {
     let num3 = 7;
     if (tmp3) {
@@ -65,25 +66,24 @@ function thumbHashToRGBA(arg0) {
   }
   const maxResult1 = max(3, num4);
   let num5 = 1;
-  if ((arg0[0] | arg0[1] << 8 | arg0[2] << 16) >> 23) {
+  if (tmp3) {
     num5 = (15 & arg0[5]) / 15;
   }
-  let num7 = 5;
-  if ((arg0[0] | arg0[1] << 8 | arg0[2] << 16) >> 23) {
+  num7 = 5;
+  if (tmp3) {
     num7 = 6;
   }
-  dependencyMap = num7;
-  closure_2 = 0;
+  c2 = 0;
   const decodeChannelResult = decodeChannel(maxResult, maxResult1, ((arg0[0] | arg0[1] << 8 | arg0[2] << 16) >> 18 & 31) / 31 / 2);
   const tmp8 = arg0[5] >> 4;
   const decodeChannelResult1 = decodeChannel(3, 3, ((arg0[3] | arg0[4] << 8) >> 3 & 63) / 63 * num2);
-  if ((arg0[0] | arg0[1] << 8 | arg0[2] << 16) >> 23) {
+  if (tmp3) {
     let decodeChannelResult3 = decodeChannel(5, 5, tmp8 / 15);
   } else {
     decodeChannelResult3 = [];
   }
   const decodeChannelResult2 = decodeChannel(3, 3, ((arg0[3] | arg0[4] << 8) >> 9 & 63) / 63 * num2);
-  const result = require(dependencyMap[0]).thumbHashToApproximateAspectRatio(arg0);
+  let result = _require(num7[0]).thumbHashToApproximateAspectRatio(arg0);
   let num8 = 32;
   if (result <= 1) {
     num8 = 32 * result;
@@ -95,9 +95,9 @@ function thumbHashToRGBA(arg0) {
   }
   const h = round(num9);
   const rgba = new Uint8Array(w * h * 4);
-  const items = [];
+  let items = [];
   const items1 = [];
-  const result1 = (63 & tmp) / 63;
+  let result1 = (63 & tmp) / 63;
   let num10 = 0;
   let num11 = 0;
   if (0 < h) {
@@ -166,7 +166,7 @@ function thumbHashToRGBA(arg0) {
                   if (!tmp43) {
                     sum = tmp38 + decodeChannelResult[sum2] * items[tmp37] * result2;
                   }
-                  let sum1 = tmp37 + 1;
+                  sum1 = tmp37 + 1;
                   sum2 = sum2 + 1;
                   tmp38 = sum;
                   tmp37 = sum1;
@@ -216,10 +216,10 @@ function thumbHashToRGBA(arg0) {
                 tmp56 = sum4;
                 tmp57 = sum6;
                 tmp58 = sum5;
-                let diff = 3 - num24;
+                diff = 3 - num24;
               } while (sum5 < diff);
             }
-            let sum7 = num24 + 1;
+            sum7 = num24 + 1;
             tmp48 = tmp55;
             tmp49 = tmp56;
             num24 = sum7;
@@ -250,7 +250,7 @@ function thumbHashToRGBA(arg0) {
                   tmp68 = sum8;
                   tmp69 = sum10;
                   tmp70 = sum9;
-                  let diff1 = 5 - num27;
+                  diff1 = 5 - num27;
                 } while (sum9 < diff1);
               }
               num27 = num27 + 1;
@@ -282,16 +282,16 @@ function thumbHashToRGBA(arg0) {
           let tmp81 = maxResult3;
           let tmp82 = num21;
           let tmp83 = num22;
-          let tmp19 = tmp26;
-          let tmp20 = tmp27;
+          tmp19 = tmp26;
+          tmp20 = tmp27;
           let tmp84 = sum7;
           let tmp85 = tmp57;
           let tmp86 = tmp58;
           let tmp87 = result3;
-          let tmp21 = tmp28;
-          let tmp22 = tmp29;
-          let tmp23 = tmp30;
-          let tmp24 = tmp31;
+          tmp21 = tmp28;
+          tmp22 = tmp29;
+          tmp23 = tmp30;
+          tmp24 = tmp31;
         } while (num12 < w);
       }
       num10 = num10 + 1;
@@ -299,11 +299,10 @@ function thumbHashToRGBA(arg0) {
   }
   return { w, h, rgba };
 }
-const _module = require(dependencyMap[1]);
-const result = _module.fileFinishedImporting("modules/thumbhash/ThumbhashUtils.tsx");
+let result = require("set").fileFinishedImporting("modules/thumbhash/ThumbhashUtils.tsx");
 
 export const createThumbhashImageFromPlaceholder = function createThumbhashImageFromPlaceholder(placeholder) {
-  const tmp = thumbHashToRGBA(Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0)), {});
-  return require(dependencyMap[0]).rgbaToDataURL(tmp.w, tmp.h, tmp.rgba);
+  const tmp = thumbHashToRGBA(Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0)), { detail: 1, pop: 1.1 });
+  return require(14083) /* thumbHashToRGBA */.rgbaToDataURL(tmp.w, tmp.h, tmp.rgba);
 };
 export { thumbHashToRGBA };

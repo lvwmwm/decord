@@ -1,10 +1,13 @@
-// Module ID: 7781
-// Function ID: 62111
+// Module ID: 7787
+// Function ID: 62148
 // Name: getURL
-// Dependencies: []
+// Dependencies: [27, 653, 7788, 7789, 4464, 7790, 7791, 477, 7635, 4317, 7765, 3800, 5670, 5675, 4347, 1212, 2]
 // Exports: default
 
-// Module 7781 (getURL)
+// Module 7787 (getURL)
+import { processColor } from "get ActivityIndicator";
+import { MessageEmbedTypes } from "ME";
+
 function getURL(arg0) {
   let proxyURL;
   let url;
@@ -18,14 +21,25 @@ function getURL(arg0) {
   }
   return tmp;
 }
-const processColor = require(dependencyMap[0]).processColor;
-const MessageEmbedTypes = require(dependencyMap[1]).MessageEmbedTypes;
-const _module = require(dependencyMap[16]);
-const result = _module.fileFinishedImporting("modules/messages/native/renderer/transformEmbeds.tsx");
+let result = require("sanitizeMediaDimension").fileFinishedImporting("modules/messages/native/renderer/transformEmbeds.tsx");
 
 export default function transformEmbeds(arg0) {
+  let MessageEmbedTypes;
+  let closure_10;
+  let closure_11;
+  let closure_12;
+  let closure_13;
+  let closure_6;
+  let closure_7;
+  let closure_8;
+  let closure_9;
+  let dependencyMap;
   let embeds;
-  ({ embeds, channelId: closure_0, gifAutoPlay: closure_1, hasSpoilerEmbeds: closure_2, ignoreEmbedDescriptionCache: closure_3, shouldInlineEmbedMedia: closure_4, colors: closure_5, showListsAndHeaders: closure_6, showMaskedLinks: closure_7, themedBackgroundColor: closure_8, enabledContentHarmTypeFlags: closure_9, authorIsBot: closure_10, showContentInventoryEntryFallbackEmbed: closure_11, shouldAgeVerify: closure_12, transformComponents: closure_13 } = arg0);
+  let getURL;
+  let importDefault;
+  let processColor;
+  let require;
+  ({ embeds, channelId: require, gifAutoPlay: importDefault, hasSpoilerEmbeds: dependencyMap, ignoreEmbedDescriptionCache: processColor, shouldInlineEmbedMedia: MessageEmbedTypes, colors: getURL, showListsAndHeaders: closure_6, showMaskedLinks: closure_7, themedBackgroundColor: closure_8, enabledContentHarmTypeFlags: closure_9, authorIsBot: closure_10, showContentInventoryEntryFallbackEmbed: closure_11, shouldAgeVerify: closure_12, transformComponents: closure_13 } = arg0);
   function renderEmbedMedia(image) {
     let height;
     let proxyURL;
@@ -34,20 +48,20 @@ export default function transformEmbeds(arg0) {
     ({ url, proxyURL, width, height } = image);
     const obj = {};
     const merged = Object.assign(image);
-    obj["width"] = callback(closure_2[2]).sanitizeMediaDimension(width);
-    const obj2 = callback(closure_2[2]);
-    obj["height"] = callback(closure_2[2]).sanitizeMediaDimension(height);
+    obj["width"] = outer1_0(outer1_2[2]).sanitizeMediaDimension(width);
+    const obj2 = outer1_0(outer1_2[2]);
+    obj["height"] = outer1_0(outer1_2[2]).sanitizeMediaDimension(height);
     let imageSrc = proxyURL;
     if (null != proxyURL) {
-      const obj4 = callback2(closure_2[3]);
-      imageSrc = obj4.getImageSrc(proxyURL, width, height, !callback2);
+      const obj4 = outer1_1(outer1_2[3]);
+      imageSrc = obj4.getImageSrc(proxyURL, width, height, !closure_1);
     }
     obj["proxyURL"] = imageSrc;
-    const obj3 = callback(closure_2[2]);
+    const obj3 = outer1_0(outer1_2[2]);
     if (null != proxyURL) {
       url = proxyURL;
     }
-    obj["url"] = callback2(closure_2[3]).getImageSrc(url, width, height, !callback2);
+    obj["url"] = outer1_1(outer1_2[3]).getImageSrc(url, width, height, !closure_1);
     return obj;
   }
   return embeds.flatMap((type) => {
@@ -55,75 +69,75 @@ export default function transformEmbeds(arg0) {
     let proxyURL;
     let url;
     let width;
-    if (type.type !== constants.POST_PREVIEW) {
-      let isMediaScanPendingResult = constants;
-      if (type.type !== constants.GIFT) {
-        isMediaScanPendingResult = constants;
-        if (type.type !== constants.SAFETY_POLICY_NOTICE) {
-          isMediaScanPendingResult = constants;
-          if (type.type !== constants.SAFETY_SYSTEM_NOTIFICATION) {
-            isMediaScanPendingResult = constants;
-            if (type.type !== constants.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
-              isMediaScanPendingResult = constants;
-              if (type.type === constants.COMPONENTS) {
+    if (type.type !== outer1_4.POST_PREVIEW) {
+      let isMediaScanPendingResult = outer1_4;
+      if (type.type !== outer1_4.GIFT) {
+        isMediaScanPendingResult = outer1_4;
+        if (type.type !== outer1_4.SAFETY_POLICY_NOTICE) {
+          isMediaScanPendingResult = outer1_4;
+          if (type.type !== outer1_4.SAFETY_SYSTEM_NOTIFICATION) {
+            isMediaScanPendingResult = outer1_4;
+            if (type.type !== outer1_4.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
+              isMediaScanPendingResult = outer1_4;
+              if (type.type === outer1_4.COMPONENTS) {
                 isMediaScanPendingResult = null;
                 return [];
               }
-              let obj = callback(closure_2[4]);
+              let obj = outer1_0(outer1_2[4]);
               if (obj.isServerShopArticleEmbed(type)) {
                 return [];
-              } else if (type.type === constants.VOICE_CHANNEL) {
+              } else if (type.type === outer1_4.VOICE_CHANNEL) {
                 return [];
               } else {
-                isMediaScanPendingResult = callback;
-                isMediaScanPendingResult = closure_2;
+                isMediaScanPendingResult = outer1_0;
+                isMediaScanPendingResult = outer1_2;
                 if (obj31.isContentInventoryFallbackEmbed(type)) {
                   if (!closure_11) {
                     return [];
                   }
                 }
-                let obj1 = callback(closure_2[4]);
+                let obj1 = outer1_0(outer1_2[4]);
                 if (obj1.isSocialLayerStorefrontArticleEmbed(type)) {
-                  let obj2 = callback(closure_2[6]);
+                  let obj2 = outer1_0(outer1_2[6]);
                   obj = { location: "transformEmbeds" };
                   if (obj2.getIsEligibleForSocialLayerStorefrontMobilePurchasing(obj)) {
                     return [];
                   }
                 }
                 let tmp12 = null;
-                if (constants) {
+                if (closure_4) {
                   tmp12 = null;
                   if (null != type.thumbnail) {
                     const thumbnail = type.thumbnail;
                     ({ url, proxyURL, width, height } = thumbnail);
                     obj = {};
-                    const merged = Object.assign(thumbnail);
-                    let obj5 = callback(closure_2[2]);
+                    let merged = Object.assign(thumbnail);
+                    let obj5 = outer1_0(outer1_2[2]);
                     obj["width"] = obj5.sanitizeMediaDimension(width);
-                    let obj6 = callback(closure_2[2]);
+                    let obj6 = outer1_0(outer1_2[2]);
                     obj["height"] = obj6.sanitizeMediaDimension(height);
                     let imageSrc = proxyURL;
                     if (null != proxyURL) {
-                      let obj7 = callback2(closure_2[3]);
-                      imageSrc = obj7.getImageSrc(proxyURL, width, height, !callback2);
+                      let obj7 = outer1_1(outer1_2[3]);
+                      imageSrc = obj7.getImageSrc(proxyURL, width, height, !closure_1);
                     }
                     obj["proxyURL"] = imageSrc;
-                    let obj8 = callback2(closure_2[3]);
+                    let obj8 = outer1_1(outer1_2[3]);
                     if (null != proxyURL) {
                       url = proxyURL;
                     }
-                    obj["url"] = obj8.getImageSrc(url, width, height, !callback2);
+                    obj["url"] = obj8.getImageSrc(url, width, height, !closure_1);
                     tmp12 = obj;
                   }
                 }
                 let tmp34 = null;
-                if (constants) {
+                if (closure_4) {
                   tmp34 = null;
                   if (null != type.image) {
                     tmp34 = renderEmbedMedia(type.image);
                   }
                 }
-                if (constants) {
+                if (closure_4) {
                   if (null != type.images) {
                     const images = type.images;
                     let mapped = images.map(renderEmbedMedia);
@@ -132,46 +146,46 @@ export default function transformEmbeds(arg0) {
                   if (null != tmp12) {
                     tmp43 = tmp12;
                     if (null != type.video) {
-                      isMediaScanPendingResult = constants;
-                      let tmp45 = type.type === constants.VIDEO;
+                      isMediaScanPendingResult = outer1_4;
+                      let tmp45 = type.type === outer1_4.VIDEO;
                       if (!tmp45) {
-                        tmp45 = type.type === constants.RICH;
+                        tmp45 = type.type === outer1_4.RICH;
                       }
                       if (!tmp45) {
-                        tmp45 = type.type === constants.ARTICLE;
+                        tmp45 = type.type === outer1_4.ARTICLE;
                       }
-                      if (type.type !== constants.GIFV) {
+                      if (type.type !== outer1_4.GIFV) {
                         if (tmp45) {
                           let tmp64 = tmp49;
                           if (!tmp63) {
                             obj1 = {};
                             const merged1 = Object.assign(tmp49);
-                            obj1["gifvUrlForPortal"] = lib(type.video);
+                            obj1["gifvUrlForPortal"] = outer1_5(type.video);
                             tmp64 = obj1;
                           }
                           tmp43 = tmp64;
-                          if (obj15.isWebPlayerVideoUrl(lib(type.video))) {
+                          if (obj15.isWebPlayerVideoUrl(outer1_5(type.video))) {
                             obj2 = {};
                             const merged2 = Object.assign(tmp64);
                             obj2["inlinePlaybackDisabled"] = true;
                             tmp43 = obj2;
                           }
-                          const obj15 = callback(closure_2[9]);
-                          const tmp63 = type.type !== constants.GIFV || callback2;
+                          obj15 = outer1_0(outer1_2[9]);
+                          tmp63 = type.type !== outer1_4.GIFV || closure_1;
                         }
-                        let tmp49 = tmp12;
+                        tmp49 = tmp12;
                         if (tmp45) {
                           tmp49 = tmp12;
                           if (null == type.video.proxyURL) {
-                            isMediaScanPendingResult = callback;
-                            isMediaScanPendingResult = closure_2;
+                            isMediaScanPendingResult = outer1_0;
+                            isMediaScanPendingResult = outer1_2;
                             const provider2 = type.provider;
                             let name;
                             if (null != provider2) {
                               name = provider2.name;
                             }
-                            const effectiveVideoProvider = callback(closure_2[4]).getEffectiveVideoProvider(name, type.video.url);
-                            let obj10 = callback(closure_2[8]);
+                            const effectiveVideoProvider = outer1_0(outer1_2[4]).getEffectiveVideoProvider(name, type.video.url);
+                            let obj10 = outer1_0(outer1_2[8]);
                             tmp49 = tmp12;
                             if (obj10.shouldPlayVideoInline(effectiveVideoProvider)) {
                               const obj3 = {};
@@ -179,45 +193,45 @@ export default function transformEmbeds(arg0) {
                               obj3["showPlayButton"] = true;
                               tmp49 = obj3;
                             }
-                            const obj32 = callback(closure_2[4]);
+                            const obj32 = outer1_0(outer1_2[4]);
                           }
                         }
                       }
                       const obj4 = {};
                       const merged4 = Object.assign(tmp12);
-                      obj4["gifv"] = type.type === constants.GIFV;
-                      obj4["videoUrl"] = lib(type.video);
+                      obj4["gifv"] = type.type === outer1_4.GIFV;
+                      obj4["videoUrl"] = outer1_5(type.video);
                       tmp49 = obj4;
                     }
                   }
-                  let embedBorderLeftColor = lib.embedBorderLeftColor;
+                  embedBorderLeftColor = embedBorderLeftColor.embedBorderLeftColor;
                   let tmp76 = null != type.color;
                   if (tmp76) {
                     tmp76 = "" !== type.color;
                   }
                   if (tmp76) {
-                    embedBorderLeftColor = callback3(type.color);
+                    embedBorderLeftColor = outer1_3(type.color);
                   }
                   if (null != type.url) {
                     if ("" !== type.url) {
-                      let parseEmbedTitleMarkup = callback(closure_2[10]).parseEmbedTitleMarkupWithoutLinks;
+                      let parseEmbedTitleMarkup = outer1_0(outer1_2[10]).parseEmbedTitleMarkupWithoutLinks;
                     }
-                    if (type.type === constants.RICH) {
+                    if (type.type === outer1_4.RICH) {
                       if (null != type.rawTitle) {
-                        let rawTitle = parseEmbedTitleMarkup(type.rawTitle, callback);
+                        let rawTitle = parseEmbedTitleMarkup(type.rawTitle, closure_0);
                       }
                       type = type.type;
-                      if (constants.IMAGE !== type) {
-                        isMediaScanPendingResult = constants;
-                        if (constants.VIDEO !== type) {
-                          isMediaScanPendingResult = constants;
-                          if (constants.GIFV !== type) {
-                            isMediaScanPendingResult = constants;
-                            if (constants.RICH === type) {
+                      if (outer1_4.IMAGE !== type) {
+                        isMediaScanPendingResult = outer1_4;
+                        if (outer1_4.VIDEO !== type) {
+                          isMediaScanPendingResult = outer1_4;
+                          if (outer1_4.GIFV !== type) {
+                            isMediaScanPendingResult = outer1_4;
+                            if (outer1_4.RICH === type) {
                               if (null != type.rawDescription) {
-                                obj5 = { description: type.rawDescription, channelId: callback, isField: false, ignoreCache: callback3, showListsAndHeaders: closure_6, showMaskedLinks: closure_7 };
-                                let rawDescription = callback(closure_2[10]).parseEmbedDescriptionMarkup(obj5);
-                                const obj17 = callback(closure_2[10]);
+                                obj5 = { description: type.rawDescription, channelId: closure_0, isField: false, ignoreCache: closure_3, showListsAndHeaders: closure_6, showMaskedLinks: closure_7 };
+                                let rawDescription = outer1_0(outer1_2[10]).parseEmbedDescriptionMarkup(obj5);
+                                const obj17 = outer1_0(outer1_2[10]);
                               }
                             } else {
                               rawDescription = type.rawDescription;
@@ -232,17 +246,17 @@ export default function transformEmbeds(arg0) {
                       const mapped1 = fields.map((rawName) => {
                         let result = null;
                         if (null != rawName.rawName) {
-                          let obj = callback(closure_2[10]);
-                          result = obj.parseEmbedTitleMarkup(rawName.rawName, callback);
+                          let obj = outer2_0(outer2_2[10]);
+                          result = obj.parseEmbedTitleMarkup(rawName.rawName, outer1_0);
                         }
                         let result1 = null;
                         if (null != rawName.rawValue) {
-                          let obj1 = callback(closure_2[10]);
-                          obj = { description: rawName.rawValue, channelId: callback, isField: true, ignoreCache: closure_3 };
-                          obj = { 	: "" };
+                          let obj1 = outer2_0(outer2_2[10]);
+                          obj = { description: rawName.rawValue, channelId: outer1_0, isField: true, ignoreCache: outer1_3 };
+                          obj = { "\t": "" };
                           obj.replaceMap = obj;
-                          obj.showListsAndHeaders = closure_6;
-                          obj.showMaskedLinks = closure_7;
+                          obj.showListsAndHeaders = outer1_6;
+                          obj.showMaskedLinks = outer1_7;
                           result1 = obj1.parseEmbedDescriptionMarkup(obj);
                         }
                         obj1 = {};
@@ -253,8 +267,8 @@ export default function transformEmbeds(arg0) {
                       });
                       let calendarFormatResult = null;
                       if (null != type.timestamp) {
-                        calendarFormatResult = callback(closure_2[11]).calendarFormat(type.timestamp);
-                        const obj19 = callback(closure_2[11]);
+                        calendarFormatResult = outer1_0(outer1_2[11]).calendarFormat(type.timestamp);
+                        const obj19 = outer1_0(outer1_2[11]);
                       }
                       if (null != type.footer) {
                         const text = type.footer.text;
@@ -272,13 +286,13 @@ export default function transformEmbeds(arg0) {
                           }
                           let tmp95 = obj6;
                           if (null != iconURL) {
-                            isMediaScanPendingResult = callback2;
-                            isMediaScanPendingResult = closure_2;
-                            const obj22 = callback2(closure_2[3]);
-                            isMediaScanPendingResult = callback2;
+                            isMediaScanPendingResult = outer1_1;
+                            isMediaScanPendingResult = outer1_2;
+                            const obj22 = outer1_1(outer1_2[3]);
+                            isMediaScanPendingResult = closure_1;
                             isMediaScanPendingResult = obj22;
                             isMediaScanPendingResult = iconURL;
-                            obj6.iconURL = obj22.getImageSrc(iconURL, 16, 16, !callback2);
+                            obj6.iconURL = obj22.getImageSrc(iconURL, 16, 16, !closure_1);
                             tmp95 = obj6;
                           }
                         }
@@ -288,29 +302,29 @@ export default function transformEmbeds(arg0) {
                         tmp95 = obj7;
                       }
                       if (null == type.author) {
-                        isMediaScanPendingResult = constants;
-                        if (type.type !== constants.COMPONENTS) {
-                          isMediaScanPendingResult = callback;
-                          isMediaScanPendingResult = closure_2;
-                          obj8 = { type: callback(closure_2[13]).ObscuredMediaTypes.Embed, media: type };
+                        isMediaScanPendingResult = outer1_4;
+                        if (type.type !== outer1_4.COMPONENTS) {
+                          isMediaScanPendingResult = outer1_0;
+                          isMediaScanPendingResult = outer1_2;
+                          obj8 = { type: outer1_0(outer1_2[13]).ObscuredMediaTypes.Embed, media: type };
                           isMediaScanPendingResult = closure_9;
                           isMediaScanPendingResult = closure_10;
                           isMediaScanPendingResult = !closure_10;
-                          const mediaObscuredReasonFromBitmask = callback(closure_2[12]).getMediaObscuredReasonFromBitmask(obj8, closure_9);
+                          const mediaObscuredReasonFromBitmask = outer1_0(outer1_2[12]).getMediaObscuredReasonFromBitmask(obj8, closure_9);
                           if (isMediaScanPendingResult) {
-                            isMediaScanPendingResult = callback;
-                            isMediaScanPendingResult = closure_2;
-                            let obj9 = { type: callback(closure_2[13]).ObscuredMediaTypes.Embed, media: type };
+                            isMediaScanPendingResult = outer1_0;
+                            isMediaScanPendingResult = outer1_2;
+                            let obj9 = { type: outer1_0(outer1_2[13]).ObscuredMediaTypes.Embed, media: type };
                             isMediaScanPendingResult = closure_9;
-                            isMediaScanPendingResult = callback(closure_2[12]).isMediaScanPending(obj9, closure_9);
-                            const obj27 = callback(closure_2[12]);
+                            isMediaScanPendingResult = outer1_0(outer1_2[12]).isMediaScanPending(obj9, closure_9);
+                            const obj27 = outer1_0(outer1_2[12]);
                           }
                           isMediaScanPendingResult = mediaObscuredReasonFromBitmask.length > 0;
                           if (isMediaScanPendingResult) {
-                            isMediaScanPendingResult = callback;
-                            isMediaScanPendingResult = closure_2;
-                            isMediaScanPendingResult = callback(closure_2[14]).isVerifiedTeen();
-                            const obj29 = callback(closure_2[14]);
+                            isMediaScanPendingResult = outer1_0;
+                            isMediaScanPendingResult = outer1_2;
+                            isMediaScanPendingResult = outer1_0(outer1_2[14]).isVerifiedTeen();
+                            const obj29 = outer1_0(outer1_2[14]);
                           }
                           obj10 = {};
                           const id = type.id;
@@ -329,26 +343,26 @@ export default function transformEmbeds(arg0) {
                           isMediaScanPendingResult = closure_2;
                           isMediaScanPendingResult = str20;
                           if (closure_2) {
-                            isMediaScanPendingResult = callback;
-                            isMediaScanPendingResult = closure_2;
-                            const intl = callback(closure_2[15]).intl;
-                            isMediaScanPendingResult = intl.string(callback(closure_2[15]).t.F+x38C).toUpperCase();
-                            const str22 = intl.string(callback(closure_2[15]).t.F+x38C);
+                            isMediaScanPendingResult = outer1_0;
+                            isMediaScanPendingResult = outer1_2;
+                            const intl = outer1_0(outer1_2[15]).intl;
+                            isMediaScanPendingResult = intl.string(outer1_0(outer1_2[15]).t["F+x38C"]).toUpperCase();
+                            const str22 = intl.string(outer1_0(outer1_2[15]).t["F+x38C"]);
                           }
                           obj10.spoiler = isMediaScanPendingResult;
                           isMediaScanPendingResult = str20;
                           if (isMediaScanPendingResult) {
-                            isMediaScanPendingResult = callback;
-                            isMediaScanPendingResult = closure_2;
-                            const intl2 = callback(closure_2[15]).intl;
-                            isMediaScanPendingResult = intl2.string(callback(closure_2[15]).t.SpxcUR);
+                            isMediaScanPendingResult = outer1_0;
+                            isMediaScanPendingResult = outer1_2;
+                            const intl2 = outer1_0(outer1_2[15]).intl;
+                            isMediaScanPendingResult = intl2.string(outer1_0(outer1_2[15]).t.SpxcUR);
                           }
                           obj10.obscure = isMediaScanPendingResult;
                           if (isMediaScanPendingResult) {
-                            isMediaScanPendingResult = callback;
-                            isMediaScanPendingResult = closure_2;
-                            const intl3 = callback(closure_2[15]).intl;
-                            str20 = intl3.string(callback(closure_2[15]).t.MRdR7z);
+                            isMediaScanPendingResult = outer1_0;
+                            isMediaScanPendingResult = outer1_2;
+                            const intl3 = outer1_0(outer1_2[15]).intl;
+                            str20 = intl3.string(outer1_0(outer1_2[15]).t.MRdR7z);
                           }
                           obj10.obscureAwaitingScan = str20;
                           if (isMediaScanPendingResult) {
@@ -412,8 +426,8 @@ export default function transformEmbeds(arg0) {
                           }
                           obj10.video = isMediaScanPendingResult;
                           obj10.borderLeftColor = embedBorderLeftColor;
-                          isMediaScanPendingResult = lib;
-                          ({ embedProviderColor: obj30.providerColor, embedHeaderTextColor: obj30.headerTextColor, embedBodyTextColor: obj30.bodyTextColor } = lib);
+                          isMediaScanPendingResult = embedBorderLeftColor;
+                          ({ embedProviderColor: obj30.providerColor, embedHeaderTextColor: obj30.headerTextColor, embedBodyTextColor: obj30.bodyTextColor } = embedBorderLeftColor);
                           const referenceId = type.referenceId;
                           isMediaScanPendingResult = undefined;
                           if (null != referenceId) {
@@ -440,8 +454,8 @@ export default function transformEmbeds(arg0) {
                           } else {
                             isMediaScanPendingResult = components;
                           }
-                          isMediaScanPendingResult = callback4;
-                          isMediaScanPendingResult = callback4(isMediaScanPendingResult);
+                          isMediaScanPendingResult = callback;
+                          isMediaScanPendingResult = callback(isMediaScanPendingResult);
                         }
                       } else {
                         if (null != type.author.iconProxyURL) {
@@ -452,13 +466,13 @@ export default function transformEmbeds(arg0) {
                             const obj11 = {};
                             isMediaScanPendingResult = obj11;
                             isMediaScanPendingResult = Object.assign(type.author);
-                            isMediaScanPendingResult = callback2;
-                            isMediaScanPendingResult = closure_2;
-                            const obj24 = callback2(closure_2[3]);
-                            isMediaScanPendingResult = callback2;
+                            isMediaScanPendingResult = outer1_1;
+                            isMediaScanPendingResult = outer1_2;
+                            const obj24 = outer1_1(outer1_2[3]);
+                            isMediaScanPendingResult = closure_1;
                             isMediaScanPendingResult = obj24;
                             isMediaScanPendingResult = iconURL2;
-                            obj11["iconURL"] = obj24.getImageSrc(iconURL2, 16, 16, !callback2);
+                            obj11["iconURL"] = obj24.getImageSrc(iconURL2, 16, 16, !closure_1);
                             let author = obj11;
                           } else {
                             author = type.author;
@@ -470,11 +484,11 @@ export default function transformEmbeds(arg0) {
                     }
                     rawTitle = type.rawTitle;
                   }
-                  parseEmbedTitleMarkup = callback(closure_2[10]).parseEmbedTitleMarkup;
+                  parseEmbedTitleMarkup = outer1_0(outer1_2[10]).parseEmbedTitleMarkup;
                 }
                 let tmp37 = null == tmp34;
                 if (!tmp37) {
-                  obj9 = callback(closure_2[7]);
+                  obj9 = outer1_0(outer1_2[7]);
                   tmp37 = !obj9.isIOS();
                 }
                 let tmp40 = !tmp37;
@@ -489,7 +503,7 @@ export default function transformEmbeds(arg0) {
                     mapped = items;
                   }
                 }
-                const obj31 = callback(closure_2[5]);
+                obj31 = outer1_0(outer1_2[5]);
               }
             }
           }

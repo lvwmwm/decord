@@ -1,18 +1,18 @@
 // Module ID: 926
-// Function ID: 10086
+// Function ID: 10087
 // Name: captureLog
-// Dependencies: []
+// Dependencies: [856, 877]
 // Exports: debug, error, fatal, info, trace, warn
 
 // Module 926 (captureLog)
 function captureLog(level, message, attributes) {
-  let obj = require(dependencyMap[0]);
+  let obj = require(856) /* setLogAttribute */;
   obj = { level, message, attributes, severityNumber: undefined };
   obj._INTERNAL_captureLog(obj, arg3);
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const fmt = require(dependencyMap[1]).fmt;
+export const fmt = require("parameterize").fmt;
 export const debug = function debug(arg0, arg1) {
   if (arguments.length > 2) {
     tmp("debug", arg0, arg1, {}.scope);

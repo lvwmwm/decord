@@ -1,7 +1,7 @@
 // Module ID: 1208
-// Function ID: 13877
+// Function ID: 13878
 // Name: reportEvent
-// Dependencies: []
+// Dependencies: [2]
 // Exports: logFluxAction, notifyStoreChange, notifyStoreCreated
 
 // Module 1208 (reportEvent)
@@ -19,8 +19,7 @@ function getDevtools() {
   }
   return __DISCORD_DEVTOOLS;
 }
-const _module = require(dependencyMap[0]);
-const result = _module.fileFinishedImporting("../discord_common/js/shared/DevtoolsExtension.tsx");
+const result = require("set").fileFinishedImporting("../discord_common/js/shared/DevtoolsExtension.tsx");
 
 export const logFluxAction = function logFluxAction(description, durationMs) {
   reportEvent({ type: "Flux-Dispatch", description: description.type, data: description, durationMs });

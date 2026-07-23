@@ -1,10 +1,10 @@
-// Module ID: 7640
-// Function ID: 61180
+// Module ID: 7646
+// Function ID: 61217
 // Name: buildPlatformedThemedEmojiColorPalette
-// Dependencies: []
+// Dependencies: [3974, 3975, 666, 7025, 2]
 // Exports: buildEmojiColorPalette
 
-// Module 7640 (buildPlatformedThemedEmojiColorPalette)
+// Module 7646 (buildPlatformedThemedEmojiColorPalette)
 function buildPlatformedThemedEmojiColorPalette(colors) {
   let saturationFactor;
   let num = colors.saturationFactor;
@@ -24,20 +24,20 @@ function buildPlatformedThemedEmojiColorPalette(colors) {
   if (null != colors) {
     tmp = null;
     if (colors.length >= 1) {
-      let obj1 = require(dependencyMap[0]);
+      let obj1 = require(3974) /* hexToRgb */;
       const findColorByHsvResult = obj1.findColorByHsv(colors);
-      let obj2 = importDefault(dependencyMap[1]);
+      let obj2 = importDefault(3975);
       const parseStringResult = obj2.parseString(findColorByHsvResult);
       tmp = null;
       if (null != parseStringResult) {
-        let obj4 = require(dependencyMap[0]);
+        let obj4 = require(3974) /* hexToRgb */;
         const rawRgbToHslResult = obj4.rawRgbToHsl(parseStringResult.red, parseStringResult.blue, parseStringResult.green);
-        let obj5 = require(dependencyMap[0]);
+        let obj5 = require(3974) /* hexToRgb */;
         obj = {};
-        let obj7 = require(dependencyMap[0]);
+        let obj7 = require(3974) /* hexToRgb */;
         const colorLightnessAdjusted = obj7.getColorLightnessAdjusted(parseStringResult, 0.6, true);
-        obj.foreground = importDefault(dependencyMap[2])(colorLightnessAdjusted.toHexString());
-        obj.background = importDefault(dependencyMap[2])(closure_3);
+        obj.foreground = importDefault(666)(colorLightnessAdjusted.toHexString());
+        obj.background = importDefault(666)(c3);
         obj.ratio = 3;
         obj.saturationFactor = saturationFactor;
         const accessibleForegroundColor = obj5.getAccessibleForegroundColor(obj);
@@ -45,13 +45,13 @@ function buildPlatformedThemedEmojiColorPalette(colors) {
         if (null != accessibleForegroundColor) {
           tmp13 = accessibleForegroundColor;
         }
-        const tmp10 = importDefault(dependencyMap[2]);
+        const tmp10 = importDefault(666);
         obj = {};
-        const obj10 = require(dependencyMap[0]);
-        const tmp17 = importDefault(dependencyMap[2]);
-        const colorLightnessAdjusted1 = require(dependencyMap[0]).getColorLightnessAdjusted(parseStringResult, 0.6, false);
+        const obj10 = require(3974) /* hexToRgb */;
+        const tmp17 = importDefault(666);
+        const colorLightnessAdjusted1 = require(3974) /* hexToRgb */.getColorLightnessAdjusted(parseStringResult, 0.6, false);
         obj.foreground = tmp17(colorLightnessAdjusted1.toHexString());
-        obj.background = importDefault(dependencyMap[2])(closure_4);
+        obj.background = importDefault(666)(c4);
         obj.ratio = 5;
         obj.saturationFactor = saturationFactor;
         const accessibleForegroundColor1 = obj10.getAccessibleForegroundColor(obj);
@@ -59,12 +59,12 @@ function buildPlatformedThemedEmojiColorPalette(colors) {
         if (null != accessibleForegroundColor1) {
           tmp20 = accessibleForegroundColor1;
         }
-        const obj12 = require(dependencyMap[0]);
-        obj1 = { foreground: importDefault(dependencyMap[2])(findColorByHsvResult), background: importDefault(dependencyMap[2])(closure_3), ratio: 7, saturationFactor };
-        const accessibleForegroundColor2 = require(dependencyMap[0]).getAccessibleForegroundColor(obj1);
-        const obj14 = require(dependencyMap[0]);
-        obj2 = { foreground: importDefault(dependencyMap[2])(findColorByHsvResult), background: importDefault(dependencyMap[2])(closure_4), ratio: 7, saturationFactor };
-        const accessibleForegroundColor3 = require(dependencyMap[0]).getAccessibleForegroundColor(obj2);
+        const obj12 = require(3974) /* hexToRgb */;
+        obj1 = { foreground: importDefault(666)(findColorByHsvResult), background: importDefault(666)(c3), ratio: 7, saturationFactor };
+        const accessibleForegroundColor2 = require(3974) /* hexToRgb */.getAccessibleForegroundColor(obj1);
+        const obj14 = require(3974) /* hexToRgb */;
+        obj2 = { foreground: importDefault(666)(findColorByHsvResult), background: importDefault(666)(c4), ratio: 7, saturationFactor };
+        const accessibleForegroundColor3 = require(3974) /* hexToRgb */.getAccessibleForegroundColor(obj2);
         const obj3 = {};
         obj4 = {};
         let hexResult;
@@ -72,9 +72,9 @@ function buildPlatformedThemedEmojiColorPalette(colors) {
           hexResult = accessibleForegroundColor2.hex();
         }
         obj4.accentColor = hexResult;
-        const obj17 = require(dependencyMap[0]);
+        const obj17 = require(3974) /* hexToRgb */;
         obj5 = { colorRGB: tmp13, saturationFactor };
-        obj4.backgroundColor = require(dependencyMap[0]).getSaturatedColorHex(obj5);
+        obj4.backgroundColor = require(3974) /* hexToRgb */.getSaturatedColorHex(obj5);
         let toHexStringResult;
         if (null != parseStringResult) {
           toHexStringResult = parseStringResult.toHexString();
@@ -96,9 +96,9 @@ function buildPlatformedThemedEmojiColorPalette(colors) {
           hexResult1 = accessibleForegroundColor3.hex();
         }
         obj6.accentColor = hexResult1;
-        const obj22 = require(dependencyMap[0]);
+        const obj22 = require(3974) /* hexToRgb */;
         obj7 = { colorRGB: tmp20, saturationFactor };
-        obj6.backgroundColor = require(dependencyMap[0]).getSaturatedColorHex(obj7);
+        obj6.backgroundColor = require(3974) /* hexToRgb */.getSaturatedColorHex(obj7);
         let toHexStringResult1;
         if (null != parseStringResult) {
           toHexStringResult1 = parseStringResult.toHexString();
@@ -115,17 +115,16 @@ function buildPlatformedThemedEmojiColorPalette(colors) {
         obj6.opacity = num11;
         obj3.DARK = obj6;
         tmp = obj3;
-        const obj25 = require(dependencyMap[0]);
+        const obj25 = require(3974) /* hexToRgb */;
       }
     }
   }
   const obj8 = { palette: tmp, shouldProcessMobileColors: flag };
-  return importDefault(dependencyMap[3]).applyPlatformToThemedEmojiColorPalette(obj8);
+  return importDefault(7025).applyPlatformToThemedEmojiColorPalette(obj8);
 }
-let closure_3 = "#ffffff";
-let closure_4 = "#36393e";
-const _module = require(dependencyMap[4]);
-const result = _module.fileFinishedImporting("modules/emojis/utils/EmojiColorUtils.tsx");
+let c3 = "#ffffff";
+let c4 = "#36393e";
+const result = require("t").fileFinishedImporting("modules/emojis/utils/EmojiColorUtils.tsx");
 
 export { buildPlatformedThemedEmojiColorPalette };
 export const buildEmojiColorPalette = function buildEmojiColorPalette(colors, stateFromStores, stateFromStores1) {

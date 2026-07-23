@@ -1,9 +1,28 @@
-// Module ID: 10266
-// Function ID: 79302
+// Module ID: 10279
+// Function ID: 79375
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 1352, 1348, 3767, 4325, 1849, 653, 33, 5079, 5073, 5796, 4320, 7495, 1212, 10280, 566, 5087, 5519, 2]
 
-// Module 10266 (_isNativeReflectConstruct)
+// Module 10279 (_isNativeReflectConstruct)
+import _callSuper from "_callSuper";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import openUserSettings from "openUserSettings";
+import Form from "Form";
+import getSystemLocale from "getSystemLocale";
+import importAllResult from "result";
+import { isMultiUserDM } from "_callSuper";
+import closure_10 from "_isNativeReflectConstruct";
+import closure_11 from "_isNativeReflectConstruct";
+import closure_12 from "_isNativeReflectConstruct";
+import closure_13 from "_isNativeReflectConstruct";
+import ME from "ME";
+import jsxProd from "jsxProd";
+
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -15,102 +34,88 @@ function _isNativeReflectConstruct() {
 }
 function ConnectedInAppNotificationSettingsScreen(channel) {
   channel = channel.channel;
-  const arg1 = channel;
-  let obj = arg1(dependencyMap[20]);
+  let obj = channel(566);
   const items = [closure_12];
   obj = {
     channel,
     isMuted: obj.useStateFromStores(items, () => {
       let isChannelMutedResult;
       if (null != channel) {
-        if (callback(channel.type)) {
-          isChannelMutedResult = channelMuted.isChannelMuted(channel.getGuildId(), channel.id);
+        if (outer1_9(channel.type)) {
+          isChannelMutedResult = outer1_12.isChannelMuted(channel.getGuildId(), channel.id);
         }
       }
       return isChannelMutedResult;
     })
   };
-  return callback4(closure_18, obj);
+  return callback3(closure_18, obj);
 }
 function getScreens(channelId, pop) {
-  const callback = channel.getChannel(channelId);
+  const _require = channel.getChannel(channelId);
   let obj = {};
   obj = {
     headerTitle() {
       const obj = {};
-      const intl = callback(closure_2[18]).intl;
-      obj.title = intl.string(callback(closure_2[18]).t.h850Ss);
+      const intl = callback(outer1_2[18]).intl;
+      obj.title = intl.string(callback(outer1_2[18]).t.h850Ss);
       let channelName = null;
       if (null != callback) {
-        const obj2 = callback(closure_2[16]);
-        channelName = obj2.computeChannelName(tmp, closure_13, closure_11, true);
+        const obj2 = callback(outer1_2[16]);
+        channelName = obj2.computeChannelName(tmp, outer1_13, outer1_11, true);
       }
       obj.subtitle = channelName;
-      return closure_16(callback(closure_2[21]).NavigatorHeader, obj);
+      return outer1_16(callback(outer1_2[21]).NavigatorHeader, obj);
     },
-    headerLeft: callback(dependencyMap[21]).getHeaderCloseButton(pop),
+    headerLeft: _require(5087).getHeaderCloseButton(pop),
     render() {
-      return callback2(closure_20, { channel: closure_0 });
+      return outer1_16(outer1_20, { channel: closure_0 });
     }
   };
   obj.IN_APP_NOTIFICATION_SETTINGS = obj;
   return obj;
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-const isMultiUserDM = arg1(dependencyMap[6]).isMultiUserDM;
-let closure_10 = importDefault(dependencyMap[7]);
-let closure_11 = importDefault(dependencyMap[8]);
-let closure_12 = importDefault(dependencyMap[9]);
-let closure_13 = importDefault(dependencyMap[10]);
-({ ChannelTypes: closure_14, UserSettingsSections: closure_15 } = arg1(dependencyMap[11]));
-const tmp2 = arg1(dependencyMap[11]);
-({ jsx: closure_16, jsxs: closure_17 } = arg1(dependencyMap[12]));
-let closure_18 = (PureComponent) => {
+({ ChannelTypes: closure_14, UserSettingsSections: closure_15 } = ME);
+({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
+let closure_18 = ((PureComponent) => {
   class InAppNotificationSettingsScreen {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, InAppNotificationSettingsScreen);
+      tmp = outer1_3(this, apply);
       items1 = [...items];
-      obj = closure_6(InAppNotificationSettingsScreen);
-      tmp2 = closure_5;
-      if (closure_19()) {
+      obj = outer1_6(apply);
+      tmp2 = outer1_5;
+      if (outer1_19()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      InAppNotificationSettingsScreen = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.handleGroupDMMute = () => {
         let channel;
         let isMuted;
         ({ channel, isMuted } = tmp2Result.props);
         if (null != channel) {
-          let obj = callback(closure_2[13]);
+          let obj = outer2_1(outer2_2[13]);
           const guildId = channel.getGuildId();
           obj = { muted: !isMuted };
-          const NotificationLabel = tmp2Result(closure_2[14]).NotificationLabel;
+          const NotificationLabel = InAppNotificationSettingsScreen(outer2_2[14]).NotificationLabel;
           const result = obj.updateChannelOverrideSettings(guildId, channel.id, obj, NotificationLabel.muted(!isMuted));
         }
       };
       tmp2Result.handleOpenUserSettings = () => {
-        let obj = tmp2Result(closure_2[15]);
-        obj = { screen: constants.NOTIFICATIONS };
+        let obj = InAppNotificationSettingsScreen(outer2_2[15]);
+        obj = { screen: outer2_15.NOTIFICATIONS };
         obj.openUserSettings(obj);
       };
       return tmp2Result;
     }
   }
-  const arg1 = InAppNotificationSettingsScreen;
-  callback3(InAppNotificationSettingsScreen, PureComponent);
+  callback2(InAppNotificationSettingsScreen, PureComponent);
   let obj = {
     key: "renderGroupDMNotificationSettings",
     value() {
@@ -118,21 +123,21 @@ let closure_18 = (PureComponent) => {
       if (null == channel) {
         return null;
       } else {
-        let obj = InAppNotificationSettingsScreen(closure_2[16]);
-        const channelName = obj.computeChannelName(channel, closure_13, closure_11);
+        let obj = InAppNotificationSettingsScreen(outer1_2[16]);
+        const channelName = obj.computeChannelName(channel, outer1_13, outer1_11);
         obj = {};
         obj = {};
-        const intl = InAppNotificationSettingsScreen(closure_2[18]).intl;
+        const intl = InAppNotificationSettingsScreen(outer1_2[18]).intl;
         const obj1 = { name: channelName };
-        obj.label = intl.format(InAppNotificationSettingsScreen(closure_2[18]).t.u/rEuc, obj1);
+        obj.label = intl.format(InAppNotificationSettingsScreen(outer1_2[18]).t["u/rEuc"], obj1);
         obj.value = tmp2;
         obj.onValueChange = tmp.handleGroupDMMute;
-        obj.children = callback4(InAppNotificationSettingsScreen(closure_2[17]).FormSwitchRow, obj);
-        return callback4(InAppNotificationSettingsScreen(closure_2[17]).FormSection, obj);
+        obj.children = outer1_16(InAppNotificationSettingsScreen(outer1_2[17]).FormSwitchRow, obj);
+        return outer1_16(InAppNotificationSettingsScreen(outer1_2[17]).FormSection, obj);
       }
     }
   };
-  const items = [obj, , , ];
+  let items = [obj, , , ];
   obj = {
     key: "renderTextChannelNotificationSettings",
     value() {
@@ -140,7 +145,7 @@ let closure_18 = (PureComponent) => {
       let tmp = null;
       if (null != channel) {
         const obj = { channelId: channel.id };
-        tmp = callback4(callback(closure_2[19]), obj);
+        tmp = outer1_16(outer1_1(outer1_2[19]), obj);
       }
       return tmp;
     }
@@ -155,11 +160,11 @@ let closure_18 = (PureComponent) => {
         return null;
       } else {
         const type = channel.type;
-        if (constants.GROUP_DM === type) {
+        if (outer1_14.GROUP_DM === type) {
           return self.renderGroupDMNotificationSettings();
         } else {
-          if (constants.GUILD_TEXT !== type) {
-            if (constants.GUILD_ANNOUNCEMENT !== type) {
+          if (outer1_14.GUILD_TEXT !== type) {
+            if (outer1_14.GUILD_ANNOUNCEMENT !== type) {
               return null;
             }
           }
@@ -175,35 +180,32 @@ let closure_18 = (PureComponent) => {
       let obj = {};
       const items = [this.renderChannelNotificationSettings(), , ];
       obj = {};
-      const intl = InAppNotificationSettingsScreen(closure_2[18]).intl;
-      obj.title = intl.string(InAppNotificationSettingsScreen(closure_2[18]).t.clE4PU);
+      const intl = InAppNotificationSettingsScreen(outer1_2[18]).intl;
+      obj.title = intl.string(InAppNotificationSettingsScreen(outer1_2[18]).t.clE4PU);
       obj = {};
-      const intl2 = InAppNotificationSettingsScreen(closure_2[18]).intl;
-      obj.label = intl2.string(InAppNotificationSettingsScreen(closure_2[18]).t.cHMaba);
+      const intl2 = InAppNotificationSettingsScreen(outer1_2[18]).intl;
+      obj.label = intl2.string(InAppNotificationSettingsScreen(outer1_2[18]).t.cHMaba);
       obj.onPress = this.handleOpenUserSettings;
-      obj.trailing = callback4(InAppNotificationSettingsScreen(closure_2[17]).FormRow.Arrow, {});
-      obj.children = callback4(InAppNotificationSettingsScreen(closure_2[17]).FormRow, obj);
-      items[1] = callback4(InAppNotificationSettingsScreen(closure_2[17]).FormSection, obj);
+      obj.trailing = outer1_16(InAppNotificationSettingsScreen(outer1_2[17]).FormRow.Arrow, {});
+      obj.children = outer1_16(InAppNotificationSettingsScreen(outer1_2[17]).FormRow, obj);
+      items[1] = outer1_16(InAppNotificationSettingsScreen(outer1_2[17]).FormSection, obj);
       const obj1 = {};
-      const intl3 = InAppNotificationSettingsScreen(closure_2[18]).intl;
-      obj1.children = intl3.string(InAppNotificationSettingsScreen(closure_2[18]).t.avgbp1);
-      items[2] = callback4(InAppNotificationSettingsScreen(closure_2[17]).FormHint, obj1);
+      const intl3 = InAppNotificationSettingsScreen(outer1_2[18]).intl;
+      obj1.children = intl3.string(InAppNotificationSettingsScreen(outer1_2[18]).t.avgbp1);
+      items[2] = outer1_16(InAppNotificationSettingsScreen(outer1_2[17]).FormHint, obj1);
       obj.children = items;
-      return callback5(InAppNotificationSettingsScreen(closure_2[17]).Form, obj);
+      return outer1_17(InAppNotificationSettingsScreen(outer1_2[17]).Form, obj);
     }
   };
-  return callback2(InAppNotificationSettingsScreen, items);
-}(importAllResult.PureComponent);
-const tmp3 = arg1(dependencyMap[12]);
+  return callback(InAppNotificationSettingsScreen, items);
+})(importAllResult.PureComponent);
 const memoResult = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;
-  const arg1 = channelId;
   const onClose = channelId.onClose;
-  const importDefault = onClose;
   const items = [channelId, onClose];
-  const screens = importAllResult.useMemo(() => callback(channelId, onClose), items);
-  return callback4(arg1(dependencyMap[22]).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  const screens = importAllResult.useMemo(() => outer1_21(channelId, onClose), items);
+  return callback3(channelId(5519).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });
-const result = arg1(dependencyMap[23]).fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
+let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 
 export default memoResult;

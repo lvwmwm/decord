@@ -1,72 +1,80 @@
-// Module ID: 15910
-// Function ID: 121905
+// Module ID: 16027
+// Function ID: 124078
 // Name: UploadLogsActionSheet
-// Dependencies: []
+// Dependencies: [31, 27, 653, 33, 4130, 689, 5187, 5186, 1212, 4126, 4543, 10324, 675, 4098, 2]
 // Exports: default
 
-// Module 15910 (UploadLogsActionSheet)
-importAll(dependencyMap[0]);
-const View = arg1(dependencyMap[1]).View;
-({ AnalyticEvents: closure_4, DebugLogCategory: closure_5 } = arg1(dependencyMap[2]));
-const tmp3 = arg1(dependencyMap[2]);
-({ jsx: closure_6, jsxs: closure_7 } = arg1(dependencyMap[3]));
-let obj = arg1(dependencyMap[4]);
-obj = {};
-obj = { padding: importDefault(dependencyMap[5]).space.PX_16 };
-obj.container = obj;
-const tmp4 = arg1(dependencyMap[3]);
-obj.body = { textAlign: "center", marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
-const obj1 = { textAlign: "center", marginBottom: importDefault(dependencyMap[5]).space.PX_16 };
-obj.buttonSpacer = { height: importDefault(dependencyMap[5]).space.PX_8 };
-let closure_8 = obj.createStyles(obj);
-const obj2 = { height: importDefault(dependencyMap[5]).space.PX_8 };
-const result = arg1(dependencyMap[14]).fileFinishedImporting("modules/feedback/native/UploadLogsActionSheet.tsx");
+// Module 16027 (UploadLogsActionSheet)
+import "result";
+import { View } from "get ActivityIndicator";
+import ME from "ME";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
+({ AnalyticEvents: closure_4, DebugLogCategory: closure_5 } = ME);
+({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
+_createForOfIteratorHelperLoose.body = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+let obj1 = { textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
+_createForOfIteratorHelperLoose.buttonSpacer = { height: require("_createForOfIteratorHelperLoose").space.PX_8 };
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+let obj2 = { height: require("_createForOfIteratorHelperLoose").space.PX_8 };
+const result = require("ME").fileFinishedImporting("modules/feedback/native/UploadLogsActionSheet.tsx");
 
 export default function UploadLogsActionSheet(arg0) {
-  ({ mediaSessionId: closure_0, rtcConnectionId: closure_1 } = arg0);
-  const tmp = callback3();
+  let importDefault;
+  let require;
+  ({ mediaSessionId: require, rtcConnectionId: importDefault } = arg0);
+  const tmp = _createForOfIteratorHelperLoose();
   let obj = {};
   obj = {};
-  const intl = arg1(dependencyMap[8]).intl;
-  obj.title = intl.string(arg1(dependencyMap[8]).t.KTjjrG);
-  obj.header = callback(arg1(dependencyMap[7]).BottomSheetTitleHeader, obj);
+  const intl = require(1212) /* getSystemLocale */.intl;
+  obj.title = intl.string(require(1212) /* getSystemLocale */.t.KTjjrG);
+  obj.header = callback(require(5186) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { style: tmp.container };
-  const obj1 = { cachedAt: 400, edpbxy: 20, style: tmp.body };
-  const intl2 = arg1(dependencyMap[8]).intl;
-  obj1.children = intl2.string(arg1(dependencyMap[8]).t.ZvRR/t);
-  const items = [callback(arg1(dependencyMap[9]).Text, obj1), , , ];
-  const obj2 = {};
-  const intl3 = arg1(dependencyMap[8]).intl;
-  obj2.text = intl3.string(arg1(dependencyMap[8]).t.EbwFfR);
+  const obj1 = { variant: "text-sm/normal", color: "text-muted", style: tmp.body };
+  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t["ZvRR/t"]);
+  const items = [callback(require(4126) /* Text */.Text, obj1), , , ];
+  let obj2 = {};
+  const intl3 = require(1212) /* getSystemLocale */.intl;
+  obj2.text = intl3.string(require(1212) /* getSystemLocale */.t.EbwFfR);
   obj2.onPress = function onPress() {
-    let obj = callback(closure_2[11]);
-    obj.uploadDebugLogFiles(constants2.RTC);
+    let obj = outer1_0(outer1_2[11]);
+    obj.uploadDebugLogFiles(outer1_5.RTC);
     obj = {};
     let tmp2 = null;
-    if (null != callback) {
-      tmp2 = callback;
+    if (null != closure_0) {
+      tmp2 = closure_0;
     }
     obj.media_session_id = tmp2;
     let tmp3 = null;
-    if (null != callback2) {
-      tmp3 = callback2;
+    if (null != closure_1) {
+      tmp3 = closure_1;
     }
     obj.rtc_connection_id = tmp3;
-    callback2(closure_2[12]).track(constants.DEBUG_LOG_UPLOADED, obj);
-    const obj2 = callback2(closure_2[12]);
-    callback2(closure_2[13]).hideActionSheet();
+    outer1_1(outer1_2[12]).track(outer1_4.DEBUG_LOG_UPLOADED, obj);
+    const obj2 = outer1_1(outer1_2[12]);
+    outer1_1(outer1_2[13]).hideActionSheet();
   };
-  items[1] = callback(arg1(dependencyMap[10]).Button, obj2);
+  items[1] = callback(require(4543) /* Button */.Button, obj2);
   items[2] = callback(View, { style: tmp.buttonSpacer });
   const obj4 = {};
-  const intl4 = arg1(dependencyMap[8]).intl;
-  obj4.text = intl4.string(arg1(dependencyMap[8]).t.ETE/oC);
+  const intl4 = require(1212) /* getSystemLocale */.intl;
+  obj4.text = intl4.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
   obj4.variant = "secondary";
   obj4.onPress = function onPress() {
-    return callback2(closure_2[13]).hideActionSheet();
+    return outer1_1(outer1_2[13]).hideActionSheet();
   };
-  items[3] = callback(arg1(dependencyMap[10]).Button, obj4);
+  items[3] = callback(require(4543) /* Button */.Button, obj4);
   obj.children = items;
   obj.children = callback2(View, obj);
-  return callback(arg1(dependencyMap[6]).BottomSheet, obj);
+  return callback(require(5187) /* Background */.BottomSheet, obj);
 };

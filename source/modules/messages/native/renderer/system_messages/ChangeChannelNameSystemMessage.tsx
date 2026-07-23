@@ -1,23 +1,25 @@
-// Module ID: 7663
-// Function ID: 61265
+// Module ID: 7669
+// Function ID: 61302
 // Name: createChangeChannelNameSystemMessage
-// Dependencies: []
+// Dependencies: [1348, 7642, 7649, 7651, 1212, 7652, 7655, 2]
 // Exports: createChangeChannelNameSystemMessage
 
-// Module 7663 (createChangeChannelNameSystemMessage)
-let closure_3 = importDefault(dependencyMap[0]);
-const result = arg1(dependencyMap[7]).fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelNameSystemMessage.tsx");
+// Module 7669 (createChangeChannelNameSystemMessage)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+
+const require = arg1;
+const result = require("getMessageAuthorWithProcessedColor").fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelNameSystemMessage.tsx");
 
 export const createChangeChannelNameSystemMessage = function createChangeChannelNameSystemMessage(message) {
   let roleStyle;
   let theme;
   message = message.message;
   ({ theme, roleStyle } = message);
-  const tmp = importDefault(dependencyMap[1])(theme);
-  let obj = arg1(dependencyMap[2]);
+  const tmp = importDefault(7642)(theme);
+  let obj = require(7649) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp3 = importDefault(dependencyMap[3])({ message, author: messageAuthorWithProcessedColor, roleStyle });
-  const channel = channel.getChannel(message.channel_id);
+  const tmp3 = importDefault(7651)({ message, author: messageAuthorWithProcessedColor, roleStyle });
+  channel = channel.getChannel(message.channel_id);
   let isGroupDMResult;
   if (null != channel) {
     if (null != channel.isGroupDM) {
@@ -25,13 +27,13 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     }
   }
   if ("" === message.content) {
-    let rk0be9 = arg1(dependencyMap[4]).t.hToFyf;
+    let rk0be9 = require(1212) /* getSystemLocale */.t.hToFyf;
   } else {
-    rk0be9 = arg1(dependencyMap[4]).t.rk0be9;
+    rk0be9 = require(1212) /* getSystemLocale */.t.rk0be9;
   }
-  const tmp10 = importDefault(dependencyMap[5])(message);
+  const tmp10 = importDefault(7652)(message);
   obj = {};
-  const intl = arg1(dependencyMap[4]).intl;
+  const intl = require(1212) /* getSystemLocale */.intl;
   const formatToParts = intl.formatToParts;
   if (null != isGroupDMResult && isGroupDMResult) {
     obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp3, channelName: message.content };
@@ -45,9 +47,9 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     obj.onEditGroup = obj1;
     let formatToPartsResult = formatToParts(rk0be9, obj);
   } else {
-    const t = arg1(dependencyMap[4]).t;
+    const t = require(1212) /* getSystemLocale */.t;
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp3, channelName: message.content };
-    formatToPartsResult = formatToParts(message.isForumPost ? t.qa0e/n : t.XCPMEG, obj2);
+    formatToPartsResult = formatToParts(message.isForumPost ? t["qa0e/n"] : t.XCPMEG, obj2);
   }
   obj.content = formatToPartsResult;
   const merged = Object.assign(tmp10);
@@ -61,9 +63,9 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     const items = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(accessibilityActions, 0);
     const obj4 = {};
-    const intl2 = arg1(dependencyMap[4]).intl;
-    obj4.label = intl2.string(arg1(dependencyMap[4]).t.5Q9+/L);
-    obj4.name = arg1(dependencyMap[6]).MessageAccessibilityAction.EDIT_GDM;
+    const intl2 = require(1212) /* getSystemLocale */.intl;
+    obj4.label = intl2.string(require(1212) /* getSystemLocale */.t["5Q9+/L"]);
+    obj4.name = require(7655) /* getQuickReactionLabel */.MessageAccessibilityAction.EDIT_GDM;
     items[arraySpreadResult] = obj4;
     const sum = arraySpreadResult + 1;
     obj3.accessibilityActions = items;

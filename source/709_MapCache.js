@@ -1,7 +1,7 @@
 // Module ID: 709
-// Function ID: 8724
+// Function ID: 8725
 // Name: MapCache
-// Dependencies: []
+// Dependencies: [710, 733, 736, 737, 738]
 
 // Module 709 (MapCache)
 class MapCache {
@@ -14,15 +14,15 @@ class MapCache {
     clearResult = self.clear();
     for (let num2 = 0; num2 < num; num2 = num2 + 1) {
       tmp2 = global[num2];
-      result = self.set(tmp2[0], tmp2[1]);
+      result = require("mapCacheClear");
     }
     return;
   }
 }
-MapCache.prototype.clear = require(dependencyMap[0]);
-MapCache.prototype.delete = require(dependencyMap[1]);
-MapCache.prototype.get = require(dependencyMap[2]);
-MapCache.prototype.has = require(dependencyMap[3]);
-MapCache.prototype.set = require(dependencyMap[4]);
+MapCache.prototype.clear = require("mapCacheClear");
+MapCache.prototype.delete = require("mapCacheDelete");
+MapCache.prototype.get = require("mapCacheGet");
+MapCache.prototype.has = require("mapCacheHas");
+MapCache.prototype.set = require("mapCacheSet");
 
 export default MapCache;

@@ -1,32 +1,34 @@
-// Module ID: 10772
-// Function ID: 83702
-// Dependencies: []
+// Module ID: 10782
+// Function ID: 83751
+// Dependencies: [31, 27, 33, 4130, 10775, 4957, 4663, 10783, 10774, 2]
 
-// Module 10772
-const View = arg1(dependencyMap[1]).View;
-const jsx = arg1(dependencyMap[2]).jsx;
-const importAllResult = importAll(dependencyMap[0]);
-let closure_5 = arg1(dependencyMap[3]).createStyles({ container: { <string:3814666730>: null, <string:1280564396>: "\u{1F43F}\uFE0F" }, containerLandscape: { justifyContent: "center" } });
-const obj2 = arg1(dependencyMap[3]);
-const memoResult = importAllResult.memo((row) => {
+// Module 10782
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import importAllResult from "result";
+
+const require = arg1;
+let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", alignItems: "center" }, containerLandscape: { justifyContent: "center" } });
+const memoResult = require("result").memo((row) => {
   let participants;
-  ({ channel: closure_0, participants } = row);
-  let importDefault;
+  let require;
+  ({ channel: require, participants } = row);
+  let THIRD;
   const tmp = callback();
-  let obj = arg1(dependencyMap[6]);
+  let obj = require(4663) /* getIsScreenLandscape */;
   let containerLandscape = obj.useIsScreenLandscape();
   let num = 3;
   if (0 === row.row) {
     num = participants.length;
   }
   if (1 === num) {
-    let THIRD = arg1(dependencyMap[4]).StageTileSize.FULL;
+    THIRD = require(10775) /* StageTileSize */.StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = arg1(dependencyMap[4]).StageTileSize.HALF;
+    THIRD = require(10775) /* StageTileSize */.StageTileSize.HALF;
   } else {
-    THIRD = arg1(dependencyMap[4]).StageTileSize.THIRD;
+    THIRD = require(10775) /* StageTileSize */.StageTileSize.THIRD;
   }
-  importDefault = THIRD;
   obj = {};
   const items = [tmp.container, ];
   if (containerLandscape) {
@@ -37,9 +39,9 @@ const memoResult = importAllResult.memo((row) => {
   obj.children = participants.map((type) => {
     type = type.type;
     let flag = true;
-    if (callback(closure_2[5]).StageChannelParticipantTypes.STREAM !== type) {
+    if (outer1_0(outer1_2[5]).StageChannelParticipantTypes.STREAM !== type) {
       flag = false;
-      if (callback(closure_2[5]).StageChannelParticipantTypes.VOICE === type) {
+      if (outer1_0(outer1_2[5]).StageChannelParticipantTypes.VOICE === type) {
         const voiceState = type.voiceState;
         let selfVideo;
         if (null != voiceState) {
@@ -49,20 +51,20 @@ const memoResult = importAllResult.memo((row) => {
       }
     }
     if (flag) {
-      let obj = { participant: type, size: THIRD, channel: callback };
+      let obj = { participant: type, size: THIRD, channel: closure_0 };
       const _HermesInternal2 = HermesInternal;
       let tmp6Result = tmp6(tmp7[7]);
       let tmp5Result = tmp5(tmp6Result, obj, "stage-media-participant-" + type.id);
     } else {
-      obj = { channel: callback, participant: type, size: THIRD };
+      obj = { channel: closure_0, participant: type, size: THIRD };
       const _HermesInternal = HermesInternal;
       tmp6Result = tmp6(tmp7[8]);
       tmp5Result = tmp5(tmp6Result, obj, "stage-user-participant-" + type.id);
     }
     return tmp5Result;
   });
-  return <View {...obj} />;
+  return <View />;
 });
-const result = arg1(dependencyMap[9]).fileFinishedImporting("modules/stage_channels/native/components/StageGridRow.tsx");
+const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/StageGridRow.tsx");
 
 export default memoResult;

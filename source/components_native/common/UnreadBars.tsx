@@ -1,10 +1,30 @@
-// Module ID: 14768
-// Function ID: 111317
+// Module ID: 14884
+// Function ID: 113485
 // Name: _isNativeReflectConstruct
-// Dependencies: []
+// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4122, 653, 33, 4130, 5052, 689, 3974, 4099, 4100, 1273, 1212, 3842, 566, 10364, 2]
 // Exports: default
 
-// Module 14768 (_isNativeReflectConstruct)
+// Module 14884 (_isNativeReflectConstruct)
+import getActivityIndicator from "get ActivityIndicator";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import IMPACT_LIGHT from "IMPACT_LIGHT";
+import getSystemLocale from "getSystemLocale";
+import ManaContext from "ManaContext";
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import closure_12 from "_isNativeReflectConstruct";
+import jsxProd from "jsxProd";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import hexToRgb from "hexToRgb";
+import hexToRgb from "hexToRgb";
+import importDefaultResult from "createTextStyle";
+
+let closure_10;
+let closure_11;
+let closure_13;
+let closure_14;
+let closure_9;
+const require = arg1;
 function _isNativeReflectConstruct() {
   let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
@@ -14,59 +34,46 @@ function _isNativeReflectConstruct() {
   }
   const result = _isNativeReflectConstruct();
 }
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-const importAllResult = importAll(dependencyMap[5]);
-({ View: closure_9, Animated: closure_10, TouchableWithoutFeedback: closure_11 } = arg1(dependencyMap[6]));
-let closure_12 = importDefault(dependencyMap[7]);
-const tmp3 = arg1(dependencyMap[6]);
-({ jsx: closure_13, jsxs: closure_14 } = arg1(dependencyMap[9]));
-let obj = arg1(dependencyMap[10]);
-obj = {};
-obj = {};
-const tmp4 = arg1(dependencyMap[9]);
-const merged = Object.assign(importDefault(dependencyMap[11])(arg1(dependencyMap[8]).Fonts.DISPLAY_SEMIBOLD, importDefault(dependencyMap[12]).unsafe_rawColors.WHITE, 12, { uppercase: true }));
-obj.unreadText = obj;
-const obj2 = { 1661139458: "\u{1F932}\u{1F3FB}", 1384656706: true, BDUDau: null, StartButton Pressed: 10, borderRadius: importDefault(dependencyMap[12]).radii.md };
-const importDefaultResult = importDefault(dependencyMap[11]);
-const obj1 = { uppercase: true };
-obj2.backgroundColor = arg1(dependencyMap[13]).hexWithOpacity(importDefault(dependencyMap[12]).unsafe_rawColors.PRIMARY_400, 0.9);
-obj.unread = obj2;
+({ View: closure_9, Animated: closure_10, TouchableWithoutFeedback: closure_11 } = get_ActivityIndicator);
+({ jsx: closure_13, jsxs: closure_14 } = jsxProd);
+_createForOfIteratorHelperLoose = {};
+_createForOfIteratorHelperLoose = {};
+let merged = Object.assign(require("createTextStyle")(require("ME").Fonts.DISPLAY_SEMIBOLD, require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 12, { uppercase: true }));
+_createForOfIteratorHelperLoose.unreadText = _createForOfIteratorHelperLoose;
+let obj2 = { margin: 8, height: 24, justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+obj2.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_400, 0.9);
+_createForOfIteratorHelperLoose.unread = obj2;
 const obj3 = {};
-const obj6 = arg1(dependencyMap[13]);
-obj3.backgroundColor = arg1(dependencyMap[13]).hexWithOpacity(importDefault(dependencyMap[12]).unsafe_rawColors.RED_400, 0.9);
-obj.mention = obj3;
-let closure_15 = obj.createLegacyClassComponentStyles(obj);
-const tmp7 = (PureComponent) => {
+obj3.backgroundColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400, 0.9);
+_createForOfIteratorHelperLoose.mention = obj3;
+_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
+const tmp7 = ((PureComponent) => {
   class UnreadBar {
     constructor(arg0) {
       self = this;
       items = [...arguments];
-      tmp = closure_3(this, UnreadBar);
+      tmp = outer1_3(this, apply);
       items1 = [...items];
-      obj = closure_6(UnreadBar);
-      tmp2 = closure_5;
-      if (closure_17()) {
+      obj = outer1_6(apply);
+      tmp2 = outer1_5;
+      if (outer1_17()) {
         tmp4 = globalThis;
         _Reflect = Reflect;
-        tmp5 = closure_6;
-        constructResult = Reflect.construct(obj, items1, closure_6(self).constructor);
+        tmp5 = outer1_6;
+        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
       } else {
         constructResult = obj.apply(self, items1);
       }
       tmp2Result = tmp2(self, constructResult);
-      UnreadBar = tmp2Result;
+      apply = tmp2Result;
       tmp2Result.state = { active: false };
-      value = new closure_10.Value(0);
+      value = new outer1_10.Value(0);
       tmp2Result.animation = value;
       tmp2Result.handlePress = () => {
         let item;
         let onPress;
         ({ item, onPress } = tmp2Result.props);
-        const result = tmp2Result(closure_2[14]).triggerHapticFeedback(callback(closure_2[15]).IMPACT_LIGHT);
+        const result = UnreadBar(outer2_2[14]).triggerHapticFeedback(outer2_1(outer2_2[15]).IMPACT_LIGHT);
         tmp2Result.hide();
         onPress(item);
       };
@@ -79,7 +86,6 @@ const tmp7 = (PureComponent) => {
       return tmp2Result;
     }
   }
-  const arg1 = UnreadBar;
   callback2(UnreadBar, PureComponent);
   let obj = {
     key: "componentWillEnter",
@@ -87,7 +93,7 @@ const tmp7 = (PureComponent) => {
       this.show(arg0);
     }
   };
-  const items = [obj, , , , , ];
+  let items = [obj, , , , , ];
   obj = {
     key: "componentWillLeave",
     value(arg0) {
@@ -98,14 +104,14 @@ const tmp7 = (PureComponent) => {
   obj = {
     key: "show",
     value(arg0) {
-      RN.spring(this.animation, {}).start(arg0);
+      outer1_10.spring(this.animation, { toValue: 1, friction: 15, tension: 250, useNativeDriver: true }).start(arg0);
     }
   };
   items[2] = obj;
   items[3] = {
     key: "hide",
     value(arg0) {
-      RN.spring(this.animation, {}).start(arg0);
+      outer1_10.spring(this.animation, { toValue: 0, friction: 15, tension: 250, useNativeDriver: true }).start(arg0);
     }
   };
   items[4] = {
@@ -158,7 +164,7 @@ const tmp7 = (PureComponent) => {
         obj["opacity"] = self.animation;
         const obj1 = {};
         const animation = self.animation;
-        const obj2 = { inputRange: [77601039, 1612144654] };
+        const obj2 = { inputRange: [0, 1] };
         let num5 = -72;
         if (bottom) {
           num5 = 72;
@@ -182,7 +188,7 @@ const tmp7 = (PureComponent) => {
     value() {
       let mention;
       let section;
-      const tmp = callback3(this.context);
+      const tmp = outer1_15(this.context);
       const props = this.props;
       ({ mention, section } = props.item);
       let obj = { accessibilityRole: "button", onPress: this.handlePress, onPressIn: this.handlePressIn, onPressOut: this.handlePressOut, testID: "unread-bar-touchable-" + mention + "-" + section };
@@ -197,61 +203,63 @@ const tmp7 = (PureComponent) => {
       obj.style = items;
       obj.nativeID = "unread-bar-view-" + mention + "-" + section;
       const obj1 = { style: tmp.unreadText, maxFontSizeMultiplier: 1.5 };
-      const intl = UnreadBar(closure_2[17]).intl;
+      const intl = UnreadBar(outer1_2[17]).intl;
       const string = intl.string;
-      const t = UnreadBar(closure_2[17]).t;
+      const t = UnreadBar(outer1_2[17]).t;
       if (props.compact) {
         let stringResult = string(t.y2b7CA);
       } else if (mention) {
-        stringResult = string(t.8zH0LJ);
+        stringResult = string(t["8zH0LJ"]);
       } else {
         stringResult = string(t.FCRiT3);
       }
       obj1.children = stringResult;
-      obj.children = closure_13(UnreadBar(closure_2[16]).LegacyText, obj1);
-      obj.children = closure_13(closure_9, obj);
-      obj.children = closure_13(RN.View, obj);
-      return closure_13(closure_11, obj);
+      obj.children = outer1_13(UnreadBar(outer1_2[16]).LegacyText, obj1);
+      obj.children = outer1_13(outer1_9, obj);
+      obj.children = outer1_13(outer1_10.View, obj);
+      return outer1_13(outer1_11, obj);
     }
   };
   return callback(UnreadBar, items);
-}(importAllResult.PureComponent);
+})(importAllResult.PureComponent);
+let closure_16 = tmp7;
 tmp7.defaultProps = { bottom: false };
-tmp7.contextType = arg1(dependencyMap[18]).ThemeContext;
-const obj8 = arg1(dependencyMap[13]);
-const result = arg1(dependencyMap[21]).fileFinishedImporting("components_native/common/UnreadBars.tsx");
+tmp7.contextType = require("ManaContext").ThemeContext;
+let obj1 = { uppercase: true };
+let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/common/UnreadBars.tsx");
 
 export default function UnreadBars(contentInset) {
   let afterItem;
   let beforeItem;
   let compact;
-  ({ scrollToLocation: closure_0, beforeItem, afterItem, compact } = contentInset);
+  let require;
+  ({ scrollToLocation: require, beforeItem, afterItem, compact } = contentInset);
   if (compact === undefined) {
     compact = false;
   }
   contentInset = contentInset.contentInset;
   if (contentInset === undefined) {
-    contentInset = { <string:2874954499>: -24, <string:879673916>: null, size: 1, secureTextEntry: "Malaysia" };
+    contentInset = { top: 0, left: 0, right: 0, bottom: 0 };
   }
   function handlePress(section) {
     callback({ section: section.section, item: section.row, animated: true });
   }
-  let obj1 = arg1(dependencyMap[19]);
+  let obj1 = require(566) /* initialize */;
   const items = [closure_12];
-  const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const stateFromStores = obj1.useStateFromStores(items, () => outer1_12.useReducedMotion);
   let obj = { component: importAllResult.Fragment };
   let tmp3 = null;
   if (null != beforeItem) {
     obj = { compact, item: beforeItem, onPress: handlePress, contentInset, useReducedMotion: stateFromStores };
-    tmp3 = callback3(tmp7, obj, "BEFORE");
+    tmp3 = callback3(closure_16, obj, "BEFORE");
   }
   const items1 = [tmp3, ];
   let tmp6 = null;
   if (null != afterItem) {
     obj1 = { compact, item: afterItem, onPress: handlePress, contentInset, bottom: true, useReducedMotion: stateFromStores };
-    tmp6 = callback3(tmp7, obj1, "AFTER");
+    tmp6 = callback3(closure_16, obj1, "AFTER");
   }
   items1[1] = tmp6;
   obj.children = items1;
-  return closure_14(arg1(dependencyMap[20]).TransitionGroup, obj);
+  return closure_14(require(10364) /* _toPropertyKey */.TransitionGroup, obj);
 };

@@ -1,27 +1,30 @@
-// Module ID: 8556
-// Function ID: 68014
+// Module ID: 8563
+// Function ID: 68054
 // Name: useCoachmark
-// Dependencies: []
+// Dependencies: [31, 33, 491, 8564, 5451, 8571, 2]
 // Exports: useCoachmark
 
-// Module 8556 (useCoachmark)
-let closure_2 = importAll(dependencyMap[0]);
-const jsx = arg1(dependencyMap[1]).jsx;
-const result = arg1(dependencyMap[6]).fileFinishedImporting("design/components/Coachmark/native/useCoachmark.native.tsx");
+// Module 8563 (useCoachmark)
+import result from "result";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+const result = require("v1").fileFinishedImporting("design/components/Coachmark/native/useCoachmark.native.tsx");
 
 export const useCoachmark = function useCoachmark(targetRef, memo) {
-  const obj = memo(dependencyMap[2]);
-  const ref = React.useRef(memo(dependencyMap[2]).v4());
-  const tmp2 = function useAddCoachmark(memo) {
-    const context = React.useContext(memo(context[4]).LayerContext);
+  let obj = require(491) /* v1 */;
+  const ref = React.useRef(require(491) /* v1 */.v4());
+  const tmp2 = (function useAddCoachmark(memo) {
+    let closure_0 = memo;
+    const context = outer1_2.useContext(outer1_0(outer1_1[4]).LayerContext);
     const items = [context, memo];
-    return React.useCallback((arg0, arg1, arg2) => {
+    return outer1_2.useCallback((arg0, arg1, arg2) => {
       const obj = {};
-      const merged = Object.assign(arg0);
+      const merged = Object.assign(closure_0);
       obj["targetMeasurements"] = arg1;
       obj["surfaceMeasurements"] = arg2;
-      context.add(arg0, callback(arg0(context[5]).AnimatedCoachmark, obj));
+      context.add(arg0, outer2_3(outer2_0(outer2_1[5]).AnimatedCoachmark, obj));
     }, items);
-  }(memo);
-  return memo(dependencyMap[3]).useTooltipHelper(ref, targetRef, tmp2);
+  })(memo);
+  return require(8564) /* useTooltipHelper */.useTooltipHelper(ref, targetRef, tmp2);
 };

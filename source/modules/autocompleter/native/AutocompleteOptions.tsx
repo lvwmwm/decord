@@ -1,40 +1,49 @@
-// Module ID: 9632
-// Function ID: 75027
+// Module ID: 9639
+// Function ID: 75068
 // Name: getAutocompleteOptions
-// Dependencies: []
+// Dependencies: [7021, 7022, 5035, 1348, 1917, 1838, 653, 4566, 4567, 9640, 1852, 22, 8184, 4974, 9601, 5732, 1392, 1212, 2]
 // Exports: getAutocompleteOptions
 
-// Module 9632 (getAutocompleteOptions)
-let closure_3 = importDefault(dependencyMap[0]);
-let closure_4 = importDefault(dependencyMap[1]);
-let closure_5 = importDefault(dependencyMap[2]);
-let closure_6 = importDefault(dependencyMap[3]);
-let closure_7 = importDefault(dependencyMap[4]);
-let closure_8 = importDefault(dependencyMap[5]);
-({ AutoCompleteResultTypes: closure_9, MAX_AUTOCOMPLETE_RESULTS: closure_10 } = arg1(dependencyMap[6]));
-const tmp2 = arg1(dependencyMap[6]);
-({ MENTION_SENTINEL: closure_11, EMOJI_SENTINEL: closure_12, CHANNEL_SENTINEL: closure_13, COMMAND_SENTINEL: closure_14 } = arg1(dependencyMap[8]));
-const AutocompleteTypes = arg1(dependencyMap[9]).AutocompleteTypes;
-const tmp3 = arg1(dependencyMap[8]);
-({ EmojiIntention: closure_16, EMOJI_MAX_LENGTH: closure_17, EMOJI_URL_BASE_SIZE: closure_18 } = arg1(dependencyMap[10]));
-let closure_19 = false;
-const tmp4 = arg1(dependencyMap[10]);
-let closure_20 = importDefault(dependencyMap[11]).debounce(importDefault(dependencyMap[12]), arg1(dependencyMap[7]).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { flex: null, marginRight: null });
-const importDefaultResult = importDefault(dependencyMap[11]);
-const result = arg1(dependencyMap[18]).fileFinishedImporting("modules/autocompleter/native/AutocompleteOptions.tsx");
+// Module 9639 (getAutocompleteOptions)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import closure_4 from "_isNativeReflectConstruct";
+import closure_5 from "_isNativeReflectConstruct";
+import closure_6 from "_isNativeReflectConstruct";
+import closure_7 from "_isNativeReflectConstruct";
+import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import ME from "ME";
+import MENTION_SENTINEL from "MENTION_SENTINEL";
+import { AutocompleteTypes } from "AutocompleteTypes";
+import set from "set";
+import closure_20 from "_createForOfIteratorHelperLoose";
+import set from "_isNativeReflectConstruct";
+
+let closure_10;
+let closure_11;
+let closure_12;
+let closure_13;
+let closure_14;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_9;
+const require = arg1;
+({ AutoCompleteResultTypes: closure_9, MAX_AUTOCOMPLETE_RESULTS: closure_10 } = ME);
+({ MENTION_SENTINEL: closure_11, EMOJI_SENTINEL: closure_12, CHANNEL_SENTINEL: closure_13, COMMAND_SENTINEL: closure_14 } = MENTION_SENTINEL);
+({ EmojiIntention: closure_16, EMOJI_MAX_LENGTH: closure_17, EMOJI_URL_BASE_SIZE: closure_18 } = set);
+let c19 = false;
+let result = set.fileFinishedImporting("modules/autocompleter/native/AutocompleteOptions.tsx");
 
 export const getAutocompleteOptions = function getAutocompleteOptions(channel, arg1, setting) {
   let flag = arg1;
   let flag2 = setting;
-  arg1 = channel;
+  let closure_0 = channel;
   if (arg1 === undefined) {
     flag = false;
   }
-  const importDefault = flag;
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const dependencyMap = flag2;
   let obj = {
     stores: items,
     queryResults(query, canMentionEveryone, request) {
@@ -42,7 +51,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       let roles;
       let users;
       let obj = flag(flag2[13]);
-      obj = { query, channel: query };
+      obj = { query, channel: closure_0 };
       canMentionEveryone = undefined;
       if (null != canMentionEveryone) {
         canMentionEveryone = canMentionEveryone.canMentionEveryone;
@@ -79,25 +88,25 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       const items = [
         ...users.map((arg0) => {
           const merged = Object.assign(arg0);
-          return { type: constants.USER };
+          return { type: outer2_9.USER };
         }),
         ...globals.map((arg0) => {
           const merged = Object.assign(arg0);
-          return { type: constants.GLOBAL };
+          return { type: outer2_9.GLOBAL };
         }),
         ...roles.map((arg0) => {
           const merged = Object.assign(arg0);
-          return { type: constants.ROLE };
+          return { type: outer2_9.ROLE };
         })
       ];
       const tmp8 = flag(flag2[11]);
       return flag(flag2[11])(items).value();
     },
     matches(arg0, arg1) {
-      return flag(flag2[13]).matchSentinel(arg0, arg1, closure_11);
+      return flag(flag2[13]).matchSentinel(arg0, arg1, outer1_11);
     }
   };
-  const items = [closure_7];
+  items = [closure_7];
   obj = {
     queryResults(query, channelTypes) {
       if (null != channelTypes) {
@@ -105,21 +114,21 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       }
       if (null != channelTypes) {
         if (channelTypes.isActiveApplicationCommand) {
-          let obj = { query, channel: query, channelTypes };
+          let obj = { query, channel: closure_0, channelTypes };
           let result = flag(flag2[13]).queryApplicationCommandChannelResults(obj);
           const obj3 = flag(flag2[13]);
         }
         const channels = result.channels;
-        return channels.map((channel) => ({ type: constants.CHANNEL, channel, category: channel.getChannel(channel.parent_id) }));
+        return channels.map((channel) => ({ type: outer2_9.CHANNEL, channel, category: outer2_6.getChannel(channel.parent_id) }));
       }
       obj = flag(flag2[13]);
-      obj = { query, channel: query };
+      obj = { query, channel: closure_0 };
       result = obj.queryChannelResults(obj);
     },
     matches(arg0, arg1) {
-      let matchSentinelResult = !arg0.isPrivate();
+      let matchSentinelResult = !_private.isPrivate();
       if (matchSentinelResult) {
-        matchSentinelResult = flag(flag2[13]).matchSentinel(arg0, arg1, closure_13);
+        matchSentinelResult = flag(flag2[13]).matchSentinel(arg0, arg1, outer1_13);
         const obj = flag(flag2[13]);
       }
       return matchSentinelResult;
@@ -132,29 +141,29 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
         num = 0;
       }
       let obj = flag(flag2[13]);
-      obj = { query, channel: query, intention: constants2.CHAT, maxCount: closure_10 + num };
+      obj = { query, channel: _private, intention: outer1_16.CHAT, maxCount: outer1_10 + num };
       const queryEmojiResultsResult = obj.queryEmojiResults(obj);
       if (null != includeEmojiPremiumUpsell) {
         if (includeEmojiPremiumUpsell.includeEmojiPremiumUpsell) {
           if (queryEmojiResultsResult.emojis.locked.length > 0) {
             if (queryEmojiResultsResult.emojis.unlocked.length < 4) {
-              obj = { type: constants.EMOJI_PREMIUM_UPSELL, results: queryEmojiResultsResult.emojis.locked };
+              obj = { type: outer1_9.EMOJI_PREMIUM_UPSELL, results: queryEmojiResultsResult.emojis.locked };
               const items = [obj];
               let items5 = items;
             }
             let items1 = [];
             if (flag2) {
-              let hasLoadedStickerPacks = closure_19;
-              if (!closure_19) {
-                hasLoadedStickerPacks = obj.hasLoadedStickerPacks;
+              let hasLoadedStickerPacks = outer1_19;
+              if (!outer1_19) {
+                hasLoadedStickerPacks = outer1_5.hasLoadedStickerPacks;
               }
               if (!hasLoadedStickerPacks) {
-                closure_19 = true;
-                const stickerPacks = query(flag2[14]).fetchStickerPacks();
-                const obj4 = query(flag2[14]);
+                outer1_19 = true;
+                const stickerPacks = _private(flag2[14]).fetchStickerPacks();
+                const obj4 = _private(flag2[14]);
               }
               const items2 = [query];
-              const items3 = [query, (arg0, arg1) => arg1 === callback(closure_2[15]).StickerSendability.SENDABLE];
+              const items3 = [_private, (arg0, arg1) => arg1 === callback(flag2[15]).StickerSendability.SENDABLE];
               items1 = flag(flag2[13]).queryStickers(items2, true, items3);
               const obj5 = flag(flag2[13]);
             }
@@ -162,16 +171,16 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
             const unlocked = queryEmojiResultsResult.emojis.unlocked;
             let arraySpreadResult = HermesBuiltin.arraySpread(items1.map((sticker) => {
               sticker = sticker.sticker;
-              return { type: constants.STICKER, name: sticker.name, sticker };
+              return { type: outer2_9.STICKER, name: sticker.name, sticker };
             }), 0);
             arraySpreadResult = HermesBuiltin.arraySpread(items5, HermesBuiltin.arraySpread(unlocked.map((name) => {
-              let obj = { type: constants.EMOJI, name: name.name };
+              let obj = { type: outer2_9.EMOJI, name: name.name };
               if (null != name.id) {
                 obj = {};
                 ({ id: obj3.id, animated: obj3.animated } = name);
-                obj.size = closure_18;
-                let url = callback2(closure_2[16]).getEmojiURL(obj);
-                const obj2 = callback2(closure_2[16]);
+                obj.size = outer2_18;
+                let url = flag(flag2[16]).getEmojiURL(obj);
+                const obj2 = flag(flag2[16]);
               } else {
                 url = name.url;
               }
@@ -190,22 +199,22 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       items5 = [];
     },
     matches(arg0, arr) {
-      let tmp = arg0 === closure_12;
+      let tmp = arg0 === outer1_12;
       if (tmp) {
         let tmp2 = arr.length < 2;
         if (!tmp2) {
-          tmp2 = arr.length > closure_17;
+          tmp2 = arr.length > outer1_17;
         }
         let tmp4 = !tmp2;
         if (!tmp2) {
-          tmp4 = !arr.includes(closure_12);
+          tmp4 = !arr.includes(outer1_12);
         }
         tmp = tmp4;
       }
       return tmp;
     }
   };
-  const items1 = [closure_4, closure_3];
+  let items1 = [closure_4, _isNativeReflectConstruct];
   return {
     [closure_15.MENTIONS]: obj,
     [closure_15.CHANNELS]: obj,
@@ -217,7 +226,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       matches(arg0, arg1, arg2) {
         let tmp = 0 === arg2;
         if (tmp) {
-          tmp = arg0 === closure_14;
+          tmp = arg0 === outer1_14;
         }
         if (tmp) {
           let tmp4 = flag;
@@ -239,7 +248,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
           tmp = 0 === arg2;
         }
         if (tmp) {
-          tmp = arg0 === closure_14;
+          tmp = arg0 === outer1_14;
         }
         if (tmp) {
           tmp = 0 === arg1.length;
@@ -266,25 +275,25 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
                 if (null != optionValues) {
                   let obj = {};
                   ({ activeCommand: obj3.command, optionValues: obj3.optionValues } = option);
-                  obj = { channel: query, guild: guild.getGuild(query.guild_id) };
+                  obj = { channel: _private, guild: outer1_8.getGuild(_private.guild_id) };
                   const obj1 = { name: option.option.name, query };
                   obj.autocomplete = obj1;
                   obj.context = obj;
-                  callback(obj);
-                  const autocompleteChoices = autocompleteChoices.getAutocompleteChoices(query.id, option.option.name, query);
+                  outer1_20(obj);
+                  const autocompleteChoices = outer1_3.getAutocompleteChoices(_private.id, option.option.name, query);
                   if (null == autocompleteChoices) {
                     const _Array = Array;
                     const array = new Array(4);
-                    const obj2 = { type: constants.CHOICE_LOADING };
+                    const obj2 = { type: outer1_9.CHOICE_LOADING };
                     let fillResult = array.fill(obj2);
                   } else if (0 === autocompleteChoices.length) {
-                    const obj3 = { type: constants.LABEL };
-                    const intl = query(flag2[17]).intl;
-                    obj3.label = intl.string(query(flag2[17]).t.41014u);
+                    const obj3 = { type: outer1_9.LABEL };
+                    const intl = _private(flag2[17]).intl;
+                    obj3.label = intl.string(_private(flag2[17]).t["41014u"]);
                     const items = [obj3];
                     fillResult = items;
                   } else {
-                    fillResult = autocompleteChoices.map((choice) => ({ type: constants.CHOICE, choice }));
+                    fillResult = autocompleteChoices.map((choice) => ({ type: outer2_9.CHOICE, choice }));
                   }
                   return fillResult;
                 }
@@ -302,7 +311,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
           obj = flag(flag2[13]);
           const obj4 = { query, choices };
           const choices1 = obj.queryChoiceResults(obj4).choices;
-          items1 = choices1.map((choice) => ({ type: constants.CHOICE, choice }));
+          items1 = choices1.map((choice) => ({ type: outer2_9.CHOICE, choice }));
         }
         return items1;
       },

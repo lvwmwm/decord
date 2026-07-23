@@ -1,53 +1,55 @@
-// Module ID: 11268
-// Function ID: 87684
+// Module ID: 11278
+// Function ID: 87734
 // Name: _createForOfIteratorHelperLoose
-// Dependencies: []
+// Dependencies: [4566, 6755, 8185, 1212, 11279, 2]
 // Exports: getValidationResults
 
-// Module 11268 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(@@iterator) {
-  let require = Symbol_iterator;
-  @@iterator = "undefined" !== typeof Symbol;
-  if (Symbol_iterator) {
+// Module 11278 (_createForOfIteratorHelperLoose)
+import { getValidationErrorText } from "TRUE_OPTION_NAME";
+
+function _createForOfIteratorHelperLoose(iterable) {
+  let closure_0 = iterable;
+  iterable = "undefined" !== typeof Symbol;
+  if (iterable) {
     const _Symbol = Symbol;
-    @@iterator = Symbol_iterator[Symbol.iterator];
+    iterable = iterable[Symbol.iterator];
   }
-  if (!Symbol_iterator) {
-    @@iterator = Symbol_iterator[Symbol.iterator];
+  if (!iterable) {
+    iterable = iterable[Symbol.iterator];
   }
-  if (Symbol_iterator) {
-    const iter = Symbol_iterator.call(Symbol_iterator);
+  if (iterable) {
+    const iter = iterable.call(iterable);
     const next = iter.next;
     return next.bind(iter);
   } else {
     const _Array = Array;
-    let tmp = Symbol_iterator;
-    if (!Array.isArray(Symbol_iterator)) {
+    let tmp = iterable;
+    if (!Array.isArray(iterable)) {
       let tmp2;
-      if (Symbol_iterator) {
-        if ("string" === typeof Symbol_iterator) {
-          tmp2 = _arrayLikeToArray(Symbol_iterator, undefined);
+      if (iterable) {
+        if ("string" === typeof iterable) {
+          tmp2 = _arrayLikeToArray(iterable, undefined);
         } else {
           const toString = {}.toString;
-          const substr = toString.call(Symbol_iterator).slice(8, -1);
+          const substr = toString.call(iterable).slice(8, -1);
           let name = substr;
           if (tmp3) {
-            name = Symbol_iterator.constructor.name;
+            name = iterable.constructor.name;
           }
           if ("Map" !== name) {
             if ("Set" !== name) {
               if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(Symbol_iterator, undefined);
+                let arr = _arrayLikeToArray(iterable, undefined);
               } else {
-                const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
               }
             }
             tmp2 = arr;
           }
           const _Array2 = Array;
-          arr = Array.from(Symbol_iterator);
-          const callResult = toString.call(Symbol_iterator);
-          const tmp3 = "Object" === substr && Symbol_iterator.constructor;
+          arr = Array.from(iterable);
+          const callResult = toString.call(iterable);
+          tmp3 = "Object" === substr && iterable.constructor;
         }
       }
       tmp = tmp2;
@@ -58,16 +60,16 @@ function _createForOfIteratorHelperLoose(@@iterator) {
       }
     }
     if (tmp) {
-      require = tmp;
+      closure_0 = tmp;
     }
-    let closure_1 = 0;
+    let c1 = 0;
     return () => {
-      if (closure_1 >= tmp.length) {
+      if (closure_1 >= length.length) {
         let obj = { done: true };
       } else {
         obj = { done: false };
         closure_1 = tmp3 + 1;
-        obj.value = tmp[+closure_1];
+        obj.value = length[+closure_1];
       }
       return obj;
     };
@@ -92,11 +94,11 @@ function validateOptionContent(allowEmptyValues) {
   let option;
   ({ option, content, guildId, channelId, commandOrigin } = allowEmptyValues);
   if (commandOrigin === undefined) {
-    commandOrigin = require(dependencyMap[1]).CommandOrigin.CHAT;
+    commandOrigin = require(6755) /* ApplicationCommandSectionType */.CommandOrigin.CHAT;
   }
   let str = "";
   if (null != content) {
-    let obj = require(dependencyMap[2]);
+    let obj = require(8185) /* _createForOfIteratorHelperLoose */;
     obj = { content };
     str = obj.getString(obj, "content").trim();
     const str3 = obj.getString(obj, "content");
@@ -105,8 +107,8 @@ function validateOptionContent(allowEmptyValues) {
   if (null == content) {
     if (required) {
       obj = { success: false };
-      const intl2 = require(dependencyMap[3]).intl;
-      obj.error = intl2.string(require(dependencyMap[3]).t.JZJQL2);
+      const intl2 = require(1212) /* getSystemLocale */.intl;
+      obj.error = intl2.string(require(1212) /* getSystemLocale */.t.JZJQL2);
       let obj1 = obj;
     } else {
       obj1 = { success: true };
@@ -119,8 +121,8 @@ function validateOptionContent(allowEmptyValues) {
     } else {
       const obj3 = { success: false };
       if (required) {
-        const intl = require(dependencyMap[3]).intl;
-        obj3.error = intl.string(require(dependencyMap[3]).t.JZJQL2);
+        const intl = require(1212) /* getSystemLocale */.intl;
+        obj3.error = intl.string(require(1212) /* getSystemLocale */.t.JZJQL2);
         tmp19 = obj3;
       } else {
         obj3.error = getValidationErrorText(option);
@@ -135,7 +137,7 @@ function validateOptionContent(allowEmptyValues) {
     } else {
       first = content[0];
     }
-    const tmp8 = importDefault(dependencyMap[4]);
+    const tmp8 = importDefault(11279);
     const tmp15 = tmp8[option.type](first, option, channelId, guildId, commandOrigin);
     if (!tmp16) {
       tmp15.error = getValidationErrorText(option);
@@ -143,9 +145,7 @@ function validateOptionContent(allowEmptyValues) {
     return tmp15;
   }
 }
-const getValidationErrorText = require(dependencyMap[0]).getValidationErrorText;
-const _module = require(dependencyMap[5]);
-const result = _module.fileFinishedImporting("modules/application_commands/ApplicationCommandValidationUtils.tsx");
+const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/application_commands/ApplicationCommandValidationUtils.tsx");
 
 export const getValidationResults = function getValidationResults(activeCommand, optionValues, guild_id, id, allowEmptyValues) {
   let done;
@@ -159,9 +159,9 @@ export const getValidationResults = function getValidationResults(activeCommand,
     if (!iter.done) {
       do {
         let value = iter.value;
-        let tmp3 = closure_6;
+        let tmp3 = validateOptionContent;
         obj = { option: value, content: optionValues[value.name], guildId: guild_id, channelId: id, allowEmptyValues };
-        obj[value.name] = closure_6(obj);
+        obj[value.name] = validateOptionContent(obj);
         let iter2 = tmp2();
         iter = iter2;
         done = iter2.done;

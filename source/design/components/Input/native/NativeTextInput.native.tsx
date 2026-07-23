@@ -1,15 +1,28 @@
-// Module ID: 5778
-// Function ID: 49446
+// Module ID: 5783
+// Function ID: 49475
 // Name: useKeyboardBlurring
-// Dependencies: []
+// Dependencies: [31, 27, 1452, 653, 33, 5784, 4559, 4528, 5785, 3842, 3836, 2]
 
-// Module 5778 (useKeyboardBlurring)
+// Module 5783 (useKeyboardBlurring)
+import importAllResult from "result";
+import get_ActivityIndicator from "get ActivityIndicator";
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
+import { KeyboardThemes } from "ME";
+import jsxProd from "jsxProd";
+
+let closure_10;
+let closure_11;
+let closure_4;
+let closure_5;
+let closure_6;
+let closure_7;
+const require = arg1;
 function useKeyboardBlurring(ref) {
-  const arg1 = ref;
+  let closure_0 = ref;
   const items = [ref];
   const effect = importAllResult.useEffect(() => {
-    const callback = callback(closure_2[5]).getKeyboardIsOpen();
-    return callback2((systemKeyboardOpen) => {
+    callback = callback(outer1_2[5]).getKeyboardIsOpen();
+    return outer1_8((systemKeyboardOpen) => {
       systemKeyboardOpen = systemKeyboardOpen.systemKeyboardOpen;
       if (!tmp) {
         const current = ref.current;
@@ -20,32 +33,28 @@ function useKeyboardBlurring(ref) {
     });
   }, items);
 }
-const importAllResult = importAll(dependencyMap[0]);
-({ Pressable: closure_4, TextInput: closure_5, StyleSheet: closure_6, View: closure_7 } = arg1(dependencyMap[1]));
-let closure_8 = importDefault(dependencyMap[2]);
-const KeyboardThemes = arg1(dependencyMap[3]).KeyboardThemes;
-const tmp2 = arg1(dependencyMap[1]);
-({ jsx: closure_10, jsxs: closure_11 } = arg1(dependencyMap[4]));
-const tmp3 = arg1(dependencyMap[4]);
+({ Pressable: closure_4, TextInput: closure_5, StyleSheet: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
 const forwardRefResult = importAllResult.forwardRef((keyboardAppearance, photosButtonExternalRef) => {
   const ref = importAllResult.useRef(null);
   useKeyboardBlurring(ref);
-  const tmp3 = importDefault(dependencyMap[8])(keyboardAppearance);
-  photosButtonExternalRef(dependencyMap[9]);
+  const tmp3 = importDefault(5785)(keyboardAppearance);
+  require(3842) /* ManaContext */;
   if (null != keyboardAppearance.keyboardAppearance) {
     let obj = {};
-    const merged = Object.assign(photosButtonExternalRef(dependencyMap[10]).mergeProps(keyboardAppearance, tmp3, tmp4));
-    const obj3 = photosButtonExternalRef(dependencyMap[10]);
-    obj["ref"] = photosButtonExternalRef(dependencyMap[10]).mergeRefs(ref, photosButtonExternalRef);
+    let merged = Object.assign(require(3836) /* getNodeText */.mergeProps(keyboardAppearance, tmp3, tmp4));
+    const obj3 = require(3836) /* getNodeText */;
+    obj["ref"] = require(3836) /* getNodeText */.mergeRefs(ref, photosButtonExternalRef);
     const tmp17 = callback(closure_5, obj);
     let panGestureWrapperResult = tmp17;
     if (!keyboardAppearance.multiline) {
-      panGestureWrapperResult = function usePanGestureWrapper(ref) {
-        let obj = ref(closure_2[7]);
+      panGestureWrapperResult = (function usePanGestureWrapper(ref) {
+        let closure_0 = ref;
+        let obj = outer1_0(outer1_2[7]);
         const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
-        const items = [ref];
-        closure_2 = React.useCallback(() => {
-          const current = arg0.current;
+        let items = [ref];
+        let closure_2 = outer1_3.useCallback(() => {
+          const current = ref.current;
           let focusResult;
           if (null != current) {
             focusResult = current.focus();
@@ -53,9 +62,9 @@ const forwardRefResult = importAllResult.forwardRef((keyboardAppearance, photosB
           return focusResult;
         }, items);
         const items1 = [isScreenReaderEnabled];
-        const React = React.useMemo(() => {
+        let closure_3 = outer1_3.useMemo(() => {
           const obj = {};
-          const merged = Object.assign(absoluteFillObject.absoluteFillObject);
+          const merged = Object.assign(outer2_6.absoluteFillObject);
           let str = "flex";
           if (isScreenReaderEnabled) {
             str = "none";
@@ -65,10 +74,10 @@ const forwardRefResult = importAllResult.forwardRef((keyboardAppearance, photosB
         }, items1);
         obj = {
           panGestureWrapper(arg0) {
-            let obj = { style: {} };
+            let obj = { style: { flexBasis: 0, flexGrow: 1 } };
             const items = [arg0, ];
             obj = {};
-            const current = arg0.current;
+            const current = ref.current;
             let str = "auto";
             if (null != current) {
               str = "auto";
@@ -79,21 +88,21 @@ const forwardRefResult = importAllResult.forwardRef((keyboardAppearance, photosB
             obj.pointerEvents = str;
             obj.onPress = closure_2;
             obj.style = closure_3;
-            items[1] = closure_10(closure_4, obj);
+            items[1] = outer2_10(outer2_4, obj);
             obj.children = items;
-            return closure_11(closure_7, obj);
+            return outer2_11(outer2_7, obj);
           }
         };
         return obj;
-      }(ref).panGestureWrapper(tmp17);
+      })(ref).panGestureWrapper(tmp17);
     }
     return panGestureWrapperResult;
   } else {
-    obj = photosButtonExternalRef(dependencyMap[10]);
+    obj = require(3836) /* getNodeText */;
     keyboardAppearance.keyboardAppearance = obj.isThemeDark(tmp6) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   }
 });
-const result = arg1(dependencyMap[11]).fileFinishedImporting("design/components/Input/native/NativeTextInput.native.tsx");
+const result = require("subscribeToKeyboardUIStore").fileFinishedImporting("design/components/Input/native/NativeTextInput.native.tsx");
 
 export { useKeyboardBlurring };
 export const NativeTextInput = forwardRefResult;

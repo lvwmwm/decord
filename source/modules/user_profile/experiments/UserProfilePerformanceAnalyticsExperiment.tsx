@@ -1,15 +1,15 @@
-// Module ID: 8266
-// Function ID: 65223
+// Module ID: 8272
+// Function ID: 65260
 // Name: isUserProfilePerformanceAnalyticsEnabled
-// Dependencies: []
+// Dependencies: [1428, 2]
 // Exports: isUserProfilePerformanceAnalyticsEnabled
 
-// Module 8266 (isUserProfilePerformanceAnalyticsEnabled)
-const _module = require(dependencyMap[0]);
-const obj = { "Bool(false)": 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017383389523691, "Bool(false)": 278976659548968400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, defaultConfig: { performanceAnalyticsEnabled: false }, variations: { [0]: { performanceAnalyticsEnabled: false }, [1]: { performanceAnalyticsEnabled: true } } };
-let closure_0 = _module.createApexExperiment(obj);
-const _module1 = require(dependencyMap[1]);
-const result = _module1.fileFinishedImporting("modules/user_profile/experiments/UserProfilePerformanceAnalyticsExperiment.tsx");
+// Module 8272 (isUserProfilePerformanceAnalyticsEnabled)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { kind: "user", name: "2026-04-user-profile-performance-analytics", defaultConfig: { performanceAnalyticsEnabled: false }, variations: { [0]: { performanceAnalyticsEnabled: false }, [1]: { performanceAnalyticsEnabled: true } } };
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = require("set").fileFinishedImporting("modules/user_profile/experiments/UserProfilePerformanceAnalyticsExperiment.tsx");
 
 export const isUserProfilePerformanceAnalyticsEnabled = function isUserProfilePerformanceAnalyticsEnabled(UserProfileAnalyticsUtils) {
   return config.getConfig({ location: UserProfileAnalyticsUtils }).performanceAnalyticsEnabled;
